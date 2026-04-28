@@ -1,26 +1,5 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Cormorant_Garamond, Cormorant, Inter } from 'next/font/google';
-
-const inter = Inter({
-  subsets: ['latin', 'latin-ext'],
-  variable: '--font-sans',
-  display: 'swap',
-});
-
-const cormorantGaramond = Cormorant_Garamond({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['300', '400', '500', '600'],
-  variable: '--font-serif',
-  display: 'swap',
-});
-
-const cormorant = Cormorant({
-  subsets: ['latin', 'latin-ext'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-display',
-  display: 'swap',
-});
 
 export const metadata: Metadata = {
   title: {
@@ -51,11 +30,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html
-      lang="fr"
-      className={`${inter.variable} ${cormorantGaramond.variable} ${cormorant.variable}`}
-      suppressHydrationWarning
-    >
+    <html lang="fr" suppressHydrationWarning>
       <body className="font-sans antialiased bg-[hsl(45,30%,96%)] text-[hsl(220,45%,12%)]">
         {children}
       </body>
