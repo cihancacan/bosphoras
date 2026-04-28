@@ -55,25 +55,54 @@ export function buildMetadata({
 export function organizationSchema() {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    '@type': 'ProfessionalService',
     name: 'Bosphoras',
+    legalName: 'Panorama Grup',
     url: siteUrl,
     logo: `${siteUrl}/logo.svg`,
+    telephone: '+33188842222',
+    email: 'contact@bosphoras.com',
     description:
-      'Bureau privé en Turquie pour investisseurs internationaux, familles et entrepreneurs.',
+      'Bureau privé en Turquie pour investisseurs internationaux, familles, entrepreneurs, clients de banque privée et détenteurs de cartes premium.',
+    foundingLocation: {
+      '@type': 'Place',
+      name: 'Paris',
+    },
     address: {
       '@type': 'PostalAddress',
-      addressCountry: 'TR',
+      streetAddress: '88 Avenue des Ternes',
+      postalCode: '75017',
+      addressLocality: 'Paris',
+      addressCountry: 'FR',
     },
-    areaServed: ['Istanbul', 'Bodrum', 'Antalya'],
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: '4.9',
+      bestRating: '5',
+      ratingCount: '182',
+    },
+    areaServed: ['Paris', 'Istanbul', 'London', 'Almaty', 'Moscow', 'Dubai', 'Bodrum', 'Antalya', 'Turkey'],
+    knowsLanguage: ['French', 'English', 'Russian', 'Arabic', 'Turkish', 'Kazakh'],
     serviceType: [
-      'Relocation',
-      'Investment Advisory',
-      'Legal & Tax Guidance',
-      'Luxury Concierge',
-      'Property Advisory',
+      'Private Office',
+      'Relocation to Turkey',
+      'Legal and Tax Coordination',
       'Company Formation',
+      'Accounting Coordination',
+      'Health Insurance Coordination',
+      'Private Healthcare Access',
+      'Property and Living Advisory',
+      'VIP Transport and Hospitality',
+      'Private Access Membership',
+      'Luxury Concierge',
     ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+33188842222',
+      email: 'contact@bosphoras.com',
+      contactType: 'private client assistance',
+      availableLanguage: ['French', 'English', 'Russian', 'Arabic', 'Turkish'],
+    },
   };
 }
 
@@ -107,8 +136,7 @@ export function breadcrumbSchema(
 }
 
 export function faqSchema(
-  faqs: Array<{ question: string; answer: string }>
-) {
+  faqs: Array<{ question: string; answer: string }>) {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
