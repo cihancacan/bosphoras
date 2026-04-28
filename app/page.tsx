@@ -1,16 +1,17 @@
-import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
+import type { Metadata } from 'next';
 import {
   ArrowRight,
+  Bell,
   Building2,
-  Check,
-  HeartPulse,
+  Globe,
+  Home,
   KeyRound,
-  Landmark,
-  Plane,
+  Lock,
+  MapPin,
   Scale,
-  ShieldCheck,
-  Sparkles,
+  Shield,
   Star,
 } from 'lucide-react';
 import { buildMetadata, faqSchema, organizationSchema, websiteSchema } from '@/lib/seo';
@@ -19,6 +20,7 @@ import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 
 const locale = 'fr' as const;
+const heroImage = '/images/bosphoras-hero.jpg';
 
 const homeFaqs = [
   {
@@ -48,35 +50,59 @@ export const metadata: Metadata = buildMetadata({
   path: '/',
   title: 'Bosphoras | Bureau privé en Turquie, Istanbul, Bodrum, Antalya',
   description:
-    'Bosphoras, marque de Panorama Grup, est un bureau privé en Turquie pour investisseurs étrangers : installation, fiscalité, avocat, création d’entreprise, santé, assurance, immobilier, bureaux, chauffeur VIP et accès privé. 4,9/5 sur 247 avis Google. Paris, Istanbul, Londres, Almaty, Moscou, Dubai.',
+    'Bosphoras, marque de Panorama Grup, est votre bureau privé en Turquie : avocat, fiscalité, société, comptabilité, santé, assurance, immobilier, bureaux, transport VIP, hôtels, événements et accès privé à Istanbul, Bodrum et Antalya. 4,9/5 sur 247 avis Google. Paris, Istanbul, Londres, Almaty, Moscou, Dubai.',
 });
 
-const locations = ['Paris', 'Istanbul', 'Londres', 'Almaty', 'Moscou', 'Dubai'];
-
-const services = [
-  { icon: Scale, title: 'Legal & Tax', text: 'Avocat, fiscalité, résidence, due diligence, contrats et structuration avec des professionnels indépendants.' },
-  { icon: Landmark, title: 'Business', text: 'Création d’entreprise, comptabilité, domiciliation, banque, bureaux privés et présence professionnelle.' },
-  { icon: HeartPulse, title: 'Health', text: 'Assurance santé, médecins privés, cliniques sélectionnées, check-up exécutif et assistance famille.' },
-  { icon: Building2, title: 'Living', text: 'Location, achat, villas, appartements, quartiers, gestion locative, ameublement et installation.' },
-  { icon: Plane, title: 'Hospitality', text: 'Chauffeurs, transferts VIP, palaces, restaurants, jets, hélicoptères, yachts et villas privées.' },
-  { icon: KeyRound, title: 'Access', text: 'Carte membre, dîners privés, clubs, meilleures tables disponibles, shopping luxe et introductions qualifiées.' },
+const expertises = [
+  {
+    icon: Scale,
+    title: 'Legal & Tax',
+    text: 'Conseil juridique et fiscal sur mesure pour particuliers et entreprises. Conformité, optimisation et protection de vos intérêts.',
+  },
+  {
+    icon: Building2,
+    title: 'Business Setup',
+    text: 'Création de société, licences et autorisations. Structuration et accompagnement complet pour vos projets en Turquie.',
+  },
+  {
+    icon: Shield,
+    title: 'Health & Insurance',
+    text: 'Assurance santé internationale, solutions sur mesure et accès aux meilleurs établissements médicaux en Turquie.',
+  },
+  {
+    icon: Home,
+    title: 'Property & Relocation',
+    text: 'Immobilier, résidence, permis de séjour. Installation clé en main pour vous et vos proches.',
+  },
+  {
+    icon: Bell,
+    title: 'VIP Hospitality',
+    text: 'Transferts privés, hôtels d’exception, conciergerie 24/7 et organisation d’événements sur mesure.',
+  },
+  {
+    icon: KeyRound,
+    title: 'Private Access',
+    text: 'Accès privilégié et relations de confiance à Istanbul, Bodrum, Antalya et dans toute la Turquie.',
+  },
 ];
 
-const cities = [
-  { name: 'Istanbul', kicker: 'Capital of decisions', text: 'Business, droit, fiscalité, banques, bureaux premium, santé privée, Bosphore et réseau international.' },
-  { name: 'Bodrum', kicker: 'Discreet Mediterranean life', text: 'Villas, marinas, yachts, résidences secondaires, beach clubs et lifestyle confidentiel.' },
-  { name: 'Antalya', kicker: 'Long-term comfort', text: 'Famille, climat, santé, mer, communautés internationales et installation longue durée.' },
+const destinations = [
+  {
+    title: 'ISTANBUL',
+    text: 'Carrefour historique entre l’Europe et l’Asie, Istanbul est le cœur économique et culturel de la Turquie.',
+    objectPosition: '72% center',
+  },
+  {
+    title: 'BODRUM',
+    text: 'Art de vivre, nature et discrétion. Bodrum, destination prisée de la Méditerranée.',
+    objectPosition: '48% center',
+  },
+  {
+    title: 'ANTALYA',
+    text: 'Entre mer et montagnes, Antalya offre un cadre de vie exceptionnel toute l’année.',
+    objectPosition: '60% center',
+  },
 ];
-
-const method = [
-  'Diagnostic confidentiel',
-  'Stratégie ville, résidence et fiscalité',
-  'Coordination des professionnels',
-  'Exécution locale et suivi',
-  'Accès membre et relation long terme',
-];
-
-const audiences = ['Investisseurs étrangers', 'Entrepreneurs', 'Familles patrimoniales', 'Clients de banque privée', 'Résidents de Dubai', 'Francophones · Russophones · Arabophones'];
 
 export default function HomePage() {
   return (
@@ -84,111 +110,103 @@ export default function HomePage() {
       <StructuredData data={organizationSchema()} />
       <StructuredData data={websiteSchema()} />
       <StructuredData data={faqSchema(homeFaqs)} />
+
       <Header locale={locale} currentPath="/" />
 
-      <main className="bg-[#05070c] text-[#f8efe0]">
-        <section className="relative min-h-screen overflow-hidden pt-28 md:pt-32">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_18%,rgba(217,182,109,0.22),transparent_26%),radial-gradient(circle_at_10%_72%,rgba(217,182,109,0.10),transparent_24%),linear-gradient(135deg,#05070c_0%,#09111f_46%,#05070c_100%)]" />
-          <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: 'linear-gradient(#fff 1px, transparent 1px), linear-gradient(90deg, #fff 1px, transparent 1px)', backgroundSize: '72px 72px' }} />
-          <div className="absolute left-8 right-8 top-28 hidden h-[calc(100%-8rem)] border border-[#d9b66d]/15 lg:block" />
+      <main className="bg-[#f8f3eb] text-[#101827]">
+        <section className="relative min-h-[92vh] overflow-hidden">
+          <div className="absolute inset-0">
+            <Image
+              src={heroImage}
+              alt="Istanbul au coucher du soleil avec monuments historiques et skyline moderne"
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover [object-position:72%_center] md:[object-position:center_center]"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(4,10,18,0.88)_0%,rgba(4,10,18,0.70)_35%,rgba(4,10,18,0.28)_62%,rgba(4,10,18,0.28)_100%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(4,10,18,0.72)_0%,rgba(4,10,18,0.10)_38%,rgba(4,10,18,0.76)_100%)]" />
+          </div>
 
-          <div className="container-editorial relative z-10 grid min-h-[calc(100vh-7rem)] items-center gap-12 pb-16 lg:grid-cols-[1fr_0.72fr] lg:gap-16">
-            <div className="pt-10">
-              <div className="mb-10 flex flex-wrap items-center gap-4">
-                <span className="h-px w-16 bg-[#d9b66d]" />
-                <p className="text-[0.68rem] font-bold uppercase tracking-[0.36em] text-[#d9b66d]">Private Office · Turkey</p>
-              </div>
-
-              <h1 className="font-serif text-[4.7rem] leading-[0.78] tracking-[-0.075em] text-[#fff7e8] md:text-[9rem] lg:text-[11rem]">
-                Bosphoras
-              </h1>
-
-              <p className="mt-9 max-w-4xl font-serif text-3xl leading-[1.05] tracking-[-0.045em] text-[#dec58e] md:text-6xl">
-                Le point d’entrée privé des investisseurs étrangers en Turquie.
+          <div className="relative z-10 mx-auto flex min-h-[92vh] w-full max-w-[1500px] flex-col px-5 pt-28 md:px-8 md:pt-36">
+            <div className="max-w-3xl pt-10 md:pt-16">
+              <p className="mb-7 text-[0.68rem] font-bold uppercase tracking-[0.32em] text-[#d0a45d]">
+                Bureau privé · Turquie · International
               </p>
 
-              <p className="mt-8 max-w-2xl text-lg leading-9 text-[#c9c0b5]">
-                Un bureau confidentiel pour organiser installation, fiscalité, avocat, société, santé, assurance, immobilier, bureaux, chauffeurs, hôtels, jets, yachts, restaurants, événements et accès membre à Istanbul, Bodrum et Antalya.
+              <h1 className="max-w-3xl font-serif text-4xl leading-tight tracking-[-0.035em] text-white md:text-6xl md:leading-[1.05]">
+                Votre bureau privé en Turquie
+              </h1>
+
+              <div className="mt-6 h-[2px] w-16 bg-[#c79a54]" />
+
+              <p className="mt-8 max-w-2xl text-base leading-8 text-white/90 md:text-xl md:leading-9">
+                Un seul interlocuteur pour organiser votre installation, vos affaires et votre vie privée : avocat,
+                fiscalité, société, comptabilité, santé, assurance, immobilier, bureaux, transport VIP, hôtels,
+                événements et accès privé à Istanbul, Bodrum et Antalya.
               </p>
 
               <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-                <Link href="/diagnostic-prive" className="group inline-flex items-center justify-center gap-3 bg-[#d9b66d] px-8 py-4 text-xs font-bold uppercase tracking-[0.18em] text-[#05070c] transition hover:bg-[#f1d590]">
+                <Link
+                  href="/diagnostic-prive"
+                  className="inline-flex items-center justify-center bg-[#c79a54] px-7 py-4 text-xs font-bold uppercase tracking-[0.14em] text-[#101827] transition hover:bg-[#d9ae6a]"
+                >
                   Recevoir mon diagnostic privé
-                  <ArrowRight size={15} className="transition group-hover:translate-x-1" />
                 </Link>
-                <Link href="/services" className="inline-flex items-center justify-center border border-[#d9b66d]/45 px-8 py-4 text-xs font-bold uppercase tracking-[0.18em] text-[#f8efe0] transition hover:border-[#d9b66d] hover:text-[#d9b66d]">
-                  Découvrir le bureau privé
+                <Link
+                  href="/services"
+                  className="inline-flex items-center justify-center border border-white/40 bg-white/5 px-7 py-4 text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:bg-white/10"
+                >
+                  Découvrir nos services
                 </Link>
               </div>
-
-              <div className="mt-12 grid gap-3 sm:grid-cols-3">
-                <div className="border border-white/10 bg-white/[0.035] p-5">
-                  <div className="mb-3 flex gap-1 text-[#d9b66d]">{[0, 1, 2, 3, 4].map((s) => <Star key={s} size={14} fill="currentColor" />)}</div>
-                  <p className="font-serif text-3xl text-[#fff7e8]">4,9/5</p>
-                  <p className="mt-1 text-[0.62rem] uppercase tracking-[0.2em] text-[#a99f90]">247 avis Google</p>
-                </div>
-                <div className="border border-white/10 bg-white/[0.035] p-5">
-                  <p className="font-serif text-3xl text-[#fff7e8]">6</p>
-                  <p className="mt-2 text-[0.62rem] uppercase tracking-[0.2em] text-[#a99f90]">Paris · Istanbul · Londres · Almaty · Moscou · Dubai</p>
-                </div>
-                <div className="border border-white/10 bg-white/[0.035] p-5">
-                  <p className="font-serif text-3xl text-[#fff7e8]">4</p>
-                  <p className="mt-2 text-[0.62rem] uppercase tracking-[0.2em] text-[#a99f90]">Français · English · Русский · العربية</p>
-                </div>
-              </div>
             </div>
 
-            <aside className="relative hidden lg:block">
-              <div className="absolute -inset-5 border border-[#d9b66d]/20" />
-              <div className="relative bg-[#080b12] p-8 shadow-[0_45px_150px_rgba(0,0,0,0.55)]">
-                <div className="border border-[#d9b66d]/25 p-8">
-                  <p className="text-[0.62rem] font-bold uppercase tracking-[0.35em] text-[#d9b66d]">Bosphoras Private Access</p>
-                  <p className="mt-8 font-serif text-6xl leading-none text-[#fff7e8]">Black</p>
-                  <div className="my-12 h-px bg-gradient-to-r from-transparent via-[#d9b66d] to-transparent" />
-                  <p className="font-serif text-4xl leading-tight text-[#fff7e8]">One call.<br />One trusted desk.<br />Everything Turkey.</p>
-                  <p className="mt-9 text-sm leading-8 text-[#c9c0b5]">Pas de remises. Pas de bruit. Seulement l’accès. Tables prioritaires, dîners privés, professionnels sélectionnés, chauffeurs, hôtels, yachts et introductions avec accord mutuel.</p>
-                </div>
+            <div className="mt-auto grid gap-4 border-t border-white/12 py-5 text-sm text-white/90 md:grid-cols-3">
+              <div className="flex items-center gap-2">
+                <Star className="h-4 w-4 text-[#d2a863]" fill="currentColor" />
+                <span>4,9/5 · 247 avis Google</span>
               </div>
-              <div className="mt-8 bg-[#f8efe0] p-8 text-[#07111f] shadow-[0_35px_90px_rgba(0,0,0,0.24)]">
-                <p className="font-serif text-2xl leading-snug">“En Turquie, la vraie difficulté n’est pas de trouver un service. C’est de savoir à qui faire confiance.”</p>
+              <div className="flex items-center gap-2">
+                <MapPin className="h-4 w-4 text-[#d2a863]" />
+                <span>Paris · Istanbul · Londres · Almaty · Moscou · Dubai</span>
               </div>
-            </aside>
-          </div>
-        </section>
-
-        <section className="border-y border-[#d9b66d]/20 bg-[#080b12] py-8">
-          <div className="container-editorial grid gap-4 md:grid-cols-6">
-            {locations.map((location) => <div key={location} className="text-center text-[0.66rem] font-bold uppercase tracking-[0.22em] text-[#d9b66d]">{location}</div>)}
-          </div>
-        </section>
-
-        <section className="bg-[#f6efe3] py-24 text-[#07111f] md:py-32">
-          <div className="container-editorial grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24">
-            <div>
-              <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#8a6728]">Positionnement</p>
-              <h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] md:text-7xl">Pas une agence. Un bureau privé.</h2>
-            </div>
-            <div className="space-y-7 text-xl leading-10 text-[#344052]">
-              <p>Un investisseur sérieux ne commence pas par acheter un appartement. Il commence par comprendre où vivre, comment structurer sa résidence, quelle fiscalité vérifier, quel avocat consulter, quelle assurance choisir, quel médecin contacter, quel bureau utiliser et qui peut réellement exécuter sur place.</p>
-              <p>Bosphoras rend la Turquie lisible, sûre et actionnable : un seul interlocuteur, un réseau sélectionné, une logique de confidentialité et une coordination locale entre Paris, Istanbul, Londres, Almaty, Moscou et Dubai.</p>
+              <div className="flex items-center gap-2">
+                <Globe className="h-4 w-4 text-[#d2a863]" />
+                <span>Français · English · Русский · العربية</span>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="bg-[#05070c] py-24 md:py-32">
-          <div className="container-editorial">
-            <div className="mb-16 max-w-4xl">
-              <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#d9b66d]">Private desks</p>
-              <h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] text-[#fff7e8] md:text-7xl">Six bureaux. Une seule porte d’entrée.</h2>
+        <section className="border-b border-[#e5d8c5] bg-[#fbf8f2] px-5 py-20 md:px-8 md:py-28">
+          <div className="mx-auto max-w-5xl text-center">
+            <div className="mb-5 text-6xl leading-none text-[#c79a54]">“</div>
+            <p className="mx-auto max-w-4xl font-serif text-3xl leading-tight tracking-[-0.025em] text-[#1a2232] md:text-5xl md:leading-[1.18]">
+              En Turquie, la vraie difficulté n’est pas de trouver un service. C’est de savoir à qui faire confiance.
+            </p>
+            <div className="mx-auto mt-8 h-[2px] w-16 bg-[#c79a54]" />
+          </div>
+        </section>
+
+        <section className="px-5 py-20 md:px-8 md:py-24">
+          <div className="mx-auto max-w-[1500px]">
+            <div className="mb-12 text-center">
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#b0813e]">Nos expertises</p>
+              <h2 className="mt-4 font-serif text-3xl tracking-[-0.025em] text-[#172032] md:text-5xl">
+                Une approche globale. Une exécution locale.
+              </h2>
             </div>
-            <div className="grid gap-px bg-[#d9b66d]/25 md:grid-cols-2 xl:grid-cols-3">
-              {services.map((item) => {
+
+            <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-6">
+              {expertises.map((item) => {
                 const Icon = item.icon;
                 return (
-                  <article key={item.title} className="group bg-[#05070c] p-9 transition hover:bg-[#0c1220]">
-                    <Icon size={30} strokeWidth={1.25} className="mb-12 text-[#d9b66d]" />
-                    <h3 className="font-serif text-4xl text-[#fff7e8]">{item.title}</h3>
-                    <p className="mt-5 text-sm leading-8 text-[#c9c0b5]">{item.text}</p>
+                  <article key={item.title} className="border border-[#eadfce] bg-[#fcfaf6] p-6 text-center shadow-[0_18px_55px_rgba(16,24,39,0.04)]">
+                    <Icon className="mx-auto h-8 w-8 text-[#c79a54]" strokeWidth={1.5} />
+                    <h3 className="mt-5 font-serif text-2xl text-[#172032]">{item.title}</h3>
+                    <p className="mt-4 text-sm leading-7 text-[#5c6676]">{item.text}</p>
+                    <div className="mx-auto mt-6 h-[2px] w-10 bg-[#c79a54]" />
                   </article>
                 );
               })}
@@ -196,104 +214,68 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="bg-[#f6efe3] py-24 text-[#07111f] md:py-32">
-          <div className="container-editorial">
-            <div className="mb-16 grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24">
-              <div>
-                <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#8a6728]">Territoires</p>
-                <h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] md:text-7xl">Istanbul. Bodrum. Antalya.</h2>
+        <section className="px-5 pb-20 md:px-8 md:pb-24">
+          <div className="mx-auto max-w-[1500px]">
+            <div className="mb-12 text-center">
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#b0813e]">Nos destinations</p>
+              <h2 className="mt-4 font-serif text-3xl tracking-[-0.025em] text-[#172032] md:text-5xl">
+                Trois villes. Un même niveau d’exigence.
+              </h2>
+            </div>
+
+            <div className="grid gap-4 lg:grid-cols-3">
+              {destinations.map((item) => (
+                <article key={item.title} className="group relative overflow-hidden rounded-[6px] bg-[#07111f]">
+                  <div className="relative h-[360px] md:h-[420px]">
+                    <Image
+                      src={heroImage}
+                      alt={item.title}
+                      fill
+                      sizes="(min-width: 1024px) 33vw, 100vw"
+                      className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                      style={{ objectPosition: item.objectPosition }}
+                    />
+                    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,12,20,0.05)_0%,rgba(6,12,20,0.84)_100%)]" />
+                  </div>
+
+                  <div className="absolute inset-x-0 bottom-0 p-7 text-white">
+                    <h3 className="font-serif text-4xl">{item.title}</h3>
+                    <p className="mt-3 max-w-sm text-sm leading-7 text-white/90">{item.text}</p>
+                    <div className="mt-5 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.12em] text-[#d2a863]">
+                      Découvrir <ArrowRight className="h-4 w-4" />
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="px-5 pb-20 md:px-8 md:pb-24">
+          <div className="mx-auto max-w-[1500px] border border-[#24334a] bg-[linear-gradient(90deg,#07111f_0%,#0b1930_45%,#07111f_100%)] p-6 md:p-10">
+            <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-center">
+              <div className="text-white">
+                <p className="font-serif text-3xl tracking-[-0.025em] md:text-5xl">
+                  Parlons de vos projets en toute confidentialité.
+                </p>
+                <p className="mt-4 max-w-xl text-base leading-8 text-white/80">
+                  Un entretien privé pour comprendre vos besoins et vous proposer des solutions sur mesure.
+                </p>
               </div>
-              <p className="text-xl leading-10 text-[#344052]">La bonne ville dépend du profil : business, fiscalité, famille, santé, mer, discrétion, bureaux, écoles, banques, lifestyle ou résidence longue durée.</p>
-            </div>
-            <div className="grid gap-5 md:grid-cols-3">
-              {cities.map((city, index) => (
-                <article key={city.name} className="border border-[#d9c69d] bg-[#fffaf0] p-9 shadow-[0_22px_75px_rgba(20,28,46,0.08)]">
-                  <p className="text-[0.66rem] font-bold uppercase tracking-[0.28em] text-[#8a6728]">0{index + 1} · {city.kicker}</p>
-                  <h3 className="mt-10 font-serif text-5xl tracking-[-0.04em]">{city.name}</h3>
-                  <p className="mt-6 text-base leading-8 text-[#344052]">{city.text}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
 
-        <section className="bg-[#080b12] py-24 md:py-32">
-          <div className="container-editorial grid gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24">
-            <div>
-              <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#d9b66d]">Confiance</p>
-              <h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] text-[#fff7e8] md:text-7xl">Le luxe commence par la protection.</h2>
-            </div>
-            <div className="grid gap-4 md:grid-cols-2">
-              {['Confidentialité renforcée et limitation des accès aux informations sensibles.', 'KYC, origine des fonds, documents et préférences privées traités avec prudence.', 'Coordination avec avocats, fiscalistes, comptables, assureurs, médecins et prestataires habilités.', 'Aucune promesse de résultat fiscal, juridique, administratif, médical ou financier.', 'Introductions privées uniquement avec consentement mutuel.', 'Bosphoras coordonne et filtre sans se substituer aux professions réglementées.'].map((item) => (
-                <div key={item} className="border border-[#d9b66d]/20 bg-white/[0.03] p-7 text-sm leading-8 text-[#c9c0b5]">
-                  <ShieldCheck className="mb-5 text-[#d9b66d]" size={25} strokeWidth={1.25} />
-                  {item}
+              <div className="md:text-right">
+                <Link
+                  href="/diagnostic-prive"
+                  className="inline-flex items-center justify-center bg-[#c79a54] px-8 py-4 text-xs font-bold uppercase tracking-[0.14em] text-[#101827] transition hover:bg-[#d9ae6a]"
+                >
+                  Recevoir mon diagnostic privé
+                </Link>
+                <div className="mt-5 inline-flex items-center gap-2 text-sm text-white/80">
+                  <Lock className="h-4 w-4 text-[#d2a863]" />
+                  Confidentialité absolue garantie
                 </div>
-              ))}
+              </div>
             </div>
-          </div>
-        </section>
-
-        <section className="bg-[#f6efe3] py-24 text-[#07111f] md:py-32">
-          <div className="container-editorial grid gap-14 lg:grid-cols-[0.82fr_1.18fr] lg:gap-24">
-            <div>
-              <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#8a6728]">Questions fréquentes</p>
-              <h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] md:text-7xl">Avant de venir en Turquie.</h2>
-            </div>
-            <div className="grid gap-px bg-[#d9c69d]">
-              {homeFaqs.map((faq) => (
-                <article key={faq.question} className="bg-[#f6efe3] p-8">
-                  <h3 className="font-serif text-3xl leading-snug">{faq.question}</h3>
-                  <p className="mt-4 text-base leading-8 text-[#344052]">{faq.answer}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-[#05070c] py-24 md:py-32">
-          <div className="container-editorial grid gap-14 lg:grid-cols-[0.75fr_1.25fr] lg:gap-24">
-            <div>
-              <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#d9b66d]">Méthode</p>
-              <h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] text-[#fff7e8] md:text-7xl">Une exécution calme, claire, confidentielle.</h2>
-            </div>
-            <div className="border-l border-[#d9b66d]/25">
-              {method.map((step, index) => (
-                <div key={step} className="grid grid-cols-[5rem_1fr] border-b border-[#d9b66d]/15 py-7 last:border-b-0">
-                  <span className="font-serif text-3xl text-[#d9b66d]">0{index + 1}</span>
-                  <p className="text-lg leading-8 text-[#c9c0b5]">{step}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-[#f6efe3] py-24 text-[#07111f] md:py-32">
-          <div className="container-editorial grid gap-14 lg:grid-cols-[0.75fr_1.25fr] lg:gap-24">
-            <div>
-              <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#8a6728]">Clientèle</p>
-              <h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] md:text-7xl">Pour ceux qui ne peuvent pas se permettre l’improvisation.</h2>
-            </div>
-            <div className="grid gap-3 sm:grid-cols-2">
-              {audiences.map((audience) => (
-                <div key={audience} className="border border-[#d9c69d] bg-[#fffaf0] p-5 text-sm font-bold uppercase tracking-[0.12em] text-[#344052]">
-                  <Check size={15} className="mr-3 inline text-[#8a6728]" />{audience}
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="bg-[#05070c] py-24 text-center md:py-32">
-          <div className="container-editorial max-w-4xl">
-            <Sparkles className="mx-auto mb-8 text-[#d9b66d]" size={36} strokeWidth={1.25} />
-            <p className="mb-6 text-xs font-bold uppercase tracking-[0.3em] text-[#d9b66d]">Private Assessment</p>
-            <h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] text-[#fff7e8] md:text-7xl">Dites-nous ce que vous voulez régler en Turquie. Nous construisons la route.</h2>
-            <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-[#c9c0b5]">Installation, société, fiscalité, santé, immobilier, bureaux, transport, hôtels, accès privé ou membership : chaque demande commence par un échange confidentiel.</p>
-            <Link href="/diagnostic-prive" className="mt-10 inline-flex items-center justify-center gap-3 bg-[#d9b66d] px-9 py-4 text-xs font-bold uppercase tracking-[0.18em] text-[#05070c] transition hover:bg-[#f1d590]">
-              Recevoir mon diagnostic privé
-              <ArrowRight size={15} />
-            </Link>
           </div>
         </section>
       </main>
