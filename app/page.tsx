@@ -4,7 +4,6 @@ import {
   ArrowRight,
   Bell,
   Building2,
-  Check,
   Globe,
   Home,
   KeyRound,
@@ -13,7 +12,6 @@ import {
   Scale,
   Shield,
   ShieldCheck,
-  Star,
 } from 'lucide-react';
 import { buildMetadata, faqSchema, organizationSchema, websiteSchema } from '@/lib/seo';
 import { Header } from '@/components/Header';
@@ -87,7 +85,6 @@ const expertises = [
 ];
 
 const locations = ['Paris', 'Istanbul', 'Londres', 'Almaty', 'Moscou', 'Dubai'];
-const languages = ['Français', 'English', 'Русский', 'العربية'];
 
 const cities = [
   {
@@ -125,28 +122,21 @@ export default function HomePage() {
       <Header locale={locale} currentPath="/" />
 
       <main className="bg-[#f8f1e7] text-[#101827]">
-        <section className="relative min-h-[92vh] overflow-hidden bg-[radial-gradient(circle_at_78%_16%,rgba(196,151,84,0.22),transparent_27%),radial-gradient(circle_at_12%_70%,rgba(10,20,35,0.08),transparent_25%),linear-gradient(135deg,#f8f1e7_0%,#fffaf0_48%,#efe4d2_100%)] pt-28 md:pt-36">
+        <section className="relative min-h-[92vh] overflow-hidden bg-[radial-gradient(circle_at_78%_16%,rgba(196,151,84,0.22),transparent_27%),radial-gradient(circle_at_12%_70%,rgba(10,20,35,0.08),transparent_25%),linear-gradient(135deg,#f8f1e7_0%,#fffaf0_48%,#efe4d2_100%)] pt-24 md:pt-32">
           <div className="absolute inset-x-8 top-28 hidden h-[calc(100%-8rem)] border border-[#d8c7a1] lg:block" />
           <div className="absolute inset-0 opacity-[0.28]" style={{ backgroundImage: 'linear-gradient(#d8c7a1 1px, transparent 1px), linear-gradient(90deg, #d8c7a1 1px, transparent 1px)', backgroundSize: '72px 72px' }} />
 
-          <div className="container-editorial relative z-10 grid min-h-[calc(92vh-8rem)] items-center gap-14 pb-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
+          <div className="container-editorial relative z-10 grid min-h-[calc(92vh-7rem)] items-center gap-10 pb-12 pt-2 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20 lg:pb-16 lg:pt-0">
             <div>
-              <div className="mb-8 flex flex-wrap items-center gap-4">
-                <span className="h-px w-16 bg-[#a77a35]" />
-                <p className="text-[0.68rem] font-bold uppercase tracking-[0.34em] text-[#8a6728]">
-                  Bureau privé · Turquie · International
-                </p>
-              </div>
-
-              <h1 className="max-w-4xl font-serif text-4xl leading-[1.04] tracking-[-0.045em] text-[#121826] md:text-6xl lg:text-7xl">
+              <h1 className="max-w-4xl font-serif text-4xl leading-[1.02] tracking-[-0.045em] text-[#121826] md:text-6xl lg:text-7xl">
                 Votre bureau privé en Turquie
               </h1>
 
-              <p className="mt-8 max-w-2xl text-lg leading-9 text-[#3e4857] md:text-xl md:leading-10">
+              <p className="mt-6 max-w-2xl text-base leading-8 text-[#3e4857] md:mt-8 md:text-xl md:leading-10">
                 Un seul interlocuteur pour organiser votre installation, vos affaires et votre vie privée : avocat, fiscalité, société, comptabilité, santé, assurance, immobilier, bureaux, transport VIP, hôtels, événements et accès privé à Istanbul, Bodrum et Antalya.
               </p>
 
-              <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row md:mt-10">
                 <Link href="/diagnostic-prive" className="inline-flex items-center justify-center bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246]">
                   Recevoir mon diagnostic privé
                 </Link>
@@ -155,12 +145,7 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              <div className="mt-12 grid gap-3 sm:grid-cols-3">
-                <div className="border border-[#d8c7a1] bg-[#fffaf0]/80 p-5 shadow-[0_18px_45px_rgba(16,24,39,0.04)]">
-                  <div className="mb-3 flex gap-1 text-[#b0813e]">{[0, 1, 2, 3, 4].map((s) => <Star key={s} size={14} fill="currentColor" />)}</div>
-                  <p className="font-serif text-3xl text-[#121826]">4,9/5</p>
-                  <p className="mt-1 text-[0.62rem] uppercase tracking-[0.18em] text-[#5c6676]">247 avis Google</p>
-                </div>
+              <div className="mt-8 grid gap-3 sm:grid-cols-2 md:mt-12">
                 <div className="border border-[#d8c7a1] bg-[#fffaf0]/80 p-5 shadow-[0_18px_45px_rgba(16,24,39,0.04)]">
                   <MapPin className="mb-4 h-5 w-5 text-[#b0813e]" />
                   <p className="text-[0.62rem] uppercase leading-6 tracking-[0.16em] text-[#5c6676]">Paris · Istanbul · Londres · Almaty · Moscou · Dubai</p>
@@ -172,7 +157,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <aside className="relative">
+            <aside className="relative hidden md:block">
               <div className="absolute -inset-4 border border-[#d8c7a1]" />
               <div className="relative border border-[#d8c7a1] bg-[#121826] p-8 text-[#fffaf0] shadow-[0_40px_120px_rgba(16,24,39,0.22)] md:p-10">
                 <p className="text-[0.62rem] font-bold uppercase tracking-[0.34em] text-[#d2a863]">Bosphoras Private Desk</p>
