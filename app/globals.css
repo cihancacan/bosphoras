@@ -15,6 +15,10 @@
     --warm-white: 40 50% 98%;
     --muted-text: 220 10% 55%;
 
+    --font-display: 'Cormorant Garamond', 'Cormorant', 'Bodoni 72', Didot, 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+    --font-serif: 'Cormorant Garamond', 'Cormorant', 'Bodoni 72', Didot, 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+    --font-sans: 'Avenir Next', Inter, 'Helvetica Neue', Arial, system-ui, sans-serif;
+
     --background: var(--ivory);
     --foreground: var(--navy);
     --card: 0 0% 100%;
@@ -48,6 +52,7 @@
   body {
     background-color: hsl(var(--ivory));
     color: hsl(var(--navy));
+    font-family: var(--font-sans);
     font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
   }
 
