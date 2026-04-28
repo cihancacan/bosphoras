@@ -30,13 +30,13 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
   };
 
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 border-b border-[hsl(42,18%,84%)]/80 bg-[hsl(45,30%,96%)]/92 backdrop-blur-xl">
+    <header className="fixed left-0 right-0 top-0 z-50 border-b border-[#c9a968]/20 bg-[#05070c]/88 backdrop-blur-2xl">
       <div className="container-editorial flex h-20 items-center justify-between md:h-24">
         <Link href={getLocalePath(locale, '/')} className="group flex flex-col leading-none" aria-label="Bosphoras — Accueil">
-          <span className="font-serif text-2xl font-semibold uppercase tracking-[0.16em] text-[hsl(220,45%,12%)] transition-colors duration-300 group-hover:text-[hsl(42,65%,38%)]">
+          <span className="font-serif text-2xl font-semibold uppercase tracking-[0.18em] text-[#f8efe0] transition-colors duration-300 group-hover:text-[#d9b66d]">
             Bosphoras
           </span>
-          <span className="mt-1 text-[0.58rem] uppercase tracking-[0.32em] text-[hsl(42,65%,38%)]">
+          <span className="mt-1 text-[0.56rem] uppercase tracking-[0.36em] text-[#d9b66d]">
             {locale === 'fr' && 'Bureau Privé · Turquie'}
             {locale === 'en' && 'Private Office · Turkey'}
             {locale === 'ru' && 'Частный Офис · Турция'}
@@ -49,7 +49,7 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
             <Link
               key={key}
               href={getLocalePath(locale, href)}
-              className="text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-[hsl(220,14%,38%)] transition-colors duration-200 hover:text-[hsl(42,65%,35%)]"
+              className="text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-[#cfc6b8] transition-colors duration-200 hover:text-[#d9b66d]"
             >
               {t(locale, key)}
             </Link>
@@ -60,22 +60,22 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
           <div className="relative">
             <button
               onClick={() => setLangOpen(!langOpen)}
-              className="flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-[hsl(220,14%,38%)] transition-colors duration-200 hover:text-[hsl(42,65%,35%)]"
+              className="flex items-center gap-2 text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-[#cfc6b8] transition-colors duration-200 hover:text-[#d9b66d]"
               aria-expanded={langOpen}
               aria-haspopup="listbox"
             >
               {localeNames[locale]}
-              <span className="text-[hsl(42,65%,45%)]">▾</span>
+              <span className="text-[#d9b66d]">▾</span>
             </button>
             {langOpen && (
-              <div className="absolute right-0 top-full z-50 mt-4 min-w-[150px] border border-[hsl(42,18%,84%)] bg-white shadow-[0_22px_60px_rgba(20,28,46,0.12)]" role="listbox">
+              <div className="absolute right-0 top-full z-50 mt-4 min-w-[150px] border border-[#d9b66d]/25 bg-[#080b12] shadow-[0_28px_80px_rgba(0,0,0,0.32)]" role="listbox">
                 {locales.map((loc) => (
                   <Link
                     key={loc}
                     href={getLocaleHref(loc)}
                     onClick={() => setLangOpen(false)}
-                    className={`block px-4 py-3 text-xs uppercase tracking-[0.12em] transition-colors duration-150 hover:bg-[hsl(45,30%,96%)] ${
-                      loc === locale ? 'font-semibold text-[hsl(42,65%,38%)]' : 'text-[hsl(220,14%,38%)]'
+                    className={`block px-4 py-3 text-xs uppercase tracking-[0.12em] transition-colors duration-150 hover:bg-white/5 ${
+                      loc === locale ? 'font-semibold text-[#d9b66d]' : 'text-[#cfc6b8]'
                     }`}
                     role="option"
                     aria-selected={loc === locale}
@@ -88,39 +88,39 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
             )}
           </div>
 
-          <Link href={getLocalePath(locale, getSlugForPage('private-assessment', locale) ?? '/')} className="border border-[hsl(220,45%,12%)] bg-[hsl(220,45%,12%)] px-6 py-3 text-[0.68rem] font-semibold uppercase tracking-[0.16em] text-[hsl(45,30%,96%)] transition-colors duration-300 hover:bg-[hsl(220,35%,20%)]">
+          <Link href={getLocalePath(locale, getSlugForPage('private-assessment', locale) ?? '/')} className="border border-[#d9b66d] bg-[#d9b66d] px-6 py-3 text-[0.66rem] font-bold uppercase tracking-[0.16em] text-[#05070c] transition-colors duration-300 hover:bg-[#f1d590]">
             {t(locale, 'nav.assessment')}
           </Link>
         </div>
 
-        <button className="p-2 text-[hsl(220,45%,12%)] lg:hidden" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'} aria-expanded={menuOpen}>
+        <button className="p-2 text-[#f8efe0] lg:hidden" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'} aria-expanded={menuOpen}>
           {menuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
       {menuOpen && (
-        <div className="border-t border-[hsl(42,18%,84%)] bg-[hsl(45,30%,96%)] px-6 py-6 lg:hidden">
+        <div className="border-t border-[#d9b66d]/20 bg-[#05070c] px-6 py-6 lg:hidden">
           <div className="flex flex-col gap-4">
             {navLinks.map(({ key, href }) => (
               <Link
                 key={key}
                 href={getLocalePath(locale, href)}
                 onClick={() => setMenuOpen(false)}
-                className="py-1 text-sm font-semibold uppercase tracking-[0.12em] text-[hsl(220,14%,38%)] transition-colors duration-200 hover:text-[hsl(42,65%,35%)]"
+                className="py-1 text-sm font-semibold uppercase tracking-[0.12em] text-[#cfc6b8] transition-colors duration-200 hover:text-[#d9b66d]"
               >
                 {t(locale, key)}
               </Link>
             ))}
 
-            <div className="mt-3 flex flex-wrap gap-3 border-t border-[hsl(42,18%,84%)] pt-5">
+            <div className="mt-3 flex flex-wrap gap-3 border-t border-[#d9b66d]/20 pt-5">
               {locales.map((loc) => (
-                <Link key={loc} href={getLocaleHref(loc)} onClick={() => setMenuOpen(false)} className={`text-xs uppercase tracking-[0.12em] ${loc === locale ? 'font-semibold text-[hsl(42,65%,38%)]' : 'text-[hsl(220,14%,38%)]'}`} lang={loc}>
+                <Link key={loc} href={getLocaleHref(loc)} onClick={() => setMenuOpen(false)} className={`text-xs uppercase tracking-[0.12em] ${loc === locale ? 'font-semibold text-[#d9b66d]' : 'text-[#cfc6b8]'}`} lang={loc}>
                   {localeNames[loc]}
                 </Link>
               ))}
             </div>
 
-            <Link href={getLocalePath(locale, getSlugForPage('private-assessment', locale) ?? '/')} onClick={() => setMenuOpen(false)} className="mt-3 inline-flex justify-center border border-[hsl(220,45%,12%)] bg-[hsl(220,45%,12%)] px-6 py-4 text-xs font-semibold uppercase tracking-[0.16em] text-[hsl(45,30%,96%)]">
+            <Link href={getLocalePath(locale, getSlugForPage('private-assessment', locale) ?? '/')} onClick={() => setMenuOpen(false)} className="mt-3 inline-flex justify-center border border-[#d9b66d] bg-[#d9b66d] px-6 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#05070c]">
               {t(locale, 'nav.assessment')}
             </Link>
           </div>
