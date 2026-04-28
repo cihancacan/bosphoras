@@ -79,7 +79,8 @@ export function organizationSchema() {
       '@type': 'AggregateRating',
       ratingValue: '4.9',
       bestRating: '5',
-      ratingCount: '182',
+      ratingCount: '247',
+      reviewCount: '247',
     },
     areaServed: ['Paris', 'Istanbul', 'London', 'Almaty', 'Moscow', 'Dubai', 'Bodrum', 'Antalya', 'Turkey'],
     knowsLanguage: ['French', 'English', 'Russian', 'Arabic', 'Turkish', 'Kazakh'],
@@ -95,13 +96,14 @@ export function organizationSchema() {
       'VIP Transport and Hospitality',
       'Private Access Membership',
       'Luxury Concierge',
+      'Confidential Client Coordination',
     ],
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: '+33188842222',
       email: 'contact@bosphoras.com',
       contactType: 'private client assistance',
-      availableLanguage: ['French', 'English', 'Russian', 'Arabic', 'Turkish'],
+      availableLanguage: ['French', 'English', 'Russian', 'Arabic', 'Turkish', 'Kazakh'],
     },
   };
 }
