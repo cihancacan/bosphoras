@@ -37,9 +37,9 @@ const homeFaqs = [
       'Oui. Bosphoras peut organiser l’accès à des professionnels indépendants : avocats, fiscalistes, comptables, assureurs, bureaux et partenaires opérationnels. Les décisions juridiques et fiscales restent validées par les professionnels habilités.',
   },
   {
-    question: 'Bosphoras propose-t-il une carte membre ou un accès privé ?',
+    question: 'Bosphoras Private Access est-il une carte de réduction ?',
     answer:
-      'Oui. La carte Bosphoras Private Access est pensée comme une carte membre, non bancaire, donnant accès à une assistance prioritaire, des événements privés, des réservations, des introductions qualifiées et un suivi personnalisé.',
+      'Non. Bosphoras Private Access n’est pas une carte de réduction. C’est un accès privé au bureau Bosphoras, aux introductions qualifiées, au traitement prioritaire et à la coordination confidentielle des demandes en Turquie.',
   },
 ];
 
@@ -80,7 +80,7 @@ const expertises = [
   {
     icon: KeyRound,
     title: 'Private Access',
-    text: 'Accès privilégié et relations de confiance à Istanbul, Bodrum, Antalya et dans toute la Turquie.',
+    text: 'Adhésion privée sur sélection, accès prioritaire au desk Bosphoras, introductions qualifiées, événements privés et coordination continue en Turquie.',
   },
 ];
 
@@ -124,7 +124,14 @@ export default function HomePage() {
       <main className="bg-[#f8f1e7] text-[#101827]">
         <section className="relative min-h-[92vh] overflow-hidden bg-[radial-gradient(circle_at_78%_16%,rgba(196,151,84,0.22),transparent_27%),radial-gradient(circle_at_12%_70%,rgba(10,20,35,0.08),transparent_25%),linear-gradient(135deg,#f8f1e7_0%,#fffaf0_48%,#efe4d2_100%)] pt-24 md:pt-32">
           <div className="absolute inset-x-8 top-28 hidden h-[calc(100%-8rem)] border border-[#d8c7a1] lg:block" />
-          <div className="absolute inset-0 opacity-[0.28]" style={{ backgroundImage: 'linear-gradient(#d8c7a1 1px, transparent 1px), linear-gradient(90deg, #d8c7a1 1px, transparent 1px)', backgroundSize: '72px 72px' }} />
+          <div
+            className="absolute inset-0 opacity-[0.28]"
+            style={{
+              backgroundImage:
+                'linear-gradient(#d8c7a1 1px, transparent 1px), linear-gradient(90deg, #d8c7a1 1px, transparent 1px)',
+              backgroundSize: '72px 72px',
+            }}
+          />
 
           <div className="container-editorial relative z-10 grid min-h-[calc(92vh-7rem)] items-center gap-10 pb-12 pt-2 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20 lg:pb-16 lg:pt-0">
             <div>
@@ -137,22 +144,40 @@ export default function HomePage() {
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row md:mt-10">
-                <Link href="/diagnostic-prive" className="inline-flex items-center justify-center bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246]">
+                <Link
+                  href="/diagnostic-prive"
+                  className="inline-flex items-center justify-center bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246]"
+                >
                   Recevoir mon diagnostic privé
                 </Link>
-                <Link href="/services" className="inline-flex items-center justify-center border border-[#a77a35] bg-[#fffaf0]/50 px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728] transition hover:bg-[#fffaf0]">
+                <Link
+                  href="/services"
+                  className="inline-flex items-center justify-center border border-[#a77a35] bg-[#fffaf0]/50 px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728] transition hover:bg-[#fffaf0]"
+                >
                   Découvrir nos services
                 </Link>
               </div>
 
+              <Link
+                href="/adhesion/demande-membre"
+                className="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#8a6728] transition hover:text-[#121826]"
+              >
+                Bosphoras Private Access · Demander une adhésion privée
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+
               <div className="mt-8 grid gap-3 sm:grid-cols-2 md:mt-12">
                 <div className="border border-[#d8c7a1] bg-[#fffaf0]/80 p-5 shadow-[0_18px_45px_rgba(16,24,39,0.04)]">
                   <MapPin className="mb-4 h-5 w-5 text-[#b0813e]" />
-                  <p className="text-[0.62rem] uppercase leading-6 tracking-[0.16em] text-[#5c6676]">Paris · Istanbul · Londres · Almaty · Moscou · Dubai</p>
+                  <p className="text-[0.62rem] uppercase leading-6 tracking-[0.16em] text-[#5c6676]">
+                    Paris · Istanbul · Londres · Almaty · Moscou · Dubai
+                  </p>
                 </div>
                 <div className="border border-[#d8c7a1] bg-[#fffaf0]/80 p-5 shadow-[0_18px_45px_rgba(16,24,39,0.04)]">
                   <Globe className="mb-4 h-5 w-5 text-[#b0813e]" />
-                  <p className="text-[0.62rem] uppercase leading-6 tracking-[0.16em] text-[#5c6676]">Français · English · Русский · العربية</p>
+                  <p className="text-[0.62rem] uppercase leading-6 tracking-[0.16em] text-[#5c6676]">
+                    Français · English · Русский · العربية
+                  </p>
                 </div>
               </div>
             </div>
@@ -160,7 +185,9 @@ export default function HomePage() {
             <aside className="relative hidden md:block">
               <div className="absolute -inset-4 border border-[#d8c7a1]" />
               <div className="relative border border-[#d8c7a1] bg-[#121826] p-8 text-[#fffaf0] shadow-[0_40px_120px_rgba(16,24,39,0.22)] md:p-10">
-                <p className="text-[0.62rem] font-bold uppercase tracking-[0.34em] text-[#d2a863]">Bosphoras Private Desk</p>
+                <p className="text-[0.62rem] font-bold uppercase tracking-[0.34em] text-[#d2a863]">
+                  Bosphoras Private Desk
+                </p>
                 <p className="mt-10 font-serif text-4xl leading-tight tracking-[-0.03em] md:text-5xl">
                   One trusted desk. Everything Turkey.
                 </p>
@@ -188,7 +215,10 @@ export default function HomePage() {
         <section className="border-y border-[#d8c7a1] bg-[#fffaf0] py-8">
           <div className="container-editorial grid gap-4 md:grid-cols-6">
             {locations.map((location) => (
-              <div key={location} className="text-center text-[0.66rem] font-bold uppercase tracking-[0.2em] text-[#8a6728]">
+              <div
+                key={location}
+                className="text-center text-[0.66rem] font-bold uppercase tracking-[0.2em] text-[#8a6728]"
+              >
                 {location}
               </div>
             ))}
@@ -198,7 +228,9 @@ export default function HomePage() {
         <section className="px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto grid max-w-[1500px] gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24">
             <div>
-              <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#8a6728]">Notre différence</p>
+              <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#8a6728]">
+                Notre différence
+              </p>
               <h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] md:text-6xl">
                 Pas une agence. Un bureau privé.
               </h2>
@@ -214,10 +246,109 @@ export default function HomePage() {
           </div>
         </section>
 
+        <section className="bg-[#fffaf0] px-5 py-20 md:px-8 md:py-28">
+          <div className="mx-auto max-w-[1500px]">
+            <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-stretch">
+              <div className="border border-[#d8c7a1] bg-[#121826] p-8 text-[#fffaf0] shadow-[0_40px_120px_rgba(16,24,39,0.18)] md:p-10">
+                <p className="text-[0.62rem] font-bold uppercase tracking-[0.34em] text-[#d2a863]">
+                  Bosphoras Private Access
+                </p>
+
+                <h2 className="mt-8 font-serif text-4xl leading-tight tracking-[-0.04em] md:text-6xl">
+                  Une seule adhésion. Un seul niveau de service.
+                </h2>
+
+                <p className="mt-7 text-base leading-8 text-[#d8cfbf]">
+                  Pour certains clients, la Turquie ne se gère pas demande par demande. Elle se gère avec un accès permanent à un bureau privé, capable de filtrer, coordonner et activer les bons interlocuteurs avec discrétion.
+                </p>
+
+                <div className="my-9 h-px bg-gradient-to-r from-transparent via-[#d2a863] to-transparent" />
+
+                <div className="grid gap-5 sm:grid-cols-2">
+                  <div>
+                    <p className="text-[0.62rem] uppercase tracking-[0.22em] text-[#d2a863]">
+                      Admission annuelle
+                    </p>
+                    <p className="mt-2 font-serif text-4xl text-white">10 000 USD</p>
+                  </div>
+
+                  <div>
+                    <p className="text-[0.62rem] uppercase tracking-[0.22em] text-[#d2a863]">
+                      Retainer mensuel
+                    </p>
+                    <p className="mt-2 font-serif text-4xl text-white">1 000 USD</p>
+                  </div>
+                </div>
+
+                <p className="mt-7 text-sm leading-7 text-[#d8cfbf]">
+                  Sur parrainage, recommandation ou validation du profil. Cycle de 12 mois à compter de la validation. Conditions révisables chaque année.
+                </p>
+
+                <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                  <Link
+                    href="/adhesion/demande-membre"
+                    className="inline-flex items-center justify-center gap-3 bg-[#d2a863] px-7 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#101827] transition hover:bg-[#e0bc78]"
+                  >
+                    Demander une adhésion
+                    <ArrowRight size={15} />
+                  </Link>
+                  <Link
+                    href="/diagnostic-prive"
+                    className="inline-flex items-center justify-center border border-[#d2a863]/70 px-7 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#d2a863] transition hover:bg-white/5"
+                  >
+                    Demande classique
+                  </Link>
+                </div>
+              </div>
+
+              <div className="grid gap-4 md:grid-cols-2">
+                {[
+                  {
+                    title: 'Accès prioritaire',
+                    text: 'Les demandes membres sont traitées avec priorité par le bureau Bosphoras.',
+                  },
+                  {
+                    title: 'Introductions qualifiées',
+                    text: 'Avocats, fiscalistes, assureurs, médecins, bureaux, hôtels, chauffeurs et partenaires sélectionnés.',
+                  },
+                  {
+                    title: 'Confidentialité renforcée',
+                    text: 'Un cadre discret pour les demandes privées, familiales, patrimoniales ou professionnelles.',
+                  },
+                  {
+                    title: 'Coordination continue',
+                    text: 'Une relation active avec le desk Bosphoras pour avancer en Turquie tout au long de l’année.',
+                  },
+                ].map((item) => (
+                  <article
+                    key={item.title}
+                    className="border border-[#d8c7a1] bg-white p-7 shadow-[0_18px_55px_rgba(16,24,39,0.045)]"
+                  >
+                    <KeyRound className="h-7 w-7 text-[#8a6728]" strokeWidth={1.4} />
+                    <h3 className="mt-8 font-serif text-3xl text-[#121826]">{item.title}</h3>
+                    <p className="mt-5 text-sm leading-7 text-[#3e4857]">{item.text}</p>
+                  </article>
+                ))}
+
+                <article className="border border-[#d8c7a1] bg-[#f8f1e7] p-7 md:col-span-2">
+                  <p className="font-serif text-3xl leading-tight text-[#121826]">
+                    Bosphoras Private Desk reste disponible pour les demandes classiques.
+                  </p>
+                  <p className="mt-5 text-sm leading-7 text-[#3e4857]">
+                    Pour les clients qui souhaitent un accompagnement sans accès membre, le Private Desk démarre à partir de 6 000 USD / an ou sur devis personnalisé selon la mission.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="bg-[#121826] px-5 py-20 text-[#fffaf0] md:px-8 md:py-28">
           <div className="mx-auto max-w-[1500px]">
             <div className="mb-12 max-w-4xl">
-              <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#d2a863]">Nos expertises</p>
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#d2a863]">
+                Nos expertises
+              </p>
               <h2 className="mt-4 font-serif text-4xl tracking-[-0.035em] md:text-6xl">
                 Une approche globale. Une exécution locale.
               </h2>
@@ -241,7 +372,9 @@ export default function HomePage() {
         <section className="px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto max-w-[1500px]">
             <div className="mb-12 text-center">
-              <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#8a6728]">Nos destinations</p>
+              <p className="text-xs font-bold uppercase tracking-[0.24em] text-[#8a6728]">
+                Nos destinations
+              </p>
               <h2 className="mt-4 font-serif text-3xl tracking-[-0.025em] text-[#172032] md:text-5xl">
                 Trois villes. Un même niveau d’exigence.
               </h2>
@@ -249,10 +382,19 @@ export default function HomePage() {
 
             <div className="grid gap-4 lg:grid-cols-3">
               {cities.map((item, index) => (
-                <article key={item.title} className="border border-[#d8c7a1] bg-[#fffaf0] p-8 shadow-[0_18px_55px_rgba(16,24,39,0.05)]">
-                  <p className="text-[0.66rem] font-bold uppercase tracking-[0.28em] text-[#8a6728]">0{index + 1}</p>
-                  <h3 className="mt-10 font-serif text-5xl tracking-[-0.04em] text-[#172032]">{item.title}</h3>
-                  <p className="mt-4 text-xs font-bold uppercase tracking-[0.16em] text-[#4a5260]">{item.subtitle}</p>
+                <article
+                  key={item.title}
+                  className="border border-[#d8c7a1] bg-[#fffaf0] p-8 shadow-[0_18px_55px_rgba(16,24,39,0.05)]"
+                >
+                  <p className="text-[0.66rem] font-bold uppercase tracking-[0.28em] text-[#8a6728]">
+                    0{index + 1}
+                  </p>
+                  <h3 className="mt-10 font-serif text-5xl tracking-[-0.04em] text-[#172032]">
+                    {item.title}
+                  </h3>
+                  <p className="mt-4 text-xs font-bold uppercase tracking-[0.16em] text-[#4a5260]">
+                    {item.subtitle}
+                  </p>
                   <p className="mt-6 text-base leading-8 text-[#3e4857]">{item.text}</p>
                   <div className="mt-8 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.12em] text-[#8a6728]">
                     Découvrir <ArrowRight className="h-4 w-4" />
@@ -266,7 +408,9 @@ export default function HomePage() {
         <section className="bg-[#fffaf0] px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto grid max-w-[1500px] gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-24">
             <div>
-              <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#8a6728]">Confiance</p>
+              <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#8a6728]">
+                Confiance
+              </p>
               <h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] md:text-6xl">
                 Le vrai luxe, c’est de protéger le client.
               </h2>
@@ -292,7 +436,9 @@ export default function HomePage() {
         <section className="px-5 py-20 md:px-8 md:py-28">
           <div className="mx-auto grid max-w-[1500px] gap-14 lg:grid-cols-[0.82fr_1.18fr] lg:gap-24">
             <div>
-              <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#8a6728]">Questions fréquentes</p>
+              <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#8a6728]">
+                Questions fréquentes
+              </p>
               <h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] md:text-6xl">
                 Avant de venir en Turquie.
               </h2>
@@ -311,7 +457,9 @@ export default function HomePage() {
         <section className="bg-[#121826] px-5 py-20 text-[#fffaf0] md:px-8 md:py-28">
           <div className="mx-auto grid max-w-[1500px] gap-14 lg:grid-cols-[0.75fr_1.25fr] lg:gap-24">
             <div>
-              <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#d2a863]">Méthode</p>
+              <p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#d2a863]">
+                Méthode
+              </p>
               <h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] md:text-6xl">
                 Une exécution calme, claire, confidentielle.
               </h2>
@@ -339,11 +487,22 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="md:text-right">
-                <Link href="/diagnostic-prive" className="inline-flex items-center justify-center bg-[#d2a863] px-8 py-4 text-xs font-bold uppercase tracking-[0.14em] text-[#101827] transition hover:bg-[#e0bc78]">
+              <div className="flex flex-col gap-3 md:items-end">
+                <Link
+                  href="/diagnostic-prive"
+                  className="inline-flex items-center justify-center bg-[#d2a863] px-8 py-4 text-xs font-bold uppercase tracking-[0.14em] text-[#101827] transition hover:bg-[#e0bc78]"
+                >
                   Recevoir mon diagnostic privé
                 </Link>
-                <div className="mt-5 inline-flex items-center gap-2 text-sm text-white/80">
+
+                <Link
+                  href="/adhesion/demande-membre"
+                  className="inline-flex items-center justify-center border border-[#d2a863]/70 px-8 py-4 text-xs font-bold uppercase tracking-[0.14em] text-[#d2a863] transition hover:bg-white/5"
+                >
+                  Demander une adhésion privée
+                </Link>
+
+                <div className="mt-3 inline-flex items-center gap-2 text-sm text-white/80">
                   <Lock className="h-4 w-4 text-[#d2a863]" />
                   Confidentialité absolue garantie
                 </div>
