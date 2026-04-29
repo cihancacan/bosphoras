@@ -648,54 +648,126 @@ export const frPages: MainPageContent[] = [
     ],
   },
   {
-    id: 'private-club',
-    locale: 'fr',
-    slug: '/cercle-prive',
-    title: 'Cercle privé Bosphoras — Accès confidentiel | Bosphoras',
-    h1: "Un cercle privé pour des relations choisies",
-    metaDescription:
-      "Le cercle privé Bosphoras réunit familles, dirigeants et investisseurs internationaux dans un cadre discret. Adhésion sur cooptation, gouvernance exigeante.",
-    shortIntro:
-      "Le cercle privé Bosphoras réunit, dans un cadre confidentiel, des familles et des dirigeants partageant les mêmes exigences de discrétion et de qualité. L'adhésion se fait sur cooptation et après un entretien préalable.",
-    sections: [
-      {
-        heading: 'Une logique de cercle, pas de club commercial',
-        body: "Nous ne cherchons pas le volume. Le cercle est volontairement restreint pour préserver la qualité des échanges et la confidentialité des relations.",
-      },
-      {
-        heading: 'Ce que le cercle apporte',
-        body: "Au-delà des services, le cercle est un espace de mise en relation et d'échanges entre pairs.",
-        bullets: [
-          "Rencontres privées et tables choisies",
-          "Accès à des partenaires sélectionnés du réseau",
-          "Veille discrète sur les sujets juridiques et patrimoniaux",
-        ],
-      },
-      {
-        heading: 'Une gouvernance exigeante',
-        body: "Chaque candidature est étudiée avec attention. Nous nous réservons le droit de ne pas y donner suite, sans avoir à justifier notre décision.",
-      },
-    ],
-    faqs: [
-      {
-        question: 'Comment rejoindre le cercle ?',
-        answer:
-          "Par cooptation d'un membre, ou par recommandation d'un partenaire de confiance. Un entretien préalable est systématique.",
-      },
-      {
-        question: "Quels sont les engagements des membres ?",
-        answer:
-          "Discrétion, courtoisie et respect de la charte interne. Aucun engagement commercial n'est attendu.",
-      },
-    ],
-    cta: { label: 'Approcher le cercle', href: '/diagnostic-prive' },
-    jsonLdType: 'Service',
-    internalLinks: [
-      { pageId: 'membership-card', label: 'Carte de membre' },
-      { pageId: 'premium-cardholders', label: 'Membres premium' },
-      { pageId: 'partners', label: 'Partenaires et réseau' },
-    ],
+ {
+  id: 'private-club',
+  locale: 'fr',
+  slug: '/cercle-prive',
+  title: 'Cercle privé Bosphoras — Private Access Turquie | Bosphoras',
+  h1: 'Bosphoras Private Access, le cercle privé pour accéder à la Turquie avec les bons interlocuteurs',
+  metaDescription:
+    'Bosphoras Private Access est le cercle privé de Bosphoras en Turquie : admission annuelle 10 000 USD, retainer mensuel 1 000 USD, accès prioritaire, introductions qualifiées, services membres, fiscalité, santé, immobilier, transport VIP, hôtels, événements et lifestyle.',
+  shortIntro:
+    'Bosphoras Private Access n’est pas une carte de réduction. C’est un accès privé à un bureau de coordination, d’introduction et d’exécution en Turquie, réservé aux profils sélectionnés sur parrainage, recommandation ou validation du profil.',
+  sections: [
+    {
+      heading: 'Une seule adhésion. Un seul niveau de service.',
+      body: 'Le cercle privé Bosphoras repose sur une idée simple : aucun membre n’est placé au-dessus d’un autre. L’adhésion donne accès au même niveau d’attention, de discrétion et de traitement prioritaire. Ce sont les demandes, les besoins et les projets qui diffèrent, pas le statut du membre.',
+      bullets: [
+        'Admission annuelle : 10 000 USD',
+        'Retainer mensuel : 1 000 USD / mois',
+        'Cycle de 12 mois à compter de la validation du profil',
+        'Conditions révisables chaque année',
+        'Adhésion sur parrainage, recommandation ou validation du profil',
+      ],
+    },
+    {
+      heading: 'Un accès privé au bureau Bosphoras',
+      body: 'Private Access permet aux membres de solliciter le bureau Bosphoras pour organiser, filtrer et coordonner leurs demandes en Turquie. Le membre ne cherche pas seul un avocat, un fiscaliste, un médecin, un chauffeur, un hôtel, un bureau ou un partenaire local : il s’adresse à un interlocuteur de confiance qui sait activer les bonnes personnes.',
+      bullets: [
+        'Traitement prioritaire des demandes',
+        'Introductions qualifiées auprès de professionnels et partenaires sélectionnés',
+        'Coordination confidentielle avec les bons interlocuteurs',
+        'Suivi continu pendant toute la durée du cycle membre',
+        'Accès à une logique de réseau, de discrétion et d’exécution locale',
+      ],
+    },
+    {
+      heading: 'Avantages et services accessibles aux membres',
+      body: 'Le membre peut solliciter Bosphoras sur les sujets qui demandent du temps, de la confiance et une vraie capacité d’exécution locale. Bosphoras coordonne, filtre et organise ; les prestations externes, honoraires professionnels, réservations, transports, hôtels, événements et frais spécifiques restent facturés séparément selon la demande.',
+      bullets: [
+        'Installation en Turquie : Istanbul, Bodrum, Antalya',
+        'Création d’entreprise, comptabilité, bureaux privés ou partagés',
+        'Orientation juridique, fiscale et conformité avec professionnels habilités',
+        'Assurance santé, médecins, cliniques privées et check-up exécutif',
+        'Immobilier, relocation, location, achat, villas et résidences premium',
+        'Chauffeurs privés, transferts VIP, berlines, vans et limousines',
+        'Hôtels, palaces, villas privées, restaurants et meilleures tables',
+        'Yachts, jets privés, hélicoptères, événements et soirées privées',
+        'Shopping luxe, montres, bijoux, sacs rares et demandes confidentielles',
+      ],
+    },
+    {
+      heading: 'Un cercle fondé sur la confiance, pas sur le volume',
+      body: 'Bosphoras Private Access n’a pas vocation à accepter tout le monde. L’objectif est de préserver la qualité du réseau, la cohérence des introductions et le niveau de discrétion attendu par les membres. Nous ne sélectionnons pas uniquement un budget : nous sélectionnons un profil, une intention et une compatibilité avec notre façon de travailler.',
+      bullets: [
+        'Parrainage ou recommandation appréciés',
+        'Étude du profil avant validation',
+        'Possibilité de refuser une candidature sans obligation de justification',
+        'Confidentialité renforcée sur les demandes et les informations transmises',
+      ],
+    },
+    {
+      heading: 'Private Desk : l’alternative sans accès membre',
+      body: 'Les clients qui souhaitent un accompagnement classique, sans statut membre et sans accès au cercle privé, peuvent solliciter Bosphoras Private Desk. Cette formule permet de traiter une demande précise, une mission ponctuelle ou un accompagnement structuré, sans adhésion Private Access.',
+      bullets: [
+        'Accompagnement classique à partir de 6 000 USD / an',
+        'Ou facturation sur devis personnalisé selon la mission',
+        'Adapté aux demandes ponctuelles ou limitées',
+        'Sans accès membre, sans priorité Private Access et sans continuité de retainer',
+      ],
+    },
+    {
+      heading: 'Une relation claire avec les professionnels réglementés',
+      body: 'Bosphoras ne remplace pas les avocats, fiscalistes, comptables, médecins, assureurs, banques, agents immobiliers ou autres professionnels réglementés. Notre rôle consiste à coordonner, organiser et faciliter l’accès aux bons interlocuteurs. Chaque professionnel reste responsable de ses conseils, devis, obligations et décisions.',
+      bullets: [
+        'Pas de promesse de résultat administratif, juridique, fiscal, médical ou financier',
+        'Mise en relation avec des professionnels habilités lorsque nécessaire',
+        'Coordination opérationnelle sans substitution aux professions réglementées',
+        'Transparence sur les frais externes, honoraires et réservations spécifiques',
+      ],
+    },
+  ],
+  faqs: [
+    {
+      question: 'Bosphoras Private Access est-il une carte de réduction ?',
+      answer:
+        'Non. Private Access n’est pas une carte de réduction. C’est un accès privé au bureau Bosphoras, à des introductions qualifiées, à une coordination confidentielle et à un traitement prioritaire des demandes en Turquie.',
+    },
+    {
+      question: 'Combien coûte l’adhésion Bosphoras Private Access ?',
+      answer:
+        'L’admission annuelle est fixée à 10 000 USD. Le retainer mensuel est de 1 000 USD par mois. Le cycle membre démarre à compter de la validation du profil et les conditions sont révisables chaque année.',
+    },
+    {
+      question: 'L’adhésion inclut-elle les hôtels, chauffeurs, avocats ou services externes ?',
+      answer:
+        'Non. L’adhésion donne accès au bureau privé, au traitement prioritaire, aux introductions et à la coordination. Les prestations externes, réservations, honoraires de professionnels, transports, hôtels, événements et frais spécifiques sont facturés séparément.',
+    },
+    {
+      question: 'Peut-on faire appel à Bosphoras sans devenir membre ?',
+      answer:
+        'Oui. Les clients qui souhaitent une demande classique peuvent passer par Bosphoras Private Desk, à partir de 6 000 USD par an ou sur devis personnalisé selon la mission.',
+    },
+    {
+      question: 'L’adhésion est-elle automatique après demande ?',
+      answer:
+        'Non. L’envoi d’une demande ne garantit pas l’acceptation. Bosphoras peut refuser une candidature si le profil, la demande ou le cadre ne correspond pas au cercle privé.',
+    },
+  ],
+  cta: {
+    label: 'Demander une adhésion privée',
+    href: '/adhesion/demande-membre',
+    secondaryLabel: 'Faire une demande classique',
+    secondaryHref: '/diagnostic-prive',
   },
+  jsonLdType: 'Service',
+  internalLinks: [
+    { pageId: 'services', label: 'Découvrir les services Bosphoras' },
+    { pageId: 'compliance', label: 'Conformité et confiance' },
+    { pageId: 'partners', label: 'Partenaires et réseau' },
+    { pageId: 'private-assessment', label: 'Faire une demande classique' },
+  ],
+},
   {
     id: 'membership-card',
     locale: 'fr',
