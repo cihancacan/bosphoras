@@ -32,7 +32,7 @@ export function Footer({ locale }: FooterProps) {
           : locale === 'en'
             ? 'Legal & Tax Advisory'
             : locale === 'ru'
-              ? 'Юридические et налоговые услуги'
+              ? 'Юридические и налоговые услуги'
               : 'الاستشارات القانونية والضريبية',
       href: getLocalePath(locale, slug('legal-tax')),
     },
@@ -130,6 +130,17 @@ export function Footer({ locale }: FooterProps) {
               ? 'Частный клуб'
               : 'النادي الخاص',
       href: getLocalePath(locale, slug('private-club')),
+    },
+    {
+      label:
+        locale === 'fr'
+          ? 'Demande d’adhésion'
+          : locale === 'en'
+            ? 'Membership application'
+            : locale === 'ru'
+              ? 'Заявка на членство'
+              : 'طلب عضوية',
+      href: getLocalePath(locale, slug('membership-application')),
     },
     {
       label:
@@ -285,10 +296,10 @@ export function Footer({ locale }: FooterProps) {
             </ul>
 
             <Link
-              href={getLocalePath(locale, slug('private-assessment'))}
+              href={getLocalePath(locale, slug('membership-application'))}
               className="mt-8 inline-flex border border-[hsl(42,65%,52%)] px-5 py-3 text-xs font-bold uppercase tracking-[0.16em] text-[hsl(42,65%,52%)] transition-colors duration-200 hover:bg-[hsl(42,65%,52%)] hover:text-[hsl(220,45%,8%)]"
             >
-              Contact privé
+              Demande d’adhésion
             </Link>
           </div>
         </div>
