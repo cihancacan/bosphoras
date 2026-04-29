@@ -647,7 +647,7 @@ export const frPages: MainPageContent[] = [
       { pageId: 'private-assessment', label: 'Diagnostic privé' },
     ],
   },
-  {
+  
  {
   id: 'private-club',
   locale: 'fr',
