@@ -33,7 +33,7 @@ const expertises = [
 
 const memberBenefits = [
   { icon: KeyRound, title: 'Accès prioritaire', text: 'Les demandes membres sont traitées avec priorité par le bureau Bosphoras et son réseau.' },
-  { icon: ShieldCheck, title: 'Introductions qualifiées', text: 'Avocats, fiscalistes, assureurs, médecins, bureaux, hôtels, chauffeurs et partenaires sélectionnés.' },
+  { icon: ShieldCheck, title: 'Introductions qualifiées', text: 'Avocats, fiscalistes, assureurs, médecins, banquiers privés, agents immobiliers et partenaires sélectionnés.' },
   { icon: Plane, title: 'Conciergerie de luxe', text: 'Coordination voyages, jets privés, hélicoptères, yachts, chauffeurs privés, villas, hôtels et transferts VIP.' },
   { icon: CalendarDays, title: 'Vie privée & accès membres', text: 'Dîners privés, soirées discrètes, activités entre membres, accès prioritaire aux clubs, restaurants et billetterie.' },
 ];
