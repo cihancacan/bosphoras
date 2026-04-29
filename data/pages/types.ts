@@ -200,6 +200,16 @@ export const pageSlugs: PageSlugMap[] = [
     },
   },
   {
+    id: 'membership-application',
+    jsonLdType: 'ContactPage',
+    slugs: {
+      fr: '/adhesion/demande-membre',
+      en: '/membership/application',
+      ru: '/chlenstvo/zayavka',
+      ar: '/عضوية/طلب',
+    },
+  },
+  {
     id: 'premium-cardholders',
     jsonLdType: 'Service',
     slugs: {
