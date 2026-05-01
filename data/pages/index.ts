@@ -4,14 +4,15 @@ import { frPages } from './fr';
 import { enPages } from './en';
 import { ruPages } from './ru';
 import { arPages } from './ar';
+import { applyPageOverrides, privateDeskOverrides } from './private-desk-overrides';
 
 export * from './types';
 
 export const allPages: Record<Locale, MainPageContent[]> = {
   fr: frPages,
-  en: enPages,
-  ru: ruPages,
-  ar: arPages,
+  en: applyPageOverrides(enPages, privateDeskOverrides.en ?? []),
+  ru: applyPageOverrides(ruPages, privateDeskOverrides.ru ?? []),
+  ar: applyPageOverrides(arPages, privateDeskOverrides.ar ?? []),
 };
 
 export function getPage(
