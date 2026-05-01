@@ -9,6 +9,7 @@ interface SeoProps {
   description: string;
   noIndex?: boolean;
   image?: string;
+  alternates?: Record<string, string> | null;
 }
 
 export function buildMetadata({
@@ -18,9 +19,10 @@ export function buildMetadata({
   description,
   noIndex = false,
   image,
+  alternates,
 }: SeoProps): Metadata {
   const canonical = getCanonicalUrl(locale, path);
-  const alternates = getAlternateUrls(path);
+  const resolvedAlternates = alternates === undefined ? getAlternateUrls(path) : alternates;
   const ogImage = image ?? `${siteUrl}/og-default.jpg`;
 
   return {
@@ -29,7 +31,7 @@ export function buildMetadata({
     metadataBase: new URL(siteUrl),
     alternates: {
       canonical,
-      languages: alternates as Record<string, string>,
+      ...(resolvedAlternates ? { languages: resolvedAlternates as Record<string, string> } : {}),
     },
     openGraph: {
       title,
@@ -74,13 +76,6 @@ export function organizationSchema() {
       postalCode: '75017',
       addressLocality: 'Paris',
       addressCountry: 'FR',
-    },
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: '4.9',
-      bestRating: '5',
-      ratingCount: '247',
-      reviewCount: '247',
     },
     areaServed: ['Paris', 'Istanbul', 'London', 'Almaty', 'Moscow', 'Dubai', 'Bodrum', 'Antalya', 'Turkey'],
     knowsLanguage: ['French', 'English', 'Russian', 'Arabic', 'Turkish', 'Kazakh'],
