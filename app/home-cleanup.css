@@ -1,0 +1,55 @@
+/* Temporary localized home cleanup while the multilingual home file is refactored.
+   Scope is limited to EN/RU/AR home pages through their Private Assessment links. */
+
+body:has(a[href="/en/private-assessment"]) main section:first-of-type div.mt-10.grid > div:first-child,
+body:has(a[href="/ru/chastnaya-konsultatsiya"]) main section:first-of-type div.mt-10.grid > div:first-child,
+body:has(a[href="/ar/تقييم-خاص"]) main section:first-of-type div.mt-10.grid > div:first-child {
+  display: none !important;
+}
+
+body:has(a[href="/en/private-assessment"]) main section:first-of-type div.mt-10.grid,
+body:has(a[href="/ru/chastnaya-konsultatsiya"]) main section:first-of-type div.mt-10.grid,
+body:has(a[href="/ar/تقييم-خاص"]) main section:first-of-type div.mt-10.grid {
+  grid-template-columns: minmax(0, 1fr) !important;
+  max-width: 36rem;
+}
+
+body:has(a[href="/en/private-assessment"]) main section:first-of-type div.mt-10.grid > div:has(svg),
+body:has(a[href="/ru/chastnaya-konsultatsiya"]) main section:first-of-type div.mt-10.grid > div:has(svg),
+body:has(a[href="/ar/تقييم-خاص"]) main section:first-of-type div.mt-10.grid > div:has(svg) {
+  width: 100%;
+}
+
+body:has(a[href="/en/private-assessment"]) main > section:nth-of-type(2),
+body:has(a[href="/ru/chastnaya-konsultatsiya"]) main > section:nth-of-type(2),
+body:has(a[href="/ar/تقييم-خاص"]) main > section:nth-of-type(2) {
+  display: none !important;
+}
+
+body:has(a[href="/en/private-assessment"]) main > section:nth-of-type(3) div.space-y-7 p:nth-of-type(2),
+body:has(a[href="/ru/chastnaya-konsultatsiya"]) main > section:nth-of-type(3) div.space-y-7 p:nth-of-type(2),
+body:has(a[href="/ar/تقييم-خاص"]) main > section:nth-of-type(3) div.space-y-7 p:nth-of-type(2) {
+  font-size: 0 !important;
+  line-height: 0 !important;
+}
+
+body:has(a[href="/en/private-assessment"]) main > section:nth-of-type(3) div.space-y-7 p:nth-of-type(2)::after {
+  content: 'Bosphoras makes Turkey readable, safe and actionable: one point of contact, a selected network, confidentiality and structured local coordination.';
+  display: block;
+  font-size: 1.125rem;
+  line-height: 2.25rem;
+}
+
+body:has(a[href="/ru/chastnaya-konsultatsiya"]) main > section:nth-of-type(3) div.space-y-7 p:nth-of-type(2)::after {
+  content: 'Bosphoras делает Турцию понятной, безопасной и практичной: один контакт, отобранная сеть, конфиденциальность и структурированная локальная координация.';
+  display: block;
+  font-size: 1.125rem;
+  line-height: 2.25rem;
+}
+
+body:has(a[href="/ar/تقييم-خاص"]) main > section:nth-of-type(3) div.space-y-7 p:nth-of-type(2)::after {
+  content: 'يجعل Bosphoras تركيا واضحة وآمنة وقابلة للتنفيذ: نقطة اتصال واحدة، شبكة مختارة، منطق السرية وتنسيق محلي منظم.';
+  display: block;
+  font-size: 1.125rem;
+  line-height: 2.25rem;
+}
