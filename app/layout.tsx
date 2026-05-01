@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import { StickyMobileCTA } from '@/components/StickyMobileCTA';
 
 export const metadata: Metadata = {
   title: {
@@ -31,8 +32,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className="font-sans antialiased bg-[hsl(45,30%,96%)] text-[hsl(220,45%,12%)]">
+      <body className="bg-[hsl(45,30%,96%)] pb-20 font-sans antialiased text-[hsl(220,45%,12%)] md:pb-0">
         {children}
+        <StickyMobileCTA />
       </body>
     </html>
   );
