@@ -7,6 +7,7 @@ import type { Locale } from '@/lib/i18n';
 import { t, locales, localeNames } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
 import { getSlugForPage, pageSlugs } from '@/data/pages/types';
+import { getEquivalentHighPotentialSlug } from '@/data/highPotentialPages';
 
 interface HeaderProps {
   locale: Locale;
@@ -25,6 +26,9 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
   ];
 
   const getLocaleHref = (targetLocale: Locale) => {
+    const guideSlug = getEquivalentHighPotentialSlug(currentPath, targetLocale);
+    if (guideSlug) return getLocalePath(targetLocale, guideSlug);
+
     const pathWithoutLocale = currentPath.replace(/^\/(en|ru|ar)/, '') || '/';
 
     const matchedPage = pageSlugs.find((page) =>
@@ -56,11 +60,7 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Navigation principale">
           {navLinks.map(({ key, href }) => (
-            <Link
-              key={key}
-              href={getLocalePath(locale, href)}
-              className="text-[0.64rem] font-semibold uppercase tracking-[0.18em] text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]"
-            >
+            <Link key={key} href={getLocalePath(locale, href)} className="text-[0.64rem] font-semibold uppercase tracking-[0.18em] text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">
               {t(locale, key)}
             </Link>
           ))}
@@ -68,29 +68,14 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
 
         <div className="hidden items-center gap-4 lg:flex">
           <div className="relative">
-            <button
-              onClick={() => setLangOpen(!langOpen)}
-              className="flex items-center gap-2 text-[0.64rem] font-semibold uppercase tracking-[0.18em] text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]"
-              aria-expanded={langOpen}
-              aria-haspopup="listbox"
-            >
+            <button onClick={() => setLangOpen(!langOpen)} className="flex items-center gap-2 text-[0.64rem] font-semibold uppercase tracking-[0.18em] text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]" aria-expanded={langOpen} aria-haspopup="listbox">
               {localeNames[locale]}
               <span className="text-[hsl(42,65%,45%)]">▾</span>
             </button>
             {langOpen && (
               <div className="absolute right-0 top-full z-50 mt-4 min-w-[150px] border border-[hsl(42,65%,52%)]/25 bg-[hsl(220,45%,8%)] shadow-[0_28px_80px_rgba(0,0,0,0.32)]" role="listbox">
                 {locales.map((loc) => (
-                  <Link
-                    key={loc}
-                    href={getLocaleHref(loc)}
-                    onClick={() => setLangOpen(false)}
-                    className={`block px-4 py-3 text-xs uppercase tracking-[0.12em] transition-colors duration-150 hover:bg-white/5 ${
-                      loc === locale ? 'font-semibold text-[hsl(42,65%,52%)]' : 'text-[hsl(220,10%,55%)]'
-                    }`}
-                    role="option"
-                    aria-selected={loc === locale}
-                    lang={loc}
-                  >
+                  <Link key={loc} href={getLocaleHref(loc)} onClick={() => setLangOpen(false)} className={`block px-4 py-3 text-xs uppercase tracking-[0.12em] transition-colors duration-150 hover:bg-white/5 ${loc === locale ? 'font-semibold text-[hsl(42,65%,52%)]' : 'text-[hsl(220,10%,55%)]'}`} role="option" aria-selected={loc === locale} lang={loc}>
                     {localeNames[loc]}
                   </Link>
                 ))}
@@ -112,12 +97,7 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
         <div className="border-t border-[hsl(220,35%,15%)] bg-[hsl(220,45%,8%)] px-6 py-6 lg:hidden">
           <div className="flex flex-col gap-4">
             {navLinks.map(({ key, href }) => (
-              <Link
-                key={key}
-                href={getLocalePath(locale, href)}
-                onClick={() => setMenuOpen(false)}
-                className="py-1 text-sm font-semibold uppercase tracking-[0.12em] text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]"
-              >
+              <Link key={key} href={getLocalePath(locale, href)} onClick={() => setMenuOpen(false)} className="py-1 text-sm font-semibold uppercase tracking-[0.12em] text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">
                 {t(locale, key)}
               </Link>
             ))}
