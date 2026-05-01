@@ -6,7 +6,7 @@ import { Menu, X } from 'lucide-react';
 import type { Locale } from '@/lib/i18n';
 import { t, locales, localeNames } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
-import { getSlugForPage } from '@/data/pages/types';
+import { getSlugForPage, pageSlugs } from '@/data/pages/types';
 
 interface HeaderProps {
   locale: Locale;
@@ -26,6 +26,15 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
 
   const getLocaleHref = (targetLocale: Locale) => {
     const pathWithoutLocale = currentPath.replace(/^\/(en|ru|ar)/, '') || '/';
+
+    const matchedPage = pageSlugs.find((page) =>
+      locales.some((loc) => page.slugs[loc] === pathWithoutLocale)
+    );
+
+    if (matchedPage) {
+      return getLocalePath(targetLocale, matchedPage.slugs[targetLocale]);
+    }
+
     return getLocalePath(targetLocale, pathWithoutLocale);
   };
 
