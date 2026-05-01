@@ -3,7 +3,11 @@ import { notFound } from 'next/navigation';
 import type { Locale } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
 import { MainPageRenderer } from '@/components/MainPageRenderer';
+import { HighPotentialGuideRenderer } from '@/components/HighPotentialGuideRenderer';
 import { getPageBySlug, allPages } from '@/data/pages';
+import { getHighPotentialGuideBySlug, highPotentialGuides } from '@/data/highPotentialPages';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 
 interface PageProps {
   params: { locale: string; slug: string[] };
@@ -24,10 +28,10 @@ export function generateStaticParams() {
   for (const locale of supportedLocales) {
     for (const page of allPages[locale]) {
       if (page.slug === '/') continue;
-      params.push({
-        locale,
-        slug: page.slug.replace(/^\//, '').split('/'),
-      });
+      params.push({ locale, slug: page.slug.replace(/^\//, '').split('/') });
+    }
+    for (const guide of highPotentialGuides.filter((item) => item.locale === locale)) {
+      params.push({ locale, slug: guide.slug.replace(/^\//, '').split('/') });
     }
   }
   return params;
@@ -36,6 +40,11 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: PageProps): Metadata {
   if (!isLocale(params.locale)) return {};
   const slug = resolveSlug(params.slug);
+  const guide = getHighPotentialGuideBySlug(params.locale, slug);
+  if (guide) {
+    return buildMetadata({ locale: params.locale, path: guide.slug, title: guide.title, description: guide.metaDescription });
+  }
+
   const page = getPageBySlug(params.locale, slug);
   if (!page) return {};
   return buildMetadata({
@@ -49,6 +58,18 @@ export function generateMetadata({ params }: PageProps): Metadata {
 export default function LocaleCatchAllPage({ params }: PageProps) {
   if (!isLocale(params.locale)) notFound();
   const slug = resolveSlug(params.slug);
+  const guide = getHighPotentialGuideBySlug(params.locale, slug);
+  if (guide) {
+    const currentPath = `/${params.locale}${guide.slug}`;
+    return (
+      <>
+        <Header locale={params.locale} currentPath={currentPath} />
+        <HighPotentialGuideRenderer guide={guide} />
+        <Footer locale={params.locale} />
+      </>
+    );
+  }
+
   const page = getPageBySlug(params.locale, slug);
   if (!page) notFound();
   return <MainPageRenderer page={page} />;
