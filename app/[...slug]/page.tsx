@@ -48,6 +48,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
       title: programmaticPage.title,
       description: programmaticPage.metaDescription,
       noIndex: !programmaticPage.isIndexable,
+      alternates: null,
     });
   }
 
