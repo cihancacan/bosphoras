@@ -385,12 +385,9 @@ export function Footer({ locale }: FooterProps) {
 
         <FooterGuideLinks locale={locale} />
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-[hsl(220,35%,15%)] pt-8 md:flex-row">
-          <p className="text-xs tracking-[0.1em] text-[hsl(220,10%,40%)]">
+        <div className="mt-14 flex flex-col items-center justify-center gap-4 border-t border-[hsl(220,35%,15%)] pt-8">
+          <p className="text-center text-xs tracking-[0.1em] text-[hsl(220,10%,40%)]">
             © {year} Bosphoras. {t(locale, 'footer.rights')}
-          </p>
-          <p className="text-xs uppercase tracking-[0.15em] text-[hsl(220,10%,35%)]">
-            Paris · Istanbul · Londres · Almaty · Moscou · Dubai
           </p>
         </div>
       </div>
