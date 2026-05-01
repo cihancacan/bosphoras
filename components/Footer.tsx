@@ -3,6 +3,7 @@ import type { Locale } from '@/lib/i18n';
 import { t, localeDir } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
 import { getSlugForPage } from '@/data/pages/types';
+import { FooterGuideLinks } from './FooterGuideLinks';
 
 interface FooterProps {
   locale: Locale;
@@ -381,6 +382,8 @@ export function Footer({ locale }: FooterProps) {
             </Link>
           </div>
         </div>
+
+        <FooterGuideLinks locale={locale} />
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-[hsl(220,35%,15%)] pt-8 md:flex-row">
           <p className="text-xs tracking-[0.1em] text-[hsl(220,10%,40%)]">
