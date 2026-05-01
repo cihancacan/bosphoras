@@ -12,6 +12,7 @@ export function Footer({ locale }: FooterProps) {
   const year = new Date().getFullYear();
 
   const slug = (id: string) => getSlugForPage(id, locale) ?? '/';
+  const legalHref = (path: string) => getLocalePath(locale, path);
 
   const serviceLinks = [
     {
@@ -156,16 +157,93 @@ export function Footer({ locale }: FooterProps) {
   ];
 
   const legalLinks = [
-    { label: 'Mentions légales', href: '/mentions-legales' },
-    { label: 'CGU', href: '/cgu' },
-    { label: 'CGV', href: '/cgv' },
-    { label: 'Confidentialité', href: '/confidentialite' },
-    { label: 'Cookies', href: '/cookies' },
     {
-      label: 'Protection des informations confidentielles',
-      href: '/protection-informations-confidentielles',
+      label:
+        locale === 'fr'
+          ? 'Mentions légales'
+          : locale === 'en'
+            ? 'Legal notice'
+            : locale === 'ru'
+              ? 'Правовая информация'
+              : 'الإشعارات القانونية',
+      href: legalHref('/mentions-legales'),
+    },
+    {
+      label:
+        locale === 'fr'
+          ? 'CGU'
+          : locale === 'en'
+            ? 'Terms of Use'
+            : locale === 'ru'
+              ? 'Условия использования'
+              : 'شروط الاستخدام',
+      href: legalHref('/cgu'),
+    },
+    {
+      label:
+        locale === 'fr'
+          ? 'CGV'
+          : locale === 'en'
+            ? 'Terms of Sale'
+            : locale === 'ru'
+              ? 'Условия продажи'
+              : 'شروط البيع',
+      href: legalHref('/cgv'),
+    },
+    {
+      label:
+        locale === 'fr'
+          ? 'Confidentialité'
+          : locale === 'en'
+            ? 'Privacy Policy'
+            : locale === 'ru'
+              ? 'Политика конфиденциальности'
+              : 'سياسة الخصوصية',
+      href: legalHref('/confidentialite'),
+    },
+    {
+      label: locale === 'ru' ? 'Cookies' : locale === 'ar' ? 'ملفات تعريف الارتباط' : 'Cookies',
+      href: legalHref('/cookies'),
+    },
+    {
+      label:
+        locale === 'fr'
+          ? 'Protection des informations confidentielles'
+          : locale === 'en'
+            ? 'Protection of Confidential Information'
+            : locale === 'ru'
+              ? 'Защита конфиденциальной информации'
+              : 'حماية المعلومات السرية',
+      href: legalHref('/protection-informations-confidentielles'),
     },
   ];
+
+  const informationTitle =
+    locale === 'fr'
+      ? 'Informations'
+      : locale === 'en'
+        ? 'Information'
+        : locale === 'ru'
+          ? 'Информация'
+          : 'معلومات';
+
+  const legalTitle =
+    locale === 'fr'
+      ? 'Légal'
+      : locale === 'en'
+        ? 'Legal'
+        : locale === 'ru'
+          ? 'Правовая информация'
+          : 'قانوني';
+
+  const membershipLabel =
+    locale === 'fr'
+      ? 'Demande d’adhésion'
+      : locale === 'en'
+        ? 'Membership application'
+        : locale === 'ru'
+          ? 'Заявка на членство'
+          : 'طلب عضوية';
 
   return (
     <footer
@@ -262,7 +340,7 @@ export function Footer({ locale }: FooterProps) {
             </ul>
 
             <h3 className="mb-5 mt-10 text-xs font-semibold uppercase tracking-[0.25em] text-[hsl(45,30%,96%)]">
-              Informations
+              {informationTitle}
             </h3>
             <ul className="space-y-3">
               {informationLinks.map((link) => (
@@ -280,7 +358,7 @@ export function Footer({ locale }: FooterProps) {
 
           <div>
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-[hsl(45,30%,96%)]">
-              Légal
+              {legalTitle}
             </h3>
             <ul className="space-y-3">
               {legalLinks.map((link) => (
@@ -299,7 +377,7 @@ export function Footer({ locale }: FooterProps) {
               href={getLocalePath(locale, slug('membership-application'))}
               className="mt-8 inline-flex border border-[hsl(42,65%,52%)] px-5 py-3 text-xs font-bold uppercase tracking-[0.16em] text-[hsl(42,65%,52%)] transition-colors duration-200 hover:bg-[hsl(42,65%,52%)] hover:text-[hsl(220,45%,8%)]"
             >
-              Demande d’adhésion
+              {membershipLabel}
             </Link>
           </div>
         </div>
