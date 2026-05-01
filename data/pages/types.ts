@@ -54,211 +54,33 @@ export interface PageSlugMap {
 }
 
 export const pageSlugs: PageSlugMap[] = [
-  {
-    id: 'home',
-    jsonLdType: 'WebSite',
-    slugs: { fr: '/', en: '/', ru: '/', ar: '/' },
-  },
-  {
-    id: 'about',
-    jsonLdType: 'AboutPage',
-    slugs: {
-      fr: '/a-propos',
-      en: '/about',
-      ru: '/o-nas',
-      ar: '/من-نحن',
-    },
-  },
-  {
-    id: 'services',
-    jsonLdType: 'CollectionPage',
-    slugs: {
-      fr: '/services',
-      en: '/services',
-      ru: '/uslugi',
-      ar: '/خدمات',
-    },
-  },
-  {
-    id: 'relocate',
-    jsonLdType: 'Service',
-    slugs: {
-      fr: '/services/installation-en-turquie',
-      en: '/services/relocate-to-turkey',
-      ru: '/uslugi/pereezd-v-turtsiyu',
-      ar: '/خدمات/الانتقال-إلى-تركيا',
-    },
-  },
-  {
-    id: 'istanbul',
-    jsonLdType: 'Place',
-    slugs: {
-      fr: '/destinations/istanbul',
-      en: '/destinations/istanbul',
-      ru: '/napravleniya/stambul',
-      ar: '/وجهات/إسطنبول',
-    },
-  },
-  {
-    id: 'bodrum',
-    jsonLdType: 'Place',
-    slugs: {
-      fr: '/destinations/bodrum',
-      en: '/destinations/bodrum',
-      ru: '/napravleniya/bodrum',
-      ar: '/وجهات/بودروم',
-    },
-  },
-  {
-    id: 'antalya',
-    jsonLdType: 'Place',
-    slugs: {
-      fr: '/destinations/antalya',
-      en: '/destinations/antalya',
-      ru: '/napravleniya/antalya',
-      ar: '/وجهات/أنطاليا',
-    },
-  },
-  {
-    id: 'legal-tax',
-    jsonLdType: 'Service',
-    slugs: {
-      fr: '/services/conseil-juridique-fiscal',
-      en: '/services/legal-tax-advisory',
-      ru: '/uslugi/yuridicheskie-nalogovye-konsultatsii',
-      ar: '/خدمات/استشارات-قانونية-ضريبية',
-    },
-  },
-  {
-    id: 'business-setup',
-    jsonLdType: 'Service',
-    slugs: {
-      fr: '/services/creation-entreprise',
-      en: '/services/business-setup',
-      ru: '/uslugi/sozdanie-kompanii',
-      ar: '/خدمات/تأسيس-الشركات',
-    },
-  },
-  {
-    id: 'health-insurance',
-    jsonLdType: 'Service',
-    slugs: {
-      fr: '/services/sante-assurance',
-      en: '/services/health-insurance',
-      ru: '/uslugi/zdorove-strakhovanie',
-      ar: '/خدمات/الصحة-والتأمين',
-    },
-  },
-  {
-    id: 'property',
-    jsonLdType: 'Service',
-    slugs: {
-      fr: '/services/immobilier-relocation',
-      en: '/services/property-relocation',
-      ru: '/uslugi/nedvizhimost-pereezd',
-      ar: '/خدمات/العقارات-والانتقال',
-    },
-  },
-  {
-    id: 'offices',
-    jsonLdType: 'Service',
-    slugs: {
-      fr: '/services/bureaux',
-      en: '/services/offices',
-      ru: '/uslugi/ofisy',
-      ar: '/خدمات/المكاتب',
-    },
-  },
-  {
-    id: 'transport',
-    jsonLdType: 'Service',
-    slugs: {
-      fr: '/services/transport-vip',
-      en: '/services/vip-transport',
-      ru: '/uslugi/vip-transport',
-      ar: '/خدمات/النقل-الفاخر',
-    },
-  },
-  {
-    id: 'private-club',
-    jsonLdType: 'Service',
-    slugs: {
-      fr: '/cercle-prive',
-      en: '/private-access-club',
-      ru: '/chastnyy-klub',
-      ar: '/النادي-الخاص',
-    },
-  },
-  {
-    id: 'membership-card',
-    jsonLdType: 'Service',
-    slugs: {
-      fr: '/adhesion/carte-membre',
-      en: '/membership/card',
-      ru: '/chlenstvo/karta',
-      ar: '/عضوية/البطاقة',
-    },
-  },
-  {
-    id: 'membership-application',
-    jsonLdType: 'ContactPage',
-    slugs: {
-      fr: '/adhesion/demande-membre',
-      en: '/membership/application',
-      ru: '/chlenstvo/zayavka',
-      ar: '/عضوية/طلب',
-    },
-  },
-  {
-    id: 'premium-cardholders',
-    jsonLdType: 'Service',
-    slugs: {
-      fr: '/adhesion/membres-premium',
-      en: '/membership/premium-cardholders',
-      ru: '/chlenstvo/premium-uchastniki',
-      ar: '/عضوية/الأعضاء-المميزون',
-    },
-  },
-  {
-    id: 'compliance',
-    jsonLdType: 'AboutPage',
-    slugs: {
-      fr: '/conformite-confiance',
-      en: '/compliance-trust',
-      ru: '/komplaens-doverie',
-      ar: '/الامتثال-والثقة',
-    },
-  },
-  {
-    id: 'partners',
-    jsonLdType: 'AboutPage',
-    slugs: {
-      fr: '/partenaires-reseau',
-      en: '/partners-network',
-      ru: '/partnery-set',
-      ar: '/الشركاء-والشبكة',
-    },
-  },
-  {
-    id: 'faq',
-    jsonLdType: 'FAQPage',
-    slugs: {
-      fr: '/questions-frequentes',
-      en: '/faq',
-      ru: '/voprosy-otvety',
-      ar: '/أسئلة-شائعة',
-    },
-  },
-  {
-    id: 'private-assessment',
-    jsonLdType: 'ContactPage',
-    slugs: {
-      fr: '/diagnostic-prive',
-      en: '/private-assessment',
-      ru: '/chastnaya-konsultatsiya',
-      ar: '/تقييم-خاص',
-    },
-  },
+  { id: 'home', jsonLdType: 'WebSite', slugs: { fr: '/', en: '/', ru: '/', ar: '/' } },
+  { id: 'about', jsonLdType: 'AboutPage', slugs: { fr: '/a-propos', en: '/about', ru: '/o-nas', ar: '/من-نحن' } },
+  { id: 'services', jsonLdType: 'CollectionPage', slugs: { fr: '/services', en: '/services', ru: '/uslugi', ar: '/خدمات' } },
+  { id: 'relocate', jsonLdType: 'Service', slugs: { fr: '/services/installation-en-turquie', en: '/services/relocate-to-turkey', ru: '/uslugi/pereezd-v-turtsiyu', ar: '/خدمات/الانتقال-إلى-تركيا' } },
+  { id: 'istanbul', jsonLdType: 'Place', slugs: { fr: '/destinations/istanbul', en: '/destinations/istanbul', ru: '/napravleniya/stambul', ar: '/وجهات/إسطنبول' } },
+  { id: 'bodrum', jsonLdType: 'Place', slugs: { fr: '/destinations/bodrum', en: '/destinations/bodrum', ru: '/napravleniya/bodrum', ar: '/وجهات/بودروم' } },
+  { id: 'antalya', jsonLdType: 'Place', slugs: { fr: '/destinations/antalya', en: '/destinations/antalya', ru: '/napravleniya/antalya', ar: '/وجهات/أنطاليا' } },
+  { id: 'legal-tax', jsonLdType: 'Service', slugs: { fr: '/services/conseil-juridique-fiscal', en: '/services/legal-tax-advisory', ru: '/uslugi/yuridicheskie-nalogovye-konsultatsii', ar: '/خدمات/استشارات-قانونية-ضريبية' } },
+  { id: 'business-setup', jsonLdType: 'Service', slugs: { fr: '/services/creation-entreprise', en: '/services/business-setup', ru: '/uslugi/sozdanie-kompanii', ar: '/خدمات/تأسيس-الشركات' } },
+  { id: 'health-insurance', jsonLdType: 'Service', slugs: { fr: '/services/sante-assurance', en: '/services/health-insurance', ru: '/uslugi/zdorove-strakhovanie', ar: '/خدمات/الصحة-والتأمين' } },
+  { id: 'property', jsonLdType: 'Service', slugs: { fr: '/services/immobilier-relocation', en: '/services/property-relocation', ru: '/uslugi/nedvizhimost-pereezd', ar: '/خدمات/العقارات-والانتقال' } },
+  { id: 'offices', jsonLdType: 'Service', slugs: { fr: '/services/bureaux', en: '/services/offices', ru: '/uslugi/ofisy', ar: '/خدمات/المكاتب' } },
+  { id: 'transport', jsonLdType: 'Service', slugs: { fr: '/services/transport-vip', en: '/services/vip-transport', ru: '/uslugi/vip-transport', ar: '/خدمات/النقل-الفاخر' } },
+  { id: 'private-club', jsonLdType: 'Service', slugs: { fr: '/cercle-prive', en: '/private-access-club', ru: '/chastnyy-klub', ar: '/النادي-الخاص' } },
+  { id: 'membership-card', jsonLdType: 'Service', slugs: { fr: '/adhesion/carte-membre', en: '/membership/card', ru: '/chlenstvo/karta', ar: '/عضوية/البطاقة' } },
+  { id: 'membership-application', jsonLdType: 'ContactPage', slugs: { fr: '/adhesion/demande-membre', en: '/membership/application', ru: '/chlenstvo/zayavka', ar: '/عضوية/طلب' } },
+  { id: 'premium-cardholders', jsonLdType: 'Service', slugs: { fr: '/adhesion/membres-premium', en: '/membership/premium-cardholders', ru: '/chlenstvo/premium-uchastniki', ar: '/عضوية/الأعضاء-المميزون' } },
+  { id: 'compliance', jsonLdType: 'AboutPage', slugs: { fr: '/conformite-confiance', en: '/compliance-trust', ru: '/komplaens-doverie', ar: '/الامتثال-والثقة' } },
+  { id: 'partners', jsonLdType: 'AboutPage', slugs: { fr: '/partenaires-reseau', en: '/partners-network', ru: '/partnery-set', ar: '/الشركاء-والشبكة' } },
+  { id: 'faq', jsonLdType: 'FAQPage', slugs: { fr: '/questions-frequentes', en: '/faq', ru: '/voprosy-otvety', ar: '/أسئلة-شائعة' } },
+  { id: 'private-assessment', jsonLdType: 'ContactPage', slugs: { fr: '/diagnostic-prive', en: '/private-assessment', ru: '/chastnaya-konsultatsiya', ar: '/تقييم-خاص' } },
+  { id: 'legal-notice', jsonLdType: 'AboutPage', slugs: { fr: '/mentions-legales', en: '/legal-notice', ru: '/pravovaya-informatsiya', ar: '/legal-notice' } },
+  { id: 'terms-use', jsonLdType: 'AboutPage', slugs: { fr: '/cgu', en: '/terms-of-use', ru: '/usloviya-ispolzovaniya', ar: '/terms-of-use' } },
+  { id: 'terms-sale', jsonLdType: 'AboutPage', slugs: { fr: '/cgv', en: '/terms-of-sale', ru: '/usloviya-prodazhi', ar: '/terms-of-sale' } },
+  { id: 'privacy-policy', jsonLdType: 'AboutPage', slugs: { fr: '/confidentialite', en: '/privacy-policy', ru: '/politika-konfidentsialnosti', ar: '/privacy-policy' } },
+  { id: 'cookies-policy', jsonLdType: 'AboutPage', slugs: { fr: '/cookies', en: '/cookies', ru: '/cookies', ar: '/cookies' } },
+  { id: 'confidential-info', jsonLdType: 'AboutPage', slugs: { fr: '/protection-informations-confidentielles', en: '/protection-of-confidential-information', ru: '/zashchita-konfidentsialnoy-informatsii', ar: '/protection-of-confidential-information' } },
 ];
 
 export function getSlugForPage(pageId: string, locale: Locale): string | undefined {
@@ -269,10 +91,7 @@ export function getJsonLdTypeForPage(pageId: string): JsonLdType | undefined {
   return pageSlugs.find((p) => p.id === pageId)?.jsonLdType;
 }
 
-export function findPageBySlug(
-  locale: Locale,
-  slug: string
-): PageSlugMap | undefined {
+export function findPageBySlug(locale: Locale, slug: string): PageSlugMap | undefined {
   const normalized = slug.startsWith('/') ? slug : `/${slug}`;
   return pageSlugs.find((p) => p.slugs[locale] === normalized);
 }
