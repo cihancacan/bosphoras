@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { ArrowRight, Bell, Building2, CalendarDays, Globe, Home, KeyRound, Lock, MapPin, Plane, Scale, Shield, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Bell, Building2, CalendarDays, Globe, Home, KeyRound, Lock, Plane, Scale, Shield, ShieldCheck } from 'lucide-react';
 import { buildMetadata, faqSchema, organizationSchema, websiteSchema } from '@/lib/seo';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -72,9 +72,8 @@ export default function HomePage() {
                 <Link href="/services" className="inline-flex items-center justify-center border border-[#a77a35] bg-[#fffaf0]/50 px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728] transition hover:bg-[#fffaf0]">Découvrir nos services</Link>
               </div>
               <Link href="/adhesion/demande-membre" className="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#8a6728] transition hover:text-[#121826]">Bosphoras Private Access · Demander une adhésion privée<ArrowRight className="h-4 w-4" /></Link>
-              <div className="mt-10 grid gap-3 sm:grid-cols-2">
-                <div className="border border-[#d8c7a1] bg-[#fffaf0]/80 p-5"><MapPin className="mb-4 h-5 w-5 text-[#b0813e]" /><p className="text-[0.62rem] uppercase leading-6 tracking-[0.16em] text-[#5c6676]">Paris · Istanbul · Londres · Almaty · Moscou · Dubai</p></div>
-                <div className="border border-[#d8c7a1] bg-[#fffaf0]/80 p-5"><Globe className="mb-4 h-5 w-5 text-[#b0813e]" /><p className="text-[0.62rem] uppercase leading-6 tracking-[0.16em] text-[#5c6676]">Français · English · Русский · العربية</p></div>
+              <div className="mt-10 max-w-xl">
+                <div className="border border-[#d8c7a1] bg-[#fffaf0]/80 p-5"><Globe className="mb-4 h-5 w-5 text-[#b0813e]" /><p className="mb-2 text-[0.62rem] font-bold uppercase leading-6 tracking-[0.18em] text-[#8a6728]">Nous parlons</p><p className="text-[0.62rem] uppercase leading-6 tracking-[0.16em] text-[#5c6676]">Français · English · Русский · العربية</p></div>
               </div>
             </div>
             <aside className="relative hidden md:block">
@@ -91,9 +90,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section className="border-y border-[#d8c7a1] bg-[#fffaf0] py-8"><div className="container-editorial grid gap-4 md:grid-cols-6">{['Paris', 'Istanbul', 'Londres', 'Almaty', 'Moscou', 'Dubai'].map((location) => <div key={location} className="text-center text-[0.66rem] font-bold uppercase tracking-[0.2em] text-[#8a6728]">{location}</div>)}</div></section>
-
-        <section className="px-5 py-20 md:px-8 md:py-28"><div className="mx-auto grid max-w-[1500px] gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24"><div><p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#8a6728]">Notre différence</p><h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] md:text-6xl">Pas une agence. Un bureau privé.</h2></div><div className="space-y-7 text-lg leading-9 text-[#3e4857]"><p>Un investisseur sérieux ne commence pas par acheter un appartement. Il commence par comprendre où vivre, comment structurer sa résidence, quelle fiscalité vérifier, quel avocat consulter, quelle assurance choisir, quel médecin contacter, quel bureau utiliser et qui peut réellement exécuter sur place.</p><p>Bosphoras rend la Turquie lisible, sûre et actionnable : un seul interlocuteur, un réseau sélectionné, une logique de confidentialité et une coordination locale entre Paris, Istanbul, Londres, Almaty, Moscou et Dubai.</p></div></div></section>
+        <section className="px-5 py-20 md:px-8 md:py-28"><div className="mx-auto grid max-w-[1500px] gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-24"><div><p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#8a6728]">Notre différence</p><h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] md:text-6xl">Pas une agence. Un bureau privé.</h2></div><div className="space-y-7 text-lg leading-9 text-[#3e4857]"><p>Un investisseur sérieux ne commence pas par acheter un appartement. Il commence par comprendre où vivre, comment structurer sa résidence, quelle fiscalité vérifier, quel avocat consulter, quelle assurance choisir, quel médecin contacter, quel bureau utiliser et qui peut réellement exécuter sur place.</p><p>Bosphoras rend la Turquie lisible, sûre et actionnable : un seul interlocuteur, un réseau sélectionné, une logique de confidentialité et une coordination locale structurée.</p></div></div></section>
 
         <section className="bg-[#fffaf0] px-5 py-20 md:px-8 md:py-28"><div className="mx-auto max-w-[1500px]"><div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:gap-10">
           <article className="order-1 border border-[#d8c7a1] bg-[#f8f1e7] p-7 lg:order-2 lg:col-start-2"><p className="text-[0.62rem] font-bold uppercase tracking-[0.22em] text-[#8a6728]">Bosphoras Private Desk</p><p className="mt-4 font-serif text-3xl leading-tight text-[#121826]">Accompagnement complet Private Desk à partir de 6 000 USD pour une année.</p><p className="mt-5 text-sm leading-7 text-[#3e4857]">Pour les clients qui souhaitent organiser une demande structurée sans accéder au cercle membre, Bosphoras Private Desk permet de cadrer, coordonner et suivre une mission sur 12 mois, ou sur devis personnalisé selon la complexité, l’urgence et les services demandés.</p><Link href="/diagnostic-prive" className="mt-6 inline-flex items-center justify-center gap-3 border border-[#8a6728] px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-[#8a6728] transition hover:bg-[#fffaf0]">Demander un accompagnement Private Desk<ArrowRight size={14} /></Link></article>
