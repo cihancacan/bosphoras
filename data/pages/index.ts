@@ -6,14 +6,15 @@ import { ruPages } from './ru';
 import { arPages } from './ar';
 import { applyPageOverrides, privateDeskOverrides } from './private-desk-overrides';
 import { translatedPrivateDeskOverrides } from './private-desk-overrides-translations';
+import { stage8TrustOverrides } from './stage8-trust-overrides';
 
 export * from './types';
 
 export const allPages: Record<Locale, MainPageContent[]> = {
-  fr: frPages,
-  en: applyPageOverrides(enPages, privateDeskOverrides.en ?? []),
-  ru: applyPageOverrides(ruPages, translatedPrivateDeskOverrides.ru ?? []),
-  ar: applyPageOverrides(arPages, translatedPrivateDeskOverrides.ar ?? []),
+  fr: applyPageOverrides(frPages, stage8TrustOverrides.fr ?? []),
+  en: applyPageOverrides(applyPageOverrides(enPages, privateDeskOverrides.en ?? []), stage8TrustOverrides.en ?? []),
+  ru: applyPageOverrides(applyPageOverrides(ruPages, translatedPrivateDeskOverrides.ru ?? []), stage8TrustOverrides.ru ?? []),
+  ar: applyPageOverrides(applyPageOverrides(arPages, translatedPrivateDeskOverrides.ar ?? []), stage8TrustOverrides.ar ?? []),
 };
 
 export function getPage(
