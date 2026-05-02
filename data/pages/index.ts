@@ -8,31 +8,44 @@ import { applyPageOverrides, privateDeskOverrides } from './private-desk-overrid
 import { translatedPrivateDeskOverrides } from './private-desk-overrides-translations';
 import { stage8TrustOverrides } from './stage8-trust-overrides';
 import { legalTranslations } from './legal-translations';
+import { formPagesOverrides } from './form-pages-overrides';
 import { fixLocalizedFormLinks } from './form-link-fixes';
 
 export * from './types';
 
-const frAll = applyPageOverrides(frPages, stage8TrustOverrides.fr ?? []);
+const frAll = applyPageOverrides(
+  applyPageOverrides(frPages, stage8TrustOverrides.fr ?? []),
+  formPagesOverrides.fr ?? []
+);
 const enAll = applyPageOverrides(
   applyPageOverrides(
-    applyPageOverrides(enPages, privateDeskOverrides.en ?? []),
-    stage8TrustOverrides.en ?? []
+    applyPageOverrides(
+      applyPageOverrides(enPages, privateDeskOverrides.en ?? []),
+      stage8TrustOverrides.en ?? []
+    ),
+    legalTranslations.en ?? []
   ),
-  legalTranslations.en ?? []
+  formPagesOverrides.en ?? []
 );
 const ruAll = applyPageOverrides(
   applyPageOverrides(
-    applyPageOverrides(ruPages, translatedPrivateDeskOverrides.ru ?? []),
-    stage8TrustOverrides.ru ?? []
+    applyPageOverrides(
+      applyPageOverrides(ruPages, translatedPrivateDeskOverrides.ru ?? []),
+      stage8TrustOverrides.ru ?? []
+    ),
+    legalTranslations.ru ?? []
   ),
-  legalTranslations.ru ?? []
+  formPagesOverrides.ru ?? []
 );
 const arAll = applyPageOverrides(
   applyPageOverrides(
-    applyPageOverrides(arPages, translatedPrivateDeskOverrides.ar ?? []),
-    stage8TrustOverrides.ar ?? []
+    applyPageOverrides(
+      applyPageOverrides(arPages, translatedPrivateDeskOverrides.ar ?? []),
+      stage8TrustOverrides.ar ?? []
+    ),
+    legalTranslations.ar ?? []
   ),
-  legalTranslations.ar ?? []
+  formPagesOverrides.ar ?? []
 );
 
 export const allPages: Record<Locale, MainPageContent[]> = {
