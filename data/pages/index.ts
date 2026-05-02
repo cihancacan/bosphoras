@@ -7,14 +7,33 @@ import { arPages } from './ar';
 import { applyPageOverrides, privateDeskOverrides } from './private-desk-overrides';
 import { translatedPrivateDeskOverrides } from './private-desk-overrides-translations';
 import { stage8TrustOverrides } from './stage8-trust-overrides';
+import { legalTranslations } from './legal-translations';
 
 export * from './types';
 
 export const allPages: Record<Locale, MainPageContent[]> = {
   fr: applyPageOverrides(frPages, stage8TrustOverrides.fr ?? []),
-  en: applyPageOverrides(applyPageOverrides(enPages, privateDeskOverrides.en ?? []), stage8TrustOverrides.en ?? []),
-  ru: applyPageOverrides(applyPageOverrides(ruPages, translatedPrivateDeskOverrides.ru ?? []), stage8TrustOverrides.ru ?? []),
-  ar: applyPageOverrides(applyPageOverrides(arPages, translatedPrivateDeskOverrides.ar ?? []), stage8TrustOverrides.ar ?? []),
+  en: applyPageOverrides(
+    applyPageOverrides(
+      applyPageOverrides(enPages, privateDeskOverrides.en ?? []),
+      stage8TrustOverrides.en ?? []
+    ),
+    legalTranslations.en ?? []
+  ),
+  ru: applyPageOverrides(
+    applyPageOverrides(
+      applyPageOverrides(ruPages, translatedPrivateDeskOverrides.ru ?? []),
+      stage8TrustOverrides.ru ?? []
+    ),
+    legalTranslations.ru ?? []
+  ),
+  ar: applyPageOverrides(
+    applyPageOverrides(
+      applyPageOverrides(arPages, translatedPrivateDeskOverrides.ar ?? []),
+      stage8TrustOverrides.ar ?? []
+    ),
+    legalTranslations.ar ?? []
+  ),
 };
 
 export function getPage(
