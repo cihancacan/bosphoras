@@ -1,135 +1,277 @@
 'use client';
 
-import { useState } from 'react';
+import { ArrowRight } from 'lucide-react';
 import type { Locale } from '@/lib/i18n';
 
 type FormKind = 'private-assessment' | 'membership-application';
 
-const labels = {
+type FormCopy = {
+  eyebrow: string;
+  title: string;
+  fullName: string;
+  phone: string;
+  email: string;
+  residence: string;
+  city: string;
+  subject: string;
+  timeline: string;
+  budget: string;
+  message: string;
+  consent: string;
+  submit: string;
+  note: string;
+  placeholders: {
+    name: string;
+    phone: string;
+    email: string;
+    residence: string;
+    message: string;
+  };
+  cityOptions: string[];
+  subjectOptions: string[];
+  timelineOptions: string[];
+  budgetOptions: string[];
+};
+
+const diagnostic: Record<Locale, FormCopy> = {
   fr: {
+    eyebrow: 'Formulaire confidentiel',
+    title: 'Votre demande',
+    fullName: 'Nom complet *',
+    phone: 'Téléphone *',
+    email: 'Email *',
+    residence: 'Pays de résidence',
+    city: 'Ville ciblée',
+    subject: 'Sujet principal *',
+    timeline: 'Délai souhaité',
+    budget: 'Budget / enveloppe',
+    message: 'Message *',
+    consent:
+      'J’accepte que Bosphoras me contacte au sujet de cette demande. Je comprends que les informations transmises seront traitées avec confidentialité.',
     submit: 'Envoyer ma demande',
-    sent: 'Demande préparée. Le formulaire est en mode démonstration pour le moment.',
-    required: 'Les informations marquées sont importantes pour qualifier la demande.',
-    privacy: 'En envoyant ce formulaire, vous acceptez d’être recontacté par Bosphoras. Les informations sont traitées avec discrétion et ne sont partagées qu’en cas de nécessité pour la mission.',
-    fields: {
-      fullName: 'Nom complet', email: 'Email', whatsapp: 'WhatsApp', nationality: 'Nationalité', residence: 'Pays de résidence', language: 'Langue préférée', city: 'Ville d’intérêt', objective: 'Objectif principal', budget: 'Budget indicatif', timeline: 'Calendrier', message: 'Message confidentiel', company: 'Entreprise', role: 'Fonction / rôle', income: 'Revenus annuels ou patrimoine indicatif', referrer: 'Nom du parrain si vous en avez un', consent: 'J’accepte d’être recontacté par Bosphoras au sujet de ma demande.',
+    note:
+      'Le formulaire ouvre votre messagerie afin d’envoyer la demande à contact@bosphoras.com. Pour un formulaire connecté directement au CRM, il faudra ensuite brancher un service d’envoi ou une API.',
+    placeholders: {
+      name: 'Votre nom',
+      phone: '+33...',
+      email: 'votre@email.com',
+      residence: 'France, UAE, Kazakhstan...',
+      message: 'Expliquez votre situation, vos objectifs et ce que vous souhaitez organiser en Turquie.',
     },
-    options: {
-      city: ['Istanbul', 'Bodrum', 'Antalya', 'Pas encore décidé'],
-      objective: ['Relocation', 'Fiscalité / résidence', 'Création de société', 'Immobilier', 'Santé / assurance', 'Bureaux', 'Lifestyle / concierge', 'Adhésion privée'],
-      budget: ['À définir', '6 000 USD+', '10 000 USD+', '25 000 USD+', '50 000 USD+'],
-      timeline: ['Urgent', '1 à 3 mois', '3 à 6 mois', '6 à 12 mois', 'Simple exploration'],
-      language: ['Français', 'Anglais', 'Russe', 'Arabe', 'Turc'],
-    },
+    cityOptions: ['Istanbul', 'Bodrum', 'Antalya', 'Plusieurs villes', 'Je ne sais pas encore'],
+    subjectOptions: [
+      'Installation en Turquie',
+      'Fiscalité / résidence fiscale',
+      'Création d’entreprise',
+      'Immobilier / relocation',
+      'Santé / assurance',
+      'Transport VIP / hospitality',
+      'Accès privé / membership',
+      'Autre demande',
+    ],
+    timelineOptions: ['Urgent', 'Sous 30 jours', '1 à 3 mois', '3 à 6 mois', 'Projet exploratoire'],
+    budgetOptions: ['À définir', '50k - 150k', '150k - 500k', '500k - 1M', '1M+'],
   },
   en: {
+    eyebrow: 'Confidential form',
+    title: 'Your request',
+    fullName: 'Full name *',
+    phone: 'Phone *',
+    email: 'Email *',
+    residence: 'Country of residence',
+    city: 'Target city',
+    subject: 'Main subject *',
+    timeline: 'Desired timeline',
+    budget: 'Budget / envelope',
+    message: 'Message *',
+    consent:
+      'I agree that Bosphoras may contact me regarding this request. I understand that the information submitted will be treated confidentially.',
     submit: 'Send my request',
-    sent: 'Request prepared. The form is currently in demo mode.',
-    required: 'Marked information is important to qualify the request.',
-    privacy: 'By submitting this form, you agree to be contacted by Bosphoras. Information is handled discreetly and shared only when necessary for the mission.',
-    fields: {
-      fullName: 'Full name', email: 'Email', whatsapp: 'WhatsApp', nationality: 'Nationality', residence: 'Country of residence', language: 'Preferred language', city: 'City of interest', objective: 'Main objective', budget: 'Indicative budget', timeline: 'Timeline', message: 'Confidential message', company: 'Company', role: 'Position / role', income: 'Annual income or indicative wealth', referrer: 'Referrer name if you have one', consent: 'I agree to be contacted by Bosphoras regarding my request.',
+    note:
+      'The form opens your email application so the request can be sent to contact@bosphoras.com. For a form connected directly to the CRM, a sending service or API will need to be connected later.',
+    placeholders: {
+      name: 'Your name',
+      phone: '+44...',
+      email: 'your@email.com',
+      residence: 'United Kingdom, UAE, Kazakhstan...',
+      message: 'Explain your situation, your objectives and what you would like to organize in Turkey.',
     },
-    options: {
-      city: ['Istanbul', 'Bodrum', 'Antalya', 'Not decided yet'],
-      objective: ['Relocation', 'Tax / residence', 'Company formation', 'Property', 'Healthcare / insurance', 'Offices', 'Lifestyle / concierge', 'Private membership'],
-      budget: ['To be defined', '6,000 USD+', '10,000 USD+', '25,000 USD+', '50,000 USD+'],
-      timeline: ['Urgent', '1 to 3 months', '3 to 6 months', '6 to 12 months', 'Exploration only'],
-      language: ['French', 'English', 'Russian', 'Arabic', 'Turkish'],
-    },
+    cityOptions: ['Istanbul', 'Bodrum', 'Antalya', 'Several cities', 'I do not know yet'],
+    subjectOptions: [
+      'Relocation to Turkey',
+      'Tax / tax residency',
+      'Company formation',
+      'Property / relocation',
+      'Health / insurance',
+      'VIP transport / hospitality',
+      'Private access / membership',
+      'Other request',
+    ],
+    timelineOptions: ['Urgent', 'Within 30 days', '1 to 3 months', '3 to 6 months', 'Exploratory project'],
+    budgetOptions: ['To be defined', '50k - 150k', '150k - 500k', '500k - 1M', '1M+'],
   },
   ru: {
+    eyebrow: 'Конфиденциальная форма',
+    title: 'Ваш запрос',
+    fullName: 'Полное имя *',
+    phone: 'Телефон *',
+    email: 'Email *',
+    residence: 'Страна проживания',
+    city: 'Целевой город',
+    subject: 'Основная тема *',
+    timeline: 'Желаемые сроки',
+    budget: 'Бюджет / ориентировочная сумма',
+    message: 'Сообщение *',
+    consent:
+      'Я согласен/согласна, чтобы Bosphoras связался со мной по этому запросу. Я понимаю, что переданная информация будет обработана конфиденциально.',
     submit: 'Отправить запрос',
-    sent: 'Запрос подготовлен. Форма пока работает в демонстрационном режиме.',
-    required: 'Отмеченная информация важна для квалификации запроса.',
-    privacy: 'Отправляя форму, вы соглашаетесь на контакт со стороны Bosphoras. Информация обрабатывается дискретно и передается только при необходимости для миссии.',
-    fields: {
-      fullName: 'Полное имя', email: 'Email', whatsapp: 'WhatsApp', nationality: 'Гражданство', residence: 'Страна проживания', language: 'Предпочтительный язык', city: 'Город интереса', objective: 'Главная цель', budget: 'Ориентировочный бюджет', timeline: 'Сроки', message: 'Конфиденциальное сообщение', company: 'Компания', role: 'Должность / роль', income: 'Годовой доход или ориентировочный капитал', referrer: 'Имя рекомендателя, если есть', consent: 'Я согласен/согласна, чтобы Bosphoras связался со мной по моему запросу.',
+    note:
+      'Форма открывает вашу почтовую программу, чтобы отправить запрос на contact@bosphoras.com. Для формы, напрямую подключенной к CRM, позже потребуется подключить сервис отправки или API.',
+    placeholders: {
+      name: 'Ваше имя',
+      phone: '+7...',
+      email: 'your@email.com',
+      residence: 'Казахстан, ОАЭ, Франция...',
+      message: 'Опишите вашу ситуацию, цели и то, что вы хотите организовать в Турции.',
     },
-    options: {
-      city: ['Стамбул', 'Бодрум', 'Анталья', 'Еще не решено'],
-      objective: ['Переезд', 'Налоги / резиденция', 'Создание компании', 'Недвижимость', 'Здоровье / страхование', 'Офисы', 'Lifestyle / concierge', 'Частное членство'],
-      budget: ['Определить позже', '6 000 USD+', '10 000 USD+', '25 000 USD+', '50 000 USD+'],
-      timeline: ['Срочно', '1–3 месяца', '3–6 месяцев', '6–12 месяцев', 'Только изучение'],
-      language: ['Французский', 'Английский', 'Русский', 'Арабский', 'Турецкий'],
-    },
+    cityOptions: ['Стамбул', 'Бодрум', 'Анталья', 'Несколько городов', 'Я пока не знаю'],
+    subjectOptions: [
+      'Переезд в Турцию',
+      'Налоги / налоговая резиденция',
+      'Создание компании',
+      'Недвижимость / relocation',
+      'Здоровье / страхование',
+      'VIP transport / hospitality',
+      'Private access / membership',
+      'Другой запрос',
+    ],
+    timelineOptions: ['Срочно', 'В течение 30 дней', '1–3 месяца', '3–6 месяцев', 'Ознакомительный проект'],
+    budgetOptions: ['Определить позже', '50k - 150k', '150k - 500k', '500k - 1M', '1M+'],
   },
   ar: {
+    eyebrow: 'نموذج سري',
+    title: 'طلبكم',
+    fullName: 'الاسم الكامل *',
+    phone: 'الهاتف *',
+    email: 'البريد الإلكتروني *',
+    residence: 'بلد الإقامة',
+    city: 'المدينة المستهدفة',
+    subject: 'الموضوع الرئيسي *',
+    timeline: 'المهلة المطلوبة',
+    budget: 'الميزانية / الإطار المالي',
+    message: 'الرسالة *',
+    consent:
+      'أوافق على أن يتواصل معي Bosphoras بخصوص هذا الطلب. أفهم أن المعلومات المرسلة ستتم معالجتها بسرية.',
     submit: 'إرسال الطلب',
-    sent: 'تم تجهيز الطلب. النموذج حالياً في وضع تجريبي.',
-    required: 'المعلومات المحددة مهمة لتقييم الطلب.',
-    privacy: 'بإرسال هذا النموذج، توافقون على أن يتواصل معكم Bosphoras بخصوص طلبكم. تتم معالجة المعلومات بسرية ولا تُشارك إلا عند الضرورة للمهمة.',
-    fields: {
-      fullName: 'الاسم الكامل', email: 'البريد الإلكتروني', whatsapp: 'WhatsApp', nationality: 'الجنسية', residence: 'بلد الإقامة', language: 'اللغة المفضلة', city: 'المدينة محل الاهتمام', objective: 'الهدف الرئيسي', budget: 'الميزانية التقريبية', timeline: 'الجدول الزمني', message: 'رسالة سرية', company: 'الشركة', role: 'المنصب / الدور', income: 'الدخل السنوي أو الثروة التقريبية', referrer: 'اسم المُرشح إن وجد', consent: 'أوافق على أن يتواصل معي Bosphoras بخصوص طلبي.',
+    note:
+      'يفتح النموذج تطبيق البريد الإلكتروني لإرسال الطلب إلى contact@bosphoras.com. ولربط النموذج مباشرةً مع CRM، يجب لاحقاً توصيل خدمة إرسال أو API.',
+    placeholders: {
+      name: 'اسمكم',
+      phone: '+971...',
+      email: 'your@email.com',
+      residence: 'الإمارات، السعودية، كازاخستان...',
+      message: 'اشرحوا وضعكم وأهدافكم وما ترغبون في تنظيمه في تركيا.',
     },
-    options: {
-      city: ['إسطنبول', 'بودروم', 'أنطاليا', 'لم يتم القرار بعد'],
-      objective: ['الانتقال', 'الضرائب / الإقامة', 'تأسيس شركة', 'العقار', 'الصحة / التأمين', 'المكاتب', 'Lifestyle / concierge', 'عضوية خاصة'],
-      budget: ['يحدد لاحقاً', '6,000 USD+', '10,000 USD+', '25,000 USD+', '50,000 USD+'],
-      timeline: ['عاجل', '1 إلى 3 أشهر', '3 إلى 6 أشهر', '6 إلى 12 شهراً', 'استكشاف فقط'],
-      language: ['الفرنسية', 'الإنجليزية', 'الروسية', 'العربية', 'التركية'],
-    },
+    cityOptions: ['إسطنبول', 'بودروم', 'أنطاليا', 'عدة مدن', 'لا أعرف بعد'],
+    subjectOptions: [
+      'الانتقال إلى تركيا',
+      'الضرائب / الإقامة الضريبية',
+      'تأسيس شركة',
+      'العقار / relocation',
+      'الصحة / التأمين',
+      'النقل VIP / hospitality',
+      'الوصول الخاص / العضوية',
+      'طلب آخر',
+    ],
+    timelineOptions: ['عاجل', 'خلال 30 يوماً', '1 إلى 3 أشهر', '3 إلى 6 أشهر', 'مشروع استكشافي'],
+    budgetOptions: ['يحدد لاحقاً', '50k - 150k', '150k - 500k', '500k - 1M', '1M+'],
   },
 };
+
+function inputClass() {
+  return 'w-full border border-[#d8c7a1] bg-white px-4 py-3 text-sm outline-none transition focus:border-[#8a6728]';
+}
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
   return (
     <label className="block">
-      <span className="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]">{label}</span>
+      <span className="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#5c6676]">{label}</span>
       {children}
     </label>
   );
 }
 
-function inputClass() {
-  return 'w-full border border-[#d8c7a1] bg-[#fffaf0] px-4 py-3 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]';
+function SelectField({ name, options }: { name: string; options: string[] }) {
+  return (
+    <select name={name} className={inputClass()} defaultValue="">
+      <option value="">—</option>
+      {options.map((option) => (
+        <option key={option} value={option}>{option}</option>
+      ))}
+    </select>
+  );
 }
 
-function Select({ options }: { options: string[] }) {
-  return <select className={inputClass()} defaultValue=""><option value="" disabled>—</option>{options.map((option) => <option key={option}>{option}</option>)}</select>;
-}
-
-export function BosphorasForm({ locale, kind }: { locale: Locale; kind: FormKind }) {
-  const [sent, setSent] = useState(false);
-  const l = labels[locale];
-  const isMembership = kind === 'membership-application';
+export function BosphorasForm({ locale }: { locale: Locale; kind?: FormKind }) {
+  const copy = diagnostic[locale];
 
   return (
-    <section className="border-y border-[#d8c7a1] bg-[#fffaf0] py-14 md:py-20">
+    <section className="border-y border-[#d8c7a1] bg-[#f8f1e7] py-14 md:py-20">
       <div className="container-editorial">
         <form
-          onSubmit={(event) => { event.preventDefault(); setSent(true); }}
-          className="mx-auto max-w-5xl border border-[#d8c7a1] bg-white p-6 shadow-[0_24px_80px_rgba(16,24,39,0.08)] md:p-10"
+          action="mailto:contact@bosphoras.com"
+          method="post"
+          encType="text/plain"
+          className="relative mx-auto max-w-5xl border border-[#d8c7a1] bg-[#fffaf0] p-6 shadow-[0_35px_100px_rgba(16,24,39,0.12)] md:p-8"
         >
-          <p className="mb-8 text-sm leading-7 text-[#3e4857]">{l.required}</p>
-          <div className="grid gap-5 md:grid-cols-2">
-            <Field label={l.fields.fullName}><input className={inputClass()} name="fullName" /></Field>
-            <Field label={l.fields.email}><input className={inputClass()} name="email" type="email" /></Field>
-            <Field label={l.fields.whatsapp}><input className={inputClass()} name="whatsapp" /></Field>
-            <Field label={l.fields.nationality}><input className={inputClass()} name="nationality" /></Field>
-            <Field label={l.fields.residence}><input className={inputClass()} name="residence" /></Field>
-            <Field label={l.fields.language}><Select options={l.options.language} /></Field>
-            <Field label={l.fields.city}><Select options={l.options.city} /></Field>
-            <Field label={l.fields.objective}><Select options={l.options.objective} /></Field>
-            <Field label={l.fields.budget}><Select options={l.options.budget} /></Field>
-            <Field label={l.fields.timeline}><Select options={l.options.timeline} /></Field>
-            {isMembership && <Field label={l.fields.company}><input className={inputClass()} name="company" /></Field>}
-            {isMembership && <Field label={l.fields.role}><input className={inputClass()} name="role" /></Field>}
-            {isMembership && <Field label={l.fields.income}><input className={inputClass()} name="income" /></Field>}
-            {isMembership && <Field label={l.fields.referrer}><input className={inputClass()} name="referrer" /></Field>}
+          <div className="mb-8 border-b border-[#d8c7a1] pb-6">
+            <p className="text-[0.62rem] font-bold uppercase tracking-[0.26em] text-[#8a6728]">{copy.eyebrow}</p>
+            <h2 className="mt-3 font-serif text-3xl tracking-[-0.03em] text-[#121826] md:text-4xl">{copy.title}</h2>
           </div>
-          <div className="mt-5">
-            <Field label={l.fields.message}><textarea className={`${inputClass()} min-h-[150px]`} name="message" /></Field>
+
+          <div className="grid gap-4 md:grid-cols-2">
+            <Field label={copy.fullName}>
+              <input required name={copy.fullName.replace(' *', '')} type="text" placeholder={copy.placeholders.name} className={inputClass()} />
+            </Field>
+            <Field label={copy.phone}>
+              <input required name={copy.phone.replace(' *', '')} type="tel" placeholder={copy.placeholders.phone} className={inputClass()} />
+            </Field>
+            <Field label={copy.email}>
+              <input required name={copy.email.replace(' *', '')} type="email" placeholder={copy.placeholders.email} className={inputClass()} />
+            </Field>
+            <Field label={copy.residence}>
+              <input name={copy.residence} type="text" placeholder={copy.placeholders.residence} className={inputClass()} />
+            </Field>
+            <Field label={copy.city}>
+              <SelectField name={copy.city} options={copy.cityOptions} />
+            </Field>
+            <Field label={copy.subject}>
+              <SelectField name={copy.subject.replace(' *', '')} options={copy.subjectOptions} />
+            </Field>
+            <Field label={copy.timeline}>
+              <SelectField name={copy.timeline} options={copy.timelineOptions} />
+            </Field>
+            <Field label={copy.budget}>
+              <SelectField name={copy.budget} options={copy.budgetOptions} />
+            </Field>
           </div>
-          <label className="mt-6 flex gap-3 text-sm leading-6 text-[#3e4857]">
-            <input type="checkbox" className="mt-1 h-4 w-4 flex-none" />
-            <span>{l.fields.consent}</span>
+
+          <label className="mt-4 block">
+            <span className="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#5c6676]">{copy.message}</span>
+            <textarea required name={copy.message.replace(' *', '')} rows={6} placeholder={copy.placeholders.message} className="w-full border border-[#d8c7a1] bg-white px-4 py-3 text-sm leading-7 outline-none transition focus:border-[#8a6728]" />
           </label>
-          <p className="mt-5 text-xs leading-6 text-[#657083]">{l.privacy}</p>
-          <button type="submit" className="mt-8 inline-flex bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246]">
-            {l.submit}
+
+          <label className="mt-5 flex gap-3 text-sm leading-6 text-[#5c6676]">
+            <input required name="Confidentiality accepted" type="checkbox" value="Yes" className="mt-1 h-4 w-4 border-[#d8c7a1]" />
+            <span>{copy.consent}</span>
+          </label>
+
+          <button type="submit" className="mt-7 inline-flex w-full items-center justify-center gap-3 bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246] md:w-auto">
+            {copy.submit}
+            <ArrowRight size={15} />
           </button>
-          {sent && <p className="mt-5 text-sm font-semibold text-[#8a6728]">{l.sent}</p>}
+
+          <p className="mt-5 text-xs leading-6 text-[#7a8494]">{copy.note}</p>
         </form>
       </div>
     </section>
