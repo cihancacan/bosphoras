@@ -14,6 +14,7 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import { Breadcrumbs } from './Breadcrumbs';
 import { StructuredData } from './StructuredData';
+import { BosphorasForm } from './BosphorasForms';
 import type { MainPageContent } from '@/data/pages/types';
 import { getPage } from '@/data/pages';
 
@@ -25,6 +26,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
   const { locale } = page;
   const isRtl = localeDir[locale] === 'rtl';
   const ArrowIcon = isRtl ? ArrowLeft : ArrowRight;
+  const isFormPage = page.id === 'private-assessment' || page.id === 'membership-application';
 
   const breadcrumbHomeName =
     locale === 'fr'
@@ -82,7 +84,6 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
         <StructuredData data={faqSchema(page.faqs)} />
       )}
 
-      {/* Hero */}
       <section className="pt-32 pb-12 md:pt-40 md:pb-16 border-b border-[hsl(42,15%,88%)]">
         <div className="container-editorial">
           {page.id !== 'home' && (
@@ -106,7 +107,6 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
         </div>
       </section>
 
-      {/* Sections */}
       <section className="py-16 md:py-24">
         <div className="container-editorial">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
@@ -147,7 +147,6 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
               ))}
             </div>
 
-            {/* Sidebar */}
             <aside className="lg:col-span-4 space-y-10">
               <div className="bg-[hsl(220,45%,10%)] text-[hsl(45,30%,96%)] p-8">
                 <p className="text-[hsl(42,65%,68%)] text-[0.65rem] tracking-[0.3em] uppercase font-medium mb-4">
@@ -188,10 +187,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
                   </p>
                   <ul className="space-y-4">
                     {internalLinks.map((link) => (
-                      <li
-                        key={link.href}
-                        className="border-t border-[hsl(42,15%,88%)] pt-4"
-                      >
+                      <li key={link.href} className="border-t border-[hsl(42,15%,88%)] pt-4">
                         <Link
                           href={link.href}
                           className="group block text-[hsl(220,45%,12%)] hover:text-[hsl(42,65%,45%)] transition-colors duration-200"
@@ -213,7 +209,13 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
         </div>
       </section>
 
-      {/* FAQ */}
+      {isFormPage && (
+        <BosphorasForm
+          locale={locale}
+          kind={page.id === 'membership-application' ? 'membership-application' : 'private-assessment'}
+        />
+      )}
+
       {page.faqs && page.faqs.length > 0 && (
         <section className="py-16 md:py-24 bg-[hsl(45,25%,94%)] border-y border-[hsl(42,15%,86%)]">
           <div className="container-editorial">
@@ -252,7 +254,6 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
         </section>
       )}
 
-      {/* Closing CTA */}
       <section className="py-24 md:py-32 bg-[hsl(220,45%,10%)]">
         <div className="container-editorial text-center max-w-3xl mx-auto">
           <div className="w-12 h-px bg-[hsl(42,65%,52%)] mx-auto mb-8" aria-hidden="true" />
