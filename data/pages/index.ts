@@ -18,7 +18,7 @@ const frAll = applyPageOverrides(
   applyPageOverrides(frPages, stage8TrustOverrides.fr ?? []),
   formPagesOverrides.fr ?? []
 );
-const enAll = applyPageOverrides(
+const enAllBase = applyPageOverrides(
   applyPageOverrides(
     applyPageOverrides(
       applyPageOverrides(enPages, privateDeskOverrides.en ?? []),
@@ -28,7 +28,7 @@ const enAll = applyPageOverrides(
   ),
   formPagesOverrides.en ?? []
 );
-const ruAll = applyPageOverrides(
+const ruAllBase = applyPageOverrides(
   applyPageOverrides(
     applyPageOverrides(
       applyPageOverrides(ruPages, translatedPrivateDeskOverrides.ru ?? []),
@@ -38,7 +38,7 @@ const ruAll = applyPageOverrides(
   ),
   formPagesOverrides.ru ?? []
 );
-const arAll = applyPageOverrides(
+const arAllBase = applyPageOverrides(
   applyPageOverrides(
     applyPageOverrides(
       applyPageOverrides(arPages, translatedPrivateDeskOverrides.ar ?? []),
@@ -48,6 +48,10 @@ const arAll = applyPageOverrides(
   ),
   formPagesOverrides.ar ?? []
 );
+
+const enAll = applyPageOverrides(enAllBase, frAlignedTranslations.en ?? []);
+const ruAll = applyPageOverrides(ruAllBase, frAlignedTranslations.ru ?? []);
+const arAll = applyPageOverrides(arAllBase, frAlignedTranslations.ar ?? []);
 
 export const allPages: Record<Locale, MainPageContent[]> = {
   fr: fixLocalizedFormLinks('fr', frAll),
