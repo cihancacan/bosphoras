@@ -8,32 +8,38 @@ import { applyPageOverrides, privateDeskOverrides } from './private-desk-overrid
 import { translatedPrivateDeskOverrides } from './private-desk-overrides-translations';
 import { stage8TrustOverrides } from './stage8-trust-overrides';
 import { legalTranslations } from './legal-translations';
+import { fixLocalizedFormLinks } from './form-link-fixes';
 
 export * from './types';
 
+const frAll = applyPageOverrides(frPages, stage8TrustOverrides.fr ?? []);
+const enAll = applyPageOverrides(
+  applyPageOverrides(
+    applyPageOverrides(enPages, privateDeskOverrides.en ?? []),
+    stage8TrustOverrides.en ?? []
+  ),
+  legalTranslations.en ?? []
+);
+const ruAll = applyPageOverrides(
+  applyPageOverrides(
+    applyPageOverrides(ruPages, translatedPrivateDeskOverrides.ru ?? []),
+    stage8TrustOverrides.ru ?? []
+  ),
+  legalTranslations.ru ?? []
+);
+const arAll = applyPageOverrides(
+  applyPageOverrides(
+    applyPageOverrides(arPages, translatedPrivateDeskOverrides.ar ?? []),
+    stage8TrustOverrides.ar ?? []
+  ),
+  legalTranslations.ar ?? []
+);
+
 export const allPages: Record<Locale, MainPageContent[]> = {
-  fr: applyPageOverrides(frPages, stage8TrustOverrides.fr ?? []),
-  en: applyPageOverrides(
-    applyPageOverrides(
-      applyPageOverrides(enPages, privateDeskOverrides.en ?? []),
-      stage8TrustOverrides.en ?? []
-    ),
-    legalTranslations.en ?? []
-  ),
-  ru: applyPageOverrides(
-    applyPageOverrides(
-      applyPageOverrides(ruPages, translatedPrivateDeskOverrides.ru ?? []),
-      stage8TrustOverrides.ru ?? []
-    ),
-    legalTranslations.ru ?? []
-  ),
-  ar: applyPageOverrides(
-    applyPageOverrides(
-      applyPageOverrides(arPages, translatedPrivateDeskOverrides.ar ?? []),
-      stage8TrustOverrides.ar ?? []
-    ),
-    legalTranslations.ar ?? []
-  ),
+  fr: fixLocalizedFormLinks('fr', frAll),
+  en: fixLocalizedFormLinks('en', enAll),
+  ru: fixLocalizedFormLinks('ru', ruAll),
+  ar: fixLocalizedFormLinks('ar', arAll),
 };
 
 export function getPage(
