@@ -5,6 +5,7 @@ import { buildMetadata } from '@/lib/seo';
 import { MainPageRenderer } from '@/components/MainPageRenderer';
 import { HighPotentialGuideRenderer } from '@/components/HighPotentialGuideRenderer';
 import { ProgrammaticPageRenderer } from '@/components/ProgrammaticPageRenderer';
+import { PrivateAssessmentLocalizedPage } from '@/components/PrivateAssessmentLocalizedPage';
 import { getPageBySlug, allPages } from '@/data/pages';
 import { getHighPotentialGuideBySlug, highPotentialGuides } from '@/data/highPotentialPages';
 import { getProgrammaticPageBySlug, getProgrammaticPagesForLocale } from '@/data/programmatic/pages';
@@ -106,5 +107,10 @@ export default function LocaleCatchAllPage({ params }: PageProps) {
 
   const page = getPageBySlug(params.locale, slug);
   if (!page) notFound();
+
+  if (page.id === 'private-assessment') {
+    return <PrivateAssessmentLocalizedPage locale={params.locale} />;
+  }
+
   return <MainPageRenderer page={page} />;
 }
