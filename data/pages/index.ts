@@ -9,6 +9,7 @@ import { translatedPrivateDeskOverrides } from './private-desk-overrides-transla
 import { stage8TrustOverrides } from './stage8-trust-overrides';
 import { legalTranslations } from './legal-translations';
 import { formPagesOverrides } from './form-pages-overrides';
+import { frAlignedTranslations } from './fr-aligned-translations';
 import { fixLocalizedFormLinks } from './form-link-fixes';
 
 export * from './types';
