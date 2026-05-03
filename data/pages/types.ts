@@ -67,6 +67,7 @@ export const pageSlugs: PageSlugMap[] = [
   { id: 'property', jsonLdType: 'Service', slugs: { fr: '/services/immobilier-relocation', en: '/services/property-relocation', ru: '/uslugi/nedvizhimost-pereezd', ar: '/خدمات/العقارات-والانتقال' } },
   { id: 'offices', jsonLdType: 'Service', slugs: { fr: '/services/bureaux', en: '/services/offices', ru: '/uslugi/ofisy', ar: '/خدمات/المكاتب' } },
   { id: 'transport', jsonLdType: 'Service', slugs: { fr: '/services/transport-vip', en: '/services/vip-transport', ru: '/uslugi/vip-transport', ar: '/خدمات/النقل-الفاخر' } },
+  { id: 'luxury-concierge', jsonLdType: 'Service', slugs: { fr: '/services/conciergerie-luxe-turquie', en: '/services/luxury-concierge-turkey', ru: '/uslugi/luxury-concierge-turkey', ar: '/خدمات/luxury-concierge-turkey' } },
   { id: 'private-club', jsonLdType: 'Service', slugs: { fr: '/cercle-prive', en: '/private-access-club', ru: '/chastnyy-klub', ar: '/النادي-الخاص' } },
   { id: 'membership-card', jsonLdType: 'Service', slugs: { fr: '/adhesion/carte-membre', en: '/membership/card', ru: '/chlenstvo/karta', ar: '/عضوية/البطاقة' } },
   { id: 'membership-application', jsonLdType: 'ContactPage', slugs: { fr: '/adhesion/demande-membre', en: '/membership/application', ru: '/chlenstvo/zayavka', ar: '/عضوية/طلب' } },
