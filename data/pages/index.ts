@@ -10,13 +10,17 @@ import { stage8TrustOverrides } from './stage8-trust-overrides';
 import { legalTranslations } from './legal-translations';
 import { formPagesOverrides } from './form-pages-overrides';
 import { frAlignedTranslations } from './fr-aligned-translations';
+import { luxuryConciergeOverrides } from './luxury-concierge-overrides';
 import { fixLocalizedFormLinks } from './form-link-fixes';
 
 export * from './types';
 
 const frAll = applyPageOverrides(
-  applyPageOverrides(frPages, stage8TrustOverrides.fr ?? []),
-  formPagesOverrides.fr ?? []
+  applyPageOverrides(
+    applyPageOverrides(frPages, stage8TrustOverrides.fr ?? []),
+    formPagesOverrides.fr ?? []
+  ),
+  luxuryConciergeOverrides.fr ?? []
 );
 const enAllBase = applyPageOverrides(
   applyPageOverrides(
@@ -49,9 +53,18 @@ const arAllBase = applyPageOverrides(
   formPagesOverrides.ar ?? []
 );
 
-const enAll = applyPageOverrides(enAllBase, frAlignedTranslations.en ?? []);
-const ruAll = applyPageOverrides(ruAllBase, frAlignedTranslations.ru ?? []);
-const arAll = applyPageOverrides(arAllBase, frAlignedTranslations.ar ?? []);
+const enAll = applyPageOverrides(
+  applyPageOverrides(enAllBase, frAlignedTranslations.en ?? []),
+  luxuryConciergeOverrides.en ?? []
+);
+const ruAll = applyPageOverrides(
+  applyPageOverrides(ruAllBase, frAlignedTranslations.ru ?? []),
+  luxuryConciergeOverrides.ru ?? []
+);
+const arAll = applyPageOverrides(
+  applyPageOverrides(arAllBase, frAlignedTranslations.ar ?? []),
+  luxuryConciergeOverrides.ar ?? []
+);
 
 export const allPages: Record<Locale, MainPageContent[]> = {
   fr: fixLocalizedFormLinks('fr', frAll),
