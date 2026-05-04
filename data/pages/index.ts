@@ -12,6 +12,7 @@ import { formPagesOverrides } from './form-pages-overrides';
 import { frAlignedTranslations } from './fr-aligned-translations';
 import { luxuryConciergeOverrides } from './luxury-concierge-overrides';
 import { uxSeoCleanupOverrides } from './ux-seo-cleanup-overrides';
+import { missingRouteOverrides } from './missing-route-overrides';
 import { fixLocalizedFormLinks } from './form-link-fixes';
 
 export * from './types';
@@ -66,17 +67,23 @@ const enAll = applyPageOverrides(
 );
 const ruAll = applyPageOverrides(
   applyPageOverrides(
-    applyPageOverrides(ruAllBase, frAlignedTranslations.ru ?? []),
-    luxuryConciergeOverrides.ru ?? []
+    applyPageOverrides(
+      applyPageOverrides(ruAllBase, frAlignedTranslations.ru ?? []),
+      luxuryConciergeOverrides.ru ?? []
+    ),
+    uxSeoCleanupOverrides.ru ?? []
   ),
-  uxSeoCleanupOverrides.ru ?? []
+  missingRouteOverrides.ru ?? []
 );
 const arAll = applyPageOverrides(
   applyPageOverrides(
-    applyPageOverrides(arAllBase, frAlignedTranslations.ar ?? []),
-    luxuryConciergeOverrides.ar ?? []
+    applyPageOverrides(
+      applyPageOverrides(arAllBase, frAlignedTranslations.ar ?? []),
+      luxuryConciergeOverrides.ar ?? []
+    ),
+    uxSeoCleanupOverrides.ar ?? []
   ),
-  uxSeoCleanupOverrides.ar ?? []
+  missingRouteOverrides.ar ?? []
 );
 
 export const allPages: Record<Locale, MainPageContent[]> = {
