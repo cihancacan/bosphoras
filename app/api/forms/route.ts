@@ -12,6 +12,16 @@ type FormPayload = {
   sourcePath?: string;
 };
 
+type MailConfig = {
+  host: string;
+  port: number;
+  secure: boolean;
+  user: string;
+  pass: string;
+  from: string;
+  to: string;
+};
+
 const localeNames: Record<Locale, string> = {
   fr: 'Français',
   en: 'English',
@@ -77,15 +87,44 @@ function safe(value: unknown): string {
   return String(value ?? '').replace(/[<>]/g, '').trim();
 }
 
-function requiredEnv(name: string): string {
-  const value = process.env[name];
-  if (!value) throw new Error(`Missing environment variable: ${name}`);
-  return value.trim().replace(/^['\"]|['\"]$/g, '');
+function cleanEnv(value?: string): string {
+  return (value ?? '').trim().replace(/^['\"]|['\"]$/g, '');
 }
 
-function optionalEnv(name: string, fallback: string): string {
-  const value = process.env[name];
-  return (value ? value.trim().replace(/^['\"]|['\"]$/g, '') : fallback);
+function readEnv(...names: string[]): string {
+  for (const name of names) {
+    const value = cleanEnv(process.env[name]);
+    if (value) return value;
+  }
+  return '';
+}
+
+function readEnvOrFail(...names: string[]): string {
+  const value = readEnv(...names);
+  if (!value) throw new Error(`Missing environment variable: ${names.join(' or ')}`);
+  return value;
+}
+
+function headerSafe(value: string): string {
+  return value.replace(/[\r\n]/g, ' ').trim();
+}
+
+function getMailConfig(): MailConfig {
+  const user = readEnvOrFail('SMTP_USER', 'OVH_SMTP_USER', 'EMAIL_USER');
+  const pass = readEnvOrFail('SMTP_PASS', 'SMTP_PASSWORD', 'OVH_SMTP_PASS', 'EMAIL_PASS', 'EMAIL_PASSWORD');
+  const host = readEnv('SMTP_HOST', 'OVH_SMTP_HOST') || 'ssl0.ovh.net';
+  const port = Number(readEnv('SMTP_PORT', 'OVH_SMTP_PORT') || '465');
+  const secure = (readEnv('SMTP_SECURE', 'OVH_SMTP_SECURE') || 'true') === 'true';
+
+  return {
+    host,
+    port,
+    secure,
+    user,
+    pass,
+    from: readEnv('MAIL_FROM', 'EMAIL_FROM') || `Bosphoras <${user}>`,
+    to: readEnv('MAIL_TO', 'EMAIL_TO') || 'contact@bosphoras.com',
+  };
 }
 
 function getEmail(fields: Record<string, string>): string {
@@ -136,11 +175,25 @@ function internalHtml(payload: { locale: Locale; formKind: FormKind; fields: Rec
 
 function classifyError(error: unknown): string {
   const message = error instanceof Error ? error.message : String(error);
+  const code = typeof error === 'object' && error && 'code' in error ? String((error as { code?: unknown }).code) : '';
   if (message.includes('Missing environment variable')) return 'MISSING_ENV';
-  if (message.includes('Invalid login') || message.includes('EAUTH')) return 'SMTP_AUTH_FAILED';
-  if (message.includes('ECONNECTION') || message.includes('ETIMEDOUT') || message.includes('ECONNREFUSED')) return 'SMTP_CONNECTION_FAILED';
-  if (message.includes('Message failed') || message.includes('EENVELOPE')) return 'SMTP_MESSAGE_FAILED';
+  if (code === 'EAUTH' || message.includes('Invalid login') || message.includes('Authentication')) return 'SMTP_AUTH_FAILED';
+  if (code === 'ECONNECTION' || code === 'ETIMEDOUT' || code === 'ECONNREFUSED' || message.includes('Greeting never received')) return 'SMTP_CONNECTION_FAILED';
+  if (code === 'EENVELOPE' || message.includes('Message failed')) return 'SMTP_MESSAGE_FAILED';
   return 'SEND_FAILED';
+}
+
+function createTransporter(nodemailer: any, config: MailConfig) {
+  return nodemailer.createTransport({
+    host: config.host,
+    port: config.port,
+    secure: config.secure,
+    auth: { user: config.user, pass: config.pass },
+    tls: { servername: config.host },
+    connectionTimeout: 30000,
+    greetingTimeout: 30000,
+    socketTimeout: 30000,
+  });
 }
 
 export async function POST(request: Request) {
@@ -158,48 +211,38 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: false, error: 'INVALID_EMAIL' }, { status: 400 });
     }
 
-    const smtpHost = optionalEnv('SMTP_HOST', 'ssl0.ovh.net');
-    const smtpPort = Number(optionalEnv('SMTP_PORT', '465'));
-    const smtpSecure = optionalEnv('SMTP_SECURE', 'true') === 'true';
-    const smtpUser = requiredEnv('SMTP_USER');
-    const smtpPass = requiredEnv('SMTP_PASS');
-    const from = optionalEnv('MAIL_FROM', `Bosphoras Private Desk <${smtpUser}>`);
-    const to = optionalEnv('MAIL_TO', smtpUser);
-
-    const transporter = nodemailer.createTransport({
-      host: smtpHost,
-      port: smtpPort,
-      secure: smtpSecure,
-      auth: { user: smtpUser, pass: smtpPass },
-      tls: { servername: smtpHost },
-      connectionTimeout: 15000,
-      greetingTimeout: 15000,
-      socketTimeout: 20000,
-    });
-
-    await transporter.verify();
-
+    const config = getMailConfig();
+    const transporter = createTransporter(nodemailer, config);
     const fullPayload = { locale, formKind, fields, sourcePath };
 
     await transporter.sendMail({
-      from,
-      to,
-      replyTo: clientEmail,
-      subject: `${formKind === 'membership-application' ? 'Nouvelle candidature membre' : 'Nouvelle demande privée'} — Bosphoras — ${clientName || clientEmail}`,
+      from: headerSafe(config.from),
+      to: headerSafe(config.to),
+      replyTo: headerSafe(clientEmail),
+      subject: headerSafe(`${formKind === 'membership-application' ? 'Nouvelle candidature membre' : 'Nouvelle demande privée'} — Bosphoras — ${clientName || clientEmail}`),
       html: internalHtml(fullPayload, clientEmail, clientName),
       text: `Nouvelle demande Bosphoras\nLangue: ${localeNames[locale]}\nFormulaire: ${formNames[formKind][locale]}\nClient: ${clientName}\nEmail: ${clientEmail}\nSource: ${sourcePath}\n\n${Object.entries(fields).map(([k, v]) => `${k}: ${v}`).join('\n')}`,
     });
 
-    await transporter.sendMail({
-      from,
-      to: clientEmail,
-      replyTo: to,
-      subject: clientCopy[locale].subject,
-      html: clientHtml(locale),
-      text: clientText(locale),
-    });
+    let confirmationSent = true;
+    try {
+      await transporter.sendMail({
+        from: headerSafe(config.from),
+        to: headerSafe(clientEmail),
+        replyTo: headerSafe(config.to),
+        subject: headerSafe(clientCopy[locale].subject),
+        html: clientHtml(locale),
+        text: clientText(locale),
+      });
+    } catch (confirmationError) {
+      confirmationSent = false;
+      console.error('Bosphoras client confirmation email error', {
+        code: classifyError(confirmationError),
+        message: confirmationError instanceof Error ? confirmationError.message : String(confirmationError),
+      });
+    }
 
-    return NextResponse.json({ ok: true });
+    return NextResponse.json({ ok: true, confirmationSent });
   } catch (error) {
     const code = classifyError(error);
     const message = error instanceof Error ? error.message : String(error);
