@@ -23,7 +23,7 @@ export function buildMetadata({
 }: SeoProps): Metadata {
   const canonical = getCanonicalUrl(locale, path);
   const resolvedAlternates = alternates === undefined ? getAlternateUrls(path) : alternates;
-  const ogImage = image ?? `${siteUrl}/og-default.png`;
+  const ogImage = image ?? `${siteUrl}/images/og-default.jpg`;
 
   return {
     title,
