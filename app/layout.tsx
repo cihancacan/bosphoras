@@ -2,15 +2,19 @@ import './globals.css';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 
+const defaultDescription =
+  'Bosphoras accompagne investisseurs, entrepreneurs et familles exigeantes en Turquie avec un bureau privé unique : installation, fiscalité, immobilier, santé, conciergerie VIP et accès confidentiel.';
+
 export const metadata: Metadata = {
   title: {
     default: 'Bosphoras — Bureau Privé en Turquie',
     template: '%s | Bosphoras',
   },
-  description:
-    'Bosphoras accompagne les investisseurs internationaux, familles et entrepreneurs dans leur relocation, leurs investissements et leur vie privée en Turquie.',
+  description: defaultDescription,
   metadataBase: new URL('https://bosphoras.com'),
   openGraph: {
+    title: 'Bosphoras — Bureau Privé en Turquie',
+    description: defaultDescription,
     siteName: 'Bosphoras',
     locale: 'fr_FR',
     type: 'website',
@@ -25,6 +29,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    title: 'Bosphoras — Bureau Privé en Turquie',
+    description: defaultDescription,
     images: ['/og-default.png'],
   },
 };
