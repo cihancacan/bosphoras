@@ -5,7 +5,7 @@ import Script from 'next/script';
 const defaultDescription =
   'Bosphoras accompagne investisseurs, entrepreneurs et familles exigeantes en Turquie avec un bureau privé unique : installation, fiscalité, immobilier, santé, conciergerie VIP et accès confidentiel.';
 
-const ogImage = '/images/og-default.png';
+const ogImage = '/images/og-default.jpg';
 
 export const metadata: Metadata = {
   title: {
