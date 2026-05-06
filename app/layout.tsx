@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/og-default.jpg',
+        url: '/og-default.png',
         width: 1200,
         height: 630,
         alt: 'Bosphoras — Bureau Privé en Turquie',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['/og-default.jpg'],
+    images: ['/og-default.png'],
   },
 };
 
