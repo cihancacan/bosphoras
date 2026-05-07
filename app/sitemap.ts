@@ -93,7 +93,46 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'https://bosphoras.com/ar/turkey-vs-dubai-investors-tax',
   ];
 
-  for (const url of [...foreignIncomeTaxPages, ...turkeyTaxClusterPages]) {
+  const secondWavePages = [
+    'https://bosphoras.com/agro-industrie-turquie-investissement-fiscalite',
+    'https://bosphoras.com/en/agribusiness-turkey-investment-tax',
+    'https://bosphoras.com/ru/agropromyshlennost-turtsiya-investitsii-nalogi',
+    'https://bosphoras.com/ar/agribusiness-turkey-investment-tax',
+    'https://bosphoras.com/startup-turquie-avantages-fiscaux-investisseurs',
+    'https://bosphoras.com/en/startup-turkey-tax-benefits-investors',
+    'https://bosphoras.com/ru/startup-turtsiya-nalogovye-lgoty-investory',
+    'https://bosphoras.com/ar/startup-turkey-tax-benefits-investors',
+    'https://bosphoras.com/finance-fintech-turquie-istanbul-finance-center',
+    'https://bosphoras.com/en/finance-fintech-turkey-istanbul-finance-center',
+    'https://bosphoras.com/ru/finansy-fintech-turtsiya-istanbul-finance-center',
+    'https://bosphoras.com/ar/finance-fintech-turkey-istanbul-finance-center',
+    'https://bosphoras.com/import-export-turquie-transit-trade',
+    'https://bosphoras.com/en/import-export-turkey-transit-trade',
+    'https://bosphoras.com/ru/import-export-turtsiya-tranzitnaya-torgovlya',
+    'https://bosphoras.com/ar/import-export-turkey-transit-trade',
+    'https://bosphoras.com/holding-siege-regional-turquie',
+    'https://bosphoras.com/en/holding-regional-headquarters-turkey',
+    'https://bosphoras.com/ru/holding-regionalnyy-ofis-turtsiya',
+    'https://bosphoras.com/ar/holding-regional-headquarters-turkey',
+    'https://bosphoras.com/residence-fiscale-turquie-immobilier-investisseurs',
+    'https://bosphoras.com/en/turkey-tax-residence-property-investors',
+    'https://bosphoras.com/ru/nalogovaya-rezidentsiya-turtsiya-nedvizhimost-investory',
+    'https://bosphoras.com/ar/turkey-tax-residence-property-investors',
+    'https://bosphoras.com/turquie-vs-portugal-residence-fiscale-investisseurs',
+    'https://bosphoras.com/en/turkey-vs-portugal-tax-residence-investors',
+    'https://bosphoras.com/ru/turtsiya-vs-portugaliya-nalogovaya-rezidentsiya',
+    'https://bosphoras.com/ar/turkey-vs-portugal-tax-residence-investors',
+    'https://bosphoras.com/turquie-vs-monaco-family-office-residence',
+    'https://bosphoras.com/en/turkey-vs-monaco-family-office-residence',
+    'https://bosphoras.com/ru/turtsiya-vs-monako-family-office-rezidentsiya',
+    'https://bosphoras.com/ar/turkey-vs-monaco-family-office-residence',
+    'https://bosphoras.com/turquie-singapour-hong-kong-transit-trade',
+    'https://bosphoras.com/en/turkey-singapore-hong-kong-transit-trade',
+    'https://bosphoras.com/ru/turtsiya-singapur-gonkong-tranzitnaya-torgovlya',
+    'https://bosphoras.com/ar/turkey-singapore-hong-kong-transit-trade',
+  ];
+
+  for (const url of [...foreignIncomeTaxPages, ...turkeyTaxClusterPages, ...secondWavePages]) {
     entries.push({
       url,
       lastModified: now,
