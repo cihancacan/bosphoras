@@ -22,6 +22,15 @@ type MenuGroup = {
   items: MenuItem[];
 };
 
+const specialLocalizedPaths: Array<Record<Locale, string>> = [
+  {
+    fr: '/exoneration-fiscale-turquie-revenus-etrangers',
+    en: '/en/turkey-tax-exemption-foreign-income',
+    ru: '/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody',
+    ar: '/ar/turkey-tax-exemption-foreign-income',
+  },
+];
+
 export function Header({ locale, currentPath = '/' }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -104,6 +113,11 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
   ];
 
   const getLocaleHref = (targetLocale: Locale) => {
+    const specialPath = specialLocalizedPaths.find((paths) =>
+      locales.some((loc) => paths[loc] === currentPath)
+    );
+    if (specialPath) return specialPath[targetLocale];
+
     const guideSlug = getEquivalentHighPotentialSlug(currentPath, targetLocale);
     if (guideSlug) return getLocalePath(targetLocale, guideSlug);
 
