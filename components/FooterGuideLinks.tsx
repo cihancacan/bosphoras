@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+import { useState } from 'react';
 import type { Locale } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
 import { highPotentialGuides } from '@/data/highPotentialPages';
@@ -100,11 +103,26 @@ const secondWaveGuides: Record<Locale, Array<{ href: string; label: string }>> =
   ],
 };
 
+const buttonLabels: Record<Locale, { more: string; less: string }> = {
+  fr: { more: 'Afficher plus de guides', less: 'Réduire les guides' },
+  en: { more: 'Show more guides', less: 'Show fewer guides' },
+  ru: { more: 'Показать больше гидов', less: 'Свернуть гиды' },
+  ar: { more: 'عرض المزيد من الأدلة', less: 'عرض عدد أقل' },
+};
+
+const INITIAL_GUIDES = 5;
+const STEP_GUIDES = 5;
+
 export function FooterGuideLinks({ locale }: { locale: Locale }) {
-  const guides = highPotentialGuides.filter((guide) => guide.locale === locale);
-  const extraGuide = foreignIncomeTaxGuide[locale];
-  const taxGuides = taxClusterGuides[locale];
-  const secondGuides = secondWaveGuides[locale];
+  const [visibleCount, setVisibleCount] = useState(INITIAL_GUIDES);
+  const regularGuides = highPotentialGuides
+    .filter((guide) => guide.locale === locale)
+    .map((guide) => ({ href: getLocalePath(locale, guide.slug), label: guide.h1 }));
+
+  const allGuides = [foreignIncomeTaxGuide[locale], ...taxClusterGuides[locale], ...secondWaveGuides[locale], ...regularGuides];
+  const visibleGuides = allGuides.slice(0, visibleCount);
+  const hasMore = visibleCount < allGuides.length;
+  const hasExpanded = visibleCount > INITIAL_GUIDES;
 
   const title = locale === 'fr' ? 'Guides privés' : locale === 'en' ? 'Private guides' : locale === 'ru' ? 'Частные гиды' : 'أدلة خاصة';
   const intro = locale === 'fr'
@@ -125,22 +143,44 @@ export function FooterGuideLinks({ locale }: { locale: Locale }) {
       </div>
 
       <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-5">
-        <Link href={extraGuide.href} className="border border-[hsl(42,65%,52%)]/45 bg-[hsl(42,65%,52%)]/[0.06] p-4 text-sm leading-6 text-[hsl(42,65%,58%)] transition-colors duration-200 hover:border-[hsl(42,65%,52%)] hover:text-[hsl(42,65%,68%)]">
-          {extraGuide.label}
-        </Link>
-
-        {[...taxGuides, ...secondGuides].map((guide) => (
-          <Link key={guide.href} href={guide.href} className="border border-[hsl(42,65%,52%)]/25 bg-[hsl(42,65%,52%)]/[0.035] p-4 text-sm leading-6 text-[hsl(220,10%,62%)] transition-colors duration-200 hover:border-[hsl(42,65%,52%)]/45 hover:text-[hsl(42,65%,52%)]">
+        {visibleGuides.map((guide, index) => (
+          <Link
+            key={guide.href}
+            href={guide.href}
+            className={`p-4 text-sm leading-6 transition-colors duration-200 ${
+              index === 0
+                ? 'border border-[hsl(42,65%,52%)]/45 bg-[hsl(42,65%,52%)]/[0.06] text-[hsl(42,65%,58%)] hover:border-[hsl(42,65%,52%)] hover:text-[hsl(42,65%,68%)]'
+                : 'border border-[hsl(42,65%,52%)]/25 bg-[hsl(42,65%,52%)]/[0.035] text-[hsl(220,10%,62%)] hover:border-[hsl(42,65%,52%)]/45 hover:text-[hsl(42,65%,52%)]'
+            }`}
+          >
             {guide.label}
           </Link>
         ))}
-
-        {guides.map((guide) => (
-          <Link key={`${guide.locale}-${guide.id}`} href={getLocalePath(locale, guide.slug)} className="border border-[hsl(220,35%,15%)] bg-white/[0.02] p-4 text-sm leading-6 text-[hsl(220,10%,55%)] transition-colors duration-200 hover:border-[hsl(42,65%,52%)]/45 hover:text-[hsl(42,65%,52%)]">
-            {guide.h1}
-          </Link>
-        ))}
       </div>
+
+      {(hasMore || hasExpanded) && (
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          {hasMore && (
+            <button
+              type="button"
+              onClick={() => setVisibleCount((count) => Math.min(count + STEP_GUIDES, allGuides.length))}
+              className="border border-[hsl(42,65%,52%)]/45 px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[hsl(42,65%,58%)] transition-colors duration-200 hover:bg-[hsl(42,65%,52%)]/[0.08] hover:text-[hsl(42,65%,68%)]"
+            >
+              {buttonLabels[locale].more} +5
+            </button>
+          )}
+
+          {hasExpanded && (
+            <button
+              type="button"
+              onClick={() => setVisibleCount(INITIAL_GUIDES)}
+              className="px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]"
+            >
+              {buttonLabels[locale].less}
+            </button>
+          )}
+        </div>
+      )}
     </div>
   );
 }
