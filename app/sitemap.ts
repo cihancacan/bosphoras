@@ -58,7 +58,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'https://bosphoras.com/ar/turkey-tax-exemption-foreign-income',
   ];
 
-  for (const url of foreignIncomeTaxPages) {
+  const turkeyTaxClusterPages = [
+    'https://bosphoras.com/strategie-fiscale-turquie-investisseurs-etrangers',
+    'https://bosphoras.com/en/turkey-tax-strategy-foreign-investors',
+    'https://bosphoras.com/ru/nalogovaya-strategiya-turtsii-inostrannye-investory',
+    'https://bosphoras.com/ar/turkey-tax-strategy-foreign-investors',
+    'https://bosphoras.com/exoneration-fiscale-turquie-20-ans-nouveaux-residents',
+    'https://bosphoras.com/en/turkey-20-year-tax-exemption-new-residents',
+    'https://bosphoras.com/ru/turtsiya-20-let-nalogovaya-lgota-novye-rezidenty',
+    'https://bosphoras.com/ar/turkey-20-year-tax-exemption-new-residents',
+    'https://bosphoras.com/istanbul-finance-center-avantages-fiscaux-investisseurs',
+    'https://bosphoras.com/en/istanbul-finance-center-tax-benefits-investors',
+    'https://bosphoras.com/ru/istanbul-finance-center-nalogovye-lgoty-investory',
+    'https://bosphoras.com/ar/istanbul-finance-center-tax-benefits-investors',
+    'https://bosphoras.com/societe-turquie-transit-trade-commerce-international',
+    'https://bosphoras.com/en/turkey-company-transit-trade-international-commerce',
+    'https://bosphoras.com/ru/kompaniya-turtsiya-tranzitnaya-torgovlya',
+    'https://bosphoras.com/ar/turkey-company-transit-trade-international-commerce',
+    'https://bosphoras.com/centres-services-qualifies-turquie-avantages-fiscaux',
+    'https://bosphoras.com/en/qualified-service-centers-turkey-tax-benefits',
+    'https://bosphoras.com/ru/kvalifitsirovannye-servisnye-tsentry-turtsiya',
+    'https://bosphoras.com/ar/qualified-service-centers-turkey-tax-benefits',
+    'https://bosphoras.com/family-office-turquie-istanbul',
+    'https://bosphoras.com/en/family-office-turkey-istanbul',
+    'https://bosphoras.com/ru/family-office-turtsiya-stambul',
+    'https://bosphoras.com/ar/family-office-turkey-istanbul',
+    'https://bosphoras.com/industrie-fabrication-turquie-impot-societe-12-5',
+    'https://bosphoras.com/en/turkey-manufacturing-corporate-tax-12-5',
+    'https://bosphoras.com/ru/proizvodstvo-turtsiya-nalog-na-pribyl-12-5',
+    'https://bosphoras.com/ar/turkey-manufacturing-corporate-tax-12-5',
+    'https://bosphoras.com/turquie-vs-dubai-investisseurs-fiscalite',
+    'https://bosphoras.com/en/turkey-vs-dubai-investors-tax',
+    'https://bosphoras.com/ru/turtsiya-vs-dubai-investory-nalogi',
+    'https://bosphoras.com/ar/turkey-vs-dubai-investors-tax',
+  ];
+
+  for (const url of [...foreignIncomeTaxPages, ...turkeyTaxClusterPages]) {
     entries.push({
       url,
       lastModified: now,
