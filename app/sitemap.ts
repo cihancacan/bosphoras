@@ -51,6 +51,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  const foreignIncomeTaxPages = [
+    'https://bosphoras.com/exoneration-fiscale-turquie-revenus-etrangers',
+    'https://bosphoras.com/en/turkey-tax-exemption-foreign-income',
+    'https://bosphoras.com/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody',
+    'https://bosphoras.com/ar/turkey-tax-exemption-foreign-income',
+  ];
+
+  for (const url of foreignIncomeTaxPages) {
+    entries.push({
+      url,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    });
+  }
+
   return entries;
 }
 
