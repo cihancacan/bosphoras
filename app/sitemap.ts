@@ -6,6 +6,7 @@ import { getCanonicalUrl } from '@/lib/routes';
 import { highPotentialGuides } from '@/data/highPotentialPages';
 import { programmaticPages } from '@/data/programmatic/pages';
 import { ENABLE_ALL_PROGRAMMATIC_PAGES, ENABLE_PRIORITY_3_IN_SITEMAP } from '@/lib/launchConfig';
+import { longTailTaxSitemapUrls } from '@/data/longTailTaxRoutes';
 
 function programmaticPriority(priorityLevel: 1 | 2 | 3) {
   if (priorityLevel === 1) return 0.75;
@@ -132,7 +133,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'https://bosphoras.com/ar/turkey-singapore-hong-kong-transit-trade',
   ];
 
-  for (const url of [...foreignIncomeTaxPages, ...turkeyTaxClusterPages, ...secondWavePages]) {
+  for (const url of [...foreignIncomeTaxPages, ...turkeyTaxClusterPages, ...secondWavePages, ...longTailTaxSitemapUrls]) {
     entries.push({
       url,
       lastModified: now,
