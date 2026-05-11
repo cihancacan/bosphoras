@@ -1,3 +1,7 @@
-import { getLongTailTaxMetadata, LongTailTaxSeoPage } from '@/components/seo/TaxLongTailSeoPage';
-export const metadata = getLongTailTaxMetadata('foreignCapitalGains', 'fr');
-export default function Page() { return <LongTailTaxSeoPage pageKey="foreignCapitalGains" locale="fr" />; }
+import { getForeignCapitalGainsTaxMetadata, ForeignCapitalGainsTaxClientPage } from '@/components/seo/ForeignCapitalGainsTaxClientPage';
+
+export const metadata = getForeignCapitalGainsTaxMetadata('fr');
+
+export default function Page() {
+  return <ForeignCapitalGainsTaxClientPage locale="fr" />;
+}
