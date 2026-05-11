@@ -1,7 +1,7 @@
-import { getTaxResidenceForeignIncomeMetadata, TaxResidenceForeignIncomeFullPage } from '@/components/seo/TaxResidenceForeignIncomeFullPage';
+import { getTaxResidenceForeignIncomeClientFrMetadata, TaxResidenceForeignIncomeClientFrPage } from '@/components/seo/TaxResidenceForeignIncomeClientFrPage';
 
-export const metadata = getTaxResidenceForeignIncomeMetadata('fr');
+export const metadata = getTaxResidenceForeignIncomeClientFrMetadata();
 
 export default function Page() {
-  return <TaxResidenceForeignIncomeFullPage locale="fr" />;
+  return <TaxResidenceForeignIncomeClientFrPage />;
 }
