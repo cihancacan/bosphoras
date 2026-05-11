@@ -5,6 +5,7 @@ import { useState } from 'react';
 import type { Locale } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
 import { highPotentialGuides } from '@/data/highPotentialPages';
+import { longTailTaxFooterLinks } from '@/data/longTailTaxRoutes';
 
 const foreignIncomeTaxGuide: Record<Locale, { href: string; label: string }> = {
   fr: { href: '/exoneration-fiscale-turquie-revenus-etrangers', label: 'Exonération fiscale en Turquie sur les revenus étrangers : ce que les investisseurs doivent vérifier' },
@@ -119,7 +120,7 @@ export function FooterGuideLinks({ locale }: { locale: Locale }) {
     .filter((guide) => guide.locale === locale)
     .map((guide) => ({ href: getLocalePath(locale, guide.slug), label: guide.h1 }));
 
-  const allGuides = [foreignIncomeTaxGuide[locale], ...taxClusterGuides[locale], ...secondWaveGuides[locale], ...regularGuides];
+  const allGuides = [foreignIncomeTaxGuide[locale], ...taxClusterGuides[locale], ...secondWaveGuides[locale], ...longTailTaxFooterLinks[locale], ...regularGuides];
   const visibleGuides = allGuides.slice(0, visibleCount);
   const hasMore = visibleCount < allGuides.length;
   const hasExpanded = visibleCount > INITIAL_GUIDES;
@@ -161,21 +162,12 @@ export function FooterGuideLinks({ locale }: { locale: Locale }) {
       {(hasMore || hasExpanded) && (
         <div className="mt-6 flex flex-wrap items-center gap-3">
           {hasMore && (
-            <button
-              type="button"
-              onClick={() => setVisibleCount((count) => Math.min(count + STEP_GUIDES, allGuides.length))}
-              className="border border-[hsl(42,65%,52%)]/45 px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[hsl(42,65%,58%)] transition-colors duration-200 hover:bg-[hsl(42,65%,52%)]/[0.08] hover:text-[hsl(42,65%,68%)]"
-            >
+            <button type="button" onClick={() => setVisibleCount((count) => Math.min(count + STEP_GUIDES, allGuides.length))} className="border border-[hsl(42,65%,52%)]/45 px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[hsl(42,65%,58%)] transition-colors duration-200 hover:bg-[hsl(42,65%,52%)]/[0.08] hover:text-[hsl(42,65%,68%)]">
               {buttonLabels[locale].more} +5
             </button>
           )}
-
           {hasExpanded && (
-            <button
-              type="button"
-              onClick={() => setVisibleCount(INITIAL_GUIDES)}
-              className="px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]"
-            >
+            <button type="button" onClick={() => setVisibleCount(INITIAL_GUIDES)} className="px-5 py-3 text-xs font-semibold uppercase tracking-[0.16em] text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">
               {buttonLabels[locale].less}
             </button>
           )}
