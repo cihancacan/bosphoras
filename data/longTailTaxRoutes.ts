@@ -1,0 +1,67 @@
+import type { Locale } from '@/lib/i18n';
+
+export const longTailTaxRouteGroups: Array<Record<Locale, string>> = [
+  { fr: '/residence-fiscale-turquie-revenus-etrangers', en: '/en/turkey-tax-residence-foreign-income', ru: '/ru/nalogovaya-rezidentsiya-turtsiya-inostrannye-dohody', ar: '/ar/turkey-tax-residence-foreign-income' },
+  { fr: '/regime-non-dom-turquie-fiscalite', en: '/en/turkey-non-dom-tax-regime', ru: '/ru/turtsiya-non-dom-nalogovyy-rezhim', ar: '/ar/turkey-non-dom-tax-regime' },
+  { fr: '/expatrie-francais-turquie-fiscalite-revenus-etrangers', en: '/en/french-expat-turkey-tax-foreign-income', ru: '/ru/frantsuzskiy-expat-turtsiya-nalogi-inostrannye-dohody', ar: '/ar/french-expat-turkey-tax-foreign-income' },
+  { fr: '/impot-dividendes-etrangers-turquie', en: '/en/foreign-dividends-tax-turkey', ru: '/ru/nalog-dividendy-inostrannye-turtsiya', ar: '/ar/foreign-dividends-tax-turkey' },
+  { fr: '/plus-values-etrangeres-turquie-fiscalite', en: '/en/foreign-capital-gains-tax-turkey', ru: '/ru/inostrannye-prirosty-kapitala-turtsiya-nalogi', ar: '/ar/foreign-capital-gains-tax-turkey' },
+  { fr: '/heritage-turquie-fiscalite-1-pourcent-investisseurs', en: '/en/turkey-inheritance-tax-1-percent-investors', ru: '/ru/nasledstvo-turtsiya-nalog-1-protsent-investory', ar: '/ar/turkey-inheritance-tax-1-percent-investors' },
+  { fr: '/turcs-de-l-etranger-exoneration-fiscale-turquie', en: '/en/turks-abroad-turkey-tax-exemption', ru: '/ru/turki-za-rubezhom-nalogovaya-lgota-turtsiya', ar: '/ar/turks-abroad-turkey-tax-exemption' },
+  { fr: '/digital-nomad-turquie-fiscalite-revenus-etrangers', en: '/en/digital-nomad-turkey-tax-foreign-income', ru: '/ru/digital-nomad-turtsiya-nalogi-inostrannye-dohody', ar: '/ar/digital-nomad-turkey-tax-foreign-income' },
+  { fr: '/retraite-etrangere-turquie-fiscalite', en: '/en/foreign-pension-tax-turkey', ru: '/ru/inostrannaya-pensiya-turtsiya-nalogi', ar: '/ar/foreign-pension-tax-turkey' },
+  { fr: '/turquie-vs-italie-regime-non-dom-fiscalite', en: '/en/turkey-vs-italy-non-dom-tax-regime', ru: '/ru/turtsiya-vs-italiya-non-dom-nalogovyy-rezhim', ar: '/ar/turkey-vs-italy-non-dom-tax-regime' },
+];
+
+export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label: string }>> = {
+  fr: [
+    { href: '/residence-fiscale-turquie-revenus-etrangers', label: 'Résidence fiscale Turquie et revenus étrangers' },
+    { href: '/regime-non-dom-turquie-fiscalite', label: 'Régime non-dom Turquie : fiscalité des nouveaux résidents' },
+    { href: '/expatrie-francais-turquie-fiscalite-revenus-etrangers', label: 'Expatrié français en Turquie : fiscalité et revenus étrangers' },
+    { href: '/impot-dividendes-etrangers-turquie', label: 'Impôt sur les dividendes étrangers en Turquie' },
+    { href: '/plus-values-etrangeres-turquie-fiscalite', label: 'Plus-values étrangères en Turquie : fiscalité' },
+    { href: '/heritage-turquie-fiscalite-1-pourcent-investisseurs', label: 'Héritage en Turquie : fiscalité à 1 % pour investisseurs' },
+    { href: '/turcs-de-l-etranger-exoneration-fiscale-turquie', label: 'Turcs de l’étranger et exonération fiscale en Turquie' },
+    { href: '/digital-nomad-turquie-fiscalite-revenus-etrangers', label: 'Digital nomad en Turquie : fiscalité et revenus étrangers' },
+    { href: '/retraite-etrangere-turquie-fiscalite', label: 'Retraite étrangère en Turquie : fiscalité' },
+    { href: '/turquie-vs-italie-regime-non-dom-fiscalite', label: 'Turquie vs Italie : régime non-dom et fiscalité' },
+  ],
+  en: [
+    { href: '/en/turkey-tax-residence-foreign-income', label: 'Turkey tax residence and foreign income' },
+    { href: '/en/turkey-non-dom-tax-regime', label: 'Turkey non-dom regime: tax for new residents' },
+    { href: '/en/french-expat-turkey-tax-foreign-income', label: 'French expat in Turkey: tax and foreign income' },
+    { href: '/en/foreign-dividends-tax-turkey', label: 'Foreign dividends tax in Turkey' },
+    { href: '/en/foreign-capital-gains-tax-turkey', label: 'Foreign capital gains in Turkey: tax' },
+    { href: '/en/turkey-inheritance-tax-1-percent-investors', label: 'Turkey inheritance tax at 1% for investors' },
+    { href: '/en/turks-abroad-turkey-tax-exemption', label: 'Turks abroad and Turkey tax exemption' },
+    { href: '/en/digital-nomad-turkey-tax-foreign-income', label: 'Digital nomad in Turkey: tax and foreign income' },
+    { href: '/en/foreign-pension-tax-turkey', label: 'Foreign pension in Turkey: tax' },
+    { href: '/en/turkey-vs-italy-non-dom-tax-regime', label: 'Turkey vs Italy: non-dom regime and tax' },
+  ],
+  ru: [
+    { href: '/ru/nalogovaya-rezidentsiya-turtsiya-inostrannye-dohody', label: 'Налоговая резиденция Турции и иностранные доходы' },
+    { href: '/ru/turtsiya-non-dom-nalogovyy-rezhim', label: 'Режим non-dom в Турции: налоги для новых резидентов' },
+    { href: '/ru/frantsuzskiy-expat-turtsiya-nalogi-inostrannye-dohody', label: 'Французский экспат в Турции: налоги и иностранные доходы' },
+    { href: '/ru/nalog-dividendy-inostrannye-turtsiya', label: 'Налог на иностранные дивиденды в Турции' },
+    { href: '/ru/inostrannye-prirosty-kapitala-turtsiya-nalogi', label: 'Иностранные приросты капитала в Турции: налоги' },
+    { href: '/ru/nasledstvo-turtsiya-nalog-1-protsent-investory', label: 'Наследство в Турции: налог 1% для инвесторов' },
+    { href: '/ru/turki-za-rubezhom-nalogovaya-lgota-turtsiya', label: 'Турки за рубежом и налоговая льгота в Турции' },
+    { href: '/ru/digital-nomad-turtsiya-nalogi-inostrannye-dohody', label: 'Digital nomad в Турции: налоги и иностранные доходы' },
+    { href: '/ru/inostrannaya-pensiya-turtsiya-nalogi', label: 'Иностранная пенсия в Турции: налоги' },
+    { href: '/ru/turtsiya-vs-italiya-non-dom-nalogovyy-rezhim', label: 'Турция vs Италия: режим non-dom и налоги' },
+  ],
+  ar: [
+    { href: '/ar/turkey-tax-residence-foreign-income', label: 'الإقامة الضريبية في تركيا والدخل الأجنبي' },
+    { href: '/ar/turkey-non-dom-tax-regime', label: 'نظام non-dom في تركيا: ضرائب المقيمين الجدد' },
+    { href: '/ar/french-expat-turkey-tax-foreign-income', label: 'مغترب فرنسي في تركيا: الضرائب والدخل الأجنبي' },
+    { href: '/ar/foreign-dividends-tax-turkey', label: 'ضريبة الأرباح الأجنبية في تركيا' },
+    { href: '/ar/foreign-capital-gains-tax-turkey', label: 'المكاسب الرأسمالية الأجنبية في تركيا: الضرائب' },
+    { href: '/ar/turkey-inheritance-tax-1-percent-investors', label: 'الميراث في تركيا: ضريبة 1% للمستثمرين' },
+    { href: '/ar/turks-abroad-turkey-tax-exemption', label: 'الأتراك في الخارج والإعفاء الضريبي في تركيا' },
+    { href: '/ar/digital-nomad-turkey-tax-foreign-income', label: 'Digital nomad في تركيا: الضرائب والدخل الأجنبي' },
+    { href: '/ar/foreign-pension-tax-turkey', label: 'المعاش الأجنبي في تركيا: الضرائب' },
+    { href: '/ar/turkey-vs-italy-non-dom-tax-regime', label: 'تركيا vs إيطاليا: نظام non-dom والضرائب' },
+  ],
+};
+
+export const longTailTaxSitemapUrls = longTailTaxRouteGroups.flatMap((paths) => Object.values(paths).map((path) => `https://bosphoras.com${path}`));
