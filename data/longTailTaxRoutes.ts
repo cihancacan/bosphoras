@@ -3,7 +3,7 @@ import type { Locale } from '@/lib/i18n';
 export const longTailTaxRouteGroups: Array<Record<Locale, string>> = [
   { fr: '/residence-fiscale-turquie-revenus-etrangers', en: '/en/turkey-tax-residence-foreign-income', ru: '/ru/nalogovaya-rezidentsiya-turtsiya-inostrannye-dohody', ar: '/ar/turkey-tax-residence-foreign-income' },
   { fr: '/regime-non-dom-turquie-fiscalite', en: '/en/turkey-non-dom-tax-regime', ru: '/ru/turtsiya-non-dom-nalogovyy-rezhim', ar: '/ar/turkey-non-dom-tax-regime' },
-  { fr: '/expatrie-francais-turquie-fiscalite-revenus-etrangers', en: '/en/french-expat-turkey-tax-foreign-income', ru: '/ru/frantsuzskiy-expat-turtsiya-nalogi-inostrannye-dohody', ar: '/ar/french-expat-turkey-tax-foreign-income' },
+  { fr: '/expatrie-francais-turquie-fiscalite-revenus-etrangers', en: '/en/expat-tax-turkey-foreign-income', ru: '/ru/nalogi-dlya-ekspatov-v-turtsii-inostrannye-dohody', ar: '/ar/turkey-tax-for-arab-investors-foreign-income' },
   { fr: '/impot-dividendes-etrangers-turquie', en: '/en/foreign-dividends-tax-turkey', ru: '/ru/nalog-dividendy-inostrannye-turtsiya', ar: '/ar/foreign-dividends-tax-turkey' },
   { fr: '/plus-values-etrangeres-turquie-fiscalite', en: '/en/foreign-capital-gains-tax-turkey', ru: '/ru/inostrannye-prirosty-kapitala-turtsiya-nalogi', ar: '/ar/foreign-capital-gains-tax-turkey' },
   { fr: '/heritage-turquie-fiscalite-1-pourcent-investisseurs', en: '/en/turkey-inheritance-tax-1-percent-investors', ru: '/ru/nasledstvo-turtsiya-nalog-1-protsent-investory', ar: '/ar/turkey-inheritance-tax-1-percent-investors' },
@@ -29,7 +29,7 @@ export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label:
   en: [
     { href: '/en/turkey-tax-residence-foreign-income', label: 'Turkey tax residence and foreign income' },
     { href: '/en/turkey-non-dom-tax-regime', label: 'Turkey non-dom regime: tax for new residents' },
-    { href: '/en/french-expat-turkey-tax-foreign-income', label: 'French expat in Turkey: tax and foreign income' },
+    { href: '/en/expat-tax-turkey-foreign-income', label: 'Expat tax in Turkey: foreign income' },
     { href: '/en/foreign-dividends-tax-turkey', label: 'Foreign dividends tax in Turkey' },
     { href: '/en/foreign-capital-gains-tax-turkey', label: 'Foreign capital gains in Turkey: tax' },
     { href: '/en/turkey-inheritance-tax-1-percent-investors', label: 'Turkey inheritance tax at 1% for investors' },
@@ -41,7 +41,7 @@ export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label:
   ru: [
     { href: '/ru/nalogovaya-rezidentsiya-turtsiya-inostrannye-dohody', label: 'Налоговая резиденция Турции и иностранные доходы' },
     { href: '/ru/turtsiya-non-dom-nalogovyy-rezhim', label: 'Режим non-dom в Турции: налоги для новых резидентов' },
-    { href: '/ru/frantsuzskiy-expat-turtsiya-nalogi-inostrannye-dohody', label: 'Французский экспат в Турции: налоги и иностранные доходы' },
+    { href: '/ru/nalogi-dlya-ekspatov-v-turtsii-inostrannye-dohody', label: 'Налоги для экспатов в Турции: иностранные доходы' },
     { href: '/ru/nalog-dividendy-inostrannye-turtsiya', label: 'Налог на иностранные дивиденды в Турции' },
     { href: '/ru/inostrannye-prirosty-kapitala-turtsiya-nalogi', label: 'Иностранные приросты капитала в Турции: налоги' },
     { href: '/ru/nasledstvo-turtsiya-nalog-1-protsent-investory', label: 'Наследство в Турции: налог 1% для инвесторов' },
@@ -53,7 +53,7 @@ export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label:
   ar: [
     { href: '/ar/turkey-tax-residence-foreign-income', label: 'الإقامة الضريبية في تركيا والدخل الأجنبي' },
     { href: '/ar/turkey-non-dom-tax-regime', label: 'نظام non-dom في تركيا: ضرائب المقيمين الجدد' },
-    { href: '/ar/french-expat-turkey-tax-foreign-income', label: 'مغترب فرنسي في تركيا: الضرائب والدخل الأجنبي' },
+    { href: '/ar/turkey-tax-for-arab-investors-foreign-income', label: 'ضرائب تركيا للمستثمرين العرب: الدخل الأجنبي' },
     { href: '/ar/foreign-dividends-tax-turkey', label: 'ضريبة الأرباح الأجنبية في تركيا' },
     { href: '/ar/foreign-capital-gains-tax-turkey', label: 'المكاسب الرأسمالية الأجنبية في تركيا: الضرائب' },
     { href: '/ar/turkey-inheritance-tax-1-percent-investors', label: 'الميراث في تركيا: ضريبة 1% للمستثمرين' },
