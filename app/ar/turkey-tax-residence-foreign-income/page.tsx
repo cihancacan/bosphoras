@@ -1,3 +1,7 @@
-import { getLongTailTaxMetadata, LongTailTaxSeoPage } from '@/components/seo/TaxLongTailSeoPage';
-export const metadata = getLongTailTaxMetadata('taxResidenceForeignIncome', 'ar');
-export default function Page() { return <LongTailTaxSeoPage pageKey="taxResidenceForeignIncome" locale="ar" />; }
+import { getTaxResidenceForeignIncomeClientIntlMetadata, TaxResidenceForeignIncomeClientIntlPage } from '@/components/seo/TaxResidenceForeignIncomeClientIntlPage';
+
+export const metadata = getTaxResidenceForeignIncomeClientIntlMetadata('ar');
+
+export default function Page() {
+  return <TaxResidenceForeignIncomeClientIntlPage locale="ar" />;
+}
