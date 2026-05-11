@@ -1,7 +1,7 @@
-import { getExpatTurkeyTaxClientMetadata, ExpatTurkeyTaxClientPage } from '@/components/seo/ExpatTurkeyTaxClientPage';
+import { getMarketExpatTurkeyTaxMetadata, MarketExpatTurkeyTaxClientPage } from '@/components/seo/MarketExpatTurkeyTaxClientPage';
 
-export const metadata = getExpatTurkeyTaxClientMetadata('fr');
+export const metadata = getMarketExpatTurkeyTaxMetadata('fr');
 
 export default function Page() {
-  return <ExpatTurkeyTaxClientPage locale="fr" />;
+  return <MarketExpatTurkeyTaxClientPage locale="fr" />;
 }
