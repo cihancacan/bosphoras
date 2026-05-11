@@ -1,3 +1,5 @@
-import { getLongTailTaxMetadata, LongTailTaxSeoPage } from '@/components/seo/TaxLongTailSeoPage';
-export const metadata = getLongTailTaxMetadata('frenchExpatTax', 'ar');
-export default function Page() { return <LongTailTaxSeoPage pageKey="frenchExpatTax" locale="ar" />; }
+import { redirect } from 'next/navigation';
+
+export default function Page() {
+  redirect('/ar/turkey-tax-for-arab-investors-foreign-income');
+}
