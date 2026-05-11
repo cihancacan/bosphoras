@@ -1,3 +1,7 @@
-import { getLongTailTaxMetadata, LongTailTaxSeoPage } from '@/components/seo/TaxLongTailSeoPage';
-export const metadata = getLongTailTaxMetadata('nonDomTurkey', 'ru');
-export default function Page() { return <LongTailTaxSeoPage pageKey="nonDomTurkey" locale="ru" />; }
+import { getNonDomTurkeyClientMetadata, NonDomTurkeyClientPage } from '@/components/seo/NonDomTurkeyClientPage';
+
+export const metadata = getNonDomTurkeyClientMetadata('ru');
+
+export default function Page() {
+  return <NonDomTurkeyClientPage locale="ru" />;
+}
