@@ -1,3 +1,7 @@
-import { getLongTailTaxMetadata, LongTailTaxSeoPage } from '@/components/seo/TaxLongTailSeoPage';
-export const metadata = getLongTailTaxMetadata('foreignDividends', 'en');
-export default function Page() { return <LongTailTaxSeoPage pageKey="foreignDividends" locale="en" />; }
+import { getForeignDividendsTaxMetadata, ForeignDividendsTaxClientPage } from '@/components/seo/ForeignDividendsTaxClientPage';
+
+export const metadata = getForeignDividendsTaxMetadata('en');
+
+export default function Page() {
+  return <ForeignDividendsTaxClientPage locale="en" />;
+}
