@@ -8,6 +8,8 @@ import { longTailTaxFooterLinks } from '@/data/longTailTaxRoutes';
 
 type SearchOverlayProps = { locale: Locale; open: boolean; onClose: () => void };
 type SearchItem = { href: string; label: string; text: string; loading?: boolean };
+type IndexedItem = SearchItem & { fullText: string; loaded: boolean };
+type RankedItem = IndexedItem & { score: number; matchedTerms: string[] };
 
 const normalize = (value: string) =>
   value
