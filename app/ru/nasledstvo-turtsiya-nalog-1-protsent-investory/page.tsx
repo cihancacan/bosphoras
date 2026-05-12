@@ -1,3 +1,7 @@
-import { getLongTailTaxMetadata, LongTailTaxSeoPage } from '@/components/seo/TaxLongTailSeoPage';
-export const metadata = getLongTailTaxMetadata('inheritanceOnePercent', 'ru');
-export default function Page() { return <LongTailTaxSeoPage pageKey="inheritanceOnePercent" locale="ru" />; }
+import { getInheritanceTaxTurkeyMetadata, InheritanceTaxTurkeyClientPage } from '@/components/seo/InheritanceTaxTurkeyClientPage';
+
+export const metadata = getInheritanceTaxTurkeyMetadata('ru');
+
+export default function Page() {
+  return <InheritanceTaxTurkeyClientPage locale="ru" />;
+}
