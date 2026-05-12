@@ -11,6 +11,7 @@ export const longTailTaxRouteGroups: Array<Record<Locale, string>> = [
   { fr: '/digital-nomad-turquie-fiscalite-revenus-etrangers', en: '/en/digital-nomad-turkey-tax-foreign-income', ru: '/ru/digital-nomad-turtsiya-nalogi-inostrannye-dohody', ar: '/ar/digital-nomad-turkey-tax-foreign-income' },
   { fr: '/retraite-etrangere-turquie-fiscalite', en: '/en/foreign-pension-tax-turkey', ru: '/ru/inostrannaya-pensiya-turtsiya-nalogi', ar: '/ar/foreign-pension-tax-turkey' },
   { fr: '/turquie-vs-italie-regime-non-dom-fiscalite', en: '/en/turkey-vs-italy-non-dom-tax-regime', ru: '/ru/turtsiya-vs-italiya-non-dom-nalogovyy-rezhim', ar: '/ar/turkey-vs-italy-non-dom-tax-regime' },
+  { fr: '/turquie-vs-dubai-fiscalite-revenus-etrangers', en: '/en/turkey-vs-dubai-tax-residence-foreign-income', ru: '/ru/turtsiya-vs-dubay-nalogi-inostrannye-dohody', ar: '/ar/turkey-vs-dubai-tax-residence-foreign-income' },
 ];
 
 export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label: string }>> = {
@@ -25,6 +26,7 @@ export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label:
     { href: '/digital-nomad-turquie-fiscalite-revenus-etrangers', label: 'Digital nomad en Turquie : fiscalité et revenus étrangers' },
     { href: '/retraite-etrangere-turquie-fiscalite', label: 'Retraite étrangère en Turquie : fiscalité' },
     { href: '/turquie-vs-italie-regime-non-dom-fiscalite', label: 'Turquie vs Italie : régime non-dom et fiscalité' },
+    { href: '/turquie-vs-dubai-fiscalite-revenus-etrangers', label: 'Turquie vs Dubaï : fiscalité et revenus étrangers' },
   ],
   en: [
     { href: '/en/turkey-tax-residence-foreign-income', label: 'Turkey tax residence and foreign income' },
@@ -37,6 +39,7 @@ export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label:
     { href: '/en/digital-nomad-turkey-tax-foreign-income', label: 'Digital nomad in Turkey: tax and foreign income' },
     { href: '/en/foreign-pension-tax-turkey', label: 'Foreign pension in Turkey: tax' },
     { href: '/en/turkey-vs-italy-non-dom-tax-regime', label: 'Turkey vs Italy: non-dom regime and tax' },
+    { href: '/en/turkey-vs-dubai-tax-residence-foreign-income', label: 'Turkey vs Dubai: tax residence and foreign income' },
   ],
   ru: [
     { href: '/ru/nalogovaya-rezidentsiya-turtsiya-inostrannye-dohody', label: 'Налоговая резиденция Турции и иностранные доходы' },
@@ -49,6 +52,7 @@ export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label:
     { href: '/ru/digital-nomad-turtsiya-nalogi-inostrannye-dohody', label: 'Digital nomad в Турции: налоги и иностранные доходы' },
     { href: '/ru/inostrannaya-pensiya-turtsiya-nalogi', label: 'Иностранная пенсия в Турции: налоги' },
     { href: '/ru/turtsiya-vs-italiya-non-dom-nalogovyy-rezhim', label: 'Турция vs Италия: режим non-dom и налоги' },
+    { href: '/ru/turtsiya-vs-dubay-nalogi-inostrannye-dohody', label: 'Турция vs Дубай: налоги и иностранные доходы' },
   ],
   ar: [
     { href: '/ar/turkey-tax-residence-foreign-income', label: 'الإقامة الضريبية في تركيا والدخل الأجنبي' },
@@ -61,6 +65,7 @@ export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label:
     { href: '/ar/digital-nomad-turkey-tax-foreign-income', label: 'Digital nomad في تركيا: الضرائب والدخل الأجنبي' },
     { href: '/ar/foreign-pension-tax-turkey', label: 'المعاش الأجنبي في تركيا: الضرائب' },
     { href: '/ar/turkey-vs-italy-non-dom-tax-regime', label: 'تركيا vs إيطاليا: نظام non-dom والضرائب' },
+    { href: '/ar/turkey-vs-dubai-tax-residence-foreign-income', label: 'تركيا vs دبي: الضرائب والإقامة والدخل الأجنبي' },
   ],
 };
 
