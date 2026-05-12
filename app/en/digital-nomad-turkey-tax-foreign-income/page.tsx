@@ -1,3 +1,7 @@
-import { getLongTailTaxMetadata, LongTailTaxSeoPage } from '@/components/seo/TaxLongTailSeoPage';
-export const metadata = getLongTailTaxMetadata('digitalNomadTax', 'en');
-export default function Page() { return <LongTailTaxSeoPage pageKey="digitalNomadTax" locale="en" />; }
+import { getDigitalNomadTaxMetadata, DigitalNomadTaxClientPage } from '@/components/seo/DigitalNomadTaxClientPage';
+
+export const metadata = getDigitalNomadTaxMetadata('en');
+
+export default function Page() {
+  return <DigitalNomadTaxClientPage locale="en" />;
+}
