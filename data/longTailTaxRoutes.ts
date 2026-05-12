@@ -15,6 +15,7 @@ export const longTailTaxRouteGroups: Array<Record<Locale, string>> = [
   { fr: '/turquie-vs-portugal-fiscalite-revenus-etrangers', en: '/en/turkey-vs-portugal-tax-residence-foreign-income', ru: '/ru/turtsiya-vs-portugaliya-nalogi-inostrannye-dohody', ar: '/ar/turkey-vs-portugal-tax-residence-foreign-income' },
   { fr: '/turquie-vs-chypre-fiscalite-non-dom-revenus-etrangers', en: '/en/turkey-vs-cyprus-non-dom-tax-residence', ru: '/ru/turtsiya-vs-kipr-non-dom-nalogi-rezidentsiya', ar: '/ar/turkey-vs-cyprus-non-dom-tax-residence' },
   { fr: '/turquie-vs-malte-fiscalite-non-dom-revenus-etrangers', en: '/en/turkey-vs-malta-non-dom-tax-residence', ru: '/ru/turtsiya-vs-malta-non-dom-nalogi-rezidentsiya', ar: '/ar/turkey-vs-malta-non-dom-tax-residence' },
+  { fr: '/turquie-vs-suisse-fiscalite-revenus-etrangers', en: '/en/turkey-vs-switzerland-tax-residence-foreign-income', ru: '/ru/turtsiya-vs-shveytsariya-nalogi-rezidentsiya', ar: '/ar/turkey-vs-switzerland-tax-residence-foreign-income' },
 ];
 
 export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label: string }>> = {
@@ -33,6 +34,7 @@ export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label:
     { href: '/turquie-vs-portugal-fiscalite-revenus-etrangers', label: 'Turquie vs Portugal : fiscalité et revenus étrangers' },
     { href: '/turquie-vs-chypre-fiscalite-non-dom-revenus-etrangers', label: 'Turquie vs Chypre : fiscalité non-dom et revenus étrangers' },
     { href: '/turquie-vs-malte-fiscalite-non-dom-revenus-etrangers', label: 'Turquie vs Malte : fiscalité non-dom et revenus étrangers' },
+    { href: '/turquie-vs-suisse-fiscalite-revenus-etrangers', label: 'Turquie vs Suisse : fiscalité et revenus étrangers' },
   ],
   en: [
     { href: '/en/turkey-tax-residence-foreign-income', label: 'Turkey tax residence and foreign income' },
@@ -49,6 +51,7 @@ export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label:
     { href: '/en/turkey-vs-portugal-tax-residence-foreign-income', label: 'Turkey vs Portugal: tax residence and foreign income' },
     { href: '/en/turkey-vs-cyprus-non-dom-tax-residence', label: 'Turkey vs Cyprus: non-dom tax residence' },
     { href: '/en/turkey-vs-malta-non-dom-tax-residence', label: 'Turkey vs Malta: non-dom tax residence' },
+    { href: '/en/turkey-vs-switzerland-tax-residence-foreign-income', label: 'Turkey vs Switzerland: tax residence and foreign income' },
   ],
   ru: [
     { href: '/ru/nalogovaya-rezidentsiya-turtsiya-inostrannye-dohody', label: 'Налоговая резиденция Турции и иностранные доходы' },
@@ -65,6 +68,7 @@ export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label:
     { href: '/ru/turtsiya-vs-portugaliya-nalogi-inostrannye-dohody', label: 'Турция vs Португалия: налоги и иностранные доходы' },
     { href: '/ru/turtsiya-vs-kipr-non-dom-nalogi-rezidentsiya', label: 'Турция vs Кипр: non-dom, налоги и резиденция' },
     { href: '/ru/turtsiya-vs-malta-non-dom-nalogi-rezidentsiya', label: 'Турция vs Мальта: non-dom, налоги и резиденция' },
+    { href: '/ru/turtsiya-vs-shveytsariya-nalogi-rezidentsiya', label: 'Турция vs Швейцария: налоги и резиденция' },
   ],
   ar: [
     { href: '/ar/turkey-tax-residence-foreign-income', label: 'الإقامة الضريبية في تركيا والدخل الأجنبي' },
@@ -81,6 +85,7 @@ export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label:
     { href: '/ar/turkey-vs-portugal-tax-residence-foreign-income', label: 'تركيا vs البرتغال: الضرائب والإقامة والدخل الأجنبي' },
     { href: '/ar/turkey-vs-cyprus-non-dom-tax-residence', label: 'تركيا vs قبرص: non-dom والضرائب والإقامة' },
     { href: '/ar/turkey-vs-malta-non-dom-tax-residence', label: 'تركيا vs مالطا: non-dom والضرائب والإقامة' },
+    { href: '/ar/turkey-vs-switzerland-tax-residence-foreign-income', label: 'تركيا vs سويسرا: الضرائب والإقامة والدخل الأجنبي' },
   ],
 };
 
