@@ -17,6 +17,7 @@ export const longTailTaxRouteGroups: Array<Record<Locale, string>> = [
   { fr: '/turquie-vs-malte-fiscalite-non-dom-revenus-etrangers', en: '/en/turkey-vs-malta-non-dom-tax-residence', ru: '/ru/turtsiya-vs-malta-non-dom-nalogi-rezidentsiya', ar: '/ar/turkey-vs-malta-non-dom-tax-residence' },
   { fr: '/turquie-vs-suisse-fiscalite-revenus-etrangers', en: '/en/turkey-vs-switzerland-tax-residence-foreign-income', ru: '/ru/turtsiya-vs-shveytsariya-nalogi-rezidentsiya', ar: '/ar/turkey-vs-switzerland-tax-residence-foreign-income' },
   { fr: '/turquie-vs-royaume-uni-fin-non-dom-fiscalite', en: '/en/turkey-vs-uk-non-dom-fig-tax-regime', ru: '/ru/turtsiya-vs-velikobritaniya-non-dom-fig-nalogi', ar: '/ar/turkey-vs-uk-non-dom-fig-tax-regime' },
+  { fr: '/turquie-vs-monaco-fiscalite-revenus-etrangers', en: '/en/turkey-vs-monaco-tax-residence-foreign-income', ru: '/ru/turtsiya-vs-monako-nalogi-rezidentsiya', ar: '/ar/turkey-vs-monaco-tax-residence-foreign-income' },
 ];
 
 export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label: string }>> = {
@@ -37,6 +38,7 @@ export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label:
     { href: '/turquie-vs-malte-fiscalite-non-dom-revenus-etrangers', label: 'Turquie vs Malte : fiscalité non-dom et revenus étrangers' },
     { href: '/turquie-vs-suisse-fiscalite-revenus-etrangers', label: 'Turquie vs Suisse : fiscalité et revenus étrangers' },
     { href: '/turquie-vs-royaume-uni-fin-non-dom-fiscalite', label: 'Turquie vs Royaume-Uni : fin du non-dom et fiscalité' },
+    { href: '/turquie-vs-monaco-fiscalite-revenus-etrangers', label: 'Turquie vs Monaco : fiscalité et patrimoine' },
   ],
   en: [
     { href: '/en/turkey-tax-residence-foreign-income', label: 'Turkey tax residence and foreign income' },
@@ -55,6 +57,7 @@ export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label:
     { href: '/en/turkey-vs-malta-non-dom-tax-residence', label: 'Turkey vs Malta: non-dom tax residence' },
     { href: '/en/turkey-vs-switzerland-tax-residence-foreign-income', label: 'Turkey vs Switzerland: tax residence and foreign income' },
     { href: '/en/turkey-vs-uk-non-dom-fig-tax-regime', label: 'Turkey vs UK: non-dom reform and FIG regime' },
+    { href: '/en/turkey-vs-monaco-tax-residence-foreign-income', label: 'Turkey vs Monaco: tax residence and wealth planning' },
   ],
   ru: [
     { href: '/ru/nalogovaya-rezidentsiya-turtsiya-inostrannye-dohody', label: 'Налоговая резиденция Турции и иностранные доходы' },
@@ -73,6 +76,7 @@ export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label:
     { href: '/ru/turtsiya-vs-malta-non-dom-nalogi-rezidentsiya', label: 'Турция vs Мальта: non-dom, налоги и резиденция' },
     { href: '/ru/turtsiya-vs-shveytsariya-nalogi-rezidentsiya', label: 'Турция vs Швейцария: налоги и резиденция' },
     { href: '/ru/turtsiya-vs-velikobritaniya-non-dom-fig-nalogi', label: 'Турция vs Великобритания: non-dom, FIG и налоги' },
+    { href: '/ru/turtsiya-vs-monako-nalogi-rezidentsiya', label: 'Турция vs Монако: налоги и капитал' },
   ],
   ar: [
     { href: '/ar/turkey-tax-residence-foreign-income', label: 'الإقامة الضريبية في تركيا والدخل الأجنبي' },
@@ -91,6 +95,7 @@ export const longTailTaxFooterLinks: Record<Locale, Array<{ href: string; label:
     { href: '/ar/turkey-vs-malta-non-dom-tax-residence', label: 'تركيا vs مالطا: non-dom والضرائب والإقامة' },
     { href: '/ar/turkey-vs-switzerland-tax-residence-foreign-income', label: 'تركيا vs سويسرا: الضرائب والإقامة والدخل الأجنبي' },
     { href: '/ar/turkey-vs-uk-non-dom-fig-tax-regime', label: 'تركيا vs بريطانيا: non-dom و FIG والضرائب' },
+    { href: '/ar/turkey-vs-monaco-tax-residence-foreign-income', label: 'تركيا vs موناكو: الضرائب والإقامة والثروة' },
   ],
 };
 
