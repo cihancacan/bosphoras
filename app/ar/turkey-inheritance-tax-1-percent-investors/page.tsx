@@ -1,3 +1,5 @@
-import { getLongTailTaxMetadata, LongTailTaxSeoPage } from '@/components/seo/TaxLongTailSeoPage';
-export const metadata = getLongTailTaxMetadata('inheritanceOnePercent', 'ar');
-export default function Page() { return <LongTailTaxSeoPage pageKey="inheritanceOnePercent" locale="ar" />; }
+import { redirect } from 'next/navigation';
+
+export default function Page() {
+  redirect('/ar/turkey-inheritance-tax-1-percent-arab-investors');
+}
