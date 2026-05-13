@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
-import type { Locale } from '@/lib/i18n';
 import { t, localeDir } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
 import {
@@ -10,6 +9,7 @@ import {
   websiteSchema,
 } from '@/lib/seo';
 import { siteUrl } from '@/lib/routes';
+import { formatPricingText } from '@/lib/pricingText';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { Breadcrumbs } from './Breadcrumbs';
@@ -27,6 +27,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
   const isRtl = localeDir[locale] === 'rtl';
   const ArrowIcon = isRtl ? ArrowLeft : ArrowRight;
   const isFormPage = page.id === 'private-assessment' || page.id === 'membership-application';
+  const priceText = (text: string) => formatPricingText(text, locale);
 
   const breadcrumbHomeName =
     locale === 'fr'
@@ -42,7 +43,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
       ? [{ name: breadcrumbHomeName, href: getLocalePath(locale, '/') }]
       : [
           { name: breadcrumbHomeName, href: getLocalePath(locale, '/') },
-          { name: page.h1, href: getLocalePath(locale, page.slug) },
+          { name: priceText(page.h1), href: getLocalePath(locale, page.slug) },
         ];
 
   const fullUrl = `${siteUrl}${getLocalePath(locale, page.slug)}`;
@@ -52,9 +53,9 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
       const linked = getPage(locale, link.pageId);
       if (!linked) return null;
       return {
-        label: link.label,
+        label: priceText(link.label),
         href: getLocalePath(locale, linked.slug),
-        intro: linked.shortIntro,
+        intro: priceText(linked.shortIntro),
       };
     })
     .filter((l): l is { label: string; href: string; intro: string } => l !== null);
@@ -62,6 +63,11 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
   const ctaHref = page.cta.href.startsWith('http')
     ? page.cta.href
     : getLocalePath(locale, page.cta.href);
+
+  const formattedFaqs = page.faqs?.map((faq) => ({
+    question: priceText(faq.question),
+    answer: priceText(faq.answer),
+  }));
 
   return (
     <main dir={localeDir[locale]} className="min-h-screen bg-[hsl(45,30%,98%)]">
@@ -73,15 +79,15 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
       {page.jsonLdType === 'Service' && (
         <StructuredData
           data={serviceSchema({
-            name: page.h1,
-            description: page.metaDescription,
+            name: priceText(page.h1),
+            description: priceText(page.metaDescription),
             url: fullUrl,
           })}
         />
       )}
 
-      {page.faqs && page.faqs.length > 0 && (
-        <StructuredData data={faqSchema(page.faqs)} />
+      {formattedFaqs && formattedFaqs.length > 0 && (
+        <StructuredData data={faqSchema(formattedFaqs)} />
       )}
 
       <section className="pt-32 pb-12 md:pt-40 md:pb-16 border-b border-[hsl(42,15%,88%)]">
@@ -98,10 +104,10 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
               {locale === 'ar' && 'بوسفوراس · مكتب خاص'}
             </p>
             <h1 className="text-[hsl(220,45%,12%)] font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.06] tracking-tight mb-8">
-              {page.h1}
+              {priceText(page.h1)}
             </h1>
             <p className="text-[hsl(220,15%,30%)] text-lg md:text-xl leading-relaxed max-w-3xl font-light">
-              {page.shortIntro}
+              {priceText(page.shortIntro)}
             </p>
           </div>
         </div>
@@ -120,10 +126,10 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
                     <span className="w-8 h-px bg-[hsl(42,65%,52%)]/50" aria-hidden="true" />
                   </div>
                   <h2 className="text-[hsl(220,45%,12%)] font-serif text-2xl md:text-3xl leading-tight tracking-tight mb-5">
-                    {section.heading}
+                    {priceText(section.heading)}
                   </h2>
                   <p className="text-[hsl(220,15%,28%)] text-base md:text-lg leading-relaxed mb-5">
-                    {section.body}
+                    {priceText(section.body)}
                   </p>
                   {section.bullets && section.bullets.length > 0 && (
                     <ul className="space-y-2.5 mt-4">
@@ -138,7 +144,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
                             className="text-[hsl(42,65%,52%)] mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[hsl(42,65%,52%)]"
                             aria-hidden="true"
                           />
-                          <span>{bullet}</span>
+                          <span>{priceText(bullet)}</span>
                         </li>
                       ))}
                     </ul>
@@ -172,7 +178,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
                   href={ctaHref}
                   className="inline-flex items-center gap-2 text-[hsl(42,65%,68%)] text-xs tracking-[0.2em] uppercase font-semibold hover:text-[hsl(42,65%,78%)] transition-colors duration-200 border-b border-[hsl(42,65%,68%)]/40 pb-1"
                 >
-                  {page.cta.label}
+                  {priceText(page.cta.label)}
                   <ArrowIcon size={14} strokeWidth={1.5} aria-hidden="true" />
                 </Link>
               </div>
@@ -216,7 +222,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
         />
       )}
 
-      {page.faqs && page.faqs.length > 0 && (
+      {formattedFaqs && formattedFaqs.length > 0 && (
         <section className="py-16 md:py-24 bg-[hsl(45,25%,94%)] border-y border-[hsl(42,15%,86%)]">
           <div className="container-editorial">
             <div className="max-w-3xl mb-12">
@@ -231,7 +237,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
               </h2>
             </div>
             <div className="max-w-3xl divide-y divide-[hsl(42,15%,82%)]">
-              {page.faqs.map((faq, idx) => (
+              {formattedFaqs.map((faq, idx) => (
                 <details key={idx} className="group py-6">
                   <summary className="flex items-start justify-between gap-6 cursor-pointer list-none">
                     <h3 className="font-serif text-lg md:text-xl text-[hsl(220,45%,12%)] leading-snug">
@@ -277,7 +283,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
             href={ctaHref}
             className="inline-flex items-center gap-2 px-10 py-4 bg-[hsl(42,65%,52%)] text-[hsl(220,45%,8%)] text-xs tracking-[0.2em] uppercase font-semibold hover:bg-[hsl(42,65%,62%)] transition-all duration-300"
           >
-            {page.cta.label}
+            {priceText(page.cta.label)}
             <ArrowIcon size={14} strokeWidth={1.5} aria-hidden="true" />
           </Link>
           <p className="text-[hsl(220,10%,45%)] text-xs tracking-[0.25em] uppercase mt-10">
