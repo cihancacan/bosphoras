@@ -34,8 +34,8 @@ export function privateDeskStartingText(locale: Locale) {
   const amount = getPricingAmount('privateDesk');
   if (locale === 'fr') return `à partir de ${amount} ${annualPeriod.fr}`;
   if (locale === 'en') return `from ${amount} ${annualPeriod.en}`;
-  if (locale === 'ru') return `from ${amount} ${annualPeriod.ru}`;
-  return `from ${amount} ${annualPeriod.ar}`;
+  if (locale === 'ru') return `от ${amount} ${annualPeriod.ru}`;
+  return `ابتداءً من ${amount} ${annualPeriod.ar}`;
 }
 
 export function formatPricingText(text: string, locale: Locale) {
