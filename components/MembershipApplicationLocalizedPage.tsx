@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import {
   ArrowRight,
-  BadgeCheck,
   Globe,
   Lock,
   ShieldCheck,
@@ -12,6 +11,7 @@ import type { Locale } from '@/lib/i18n';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { BosphorasMembershipForm } from '@/components/BosphorasForms';
+import { annualAdmissionLine, monthlyRetainerLine, privateDeskStartingText, formatPricingText } from '@/lib/pricingText';
 
 type Copy = {
   currentPath: string;
@@ -33,6 +33,14 @@ type Copy = {
   classicHref: string;
 };
 
+function priceKeyPoints(locale: Locale, items: string[]) {
+  return items.map((item) =>
+    item
+      .replace('{annualAdmissionLine}', annualAdmissionLine(locale))
+      .replace('{monthlyRetainerLine}', monthlyRetainerLine(locale))
+  );
+}
+
 const copies: Record<Locale, Copy> = {
   fr: {
     currentPath: '/adhesion/demande-membre',
@@ -44,8 +52,8 @@ const copies: Record<Locale, Copy> = {
     keyPoints: [
       'Sur parrainage, recommandation ou validation du profil.',
       'Une seule adhésion. Un seul niveau de service.',
-      'Admission annuelle : 10 000 USD.',
-      'Retainer mensuel : 1 000 USD / mois.',
+      '{annualAdmissionLine}.',
+      '{monthlyRetainerLine}.',
       'Prestations externes, honoraires professionnels et réservations facturés séparément.',
     ],
     confidential: 'Candidature confidentielle',
@@ -55,7 +63,7 @@ const copies: Record<Locale, Copy> = {
     accessParagraphs: [
       'Bosphoras Private Access est un accès privé à un bureau de coordination, d’introduction et d’exécution en Turquie.',
       'L’adhésion donne accès au traitement prioritaire, aux introductions qualifiées et à la coordination confidentielle. Les prestations externes, honoraires de professionnels, réservations, transports, hôtels, événements et frais spécifiques sont facturés séparément.',
-      'Pour les clients qui souhaitent un accompagnement sans statut membre, Bosphoras Private Desk peut être proposé à partir de 6 000 USD / an ou sur devis personnalisé.',
+      'Pour les clients qui souhaitent un accompagnement sans statut membre, Bosphoras Private Desk peut être proposé {privateDeskStarting} ou sur devis personnalisé.',
     ],
     cards: [
       { icon: 'user', title: 'Sélection', text: 'La candidature est étudiée selon le profil, l’intention et la compatibilité avec notre réseau.' },
@@ -63,7 +71,7 @@ const copies: Record<Locale, Copy> = {
       { icon: 'sparkles', title: 'Accès', text: 'Un bureau privé pour coordonner les bons interlocuteurs en Turquie avec priorité et continuité.' },
     ],
     classicTitle: 'Une demande classique ?',
-    classicText: 'Si vous souhaitez un accompagnement sans accès membre, le Private Desk démarre à partir de 6 000 USD / an ou sur devis personnalisé.',
+    classicText: 'Si vous souhaitez un accompagnement sans accès membre, le Private Desk démarre {privateDeskStarting} ou sur devis personnalisé.',
     classicButton: 'Demande classique',
     classicHref: '/diagnostic-prive',
   },
@@ -77,8 +85,8 @@ const copies: Record<Locale, Copy> = {
     keyPoints: [
       'By referral, recommendation or profile validation.',
       'One membership. One level of service.',
-      'Annual admission: 10,000 USD.',
-      'Monthly retainer: 1,000 USD / month.',
+      '{annualAdmissionLine}.',
+      '{monthlyRetainerLine}.',
       'External services, professional fees and reservations are billed separately.',
     ],
     confidential: 'Confidential application',
@@ -88,7 +96,7 @@ const copies: Record<Locale, Copy> = {
     accessParagraphs: [
       'Bosphoras Private Access is private access to a coordination, introduction and execution office in Turkey.',
       'Membership gives access to priority handling, qualified introductions and confidential coordination. External services, professional fees, reservations, transport, hotels, events and specific costs are billed separately.',
-      'For clients who want support without member status, Bosphoras Private Desk can be offered from 6,000 USD / year or by tailored quote.',
+      'For clients who want support without member status, Bosphoras Private Desk can be offered {privateDeskStarting} or by tailored quote.',
     ],
     cards: [
       { icon: 'user', title: 'Selection', text: 'The application is reviewed according to profile, intention and compatibility with our network.' },
@@ -96,7 +104,7 @@ const copies: Record<Locale, Copy> = {
       { icon: 'sparkles', title: 'Access', text: 'A private office to coordinate the right contacts in Turkey with priority and continuity.' },
     ],
     classicTitle: 'A classic request?',
-    classicText: 'If you want support without member access, Private Desk starts from 6,000 USD / year or by tailored quote.',
+    classicText: 'If you want support without member access, Private Desk starts {privateDeskStarting} or by tailored quote.',
     classicButton: 'Classic request',
     classicHref: '/en/private-assessment',
   },
@@ -110,8 +118,8 @@ const copies: Record<Locale, Copy> = {
     keyPoints: [
       'По рекомендации, представлению или после валидации профиля.',
       'Одно членство. Один уровень сервиса.',
-      'Ежегодный вступительный взнос: 10 000 USD.',
-      'Ежемесячный retainer: 1 000 USD / месяц.',
+      '{annualAdmissionLine}.',
+      '{monthlyRetainerLine}.',
       'Внешние услуги, гонорары специалистов и бронирования оплачиваются отдельно.',
     ],
     confidential: 'Конфиденциальная заявка',
@@ -121,7 +129,7 @@ const copies: Record<Locale, Copy> = {
     accessParagraphs: [
       'Bosphoras Private Access — это частный доступ к офису координации, интродукций и исполнения в Турции.',
       'Членство даёт доступ к приоритетной обработке, квалифицированным знакомствам и конфиденциальной координации. Внешние услуги, гонорары профессионалов, бронирования, транспорт, отели, мероприятия и специальные расходы оплачиваются отдельно.',
-      'Для клиентов, которым нужно сопровождение без статуса участника, Bosphoras Private Desk может быть предложен от 6 000 USD / год или по индивидуальному предложению.',
+      'Для клиентов, которым нужно сопровождение без статуса участника, Bosphoras Private Desk может быть предложен {privateDeskStarting} или по индивидуальному предложению.',
     ],
     cards: [
       { icon: 'user', title: 'Отбор', text: 'Заявка рассматривается по профилю, намерению и совместимости с нашей сетью.' },
@@ -129,7 +137,7 @@ const copies: Record<Locale, Copy> = {
       { icon: 'sparkles', title: 'Доступ', text: 'Частный офис для координации правильных контактов в Турции с приоритетом и непрерывностью.' },
     ],
     classicTitle: 'Классический запрос?',
-    classicText: 'Если вам нужно сопровождение без членского доступа, Private Desk начинается от 6 000 USD / год или по индивидуальному предложению.',
+    classicText: 'Если вам нужно сопровождение без членского доступа, Private Desk начинается {privateDeskStarting} или по индивидуальному предложению.',
     classicButton: 'Классический запрос',
     classicHref: '/ru/chastnaya-konsultatsiya',
   },
@@ -143,8 +151,8 @@ const copies: Record<Locale, Copy> = {
     keyPoints: [
       'عن طريق مُرشح أو توصية أو اعتماد الملف.',
       'عضوية واحدة. مستوى خدمة واحد.',
-      'رسوم القبول السنوية: 10,000 USD.',
-      'Retainer شهري: 1,000 USD / شهر.',
+      '{annualAdmissionLine}.',
+      '{monthlyRetainerLine}.',
       'الخدمات الخارجية وأتعاب المهنيين والحجوزات تُفوتر بشكل منفصل.',
     ],
     confidential: 'طلب سري',
@@ -154,7 +162,7 @@ const copies: Record<Locale, Copy> = {
     accessParagraphs: [
       'Bosphoras Private Access هو وصول خاص إلى مكتب تنسيق وتعارف وتنفيذ في تركيا.',
       'تمنح العضوية إمكانية الوصول إلى معالجة أولوية وتعارفات مؤهلة وتنسيق سري. الخدمات الخارجية وأتعاب المهنيين والحجوزات والنقل والفنادق والفعاليات والمصاريف الخاصة تُفوتر بشكل منفصل.',
-      'للعملاء الذين يريدون دعماً بدون صفة عضو، يمكن تقديم Bosphoras Private Desk ابتداءً من 6,000 USD / سنة أو بعرض مخصص.',
+      'للعملاء الذين يريدون دعماً بدون صفة عضو، يمكن تقديم Bosphoras Private Desk {privateDeskStarting} أو بعرض مخصص.',
     ],
     cards: [
       { icon: 'user', title: 'الاختيار', text: 'تتم دراسة الطلب حسب الملف والنية ومدى التوافق مع شبكتنا.' },
@@ -162,7 +170,7 @@ const copies: Record<Locale, Copy> = {
       { icon: 'sparkles', title: 'الوصول', text: 'مكتب خاص لتنسيق الجهات المناسبة في تركيا بأولوية واستمرارية.' },
     ],
     classicTitle: 'طلب كلاسيكي؟',
-    classicText: 'إذا كنتم ترغبون في دعم بدون وصول عضو، يبدأ Private Desk من 6,000 USD / سنة أو بعرض مخصص.',
+    classicText: 'إذا كنتم ترغبون في دعم بدون وصول عضو، يبدأ Private Desk {privateDeskStarting} أو بعرض مخصص.',
     classicButton: 'طلب كلاسيكي',
     classicHref: '/ar/تقييم-خاص',
   },
@@ -172,6 +180,9 @@ const icons = { user: UserCheck, shield: ShieldCheck, sparkles: Sparkles };
 
 export function MembershipApplicationLocalizedPage({ locale }: { locale: Locale }) {
   const copy = copies[locale];
+  const priceText = (text: string) =>
+    formatPricingText(text, locale).replace('{privateDeskStarting}', privateDeskStartingText(locale));
+
   return (
     <>
       <Header locale={locale} currentPath={copy.currentPath} />
@@ -184,14 +195,14 @@ export function MembershipApplicationLocalizedPage({ locale }: { locale: Locale 
               <h1 className="max-w-3xl font-serif text-4xl leading-tight tracking-[-0.04em] text-[#121826] md:text-6xl">{copy.h1}</h1>
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#3e4857] md:text-lg">{copy.intro}</p>
               <div className="mt-8 border border-[#d8c7a1] bg-[#fffaf0]/85 p-6 shadow-[0_18px_55px_rgba(16,24,39,0.045)]"><p className="font-serif text-2xl leading-tight text-[#121826]">{copy.oneMembership}</p><p className="mt-4 text-sm leading-7 text-[#3e4857]">{copy.oneMembershipText}</p></div>
-              <div className="mt-6 grid gap-3">{copy.keyPoints.map((point) => <div key={point} className="flex items-start gap-3 text-sm leading-7 text-[#3e4857]"><ShieldCheck className="mt-1 h-4 w-4 shrink-0 text-[#8a6728]" strokeWidth={1.5} /><span>{point}</span></div>)}</div>
+              <div className="mt-6 grid gap-3">{priceKeyPoints(locale, copy.keyPoints).map((point) => <div key={point} className="flex items-start gap-3 text-sm leading-7 text-[#3e4857]"><ShieldCheck className="mt-1 h-4 w-4 shrink-0 text-[#8a6728]" strokeWidth={1.5} /><span>{point}</span></div>)}</div>
               <div className="mt-8 grid gap-3 sm:grid-cols-2"><div className="border border-[#d8c7a1] bg-[#fffaf0]/80 p-5"><Lock className="mb-4 h-5 w-5 text-[#8a6728]" /><p className="text-[0.62rem] uppercase leading-6 tracking-[0.16em] text-[#5c6676]">{copy.confidential}</p></div><div className="border border-[#d8c7a1] bg-[#fffaf0]/80 p-5"><Globe className="mb-4 h-5 w-5 text-[#8a6728]" /><p className="text-[0.62rem] uppercase leading-6 tracking-[0.16em] text-[#5c6676]">{copy.locations}</p></div></div>
             </div>
             <div className="relative"><div className="absolute -inset-4 hidden border border-[#d8c7a1] md:block" /><BosphorasMembershipForm locale={locale} embedded /></div>
           </div>
         </section>
-        <section className="bg-[#121826] px-5 py-16 text-[#fffaf0] md:px-8 md:py-24"><div className="mx-auto grid max-w-[1500px] gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20"><div><p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#d2a863]">{copy.accessEyebrow}</p><h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] md:text-6xl">{copy.accessTitle}</h2></div><div className="space-y-6 text-base leading-8 text-[#d8cfbf]">{copy.accessParagraphs.map((p) => <p key={p}>{p}</p>)}</div></div></section>
-        <section className="container-editorial py-16 md:py-24"><div className="grid gap-6 md:grid-cols-3">{copy.cards.map((item) => { const Icon = icons[item.icon]; return <article key={item.title} className="border border-[#d8c7a1] bg-[#fffaf0] p-8 shadow-[0_18px_55px_rgba(16,24,39,0.045)]"><Icon className="h-7 w-7 text-[#8a6728]" strokeWidth={1.4} /><h3 className="mt-8 font-serif text-3xl text-[#121826]">{item.title}</h3><p className="mt-5 text-base leading-8 text-[#3e4857]">{item.text}</p></article>; })}</div><div className="mt-12 border border-[#d8c7a1] bg-[#fffaf0] p-7"><div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between"><div><p className="font-serif text-3xl text-[#121826]">{copy.classicTitle}</p><p className="mt-3 max-w-2xl text-sm leading-7 text-[#3e4857]">{copy.classicText}</p></div><Link href={copy.classicHref} className="inline-flex items-center justify-center gap-3 bg-[#121826] px-7 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246]">{copy.classicButton}<ArrowRight size={15} /></Link></div></div></section>
+        <section className="bg-[#121826] px-5 py-16 text-[#fffaf0] md:px-8 md:py-24"><div className="mx-auto grid max-w-[1500px] gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20"><div><p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#d2a863]">{copy.accessEyebrow}</p><h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] md:text-6xl">{copy.accessTitle}</h2></div><div className="space-y-6 text-base leading-8 text-[#d8cfbf]">{copy.accessParagraphs.map((p) => <p key={p}>{priceText(p)}</p>)}</div></div></section>
+        <section className="container-editorial py-16 md:py-24"><div className="grid gap-6 md:grid-cols-3">{copy.cards.map((item) => { const Icon = icons[item.icon]; return <article key={item.title} className="border border-[#d8c7a1] bg-[#fffaf0] p-8 shadow-[0_18px_55px_rgba(16,24,39,0.045)]"><Icon className="h-7 w-7 text-[#8a6728]" strokeWidth={1.4} /><h3 className="mt-8 font-serif text-3xl text-[#121826]">{item.title}</h3><p className="mt-5 text-base leading-8 text-[#3e4857]">{item.text}</p></article>; })}</div><div className="mt-12 border border-[#d8c7a1] bg-[#fffaf0] p-7"><div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between"><div><p className="font-serif text-3xl text-[#121826]">{copy.classicTitle}</p><p className="mt-3 max-w-2xl text-sm leading-7 text-[#3e4857]">{priceText(copy.classicText)}</p></div><Link href={copy.classicHref} className="inline-flex items-center justify-center gap-3 bg-[#121826] px-7 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246]">{copy.classicButton}<ArrowRight size={15} /></Link></div></div></section>
       </main>
       <Footer locale={locale} />
     </>
