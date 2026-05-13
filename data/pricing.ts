@@ -18,7 +18,7 @@ export const pricing: Record<PricingKey, PricingItem> = {
   annualAdmission: {
     key: 'annualAdmission',
     year: pricingYear,
-    amount: 'Sur dossier',
+    amount: '15,000 USD',
     period: pricingYear,
     labels: {
       fr: 'Adhésion annuelle 2026',
@@ -42,7 +42,7 @@ export const pricing: Record<PricingKey, PricingItem> = {
   monthlyRetainer: {
     key: 'monthlyRetainer',
     year: pricingYear,
-    amount: 'Sur dossier',
+    amount: '2,500 USD',
     period: 'monthly',
     labels: {
       fr: 'Retainer mensuel 2026',
@@ -51,10 +51,10 @@ export const pricing: Record<PricingKey, PricingItem> = {
       ar: 'الرسوم الشهرية 2026',
     },
     shortLabels: {
-      fr: 'Retainer 2026',
-      en: 'Retainer 2026',
-      ru: 'Retainer 2026',
-      ar: 'Retainer 2026',
+      fr: 'Retainer mensuel 2026',
+      en: 'Monthly retainer 2026',
+      ru: 'Ежемесячный retainer 2026',
+      ar: 'الرسوم الشهرية 2026',
     },
     descriptions: {
       fr: 'Accompagnement mensuel prioritaire, coordination privée et suivi des sujets Turquie.',
@@ -66,7 +66,8 @@ export const pricing: Record<PricingKey, PricingItem> = {
   privateDesk: {
     key: 'privateDesk',
     year: pricingYear,
-    amount: 'Sur dossier',
+    amount: '7,500 USD',
+    period: pricingYear,
     labels: {
       fr: 'Private Desk 2026',
       en: 'Private Desk 2026',
@@ -74,10 +75,10 @@ export const pricing: Record<PricingKey, PricingItem> = {
       ar: 'Private Desk 2026',
     },
     shortLabels: {
-      fr: 'Private Desk',
-      en: 'Private Desk',
-      ru: 'Private Desk',
-      ar: 'Private Desk',
+      fr: 'Private Desk 2026',
+      en: 'Private Desk 2026',
+      ru: 'Private Desk 2026',
+      ar: 'Private Desk 2026',
     },
     descriptions: {
       fr: 'Bureau privé Turquie 360° pour investisseurs, familles patrimoniales et clients internationaux.',
