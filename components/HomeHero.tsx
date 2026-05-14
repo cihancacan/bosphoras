@@ -74,46 +74,47 @@ export function HomeHero({ locale }: { locale: Locale }) {
   const copy = heroCopy[locale];
 
   return (
-    <section className="relative min-h-[92vh] overflow-hidden bg-[#071426] pt-24 text-white md:pt-32">
-      <picture className="absolute inset-0 block h-full w-full">
-        <source media="(max-width: 767px)" srcSet="/images/mobile-istanbul.jpg" />
-        <img
-          src="/images/hero-istanbul.jpg"
-          alt="Istanbul Bosphorus skyline"
-          className="h-full w-full object-cover"
-        />
-      </picture>
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,8,18,0.88)_0%,rgba(7,20,38,0.72)_42%,rgba(7,20,38,0.34)_72%,rgba(7,20,38,0.18)_100%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(3,8,18,0.72)_0%,rgba(3,8,18,0.10)_45%,rgba(3,8,18,0.58)_100%)]" />
+    <section className="relative min-h-[100svh] overflow-hidden bg-[#071426] pt-20 text-white md:min-h-[92vh] md:pt-32">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:bg-[center_center]"
+        style={{
+          backgroundImage:
+            "image-set(url('/images/mobile-istanbul.jpg') 1x), url('/images/mobile-istanbul.jpg')",
+        }}
+      />
+      <div
+        className="absolute inset-0 hidden bg-cover bg-center bg-no-repeat md:block"
+        style={{ backgroundImage: "url('/images/hero-istanbul.jpg')" }}
+      />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,8,18,0.76)_0%,rgba(7,20,38,0.56)_42%,rgba(7,20,38,0.24)_72%,rgba(7,20,38,0.10)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(3,8,18,0.66)_0%,rgba(3,8,18,0.04)_45%,rgba(3,8,18,0.46)_100%)]" />
 
-      <div className="container-editorial relative z-10 flex min-h-[calc(92vh-7rem)] items-center pb-12">
-        <div className="max-w-4xl">
-          <p className="mb-6 text-[0.62rem] font-bold uppercase tracking-[0.34em] text-[#d2a863]">
+      <div className="container-editorial relative z-10 flex min-h-[calc(100svh-5rem)] items-center pb-5 md:min-h-[calc(92vh-7rem)] md:pb-12">
+        <div className="max-w-4xl py-4 md:py-0">
+          <p className="mb-4 text-[0.58rem] font-bold uppercase tracking-[0.28em] text-[#d2a863] md:mb-6 md:text-[0.62rem] md:tracking-[0.34em]">
             Bosphoras Private Desk
           </p>
-          <h1 className="max-w-4xl font-serif text-4xl leading-[1.03] tracking-[-0.045em] text-[#fffaf0] md:text-6xl lg:text-7xl">
+          <h1 className="max-w-4xl font-serif text-[2.45rem] leading-[1.02] tracking-[-0.045em] text-[#fffaf0] md:text-6xl lg:text-7xl">
             {copy.h1}
           </h1>
-          <p className="mt-8 max-w-2xl text-base leading-8 text-[#efe4d2] md:text-xl md:leading-10">
-            {copy.subtitle}
+          <p className="mt-5 max-w-2xl text-[0.98rem] leading-7 text-[#efe4d2] md:mt-8 md:text-xl md:leading-10">
+            {copy.subtitle}{' '}
+            <span className="font-semibold text-white">{copy.closing}</span>
           </p>
-          <p className="mt-5 max-w-2xl font-serif text-xl leading-8 text-white md:text-2xl">
-            {copy.closing}
-          </p>
-          <p className="mt-8 max-w-2xl border-l border-[#d2a863] pl-5 font-serif text-2xl leading-snug text-[#fffaf0] md:text-3xl">
+          <p className="mt-5 max-w-2xl border-l border-[#d2a863] pl-4 font-serif text-xl leading-snug text-[#fffaf0] md:mt-8 md:pl-5 md:text-3xl">
             “{copy.quote}”
           </p>
 
-          <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row md:mt-10">
             <Link
               href={copy.assessmentHref}
-              className="inline-flex items-center justify-center bg-[#d2a863] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#101827] transition hover:bg-[#e0bc78]"
+              className="inline-flex items-center justify-center bg-[#d2a863] px-6 py-3.5 text-[0.66rem] font-bold uppercase tracking-[0.14em] text-[#101827] transition hover:bg-[#e0bc78] md:px-8 md:py-4 md:text-xs md:tracking-[0.16em]"
             >
               {copy.primaryCta}
             </Link>
             <Link
               href={copy.servicesHref}
-              className="inline-flex items-center justify-center border border-[#d2a863]/80 bg-white/10 px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] backdrop-blur-sm transition hover:bg-white/15"
+              className="inline-flex items-center justify-center border border-[#d2a863]/80 bg-white/10 px-6 py-3.5 text-[0.66rem] font-bold uppercase tracking-[0.14em] text-[#fffaf0] backdrop-blur-sm transition hover:bg-white/15 md:px-8 md:py-4 md:text-xs md:tracking-[0.16em]"
             >
               {copy.secondaryCta}
             </Link>
@@ -121,7 +122,7 @@ export function HomeHero({ locale }: { locale: Locale }) {
 
           <Link
             href={copy.membershipHref}
-            className="mt-5 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#d2a863] transition hover:text-[#fffaf0]"
+            className="mt-4 inline-flex items-center gap-2 text-[0.66rem] font-bold uppercase tracking-[0.16em] text-[#d2a863] transition hover:text-[#fffaf0] md:mt-5 md:text-xs md:tracking-[0.18em]"
           >
             {copy.memberCta}
             <ArrowRight className="h-4 w-4" />
