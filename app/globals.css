@@ -126,3 +126,9 @@
     @apply p-8 border border-[hsl(42,15%,85%)] hover:border-[hsl(42,65%,52%)] hover:shadow-lg transition-all duration-300 bg-white;
   }
 }
+
+/* Temporary bridge: the new premium hero is rendered before the legacy home page markup.
+   This hides the old first hero section on /, /en, /ru and /ar without affecting inner pages. */
+.bosphoras-home-hero ~ main > section:first-child {
+  display: none !important;
+}
