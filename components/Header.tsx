@@ -17,6 +17,7 @@ type MenuItem = { label: string; href: string; description?: string };
 type MenuGroup = { label: string; href: string; items: MenuItem[] };
 
 const specialLocalizedPaths: Array<Record<Locale, string>> = [
+  { fr: '/transferts-istanbul', en: '/en/istanbul-airport-transfer', ru: '/ru/transfer-aeroport-stambul', ar: '/ar/istanbul-airport-transfer' },
   { fr: '/exoneration-fiscale-turquie-revenus-etrangers', en: '/en/turkey-tax-exemption-foreign-income', ru: '/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody', ar: '/ar/turkey-tax-exemption-foreign-income' },
   { fr: '/strategie-fiscale-turquie-investisseurs-etrangers', en: '/en/turkey-tax-strategy-foreign-investors', ru: '/ru/nalogovaya-strategiya-turtsii-inostrannye-investory', ar: '/ar/turkey-tax-strategy-foreign-investors' },
   { fr: '/exoneration-fiscale-turquie-20-ans-nouveaux-residents', en: '/en/turkey-20-year-tax-exemption-new-residents', ru: '/ru/turtsiya-20-let-nalogovaya-lgota-novye-rezidenty', ar: '/ar/turkey-20-year-tax-exemption-new-residents' },
@@ -49,6 +50,7 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
 
   const labels = { services: locale === 'fr' ? 'Services' : locale === 'en' ? 'Services' : locale === 'ru' ? 'Услуги' : 'الخدمات', destinations: locale === 'fr' ? 'Destinations' : locale === 'en' ? 'Destinations' : locale === 'ru' ? 'Направления' : 'الوجهات', privateAccess: 'Private Access', information: locale === 'fr' ? 'Informations' : locale === 'en' ? 'Information' : locale === 'ru' ? 'Информация' : 'معلومات' };
   const searchLabel = locale === 'fr' ? 'Rechercher' : locale === 'en' ? 'Search' : locale === 'ru' ? 'Поиск' : 'بحث';
+  const mobilityLink = locale === 'fr' ? '/transferts-istanbul' : locale === 'en' ? '/en/istanbul-airport-transfer' : locale === 'ru' ? '/ru/transfer-aeroport-stambul' : '/ar/istanbul-airport-transfer';
 
   const groups: MenuGroup[] = [
     { label: labels.services, href: linkTo('services'), items: [
@@ -57,6 +59,7 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
       { label: locale === 'fr' ? "Création d'Entreprise" : locale === 'en' ? 'Company Formation' : locale === 'ru' ? 'Создание компании' : 'تأسيس الشركات', href: linkTo('business-setup'), description: locale === 'fr' ? 'Société, comptabilité, bureaux.' : locale === 'en' ? 'Company, accounting, offices.' : locale === 'ru' ? 'Компания, бухгалтерия, офисы.' : 'شركة، محاسبة ومكاتب.' },
       { label: locale === 'fr' ? 'Santé & Assurance' : locale === 'en' ? 'Health & Insurance' : locale === 'ru' ? 'Здоровье и страхование' : 'الصحة والتأمين', href: linkTo('health-insurance'), description: locale === 'fr' ? 'Médecins, cliniques, assurances.' : locale === 'en' ? 'Doctors, clinics, insurance.' : locale === 'ru' ? 'Врачи, клиники, страхование.' : 'أطباء، عيادات وتأمين.' },
       { label: locale === 'fr' ? 'Immobilier & Relocation' : locale === 'en' ? 'Property & Relocation' : locale === 'ru' ? 'Недвижимость и переезд' : 'العقار والانتقال', href: linkTo('property'), description: locale === 'fr' ? 'Achat, location, installation.' : locale === 'en' ? 'Purchase, rental, relocation.' : locale === 'ru' ? 'Покупка, аренда, установка.' : 'شراء، إيجار وانتقال.' },
+      { label: locale === 'fr' ? 'Transferts & Chauffeur' : locale === 'en' ? 'Transfers & Chauffeur' : locale === 'ru' ? 'Трансферы и водитель' : 'النقل والسائق الخاص', href: mobilityLink, description: locale === 'fr' ? 'Transfert aéroport, chauffeur à l’heure, véhicules premium.' : locale === 'en' ? 'Airport transfer, hourly chauffeur, premium vehicles.' : locale === 'ru' ? 'Трансфер из аэропорта, водитель по часам, премиальные автомобили.' : 'نقل المطار، سائق بالساعة، سيارات فاخرة.' },
       { label: locale === 'fr' ? 'Conciergerie de Luxe' : locale === 'en' ? 'Luxury Concierge' : locale === 'ru' ? 'Luxury Concierge' : 'كونسيرج فاخر', href: linkTo('luxury-concierge'), description: locale === 'fr' ? 'Transport VIP, palaces, yachts, jets, shopping.' : locale === 'en' ? 'VIP transport, palaces, yachts, jets, shopping.' : locale === 'ru' ? 'VIP transport, palaces, яхты, jets, shopping.' : 'نقل VIP، فنادق فاخرة، يخوت، طائرات وتسوق.' },
     ]},
     { label: labels.destinations, href: linkTo('istanbul'), items: [{ label: locale === 'ru' ? 'Стамбул' : locale === 'ar' ? 'إسطنبول' : 'Istanbul', href: linkTo('istanbul') }, { label: locale === 'ru' ? 'Бодрум' : locale === 'ar' ? 'بودروم' : 'Bodrum', href: linkTo('bodrum') }, { label: locale === 'ru' ? 'Анталья' : locale === 'ar' ? 'أنطاليا' : 'Antalya', href: linkTo('antalya') }] },
