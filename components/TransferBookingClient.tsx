@@ -2,7 +2,8 @@
 
 import Image from 'next/image';
 import { useMemo, useState } from 'react';
-import { ArrowRight, Baby, Briefcase, CalendarDays, Check, Clock, CreditCard, Flower2, Luggage, MapPin, Plane, ShieldCheck, Sparkles, Users } from 'lucide-react';
+import { ArrowRight, Baby, CalendarDays, Check, Clock, CreditCard, Flower2, Luggage, MapPin, Plane, ShieldCheck, Sparkles, Users } from 'lucide-react';
+import type { Locale } from '@/lib/i18n';
 
 type BookingMode = 'transfer' | 'hourly';
 type VehicleId = 'mercedes-e' | 'mercedes-s' | 'viano-vip' | 'sprinter-vip';
@@ -104,7 +105,7 @@ function getMinimumDateTimeValue() {
   return local.toISOString().slice(0, 16);
 }
 
-export function TransferBookingClient() {
+export function TransferBookingClient({ locale: _locale = 'fr' }: { locale?: Locale }) {
   const minimumDateTime = useMemo(() => getMinimumDateTimeValue(), []);
   const [mode, setMode] = useState<BookingMode>('transfer');
   const [pickup, setPickup] = useState('Istanbul Airport IST');
