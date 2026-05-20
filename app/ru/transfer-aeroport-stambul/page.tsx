@@ -1,1 +1,7 @@
-export { default, metadata } from '../../transferts-istanbul/page';
+import { IstanbulTransferPageShell, buildTransferMetadata } from '@/components/IstanbulTransferPageShell';
+
+export const metadata = buildTransferMetadata('ru');
+
+export default function IstanbulAirportTransferRuPage() {
+  return <IstanbulTransferPageShell locale="ru" />;
+}
