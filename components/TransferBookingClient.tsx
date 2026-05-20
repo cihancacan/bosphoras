@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useMemo, useState } from 'react';
-import { ArrowLeft, ArrowRight, Baby, CalendarDays, Check, Clock, Flower2, Luggage, MapPin, Plane, Users } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Baby, CalendarDays, Check, Clock, Flower2, Luggage, MapPin, Plane, Search, Users } from 'lucide-react';
 import type { Locale } from '@/lib/i18n';
 
 type BookingMode = 'transfer' | 'hourly';
@@ -70,6 +70,7 @@ function getMinimumDateTimeValue() {
 export function TransferBookingClient({ locale: _locale = 'fr' }: { locale?: Locale }) {
   const minimumDateTime = useMemo(() => getMinimumDateTimeValue(), []);
   const [step, setStep] = useState<Step>(1);
+  const [isSearching, setIsSearching] = useState(false);
   const [mode, setMode] = useState<BookingMode>('transfer');
   const [pickup, setPickup] = useState('Istanbul Airport IST');
   const [dropoff, setDropoff] = useState('Hotel / Residence');
@@ -97,6 +98,32 @@ export function TransferBookingClient({ locale: _locale = 'fr' }: { locale?: Loc
   const total = vehiclePrice + childSeatPrice + flowerSelectionPrice + redRosesPrice + tipAmount;
 
   const stepLabels = ['Trajet', 'Véhicule', 'Passager & paiement'];
+  const searchVehicles = () => {
+    setIsSearching(true);
+    window.setTimeout(() => {
+      setIsSearching(false);
+      setStep(2);
+    }, 2000);
+  };
+
+  if (isSearching) {
+    return (
+      <div className="mx-auto max-w-[980px] px-5 py-16 md:px-8 md:py-24">
+        <div className="border border-[#d8c7a1] bg-[#fffaf0] p-10 text-center shadow-[0_28px_85px_rgba(16,24,39,0.10)] md:p-14">
+          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-[#8a6728] bg-white">
+            <Search className="h-7 w-7 animate-pulse text-[#8a6728]" />
+          </div>
+          <h2 className="mt-7 font-serif text-4xl tracking-[-0.035em] text-[#121826]">Recherche des véhicules disponibles</h2>
+          <p className="mt-4 text-base leading-8 text-[#5c6676]">Nous vérifions les véhicules compatibles avec votre trajet, votre horaire et le nombre de passagers.</p>
+          <div className="mt-8 grid gap-3 text-sm text-[#3e4857] md:grid-cols-3">
+            <div className="border border-[#d8c7a1] bg-white p-4">Trajet<br /><strong>{pickup} → {dropoff}</strong></div>
+            <div className="border border-[#d8c7a1] bg-white p-4">Passagers<br /><strong>{passengers}</strong></div>
+            <div className="border border-[#d8c7a1] bg-white p-4">Service<br /><strong>{mode === 'transfer' ? 'Transfert' : `${hours} heures`}</strong></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="mx-auto max-w-[1180px] px-5 py-10 md:px-8 md:py-14">
@@ -109,21 +136,31 @@ export function TransferBookingClient({ locale: _locale = 'fr' }: { locale?: Loc
       </div>
 
       {step === 1 && (
-        <section className="border border-[#d8c7a1] bg-[#fffaf0] p-5 shadow-[0_28px_85px_rgba(16,24,39,0.10)] md:p-8">
-          <div className="mb-8 flex flex-col gap-3 rounded-full border border-[#d8c7a1] bg-[#f8f1e7] p-1 sm:flex-row">
-            <button onClick={() => setMode('transfer')} className={`flex-1 rounded-full px-6 py-4 text-xs font-bold uppercase tracking-[0.16em] transition ${mode === 'transfer' ? 'bg-[#121826] text-[#fffaf0]' : 'text-[#5c6676] hover:text-[#121826]'}`}>Transfert</button>
-            <button onClick={() => setMode('hourly')} className={`flex-1 rounded-full px-6 py-4 text-xs font-bold uppercase tracking-[0.16em] transition ${mode === 'hourly' ? 'bg-[#121826] text-[#fffaf0]' : 'text-[#5c6676] hover:text-[#121826]'}`}>Réserver à l’heure</button>
+        <section className="grid gap-0 overflow-hidden border border-[#d8c7a1] bg-[#fffaf0] shadow-[0_28px_85px_rgba(16,24,39,0.10)] lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="p-5 md:p-8">
+            <div className="mb-8 flex flex-col gap-3 rounded-full border border-[#d8c7a1] bg-[#f8f1e7] p-1 sm:flex-row">
+              <button onClick={() => setMode('transfer')} className={`flex-1 rounded-full px-6 py-4 text-xs font-bold uppercase tracking-[0.16em] transition ${mode === 'transfer' ? 'bg-[#121826] text-[#fffaf0]' : 'text-[#5c6676] hover:text-[#121826]'}`}>Transfert</button>
+              <button onClick={() => setMode('hourly')} className={`flex-1 rounded-full px-6 py-4 text-xs font-bold uppercase tracking-[0.16em] transition ${mode === 'hourly' ? 'bg-[#121826] text-[#fffaf0]' : 'text-[#5c6676] hover:text-[#121826]'}`}>Réserver à l’heure</button>
+            </div>
+            <div className="grid gap-4 md:grid-cols-2">
+              <label className="block"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><MapPin size={15} />Départ</span><input list="pickup-options" value={pickup} onChange={(event) => setPickup(event.target.value)} className="w-full border border-[#d8c7a1] bg-white px-4 py-4 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]" placeholder="Adresse, hôtel, aéroport" /></label>
+              <label className="block"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><MapPin size={15} />Arrivée</span><input list="dropoff-options" value={dropoff} onChange={(event) => setDropoff(event.target.value)} className="w-full border border-[#d8c7a1] bg-white px-4 py-4 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]" placeholder="Adresse, hôtel, aéroport" /></label>
+              <datalist id="pickup-options">{popularPickups.map((item) => <option value={item} key={item} />)}</datalist>
+              <datalist id="dropoff-options">{popularDropoffs.map((item) => <option value={item} key={item} />)}</datalist>
+              <label className="block"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><CalendarDays size={15} />Date & heure</span><input type="datetime-local" min={minimumDateTime} value={dateTime} onChange={(event) => setDateTime(event.target.value)} className="w-full border border-[#d8c7a1] bg-white px-4 py-4 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]" /></label>
+              <label className="block"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><Users size={15} />Personnes</span><input type="number" min={1} max={12} value={passengers} onChange={(event) => setPassengers(Number(event.target.value))} className="w-full border border-[#d8c7a1] bg-white px-4 py-4 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]" /></label>
+            </div>
+            {mode === 'hourly' && <label className="mt-4 block"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><Clock size={15} />Durée</span><select value={hours} onChange={(event) => setHours(Number(event.target.value))} className="w-full border border-[#d8c7a1] bg-white px-4 py-4 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]">{[2, 3, 4, 5, 6, 8, 12].map((value) => <option value={value} key={value}>{value} heures</option>)}</select><p className="mt-3 text-sm leading-6 text-[#5c6676]">Minimum 2 heures. -20% à partir de la 3e heure.</p></label>}
+            <div className="mt-8 flex justify-end"><button onClick={searchVehicles} className="inline-flex items-center justify-center gap-3 bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246]">Voir les véhicules disponibles<ArrowRight size={16} /></button></div>
           </div>
-          <div className="grid gap-4 md:grid-cols-2">
-            <label className="block"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><MapPin size={15} />Départ</span><input list="pickup-options" value={pickup} onChange={(event) => setPickup(event.target.value)} className="w-full border border-[#d8c7a1] bg-white px-4 py-4 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]" placeholder="Adresse, hôtel, aéroport" /></label>
-            <label className="block"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><MapPin size={15} />Arrivée</span><input list="dropoff-options" value={dropoff} onChange={(event) => setDropoff(event.target.value)} className="w-full border border-[#d8c7a1] bg-white px-4 py-4 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]" placeholder="Adresse, hôtel, aéroport" /></label>
-            <datalist id="pickup-options">{popularPickups.map((item) => <option value={item} key={item} />)}</datalist>
-            <datalist id="dropoff-options">{popularDropoffs.map((item) => <option value={item} key={item} />)}</datalist>
-            <label className="block"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><CalendarDays size={15} />Date & heure</span><input type="datetime-local" min={minimumDateTime} value={dateTime} onChange={(event) => setDateTime(event.target.value)} className="w-full border border-[#d8c7a1] bg-white px-4 py-4 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]" /></label>
-            <label className="block"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><Users size={15} />Personnes</span><input type="number" min={1} max={12} value={passengers} onChange={(event) => setPassengers(Number(event.target.value))} className="w-full border border-[#d8c7a1] bg-white px-4 py-4 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]" /></label>
+          <div className="relative min-h-[340px] bg-[#121826] lg:min-h-full">
+            <Image src="/images/home.driver.jpg" alt="Chauffeur privé Istanbul" fill priority className="object-cover" sizes="(min-width: 1024px) 560px, 100vw" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#121826]/75 via-transparent to-transparent" />
+            <div className="absolute bottom-6 left-6 right-6 border border-white/20 bg-[#121826]/75 p-5 text-[#fffaf0] backdrop-blur">
+              <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#d2a863]">Airport transfer Istanbul</p>
+              <p className="mt-2 font-serif text-2xl leading-tight">Réservation immédiate, chauffeur privé, accueil aéroport.</p>
+            </div>
           </div>
-          {mode === 'hourly' && <label className="mt-4 block"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><Clock size={15} />Durée</span><select value={hours} onChange={(event) => setHours(Number(event.target.value))} className="w-full border border-[#d8c7a1] bg-white px-4 py-4 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]">{[2, 3, 4, 5, 6, 8, 12].map((value) => <option value={value} key={value}>{value} heures</option>)}</select><p className="mt-3 text-sm leading-6 text-[#5c6676]">Minimum 2 heures. -20% à partir de la 3e heure.</p></label>}
-          <div className="mt-8 flex justify-end"><button onClick={() => setStep(2)} className="inline-flex items-center justify-center gap-3 bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246]">Voir les véhicules<ArrowRight size={16} /></button></div>
         </section>
       )}
 
