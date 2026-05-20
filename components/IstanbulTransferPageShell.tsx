@@ -1,12 +1,13 @@
+import Image from 'next/image';
 import type { Metadata } from 'next';
-import { ArrowRight, CheckCircle2, Clock, CreditCard, Plane, ShieldCheck } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Clock, CreditCard, Plane, ShieldCheck, Sparkles } from 'lucide-react';
 import type { Locale } from '@/lib/i18n';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 import { TransferBookingClient } from '@/components/TransferBookingClient';
 import { TransferHeaderSlogan } from '@/components/TransferHeaderSlogan';
-import { buildMetadata, breadcrumbSchema, faqSchema, serviceSchema, organizationSchema, websiteSchema } from '@/lib/seo';
+import { buildMetadata, breadcrumbSchema, faqSchema, organizationSchema, serviceSchema, websiteSchema } from '@/lib/seo';
 import { siteUrl } from '@/lib/routes';
 
 type TransferPageConfig = {
@@ -18,7 +19,6 @@ type TransferPageConfig = {
   h1: string;
   intro: string;
   ctaPrimary: string;
-  cards: Array<{ title: string; text: string }>;
   seoTitle: string;
   seoItems: string[];
   faqTitle: string;
@@ -33,14 +33,8 @@ export const transferConfigs: Record<Locale, TransferPageConfig> = {
     description: 'Réservez votre transfert privé à Istanbul avec chauffeur, suivi de vol, accueil aéroport, Mercedes Classe E, Classe S, Viano VIP ou Sprinter VIP. Paiement carte et confirmation immédiate.',
     eyebrow: 'Réservation transfert Istanbul',
     h1: 'Réservez votre chauffeur privé à Istanbul',
-    intro: 'Choisissez votre trajet, sélectionnez votre véhicule, ajoutez les informations passager et payez par carte. Votre réservation est confirmée immédiatement après paiement.',
-    ctaPrimary: 'Commencer la réservation',
-    cards: [
-      { title: 'Confirmation immédiate', text: 'Réservation validée après paiement carte.' },
-      { title: 'Minimum 2h avant', text: 'Réservez votre prise en charge à l’avance.' },
-      { title: 'Suivi de vol inclus', text: 'Accueil aéroport et suivi de l’arrivée.' },
-      { title: 'Paiement sécurisé', text: 'Carte bancaire uniquement.' },
-    ],
+    intro: 'Transfert aéroport, chauffeur à l’heure, véhicule premium et paiement par carte. Choisissez votre trajet, sélectionnez votre voiture, confirmez votre réservation.',
+    ctaPrimary: 'Réserver maintenant',
     seoTitle: 'Transfert aéroport Istanbul, chauffeur privé et réservation à l’heure.',
     seoItems: [
       'Transfert aéroport Istanbul vers hôtel, résidence, marina, restaurant ou rendez-vous d’affaires.',
@@ -65,14 +59,8 @@ export const transferConfigs: Record<Locale, TransferPageConfig> = {
     description: 'Book your private Istanbul airport transfer with chauffeur, flight tracking, airport meet and greet, Mercedes E-Class, S-Class, Viano VIP or Sprinter VIP. Card payment and instant confirmation.',
     eyebrow: 'Istanbul transfer booking',
     h1: 'Book your private chauffeur in Istanbul',
-    intro: 'Choose your route, select your vehicle, add passenger details and pay by card. Your booking is instantly confirmed after payment.',
-    ctaPrimary: 'Start booking',
-    cards: [
-      { title: 'Instant confirmation', text: 'Booking confirmed after card payment.' },
-      { title: 'Minimum 2h before', text: 'Book your pickup in advance.' },
-      { title: 'Flight tracking included', text: 'Airport greeting and arrival tracking.' },
-      { title: 'Secure payment', text: 'Card payment only.' },
-    ],
+    intro: 'Airport transfer, hourly chauffeur, premium vehicle and card payment. Choose your route, select your car and confirm your booking.',
+    ctaPrimary: 'Book now',
     seoTitle: 'Istanbul airport transfer, private chauffeur and hourly booking.',
     seoItems: [
       'Istanbul airport transfer to hotel, residence, marina, restaurant or business appointment.',
@@ -97,14 +85,8 @@ export const transferConfigs: Record<Locale, TransferPageConfig> = {
     description: 'Забронируйте частный трансфер в Стамбуле с водителем, отслеживанием рейса, встречей в аэропорту, Mercedes E-Class, S-Class, Viano VIP или Sprinter VIP. Оплата картой и мгновенное подтверждение.',
     eyebrow: 'Бронирование трансфера в Стамбуле',
     h1: 'Забронируйте личного водителя в Стамбуле',
-    intro: 'Выберите маршрут, автомобиль, данные пассажира и оплатите картой. Бронирование подтверждается сразу после оплаты.',
-    ctaPrimary: 'Начать бронирование',
-    cards: [
-      { title: 'Мгновенное подтверждение', text: 'Бронирование подтверждается после оплаты картой.' },
-      { title: 'Минимум за 2 часа', text: 'Бронируйте подачу автомобиля заранее.' },
-      { title: 'Отслеживание рейса', text: 'Встреча в аэропорту и контроль прибытия.' },
-      { title: 'Безопасная оплата', text: 'Только банковской картой.' },
-    ],
+    intro: 'Трансфер из аэропорта, водитель по часам, премиальный автомобиль и оплата картой. Выберите маршрут, автомобиль и подтвердите бронирование.',
+    ctaPrimary: 'Забронировать',
     seoTitle: 'Трансфер из аэропорта Стамбула, личный водитель и почасовое бронирование.',
     seoItems: [
       'Трансфер из аэропорта Стамбула в отель, резиденцию, марину, ресторан или на деловую встречу.',
@@ -129,14 +111,8 @@ export const transferConfigs: Record<Locale, TransferPageConfig> = {
     description: 'احجز خدمة نقل خاصة في إسطنبول مع سائق، تتبع الرحلة، استقبال في المطار، Mercedes E-Class أو S-Class أو Viano VIP أو Sprinter VIP. الدفع بالبطاقة وتأكيد فوري.',
     eyebrow: 'حجز نقل في إسطنبول',
     h1: 'احجز سائقك الخاص في إسطنبول',
-    intro: 'اختر المسار، السيارة، بيانات الراكب ثم ادفع بالبطاقة. يتم تأكيد الحجز فوراً بعد الدفع.',
-    ctaPrimary: 'ابدأ الحجز',
-    cards: [
-      { title: 'تأكيد فوري', text: 'يتم تأكيد الحجز بعد الدفع بالبطاقة.' },
-      { title: 'قبل ساعتين على الأقل', text: 'احجز موعد الاستلام مسبقاً.' },
-      { title: 'تتبع الرحلة مشمول', text: 'استقبال في المطار ومتابعة الوصول.' },
-      { title: 'دفع آمن', text: 'الدفع بالبطاقة فقط.' },
-    ],
+    intro: 'نقل من المطار، سائق بالساعة، سيارة فاخرة ودفع بالبطاقة. اختر المسار والسيارة وأكد الحجز.',
+    ctaPrimary: 'احجز الآن',
     seoTitle: 'نقل مطار إسطنبول، سائق خاص وحجز بالساعة.',
     seoItems: [
       'نقل من مطار إسطنبول إلى الفندق أو السكن أو المارينا أو المطعم أو موعد العمل.',
@@ -201,27 +177,41 @@ export function IstanbulTransferPageShell({ locale }: { locale: Locale }) {
       <StructuredData data={[organizationSchema(), websiteSchema(), serviceSchema({ name: config.title, description: config.description, url: `${siteUrl}${config.path}` }), mobilitySchema, faqSchema(config.faqs), breadcrumbSchema([{ name: 'Bosphoras', url: siteUrl }, { name: config.h1, url: `${siteUrl}${config.path}` }])]} />
       <Header locale={locale} currentPath={config.path} />
       <TransferHeaderSlogan locale={locale} />
-      <main className="bg-[#f8f1e7] text-[#121826]" dir={isRtl ? 'rtl' : 'ltr'}>
-        <section className="relative overflow-hidden bg-[radial-gradient(circle_at_82%_14%,rgba(196,151,84,0.22),transparent_28%),linear-gradient(135deg,#101827_0%,#1d2940_52%,#101827_100%)] px-5 pb-12 pt-28 text-[#fffaf0] md:px-8 md:pb-16 md:pt-36">
-          <div className="absolute inset-0 opacity-[0.14]" style={{ backgroundImage: 'linear-gradient(#d2a863 1px, transparent 1px), linear-gradient(90deg, #d2a863 1px, transparent 1px)', backgroundSize: '78px 78px' }} />
-          <div className="container-editorial relative z-10">
-            <div className="max-w-5xl">
-              <p className="text-xs font-bold uppercase tracking-[0.32em] text-[#d2a863]">{config.eyebrow}</p>
-              <h1 className="mt-5 max-w-5xl font-serif text-4xl leading-[1.02] tracking-[-0.045em] md:text-6xl">{config.h1}</h1>
-              <p className="mt-6 max-w-3xl text-base leading-8 text-[#d8cfbf] md:text-lg md:leading-9">{config.intro}</p>
-              <a href="#reservation" className="mt-8 inline-flex items-center justify-center gap-3 bg-[#d2a863] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#101827] transition hover:bg-[#e0bc78]">{config.ctaPrimary}<ArrowRight size={15} /></a>
-            </div>
-            <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              {config.cards.map((card, index) => {
-                const icons = [CreditCard, Clock, Plane, ShieldCheck];
-                const Icon = icons[index] ?? ShieldCheck;
-                return <article key={card.title} className="border border-[#d2a863]/25 bg-white/[0.035] p-5 backdrop-blur"><Icon className="mb-4 h-6 w-6 text-[#d2a863]" strokeWidth={1.4} /><h2 className="font-serif text-xl text-white">{card.title}</h2><p className="mt-2 text-sm leading-6 text-[#d8cfbf]">{card.text}</p></article>;
-              })}
+      <main className="bg-[#f7f3ec] text-[#121826]" dir={isRtl ? 'rtl' : 'ltr'}>
+        <section className="relative overflow-hidden bg-[#f7f3ec] px-4 pb-0 pt-28 md:px-8 md:pt-32">
+          <div className="mx-auto max-w-[1500px]">
+            <div className="grid gap-7 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+              <div className="relative z-10 py-6 md:py-10">
+                <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#d8c7a1] bg-white px-4 py-2 text-[0.68rem] font-bold uppercase tracking-[0.18em] text-[#8a6728] shadow-[0_12px_35px_rgba(16,24,39,0.06)]"><Sparkles size={14} />{config.eyebrow}</div>
+                <h1 className="max-w-4xl font-serif text-5xl leading-[0.98] tracking-[-0.06em] text-[#121826] md:text-7xl xl:text-8xl">{config.h1}</h1>
+                <p className="mt-7 max-w-2xl text-base leading-8 text-[#4b5565] md:text-xl md:leading-9">{config.intro}</p>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  <a href="#reservation" className="inline-flex items-center justify-center gap-3 rounded-full bg-[#121826] px-7 py-4 text-xs font-bold uppercase tracking-[0.14em] text-white shadow-[0_18px_50px_rgba(16,24,39,0.18)] transition hover:-translate-y-0.5 hover:bg-[#263246]">{config.ctaPrimary}<ArrowRight size={15} /></a>
+                  <span className="inline-flex items-center justify-center gap-2 rounded-full border border-[#d8c7a1] bg-white px-5 py-4 text-xs font-bold uppercase tracking-[0.12em] text-[#4b5565]"><Clock size={15} />2h minimum</span>
+                  <span className="inline-flex items-center justify-center gap-2 rounded-full border border-[#d8c7a1] bg-white px-5 py-4 text-xs font-bold uppercase tracking-[0.12em] text-[#4b5565]"><CreditCard size={15} />Carte uniquement</span>
+                </div>
+              </div>
+
+              <div className="relative min-h-[430px] overflow-hidden rounded-[2rem] border border-white/70 bg-white shadow-[0_35px_120px_rgba(16,24,39,0.16)] md:min-h-[560px]">
+                <Image src="/images/home.driver.jpg" alt="Private chauffeur Istanbul airport transfer" fill priority className="object-cover" sizes="(min-width: 1024px) 820px, 100vw" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02)_0%,rgba(16,24,39,0.10)_45%,rgba(16,24,39,0.46)_100%)]" />
+                <div className="absolute left-5 right-5 top-5 flex flex-wrap gap-2 md:left-8 md:right-8 md:top-8">
+                  {['IST Airport', 'SAW Airport', 'Hotel', 'Hourly'].map((item) => <span key={item} className="rounded-full border border-white/35 bg-white/80 px-4 py-2 text-[0.68rem] font-bold uppercase tracking-[0.14em] text-[#121826] backdrop-blur">{item}</span>)}
+                </div>
+                <div className="absolute bottom-5 left-5 right-5 rounded-[1.5rem] border border-white/20 bg-[#121826]/72 p-5 text-white shadow-[0_20px_70px_rgba(0,0,0,0.22)] backdrop-blur-md md:bottom-8 md:left-8 md:right-8 md:p-6">
+                  <p className="text-[0.68rem] font-bold uppercase tracking-[0.22em] text-[#d2a863]">Live booking flow</p>
+                  <div className="mt-4 grid gap-3 sm:grid-cols-3">
+                    <div><Plane className="mb-2 h-5 w-5 text-[#d2a863]" /><p className="text-sm font-semibold">Flight tracking</p></div>
+                    <div><ShieldCheck className="mb-2 h-5 w-5 text-[#d2a863]" /><p className="text-sm font-semibold">Instant confirmation</p></div>
+                    <div><CreditCard className="mb-2 h-5 w-5 text-[#d2a863]" /><p className="text-sm font-semibold">Secure card payment</p></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section id="reservation">
+        <section id="reservation" className="relative z-20 -mt-8 md:-mt-14">
           <TransferBookingClient locale={locale} />
         </section>
 
@@ -229,7 +219,7 @@ export function IstanbulTransferPageShell({ locale }: { locale: Locale }) {
           <div className="mx-auto max-w-[1500px]">
             <h2 className="font-serif text-3xl leading-tight tracking-[-0.03em] md:text-5xl">{config.seoTitle}</h2>
             <div className="mt-8 grid gap-4 text-base leading-8 text-[#3e4857] md:grid-cols-2 lg:grid-cols-4">
-              {config.seoItems.map((item) => <div key={item} className="border border-[#d8c7a1] bg-white p-5"><CheckCircle2 className="mb-4 h-5 w-5 text-[#8a6728]" /><p>{item}</p></div>)}
+              {config.seoItems.map((item) => <div key={item} className="rounded-[1.25rem] border border-[#d8c7a1] bg-white p-5 shadow-[0_16px_45px_rgba(16,24,39,0.05)]"><CheckCircle2 className="mb-4 h-5 w-5 text-[#8a6728]" /><p>{item}</p></div>)}
             </div>
           </div>
         </section>
@@ -237,8 +227,8 @@ export function IstanbulTransferPageShell({ locale }: { locale: Locale }) {
         <section className="px-5 py-14 md:px-8 md:py-20">
           <div className="mx-auto max-w-[1500px]">
             <h2 className="font-serif text-3xl tracking-[-0.03em] md:text-5xl">{config.faqTitle}</h2>
-            <div className="mt-8 grid gap-px bg-[#d8c7a1] md:grid-cols-2">
-              {config.faqs.map((faq) => <article key={faq.question} className="bg-[#f8f1e7] p-7"><h3 className="font-serif text-2xl leading-snug text-[#121826]">{faq.question}</h3><p className="mt-4 text-base leading-8 text-[#3e4857]">{faq.answer}</p></article>)}
+            <div className="mt-8 grid gap-4 md:grid-cols-2">
+              {config.faqs.map((faq) => <article key={faq.question} className="rounded-[1.25rem] border border-[#d8c7a1] bg-[#fffaf0] p-7 shadow-[0_16px_45px_rgba(16,24,39,0.04)]"><h3 className="font-serif text-2xl leading-snug text-[#121826]">{faq.question}</h3><p className="mt-4 text-base leading-8 text-[#3e4857]">{faq.answer}</p></article>)}
             </div>
           </div>
         </section>
