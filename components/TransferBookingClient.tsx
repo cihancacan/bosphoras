@@ -1,179 +1,127 @@
 'use client';
 
 import Image from 'next/image';
-import { useMemo, useState } from 'react';
-import { ArrowLeft, ArrowRight, Baby, CalendarDays, Check, Clock, Flower2, Luggage, MapPin, Plane, Search, Users } from 'lucide-react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import { ArrowLeft, ArrowRight, Baby, CalendarDays, Check, Clock, CreditCard, Flower2, Luggage, MapPin, Plane, Timer, Users } from 'lucide-react';
 import type { Locale } from '@/lib/i18n';
 
-type BookingMode = 'transfer' | 'hourly';
-type VehicleId = 'mercedes-e' | 'mercedes-s' | 'viano-vip' | 'sprinter-vip';
-type BookingFor = 'self' | 'other';
+type Mode = 'transfer' | 'hourly';
 type Step = 1 | 2 | 3;
+type VehicleId = 'e' | 's' | 'viano' | 'sprinter';
 
-type Vehicle = {
-  id: VehicleId;
-  name: string;
-  label: string;
-  image: string;
-  hourlyRate: number;
-  passengers: string;
-  luggage: string;
-  description: string;
-};
-
-const vehicles: Vehicle[] = [
-  { id: 'mercedes-e', name: 'Mercedes Classe E ou équivalent', label: 'Business Sedan', image: '/images/mercedesE.avif', hourlyRate: 250, passengers: 'Jusqu’à 3 passagers', luggage: '2 bagages', description: 'Transfert business, sobre et confortable.' },
-  { id: 'mercedes-s', name: 'Mercedes Classe S ou équivalent', label: 'Luxury Sedan', image: '/images/mercedesS.avif', hourlyRate: 400, passengers: 'Jusqu’à 3 passagers', luggage: '2 bagages', description: 'Arrivée discrète, élégante et premium.' },
-  { id: 'viano-vip', name: 'Mercedes Viano VIP', label: 'VIP Van', image: '/images/mercdecesVianovip.avif', hourlyRate: 150, passengers: '6 à 7 passagers', luggage: 'Bagages selon configuration', description: 'Idéal familles, groupes et plusieurs bagages.' },
-  { id: 'sprinter-vip', name: 'Mercedes Sprinter VIP', label: 'VIP Sprinter', image: '/images/mercedessprintervip.avif', hourlyRate: 200, passengers: 'Jusqu’à 12 passagers', luggage: 'Grand volume de bagages', description: 'Groupes, délégations et transferts premium.' },
+const vehicles = [
+  { id: 'e' as VehicleId, name: 'Mercedes Classe E ou équivalent', label: 'Business Sedan', img: '/images/mercedesE.avif', rate: 250, pax: '3 passagers', bags: '2 bagages' },
+  { id: 's' as VehicleId, name: 'Mercedes Classe S ou équivalent', label: 'Luxury Sedan', img: '/images/mercedesS.avif', rate: 400, pax: '3 passagers', bags: '2 bagages' },
+  { id: 'viano' as VehicleId, name: 'Mercedes Viano VIP', label: 'VIP Van', img: '/images/mercdecesVianovip.avif', rate: 150, pax: '6 à 7 passagers', bags: 'Bagages selon configuration' },
+  { id: 'sprinter' as VehicleId, name: 'Mercedes Sprinter VIP', label: 'VIP Sprinter', img: '/images/mercedessprintervip.avif', rate: 200, pax: '12 passagers', bags: 'Grand volume bagages' },
 ];
+const hints = ['Istanbul Airport IST', 'Sabiha Gökçen SAW', 'Four Seasons Bosphorus', 'Mandarin Oriental Bosphorus', 'Galataport Istanbul', 'Nişantaşı', 'Bebek', 'Levent', 'Maslak', 'Sultanahmet', 'Taksim'];
 
-const popularPickups = ['Istanbul Airport IST', 'Sabiha Gökçen SAW', 'Hotel / Residence', 'Galataport', 'Bosphorus', 'Nişantaşı', 'Bebek', 'Levent', 'Maslak'];
-const popularDropoffs = ['Hotel / Residence', 'Istanbul Airport IST', 'Sabiha Gökçen SAW', 'Sultanahmet', 'Taksim', 'Nişantaşı', 'Bosphorus', 'Bebek', 'Levent'];
-
-function roundTransferMinutes(minutes: number) {
-  if (minutes <= 60) return 60;
-  return Math.ceil(minutes / 30) * 30;
+function initialDateTime() {
+  const d = new Date();
+  d.setHours(d.getHours() + 2);
+  const local = new Date(d.getTime() - d.getTimezoneOffset() * 60000);
+  return { date: local.toISOString().slice(0, 10), time: local.toISOString().slice(11, 16) };
 }
-
-function estimateTransferMinutes(pickup: string, dropoff: string) {
-  const route = `${pickup} ${dropoff}`.toLowerCase();
-  const hasIst = route.includes('istanbul airport') || route.includes(' ist') || route.includes('ist ');
-  const hasSaw = route.includes('sabiha') || route.includes('saw');
-  const hasFarDistrict = route.includes('sapanca') || route.includes('yalova') || route.includes('bursa');
-  if (hasFarDistrict) return 150;
-  if (hasSaw && hasIst) return 120;
-  if (hasSaw) return 90;
-  if (hasIst) return 75;
+function minutes(from: string, to: string) {
+  const r = `${from} ${to}`.toLowerCase();
+  const ist = r.includes('istanbul airport') || r.includes(' ist');
+  const saw = r.includes('sabiha') || r.includes('saw');
+  if (ist && saw) return 120;
+  if (saw) return 90;
+  if (ist) return 75;
   return 60;
 }
-
-function calculateHourlyPrice(hourlyRate: number, hours: number) {
-  const safeHours = Math.max(2, hours);
-  const normalHours = Math.min(safeHours, 2);
-  const discountedHours = Math.max(safeHours - 2, 0);
-  return normalHours * hourlyRate + discountedHours * hourlyRate * 0.8;
-}
-
-function formatEuro(amount: number) {
-  return new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(amount);
-}
-
-function getMinimumDateTimeValue() {
-  const date = new Date();
-  date.setHours(date.getHours() + 2);
-  const offset = date.getTimezoneOffset();
-  const local = new Date(date.getTime() - offset * 60_000);
-  return local.toISOString().slice(0, 16);
-}
+function billed(min: number) { return min <= 60 ? 60 : Math.ceil(min / 30) * 30; }
+function hourly(rate: number, h: number) { return Math.min(h, 2) * rate + Math.max(h - 2, 0) * rate * 0.8; }
+function eur(n: number) { return new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(n); }
 
 export function TransferBookingClient({ locale: _locale = 'fr' }: { locale?: Locale }) {
-  const minimumDateTime = useMemo(() => getMinimumDateTimeValue(), []);
+  const init = useMemo(() => initialDateTime(), []);
+  const pickupRef = useRef<HTMLInputElement>(null);
+  const dropRef = useRef<HTMLInputElement>(null);
   const [step, setStep] = useState<Step>(1);
-  const [isSearching, setIsSearching] = useState(false);
-  const [mode, setMode] = useState<BookingMode>('transfer');
+  const [loading, setLoading] = useState(false);
+  const [mode, setMode] = useState<Mode>('transfer');
   const [pickup, setPickup] = useState('Istanbul Airport IST');
-  const [dropoff, setDropoff] = useState('Hotel / Residence');
-  const [dateTime, setDateTime] = useState(minimumDateTime);
-  const [passengers, setPassengers] = useState(2);
+  const [drop, setDrop] = useState('Hotel / Residence');
+  const [date, setDate] = useState(init.date);
+  const [time, setTime] = useState(init.time);
+  const [pax, setPax] = useState(2);
   const [hours, setHours] = useState(2);
-  const [selectedVehicleId, setSelectedVehicleId] = useState<VehicleId>('mercedes-e');
-  const [bookingFor, setBookingFor] = useState<BookingFor>('self');
-  const [childSeat, setChildSeat] = useState(false);
-  const [flowerSelection, setFlowerSelection] = useState(false);
-  const [redRoses, setRedRoses] = useState(false);
+  const [vehicleId, setVehicleId] = useState<VehicleId>('e');
+  const [forOther, setForOther] = useState(false);
+  const [child, setChild] = useState(false);
+  const [flowers, setFlowers] = useState(false);
+  const [roses, setRoses] = useState(false);
   const [tip, setTip] = useState('');
 
-  const selectedVehicle = vehicles.find((vehicle) => vehicle.id === selectedVehicleId) ?? vehicles[0];
-  const estimatedMinutes = estimateTransferMinutes(pickup, dropoff);
-  const billedMinutes = roundTransferMinutes(estimatedMinutes);
-  const billedHours = billedMinutes / 60;
-  const transferBasePrice = selectedVehicle.hourlyRate * billedHours;
-  const hourlyBasePrice = calculateHourlyPrice(selectedVehicle.hourlyRate, hours);
-  const childSeatPrice = childSeat ? 30 : 0;
-  const flowerSelectionPrice = flowerSelection ? 150 : 0;
-  const redRosesPrice = redRoses ? 400 : 0;
-  const tipAmount = Number(tip.replace(',', '.')) > 0 ? Number(tip.replace(',', '.')) : 0;
-  const vehiclePrice = mode === 'transfer' ? transferBasePrice : hourlyBasePrice;
-  const total = vehiclePrice + childSeatPrice + flowerSelectionPrice + redRosesPrice + tipAmount;
+  useEffect(() => {
+    const key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+    const connect = () => {
+      const google = (window as any).google;
+      if (!google?.maps?.places || !pickupRef.current || !dropRef.current) return;
+      const opts = { componentRestrictions: { country: 'tr' }, fields: ['formatted_address', 'name'] };
+      const a = new google.maps.places.Autocomplete(pickupRef.current, opts);
+      const b = new google.maps.places.Autocomplete(dropRef.current, opts);
+      a.addListener('place_changed', () => { const p = a.getPlace(); setPickup(p.formatted_address || p.name || pickup); });
+      b.addListener('place_changed', () => { const p = b.getPlace(); setDrop(p.formatted_address || p.name || drop); });
+    };
+    if ((window as any).google?.maps?.places) return connect();
+    if (!key || document.getElementById('gmaps-places')) return;
+    const s = document.createElement('script');
+    s.id = 'gmaps-places'; s.async = true; s.onload = connect;
+    s.src = `https://maps.googleapis.com/maps/api/js?key=${key}&libraries=places&language=fr`;
+    document.head.appendChild(s);
+  }, [pickup, drop]);
 
-  const stepLabels = ['Trajet', 'Véhicule', 'Passager & paiement'];
-  const searchVehicles = () => {
-    setIsSearching(true);
-    window.setTimeout(() => {
-      setIsSearching(false);
-      setStep(2);
-    }, 2000);
-  };
+  const v = vehicles.find((x) => x.id === vehicleId) || vehicles[0];
+  const min = minutes(pickup, drop);
+  const bill = billed(min);
+  const vehiclePrice = mode === 'transfer' ? v.rate * (bill / 60) : hourly(v.rate, hours);
+  const tipValue = Number(tip.replace(',', '.')) > 0 ? Number(tip.replace(',', '.')) : 0;
+  const total = vehiclePrice + (child ? 30 : 0) + (flowers ? 150 : 0) + (roses ? 400 : 0) + tipValue;
+  const findCars = () => { setLoading(true); setTimeout(() => { setLoading(false); setStep(2); }, 5000); };
 
-  if (isSearching) {
-    return (
-      <div className="mx-auto max-w-[980px] px-5 py-16 md:px-8 md:py-24">
-        <div className="rounded-[2rem] border border-[#d8c7a1] bg-white p-10 text-center shadow-[0_28px_85px_rgba(16,24,39,0.10)] md:p-14">
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border border-[#8a6728] bg-[#fffaf0]">
-            <Search className="h-7 w-7 animate-pulse text-[#8a6728]" />
+  const Stepper = () => <div className="mb-5 grid grid-cols-3 rounded-full bg-white/70 p-1 text-[10px] font-black uppercase tracking-[0.12em] backdrop-blur md:text-xs">{['Trajet', 'Voiture', 'Paiement'].map((s, i) => <div key={s} className={`rounded-full px-2 py-3 text-center ${step === i + 1 ? 'bg-black text-white shadow-lg' : step > i + 1 ? 'bg-white text-black' : 'text-gray-400'}`}>{i + 1}. {s}</div>)}</div>;
+
+  if (step === 1) return (
+    <section className="relative min-h-[100svh] overflow-hidden bg-black px-4 pb-8 pt-24 md:px-8 md:pt-28">
+      <Image src="/images/home.driver.jpg" alt="Private driver Istanbul" fill priority className="object-cover" sizes="100vw" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/25 via-black/20 to-black/80" />
+      <div className="relative z-10 mx-auto grid min-h-[calc(100svh-8rem)] max-w-[1180px] items-end gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+        <div className="text-white">
+          <div className="mb-4 inline-flex rounded-full bg-white px-4 py-2 text-[11px] font-black uppercase tracking-[0.18em] text-black">Istanbul airport transfer</div>
+          <h1 className="max-w-3xl text-5xl font-black leading-[0.94] tracking-[-0.07em] md:text-7xl">Réservez votre chauffeur privé à Istanbul</h1>
+          <p className="mt-5 max-w-xl text-base leading-8 text-white/85 md:text-xl">Adresse, date, passagers. Sélection du véhicule. Paiement carte. Confirmation immédiate.</p>
+        </div>
+        <div className="rounded-[28px] bg-white/95 p-4 shadow-[0_30px_110px_rgba(0,0,0,0.35)] backdrop-blur-xl md:p-6">
+          <Stepper />
+          <div className="mb-4 grid grid-cols-2 rounded-2xl bg-gray-100 p-1">
+            <button onClick={() => setMode('transfer')} className={`rounded-xl py-3 text-xs font-black uppercase tracking-[0.14em] transition ${mode === 'transfer' ? 'bg-black text-white shadow-lg' : 'text-gray-500'}`}>Transfert</button>
+            <button onClick={() => setMode('hourly')} className={`rounded-xl py-3 text-xs font-black uppercase tracking-[0.14em] transition ${mode === 'hourly' ? 'bg-black text-white shadow-lg' : 'text-gray-500'}`}>À l’heure</button>
           </div>
-          <h2 className="mt-7 font-serif text-4xl tracking-[-0.035em] text-[#121826]">Recherche des véhicules disponibles</h2>
-          <p className="mt-4 text-base leading-8 text-[#5c6676]">Nous vérifions les véhicules compatibles avec votre trajet, votre horaire et le nombre de passagers.</p>
-          <div className="mt-8 grid gap-3 text-sm text-[#3e4857] md:grid-cols-3">
-            <div className="rounded-2xl border border-[#d8c7a1] bg-[#fffaf0] p-4">Trajet<br /><strong>{pickup} → {dropoff}</strong></div>
-            <div className="rounded-2xl border border-[#d8c7a1] bg-[#fffaf0] p-4">Passagers<br /><strong>{passengers}</strong></div>
-            <div className="rounded-2xl border border-[#d8c7a1] bg-[#fffaf0] p-4">Service<br /><strong>{mode === 'transfer' ? 'Transfert' : `${hours} heures`}</strong></div>
+          <div className="grid gap-3 md:grid-cols-2">
+            <label><span className="mb-1 flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.14em] text-gray-500"><MapPin size={14}/>Départ</span><input ref={pickupRef} list="transfer-hints" value={pickup} onChange={(e) => setPickup(e.target.value)} className="h-14 w-full rounded-2xl border border-gray-200 bg-gray-50 px-4 text-sm font-semibold outline-none focus:border-black" placeholder="Adresse ou aéroport" /></label>
+            <label><span className="mb-1 flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.14em] text-gray-500"><MapPin size={14}/>Arrivée</span><input ref={dropRef} list="transfer-hints" value={drop} onChange={(e) => setDrop(e.target.value)} className="h-14 w-full rounded-2xl border border-gray-200 bg-gray-50 px-4 text-sm font-semibold outline-none focus:border-black" placeholder="Adresse ou hôtel" /></label>
+            <datalist id="transfer-hints">{hints.map((h) => <option key={h} value={h} />)}</datalist>
+            <label><span className="mb-1 flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.14em] text-gray-500"><CalendarDays size={14}/>Date</span><input type="date" value={date} onChange={(e) => setDate(e.target.value)} className="h-14 w-full rounded-2xl border border-gray-200 bg-gray-50 px-4 text-sm font-semibold outline-none focus:border-black" /></label>
+            <label><span className="mb-1 flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.14em] text-gray-500"><Clock size={14}/>Heure</span><input type="time" value={time} onChange={(e) => setTime(e.target.value)} className="h-14 w-full rounded-2xl border border-gray-200 bg-gray-50 px-4 text-sm font-semibold outline-none focus:border-black" /></label>
+            <label><span className="mb-1 flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.14em] text-gray-500"><Users size={14}/>Passagers</span><input type="number" min={1} max={12} value={pax} onChange={(e) => setPax(Number(e.target.value))} className="h-14 w-full rounded-2xl border border-gray-200 bg-gray-50 px-4 text-sm font-semibold outline-none focus:border-black" /></label>
+            {mode === 'hourly' && <label><span className="mb-1 flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.14em] text-gray-500"><Clock size={14}/>Durée</span><select value={hours} onChange={(e) => setHours(Number(e.target.value))} className="h-14 w-full rounded-2xl border border-gray-200 bg-gray-50 px-4 text-sm font-semibold outline-none focus:border-black">{[2,3,4,5,6,8,12].map((h) => <option key={h} value={h}>{h} heures</option>)}</select></label>}
           </div>
+          {loading ? <div className="mt-5 rounded-3xl border border-gray-200 bg-gray-50 p-6 text-center"><div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-inner"><div className="absolute h-16 w-16 animate-spin rounded-full border-4 border-gray-200 border-t-black"/><Timer className="relative h-7 w-7"/></div><p className="text-lg font-black tracking-[-0.03em]">Recherche des véhicules disponibles</p><p className="mt-1 text-sm text-gray-500">Vérification du trajet, de l’horaire et des passagers...</p></div> : <div className="mt-5 flex flex-col gap-3 md:flex-row md:items-center md:justify-between"><p className="text-xs font-bold text-gray-500">Minimum 2h à l’avance · Maps connecté si clé API active</p><button onClick={findCars} className="inline-flex items-center justify-center gap-3 rounded-2xl bg-black px-7 py-4 text-xs font-black uppercase tracking-[0.14em] text-white shadow-xl transition hover:-translate-y-0.5">Voir les véhicules<ArrowRight size={16}/></button></div>}
         </div>
       </div>
-    );
-  }
+    </section>
+  );
 
   return (
-    <div className="mx-auto max-w-[1180px] px-5 py-10 md:px-8 md:py-14">
-      <div className="mb-7 grid grid-cols-3 overflow-hidden rounded-full border border-[#d8c7a1] bg-white p-1 shadow-[0_18px_60px_rgba(16,24,39,0.08)]">
-        {stepLabels.map((label, index) => {
-          const active = step === index + 1;
-          const done = step > index + 1;
-          return <div key={label} className={`flex items-center justify-center gap-2 rounded-full px-3 py-4 text-center text-[0.68rem] font-bold uppercase tracking-[0.12em] ${active ? 'bg-[#121826] text-[#fffaf0]' : done ? 'bg-[#fffaf0] text-[#8a6728]' : 'text-[#5c6676]'}`}>{done && <Check size={14} />}{index + 1}. {label}</div>;
-        })}
+    <section className="min-h-screen bg-white px-4 pt-28 md:px-8 md:pt-32">
+      <div className="mx-auto max-w-[1180px]"><Stepper />
+        {step === 2 && <><div className="mb-6"><p className="text-xs font-black uppercase tracking-[0.18em] text-gray-500">{pickup} → {drop}</p><h2 className="mt-2 text-4xl font-black tracking-[-0.04em]">Sélectionnez votre véhicule</h2><p className="mt-2 text-sm font-semibold text-gray-500">{mode === 'transfer' ? `${min} min estimées · ${bill} min facturées` : `${hours} heures · -20% après 2h`}</p></div><div className="grid gap-4">{vehicles.map((car) => { const selected = car.id === vehicleId; const price = mode === 'transfer' ? car.rate * (bill / 60) : hourly(car.rate, hours); return <button key={car.id} onClick={() => setVehicleId(car.id)} className={`grid gap-4 rounded-[28px] border p-4 text-left shadow-sm transition md:grid-cols-[240px_1fr_auto] md:items-center ${selected ? 'border-black bg-white shadow-2xl' : 'border-gray-200 bg-white hover:border-black'}`}><div className="relative h-40 overflow-hidden rounded-3xl bg-gray-100"><Image src={car.img} alt={car.name} fill className="object-cover" sizes="240px"/></div><div><p className="text-xs font-black uppercase tracking-[0.16em] text-gray-500">{car.label}</p><h3 className="mt-1 text-2xl font-black tracking-[-0.03em]">{car.name}</h3><div className="mt-4 flex flex-wrap gap-3 text-xs font-bold uppercase tracking-[0.1em] text-gray-600"><span className="inline-flex gap-1"><Users size={14}/>{car.pax}</span><span className="inline-flex gap-1"><Luggage size={14}/>{car.bags}</span><span className="inline-flex gap-1"><Plane size={14}/>Suivi vol</span></div></div><div className="md:text-right"><p className="text-4xl font-black tracking-[-0.06em]">{eur(price)}</p><span className={`mt-4 inline-flex rounded-full px-5 py-3 text-xs font-black uppercase tracking-[0.12em] ${selected ? 'bg-black text-white' : 'border border-black text-black'}`}>{selected ? 'Sélectionné' : 'Choisir'}</span></div></button>; })}</div><div className="mt-7 flex justify-between"><button onClick={() => setStep(1)} className="rounded-2xl border border-black px-6 py-4 text-xs font-black uppercase tracking-[0.14em]"><ArrowLeft size={14} className="mr-2 inline"/>Retour</button><button onClick={() => setStep(3)} className="rounded-2xl bg-black px-7 py-4 text-xs font-black uppercase tracking-[0.14em] text-white">Continuer<ArrowRight size={14} className="ml-2 inline"/></button></div></>}
+        {step === 3 && <div className="grid gap-6 lg:grid-cols-[1fr_380px]"><div className="rounded-[28px] border border-gray-200 bg-white p-5 shadow-lg md:p-7"><h2 className="text-4xl font-black tracking-[-0.04em]">Informations passager</h2><div className="mt-5 grid gap-3 md:grid-cols-2"><button onClick={() => setForOther(false)} className={`rounded-2xl border px-4 py-4 text-left text-xs font-black uppercase tracking-[0.12em] ${!forOther ? 'bg-black text-white' : 'text-gray-500'}`}>Pour moi-même</button><button onClick={() => setForOther(true)} className={`rounded-2xl border px-4 py-4 text-left text-xs font-black uppercase tracking-[0.12em] ${forOther ? 'bg-black text-white' : 'text-gray-500'}`}>Autre personne</button>{['Nom','Prénom','Téléphone','Email'].map((x) => <input key={x} placeholder={x} className="h-14 rounded-2xl border border-gray-200 bg-gray-50 px-4 text-sm font-semibold outline-none focus:border-black"/>)}<textarea placeholder="Note / souhait particulier" rows={4} className="rounded-2xl border border-gray-200 bg-gray-50 px-4 py-3 text-sm font-semibold outline-none focus:border-black md:col-span-2"/><input placeholder="Numéro de vol optionnel" className="h-14 rounded-2xl border border-gray-200 bg-gray-50 px-4 text-sm font-semibold outline-none focus:border-black md:col-span-2"/></div><div className="mt-6 grid gap-3 md:grid-cols-3"><label className="rounded-2xl border p-4"><input type="checkbox" checked={child} onChange={(e) => setChild(e.target.checked)}/> <Baby className="my-2"/>Siège enfant<br/><b>+30 €</b></label><label className="rounded-2xl border p-4"><input type="checkbox" checked={flowers} onChange={(e) => setFlowers(e.target.checked)}/> <Flower2 className="my-2"/>Bouquet<br/><b>+150 €</b></label><label className="rounded-2xl border p-4"><input type="checkbox" checked={roses} onChange={(e) => setRoses(e.target.checked)}/> <Flower2 className="my-2"/>33 roses<br/><b>+400 €</b></label></div><input value={tip} onChange={(e) => setTip(e.target.value)} placeholder="Pourboire libre" className="mt-4 h-14 w-full rounded-2xl border border-gray-200 bg-gray-50 px-4 text-sm font-semibold outline-none focus:border-black"/><button onClick={() => setStep(2)} className="mt-6 rounded-2xl border border-black px-6 py-4 text-xs font-black uppercase tracking-[0.14em]">Retour</button></div><aside className="rounded-[28px] bg-black p-6 text-white shadow-2xl"><p className="text-xs font-black uppercase tracking-[0.18em] text-white/50">Résumé</p><h3 className="mt-3 text-3xl font-black tracking-[-0.04em]">Paiement sécurisé</h3><div className="mt-6 space-y-3 text-sm text-white/70"><p><b className="text-white">Trajet :</b> {pickup} → {drop}</p><p><b className="text-white">Date :</b> {date} · {time}</p><p><b className="text-white">Voiture :</b> {v.name}</p><p><b className="text-white">Passagers :</b> {pax}</p></div><div className="mt-6 border-t border-white/15 pt-6"><div className="flex justify-between"><span>Total</span><span className="text-5xl font-black tracking-[-0.06em]">{eur(total)}</span></div><button className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-white px-6 py-4 text-xs font-black uppercase tracking-[0.14em] text-black"><CreditCard size={16}/>Payer et confirmer</button></div></aside></div>}
       </div>
-
-      {step === 1 && (
-        <section className="overflow-hidden rounded-[2rem] border border-[#d8c7a1] bg-white p-5 shadow-[0_28px_85px_rgba(16,24,39,0.10)] md:p-8">
-          <div className="mb-8 flex flex-col gap-3 rounded-full border border-[#d8c7a1] bg-[#f8f1e7] p-1 sm:flex-row">
-            <button onClick={() => setMode('transfer')} className={`flex-1 rounded-full px-6 py-4 text-xs font-bold uppercase tracking-[0.16em] transition ${mode === 'transfer' ? 'bg-[#121826] text-[#fffaf0]' : 'text-[#5c6676] hover:text-[#121826]'}`}>Transfert</button>
-            <button onClick={() => setMode('hourly')} className={`flex-1 rounded-full px-6 py-4 text-xs font-bold uppercase tracking-[0.16em] transition ${mode === 'hourly' ? 'bg-[#121826] text-[#fffaf0]' : 'text-[#5c6676] hover:text-[#121826]'}`}>Réserver à l’heure</button>
-          </div>
-          <div className="grid gap-4 md:grid-cols-2">
-            <label className="block"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><MapPin size={15} />Départ</span><input list="pickup-options" value={pickup} onChange={(event) => setPickup(event.target.value)} className="w-full rounded-2xl border border-[#d8c7a1] bg-[#fffaf0] px-4 py-4 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]" placeholder="Adresse, hôtel, aéroport" /></label>
-            <label className="block"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><MapPin size={15} />Arrivée</span><input list="dropoff-options" value={dropoff} onChange={(event) => setDropoff(event.target.value)} className="w-full rounded-2xl border border-[#d8c7a1] bg-[#fffaf0] px-4 py-4 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]" placeholder="Adresse, hôtel, aéroport" /></label>
-            <datalist id="pickup-options">{popularPickups.map((item) => <option value={item} key={item} />)}</datalist>
-            <datalist id="dropoff-options">{popularDropoffs.map((item) => <option value={item} key={item} />)}</datalist>
-            <label className="block"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><CalendarDays size={15} />Date & heure</span><input type="datetime-local" min={minimumDateTime} value={dateTime} onChange={(event) => setDateTime(event.target.value)} className="w-full rounded-2xl border border-[#d8c7a1] bg-[#fffaf0] px-4 py-4 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]" /></label>
-            <label className="block"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><Users size={15} />Personnes</span><input type="number" min={1} max={12} value={passengers} onChange={(event) => setPassengers(Number(event.target.value))} className="w-full rounded-2xl border border-[#d8c7a1] bg-[#fffaf0] px-4 py-4 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]" /></label>
-          </div>
-          {mode === 'hourly' && <label className="mt-4 block"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><Clock size={15} />Durée</span><select value={hours} onChange={(event) => setHours(Number(event.target.value))} className="w-full rounded-2xl border border-[#d8c7a1] bg-[#fffaf0] px-4 py-4 text-sm text-[#121826] outline-none transition focus:border-[#8a6728]">{[2, 3, 4, 5, 6, 8, 12].map((value) => <option value={value} key={value}>{value} heures</option>)}</select><p className="mt-3 text-sm leading-6 text-[#5c6676]">Minimum 2 heures. -20% à partir de la 3e heure.</p></label>}
-          <div className="mt-8 flex justify-end"><button onClick={searchVehicles} className="inline-flex items-center justify-center gap-3 rounded-full bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] shadow-[0_18px_50px_rgba(16,24,39,0.18)] transition hover:-translate-y-0.5 hover:bg-[#263246]">Voir les véhicules disponibles<ArrowRight size={16} /></button></div>
-        </section>
-      )}
-
-      {step === 2 && (
-        <section>
-          <div className="mb-6 flex flex-col justify-between gap-3 md:flex-row md:items-end"><div><p className="text-xs font-bold uppercase tracking-[0.26em] text-[#8a6728]">{pickup} → {dropoff}</p><h2 className="mt-2 font-serif text-4xl tracking-[-0.035em] text-[#121826]">Sélectionnez votre véhicule</h2></div><p className="text-sm text-[#5c6676]">{mode === 'transfer' ? `${estimatedMinutes} min estimées · ${billedMinutes} min facturées` : `${hours} heures · -20% après 2h`}</p></div>
-          <div className="grid gap-5">
-            {vehicles.map((vehicle) => {
-              const isSelected = selectedVehicleId === vehicle.id;
-              const basePrice = mode === 'transfer' ? vehicle.hourlyRate * billedHours : calculateHourlyPrice(vehicle.hourlyRate, hours);
-              return <button key={vehicle.id} onClick={() => setSelectedVehicleId(vehicle.id)} className={`grid w-full gap-5 rounded-[1.75rem] border p-4 text-left transition md:grid-cols-[260px_1fr_auto] md:items-center ${isSelected ? 'border-[#8a6728] bg-[#fffaf0] shadow-[0_18px_65px_rgba(16,24,39,0.12)]' : 'border-[#d8c7a1] bg-white hover:border-[#8a6728]'}`}><div className="relative h-44 overflow-hidden rounded-[1.25rem] bg-[#f8f1e7] md:h-36"><Image src={vehicle.image} alt={vehicle.name} fill className="object-cover" sizes="(min-width: 768px) 260px, 100vw" /></div><div><p className="text-xs font-bold uppercase tracking-[0.18em] text-[#8a6728]">{vehicle.label}</p><h3 className="mt-2 font-serif text-3xl leading-tight text-[#121826]">{vehicle.name}</h3><p className="mt-3 text-sm leading-7 text-[#5c6676]">{vehicle.description}</p><div className="mt-4 flex flex-wrap gap-3 text-xs font-semibold uppercase tracking-[0.10em] text-[#3e4857]"><span className="inline-flex items-center gap-2"><Users size={15} />{vehicle.passengers}</span><span className="inline-flex items-center gap-2"><Luggage size={15} />{vehicle.luggage}</span><span className="inline-flex items-center gap-2"><Plane size={15} />Suivi de vol inclus</span><span className="inline-flex items-center gap-2"><Check size={15} />Accueil inclus</span></div></div><div className="min-w-[190px] border-t border-[#d8c7a1] pt-4 md:border-l md:border-t-0 md:pl-6 md:pt-0"><p className="text-xs uppercase tracking-[0.16em] text-[#5c6676]">Prix</p><p className="mt-2 font-serif text-4xl text-[#121826]">{formatEuro(basePrice)}</p><p className="mt-2 text-xs leading-5 text-[#5c6676]">{formatEuro(vehicle.hourlyRate)} / h</p><span className={`mt-4 inline-flex items-center justify-center rounded-full px-5 py-3 text-xs font-bold uppercase tracking-[0.14em] ${isSelected ? 'bg-[#121826] text-[#fffaf0]' : 'border border-[#8a6728] text-[#8a6728]'}`}>{isSelected ? 'Sélectionné' : 'Choisir'}</span></div></button>;
-            })}
-          </div>
-          <div className="mt-8 flex flex-col justify-between gap-3 sm:flex-row"><button onClick={() => setStep(1)} className="inline-flex items-center justify-center gap-3 rounded-full border border-[#8a6728] px-7 py-4 text-xs font-bold uppercase tracking-[0.14em] text-[#8a6728]"><ArrowLeft size={15} />Retour</button><button onClick={() => setStep(3)} className="inline-flex items-center justify-center gap-3 rounded-full bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0]">Continuer<ArrowRight size={16} /></button></div>
-        </section>
-      )}
-
-      {step === 3 && (
-        <section className="grid gap-8 lg:grid-cols-[1fr_380px]">
-          <div className="rounded-[2rem] border border-[#d8c7a1] bg-white p-6 shadow-[0_18px_65px_rgba(16,24,39,0.08)] md:p-8"><h2 className="font-serif text-4xl tracking-[-0.035em] text-[#121826]">Informations passager</h2><div className="mt-7 grid gap-3 sm:grid-cols-2"><button onClick={() => setBookingFor('self')} className={`rounded-2xl border px-5 py-4 text-left text-sm font-bold uppercase tracking-[0.12em] ${bookingFor === 'self' ? 'border-[#8a6728] bg-[#f8f1e7] text-[#121826]' : 'border-[#d8c7a1] text-[#5c6676]'}`}>Pour moi-même</button><button onClick={() => setBookingFor('other')} className={`rounded-2xl border px-5 py-4 text-left text-sm font-bold uppercase tracking-[0.12em] ${bookingFor === 'other' ? 'border-[#8a6728] bg-[#f8f1e7] text-[#121826]' : 'border-[#d8c7a1] text-[#5c6676]'}`}>Pour une autre personne</button></div><div className="mt-6 grid gap-4 md:grid-cols-2">{['Nom', 'Prénom', 'Téléphone WhatsApp', 'Adresse e-mail'].map((label) => <label key={label} className="block"><span className="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]">{label}</span><input className="w-full rounded-2xl border border-[#d8c7a1] bg-[#fffaf0] px-4 py-4 text-sm outline-none transition focus:border-[#8a6728]" /></label>)}<label className="block md:col-span-2"><span className="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]">Note / souhait particulier</span><textarea rows={4} className="w-full rounded-2xl border border-[#d8c7a1] bg-[#fffaf0] px-4 py-4 text-sm outline-none transition focus:border-[#8a6728]" /></label><label className="block md:col-span-2"><span className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]"><Plane size={15} />Numéro de vol optionnel</span><input className="w-full rounded-2xl border border-[#d8c7a1] bg-[#fffaf0] px-4 py-4 text-sm outline-none transition focus:border-[#8a6728]" placeholder="Exemple : TK1828" /></label></div><div className="mt-8 border-t border-[#d8c7a1] pt-8"><p className="text-xs font-bold uppercase tracking-[0.26em] text-[#8a6728]">Services additionnels</p><div className="mt-5 grid gap-4 md:grid-cols-3"><label className="flex cursor-pointer gap-3 rounded-2xl border border-[#d8c7a1] bg-[#fffaf0] p-4"><input type="checkbox" checked={childSeat} onChange={(event) => setChildSeat(event.target.checked)} /><span><Baby className="mb-3 h-5 w-5 text-[#8a6728]" /><strong>Siège enfant</strong><br /><span className="text-sm text-[#5c6676]">+30 €</span></span></label><label className="flex cursor-pointer gap-3 rounded-2xl border border-[#d8c7a1] bg-[#fffaf0] p-4"><input type="checkbox" checked={flowerSelection} onChange={(event) => setFlowerSelection(event.target.checked)} /><span><Flower2 className="mb-3 h-5 w-5 text-[#8a6728]" /><strong>Bouquet sélection</strong><br /><span className="text-sm text-[#5c6676]">+150 €</span></span></label><label className="flex cursor-pointer gap-3 rounded-2xl border border-[#d8c7a1] bg-[#fffaf0] p-4"><input type="checkbox" checked={redRoses} onChange={(event) => setRedRoses(event.target.checked)} /><span><Flower2 className="mb-3 h-5 w-5 text-[#8a6728]" /><strong>33 roses rouges</strong><br /><span className="text-sm text-[#5c6676]">+400 €</span></span></label></div><label className="mt-5 block"><span className="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]">Pourboire — montant libre</span><input inputMode="decimal" value={tip} onChange={(event) => setTip(event.target.value)} className="w-full rounded-2xl border border-[#d8c7a1] bg-[#fffaf0] px-4 py-4 text-sm outline-none transition focus:border-[#8a6728]" placeholder="Exemple : 20" /></label></div><div className="mt-8"><button onClick={() => setStep(2)} className="inline-flex items-center justify-center gap-3 rounded-full border border-[#8a6728] px-7 py-4 text-xs font-bold uppercase tracking-[0.14em] text-[#8a6728]"><ArrowLeft size={15} />Retour</button></div></div>
-          <aside className="sticky top-28 self-start rounded-[2rem] border border-[#24334a] bg-[#121826] p-6 text-[#fffaf0] shadow-[0_24px_80px_rgba(16,24,39,0.18)] md:p-8"><p className="text-xs font-bold uppercase tracking-[0.24em] text-[#d2a863]">Résumé</p><h3 className="mt-4 font-serif text-3xl leading-tight">Paiement sécurisé</h3><div className="mt-6 space-y-4 text-sm leading-7 text-[#d8cfbf]"><p><strong className="text-white">Service :</strong> {mode === 'transfer' ? 'Transfert privé' : `Chauffeur · ${hours}h`}</p><p><strong className="text-white">Trajet :</strong> {pickup} → {dropoff}</p><p><strong className="text-white">Véhicule :</strong> {selectedVehicle.name}</p><p><strong className="text-white">Passagers :</strong> {passengers}</p></div><div className="my-6 h-px bg-[#d2a863]/30" /><div className="space-y-3 text-sm text-[#d8cfbf]"><div className="flex justify-between"><span>Véhicule</span><span>{formatEuro(vehiclePrice)}</span></div>{childSeat && <div className="flex justify-between"><span>Siège enfant</span><span>{formatEuro(30)}</span></div>}{flowerSelection && <div className="flex justify-between"><span>Bouquet sélection</span><span>{formatEuro(150)}</span></div>}{redRoses && <div className="flex justify-between"><span>33 roses rouges</span><span>{formatEuro(400)}</span></div>}{tipAmount > 0 && <div className="flex justify-between"><span>Pourboire</span><span>{formatEuro(tipAmount)}</span></div>}</div><div className="mt-6 flex items-end justify-between border-t border-[#d2a863]/30 pt-6"><span className="text-xs font-bold uppercase tracking-[0.18em] text-[#d2a863]">Total</span><span className="font-serif text-5xl">{formatEuro(total)}</span></div><button className="mt-7 flex w-full items-center justify-center gap-3 rounded-full bg-[#d2a863] px-6 py-4 text-xs font-bold uppercase tracking-[0.14em] text-[#101827] transition hover:bg-[#e0bc78]">Payer et confirmer<ArrowRight size={16} /></button><p className="mt-4 text-xs leading-6 text-[#d8cfbf]">Paiement uniquement par carte. Confirmation immédiate après paiement.</p></aside>
-        </section>
-      )}
-    </div>
+    </section>
   );
 }
