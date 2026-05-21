@@ -15,6 +15,7 @@ const vehicles = [
   { id: 'viano' as VehicleId, name: 'Mercedes Viano VIP', label: 'VIP Van', img: '/images/mercdecesVianovip.avif', rate: 150, pax: '6 à 7 passagers', bags: 'Bagages selon configuration' },
   { id: 'sprinter' as VehicleId, name: 'Mercedes Sprinter VIP', label: 'VIP Sprinter', img: '/images/mercedessprintervip.avif', rate: 200, pax: '12 passagers', bags: 'Grand volume bagages' },
 ];
+
 const hints = ['Istanbul Airport IST', 'Sabiha Gökçen SAW', 'Four Seasons Bosphorus', 'Mandarin Oriental Bosphorus', 'Galataport Istanbul', 'Nişantaşı', 'Bebek', 'Levent', 'Maslak', 'Sultanahmet', 'Taksim'];
 
 function initialDateTime() {
@@ -25,6 +26,7 @@ function initialDateTime() {
   const local = new Date(d.getTime() - d.getTimezoneOffset() * 60000);
   return { date: local.toISOString().slice(0, 10), time: local.toISOString().slice(11, 16) };
 }
+
 function getTimeOptions(locale: Locale) {
   const options: Array<{ value: string; label: string }> = [];
   for (let hour = 0; hour < 24; hour += 1) for (let minute = 0; minute < 60; minute += 10) {
@@ -37,6 +39,7 @@ function getTimeOptions(locale: Locale) {
   }
   return options;
 }
+
 function minutes(from: string, to: string) {
   const r = `${from} ${to}`.toLowerCase();
   const ist = r.includes('istanbul airport') || r.includes(' ist');
@@ -97,23 +100,36 @@ export function TransferBookingClient({ locale = 'fr' }: { locale?: Locale }) {
   const total = vehiclePrice + (child ? 30 : 0) + (flowers ? 150 : 0) + (roses ? 400 : 0) + tipValue;
   const findCars = () => { setLoading(true); setTimeout(() => { setLoading(false); setStep(2); }, 5000); };
 
-  const labelClass = 'mb-1 flex items-center gap-2 text-[11px] font-black uppercase tracking-[0.14em] text-black/85 md:drop-shadow-[0_1px_10px_rgba(255,255,255,0.9)]';
-  const inputClass = 'h-14 w-full rounded-2xl border border-gray-200 bg-gray-50 px-4 text-sm font-semibold text-black outline-none focus:border-black';
-  const Stepper = () => <div className="mb-5 grid grid-cols-3 rounded-full bg-gray-100 p-1 text-[10px] font-black uppercase tracking-[0.12em] md:bg-white/70 md:backdrop-blur md:text-xs">{['Trajet', 'Voiture', 'Paiement'].map((s, i) => <div key={s} className={`rounded-full px-2 py-3 text-center ${step === i + 1 ? 'bg-black text-white shadow-lg' : step > i + 1 ? 'bg-white text-black' : 'text-gray-700'}`}>{i + 1}. {s}</div>)}</div>;
+  const labelClass = 'mb-1 flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.09em] text-black/80 md:text-[11px] md:tracking-[0.14em] md:drop-shadow-[0_1px_10px_rgba(255,255,255,0.9)]';
+  const inputClass = 'h-12 w-full rounded-2xl border border-white/60 bg-white/60 px-3 text-base font-semibold text-black outline-none backdrop-blur-xl focus:border-black md:h-14 md:border-gray-200 md:bg-gray-50 md:px-4 md:text-sm';
+  const panelClass = 'w-full rounded-[26px] border border-white/60 bg-white/55 p-3 shadow-[0_20px_70px_rgba(17,24,39,0.16)] backdrop-blur-[28px] backdrop-saturate-150 md:rounded-[28px] md:border-0 md:bg-white/55 md:p-6 md:shadow-[0_30px_110px_rgba(0,0,0,0.35)] md:backdrop-blur-[34px]';
+  const Stepper = () => <div className="mb-4 grid grid-cols-3 rounded-full bg-white/45 p-1 text-[10px] font-black uppercase tracking-[0.09em] backdrop-blur-xl md:mb-5 md:bg-white/70 md:tracking-[0.12em] md:text-xs">{['Trajet', 'Voiture', 'Paiement'].map((s, i) => <div key={s} className={`rounded-full px-2 py-3 text-center ${step === i + 1 ? 'bg-black text-white shadow-lg' : step > i + 1 ? 'bg-white/80 text-black' : 'text-gray-700'}`}>{i + 1}. {s}</div>)}</div>;
 
   if (step === 1) return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-white px-4 pb-8 pt-24 md:bg-black md:px-8 md:pt-28">
+    <section className="relative min-h-[100svh] overflow-hidden bg-[#eef0f3] px-3 pb-6 pt-20 md:bg-black md:px-8 md:pt-28">
       <Image src="/images/home.driver.jpg" alt="Private driver Istanbul" fill priority className="hidden object-cover md:block" sizes="100vw" />
       <div className="absolute inset-0 hidden bg-gradient-to-b from-black/20 via-black/18 to-black/78 md:block" />
-      <div className="relative z-10 mx-auto grid min-h-[calc(100svh-8rem)] max-w-[1180px] items-start gap-5 md:items-end md:gap-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-        <div className="text-[#111827] md:text-white">
-          <div className="mb-4 inline-flex rounded-full bg-black px-4 py-2 text-[11px] font-black uppercase tracking-[0.18em] text-white md:bg-white md:text-black">Istanbul airport transfer</div>
-          <h1 className="max-w-3xl text-[2.15rem] font-black leading-[0.98] tracking-[-0.06em] md:text-7xl md:leading-[0.94] md:tracking-[-0.07em]">Réservez votre chauffeur privé à Istanbul</h1>
-          <div className="mt-4 inline-flex rounded-full bg-[#111827] px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-white shadow-[0_12px_35px_rgba(17,24,39,0.12)] md:border md:border-white/25 md:bg-white/15 md:tracking-[0.16em] md:shadow-[0_12px_45px_rgba(0,0,0,0.18)] md:backdrop-blur-xl">Confirmation immédiate</div>
+
+      <div className="relative z-10 mx-auto max-w-[1180px] md:grid md:min-h-[calc(100svh-8rem)] md:items-center md:gap-6 lg:grid-cols-[0.85fr_1.15fr]">
+        <div className="relative -mx-3 -mt-20 mb-[-38px] h-[390px] overflow-hidden rounded-b-[2rem] md:hidden">
+          <Image src="/images/home.driver.jpg" alt="Chauffeur privé Istanbul" fill priority className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/20 to-black/72" />
+          <div className="absolute bottom-16 left-4 right-4 text-white">
+            <div className="mb-4 inline-flex rounded-full bg-white/90 px-4 py-2 text-[10px] font-black uppercase tracking-[0.16em] text-black backdrop-blur-xl">Istanbul airport transfer</div>
+            <h1 className="text-[2.35rem] font-black leading-[0.94] tracking-[-0.065em]">Réservez votre chauffeur privé à Istanbul</h1>
+            <div className="mt-4 inline-flex rounded-full border border-white/25 bg-white/15 px-4 py-2 text-xs font-black uppercase tracking-[0.14em] text-white backdrop-blur-xl">Confirmation immédiate</div>
+          </div>
         </div>
-        <div className="rounded-[28px] border border-gray-200 bg-white p-4 shadow-[0_18px_60px_rgba(17,24,39,0.08)] md:border-0 md:bg-white/95 md:shadow-[0_30px_110px_rgba(0,0,0,0.35)] md:backdrop-blur-xl md:p-6">
+
+        <div className="hidden text-white md:block">
+          <div className="mb-4 inline-flex rounded-full bg-white px-4 py-2 text-[11px] font-black uppercase tracking-[0.18em] text-black">Istanbul airport transfer</div>
+          <h1 className="max-w-3xl text-7xl font-black leading-[0.94] tracking-[-0.07em]">Réservez votre chauffeur privé à Istanbul</h1>
+          <div className="mt-4 inline-flex rounded-full border border-white/25 bg-white/15 px-4 py-2 text-xs font-black uppercase tracking-[0.16em] text-white shadow-[0_12px_45px_rgba(0,0,0,0.18)] backdrop-blur-xl">Confirmation immédiate</div>
+        </div>
+
+        <div className={panelClass}>
           <Stepper />
-          <div className="mb-4 grid grid-cols-2 rounded-2xl bg-gray-100 p-1">
+          <div className="mb-4 grid grid-cols-2 rounded-2xl bg-white/45 p-1 backdrop-blur-xl md:bg-gray-100">
             <button onClick={() => setMode('transfer')} className={`rounded-xl py-3 text-xs font-black uppercase tracking-[0.14em] transition ${mode === 'transfer' ? 'bg-black text-white shadow-lg' : 'text-gray-700'}`}>Transfert</button>
             <button onClick={() => setMode('hourly')} className={`rounded-xl py-3 text-xs font-black uppercase tracking-[0.14em] transition ${mode === 'hourly' ? 'bg-black text-white shadow-lg' : 'text-gray-700'}`}>À l’heure</button>
           </div>
@@ -121,17 +137,17 @@ export function TransferBookingClient({ locale = 'fr' }: { locale?: Locale }) {
             <label><span className={labelClass}><MapPin size={14}/>Départ</span><input ref={pickupRef} list="transfer-hints" value={pickup} onChange={(e) => setPickup(e.target.value)} className={inputClass} placeholder="Adresse ou aéroport" /></label>
             <label><span className={labelClass}><MapPin size={14}/>Arrivée</span><input ref={dropRef} list="transfer-hints" value={drop} onChange={(e) => setDrop(e.target.value)} className={inputClass} placeholder="Adresse ou hôtel" /></label>
             <datalist id="transfer-hints">{hints.map((h) => <option key={h} value={h} />)}</datalist>
-            <div className="transfer-mobile-pair grid grid-cols-2 gap-2 md:contents">
-              <label><span className={labelClass}><CalendarDays size={14}/>Date</span><input type="date" value={date} onChange={(e) => setDate(e.target.value)} className={inputClass} /></label>
-              <label><span className={labelClass}><Clock size={14}/>Heure</span><select value={time} onChange={(e) => setTime(e.target.value)} className={inputClass}>{timeOptions.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}</select></label>
+            <div className="grid grid-cols-2 gap-2 md:contents">
+              <label><span className={labelClass}><CalendarDays size={13}/>Date</span><input type="date" value={date} onChange={(e) => setDate(e.target.value)} className={inputClass} /></label>
+              <label><span className={labelClass}><Clock size={13}/>Heure</span><select value={time} onChange={(e) => setTime(e.target.value)} className={inputClass}>{timeOptions.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}</select></label>
             </div>
-            <div className="transfer-mobile-pair transfer-flight-pax-pair grid grid-cols-[minmax(0,1.4fr)_minmax(68px,0.6fr)] gap-2 md:contents">
-              <label className="md:col-span-1"><span className={labelClass}><Plane size={14}/>N° de vol</span><input value={flightNumber} onChange={(e) => setFlightNumber(e.target.value)} className={inputClass} placeholder="Pour être accueilli" /></label>
-              <label className="md:col-span-1"><span className={labelClass}><Users size={14}/>Passagers</span><input type="number" min={1} max={12} value={pax} onChange={(e) => setPax(Number(e.target.value))} className={`${inputClass} text-center`} /></label>
+            <div className="grid grid-cols-[minmax(0,1.35fr)_minmax(70px,0.65fr)] gap-2 md:contents">
+              <label><span className={labelClass}><Plane size={13}/>N° de vol</span><input value={flightNumber} onChange={(e) => setFlightNumber(e.target.value)} className={inputClass} placeholder="Pour être accueilli" /></label>
+              <label><span className={labelClass}><Users size={13}/>Passagers</span><input type="number" min={1} max={12} value={pax} onChange={(e) => setPax(Number(e.target.value))} className={`${inputClass} text-center`} /></label>
             </div>
             {mode === 'hourly' && <label className="md:col-span-2"><span className={labelClass}><Clock size={14}/>Durée</span><select value={hours} onChange={(e) => setHours(Number(e.target.value))} className={inputClass}>{[2,3,4,5,6,8,12].map((h) => <option key={h} value={h}>{h} heures</option>)}</select></label>}
           </div>
-          {loading ? <div className="mt-5 rounded-3xl border border-gray-200 bg-gray-50 p-6 text-center"><div className="relative mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-inner"><div className="absolute h-16 w-16 animate-spin rounded-full border-4 border-gray-200 border-t-black"/><Timer className="relative h-7 w-7"/></div><p className="text-lg font-black tracking-[-0.03em]">Recherche des véhicules disponibles</p><p className="mt-1 text-sm text-gray-500">Vérification du trajet, de l’horaire, du vol et des passagers...</p></div> : <div className="mt-5 flex justify-end"><button onClick={findCars} className="inline-flex items-center justify-center gap-3 rounded-2xl bg-black px-7 py-4 text-xs font-black uppercase tracking-[0.14em] text-white shadow-xl transition hover:-translate-y-0.5">Voir les véhicules<ArrowRight size={16}/></button></div>}
+          {loading ? <div className="mt-5 rounded-3xl border border-white/50 bg-white/50 p-6 text-center backdrop-blur-xl md:border-gray-200 md:bg-gray-50"><div className="relative mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-inner"><div className="absolute h-16 w-16 animate-spin rounded-full border-4 border-gray-200 border-t-black"/><Timer className="relative h-7 w-7"/></div><p className="text-lg font-black tracking-[-0.03em]">Recherche des véhicules disponibles</p><p className="mt-1 text-sm text-gray-500">Vérification du trajet, de l’horaire, du vol et des passagers...</p></div> : <div className="mt-5 flex justify-end"><button onClick={findCars} className="inline-flex items-center justify-center gap-3 rounded-2xl bg-black px-7 py-4 text-xs font-black uppercase tracking-[0.14em] text-white shadow-xl transition hover:-translate-y-0.5">Voir les véhicules<ArrowRight size={16}/></button></div>}
         </div>
       </div>
     </section>
