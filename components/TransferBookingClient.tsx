@@ -21,28 +21,19 @@ function initialDateTime() {
   const d = new Date();
   d.setHours(d.getHours() + 2);
   const rounded = Math.ceil(d.getMinutes() / 10) * 10;
-  if (rounded === 60) {
-    d.setHours(d.getHours() + 1);
-    d.setMinutes(0, 0, 0);
-  } else {
-    d.setMinutes(rounded, 0, 0);
-  }
+  if (rounded === 60) { d.setHours(d.getHours() + 1); d.setMinutes(0, 0, 0); } else { d.setMinutes(rounded, 0, 0); }
   const local = new Date(d.getTime() - d.getTimezoneOffset() * 60000);
   return { date: local.toISOString().slice(0, 10), time: local.toISOString().slice(11, 16) };
 }
 function getTimeOptions(locale: Locale) {
   const options: Array<{ value: string; label: string }> = [];
-  for (let hour = 0; hour < 24; hour += 1) {
-    for (let minute = 0; minute < 60; minute += 10) {
-      const value = `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}`;
-      if (locale === 'en') {
-        const suffix = hour >= 12 ? 'PM' : 'AM';
-        const displayHour = hour % 12 === 0 ? 12 : hour % 12;
-        options.push({ value, label: `${displayHour}:${String(minute).padStart(2, '0')} ${suffix}` });
-      } else {
-        options.push({ value, label: value });
-      }
-    }
+  for (let hour = 0; hour < 24; hour += 1) for (let minute = 0; minute < 60; minute += 10) {
+    const value = `${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}`;
+    if (locale === 'en') {
+      const suffix = hour >= 12 ? 'PM' : 'AM';
+      const displayHour = hour % 12 === 0 ? 12 : hour % 12;
+      options.push({ value, label: `${displayHour}:${String(minute).padStart(2, '0')} ${suffix}` });
+    } else options.push({ value, label: value });
   }
   return options;
 }
@@ -50,10 +41,7 @@ function minutes(from: string, to: string) {
   const r = `${from} ${to}`.toLowerCase();
   const ist = r.includes('istanbul airport') || r.includes(' ist');
   const saw = r.includes('sabiha') || r.includes('saw');
-  if (ist && saw) return 120;
-  if (saw) return 90;
-  if (ist) return 75;
-  return 60;
+  if (ist && saw) return 120; if (saw) return 90; if (ist) return 75; return 60;
 }
 function billed(min: number) { return min <= 60 ? 60 : Math.ceil(min / 30) * 30; }
 function hourly(rate: number, h: number) { return Math.min(h, 2) * rate + Math.max(h - 2, 0) * rate * 0.8; }
@@ -121,6 +109,7 @@ export function TransferBookingClient({ locale = 'fr' }: { locale?: Locale }) {
         <div className="text-white">
           <div className="mb-4 inline-flex rounded-full bg-white px-4 py-2 text-[11px] font-black uppercase tracking-[0.18em] text-black">Istanbul airport transfer</div>
           <h1 className="max-w-3xl text-5xl font-black leading-[0.94] tracking-[-0.07em] md:text-7xl">Réservez votre chauffeur privé à Istanbul</h1>
+          <div className="transfer-mobile-image-card relative mt-5 hidden h-36 overflow-hidden rounded-[1.35rem] border border-white/25 bg-white/10 shadow-[0_18px_55px_rgba(0,0,0,0.28)] backdrop-blur md:hidden"><Image src="/images/home.driver.jpg" alt="Chauffeur privé Istanbul" fill className="object-cover" sizes="100vw" /><div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent" /></div>
           <p className="mt-5 max-w-xl text-base leading-8 text-white/85 md:text-xl">Adresse, date, passagers. Sélection du véhicule. Paiement carte. Confirmation immédiate.</p>
         </div>
         <div className="rounded-[28px] bg-white/95 p-4 shadow-[0_30px_110px_rgba(0,0,0,0.35)] backdrop-blur-xl md:p-6">
@@ -133,10 +122,14 @@ export function TransferBookingClient({ locale = 'fr' }: { locale?: Locale }) {
             <label><span className={labelClass}><MapPin size={14}/>Départ</span><input ref={pickupRef} list="transfer-hints" value={pickup} onChange={(e) => setPickup(e.target.value)} className={inputClass} placeholder="Adresse ou aéroport" /></label>
             <label><span className={labelClass}><MapPin size={14}/>Arrivée</span><input ref={dropRef} list="transfer-hints" value={drop} onChange={(e) => setDrop(e.target.value)} className={inputClass} placeholder="Adresse ou hôtel" /></label>
             <datalist id="transfer-hints">{hints.map((h) => <option key={h} value={h} />)}</datalist>
-            <label><span className={labelClass}><CalendarDays size={14}/>Date</span><input type="date" value={date} onChange={(e) => setDate(e.target.value)} className={inputClass} /></label>
-            <label><span className={labelClass}><Clock size={14}/>Heure</span><select value={time} onChange={(e) => setTime(e.target.value)} className={inputClass}>{timeOptions.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}</select></label>
-            <label className="md:col-span-1"><span className={labelClass}><Users size={14}/>Passagers</span><input type="number" min={1} max={12} value={pax} onChange={(e) => setPax(Number(e.target.value))} className={inputClass} /></label>
-            <label className="md:col-span-1"><span className={labelClass}><Plane size={14}/>Numéro de vol pour être accueilli</span><input value={flightNumber} onChange={(e) => setFlightNumber(e.target.value)} className={inputClass} placeholder="Optionnel — ex : TK1828" /></label>
+            <div className="transfer-mobile-pair grid gap-3 md:contents">
+              <label><span className={labelClass}><CalendarDays size={14}/>Date</span><input type="date" value={date} onChange={(e) => setDate(e.target.value)} className={inputClass} /></label>
+              <label><span className={labelClass}><Clock size={14}/>Heure</span><select value={time} onChange={(e) => setTime(e.target.value)} className={inputClass}>{timeOptions.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}</select></label>
+            </div>
+            <div className="transfer-mobile-pair grid gap-3 md:contents">
+              <label className="md:col-span-1"><span className={labelClass}><Users size={14}/>Passagers</span><input type="number" min={1} max={12} value={pax} onChange={(e) => setPax(Number(e.target.value))} className={inputClass} /></label>
+              <label className="md:col-span-1"><span className={labelClass}><Plane size={14}/>Numéro de vol pour être accueilli</span><input value={flightNumber} onChange={(e) => setFlightNumber(e.target.value)} className={inputClass} placeholder="Optionnel — ex : TK1828" /></label>
+            </div>
             {mode === 'hourly' && <label className="md:col-span-2"><span className={labelClass}><Clock size={14}/>Durée</span><select value={hours} onChange={(e) => setHours(Number(e.target.value))} className={inputClass}>{[2,3,4,5,6,8,12].map((h) => <option key={h} value={h}>{h} heures</option>)}</select></label>}
           </div>
           {loading ? <div className="mt-5 rounded-3xl border border-gray-200 bg-gray-50 p-6 text-center"><div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-inner"><div className="absolute h-16 w-16 animate-spin rounded-full border-4 border-gray-200 border-t-black"/><Timer className="relative h-7 w-7"/></div><p className="text-lg font-black tracking-[-0.03em]">Recherche des véhicules disponibles</p><p className="mt-1 text-sm text-gray-500">Vérification du trajet, de l’horaire, du vol et des passagers...</p></div> : <div className="mt-5 flex justify-end"><button onClick={findCars} className="inline-flex items-center justify-center gap-3 rounded-2xl bg-black px-7 py-4 text-xs font-black uppercase tracking-[0.14em] text-white shadow-xl transition hover:-translate-y-0.5">Voir les véhicules<ArrowRight size={16}/></button></div>}
