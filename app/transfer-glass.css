@@ -17,6 +17,7 @@ section:has(img[alt="Private driver Istanbul"]) .bg-white\/95 {
 
 section:has(img[alt="Private driver Istanbul"]) input,
 section:has(img[alt="Private driver Istanbul"]) select,
+section:has(img[alt="Private driver Istanbul"]) textarea,
 section:has(img[alt="Private driver Istanbul"]) .bg-gray-100 {
   background: rgba(255, 255, 255, 0.45) !important;
   border-color: rgba(255, 255, 255, 0.56) !important;
@@ -32,6 +33,25 @@ section:has(img[alt="Private driver Istanbul"]) input[type="date"]::-webkit-cale
 section:has(img[alt="Private driver Istanbul"]) input[type="time"]::-webkit-calendar-picker-indicator {
   opacity: 0.55;
   filter: invert(1);
+}
+
+/* Desktop: make native date/time controls feel more like modern app cards */
+@media (min-width: 768px) {
+  section:has(img[alt="Private driver Istanbul"]) input[type="date"],
+  section:has(img[alt="Private driver Istanbul"]) input[type="time"] {
+    min-height: 56px !important;
+    color: rgba(0, 0, 0, 0.92) !important;
+    font-size: 16px !important;
+    letter-spacing: -0.01em !important;
+  }
+
+  section:has(img[alt="Private driver Istanbul"]) input[type="date"]::-webkit-calendar-picker-indicator,
+  section:has(img[alt="Private driver Istanbul"]) input[type="time"]::-webkit-calendar-picker-indicator {
+    width: 22px !important;
+    height: 22px !important;
+    opacity: 0.75 !important;
+    filter: none !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -98,20 +118,36 @@ section:has(img[alt="Private driver Istanbul"]) input[type="time"]::-webkit-cale
 
   section:has(img[alt="Private driver Istanbul"]) input,
   section:has(img[alt="Private driver Istanbul"]) select,
+  section:has(img[alt="Private driver Istanbul"]) textarea,
   section:has(img[alt="Private driver Istanbul"]) button {
     width: 100% !important;
     max-width: 100% !important;
   }
 
   section:has(img[alt="Private driver Istanbul"]) input,
-  section:has(img[alt="Private driver Istanbul"]) select {
+  section:has(img[alt="Private driver Istanbul"]) select,
+  section:has(img[alt="Private driver Istanbul"]) textarea {
     height: 50px !important;
     min-width: 0 !important;
-    font-size: 13px !important;
+    font-size: 16px !important;
+    line-height: 1.25 !important;
     padding-left: 12px !important;
     padding-right: 12px !important;
     color: rgba(0, 0, 0, 0.92) !important;
-    background: rgba(255, 255, 255, 0.68) !important;
+    background: rgba(255, 255, 255, 0.70) !important;
+  }
+
+  section:has(img[alt="Private driver Istanbul"]) textarea {
+    min-height: 112px !important;
+    height: auto !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+
+  section:has(img[alt="Private driver Istanbul"]) input::placeholder,
+  section:has(img[alt="Private driver Istanbul"]) textarea::placeholder {
+    font-size: 15px !important;
+    color: rgba(0, 0, 0, 0.55) !important;
   }
 
   section:has(img[alt="Private driver Istanbul"]) input[type="date"],
