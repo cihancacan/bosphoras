@@ -37,10 +37,10 @@ section:has(img[alt="Private driver Istanbul"]) input[type="time"]::-webkit-cale
 @media (max-width: 767px) {
   section:has(img[alt="Private driver Istanbul"]) {
     min-height: auto !important;
-    padding-left: 12px !important;
-    padding-right: 12px !important;
-    padding-top: 92px !important;
-    padding-bottom: 24px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-top: 88px !important;
+    padding-bottom: 22px !important;
   }
 
   section:has(img[alt="Private driver Istanbul"]) > div:last-child {
@@ -53,7 +53,7 @@ section:has(img[alt="Private driver Istanbul"]) input[type="time"]::-webkit-cale
   }
 
   section:has(img[alt="Private driver Istanbul"]) h1 {
-    font-size: clamp(2.35rem, 12vw, 3.35rem) !important;
+    font-size: clamp(2.2rem, 11vw, 3.05rem) !important;
     line-height: 0.98 !important;
     letter-spacing: -0.055em !important;
     max-width: 100% !important;
@@ -65,41 +65,89 @@ section:has(img[alt="Private driver Istanbul"]) input[type="time"]::-webkit-cale
 
   section:has(img[alt="Private driver Istanbul"]) .bg-white\/95 {
     width: 100% !important;
-    max-width: 100% !important;
-    padding: 14px !important;
-    border-radius: 24px !important;
-    background: rgba(255, 255, 255, 0.34) !important;
-    -webkit-backdrop-filter: blur(34px) saturate(190%) !important;
-    backdrop-filter: blur(34px) saturate(190%) !important;
+    max-width: calc(100vw - 20px) !important;
+    padding: 12px !important;
+    border-radius: 22px !important;
+    background: rgba(255, 255, 255, 0.44) !important;
+    -webkit-backdrop-filter: blur(30px) saturate(185%) !important;
+    backdrop-filter: blur(30px) saturate(185%) !important;
   }
 
   section:has(img[alt="Private driver Istanbul"]) .grid {
     max-width: 100% !important;
   }
 
+  section:has(img[alt="Private driver Istanbul"]) .md\:grid-cols-2 {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  section:has(img[alt="Private driver Istanbul"]) label {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  section:has(img[alt="Private driver Istanbul"]) span[class*="text-gray-500"] {
+    color: rgba(0, 0, 0, 0.88) !important;
+    text-shadow: 0 1px 14px rgba(255, 255, 255, 0.95) !important;
+  }
+
+  section:has(img[alt="Private driver Istanbul"]) span[class*="text-gray-500"] svg {
+    color: rgba(0, 0, 0, 0.88) !important;
+  }
+
   section:has(img[alt="Private driver Istanbul"]) input,
   section:has(img[alt="Private driver Istanbul"]) select,
   section:has(img[alt="Private driver Istanbul"]) button {
+    width: 100% !important;
     max-width: 100% !important;
   }
 
   section:has(img[alt="Private driver Istanbul"]) input,
   section:has(img[alt="Private driver Istanbul"]) select {
-    height: 52px !important;
+    height: 50px !important;
+    min-width: 0 !important;
     font-size: 13px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    color: rgba(0, 0, 0, 0.92) !important;
+    background: rgba(255, 255, 255, 0.68) !important;
+  }
+
+  section:has(img[alt="Private driver Istanbul"]) input[type="date"],
+  section:has(img[alt="Private driver Istanbul"]) input[type="time"] {
+    min-width: 0 !important;
+    width: 100% !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+  }
+
+  section:has(img[alt="Private driver Istanbul"]) input[type="date"]::-webkit-date-and-time-value,
+  section:has(img[alt="Private driver Istanbul"]) input[type="time"]::-webkit-date-and-time-value {
+    text-align: left !important;
+    min-width: 0 !important;
+  }
+
+  section:has(img[alt="Private driver Istanbul"]) input[type="date"]::-webkit-calendar-picker-indicator,
+  section:has(img[alt="Private driver Istanbul"]) input[type="time"]::-webkit-calendar-picker-indicator {
+    width: 18px !important;
+    height: 18px !important;
+    margin-left: 0 !important;
+    opacity: 0.65 !important;
+    filter: none !important;
   }
 
   section:has(img[alt="Private driver Istanbul"]) .rounded-2xl {
-    border-radius: 16px !important;
+    border-radius: 15px !important;
   }
 
   section:has(img[alt="Private driver Istanbul"]) .rounded-\[28px\] {
-    border-radius: 24px !important;
+    border-radius: 22px !important;
   }
 
   section:has(img[alt="Private driver Istanbul"]) .tracking-\[0\.14em\],
   section:has(img[alt="Private driver Istanbul"]) .tracking-\[0\.18em\] {
-    letter-spacing: 0.10em !important;
+    letter-spacing: 0.08em !important;
   }
 
   section:has(img[alt="Private driver Istanbul"]) .text-\[11px\] {
