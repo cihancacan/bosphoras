@@ -69,11 +69,11 @@ section:has(img[alt="Private driver Istanbul"]) input[type="time"]::-webkit-cale
     max-width: 100% !important;
     display: flex !important;
     flex-direction: column !important;
-    gap: 18px !important;
+    gap: 14px !important;
   }
 
   section:has(img[alt="Private driver Istanbul"]) h1 {
-    font-size: clamp(2.2rem, 11vw, 3.05rem) !important;
+    font-size: clamp(2.05rem, 10.5vw, 2.95rem) !important;
     line-height: 0.98 !important;
     letter-spacing: -0.055em !important;
     max-width: 100% !important;
@@ -81,6 +81,12 @@ section:has(img[alt="Private driver Istanbul"]) input[type="time"]::-webkit-cale
 
   section:has(img[alt="Private driver Istanbul"]) p {
     max-width: 100% !important;
+    margin-top: 12px !important;
+    line-height: 1.55 !important;
+  }
+
+  section:has(img[alt="Private driver Istanbul"]) .transfer-mobile-image-card {
+    display: block !important;
   }
 
   section:has(img[alt="Private driver Istanbul"]) .bg-white\/95 {
@@ -101,10 +107,29 @@ section:has(img[alt="Private driver Istanbul"]) input[type="time"]::-webkit-cale
     grid-template-columns: minmax(0, 1fr) !important;
   }
 
+  section:has(img[alt="Private driver Istanbul"]) .transfer-mobile-pair {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    gap: 8px !important;
+  }
+
   section:has(img[alt="Private driver Istanbul"]) label {
     display: block !important;
     width: 100% !important;
     max-width: 100% !important;
+  }
+
+  section:has(img[alt="Private driver Istanbul"]) .transfer-mobile-pair label span {
+    font-size: 8.5px !important;
+    letter-spacing: 0.055em !important;
+    gap: 3px !important;
+    white-space: nowrap !important;
+  }
+
+  section:has(img[alt="Private driver Istanbul"]) .transfer-mobile-pair label span svg {
+    width: 11px !important;
+    height: 11px !important;
+    flex: 0 0 auto !important;
   }
 
   section:has(img[alt="Private driver Istanbul"]) span[class*="text-gray-500"] {
@@ -137,6 +162,18 @@ section:has(img[alt="Private driver Istanbul"]) input[type="time"]::-webkit-cale
     background: rgba(255, 255, 255, 0.70) !important;
   }
 
+  section:has(img[alt="Private driver Istanbul"]) .transfer-mobile-pair input,
+  section:has(img[alt="Private driver Istanbul"]) .transfer-mobile-pair select {
+    height: 46px !important;
+    font-size: 16px !important;
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+  }
+
+  section:has(img[alt="Private driver Istanbul"]) .transfer-mobile-pair input[type="number"] {
+    text-align: center !important;
+  }
+
   section:has(img[alt="Private driver Istanbul"]) textarea {
     min-height: 112px !important;
     height: auto !important;
@@ -146,8 +183,12 @@ section:has(img[alt="Private driver Istanbul"]) input[type="time"]::-webkit-cale
 
   section:has(img[alt="Private driver Istanbul"]) input::placeholder,
   section:has(img[alt="Private driver Istanbul"]) textarea::placeholder {
-    font-size: 15px !important;
+    font-size: 13px !important;
     color: rgba(0, 0, 0, 0.55) !important;
+  }
+
+  section:has(img[alt="Private driver Istanbul"]) .transfer-mobile-pair input::placeholder {
+    font-size: 11px !important;
   }
 
   section:has(img[alt="Private driver Istanbul"]) input[type="date"],
@@ -166,8 +207,8 @@ section:has(img[alt="Private driver Istanbul"]) input[type="time"]::-webkit-cale
 
   section:has(img[alt="Private driver Istanbul"]) input[type="date"]::-webkit-calendar-picker-indicator,
   section:has(img[alt="Private driver Istanbul"]) input[type="time"]::-webkit-calendar-picker-indicator {
-    width: 18px !important;
-    height: 18px !important;
+    width: 16px !important;
+    height: 16px !important;
     margin-left: 0 !important;
     opacity: 0.65 !important;
     filter: none !important;
