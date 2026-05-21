@@ -62,7 +62,6 @@ function eur(n: number) { return new Intl.NumberFormat('fr-FR', { style: 'curren
 export function TransferBookingClient({ locale = 'fr' }: { locale?: Locale }) {
   const init = useMemo(() => initialDateTime(), []);
   const timeOptions = useMemo(() => getTimeOptions(locale), [locale]);
-  const timeLabel = timeOptions.find((item) => item.value === time)?.label || time;
   const pickupRef = useRef<HTMLInputElement>(null);
   const dropRef = useRef<HTMLInputElement>(null);
   const [step, setStep] = useState<Step>(1);
@@ -72,6 +71,7 @@ export function TransferBookingClient({ locale = 'fr' }: { locale?: Locale }) {
   const [drop, setDrop] = useState('Hotel / Residence');
   const [date, setDate] = useState(init.date);
   const [time, setTime] = useState(init.time);
+  const timeLabel = timeOptions.find((item) => item.value === time)?.label || time;
   const [flightNumber, setFlightNumber] = useState('');
   const [pax, setPax] = useState(2);
   const [hours, setHours] = useState(2);
