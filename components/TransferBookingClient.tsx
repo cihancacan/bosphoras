@@ -55,6 +55,7 @@ export function TransferBookingClient({ locale = 'fr' }: { locale?: Locale }) {
   const timeOptions = useMemo(() => getTimeOptions(locale), [locale]);
   const pickupRef = useRef<HTMLInputElement>(null);
   const dropRef = useRef<HTMLInputElement>(null);
+  const lastStepRef = useRef<Step>(1);
   const [step, setStep] = useState<Step>(1);
   const [loading, setLoading] = useState(false);
   const [mode, setMode] = useState<Mode>('transfer');
@@ -72,6 +73,16 @@ export function TransferBookingClient({ locale = 'fr' }: { locale?: Locale }) {
   const [flowers, setFlowers] = useState(false);
   const [roses, setRoses] = useState(false);
   const [tip, setTip] = useState('');
+
+  useEffect(() => {
+    if (lastStepRef.current === step) return;
+    lastStepRef.current = step;
+    window.requestAnimationFrame(() => {
+      const target = document.getElementById('reservation');
+      const top = target ? target.getBoundingClientRect().top + window.scrollY - 72 : 0;
+      window.scrollTo({ top: Math.max(top, 0), behavior: 'smooth' });
+    });
+  }, [step]);
 
   useEffect(() => {
     const key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
