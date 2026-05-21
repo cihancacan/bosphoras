@@ -52,6 +52,7 @@ export function TransferBookingClient({ locale = 'fr' }: { locale?: Locale }) {
   const pickupRef = useRef<HTMLInputElement>(null);
   const dropRef = useRef<HTMLInputElement>(null);
   const lastStepRef = useRef<Step>(1);
+  const stepRef = useRef<Step>(1);
   const [step, setStep] = useState<Step>(1);
   const [loading, setLoading] = useState(false);
   const [mode, setMode] = useState<Mode>('transfer');
@@ -68,6 +69,30 @@ export function TransferBookingClient({ locale = 'fr' }: { locale?: Locale }) {
   const [flowers, setFlowers] = useState(false);
   const [roses, setRoses] = useState(false);
   const [tip, setTip] = useState('');
+
+  useEffect(() => { stepRef.current = step; }, [step]);
+
+  useEffect(() => {
+    const state = { ...(window.history.state || {}), bosphorasTransferTunnel: true };
+    window.history.replaceState(state, '', window.location.href);
+    window.history.pushState(state, '', window.location.href);
+
+    const onPopState = () => {
+      const current = stepRef.current;
+      if (current === 3) {
+        setVehicleId(null);
+        setStep(2);
+      } else if (current === 2) {
+        setStep(1);
+      } else {
+        setStep(1);
+      }
+      window.history.pushState(state, '', window.location.href);
+    };
+
+    window.addEventListener('popstate', onPopState);
+    return () => window.removeEventListener('popstate', onPopState);
+  }, []);
 
   useEffect(() => {
     if (lastStepRef.current === step) return;
