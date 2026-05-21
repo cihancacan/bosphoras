@@ -9,6 +9,29 @@ section:has(img[alt="Chauffeur privé Istanbul"]) * {
   min-width: 0;
 }
 
+@media (max-width: 767px) {
+  html,
+  body {
+    -webkit-text-size-adjust: 100% !important;
+    text-size-adjust: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  input,
+  select,
+  textarea {
+    font-size: 16px !important;
+    transform: translateZ(0) !important;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    touch-action: manipulation !important;
+  }
+}
+
 /* Desktop glass: light smoky premium panel over the hero image */
 @media (min-width: 768px) {
   section:has(img[alt="Private driver Istanbul"]) .md\:bg-white\/55,
