@@ -1,0 +1,18 @@
+section:has(img[alt="Private driver Istanbul"]) .bg-white\/95 {
+  background: rgba(255, 255, 255, 0.58) !important;
+  border: 1px solid rgba(255, 255, 255, 0.62) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(175%) !important;
+  backdrop-filter: blur(28px) saturate(175%) !important;
+}
+
+section:has(img[alt="Private driver Istanbul"]) input,
+section:has(img[alt="Private driver Istanbul"]) select,
+section:has(img[alt="Private driver Istanbul"]) .bg-gray-100 {
+  background: rgba(255, 255, 255, 0.72) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+section:has(img[alt="Private driver Istanbul"]) .bg-gray-50 {
+  background: rgba(255, 255, 255, 0.68) !important;
+}
