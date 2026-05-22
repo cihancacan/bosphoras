@@ -2,6 +2,22 @@
 
 import { useEffect } from 'react';
 
+const countryDialCodes = [
+  { code: '+33', flag: '🇫🇷', label: 'France' },
+  { code: '+90', flag: '🇹🇷', label: 'Turkey' },
+  { code: '+7', flag: '🇰🇿', label: 'Kazakhstan' },
+  { code: '+44', flag: '🇬🇧', label: 'United Kingdom' },
+  { code: '+49', flag: '🇩🇪', label: 'Germany' },
+  { code: '+34', flag: '🇪🇸', label: 'Spain' },
+  { code: '+39', flag: '🇮🇹', label: 'Italy' },
+  { code: '+351', flag: '🇵🇹', label: 'Portugal' },
+  { code: '+971', flag: '🇦🇪', label: 'UAE' },
+  { code: '+1', flag: '🇺🇸', label: 'USA / Canada' },
+  { code: '+966', flag: '🇸🇦', label: 'Saudi Arabia' },
+  { code: '+86', flag: '🇨🇳', label: 'China' },
+  { code: '+7', flag: '🇷🇺', label: 'Russia' },
+];
+
 function euroToNumber(value: string) {
   const cleaned = value.replace(/[^0-9,.-]/g, '').replace(',', '.');
   const amount = Number(cleaned);
@@ -24,6 +40,28 @@ function getInputValue(placeholder: string) {
   return getInput(placeholder)?.value?.trim() || '';
 }
 
+function getPhoneInput() {
+  return Array.from(document.querySelectorAll('input')).find((el) =>
+    el.placeholder?.toLowerCase().includes('téléphone') ||
+    el.placeholder?.toLowerCase().includes('numero') ||
+    el.placeholder?.toLowerCase().includes('numéro') ||
+    el.dataset.transferPhone === 'true'
+  ) as HTMLInputElement | undefined;
+}
+
+function getDialSelect() {
+  return document.querySelector('[data-transfer-dial-code="true"]') as HTMLSelectElement | null;
+}
+
+function buildInternationalPhone() {
+  const phone = getPhoneInput();
+  const dial = getDialSelect()?.value || '';
+  const raw = phone?.value.trim() || '';
+  if (raw.startsWith('+')) return raw.replace(/[\s().-]/g, '');
+  const local = raw.replace(/[^0-9]/g, '').replace(/^0+/, '');
+  return `${dial}${local}`;
+}
+
 function parseRoute(routeText: string) {
   const [pickup, dropoff] = routeText.split('→').map((part) => part.trim());
   return { pickup: pickup || '', dropoff: dropoff || '' };
@@ -38,17 +76,18 @@ function parseDuration(durationText: string) {
   };
 }
 
-function findPaymentButton() {
-  return Array.from(document.querySelectorAll('button')).find((button) =>
-    button.textContent?.trim().toLowerCase().includes('payer et confirmer')
-  ) as HTMLButtonElement | undefined;
-}
-
 function markField(input: HTMLInputElement | HTMLTextAreaElement | undefined, invalid: boolean) {
   if (!input) return;
   input.style.borderColor = invalid ? '#dc2626' : '';
   input.style.boxShadow = invalid ? '0 0 0 4px rgba(220,38,38,0.10)' : '';
   input.setAttribute('aria-invalid', invalid ? 'true' : 'false');
+}
+
+function markDialSelect(invalid: boolean) {
+  const select = getDialSelect();
+  if (!select) return;
+  select.style.borderColor = invalid ? '#dc2626' : '';
+  select.style.boxShadow = invalid ? '0 0 0 4px rgba(220,38,38,0.10)' : '';
 }
 
 function isValidEmail(email: string) {
@@ -62,16 +101,16 @@ function isValidInternationalPhone(phone: string) {
 
 function requirePassengerDetails() {
   const fields = {
-    lastName: getInput('Nom'),
-    firstName: getInput('Prénom'),
-    phone: getInput('Téléphone'),
-    email: getInput('Email'),
+    lastName: getInput('Nom *') || getInput('Nom'),
+    firstName: getInput('Prénom *') || getInput('Prénom'),
+    phone: getPhoneInput(),
+    email: getInput('Email *') || getInput('Email'),
   };
 
   const values = {
     lastName: fields.lastName?.value.trim() || '',
     firstName: fields.firstName?.value.trim() || '',
-    phone: fields.phone?.value.trim() || '',
+    phone: buildInternationalPhone(),
     email: fields.email?.value.trim() || '',
   };
 
@@ -85,10 +124,11 @@ function requirePassengerDetails() {
   markField(fields.firstName, invalidFirstName);
   markField(fields.phone, invalidPhone);
   markField(fields.email, invalidEmail);
+  markDialSelect(invalidPhone);
 
   if (invalidLastName) errors.push('Nom');
   if (invalidFirstName) errors.push('Prénom');
-  if (invalidPhone) errors.push('Téléphone avec code pays, exemple +33 6 12 34 56 78');
+  if (invalidPhone) errors.push('Téléphone avec indicatif pays, exemple +33 6 12 34 56 78');
   if (invalidEmail) errors.push('Adresse email valide');
 
   if (errors.length) {
@@ -100,11 +140,32 @@ function requirePassengerDetails() {
   return values;
 }
 
+function createDialSelect() {
+  const select = document.createElement('select');
+  select.dataset.transferDialCode = 'true';
+  select.className = 'h-14 rounded-2xl border border-gray-200 bg-gray-50 px-3 text-sm font-black text-gray-900 outline-none focus:border-black';
+  select.setAttribute('aria-label', 'Indicatif pays');
+  select.style.minWidth = '116px';
+
+  countryDialCodes.forEach((country) => {
+    const option = document.createElement('option');
+    option.value = country.code;
+    option.textContent = `${country.flag} ${country.code}`;
+    option.title = country.label;
+    select.appendChild(option);
+  });
+
+  select.value = '+33';
+  return select;
+}
+
 function modernizePassengerFields() {
   const phone = getInput('Téléphone') as HTMLInputElement | undefined;
-  const email = getInput('Email') as HTMLInputElement | undefined;
-  const lastName = getInput('Nom') as HTMLInputElement | undefined;
-  const firstName = getInput('Prénom') as HTMLInputElement | undefined;
+  const currentPhone = getPhoneInput();
+  const targetPhone = phone || currentPhone;
+  const email = (getInput('Email') || getInput('Email *')) as HTMLInputElement | undefined;
+  const lastName = (getInput('Nom') || getInput('Nom *')) as HTMLInputElement | undefined;
+  const firstName = (getInput('Prénom') || getInput('Prénom *')) as HTMLInputElement | undefined;
 
   if (lastName) {
     lastName.placeholder = 'Nom *';
@@ -116,12 +177,22 @@ function modernizePassengerFields() {
     firstName.required = true;
     firstName.autocomplete = 'given-name';
   }
-  if (phone) {
-    phone.placeholder = 'Téléphone avec code pays *  ex: +33 6 12 34 56 78';
-    phone.required = true;
-    phone.type = 'tel';
-    phone.inputMode = 'tel';
-    phone.autocomplete = 'tel';
+  if (targetPhone) {
+    targetPhone.placeholder = 'Numéro de téléphone *';
+    targetPhone.required = true;
+    targetPhone.type = 'tel';
+    targetPhone.inputMode = 'tel';
+    targetPhone.autocomplete = 'tel-national';
+    targetPhone.dataset.transferPhone = 'true';
+
+    if (!targetPhone.parentElement?.dataset.transferPhoneGroup) {
+      const wrapper = document.createElement('div');
+      wrapper.dataset.transferPhoneGroup = 'true';
+      wrapper.className = 'grid grid-cols-[116px_1fr] gap-2 md:col-span-2';
+      targetPhone.parentElement?.insertBefore(wrapper, targetPhone);
+      wrapper.appendChild(createDialSelect());
+      wrapper.appendChild(targetPhone);
+    }
   }
   if (email) {
     email.placeholder = 'Email *';
