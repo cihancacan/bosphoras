@@ -3,6 +3,11 @@ import { NextResponse } from 'next/server';
 type VehicleId = 'e' | 's' | 'viano' | 'sprinter';
 type Mode = 'transfer' | 'hourly';
 
+type RouteInfo = {
+  minutes: number;
+  distanceMeters: number | null;
+};
+
 const VEHICLE_RATES: Record<VehicleId, number> = {
   e: 250,
   s: 400,
@@ -23,6 +28,10 @@ function fallbackMinutes(pickup: string, dropoff: string) {
   return 60;
 }
 
+function fallbackDistanceKm(minutes: number) {
+  return Math.max(18, Math.round(minutes * 0.72));
+}
+
 function billedMinutes(minutes: number) {
   return minutes <= 60 ? 60 : Math.ceil(minutes / 30) * 30;
 }
@@ -40,7 +49,7 @@ function estimateTollPrice(pickup: string, dropoff: string) {
   return 15;
 }
 
-async function getGoogleRouteMinutes(pickup: string, dropoff: string) {
+async function getGoogleRouteInfo(pickup: string, dropoff: string): Promise<RouteInfo | null> {
   const apiKey = process.env.GOOGLE_MAPS_SERVER_API_KEY;
   if (!apiKey) return null;
 
@@ -65,11 +74,17 @@ async function getGoogleRouteMinutes(pickup: string, dropoff: string) {
 
   if (!response.ok) return null;
   const data = await response.json();
-  const duration = data?.routes?.[0]?.duration;
+  const route = data?.routes?.[0];
+  const duration = route?.duration;
+  const distanceMeters = Number(route?.distanceMeters);
   if (typeof duration !== 'string') return null;
   const seconds = Number(duration.replace('s', ''));
   if (!Number.isFinite(seconds) || seconds <= 0) return null;
-  return Math.ceil(seconds / 60);
+
+  return {
+    minutes: Math.ceil(seconds / 60),
+    distanceMeters: Number.isFinite(distanceMeters) && distanceMeters > 0 ? distanceMeters : null,
+  };
 }
 
 export async function POST(request: Request) {
@@ -86,17 +101,21 @@ export async function POST(request: Request) {
     }
 
     const rate = VEHICLE_RATES[vehicleId] || VEHICLE_RATES.e;
-    const googleMinutes = await getGoogleRouteMinutes(pickup, dropoff);
-    const estimatedMinutes = googleMinutes || fallbackMinutes(pickup, dropoff);
+    const googleRoute = await getGoogleRouteInfo(pickup, dropoff);
+    const estimatedMinutes = googleRoute?.minutes || fallbackMinutes(pickup, dropoff);
+    const distanceKm = googleRoute?.distanceMeters
+      ? Math.round((googleRoute.distanceMeters / 1000) * 10) / 10
+      : fallbackDistanceKm(estimatedMinutes);
     const billed = billedMinutes(estimatedMinutes);
     const vehiclePrice = mode === 'transfer' ? Math.round(rate * (billed / 60)) : Math.round(hourlyPrice(rate, hours));
     const tollPrice = estimateTollPrice(pickup, dropoff);
     const total = vehiclePrice + tollPrice;
 
     return NextResponse.json({
-      source: googleMinutes ? 'google_routes' : 'fallback',
+      source: googleRoute ? 'google_routes' : 'fallback',
       estimatedMinutes,
       billedMinutes: billed,
+      distanceKm,
       vehiclePrice,
       tollPrice,
       total,
