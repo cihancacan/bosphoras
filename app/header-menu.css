@@ -57,18 +57,18 @@ header a[href="/ar/istanbul-airport-transfer"]:not([role="option"]):not([lang]):
 }
 
 @media (max-width: 1023px) {
-  header div:has(> a[href="/transferts-istanbul"]),
-  header div:has(> a[href="/en/istanbul-airport-transfer"]),
-  header div:has(> a[href="/ru/transfer-aeroport-stambul"]),
-  header div:has(> a[href="/ar/istanbul-airport-transfer"]) {
+  header div:has(> a[href="/transferts-istanbul"]:not([role="option"]):not([lang])),
+  header div:has(> a[href="/en/istanbul-airport-transfer"]:not([role="option"]):not([lang])),
+  header div:has(> a[href="/ru/transfer-aeroport-stambul"]:not([role="option"]):not([lang])),
+  header div:has(> a[href="/ar/istanbul-airport-transfer"]:not([role="option"]):not([lang])) {
     display: flex !important;
     flex-direction: column !important;
   }
 
-  header a[href="/transferts-istanbul"],
-  header a[href="/en/istanbul-airport-transfer"],
-  header a[href="/ru/transfer-aeroport-stambul"],
-  header a[href="/ar/istanbul-airport-transfer"] {
+  header a[href="/transferts-istanbul"]:not([role="option"]):not([lang]),
+  header a[href="/en/istanbul-airport-transfer"]:not([role="option"]):not([lang]),
+  header a[href="/ru/transfer-aeroport-stambul"]:not([role="option"]):not([lang]),
+  header a[href="/ar/istanbul-airport-transfer"]:not([role="option"]):not([lang]) {
     order: 99 !important;
     margin-top: 0.45rem !important;
     margin-bottom: 0.25rem !important;
@@ -82,10 +82,10 @@ header a[href="/ar/istanbul-airport-transfer"]:not([role="option"]):not([lang]):
     position: relative !important;
   }
 
-  header a[href="/transferts-istanbul"]::before,
-  header a[href="/en/istanbul-airport-transfer"]::before,
-  header a[href="/ru/transfer-aeroport-stambul"]::before,
-  header a[href="/ar/istanbul-airport-transfer"]::before {
+  header a[href="/transferts-istanbul"]:not([role="option"]):not([lang])::before,
+  header a[href="/en/istanbul-airport-transfer"]:not([role="option"]):not([lang])::before,
+  header a[href="/ru/transfer-aeroport-stambul"]:not([role="option"]):not([lang])::before,
+  header a[href="/ar/istanbul-airport-transfer"]:not([role="option"]):not([lang])::before {
     content: "VIP";
     position: absolute;
     right: 0.85rem;
