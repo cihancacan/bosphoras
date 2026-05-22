@@ -1,13 +1,12 @@
 import type { Metadata } from 'next';
 import { CheckCircle2 } from 'lucide-react';
 import type { Locale } from '@/lib/i18n';
-import { Header } from '@/components/Header';
-import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 import { TransferBookingClient } from '@/components/TransferBookingClient';
-import { TransferHeaderSlogan } from '@/components/TransferHeaderSlogan';
 import { TransferQuoteEnhancer } from '@/components/TransferQuoteEnhancer';
 import { TransferCheckoutEnhancer } from '@/components/TransferCheckoutEnhancer';
+import { TransferOnlyHeader } from '@/components/TransferOnlyHeader';
+import { TransferOnlyFooter } from '@/components/TransferOnlyFooter';
 import { buildMetadata, breadcrumbSchema, faqSchema, organizationSchema, serviceSchema, websiteSchema } from '@/lib/seo';
 import { siteUrl } from '@/lib/routes';
 
@@ -16,6 +15,18 @@ const paths: Record<Locale, string> = {
   en: '/en/istanbul-airport-transfer',
   ru: '/ru/transfer-aeroport-stambul',
   ar: '/ar/istanbul-airport-transfer',
+};
+
+const extendedAlternates = {
+  fr: `${siteUrl}/transferts-istanbul`,
+  en: `${siteUrl}/en/istanbul-airport-transfer`,
+  ru: `${siteUrl}/ru/transfer-aeroport-stambul`,
+  ar: `${siteUrl}/ar/istanbul-airport-transfer`,
+  zh: `${siteUrl}/zh/istanbul-airport-transfer`,
+  de: `${siteUrl}/de/flughafentransfer-istanbul`,
+  es: `${siteUrl}/es/traslado-aeropuerto-estambul`,
+  it: `${siteUrl}/it/transfer-aeroporto-istanbul`,
+  pt: `${siteUrl}/pt/transfer-aeroporto-istambul`,
 };
 
 const titles: Record<Locale, string> = {
@@ -52,7 +63,7 @@ export function buildTransferMetadata(locale: Locale): Metadata {
     path: paths[locale],
     title: titles[locale],
     description: descriptions[locale],
-    alternates: { fr: `${siteUrl}${paths.fr}`, en: `${siteUrl}${paths.en}`, ru: `${siteUrl}${paths.ru}`, ar: `${siteUrl}${paths.ar}` },
+    alternates: extendedAlternates,
   });
 }
 
@@ -61,10 +72,11 @@ export function IstanbulTransferPageShell({ locale }: { locale: Locale }) {
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: titles[locale],
-    serviceType: ['Istanbul airport transfer', 'Private chauffeur Istanbul', 'VIP transfer Istanbul', 'Hourly chauffeur Istanbul'],
+    serviceType: ['Istanbul airport transfer', 'Private chauffeur Istanbul', 'VIP transfer Istanbul', 'Hourly chauffeur Istanbul', 'IST airport transfer', 'SAW airport transfer'],
     description: descriptions[locale],
     url: `${siteUrl}${paths[locale]}`,
     areaServed: [{ '@type': 'City', name: 'Istanbul' }, { '@type': 'Airport', name: 'Istanbul Airport IST' }, { '@type': 'Airport', name: 'Sabiha Gökçen International Airport SAW' }],
+    availableLanguage: ['French', 'English', 'Russian', 'Arabic', 'Chinese', 'German', 'Spanish', 'Italian', 'Portuguese'],
     offers: [
       { '@type': 'Offer', name: 'Mercedes Classe E or similar', priceCurrency: 'EUR', price: '250', unitText: 'hour' },
       { '@type': 'Offer', name: 'Mercedes Classe S or similar', priceCurrency: 'EUR', price: '400', unitText: 'hour' },
@@ -75,14 +87,13 @@ export function IstanbulTransferPageShell({ locale }: { locale: Locale }) {
 
   return (
     <>
-      <StructuredData data={[organizationSchema(), websiteSchema(), serviceSchema({ name: titles[locale], description: descriptions[locale], url: `${siteUrl}${paths[locale]}` }), schema, faqSchema(faqs), breadcrumbSchema([{ name: 'Bosphoras', url: siteUrl }, { name: titles[locale], url: `${siteUrl}${paths[locale]}` }])]} />
-      <Header locale={locale} currentPath={paths[locale]} />
-      <TransferHeaderSlogan locale={locale} />
+      <StructuredData data={[organizationSchema(), websiteSchema(), serviceSchema({ name: titles[locale], description: descriptions[locale], url: `${siteUrl}${paths[locale]}` }), schema, faqSchema(faqs), breadcrumbSchema([{ name: 'Bosphoras Transfer', url: `${siteUrl}${paths[locale]}` }, { name: titles[locale], url: `${siteUrl}${paths[locale]}` }])]} />
+      <TransferOnlyHeader locale={locale} />
       <main className="bg-white text-[#111827]">
         <TransferBookingClient locale={locale} />
         <TransferQuoteEnhancer />
         <TransferCheckoutEnhancer />
-        <section className="bg-white px-5 py-12 md:px-8 md:py-20">
+        <section id="airports" className="bg-white px-5 py-12 md:px-8 md:py-20">
           <div className="mx-auto max-w-[1180px] rounded-[2rem] border border-[#e5e7eb] bg-[#fafafa] p-6 md:p-10">
             <p className="mb-3 text-xs font-black uppercase tracking-[0.20em] text-[#6b7280]">SEO / AI friendly</p>
             <h2 className="max-w-4xl text-3xl font-black tracking-[-0.04em] text-[#111827] md:text-5xl">{locale === 'fr' ? 'Transfert aéroport Istanbul, chauffeur privé et réservation à l’heure.' : 'Istanbul airport transfer, private chauffeur and hourly booking.'}</h2>
@@ -91,7 +102,7 @@ export function IstanbulTransferPageShell({ locale }: { locale: Locale }) {
             </div>
           </div>
         </section>
-        <section className="bg-white px-5 pb-16 md:px-8 md:pb-24">
+        <section id="transfer-faq" className="bg-white px-5 pb-16 md:px-8 md:pb-24">
           <div className="mx-auto max-w-[1180px]">
             <h2 className="text-3xl font-black tracking-[-0.04em] text-[#111827] md:text-5xl">FAQ</h2>
             <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -100,7 +111,7 @@ export function IstanbulTransferPageShell({ locale }: { locale: Locale }) {
           </div>
         </section>
       </main>
-      <Footer locale={locale} />
+      <TransferOnlyFooter locale={locale} />
     </>
   );
 }
