@@ -7,6 +7,7 @@ import { StructuredData } from '@/components/StructuredData';
 import { TransferBookingClient } from '@/components/TransferBookingClient';
 import { TransferHeaderSlogan } from '@/components/TransferHeaderSlogan';
 import { TransferQuoteEnhancer } from '@/components/TransferQuoteEnhancer';
+import { TransferCheckoutEnhancer } from '@/components/TransferCheckoutEnhancer';
 import { buildMetadata, breadcrumbSchema, faqSchema, organizationSchema, serviceSchema, websiteSchema } from '@/lib/seo';
 import { siteUrl } from '@/lib/routes';
 
@@ -80,6 +81,7 @@ export function IstanbulTransferPageShell({ locale }: { locale: Locale }) {
       <main className="bg-white text-[#111827]">
         <TransferBookingClient locale={locale} />
         <TransferQuoteEnhancer />
+        <TransferCheckoutEnhancer />
         <section className="bg-white px-5 py-12 md:px-8 md:py-20">
           <div className="mx-auto max-w-[1180px] rounded-[2rem] border border-[#e5e7eb] bg-[#fafafa] p-6 md:p-10">
             <p className="mb-3 text-xs font-black uppercase tracking-[0.20em] text-[#6b7280]">SEO / AI friendly</p>
