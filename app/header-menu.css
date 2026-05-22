@@ -1,9 +1,15 @@
-header div:has(> a[href="/transferts-istanbul"]:not([role="option"]):not([lang])) {
+header div:has(> a[href="/transferts-istanbul"]:not([role="option"]):not([lang])),
+header div:has(> a[href="/en/istanbul-airport-transfer"]:not([role="option"]):not([lang])),
+header div:has(> a[href="/ru/transfer-aeroport-stambul"]:not([role="option"]):not([lang])),
+header div:has(> a[href="/ar/istanbul-airport-transfer"]:not([role="option"]):not([lang])) {
   display: flex !important;
   flex-direction: column !important;
 }
 
-header a[href="/transferts-istanbul"]:not([role="option"]):not([lang]) {
+header a[href="/transferts-istanbul"]:not([role="option"]):not([lang]),
+header a[href="/en/istanbul-airport-transfer"]:not([role="option"]):not([lang]),
+header a[href="/ru/transfer-aeroport-stambul"]:not([role="option"]):not([lang]),
+header a[href="/ar/istanbul-airport-transfer"]:not([role="option"]):not([lang]) {
   order: 99 !important;
   margin-top: 0.35rem !important;
   border: 1px solid rgba(214, 164, 72, 0.34) !important;
@@ -12,15 +18,24 @@ header a[href="/transferts-istanbul"]:not([role="option"]):not([lang]) {
   color: hsl(42, 65%, 58%) !important;
 }
 
-header a[href="/transferts-istanbul"]:not([role="option"]):not([lang]) span:first-child {
+header a[href="/transferts-istanbul"]:not([role="option"]):not([lang]) span:first-child,
+header a[href="/en/istanbul-airport-transfer"]:not([role="option"]):not([lang]) span:first-child,
+header a[href="/ru/transfer-aeroport-stambul"]:not([role="option"]):not([lang]) span:first-child,
+header a[href="/ar/istanbul-airport-transfer"]:not([role="option"]):not([lang]) span:first-child {
   color: hsl(42, 65%, 58%) !important;
 }
 
-header a[href="/transferts-istanbul"]:not([role="option"]):not([lang]) span:last-child {
+header a[href="/transferts-istanbul"]:not([role="option"]):not([lang]) span:last-child,
+header a[href="/en/istanbul-airport-transfer"]:not([role="option"]):not([lang]) span:last-child,
+header a[href="/ru/transfer-aeroport-stambul"]:not([role="option"]):not([lang]) span:last-child,
+header a[href="/ar/istanbul-airport-transfer"]:not([role="option"]):not([lang]) span:last-child {
   color: rgba(248, 230, 185, 0.74) !important;
 }
 
-header a[href="/transferts-istanbul"]:not([role="option"]):not([lang])::before {
+header a[href="/transferts-istanbul"]:not([role="option"]):not([lang])::before,
+header a[href="/en/istanbul-airport-transfer"]:not([role="option"]):not([lang])::before,
+header a[href="/ru/transfer-aeroport-stambul"]:not([role="option"]):not([lang])::before,
+header a[href="/ar/istanbul-airport-transfer"]:not([role="option"]):not([lang])::before {
   content: "VIP";
   float: right;
   margin-left: 0.6rem;
@@ -33,7 +48,56 @@ header a[href="/transferts-istanbul"]:not([role="option"]):not([lang])::before {
   letter-spacing: 0.12em;
 }
 
-header a[href="/transferts-istanbul"]:not([role="option"]):not([lang]):hover {
+header a[href="/transferts-istanbul"]:not([role="option"]):not([lang]):hover,
+header a[href="/en/istanbul-airport-transfer"]:not([role="option"]):not([lang]):hover,
+header a[href="/ru/transfer-aeroport-stambul"]:not([role="option"]):not([lang]):hover,
+header a[href="/ar/istanbul-airport-transfer"]:not([role="option"]):not([lang]):hover {
   background: linear-gradient(135deg, rgba(214, 164, 72, 0.22), rgba(214, 164, 72, 0.08)) !important;
   border-color: rgba(214, 164, 72, 0.58) !important;
+}
+
+@media (max-width: 1023px) {
+  header div:has(> a[href="/transferts-istanbul"]),
+  header div:has(> a[href="/en/istanbul-airport-transfer"]),
+  header div:has(> a[href="/ru/transfer-aeroport-stambul"]),
+  header div:has(> a[href="/ar/istanbul-airport-transfer"]) {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  header a[href="/transferts-istanbul"],
+  header a[href="/en/istanbul-airport-transfer"],
+  header a[href="/ru/transfer-aeroport-stambul"],
+  header a[href="/ar/istanbul-airport-transfer"] {
+    order: 99 !important;
+    margin-top: 0.45rem !important;
+    margin-bottom: 0.25rem !important;
+    border: 1px solid rgba(214, 164, 72, 0.42) !important;
+    border-radius: 1rem !important;
+    background: linear-gradient(135deg, rgba(214, 164, 72, 0.18), rgba(214, 164, 72, 0.06)) !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+    color: hsl(42, 70%, 62%) !important;
+    font-weight: 800 !important;
+    padding: 0.85rem 1rem !important;
+    position: relative !important;
+  }
+
+  header a[href="/transferts-istanbul"]::before,
+  header a[href="/en/istanbul-airport-transfer"]::before,
+  header a[href="/ru/transfer-aeroport-stambul"]::before,
+  header a[href="/ar/istanbul-airport-transfer"]::before {
+    content: "VIP";
+    position: absolute;
+    right: 0.85rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 999px;
+    background: rgba(214, 164, 72, 0.18);
+    border: 1px solid rgba(214, 164, 72, 0.35);
+    padding: 0.2rem 0.45rem;
+    color: hsl(42, 72%, 66%);
+    font-size: 0.56rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+  }
 }
