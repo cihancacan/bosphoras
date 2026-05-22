@@ -24,7 +24,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'stripe_not_configured' }, { status: 500 });
     }
 
-    const stripe = new Stripe(secretKey, { apiVersion: '2024-12-18.acacia' });
+    const stripe = new Stripe(secretKey);
     const body = await request.json();
     const total = sanitizeAmount(body.total);
 
@@ -47,8 +47,8 @@ export async function POST(request: Request) {
     const baseUrl = getBaseUrl(request);
 
     const extraItems: CheckoutItem[] = [];
-    if (tollPrice > 0) extraItems.push({ label: `Péage inclus`, amount: tollPrice });
-    if (tip > 0) extraItems.push({ label: `Pourboire chauffeur`, amount: tip });
+    if (tollPrice > 0) extraItems.push({ label: 'Péage inclus', amount: tollPrice });
+    if (tip > 0) extraItems.push({ label: 'Pourboire chauffeur', amount: tip });
 
     const descriptionParts = [
       `${pickup} → ${dropoff}`,
