@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { ChevronDown, Menu, Route, ShieldCheck, X, Zap } from 'lucide-react';
+import { ChevronDown, Menu, ShieldCheck, X, Zap } from 'lucide-react';
 
 type TransferLocale = 'fr' | 'en' | 'ru' | 'ar' | 'zh' | 'de' | 'es' | 'it' | 'pt';
 
@@ -34,18 +34,11 @@ function normalizeLocale(locale: string): TransferLocale {
   return transferLocales.some((item) => item.code === locale) ? (locale as TransferLocale) : 'en';
 }
 
-function MobilityLogo() {
+function BosphorasLogo() {
   return (
-    <div className="flex items-center gap-3">
-      <div className="relative flex h-11 w-11 items-center justify-center overflow-hidden rounded-2xl bg-[#0b1220] shadow-[0_18px_40px_rgba(15,23,42,0.22)]">
-        <div className="absolute inset-x-2 top-2 h-px bg-cyan-300/70" />
-        <Route className="h-5 w-5 text-white" strokeWidth={2.5} />
-        <div className="absolute bottom-2 h-1 w-6 rounded-full bg-cyan-300/70" />
-      </div>
-      <div className="leading-none">
-        <div className="text-[1.02rem] font-black uppercase tracking-[-0.03em] text-[#0b1220] md:text-[1.14rem]">Bosphoras Mobility</div>
-        <div className="mt-1 text-[0.58rem] font-black uppercase tracking-[0.23em] text-slate-500">Private Mobility Istanbul</div>
-      </div>
+    <div className="flex flex-col leading-none">
+      <span className="font-serif text-[1.18rem] font-normal uppercase tracking-[0.22em] text-[#0b1220] transition-colors group-hover:text-slate-700 md:text-[1.36rem]">Bosphoras</span>
+      <span className="mt-1 text-[0.55rem] font-black uppercase tracking-[0.30em] text-slate-500">Private Mobility Istanbul</span>
     </div>
   );
 }
@@ -64,26 +57,26 @@ export function TransferOnlyHeader({ locale = 'fr' }: { locale?: string }) {
   ];
 
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 border-b border-slate-200/70 bg-white/88 shadow-[0_10px_35px_rgba(15,23,42,0.07)] backdrop-blur-2xl">
+    <header className="fixed left-0 right-0 top-0 z-50 border-b border-slate-200/70 bg-white/90 shadow-[0_10px_35px_rgba(15,23,42,0.06)] backdrop-blur-2xl">
       <div className="mx-auto flex h-[4.65rem] max-w-[1180px] items-center justify-between px-4 md:h-[5.15rem] md:px-8">
-        <a href="#reservation" aria-label="Bosphoras Mobility — Private Mobility Istanbul" className="transition hover:opacity-90">
-          <MobilityLogo />
+        <a href="#reservation" aria-label="Bosphoras — Private Mobility Istanbul" className="group transition hover:opacity-90">
+          <BosphorasLogo />
         </a>
 
-        <nav className="hidden items-center gap-1 rounded-full border border-slate-200/80 bg-white/70 p-1 shadow-[0_10px_30px_rgba(15,23,42,0.05)] lg:flex" aria-label="Istanbul transfer navigation">
+        <nav className="hidden items-center gap-1 rounded-full border border-slate-200/80 bg-white/70 p-1 shadow-[0_10px_30px_rgba(15,23,42,0.04)] lg:flex" aria-label="Istanbul transfer navigation">
           {nav.map((item) => <a key={item.href} href={item.href} className="rounded-full px-4 py-2.5 text-[0.72rem] font-black uppercase tracking-[0.08em] text-slate-600 transition hover:bg-[#0b1220] hover:text-white">{item.label}</a>)}
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
-          <div className="hidden items-center gap-2 rounded-full bg-slate-50 px-3 py-2 text-[0.68rem] font-bold text-slate-600 xl:flex"><ShieldCheck size={14} className="text-cyan-500" />{text.trustOne}<span className="text-slate-300">•</span><Zap size={14} className="text-cyan-500" />{text.trustTwo}</div>
+          <div className="hidden items-center gap-2 rounded-full bg-slate-50 px-3 py-2 text-[0.68rem] font-bold text-slate-600 xl:flex"><ShieldCheck size={14} className="text-slate-500" />{text.trustOne}<span className="text-slate-300">•</span><Zap size={14} className="text-slate-500" />{text.trustTwo}</div>
           <div className="relative">
-            <button onClick={() => setLangOpen(!langOpen)} className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2.5 text-sm font-black text-slate-800 shadow-sm transition hover:border-cyan-300 hover:bg-slate-50" aria-expanded={langOpen} aria-haspopup="listbox"><span className="text-base">{current.flag}</span><span>{current.code.toUpperCase()}</span><ChevronDown size={15} /></button>
+            <button onClick={() => setLangOpen(!langOpen)} className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-3 py-2.5 text-sm font-black text-slate-800 shadow-sm transition hover:bg-slate-50" aria-expanded={langOpen} aria-haspopup="listbox"><span className="text-base">{current.flag}</span><span>{current.code.toUpperCase()}</span><ChevronDown size={15} /></button>
             {langOpen && <div className="absolute right-0 top-full mt-3 w-56 overflow-hidden rounded-2xl border border-slate-200 bg-white p-1.5 shadow-[0_28px_80px_rgba(15,23,42,0.18)]" role="listbox">
               {transferLocales.map((item) => <Link key={item.code} href={item.href} hrefLang={item.hreflang} onClick={() => setLangOpen(false)} className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-bold transition ${item.code === l ? 'bg-[#0b1220] text-white' : 'text-slate-700 hover:bg-slate-100'}`} role="option" aria-selected={item.code === l}><span className="text-base">{item.flag}</span><span>{item.label}</span></Link>)}
             </div>}
           </div>
-          <a href="#reservation" className="rounded-full bg-[#0b1220] px-5 py-3 text-[0.72rem] font-black uppercase tracking-[0.08em] text-white shadow-[0_14px_34px_rgba(15,23,42,0.22)] transition hover:-translate-y-0.5 hover:bg-[#101a2d]">{text.book}</a>
-          <Link href="/" className="rounded-full border border-slate-200 bg-white px-4 py-3 text-[0.68rem] font-black uppercase tracking-[0.08em] text-slate-600 transition hover:border-cyan-300 hover:text-[#0b1220]">{text.privateOffice}</Link>
+          <a href="#reservation" className="rounded-full bg-[#0b1220] px-5 py-3 text-[0.72rem] font-black uppercase tracking-[0.08em] text-white shadow-[0_14px_34px_rgba(15,23,42,0.18)] transition hover:-translate-y-0.5 hover:bg-[#101a2d]">{text.book}</a>
+          <Link href="/" className="rounded-full border border-slate-200 bg-white px-4 py-3 text-[0.68rem] font-black uppercase tracking-[0.08em] text-slate-600 transition hover:text-[#0b1220]">{text.privateOffice}</Link>
         </div>
 
         <button className="rounded-full border border-slate-200 bg-white p-3 text-slate-900 shadow-sm lg:hidden" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Close transfer menu' : 'Open transfer menu'} aria-expanded={menuOpen}>{menuOpen ? <X size={21} /> : <Menu size={21} />}</button>
@@ -91,7 +84,7 @@ export function TransferOnlyHeader({ locale = 'fr' }: { locale?: string }) {
 
       {menuOpen && <div className="border-t border-slate-200 bg-white px-4 pb-5 pt-3 shadow-[0_28px_70px_rgba(15,23,42,0.12)] lg:hidden">
         <div className="mx-auto max-w-[1180px] space-y-2">
-          <div className="mb-3 flex items-center justify-between rounded-2xl bg-slate-50 p-3 text-xs font-bold text-slate-600"><span className="inline-flex items-center gap-1"><ShieldCheck size={14} className="text-cyan-500" />{text.trustOne}</span><span className="inline-flex items-center gap-1"><Zap size={14} className="text-cyan-500" />{text.trustTwo}</span></div>
+          <div className="mb-3 flex items-center justify-between rounded-2xl bg-slate-50 p-3 text-xs font-bold text-slate-600"><span className="inline-flex items-center gap-1"><ShieldCheck size={14} className="text-slate-500" />{text.trustOne}</span><span className="inline-flex items-center gap-1"><Zap size={14} className="text-slate-500" />{text.trustTwo}</span></div>
           {nav.map((item) => <a key={item.href} href={item.href} onClick={() => setMenuOpen(false)} className="block rounded-2xl bg-white px-4 py-4 text-sm font-black uppercase tracking-[0.08em] text-slate-800 shadow-sm ring-1 ring-slate-200">{item.label}</a>)}
           <div className="pt-2">
             <button onClick={() => setLangOpen(!langOpen)} className="flex w-full items-center justify-between rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm font-black text-slate-800"><span className="inline-flex items-center gap-2"><span className="text-base">{current.flag}</span>{current.label}</span><ChevronDown size={16} /></button>
