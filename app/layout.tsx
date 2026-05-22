@@ -1,5 +1,6 @@
 import './globals.css';
 import './transfer-glass.css';
+import './header-menu.css';
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { getPricingAmount } from '@/data/pricing';
