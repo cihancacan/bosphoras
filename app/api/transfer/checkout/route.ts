@@ -17,6 +17,15 @@ function sanitizeAmount(value: unknown) {
   return Number.isFinite(amount) && amount > 0 ? amount : 0;
 }
 
+function isValidEmail(email: string) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+}
+
+function isValidInternationalPhone(phone: string) {
+  const normalized = phone.replace(/[\s().-]/g, '');
+  return /^\+[1-9]\d{7,14}$/.test(normalized);
+}
+
 export async function POST(request: Request) {
   try {
     const secretKey = process.env.STRIPE_SECRET_KEY;
@@ -32,6 +41,15 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: 'invalid_total' }, { status: 400 });
     }
 
+    const firstName = String(body.firstName || '').trim().slice(0, 80);
+    const lastName = String(body.lastName || '').trim().slice(0, 80);
+    const phone = String(body.phone || '').trim().slice(0, 40);
+    const customerEmail = String(body.email || '').trim().slice(0, 120);
+
+    if (firstName.length < 2 || lastName.length < 2 || !isValidInternationalPhone(phone) || !isValidEmail(customerEmail)) {
+      return NextResponse.json({ error: 'passenger_details_required' }, { status: 400 });
+    }
+
     const pickup = String(body.pickup || 'Départ non renseigné').slice(0, 180);
     const dropoff = String(body.dropoff || 'Arrivée non renseignée').slice(0, 180);
     const vehicle = String(body.vehicle || 'Chauffeur privé Istanbul').slice(0, 180);
@@ -41,9 +59,9 @@ export async function POST(request: Request) {
     const passengerCount = String(body.passengerCount || '').slice(0, 40);
     const routeMinutes = String(body.routeMinutes || '').slice(0, 40);
     const distanceKm = String(body.distanceKm || '').slice(0, 40);
+    const note = String(body.note || '').slice(0, 450);
     const tollPrice = sanitizeAmount(body.tollPrice);
     const tip = sanitizeAmount(body.tip);
-    const customerEmail = String(body.email || '').trim() || undefined;
     const baseUrl = getBaseUrl(request);
 
     const extraItems: CheckoutItem[] = [];
@@ -52,11 +70,13 @@ export async function POST(request: Request) {
 
     const descriptionParts = [
       `${pickup} → ${dropoff}`,
-      date && time ? `${date} à ${time}` : '',
+      date && time ? `${date} à ${time}` : date,
       routeMinutes ? `${routeMinutes} min` : '',
       distanceKm ? `${distanceKm} km` : '',
       flightNumber ? `Vol ${flightNumber}` : '',
       passengerCount ? `${passengerCount} passager(s)` : '',
+      `${firstName} ${lastName}`,
+      phone,
     ].filter(Boolean);
 
     const session = await stripe.checkout.sessions.create({
@@ -78,6 +98,10 @@ export async function POST(request: Request) {
       ],
       metadata: {
         service: 'bosphoras_transfer',
+        firstName,
+        lastName,
+        phone,
+        email: customerEmail,
         pickup,
         dropoff,
         vehicle,
@@ -89,6 +113,7 @@ export async function POST(request: Request) {
         distanceKm,
         tollPrice: String(tollPrice),
         tip: String(tip),
+        note,
         extras: extraItems.map((item) => `${item.label}:${item.amount}`).join('|'),
       },
       success_url: `${baseUrl}/transferts-istanbul?payment=success&session_id={CHECKOUT_SESSION_ID}`,
