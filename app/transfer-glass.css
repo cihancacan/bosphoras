@@ -67,6 +67,7 @@ section:has(img[alt="Chauffeur privé Istanbul"]) * {
   }
 }
 
+/* Desktop glass: light smoky premium panel over the hero image */
 @media (min-width: 768px) {
   section:has(img[alt="Private driver Istanbul"]) .md\:bg-white\/55,
   section:has(img[alt="Private driver Istanbul"]) .md\:bg-white\/95,
@@ -113,6 +114,7 @@ section:has(img[alt="Chauffeur privé Istanbul"]) * {
   }
 }
 
+/* Mobile: app-like palette, warm background, premium translucent card */
 @media (max-width: 767px) {
   section:has(img[alt="Chauffeur privé Istanbul"]) {
     min-height: auto !important;
@@ -266,53 +268,8 @@ section:has(img[alt="Chauffeur privé Istanbul"]) * {
     filter: none !important;
   }
 
-  section:has(img[alt="Chauffeur privé Istanbul"]) .grid-cols-2:has(input[type="date"]) {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
-    gap: 8px !important;
-  }
-
-  section:has(img[alt="Chauffeur privé Istanbul"]) input[type="date"],
-  section:has(img[alt="Chauffeur privé Istanbul"]) select {
-    padding-left: 8px !important;
-    padding-right: 6px !important;
-    font-size: 12px !important;
-    letter-spacing: -0.04em !important;
-  }
-
-  section:has(img[alt="Chauffeur privé Istanbul"]) input[type="date"] + *,
-  section:has(img[alt="Chauffeur privé Istanbul"]) select + * {
-    min-width: 0 !important;
-  }
-
-  section:has(aside) aside {
-    border-radius: 26px !important;
-  }
-
-  section:has(aside) aside h3 {
-    display: none !important;
-  }
-
-  section:has(aside) aside .text-5xl {
-    font-size: 2.35rem !important;
-  }
-
-  section:has(aside) label.rounded-2xl.border.p-4 {
-    padding: 10px !important;
-    border-radius: 18px !important;
-    font-size: 11px !important;
-    line-height: 1.25 !important;
-  }
-
-  section:has(aside) label.rounded-2xl.border.p-4 svg {
-    display: none !important;
-  }
-
-  section:has(aside) label.rounded-2xl.border.p-4 b {
-    font-size: 12px !important;
-  }
-
   div[data-transfer-phone-group="true"] {
-    grid-template-columns: 86px minmax(0, 1fr) !important;
+    grid-template-columns: 92px minmax(0, 1fr) !important;
   }
 
   input[data-transfer-dial-code="true"] {
