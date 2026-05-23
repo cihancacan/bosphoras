@@ -141,25 +141,23 @@ function addMobileNextButton() {
   const backButton = findBackButton(card);
   if (!backButton) return;
 
-  let row = backButton.parentElement?.dataset.transferNavigationRow === 'true' ? backButton.parentElement : null;
-  if (!row) {
-    row = document.createElement('div');
-    row.dataset.transferNavigationRow = 'true';
-    row.className = 'mt-6 flex w-full items-center justify-between gap-3';
-    card.insertBefore(row, backButton);
-    row.appendChild(backButton);
-  }
+  const originalParent = backButton.parentElement;
+  if (!originalParent) return;
+  originalParent.dataset.transferNavigationRow = 'true';
+  originalParent.classList.add('w-full', 'items-center', 'justify-between', 'gap-3');
+  originalParent.classList.remove('justify-start', 'justify-center', 'gap-4');
 
   const button = document.createElement('button');
   button.type = 'button';
   button.dataset.transferMobileNext = 'true';
   button.textContent = nextLabels[currentLocale()] || nextLabels.en;
-  button.className = 'rounded-2xl border border-black px-6 py-4 text-xs font-black uppercase tracking-[0.14em] text-black md:hidden';
+  button.className = backButton.className || 'rounded-2xl border border-black px-6 py-4 text-xs font-black uppercase tracking-[0.14em] text-black md:hidden';
+  button.classList.add('md:hidden');
   button.onclick = () => {
     const top = summary.getBoundingClientRect().top + window.scrollY - 88;
     window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
   };
-  row.appendChild(button);
+  originalParent.appendChild(button);
 }
 
 function buildPhone() {
