@@ -1,8 +1,9 @@
 'use client';
 
 import { useEffect } from 'react';
+import { getTransferKeywordHref, transferKeywordClusters, type TransferSeoLocale } from '@/lib/transferKeywordSeo';
 
-type TransferLocale = 'fr' | 'en' | 'ru' | 'ar' | 'zh' | 'de' | 'es' | 'it' | 'pt';
+type TransferLocale = TransferSeoLocale;
 
 const copy: Record<TransferLocale, string> = {
   fr: 'Conformité transport - Réservation minimum 2h à l’avance',
@@ -65,12 +66,37 @@ function insertNotice(locale: TransferLocale) {
   parent.insertBefore(createNotice(locale), button);
 }
 
+function linkSeoKeywords(locale: TransferLocale) {
+  const terms = new Map<string, string>();
+  for (const group of transferKeywordClusters[locale] || []) {
+    for (const term of group.terms) terms.set(term, getTransferKeywordHref(locale, term));
+  }
+
+  const spans = Array.from(document.querySelectorAll('#airports details span')) as HTMLSpanElement[];
+  for (const span of spans) {
+    const term = span.textContent?.trim() || '';
+    const href = terms.get(term);
+    if (!href || span.dataset.keywordLinked === 'true') continue;
+
+    const link = document.createElement('a');
+    link.href = href;
+    link.textContent = term;
+    link.dataset.keywordLinked = 'true';
+    link.className = 'inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-slate-600 transition hover:border-slate-950 hover:bg-slate-950 hover:text-white';
+    span.replaceWith(link);
+  }
+}
+
 export function TransferComplianceNotice({ locale = 'fr' }: { locale?: string }) {
   useEffect(() => {
     const l = safeLocale(locale);
-    const observer = new MutationObserver(() => insertNotice(l));
+    const refresh = () => {
+      insertNotice(l);
+      linkSeoKeywords(l);
+    };
+    const observer = new MutationObserver(refresh);
     observer.observe(document.body, { childList: true, subtree: true });
-    insertNotice(l);
+    refresh();
 
     return () => observer.disconnect();
   }, [locale]);
