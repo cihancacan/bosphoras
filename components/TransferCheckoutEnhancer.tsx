@@ -41,6 +41,25 @@ const countryDialCodes = [
   { code: '+27', flag: '🇿🇦', label: 'South Africa' },
 ];
 
+const nextLabels: Record<string, string> = {
+  fr: 'Suivant', en: 'Next', ru: 'Далее', ar: 'التالي', zh: '下一步', de: 'Weiter', es: 'Siguiente', it: 'Avanti', pt: 'Seguinte',
+};
+
+const backNeedles = ['retour', 'back', 'назад', 'رجوع', '返回', 'zurück', 'volver', 'indietro', 'voltar'];
+
+function currentLocale() {
+  const path = window.location.pathname.toLowerCase();
+  if (path.startsWith('/en/')) return 'en';
+  if (path.startsWith('/ru/')) return 'ru';
+  if (path.startsWith('/ar/')) return 'ar';
+  if (path.startsWith('/zh/')) return 'zh';
+  if (path.startsWith('/de/')) return 'de';
+  if (path.startsWith('/es/')) return 'es';
+  if (path.startsWith('/it/')) return 'it';
+  if (path.startsWith('/pt/')) return 'pt';
+  return 'fr';
+}
+
 function euroToNumber(value: string) {
   const cleaned = value.replace(/[^0-9,.-]/g, '').replace(',', '.');
   const amount = Number(cleaned);
@@ -106,25 +125,41 @@ function enhancePhonePrefix() {
   wrapper.appendChild(phone);
 }
 
+function findBackButton(card: HTMLElement) {
+  const buttons = Array.from(card.querySelectorAll('button')) as HTMLButtonElement[];
+  return buttons.find((button) => {
+    const text = button.textContent?.trim().toLowerCase() || '';
+    return backNeedles.some((needle) => text.includes(needle));
+  });
+}
+
 function addMobileNextButton() {
   if (document.querySelector('[data-transfer-mobile-next="true"]')) return;
   const card = getPassengerCard();
   const summary = getSummary();
   if (!card || !summary) return;
+  const backButton = findBackButton(card);
+  if (!backButton) return;
 
-  const footer = document.createElement('div');
-  footer.dataset.transferMobileNext = 'true';
-  footer.className = 'mt-5 flex justify-end md:hidden';
+  let row = backButton.parentElement?.dataset.transferNavigationRow === 'true' ? backButton.parentElement : null;
+  if (!row) {
+    row = document.createElement('div');
+    row.dataset.transferNavigationRow = 'true';
+    row.className = 'mt-6 flex w-full items-center justify-between gap-3';
+    card.insertBefore(row, backButton);
+    row.appendChild(backButton);
+  }
+
   const button = document.createElement('button');
   button.type = 'button';
-  button.textContent = 'Suivant';
-  button.className = 'rounded-2xl border border-slate-300 bg-white px-5 py-3 text-[11px] font-black uppercase tracking-[0.12em] text-slate-700 shadow-sm';
+  button.dataset.transferMobileNext = 'true';
+  button.textContent = nextLabels[currentLocale()] || nextLabels.en;
+  button.className = 'rounded-2xl border border-black px-6 py-4 text-xs font-black uppercase tracking-[0.14em] text-black md:hidden';
   button.onclick = () => {
     const top = summary.getBoundingClientRect().top + window.scrollY - 88;
     window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
   };
-  footer.appendChild(button);
-  card.appendChild(footer);
+  row.appendChild(button);
 }
 
 function buildPhone() {
