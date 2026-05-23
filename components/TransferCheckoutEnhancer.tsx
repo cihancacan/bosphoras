@@ -144,8 +144,11 @@ function addMobileNextButton() {
   const originalParent = backButton.parentElement;
   if (!originalParent) return;
   originalParent.dataset.transferNavigationRow = 'true';
-  originalParent.classList.add('w-full', 'items-center', 'justify-between', 'gap-3');
-  originalParent.classList.remove('justify-start', 'justify-center', 'gap-4');
+  originalParent.classList.add('w-full', 'items-center', 'gap-3');
+  originalParent.classList.remove('justify-start', 'justify-center', 'justify-end', 'gap-4');
+  originalParent.style.display = 'flex';
+  originalParent.style.width = '100%';
+  originalParent.style.justifyContent = 'space-between';
 
   const button = document.createElement('button');
   button.type = 'button';
@@ -153,6 +156,7 @@ function addMobileNextButton() {
   button.textContent = nextLabels[currentLocale()] || nextLabels.en;
   button.className = backButton.className || 'rounded-2xl border border-black px-6 py-4 text-xs font-black uppercase tracking-[0.14em] text-black md:hidden';
   button.classList.add('md:hidden');
+  button.style.marginLeft = 'auto';
   button.onclick = () => {
     const top = summary.getBoundingClientRect().top + window.scrollY - 88;
     window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
