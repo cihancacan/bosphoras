@@ -7,7 +7,6 @@ import { TransferCheckoutEnhancer } from '@/components/TransferCheckoutEnhancer'
 import { TransferOnlyHeader } from '@/components/TransferOnlyHeader';
 import { TransferOnlyFooter } from '@/components/TransferOnlyFooter';
 import { TransferSeoContent } from '@/components/TransferSeoContent';
-import { TransferMultilingualSeo } from '@/components/TransferMultilingualSeo';
 import { buildMetadata, breadcrumbSchema, faqSchema, organizationSchema, serviceSchema, websiteSchema } from '@/lib/seo';
 import { siteUrl } from '@/lib/routes';
 
@@ -92,7 +91,6 @@ export function IstanbulTransferPageShell({ locale }: { locale: Locale }) {
         <TransferQuoteEnhancer />
         <TransferCheckoutEnhancer />
         <TransferSeoContent locale={locale} />
-        <TransferMultilingualSeo />
         <section id="transfer-faq" className="bg-white px-5 pb-16 md:px-8 md:pb-24">
           <div className="mx-auto max-w-[1180px]">
             <h2 className="text-3xl font-black tracking-[-0.04em] text-[#111827] md:text-5xl">FAQ transfert aéroport Istanbul</h2>
