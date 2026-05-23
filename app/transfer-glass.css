@@ -268,6 +268,18 @@ section:has(img[alt="Chauffeur privé Istanbul"]) * {
     filter: none !important;
   }
 
+  section:has(img[alt="Chauffeur privé Istanbul"]) .grid-cols-2:has(input[type="date"]) {
+    grid-template-columns: minmax(0, 1.08fr) minmax(86px, 0.92fr) !important;
+    gap: 7px !important;
+  }
+
+  section:has(img[alt="Chauffeur privé Istanbul"]) .grid-cols-2:has(input[type="date"]) select {
+    padding-left: 7px !important;
+    padding-right: 5px !important;
+    font-size: 12px !important;
+    letter-spacing: -0.045em !important;
+  }
+
   div[data-transfer-phone-group="true"] {
     grid-template-columns: 92px minmax(0, 1fr) !important;
   }
