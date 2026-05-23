@@ -7,6 +7,12 @@ import { highPotentialGuides } from '@/data/highPotentialPages';
 import { programmaticPages } from '@/data/programmatic/pages';
 import { ENABLE_ALL_PROGRAMMATIC_PAGES, ENABLE_PRIORITY_3_IN_SITEMAP } from '@/lib/launchConfig';
 import { longTailTaxSitemapUrls } from '@/data/longTailTaxRoutes';
+import {
+  getTransferKeywordHref,
+  transferKeywordClusters,
+  transferLocales,
+  transferMainPaths,
+} from '@/lib/transferKeywordSeo';
 
 function programmaticPriority(priorityLevel: 1 | 2 | 3) {
   if (priorityLevel === 1) return 0.75;
@@ -14,14 +20,25 @@ function programmaticPriority(priorityLevel: 1 | 2 | 3) {
   return 0.45;
 }
 
+function absoluteUrl(path: string) {
+  return `${siteUrl}${path}`;
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
+  const seenUrls = new Set<string>();
+
+  function addEntry(entry: MetadataRoute.Sitemap[number]) {
+    if (seenUrls.has(entry.url)) return;
+    seenUrls.add(entry.url);
+    entries.push(entry);
+  }
 
   for (const locale of locales) {
     for (const page of allPages[locale]) {
       const url = getCanonicalUrl(locale, page.slug);
-      entries.push({
+      addEntry({
         url,
         lastModified: now,
         changeFrequency: 'monthly',
@@ -31,7 +48,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   for (const guide of highPotentialGuides) {
-    entries.push({
+    addEntry({
       url: getCanonicalUrl(guide.locale, guide.slug),
       lastModified: new Date(guide.updatedAt),
       changeFrequency: 'monthly',
@@ -43,7 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const page of programmaticPages) {
       if (page.service.priorityLevel === 3 && !ENABLE_PRIORITY_3_IN_SITEMAP) continue;
 
-      entries.push({
+      addEntry({
         url: getCanonicalUrl(page.locale, page.slug),
         lastModified: now,
         changeFrequency: 'monthly',
@@ -134,12 +151,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   for (const url of [...foreignIncomeTaxPages, ...turkeyTaxClusterPages, ...secondWavePages, ...longTailTaxSitemapUrls]) {
-    entries.push({
+    addEntry({
       url,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.95,
     });
+  }
+
+  for (const locale of transferLocales) {
+    addEntry({
+      url: absoluteUrl(transferMainPaths[locale]),
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.98,
+    });
+
+    for (const group of transferKeywordClusters[locale]) {
+      for (const term of group.terms) {
+        addEntry({
+          url: absoluteUrl(getTransferKeywordHref(locale, term)),
+          lastModified: now,
+          changeFrequency: 'weekly',
+          priority: 0.92,
+        });
+      }
+    }
   }
 
   return entries;
