@@ -67,7 +67,6 @@ section:has(img[alt="Chauffeur privé Istanbul"]) * {
   }
 }
 
-/* Desktop glass: light smoky premium panel over the hero image */
 @media (min-width: 768px) {
   section:has(img[alt="Private driver Istanbul"]) .md\:bg-white\/55,
   section:has(img[alt="Private driver Istanbul"]) .md\:bg-white\/95,
@@ -114,7 +113,6 @@ section:has(img[alt="Chauffeur privé Istanbul"]) * {
   }
 }
 
-/* Mobile: app-like palette, warm background, premium translucent card */
 @media (max-width: 767px) {
   section:has(img[alt="Chauffeur privé Istanbul"]) {
     min-height: auto !important;
@@ -261,23 +259,30 @@ section:has(img[alt="Chauffeur privé Istanbul"]) * {
 
   section:has(img[alt="Chauffeur privé Istanbul"]) input[type="date"]::-webkit-calendar-picker-indicator,
   section:has(img[alt="Chauffeur privé Istanbul"]) input[type="time"]::-webkit-calendar-picker-indicator {
-    width: 15px !important;
-    height: 15px !important;
+    width: 13px !important;
+    height: 13px !important;
     margin-left: 0 !important;
-    opacity: 0.66 !important;
+    opacity: 0.58 !important;
     filter: none !important;
   }
 
   section:has(img[alt="Chauffeur privé Istanbul"]) .grid-cols-2:has(input[type="date"]) {
-    grid-template-columns: minmax(0, 1.08fr) minmax(86px, 0.92fr) !important;
-    gap: 7px !important;
+    grid-template-columns: minmax(0, 1.16fr) minmax(74px, 0.84fr) !important;
+    gap: 6px !important;
+  }
+
+  section:has(img[alt="Chauffeur privé Istanbul"]) .grid-cols-2:has(input[type="date"]) input[type="date"] {
+    padding-left: 6px !important;
+    padding-right: 4px !important;
+    font-size: 11px !important;
+    letter-spacing: -0.065em !important;
   }
 
   section:has(img[alt="Chauffeur privé Istanbul"]) .grid-cols-2:has(input[type="date"]) select {
-    padding-left: 7px !important;
-    padding-right: 5px !important;
-    font-size: 12px !important;
-    letter-spacing: -0.045em !important;
+    padding-left: 5px !important;
+    padding-right: 3px !important;
+    font-size: 11px !important;
+    letter-spacing: -0.07em !important;
   }
 
   div[data-transfer-phone-group="true"] {
