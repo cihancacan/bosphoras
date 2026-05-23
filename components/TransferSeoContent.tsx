@@ -1,4 +1,5 @@
-import { CheckCircle2 } from 'lucide-react';
+'use client';
+
 import type { Locale } from '@/lib/i18n';
 
 const intro: Record<Locale, string[]> = {
@@ -24,16 +25,60 @@ const useCases = ['Airport meet & greet', 'Flight tracking', 'Business meetings'
 export function TransferSeoContent({ locale }: { locale: Locale }) {
   return (
     <>
-      <section id="airports" className="bg-white px-5 py-12 md:px-8 md:py-20">
-        <div className="mx-auto max-w-[1180px] rounded-[2rem] border border-[#e5e7eb] bg-[#fafafa] p-6 md:p-10">
-          <p className="mb-3 text-xs font-black uppercase tracking-[0.20em] text-[#6b7280]">SEO / AI friendly</p>
-          <h2 className="max-w-4xl text-3xl font-black tracking-[-0.04em] text-[#111827] md:text-5xl">{locale === 'fr' ? 'Transfert aéroport Istanbul IST & SAW, chauffeur privé et réservation à l’heure.' : 'Istanbul Airport IST & SAW transfer, private chauffeur and hourly booking.'}</h2>
-          <div className="mt-8 grid gap-3 text-base leading-7 text-[#374151] md:grid-cols-2">{intro[locale].map((item) => <div key={item} className="rounded-3xl border border-[#e5e7eb] bg-white p-5"><CheckCircle2 className="mb-4 h-5 w-5 text-[#111827]" /><p>{item}</p></div>)}</div>
+      <section id="airports" className="bg-white px-5 py-10 md:px-8 md:py-14">
+        <div className="mx-auto max-w-[1180px]">
+          <p className="text-xs uppercase tracking-[0.16em] text-slate-400">Istanbul private transfer</p>
+          <h2 className="mt-3 max-w-4xl text-2xl font-medium tracking-[-0.03em] text-slate-950 md:text-4xl">{locale === 'fr' ? 'Transfert aéroport Istanbul IST & SAW, chauffeur privé et réservation à l’heure.' : 'Istanbul Airport IST & SAW transfer, private chauffeur and hourly booking.'}</h2>
+          <div className="mt-6 grid gap-3 text-sm leading-7 text-slate-600 md:grid-cols-2">
+            {intro[locale].map((item) => <p key={item}>{item}</p>)}
+          </div>
         </div>
       </section>
-      <section id="vehicles" className="bg-white px-5 pb-12 md:px-8 md:pb-20"><div className="mx-auto max-w-[1180px]"><div className="grid gap-5 md:grid-cols-3">{clusters.map(([title, terms]) => <article key={title} className="rounded-[1.7rem] border border-slate-200 bg-white p-5 shadow-[0_14px_45px_rgba(15,23,42,0.04)]"><h2 className="text-xl font-black tracking-[-0.03em] text-slate-950">{title}</h2><div className="mt-4 flex flex-wrap gap-2">{terms.map((term) => <span key={term} className="rounded-full bg-slate-100 px-3 py-2 text-xs font-bold text-slate-600">{term}</span>)}</div></article>)}</div></div></section>
-      <section className="bg-[#f8fafc] px-5 py-12 md:px-8 md:py-20"><div className="mx-auto grid max-w-[1180px] gap-8 lg:grid-cols-[0.9fr_1.1fr]"><div><p className="text-xs font-black uppercase tracking-[0.20em] text-slate-500">Airport transfer routes</p><h2 className="mt-3 text-3xl font-black tracking-[-0.04em] text-slate-950 md:text-5xl">Popular Istanbul airport transfer routes</h2><p className="mt-5 text-base leading-8 text-slate-600">Book a private transfer from Istanbul Airport IST or Sabiha Gökçen SAW to the main hotel districts, business areas, Bosphorus addresses, marinas and private residences in Istanbul.</p></div><div className="grid gap-2 sm:grid-cols-2">{routes.map((route) => <div key={route} className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-bold text-slate-700">{route}</div>)}</div></div></section>
-      <section className="bg-white px-5 py-12 md:px-8 md:py-20"><div className="mx-auto max-w-[1180px] rounded-[2rem] bg-[#0b1220] p-6 text-white md:p-10"><p className="text-xs font-black uppercase tracking-[0.20em] text-slate-400">Private chauffeur Istanbul</p><h2 className="mt-3 max-w-4xl text-3xl font-black tracking-[-0.04em] md:text-5xl">Private driver, hourly chauffeur and VIP mobility in Istanbul</h2><div className="mt-8 grid gap-3 md:grid-cols-3 lg:grid-cols-4">{useCases.map((useCase) => <div key={useCase} className="rounded-2xl border border-white/10 bg-white/[0.04] px-4 py-3 text-sm font-bold text-slate-200">{useCase}</div>)}</div></div></section>
+
+      <section id="vehicles" className="bg-white px-5 pb-10 md:px-8 md:pb-14">
+        <div className="mx-auto max-w-[1180px] divide-y divide-slate-200 border-y border-slate-200">
+          {clusters.map(([title, terms]) => (
+            <details key={title} className="group py-4">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 text-base font-medium tracking-[-0.01em] text-slate-900 transition hover:text-slate-600 md:text-lg">
+                <span>{title}</span>
+                <span className="text-xl font-light text-slate-400 transition group-open:rotate-45">+</span>
+              </summary>
+              <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm font-normal leading-7 text-slate-500">
+                {terms.map((term) => <span key={term}>{term}</span>)}
+              </div>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <section className="bg-[#f8fafc] px-5 py-10 md:px-8 md:py-14">
+        <div className="mx-auto grid max-w-[1180px] gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+          <div>
+            <p className="text-xs uppercase tracking-[0.16em] text-slate-400">Airport transfer routes</p>
+            <h2 className="mt-3 text-2xl font-medium tracking-[-0.03em] text-slate-950 md:text-4xl">Popular Istanbul airport transfer routes</h2>
+            <p className="mt-5 text-sm leading-7 text-slate-600">Book a private transfer from Istanbul Airport IST or Sabiha Gökçen SAW to the main hotel districts, business areas, Bosphorus addresses, marinas and private residences in Istanbul.</p>
+          </div>
+          <details className="border-y border-slate-200 py-4">
+            <summary className="cursor-pointer list-none text-base font-medium text-slate-900">Open popular routes</summary>
+            <div className="mt-4 grid gap-x-5 gap-y-2 text-sm font-normal leading-7 text-slate-500 sm:grid-cols-2">
+              {routes.map((route) => <span key={route}>{route}</span>)}
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section className="bg-white px-5 py-10 md:px-8 md:py-14">
+        <div className="mx-auto max-w-[1180px]">
+          <p className="text-xs uppercase tracking-[0.16em] text-slate-400">Private chauffeur Istanbul</p>
+          <h2 className="mt-3 max-w-4xl text-2xl font-medium tracking-[-0.03em] text-slate-950 md:text-4xl">Private driver, hourly chauffeur and VIP mobility in Istanbul</h2>
+          <details className="mt-6 border-y border-slate-200 py-4">
+            <summary className="cursor-pointer list-none text-base font-medium text-slate-900">Open chauffeur use cases</summary>
+            <div className="mt-4 grid gap-x-5 gap-y-2 text-sm font-normal leading-7 text-slate-500 md:grid-cols-3">
+              {useCases.map((useCase) => <span key={useCase}>{useCase}</span>)}
+            </div>
+          </details>
+        </div>
+      </section>
     </>
   );
 }
