@@ -141,14 +141,20 @@ function addMobileNextButton() {
   const backButton = findBackButton(card);
   if (!backButton) return;
 
-  const originalParent = backButton.parentElement;
-  if (!originalParent) return;
-  originalParent.dataset.transferNavigationRow = 'true';
-  originalParent.classList.add('w-full', 'items-center', 'gap-3');
-  originalParent.classList.remove('justify-start', 'justify-center', 'justify-end', 'gap-4');
-  originalParent.style.display = 'flex';
-  originalParent.style.width = '100%';
-  originalParent.style.justifyContent = 'space-between';
+  const oldParent = backButton.parentElement;
+  if (!oldParent) return;
+
+  const row = document.createElement('div');
+  row.dataset.transferNavigationRow = 'true';
+  row.className = 'mt-6 flex w-full items-center justify-between gap-3 md:hidden';
+  row.style.display = 'flex';
+  row.style.width = '100%';
+  row.style.justifyContent = 'space-between';
+  row.style.alignItems = 'center';
+
+  oldParent.insertBefore(row, backButton);
+  row.appendChild(backButton);
+  backButton.style.marginRight = 'auto';
 
   const button = document.createElement('button');
   button.type = 'button';
@@ -161,7 +167,9 @@ function addMobileNextButton() {
     const top = summary.getBoundingClientRect().top + window.scrollY - 88;
     window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
   };
-  originalParent.appendChild(button);
+  row.appendChild(button);
+
+  if (!oldParent.textContent?.trim() && oldParent.children.length === 0) oldParent.remove();
 }
 
 function buildPhone() {
