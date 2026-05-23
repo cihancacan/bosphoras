@@ -1,4 +1,10 @@
-const multilingualTerms = [
+type SeoGroup = [string, string[]];
+type SeoLanguageBlock = {
+  lang: string;
+  groups: SeoGroup[];
+};
+
+const multilingualTerms: SeoLanguageBlock[] = [
   { lang: 'Français', groups: [
     ['Transfert aéroport Istanbul', ['transfert aéroport Istanbul', 'transfert aeroport Istanbul', 'transfert privé aéroport Istanbul', 'navette privée Istanbul', 'taxi privé aéroport Istanbul', 'réserver transfert Istanbul', 'transfert Istanbul hôtel', 'transfert VIP Istanbul']],
     ['Chauffeur privé Istanbul', ['chauffeur privé Istanbul', 'chauffeur à l’heure Istanbul', 'voiture avec chauffeur Istanbul', 'chauffeur VIP Istanbul', 'chauffeur business Istanbul', 'Mercedes avec chauffeur Istanbul']]
