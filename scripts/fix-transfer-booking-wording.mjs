@@ -64,7 +64,6 @@ if (!content.includes('const tripModeLabels')) {
   replaceAll("const vehicleMeta: Record<TransferLocale, Record<VehicleId, { name: string; label: string; pax: string; bags: string }>> = {", labels);
 }
 
-// State: add round trip fields and immediate refs.
 replaceAll(
   "  const [mode, setMode] = useState<Mode>('transfer');\n  const [pickup, setPickup] = useState('');",
   "  const [mode, setMode] = useState<Mode>('transfer');\n  const [roundTrip, setRoundTrip] = useState(false);\n  const modeRef = useRef<Mode>('transfer');\n  const roundTripRef = useRef(false);\n  const isRoundTrip = mode === 'transfer' && roundTrip;\n  const [pickup, setPickup] = useState('');"
@@ -84,17 +83,11 @@ replaceAll(
   "  useEffect(() => { stepRef.current = step; }, [step]);\n  useEffect(() => { modeRef.current = mode; roundTripRef.current = roundTrip; }, [mode, roundTrip]);\n  useEffect(() => {\n    if (!roundTrip) return;\n    if (!returnDate || isReturnLessThanOneHourAfterPickup(date, time, returnDate, returnTime)) {\n      const nextReturn = addMinutesToDateTime(date, time, 60);\n      setReturnDate(nextReturn.date);\n      setReturnTime(nextReturn.time);\n    }\n  }, [roundTrip, date, time, returnDate, returnTime]);"
 );
 
-// Price: server returns round trip = outbound vehicle + outbound toll, then x2. Fallback mirrors that.
 replaceAll(
   "  const vehiclePrice = selectedQuote?.vehiclePrice ?? fallbackPrice(selectedVehicle);\n  const tollPrice = selectedQuote?.tollPrice ?? 0;",
   "  const vehiclePrice = selectedQuote?.vehiclePrice ?? (isRoundTrip ? Math.round(fallbackPrice(selectedVehicle) * 2) : fallbackPrice(selectedVehicle));\n  const tollPrice = selectedQuote?.tollPrice ?? 0;"
 );
-replaceAll(
-  "  const total = vehiclePrice + tollPrice + (child ? 30 : 0) + (flowers ? 150 : 0) + (roses ? 400 : 0) + tipValue;",
-  "  const total = vehiclePrice + tollPrice + (child ? 30 : 0) + (flowers ? 150 : 0) + (roses ? 400 : 0) + tipValue;"
-);
 
-// Quote API receives the stable immediate refs.
 replaceAll(
   "body: JSON.stringify({ pickup, dropoff: drop, mode, vehicleId: car.id, hours })",
   "body: JSON.stringify({ pickup, dropoff: drop, mode: modeRef.current, vehicleId: car.id, hours, roundTrip: modeRef.current === 'transfer' && roundTripRef.current })"
@@ -104,7 +97,6 @@ replaceAll(
   "body: JSON.stringify({ pickup, dropoff: drop, mode: modeRef.current, vehicleId: car.id, hours, roundTrip: modeRef.current === 'transfer' && roundTripRef.current })"
 );
 
-// Do not show vehicle list before quote is loaded; this removes the first-try fallback problem.
 replaceAll(
   "  const findCars = () => { if (!pickup.trim() || !drop.trim()) { alert(c.missingRoute); return; } setVehicleId(null); setQuotes({}); setLoading(true); setTimeout(async () => { setLoading(false); setStep(2); await loadQuotes(); }, 5000); };",
   "  const findCars = () => { if (!pickup.trim() || !drop.trim()) { alert(c.missingRoute); return; } setVehicleId(null); setQuotes({}); setLoading(true); setTimeout(async () => { await loadQuotes(); setLoading(false); setStep(2); }, 700); };"
@@ -114,17 +106,14 @@ replaceAll(
   "  const chooseVehicle = (id: VehicleId) => { if (quoteLoading) return; setVehicleId(id); setStep(3); };"
 );
 
-// Tabs: one way / round trip / hourly.
 const oldTabs = "<div className=\"mb-4 grid grid-cols-2 rounded-2xl bg-white/45 p-1 backdrop-blur-xl md:bg-gray-100\"><button onClick={() => setMode('transfer')} className={`rounded-xl py-3 text-xs font-black uppercase tracking-[0.14em] transition ${mode === 'transfer' ? 'bg-black text-white shadow-lg' : 'text-gray-700'}`}>{c.transfer}</button><button onClick={() => setMode('hourly')} className={`rounded-xl py-3 text-xs font-black uppercase tracking-[0.14em] transition ${mode === 'hourly' ? 'bg-black text-white shadow-lg' : 'text-gray-700'}`}>{c.hourly}</button></div>";
 const newTabs = "<div className=\"mb-4 grid grid-cols-3 rounded-2xl bg-white/45 p-1 backdrop-blur-xl md:bg-gray-100\"><button onClick={() => { modeRef.current = 'transfer'; roundTripRef.current = false; setMode('transfer'); setRoundTrip(false); setQuotes({}); }} className={`rounded-xl py-3 text-[10px] font-black uppercase tracking-[0.08em] transition md:text-xs md:tracking-[0.14em] ${mode === 'transfer' && !roundTrip ? 'bg-black text-white shadow-lg' : 'text-gray-700'}`}>{tripModeLabels[l].oneWay}</button><button onClick={() => { modeRef.current = 'transfer'; roundTripRef.current = true; setMode('transfer'); setRoundTrip(true); setQuotes({}); }} className={`rounded-xl py-3 text-[10px] font-black uppercase tracking-[0.08em] transition md:text-xs md:tracking-[0.14em] ${mode === 'transfer' && roundTrip ? 'bg-black text-white shadow-lg' : 'text-gray-700'}`}>{tripModeLabels[l].roundTrip}</button><button onClick={() => { modeRef.current = 'hourly'; roundTripRef.current = false; setMode('hourly'); setRoundTrip(false); setQuotes({}); }} className={`rounded-xl py-3 text-[10px] font-black uppercase tracking-[0.08em] transition md:text-xs md:tracking-[0.14em] ${mode === 'hourly' ? 'bg-black text-white shadow-lg' : 'text-gray-700'}`}>{tripModeLabels[l].hourly}</button></div>";
 replaceAll(oldTabs, newTabs);
 
-// Return date/time fields.
 const flightPaxBlock = "          <div className=\"grid grid-cols-[minmax(0,1.35fr)_minmax(70px,0.65fr)] gap-2 md:contents\"><label><span className={labelClass}><Plane size={13}/>{c.flight}</span><input value={flightNumber} onChange={(e) => setFlightNumber(e.target.value)} className={inputClass} placeholder={c.flightPlaceholder} /></label><label><span className={labelClass}><Users size={13}/>{c.pax}</span><input type=\"number\" min={1} max={12} value={pax} onChange={(e) => setPax(Number(e.target.value))} className={`${inputClass} text-center`} /></label></div>";
 const returnAndFlightBlock = "          {isRoundTrip && <div className=\"grid grid-cols-2 gap-2 md:contents\"><label><span className={labelClass}><CalendarDays size={13}/>{tripModeLabels[l].returnDate}</span><input type=\"date\" min={date} value={returnDate} onChange={(e) => setReturnDate(e.target.value)} className={inputClass} /></label><label><span className={labelClass}><Clock size={13}/>{tripModeLabels[l].returnTime}</span><select value={returnTime} onChange={(e) => setReturnTime(e.target.value)} className={inputClass}>{timeOptions.filter((item) => returnDate !== date || !isReturnLessThanOneHourAfterPickup(date, time, returnDate, item.value)).map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}</select></label></div>}\n" + flightPaxBlock;
 if (!content.includes('tripModeLabels[l].returnDate')) replaceAll(flightPaxBlock, returnAndFlightBlock);
 
-// Vehicle card price: quote total is source of truth; fallback is simple outbound x2 when round trip.
 replaceAll(
   "{vehicles.map((car) => { const quote = quotes[car.id]; const price = quote?.total ?? fallbackPrice(car); return <button key={car.id}",
   "{vehicles.map((car) => { const quote = quotes[car.id]; const price = quote?.total ?? (isRoundTrip ? Math.round(fallbackPrice(car) * 2) : fallbackPrice(car)); return <button key={car.id}"
@@ -134,18 +123,31 @@ replaceAll(
   "{vehicles.map((car) => { const quote = quotes[car.id]; const price = quote?.total ?? (isRoundTrip ? Math.round(fallbackPrice(car) * 2) : fallbackPrice(car)); return <button key={car.id}"
 );
 
-// Show only outbound trip time, no billed time wording.
+// Remove repeated route details above vehicles and only keep details inside vehicle card.
 replaceAll(
-  "{quoteLoading ? c.calculating : `${routeMinutes} min ${c.estimated} · ${routeBilled} min ${c.billed} · ${routeDistance} km`}",
-  "{quoteLoading ? c.calculating : `${routeMinutes} min ${c.tripMin} · ${routeDistance} km`}"
-);
-replaceAll(
-  "<p><b className=\"text-white\">{c.billed} :</b> {routeBilled} min</p>",
+  "<p className=\"mt-2 text-sm font-semibold text-gray-500\">{quoteLoading ? c.calculating : `${routeMinutes} min ${c.estimated} · ${routeBilled} min ${c.billed} · ${routeDistance} km`}</p><RouteDetails />",
   ""
 );
 replaceAll(
-  "<p><b className=\"text-white\">{c.duration} :</b> {routeMinutes} min · {routeDistance} km</p>",
-  "<p><b className=\"text-white\">{c.duration} :</b> {routeMinutes} min · {routeDistance} km</p>"
+  "<p className=\"mt-2 text-sm font-semibold text-gray-500\">{quoteLoading ? c.calculating : `${routeMinutes} min ${c.tripMin} · ${routeDistance} km`}</p><RouteDetails />",
+  ""
+);
+
+// Vehicle card details: outbound time + outbound km + toll included, no toll amount.
+replaceAll(
+  "<span>{quote?.distanceKm ?? routeDistance} km</span><span>{quote?.tollPrice ? `${c.toll} ${eur(quote.tollPrice)} ${c.included}` : c.accordingRoute}</span>",
+  "<span>{quote?.estimatedMinutes ?? routeMinutes} {c.tripMin}</span><span>{quote?.distanceKm ?? routeDistance} km</span><span>{c.toll} {c.included}</span>"
+);
+replaceAll(
+  "<span>{quote?.distanceKm ?? routeDistance} km</span><span>{quote?.tollPrice ? `${c.toll} ${eur(quote.tollPrice)} ${c.included}` : c.accordingRoute}</span>",
+  "<span>{quote?.estimatedMinutes ?? routeMinutes} {c.tripMin}</span><span>{quote?.distanceKm ?? routeDistance} km</span><span>{c.toll} {c.included}</span>"
+);
+
+// Summary: no billed minutes and no toll amount shown.
+replaceAll("<p><b className=\"text-white\">{c.billed} :</b> {routeBilled} min</p>", "");
+replaceAll(
+  "<p><b className=\"text-white\">{c.toll} :</b> {tollPrice ? `${eur(tollPrice)} ${c.included}` : c.notEstimated}</p>",
+  "<p><b className=\"text-white\">{c.toll} :</b> {c.included}</p>"
 );
 replaceAll(
   "<p><b className=\"text-white\">{c.date} :</b> {formattedDate} · {timeLabel}</p>",
@@ -153,4 +155,4 @@ replaceAll(
 );
 
 fs.writeFileSync(file, content, 'utf8');
-console.log('[transfer booking] round trip simplified: outbound time only, outbound price+toll x2');
+console.log('[transfer booking] vehicle step simplified and toll amount hidden');
