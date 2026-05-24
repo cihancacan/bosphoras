@@ -16,16 +16,16 @@ const instantLabels: Record<TransferLocale, string> = {
   pt: 'Confirmação imediata',
 };
 
-const ratingLabels: Record<TransferLocale, string> = {
-  fr: 'Avis Google 4,9/5 — 3358 avis',
-  en: 'Google Reviews 4.9/5 — 3358 reviews',
-  ru: 'Отзывы Google 4,9/5 — 3358 отзывов',
-  ar: 'تقييمات Google 4.9/5 — 3358 مراجعة',
-  zh: 'Google 评价 4.9/5 — 3358 条评价',
-  de: 'Google Bewertungen 4,9/5 — 3358 Bewertungen',
-  es: 'Reseñas Google 4,9/5 — 3358 reseñas',
-  it: 'Recensioni Google 4,9/5 — 3358 recensioni',
-  pt: 'Avaliações Google 4,9/5 — 3358 avaliações',
+const reviewWords: Record<TransferLocale, string> = {
+  fr: 'avis Google',
+  en: 'Google reviews',
+  ru: 'отзывов Google',
+  ar: 'مراجعة Google',
+  zh: '条 Google 评价',
+  de: 'Google-Bewertungen',
+  es: 'reseñas Google',
+  it: 'recensioni Google',
+  pt: 'avaliações Google',
 };
 
 function safeLocale(locale?: string): TransferLocale {
@@ -36,11 +36,15 @@ function createBadge(locale: TransferLocale) {
   const badge = document.createElement('div');
   badge.dataset.transferGoogleRatingBadge = 'true';
   badge.dir = locale === 'ar' ? 'rtl' : 'ltr';
-  badge.className = 'mt-3 inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/92 px-4 py-2 text-[11px] font-black uppercase tracking-[0.10em] text-slate-950 shadow-[0_12px_34px_rgba(0,0,0,0.20)] backdrop-blur-xl md:mt-4 md:bg-white md:px-4 md:py-2.5 md:text-[11px]';
+  badge.className = 'mt-3 flex w-fit items-center gap-2 rounded-2xl border border-white/25 bg-black/28 px-3.5 py-2 text-white shadow-[0_12px_32px_rgba(0,0,0,0.18)] backdrop-blur-xl md:mt-4 md:border-white/20 md:bg-white/10 md:px-4 md:py-2.5';
   badge.innerHTML = `
-    <span aria-hidden="true" style="display:inline-flex;height:22px;width:22px;align-items:center;justify-content:center;border-radius:999px;background:#fff;border:1px solid rgba(15,23,42,.10);font-weight:900;font-size:13px;letter-spacing:-.08em;"><span style="color:#4285F4;">G</span></span>
-    <span style="color:#f59e0b;letter-spacing:.02em;">★★★★★</span>
-    <span>${ratingLabels[locale]}</span>
+    <span aria-hidden="true" style="display:inline-grid;height:25px;width:25px;place-items:center;border-radius:999px;background:white;color:#4285F4;font-family:Arial,sans-serif;font-size:15px;font-weight:900;letter-spacing:-.08em;box-shadow:0 8px 20px rgba(0,0,0,.16);">G</span>
+    <span style="display:inline-flex;align-items:center;gap:6px;white-space:nowrap;">
+      <span style="color:#fbbf24;font-size:13px;letter-spacing:.04em;line-height:1;">★★★★★</span>
+      <strong style="font-size:13px;letter-spacing:-.02em;line-height:1;color:white;">4,9/5</strong>
+      <span style="height:14px;width:1px;background:rgba(255,255,255,.35);display:inline-block;"></span>
+      <span style="font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.82);">3358 ${reviewWords[locale]}</span>
+    </span>
   `;
   return badge;
 }
