@@ -12,6 +12,27 @@ let content = fs.readFileSync(file, 'utf8');
 const replacements = [
   ['Book your private chauffeur in Istanbul', 'Book your private driver in Istanbul'],
   ['Buchen Sie Ihren privaten Chauffeur in Istanbul', 'Buchen Sie Ihren privaten Fahrer in Istanbul'],
+  ['Math.round(oneWayPrice * 2 * 0.85)', 'Math.round(oneWayPrice * 2)'],
+  ['const subtotalBeforeDiscount = effectiveVehiclePrice + effectiveTollPrice + extrasTotal;\n  const roundTripDiscount = isRoundTrip ? Math.round(subtotalBeforeDiscount * 0.15) : 0;\n  const total = subtotalBeforeDiscount - roundTripDiscount + tipValue;', 'const total = effectiveVehiclePrice + effectiveTollPrice + extrasTotal + tipValue;'],
+  ['{isRoundTrip && <div className="mb-4 rounded-2xl border border-emerald-400/30 bg-emerald-400/10 px-4 py-3 text-sm font-black text-emerald-200">{tripModeLabels[l].roundTripDiscount} : -{eur(roundTripDiscount)}</div>}', ''],
+  ['Offre aller-retour : -15% sur le global', 'Aller-retour : retour ajouté au total'],
+  ['Round trip offer: 15% off the total', 'Round trip: return added to total'],
+  ['Предложение туда-обратно: -15% на общий итог', 'Туда-обратно: обратный путь добавлен к итогу'],
+  ['عرض الذهاب والعودة: خصم 15% على الإجمالي', 'الذهاب والعودة: يتم إضافة العودة إلى الإجمالي'],
+  ['往返优惠：总价减15%', '往返：返程已加入总价'],
+  ['Hin und zurück: 15% Rabatt auf den Gesamtpreis', 'Hin und zurück: Rückfahrt im Gesamtpreis enthalten'],
+  ['Oferta ida y vuelta: -15% sobre el total', 'Ida y vuelta: regreso añadido al total'],
+  ['Offerta andata e ritorno: -15% sul totale', 'Andata e ritorno: ritorno aggiunto al totale'],
+  ['Oferta ida e volta: -15% no total', 'Ida e volta: regresso adicionado ao total'],
+  ['Remise aller-retour -15%', 'Aller-retour'],
+  ['Round trip discount -15%', 'Round trip'],
+  ['Скидка туда-обратно -15%', 'Туда-обратно'],
+  ['خصم الذهاب والعودة -15%', 'ذهاب وعودة'],
+  ['往返优惠 -15%', '往返'],
+  ['Hin-und-zurück Rabatt -15%', 'Hin und zurück'],
+  ['Descuento ida y vuelta -15%', 'Ida y vuelta'],
+  ['Sconto andata e ritorno -15%', 'Andata e ritorno'],
+  ['Desconto ida e volta -15%', 'Ida e volta'],
 ];
 
 for (const [from, to] of replacements) content = content.split(from).join(to);
@@ -20,15 +41,15 @@ if (!content.includes('const tripModeLabels')) {
   content = content.replace(
     "const vehicleMeta: Record<TransferLocale, Record<VehicleId, { name: string; label: string; pax: string; bags: string }>> = {",
     `const tripModeLabels: Record<TransferLocale, { oneWay: string; roundTrip: string; hourly: string; returnDate: string; returnTime: string; returnTrip: string; roundTripDiscount: string; roundTripOffer: string }> = {
-  fr: { oneWay: 'Aller simple', roundTrip: 'Aller-retour', hourly: 'À l’heure', returnDate: 'Date retour', returnTime: 'Heure retour', returnTrip: 'Trajet retour', roundTripDiscount: 'Remise aller-retour -15%', roundTripOffer: 'Offre aller-retour : -15% sur le global' },
-  en: { oneWay: 'One way', roundTrip: 'Round trip', hourly: 'Hourly', returnDate: 'Return date', returnTime: 'Return time', returnTrip: 'Return trip', roundTripDiscount: 'Round trip discount -15%', roundTripOffer: 'Round trip offer: 15% off the total' },
-  ru: { oneWay: 'В одну сторону', roundTrip: 'Туда-обратно', hourly: 'Почасово', returnDate: 'Дата возврата', returnTime: 'Время возврата', returnTrip: 'Обратный маршрут', roundTripDiscount: 'Скидка туда-обратно -15%', roundTripOffer: 'Предложение туда-обратно: -15% на общий итог' },
-  ar: { oneWay: 'ذهاب فقط', roundTrip: 'ذهاب وعودة', hourly: 'بالساعة', returnDate: 'تاريخ العودة', returnTime: 'وقت العودة', returnTrip: 'رحلة العودة', roundTripDiscount: 'خصم الذهاب والعودة -15%', roundTripOffer: 'عرض الذهاب والعودة: خصم 15% على الإجمالي' },
-  zh: { oneWay: '单程', roundTrip: '往返', hourly: '按小时', returnDate: '返程日期', returnTime: '返程时间', returnTrip: '返程路线', roundTripDiscount: '往返优惠 -15%', roundTripOffer: '往返优惠：总价减15%' },
-  de: { oneWay: 'Einfach', roundTrip: 'Hin und zurück', hourly: 'Stundenweise', returnDate: 'Rückdatum', returnTime: 'Rückzeit', returnTrip: 'Rückfahrt', roundTripDiscount: 'Hin-und-zurück Rabatt -15%', roundTripOffer: 'Hin und zurück: 15% Rabatt auf den Gesamtpreis' },
-  es: { oneWay: 'Solo ida', roundTrip: 'Ida y vuelta', hourly: 'Por horas', returnDate: 'Fecha de regreso', returnTime: 'Hora de regreso', returnTrip: 'Trayecto de regreso', roundTripDiscount: 'Descuento ida y vuelta -15%', roundTripOffer: 'Oferta ida y vuelta: -15% sobre el total' },
-  it: { oneWay: 'Solo andata', roundTrip: 'Andata e ritorno', hourly: 'A ore', returnDate: 'Data ritorno', returnTime: 'Ora ritorno', returnTrip: 'Tragitto di ritorno', roundTripDiscount: 'Sconto andata e ritorno -15%', roundTripOffer: 'Offerta andata e ritorno: -15% sul totale' },
-  pt: { oneWay: 'Só ida', roundTrip: 'Ida e volta', hourly: 'Por hora', returnDate: 'Data de regresso', returnTime: 'Hora de regresso', returnTrip: 'Trajeto de regresso', roundTripDiscount: 'Desconto ida e volta -15%', roundTripOffer: 'Oferta ida e volta: -15% no total' },
+  fr: { oneWay: 'Aller simple', roundTrip: 'Aller-retour', hourly: 'À l’heure', returnDate: 'Date retour', returnTime: 'Heure retour', returnTrip: 'Trajet retour', roundTripDiscount: 'Aller-retour', roundTripOffer: 'Aller-retour : retour ajouté au total' },
+  en: { oneWay: 'One way', roundTrip: 'Round trip', hourly: 'Hourly', returnDate: 'Return date', returnTime: 'Return time', returnTrip: 'Return trip', roundTripDiscount: 'Round trip', roundTripOffer: 'Round trip: return added to total' },
+  ru: { oneWay: 'В одну сторону', roundTrip: 'Туда-обратно', hourly: 'Почасово', returnDate: 'Дата возврата', returnTime: 'Время возврата', returnTrip: 'Обратный маршрут', roundTripDiscount: 'Туда-обратно', roundTripOffer: 'Туда-обратно: обратный путь добавлен к итогу' },
+  ar: { oneWay: 'ذهاب فقط', roundTrip: 'ذهاب وعودة', hourly: 'بالساعة', returnDate: 'تاريخ العودة', returnTime: 'وقت العودة', returnTrip: 'رحلة العودة', roundTripDiscount: 'ذهاب وعودة', roundTripOffer: 'الذهاب والعودة: يتم إضافة العودة إلى الإجمالي' },
+  zh: { oneWay: '单程', roundTrip: '往返', hourly: '按小时', returnDate: '返程日期', returnTime: '返程时间', returnTrip: '返程路线', roundTripDiscount: '往返', roundTripOffer: '往返：返程已加入总价' },
+  de: { oneWay: 'Einfach', roundTrip: 'Hin und zurück', hourly: 'Stundenweise', returnDate: 'Rückdatum', returnTime: 'Rückzeit', returnTrip: 'Rückfahrt', roundTripDiscount: 'Hin und zurück', roundTripOffer: 'Hin und zurück: Rückfahrt im Gesamtpreis enthalten' },
+  es: { oneWay: 'Solo ida', roundTrip: 'Ida y vuelta', hourly: 'Por horas', returnDate: 'Fecha de regreso', returnTime: 'Hora de regreso', returnTrip: 'Trayecto de regreso', roundTripDiscount: 'Ida y vuelta', roundTripOffer: 'Ida y vuelta: regreso añadido al total' },
+  it: { oneWay: 'Solo andata', roundTrip: 'Andata e ritorno', hourly: 'A ore', returnDate: 'Data ritorno', returnTime: 'Ora ritorno', returnTrip: 'Tragitto di ritorno', roundTripDiscount: 'Andata e ritorno', roundTripOffer: 'Andata e ritorno: ritorno aggiunto al totale' },
+  pt: { oneWay: 'Só ida', roundTrip: 'Ida e volta', hourly: 'Por hora', returnDate: 'Data de regresso', returnTime: 'Hora de regresso', returnTrip: 'Trajeto de regresso', roundTripDiscount: 'Ida e volta', roundTripOffer: 'Ida e volta: regresso adicionado ao total' },
 };
 
 const vehicleMeta: Record<TransferLocale, Record<VehicleId, { name: string; label: string; pax: string; bags: string }>> = {`
@@ -52,7 +73,7 @@ content = content.replace(
 
 content = content.replace(
   "  const total = vehiclePrice + tollPrice + (child ? 30 : 0) + (flowers ? 150 : 0) + (roses ? 400 : 0) + tipValue;",
-  "  const extrasTotal = (child ? 30 : 0) + (flowers ? 150 : 0) + (roses ? 400 : 0);\n  const subtotalBeforeDiscount = effectiveVehiclePrice + effectiveTollPrice + extrasTotal;\n  const roundTripDiscount = isRoundTrip ? Math.round(subtotalBeforeDiscount * 0.15) : 0;\n  const total = subtotalBeforeDiscount - roundTripDiscount + tipValue;"
+  "  const extrasTotal = (child ? 30 : 0) + (flowers ? 150 : 0) + (roses ? 400 : 0);\n  const total = effectiveVehiclePrice + effectiveTollPrice + extrasTotal + tipValue;"
 );
 
 content = content.replace(
@@ -70,7 +91,7 @@ content = content.split(flightPaxBlock).join(returnAndFlightBlock);
 
 content = content.replace(
   "{vehicles.map((car) => { const quote = quotes[car.id]; const price = quote?.total ?? fallbackPrice(car); return <button key={car.id}",
-  "{vehicles.map((car) => { const quote = quotes[car.id]; const oneWayPrice = quote?.total ?? fallbackPrice(car); const price = isRoundTrip ? Math.round(oneWayPrice * 2 * 0.85) : oneWayPrice; return <button key={car.id}"
+  "{vehicles.map((car) => { const quote = quotes[car.id]; const oneWayPrice = quote?.total ?? fallbackPrice(car); const price = isRoundTrip ? Math.round(oneWayPrice * 2) : oneWayPrice; return <button key={car.id}"
 );
 
 content = content.replace(
@@ -78,10 +99,5 @@ content = content.replace(
   "<p><b className=\"text-white\">{c.date} :</b> {formattedDate} · {timeLabel}</p>{isRoundTrip && <p><b className=\"text-white\">{tripModeLabels[l].returnTrip} :</b> {drop} → {pickup}</p>}{isRoundTrip && <p><b className=\"text-white\">{tripModeLabels[l].returnDate} :</b> {formattedReturnDate} · {returnTimeLabel}</p>}"
 );
 
-content = content.replace(
-  "<div className=\"flex justify-between\"><span>{c.total}</span><span className=\"text-5xl font-black tracking-[-0.06em]\">{eur(total)}</span></div>",
-  "{isRoundTrip && <div className=\"mb-4 rounded-2xl border border-emerald-400/30 bg-emerald-400/10 px-4 py-3 text-sm font-black text-emerald-200\">{tripModeLabels[l].roundTripDiscount} : -{eur(roundTripDiscount)}</div>}<div className=\"flex justify-between\"><span>{c.total}</span><span className=\"text-5xl font-black tracking-[-0.06em]\">{eur(total)}</span></div>"
-);
-
 fs.writeFileSync(file, content, 'utf8');
-console.log('[transfer booking] wording and round-trip UX patched');
+console.log('[transfer booking] wording and round-trip UX patched without discount');
