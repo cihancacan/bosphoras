@@ -12,6 +12,14 @@ interface SeoProps {
   alternates?: Record<string, string> | null;
 }
 
+export const transferPartnerRating = {
+  '@type': 'AggregateRating',
+  ratingValue: '4.9',
+  bestRating: '5',
+  worstRating: '1',
+  reviewCount: 3358,
+};
+
 export function buildMetadata({
   locale,
   path = '/',
@@ -159,10 +167,12 @@ export function serviceSchema(service: {
     name: service.name,
     description: service.description,
     url: service.url,
+    aggregateRating: transferPartnerRating,
     provider: {
-      '@type': 'Organization',
-      name: 'Bosphoras',
+      '@type': 'LocalBusiness',
+      name: 'Bosphoras Mobility transfer partner',
       url: siteUrl,
+      aggregateRating: transferPartnerRating,
     },
     areaServed: 'Turkey',
   };
