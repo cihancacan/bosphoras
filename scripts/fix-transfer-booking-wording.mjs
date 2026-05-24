@@ -23,6 +23,11 @@ replaceAll('Round trip: return added to total', '');
 replaceAll('Remise aller-retour -15%', 'Aller-retour');
 replaceAll('Round trip discount -15%', 'Round trip');
 
+replaceAll(
+  "type Quote = { source: string; estimatedMinutes: number; billedMinutes: number; distanceKm: number; vehiclePrice: number; tollPrice: number; total: number };",
+  "type Quote = { source: string; estimatedMinutes: number; billedMinutes: number; distanceKm: number; vehiclePrice: number; tollPrice: number; total: number; roundTrip?: boolean; oneWayVehiclePrice?: number; oneWayTollPrice?: number };"
+);
+
 if (!content.includes('function addMinutesToDateTime')) {
   const helper = [
     'function addMinutesToDateTime(dateValue: string, timeValue: string, minutesToAdd: number) {',
@@ -85,7 +90,11 @@ replaceAll(
 
 replaceAll(
   "  const vehiclePrice = selectedQuote?.vehiclePrice ?? fallbackPrice(selectedVehicle);\n  const tollPrice = selectedQuote?.tollPrice ?? 0;",
-  "  const vehiclePrice = selectedQuote?.vehiclePrice ?? (isRoundTrip ? Math.round(fallbackPrice(selectedVehicle) * 2) : fallbackPrice(selectedVehicle));\n  const tollPrice = selectedQuote?.tollPrice ?? 0;"
+  "  const selectedOneWayVehiclePrice = selectedQuote?.oneWayVehiclePrice ?? (selectedQuote?.roundTrip ? selectedQuote.vehiclePrice / 2 : selectedQuote?.vehiclePrice) ?? fallbackPrice(selectedVehicle);\n  const selectedOneWayTollPrice = selectedQuote?.oneWayTollPrice ?? (selectedQuote?.roundTrip ? selectedQuote.tollPrice / 2 : selectedQuote?.tollPrice) ?? 0;\n  const vehiclePrice = isRoundTrip ? Math.round(selectedOneWayVehiclePrice * 2) : Math.round(selectedOneWayVehiclePrice);\n  const tollPrice = isRoundTrip ? Math.round(selectedOneWayTollPrice * 2) : Math.round(selectedOneWayTollPrice);"
+);
+replaceAll(
+  "  const vehiclePrice = selectedQuote?.vehiclePrice ?? (isRoundTrip ? Math.round(fallbackPrice(selectedVehicle) * 2) : fallbackPrice(selectedVehicle));\n  const tollPrice = selectedQuote?.tollPrice ?? 0;",
+  "  const selectedOneWayVehiclePrice = selectedQuote?.oneWayVehiclePrice ?? (selectedQuote?.roundTrip ? selectedQuote.vehiclePrice / 2 : selectedQuote?.vehiclePrice) ?? fallbackPrice(selectedVehicle);\n  const selectedOneWayTollPrice = selectedQuote?.oneWayTollPrice ?? (selectedQuote?.roundTrip ? selectedQuote.tollPrice / 2 : selectedQuote?.tollPrice) ?? 0;\n  const vehiclePrice = isRoundTrip ? Math.round(selectedOneWayVehiclePrice * 2) : Math.round(selectedOneWayVehiclePrice);\n  const tollPrice = isRoundTrip ? Math.round(selectedOneWayTollPrice * 2) : Math.round(selectedOneWayTollPrice);"
 );
 
 replaceAll(
@@ -116,14 +125,13 @@ if (!content.includes('tripModeLabels[l].returnDate')) replaceAll(flightPaxBlock
 
 replaceAll(
   "{vehicles.map((car) => { const quote = quotes[car.id]; const price = quote?.total ?? fallbackPrice(car); return <button key={car.id}",
-  "{vehicles.map((car) => { const quote = quotes[car.id]; const price = quote?.total ?? (isRoundTrip ? Math.round(fallbackPrice(car) * 2) : fallbackPrice(car)); return <button key={car.id}"
+  "{vehicles.map((car) => { const quote = quotes[car.id]; const oneWayVehiclePrice = quote?.oneWayVehiclePrice ?? (quote?.roundTrip ? quote.vehiclePrice / 2 : quote?.vehiclePrice) ?? fallbackPrice(car); const oneWayTollPrice = quote?.oneWayTollPrice ?? (quote?.roundTrip ? quote.tollPrice / 2 : quote?.tollPrice) ?? 0; const price = isRoundTrip ? Math.round((oneWayVehiclePrice + oneWayTollPrice) * 2) : Math.round(oneWayVehiclePrice + oneWayTollPrice); return <button key={car.id}"
 );
 replaceAll(
-  "{vehicles.map((car) => { const quote = quotes[car.id]; const oneWayPrice = quote?.total ?? fallbackPrice(car); const price = isRoundTrip ? Math.round(oneWayPrice * 2) : oneWayPrice; return <button key={car.id}",
-  "{vehicles.map((car) => { const quote = quotes[car.id]; const price = quote?.total ?? (isRoundTrip ? Math.round(fallbackPrice(car) * 2) : fallbackPrice(car)); return <button key={car.id}"
+  "{vehicles.map((car) => { const quote = quotes[car.id]; const price = quote?.total ?? (isRoundTrip ? Math.round(fallbackPrice(car) * 2) : fallbackPrice(car)); return <button key={car.id}",
+  "{vehicles.map((car) => { const quote = quotes[car.id]; const oneWayVehiclePrice = quote?.oneWayVehiclePrice ?? (quote?.roundTrip ? quote.vehiclePrice / 2 : quote?.vehiclePrice) ?? fallbackPrice(car); const oneWayTollPrice = quote?.oneWayTollPrice ?? (quote?.roundTrip ? quote.tollPrice / 2 : quote?.tollPrice) ?? 0; const price = isRoundTrip ? Math.round((oneWayVehiclePrice + oneWayTollPrice) * 2) : Math.round(oneWayVehiclePrice + oneWayTollPrice); return <button key={car.id}"
 );
 
-// Remove repeated route details above vehicles and only keep details inside vehicle card.
 replaceAll(
   "<p className=\"mt-2 text-sm font-semibold text-gray-500\">{quoteLoading ? c.calculating : `${routeMinutes} min ${c.estimated} · ${routeBilled} min ${c.billed} · ${routeDistance} km`}</p><RouteDetails />",
   ""
@@ -133,17 +141,11 @@ replaceAll(
   ""
 );
 
-// Vehicle card details: outbound time + outbound km + toll included, no toll amount.
-replaceAll(
-  "<span>{quote?.distanceKm ?? routeDistance} km</span><span>{quote?.tollPrice ? `${c.toll} ${eur(quote.tollPrice)} ${c.included}` : c.accordingRoute}</span>",
-  "<span>{quote?.estimatedMinutes ?? routeMinutes} {c.tripMin}</span><span>{quote?.distanceKm ?? routeDistance} km</span><span>{c.toll} {c.included}</span>"
-);
 replaceAll(
   "<span>{quote?.distanceKm ?? routeDistance} km</span><span>{quote?.tollPrice ? `${c.toll} ${eur(quote.tollPrice)} ${c.included}` : c.accordingRoute}</span>",
   "<span>{quote?.estimatedMinutes ?? routeMinutes} {c.tripMin}</span><span>{quote?.distanceKm ?? routeDistance} km</span><span>{c.toll} {c.included}</span>"
 );
 
-// Summary: no billed minutes and no toll amount shown.
 replaceAll("<p><b className=\"text-white\">{c.billed} :</b> {routeBilled} min</p>", "");
 replaceAll(
   "<p><b className=\"text-white\">{c.toll} :</b> {tollPrice ? `${eur(tollPrice)} ${c.included}` : c.notEstimated}</p>",
@@ -155,4 +157,4 @@ replaceAll(
 );
 
 fs.writeFileSync(file, content, 'utf8');
-console.log('[transfer booking] vehicle step simplified and toll amount hidden');
+console.log('[transfer booking] first try round trip price forced from one-way vehicle and toll');
