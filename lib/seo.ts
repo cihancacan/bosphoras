@@ -167,7 +167,6 @@ export function serviceSchema(service: {
     name: service.name,
     description: service.description,
     url: service.url,
-    aggregateRating: transferPartnerRating,
     provider: {
       '@type': 'LocalBusiness',
       name: 'Bosphoras Mobility transfer partner',
