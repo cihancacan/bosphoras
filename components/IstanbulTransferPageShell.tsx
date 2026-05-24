@@ -4,6 +4,7 @@ import { TransferBookingClient } from '@/components/TransferBookingClient';
 import { TransferQuoteEnhancer } from '@/components/TransferQuoteEnhancer';
 import { TransferCheckoutEnhancer } from '@/components/TransferCheckoutEnhancer';
 import { TransferComplianceNotice } from '@/components/TransferComplianceNotice';
+import { TransferGoogleRatingBadge } from '@/components/TransferGoogleRatingBadge';
 import { TransferOnlyHeader } from '@/components/TransferOnlyHeader';
 import { TransferOnlyFooter } from '@/components/TransferOnlyFooter';
 import { TransferSeoContent } from '@/components/TransferSeoContent';
@@ -208,6 +209,7 @@ export function IstanbulTransferPageShell({ locale }: { locale: TransferLocale }
         <TransferQuoteEnhancer />
         <TransferCheckoutEnhancer />
         <TransferComplianceNotice locale={locale} />
+        <TransferGoogleRatingBadge locale={locale} />
         <TransferSeoContent locale={locale} />
         <TransferDeepSeoContent locale={locale} />
         <section id="transfer-faq" className="bg-white px-5 pb-16 md:px-8 md:pb-24" dir={locale === 'ar' ? 'rtl' : 'ltr'}>
