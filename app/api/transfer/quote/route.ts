@@ -95,6 +95,7 @@ export async function POST(request: Request) {
     const mode = (body.mode === 'hourly' ? 'hourly' : 'transfer') as Mode;
     const vehicleId = (body.vehicleId || 'e') as VehicleId;
     const hours = Math.max(2, Number(body.hours || 2));
+    const roundTrip = mode === 'transfer' && (body.roundTrip === true || body.roundTrip === 'true');
 
     if (!pickup || !dropoff) {
       return NextResponse.json({ error: 'pickup_and_dropoff_required' }, { status: 400 });
@@ -107,18 +108,24 @@ export async function POST(request: Request) {
       ? Math.round((googleRoute.distanceMeters / 1000) * 10) / 10
       : fallbackDistanceKm(estimatedMinutes);
     const billed = billedMinutes(estimatedMinutes);
-    const vehiclePrice = mode === 'transfer' ? Math.round(rate * (billed / 60)) : Math.round(hourlyPrice(rate, hours));
-    const tollPrice = estimateTollPrice(pickup, dropoff);
+    const multiplier = roundTrip ? 2 : 1;
+    const oneWayVehiclePrice = mode === 'transfer' ? Math.round(rate * (billed / 60)) : Math.round(hourlyPrice(rate, hours));
+    const oneWayTollPrice = estimateTollPrice(pickup, dropoff);
+    const vehiclePrice = mode === 'transfer' ? oneWayVehiclePrice * multiplier : oneWayVehiclePrice;
+    const tollPrice = mode === 'transfer' ? oneWayTollPrice * multiplier : oneWayTollPrice;
     const total = vehiclePrice + tollPrice;
 
     return NextResponse.json({
       source: googleRoute ? 'google_routes' : 'fallback',
       estimatedMinutes,
-      billedMinutes: billed,
-      distanceKm,
+      billedMinutes: roundTrip ? billed * 2 : billed,
+      distanceKm: roundTrip ? Math.round(distanceKm * 2 * 10) / 10 : distanceKm,
       vehiclePrice,
       tollPrice,
       total,
+      roundTrip,
+      oneWayVehiclePrice,
+      oneWayTollPrice,
     });
   } catch (error) {
     return NextResponse.json({ error: 'quote_failed' }, { status: 500 });
