@@ -118,8 +118,8 @@ export async function POST(request: Request) {
     return NextResponse.json({
       source: googleRoute ? 'google_routes' : 'fallback',
       estimatedMinutes,
-      billedMinutes: roundTrip ? billed * 2 : billed,
-      distanceKm: roundTrip ? Math.round(distanceKm * 2 * 10) / 10 : distanceKm,
+      billedMinutes: billed,
+      distanceKm,
       vehiclePrice,
       tollPrice,
       total,
