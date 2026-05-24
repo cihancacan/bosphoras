@@ -71,11 +71,15 @@ if (!content.includes('const tripModeLabels')) {
 
 replaceAll(
   "  const [mode, setMode] = useState<Mode>('transfer');\n  const [pickup, setPickup] = useState('');",
-  "  const [mode, setMode] = useState<Mode>('transfer');\n  const [roundTrip, setRoundTrip] = useState(false);\n  const modeRef = useRef<Mode>('transfer');\n  const roundTripRef = useRef(false);\n  const isRoundTrip = mode === 'transfer' && roundTrip;\n  const [pickup, setPickup] = useState('');"
+  "  const [mode, setMode] = useState<Mode>('transfer');\n  const [roundTrip, setRoundTrip] = useState(false);\n  const modeRef = useRef<Mode>('transfer');\n  const roundTripRef = useRef(false);\n  const isRoundTrip = mode === 'transfer' && (roundTrip || roundTripRef.current);\n  const [pickup, setPickup] = useState('');"
 );
 replaceAll(
   "  const [mode, setMode] = useState<Mode>('transfer');\n  const [roundTrip, setRoundTrip] = useState(false);\n  const [pickup, setPickup] = useState('');",
-  "  const [mode, setMode] = useState<Mode>('transfer');\n  const [roundTrip, setRoundTrip] = useState(false);\n  const modeRef = useRef<Mode>('transfer');\n  const roundTripRef = useRef(false);\n  const isRoundTrip = mode === 'transfer' && roundTrip;\n  const [pickup, setPickup] = useState('');"
+  "  const [mode, setMode] = useState<Mode>('transfer');\n  const [roundTrip, setRoundTrip] = useState(false);\n  const modeRef = useRef<Mode>('transfer');\n  const roundTripRef = useRef(false);\n  const isRoundTrip = mode === 'transfer' && (roundTrip || roundTripRef.current);\n  const [pickup, setPickup] = useState('');"
+);
+replaceAll(
+  "const isRoundTrip = mode === 'transfer' && roundTrip;",
+  "const isRoundTrip = mode === 'transfer' && (roundTrip || roundTripRef.current);"
 );
 
 replaceAll(
@@ -116,7 +120,7 @@ replaceAll(
 );
 
 const oldTabs = "<div className=\"mb-4 grid grid-cols-2 rounded-2xl bg-white/45 p-1 backdrop-blur-xl md:bg-gray-100\"><button onClick={() => setMode('transfer')} className={`rounded-xl py-3 text-xs font-black uppercase tracking-[0.14em] transition ${mode === 'transfer' ? 'bg-black text-white shadow-lg' : 'text-gray-700'}`}>{c.transfer}</button><button onClick={() => setMode('hourly')} className={`rounded-xl py-3 text-xs font-black uppercase tracking-[0.14em] transition ${mode === 'hourly' ? 'bg-black text-white shadow-lg' : 'text-gray-700'}`}>{c.hourly}</button></div>";
-const newTabs = "<div className=\"mb-4 grid grid-cols-3 rounded-2xl bg-white/45 p-1 backdrop-blur-xl md:bg-gray-100\"><button onClick={() => { modeRef.current = 'transfer'; roundTripRef.current = false; setMode('transfer'); setRoundTrip(false); setQuotes({}); }} className={`rounded-xl py-3 text-[10px] font-black uppercase tracking-[0.08em] transition md:text-xs md:tracking-[0.14em] ${mode === 'transfer' && !roundTrip ? 'bg-black text-white shadow-lg' : 'text-gray-700'}`}>{tripModeLabels[l].oneWay}</button><button onClick={() => { modeRef.current = 'transfer'; roundTripRef.current = true; setMode('transfer'); setRoundTrip(true); setQuotes({}); }} className={`rounded-xl py-3 text-[10px] font-black uppercase tracking-[0.08em] transition md:text-xs md:tracking-[0.14em] ${mode === 'transfer' && roundTrip ? 'bg-black text-white shadow-lg' : 'text-gray-700'}`}>{tripModeLabels[l].roundTrip}</button><button onClick={() => { modeRef.current = 'hourly'; roundTripRef.current = false; setMode('hourly'); setRoundTrip(false); setQuotes({}); }} className={`rounded-xl py-3 text-[10px] font-black uppercase tracking-[0.08em] transition md:text-xs md:tracking-[0.14em] ${mode === 'hourly' ? 'bg-black text-white shadow-lg' : 'text-gray-700'}`}>{tripModeLabels[l].hourly}</button></div>";
+const newTabs = "<div className=\"mb-4 grid grid-cols-3 rounded-2xl bg-white/45 p-1 backdrop-blur-xl md:bg-gray-100\"><button onClick={() => { modeRef.current = 'transfer'; roundTripRef.current = false; setMode('transfer'); setRoundTrip(false); setQuotes({}); }} className={`rounded-xl py-3 text-[10px] font-black uppercase tracking-[0.08em] transition md:text-xs md:tracking-[0.14em] ${mode === 'transfer' && !(roundTrip || roundTripRef.current) ? 'bg-black text-white shadow-lg' : 'text-gray-700'}`}>{tripModeLabels[l].oneWay}</button><button onClick={() => { modeRef.current = 'transfer'; roundTripRef.current = true; setMode('transfer'); setRoundTrip(true); setQuotes({}); }} className={`rounded-xl py-3 text-[10px] font-black uppercase tracking-[0.08em] transition md:text-xs md:tracking-[0.14em] ${mode === 'transfer' && (roundTrip || roundTripRef.current) ? 'bg-black text-white shadow-lg' : 'text-gray-700'}`}>{tripModeLabels[l].roundTrip}</button><button onClick={() => { modeRef.current = 'hourly'; roundTripRef.current = false; setMode('hourly'); setRoundTrip(false); setQuotes({}); }} className={`rounded-xl py-3 text-[10px] font-black uppercase tracking-[0.08em] transition md:text-xs md:tracking-[0.14em] ${mode === 'hourly' ? 'bg-black text-white shadow-lg' : 'text-gray-700'}`}>{tripModeLabels[l].hourly}</button></div>";
 replaceAll(oldTabs, newTabs);
 
 const flightPaxBlock = "          <div className=\"grid grid-cols-[minmax(0,1.35fr)_minmax(70px,0.65fr)] gap-2 md:contents\"><label><span className={labelClass}><Plane size={13}/>{c.flight}</span><input value={flightNumber} onChange={(e) => setFlightNumber(e.target.value)} className={inputClass} placeholder={c.flightPlaceholder} /></label><label><span className={labelClass}><Users size={13}/>{c.pax}</span><input type=\"number\" min={1} max={12} value={pax} onChange={(e) => setPax(Number(e.target.value))} className={`${inputClass} text-center`} /></label></div>";
@@ -157,4 +161,4 @@ replaceAll(
 );
 
 fs.writeFileSync(file, content, 'utf8');
-console.log('[transfer booking] first try round trip price forced from one-way vehicle and toll');
+console.log('[transfer booking] french round-trip first render fixed with ref-backed state');
