@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import Stripe from 'stripe';
-import { sendTransferConfirmationEmail } from '@/lib/transfer-confirmation-email';
+import { sendInternalTransferBookingEmail, sendTransferConfirmationEmail } from '@/lib/transfer-confirmation-email';
 
 function getBaseUrl(request: Request) {
   const envUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL;
@@ -25,8 +25,8 @@ export async function POST(request: Request) {
     const email = String(meta.email || session.customer_email || '').trim();
     if (!email) return NextResponse.json({ error: 'missing_email' }, { status: 400 });
 
-    await sendTransferConfirmationEmail({
-      locale: meta.locale || 'fr',
+    const booking = {
+      locale: String(meta.locale || 'fr'),
       email,
       firstName: String(meta.firstName || ''),
       lastName: String(meta.lastName || ''),
@@ -39,7 +39,10 @@ export async function POST(request: Request) {
       passengerCount: String(meta.passengerCount || ''),
       sessionId: id,
       baseUrl: getBaseUrl(request),
-    });
+    };
+
+    await sendTransferConfirmationEmail(booking);
+    await sendInternalTransferBookingEmail(booking);
 
     return NextResponse.json({ ok: true });
   } catch (error) {
