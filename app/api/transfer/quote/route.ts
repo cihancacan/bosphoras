@@ -15,13 +15,30 @@ const VEHICLE_RATES: Record<VehicleId, number> = {
   sprinter: 200,
 };
 
-const AIRPORT_TERMS = ['airport', 'ist', 'saw', 'aéroport', 'havalimani', 'havalimanı'];
-const TOLL_TERMS = ['istanbul airport', ' ist', 'sabiha', 'saw', 'asia', 'asian', 'kadikoy', 'kadıköy', 'uskudar', 'üsküdar', 'beykoz'];
+const SAW_TERMS = ['saw', 'sabiha', 'sabiha gokcen', 'sabiha gökçen', 'gokcen', 'gökçen'];
+const ASIA_TERMS = ['asia', 'asian', 'asian side', 'anatolian', 'anatolian side', 'asya', 'anadolu', 'kadikoy', 'kadıköy', 'uskudar', 'üsküdar', 'beykoz', 'atasehir', 'ataşehir'];
+
+function normalizeText(value: string) {
+  return value
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/ı/g, 'i')
+    .replace(/ğ/g, 'g')
+    .replace(/ü/g, 'u')
+    .replace(/ş/g, 's')
+    .replace(/ö/g, 'o')
+    .replace(/ç/g, 'c');
+}
+
+function includesAny(text: string, terms: string[]) {
+  return terms.some((term) => text.includes(normalizeText(term)));
+}
 
 function fallbackMinutes(pickup: string, dropoff: string) {
-  const text = `${pickup} ${dropoff}`.toLowerCase();
-  const ist = text.includes('istanbul airport') || text.includes(' ist');
-  const saw = text.includes('sabiha') || text.includes('saw');
+  const text = normalizeText(`${pickup} ${dropoff}`);
+  const ist = text.includes('istanbul airport') || text.includes(' ist') || text.includes('istanbul flughafen') || text.includes('flughafen istanbul');
+  const saw = includesAny(text, SAW_TERMS);
   if (ist && saw) return 120;
   if (saw) return 90;
   if (ist) return 75;
@@ -41,11 +58,8 @@ function hourlyPrice(rate: number, hours: number) {
 }
 
 function estimateTollPrice(pickup: string, dropoff: string) {
-  const text = `${pickup} ${dropoff}`.toLowerCase();
-  const hasAirport = AIRPORT_TERMS.some((term) => text.includes(term));
-  const hasTollRoute = TOLL_TERMS.some((term) => text.includes(term));
-  if (!hasAirport && !hasTollRoute) return 0;
-  if (text.includes('saw') || text.includes('sabiha')) return 25;
+  const text = normalizeText(`${pickup} ${dropoff}`);
+  if (includesAny(text, SAW_TERMS) || includesAny(text, ASIA_TERMS)) return 25;
   return 15;
 }
 
@@ -110,9 +124,9 @@ export async function POST(request: Request) {
     const billed = billedMinutes(estimatedMinutes);
     const multiplier = roundTrip ? 2 : 1;
     const oneWayVehiclePrice = mode === 'transfer' ? Math.round(rate * (billed / 60)) : Math.round(hourlyPrice(rate, hours));
-    const oneWayTollPrice = estimateTollPrice(pickup, dropoff);
+    const oneWayTollPrice = mode === 'transfer' ? estimateTollPrice(pickup, dropoff) : 0;
     const vehiclePrice = mode === 'transfer' ? oneWayVehiclePrice * multiplier : oneWayVehiclePrice;
-    const tollPrice = mode === 'transfer' ? oneWayTollPrice * multiplier : oneWayTollPrice;
+    const tollPrice = mode === 'transfer' ? oneWayTollPrice * multiplier : 0;
     const total = vehiclePrice + tollPrice;
 
     return NextResponse.json({
