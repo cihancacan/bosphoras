@@ -4,6 +4,18 @@ import { useEffect } from 'react';
 
 type TransferLocale = 'fr' | 'en' | 'ru' | 'ar' | 'zh' | 'de' | 'es' | 'it' | 'pt';
 
+const eyebrowLabels: Record<TransferLocale, string> = {
+  fr: 'Transfert aéroport Istanbul',
+  en: 'Istanbul airport transfer',
+  ru: 'Трансфер аэропорт Стамбул',
+  ar: 'نقل مطار إسطنبول',
+  zh: '伊斯坦布尔机场接送',
+  de: 'Flughafentransfer Istanbul',
+  es: 'Traslado aeropuerto Estambul',
+  it: 'Transfer aeroporto Istanbul',
+  pt: 'Transfer aeroporto Istambul',
+};
+
 const instantLabels: Record<TransferLocale, string> = {
   fr: 'Confirmation immédiate',
   en: 'Instant confirmation',
@@ -49,7 +61,18 @@ function createBadge(locale: TransferLocale) {
   return badge;
 }
 
+function hideEyebrow(locale: TransferLocale) {
+  const label = eyebrowLabels[locale];
+  const targets = Array.from(document.querySelectorAll('div,span')).filter((element) => element.textContent?.trim() === label);
+  targets.forEach((target) => {
+    const element = target as HTMLElement;
+    element.style.display = 'none';
+    element.setAttribute('aria-hidden', 'true');
+  });
+}
+
 function insertBadges(locale: TransferLocale) {
+  hideEyebrow(locale);
   const label = instantLabels[locale];
   const targets = Array.from(document.querySelectorAll('div,span')).filter((element) => element.textContent?.trim() === label);
   targets.forEach((target) => {
