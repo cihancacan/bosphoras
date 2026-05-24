@@ -28,54 +28,51 @@ const replacements = [
 for (const [from, to] of replacements) content = content.split(from).join(to);
 
 if (!content.includes('function addMinutesToDateTime')) {
-  content = content.replace(
-    "function getTimeOptions(locale: TransferLocale) {",
-    `function addMinutesToDateTime(dateValue: string, timeValue: string, minutesToAdd: number) {
-  const base = new Date(`${dateValue}T${timeValue}:00`);
-  if (Number.isNaN(base.getTime())) return { date: dateValue, time: timeValue };
-  base.setMinutes(base.getMinutes() + minutesToAdd);
-  const local = new Date(base.getTime() - base.getTimezoneOffset() * 60000);
-  return { date: local.toISOString().slice(0, 10), time: local.toISOString().slice(11, 16) };
-}
-
-function isReturnLessThanOneHourAfterPickup(dateValue: string, timeValue: string, returnDateValue: string, returnTimeValue: string) {
-  const outbound = new Date(`${dateValue}T${timeValue}:00`).getTime();
-  const inbound = new Date(`${returnDateValue}T${returnTimeValue}:00`).getTime();
-  if (!Number.isFinite(outbound) || !Number.isFinite(inbound)) return false;
-  return inbound < outbound + 60 * 60 * 1000;
-}
-
-function getTimeOptions(locale: TransferLocale) {`
-  );
+  const helper = [
+    'function addMinutesToDateTime(dateValue: string, timeValue: string, minutesToAdd: number) {',
+    "  const base = new Date(dateValue + 'T' + timeValue + ':00');",
+    '  if (Number.isNaN(base.getTime())) return { date: dateValue, time: timeValue };',
+    '  base.setMinutes(base.getMinutes() + minutesToAdd);',
+    '  const local = new Date(base.getTime() - base.getTimezoneOffset() * 60000);',
+    "  return { date: local.toISOString().slice(0, 10), time: local.toISOString().slice(11, 16) };",
+    '}',
+    '',
+    'function isReturnLessThanOneHourAfterPickup(dateValue: string, timeValue: string, returnDateValue: string, returnTimeValue: string) {',
+    "  const outbound = new Date(dateValue + 'T' + timeValue + ':00').getTime();",
+    "  const inbound = new Date(returnDateValue + 'T' + returnTimeValue + ':00').getTime();",
+    '  if (!Number.isFinite(outbound) || !Number.isFinite(inbound)) return false;',
+    '  return inbound < outbound + 60 * 60 * 1000;',
+    '}',
+    '',
+    'function getTimeOptions(locale: TransferLocale) {'
+  ].join('\n');
+  content = content.replace('function getTimeOptions(locale: TransferLocale) {', helper);
 }
 
 if (!content.includes('const tripModeLabels')) {
-  content = content.replace(
-    "const vehicleMeta: Record<TransferLocale, Record<VehicleId, { name: string; label: string; pax: string; bags: string }>> = {",
-    `const tripModeLabels: Record<TransferLocale, { oneWay: string; roundTrip: string; hourly: string; returnDate: string; returnTime: string; returnTrip: string; roundTripDiscount: string; roundTripOffer: string }> = {
-  fr: { oneWay: 'Aller simple', roundTrip: 'Aller-retour', hourly: 'À l’heure', returnDate: 'Date retour', returnTime: 'Heure retour', returnTrip: 'Trajet retour', roundTripDiscount: 'Aller-retour', roundTripOffer: '' },
-  en: { oneWay: 'One way', roundTrip: 'Round trip', hourly: 'Hourly', returnDate: 'Return date', returnTime: 'Return time', returnTrip: 'Return trip', roundTripDiscount: 'Round trip', roundTripOffer: '' },
-  ru: { oneWay: 'В одну сторону', roundTrip: 'Туда-обратно', hourly: 'Почасово', returnDate: 'Дата возврата', returnTime: 'Время возврата', returnTrip: 'Обратный маршрут', roundTripDiscount: 'Туда-обратно', roundTripOffer: '' },
-  ar: { oneWay: 'ذهاب فقط', roundTrip: 'ذهاب وعودة', hourly: 'بالساعة', returnDate: 'تاريخ العودة', returnTime: 'وقت العودة', returnTrip: 'رحلة العودة', roundTripDiscount: 'ذهاب وعودة', roundTripOffer: '' },
-  zh: { oneWay: '单程', roundTrip: '往返', hourly: '按小时', returnDate: '返程日期', returnTime: '返程时间', returnTrip: '返程路线', roundTripDiscount: '往返', roundTripOffer: '' },
-  de: { oneWay: 'Einfach', roundTrip: 'Hin und zurück', hourly: 'Stundenweise', returnDate: 'Rückdatum', returnTime: 'Rückzeit', returnTrip: 'Rückfahrt', roundTripDiscount: 'Hin und zurück', roundTripOffer: '' },
-  es: { oneWay: 'Solo ida', roundTrip: 'Ida y vuelta', hourly: 'Por horas', returnDate: 'Fecha de regreso', returnTime: 'Hora de regreso', returnTrip: 'Trayecto de regreso', roundTripDiscount: 'Ida y vuelta', roundTripOffer: '' },
-  it: { oneWay: 'Solo andata', roundTrip: 'Andata e ritorno', hourly: 'A ore', returnDate: 'Data ritorno', returnTime: 'Ora ritorno', returnTrip: 'Tragitto di ritorno', roundTripDiscount: 'Andata e ritorno', roundTripOffer: '' },
-  pt: { oneWay: 'Só ida', roundTrip: 'Ida e volta', hourly: 'Por hora', returnDate: 'Data de regresso', returnTime: 'Hora de regresso', returnTrip: 'Trajeto de regresso', roundTripDiscount: 'Ida e volta', roundTripOffer: '' },
-};
-
-const vehicleMeta: Record<TransferLocale, Record<VehicleId, { name: string; label: string; pax: string; bags: string }>> = {`
-  );
+  const labels = [
+    "const tripModeLabels: Record<TransferLocale, { oneWay: string; roundTrip: string; hourly: string; returnDate: string; returnTime: string; returnTrip: string; roundTripDiscount: string; roundTripOffer: string }> = {",
+    "  fr: { oneWay: 'Aller simple', roundTrip: 'Aller-retour', hourly: 'À l’heure', returnDate: 'Date retour', returnTime: 'Heure retour', returnTrip: 'Trajet retour', roundTripDiscount: 'Aller-retour', roundTripOffer: '' },",
+    "  en: { oneWay: 'One way', roundTrip: 'Round trip', hourly: 'Hourly', returnDate: 'Return date', returnTime: 'Return time', returnTrip: 'Return trip', roundTripDiscount: 'Round trip', roundTripOffer: '' },",
+    "  ru: { oneWay: 'В одну сторону', roundTrip: 'Туда-обратно', hourly: 'Почасово', returnDate: 'Дата возврата', returnTime: 'Время возврата', returnTrip: 'Обратный маршрут', roundTripDiscount: 'Туда-обратно', roundTripOffer: '' },",
+    "  ar: { oneWay: 'ذهاب فقط', roundTrip: 'ذهاب وعودة', hourly: 'بالساعة', returnDate: 'تاريخ العودة', returnTime: 'وقت العودة', returnTrip: 'رحلة العودة', roundTripDiscount: 'ذهاب وعودة', roundTripOffer: '' },",
+    "  zh: { oneWay: '单程', roundTrip: '往返', hourly: '按小时', returnDate: '返程日期', returnTime: '返程时间', returnTrip: '返程路线', roundTripDiscount: '往返', roundTripOffer: '' },",
+    "  de: { oneWay: 'Einfach', roundTrip: 'Hin und zurück', hourly: 'Stundenweise', returnDate: 'Rückdatum', returnTime: 'Rückzeit', returnTrip: 'Rückfahrt', roundTripDiscount: 'Hin und zurück', roundTripOffer: '' },",
+    "  es: { oneWay: 'Solo ida', roundTrip: 'Ida y vuelta', hourly: 'Por horas', returnDate: 'Fecha de regreso', returnTime: 'Hora de regreso', returnTrip: 'Trayecto de regreso', roundTripDiscount: 'Ida y vuelta', roundTripOffer: '' },",
+    "  it: { oneWay: 'Solo andata', roundTrip: 'Andata e ritorno', hourly: 'A ore', returnDate: 'Data ritorno', returnTime: 'Ora ritorno', returnTrip: 'Tragitto di ritorno', roundTripDiscount: 'Andata e ritorno', roundTripOffer: '' },",
+    "  pt: { oneWay: 'Só ida', roundTrip: 'Ida e volta', hourly: 'Por hora', returnDate: 'Data de regresso', returnTime: 'Hora de regresso', returnTrip: 'Trajeto de regresso', roundTripDiscount: 'Ida e volta', roundTripOffer: '' },",
+    '};',
+    '',
+    "const vehicleMeta: Record<TransferLocale, Record<VehicleId, { name: string; label: string; pax: string; bags: string }>> = {"
+  ].join('\n');
+  content = content.replace("const vehicleMeta: Record<TransferLocale, Record<VehicleId, { name: string; label: string; pax: string; bags: string }>> = {", labels);
 }
 
 content = content.replace("  const [mode, setMode] = useState<Mode>('transfer');\n  const [pickup, setPickup] = useState('');", "  const [mode, setMode] = useState<Mode>('transfer');\n  const [roundTrip, setRoundTrip] = useState(false);\n  const [pickup, setPickup] = useState('');");
 content = content.replace("  const [date, setDate] = useState(init.date);\n  const [time, setTime] = useState(init.time);", "  const [date, setDate] = useState(init.date);\n  const [time, setTime] = useState(init.time);\n  const [returnDate, setReturnDate] = useState(init.date);\n  const [returnTime, setReturnTime] = useState(init.time);");
-
 content = content.replace("  useEffect(() => { stepRef.current = step; }, [step]);", "  useEffect(() => { stepRef.current = step; }, [step]);\n  useEffect(() => {\n    if (!roundTrip) return;\n    if (!returnDate || isReturnLessThanOneHourAfterPickup(date, time, returnDate, returnTime)) {\n      const nextReturn = addMinutesToDateTime(date, time, 60);\n      setReturnDate(nextReturn.date);\n      setReturnTime(nextReturn.time);\n    }\n  }, [roundTrip, date, time, returnDate, returnTime]);");
-
 content = content.replace("  const vehiclePrice = selectedQuote?.vehiclePrice ?? fallbackPrice(selectedVehicle);\n  const tollPrice = selectedQuote?.tollPrice ?? 0;", "  const vehiclePrice = selectedQuote?.vehiclePrice ?? fallbackPrice(selectedVehicle);\n  const tollPrice = selectedQuote?.tollPrice ?? 0;\n  const isRoundTrip = mode === 'transfer' && roundTrip;\n  const effectiveVehiclePrice = isRoundTrip ? vehiclePrice * 2 : vehiclePrice;\n  const effectiveTollPrice = isRoundTrip ? tollPrice * 2 : tollPrice;");
 content = content.replace("  const total = vehiclePrice + tollPrice + (child ? 30 : 0) + (flowers ? 150 : 0) + (roses ? 400 : 0) + tipValue;", "  const extrasTotal = (child ? 30 : 0) + (flowers ? 150 : 0) + (roses ? 400 : 0);\n  const total = effectiveVehiclePrice + effectiveTollPrice + extrasTotal + tipValue;");
-
 content = content.replace("  const timeLabel = timeOptions.find((x) => x.value === time)?.label || time;\n  const formattedDate = date ? new Intl.DateTimeFormat(l === 'en' ? 'en-US' : l === 'ru' ? 'ru-RU' : l === 'ar' ? 'ar' : l === 'de' ? 'de-DE' : l === 'es' ? 'es-ES' : l === 'it' ? 'it-IT' : l === 'pt' ? 'pt-PT' : l === 'zh' ? 'zh-CN' : 'fr-FR', { day: '2-digit', month: 'short', year: 'numeric' }).format(new Date(`${date}T12:00:00`)) : '';", "  const timeLabel = timeOptions.find((x) => x.value === time)?.label || time;\n  const returnTimeLabel = timeOptions.find((x) => x.value === returnTime)?.label || returnTime;\n  const formatterLocale = l === 'en' ? 'en-US' : l === 'ru' ? 'ru-RU' : l === 'ar' ? 'ar' : l === 'de' ? 'de-DE' : l === 'es' ? 'es-ES' : l === 'it' ? 'it-IT' : l === 'pt' ? 'pt-PT' : l === 'zh' ? 'zh-CN' : 'fr-FR';\n  const formattedDate = date ? new Intl.DateTimeFormat(formatterLocale, { day: '2-digit', month: 'short', year: 'numeric' }).format(new Date(`${date}T12:00:00`)) : '';\n  const formattedReturnDate = returnDate ? new Intl.DateTimeFormat(formatterLocale, { day: '2-digit', month: 'short', year: 'numeric' }).format(new Date(`${returnDate}T12:00:00`)) : '';");
 content = content.replace("  const findCars = () => { if (!pickup.trim() || !drop.trim()) { alert(c.missingRoute); return; } setVehicleId(null); setQuotes({}); setLoading(true); setTimeout(async () => { setLoading(false); setStep(2); await loadQuotes(); }, 5000); };", "  const findCars = () => { if (!pickup.trim() || !drop.trim()) { alert(c.missingRoute); return; } setVehicleId(null); setQuotes({}); setLoading(true); setTimeout(async () => { await loadQuotes(); setLoading(false); setStep(2); }, 700); };");
 content = content.replace("  const chooseVehicle = (id: VehicleId) => { setVehicleId(id); setStep(3); };", "  const chooseVehicle = (id: VehicleId) => { if (quoteLoading) return; setVehicleId(id); setStep(3); };");
