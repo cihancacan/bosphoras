@@ -35,6 +35,19 @@ const lang: Record<string, string[]> = {
 function localeKey(locale?: string) { return lang[locale || ''] ? String(locale) : 'en'; }
 function esc(v?: string) { return String(v || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c] || c)); }
 function row(label: string, value?: string) { return value ? `<tr><td style="padding:9px 0;color:#64748b;font-size:13px;width:38%">${esc(label)}</td><td style="padding:9px 0;color:#0f172a;font-size:14px;font-weight:700">${esc(value)}</td></tr>` : ''; }
+function textLine(label: string, value?: string) { return value ? `${label} : ${value}\n` : ''; }
+
+function getTransporter() {
+  const host = process.env.SMTP_HOST;
+  const port = Number(process.env.SMTP_PORT || 465);
+  const secure = String(process.env.SMTP_SECURE || 'true') === 'true';
+  const user = process.env.SMTP_USER;
+  const pass = process.env.SMTP_PASS;
+  if (!host || !user || !pass) return null;
+  return nodemailer.createTransport({ host, port, secure, auth: { user, pass } });
+}
+
+function getFrom() { return process.env.MAIL_FROM || `Bosphoras Mobility <${replyEmail}>`; }
 
 export function buildTransferConfirmationEmail(data: BookingEmailData) {
   const t = lang[localeKey(data.locale)];
@@ -46,16 +59,26 @@ export function buildTransferConfirmationEmail(data: BookingEmailData) {
   return { subject: t[0], html, text };
 }
 
+export function buildInternalTransferBookingEmail(data: BookingEmailData) {
+  const clientName = `${data.firstName} ${data.lastName}`.trim();
+  const subject = 'Nouvelle réservation Bosphoras Mobility — paiement confirmé';
+  const text = `Nouvelle réservation confirmée\n\nUn client vient de confirmer et payer une réservation de transfert Bosphoras Mobility.\n\nINFORMATIONS CLIENT\n${textLine('Nom complet', clientName)}${textLine('Email', data.email)}${textLine('Téléphone', data.phone)}${textLine('Langue', data.locale || 'fr')}\nDÉTAILS RÉSERVATION\n${textLine('Départ', data.pickup)}${textLine('Arrivée', data.dropoff)}${textLine('Véhicule', data.vehicle)}${textLine('Date / heure', data.date)}${textLine('Vol', data.flightNumber)}${textLine('Nombre de passagers', data.passengerCount)}${textLine('Session Stripe', data.sessionId)}\nACTION À FAIRE\nAttendre la réponse du client avec les noms, prénoms et numéros de passeport / pièce d’identité des passagers.\n\nLe client a reçu automatiquement un email lui demandant de répondre avec ces informations conformément à la réglementation turque du transport privé.`;
+  const html = `<div style="font-family:Arial,sans-serif;color:#111827;line-height:1.6"><h2>Nouvelle réservation confirmée</h2><p>Un client vient de confirmer et payer une réservation de transfert Bosphoras Mobility.</p><h3>Informations client</h3><ul><li><b>Nom complet :</b> ${esc(clientName)}</li><li><b>Email :</b> ${esc(data.email)}</li><li><b>Téléphone :</b> ${esc(data.phone)}</li><li><b>Langue :</b> ${esc(data.locale || 'fr')}</li></ul><h3>Détails réservation</h3><ul><li><b>Départ :</b> ${esc(data.pickup)}</li><li><b>Arrivée :</b> ${esc(data.dropoff)}</li><li><b>Véhicule :</b> ${esc(data.vehicle)}</li><li><b>Date / heure :</b> ${esc(data.date)}</li><li><b>Vol :</b> ${esc(data.flightNumber)}</li><li><b>Passagers :</b> ${esc(data.passengerCount)}</li><li><b>Session Stripe :</b> ${esc(data.sessionId)}</li></ul><h3>Action à faire</h3><p>Attendre la réponse du client avec les noms, prénoms et numéros de passeport / pièce d’identité des passagers.</p><p>Le client a reçu automatiquement un email lui demandant de répondre avec ces informations conformément à la réglementation turque du transport privé.</p></div>`;
+  return { subject, html, text };
+}
+
 export async function sendTransferConfirmationEmail(data: BookingEmailData) {
-  const host = process.env.SMTP_HOST;
-  const port = Number(process.env.SMTP_PORT || 465);
-  const secure = String(process.env.SMTP_SECURE || 'true') === 'true';
-  const user = process.env.SMTP_USER;
-  const pass = process.env.SMTP_PASS;
-  const from = process.env.MAIL_FROM || `Bosphoras Mobility <${replyEmail}>`;
-  if (!host || !user || !pass) return { skipped: true };
-  const transporter = nodemailer.createTransport({ host, port, secure, auth: { user, pass } });
+  const transporter = getTransporter();
+  if (!transporter) return { skipped: true };
   const email = buildTransferConfirmationEmail(data);
-  await transporter.sendMail({ from, to: data.email, replyTo: replyEmail, subject: email.subject, html: email.html, text: email.text });
+  await transporter.sendMail({ from: getFrom(), to: data.email, replyTo: replyEmail, subject: email.subject, html: email.html, text: email.text });
+  return { sent: true };
+}
+
+export async function sendInternalTransferBookingEmail(data: BookingEmailData) {
+  const transporter = getTransporter();
+  if (!transporter) return { skipped: true };
+  const email = buildInternalTransferBookingEmail(data);
+  await transporter.sendMail({ from: getFrom(), to: replyEmail, replyTo: data.email || replyEmail, subject: email.subject, html: email.html, text: email.text });
   return { sent: true };
 }
