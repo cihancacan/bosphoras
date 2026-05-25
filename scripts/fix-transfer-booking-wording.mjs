@@ -23,6 +23,12 @@ replaceAll('Round trip: return added to total', '');
 replaceAll('Remise aller-retour -15%', 'Aller-retour');
 replaceAll('Round trip discount -15%', 'Round trip');
 
+// Reduce hero background zoom so home.driver.jpg fits better on desktop and mobile.
+replaceAll('className="hidden object-cover md:block"', 'className="hidden object-cover object-center scale-[0.92] md:block"');
+replaceAll('className="object-cover" sizes="100vw"', 'className="object-cover object-center scale-[0.92]" sizes="100vw"');
+replaceAll('className="hidden object-cover object-center scale-[0.92] object-center scale-[0.92] md:block"', 'className="hidden object-cover object-center scale-[0.92] md:block"');
+replaceAll('className="object-cover object-center scale-[0.92] object-center scale-[0.92]"', 'className="object-cover object-center scale-[0.92]"');
+
 replaceAll(
   "type Quote = { source: string; estimatedMinutes: number; billedMinutes: number; distanceKm: number; vehiclePrice: number; tollPrice: number; total: number };",
   "type Quote = { source: string; estimatedMinutes: number; billedMinutes: number; distanceKm: number; vehiclePrice: number; tollPrice: number; total: number; roundTrip?: boolean; oneWayVehiclePrice?: number; oneWayTollPrice?: number };"
@@ -161,4 +167,4 @@ replaceAll(
 );
 
 fs.writeFileSync(file, content, 'utf8');
-console.log('[transfer booking] french round-trip first render fixed with ref-backed state');
+console.log('[transfer booking] french round-trip first render fixed and hero image resized');
