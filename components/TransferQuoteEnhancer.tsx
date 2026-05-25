@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 
 // Legacy quote DOM enhancer disabled.
-// This component now only swaps and slightly dezooms the hero image on mobile screens.
+// This component now only swaps and very slightly dezooms the hero image on mobile screens.
 export function TransferQuoteEnhancer() {
   useEffect(() => {
     const applyMobileHero = () => {
@@ -22,9 +22,9 @@ export function TransferQuoteEnhancer() {
         img.style.objectFit = 'cover';
         img.style.objectPosition = 'center';
         img.style.transformOrigin = 'center center';
-        img.style.transform = isMobile ? 'scale(0.94)' : 'scale(1)';
+        img.style.transform = isMobile ? 'scale(0.96)' : 'scale(1)';
         const parent = img.parentElement;
-        if (parent) parent.style.backgroundColor = '#000';
+        if (parent) parent.style.backgroundColor = '';
       });
     };
 
