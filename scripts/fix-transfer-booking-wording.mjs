@@ -23,11 +23,13 @@ replaceAll('Round trip: return added to total', '');
 replaceAll('Remise aller-retour -15%', 'Aller-retour');
 replaceAll('Round trip discount -15%', 'Round trip');
 
-// Reduce hero background zoom so home.driver.jpg fits better on desktop and mobile.
-replaceAll('className="hidden object-cover md:block"', 'className="hidden object-cover object-center scale-[0.92] md:block"');
-replaceAll('className="object-cover" sizes="100vw"', 'className="object-cover object-center scale-[0.92]" sizes="100vw"');
-replaceAll('className="hidden object-cover object-center scale-[0.92] object-center scale-[0.92] md:block"', 'className="hidden object-cover object-center scale-[0.92] md:block"');
-replaceAll('className="object-cover object-center scale-[0.92] object-center scale-[0.92]"', 'className="object-cover object-center scale-[0.92]"');
+// Real dezoom: object-contain shows the full home.driver.jpg instead of cropping it.
+replaceAll('className="hidden object-cover md:block"', 'className="hidden object-contain object-center md:block"');
+replaceAll('className="hidden object-cover object-center scale-[0.92] md:block"', 'className="hidden object-contain object-center md:block"');
+replaceAll('className="object-cover" sizes="100vw"', 'className="object-contain object-center" sizes="100vw"');
+replaceAll('className="object-cover object-center scale-[0.92]" sizes="100vw"', 'className="object-contain object-center" sizes="100vw"');
+replaceAll('className="object-cover object-center scale-[0.92]"', 'className="object-contain object-center"');
+replaceAll('className="object-cover"', 'className="object-contain object-center"');
 
 replaceAll(
   "type Quote = { source: string; estimatedMinutes: number; billedMinutes: number; distanceKm: number; vehiclePrice: number; tollPrice: number; total: number };",
@@ -167,4 +169,4 @@ replaceAll(
 );
 
 fs.writeFileSync(file, content, 'utf8');
-console.log('[transfer booking] french round-trip first render fixed and hero image resized');
+console.log('[transfer booking] hero image uses object-contain and no crop');
