@@ -15,7 +15,7 @@ import { siteUrl } from '@/lib/routes';
 type TransferLocale = 'fr' | 'en' | 'ru' | 'ar' | 'zh' | 'de' | 'es' | 'it' | 'pt';
 
 const paths: Record<TransferLocale, string> = {
-  fr: '/transferts-istanbul',
+  fr: '/transfert-aeroport-istanbul',
   en: '/en/istanbul-airport-transfer',
   ru: '/ru/transfer-aeroport-stambul',
   ar: '/ar/istanbul-airport-transfer',
