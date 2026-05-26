@@ -1,6 +1,6 @@
 import type { Locale } from './i18n';
 
-export const siteUrl = 'https://bosphoras.com';
+export const siteUrl = 'https://www.bosphoras.com';
 
 export function getLocalePath(locale: Locale, path: string = ''): string {
   const cleanPath = path.startsWith('/') ? path : `/${path}`;
