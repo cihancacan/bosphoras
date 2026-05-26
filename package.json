@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/fix-transfer-booking-wording.mjs",
+    "prebuild": "node scripts/fix-transfer-booking-wording.mjs && node scripts/fix-transfer-seo-routes.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
