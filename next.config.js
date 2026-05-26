@@ -6,12 +6,9 @@ const nextConfig = {
   images: { unoptimized: true },
   async redirects() {
     return [
-      // French transfer SEO migration: keep one strong canonical URL and preserve old equity.
+      // French transfer SEO migration: only the old main page redirects to the new stronger main URL.
+      // Secondary French SEO pages remain available under /transfer-istanbul/... to avoid 404s.
       { source: '/transferts-istanbul', destination: '/transfert-aeroport-istanbul', permanent: true },
-      { source: '/transfer-istanbul', destination: '/transfert-aeroport-istanbul', permanent: true },
-      { source: '/transfer-istanbul/transfert-aeroport-istanbul', destination: '/transfert-aeroport-istanbul', permanent: true },
-      { source: '/transfer-istanbul/transfert-aeroport-saw', destination: '/transfert-aeroport-saw', permanent: true },
-      { source: '/transfer-istanbul/:path*', destination: '/:path*', permanent: true },
 
       { source: '/services/transport-vip', destination: '/services/conciergerie-luxe-turquie', permanent: true },
       { source: '/en/services/vip-transport', destination: '/en/services/luxury-concierge-turkey', permanent: true },
