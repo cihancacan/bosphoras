@@ -3,7 +3,7 @@ export type TransferSeoLocale = 'fr' | 'en' | 'ru' | 'ar' | 'zh' | 'de' | 'es' |
 export const transferLocales: TransferSeoLocale[] = ['fr', 'en', 'ru', 'ar', 'zh', 'de', 'es', 'it', 'pt'];
 
 export const transferMainPaths: Record<TransferSeoLocale, string> = {
-  fr: '/transferts-istanbul',
+  fr: '/transfert-aeroport-istanbul',
   en: '/en/istanbul-airport-transfer',
   ru: '/ru/transfer-aeroport-stambul',
   ar: '/ar/istanbul-airport-transfer',
@@ -15,7 +15,7 @@ export const transferMainPaths: Record<TransferSeoLocale, string> = {
 };
 
 export const transferKeywordBases: Record<TransferSeoLocale, string> = {
-  fr: '/transfer-istanbul',
+  fr: '',
   en: '/en/istanbul-transfer',
   ru: '/ru/transfer-stambul',
   ar: '/ar/istanbul-transfer',
