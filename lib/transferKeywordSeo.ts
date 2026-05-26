@@ -15,7 +15,7 @@ export const transferMainPaths: Record<TransferSeoLocale, string> = {
 };
 
 export const transferKeywordBases: Record<TransferSeoLocale, string> = {
-  fr: '',
+  fr: '/transfer-istanbul',
   en: '/en/istanbul-transfer',
   ru: '/ru/transfer-stambul',
   ar: '/ar/istanbul-transfer',
