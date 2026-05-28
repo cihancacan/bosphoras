@@ -20,8 +20,13 @@ replaceAll(
 
 replaceAll(
   '<span>{quote?.tollPrice ? `${c.toll} ${eur(quote.tollPrice)} ${c.included}` : c.accordingRoute}</span></div></div><div className="md:text-right">',
-  '<span>{quote?.tollPrice ? `${c.toll} ${eur(quote.tollPrice)} ${c.included}` : c.accordingRoute}</span></div><p className="mt-4 rounded-2xl bg-gray-50 px-4 py-3 text-xs font-bold leading-relaxed text-gray-700">{vehicleTrustLabel}</p></div><div className="md:text-right">'
+  '<span>{quote?.tollPrice ? `${c.toll} ${eur(quote.tollPrice)} ${c.included}` : c.accordingRoute}</span></div></div><div className="md:text-right">'
+);
+
+replaceAll(
+  '<p className="text-4xl font-black tracking-[-0.06em]">{quoteLoading ? \'...\' : eur(price)}</p><span className="mt-4 inline-flex rounded-full border border-black px-5 py-3 text-xs font-black uppercase tracking-[0.12em] text-black">{c.choose}</span>',
+  '<p className="text-4xl font-black tracking-[-0.06em]">{quoteLoading ? \'...\' : eur(price)}</p><p className="mt-3 max-w-[260px] rounded-2xl bg-gray-50 px-4 py-3 text-[11px] font-bold leading-relaxed text-gray-700 md:ml-auto">{vehicleTrustLabel}</p><span className="mt-4 inline-flex rounded-full border border-black px-5 py-3 text-xs font-black uppercase tracking-[0.12em] text-black">{c.choose}</span>'
 );
 
 fs.writeFileSync(file, content);
-console.log('[transfer premium proof] vehicle card proof line applied');
+console.log('[transfer premium proof] vehicle card proof line applied under price');
