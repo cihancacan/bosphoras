@@ -19,11 +19,6 @@ replaceAll(
 );
 
 replaceAll(
-  '<span className="inline-flex gap-1"><Plane size={14}/>{c.flightTracking}</span>',
-  ''
-);
-
-replaceAll(
   '<span>{quote?.tollPrice ? `${c.toll} ${eur(quote.tollPrice)} ${c.included}` : c.accordingRoute}</span></div></div><div className="md:text-right">',
   '<span>{quote?.tollPrice ? `${c.toll} ${eur(quote.tollPrice)} ${c.included}` : c.accordingRoute}</span></div><p className="mt-4 rounded-2xl bg-gray-50 px-4 py-3 text-xs font-bold leading-relaxed text-gray-700">{vehicleTrustLabel}</p></div><div className="md:text-right">'
 );
