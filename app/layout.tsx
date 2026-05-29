@@ -10,6 +10,7 @@ const defaultDescription =
 
 const ogImage = '/images/og-default.jpg';
 const googleAnalyticsId = 'G-LV3SEJ5QM2';
+const googleAdsId = 'AW-16763381648';
 
 const pricingSync = {
   annualAdmission: getPricingAmount('annualAdmission'),
@@ -57,17 +58,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             (function() {
               var pricing = ${JSON.stringify(pricingSync)};
               var replacements = [
-                [/10\\s*000 USD/g, pricing.annualAdmission],
+                [/10\s*000 USD/g, pricing.annualAdmission],
                 [/10,000 USD/g, pricing.annualAdmission],
-                [/1\\s*000 USD/g, pricing.monthlyRetainer],
+                [/1\s*000 USD/g, pricing.monthlyRetainer],
                 [/1,000 USD/g, pricing.monthlyRetainer],
-                [/6\\s*000 USD/g, pricing.privateDesk],
+                [/6\s*000 USD/g, pricing.privateDesk],
                 [/6,000 USD/g, pricing.privateDesk]
               ];
 
               function replaceTextNode(node) {
                 var value = node.nodeValue;
-                if (!value || !/(10\\s*000|10,000|1\\s*000|1,000|6\\s*000|6,000) USD/.test(value)) return;
+                if (!value || !/(10\s*000|10,000|1\s*000|1,000|6\s*000|6,000) USD/.test(value)) return;
                 replacements.forEach(function(pair) {
                   value = value.replace(pair[0], pair[1]);
                 });
@@ -77,7 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               function walk(root) {
                 var walker = document.createTreeWalker(root || document.body, NodeFilter.SHOW_TEXT, {
                   acceptNode: function(node) {
-                    if (!node.nodeValue || !/(10\\s*000|10,000|1\\s*000|1,000|6\\s*000|6,000) USD/.test(node.nodeValue)) {
+                    if (!node.nodeValue || !/(10\s*000|10,000|1\s*000|1,000|6\s*000|6,000) USD/.test(node.nodeValue)) {
                       return NodeFilter.FILTER_REJECT;
                     }
                     return NodeFilter.FILTER_ACCEPT;
@@ -105,12 +106,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
           strategy="afterInteractive"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics-and-ads" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', '${googleAnalyticsId}');
+            gtag('config', '${googleAdsId}');
           `}
         </Script>
         <Script id="crisp-chatbox" strategy="afterInteractive">
