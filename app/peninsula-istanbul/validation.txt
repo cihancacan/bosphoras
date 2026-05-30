@@ -1,0 +1,12 @@
+Peninsula image filenames validated from commits:
+- public/images/vue.penincula.ciel.jpg
+- public/images/Peninsula.pool.andwiew.jpg
+- public/images/peninsula.pool.and.saint-sophie.jpg
+- public/images/peninsula.interior.pool.jpg
+- public/images/peninsula.hammam.jpg
+- public/images/peninsula.fitness.jpg
+- public/images/peninsula.lobby.jpg
+- public/images/waiting.area.spa.jpg
+- public/images/Abelia.Pool.Bar.jpg
+- public/images/logo.Peninsula.Istanbul.Grey021.svg
+- public/images/peninsula-logo-grey.png
