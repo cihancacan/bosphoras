@@ -19,6 +19,7 @@ import { businessSetupSeoOverrides } from './business-setup-seo-overrides';
 import { healthInsuranceSeoOverrides } from './health-insurance-seo-overrides';
 import { propertyRelocationSeoOverrides } from './property-relocation-seo-overrides';
 import { luxuryConciergeSeoOverrides } from './luxury-concierge-seo-overrides';
+import { istanbulDestinationSeoOverrides } from './istanbul-destination-seo-overrides';
 import { fixLocalizedFormLinks } from './form-link-fixes';
 
 export * from './types';
@@ -32,24 +33,27 @@ const frAll = applyPageOverrides(
             applyPageOverrides(
               applyPageOverrides(
                 applyPageOverrides(
-                  applyPageOverrides(frPages, stage8TrustOverrides.fr ?? []),
-                  formPagesOverrides.fr ?? []
+                  applyPageOverrides(
+                    applyPageOverrides(frPages, stage8TrustOverrides.fr ?? []),
+                    formPagesOverrides.fr ?? []
+                  ),
+                  luxuryConciergeOverrides.fr ?? []
                 ),
-                luxuryConciergeOverrides.fr ?? []
+                uxSeoCleanupOverrides.fr ?? []
               ),
-              uxSeoCleanupOverrides.fr ?? []
+              relocationSeoOverrides.fr ?? []
             ),
-            relocationSeoOverrides.fr ?? []
+            legalTaxSeoOverrides.fr ?? []
           ),
-          legalTaxSeoOverrides.fr ?? []
+          businessSetupSeoOverrides.fr ?? []
         ),
-        businessSetupSeoOverrides.fr ?? []
+        healthInsuranceSeoOverrides.fr ?? []
       ),
-      healthInsuranceSeoOverrides.fr ?? []
+      propertyRelocationSeoOverrides.fr ?? []
     ),
-    propertyRelocationSeoOverrides.fr ?? []
+    luxuryConciergeSeoOverrides.fr ?? []
   ),
-  luxuryConciergeSeoOverrides.fr ?? []
+  istanbulDestinationSeoOverrides.fr ?? []
 );
 const enAllBase = applyPageOverrides(
   applyPageOverrides(
@@ -90,22 +94,25 @@ const enAll = applyPageOverrides(
           applyPageOverrides(
             applyPageOverrides(
               applyPageOverrides(
-                applyPageOverrides(enAllBase, frAlignedTranslations.en ?? []),
-                luxuryConciergeOverrides.en ?? []
+                applyPageOverrides(
+                  applyPageOverrides(enAllBase, frAlignedTranslations.en ?? []),
+                  luxuryConciergeOverrides.en ?? []
+                ),
+                uxSeoCleanupOverrides.en ?? []
               ),
-              uxSeoCleanupOverrides.en ?? []
+              relocationSeoOverrides.en ?? []
             ),
-            relocationSeoOverrides.en ?? []
+            legalTaxSeoOverrides.en ?? []
           ),
-          legalTaxSeoOverrides.en ?? []
+          businessSetupSeoOverrides.en ?? []
         ),
-        businessSetupSeoOverrides.en ?? []
+        healthInsuranceSeoOverrides.en ?? []
       ),
-      healthInsuranceSeoOverrides.en ?? []
+      propertyRelocationSeoOverrides.en ?? []
     ),
-    propertyRelocationSeoOverrides.en ?? []
+    luxuryConciergeSeoOverrides.en ?? []
   ),
-  luxuryConciergeSeoOverrides.en ?? []
+  istanbulDestinationSeoOverrides.en ?? []
 );
 const ruAll = applyPageOverrides(
   applyPageOverrides(
@@ -116,24 +123,27 @@ const ruAll = applyPageOverrides(
             applyPageOverrides(
               applyPageOverrides(
                 applyPageOverrides(
-                  applyPageOverrides(ruAllBase, frAlignedTranslations.ru ?? []),
-                  luxuryConciergeOverrides.ru ?? []
+                  applyPageOverrides(
+                    applyPageOverrides(ruAllBase, frAlignedTranslations.ru ?? []),
+                    luxuryConciergeOverrides.ru ?? []
+                  ),
+                  uxSeoCleanupOverrides.ru ?? []
                 ),
-                uxSeoCleanupOverrides.ru ?? []
+                missingRouteOverrides.ru ?? []
               ),
-              missingRouteOverrides.ru ?? []
+              relocationSeoOverrides.ru ?? []
             ),
-            relocationSeoOverrides.ru ?? []
+            legalTaxSeoOverrides.ru ?? []
           ),
-          legalTaxSeoOverrides.ru ?? []
+          businessSetupSeoOverrides.ru ?? []
         ),
-        businessSetupSeoOverrides.ru ?? []
+        healthInsuranceSeoOverrides.ru ?? []
       ),
-      healthInsuranceSeoOverrides.ru ?? []
+      propertyRelocationSeoOverrides.ru ?? []
     ),
-    propertyRelocationSeoOverrides.ru ?? []
+    luxuryConciergeSeoOverrides.ru ?? []
   ),
-  luxuryConciergeSeoOverrides.ru ?? []
+  istanbulDestinationSeoOverrides.ru ?? []
 );
 const arAll = applyPageOverrides(
   applyPageOverrides(
@@ -144,24 +154,27 @@ const arAll = applyPageOverrides(
             applyPageOverrides(
               applyPageOverrides(
                 applyPageOverrides(
-                  applyPageOverrides(arAllBase, frAlignedTranslations.ar ?? []),
-                  luxuryConciergeOverrides.ar ?? []
+                  applyPageOverrides(
+                    applyPageOverrides(arAllBase, frAlignedTranslations.ar ?? []),
+                    luxuryConciergeOverrides.ar ?? []
+                  ),
+                  uxSeoCleanupOverrides.ar ?? []
                 ),
-                uxSeoCleanupOverrides.ar ?? []
+                missingRouteOverrides.ar ?? []
               ),
-              missingRouteOverrides.ar ?? []
+              relocationSeoOverrides.ar ?? []
             ),
-            relocationSeoOverrides.ar ?? []
+            legalTaxSeoOverrides.ar ?? []
           ),
-          legalTaxSeoOverrides.ar ?? []
+          businessSetupSeoOverrides.ar ?? []
         ),
-        businessSetupSeoOverrides.ar ?? []
+        healthInsuranceSeoOverrides.ar ?? []
       ),
-      healthInsuranceSeoOverrides.ar ?? []
+      propertyRelocationSeoOverrides.ar ?? []
     ),
-    propertyRelocationSeoOverrides.ar ?? []
+    luxuryConciergeSeoOverrides.ar ?? []
   ),
-  luxuryConciergeSeoOverrides.ar ?? []
+  istanbulDestinationSeoOverrides.ar ?? []
 );
 
 export const allPages: Record<Locale, MainPageContent[]> = {
