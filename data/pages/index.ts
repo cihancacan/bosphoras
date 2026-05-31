@@ -15,6 +15,7 @@ import { uxSeoCleanupOverrides } from './ux-seo-cleanup-overrides';
 import { missingRouteOverrides } from './missing-route-overrides';
 import { relocationSeoOverrides } from './relocation-seo-overrides';
 import { legalTaxSeoOverrides } from './legal-tax-seo-overrides';
+import { businessSetupSeoOverrides } from './business-setup-seo-overrides';
 import { fixLocalizedFormLinks } from './form-link-fixes';
 
 export * from './types';
@@ -24,16 +25,19 @@ const frAll = applyPageOverrides(
     applyPageOverrides(
       applyPageOverrides(
         applyPageOverrides(
-          applyPageOverrides(frPages, stage8TrustOverrides.fr ?? []),
-          formPagesOverrides.fr ?? []
+          applyPageOverrides(
+            applyPageOverrides(frPages, stage8TrustOverrides.fr ?? []),
+            formPagesOverrides.fr ?? []
+          ),
+          luxuryConciergeOverrides.fr ?? []
         ),
-        luxuryConciergeOverrides.fr ?? []
+        uxSeoCleanupOverrides.fr ?? []
       ),
-      uxSeoCleanupOverrides.fr ?? []
+      relocationSeoOverrides.fr ?? []
     ),
-    relocationSeoOverrides.fr ?? []
+    legalTaxSeoOverrides.fr ?? []
   ),
-  legalTaxSeoOverrides.fr ?? []
+  businessSetupSeoOverrides.fr ?? []
 );
 const enAllBase = applyPageOverrides(
   applyPageOverrides(
@@ -70,46 +74,55 @@ const enAll = applyPageOverrides(
   applyPageOverrides(
     applyPageOverrides(
       applyPageOverrides(
-        applyPageOverrides(enAllBase, frAlignedTranslations.en ?? []),
-        luxuryConciergeOverrides.en ?? []
+        applyPageOverrides(
+          applyPageOverrides(enAllBase, frAlignedTranslations.en ?? []),
+          luxuryConciergeOverrides.en ?? []
+        ),
+        uxSeoCleanupOverrides.en ?? []
       ),
-      uxSeoCleanupOverrides.en ?? []
+      relocationSeoOverrides.en ?? []
     ),
-    relocationSeoOverrides.en ?? []
+    legalTaxSeoOverrides.en ?? []
   ),
-  legalTaxSeoOverrides.en ?? []
+  businessSetupSeoOverrides.en ?? []
 );
 const ruAll = applyPageOverrides(
   applyPageOverrides(
     applyPageOverrides(
       applyPageOverrides(
         applyPageOverrides(
-          applyPageOverrides(ruAllBase, frAlignedTranslations.ru ?? []),
-          luxuryConciergeOverrides.ru ?? []
+          applyPageOverrides(
+            applyPageOverrides(ruAllBase, frAlignedTranslations.ru ?? []),
+            luxuryConciergeOverrides.ru ?? []
+          ),
+          uxSeoCleanupOverrides.ru ?? []
         ),
-        uxSeoCleanupOverrides.ru ?? []
+        missingRouteOverrides.ru ?? []
       ),
-      missingRouteOverrides.ru ?? []
+      relocationSeoOverrides.ru ?? []
     ),
-    relocationSeoOverrides.ru ?? []
+    legalTaxSeoOverrides.ru ?? []
   ),
-  legalTaxSeoOverrides.ru ?? []
+  businessSetupSeoOverrides.ru ?? []
 );
 const arAll = applyPageOverrides(
   applyPageOverrides(
     applyPageOverrides(
       applyPageOverrides(
         applyPageOverrides(
-          applyPageOverrides(arAllBase, frAlignedTranslations.ar ?? []),
-          luxuryConciergeOverrides.ar ?? []
+          applyPageOverrides(
+            applyPageOverrides(arAllBase, frAlignedTranslations.ar ?? []),
+            luxuryConciergeOverrides.ar ?? []
+          ),
+          uxSeoCleanupOverrides.ar ?? []
         ),
-        uxSeoCleanupOverrides.ar ?? []
+        missingRouteOverrides.ar ?? []
       ),
-      missingRouteOverrides.ar ?? []
+      relocationSeoOverrides.ar ?? []
     ),
-    relocationSeoOverrides.ar ?? []
+    legalTaxSeoOverrides.ar ?? []
   ),
-  legalTaxSeoOverrides.ar ?? []
+  businessSetupSeoOverrides.ar ?? []
 );
 
 export const allPages: Record<Locale, MainPageContent[]> = {
