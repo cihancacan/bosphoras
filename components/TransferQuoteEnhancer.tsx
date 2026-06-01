@@ -39,7 +39,7 @@ export function TransferQuoteEnhancer() {
     const sortVisibleVehiclePrices = () => {
       document.querySelectorAll<HTMLDivElement>('div.grid.gap-4').forEach((grid) => {
         const vehicleButtons = Array.from(grid.children).filter(
-          (child): child is HTMLButtonElement => child instanceof HTMLButtonElement && child.textContent?.includes('€')
+          (child): child is HTMLButtonElement => child instanceof HTMLButtonElement && Boolean(child.textContent?.includes('€'))
         );
 
         if (vehicleButtons.length < 2) return;
