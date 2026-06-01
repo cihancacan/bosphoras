@@ -2,8 +2,7 @@
 
 import { useEffect } from 'react';
 
-// Legacy quote DOM enhancer disabled.
-// This component now only swaps and very slightly dezooms the hero image on mobile screens.
+// Enhances the transfer page hero and keeps vehicle price cards ordered from lowest to highest.
 export function TransferQuoteEnhancer() {
   useEffect(() => {
     const applyMobileHero = () => {
@@ -28,13 +27,43 @@ export function TransferQuoteEnhancer() {
       });
     };
 
-    applyMobileHero();
-    window.addEventListener('resize', applyMobileHero);
-    const observer = new MutationObserver(applyMobileHero);
+    const getPrice = (button: HTMLButtonElement) => {
+      const priceText = Array.from(button.querySelectorAll('p'))
+        .map((item) => item.textContent || '')
+        .find((text) => text.includes('€'));
+      if (!priceText || priceText.includes('...')) return Number.POSITIVE_INFINITY;
+      const normalized = priceText.replace(/[^0-9]/g, '');
+      return normalized ? Number(normalized) : Number.POSITIVE_INFINITY;
+    };
+
+    const sortVisibleVehiclePrices = () => {
+      document.querySelectorAll<HTMLDivElement>('div.grid.gap-4').forEach((grid) => {
+        const vehicleButtons = Array.from(grid.children).filter(
+          (child): child is HTMLButtonElement => child instanceof HTMLButtonElement && child.textContent?.includes('€')
+        );
+
+        if (vehicleButtons.length < 2) return;
+
+        const sortedButtons = [...vehicleButtons].sort((a, b) => getPrice(a) - getPrice(b));
+        const isAlreadySorted = sortedButtons.every((button, index) => button === vehicleButtons[index]);
+        if (isAlreadySorted) return;
+
+        sortedButtons.forEach((button) => grid.appendChild(button));
+      });
+    };
+
+    const enhancePage = () => {
+      applyMobileHero();
+      sortVisibleVehiclePrices();
+    };
+
+    enhancePage();
+    window.addEventListener('resize', enhancePage);
+    const observer = new MutationObserver(enhancePage);
     observer.observe(document.body, { childList: true, subtree: true });
 
     return () => {
-      window.removeEventListener('resize', applyMobileHero);
+      window.removeEventListener('resize', enhancePage);
       observer.disconnect();
     };
   }, []);
