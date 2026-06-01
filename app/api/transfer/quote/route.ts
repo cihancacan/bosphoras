@@ -9,7 +9,7 @@ type RouteInfo = {
 };
 
 const VEHICLE_RATES: Record<VehicleId, number> = {
-  viano: 80,
+  viano: 90,
   sprinter: 120,
   e: 250,
   s: 400,
