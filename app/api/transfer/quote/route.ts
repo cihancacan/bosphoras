@@ -9,7 +9,7 @@ type RouteInfo = {
 };
 
 const VEHICLE_RATES: Record<VehicleId, number> = {
-  viano: 90,
+  viano: 85,
   sprinter: 120,
   e: 250,
   s: 400,
@@ -59,8 +59,8 @@ function hourlyPrice(rate: number, hours: number) {
 
 function estimateTollPrice(pickup: string, dropoff: string) {
   const text = normalizeText(`${pickup} ${dropoff}`);
-  if (includesAny(text, SAW_TERMS) || includesAny(text, ASIA_TERMS)) return 15;
-  return 5;
+  if (includesAny(text, SAW_TERMS) || includesAny(text, ASIA_TERMS)) return 12;
+  return 10;
 }
 
 async function getGoogleRouteInfo(pickup: string, dropoff: string): Promise<RouteInfo | null> {
