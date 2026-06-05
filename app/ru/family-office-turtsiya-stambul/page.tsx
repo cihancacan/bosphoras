@@ -1,3 +1,50 @@
-import { getTaxClusterMetadata, TurkeyInvestmentClusterPage } from '@/components/seo/TurkeyInvestmentClusterPage';
-export const metadata = getTaxClusterMetadata('familyOfficeTurkey', 'ru');
-export default function Page() { return <TurkeyInvestmentClusterPage pageKey="familyOfficeTurkey" locale="ru" />; }
+import Link from 'next/link';
+import type { Metadata } from 'next';
+import { ArrowRight, Building2, CheckCircle2, Landmark, ShieldCheck, Users } from 'lucide-react';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { StructuredData } from '@/components/StructuredData';
+
+const url = 'https://bosphoras.com/ru/family-office-turtsiya-stambul';
+const title = 'Family office в Турции и Стамбуле: налоги, капитал и резиденция | Bosphoras';
+const description = 'Гид Bosphoras по family office в Турции и Стамбуле: Закон №7582, иностранные доходы, налоговая резиденция, наследование, банки, недвижимость, страхование, компания, substance, частная медицина и координация.';
+const updatedAt = '2026-06-05';
+
+const cards = [
+  ['Определение', 'Family office в Турции — частная структура координации резиденции, капитала, банков, налогов, недвижимости, страхования, здоровья, мобильности и наследования.'],
+  ['Почему Стамбул?', 'Стамбул объединяет географию, банки, юристов, налоговых консультантов, premium offices, недвижимость, частную медицину и региональные бизнес-связи.'],
+  ['Связь с Законом №7582', 'Реформа, опубликованная в Resmî Gazete №33270, усиливает интерес новых резидентов, иностранных доходов, наследования и международных сервисных структур.'],
+  ['Роль Bosphoras', 'Bosphoras координирует нужных участников, не заменяя юристов, налоговых консультантов, банки, бухгалтеров или регулируемых специалистов.'],
+];
+
+const examples = [
+  ['Переезд международной семьи', 'Координация резиденции, жилья, школы, медицины, страхования, банка, налогов и ежедневной безопасности в Стамбуле, Бодруме или Анталье.'],
+  ['Предприниматель с иностранными доходами', 'Анализ дивидендов, прироста капитала, иностранных компаний, контрактов, банковских потоков, страны происхождения и возможной статьи 20/D.'],
+  ['Недвижимый и финансовый капитал', 'Мониторинг активов, reporting, страхование, налоги, наследование, дарение, недвижимость, банковские счета и семейные документы.'],
+  ['Международная семейная группа', 'Координация холдинга, сервисного центра, private office, налогов, юристов, бухгалтеров, рекрутинга, офисов и VIP-поездок.'],
+];
+
+const checks = ['текущая и будущая налоговая резиденция','источник средств и банковские доказательства','иностранные компании и доходы вне Турции','наследование, дарение и семейная организация','банк, страхование, недвижимость и частная медицина','юрист, налоговый консультант, бухгалтер и правила применения'];
+
+const faqs = [
+  ['Что такое family office в Турции?', 'Это частная организация, координирующая капитал, налоги, банки, недвижимость, страхование, медицину, резиденцию, документы и семейные решения из Турции.'],
+  ['Турция заменяет Дубай или Монако?', 'Не автоматически. Турция может стать сильной семейной и операционной базой, но выбор зависит от налоговой резиденции, доходов, страны происхождения, семьи и реальной substance.'],
+  ['Закон №7582 повышает интерес к family office?', 'Да. Он усиливает интерес отдельных международных профилей через иностранные доходы, новых резидентов, наследование, квалифицированные сервисные центры и Istanbul Finance Center.'],
+  ['Bosphoras дает налоговые консультации?', 'Нет. Bosphoras координирует частный анализ с квалифицированными специалистами и помогает структурировать дорожную карту.'],
+  ['Что нужно проверить до переезда?', 'Налоговую резиденцию, источник доходов, налоговые соглашения, банк, источник средств, страховки, недвижимость, наследование, компанию и отчетные обязанности.'],
+];
+
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/family-office-turquie-istanbul', en: 'https://bosphoras.com/en/family-office-turkey-istanbul', ru: url, ar: 'https://bosphoras.com/ar/family-office-turkey-istanbul', 'x-default': 'https://bosphoras.com/family-office-turquie-istanbul' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'ru_RU', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+
+export default function Page() {
+  return (
+    <><StructuredData data={[{ '@context': 'https://schema.org', '@type': 'Article', headline: title, description, inLanguage: 'ru-RU', datePublished: '2026-05-07', dateModified: updatedAt, author: { '@type': 'Organization', name: 'Bosphoras' }, publisher: { '@type': 'Organization', name: 'Bosphoras' }, mainEntityOfPage: url, about: ['family office Turkey', 'Istanbul family office', 'Law 7582', 'foreign income', 'tax residence', 'wealth planning'] }, { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }]} /><Header locale="ru" currentPath="/ru/family-office-turtsiya-stambul" /><main className="bg-[#f8f1e7] text-[#101827]">
+      <section className="bg-[#121826] px-5 pb-20 pt-32 text-white md:px-8 md:pt-40"><div className="mx-auto max-w-[1300px]"><p className="text-xs font-bold uppercase tracking-[0.28em] text-[#d2a863]">Частный гид · Family Office Турция · Обновлено 5 июня 2026</p><h1 className="mt-6 max-w-5xl font-serif text-4xl leading-tight tracking-[-0.04em] md:text-7xl">Family office в Турции и Стамбуле: налоги, капитал и резиденция</h1><p className="mt-8 max-w-3xl text-lg leading-9 text-white/80">Турция становится базой для анализа международными семьями, которым нужно организовать резиденцию, капитал, банки, налоги, недвижимость, страхование, частную медицину, мобильность и наследование. После Закона №7582, опубликованного в Resmî Gazete №33270, тема должна рассматриваться как структурированное и документированное dossier с квалифицированными специалистами.</p><div className="mt-10 flex flex-col gap-3 sm:flex-row"><Link href="/ru/chastnaya-konsultatsiya" className="inline-flex items-center justify-center gap-3 bg-[#d2a863] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#101827]">Запросить частный анализ<ArrowRight size={16} /></Link><Link href="/ru/uslugi/yuridicheskie-nalogovye-konsultatsii" className="inline-flex items-center justify-center border border-[#d2a863]/70 px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#d2a863]">Налоговое сопровождение</Link></div></div></section>
+      <section className="px-5 py-16 md:px-8 md:py-24"><div className="mx-auto grid max-w-[1300px] gap-10 lg:grid-cols-[0.85fr_1.15fr]"><aside className="border border-[#d8c7a1] bg-[#fffaf0] p-8"><Landmark className="h-8 w-8 text-[#8a6728]" /><h2 className="mt-6 font-serif text-3xl">Почему Стамбул привлекает состоятельные семьи?</h2><p className="mt-5 leading-8 text-[#3e4857]">Стамбул дает быстрый доступ к Европе, Заливу, Центральной Азии и развивающимся рынкам. Город объединяет банки, юристов, налоговых консультантов, premium недвижимость, школы, частную медицину, отели, VIP transfers, serviced offices и региональные бизнес-сети.</p></aside><div><h2 className="font-serif text-4xl tracking-[-0.03em]">4 ключевых пункта</h2><div className="mt-8 grid gap-4 md:grid-cols-2">{cards.map(([t, d]) => <article key={t} className="border border-[#d8c7a1] bg-white p-6"><h3 className="font-serif text-2xl text-[#121826]">{t}</h3><p className="mt-4 text-sm leading-7 text-[#3e4857]">{d}</p></article>)}</div></div></div></section>
+      <section className="bg-[#fffaf0] px-5 py-16 md:px-8 md:py-24"><div className="mx-auto max-w-[1300px]"><h2 className="font-serif text-4xl tracking-[-0.035em] md:text-6xl">Конкретные сценарии</h2><p className="mt-6 max-w-4xl text-lg leading-9 text-[#3e4857]">Family office в Турции может быть легким или очень структурированным. Важно определить реальные функции, ответственность, страны и документы.</p><div className="mt-10 grid gap-5 md:grid-cols-2">{examples.map(([t, d]) => <article key={t} className="border border-[#d8c7a1] bg-white p-7"><Building2 className="mb-5 h-6 w-6 text-[#8a6728]" /><h3 className="font-serif text-2xl text-[#121826]">{t}</h3><p className="mt-4 text-sm leading-7 text-[#3e4857]">{d}</p></article>)}</div></div></section>
+      <section className="px-5 py-16 md:px-8 md:py-24"><div className="mx-auto max-w-[1100px]"><h2 className="font-serif text-4xl tracking-[-0.03em]">Checklist перед структурированием family office</h2><div className="mt-8 grid gap-3 md:grid-cols-2">{checks.map((item) => <div key={item} className="flex gap-3 border border-[#d8c7a1] bg-white p-5 text-sm leading-7 text-[#3e4857]"><CheckCircle2 className="mt-1 h-4 w-4 flex-none text-[#8a6728]" />{item}</div>)}</div><div className="mt-8 border-l-4 border-[#8a6728] bg-white p-8"><ShieldCheck className="h-8 w-8 text-[#8a6728]" /><p className="mt-5 text-lg leading-9 text-[#3e4857]">Family office не должен продаваться как магическое налоговое решение. Это организация координации капитала и семьи, которую нужно строить по dossier и странам.</p></div></div></section>
+      <section className="bg-[#121826] px-5 py-16 text-white md:px-8 md:py-24"><div className="mx-auto grid max-w-[1200px] gap-10 md:grid-cols-[1fr_0.8fr] md:items-center"><div><Users className="h-8 w-8 text-[#d2a863]" /><h2 className="mt-6 font-serif text-4xl tracking-[-0.035em] md:text-6xl">Один контакт для координации Турции</h2><p className="mt-6 max-w-2xl text-lg leading-9 text-white/75">Bosphoras координирует юристов, налоговых консультантов, банки, бухгалтеров, страхование, недвижимость, офисы, частную медицину, VIP transfers и семейные услуги по dossier.</p></div><Link href="/ru/chastnaya-konsultatsiya" className="inline-flex items-center justify-center gap-3 bg-[#d2a863] px-8 py-5 text-xs font-bold uppercase tracking-[0.16em] text-[#101827]">Запросить частный анализ<ArrowRight size={16} /></Link></div></section>
+      <section className="px-5 py-16 md:px-8 md:py-24"><div className="mx-auto max-w-[1000px]"><h2 className="font-serif text-4xl tracking-[-0.03em]">Частые вопросы</h2><div className="mt-8 grid gap-px bg-[#d8c7a1]">{faqs.map(([q, a]) => <article key={q} className="bg-[#f8f1e7] p-7"><h3 className="font-serif text-2xl text-[#121826]">{q}</h3><p className="mt-4 leading-8 text-[#3e4857]">{a}</p></article>)}</div></div></section>
+      </main><Footer locale="ru" /></>
+  );
+}
