@@ -2,19 +2,26 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const root = process.cwd();
-const dataPath = path.join(root, 'data', 'bosphorasProgrammaticSeoPages.ts');
-const source = fs.readFileSync(dataPath, 'utf8');
+const dataFiles = [
+  path.join(root, 'data', 'bosphorasProgrammaticSeoPages.ts'),
+  path.join(root, 'data', 'bosphorasAdditionalSeoPages.ts'),
+];
+const source = dataFiles.map((file) => fs.readFileSync(file, 'utf8')).join('\n');
 
-const pageRegex = /key:\s*'([^']+)'[\s\S]*?slugs:\s*\{\s*fr:\s*'([^']+)',\s*en:\s*'([^']+)',\s*ru:\s*'([^']+)',\s*ar:\s*'([^']+)'\s*\}/g;
+const pageRegex = /key:\s*['"]([^'"]+)['"][\s\S]*?slugs:\s*\{\s*fr:\s*['"]([^'"]+)['"],\s*en:\s*['"]([^'"]+)['"],\s*ru:\s*['"]([^'"]+)['"],\s*ar:\s*['"]([^'"]+)['"]\s*\}/g;
 const locales = ['fr', 'en', 'ru', 'ar'];
 const pages = [];
+const seenKeys = new Set();
 let match;
 while ((match = pageRegex.exec(source)) !== null) {
-  pages.push({ key: match[1], slugs: { fr: match[2], en: match[3], ru: match[4], ar: match[5] } });
+  const key = match[1];
+  if (seenKeys.has(key)) continue;
+  seenKeys.add(key);
+  pages.push({ key, slugs: { fr: match[2], en: match[3], ru: match[4], ar: match[5] } });
 }
 
-if (pages.length < 25) {
-  throw new Error(`[bosphoras seo] Expected at least 25 pages, found ${pages.length}. Check data/bosphorasProgrammaticSeoPages.ts`);
+if (pages.length < 60) {
+  throw new Error(`[bosphoras seo] Expected at least 60 pages, found ${pages.length}. Check Bosphoras SEO data files.`);
 }
 
 function routeFileFromSlug(slug) {
@@ -23,7 +30,7 @@ function routeFileFromSlug(slug) {
 }
 
 function pageContent(key, locale) {
-  return `// AUTO-GENERATED BOSPHORAS PROGRAMMATIC SEO PAGE\n// This file is intentionally regenerated before every Vercel build.\nimport { bosphorasProgrammaticSeoPages } from '@/data/bosphorasProgrammaticSeoPages';\nimport { BosphorasProgrammaticSeoPage, getBosphorasProgrammaticSeoMetadata } from '@/components/seo/BosphorasProgrammaticSeoPage';\n\nconst page = bosphorasProgrammaticSeoPages.find((item) => item.key === '${key}')!;\n\nexport const metadata = getBosphorasProgrammaticSeoMetadata(page, '${locale}');\n\nexport default function Page() {\n  return <BosphorasProgrammaticSeoPage page={page} locale="${locale}" />;\n}\n`;
+  return `// AUTO-GENERATED BOSPHORAS PROGRAMMATIC SEO PAGE\n// This file is intentionally regenerated before every Vercel build.\nimport { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';\nimport { BosphorasProgrammaticSeoPage, getBosphorasProgrammaticSeoMetadata } from '@/components/seo/BosphorasProgrammaticSeoPage';\n\nconst page = allBosphorasSeoPages.find((item) => item.key === '${key}')!;\n\nexport const metadata = getBosphorasProgrammaticSeoMetadata(page, '${locale}');\n\nexport default function Page() {\n  return <BosphorasProgrammaticSeoPage page={page} locale="${locale}" />;\n}\n`;
 }
 
 let written = 0;
