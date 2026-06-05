@@ -1,3 +1,50 @@
-import { getTaxClusterMetadata, TurkeyInvestmentClusterPage } from '@/components/seo/TurkeyInvestmentClusterPage';
-export const metadata = getTaxClusterMetadata('qualifiedServiceCenters', 'en');
-export default function Page() { return <TurkeyInvestmentClusterPage pageKey="qualifiedServiceCenters" locale="en" />; }
+import Link from 'next/link';
+import type { Metadata } from 'next';
+import { ArrowRight, Building2, CheckCircle2, Landmark, ShieldCheck, Users } from 'lucide-react';
+import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
+import { StructuredData } from '@/components/StructuredData';
+
+const url = 'https://bosphoras.com/en/qualified-service-centers-turkey-tax-benefits';
+const title = 'Qualified Service Centers in Turkey: Tax Benefits, Conditions and Examples | Bosphoras';
+const description = 'Bosphoras guide to qualified service centers in Turkey after Law No. 7582 published in Official Gazette No. 33270: Nitelikli hizmet merkezi, support functions, international groups, foreign-linked revenue, local substance, offices, staff and contracts.';
+const updatedAt = '2026-06-05';
+
+const cards = [
+  ['Definition', 'A qualified service center, or Nitelikli hizmet merkezi, is a Turkish structure designed to provide services to related companies located outside Turkey.'],
+  ['Target profiles', 'International groups, operating holdings, family offices, consulting firms, IT platforms, finance, HR, reporting and client support structures.'],
+  ['Foreign-linked revenue', 'The model relies on services invoiced to related foreign entities, with clear documentation of revenue source and intra-group relationship.'],
+  ['Local substance', 'The company must demonstrate real presence: offices, staff, contracts, invoices, governance, banking, accounting and actual operations.'],
+];
+
+const examples = [
+  ['Regional finance center', 'Reporting, consolidation, controlling, treasury, intra-group invoicing and banking follow-up for several countries.'],
+  ['Legal and compliance support', 'A group may set up an Istanbul team for contracts, compliance, governance, regulatory follow-up and internal documentation.'],
+  ['IT, data and back-office hub', 'A Turkish structure may handle IT support, data, process, operations, customer support and cross-border coordination.'],
+  ['HR and talent platform', 'Turkey may serve as a base for recruitment, training, international mobility, payroll coordination and group team support.'],
+];
+
+const checks = ['group structure and countries involved','foreign related companies','exact nature of services provided from Turkey','contracts, invoices and transfer pricing','offices, staff, governance and accounting','banking, KYC, financial flows and operational evidence'];
+
+const faqs = [
+  ['What is a qualified service center in Turkey?', 'It is a Turkish company providing qualified services to related companies located abroad, with real activity, strong documentation and an international group logic.'],
+  ['Is the tax benefit automatic?', 'No. Eligibility depends on activity, revenue, foreign related entities, local substance, evidence and implementation rules.'],
+  ['Which services may be relevant?', 'Finance, accounting, legal, HR, data, IT, audit, reporting, purchasing, sales, customer support, compliance and headquarters functions may be reviewed.'],
+  ['Why is this important for foreign investors?', 'Turkey is trying to attract real regional functions. A qualified service center can become an alternative to Dubai, Singapore, Amsterdam or London depending on the group’s needs.'],
+  ['What is Bosphoras’ role?', 'Bosphoras coordinates the private review with lawyers, tax advisors, accountants, banks, offices, recruitment and local partners. Bosphoras does not replace regulated professionals.'],
+];
+
+export const metadata: Metadata = { title, description, alternates: { canonical: url, languages: { fr: 'https://bosphoras.com/centres-services-qualifies-turquie-avantages-fiscaux', en: url, ru: 'https://bosphoras.com/ru/kvalifitsirovannye-servisnye-tsentry-turtsiya', ar: 'https://bosphoras.com/ar/qualified-service-centers-turkey-tax-benefits', 'x-default': 'https://bosphoras.com/centres-services-qualifies-turquie-avantages-fiscaux' } }, openGraph: { title, description, url, siteName: 'Bosphoras', locale: 'en_US', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description, images: ['/images/og-default.jpg'] } };
+
+export default function Page() {
+  return (
+    <><StructuredData data={[{ '@context': 'https://schema.org', '@type': 'Article', headline: title, description, inLanguage: 'en-US', datePublished: '2026-05-07', dateModified: updatedAt, author: { '@type': 'Organization', name: 'Bosphoras' }, publisher: { '@type': 'Organization', name: 'Bosphoras' }, mainEntityOfPage: url, about: ['Law 7582', 'Official Gazette 33270', 'qualified service center', 'Nitelikli hizmet merkezi', 'Turkey tax benefits', 'foreign investors'] }, { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }]} /><Header locale="en" currentPath="/en/qualified-service-centers-turkey-tax-benefits" /><main className="bg-[#f8f1e7] text-[#101827]">
+      <section className="bg-[#121826] px-5 pb-20 pt-32 text-white md:px-8 md:pt-40"><div className="mx-auto max-w-[1300px]"><p className="text-xs font-bold uppercase tracking-[0.28em] text-[#d2a863]">Private guide · Turkey Tax 2026 · Updated on June 5, 2026</p><h1 className="mt-6 max-w-5xl font-serif text-4xl leading-tight tracking-[-0.04em] md:text-7xl">Qualified Service Centers in Turkey: tax benefits, conditions and examples</h1><p className="mt-8 max-w-3xl text-lg leading-9 text-white/80">Turkey Law No. 7582, published in Official Gazette No. 33270 on June 4, 2026, introduces the concept of a qualified service center, Nitelikli hizmet merkezi. For foreign investors and international groups, the subject is not only company formation in Turkey: it requires a real, documented and operational service platform aligned with foreign-linked revenue.</p><div className="mt-10 flex flex-col gap-3 sm:flex-row"><Link href="/en/private-assessment" className="inline-flex items-center justify-center gap-3 bg-[#d2a863] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#101827]">Request a private assessment<ArrowRight size={16} /></Link><Link href="/en/services/legal-tax-advisory" className="inline-flex items-center justify-center border border-[#d2a863]/70 px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#d2a863]">View tax support</Link></div></div></section>
+      <section className="px-5 py-16 md:px-8 md:py-24"><div className="mx-auto grid max-w-[1300px] gap-10 lg:grid-cols-[0.85fr_1.15fr]"><aside className="border border-[#d8c7a1] bg-[#fffaf0] p-8"><Landmark className="h-8 w-8 text-[#8a6728]" /><h2 className="mt-6 font-serif text-3xl">Why Turkey created this framework</h2><p className="mt-5 leading-8 text-[#3e4857]">The objective is to attract headquarters and support functions serving foreign markets: finance, reporting, legal, compliance, data, IT, HR, purchasing, sales and customer support. Istanbul can become a base between Europe, the Gulf, Central Asia and emerging markets.</p></aside><div><h2 className="font-serif text-4xl tracking-[-0.03em]">The 4 essentials</h2><div className="mt-8 grid gap-4 md:grid-cols-2">{cards.map(([t, d]) => <article key={t} className="border border-[#d8c7a1] bg-white p-6"><h3 className="font-serif text-2xl text-[#121826]">{t}</h3><p className="mt-4 text-sm leading-7 text-[#3e4857]">{d}</p></article>)}</div></div></div></section>
+      <section className="bg-[#fffaf0] px-5 py-16 md:px-8 md:py-24"><div className="mx-auto max-w-[1300px]"><h2 className="font-serif text-4xl tracking-[-0.035em] md:text-6xl">Concrete examples of service centers</h2><p className="mt-6 max-w-4xl text-lg leading-9 text-[#3e4857]">A qualified service center may interest Turkish, European, Middle Eastern or Asian groups that want to coordinate real regional functions from Istanbul. Each case must be validated with qualified professionals.</p><div className="mt-10 grid gap-5 md:grid-cols-2">{examples.map(([t, d]) => <article key={t} className="border border-[#d8c7a1] bg-white p-7"><Building2 className="mb-5 h-6 w-6 text-[#8a6728]" /><h3 className="font-serif text-2xl text-[#121826]">{t}</h3><p className="mt-4 text-sm leading-7 text-[#3e4857]">{d}</p></article>)}</div></div></section>
+      <section className="px-5 py-16 md:px-8 md:py-24"><div className="mx-auto max-w-[1100px]"><h2 className="font-serif text-4xl tracking-[-0.03em]">Checklist before structuring</h2><div className="mt-8 grid gap-3 md:grid-cols-2">{checks.map((item) => <div key={item} className="flex gap-3 border border-[#d8c7a1] bg-white p-5 text-sm leading-7 text-[#3e4857]"><CheckCircle2 className="mt-1 h-4 w-4 flex-none text-[#8a6728]" />{item}</div>)}</div><div className="mt-8 border-l-4 border-[#8a6728] bg-white p-8"><ShieldCheck className="h-8 w-8 text-[#8a6728]" /><p className="mt-5 text-lg leading-9 text-[#3e4857]">The key point is substance. A company without team, offices, real contracts or defensible operations should not be presented as a qualified service center.</p></div></div></section>
+      <section className="bg-[#121826] px-5 py-16 text-white md:px-8 md:py-24"><div className="mx-auto grid max-w-[1200px] gap-10 md:grid-cols-[1fr_0.8fr] md:items-center"><div><Users className="h-8 w-8 text-[#d2a863]" /><h2 className="mt-6 font-serif text-4xl tracking-[-0.035em] md:text-6xl">Structure before acting</h2><p className="mt-6 max-w-2xl text-lg leading-9 text-white/75">Bosphoras coordinates a private review with the right local contacts: lawyer, tax advisor, accountant, bank, offices, recruitment and operational partners.</p></div><Link href="/en/private-assessment" className="inline-flex items-center justify-center gap-3 bg-[#d2a863] px-8 py-5 text-xs font-bold uppercase tracking-[0.16em] text-[#101827]">Request a private assessment<ArrowRight size={16} /></Link></div></section>
+      <section className="px-5 py-16 md:px-8 md:py-24"><div className="mx-auto max-w-[1000px]"><h2 className="font-serif text-4xl tracking-[-0.03em]">FAQ</h2><div className="mt-8 grid gap-px bg-[#d8c7a1]">{faqs.map(([q, a]) => <article key={q} className="bg-[#f8f1e7] p-7"><h3 className="font-serif text-2xl text-[#121826]">{q}</h3><p className="mt-4 leading-8 text-[#3e4857]">{a}</p></article>)}</div></div></section>
+      </main><Footer locale="en" /></>
+  );
+}
