@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/fix-transfer-booking-wording.mjs && node scripts/add-transfer-vehicle-premium-proof.mjs && node scripts/fix-transfer-seo-routes.mjs",
+    "prebuild": "node scripts/fix-transfer-booking-wording.mjs && node scripts/add-transfer-vehicle-premium-proof.mjs && node scripts/fix-transfer-seo-routes.mjs && node scripts/generate-bosphoras-programmatic-seo-pages.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
