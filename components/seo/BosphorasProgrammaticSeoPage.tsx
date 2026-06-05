@@ -5,6 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 import type { Locale } from '@/lib/i18n';
+import { siteUrl } from '@/lib/routes';
 import { type BosphorasProgrammaticSeoPage } from '@/data/bosphorasProgrammaticSeoPages';
 
 const labels: Record<Locale, { guide: string; updated: string; why: string; verify: string; examples: string; mistakes: string; profiles: string; faq: string; cta: string; warning: string; keywords: string }> = {
@@ -64,7 +65,7 @@ function assessmentHref(locale: Locale) {
 }
 
 function baseUrl(page: BosphorasProgrammaticSeoPage, locale: Locale) {
-  return `https://bosphoras.com${page.slugs[locale]}`;
+  return `${siteUrl}${page.slugs[locale]}`;
 }
 
 function description(page: BosphorasProgrammaticSeoPage, locale: Locale) {
