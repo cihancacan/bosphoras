@@ -7,6 +7,7 @@ import { highPotentialGuides } from '@/data/highPotentialPages';
 import { programmaticPages } from '@/data/programmatic/pages';
 import { ENABLE_ALL_PROGRAMMATIC_PAGES, ENABLE_PRIORITY_3_IN_SITEMAP } from '@/lib/launchConfig';
 import { longTailTaxSitemapUrls } from '@/data/longTailTaxRoutes';
+import { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';
 import {
   getTransferKeywordHref,
   transferKeywordClusters,
@@ -30,9 +31,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const seenUrls = new Set<string>();
 
   function addEntry(entry: MetadataRoute.Sitemap[number]) {
-    if (seenUrls.has(entry.url)) return;
-    seenUrls.add(entry.url);
-    entries.push(entry);
+    const normalizedUrl = entry.url.replace('https://www.bosphoras.com', siteUrl).replace('https://bosphoras.com', siteUrl);
+    if (seenUrls.has(normalizedUrl)) return;
+    seenUrls.add(normalizedUrl);
+    entries.push({ ...entry, url: normalizedUrl });
   }
 
   for (const locale of locales) {
@@ -111,52 +113,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'https://www.bosphoras.com/ar/turkey-vs-dubai-investors-tax',
   ];
 
-  const secondWavePages = [
-    'https://www.bosphoras.com/agro-industrie-turquie-investissement-fiscalite',
-    'https://www.bosphoras.com/en/agribusiness-turkey-investment-tax',
-    'https://www.bosphoras.com/ru/agropromyshlennost-turtsiya-investitsii-nalogi',
-    'https://www.bosphoras.com/ar/agribusiness-turkey-investment-tax',
-    'https://www.bosphoras.com/startup-turquie-avantages-fiscaux-investisseurs',
-    'https://www.bosphoras.com/en/startup-turkey-tax-benefits-investors',
-    'https://www.bosphoras.com/ru/startup-turtsiya-nalogovye-lgoty-investory',
-    'https://www.bosphoras.com/ar/startup-turkey-tax-benefits-investors',
-    'https://www.bosphoras.com/finance-fintech-turquie-istanbul-finance-center',
-    'https://www.bosphoras.com/en/finance-fintech-turkey-istanbul-finance-center',
-    'https://www.bosphoras.com/ru/finansy-fintech-turtsiya-istanbul-finance-center',
-    'https://www.bosphoras.com/ar/finance-fintech-turkey-istanbul-finance-center',
-    'https://www.bosphoras.com/import-export-turquie-transit-trade',
-    'https://www.bosphoras.com/en/import-export-turkey-transit-trade',
-    'https://www.bosphoras.com/ru/import-export-turtsiya-tranzitnaya-torgovlya',
-    'https://www.bosphoras.com/ar/import-export-turkey-transit-trade',
-    'https://www.bosphoras.com/holding-siege-regional-turquie',
-    'https://www.bosphoras.com/en/holding-regional-headquarters-turkey',
-    'https://www.bosphoras.com/ru/holding-regionalnyy-ofis-turtsiya',
-    'https://www.bosphoras.com/ar/holding-regional-headquarters-turkey',
-    'https://www.bosphoras.com/residence-fiscale-turquie-immobilier-investisseurs',
-    'https://www.bosphoras.com/en/turkey-tax-residence-property-investors',
-    'https://www.bosphoras.com/ru/nalogovaya-rezidentsiya-turtsiya-nedvizhimost-investory',
-    'https://www.bosphoras.com/ar/turkey-tax-residence-property-investors',
-    'https://www.bosphoras.com/turquie-vs-portugal-residence-fiscale-investisseurs',
-    'https://www.bosphoras.com/en/turkey-vs-portugal-tax-residence-investors',
-    'https://www.bosphoras.com/ru/turtsiya-vs-portugaliya-nalogovaya-rezidentsiya',
-    'https://www.bosphoras.com/ar/turkey-vs-portugal-tax-residence-investors',
-    'https://www.bosphoras.com/turquie-vs-monaco-family-office-residence',
-    'https://www.bosphoras.com/en/turkey-vs-monaco-family-office-residence',
-    'https://www.bosphoras.com/ru/turtsiya-vs-monako-family-office-rezidentsiya',
-    'https://www.bosphoras.com/ar/turkey-vs-monaco-family-office-residence',
-    'https://www.bosphoras.com/turquie-singapour-hong-kong-transit-trade',
-    'https://www.bosphoras.com/en/turkey-singapore-hong-kong-transit-trade',
-    'https://www.bosphoras.com/ru/turtsiya-singapur-gonkong-tranzitnaya-torgovlya',
-    'https://www.bosphoras.com/ar/turkey-singapore-hong-kong-transit-trade',
-  ];
-
-  for (const url of [...foreignIncomeTaxPages, ...turkeyTaxClusterPages, ...secondWavePages, ...longTailTaxSitemapUrls]) {
+  for (const url of [...foreignIncomeTaxPages, ...turkeyTaxClusterPages, ...longTailTaxSitemapUrls]) {
     addEntry({
       url,
       lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.95,
     });
+  }
+
+  for (const page of allBosphorasSeoPages) {
+    for (const urlPath of Object.values(page.slugs)) {
+      addEntry({
+        url: absoluteUrl(urlPath),
+        lastModified: now,
+        changeFrequency: 'weekly',
+        priority: 0.96,
+      });
+    }
   }
 
   for (const locale of transferLocales) {
