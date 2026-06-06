@@ -8,6 +8,7 @@ import { t, locales, localeNames } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
 import { getSlugForPage, pageSlugs } from '@/data/pages/types';
 import { getEquivalentHighPotentialSlug } from '@/data/highPotentialPages';
+import { longTailTaxRouteGroups } from '@/data/longTailTaxRoutes';
 import { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';
 import { SearchOverlay } from '@/components/SearchOverlay';
 import { HomeHero } from '@/components/HomeHero';
@@ -27,6 +28,16 @@ const specialLocalizedPaths: Array<Record<Locale, string>> = [
   { fr: '/peninsula-istanbul', en: '/en/peninsula-istanbul', ru: '/ru/peninsula-istanbul', ar: '/ar/peninsula-istanbul' },
   { fr: '/transferts-istanbul', en: '/en/istanbul-airport-transfer', ru: '/ru/transfer-aeroport-stambul', ar: '/ar/istanbul-airport-transfer' },
   corporateRelocationPaths,
+  { fr: '/exoneration-fiscale-turquie-revenus-etrangers', en: '/en/turkey-tax-exemption-foreign-income', ru: '/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody', ar: '/ar/turkey-tax-exemption-foreign-income' },
+  { fr: '/strategie-fiscale-turquie-investisseurs-etrangers', en: '/en/turkey-tax-strategy-foreign-investors', ru: '/ru/nalogovaya-strategiya-turtsii-inostrannye-investory', ar: '/ar/turkey-tax-strategy-foreign-investors' },
+  { fr: '/exoneration-fiscale-turquie-20-ans-nouveaux-residents', en: '/en/turkey-20-year-tax-exemption-new-residents', ru: '/ru/turtsiya-20-let-nalogovaya-lgota-novye-rezidenty', ar: '/ar/turkey-20-year-tax-exemption-new-residents' },
+  { fr: '/istanbul-finance-center-avantages-fiscaux-investisseurs', en: '/en/istanbul-finance-center-tax-benefits-investors', ru: '/ru/istanbul-finance-center-nalogovye-lgoty-investory', ar: '/ar/istanbul-finance-center-tax-benefits-investors' },
+  { fr: '/societe-turquie-transit-trade-commerce-international', en: '/en/turkey-company-transit-trade-international-commerce', ru: '/ru/kompaniya-turtsiya-tranzitnaya-torgovlya', ar: '/ar/turkey-company-transit-trade-international-commerce' },
+  { fr: '/centres-services-qualifies-turquie-avantages-fiscaux', en: '/en/qualified-service-centers-turkey-tax-benefits', ru: '/ru/kvalifitsirovannye-servisnye-tsentry-turtsiya', ar: '/ar/qualified-service-centers-turkey-tax-benefits' },
+  { fr: '/family-office-turquie-istanbul', en: '/en/family-office-turkey-istanbul', ru: '/ru/family-office-turtsiya-stambul', ar: '/ar/family-office-turkey-istanstanbul' },
+  { fr: '/industrie-fabrication-turquie-impot-societe-12-5', en: '/en/turkey-manufacturing-corporate-tax-12-5', ru: '/ru/proizvodstvo-turtsiya-nalog-na-pribyl-12-5', ar: '/ar/turkey-manufacturing-corporate-tax-12-5' },
+  { fr: '/turquie-vs-dubai-investisseurs-fiscalite', en: '/en/turkey-vs-dubai-investors-tax', ru: '/ru/turtsiya-vs-dubai-investory-nalogi', ar: '/ar/turkey-vs-dubai-investors-tax' },
+  ...longTailTaxRouteGroups,
 ];
 
 function normalizePath(path: string) {
