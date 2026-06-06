@@ -70,7 +70,7 @@ function countryVisaPageContent(key, locale) {
 }
 
 function visaTypePageContent(key, locale) {
-  return `// AUTO-GENERATED BOSPHORAS VISA TYPE SEO PAGE\n// This file is intentionally regenerated before every Vercel build.\nimport { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';\nimport { getBosphorasProgrammaticSeoMetadata } from '@/components/seo/BosphorasProgrammaticSeoPage';\nimport { BosphorasVisaTypeSeoPage } from '@/components/seo/BosphorasVisaTypeSeoPage';\n\nconst page = allBosphorasSeoPages.find((item) => item.key === '${key}')!;\n\nexport const metadata = getBosphorasProgrammaticSeoMetadata(page, '${locale}');\n\nexport default function Page() {\n  return <BosphorasVisaTypeSeoPage page={page} locale="${locale}" allPages={allBosphorasSeoPages} />;\n}\n`;
+  return `// AUTO-GENERATED BOSPHORAS VISA TYPE SEO PAGE\n// This file is intentionally regenerated before every Vercel build.\nimport { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';\nimport { getBosphorasProgrammaticSeoMetadata } from '@/components/seo/BosphorasProgrammaticSeoPage';\nimport { BosphorasVisaTypeSeoPageV2 } from '@/components/seo/BosphorasVisaTypeSeoPageV2';\n\nconst page = allBosphorasSeoPages.find((item) => item.key === '${key}')!;\n\nexport const metadata = getBosphorasProgrammaticSeoMetadata(page, '${locale}');\n\nexport default function Page() {\n  return <BosphorasVisaTypeSeoPageV2 page={page} locale="${locale}" allPages={allBosphorasSeoPages} />;\n}\n`;
 }
 
 function pageContent(key, locale) {
@@ -90,4 +90,4 @@ for (const page of pages) {
   }
 }
 
-console.log(`[bosphoras seo] FORCE regenerated: ${pages.length} subjects, ${written} files written, ${visaTypeKeys.size} visa type subjects, ${visaResidenceKeys.size} visa/residence subjects and ${countryVisaKeys.size} country visa subjects use dedicated content`);
+console.log(`[bosphoras seo] FORCE regenerated: ${pages.length} subjects, ${written} files written, ${visaTypeKeys.size} visa type subjects use V2 content, ${visaResidenceKeys.size} visa/residence subjects and ${countryVisaKeys.size} country visa subjects use dedicated content`);
