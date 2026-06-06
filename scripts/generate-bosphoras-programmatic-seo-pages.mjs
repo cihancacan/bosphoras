@@ -5,6 +5,7 @@ const root = process.cwd();
 const dataFiles = [
   path.join(root, 'data', 'bosphorasProgrammaticSeoPages.ts'),
   path.join(root, 'data', 'bosphorasAdditionalSeoPages.ts'),
+  path.join(root, 'data', 'bosphorasVisaResidenceSeoPages.ts'),
 ];
 const source = dataFiles.map((file) => fs.readFileSync(file, 'utf8')).join('\n');
 
@@ -20,8 +21,8 @@ while ((match = pageRegex.exec(source)) !== null) {
   pages.push({ key, slugs: { fr: match[2], en: match[3], ru: match[4], ar: match[5] } });
 }
 
-if (pages.length < 60) {
-  throw new Error(`[bosphoras seo] Expected at least 60 pages, found ${pages.length}. Check Bosphoras SEO data files.`);
+if (pages.length < 100) {
+  throw new Error(`[bosphoras seo] Expected at least 100 pages, found ${pages.length}. Check Bosphoras SEO data files.`);
 }
 
 function routeFileFromSlug(slug) {
