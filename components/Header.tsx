@@ -9,6 +9,7 @@ import { getLocalePath } from '@/lib/routes';
 import { getSlugForPage, pageSlugs } from '@/data/pages/types';
 import { getEquivalentHighPotentialSlug } from '@/data/highPotentialPages';
 import { longTailTaxRouteGroups } from '@/data/longTailTaxRoutes';
+import { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';
 import { SearchOverlay } from '@/components/SearchOverlay';
 import { HomeHero } from '@/components/HomeHero';
 
@@ -40,6 +41,11 @@ const specialLocalizedPaths: Array<Record<Locale, string>> = [
   ...longTailTaxRouteGroups,
 ];
 
+function normalizePath(path: string) {
+  const clean = path.split('?')[0].split('#')[0];
+  return (clean.replace(/\/$/, '') || '/');
+}
+
 export function Header({ locale, currentPath = '/' }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
@@ -47,7 +53,8 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
   const [openGroup, setOpenGroup] = useState<string | null>(null);
   const slug = (id: string) => getSlugForPage(id, locale) ?? '/';
   const linkTo = (id: string) => getLocalePath(locale, slug(id));
-  const isHomePath = currentPath === '/' || currentPath === '/en' || currentPath === '/ru' || currentPath === '/ar';
+  const normalizedCurrentPath = normalizePath(currentPath);
+  const isHomePath = normalizedCurrentPath === '/' || normalizedCurrentPath === '/en' || normalizedCurrentPath === '/ru' || normalizedCurrentPath === '/ar';
 
   const labels = { services: locale === 'fr' ? 'Services' : locale === 'en' ? 'Services' : locale === 'ru' ? 'Услуги' : 'الخدمات', destinations: locale === 'fr' ? 'Destinations' : locale === 'en' ? 'Destinations' : locale === 'ru' ? 'Направления' : 'الوجهات', privateAccess: 'Private Access', information: locale === 'fr' ? 'Informations' : locale === 'en' ? 'Information' : locale === 'ru' ? 'Информация' : 'معلومات' };
   const searchLabel = locale === 'fr' ? 'Rechercher' : locale === 'en' ? 'Search' : locale === 'ru' ? 'Поиск' : 'بحث';
@@ -71,15 +78,20 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
       { label: locale === 'fr' ? 'Demande d’adhésion' : locale === 'en' ? 'Membership application' : locale === 'ru' ? 'Заявка на членство' : 'طلب عضوية', href: linkTo('membership-application') },
       { label: locale === 'fr' ? 'Diagnostic privé' : locale === 'en' ? 'Private Assessment' : locale === 'ru' ? 'Частная консультация' : 'تقييم خاص', href: linkTo('private-assessment') },
     ] },
-    { label: labels.information, href: linkTo('about'), items: [{ label: locale === 'fr' ? 'À propos' : locale === 'en' ? 'About' : locale === 'ru' ? 'О нас' : 'من نحن', href: linkTo('about') }, { label: locale === 'fr' ? 'Conformité & confiance' : locale === 'en' ? 'Compliance & Trust' : locale === 'ru' ? 'Комплаенс и доверие' : 'الامتثال والثقة', href: linkTo('compliance') }, { label: locale === 'fr' ? 'Partenaires & réseau' : locale === 'en' ? 'Partners & Network' : locale === 'ru' ? 'Партнеры и сеть' : 'الشركاء والشبكة', href: linkTo('partners') }] },
+    { label: labels.information, href: linkTo('about'), items: [{ label: locale === 'fr' ? 'À propos' : locale === 'en' ? 'About' : locale === 'ru' ? 'О нас' : 'من نحن', href: linkTo('about') }, { label: locale === 'fr' ? 'Conformité & confiance' : locale === 'en' ? 'Compliance & Trust' : locale === 'ru' ? 'Комплаенс и доверие' : 'الامتثال والثقة', href: linkTo('compliance') }, { label: locale === 'fr' ? 'Partenaires & réseau' : locale === 'en' ? 'Partners & Network' : locale === 'ru' ? 'Партнеры и сеть' : 'الشركاء والشبكة', href: linkTo('partners') }, { label: locale === 'fr' ? 'Questions fréquentes' : locale === 'en' ? 'FAQ' : locale === 'ru' ? 'Вопросы и ответы' : 'أسئلة شائعة', href: linkTo('faq') }] },
   ];
 
   const getLocaleHref = (targetLocale: Locale) => {
-    const specialPath = specialLocalizedPaths.find((paths) => locales.some((loc) => paths[loc] === currentPath));
+    const specialPath = specialLocalizedPaths.find((paths) => locales.some((loc) => normalizePath(paths[loc]) === normalizedCurrentPath));
     if (specialPath) return specialPath[targetLocale];
-    const guideSlug = getEquivalentHighPotentialSlug(currentPath, targetLocale);
+
+    const registryPage = allBosphorasSeoPages.find((page) => locales.some((loc) => normalizePath(page.slugs[loc]) === normalizedCurrentPath));
+    if (registryPage) return registryPage.slugs[targetLocale];
+
+    const guideSlug = getEquivalentHighPotentialSlug(normalizedCurrentPath, targetLocale);
     if (guideSlug) return getLocalePath(targetLocale, guideSlug);
-    const pathWithoutLocale = currentPath.replace(/^\/(en|ru|ar)/, '') || '/';
+
+    const pathWithoutLocale = normalizedCurrentPath.replace(/^\/(en|ru|ar)/, '') || '/';
     const matchedPage = pageSlugs.find((page) => locales.some((loc) => page.slugs[loc] === pathWithoutLocale));
     if (matchedPage) return getLocalePath(targetLocale, matchedPage.slugs[targetLocale]);
     return getLocalePath(targetLocale, pathWithoutLocale);
