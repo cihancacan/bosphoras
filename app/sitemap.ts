@@ -25,16 +25,30 @@ function absoluteUrl(path: string) {
   return `${siteUrl}${path}`;
 }
 
+function normalizeDomain(url: string) {
+  return url.replace('https://www.bosphoras.com', siteUrl).replace('https://bosphoras.com', siteUrl);
+}
+
+function encodeSitemapUrl(url: string) {
+  return encodeURI(normalizeDomain(url));
+}
+
+function encodedAlternates(paths: Record<string, string>) {
+  return Object.fromEntries(
+    Object.entries(paths).map(([lang, url]) => [lang, encodeSitemapUrl(url)])
+  );
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
   const seenUrls = new Set<string>();
 
   function addEntry(entry: MetadataRoute.Sitemap[number]) {
-    const normalizedUrl = entry.url.replace('https://www.bosphoras.com', siteUrl).replace('https://bosphoras.com', siteUrl);
-    if (seenUrls.has(normalizedUrl)) return;
-    seenUrls.add(normalizedUrl);
-    entries.push({ ...entry, url: normalizedUrl });
+    const encodedUrl = encodeSitemapUrl(entry.url);
+    if (seenUrls.has(encodedUrl)) return;
+    seenUrls.add(encodedUrl);
+    entries.push({ ...entry, url: encodedUrl });
   }
 
   for (const locale of locales) {
@@ -71,14 +85,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  const foreignIncomeTaxPages = [
+  const legacySeoPages = [
     'https://www.bosphoras.com/exoneration-fiscale-turquie-revenus-etrangers',
     'https://www.bosphoras.com/en/turkey-tax-exemption-foreign-income',
     'https://www.bosphoras.com/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody',
     'https://www.bosphoras.com/ar/turkey-tax-exemption-foreign-income',
-  ];
-
-  const turkeyTaxClusterPages = [
     'https://www.bosphoras.com/strategie-fiscale-turquie-investisseurs-etrangers',
     'https://www.bosphoras.com/en/turkey-tax-strategy-foreign-investors',
     'https://www.bosphoras.com/ru/nalogovaya-strategiya-turtsii-inostrannye-investory',
@@ -113,7 +124,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'https://www.bosphoras.com/ar/turkey-vs-dubai-investors-tax',
   ];
 
-  for (const url of [...foreignIncomeTaxPages, ...turkeyTaxClusterPages, ...longTailTaxSitemapUrls]) {
+  for (const url of [...legacySeoPages, ...longTailTaxSitemapUrls]) {
     addEntry({
       url,
       lastModified: now,
@@ -123,12 +134,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   for (const page of allBosphorasSeoPages) {
+    const alternates = {
+      fr: absoluteUrl(page.slugs.fr),
+      en: absoluteUrl(page.slugs.en),
+      ru: absoluteUrl(page.slugs.ru),
+      ar: absoluteUrl(page.slugs.ar),
+      'x-default': absoluteUrl(page.slugs.fr),
+    };
+
     for (const urlPath of Object.values(page.slugs)) {
       addEntry({
         url: absoluteUrl(urlPath),
         lastModified: now,
         changeFrequency: 'weekly',
         priority: 0.96,
+        alternates: {
+          languages: encodedAlternates(alternates),
+        },
       });
     }
   }
