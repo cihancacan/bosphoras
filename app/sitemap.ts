@@ -33,12 +33,6 @@ function encodeSitemapUrl(url: string) {
   return encodeURI(normalizeDomain(url));
 }
 
-function encodedAlternates(paths: Record<string, string>) {
-  return Object.fromEntries(
-    Object.entries(paths).map(([lang, url]) => [lang, encodeSitemapUrl(url)])
-  );
-}
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
@@ -134,23 +128,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }
 
   for (const page of allBosphorasSeoPages) {
-    const alternates = {
-      fr: absoluteUrl(page.slugs.fr),
-      en: absoluteUrl(page.slugs.en),
-      ru: absoluteUrl(page.slugs.ru),
-      ar: absoluteUrl(page.slugs.ar),
-      'x-default': absoluteUrl(page.slugs.fr),
-    };
-
     for (const urlPath of Object.values(page.slugs)) {
       addEntry({
         url: absoluteUrl(urlPath),
         lastModified: now,
         changeFrequency: 'weekly',
         priority: 0.96,
-        alternates: {
-          languages: encodedAlternates(alternates),
-        },
       });
     }
   }
