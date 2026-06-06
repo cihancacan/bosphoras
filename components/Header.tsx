@@ -16,10 +16,17 @@ interface HeaderProps { locale: Locale; currentPath?: string; }
 type MenuItem = { label: string; href: string; description?: string };
 type MenuGroup = { label: string; href: string; items: MenuItem[] };
 
+const corporateRelocationPaths: Record<Locale, string> = {
+  fr: '/relocation-corporate-turquie',
+  en: '/en/corporate-relocation-turkey',
+  ru: '/ru/korporativnyy-relokeyshn-v-turtsiyu',
+  ar: '/ar/الانتقال-المؤسسي-إلى-تركيا',
+};
+
 const specialLocalizedPaths: Array<Record<Locale, string>> = [
   { fr: '/peninsula-istanbul', en: '/en/peninsula-istanbul', ru: '/ru/peninsula-istanbul', ar: '/ar/peninsula-istanbul' },
   { fr: '/transferts-istanbul', en: '/en/istanbul-airport-transfer', ru: '/ru/transfer-aeroport-stambul', ar: '/ar/istanbul-airport-transfer' },
-  { fr: '/relocation-corporate-turquie', en: '/relocation-corporate-turquie', ru: '/relocation-corporate-turquie', ar: '/relocation-corporate-turquie' },
+  corporateRelocationPaths,
 ];
 
 function normalizePath(path: string) {
@@ -46,12 +53,12 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
   const searchLabel = locale === 'fr' ? 'Rechercher' : locale === 'en' ? 'Search' : locale === 'ru' ? 'Поиск' : 'بحث';
   const mobilityLink = locale === 'fr' ? '/transferts-istanbul' : locale === 'en' ? '/en/istanbul-airport-transfer' : locale === 'ru' ? '/ru/transfer-aeroport-stambul' : '/ar/istanbul-airport-transfer';
   const peninsulaLink = locale === 'fr' ? '/peninsula-istanbul' : `/${locale}/peninsula-istanbul`;
-  const corporateRelocationLink = '/relocation-corporate-turquie';
+  const corporateRelocationLink = corporateRelocationPaths[locale];
 
   const groups: MenuGroup[] = [
     { label: labels.services, href: linkTo('services'), items: [
-      { label: locale === 'fr' ? 'Relocation corporate' : locale === 'en' ? 'Corporate Relocation' : locale === 'ru' ? 'Corporate Relocation' : 'Corporate Relocation', href: corporateRelocationLink, description: locale === 'fr' ? 'Logement, titre de sejour, immigration et installation des cadres expatries.' : locale === 'en' ? 'Housing, residence permit, immigration and executive relocation.' : locale === 'ru' ? 'Жилье, ВНЖ, immigration и установка руководителей.' : 'السكن والإقامة والهجرة وانتقال المدراء.' },
       { label: locale === 'fr' ? 'Installation en Turquie' : locale === 'en' ? 'Relocate to Turkey' : locale === 'ru' ? 'Переезд в Турцию' : 'الانتقال إلى تركيا', href: linkTo('relocate'), description: locale === 'fr' ? 'Residence, famille, ville, demarches.' : locale === 'en' ? 'Residence, family, city, formalities.' : locale === 'ru' ? 'Резиденция, семья, город, процедуры.' : 'الإقامة، العائلة، المدينة والإجراءات.' },
+      { label: locale === 'fr' ? 'Relocation corporate' : locale === 'en' ? 'Corporate Relocation' : locale === 'ru' ? 'Corporate Relocation' : 'Corporate Relocation', href: corporateRelocationLink, description: locale === 'fr' ? 'Logement, titre de sejour, immigration et installation des cadres expatries.' : locale === 'en' ? 'Housing, residence permit, immigration and executive relocation.' : locale === 'ru' ? 'Жилье, ВНЖ, immigration и сопровождение руководителей.' : 'السكن والإقامة والهجرة وانتقال المدراء.' },
       { label: locale === 'fr' ? 'Conseil Juridique & Fiscal' : locale === 'en' ? 'Legal & Tax Advisory' : locale === 'ru' ? 'Право и налоги' : 'القانون والضرائب', href: linkTo('legal-tax'), description: locale === 'fr' ? 'Avocats, fiscalistes, conformite.' : locale === 'en' ? 'Lawyers, tax advisors, compliance.' : locale === 'ru' ? 'Юристы, налоги, compliance.' : 'محامون، ضرائب وامتثال.' },
       { label: locale === 'fr' ? "Creation d'Entreprise" : locale === 'en' ? 'Company Formation' : locale === 'ru' ? 'Создание компании' : 'تأسيس الشركات', href: linkTo('business-setup'), description: locale === 'fr' ? 'Societe, comptabilite, bureaux.' : locale === 'en' ? 'Company, accounting, offices.' : locale === 'ru' ? 'Компания, бухгалтерия, офисы.' : 'شركة، محاسبة ومكاتب.' },
       { label: locale === 'fr' ? 'Sante & Assurance' : locale === 'en' ? 'Health & Insurance' : locale === 'ru' ? 'Здоровье и страхование' : 'الصحة والتأمين', href: linkTo('health-insurance'), description: locale === 'fr' ? 'Medecins, cliniques, assurances.' : locale === 'en' ? 'Doctors, clinics, insurance.' : locale === 'ru' ? 'Врачи, клиники, страхование.' : 'أطباء، عيادات وتأمين.' },
