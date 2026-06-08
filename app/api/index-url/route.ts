@@ -13,11 +13,23 @@ function isAllowedUrl(url: string) {
   }
 }
 
-export async function POST(request: NextRequest) {
-  const body = await request.json().catch(() => null);
-  const url = body?.url;
+async function getUrlFromRequest(request: NextRequest) {
+  const contentType = request.headers.get('content-type') || '';
 
-  if (!url || typeof url !== 'string') {
+  if (contentType.includes('application/json')) {
+    const body = await request.json().catch(() => null);
+    return typeof body?.url === 'string' ? body.url : null;
+  }
+
+  const formData = await request.formData().catch(() => null);
+  const formUrl = formData?.get('url');
+  return typeof formUrl === 'string' ? formUrl : null;
+}
+
+export async function POST(request: NextRequest) {
+  const url = await getUrlFromRequest(request);
+
+  if (!url) {
     return NextResponse.json({ error: 'URL manquante.' }, { status: 400 });
   }
 
