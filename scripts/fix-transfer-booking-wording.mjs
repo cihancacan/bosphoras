@@ -41,6 +41,38 @@ function reorderAirportSuggestions() {
   return true;
 }
 
+function moveAirportQuickChoicesToArrival() {
+  let changed = false;
+
+  const pickupDropdown = /\{showAirportSuggestions && <div className="absolute left-0 right-0 top-\[calc\(100%\+6px\)\] z-40 rounded-2xl border border-white\/70 bg-white\/95 p-2 shadow-2xl backdrop-blur-xl">\{airportSuggestions\.map\(\(airport\) => <button type="button" key=\{airport\} onMouseDown=\{\(e\) => e\.preventDefault\(\)\} onClick=\{\(\) => \{ setPickup\(airport\); setShowAirportSuggestions\(false\); \}\} className="block w-full rounded-xl px-4 py-3 text-left text-sm font-black text-gray-900 hover:bg-gray-100">\{airport\}<\/button>\)\}<\/div>\}/;
+  if (pickupDropdown.test(content)) {
+    content = content.replace(pickupDropdown, '');
+    changed = true;
+  }
+
+  const pickupFocus = 'ref={pickupRef} value={pickup} onFocus={() => setShowAirportSuggestions(true)} onChange={(e) => setPickup(e.target.value)}';
+  const pickupNormal = 'ref={pickupRef} value={pickup} onFocus={() => setShowAirportSuggestions(false)} onChange={(e) => { setPickup(e.target.value); setShowAirportSuggestions(false); }}';
+  if (content.includes(pickupFocus)) {
+    replaceAll(pickupFocus, pickupNormal);
+    changed = true;
+  }
+
+  const dropLabel = '</label><label><span className={labelClass}><MapPin size={14}/>{c.drop}</span>';
+  if (content.includes(dropLabel)) {
+    replaceAll(dropLabel, '</label><label className="relative"><span className={labelClass}><MapPin size={14}/>{c.drop}</span>');
+    changed = true;
+  }
+
+  const dropInput = '<input ref={dropRef} value={drop} onFocus={() => setShowAirportSuggestions(false)} onChange={(e) => setDrop(e.target.value)} className={`${inputClass} transfer-modern-address-input`} placeholder={c.dropPlaceholder}/>';
+  const dropWithChoices = '<input ref={dropRef} value={drop} onFocus={() => setShowAirportSuggestions(true)} onChange={(e) => setDrop(e.target.value)} className={`${inputClass} transfer-modern-address-input`} placeholder={c.dropPlaceholder}/>{showAirportSuggestions && <div className="absolute left-0 right-0 top-[calc(100%+6px)] z-40 rounded-2xl border border-white/70 bg-white/95 p-2 shadow-2xl backdrop-blur-xl">{airportSuggestions.map((airport) => <button type="button" key={airport} onMouseDown={(e) => e.preventDefault()} onClick={() => { setDrop(airport); setShowAirportSuggestions(false); }} className="block w-full rounded-xl px-4 py-3 text-left text-sm font-black text-gray-900 hover:bg-gray-100">{airport}</button>)}</div>}';
+  if (content.includes(dropInput) && !content.includes('setDrop(airport); setShowAirportSuggestions(false);')) {
+    replaceAll(dropInput, dropWithChoices);
+    changed = true;
+  }
+
+  return changed;
+}
+
 replaceAll('Book your private chauffeur in Istanbul', 'Book your private driver in Istanbul');
 replaceAll('Buchen Sie Ihren privaten Chauffeur in Istanbul', 'Buchen Sie Ihren privaten Fahrer in Istanbul');
 replaceAll('Math.round(oneWayPrice * 2 * 0.85)', 'Math.round(oneWayPrice * 2)');
@@ -64,8 +96,9 @@ if (premiumPaymentUi) {
   const removedCurrency = removeFirstStepCurrencySelector();
   const disabledGoogle = disableGooglePlacesByDefault();
   const reorderedAirports = reorderAirportSuggestions();
+  const movedAirports = moveAirportQuickChoicesToArrival();
   fs.writeFileSync(file, content, 'utf8');
-  console.log(`[transfer booking] premium payment UI detected; entry currency ${removedCurrency ? 'removed' : 'unchanged'}, Google Places ${disabledGoogle ? 'disabled by default' : 'unchanged'}, airport order ${reorderedAirports ? 'updated' : 'unchanged'}`);
+  console.log(`[transfer booking] premium payment UI detected; entry currency ${removedCurrency ? 'removed' : 'unchanged'}, Google Places ${disabledGoogle ? 'disabled by default' : 'unchanged'}, airport order ${reorderedAirports ? 'updated' : 'unchanged'}, airport choices ${movedAirports ? 'moved to arrival' : 'unchanged'}`);
   process.exit(0);
 }
 
