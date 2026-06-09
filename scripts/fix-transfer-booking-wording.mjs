@@ -13,6 +13,34 @@ function replaceAll(from, to) {
   content = content.split(from).join(to);
 }
 
+function removeFirstStepCurrencySelector() {
+  const startMarker = '<div className="mb-4 grid grid-cols-4 rounded-2xl bg-white/45 p-1 backdrop-blur-xl md:bg-gray-100">{([\'EUR\',\'USD\',\'GBP\',\'CHF\'] as Currency[]).map((cur) => <button key={cur} onClick={() => setCurrency(cur)}';
+  const start = content.indexOf(startMarker);
+  if (start < 0) return false;
+  const endMarker = '</button>)}</div>';
+  const end = content.indexOf(endMarker, start);
+  if (end < 0) return false;
+  content = content.slice(0, start) + content.slice(end + endMarker.length);
+  return true;
+}
+
+function disableGooglePlacesByDefault() {
+  if (content.includes('NEXT_PUBLIC_ENABLE_GOOGLE_PLACES')) return false;
+  const from = 'useEffect(() => { const key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY; const connect = () =>';
+  const to = "useEffect(() => { const enabled = process.env.NEXT_PUBLIC_ENABLE_GOOGLE_PLACES === 'true'; if (!enabled) return; const key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY; const connect = () =>";
+  if (!content.includes(from)) return false;
+  replaceAll(from, to);
+  return true;
+}
+
+function reorderAirportSuggestions() {
+  const from = "const airportSuggestions = ['Istanbul Airport IST', 'Sabiha Gökçen Airport SAW'];";
+  const to = "const airportSuggestions = ['Sabiha Gökçen Airport SAW', 'Istanbul Airport IST'];";
+  if (!content.includes(from)) return false;
+  replaceAll(from, to);
+  return true;
+}
+
 replaceAll('Book your private chauffeur in Istanbul', 'Book your private driver in Istanbul');
 replaceAll('Buchen Sie Ihren privaten Chauffeur in Istanbul', 'Buchen Sie Ihren privaten Fahrer in Istanbul');
 replaceAll('Math.round(oneWayPrice * 2 * 0.85)', 'Math.round(oneWayPrice * 2)');
@@ -33,8 +61,11 @@ replaceAll('className="object-cover object-center scale-[0.92]"', 'className="ob
 const premiumPaymentUi = content.includes("type Currency = 'EUR' | 'USD' | 'GBP' | 'CHF'") && content.includes("type PaymentMode = 'online_full' | 'deposit_onboard'");
 
 if (premiumPaymentUi) {
+  const removedCurrency = removeFirstStepCurrencySelector();
+  const disabledGoogle = disableGooglePlacesByDefault();
+  const reorderedAirports = reorderAirportSuggestions();
   fs.writeFileSync(file, content, 'utf8');
-  console.log('[transfer booking] premium payment UI detected; legacy round-trip patch skipped');
+  console.log(`[transfer booking] premium payment UI detected; entry currency ${removedCurrency ? 'removed' : 'unchanged'}, Google Places ${disabledGoogle ? 'disabled by default' : 'unchanged'}, airport order ${reorderedAirports ? 'updated' : 'unchanged'}`);
   process.exit(0);
 }
 
