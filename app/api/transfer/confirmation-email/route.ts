@@ -8,6 +8,10 @@ function getBaseUrl(request: Request) {
   return new URL(request.url).origin;
 }
 
+function sessionAmount(session: Stripe.Checkout.Session) {
+  return session.amount_total ? String(Math.round((session.amount_total / 100) * 100) / 100) : '';
+}
+
 export async function POST(request: Request) {
   try {
     const secretKey = process.env.STRIPE_SECRET_KEY;
@@ -40,7 +44,7 @@ export async function POST(request: Request) {
       sessionId: id,
       paymentMode: String(meta.paymentMode || 'online_full'),
       currency: String(meta.currency || session.currency || 'eur'),
-      amountPaidToday: String(meta.amountPaidToday || session.amount_total ? Number(session.amount_total || 0) / 100 : ''),
+      amountPaidToday: String(meta.amountPaidToday || sessionAmount(session)),
       balanceOnBoard: String(meta.balanceOnBoard || ''),
       refundablePolicy: String(meta.refundablePolicy || 'Fully refundable without conditions up to 24 hours before pickup'),
       baseUrl: getBaseUrl(request),
