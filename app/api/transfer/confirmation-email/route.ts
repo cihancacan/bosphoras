@@ -38,6 +38,11 @@ export async function POST(request: Request) {
       flightNumber: String(meta.flightNumber || ''),
       passengerCount: String(meta.passengerCount || ''),
       sessionId: id,
+      paymentMode: String(meta.paymentMode || 'online_full'),
+      currency: String(meta.currency || session.currency || 'eur'),
+      amountPaidToday: String(meta.amountPaidToday || session.amount_total ? Number(session.amount_total || 0) / 100 : ''),
+      balanceOnBoard: String(meta.balanceOnBoard || ''),
+      refundablePolicy: String(meta.refundablePolicy || 'Fully refundable without conditions up to 24 hours before pickup'),
       baseUrl: getBaseUrl(request),
     };
 
