@@ -6,6 +6,9 @@ type Mode = 'transfer' | 'hourly';
 type RouteInfo = {
   minutes: number;
   distanceMeters: number | null;
+  source: 'google_routes' | 'fallback';
+  googleStatus?: number;
+  googleError?: string;
 };
 
 const VEHICLE_RATES: Record<VehicleId, number> = {
@@ -16,6 +19,7 @@ const VEHICLE_RATES: Record<VehicleId, number> = {
 };
 
 const SAW_TERMS = ['saw', 'sabiha', 'sabiha gokcen', 'sabiha gökçen', 'gokcen', 'gökçen'];
+const IST_TERMS = ['istanbul airport', ' ist', 'ist airport', 'havalimani ist', 'havalimanı ist'];
 const ASIA_TERMS = ['asia', 'asian', 'asian side', 'anatolian', 'anatolian side', 'asya', 'anadolu', 'kadikoy', 'kadıköy', 'uskudar', 'üsküdar', 'beykoz', 'atasehir', 'ataşehir'];
 
 function normalizeText(value: string) {
@@ -32,12 +36,13 @@ function normalizeText(value: string) {
 }
 
 function includesAny(text: string, terms: string[]) {
-  return terms.some((term) => text.includes(normalizeText(term)));
+  const normalizedTerms = terms.map(normalizeText);
+  return normalizedTerms.some((term) => text.includes(term));
 }
 
 function fallbackMinutes(pickup: string, dropoff: string) {
   const text = normalizeText(`${pickup} ${dropoff}`);
-  const ist = text.includes('istanbul airport') || text.includes(' ist') || text.includes('istanbul flughafen') || text.includes('flughafen istanbul');
+  const ist = includesAny(text, IST_TERMS);
   const saw = includesAny(text, SAW_TERMS);
   if (ist && saw) return 120;
   if (saw) return 90;
@@ -63,42 +68,69 @@ function estimateTollPrice(pickup: string, dropoff: string) {
   return 10;
 }
 
+function googleAddress(value: string) {
+  const normalized = normalizeText(value);
+  if (includesAny(normalized, SAW_TERMS)) return 'Sabiha Gokcen International Airport, Istanbul, Turkey';
+  if (includesAny(normalized, IST_TERMS)) return 'Istanbul Airport, Istanbul, Turkey';
+  return `${value}, Istanbul, Turkey`;
+}
+
+function safeGoogleError(value: unknown) {
+  const text = typeof value === 'string' ? value : JSON.stringify(value || '');
+  return text.slice(0, 220);
+}
+
 async function getGoogleRouteInfo(pickup: string, dropoff: string): Promise<RouteInfo | null> {
-  const apiKey = process.env.GOOGLE_MAPS_SERVER_API_KEY;
-  if (!apiKey) return null;
+  const apiKey = process.env.GOOGLE_MAPS_SERVER_API_KEY || process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+  if (!apiKey) {
+    return { minutes: fallbackMinutes(pickup, dropoff), distanceMeters: null, source: 'fallback', googleError: 'missing_google_maps_key' };
+  }
 
-  const response = await fetch('https://routes.googleapis.com/directions/v2:computeRoutes', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'X-Goog-Api-Key': apiKey,
-      'X-Goog-FieldMask': 'routes.duration,routes.distanceMeters',
-    },
-    body: JSON.stringify({
-      origin: { address: pickup },
-      destination: { address: dropoff },
-      travelMode: 'DRIVE',
-      routingPreference: 'TRAFFIC_AWARE',
-      units: 'METRIC',
-      languageCode: 'en-US',
-      regionCode: 'TR',
-    }),
-    next: { revalidate: 0 },
-  });
+  try {
+    const response = await fetch('https://routes.googleapis.com/directions/v2:computeRoutes', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Goog-Api-Key': apiKey,
+        'X-Goog-FieldMask': 'routes.duration,routes.distanceMeters',
+      },
+      body: JSON.stringify({
+        origin: { address: googleAddress(pickup) },
+        destination: { address: googleAddress(dropoff) },
+        travelMode: 'DRIVE',
+        routingPreference: 'TRAFFIC_AWARE',
+        units: 'METRIC',
+        languageCode: 'en-US',
+        regionCode: 'TR',
+      }),
+      next: { revalidate: 0 },
+    });
 
-  if (!response.ok) return null;
-  const data = await response.json();
-  const route = data?.routes?.[0];
-  const duration = route?.duration;
-  const distanceMeters = Number(route?.distanceMeters);
-  if (typeof duration !== 'string') return null;
-  const seconds = Number(duration.replace('s', ''));
-  if (!Number.isFinite(seconds) || seconds <= 0) return null;
+    if (!response.ok) {
+      const body = await response.text().catch(() => '');
+      return { minutes: fallbackMinutes(pickup, dropoff), distanceMeters: null, source: 'fallback', googleStatus: response.status, googleError: safeGoogleError(body) };
+    }
 
-  return {
-    minutes: Math.ceil(seconds / 60),
-    distanceMeters: Number.isFinite(distanceMeters) && distanceMeters > 0 ? distanceMeters : null,
-  };
+    const data = await response.json();
+    const route = data?.routes?.[0];
+    const duration = route?.duration;
+    const distanceMeters = Number(route?.distanceMeters);
+    if (typeof duration !== 'string') {
+      return { minutes: fallbackMinutes(pickup, dropoff), distanceMeters: null, source: 'fallback', googleError: 'missing_route_duration' };
+    }
+    const seconds = Number(duration.replace('s', ''));
+    if (!Number.isFinite(seconds) || seconds <= 0) {
+      return { minutes: fallbackMinutes(pickup, dropoff), distanceMeters: null, source: 'fallback', googleError: 'invalid_route_duration' };
+    }
+
+    return {
+      minutes: Math.ceil(seconds / 60),
+      distanceMeters: Number.isFinite(distanceMeters) && distanceMeters > 0 ? distanceMeters : null,
+      source: 'google_routes',
+    };
+  } catch (error) {
+    return { minutes: fallbackMinutes(pickup, dropoff), distanceMeters: null, source: 'fallback', googleError: safeGoogleError(error) };
+  }
 }
 
 export async function POST(request: Request) {
@@ -116,10 +148,10 @@ export async function POST(request: Request) {
     }
 
     const rate = VEHICLE_RATES[vehicleId] || VEHICLE_RATES.e;
-    const googleRoute = await getGoogleRouteInfo(pickup, dropoff);
-    const estimatedMinutes = googleRoute?.minutes || fallbackMinutes(pickup, dropoff);
-    const distanceKm = googleRoute?.distanceMeters
-      ? Math.round((googleRoute.distanceMeters / 1000) * 10) / 10
+    const route = await getGoogleRouteInfo(pickup, dropoff);
+    const estimatedMinutes = route?.minutes || fallbackMinutes(pickup, dropoff);
+    const distanceKm = route?.distanceMeters
+      ? Math.round((route.distanceMeters / 1000) * 10) / 10
       : fallbackDistanceKm(estimatedMinutes);
     const billed = billedMinutes(estimatedMinutes);
     const multiplier = roundTrip ? 2 : 1;
@@ -130,7 +162,9 @@ export async function POST(request: Request) {
     const total = vehiclePrice + tollPrice;
 
     return NextResponse.json({
-      source: googleRoute ? 'google_routes' : 'fallback',
+      source: route?.source || 'fallback',
+      googleStatus: route?.googleStatus,
+      googleError: route?.googleError,
       estimatedMinutes,
       billedMinutes: billed,
       distanceKm,
@@ -142,6 +176,6 @@ export async function POST(request: Request) {
       oneWayTollPrice,
     });
   } catch (error) {
-    return NextResponse.json({ error: 'quote_failed' }, { status: 500 });
+    return NextResponse.json({ error: 'quote_failed', detail: safeGoogleError(error) }, { status: 500 });
   }
 }
