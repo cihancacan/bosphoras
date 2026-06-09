@@ -35,7 +35,6 @@ function disableGooglePlacesByDefault() {
 
 function convertAirportChoicesToInputDropdowns() {
   let changed = false;
-
   if (!content.includes("const [airportField, setAirportField]")) {
     const from = "  const [drop, setDrop] = useState('');";
     const to = "  const [drop, setDrop] = useState('');\n  const [airportField, setAirportField] = useState<null | 'pickup' | 'drop'>(null);";
@@ -63,38 +62,25 @@ function convertAirportChoicesToInputDropdowns() {
     ]
   ];
   for (const [from, to] of replacements) if (content.includes(from)) { replaceAll(from, to); changed = true; }
-
   replaceAll('onBlur={() => setTimeout(() => setAirportField(null), 140)} ', '');
   return changed;
 }
 
 function applyModernUxPolish() {
-  let changed = false;
-
   const before = content;
-
   replaceAll('Remboursable sans condition jusqu’à 24h avant', 'Annulation gratuite jusqu’à 24h avant');
   replaceAll('Fully refundable up to 24h before pickup', 'Free cancellation up to 24h before pickup');
   replaceAll('Возврат без условий до 24 часов до подачи', 'Бесплатная отмена до 24 часов до подачи');
-
   replaceAll("name: 'E-Class', label: 'Business Sedan'", "name: 'E-Class ou équivalent', label: 'Business Sedan'");
   replaceAll("name: 'S-Class', label: 'Luxury Sedan'", "name: 'S-Class ou équivalent', label: 'Luxury Sedan'");
-
   replaceAll('<p className="mt-3 text-sm font-semibold text-slate-500">{quoteLoading ? c.calculating : `${routeMinutes} min ${c.estimated} · ${routeBilled} min ${c.billed} · ${routeDistance} km`}</p><RouteDetails/>', '<RouteDetails/>');
   replaceAll('<p className="mt-3 text-sm font-semibold text-slate-500">{quoteLoading ? c.calculating : `${routeMinutes} min ${c.estimated} · ${routeBilled} min ${c.billed} · ${routeDistance} km`}</p><RouteDetails />', '<RouteDetails />');
-
   content = content.replace(/  const RouteDetails = \(\) => <div className="mt-5 grid gap-2 text-xs font-black uppercase tracking-\[0\.08em\] text-slate-700 md:grid-cols-4">.*?<\/div>;/, "  const RouteDetails = () => <div className=\"mt-5 rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-sm\"><div className=\"flex flex-wrap items-center gap-3 text-xs font-black uppercase tracking-[0.08em] text-slate-700\"><span>{formattedDate} · {timeLabel}</span><span className=\"h-1 w-1 rounded-full bg-slate-300\"/><span>{routeMinutes} {c.tripMin}</span><span className=\"h-1 w-1 rounded-full bg-slate-300\"/><span>{routeDistance} km</span><span className=\"h-1 w-1 rounded-full bg-slate-300\"/><span className=\"text-emerald-700\">{c.tollIncluded}</span></div></div>;");
-
-  if (!content.includes('const [showExtras, setShowExtras]')) {
-    replaceAll('  const [forOther, setForOther] = useState(false);', '  const [forOther, setForOther] = useState(false);\n  const [showExtras, setShowExtras] = useState(false);');
-  }
-
+  if (!content.includes('const [showExtras, setShowExtras]')) replaceAll('  const [forOther, setForOther] = useState(false);', '  const [forOther, setForOther] = useState(false);\n  const [showExtras, setShowExtras] = useState(false);');
   replaceAll('<textarea placeholder={c.note} rows={4} className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold outline-none transition focus:border-slate-950 focus:ring-4 focus:ring-slate-950/5 md:col-span-2"/>', '');
-
   const oldOptions = /<div className="mt-6 grid gap-3 md:grid-cols-3"><label className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm font-bold text-slate-700 transition hover:border-slate-950"><input type="checkbox" checked=\{child\}.*?<\/div><div className="mt-5 rounded-3xl border border-slate-200 bg-slate-50 p-4">/;
   const newOptions = '<div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4"><label className="flex cursor-pointer items-center justify-between gap-4"><span><span className="block text-sm font-black text-slate-900">Services supplémentaires</span><span className="block text-xs font-semibold text-slate-500">Note, souhaits, siège enfant et bouquets</span></span><input type="checkbox" checked={showExtras} onChange={(e) => setShowExtras(e.target.checked)} className="h-5 w-5"/></label>{showExtras && <div className="mt-4 grid gap-3 md:grid-cols-3"><textarea placeholder={c.note} rows={3} className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold outline-none transition focus:border-slate-950 focus:ring-4 focus:ring-slate-950/5 md:col-span-3"/><label className="rounded-2xl border border-slate-200 bg-white p-4 text-sm font-bold text-slate-700 transition hover:border-slate-950"><input type="checkbox" checked={child} onChange={(e) => setChild(e.target.checked)}/> <Baby className="my-2 h-5 w-5"/>{c.child}<br/><b>+{formatMoney(extras.child, currency)}</b></label><label className="rounded-2xl border border-slate-200 bg-white p-4 text-sm font-bold text-slate-700 transition hover:border-slate-950"><input type="checkbox" checked={flowers} onChange={(e) => setFlowers(e.target.checked)}/> <Flower2 className="my-2 h-5 w-5"/>{c.bouquet}<br/><b>+{formatMoney(extras.flowers, currency)}</b></label><label className="rounded-2xl border border-slate-200 bg-white p-4 text-sm font-bold text-slate-700 transition hover:border-slate-950"><input type="checkbox" checked={roses} onChange={(e) => setRoses(e.target.checked)}/> <Flower2 className="my-2 h-5 w-5"/>{c.roses}<br/><b>+{formatMoney(extras.roses, currency)}</b></label></div>}</div><div className="mt-5 rounded-3xl border border-slate-200 bg-slate-50 p-4">';
   content = content.replace(oldOptions, newOptions);
-
   replaceAll('className="h-fit rounded-[28px] bg-slate-950 p-6 text-white shadow-[0_20px_60px_rgba(15,23,42,0.22)]"', 'className="h-fit rounded-[24px] border border-slate-200 bg-white p-5 text-slate-950 shadow-[0_12px_34px_rgba(15,23,42,0.08)]"');
   replaceAll('text-white/45', 'text-[#a97b36]');
   replaceAll('<h3 className="mt-3 text-3xl font-black tracking-[-0.05em]">{c.securePayment}</h3>', '<h3 className="mt-2 text-2xl font-black tracking-[-0.05em]">{c.securePayment}</h3>');
@@ -106,12 +92,31 @@ function applyModernUxPolish() {
   replaceAll('className="text-sm text-white/60"', 'className="text-sm text-slate-500"');
   replaceAll('className="text-5xl font-black tracking-[-0.06em]"', 'className="text-4xl font-black tracking-[-0.06em]"');
   replaceAll('className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-white px-6 py-4 text-xs font-black uppercase tracking-[0.14em] text-slate-950"', 'className="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl bg-slate-950 px-6 py-4 text-xs font-black uppercase tracking-[0.14em] text-white"');
-
   replaceAll('rounded-[28px] border border-[#eadfca] bg-white p-4 shadow-[0_12px_38px_rgba(15,23,42,0.07)]', 'rounded-[24px] border border-[#eadfca] bg-white p-4 shadow-[0_8px_26px_rgba(15,23,42,0.06)]');
   replaceAll('rounded-[28px] border border-slate-200 bg-white p-5 shadow-[0_12px_38px_rgba(15,23,42,0.07)]', 'rounded-[24px] border border-slate-200 bg-white p-5 shadow-[0_8px_26px_rgba(15,23,42,0.06)]');
+  return content !== before;
+}
 
-  changed = content !== before;
-  return changed;
+function restoreCompactMobileLayout() {
+  const before = content;
+  replaceAll('className="relative min-h-[100svh] overflow-hidden bg-slate-950 px-4 pb-8 pt-24 md:px-8 md:pt-28"', 'className="relative min-h-[100svh] overflow-hidden bg-[#eef0f3] px-3 pb-6 pt-20 md:bg-slate-950 md:px-8 md:pt-28"');
+  replaceAll('className="object-cover opacity-45"', 'className="hidden object-cover opacity-45 md:block"');
+  replaceAll('className="absolute inset-0 bg-gradient-to-b from-slate-950/45 via-slate-950/55 to-slate-950"', 'className="absolute inset-0 hidden bg-gradient-to-b from-slate-950/45 via-slate-950/55 to-slate-950 md:block"');
+  replaceAll('className="text-white"><div className="mb-4 inline-flex', 'className="hidden text-white md:block"><div className="mb-4 inline-flex');
+  replaceAll('className="rounded-[30px] border border-white/20 bg-white/82 p-4 shadow-[0_30px_120px_rgba(0,0,0,0.35)] backdrop-blur-2xl md:p-6"', 'className="rounded-[28px] border border-white/70 bg-white/92 p-3 shadow-[0_18px_60px_rgba(15,23,42,0.16)] backdrop-blur-2xl md:border-white/20 md:bg-white/82 md:p-6 md:shadow-[0_30px_120px_rgba(0,0,0,0.35)]"');
+  replaceAll('className="min-h-screen bg-[#f5f1e9] px-4 pt-28 text-slate-950 md:px-8 md:pt-32"', 'className="min-h-screen bg-[#f5f1e9] px-3 pt-20 text-slate-950 md:px-8 md:pt-32"');
+  replaceAll('className="mt-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between"', 'className="mt-5 flex flex-col gap-4 lg:mt-8 lg:flex-row lg:items-end lg:justify-between"');
+  replaceAll('className="mt-2 text-4xl font-black tracking-[-0.06em] md:text-6xl"', 'className="mt-2 text-3xl font-black tracking-[-0.06em] md:text-6xl"');
+  replaceAll('className="relative aspect-[4/3] overflow-hidden rounded-[22px] bg-[#f6f2ea]"', 'className="relative aspect-[16/9] overflow-hidden rounded-[20px] bg-[#f6f2ea] md:aspect-[4/3] md:rounded-[22px]"');
+  replaceAll('className="object-contain p-4"', 'className="object-contain p-3 md:p-4"');
+  replaceAll('className="mt-8 grid gap-5 xl:grid-cols-2"', 'className="mt-5 grid gap-4 md:mt-8 xl:grid-cols-2"');
+  replaceAll('className="mt-8 grid gap-6 lg:grid-cols-[1fr_420px]"', 'className="mt-5 grid gap-5 lg:mt-8 lg:grid-cols-[1fr_420px]"');
+  replaceAll('className="mt-4 space-y-2 text-sm text-slate-600"', 'className="mt-4 space-y-1.5 text-xs leading-5 text-slate-600 md:space-y-2 md:text-sm"');
+  replaceAll('className="mt-4 rounded-2xl border border-emerald-100 bg-emerald-50 p-3 text-xs font-semibold leading-5 text-emerald-800"', 'className="mt-3 rounded-2xl border border-emerald-100 bg-emerald-50 p-3 text-[11px] font-semibold leading-5 text-emerald-800 md:mt-4 md:text-xs"');
+  replaceAll('className="mt-4 border-t border-slate-200 pt-4"', 'className="mt-3 border-t border-slate-200 pt-3 md:mt-4 md:pt-4"');
+  replaceAll('className="text-4xl font-black tracking-[-0.06em]"', 'className="text-3xl font-black tracking-[-0.06em] md:text-4xl"');
+  replaceAll('className="mt-4 flex w-full items-center justify-center gap-2 rounded-2xl bg-slate-950 px-6 py-4 text-xs font-black uppercase tracking-[0.14em] text-white"', 'className="mt-3 flex w-full items-center justify-center gap-2 rounded-2xl bg-slate-950 px-6 py-4 text-xs font-black uppercase tracking-[0.14em] text-white md:mt-4"');
+  return content !== before;
 }
 
 replaceAll('Book your private chauffeur in Istanbul', 'Book your private driver in Istanbul');
@@ -123,7 +128,6 @@ replaceAll('Round trip offer: 15% off the total', '');
 replaceAll('Round trip: return added to total', '');
 replaceAll('Remise aller-retour -15%', 'Aller-retour');
 replaceAll('Round trip discount -15%', 'Round trip');
-
 replaceAll('className="hidden object-cover md:block"', 'className="hidden object-contain object-center md:block"');
 replaceAll('className="hidden object-cover object-center scale-[0.92] md:block"', 'className="hidden object-contain object-center md:block"');
 replaceAll('className="object-cover" sizes="100vw"', 'className="object-contain object-center" sizes="100vw"');
@@ -131,18 +135,17 @@ replaceAll('className="object-cover object-center scale-[0.92]" sizes="100vw"', 
 replaceAll('className="object-cover object-center scale-[0.92]"', 'className="object-contain object-center"');
 
 const premiumPaymentUi = content.includes("type Currency = 'EUR' | 'USD' | 'GBP' | 'CHF'") && content.includes("type PaymentMode = 'online_full' | 'deposit_onboard'");
-
 if (premiumPaymentUi) {
   const removedCurrency = removeFirstStepCurrencySelector();
   const disabledGoogle = disableGooglePlacesByDefault();
   const dropdownAirports = convertAirportChoicesToInputDropdowns();
   const modernPolish = applyModernUxPolish();
+  const compactMobile = restoreCompactMobileLayout();
   fs.writeFileSync(file, content, 'utf8');
-  console.log(`[transfer booking] premium UI patched; entry currency ${removedCurrency ? 'removed' : 'unchanged'}, Google Places ${disabledGoogle ? 'disabled by default' : 'unchanged'}, airport dropdowns ${dropdownAirports ? 'applied' : 'unchanged'}, modern polish ${modernPolish ? 'applied' : 'unchanged'}`);
+  console.log(`[transfer booking] premium UI patched; entry currency ${removedCurrency ? 'removed' : 'unchanged'}, Google Places ${disabledGoogle ? 'disabled by default' : 'unchanged'}, airport dropdowns ${dropdownAirports ? 'applied' : 'unchanged'}, modern polish ${modernPolish ? 'applied' : 'unchanged'}, mobile layout ${compactMobile ? 'compact' : 'unchanged'}`);
   process.exit(0);
 }
 
 replaceAll('className="object-cover"', 'className="object-contain object-center"');
-
 fs.writeFileSync(file, content, 'utf8');
 console.log('[transfer booking] hero image uses object-contain and no crop');
