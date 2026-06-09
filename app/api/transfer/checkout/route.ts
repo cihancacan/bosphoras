@@ -3,9 +3,11 @@ import Stripe from 'stripe';
 
 type CheckoutItem = { label: string; amount: number };
 type Locale = 'fr' | 'en' | 'ru' | 'ar' | 'zh' | 'de' | 'es' | 'it' | 'pt';
+type CheckoutCurrency = 'eur' | 'usd' | 'gbp' | 'chf';
+type PaymentMode = 'online_full' | 'deposit_onboard';
 
 const localePaths: Record<Locale, string> = {
-  fr: '/transferts-istanbul',
+  fr: '/transfert-aeroport-istanbul',
   en: '/en/istanbul-airport-transfer',
   ru: '/ru/transfer-aeroport-stambul',
   ar: '/ar/istanbul-airport-transfer',
@@ -38,9 +40,22 @@ function getLocale(request: Request, body: any): Locale {
   return 'fr';
 }
 
+function getCurrency(value: unknown): CheckoutCurrency {
+  const currency = String(value || 'EUR').trim().toLowerCase();
+  return currency === 'usd' || currency === 'gbp' || currency === 'chf' || currency === 'eur' ? currency : 'eur';
+}
+
+function getPaymentMode(value: unknown): PaymentMode {
+  return value === 'deposit_onboard' ? 'deposit_onboard' : 'online_full';
+}
+
 function sanitizeAmount(value: unknown) {
-  const amount = Math.round(Number(value || 0));
+  const amount = Math.round(Number(value || 0) * 100) / 100;
   return Number.isFinite(amount) && amount > 0 ? amount : 0;
+}
+
+function stripeUnitAmount(amount: number) {
+  return Math.round(amount * 100);
 }
 
 function isValidEmail(email: string) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email); }
@@ -53,7 +68,10 @@ export async function POST(request: Request) {
     const stripe = new Stripe(secretKey);
     const body = await request.json();
     const locale = getLocale(request, body);
+    const currency = getCurrency(body.currency);
+    const paymentMode = getPaymentMode(body.paymentMode);
     const total = sanitizeAmount(body.total);
+    const balanceOnBoard = sanitizeAmount(body.balanceOnBoard);
     if (!total) return NextResponse.json({ error: 'invalid_total' }, { status: 400 });
 
     const firstName = String(body.firstName || '').trim().slice(0, 80);
@@ -79,14 +97,63 @@ export async function POST(request: Request) {
     if (tollPrice > 0) extraItems.push({ label: 'Péage inclus', amount: tollPrice });
     if (tip > 0) extraItems.push({ label: 'Pourboire chauffeur', amount: tip });
 
-    const descriptionParts = [`${pickup} → ${dropoff}`, date && time ? `${date} à ${time}` : date, routeMinutes ? `${routeMinutes} min` : '', distanceKm ? `${distanceKm} km` : '', flightNumber ? `Vol ${flightNumber}` : '', passengerCount ? `${passengerCount} passager(s)` : '', `${firstName} ${lastName}`, phone].filter(Boolean);
+    const paymentLabel = paymentMode === 'deposit_onboard'
+      ? `Acompte réservation · solde à bord ${balanceOnBoard}`
+      : 'Paiement total en ligne · remise 15%';
+
+    const descriptionParts = [
+      paymentLabel,
+      `${pickup} → ${dropoff}`,
+      date && time ? `${date} à ${time}` : date,
+      routeMinutes ? `${routeMinutes} min` : '',
+      distanceKm ? `${distanceKm} km` : '',
+      flightNumber ? `Vol ${flightNumber}` : '',
+      passengerCount ? `${passengerCount} passager(s)` : '',
+      `${firstName} ${lastName}`,
+      phone,
+    ].filter(Boolean);
 
     const session = await stripe.checkout.sessions.create({
       mode: 'payment',
       payment_method_types: ['card'],
       customer_email: customerEmail,
-      line_items: [{ quantity: 1, price_data: { currency: 'eur', unit_amount: total * 100, product_data: { name: vehicle, description: descriptionParts.join(' · ').slice(0, 900) } } }],
-      metadata: { service: 'bosphoras_transfer', locale, firstName, lastName, phone, email: customerEmail, pickup, dropoff, vehicle, date, time, flightNumber, passengerCount, routeMinutes, distanceKm, tollPrice: String(tollPrice), tip: String(tip), note, extras: extraItems.map((item) => `${item.label}:${item.amount}`).join('|') },
+      line_items: [{
+        quantity: 1,
+        price_data: {
+          currency,
+          unit_amount: stripeUnitAmount(total),
+          product_data: {
+            name: paymentMode === 'deposit_onboard' ? `${vehicle} · deposit` : vehicle,
+            description: descriptionParts.join(' · ').slice(0, 900),
+          },
+        },
+      }],
+      metadata: {
+        service: 'bosphoras_transfer',
+        locale,
+        currency,
+        paymentMode,
+        amountPaidToday: String(total),
+        balanceOnBoard: String(balanceOnBoard),
+        refundablePolicy: 'Fully refundable without conditions up to 24 hours before pickup',
+        firstName,
+        lastName,
+        phone,
+        email: customerEmail,
+        pickup,
+        dropoff,
+        vehicle,
+        date,
+        time,
+        flightNumber,
+        passengerCount,
+        routeMinutes,
+        distanceKm,
+        tollPrice: String(tollPrice),
+        tip: String(tip),
+        note,
+        extras: extraItems.map((item) => `${item.label}:${item.amount}`).join('|'),
+      },
       success_url: `${baseUrl}${localePaths[locale]}?payment=success&session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${baseUrl}${localePaths[locale]}?payment=cancelled`,
     });
