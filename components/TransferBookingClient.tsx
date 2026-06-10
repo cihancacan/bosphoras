@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { ArrowLeft, ArrowRight, Baby, CalendarDays, CheckCircle2, Clock, CreditCard, Flower2, Luggage, MapPin, Plane, ShieldCheck, Timer, Users, Wifi } from 'lucide-react';
+import { AddressAutocompleteInput } from './AddressAutocompleteInput';
 
 type TransferLocale = 'fr' | 'en' | 'ru' | 'ar' | 'zh' | 'de' | 'es' | 'it' | 'pt';
 type Mode = 'transfer' | 'hourly';
