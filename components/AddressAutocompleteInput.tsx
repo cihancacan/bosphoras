@@ -23,6 +23,36 @@ type Suggestion = {
   icon: string;
 };
 
+const AIRPORT_SUGGESTIONS: Suggestion[] = [
+  {
+    key: 'priority-istanbul-airport-ist',
+    label: 'Istanbul Airport (IST), Tayakadın, Arnavutköy, Istanbul, Türkiye',
+    title: 'Istanbul Airport (IST)',
+    subtitle: 'Tayakadın, Arnavutköy, Istanbul',
+    icon: '✈',
+  },
+  {
+    key: 'priority-sabiha-gokcen-airport-saw',
+    label: 'Sabiha Gökçen International Airport (SAW), Pendik, Istanbul, Türkiye',
+    title: 'Sabiha Gökçen International Airport (SAW)',
+    subtitle: 'Pendik, Istanbul',
+    icon: '✈',
+  },
+];
+
+function normalize(value: string) {
+  return value
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/ı/g, 'i')
+    .replace(/ğ/g, 'g')
+    .replace(/ü/g, 'u')
+    .replace(/ş/g, 's')
+    .replace(/ö/g, 'o')
+    .replace(/ç/g, 'c');
+}
+
 function cleanParts(parts: Array<string | undefined>) {
   return Array.from(
     new Set(
@@ -33,44 +63,103 @@ function cleanParts(parts: Array<string | undefined>) {
   );
 }
 
+function hasIsolatedAirportCode(value: string) {
+  return /(^|[^a-z0-9])(ist|saw)([^a-z0-9]|$)/i.test(value);
+}
+
 function getIcon(item: GeoapifyResult) {
-  const value = `${item.formatted || ''} ${item.address_line1 || ''} ${item.result_type || ''} ${item.category || ''}`.toLowerCase();
+  const title = normalize(item.address_line1 || '');
+  const value = normalize(
+    `${item.formatted || ''} ${item.address_line1 || ''} ${item.result_type || ''} ${item.category || ''}`,
+  );
 
-  if (
-    value.includes('airport') ||
-    value.includes('aéroport') ||
-    value.includes('havaliman') ||
-    value.includes('havalan') ||
-    value.includes('ist') ||
-    value.includes('saw')
-  ) {
-    return '✈';
-  }
+  const hotelKeywords = [
+    'hotel',
+    'otel',
+    'hôtel',
+    'palace',
+    'kempinski',
+    'hilton',
+    'marriott',
+    'radisson',
+    'hyatt',
+    'sheraton',
+    'ritz',
+    'four seasons',
+    'resort',
+    'suite',
+    'inn',
+    'guesthouse',
+    'guest house',
+  ];
 
-  if (
-    value.includes('hotel') ||
-    value.includes('hôtel') ||
-    value.includes('otel') ||
-    value.includes('resort') ||
-    value.includes('suite')
-  ) {
+  if (hotelKeywords.some((keyword) => value.includes(normalize(keyword)))) {
     return '🏨';
   }
 
-  if (
-    value.includes('restaurant') ||
-    value.includes('restoran') ||
-    value.includes('cafe') ||
-    value.includes('café') ||
-    value.includes('bar') ||
-    value.includes('food') ||
-    value.includes('dining') ||
-    value.includes('pub')
-  ) {
+  const restaurantKeywords = [
+    'restaurant',
+    'restoran',
+    'cafe',
+    'café',
+    'bar',
+    'food',
+    'dining',
+    'pub',
+    'bistro',
+    'grill',
+    'brasserie',
+    'steakhouse',
+    'lounge',
+  ];
+
+  if (restaurantKeywords.some((keyword) => value.includes(normalize(keyword)))) {
     return '🍽';
   }
 
+  const isAirport =
+    value.includes('airport') ||
+    value.includes('aeroport') ||
+    value.includes('havaliman') ||
+    value.includes('havalan') ||
+    value.includes('terminal') ||
+    hasIsolatedAirportCode(title) ||
+    hasIsolatedAirportCode(value);
+
+  if (isAirport) {
+    return '✈';
+  }
+
   return '📍';
+}
+
+function getPriorityAirportSuggestions(query: string) {
+  const normalizedQuery = normalize(query.trim());
+
+  if (!normalizedQuery || normalizedQuery.length < 2) {
+    return [];
+  }
+
+  const isAirportSearch =
+    normalizedQuery.includes('airport') ||
+    normalizedQuery.includes('aeroport') ||
+    normalizedQuery.includes('havaliman') ||
+    normalizedQuery === 'ist' ||
+    normalizedQuery === 'saw' ||
+    normalizedQuery.startsWith('ist ') ||
+    normalizedQuery.startsWith('saw ') ||
+    normalizedQuery.includes('sabiha') ||
+    normalizedQuery.includes('gokcen') ||
+    normalizedQuery.includes('gökçen');
+
+  if (!isAirportSearch) {
+    return [];
+  }
+
+  return AIRPORT_SUGGESTIONS.filter((suggestion) => {
+    const searchable = normalize(`${suggestion.title} ${suggestion.subtitle} ${suggestion.label}`);
+    return searchable.includes(normalizedQuery) || normalizedQuery.includes('airport') || normalizedQuery.includes('aeroport') || normalizedQuery.includes('havaliman');
+  });
 }
 
 function formatSuggestion(item: GeoapifyResult): Suggestion | null {
@@ -98,6 +187,19 @@ function formatSuggestion(item: GeoapifyResult): Suggestion | null {
   };
 }
 
+function mergeSuggestions(prioritySuggestions: Suggestion[], apiSuggestions: Suggestion[]) {
+  const seen = new Set<string>();
+
+  return [...prioritySuggestions, ...apiSuggestions]
+    .filter((suggestion) => {
+      const key = normalize(suggestion.label);
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    })
+    .slice(0, 6);
+}
+
 export function AddressAutocompleteInput({
   value,
   onChange,
@@ -120,9 +222,10 @@ export function AddressAutocompleteInput({
     const apiKey = process.env.NEXT_PUBLIC_GEOAPIFY_API_KEY;
     const query = value.trim();
     const cacheKey = query.toLowerCase();
+    const prioritySuggestions = getPriorityAirportSuggestions(query);
 
     if (!apiKey || query.length < 2) {
-      setSuggestions([]);
+      setSuggestions(prioritySuggestions);
       setIsLoading(false);
       return;
     }
@@ -154,28 +257,22 @@ export function AddressAutocompleteInput({
         );
 
         if (!response.ok) {
-          setSuggestions([]);
+          setSuggestions(prioritySuggestions);
           return;
         }
 
         const data = (await response.json()) as { results?: GeoapifyResult[] };
-        const seen = new Set<string>();
-        const nextSuggestions = (data.results || [])
+        const apiSuggestions = (data.results || [])
           .map(formatSuggestion)
-          .filter((suggestion): suggestion is Suggestion => Boolean(suggestion))
-          .filter((suggestion) => {
-            const key = suggestion.label.toLowerCase();
-            if (seen.has(key)) return false;
-            seen.add(key);
-            return true;
-          })
-          .slice(0, 6);
+          .filter((suggestion): suggestion is Suggestion => Boolean(suggestion));
+
+        const nextSuggestions = mergeSuggestions(prioritySuggestions, apiSuggestions);
 
         cacheRef.current[cacheKey] = nextSuggestions;
         setSuggestions(nextSuggestions);
       } catch {
         if (!controller.signal.aborted) {
-          setSuggestions([]);
+          setSuggestions(prioritySuggestions);
         }
       } finally {
         if (!controller.signal.aborted) {
@@ -209,6 +306,22 @@ export function AddressAutocompleteInput({
         aria-expanded={showPanel}
         aria-controls={resultsId}
       />
+
+      {value ? (
+        <button
+          type="button"
+          aria-label="Effacer l'adresse"
+          onMouseDown={(event) => event.preventDefault()}
+          onClick={() => {
+            onChange('');
+            setSuggestions([]);
+            setIsOpen(false);
+          }}
+          className="absolute right-3 top-1/2 z-20 flex h-6 w-6 -translate-y-1/2 items-center justify-center rounded-full bg-slate-100 text-xs font-black text-slate-500 transition hover:bg-slate-200 hover:text-slate-800"
+        >
+          ×
+        </button>
+      ) : null}
 
       {showPanel ? (
         <div
