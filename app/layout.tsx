@@ -53,28 +53,38 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="fr" suppressHydrationWarning>
       <body className="bg-[hsl(45,30%,96%)] font-sans antialiased text-[hsl(220,45%,12%)]">
         {children}
-        <Script id="bosphoras-transfer-back-lock" strategy="afterInteractive">
+        <Script id="bosphoras-transfer-back-lock" strategy="beforeInteractive">
           {`
             (function() {
-              var path = window.location.pathname.toLowerCase();
-              if (path.indexOf('transfer') === -1 && path.indexOf('transfert') === -1) return;
+              var transferPathPattern = /(transfer|transfert)/i;
+              if (!transferPathPattern.test(window.location.pathname)) return;
 
-              var lockedUrl = window.location.pathname + window.location.search + window.location.hash;
+              var lockedUrl = window.location.href;
               var allowExitKey = 'bosphorasTransferPrivateOfficeExit';
-              var lockKey = 'bosphorasTransferLocked';
+              var lockStateKey = 'bosphorasTransferLocked';
+              var lockDepth = 10;
+
+              function isTransferPage() {
+                return transferPathPattern.test(window.location.pathname);
+              }
 
               function lockHistory() {
                 try {
-                  var state = Object.assign({}, window.history.state || {}, { bosphorasTransferLocked: true });
-                  window.history.replaceState(state, '', lockedUrl);
-                  window.history.pushState({ bosphorasTransferLocked: true, step: 1 }, '', lockedUrl);
-                  window.history.pushState({ bosphorasTransferLocked: true, step: 2 }, '', lockedUrl);
+                  var currentState = Object.assign({}, window.history.state || {});
+                  currentState[lockStateKey] = true;
+                  window.history.replaceState(currentState, '', lockedUrl);
+
+                  for (var index = 0; index < lockDepth; index += 1) {
+                    window.history.pushState(
+                      { bosphorasTransferLocked: true, index: index, createdAt: Date.now() },
+                      '',
+                      lockedUrl,
+                    );
+                  }
                 } catch (error) {}
               }
 
-              lockHistory();
-
-              document.addEventListener('click', function(event) {
+              function allowPrivateOfficeExit(event) {
                 var element = event.target && event.target.closest ? event.target.closest('a,button') : null;
                 if (!element) return;
 
@@ -91,23 +101,35 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 ) {
                   window.sessionStorage.setItem(allowExitKey, '1');
                 }
-              }, true);
+              }
 
-              window.addEventListener('popstate', function() {
+              function keepOnTransferPage() {
                 if (window.sessionStorage.getItem(allowExitKey) === '1') {
                   window.sessionStorage.removeItem(allowExitKey);
                   return;
                 }
 
-                try {
-                  window.history.pushState({ bosphorasTransferLocked: true, step: Date.now() }, '', lockedUrl);
-                  window.history.pushState({ bosphorasTransferLocked: true, step: Date.now() + 1 }, '', lockedUrl);
-                } catch (error) {}
+                if (!isTransferPage()) {
+                  window.location.replace(lockedUrl);
+                  return;
+                }
+
+                lockHistory();
+              }
+
+              lockHistory();
+              window.setTimeout(lockHistory, 0);
+              window.setTimeout(lockHistory, 250);
+              window.setTimeout(lockHistory, 750);
+
+              document.addEventListener('click', allowPrivateOfficeExit, true);
+
+              window.addEventListener('popstate', function() {
+                window.setTimeout(keepOnTransferPage, 0);
               });
 
               window.addEventListener('pageshow', function() {
-                var currentPath = window.location.pathname.toLowerCase();
-                if (currentPath.indexOf('transfer') !== -1 || currentPath.indexOf('transfert') !== -1) {
+                if (isTransferPage()) {
                   lockHistory();
                 }
               });
