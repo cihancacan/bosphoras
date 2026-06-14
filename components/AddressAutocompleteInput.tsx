@@ -40,17 +40,37 @@ function getIcon(item: GeoapifyResult) {
     value.includes('airport') ||
     value.includes('aéroport') ||
     value.includes('havaliman') ||
+    value.includes('havalan') ||
     value.includes('ist') ||
     value.includes('saw')
   ) {
     return '✈';
   }
 
-  if (value.includes('hotel') || value.includes('hôtel')) {
-    return '⌂';
+  if (
+    value.includes('hotel') ||
+    value.includes('hôtel') ||
+    value.includes('otel') ||
+    value.includes('resort') ||
+    value.includes('suite')
+  ) {
+    return '🏨';
   }
 
-  return '⌖';
+  if (
+    value.includes('restaurant') ||
+    value.includes('restoran') ||
+    value.includes('cafe') ||
+    value.includes('café') ||
+    value.includes('bar') ||
+    value.includes('food') ||
+    value.includes('dining') ||
+    value.includes('pub')
+  ) {
+    return '🍽';
+  }
+
+  return '📍';
 }
 
 function formatSuggestion(item: GeoapifyResult): Suggestion | null {
