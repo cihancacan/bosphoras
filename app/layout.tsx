@@ -59,13 +59,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               var path = window.location.pathname.toLowerCase();
               if (path.indexOf('transfer') === -1 && path.indexOf('transfert') === -1) return;
 
-              var lockedUrl = window.location.href;
+              var lockedUrl = window.location.pathname + window.location.search + window.location.hash;
               var allowExitKey = 'bosphorasTransferPrivateOfficeExit';
+              var lockKey = 'bosphorasTransferLocked';
 
-              try {
-                window.history.replaceState(Object.assign({}, window.history.state || {}, { bosphorasTransferLocked: true }), '', lockedUrl);
-                window.history.pushState({ bosphorasTransferLocked: true }, '', lockedUrl);
-              } catch (error) {}
+              function lockHistory() {
+                try {
+                  var state = Object.assign({}, window.history.state || {}, { bosphorasTransferLocked: true });
+                  window.history.replaceState(state, '', lockedUrl);
+                  window.history.pushState({ bosphorasTransferLocked: true, step: 1 }, '', lockedUrl);
+                  window.history.pushState({ bosphorasTransferLocked: true, step: 2 }, '', lockedUrl);
+                } catch (error) {}
+              }
+
+              lockHistory();
 
               document.addEventListener('click', function(event) {
                 var element = event.target && event.target.closest ? event.target.closest('a,button') : null;
@@ -92,7 +99,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   return;
                 }
 
-                window.history.pushState({ bosphorasTransferLocked: true }, '', lockedUrl);
+                try {
+                  window.history.pushState({ bosphorasTransferLocked: true, step: Date.now() }, '', lockedUrl);
+                  window.history.pushState({ bosphorasTransferLocked: true, step: Date.now() + 1 }, '', lockedUrl);
+                } catch (error) {}
+              });
+
+              window.addEventListener('pageshow', function() {
+                var currentPath = window.location.pathname.toLowerCase();
+                if (currentPath.indexOf('transfer') !== -1 || currentPath.indexOf('transfert') !== -1) {
+                  lockHistory();
+                }
               });
             })();
           `}
