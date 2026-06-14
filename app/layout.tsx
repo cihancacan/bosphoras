@@ -53,6 +53,50 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="fr" suppressHydrationWarning>
       <body className="bg-[hsl(45,30%,96%)] font-sans antialiased text-[hsl(220,45%,12%)]">
         {children}
+        <Script id="bosphoras-transfer-back-lock" strategy="afterInteractive">
+          {`
+            (function() {
+              var path = window.location.pathname.toLowerCase();
+              if (path.indexOf('transfer') === -1 && path.indexOf('transfert') === -1) return;
+
+              var lockedUrl = window.location.href;
+              var allowExitKey = 'bosphorasTransferPrivateOfficeExit';
+
+              try {
+                window.history.replaceState(Object.assign({}, window.history.state || {}, { bosphorasTransferLocked: true }), '', lockedUrl);
+                window.history.pushState({ bosphorasTransferLocked: true }, '', lockedUrl);
+              } catch (error) {}
+
+              document.addEventListener('click', function(event) {
+                var element = event.target && event.target.closest ? event.target.closest('a,button') : null;
+                if (!element) return;
+
+                var text = (element.textContent || '').toLowerCase();
+                var href = element.getAttribute ? (element.getAttribute('href') || '').toLowerCase() : '';
+                var value = text + ' ' + href;
+
+                if (
+                  value.indexOf('private office') !== -1 ||
+                  value.indexOf('private-office') !== -1 ||
+                  value.indexOf('bureau privé') !== -1 ||
+                  value.indexOf('bureau prive') !== -1 ||
+                  value.indexOf('bureau-prive') !== -1
+                ) {
+                  window.sessionStorage.setItem(allowExitKey, '1');
+                }
+              }, true);
+
+              window.addEventListener('popstate', function() {
+                if (window.sessionStorage.getItem(allowExitKey) === '1') {
+                  window.sessionStorage.removeItem(allowExitKey);
+                  return;
+                }
+
+                window.history.pushState({ bosphorasTransferLocked: true }, '', lockedUrl);
+              });
+            })();
+          `}
+        </Script>
         <Script id="bosphoras-pricing-sync" strategy="afterInteractive">
           {`
             (function() {
