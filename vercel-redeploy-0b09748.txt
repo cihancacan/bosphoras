@@ -1,0 +1,1 @@
+Force Vercel redeploy after rollback to 0b097484688e3befc34e0dda20d0e6d93031649d.
