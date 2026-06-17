@@ -42,7 +42,7 @@ export const pricing: Record<PricingKey, PricingItem> = {
   monthlyRetainer: {
     key: 'monthlyRetainer',
     year: pricingYear,
-    amount: '2,500 USD',
+    amount: '3,500 USD',
     period: 'monthly',
     labels: {
       fr: 'Retainer mensuel 2026',
