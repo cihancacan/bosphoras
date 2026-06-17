@@ -7,6 +7,7 @@ import { HighPotentialGuideRenderer } from '@/components/HighPotentialGuideRende
 import { ProgrammaticPageRenderer } from '@/components/ProgrammaticPageRenderer';
 import { PrivateAssessmentLocalizedPage } from '@/components/PrivateAssessmentLocalizedPage';
 import { MembershipApplicationLocalizedPage } from '@/components/MembershipApplicationLocalizedPage';
+import { PrivateAccessApplicationNotice } from '@/components/PrivateAccessApplicationNotice';
 import { getPageBySlug, allPages } from '@/data/pages';
 import { getHighPotentialGuideBySlug, highPotentialGuides } from '@/data/highPotentialPages';
 import { getProgrammaticPageBySlug, getProgrammaticPagesForLocale } from '@/data/programmatic/pages';
@@ -114,7 +115,12 @@ export default function LocaleCatchAllPage({ params }: PageProps) {
   }
 
   if (page.id === 'membership-application') {
-    return <MembershipApplicationLocalizedPage locale={params.locale} />;
+    return (
+      <>
+        <MembershipApplicationLocalizedPage locale={params.locale} />
+        <PrivateAccessApplicationNotice locale={params.locale} />
+      </>
+    );
   }
 
   return <MainPageRenderer page={page} />;
