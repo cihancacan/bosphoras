@@ -1,11 +1,11 @@
 import { MembershipApplicationLocalizedPage } from '@/components/MembershipApplicationLocalizedPage';
+import { PrivateAccessApplicationNotice } from '@/components/PrivateAccessApplicationNotice';
 
 export const metadata = {
-  title: 'Demande d’adhésion | Bosphoras Private Access',
-  description:
-    'Demande d’adhésion confidentielle à Bosphoras Private Access : accès privé, coordination prioritaire, conciergerie de luxe et accompagnement en Turquie.',
+  title: 'Demande membre | Bosphoras Private Access',
+  description: 'Demande membre Bosphoras Private Access.',
 };
 
 export default function DemandeMembrePage() {
-  return <MembershipApplicationLocalizedPage locale="fr" />;
+  return <><MembershipApplicationLocalizedPage locale="fr" /><PrivateAccessApplicationNotice locale="fr" /></>;
 }
