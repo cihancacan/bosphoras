@@ -1,103 +1,104 @@
 import type { Locale } from '@/lib/i18n';
 import type { MainPageContent } from './types';
 
-const page: MainPageContent = {
-  id: 'private-club',
-  locale: 'fr',
-  slug: '/cercle-prive',
-  title: 'Bosphoras Private Access 2026 : cercle privé premium en Turquie | Bosphoras',
-  h1: 'Bosphoras Private Access : votre cercle privé premium en Turquie',
-  metaDescription:
-    'Bosphoras Private Access 2026 : admission annuelle 15 000 USD, retainer mensuel 3 500 USD, accès permanent au bureau Bosphoras, The Peninsula Istanbul, conciergerie premium et réseau privé en Turquie.',
-  shortIntro:
-    'La Turquie peut devenir simple, fluide et élégante lorsque les bons interlocuteurs sont déjà en place. Bosphoras Private Access donne aux membres un accès permanent à un bureau privé capable d’organiser leur vie, leurs rendez-vous, leurs déplacements, leurs séjours et leurs projets premium en Turquie avec méthode, calme et continuité.',
-  sections: [
-    {
-      heading: 'Une seule adhésion. Un seul niveau de service.',
-      body:
-        'Private Access n’est pas une carte de réduction. C’est une relation membre avec Bosphoras. Le membre dispose d’un point d’entrée privilégié pour accéder à la Turquie premium : les bonnes adresses, les bons partenaires, les bons lieux et une coordination qui évite les pertes de temps. Le niveau de service reste le même pour chaque membre ; ce sont les besoins, les projets et l’intensité de la demande qui changent.',
-      bullets: [
-        'Admission annuelle 2026 : 15 000 USD',
-        'Retainer mensuel 2026 : 3 500 USD',
-        'Cycle de 12 mois à compter de la validation du profil',
-        'Accès sur parrainage, recommandation ou validation du profil',
-        'Cadre membre Bosphoras Premium avec The Peninsula Istanbul comme adresse d’ancrage',
-      ],
-    },
-    {
-      heading: 'Admission annuelle 2026 : 15 000 USD',
-      body:
-        'L’admission annuelle marque l’entrée dans le cercle. Elle ouvre le cycle membre, valide le profil et donne accès au cadre Private Access : un environnement plus structuré pour vivre, investir, recevoir, travailler ou séjourner en Turquie sans repartir de zéro à chaque demande.',
-      bullets: [
-        'Entrée dans le cercle membre Bosphoras Private Access',
-        'Ouverture du cycle annuel et cadrage du profil membre',
-        'Accès à une logique de réseau, de sélection et de coordination premium',
-        'Cadre réservé aux profils compatibles avec le niveau Bosphoras Premium',
-      ],
-    },
-    {
-      heading: 'Retainer mensuel 2026 : 3 500 USD',
-      body:
-        'Le retainer mensuel donne accès permanent au bureau Bosphoras. Le membre peut solliciter l’équipe pour organiser, filtrer et coordonner ses demandes : chauffeur, hôtel, restaurant, rendez-vous privé, wellness, immobilier, bureau, villa, yacht, événement ou besoin familial. L’objectif est simple : faire gagner du temps, réduire l’incertitude et transformer la Turquie en territoire maîtrisé.',
-      bullets: [
-        'Accès permanent au bureau Bosphoras',
-        'Traitement prioritaire des demandes membres',
-        'Coordination continue avec des interlocuteurs sélectionnés',
-        'Accès premium coordonné à The Peninsula Istanbul inclus dans la mensualité selon le cadre validé',
-      ],
-    },
-    {
-      heading: 'Adresse membre à Istanbul : The Peninsula Istanbul',
-      body:
-        'The Peninsula Istanbul devient l’un des points d’ancrage Bosphoras Premium. Pour un membre, ce n’est pas seulement un hôtel : c’est une adresse de référence à Istanbul pour le wellness, le fitness, l’hospitality, les rendez-vous privés et la coordination élégante de ses journées. L’accès premium coordonné est inclus dans la mensualité membre selon le cadre d’accès validé, les disponibilités et les conditions applicables.',
-      bullets: [
-        'Wellness, fitness et cadre premium au bord du Bosphore',
-        'Hospitality, rendez-vous privés et moments de représentation élégants',
-        'Point d’ancrage Istanbul pour les membres Bosphoras Premium',
-        'Accès coordonné inclus dans la mensualité membre selon le cadre validé',
-      ],
-    },
-    {
-      heading: 'Ce que Bosphoras peut activer pour un membre',
-      body:
-        'Le membre ne contacte pas Bosphoras pour obtenir une simple information. Il sollicite un bureau privé capable d’organiser ce qui compte : arrivée, séjour, mobilité, business, famille, santé, immobilier, lifestyle et expériences. L’intérêt du cercle est d’avoir une équipe qui connaît le profil, les standards attendus et la manière de faire avancer les demandes sans bruit inutile.',
-      bullets: [
-        'Installation ou présence longue durée à Istanbul, Bodrum ou Antalya',
-        'Chauffeur privé, transferts VIP, hôtels, palaces, restaurants et villas',
-        'Immobilier premium, relocation, bureaux privés et accompagnement professionnel',
-        'Santé, assurance, wellness, check-up, médecins et cliniques privées',
-        'Yachts, événements, shopping luxe, montres, bijoux, sacs rares et demandes spéciales',
-      ],
-    },
-    {
-      heading: 'Demande classique : pour les besoins ponctuels',
-      body:
-        'Les clients qui ne souhaitent pas rejoindre le cercle peuvent formuler une demande classique via Bosphoras Private Desk. Cette option convient à une mission ciblée ou limitée. Elle ne donne pas accès au statut membre, au traitement prioritaire Private Access ni à la continuité d’un bureau privé disponible tout au long de l’année.',
-      bullets: [
-        'Mission ponctuelle ou accompagnement ciblé',
-        'Sans statut membre Private Access',
-        'Sans accès permanent au bureau Bosphoras',
-        'Possibilité d’évoluer vers une adhésion après validation du profil',
-      ],
-    },
-  ],
-  faqs: [
-    { question: 'Combien coûte Bosphoras Private Access en 2026 ?', answer: 'L’admission annuelle 2026 est de 15 000 USD. Le retainer mensuel 2026 est de 3 500 USD. Le cycle membre dure 12 mois à compter de la validation du profil.' },
-    { question: 'The Peninsula Istanbul est-il inclus ?', answer: 'Oui. L’accès premium coordonné à The Peninsula Istanbul est inclus dans la mensualité membre selon le cadre d’accès validé, les disponibilités et les conditions applicables.' },
-    { question: 'Private Access est-il une carte de réduction ?', answer: 'Non. C’est une relation membre avec Bosphoras, donnant accès à un bureau privé, à un traitement prioritaire et à une coordination premium en Turquie.' },
-    { question: 'Peut-on faire une demande sans adhésion ?', answer: 'Oui. La demande classique reste possible via Bosphoras Private Desk pour une mission ponctuelle ou limitée, sans statut membre Private Access.' },
-    { question: 'L’adhésion est-elle automatique ?', answer: 'Non. L’accès se fait sur parrainage, recommandation ou validation du profil. Bosphoras peut refuser une candidature si le profil ou la demande ne correspond pas au cadre du cercle.' },
-  ],
-  cta: { label: 'Demander une adhésion', href: '/adhesion/demande-membre', secondaryLabel: 'Demande classique', secondaryHref: '/diagnostic-prive' },
-  jsonLdType: 'Service',
-  internalLinks: [
-    { pageId: 'luxury-concierge', label: 'Conciergerie de luxe' },
-    { pageId: 'transport', label: 'Transport VIP' },
-    { pageId: 'istanbul', label: 'Istanbul premium' },
-    { pageId: 'private-assessment', label: 'Demande classique' },
-  ],
+const pages: Record<Locale, MainPageContent> = {
+  fr: {
+    id: 'private-club',
+    locale: 'fr',
+    slug: '/cercle-prive',
+    title: 'Bosphoras Private Access 2026 : bureau privé premium en Turquie | Bosphoras',
+    h1: 'Bosphoras Private Access : votre bureau privé en Turquie',
+    metaDescription:
+      'Bosphoras Private Access 2026 : admission annuelle 15 000 USD, retainer mensuel 3 500 USD, secrétariat privé, accès Peninsula Istanbul, conciergerie, organisation et cercle d’affaires en Turquie.',
+    shortIntro:
+      'Private Access n’est pas un abonnement de conciergerie. C’est une relation permanente avec un bureau privé en Turquie : secrétariat de coordination, accès premium à Istanbul, conciergerie, organisation locale et cercle d’affaires discret pour dirigeants, investisseurs et familles internationales.',
+    sections: [
+      { heading: 'Une seule adhésion. Un seul niveau de service.', body: 'Pour certains clients, la Turquie ne se gère pas demande par demande. Elle se gère avec un accès permanent à un bureau privé capable de recevoir, filtrer, organiser et suivre les sujets importants avec discrétion. Le membre ne cherche pas qui appeler : il s’adresse à Bosphoras, et Bosphoras organise.', bullets: ['Admission annuelle 2026 : 15 000 USD', 'Retainer mensuel 2026 : 3 500 USD', 'Cycle de 12 mois à compter de la validation du profil', 'Accès sur parrainage, recommandation ou validation du profil', 'Un seul niveau de service pour tous les membres validés'] },
+      { heading: 'Un secrétariat privé pour vos affaires en Turquie', body: 'Le membre dispose d’un secrétariat privé Bosphoras pour organiser ses rendez-vous, suivre son planning, confirmer ses réservations, relancer les interlocuteurs, coordonner les prestataires et centraliser ses demandes liées à la Turquie. L’objectif est simple : moins d’appels, moins d’attente, moins d’erreurs, plus de continuité.', bullets: ['Rendez-vous, planning, confirmations et relances', 'Coordination de prestataires et suivi des dossiers', 'Réservations, accès, événements et demandes privées', 'Point d’entrée unique pour les sujets Turquie', 'Organisation discrète de vos priorités professionnelles, familiales et personnelles'] },
+      { heading: 'Retainer mensuel 2026 : 3 500 USD', body: 'Le retainer mensuel couvre le service Bosphoras : secrétariat privé, traitement prioritaire, coordination des demandes, conciergerie, accès membres, suivi et organisation locale. Les frais extérieurs restent à la charge du membre lorsqu’ils existent : honoraires de tiers, frais officiels, hôtels, chauffeurs, achats, réservations ou prestations externes.', bullets: ['Service Bosphoras inclus dans le retainer membre', 'Frais extérieurs et honoraires de tiers facturés séparément', 'Traitement prioritaire des demandes membres', 'Coordination continue avec les bons interlocuteurs', 'Relation mensuelle avec un bureau privé, pas simple service à la demande'] },
+      { heading: 'Adresse membre à Istanbul : The Peninsula Istanbul', body: 'The Peninsula Istanbul devient l’un des points d’ancrage Bosphoras Premium. Pour un membre, ce n’est pas seulement un hôtel : c’est une adresse de référence à Istanbul pour travailler, recevoir, rencontrer ou reprendre le contrôle de son temps dans un cadre discret.', bullets: ['Salle de sport, spa, piscine intérieure et piscine extérieure', 'Vue sur la Corne d’Or et environnement premium à Istanbul', 'Rendez-vous privés, hospitality et moments de représentation élégants', 'Soirées membres et accès prioritaire selon disponibilité et cadre validé', 'Point d’ancrage Bosphoras Premium pour les membres Private Access'] },
+      { heading: 'La valeur d’une organisation déjà en place', body: 'Recruter une assistante privée, accéder à un environnement premium, solliciter une conciergerie fiable et construire un réseau de confiance en Turquie représente séparément un coût et une charge de gestion importants. Private Access réunit ces fonctions dans une seule relation : un bureau privé, un secrétariat de coordination, un accès premium et un cercle discret.', bullets: ['Secrétariat privé : rendez-vous, planning, confirmations, relances', 'Accès premium : Peninsula, fitness, spa, piscines, Corne d’Or', 'Conciergerie : réservations, transport, événements, demandes privées', 'Cercle : introductions, rencontres, soirées membres', 'Gain de temps : moins d’appels, moins d’erreurs, moins d’attente'] },
+      { heading: 'Ce que Bosphoras peut activer pour un membre', body: 'Le membre ne contacte pas Bosphoras pour obtenir une simple information. Il sollicite un bureau privé capable d’organiser ce qui compte : arrivée, séjour, mobilité, business, famille, santé, immobilier, lifestyle et expériences. Le membre demande. Bosphoras organise.', bullets: ['Installation ou présence longue durée à Istanbul, Bodrum ou Antalya', 'Chauffeur privé, transferts VIP, hôtels, palaces, restaurants et villas', 'Immobilier premium, relocation, bureaux privés et accompagnement professionnel', 'Santé, assurance, wellness, check-up, médecins et cliniques privées', 'Yachts, événements, shopping luxe, montres, bijoux, sacs rares et demandes spéciales'] },
+      { heading: 'Demande classique : pour les besoins ponctuels', body: 'Les clients qui ne souhaitent pas rejoindre le cercle peuvent formuler une demande classique via Bosphoras Private Desk. Cette option convient à une mission ciblée ou limitée. Elle ne donne pas accès au statut membre, au traitement prioritaire Private Access ni à la continuité d’un bureau privé disponible tout au long de l’année.', bullets: ['Mission ponctuelle ou accompagnement ciblé', 'Sans statut membre Private Access', 'Sans accès permanent au bureau Bosphoras', 'Possibilité d’évoluer vers une adhésion après validation du profil'] },
+    ],
+    faqs: [
+      { question: 'Combien coûte Bosphoras Private Access en 2026 ?', answer: 'L’admission annuelle 2026 est de 15 000 USD. Le retainer mensuel 2026 est de 3 500 USD. Le cycle membre dure 12 mois à compter de la validation du profil.' },
+      { question: 'Que couvre le retainer mensuel ?', answer: 'Le retainer couvre le service Bosphoras : secrétariat privé, organisation, coordination, traitement prioritaire, conciergerie de coordination, accès membres et suivi des demandes en Turquie.' },
+      { question: 'Que reste-t-il à la charge du membre ?', answer: 'Les frais extérieurs restent à la charge du membre : frais officiels, honoraires de professionnels, hôtels, chauffeurs, achats, réservations, billets, assurances et prestations de tiers.' },
+      { question: 'The Peninsula Istanbul est-il inclus ?', answer: 'Oui, l’accès premium coordonné à The Peninsula Istanbul est inclus selon le cadre membre validé, les disponibilités et les conditions applicables.' },
+      { question: 'Private Access est-il une carte de réduction ?', answer: 'Non. C’est une relation permanente avec un bureau privé en Turquie : le membre demande, Bosphoras organise.' },
+    ],
+    cta: { label: 'Demander une adhésion', href: '/adhesion/demande-membre', secondaryLabel: 'Demande classique', secondaryHref: '/diagnostic-prive' },
+    jsonLdType: 'Service',
+    internalLinks: [
+      { pageId: 'luxury-concierge', label: 'Conciergerie de luxe' },
+      { pageId: 'transport', label: 'Transport VIP' },
+      { pageId: 'istanbul', label: 'Istanbul premium' },
+      { pageId: 'private-assessment', label: 'Demande classique' },
+    ],
+  },
+  en: {
+    id: 'private-club', locale: 'en', slug: '/private-access-club', title: 'Bosphoras Private Access 2026: private office in Turkey | Bosphoras', h1: 'Bosphoras Private Access: your private office in Turkey', metaDescription: 'Bosphoras Private Access 2026: annual admission 15,000 USD, monthly retainer 3,500 USD, private secretariat, Peninsula Istanbul access, concierge, coordination and business circle in Turkey.', shortIntro: 'Private Access is not a concierge subscription. It is an ongoing relationship with a private office in Turkey: coordination secretariat, premium access in Istanbul, concierge, local organisation and a discreet business circle for principals, investors and international families.',
+    sections: [
+      { heading: 'One membership. One level of service.', body: 'For certain clients, Turkey cannot be managed request by request. It is managed through permanent access to a private office able to receive, filter, organise and follow important matters with discretion. The member does not search for who to call: the member asks Bosphoras, and Bosphoras organises.', bullets: ['Annual admission 2026: 15,000 USD', 'Monthly retainer 2026: 3,500 USD', '12-month cycle from profile validation', 'Access by referral, recommendation or profile validation', 'One service level for all validated members'] },
+      { heading: 'A private secretariat for your affairs in Turkey', body: 'The member has a Bosphoras private secretariat to organise meetings, follow schedules, confirm bookings, chase contacts, coordinate providers and centralise Turkey-related requests. The objective is simple: fewer calls, less waiting, fewer mistakes, more continuity.', bullets: ['Meetings, schedules, confirmations and follow-ups', 'Provider coordination and file tracking', 'Bookings, access, events and private requests', 'One point of entry for Turkey-related matters', 'Discreet organisation of professional, family and personal priorities'] },
+      { heading: 'Monthly retainer 2026: 3,500 USD', body: 'The monthly retainer covers the Bosphoras service: private secretariat, priority handling, request coordination, concierge, member access, follow-up and local organisation. External costs remain payable by the member when they exist: third-party fees, official fees, hotels, chauffeurs, purchases, reservations or external services.', bullets: ['Bosphoras service included in the member retainer', 'External costs and third-party fees billed separately', 'Priority handling of member requests', 'Continuous coordination with the right contacts', 'A monthly relationship with a private office, not a simple on-demand service'] },
+      { heading: 'Member address in Istanbul: The Peninsula Istanbul', body: 'The Peninsula Istanbul becomes one of the Bosphoras Premium anchor points. For a member, it is not only a hotel: it is a reference address in Istanbul to work, host, meet or regain control of time in a discreet setting.', bullets: ['Fitness, spa, indoor pool and outdoor pool', 'Golden Horn views and premium Istanbul environment', 'Private meetings, hospitality and elegant representation moments', 'Member evenings and priority access subject to availability and validated access framework', 'Bosphoras Premium anchor point for Private Access members'] },
+      { heading: 'The value of an organisation already in place', body: 'Hiring a private assistant, accessing a premium environment, using a reliable concierge and building a trusted network in Turkey each carries a cost and management burden. Private Access brings these functions into one relationship: a private office, a coordination secretariat, premium access and a discreet circle.', bullets: ['Private secretariat: meetings, schedules, confirmations, follow-ups', 'Premium access: Peninsula, fitness, spa, pools, Golden Horn', 'Concierge: reservations, transport, events, private requests', 'Circle: introductions, meetings, member evenings', 'Time saved: fewer calls, fewer mistakes, less waiting'] },
+      { heading: 'What Bosphoras can activate for a member', body: 'A member does not contact Bosphoras for a simple piece of information. The member uses a private office able to organise what matters: arrival, stay, mobility, business, family, healthcare, property, lifestyle and experiences. The member asks. Bosphoras organises.', bullets: ['Long-term presence or installation in Istanbul, Bodrum or Antalya', 'Private chauffeur, VIP transfers, hotels, palaces, restaurants and villas', 'Premium property, relocation, private offices and professional support', 'Healthcare, insurance, wellness, check-ups, doctors and private clinics', 'Yachts, events, luxury shopping, watches, jewellery, rare bags and special requests'] },
+      { heading: 'Classic request: for occasional needs', body: 'Clients who do not wish to join the circle may submit a classic request through Bosphoras Private Desk. This option is suitable for a targeted or limited mission. It does not include member status, Private Access priority handling or the continuity of a private office available throughout the year.', bullets: ['One-off mission or targeted support', 'No Private Access member status', 'No permanent access to the Bosphoras office', 'Possibility to move to membership after profile validation'] },
+    ],
+    faqs: [
+      { question: 'How much does Bosphoras Private Access cost in 2026?', answer: 'Annual admission 2026 is 15,000 USD. The monthly retainer 2026 is 3,500 USD. The member cycle lasts 12 months from profile validation.' },
+      { question: 'What does the monthly retainer cover?', answer: 'It covers the Bosphoras service: private secretariat, organisation, coordination, priority handling, coordination concierge, member access and follow-up of Turkey-related requests.' },
+      { question: 'What remains payable by the member?', answer: 'External costs remain payable by the member: official fees, professional fees, hotels, chauffeurs, purchases, reservations, tickets, insurance and third-party services.' },
+      { question: 'Is The Peninsula Istanbul included?', answer: 'Yes, coordinated premium access to The Peninsula Istanbul is included according to the validated member framework, availability and applicable conditions.' },
+      { question: 'Is Private Access a discount card?', answer: 'No. It is an ongoing relationship with a private office in Turkey: the member asks, Bosphoras organises.' },
+    ], cta: { label: 'Request membership', href: '/en/membership/application', secondaryLabel: 'Classic request', secondaryHref: '/en/private-assessment' }, jsonLdType: 'Service', internalLinks: [{ pageId: 'luxury-concierge', label: 'Luxury concierge' }, { pageId: 'transport', label: 'VIP transport' }, { pageId: 'istanbul', label: 'Premium Istanbul' }, { pageId: 'private-assessment', label: 'Classic request' }]
+  },
+  ru: {
+    id: 'private-club', locale: 'ru', slug: '/chastnyy-klub', title: 'Bosphoras Private Access 2026: частный офис в Турции | Bosphoras', h1: 'Bosphoras Private Access: ваш частный офис в Турции', metaDescription: 'Bosphoras Private Access 2026: ежегодное вступление 15 000 USD, ежемесячный retainer 3 500 USD, частный секретариат, доступ Peninsula Istanbul, concierge, организация и деловой круг в Турции.', shortIntro: 'Private Access — это не подписка на concierge. Это постоянная связь с частным офисом в Турции: секретариат координации, премиальный доступ в Istanbul, concierge, локальная организация и дискретный деловой круг для руководителей, инвесторов и международных семей.',
+    sections: [
+      { heading: 'Одно членство. Один уровень сервиса.', body: 'Для некоторых клиентов Турция не управляется отдельными запросами. Она управляется через постоянный доступ к частному офису, который принимает, фильтрует, организует и сопровождает важные вопросы конфиденциально. Участник не ищет, кому звонить: он обращается в Bosphoras, и Bosphoras организует.', bullets: ['Ежегодное вступление 2026: 15 000 USD', 'Ежемесячный retainer 2026: 3 500 USD', 'Цикл 12 месяцев с момента валидации профиля', 'Доступ по рекомендации, представлению или валидации профиля', 'Один уровень сервиса для всех подтверждённых участников'] },
+      { heading: 'Частный секретариат для ваших дел в Турции', body: 'Участник получает частный секретариат Bosphoras для организации встреч, ведения графика, подтверждения бронирований, напоминаний, координации поставщиков и централизации запросов, связанных с Турцией. Цель проста: меньше звонков, меньше ожидания, меньше ошибок, больше непрерывности.', bullets: ['Встречи, график, подтверждения и follow-up', 'Координация поставщиков и сопровождение досье', 'Бронирования, доступы, события и частные запросы', 'Единая точка входа для вопросов по Турции', 'Дискретная организация деловых, семейных и личных приоритетов'] },
+      { heading: 'Ежемесячный retainer 2026: 3 500 USD', body: 'Ежемесячный retainer покрывает сервис Bosphoras: частный секретариат, приоритетную обработку, координацию запросов, concierge, доступ участника, follow-up и локальную организацию. Внешние расходы оплачиваются участником отдельно: гонорары третьих сторон, официальные сборы, отели, водители, покупки, бронирования или внешние услуги.', bullets: ['Сервис Bosphoras включён в retainer участника', 'Внешние расходы и гонорары третьих сторон оплачиваются отдельно', 'Приоритетная обработка запросов участника', 'Постоянная координация с нужными контактами', 'Ежемесячная связь с частным офисом, а не простой сервис по запросу'] },
+      { heading: 'Адрес участника в Istanbul: The Peninsula Istanbul', body: 'The Peninsula Istanbul становится одной из точек опоры Bosphoras Premium. Для участника это не просто отель: это адрес в Istanbul для работы, встреч, приёма гостей или восстановления контроля над временем в дискретной среде.', bullets: ['Фитнес, spa, крытый бассейн и открытый бассейн', 'Вид на Golden Horn и премиальная среда Istanbul', 'Частные встречи, hospitality и элегантные моменты представительства', 'Вечера участников и приоритетный доступ в рамках доступности и утверждённого доступа', 'Точка опоры Bosphoras Premium для участников Private Access'] },
+      { heading: 'Ценность уже созданной организации', body: 'Нанять частного ассистента, получить доступ к премиальной среде, пользоваться надежной concierge-командой и построить доверенную сеть в Турции — это отдельные расходы и управленческая нагрузка. Private Access объединяет эти функции в одной связи: частный офис, секретариат координации, премиальный доступ и дискретный круг.', bullets: ['Частный секретариат: встречи, график, подтверждения, follow-up', 'Премиальный доступ: Peninsula, fitness, spa, бассейны, Golden Horn', 'Concierge: бронирования, транспорт, события, частные запросы', 'Круг: знакомства, встречи, вечера участников', 'Экономия времени: меньше звонков, меньше ошибок, меньше ожидания'] },
+      { heading: 'Что Bosphoras может активировать для участника', body: 'Участник обращается в Bosphoras не за простой информацией. Он использует частный офис, способный организовать важное: приезд, пребывание, мобильность, business, семью, здоровье, недвижимость, lifestyle и experiences. Участник просит. Bosphoras организует.', bullets: ['Длительное присутствие или установка в Istanbul, Bodrum или Antalya', 'Частный водитель, VIP-трансферы, отели, palaces, рестораны и виллы', 'Премиальная недвижимость, relocation, частные офисы и профессиональное сопровождение', 'Здоровье, страхование, wellness, check-up, врачи и частные клиники', 'Yachts, events, luxury shopping, часы, украшения, редкие сумки и специальные запросы'] },
+      { heading: 'Классический запрос: для разовых задач', body: 'Клиенты, которые не хотят вступать в круг, могут оформить классический запрос через Bosphoras Private Desk. Это подходит для целевой или ограниченной миссии. Такой формат не даёт статуса участника, приоритета Private Access и постоянного доступа к частному офису в течение года.', bullets: ['Разовая миссия или целевое сопровождение', 'Без статуса участника Private Access', 'Без постоянного доступа к офису Bosphoras', 'Возможность перейти к членству после валидации профиля'] },
+    ],
+    faqs: [
+      { question: 'Сколько стоит Bosphoras Private Access в 2026 году?', answer: 'Ежегодное вступление 2026 составляет 15 000 USD. Ежемесячный retainer 2026 составляет 3 500 USD. Цикл участника длится 12 месяцев с момента валидации профиля.' },
+      { question: 'Что покрывает ежемесячный retainer?', answer: 'Он покрывает сервис Bosphoras: частный секретариат, организацию, координацию, приоритетную обработку, concierge-координацию, доступ участника и сопровождение запросов по Турции.' },
+      { question: 'Что остаётся за счёт участника?', answer: 'Внешние расходы оплачиваются участником: официальные сборы, гонорары специалистов, отели, водители, покупки, бронирования, билеты, страхование и услуги третьих сторон.' },
+      { question: 'Включён ли The Peninsula Istanbul?', answer: 'Да, координированный премиальный доступ к The Peninsula Istanbul включён в рамках утверждённого членского доступа, доступности и применимых условий.' },
+      { question: 'Private Access — это скидочная карта?', answer: 'Нет. Это постоянная связь с частным офисом в Турции: участник просит, Bosphoras организует.' },
+    ], cta: { label: 'Подать заявку на членство', href: '/ru/chlenstvo/zayavka', secondaryLabel: 'Классический запрос', secondaryHref: '/ru/chastnaya-konsultatsiya' }, jsonLdType: 'Service', internalLinks: [{ pageId: 'luxury-concierge', label: 'Luxury concierge' }, { pageId: 'transport', label: 'VIP transport' }, { pageId: 'istanbul', label: 'Premium Istanbul' }, { pageId: 'private-assessment', label: 'Классический запрос' }]
+  },
+  ar: {
+    id: 'private-club', locale: 'ar', slug: '/النادي-الخاص', title: 'Bosphoras Private Access 2026: مكتب خاص في تركيا | Bosphoras', h1: 'Bosphoras Private Access: مكتبكم الخاص في تركيا', metaDescription: 'Bosphoras Private Access 2026: اشتراك سنوي 15,000 USD، رسوم شهرية 3,500 USD، سكرتارية خاصة، وصول إلى Peninsula Istanbul، كونسيرج، تنظيم ودائرة أعمال في تركيا.', shortIntro: 'Private Access ليس اشتراك كونسيرج عادي. إنه علاقة مستمرة مع مكتب خاص في تركيا: سكرتارية تنسيق، وصول مميز في Istanbul، كونسيرج، تنظيم محلي ودائرة أعمال سرية للمديرين والمستثمرين والعائلات الدولية.',
+    sections: [
+      { heading: 'عضوية واحدة. مستوى خدمة واحد.', body: 'لبعض العملاء، لا تُدار تركيا طلباً بعد طلب. تُدار من خلال وصول دائم إلى مكتب خاص قادر على استقبال الطلبات، فرزها، تنظيمها ومتابعة المواضيع المهمة بسرية. العضو لا يبحث عمّن يتصل به: يطلب من Bosphoras، وBosphoras ينظم.', bullets: ['الاشتراك السنوي 2026: 15,000 USD', 'الرسوم الشهرية 2026: 3,500 USD', 'دورة 12 شهراً من تاريخ اعتماد الملف', 'الدخول عبر ترشيح أو توصية أو اعتماد الملف', 'مستوى خدمة واحد لكل الأعضاء المعتمدين'] },
+      { heading: 'سكرتارية خاصة لأعمالكم في تركيا', body: 'يحصل العضو على سكرتارية خاصة من Bosphoras لتنظيم المواعيد، متابعة الجدول، تأكيد الحجوزات، متابعة الجهات، تنسيق المزوّدين وتجميع الطلبات المرتبطة بتركيا. الهدف واضح: اتصالات أقل، انتظار أقل، أخطاء أقل واستمرارية أكبر.', bullets: ['مواعيد، جدول، تأكيدات ومتابعة', 'تنسيق المزوّدين ومتابعة الملفات', 'حجوزات، وصول، فعاليات وطلبات خاصة', 'نقطة دخول واحدة لكل ما يتعلق بتركيا', 'تنظيم سري للأولويات المهنية والعائلية والشخصية'] },
+      { heading: 'الرسوم الشهرية 2026: 3,500 USD', body: 'تغطي الرسوم الشهرية خدمة Bosphoras: سكرتارية خاصة، معالجة أولوية، تنسيق الطلبات، كونسيرج، وصول الأعضاء، المتابعة والتنظيم المحلي. تبقى المصاريف الخارجية على عاتق العضو عند وجودها: أتعاب أطراف ثالثة، رسوم رسمية، فنادق، سائقون، مشتريات، حجوزات أو خدمات خارجية.', bullets: ['خدمة Bosphoras مشمولة في الرسوم الشهرية للعضو', 'المصاريف الخارجية وأتعاب الأطراف الثالثة تُفوتر منفصلة', 'معالجة أولوية لطلبات الأعضاء', 'تنسيق مستمر مع الجهات المناسبة', 'علاقة شهرية مع مكتب خاص، وليس خدمة عادية عند الطلب'] },
+      { heading: 'عنوان العضو في Istanbul: The Peninsula Istanbul', body: 'The Peninsula Istanbul يصبح إحدى نقاط الارتكاز في Bosphoras Premium. بالنسبة للعضو، ليس مجرد فندق: إنه عنوان في Istanbul للعمل، الاستقبال، اللقاءات أو استعادة السيطرة على الوقت في إطار هادئ وسري.', bullets: ['نادي رياضي، spa، مسبح داخلي ومسبح خارجي', 'إطلالة على Golden Horn وبيئة مميزة في Istanbul', 'لقاءات خاصة، hospitality ولحظات تمثيل أنيقة', 'أمسيات أعضاء ووصول أولوية حسب التوفر والإطار المعتمد', 'نقطة ارتكاز Bosphoras Premium لأعضاء Private Access'] },
+      { heading: 'قيمة تنظيم قائم مسبقاً', body: 'توظيف مساعد خاص، الوصول إلى بيئة مميزة، استخدام كونسيرج موثوق وبناء شبكة موثوقة في تركيا يمثل كل منها تكلفة وعبئاً إدارياً. Private Access يجمع هذه الوظائف في علاقة واحدة: مكتب خاص، سكرتارية تنسيق، وصول مميز ودائرة سرية.', bullets: ['سكرتارية خاصة: مواعيد، جدول، تأكيدات ومتابعة', 'وصول مميز: Peninsula، fitness، spa، مسابح، Golden Horn', 'كونسيرج: حجوزات، نقل، فعاليات، طلبات خاصة', 'دائرة: تعارفات، لقاءات، أمسيات أعضاء', 'توفير الوقت: اتصالات أقل، أخطاء أقل، انتظار أقل'] },
+      { heading: 'ما يمكن أن يفعّله Bosphoras للعضو', body: 'العضو لا يتواصل مع Bosphoras للحصول على معلومة بسيطة. إنه يستخدم مكتباً خاصاً قادراً على تنظيم ما يهم: الوصول، الإقامة، التنقل، الأعمال، العائلة، الصحة، العقار، أسلوب الحياة والتجارب. العضو يطلب. Bosphoras ينظم.', bullets: ['حضور طويل أو استقرار في Istanbul أو Bodrum أو Antalya', 'سائق خاص، انتقالات VIP، فنادق، قصور، مطاعم وفيلات', 'عقار مميز، relocation، مكاتب خاصة ودعم مهني', 'صحة، تأمين، wellness، check-up، أطباء وعيادات خاصة', 'يخوت، فعاليات، luxury shopping، ساعات، مجوهرات، حقائب نادرة وطلبات خاصة'] },
+      { heading: 'طلب كلاسيكي: للاحتياجات المحددة', body: 'العملاء الذين لا يرغبون في الانضمام إلى الدائرة يمكنهم تقديم طلب كلاسيكي عبر Bosphoras Private Desk. هذا الخيار مناسب لمهمة محددة أو محدودة. لا يمنح صفة عضو، ولا معالجة أولوية Private Access، ولا استمرارية مكتب خاص طوال السنة.', bullets: ['مهمة واحدة أو دعم محدد', 'بدون صفة عضو Private Access', 'بدون وصول دائم إلى مكتب Bosphoras', 'إمكانية الانتقال إلى العضوية بعد اعتماد الملف'] },
+    ],
+    faqs: [
+      { question: 'كم تبلغ تكلفة Bosphoras Private Access في 2026؟', answer: 'الاشتراك السنوي 2026 هو 15,000 USD. الرسوم الشهرية 2026 هي 3,500 USD. تستمر دورة العضو 12 شهراً من تاريخ اعتماد الملف.' },
+      { question: 'ماذا تغطي الرسوم الشهرية؟', answer: 'تغطي خدمة Bosphoras: السكرتارية الخاصة، التنظيم، التنسيق، المعالجة ذات الأولوية، كونسيرج التنسيق، وصول الأعضاء ومتابعة الطلبات المتعلقة بتركيا.' },
+      { question: 'ما الذي يبقى على عاتق العضو؟', answer: 'تبقى المصاريف الخارجية على عاتق العضو: الرسوم الرسمية، أتعاب المهنيين، الفنادق، السائقون، المشتريات، الحجوزات، التذاكر، التأمين وخدمات الأطراف الثالثة.' },
+      { question: 'هل The Peninsula Istanbul مشمول؟', answer: 'نعم، الوصول المميز المنسق إلى The Peninsula Istanbul مشمول حسب إطار العضوية المعتمد والتوفر والشروط المطبقة.' },
+      { question: 'هل Private Access بطاقة خصم؟', answer: 'لا. إنها علاقة مستمرة مع مكتب خاص في تركيا: العضو يطلب، وBosphoras ينظم.' },
+    ], cta: { label: 'طلب عضوية', href: '/ar/عضوية/طلب', secondaryLabel: 'طلب كلاسيكي', secondaryHref: '/ar/تقييم-خاص' }, jsonLdType: 'Service', internalLinks: [{ pageId: 'luxury-concierge', label: 'كونسيرج فاخر' }, { pageId: 'transport', label: 'نقل VIP' }, { pageId: 'istanbul', label: 'Istanbul premium' }, { pageId: 'private-assessment', label: 'طلب كلاسيكي' }]
+  },
 };
 
 export const privateClubSeoOverrides: Partial<Record<Locale, MainPageContent[]>> = {
-  fr: [page],
+  fr: [pages.fr],
+  en: [pages.en],
+  ru: [pages.ru],
+  ar: [pages.ar],
 };
