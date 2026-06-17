@@ -11,6 +11,7 @@ import type { Locale } from '@/lib/i18n';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { BosphorasMembershipForm } from '@/components/BosphorasForms';
+import { PrivateAccessValueBlock } from '@/components/PrivateAccessValueBlock';
 import { annualAdmissionLine, monthlyRetainerLine, privateDeskStartingText, formatPricingText } from '@/lib/pricingText';
 
 type Copy = {
@@ -203,6 +204,7 @@ export function MembershipApplicationLocalizedPage({ locale }: { locale: Locale 
         </section>
         <section className="bg-[#121826] px-5 py-16 text-[#fffaf0] md:px-8 md:py-24"><div className="mx-auto grid max-w-[1500px] gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:gap-20"><div><p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#d2a863]">{copy.accessEyebrow}</p><h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] md:text-6xl">{copy.accessTitle}</h2></div><div className="space-y-6 text-base leading-8 text-[#d8cfbf]">{copy.accessParagraphs.map((p) => <p key={p}>{priceText(p)}</p>)}</div></div></section>
         <section className="container-editorial py-16 md:py-24"><div className="grid gap-6 md:grid-cols-3">{copy.cards.map((item) => { const Icon = icons[item.icon]; return <article key={item.title} className="border border-[#d8c7a1] bg-[#fffaf0] p-8 shadow-[0_18px_55px_rgba(16,24,39,0.045)]"><Icon className="h-7 w-7 text-[#8a6728]" strokeWidth={1.4} /><h3 className="mt-8 font-serif text-3xl text-[#121826]">{item.title}</h3><p className="mt-5 text-base leading-8 text-[#3e4857]">{item.text}</p></article>; })}</div><div className="mt-12 border border-[#d8c7a1] bg-[#fffaf0] p-7"><div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between"><div><p className="font-serif text-3xl text-[#121826]">{copy.classicTitle}</p><p className="mt-3 max-w-2xl text-sm leading-7 text-[#3e4857]">{priceText(copy.classicText)}</p></div><Link href={copy.classicHref} className="inline-flex items-center justify-center gap-3 bg-[#121826] px-7 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246]">{copy.classicButton}<ArrowRight size={15} /></Link></div></div></section>
+        <PrivateAccessValueBlock locale={locale} />
       </main>
       <Footer locale={locale} />
     </>
