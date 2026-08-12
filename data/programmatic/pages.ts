@@ -15,18 +15,25 @@ export type ProgrammaticPage = {
   isIndexable: boolean;
 };
 
+function serviceCoreName(serviceName: string, locale: Locale): string {
+  if (locale === 'fr') return serviceName.replace(/\s+en Turquie$/i, '');
+  if (locale === 'en') return serviceName.replace(/\s+in Turkey$/i, '');
+  if (locale === 'ru') return serviceName.replace(/\s+в Турции$/i, '');
+  return serviceName.replace(/\s+في تركيا$/i, '');
+}
+
 const localeTitle: Record<Locale, (s: string, c: string, m: string) => string> = {
-  fr: (s, c, m) => `${s} à ${c} pour ${m} | Bosphoras`,
-  en: (s, c, m) => `${s} in ${c} for ${m} | Bosphoras`,
-  ru: (s, c, m) => `${s} — ${c} для ${m} | Bosphoras`,
-  ar: (s, c, m) => `${s} في ${c} لـ ${m} | Bosphoras`,
+  fr: (s, c, m) => `${s} à ${c}, Turquie — ${m} | Bosphoras`,
+  en: (s, c, m) => `${s} in ${c}, Turkey — ${m} | Bosphoras`,
+  ru: (s, c, m) => `${s} — ${c}, Турция · ${m} | Bosphoras`,
+  ar: (s, c, m) => `${s} في ${c}، تركيا — ${m} | Bosphoras`,
 };
 
 const localeMeta: Record<Locale, (s: string, c: string, m: string) => string> = {
-  fr: (s, c, m) => `${s} à ${c} pour clients ${m}. Bosphoras coordonne les professionnels, la logistique, la conformité et l’accès privé en Turquie.`,
-  en: (s, c, m) => `${s} in ${c} for ${m} clients. Bosphoras coordinates professionals, logistics, compliance and private access in Turkey.`,
-  ru: (s, c, m) => `${s} в ${c} для клиентов из ${m}. Bosphoras координирует специалистов, логистику, compliance и private access в Турции.`,
-  ar: (s, c, m) => `${s} في ${c} لعملاء ${m}. ينسق Bosphoras المهنيين واللوجستيات والامتثال والوصول الخاص في تركيا.`,
+  fr: (s, c, m) => `${s} à ${c}, Turquie — ${m}. Bosphoras coordonne la demande, les interlocuteurs, les conditions, les confirmations et le suivi local.`,
+  en: (s, c, m) => `${s} in ${c}, Turkey — ${m}. Bosphoras coordinates the brief, selected contacts, conditions, confirmations and local follow-up.`,
+  ru: (s, c, m) => `${s} — ${c}, Турция · ${m}. Bosphoras координирует задачу, выбранных исполнителей, условия, подтверждения и локальное сопровождение.`,
+  ar: (s, c, m) => `${s} في ${c}، تركيا — ${m}. ينسق Bosphoras الطلب والجهات المختارة والشروط والتأكيدات والمتابعة المحلية.`,
 };
 
 export function getProgrammaticSlug(service: ProgrammaticService, city: ProgrammaticCity, market: ProgrammaticMarket): string {
@@ -42,7 +49,8 @@ export function generateProgrammaticPages(): ProgrammaticPage[] {
     for (const city of programmaticCities) {
       for (const service of programmaticServices) {
         const slug = getProgrammaticSlug(service, city, market);
-        const serviceName = service.name[locale];
+        const rawServiceName = service.name[locale];
+        const serviceName = serviceCoreName(rawServiceName, locale);
         const cityName = city.name[locale];
         const countryName = market.countryName;
 
