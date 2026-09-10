@@ -81,13 +81,19 @@ function pageContent(key, locale) {
 }
 
 let written = 0;
+let preserved = 0;
 for (const page of pages) {
   for (const locale of locales) {
     const filePath = routeFileFromSlug(page.slugs[locale]);
+    // Bespoke content and existing redirects are authoritative. Never replace them with a generic template.
+    if (fs.existsSync(filePath) && !fs.readFileSync(filePath, 'utf8').startsWith('// AUTO-GENERATED BOSPHORAS')) {
+      preserved += 1;
+      continue;
+    }
     fs.mkdirSync(path.dirname(filePath), { recursive: true });
     fs.writeFileSync(filePath, pageContent(page.key, locale));
     written += 1;
   }
 }
 
-console.log(`[bosphoras seo] FORCE regenerated: ${pages.length} subjects, ${written} files written, ${visaTypeKeys.size} visa type subjects use V2 content, ${visaResidenceKeys.size} visa/residence subjects and ${countryVisaKeys.size} country visa subjects use dedicated content`);
+console.log(`[bosphoras seo] Generated pages: ${pages.length} subjects, ${written} files written, ${preserved} bespoke pages preserved, ${visaTypeKeys.size} visa type subjects use V2 content, ${visaResidenceKeys.size} visa/residence subjects and ${countryVisaKeys.size} country visa subjects use dedicated content`);

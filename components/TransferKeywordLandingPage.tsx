@@ -20,7 +20,7 @@ function titleFor(term: string, locale: TransferSeoLocale) {
     it: 'a Istanbul | Prenota transfer privato',
     pt: 'em Istambul | Reserva transfer privado',
   };
-  return `${term} ${suffix[locale]}`;
+  return `${term.charAt(0).toUpperCase()}${term.slice(1)} | Bosphoras`;
 }
 
 function descriptionFor(term: string, locale: TransferSeoLocale) {
@@ -59,7 +59,7 @@ export function buildTransferKeywordMetadata(locale: TransferSeoLocale, slug: st
   if (!keyword) return { title: 'Istanbul transfer', robots: { index: false, follow: true } };
   const canonical = `${siteUrl}${getTransferKeywordHref(locale, keyword.term)}`;
   return {
-    title: titleFor(keyword.term, locale),
+    title: { absolute: titleFor(keyword.term, locale) },
     description: descriptionFor(keyword.term, locale),
     metadataBase: new URL(siteUrl),
     alternates: { canonical },

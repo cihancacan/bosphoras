@@ -1,4 +1,5 @@
 import type { Locale } from './i18n';
+import { pageSlugs } from '@/data/pages/types';
 
 export const siteUrl = 'https://www.bosphoras.com';
 
@@ -9,21 +10,21 @@ export function getLocalePath(locale: Locale, path: string = ''): string {
 }
 
 export function getAlternateUrls(
-  path: string = ''
-): Record<string, string> {
+  path: string = '',
+  sourceLocale: Locale = 'fr'
+): Record<string, string> | null {
   const locales: Locale[] = ['fr', 'en', 'ru', 'ar'];
   const result: Record<string, string> = {};
-  const cleanPath = path === '/' ? '' : path;
+  const normalized = path.startsWith('/') ? path : `/${path}`;
+  const group = pageSlugs.find((page) => page.slugs[sourceLocale] === normalized);
+  // Never invent a translated URL by copying a slug into another language.
+  if (!group || ['transport', 'membership-card', 'premium-cardholders'].includes(group.id)) return null;
 
   for (const locale of locales) {
-    if (locale === 'fr') {
-      result['fr'] = `${siteUrl}${cleanPath || '/'}`;
-    } else {
-      result[locale] = `${siteUrl}/${locale}${cleanPath}`;
-    }
+    result[locale] = getCanonicalUrl(locale, group.slugs[locale]);
   }
 
-  result['x-default'] = `${siteUrl}${cleanPath || '/'}`;
+  result['x-default'] = result.fr;
   return result;
 }
 

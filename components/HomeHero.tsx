@@ -75,17 +75,12 @@ export function HomeHero({ locale }: { locale: Locale }) {
 
   return (
     <section className="relative min-h-[100svh] overflow-hidden bg-[#071426] pt-20 text-white md:min-h-[92vh] md:pt-32">
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat md:bg-[center_center]"
-        style={{
-          backgroundImage:
-            "image-set(url('/images/mobile-istanbul.jpg') 1x), url('/images/mobile-istanbul.jpg')",
-        }}
-      />
-      <div
-        className="absolute inset-0 hidden bg-cover bg-center bg-no-repeat md:block"
-        style={{ backgroundImage: "url('/images/hero-istanbul.jpg')" }}
-      />
+      <picture>
+        <source media="(min-width: 768px)" srcSet="/images/hero-istanbul.jpg" />
+        <img src="/images/mobile-istanbul.jpg" alt="" width={1200} height={1600}
+          loading="eager" fetchPriority="high" decoding="async"
+          className="absolute inset-0 h-full w-full object-cover" />
+      </picture>
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,8,18,0.76)_0%,rgba(7,20,38,0.56)_42%,rgba(7,20,38,0.24)_72%,rgba(7,20,38,0.10)_100%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(3,8,18,0.66)_0%,rgba(3,8,18,0.04)_45%,rgba(3,8,18,0.46)_100%)]" />
 
@@ -108,13 +103,13 @@ export function HomeHero({ locale }: { locale: Locale }) {
           <div className="mt-6 flex flex-col gap-3 sm:flex-row md:mt-10">
             <Link
               href={copy.assessmentHref}
-              className="inline-flex items-center justify-center bg-[#d2a863] px-6 py-3.5 text-[0.66rem] font-bold uppercase tracking-[0.14em] text-[#101827] transition hover:bg-[#e0bc78] md:px-8 md:py-4 md:text-xs md:tracking-[0.16em]"
+              className="inline-flex items-center justify-center bg-[#d2a863] px-6 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-[#101827] transition hover:bg-[#e0bc78] md:px-8 md:py-4 md:text-sm md:tracking-[0.16em]"
             >
               {copy.primaryCta}
             </Link>
             <Link
               href={copy.servicesHref}
-              className="inline-flex items-center justify-center border border-[#d2a863]/80 bg-white/10 px-6 py-3.5 text-[0.66rem] font-bold uppercase tracking-[0.14em] text-[#fffaf0] backdrop-blur-sm transition hover:bg-white/15 md:px-8 md:py-4 md:text-xs md:tracking-[0.16em]"
+              className="inline-flex items-center justify-center border border-[#d2a863]/80 bg-white/10 px-6 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-[#fffaf0] backdrop-blur-sm transition hover:bg-white/15 md:px-8 md:py-4 md:text-sm md:tracking-[0.16em]"
             >
               {copy.secondaryCta}
             </Link>
@@ -122,7 +117,7 @@ export function HomeHero({ locale }: { locale: Locale }) {
 
           <Link
             href={copy.membershipHref}
-            className="mt-4 inline-flex items-center gap-2 text-[0.66rem] font-bold uppercase tracking-[0.16em] text-[#d2a863] transition hover:text-[#fffaf0] md:mt-5 md:text-xs md:tracking-[0.18em]"
+            className="mt-4 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.16em] text-[#d2a863] transition hover:text-[#fffaf0] md:mt-5 md:text-sm md:tracking-[0.18em]"
           >
             {copy.memberCta}
             <ArrowRight className="h-4 w-4" />

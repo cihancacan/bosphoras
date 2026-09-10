@@ -30,11 +30,11 @@ export function buildMetadata({
   alternates,
 }: SeoProps): Metadata {
   const canonical = getCanonicalUrl(locale, path);
-  const resolvedAlternates = alternates === undefined ? getAlternateUrls(path) : alternates;
+  const resolvedAlternates = alternates === undefined ? getAlternateUrls(path, locale) : alternates;
   const ogImage = image ?? `${siteUrl}/images/og-default.jpg`;
 
   return {
-    title,
+    title: { absolute: title.includes('Bosphoras') ? title : `${title} | Bosphoras` },
     description,
     metadataBase: new URL(siteUrl),
     alternates: {
@@ -46,7 +46,7 @@ export function buildMetadata({
       description,
       url: canonical,
       siteName: 'Bosphoras',
-      locale,
+      locale: { fr: 'fr_FR', en: 'en_GB', ru: 'ru_RU', ar: 'ar_AR' }[locale],
       type: 'website',
       images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
     },
@@ -57,8 +57,8 @@ export function buildMetadata({
       images: [ogImage],
     },
     robots: noIndex
-      ? { index: false, follow: false }
-      : { index: true, follow: true },
+      ? { index: false, follow: true }
+      : { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 },
   };
 }
 
@@ -66,10 +66,10 @@ export function organizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
+    '@id': `${siteUrl}/#organization`,
     name: 'Bosphoras',
     legalName: 'Panorama Grup',
     url: siteUrl,
-    logo: `${siteUrl}/logo.svg`,
     telephone: '+33188842222',
     email: 'contact@bosphoras.com',
     description:
@@ -117,11 +117,9 @@ export function websiteSchema() {
     '@type': 'WebSite',
     name: 'Bosphoras',
     url: siteUrl,
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: `${siteUrl}/search?q={search_term_string}`,
-      'query-input': 'required name=search_term_string',
-    },
+    '@id': `${siteUrl}/#website`,
+    publisher: { '@id': `${siteUrl}/#organization` },
+    inLanguage: ['fr', 'en', 'ru', 'ar'],
   };
 }
 
@@ -168,10 +166,10 @@ export function serviceSchema(service: {
     description: service.description,
     url: service.url,
     provider: {
-      '@type': 'LocalBusiness',
-      name: 'Bosphoras Mobility transfer partner',
+      '@type': 'Organization',
+      '@id': `${siteUrl}/#organization`,
+      name: 'Bosphoras',
       url: siteUrl,
-      aggregateRating: transferPartnerRating,
     },
     areaServed: 'Turkey',
   };

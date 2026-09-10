@@ -66,16 +66,24 @@ async function submitForm(event: React.FormEvent<HTMLFormElement>, locale: Local
   const fields: Record<string, string> = {};
   data.forEach((value, key) => { fields[key] = String(value); });
   setStatus('sending');
-  const response = await fetch('/api/forms', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ locale, formKind, fields, sourcePath: window.location.pathname }) });
-  if (!response.ok) { setStatus('error'); return; }
-  form.reset();
-  setStatus('success');
+  try {
+    const response = await fetch('/api/forms', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ locale, formKind, fields, sourcePath: window.location.pathname }) });
+    if (!response.ok) { setStatus('error'); return; }
+    // Count a lead only after the server has accepted it. Never send form values to analytics.
+    const analyticsWindow = window as typeof window & { gtag?: (...args: unknown[]) => void };
+    // Analytics must never prevent a successful request from being acknowledged.
+    try { analyticsWindow.gtag?.('event', 'generate_lead', { form_id: formKind, language: locale }); } catch {}
+    form.reset();
+    setStatus('success');
+  } catch {
+    setStatus('error');
+  }
 }
 
 function StatusMessage({ status, copy }: { status: Status; copy: { sending: string; success: string; error: string } }) {
   if (status === 'idle') return null;
   const text = status === 'sending' ? copy.sending : status === 'success' ? copy.success : copy.error;
-  return <p className={`mt-5 border px-4 py-3 text-sm leading-6 ${status === 'error' ? 'border-red-200 bg-red-50 text-red-700' : 'border-[#d8c7a1] bg-[#f8f1e7] text-[#5c6676]'}`}>{text}</p>;
+  return <p role={status === 'error' ? 'alert' : 'status'} aria-live="polite" className={`mt-5 border px-4 py-3 text-sm leading-6 ${status === 'error' ? 'border-red-200 bg-red-50 text-red-700' : 'border-[#d8c7a1] bg-[#f8f1e7] text-[#5c6676]'}`}>{text}</p>;
 }
 
 export function BosphorasForm({ locale, embedded = false, kind = 'private-assessment' }: { locale: Locale; kind?: FormKind; embedded?: boolean }) {
@@ -86,16 +94,22 @@ export function BosphorasForm({ locale, embedded = false, kind = 'private-assess
     <form onSubmit={(event) => submitForm(event, locale, 'private-assessment', setStatus)} className={formClass(embedded ? '' : 'mx-auto max-w-5xl')}>
       <div className="mb-8 border-b border-[#d8c7a1] pb-6"><p className="text-[0.62rem] font-bold uppercase tracking-[0.26em] text-[#8a6728]">{copy.eyebrow}</p><h2 className="mt-3 font-serif text-3xl tracking-[-0.03em] text-[#121826] md:text-4xl">{copy.title}</h2></div>
       <div className="grid gap-4 md:grid-cols-2">
-        <Field label={copy.fullName}><input required name={copy.fullName.replace(' *', '')} type="text" placeholder={copy.placeholders.name} className={inputClass()} /></Field>
-        <Field label={copy.phone}><input required name={copy.phone.replace(' *', '')} type="tel" placeholder={copy.placeholders.phone} className={inputClass()} /></Field>
-        <Field label={copy.email}><input required name={copy.email.replace(' *', '')} type="email" placeholder={copy.placeholders.email} className={inputClass()} /></Field>
+        <Field label={copy.fullName}><input required name={copy.fullName.replace(' *', '')} type="text" autoComplete="name" placeholder={copy.placeholders.name} className={inputClass()} /></Field>
+        <Field label={copy.phone.replace(' *', '')}><input name={copy.phone.replace(' *', '')} type="tel" autoComplete="tel" placeholder={copy.placeholders.phone} className={inputClass()} /></Field>
+        <Field label={copy.email}><input required name={copy.email.replace(' *', '')} type="email" autoComplete="email" placeholder={copy.placeholders.email} className={inputClass()} /></Field>
+
+      </div>
+      <label className="mt-4 block"><span className="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#5c6676]">{copy.message}</span><textarea required name={copy.message.replace(' *', '')} rows={4} placeholder={copy.placeholders.message} className="w-full border border-[#d8c7a1] bg-white px-4 py-3 text-sm leading-7 outline-none transition focus:border-[#8a6728]" /></label>
+      <details className="mt-5 border border-[#d8c7a1] p-4">
+        <summary className="cursor-pointer text-sm font-semibold text-[#5c6676]">{{ fr: 'Préciser mon projet (facultatif)', en: 'Add project details (optional)', ru: 'Уточнить проект (необязательно)', ar: 'تفاصيل المشروع (اختياري)' }[locale]}</summary>
+        <div className="mt-4 grid gap-4 md:grid-cols-2">
         <Field label={copy.residence}><input name={copy.residence} type="text" placeholder={copy.placeholders.residence} className={inputClass()} /></Field>
         <Field label={copy.city}><SelectField name={copy.city} options={copy.cityOptions} /></Field>
-        <Field label={copy.subject}><SelectField name={copy.subject.replace(' *', '')} options={copy.subjectOptions} /></Field>
+        <Field label={copy.subject.replace(' *', '')}><SelectField name={copy.subject.replace(' *', '')} options={copy.subjectOptions} /></Field>
         <Field label={copy.timeline}><SelectField name={copy.timeline} options={copy.timelineOptions} /></Field>
         <Field label={copy.budget}><SelectField name={copy.budget} options={copy.budgetOptions} /></Field>
-      </div>
-      <label className="mt-4 block"><span className="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#5c6676]">{copy.message}</span><textarea required name={copy.message.replace(' *', '')} rows={6} placeholder={copy.placeholders.message} className="w-full border border-[#d8c7a1] bg-white px-4 py-3 text-sm leading-7 outline-none transition focus:border-[#8a6728]" /></label>
+        </div>
+      </details>
       <label className="mt-5 flex gap-3 text-sm leading-6 text-[#5c6676]"><input required name="Confidentiality accepted" type="checkbox" value="Yes" className="mt-1 h-4 w-4 border-[#d8c7a1]" /><span>{copy.consent}</span></label>
       <button disabled={status === 'sending'} type="submit" className="mt-7 inline-flex w-full items-center justify-center gap-3 bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246] disabled:opacity-60 md:w-auto">{status === 'sending' ? copy.sending : copy.submit}<ArrowRight size={15} /></button>
       <StatusMessage status={status} copy={copy} />

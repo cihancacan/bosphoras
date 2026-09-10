@@ -109,6 +109,11 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
             <p className="text-[hsl(220,15%,30%)] text-lg md:text-xl leading-relaxed max-w-3xl font-light">
               {priceText(page.shortIntro)}
             </p>
+            {!isFormPage && page.jsonLdType === 'Service' && (
+              <Link href={ctaHref} className="mt-7 inline-flex min-h-[48px] items-center gap-3 bg-[#121826] px-6 py-3 text-base font-semibold text-white hover:bg-[#263246]">
+                {priceText(page.cta.label)}<ArrowIcon size={18} aria-hidden="true" />
+              </Link>
+            )}
           </div>
         </div>
       </section>
@@ -117,8 +122,15 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
         <div className="container-editorial">
           <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
             <div className="lg:col-span-8 space-y-14">
+              {page.sections.length > 2 && (
+                <nav aria-label={locale === 'fr' ? 'Sur cette page' : locale === 'en' ? 'On this page' : locale === 'ru' ? 'На этой странице' : 'في هذه الصفحة'} className="border border-[#d8c7a1] p-6">
+                  <ul className="grid gap-3 text-base">
+                    {page.sections.map((section, idx) => <li key={idx}><a href={`#section-${idx + 1}`} className="underline decoration-[#d8c7a1] underline-offset-4 hover:text-[#8a6728]">{priceText(section.heading)}</a></li>)}
+                  </ul>
+                </nav>
+              )}
               {page.sections.map((section, idx) => (
-                <article key={idx} className="prose-editorial">
+                <article key={idx} id={`section-${idx + 1}`} className="prose-editorial scroll-mt-32">
                   <div className="flex items-center gap-3 mb-5">
                     <span className="text-[hsl(42,65%,45%)] text-xs tracking-[0.3em] font-medium">
                       {String(idx + 1).padStart(2, '0')}

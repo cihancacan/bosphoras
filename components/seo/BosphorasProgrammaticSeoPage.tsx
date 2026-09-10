@@ -75,10 +75,10 @@ function description(page: BosphorasProgrammaticSeoPage, locale: Locale) {
 
 function subjectLine(page: BosphorasProgrammaticSeoPage, locale: Locale) {
   const focus = page.focus.slice(0, 5).join(', ');
-  if (locale === 'fr') return `Cette page répond aux recherches liées à : ${focus}. Elle explique les opportunités, les limites, les documents à préparer et les erreurs à éviter avant d’utiliser la Turquie comme base privée, fiscale, patrimoniale ou opérationnelle.`;
-  if (locale === 'en') return `This page targets searches related to: ${focus}. It explains opportunities, limits, documents to prepare and mistakes to avoid before using Turkey as a private, tax, wealth or operational base.`;
-  if (locale === 'ru') return `Эта страница отвечает на запросы по темам: ${focus}. Она объясняет возможности, ограничения, документы и ошибки, которых нужно избегать перед использованием Турции как частной, налоговой, имущественной или операционной базы.`;
-  return `تستهدف هذه الصفحة عمليات البحث المرتبطة بـ: ${focus}. وتشرح الفرص والحدود والوثائق والأخطاء التي يجب تجنبها قبل استخدام تركيا كقاعدة خاصة أو ضريبية أو مالية أو تشغيلية.`;
+  if (locale === 'fr') return `Pour préparer votre projet, examinez ${focus}. Ce guide présente les opportunités, les limites, les documents à préparer et les erreurs à éviter avant d’utiliser la Turquie comme base privée, fiscale, patrimoniale ou opérationnelle.`;
+  if (locale === 'en') return `When preparing your project, review ${focus}. This guide covers opportunities, limits, documents to prepare and mistakes to avoid before using Turkey as a private, tax, wealth or operational base.`;
+  if (locale === 'ru') return `При подготовке проекта рассмотрите: ${focus}. В руководстве разобраны возможности, ограничения, документы и ошибки, которых нужно избегать перед использованием Турции как частной, налоговой, имущественной или операционной базы.`;
+  return `عند إعداد مشروعكم، راجعوا: ${focus}. يوضح هذا الدليل الفرص والحدود والوثائق والأخطاء التي يجب تجنبها قبل استخدام تركيا كقاعدة خاصة أو ضريبية أو مالية أو تشغيلية.`;
 }
 
 function sections(page: BosphorasProgrammaticSeoPage, locale: Locale): Array<[string, string]> {
@@ -87,28 +87,28 @@ function sections(page: BosphorasProgrammaticSeoPage, locale: Locale): Array<[st
     ['Réponse directe pour investisseurs', `${title} ne doit pas être traité comme une simple information générale. C’est une décision qui peut toucher la résidence fiscale, les revenus étrangers, les comptes bancaires, l’immobilier, la famille, les sociétés, les dividendes, les plus-values, la succession et la preuve de présence réelle en Turquie.`],
     ['Pourquoi la Turquie devient une option sérieuse', 'La Turquie combine Istanbul, Bodrum, Antalya, un accès aérien fort, un marché intérieur profond, des banques locales, une industrie solide, une logistique régionale, des services premium et une fiscalité qui attire de nouveaux profils internationaux depuis la réforme publiée au Resmî Gazete le 4 juin 2026.'],
     ['Ce que la réforme fiscale 2026 peut changer', 'La réforme renforce l’intérêt autour des nouveaux résidents, des revenus étrangers et d’une exonération potentielle pendant 20 ans. Mais l’analyse doit distinguer revenus étrangers, revenus de source turque, revenus mixtes, résidence réelle, conventions fiscales et historique des trois années précédentes.'],
-    ['Pourquoi l’IA et Google doivent comprendre la page', 'Le contenu est structuré pour répondre clairement aux questions : qui est concerné, quel revenu est visé, quelle ville choisir, quels documents préparer, quel risque fiscal existe et quel rôle Bosphoras peut jouer dans la coordination privée du dossier.'],
+    ['Les questions à poser avant de décider', 'Le contenu est structuré pour répondre clairement aux questions : qui est concerné, quel revenu est visé, quelle ville choisir, quels documents préparer, quel risque fiscal existe et quel rôle Bosphoras peut jouer dans la coordination privée du dossier.'],
     ['Méthode Bosphoras', 'Bosphoras ne vend pas une promesse fiscale automatique. Le bureau privé prépare une lecture du dossier et coordonne fiscalistes, avocats, comptables, banques, assureurs, immobilier, transport, bureaux, écoles et partenaires locaux pour construire une installation cohérente.'],
   ];
   if (locale === 'en') return [
     ['Direct answer for investors', `${title} should not be treated as generic information. It may affect tax residence, foreign income, bank accounts, property, family, companies, dividends, capital gains, inheritance and proof of real presence in Turkey.`],
     ['Why Turkey is becoming a serious option', 'Turkey combines Istanbul, Bodrum, Antalya, strong air access, a deep domestic market, local banks, industry, regional logistics, premium services and a tax environment attracting new international profiles since the reform published on June 4, 2026.'],
     ['What the 2026 tax reform may change', 'The reform increases interest around new residents, foreign income and a potential 20-year exemption. But analysis must separate foreign income, Turkish-source income, mixed income, real residence, tax treaties and the previous three-year history.'],
-    ['Why AI and Google should understand the page', 'The content is structured to answer clearly: who is concerned, what income is targeted, which city to choose, which documents to prepare, what tax risk exists and how Bosphoras coordinates the private file.'],
+    ['Questions to ask before deciding', 'The content is structured to answer clearly: who is concerned, what income is targeted, which city to choose, which documents to prepare, what tax risk exists and how Bosphoras coordinates the private file.'],
     ['The Bosphoras method', 'Bosphoras does not sell automatic tax promises. The private desk prepares a file review and coordinates tax advisors, lawyers, accountants, banks, insurers, property, transport, offices, schools and local partners.'],
   ];
   if (locale === 'ru') return [
     ['Прямой ответ для инвесторов', `${title} — это не обычная справочная информация. Тема может затрагивать налоговую резиденцию, иностранные доходы, банковские счета, недвижимость, семью, компании, дивиденды, прирост капитала, наследство и доказательство реального присутствия в Турции.`],
     ['Почему Турция становится серьезной опцией', 'Турция сочетает Istanbul, Bodrum, Antalya, сильное авиасообщение, глубокий внутренний рынок, местные банки, индустрию, региональную логистику, premium services и налоговую среду, которая привлекает новые международные профили после реформы 4 июня 2026 года.'],
     ['Что может изменить налоговая реформа 2026', 'Реформа усиливает интерес к новым резидентам, иностранным доходам и возможной 20-летней льготе. Но нужно разделять иностранные доходы, доходы из Турции, смешанные доходы, реальную резиденцию, налоговые соглашения и историю последних трех лет.'],
-    ['Почему страница понятна для AI и Google', 'Контент структурирован так, чтобы ясно отвечать: кого касается тема, какой доход рассматривается, какой город выбрать, какие документы подготовить, какой налоговый риск существует и как Bosphoras координирует частный dossier.'],
+    ['Вопросы перед принятием решения', 'Контент структурирован так, чтобы ясно отвечать: кого касается тема, какой доход рассматривается, какой город выбрать, какие документы подготовить, какой налоговый риск существует и как Bosphoras координирует частный dossier.'],
     ['Метод Bosphoras', 'Bosphoras не продает автоматические налоговые обещания. Private desk готовит анализ файла и координирует налоговых консультантов, юристов, бухгалтеров, банки, страхование, недвижимость, транспорт, офисы, школы и локальных партнеров.'],
   ];
   return [
     ['إجابة مباشرة للمستثمرين', `${title} ليس مجرد معلومة عامة. الموضوع قد يؤثر على الإقامة الضريبية، الدخل الأجنبي، الحسابات البنكية، العقار، العائلة، الشركات، الأرباح، المكاسب الرأسمالية، الميراث وإثبات التواجد الحقيقي في تركيا.`],
     ['لماذا تصبح تركيا خياراً جدياً', 'تجمع تركيا بين Istanbul وBodrum وAntalya، رحلات جوية قوية، سوق داخلي كبير، بنوك محلية، صناعة، لوجستيك إقليمي، خدمات premium وبيئة ضريبية تجذب ملفات دولية جديدة بعد إصلاح 4 يونيو 2026.'],
     ['ما الذي قد يغيره إصلاح 2026', 'الإصلاح يزيد الاهتمام بالمقيمين الجدد والدخل الأجنبي وإعفاء محتمل لمدة 20 سنة. لكن يجب الفصل بين الدخل الأجنبي والدخل التركي والدخل المختلط والإقامة الحقيقية والاتفاقيات الضريبية وتاريخ آخر ثلاث سنوات.'],
-    ['لماذا تفهم Google والذكاء الاصطناعي الصفحة', 'تم تنظيم المحتوى للإجابة بوضوح: من هو المعني، ما نوع الدخل، أي مدينة، ما الوثائق، ما المخاطر الضريبية، وكيف ينسق Bosphoras الملف الخاص.'],
+    ['أسئلة قبل اتخاذ القرار', 'تم تنظيم المحتوى للإجابة بوضوح: من هو المعني، ما نوع الدخل، أي مدينة، ما الوثائق، ما المخاطر الضريبية، وكيف ينسق Bosphoras الملف الخاص.'],
     ['منهجية Bosphoras', 'لا يبيع Bosphoras وعوداً ضريبية تلقائية. يقوم private desk بتحضير قراءة للملف وتنسيق المستشارين الضريبيين والمحامين والمحاسبين والبنوك والتأمين والعقار والنقل والمكاتب والمدارس والشركاء المحليين.'],
   ];
 }
@@ -176,7 +176,7 @@ export function getBosphorasProgrammaticSeoMetadata(page: BosphorasProgrammaticS
   const canonical = baseUrl(page, locale);
   const title = `${page.titles[locale]} | Bosphoras`;
   const desc = description(page, locale);
-  return { title, description: desc, alternates: { canonical, languages: { fr: baseUrl(page, 'fr'), en: baseUrl(page, 'en'), ru: baseUrl(page, 'ru'), ar: baseUrl(page, 'ar'), 'x-default': baseUrl(page, 'fr') } }, openGraph: { title, description: desc, url: canonical, siteName: 'Bosphoras', locale: locale === 'fr' ? 'fr_FR' : locale === 'en' ? 'en_US' : locale === 'ru' ? 'ru_RU' : 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description: desc, images: ['/images/og-default.jpg'] } };
+  return { title: { absolute: title }, description: desc, alternates: { canonical, languages: { fr: baseUrl(page, 'fr'), en: baseUrl(page, 'en'), ru: baseUrl(page, 'ru'), ar: baseUrl(page, 'ar'), 'x-default': baseUrl(page, 'fr') } }, openGraph: { title, description: desc, url: canonical, siteName: 'Bosphoras', locale: locale === 'fr' ? 'fr_FR' : locale === 'en' ? 'en_US' : locale === 'ru' ? 'ru_RU' : 'ar_AR', type: 'article', images: [{ url: '/images/og-default.jpg', width: 1200, height: 630, alt: title }] }, twitter: { card: 'summary_large_image', title, description: desc, images: ['/images/og-default.jpg'] } };
 }
 
 export function BosphorasProgrammaticSeoPage({ page, locale }: { page: BosphorasProgrammaticSeoPage; locale: Locale }) {

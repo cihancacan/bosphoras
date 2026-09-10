@@ -10,7 +10,8 @@ import { getSlugForPage, pageSlugs } from '@/data/pages/types';
 import { getEquivalentHighPotentialSlug } from '@/data/highPotentialPages';
 import { longTailTaxRouteGroups } from '@/data/longTailTaxRoutes';
 import { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';
-import { SearchOverlay } from '@/components/SearchOverlay';
+import dynamic from 'next/dynamic';
+const SearchOverlay = dynamic(() => import('@/components/SearchOverlay').then((module) => module.SearchOverlay));
 import { HomeHero } from '@/components/HomeHero';
 
 interface HeaderProps { locale: Locale; currentPath?: string; }
@@ -26,7 +27,7 @@ const corporateRelocationPaths: Record<Locale, string> = {
 
 const specialLocalizedPaths: Array<Record<Locale, string>> = [
   { fr: '/peninsula-istanbul', en: '/en/peninsula-istanbul', ru: '/ru/peninsula-istanbul', ar: '/ar/peninsula-istanbul' },
-  { fr: '/transferts-istanbul', en: '/en/istanbul-airport-transfer', ru: '/ru/transfer-aeroport-stambul', ar: '/ar/istanbul-airport-transfer' },
+  { fr: '/transfert-aeroport-istanbul', en: '/en/istanbul-airport-transfer', ru: '/ru/transfer-aeroport-stambul', ar: '/ar/istanbul-airport-transfer' },
   corporateRelocationPaths,
   { fr: '/exoneration-fiscale-turquie-revenus-etrangers', en: '/en/turkey-tax-exemption-foreign-income', ru: '/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody', ar: '/ar/turkey-tax-exemption-foreign-income' },
   { fr: '/strategie-fiscale-turquie-investisseurs-etrangers', en: '/en/turkey-tax-strategy-foreign-investors', ru: '/ru/nalogovaya-strategiya-turtsii-inostrannye-investory', ar: '/ar/turkey-tax-strategy-foreign-investors' },
@@ -34,7 +35,7 @@ const specialLocalizedPaths: Array<Record<Locale, string>> = [
   { fr: '/istanbul-finance-center-avantages-fiscaux-investisseurs', en: '/en/istanbul-finance-center-tax-benefits-investors', ru: '/ru/istanbul-finance-center-nalogovye-lgoty-investory', ar: '/ar/istanbul-finance-center-tax-benefits-investors' },
   { fr: '/societe-turquie-transit-trade-commerce-international', en: '/en/turkey-company-transit-trade-international-commerce', ru: '/ru/kompaniya-turtsiya-tranzitnaya-torgovlya', ar: '/ar/turkey-company-transit-trade-international-commerce' },
   { fr: '/centres-services-qualifies-turquie-avantages-fiscaux', en: '/en/qualified-service-centers-turkey-tax-benefits', ru: '/ru/kvalifitsirovannye-servisnye-tsentry-turtsiya', ar: '/ar/qualified-service-centers-turkey-tax-benefits' },
-  { fr: '/family-office-turquie-istanbul', en: '/en/family-office-turkey-istanbul', ru: '/ru/family-office-turtsiya-stambul', ar: '/ar/family-office-turkey-istanstanbul' },
+  { fr: '/family-office-turquie-istanbul', en: '/en/family-office-turkey-istanbul', ru: '/ru/family-office-turtsiya-stambul', ar: '/ar/family-office-turkey-istanbul' },
   { fr: '/industrie-fabrication-turquie-impot-societe-12-5', en: '/en/turkey-manufacturing-corporate-tax-12-5', ru: '/ru/proizvodstvo-turtsiya-nalog-na-pribyl-12-5', ar: '/ar/turkey-manufacturing-corporate-tax-12-5' },
   { fr: '/turquie-vs-dubai-investisseurs-fiscalite', en: '/en/turkey-vs-dubai-investors-tax', ru: '/ru/turtsiya-vs-dubai-investory-nalogi', ar: '/ar/turkey-vs-dubai-investors-tax' },
   ...longTailTaxRouteGroups,
@@ -62,7 +63,7 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
     information: locale === 'fr' ? 'Informations' : locale === 'en' ? 'Information' : locale === 'ru' ? 'Информация' : 'معلومات',
   };
   const searchLabel = locale === 'fr' ? 'Rechercher' : locale === 'en' ? 'Search' : locale === 'ru' ? 'Поиск' : 'بحث';
-  const mobilityLink = locale === 'fr' ? '/transferts-istanbul' : locale === 'en' ? '/en/istanbul-airport-transfer' : locale === 'ru' ? '/ru/transfer-aeroport-stambul' : '/ar/istanbul-airport-transfer';
+  const mobilityLink = locale === 'fr' ? '/transfert-aeroport-istanbul' : locale === 'en' ? '/en/istanbul-airport-transfer' : locale === 'ru' ? '/ru/transfer-aeroport-stambul' : '/ar/istanbul-airport-transfer';
   const peninsulaLink = locale === 'fr' ? '/peninsula-istanbul' : `/${locale}/peninsula-istanbul`;
   const corporateRelocationLink = corporateRelocationPaths[locale];
 
@@ -126,7 +127,7 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
         {menuOpen && <div className="max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-[hsl(220,35%,15%)] bg-[hsl(220,45%,8%)] px-6 py-6 lg:hidden"><div className="flex flex-col gap-3">{groups.map((group) => <div key={group.label} className="border-b border-white/5 pb-3"><button onClick={() => setOpenGroup(openGroup === group.label ? null : group.label)} className="flex w-full items-center justify-between py-2 text-left text-sm font-semibold uppercase tracking-[0.12em] text-[hsl(220,10%,55%)]">{group.label}<span className="text-[hsl(42,65%,45%)]">▾</span></button>{openGroup === group.label && <div className="mt-2 space-y-1 pl-3"><Link href={group.href} onClick={() => setMenuOpen(false)} className="block py-2 text-xs font-semibold uppercase tracking-[0.12em] text-[hsl(42,65%,52%)]">{locale === 'fr' ? 'Voir tout' : locale === 'en' ? 'View all' : locale === 'ru' ? 'Смотреть всё' : 'عرض الكل'}</Link>{group.items.map((item) => <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)} className="block py-2 text-sm text-[hsl(220,10%,65%)]">{item.label}</Link>)}</div>}</div>)}<div className="mt-3 flex flex-wrap gap-3 border-t border-[hsl(220,35%,15%)] pt-5">{locales.map((loc) => <Link key={loc} href={getLocaleHref(loc)} onClick={() => setMenuOpen(false)} className={`text-xs uppercase tracking-[0.12em] ${loc === locale ? 'font-semibold text-[hsl(42,65%,52%)]' : 'text-[hsl(220,10%,55%)]'}`} lang={loc}>{localeNames[loc]}</Link>)}</div><Link href={linkTo('private-assessment')} onClick={() => setMenuOpen(false)} className="mt-3 inline-flex justify-center border border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)] px-6 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[hsl(220,45%,8%)]">{t(locale, 'nav.assessment')}</Link></div></div>}
       </header>
       {isHomePath && <div className="bosphoras-home-hero"><HomeHero locale={locale} /></div>}
-      <SearchOverlay locale={locale} open={searchOpen} onClose={() => setSearchOpen(false)} />
+      {searchOpen && <SearchOverlay locale={locale} open={searchOpen} onClose={() => setSearchOpen(false)} />}
     </>
   );
 }

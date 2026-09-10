@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import seoRedirects from '@/data/seo-redirects.json';
 import { locales } from '@/lib/i18n';
 import { siteUrl } from '@/lib/routes';
 import { allPages } from '@/data/pages';
@@ -34,11 +35,13 @@ function encodeSitemapUrl(url: string) {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
   const entries: MetadataRoute.Sitemap = [];
   const seenUrls = new Set<string>();
 
+  const redirectSources = new Set(seoRedirects.map((entry) => entry.source));
+
   function addEntry(entry: MetadataRoute.Sitemap[number]) {
+    if (redirectSources.has(decodeURI(new URL(entry.url).pathname))) return;
     const encodedUrl = encodeSitemapUrl(entry.url);
     if (seenUrls.has(encodedUrl)) return;
     seenUrls.add(encodedUrl);
@@ -50,7 +53,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const url = getCanonicalUrl(locale, page.slug);
       addEntry({
         url,
-        lastModified: now,
         changeFrequency: 'monthly',
         priority: page.id === 'home' ? 1.0 : page.id === 'private-assessment' ? 0.9 : 0.8,
       });
@@ -68,11 +70,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   if (ENABLE_ALL_PROGRAMMATIC_PAGES) {
     for (const page of programmaticPages) {
+      if (!page.isIndexable) continue;
       if (page.service.priorityLevel === 3 && !ENABLE_PRIORITY_3_IN_SITEMAP) continue;
 
       addEntry({
         url: getCanonicalUrl(page.locale, page.slug),
-        lastModified: now,
         changeFrequency: 'monthly',
         priority: programmaticPriority(page.service.priorityLevel),
       });
@@ -121,7 +123,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const url of [...legacySeoPages, ...longTailTaxSitemapUrls]) {
     addEntry({
       url,
-      lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.95,
     });
@@ -131,7 +132,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const urlPath of Object.values(page.slugs)) {
       addEntry({
         url: absoluteUrl(urlPath),
-        lastModified: now,
         changeFrequency: 'weekly',
         priority: 0.96,
       });
@@ -141,7 +141,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   for (const locale of transferLocales) {
     addEntry({
       url: absoluteUrl(transferMainPaths[locale]),
-      lastModified: now,
       changeFrequency: 'weekly',
       priority: 0.98,
     });
@@ -150,14 +149,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       for (const term of group.terms) {
         addEntry({
           url: absoluteUrl(getTransferKeywordHref(locale, term)),
-          lastModified: now,
-          changeFrequency: 'weekly',
+            changeFrequency: 'weekly',
           priority: 0.92,
         });
       }
     }
   }
 
+  for (const locale of locales) {
+    if (locale !== 'fr') addEntry({ url: getCanonicalUrl(locale, '/contact'), changeFrequency: 'monthly', priority: 0.8 });
+    addEntry({ url: getCanonicalUrl(locale, '/peninsula-istanbul'), changeFrequency: 'monthly', priority: 0.7 });
+  }
   return entries;
 }
 

@@ -3,6 +3,7 @@ import './transfer-glass.css';
 import './header-menu.css';
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import { DocumentLanguage } from '@/components/DocumentLanguage';
 import { getPricingAmount } from '@/data/pricing';
 
 const defaultDescription =
@@ -21,10 +22,10 @@ const pricingSync = {
 export const metadata: Metadata = {
   title: {
     default: 'Bosphoras — Bureau Privé en Turquie',
-    template: '%s | Bosphoras',
+    template: '%s',
   },
   description: defaultDescription,
-  metadataBase: new URL('https://bosphoras.com'),
+  metadataBase: new URL('https://www.bosphoras.com'),
   openGraph: {
     title: 'Bosphoras — Bureau Privé en Turquie',
     description: defaultDescription,
@@ -52,160 +53,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="fr" suppressHydrationWarning>
       <body className="bg-[hsl(45,30%,96%)] font-sans antialiased text-[hsl(220,45%,12%)]">
+        <DocumentLanguage />
         {children}
-        <Script id="bosphoras-transfer-back-lock" strategy="beforeInteractive">
-          {`
-            (function() {
-              var transferPathPattern = /(transfer|transfert)/i;
-              var allowExitKey = 'bosphorasTransferPrivateOfficeExit';
-              var lockStateKey = 'bosphorasTransferLocked';
-              var lockDepth = 14;
-              var lockedUrl = '';
-              var isActive = false;
-              var listenersAdded = false;
-
-              function normalizeText(value) {
-                return (value || '')
-                  .toLowerCase()
-                  .replace(/[éèêë]/g, 'e')
-                  .replace(/[àâä]/g, 'a')
-                  .replace(/[îï]/g, 'i')
-                  .replace(/[ôö]/g, 'o')
-                  .replace(/[ùûü]/g, 'u')
-                  .replace(/[ç]/g, 'c');
-              }
-
-              function isTransferPath() {
-                return transferPathPattern.test(window.location.pathname);
-              }
-
-              function hasTransferBookingForm() {
-                try {
-                  var bodyText = normalizeText(document.body ? document.body.innerText : '');
-                  if (
-                    bodyText.indexOf('voir les vehicules') !== -1 ||
-                    bodyText.indexOf('reservez votre chauffeur') !== -1 ||
-                    bodyText.indexOf('1. trajet') !== -1
-                  ) {
-                    return true;
-                  }
-
-                  var fields = document.querySelectorAll('input, textarea, select, button, label');
-                  for (var index = 0; index < fields.length; index += 1) {
-                    var element = fields[index];
-                    var value = normalizeText(
-                      (element.getAttribute('placeholder') || '') + ' ' +
-                      (element.getAttribute('aria-label') || '') + ' ' +
-                      (element.textContent || '')
-                    );
-
-                    if (
-                      value.indexOf('adresse, hotel ou aeroport') !== -1 ||
-                      value.indexOf('destination, hotel') !== -1 ||
-                      value.indexOf('voir les vehicules') !== -1
-                    ) {
-                      return true;
-                    }
-                  }
-                } catch (error) {}
-
-                return false;
-              }
-
-              function shouldLockTransferPage() {
-                return isTransferPath() || hasTransferBookingForm();
-              }
-
-              function lockHistory() {
-                if (!isActive) return;
-
-                try {
-                  var currentState = Object.assign({}, window.history.state || {});
-                  currentState[lockStateKey] = true;
-                  window.history.replaceState(currentState, '', lockedUrl);
-
-                  for (var index = 0; index < lockDepth; index += 1) {
-                    window.history.pushState(
-                      { bosphorasTransferLocked: true, index: index, createdAt: Date.now() },
-                      '',
-                      lockedUrl,
-                    );
-                  }
-                } catch (error) {}
-              }
-
-              function allowPrivateOfficeExit(event) {
-                var element = event.target && event.target.closest ? event.target.closest('a,button') : null;
-                if (!element) return;
-
-                var text = normalizeText(element.textContent || '');
-                var href = normalizeText(element.getAttribute ? (element.getAttribute('href') || '') : '');
-                var value = text + ' ' + href;
-
-                if (
-                  value.indexOf('private office') !== -1 ||
-                  value.indexOf('private-office') !== -1 ||
-                  value.indexOf('bureau prive') !== -1 ||
-                  value.indexOf('bureau-prive') !== -1
-                ) {
-                  window.sessionStorage.setItem(allowExitKey, '1');
-                }
-              }
-
-              function keepOnTransferPage() {
-                if (!isActive) return;
-
-                if (window.sessionStorage.getItem(allowExitKey) === '1') {
-                  window.sessionStorage.removeItem(allowExitKey);
-                  return;
-                }
-
-                if (window.location.href !== lockedUrl) {
-                  window.location.replace(lockedUrl);
-                  return;
-                }
-
-                lockHistory();
-              }
-
-              function addListeners() {
-                if (listenersAdded) return;
-                listenersAdded = true;
-
-                document.addEventListener('click', allowPrivateOfficeExit, true);
-
-                window.addEventListener('popstate', function() {
-                  window.setTimeout(keepOnTransferPage, 0);
-                });
-
-                window.addEventListener('pageshow', function() {
-                  if (isActive) {
-                    window.setTimeout(lockHistory, 0);
-                  }
-                });
-              }
-
-              function activateTransferLock() {
-                if (isActive || !shouldLockTransferPage()) return;
-
-                isActive = true;
-                lockedUrl = window.location.href;
-                addListeners();
-                lockHistory();
-                window.setTimeout(lockHistory, 0);
-                window.setTimeout(lockHistory, 250);
-                window.setTimeout(lockHistory, 750);
-              }
-
-              activateTransferLock();
-              window.setTimeout(activateTransferLock, 0);
-              window.setTimeout(activateTransferLock, 250);
-              window.setTimeout(activateTransferLock, 750);
-              window.setTimeout(activateTransferLock, 1500);
-              document.addEventListener('DOMContentLoaded', activateTransferLock);
-            })();
-          `}
-        </Script>
         <Script id="bosphoras-pricing-sync" strategy="afterInteractive">
           {`
             (function() {
@@ -268,7 +117,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config', '${googleAdsId}');
           `}
         </Script>
-        <Script id="crisp-chatbox" strategy="afterInteractive">
+        <Script id="crisp-chatbox" strategy="lazyOnload">
           {`
             window.$crisp = [];
             window.CRISP_WEBSITE_ID = "0f78aef6-518a-4713-92b4-6178b0dda2fd";

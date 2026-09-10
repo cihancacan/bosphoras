@@ -54,7 +54,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
 
   const guide = getHighPotentialGuideBySlug(locale, slug);
   if (guide) {
-    return buildMetadata({ locale, path: guide.slug, title: guide.title, description: guide.metaDescription });
+    return buildMetadata({ locale, path: guide.slug, title: guide.title, description: guide.metaDescription, alternates: Object.fromEntries(highPotentialGuides.filter((item) => item.id === guide.id).map((item) => [item.locale, `https://www.bosphoras.com${item.locale === 'fr' ? '' : `/${item.locale}`}${item.slug}`])) });
   }
 
   const page = getPageBySlug(locale, slug);

@@ -1,3 +1,4 @@
+import { buildMetadata } from '@/lib/seo';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
@@ -174,5 +175,6 @@ export function PrivateAssessmentLocalizedPage({ locale }: Props) {
 export function buildPrivateAssessmentMetadata(locale: Locale): Metadata {
   const title = locale === 'fr' ? 'Contact privé | Diagnostic Bosphoras' : locale === 'en' ? 'Private Contact | Bosphoras Assessment' : locale === 'ru' ? 'Частный контакт | Консультация Bosphoras' : 'تواصل خاص | تقييم Bosphoras';
   const description = locale === 'fr' ? 'Contactez Bosphoras pour un diagnostic privé en Turquie : installation, fiscalité, société, santé, assurance, immobilier, bureaux, transport VIP, hôtels, événements et accès privé.' : locale === 'en' ? 'Contact Bosphoras for a private assessment in Turkey: relocation, tax, company, healthcare, insurance, property, offices, VIP transport, hotels, events and private access.' : locale === 'ru' ? 'Свяжитесь с Bosphoras для частной консультации по Турции: переезд, налоги, компания, здоровье, страхование, недвижимость, офисы, VIP transport, отели, мероприятия и private access.' : 'تواصلوا مع Bosphoras للحصول على تقييم خاص في تركيا: الانتقال، الضرائب، الشركة، الصحة، التأمين، العقار، المكاتب، النقل VIP، الفنادق، الفعاليات والوصول الخاص.';
-  return { title, description };
+  const path = locale === 'fr' ? copies[locale].currentPath : copies[locale].currentPath.slice(locale.length + 1);
+  return buildMetadata({ locale, path, title, description });
 }
