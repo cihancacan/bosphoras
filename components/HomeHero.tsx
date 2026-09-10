@@ -114,6 +114,9 @@ export function HomeHero({ locale }: { locale: Locale }) {
           </div>
 
           <p className="mt-4 max-w-2xl text-sm leading-6 text-[#efe4d2]">{c.reassurance}</p>
+          <blockquote className="mt-7 max-w-2xl border-t border-[#d2a863]/35 pt-5 font-serif text-xl italic leading-relaxed text-[#efe4d2] md:text-2xl">
+            “{copy.quote}”
+          </blockquote>
         </div>
       </div>
     </section>
