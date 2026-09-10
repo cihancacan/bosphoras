@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ArrowRight } from 'lucide-react';
+import { conversionCopy } from '@/data/conversion';
 import type { Locale } from '@/lib/i18n';
 
 type HomeHeroCopy = {
@@ -72,9 +72,10 @@ const heroCopy: Record<Locale, HomeHeroCopy> = {
 
 export function HomeHero({ locale }: { locale: Locale }) {
   const copy = heroCopy[locale];
+  const c = conversionCopy[locale];
 
   return (
-    <section className="relative min-h-[100svh] overflow-hidden bg-[#071426] pt-20 text-white md:min-h-[92vh] md:pt-32">
+    <section className="relative overflow-hidden bg-[#071426] pt-20 text-white md:min-h-[78vh] md:pt-32">
       <picture>
         <source media="(min-width: 768px)" srcSet="/images/hero-istanbul.jpg" />
         <img src="/images/mobile-istanbul.jpg" alt="" width={1200} height={1600}
@@ -84,44 +85,35 @@ export function HomeHero({ locale }: { locale: Locale }) {
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,8,18,0.76)_0%,rgba(7,20,38,0.56)_42%,rgba(7,20,38,0.24)_72%,rgba(7,20,38,0.10)_100%)]" />
       <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(3,8,18,0.66)_0%,rgba(3,8,18,0.04)_45%,rgba(3,8,18,0.46)_100%)]" />
 
-      <div className="container-editorial relative z-10 flex min-h-[calc(100svh-5rem)] items-center pb-5 md:min-h-[calc(92vh-7rem)] md:pb-12">
+      <div className="container-editorial relative z-10 flex items-center py-10 md:min-h-[calc(78vh-7rem)] md:py-16">
         <div className="max-w-4xl py-4 md:py-0">
           <p className="mb-4 text-[0.58rem] font-bold uppercase tracking-[0.28em] text-[#d2a863] md:mb-6 md:text-[0.62rem] md:tracking-[0.34em]">
             Bosphoras Private Desk
           </p>
-          <h1 className="max-w-4xl font-serif text-[2.45rem] leading-[1.02] tracking-[-0.045em] text-[#fffaf0] md:text-6xl lg:text-7xl">
-            {copy.h1}
+          <h1 className="max-w-4xl font-serif text-[2.2rem] leading-[1.02] tracking-[-0.045em] text-[#fffaf0] md:text-5xl lg:text-6xl">
+            {c.title}
           </h1>
-          <p className="mt-5 max-w-2xl text-[0.98rem] leading-7 text-[#efe4d2] md:mt-8 md:text-xl md:leading-10">
-            {copy.subtitle}{' '}
-            <span className="font-semibold text-white">{copy.closing}</span>
+          <p className="mt-5 max-w-2xl text-[0.98rem] leading-7 text-[#efe4d2] md:mt-6 md:text-xl md:leading-8">
+            {c.intro}
           </p>
-          <p className="mt-5 max-w-2xl border-l border-[#d2a863] pl-4 font-serif text-xl leading-snug text-[#fffaf0] md:mt-8 md:pl-5 md:text-3xl">
-            “{copy.quote}”
-          </p>
+
 
           <div className="mt-6 flex flex-col gap-3 sm:flex-row md:mt-10">
             <Link
-              href={copy.assessmentHref}
-              className="inline-flex items-center justify-center bg-[#d2a863] px-6 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-[#101827] transition hover:bg-[#e0bc78] md:px-8 md:py-4 md:text-sm md:tracking-[0.16em]"
+              href={copy.assessmentHref} data-cta-id="home_hero"
+              className="inline-flex items-center justify-center bg-[#d2a863] px-6 py-3.5 text-sm font-semibold text-[#101827] transition hover:bg-[#e0bc78] md:px-8 md:py-4 md:text-sm md:tracking-[0.16em]"
             >
-              {copy.primaryCta}
+              {c.cta}
             </Link>
             <Link
-              href={copy.servicesHref}
-              className="inline-flex items-center justify-center border border-[#d2a863]/80 bg-white/10 px-6 py-3.5 text-sm font-bold uppercase tracking-[0.14em] text-[#fffaf0] backdrop-blur-sm transition hover:bg-white/15 md:px-8 md:py-4 md:text-sm md:tracking-[0.16em]"
+              href="#votre-projet"
+              className="inline-flex min-h-[48px] items-center justify-center border border-transparent bg-transparent px-6 py-3.5 text-sm font-semibold text-[#fffaf0] underline underline-offset-4 transition hover:bg-white/15 md:px-8 md:py-4 md:text-sm md:tracking-[0.16em]"
             >
-              {copy.secondaryCta}
+              {c.choose}
             </Link>
           </div>
 
-          <Link
-            href={copy.membershipHref}
-            className="mt-4 inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.16em] text-[#d2a863] transition hover:text-[#fffaf0] md:mt-5 md:text-sm md:tracking-[0.18em]"
-          >
-            {copy.memberCta}
-            <ArrowRight className="h-4 w-4" />
-          </Link>
+          <p className="mt-4 max-w-2xl text-sm leading-6 text-[#efe4d2]">{c.reassurance}</p>
         </div>
       </div>
     </section>

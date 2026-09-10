@@ -1,7 +1,9 @@
 'use client';
 
 import { ArrowRight } from 'lucide-react';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { conversionCopy, projectIds } from '@/data/conversion';
+import { trackConversion } from '@/lib/conversionAnalytics';
 import type { Locale } from '@/lib/i18n';
 import { annualAdmissionLine, monthlyRetainerLine, formatPricingText } from '@/lib/pricingText';
 
@@ -68,7 +70,7 @@ async function submitForm(event: React.FormEvent<HTMLFormElement>, locale: Local
   setStatus('sending');
   try {
     const response = await fetch('/api/forms', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ locale, formKind, fields, sourcePath: window.location.pathname }) });
-    if (!response.ok) { setStatus('error'); return; }
+    if (!response.ok) { trackConversion('lead_form_error', { form_id: formKind, error_type: 'server' }); setStatus('error'); return; }
     // Count a lead only after the server has accepted it. Never send form values to analytics.
     const analyticsWindow = window as typeof window & { gtag?: (...args: unknown[]) => void };
     // Analytics must never prevent a successful request from being acknowledged.
@@ -76,6 +78,7 @@ async function submitForm(event: React.FormEvent<HTMLFormElement>, locale: Local
     form.reset();
     setStatus('success');
   } catch {
+    trackConversion('lead_form_error', { form_id: formKind, error_type: 'network' });
     setStatus('error');
   }
 }
@@ -88,14 +91,34 @@ function StatusMessage({ status, copy }: { status: Status; copy: { sending: stri
 
 export function BosphorasForm({ locale, embedded = false, kind = 'private-assessment' }: { locale: Locale; kind?: FormKind; embedded?: boolean }) {
   if (kind === 'membership-application') return <BosphorasMembershipForm locale={locale} embedded={embedded} />;
+  return <BosphorasAssessmentForm locale={locale} embedded={embedded} />;
+}
+function BosphorasAssessmentForm({ locale, embedded }: { locale: Locale; embedded: boolean }) {
   const copy = diagnostic[locale];
+  const c = conversionCopy[locale];
+  const started = useRef(false);
+  const successHeading = useRef<HTMLHeadingElement>(null);
+  const [selectedProject, setSelectedProject] = useState('');
+  useEffect(() => {
+    const project = new URLSearchParams(window.location.search).get('project');
+    const index = projectIds.findIndex(id => id === project);
+    if (index >= 0) setSelectedProject(c.projects[index][0]);
+  }, [locale, c]);
+
   const [status, setStatus] = useState<Status>('idle');
-  const form = (
-    <form onSubmit={(event) => submitForm(event, locale, 'private-assessment', setStatus)} className={formClass(embedded ? '' : 'mx-auto max-w-5xl')}>
+  useEffect(() => { if (status === 'success') successHeading.current?.focus(); }, [status]);
+  const onStart = () => {
+    if (started.current) return;
+    started.current = true;
+    trackConversion('lead_form_start', { form_id: 'private-assessment', language: locale });
+  };
+  const form = status === 'success' ? <div className={formClass(embedded ? '' : 'mx-auto max-w-5xl')} role="status"><h2 ref={successHeading} tabIndex={-1} className="font-serif text-3xl outline-none">{c.successTitle}</h2><p className="mt-4 text-base leading-7">{c.successText}</p></div> : (
+    <form onChange={onStart} onSubmit={(event) => submitForm(event, locale, 'private-assessment', setStatus)} className={formClass(embedded ? '' : 'mx-auto max-w-5xl')}>
       <div className="mb-8 border-b border-[#d8c7a1] pb-6"><p className="text-[0.62rem] font-bold uppercase tracking-[0.26em] text-[#8a6728]">{copy.eyebrow}</p><h2 className="mt-3 font-serif text-3xl tracking-[-0.03em] text-[#121826] md:text-4xl">{copy.title}</h2></div>
+      <div className="mb-5"><Field label={c.projectLabel}><select name={c.projectLabel} value={selectedProject} onChange={event => setSelectedProject(event.target.value)} className={inputClass()}><option value="">{c.projectEmpty}</option>{c.projects.map(project => <option key={project[0]} value={project[0]}>{project[0]}</option>)}</select></Field></div>
       <div className="grid gap-4 md:grid-cols-2">
         <Field label={copy.fullName}><input required name={copy.fullName.replace(' *', '')} type="text" autoComplete="name" placeholder={copy.placeholders.name} className={inputClass()} /></Field>
-        <Field label={copy.phone.replace(' *', '')}><input name={copy.phone.replace(' *', '')} type="tel" autoComplete="tel" placeholder={copy.placeholders.phone} className={inputClass()} /></Field>
+        <Field label={copy.phone.replace(' *', '')}><input name={copy.phone.replace(' *', '')} type="tel" aria-describedby="assessment-phone-help" autoComplete="tel" placeholder={copy.placeholders.phone} className={inputClass()} /><span id="assessment-phone-help" className="mt-1 block text-xs normal-case tracking-normal text-[#46505f]">{c.phoneHelp}</span></Field>
         <Field label={copy.email}><input required name={copy.email.replace(' *', '')} type="email" autoComplete="email" placeholder={copy.placeholders.email} className={inputClass()} /></Field>
 
       </div>
@@ -105,12 +128,12 @@ export function BosphorasForm({ locale, embedded = false, kind = 'private-assess
         <div className="mt-4 grid gap-4 md:grid-cols-2">
         <Field label={copy.residence}><input name={copy.residence} type="text" placeholder={copy.placeholders.residence} className={inputClass()} /></Field>
         <Field label={copy.city}><SelectField name={copy.city} options={copy.cityOptions} /></Field>
-        <Field label={copy.subject.replace(' *', '')}><SelectField name={copy.subject.replace(' *', '')} options={copy.subjectOptions} /></Field>
         <Field label={copy.timeline}><SelectField name={copy.timeline} options={copy.timelineOptions} /></Field>
         <Field label={copy.budget}><SelectField name={copy.budget} options={copy.budgetOptions} /></Field>
         </div>
       </details>
       <label className="mt-5 flex gap-3 text-sm leading-6 text-[#5c6676]"><input required name="Confidentiality accepted" type="checkbox" value="Yes" className="mt-1 h-4 w-4 border-[#d8c7a1]" /><span>{copy.consent}</span></label>
+      <p className="mt-5 text-sm leading-6 text-[#46505f]">{c.formHelp}</p>
       <button disabled={status === 'sending'} type="submit" className="mt-7 inline-flex w-full items-center justify-center gap-3 bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246] disabled:opacity-60 md:w-auto">{status === 'sending' ? copy.sending : copy.submit}<ArrowRight size={15} /></button>
       <StatusMessage status={status} copy={copy} />
     </form>

@@ -1,3 +1,4 @@
+import { conversionCopy } from '@/data/conversion';
 import { buildMetadata } from '@/lib/seo';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -135,6 +136,7 @@ interface Props { locale: Locale; }
 
 export function PrivateAssessmentLocalizedPage({ locale }: Props) {
   const copy = copies[locale];
+  const c = conversionCopy[locale];
 
   return (
     <>
@@ -145,8 +147,8 @@ export function PrivateAssessmentLocalizedPage({ locale }: Props) {
           <div className="container-editorial relative z-10 grid gap-12 py-12 md:py-20 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16">
             <div className="lg:pt-8">
               <p className="mb-5 text-xs font-bold uppercase tracking-[0.28em] text-[#8a6728]">{copy.eyebrow}</p>
-              <h1 className="max-w-3xl font-serif text-4xl leading-tight tracking-[-0.04em] text-[#121826] md:text-6xl">{copy.h1}</h1>
-              <p className="mt-6 max-w-2xl text-base leading-8 text-[#3e4857] md:text-lg">{copy.intro}</p>
+              <h1 className="max-w-3xl font-serif text-4xl leading-tight tracking-[-0.04em] text-[#121826] md:text-6xl">{c.formTitle}</h1>
+              <p className="mt-6 max-w-2xl text-base leading-8 text-[#3e4857] md:text-lg">{c.formIntro}</p>
               <div className="mt-8 grid gap-3 sm:grid-cols-2">
                 <div className="border border-[#d8c7a1] bg-[#fffaf0]/80 p-5"><Lock className="mb-4 h-5 w-5 text-[#8a6728]" /><p className="text-[0.62rem] uppercase leading-6 tracking-[0.16em] text-[#5c6676]">{copy.confidentiality}</p></div>
                 <div className="border border-[#d8c7a1] bg-[#fffaf0]/80 p-5"><Globe className="mb-4 h-5 w-5 text-[#8a6728]" /><p className="text-[0.62rem] uppercase leading-6 tracking-[0.16em] text-[#5c6676]">{copy.languages}</p></div>

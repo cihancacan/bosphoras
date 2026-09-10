@@ -1,3 +1,4 @@
+import { ConversionTracking } from '@/components/ConversionTracking';
 import './globals.css';
 import './transfer-glass.css';
 import './header-menu.css';
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="fr" suppressHydrationWarning>
       <body className="bg-[hsl(45,30%,96%)] font-sans antialiased text-[hsl(220,45%,12%)]">
         <DocumentLanguage />
+        <ConversionTracking />
         {children}
         <Script id="bosphoras-pricing-sync" strategy="afterInteractive">
           {`
