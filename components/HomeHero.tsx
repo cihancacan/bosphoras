@@ -113,10 +113,12 @@ export function HomeHero({ locale }: { locale: Locale }) {
             </Link>
           </div>
 
-          <p className="mt-4 max-w-2xl text-sm leading-6 text-[#efe4d2]">{c.reassurance}</p>
-          <blockquote className="mt-7 max-w-2xl border-t border-[#d2a863]/35 pt-5 font-serif text-xl italic leading-relaxed text-[#efe4d2] md:text-2xl">
-            “{copy.quote}”
-          </blockquote>
+          <div className="flex flex-col">
+            <p className="order-2 mt-5 max-w-2xl text-sm leading-6 text-[#efe4d2] md:order-1 md:mt-4">{c.reassurance}</p>
+            <blockquote className="order-1 mt-4 max-w-2xl border-t border-[#d2a863]/35 pt-4 font-sans text-lg font-medium leading-7 tracking-[0.01em] text-white md:order-2 md:mt-7 md:pt-5 md:text-xl">
+              “{copy.quote}”
+            </blockquote>
+          </div>
         </div>
       </div>
     </section>
