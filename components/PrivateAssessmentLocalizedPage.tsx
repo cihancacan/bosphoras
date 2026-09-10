@@ -141,22 +141,22 @@ export function PrivateAssessmentLocalizedPage({ locale }: Props) {
   return (
     <>
       <Header locale={locale} currentPath={copy.currentPath} />
-      <main className="bg-[#f8f1e7] pt-24 text-[#101827] md:pt-28">
+      <main lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className="bg-[#f8f1e7] pt-24 text-[#101827] md:pt-28">
         <section className="relative overflow-hidden border-b border-[#d8c7a1] bg-[radial-gradient(circle_at_82%_8%,rgba(196,151,84,0.20),transparent_28%),linear-gradient(135deg,#f8f1e7_0%,#fffaf0_55%,#efe4d2_100%)]">
           <div className="absolute inset-0 opacity-[0.18]" style={{ backgroundImage: 'linear-gradient(#d8c7a1 1px, transparent 1px), linear-gradient(90deg, #d8c7a1 1px, transparent 1px)', backgroundSize: '72px 72px' }} />
-          <div className="container-editorial relative z-10 grid gap-12 py-12 md:py-20 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16">
+          <div className="container-editorial relative z-10 grid gap-7 py-8 md:py-16 lg:grid-cols-[0.82fr_1.18fr] lg:gap-16">
             <div className="lg:pt-8">
               <p className="mb-5 text-xs font-bold uppercase tracking-[0.28em] text-[#8a6728]">{copy.eyebrow}</p>
               <h1 className="max-w-3xl font-serif text-4xl leading-tight tracking-[-0.04em] text-[#121826] md:text-6xl">{c.formTitle}</h1>
               <p className="mt-6 max-w-2xl text-base leading-8 text-[#3e4857] md:text-lg">{c.formIntro}</p>
-              <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                <div className="border border-[#d8c7a1] bg-[#fffaf0]/80 p-5"><Lock className="mb-4 h-5 w-5 text-[#8a6728]" /><p className="text-[0.62rem] uppercase leading-6 tracking-[0.16em] text-[#5c6676]">{copy.confidentiality}</p></div>
-                <div className="border border-[#d8c7a1] bg-[#fffaf0]/80 p-5"><Globe className="mb-4 h-5 w-5 text-[#8a6728]" /><p className="text-[0.62rem] uppercase leading-6 tracking-[0.16em] text-[#5c6676]">{copy.languages}</p></div>
+              <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm leading-6 text-[#46505f]">
+                <p className="inline-flex items-center gap-2"><Lock aria-hidden="true" size={16} />{copy.confidentiality}</p>
+                <p className="inline-flex items-center gap-2"><Globe aria-hidden="true" size={16} />{copy.languages}</p>
               </div>
-              <div className="mt-8 space-y-3 text-sm text-[#3e4857]">
+              <div className="mt-5 flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#3e4857]">
                 <p className="flex items-center gap-3"><Phone className="h-4 w-4 text-[#8a6728]" /><a href="tel:+33188842222" className="hover:text-[#8a6728]">01 88 84 22 22</a></p>
                 <p className="flex items-center gap-3"><Mail className="h-4 w-4 text-[#8a6728]" /><a href="mailto:contact@bosphoras.com" className="hover:text-[#8a6728]">contact@bosphoras.com</a></p>
-                <p className="flex items-center gap-3"><MapPin className="h-4 w-4 text-[#8a6728]" />{copy.locations}</p>
+                <p className="hidden items-center gap-3 lg:flex"><MapPin className="h-4 w-4 text-[#8a6728]" />{copy.locations}</p>
               </div>
             </div>
             <div className="relative">
