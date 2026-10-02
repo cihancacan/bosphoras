@@ -6,85 +6,96 @@ export const propertyRelocationSeoOverrides: Partial<Record<Locale, MainPageCont
     {
       id: 'property',
       locale: 'fr',
-      slug: '/services/immobilier-relocation',
-      title: 'Immobilier et relocation en Turquie : achat, location, quartier | Bosphoras',
-      h1: 'Immobilier en Turquie : choisir le bon bien, le bon quartier et le bon cadre',
+      slug: '/immobilier-turquie',
+      title: 'Immobilier en Turquie : investir à Istanbul, Bodrum & Antalya | Bosphoras',
+      h1: 'Immobilier en Turquie : des projets sélectionnés pour investir avec méthode',
       metaDescription:
-        'Immobilier et relocation en Turquie pour familles, expatriés et investisseurs : achat, location, quartier, due diligence, résidence, banque, fiscalité et installation.',
+        'Immobilier en Turquie pour investisseurs internationaux : projets sélectionnés à Istanbul, Bodrum et Antalya, plans de paiement, analyse technique, due diligence et accompagnement Bosphoras.',
       shortIntro:
-        `Acheter ou louer en Turquie ne doit pas commencer par une annonce immobilière. Le bon bien dépend d’abord de votre vie réelle : famille, école, travail, mobilité, fiscalité, banque, sécurité, durée de présence, style de vie et stratégie patrimoniale. Bosphoras n’est pas une agence immobilière classique. Nous agissons comme un bureau privé : comprendre votre projet, filtrer les options, coordonner les professionnels et éviter les décisions prises trop vite sous pression commerciale.`,
+        `Bosphoras Property Desk sélectionne des projets immobiliers en Turquie pour une clientèle internationale qui recherche autre chose qu'un catalogue d'annonces. Nous regardons l'emplacement, la qualité de construction, le prix, le plan de paiement, les coûts réels, le profil du promoteur et les points de vigilance. Notre objectif est de rendre l'investissement immobilier à Istanbul, Bodrum et Antalya plus lisible, plus transparent et plus simple à comparer.`,
       sections: [
         {
-          heading: 'Avant de visiter : définir le vrai besoin',
+          heading: 'Investir en Turquie avec un capital d’entrée clair',
           body:
-            `Beaucoup de clients visitent trop tôt, se laissent séduire par une vue, une terrasse, une marina ou un prix affiché, puis découvrent ensuite les contraintes : quartier mal adapté, distance avec l’école, charges, bruit, gestion de copropriété, liquidité, fiscalité, règlement de paiement, titre de propriété, location saisonnière ou difficulté bancaire. Bosphoras commence par cadrer le besoin avant d’ouvrir le marché.`,
+            `Un bien à 250 000 € ne signifie pas toujours 250 000 € à verser immédiatement. Sur certains projets neufs, le promoteur peut proposer un acompte puis un échéancier jusqu'à la livraison. Bosphoras présente séparément le prix total, le capital nécessaire aujourd'hui, les échéances futures et la date de livraison lorsque ces informations sont disponibles et vérifiées.`,
           bullets: [
-            'Définition du projet : résidence principale, pied-à-terre, investissement, villa, bureau ou base familiale',
-            'Analyse du mode de vie : école, santé, transport, chauffeur, sécurité, mer, business et discrétion',
-            'Comparaison entre Istanbul, Bodrum, Antalya et autres zones selon le profil',
-            'Décision louer avant d’acheter lorsque cela protège mieux le client et son capital',
+            'Prix total du bien et devise de référence',
+            'Capital nécessaire à la réservation ou à la signature',
+            'Plan de paiement promoteur et échéances documentées',
+            'Coût d’acquisition à distinguer du seul prix affiché',
           ],
         },
         {
-          heading: 'Istanbul, Bodrum, Antalya : trois logiques immobilières différentes',
+          heading: 'Bosphoras Selection : moins de biens, plus d’analyse',
           body:
-            `Istanbul est un marché de quartiers : Nişantaşı, Bebek, Etiler, Levent, Maslak, Zekeriyaköy ou la rive asiatique ne répondent pas aux mêmes priorités. Bodrum est un marché de villas, marinas, saisonnalité, vues, accès mer et gestion d’un actif premium. Antalya peut être une base familiale rationnelle, avec un climat doux, des services privés et un coût de vie plus lisible. Le choix du lieu vaut autant que le bien lui-même.`,
+            `Nous ne cherchons pas à afficher des milliers d'annonces. La sélection doit rester lisible : projets neufs, appartements, résidences premium, villas et opportunités privées provenant de partenaires identifiés. Chaque opportunité doit répondre à une logique précise : investissement, résidence, location, usage familial ou conservation patrimoniale.`,
           bullets: [
-            'Istanbul : appartements premium, résidences sécurisées, écoles, business et santé privée',
-            'Bodrum : villas, marina, lifestyle, locations saisonnières, maintenance et confidentialité',
-            'Antalya : famille, mer, santé, communauté internationale et installation longue durée',
-            'Analyse du quartier avant analyse du prix',
+            'Selected Investments : projets avec logique d’investissement et conditions lisibles',
+            'Signature Collection : résidences et villas à forte qualité d’usage ou de localisation',
+            'Private Opportunities : opportunités accessibles sur demande selon le profil',
+            'Aucune promesse de rendement : hypothèses, coûts et risques doivent être distingués',
           ],
         },
         {
-          heading: 'Due diligence : protéger l’achat avant la signature',
+          heading: 'Analyse technique : un beau rendu 3D ne suffit pas',
           body:
-            `Un bien immobilier en Turquie doit être vérifié avec méthode. Le contrat, le titre, les autorisations, les charges, les servitudes, le promoteur, l’ancien propriétaire, le calendrier de paiement, l’évaluation, la banque et les conséquences fiscales doivent être compris avant toute décision. Bosphoras coordonne les bons professionnels, mais ne remplace pas l’avocat, le notaire, l’expert ou le fiscaliste.`,
+            `La valeur d'un projet ne se limite pas à la piscine, au lobby ou à une vue spectaculaire. Bosphoras examine la cohérence du produit : structure, façades, menuiseries, isolation, équipements, parties communes, plan des appartements, qualité des finitions, maintenance future et adéquation entre le niveau de construction et le prix demandé. Les contrôles techniques nécessitant une expertise réglementée sont confiés aux professionnels habilités.`,
           bullets: [
-            'Coordination avec avocats, agents sélectionnés, experts, fiscalistes et banques si nécessaire',
-            'Vérification du titre, du contrat, du paiement, des risques et des documents disponibles',
-            'Lecture des impacts : résidence, succession, fiscalité, location, assurance et gestion',
-            'Aucune pression commerciale : le rôle du bureau privé est de protéger la décision',
+            'Qualité de construction et niveau de finition',
+            'Cohérence du prix au m² avec le produit et la localisation',
+            'Charges, maintenance et vieillissement probable des prestations',
+            'Points forts mais aussi points de vigilance avant décision',
           ],
         },
         {
-          heading: 'Location, installation et relocation : le quotidien compte autant que le bien',
+          heading: 'Istanbul, Bodrum, Antalya : trois stratégies différentes',
           body:
-            `Pour une famille internationale, le logement n’est qu’une partie de l’installation. Il faut organiser l’arrivée, le bail, l’état des lieux, les abonnements, internet, assurance habitation, ameublement, école, médecin, chauffeur, ménage, sécurité, traduction et services de proximité. Bosphoras relie l’immobilier à la relocation pour que le client puisse réellement vivre dans le bien, pas seulement le posséder.`,
+            `Istanbul offre le marché le plus profond pour la vie urbaine, le business et la demande locative à l'année. Bodrum se positionne davantage sur les villas, les marinas, les résidences premium et l'usage patrimonial ou saisonnier. Antalya combine une base de vie internationale, le littoral méditerranéen et des tickets d'entrée parfois plus accessibles. Le choix dépend du profil de l'investisseur, pas d'un classement universel.`,
           bullets: [
-            'Recherche de location sécurisée avant achat si le profil le demande',
-            'Coordination du bail, documents, dépôt, état des lieux et installation pratique',
-            'Mise en relation avec services utiles : assurance, internet, ménage, chauffeur, maintenance',
-            'Suivi post-arrivée pendant les premières semaines ou dans le cadre Private Desk',
+            'Immobilier Istanbul : liquidité, quartiers, business, résidence et location longue durée',
+            'Immobilier Bodrum : villas, mer, marina, prestige et usage saisonnier',
+            'Immobilier Antalya : résidence, famille, littoral et investissements plus accessibles',
+            'Comparaison du quartier, du produit et de la stratégie avant comparaison du prix',
           ],
         },
         {
-          heading: 'Un immobilier sans pression, intégré à votre stratégie Turquie',
+          heading: 'Due diligence et cadre de transaction',
           body:
-            `Le bon achat n’est pas toujours le plus spectaculaire. Il doit être cohérent avec votre résidence, votre fiscalité, votre famille, votre banque, votre horizon de détention et votre capacité à gérer le bien. Bosphoras vous aide à éviter le réflexe émotionnel, à comparer les scénarios et à prendre une décision alignée avec votre projet global en Turquie.`,
+            `Avant tout paiement, il faut comprendre le titre, le contrat, le promoteur ou vendeur, les autorisations, le calendrier, les charges, la valorisation, la situation juridique et les conséquences fiscales pertinentes. Bosphoras coordonne le dossier et les bons interlocuteurs. Les actes relevant de l'intermédiation immobilière réglementée, du droit, de la fiscalité, de l'évaluation ou de la transaction sont réalisés ou validés par les professionnels autorisés concernés.`,
           bullets: [
-            'Approche patrimoniale, familiale et opérationnelle du projet immobilier',
-            'Coordination avec conseil juridique et fiscal, banque, assurance et installation',
-            'Possibilité d’intégrer conciergerie, chauffeur, maintenance, hôtels, yacht ou lifestyle',
-            'Traitement prioritaire pour certains profils via Bosphoras Private Access',
+            'Partenaire immobilier ou promoteur clairement identifié',
+            'Coordination avocat, expert, banque et fiscaliste selon le dossier',
+            'Lecture du contrat et du calendrier avant transfert de fonds',
+            'Traçabilité des rôles : qui présente, qui vend, qui vérifie et qui encaisse',
+          ],
+        },
+        {
+          heading: 'Après l’achat : Property Care et installation',
+          body:
+            `L'achat n'est que le début. Selon le projet, Bosphoras peut coordonner l'ameublement, les travaux, l'assurance, la mise en location, la maintenance, les abonnements, le chauffeur, la relocation et la gestion pratique. Le Property Desk s'intègre ainsi au bureau privé Bosphoras et à la stratégie globale du client en Turquie.`,
+          bullets: [
+            'Ameublement, travaux et contrôle de la livraison',
+            'Assurance, maintenance et gestion locale',
+            'Location et suivi par les partenaires habilités lorsque nécessaire',
+            'Relocation, banque, résidence et services privés autour du bien',
           ],
         },
       ],
       faqs: [
-        { question: 'Bosphoras est-il une agence immobilière en Turquie ?', answer: 'Non. Bosphoras est un bureau privé de coordination. Nous pouvons introduire des agents sélectionnés et coordonner les vérifications, mais notre rôle principal est de protéger la cohérence du projet du client.' },
-        { question: 'Faut-il acheter ou louer d’abord en Turquie ?', answer: 'Dans beaucoup de cas, louer d’abord est plus prudent. Cela permet de tester un quartier, une école, les trajets, le voisinage et le rythme réel avant d’engager du capital.' },
-        { question: 'Pouvez-vous accompagner un achat immobilier à Istanbul ou Bodrum ?', answer: 'Oui. Bosphoras peut coordonner la recherche, les visites, les professionnels, les documents et la due diligence, selon le profil et le cadre de mission.' },
-        { question: 'Vérifiez-vous les titres de propriété et contrats ?', answer: 'Les vérifications juridiques doivent être réalisées par des professionnels habilités. Bosphoras coordonne ces intervenants et s’assure que les bonnes questions sont posées avant signature.' },
-        { question: 'Pouvez-vous gérer l’installation dans le logement ?', answer: 'Oui. Bosphoras peut coordonner bail, assurance, internet, maintenance, ménage, chauffeur, ameublement, services de proximité et suivi post-arrivée.' },
-        { question: 'L’immobilier peut-il être lié à la résidence ou à la fiscalité ?', answer: 'Oui, et c’est précisément pourquoi il faut coordonner immobilier, résidence, fiscalité, banque et succession avant de signer.' },
+        { question: 'Quel est le meilleur investissement immobilier en Turquie ?', answer: 'Il n’existe pas de meilleur bien universel. Istanbul, Bodrum et Antalya répondent à des logiques différentes. Bosphoras compare le produit, le quartier, le prix, le calendrier de paiement, les coûts et l’objectif réel de l’investisseur.' },
+        { question: 'Peut-on acheter un appartement en Turquie avec un paiement échelonné ?', answer: 'Certains promoteurs proposent des plans de paiement sur des projets neufs. Les conditions varient selon le projet. Bosphoras affiche uniquement les échéanciers communiqués et confirmés par le partenaire ou le promoteur concerné.' },
+        { question: 'Combien faut-il pour investir dans l’immobilier en Turquie ?', answer: 'Le prix total et le capital nécessaire aujourd’hui sont deux informations différentes. Le ticket d’entrée dépend du bien, du promoteur, de l’acompte demandé et du plan de paiement. Notre présentation les distingue clairement.' },
+        { question: 'Bosphoras est-il une agence immobilière ?', answer: 'Bosphoras agit comme Property Desk et bureau privé de sélection, mise en relation et coordination. Les prestations réglementées d’intermédiation et la transaction sont réalisées dans le cadre applicable avec les professionnels autorisés concernés.' },
+        { question: 'Analysez-vous la qualité de construction ?', answer: 'Oui, dans notre lecture du produit et de sa valeur. Lorsqu’une expertise ou un contrôle réglementé est nécessaire, il est réalisé par un professionnel habilité.' },
+        { question: 'Peut-on acheter pour louer ensuite ?', answer: 'Oui, selon le bien et le cadre local. La demande locative, les règles applicables, les charges, la saisonnalité et les coûts de gestion doivent être intégrés avant de calculer un rendement potentiel.' },
       ],
-      cta: { label: 'Cadrer mon projet immobilier en Turquie', href: '/diagnostic-prive', secondaryLabel: 'Voir le conseil juridique et fiscal', secondaryHref: '/services/conseil-juridique-fiscal' },
-      jsonLdType: 'Service',
+      cta: { label: 'Accéder au Property Desk', href: '/diagnostic-prive', secondaryLabel: 'Conseil juridique et fiscal', secondaryHref: '/services/conseil-juridique-fiscal' },
+      jsonLdType: 'CollectionPage',
       internalLinks: [
-        { pageId: 'relocate', label: 'Installation en Turquie' },
-        { pageId: 'legal-tax', label: 'Conseil juridique et fiscal' },
         { pageId: 'istanbul', label: 'Immobilier à Istanbul' },
-        { pageId: 'bodrum', label: 'Vivre et investir à Bodrum' },
+        { pageId: 'bodrum', label: 'Immobilier à Bodrum' },
+        { pageId: 'antalya', label: 'Immobilier à Antalya' },
+        { pageId: 'legal-tax', label: 'Conseil juridique et fiscal' },
         { pageId: 'private-assessment', label: 'Diagnostic privé' },
       ],
     },
@@ -93,35 +104,66 @@ export const propertyRelocationSeoOverrides: Partial<Record<Locale, MainPageCont
     {
       id: 'property',
       locale: 'en',
-      slug: '/services/property-relocation',
-      title: 'Property and relocation in Turkey: buy, rent, due diligence | Bosphoras',
-      h1: 'Property in Turkey: choose the right home, neighborhood and structure',
+      slug: '/property-turkey',
+      title: 'Property in Turkey: Istanbul, Bodrum & Antalya investments | Bosphoras',
+      h1: 'Property in Turkey: selected opportunities for international investors',
       metaDescription:
-        'Property and relocation in Turkey for families, expatriates and investors: buying, renting, neighborhood selection, due diligence, residence, banking, tax and installation.',
+        'Property in Turkey for international investors: selected projects in Istanbul, Bodrum and Antalya, developer payment plans, technical review, due diligence and Bosphoras coordination.',
       shortIntro:
-        `Buying or renting in Turkey should not begin with a property listing. The right home depends first on real life: family, school, work, mobility, tax, banking, safety, length of stay, lifestyle and patrimonial strategy. Bosphoras is not a classic real estate agency. We act as a private desk: understand the project, filter options, coordinate professionals and avoid rushed decisions under sales pressure.`,
+        `Bosphoras Property Desk is built for international buyers who want more than a property portal. We look at location, build quality, price, payment plan, total acquisition cost, developer profile and the points that deserve caution. The aim is to make property investment in Istanbul, Bodrum and Antalya easier to understand and compare.`,
       sections: [
-        { heading: 'Before visits: define the real need', body: `Many clients visit too early, fall in love with a view, terrace, marina or asking price, and later discover constraints: wrong neighborhood, school distance, service charges, noise, building management, liquidity, tax, payment plan, title deed, seasonal rental rules or banking difficulty. Bosphoras frames the need before opening the market.`, bullets: ['Main residence, pied-à-terre, investment, villa, office or family base', 'Lifestyle analysis: schools, healthcare, transport, driver, security, sea, business and privacy', 'Comparison between Istanbul, Bodrum, Antalya and other areas by profile', 'Rent before buying when it protects the client and capital better'] },
-        { heading: 'Istanbul, Bodrum, Antalya: three different property logics', body: `Istanbul is a neighborhood market: Nişantaşı, Bebek, Etiler, Levent, Maslak, Zekeriyaköy or the Asian side answer different priorities. Bodrum is about villas, marinas, seasonality, views, sea access and premium asset management. Antalya can be a rational family base with climate, private services and clearer daily-life costs. Location matters as much as the property itself.`, bullets: ['Istanbul: premium apartments, secure residences, schools, business and private healthcare', 'Bodrum: villas, marina, lifestyle, seasonal rentals, maintenance and privacy', 'Antalya: family life, sea, healthcare, international community and long-term relocation', 'Neighborhood analysis before price analysis'] },
-        { heading: 'Due diligence: protect the purchase before signing', body: `A property in Turkey must be reviewed methodically. Contract, title deed, authorizations, service charges, easements, developer, previous owner, payment timeline, valuation, banking and tax consequences should be understood before any decision. Bosphoras coordinates the right professionals without replacing lawyers, notaries, experts or tax advisors.`, bullets: ['Coordination with lawyers, selected agents, experts, tax advisors and banks when needed', 'Review of title, contract, payment, risks and available documents', 'Impact reading: residence, succession, tax, rental, insurance and management', 'No sales pressure: the private desk protects the decision'] },
-        { heading: 'Rental, installation and relocation: daily life matters', body: `For an international family, housing is only one part of relocation. Arrival, lease, handover, utilities, internet, home insurance, furniture, school, doctor, driver, housekeeping, safety, translation and local services must be organized. Bosphoras connects property with relocation so the client can actually live in the home, not just own it.`, bullets: ['Secure rental search before purchase when needed', 'Lease, documents, deposit, handover and practical installation', 'Insurance, internet, housekeeping, driver, maintenance and local services', 'Post-arrival follow-up during the first weeks or under Private Desk support'] },
-        { heading: 'Property without pressure, integrated into your Turkey strategy', body: `The right purchase is not always the most spectacular one. It must fit your residence, tax, family, banking, holding horizon and ability to manage the asset. Bosphoras helps avoid emotional decisions, compare scenarios and choose in line with your wider Turkey project.`, bullets: ['Patrimonial, family and operational reading of the property project', 'Coordination with legal-tax, banking, insurance and relocation', 'Concierge, driver, maintenance, hotel, yacht or lifestyle integration when relevant', 'Priority handling for selected profiles through Bosphoras Private Access'] },
+        {
+          heading: 'A clear entry capital, not only a headline price',
+          body:
+            `A property priced at €250,000 does not always require €250,000 on day one. Some new-build developers offer a deposit followed by scheduled payments up to completion. When verified and available, Bosphoras separates the total property price, capital required today, future instalments and expected completion date.`,
+          bullets: ['Total property price and reference currency', 'Capital required at reservation or signing', 'Verified developer payment schedule', 'Total acquisition cost separated from the headline price'],
+        },
+        {
+          heading: 'Bosphoras Selection: fewer properties, deeper analysis',
+          body:
+            `We do not aim to publish thousands of listings. The selection is intentionally focused: new developments, apartments, premium residences, villas and private opportunities sourced through identified partners. Each opportunity should have a clear use case: investment, residence, rental, family use or long-term wealth preservation.`,
+          bullets: ['Selected Investments with a documented investment case', 'Signature Collection for premium residences and villas', 'Private Opportunities available on request', 'No guaranteed returns: assumptions, costs and risks remain explicit'],
+        },
+        {
+          heading: 'Technical review: a beautiful rendering is not enough',
+          body:
+            `Pools, lobbies and CGI do not define value. Bosphoras reviews the product logic: structure, façade, windows, insulation, equipment, common areas, layouts, finish quality, future maintenance and whether the construction level is coherent with the asking price. Regulated technical inspections are assigned to qualified professionals when required.`,
+          bullets: ['Build quality and finish level', 'Price per square metre versus product and location', 'Service charges, maintenance and long-term usability', 'Strengths and watchpoints before a decision'],
+        },
+        {
+          heading: 'Istanbul, Bodrum and Antalya serve different strategies',
+          body:
+            `Istanbul offers the deepest urban market, business ecosystem and year-round rental demand. Bodrum is more focused on villas, marinas, premium residences and lifestyle or wealth-preservation use. Antalya combines an international coastal lifestyle with entry points that can be more accessible. The right city depends on the investor profile rather than a universal ranking.`,
+          bullets: ['Istanbul property: liquidity, districts, business and year-round demand', 'Bodrum property: villas, sea, marina, prestige and seasonal use', 'Antalya property: residence, family, coast and more accessible investment cases', 'Compare location, product and strategy before headline price'],
+        },
+        {
+          heading: 'Due diligence and transaction framework',
+          body:
+            `Before funds move, the title, contract, developer or seller, permits, payment schedule, charges, valuation, legal position and relevant tax consequences should be understood. Bosphoras coordinates the process and the right professionals. Regulated brokerage, legal, tax, valuation and transaction work is performed or validated by the relevant authorised professionals.`,
+          bullets: ['Clearly identified developer or authorised property partner', 'Lawyer, valuer, bank and tax coordination when relevant', 'Contract and payment schedule review before funds are transferred', 'Clear roles: who presents, sells, checks and receives funds'],
+        },
+        {
+          heading: 'After purchase: Property Care and relocation',
+          body:
+            `The purchase is only the beginning. Depending on the project, Bosphoras can coordinate furnishing, works, insurance, rental management, maintenance, utilities, driver services and relocation. The Property Desk therefore connects directly with the wider Bosphoras private-office relationship.`,
+          bullets: ['Furnishing, works and handover coordination', 'Insurance, maintenance and local management', 'Rental support through authorised partners when required', 'Relocation, banking, residence and private services around the property'],
+        },
       ],
       faqs: [
-        { question: 'Is Bosphoras a real estate agency in Turkey?', answer: 'No. Bosphoras is a private coordination desk. We may introduce selected agents and coordinate checks, but our main role is to protect the coherence of the client project.' },
-        { question: 'Should I buy or rent first in Turkey?', answer: 'In many cases, renting first is safer. It allows the family to test a neighborhood, school, commute, neighbors and daily rhythm before committing capital.' },
-        { question: 'Can you support a property purchase in Istanbul or Bodrum?', answer: 'Yes. Bosphoras can coordinate search, visits, professionals, documents and due diligence depending on the profile and mission scope.' },
-        { question: 'Do you verify title deeds and contracts?', answer: 'Legal checks must be performed by qualified professionals. Bosphoras coordinates those professionals and makes sure the right questions are asked before signing.' },
-        { question: 'Can you manage the move into the property?', answer: 'Yes. Bosphoras can coordinate lease, insurance, internet, maintenance, housekeeping, driver, furniture, local services and post-arrival follow-up.' },
-        { question: 'Can property be linked to residence or tax?', answer: 'Yes. That is why property, residence, tax, banking and succession should be coordinated before signing.' },
+        { question: 'What is the best property investment in Turkey?', answer: 'There is no universal best property. Istanbul, Bodrum and Antalya serve different strategies. We compare the asset, district, price, payment schedule, costs and the investor’s actual objective.' },
+        { question: 'Can foreigners buy property in Turkey with instalments?', answer: 'Some developers offer instalment plans on new-build projects. Terms vary by development. Bosphoras only presents payment schedules communicated and confirmed by the relevant developer or partner.' },
+        { question: 'How much capital do I need to invest in Turkey property?', answer: 'The total purchase price and the capital required today are different figures. The entry amount depends on the property, developer, deposit and payment plan. Our presentation keeps those numbers separate.' },
+        { question: 'Is Bosphoras a real estate agency?', answer: 'Bosphoras operates as a Property Desk and private office for selection, introductions and coordination. Regulated brokerage and transaction services are handled within the applicable framework by the relevant authorised professionals.' },
+        { question: 'Do you review construction quality?', answer: 'Yes, as part of our product and value assessment. Where a regulated technical inspection is required, it is carried out by a qualified professional.' },
+        { question: 'Can the property be rented after purchase?', answer: 'Potentially, depending on the property and local rules. Rental demand, regulation, charges, seasonality and management costs must be included before discussing a potential yield.' },
       ],
-      cta: { label: 'Frame my property project in Turkey', href: '/private-assessment', secondaryLabel: 'Legal and tax advisory', secondaryHref: '/services/legal-tax-advisory' },
-      jsonLdType: 'Service',
+      cta: { label: 'Access the Property Desk', href: '/private-assessment', secondaryLabel: 'Legal and tax advisory', secondaryHref: '/services/legal-tax-advisory' },
+      jsonLdType: 'CollectionPage',
       internalLinks: [
-        { pageId: 'relocate', label: 'Relocation to Turkey' },
-        { pageId: 'legal-tax', label: 'Legal and tax advisory' },
         { pageId: 'istanbul', label: 'Property in Istanbul' },
-        { pageId: 'bodrum', label: 'Live and invest in Bodrum' },
+        { pageId: 'bodrum', label: 'Property in Bodrum' },
+        { pageId: 'antalya', label: 'Property in Antalya' },
+        { pageId: 'legal-tax', label: 'Legal and tax advisory' },
         { pageId: 'private-assessment', label: 'Private assessment' },
       ],
     },
@@ -130,35 +172,66 @@ export const propertyRelocationSeoOverrides: Partial<Record<Locale, MainPageCont
     {
       id: 'property',
       locale: 'ru',
-      slug: '/uslugi/nedvizhimost-pereezd',
-      title: 'Недвижимость и relocation в Турции: покупка, аренда, проверка | Bosphoras',
-      h1: 'Недвижимость в Турции: выбрать правильный объект, район и структуру',
+      slug: '/nedvizhimost-v-turtsii',
+      title: 'Недвижимость в Турции: Стамбул, Бодрум и Анталья | Bosphoras',
+      h1: 'Недвижимость в Турции: отобранные проекты для международных инвесторов',
       metaDescription:
-        'Недвижимость и relocation в Турции для семей, экспатов и инвесторов: покупка, аренда, район, due diligence, резиденция, банк, налоги и установка.',
+        'Недвижимость в Турции для инвесторов: проекты в Стамбуле, Бодруме и Анталье, рассрочка от застройщика, технический анализ, due diligence и сопровождение Bosphoras.',
       shortIntro:
-        `Покупка или аренда в Турции не должна начинаться с объявления. Правильный объект зависит от реальной жизни: семья, школа, работа, мобильность, налоги, банк, безопасность, срок пребывания, lifestyle и стратегия капитала. Bosphoras — не классическое агентство недвижимости. Мы работаем как частный офис: понимаем проект, фильтруем варианты, координируем специалистов и защищаем клиента от быстрых решений под давлением продаж.`,
+        `Bosphoras Property Desk создан для международных покупателей, которым нужен не очередной каталог объявлений, а отобранные проекты с понятной логикой. Мы смотрим на локацию, качество строительства, цену, график платежей, полную стоимость покупки, застройщика и риски. Цель — сделать инвестиции в недвижимость Стамбула, Бодрума и Антальи прозрачнее и проще для сравнения.`,
       sections: [
-        { heading: 'До просмотров: определить реальную потребность', body: `Многие клиенты начинают просмотры слишком рано, влюбляются в вид, террасу, марину или цену, а потом видят ограничения: неподходящий район, расстояние до школы, charges, шум, управление домом, ликвидность, налоги, график оплаты, title deed, правила seasonal rental или банковские сложности. Bosphoras сначала фиксирует потребность, потом открывает рынок.`, bullets: ['Основное жильё, pied-à-terre, инвестиция, вилла, офис или семейная база', 'Lifestyle-анализ: школа, медицина, транспорт, водитель, безопасность, море, бизнес, приватность', 'Сравнение Стамбула, Бодрума, Антальи и других зон по профилю', 'Аренда до покупки, когда это лучше защищает клиента и капитал'] },
-        { heading: 'Стамбул, Бодрум, Анталья: три разные логики рынка', body: `Стамбул — рынок районов: Nişantaşı, Bebek, Etiler, Levent, Maslak, Zekeriyaköy или азиатская сторона отвечают разным приоритетам. Бодрум — виллы, marinas, сезонность, виды, доступ к морю и управление premium asset. Анталья может быть рациональной семейной базой с климатом, частными сервисами и понятной повседневной стоимостью. Локация важна не меньше самого объекта.`, bullets: ['Стамбул: premium apartments, безопасные резиденции, школы, бизнес и частная медицина', 'Бодрум: виллы, marina, lifestyle, сезонная аренда, обслуживание и приватность', 'Анталья: семья, море, медицина, международное окружение и long-term relocation', 'Сначала анализ района, потом анализ цены'] },
-        { heading: 'Due diligence: защитить покупку до подписи', body: `Объект в Турции нужно проверять методично. Контракт, title deed, разрешения, charges, ограничения, девелопер, предыдущий владелец, график оплаты, оценка, банк и налоговые последствия должны быть понятны до решения. Bosphoras координирует специалистов, не заменяя юриста, нотариуса, эксперта или налогового консультанта.`, bullets: ['Координация с юристами, выбранными агентами, экспертами, налоговыми консультантами и банками', 'Проверка title, договора, платежей, рисков и доступных документов', 'Анализ влияния: резиденция, наследование, налоги, аренда, страховка, управление', 'Без давления продаж: задача частного офиса — защитить решение'] },
-        { heading: 'Аренда, установка и relocation: быт так же важен', body: `Для международной семьи жильё — только часть переезда. Нужно организовать приезд, договор аренды, handover, utilities, интернет, страховку жилья, мебель, школу, врача, водителя, уборку, безопасность, переводы и локальные сервисы. Bosphoras связывает недвижимость и relocation, чтобы клиент мог реально жить в объекте, а не только владеть им.`, bullets: ['Поиск безопасной аренды до покупки при необходимости', 'Договор, документы, депозит, handover и практическая установка', 'Страховка, интернет, уборка, водитель, maintenance и локальные услуги', 'Follow-up после приезда в первые недели или в рамках Private Desk'] },
-        { heading: 'Недвижимость без давления, в стратегии Турции', body: `Правильная покупка не всегда самая эффектная. Она должна соответствовать резиденции, налогам, семье, банку, горизонту владения и способности управлять активом. Bosphoras помогает избежать эмоционального решения, сравнить сценарии и выбрать в логике вашего общего проекта в Турции.`, bullets: ['Имущественный, семейный и операционный анализ недвижимости', 'Координация с legal-tax, банком, страхованием и relocation', 'Concierge, водитель, maintenance, hotel, yacht или lifestyle при необходимости', 'Приоритет для выбранных профилей через Bosphoras Private Access'] },
+        {
+          heading: 'Понятный входной капитал и рассрочка',
+          body:
+            `Цена объекта и сумма, необходимая сегодня, — не всегда одно и то же. В некоторых новостройках застройщик предлагает первоначальный взнос и дальнейшую рассрочку до сдачи. Bosphoras отдельно показывает общую стоимость, первый платеж, будущие взносы и срок сдачи, когда эти данные подтверждены.`,
+          bullets: ['Полная цена и валюта', 'Сумма для бронирования или подписания', 'Подтвержденный график рассрочки от застройщика', 'Полная стоимость приобретения отдельно от рекламной цены'],
+        },
+        {
+          heading: 'Bosphoras Selection: меньше объектов, больше анализа',
+          body:
+            `Наша задача — не публиковать тысячи квартир. В подборке остаются новостройки, квартиры, премиальные резиденции, виллы и частные предложения от идентифицированных партнеров. У каждого объекта должна быть понятная логика: инвестиции, проживание, аренда, семейное использование или сохранение капитала.`,
+          bullets: ['Selected Investments — инвестиционная логика и прозрачные условия', 'Signature Collection — качественные резиденции и виллы', 'Private Opportunities — предложения по запросу', 'Без гарантированной доходности: предположения, расходы и риски разделяются'],
+        },
+        {
+          heading: 'Технический анализ: красивого рендера недостаточно',
+          body:
+            `Бассейн и эффектный лобби сами по себе не определяют ценность объекта. Bosphoras оценивает логику продукта: конструкцию, фасады, окна, изоляцию, оборудование, общие зоны, планировки, уровень отделки, будущие расходы на обслуживание и соответствие качества запрашиваемой цене. Регулируемые технические проверки выполняют квалифицированные специалисты.`,
+          bullets: ['Качество строительства и отделки', 'Цена за м² в контексте продукта и локации', 'Сервисные платежи и будущая эксплуатация', 'Сильные стороны и риски до принятия решения'],
+        },
+        {
+          heading: 'Стамбул, Бодрум и Анталья — разные инвестиционные сценарии',
+          body:
+            `Стамбул — самый глубокий городской рынок с бизнесом и круглогодичным спросом. Бодрум сильнее в виллах, маринах, премиальных резиденциях и lifestyle-активах. Анталья сочетает международную среду, море и зачастую более доступный вход. Выбор зависит от стратегии инвестора, а не от универсального рейтинга городов.`,
+          bullets: ['Недвижимость Стамбула: районы, ликвидность, бизнес и долгосрочная аренда', 'Недвижимость Бодрума: виллы, море, марина и премиальный lifestyle', 'Недвижимость Антальи: семья, побережье и более доступные сценарии', 'Сначала стратегия и продукт, затем сравнение цены'],
+        },
+        {
+          heading: 'Due diligence и структура сделки',
+          body:
+            `До перевода средств нужно понимать титул, договор, застройщика или продавца, разрешения, график платежей, расходы, оценку, юридическое положение и релевантные налоговые последствия. Bosphoras координирует процесс. Регулируемые брокерские, юридические, налоговые, оценочные и транзакционные действия выполняют или подтверждают соответствующие уполномоченные специалисты.`,
+          bullets: ['Понятно, кто является застройщиком или уполномоченным партнером', 'Координация юриста, оценщика, банка и налогового консультанта', 'Проверка договора и графика до оплаты', 'Четкое распределение ролей в сделке'],
+        },
+        {
+          heading: 'После покупки: Property Care и переезд',
+          body:
+            `После сделки Bosphoras может координировать меблировку, работы, страховку, управление арендой, обслуживание, коммунальные услуги, водителя и relocation. Так недвижимость становится частью более широкой системы частного офиса Bosphoras.`,
+          bullets: ['Меблировка, работы и приемка', 'Страхование, обслуживание и локальное управление', 'Аренда через уполномоченных партнеров при необходимости', 'Relocation, банк, резиденция и private services вокруг объекта'],
+        },
       ],
       faqs: [
-        { question: 'Bosphoras является агентством недвижимости?', answer: 'Нет. Bosphoras — частный координационный офис. Мы можем представить выбранных агентов и координировать проверки, но наша главная роль — защитить целостность проекта клиента.' },
-        { question: 'Лучше купить или сначала арендовать в Турции?', answer: 'Во многих случаях сначала аренда безопаснее. Семья может проверить район, школу, дорогу, соседей и реальный ритм жизни до вложения капитала.' },
-        { question: 'Можете сопровождать покупку в Стамбуле или Бодруме?', answer: 'Да. Bosphoras может координировать поиск, просмотры, специалистов, документы и due diligence в зависимости от профиля и миссии.' },
-        { question: 'Вы проверяете title deeds и договоры?', answer: 'Юридические проверки выполняют квалифицированные специалисты. Bosphoras координирует их и следит, чтобы важные вопросы были заданы до подписи.' },
-        { question: 'Можете организовать заселение?', answer: 'Да. Bosphoras может координировать аренду, страховку, интернет, maintenance, уборку, водителя, мебель, локальные услуги и follow-up после приезда.' },
-        { question: 'Связана ли недвижимость с резиденцией и налогами?', answer: 'Да. Поэтому недвижимость, резиденцию, налоги, банк и наследование нужно координировать до подписания.' },
+        { question: 'Какую недвижимость лучше купить в Турции для инвестиций?', answer: 'Универсального ответа нет. Стамбул, Бодрум и Анталья работают по-разному. Важно сравнивать объект, район, цену, график платежей, расходы и реальную цель инвестора.' },
+        { question: 'Можно ли купить квартиру в Турции в рассрочку?', answer: 'Некоторые застройщики предлагают рассрочку в новостройках. Условия различаются. Bosphoras показывает только подтвержденные условия конкретного проекта.' },
+        { question: 'Сколько денег нужно для покупки недвижимости в Турции?', answer: 'Общая цена и сумма, необходимая сегодня, отличаются. Входной капитал зависит от объекта, первоначального взноса и графика платежей.' },
+        { question: 'Bosphoras — агентство недвижимости?', answer: 'Bosphoras работает как Property Desk и частный офис по отбору, introductions и координации. Регулируемое посредничество и сама сделка проводятся в применимом порядке с уполномоченными специалистами.' },
+        { question: 'Вы оцениваете качество строительства?', answer: 'Да, в рамках анализа продукта и его ценности. Если нужна регулируемая техническая экспертиза, ее выполняет квалифицированный специалист.' },
+        { question: 'Можно ли сдавать объект после покупки?', answer: 'Это зависит от объекта и применимых правил. До расчета потенциальной доходности нужно учитывать спрос, регулирование, расходы, сезонность и стоимость управления.' },
       ],
-      cta: { label: 'Сформировать проект недвижимости в Турции', href: '/chastnaya-konsultatsiya', secondaryLabel: 'Юридическая и налоговая координация', secondaryHref: '/uslugi/yuridicheskie-nalogovye-konsultatsii' },
-      jsonLdType: 'Service',
+      cta: { label: 'Открыть Property Desk', href: '/chastnaya-konsultatsiya', secondaryLabel: 'Юридическое и налоговое сопровождение', secondaryHref: '/uslugi/yuridicheskie-nalogovye-konsultatsii' },
+      jsonLdType: 'CollectionPage',
       internalLinks: [
-        { pageId: 'relocate', label: 'Переезд в Турцию' },
-        { pageId: 'legal-tax', label: 'Юридическая и налоговая координация' },
         { pageId: 'istanbul', label: 'Недвижимость в Стамбуле' },
-        { pageId: 'bodrum', label: 'Жить и инвестировать в Бодруме' },
+        { pageId: 'bodrum', label: 'Недвижимость в Бодруме' },
+        { pageId: 'antalya', label: 'Недвижимость в Анталье' },
+        { pageId: 'legal-tax', label: 'Юридическая и налоговая координация' },
         { pageId: 'private-assessment', label: 'Частная консультация' },
       ],
     },
@@ -167,35 +240,66 @@ export const propertyRelocationSeoOverrides: Partial<Record<Locale, MainPageCont
     {
       id: 'property',
       locale: 'ar',
-      slug: '/خدمات/العقارات-والانتقال',
-      title: 'العقار والانتقال في تركيا: شراء، إيجار، فحص قانوني | Bosphoras',
-      h1: 'العقار في تركيا: اختيار المنزل والحي والإطار الصحيح',
+      slug: '/عقارات-تركيا',
+      title: 'عقارات تركيا: الاستثمار في إسطنبول وبودروم وأنطاليا | Bosphoras',
+      h1: 'عقارات تركيا: فرص مختارة للمستثمر الدولي',
       metaDescription:
-        'العقار والانتقال في تركيا للعائلات والمقيمين والمستثمرين: شراء، إيجار، اختيار الحي، due diligence، إقامة، بنك، ضرائب واستقرار.',
+        'عقارات تركيا للمستثمرين الدوليين: مشاريع مختارة في إسطنبول وبودروم وأنطاليا، خطط دفع من المطور، تحليل فني، تدقيق وتنسيق Bosphoras.',
       shortIntro:
-        `شراء أو استئجار عقار في تركيا لا يجب أن يبدأ بإعلان. العقار الصحيح يعتمد أولاً على الحياة الحقيقية: العائلة، المدرسة، العمل، التنقل، الضرائب، البنك، الأمان، مدة الإقامة، lifestyle والاستراتيجية المالية. Bosphoras ليس وكالة عقارية تقليدية. نحن نعمل كمكتب خاص: نفهم المشروع، نرشح الخيارات، ننسق المهنيين ونحمي العميل من القرارات السريعة تحت ضغط البيع.`,
+        `تم إنشاء Bosphoras Property Desk للمشترين الدوليين الذين لا يريدون مجرد بوابة إعلانات. نراجع الموقع وجودة البناء والسعر وخطة الدفع والتكلفة الإجمالية وملف المطور ونقاط الحذر. الهدف هو جعل الاستثمار العقاري في إسطنبول وبودروم وأنطاليا أوضح وأسهل للمقارنة.`,
       sections: [
-        { heading: 'قبل الزيارات: تحديد الحاجة الحقيقية', body: `كثير من العملاء يبدأون الزيارات مبكراً، ينجذبون إلى الإطلالة أو التراس أو المارينا أو السعر، ثم يكتشفون لاحقاً قيوداً: حي غير مناسب، بعد المدرسة، الرسوم، الضجيج، إدارة المبنى، السيولة، الضرائب، خطة الدفع، سند الملكية، قواعد الإيجار الموسمي أو صعوبة البنك. يبدأ Bosphoras بتحديد الحاجة قبل فتح السوق.`, bullets: ['سكن رئيسي، pied-à-terre، استثمار، فيلا، مكتب أو قاعدة عائلية', 'تحليل نمط الحياة: المدارس، الصحة، النقل، السائق، الأمان، البحر، الأعمال والخصوصية', 'مقارنة إسطنبول وبودروم وأنطاليا ومناطق أخرى حسب الملف', 'الإيجار قبل الشراء عندما يحمي العميل ورأس المال بشكل أفضل'] },
-        { heading: 'إسطنبول، بودروم، أنطاليا: ثلاث منطق عقاري مختلف', body: `إسطنبول سوق أحياء: Nişantaşı وBebek وEtiler وLevent وMaslak وZekeriyaköy أو الجانب الآسيوي لا تخدم نفس الأولويات. بودروم تعني الفيلات والمارينات والموسمية والإطلالات والوصول إلى البحر وإدارة أصل premium. أنطاليا قد تكون قاعدة عائلية عقلانية مع المناخ والخدمات الخاصة وتكلفة حياة أوضح. الموقع مهم بقدر العقار نفسه.`, bullets: ['إسطنبول: شقق premium، مجمعات آمنة، مدارس، أعمال وصحة خاصة', 'بودروم: فيلات، مارينا، lifestyle، إيجار موسمي، صيانة وخصوصية', 'أنطاليا: عائلة، بحر، صحة، مجتمع دولي واستقرار طويل الأمد', 'تحليل الحي قبل تحليل السعر'] },
-        { heading: 'Due diligence: حماية الشراء قبل التوقيع', body: `العقار في تركيا يحتاج إلى مراجعة منهجية. العقد، سند الملكية، التصاريح، الرسوم، القيود، المطور، المالك السابق، جدول الدفع، التقييم، البنك والنتائج الضريبية يجب فهمها قبل القرار. ينسق Bosphoras المهنيين المناسبين دون أن يحل محل المحامي أو الموثق أو الخبير أو المستشار الضريبي.`, bullets: ['تنسيق مع محامين ووكلاء مختارين وخبراء ومستشارين ضريبيين وبنوك عند الحاجة', 'مراجعة السند والعقد والدفع والمخاطر والمستندات المتاحة', 'قراءة الأثر: الإقامة، الميراث، الضرائب، الإيجار، التأمين والإدارة', 'لا ضغط بيع: دور المكتب الخاص حماية القرار'] },
-        { heading: 'الإيجار والاستقرار والانتقال: الحياة اليومية مهمة', body: `للعائلة الدولية، السكن جزء واحد فقط من الانتقال. يجب تنظيم الوصول، عقد الإيجار، الاستلام، الخدمات، الإنترنت، تأمين المنزل، الأثاث، المدرسة، الطبيب، السائق، التنظيف، الأمان، الترجمة والخدمات المحلية. يربط Bosphoras العقار بالانتقال حتى يعيش العميل في العقار فعلياً، لا يملكه فقط.`, bullets: ['بحث إيجار آمن قبل الشراء عند الحاجة', 'العقد، المستندات، الوديعة، الاستلام والتنظيم العملي', 'التأمين، الإنترنت، التنظيف، السائق، الصيانة والخدمات المحلية', 'متابعة بعد الوصول خلال الأسابيع الأولى أو ضمن Private Desk'] },
-        { heading: 'عقار بلا ضغط، داخل استراتيجية تركيا', body: `الشراء الصحيح ليس دائماً الأكثر إثارة. يجب أن يتناسب مع الإقامة، الضرائب، العائلة، البنك، أفق الاحتفاظ وقدرة إدارة الأصل. يساعد Bosphoras على تجنب القرار العاطفي، مقارنة السيناريوهات واختيار ما يتوافق مع مشروع تركيا الأوسع.`, bullets: ['قراءة مالية وعائلية وتشغيلية للمشروع العقاري', 'تنسيق مع القانون والضرائب والبنك والتأمين والانتقال', 'دمج الكونسيرج، السائق، الصيانة، الفندق، اليخت أو lifestyle عند الحاجة', 'أولوية لبعض الملفات عبر Bosphoras Private Access'] },
+        {
+          heading: 'رأس مال أولي واضح وخطة دفع مفهومة',
+          body:
+            `سعر العقار لا يساوي دائماً المبلغ المطلوب دفعه في اليوم الأول. بعض مشاريع التطوير الجديدة توفر دفعة أولى ثم أقساطاً حتى التسليم. عند توفر معلومات مؤكدة، يعرض Bosphoras السعر الإجمالي والمبلغ المطلوب اليوم والأقساط المستقبلية وتاريخ التسليم بشكل منفصل.`,
+          bullets: ['السعر الإجمالي والعملة', 'المبلغ المطلوب للحجز أو التوقيع', 'خطة دفع مؤكدة من المطور', 'التكلفة الإجمالية للشراء منفصلة عن السعر المعلن'],
+        },
+        {
+          heading: 'Bosphoras Selection: عقارات أقل وتحليل أعمق',
+          body:
+            `لا نهدف إلى عرض آلاف العقارات. نركز على مشاريع جديدة وشقق وإقامات راقية وفلل وفرص خاصة من شركاء معروفين. يجب أن يكون لكل فرصة منطق واضح: استثمار أو سكن أو إيجار أو استخدام عائلي أو حفظ للقيمة على المدى الطويل.`,
+          bullets: ['Selected Investments ببيانات وشروط واضحة', 'Signature Collection للإقامات والفلل الراقية', 'Private Opportunities متاحة حسب الملف وعند الطلب', 'لا نضمن العوائد: نفصل بين الفرضيات والتكاليف والمخاطر'],
+        },
+        {
+          heading: 'التحليل الفني: الصورة الجميلة لا تكفي',
+          body:
+            `المسبح واللوبي والتصاميم ثلاثية الأبعاد لا تحدد وحدها قيمة المشروع. يراجع Bosphoras منطق المنتج: الهيكل والواجهات والنوافذ والعزل والتجهيزات والمناطق المشتركة والمخططات وجودة التشطيبات والصيانة المستقبلية ومدى تناسب الجودة مع السعر المطلوب. الفحوص الفنية المنظمة ينفذها مختصون مؤهلون عند الحاجة.`,
+          bullets: ['جودة البناء والتشطيب', 'السعر للمتر مقارنة بالمنتج والموقع', 'رسوم الخدمات والصيانة المستقبلية', 'نقاط القوة ونقاط الحذر قبل القرار'],
+        },
+        {
+          heading: 'إسطنبول وبودروم وأنطاليا: استراتيجيات مختلفة',
+          body:
+            `إسطنبول تقدم أعمق سوق حضري مع الأعمال والطلب على مدار العام. بودروم تركز أكثر على الفلل والمارينات والإقامات الراقية ونمط الحياة. أنطاليا تجمع بين البيئة الدولية والساحل المتوسطي ونقاط دخول قد تكون أكثر سهولة. الاختيار يعتمد على ملف المستثمر وليس على ترتيب واحد للجميع.`,
+          bullets: ['عقارات إسطنبول: الأحياء والسيولة والأعمال والطلب السنوي', 'عقارات بودروم: الفلل والبحر والمارينا والخصوصية', 'عقارات أنطاليا: السكن والعائلة والساحل وفرص أكثر سهولة', 'مقارنة الموقع والمنتج والاستراتيجية قبل السعر'],
+        },
+        {
+          heading: 'التدقيق وإطار الصفقة',
+          body:
+            `قبل تحويل الأموال يجب فهم سند الملكية والعقد والمطور أو البائع والتراخيص وجدول الدفع والرسوم والتقييم والوضع القانوني والآثار الضريبية ذات الصلة. ينسق Bosphoras العملية مع المختصين المناسبين. أعمال الوساطة المنظمة والقانون والضرائب والتقييم والمعاملة ينفذها أو يؤكدها المهنيون المخولون حسب الحالة.`,
+          bullets: ['تحديد المطور أو الشريك العقاري بوضوح', 'تنسيق المحامي والمقيم والبنك والمستشار الضريبي عند الحاجة', 'مراجعة العقد وجدول الدفع قبل تحويل الأموال', 'وضوح من يعرض ومن يبيع ومن يتحقق ومن يستلم الأموال'],
+        },
+        {
+          heading: 'بعد الشراء: Property Care والانتقال',
+          body:
+            `بعد الشراء يمكن لـ Bosphoras تنسيق التأثيث والأعمال والتأمين وإدارة الإيجار والصيانة والخدمات والسائق والانتقال حسب المشروع. وهكذا يصبح Property Desk جزءاً من علاقة المكتب الخاص الأوسع مع العميل في تركيا.`,
+          bullets: ['التأثيث والأعمال والاستلام', 'التأمين والصيانة والإدارة المحلية', 'دعم الإيجار عبر شركاء مخولين عند الحاجة', 'الانتقال والبنوك والإقامة والخدمات الخاصة حول العقار'],
+        },
       ],
       faqs: [
-        { question: 'هل Bosphoras وكالة عقارية في تركيا؟', answer: 'لا. Bosphoras مكتب تنسيق خاص. يمكننا تقديم وكلاء مختارين وتنسيق الفحوصات، لكن دورنا الأساسي هو حماية منطق مشروع العميل.' },
-        { question: 'هل الأفضل الشراء أم الإيجار أولاً؟', answer: 'في كثير من الحالات، الإيجار أولاً أكثر أماناً. يتيح للعائلة اختبار الحي والمدرسة والتنقل والجيران والإيقاع اليومي قبل استثمار رأس المال.' },
-        { question: 'هل ترافقون شراء عقار في إسطنبول أو بودروم؟', answer: 'نعم. يمكن لـ Bosphoras تنسيق البحث والزيارات والمهنيين والمستندات وdue diligence حسب الملف ونطاق المهمة.' },
-        { question: 'هل تتحققون من سند الملكية والعقود؟', answer: 'الفحوصات القانونية يجب أن يقوم بها مهنيون مؤهلون. ينسق Bosphoras هؤلاء المهنيين ويتأكد من طرح الأسئلة الصحيحة قبل التوقيع.' },
-        { question: 'هل يمكنكم تنظيم السكن بعد التوقيع؟', answer: 'نعم. يمكن لـ Bosphoras تنسيق الإيجار، التأمين، الإنترنت، الصيانة، التنظيف، السائق، الأثاث، الخدمات المحلية والمتابعة بعد الوصول.' },
-        { question: 'هل العقار مرتبط بالإقامة أو الضرائب؟', answer: 'نعم. لذلك يجب تنسيق العقار والإقامة والضرائب والبنك والميراث قبل التوقيع.' },
+        { question: 'ما أفضل استثمار عقاري في تركيا؟', answer: 'لا يوجد عقار واحد هو الأفضل للجميع. تختلف إسطنبول وبودروم وأنطاليا في منطقها. نقارن العقار والمنطقة والسعر وخطة الدفع والتكاليف وهدف المستثمر.' },
+        { question: 'هل يمكن شراء عقار في تركيا بالتقسيط؟', answer: 'يقدم بعض المطورين خطط دفع في المشاريع الجديدة. تختلف الشروط حسب المشروع، ويعرض Bosphoras فقط الخطط المؤكدة من المطور أو الشريك المعني.' },
+        { question: 'كم أحتاج للاستثمار في عقارات تركيا؟', answer: 'السعر الإجمالي والمبلغ المطلوب اليوم رقمان مختلفان. يعتمد رأس المال الأولي على العقار والدفعة الأولى وخطة الدفع.' },
+        { question: 'هل Bosphoras وكالة عقارية؟', answer: 'يعمل Bosphoras كـ Property Desk ومكتب خاص للاختيار والتعريف والتنسيق. الوساطة المنظمة والمعاملة تتم ضمن الإطار المعمول به مع المهنيين المخولين.' },
+        { question: 'هل تراجعون جودة البناء؟', answer: 'نعم ضمن تحليل المنتج وقيمته. عندما يلزم فحص فني منظم، ينفذه مختص مؤهل.' },
+        { question: 'هل يمكن تأجير العقار بعد الشراء؟', answer: 'يعتمد ذلك على العقار والقواعد المحلية. يجب احتساب الطلب واللوائح والرسوم والموسمية وتكلفة الإدارة قبل مناقشة أي عائد محتمل.' },
       ],
-      cta: { label: 'تنظيم مشروعي العقاري في تركيا', href: '/تقييم-خاص', secondaryLabel: 'الاستشارات القانونية والضريبية', secondaryHref: '/خدمات/استشارات-قانونية-ضريبية' },
-      jsonLdType: 'Service',
+      cta: { label: 'الدخول إلى Property Desk', href: '/تقييم-خاص', secondaryLabel: 'الاستشارات القانونية والضريبية', secondaryHref: '/خدمات/استشارات-قانونية-ضريبية' },
+      jsonLdType: 'CollectionPage',
       internalLinks: [
-        { pageId: 'relocate', label: 'الانتقال إلى تركيا' },
+        { pageId: 'istanbul', label: 'عقارات إسطنبول' },
+        { pageId: 'bodrum', label: 'عقارات بودروم' },
+        { pageId: 'antalya', label: 'عقارات أنطاليا' },
         { pageId: 'legal-tax', label: 'التنسيق القانوني والضريبي' },
-        { pageId: 'istanbul', label: 'العقار في إسطنبول' },
-        { pageId: 'bodrum', label: 'العيش والاستثمار في بودروم' },
         { pageId: 'private-assessment', label: 'تقييم خاص' },
       ],
     },
