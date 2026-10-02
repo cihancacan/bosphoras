@@ -9,6 +9,7 @@ import { programmaticPages } from '@/data/programmatic/pages';
 import { ENABLE_ALL_PROGRAMMATIC_PAGES, ENABLE_PRIORITY_3_IN_SITEMAP } from '@/lib/launchConfig';
 import { longTailTaxSitemapUrls } from '@/data/longTailTaxRoutes';
 import { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';
+import { getPublishedProperties, getPropertyPath } from '@/data/propertyDesk';
 import {
   getTransferKeywordHref,
   transferKeywordClusters,
@@ -153,6 +154,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
           priority: 0.92,
         });
       }
+    }
+  }
+
+  for (const property of getPublishedProperties()) {
+    for (const locale of locales) {
+      addEntry({
+        url: getCanonicalUrl(locale, getPropertyPath(locale, property)),
+        lastModified: new Date(property.updatedAt),
+        changeFrequency: property.status === 'available' ? 'weekly' : 'monthly',
+        priority: property.featured ? 0.95 : 0.88,
+      });
     }
   }
 
