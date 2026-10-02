@@ -222,7 +222,7 @@ export function PartnerWorkspace() {
   }
 
   return (
-    <div className="min-h-screen bg-[#f5f3ef] text-[#1a1d22] [font-family:'Avenir_Next','Helvetica_Neue',Arial,sans-serif]">
+    <div className="min-h-screen bg-[#f5f3ef] text-[#1a1d22] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe_UI,sans-serif]">
       <header className="sticky top-0 z-40 border-b border-[#30343a] bg-[#171a1f] text-white">
         <div className="mx-auto flex max-w-[1700px] items-center justify-between gap-4 px-4 py-3 md:px-6">
           <div className="flex items-center gap-3">
