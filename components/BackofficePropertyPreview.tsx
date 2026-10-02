@@ -56,7 +56,7 @@ export function BackofficePropertyPreview({ listingId, submissionId }:{ listingI
   const interestRate=record.payment_interest_rate??record.paymentInterestRate;
   const cashDiscount=record.cash_discount_pct??record.cashDiscountPct;
   const watchpoints=record.watchpoints||[];
-  const publicHref=!record._isSubmission&&record.published&&record.slug_fr?'/immobilier-turquie/'+record.slug_fr:'';
+  const publicHref=!record._isSubmission&&record.published&&record.slug_fr?'/investissement-immobilier-international/'+record.slug_fr:'';
 
   return (
     <main className="min-h-screen bg-[#eef2f3] px-5 py-8 text-[#172420] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',sans-serif]">
