@@ -32,7 +32,7 @@ export interface PropertyListing {
   description: LocalizedText;
   seoTitle: LocalizedText;
   seoDescription: LocalizedText;
-  currency: 'EUR' | 'USD' | 'TRY' | 'GBP' | 'CHF';
+  currency: 'EUR' | 'USD' | 'TRY' | 'GBP' | 'CHF' | 'AED';
   totalPrice?: number;
   priceOnRequest?: boolean;
   entryCapital?: number;
