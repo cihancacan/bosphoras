@@ -112,6 +112,7 @@ export async function fetchPublishedProperties(): Promise<PropertyListing[]> {
     .from('property_listings')
     .select('*')
     .eq('published', true)
+    .eq('review_status', 'approved')
     .order('featured', { ascending: false })
     .order('published_at', { ascending: false, nullsFirst: false });
 
@@ -133,6 +134,7 @@ export async function fetchPropertyBySlug(locale: Locale, slug: string): Promise
     .from('property_listings')
     .select('*')
     .eq('published', true)
+    .eq('review_status', 'approved')
     .eq(column, normalized)
     .maybeSingle();
 
