@@ -9,7 +9,8 @@ import { programmaticPages } from '@/data/programmatic/pages';
 import { ENABLE_ALL_PROGRAMMATIC_PAGES, ENABLE_PRIORITY_3_IN_SITEMAP } from '@/lib/launchConfig';
 import { longTailTaxSitemapUrls } from '@/data/longTailTaxRoutes';
 import { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';
-import { getPublishedProperties, getPropertyPath } from '@/data/propertyDesk';
+import { getPropertyPath } from '@/data/propertyDesk';
+import { fetchPublishedProperties } from '@/lib/propertyStore';
 import {
   getTransferKeywordHref,
   transferKeywordClusters,
@@ -35,7 +36,7 @@ function encodeSitemapUrl(url: string) {
   return encodeURI(normalizeDomain(url));
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const entries: MetadataRoute.Sitemap = [];
   const seenUrls = new Set<string>();
 
@@ -157,7 +158,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  for (const property of getPublishedProperties()) {
+  const publishedProperties = await fetchPublishedProperties();
+  for (const property of publishedProperties) {
     for (const locale of locales) {
       addEntry({
         url: getCanonicalUrl(locale, getPropertyPath(locale, property)),
