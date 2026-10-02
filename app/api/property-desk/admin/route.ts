@@ -60,7 +60,7 @@ function validatePayload(payload: any) {
   if (!['apartment', 'villa', 'residence', 'penthouse', 'commercial'].includes(payload.propertyType)) errors.push('Invalid propertyType');
   if (!['istanbul', 'bodrum', 'antalya'].includes(payload.city)) errors.push('Invalid city');
   if (!String(payload.district || '').trim()) errors.push('District is required');
-  if (!['EUR', 'USD', 'TRY', 'GBP', 'CHF'].includes(payload.currency)) errors.push('Invalid currency');
+  if (!['EUR', 'USD', 'TRY', 'GBP', 'CHF', 'AED'].includes(payload.currency)) errors.push('Invalid currency');
 
   const slugs = payload.slugs || {};
   for (const locale of LOCALES) {
