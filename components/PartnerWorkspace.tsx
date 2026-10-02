@@ -37,6 +37,7 @@ export function PartnerWorkspace() {
   const [messages, setMessages] = useState<any[]>([]);
   const [selectedThread, setSelectedThread] = useState<string | null>(null);
   const [notifications, setNotifications] = useState<any[]>([]);
+  const [savedScenarios, setSavedScenarios] = useState<any[]>([]);
   const [editingSubmission, setEditingSubmission] = useState<any>(null);
   const [editingListing, setEditingListing] = useState<any>(null);
   const [showNewListing, setShowNewListing] = useState(false);
@@ -71,6 +72,7 @@ export function PartnerWorkspace() {
       supabase.from('crm_deals').select('*').order('updated_at', { ascending: false }),
       supabase.from('chat_threads').select('*').order('last_message_at', { ascending: false, nullsFirst: false }),
       supabase.from('notifications').select('*').order('created_at', { ascending: false }).limit(50),
+      supabase.from('investment_scenarios').select('*').order('updated_at', { ascending: false }).limit(50),
     ];
     if (profileData.role === 'admin') {
       requests.push(
@@ -86,9 +88,10 @@ export function PartnerWorkspace() {
     setDeals(results[3].data || []);
     setThreads(results[4].data || []);
     setNotifications(results[5].data || []);
+    setSavedScenarios(results[6].data || []);
     if (profileData.role === 'admin') {
-      setPartners(results[6].data || []);
-      setPartnerUsers(results[7].data || []);
+      setPartners(results[7].data || []);
+      setPartnerUsers(results[8].data || []);
     }
 
     const initialThread = (results[4].data || [])[0]?.id || null;
@@ -231,7 +234,15 @@ export function PartnerWorkspace() {
           {tab==='import' && isAdmin && <Section title="Importer une opportunité" kicker="Source partenaire → Bosphoras"><AdminPropertyImporter user={user} reload={loadAll}/></Section>}
           {tab==='crm' && <CrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} partnerUsers={partnerUsers} reload={loadAll}/>}
           {tab==='chat' && <ChatPanel isAdmin={isAdmin} user={user} threads={threads} partnerUsers={partnerUsers} selectedThread={selectedThread} setSelectedThread={setSelectedThread} messages={messages}/>}
-          {tab==='calculators' && <Section title="Calculateurs investissement" kicker="Bosphoras Analysis"><InvestmentCalculator/></Section>}
+          {tab==='calculators' && <Section title="Calculateurs investissement" kicker="Bosphoras Analysis"><InvestmentCalculator
+            userId={user?.id}
+            partnerId={profile?.partner_id}
+            contacts={contacts}
+            deals={deals}
+            listings={listings}
+            savedScenarios={savedScenarios}
+            onSaved={loadAll}
+          /></Section>}
           {tab==='partners' && isAdmin && <PartnersPanel partners={partners} partnerUsers={partnerUsers} reload={loadAll}/>}
           {tab==='approvals' && isAdmin && <ApprovalsPanel submissions={submissions} reload={loadAll}/>}
         </main>
