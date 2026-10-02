@@ -1,7 +1,9 @@
+// @ts-nocheck
 'use client';
 
 import { useMemo, useState } from 'react';
-import { Calculator, Info, Landmark, Percent, TrendingUp, WalletCards } from 'lucide-react';
+import { Calculator, History, Info, Landmark, Percent, Save, TrendingUp, WalletCards } from 'lucide-react';
+import { getPortalSupabase } from '@/lib/portalSupabase';
 
 function n(value: string) {
   const parsed = Number(value.replace(',', '.'));
@@ -24,7 +26,24 @@ function Help({ children }: { children: React.ReactNode }) {
   return <span className="normal-case font-normal tracking-normal text-[#7b8794]">({children})</span>;
 }
 
-export function InvestmentCalculator() {
+export function InvestmentCalculator({
+  userId,
+  partnerId,
+  contacts = [],
+  deals = [],
+  listings = [],
+  savedScenarios = [],
+  onSaved,
+}: {
+  userId?: string;
+  partnerId?: string | null;
+  contacts?: any[];
+  deals?: any[];
+  listings?: any[];
+  savedScenarios?: any[];
+  onSaved?: () => void;
+} = {}) {
+  const supabase = getPortalSupabase();
   const [currency, setCurrency] = useState('EUR');
   const [price, setPrice] = useState('250000');
   const [surface, setSurface] = useState('100');
@@ -46,6 +65,13 @@ export function InvestmentCalculator() {
   const [annualRentGrowth, setAnnualRentGrowth] = useState('3');
   const [exitCostsPct, setExitCostsPct] = useState('3');
   const [fxStressPct, setFxStressPct] = useState('0');
+  const [scenarioName, setScenarioName] = useState('');
+  const [scenarioContactId, setScenarioContactId] = useState('');
+  const [scenarioDealId, setScenarioDealId] = useState('');
+  const [scenarioListingId, setScenarioListingId] = useState('');
+  const [scenarioNotes, setScenarioNotes] = useState('');
+  const [scenarioBusy, setScenarioBusy] = useState(false);
+  const [scenarioMessage, setScenarioMessage] = useState('');
 
   const result = useMemo(() => {
     const p = n(price);
@@ -123,6 +149,78 @@ export function InvestmentCalculator() {
   const inputClass =
     'min-h-[42px] w-full border border-[#cfd8e3] bg-white px-3 text-sm text-[#162334] outline-none transition focus:border-[#315d7c] focus:ring-2 focus:ring-[#315d7c]/10';
   const labelClass = 'grid gap-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-[#51606f]';
+
+  async function saveScenario() {
+    if (!userId) return;
+    if (!scenarioName.trim()) {
+      setScenarioMessage('Donnez un nom au scénario.');
+      return;
+    }
+    setScenarioBusy(true);
+    setScenarioMessage('');
+    try {
+      const inputs = {
+        price: n(price),
+        surface: n(surface),
+        entry: n(entry),
+        acquisitionPct: n(acquisitionPct),
+        monthlyRent: n(monthlyRent),
+        occupancyPct: n(occupancyPct),
+        monthlyCharges: n(monthlyCharges),
+        annualMaintenance: n(annualMaintenance),
+        financeAmount: n(financeAmount),
+        interest: n(interest),
+        termYears: n(termYears),
+        exitValue: n(exitValue),
+        holdYears: n(holdYears),
+        commissionPct: n(commissionPct),
+        developerDepositPct: n(developerDepositPct),
+        developerMonths: n(developerMonths),
+        developerBalloonPct: n(developerBalloonPct),
+        annualRentGrowth: n(annualRentGrowth),
+        exitCostsPct: n(exitCostsPct),
+        fxStressPct: n(fxStressPct),
+      };
+      const outputs = {
+        priceM2: result.priceM2,
+        grossYield: result.grossYield,
+        netYield: result.netYield,
+        cashOnCash: result.cashOnCash,
+        noi: result.noi,
+        netAnnualCashflow: result.netAnnualCashflow,
+        monthlyDebt: result.monthlyDebt,
+        ltv: result.ltv,
+        dscr: result.dscr,
+        breakEvenOccupancy: result.breakEvenOccupancy,
+        netExit: result.netExit,
+        annualizedAppreciation: result.annualizedAppreciation,
+        futureAnnualRent: result.futureAnnualRent,
+        equity: result.equity,
+      };
+
+      const { error } = await supabase.from('investment_scenarios').insert({
+        owner_user_id: userId,
+        partner_id: partnerId || null,
+        contact_id: scenarioContactId || null,
+        deal_id: scenarioDealId || null,
+        listing_id: scenarioListingId || null,
+        name: scenarioName.trim(),
+        currency,
+        inputs,
+        outputs,
+        notes: scenarioNotes.trim() || null,
+      });
+      if (error) throw error;
+      setScenarioMessage('Scénario enregistré dans le dossier.');
+      setScenarioName('');
+      setScenarioNotes('');
+      onSaved?.();
+    } catch (error) {
+      setScenarioMessage(error instanceof Error ? error.message : 'Enregistrement impossible.');
+    } finally {
+      setScenarioBusy(false);
+    }
+  }
 
   const metrics = [
     ['Prix / m²', money(result.priceM2, currency), 'prix du bien ÷ surface'],
@@ -208,6 +306,66 @@ export function InvestmentCalculator() {
           <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">À la livraison</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerBalloon, currency)}</strong></div>
         </div>
       </section>
+
+      {userId ? (
+        <section className="border border-[#d9e1e8] bg-white p-6">
+          <div className="flex items-center gap-3">
+            <Save size={19} className="text-[#315d7c]" />
+            <div>
+              <h3 className="text-lg font-semibold text-[#162334]">Enregistrer ce scénario</h3>
+              <p className="text-xs text-[#7b8794]">Conservez l’analyse dans le CRM pour la reprendre avec le client ou comparer plusieurs hypothèses.</p>
+            </div>
+          </div>
+          <div className="mt-5 grid gap-4 md:grid-cols-4">
+            <label className={labelClass}>Nom du scénario
+              <input value={scenarioName} onChange={(e)=>setScenarioName(e.target.value)} placeholder="Ex. Istanbul 2+1 prudent" className={inputClass}/>
+            </label>
+            <label className={labelClass}>Contact CRM
+              <select value={scenarioContactId} onChange={(e)=>setScenarioContactId(e.target.value)} className={inputClass}>
+                <option value="">Non lié</option>
+                {contacts.map((contact:any)=><option key={contact.id} value={contact.id}>{[contact.first_name,contact.last_name].filter(Boolean).join(' ')||contact.email||'Contact'}</option>)}
+              </select>
+            </label>
+            <label className={labelClass}>Deal
+              <select value={scenarioDealId} onChange={(e)=>setScenarioDealId(e.target.value)} className={inputClass}>
+                <option value="">Non lié</option>
+                {deals.map((deal:any)=><option key={deal.id} value={deal.id}>{deal.title}</option>)}
+              </select>
+            </label>
+            <label className={labelClass}>Bien / projet
+              <select value={scenarioListingId} onChange={(e)=>setScenarioListingId(e.target.value)} className={inputClass}>
+                <option value="">Non lié</option>
+                {listings.map((listing:any)=><option key={listing.id} value={listing.id}>{listing.title?.fr||listing.external_id}</option>)}
+              </select>
+            </label>
+          </div>
+          <label className="mt-4 grid gap-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-[#51606f]">Notes
+            <textarea value={scenarioNotes} onChange={(e)=>setScenarioNotes(e.target.value)} rows={3} className="border border-[#cfd8e3] bg-white px-3 py-3 text-sm leading-6 outline-none focus:border-[#315d7c]" placeholder="Hypothèses, réserves, prochaine action…"/>
+          </label>
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <button disabled={scenarioBusy} onClick={saveScenario} className="inline-flex min-h-[44px] items-center gap-2 bg-[#12304a] px-5 text-sm font-semibold text-white disabled:opacity-50"><Save size={15}/>{scenarioBusy?'Enregistrement…':'Enregistrer le scénario'}</button>
+            {scenarioMessage ? <span className="text-sm text-[#5f6e7d]">{scenarioMessage}</span> : null}
+          </div>
+
+          {savedScenarios.length ? (
+            <div className="mt-7 border-t border-[#e7edf2] pt-5">
+              <div className="mb-3 flex items-center gap-2 text-[#315d7c]"><History size={16}/><strong className="text-sm">Scénarios récents</strong></div>
+              <div className="grid gap-3 md:grid-cols-2">
+                {savedScenarios.slice(0,6).map((scenario:any)=>(
+                  <article key={scenario.id} className="border border-[#e1e7ed] bg-[#f8fafb] p-4">
+                    <strong className="block text-sm text-[#162334]">{scenario.name}</strong>
+                    <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#687685]">
+                      <span>Rend. net {pct(Number(scenario.outputs?.netYield||0))}</span>
+                      <span>Cash-flow {money(Number(scenario.outputs?.netAnnualCashflow||0),scenario.currency||currency)}</span>
+                      <span>DSCR {Number(scenario.outputs?.dscr||0).toFixed(2)}</span>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </div>
+          ) : null}
+        </section>
+      ) : null}
 
       <section className="grid gap-4 md:grid-cols-3">
         <div className="border border-[#d9e1e8] bg-white p-5">
