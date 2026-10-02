@@ -313,6 +313,7 @@ function listingToPayload(l:any) {
     bedrooms:l.bedrooms,bathrooms:l.bathrooms,delivery:l.delivery,developer:l.developer,partner:l.partner,paymentPlan:l.payment_plan,
     highlights:l.highlights,technicalNotes:l.technical_notes,strengths:l.strengths,watchpoints:l.watchpoints,images:l.images,heroImage:l.hero_image,
     verifiedAt:l.verified_at,
+    sourceUrl:l.source_url||'',sourceHost:l.source_host||'',
   };
 }
 
