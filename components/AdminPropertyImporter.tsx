@@ -78,7 +78,7 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
 
       const base=result.data;
       const fallback={
-        city:detectCity(`${base.title||''} ${base.description||''} ${base.district||''}`),
+        city:base.city||detectCity(`${base.title||''} ${base.description||''} ${base.district||''}`),
         district:base.district||'',
         collection:'selected-investment',
         propertyType:'apartment',
@@ -98,7 +98,7 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
         description:local(base.description||base.rawText?.slice(0,5000)||''),
         seoTitle:local(base.title||''),
         seoDescription:local(base.summary||''),
-        delivery:local(''),
+        delivery:local(base.delivery||''),
         images:base.images||[],
       };
 
@@ -142,7 +142,9 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
         setStrengths(Object.fromEntries(locales.map((l)=>[l,linesFromArray(ai.strengths||ai.highlights||[],l)])));
         setTechnicalNotes(Object.fromEntries(locales.map((l)=>[l,linesFromArray(ai.technicalNotes||[],l)])));
         setWatchpoints(Object.fromEntries(locales.map((l)=>[l,linesFromArray(ai.watchpoints||[],l)])));
-        setMessage('Import terminé : données, photos et versions multilingues préremplies. Vérifiez avant publication.');
+        setMessage(translated.mode==='translation-fallback'
+          ? 'Import terminé : données, photos et traductions automatiques préremplies. La réécriture IA approfondie est actuellement indisponible ; vérifiez les textes avant publication.'
+          : 'Import terminé : données, photos et versions multilingues préremplies. Vérifiez avant publication.');
       }else{
         setMessage(`Import terminé. La traduction automatique n’a pas été appliquée : ${translated.error||'service IA indisponible'}. Les champs restent modifiables.`);
       }
@@ -260,7 +262,7 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
         <label className={label}>Collection
           <select value={draft.collection} onChange={(e)=>setField('collection',e.target.value)} className={input}><option value="selected-investment">Selected Investment</option><option value="signature">Signature Collection</option><option value="private">Private Opportunity</option></select>
         </label>
-        <label className={label}>Devise <select value={draft.currency} onChange={(e)=>setField('currency',e.target.value)} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option></select></label>
+        <label className={label}>Devise <select value={draft.currency} onChange={(e)=>setField('currency',e.target.value)} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option></select></label>
         <label className={label}>Prix total <span className="normal-case font-normal tracking-normal text-[#7b8794]">(prix affiché par la source)</span><input value={draft.totalPrice} onChange={(e)=>setField('totalPrice',e.target.value)} className={input}/></label>
         <label className={label}>Capital aujourd’hui <span className="normal-case font-normal tracking-normal text-[#7b8794]">(apport/acompte nécessaire maintenant)</span><input value={draft.entryCapital} onChange={(e)=>setField('entryCapital',e.target.value)} className={input}/></label>
         <label className={label}>Surface m² <input value={draft.surfaceM2} onChange={(e)=>setField('surfaceM2',e.target.value)} className={input}/></label>
