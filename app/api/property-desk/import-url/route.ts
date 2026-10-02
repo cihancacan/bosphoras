@@ -379,7 +379,7 @@ export async function POST(request: NextRequest) {
 
   const rawText = stripHtml(html).slice(0, 24000);
   const structuredCurrency = String(nestedOffer.priceCurrency || item.priceCurrency || '').toUpperCase();
-  const detectedCurrency = ['EUR','USD','TRY','GBP','CHF'].includes(structuredCurrency)
+  const detectedCurrency = ['EUR','USD','TRY','GBP','CHF','AED'].includes(structuredCurrency)
     ? structuredCurrency
     : currencyFromText(rawText);
   const structuredPrice = firstNumber(nestedOffer.price, nestedOffer.lowPrice, item.price);
