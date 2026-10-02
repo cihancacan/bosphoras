@@ -114,6 +114,11 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
 
       if(translate.ok&&translated.data){
         const ai=translated.data;
+        const aiPlan=Array.isArray(ai.paymentPlan)?ai.paymentPlan:fallback.paymentPlan;
+        const firstPct=Number(aiPlan?.[0]?.percentage||0);
+        const derivedEntry=!ai.entryCapital&&fallback.totalPrice&&firstPct>0
+          ? Math.round(Number(fallback.totalPrice)*firstPct/100)
+          : '';
         setDraft({
           ...fallback,
           city:ai.city||fallback.city,
@@ -126,8 +131,8 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
           propertyType:ai.propertyType||fallback.propertyType,
           developer:ai.developer||fallback.developer,
           delivery:ai.delivery||fallback.delivery,
-          paymentPlan:Array.isArray(ai.paymentPlan)?ai.paymentPlan:fallback.paymentPlan,
-          entryCapital:ai.entryCapital??fallback.entryCapital,
+          paymentPlan:aiPlan,
+          entryCapital:ai.entryCapital??derivedEntry??fallback.entryCapital,
           bathrooms:ai.bathrooms??fallback.bathrooms,
         });
         setStrengths(Object.fromEntries(locales.map((l)=>[l,linesFromArray(ai.strengths||[],l)])));
@@ -259,6 +264,56 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
         <label className={label}>Salles de bain <input value={draft.bathrooms} onChange={(e)=>setField('bathrooms',e.target.value)} className={input}/></label>
         <label className={label}>Promoteur / projet <input value={draft.developer} onChange={(e)=>setField('developer',e.target.value)} className={input}/></label>
         <label className="flex items-center gap-3 pt-7 text-sm text-[#526272]"><input type="checkbox" checked={draft.priceOnRequest} onChange={(e)=>setField('priceOnRequest',e.target.checked)}/> Prix sur demande</label>
+      </section>
+
+      <section className="border border-[#d9e1e8] bg-white p-6">
+        <div className="flex flex-wrap items-start justify-between gap-4">
+          <div>
+            <h3 className="text-lg font-semibold">Plan de paiement</h3>
+            <p className="mt-1 text-xs leading-5 text-[#7b8794]">(uniquement les échéances présentes dans la source ; contrôlez le total avant publication)</p>
+          </div>
+          <button
+            type="button"
+            onClick={()=>setField('paymentPlan',[...(draft.paymentPlan||[]),{label:local('Nouvelle étape'),percentage:null,amount:null,due:local('À définir')}])}
+            className="border border-[#12304a] px-3 py-2 text-xs font-semibold text-[#12304a]"
+          >
+            + Ajouter une étape
+          </button>
+        </div>
+        <div className="mt-5 space-y-3">
+          {(draft.paymentPlan||[]).map((step:any,index:number)=>(
+            <div key={index} className="grid gap-3 border-t border-[#e7edf2] pt-4 md:grid-cols-[1.1fr_0.45fr_0.65fr_1.1fr_auto]">
+              <input
+                value={step?.label?.fr||''}
+                onChange={(e)=>setField('paymentPlan',(draft.paymentPlan||[]).map((s:any,i:number)=>i===index?{...s,label:{...(s.label||local('')),fr:e.target.value,en:s.label?.en||e.target.value,ru:s.label?.ru||e.target.value,ar:s.label?.ar||e.target.value}}:s))}
+                className={input}
+                placeholder="Étape"
+              />
+              <input
+                value={step?.percentage??''}
+                onChange={(e)=>setField('paymentPlan',(draft.paymentPlan||[]).map((s:any,i:number)=>i===index?{...s,percentage:e.target.value===''?null:Number(e.target.value)}:s))}
+                className={input}
+                placeholder="%"
+                inputMode="decimal"
+              />
+              <input
+                value={step?.amount??''}
+                onChange={(e)=>setField('paymentPlan',(draft.paymentPlan||[]).map((s:any,i:number)=>i===index?{...s,amount:e.target.value===''?null:Number(e.target.value)}:s))}
+                className={input}
+                placeholder="Montant"
+                inputMode="decimal"
+              />
+              <input
+                value={step?.due?.fr||''}
+                onChange={(e)=>setField('paymentPlan',(draft.paymentPlan||[]).map((s:any,i:number)=>i===index?{...s,due:{...(s.due||local('')),fr:e.target.value,en:s.due?.en||e.target.value,ru:s.due?.ru||e.target.value,ar:s.due?.ar||e.target.value}}:s))}
+                className={input}
+                placeholder="Échéance"
+              />
+              <button type="button" onClick={()=>setField('paymentPlan',(draft.paymentPlan||[]).filter((_:any,i:number)=>i!==index))} className="px-3 text-sm font-semibold text-[#a85656]">×</button>
+            </div>
+          ))}
+          {!(draft.paymentPlan||[]).length?<p className="text-sm text-[#7b8794]">Aucun échéancier détecté. Ne pas en inventer : ajoutez-le seulement si le promoteur l'a confirmé.</p>:null}
+        </div>
       </section>
 
       {[
