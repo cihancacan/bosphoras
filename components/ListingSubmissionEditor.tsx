@@ -1,10 +1,23 @@
 'use client';
 
-import { FormEvent, useMemo, useState } from 'react';
+import type { ChangeEvent, FormEvent } from 'react';
+import { useState } from 'react';
 import { ArrowRight, ImagePlus, Save, Send, X } from 'lucide-react';
 import { getPortalSupabase } from '@/lib/portalSupabase';
 
-const locales = ['fr', 'en', 'ru', 'ar'] as const;
+type LocaleKey = 'fr' | 'en' | 'ru' | 'ar';
+type Localized = Record<LocaleKey, string>;
+
+interface Props {
+  userId: string;
+  listingId?: string | null;
+  initialSubmission?: any;
+  onSaved?: () => void;
+  onClose?: () => void;
+}
+
+const locales: LocaleKey[] = ['fr', 'en', 'ru', 'ar'];
+const blankLocalized = (): Localized => ({ fr: '', en: '', ru: '', ar: '' });
 
 function slugify(value: string) {
   return value
@@ -17,110 +30,143 @@ function slugify(value: string) {
     .slice(0, 110);
 }
 
-function localText(seed = '') {
-  return { fr: seed, en: '', ru: '', ar: '' };
+function localizedFrom(value: any): Localized {
+  return {
+    fr: String(value?.fr || ''),
+    en: String(value?.en || ''),
+    ru: String(value?.ru || ''),
+    ar: String(value?.ar || ''),
+  };
 }
 
-interface Props {
-  userId: string;
-  listingId?: string | null;
-  initialSubmission?: any;
-  onSaved?: () => void;
-  onClose?: () => void;
+function localizedLines(value: Localized) {
+  const split: Record<LocaleKey, string[]> = {
+    fr: value.fr.split('\n').map((v) => v.trim()).filter(Boolean),
+    en: value.en.split('\n').map((v) => v.trim()).filter(Boolean),
+    ru: value.ru.split('\n').map((v) => v.trim()).filter(Boolean),
+    ar: value.ar.split('\n').map((v) => v.trim()).filter(Boolean),
+  };
+  const max = Math.max(split.fr.length, split.en.length, split.ru.length, split.ar.length, 0);
+  return Array.from({ length: max }, (_, i) => ({
+    fr: split.fr[i] || '',
+    en: split.en[i] || split.fr[i] || '',
+    ru: split.ru[i] || split.fr[i] || '',
+    ar: split.ar[i] || split.fr[i] || '',
+  }));
+}
+
+function normalizeLocalized(value: Localized, fallback = ''): Localized {
+  const fr = value.fr.trim() || fallback;
+  return {
+    fr,
+    en: value.en.trim() || fr,
+    ru: value.ru.trim() || fr,
+    ar: value.ar.trim() || fr,
+  };
 }
 
 export function ListingSubmissionEditor({ userId, listingId = null, initialSubmission, onSaved, onClose }: Props) {
   const supabase = getPortalSupabase();
-  const initialPayload = initialSubmission?.payload || {};
+  const initial = initialSubmission?.payload || {};
+
   const [submissionId, setSubmissionId] = useState<string | null>(initialSubmission?.id || null);
   const [status, setStatus] = useState<string>(initialSubmission?.status || 'draft');
   const [busy, setBusy] = useState(false);
+  const [uploading, setUploading] = useState(false);
   const [message, setMessage] = useState('');
 
-  const [city, setCity] = useState(initialPayload.city || 'istanbul');
-  const [district, setDistrict] = useState(initialPayload.district || '');
-  const [collection, setCollection] = useState(initialPayload.collection || 'selected-investment');
-  const [propertyType, setPropertyType] = useState(initialPayload.propertyType || 'apartment');
-  const [transaction, setTransaction] = useState(initialPayload.transaction || 'sale');
-  const [currency, setCurrency] = useState(initialPayload.currency || 'EUR');
-  const [totalPrice, setTotalPrice] = useState(initialPayload.totalPrice || '');
-  const [entryCapital, setEntryCapital] = useState(initialPayload.entryCapital || '');
-  const [surfaceM2, setSurfaceM2] = useState(initialPayload.surfaceM2 || '');
-  const [bedrooms, setBedrooms] = useState(initialPayload.bedrooms || '');
-  const [bathrooms, setBathrooms] = useState(initialPayload.bathrooms || '');
-  const [developer, setDeveloper] = useState(initialPayload.developer || '');
-  const [externalId, setExternalId] = useState(initialPayload.externalId || '');
-  const [featured, setFeatured] = useState(Boolean(initialPayload.featured));
-  const [priceOnRequest, setPriceOnRequest] = useState(Boolean(initialPayload.priceOnRequest));
-  const [titles, setTitles] = useState<any>(initialPayload.title || localText());
-  const [summaries, setSummaries] = useState<any>(initialPayload.summary || localText());
-  const [descriptions, setDescriptions] = useState<any>(initialPayload.description || localText());
-  const [seoTitles, setSeoTitles] = useState<any>(initialPayload.seoTitle || localText());
-  const [seoDescriptions, setSeoDescriptions] = useState<any>(initialPayload.seoDescription || localText());
-  const [slugs, setSlugs] = useState<any>(initialPayload.slugs || localText());
-  const [delivery, setDelivery] = useState<any>(initialPayload.delivery || localText());
-  const [strengths, setStrengths] = useState<any>(
-    Object.fromEntries(locales.map((l) => [l, (initialPayload.strengths || []).map((x:any)=>x?.[l]).filter(Boolean).join('\n')]))
+  const [core, setCore] = useState({
+    externalId: String(initial.externalId || ''),
+    city: String(initial.city || 'istanbul'),
+    district: String(initial.district || ''),
+    collection: String(initial.collection || 'selected-investment'),
+    propertyType: String(initial.propertyType || 'apartment'),
+    transaction: String(initial.transaction || 'sale'),
+    currency: String(initial.currency || 'EUR'),
+    totalPrice: String(initial.totalPrice || ''),
+    entryCapital: String(initial.entryCapital || ''),
+    surfaceM2: String(initial.surfaceM2 || ''),
+    bedrooms: String(initial.bedrooms || ''),
+    bathrooms: String(initial.bathrooms || ''),
+    developer: String(initial.developer || ''),
+    featured: Boolean(initial.featured),
+    priceOnRequest: Boolean(initial.priceOnRequest),
+  });
+
+  const [title, setTitle] = useState<Localized>(localizedFrom(initial.title));
+  const [slug, setSlug] = useState<Localized>(localizedFrom(initial.slugs));
+  const [summary, setSummary] = useState<Localized>(localizedFrom(initial.summary));
+  const [description, setDescription] = useState<Localized>(localizedFrom(initial.description));
+  const [seoTitle, setSeoTitle] = useState<Localized>(localizedFrom(initial.seoTitle));
+  const [seoDescription, setSeoDescription] = useState<Localized>(localizedFrom(initial.seoDescription));
+  const [delivery, setDelivery] = useState<Localized>(localizedFrom(initial.delivery));
+  const [strengths, setStrengths] = useState<Localized>(() => {
+    const out = blankLocalized();
+    locales.forEach((l) => { out[l] = (initial.strengths || []).map((x: any) => x?.[l]).filter(Boolean).join('\n'); });
+    return out;
+  });
+  const [technicalNotes, setTechnicalNotes] = useState<Localized>(() => {
+    const out = blankLocalized();
+    locales.forEach((l) => { out[l] = (initial.technicalNotes || []).map((x: any) => x?.[l]).filter(Boolean).join('\n'); });
+    return out;
+  });
+  const [watchpoints, setWatchpoints] = useState<Localized>(() => {
+    const out = blankLocalized();
+    locales.forEach((l) => { out[l] = (initial.watchpoints || []).map((x: any) => x?.[l]).filter(Boolean).join('\n'); });
+    return out;
+  });
+  const [images, setImages] = useState<string[]>(Array.isArray(initial.images) ? initial.images : []);
+  const [paymentPlan, setPaymentPlan] = useState<any[]>(
+    Array.isArray(initial.paymentPlan) && initial.paymentPlan.length
+      ? initial.paymentPlan
+      : [
+          { label: { fr: 'Réservation', en: 'Reservation', ru: 'Бронирование', ar: 'الحجز' }, percentage: 30, due: { fr: 'À la signature', en: 'At signing', ru: 'При подписании', ar: 'عند التوقيع' } },
+          { label: { fr: 'Pendant construction', en: 'During construction', ru: 'Во время строительства', ar: 'أثناء الإنشاء' }, percentage: 50, due: { fr: 'Selon échéancier', en: 'Per schedule', ru: 'По графику', ar: 'حسب الجدول' } },
+          { label: { fr: 'Livraison', en: 'Handover', ru: 'Передача', ar: 'التسليم' }, percentage: 20, due: { fr: 'À la livraison', en: 'At handover', ru: 'При передаче', ar: 'عند التسليم' } },
+        ]
   );
-  const [technicalNotes, setTechnicalNotes] = useState<any>(
-    Object.fromEntries(locales.map((l) => [l, (initialPayload.technicalNotes || []).map((x:any)=>x?.[l]).filter(Boolean).join('\n')]))
-  );
-  const [watchpoints, setWatchpoints] = useState<any>(
-    Object.fromEntries(locales.map((l) => [l, (initialPayload.watchpoints || []).map((x:any)=>x?.[l]).filter(Boolean).join('\n')]))
-  );
-  const [paymentPlan, setPaymentPlan] = useState<any[]>(initialPayload.paymentPlan || [
-    { label: localText('Réservation'), percentage: 30, due: localText('À la signature') },
-    { label: localText('Pendant construction'), percentage: 50, due: localText('Selon échéancier') },
-    { label: localText('Livraison'), percentage: 20, due: localText('À la livraison') },
-  ]);
-  const [images, setImages] = useState<string[]>(initialPayload.images || []);
-  const [uploading, setUploading] = useState(false);
 
   const editable = status === 'draft' || status === 'changes_requested';
+  const input = 'min-h-[44px] w-full border border-[#d8c7a1] bg-white px-3 text-sm';
+  const textarea = 'w-full border border-[#d8c7a1] bg-white px-3 py-3 text-sm leading-6';
+  const label = 'grid gap-2 text-[0.68rem] font-bold uppercase tracking-[0.1em] text-[#66707b]';
 
-  function localizedLines(source: any) {
-    const arrays: Record<string, string[]> = {};
-    for (const locale of locales) arrays[locale] = String(source[locale] || '').split('\n').map(x=>x.trim()).filter(Boolean);
-    const max = Math.max(0, ...locales.map(l=>arrays[l].length));
-    return Array.from({ length: max }, (_, index) =>
-      Object.fromEntries(locales.map(locale => [locale, arrays[locale][index] || arrays.fr[index] || '']))
-    );
+  function setLocalized(setter: (value: Localized) => void, current: Localized, locale: LocaleKey, value: string) {
+    setter({ ...current, [locale]: value });
   }
 
-  function normalizedLocalized(source: any, fallback = '') {
-    const fr = String(source.fr || fallback).trim();
-    return Object.fromEntries(locales.map(locale => [locale, String(source[locale] || fr).trim()]));
-  }
-
-  const payload = useMemo(() => {
-    const normalizedTitles = normalizedLocalized(titles);
-    const normalizedSlugs = Object.fromEntries(
-      locales.map(locale => [locale, slugify(slugs[locale] || normalizedTitles[locale] || normalizedTitles.fr)])
-    );
+  function payload() {
+    const normalizedTitle = normalizeLocalized(title);
+    const normalizedSlug: Localized = {
+      fr: slugify(slug.fr || normalizedTitle.fr),
+      en: slugify(slug.en || normalizedTitle.en || normalizedTitle.fr),
+      ru: slugify(slug.ru || normalizedTitle.ru || normalizedTitle.fr),
+      ar: slugify(slug.ar || normalizedTitle.ar || normalizedTitle.fr),
+    };
     return {
-      externalId,
-      featured,
+      externalId: core.externalId,
+      featured: core.featured,
       status: 'available',
-      collection,
-      transaction,
-      propertyType,
-      city,
-      district,
-      slugs: normalizedSlugs,
-      title: normalizedTitles,
-      summary: normalizedLocalized(summaries),
-      description: normalizedLocalized(descriptions),
-      seoTitle: normalizedLocalized(seoTitles, normalizedTitles.fr),
-      seoDescription: normalizedLocalized(seoDescriptions, summaries.fr),
-      currency,
-      totalPrice,
-      priceOnRequest,
-      entryCapital,
-      surfaceM2,
-      bedrooms,
-      bathrooms,
-      delivery: normalizedLocalized(delivery),
-      developer,
+      collection: core.collection,
+      transaction: core.transaction,
+      propertyType: core.propertyType,
+      city: core.city,
+      district: core.district,
+      slugs: normalizedSlug,
+      title: normalizedTitle,
+      summary: normalizeLocalized(summary),
+      description: normalizeLocalized(description),
+      seoTitle: normalizeLocalized(seoTitle, normalizedTitle.fr),
+      seoDescription: normalizeLocalized(seoDescription, summary.fr),
+      currency: core.currency,
+      totalPrice: core.totalPrice,
+      priceOnRequest: core.priceOnRequest,
+      entryCapital: core.entryCapital,
+      surfaceM2: core.surfaceM2,
+      bedrooms: core.bedrooms,
+      bathrooms: core.bathrooms,
+      delivery: normalizeLocalized(delivery),
+      developer: core.developer,
       partner: '',
       paymentPlan,
       highlights: [],
@@ -131,22 +177,18 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
       heroImage: images[0] || '',
       verifiedAt: new Date().toISOString(),
     };
-  }, [
-    externalId, featured, collection, transaction, propertyType, city, district, slugs, titles,
-    summaries, descriptions, seoTitles, seoDescriptions, currency, totalPrice, priceOnRequest,
-    entryCapital, surfaceM2, bedrooms, bathrooms, delivery, developer, paymentPlan, strengths,
-    technicalNotes, watchpoints, images,
-  ]);
+  }
 
-  async function uploadFiles(files: FileList | null) {
+  async function uploadFiles(event: ChangeEvent<HTMLInputElement>) {
+    const files = event.target.files;
     if (!files?.length) return;
     setUploading(true);
     setMessage('');
     try {
       const urls: string[] = [];
-      for (const file of Array.from(files).slice(0, 16 - images.length)) {
-        const safe = file.name.toLowerCase().replace(/[^a-z0-9._-]+/g, '-');
-        const path = `submissions/${userId}/${crypto.randomUUID()}-${safe}`;
+      for (const file of Array.from(files).slice(0, Math.max(0, 16 - images.length))) {
+        const safeName = file.name.toLowerCase().replace(/[^a-z0-9._-]+/g, '-');
+        const path = `submissions/${userId}/${crypto.randomUUID()}-${safeName}`;
         const { error } = await supabase.storage.from('property-images').upload(path, file, {
           cacheControl: '31536000',
           upsert: false,
@@ -156,7 +198,8 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
         const { data } = supabase.storage.from('property-images').getPublicUrl(path);
         urls.push(data.publicUrl);
       }
-      setImages(current => [...current, ...urls]);
+      setImages((current) => [...current, ...urls]);
+      event.target.value = '';
     } catch (error) {
       setMessage(error instanceof Error ? error.message : 'Upload impossible.');
     } finally {
@@ -171,14 +214,15 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
       const { data, error } = await supabase.rpc('partner_save_listing_draft', {
         p_submission_id: submissionId,
         p_listing_id: listingId,
-        p_payload: payload,
+        p_payload: payload(),
       });
       if (error) throw error;
-      setSubmissionId(data ? String(data) : null);
+      const id = data ? String(data) : null;
+      setSubmissionId(id);
       setStatus('draft');
       setMessage('Brouillon enregistré.');
       onSaved?.();
-      return data as string;
+      return id;
     } catch (error) {
       setMessage(error instanceof Error ? error.message : 'Enregistrement impossible.');
       return null;
@@ -187,9 +231,9 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
     }
   }
 
-  async function submitForReview(event: FormEvent) {
+  async function submitForReview(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (!titles.fr.trim() || !district.trim() || (!priceOnRequest && !String(totalPrice).trim())) {
+    if (!title.fr.trim() || !core.district.trim() || (!core.priceOnRequest && !core.totalPrice.trim())) {
       setMessage('Titre FR, quartier et prix (ou prix sur demande) sont obligatoires.');
       return;
     }
@@ -200,7 +244,7 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
       const { error } = await supabase.rpc('partner_submit_listing', { p_submission_id: id });
       if (error) throw error;
       setStatus('submitted');
-      setMessage('Annonce envoyée à Bosphoras pour validation. Elle ne peut plus être modifiée tant que l’administrateur ne l’a pas examinée.');
+      setMessage('Annonce envoyée à Bosphoras pour validation. Elle est verrouillée jusqu’à la décision administrateur.');
       onSaved?.();
     } catch (error) {
       setMessage(error instanceof Error ? error.message : 'Soumission impossible.');
@@ -209,139 +253,119 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
     }
   }
 
-  const localizedSections: Array<{ name: string; state: any; setter: any; multi: boolean }> = [
-    { name: 'Titre', state: titles, setter: setTitles, multi: false },
-    { name: 'Slug SEO', state: slugs, setter: setSlugs, multi: false },
-    { name: 'Résumé', state: summaries, setter: setSummaries, multi: true },
-    { name: 'Description complète', state: descriptions, setter: setDescriptions, multi: true },
-    { name: 'SEO title', state: seoTitles, setter: setSeoTitles, multi: false },
-    { name: 'Meta description', state: seoDescriptions, setter: setSeoDescriptions, multi: true },
-    { name: 'Livraison', state: delivery, setter: setDelivery, multi: false },
-  ];
-
-  const bulletSections: Array<{ name: string; state: any; setter: any }> = [
-    { name: 'Pourquoi le sélectionner', state: strengths, setter: setStrengths },
-    { name: 'Technical Notes', state: technicalNotes, setter: setTechnicalNotes },
-    { name: 'Points de vigilance', state: watchpoints, setter: setWatchpoints },
-  ];
-
-  const input = 'min-h-[44px] w-full border border-[#d8c7a1] bg-white px-3 text-sm';
-  const textarea = 'w-full border border-[#d8c7a1] bg-white px-3 py-3 text-sm leading-6';
-  const label = 'grid gap-2 text-[0.68rem] font-bold uppercase tracking-[0.1em] text-[#66707b]';
-
   return (
     <form onSubmit={submitForReview} className="space-y-7">
       <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#d8c7a1] pb-5">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#8a6728]">Soumission partenaire</p>
           <h3 className="mt-2 font-serif text-3xl">{listingId ? 'Proposer une modification' : 'Nouvelle opportunité'}</h3>
-          <p className="mt-2 text-sm text-[#66707b]">Statut : <strong>{status}</strong>. Aucune modification partenaire n’affecte le site public avant validation administrateur.</p>
+          <p className="mt-2 text-sm text-[#66707b]">Statut : <strong>{status}</strong>. La version publique ne change jamais avant validation Bosphoras.</p>
         </div>
-        {onClose && <button type="button" onClick={onClose} className="p-2 text-[#66707b]" aria-label="Fermer"><X size={20}/></button>}
+        {onClose ? <button type="button" onClick={onClose} className="p-2 text-[#66707b]" aria-label="Fermer"><X size={20} /></button> : null}
       </div>
 
-      {!editable && (
-        <div className="border border-[#d8c7a1] bg-[#f6efe4] p-5 text-sm leading-6 text-[#58616d]">
-          Cette version est verrouillée pendant la revue Bosphoras.
-        </div>
-      )}
+      {!editable ? <div className="border border-[#d8c7a1] bg-[#f6efe4] p-5 text-sm text-[#58616d]">Cette version est verrouillée pendant la revue administrateur.</div> : null}
 
       <fieldset disabled={!editable} className="space-y-7 disabled:opacity-70">
         <div className="grid gap-4 md:grid-cols-4">
-          <label className={label}>Ville<select value={city} onChange={e=>setCity(e.target.value)} className={input}><option value="istanbul">Istanbul</option><option value="bodrum">Bodrum</option><option value="antalya">Antalya</option></select></label>
-          <label className={label}>Quartier<input value={district} onChange={e=>setDistrict(e.target.value)} className={input}/></label>
-          <label className={label}>Collection<select value={collection} onChange={e=>setCollection(e.target.value)} className={input}><option value="selected-investment">Selected Investment</option><option value="signature">Signature Collection</option><option value="private">Private Opportunity</option></select></label>
-          <label className={label}>Type<select value={propertyType} onChange={e=>setPropertyType(e.target.value)} className={input}><option value="apartment">Appartement</option><option value="residence">Résidence</option><option value="villa">Villa</option><option value="penthouse">Penthouse</option><option value="commercial">Commercial</option></select></label>
-          <label className={label}>Transaction<select value={transaction} onChange={e=>setTransaction(e.target.value)} className={input}><option value="sale">Vente</option><option value="rent">Location</option></select></label>
-          <label className={label}>Référence<input value={externalId} onChange={e=>setExternalId(e.target.value)} className={input} placeholder="PARTNER-001"/></label>
-          <label className={label}>Promoteur<input value={developer} onChange={e=>setDeveloper(e.target.value)} className={input}/></label>
-          <label className={label}>Devise<select value={currency} onChange={e=>setCurrency(e.target.value)} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option></select></label>
-          <label className={label}>Prix total<input value={totalPrice} onChange={e=>setTotalPrice(e.target.value)} className={input} inputMode="decimal"/></label>
-          <label className={label}>Capital aujourd'hui<input value={entryCapital} onChange={e=>setEntryCapital(e.target.value)} className={input} inputMode="decimal"/></label>
-          <label className={label}>Surface m²<input value={surfaceM2} onChange={e=>setSurfaceM2(e.target.value)} className={input} inputMode="decimal"/></label>
-          <label className={label}>Chambres<input value={bedrooms} onChange={e=>setBedrooms(e.target.value)} className={input} inputMode="numeric"/></label>
-          <label className={label}>Salles de bain<input value={bathrooms} onChange={e=>setBathrooms(e.target.value)} className={input} inputMode="numeric"/></label>
-          <label className="flex items-center gap-3 pt-7 text-sm"><input type="checkbox" checked={priceOnRequest} onChange={e=>setPriceOnRequest(e.target.checked)}/> Prix sur demande</label>
-          <label className="flex items-center gap-3 pt-7 text-sm"><input type="checkbox" checked={featured} onChange={e=>setFeatured(e.target.checked)}/> À proposer comme mise en avant</label>
+          <label className={label}>Ville<select value={core.city} onChange={(e)=>setCore({...core,city:e.target.value})} className={input}><option value="istanbul">Istanbul</option><option value="bodrum">Bodrum</option><option value="antalya">Antalya</option></select></label>
+          <label className={label}>Quartier<input value={core.district} onChange={(e)=>setCore({...core,district:e.target.value})} className={input}/></label>
+          <label className={label}>Collection<select value={core.collection} onChange={(e)=>setCore({...core,collection:e.target.value})} className={input}><option value="selected-investment">Selected Investment</option><option value="signature">Signature Collection</option><option value="private">Private Opportunity</option></select></label>
+          <label className={label}>Type<select value={core.propertyType} onChange={(e)=>setCore({...core,propertyType:e.target.value})} className={input}><option value="apartment">Appartement</option><option value="residence">Résidence</option><option value="villa">Villa</option><option value="penthouse">Penthouse</option><option value="commercial">Commercial</option></select></label>
+          <label className={label}>Transaction<select value={core.transaction} onChange={(e)=>setCore({...core,transaction:e.target.value})} className={input}><option value="sale">Vente</option><option value="rent">Location</option></select></label>
+          <label className={label}>Référence<input value={core.externalId} onChange={(e)=>setCore({...core,externalId:e.target.value})} className={input}/></label>
+          <label className={label}>Promoteur<input value={core.developer} onChange={(e)=>setCore({...core,developer:e.target.value})} className={input}/></label>
+          <label className={label}>Devise<select value={core.currency} onChange={(e)=>setCore({...core,currency:e.target.value})} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option></select></label>
+          <label className={label}>Prix total<input value={core.totalPrice} onChange={(e)=>setCore({...core,totalPrice:e.target.value})} className={input}/></label>
+          <label className={label}>Capital aujourd'hui<input value={core.entryCapital} onChange={(e)=>setCore({...core,entryCapital:e.target.value})} className={input}/></label>
+          <label className={label}>Surface m²<input value={core.surfaceM2} onChange={(e)=>setCore({...core,surfaceM2:e.target.value})} className={input}/></label>
+          <label className={label}>Chambres<input value={core.bedrooms} onChange={(e)=>setCore({...core,bedrooms:e.target.value})} className={input}/></label>
+          <label className={label}>Salles de bain<input value={core.bathrooms} onChange={(e)=>setCore({...core,bathrooms:e.target.value})} className={input}/></label>
+          <label className="flex items-center gap-3 pt-7 text-sm"><input type="checkbox" checked={core.priceOnRequest} onChange={(e)=>setCore({...core,priceOnRequest:e.target.checked})}/> Prix sur demande</label>
+          <label className="flex items-center gap-3 pt-7 text-sm"><input type="checkbox" checked={core.featured} onChange={(e)=>setCore({...core,featured:e.target.checked})}/> Proposition mise en avant</label>
         </div>
 
-        {localizedSections.map(({ name, state, setter, multi }) => (
-          <section key={name} className="border border-[#d8c7a1] bg-white p-5">
-            <h4 className="font-serif text-xl">{name}</h4>
-            <div className="mt-4 grid gap-4 md:grid-cols-2">
-              {locales.map(locale => (
-                <label key={locale} className={label}>{locale.toUpperCase()}
-                  {multi ? (
-                    <textarea rows={name === 'Description complète' ? 7 : 3} value={state[locale] || ''} onChange={e=>setter({...state,[locale]:e.target.value})} className={textarea}/>
-                  ) : (
-                    <input value={state[locale] || ''} onChange={e=>setter({...state,[locale]:e.target.value})} className={input}/>
-                  )}
-                </label>
-              ))}
-            </div>
-          </section>
-        ))}
+        <LocalizedFields title="Titre public" value={title} setValue={setTitle} inputClass={input} textareaClass={textarea} labelClass={label} />
+        <LocalizedFields title="Slug SEO" value={slug} setValue={setSlug} inputClass={input} textareaClass={textarea} labelClass={label} />
+        <LocalizedFields title="Résumé" value={summary} setValue={setSummary} multiline inputClass={input} textareaClass={textarea} labelClass={label} />
+        <LocalizedFields title="Description complète" value={description} setValue={setDescription} multiline rows={7} inputClass={input} textareaClass={textarea} labelClass={label} />
+        <LocalizedFields title="SEO title" value={seoTitle} setValue={setSeoTitle} inputClass={input} textareaClass={textarea} labelClass={label} />
+        <LocalizedFields title="Meta description" value={seoDescription} setValue={setSeoDescription} multiline inputClass={input} textareaClass={textarea} labelClass={label} />
+        <LocalizedFields title="Livraison" value={delivery} setValue={setDelivery} inputClass={input} textareaClass={textarea} labelClass={label} />
 
-        <section className="grid gap-5 lg:grid-cols-3">
-          {bulletSections.map(({ name, state, setter }) => (
-            <div key={name} className="border border-[#d8c7a1] bg-white p-5">
-              <h4 className="font-serif text-xl">{name}</h4>
-              <p className="mt-2 text-xs text-[#7b8490]">Un point par ligne. FR peut servir de fallback si une traduction manque.</p>
-              <div className="mt-4 space-y-4">
-                {locales.map(locale => (
-                  <label key={locale} className={label}>{locale.toUpperCase()}
-                    <textarea rows={4} value={state[locale] || ''} onChange={e=>setter({...state,[locale]:e.target.value})} className={textarea}/>
-                  </label>
-                ))}
-              </div>
-            </div>
-          ))}
-        </section>
+        <div className="grid gap-5 lg:grid-cols-3">
+          <LocalizedFields title="Pourquoi le sélectionner" value={strengths} setValue={setStrengths} multiline rows={5} inputClass={input} textareaClass={textarea} labelClass={label} />
+          <LocalizedFields title="Technical Notes" value={technicalNotes} setValue={setTechnicalNotes} multiline rows={5} inputClass={input} textareaClass={textarea} labelClass={label} />
+          <LocalizedFields title="Points de vigilance" value={watchpoints} setValue={setWatchpoints} multiline rows={5} inputClass={input} textareaClass={textarea} labelClass={label} />
+        </div>
 
         <section className="border border-[#d8c7a1] bg-white p-5">
           <h4 className="font-serif text-2xl">Plan de paiement</h4>
-          <div className="mt-5 grid gap-3">
-            {paymentPlan.map((step:any, index:number) => (
+          <div className="mt-5 space-y-3">
+            {paymentPlan.map((step, index) => (
               <div key={index} className="grid gap-3 border-t border-[#eee3d2] pt-4 md:grid-cols-[1.2fr_0.5fr_1.2fr_auto]">
-                <input value={step.label?.fr || ''} onChange={e=>setPaymentPlan((x:any[])=>x.map((s,i)=>i===index?{...s,label:{...s.label,fr:e.target.value,en:s.label?.en||e.target.value,ru:s.label?.ru||e.target.value,ar:s.label?.ar||e.target.value}}:s))} className={input} placeholder="Étape"/>
-                <input value={step.percentage ?? ''} onChange={e=>setPaymentPlan((x:any[])=>x.map((s,i)=>i===index?{...s,percentage:Number(e.target.value)}:s))} className={input} placeholder="%"/>
-                <input value={step.due?.fr || ''} onChange={e=>setPaymentPlan((x:any[])=>x.map((s,i)=>i===index?{...s,due:{...s.due,fr:e.target.value,en:s.due?.en||e.target.value,ru:s.due?.ru||e.target.value,ar:s.due?.ar||e.target.value}}:s))} className={input} placeholder="Échéance"/>
-                <button type="button" onClick={()=>setPaymentPlan((x:any[])=>x.filter((_,i)=>i!==index))} className="px-3 text-[#9c5a52]">×</button>
+                <input value={String(step?.label?.fr || '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,label:{...(s.label||{}),fr:e.target.value,en:s.label?.en||e.target.value,ru:s.label?.ru||e.target.value,ar:s.label?.ar||e.target.value}}:s))} className={input} />
+                <input value={String(step?.percentage ?? '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,percentage:Number(e.target.value)}:s))} className={input} />
+                <input value={String(step?.due?.fr || '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,due:{...(s.due||{}),fr:e.target.value,en:s.due?.en||e.target.value,ru:s.due?.ru||e.target.value,ar:s.due?.ar||e.target.value}}:s))} className={input} />
+                <button type="button" onClick={()=>setPaymentPlan(paymentPlan.filter((_,i)=>i!==index))} className="px-3 text-[#9c5a52]">×</button>
               </div>
             ))}
           </div>
-          <button type="button" onClick={()=>setPaymentPlan((x:any[])=>[...x,{label:localText('Nouvelle étape'),percentage:0,due:localText('À définir')}])} className="mt-5 text-xs font-bold uppercase tracking-[0.12em] text-[#8a6728]">+ Ajouter une étape</button>
+          <button type="button" onClick={()=>setPaymentPlan([...paymentPlan,{label:{fr:'Nouvelle étape',en:'New step',ru:'Новый этап',ar:'مرحلة جديدة'},percentage:0,due:{fr:'À définir',en:'To define',ru:'Уточнить',ar:'يحدد لاحقاً'}}])} className="mt-5 text-xs font-bold uppercase tracking-[0.12em] text-[#8a6728]">+ Ajouter une étape</button>
         </section>
 
         <section className="border border-[#d8c7a1] bg-white p-5">
           <div className="flex items-center gap-3"><ImagePlus size={20} className="text-[#8a6728]"/><h4 className="font-serif text-2xl">Photos</h4></div>
-          <input type="file" multiple accept="image/jpeg,image/png,image/webp,image/avif" onChange={e=>uploadFiles(e.target.files)} className="mt-5 text-sm"/>
-          {uploading && <p className="mt-3 text-sm text-[#66707b]">Upload en cours…</p>}
-          {images.length > 0 && (
-            <div className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4">
-              {images.map((url,index)=>(
-                <div key={url} className="relative aspect-[4/3] overflow-hidden bg-[#eee3d2]">
-                  <img src={url} alt="" className="h-full w-full object-cover"/>
-                  <button type="button" onClick={()=>setImages(x=>x.filter((_,i)=>i!==index))} className="absolute right-2 top-2 bg-[#101827] p-1.5 text-white"><X size={14}/></button>
-                </div>
-              ))}
-            </div>
-          )}
+          <input type="file" multiple accept="image/jpeg,image/png,image/webp,image/avif" onChange={uploadFiles} className="mt-5 text-sm"/>
+          {uploading ? <p className="mt-3 text-sm text-[#66707b]">Upload en cours…</p> : null}
+          {images.length ? <div className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4">{images.map((url,index)=><div key={url} className="relative aspect-[4/3] overflow-hidden bg-[#eee3d2]"><img src={url} alt="" className="h-full w-full object-cover"/><button type="button" onClick={()=>setImages(images.filter((_,i)=>i!==index))} className="absolute right-2 top-2 bg-[#101827] p-1.5 text-white"><X size={14}/></button></div>)}</div> : null}
         </section>
       </fieldset>
 
-      {message && <div className="border border-[#d8c7a1] bg-[#fffaf3] p-4 text-sm leading-6 text-[#58616d]">{message}</div>}
+      {message ? <div className="border border-[#d8c7a1] bg-[#fffaf3] p-4 text-sm leading-6 text-[#58616d]">{message}</div> : null}
 
-      {editable && (
-        <div className="flex flex-wrap gap-3">
-          <button type="button" disabled={busy} onClick={saveDraft} className="inline-flex min-h-[48px] items-center gap-2 border border-[#101827] px-5 text-sm font-bold uppercase tracking-[0.12em]">
-            <Save size={16}/> Enregistrer le brouillon
-          </button>
-          <button type="submit" disabled={busy} className="inline-flex min-h-[48px] items-center gap-2 bg-[#101827] px-6 text-sm font-bold uppercase tracking-[0.12em] text-white">
-            <Send size={16}/> Soumettre à validation <ArrowRight size={15}/>
-          </button>
-        </div>
-      )}
+      {editable ? <div className="flex flex-wrap gap-3">
+        <button type="button" disabled={busy} onClick={saveDraft} className="inline-flex min-h-[48px] items-center gap-2 border border-[#101827] px-5 text-sm font-bold uppercase tracking-[0.12em]"><Save size={16}/> Enregistrer le brouillon</button>
+        <button type="submit" disabled={busy} className="inline-flex min-h-[48px] items-center gap-2 bg-[#101827] px-6 text-sm font-bold uppercase tracking-[0.12em] text-white"><Send size={16}/> Soumettre à validation <ArrowRight size={15}/></button>
+      </div> : null}
     </form>
+  );
+}
+
+function LocalizedFields({
+  title,
+  value,
+  setValue,
+  multiline = false,
+  rows = 3,
+  inputClass,
+  textareaClass,
+  labelClass,
+}: {
+  title: string;
+  value: Localized;
+  setValue: (value: Localized) => void;
+  multiline?: boolean;
+  rows?: number;
+  inputClass: string;
+  textareaClass: string;
+  labelClass: string;
+}) {
+  return (
+    <section className="border border-[#d8c7a1] bg-white p-5">
+      <h4 className="font-serif text-xl">{title}</h4>
+      <div className="mt-4 grid gap-4 md:grid-cols-2">
+        {locales.map((locale) => (
+          <label key={locale} className={labelClass}>
+            {locale.toUpperCase()}
+            {multiline ? (
+              <textarea rows={rows} value={value[locale]} onChange={(e)=>setValue({...value,[locale]:e.target.value})} className={textareaClass}/>
+            ) : (
+              <input value={value[locale]} onChange={(e)=>setValue({...value,[locale]:e.target.value})} className={inputClass}/>
+            )}
+          </label>
+        ))}
+      </div>
+    </section>
   );
 }
