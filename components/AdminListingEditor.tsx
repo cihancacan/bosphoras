@@ -33,6 +33,18 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
     delivery:{fr:listing.delivery?.fr||'',en:listing.delivery?.en||'',ru:listing.delivery?.ru||'',ar:listing.delivery?.ar||''},
     images:Array.isArray(listing.images)?listing.images:[],
     payment_plan:Array.isArray(listing.payment_plan)?listing.payment_plan:[],
+    payment_plan_enabled:listing.payment_plan_enabled !== false,
+    payment_interest_mode:listing.payment_interest_mode || 'not_specified',
+    payment_interest_rate:listing.payment_interest_rate ?? '',
+    cash_discount_pct:listing.cash_discount_pct ?? '',
+    cash_price:listing.cash_price ?? '',
+    installment_price:listing.installment_price ?? '',
+    payment_notes:{
+      fr:listing.payment_notes?.fr||'',
+      en:listing.payment_notes?.en||'',
+      ru:listing.payment_notes?.ru||'',
+      ar:listing.payment_notes?.ar||'',
+    },
     strengths_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.strengths||[],l)])),
     technical_notes_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.technical_notes||[],l)])),
     watchpoints_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.watchpoints||[],l)])),
@@ -96,6 +108,13 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
       seo_description:prepared.seoDescription||current.seo_description,
       delivery:prepared.delivery||current.delivery,
       payment_plan:Array.isArray(prepared.paymentPlan)&&prepared.paymentPlan.length?prepared.paymentPlan:current.payment_plan,
+      payment_plan_enabled:prepared.paymentPlanEnabled !== undefined ? Boolean(prepared.paymentPlanEnabled) : current.payment_plan_enabled,
+      payment_interest_mode:prepared.paymentInterestMode || current.payment_interest_mode || 'not_specified',
+      payment_interest_rate:prepared.paymentInterestRate !== undefined && prepared.paymentInterestRate !== null && prepared.paymentInterestRate !== '' ? prepared.paymentInterestRate : current.payment_interest_rate,
+      cash_discount_pct:prepared.cashDiscountPct !== undefined && prepared.cashDiscountPct !== null && prepared.cashDiscountPct !== '' ? prepared.cashDiscountPct : current.cash_discount_pct,
+      cash_price:prepared.cashPrice !== undefined && prepared.cashPrice !== null && prepared.cashPrice !== '' ? prepared.cashPrice : current.cash_price,
+      installment_price:prepared.installmentPrice !== undefined && prepared.installmentPrice !== null && prepared.installmentPrice !== '' ? prepared.installmentPrice : current.installment_price,
+      payment_notes:prepared.paymentNotes || current.payment_notes,
       images:mergeImages,
       hero_image:mergeImages[0]||current.hero_image,
       source_url:prepared.sourceUrl||current.source_url,
@@ -139,6 +158,13 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
         delivery:draft.delivery,
         developer:draft.developer||null,
         payment_plan:Array.isArray(draft.payment_plan)?draft.payment_plan:[],
+        payment_plan_enabled:Boolean(draft.payment_plan_enabled),
+        payment_interest_mode:draft.payment_plan_enabled ? (draft.payment_interest_mode || 'not_specified') : 'not_specified',
+        payment_interest_rate:draft.payment_plan_enabled && draft.payment_interest_mode==='interest_bearing' ? (Number(draft.payment_interest_rate)||null) : null,
+        cash_discount_pct:Number(draft.cash_discount_pct)||null,
+        cash_price:Number(draft.cash_price)||null,
+        installment_price:Number(draft.installment_price)||null,
+        payment_notes:draft.payment_notes,
         strengths:linesToLocalized(draft.strengths_text),
         technical_notes:linesToLocalized(draft.technical_notes_text),
         watchpoints:linesToLocalized(draft.watchpoints_text),
@@ -225,6 +251,65 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
         ].map(([name,key,multi,rows]:any)=><section key={key} className="border border-[#e7edf2] bg-[#f8fafb] p-4"><h3 className="text-sm font-semibold">{name}</h3><div className="mt-3 grid gap-3 md:grid-cols-2">{locales.map((l)=><label key={l} className={label}>{l.toUpperCase()}{multi?<textarea rows={rows} value={draft[key]?.[l]||''} onChange={(e)=>setLocale(key,l,e.target.value)} className={textarea}/>:<input value={draft[key]?.[l]||''} onChange={(e)=>setLocale(key,l,e.target.value)} className={input}/>}</label>)}</div></section>)}
       </div>
     </details>
+
+    <section className="rounded-xl border border-[#cfd8e3] bg-[#f7f9fb] p-5">
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <p className="text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[#315d7c]">Conditions financières promoteur</p>
+          <h3 className="mt-1 text-xl font-semibold tracking-[-0.02em] text-[#162334]">Échéancier, taux et prix comparables</h3>
+          <p className="mt-2 max-w-3xl text-xs leading-5 text-[#7b8794]">(renseignez uniquement les conditions communiquées par le promoteur ; le taux promoteur n’est pas automatiquement un taux bancaire)</p>
+        </div>
+        <label className="flex items-center gap-3 text-sm font-medium text-[#526272]">
+          <input type="checkbox" checked={Boolean(draft.payment_plan_enabled)} onChange={(e)=>setField('payment_plan_enabled',e.target.checked)}/>
+          Échéancier proposé
+        </label>
+      </div>
+
+      <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <label className={label}>Mode de financement
+          <select value={draft.payment_interest_mode||'not_specified'} onChange={(e)=>setField('payment_interest_mode',e.target.value)} disabled={!draft.payment_plan_enabled} className={input}>
+            <option value="not_specified">Taux non communiqué</option>
+            <option value="interest_free">0 % / sans intérêt</option>
+            <option value="interest_bearing">Avec taux / surcoût financier</option>
+          </select>
+          <span className="normal-case tracking-normal text-[0.65rem] font-normal text-[#8793a0]">(choisir 0 % seulement si le promoteur le confirme explicitement)</span>
+        </label>
+
+        <label className={label}>Taux promoteur %
+          <input value={draft.payment_interest_rate??''} onChange={(e)=>setField('payment_interest_rate',e.target.value)} disabled={!draft.payment_plan_enabled || draft.payment_interest_mode!=='interest_bearing'} className={input} inputMode="decimal" placeholder="Ex. 8"/>
+          <span className="normal-case tracking-normal text-[0.65rem] font-normal text-[#8793a0]">(taux annoncé par le promoteur ; préciser dans les notes s’il est annuel ou appliqué au prix total)</span>
+        </label>
+
+        <label className={label}>Prix comptant
+          <input value={draft.cash_price??''} onChange={(e)=>setField('cash_price',e.target.value)} className={input} inputMode="decimal" placeholder="Ex. 1 250 000"/>
+          <span className="normal-case tracking-normal text-[0.65rem] font-normal text-[#8793a0]">(prix si le client règle comptant)</span>
+        </label>
+
+        <label className={label}>Prix avec échéancier
+          <input value={draft.installment_price??''} onChange={(e)=>setField('installment_price',e.target.value)} className={input} inputMode="decimal" placeholder="Ex. 1 300 000"/>
+          <span className="normal-case tracking-normal text-[0.65rem] font-normal text-[#8793a0]">(prix total si le plan de paiement est utilisé)</span>
+        </label>
+
+        <label className={label}>Remise comptant %
+          <input value={draft.cash_discount_pct??''} onChange={(e)=>setField('cash_discount_pct',e.target.value)} className={input} inputMode="decimal" placeholder="Ex. 5"/>
+          <span className="normal-case tracking-normal text-[0.65rem] font-normal text-[#8793a0]">(remise officielle par rapport au prix de référence)</span>
+        </label>
+
+        <div className="md:col-span-2 xl:col-span-3">
+          <label className={label}>Note financière FR
+            <textarea rows={3} value={draft.payment_notes?.fr||''} onChange={(e)=>setLocale('payment_notes','fr',e.target.value)} className={textarea} placeholder="Ex. 30 % à la réservation, solde sur 24 mois. Taux annoncé sur le prix échelonné, sous réserve du contrat."/>
+            <span className="normal-case tracking-normal text-[0.65rem] font-normal text-[#8793a0]">(ce texte apparaît sur la fiche publique ; soyez précis sur la durée, la base du taux et les conditions)</span>
+          </label>
+        </div>
+      </div>
+
+      <details className="mt-5 border-t border-[#d9e1e8] pt-4">
+        <summary className="cursor-pointer text-xs font-semibold text-[#315d7c]">Traductions de la note financière</summary>
+        <div className="mt-4 grid gap-3 md:grid-cols-3">
+          {['en','ru','ar'].map((l)=><label key={l} className={label}>{l.toUpperCase()}<textarea rows={3} value={draft.payment_notes?.[l]||''} onChange={(e)=>setLocale('payment_notes',l,e.target.value)} className={textarea}/></label>)}
+        </div>
+      </details>
+    </section>
 
     <section className="border border-[#d9e1e8] bg-white p-5">
       <div className="flex flex-wrap items-start justify-between gap-4">
