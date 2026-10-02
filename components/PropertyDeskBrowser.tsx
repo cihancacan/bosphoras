@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import { ArrowRight, Building2, Globe2, MapPin, SlidersHorizontal, WalletCards } from 'lucide-react';
 import type { Locale } from '@/lib/i18n';
+import { getLocalePath } from '@/lib/routes';
 import {
   formatEntryCapital,
   formatPropertyPrice,
@@ -205,7 +206,7 @@ export function PropertyDeskBrowser({ locale, properties, globalMode = false }: 
               const payBadge = paymentBadge(property, locale);
               return (
                 <article key={property.id} className="group overflow-hidden rounded-2xl border border-[#d7dfdc] bg-white shadow-[0_18px_50px_rgba(20,40,36,0.05)] transition hover:-translate-y-1 hover:shadow-[0_24px_70px_rgba(20,40,36,0.10)]">
-                  <Link href={getPropertyPath(locale, property, globalMode)} className="block">
+                  <Link href={getLocalePath(locale, getPropertyPath(locale, property, globalMode))} className="block">
                     <div className="relative aspect-[16/10] overflow-hidden bg-[#dce4e1]">
                       {property.heroImage || property.images[0] ? (
                         <img src={property.heroImage || property.images[0]} alt={property.title[locale]} className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]"/>
