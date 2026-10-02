@@ -120,8 +120,21 @@ export function formatPropertyPrice(property: PropertyListing, locale: Locale): 
   ).format(property.totalPrice);
 }
 
+export function getEntryCapitalAmount(property: PropertyListing): number | null {
+  if (property.entryCapital && property.entryCapital > 0) return property.entryCapital;
+  if (property.paymentPlanEnabled === false || !property.paymentPlan?.length) return null;
+  const firstStep = property.paymentPlan[0];
+  if (firstStep.amount && firstStep.amount > 0) return firstStep.amount;
+  if (firstStep.percentage && firstStep.percentage > 0 && property.totalPrice && property.totalPrice > 0) {
+    const base = property.installmentPrice || property.totalPrice;
+    return Math.round((base * firstStep.percentage) / 100);
+  }
+  return null;
+}
+
 export function formatEntryCapital(property: PropertyListing, locale: Locale): string | null {
-  if (!property.entryCapital) return null;
+  const entryAmount = getEntryCapitalAmount(property);
+  if (!entryAmount) return null;
   const amount = new Intl.NumberFormat(
     locale === 'fr' ? 'fr-FR' : locale === 'ru' ? 'ru-RU' : locale === 'ar' ? 'ar' : 'en-GB',
     {
@@ -129,7 +142,7 @@ export function formatEntryCapital(property: PropertyListing, locale: Locale): s
       currency: property.currency,
       maximumFractionDigits: 0,
     }
-  ).format(property.entryCapital);
+  ).format(entryAmount);
 
   return locale === 'fr'
     ? `Capital aujourd’hui : ${amount}`
