@@ -7,6 +7,7 @@ import {
   formatEntryCapital,
   formatPropertyPrice,
   getPropertyPath,
+  globalPropertyHubPaths,
   propertyHubPaths,
   type PropertyListing,
 } from '@/data/propertyDesk';
@@ -19,6 +20,7 @@ import { StructuredData } from '@/components/StructuredData';
 interface PropertyDetailPageProps {
   locale: Locale;
   property: PropertyListing;
+  globalMode?: boolean;
 }
 
 function labels(locale: Locale) {
@@ -111,10 +113,10 @@ function collectionLabel(collection: PropertyListing['collection'], locale: Loca
   return map[collection][locale];
 }
 
-export function PropertyDetailPage({ locale, property }: PropertyDetailPageProps) {
+export function PropertyDetailPage({ locale, property, globalMode = false }: PropertyDetailPageProps) {
   const c = labels(locale);
-  const fullPath = getLocalePath(locale, getPropertyPath(locale, property));
-  const hubPath = getLocalePath(locale, propertyHubPaths[locale]);
+  const fullPath = getLocalePath(locale, getPropertyPath(locale, property, globalMode));
+  const hubPath = getLocalePath(locale, globalMode ? globalPropertyHubPaths[locale] : propertyHubPaths[locale]);
   const assessmentPath =
     locale === 'fr'
       ? '/diagnostic-prive'
@@ -155,7 +157,7 @@ export function PropertyDetailPage({ locale, property }: PropertyDetailPageProps
   const localizedPaths = Object.fromEntries(
     (['fr', 'en', 'ru', 'ar'] as const).map((targetLocale) => [
       targetLocale,
-      getLocalePath(targetLocale, getPropertyPath(targetLocale, property)),
+      getLocalePath(targetLocale, getPropertyPath(targetLocale, property, globalMode)),
     ])
   ) as Record<Locale, string>;
 
