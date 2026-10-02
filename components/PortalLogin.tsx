@@ -6,7 +6,7 @@ import { getPortalSupabase } from '@/lib/portalSupabase';
 
 export function PortalLogin() {
   const supabase = getPortalSupabase();
-  const [email, setEmail] = useState('cacancihan@gmail.com');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState('');
@@ -34,7 +34,7 @@ export function PortalLogin() {
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#171a1f] px-5 py-12 text-white">
+    <main className="flex min-h-screen items-center justify-center bg-[#11151a] px-5 py-12 text-white [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe_UI,sans-serif]">
       <section className="w-full max-w-[460px]">
         <div className="mb-8 text-center">
           <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/[0.04] text-[#b28b5a]">
