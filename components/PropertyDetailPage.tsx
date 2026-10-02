@@ -33,6 +33,8 @@ function labels(locale: Locale) {
       surface: 'Surface',
       bedrooms: 'Chambres',
       payment: 'Plan de paiement',
+      cashPrice: 'Prix comptant',
+      installmentPrice: 'Prix échelonné',
       why: 'Pourquoi Bosphoras l’a sélectionné',
       technical: 'Bosphoras Technical Notes',
       watch: 'Points de vigilance',
@@ -52,6 +54,8 @@ function labels(locale: Locale) {
       surface: 'Площадь',
       bedrooms: 'Спальни',
       payment: 'График платежей',
+      cashPrice: 'Цена при полной оплате',
+      installmentPrice: 'Цена в рассрочку',
       why: 'Почему Bosphoras выбрал этот объект',
       technical: 'Bosphoras Technical Notes',
       watch: 'На что обратить внимание',
@@ -71,6 +75,8 @@ function labels(locale: Locale) {
       surface: 'المساحة',
       bedrooms: 'غرف النوم',
       payment: 'خطة الدفع',
+      cashPrice: 'السعر النقدي',
+      installmentPrice: 'سعر التقسيط',
       why: 'لماذا اختار Bosphoras هذا العقار',
       technical: 'Bosphoras Technical Notes',
       watch: 'نقاط يجب الانتباه لها',
@@ -89,6 +95,8 @@ function labels(locale: Locale) {
     surface: 'Surface',
     bedrooms: 'Bedrooms',
     payment: 'Payment plan',
+    cashPrice: 'Cash price',
+    installmentPrice: 'Instalment price',
     why: 'Why Bosphoras selected it',
     technical: 'Bosphoras Technical Notes',
     watch: 'Points to watch',
@@ -279,6 +287,12 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
             {property.paymentPlanEnabled !== false && property.paymentPlan && property.paymentPlan.length > 0 && (
               <div className="bg-[#10231e] p-7 text-white">
                 <h2 className="inline-flex items-center gap-3 font-sans text-3xl"><WalletCards size={22} className="text-[#c9aa7a]" />{c.payment}</h2>
+                {(property.cashPrice || property.installmentPrice) ? (
+                  <div className="mt-5 grid grid-cols-2 gap-3">
+                    {property.cashPrice ? <div className="rounded-xl bg-white/[0.07] p-4"><span className="text-[0.62rem] uppercase tracking-[0.1em] text-[#a8b8b3]">{c.cashPrice}</span><strong className="mt-2 block text-lg">{new Intl.NumberFormat(locale === 'fr' ? 'fr-FR' : 'en-GB',{style:'currency',currency:property.currency,maximumFractionDigits:0}).format(property.cashPrice)}</strong></div> : null}
+                    {property.installmentPrice ? <div className="rounded-xl bg-white/[0.07] p-4"><span className="text-[0.62rem] uppercase tracking-[0.1em] text-[#a8b8b3]">{c.installmentPrice}</span><strong className="mt-2 block text-lg">{new Intl.NumberFormat(locale === 'fr' ? 'fr-FR' : 'en-GB',{style:'currency',currency:property.currency,maximumFractionDigits:0}).format(property.installmentPrice)}</strong></div> : null}
+                  </div>
+                ) : null}
                 <div className="mt-4 flex flex-wrap gap-2 text-xs">
                   {property.paymentInterestMode === 'interest_free' ? <span className="rounded-full bg-white/10 px-3 py-1.5 text-[#d8eadf]">0% interest</span> : null}
                   {property.paymentInterestMode === 'interest_bearing' && property.paymentInterestRate !== undefined ? <span className="rounded-full bg-white/10 px-3 py-1.5 text-[#f0d7b2]">{property.paymentInterestRate}% interest</span> : null}
