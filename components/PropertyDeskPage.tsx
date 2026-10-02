@@ -123,37 +123,37 @@ export async function PropertyDeskPage({ page }: PropertyDeskPageProps) {
   const homeName=locale==='fr'?'Accueil':locale==='en'?'Home':locale==='ru'?'Главная':'الرئيسية';
 
   return (
-    <main dir={localeDir[locale]} className="min-h-screen bg-[#f2f5f4] text-[#12221f] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',sans-serif]">
+    <main dir={localeDir[locale]} className="min-h-screen bg-[#f5f3ef] text-[#1a1d22] [font-family:'Avenir_Next','Helvetica_Neue',Arial,sans-serif]">
       <Header locale={locale} currentPath={hubHref}/>
       <StructuredData data={organizationSchema()}/>
       <StructuredData data={itemList}/>
       <StructuredData data={breadcrumbSchema([{name:homeName,url:siteUrl+homeHref},{name:breadcrumbName,url:siteUrl+hubHref}])}/>
       {page.faqs?<StructuredData data={faqSchema(page.faqs)}/>:null}
 
-      <section className="relative overflow-hidden bg-[#10231e] px-5 pb-14 pt-32 text-white md:px-8 md:pb-20 md:pt-40">
+      <section className="relative overflow-hidden bg-[#171a1f] px-5 pb-14 pt-32 text-white md:px-8 md:pb-20 md:pt-40">
         <div className="absolute inset-0 opacity-40" style={{background:'radial-gradient(circle at 80% 20%, rgba(201,170,122,.28), transparent 32%), radial-gradient(circle at 10% 90%, rgba(70,115,99,.28), transparent 30%)'}}/>
         <div className="relative mx-auto grid max-w-[1540px] gap-10 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
           <div className="py-5">
-            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-[#c9aa7a]">{c.label}</p>
+            <p className="text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-[#b28b5a]">{c.label}</p>
             <h1 className="mt-5 max-w-4xl text-5xl font-semibold leading-[0.98] tracking-[-0.055em] md:text-7xl">{c.heroTitle}</h1>
-            <p className="mt-7 max-w-2xl text-base leading-8 text-[#c5d0cc] md:text-lg">{c.heroText}</p>
+            <p className="mt-7 max-w-2xl text-base leading-8 text-[#c9c7c2] md:text-lg">{c.heroText}</p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <a href="#selection" className="inline-flex min-h-[50px] items-center gap-2 rounded-lg bg-[#c9aa7a] px-6 text-sm font-semibold text-[#10231e]">{c.browse}<ArrowRight size={16}/></a>
-              <Link href={assessmentHref} className="inline-flex min-h-[50px] items-center gap-2 rounded-lg border border-white/20 px-6 text-sm font-semibold text-white">{c.private}<ArrowRight size={16}/></Link>
+              <a href="#selection" className="inline-flex min-h-[50px] items-center gap-2 rounded-sm bg-[#b28b5a] px-6 text-sm font-semibold text-[#171a1f]">{c.browse}<ArrowRight size={16}/></a>
+              <Link href={assessmentHref} className="inline-flex min-h-[50px] items-center gap-2 rounded-sm border border-white/20 px-6 text-sm font-semibold text-white">{c.private}<ArrowRight size={16}/></Link>
             </div>
           </div>
-          <div className="relative min-h-[380px] overflow-hidden rounded-3xl border border-white/10 bg-[#173029] shadow-[0_30px_100px_rgba(0,0,0,.28)] lg:min-h-[520px]">
-            {featured?.heroImage||featured?.images?.[0]?<img src={featured.heroImage||featured.images[0]} alt={featured.title[locale]} className="absolute inset-0 h-full w-full object-cover"/>:<div className="absolute inset-0 flex items-center justify-center text-xs uppercase tracking-[0.2em] text-[#8fa49d]">Bosphoras Property Desk</div>}
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#091713] via-[#091713]/80 to-transparent p-6 pt-24 md:p-8">
-              {featured?<><p className="text-[0.67rem] font-semibold uppercase tracking-[0.13em] text-[#d5b886]">{featured.cityName} · {featured.district}</p><h2 className="mt-2 text-2xl font-semibold tracking-[-0.03em]">{featured.title[locale]}</h2><div className="mt-4 flex flex-wrap gap-3 text-sm text-[#d8e0dd]"><span>{featured.priceOnRequest?(locale==='fr'?'Prix sur demande':'Price on request'):new Intl.NumberFormat(locale==='fr'?'fr-FR':'en-GB',{style:'currency',currency:featured.currency,maximumFractionDigits:0}).format(featured.totalPrice||0)}</span>{featured.entryCapital?<span>· {locale==='fr'?'Entrée':'Entry'} {new Intl.NumberFormat(locale==='fr'?'fr-FR':'en-GB',{style:'currency',currency:featured.currency,maximumFractionDigits:0}).format(featured.entryCapital)}</span>:null}</div></>:<><p className="text-[0.67rem] font-semibold uppercase tracking-[0.13em] text-[#d5b886]">CURATED PROPERTY</p><h2 className="mt-2 text-2xl font-semibold">Sélection Bosphoras en préparation</h2></>}
+          <div className="relative min-h-[380px] overflow-hidden rounded-sm border border-white/10 bg-[#22262c] shadow-[0_30px_100px_rgba(0,0,0,.28)] lg:min-h-[520px]">
+            {featured?.heroImage||featured?.images?.[0]?<img src={featured.heroImage||featured.images[0]} alt={featured.title[locale]} className="absolute inset-0 h-full w-full object-cover"/>:<div className="absolute inset-0 flex items-center justify-center text-xs uppercase tracking-[0.2em] text-[#85888e]">Bosphoras Property Desk</div>}
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#111317] via-[#111317]/80 to-transparent p-6 pt-24 md:p-8">
+              {featured?<><p className="text-[0.67rem] font-semibold uppercase tracking-[0.13em] text-[#c29a68]">{featured.cityName} · {featured.district}</p><h2 className="mt-2 text-2xl font-semibold tracking-[-0.03em]">{featured.title[locale]}</h2><div className="mt-4 flex flex-wrap gap-3 text-sm text-[#d8e0dd]"><span>{featured.priceOnRequest?(locale==='fr'?'Prix sur demande':'Price on request'):new Intl.NumberFormat(locale==='fr'?'fr-FR':'en-GB',{style:'currency',currency:featured.currency,maximumFractionDigits:0}).format(featured.totalPrice||0)}</span>{featured.entryCapital?<span>· {locale==='fr'?'Entrée':'Entry'} {new Intl.NumberFormat(locale==='fr'?'fr-FR':'en-GB',{style:'currency',currency:featured.currency,maximumFractionDigits:0}).format(featured.entryCapital)}</span>:null}</div></>:<><p className="text-[0.67rem] font-semibold uppercase tracking-[0.13em] text-[#c29a68]">CURATED PROPERTY</p><h2 className="mt-2 text-2xl font-semibold">Sélection Bosphoras en préparation</h2></>}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="border-b border-[#d7dfdc] bg-white">
-        <div className="mx-auto grid max-w-[1540px] gap-px bg-[#d7dfdc] md:grid-cols-3">
-          {[[WalletCards,c.stat1,c.stat1Text],[Building2,c.stat2,c.stat2Text],[ShieldCheck,c.stat3,c.stat3Text]].map(([Icon,title,text])=>{const I=Icon as typeof WalletCards;return <article key={title as string} className="bg-white p-6 md:p-8"><I size={20} className="text-[#8a6a45]"/><h2 className="mt-5 text-lg font-semibold">{title as string}</h2><p className="mt-2 text-sm leading-6 text-[#65756f]">{text as string}</p></article>;})}
+      <section className="border-b border-[#d8d4cc] bg-white">
+        <div className="mx-auto grid max-w-[1540px] gap-px bg-[#d8d4cc] md:grid-cols-3">
+          {[[WalletCards,c.stat1,c.stat1Text],[Building2,c.stat2,c.stat2Text],[ShieldCheck,c.stat3,c.stat3Text]].map(([Icon,title,text])=>{const I=Icon as typeof WalletCards;return <article key={title as string} className="bg-white p-6 md:p-8"><I size={20} className="text-[#9a7447]"/><h2 className="mt-5 text-lg font-semibold">{title as string}</h2><p className="mt-2 text-sm leading-6 text-[#6b7078]">{text as string}</p></article>;})}
         </div>
       </section>
 
@@ -163,36 +163,36 @@ export async function PropertyDeskPage({ page }: PropertyDeskPageProps) {
         <div className="mx-auto max-w-[1540px]">
           <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
             <div>
-              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#8a6a45]">BOSPHORAS METHOD</p>
+              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#9a7447]">BOSPHORAS METHOD</p>
               <h2 className="mt-3 text-4xl font-semibold tracking-[-0.045em] md:text-5xl">{c.howTitle}</h2>
-              <p className="mt-5 max-w-xl text-base leading-8 text-[#65756f]">{c.howText}</p>
+              <p className="mt-5 max-w-xl text-base leading-8 text-[#6b7078]">{c.howText}</p>
             </div>
             <div className="grid gap-4 md:grid-cols-3">
-              {[[CheckCircle2,c.selected,c.selectedText],[Wrench,c.technical,c.technicalText],[Globe2,c.acquisition,c.acquisitionText]].map(([Icon,title,text])=>{const I=Icon as typeof CheckCircle2;return <article key={title as string} className="rounded-2xl border border-[#d7dfdc] bg-[#f7f9f8] p-6"><I size={20} className="text-[#2f6d59]"/><h3 className="mt-5 text-lg font-semibold">{title as string}</h3><p className="mt-3 text-sm leading-6 text-[#65756f]">{text as string}</p></article>;})}
+              {[[CheckCircle2,c.selected,c.selectedText],[Wrench,c.technical,c.technicalText],[Globe2,c.acquisition,c.acquisitionText]].map(([Icon,title,text])=>{const I=Icon as typeof CheckCircle2;return <article key={title as string} className="rounded-sm border border-[#d8d4cc] bg-[#faf9f6] p-6"><I size={20} className="text-[#8a683f]"/><h3 className="mt-5 text-lg font-semibold">{title as string}</h3><p className="mt-3 text-sm leading-6 text-[#6b7078]">{text as string}</p></article>;})}
             </div>
           </div>
         </div>
       </section>
 
-      <section className="border-y border-[#d7dfdc] bg-[#e8efec] px-5 py-16 md:px-8">
+      <section className="border-y border-[#d8d4cc] bg-[#ece8e1] px-5 py-16 md:px-8">
         <div className="mx-auto grid max-w-[1540px] gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
-          <div><p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#8a6a45]">CAPITAL ACCESS</p><h2 className="mt-3 text-4xl font-semibold tracking-[-0.045em]">{c.capitalTitle}</h2><p className="mt-4 text-sm leading-7 text-[#65756f]">{c.capitalText}</p></div>
-          <div className="grid grid-cols-2 gap-3 md:grid-cols-4">{c.capitalOptions.map((amount)=><Link key={amount} href={assessmentHref+'?subject=property-desk&capital='+encodeURIComponent(amount)} className="rounded-xl border border-[#cbd7d2] bg-white p-5 transition hover:border-[#8a6a45]"><WalletCards size={18} className="text-[#8a6a45]"/><strong className="mt-6 block text-xl">{amount}</strong><span className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-[#315d7c]">{c.private}<ArrowRight size={13}/></span></Link>)}</div>
+          <div><p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#9a7447]">CAPITAL ACCESS</p><h2 className="mt-3 text-4xl font-semibold tracking-[-0.045em]">{c.capitalTitle}</h2><p className="mt-4 text-sm leading-7 text-[#6b7078]">{c.capitalText}</p></div>
+          <div className="grid grid-cols-2 gap-3 md:grid-cols-4">{c.capitalOptions.map((amount)=><Link key={amount} href={assessmentHref+'?subject=property-desk&capital='+encodeURIComponent(amount)} className="rounded-sm border border-[#d8d4cc] bg-white p-5 transition hover:border-[#8a6a45]"><WalletCards size={18} className="text-[#9a7447]"/><strong className="mt-6 block text-xl">{amount}</strong><span className="mt-2 inline-flex items-center gap-1 text-xs font-semibold text-[#315d7c]">{c.private}<ArrowRight size={13}/></span></Link>)}</div>
         </div>
       </section>
 
       <section className="px-5 py-16 md:px-8 md:py-20">
         <div className="mx-auto max-w-[1150px]">
-          <p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#8a6a45]">{c.methodology}</p>
-          <div className="mt-6 divide-y divide-[#d7dfdc] rounded-2xl border border-[#d7dfdc] bg-white px-6 md:px-8">
-            {page.sections.map((section)=><details key={section.heading} className="group py-6"><summary className="cursor-pointer list-none text-xl font-semibold tracking-[-0.02em]">{section.heading}</summary><p className="mt-4 max-w-4xl text-sm leading-7 text-[#65756f]">{section.body}</p>{section.bullets?<ul className="mt-4 grid gap-2 md:grid-cols-2">{section.bullets.map((bullet)=><li key={bullet} className="flex gap-2 text-sm text-[#5d6d68]"><CheckCircle2 size={15} className="mt-1 shrink-0 text-[#2f6d59]"/>{bullet}</li>)}</ul>:null}</details>)}
+          <p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#9a7447]">{c.methodology}</p>
+          <div className="mt-6 divide-y divide-[#d7dfdc] rounded-sm border border-[#d8d4cc] bg-white px-6 md:px-8">
+            {page.sections.map((section)=><details key={section.heading} className="group py-6"><summary className="cursor-pointer list-none text-xl font-semibold tracking-[-0.02em]">{section.heading}</summary><p className="mt-4 max-w-4xl text-sm leading-7 text-[#6b7078]">{section.body}</p>{section.bullets?<ul className="mt-4 grid gap-2 md:grid-cols-2">{section.bullets.map((bullet)=><li key={bullet} className="flex gap-2 text-sm text-[#62676f]"><CheckCircle2 size={15} className="mt-1 shrink-0 text-[#8a683f]"/>{bullet}</li>)}</ul>:null}</details>)}
           </div>
         </div>
       </section>
 
-      {page.faqs?.length?<section className="bg-white px-5 py-16 md:px-8"><div className="mx-auto max-w-[1050px]"><h2 className="text-3xl font-semibold tracking-[-0.035em]">{c.faqTitle}</h2><div className="mt-6 divide-y divide-[#d7dfdc]">{page.faqs.map((faq)=><details key={faq.question} className="py-5"><summary className="cursor-pointer text-lg font-semibold">{faq.question}</summary><p className="mt-3 text-sm leading-7 text-[#65756f]">{faq.answer}</p></details>)}</div></div></section>:null}
+      {page.faqs?.length?<section className="bg-white px-5 py-16 md:px-8"><div className="mx-auto max-w-[1050px]"><h2 className="text-3xl font-semibold tracking-[-0.035em]">{c.faqTitle}</h2><div className="mt-6 divide-y divide-[#d7dfdc]">{page.faqs.map((faq)=><details key={faq.question} className="py-5"><summary className="cursor-pointer text-lg font-semibold">{faq.question}</summary><p className="mt-3 text-sm leading-7 text-[#6b7078]">{faq.answer}</p></details>)}</div></div></section>:null}
 
-      <section className="bg-[#10231e] px-5 py-16 text-white md:px-8"><div className="mx-auto max-w-[950px] text-center"><h2 className="text-4xl font-semibold tracking-[-0.045em] md:text-5xl">{c.finalTitle}</h2><p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-[#c5d0cc]">{c.finalText}</p><Link href={assessmentHref} className="mt-8 inline-flex min-h-[50px] items-center gap-2 rounded-lg bg-[#c9aa7a] px-6 text-sm font-semibold text-[#10231e]">{c.private}<ArrowRight size={16}/></Link></div></section>
+      <section className="bg-[#171a1f] px-5 py-16 text-white md:px-8"><div className="mx-auto max-w-[950px] text-center"><h2 className="text-4xl font-semibold tracking-[-0.045em] md:text-5xl">{c.finalTitle}</h2><p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-[#c9c7c2]">{c.finalText}</p><Link href={assessmentHref} className="mt-8 inline-flex min-h-[50px] items-center gap-2 rounded-sm bg-[#b28b5a] px-6 text-sm font-semibold text-[#171a1f]">{c.private}<ArrowRight size={16}/></Link></div></section>
 
       <Footer locale={locale}/>
     </main>
