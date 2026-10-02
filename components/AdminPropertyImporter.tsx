@@ -78,7 +78,10 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
 
       const base=result.data;
       const fallback={
+        countryCode:base.countryCode||'TR',
+        countryName:base.countryName||base.country||'Turkey',
         city:base.city||detectCity(`${base.title||''} ${base.description||''} ${base.district||''}`),
+        cityName:base.cityName||base.city||'Istanbul',
         district:base.district||'',
         collection:'selected-investment',
         propertyType:'apartment',
@@ -91,6 +94,12 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
         bathrooms:'',
         developer:base.developer||'',
         paymentPlan:Array.isArray(base.paymentPlan)?base.paymentPlan:[],
+        paymentPlanEnabled:Array.isArray(base.paymentPlan)&&base.paymentPlan.length>0,
+        paymentInterestMode:'not_specified',
+        paymentInterestRate:'',
+        cashDiscountPct:'',
+        cashPrice:'',
+        installmentPrice:'',
         featured:false,
         priceOnRequest:!base.price,
         title:local(base.title||''),
@@ -121,7 +130,10 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
           : '';
         setDraft({
           ...fallback,
+          countryCode:ai.countryCode||fallback.countryCode,
+          countryName:ai.countryName||fallback.countryName,
           city:ai.city||fallback.city,
+          cityName:ai.cityName||fallback.cityName,
           district:ai.district||fallback.district,
           title:ai.title||fallback.title,
           summary:ai.summary||fallback.summary,
@@ -176,7 +188,10 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
         collection:draft.collection,
         transaction_type:draft.transaction,
         property_type:draft.propertyType,
-        city:draft.city,
+        country_code:draft.countryCode||'TR',
+        country_name:draft.countryName||'Turkey',
+        city:draft.city||slugify(draft.cityName||'city'),
+        city_name:draft.cityName||draft.city,
         district:draft.district,
         slug_fr:slugs.fr,
         slug_en:slugs.en,
@@ -197,6 +212,12 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
         delivery:draft.delivery,
         developer:draft.developer||null,
         payment_plan:Array.isArray(draft.paymentPlan)?draft.paymentPlan:[],
+        payment_plan_enabled:Boolean(draft.paymentPlanEnabled),
+        payment_interest_mode:draft.paymentInterestMode||'not_specified',
+        payment_interest_rate:Number(draft.paymentInterestRate)||null,
+        cash_discount_pct:Number(draft.cashDiscountPct)||null,
+        cash_price:Number(draft.cashPrice)||null,
+        installment_price:Number(draft.installmentPrice)||null,
         highlights:[],
         technical_notes:linesToLocalized(technicalNotes),
         strengths:linesToLocalized(strengths),
@@ -252,9 +273,9 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
 
     {draft&&<>
       <section className="grid gap-5 border border-[#d9e1e8] bg-white p-6 md:grid-cols-4">
-        <label className={label}>Ville
-          <select value={draft.city} onChange={(e)=>setField('city',e.target.value)} className={input}><option value="istanbul">Istanbul</option><option value="bodrum">Bodrum</option><option value="antalya">Antalya</option></select>
-        </label>
+        <label className={label}>Pays <span className="normal-case font-normal tracking-normal text-[#7b8794]">(nom affiché)</span><input value={draft.countryName||''} onChange={(e)=>setField('countryName',e.target.value)} className={input} placeholder="Turkey, UAE, Georgia…"/></label>
+        <label className={label}>Code pays <span className="normal-case font-normal tracking-normal text-[#7b8794]">(TR, AE, GE, KZ, FR, US…)</span><input value={draft.countryCode||''} onChange={(e)=>setField('countryCode',e.target.value.toUpperCase().slice(0,3))} className={input}/></label>
+        <label className={label}>Ville <span className="normal-case font-normal tracking-normal text-[#7b8794]">(libre : Istanbul, Dubai, Batumi, Almaty, Paris…)</span><input value={draft.cityName||''} onChange={(e)=>{setField('cityName',e.target.value);setField('city',slugify(e.target.value));}} className={input}/></label>
         <label className={label}>Quartier <span className="normal-case font-normal tracking-normal text-[#7b8794]">(à contrôler dans l’adresse source)</span><input value={draft.district} onChange={(e)=>setField('district',e.target.value)} className={input}/></label>
         <label className={label}>Type
           <select value={draft.propertyType} onChange={(e)=>setField('propertyType',e.target.value)} className={input}><option value="apartment">Appartement</option><option value="residence">Résidence</option><option value="villa">Villa</option><option value="penthouse">Penthouse</option><option value="commercial">Commercial</option></select>
@@ -262,7 +283,7 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
         <label className={label}>Collection
           <select value={draft.collection} onChange={(e)=>setField('collection',e.target.value)} className={input}><option value="selected-investment">Selected Investment</option><option value="signature">Signature Collection</option><option value="private">Private Opportunity</option></select>
         </label>
-        <label className={label}>Devise <select value={draft.currency} onChange={(e)=>setField('currency',e.target.value)} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option></select></label>
+        <label className={label}>Devise <select value={draft.currency} onChange={(e)=>setField('currency',e.target.value)} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option><option>KZT</option><option>GEL</option></select></label>
         <label className={label}>Prix total <span className="normal-case font-normal tracking-normal text-[#7b8794]">(prix affiché par la source)</span><input value={draft.totalPrice} onChange={(e)=>setField('totalPrice',e.target.value)} className={input}/></label>
         <label className={label}>Capital aujourd’hui <span className="normal-case font-normal tracking-normal text-[#7b8794]">(apport/acompte nécessaire maintenant)</span><input value={draft.entryCapital} onChange={(e)=>setField('entryCapital',e.target.value)} className={input}/></label>
         <label className={label}>Surface m² <input value={draft.surfaceM2} onChange={(e)=>setField('surfaceM2',e.target.value)} className={input}/></label>
@@ -273,6 +294,13 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
       </section>
 
       <section className="border border-[#d9e1e8] bg-white p-6">
+        <div className="mb-5 grid gap-4 border-b border-[#e7edf2] pb-5 md:grid-cols-5">
+          <label className="flex items-center gap-3 pt-6 text-sm text-[#526272]"><input type="checkbox" checked={Boolean(draft.paymentPlanEnabled)} onChange={(e)=>setField('paymentPlanEnabled',e.target.checked)}/> Afficher le plan de paiement</label>
+          <label className={label}>Type de taux<select value={draft.paymentInterestMode||'not_specified'} onChange={(e)=>setField('paymentInterestMode',e.target.value)} className={input}><option value="not_specified">Non précisé</option><option value="interest_free">Sans intérêt / 0%</option><option value="interest_bearing">Avec intérêt</option></select></label>
+          <label className={label}>Taux % <span className="normal-case font-normal tracking-normal text-[#7b8794]">(si paiement avec intérêt)</span><input value={draft.paymentInterestRate||''} onChange={(e)=>setField('paymentInterestRate',e.target.value)} className={input} inputMode="decimal"/></label>
+          <label className={label}>Remise comptant % <span className="normal-case font-normal tracking-normal text-[#7b8794]">(réduction si paiement cash)</span><input value={draft.cashDiscountPct||''} onChange={(e)=>setField('cashDiscountPct',e.target.value)} className={input} inputMode="decimal"/></label>
+          <label className={label}>Prix comptant / échelonné <span className="normal-case font-normal tracking-normal text-[#7b8794]">(si les deux prix diffèrent)</span><div className="grid grid-cols-2 gap-2"><input value={draft.cashPrice||''} onChange={(e)=>setField('cashPrice',e.target.value)} className={input} placeholder="Cash"/><input value={draft.installmentPrice||''} onChange={(e)=>setField('installmentPrice',e.target.value)} className={input} placeholder="Échelonné"/></div></label>
+        </div>
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
             <h3 className="text-lg font-semibold">Plan de paiement</h3>
