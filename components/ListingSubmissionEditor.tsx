@@ -113,6 +113,7 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
   const [seoTitle, setSeoTitle] = useState<Localized>(localizedFrom(initial.seoTitle));
   const [seoDescription, setSeoDescription] = useState<Localized>(localizedFrom(initial.seoDescription));
   const [delivery, setDelivery] = useState<Localized>(localizedFrom(initial.delivery));
+  const [paymentNotes, setPaymentNotes] = useState<Localized>(localizedFrom(initial.paymentNotes));
   const [strengths, setStrengths] = useState<Localized>(() => {
     const out = blankLocalized();
     locales.forEach((l) => { out[l] = (initial.strengths || []).map((x: any) => x?.[l]).filter(Boolean).join('\n'); });
@@ -191,7 +192,7 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
       cashDiscountPct: core.cashDiscountPct,
       cashPrice: core.cashPrice,
       installmentPrice: core.installmentPrice,
-      paymentNotes: normalizeLocalized(delivery),
+      paymentNotes: normalizeLocalized(paymentNotes),
       highlights: [],
       strengths: localizedLines(strengths),
       technicalNotes: localizedLines(technicalNotes),
@@ -230,6 +231,7 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
     if(prepared.seoTitle) setSeoTitle(localizedFrom(prepared.seoTitle));
     if(prepared.seoDescription) setSeoDescription(localizedFrom(prepared.seoDescription));
     if(prepared.delivery) setDelivery(localizedFrom(prepared.delivery));
+    if(prepared.paymentNotes) setPaymentNotes(localizedFrom(prepared.paymentNotes));
     if(Array.isArray(prepared.paymentPlan)&&prepared.paymentPlan.length) setPaymentPlan(prepared.paymentPlan);
     if(Array.isArray(prepared.images)&&prepared.images.length) setImages((current)=>Array.from(new Set([...prepared.images,...current])));
     if(Array.isArray(prepared.strengths)){
@@ -386,6 +388,58 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
             <LocalizedFields title="Points de vigilance" value={watchpoints} setValue={setWatchpoints} multiline rows={5} inputClass={input} textareaClass={textarea} labelClass={label} />
           </div>
         </details>
+
+        <section className="rounded-xl border border-[#cfd8e3] bg-[#f7f9fb] p-5">
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <div>
+              <p className="text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[#315d7c]">Financement promoteur</p>
+              <h4 className="mt-1 text-xl font-semibold tracking-[-0.02em] text-[#162334]">Conditions à soumettre à Bosphoras</h4>
+              <p className="mt-2 text-xs leading-5 text-[#7b8794]">(indiquez uniquement les conditions réellement communiquées ; Bosphoras les vérifiera avant publication)</p>
+            </div>
+            <label className="flex items-center gap-3 text-sm text-[#526272]">
+              <input type="checkbox" checked={Boolean(core.paymentPlanEnabled)} onChange={(e)=>setCore({...core,paymentPlanEnabled:e.target.checked})}/>
+              Échéancier proposé
+            </label>
+          </div>
+          <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            <label className={label}>Mode
+              <select value={core.paymentInterestMode} onChange={(e)=>setCore({...core,paymentInterestMode:e.target.value})} disabled={!core.paymentPlanEnabled} className={input}>
+                <option value="not_specified">Taux non communiqué</option>
+                <option value="interest_free">0 % / sans intérêt</option>
+                <option value="interest_bearing">Avec taux</option>
+              </select>
+              <span className="normal-case tracking-normal text-[0.65rem] font-normal text-[#8793a0]">(0 % uniquement si le promoteur l’annonce explicitement)</span>
+            </label>
+            <label className={label}>Taux promoteur %
+              <input value={core.paymentInterestRate} onChange={(e)=>setCore({...core,paymentInterestRate:e.target.value})} disabled={!core.paymentPlanEnabled || core.paymentInterestMode!=='interest_bearing'} className={input} inputMode="decimal"/>
+              <span className="normal-case tracking-normal text-[0.65rem] font-normal text-[#8793a0]">(préciser dans la note s’il est annuel ou appliqué au prix total)</span>
+            </label>
+            <label className={label}>Prix comptant
+              <input value={core.cashPrice} onChange={(e)=>setCore({...core,cashPrice:e.target.value})} className={input} inputMode="decimal"/>
+              <span className="normal-case tracking-normal text-[0.65rem] font-normal text-[#8793a0]">(prix si paiement comptant)</span>
+            </label>
+            <label className={label}>Prix avec échéancier
+              <input value={core.installmentPrice} onChange={(e)=>setCore({...core,installmentPrice:e.target.value})} className={input} inputMode="decimal"/>
+              <span className="normal-case tracking-normal text-[0.65rem] font-normal text-[#8793a0]">(prix total si le paiement est échelonné)</span>
+            </label>
+            <label className={label}>Remise comptant %
+              <input value={core.cashDiscountPct} onChange={(e)=>setCore({...core,cashDiscountPct:e.target.value})} className={input} inputMode="decimal"/>
+              <span className="normal-case tracking-normal text-[0.65rem] font-normal text-[#8793a0]">(si le promoteur applique une remise officielle)</span>
+            </label>
+            <div className="md:col-span-2 xl:col-span-3">
+              <label className={label}>Note financière FR
+                <textarea rows={3} value={paymentNotes.fr} onChange={(e)=>setPaymentNotes({...paymentNotes,fr:e.target.value})} className={textarea}/>
+                <span className="normal-case tracking-normal text-[0.65rem] font-normal text-[#8793a0]">(durée, fréquence des paiements, base du taux, frais éventuels, conditions de remise)</span>
+              </label>
+            </div>
+          </div>
+          <details className="mt-5 border-t border-[#d9e1e8] pt-4">
+            <summary className="cursor-pointer text-xs font-semibold text-[#315d7c]">Traductions de la note financière</summary>
+            <div className="mt-4 grid gap-3 md:grid-cols-3">
+              {(['en','ru','ar'] as const).map((l)=><label key={l} className={label}>{l.toUpperCase()}<textarea rows={3} value={paymentNotes[l]} onChange={(e)=>setPaymentNotes({...paymentNotes,[l]:e.target.value})} className={textarea}/></label>)}
+            </div>
+          </details>
+        </section>
 
         <section className="border border-[#d9e1e8] bg-white p-5">
           <h4 className="font-sans text-2xl">Plan de paiement</h4>
