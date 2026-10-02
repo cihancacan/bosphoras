@@ -64,7 +64,7 @@ export const pageSlugs: PageSlugMap[] = [
   { id: 'legal-tax', jsonLdType: 'Service', slugs: { fr: '/services/conseil-juridique-fiscal', en: '/services/legal-tax-advisory', ru: '/uslugi/yuridicheskie-nalogovye-konsultatsii', ar: '/خدمات/استشارات-قانونية-ضريبية' } },
   { id: 'business-setup', jsonLdType: 'Service', slugs: { fr: '/services/creation-entreprise', en: '/services/business-setup', ru: '/uslugi/sozdanie-kompanii', ar: '/خدمات/تأسيس-الشركات' } },
   { id: 'health-insurance', jsonLdType: 'Service', slugs: { fr: '/services/sante-assurance', en: '/services/health-insurance', ru: '/uslugi/zdorove-strakhovanie', ar: '/خدمات/الصحة-والتأمين' } },
-  { id: 'property', jsonLdType: 'Service', slugs: { fr: '/services/immobilier-relocation', en: '/services/property-relocation', ru: '/uslugi/nedvizhimost-pereezd', ar: '/خدمات/العقارات-والانتقال' } },
+  { id: 'property', jsonLdType: 'CollectionPage', slugs: { fr: '/immobilier-turquie', en: '/property-turkey', ru: '/nedvizhimost-v-turtsii', ar: '/عقارات-تركيا' } },
   { id: 'offices', jsonLdType: 'Service', slugs: { fr: '/services/bureaux', en: '/services/offices', ru: '/uslugi/ofisy', ar: '/خدمات/المكاتب' } },
   { id: 'transport', jsonLdType: 'Service', slugs: { fr: '/services/transport-vip', en: '/services/vip-transport', ru: '/uslugi/vip-transport', ar: '/خدمات/النقل-الفاخر' } },
   { id: 'luxury-concierge', jsonLdType: 'Service', slugs: { fr: '/services/conciergerie-luxe-turquie', en: '/services/luxury-concierge-turkey', ru: '/uslugi/luxury-concierge-turkey', ar: '/خدمات/luxury-concierge-turkey' } },
