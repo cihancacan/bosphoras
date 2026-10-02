@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import { buildMetadata } from '@/lib/seo';
 import { MainPageRenderer } from '@/components/MainPageRenderer';
 import { HighPotentialGuideRenderer } from '@/components/HighPotentialGuideRenderer';
@@ -10,7 +10,7 @@ import { getPageBySlug, allPages } from '@/data/pages';
 import { getHighPotentialGuideBySlug, highPotentialGuides } from '@/data/highPotentialPages';
 import { getProgrammaticPageBySlug, getProgrammaticPagesForLocale } from '@/data/programmatic/pages';
 import { ENABLE_ALL_PROGRAMMATIC_PAGES } from '@/lib/launchConfig';
-import { getPublishedProperties, globalPropertyHubPaths, propertyHubPaths } from '@/data/propertyDesk';
+import { getPropertyPath, getPublishedProperties, globalPropertyHubPaths, propertyHubPaths } from '@/data/propertyDesk';
 import { fetchPropertyBySlug } from '@/lib/propertyStore';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -60,7 +60,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     if (property) {
       return buildMetadata({
         locale,
-        path: slug,
+        path: propertyHub === propertyHubPaths[locale] ? getPropertyPath(locale, property, true) : slug,
         title: property.seoTitle[locale],
         description: property.seoDescription[locale],
         image: property.heroImage || property.images[0],
@@ -113,7 +113,10 @@ export default async function CatchAllPage({ params }: PageProps) {
   if (propertyHub) {
     const propertySlug = slug.slice(propertyHub.length + 1);
     const property = await fetchPropertyBySlug(locale, propertySlug);
-    if (property) return <PropertyDetailPage locale={locale} property={property} globalMode={propertyHub === globalPropertyHubPaths[locale]} />;
+    if (property && propertyHub === propertyHubPaths[locale]) {
+      permanentRedirect(getPropertyPath(locale, property, true));
+    }
+    if (property) return <PropertyDetailPage locale={locale} property={property} globalMode />;
   }
 
   const programmaticPage = ENABLE_ALL_PROGRAMMATIC_PAGES ? getProgrammaticPageBySlug(locale, slug) : undefined;
