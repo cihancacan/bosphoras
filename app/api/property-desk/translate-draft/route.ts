@@ -1,6 +1,7 @@
 // @ts-nocheck
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
+import { generateText } from 'ai';
 
 export const runtime = 'nodejs';
 export const maxDuration = 45;
@@ -52,13 +53,6 @@ export async function POST(request: NextRequest) {
   const admin = await verifyAdmin(request);
   if (!admin) return NextResponse.json({ error: 'Accès administrateur requis.' }, { status: 401 });
 
-  const apiKey = process.env.OPENAI_API_KEY;
-  if (!apiKey) {
-    return NextResponse.json(
-      { error: 'Traduction IA non configurée. Ajoutez OPENAI_API_KEY aux variables serveur Vercel.' },
-      { status: 503 }
-    );
-  }
 
   const body = await request.json().catch(() => null);
   const data = body?.data;
@@ -92,29 +86,14 @@ export async function POST(request: NextRequest) {
     'technicalNotes, strengths and watchpoints must be arrays of objects with fr,en,ru,ar keys and only include points supported by the source.',
   ].join('\n');
 
-  const response = await fetch('https://api.openai.com/v1/responses', {
-    method: 'POST',
-    headers: {
-      Authorization: `Bearer ${apiKey}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      model: process.env.OPENAI_TRANSLATION_MODEL || 'gpt-6-luna',
-      instructions,
-      input: JSON.stringify(source),
-      max_output_tokens: 5000,
-      store: false,
-    }),
-    signal: AbortSignal.timeout(40000),
+  const result = await generateText({
+    model: process.env.PROPERTY_TRANSLATION_MODEL || 'openai/gpt-5.6-luna',
+    system: instructions,
+    prompt: JSON.stringify(source),
+    maxOutputTokens: 5000,
   });
 
-  if (!response.ok) {
-    const detail = await response.text();
-    return NextResponse.json({ error: 'La traduction IA a échoué.', detail: detail.slice(0, 600) }, { status: 502 });
-  }
-
-  const raw = await response.json();
-  const text = outputText(raw);
+  const text = result.text?.trim();
   if (!text) return NextResponse.json({ error: 'Réponse IA vide.' }, { status: 502 });
 
   let translated: any;
