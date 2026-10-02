@@ -5,6 +5,7 @@ import type { ChangeEvent, FormEvent } from 'react';
 import { useState } from 'react';
 import { ArrowRight, ImagePlus, Save, Send, X } from 'lucide-react';
 import { getPortalSupabase } from '@/lib/portalSupabase';
+import { PropertyUrlAutofill } from '@/components/PropertyUrlAutofill';
 
 type LocaleKey = 'fr' | 'en' | 'ru' | 'ar';
 type Localized = Record<LocaleKey, string>;
@@ -92,6 +93,8 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
     developer: String(initial.developer || ''),
     featured: Boolean(initial.featured),
     priceOnRequest: Boolean(initial.priceOnRequest),
+    sourceUrl: String(initial.sourceUrl || ''),
+    sourceHost: String(initial.sourceHost || ''),
   });
 
   const [title, setTitle] = useState<Localized>(localizedFrom(initial.title));
@@ -177,7 +180,49 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
       images,
       heroImage: images[0] || '',
       verifiedAt: new Date().toISOString(),
+      sourceUrl: core.sourceUrl,
+      sourceHost: core.sourceHost,
+      sourceLastCheckedAt: core.sourceUrl ? new Date().toISOString() : null,
     };
+  }
+
+  function applyImported(prepared:any){
+    setCore((current:any)=>({
+      ...current,
+      city:prepared.city||current.city,
+      district:prepared.district||current.district,
+      collection:prepared.collection||current.collection,
+      propertyType:prepared.propertyType||current.propertyType,
+      transaction:prepared.transaction||current.transaction,
+      currency:prepared.currency||current.currency,
+      totalPrice:prepared.totalPrice!==''&&prepared.totalPrice!==null&&prepared.totalPrice!==undefined?String(prepared.totalPrice):current.totalPrice,
+      entryCapital:prepared.entryCapital!==''&&prepared.entryCapital!==null&&prepared.entryCapital!==undefined?String(prepared.entryCapital):current.entryCapital,
+      surfaceM2:prepared.surfaceM2!==''&&prepared.surfaceM2!==null&&prepared.surfaceM2!==undefined?String(prepared.surfaceM2):current.surfaceM2,
+      bedrooms:prepared.bedrooms!==''&&prepared.bedrooms!==null&&prepared.bedrooms!==undefined?String(prepared.bedrooms):current.bedrooms,
+      bathrooms:prepared.bathrooms!==''&&prepared.bathrooms!==null&&prepared.bathrooms!==undefined?String(prepared.bathrooms):current.bathrooms,
+      developer:prepared.developer||current.developer,
+      priceOnRequest:Boolean(prepared.priceOnRequest&&!(prepared.totalPrice||current.totalPrice)),
+      sourceUrl:prepared.sourceUrl||current.sourceUrl,
+      sourceHost:prepared.sourceHost||current.sourceHost,
+    }));
+    if(prepared.title) setTitle(localizedFrom(prepared.title));
+    if(prepared.summary) setSummary(localizedFrom(prepared.summary));
+    if(prepared.description) setDescription(localizedFrom(prepared.description));
+    if(prepared.seoTitle) setSeoTitle(localizedFrom(prepared.seoTitle));
+    if(prepared.seoDescription) setSeoDescription(localizedFrom(prepared.seoDescription));
+    if(prepared.delivery) setDelivery(localizedFrom(prepared.delivery));
+    if(Array.isArray(prepared.paymentPlan)&&prepared.paymentPlan.length) setPaymentPlan(prepared.paymentPlan);
+    if(Array.isArray(prepared.images)&&prepared.images.length) setImages((current)=>Array.from(new Set([...prepared.images,...current])));
+    if(Array.isArray(prepared.strengths)){
+      const out=blankLocalized(); locales.forEach((l)=>{out[l]=prepared.strengths.map((x:any)=>x?.[l]).filter(Boolean).join('\n');}); setStrengths(out);
+    }
+    if(Array.isArray(prepared.technicalNotes)){
+      const out=blankLocalized(); locales.forEach((l)=>{out[l]=prepared.technicalNotes.map((x:any)=>x?.[l]).filter(Boolean).join('\n');}); setTechnicalNotes(out);
+    }
+    if(Array.isArray(prepared.watchpoints)){
+      const out=blankLocalized(); locales.forEach((l)=>{out[l]=prepared.watchpoints.map((x:any)=>x?.[l]).filter(Boolean).join('\n');}); setWatchpoints(out);
+    }
+    setMessage('Préremplissage appliqué. Vérifiez surtout le prix, le quartier, le plan de paiement et les informations techniques avant soumission.');
   }
 
   async function uploadFiles(event: ChangeEvent<HTMLInputElement>) {
@@ -267,6 +312,8 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
 
       {!editable ? <div className="border border-[#d9e1e8] bg-[#eef4f8] p-5 text-sm text-[#58616d]">Cette version est verrouillée pendant la revue administrateur.</div> : null}
 
+      {editable ? <PropertyUrlAutofill onPrepared={applyImported} compact /> : null}
+
       <fieldset disabled={!editable} className="space-y-7 disabled:opacity-70">
         <div className="grid gap-4 md:grid-cols-4">
           <label className={label}>Ville<select value={core.city} onChange={(e)=>setCore({...core,city:e.target.value})} className={input}><option value="istanbul">Istanbul</option><option value="bodrum">Bodrum</option><option value="antalya">Antalya</option></select></label>
@@ -286,19 +333,38 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
           <label className="flex items-center gap-3 pt-7 text-sm"><input type="checkbox" checked={core.featured} onChange={(e)=>setCore({...core,featured:e.target.checked})}/> Proposition mise en avant</label>
         </div>
 
-        <LocalizedFields title="Titre public" value={title} setValue={setTitle} inputClass={input} textareaClass={textarea} labelClass={label} />
-        <LocalizedFields title="Slug SEO" value={slug} setValue={setSlug} inputClass={input} textareaClass={textarea} labelClass={label} />
-        <LocalizedFields title="Résumé" value={summary} setValue={setSummary} multiline inputClass={input} textareaClass={textarea} labelClass={label} />
-        <LocalizedFields title="Description complète" value={description} setValue={setDescription} multiline rows={7} inputClass={input} textareaClass={textarea} labelClass={label} />
-        <LocalizedFields title="SEO title" value={seoTitle} setValue={setSeoTitle} inputClass={input} textareaClass={textarea} labelClass={label} />
-        <LocalizedFields title="Meta description" value={seoDescription} setValue={setSeoDescription} multiline inputClass={input} textareaClass={textarea} labelClass={label} />
-        <LocalizedFields title="Livraison" value={delivery} setValue={setDelivery} inputClass={input} textareaClass={textarea} labelClass={label} />
+        <section className="border border-[#d9e1e8] bg-white p-5">
+          <p className="text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[#315d7c]">Contenu principal</p>
+          <h4 className="mt-1 text-lg font-semibold">Version française</h4>
+          <p className="mt-1 text-xs text-[#7b8794]">(à relire en priorité ; les autres langues et le SEO sont déjà préparés automatiquement)</p>
+          <div className="mt-5 grid gap-4">
+            <label className={label}>Titre public<input value={title.fr} onChange={(e)=>setTitle({...title,fr:e.target.value})} className={input}/></label>
+            <label className={label}>Résumé<textarea rows={3} value={summary.fr} onChange={(e)=>setSummary({...summary,fr:e.target.value})} className={textarea}/></label>
+            <label className={label}>Description<textarea rows={7} value={description.fr} onChange={(e)=>setDescription({...description,fr:e.target.value})} className={textarea}/></label>
+          </div>
+        </section>
 
-        <div className="grid gap-5 lg:grid-cols-3">
-          <LocalizedFields title="Pourquoi le sélectionner" value={strengths} setValue={setStrengths} multiline rows={5} inputClass={input} textareaClass={textarea} labelClass={label} />
-          <LocalizedFields title="Technical Notes" value={technicalNotes} setValue={setTechnicalNotes} multiline rows={5} inputClass={input} textareaClass={textarea} labelClass={label} />
-          <LocalizedFields title="Points de vigilance" value={watchpoints} setValue={setWatchpoints} multiline rows={5} inputClass={input} textareaClass={textarea} labelClass={label} />
-        </div>
+        <details className="border border-[#d9e1e8] bg-white">
+          <summary className="cursor-pointer list-none px-5 py-4 text-sm font-semibold text-[#162334]">Traductions & SEO <span className="ml-2 text-xs font-normal text-[#7b8794]">(ouvrir seulement pour vérifier ou modifier)</span></summary>
+          <div className="space-y-5 border-t border-[#e7edf2] p-5">
+            <LocalizedFields title="Titre public" value={title} setValue={setTitle} inputClass={input} textareaClass={textarea} labelClass={label} />
+            <LocalizedFields title="Slug SEO" value={slug} setValue={setSlug} inputClass={input} textareaClass={textarea} labelClass={label} />
+            <LocalizedFields title="Résumé" value={summary} setValue={setSummary} multiline inputClass={input} textareaClass={textarea} labelClass={label} />
+            <LocalizedFields title="Description complète" value={description} setValue={setDescription} multiline rows={6} inputClass={input} textareaClass={textarea} labelClass={label} />
+            <LocalizedFields title="SEO title" value={seoTitle} setValue={setSeoTitle} inputClass={input} textareaClass={textarea} labelClass={label} />
+            <LocalizedFields title="Meta description" value={seoDescription} setValue={setSeoDescription} multiline inputClass={input} textareaClass={textarea} labelClass={label} />
+            <LocalizedFields title="Livraison" value={delivery} setValue={setDelivery} inputClass={input} textareaClass={textarea} labelClass={label} />
+          </div>
+        </details>
+
+        <details className="border border-[#d9e1e8] bg-white">
+          <summary className="cursor-pointer list-none px-5 py-4 text-sm font-semibold text-[#162334]">Analyse Bosphoras <span className="ml-2 text-xs font-normal text-[#7b8794]">(points forts, technique, vigilance)</span></summary>
+          <div className="grid gap-5 border-t border-[#e7edf2] p-5 lg:grid-cols-3">
+            <LocalizedFields title="Pourquoi le sélectionner" value={strengths} setValue={setStrengths} multiline rows={5} inputClass={input} textareaClass={textarea} labelClass={label} />
+            <LocalizedFields title="Technical Notes" value={technicalNotes} setValue={setTechnicalNotes} multiline rows={5} inputClass={input} textareaClass={textarea} labelClass={label} />
+            <LocalizedFields title="Points de vigilance" value={watchpoints} setValue={setWatchpoints} multiline rows={5} inputClass={input} textareaClass={textarea} labelClass={label} />
+          </div>
+        </details>
 
         <section className="border border-[#d9e1e8] bg-white p-5">
           <h4 className="font-sans text-2xl">Plan de paiement</h4>
