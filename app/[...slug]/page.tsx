@@ -10,7 +10,7 @@ import { getPageBySlug, allPages } from '@/data/pages';
 import { getHighPotentialGuideBySlug, highPotentialGuides } from '@/data/highPotentialPages';
 import { getProgrammaticPageBySlug, getProgrammaticPagesForLocale } from '@/data/programmatic/pages';
 import { ENABLE_ALL_PROGRAMMATIC_PAGES } from '@/lib/launchConfig';
-import { getPublishedProperties, propertyHubPaths } from '@/data/propertyDesk';
+import { getPublishedProperties, globalPropertyHubPaths, propertyHubPaths } from '@/data/propertyDesk';
 import { fetchPropertyBySlug } from '@/lib/propertyStore';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -48,8 +48,14 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const slug = resolveSlug(params.slug);
 
-  if (slug.startsWith(`${propertyHubPaths[locale]}/`)) {
-    const propertySlug = slug.slice(propertyHubPaths[locale].length + 1);
+  const propertyHub = slug.startsWith(`${globalPropertyHubPaths[locale]}/`)
+    ? globalPropertyHubPaths[locale]
+    : slug.startsWith(`${propertyHubPaths[locale]}/`)
+    ? propertyHubPaths[locale]
+    : null;
+
+  if (propertyHub) {
+    const propertySlug = slug.slice(propertyHub.length + 1);
     const property = await fetchPropertyBySlug(locale, propertySlug);
     if (property) {
       return buildMetadata({
@@ -61,7 +67,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
         alternates: Object.fromEntries(
           (['fr', 'en', 'ru', 'ar'] as const).map((targetLocale) => [
             targetLocale,
-            `https://www.bosphoras.com${targetLocale === 'fr' ? '' : `/${targetLocale}`}${propertyHubPaths[targetLocale]}/${property.slugs[targetLocale].replace(/^\//, '')}`,
+            `https://www.bosphoras.com${targetLocale === 'fr' ? '' : `/${targetLocale}`}${globalPropertyHubPaths[targetLocale]}/${property.slugs[targetLocale].replace(/^\//, '')}`,
           ])
         ),
       });
@@ -98,10 +104,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function CatchAllPage({ params }: PageProps) {
   const slug = resolveSlug(params.slug);
 
-  if (slug.startsWith(`${propertyHubPaths[locale]}/`)) {
-    const propertySlug = slug.slice(propertyHubPaths[locale].length + 1);
+  const propertyHub = slug.startsWith(`${globalPropertyHubPaths[locale]}/`)
+    ? globalPropertyHubPaths[locale]
+    : slug.startsWith(`${propertyHubPaths[locale]}/`)
+    ? propertyHubPaths[locale]
+    : null;
+
+  if (propertyHub) {
+    const propertySlug = slug.slice(propertyHub.length + 1);
     const property = await fetchPropertyBySlug(locale, propertySlug);
-    if (property) return <PropertyDetailPage locale={locale} property={property} />;
+    if (property) return <PropertyDetailPage locale={locale} property={property} globalMode={propertyHub === globalPropertyHubPaths[locale]} />;
   }
 
   const programmaticPage = ENABLE_ALL_PROGRAMMATIC_PAGES ? getProgrammaticPageBySlug(locale, slug) : undefined;
