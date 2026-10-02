@@ -89,7 +89,8 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
         surfaceM2:base.surfaceM2||'',
         bedrooms:base.bedrooms||'',
         bathrooms:'',
-        developer:'',
+        developer:base.developer||'',
+        paymentPlan:Array.isArray(base.paymentPlan)?base.paymentPlan:[],
         featured:false,
         priceOnRequest:!base.price,
         title:local(base.title||''),
@@ -122,6 +123,12 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
           description:ai.description||fallback.description,
           seoTitle:ai.seoTitle||fallback.seoTitle,
           seoDescription:ai.seoDescription||fallback.seoDescription,
+          propertyType:ai.propertyType||fallback.propertyType,
+          developer:ai.developer||fallback.developer,
+          delivery:ai.delivery||fallback.delivery,
+          paymentPlan:Array.isArray(ai.paymentPlan)?ai.paymentPlan:fallback.paymentPlan,
+          entryCapital:ai.entryCapital??fallback.entryCapital,
+          bathrooms:ai.bathrooms??fallback.bathrooms,
         });
         setStrengths(Object.fromEntries(locales.map((l)=>[l,linesFromArray(ai.strengths||[],l)])));
         setTechnicalNotes(Object.fromEntries(locales.map((l)=>[l,linesFromArray(ai.technicalNotes||[],l)])));
@@ -178,7 +185,7 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
         bathrooms:Number(draft.bathrooms)||null,
         delivery:draft.delivery,
         developer:draft.developer||null,
-        payment_plan:[],
+        payment_plan:Array.isArray(draft.paymentPlan)?draft.paymentPlan:[],
         highlights:[],
         technical_notes:linesToLocalized(technicalNotes),
         strengths:linesToLocalized(strengths),
@@ -191,6 +198,10 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
         approved_by:user.id,
         approved_at:new Date().toISOString(),
         review_status:'approved',
+        source_url:source?.sourceUrl||null,
+        source_host:source?.sourceHost||null,
+        source_last_checked_at:new Date().toISOString(),
+        source_partner_name:draft.developer||source?.sourceHost||null,
       };
       const {data,error}=await supabase.from('property_listings').insert(row).select('id,external_id').single();
       if(error) throw error;
