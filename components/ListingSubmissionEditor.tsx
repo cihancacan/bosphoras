@@ -79,7 +79,10 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
 
   const [core, setCore] = useState({
     externalId: String(initial.externalId || ''),
+    countryCode: String(initial.countryCode || 'TR'),
+    countryName: String(initial.countryName || 'Turkey'),
     city: String(initial.city || 'istanbul'),
+    cityName: String(initial.cityName || initial.city || 'Istanbul'),
     district: String(initial.district || ''),
     collection: String(initial.collection || 'selected-investment'),
     propertyType: String(initial.propertyType || 'apartment'),
@@ -93,6 +96,12 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
     developer: String(initial.developer || ''),
     featured: Boolean(initial.featured),
     priceOnRequest: Boolean(initial.priceOnRequest),
+    paymentPlanEnabled: initial.paymentPlanEnabled !== false,
+    paymentInterestMode: String(initial.paymentInterestMode || 'not_specified'),
+    paymentInterestRate: String(initial.paymentInterestRate ?? ''),
+    cashDiscountPct: String(initial.cashDiscountPct ?? ''),
+    cashPrice: String(initial.cashPrice ?? ''),
+    installmentPrice: String(initial.installmentPrice ?? ''),
     sourceUrl: String(initial.sourceUrl || ''),
     sourceHost: String(initial.sourceHost || ''),
   });
@@ -154,7 +163,10 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
       collection: core.collection,
       transaction: core.transaction,
       propertyType: core.propertyType,
-      city: core.city,
+      countryCode: core.countryCode.trim().toUpperCase(),
+      countryName: core.countryName.trim(),
+      city: slugify(core.cityName || core.city),
+      cityName: core.cityName.trim(),
       district: core.district,
       slugs: normalizedSlug,
       title: normalizedTitle,
@@ -173,6 +185,13 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
       developer: core.developer,
       partner: '',
       paymentPlan,
+      paymentPlanEnabled: core.paymentPlanEnabled,
+      paymentInterestMode: core.paymentInterestMode,
+      paymentInterestRate: core.paymentInterestRate,
+      cashDiscountPct: core.cashDiscountPct,
+      cashPrice: core.cashPrice,
+      installmentPrice: core.installmentPrice,
+      paymentNotes: normalizeLocalized(delivery),
       highlights: [],
       strengths: localizedLines(strengths),
       technicalNotes: localizedLines(technicalNotes),
@@ -316,7 +335,9 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
 
       <fieldset disabled={!editable} className="space-y-7 disabled:opacity-70">
         <div className="grid gap-4 md:grid-cols-4">
-          <label className={label}>Ville<select value={core.city} onChange={(e)=>setCore({...core,city:e.target.value})} className={input}><option value="istanbul">Istanbul</option><option value="bodrum">Bodrum</option><option value="antalya">Antalya</option></select></label>
+          <label className={label}>Pays<input value={core.countryName} onChange={(e)=>setCore({...core,countryName:e.target.value})} className={input} placeholder="Turkey, UAE, Georgia…"/></label>
+          <label className={label}>Code pays<input value={core.countryCode} onChange={(e)=>setCore({...core,countryCode:e.target.value.toUpperCase().slice(0,3)})} className={input} placeholder="TR, AE, GE…"/></label>
+          <label className={label}>Ville<input value={core.cityName} onChange={(e)=>setCore({...core,cityName:e.target.value,city:slugify(e.target.value)})} className={input} placeholder="Istanbul, Dubai, Batumi…"/></label>
           <label className={label}>Quartier<input value={core.district} onChange={(e)=>setCore({...core,district:e.target.value})} className={input}/></label>
           <label className={label}>Collection<select value={core.collection} onChange={(e)=>setCore({...core,collection:e.target.value})} className={input}><option value="selected-investment">Selected Investment</option><option value="signature">Signature Collection</option><option value="private">Private Opportunity</option></select></label>
           <label className={label}>Type<select value={core.propertyType} onChange={(e)=>setCore({...core,propertyType:e.target.value})} className={input}><option value="apartment">Appartement</option><option value="residence">Résidence</option><option value="villa">Villa</option><option value="penthouse">Penthouse</option><option value="commercial">Commercial</option></select></label>
