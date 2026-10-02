@@ -191,7 +191,6 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
       cashDiscountPct: core.cashDiscountPct,
       cashPrice: core.cashPrice,
       installmentPrice: core.installmentPrice,
-      paymentNotes: normalizeLocalized(delivery),
       highlights: [],
       strengths: localizedLines(strengths),
       technicalNotes: localizedLines(technicalNotes),
