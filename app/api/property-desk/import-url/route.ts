@@ -55,11 +55,21 @@ async function safeUrl(raw: string) {
 
 function decode(value = '') {
   return value
-    .replace(/&amp;/g, '&')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => {
+      const code = parseInt(hex, 16);
+      return Number.isFinite(code) && code > 0 && code <= 0x10ffff ? String.fromCodePoint(code) : '';
+    })
+    .replace(/&#([0-9]+);/g, (_, dec) => {
+      const code = parseInt(dec, 10);
+      return Number.isFinite(code) && code > 0 && code <= 0x10ffff ? String.fromCodePoint(code) : '';
+    })
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;/gi, "'")
+    .replace(/&apos;/gi, "'")
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -116,6 +126,168 @@ function absolute(base: URL, value: string) {
 
 function unique<T>(values: T[]) {
   return Array.from(new Set(values));
+}
+
+function parseLocaleNumber(value: string) {
+  const clean = value.replace(/\s/g, '').replace(/[^0-9.,]/g, '');
+  if (!clean) return null;
+  const lastComma = clean.lastIndexOf(',');
+  const lastDot = clean.lastIndexOf('.');
+  let normalized = clean;
+  if (lastComma > lastDot) normalized = clean.replace(/\./g, '').replace(',', '.');
+  else if (lastDot > lastComma) normalized = clean.replace(/,/g, '');
+  else normalized = clean.replace(/,/g, '.');
+  const parsed = Number(normalized);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : null;
+}
+
+function currencyFromText(text: string) {
+  const upper = text.toUpperCase();
+  if (/\bAED\b|DIRHAM/.test(upper)) return 'AED';
+  if (/\bUSD\b|US\s*DOLLAR|\$/.test(upper)) return 'USD';
+  if (/\bEUR\b|EURO|€/.test(upper)) return 'EUR';
+  if (/\bTRY\b|\bTL\b|TÜRK LİRASI|TURK LIRASI|₺/.test(upper)) return 'TRY';
+  if (/\bGBP\b|POUND|£/.test(upper)) return 'GBP';
+  if (/\bCHF\b|SWISS FRANC/.test(upper)) return 'CHF';
+  return '';
+}
+
+function heuristicPrice(text: string, currencyHint = '') {
+  const patterns = [
+    /(?:starting\s+price|price\s+from|price|prix|fiyat|satış\s+fiyatı|satis\s+fiyati)\s*(?:\([^)]*\))?\s*[:\-]?\s*(?:AED|USD|EUR|TRY|TL|GBP|CHF|€|£|₺|\$)?\s*([0-9][0-9\s.,]{3,})/i,
+    /(?:AED|USD|EUR|TRY|TL|GBP|CHF|€|£|₺|\$)\s*([0-9][0-9\s.,]{3,})/i,
+    /([0-9][0-9\s.,]{3,})\s*(?:AED|USD|EUR|TRY|TL|GBP|CHF|€|£|₺|\$)/i,
+  ];
+  for (const pattern of patterns) {
+    const match = pattern.exec(text);
+    if (!match?.[1]) continue;
+    const parsed = parseLocaleNumber(match[1]);
+    if (parsed && parsed >= 1000) return parsed;
+  }
+  return null;
+}
+
+function heuristicSurface(text: string) {
+  const range = /(?:surface|size|alan|brüt|brut|net)?\s*[:\-]?\s*([0-9]{2,4}(?:[.,][0-9]+)?)\s*(?:-|–|to)\s*([0-9]{2,4}(?:[.,][0-9]+)?)\s*(?:m²|m2|sqm|sq\.?\s*m)/i.exec(text);
+  if (range?.[1]) return parseLocaleNumber(range[1]);
+  const one = /(?:surface|size|alan|brüt|brut|net)?\s*[:\-]?\s*([0-9]{2,4}(?:[.,][0-9]+)?)\s*(?:m²|m2|sqm|sq\.?\s*m)/i.exec(text);
+  return one?.[1] ? parseLocaleNumber(one[1]) : null;
+}
+
+function heuristicBedrooms(text: string) {
+  const match = /(?:bedrooms?|chambres?|yatak\s*odası|yatak\s*odasi)\s*[:\-]?\s*([0-9]{1,2})(?!\s*[,\/-]\s*[0-9])/i.exec(text);
+  if (match?.[1]) return Number(match[1]);
+  const layout = /\b([1-9])\s*\+\s*1\b/.exec(text);
+  return layout?.[1] ? Number(layout[1]) : null;
+}
+
+function heuristicDistrict(text: string) {
+  const patterns = [
+    /Projenin\s+Yeri\s*[:\-]?\s*(?:İstanbul|Istanbul)\s*\/\s*([^|·,]{2,60})/i,
+    /(?:district|quartier|ilçe|ilce|location)\s*[:\-]?\s*([^|·,]{2,60})/i,
+    /(?:İstanbul|Istanbul)\s*[\/·,-]\s*([A-ZÇĞİÖŞÜa-zçğıöşü][^|·,]{1,45})/,
+  ];
+  for (const pattern of patterns) {
+    const match = pattern.exec(text);
+    const value = decode(match?.[1] || '').replace(/\s{2,}/g, ' ').trim();
+    if (value && value.length <= 60) return value;
+  }
+  return '';
+}
+
+function heuristicCity(text: string) {
+  const lower = text.toLocaleLowerCase('tr-TR');
+  if (lower.includes('istanbul') || lower.includes('i̇stanbul')) return 'istanbul';
+  if (lower.includes('bodrum')) return 'bodrum';
+  if (lower.includes('antalya')) return 'antalya';
+  return '';
+}
+
+function heuristicDelivery(text: string) {
+  const patterns = [
+    /(?:handover|delivery|livraison|teslim(?:at)?(?:\s+tarihi)?)\s*[:\-]?\s*((?:Q[1-4]\s*)?20[2-4][0-9])/i,
+    /((?:Q[1-4]\s*)?20[2-4][0-9])\s*(?:handover|delivery|livraison|teslim)/i,
+  ];
+  for (const pattern of patterns) {
+    const value = decode(pattern.exec(text)?.[1] || '');
+    if (value) return value;
+  }
+  return '';
+}
+
+function heuristicDeveloper(text: string) {
+  const patterns = [
+    /(?:developed\s+by|developer(?:\s+behind)?|promoteur|geliştirici|gelistirici)\s*[:\-]?\s*([A-Z0-9][A-Za-z0-9&.'’\-\s]{2,80})/i,
+    /(?:güvencesi\s+ve|guvencesi\s+ve)\s*([A-ZÇĞİÖŞÜ0-9][A-Za-zÇĞİÖŞÜçğıöşü0-9&.'’\-\s]{2,60})/i,
+  ];
+  for (const pattern of patterns) {
+    const value = decode(pattern.exec(text)?.[1] || '').split(/\s{2,}|\.|,|\||FAQ|About/i)[0].trim();
+    if (value && value.length <= 80) return value;
+  }
+  return '';
+}
+
+function heuristicPaymentPlan(text: string) {
+  const candidates: Array<{label:string;percentage:number;due:string}> = [];
+  const patterns = [
+    [/booking|reservation|réservation|rezervasyon/i, 'Reservation', 'At booking'],
+    [/during\s+construction|construction|pendant\s+construction|inşaat|insaat/i, 'During construction', 'During construction'],
+    [/handover|delivery|livraison|teslim/i, 'Handover', 'At handover'],
+    [/post[-\s]?handover|after\s+handover|après\s+livraison|teslim\s+sonrası|teslim\s+sonrasi/i, 'Post-handover', 'After handover'],
+  ] as const;
+
+  const snippets = text.match(/.{0,90}\b[0-9]{1,3}\s*%.{0,90}/gi) || [];
+  for (const snippet of snippets.slice(0, 20)) {
+    const pctMatch = /([0-9]{1,3})\s*%/.exec(snippet);
+    if (!pctMatch) continue;
+    const percentage = Number(pctMatch[1]);
+    if (percentage <= 0 || percentage > 100) continue;
+    for (const [pattern, label, due] of patterns) {
+      if (!pattern.test(snippet)) continue;
+      if (!candidates.some((item) => item.label === label && item.percentage === percentage)) {
+        candidates.push({ label, percentage, due });
+      }
+      break;
+    }
+  }
+
+  const total = candidates.reduce((sum, item) => sum + item.percentage, 0);
+  if (!candidates.length || total > 120) return [];
+  return candidates.slice(0, 6).map((item) => ({
+    label: { fr: item.label, en: item.label, ru: item.label, ar: item.label },
+    percentage: item.percentage,
+    amount: null,
+    due: { fr: item.due, en: item.due, ru: item.due, ar: item.due },
+  }));
+}
+
+function extractImageUrls(html: string, base: URL) {
+  const raw: string[] = [];
+  const tags = html.match(/<(?:img|source)\s+[^>]*>/gi) || [];
+  for (const tag of tags) {
+    for (const attr of ['src','data-src','data-lazy-src','data-original']) {
+      const match = new RegExp(`${attr}=["']([^"']+)["']`, 'i').exec(tag);
+      if (match?.[1]) raw.push(match[1]);
+    }
+    const srcset = /(?:srcset|data-srcset)=["']([^"']+)["']/i.exec(tag)?.[1] || '';
+    for (const item of srcset.split(',')) {
+      const candidate = item.trim().split(/\s+/)[0];
+      if (candidate) raw.push(candidate);
+    }
+  }
+
+  return unique(raw.map((value) => {
+    const absoluteUrl = absolute(base, decode(value));
+    try {
+      const parsed = new URL(absoluteUrl);
+      if (parsed.pathname.includes('/_next/image') && parsed.searchParams.get('url')) {
+        return absolute(base, decode(parsed.searchParams.get('url') || ''));
+      }
+      return parsed.toString();
+    } catch {
+      return '';
+    }
+  }).filter((value) => /^https?:\/\//i.test(value)));
 }
 
 async function verifyPortalUser(request: NextRequest) {
@@ -198,35 +370,49 @@ export async function POST(request: NextRequest) {
   const ldImages = [item.image, offer.image, ...nodes.map((x) => x.image)]
     .flat(Infinity)
     .filter((x) => typeof x === 'string') as string[];
-  const htmlImages = (html.match(/<img\s+[^>]*src=["'][^"']+["'][^>]*>/gi) || [])
-    .map((tag) => /src=["']([^"']+)["']/i.exec(tag)?.[1] || '')
-    .filter(Boolean);
+  const htmlImages = extractImageUrls(html, url);
 
-  const remoteImages = unique([...ogImages, ...ldImages, ...htmlImages].map((x) => absolute(url, x)).filter((x) => /^https?:\/\//i.test(x))).slice(0, 20);
+  const remoteImages = unique([...ogImages, ...ldImages].map((x) => absolute(url, x)).filter((x) => /^https?:\/\//i.test(x)).concat(htmlImages))
+    .filter((imageUrl) => !/facebook\.com\/tr\?|logo|favicon|icon\.(?:png|svg|ico)(?:\?|$)/i.test(imageUrl))
+    .slice(0, 28);
   const images = body?.copyImages === false ? remoteImages : await copyImages(portalUser.client, portalUser.user.id, remoteImages);
 
-  const price = firstNumber(nestedOffer.price, nestedOffer.lowPrice, item.price);
-  const currency = String(nestedOffer.priceCurrency || item.priceCurrency || '').toUpperCase();
-  const surface = firstNumber(item.floorSize?.value, item.floorSize, item.area?.value, item.area);
-  const bedrooms = firstNumber(item.numberOfBedrooms, item.numberOfRooms);
-  const district = String(address.addressLocality || address.addressRegion || item.addressLocality || '');
-  const country = String(address.addressCountry?.name || address.addressCountry || '');
+  const rawText = stripHtml(html).slice(0, 24000);
+  const structuredCurrency = String(nestedOffer.priceCurrency || item.priceCurrency || '').toUpperCase();
+  const detectedCurrency = ['EUR','USD','TRY','GBP','CHF'].includes(structuredCurrency)
+    ? structuredCurrency
+    : currencyFromText(rawText);
+  const structuredPrice = firstNumber(nestedOffer.price, nestedOffer.lowPrice, item.price);
+  const price = structuredPrice || heuristicPrice(rawText, detectedCurrency);
+  const surface = firstNumber(item.floorSize?.value, item.floorSize, item.area?.value, item.area) || heuristicSurface(rawText);
+  const bedrooms = firstNumber(item.numberOfBedrooms, item.numberOfRooms) || heuristicBedrooms(rawText);
+  const structuredDistrict = String(address.addressLocality || address.addressRegion || item.addressLocality || '');
+  const district = decode(structuredDistrict) || heuristicDistrict(rawText);
+  const country = decode(String(address.addressCountry?.name || address.addressCountry || ''));
+  const city = heuristicCity(`${title} ${district} ${rawText.slice(0, 6000)}`);
+  const delivery = heuristicDelivery(rawText);
+  const developer = heuristicDeveloper(rawText);
+  const paymentPlan = heuristicPaymentPlan(rawText);
 
   const extracted = {
     sourceUrl: url.toString(),
     sourceHost: url.hostname,
-    title,
-    summary: description.slice(0, 500),
-    description: description.slice(0, 7000),
+    title: decode(title),
+    summary: decode(description).slice(0, 700),
+    description: decode(description).slice(0, 9000),
     price,
-    currency: ['EUR','USD','TRY','GBP','CHF'].includes(currency) ? currency : '',
+    currency: detectedCurrency,
     surfaceM2: surface,
     bedrooms,
     district,
+    city,
     country,
+    delivery,
+    developer,
+    paymentPlan,
     images: images.length ? images : remoteImages,
     remoteImages,
-    rawText: stripHtml(html).slice(0, 12000),
+    rawText,
   };
 
   const { data: job } = await portalUser.client
