@@ -31,6 +31,7 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
     seo_title:{fr:listing.seo_title?.fr||'',en:listing.seo_title?.en||'',ru:listing.seo_title?.ru||'',ar:listing.seo_title?.ar||''},
     seo_description:{fr:listing.seo_description?.fr||'',en:listing.seo_description?.en||'',ru:listing.seo_description?.ru||'',ar:listing.seo_description?.ar||''},
     delivery:{fr:listing.delivery?.fr||'',en:listing.delivery?.en||'',ru:listing.delivery?.ru||'',ar:listing.delivery?.ar||''},
+    payment_notes:{fr:listing.payment_notes?.fr||'',en:listing.payment_notes?.en||'',ru:listing.payment_notes?.ru||'',ar:listing.payment_notes?.ar||''},
     images:Array.isArray(listing.images)?listing.images:[],
     payment_plan:Array.isArray(listing.payment_plan)?listing.payment_plan:[],
     strengths_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.strengths||[],l)])),
@@ -38,9 +39,9 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
     watchpoints_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.watchpoints||[],l)])),
   });
 
-  const input='min-h-[43px] w-full border border-[#cfd8e3] bg-white px-3 text-sm outline-none focus:border-[#315d7c]';
-  const textarea='w-full border border-[#cfd8e3] bg-white px-3 py-3 text-sm leading-6 outline-none focus:border-[#315d7c]';
-  const label='grid gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.08em] text-[#526272]';
+  const input='min-h-[43px] w-full border border-[#d8d4cc] bg-white px-3 text-sm outline-none focus:border-[#9a7447]';
+  const textarea='w-full border border-[#d8d4cc] bg-white px-3 py-3 text-sm leading-6 outline-none focus:border-[#9a7447]';
+  const label='grid gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.08em] text-[#6b7078]';
 
   function setField(key:string,value:any){setDraft((d:any)=>({...d,[key]:value}));}
   function setLocale(key:string,locale:string,value:string){setDraft((d:any)=>({...d,[key]:{...(d[key]||{}),[locale]:value}}));}
@@ -157,6 +158,7 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
         cash_discount_pct:Number(draft.cash_discount_pct)||null,
         cash_price:Number(draft.cash_price)||null,
         installment_price:Number(draft.installment_price)||null,
+        payment_notes:draft.payment_notes,
         strengths:linesToLocalized(draft.strengths_text),
         technical_notes:linesToLocalized(draft.technical_notes_text),
         watchpoints:linesToLocalized(draft.watchpoints_text),
@@ -179,26 +181,35 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
     finally{setBusy(false);}
   }
 
-  return <div className="space-y-6 [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe_UI,sans-serif]">
-    <div className="flex items-start justify-between gap-4 border-b border-[#d9e1e8] pb-5">
-      <div><p className="text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-[#315d7c]">Édition administrateur</p><h2 className="mt-2 text-2xl font-semibold tracking-[-0.02em]">{draft.title?.fr||draft.external_id}</h2><p className="mt-1 text-sm text-[#687685]">Toutes les modifications enregistrées ici deviennent la version officielle de la fiche.</p></div>
-      <button onClick={onClose} className="p-2 text-[#687685]"><X size={20}/></button>
+  const planBase=Number(draft.installment_price||draft.total_price||0);
+  const firstStep=draft.payment_plan?.[0];
+  const firstStepAmount=firstStep?.amount
+    ? Number(firstStep.amount)
+    : firstStep?.percentage&&planBase
+    ? Math.round(planBase*Number(firstStep.percentage)/100)
+    : 0;
+  const percentTotal=(draft.payment_plan||[]).reduce((sum:number,step:any)=>sum+(Number(step?.percentage)||0),0);
+
+  return <div className="space-y-6 [font-family:'Avenir_Next','Helvetica_Neue',Arial,sans-serif]">
+    <div className="flex items-start justify-between gap-4 border-b border-[#d8d4cc] pb-5">
+      <div><p className="text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-[#9a7447]">Édition administrateur</p><h2 className="mt-2 text-2xl font-semibold tracking-[-0.02em]">{draft.title?.fr||draft.external_id}</h2><p className="mt-1 text-sm text-[#6b7078]">Toutes les modifications enregistrées ici deviennent la version officielle de la fiche.</p></div>
+      <button onClick={onClose} className="p-2 text-[#6b7078]"><X size={20}/></button>
     </div>
 
-    {draft.source_url ? <section className="border border-[#d9e1e8] bg-[#f7f9fb] p-5">
-      <span className="text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[#315d7c]">Source d'origine</span>
+    {draft.source_url ? <section className="border border-[#d8d4cc] bg-[#f7f9fb] p-5">
+      <span className="text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[#9a7447]">Source d'origine</span>
       <div className="mt-2 flex flex-wrap items-center gap-3">
-        <a href={draft.source_url} target="_blank" rel="noreferrer" className="break-all text-sm font-medium text-[#315d7c] underline underline-offset-2">{draft.source_url}</a>
-        <span className="text-xs text-[#7b8794]">(traçabilité interne ; à recontrôler avant une mise à jour importante)</span>
+        <a href={draft.source_url} target="_blank" rel="noreferrer" className="break-all text-sm font-medium text-[#9a7447] underline underline-offset-2">{draft.source_url}</a>
+        <span className="text-xs text-[#85888e]">(traçabilité interne ; à recontrôler avant une mise à jour importante)</span>
       </div>
     </section> : null}
 
     <PropertyUrlAutofill onPrepared={applyImported} />
 
-    <section className="grid gap-4 border border-[#d9e1e8] bg-white p-5 md:grid-cols-4">
-      <label className={label}>Pays <span className="normal-case font-normal tracking-normal text-[#7b8794]">(nom affiché)</span><input value={draft.country_name||''} onChange={(e)=>setField('country_name',e.target.value)} className={input} placeholder="Turkey, UAE, Georgia…"/></label>
-      <label className={label}>Code pays <span className="normal-case font-normal tracking-normal text-[#7b8794]">(TR, AE, GE, KZ…)</span><input value={draft.country_code||''} onChange={(e)=>setField('country_code',e.target.value.toUpperCase().slice(0,3))} className={input}/></label>
-      <label className={label}>Ville <span className="normal-case font-normal tracking-normal text-[#7b8794]">(libre)</span><input value={draft.city_name||draft.city||''} onChange={(e)=>{const name=e.target.value;setField('city_name',name);setField('city',name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''));}} className={input} placeholder="Istanbul, Dubai, Batumi…"/></label>
+    <section className="grid gap-4 border border-[#d8d4cc] bg-white p-5 md:grid-cols-4">
+      <label className={label}>Pays <span className="normal-case font-normal tracking-normal text-[#85888e]">(nom affiché)</span><input value={draft.country_name||''} onChange={(e)=>setField('country_name',e.target.value)} className={input} placeholder="Turkey, UAE, Georgia…"/></label>
+      <label className={label}>Code pays <span className="normal-case font-normal tracking-normal text-[#85888e]">(TR, AE, GE, KZ…)</span><input value={draft.country_code||''} onChange={(e)=>setField('country_code',e.target.value.toUpperCase().slice(0,3))} className={input}/></label>
+      <label className={label}>Ville <span className="normal-case font-normal tracking-normal text-[#85888e]">(libre)</span><input value={draft.city_name||draft.city||''} onChange={(e)=>{const name=e.target.value;setField('city_name',name);setField('city',name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''));}} className={input} placeholder="Istanbul, Dubai, Batumi…"/></label>
       <label className={label}>Quartier<input value={draft.district||''} onChange={(e)=>setField('district',e.target.value)} className={input}/></label>
       <label className={label}>Type<select value={draft.property_type} onChange={(e)=>setField('property_type',e.target.value)} className={input}><option value="apartment">Appartement</option><option value="residence">Résidence</option><option value="villa">Villa</option><option value="penthouse">Penthouse</option><option value="commercial">Commercial</option></select></label>
       <label className={label}>Collection<select value={draft.collection} onChange={(e)=>setField('collection',e.target.value)} className={input}><option value="selected-investment">Selected Investment</option><option value="signature">Signature Collection</option><option value="private">Private Opportunity</option></select></label>
@@ -210,68 +221,64 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
       <label className={label}>Salles de bain<input value={draft.bathrooms||''} onChange={(e)=>setField('bathrooms',e.target.value)} className={input}/></label>
       <label className={label}>Promoteur<input value={draft.developer||''} onChange={(e)=>setField('developer',e.target.value)} className={input}/></label>
       <label className={label}>Statut<select value={draft.status} onChange={(e)=>setField('status',e.target.value)} className={input}><option value="available">Disponible</option><option value="reserved">Réservé</option><option value="sold">Vendu</option><option value="private">Privé</option></select></label>
-      <label className="flex items-center gap-3 pt-7 text-sm text-[#526272]"><input type="checkbox" checked={Boolean(draft.published)} onChange={(e)=>setField('published',e.target.checked)}/> Publiée</label>
-      <label className="flex items-center gap-3 pt-7 text-sm text-[#526272]"><input type="checkbox" checked={Boolean(draft.featured)} onChange={(e)=>setField('featured',e.target.checked)}/> Mise en avant</label>
-      <label className="flex items-center gap-3 pt-7 text-sm text-[#526272]"><input type="checkbox" checked={Boolean(draft.price_on_request)} onChange={(e)=>setField('price_on_request',e.target.checked)}/> Prix sur demande</label>
+      <label className="flex items-center gap-3 pt-7 text-sm text-[#6b7078]"><input type="checkbox" checked={Boolean(draft.published)} onChange={(e)=>setField('published',e.target.checked)}/> Publiée</label>
+      <label className="flex items-center gap-3 pt-7 text-sm text-[#6b7078]"><input type="checkbox" checked={Boolean(draft.featured)} onChange={(e)=>setField('featured',e.target.checked)}/> Mise en avant</label>
+      <label className="flex items-center gap-3 pt-7 text-sm text-[#6b7078]"><input type="checkbox" checked={Boolean(draft.price_on_request)} onChange={(e)=>setField('price_on_request',e.target.checked)}/> Prix sur demande</label>
     </section>
 
-    <section className="grid gap-4 border border-[#d9e1e8] bg-white p-5 md:grid-cols-2">
+    <section className="grid gap-4 border border-[#d8d4cc] bg-white p-5 md:grid-cols-2">
       {locales.map((l)=><label key={l} className={label}>Slug {l.toUpperCase()}<input value={draft[`slug_${l}`]||''} onChange={(e)=>setField(`slug_${l}`,e.target.value)} className={input}/></label>)}
     </section>
 
-    <section className="border border-[#d9e1e8] bg-white p-5">
-      <div>
-        <p className="text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[#315d7c]">Contenu principal</p>
-        <h3 className="mt-1 text-lg font-semibold">Version française</h3>
-        <p className="mt-1 text-xs text-[#7b8794]">(c’est la version à relire en priorité après un import automatique)</p>
-      </div>
-      <div className="mt-5 grid gap-4">
-        <label className={label}>Titre public<input value={draft.title?.fr||''} onChange={(e)=>setLocale('title','fr',e.target.value)} className={input}/></label>
-        <label className={label}>Résumé<textarea rows={3} value={draft.summary?.fr||''} onChange={(e)=>setLocale('summary','fr',e.target.value)} className={textarea}/></label>
-        <label className={label}>Description<textarea rows={7} value={draft.description?.fr||''} onChange={(e)=>setLocale('description','fr',e.target.value)} className={textarea}/></label>
-      </div>
-    </section>
-
-    <details className="border border-[#d9e1e8] bg-white">
-      <summary className="cursor-pointer list-none px-5 py-4 text-sm font-semibold text-[#162334]">Traductions & SEO <span className="ml-2 text-xs font-normal text-[#7b8794]">(préremplis automatiquement, à ouvrir seulement si vous voulez les ajuster)</span></summary>
-      <div className="space-y-5 border-t border-[#e7edf2] p-5">
-        {[
-          ['Titre','title',false,1],
-          ['Résumé','summary',true,3],
-          ['Description','description',true,6],
-          ['SEO title','seo_title',false,1],
-          ['Meta description','seo_description',true,3],
-          ['Livraison','delivery',false,1],
-        ].map(([name,key,multi,rows]:any)=><section key={key} className="border border-[#e7edf2] bg-[#f8fafb] p-4"><h3 className="text-sm font-semibold">{name}</h3><div className="mt-3 grid gap-3 md:grid-cols-2">{locales.map((l)=><label key={l} className={label}>{l.toUpperCase()}{multi?<textarea rows={rows} value={draft[key]?.[l]||''} onChange={(e)=>setLocale(key,l,e.target.value)} className={textarea}/>:<input value={draft[key]?.[l]||''} onChange={(e)=>setLocale(key,l,e.target.value)} className={input}/>}</label>)}</div></section>)}
-      </div>
-    </details>
-
-    <section className="border border-[#d9e1e8] bg-white p-5">
-      <div className="mb-5 grid gap-4 border-b border-[#e7edf2] pb-5 md:grid-cols-5">
-        <label className="flex items-center gap-3 pt-6 text-sm text-[#526272]"><input type="checkbox" checked={draft.payment_plan_enabled!==false} onChange={(e)=>setField('payment_plan_enabled',e.target.checked)}/> Afficher le plan</label>
-        <label className={label}>Type de taux<select value={draft.payment_interest_mode||'not_specified'} onChange={(e)=>setField('payment_interest_mode',e.target.value)} className={input}><option value="not_specified">Non précisé</option><option value="interest_free">Sans intérêt / 0%</option><option value="interest_bearing">Avec intérêt / surcoût</option></select></label>
-        <label className={label}>Taux / surcoût % <span className="normal-case font-normal tracking-normal text-[#7b8794]">(selon condition promoteur)</span><input value={draft.payment_interest_rate||''} onChange={(e)=>setField('payment_interest_rate',e.target.value)} className={input}/></label>
-        <label className={label}>Remise comptant % <span className="normal-case font-normal tracking-normal text-[#7b8794]">(si officiellement proposée)</span><input value={draft.cash_discount_pct||''} onChange={(e)=>setField('cash_discount_pct',e.target.value)} className={input}/></label>
-        <label className={label}>Prix cash / échelonné<div className="grid grid-cols-2 gap-2"><input value={draft.cash_price||''} onChange={(e)=>setField('cash_price',e.target.value)} className={input} placeholder="Cash"/><input value={draft.installment_price||''} onChange={(e)=>setField('installment_price',e.target.value)} className={input} placeholder="Échelonné"/></div></label>
-      </div>
+    <section className="border border-[#d8d4cc] bg-white p-5">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
-          <h3 className="text-base font-semibold">Plan de paiement</h3>
-          <p className="mt-1 text-xs text-[#7b8794]">(utilisez seulement les conditions confirmées par le promoteur ou partenaire)</p>
+          <p className="text-[0.66rem] font-semibold uppercase tracking-[0.12em] text-[#9a7447]">Conditions promoteur</p>
+          <h3 className="mt-1 text-xl font-semibold tracking-[-0.02em]">Plan de paiement de la fiche publique</h3>
+          <p className="mt-2 max-w-3xl text-xs leading-5 text-[#73777e]">(renseignez uniquement les conditions confirmées ; ce bloc sera visible exactement comme tel sur l’annonce)</p>
         </div>
-        <button type="button" onClick={()=>setField('payment_plan',[...(draft.payment_plan||[]),{label:{fr:'Nouvelle étape',en:'New step',ru:'Новый этап',ar:'مرحلة جديدة'},percentage:null,amount:null,due:{fr:'À définir',en:'To define',ru:'Уточнить',ar:'يحدد لاحقاً'}}])} className="border border-[#12304a] px-3 py-2 text-xs font-semibold text-[#12304a]">+ Étape</button>
+        <label className="flex items-center gap-3 text-sm text-[#555a61]"><input type="checkbox" checked={draft.payment_plan_enabled!==false} onChange={(e)=>setField('payment_plan_enabled',e.target.checked)}/> Afficher sur l’annonce</label>
       </div>
-      <div className="mt-5 space-y-3">
+
+      <div className="mt-6 grid gap-4 border-y border-[#e6e2dc] py-5 md:grid-cols-3 xl:grid-cols-6">
+        <label className={label}>Type échéancier <span className="normal-case font-normal tracking-normal text-[#85888e]">(condition contractuelle)</span><select value={draft.payment_interest_mode||'not_specified'} onChange={(e)=>setField('payment_interest_mode',e.target.value)} className={input}><option value="not_specified">Non précisé</option><option value="interest_free">Sans intérêt / 0 %</option><option value="interest_bearing">Avec surcoût / taux</option></select></label>
+        <label className={label}>Taux / surcoût % <span className="normal-case font-normal tracking-normal text-[#85888e]">(si applicable)</span><input value={draft.payment_interest_rate||''} onChange={(e)=>setField('payment_interest_rate',e.target.value)} className={input}/></label>
+        <label className={label}>Remise comptant % <span className="normal-case font-normal tracking-normal text-[#85888e]">(si officielle)</span><input value={draft.cash_discount_pct||''} onChange={(e)=>setField('cash_discount_pct',e.target.value)} className={input}/></label>
+        <label className={label}>Prix comptant <span className="normal-case font-normal tracking-normal text-[#85888e]">(après remise)</span><input value={draft.cash_price||''} onChange={(e)=>setField('cash_price',e.target.value)} className={input}/></label>
+        <label className={label}>Prix échelonné <span className="normal-case font-normal tracking-normal text-[#85888e]">(base des %)</span><input value={draft.installment_price||''} onChange={(e)=>setField('installment_price',e.target.value)} className={input}/></label>
+        <div className="border border-[#e6e2dc] bg-[#faf9f6] p-3">
+          <span className="block text-[0.63rem] font-semibold uppercase tracking-[0.08em] text-[#73777e]">Capital d’entrée</span>
+          <strong className="mt-2 block text-lg text-[#1a1d22]">{firstStepAmount?new Intl.NumberFormat('fr-FR',{style:'currency',currency:draft.currency||'EUR',maximumFractionDigits:0}).format(firstStepAmount):'—'}</strong>
+          <span className="mt-1 block text-[0.68rem] text-[#85888e]">(calculé depuis la 1re échéance)</span>
+        </div>
+      </div>
+
+      <div className="mt-5 grid grid-cols-[1.2fr_.45fr_.75fr_1.2fr_auto] gap-2 text-[0.63rem] font-semibold uppercase tracking-[0.08em] text-[#85888e]">
+        <span>Étape</span><span>%</span><span>Montant</span><span>Échéance</span><span></span>
+      </div>
+      <div className="mt-2 space-y-2">
         {(draft.payment_plan||[]).map((step:any,index:number)=>(
-          <div key={index} className="grid gap-3 border-t border-[#e7edf2] pt-4 md:grid-cols-[1.1fr_0.45fr_0.65fr_1.1fr_auto]">
-            <input value={step?.label?.fr||''} onChange={(e)=>setField('payment_plan',(draft.payment_plan||[]).map((s:any,i:number)=>i===index?{...s,label:{...(s.label||{}),fr:e.target.value,en:s.label?.en||e.target.value,ru:s.label?.ru||e.target.value,ar:s.label?.ar||e.target.value}}:s))} className={input} placeholder="Étape"/>
+          <div key={index} className="grid gap-2 border-t border-[#ece8e1] pt-3 md:grid-cols-[1.2fr_.45fr_.75fr_1.2fr_auto]">
+            <input value={step?.label?.fr||''} onChange={(e)=>setField('payment_plan',(draft.payment_plan||[]).map((s:any,i:number)=>i===index?{...s,label:{...(s.label||{}),fr:e.target.value,en:s.label?.en||e.target.value,ru:s.label?.ru||e.target.value,ar:s.label?.ar||e.target.value}}:s))} className={input} placeholder="Réservation"/>
             <input value={step?.percentage??''} onChange={(e)=>setField('payment_plan',(draft.payment_plan||[]).map((s:any,i:number)=>i===index?{...s,percentage:e.target.value===''?null:Number(e.target.value)}:s))} className={input} placeholder="%" inputMode="decimal"/>
-            <input value={step?.amount??''} onChange={(e)=>setField('payment_plan',(draft.payment_plan||[]).map((s:any,i:number)=>i===index?{...s,amount:e.target.value===''?null:Number(e.target.value)}:s))} className={input} placeholder="Montant" inputMode="decimal"/>
-            <input value={step?.due?.fr||''} onChange={(e)=>setField('payment_plan',(draft.payment_plan||[]).map((s:any,i:number)=>i===index?{...s,due:{...(s.due||{}),fr:e.target.value,en:s.due?.en||e.target.value,ru:s.due?.ru||e.target.value,ar:s.due?.ar||e.target.value}}:s))} className={input} placeholder="Échéance"/>
-            <button type="button" onClick={()=>setField('payment_plan',(draft.payment_plan||[]).filter((_:any,i:number)=>i!==index))} className="px-3 text-[#a85656]">×</button>
+            <input value={step?.amount??''} onChange={(e)=>setField('payment_plan',(draft.payment_plan||[]).map((s:any,i:number)=>i===index?{...s,amount:e.target.value===''?null:Number(e.target.value)}:s))} className={input} placeholder="Montant exact" inputMode="decimal"/>
+            <input value={step?.due?.fr||''} onChange={(e)=>setField('payment_plan',(draft.payment_plan||[]).map((s:any,i:number)=>i===index?{...s,due:{...(s.due||{}),fr:e.target.value,en:s.due?.en||e.target.value,ru:s.due?.ru||e.target.value,ar:s.due?.ar||e.target.value}}:s))} className={input} placeholder="À la signature"/>
+            <button type="button" onClick={()=>setField('payment_plan',(draft.payment_plan||[]).filter((_:any,i:number)=>i!==index))} className="px-3 text-[#9f514f]">×</button>
           </div>
         ))}
       </div>
+
+      <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
+        <button type="button" onClick={()=>setField('payment_plan',[...(draft.payment_plan||[]),{label:{fr:'Nouvelle étape',en:'New step',ru:'Новый этап',ar:'مرحلة جديدة'},percentage:null,amount:null,due:{fr:'À définir',en:'To define',ru:'Уточнить',ar:'يحدد لاحقاً'}}])} className="border border-[#1a1d22] px-3 py-2 text-xs font-semibold text-[#1a1d22]">+ Ajouter une étape</button>
+        <span className={`text-xs ${percentTotal===100?'text-[#516a58]':'text-[#9f514f]'}`}>Total des pourcentages : <strong>{percentTotal}%</strong> {percentTotal===100?'✓':'(à vérifier)'}</span>
+      </div>
+
+      <details className="mt-5 border-t border-[#e6e2dc] pt-4">
+        <summary className="cursor-pointer text-xs font-semibold uppercase tracking-[0.08em] text-[#9a7447]">Notes de paiement multilingues</summary>
+        <div className="mt-4 grid gap-3 md:grid-cols-2">
+          {locales.map((l)=><label key={l} className={label}>{l.toUpperCase()}<textarea rows={3} value={draft.payment_notes?.[l]||''} onChange={(e)=>setLocale('payment_notes',l,e.target.value)} className={textarea}/></label>)}
+        </div>
+      </details>
     </section>
 
     <section className="grid gap-5 lg:grid-cols-3">
@@ -280,9 +287,9 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
         ['Bosphoras Technical Notes','technical_notes_text'],
         ['Points de vigilance','watchpoints_text'],
       ].map(([title,key]:any)=>(
-        <div key={key} className="border border-[#d9e1e8] bg-white p-5">
+        <div key={key} className="border border-[#d8d4cc] bg-white p-5">
           <h3 className="text-base font-semibold">{title}</h3>
-          <p className="mt-1 text-xs text-[#7b8794]">(un point par ligne ; gardez une formulation factuelle)</p>
+          <p className="mt-1 text-xs text-[#85888e]">(un point par ligne ; gardez une formulation factuelle)</p>
           <div className="mt-4 space-y-3">
             {locales.map((l)=><label key={l} className={label}>{l.toUpperCase()}<textarea rows={4} value={draft[key]?.[l]||''} onChange={(e)=>setField(key,{...(draft[key]||{}),[l]:e.target.value})} className={textarea}/></label>)}
           </div>
@@ -290,13 +297,13 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
       ))}
     </section>
 
-    <section className="border border-[#d9e1e8] bg-white p-5">
-      <div className="flex items-center gap-2"><ImagePlus size={17} className="text-[#315d7c]"/><h3 className="text-base font-semibold">Galerie</h3></div>
+    <section className="border border-[#d8d4cc] bg-white p-5">
+      <div className="flex items-center gap-2"><ImagePlus size={17} className="text-[#9a7447]"/><h3 className="text-base font-semibold">Galerie</h3></div>
       <input type="file" multiple accept="image/jpeg,image/png,image/webp,image/avif" onChange={(e)=>upload(e.target.files)} className="mt-4 text-sm"/>
-      <div className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-6">{draft.images.map((src:string,i:number)=><div key={src} className="relative aspect-[4/3] overflow-hidden bg-[#e8edf2]"><img src={src} alt="" className="h-full w-full object-cover"/><div className="absolute inset-x-1 top-1 flex justify-between"><button onClick={()=>moveImage(i,-1)} className="bg-[#0d1c2b] p-1 text-white"><ArrowUp size={12}/></button><button onClick={()=>setField('images',draft.images.filter((_:any,index:number)=>index!==i))} className="bg-[#8f4747] p-1 text-white"><X size={12}/></button><button onClick={()=>moveImage(i,1)} className="bg-[#0d1c2b] p-1 text-white"><ArrowDown size={12}/></button></div>{i===0&&<span className="absolute bottom-1 left-1 bg-white px-2 py-1 text-[0.6rem] font-semibold">HERO</span>}</div>)}</div>
+      <div className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-6">{draft.images.map((src:string,i:number)=><div key={src} className="relative aspect-[4/3] overflow-hidden bg-[#ece8e1]"><img src={src} alt="" className="h-full w-full object-cover"/><div className="absolute inset-x-1 top-1 flex justify-between"><button onClick={()=>moveImage(i,-1)} className="bg-[#1a1d22] p-1 text-white"><ArrowUp size={12}/></button><button onClick={()=>setField('images',draft.images.filter((_:any,index:number)=>index!==i))} className="bg-[#8f4747] p-1 text-white"><X size={12}/></button><button onClick={()=>moveImage(i,1)} className="bg-[#1a1d22] p-1 text-white"><ArrowDown size={12}/></button></div>{i===0&&<span className="absolute bottom-1 left-1 bg-white px-2 py-1 text-[0.6rem] font-semibold">HERO</span>}</div>)}</div>
     </section>
 
-    {message&&<p className="border border-[#d9e1e8] bg-white p-4 text-sm text-[#526272]">{message}</p>}
-    <button disabled={busy} onClick={save} className="inline-flex min-h-[48px] items-center gap-2 bg-[#12304a] px-6 text-sm font-semibold text-white disabled:opacity-50"><Save size={16}/>{busy?'Enregistrement…':'Enregistrer les modifications'}</button>
+    {message&&<p className="border border-[#d8d4cc] bg-white p-4 text-sm text-[#6b7078]">{message}</p>}
+    <button disabled={busy} onClick={save} className="inline-flex min-h-[48px] items-center gap-2 bg-[#1a1d22] px-6 text-sm font-semibold text-white disabled:opacity-50"><Save size={16}/>{busy?'Enregistrement…':'Enregistrer les modifications'}</button>
   </div>;
 }
