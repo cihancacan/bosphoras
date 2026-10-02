@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { GlobalPropertyInvestmentPage } from '@/components/GlobalPropertyInvestmentPage';
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = buildMetadata({
   locale:'fr',
   path:'/investissement-immobilier-international',
