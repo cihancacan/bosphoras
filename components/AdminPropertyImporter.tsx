@@ -250,35 +250,35 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
     }finally{setBusy(false);setStage('');}
   }
 
-  const input='min-h-[43px] w-full border border-[#cfd8e3] bg-white px-3 text-sm outline-none focus:border-[#315d7c]';
-  const textarea='w-full border border-[#cfd8e3] bg-white px-3 py-3 text-sm leading-6 outline-none focus:border-[#315d7c]';
-  const label='grid gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.08em] text-[#526272]';
+  const input='min-h-[43px] w-full border border-[#d8d4cc] bg-white px-3 text-sm outline-none focus:border-[#315d7c]';
+  const textarea='w-full border border-[#d8d4cc] bg-white px-3 py-3 text-sm leading-6 outline-none focus:border-[#315d7c]';
+  const label='grid gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.08em] text-[#6b7078]';
 
-  return <div className="space-y-7 [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe_UI,sans-serif]">
-    <section className="border border-[#d9e1e8] bg-white p-6">
+  return <div className="space-y-7 [font-family:'Avenir_Next','Helvetica_Neue',Arial,sans-serif]">
+    <section className="border border-[#d8d4cc] bg-white p-6">
       <div className="flex items-start gap-3">
-        <div className="flex h-10 w-10 shrink-0 items-center justify-center bg-[#12304a] text-white"><Download size={18}/></div>
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center bg-[#1a1d22] text-white"><Download size={18}/></div>
         <div>
           <h2 className="text-xl font-semibold tracking-[-0.02em]">Importer une annonce partenaire</h2>
-          <p className="mt-1 text-sm leading-6 text-[#687685]">Collez l’URL. Bosphoras récupère ce qui est réellement disponible dans la page : titre, description, prix, surface, localisation, données structurées et photos. Rien n’est publié sans votre validation.</p>
+          <p className="mt-1 text-sm leading-6 text-[#6b7078]">Collez l’URL. Bosphoras récupère ce qui est réellement disponible dans la page : titre, description, prix, surface, localisation, données structurées et photos. Rien n’est publié sans votre validation.</p>
         </div>
       </div>
       <div className="mt-6 flex flex-col gap-3 md:flex-row">
-        <input value={url} onChange={(e)=>setUrl(e.target.value)} placeholder="https://partenaire.com/projet/..." className="min-h-[48px] flex-1 border border-[#cfd8e3] px-4 text-sm outline-none focus:border-[#315d7c]"/>
-        <button disabled={busy||!url.trim()} onClick={importUrl} className="inline-flex min-h-[48px] items-center justify-center gap-2 bg-[#12304a] px-6 text-sm font-semibold text-white disabled:opacity-50">
+        <input value={url} onChange={(e)=>setUrl(e.target.value)} placeholder="https://partenaire.com/projet/..." className="min-h-[48px] flex-1 border border-[#d8d4cc] px-4 text-sm outline-none focus:border-[#315d7c]"/>
+        <button disabled={busy||!url.trim()} onClick={importUrl} className="inline-flex min-h-[48px] items-center justify-center gap-2 bg-[#1a1d22] px-6 text-sm font-semibold text-white disabled:opacity-50">
           {busy?<Loader2 size={16} className="animate-spin"/>:<WandSparkles size={16}/>} Importer & préparer
         </button>
       </div>
-      {stage&&<p className="mt-3 text-xs font-medium text-[#315d7c]">{stage}</p>}
-      {message&&<div className="mt-4 border border-[#d9e1e8] bg-[#f7f9fb] px-4 py-3 text-sm leading-6 text-[#526272]"><p>{message}</p>{lastCreated?.id?<div className="mt-3 flex flex-wrap gap-2"><a href={'/espace/apercu?listing='+lastCreated.id} target="_blank" rel="noreferrer" className="inline-flex min-h-[38px] items-center border border-[#315d7c] bg-white px-3 text-xs font-semibold uppercase text-[#315d7c]">Aperçu de la fiche</a>{lastCreated.published?<a href={'/investissement-immobilier-international/'+lastCreated.slug} target="_blank" rel="noreferrer" className="inline-flex min-h-[38px] items-center border border-[#2f6d59] bg-white px-3 text-xs font-semibold uppercase text-[#2f6d59]">Ouvrir la page publique</a>:null}</div>:null}</div>}
+      {stage&&<p className="mt-3 text-xs font-medium text-[#9a7447]">{stage}</p>}
+      {message&&<div className="mt-4 border border-[#d8d4cc] bg-[#faf9f6] px-4 py-3 text-sm leading-6 text-[#6b7078]"><p>{message}</p>{lastCreated?.id?<div className="mt-3 flex flex-wrap gap-2"><a href={'/espace/apercu?listing='+lastCreated.id} target="_blank" rel="noreferrer" className="inline-flex min-h-[38px] items-center border border-[#315d7c] bg-white px-3 text-xs font-semibold uppercase text-[#9a7447]">Aperçu de la fiche</a>{lastCreated.published?<a href={'/investissement-immobilier-international/'+lastCreated.slug} target="_blank" rel="noreferrer" className="inline-flex min-h-[38px] items-center border border-[#2f6d59] bg-white px-3 text-xs font-semibold uppercase text-[#2f6d59]">Ouvrir la page publique</a>:null}</div>:null}</div>}
     </section>
 
     {draft&&<>
-      <section className="grid gap-5 border border-[#d9e1e8] bg-white p-6 md:grid-cols-4">
-        <label className={label}>Pays <span className="normal-case font-normal tracking-normal text-[#7b8794]">(nom affiché)</span><input value={draft.countryName||''} onChange={(e)=>setField('countryName',e.target.value)} className={input} placeholder="Turkey, UAE, Georgia…"/></label>
-        <label className={label}>Code pays <span className="normal-case font-normal tracking-normal text-[#7b8794]">(TR, AE, GE, KZ, FR, US…)</span><input value={draft.countryCode||''} onChange={(e)=>setField('countryCode',e.target.value.toUpperCase().slice(0,3))} className={input}/></label>
-        <label className={label}>Ville <span className="normal-case font-normal tracking-normal text-[#7b8794]">(libre : Istanbul, Dubai, Batumi, Almaty, Paris…)</span><input value={draft.cityName||''} onChange={(e)=>{setField('cityName',e.target.value);setField('city',slugify(e.target.value));}} className={input}/></label>
-        <label className={label}>Quartier <span className="normal-case font-normal tracking-normal text-[#7b8794]">(à contrôler dans l’adresse source)</span><input value={draft.district} onChange={(e)=>setField('district',e.target.value)} className={input}/></label>
+      <section className="grid gap-5 border border-[#d8d4cc] bg-white p-6 md:grid-cols-4">
+        <label className={label}>Pays <span className="normal-case font-normal tracking-normal text-[#85888e]">(nom affiché)</span><input value={draft.countryName||''} onChange={(e)=>setField('countryName',e.target.value)} className={input} placeholder="Turkey, UAE, Georgia…"/></label>
+        <label className={label}>Code pays <span className="normal-case font-normal tracking-normal text-[#85888e]">(TR, AE, GE, KZ, FR, US…)</span><input value={draft.countryCode||''} onChange={(e)=>setField('countryCode',e.target.value.toUpperCase().slice(0,3))} className={input}/></label>
+        <label className={label}>Ville <span className="normal-case font-normal tracking-normal text-[#85888e]">(libre : Istanbul, Dubai, Batumi, Almaty, Paris…)</span><input value={draft.cityName||''} onChange={(e)=>{setField('cityName',e.target.value);setField('city',slugify(e.target.value));}} className={input}/></label>
+        <label className={label}>Quartier <span className="normal-case font-normal tracking-normal text-[#85888e]">(à contrôler dans l’adresse source)</span><input value={draft.district} onChange={(e)=>setField('district',e.target.value)} className={input}/></label>
         <label className={label}>Type
           <select value={draft.propertyType} onChange={(e)=>setField('propertyType',e.target.value)} className={input}><option value="apartment">Appartement</option><option value="residence">Résidence</option><option value="villa">Villa</option><option value="penthouse">Penthouse</option><option value="commercial">Commercial</option></select>
         </label>
@@ -286,39 +286,39 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
           <select value={draft.collection} onChange={(e)=>setField('collection',e.target.value)} className={input}><option value="selected-investment">Selected Investment</option><option value="signature">Signature Collection</option><option value="private">Private Opportunity</option></select>
         </label>
         <label className={label}>Devise <select value={draft.currency} onChange={(e)=>setField('currency',e.target.value)} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option><option>KZT</option><option>GEL</option></select></label>
-        <label className={label}>Prix total <span className="normal-case font-normal tracking-normal text-[#7b8794]">(prix affiché par la source)</span><input value={draft.totalPrice} onChange={(e)=>setField('totalPrice',e.target.value)} className={input}/></label>
-        <label className={label}>Capital aujourd’hui <span className="normal-case font-normal tracking-normal text-[#7b8794]">(apport/acompte nécessaire maintenant)</span><input value={draft.entryCapital} onChange={(e)=>setField('entryCapital',e.target.value)} className={input}/></label>
+        <label className={label}>Prix total <span className="normal-case font-normal tracking-normal text-[#85888e]">(prix affiché par la source)</span><input value={draft.totalPrice} onChange={(e)=>setField('totalPrice',e.target.value)} className={input}/></label>
+        <label className={label}>Capital aujourd’hui <span className="normal-case font-normal tracking-normal text-[#85888e]">(apport/acompte nécessaire maintenant)</span><input value={draft.entryCapital} onChange={(e)=>setField('entryCapital',e.target.value)} className={input}/></label>
         <label className={label}>Surface m² <input value={draft.surfaceM2} onChange={(e)=>setField('surfaceM2',e.target.value)} className={input}/></label>
         <label className={label}>Chambres <input value={draft.bedrooms} onChange={(e)=>setField('bedrooms',e.target.value)} className={input}/></label>
         <label className={label}>Salles de bain <input value={draft.bathrooms} onChange={(e)=>setField('bathrooms',e.target.value)} className={input}/></label>
         <label className={label}>Promoteur / projet <input value={draft.developer} onChange={(e)=>setField('developer',e.target.value)} className={input}/></label>
-        <label className="flex items-center gap-3 pt-7 text-sm text-[#526272]"><input type="checkbox" checked={draft.priceOnRequest} onChange={(e)=>setField('priceOnRequest',e.target.checked)}/> Prix sur demande</label>
+        <label className="flex items-center gap-3 pt-7 text-sm text-[#6b7078]"><input type="checkbox" checked={draft.priceOnRequest} onChange={(e)=>setField('priceOnRequest',e.target.checked)}/> Prix sur demande</label>
       </section>
 
-      <section className="border border-[#d9e1e8] bg-white p-6">
-        <div className="mb-5 grid gap-4 border-b border-[#e7edf2] pb-5 md:grid-cols-5">
-          <label className="flex items-center gap-3 pt-6 text-sm text-[#526272]"><input type="checkbox" checked={Boolean(draft.paymentPlanEnabled)} onChange={(e)=>setField('paymentPlanEnabled',e.target.checked)}/> Afficher le plan de paiement</label>
+      <section className="border border-[#d8d4cc] bg-white p-6">
+        <div className="mb-5 grid gap-4 border-b border-[#e6e2dc] pb-5 md:grid-cols-5">
+          <label className="flex items-center gap-3 pt-6 text-sm text-[#6b7078]"><input type="checkbox" checked={Boolean(draft.paymentPlanEnabled)} onChange={(e)=>setField('paymentPlanEnabled',e.target.checked)}/> Afficher le plan de paiement</label>
           <label className={label}>Type de taux<select value={draft.paymentInterestMode||'not_specified'} onChange={(e)=>setField('paymentInterestMode',e.target.value)} className={input}><option value="not_specified">Non précisé</option><option value="interest_free">Sans intérêt / 0%</option><option value="interest_bearing">Avec intérêt</option></select></label>
-          <label className={label}>Taux % <span className="normal-case font-normal tracking-normal text-[#7b8794]">(si paiement avec intérêt)</span><input value={draft.paymentInterestRate||''} onChange={(e)=>setField('paymentInterestRate',e.target.value)} className={input} inputMode="decimal"/></label>
-          <label className={label}>Remise comptant % <span className="normal-case font-normal tracking-normal text-[#7b8794]">(réduction si paiement cash)</span><input value={draft.cashDiscountPct||''} onChange={(e)=>setField('cashDiscountPct',e.target.value)} className={input} inputMode="decimal"/></label>
-          <label className={label}>Prix comptant / échelonné <span className="normal-case font-normal tracking-normal text-[#7b8794]">(si les deux prix diffèrent)</span><div className="grid grid-cols-2 gap-2"><input value={draft.cashPrice||''} onChange={(e)=>setField('cashPrice',e.target.value)} className={input} placeholder="Cash"/><input value={draft.installmentPrice||''} onChange={(e)=>setField('installmentPrice',e.target.value)} className={input} placeholder="Échelonné"/></div></label>
+          <label className={label}>Taux % <span className="normal-case font-normal tracking-normal text-[#85888e]">(si paiement avec intérêt)</span><input value={draft.paymentInterestRate||''} onChange={(e)=>setField('paymentInterestRate',e.target.value)} className={input} inputMode="decimal"/></label>
+          <label className={label}>Remise comptant % <span className="normal-case font-normal tracking-normal text-[#85888e]">(réduction si paiement cash)</span><input value={draft.cashDiscountPct||''} onChange={(e)=>setField('cashDiscountPct',e.target.value)} className={input} inputMode="decimal"/></label>
+          <label className={label}>Prix comptant / échelonné <span className="normal-case font-normal tracking-normal text-[#85888e]">(si les deux prix diffèrent)</span><div className="grid grid-cols-2 gap-2"><input value={draft.cashPrice||''} onChange={(e)=>setField('cashPrice',e.target.value)} className={input} placeholder="Cash"/><input value={draft.installmentPrice||''} onChange={(e)=>setField('installmentPrice',e.target.value)} className={input} placeholder="Échelonné"/></div></label>
         </div>
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
             <h3 className="text-lg font-semibold">Plan de paiement</h3>
-            <p className="mt-1 text-xs leading-5 text-[#7b8794]">(uniquement les échéances présentes dans la source ; contrôlez le total avant publication)</p>
+            <p className="mt-1 text-xs leading-5 text-[#85888e]">(uniquement les échéances présentes dans la source ; contrôlez le total avant publication)</p>
           </div>
           <button
             type="button"
             onClick={()=>setField('paymentPlan',[...(draft.paymentPlan||[]),{label:local('Nouvelle étape'),percentage:null,amount:null,due:local('À définir')}])}
-            className="border border-[#12304a] px-3 py-2 text-xs font-semibold text-[#12304a]"
+            className="border border-[#1a1d22] px-3 py-2 text-xs font-semibold text-[#1a1d22]"
           >
             + Ajouter une étape
           </button>
         </div>
         <div className="mt-5 space-y-3">
           {(draft.paymentPlan||[]).map((step:any,index:number)=>(
-            <div key={index} className="grid gap-3 border-t border-[#e7edf2] pt-4 md:grid-cols-[1.1fr_0.45fr_0.65fr_1.1fr_auto]">
+            <div key={index} className="grid gap-3 border-t border-[#e6e2dc] pt-4 md:grid-cols-[1.1fr_0.45fr_0.65fr_1.1fr_auto]">
               <input
                 value={step?.label?.fr||''}
                 onChange={(e)=>setField('paymentPlan',(draft.paymentPlan||[]).map((s:any,i:number)=>i===index?{...s,label:{...(s.label||local('')),fr:e.target.value,en:s.label?.en||e.target.value,ru:s.label?.ru||e.target.value,ar:s.label?.ar||e.target.value}}:s))}
@@ -348,7 +348,7 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
               <button type="button" onClick={()=>setField('paymentPlan',(draft.paymentPlan||[]).filter((_:any,i:number)=>i!==index))} className="px-3 text-sm font-semibold text-[#a85656]">×</button>
             </div>
           ))}
-          {!(draft.paymentPlan||[]).length?<p className="text-sm text-[#7b8794]">Aucun échéancier détecté. Ne pas en inventer : ajoutez-le seulement si le promoteur l'a confirmé.</p>:null}
+          {!(draft.paymentPlan||[]).length?<p className="text-sm text-[#85888e]">Aucun échéancier détecté. Ne pas en inventer : ajoutez-le seulement si le promoteur l'a confirmé.</p>:null}
         </div>
       </section>
 
@@ -358,8 +358,8 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
         ['Description', 'description', true, 7],
         ['SEO title', 'seoTitle', false, 1],
         ['Meta description', 'seoDescription', true, 3],
-      ].map(([name,key,multi,rows]:any)=><section key={key} className="border border-[#d9e1e8] bg-white p-6">
-        <div className="flex items-center gap-2"><Languages size={17} className="text-[#315d7c]"/><h3 className="text-lg font-semibold">{name}</h3></div>
+      ].map(([name,key,multi,rows]:any)=><section key={key} className="border border-[#d8d4cc] bg-white p-6">
+        <div className="flex items-center gap-2"><Languages size={17} className="text-[#9a7447]"/><h3 className="text-lg font-semibold">{name}</h3></div>
         <div className="mt-4 grid gap-4 md:grid-cols-2">{locales.map((l)=><label key={l} className={label}>{l.toUpperCase()}
           {multi?<textarea rows={rows} value={draft[key]?.[l]||''} onChange={(e)=>setLocaleField(key,l,e.target.value)} className={textarea}/>:<input value={draft[key]?.[l]||''} onChange={(e)=>setLocaleField(key,l,e.target.value)} className={input}/>}
         </label>)}</div>
@@ -370,22 +370,22 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
           ['Pourquoi Bosphoras le sélectionne',strengths,setStrengths],
           ['Technical Notes',technicalNotes,setTechnicalNotes],
           ['Points de vigilance',watchpoints,setWatchpoints],
-        ].map(([name,value,setter]:any)=><div key={name} className="border border-[#d9e1e8] bg-white p-5">
+        ].map(([name,value,setter]:any)=><div key={name} className="border border-[#d8d4cc] bg-white p-5">
           <h3 className="text-base font-semibold">{name}</h3>
-          <p className="mt-1 text-xs text-[#7b8794]">(un point par ligne ; ne garder que ce qui est vérifiable)</p>
+          <p className="mt-1 text-xs text-[#85888e]">(un point par ligne ; ne garder que ce qui est vérifiable)</p>
           <div className="mt-4 space-y-3">{locales.map((l)=><label key={l} className={label}>{l.toUpperCase()}<textarea rows={4} value={value[l]} onChange={(e)=>setter({...value,[l]:e.target.value})} className={textarea}/></label>)}</div>
         </div>)}
       </section>
 
-      <section className="border border-[#d9e1e8] bg-white p-6">
-        <div className="flex items-center gap-3"><Images size={18} className="text-[#315d7c]"/><div><h3 className="text-lg font-semibold">Photos importées</h3><p className="text-xs text-[#7b8794]">(copiées dans le stockage Bosphoras quand la page le permet ; à utiliser uniquement si le partenaire vous autorise à les publier)</p></div></div>
-        <div className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-6">{(draft.images||[]).map((src:string,i:number)=><div key={src} className="relative aspect-[4/3] overflow-hidden bg-[#e8edf2]"><img src={src} alt="" className="h-full w-full object-cover"/><button onClick={()=>setField('images',draft.images.filter((_:any,index:number)=>index!==i))} className="absolute right-1 top-1 bg-[#0d1c2b] px-2 py-1 text-xs text-white">×</button></div>)}</div>
-        {source?.sourceUrl&&<a href={source.sourceUrl} target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#315d7c]"><ExternalLink size={14}/>Voir la source originale</a>}
+      <section className="border border-[#d8d4cc] bg-white p-6">
+        <div className="flex items-center gap-3"><Images size={18} className="text-[#9a7447]"/><div><h3 className="text-lg font-semibold">Photos importées</h3><p className="text-xs text-[#85888e]">(copiées dans le stockage Bosphoras quand la page le permet ; à utiliser uniquement si le partenaire vous autorise à les publier)</p></div></div>
+        <div className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-6">{(draft.images||[]).map((src:string,i:number)=><div key={src} className="relative aspect-[4/3] overflow-hidden bg-[#ece8e1]"><img src={src} alt="" className="h-full w-full object-cover"/><button onClick={()=>setField('images',draft.images.filter((_:any,index:number)=>index!==i))} className="absolute right-1 top-1 bg-[#171a1f] px-2 py-1 text-xs text-white">×</button></div>)}</div>
+        {source?.sourceUrl&&<a href={source.sourceUrl} target="_blank" rel="noreferrer" className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#9a7447]"><ExternalLink size={14}/>Voir la source originale</a>}
       </section>
 
       <div className="flex flex-wrap gap-3">
-        <button disabled={busy} onClick={()=>save(false)} className="inline-flex min-h-[48px] items-center gap-2 border border-[#12304a] bg-white px-5 text-sm font-semibold text-[#12304a]"><Save size={16}/>Enregistrer brouillon</button>
-        <button disabled={busy} onClick={()=>save(true)} className="inline-flex min-h-[48px] items-center gap-2 bg-[#12304a] px-6 text-sm font-semibold text-white"><CheckCircle2 size={16}/>Valider & publier</button>
+        <button disabled={busy} onClick={()=>save(false)} className="inline-flex min-h-[48px] items-center gap-2 border border-[#1a1d22] bg-white px-5 text-sm font-semibold text-[#1a1d22]"><Save size={16}/>Enregistrer brouillon</button>
+        <button disabled={busy} onClick={()=>save(true)} className="inline-flex min-h-[48px] items-center gap-2 bg-[#1a1d22] px-6 text-sm font-semibold text-white"><CheckCircle2 size={16}/>Valider & publier</button>
       </div>
     </>}
   </div>;
