@@ -1,12 +1,27 @@
 // @ts-nocheck
 import Link from 'next/link';
-import { ArrowLeft, ArrowRight, CalendarDays, CheckCircle2, MapPin, ShieldAlert, WalletCards, Wrench } from 'lucide-react';
+import {
+  ArrowLeft,
+  ArrowRight,
+  BadgePercent,
+  Bath,
+  BedDouble,
+  Building2,
+  CalendarDays,
+  CheckCircle2,
+  Clock3,
+  MapPin,
+  Ruler,
+  ShieldAlert,
+  WalletCards,
+  Wrench,
+} from 'lucide-react';
 import type { Locale } from '@/lib/i18n';
 import { localeDir } from '@/lib/i18n';
 import {
-  formatEntryCapital,
   formatPropertyPrice,
   getPropertyPath,
+  globalPropertyHubPaths,
   propertyHubPaths,
   type PropertyListing,
 } from '@/data/propertyDesk';
@@ -19,83 +34,176 @@ import { StructuredData } from '@/components/StructuredData';
 interface PropertyDetailPageProps {
   locale: Locale;
   property: PropertyListing;
+  globalMode?: boolean;
 }
 
-function labels(locale: Locale) {
-  if (locale === 'fr') {
-    return {
-      back: 'Immobilier Turquie',
-      totalPrice: 'Prix total',
-      capitalToday: 'Capital aujourd’hui',
-      delivery: 'Livraison',
-      surface: 'Surface',
-      bedrooms: 'Chambres',
-      payment: 'Plan de paiement',
-      why: 'Pourquoi Bosphoras l’a sélectionné',
-      technical: 'Bosphoras Technical Notes',
-      watch: 'Points de vigilance',
-      overview: 'Le projet',
-      request: 'Demander le dossier complet',
-      visit: 'Organiser une visite privée',
-      disclaimer:
-        'Les prix, disponibilités, échéanciers et caractéristiques sont susceptibles d’évolution. Ils doivent être reconfirmés auprès du promoteur ou du partenaire autorisé avant toute décision ou transfert de fonds.',
-    };
-  }
-  if (locale === 'ru') {
-    return {
-      back: 'Недвижимость в Турции',
-      totalPrice: 'Полная цена',
-      capitalToday: 'Капитал сегодня',
-      delivery: 'Сдача',
-      surface: 'Площадь',
-      bedrooms: 'Спальни',
-      payment: 'График платежей',
-      why: 'Почему Bosphoras выбрал этот объект',
-      technical: 'Bosphoras Technical Notes',
-      watch: 'На что обратить внимание',
-      overview: 'О проекте',
-      request: 'Получить полный пакет',
-      visit: 'Организовать частный просмотр',
-      disclaimer:
-        'Цены, наличие, графики платежей и характеристики могут меняться. Перед решением или переводом средств их необходимо повторно подтвердить у застройщика или уполномоченного партнёра.',
-    };
-  }
-  if (locale === 'ar') {
-    return {
-      back: 'عقارات تركيا',
-      totalPrice: 'السعر الإجمالي',
-      capitalToday: 'رأس المال اليوم',
-      delivery: 'التسليم',
-      surface: 'المساحة',
-      bedrooms: 'غرف النوم',
-      payment: 'خطة الدفع',
-      why: 'لماذا اختار Bosphoras هذا العقار',
-      technical: 'Bosphoras Technical Notes',
-      watch: 'نقاط يجب الانتباه لها',
-      overview: 'عن المشروع',
-      request: 'طلب الملف الكامل',
-      visit: 'تنظيم زيارة خاصة',
-      disclaimer:
-        'قد تتغير الأسعار والتوافر وخطط الدفع والمواصفات. يجب إعادة تأكيدها مع المطور أو الشريك المخول قبل أي قرار أو تحويل للأموال.',
-    };
-  }
+function labels(locale: Locale, globalMode = false) {
+  const back = globalMode
+    ? locale === 'fr' ? 'Investissement immobilier international'
+      : locale === 'en' ? 'International property investment'
+      : locale === 'ru' ? 'Зарубежная недвижимость'
+      : 'الاستثمار العقاري الدولي'
+    : locale === 'fr' ? 'Immobilier en Turquie'
+      : locale === 'en' ? 'Property in Turkey'
+      : locale === 'ru' ? 'Недвижимость в Турции'
+      : 'عقارات تركيا';
+
+  if (locale === 'fr') return {
+    back,
+    investmentMemo: 'FICHE INVESTISSEMENT',
+    price: 'Prix affiché',
+    entry: 'Capital aujourd’hui',
+    location: 'Localisation',
+    surface: 'Surface',
+    bedrooms: 'Chambres',
+    bathrooms: 'Salles de bain',
+    delivery: 'Livraison',
+    developer: 'Promoteur',
+    reference: 'Référence',
+    overview: 'Présentation du bien',
+    why: 'Pourquoi Bosphoras le retient',
+    technical: 'Lecture technique',
+    watch: 'Points de vigilance',
+    financing: 'Conditions promoteur',
+    paymentPlan: 'Échéancier',
+    interestRate: 'Taux promoteur',
+    cashPrice: 'Prix comptant',
+    installmentPrice: 'Prix avec échéancier',
+    planSurcharge: 'Surcoût de l’échéancier',
+    cashDiscount: 'Remise comptant',
+    noInterest: '0 %',
+    notSpecified: 'Non communiqué',
+    interestNote: '(taux annoncé par le promoteur ; à confirmer dans le contrat et à distinguer d’un taux bancaire)',
+    noInterestNote: '(échelonnement annoncé sans intérêt ; conditions à reconfirmer avant signature)',
+    cashPriceNote: '(prix si règlement comptant selon les conditions du promoteur)',
+    installmentPriceNote: '(prix total applicable lorsque le paiement est échelonné)',
+    verified: 'Conditions vérifiées',
+    request: 'Demander le dossier complet',
+    visit: 'Organiser une visite privée',
+    available: 'Disponible',
+    reserved: 'Réservé',
+    sold: 'Vendu',
+    private: 'Privé',
+    disclaimer: 'Les prix, disponibilités, taux, remises et échéanciers peuvent évoluer. Toute condition financière doit être reconfirmée auprès du promoteur ou du partenaire autorisé avant réservation, signature ou transfert de fonds.',
+  };
+  if (locale === 'ru') return {
+    back,
+    investmentMemo: 'ИНВЕСТИЦИОННАЯ КАРТОЧКА',
+    price: 'Цена',
+    entry: 'Капитал сегодня',
+    location: 'Локация',
+    surface: 'Площадь',
+    bedrooms: 'Спальни',
+    bathrooms: 'Ванные',
+    delivery: 'Сдача',
+    developer: 'Застройщик',
+    reference: 'Референс',
+    overview: 'Об объекте',
+    why: 'Почему Bosphoras выбрал объект',
+    technical: 'Технический анализ',
+    watch: 'На что обратить внимание',
+    financing: 'Условия застройщика',
+    paymentPlan: 'График платежей',
+    interestRate: 'Ставка застройщика',
+    cashPrice: 'Цена при полной оплате',
+    installmentPrice: 'Цена в рассрочку',
+    planSurcharge: 'Удорожание рассрочки',
+    cashDiscount: 'Скидка за полную оплату',
+    noInterest: '0 %',
+    notSpecified: 'Не указано',
+    interestNote: '(ставка, заявленная застройщиком; подтвердить в договоре и не путать с банковской ставкой)',
+    noInterestNote: '(заявленная беспроцентная рассрочка; условия необходимо подтвердить до подписания)',
+    cashPriceNote: '(цена при полной оплате по условиям застройщика)',
+    installmentPriceNote: '(общая цена при использовании рассрочки)',
+    verified: 'Условия проверены',
+    request: 'Получить полный пакет',
+    visit: 'Организовать частный просмотр',
+    available: 'Доступно', reserved: 'Зарезервировано', sold: 'Продано', private: 'Частное',
+    disclaimer: 'Цены, наличие, ставки, скидки и графики платежей могут меняться. Все финансовые условия необходимо повторно подтвердить у застройщика или уполномоченного партнёра до бронирования, подписания или перевода средств.',
+  };
+  if (locale === 'ar') return {
+    back,
+    investmentMemo: 'بطاقة استثمار',
+    price: 'السعر المعلن',
+    entry: 'رأس المال اليوم',
+    location: 'الموقع',
+    surface: 'المساحة',
+    bedrooms: 'غرف النوم',
+    bathrooms: 'الحمامات',
+    delivery: 'التسليم',
+    developer: 'المطور',
+    reference: 'المرجع',
+    overview: 'عن العقار',
+    why: 'لماذا اختاره Bosphoras',
+    technical: 'التحليل الفني',
+    watch: 'نقاط يجب الانتباه لها',
+    financing: 'شروط المطور',
+    paymentPlan: 'خطة الدفع',
+    interestRate: 'معدل المطور',
+    cashPrice: 'السعر النقدي',
+    installmentPrice: 'سعر التقسيط',
+    planSurcharge: 'تكلفة إضافية للتقسيط',
+    cashDiscount: 'خصم الدفع النقدي',
+    noInterest: '0٪',
+    notSpecified: 'غير معلن',
+    interestNote: '(المعدل المعلن من المطور؛ يجب تأكيده في العقد وتمييزه عن الفائدة البنكية)',
+    noInterestNote: '(تقسيط معلن بدون فائدة؛ يجب إعادة تأكيد الشروط قبل التوقيع)',
+    cashPriceNote: '(السعر عند الدفع النقدي وفق شروط المطور)',
+    installmentPriceNote: '(السعر الإجمالي عند استخدام خطة التقسيط)',
+    verified: 'تم التحقق من الشروط',
+    request: 'طلب الملف الكامل',
+    visit: 'تنظيم زيارة خاصة',
+    available: 'متاح', reserved: 'محجوز', sold: 'مباع', private: 'خاص',
+    disclaimer: 'قد تتغير الأسعار والتوافر والمعدلات والخصومات وخطط الدفع. يجب إعادة تأكيد كل الشروط المالية مع المطور أو الشريك المخول قبل الحجز أو التوقيع أو تحويل الأموال.',
+  };
   return {
-    back: 'Property in Turkey',
-    totalPrice: 'Total price',
-    capitalToday: 'Capital today',
-    delivery: 'Delivery',
+    back,
+    investmentMemo: 'INVESTMENT MEMO',
+    price: 'Asking price',
+    entry: 'Capital today',
+    location: 'Location',
     surface: 'Surface',
     bedrooms: 'Bedrooms',
-    payment: 'Payment plan',
+    bathrooms: 'Bathrooms',
+    delivery: 'Delivery',
+    developer: 'Developer',
+    reference: 'Reference',
+    overview: 'Property overview',
     why: 'Why Bosphoras selected it',
-    technical: 'Bosphoras Technical Notes',
+    technical: 'Technical reading',
     watch: 'Points to watch',
-    overview: 'The project',
+    financing: 'Developer terms',
+    paymentPlan: 'Payment schedule',
+    interestRate: 'Developer rate',
+    cashPrice: 'Cash price',
+    installmentPrice: 'Instalment price',
+    planSurcharge: 'Instalment premium',
+    cashDiscount: 'Cash discount',
+    noInterest: '0%',
+    notSpecified: 'Not disclosed',
+    interestNote: '(rate quoted by the developer; confirm it in the contract and distinguish it from bank financing)',
+    noInterestNote: '(interest-free instalments as quoted; terms must be reconfirmed before signing)',
+    cashPriceNote: '(price for cash payment under the developer terms)',
+    installmentPriceNote: '(total price when the instalment plan is used)',
+    verified: 'Terms checked',
     request: 'Request the full file',
     visit: 'Arrange a private viewing',
-    disclaimer:
-      'Prices, availability, payment schedules and specifications may change. They must be reconfirmed with the developer or authorised partner before any decision or transfer of funds.',
+    available: 'Available', reserved: 'Reserved', sold: 'Sold', private: 'Private',
+    disclaimer: 'Prices, availability, rates, discounts and payment schedules may change. All financial terms must be reconfirmed with the developer or authorised partner before reservation, signature or transfer of funds.',
   };
+}
+
+function money(value: number | undefined, currency: string, locale: Locale) {
+  if (value === undefined || value === null || !Number.isFinite(Number(value))) return '—';
+  return new Intl.NumberFormat(locale === 'fr' ? 'fr-FR' : locale === 'ru' ? 'ru-RU' : locale === 'ar' ? 'ar' : 'en-GB', {
+    style: 'currency',
+    currency,
+    maximumFractionDigits: 0,
+  }).format(Number(value));
+}
+
+function localized(value: any, locale: Locale) {
+  return value?.[locale] || value?.fr || value?.en || '';
 }
 
 function cityLabel(property: PropertyListing) {
@@ -111,10 +219,15 @@ function collectionLabel(collection: PropertyListing['collection'], locale: Loca
   return map[collection][locale];
 }
 
-export function PropertyDetailPage({ locale, property }: PropertyDetailPageProps) {
-  const c = labels(locale);
-  const fullPath = getLocalePath(locale, getPropertyPath(locale, property));
-  const hubPath = getLocalePath(locale, propertyHubPaths[locale]);
+function statusLabel(status: PropertyListing['status'], c: any) {
+  return c[status] || status;
+}
+
+export function PropertyDetailPage({ locale, property, globalMode = false }: PropertyDetailPageProps) {
+  const c = labels(locale, globalMode);
+  const hubBase = globalMode ? globalPropertyHubPaths[locale] : propertyHubPaths[locale];
+  const fullPath = getLocalePath(locale, getPropertyPath(locale, property, globalMode));
+  const hubPath = getLocalePath(locale, hubBase);
   const assessmentPath =
     locale === 'fr'
       ? '/diagnostic-prive'
@@ -123,7 +236,36 @@ export function PropertyDetailPage({ locale, property }: PropertyDetailPageProps
       : locale === 'ru'
       ? '/ru/chastnaya-konsultatsiya'
       : '/ar/تقييم-خاص';
-  const capital = formatEntryCapital(property, locale);
+
+  const localizedPaths = Object.fromEntries(
+    (['fr', 'en', 'ru', 'ar'] as const).map((targetLocale) => [
+      targetLocale,
+      getLocalePath(targetLocale, getPropertyPath(targetLocale, property, globalMode)),
+    ])
+  ) as Record<Locale, string>;
+
+  const images = (property.images?.length ? property.images : [property.heroImage].filter(Boolean)) as string[];
+  const paymentPlanVisible = property.paymentPlanEnabled !== false && Boolean(property.paymentPlan?.length);
+  const hasDeveloperTerms =
+    property.paymentPlanEnabled !== false &&
+    (paymentPlanVisible ||
+      property.paymentInterestMode === 'interest_free' ||
+      property.paymentInterestMode === 'interest_bearing' ||
+      property.cashDiscountPct ||
+      property.cashPrice ||
+      property.installmentPrice);
+
+  const installmentPremiumPct =
+    property.cashPrice && property.installmentPrice && property.cashPrice > 0
+      ? ((property.installmentPrice - property.cashPrice) / property.cashPrice) * 100
+      : null;
+
+  const verifiedLabel = property.verifiedAt
+    ? new Intl.DateTimeFormat(locale === 'fr' ? 'fr-FR' : locale === 'ru' ? 'ru-RU' : locale === 'ar' ? 'ar' : 'en-GB', {
+        day: '2-digit', month: 'short', year: 'numeric',
+      }).format(new Date(property.verifiedAt))
+    : null;
+
   const propertySchema = {
     '@context': 'https://schema.org',
     '@type': 'Offer',
@@ -147,167 +289,161 @@ export function PropertyDetailPage({ locale, property }: PropertyDetailPageProps
       },
       ...(property.surfaceM2 ? { floorSize: { '@type': 'QuantitativeValue', value: property.surfaceM2, unitCode: 'MTK' } } : {}),
       ...(property.bedrooms ? { numberOfRooms: property.bedrooms } : {}),
-      ...(property.images.length ? { image: property.images } : {}),
+      ...(images.length ? { image: images } : {}),
     },
     offeredBy: { '@id': `${siteUrl}/#organization` },
   };
 
-  const localizedPaths = Object.fromEntries(
-    (['fr', 'en', 'ru', 'ar'] as const).map((targetLocale) => [
-      targetLocale,
-      getLocalePath(targetLocale, getPropertyPath(targetLocale, property)),
-    ])
-  ) as Record<Locale, string>;
+  const facts = [
+    { icon: MapPin, label: c.location, value: [property.district, cityLabel(property), property.countryName].filter(Boolean).join(', ') },
+    property.surfaceM2 ? { icon: Ruler, label: c.surface, value: `${property.surfaceM2} m²` } : null,
+    property.bedrooms !== undefined ? { icon: BedDouble, label: c.bedrooms, value: String(property.bedrooms) } : null,
+    property.bathrooms !== undefined ? { icon: Bath, label: c.bathrooms, value: String(property.bathrooms) } : null,
+    property.delivery ? { icon: Clock3, label: c.delivery, value: localized(property.delivery, locale) } : null,
+    property.developer ? { icon: Building2, label: c.developer, value: property.developer } : null,
+  ].filter(Boolean);
 
   return (
-    <main dir={localeDir[locale]} className="min-h-screen bg-[#fbf7f0] text-[#121826]">
+    <main dir={localeDir[locale]} className="min-h-screen bg-[#f2f5f4] text-[#12221f] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',sans-serif]">
       <Header locale={locale} currentPath={fullPath} localizedPaths={localizedPaths} />
       <StructuredData data={organizationSchema()} />
       <StructuredData data={propertySchema} />
-      <StructuredData
-        data={breadcrumbSchema([
-          { name: c.back, url: `${siteUrl}${hubPath}` },
-          { name: property.title[locale], url: `${siteUrl}${fullPath}` },
-        ])}
-      />
+      <StructuredData data={breadcrumbSchema([{ name: c.back, url: `${siteUrl}${hubPath}` }, { name: property.title[locale], url: `${siteUrl}${fullPath}` }])} />
 
-      <section className="px-5 pb-10 pt-32 md:px-8 md:pb-14 md:pt-40">
-        <div className="mx-auto max-w-[1500px]">
-          <Link href={hubPath} className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.15em] text-[#8a6728]">
-            <ArrowLeft size={15} /> {c.back}
+      <section className="border-b border-[#d7dfdc] bg-white px-5 pb-8 pt-28 md:px-8 md:pb-10 md:pt-32">
+        <div className="mx-auto max-w-[1540px]">
+          <Link href={hubPath} className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#315d7c]">
+            <ArrowLeft size={14} /> {c.back}
           </Link>
-          <div className="mt-8 grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#8a6728]">
-                {collectionLabel(property.collection, locale)} · {property.countryName} · {cityLabel(property)} · {property.district}
-              </p>
-              <h1 className="mt-4 max-w-5xl font-serif text-5xl leading-[1.02] tracking-[-0.045em] md:text-7xl">
-                {property.title[locale]}
-              </h1>
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-[#58616d]">{property.summary[locale]}</p>
-            </div>
-            <div className="grid gap-px bg-[#d8c7a1] sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
-              <div className="bg-white p-6">
-                <span className="text-[0.65rem] font-bold uppercase tracking-[0.14em] text-[#8a7f70]">{c.totalPrice}</span>
-                <strong className="mt-2 block font-serif text-3xl">{formatPropertyPrice(property, locale)}</strong>
-              </div>
-              {capital && (
-                <div className="bg-[#101827] p-6 text-white">
-                  <span className="text-[0.65rem] font-bold uppercase tracking-[0.14em] text-[#d9b972]">{c.capitalToday}</span>
-                  <strong className="mt-2 block font-serif text-3xl">{capital.replace(/^.*?:\s*/, '')}</strong>
-                </div>
-              )}
-            </div>
+          <div className="mt-6 flex flex-wrap items-center gap-2">
+            <span className="rounded-full bg-[#10231e] px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.1em] text-white">{collectionLabel(property.collection, locale)}</span>
+            <span className="rounded-full border border-[#cbd7d2] bg-[#f7f9f8] px-3 py-1.5 text-[0.65rem] font-semibold uppercase tracking-[0.1em] text-[#2f6d59]">{statusLabel(property.status, c)}</span>
+            <span className="text-xs text-[#72807b]">{c.reference}: {property.id}</span>
           </div>
         </div>
       </section>
 
-      <section className="px-5 md:px-8">
-        <div className="mx-auto max-w-[1500px]">
-          <div className="grid gap-3 md:grid-cols-12">
-            {(property.images.length ? property.images : [property.heroImage].filter(Boolean) as string[]).slice(0, 5).map((image, index) => (
-              <div key={image} className={index === 0 ? 'md:col-span-8 md:row-span-2' : 'md:col-span-4'}>
-                <div className={index === 0 ? 'aspect-[16/10] overflow-hidden bg-[#e6ded2]' : 'aspect-[16/9] overflow-hidden bg-[#e6ded2]'}>
-                  <img src={image} alt={`${property.title[locale]} — ${index + 1}`} className="h-full w-full object-cover" />
-                </div>
+      <section className="bg-[#10231e] px-5 py-8 text-white md:px-8 md:py-12">
+        <div className="mx-auto grid max-w-[1540px] gap-8 lg:grid-cols-[1.28fr_0.72fr] lg:items-stretch">
+          <div className="relative min-h-[420px] overflow-hidden rounded-3xl bg-[#173029] lg:min-h-[650px]">
+            {images[0] ? <img src={images[0]} alt={property.title[locale]} className="absolute inset-0 h-full w-full object-cover" /> : null}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#081512]/85 via-transparent to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+              <p className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-[#d5b886]">{property.countryName} · {cityLabel(property)} · {property.district}</p>
+              <p className="mt-2 max-w-3xl text-sm leading-6 text-[#d8e0dd]">{localized(property.summary, locale)}</p>
+            </div>
+          </div>
+
+          <div className="flex flex-col rounded-3xl border border-white/10 bg-[#0c1b18] p-6 md:p-8">
+            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#c9aa7a]">{c.investmentMemo}</p>
+            <h1 className="mt-4 text-4xl font-semibold leading-[1.02] tracking-[-0.045em] md:text-5xl">{localized(property.title, locale)}</h1>
+
+            <div className="mt-8 grid gap-px overflow-hidden rounded-2xl bg-white/10 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+              <div className="bg-white/[0.04] p-5">
+                <span className="text-[0.65rem] font-semibold uppercase tracking-[0.1em] text-[#96a6a0]">{c.price}</span>
+                <strong className="mt-2 block text-2xl font-semibold text-white">{formatPropertyPrice(property, locale)}</strong>
               </div>
-            ))}
-            {property.images.length === 0 && !property.heroImage && (
-              <div className="flex aspect-[16/8] items-center justify-center bg-[#e6ded2] text-xs font-bold uppercase tracking-[0.25em] text-[#8a7f70] md:col-span-12">
-                Bosphoras Property Desk
+              <div className="bg-[#c9aa7a] p-5 text-[#10231e]">
+                <span className="text-[0.65rem] font-semibold uppercase tracking-[0.1em] text-[#5c4b32]">{c.entry}</span>
+                <strong className="mt-2 block text-2xl font-semibold">{property.entryCapital ? money(property.entryCapital, property.currency, locale) : '—'}</strong>
               </div>
-            )}
+            </div>
+
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {facts.slice(0, 4).map((fact: any) => {
+                const Icon = fact.icon;
+                return <div key={fact.label} className="border-t border-white/10 pt-4"><Icon size={16} className="text-[#c9aa7a]" /><span className="mt-3 block text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-[#96a6a0]">{fact.label}</span><strong className="mt-1 block text-sm font-medium text-white">{fact.value}</strong></div>;
+              })}
+            </div>
+
+            <div className="mt-auto pt-8">
+              <Link href={`${assessmentPath}?subject=property&property=${encodeURIComponent(property.id)}`} className="inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-lg bg-[#c9aa7a] px-5 text-sm font-semibold text-[#10231e]">
+                {c.request}<ArrowRight size={16}/>
+              </Link>
+              <Link href={`${assessmentPath}?subject=private-viewing&property=${encodeURIComponent(property.id)}`} className="mt-3 inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-lg border border-white/20 px-5 text-sm font-semibold text-white">
+                <CalendarDays size={16}/>{c.visit}
+              </Link>
+            </div>
           </div>
         </div>
+
+        {images.length > 1 ? <div className="mx-auto mt-4 grid max-w-[1540px] grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-5">
+          {images.slice(1, 6).map((image, index) => <div key={image} className="aspect-[16/10] overflow-hidden rounded-xl bg-[#173029]"><img src={image} alt={`${property.title[locale]} — ${index + 2}`} className="h-full w-full object-cover" /></div>)}
+        </div> : null}
       </section>
 
-      <section className="px-5 py-16 md:px-8 md:py-24">
-        <div className="mx-auto grid max-w-[1500px] gap-12 lg:grid-cols-[1.12fr_0.88fr] lg:gap-20">
-          <div>
-            <h2 className="font-serif text-4xl tracking-[-0.03em]">{c.overview}</h2>
-            <p className="mt-6 whitespace-pre-line text-base leading-8 text-[#4d5865]">{property.description[locale]}</p>
+      <section className="px-5 py-12 md:px-8 md:py-16">
+        <div className="mx-auto grid max-w-[1540px] gap-8 lg:grid-cols-[1fr_430px]">
+          <div className="space-y-8">
+            <section className="rounded-2xl border border-[#d7dfdc] bg-white p-6 md:p-8">
+              <p className="text-[0.67rem] font-semibold uppercase tracking-[0.14em] text-[#8a6a45]">{c.overview}</p>
+              <div className="mt-5 whitespace-pre-line text-[0.98rem] leading-8 text-[#566761]">{localized(property.description, locale)}</div>
+            </section>
 
-            {property.strengths && property.strengths.length > 0 && (
-              <section className="mt-14 border-t border-[#d8c7a1] pt-10">
-                <h2 className="font-serif text-3xl">{c.why}</h2>
-                <ul className="mt-6 grid gap-4">
-                  {property.strengths.map((item) => (
-                    <li key={item[locale]} className="flex gap-3 text-base leading-7 text-[#4d5865]">
-                      <CheckCircle2 size={18} className="mt-1 shrink-0 text-[#8a6728]" />{item[locale]}
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            )}
+            <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+              {facts.map((fact: any) => {
+                const Icon = fact.icon;
+                return <article key={fact.label} className="rounded-xl border border-[#d7dfdc] bg-white p-5"><Icon size={18} className="text-[#2f6d59]" /><span className="mt-4 block text-[0.63rem] font-semibold uppercase tracking-[0.1em] text-[#7b8985]">{fact.label}</span><strong className="mt-1 block text-base font-semibold text-[#12221f]">{fact.value}</strong></article>;
+              })}
+            </section>
 
-            {property.technicalNotes && property.technicalNotes.length > 0 && (
-              <section className="mt-14 border-t border-[#d8c7a1] pt-10">
-                <h2 className="inline-flex items-center gap-3 font-serif text-3xl"><Wrench size={23} className="text-[#8a6728]" />{c.technical}</h2>
-                <ul className="mt-6 grid gap-4">
-                  {property.technicalNotes.map((item) => (
-                    <li key={item[locale]} className="border-l border-[#c9a45d] pl-5 text-base leading-7 text-[#4d5865]">{item[locale]}</li>
-                  ))}
-                </ul>
-              </section>
-            )}
+            {property.strengths?.length ? <section className="rounded-2xl border border-[#d7dfdc] bg-white p-6 md:p-8">
+              <h2 className="text-2xl font-semibold tracking-[-0.025em]">{c.why}</h2>
+              <div className="mt-6 grid gap-4 md:grid-cols-2">
+                {property.strengths.map((item, index) => <div key={index} className="flex gap-3 rounded-xl bg-[#f5f8f7] p-4"><CheckCircle2 size={18} className="mt-0.5 shrink-0 text-[#2f6d59]" /><p className="text-sm leading-6 text-[#566761]">{localized(item, locale)}</p></div>)}
+              </div>
+            </section> : null}
 
-            {property.watchpoints && property.watchpoints.length > 0 && (
-              <section className="mt-14 border border-[#d5b780] bg-[#fff8e9] p-7">
-                <h2 className="inline-flex items-center gap-3 font-serif text-3xl"><ShieldAlert size={23} className="text-[#8a6728]" />{c.watch}</h2>
-                <ul className="mt-6 grid gap-4">
-                  {property.watchpoints.map((item) => (
-                    <li key={item[locale]} className="text-base leading-7 text-[#4d5865]">{item[locale]}</li>
-                  ))}
-                </ul>
-              </section>
-            )}
+            {property.technicalNotes?.length ? <section className="rounded-2xl border border-[#d7dfdc] bg-[#0f211c] p-6 text-white md:p-8">
+              <div className="flex items-center gap-3"><Wrench size={20} className="text-[#c9aa7a]" /><h2 className="text-2xl font-semibold tracking-[-0.025em]">{c.technical}</h2></div>
+              <div className="mt-6 grid gap-4 md:grid-cols-2">
+                {property.technicalNotes.map((item, index) => <div key={index} className="border-l border-[#c9aa7a]/70 pl-4 text-sm leading-7 text-[#c8d3cf]">{localized(item, locale)}</div>)}
+              </div>
+            </section> : null}
+
+            {property.watchpoints?.length ? <section className="rounded-2xl border border-[#d6c59f] bg-[#fffaf0] p-6 md:p-8">
+              <div className="flex items-center gap-3"><ShieldAlert size={20} className="text-[#9a6a28]" /><h2 className="text-2xl font-semibold tracking-[-0.025em]">{c.watch}</h2></div>
+              <div className="mt-5 space-y-3">
+                {property.watchpoints.map((item, index) => <p key={index} className="text-sm leading-7 text-[#645b4d]">• {localized(item, locale)}</p>)}
+              </div>
+            </section> : null}
           </div>
 
-          <aside className="space-y-6 lg:sticky lg:top-28 lg:self-start">
-            <div className="border border-[#d8c7a1] bg-white p-7">
-              <div className="grid grid-cols-2 gap-6">
-                {property.surfaceM2 && <div><span className="text-xs uppercase tracking-[0.13em] text-[#8a7f70]">{c.surface}</span><strong className="mt-1 block text-xl">{property.surfaceM2} m²</strong></div>}
-                {property.bedrooms !== undefined && <div><span className="text-xs uppercase tracking-[0.13em] text-[#8a7f70]">{c.bedrooms}</span><strong className="mt-1 block text-xl">{property.bedrooms}</strong></div>}
-                {property.delivery && <div><span className="text-xs uppercase tracking-[0.13em] text-[#8a7f70]">{c.delivery}</span><strong className="mt-1 block text-xl">{property.delivery[locale]}</strong></div>}
-                <div><span className="text-xs uppercase tracking-[0.13em] text-[#8a7f70]">Location</span><strong className="mt-1 block text-xl">{property.district}</strong></div>
+          <aside className="space-y-5 lg:sticky lg:top-28 lg:self-start">
+            {hasDeveloperTerms ? <section className="overflow-hidden rounded-2xl border border-[#cbd7d2] bg-white shadow-[0_20px_60px_rgba(25,55,45,.08)]">
+              <div className="bg-[#10231e] p-6 text-white">
+                <div className="flex items-center gap-3"><WalletCards size={20} className="text-[#c9aa7a]" /><h2 className="text-xl font-semibold">{c.financing}</h2></div>
+                {verifiedLabel ? <p className="mt-2 text-xs text-[#9fb0aa]">{c.verified}: {verifiedLabel}</p> : null}
               </div>
-            </div>
 
-            {property.paymentPlanEnabled !== false && property.paymentPlan && property.paymentPlan.length > 0 && (
-              <div className="bg-[#101827] p-7 text-white">
-                <h2 className="inline-flex items-center gap-3 font-serif text-3xl"><WalletCards size={22} className="text-[#d9b972]" />{c.payment}</h2>
-                <div className="mt-4 flex flex-wrap gap-2 text-xs">
-                  {property.paymentInterestMode === 'interest_free' ? <span className="rounded-full bg-white/10 px-3 py-1.5 text-[#d8eadf]">0% interest</span> : null}
-                  {property.paymentInterestMode === 'interest_bearing' && property.paymentInterestRate !== undefined ? <span className="rounded-full bg-white/10 px-3 py-1.5 text-[#f0d7b2]">{property.paymentInterestRate}% interest</span> : null}
-                  {property.cashDiscountPct ? <span className="rounded-full bg-white/10 px-3 py-1.5 text-[#d8eadf]">Cash discount -{property.cashDiscountPct}%</span> : null}
-                </div>
-                <div className="mt-7 space-y-6">
-                  {property.paymentPlan.map((step, index) => (
-                    <div key={`${step.label[locale]}-${index}`} className="border-t border-white/15 pt-5 first:border-t-0 first:pt-0">
-                      <div className="flex items-start justify-between gap-4">
-                        <div>
-                          <p className="font-semibold">{step.label[locale]}</p>
-                          <p className="mt-1 text-sm text-[#b9c0ca]">{step.due[locale]}</p>
-                        </div>
-                        <strong className="font-serif text-2xl text-[#e8d8b5]">
-                          {step.percentage ? `${step.percentage}%` : step.amount ? new Intl.NumberFormat(locale === 'fr' ? 'fr-FR' : 'en-GB', { style: 'currency', currency: property.currency, maximumFractionDigits: 0 }).format(step.amount) : '—'}
-                        </strong>
-                      </div>
-                    </div>
-                  ))}
-                </div>
+              <div className="grid gap-px bg-[#e0e7e4] sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                {property.paymentInterestMode === 'interest_free' ? <FinancialMetric label={c.interestRate} value={c.noInterest} note={c.noInterestNote} accent /> : null}
+                {property.paymentInterestMode === 'interest_bearing' ? <FinancialMetric label={c.interestRate} value={property.paymentInterestRate !== undefined ? `${property.paymentInterestRate}%` : c.notSpecified} note={c.interestNote} accent /> : null}
+                {property.cashPrice ? <FinancialMetric label={c.cashPrice} value={money(property.cashPrice, property.currency, locale)} note={c.cashPriceNote} /> : null}
+                {property.installmentPrice ? <FinancialMetric label={c.installmentPrice} value={money(property.installmentPrice, property.currency, locale)} note={c.installmentPriceNote} /> : null}
+                {installmentPremiumPct !== null && Math.abs(installmentPremiumPct) > 0.001 ? <FinancialMetric label={c.planSurcharge} value={`${installmentPremiumPct.toFixed(1)}%`} note={c.interestNote} /> : null}
+                {property.cashDiscountPct ? <FinancialMetric label={c.cashDiscount} value={`-${property.cashDiscountPct}%`} note={c.cashPriceNote} /> : null}
               </div>
-            )}
 
-            <div className="border border-[#d8c7a1] bg-[#f1e8db] p-7">
-              <p className="text-sm leading-6 text-[#58616d]">{c.disclaimer}</p>
-              <Link href={`${assessmentPath}?subject=property&property=${encodeURIComponent(property.id)}`} className="mt-6 inline-flex w-full min-h-[50px] items-center justify-center gap-3 bg-[#101827] px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-white">
-                {c.request}<ArrowRight size={16} />
-              </Link>
-              <Link href={`${assessmentPath}?subject=private-viewing&property=${encodeURIComponent(property.id)}`} className="mt-3 inline-flex w-full min-h-[50px] items-center justify-center gap-3 border border-[#101827] px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[#101827]">
-                <CalendarDays size={16} />{c.visit}
-              </Link>
-            </div>
+              {localized(property.paymentNotes, locale) ? <div className="border-t border-[#e0e7e4] bg-[#f7f9f8] px-5 py-4 text-sm leading-6 text-[#5f706a]">{localized(property.paymentNotes, locale)}</div> : null}
+
+              {paymentPlanVisible ? <div className="p-6">
+                <div className="flex items-center justify-between gap-4"><h3 className="text-sm font-semibold uppercase tracking-[0.1em] text-[#52635d]">{c.paymentPlan}</h3><BadgePercent size={18} className="text-[#8a6a45]" /></div>
+                <div className="mt-5 space-y-0">
+                  {property.paymentPlan!.map((step, index) => <div key={index} className="relative grid grid-cols-[24px_1fr_auto] gap-3 pb-5 last:pb-0">
+                    <div className="relative"><span className="relative z-10 flex h-6 w-6 items-center justify-center rounded-full bg-[#10231e] text-[0.62rem] font-semibold text-white">{index + 1}</span>{index < property.paymentPlan!.length - 1 ? <span className="absolute left-[11px] top-6 h-full w-px bg-[#d7dfdc]" /> : null}</div>
+                    <div><strong className="block text-sm font-semibold">{localized(step.label, locale)}</strong><span className="mt-1 block text-xs leading-5 text-[#74817d]">{localized(step.due, locale)}</span></div>
+                    <strong className="text-sm font-semibold text-[#2f6d59]">{step.percentage !== undefined ? `${step.percentage}%` : step.amount !== undefined ? money(step.amount, property.currency, locale) : '—'}</strong>
+                  </div>)}
+                </div>
+              </div> : null}
+            </section> : null}
+
+            <section className="rounded-2xl border border-[#d7dfdc] bg-white p-6">
+              <p className="text-xs leading-6 text-[#6d7b76]">{c.disclaimer}</p>
+              <Link href={`${assessmentPath}?subject=property&property=${encodeURIComponent(property.id)}`} className="mt-5 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-lg bg-[#10231e] px-5 text-sm font-semibold text-white">{c.request}<ArrowRight size={15}/></Link>
+              <Link href={`${assessmentPath}?subject=private-viewing&property=${encodeURIComponent(property.id)}`} className="mt-3 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-lg border border-[#10231e] px-5 text-sm font-semibold text-[#10231e]"><CalendarDays size={15}/>{c.visit}</Link>
+            </section>
           </aside>
         </div>
       </section>
@@ -315,4 +451,12 @@ export function PropertyDetailPage({ locale, property }: PropertyDetailPageProps
       <Footer locale={locale} />
     </main>
   );
+}
+
+function FinancialMetric({ label, value, note, accent = false }: { label: string; value: string; note?: string; accent?: boolean }) {
+  return <div className={accent ? 'bg-[#edf5f1] p-5' : 'bg-white p-5'}>
+    <span className="block text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-[#73817c]">{label}</span>
+    <strong className={accent ? 'mt-2 block text-2xl font-semibold text-[#24614d]' : 'mt-2 block text-2xl font-semibold text-[#12221f]'}>{value}</strong>
+    {note ? <span className="mt-2 block text-[0.68rem] leading-5 text-[#7b8783]">{note}</span> : null}
+  </div>;
 }
