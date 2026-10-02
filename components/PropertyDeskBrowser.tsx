@@ -33,6 +33,8 @@ function labels(locale: Locale) {
     allCountries: 'Tous les pays',
     allCities: 'Toutes les villes',
     allCollections: 'Toutes les sélections',
+    currency: 'Devise',
+    allCurrencies: 'Toutes les devises',
     capital: 'Capital disponible aujourd’hui',
     allCapital: 'Tous les budgets',
     price: 'Prix',
@@ -51,6 +53,8 @@ function labels(locale: Locale) {
     allCountries: 'Все страны',
     allCities: 'Все города',
     allCollections: 'Все подборки',
+    currency: 'Валюта',
+    allCurrencies: 'Все валюты',
     capital: 'Капитал сегодня',
     allCapital: 'Любой бюджет',
     price: 'Цена',
@@ -69,6 +73,8 @@ function labels(locale: Locale) {
     allCountries: 'كل الدول',
     allCities: 'كل المدن',
     allCollections: 'كل الفئات',
+    currency: 'العملة',
+    allCurrencies: 'كل العملات',
     capital: 'رأس المال اليوم',
     allCapital: 'كل الميزانيات',
     price: 'السعر',
@@ -87,6 +93,8 @@ function labels(locale: Locale) {
     allCountries: 'All countries',
     allCities: 'All cities',
     allCollections: 'All selections',
+    currency: 'Currency',
+    allCurrencies: 'All currencies',
     capital: 'Capital available today',
     allCapital: 'All budgets',
     price: 'Price',
@@ -116,6 +124,7 @@ export function PropertyDeskBrowser({ locale, properties, globalMode = false }: 
   const [country, setCountry] = useState('');
   const [city, setCity] = useState('');
   const [collection, setCollection] = useState('');
+  const [currency, setCurrency] = useState('');
   const [capital, setCapital] = useState('');
 
   const countries = useMemo(() => {
@@ -131,15 +140,21 @@ export function PropertyDeskBrowser({ locale, properties, globalMode = false }: 
     return Array.from(new Map(list).entries()).sort((a,b)=>a[1].localeCompare(b[1]));
   }, [properties, country]);
 
+  const currencies = useMemo(
+    () => Array.from(new Set(properties.map((property) => property.currency).filter(Boolean))).sort(),
+    [properties]
+  );
+
   const filtered = useMemo(
     () =>
       properties.filter((property) => {
         if (country && (property.countryCode || property.countryName) !== country) return false;
         if (city && property.city !== city) return false;
         if (collection && property.collection !== collection) return false;
-        return inCapitalRange(property, capital);
+        if (currency && property.currency !== currency) return false;
+        return currency ? inCapitalRange(property, capital) : true;
       }),
-    [properties, country, city, collection, capital]
+    [properties, country, city, collection, currency, capital]
   );
 
   return (
@@ -157,7 +172,7 @@ export function PropertyDeskBrowser({ locale, properties, globalMode = false }: 
           <div className="mb-3 flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-[#65756f]">
             <SlidersHorizontal size={14}/> {copy.filters}
           </div>
-          <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-5">
             <label className="grid gap-2 text-xs font-semibold text-[#53625e]">
               <span className="inline-flex items-center gap-2"><Globe2 size={14}/>{copy.allCountries}</span>
               <select value={country} onChange={(e)=>{setCountry(e.target.value);setCity('');}} className="min-h-[46px] rounded-lg border border-[#d7dfdc] bg-white px-3 text-sm font-normal text-[#12221f]">
@@ -180,13 +195,20 @@ export function PropertyDeskBrowser({ locale, properties, globalMode = false }: 
               </select>
             </label>
             <label className="grid gap-2 text-xs font-semibold text-[#53625e]">
+              <span className="inline-flex items-center gap-2"><WalletCards size={14}/>{copy.currency}</span>
+              <select value={currency} onChange={(e)=>{setCurrency(e.target.value);setCapital('');}} className="min-h-[46px] rounded-lg border border-[#d7dfdc] bg-white px-3 text-sm font-normal text-[#12221f]">
+                <option value="">{copy.allCurrencies}</option>
+                {currencies.map((item)=><option key={item} value={item}>{item}</option>)}
+              </select>
+            </label>
+            <label className="grid gap-2 text-xs font-semibold text-[#53625e]">
               <span className="inline-flex items-center gap-2"><WalletCards size={14}/>{copy.capital}</span>
-              <select value={capital} onChange={(e)=>setCapital(e.target.value)} className="min-h-[46px] rounded-lg border border-[#d7dfdc] bg-white px-3 text-sm font-normal text-[#12221f]">
+              <select disabled={!currency} value={capital} onChange={(e)=>setCapital(e.target.value)} className="min-h-[46px] rounded-lg border border-[#d7dfdc] bg-white px-3 text-sm font-normal text-[#12221f] disabled:bg-[#f3f5f4] disabled:text-[#9aa6a2]">
                 <option value="">{copy.allCapital}</option>
-                <option value="under50">€25k–€50k</option>
-                <option value="50-100">€50k–€100k</option>
-                <option value="100-250">€100k–€250k</option>
-                <option value="250plus">€250k+</option>
+                <option value="under50">25k–50k {currency}</option>
+                <option value="50-100">50k–100k {currency}</option>
+                <option value="100-250">100k–250k {currency}</option>
+                <option value="250plus">250k+ {currency}</option>
               </select>
             </label>
           </div>
