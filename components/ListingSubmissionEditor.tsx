@@ -323,7 +323,7 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
           <label className={label}>Transaction<select value={core.transaction} onChange={(e)=>setCore({...core,transaction:e.target.value})} className={input}><option value="sale">Vente</option><option value="rent">Location</option></select></label>
           <label className={label}>Référence<input value={core.externalId} onChange={(e)=>setCore({...core,externalId:e.target.value})} className={input}/></label>
           <label className={label}>Promoteur<input value={core.developer} onChange={(e)=>setCore({...core,developer:e.target.value})} className={input}/></label>
-          <label className={label}>Devise<select value={core.currency} onChange={(e)=>setCore({...core,currency:e.target.value})} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option></select></label>
+          <label className={label}>Devise<select value={core.currency} onChange={(e)=>setCore({...core,currency:e.target.value})} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option></select></label>
           <label className={label}>Prix total<input value={core.totalPrice} onChange={(e)=>setCore({...core,totalPrice:e.target.value})} className={input}/></label>
           <label className={label}>Capital aujourd'hui<input value={core.entryCapital} onChange={(e)=>setCore({...core,entryCapital:e.target.value})} className={input}/></label>
           <label className={label}>Surface m²<input value={core.surfaceM2} onChange={(e)=>setCore({...core,surfaceM2:e.target.value})} className={input}/></label>
