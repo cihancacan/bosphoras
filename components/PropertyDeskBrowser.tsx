@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
+import type { ReactNode } from 'react';
 import { ArrowRight, Building2, Globe2, MapPin, SlidersHorizontal, WalletCards } from 'lucide-react';
 import type { Locale } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
@@ -299,7 +300,7 @@ export function PropertyDeskBrowser({ locale, properties, globalMode = false }: 
   );
 }
 
-function Filter({ label, icon, children }: { label: string; icon: React.ReactNode; children: React.ReactNode }) {
+function Filter({ label, icon, children }: { label: string; icon: ReactNode; children: ReactNode }) {
   return (
     <label className="grid gap-2 text-xs font-semibold text-[#555a61]">
       <span className="inline-flex items-center gap-2">{icon}{label}</span>
