@@ -221,7 +221,7 @@ export async function POST(request: NextRequest) {
     'developer, price, currency, surfaceM2, bedrooms, bathrooms, delivery, entryCapital and paymentPlan must only be filled when explicitly supported by the source.',
     'paymentPlan must be an array of {label:{fr,en,ru,ar}, percentage:number|null, amount:number|null, due:{fr,en,ru,ar}}. Do not infer missing installments.',
     'If a numeric fact is present in rawText even when structured data missed it, extract it. Keep numeric fields as plain numbers without separators or currency symbols.',
-    'Currency must be one of EUR, USD, TRY, GBP, CHF or empty. Convert Turkish lira symbols/TRY/TL into TRY; do not convert monetary values between currencies.',
+    'Currency must be one of EUR, USD, TRY, GBP, CHF, AED or empty. Convert Turkish lira symbols/TRY/TL into TRY; do not convert monetary values between currencies.',
   ].join('\n');
 
   let translated: any = null;
