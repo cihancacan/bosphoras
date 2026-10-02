@@ -34,13 +34,13 @@ export function PortalLogin() {
   }
 
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#07141f] px-5 py-12 text-white">
+    <main className="flex min-h-screen items-center justify-center bg-[#171a1f] px-5 py-12 text-white">
       <section className="w-full max-w-[460px]">
         <div className="mb-8 text-center">
-          <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/[0.04] text-[#c5a36b]">
+          <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/[0.04] text-[#b28b5a]">
             <KeyRound size={19} strokeWidth={1.6} />
           </div>
-          <p className="mt-6 text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-[#c5a36b]">BOSPHORAS PARTNER DESK</p>
+          <p className="mt-6 text-[0.72rem] font-semibold uppercase tracking-[0.28em] text-[#b28b5a]">BOSPHORAS PARTNER DESK</p>
           <h1 className="mt-3 text-3xl font-semibold tracking-[-0.03em] text-white">Connexion</h1>
         </div>
 
@@ -53,7 +53,7 @@ export function PortalLogin() {
               onChange={(event) => setEmail(event.target.value)}
               required
               autoComplete="username"
-              className="min-h-[49px] rounded-lg border border-white/10 bg-[#0b1c2a] px-4 text-sm text-white outline-none transition focus:border-[#c5a36b]"
+              className="min-h-[49px] rounded-lg border border-white/10 bg-[#22262c] px-4 text-sm text-white outline-none transition focus:border-[#b28b5a]"
             />
           </label>
 
@@ -65,14 +65,14 @@ export function PortalLogin() {
               onChange={(event) => setPassword(event.target.value)}
               required
               autoComplete="current-password"
-              className="min-h-[49px] rounded-lg border border-white/10 bg-[#0b1c2a] px-4 text-sm text-white outline-none transition focus:border-[#c5a36b]"
+              className="min-h-[49px] rounded-lg border border-white/10 bg-[#22262c] px-4 text-sm text-white outline-none transition focus:border-[#b28b5a]"
             />
           </label>
 
           <button
             type="submit"
             disabled={busy}
-            className="mt-7 inline-flex min-h-[50px] w-full items-center justify-center gap-3 rounded-lg bg-[#c5a36b] px-5 text-sm font-semibold text-[#07141f] transition hover:bg-[#d3b47c] disabled:opacity-50"
+            className="mt-7 inline-flex min-h-[50px] w-full items-center justify-center gap-3 rounded-lg bg-[#b28b5a] px-5 text-sm font-semibold text-[#171a1f] transition hover:bg-[#c39b68] disabled:opacity-50"
           >
             {busy ? 'Connexion…' : 'Se connecter'} <ArrowRight size={16} />
           </button>
