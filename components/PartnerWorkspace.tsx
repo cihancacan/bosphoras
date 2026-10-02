@@ -236,7 +236,7 @@ export function PartnerWorkspace() {
             />
           )}
           {tab==='import' && isAdmin && <Section title="Importer une opportunité" kicker="Source partenaire → Bosphoras"><AdminPropertyImporter user={user} reload={loadAll}/></Section>}
-          {tab==='crm' && <CrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} partnerUsers={partnerUsers} reload={loadAll}/>}
+          {tab==='crm' && <CrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} listings={listings} partnerUsers={partnerUsers} reload={loadAll}/>}
           {tab==='operations' && <Section title="Opérations immobilières" kicker="Visites · documents · commissions"><ProfessionalOperationsPanel
             user={user}
             profile={profile}
@@ -365,11 +365,12 @@ function ListingsPanel({isAdmin,user,profile,listings,submissions,showNew,setSho
   </Section>;
 }
 
-function CrmPanel({isAdmin,user,profile,contacts,deals,partnerUsers,reload}:any) {
+function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,reload}:any) {
   const supabase=getPortalSupabase();
   const [show,setShow]=useState(false);
   const [dealContact,setDealContact]=useState<string>('');
   const [activityContact,setActivityContact]=useState<string>('');
+  const [matchContact,setMatchContact]=useState<any>(null);
   const [activities,setActivities]=useState<any[]>([]);
 
   async function loadActivities(){
@@ -394,6 +395,10 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,partnerUsers,reload}:any)
       budget_max:Number(fd.get('budget_max')||0)||null,
       capital_available:Number(fd.get('capital_available')||0)||null,
       currency:String(fd.get('currency')||'EUR'),
+      target_cities:String(fd.get('target_city')||'').trim()?[String(fd.get('target_city'))]:[],
+      target_types:String(fd.get('target_type')||'').trim()?[String(fd.get('target_type'))]:[],
+      investment_goal:String(fd.get('investment_goal')||'').trim()||null,
+      timeframe:String(fd.get('timeframe')||'').trim()||null,
       next_action_at:String(fd.get('next_action_at')||'')?new Date(String(fd.get('next_action_at'))).toISOString():null,
       notes:String(fd.get('notes')||''),
       created_by:user.id,
@@ -493,8 +498,12 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,partnerUsers,reload}:any)
       <input name="budget_max" placeholder="Budget max" inputMode="decimal" className="border border-[#d9e1e8] px-3 py-3"/>
       <input name="capital_available" placeholder="Capital disponible aujourd'hui" inputMode="decimal" className="border border-[#d9e1e8] px-3 py-3"/>
       <select name="currency" className="border border-[#d9e1e8] px-3 py-3"><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option></select>
+      <select name="target_city" className="border border-[#d9e1e8] px-3 py-3"><option value="">Ville cible</option><option value="istanbul">Istanbul</option><option value="bodrum">Bodrum</option><option value="antalya">Antalya</option></select>
+      <select name="target_type" className="border border-[#d9e1e8] px-3 py-3"><option value="">Type cible</option><option value="apartment">Appartement</option><option value="residence">Résidence</option><option value="villa">Villa</option><option value="penthouse">Penthouse</option><option value="commercial">Commercial</option></select>
+      <select name="investment_goal" className="border border-[#d9e1e8] px-3 py-3"><option value="">Objectif</option><option value="rental">Rendement locatif</option><option value="capital_growth">Valorisation</option><option value="residence">Résidence personnelle</option><option value="family">Usage familial</option><option value="diversification">Diversification</option></select>
+      <input name="timeframe" placeholder="Horizon / délai (ex. 3 mois)" className="border border-[#d9e1e8] px-3 py-3"/>
       <input name="next_action_at" type="datetime-local" className="border border-[#d9e1e8] px-3 py-3"/>
-      <textarea name="notes" placeholder="Objectif, ville, usage, préférences…" className="border border-[#d9e1e8] px-3 py-3 md:col-span-2"/>
+      <textarea name="notes" placeholder="Contexte, critères, contraintes, préférences…" className="border border-[#d9e1e8] px-3 py-3 md:col-span-2"/>
       <button className="bg-[#12304a] px-4 py-3 text-xs font-semibold uppercase text-white">Créer le contact</button>
     </form>}
 
@@ -513,6 +522,7 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,partnerUsers,reload}:any)
               <div className="flex flex-wrap gap-2">
                 <button onClick={()=>setDealContact(contact.id)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold">Créer deal</button>
                 <button onClick={()=>setActivityContact(contact.id)} className="border border-[#315d7c] px-3 py-2 text-xs font-semibold text-[#315d7c]">Ajouter relance</button>
+                <button onClick={()=>setMatchContact(contact)} className="border border-[#4d718a] bg-[#eef4f8] px-3 py-2 text-xs font-semibold text-[#315d7c]">Matcher les biens</button>
               </div>
             </div>
             <div className="mt-3 grid gap-2 sm:grid-cols-2">
@@ -549,6 +559,43 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,partnerUsers,reload}:any)
         </div>
       </div>
     </div>
+
+    {matchContact ? <section className="mt-6 border border-[#d9e1e8] bg-white p-5">
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <span className="text-[0.66rem] font-semibold uppercase tracking-[0.1em] text-[#315d7c]">Matching client ↔ propriété</span>
+          <h2 className="mt-1 text-2xl font-semibold tracking-[-0.02em]">{[matchContact.first_name,matchContact.last_name].filter(Boolean).join(' ')||matchContact.email||'Client'}</h2>
+          <p className="mt-2 text-sm text-[#687685]">Classement interne basé sur ville, type de bien, budget total et capital disponible aujourd'hui. Ce score aide à prioriser ; il ne remplace pas votre analyse.</p>
+        </div>
+        <button onClick={()=>setMatchContact(null)} className="text-sm font-semibold text-[#687685]">Fermer</button>
+      </div>
+      <div className="mt-5 grid gap-3 lg:grid-cols-3">
+        {listings
+          .map((listing:any)=>{
+            let score=0;
+            const reasons:string[]=[];
+            const targetCities=Array.isArray(matchContact.target_cities)?matchContact.target_cities:[];
+            const targetTypes=Array.isArray(matchContact.target_types)?matchContact.target_types:[];
+            if(!targetCities.length||targetCities.includes(listing.city)){score+=30;reasons.push('ville compatible');}
+            if(!targetTypes.length||targetTypes.includes(listing.property_type)){score+=20;reasons.push('type compatible');}
+            const budget=Number(matchContact.budget_max||0);
+            const price=Number(listing.total_price||0);
+            if(!budget||!price||price<=budget){score+=25;reasons.push('budget compatible');}
+            const capital=Number(matchContact.capital_available||0);
+            const entry=Number(listing.entry_capital||listing.total_price||0);
+            if(!capital||!entry||entry<=capital){score+=25;reasons.push('capital initial compatible');}
+            return {listing,score,reasons};
+          })
+          .filter((x:any)=>x.score>=50)
+          .sort((a:any,b:any)=>b.score-a.score)
+          .slice(0,6)
+          .map(({listing,score,reasons}:any)=><article key={listing.id} className="border border-[#e1e7ed] bg-[#f8fafb] p-4">
+            <div className="flex items-start justify-between gap-3"><div><span className="text-[0.65rem] font-semibold uppercase tracking-[0.08em] text-[#315d7c]">{listing.city} · {listing.district}</span><h3 className="mt-1 font-semibold text-[#162334]">{listing.title?.fr||listing.external_id}</h3></div><strong className="text-lg text-[#315d7c]">{score}%</strong></div>
+            <p className="mt-3 text-sm text-[#687685]">{money(listing.total_price,listing.currency)} · entrée {money(listing.entry_capital||listing.total_price,listing.currency)}</p>
+            <p className="mt-2 text-xs leading-5 text-[#7b8794]">({reasons.join(' · ')})</p>
+          </article>)}
+      </div>
+    </section> : null}
 
     <section className="mt-6 border border-[#d9e1e8] bg-white p-5">
       <div className="flex flex-wrap items-center justify-between gap-3"><div><h2 className="text-2xl font-semibold tracking-[-0.02em]">Relances & activités</h2><p className="mt-1 text-sm text-[#687685]">Appels, WhatsApp, e-mails, réunions, tâches et notes liés au dossier.</p></div><span className="text-xs font-semibold text-[#315d7c]">{openActivities.length} ouverte(s)</span></div>
