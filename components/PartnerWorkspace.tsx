@@ -5,7 +5,7 @@ import { FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import {
   Bell, Building2, Calculator, CheckCircle2, ChevronRight, CircleDollarSign, ClipboardCheck,
   Contact, KeyRound, LayoutDashboard, Link2, LogOut, MessageCircle, Plus, RefreshCw, Send,
-  ShieldCheck, UserRound, Users, XCircle,
+  ShieldCheck, Trash2, UserRound, Users, XCircle,
 } from 'lucide-react';
 import { createIsolatedPortalSupabase, getPortalSupabase } from '@/lib/portalSupabase';
 import { InvestmentCalculator } from '@/components/InvestmentCalculator';
@@ -47,7 +47,6 @@ export function PartnerWorkspace() {
   const isAdmin = profile?.role === 'admin';
 
   const loadAll = useCallback(async () => {
-    setLoading(true);
     const { data: authData } = await supabase.auth.getUser();
     if (!authData.user) {
       window.location.href = '/connexion';
@@ -120,12 +119,67 @@ export function PartnerWorkspace() {
     return () => { supabase.removeChannel(channel); };
   }, [selectedThread, supabase]);
 
+  useEffect(() => {
+    if (!user?.id) return;
+    const channel = supabase
+      .channel(`portal-alerts-${user.id}`)
+      .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'notifications', filter: `user_id=eq.${user.id}` }, (payload) => {
+        setNotifications((current) => [payload.new, ...current.filter((item) => item.id !== payload.new.id)]);
+      })
+      .on('postgres_changes', { event: '*', schema: 'public', table: 'property_listing_submissions' }, () => {
+        if (profile?.role === 'admin') loadAll();
+      })
+      .subscribe();
+    return () => { supabase.removeChannel(channel); };
+  }, [user?.id, profile?.role, supabase, loadAll]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const params = new URLSearchParams(window.location.search);
+    const requestedTab = params.get('tab') as Tab | null;
+    const requestedThread = params.get('thread');
+    if (requestedTab && ['dashboard','listings','import','crm','operations','chat','calculators','partners','approvals','account'].includes(requestedTab)) {
+      setTab(requestedTab);
+    }
+    if (requestedThread) setSelectedThread(requestedThread);
+  }, []);
+
+  async function openTab(next: Tab) {
+    setTab(next);
+    if (!user?.id) return;
+
+    const types =
+      next === 'chat'
+        ? ['chat_message']
+        : next === 'approvals'
+        ? ['listing_submission']
+        : next === 'listings'
+        ? ['listing_review']
+        : [];
+
+    if (!types.length) return;
+
+    const readAt = new Date().toISOString();
+    await supabase
+      .from('notifications')
+      .update({ read_at: readAt })
+      .eq('user_id', user.id)
+      .is('read_at', null)
+      .in('notification_type', types);
+
+    setNotifications((current) =>
+      current.map((item) => (types.includes(item.notification_type) ? { ...item, read_at: item.read_at || readAt } : item))
+    );
+  }
+
   async function logout() {
     await supabase.auth.signOut();
     window.location.href = '/connexion';
   }
 
   const unread = notifications.filter(n => !n.read_at).length;
+  const chatUnread = notifications.filter(n => !n.read_at && n.notification_type === 'chat_message').length;
+  const listingReviewUnread = notifications.filter(n => !n.read_at && n.notification_type === 'listing_review').length;
   const pendingApprovals = submissions.filter(s => s.status === 'submitted').length;
   const activeDeals = deals.filter(d => !['closed_won','closed_lost'].includes(d.stage)).length;
   const pipeline = deals
@@ -179,7 +233,7 @@ export function PartnerWorkspace() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <button onClick={()=>setTab('dashboard')} className="relative p-2 text-[#b9d0e0]"><Bell size={18}/>{unread>0&&<span className="absolute right-0 top-0 h-4 min-w-4 rounded-full bg-[#c76055] px-1 text-[0.6rem] leading-4 text-white">{unread}</span>}</button>
+            <button onClick={()=>openTab('dashboard')} className="relative p-2 text-[#b9d0e0]"><Bell size={18}/>{unread>0&&<span className="absolute right-0 top-0 h-4 min-w-4 rounded-full bg-[#c76055] px-1 text-[0.6rem] leading-4 text-white">{unread}</span>}</button>
             <div className="hidden text-right text-xs md:block"><strong className="block text-white">{profile.full_name || profile.email}</strong><span className="text-[#9eb0bf]">{profile.role}</span></div>
             <button onClick={logout} className="p-2 text-[#9eb0bf] hover:text-white" aria-label="Se déconnecter"><LogOut size={18}/></button>
           </div>
@@ -190,11 +244,13 @@ export function PartnerWorkspace() {
         <aside className="border-r border-[#d9e1e8] bg-white p-4 lg:min-h-[calc(100vh-65px)]">
           <nav className="grid gap-1">
             {nav.map(([value,label,Icon])=>(
-              <button key={value} onClick={()=>setTab(value)} className={`flex items-center justify-between gap-3 px-4 py-3 text-left text-sm transition ${
+              <button key={value} onClick={()=>openTab(value)} className={`flex items-center justify-between gap-3 px-4 py-3 text-left text-sm transition ${
                 tab===value?'bg-[#12304a] text-white':'text-[#526272] hover:bg-[#f3f6f8]'
               }`}>
                 <span className="flex items-center gap-3"><Icon size={17}/>{label}</span>
-                {value==='approvals'&&pendingApprovals>0&&<span className="rounded-full bg-[#d8e6ef] px-2 py-0.5 text-[0.65rem] font-bold text-[#12304a]">{pendingApprovals}</span>}
+                {value==='chat'&&chatUnread>0&&<span className="rounded-full bg-[#c76055] px-2 py-0.5 text-[0.65rem] font-bold text-white">{chatUnread}</span>}
+                {value==='listings'&&listingReviewUnread>0&&<span className="rounded-full bg-[#d8e6ef] px-2 py-0.5 text-[0.65rem] font-bold text-[#12304a]">{listingReviewUnread}</span>}
+                {value==='approvals'&&pendingApprovals>0&&<span className="rounded-full bg-[#c76055] px-2 py-0.5 text-[0.65rem] font-bold text-white">{pendingApprovals}</span>}
               </button>
             ))}
           </nav>
@@ -247,7 +303,7 @@ export function PartnerWorkspace() {
             partners={partners}
             partnerUsers={partnerUsers}
           /></Section>}
-          {tab==='chat' && <ChatPanel isAdmin={isAdmin} user={user} threads={threads} partnerUsers={partnerUsers} selectedThread={selectedThread} setSelectedThread={setSelectedThread} messages={messages}/>}
+          {tab==='chat' && <ChatPanel isAdmin={isAdmin} user={user} threads={threads} partnerUsers={partnerUsers} selectedThread={selectedThread} setSelectedThread={setSelectedThread} messages={messages} notifications={notifications}/>}
           {tab==='calculators' && <Section title="Calculateurs investissement" kicker="Bosphoras Analysis"><InvestmentCalculator
             userId={user?.id}
             partnerId={profile?.partner_id}
@@ -373,6 +429,8 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
   const [activityContact,setActivityContact]=useState<string>('');
   const [matchContact,setMatchContact]=useState<any>(null);
   const [activities,setActivities]=useState<any[]>([]);
+  const [contactBusy,setContactBusy]=useState(false);
+  const [contactNotice,setContactNotice]=useState<{type:'success'|'error';text:string}|null>(null);
 
   async function loadActivities(){
     const {data}=await supabase.from('crm_activities').select('*').order('created_at',{ascending:false}).limit(100);
@@ -382,15 +440,39 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
 
   async function createContact(e:FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const fd=new FormData(e.currentTarget);
+    if(contactBusy) return;
+
+    const form=e.currentTarget;
+    const fd=new FormData(form);
+    const email=String(fd.get('email')||'').trim().toLowerCase();
+    const phone=String(fd.get('phone')||'').trim();
+    const normalizedPhone=phone.replace(/\D+/g,'');
+    const duplicate=contacts.find((contact:any)=>{
+      const sameEmail=email && String(contact.email||'').trim().toLowerCase()===email;
+      const existingPhone=String(contact.phone||'').replace(/\D+/g,'');
+      const samePhone=normalizedPhone.length>=7 && existingPhone===normalizedPhone;
+      return sameEmail||samePhone;
+    });
+
+    if(duplicate){
+      setContactNotice({
+        type:'error',
+        text:`Ce contact existe déjà dans le CRM : ${[duplicate.first_name,duplicate.last_name].filter(Boolean).join(' ')||duplicate.email||duplicate.phone}.`
+      });
+      return;
+    }
+
+    setContactBusy(true);
+    setContactNotice(null);
+
     const row:any={
       owner_user_id:user.id,
       partner_id:isAdmin?null:profile.partner_id,
-      first_name:String(fd.get('first_name')||''),
-      last_name:String(fd.get('last_name')||''),
-      email:String(fd.get('email')||''),
-      phone:String(fd.get('phone')||''),
-      source:String(fd.get('source')||'partner'),
+      first_name:String(fd.get('first_name')||'').trim(),
+      last_name:String(fd.get('last_name')||'').trim(),
+      email:email||null,
+      phone:phone||null,
+      source:String(fd.get('source')||'partner').trim()||'partner',
       status:'new',
       budget_min:Number(fd.get('budget_min')||0)||null,
       budget_max:Number(fd.get('budget_max')||0)||null,
@@ -401,11 +483,48 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
       investment_goal:String(fd.get('investment_goal')||'').trim()||null,
       timeframe:String(fd.get('timeframe')||'').trim()||null,
       next_action_at:String(fd.get('next_action_at')||'')?new Date(String(fd.get('next_action_at'))).toISOString():null,
-      notes:String(fd.get('notes')||''),
+      notes:String(fd.get('notes')||'').trim()||null,
       created_by:user.id,
     };
-    const {error}=await supabase.from('crm_contacts').insert(row);
-    if(error) alert(error.message); else {e.currentTarget.reset();setShow(false);reload();}
+
+    try{
+      const {data,error}=await supabase.from('crm_contacts').insert(row).select('*').single();
+      if(error) throw error;
+      await reload();
+      form.reset();
+      setShow(false);
+      setContactNotice({
+        type:'success',
+        text:`Contact enregistré : ${[data?.first_name,data?.last_name].filter(Boolean).join(' ')||data?.email||data?.phone||'nouveau contact'}.`
+      });
+      window.setTimeout(()=>setContactNotice(null),5000);
+    }catch(error:any){
+      const raw=String(error?.message||'');
+      const duplicateMessage=raw.includes('DUPLICATE_CRM_EMAIL')
+        ? 'Impossible d’enregistrer : cette adresse e-mail existe déjà dans le CRM.'
+        : raw.includes('DUPLICATE_CRM_PHONE')
+        ? 'Impossible d’enregistrer : ce numéro de téléphone existe déjà dans le CRM.'
+        : null;
+      setContactNotice({type:'error',text:duplicateMessage||raw||'Enregistrement impossible.'});
+    }finally{
+      setContactBusy(false);
+    }
+  }
+
+  async function deleteContact(contact:any){
+    if(!isAdmin) return;
+    const name=[contact.first_name,contact.last_name].filter(Boolean).join(' ')||contact.email||contact.phone||'ce contact';
+    const confirmed=window.confirm(`Supprimer définitivement ${name} ? Les deals, activités, visites et scénarios liés seront également supprimés.`);
+    if(!confirmed) return;
+
+    const {error}=await supabase.from('crm_contacts').delete().eq('id',contact.id);
+    if(error){
+      setContactNotice({type:'error',text:error.message});
+      return;
+    }
+    await reload();
+    setContactNotice({type:'success',text:`${name} a été supprimé du CRM.`});
+    window.setTimeout(()=>setContactNotice(null),5000);
   }
 
   async function assign(contactId:string,owner:string) {
@@ -483,6 +602,7 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
   const overdue=openActivities.filter((x:any)=>x.due_at&&new Date(x.due_at)<new Date()).length;
 
   return <Section title="CRM investissement" kicker="Contacts · pipeline · relances" action={<button onClick={()=>setShow(!show)} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-xs font-semibold uppercase tracking-[0.1em] text-white"><Plus size={15}/>Nouveau contact</button>}>
+    {contactNotice?<div className={`mb-5 flex items-center justify-between border px-4 py-3 text-sm shadow-sm ${contactNotice.type==='success'?'border-[#a8c8b8] bg-[#f1faf5] text-[#245943]':'border-[#e0b5b5] bg-[#fff6f6] text-[#8b4040]'}`}><span>{contactNotice.text}</span><button type="button" onClick={()=>setContactNotice(null)} className="ml-4 text-lg leading-none">×</button></div>:null}
     <div className="mb-6 grid gap-px bg-[#d9e1e8] sm:grid-cols-3">
       <div className="bg-white p-5"><span className="text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#687685]">Contacts visibles</span><strong className="mt-2 block text-2xl font-semibold">{contacts.length}</strong></div>
       <div className="bg-white p-5"><span className="text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#687685]">Relances ouvertes</span><strong className="mt-2 block text-2xl font-semibold">{openActivities.length}</strong></div>
@@ -505,7 +625,7 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
       <input name="timeframe" placeholder="Horizon / délai (ex. 3 mois)" className="border border-[#d9e1e8] px-3 py-3"/>
       <input name="next_action_at" type="datetime-local" className="border border-[#d9e1e8] px-3 py-3"/>
       <textarea name="notes" placeholder="Contexte, critères, contraintes, préférences…" className="border border-[#d9e1e8] px-3 py-3 md:col-span-2"/>
-      <button className="bg-[#12304a] px-4 py-3 text-xs font-semibold uppercase text-white">Créer le contact</button>
+      <button disabled={contactBusy} className="bg-[#12304a] px-4 py-3 text-xs font-semibold uppercase text-white disabled:cursor-wait disabled:opacity-60">{contactBusy?'Enregistrement…':'Créer le contact'}</button>
     </form>}
 
     <div className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
@@ -524,6 +644,7 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
                 <button onClick={()=>setDealContact(contact.id)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold">Créer deal</button>
                 <button onClick={()=>setActivityContact(contact.id)} className="border border-[#315d7c] px-3 py-2 text-xs font-semibold text-[#315d7c]">Ajouter relance</button>
                 <button onClick={()=>setMatchContact(contact)} className="border border-[#4d718a] bg-[#eef4f8] px-3 py-2 text-xs font-semibold text-[#315d7c]">Matcher les biens</button>
+                {isAdmin?<button onClick={()=>deleteContact(contact)} className="inline-flex items-center gap-1.5 border border-[#b96363] px-3 py-2 text-xs font-semibold text-[#9b4444]"><Trash2 size={13}/>Supprimer</button>:null}
               </div>
             </div>
             <div className="mt-3 grid gap-2 sm:grid-cols-2">
@@ -621,14 +742,14 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
   </Section>;
 }
 
-function ChatPanel({isAdmin,user,threads,partnerUsers,selectedThread,setSelectedThread,messages}:any) {
+function ChatPanel({isAdmin,user,threads,partnerUsers,selectedThread,setSelectedThread,messages,notifications}:any) {
   const supabase=getPortalSupabase();
   const [body,setBody]=useState('');
   async function send(e:FormEvent) {e.preventDefault(); if(!selectedThread||!body.trim())return; const {error}=await supabase.from('chat_messages').insert({thread_id:selectedThread,sender_user_id:user.id,body:body.trim()}); if(error)alert(error.message);else setBody('');}
   const profileMap=Object.fromEntries(partnerUsers.map((p:any)=>[p.user_id,p]));
   return <Section title="Chat interne" kicker="Bosphoras Partner Support">
     <div className="grid min-h-[620px] overflow-hidden border border-[#d9e1e8] bg-white lg:grid-cols-[300px_1fr]">
-      <aside className="border-b border-[#d9e1e8] lg:border-b-0 lg:border-r"><div className="p-4 text-xs font-bold uppercase tracking-[0.14em] text-[#687685]">{isAdmin?'Partenaires':'Votre fil Bosphoras'}</div>{threads.map((t:any)=><button key={t.id} onClick={()=>setSelectedThread(t.id)} className={`w-full border-t border-[#e7edf2] p-4 text-left ${selectedThread===t.id?'bg-[#f2eadf]':''}`}><strong className="block text-sm">{isAdmin?(profileMap[t.partner_user_id]?.full_name||profileMap[t.partner_user_id]?.email||'Partenaire'):t.subject}</strong><span className="mt-1 block text-xs text-[#7b8490]">{t.last_message_at?new Date(t.last_message_at).toLocaleString('fr-FR'):'Aucun message'}</span></button>)}</aside>
+      <aside className="border-b border-[#d9e1e8] lg:border-b-0 lg:border-r"><div className="p-4 text-xs font-bold uppercase tracking-[0.14em] text-[#687685]">{isAdmin?'Partenaires':'Votre fil Bosphoras'}</div>{threads.map((t:any)=>{const unreadForThread=(notifications||[]).filter((n:any)=>!n.read_at&&n.notification_type==='chat_message'&&String(n.href||'').includes(t.id)).length;return <button key={t.id} onClick={()=>setSelectedThread(t.id)} className={`w-full border-t border-[#e7edf2] p-4 text-left ${selectedThread===t.id?'bg-[#edf3f7]':''}`}><div className="flex items-start justify-between gap-3"><div><strong className="block text-sm">{isAdmin?(profileMap[t.partner_user_id]?.full_name||profileMap[t.partner_user_id]?.email||'Partenaire'):t.subject}</strong><span className="mt-1 block text-xs text-[#7b8490]">{t.last_message_at?new Date(t.last_message_at).toLocaleString('fr-FR'):'Aucun message'}</span></div>{unreadForThread>0?<span className="min-w-5 rounded-full bg-[#c76055] px-1.5 text-center text-[0.65rem] font-bold leading-5 text-white">{unreadForThread}</span>:null}</div></button>})}</aside>
       <section className="flex min-h-[620px] flex-col"><div className="flex-1 space-y-3 overflow-y-auto bg-[#f3f6f8] p-5">{messages.map((m:any)=>{const mine=m.sender_user_id===user.id;return <div key={m.id} className={`max-w-[80%] p-3 text-sm leading-6 ${mine?'ml-auto bg-[#12304a] text-white':'bg-white text-[#303a46]'}`}><p>{m.body}</p><span className={`mt-1 block text-[0.62rem] ${mine?'text-[#a9bfd0]':'text-[#8a929d]'}`}>{new Date(m.created_at).toLocaleString('fr-FR')}</span></div>})}{!selectedThread&&<p className="text-sm text-[#687685]">Sélectionnez une conversation.</p>}</div><form onSubmit={send} className="flex gap-2 border-t border-[#d9e1e8] p-4"><input value={body} onChange={e=>setBody(e.target.value)} disabled={!selectedThread} placeholder="Écrire un message…" className="min-h-[46px] flex-1 border border-[#d9e1e8] px-3 text-sm"/><button disabled={!selectedThread||!body.trim()} className="inline-flex h-11 w-11 items-center justify-center bg-[#12304a] text-white disabled:opacity-40"><Send size={16}/></button></form></section>
     </div>
   </Section>;
