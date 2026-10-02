@@ -42,6 +42,10 @@ export interface PropertyListing {
   delivery?: LocalizedText;
   developer?: string;
   partner?: string;
+  sourceUrl?: string;
+  sourceHost?: string;
+  sourceLastCheckedAt?: string;
+  sourcePartnerName?: string;
   paymentPlan?: PropertyPaymentStep[];
   highlights?: LocalizedText[];
   technicalNotes?: LocalizedText[];
