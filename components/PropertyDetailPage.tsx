@@ -115,6 +115,7 @@ function collectionLabel(collection: PropertyListing['collection'], locale: Loca
 
 export function PropertyDetailPage({ locale, property, globalMode = false }: PropertyDetailPageProps) {
   const c = labels(locale);
+  if (globalMode) c.back = locale === 'fr' ? 'Investissement immobilier international' : locale === 'en' ? 'International property investment' : locale === 'ru' ? 'Зарубежная недвижимость' : 'الاستثمار العقاري الدولي';
   const fullPath = getLocalePath(locale, getPropertyPath(locale, property, globalMode));
   const hubPath = getLocalePath(locale, globalMode ? globalPropertyHubPaths[locale] : propertyHubPaths[locale]);
   const assessmentPath =
@@ -162,7 +163,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
   ) as Record<Locale, string>;
 
   return (
-    <main dir={localeDir[locale]} className="min-h-screen bg-[#fbf7f0] text-[#121826]">
+    <main dir={localeDir[locale]} className="min-h-screen bg-[#f2f5f4] text-[#12221f] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',sans-serif]">
       <Header locale={locale} currentPath={fullPath} localizedPaths={localizedPaths} />
       <StructuredData data={organizationSchema()} />
       <StructuredData data={propertySchema} />
@@ -175,28 +176,28 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
 
       <section className="px-5 pb-10 pt-32 md:px-8 md:pb-14 md:pt-40">
         <div className="mx-auto max-w-[1500px]">
-          <Link href={hubPath} className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.15em] text-[#8a6728]">
+          <Link href={hubPath} className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.15em] text-[#8a6a45]">
             <ArrowLeft size={15} /> {c.back}
           </Link>
           <div className="mt-8 grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#8a6728]">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#8a6a45]">
                 {collectionLabel(property.collection, locale)} · {property.countryName} · {cityLabel(property)} · {property.district}
               </p>
-              <h1 className="mt-4 max-w-5xl font-serif text-5xl leading-[1.02] tracking-[-0.045em] md:text-7xl">
+              <h1 className="mt-4 max-w-5xl font-sans text-5xl leading-[1.02] tracking-[-0.045em] md:text-7xl">
                 {property.title[locale]}
               </h1>
-              <p className="mt-6 max-w-3xl text-lg leading-8 text-[#58616d]">{property.summary[locale]}</p>
+              <p className="mt-6 max-w-3xl text-lg leading-8 text-[#65756f]">{property.summary[locale]}</p>
             </div>
-            <div className="grid gap-px bg-[#d8c7a1] sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+            <div className="grid gap-px bg-[#d7dfdc] sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
               <div className="bg-white p-6">
-                <span className="text-[0.65rem] font-bold uppercase tracking-[0.14em] text-[#8a7f70]">{c.totalPrice}</span>
-                <strong className="mt-2 block font-serif text-3xl">{formatPropertyPrice(property, locale)}</strong>
+                <span className="text-[0.65rem] font-bold uppercase tracking-[0.14em] text-[#7b8985]">{c.totalPrice}</span>
+                <strong className="mt-2 block font-sans text-3xl">{formatPropertyPrice(property, locale)}</strong>
               </div>
               {capital && (
-                <div className="bg-[#101827] p-6 text-white">
-                  <span className="text-[0.65rem] font-bold uppercase tracking-[0.14em] text-[#d9b972]">{c.capitalToday}</span>
-                  <strong className="mt-2 block font-serif text-3xl">{capital.replace(/^.*?:\s*/, '')}</strong>
+                <div className="bg-[#10231e] p-6 text-white">
+                  <span className="text-[0.65rem] font-bold uppercase tracking-[0.14em] text-[#c9aa7a]">{c.capitalToday}</span>
+                  <strong className="mt-2 block font-sans text-3xl">{capital.replace(/^.*?:\s*/, '')}</strong>
                 </div>
               )}
             </div>
@@ -209,13 +210,13 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
           <div className="grid gap-3 md:grid-cols-12">
             {(property.images.length ? property.images : [property.heroImage].filter(Boolean) as string[]).slice(0, 5).map((image, index) => (
               <div key={image} className={index === 0 ? 'md:col-span-8 md:row-span-2' : 'md:col-span-4'}>
-                <div className={index === 0 ? 'aspect-[16/10] overflow-hidden bg-[#e6ded2]' : 'aspect-[16/9] overflow-hidden bg-[#e6ded2]'}>
+                <div className={index === 0 ? 'aspect-[16/10] overflow-hidden bg-[#dce4e1]' : 'aspect-[16/9] overflow-hidden bg-[#dce4e1]'}>
                   <img src={image} alt={`${property.title[locale]} — ${index + 1}`} className="h-full w-full object-cover" />
                 </div>
               </div>
             ))}
             {property.images.length === 0 && !property.heroImage && (
-              <div className="flex aspect-[16/8] items-center justify-center bg-[#e6ded2] text-xs font-bold uppercase tracking-[0.25em] text-[#8a7f70] md:col-span-12">
+              <div className="flex aspect-[16/8] items-center justify-center bg-[#dce4e1] text-xs font-bold uppercase tracking-[0.25em] text-[#7b8985] md:col-span-12">
                 Bosphoras Property Desk
               </div>
             )}
@@ -226,16 +227,16 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
       <section className="px-5 py-16 md:px-8 md:py-24">
         <div className="mx-auto grid max-w-[1500px] gap-12 lg:grid-cols-[1.12fr_0.88fr] lg:gap-20">
           <div>
-            <h2 className="font-serif text-4xl tracking-[-0.03em]">{c.overview}</h2>
+            <h2 className="font-sans text-4xl tracking-[-0.03em]">{c.overview}</h2>
             <p className="mt-6 whitespace-pre-line text-base leading-8 text-[#4d5865]">{property.description[locale]}</p>
 
             {property.strengths && property.strengths.length > 0 && (
-              <section className="mt-14 border-t border-[#d8c7a1] pt-10">
-                <h2 className="font-serif text-3xl">{c.why}</h2>
+              <section className="mt-14 border-t border-[#d7dfdc] pt-10">
+                <h2 className="font-sans text-3xl">{c.why}</h2>
                 <ul className="mt-6 grid gap-4">
                   {property.strengths.map((item) => (
                     <li key={item[locale]} className="flex gap-3 text-base leading-7 text-[#4d5865]">
-                      <CheckCircle2 size={18} className="mt-1 shrink-0 text-[#8a6728]" />{item[locale]}
+                      <CheckCircle2 size={18} className="mt-1 shrink-0 text-[#8a6a45]" />{item[locale]}
                     </li>
                   ))}
                 </ul>
@@ -243,8 +244,8 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
             )}
 
             {property.technicalNotes && property.technicalNotes.length > 0 && (
-              <section className="mt-14 border-t border-[#d8c7a1] pt-10">
-                <h2 className="inline-flex items-center gap-3 font-serif text-3xl"><Wrench size={23} className="text-[#8a6728]" />{c.technical}</h2>
+              <section className="mt-14 border-t border-[#d7dfdc] pt-10">
+                <h2 className="inline-flex items-center gap-3 font-sans text-3xl"><Wrench size={23} className="text-[#8a6a45]" />{c.technical}</h2>
                 <ul className="mt-6 grid gap-4">
                   {property.technicalNotes.map((item) => (
                     <li key={item[locale]} className="border-l border-[#c9a45d] pl-5 text-base leading-7 text-[#4d5865]">{item[locale]}</li>
@@ -254,8 +255,8 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
             )}
 
             {property.watchpoints && property.watchpoints.length > 0 && (
-              <section className="mt-14 border border-[#d5b780] bg-[#fff8e9] p-7">
-                <h2 className="inline-flex items-center gap-3 font-serif text-3xl"><ShieldAlert size={23} className="text-[#8a6728]" />{c.watch}</h2>
+              <section className="mt-14 border border-[#e4d2b6] bg-[#fff8ed] p-7">
+                <h2 className="inline-flex items-center gap-3 font-sans text-3xl"><ShieldAlert size={23} className="text-[#8a6a45]" />{c.watch}</h2>
                 <ul className="mt-6 grid gap-4">
                   {property.watchpoints.map((item) => (
                     <li key={item[locale]} className="text-base leading-7 text-[#4d5865]">{item[locale]}</li>
@@ -266,18 +267,18 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
           </div>
 
           <aside className="space-y-6 lg:sticky lg:top-28 lg:self-start">
-            <div className="border border-[#d8c7a1] bg-white p-7">
+            <div className="border border-[#d7dfdc] bg-white p-7">
               <div className="grid grid-cols-2 gap-6">
-                {property.surfaceM2 && <div><span className="text-xs uppercase tracking-[0.13em] text-[#8a7f70]">{c.surface}</span><strong className="mt-1 block text-xl">{property.surfaceM2} m²</strong></div>}
-                {property.bedrooms !== undefined && <div><span className="text-xs uppercase tracking-[0.13em] text-[#8a7f70]">{c.bedrooms}</span><strong className="mt-1 block text-xl">{property.bedrooms}</strong></div>}
-                {property.delivery && <div><span className="text-xs uppercase tracking-[0.13em] text-[#8a7f70]">{c.delivery}</span><strong className="mt-1 block text-xl">{property.delivery[locale]}</strong></div>}
-                <div><span className="text-xs uppercase tracking-[0.13em] text-[#8a7f70]">Location</span><strong className="mt-1 block text-xl">{property.district}</strong></div>
+                {property.surfaceM2 && <div><span className="text-xs uppercase tracking-[0.13em] text-[#7b8985]">{c.surface}</span><strong className="mt-1 block text-xl">{property.surfaceM2} m²</strong></div>}
+                {property.bedrooms !== undefined && <div><span className="text-xs uppercase tracking-[0.13em] text-[#7b8985]">{c.bedrooms}</span><strong className="mt-1 block text-xl">{property.bedrooms}</strong></div>}
+                {property.delivery && <div><span className="text-xs uppercase tracking-[0.13em] text-[#7b8985]">{c.delivery}</span><strong className="mt-1 block text-xl">{property.delivery[locale]}</strong></div>}
+                <div><span className="text-xs uppercase tracking-[0.13em] text-[#7b8985]">Location</span><strong className="mt-1 block text-xl">{property.district}</strong></div>
               </div>
             </div>
 
             {property.paymentPlanEnabled !== false && property.paymentPlan && property.paymentPlan.length > 0 && (
-              <div className="bg-[#101827] p-7 text-white">
-                <h2 className="inline-flex items-center gap-3 font-serif text-3xl"><WalletCards size={22} className="text-[#d9b972]" />{c.payment}</h2>
+              <div className="bg-[#10231e] p-7 text-white">
+                <h2 className="inline-flex items-center gap-3 font-sans text-3xl"><WalletCards size={22} className="text-[#c9aa7a]" />{c.payment}</h2>
                 <div className="mt-4 flex flex-wrap gap-2 text-xs">
                   {property.paymentInterestMode === 'interest_free' ? <span className="rounded-full bg-white/10 px-3 py-1.5 text-[#d8eadf]">0% interest</span> : null}
                   {property.paymentInterestMode === 'interest_bearing' && property.paymentInterestRate !== undefined ? <span className="rounded-full bg-white/10 px-3 py-1.5 text-[#f0d7b2]">{property.paymentInterestRate}% interest</span> : null}
@@ -291,7 +292,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
                           <p className="font-semibold">{step.label[locale]}</p>
                           <p className="mt-1 text-sm text-[#b9c0ca]">{step.due[locale]}</p>
                         </div>
-                        <strong className="font-serif text-2xl text-[#e8d8b5]">
+                        <strong className="font-sans text-2xl text-[#d8c7a8]">
                           {step.percentage ? `${step.percentage}%` : step.amount ? new Intl.NumberFormat(locale === 'fr' ? 'fr-FR' : 'en-GB', { style: 'currency', currency: property.currency, maximumFractionDigits: 0 }).format(step.amount) : '—'}
                         </strong>
                       </div>
@@ -301,12 +302,12 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
               </div>
             )}
 
-            <div className="border border-[#d8c7a1] bg-[#f1e8db] p-7">
-              <p className="text-sm leading-6 text-[#58616d]">{c.disclaimer}</p>
-              <Link href={`${assessmentPath}?subject=property&property=${encodeURIComponent(property.id)}`} className="mt-6 inline-flex w-full min-h-[50px] items-center justify-center gap-3 bg-[#101827] px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-white">
+            <div className="border border-[#d7dfdc] bg-[#f7f9f8] p-7">
+              <p className="text-sm leading-6 text-[#65756f]">{c.disclaimer}</p>
+              <Link href={`${assessmentPath}?subject=property&property=${encodeURIComponent(property.id)}`} className="mt-6 inline-flex w-full min-h-[50px] items-center justify-center gap-3 bg-[#10231e] px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-white">
                 {c.request}<ArrowRight size={16} />
               </Link>
-              <Link href={`${assessmentPath}?subject=private-viewing&property=${encodeURIComponent(property.id)}`} className="mt-3 inline-flex w-full min-h-[50px] items-center justify-center gap-3 border border-[#101827] px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[#101827]">
+              <Link href={`${assessmentPath}?subject=private-viewing&property=${encodeURIComponent(property.id)}`} className="mt-3 inline-flex w-full min-h-[50px] items-center justify-center gap-3 border border-[#10231e] px-5 py-3 text-sm font-bold uppercase tracking-[0.12em] text-[#10231e]">
                 <CalendarDays size={16} />{c.visit}
               </Link>
             </div>
