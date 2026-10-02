@@ -148,7 +148,10 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
         approved_at:new Date().toISOString(),
         review_status:'approved',
         revision:Number(draft.revision||1)+1,
+        source_url:draft.source_url||null,
+        source_host:draft.source_host||null,
         source_last_checked_at:draft.source_url?new Date().toISOString():draft.source_last_checked_at||null,
+        source_partner_name:draft.developer||draft.source_partner_name||null,
       };
       const {error}=await supabase.from('property_listings').update(update).eq('id',listing.id);
       if(error)throw error;
