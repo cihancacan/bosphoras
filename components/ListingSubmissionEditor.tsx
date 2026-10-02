@@ -33,7 +33,7 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
   const supabase = getPortalSupabase();
   const initialPayload = initialSubmission?.payload || {};
   const [submissionId, setSubmissionId] = useState<string | null>(initialSubmission?.id || null);
-  const [status, setStatus] = useState(initialSubmission?.status || 'draft');
+  const [status, setStatus] = useState<string>(initialSubmission?.status || 'draft');
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState('');
 
@@ -68,7 +68,7 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
   const [watchpoints, setWatchpoints] = useState<any>(
     Object.fromEntries(locales.map((l) => [l, (initialPayload.watchpoints || []).map((x:any)=>x?.[l]).filter(Boolean).join('\n')]))
   );
-  const [paymentPlan, setPaymentPlan] = useState(initialPayload.paymentPlan || [
+  const [paymentPlan, setPaymentPlan] = useState<any[]>(initialPayload.paymentPlan || [
     { label: localText('Réservation'), percentage: 30, due: localText('À la signature') },
     { label: localText('Pendant construction'), percentage: 50, due: localText('Selon échéancier') },
     { label: localText('Livraison'), percentage: 20, due: localText('À la livraison') },
@@ -174,7 +174,7 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
         p_payload: payload,
       });
       if (error) throw error;
-      setSubmissionId(data);
+      setSubmissionId(data ? String(data) : null);
       setStatus('draft');
       setMessage('Brouillon enregistré.');
       onSaved?.();
@@ -208,6 +208,22 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
       setBusy(false);
     }
   }
+
+  const localizedSections: Array<{ name: string; state: any; setter: any; multi: boolean }> = [
+    { name: 'Titre', state: titles, setter: setTitles, multi: false },
+    { name: 'Slug SEO', state: slugs, setter: setSlugs, multi: false },
+    { name: 'Résumé', state: summaries, setter: setSummaries, multi: true },
+    { name: 'Description complète', state: descriptions, setter: setDescriptions, multi: true },
+    { name: 'SEO title', state: seoTitles, setter: setSeoTitles, multi: false },
+    { name: 'Meta description', state: seoDescriptions, setter: setSeoDescriptions, multi: true },
+    { name: 'Livraison', state: delivery, setter: setDelivery, multi: false },
+  ];
+
+  const bulletSections: Array<{ name: string; state: any; setter: any }> = [
+    { name: 'Pourquoi le sélectionner', state: strengths, setter: setStrengths },
+    { name: 'Technical Notes', state: technicalNotes, setter: setTechnicalNotes },
+    { name: 'Points de vigilance', state: watchpoints, setter: setWatchpoints },
+  ];
 
   const input = 'min-h-[44px] w-full border border-[#d8c7a1] bg-white px-3 text-sm';
   const textarea = 'w-full border border-[#d8c7a1] bg-white px-3 py-3 text-sm leading-6';
@@ -249,24 +265,16 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
           <label className="flex items-center gap-3 pt-7 text-sm"><input type="checkbox" checked={featured} onChange={e=>setFeatured(e.target.checked)}/> À proposer comme mise en avant</label>
         </div>
 
-        {[
-          ['Titre', titles, setTitles, false],
-          ['Slug SEO', slugs, setSlugs, false],
-          ['Résumé', summaries, setSummaries, true],
-          ['Description complète', descriptions, setDescriptions, true],
-          ['SEO title', seoTitles, setSeoTitles, false],
-          ['Meta description', seoDescriptions, setSeoDescriptions, true],
-          ['Livraison', delivery, setDelivery, false],
-        ].map(([name, state, setter, multi]) => (
-          <section key={name as string} className="border border-[#d8c7a1] bg-white p-5">
-            <h4 className="font-serif text-xl">{name as string}</h4>
+        {localizedSections.map(({ name, state, setter, multi }) => (
+          <section key={name} className="border border-[#d8c7a1] bg-white p-5">
+            <h4 className="font-serif text-xl">{name}</h4>
             <div className="mt-4 grid gap-4 md:grid-cols-2">
               {locales.map(locale => (
                 <label key={locale} className={label}>{locale.toUpperCase()}
                   {multi ? (
-                    <textarea rows={name === 'Description complète' ? 7 : 3} value={(state as any)[locale] || ''} onChange={e=>(setter as any)({...(state as any),[locale]:e.target.value})} className={textarea}/>
+                    <textarea rows={name === 'Description complète' ? 7 : 3} value={state[locale] || ''} onChange={e=>setter({...state,[locale]:e.target.value})} className={textarea}/>
                   ) : (
-                    <input value={(state as any)[locale] || ''} onChange={e=>(setter as any)({...(state as any),[locale]:e.target.value})} className={input}/>
+                    <input value={state[locale] || ''} onChange={e=>setter({...state,[locale]:e.target.value})} className={input}/>
                   )}
                 </label>
               ))}
@@ -275,18 +283,14 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
         ))}
 
         <section className="grid gap-5 lg:grid-cols-3">
-          {[
-            ['Pourquoi le sélectionner', strengths, setStrengths],
-            ['Technical Notes', technicalNotes, setTechnicalNotes],
-            ['Points de vigilance', watchpoints, setWatchpoints],
-          ].map(([name, state, setter]) => (
-            <div key={name as string} className="border border-[#d8c7a1] bg-white p-5">
-              <h4 className="font-serif text-xl">{name as string}</h4>
+          {bulletSections.map(({ name, state, setter }) => (
+            <div key={name} className="border border-[#d8c7a1] bg-white p-5">
+              <h4 className="font-serif text-xl">{name}</h4>
               <p className="mt-2 text-xs text-[#7b8490]">Un point par ligne. FR peut servir de fallback si une traduction manque.</p>
               <div className="mt-4 space-y-4">
                 {locales.map(locale => (
                   <label key={locale} className={label}>{locale.toUpperCase()}
-                    <textarea rows={4} value={(state as any)[locale] || ''} onChange={e=>(setter as any)({...(state as any),[locale]:e.target.value})} className={textarea}/>
+                    <textarea rows={4} value={state[locale] || ''} onChange={e=>setter({...state,[locale]:e.target.value})} className={textarea}/>
                   </label>
                 ))}
               </div>
