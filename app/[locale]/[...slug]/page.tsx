@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import type { Locale } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
+import { getLocalePath } from '@/lib/routes';
 import { MainPageRenderer } from '@/components/MainPageRenderer';
 import { HighPotentialGuideRenderer } from '@/components/HighPotentialGuideRenderer';
 import { ProgrammaticPageRenderer } from '@/components/ProgrammaticPageRenderer';
@@ -14,7 +15,7 @@ import { getPageBySlug, allPages } from '@/data/pages';
 import { getHighPotentialGuideBySlug, highPotentialGuides } from '@/data/highPotentialPages';
 import { getProgrammaticPageBySlug, getProgrammaticPagesForLocale } from '@/data/programmatic/pages';
 import { ENABLE_ALL_PROGRAMMATIC_PAGES } from '@/lib/launchConfig';
-import { getPublishedProperties, globalPropertyHubPaths, propertyHubPaths } from '@/data/propertyDesk';
+import { getPropertyPath, getPublishedProperties, globalPropertyHubPaths, propertyHubPaths } from '@/data/propertyDesk';
 import { fetchPropertyBySlug } from '@/lib/propertyStore';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -74,7 +75,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     if (property) {
       return buildMetadata({
         locale: params.locale,
-        path: slug,
+        path: propertyHub === propertyHubPaths[params.locale] ? getPropertyPath(params.locale, property, true) : slug,
         title: property.seoTitle[params.locale],
         description: property.seoDescription[params.locale],
         image: property.heroImage || property.images[0],
@@ -128,7 +129,10 @@ export default async function LocaleCatchAllPage({ params }: PageProps) {
   if (propertyHub) {
     const propertySlug = slug.slice(propertyHub.length + 1);
     const property = await fetchPropertyBySlug(params.locale, propertySlug);
-    if (property) return <PropertyDetailPage locale={params.locale} property={property} globalMode={propertyHub === globalPropertyHubPaths[params.locale]} />;
+    if (property && propertyHub === propertyHubPaths[params.locale]) {
+      permanentRedirect(getLocalePath(params.locale, getPropertyPath(params.locale, property, true)));
+    }
+    if (property) return <PropertyDetailPage locale={params.locale} property={property} globalMode />;
   }
 
   const programmaticPage = ENABLE_ALL_PROGRAMMATIC_PAGES ? getProgrammaticPageBySlug(params.locale, slug) : undefined;
