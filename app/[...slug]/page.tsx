@@ -4,10 +4,13 @@ import { buildMetadata } from '@/lib/seo';
 import { MainPageRenderer } from '@/components/MainPageRenderer';
 import { HighPotentialGuideRenderer } from '@/components/HighPotentialGuideRenderer';
 import { ProgrammaticPageRenderer } from '@/components/ProgrammaticPageRenderer';
+import { PropertyDeskPage } from '@/components/PropertyDeskPage';
+import { PropertyDetailPage } from '@/components/PropertyDetailPage';
 import { getPageBySlug, allPages } from '@/data/pages';
 import { getHighPotentialGuideBySlug, highPotentialGuides } from '@/data/highPotentialPages';
 import { getProgrammaticPageBySlug, getProgrammaticPagesForLocale } from '@/data/programmatic/pages';
 import { ENABLE_ALL_PROGRAMMATIC_PAGES } from '@/lib/launchConfig';
+import { getPropertyBySlug, getPublishedProperties, propertyHubPaths } from '@/data/propertyDesk';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
@@ -34,11 +37,35 @@ export function generateStaticParams() {
     ? getProgrammaticPagesForLocale(locale).map((page) => ({ slug: page.slug.replace(/^\//, '').split('/') }))
     : [];
 
-  return [...mainParams, ...guideParams, ...programmaticParams];
+  const propertyParams = getPublishedProperties().map((property) => ({
+    slug: `${propertyHubPaths[locale].replace(/^\//, '')}/${property.slugs[locale].replace(/^\//, '')}`.split('/'),
+  }));
+
+  return [...mainParams, ...guideParams, ...programmaticParams, ...propertyParams];
 }
 
 export function generateMetadata({ params }: PageProps): Metadata {
   const slug = resolveSlug(params.slug);
+
+  if (slug.startsWith(`${propertyHubPaths[locale]}/`)) {
+    const propertySlug = slug.slice(propertyHubPaths[locale].length + 1);
+    const property = getPropertyBySlug(locale, propertySlug);
+    if (property) {
+      return buildMetadata({
+        locale,
+        path: slug,
+        title: property.seoTitle[locale],
+        description: property.seoDescription[locale],
+        image: property.heroImage || property.images[0],
+        alternates: Object.fromEntries(
+          (['fr', 'en', 'ru', 'ar'] as const).map((targetLocale) => [
+            targetLocale,
+            `https://www.bosphoras.com${targetLocale === 'fr' ? '' : `/${targetLocale}`}${propertyHubPaths[targetLocale]}/${property.slugs[targetLocale].replace(/^\//, '')}`,
+          ])
+        ),
+      });
+    }
+  }
 
   const programmaticPage = getProgrammaticPageBySlug(locale, slug);
   if (programmaticPage) {
@@ -70,6 +97,12 @@ export function generateMetadata({ params }: PageProps): Metadata {
 export default function CatchAllPage({ params }: PageProps) {
   const slug = resolveSlug(params.slug);
 
+  if (slug.startsWith(`${propertyHubPaths[locale]}/`)) {
+    const propertySlug = slug.slice(propertyHubPaths[locale].length + 1);
+    const property = getPropertyBySlug(locale, propertySlug);
+    if (property) return <PropertyDetailPage locale={locale} property={property} />;
+  }
+
   const programmaticPage = ENABLE_ALL_PROGRAMMATIC_PAGES ? getProgrammaticPageBySlug(locale, slug) : undefined;
   if (programmaticPage) {
     return (
@@ -94,5 +127,6 @@ export default function CatchAllPage({ params }: PageProps) {
 
   const page = getPageBySlug(locale, slug);
   if (!page) notFound();
+  if (page.id === 'property') return <PropertyDeskPage page={page} />;
   return <MainPageRenderer page={page} />;
 }
