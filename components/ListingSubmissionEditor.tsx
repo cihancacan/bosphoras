@@ -128,9 +128,9 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
   );
 
   const editable = status === 'draft' || status === 'changes_requested';
-  const input = 'min-h-[44px] w-full border border-[#d8c7a1] bg-white px-3 text-sm';
-  const textarea = 'w-full border border-[#d8c7a1] bg-white px-3 py-3 text-sm leading-6';
-  const label = 'grid gap-2 text-[0.68rem] font-bold uppercase tracking-[0.1em] text-[#66707b]';
+  const input = 'min-h-[44px] w-full border border-[#d9e1e8] bg-white px-3 text-sm';
+  const textarea = 'w-full border border-[#d9e1e8] bg-white px-3 py-3 text-sm leading-6';
+  const label = 'grid gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[#526272]';
 
   function setLocalized(setter: (value: Localized) => void, current: Localized, locale: LocaleKey, value: string) {
     setter({ ...current, [locale]: value });
@@ -255,17 +255,17 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
   }
 
   return (
-    <form onSubmit={submitForReview} className="space-y-7">
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#d8c7a1] pb-5">
+    <form onSubmit={submitForReview} className="space-y-7 [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe_UI,sans-serif]">
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#d9e1e8] pb-5">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#8a6728]">Soumission partenaire</p>
-          <h3 className="mt-2 font-serif text-3xl">{listingId ? 'Proposer une modification' : 'Nouvelle opportunité'}</h3>
-          <p className="mt-2 text-sm text-[#66707b]">Statut : <strong>{status}</strong>. La version publique ne change jamais avant validation Bosphoras.</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#315d7c]">Soumission partenaire</p>
+          <h3 className="mt-2 font-sans text-3xl">{listingId ? 'Proposer une modification' : 'Nouvelle opportunité'}</h3>
+          <p className="mt-2 text-sm text-[#526272]">Statut : <strong>{status}</strong>. La version publique ne change jamais avant validation Bosphoras.</p>
         </div>
-        {onClose ? <button type="button" onClick={onClose} className="p-2 text-[#66707b]" aria-label="Fermer"><X size={20} /></button> : null}
+        {onClose ? <button type="button" onClick={onClose} className="p-2 text-[#526272]" aria-label="Fermer"><X size={20} /></button> : null}
       </div>
 
-      {!editable ? <div className="border border-[#d8c7a1] bg-[#f6efe4] p-5 text-sm text-[#58616d]">Cette version est verrouillée pendant la revue administrateur.</div> : null}
+      {!editable ? <div className="border border-[#d9e1e8] bg-[#eef4f8] p-5 text-sm text-[#58616d]">Cette version est verrouillée pendant la revue administrateur.</div> : null}
 
       <fieldset disabled={!editable} className="space-y-7 disabled:opacity-70">
         <div className="grid gap-4 md:grid-cols-4">
@@ -300,11 +300,11 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
           <LocalizedFields title="Points de vigilance" value={watchpoints} setValue={setWatchpoints} multiline rows={5} inputClass={input} textareaClass={textarea} labelClass={label} />
         </div>
 
-        <section className="border border-[#d8c7a1] bg-white p-5">
-          <h4 className="font-serif text-2xl">Plan de paiement</h4>
+        <section className="border border-[#d9e1e8] bg-white p-5">
+          <h4 className="font-sans text-2xl">Plan de paiement</h4>
           <div className="mt-5 space-y-3">
             {paymentPlan.map((step, index) => (
-              <div key={index} className="grid gap-3 border-t border-[#eee3d2] pt-4 md:grid-cols-[1.2fr_0.5fr_1.2fr_auto]">
+              <div key={index} className="grid gap-3 border-t border-[#edf1f5] pt-4 md:grid-cols-[1.2fr_0.5fr_1.2fr_auto]">
                 <input value={String(step?.label?.fr || '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,label:{...(s.label||{}),fr:e.target.value,en:s.label?.en||e.target.value,ru:s.label?.ru||e.target.value,ar:s.label?.ar||e.target.value}}:s))} className={input} />
                 <input value={String(step?.percentage ?? '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,percentage:Number(e.target.value)}:s))} className={input} />
                 <input value={String(step?.due?.fr || '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,due:{...(s.due||{}),fr:e.target.value,en:s.due?.en||e.target.value,ru:s.due?.ru||e.target.value,ar:s.due?.ar||e.target.value}}:s))} className={input} />
@@ -312,22 +312,22 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
               </div>
             ))}
           </div>
-          <button type="button" onClick={()=>setPaymentPlan([...paymentPlan,{label:{fr:'Nouvelle étape',en:'New step',ru:'Новый этап',ar:'مرحلة جديدة'},percentage:0,due:{fr:'À définir',en:'To define',ru:'Уточнить',ar:'يحدد لاحقاً'}}])} className="mt-5 text-xs font-bold uppercase tracking-[0.12em] text-[#8a6728]">+ Ajouter une étape</button>
+          <button type="button" onClick={()=>setPaymentPlan([...paymentPlan,{label:{fr:'Nouvelle étape',en:'New step',ru:'Новый этап',ar:'مرحلة جديدة'},percentage:0,due:{fr:'À définir',en:'To define',ru:'Уточнить',ar:'يحدد لاحقاً'}}])} className="mt-5 text-xs font-semibold uppercase tracking-[0.12em] text-[#315d7c]">+ Ajouter une étape</button>
         </section>
 
-        <section className="border border-[#d8c7a1] bg-white p-5">
-          <div className="flex items-center gap-3"><ImagePlus size={20} className="text-[#8a6728]"/><h4 className="font-serif text-2xl">Photos</h4></div>
+        <section className="border border-[#d9e1e8] bg-white p-5">
+          <div className="flex items-center gap-3"><ImagePlus size={20} className="text-[#315d7c]"/><h4 className="font-sans text-2xl">Photos</h4></div>
           <input type="file" multiple accept="image/jpeg,image/png,image/webp,image/avif" onChange={uploadFiles} className="mt-5 text-sm"/>
-          {uploading ? <p className="mt-3 text-sm text-[#66707b]">Upload en cours…</p> : null}
-          {images.length ? <div className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4">{images.map((url,index)=><div key={url} className="relative aspect-[4/3] overflow-hidden bg-[#eee3d2]"><img src={url} alt="" className="h-full w-full object-cover"/><button type="button" onClick={()=>setImages(images.filter((_,i)=>i!==index))} className="absolute right-2 top-2 bg-[#101827] p-1.5 text-white"><X size={14}/></button></div>)}</div> : null}
+          {uploading ? <p className="mt-3 text-sm text-[#526272]">Upload en cours…</p> : null}
+          {images.length ? <div className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4">{images.map((url,index)=><div key={url} className="relative aspect-[4/3] overflow-hidden bg-[#edf1f5]"><img src={url} alt="" className="h-full w-full object-cover"/><button type="button" onClick={()=>setImages(images.filter((_,i)=>i!==index))} className="absolute right-2 top-2 bg-[#12304a] p-1.5 text-white"><X size={14}/></button></div>)}</div> : null}
         </section>
       </fieldset>
 
-      {message ? <div className="border border-[#d8c7a1] bg-[#fffaf3] p-4 text-sm leading-6 text-[#58616d]">{message}</div> : null}
+      {message ? <div className="border border-[#d9e1e8] bg-[#f7f9fb] p-4 text-sm leading-6 text-[#58616d]">{message}</div> : null}
 
       {editable ? <div className="flex flex-wrap gap-3">
-        <button type="button" disabled={busy} onClick={saveDraft} className="inline-flex min-h-[48px] items-center gap-2 border border-[#101827] px-5 text-sm font-bold uppercase tracking-[0.12em]"><Save size={16}/> Enregistrer le brouillon</button>
-        <button type="submit" disabled={busy} className="inline-flex min-h-[48px] items-center gap-2 bg-[#101827] px-6 text-sm font-bold uppercase tracking-[0.12em] text-white"><Send size={16}/> Soumettre à validation <ArrowRight size={15}/></button>
+        <button type="button" disabled={busy} onClick={saveDraft} className="inline-flex min-h-[48px] items-center gap-2 border border-[#12304a] px-5 text-sm font-semibold uppercase tracking-[0.12em]"><Save size={16}/> Enregistrer le brouillon</button>
+        <button type="submit" disabled={busy} className="inline-flex min-h-[48px] items-center gap-2 bg-[#12304a] px-6 text-sm font-semibold uppercase tracking-[0.12em] text-white"><Send size={16}/> Soumettre à validation <ArrowRight size={15}/></button>
       </div> : null}
     </form>
   );
@@ -353,8 +353,8 @@ function LocalizedFields({
   labelClass: string;
 }) {
   return (
-    <section className="border border-[#d8c7a1] bg-white p-5">
-      <h4 className="font-serif text-xl">{title}</h4>
+    <section className="border border-[#d9e1e8] bg-white p-5">
+      <h4 className="font-sans text-xl">{title}</h4>
       <div className="mt-4 grid gap-4 md:grid-cols-2">
         {locales.map((locale) => (
           <label key={locale} className={labelClass}>
