@@ -369,23 +369,207 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,partnerUsers,reload}:any)
   const supabase=getPortalSupabase();
   const [show,setShow]=useState(false);
   const [dealContact,setDealContact]=useState<string>('');
+  const [activityContact,setActivityContact]=useState<string>('');
+  const [activities,setActivities]=useState<any[]>([]);
+
+  async function loadActivities(){
+    const {data}=await supabase.from('crm_activities').select('*').order('created_at',{ascending:false}).limit(100);
+    setActivities(data||[]);
+  }
+  useEffect(()=>{loadActivities();},[]);
+
   async function createContact(e:FormEvent<HTMLFormElement>) {
-    e.preventDefault(); const fd=new FormData(e.currentTarget);
-    const row:any={owner_user_id:user.id,partner_id:isAdmin?null:profile.partner_id,first_name:String(fd.get('first_name')||''),last_name:String(fd.get('last_name')||''),email:String(fd.get('email')||''),phone:String(fd.get('phone')||''),source:String(fd.get('source')||'partner'),status:'new',budget_min:Number(fd.get('budget_min')||0)||null,budget_max:Number(fd.get('budget_max')||0)||null,capital_available:Number(fd.get('capital_available')||0)||null,currency:String(fd.get('currency')||'EUR'),notes:String(fd.get('notes')||''),created_by:user.id};
-    const {error}=await supabase.from('crm_contacts').insert(row); if(error) alert(error.message); else {e.currentTarget.reset();setShow(false);reload();}
+    e.preventDefault();
+    const fd=new FormData(e.currentTarget);
+    const row:any={
+      owner_user_id:user.id,
+      partner_id:isAdmin?null:profile.partner_id,
+      first_name:String(fd.get('first_name')||''),
+      last_name:String(fd.get('last_name')||''),
+      email:String(fd.get('email')||''),
+      phone:String(fd.get('phone')||''),
+      source:String(fd.get('source')||'partner'),
+      status:'new',
+      budget_min:Number(fd.get('budget_min')||0)||null,
+      budget_max:Number(fd.get('budget_max')||0)||null,
+      capital_available:Number(fd.get('capital_available')||0)||null,
+      currency:String(fd.get('currency')||'EUR'),
+      next_action_at:String(fd.get('next_action_at')||'')?new Date(String(fd.get('next_action_at'))).toISOString():null,
+      notes:String(fd.get('notes')||''),
+      created_by:user.id,
+    };
+    const {error}=await supabase.from('crm_contacts').insert(row);
+    if(error) alert(error.message); else {e.currentTarget.reset();setShow(false);reload();}
   }
-  async function assign(contactId:string,owner:string) { const {error}=await supabase.rpc('admin_assign_crm_contact',{p_contact_id:contactId,p_owner_user_id:owner}); if(error)alert(error.message);else reload(); }
+
+  async function assign(contactId:string,owner:string) {
+    if(!owner)return;
+    const {error}=await supabase.rpc('admin_assign_crm_contact',{p_contact_id:contactId,p_owner_user_id:owner});
+    if(error)alert(error.message);else reload();
+  }
+
+  async function contactStatus(contactId:string,status:string){
+    const {error}=await supabase.from('crm_contacts').update({status}).eq('id',contactId);
+    if(error)alert(error.message);else reload();
+  }
+
   async function createDeal(e:FormEvent<HTMLFormElement>) {
-    e.preventDefault(); const fd=new FormData(e.currentTarget); const contact=contacts.find((c:any)=>c.id===dealContact); if(!contact)return;
-    const row={contact_id:contact.id,owner_user_id:contact.owner_user_id,partner_id:contact.partner_id,title:String(fd.get('title')||'Acquisition immobilière'),stage:'lead',deal_value:Number(fd.get('deal_value')||0)||null,currency:String(fd.get('currency')||'EUR'),probability:Number(fd.get('probability')||10),created_by:user.id};
-    const {error}=await supabase.from('crm_deals').insert(row); if(error)alert(error.message);else{setDealContact('');reload();}
+    e.preventDefault();
+    const fd=new FormData(e.currentTarget);
+    const contact=contacts.find((c:any)=>c.id===dealContact);
+    if(!contact)return;
+    const row={
+      contact_id:contact.id,
+      owner_user_id:contact.owner_user_id,
+      partner_id:contact.partner_id,
+      title:String(fd.get('title')||'Acquisition immobilière'),
+      stage:'lead',
+      deal_value:Number(fd.get('deal_value')||0)||null,
+      currency:String(fd.get('currency')||'EUR'),
+      probability:Number(fd.get('probability')||10),
+      expected_close_date:String(fd.get('expected_close_date')||'')||null,
+      created_by:user.id,
+    };
+    const {error}=await supabase.from('crm_deals').insert(row);
+    if(error)alert(error.message);else{setDealContact('');reload();}
   }
-  return <Section title="CRM investissement" kicker="Contacts · deals · relances" action={<button onClick={()=>setShow(!show)} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-xs font-bold uppercase tracking-[0.12em] text-white"><Plus size={15}/>Contact</button>}>
-    {show&&<form onSubmit={createContact} className="mb-8 grid gap-4 border border-[#d9e1e8] bg-white p-6 md:grid-cols-4"><input name="first_name" placeholder="Prénom" className="border border-[#d9e1e8] px-3 py-3"/><input name="last_name" placeholder="Nom" className="border border-[#d9e1e8] px-3 py-3"/><input name="email" type="email" placeholder="E-mail" className="border border-[#d9e1e8] px-3 py-3"/><input name="phone" placeholder="Téléphone" className="border border-[#d9e1e8] px-3 py-3"/><input name="source" placeholder="Source" className="border border-[#d9e1e8] px-3 py-3"/><input name="budget_min" placeholder="Budget min" inputMode="decimal" className="border border-[#d9e1e8] px-3 py-3"/><input name="budget_max" placeholder="Budget max" inputMode="decimal" className="border border-[#d9e1e8] px-3 py-3"/><input name="capital_available" placeholder="Capital disponible" inputMode="decimal" className="border border-[#d9e1e8] px-3 py-3"/><select name="currency" className="border border-[#d9e1e8] px-3 py-3"><option>EUR</option><option>USD</option><option>TRY</option></select><textarea name="notes" placeholder="Notes / besoin" className="border border-[#d9e1e8] px-3 py-3 md:col-span-2"/><button className="bg-[#12304a] px-4 py-3 text-xs font-bold uppercase text-white">Créer</button></form>}
-    <div className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
-      <div className="border border-[#d9e1e8] bg-white p-5"><h2 className="font-sans text-2xl">Contacts</h2><div className="mt-5 space-y-3">{contacts.map((c:any)=><article key={c.id} className="border border-[#e7edf2] p-4"><div className="flex flex-wrap items-start justify-between gap-3"><div><h3 className="font-semibold">{[c.first_name,c.last_name].filter(Boolean).join(' ')||c.company||'Contact'}</h3><p className="mt-1 text-sm text-[#687685]">{c.email||c.phone||'—'} · {c.status}</p><p className="mt-2 text-xs text-[#315d7c]">Capital {money(c.capital_available,c.currency)} · Budget max {money(c.budget_max,c.currency)}</p></div><button onClick={()=>setDealContact(c.id)} className="border border-[#12304a] px-3 py-2 text-xs font-bold uppercase">Créer deal</button></div>{isAdmin&&<select value={c.owner_user_id||''} onChange={e=>assign(c.id,e.target.value)} className="mt-3 min-h-[38px] w-full border border-[#d9e1e8] px-2 text-xs"><option value="">Attribuer à un partenaire…</option>{partnerUsers.map((p:any)=><option key={p.user_id} value={p.user_id}>{p.full_name||p.email}</option>)}</select>}</article>)}{contacts.length===0&&<p className="py-5 text-sm text-[#687685]">Aucun contact.</p>}</div></div>
-      <div className="border border-[#d9e1e8] bg-[#12304a] p-5 text-white"><h2 className="font-sans text-2xl">Pipeline</h2>{dealContact&&<form onSubmit={createDeal} className="mt-5 grid gap-3 border border-white/10 p-4"><input name="title" placeholder="Nom du deal" className="bg-white px-3 py-2 text-sm text-[#162334]"/><div className="grid grid-cols-3 gap-2"><input name="deal_value" placeholder="Valeur" className="bg-white px-3 py-2 text-sm text-[#162334]"/><select name="currency" className="bg-white px-2 text-sm text-[#162334]"><option>EUR</option><option>USD</option><option>TRY</option></select><input name="probability" defaultValue="10" placeholder="%" className="bg-white px-3 py-2 text-sm text-[#162334]"/></div><button className="bg-[#d8e6ef] px-4 py-2 text-xs font-bold uppercase text-[#12304a]">Ajouter au pipeline</button></form>}<div className="mt-5 space-y-3">{deals.map((d:any)=><article key={d.id} className="border border-white/10 p-4"><span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-[#b9d0e0]">{d.stage}</span><h3 className="mt-1 font-sans text-xl">{d.title}</h3><div className="mt-3 flex justify-between text-sm text-[#b9c0ca]"><span>{money(d.deal_value,d.currency)}</span><span>{d.probability}%</span></div></article>)}{deals.length===0&&<p className="py-5 text-sm text-[#a9bfd0]">Aucun deal.</p>}</div></div>
+
+  async function dealStage(dealId:string,stage:string){
+    const probabilityMap:any={lead:10,qualified:25,viewing:40,offer:60,reservation:75,due_diligence:82,contract:90,closed_won:100,closed_lost:0};
+    const {error}=await supabase.from('crm_deals').update({stage,probability:probabilityMap[stage]??10}).eq('id',dealId);
+    if(error)alert(error.message);else reload();
+  }
+
+  async function createActivity(e:FormEvent<HTMLFormElement>){
+    e.preventDefault();
+    const fd=new FormData(e.currentTarget);
+    const contact=contacts.find((x:any)=>x.id===activityContact);
+    if(!contact)return;
+    const dealId=String(fd.get('deal_id')||'');
+    const {error}=await supabase.from('crm_activities').insert({
+      contact_id:contact.id,
+      deal_id:dealId||null,
+      owner_user_id:contact.owner_user_id||user.id,
+      activity_type:String(fd.get('activity_type')||'task'),
+      subject:String(fd.get('subject')||'').trim()||'Relance',
+      body:String(fd.get('body')||'').trim()||null,
+      due_at:String(fd.get('due_at')||'')?new Date(String(fd.get('due_at'))).toISOString():null,
+      created_by:user.id,
+    });
+    if(error)alert(error.message);
+    else{
+      if(fd.get('due_at')) await supabase.from('crm_contacts').update({next_action_at:new Date(String(fd.get('due_at'))).toISOString()}).eq('id',contact.id);
+      e.currentTarget.reset();
+      setActivityContact('');
+      await loadActivities();
+      reload();
+    }
+  }
+
+  async function completeActivity(id:string){
+    const {error}=await supabase.from('crm_activities').update({completed_at:new Date().toISOString()}).eq('id',id);
+    if(error)alert(error.message);else loadActivities();
+  }
+
+  const contactById=Object.fromEntries(contacts.map((x:any)=>[x.id,x]));
+  const dealById=Object.fromEntries(deals.map((x:any)=>[x.id,x]));
+  const openActivities=activities.filter((x:any)=>!x.completed_at);
+  const overdue=openActivities.filter((x:any)=>x.due_at&&new Date(x.due_at)<new Date()).length;
+
+  return <Section title="CRM investissement" kicker="Contacts · pipeline · relances" action={<button onClick={()=>setShow(!show)} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-xs font-semibold uppercase tracking-[0.1em] text-white"><Plus size={15}/>Nouveau contact</button>}>
+    <div className="mb-6 grid gap-px bg-[#d9e1e8] sm:grid-cols-3">
+      <div className="bg-white p-5"><span className="text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#687685]">Contacts visibles</span><strong className="mt-2 block text-2xl font-semibold">{contacts.length}</strong></div>
+      <div className="bg-white p-5"><span className="text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#687685]">Relances ouvertes</span><strong className="mt-2 block text-2xl font-semibold">{openActivities.length}</strong></div>
+      <div className={`p-5 ${overdue?'bg-[#fff5f5]':'bg-white'}`}><span className="text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#687685]">Relances en retard</span><strong className={`mt-2 block text-2xl font-semibold ${overdue?'text-[#a85656]':''}`}>{overdue}</strong></div>
     </div>
+
+    {show&&<form onSubmit={createContact} className="mb-8 grid gap-4 border border-[#d9e1e8] bg-white p-6 md:grid-cols-4">
+      <input name="first_name" placeholder="Prénom" className="border border-[#d9e1e8] px-3 py-3"/>
+      <input name="last_name" placeholder="Nom" className="border border-[#d9e1e8] px-3 py-3"/>
+      <input name="email" type="email" placeholder="E-mail" className="border border-[#d9e1e8] px-3 py-3"/>
+      <input name="phone" placeholder="Téléphone / WhatsApp" className="border border-[#d9e1e8] px-3 py-3"/>
+      <input name="source" placeholder="Source du lead" className="border border-[#d9e1e8] px-3 py-3"/>
+      <input name="budget_min" placeholder="Budget min" inputMode="decimal" className="border border-[#d9e1e8] px-3 py-3"/>
+      <input name="budget_max" placeholder="Budget max" inputMode="decimal" className="border border-[#d9e1e8] px-3 py-3"/>
+      <input name="capital_available" placeholder="Capital disponible aujourd'hui" inputMode="decimal" className="border border-[#d9e1e8] px-3 py-3"/>
+      <select name="currency" className="border border-[#d9e1e8] px-3 py-3"><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option></select>
+      <input name="next_action_at" type="datetime-local" className="border border-[#d9e1e8] px-3 py-3"/>
+      <textarea name="notes" placeholder="Objectif, ville, usage, préférences…" className="border border-[#d9e1e8] px-3 py-3 md:col-span-2"/>
+      <button className="bg-[#12304a] px-4 py-3 text-xs font-semibold uppercase text-white">Créer le contact</button>
+    </form>}
+
+    <div className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
+      <div className="border border-[#d9e1e8] bg-white p-5">
+        <h2 className="text-2xl font-semibold tracking-[-0.02em]">Contacts</h2>
+        <div className="mt-5 space-y-3">
+          {contacts.map((contact:any)=><article key={contact.id} className="border border-[#e7edf2] p-4">
+            <div className="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <h3 className="font-semibold">{[contact.first_name,contact.last_name].filter(Boolean).join(' ')||contact.company||'Contact'}</h3>
+                <p className="mt-1 text-sm text-[#687685]">{contact.email||contact.phone||'—'}</p>
+                <p className="mt-2 text-xs text-[#315d7c]">Capital {money(contact.capital_available,contact.currency)} · Budget max {money(contact.budget_max,contact.currency)}</p>
+                {contact.next_action_at?<p className={`mt-2 text-xs ${new Date(contact.next_action_at)<new Date()?'font-semibold text-[#a85656]':'text-[#687685]'}`}>Prochaine action : {new Date(contact.next_action_at).toLocaleString('fr-FR')}</p>:null}
+              </div>
+              <div className="flex flex-wrap gap-2">
+                <button onClick={()=>setDealContact(contact.id)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold">Créer deal</button>
+                <button onClick={()=>setActivityContact(contact.id)} className="border border-[#315d7c] px-3 py-2 text-xs font-semibold text-[#315d7c]">Ajouter relance</button>
+              </div>
+            </div>
+            <div className="mt-3 grid gap-2 sm:grid-cols-2">
+              <select value={contact.status} onChange={(e)=>contactStatus(contact.id,e.target.value)} className="min-h-[38px] border border-[#d9e1e8] px-2 text-xs">
+                <option value="new">Nouveau</option><option value="contacted">Contacté</option><option value="qualified">Qualifié</option><option value="nurturing">À nourrir</option><option value="inactive">Inactif</option><option value="converted">Converti</option><option value="lost">Perdu</option>
+              </select>
+              {isAdmin?<select value={contact.owner_user_id||''} onChange={(e)=>assign(contact.id,e.target.value)} className="min-h-[38px] border border-[#d9e1e8] px-2 text-xs"><option value="">Attribuer à un partenaire…</option>{partnerUsers.map((p:any)=><option key={p.user_id} value={p.user_id}>{p.full_name||p.email}</option>)}</select>:null}
+            </div>
+          </article>)}
+          {contacts.length===0&&<p className="py-5 text-sm text-[#687685]">Aucun contact.</p>}
+        </div>
+      </div>
+
+      <div className="border border-[#d9e1e8] bg-[#12304a] p-5 text-white">
+        <h2 className="text-2xl font-semibold tracking-[-0.02em]">Pipeline</h2>
+        {dealContact&&<form onSubmit={createDeal} className="mt-5 grid gap-3 border border-white/10 p-4">
+          <input name="title" placeholder="Nom du deal" className="bg-white px-3 py-2 text-sm text-[#162334]"/>
+          <div className="grid grid-cols-3 gap-2"><input name="deal_value" placeholder="Valeur" className="bg-white px-3 py-2 text-sm text-[#162334]"/><select name="currency" className="bg-white px-2 text-sm text-[#162334]"><option>EUR</option><option>USD</option><option>TRY</option></select><input name="probability" defaultValue="10" placeholder="%" className="bg-white px-3 py-2 text-sm text-[#162334]"/></div>
+          <input name="expected_close_date" type="date" className="bg-white px-3 py-2 text-sm text-[#162334]"/>
+          <button className="bg-[#d8e6ef] px-4 py-2 text-xs font-semibold uppercase text-[#12304a]">Ajouter au pipeline</button>
+        </form>}
+        <div className="mt-5 space-y-3">
+          {deals.map((deal:any)=><article key={deal.id} className="border border-white/10 p-4">
+            <div className="flex flex-wrap items-start justify-between gap-3">
+              <div><span className="text-[0.65rem] font-semibold uppercase tracking-[0.1em] text-[#b9d0e0]">{deal.stage}</span><h3 className="mt-1 text-xl font-semibold">{deal.title}</h3></div>
+              <strong>{deal.probability}%</strong>
+            </div>
+            <div className="mt-3 flex justify-between text-sm text-[#b9c0ca]"><span>{money(deal.deal_value,deal.currency)}</span><span>{deal.expected_close_date||'Date à définir'}</span></div>
+            <select value={deal.stage} onChange={(e)=>dealStage(deal.id,e.target.value)} className="mt-4 min-h-[38px] w-full bg-white px-2 text-xs text-[#162334]">
+              <option value="lead">Lead</option><option value="qualified">Qualifié</option><option value="viewing">Visite</option><option value="offer">Offre</option><option value="reservation">Réservation</option><option value="due_diligence">Due diligence</option><option value="contract">Contrat</option><option value="closed_won">Gagné</option><option value="closed_lost">Perdu</option>
+            </select>
+          </article>)}
+          {deals.length===0&&<p className="py-5 text-sm text-[#a9bfd0]">Aucun deal.</p>}
+        </div>
+      </div>
+    </div>
+
+    <section className="mt-6 border border-[#d9e1e8] bg-white p-5">
+      <div className="flex flex-wrap items-center justify-between gap-3"><div><h2 className="text-2xl font-semibold tracking-[-0.02em]">Relances & activités</h2><p className="mt-1 text-sm text-[#687685]">Appels, WhatsApp, e-mails, réunions, tâches et notes liés au dossier.</p></div><span className="text-xs font-semibold text-[#315d7c]">{openActivities.length} ouverte(s)</span></div>
+
+      {activityContact&&<form onSubmit={createActivity} className="mt-5 grid gap-3 border border-[#e7edf2] bg-[#f7f9fb] p-4 md:grid-cols-4">
+        <select name="activity_type" className="border border-[#cfd8e3] bg-white px-3 py-2 text-sm"><option value="task">Tâche</option><option value="call">Appel</option><option value="whatsapp">WhatsApp</option><option value="email">E-mail</option><option value="meeting">Réunion</option><option value="note">Note</option><option value="viewing">Visite</option><option value="document">Document</option></select>
+        <input name="subject" required placeholder="Objet / prochaine action" className="border border-[#cfd8e3] bg-white px-3 py-2 text-sm"/>
+        <input name="due_at" type="datetime-local" className="border border-[#cfd8e3] bg-white px-3 py-2 text-sm"/>
+        <select name="deal_id" className="border border-[#cfd8e3] bg-white px-3 py-2 text-sm"><option value="">Sans deal</option>{deals.filter((d:any)=>d.contact_id===activityContact).map((d:any)=><option key={d.id} value={d.id}>{d.title}</option>)}</select>
+        <textarea name="body" placeholder="Compte rendu / détail" className="border border-[#cfd8e3] bg-white px-3 py-2 text-sm md:col-span-3"/>
+        <button className="bg-[#12304a] px-4 py-2 text-xs font-semibold uppercase text-white">Enregistrer</button>
+      </form>}
+
+      <div className="mt-5 divide-y divide-[#e7edf2]">
+        {activities.map((activity:any)=>{const contact=contactById[activity.contact_id];const deal=dealById[activity.deal_id];return <div key={activity.id} className="flex flex-wrap items-start justify-between gap-4 py-4">
+          <div><span className="text-[0.65rem] font-semibold uppercase tracking-[0.08em] text-[#315d7c]">{activity.activity_type}{activity.completed_at?' · terminé':''}</span><h3 className="mt-1 font-semibold">{activity.subject}</h3><p className="mt-1 text-sm text-[#687685]">{contact?[contact.first_name,contact.last_name].filter(Boolean).join(' '):'Contact'}{deal?` · ${deal.title}`:''}</p>{activity.body?<p className="mt-2 text-sm leading-6 text-[#526272]">{activity.body}</p>:null}{activity.due_at?<p className={`mt-2 text-xs ${!activity.completed_at&&new Date(activity.due_at)<new Date()?'font-semibold text-[#a85656]':'text-[#7b8794]'}`}>Échéance {new Date(activity.due_at).toLocaleString('fr-FR')}</p>:null}</div>
+          {!activity.completed_at?<button onClick={()=>completeActivity(activity.id)} className="border border-[#2f6d59] px-3 py-2 text-xs font-semibold text-[#2f6d59]">Terminer</button>:<CheckCircle2 size={18} className="text-[#2f6d59]"/>}
+        </div>})}
+        {!activities.length?<p className="py-6 text-sm text-[#687685]">Aucune activité enregistrée.</p>:null}
+      </div>
+    </section>
   </Section>;
 }
 
