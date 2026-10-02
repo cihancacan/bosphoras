@@ -5,7 +5,7 @@ import { FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import {
   Bell, Building2, Calculator, CheckCircle2, ChevronRight, CircleDollarSign, ClipboardCheck,
   Contact, KeyRound, LayoutDashboard, Link2, LogOut, MessageCircle, Plus, RefreshCw, Send,
-  ShieldCheck, Users, XCircle,
+  ShieldCheck, UserRound, Users, XCircle,
 } from 'lucide-react';
 import { createIsolatedPortalSupabase, getPortalSupabase } from '@/lib/portalSupabase';
 import { InvestmentCalculator } from '@/components/InvestmentCalculator';
@@ -13,8 +13,9 @@ import { ListingSubmissionEditor } from '@/components/ListingSubmissionEditor';
 import { AdminPropertyImporter } from '@/components/AdminPropertyImporter';
 import { AdminListingEditor } from '@/components/AdminListingEditor';
 import { ProfessionalOperationsPanel } from '@/components/ProfessionalOperationsPanel';
+import { PortalAccountPanel } from '@/components/PortalAccountPanel';
 
-type Tab = 'dashboard' | 'listings' | 'import' | 'crm' | 'operations' | 'chat' | 'calculators' | 'partners' | 'approvals';
+type Tab = 'dashboard' | 'listings' | 'import' | 'crm' | 'operations' | 'chat' | 'calculators' | 'partners' | 'approvals' | 'account';
 
 function money(value: any, currency = 'EUR') {
   const n = Number(value || 0);
@@ -74,10 +75,10 @@ export function PartnerWorkspace() {
       supabase.from('chat_threads').select('*').order('last_message_at', { ascending: false, nullsFirst: false }),
       supabase.from('notifications').select('*').order('created_at', { ascending: false }).limit(50),
       supabase.from('investment_scenarios').select('*').order('updated_at', { ascending: false }).limit(50),
+      supabase.from('partner_companies').select('*').order('created_at', { ascending: false }),
     ];
     if (profileData.role === 'admin') {
       requests.push(
-        supabase.from('partner_companies').select('*').order('created_at', { ascending: false }),
         supabase.from('profiles').select('*').eq('role', 'partner').order('created_at', { ascending: false })
       );
     }
@@ -90,8 +91,8 @@ export function PartnerWorkspace() {
     setThreads(results[4].data || []);
     setNotifications(results[5].data || []);
     setSavedScenarios(results[6].data || []);
+    setPartners(results[7].data || []);
     if (profileData.role === 'admin') {
-      setPartners(results[7].data || []);
       setPartnerUsers(results[8].data || []);
     }
 
@@ -139,6 +140,7 @@ export function PartnerWorkspace() {
       ['operations','Opérations',ClipboardCheck],
       ['chat','Chat interne',MessageCircle],
       ['calculators','Calculateurs',Calculator],
+      ['account','Mon compte',UserRound],
     ] as any[];
     if (isAdmin) base.push(['import','Importer par lien',Link2],['partners','Partenaires',Users],['approvals','Validations',ClipboardCheck]);
     return base;
@@ -256,6 +258,7 @@ export function PartnerWorkspace() {
             onSaved={loadAll}
           /></Section>}
           {tab==='partners' && isAdmin && <PartnersPanel partners={partners} partnerUsers={partnerUsers} reload={loadAll}/>}
+          {tab==='account' && <Section title="Mon compte" kicker="Accès & sécurité"><PortalAccountPanel user={user} profile={profile} partner={partners.find((p:any)=>p.id===profile?.partner_id)} /></Section>}
           {tab==='approvals' && isAdmin && <ApprovalsPanel submissions={submissions} reload={loadAll}/>}
         </main>
       </div>
