@@ -10,12 +10,11 @@ import {
 type PropertyRow = Record<string, any>;
 
 const PROPERTY_SUPABASE_URL =
-  process.env.NEXT_PUBLIC_SUPABASE_URL ||
-  process.env.SUPABASE_URL ||
+  process.env.NEXT_PUBLIC_PROPERTY_SUPABASE_URL ||
   'https://udbzytlmcnljlegmolcx.supabase.co';
 
 const PROPERTY_SUPABASE_PUBLISHABLE_KEY =
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+  process.env.NEXT_PUBLIC_PROPERTY_SUPABASE_PUBLISHABLE_KEY ||
   'sb_publishable_yQPc71ry-F3aqBLhj6OPig_cFs_u-Pa';
 
 function publicClient() {
