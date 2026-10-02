@@ -4,14 +4,15 @@
 import { FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import {
   Bell, Building2, Calculator, CheckCircle2, ChevronRight, CircleDollarSign, ClipboardCheck,
-  Contact, KeyRound, LayoutDashboard, LogOut, MessageCircle, Plus, RefreshCw, Send,
+  Contact, KeyRound, LayoutDashboard, Link2, LogOut, MessageCircle, Plus, RefreshCw, Send,
   ShieldCheck, Users, XCircle,
 } from 'lucide-react';
 import { createIsolatedPortalSupabase, getPortalSupabase } from '@/lib/portalSupabase';
 import { InvestmentCalculator } from '@/components/InvestmentCalculator';
 import { ListingSubmissionEditor } from '@/components/ListingSubmissionEditor';
+import { AdminPropertyImporter } from '@/components/AdminPropertyImporter';
 
-type Tab = 'dashboard' | 'listings' | 'crm' | 'chat' | 'calculators' | 'partners' | 'approvals';
+type Tab = 'dashboard' | 'listings' | 'import' | 'crm' | 'chat' | 'calculators' | 'partners' | 'approvals';
 
 function money(value: any, currency = 'EUR') {
   const n = Number(value || 0);
@@ -133,7 +134,7 @@ export function PartnerWorkspace() {
       ['chat','Chat interne',MessageCircle],
       ['calculators','Calculateurs',Calculator],
     ] as any[];
-    if (isAdmin) base.push(['partners','Partenaires',Users],['approvals','Validations',ClipboardCheck]);
+    if (isAdmin) base.push(['import','Importer par lien',Link2],['partners','Partenaires',Users],['approvals','Validations',ClipboardCheck]);
     return base;
   }, [isAdmin]);
 
@@ -226,6 +227,7 @@ export function PartnerWorkspace() {
               reload={loadAll}
             />
           )}
+          {tab==='import' && isAdmin && <Section title="Importer une opportunité" kicker="Source partenaire → Bosphoras"><AdminPropertyImporter user={user} reload={loadAll}/></Section>}
           {tab==='crm' && <CrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} partnerUsers={partnerUsers} reload={loadAll}/>}
           {tab==='chat' && <ChatPanel isAdmin={isAdmin} user={user} threads={threads} partnerUsers={partnerUsers} selectedThread={selectedThread} setSelectedThread={setSelectedThread} messages={messages}/>}
           {tab==='calculators' && <Section title="Calculateurs investissement" kicker="Bosphoras Analysis"><InvestmentCalculator/></Section>}
