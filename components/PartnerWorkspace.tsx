@@ -66,7 +66,7 @@ export function PartnerWorkspace() {
     }
     setProfile(profileData);
 
-    const requests: Promise<any>[] = [
+    const requests: any[] = [
       supabase.from('property_listing_submissions').select('*').order('created_at', { ascending: false }),
       supabase.from('property_listings').select('*').order('updated_at', { ascending: false }),
       supabase.from('crm_contacts').select('*').order('updated_at', { ascending: false }),
@@ -246,7 +246,7 @@ function Section({title,kicker,children,action}:{title:string;kicker?:string;chi
 }
 
 function Dashboard({isAdmin,partners,listings,contacts,deals,pipeline,pendingApprovals,activeDeals,notifications,setTab}:any) {
-  const cards = [
+  const cards: Array<[string, string | number, any]> = [
     [isAdmin?'Partenaires actifs':'Biens attribués', isAdmin?partners.filter((p:any)=>p.status==='active').length:listings.length, Users],
     ['Contacts CRM', contacts.length, Contact],
     ['Deals actifs', activeDeals, CircleDollarSign],
