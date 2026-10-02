@@ -5,6 +5,8 @@ import { buildMetadata } from '@/lib/seo';
 import { MainPageRenderer } from '@/components/MainPageRenderer';
 import { HighPotentialGuideRenderer } from '@/components/HighPotentialGuideRenderer';
 import { ProgrammaticPageRenderer } from '@/components/ProgrammaticPageRenderer';
+import { PropertyDeskPage } from '@/components/PropertyDeskPage';
+import { PropertyDetailPage } from '@/components/PropertyDetailPage';
 import { PrivateAssessmentLocalizedPage } from '@/components/PrivateAssessmentLocalizedPage';
 import { MembershipApplicationLocalizedPage } from '@/components/MembershipApplicationLocalizedPage';
 import { PrivateAccessApplicationNotice } from '@/components/PrivateAccessApplicationNotice';
@@ -12,6 +14,7 @@ import { getPageBySlug, allPages } from '@/data/pages';
 import { getHighPotentialGuideBySlug, highPotentialGuides } from '@/data/highPotentialPages';
 import { getProgrammaticPageBySlug, getProgrammaticPagesForLocale } from '@/data/programmatic/pages';
 import { ENABLE_ALL_PROGRAMMATIC_PAGES } from '@/lib/launchConfig';
+import { getPropertyBySlug, getPublishedProperties, propertyHubPaths } from '@/data/propertyDesk';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
@@ -44,6 +47,12 @@ export function generateStaticParams() {
         params.push({ locale, slug: programmaticPage.slug.replace(/^\//, '').split('/') });
       }
     }
+    for (const property of getPublishedProperties()) {
+      params.push({
+        locale,
+        slug: `${propertyHubPaths[locale].replace(/^\//, '')}/${property.slugs[locale].replace(/^\//, '')}`.split('/'),
+      });
+    }
   }
   return params;
 }
@@ -51,6 +60,26 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: PageProps): Metadata {
   if (!isLocale(params.locale)) return {};
   const slug = resolveSlug(params.slug);
+
+  if (slug.startsWith(`${propertyHubPaths[params.locale]}/`)) {
+    const propertySlug = slug.slice(propertyHubPaths[params.locale].length + 1);
+    const property = getPropertyBySlug(params.locale, propertySlug);
+    if (property) {
+      return buildMetadata({
+        locale: params.locale,
+        path: slug,
+        title: property.seoTitle[params.locale],
+        description: property.seoDescription[params.locale],
+        image: property.heroImage || property.images[0],
+        alternates: Object.fromEntries(
+          (['fr', 'en', 'ru', 'ar'] as const).map((targetLocale) => [
+            targetLocale,
+            `https://www.bosphoras.com${targetLocale === 'fr' ? '' : `/${targetLocale}`}${propertyHubPaths[targetLocale]}/${property.slugs[targetLocale].replace(/^\//, '')}`,
+          ])
+        ),
+      });
+    }
+  }
 
   const programmaticPage = getProgrammaticPageBySlug(params.locale, slug);
   if (programmaticPage) {
@@ -82,6 +111,12 @@ export function generateMetadata({ params }: PageProps): Metadata {
 export default function LocaleCatchAllPage({ params }: PageProps) {
   if (!isLocale(params.locale)) notFound();
   const slug = resolveSlug(params.slug);
+
+  if (slug.startsWith(`${propertyHubPaths[params.locale]}/`)) {
+    const propertySlug = slug.slice(propertyHubPaths[params.locale].length + 1);
+    const property = getPropertyBySlug(params.locale, propertySlug);
+    if (property) return <PropertyDetailPage locale={params.locale} property={property} />;
+  }
 
   const programmaticPage = ENABLE_ALL_PROGRAMMATIC_PAGES ? getProgrammaticPageBySlug(params.locale, slug) : undefined;
   if (programmaticPage) {
@@ -123,5 +158,6 @@ export default function LocaleCatchAllPage({ params }: PageProps) {
     );
   }
 
+  if (page.id === 'property') return <PropertyDeskPage page={page} />;
   return <MainPageRenderer page={page} />;
 }
