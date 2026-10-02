@@ -13,7 +13,7 @@ import { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';
 import dynamic from 'next/dynamic';
 const SearchOverlay = dynamic(() => import('@/components/SearchOverlay').then((module) => module.SearchOverlay));
 
-interface HeaderProps { locale: Locale; currentPath?: string; }
+interface HeaderProps { locale: Locale; currentPath?: string; localizedPaths?: Partial<Record<Locale, string>>; }
 type MenuItem = { label: string; href: string; description?: string };
 type MenuGroup = { label: string; href: string; items: MenuItem[] };
 
@@ -45,7 +45,7 @@ function normalizePath(path: string) {
   return clean.replace(/\/$/, '') || '/';
 }
 
-export function Header({ locale, currentPath = '/' }: HeaderProps) {
+export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -97,6 +97,7 @@ export function Header({ locale, currentPath = '/' }: HeaderProps) {
   ];
 
   const getLocaleHref = (targetLocale: Locale) => {
+    if (localizedPaths?.[targetLocale]) return localizedPaths[targetLocale] as string;
     const specialPath = specialLocalizedPaths.find((paths) => locales.some((loc) => normalizePath(paths[loc]) === normalizedCurrentPath));
     if (specialPath) return specialPath[targetLocale];
     const registryPage = allBosphorasSeoPages.find((page) => locales.some((loc) => normalizePath(page.slugs[loc]) === normalizedCurrentPath));
