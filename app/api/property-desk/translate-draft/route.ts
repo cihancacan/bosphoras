@@ -82,11 +82,13 @@ export async function POST(request: NextRequest) {
     'SEO copy must remain readable and not keyword-stuffed.',
     'If the city is explicitly Istanbul, Bodrum or Antalya, return the lowercase city key; otherwise return an empty string.',
     'For missing information return an empty string, null or an empty array.',
-    'JSON shape exactly: {"city":"","district":"","propertyType":"","developer":"","entryCapital":null,"bathrooms":null,"delivery":{"fr":"","en":"","ru":"","ar":""},"paymentPlan":[],"title":{"fr":"","en":"","ru":"","ar":""},"summary":{"fr":"","en":"","ru":"","ar":""},"description":{"fr":"","en":"","ru":"","ar":""},"seoTitle":{"fr":"","en":"","ru":"","ar":""},"seoDescription":{"fr":"","en":"","ru":"","ar":""},"technicalNotes":[],"strengths":[],"watchpoints":[]}.',
-    'technicalNotes, strengths and watchpoints must be arrays of objects with fr,en,ru,ar keys and only include points supported by the source.',
+    'JSON shape exactly: {"city":"","district":"","propertyType":"","developer":"","price":null,"currency":"","surfaceM2":null,"bedrooms":null,"bathrooms":null,"entryCapital":null,"delivery":{"fr":"","en":"","ru":"","ar":""},"paymentPlan":[],"highlights":[],"title":{"fr":"","en":"","ru":"","ar":""},"summary":{"fr":"","en":"","ru":"","ar":""},"description":{"fr":"","en":"","ru":"","ar":""},"seoTitle":{"fr":"","en":"","ru":"","ar":""},"seoDescription":{"fr":"","en":"","ru":"","ar":""},"technicalNotes":[],"strengths":[],"watchpoints":[]}.',
+    'technicalNotes, strengths, highlights and watchpoints must be arrays of objects with fr,en,ru,ar keys and only include points supported by the source.',
     'propertyType must be one of apartment,residence,villa,penthouse,commercial or empty.',
-    'developer, delivery, entryCapital, bathrooms and paymentPlan must only be filled when explicitly supported by the source.',
+    'developer, price, currency, surfaceM2, bedrooms, bathrooms, delivery, entryCapital and paymentPlan must only be filled when explicitly supported by the source.',
     'paymentPlan must be an array of {label:{fr,en,ru,ar}, percentage:number|null, amount:number|null, due:{fr,en,ru,ar}}. Do not infer missing installments.',
+    'If a numeric fact is present in rawText even when structured data missed it, extract it. Keep numeric fields as plain numbers without separators or currency symbols.',
+    'Currency must be one of EUR, USD, TRY, GBP, CHF or empty. Convert Turkish lira symbols/TRY/TL into TRY; do not convert monetary values between currencies.',
   ].join('\n');
 
   const result = await generateText({
