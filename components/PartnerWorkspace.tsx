@@ -11,6 +11,7 @@ import { createIsolatedPortalSupabase, getPortalSupabase } from '@/lib/portalSup
 import { InvestmentCalculator } from '@/components/InvestmentCalculator';
 import { ListingSubmissionEditor } from '@/components/ListingSubmissionEditor';
 import { AdminPropertyImporter } from '@/components/AdminPropertyImporter';
+import { AdminListingEditor } from '@/components/AdminListingEditor';
 
 type Tab = 'dashboard' | 'listings' | 'import' | 'crm' | 'chat' | 'calculators' | 'partners' | 'approvals';
 
@@ -297,6 +298,15 @@ function ListingsPanel({isAdmin,user,profile,listings,submissions,showNew,setSho
     if(error) alert(error.message); else reload();
   }
   const editor = showNew || editingSubmission || editingListing;
+  if(editingListing && isAdmin) {
+    return <Section title="Modifier une annonce" kicker="Contrôle administrateur">
+      <AdminListingEditor
+        listing={editingListing}
+        reload={reload}
+        onClose={()=>setEditingListing(null)}
+      />
+    </Section>;
+  }
   if(editor && !isAdmin) {
     return <Section title="Éditeur partenaire" kicker="Validation obligatoire">
       <ListingSubmissionEditor
@@ -314,7 +324,7 @@ function ListingsPanel({isAdmin,user,profile,listings,submissions,showNew,setSho
       <div className="border border-[#d8c7a1] bg-white p-5">
         <h2 className="font-sans text-2xl">{isAdmin?'Toutes les annonces':'Biens attribués'}</h2>
         <div className="mt-5 space-y-3">
-          {listings.map((l:any)=><article key={l.id} className="border border-[#eee3d2] p-4"><div className="flex items-start justify-between gap-4"><div><span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-[#315d7c]">{l.city} · {l.district}</span><h3 className="mt-1 font-sans text-xl">{l.title?.fr || l.external_id}</h3><p className="mt-2 text-sm text-[#66707b]">{money(l.total_price,l.currency)} · {l.published?'Publié':'Non publié'} · rév. {l.revision}</p></div>{l.hero_image&&<img src={l.hero_image} alt="" className="h-16 w-20 object-cover"/>}</div><div className="mt-4 flex flex-wrap gap-2">{isAdmin?<button onClick={()=>togglePublish(l)} className="border border-[#101827] px-3 py-2 text-xs font-bold uppercase">{l.published?'Dépublier':'Publier'}</button>:<button onClick={()=>setEditingListing(l)} className="border border-[#101827] px-3 py-2 text-xs font-bold uppercase">Proposer une modification</button>}</div></article>)}
+          {listings.map((l:any)=><article key={l.id} className="border border-[#eee3d2] p-4"><div className="flex items-start justify-between gap-4"><div><span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-[#315d7c]">{l.city} · {l.district}</span><h3 className="mt-1 font-sans text-xl">{l.title?.fr || l.external_id}</h3><p className="mt-2 text-sm text-[#66707b]">{money(l.total_price,l.currency)} · {l.published?'Publié':'Non publié'} · rév. {l.revision}</p></div>{l.hero_image&&<img src={l.hero_image} alt="" className="h-16 w-20 object-cover"/>}</div><div className="mt-4 flex flex-wrap gap-2">{isAdmin?<><button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase text-[#12304a]">Modifier</button><button onClick={()=>togglePublish(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">{l.published?'Dépublier':'Publier'}</button></>:<button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">Proposer une modification</button>}</div></article>)}
           {listings.length===0&&<p className="py-6 text-sm text-[#66707b]">Aucun bien attribué pour le moment.</p>}
         </div>
       </div>
