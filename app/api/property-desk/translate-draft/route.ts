@@ -97,12 +97,24 @@ function fallbackPropertyType(text: string) {
   return '';
 }
 
-function fallbackCity(text: string) {
+function fallbackLocation(text: string) {
   const lower = text.toLocaleLowerCase('tr-TR');
-  if (lower.includes('istanbul') || lower.includes('i̇stanbul')) return 'istanbul';
-  if (lower.includes('bodrum')) return 'bodrum';
-  if (lower.includes('antalya')) return 'antalya';
-  return '';
+  const options = [
+    ['istanbul','Istanbul','TR','Turkey',['istanbul','i̇stanbul']],
+    ['bodrum','Bodrum','TR','Turkey',['bodrum']],
+    ['antalya','Antalya','TR','Turkey',['antalya']],
+    ['dubai','Dubai','AE','United Arab Emirates',['dubai','دبي']],
+    ['batumi','Batumi','GE','Georgia',['batumi','ბათუმი']],
+    ['almaty','Almaty','KZ','Kazakhstan',['almaty','алматы']],
+    ['paris','Paris','FR','France',['paris']],
+    ['miami','Miami','US','United States',['miami']],
+    ['new-york','New York','US','United States',['new york','nyc']],
+    ['los-angeles','Los Angeles','US','United States',['los angeles']],
+  ] as const;
+  for (const [city,cityName,countryCode,countryName,terms] of options) {
+    if (terms.some((term)=>lower.includes(term))) return {city,cityName,countryCode,countryName};
+  }
+  return {city:'',cityName:'',countryCode:'',countryName:''};
 }
 
 async function buildTranslationFallback(data: any, source: any) {
@@ -118,7 +130,11 @@ async function buildTranslationFallback(data: any, source: any) {
   const summary = Object.fromEntries(summaryPairs);
   const description = Object.fromEntries(descriptionPairs);
   const delivery = Object.fromEntries(deliveryPairs);
-  const city = data.city || fallbackCity(`${source.title} ${source.district} ${source.rawText}`);
+  const fallbackLoc = fallbackLocation(`${source.title} ${source.district} ${source.rawText}`);
+  const city = data.city || fallbackLoc.city;
+  const cityName = data.cityName || fallbackLoc.cityName;
+  const countryCode = data.countryCode || fallbackLoc.countryCode;
+  const countryName = data.countryName || data.country || fallbackLoc.countryName;
   const propertyType = fallbackPropertyType(`${source.title} ${source.description} ${source.rawText}`);
 
   const seoTitle = Object.fromEntries(targets.map((locale) => {
@@ -151,6 +167,9 @@ async function buildTranslationFallback(data: any, source: any) {
 
   return {
     city,
+    cityName,
+    countryCode,
+    countryName,
     district: data.district || '',
     propertyType,
     developer: data.developer || '',
@@ -195,6 +214,9 @@ export async function POST(request: NextRequest) {
     district: data.district || '',
     country: data.country || '',
     city: data.city || '',
+    cityName: data.cityName || '',
+    countryCode: data.countryCode || '',
+    countryName: data.countryName || data.country || '',
     developer: data.developer || '',
     delivery: data.delivery || '',
     paymentPlan: Array.isArray(data.paymentPlan) ? data.paymentPlan : [],
@@ -213,15 +235,15 @@ export async function POST(request: NextRequest) {
     'Meta descriptions are suggestions, not source facts. Aim for a concise investor-oriented summary (roughly 135-165 characters when practical) with location, property type and the strongest verified differentiator.',
     'In French use natural search language such as immobilier Turquie, immobilier Istanbul/Bodrum/Antalya, appartement/villa à vendre only when it accurately describes the source. In English use property in Turkey / property in the city naturally. Do the equivalent in Russian and Arabic.',
     'Never add phrases such as guaranteed return, best investment, citizenship eligible, sea view, delivery date or payment plan unless the source explicitly supports them.',
-    'If the city is explicitly Istanbul, Bodrum or Antalya, return the lowercase city key; otherwise return an empty string.',
+    'Return city as a lowercase URL-safe key, cityName as the normal display name, countryCode as ISO-style country code when clearly known, and countryName as the country display name. Do not invent a location.',
     'For missing information return an empty string, null or an empty array.',
-    'JSON shape exactly: {"city":"","district":"","propertyType":"","developer":"","price":null,"currency":"","surfaceM2":null,"bedrooms":null,"bathrooms":null,"entryCapital":null,"delivery":{"fr":"","en":"","ru":"","ar":""},"paymentPlan":[],"highlights":[],"title":{"fr":"","en":"","ru":"","ar":""},"summary":{"fr":"","en":"","ru":"","ar":""},"description":{"fr":"","en":"","ru":"","ar":""},"seoTitle":{"fr":"","en":"","ru":"","ar":""},"seoDescription":{"fr":"","en":"","ru":"","ar":""},"technicalNotes":[],"strengths":[],"watchpoints":[]}.',
+    'JSON shape exactly: {"city":"","cityName":"","countryCode":"","countryName":"","district":"","propertyType":"","developer":"","price":null,"currency":"","surfaceM2":null,"bedrooms":null,"bathrooms":null,"entryCapital":null,"delivery":{"fr":"","en":"","ru":"","ar":""},"paymentPlan":[],"highlights":[],"title":{"fr":"","en":"","ru":"","ar":""},"summary":{"fr":"","en":"","ru":"","ar":""},"description":{"fr":"","en":"","ru":"","ar":""},"seoTitle":{"fr":"","en":"","ru":"","ar":""},"seoDescription":{"fr":"","en":"","ru":"","ar":""},"technicalNotes":[],"strengths":[],"watchpoints":[]}.',
     'technicalNotes, strengths, highlights and watchpoints must be arrays of objects with fr,en,ru,ar keys and only include points supported by the source.',
     'propertyType must be one of apartment,residence,villa,penthouse,commercial or empty.',
     'developer, price, currency, surfaceM2, bedrooms, bathrooms, delivery, entryCapital and paymentPlan must only be filled when explicitly supported by the source.',
     'paymentPlan must be an array of {label:{fr,en,ru,ar}, percentage:number|null, amount:number|null, due:{fr,en,ru,ar}}. Do not infer missing installments.',
     'If a numeric fact is present in rawText even when structured data missed it, extract it. Keep numeric fields as plain numbers without separators or currency symbols.',
-    'Currency must be one of EUR, USD, TRY, GBP, CHF, AED or empty. Convert Turkish lira symbols/TRY/TL into TRY; do not convert monetary values between currencies.',
+    'Currency must be one of EUR, USD, TRY, GBP, CHF, AED, KZT, GEL or empty. Convert Turkish lira symbols/TRY/TL into TRY; do not convert monetary values between currencies.',
   ].join('\n');
 
   let translated: any = null;
