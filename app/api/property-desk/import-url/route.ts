@@ -118,7 +118,7 @@ function unique<T>(values: T[]) {
   return Array.from(new Set(values));
 }
 
-async function verifyAdmin(request: NextRequest) {
+async function verifyPortalUser(request: NextRequest) {
   const token = bearer(request);
   if (!token) return null;
   const client = createClient(SUPABASE_URL, PUBLISHABLE_KEY, {
@@ -128,8 +128,8 @@ async function verifyAdmin(request: NextRequest) {
   const { data: auth } = await client.auth.getUser(token);
   if (!auth.user) return null;
   const { data: profile } = await client.from('profiles').select('role,status').eq('user_id', auth.user.id).maybeSingle();
-  if (!profile || profile.role !== 'admin' || profile.status !== 'active') return null;
-  return { client, user: auth.user, token };
+  if (!profile || profile.status !== 'active' || !['admin','partner'].includes(profile.role)) return null;
+  return { client, user: auth.user, token, role: profile.role };
 }
 
 async function copyImages(client: any, userId: string, images: string[]) {
@@ -143,7 +143,7 @@ async function copyImages(client: any, userId: string, images: string[]) {
       const bytes = new Uint8Array(await response.arrayBuffer());
       if (bytes.byteLength > 15 * 1024 * 1024) continue;
       const ext = type === 'image/png' ? 'png' : type === 'image/webp' ? 'webp' : type === 'image/avif' ? 'avif' : 'jpg';
-      const path = `imports/${userId}/${crypto.randomUUID()}.${ext}`;
+      const path = `submissions/${userId}/imports/${crypto.randomUUID()}.${ext}`;
       const { error } = await client.storage.from('property-images').upload(path, bytes, { contentType: type, cacheControl: '31536000' });
       if (error) continue;
       const { data } = client.storage.from('property-images').getPublicUrl(path);
@@ -154,8 +154,8 @@ async function copyImages(client: any, userId: string, images: string[]) {
 }
 
 export async function POST(request: NextRequest) {
-  const admin = await verifyAdmin(request);
-  if (!admin) return NextResponse.json({ error: 'Acc\u00e8s administrateur requis.' }, { status: 401 });
+  const portalUser = await verifyPortalUser(request);
+  if (!portalUser) return NextResponse.json({ error: 'Acc\u00e8s Bosphoras actif requis.' }, { status: 401 });
 
   const body = await request.json().catch(() => null);
   const source = String(body?.url || '').trim();
@@ -203,7 +203,7 @@ export async function POST(request: NextRequest) {
     .filter(Boolean);
 
   const remoteImages = unique([...ogImages, ...ldImages, ...htmlImages].map((x) => absolute(url, x)).filter((x) => /^https?:\/\//i.test(x))).slice(0, 20);
-  const images = body?.copyImages === false ? remoteImages : await copyImages(admin.client, admin.user.id, remoteImages);
+  const images = body?.copyImages === false ? remoteImages : await copyImages(portalUser.client, portalUser.user.id, remoteImages);
 
   const price = firstNumber(nestedOffer.price, nestedOffer.lowPrice, item.price);
   const currency = String(nestedOffer.priceCurrency || item.priceCurrency || '').toUpperCase();
@@ -229,10 +229,10 @@ export async function POST(request: NextRequest) {
     rawText: stripHtml(html).slice(0, 12000),
   };
 
-  const { data: job } = await admin.client
+  const { data: job } = await portalUser.client
     .from('property_import_jobs')
     .insert({
-      created_by: admin.user.id,
+      created_by: portalUser.user.id,
       source_url: url.toString(),
       source_host: url.hostname,
       status: 'extracted',
