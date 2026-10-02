@@ -76,7 +76,10 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
     const mergeImages=Array.from(new Set([...importedImages,...(draft.images||[])]));
     setDraft((current:any)=>({
       ...current,
+      country_code:prepared.countryCode||current.country_code||'TR',
+      country_name:prepared.countryName||current.country_name||'Turkey',
       city:prepared.city||current.city,
+      city_name:prepared.cityName||current.city_name||prepared.city||current.city,
       district:prepared.district||current.district,
       collection:prepared.collection||current.collection,
       property_type:prepared.propertyType||current.property_type,
@@ -96,6 +99,12 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
       seo_description:prepared.seoDescription||current.seo_description,
       delivery:prepared.delivery||current.delivery,
       payment_plan:Array.isArray(prepared.paymentPlan)&&prepared.paymentPlan.length?prepared.paymentPlan:current.payment_plan,
+      payment_plan_enabled:prepared.paymentPlanEnabled??current.payment_plan_enabled??true,
+      payment_interest_mode:prepared.paymentInterestMode||current.payment_interest_mode||'not_specified',
+      payment_interest_rate:prepared.paymentInterestRate??current.payment_interest_rate,
+      cash_discount_pct:prepared.cashDiscountPct??current.cash_discount_pct,
+      cash_price:prepared.cashPrice??current.cash_price,
+      installment_price:prepared.installmentPrice??current.installment_price,
       images:mergeImages,
       hero_image:mergeImages[0]||current.hero_image,
       source_url:prepared.sourceUrl||current.source_url,
@@ -118,7 +127,10 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
         collection:draft.collection,
         transaction_type:draft.transaction_type,
         property_type:draft.property_type,
+        country_code:String(draft.country_code||'TR').toUpperCase(),
+        country_name:draft.country_name||'Turkey',
         city:draft.city,
+        city_name:draft.city_name||draft.city,
         district:draft.district,
         slug_fr:draft.slug_fr,
         slug_en:draft.slug_en,
@@ -139,6 +151,12 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
         delivery:draft.delivery,
         developer:draft.developer||null,
         payment_plan:Array.isArray(draft.payment_plan)?draft.payment_plan:[],
+        payment_plan_enabled:Boolean(draft.payment_plan_enabled),
+        payment_interest_mode:draft.payment_interest_mode||'not_specified',
+        payment_interest_rate:Number(draft.payment_interest_rate)||null,
+        cash_discount_pct:Number(draft.cash_discount_pct)||null,
+        cash_price:Number(draft.cash_price)||null,
+        installment_price:Number(draft.installment_price)||null,
         strengths:linesToLocalized(draft.strengths_text),
         technical_notes:linesToLocalized(draft.technical_notes_text),
         watchpoints:linesToLocalized(draft.watchpoints_text),
@@ -178,11 +196,13 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
     <PropertyUrlAutofill onPrepared={applyImported} />
 
     <section className="grid gap-4 border border-[#d9e1e8] bg-white p-5 md:grid-cols-4">
-      <label className={label}>Ville<select value={draft.city} onChange={(e)=>setField('city',e.target.value)} className={input}><option value="istanbul">Istanbul</option><option value="bodrum">Bodrum</option><option value="antalya">Antalya</option></select></label>
+      <label className={label}>Pays <span className="normal-case font-normal tracking-normal text-[#7b8794]">(nom affiché)</span><input value={draft.country_name||''} onChange={(e)=>setField('country_name',e.target.value)} className={input} placeholder="Turkey, UAE, Georgia…"/></label>
+      <label className={label}>Code pays <span className="normal-case font-normal tracking-normal text-[#7b8794]">(TR, AE, GE, KZ…)</span><input value={draft.country_code||''} onChange={(e)=>setField('country_code',e.target.value.toUpperCase().slice(0,3))} className={input}/></label>
+      <label className={label}>Ville <span className="normal-case font-normal tracking-normal text-[#7b8794]">(libre)</span><input value={draft.city_name||draft.city||''} onChange={(e)=>{const name=e.target.value;setField('city_name',name);setField('city',name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''));}} className={input} placeholder="Istanbul, Dubai, Batumi…"/></label>
       <label className={label}>Quartier<input value={draft.district||''} onChange={(e)=>setField('district',e.target.value)} className={input}/></label>
       <label className={label}>Type<select value={draft.property_type} onChange={(e)=>setField('property_type',e.target.value)} className={input}><option value="apartment">Appartement</option><option value="residence">Résidence</option><option value="villa">Villa</option><option value="penthouse">Penthouse</option><option value="commercial">Commercial</option></select></label>
       <label className={label}>Collection<select value={draft.collection} onChange={(e)=>setField('collection',e.target.value)} className={input}><option value="selected-investment">Selected Investment</option><option value="signature">Signature Collection</option><option value="private">Private Opportunity</option></select></label>
-      <label className={label}>Devise<select value={draft.currency} onChange={(e)=>setField('currency',e.target.value)} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option></select></label>
+      <label className={label}>Devise<select value={draft.currency} onChange={(e)=>setField('currency',e.target.value)} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option><option>KZT</option><option>GEL</option></select></label>
       <label className={label}>Prix total<input value={draft.total_price||''} onChange={(e)=>setField('total_price',e.target.value)} className={input}/></label>
       <label className={label}>Capital aujourd’hui<input value={draft.entry_capital||''} onChange={(e)=>setField('entry_capital',e.target.value)} className={input}/></label>
       <label className={label}>Surface m²<input value={draft.surface_m2||''} onChange={(e)=>setField('surface_m2',e.target.value)} className={input}/></label>
@@ -227,6 +247,13 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
     </details>
 
     <section className="border border-[#d9e1e8] bg-white p-5">
+      <div className="mb-5 grid gap-4 border-b border-[#e7edf2] pb-5 md:grid-cols-5">
+        <label className="flex items-center gap-3 pt-6 text-sm text-[#526272]"><input type="checkbox" checked={draft.payment_plan_enabled!==false} onChange={(e)=>setField('payment_plan_enabled',e.target.checked)}/> Afficher le plan</label>
+        <label className={label}>Type de taux<select value={draft.payment_interest_mode||'not_specified'} onChange={(e)=>setField('payment_interest_mode',e.target.value)} className={input}><option value="not_specified">Non précisé</option><option value="interest_free">Sans intérêt / 0%</option><option value="interest_bearing">Avec intérêt / surcoût</option></select></label>
+        <label className={label}>Taux / surcoût % <span className="normal-case font-normal tracking-normal text-[#7b8794]">(selon condition promoteur)</span><input value={draft.payment_interest_rate||''} onChange={(e)=>setField('payment_interest_rate',e.target.value)} className={input}/></label>
+        <label className={label}>Remise comptant % <span className="normal-case font-normal tracking-normal text-[#7b8794]">(si officiellement proposée)</span><input value={draft.cash_discount_pct||''} onChange={(e)=>setField('cash_discount_pct',e.target.value)} className={input}/></label>
+        <label className={label}>Prix cash / échelonné<div className="grid grid-cols-2 gap-2"><input value={draft.cash_price||''} onChange={(e)=>setField('cash_price',e.target.value)} className={input} placeholder="Cash"/><input value={draft.installment_price||''} onChange={(e)=>setField('installment_price',e.target.value)} className={input} placeholder="Échelonné"/></div></label>
+      </div>
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
           <h3 className="text-base font-semibold">Plan de paiement</h3>
