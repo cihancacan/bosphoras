@@ -212,7 +212,7 @@ export function PropertyAdminForm() {
       <LocalizedBlock title="Meta description" prefix="seo_description" kind="textarea" rows={3} />
 
       <section className="grid gap-5 border border-[#d8c7a1] bg-white p-6 md:grid-cols-4">
-        <label className="grid gap-2"><span className="text-xs font-bold uppercase tracking-[0.12em] text-[#66707b]">Devise</span><select name="currency" className="min-h-[46px] border border-[#d8c7a1] bg-white px-3 text-sm"><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option></select></label>
+        <label className="grid gap-2"><span className="text-xs font-bold uppercase tracking-[0.12em] text-[#66707b]">Devise</span><select name="currency" className="min-h-[46px] border border-[#d8c7a1] bg-white px-3 text-sm"><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option></select></label>
         <Field label="Prix total" name="total_price" type="number" />
         <Field label="Capital aujourd’hui" name="entry_capital" type="number" />
         <label className="flex items-center gap-3 pt-7 text-sm"><input type="checkbox" name="price_on_request" /> Prix sur demande</label>
