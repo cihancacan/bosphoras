@@ -590,6 +590,13 @@ function PartnersPanel({partners,partnerUsers,reload}:any) {
   const supabase=getPortalSupabase();
   const [created,setCreated]=useState<any>(null);
   const [busy,setBusy]=useState(false);
+  const [terms,setTerms]=useState<any[]>([]);
+
+  async function loadTerms(){
+    const {data}=await supabase.from('partner_admin_terms').select('*').order('updated_at',{ascending:false});
+    setTerms(data||[]);
+  }
+  useEffect(()=>{loadTerms();},[]);
 
   async function createPartner(e:FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -628,12 +635,7 @@ function PartnersPanel({partners,partnerUsers,reload}:any) {
     const {data:signup,error:signupError}=await isolated.auth.signUp({
       email,
       password,
-      options:{
-        data:{
-          full_name:fullName,
-          provision_code:prepared.provision_code,
-        },
-      },
+      options:{data:{full_name:fullName,provision_code:prepared.provision_code}},
     });
 
     if(signupError){
@@ -642,14 +644,10 @@ function PartnersPanel({partners,partnerUsers,reload}:any) {
       return;
     }
 
-    setCreated({
-      email,
-      fullName,
-      company,
-      sessionReady:Boolean(signup.session),
-    });
+    setCreated({email,fullName,company,sessionReady:Boolean(signup.session)});
     e.currentTarget.reset();
     await reload();
+    await loadTerms();
     setBusy(false);
   }
 
@@ -658,12 +656,44 @@ function PartnersPanel({partners,partnerUsers,reload}:any) {
     if(error)alert(error.message);else reload();
   }
 
+  async function updateCompany(event:FormEvent<HTMLFormElement>,partnerId:string){
+    event.preventDefault();
+    const fd=new FormData(event.currentTarget);
+    const {error}=await supabase.from('partner_companies').update({
+      name:String(fd.get('name')||'').trim(),
+      legal_name:String(fd.get('legal_name')||'').trim()||null,
+      email:String(fd.get('email')||'').trim()||null,
+      phone:String(fd.get('phone')||'').trim()||null,
+      website:String(fd.get('website')||'').trim()||null,
+      city:String(fd.get('city')||'').trim()||null,
+      address:String(fd.get('address')||'').trim()||null,
+      tax_number:String(fd.get('tax_number')||'').trim()||null,
+      license_number:String(fd.get('license_number')||'').trim()||null,
+    }).eq('id',partnerId);
+    if(error)alert(error.message);else reload();
+  }
+
+  async function updateTerms(partnerId:string,patch:any){
+    const current=terms.find((x:any)=>x.partner_id===partnerId)||{};
+    const payload={
+      commission_type:patch.commission_type??current.commission_type??'custom',
+      commission_rate:patch.commission_rate??current.commission_rate??null,
+      fixed_fee:patch.fixed_fee??current.fixed_fee??null,
+      default_currency:patch.default_currency??current.default_currency??'EUR',
+      agreement_status:patch.agreement_status??current.agreement_status??'pending',
+      kyc_status:patch.kyc_status??current.kyc_status??'pending',
+      admin_notes:patch.admin_notes??current.admin_notes??null,
+    };
+    const {error}=await supabase.from('partner_admin_terms').upsert({partner_id:partnerId,...payload},{onConflict:'partner_id'});
+    if(error)alert(error.message);else loadTerms();
+  }
+
   const usersByPartner=partnerUsers.reduce((acc:any,u:any)=>{(acc[u.partner_id] ||= []).push(u);return acc;},{});
 
   return <Section title="Gestion des partenaires" kicker="Administration complète">
     <div className="mb-6 border border-[#d9e1e8] bg-[#eef4f8] p-5 text-sm leading-6 text-[#51606f]">
       <strong className="text-[#162334]">Création contrôlée par l’administrateur.</strong> Le partenaire ne dispose d’aucun écran d’inscription.
-      Vous créez ici sa société, son utilisateur et son mot de passe initial. Il ne voit ensuite que ses dossiers, ses contacts CRM et ses conversations.
+      Vous créez ici sa société, son utilisateur et son mot de passe initial. Vous pouvez ensuite contrôler son statut, son KYC, sa convention et ses conditions commerciales.
     </div>
 
     <form onSubmit={createPartner} className="grid gap-4 border border-[#d9e1e8] bg-white p-6 md:grid-cols-3">
@@ -682,24 +712,64 @@ function PartnersPanel({partners,partnerUsers,reload}:any) {
       <strong className="block text-[#162334]">Compte créé : {created.fullName} · {created.company}</strong>
       <p className="mt-2 text-sm leading-6 text-[#5f6e7d]">
         Identifiant : {created.email}. {created.sessionReady
-          ? 'Le compte est utilisable immédiatement avec le mot de passe que vous venez de définir.'
-          : 'Le compte Auth a été créé mais Supabase demande encore une confirmation e-mail avant la première connexion.'}
+          ? 'Le compte est utilisable immédiatement avec le mot de passe défini.'
+          : 'Selon la configuration Auth, Supabase peut encore demander une confirmation e-mail avant la première connexion.'}
       </p>
     </div>}
 
-    <div className="mt-8 grid gap-4 xl:grid-cols-2">{partners.map((p:any)=><article key={p.id} className="border border-[#d9e1e8] bg-white p-5">
-      <div className="flex flex-wrap items-start justify-between gap-4">
-        <div>
-          <span className="text-[0.67rem] font-semibold uppercase tracking-[0.1em] text-[#315d7c]">{p.status}</span>
-          <h3 className="mt-1 text-xl font-semibold tracking-[-0.02em]">{p.name}</h3>
-          <p className="mt-2 text-sm text-[#687685]">{p.email||'—'} · {usersByPartner[p.id]?.map((u:any)=>u.full_name||u.email).join(', ')||'Compte utilisateur en attente'}</p>
+    <div className="mt-8 space-y-5">{partners.map((partner:any)=>{
+      const term=terms.find((x:any)=>x.partner_id===partner.id)||{};
+      return <article key={partner.id} className="border border-[#d9e1e8] bg-white">
+        <div className="flex flex-wrap items-start justify-between gap-4 border-b border-[#e7edf2] p-5">
+          <div>
+            <span className="text-[0.67rem] font-semibold uppercase tracking-[0.1em] text-[#315d7c]">{partner.status}</span>
+            <h3 className="mt-1 text-xl font-semibold tracking-[-0.02em]">{partner.name}</h3>
+            <p className="mt-2 text-sm text-[#687685]">{partner.email||'—'} · {usersByPartner[partner.id]?.map((u:any)=>u.full_name||u.email).join(', ')||'Compte utilisateur en attente'}</p>
+          </div>
+          <div className="flex gap-2">
+            {partner.status!=='active'&&<button onClick={()=>status(partner.id,'active')} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase text-[#12304a]">Activer</button>}
+            {partner.status==='active'&&<button onClick={()=>status(partner.id,'suspended')} className="border border-[#a85656] px-3 py-2 text-xs font-semibold uppercase text-[#a85656]">Suspendre</button>}
+          </div>
         </div>
-        <div className="flex gap-2">
-          {p.status!=='active'&&<button onClick={()=>status(p.id,'active')} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase text-[#12304a]">Activer</button>}
-          {p.status==='active'&&<button onClick={()=>status(p.id,'suspended')} className="border border-[#a85656] px-3 py-2 text-xs font-semibold uppercase text-[#a85656]">Suspendre</button>}
+
+        <div className="grid gap-6 p-5 xl:grid-cols-[1.15fr_0.85fr]">
+          <form onSubmit={(e)=>updateCompany(e,partner.id)} className="grid gap-3 md:grid-cols-2">
+            <h4 className="text-sm font-semibold text-[#162334] md:col-span-2">Identité & conformité société</h4>
+            <input name="name" defaultValue={partner.name||''} placeholder="Nom commercial" className="min-h-[40px] border border-[#cfd8e3] px-3 text-sm"/>
+            <input name="legal_name" defaultValue={partner.legal_name||''} placeholder="Raison sociale" className="min-h-[40px] border border-[#cfd8e3] px-3 text-sm"/>
+            <input name="email" defaultValue={partner.email||''} placeholder="E-mail société" className="min-h-[40px] border border-[#cfd8e3] px-3 text-sm"/>
+            <input name="phone" defaultValue={partner.phone||''} placeholder="Téléphone" className="min-h-[40px] border border-[#cfd8e3] px-3 text-sm"/>
+            <input name="website" defaultValue={partner.website||''} placeholder="Site web" className="min-h-[40px] border border-[#cfd8e3] px-3 text-sm"/>
+            <input name="city" defaultValue={partner.city||''} placeholder="Ville" className="min-h-[40px] border border-[#cfd8e3] px-3 text-sm"/>
+            <input name="tax_number" defaultValue={partner.tax_number||''} placeholder="N° fiscal" className="min-h-[40px] border border-[#cfd8e3] px-3 text-sm"/>
+            <input name="license_number" defaultValue={partner.license_number||''} placeholder="N° licence / autorisation" className="min-h-[40px] border border-[#cfd8e3] px-3 text-sm"/>
+            <input name="address" defaultValue={partner.address||''} placeholder="Adresse" className="min-h-[40px] border border-[#cfd8e3] px-3 text-sm md:col-span-2"/>
+            <button className="min-h-[40px] border border-[#12304a] px-4 text-xs font-semibold uppercase text-[#12304a] md:col-span-2">Enregistrer la société</button>
+          </form>
+
+          <div className="border border-[#e7edf2] bg-[#f7f9fb] p-4">
+            <h4 className="text-sm font-semibold text-[#162334]">Cadre partenaire</h4>
+            <div className="mt-4 grid gap-3">
+              <label className="grid gap-1 text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#687685]">KYC
+                <select value={term.kyc_status||'pending'} onChange={(e)=>updateTerms(partner.id,{kyc_status:e.target.value})} className="min-h-[39px] border border-[#cfd8e3] bg-white px-2 text-sm normal-case tracking-normal"><option value="pending">En attente</option><option value="verified">Vérifié</option><option value="rejected">Refusé</option><option value="expired">Expiré</option></select>
+              </label>
+              <label className="grid gap-1 text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#687685]">Convention
+                <select value={term.agreement_status||'pending'} onChange={(e)=>updateTerms(partner.id,{agreement_status:e.target.value})} className="min-h-[39px] border border-[#cfd8e3] bg-white px-2 text-sm normal-case tracking-normal"><option value="pending">En attente</option><option value="signed">Signée</option><option value="expired">Expirée</option><option value="suspended">Suspendue</option></select>
+              </label>
+              <label className="grid gap-1 text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#687685]">Commission
+                <div className="grid grid-cols-[0.8fr_1fr] gap-2">
+                  <select value={term.commission_type||'custom'} onChange={(e)=>updateTerms(partner.id,{commission_type:e.target.value})} className="min-h-[39px] border border-[#cfd8e3] bg-white px-2 text-sm normal-case tracking-normal"><option value="percent">%</option><option value="fixed">Fixe</option><option value="custom">Sur mesure</option></select>
+                  <input defaultValue={term.commission_rate??''} onBlur={(e)=>updateTerms(partner.id,{commission_rate:e.target.value===''?null:Number(e.target.value)})} placeholder="Taux %" className="min-h-[39px] border border-[#cfd8e3] bg-white px-2 text-sm normal-case tracking-normal"/>
+                </div>
+              </label>
+              <label className="grid gap-1 text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#687685]">Note admin
+                <textarea defaultValue={term.admin_notes||''} onBlur={(e)=>updateTerms(partner.id,{admin_notes:e.target.value||null})} rows={3} className="border border-[#cfd8e3] bg-white px-2 py-2 text-sm normal-case tracking-normal"/>
+              </label>
+            </div>
+          </div>
         </div>
-      </div>
-    </article>)}</div>
+      </article>;
+    })}</div>
   </Section>;
 }
 
