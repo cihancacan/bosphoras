@@ -246,7 +246,7 @@ export function InvestmentCalculator({
       <div className="grid gap-5 border border-[#d9e1e8] bg-white p-6 md:grid-cols-4">
         <label className={labelClass}>Devise <Help>devise de travail du dossier</Help>
           <select value={currency} onChange={(e) => setCurrency(e.target.value)} className={inputClass}>
-            <option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option>
+            <option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option>
           </select>
         </label>
         <label className={labelClass}>Prix d'achat <Help>prix contractuel ou prix demandé</Help><input value={price} onChange={(e)=>setPrice(e.target.value)} className={inputClass} inputMode="decimal" /></label>
