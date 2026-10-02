@@ -7,6 +7,17 @@ import { getPortalSupabase } from '@/lib/portalSupabase';
 
 const locales=['fr','en','ru','ar'];
 
+function linesFromArray(items:any[] = [], locale='fr') {
+  return items.map((x:any)=>x?.[locale]).filter(Boolean).join('\n');
+}
+
+function linesToLocalized(value:any) {
+  const split:any={};
+  locales.forEach((l)=>{split[l]=String(value?.[l]||'').split('\n').map((x)=>x.trim()).filter(Boolean);});
+  const max=Math.max(0,...locales.map((l)=>split[l].length));
+  return Array.from({length:max},(_,i)=>Object.fromEntries(locales.map((l)=>[l,split[l][i]||split.fr[i]||''])));
+}
+
 export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose:()=>void;reload:()=>void}) {
   const supabase=getPortalSupabase();
   const [busy,setBusy]=useState(false);
@@ -20,6 +31,10 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
     seo_description:{fr:listing.seo_description?.fr||'',en:listing.seo_description?.en||'',ru:listing.seo_description?.ru||'',ar:listing.seo_description?.ar||''},
     delivery:{fr:listing.delivery?.fr||'',en:listing.delivery?.en||'',ru:listing.delivery?.ru||'',ar:listing.delivery?.ar||''},
     images:Array.isArray(listing.images)?listing.images:[],
+    payment_plan:Array.isArray(listing.payment_plan)?listing.payment_plan:[],
+    strengths_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.strengths||[],l)])),
+    technical_notes_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.technical_notes||[],l)])),
+    watchpoints_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.watchpoints||[],l)])),
   });
 
   const input='min-h-[43px] w-full border border-[#cfd8e3] bg-white px-3 text-sm outline-none focus:border-[#315d7c]';
@@ -85,6 +100,10 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
         bathrooms:Number(draft.bathrooms)||null,
         delivery:draft.delivery,
         developer:draft.developer||null,
+        payment_plan:Array.isArray(draft.payment_plan)?draft.payment_plan:[],
+        strengths:linesToLocalized(draft.strengths_text),
+        technical_notes:linesToLocalized(draft.technical_notes_text),
+        watchpoints:linesToLocalized(draft.watchpoints_text),
         images:draft.images,
         hero_image:draft.images?.[0]||null,
         published_at:draft.published?(draft.published_at||new Date().toISOString()):null,
@@ -145,6 +164,43 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
       ['Meta description','seo_description',true,3],
       ['Livraison','delivery',false,1],
     ].map(([name,key,multi,rows]:any)=><section key={key} className="border border-[#d9e1e8] bg-white p-5"><h3 className="text-base font-semibold">{name}</h3><div className="mt-4 grid gap-4 md:grid-cols-2">{locales.map((l)=><label key={l} className={label}>{l.toUpperCase()}{multi?<textarea rows={rows} value={draft[key]?.[l]||''} onChange={(e)=>setLocale(key,l,e.target.value)} className={textarea}/>:<input value={draft[key]?.[l]||''} onChange={(e)=>setLocale(key,l,e.target.value)} className={input}/>}</label>)}</div></section>)}
+
+    <section className="border border-[#d9e1e8] bg-white p-5">
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <h3 className="text-base font-semibold">Plan de paiement</h3>
+          <p className="mt-1 text-xs text-[#7b8794]">(utilisez seulement les conditions confirmées par le promoteur ou partenaire)</p>
+        </div>
+        <button type="button" onClick={()=>setField('payment_plan',[...(draft.payment_plan||[]),{label:{fr:'Nouvelle étape',en:'New step',ru:'Новый этап',ar:'مرحلة جديدة'},percentage:null,amount:null,due:{fr:'À définir',en:'To define',ru:'Уточнить',ar:'يحدد لاحقاً'}}])} className="border border-[#12304a] px-3 py-2 text-xs font-semibold text-[#12304a]">+ Étape</button>
+      </div>
+      <div className="mt-5 space-y-3">
+        {(draft.payment_plan||[]).map((step:any,index:number)=>(
+          <div key={index} className="grid gap-3 border-t border-[#e7edf2] pt-4 md:grid-cols-[1.1fr_0.45fr_0.65fr_1.1fr_auto]">
+            <input value={step?.label?.fr||''} onChange={(e)=>setField('payment_plan',(draft.payment_plan||[]).map((s:any,i:number)=>i===index?{...s,label:{...(s.label||{}),fr:e.target.value,en:s.label?.en||e.target.value,ru:s.label?.ru||e.target.value,ar:s.label?.ar||e.target.value}}:s))} className={input} placeholder="Étape"/>
+            <input value={step?.percentage??''} onChange={(e)=>setField('payment_plan',(draft.payment_plan||[]).map((s:any,i:number)=>i===index?{...s,percentage:e.target.value===''?null:Number(e.target.value)}:s))} className={input} placeholder="%" inputMode="decimal"/>
+            <input value={step?.amount??''} onChange={(e)=>setField('payment_plan',(draft.payment_plan||[]).map((s:any,i:number)=>i===index?{...s,amount:e.target.value===''?null:Number(e.target.value)}:s))} className={input} placeholder="Montant" inputMode="decimal"/>
+            <input value={step?.due?.fr||''} onChange={(e)=>setField('payment_plan',(draft.payment_plan||[]).map((s:any,i:number)=>i===index?{...s,due:{...(s.due||{}),fr:e.target.value,en:s.due?.en||e.target.value,ru:s.due?.ru||e.target.value,ar:s.due?.ar||e.target.value}}:s))} className={input} placeholder="Échéance"/>
+            <button type="button" onClick={()=>setField('payment_plan',(draft.payment_plan||[]).filter((_:any,i:number)=>i!==index))} className="px-3 text-[#a85656]">×</button>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section className="grid gap-5 lg:grid-cols-3">
+      {[
+        ['Pourquoi Bosphoras le sélectionne','strengths_text'],
+        ['Bosphoras Technical Notes','technical_notes_text'],
+        ['Points de vigilance','watchpoints_text'],
+      ].map(([title,key]:any)=>(
+        <div key={key} className="border border-[#d9e1e8] bg-white p-5">
+          <h3 className="text-base font-semibold">{title}</h3>
+          <p className="mt-1 text-xs text-[#7b8794]">(un point par ligne ; gardez une formulation factuelle)</p>
+          <div className="mt-4 space-y-3">
+            {locales.map((l)=><label key={l} className={label}>{l.toUpperCase()}<textarea rows={4} value={draft[key]?.[l]||''} onChange={(e)=>setField(key,{...(draft[key]||{}),[l]:e.target.value})} className={textarea}/></label>)}
+          </div>
+        </div>
+      ))}
+    </section>
 
     <section className="border border-[#d9e1e8] bg-white p-5">
       <div className="flex items-center gap-2"><ImagePlus size={17} className="text-[#315d7c]"/><h3 className="text-base font-semibold">Galerie</h3></div>
