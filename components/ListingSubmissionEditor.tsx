@@ -96,7 +96,7 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
     developer: String(initial.developer || ''),
     featured: Boolean(initial.featured),
     priceOnRequest: Boolean(initial.priceOnRequest),
-    paymentPlanEnabled: initial.paymentPlanEnabled !== false,
+    paymentPlanEnabled: initial.paymentPlanEnabled === true || (Array.isArray(initial.paymentPlan) && initial.paymentPlan.length > 0),
     paymentInterestMode: String(initial.paymentInterestMode || 'not_specified'),
     paymentInterestRate: String(initial.paymentInterestRate ?? ''),
     cashDiscountPct: String(initial.cashDiscountPct ?? ''),
@@ -130,13 +130,7 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
   });
   const [images, setImages] = useState<string[]>(Array.isArray(initial.images) ? initial.images : []);
   const [paymentPlan, setPaymentPlan] = useState<any[]>(
-    Array.isArray(initial.paymentPlan) && initial.paymentPlan.length
-      ? initial.paymentPlan
-      : [
-          { label: { fr: 'Réservation', en: 'Reservation', ru: 'Бронирование', ar: 'الحجز' }, percentage: 30, due: { fr: 'À la signature', en: 'At signing', ru: 'При подписании', ar: 'عند التوقيع' } },
-          { label: { fr: 'Pendant construction', en: 'During construction', ru: 'Во время строительства', ar: 'أثناء الإنشاء' }, percentage: 50, due: { fr: 'Selon échéancier', en: 'Per schedule', ru: 'По графику', ar: 'حسب الجدول' } },
-          { label: { fr: 'Livraison', en: 'Handover', ru: 'Передача', ar: 'التسليم' }, percentage: 20, due: { fr: 'À la livraison', en: 'At handover', ru: 'При передаче', ar: 'عند التسليم' } },
-        ]
+    Array.isArray(initial.paymentPlan) ? initial.paymentPlan : []
   );
 
   const editable = status === 'draft' || status === 'changes_requested';
