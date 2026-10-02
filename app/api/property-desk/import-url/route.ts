@@ -149,6 +149,8 @@ function currencyFromText(text: string) {
   if (/\bTRY\b|\bTL\b|TÜRK LİRASI|TURK LIRASI|₺/.test(upper)) return 'TRY';
   if (/\bGBP\b|POUND|£/.test(upper)) return 'GBP';
   if (/\bCHF\b|SWISS FRANC/.test(upper)) return 'CHF';
+  if (/\bKZT\b|TENGE|₸/.test(upper)) return 'KZT';
+  if (/\bGEL\b|LARI|₾/.test(upper)) return 'GEL';
   return '';
 }
 
@@ -195,12 +197,24 @@ function heuristicDistrict(text: string) {
   return '';
 }
 
-function heuristicCity(text: string) {
+function locationFromText(text: string) {
   const lower = text.toLocaleLowerCase('tr-TR');
-  if (lower.includes('istanbul') || lower.includes('i̇stanbul')) return 'istanbul';
-  if (lower.includes('bodrum')) return 'bodrum';
-  if (lower.includes('antalya')) return 'antalya';
-  return '';
+  const candidates = [
+    { city: 'istanbul', cityName: 'Istanbul', countryCode: 'TR', countryName: 'Turkey', terms: ['istanbul','i̇stanbul'] },
+    { city: 'bodrum', cityName: 'Bodrum', countryCode: 'TR', countryName: 'Turkey', terms: ['bodrum'] },
+    { city: 'antalya', cityName: 'Antalya', countryCode: 'TR', countryName: 'Turkey', terms: ['antalya'] },
+    { city: 'dubai', cityName: 'Dubai', countryCode: 'AE', countryName: 'United Arab Emirates', terms: ['dubai','دبي'] },
+    { city: 'batumi', cityName: 'Batumi', countryCode: 'GE', countryName: 'Georgia', terms: ['batumi','ბათუმი'] },
+    { city: 'almaty', cityName: 'Almaty', countryCode: 'KZ', countryName: 'Kazakhstan', terms: ['almaty','алматы'] },
+    { city: 'paris', cityName: 'Paris', countryCode: 'FR', countryName: 'France', terms: ['paris'] },
+    { city: 'miami', cityName: 'Miami', countryCode: 'US', countryName: 'United States', terms: ['miami'] },
+    { city: 'new-york', cityName: 'New York', countryCode: 'US', countryName: 'United States', terms: ['new york','nyc'] },
+    { city: 'los-angeles', cityName: 'Los Angeles', countryCode: 'US', countryName: 'United States', terms: ['los angeles'] },
+  ];
+  for (const item of candidates) {
+    if (item.terms.some((term) => lower.includes(term))) return item;
+  }
+  return { city: '', cityName: '', countryCode: '', countryName: '' };
 }
 
 function heuristicDelivery(text: string) {
@@ -379,17 +393,22 @@ export async function POST(request: NextRequest) {
 
   const rawText = stripHtml(html).slice(0, 24000);
   const structuredCurrency = String(nestedOffer.priceCurrency || item.priceCurrency || '').toUpperCase();
-  const detectedCurrency = ['EUR','USD','TRY','GBP','CHF','AED'].includes(structuredCurrency)
+  const detectedCurrency = ['EUR','USD','TRY','GBP','CHF','AED','KZT','GEL'].includes(structuredCurrency)
     ? structuredCurrency
     : currencyFromText(rawText);
   const structuredPrice = firstNumber(nestedOffer.price, nestedOffer.lowPrice, item.price);
   const price = structuredPrice || heuristicPrice(rawText, detectedCurrency);
   const surface = firstNumber(item.floorSize?.value, item.floorSize, item.area?.value, item.area) || heuristicSurface(rawText);
   const bedrooms = firstNumber(item.numberOfBedrooms, item.numberOfRooms) || heuristicBedrooms(rawText);
-  const structuredDistrict = String(address.addressLocality || address.addressRegion || item.addressLocality || '');
-  const district = decode(structuredDistrict) || heuristicDistrict(rawText);
-  const country = decode(String(address.addressCountry?.name || address.addressCountry || ''));
-  const city = heuristicCity(`${title} ${district} ${rawText.slice(0, 6000)}`);
+  const structuredLocality = decode(String(address.addressLocality || item.addressLocality || ''));
+  const structuredRegion = decode(String(address.addressRegion || ''));
+  const detectedLocation = locationFromText(`${title} ${structuredLocality} ${structuredRegion} ${rawText.slice(0, 7000)}`);
+  const cityName = structuredLocality || detectedLocation.cityName;
+  const city = detectedLocation.city || cityName.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+  const district = structuredRegion || heuristicDistrict(rawText);
+  const structuredCountry = decode(String(address.addressCountry?.name || address.addressCountry || ''));
+  const countryName = structuredCountry || detectedLocation.countryName;
+  const countryCode = detectedLocation.countryCode || '';
   const delivery = heuristicDelivery(rawText);
   const developer = heuristicDeveloper(rawText);
   const paymentPlan = heuristicPaymentPlan(rawText);
@@ -406,7 +425,9 @@ export async function POST(request: NextRequest) {
     bedrooms,
     district,
     city,
-    country,
+    cityName,
+    countryName,
+    countryCode,
     delivery,
     developer,
     paymentPlan,
