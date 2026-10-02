@@ -70,6 +70,10 @@ function mapRow(row: PropertyRow): PropertyListing {
     delivery: row.delivery ? localized(row.delivery) : undefined,
     developer: row.developer || undefined,
     partner: row.partner || undefined,
+    sourceUrl: row.source_url || undefined,
+    sourceHost: row.source_host || undefined,
+    sourceLastCheckedAt: row.source_last_checked_at || undefined,
+    sourcePartnerName: row.source_partner_name || undefined,
     paymentPlan: Array.isArray(row.payment_plan)
       ? row.payment_plan.map((step: any) => ({
           label: localized(step.label),
