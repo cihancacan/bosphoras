@@ -116,7 +116,7 @@ export async function PropertyDeskPage({ page }: PropertyDeskPageProps) {
       '@type':'ListItem',
       position:index+1,
       name:property.title[locale],
-      url:siteUrl+getLocalePath(locale,getPropertyPath(locale,property)),
+      url:siteUrl+getLocalePath(locale,getPropertyPath(locale,property,true)),
     })),
   };
   const breadcrumbName=locale==='fr'?'Immobilier Turquie':locale==='en'?'Property Turkey':locale==='ru'?'Недвижимость в Турции':'عقارات تركيا';
@@ -157,7 +157,7 @@ export async function PropertyDeskPage({ page }: PropertyDeskPageProps) {
         </div>
       </section>
 
-      <PropertyDeskBrowser locale={locale} properties={properties}/>
+      <PropertyDeskBrowser locale={locale} properties={properties} globalMode/>
 
       <section className="bg-white px-5 py-16 md:px-8 md:py-20">
         <div className="mx-auto max-w-[1540px]">
