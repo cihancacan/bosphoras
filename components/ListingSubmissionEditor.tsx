@@ -140,9 +140,9 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
   );
 
   const editable = status === 'draft' || status === 'changes_requested';
-  const input = 'min-h-[44px] w-full border border-[#d9e1e8] bg-white px-3 text-sm';
-  const textarea = 'w-full border border-[#d9e1e8] bg-white px-3 py-3 text-sm leading-6';
-  const label = 'grid gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[#526272]';
+  const input = 'min-h-[44px] w-full border border-[#d8d4cc] bg-white px-3 text-sm';
+  const textarea = 'w-full border border-[#d8d4cc] bg-white px-3 py-3 text-sm leading-6';
+  const label = 'grid gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[#6b7078]';
 
   function setLocalized(setter: (value: Localized) => void, current: Localized, locale: LocaleKey, value: string) {
     setter({ ...current, [locale]: value });
@@ -207,7 +207,10 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
   function applyImported(prepared:any){
     setCore((current:any)=>({
       ...current,
+      countryCode:prepared.countryCode||current.countryCode,
+      countryName:prepared.countryName||current.countryName,
       city:prepared.city||current.city,
+      cityName:prepared.cityName||prepared.city||current.cityName,
       district:prepared.district||current.district,
       collection:prepared.collection||current.collection,
       propertyType:prepared.propertyType||current.propertyType,
@@ -220,6 +223,12 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
       bathrooms:prepared.bathrooms!==''&&prepared.bathrooms!==null&&prepared.bathrooms!==undefined?String(prepared.bathrooms):current.bathrooms,
       developer:prepared.developer||current.developer,
       priceOnRequest:Boolean(prepared.priceOnRequest&&!(prepared.totalPrice||current.totalPrice)),
+      paymentPlanEnabled:prepared.paymentPlanEnabled??current.paymentPlanEnabled,
+      paymentInterestMode:prepared.paymentInterestMode||current.paymentInterestMode,
+      paymentInterestRate:prepared.paymentInterestRate!==null&&prepared.paymentInterestRate!==undefined?String(prepared.paymentInterestRate):current.paymentInterestRate,
+      cashDiscountPct:prepared.cashDiscountPct!==null&&prepared.cashDiscountPct!==undefined?String(prepared.cashDiscountPct):current.cashDiscountPct,
+      cashPrice:prepared.cashPrice!==null&&prepared.cashPrice!==undefined?String(prepared.cashPrice):current.cashPrice,
+      installmentPrice:prepared.installmentPrice!==null&&prepared.installmentPrice!==undefined?String(prepared.installmentPrice):current.installmentPrice,
       sourceUrl:prepared.sourceUrl||current.sourceUrl,
       sourceHost:prepared.sourceHost||current.sourceHost,
     }));
@@ -317,18 +326,27 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
     }
   }
 
+  const planBase = Number(core.installmentPrice || core.totalPrice || 0);
+  const firstStep = paymentPlan[0];
+  const firstStepAmount = firstStep?.amount
+    ? Number(firstStep.amount)
+    : firstStep?.percentage && planBase
+    ? Math.round(planBase * Number(firstStep.percentage) / 100)
+    : 0;
+  const planPercentTotal = paymentPlan.reduce((sum, step) => sum + (Number(step?.percentage) || 0), 0);
+
   return (
-    <form onSubmit={submitForReview} className="space-y-7 [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe_UI,sans-serif]">
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#d9e1e8] pb-5">
+    <form onSubmit={submitForReview} className="space-y-7 [font-family:'Avenir_Next','Helvetica_Neue',Arial,sans-serif]">
+      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#d8d4cc] pb-5">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#315d7c]">Soumission partenaire</p>
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#9a7447]">Soumission partenaire</p>
           <h3 className="mt-2 font-sans text-3xl">{listingId ? 'Proposer une modification' : 'Nouvelle opportunité'}</h3>
-          <p className="mt-2 text-sm text-[#526272]">Statut : <strong>{status}</strong>. La version publique ne change jamais avant validation Bosphoras.</p>
+          <p className="mt-2 text-sm text-[#6b7078]">Statut : <strong>{status}</strong>. La version publique ne change jamais avant validation Bosphoras.</p>
         </div>
-        {onClose ? <button type="button" onClick={onClose} className="p-2 text-[#526272]" aria-label="Fermer"><X size={20} /></button> : null}
+        {onClose ? <button type="button" onClick={onClose} className="p-2 text-[#6b7078]" aria-label="Fermer"><X size={20} /></button> : null}
       </div>
 
-      {!editable ? <div className="border border-[#d9e1e8] bg-[#eef4f8] p-5 text-sm text-[#58616d]">Cette version est verrouillée pendant la revue administrateur.</div> : null}
+      {!editable ? <div className="border border-[#d8d4cc] bg-[#f2efe9] p-5 text-sm text-[#62676f]">Cette version est verrouillée pendant la revue administrateur.</div> : null}
 
       {editable ? <PropertyUrlAutofill onPrepared={applyImported} compact /> : null}
 
@@ -353,10 +371,10 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
           <label className="flex items-center gap-3 pt-7 text-sm"><input type="checkbox" checked={core.featured} onChange={(e)=>setCore({...core,featured:e.target.checked})}/> Proposition mise en avant</label>
         </div>
 
-        <section className="border border-[#d9e1e8] bg-white p-5">
-          <p className="text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[#315d7c]">Contenu principal</p>
+        <section className="border border-[#d8d4cc] bg-white p-5">
+          <p className="text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[#9a7447]">Contenu principal</p>
           <h4 className="mt-1 text-lg font-semibold">Version française</h4>
-          <p className="mt-1 text-xs text-[#7b8794]">(à relire en priorité ; les autres langues et le SEO sont déjà préparés automatiquement)</p>
+          <p className="mt-1 text-xs text-[#85888e]">(à relire en priorité ; les autres langues et le SEO sont déjà préparés automatiquement)</p>
           <div className="mt-5 grid gap-4">
             <label className={label}>Titre public<input value={title.fr} onChange={(e)=>setTitle({...title,fr:e.target.value})} className={input}/></label>
             <label className={label}>Résumé<textarea rows={3} value={summary.fr} onChange={(e)=>setSummary({...summary,fr:e.target.value})} className={textarea}/></label>
@@ -364,9 +382,9 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
           </div>
         </section>
 
-        <details className="border border-[#d9e1e8] bg-white">
-          <summary className="cursor-pointer list-none px-5 py-4 text-sm font-semibold text-[#162334]">Traductions & SEO <span className="ml-2 text-xs font-normal text-[#7b8794]">(ouvrir seulement pour vérifier ou modifier)</span></summary>
-          <div className="space-y-5 border-t border-[#e7edf2] p-5">
+        <details className="border border-[#d8d4cc] bg-white">
+          <summary className="cursor-pointer list-none px-5 py-4 text-sm font-semibold text-[#1a1d22]">Traductions & SEO <span className="ml-2 text-xs font-normal text-[#85888e]">(ouvrir seulement pour vérifier ou modifier)</span></summary>
+          <div className="space-y-5 border-t border-[#e6e2dc] p-5">
             <LocalizedFields title="Titre public" value={title} setValue={setTitle} inputClass={input} textareaClass={textarea} labelClass={label} />
             <LocalizedFields title="Slug SEO" value={slug} setValue={setSlug} inputClass={input} textareaClass={textarea} labelClass={label} />
             <LocalizedFields title="Résumé" value={summary} setValue={setSummary} multiline inputClass={input} textareaClass={textarea} labelClass={label} />
@@ -377,43 +395,77 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
           </div>
         </details>
 
-        <details className="border border-[#d9e1e8] bg-white">
-          <summary className="cursor-pointer list-none px-5 py-4 text-sm font-semibold text-[#162334]">Analyse Bosphoras <span className="ml-2 text-xs font-normal text-[#7b8794]">(points forts, technique, vigilance)</span></summary>
-          <div className="grid gap-5 border-t border-[#e7edf2] p-5 lg:grid-cols-3">
+        <details className="border border-[#d8d4cc] bg-white">
+          <summary className="cursor-pointer list-none px-5 py-4 text-sm font-semibold text-[#1a1d22]">Analyse Bosphoras <span className="ml-2 text-xs font-normal text-[#85888e]">(points forts, technique, vigilance)</span></summary>
+          <div className="grid gap-5 border-t border-[#e6e2dc] p-5 lg:grid-cols-3">
             <LocalizedFields title="Pourquoi le sélectionner" value={strengths} setValue={setStrengths} multiline rows={5} inputClass={input} textareaClass={textarea} labelClass={label} />
             <LocalizedFields title="Technical Notes" value={technicalNotes} setValue={setTechnicalNotes} multiline rows={5} inputClass={input} textareaClass={textarea} labelClass={label} />
             <LocalizedFields title="Points de vigilance" value={watchpoints} setValue={setWatchpoints} multiline rows={5} inputClass={input} textareaClass={textarea} labelClass={label} />
           </div>
         </details>
 
-        <section className="border border-[#d9e1e8] bg-white p-5">
-          <h4 className="font-sans text-2xl">Plan de paiement</h4>
-          <div className="mt-5 space-y-3">
+        <section className="border border-[#d8d4cc] bg-white p-5">
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <div>
+              <p className="text-[0.66rem] font-semibold uppercase tracking-[0.12em] text-[#9a7447]">Conditions promoteur</p>
+              <h4 className="mt-1 text-2xl font-semibold tracking-[-0.025em]">Plan de paiement de l’annonce</h4>
+              <p className="mt-2 max-w-3xl text-xs leading-5 text-[#73777e]">Renseignez ici exactement ce que le client devra payer : acompte, mensualités, solde de livraison, éventuel surcoût et remise comptant. C’est ce bloc qui apparaît ensuite sur la fiche publique après validation.</p>
+            </div>
+            <label className="flex items-center gap-3 text-sm text-[#555a61]"><input type="checkbox" checked={core.paymentPlanEnabled} onChange={(e)=>setCore({...core,paymentPlanEnabled:e.target.checked})}/> Afficher le plan sur l’annonce</label>
+          </div>
+
+          <div className="mt-6 grid gap-4 border-y border-[#e6e2dc] py-5 md:grid-cols-3 xl:grid-cols-6">
+            <label className={label}>Type échéancier <span className="normal-case font-normal tracking-normal text-[#85888e]">(condition réelle)</span>
+              <select value={core.paymentInterestMode} onChange={(e)=>setCore({...core,paymentInterestMode:e.target.value})} className={input}>
+                <option value="not_specified">Non précisé</option>
+                <option value="interest_free">Sans intérêt / 0 %</option>
+                <option value="interest_bearing">Avec surcoût / taux</option>
+              </select>
+            </label>
+            <label className={label}>Taux / surcoût % <span className="normal-case font-normal tracking-normal text-[#85888e]">(si applicable)</span><input value={core.paymentInterestRate} onChange={(e)=>setCore({...core,paymentInterestRate:e.target.value})} className={input}/></label>
+            <label className={label}>Remise comptant % <span className="normal-case font-normal tracking-normal text-[#85888e]">(officielle)</span><input value={core.cashDiscountPct} onChange={(e)=>setCore({...core,cashDiscountPct:e.target.value})} className={input}/></label>
+            <label className={label}>Prix comptant <span className="normal-case font-normal tracking-normal text-[#85888e]">(après remise)</span><input value={core.cashPrice} onChange={(e)=>setCore({...core,cashPrice:e.target.value})} className={input}/></label>
+            <label className={label}>Prix échelonné <span className="normal-case font-normal tracking-normal text-[#85888e]">(base des %)</span><input value={core.installmentPrice} onChange={(e)=>setCore({...core,installmentPrice:e.target.value})} className={input}/></label>
+            <div className="border border-[#e6e2dc] bg-[#faf9f6] p-3">
+              <span className="block text-[0.63rem] font-semibold uppercase tracking-[0.08em] text-[#73777e]">Entrée calculée</span>
+              <strong className="mt-2 block text-lg text-[#1a1d22]">{firstStepAmount ? new Intl.NumberFormat('fr-FR',{style:'currency',currency:core.currency,maximumFractionDigits:0}).format(firstStepAmount) : '—'}</strong>
+              <span className="mt-1 block text-[0.68rem] text-[#85888e]">(1re échéance du plan)</span>
+            </div>
+          </div>
+
+          <div className="mt-5 grid grid-cols-[1.2fr_.45fr_.75fr_1.2fr_auto] gap-2 text-[0.63rem] font-semibold uppercase tracking-[0.08em] text-[#85888e]">
+            <span>Étape</span><span>%</span><span>Montant</span><span>Échéance</span><span></span>
+          </div>
+          <div className="mt-2 space-y-2">
             {paymentPlan.map((step, index) => (
-              <div key={index} className="grid gap-3 border-t border-[#edf1f5] pt-4 md:grid-cols-[1.2fr_0.5fr_1.2fr_auto]">
-                <input value={String(step?.label?.fr || '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,label:{...(s.label||{}),fr:e.target.value,en:s.label?.en||e.target.value,ru:s.label?.ru||e.target.value,ar:s.label?.ar||e.target.value}}:s))} className={input} />
-                <input value={String(step?.percentage ?? '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,percentage:Number(e.target.value)}:s))} className={input} />
-                <input value={String(step?.due?.fr || '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,due:{...(s.due||{}),fr:e.target.value,en:s.due?.en||e.target.value,ru:s.due?.ru||e.target.value,ar:s.due?.ar||e.target.value}}:s))} className={input} />
-                <button type="button" onClick={()=>setPaymentPlan(paymentPlan.filter((_,i)=>i!==index))} className="px-3 text-[#a85656]">×</button>
+              <div key={index} className="grid gap-2 border-t border-[#ece8e1] pt-3 md:grid-cols-[1.2fr_.45fr_.75fr_1.2fr_auto]">
+                <input value={String(step?.label?.fr || '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,label:{...(s.label||{}),fr:e.target.value,en:s.label?.en||e.target.value,ru:s.label?.ru||e.target.value,ar:s.label?.ar||e.target.value}}:s))} className={input} placeholder="Réservation"/>
+                <input value={String(step?.percentage ?? '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,percentage:e.target.value===''?undefined:Number(e.target.value)}:s))} className={input} placeholder="%"/>
+                <input value={String(step?.amount ?? '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,amount:e.target.value===''?undefined:Number(e.target.value)}:s))} className={input} placeholder="Montant exact"/>
+                <input value={String(step?.due?.fr || '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,due:{...(s.due||{}),fr:e.target.value,en:s.due?.en||e.target.value,ru:s.due?.ru||e.target.value,ar:s.due?.ar||e.target.value}}:s))} className={input} placeholder="À la signature"/>
+                <button type="button" onClick={()=>setPaymentPlan(paymentPlan.filter((_,i)=>i!==index))} className="px-3 text-[#9f514f]">×</button>
               </div>
             ))}
           </div>
-          <button type="button" onClick={()=>setPaymentPlan([...paymentPlan,{label:{fr:'Nouvelle étape',en:'New step',ru:'Новый этап',ar:'مرحلة جديدة'},percentage:0,due:{fr:'À définir',en:'To define',ru:'Уточнить',ar:'يحدد لاحقاً'}}])} className="mt-5 text-xs font-semibold uppercase tracking-[0.12em] text-[#315d7c]">+ Ajouter une étape</button>
+          <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
+            <button type="button" onClick={()=>setPaymentPlan([...paymentPlan,{label:{fr:'Nouvelle étape',en:'New step',ru:'Новый этап',ar:'مرحلة جديدة'},percentage:0,due:{fr:'À définir',en:'To define',ru:'Уточнить',ar:'يحدد لاحقاً'}}])} className="text-xs font-semibold uppercase tracking-[0.12em] text-[#9a7447]">+ Ajouter une étape</button>
+            <span className={`text-xs ${planPercentTotal===100?'text-[#4f6b56]':'text-[#9f514f]'}`}>Total des pourcentages : <strong>{planPercentTotal}%</strong> {planPercentTotal===100?'✓':'(doit idéalement faire 100 %)'} </span>
+          </div>
         </section>
 
-        <section className="border border-[#d9e1e8] bg-white p-5">
-          <div className="flex items-center gap-3"><ImagePlus size={20} className="text-[#315d7c]"/><h4 className="font-sans text-2xl">Photos</h4></div>
+        <section className="border border-[#d8d4cc] bg-white p-5">
+          <div className="flex items-center gap-3"><ImagePlus size={20} className="text-[#9a7447]"/><h4 className="font-sans text-2xl">Photos</h4></div>
           <input type="file" multiple accept="image/jpeg,image/png,image/webp,image/avif" onChange={uploadFiles} className="mt-5 text-sm"/>
-          {uploading ? <p className="mt-3 text-sm text-[#526272]">Upload en cours…</p> : null}
-          {images.length ? <div className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4">{images.map((url,index)=><div key={url} className="relative aspect-[4/3] overflow-hidden bg-[#edf1f5]"><img src={url} alt="" className="h-full w-full object-cover"/><button type="button" onClick={()=>setImages(images.filter((_,i)=>i!==index))} className="absolute right-2 top-2 bg-[#12304a] p-1.5 text-white"><X size={14}/></button></div>)}</div> : null}
+          {uploading ? <p className="mt-3 text-sm text-[#6b7078]">Upload en cours…</p> : null}
+          {images.length ? <div className="mt-5 grid grid-cols-2 gap-3 md:grid-cols-4">{images.map((url,index)=><div key={url} className="relative aspect-[4/3] overflow-hidden bg-[#ece8e1]"><img src={url} alt="" className="h-full w-full object-cover"/><button type="button" onClick={()=>setImages(images.filter((_,i)=>i!==index))} className="absolute right-2 top-2 bg-[#1a1d22] p-1.5 text-white"><X size={14}/></button></div>)}</div> : null}
         </section>
       </fieldset>
 
-      {message ? <div className="border border-[#d9e1e8] bg-[#f7f9fb] p-4 text-sm leading-6 text-[#58616d]">{message}</div> : null}
+      {message ? <div className="border border-[#d8d4cc] bg-[#faf9f6] p-4 text-sm leading-6 text-[#62676f]">{message}</div> : null}
 
       {editable ? <div className="flex flex-wrap gap-3">
-        <button type="button" disabled={busy} onClick={saveDraft} className="inline-flex min-h-[48px] items-center gap-2 border border-[#12304a] px-5 text-sm font-semibold uppercase tracking-[0.12em]"><Save size={16}/> Enregistrer le brouillon</button>
-        <button type="submit" disabled={busy} className="inline-flex min-h-[48px] items-center gap-2 bg-[#12304a] px-6 text-sm font-semibold uppercase tracking-[0.12em] text-white"><Send size={16}/> Soumettre à validation <ArrowRight size={15}/></button>
+        <button type="button" disabled={busy} onClick={saveDraft} className="inline-flex min-h-[48px] items-center gap-2 border border-[#1a1d22] px-5 text-sm font-semibold uppercase tracking-[0.12em]"><Save size={16}/> Enregistrer le brouillon</button>
+        <button type="submit" disabled={busy} className="inline-flex min-h-[48px] items-center gap-2 bg-[#1a1d22] px-6 text-sm font-semibold uppercase tracking-[0.12em] text-white"><Send size={16}/> Soumettre à validation <ArrowRight size={15}/></button>
       </div> : null}
     </form>
   );
@@ -439,7 +491,7 @@ function LocalizedFields({
   labelClass: string;
 }) {
   return (
-    <section className="border border-[#d9e1e8] bg-white p-5">
+    <section className="border border-[#d8d4cc] bg-white p-5">
       <h4 className="font-sans text-xl">{title}</h4>
       <div className="mt-4 grid gap-4 md:grid-cols-2">
         {locales.map((locale) => (
