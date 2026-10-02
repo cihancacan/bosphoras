@@ -14,7 +14,8 @@ import { getPageBySlug, allPages } from '@/data/pages';
 import { getHighPotentialGuideBySlug, highPotentialGuides } from '@/data/highPotentialPages';
 import { getProgrammaticPageBySlug, getProgrammaticPagesForLocale } from '@/data/programmatic/pages';
 import { ENABLE_ALL_PROGRAMMATIC_PAGES } from '@/lib/launchConfig';
-import { getPropertyBySlug, getPublishedProperties, propertyHubPaths } from '@/data/propertyDesk';
+import { getPublishedProperties, propertyHubPaths } from '@/data/propertyDesk';
+import { fetchPropertyBySlug } from '@/lib/propertyStore';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
@@ -57,13 +58,13 @@ export function generateStaticParams() {
   return params;
 }
 
-export function generateMetadata({ params }: PageProps): Metadata {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   if (!isLocale(params.locale)) return {};
   const slug = resolveSlug(params.slug);
 
   if (slug.startsWith(`${propertyHubPaths[params.locale]}/`)) {
     const propertySlug = slug.slice(propertyHubPaths[params.locale].length + 1);
-    const property = getPropertyBySlug(params.locale, propertySlug);
+    const property = await fetchPropertyBySlug(params.locale, propertySlug);
     if (property) {
       return buildMetadata({
         locale: params.locale,
@@ -108,13 +109,13 @@ export function generateMetadata({ params }: PageProps): Metadata {
   });
 }
 
-export default function LocaleCatchAllPage({ params }: PageProps) {
+export default async function LocaleCatchAllPage({ params }: PageProps) {
   if (!isLocale(params.locale)) notFound();
   const slug = resolveSlug(params.slug);
 
   if (slug.startsWith(`${propertyHubPaths[params.locale]}/`)) {
     const propertySlug = slug.slice(propertyHubPaths[params.locale].length + 1);
-    const property = getPropertyBySlug(params.locale, propertySlug);
+    const property = await fetchPropertyBySlug(params.locale, propertySlug);
     if (property) return <PropertyDetailPage locale={params.locale} property={property} />;
   }
 
