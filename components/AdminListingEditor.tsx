@@ -91,6 +91,7 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
         approved_at:new Date().toISOString(),
         review_status:'approved',
         revision:Number(draft.revision||1)+1,
+        source_last_checked_at:draft.source_url?new Date().toISOString():draft.source_last_checked_at||null,
       };
       const {error}=await supabase.from('property_listings').update(update).eq('id',listing.id);
       if(error)throw error;
@@ -105,6 +106,14 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
       <div><p className="text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-[#315d7c]">Édition administrateur</p><h2 className="mt-2 text-2xl font-semibold tracking-[-0.02em]">{draft.title?.fr||draft.external_id}</h2><p className="mt-1 text-sm text-[#687685]">Toutes les modifications enregistrées ici deviennent la version officielle de la fiche.</p></div>
       <button onClick={onClose} className="p-2 text-[#687685]"><X size={20}/></button>
     </div>
+
+    {draft.source_url ? <section className="border border-[#d9e1e8] bg-[#f7f9fb] p-5">
+      <span className="text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[#315d7c]">Source d'origine</span>
+      <div className="mt-2 flex flex-wrap items-center gap-3">
+        <a href={draft.source_url} target="_blank" rel="noreferrer" className="break-all text-sm font-medium text-[#315d7c] underline underline-offset-2">{draft.source_url}</a>
+        <span className="text-xs text-[#7b8794]">(traçabilité interne ; à recontrôler avant une mise à jour importante)</span>
+      </div>
+    </section> : null}
 
     <section className="grid gap-4 border border-[#d9e1e8] bg-white p-5 md:grid-cols-4">
       <label className={label}>Ville<select value={draft.city} onChange={(e)=>setField('city',e.target.value)} className={input}><option value="istanbul">Istanbul</option><option value="bodrum">Bodrum</option><option value="antalya">Antalya</option></select></label>
