@@ -10,6 +10,7 @@ import { getSlugForPage, pageSlugs } from '@/data/pages/types';
 import { getEquivalentHighPotentialSlug } from '@/data/highPotentialPages';
 import { longTailTaxRouteGroups } from '@/data/longTailTaxRoutes';
 import { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';
+import { globalPropertyHubPaths } from '@/data/propertyDesk';
 import dynamic from 'next/dynamic';
 const SearchOverlay = dynamic(() => import('@/components/SearchOverlay').then((module) => module.SearchOverlay));
 
@@ -28,6 +29,7 @@ const specialLocalizedPaths: Array<Record<Locale, string>> = [
   { fr: '/peninsula-istanbul', en: '/en/peninsula-istanbul', ru: '/ru/peninsula-istanbul', ar: '/ar/peninsula-istanbul' },
   { fr: '/transfert-aeroport-istanbul', en: '/en/istanbul-airport-transfer', ru: '/ru/transfer-aeroport-stambul', ar: '/ar/istanbul-airport-transfer' },
   corporateRelocationPaths,
+  globalPropertyHubPaths,
   { fr: '/exoneration-fiscale-turquie-revenus-etrangers', en: '/en/turkey-tax-exemption-foreign-income', ru: '/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody', ar: '/ar/turkey-tax-exemption-foreign-income' },
   { fr: '/strategie-fiscale-turquie-investisseurs-etrangers', en: '/en/turkey-tax-strategy-foreign-investors', ru: '/ru/nalogovaya-strategiya-turtsii-inostrannye-investory', ar: '/ar/turkey-tax-strategy-foreign-investors' },
   { fr: '/exoneration-fiscale-turquie-20-ans-nouveaux-residents', en: '/en/turkey-20-year-tax-exemption-new-residents', ru: '/ru/turtsiya-20-let-nalogovaya-lgota-novye-rezidenty', ar: '/ar/turkey-20-year-tax-exemption-new-residents' },
@@ -73,7 +75,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
       { label: locale === 'fr' ? 'Conseil Juridique & Fiscal' : locale === 'en' ? 'Legal & Tax Advisory' : locale === 'ru' ? 'Право и налоги' : 'القانون والضرائب', href: linkTo('legal-tax'), description: locale === 'fr' ? 'Avocats, fiscalistes, conformite.' : locale === 'en' ? 'Lawyers, tax advisors, compliance.' : locale === 'ru' ? 'Юристы, налоги, compliance.' : 'محامون، ضرائب وامتثال.' },
       { label: locale === 'fr' ? "Creation d'Entreprise" : locale === 'en' ? 'Company Formation' : locale === 'ru' ? 'Создание компании' : 'تأسيس الشركات', href: linkTo('business-setup'), description: locale === 'fr' ? 'Societe, comptabilite, bureaux.' : locale === 'en' ? 'Company, accounting, offices.' : locale === 'ru' ? 'Компания, бухгалтерия, офисы.' : 'شركة، محاسبة ومكاتب.' },
       { label: locale === 'fr' ? 'Sante & Assurance' : locale === 'en' ? 'Health & Insurance' : locale === 'ru' ? 'Здоровье и страхование' : 'الصحة والتأمين', href: linkTo('health-insurance'), description: locale === 'fr' ? 'Medecins, cliniques, assurances.' : locale === 'en' ? 'Doctors, clinics, insurance.' : locale === 'ru' ? 'Врачи, клиники, страхование.' : 'أطباء، عيادات وتأمين.' },
-      { label: locale === 'fr' ? 'Immobilier & Investissement' : locale === 'en' ? 'Property & Investment' : locale === 'ru' ? 'Недвижимость и инвестиции' : 'العقار والاستثمار', href: linkTo('property'), description: locale === 'fr' ? 'Projets sélectionnés, plans de paiement, analyse technique.' : locale === 'en' ? 'Selected projects, payment plans, technical review.' : locale === 'ru' ? 'Отобранные проекты, рассрочка, технический анализ.' : 'مشاريع مختارة، خطط دفع، تحليل فني.' },
+      { label: locale === 'fr' ? 'Immobilier & Investissement' : locale === 'en' ? 'Property & Investment' : locale === 'ru' ? 'Недвижимость и инвестиции' : 'العقار والاستثمار', href: getLocalePath(locale, globalPropertyHubPaths[locale]), description: locale === 'fr' ? 'Projets sélectionnés, plans de paiement, analyse technique.' : locale === 'en' ? 'Selected projects, payment plans, technical review.' : locale === 'ru' ? 'Отобранные проекты, рассрочка, технический анализ.' : 'مشاريع مختارة، خطط دفع، تحليل فني.' },
       { label: locale === 'fr' ? 'Transfert & chauffeur à la demande' : locale === 'en' ? 'Transfer & chauffeur on demand' : locale === 'ru' ? 'Трансфер и водитель по запросу' : 'نقل وسائق عند الطلب', href: mobilityLink, description: locale === 'fr' ? 'Réservation immédiate ou programmée · Istanbul & Turquie.' : locale === 'en' ? 'Immediate or scheduled booking · Istanbul & Turkey.' : locale === 'ru' ? 'Немедленное или запланированное бронирование · Стамбул и Турция.' : 'حجز فوري أو مسبق · إسطنبول وتركيا.' },
       { label: locale === 'fr' ? 'Conciergerie de Luxe' : locale === 'en' ? 'Luxury Concierge' : locale === 'ru' ? 'Luxury Concierge' : 'كونسيرج فاخر', href: linkTo('luxury-concierge'), description: locale === 'fr' ? 'Transport VIP, palaces, yachts, jets, shopping.' : locale === 'en' ? 'VIP transport, palaces, yachts, jets, shopping.' : locale === 'ru' ? 'VIP transport, palaces, yachts, jets, shopping.' : 'نقل VIP، فنادق فاخرة، يخوت، طائرات وتسوق.' },
     ]},
