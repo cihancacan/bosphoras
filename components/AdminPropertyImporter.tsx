@@ -130,12 +130,16 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
           seoDescription:ai.seoDescription||fallback.seoDescription,
           propertyType:ai.propertyType||fallback.propertyType,
           developer:ai.developer||fallback.developer,
+          currency:ai.currency||fallback.currency,
+          totalPrice:ai.price??fallback.totalPrice,
+          surfaceM2:ai.surfaceM2??fallback.surfaceM2,
+          bedrooms:ai.bedrooms??fallback.bedrooms,
+          bathrooms:ai.bathrooms??fallback.bathrooms,
           delivery:ai.delivery||fallback.delivery,
           paymentPlan:aiPlan,
           entryCapital:ai.entryCapital??derivedEntry??fallback.entryCapital,
-          bathrooms:ai.bathrooms??fallback.bathrooms,
         });
-        setStrengths(Object.fromEntries(locales.map((l)=>[l,linesFromArray(ai.strengths||[],l)])));
+        setStrengths(Object.fromEntries(locales.map((l)=>[l,linesFromArray(ai.strengths||ai.highlights||[],l)])));
         setTechnicalNotes(Object.fromEntries(locales.map((l)=>[l,linesFromArray(ai.technicalNotes||[],l)])));
         setWatchpoints(Object.fromEntries(locales.map((l)=>[l,linesFromArray(ai.watchpoints||[],l)])));
         setMessage('Import terminé : données, photos et versions multilingues préremplies. Vérifiez avant publication.');
