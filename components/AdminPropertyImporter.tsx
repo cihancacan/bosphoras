@@ -47,6 +47,7 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
   const [busy,setBusy]=useState(false);
   const [stage,setStage]=useState('');
   const [message,setMessage]=useState('');
+  const [lastCreated,setLastCreated]=useState<any>(null);
   const [jobId,setJobId]=useState<string|null>(null);
   const [source,setSource]=useState<any>(null);
   const [draft,setDraft]=useState<any>(null);
@@ -240,6 +241,7 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
       if(jobId&&data?.id){
         await supabase.from('property_import_jobs').update({status:'draft_created',listing_id:data.id}).eq('id',jobId);
       }
+      setLastCreated({id:data?.id,slug:slugs.fr,published:publish,title:draft.title?.fr||externalId});
       setMessage(publish?'Annonce créée et publiée.':'Brouillon créé. Il reste invisible du public jusqu’à publication.');
       setDraft(null); setSource(null); setUrl(''); setJobId(null);
       reload?.();
@@ -268,7 +270,7 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
         </button>
       </div>
       {stage&&<p className="mt-3 text-xs font-medium text-[#315d7c]">{stage}</p>}
-      {message&&<p className="mt-4 border border-[#d9e1e8] bg-[#f7f9fb] px-4 py-3 text-sm leading-6 text-[#526272]">{message}</p>}
+      {message&&<div className="mt-4 border border-[#d9e1e8] bg-[#f7f9fb] px-4 py-3 text-sm leading-6 text-[#526272]"><p>{message}</p>{lastCreated?.id?<div className="mt-3 flex flex-wrap gap-2"><a href={'/espace/apercu?listing='+lastCreated.id} target="_blank" rel="noreferrer" className="inline-flex min-h-[38px] items-center border border-[#315d7c] bg-white px-3 text-xs font-semibold uppercase text-[#315d7c]">Aperçu de la fiche</a>{lastCreated.published?<a href={'/investissement-immobilier-international/'+lastCreated.slug} target="_blank" rel="noreferrer" className="inline-flex min-h-[38px] items-center border border-[#2f6d59] bg-white px-3 text-xs font-semibold uppercase text-[#2f6d59]">Ouvrir la page publique</a>:null}</div>:null}</div>}
     </section>
 
     {draft&&<>
