@@ -20,7 +20,7 @@ function bearer(request: NextRequest) {
   return h.startsWith('Bearer ') ? h.slice(7).trim() : '';
 }
 
-async function verifyAdmin(request: NextRequest) {
+async function verifyPortalUser(request: NextRequest) {
   const token = bearer(request);
   if (!token) return null;
   const client = createClient(SUPABASE_URL, PUBLISHABLE_KEY, {
@@ -30,8 +30,8 @@ async function verifyAdmin(request: NextRequest) {
   const { data: auth } = await client.auth.getUser(token);
   if (!auth.user) return null;
   const { data: profile } = await client.from('profiles').select('role,status').eq('user_id', auth.user.id).maybeSingle();
-  if (!profile || profile.role !== 'admin' || profile.status !== 'active') return null;
-  return { client, user: auth.user };
+  if (!profile || profile.status !== 'active' || !['admin','partner'].includes(profile.role)) return null;
+  return { client, user: auth.user, role: profile.role };
 }
 
 function outputText(response: any) {
@@ -50,8 +50,8 @@ function cleanJson(text: string) {
 }
 
 export async function POST(request: NextRequest) {
-  const admin = await verifyAdmin(request);
-  if (!admin) return NextResponse.json({ error: 'Accès administrateur requis.' }, { status: 401 });
+  const portalUser = await verifyPortalUser(request);
+  if (!portalUser) return NextResponse.json({ error: 'Accès Bosphoras actif requis.' }, { status: 401 });
 
 
   const body = await request.json().catch(() => null);
@@ -109,7 +109,7 @@ export async function POST(request: NextRequest) {
   }
 
   if (body?.importJobId) {
-    await admin.client
+    await portalUser.client
       .from('property_import_jobs')
       .update({ status: 'translated', translated_data: translated })
       .eq('id', body.importJobId);
