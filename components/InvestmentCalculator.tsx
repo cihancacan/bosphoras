@@ -2,7 +2,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { Calculator, History, Info, Landmark, Percent, Save, TrendingUp, WalletCards } from 'lucide-react';
+import { Calculator, FileDown, History, Info, Landmark, Percent, Save, TrendingUp, WalletCards } from 'lucide-react';
 import { getPortalSupabase } from '@/lib/portalSupabase';
 
 function n(value: string) {
@@ -62,6 +62,9 @@ export function InvestmentCalculator({
   const [developerDepositPct, setDeveloperDepositPct] = useState('30');
   const [developerMonths, setDeveloperMonths] = useState('24');
   const [developerBalloonPct, setDeveloperBalloonPct] = useState('20');
+  const [developerInterestMode, setDeveloperInterestMode] = useState('interest_free');
+  const [developerMarkupPct, setDeveloperMarkupPct] = useState('0');
+  const [developerCashDiscountPct, setDeveloperCashDiscountPct] = useState('0');
   const [annualRentGrowth, setAnnualRentGrowth] = useState('3');
   const [exitCostsPct, setExitCostsPct] = useState('3');
   const [fxStressPct, setFxStressPct] = useState('0');
@@ -104,8 +107,15 @@ export function InvestmentCalculator({
     const futureAnnualRent = adjustedRent * rentGrowthFactor;
     const depositPct = n(developerDepositPct);
     const balloonPct = n(developerBalloonPct);
+    const developerInstallmentTotal =
+      developerInterestMode === 'interest_bearing' ? p * (1 + n(developerMarkupPct) / 100) : p;
+    const developerCashPrice = p * (1 - n(developerCashDiscountPct) / 100);
     const monthlyPlanPct = Math.max(0, 100 - depositPct - balloonPct);
-    const developerMonthly = n(developerMonths) > 0 ? p * monthlyPlanPct / 100 / n(developerMonths) : 0;
+    const developerDeposit = developerInstallmentTotal * depositPct / 100;
+    const developerBalloon = developerInstallmentTotal * balloonPct / 100;
+    const developerMonthly = n(developerMonths) > 0
+      ? developerInstallmentTotal * monthlyPlanPct / 100 / n(developerMonths)
+      : 0;
     const breakEvenOccupancy =
       n(monthlyRent) > 0
         ? Math.min(100, ((opCosts + annualDebt) / (n(monthlyRent) * 12)) * 100)
@@ -128,9 +138,13 @@ export function InvestmentCalculator({
       ltv: p > 0 ? financing / p * 100 : 0,
       annualizedAppreciation,
       commission: p * n(commissionPct) / 100,
-      developerDeposit: p * depositPct / 100,
+      developerDeposit,
       developerMonthly,
-      developerBalloon: p * balloonPct / 100,
+      developerBalloon,
+      developerInstallmentTotal,
+      developerCashPrice,
+      developerFinancingCost: Math.max(0, developerInstallmentTotal - p),
+      developerCashSaving: Math.max(0, p - developerCashPrice),
       netAnnualCashflow: noi - annualDebt,
       breakEvenOccupancy,
       exitCosts,
@@ -143,6 +157,7 @@ export function InvestmentCalculator({
     price, surface, entry, acquisitionPct, monthlyRent, occupancyPct, monthlyCharges,
     annualMaintenance, financeAmount, interest, termYears, exitValue, holdYears,
     commissionPct, developerDepositPct, developerMonths, developerBalloonPct,
+    developerInterestMode, developerMarkupPct, developerCashDiscountPct,
     annualRentGrowth, exitCostsPct, fxStressPct,
   ]);
 
@@ -177,6 +192,9 @@ export function InvestmentCalculator({
         developerDepositPct: n(developerDepositPct),
         developerMonths: n(developerMonths),
         developerBalloonPct: n(developerBalloonPct),
+        developerInterestMode,
+        developerMarkupPct: n(developerMarkupPct),
+        developerCashDiscountPct: n(developerCashDiscountPct),
         annualRentGrowth: n(annualRentGrowth),
         exitCostsPct: n(exitCostsPct),
         fxStressPct: n(fxStressPct),
@@ -222,6 +240,36 @@ export function InvestmentCalculator({
     }
   }
 
+  function printReport() {
+    const reportName = scenarioName.trim() || 'Analyse investissement';
+    const listing = listings.find((item:any)=>item.id===scenarioListingId);
+    const propertyName = listing?.title?.fr || listing?.external_id || '';
+    const rows = metrics.map(([metric,value,help]) =>
+      '<tr><td><strong>'+metric+'</strong><br><small>'+help+'</small></td><td style="text-align:right;font-weight:700">'+value+'</td></tr>'
+    ).join('');
+    const html =
+      '<!doctype html><html><head><meta charset="utf-8"><title>'+reportName+'</title><style>'+
+      '@page{size:A4;margin:14mm}body{font-family:Arial,Helvetica,sans-serif;color:#162334;margin:0}'+
+      '.head{border-bottom:3px solid #12304a;padding-bottom:18px;margin-bottom:24px}.brand{font-size:11px;letter-spacing:2px;color:#315d7c;font-weight:700}.title{font-size:28px;margin:8px 0 0}.sub{color:#687685;font-size:12px;margin-top:7px}'+
+      '.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:18px 0}.box{border:1px solid #d9e1e8;padding:12px}.box small{display:block;color:#687685;text-transform:uppercase;font-size:9px;letter-spacing:.7px}.box strong{display:block;font-size:18px;margin-top:5px}'+
+      'h2{font-size:16px;margin:24px 0 10px}table{width:100%;border-collapse:collapse}td{border-bottom:1px solid #e7edf2;padding:8px 4px;font-size:11px;vertical-align:top}small{color:#7b8794}'+
+      '.note{margin-top:24px;padding:12px;background:#f3f6f8;font-size:10px;line-height:1.5;color:#526272}.pay{margin-top:12px;border:1px solid #d9e1e8;padding:14px;font-size:11px}.pay strong{font-size:14px}'+
+      '</style></head><body>'+
+      '<div class="head"><div class="brand">BOSPHORAS PROPERTY & INVESTMENT</div><div class="title">'+reportName+'</div><div class="sub">'+(propertyName?propertyName+' · ':'')+'Rapport généré '+new Date().toLocaleString('fr-FR')+'</div></div>'+
+      '<div class="summary"><div class="box"><small>Prix d’achat</small><strong>'+money(n(price),currency)+'</strong></div><div class="box"><small>Capital disponible</small><strong>'+money(n(entry),currency)+'</strong></div><div class="box"><small>Valeur de sortie</small><strong>'+money(n(exitValue),currency)+'</strong></div></div>'+
+      '<h2>Indicateurs d’investissement</h2><table>'+rows+'</table>'+
+      '<h2>Plan promoteur simulé</h2><div class="pay"><strong>Prix comptant : '+money(result.developerCashPrice,currency)+'</strong><br>Prix échelonné : '+money(result.developerInstallmentTotal,currency)+' · Aujourd’hui : '+money(result.developerDeposit,currency)+' · Mensualité : '+money(result.developerMonthly,currency)+' · Livraison : '+money(result.developerBalloon,currency)+'<br><small>'+(developerInterestMode==='interest_bearing'?'Surcoût échéancier saisi : '+developerMarkupPct+'%':'Échéancier indiqué sans intérêt')+' · Remise comptant saisie : '+developerCashDiscountPct+'%</small></div>'+
+      '<div class="note"><strong>Note de méthode.</strong> Cette simulation compare des hypothèses saisies par l’utilisateur. Elle ne constitue ni une évaluation, ni une promesse de rendement, ni un conseil fiscal, juridique, bancaire ou financier. Les coûts, taxes, taux, loyers et conditions de paiement doivent être vérifiés sur le dossier réel.</div>'+
+      '</body></html>';
+    const w = window.open('', '_blank', 'noopener,noreferrer');
+    if (!w) return;
+    w.document.open();
+    w.document.write(html);
+    w.document.close();
+    w.focus();
+    window.setTimeout(()=>w.print(),250);
+  }
+
   const metrics = [
     ['Prix / m²', money(result.priceM2, currency), 'prix du bien ÷ surface'],
     ['Rendement brut', pct(result.grossYield), 'loyers annuels encaissables ÷ prix'],
@@ -246,7 +294,7 @@ export function InvestmentCalculator({
       <div className="grid gap-5 border border-[#d9e1e8] bg-white p-6 md:grid-cols-4">
         <label className={labelClass}>Devise <Help>devise de travail du dossier</Help>
           <select value={currency} onChange={(e) => setCurrency(e.target.value)} className={inputClass}>
-            <option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option>
+            <option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option><option>KZT</option><option>GEL</option>
           </select>
         </label>
         <label className={labelClass}>Prix d'achat <Help>prix contractuel ou prix demandé</Help><input value={price} onChange={(e)=>setPrice(e.target.value)} className={inputClass} inputMode="decimal" /></label>
@@ -295,15 +343,24 @@ export function InvestmentCalculator({
             <p className="mt-1 text-xs text-[#687685]">Pour visualiser ce que le client paie aujourd’hui, pendant le chantier et à la livraison.</p>
           </div>
         </div>
-        <div className="mt-6 grid gap-4 md:grid-cols-3">
+        <div className="mt-6 grid gap-4 md:grid-cols-3 xl:grid-cols-6">
           <label className={labelClass}>Acompte % <Help>part due à la réservation/signature</Help><input value={developerDepositPct} onChange={(e)=>setDeveloperDepositPct(e.target.value)} className={inputClass}/></label>
           <label className={labelClass}>Nombre de mensualités <Help>échéances avant livraison</Help><input value={developerMonths} onChange={(e)=>setDeveloperMonths(e.target.value)} className={inputClass}/></label>
           <label className={labelClass}>Solde livraison % <Help>balloon final à la remise des clés</Help><input value={developerBalloonPct} onChange={(e)=>setDeveloperBalloonPct(e.target.value)} className={inputClass}/></label>
+          <label className={labelClass}>Type échéancier <Help>selon offre réelle du promoteur</Help><select value={developerInterestMode} onChange={(e)=>setDeveloperInterestMode(e.target.value)} className={inputClass}><option value="interest_free">Sans intérêt / 0%</option><option value="interest_bearing">Avec surcoût / intérêt</option></select></label>
+          <label className={labelClass}>Surcoût total % <Help>majoration totale du prix pour paiement échelonné, si applicable</Help><input value={developerMarkupPct} onChange={(e)=>setDeveloperMarkupPct(e.target.value)} className={inputClass} disabled={developerInterestMode!=='interest_bearing'}/></label>
+          <label className={labelClass}>Remise comptant % <Help>remise officielle si paiement intégral immédiat</Help><input value={developerCashDiscountPct} onChange={(e)=>setDeveloperCashDiscountPct(e.target.value)} className={inputClass}/></label>
         </div>
-        <div className="mt-6 grid gap-3 md:grid-cols-3">
-          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">Aujourd'hui</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerDeposit, currency)}</strong></div>
-          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">Mensualité promoteur</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerMonthly, currency)}</strong></div>
-          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">À la livraison</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerBalloon, currency)}</strong></div>
+        <div className="mt-6 grid gap-3 md:grid-cols-2 xl:grid-cols-5">
+          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">Prix comptant</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerCashPrice, currency)}</strong><small className="mt-1 block text-[#7b8794]">(prix après remise comptant saisie)</small></div>
+          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">Prix échelonné</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerInstallmentTotal, currency)}</strong><small className="mt-1 block text-[#7b8794]">(inclut le surcoût saisi, s’il existe)</small></div>
+          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">Aujourd'hui</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerDeposit, currency)}</strong><small className="mt-1 block text-[#7b8794]">(acompte sur prix échelonné)</small></div>
+          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">Mensualité promoteur</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerMonthly, currency)}</strong><small className="mt-1 block text-[#7b8794]">(hors éventuelles échéances spéciales)</small></div>
+          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">À la livraison</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerBalloon, currency)}</strong><small className="mt-1 block text-[#7b8794]">(solde final simulé)</small></div>
+        </div>
+        <div className="mt-5 flex flex-wrap items-center gap-3">
+          <button type="button" onClick={printReport} className="inline-flex min-h-[44px] items-center gap-2 border border-[#12304a] bg-white px-5 text-sm font-semibold text-[#12304a]"><FileDown size={16}/>PDF / Imprimer</button>
+          <span className="text-xs leading-5 text-[#687685]">Le bouton ouvre un rapport A4 optimisé pour impression ; choisissez « Enregistrer au format PDF » dans la boîte d’impression pour le partager.</span>
         </div>
       </section>
 
