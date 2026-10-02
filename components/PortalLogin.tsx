@@ -44,8 +44,7 @@ export function PortalLogin() {
             <KeyRound size={19} strokeWidth={1.7} />
           </div>
           <div>
-            <p className="text-[0.67rem] font-semibold uppercase tracking-[0.22em] text-[#6b7b8d]">Bosphoras</p>
-            <h1 className="mt-1 text-xl font-semibold tracking-[-0.02em] text-[#122033]">BOSPHORAS PARTNER DESK</h1>
+            <h1 className="text-xl font-semibold tracking-[-0.02em] text-[#122033]">BOSPHORAS PARTNER DESK</h1>
           </div>
         </div>
 
