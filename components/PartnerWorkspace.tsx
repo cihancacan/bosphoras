@@ -12,8 +12,9 @@ import { InvestmentCalculator } from '@/components/InvestmentCalculator';
 import { ListingSubmissionEditor } from '@/components/ListingSubmissionEditor';
 import { AdminPropertyImporter } from '@/components/AdminPropertyImporter';
 import { AdminListingEditor } from '@/components/AdminListingEditor';
+import { ProfessionalOperationsPanel } from '@/components/ProfessionalOperationsPanel';
 
-type Tab = 'dashboard' | 'listings' | 'import' | 'crm' | 'chat' | 'calculators' | 'partners' | 'approvals';
+type Tab = 'dashboard' | 'listings' | 'import' | 'crm' | 'operations' | 'chat' | 'calculators' | 'partners' | 'approvals';
 
 function money(value: any, currency = 'EUR') {
   const n = Number(value || 0);
@@ -135,6 +136,7 @@ export function PartnerWorkspace() {
       ['dashboard','Vue d’ensemble',LayoutDashboard],
       ['listings','Biens & projets',Building2],
       ['crm','CRM',Contact],
+      ['operations','Opérations',ClipboardCheck],
       ['chat','Chat interne',MessageCircle],
       ['calculators','Calculateurs',Calculator],
     ] as any[];
@@ -233,6 +235,16 @@ export function PartnerWorkspace() {
           )}
           {tab==='import' && isAdmin && <Section title="Importer une opportunité" kicker="Source partenaire → Bosphoras"><AdminPropertyImporter user={user} reload={loadAll}/></Section>}
           {tab==='crm' && <CrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} partnerUsers={partnerUsers} reload={loadAll}/>}
+          {tab==='operations' && <Section title="Opérations immobilières" kicker="Visites · documents · commissions"><ProfessionalOperationsPanel
+            user={user}
+            profile={profile}
+            isAdmin={isAdmin}
+            contacts={contacts}
+            deals={deals}
+            listings={listings}
+            partners={partners}
+            partnerUsers={partnerUsers}
+          /></Section>}
           {tab==='chat' && <ChatPanel isAdmin={isAdmin} user={user} threads={threads} partnerUsers={partnerUsers} selectedThread={selectedThread} setSelectedThread={setSelectedThread} messages={messages}/>}
           {tab==='calculators' && <Section title="Calculateurs investissement" kicker="Bosphoras Analysis"><InvestmentCalculator
             userId={user?.id}
