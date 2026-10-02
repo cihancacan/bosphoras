@@ -290,7 +290,7 @@ export function InvestmentCalculator({
   ];
 
   return (
-    <div className="space-y-8 [font-family:'Avenir_Next','Helvetica_Neue',Arial,sans-serif]">
+    <div className="space-y-8 [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe_UI,sans-serif]">
       <div className="grid gap-5 border border-[#d8d4cc] bg-white p-6 md:grid-cols-4">
         <label className={labelClass}>Devise <Help>devise de travail du dossier</Help>
           <select value={currency} onChange={(e) => setCurrency(e.target.value)} className={inputClass}>
