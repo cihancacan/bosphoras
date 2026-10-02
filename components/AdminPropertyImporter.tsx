@@ -254,7 +254,7 @@ export function AdminPropertyImporter({ user, reload }: { user:any; reload?:()=>
   const textarea='w-full border border-[#d8d4cc] bg-white px-3 py-3 text-sm leading-6 outline-none focus:border-[#315d7c]';
   const label='grid gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.08em] text-[#6b7078]';
 
-  return <div className="space-y-7 [font-family:'Avenir_Next','Helvetica_Neue',Arial,sans-serif]">
+  return <div className="space-y-7 [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe_UI,sans-serif]">
     <section className="border border-[#d8d4cc] bg-white p-6">
       <div className="flex items-start gap-3">
         <div className="flex h-10 w-10 shrink-0 items-center justify-center bg-[#1a1d22] text-white"><Download size={18}/></div>
