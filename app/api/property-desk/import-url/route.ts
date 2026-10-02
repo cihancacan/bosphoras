@@ -159,11 +159,22 @@ function parseLocaleNumber(value: string) {
 
 function normalizeCurrencyToken(token: string) {
   const upper = token.trim().toUpperCase();
-  if (upper === 'function heuristicPrice(text: string, currencyHint = '') {
+  if (upper === '$' || upper === 'USD') return 'USD';
+  if (upper === '€' || upper === 'EUR') return 'EUR';
+  if (upper === '£' || upper === 'GBP') return 'GBP';
+  if (upper === '₺' || upper === 'TRY' || upper === 'TL') return 'TRY';
+  if (upper === 'AED') return 'AED';
+  if (upper === 'CHF') return 'CHF';
+  if (upper === 'KZT' || upper === '₸') return 'KZT';
+  if (upper === 'GEL' || upper === '₾') return 'GEL';
+  return '';
+}
+
+function heuristicPrice(text: string, currencyHint = '') {
   const patterns = [
-    /(?:starting\s+price|price\s+from|price|prix|fiyat|satış\s+fiyatı|satis\s+fiyati)\s*(?:\([^)]*\))?\s*[:\-]?\s*(?:AED|USD|EUR|TRY|TL|GBP|CHF|€|£|₺|\$)?\s*([0-9][0-9\s.,]{3,})/i,
-    /(?:AED|USD|EUR|TRY|TL|GBP|CHF|€|£|₺|\$)\s*([0-9][0-9\s.,]{3,})/i,
-    /([0-9][0-9\s.,]{3,})\s*(?:AED|USD|EUR|TRY|TL|GBP|CHF|€|£|₺|\$)/i,
+    /(?:starting\s+price|price\s+from|price|prix|fiyat|satış\s+fiyatı|satis\s+fiyati)\s*(?:\([^)]*\))?\s*[:\-]?\s*(?:AED|USD|EUR|TRY|TL|GBP|CHF|KZT|GEL|€|£|₺|₸|₾|\$)?\s*([0-9][0-9\s.,]{3,})/i,
+    /(?:AED|USD|EUR|TRY|TL|GBP|CHF|KZT|GEL|€|£|₺|₸|₾|\$)\s*([0-9][0-9\s.,]{3,})/i,
+    /([0-9][0-9\s.,]{3,})\s*(?:AED|USD|EUR|TRY|TL|GBP|CHF|KZT|GEL|€|£|₺|₸|₾|\$)/i,
   ];
   for (const pattern of patterns) {
     const match = pattern.exec(text);
@@ -173,7 +184,6 @@ function normalizeCurrencyToken(token: string) {
   }
   return null;
 }
-
 function heuristicSurface(text: string) {
   const range = /(?:surface|size|alan|brüt|brut|net)?\s*[:\-]?\s*([0-9]{2,4}(?:[.,][0-9]+)?)\s*(?:-|–|to)\s*([0-9]{2,4}(?:[.,][0-9]+)?)\s*(?:m²|m2|sqm|sq\.?\s*m)/i.exec(text);
   if (range?.[1]) return parseLocaleNumber(range[1]);
