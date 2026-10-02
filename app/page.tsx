@@ -12,7 +12,7 @@ import { StructuredData } from '@/components/StructuredData';
 const locale = 'fr' as const;
 
 const homeFaqs = [
-  { question: 'Bosphoras est-il une agence immobilière en Turquie ?', answer: 'Non. Bosphoras est un bureau privé international. L’immobilier peut faire partie du parcours, mais seulement après la stratégie : ville, résidence, fiscalité, avocat, santé, assurance, banque, société, bureaux et niveau de vie recherché.' },
+  { question: 'Bosphoras est-il une agence immobilière en Turquie ?', answer: 'Bosphoras agit comme Property Desk et bureau privé de sélection, mise en relation et coordination. Les prestations réglementées de transaction immobilière sont réalisées dans le cadre applicable avec les professionnels autorisés concernés.' },
   { question: 'Bosphoras accompagne-t-il les investisseurs étrangers à Istanbul, Bodrum et Antalya ?', answer: 'Oui. Bosphoras coordonne l’installation, les démarches, les services privés et les professionnels sélectionnés à Istanbul, Bodrum et Antalya pour des investisseurs, entrepreneurs, familles et clients internationaux.' },
   { question: 'Bosphoras Private Access est-il une carte de réduction ?', answer: 'Non. Bosphoras Private Access n’est pas une carte de réduction. C’est un accès privé au bureau Bosphoras, aux introductions qualifiées, au traitement prioritaire et à la coordination confidentielle des demandes en Turquie.' },
   { question: 'Peut-on solliciter Bosphoras sans devenir membre ?', answer: 'Oui. L’accompagnement complet Private Desk démarre à partir de 7 500 USD pour une année, ou sur devis personnalisé selon la mission.' },
@@ -29,7 +29,7 @@ const expertises = [
   { icon: Scale, title: 'Legal & Tax', text: 'Coordination juridique et fiscale avec des professionnels habilités.' },
   { icon: Building2, title: 'Business Setup', text: 'Création de société, comptabilité, bureaux premium et structuration opérationnelle.' },
   { icon: Shield, title: 'Health & Insurance', text: 'Assurance santé, médecins, cliniques privées et parcours familial sécurisé.' },
-  { icon: Home, title: 'Property & Relocation', text: 'Immobilier, relocation, installation familiale et gestion de la vie locale.' },
+  { icon: Home, title: 'Property & Investment', text: 'Projets sélectionnés, plans de paiement, lecture technique, achat immobilier et relocation.' },
   { icon: Bell, title: 'VIP Hospitality', text: 'Chauffeurs, hôtels, villas, restaurants, événements, yachts et services privés.' },
   { icon: KeyRound, title: 'Private Access', text: 'Adhésion privée sur sélection, accès prioritaire et coordination continue.' },
 ];
