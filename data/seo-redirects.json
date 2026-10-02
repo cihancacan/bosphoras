@@ -181,17 +181,17 @@
   },
   {
     "source": "/en/services/immobilier-relocation",
-    "destination": "/en/services/property-relocation",
+    "destination": "/en/property-turkey",
     "permanent": true
   },
   {
     "source": "/ru/services/immobilier-relocation",
-    "destination": "/ru/uslugi/nedvizhimost-pereezd",
+    "destination": "/ru/nedvizhimost-v-turtsii",
     "permanent": true
   },
   {
     "source": "/ar/services/immobilier-relocation",
-    "destination": "/ar/خدمات/العقارات-والانتقال",
+    "destination": "/ar/عقارات-تركيا",
     "permanent": true
   },
   {
@@ -622,6 +622,26 @@
   {
     "source": "/ru/nalog-dividendy-inostrannye-turtsiya",
     "destination": "/ru/nalog-na-inostrannye-dividendy-v-turtsii",
+    "permanent": true
+  },
+  {
+    "source": "/services/immobilier-relocation",
+    "destination": "/immobilier-turquie",
+    "permanent": true
+  },
+  {
+    "source": "/en/services/property-relocation",
+    "destination": "/en/property-turkey",
+    "permanent": true
+  },
+  {
+    "source": "/ru/uslugi/nedvizhimost-pereezd",
+    "destination": "/ru/nedvizhimost-v-turtsii",
+    "permanent": true
+  },
+  {
+    "source": "/ar/خدمات/العقارات-والانتقال",
+    "destination": "/ar/عقارات-تركيا",
     "permanent": true
   }
 ]
