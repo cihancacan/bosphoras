@@ -156,9 +156,16 @@ export function PropertyDetailPage({ locale, property }: PropertyDetailPageProps
     offeredBy: { '@id': `${siteUrl}/#organization` },
   };
 
+  const localizedPaths = Object.fromEntries(
+    (['fr', 'en', 'ru', 'ar'] as const).map((targetLocale) => [
+      targetLocale,
+      getLocalePath(targetLocale, getPropertyPath(targetLocale, property)),
+    ])
+  ) as Record<Locale, string>;
+
   return (
     <main dir={localeDir[locale]} className="min-h-screen bg-[#fbf7f0] text-[#121826]">
-      <Header locale={locale} currentPath={fullPath} />
+      <Header locale={locale} currentPath={fullPath} localizedPaths={localizedPaths} />
       <StructuredData data={organizationSchema()} />
       <StructuredData data={propertySchema} />
       <StructuredData
