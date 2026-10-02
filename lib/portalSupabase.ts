@@ -17,3 +17,14 @@ export function getPortalSupabase() {
   }
   return browserClient;
 }
+
+
+export function createIsolatedPortalSupabase() {
+  return createClient(portalSupabaseUrl, portalSupabasePublishableKey, {
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false,
+      detectSessionInUrl: false,
+    },
+  });
+}
