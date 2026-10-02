@@ -23,7 +23,7 @@ function pct(value: number) {
 }
 
 function Help({ children }: { children: React.ReactNode }) {
-  return <span className="normal-case font-normal tracking-normal text-[#7b8794]">({children})</span>;
+  return <span className="normal-case font-normal tracking-normal text-[#85888e]">({children})</span>;
 }
 
 export function InvestmentCalculator({
@@ -162,8 +162,8 @@ export function InvestmentCalculator({
   ]);
 
   const inputClass =
-    'min-h-[42px] w-full border border-[#cfd8e3] bg-white px-3 text-sm text-[#162334] outline-none transition focus:border-[#315d7c] focus:ring-2 focus:ring-[#315d7c]/10';
-  const labelClass = 'grid gap-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-[#51606f]';
+    'min-h-[42px] w-full border border-[#d8d4cc] bg-white px-3 text-sm text-[#1a1d22] outline-none transition focus:border-[#315d7c] focus:ring-2 focus:ring-[#315d7c]/10';
+  const labelClass = 'grid gap-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-[#656a72]';
 
   async function saveScenario() {
     if (!userId) return;
@@ -290,8 +290,8 @@ export function InvestmentCalculator({
   ];
 
   return (
-    <div className="space-y-8 [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',sans-serif]">
-      <div className="grid gap-5 border border-[#d9e1e8] bg-white p-6 md:grid-cols-4">
+    <div className="space-y-8 [font-family:'Avenir_Next','Helvetica_Neue',Arial,sans-serif]">
+      <div className="grid gap-5 border border-[#d8d4cc] bg-white p-6 md:grid-cols-4">
         <label className={labelClass}>Devise <Help>devise de travail du dossier</Help>
           <select value={currency} onChange={(e) => setCurrency(e.target.value)} className={inputClass}>
             <option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option><option>KZT</option><option>GEL</option>
@@ -318,29 +318,29 @@ export function InvestmentCalculator({
 
       <section>
         <div className="mb-4 flex items-center gap-3">
-          <TrendingUp size={19} className="text-[#315d7c]" />
+          <TrendingUp size={19} className="text-[#9a7447]" />
           <div>
-            <h3 className="text-lg font-semibold text-[#162334]">Lecture investissement</h3>
-            <p className="text-xs text-[#7b8794]">Les indicateurs se recalculent dès qu’une hypothèse change.</p>
+            <h3 className="text-lg font-semibold text-[#1a1d22]">Lecture investissement</h3>
+            <p className="text-xs text-[#85888e]">Les indicateurs se recalculent dès qu’une hypothèse change.</p>
           </div>
         </div>
         <div className="grid gap-px bg-[#d9e1e8] sm:grid-cols-2 lg:grid-cols-4">
           {metrics.map(([metric, value, help]) => (
-            <div key={metric} className="bg-[#132538] p-5 text-white">
-              <span className="text-[0.66rem] font-semibold uppercase tracking-[0.1em] text-[#a9bfd0]">{metric}</span>
+            <div key={metric} className="bg-[#1d2127] p-5 text-white">
+              <span className="text-[0.66rem] font-semibold uppercase tracking-[0.1em] text-[#c5aa82]">{metric}</span>
               <strong className="mt-2 block text-2xl font-semibold tracking-[-0.02em]">{value}</strong>
-              <span className="mt-2 block text-[0.7rem] leading-5 text-[#91a2b2]">({help})</span>
+              <span className="mt-2 block text-[0.7rem] leading-5 text-[#a5a8ad]">({help})</span>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="border border-[#d9e1e8] bg-[#edf3f7] p-6">
+      <section className="border border-[#d8d4cc] bg-[#f0ede7] p-6">
         <div className="flex items-center gap-3">
-          <WalletCards className="text-[#315d7c]" size={22}/>
+          <WalletCards className="text-[#9a7447]" size={22}/>
           <div>
-            <h3 className="text-xl font-semibold text-[#162334]">Plan promoteur</h3>
-            <p className="mt-1 text-xs text-[#687685]">Pour visualiser ce que le client paie aujourd’hui, pendant le chantier et à la livraison.</p>
+            <h3 className="text-xl font-semibold text-[#1a1d22]">Plan promoteur</h3>
+            <p className="mt-1 text-xs text-[#6b7078]">Pour visualiser ce que le client paie aujourd’hui, pendant le chantier et à la livraison.</p>
           </div>
         </div>
         <div className="mt-6 grid gap-4 md:grid-cols-3 xl:grid-cols-6">
@@ -352,25 +352,25 @@ export function InvestmentCalculator({
           <label className={labelClass}>Remise comptant % <Help>remise officielle si paiement intégral immédiat</Help><input value={developerCashDiscountPct} onChange={(e)=>setDeveloperCashDiscountPct(e.target.value)} className={inputClass}/></label>
         </div>
         <div className="mt-6 grid gap-3 md:grid-cols-2 xl:grid-cols-5">
-          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">Prix comptant</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerCashPrice, currency)}</strong><small className="mt-1 block text-[#7b8794]">(prix après remise comptant saisie)</small></div>
-          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">Prix échelonné</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerInstallmentTotal, currency)}</strong><small className="mt-1 block text-[#7b8794]">(inclut le surcoût saisi, s’il existe)</small></div>
-          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">Aujourd'hui</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerDeposit, currency)}</strong><small className="mt-1 block text-[#7b8794]">(acompte sur prix échelonné)</small></div>
-          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">Mensualité promoteur</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerMonthly, currency)}</strong><small className="mt-1 block text-[#7b8794]">(hors éventuelles échéances spéciales)</small></div>
-          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">À la livraison</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerBalloon, currency)}</strong><small className="mt-1 block text-[#7b8794]">(solde final simulé)</small></div>
+          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#73777e]">Prix comptant</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerCashPrice, currency)}</strong><small className="mt-1 block text-[#85888e]">(prix après remise comptant saisie)</small></div>
+          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#73777e]">Prix échelonné</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerInstallmentTotal, currency)}</strong><small className="mt-1 block text-[#85888e]">(inclut le surcoût saisi, s’il existe)</small></div>
+          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#73777e]">Aujourd'hui</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerDeposit, currency)}</strong><small className="mt-1 block text-[#85888e]">(acompte sur prix échelonné)</small></div>
+          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#73777e]">Mensualité promoteur</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerMonthly, currency)}</strong><small className="mt-1 block text-[#85888e]">(hors éventuelles échéances spéciales)</small></div>
+          <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#73777e]">À la livraison</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerBalloon, currency)}</strong><small className="mt-1 block text-[#85888e]">(solde final simulé)</small></div>
         </div>
         <div className="mt-5 flex flex-wrap items-center gap-3">
-          <button type="button" onClick={printReport} className="inline-flex min-h-[44px] items-center gap-2 border border-[#12304a] bg-white px-5 text-sm font-semibold text-[#12304a]"><FileDown size={16}/>PDF / Imprimer</button>
-          <span className="text-xs leading-5 text-[#687685]">Le bouton ouvre un rapport A4 optimisé pour impression ; choisissez « Enregistrer au format PDF » dans la boîte d’impression pour le partager.</span>
+          <button type="button" onClick={printReport} className="inline-flex min-h-[44px] items-center gap-2 border border-[#1a1d22] bg-white px-5 text-sm font-semibold text-[#1a1d22]"><FileDown size={16}/>PDF / Imprimer</button>
+          <span className="text-xs leading-5 text-[#6b7078]">Le bouton ouvre un rapport A4 optimisé pour impression ; choisissez « Enregistrer au format PDF » dans la boîte d’impression pour le partager.</span>
         </div>
       </section>
 
       {userId ? (
-        <section className="border border-[#d9e1e8] bg-white p-6">
+        <section className="border border-[#d8d4cc] bg-white p-6">
           <div className="flex items-center gap-3">
-            <Save size={19} className="text-[#315d7c]" />
+            <Save size={19} className="text-[#9a7447]" />
             <div>
-              <h3 className="text-lg font-semibold text-[#162334]">Enregistrer ce scénario</h3>
-              <p className="text-xs text-[#7b8794]">Conservez l’analyse dans le CRM pour la reprendre avec le client ou comparer plusieurs hypothèses.</p>
+              <h3 className="text-lg font-semibold text-[#1a1d22]">Enregistrer ce scénario</h3>
+              <p className="text-xs text-[#85888e]">Conservez l’analyse dans le CRM pour la reprendre avec le client ou comparer plusieurs hypothèses.</p>
             </div>
           </div>
           <div className="mt-5 grid gap-4 md:grid-cols-4">
@@ -396,22 +396,22 @@ export function InvestmentCalculator({
               </select>
             </label>
           </div>
-          <label className="mt-4 grid gap-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-[#51606f]">Notes
-            <textarea value={scenarioNotes} onChange={(e)=>setScenarioNotes(e.target.value)} rows={3} className="border border-[#cfd8e3] bg-white px-3 py-3 text-sm leading-6 outline-none focus:border-[#315d7c]" placeholder="Hypothèses, réserves, prochaine action…"/>
+          <label className="mt-4 grid gap-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.08em] text-[#656a72]">Notes
+            <textarea value={scenarioNotes} onChange={(e)=>setScenarioNotes(e.target.value)} rows={3} className="border border-[#d8d4cc] bg-white px-3 py-3 text-sm leading-6 outline-none focus:border-[#315d7c]" placeholder="Hypothèses, réserves, prochaine action…"/>
           </label>
           <div className="mt-4 flex flex-wrap items-center gap-3">
-            <button disabled={scenarioBusy} onClick={saveScenario} className="inline-flex min-h-[44px] items-center gap-2 bg-[#12304a] px-5 text-sm font-semibold text-white disabled:opacity-50"><Save size={15}/>{scenarioBusy?'Enregistrement…':'Enregistrer le scénario'}</button>
+            <button disabled={scenarioBusy} onClick={saveScenario} className="inline-flex min-h-[44px] items-center gap-2 bg-[#1a1d22] px-5 text-sm font-semibold text-white disabled:opacity-50"><Save size={15}/>{scenarioBusy?'Enregistrement…':'Enregistrer le scénario'}</button>
             {scenarioMessage ? <span className="text-sm text-[#5f6e7d]">{scenarioMessage}</span> : null}
           </div>
 
           {savedScenarios.length ? (
-            <div className="mt-7 border-t border-[#e7edf2] pt-5">
-              <div className="mb-3 flex items-center gap-2 text-[#315d7c]"><History size={16}/><strong className="text-sm">Scénarios récents</strong></div>
+            <div className="mt-7 border-t border-[#e6e2dc] pt-5">
+              <div className="mb-3 flex items-center gap-2 text-[#9a7447]"><History size={16}/><strong className="text-sm">Scénarios récents</strong></div>
               <div className="grid gap-3 md:grid-cols-2">
                 {savedScenarios.slice(0,6).map((scenario:any)=>(
-                  <article key={scenario.id} className="border border-[#e1e7ed] bg-[#f8fafb] p-4">
-                    <strong className="block text-sm text-[#162334]">{scenario.name}</strong>
-                    <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#687685]">
+                  <article key={scenario.id} className="border border-[#e6e2dc] bg-[#faf9f6] p-4">
+                    <strong className="block text-sm text-[#1a1d22]">{scenario.name}</strong>
+                    <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#6b7078]">
                       <span>Rend. net {pct(Number(scenario.outputs?.netYield||0))}</span>
                       <span>Cash-flow {money(Number(scenario.outputs?.netAnnualCashflow||0),scenario.currency||currency)}</span>
                       <span>DSCR {Number(scenario.outputs?.dscr||0).toFixed(2)}</span>
@@ -425,17 +425,17 @@ export function InvestmentCalculator({
       ) : null}
 
       <section className="grid gap-4 md:grid-cols-3">
-        <div className="border border-[#d9e1e8] bg-white p-5">
-          <div className="flex items-center gap-2 text-[#315d7c]"><Calculator size={18}/><strong>Comparer des scénarios</strong></div>
-          <p className="mt-3 text-sm leading-6 text-[#687685]">Dupliquez mentalement le dossier en scénario prudent, central et optimiste. Un investissement doit rester cohérent quand le loyer baisse ou que la vacance augmente.</p>
+        <div className="border border-[#d8d4cc] bg-white p-5">
+          <div className="flex items-center gap-2 text-[#9a7447]"><Calculator size={18}/><strong>Comparer des scénarios</strong></div>
+          <p className="mt-3 text-sm leading-6 text-[#6b7078]">Dupliquez mentalement le dossier en scénario prudent, central et optimiste. Un investissement doit rester cohérent quand le loyer baisse ou que la vacance augmente.</p>
         </div>
-        <div className="border border-[#d9e1e8] bg-white p-5">
-          <div className="flex items-center gap-2 text-[#315d7c]"><Landmark size={18}/><strong>Dette et liquidité</strong></div>
-          <p className="mt-3 text-sm leading-6 text-[#687685]">LTV et DSCR servent à mesurer le poids du financement. Le capital disponible aujourd’hui doit aussi couvrir les frais et une marge de sécurité.</p>
+        <div className="border border-[#d8d4cc] bg-white p-5">
+          <div className="flex items-center gap-2 text-[#9a7447]"><Landmark size={18}/><strong>Dette et liquidité</strong></div>
+          <p className="mt-3 text-sm leading-6 text-[#6b7078]">LTV et DSCR servent à mesurer le poids du financement. Le capital disponible aujourd’hui doit aussi couvrir les frais et une marge de sécurité.</p>
         </div>
-        <div className="border border-[#d9e1e8] bg-white p-5">
-          <div className="flex items-center gap-2 text-[#315d7c]"><Info size={18}/><strong>Hypothèses à confirmer</strong></div>
-          <p className="mt-3 text-sm leading-6 text-[#687685]">Fiscalité, frais officiels, règles bancaires, change et coûts de transaction doivent être validés dossier par dossier. Le calculateur ne remplace pas les professionnels réglementés.</p>
+        <div className="border border-[#d8d4cc] bg-white p-5">
+          <div className="flex items-center gap-2 text-[#9a7447]"><Info size={18}/><strong>Hypothèses à confirmer</strong></div>
+          <p className="mt-3 text-sm leading-6 text-[#6b7078]">Fiscalité, frais officiels, règles bancaires, change et coûts de transaction doivent être validés dossier par dossier. Le calculateur ne remplace pas les professionnels réglementés.</p>
         </div>
       </section>
     </div>
