@@ -367,17 +367,117 @@ function ChatPanel({isAdmin,user,threads,partnerUsers,selectedThread,setSelected
 function PartnersPanel({partners,partnerUsers,reload}:any) {
   const supabase=getPortalSupabase();
   const [created,setCreated]=useState<any>(null);
-  async function invite(e:FormEvent<HTMLFormElement>) {
-    e.preventDefault(); const fd=new FormData(e.currentTarget); const code=randomInviteCode();
-    const {data,error}=await supabase.rpc('admin_create_partner_invite',{p_email:String(fd.get('email')||''),p_company_name:String(fd.get('company')||''),p_full_name:String(fd.get('full_name')||''),p_invite_code:code});
-    if(error)alert(error.message); else {setCreated({...data,code});e.currentTarget.reset();reload();}
+  const [busy,setBusy]=useState(false);
+
+  async function createPartner(e:FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setBusy(true);
+    setCreated(null);
+    const fd=new FormData(e.currentTarget);
+    const email=String(fd.get('email')||'').trim().toLowerCase();
+    const password=String(fd.get('password')||'');
+    const fullName=String(fd.get('full_name')||'').trim();
+    const company=String(fd.get('company')||'').trim();
+    const phone=String(fd.get('phone')||'').trim();
+    const city=String(fd.get('city')||'').trim();
+
+    if(password.length<10){
+      alert('Le mot de passe initial doit contenir au moins 10 caractères.');
+      setBusy(false);
+      return;
+    }
+
+    const {data:prepared,error:prepareError}=await supabase.rpc('admin_prepare_partner_account',{
+      p_email:email,
+      p_company_name:company,
+      p_full_name:fullName,
+      p_phone:phone||null,
+      p_city:city||null,
+      p_country:'TR',
+    });
+
+    if(prepareError){
+      alert(prepareError.message);
+      setBusy(false);
+      return;
+    }
+
+    const isolated=createIsolatedPortalSupabase();
+    const {data:signup,error:signupError}=await isolated.auth.signUp({
+      email,
+      password,
+      options:{
+        data:{
+          full_name:fullName,
+          provision_code:prepared.provision_code,
+        },
+      },
+    });
+
+    if(signupError){
+      alert(signupError.message);
+      setBusy(false);
+      return;
+    }
+
+    setCreated({
+      email,
+      fullName,
+      company,
+      sessionReady:Boolean(signup.session),
+    });
+    e.currentTarget.reset();
+    await reload();
+    setBusy(false);
   }
-  async function status(id:string,next:string){const {error}=await supabase.rpc('admin_set_partner_status',{p_partner_id:id,p_status:next});if(error)alert(error.message);else reload();}
+
+  async function status(id:string,next:string){
+    const {error}=await supabase.rpc('admin_set_partner_status',{p_partner_id:id,p_status:next});
+    if(error)alert(error.message);else reload();
+  }
+
   const usersByPartner=partnerUsers.reduce((acc:any,u:any)=>{(acc[u.partner_id] ||= []).push(u);return acc;},{});
+
   return <Section title="Gestion des partenaires" kicker="Administration complète">
-    <form onSubmit={invite} className="grid gap-4 border border-[#d8c7a1] bg-white p-6 md:grid-cols-4"><input name="company" required placeholder="Société partenaire" className="border border-[#d8c7a1] px-3 py-3"/><input name="full_name" required placeholder="Nom du contact" className="border border-[#d8c7a1] px-3 py-3"/><input name="email" type="email" required placeholder="E-mail" className="border border-[#d8c7a1] px-3 py-3"/><button className="bg-[#101827] px-4 py-3 text-xs font-bold uppercase tracking-[0.12em] text-white">Créer invitation</button></form>
-    {created&&<div className="mt-4 border border-[#c9a45d] bg-[#fff8e9] p-5"><strong className="block">Invitation créée pour {created.email}</strong><p className="mt-2 text-sm text-[#58616d]">Code à transmettre une seule fois au partenaire :</p><div className="mt-3 flex flex-wrap items-center gap-3"><code className="bg-white px-4 py-3 text-lg font-bold">{created.code}</code><button onClick={()=>navigator.clipboard.writeText(created.code)} className="border border-[#101827] px-4 py-3 text-xs font-bold uppercase">Copier</button></div></div>}
-    <div className="mt-8 grid gap-4 xl:grid-cols-2">{partners.map((p:any)=><article key={p.id} className="border border-[#d8c7a1] bg-white p-5"><div className="flex flex-wrap items-start justify-between gap-4"><div><span className="text-xs font-bold uppercase tracking-[0.12em] text-[#315d7c]">{p.status}</span><h3 className="mt-1 font-sans text-2xl">{p.name}</h3><p className="mt-2 text-sm text-[#66707b]">{p.email||'—'} · {usersByPartner[p.id]?.map((u:any)=>u.full_name||u.email).join(', ')||'Invitation en attente'}</p></div><div className="flex gap-2">{p.status!=='active'&&<button onClick={()=>status(p.id,'active')} className="border border-[#101827] px-3 py-2 text-xs font-bold uppercase">Activer</button>}{p.status==='active'&&<button onClick={()=>status(p.id,'suspended')} className="border border-[#9c5a52] px-3 py-2 text-xs font-bold uppercase text-[#9c5a52]">Suspendre</button>}</div></div></article>)}</div>
+    <div className="mb-6 border border-[#d9e1e8] bg-[#eef4f8] p-5 text-sm leading-6 text-[#51606f]">
+      <strong className="text-[#162334]">Création contrôlée par l’administrateur.</strong> Le partenaire ne dispose d’aucun écran d’inscription.
+      Vous créez ici sa société, son utilisateur et son mot de passe initial. Il ne voit ensuite que ses dossiers, ses contacts CRM et ses conversations.
+    </div>
+
+    <form onSubmit={createPartner} className="grid gap-4 border border-[#d9e1e8] bg-white p-6 md:grid-cols-3">
+      <input name="company" required placeholder="Société partenaire" className="min-h-[44px] border border-[#cfd8e3] px-3 text-sm"/>
+      <input name="full_name" required placeholder="Nom du contact" className="min-h-[44px] border border-[#cfd8e3] px-3 text-sm"/>
+      <input name="email" type="email" required placeholder="E-mail de connexion" className="min-h-[44px] border border-[#cfd8e3] px-3 text-sm"/>
+      <input name="password" type="password" required minLength={10} placeholder="Mot de passe initial" className="min-h-[44px] border border-[#cfd8e3] px-3 text-sm"/>
+      <input name="phone" placeholder="Téléphone" className="min-h-[44px] border border-[#cfd8e3] px-3 text-sm"/>
+      <input name="city" placeholder="Ville / bureau" className="min-h-[44px] border border-[#cfd8e3] px-3 text-sm"/>
+      <button disabled={busy} className="min-h-[46px] bg-[#12304a] px-5 text-xs font-semibold uppercase tracking-[0.1em] text-white disabled:opacity-50 md:col-span-3">
+        {busy?'Création du compte…':'Créer le compte partenaire'}
+      </button>
+    </form>
+
+    {created&&<div className="mt-4 border border-[#b9cbd8] bg-white p-5">
+      <strong className="block text-[#162334]">Compte créé : {created.fullName} · {created.company}</strong>
+      <p className="mt-2 text-sm leading-6 text-[#5f6e7d]">
+        Identifiant : {created.email}. {created.sessionReady
+          ? 'Le compte est utilisable immédiatement avec le mot de passe que vous venez de définir.'
+          : 'Le compte Auth a été créé mais Supabase demande encore une confirmation e-mail avant la première connexion.'}
+      </p>
+    </div>}
+
+    <div className="mt-8 grid gap-4 xl:grid-cols-2">{partners.map((p:any)=><article key={p.id} className="border border-[#d9e1e8] bg-white p-5">
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <span className="text-[0.67rem] font-semibold uppercase tracking-[0.1em] text-[#315d7c]">{p.status}</span>
+          <h3 className="mt-1 text-xl font-semibold tracking-[-0.02em]">{p.name}</h3>
+          <p className="mt-2 text-sm text-[#687685]">{p.email||'—'} · {usersByPartner[p.id]?.map((u:any)=>u.full_name||u.email).join(', ')||'Compte utilisateur en attente'}</p>
+        </div>
+        <div className="flex gap-2">
+          {p.status!=='active'&&<button onClick={()=>status(p.id,'active')} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase text-[#12304a]">Activer</button>}
+          {p.status==='active'&&<button onClick={()=>status(p.id,'suspended')} className="border border-[#a85656] px-3 py-2 text-xs font-semibold uppercase text-[#a85656]">Suspendre</button>}
+        </div>
+      </div>
+    </article>)}</div>
   </Section>;
 }
 
