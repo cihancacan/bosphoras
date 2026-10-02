@@ -2,13 +2,14 @@
 
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
-import { ArrowRight, Building2, MapPin, WalletCards } from 'lucide-react';
+import { ArrowRight, Building2, Globe2, MapPin, SlidersHorizontal, WalletCards } from 'lucide-react';
 import type { Locale } from '@/lib/i18n';
 import {
   formatEntryCapital,
   formatPropertyPrice,
   getPropertyPath,
-  type PropertyCity,
+  paymentBadge,
+  propertyLocationLabel,
   type PropertyCollection,
   type PropertyListing,
 } from '@/data/propertyDesk';
@@ -16,101 +17,87 @@ import {
 interface PropertyDeskBrowserProps {
   locale: Locale;
   properties: PropertyListing[];
+  globalMode?: boolean;
 }
 
-const cityLabels: Record<PropertyCity, Record<Locale, string>> = {
-  istanbul: { fr: 'Istanbul', en: 'Istanbul', ru: 'Стамбул', ar: 'إسطنبول' },
-  bodrum: { fr: 'Bodrum', en: 'Bodrum', ru: 'Бодрум', ar: 'بودروم' },
-  antalya: { fr: 'Antalya', en: 'Antalya', ru: 'Анталья', ar: 'أنطاليا' },
-};
-
 const collectionLabels: Record<PropertyCollection, Record<Locale, string>> = {
-  'selected-investment': {
-    fr: 'Investissements sélectionnés',
-    en: 'Selected investments',
-    ru: 'Отобранные инвестиции',
-    ar: 'استثمارات مختارة',
-  },
-  signature: {
-    fr: 'Signature Collection',
-    en: 'Signature Collection',
-    ru: 'Signature Collection',
-    ar: 'Signature Collection',
-  },
-  private: {
-    fr: 'Opportunités privées',
-    en: 'Private opportunities',
-    ru: 'Частные предложения',
-    ar: 'فرص خاصة',
-  },
+  'selected-investment': { fr: 'Investissement', en: 'Investment', ru: 'Инвестиции', ar: 'استثمار' },
+  signature: { fr: 'Signature', en: 'Signature', ru: 'Signature', ar: 'Signature' },
+  private: { fr: 'Privé', en: 'Private', ru: 'Частное', ar: 'خاص' },
 };
 
 function labels(locale: Locale) {
-  if (locale === 'fr') {
-    return {
-      title: 'Projets et biens sélectionnés',
-      eyebrow: 'Bosphoras Selection',
-      allCities: 'Toutes les villes',
-      allCollections: 'Toutes les sélections',
-      capital: 'Capital disponible aujourd’hui',
-      allCapital: 'Tous les budgets',
-      price: 'Prix total',
-      view: 'Voir l’opportunité',
-      emptyTitle: 'La sélection publique est en cours de constitution.',
-      emptyText:
-        'Nous préférons publier peu de biens et documenter correctement chacun d’eux. Les premières opportunités sont actuellement analysées avec nos partenaires.',
-      privateCta: 'Recevoir les opportunités privées',
-      privateHref: '/diagnostic-prive?subject=property-desk',
-    };
-  }
-  if (locale === 'ru') {
-    return {
-      title: 'Отобранные проекты и объекты',
-      eyebrow: 'Bosphoras Selection',
-      allCities: 'Все города',
-      allCollections: 'Все подборки',
-      capital: 'Капитал доступный сегодня',
-      allCapital: 'Любой бюджет',
-      price: 'Полная цена',
-      view: 'Открыть предложение',
-      emptyTitle: 'Публичная подборка сейчас формируется.',
-      emptyText:
-        'Мы предпочитаем публиковать меньше объектов, но подробно проверять каждый. Первые предложения сейчас анализируются вместе с партнёрами.',
-      privateCta: 'Получить частные предложения',
-      privateHref: '/ru/chastnaya-konsultatsiya?subject=property-desk',
-    };
-  }
-  if (locale === 'ar') {
-    return {
-      title: 'مشاريع وعقارات مختارة',
-      eyebrow: 'Bosphoras Selection',
-      allCities: 'كل المدن',
-      allCollections: 'كل المجموعات',
-      capital: 'رأس المال المتاح اليوم',
-      allCapital: 'كل الميزانيات',
-      price: 'السعر الإجمالي',
-      view: 'عرض الفرصة',
-      emptyTitle: 'يتم حالياً إعداد المجموعة العامة.',
-      emptyText:
-        'نفضل نشر عدد أقل من العقارات مع توثيق كل فرصة بعناية. يتم حالياً تحليل أول المشاريع مع شركائنا.',
-      privateCta: 'الحصول على الفرص الخاصة',
-      privateHref: '/ar/تقييم-خاص?subject=property-desk',
-    };
-  }
+  if (locale === 'fr') return {
+    title: 'Opportunités immobilières',
+    eyebrow: 'Bosphoras Property Desk',
+    allCountries: 'Tous les pays',
+    allCities: 'Toutes les villes',
+    allCollections: 'Toutes les sélections',
+    capital: 'Capital disponible aujourd’hui',
+    allCapital: 'Tous les budgets',
+    price: 'Prix',
+    entry: 'Capital aujourd’hui',
+    view: 'Voir le bien',
+    results: 'opportunité(s)',
+    emptyTitle: 'Aucun bien ne correspond à ces critères.',
+    emptyText: 'Élargissez les filtres ou demandez une recherche privée.',
+    privateCta: 'Lancer une recherche privée',
+    privateHref: '/diagnostic-prive?subject=property-desk',
+    filters: 'Filtres investisseurs',
+  };
+  if (locale === 'ru') return {
+    title: 'Инвестиционные объекты',
+    eyebrow: 'Bosphoras Property Desk',
+    allCountries: 'Все страны',
+    allCities: 'Все города',
+    allCollections: 'Все подборки',
+    capital: 'Капитал сегодня',
+    allCapital: 'Любой бюджет',
+    price: 'Цена',
+    entry: 'Капитал сегодня',
+    view: 'Открыть объект',
+    results: 'объект(ов)',
+    emptyTitle: 'Нет объектов по выбранным критериям.',
+    emptyText: 'Расширьте фильтры или запросите частный поиск.',
+    privateCta: 'Запросить частный поиск',
+    privateHref: '/ru/chastnaya-konsultatsiya?subject=property-desk',
+    filters: 'Фильтры инвестора',
+  };
+  if (locale === 'ar') return {
+    title: 'فرص عقارية استثمارية',
+    eyebrow: 'Bosphoras Property Desk',
+    allCountries: 'كل الدول',
+    allCities: 'كل المدن',
+    allCollections: 'كل الفئات',
+    capital: 'رأس المال اليوم',
+    allCapital: 'كل الميزانيات',
+    price: 'السعر',
+    entry: 'رأس المال اليوم',
+    view: 'عرض العقار',
+    results: 'فرصة',
+    emptyTitle: 'لا توجد عقارات مطابقة لهذه المعايير.',
+    emptyText: 'وسّع عوامل التصفية أو اطلب بحثاً خاصاً.',
+    privateCta: 'طلب بحث خاص',
+    privateHref: '/ar/تقييم-خاص?subject=property-desk',
+    filters: 'فلاتر المستثمر',
+  };
   return {
-    title: 'Selected projects and properties',
-    eyebrow: 'Bosphoras Selection',
+    title: 'Property opportunities',
+    eyebrow: 'Bosphoras Property Desk',
+    allCountries: 'All countries',
     allCities: 'All cities',
-    allCollections: 'All collections',
+    allCollections: 'All selections',
     capital: 'Capital available today',
     allCapital: 'All budgets',
-    price: 'Total price',
-    view: 'View opportunity',
-    emptyTitle: 'The public selection is being built.',
-    emptyText:
-      'We prefer to publish fewer properties and document each one properly. The first opportunities are currently under review with our partners.',
-    privateCta: 'Receive private opportunities',
+    price: 'Price',
+    entry: 'Capital today',
+    view: 'View property',
+    results: 'opportunity(ies)',
+    emptyTitle: 'No property matches these filters.',
+    emptyText: 'Broaden the filters or request a private search.',
+    privateCta: 'Request a private search',
     privateHref: '/en/private-assessment?subject=property-desk',
+    filters: 'Investor filters',
   };
 }
 
@@ -124,117 +111,121 @@ function inCapitalRange(property: PropertyListing, range: string) {
   return true;
 }
 
-export function PropertyDeskBrowser({ locale, properties }: PropertyDeskBrowserProps) {
+export function PropertyDeskBrowser({ locale, properties, globalMode = false }: PropertyDeskBrowserProps) {
   const copy = labels(locale);
+  const [country, setCountry] = useState('');
   const [city, setCity] = useState('');
   const [collection, setCollection] = useState('');
   const [capital, setCapital] = useState('');
 
+  const countries = useMemo(() => {
+    const map = new Map<string, string>();
+    properties.forEach((property) => map.set(property.countryCode || property.countryName, property.countryName || property.countryCode));
+    return Array.from(map.entries()).sort((a,b)=>a[1].localeCompare(b[1]));
+  }, [properties]);
+
+  const cities = useMemo(() => {
+    const list = properties
+      .filter((property) => !country || (property.countryCode || property.countryName) === country)
+      .map((property) => [property.city, property.cityName] as [string,string]);
+    return Array.from(new Map(list).entries()).sort((a,b)=>a[1].localeCompare(b[1]));
+  }, [properties, country]);
+
   const filtered = useMemo(
     () =>
       properties.filter((property) => {
+        if (country && (property.countryCode || property.countryName) !== country) return false;
         if (city && property.city !== city) return false;
         if (collection && property.collection !== collection) return false;
         return inCapitalRange(property, capital);
       }),
-    [properties, city, collection, capital]
+    [properties, country, city, collection, capital]
   );
 
   return (
-    <section id="selection" className="border-y border-[#d8c7a1] bg-[#f7f1e8] py-16 md:py-24">
-      <div className="container-editorial">
-        <div className="mb-10 max-w-3xl">
-          <p className="mb-4 text-[0.68rem] font-bold uppercase tracking-[0.3em] text-[#8a6728]">
-            {copy.eyebrow}
-          </p>
-          <h2 className="font-serif text-4xl leading-tight tracking-[-0.03em] text-[#121826] md:text-5xl">
-            {copy.title}
-          </h2>
+    <section id="selection" className="bg-[#f2f5f4] py-14 md:py-20 [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',sans-serif]">
+      <div className="mx-auto max-w-[1540px] px-5 md:px-8">
+        <div className="mb-7 flex flex-wrap items-end justify-between gap-5">
+          <div>
+            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-[#8a6a45]">{copy.eyebrow}</p>
+            <h2 className="mt-2 text-3xl font-semibold tracking-[-0.04em] text-[#12221f] md:text-5xl">{copy.title}</h2>
+          </div>
+          <span className="rounded-full border border-[#d7dfdc] bg-white px-4 py-2 text-xs font-semibold text-[#596965]">{filtered.length} {copy.results}</span>
         </div>
 
-        <div className="mb-10 grid gap-3 border border-[#d8c7a1] bg-white p-4 md:grid-cols-3">
-          <label className="grid gap-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#5b6470]">
-            <span className="inline-flex items-center gap-2"><MapPin size={14} /> {copy.allCities}</span>
-            <select value={city} onChange={(e) => setCity(e.target.value)} className="min-h-[46px] border border-[#d8c7a1] bg-white px-3 text-sm normal-case tracking-normal text-[#121826]">
-              <option value="">{copy.allCities}</option>
-              {(['istanbul', 'bodrum', 'antalya'] as PropertyCity[]).map((item) => (
-                <option key={item} value={item}>{cityLabels[item][locale]}</option>
-              ))}
-            </select>
-          </label>
-
-          <label className="grid gap-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#5b6470]">
-            <span className="inline-flex items-center gap-2"><Building2 size={14} /> {copy.allCollections}</span>
-            <select value={collection} onChange={(e) => setCollection(e.target.value)} className="min-h-[46px] border border-[#d8c7a1] bg-white px-3 text-sm normal-case tracking-normal text-[#121826]">
-              <option value="">{copy.allCollections}</option>
-              {(['selected-investment', 'signature', 'private'] as PropertyCollection[]).map((item) => (
-                <option key={item} value={item}>{collectionLabels[item][locale]}</option>
-              ))}
-            </select>
-          </label>
-
-          <label className="grid gap-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#5b6470]">
-            <span className="inline-flex items-center gap-2"><WalletCards size={14} /> {copy.capital}</span>
-            <select value={capital} onChange={(e) => setCapital(e.target.value)} className="min-h-[46px] border border-[#d8c7a1] bg-white px-3 text-sm normal-case tracking-normal text-[#121826]">
-              <option value="">{copy.allCapital}</option>
-              <option value="under50">€25k–€50k</option>
-              <option value="50-100">€50k–€100k</option>
-              <option value="100-250">€100k–€250k</option>
-              <option value="250plus">€250k+</option>
-            </select>
-          </label>
+        <div className="mb-8 rounded-2xl border border-[#d7dfdc] bg-white p-4 shadow-[0_18px_50px_rgba(20,40,36,0.06)]">
+          <div className="mb-3 flex items-center gap-2 text-[0.68rem] font-semibold uppercase tracking-[0.12em] text-[#65756f]">
+            <SlidersHorizontal size={14}/> {copy.filters}
+          </div>
+          <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-4">
+            <label className="grid gap-2 text-xs font-semibold text-[#53625e]">
+              <span className="inline-flex items-center gap-2"><Globe2 size={14}/>{copy.allCountries}</span>
+              <select value={country} onChange={(e)=>{setCountry(e.target.value);setCity('');}} className="min-h-[46px] rounded-lg border border-[#d7dfdc] bg-white px-3 text-sm font-normal text-[#12221f]">
+                <option value="">{copy.allCountries}</option>
+                {countries.map(([code,name])=><option key={code} value={code}>{name}</option>)}
+              </select>
+            </label>
+            <label className="grid gap-2 text-xs font-semibold text-[#53625e]">
+              <span className="inline-flex items-center gap-2"><MapPin size={14}/>{copy.allCities}</span>
+              <select value={city} onChange={(e)=>setCity(e.target.value)} className="min-h-[46px] rounded-lg border border-[#d7dfdc] bg-white px-3 text-sm font-normal text-[#12221f]">
+                <option value="">{copy.allCities}</option>
+                {cities.map(([key,name])=><option key={key} value={key}>{name}</option>)}
+              </select>
+            </label>
+            <label className="grid gap-2 text-xs font-semibold text-[#53625e]">
+              <span className="inline-flex items-center gap-2"><Building2 size={14}/>{copy.allCollections}</span>
+              <select value={collection} onChange={(e)=>setCollection(e.target.value)} className="min-h-[46px] rounded-lg border border-[#d7dfdc] bg-white px-3 text-sm font-normal text-[#12221f]">
+                <option value="">{copy.allCollections}</option>
+                {(['selected-investment','signature','private'] as PropertyCollection[]).map((item)=><option key={item} value={item}>{collectionLabels[item][locale]}</option>)}
+              </select>
+            </label>
+            <label className="grid gap-2 text-xs font-semibold text-[#53625e]">
+              <span className="inline-flex items-center gap-2"><WalletCards size={14}/>{copy.capital}</span>
+              <select value={capital} onChange={(e)=>setCapital(e.target.value)} className="min-h-[46px] rounded-lg border border-[#d7dfdc] bg-white px-3 text-sm font-normal text-[#12221f]">
+                <option value="">{copy.allCapital}</option>
+                <option value="under50">€25k–€50k</option>
+                <option value="50-100">€50k–€100k</option>
+                <option value="100-250">€100k–€250k</option>
+                <option value="250plus">€250k+</option>
+              </select>
+            </label>
+          </div>
         </div>
 
         {filtered.length === 0 ? (
-          <div className="border border-[#d8c7a1] bg-white px-6 py-14 text-center md:px-12">
-            <h3 className="font-serif text-3xl text-[#121826]">{copy.emptyTitle}</h3>
-            <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-[#58616d]">{copy.emptyText}</p>
-            <Link href={copy.privateHref} className="mt-8 inline-flex min-h-[48px] items-center gap-3 bg-[#121826] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#263246]">
-              {copy.privateCta}<ArrowRight size={17} />
-            </Link>
+          <div className="rounded-2xl border border-[#d7dfdc] bg-white px-6 py-14 text-center">
+            <h3 className="text-2xl font-semibold text-[#12221f]">{copy.emptyTitle}</h3>
+            <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-[#65756f]">{copy.emptyText}</p>
+            <Link href={copy.privateHref} className="mt-7 inline-flex min-h-[46px] items-center gap-2 rounded-lg bg-[#12221f] px-5 text-sm font-semibold text-white">{copy.privateCta}<ArrowRight size={15}/></Link>
           </div>
         ) : (
-          <div className="grid gap-7 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {filtered.map((property) => {
               const capitalLabel = formatEntryCapital(property, locale);
+              const payBadge = paymentBadge(property, locale);
               return (
-                <article key={property.id} className="overflow-hidden border border-[#d8c7a1] bg-white">
-                  <Link href={getPropertyPath(locale, property)} className="group block">
-                    <div className="relative aspect-[4/3] overflow-hidden bg-[#e8dfd1]">
+                <article key={property.id} className="group overflow-hidden rounded-2xl border border-[#d7dfdc] bg-white shadow-[0_18px_50px_rgba(20,40,36,0.05)] transition hover:-translate-y-1 hover:shadow-[0_24px_70px_rgba(20,40,36,0.10)]">
+                  <Link href={getPropertyPath(locale, property, globalMode)} className="block">
+                    <div className="relative aspect-[16/10] overflow-hidden bg-[#dce4e1]">
                       {property.heroImage || property.images[0] ? (
-                        <img
-                          src={property.heroImage || property.images[0]}
-                          alt={property.title[locale]}
-                          className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]"
-                        />
+                        <img src={property.heroImage || property.images[0]} alt={property.title[locale]} className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]"/>
                       ) : (
-                        <div className="flex h-full items-center justify-center text-xs uppercase tracking-[0.2em] text-[#8a7f70]">Bosphoras Property Desk</div>
+                        <div className="flex h-full items-center justify-center text-xs font-semibold uppercase tracking-[0.18em] text-[#71817c]">Bosphoras Property Desk</div>
                       )}
-                      <span className="absolute left-4 top-4 bg-[#121826] px-3 py-2 text-[0.62rem] font-bold uppercase tracking-[0.16em] text-white">
-                        {collectionLabels[property.collection][locale]}
-                      </span>
-                    </div>
-                    <div className="p-6">
-                      <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#8a6728]">
-                        {cityLabels[property.city][locale]} · {property.district}
-                      </p>
-                      <h3 className="mt-3 font-serif text-2xl leading-tight text-[#121826]">{property.title[locale]}</h3>
-                      <p className="mt-3 line-clamp-3 text-sm leading-6 text-[#58616d]">{property.summary[locale]}</p>
-                      <div className="mt-6 grid grid-cols-2 gap-4 border-t border-[#e8dfd1] pt-5">
-                        <div>
-                          <span className="block text-[0.62rem] font-bold uppercase tracking-[0.14em] text-[#8a7f70]">{copy.price}</span>
-                          <strong className="mt-1 block text-base text-[#121826]">{formatPropertyPrice(property, locale)}</strong>
-                        </div>
-                        {capitalLabel && (
-                          <div>
-                            <span className="block text-[0.62rem] font-bold uppercase tracking-[0.14em] text-[#8a7f70]">{copy.capital}</span>
-                            <strong className="mt-1 block text-base text-[#121826]">{capitalLabel.replace(/^.*?:\s*/, '')}</strong>
-                          </div>
-                        )}
+                      <div className="absolute left-4 top-4 flex flex-wrap gap-2">
+                        <span className="rounded-full bg-[#12221f]/90 px-3 py-1.5 text-[0.64rem] font-semibold uppercase tracking-[0.1em] text-white">{collectionLabels[property.collection][locale]}</span>
+                        {payBadge ? <span className="rounded-full bg-white/95 px-3 py-1.5 text-[0.64rem] font-semibold text-[#2f6d59]">{payBadge}</span> : null}
                       </div>
-                      <span className="mt-6 inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.14em] text-[#8a6728]">
-                        {copy.view}<ArrowRight size={14} />
-                      </span>
+                    </div>
+                    <div className="p-5 md:p-6">
+                      <p className="text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[#8a6a45]">{propertyLocationLabel(property)}</p>
+                      <h3 className="mt-2 text-2xl font-semibold leading-tight tracking-[-0.03em] text-[#12221f]">{property.title[locale]}</h3>
+                      <p className="mt-3 line-clamp-2 text-sm leading-6 text-[#65756f]">{property.summary[locale]}</p>
+                      <div className="mt-5 grid grid-cols-2 gap-4 border-t border-[#e4e9e7] pt-4">
+                        <div><span className="block text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-[#7b8985]">{copy.price}</span><strong className="mt-1 block text-base text-[#12221f]">{formatPropertyPrice(property, locale)}</strong></div>
+                        {capitalLabel ? <div><span className="block text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-[#7b8985]">{copy.entry}</span><strong className="mt-1 block text-base text-[#12221f]">{capitalLabel.replace(/^.*?:\s*/,'')}</strong></div> : <div/>}
+                      </div>
+                      <span className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#2f6d59]">{copy.view}<ArrowRight size={14}/></span>
                     </div>
                   </Link>
                 </article>
