@@ -265,5 +265,5 @@ export async function POST(request: NextRequest) {
       .eq('id', body.importJobId);
   }
 
-  return NextResponse.json({ ok: true, data: translated, mode, aiError: mode === 'ai' ? null : aiError.slice(0,500) }););
+  return NextResponse.json({ ok: true, data: translated, mode, aiError: mode === 'ai' ? null : aiError.slice(0,500) });
 }
