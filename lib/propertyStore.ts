@@ -9,10 +9,18 @@ import {
 
 type PropertyRow = Record<string, any>;
 
+const PROPERTY_SUPABASE_URL =
+  process.env.NEXT_PUBLIC_SUPABASE_URL ||
+  process.env.SUPABASE_URL ||
+  'https://udbzytlmcnljlegmolcx.supabase.co';
+
+const PROPERTY_SUPABASE_PUBLISHABLE_KEY =
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ||
+  'sb_publishable_yQPc71ry-F3aqBLhj6OPig_cFs_u-Pa';
+
 function publicClient() {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL || process.env.SUPABASE_URL;
-  const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-  if (!url || !anonKey) return null;
+  const url = PROPERTY_SUPABASE_URL;
+  const anonKey = PROPERTY_SUPABASE_PUBLISHABLE_KEY;
 
   return createClient(url, anonKey, {
     auth: { persistSession: false, autoRefreshToken: false },
