@@ -9,7 +9,7 @@ import { programmaticPages } from '@/data/programmatic/pages';
 import { ENABLE_ALL_PROGRAMMATIC_PAGES, ENABLE_PRIORITY_3_IN_SITEMAP } from '@/lib/launchConfig';
 import { longTailTaxSitemapUrls } from '@/data/longTailTaxRoutes';
 import { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';
-import { getPropertyPath } from '@/data/propertyDesk';
+import { getPropertyPath, globalPropertyHubPaths } from '@/data/propertyDesk';
 import { fetchPublishedProperties } from '@/lib/propertyStore';
 import {
   getTransferKeywordHref,
@@ -158,11 +158,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
   }
 
+  for (const locale of locales) {
+    addEntry({
+      url: getCanonicalUrl(locale, globalPropertyHubPaths[locale]),
+      changeFrequency: 'weekly',
+      priority: 0.98,
+    });
+  }
+
   const publishedProperties = await fetchPublishedProperties();
   for (const property of publishedProperties) {
     for (const locale of locales) {
       addEntry({
-        url: getCanonicalUrl(locale, getPropertyPath(locale, property)),
+        url: getCanonicalUrl(locale, getPropertyPath(locale, property, true)),
         lastModified: new Date(property.updatedAt),
         changeFrequency: property.status === 'available' ? 'weekly' : 'monthly',
         priority: property.featured ? 0.95 : 0.88,
