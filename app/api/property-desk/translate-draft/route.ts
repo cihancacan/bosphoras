@@ -49,6 +49,131 @@ function cleanJson(text: string) {
   return JSON.parse(trimmed);
 }
 
+async function translateText(text: string, target: 'fr'|'en'|'ru'|'ar') {
+  const clean = String(text || '').trim();
+  if (!clean) return '';
+
+  const chunks: string[] = [];
+  let remaining = clean;
+  while (remaining.length > 3200) {
+    let cut = remaining.lastIndexOf('. ', 3200);
+    if (cut < 1600) cut = remaining.lastIndexOf(' ', 3200);
+    if (cut < 1200) cut = 3200;
+    chunks.push(remaining.slice(0, cut + 1).trim());
+    remaining = remaining.slice(cut + 1).trim();
+  }
+  if (remaining) chunks.push(remaining);
+
+  const translated = await Promise.all(chunks.map(async (chunk) => {
+    const params = new URLSearchParams({
+      client: 'gtx',
+      sl: 'auto',
+      tl: target,
+      dt: 't',
+      q: chunk,
+    });
+    const response = await fetch('https://translate.googleapis.com/translate_a/single', {
+      method: 'POST',
+      headers: { 'content-type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+      body: params.toString(),
+      signal: AbortSignal.timeout(12000),
+    });
+    if (!response.ok) throw new Error(`Translation fallback responded ${response.status}`);
+    const payload = await response.json();
+    const parts = Array.isArray(payload?.[0]) ? payload[0] : [];
+    return parts.map((part:any) => String(part?.[0] || '')).join('').trim();
+  }));
+
+  return translated.join(' ').trim();
+}
+
+function fallbackPropertyType(text: string) {
+  const lower = text.toLowerCase();
+  if (/villa|müstakil|mustakil/.test(lower)) return 'villa';
+  if (/penthouse/.test(lower)) return 'penthouse';
+  if (/commercial|retail|office|shop|ticari|ofis|mağaza|magaza/.test(lower)) return 'commercial';
+  if (/residence|residans/.test(lower)) return 'residence';
+  if (/apartment|appartement|daire|konut/.test(lower)) return 'apartment';
+  return '';
+}
+
+function fallbackCity(text: string) {
+  const lower = text.toLocaleLowerCase('tr-TR');
+  if (lower.includes('istanbul') || lower.includes('i̇stanbul')) return 'istanbul';
+  if (lower.includes('bodrum')) return 'bodrum';
+  if (lower.includes('antalya')) return 'antalya';
+  return '';
+}
+
+async function buildTranslationFallback(data: any, source: any) {
+  const targets = ['fr','en','ru','ar'] as const;
+  const [titlePairs, summaryPairs, descriptionPairs, deliveryPairs] = await Promise.all([
+    Promise.all(targets.map(async (locale) => [locale, await translateText(source.title, locale)])),
+    Promise.all(targets.map(async (locale) => [locale, await translateText(source.summary || source.description, locale)])),
+    Promise.all(targets.map(async (locale) => [locale, await translateText(source.description || source.rawText?.slice(0,5000), locale)])),
+    Promise.all(targets.map(async (locale) => [locale, await translateText(String(data.delivery || ''), locale)])),
+  ]);
+
+  const title = Object.fromEntries(titlePairs);
+  const summary = Object.fromEntries(summaryPairs);
+  const description = Object.fromEntries(descriptionPairs);
+  const delivery = Object.fromEntries(deliveryPairs);
+  const city = data.city || fallbackCity(`${source.title} ${source.district} ${source.rawText}`);
+  const propertyType = fallbackPropertyType(`${source.title} ${source.description} ${source.rawText}`);
+
+  const seoTitle = Object.fromEntries(targets.map((locale) => {
+    const base = String(title[locale] || source.title || '').trim();
+    const where = String(source.district || '').trim();
+    return [locale, [base, where].filter(Boolean).join(' — ').slice(0, 72)];
+  }));
+  const seoDescription = Object.fromEntries(targets.map((locale) => [
+    locale,
+    String(summary[locale] || description[locale] || '').replace(/\s+/g,' ').trim().slice(0, 170),
+  ]));
+
+  const watchpoints:any[] = [];
+  if (!data.price) {
+    watchpoints.push({
+      fr: 'Prix non détecté automatiquement : à confirmer avant publication.',
+      en: 'Price was not detected automatically: confirm before publishing.',
+      ru: 'Цена не определена автоматически: подтвердите перед публикацией.',
+      ar: 'لم يتم اكتشاف السعر تلقائياً: يجب تأكيده قبل النشر.',
+    });
+  }
+  if (!data.surfaceM2) {
+    watchpoints.push({
+      fr: 'Surface non détectée automatiquement : vérifier la brochure ou la fiche partenaire.',
+      en: 'Surface area was not detected automatically: check the brochure or partner listing.',
+      ru: 'Площадь не определена автоматически: проверьте буклет или карточку партнёра.',
+      ar: 'لم يتم اكتشاف المساحة تلقائياً: راجع الكتيب أو صفحة الشريك.',
+    });
+  }
+
+  return {
+    city,
+    district: data.district || '',
+    propertyType,
+    developer: data.developer || '',
+    price: data.price ?? null,
+    currency: data.currency || '',
+    surfaceM2: data.surfaceM2 ?? null,
+    bedrooms: data.bedrooms ?? null,
+    bathrooms: data.bathrooms ?? null,
+    entryCapital: null,
+    delivery,
+    paymentPlan: Array.isArray(data.paymentPlan) ? data.paymentPlan : [],
+    highlights: [],
+    title,
+    summary,
+    description,
+    seoTitle,
+    seoDescription,
+    technicalNotes: [],
+    strengths: [],
+    watchpoints,
+  };
+}
+
 export async function POST(request: NextRequest) {
   const portalUser = await verifyPortalUser(request);
   if (!portalUser) return NextResponse.json({ error: 'Accès Bosphoras actif requis.' }, { status: 401 });
@@ -69,6 +194,10 @@ export async function POST(request: NextRequest) {
     bedrooms: data.bedrooms ?? null,
     district: data.district || '',
     country: data.country || '',
+    city: data.city || '',
+    developer: data.developer || '',
+    delivery: data.delivery || '',
+    paymentPlan: Array.isArray(data.paymentPlan) ? data.paymentPlan : [],
     sourceUrl: data.sourceUrl || '',
   };
 
@@ -95,29 +224,46 @@ export async function POST(request: NextRequest) {
     'Currency must be one of EUR, USD, TRY, GBP, CHF or empty. Convert Turkish lira symbols/TRY/TL into TRY; do not convert monetary values between currencies.',
   ].join('\n');
 
-  const result = await generateText({
-    model: process.env.PROPERTY_TRANSLATION_MODEL || 'openai/gpt-5.6-luna',
-    system: instructions,
-    prompt: JSON.stringify(source),
-    maxOutputTokens: 5000,
-  });
+  let translated: any = null;
+  let mode = 'ai';
+  let aiError = '';
 
-  const text = result.text?.trim();
-  if (!text) return NextResponse.json({ error: 'Réponse IA vide.' }, { status: 502 });
-
-  let translated: any;
   try {
+    const result = await generateText({
+      model: process.env.PROPERTY_TRANSLATION_MODEL || 'openai/gpt-5.6-luna',
+      system: instructions,
+      prompt: JSON.stringify(source),
+      maxOutputTokens: 5000,
+    });
+
+    const text = result.text?.trim();
+    if (!text) throw new Error('Réponse IA vide.');
     translated = cleanJson(text);
-  } catch {
-    return NextResponse.json({ error: 'La réponse IA n’est pas un JSON exploitable.', detail: text.slice(0, 800) }, { status: 502 });
+  } catch (error) {
+    mode = 'translation-fallback';
+    aiError = error instanceof Error ? error.message : 'AI translation unavailable';
+    try {
+      translated = await buildTranslationFallback(data, source);
+    } catch (fallbackError) {
+      const detail = fallbackError instanceof Error ? fallbackError.message : 'Translation fallback unavailable';
+      return NextResponse.json(
+        {
+          error: 'La traduction automatique est momentanément indisponible.',
+          detail,
+          aiError,
+          extractedDataStillAvailable: true,
+        },
+        { status: 503 }
+      );
+    }
   }
 
   if (body?.importJobId) {
     await portalUser.client
       .from('property_import_jobs')
-      .update({ status: 'translated', translated_data: translated })
+      .update({ status: 'translated', translated_data: translated, error_message: mode === 'ai' ? null : aiError.slice(0,1000) })
       .eq('id', body.importJobId);
   }
 
-  return NextResponse.json({ ok: true, data: translated });
+  return NextResponse.json({ ok: true, data: translated, mode, aiError: mode === 'ai' ? null : aiError.slice(0,500) }););
 }
