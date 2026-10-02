@@ -308,7 +308,7 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
                 <input value={String(step?.label?.fr || '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,label:{...(s.label||{}),fr:e.target.value,en:s.label?.en||e.target.value,ru:s.label?.ru||e.target.value,ar:s.label?.ar||e.target.value}}:s))} className={input} />
                 <input value={String(step?.percentage ?? '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,percentage:Number(e.target.value)}:s))} className={input} />
                 <input value={String(step?.due?.fr || '')} onChange={(e)=>setPaymentPlan(paymentPlan.map((s,i)=>i===index?{...s,due:{...(s.due||{}),fr:e.target.value,en:s.due?.en||e.target.value,ru:s.due?.ru||e.target.value,ar:s.due?.ar||e.target.value}}:s))} className={input} />
-                <button type="button" onClick={()=>setPaymentPlan(paymentPlan.filter((_,i)=>i!==index))} className="px-3 text-[#9c5a52]">×</button>
+                <button type="button" onClick={()=>setPaymentPlan(paymentPlan.filter((_,i)=>i!==index))} className="px-3 text-[#a85656]">×</button>
               </div>
             ))}
           </div>
