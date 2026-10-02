@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { ArrowRight, CheckCircle2, ShieldCheck, Wrench, WalletCards } from 'lucide-react';
 import type { MainPageContent } from '@/data/pages/types';
-import { getPublishedProperties, propertyHubPaths } from '@/data/propertyDesk';
+import { propertyHubPaths } from '@/data/propertyDesk';
+import { fetchPublishedProperties } from '@/lib/propertyStore';
 import { getLocalePath, siteUrl } from '@/lib/routes';
 import { localeDir } from '@/lib/i18n';
 import { faqSchema, organizationSchema, breadcrumbSchema } from '@/lib/seo';
@@ -135,10 +136,10 @@ function copy(locale: MainPageContent['locale']) {
   };
 }
 
-export function PropertyDeskPage({ page }: PropertyDeskPageProps) {
+export async function PropertyDeskPage({ page }: PropertyDeskPageProps) {
   const locale = page.locale;
   const c = copy(locale);
-  const properties = getPublishedProperties();
+  const properties = await fetchPublishedProperties();
   const assessmentHref = getLocalePath(locale, page.cta.href);
   const homeHref = getLocalePath(locale, '/');
   const hubHref = getLocalePath(locale, propertyHubPaths[locale]);
