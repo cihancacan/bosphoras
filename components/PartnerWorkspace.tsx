@@ -3,9 +3,9 @@
 
 import { FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import {
-  Bell, Building2, Calculator, CheckCircle2, ChevronRight, CircleDollarSign, ClipboardCheck,
-  Archive, BellRing, Contact, Eye, KeyRound, LayoutDashboard, Link2, LogOut, MailOpen, MessageCircle,
-  Moon, Plus, RefreshCw, Search, Send, ShieldCheck, Sun, Trash2, UserRound, Users, XCircle,
+  Archive, Bell, Building2, Calculator, CheckCircle2, CheckCheck, ChevronRight, CircleDollarSign, ClipboardCheck,
+  Contact, KeyRound, LayoutDashboard, Link2, LogOut, MessageCircle, Moon, Plus, RefreshCw, Search, Send,
+  ShieldCheck, Sun, Trash2, UserRound, Users, XCircle,
 } from 'lucide-react';
 import { createIsolatedPortalSupabase, getPortalSupabase } from '@/lib/portalSupabase';
 import { InvestmentCalculator } from '@/components/InvestmentCalculator';
@@ -14,6 +14,7 @@ import { AdminPropertyImporter } from '@/components/AdminPropertyImporter';
 import { AdminListingEditor } from '@/components/AdminListingEditor';
 import { ProfessionalOperationsPanel } from '@/components/ProfessionalOperationsPanel';
 import { PortalAccountPanel } from '@/components/PortalAccountPanel';
+import { PortalNotificationBridge } from '@/components/PortalNotificationBridge';
 
 type Tab = 'dashboard' | 'listings' | 'import' | 'crm' | 'operations' | 'chat' | 'calculators' | 'partners' | 'approvals' | 'account';
 
@@ -43,8 +44,8 @@ export function PartnerWorkspace() {
   const [editingSubmission, setEditingSubmission] = useState<any>(null);
   const [editingListing, setEditingListing] = useState<any>(null);
   const [showNewListing, setShowNewListing] = useState(false);
-  const [theme, setTheme] = useState<'light'|'dark'>('light');
-  const [notificationPrompt, setNotificationPrompt] = useState(false);
+  const [profileCards, setProfileCards] = useState<any[]>([]);
+  const [deskTheme, setDeskTheme] = useState<'light'|'dark'>('light');
 
   const isAdmin = profile?.role === 'admin';
 
@@ -67,7 +68,6 @@ export function PartnerWorkspace() {
       return;
     }
     setProfile(profileData);
-    setTheme(profileData.theme_preference === 'dark' ? 'dark' : 'light');
 
     const requests: any[] = [
       supabase.from('property_listing_submissions').select('*').order('created_at', { ascending: false }),
@@ -97,6 +97,14 @@ export function PartnerWorkspace() {
     if (profileData.role === 'admin') {
       setPartnerUsers(results[8].data || []);
     }
+    const {data:directory}=await supabase.from('portal_profile_cards').select('*');
+    setProfileCards(directory||[]);
+
+    const savedTheme=localStorage.getItem('bosphoras-desk-theme') || profileData.theme_preference || 'system';
+    const resolved=savedTheme==='system'
+      ? (window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')
+      : savedTheme;
+    setDeskTheme(resolved==='dark'?'dark':'light');
 
     const initialThread = (results[4].data || [])[0]?.id || null;
     if (initialThread && !selectedThread) setSelectedThread(initialThread);
@@ -106,36 +114,6 @@ export function PartnerWorkspace() {
   useEffect(() => {
     loadAll();
   }, [loadAll]);
-
-  useEffect(() => {
-    if (typeof window === 'undefined' || !user?.id) return;
-    if ('Notification' in window && Notification.permission === 'default') setNotificationPrompt(true);
-  }, [user?.id]);
-
-  async function enableDesktopNotifications(){
-    if (!('Notification' in window)) { setNotificationPrompt(false); return; }
-    const permission=await Notification.requestPermission();
-    setNotificationPrompt(false);
-    if(permission==='granted'){
-      new Notification('Bosphoras Partner Desk',{body:'Les notifications bureau sont activées.'});
-      await supabase.from('profiles').update({
-        notification_preferences:{...(profile?.notification_preferences||{}),desktop:true},
-        updated_at:new Date().toISOString(),
-      }).eq('user_id',user.id);
-    }
-  }
-
-  async function setWorkspaceTheme(next:'light'|'dark'){
-    setTheme(next);
-    if(user?.id) await supabase.from('profiles').update({theme_preference:next,updated_at:new Date().toISOString()}).eq('user_id',user.id);
-  }
-
-  async function clearReadNotifications(){
-    if(!user?.id) return;
-    const {error}=await supabase.from('notifications').delete().eq('user_id',user.id).not('read_at','is',null);
-    if(error) alert(error.message);
-    else setNotifications((current)=>current.filter((item)=>!item.read_at));
-  }
 
   useEffect(() => {
     if (!selectedThread) {
@@ -158,9 +136,6 @@ export function PartnerWorkspace() {
       .channel(`portal-alerts-${user.id}`)
       .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'notifications', filter: `user_id=eq.${user.id}` }, (payload) => {
         setNotifications((current) => [payload.new, ...current.filter((item) => item.id !== payload.new.id)]);
-        if(typeof window!=='undefined' && 'Notification' in window && Notification.permission==='granted'){
-          new Notification(payload.new.title||'Bosphoras',{body:payload.new.body||'',tag:payload.new.id});
-        }
       })
       .on('postgres_changes', { event: '*', schema: 'public', table: 'property_listing_submissions' }, () => {
         if (profile?.role === 'admin') loadAll();
@@ -168,6 +143,19 @@ export function PartnerWorkspace() {
       .subscribe();
     return () => { supabase.removeChannel(channel); };
   }, [user?.id, profile?.role, supabase, loadAll]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const onTheme=(event:any)=>{
+      const requested=event?.detail || localStorage.getItem('bosphoras-desk-theme') || 'system';
+      const resolved=requested==='system'
+        ? (window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')
+        : requested;
+      setDeskTheme(resolved==='dark'?'dark':'light');
+    };
+    window.addEventListener('bosphoras-theme-change',onTheme);
+    return ()=>window.removeEventListener('bosphoras-theme-change',onTheme);
+  },[]);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -211,6 +199,13 @@ export function PartnerWorkspace() {
   async function logout() {
     await supabase.auth.signOut();
     window.location.href = '/connexion';
+  }
+
+  async function toggleDeskTheme(){
+    const next=deskTheme==='dark'?'light':'dark';
+    setDeskTheme(next);
+    localStorage.setItem('bosphoras-desk-theme',next);
+    if(user?.id) await supabase.from('profiles').update({theme_preference:next}).eq('user_id',user.id);
   }
 
   const unread = notifications.filter(n => !n.read_at).length;
@@ -258,12 +253,8 @@ export function PartnerWorkspace() {
   }
 
   return (
-    <div className={`min-h-screen [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe_UI,sans-serif] ${theme==='dark'?'bo-dark bg-[#0b131d] text-[#e5edf4]':'bg-[#f3f6f8] text-[#162334]'}`}>
-      <style jsx global>{`
-        .bo-dark .bg-white{background:#111e2a!important}.bo-dark .bg-\\[\\#f3f6f8\\]{background:#0b131d!important}.bo-dark .bg-\\[\\#f7f9fb\\]{background:#152331!important}
-        .bo-dark .text-\\[\\#162334\\]{color:#e7eef5!important}.bo-dark .text-\\[\\#526272\\],.bo-dark .text-\\[\\#687685\\],.bo-dark .text-\\[\\#7b8794\\],.bo-dark .text-\\[\\#7b8490\\]{color:#a9b8c6!important}
-        .bo-dark input,.bo-dark select,.bo-dark textarea{background:#0e1924!important;color:#e7eef5!important;border-color:#314354!important}.bo-dark .border-\\[\\#d9e1e8\\],.bo-dark .border-\\[\\#e7edf2\\],.bo-dark .border-\\[\\#cfd8e3\\]{border-color:#2b3c4c!important}
-      `}</style>
+    <div className={`bosphoras-desk ${deskTheme==='dark'?'desk-dark':'desk-light'} min-h-screen bg-[#f3f6f8] text-[#162334] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe_UI,sans-serif]`}>
+      <PortalNotificationBridge userId={user?.id}/>
       <header className="sticky top-0 z-40 border-b border-[#26394a] bg-[#0d1c2b] text-white">
         <div className="mx-auto flex max-w-[1700px] items-center justify-between gap-4 px-4 py-3 md:px-6">
           <div className="flex items-center gap-3">
@@ -274,7 +265,7 @@ export function PartnerWorkspace() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <button onClick={()=>setWorkspaceTheme(theme==='dark'?'light':'dark')} className="p-2 text-[#b9d0e0]" aria-label="Changer le thème">{theme==='dark'?<Sun size={18}/>:<Moon size={18}/>}</button>
+            <button onClick={toggleDeskTheme} className="p-2 text-[#b9d0e0] hover:text-white" aria-label={deskTheme==='dark'?'Passer en mode clair':'Passer en mode sombre'}>{deskTheme==='dark'?<Sun size={18}/>:<Moon size={18}/>}</button>
             <button onClick={()=>openTab('dashboard')} className="relative p-2 text-[#b9d0e0]"><Bell size={18}/>{unread>0&&<span className="absolute right-0 top-0 h-4 min-w-4 rounded-full bg-[#c76055] px-1 text-[0.6rem] leading-4 text-white">{unread}</span>}</button>
             <div className="hidden text-right text-xs md:block"><strong className="block text-white">{profile.full_name || profile.email}</strong><span className="text-[#9eb0bf]">{profile.role}</span></div>
             <button onClick={logout} className="p-2 text-[#9eb0bf] hover:text-white" aria-label="Se déconnecter"><LogOut size={18}/></button>
@@ -315,7 +306,7 @@ export function PartnerWorkspace() {
               activeDeals={activeDeals}
               notifications={notifications}
               setTab={setTab}
-              clearReadNotifications={clearReadNotifications}
+              reload={loadAll}
             />
           )}
           {tab==='listings' && (
@@ -346,7 +337,8 @@ export function PartnerWorkspace() {
             partners={partners}
             partnerUsers={partnerUsers}
           /></Section>}
-          {tab==='chat' && <ChatPanel isAdmin={isAdmin} user={user} threads={threads} partnerUsers={partnerUsers} selectedThread={selectedThread} setSelectedThread={setSelectedThread} messages={messages} notifications={notifications} reload={loadAll}/>} 
+          {tab==='chat' && <ChatPanel isAdmin={isAdmin} user={user} threads={threads} profileCards={profileCards} partnerUsers={partnerUsers} selectedThread={selectedThread} setSelectedThread={setSelectedThread} messages={messages} notifications={notifications} reload={loadAll}/>}
+
           {tab==='calculators' && <Section title="Calculateurs investissement" kicker="Bosphoras Analysis"><InvestmentCalculator
             userId={user?.id}
             partnerId={profile?.partner_id}
@@ -357,14 +349,10 @@ export function PartnerWorkspace() {
             onSaved={loadAll}
           /></Section>}
           {tab==='partners' && isAdmin && <PartnersPanel partners={partners} partnerUsers={partnerUsers} reload={loadAll}/>}
-          {tab==='account' && <Section title="Mon compte" kicker="Accès & sécurité"><PortalAccountPanel user={user} profile={profile} partner={partners.find((p:any)=>p.id===profile?.partner_id)} onSaved={loadAll} /></Section>}
+          {tab==='account' && <Section title="Mon compte" kicker="Accès & sécurité"><PortalAccountPanel user={user} profile={profile} partner={partners.find((p:any)=>p.id===profile?.partner_id)} /></Section>}
           {tab==='approvals' && isAdmin && <ApprovalsPanel submissions={submissions} reload={loadAll}/>}
         </main>
       </div>
-      {notificationPrompt?<div className="fixed bottom-5 right-5 z-[100] w-[min(390px,calc(100vw-40px))] border border-[#315d7c] bg-[#0d1c2b] p-5 text-white shadow-2xl">
-        <div className="flex gap-3"><BellRing size={20} className="mt-0.5 text-[#b9d0e0]"/><div><strong className="block text-sm">Activer les notifications Bosphoras ?</strong><p className="mt-2 text-xs leading-5 text-[#b9c0ca]">Vous recevrez les nouveaux messages, validations et alertes importantes lorsque le Partner Desk est ouvert.</p></div></div>
-        <div className="mt-4 flex gap-2"><button onClick={enableDesktopNotifications} className="bg-white px-4 py-2 text-xs font-semibold text-[#12304a]">Oui, activer</button><button onClick={()=>setNotificationPrompt(false)} className="border border-white/20 px-4 py-2 text-xs font-semibold">Non</button></div>
-      </div>:null}
     </div>
   );
 }
@@ -373,7 +361,19 @@ function Section({title,kicker,children,action}:{title:string;kicker?:string;chi
   return <section><div className="mb-7 flex flex-wrap items-end justify-between gap-4"><div>{kicker&&<p className="text-xs font-bold uppercase tracking-[0.24em] text-[#315d7c]">{kicker}</p>}<h1 className="mt-2 font-sans text-4xl tracking-[-0.035em] md:text-5xl">{title}</h1></div>{action}</div>{children}</section>;
 }
 
-function Dashboard({isAdmin,partners,listings,contacts,deals,pipeline,pendingApprovals,activeDeals,notifications,setTab,clearReadNotifications}:any) {
+function Dashboard({isAdmin,partners,listings,contacts,deals,pipeline,pendingApprovals,activeDeals,notifications,setTab,reload}:any) {
+  const supabase=getPortalSupabase();
+  async function deleteNotification(id:string){
+    const {error}=await supabase.from('notifications').delete().eq('id',id);
+    if(error)alert(error.message);else reload();
+  }
+  async function clearNotifications(){
+    if(!notifications.length)return;
+    if(!window.confirm('Effacer les notifications affichées ?'))return;
+    const ids=notifications.map((n:any)=>n.id);
+    const {error}=await supabase.from('notifications').delete().in('id',ids);
+    if(error)alert(error.message);else reload();
+  }
   const cards: Array<[string, string | number, any]> = [
     [isAdmin?'Partenaires actifs':'Biens attribués', isAdmin?partners.filter((p:any)=>p.status==='active').length:listings.length, Users],
     ['Contacts CRM', contacts.length, Contact],
@@ -395,9 +395,9 @@ function Dashboard({isAdmin,partners,listings,contacts,deals,pipeline,pendingApp
           </div>
         </div>
         <div className="border border-[#d9e1e8] bg-[#12304a] p-6 text-white">
-          <div className="flex items-center justify-between gap-3"><h2 className="font-sans text-3xl">Notifications</h2>{notifications.some((n:any)=>n.read_at)?<button onClick={clearReadNotifications} className="text-[0.65rem] font-semibold uppercase tracking-[0.08em] text-[#b9d0e0]">Effacer les lues</button>:null}</div>
+          <div className="flex items-center justify-between gap-3"><h2 className="font-sans text-3xl">Notifications</h2>{notifications.length>0?<button onClick={clearNotifications} className="text-[0.68rem] font-semibold uppercase tracking-[0.08em] text-[#b9d0e0] hover:text-white">Tout effacer</button>:null}</div>
           <div className="mt-5 divide-y divide-white/10">
-            {notifications.slice(0,6).map((n:any)=><div key={n.id} className="py-4"><strong className="block text-sm">{n.title}</strong><p className="mt-1 text-xs leading-5 text-[#a9bfd0]">{n.body}</p></div>)}
+            {notifications.slice(0,6).map((n:any)=><div key={n.id} className="flex items-start gap-3 py-4"><div className="min-w-0 flex-1"><strong className="block text-sm">{n.title}</strong><p className="mt-1 text-xs leading-5 text-[#a9bfd0]">{n.body}</p></div><button onClick={()=>deleteNotification(n.id)} className="p-1 text-[#8fa1b0] hover:text-white" aria-label="Effacer la notification"><Trash2 size={14}/></button></div>)}
             {notifications.length===0&&<p className="py-6 text-sm text-[#a9bfd0]">Aucune notification.</p>}
           </div>
         </div>
@@ -422,30 +422,48 @@ function listingToPayload(l:any) {
 
 function ListingsPanel({isAdmin,user,profile,listings,submissions,showNew,setShowNew,editingSubmission,setEditingSubmission,editingListing,setEditingListing,reload}:any) {
   const supabase=getPortalSupabase();
+  const [listingSearch,setListingSearch]=useState('');
+  const [listingFilter,setListingFilter]=useState('all');
+
+  const visibleListings=listings.filter((listing:any)=>{
+    if(listingFilter==='published'&&!listing.published)return false;
+    if(listingFilter==='unpublished'&&listing.published)return false;
+    const q=listingSearch.trim().toLowerCase();
+    if(!q)return true;
+    return [listing.external_id,listing.title?.fr,listing.city,listing.city_name,listing.district,listing.developer].filter(Boolean).join(' ').toLowerCase().includes(q);
+  });
+
+  async function createAdminDraft(){
+    const stamp=Date.now().toString(36);
+    const row:any={
+      external_id:`ADM-${stamp.toUpperCase()}`,
+      published:false, featured:false, status:'available', collection:'selected-investment', transaction_type:'sale', property_type:'apartment',
+      country_code:'TR', country_name:'Turkey', city:'istanbul', city_name:'Istanbul', district:'À compléter',
+      slug_fr:`nouvelle-annonce-${stamp}`, slug_en:`new-listing-${stamp}`, slug_ru:`new-listing-${stamp}`, slug_ar:`new-listing-${stamp}`,
+      title:{fr:'Nouvelle annonce',en:'New listing',ru:'Новый объект',ar:'عقار جديد'},
+      summary:{fr:'',en:'',ru:'',ar:''}, description:{fr:'',en:'',ru:'',ar:''}, seo_title:{fr:'',en:'',ru:'',ar:''}, seo_description:{fr:'',en:'',ru:'',ar:''},
+      currency:'EUR', images:[], review_status:'approved', created_by:user.id,
+    };
+    const {data,error}=await supabase.from('property_listings').insert(row).select('*').single();
+    if(error){alert(error.message);return;}
+    await reload();
+    setEditingListing(data);
+  }
+
+  async function deleteListing(listing:any){
+    if(!isAdmin)return;
+    const label=listing.title?.fr||listing.external_id||'cette annonce';
+    if(!window.confirm(`Retirer ${label} de l’inventaire actif ? La fiche sera dépubliée et placée en corbeille interne.`))return;
+    const {error}=await supabase.from('property_listings').update({published:false,published_at:null,deleted_at:new Date().toISOString(),deleted_by:user.id}).eq('id',listing.id);
+    if(error)alert(error.message);else reload();
+  }
+
   async function togglePublish(listing:any) {
     const next=!listing.published;
     const {error}=await supabase.from('property_listings').update({published:next,published_at:next?new Date().toISOString():null}).eq('id',listing.id);
     if(error) alert(error.message); else reload();
   }
-  async function deleteListing(listing:any) {
-    if(!isAdmin) return;
-    const name=listing.title?.fr||listing.external_id||'cette annonce';
-    if(!window.confirm(`Retirer ${name} ? L'annonce sera masquée du site et archivée dans la base.`)) return;
-    const {error}=await supabase.from('property_listings').update({
-      published:false,
-      published_at:null,
-      deleted_at:new Date().toISOString(),
-      deleted_by:user.id,
-    }).eq('id',listing.id);
-    if(error) alert(error.message); else reload();
-  }
   const editor = showNew || editingSubmission || editingListing;
-  if(showNew && isAdmin) {
-    return <Section title="Nouvelle annonce" kicker="Création administrateur">
-      <div className="mb-5 flex justify-end"><button onClick={()=>setShowNew(false)} className="border border-[#cfd8e3] px-4 py-2 text-xs font-semibold uppercase">Fermer</button></div>
-      <AdminPropertyImporter user={user} reload={()=>{reload();setShowNew(false);}} />
-    </Section>;
-  }
   if(editingListing && isAdmin) {
     return <Section title="Modifier une annonce" kicker="Contrôle administrateur">
       <AdminListingEditor
@@ -466,13 +484,17 @@ function ListingsPanel({isAdmin,user,profile,listings,submissions,showNew,setSho
       />
     </Section>;
   }
-  return <Section title="Biens & projets" kicker={isAdmin?'Inventaire global':'Vos opportunités'} action={<button onClick={()=>setShowNew(true)} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-xs font-bold uppercase tracking-[0.12em] text-white"><Plus size={15}/>{isAdmin?'Ajouter une annonce':'Nouvelle annonce'}</button>}>
+  return <Section title="Biens & projets" kicker={isAdmin?'Inventaire global':'Vos opportunités'} action={<button onClick={()=>isAdmin?createAdminDraft():setShowNew(true)} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-xs font-bold uppercase tracking-[0.12em] text-white"><Plus size={15}/>Nouvelle annonce</button>}>
     {!isAdmin&&<div className="mb-8 border border-[#d9e1e8] bg-[#f7f9fb] p-5 text-sm leading-6 text-[#526272]"><strong>Règle Bosphoras :</strong> une annonce créée ou modifiée par un partenaire reste en brouillon/soumission jusqu’à validation de l’administrateur. Une modification d’un bien déjà publié ne change jamais la version publique avant approbation.</div>}
+    <div className="mb-5 grid gap-3 rounded-xl border border-[#d9e1e8] bg-white p-4 md:grid-cols-[1fr_220px]">
+      <label className="relative"><Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#7b8794]"/><input value={listingSearch} onChange={(e)=>setListingSearch(e.target.value)} placeholder="Rechercher une référence, ville, quartier, promoteur…" className="min-h-[43px] w-full rounded-lg border border-[#cfd8e3] pl-10 pr-3 text-sm"/></label>
+      <select value={listingFilter} onChange={(e)=>setListingFilter(e.target.value)} className="min-h-[43px] rounded-lg border border-[#cfd8e3] bg-white px-3 text-sm"><option value="all">Toutes</option><option value="published">En ligne</option><option value="unpublished">Hors ligne / brouillons</option></select>
+    </div>
     <div className="grid gap-6 lg:grid-cols-2">
       <div className="border border-[#d9e1e8] bg-white p-5">
-        <h2 className="font-sans text-2xl">{isAdmin?'Toutes les annonces':'Biens attribués'}</h2>
+        <div className="flex items-center justify-between gap-3"><h2 className="font-sans text-2xl">{isAdmin?'Toutes les annonces':'Biens attribués'}</h2><span className="text-xs font-semibold text-[#687685]">{visibleListings.length} affichée(s)</span></div>
         <div className="mt-5 space-y-3">
-          {listings.map((l:any)=><article key={l.id} className="border border-[#e7edf2] p-4"><div className="flex items-start justify-between gap-4"><div><span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-[#315d7c]">{l.city} · {l.district}</span><h3 className="mt-1 font-sans text-xl">{l.title?.fr || l.external_id}</h3><p className="mt-2 text-sm text-[#687685]">{money(l.total_price,l.currency)} · {l.published?'Publié':'Non publié'} · rév. {l.revision}</p></div>{l.hero_image&&<img src={l.hero_image} alt="" className="h-16 w-20 object-cover"/>}</div><div className="mt-4 flex flex-wrap gap-2"><a href={'/espace/apercu?listing='+l.id} target="_blank" rel="noreferrer" className="border border-[#315d7c] bg-[#eef4f8] px-3 py-2 text-xs font-semibold uppercase text-[#315d7c]">Aperçu</a>{l.published&&l.slug_fr?<a href={'/immobilier-turquie/'+l.slug_fr} target="_blank" rel="noreferrer" className="border border-[#2f6d59] px-3 py-2 text-xs font-semibold uppercase text-[#2f6d59]">Page publique</a>:null}{isAdmin?<><button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase text-[#12304a]">Modifier</button><button onClick={()=>togglePublish(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">{l.published?'Dépublier':'Publier'}</button><button onClick={()=>deleteListing(l)} className="inline-flex items-center gap-1.5 border border-[#b96363] px-3 py-2 text-xs font-semibold uppercase text-[#9b4444]"><Trash2 size={13}/>Retirer</button></>:<button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">Proposer une modification</button>}</div></article>)}
+          {visibleListings.map((l:any)=><article key={l.id} className="border border-[#e7edf2] p-4"><div className="flex items-start justify-between gap-4"><div><span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-[#315d7c]">{l.city} · {l.district}</span><h3 className="mt-1 font-sans text-xl">{l.title?.fr || l.external_id}</h3><p className="mt-2 text-sm text-[#687685]">{money(l.total_price,l.currency)} · {l.published?'Publié':'Non publié'} · rév. {l.revision}</p></div>{l.hero_image&&<img src={l.hero_image} alt="" className="h-16 w-20 object-cover"/>}</div><div className="mt-4 flex flex-wrap gap-2"><a href={'/espace/apercu?listing='+l.id} target="_blank" rel="noreferrer" className="border border-[#315d7c] bg-[#eef4f8] px-3 py-2 text-xs font-semibold uppercase text-[#315d7c]">Aperçu</a>{l.published&&l.slug_fr?<a href={'/immobilier-turquie/'+l.slug_fr} target="_blank" rel="noreferrer" className="border border-[#2f6d59] px-3 py-2 text-xs font-semibold uppercase text-[#2f6d59]">Page publique</a>:null}{isAdmin?<><button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase text-[#12304a]">Modifier</button><button onClick={()=>togglePublish(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">{l.published?'Dépublier':'Publier'}</button><button onClick={()=>deleteListing(l)} className="inline-flex items-center gap-1.5 border border-[#b96363] px-3 py-2 text-xs font-semibold uppercase text-[#9b4444]"><Trash2 size={13}/>Supprimer</button></>:<button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">Proposer une modification</button>}</div></article>)}
           {listings.length===0&&<p className="py-6 text-sm text-[#687685]">Aucun bien attribué pour le moment.</p>}
         </div>
       </div>
@@ -497,7 +519,9 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
   const [contactBusy,setContactBusy]=useState(false);
   const [contactNotice,setContactNotice]=useState<{type:'success'|'error';text:string}|null>(null);
   const [crmSearch,setCrmSearch]=useState('');
-  const [crmStatus,setCrmStatus]=useState('');
+  const [crmStatus,setCrmStatus]=useState('all');
+  const [crmOwner,setCrmOwner]=useState('all');
+  const [dealFilter,setDealFilter]=useState('all');
 
   async function loadActivities(){
     const {data}=await supabase.from('crm_activities').select('*').order('created_at',{ascending:false}).limit(100);
@@ -668,14 +692,21 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
   const openActivities=activities.filter((x:any)=>!x.completed_at);
   const overdue=openActivities.filter((x:any)=>x.due_at&&new Date(x.due_at)<new Date()).length;
   const filteredContacts=contacts.filter((contact:any)=>{
-    if(crmStatus && contact.status!==crmStatus) return false;
+    if(crmStatus!=='all'&&contact.status!==crmStatus)return false;
+    if(crmOwner!=='all'&&contact.owner_user_id!==crmOwner)return false;
     const q=crmSearch.trim().toLowerCase();
-    if(!q) return true;
-    return [contact.first_name,contact.last_name,contact.company,contact.email,contact.phone,contact.whatsapp,contact.source,contact.nationality,contact.country_of_residence]
-      .filter(Boolean).join(' ').toLowerCase().includes(q);
+    if(!q)return true;
+    return [contact.first_name,contact.last_name,contact.company,contact.email,contact.phone,contact.whatsapp,contact.source,contact.nationality,contact.country_of_residence].filter(Boolean).join(' ').toLowerCase().includes(q);
   });
+  const filteredDeals=deals.filter((deal:any)=>dealFilter==='all'||deal.stage===dealFilter);
 
   return <Section title="CRM investissement" kicker="Contacts · pipeline · relances" action={<button onClick={()=>setShow(!show)} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-xs font-semibold uppercase tracking-[0.1em] text-white"><Plus size={15}/>Nouveau contact</button>}>
+    <div className="mb-5 grid gap-3 rounded-xl border border-[#d9e1e8] bg-white p-4 md:grid-cols-2 xl:grid-cols-4">
+      <label className="relative md:col-span-2 xl:col-span-1"><Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#7b8794]"/><input value={crmSearch} onChange={(e)=>setCrmSearch(e.target.value)} placeholder="Nom, téléphone, e-mail, source…" className="min-h-[43px] w-full rounded-lg border border-[#cfd8e3] pl-10 pr-3 text-sm"/></label>
+      <select value={crmStatus} onChange={(e)=>setCrmStatus(e.target.value)} className="min-h-[43px] rounded-lg border border-[#cfd8e3] bg-white px-3 text-sm"><option value="all">Tous les statuts</option><option value="new">Nouveaux</option><option value="contacted">Contactés</option><option value="qualified">Qualifiés</option><option value="nurturing">À relancer</option><option value="converted">Convertis</option><option value="lost">Perdus</option><option value="inactive">Inactifs</option></select>
+      {isAdmin?<select value={crmOwner} onChange={(e)=>setCrmOwner(e.target.value)} className="min-h-[43px] rounded-lg border border-[#cfd8e3] bg-white px-3 text-sm"><option value="all">Tous les agents</option>{partnerUsers.map((p:any)=><option key={p.user_id} value={p.user_id}>{p.full_name||p.email}</option>)}</select>:<div className="hidden xl:block"/>}
+      <select value={dealFilter} onChange={(e)=>setDealFilter(e.target.value)} className="min-h-[43px] rounded-lg border border-[#cfd8e3] bg-white px-3 text-sm"><option value="all">Tout le pipeline</option><option value="lead">Lead</option><option value="qualified">Qualifié</option><option value="viewing">Visite</option><option value="offer">Offre</option><option value="reservation">Réservation</option><option value="due_diligence">Due diligence</option><option value="contract">Contrat</option><option value="closed_won">Gagné</option><option value="closed_lost">Perdu</option></select>
+    </div>
     {contactNotice?<div className={`mb-5 flex items-center justify-between border px-4 py-3 text-sm shadow-sm ${contactNotice.type==='success'?'border-[#a8c8b8] bg-[#f1faf5] text-[#245943]':'border-[#e0b5b5] bg-[#fff6f6] text-[#8b4040]'}`}><span>{contactNotice.text}</span><button type="button" onClick={()=>setContactNotice(null)} className="ml-4 text-lg leading-none">×</button></div>:null}
     <div className="mb-6 grid gap-px bg-[#d9e1e8] sm:grid-cols-3">
       <div className="bg-white p-5"><span className="text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#687685]">Contacts visibles</span><strong className="mt-2 block text-2xl font-semibold">{contacts.length}</strong></div>
@@ -702,14 +733,9 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
       <button disabled={contactBusy} className="bg-[#12304a] px-4 py-3 text-xs font-semibold uppercase text-white disabled:cursor-wait disabled:opacity-60">{contactBusy?'Enregistrement…':'Créer le contact'}</button>
     </form>}
 
-    <div className="mb-6 grid gap-3 border border-[#d9e1e8] bg-white p-4 md:grid-cols-[1fr_220px]">
-      <label className="relative"><Search size={16} className="absolute left-3 top-3.5 text-[#7b8794]"/><input value={crmSearch} onChange={(e)=>setCrmSearch(e.target.value)} placeholder="Rechercher nom, e-mail, téléphone, société, source…" className="min-h-[44px] w-full border border-[#cfd8e3] pl-10 pr-3 text-sm"/></label>
-      <select value={crmStatus} onChange={(e)=>setCrmStatus(e.target.value)} className="min-h-[44px] border border-[#cfd8e3] bg-white px-3 text-sm"><option value="">Tous les statuts</option><option value="new">Nouveau</option><option value="contacted">Contacté</option><option value="qualified">Qualifié</option><option value="nurturing">À nourrir</option><option value="inactive">Inactif</option><option value="converted">Converti</option><option value="lost">Perdu</option></select>
-    </div>
-
     <div className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
       <div className="border border-[#d9e1e8] bg-white p-5">
-        <div className="flex items-center justify-between gap-3"><h2 className="text-2xl font-semibold tracking-[-0.02em]">Contacts</h2><span className="text-xs font-semibold text-[#687685]">{filteredContacts.length} résultat(s)</span></div>
+        <h2 className="text-2xl font-semibold tracking-[-0.02em]">Contacts</h2>
         <div className="mt-5 space-y-3">
           {filteredContacts.map((contact:any)=><article key={contact.id} className="border border-[#e7edf2] p-4">
             <div className="flex flex-wrap items-start justify-between gap-3">
@@ -733,7 +759,7 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
               {isAdmin?<select value={contact.owner_user_id||''} onChange={(e)=>assign(contact.id,e.target.value)} className="min-h-[38px] border border-[#d9e1e8] px-2 text-xs"><option value="">Attribuer à un partenaire…</option>{partnerUsers.map((p:any)=><option key={p.user_id} value={p.user_id}>{p.full_name||p.email}</option>)}</select>:null}
             </div>
           </article>)}
-          {filteredContacts.length===0&&<p className="py-5 text-sm text-[#687685]">Aucun contact ne correspond à la recherche.</p>}
+          {contacts.length===0&&<p className="py-5 text-sm text-[#687685]">Aucun contact.</p>}
         </div>
       </div>
 
@@ -746,7 +772,7 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
           <button className="bg-[#d8e6ef] px-4 py-2 text-xs font-semibold uppercase text-[#12304a]">Ajouter au pipeline</button>
         </form>}
         <div className="mt-5 space-y-3">
-          {deals.map((deal:any)=><article key={deal.id} className="border border-white/10 p-4">
+          {filteredDeals.map((deal:any)=><article key={deal.id} className="border border-white/10 p-4">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div><span className="text-[0.65rem] font-semibold uppercase tracking-[0.1em] text-[#b9d0e0]">{deal.stage}</span><h3 className="mt-1 text-xl font-semibold">{deal.title}</h3></div>
               <strong>{deal.probability}%</strong>
@@ -821,41 +847,52 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
   </Section>;
 }
 
-function ChatPanel({isAdmin,user,threads,partnerUsers,selectedThread,setSelectedThread,messages,notifications,reload}:any) {
+function ChatPanel({isAdmin,user,threads,profileCards,partnerUsers,selectedThread,setSelectedThread,messages,notifications,reload}:any) {
   const supabase=getPortalSupabase();
   const [body,setBody]=useState('');
   const [showArchived,setShowArchived]=useState(false);
-  const profileMap=Object.fromEntries(partnerUsers.map((p:any)=>[p.user_id,p]));
-  const visibleThreads=threads.filter((t:any)=>{
-    const archived=isAdmin?Boolean(t.archived_by_admin_at):Boolean(t.archived_by_partner_at);
-    return showArchived?archived:!archived;
-  });
+  const profileMap=Object.fromEntries((profileCards||[]).map((p:any)=>[p.user_id,p]));
+  const visibleThreads=(threads||[]).filter((t:any)=>showArchived ? true : !(isAdmin?t.archived_by_admin_at:t.archived_by_partner_at));
   const selected=threads.find((t:any)=>t.id===selectedThread);
+  const selectedPartner=isAdmin?profileMap[selected?.partner_user_id]:null;
+
+  async function markThreadRead(threadId:string){
+    const now=new Date().toISOString();
+    const readColumn=isAdmin?'read_by_admin_at':'read_by_partner_at';
+    const unreadColumn=isAdmin?'admin_marked_unread_at':'partner_marked_unread_at';
+    await Promise.all([
+      supabase.from('chat_messages').update({[readColumn]:now}).eq('thread_id',threadId).is(readColumn,null),
+      supabase.from('chat_threads').update({[unreadColumn]:null,updated_at:now}).eq('id',threadId),
+    ]);
+  }
+
+  async function openThread(threadId:string){
+    setSelectedThread(threadId);
+    await markThreadRead(threadId);
+    reload();
+  }
 
   useEffect(()=>{
-    if(!selectedThread||!user?.id)return;
-    const now=new Date().toISOString();
-    const field=isAdmin?'read_by_admin_at':'read_by_partner_at';
-    supabase.from('chat_messages').update({[field]:now,delivered_at:now}).eq('thread_id',selectedThread).neq('sender_user_id',user.id).is(field,null).then(()=>{});
-  },[selectedThread,user?.id,isAdmin,supabase,messages.length]);
+    if(selectedThread) markThreadRead(selectedThread);
+  },[selectedThread,messages.length]);
 
   async function send(e:FormEvent) {
     e.preventDefault();
     if(!selectedThread||!body.trim())return;
-    const {error}=await supabase.from('chat_messages').insert({thread_id:selectedThread,sender_user_id:user.id,body:body.trim(),delivered_at:new Date().toISOString()});
+    const {error}=await supabase.from('chat_messages').insert({thread_id:selectedThread,sender_user_id:user.id,body:body.trim()});
     if(error)alert(error.message);else setBody('');
   }
 
   async function archiveThread(thread:any){
-    const field=isAdmin?'archived_by_admin_at':'archived_by_partner_at';
-    const archived=Boolean(thread[field]);
-    const {error}=await supabase.from('chat_threads').update({[field]:archived?null:new Date().toISOString(),updated_at:new Date().toISOString()}).eq('id',thread.id);
-    if(error)alert(error.message);else{if(!archived)setSelectedThread(null);reload();}
+    const column=isAdmin?'archived_by_admin_at':'archived_by_partner_at';
+    const next=thread[column]?null:new Date().toISOString();
+    const {error}=await supabase.from('chat_threads').update({[column]:next,updated_at:new Date().toISOString()}).eq('id',thread.id);
+    if(error)alert(error.message);else{if(next&&selectedThread===thread.id)setSelectedThread(null);reload();}
   }
 
   async function markUnread(thread:any){
-    const field=isAdmin?'admin_marked_unread_at':'partner_marked_unread_at';
-    const {error}=await supabase.from('chat_threads').update({[field]:new Date().toISOString(),updated_at:new Date().toISOString()}).eq('id',thread.id);
+    const column=isAdmin?'admin_marked_unread_at':'partner_marked_unread_at';
+    const {error}=await supabase.from('chat_threads').update({[column]:new Date().toISOString(),updated_at:new Date().toISOString()}).eq('id',thread.id);
     if(error)alert(error.message);else reload();
   }
 
@@ -866,37 +903,63 @@ function ChatPanel({isAdmin,user,threads,partnerUsers,selectedThread,setSelected
     if(error)alert(error.message);else{setSelectedThread(null);reload();}
   }
 
-  return <Section title="Chat interne" kicker="Bosphoras Partner Support" action={<button onClick={()=>setShowArchived(v=>!v)} className="inline-flex items-center gap-2 border border-[#cfd8e3] px-4 py-2 text-xs font-semibold"><Archive size={14}/>{showArchived?'Conversations actives':'Archives'}</button>}>
-    <div className="grid min-h-[620px] overflow-hidden border border-[#d9e1e8] bg-white lg:grid-cols-[320px_1fr]">
+  return <Section title="Chat interne" kicker="Bosphoras Partner Support" action={<button onClick={()=>setShowArchived(!showArchived)} className="inline-flex min-h-[42px] items-center gap-2 rounded-lg border border-[#cfd8e3] bg-white px-4 text-xs font-semibold text-[#526272]"><Archive size={14}/>{showArchived?'Masquer les archives':'Voir les archives'}</button>}>
+    <div className="grid min-h-[620px] overflow-hidden rounded-xl border border-[#d9e1e8] bg-white lg:grid-cols-[320px_1fr]">
       <aside className="border-b border-[#d9e1e8] lg:border-b-0 lg:border-r">
-        <div className="p-4 text-xs font-bold uppercase tracking-[0.14em] text-[#687685]">{showArchived?'Archives':isAdmin?'Partenaires':'Votre fil Bosphoras'}</div>
+        <div className="p-4 text-xs font-bold uppercase tracking-[0.14em] text-[#687685]">{isAdmin?'Conversations partenaires':'Votre fil Bosphoras'}</div>
         {visibleThreads.map((t:any)=>{
-          const p=profileMap[t.partner_user_id];
           const unreadForThread=(notifications||[]).filter((n:any)=>!n.read_at&&n.notification_type==='chat_message'&&String(n.href||'').includes(t.id)).length;
-          const forcedUnread=isAdmin?t.admin_marked_unread_at:t.partner_marked_unread_at;
-          return <button key={t.id} onClick={()=>setSelectedThread(t.id)} className={`w-full border-t border-[#e7edf2] p-4 text-left ${selectedThread===t.id?'bg-[#edf3f7]':''}`}>
+          const forcedUnread=Boolean(isAdmin?t.admin_marked_unread_at:t.partner_marked_unread_at);
+          const person=isAdmin?profileMap[t.partner_user_id]:null;
+          return <button key={t.id} onClick={()=>openThread(t.id)} className={`w-full border-t border-[#e7edf2] p-4 text-left ${selectedThread===t.id?'bg-[#edf3f7]':''}`}>
             <div className="flex items-start gap-3">
-              <div className="h-10 w-10 shrink-0 overflow-hidden rounded-full bg-[#dce6ed]">{p?.avatar_url?<img src={p.avatar_url} alt="" className="h-full w-full object-cover"/>:<div className="flex h-full w-full items-center justify-center"><UserRound size={17} className="text-[#315d7c]"/></div>}</div>
-              <div className="min-w-0 flex-1"><div className="flex items-start justify-between gap-2"><strong className="block truncate text-sm">{isAdmin?(p?.full_name||p?.email||'Partenaire'):t.subject}</strong>{unreadForThread>0||forcedUnread?<span className="min-w-5 rounded-full bg-[#c76055] px-1.5 text-center text-[0.65rem] font-bold leading-5 text-white">{unreadForThread||'•'}</span>:null}</div><span className="mt-1 block text-xs text-[#7b8490]">{t.last_message_at?new Date(t.last_message_at).toLocaleString('fr-FR'):'Aucun message'}</span></div>
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#e5edf2] text-xs font-bold text-[#315d7c]">{person?.avatar_url?<img src={person.avatar_url} alt="" className="h-full w-full object-cover"/>:(person?.full_name||'B').slice(0,1).toUpperCase()}</div>
+              <div className="min-w-0 flex-1">
+                <div className="flex items-start justify-between gap-2"><strong className="block truncate text-sm">{isAdmin?(person?.full_name||'Partenaire'):t.subject}</strong>{unreadForThread>0||forcedUnread?<span className="min-w-5 rounded-full bg-[#c76055] px-1.5 text-center text-[0.65rem] font-bold leading-5 text-white">{unreadForThread||'•'}</span>:null}</div>
+                <span className="mt-1 block text-xs text-[#7b8490]">{t.last_message_at?new Date(t.last_message_at).toLocaleString('fr-FR'):'Aucun message'}{(isAdmin?t.archived_by_admin_at:t.archived_by_partner_at)?' · archivé':''}</span>
+              </div>
             </div>
-          </button>
+          </button>;
         })}
-        {visibleThreads.length===0?<p className="p-5 text-sm text-[#687685]">Aucune conversation.</p>:null}
+        {visibleThreads.length===0?<p className="p-5 text-sm text-[#687685]">{showArchived?'Aucune conversation.':'Aucune conversation active.'}</p>:null}
       </aside>
+
       <section className="flex min-h-[620px] flex-col">
-        {selected?<div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#d9e1e8] px-5 py-3">
-          <div className="flex items-center gap-3">{isAdmin&&profileMap[selected.partner_user_id]?.avatar_url?<img src={profileMap[selected.partner_user_id].avatar_url} alt="" className="h-9 w-9 rounded-full object-cover"/>:<div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#e6edf2]"><UserRound size={16}/></div>}<div><strong className="block text-sm">{isAdmin?(profileMap[selected.partner_user_id]?.full_name||profileMap[selected.partner_user_id]?.email||'Partenaire'):selected.subject}</strong><span className="text-xs text-[#7b8794]">{selected.status||'open'}</span></div></div>
-          <div className="flex gap-2"><button onClick={()=>markUnread(selected)} className="inline-flex items-center gap-1.5 border border-[#cfd8e3] px-3 py-2 text-xs font-semibold"><MailOpen size={13}/>Non lu</button><button onClick={()=>archiveThread(selected)} className="inline-flex items-center gap-1.5 border border-[#cfd8e3] px-3 py-2 text-xs font-semibold"><Archive size={13}/>{(isAdmin?selected.archived_by_admin_at:selected.archived_by_partner_at)?'Restaurer':'Archiver'}</button>{isAdmin?<button onClick={()=>deleteThread(selected)} className="inline-flex items-center gap-1.5 border border-[#b96363] px-3 py-2 text-xs font-semibold text-[#9b4444]"><Trash2 size={13}/>Supprimer</button>:null}</div>
+        {selected?<div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#d9e1e8] bg-white p-4">
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-[#e5edf2] text-sm font-bold text-[#315d7c]">{selectedPartner?.avatar_url?<img src={selectedPartner.avatar_url} alt="" className="h-full w-full object-cover"/>:(selectedPartner?.full_name||'B').slice(0,1).toUpperCase()}</div>
+            <div><strong className="block text-sm">{isAdmin?(selectedPartner?.full_name||selected.subject):'Support Bosphoras'}</strong><span className="text-xs text-[#7b8794]">{isAdmin?(selectedPartner?.job_title||'Partenaire'):'Équipe Bosphoras'}</span></div>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <button onClick={()=>markUnread(selected)} className="rounded-lg border border-[#cfd8e3] px-3 py-2 text-xs font-semibold">Non lu</button>
+            <button onClick={()=>archiveThread(selected)} className="inline-flex items-center gap-1.5 rounded-lg border border-[#cfd8e3] px-3 py-2 text-xs font-semibold"><Archive size={13}/>{(isAdmin?selected.archived_by_admin_at:selected.archived_by_partner_at)?'Désarchiver':'Archiver'}</button>
+            {isAdmin?<button onClick={()=>deleteThread(selected)} className="inline-flex items-center gap-1.5 rounded-lg border border-[#b96363] px-3 py-2 text-xs font-semibold text-[#9b4444]"><Trash2 size={13}/>Supprimer</button>:null}
+          </div>
         </div>:null}
+
         <div className="flex-1 space-y-3 overflow-y-auto bg-[#f3f6f8] p-5">
           {messages.map((m:any)=>{
             const mine=m.sender_user_id===user.id;
-            const readAt=isAdmin?m.read_by_partner_at:m.read_by_admin_at;
-            return <div key={m.id} className={`max-w-[80%] p-3 text-sm leading-6 ${mine?'ml-auto bg-[#12304a] text-white':'bg-white text-[#303a46]'}`}><p>{m.body}</p><div className={`mt-1 flex items-center justify-end gap-2 text-[0.62rem] ${mine?'text-[#a9bfd0]':'text-[#8a929d]'}`}><span>{new Date(m.created_at).toLocaleString('fr-FR')}</span>{mine?<span>{readAt?'Lu':m.delivered_at?'Distribué':'Envoyé'}</span>:null}</div></div>
+            const sender=profileMap[m.sender_user_id];
+            const readAt=mine?(isAdmin?m.read_by_partner_at:m.read_by_admin_at):null;
+            return <div key={m.id} className={`flex items-end gap-2 ${mine?'justify-end':'justify-start'}`}>
+              {!mine?<div className="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white text-[0.65rem] font-bold text-[#315d7c]">{sender?.avatar_url?<img src={sender.avatar_url} alt="" className="h-full w-full object-cover"/>:(sender?.full_name||'B').slice(0,1).toUpperCase()}</div>:null}
+              <div className={`max-w-[78%] rounded-2xl px-4 py-3 text-sm leading-6 ${mine?'rounded-br-sm bg-[#12304a] text-white':'rounded-bl-sm bg-white text-[#303a46]'}`}>
+                <p>{m.body}</p>
+                <span className={`mt-1 flex items-center justify-end gap-1 text-[0.62rem] ${mine?'text-[#a9bfd0]':'text-[#8a929d]'}`}>
+                  {new Date(m.created_at).toLocaleString('fr-FR')}
+                  {mine?<><CheckCheck size={12}/>{readAt?'Lu':'Distribué'}</>:null}
+                </span>
+              </div>
+            </div>;
           })}
           {!selectedThread&&<p className="text-sm text-[#687685]">Sélectionnez une conversation.</p>}
         </div>
-        <form onSubmit={send} className="flex gap-2 border-t border-[#d9e1e8] p-4"><input value={body} onChange={e=>setBody(e.target.value)} disabled={!selectedThread} placeholder="Écrire un message…" className="min-h-[46px] flex-1 border border-[#d9e1e8] px-3 text-sm"/><button disabled={!selectedThread||!body.trim()} className="inline-flex h-11 w-11 items-center justify-center bg-[#12304a] text-white disabled:opacity-40"><Send size={16}/></button></form>
+
+        <form onSubmit={send} className="flex gap-2 border-t border-[#d9e1e8] p-4">
+          <input value={body} onChange={e=>setBody(e.target.value)} disabled={!selectedThread} placeholder="Écrire un message…" className="min-h-[46px] flex-1 rounded-lg border border-[#d9e1e8] px-3 text-sm"/>
+          <button disabled={!selectedThread||!body.trim()} className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-[#12304a] text-white disabled:opacity-40"><Send size={16}/></button>
+        </form>
       </section>
     </div>
   </Section>;
