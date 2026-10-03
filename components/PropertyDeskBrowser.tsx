@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useMemo, useState } from 'react';
-import { ArrowRight, Building2, Globe2, MapPin, SlidersHorizontal, WalletCards } from 'lucide-react';
+import { ArrowRight, BadgePercent, Building2, Globe2, MapPin, SlidersHorizontal, WalletCards } from 'lucide-react';
 import type { Locale } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
 import {
@@ -45,6 +45,7 @@ function labels(locale: Locale) {
     privateCta: 'Lancer une recherche privée',
     privateHref: '/diagnostic-prive?subject=property-desk',
     filters: 'Filtres investisseurs',
+    developerTerms: 'Financement promoteur',
   };
   if (locale === 'ru') return {
     title: 'Инвестиционные объекты',
@@ -63,6 +64,7 @@ function labels(locale: Locale) {
     privateCta: 'Запросить частный поиск',
     privateHref: '/ru/chastnaya-konsultatsiya?subject=property-desk',
     filters: 'Фильтры инвестора',
+    developerTerms: 'Условия застройщика',
   };
   if (locale === 'ar') return {
     title: 'فرص عقارية استثمارية',
@@ -81,6 +83,7 @@ function labels(locale: Locale) {
     privateCta: 'طلب بحث خاص',
     privateHref: '/ar/تقييم-خاص?subject=property-desk',
     filters: 'فلاتر المستثمر',
+    developerTerms: 'شروط المطور',
   };
   return {
     title: 'Property opportunities',
@@ -99,6 +102,7 @@ function labels(locale: Locale) {
     privateCta: 'Request a private search',
     privateHref: '/en/private-assessment?subject=property-desk',
     filters: 'Investor filters',
+    developerTerms: 'Developer terms',
   };
 }
 
@@ -226,6 +230,18 @@ export function PropertyDeskBrowser({ locale, properties, globalMode = false }: 
                         <div><span className="block text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-[#7b8985]">{copy.price}</span><strong className="mt-1 block text-base text-[#12221f]">{formatPropertyPrice(property, locale)}</strong></div>
                         {capitalLabel ? <div><span className="block text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-[#7b8985]">{copy.entry}</span><strong className="mt-1 block text-base text-[#12221f]">{capitalLabel.replace(/^.*?:\s*/,'')}</strong></div> : <div/>}
                       </div>
+                      {property.paymentPlanEnabled && property.paymentInterestMode !== 'not_specified' ? (
+                        <div className="mt-4 flex items-center justify-between gap-3 rounded-xl bg-[#edf5f1] px-4 py-3">
+                          <span className="inline-flex items-center gap-2 text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#557067]"><BadgePercent size={14}/>{copy.developerTerms}</span>
+                          <strong className="text-sm text-[#24614d]">
+                            {property.paymentInterestMode === 'interest_free'
+                              ? (locale==='fr'?'0 % · sans intérêt':locale==='en'?'0% · interest-free':locale==='ru'?'0% · без процентов':'0٪ · بدون فائدة')
+                              : property.paymentInterestRate !== undefined
+                                ? (locale==='fr'?'Taux '+property.paymentInterestRate+'%':locale==='en'?'Rate '+property.paymentInterestRate+'%':locale==='ru'?'Ставка '+property.paymentInterestRate+'%':'معدل '+property.paymentInterestRate+'٪')
+                                : payBadge}
+                          </strong>
+                        </div>
+                      ) : null}
                       <span className="mt-5 inline-flex items-center gap-2 text-xs font-semibold text-[#2f6d59]">{copy.view}<ArrowRight size={14}/></span>
                     </div>
                   </Link>
