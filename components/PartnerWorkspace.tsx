@@ -427,7 +427,25 @@ function ListingsPanel({isAdmin,user,profile,listings,submissions,showNew,setSho
     const {error}=await supabase.from('property_listings').update({published:next,published_at:next?new Date().toISOString():null}).eq('id',listing.id);
     if(error) alert(error.message); else reload();
   }
+  async function deleteListing(listing:any) {
+    if(!isAdmin) return;
+    const name=listing.title?.fr||listing.external_id||'cette annonce';
+    if(!window.confirm(`Retirer ${name} ? L'annonce sera masquée du site et archivée dans la base.`)) return;
+    const {error}=await supabase.from('property_listings').update({
+      published:false,
+      published_at:null,
+      deleted_at:new Date().toISOString(),
+      deleted_by:user.id,
+    }).eq('id',listing.id);
+    if(error) alert(error.message); else reload();
+  }
   const editor = showNew || editingSubmission || editingListing;
+  if(showNew && isAdmin) {
+    return <Section title="Nouvelle annonce" kicker="Création administrateur">
+      <div className="mb-5 flex justify-end"><button onClick={()=>setShowNew(false)} className="border border-[#cfd8e3] px-4 py-2 text-xs font-semibold uppercase">Fermer</button></div>
+      <AdminPropertyImporter user={user} reload={()=>{reload();setShowNew(false);}} />
+    </Section>;
+  }
   if(editingListing && isAdmin) {
     return <Section title="Modifier une annonce" kicker="Contrôle administrateur">
       <AdminListingEditor
@@ -448,13 +466,13 @@ function ListingsPanel({isAdmin,user,profile,listings,submissions,showNew,setSho
       />
     </Section>;
   }
-  return <Section title="Biens & projets" kicker={isAdmin?'Inventaire global':'Vos opportunités'} action={!isAdmin?<button onClick={()=>setShowNew(true)} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-xs font-bold uppercase tracking-[0.12em] text-white"><Plus size={15}/>Nouvelle annonce</button>:null}>
+  return <Section title="Biens & projets" kicker={isAdmin?'Inventaire global':'Vos opportunités'} action={<button onClick={()=>setShowNew(true)} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-xs font-bold uppercase tracking-[0.12em] text-white"><Plus size={15}/>{isAdmin?'Ajouter une annonce':'Nouvelle annonce'}</button>}>
     {!isAdmin&&<div className="mb-8 border border-[#d9e1e8] bg-[#f7f9fb] p-5 text-sm leading-6 text-[#526272]"><strong>Règle Bosphoras :</strong> une annonce créée ou modifiée par un partenaire reste en brouillon/soumission jusqu’à validation de l’administrateur. Une modification d’un bien déjà publié ne change jamais la version publique avant approbation.</div>}
     <div className="grid gap-6 lg:grid-cols-2">
       <div className="border border-[#d9e1e8] bg-white p-5">
         <h2 className="font-sans text-2xl">{isAdmin?'Toutes les annonces':'Biens attribués'}</h2>
         <div className="mt-5 space-y-3">
-          {listings.map((l:any)=><article key={l.id} className="border border-[#e7edf2] p-4"><div className="flex items-start justify-between gap-4"><div><span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-[#315d7c]">{l.city} · {l.district}</span><h3 className="mt-1 font-sans text-xl">{l.title?.fr || l.external_id}</h3><p className="mt-2 text-sm text-[#687685]">{money(l.total_price,l.currency)} · {l.published?'Publié':'Non publié'} · rév. {l.revision}</p></div>{l.hero_image&&<img src={l.hero_image} alt="" className="h-16 w-20 object-cover"/>}</div><div className="mt-4 flex flex-wrap gap-2"><a href={'/espace/apercu?listing='+l.id} target="_blank" rel="noreferrer" className="border border-[#315d7c] bg-[#eef4f8] px-3 py-2 text-xs font-semibold uppercase text-[#315d7c]">Aperçu</a>{l.published&&l.slug_fr?<a href={'/immobilier-turquie/'+l.slug_fr} target="_blank" rel="noreferrer" className="border border-[#2f6d59] px-3 py-2 text-xs font-semibold uppercase text-[#2f6d59]">Page publique</a>:null}{isAdmin?<><button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase text-[#12304a]">Modifier</button><button onClick={()=>togglePublish(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">{l.published?'Dépublier':'Publier'}</button></>:<button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">Proposer une modification</button>}</div></article>)}
+          {listings.map((l:any)=><article key={l.id} className="border border-[#e7edf2] p-4"><div className="flex items-start justify-between gap-4"><div><span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-[#315d7c]">{l.city} · {l.district}</span><h3 className="mt-1 font-sans text-xl">{l.title?.fr || l.external_id}</h3><p className="mt-2 text-sm text-[#687685]">{money(l.total_price,l.currency)} · {l.published?'Publié':'Non publié'} · rév. {l.revision}</p></div>{l.hero_image&&<img src={l.hero_image} alt="" className="h-16 w-20 object-cover"/>}</div><div className="mt-4 flex flex-wrap gap-2"><a href={'/espace/apercu?listing='+l.id} target="_blank" rel="noreferrer" className="border border-[#315d7c] bg-[#eef4f8] px-3 py-2 text-xs font-semibold uppercase text-[#315d7c]">Aperçu</a>{l.published&&l.slug_fr?<a href={'/immobilier-turquie/'+l.slug_fr} target="_blank" rel="noreferrer" className="border border-[#2f6d59] px-3 py-2 text-xs font-semibold uppercase text-[#2f6d59]">Page publique</a>:null}{isAdmin?<><button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase text-[#12304a]">Modifier</button><button onClick={()=>togglePublish(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">{l.published?'Dépublier':'Publier'}</button><button onClick={()=>deleteListing(l)} className="inline-flex items-center gap-1.5 border border-[#b96363] px-3 py-2 text-xs font-semibold uppercase text-[#9b4444]"><Trash2 size={13}/>Retirer</button></>:<button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">Proposer une modification</button>}</div></article>)}
           {listings.length===0&&<p className="py-6 text-sm text-[#687685]">Aucun bien attribué pour le moment.</p>}
         </div>
       </div>
@@ -478,6 +496,8 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
   const [activities,setActivities]=useState<any[]>([]);
   const [contactBusy,setContactBusy]=useState(false);
   const [contactNotice,setContactNotice]=useState<{type:'success'|'error';text:string}|null>(null);
+  const [crmSearch,setCrmSearch]=useState('');
+  const [crmStatus,setCrmStatus]=useState('');
 
   async function loadActivities(){
     const {data}=await supabase.from('crm_activities').select('*').order('created_at',{ascending:false}).limit(100);
@@ -647,6 +667,13 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
   const dealById=Object.fromEntries(deals.map((x:any)=>[x.id,x]));
   const openActivities=activities.filter((x:any)=>!x.completed_at);
   const overdue=openActivities.filter((x:any)=>x.due_at&&new Date(x.due_at)<new Date()).length;
+  const filteredContacts=contacts.filter((contact:any)=>{
+    if(crmStatus && contact.status!==crmStatus) return false;
+    const q=crmSearch.trim().toLowerCase();
+    if(!q) return true;
+    return [contact.first_name,contact.last_name,contact.company,contact.email,contact.phone,contact.whatsapp,contact.source,contact.nationality,contact.country_of_residence]
+      .filter(Boolean).join(' ').toLowerCase().includes(q);
+  });
 
   return <Section title="CRM investissement" kicker="Contacts · pipeline · relances" action={<button onClick={()=>setShow(!show)} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-xs font-semibold uppercase tracking-[0.1em] text-white"><Plus size={15}/>Nouveau contact</button>}>
     {contactNotice?<div className={`mb-5 flex items-center justify-between border px-4 py-3 text-sm shadow-sm ${contactNotice.type==='success'?'border-[#a8c8b8] bg-[#f1faf5] text-[#245943]':'border-[#e0b5b5] bg-[#fff6f6] text-[#8b4040]'}`}><span>{contactNotice.text}</span><button type="button" onClick={()=>setContactNotice(null)} className="ml-4 text-lg leading-none">×</button></div>:null}
@@ -675,11 +702,16 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
       <button disabled={contactBusy} className="bg-[#12304a] px-4 py-3 text-xs font-semibold uppercase text-white disabled:cursor-wait disabled:opacity-60">{contactBusy?'Enregistrement…':'Créer le contact'}</button>
     </form>}
 
+    <div className="mb-6 grid gap-3 border border-[#d9e1e8] bg-white p-4 md:grid-cols-[1fr_220px]">
+      <label className="relative"><Search size={16} className="absolute left-3 top-3.5 text-[#7b8794]"/><input value={crmSearch} onChange={(e)=>setCrmSearch(e.target.value)} placeholder="Rechercher nom, e-mail, téléphone, société, source…" className="min-h-[44px] w-full border border-[#cfd8e3] pl-10 pr-3 text-sm"/></label>
+      <select value={crmStatus} onChange={(e)=>setCrmStatus(e.target.value)} className="min-h-[44px] border border-[#cfd8e3] bg-white px-3 text-sm"><option value="">Tous les statuts</option><option value="new">Nouveau</option><option value="contacted">Contacté</option><option value="qualified">Qualifié</option><option value="nurturing">À nourrir</option><option value="inactive">Inactif</option><option value="converted">Converti</option><option value="lost">Perdu</option></select>
+    </div>
+
     <div className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
       <div className="border border-[#d9e1e8] bg-white p-5">
-        <h2 className="text-2xl font-semibold tracking-[-0.02em]">Contacts</h2>
+        <div className="flex items-center justify-between gap-3"><h2 className="text-2xl font-semibold tracking-[-0.02em]">Contacts</h2><span className="text-xs font-semibold text-[#687685]">{filteredContacts.length} résultat(s)</span></div>
         <div className="mt-5 space-y-3">
-          {contacts.map((contact:any)=><article key={contact.id} className="border border-[#e7edf2] p-4">
+          {filteredContacts.map((contact:any)=><article key={contact.id} className="border border-[#e7edf2] p-4">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
                 <h3 className="font-semibold">{[contact.first_name,contact.last_name].filter(Boolean).join(' ')||contact.company||'Contact'}</h3>
@@ -701,7 +733,7 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
               {isAdmin?<select value={contact.owner_user_id||''} onChange={(e)=>assign(contact.id,e.target.value)} className="min-h-[38px] border border-[#d9e1e8] px-2 text-xs"><option value="">Attribuer à un partenaire…</option>{partnerUsers.map((p:any)=><option key={p.user_id} value={p.user_id}>{p.full_name||p.email}</option>)}</select>:null}
             </div>
           </article>)}
-          {contacts.length===0&&<p className="py-5 text-sm text-[#687685]">Aucun contact.</p>}
+          {filteredContacts.length===0&&<p className="py-5 text-sm text-[#687685]">Aucun contact ne correspond à la recherche.</p>}
         </div>
       </div>
 
