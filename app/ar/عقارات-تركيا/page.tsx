@@ -4,7 +4,7 @@ import { buildMetadata } from '@/lib/seo';
 import { getPage } from '@/data/pages';
 import { PropertyDeskPage } from '@/components/PropertyDeskPage';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 
 const locale = 'ar' as const;
 

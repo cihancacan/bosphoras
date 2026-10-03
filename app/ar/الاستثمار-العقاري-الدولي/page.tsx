@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { buildMetadata } from '@/lib/seo';
 import { GlobalPropertyInvestmentPage } from '@/components/GlobalPropertyInvestmentPage';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 60;
 
 export const metadata: Metadata = buildMetadata({
   locale:'ar',
