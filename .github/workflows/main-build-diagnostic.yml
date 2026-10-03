@@ -21,4 +21,18 @@ jobs:
       - name: Install
         run: npm install --no-audit --no-fund
       - name: Build
-        run: npm run build
+        id: build
+        shell: bash
+        run: |
+          set +e
+          npm run build > build.log 2>&1
+          code=$?
+          tail -n 180 build.log
+          exit $code
+      - name: Upload build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bosphoras-build-log
+          path: build.log
+          if-no-files-found: ignore
