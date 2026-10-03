@@ -15,11 +15,20 @@ export function PropertyGallery({ images, title, summary, location }: Props) {
   const safeImages = images.filter(Boolean);
   const [index, setIndex] = useState(0);
   const [open, setOpen] = useState(false);
+  const [touchStart, setTouchStart] = useState<number | null>(null);
   const current = safeImages[index] || '';
 
   function move(delta: number) {
     if (safeImages.length < 2) return;
     setIndex((value) => (value + delta + safeImages.length) % safeImages.length);
+  }
+
+  function onTouchEnd(event: React.TouchEvent<HTMLDivElement>) {
+    if (touchStart === null) return;
+    const end = event.changedTouches[0]?.clientX ?? touchStart;
+    const delta = end - touchStart;
+    if (Math.abs(delta) > 45) move(delta > 0 ? -1 : 1);
+    setTouchStart(null);
   }
 
   useEffect(() => {
@@ -34,52 +43,67 @@ export function PropertyGallery({ images, title, summary, location }: Props) {
   }, [open, safeImages.length]);
 
   return (
-    <div>
-      <div className="relative aspect-[16/10] min-h-[360px] overflow-hidden rounded-[1.65rem] border border-[#d8dfdc] bg-[#dfe7e3] shadow-[0_22px_70px_rgba(20,40,34,.10)] md:min-h-[520px]">
+    <div className="min-w-0">
+      <div
+        className="relative aspect-[4/3] w-full min-w-0 overflow-hidden bg-[#dedbd3] sm:aspect-[16/10] lg:aspect-[4/3]"
+        onTouchStart={(event) => setTouchStart(event.touches[0]?.clientX ?? null)}
+        onTouchEnd={onTouchEnd}
+      >
         {current ? (
-          <button type="button" onClick={() => setOpen(true)} className="absolute inset-0 block h-full w-full text-left" aria-label="Ouvrir la galerie">
-            <Image src={current} alt={title} fill unoptimized priority className="object-cover" sizes="(max-width: 1024px) 100vw, 820px" />
+          <button type="button" onClick={() => setOpen(true)} className="absolute inset-0 block h-full w-full" aria-label="Ouvrir la galerie">
+            <Image src={current} alt={title} fill unoptimized priority className="object-cover" sizes="(max-width: 1024px) 100vw, 760px" />
           </button>
         ) : (
-          <div className="absolute inset-0 flex items-center justify-center text-xs font-semibold uppercase tracking-[0.2em] text-[#71817c]">Bosphoras Property Desk</div>
+          <div className="absolute inset-0 flex items-center justify-center text-xs font-semibold uppercase tracking-[0.2em] text-[#77736b]">Bosphoras Property Desk</div>
         )}
 
         {safeImages.length > 1 ? (
           <>
-            <button type="button" onClick={() => move(-1)} className="absolute left-4 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/40 bg-[#10231e]/55 p-2.5 text-white backdrop-blur-md transition hover:bg-[#10231e]/80" aria-label="Photo précédente"><ChevronLeft size={20}/></button>
-            <button type="button" onClick={() => move(1)} className="absolute right-4 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/40 bg-[#10231e]/55 p-2.5 text-white backdrop-blur-md transition hover:bg-[#10231e]/80" aria-label="Photo suivante"><ChevronRight size={20}/></button>
+            <button type="button" onClick={() => move(-1)} className="absolute left-3 top-1/2 z-20 hidden -translate-y-1/2 border border-white/60 bg-black/25 p-2.5 text-white backdrop-blur-md transition hover:bg-black/45 sm:block" aria-label="Photo précédente"><ChevronLeft size={20}/></button>
+            <button type="button" onClick={() => move(1)} className="absolute right-3 top-1/2 z-20 hidden -translate-y-1/2 border border-white/60 bg-black/25 p-2.5 text-white backdrop-blur-md transition hover:bg-black/45 sm:block" aria-label="Photo suivante"><ChevronRight size={20}/></button>
           </>
         ) : null}
 
-        <button type="button" onClick={() => setOpen(true)} className="absolute right-4 top-4 z-20 inline-flex items-center gap-2 rounded-full border border-white/40 bg-[#10231e]/50 px-3 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.08em] text-white backdrop-blur-md">
-          <Expand size={14}/>{safeImages.length || 1} photo{safeImages.length > 1 ? 's' : ''}
-        </button>
+        <div className="absolute left-3 top-3 z-20 flex items-center gap-2 sm:left-4 sm:top-4">
+          <span className="bg-[#17211e]/78 px-3 py-2 text-[0.66rem] font-semibold uppercase tracking-[0.1em] text-white backdrop-blur-md">{index + 1} / {Math.max(safeImages.length,1)}</span>
+          <button type="button" onClick={() => setOpen(true)} className="bg-[#17211e]/78 p-2 text-white backdrop-blur-md" aria-label="Agrandir la photo"><Expand size={15}/></button>
+        </div>
 
-        <div className="absolute inset-x-0 bottom-0 z-10 border-t border-white/15 bg-[#0c1d19]/58 px-5 py-4 text-white backdrop-blur-xl md:px-7 md:py-5">
-          <p className="text-[0.67rem] font-semibold uppercase tracking-[0.13em] text-[#dfc69a]">{location}</p>
-          <p className="mt-1.5 max-w-3xl text-sm leading-6 text-white/90">{summary}</p>
+        <div className="absolute inset-x-0 bottom-0 z-10 border-t border-white/20 bg-[#111816]/55 px-4 py-3 text-white backdrop-blur-xl sm:px-5 sm:py-4">
+          <p className="text-[0.64rem] font-semibold uppercase tracking-[0.12em] text-[#d9c7a0]">{location}</p>
+          <p className="mt-1 max-w-3xl overflow-hidden text-[0.82rem] leading-5 text-white/90 [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:2] sm:text-sm sm:leading-6">{summary}</p>
         </div>
       </div>
 
       {safeImages.length > 1 ? (
-        <div className="mt-3 flex gap-2 overflow-x-auto pb-1">
+        <div className="mt-2 flex w-full snap-x snap-mandatory gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {safeImages.map((image, imageIndex) => (
-            <button key={image + imageIndex} type="button" onClick={() => setIndex(imageIndex)} className={`relative h-20 w-28 shrink-0 overflow-hidden rounded-xl border-2 bg-[#e8eeeb] transition ${imageIndex === index ? 'border-[#2f6d59]' : 'border-transparent opacity-75 hover:opacity-100'}`}>
-              <Image src={image} alt={`${title} — ${imageIndex + 1}`} fill unoptimized className="object-cover" sizes="112px"/>
+            <button
+              key={image + imageIndex}
+              type="button"
+              onClick={() => setIndex(imageIndex)}
+              className={`relative aspect-[4/3] w-[27%] min-w-[92px] max-w-[132px] shrink-0 snap-start overflow-hidden border transition sm:w-28 ${imageIndex === index ? 'border-[#315f52] opacity-100' : 'border-transparent opacity-65 hover:opacity-100'}`}
+              aria-label={`Afficher la photo ${imageIndex + 1}`}
+            >
+              <Image src={image} alt={`${title} — ${imageIndex + 1}`} fill unoptimized className="object-cover" sizes="132px"/>
             </button>
           ))}
         </div>
       ) : null}
 
       {open && current ? (
-        <div className="fixed inset-0 z-[100] bg-[#07110f]/95 p-4 backdrop-blur-sm md:p-8" role="dialog" aria-modal="true" aria-label={title}>
-          <button type="button" onClick={() => setOpen(false)} className="absolute right-5 top-5 z-20 rounded-full border border-white/20 bg-black/25 p-3 text-white" aria-label="Fermer"><X size={22}/></button>
-          {safeImages.length > 1 ? <button type="button" onClick={() => move(-1)} className="absolute left-5 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/20 bg-black/25 p-3 text-white" aria-label="Photo précédente"><ChevronLeft size={26}/></button> : null}
-          {safeImages.length > 1 ? <button type="button" onClick={() => move(1)} className="absolute right-5 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/20 bg-black/25 p-3 text-white" aria-label="Photo suivante"><ChevronRight size={26}/></button> : null}
-          <div className="relative mx-auto h-full max-w-[1500px]">
+        <div className="fixed inset-0 z-[100] bg-[#090d0c]/98" role="dialog" aria-modal="true" aria-label={title}>
+          <button type="button" onClick={() => setOpen(false)} className="absolute right-3 top-3 z-30 border border-white/25 bg-black/30 p-3 text-white sm:right-5 sm:top-5" aria-label="Fermer"><X size={22}/></button>
+          {safeImages.length > 1 ? <button type="button" onClick={() => move(-1)} className="absolute left-3 top-1/2 z-30 -translate-y-1/2 border border-white/25 bg-black/30 p-3 text-white sm:left-5" aria-label="Photo précédente"><ChevronLeft size={26}/></button> : null}
+          {safeImages.length > 1 ? <button type="button" onClick={() => move(1)} className="absolute right-3 top-1/2 z-30 -translate-y-1/2 border border-white/25 bg-black/30 p-3 text-white sm:right-5" aria-label="Photo suivante"><ChevronRight size={26}/></button> : null}
+          <div
+            className="relative h-full w-full"
+            onTouchStart={(event) => setTouchStart(event.touches[0]?.clientX ?? null)}
+            onTouchEnd={onTouchEnd}
+          >
             <Image src={current} alt={title} fill unoptimized className="object-contain" sizes="100vw"/>
           </div>
-          <div className="absolute bottom-5 left-1/2 -translate-x-1/2 rounded-full bg-black/45 px-4 py-2 text-xs font-semibold text-white">{index + 1} / {safeImages.length}</div>
+          <div className="absolute bottom-4 left-1/2 z-30 -translate-x-1/2 bg-black/50 px-4 py-2 text-xs font-semibold text-white">{index + 1} / {safeImages.length}</div>
         </div>
       ) : null}
     </div>

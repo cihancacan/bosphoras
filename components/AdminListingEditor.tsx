@@ -267,10 +267,10 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
           <p className="text-[0.68rem] font-semibold uppercase tracking-[0.11em] text-[#2f6d59]">Informations internes · non publiques</p>
-          <h3 className="mt-1 text-xl font-semibold text-[#162334]">Propriétaire de l’annonce & vendeur</h3>
-          <p className="mt-2 max-w-3xl text-xs leading-5 text-[#687685]">Ces informations sont séparées de la fiche publique. L’agent propriétaire peut les consulter ; l’administrateur peut aussi les partager avec tous les agents.</p>
+          <h3 className="mt-1 text-xl font-semibold text-[#162334]">Propriétaire du produit & vendeur</h3>
+          <p className="mt-2 max-w-3xl text-xs leading-5 text-[#687685]">Ces informations sont séparées de la fiche publique. Le partenaire propriétaire et l’administrateur peuvent les consulter. L’administrateur choisit si elles restent limitées au propriétaire ou deviennent visibles à toute l’équipe interne. Elles ne sont jamais publiques.</p>
         </div>
-        <label className={label}>Accès agents
+        <label className={label}>Visibilité interne
           <select value={internal.access_scope||'owner_only'} onChange={(e)=>setInternal((v:any)=>({...v,access_scope:e.target.value}))} className={input}>
             <option value="owner_only">Propriétaire uniquement</option>
             <option value="all_agents">Tous les agents</option>

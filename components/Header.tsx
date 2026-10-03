@@ -69,7 +69,6 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
   const corporateRelocationLink = corporateRelocationPaths[locale];
   const propertyInvestmentLink = getLocalePath(locale, globalPropertyHubPaths[locale]);
   const propertyQuickLabel = locale === 'fr' ? 'Immobilier' : locale === 'en' ? 'Property' : locale === 'ru' ? 'Недвижимость' : 'العقار';
-  const transferQuickLabel = locale === 'fr' ? 'Transfert' : locale === 'en' ? 'Transfer' : locale === 'ru' ? 'Трансфер' : 'النقل';
 
   const groups: MenuGroup[] = [
     { label: labels.services, href: linkTo('services'), items: [
@@ -142,7 +141,6 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
               </div>
             ))}
             <Link href={propertyInvestmentLink} className="whitespace-nowrap rounded-md border border-[#4f8d78]/70 bg-[#4f8d78]/10 px-3 py-2.5 text-[0.67rem] font-bold uppercase tracking-[0.075em] text-[#a9d5c5] transition hover:bg-[#4f8d78]/18">{propertyQuickLabel}</Link>
-            <Link href={mobilityLink} className="whitespace-nowrap rounded-md border border-[hsl(42,65%,52%)]/45 bg-[hsl(42,65%,52%)]/[0.07] px-3 py-2.5 text-[0.67rem] font-bold uppercase tracking-[0.075em] text-[hsl(42,65%,63%)] transition hover:bg-[hsl(42,65%,52%)]/[0.12]">{transferQuickLabel}</Link>
           </nav>
           <div className="hidden shrink-0 items-center gap-2 xl:flex">
             <button onClick={() => setSearchOpen(true)} className="inline-flex h-10 w-10 items-center justify-center border border-white/10 text-[hsl(45,30%,96%)] transition-colors duration-200 hover:border-[hsl(42,65%,52%)] hover:text-[hsl(42,65%,52%)]" aria-label={searchLabel}><Search size={15} /></button><Link href="/connexion" className="inline-flex h-10 w-10 items-center justify-center border border-white/10 text-[hsl(220,10%,65%)] transition-colors duration-200 hover:border-[hsl(42,65%,52%)] hover:text-[hsl(42,65%,52%)]" aria-label={locale === 'fr' ? 'Espace partenaire' : locale === 'en' ? 'Partner portal' : locale === 'ru' ? 'Партнёрский кабинет' : 'بوابة الشركاء'} title={locale === 'fr' ? 'Espace partenaire' : locale === 'en' ? 'Partner portal' : locale === 'ru' ? 'Партнёрский кабинет' : 'بوابة الشركاء'}><KeyRound size={16} /></Link>
@@ -151,7 +149,29 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
           </div>
           <div className="flex items-center gap-2 xl:hidden"><Link href="/connexion" className="p-2 text-[hsl(45,30%,96%)]" aria-label={locale === 'fr' ? 'Espace partenaire' : locale === 'en' ? 'Partner portal' : locale === 'ru' ? 'Партнёрский кабинет' : 'بوابة الشركاء'}><KeyRound size={20} /></Link><button className="p-2 text-[hsl(45,30%,96%)]" onClick={() => setSearchOpen(true)} aria-label={searchLabel}><Search size={21} /></button><button className="p-2 text-[hsl(45,30%,96%)]" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'} aria-expanded={menuOpen}>{menuOpen ? <X size={22} /> : <Menu size={22} />}</button></div>
         </div>
-        {menuOpen && <div className="max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-[hsl(220,35%,15%)] bg-[hsl(220,45%,8%)] px-6 py-6 xl:hidden"><div className="flex flex-col gap-3">{groups.map((group) => <div key={group.label} className="border-b border-white/5 pb-3"><button onClick={() => setOpenGroup(openGroup === group.label ? null : group.label)} className="flex w-full items-center justify-between py-2 text-left text-sm font-semibold uppercase tracking-[0.12em] text-[hsl(220,10%,55%)]">{group.label}<span className="text-[hsl(42,65%,45%)]">▾</span></button>{openGroup === group.label && <div className="mt-2 space-y-1 pl-3"><Link href={group.href} onClick={() => setMenuOpen(false)} className="block py-2 text-xs font-semibold uppercase tracking-[0.12em] text-[hsl(42,65%,52%)]">{locale === 'fr' ? 'Voir tout' : locale === 'en' ? 'View all' : locale === 'ru' ? 'Смотреть всё' : 'عرض الكل'}</Link>{group.items.map((item) => <Link key={item.href} href={item.href} onClick={() => setMenuOpen(false)} className="block py-2 text-sm text-[hsl(220,10%,65%)]">{item.label}</Link>)}</div>}</div>)}<div className="mt-3 flex flex-wrap gap-3 border-t border-[hsl(220,35%,15%)] pt-5">{locales.map((loc) => <Link key={loc} href={getLocaleHref(loc)} onClick={() => setMenuOpen(false)} className={`text-xs uppercase tracking-[0.12em] ${loc === locale ? 'font-semibold text-[hsl(42,65%,52%)]' : 'text-[hsl(220,10%,55%)]'}`} lang={loc}>{localeNames[loc]}</Link>)}</div><Link href={linkTo('private-assessment')} data-cta-id="header_assessment" onClick={() => setMenuOpen(false)} className="mt-3 inline-flex justify-center border border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)] px-6 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[hsl(220,45%,8%)]">{t(locale, 'nav.assessment')}</Link></div></div>}
+        {menuOpen && <div className="max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-[hsl(220,35%,15%)] bg-[hsl(220,45%,8%)] px-5 py-5 xl:hidden">
+          <div className="flex flex-col gap-3">
+            <Link href={propertyInvestmentLink} onClick={() => setMenuOpen(false)} className="flex items-center justify-between border border-[#4f8d78]/65 bg-[#4f8d78]/12 px-4 py-3.5 text-sm font-bold uppercase tracking-[0.12em] text-[#b9dfd1]">
+              {propertyQuickLabel}<span className="text-[#78a998]">→</span>
+            </Link>
+            {groups.map((group) => <div key={group.label} className="border-b border-white/5 pb-3">
+              <button onClick={() => setOpenGroup(openGroup === group.label ? null : group.label)} className="flex w-full items-center justify-between py-2 text-left text-sm font-semibold uppercase tracking-[0.12em] text-[hsl(220,10%,58%)]">
+                {group.label}<span className="text-[hsl(42,65%,45%)]">▾</span>
+              </button>
+              {openGroup === group.label && <div className="mt-2 space-y-1 pl-2">
+                <Link href={group.href} onClick={() => setMenuOpen(false)} className="block py-2 text-xs font-semibold uppercase tracking-[0.12em] text-[hsl(42,65%,52%)]">{locale === 'fr' ? 'Voir tout' : locale === 'en' ? 'View all' : locale === 'ru' ? 'Смотреть всё' : 'عرض الكل'}</Link>
+                {group.items.map((item) => <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMenuOpen(false)}
+                  className={`block border-l-2 px-3 py-2.5 text-sm ${item.tone === 'property' ? 'border-[#4f8d78] bg-[#4f8d78]/10 font-semibold text-[#b9dfd1]' : item.tone === 'transfer' ? 'border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)]/[0.06] font-semibold text-[hsl(42,65%,67%)]' : 'border-transparent text-[hsl(220,10%,68%)]'}`}
+                >{item.label}</Link>)}
+              </div>}
+            </div>)}
+            <div className="mt-3 flex flex-wrap gap-3 border-t border-[hsl(220,35%,15%)] pt-5">{locales.map((loc) => <Link key={loc} href={getLocaleHref(loc)} onClick={() => setMenuOpen(false)} className={`text-xs uppercase tracking-[0.12em] ${loc === locale ? 'font-semibold text-[hsl(42,65%,52%)]' : 'text-[hsl(220,10%,55%)]'}`} lang={loc}>{localeNames[loc]}</Link>)}</div>
+            <Link href={linkTo('private-assessment')} data-cta-id="header_assessment" onClick={() => setMenuOpen(false)} className="mt-3 inline-flex justify-center border border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)] px-6 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[hsl(220,45%,8%)]">{t(locale, 'nav.assessment')}</Link>
+          </div>
+        </div>}
       </header>
       {searchOpen && <SearchOverlay locale={locale} open={searchOpen} onClose={() => setSearchOpen(false)} />}
     </>

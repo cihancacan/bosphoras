@@ -34,6 +34,7 @@ export function PartnerWorkspace() {
   const [partnerUsers, setPartnerUsers] = useState<any[]>([]);
   const [submissions, setSubmissions] = useState<any[]>([]);
   const [listings, setListings] = useState<any[]>([]);
+  const [listingInternal, setListingInternal] = useState<any[]>([]);
   const [contacts, setContacts] = useState<any[]>([]);
   const [deals, setDeals] = useState<any[]>([]);
   const [threads, setThreads] = useState<any[]>([]);
@@ -99,6 +100,8 @@ export function PartnerWorkspace() {
     }
     const {data:directory}=await supabase.from('portal_profile_cards').select('*');
     setProfileCards(directory||[]);
+    const {data:internalRows}=await supabase.from('property_listing_internal').select('*');
+    setListingInternal(internalRows||[]);
 
     const savedTheme=localStorage.getItem('bosphoras-desk-theme') || profileData.theme_preference || 'system';
     const resolved=savedTheme==='system'
@@ -315,6 +318,7 @@ export function PartnerWorkspace() {
               user={user}
               profile={profile}
               listings={listings}
+              listingInternal={listingInternal}
               submissions={submissions}
               showNew={showNewListing}
               setShowNew={setShowNewListing}
@@ -420,10 +424,17 @@ function listingToPayload(l:any) {
   };
 }
 
-function ListingsPanel({isAdmin,user,profile,listings,submissions,showNew,setShowNew,editingSubmission,setEditingSubmission,editingListing,setEditingListing,reload}:any) {
+function ListingsPanel({isAdmin,user,profile,listings,listingInternal,submissions,showNew,setShowNew,editingSubmission,setEditingSubmission,editingListing,setEditingListing,reload}:any) {
   const supabase=getPortalSupabase();
   const [listingSearch,setListingSearch]=useState('');
   const [listingFilter,setListingFilter]=useState('all');
+  const internalMap=new Map((listingInternal||[]).map((row:any)=>[row.listing_id,row]));
+
+  async function updateInternalVisibility(listingId:string,scope:string){
+    if(!isAdmin)return;
+    const {error}=await supabase.from('property_listing_internal').update({access_scope:scope,updated_at:new Date().toISOString()}).eq('listing_id',listingId);
+    if(error)alert(error.message);else reload();
+  }
 
   const visibleListings=listings.filter((listing:any)=>{
     if(listingFilter==='published'&&!listing.published)return false;
@@ -494,7 +505,51 @@ function ListingsPanel({isAdmin,user,profile,listings,submissions,showNew,setSho
       <div className="border border-[#d9e1e8] bg-white p-5">
         <div className="flex items-center justify-between gap-3"><h2 className="font-sans text-2xl">{isAdmin?'Toutes les annonces':'Biens attribués'}</h2><span className="text-xs font-semibold text-[#687685]">{visibleListings.length} affichée(s)</span></div>
         <div className="mt-5 space-y-3">
-          {visibleListings.map((l:any)=><article key={l.id} className="border border-[#e7edf2] p-4"><div className="flex items-start justify-between gap-4"><div><span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-[#315d7c]">{l.city_name||l.city} · {l.district}</span><h3 className="mt-1 font-sans text-xl">{l.title?.fr || l.external_id}</h3><p className="mt-2 text-sm text-[#687685]">{money(l.total_price,l.currency)} · {l.published?'Publié':'Non publié'} · rév. {l.revision}</p></div>{l.hero_image&&<img src={l.hero_image} alt="" className="h-16 w-20 object-cover"/>}</div><div className="mt-4 flex flex-wrap gap-2"><a href={'/espace/apercu?listing='+l.id} target="_blank" rel="noreferrer" className="border border-[#315d7c] bg-[#eef4f8] px-3 py-2 text-xs font-semibold uppercase text-[#315d7c]">Aperçu</a>{l.published&&l.slug_fr?<a href={'/immobilier-turquie/'+l.slug_fr} target="_blank" rel="noreferrer" className="border border-[#2f6d59] px-3 py-2 text-xs font-semibold uppercase text-[#2f6d59]">Page publique</a>:null}{isAdmin?<><button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase text-[#12304a]">Modifier</button><button onClick={()=>togglePublish(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">{l.published?'Dépublier':'Publier'}</button><button onClick={()=>deleteListing(l)} className="inline-flex items-center gap-1.5 border border-[#b96363] px-3 py-2 text-xs font-semibold uppercase text-[#9b4444]"><Trash2 size={13}/>Supprimer</button></>:<button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">Proposer une modification</button>}</div></article>)}
+          {visibleListings.map((l:any)=>{
+            const info=internalMap.get(l.id) as any;
+            const hasSeller=Boolean(info&&(info.seller_name||info.seller_company||info.seller_phone||info.seller_whatsapp||info.seller_email||info.seller_asking_price||info.seller_floor_price||info.internal_notes));
+            const discount=info&&Number(info.seller_asking_price)>0&&Number(info.seller_floor_price)>0
+              ? Math.max(0,((Number(info.seller_asking_price)-Number(info.seller_floor_price))/Number(info.seller_asking_price))*100)
+              : null;
+            return <article key={l.id} className="border border-[#e1e6ea] bg-white p-4">
+              <div className="flex items-start justify-between gap-4">
+                <div className="min-w-0">
+                  <span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-[#315d7c]">{l.city_name||l.city} · {l.district}</span>
+                  <h3 className="mt-1 font-sans text-xl">{l.title?.fr || l.external_id}</h3>
+                  <p className="mt-2 text-sm text-[#687685]">{money(l.total_price,l.currency)} · {l.published?'Publié':'Non publié'} · rév. {l.revision}</p>
+                </div>
+                {l.hero_image&&<img src={l.hero_image} alt="" className="h-16 w-20 shrink-0 object-cover"/>}
+              </div>
+
+              {info ? <div className="mt-4 border-l-2 border-[#4f8d78] bg-[#f5f8f6] px-4 py-3">
+                <div className="flex flex-wrap items-center justify-between gap-2">
+                  <strong className="text-xs uppercase tracking-[0.1em] text-[#2f6d59]">Informations vendeur · interne</strong>
+                  <span className="text-[0.65rem] font-semibold uppercase tracking-[0.08em] text-[#64736e]">{info.access_scope==='all_agents'?'Visible toute l’équipe':'Partenaire propriétaire + admin'}</span>
+                </div>
+                {hasSeller ? <div className="mt-3 grid gap-x-5 gap-y-2 text-sm sm:grid-cols-2">
+                  <p><span className="text-[#7b8794]">Vendeur :</span> <strong>{info.seller_name||info.seller_company||'—'}</strong></p>
+                  <p><span className="text-[#7b8794]">Contact :</span> <strong>{info.seller_whatsapp||info.seller_phone||info.seller_email||'—'}</strong></p>
+                  <p><span className="text-[#7b8794]">Prix vendeur :</span> <strong>{info.seller_asking_price?money(info.seller_asking_price,l.currency):'—'}</strong></p>
+                  <p><span className="text-[#7b8794]">Minimum :</span> <strong>{info.seller_floor_price?money(info.seller_floor_price,l.currency):'—'}{discount!==null?` · remise max ${discount.toFixed(1)} %`:''}</strong></p>
+                  {info.internal_notes?<p className="sm:col-span-2"><span className="text-[#7b8794]">Notes :</span> {info.internal_notes}</p>:null}
+                </div>:<p className="mt-2 text-sm text-[#78847f]">Aucune information vendeur renseignée pour cette annonce.</p>}
+                {isAdmin ? <label className="mt-3 flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.08em] text-[#526272]">
+                  Visibilité interne
+                  <select value={info.access_scope||'owner_only'} onChange={(e)=>updateInternalVisibility(l.id,e.target.value)} className="min-h-[34px] border border-[#c8d4ce] bg-white px-2 text-xs normal-case tracking-normal text-[#24322e]">
+                    <option value="owner_only">Partenaire propriétaire uniquement</option>
+                    <option value="all_agents">Toute l’équipe interne</option>
+                  </select>
+                  <span className="font-normal normal-case tracking-normal text-[#8a9691]">Jamais visible publiquement.</span>
+                </label>:null}
+              </div>:isAdmin?<div className="mt-4 border border-dashed border-[#d7dfdc] px-4 py-3 text-sm text-[#7b8794]">Aucune fiche vendeur interne. Ouvrez « Modifier » pour l’ajouter.</div>:null}
+
+              <div className="mt-4 flex flex-wrap gap-2">
+                <a href={'/espace/apercu?listing='+l.id} target="_blank" rel="noreferrer" className="border border-[#315d7c] bg-[#eef4f8] px-3 py-2 text-xs font-semibold uppercase text-[#315d7c]">Aperçu</a>
+                {l.published&&l.slug_fr?<a href={'/immobilier-turquie/'+l.slug_fr} target="_blank" rel="noreferrer" className="border border-[#2f6d59] px-3 py-2 text-xs font-semibold uppercase text-[#2f6d59]">Page publique</a>:null}
+                {isAdmin?<><button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase text-[#12304a]">Modifier</button><button onClick={()=>togglePublish(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">{l.published?'Dépublier':'Publier'}</button><button onClick={()=>deleteListing(l)} className="inline-flex items-center gap-1.5 border border-[#b96363] px-3 py-2 text-xs font-semibold uppercase text-[#9b4444]"><Trash2 size={13}/>Supprimer</button></>:<button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">Proposer une modification</button>}
+              </div>
+            </article>;
+          })}
           {listings.length===0&&<p className="py-6 text-sm text-[#687685]">Aucun bien attribué pour le moment.</p>}
         </div>
       </div>
