@@ -128,3 +128,62 @@
 }
 
 
+
+
+/* Partner Desk selectable dark mode. Scoped so it never alters the public site. */
+.bosphoras-desk.desk-dark {
+  color-scheme: dark;
+  background: #09131e !important;
+  color: #e8eef4 !important;
+}
+.bosphoras-desk.desk-dark main,
+.bosphoras-desk.desk-dark aside {
+  background-color: #0b1622 !important;
+  color: #e8eef4 !important;
+}
+.bosphoras-desk.desk-dark .bg-white,
+.bosphoras-desk.desk-dark [class*="bg-[#f7f9fb]"],
+.bosphoras-desk.desk-dark [class*="bg-[#f8fafb]"],
+.bosphoras-desk.desk-dark [class*="bg-[#eef4f8]"],
+.bosphoras-desk.desk-dark [class*="bg-[#edf3f7]"] {
+  background-color: #101f2d !important;
+  color: #e8eef4 !important;
+}
+.bosphoras-desk.desk-dark [class*="bg-[#f3f6f8]"] {
+  background-color: #0b1622 !important;
+}
+.bosphoras-desk.desk-dark [class*="text-[#162334]"],
+.bosphoras-desk.desk-dark [class*="text-[#12221f]"],
+.bosphoras-desk.desk-dark [class*="text-[#303a46]"],
+.bosphoras-desk.desk-dark [class*="text-[#526272]"] {
+  color: #dce6ee !important;
+}
+.bosphoras-desk.desk-dark [class*="text-[#687685]"],
+.bosphoras-desk.desk-dark [class*="text-[#7b8794]"],
+.bosphoras-desk.desk-dark [class*="text-[#8793a0]"] {
+  color: #91a5b6 !important;
+}
+.bosphoras-desk.desk-dark [class*="border-[#d9e1e8]"],
+.bosphoras-desk.desk-dark [class*="border-[#e7edf2]"],
+.bosphoras-desk.desk-dark [class*="border-[#cfd8e3]"],
+.bosphoras-desk.desk-dark [class*="border-[#e1e7ed]"] {
+  border-color: #24394b !important;
+}
+.bosphoras-desk.desk-dark input,
+.bosphoras-desk.desk-dark textarea,
+.bosphoras-desk.desk-dark select {
+  background-color: #0c1925 !important;
+  border-color: #2b4255 !important;
+  color: #eef4f8 !important;
+}
+.bosphoras-desk.desk-dark input::placeholder,
+.bosphoras-desk.desk-dark textarea::placeholder {
+  color: #6f8496 !important;
+}
+.bosphoras-desk.desk-dark option {
+  background: #0c1925;
+  color: #eef4f8;
+}
+.bosphoras-desk.desk-dark [class*="shadow-"] {
+  --tw-shadow-color: rgba(0,0,0,.35);
+}
