@@ -99,10 +99,38 @@ function BosphorasAssessmentForm({ locale, embedded }: { locale: Locale; embedde
   const started = useRef(false);
   const successHeading = useRef<HTMLHeadingElement>(null);
   const [selectedProject, setSelectedProject] = useState('');
+  const [prefillMessage,setPrefillMessage]=useState('');
   useEffect(() => {
-    const project = new URLSearchParams(window.location.search).get('project');
-    const index = projectIds.findIndex(id => id === project);
-    if (index >= 0) setSelectedProject(c.projects[index][0]);
+    const params=new URLSearchParams(window.location.search);
+    const project=params.get('project');
+    const index=projectIds.findIndex(id => id === project);
+    if(index>=0)setSelectedProject(c.projects[index][0]);
+
+    const subject=params.get('subject')||'';
+    const propertyTitle=params.get('property_title')||'';
+    const propertyLocation=params.get('property_location')||'';
+    const propertyRef=params.get('property')||'';
+    if(['property','private-viewing','global-property'].includes(subject)){
+      const propertyProject=c.projects.find((item:any)=>/immob|property|недвиж|عقار/i.test(String(item?.[0]||'')));
+      if(propertyProject)setSelectedProject(propertyProject[0]);
+      if(subject==='private-viewing'){
+        const prefilled={
+          fr:`Bonjour, je souhaite organiser une visite privée pour le bien « ${propertyTitle||propertyRef} »${propertyLocation?` situé à ${propertyLocation}`:''}. Merci de me recontacter pour convenir des disponibilités et des modalités de visite.`,
+          en:`Hello, I would like to arrange a private viewing for “${propertyTitle||propertyRef}”${propertyLocation?` in ${propertyLocation}`:''}. Please contact me to confirm availability and viewing arrangements.`,
+          ru:`Здравствуйте, я хотел(а) бы организовать частный просмотр объекта «${propertyTitle||propertyRef}»${propertyLocation?` в ${propertyLocation}`:''}. Пожалуйста, свяжитесь со мной, чтобы согласовать время и условия просмотра.`,
+          ar:`مرحباً، أود تنظيم زيارة خاصة للعقار «${propertyTitle||propertyRef}»${propertyLocation?` في ${propertyLocation}`:''}. يرجى التواصل معي لتأكيد المواعيد وترتيبات الزيارة.`,
+        }[locale];
+        setPrefillMessage(prefilled);
+      }else if(propertyTitle||propertyRef){
+        const prefilled={
+          fr:`Bonjour, je souhaite recevoir le dossier complet du bien « ${propertyTitle||propertyRef} »${propertyLocation?` situé à ${propertyLocation}`:''}. Merci de m’envoyer les informations disponibles sur le prix, les conditions de paiement, les plans, les disponibilités et les prochaines étapes.`,
+          en:`Hello, I would like to receive the full file for “${propertyTitle||propertyRef}”${propertyLocation?` in ${propertyLocation}`:''}, including price, payment terms, plans, availability and next steps.`,
+          ru:`Здравствуйте, я хотел(а) бы получить полный пакет по объекту «${propertyTitle||propertyRef}»${propertyLocation?` в ${propertyLocation}`:''}: цена, условия оплаты, планы, наличие и дальнейшие шаги.`,
+          ar:`مرحباً، أود استلام الملف الكامل للعقار «${propertyTitle||propertyRef}»${propertyLocation?` في ${propertyLocation}`:''}، بما في ذلك السعر وشروط الدفع والمخططات والتوافر والخطوات التالية.`,
+        }[locale];
+        setPrefillMessage(prefilled);
+      }
+    }
   }, [locale, c]);
 
   const [status, setStatus] = useState<Status>('idle');
@@ -122,12 +150,12 @@ function BosphorasAssessmentForm({ locale, embedded }: { locale: Locale; embedde
         <Field label={copy.email}><input required name={copy.email.replace(' *', '')} type="email" autoComplete="email" placeholder={copy.placeholders.email} className={inputClass()} /></Field>
 
       </div>
-      <label className="mt-4 block"><span className="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#5c6676]">{copy.message}</span><textarea required name={copy.message.replace(' *', '')} rows={4} placeholder={copy.placeholders.message} className="w-full border border-[#d8c7a1] bg-white px-4 py-3 text-sm leading-7 outline-none transition focus:border-[#8a6728]" /></label>
+      <label className="mt-4 block"><span className="mb-2 block text-xs font-bold uppercase tracking-[0.16em] text-[#5c6676]">{copy.message}</span><textarea required name={copy.message.replace(' *', '')} rows={5} value={prefillMessage} onChange={(event)=>setPrefillMessage(event.target.value)} placeholder={copy.placeholders.message} className="w-full border border-[#d8c7a1] bg-white px-4 py-3 text-sm leading-7 outline-none transition focus:border-[#8a6728]" /></label>
       <details className="mt-5 border border-[#d8c7a1] p-4">
         <summary className="cursor-pointer text-sm font-semibold text-[#5c6676]">{{ fr: 'Préciser mon projet (facultatif)', en: 'Add project details (optional)', ru: 'Уточнить проект (необязательно)', ar: 'تفاصيل المشروع (اختياري)' }[locale]}</summary>
         <div className="mt-4 grid gap-4 md:grid-cols-2">
         <Field label={copy.residence}><input name={copy.residence} type="text" placeholder={copy.placeholders.residence} className={inputClass()} /></Field>
-        <Field label={copy.city}><SelectField name={copy.city} options={copy.cityOptions} /></Field>
+        <Field label={copy.city}><input name={copy.city} type="text" placeholder={locale==='fr'?'Istanbul, Bodrum, Dubai…':locale==='en'?'Istanbul, Bodrum, Dubai…':locale==='ru'?'Стамбул, Бодрум, Дубай…':'إسطنبول، بودروم، دبي…'} className={inputClass()} /></Field>
         <Field label={copy.timeline}><SelectField name={copy.timeline} options={copy.timelineOptions} /></Field>
         <Field label={copy.budget}><SelectField name={copy.budget} options={copy.budgetOptions} /></Field>
         </div>

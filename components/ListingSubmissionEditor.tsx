@@ -2,7 +2,7 @@
 'use client';
 
 import type { ChangeEvent, FormEvent } from 'react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ArrowRight, ImagePlus, Save, Send, X } from 'lucide-react';
 import { getPortalSupabase } from '@/lib/portalSupabase';
 import { PropertyUrlAutofill } from '@/components/PropertyUrlAutofill';
@@ -76,6 +76,37 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
   const [busy, setBusy] = useState(false);
   const [uploading, setUploading] = useState(false);
   const [message, setMessage] = useState('');
+  const [internalInfo,setInternalInfo]=useState<any>(null);
+  const [sellerInfo,setSellerInfo]=useState({
+    sellerName:'',
+    sellerCompany:'',
+    sellerPhone:'',
+    sellerWhatsapp:'',
+    sellerEmail:'',
+    sellerAskingPrice:'',
+    sellerFloorPrice:'',
+    internalNotes:'',
+  });
+
+  useEffect(()=>{
+    if(!listingId){setInternalInfo(null);return;}
+    let active=true;
+    supabase.from('property_listing_internal').select('*').eq('listing_id',listingId).maybeSingle().then(({data})=>{
+      if(!active)return;
+      setInternalInfo(data||null);
+      if(data)setSellerInfo({
+        sellerName:data.seller_name||'',
+        sellerCompany:data.seller_company||'',
+        sellerPhone:data.seller_phone||'',
+        sellerWhatsapp:data.seller_whatsapp||'',
+        sellerEmail:data.seller_email||'',
+        sellerAskingPrice:data.seller_asking_price??'',
+        sellerFloorPrice:data.seller_floor_price??'',
+        internalNotes:data.internal_notes||'',
+      });
+    });
+    return()=>{active=false;};
+  },[listingId,supabase]);
 
   const [core, setCore] = useState({
     externalId: String(initial.externalId || ''),
@@ -203,13 +234,26 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
       sourceUrl: core.sourceUrl,
       sourceHost: core.sourceHost,
       sourceLastCheckedAt: core.sourceUrl ? new Date().toISOString() : null,
+      _internal: {
+        sellerName:sellerInfo.sellerName,
+        sellerCompany:sellerInfo.sellerCompany,
+        sellerPhone:sellerInfo.sellerPhone,
+        sellerWhatsapp:sellerInfo.sellerWhatsapp,
+        sellerEmail:sellerInfo.sellerEmail,
+        sellerAskingPrice:sellerInfo.sellerAskingPrice,
+        sellerFloorPrice:sellerInfo.sellerFloorPrice,
+        internalNotes:sellerInfo.internalNotes,
+      },
     };
   }
 
   function applyImported(prepared:any){
     setCore((current:any)=>({
       ...current,
-      city:prepared.city||current.city,
+      countryCode:prepared.countryCode||current.countryCode,
+      countryName:prepared.countryName||current.countryName,
+      cityName:prepared.cityName||prepared.city||current.cityName,
+      city:slugify(prepared.cityName||prepared.city||current.cityName||current.city),
       district:prepared.district||current.district,
       collection:prepared.collection||current.collection,
       propertyType:prepared.propertyType||current.propertyType,
@@ -335,7 +379,26 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
 
       {editable ? <PropertyUrlAutofill onPrepared={applyImported} compact /> : null}
 
-      <fieldset disabled={!editable} className="space-y-7 disabled:opacity-70">
+      {(!listingId || internalInfo) ? <section className="rounded-xl border border-[#c7d7d0] bg-[#f3f7f5] p-5">
+        <div>
+          <p className="text-[0.67rem] font-semibold uppercase tracking-[0.1em] text-[#2f6d59]">Informations vendeur · internes</p>
+          <h4 className="mt-1 text-lg font-semibold text-[#162334]">{listingId ? 'Données privées autorisées' : 'Données privées de votre produit'}</h4>
+          <p className="mt-1 text-xs leading-5 text-[#71807a]">Ces données ne sont jamais publiées. Par défaut, vous et l’administrateur pouvez les consulter. L’administrateur peut autoriser leur visibilité à tous les agents.</p>
+        </div>
+        <fieldset disabled={!editable || Boolean(listingId && internalInfo?.owner_user_id && internalInfo.owner_user_id!==userId)} className="mt-4 grid gap-4 disabled:opacity-70 md:grid-cols-2 xl:grid-cols-4">
+          <label className={label}>Nom vendeur<input value={sellerInfo.sellerName} onChange={(e)=>setSellerInfo({...sellerInfo,sellerName:e.target.value})} className={input}/></label>
+          <label className={label}>Société vendeur<input value={sellerInfo.sellerCompany} onChange={(e)=>setSellerInfo({...sellerInfo,sellerCompany:e.target.value})} className={input}/></label>
+          <label className={label}>Téléphone<input value={sellerInfo.sellerPhone} onChange={(e)=>setSellerInfo({...sellerInfo,sellerPhone:e.target.value})} className={input}/></label>
+          <label className={label}>WhatsApp<input value={sellerInfo.sellerWhatsapp} onChange={(e)=>setSellerInfo({...sellerInfo,sellerWhatsapp:e.target.value})} className={input}/></label>
+          <label className={label}>Email<input value={sellerInfo.sellerEmail} onChange={(e)=>setSellerInfo({...sellerInfo,sellerEmail:e.target.value})} className={input}/></label>
+          <label className={label}>Prix demandé vendeur<input value={sellerInfo.sellerAskingPrice} onChange={(e)=>setSellerInfo({...sellerInfo,sellerAskingPrice:e.target.value})} className={input} inputMode="decimal"/></label>
+          <label className={label}>Prix minimum accepté<input value={sellerInfo.sellerFloorPrice} onChange={(e)=>setSellerInfo({...sellerInfo,sellerFloorPrice:e.target.value})} className={input} inputMode="decimal"/></label>
+          <div className="flex items-end pb-2 text-sm text-[#315d55]">{Number(sellerInfo.sellerAskingPrice)>0&&Number(sellerInfo.sellerFloorPrice)>0?<span><strong>Remise max :</strong> {Math.max(0,((Number(sellerInfo.sellerAskingPrice)-Number(sellerInfo.sellerFloorPrice))/Number(sellerInfo.sellerAskingPrice))*100).toFixed(1)} %</span>:'—'}</div>
+          <label className={label+" md:col-span-2 xl:col-span-4"}>Notes internes<textarea rows={4} value={sellerInfo.internalNotes} onChange={(e)=>setSellerInfo({...sellerInfo,internalNotes:e.target.value})} className={textarea} placeholder="Marge de négociation, disponibilité vendeur, urgence, conditions particulières…"/></label>
+        </fieldset>
+      </section>:null}
+
+      <fieldset disabled={!editable> className="space-y-7 disabled:opacity-70">
         <div className="grid gap-4 md:grid-cols-4">
           <label className={label}>Pays<input value={core.countryName} onChange={(e)=>setCore({...core,countryName:e.target.value})} className={input} placeholder="Turkey, UAE, Georgia…"/></label>
           <label className={label}>Code pays<input value={core.countryCode} onChange={(e)=>setCore({...core,countryCode:e.target.value.toUpperCase().slice(0,3)})} className={input} placeholder="TR, AE, GE…"/></label>
@@ -346,7 +409,7 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
           <label className={label}>Transaction<select value={core.transaction} onChange={(e)=>setCore({...core,transaction:e.target.value})} className={input}><option value="sale">Vente</option><option value="rent">Location</option></select></label>
           <label className={label}>Référence<input value={core.externalId} onChange={(e)=>setCore({...core,externalId:e.target.value})} className={input}/></label>
           <label className={label}>Promoteur<input value={core.developer} onChange={(e)=>setCore({...core,developer:e.target.value})} className={input}/></label>
-          <label className={label}>Devise<select value={core.currency} onChange={(e)=>setCore({...core,currency:e.target.value})} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option></select></label>
+          <label className={label}>Devise<select value={core.currency} onChange={(e)=>setCore({...core,currency:e.target.value})} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option><option>KZT</option><option>GEL</option></select></label>
           <label className={label}>Prix total<input value={core.totalPrice} onChange={(e)=>setCore({...core,totalPrice:e.target.value})} className={input}/></label>
           <label className={label}>Capital aujourd'hui<input value={core.entryCapital} onChange={(e)=>setCore({...core,entryCapital:e.target.value})} className={input}/></label>
           <label className={label}>Surface m²<input value={core.surfaceM2} onChange={(e)=>setCore({...core,surfaceM2:e.target.value})} className={input}/></label>

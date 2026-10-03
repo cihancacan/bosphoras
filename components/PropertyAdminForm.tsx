@@ -12,6 +12,10 @@ function localized(fd: FormData, prefix: string) {
   return Object.fromEntries(locales.map((locale) => [locale, text(fd, `${prefix}_${locale}`)]));
 }
 
+function slugify(value: string) {
+  return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim().replace(/[^a-z0-9\u0400-\u04ff\u0600-\u06ff]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 110);
+}
+
 function localizedLines(fd: FormData, prefix: string) {
   const lines = Object.fromEntries(
     locales.map((locale) => [
@@ -114,7 +118,10 @@ export function PropertyAdminForm() {
       collection: text(fd, 'collection'),
       transaction: text(fd, 'transaction'),
       propertyType: text(fd, 'property_type'),
-      city: text(fd, 'city'),
+      countryCode: text(fd, 'country_code').toUpperCase(),
+      countryName: text(fd, 'country_name'),
+      city: slugify(text(fd, 'city_name')),
+      cityName: text(fd, 'city_name'),
       district: text(fd, 'district'),
       slugs: localized(fd, 'slug'),
       title: localized(fd, 'title'),
@@ -187,14 +194,9 @@ export function PropertyAdminForm() {
 
       <section className="grid gap-5 border border-[#d8c7a1] bg-white p-6 md:grid-cols-3">
         <Field label="Référence interne" name="external_id" placeholder="IST-2026-001" />
-        <label className="grid gap-2">
-          <span className="text-xs font-bold uppercase tracking-[0.12em] text-[#66707b]">Ville</span>
-          <select name="city" required className="min-h-[46px] border border-[#d8c7a1] bg-white px-3 text-sm">
-            <option value="istanbul">Istanbul</option>
-            <option value="bodrum">Bodrum</option>
-            <option value="antalya">Antalya</option>
-          </select>
-        </label>
+        <Field label="Pays" name="country_name" placeholder="Turkey, UAE, Georgia..." />
+        <Field label="Code pays" name="country_code" placeholder="TR, AE, GE..." />
+        <Field label="Ville" name="city_name" placeholder="Istanbul, Bodrum, Dubai, Batumi..." />
         <Field label="Quartier" name="district" placeholder="Nişantaşı, Yalıkavak..." />
         <label className="grid gap-2"><span className="text-xs font-bold uppercase tracking-[0.12em] text-[#66707b]">Collection</span><select name="collection" className="min-h-[46px] border border-[#d8c7a1] bg-white px-3 text-sm"><option value="selected-investment">Selected Investment</option><option value="signature">Signature Collection</option><option value="private">Private Opportunity</option></select></label>
         <label className="grid gap-2"><span className="text-xs font-bold uppercase tracking-[0.12em] text-[#66707b]">Type</span><select name="property_type" className="min-h-[46px] border border-[#d8c7a1] bg-white px-3 text-sm"><option value="apartment">Appartement</option><option value="residence">Résidence</option><option value="villa">Villa</option><option value="penthouse">Penthouse</option><option value="commercial">Commercial</option></select></label>
@@ -212,7 +214,7 @@ export function PropertyAdminForm() {
       <LocalizedBlock title="Meta description" prefix="seo_description" kind="textarea" rows={3} />
 
       <section className="grid gap-5 border border-[#d8c7a1] bg-white p-6 md:grid-cols-4">
-        <label className="grid gap-2"><span className="text-xs font-bold uppercase tracking-[0.12em] text-[#66707b]">Devise</span><select name="currency" className="min-h-[46px] border border-[#d8c7a1] bg-white px-3 text-sm"><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option></select></label>
+        <label className="grid gap-2"><span className="text-xs font-bold uppercase tracking-[0.12em] text-[#66707b]">Devise</span><select name="currency" className="min-h-[46px] border border-[#d8c7a1] bg-white px-3 text-sm"><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option><option>KZT</option><option>GEL</option></select></label>
         <Field label="Prix total" name="total_price" type="number" />
         <Field label="Capital aujourd’hui" name="entry_capital" type="number" />
         <label className="flex items-center gap-3 pt-7 text-sm"><input type="checkbox" name="price_on_request" /> Prix sur demande</label>

@@ -1,7 +1,7 @@
 // @ts-nocheck
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ArrowDown, ArrowUp, ImagePlus, Save, X } from 'lucide-react';
 import { getPortalSupabase } from '@/lib/portalSupabase';
 import { PropertyUrlAutofill } from '@/components/PropertyUrlAutofill';
@@ -19,12 +19,19 @@ function linesToLocalized(value:any) {
   return Array.from({length:max},(_,i)=>Object.fromEntries(locales.map((l)=>[l,split[l][i]||split.fr[i]||''])));
 }
 
+function slugify(value:string) {
+  return value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim().replace(/[^a-z0-9\u0400-\u04ff\u0600-\u06ff]+/g,'-').replace(/^-+|-+$/g,'').slice(0,110);
+}
+
 export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose:()=>void;reload:()=>void}) {
   const supabase=getPortalSupabase();
   const [busy,setBusy]=useState(false);
   const [message,setMessage]=useState('');
   const [draft,setDraft]=useState({
     ...listing,
+    country_code:listing.country_code||'TR',
+    country_name:listing.country_name||'Turkey',
+    city_name:listing.city_name||listing.city||'',
     title:{fr:listing.title?.fr||'',en:listing.title?.en||'',ru:listing.title?.ru||'',ar:listing.title?.ar||''},
     summary:{fr:listing.summary?.fr||'',en:listing.summary?.en||'',ru:listing.summary?.ru||'',ar:listing.summary?.ar||''},
     description:{fr:listing.description?.fr||'',en:listing.description?.en||'',ru:listing.description?.ru||'',ar:listing.description?.ar||''},
@@ -49,6 +56,37 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
     technical_notes_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.technical_notes||[],l)])),
     watchpoints_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.watchpoints||[],l)])),
   });
+  const [owners,setOwners]=useState<any[]>([]);
+  const [internal,setInternal]=useState<any>({
+    owner_user_id:listing.created_by||'',
+    seller_name:'',
+    seller_company:'',
+    seller_phone:'',
+    seller_whatsapp:'',
+    seller_email:'',
+    seller_asking_price:'',
+    seller_floor_price:'',
+    internal_notes:'',
+    access_scope:'owner_only',
+  });
+
+  useEffect(()=>{
+    let active=true;
+    (async()=>{
+      const [{data:privateRow},{data:profileRows}]=await Promise.all([
+        supabase.from('property_listing_internal').select('*').eq('listing_id',listing.id).maybeSingle(),
+        supabase.from('profiles').select('user_id,full_name,email,role').order('full_name',{ascending:true}),
+      ]);
+      if(!active)return;
+      if(privateRow)setInternal({
+        ...privateRow,
+        seller_asking_price:privateRow.seller_asking_price??'',
+        seller_floor_price:privateRow.seller_floor_price??'',
+      });
+      setOwners(profileRows||[]);
+    })();
+    return()=>{active=false;};
+  },[listing.id,supabase]);
 
   const input='min-h-[43px] w-full border border-[#cfd8e3] bg-white px-3 text-sm outline-none focus:border-[#315d7c]';
   const textarea='w-full border border-[#cfd8e3] bg-white px-3 py-3 text-sm leading-6 outline-none focus:border-[#315d7c]';
@@ -88,7 +126,10 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
     const mergeImages=Array.from(new Set([...importedImages,...(draft.images||[])]));
     setDraft((current:any)=>({
       ...current,
-      city:prepared.city||current.city,
+      country_code:prepared.countryCode||current.country_code,
+      country_name:prepared.countryName||current.country_name,
+      city_name:prepared.cityName||prepared.city||current.city_name,
+      city:slugify(prepared.cityName||prepared.city||current.city_name||current.city),
       district:prepared.district||current.district,
       collection:prepared.collection||current.collection,
       property_type:prepared.propertyType||current.property_type,
@@ -137,7 +178,10 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
         collection:draft.collection,
         transaction_type:draft.transaction_type,
         property_type:draft.property_type,
-        city:draft.city,
+        country_code:String(draft.country_code||'').trim().toUpperCase(),
+        country_name:String(draft.country_name||'').trim(),
+        city:slugify(String(draft.city_name||draft.city||'')),
+        city_name:String(draft.city_name||'').trim(),
         district:draft.district,
         slug_fr:draft.slug_fr,
         slug_en:draft.slug_en,
@@ -181,7 +225,23 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
       };
       const {error}=await supabase.from('property_listings').update(update).eq('id',listing.id);
       if(error)throw error;
-      setMessage('Annonce mise à jour.');
+      const {error:internalError}=await supabase.from('property_listing_internal').upsert({
+        listing_id:listing.id,
+        owner_user_id:internal.owner_user_id||listing.created_by||null,
+        seller_name:internal.seller_name||null,
+        seller_company:internal.seller_company||null,
+        seller_phone:internal.seller_phone||null,
+        seller_whatsapp:internal.seller_whatsapp||null,
+        seller_email:internal.seller_email||null,
+        seller_asking_price:Number(internal.seller_asking_price)||null,
+        seller_floor_price:Number(internal.seller_floor_price)||null,
+        internal_notes:internal.internal_notes||null,
+        access_scope:internal.access_scope||'owner_only',
+        created_by:internal.created_by||listing.created_by||null,
+        updated_at:new Date().toISOString(),
+      },{onConflict:'listing_id'});
+      if(internalError)throw internalError;
+      setMessage('Annonce et informations internes mises à jour.');
       await reload();
     }catch(error){setMessage(error instanceof Error?error.message:'Mise à jour impossible.');}
     finally{setBusy(false);}
@@ -203,12 +263,47 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
 
     <PropertyUrlAutofill onPrepared={applyImported} />
 
+    <section className="rounded-xl border border-[#b8c9c2] bg-[#f3f7f5] p-5">
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <p className="text-[0.68rem] font-semibold uppercase tracking-[0.11em] text-[#2f6d59]">Informations internes · non publiques</p>
+          <h3 className="mt-1 text-xl font-semibold text-[#162334]">Propriétaire de l’annonce & vendeur</h3>
+          <p className="mt-2 max-w-3xl text-xs leading-5 text-[#687685]">Ces informations sont séparées de la fiche publique. L’agent propriétaire peut les consulter ; l’administrateur peut aussi les partager avec tous les agents.</p>
+        </div>
+        <label className={label}>Accès agents
+          <select value={internal.access_scope||'owner_only'} onChange={(e)=>setInternal((v:any)=>({...v,access_scope:e.target.value}))} className={input}>
+            <option value="owner_only">Propriétaire uniquement</option>
+            <option value="all_agents">Tous les agents</option>
+          </select>
+        </label>
+      </div>
+      <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+        <label className={label}>Propriétaire interne
+          <select value={internal.owner_user_id||''} onChange={(e)=>setInternal((v:any)=>({...v,owner_user_id:e.target.value}))} className={input}>
+            <option value="">Non attribué</option>
+            {owners.map((owner:any)=><option key={owner.user_id} value={owner.user_id}>{owner.full_name||owner.email||owner.user_id} · {owner.role}</option>)}
+          </select>
+        </label>
+        <label className={label}>Nom vendeur<input value={internal.seller_name||''} onChange={(e)=>setInternal((v:any)=>({...v,seller_name:e.target.value}))} className={input}/></label>
+        <label className={label}>Société vendeur<input value={internal.seller_company||''} onChange={(e)=>setInternal((v:any)=>({...v,seller_company:e.target.value}))} className={input}/></label>
+        <label className={label}>Téléphone<input value={internal.seller_phone||''} onChange={(e)=>setInternal((v:any)=>({...v,seller_phone:e.target.value}))} className={input}/></label>
+        <label className={label}>WhatsApp<input value={internal.seller_whatsapp||''} onChange={(e)=>setInternal((v:any)=>({...v,seller_whatsapp:e.target.value}))} className={input}/></label>
+        <label className={label}>Email<input value={internal.seller_email||''} onChange={(e)=>setInternal((v:any)=>({...v,seller_email:e.target.value}))} className={input}/></label>
+        <label className={label}>Prix vendeur<input value={internal.seller_asking_price??''} onChange={(e)=>setInternal((v:any)=>({...v,seller_asking_price:e.target.value}))} className={input} inputMode="decimal"/></label>
+        <label className={label}>Prix minimum accepté<input value={internal.seller_floor_price??''} onChange={(e)=>setInternal((v:any)=>({...v,seller_floor_price:e.target.value}))} className={input} inputMode="decimal"/></label>
+      </div>
+      {Number(internal.seller_asking_price)>0 && Number(internal.seller_floor_price)>0 ? <div className="mt-4 inline-flex rounded-lg border border-[#c8d8d1] bg-white px-4 py-2 text-sm text-[#315d55]"><strong>Remise maximale indicative :</strong>&nbsp;{Math.max(0,((Number(internal.seller_asking_price)-Number(internal.seller_floor_price))/Number(internal.seller_asking_price))*100).toFixed(1)} %</div>:null}
+      <label className={label+" mt-4"}>Notes internes<textarea rows={4} value={internal.internal_notes||''} onChange={(e)=>setInternal((v:any)=>({...v,internal_notes:e.target.value}))} className={textarea} placeholder="Contexte vendeur, marge de négociation, disponibilité, conditions particulières…"/></label>
+    </section>
+
     <section className="grid gap-4 border border-[#d9e1e8] bg-white p-5 md:grid-cols-4">
-      <label className={label}>Ville<select value={draft.city} onChange={(e)=>setField('city',e.target.value)} className={input}><option value="istanbul">Istanbul</option><option value="bodrum">Bodrum</option><option value="antalya">Antalya</option></select></label>
+      <label className={label}>Pays<input value={draft.country_name||''} onChange={(e)=>setField('country_name',e.target.value)} className={input} placeholder="Turkey, UAE, Georgia…"/></label>
+      <label className={label}>Code pays<input value={draft.country_code||''} onChange={(e)=>setField('country_code',e.target.value.toUpperCase().slice(0,3))} className={input} placeholder="TR, AE, GE…"/></label>
+      <label className={label}>Ville<input value={draft.city_name||''} onChange={(e)=>{setField('city_name',e.target.value);setField('city',slugify(e.target.value));}} className={input} placeholder="Bodrum, Dubai, Batumi…"/></label>
       <label className={label}>Quartier<input value={draft.district||''} onChange={(e)=>setField('district',e.target.value)} className={input}/></label>
       <label className={label}>Type<select value={draft.property_type} onChange={(e)=>setField('property_type',e.target.value)} className={input}><option value="apartment">Appartement</option><option value="residence">Résidence</option><option value="villa">Villa</option><option value="penthouse">Penthouse</option><option value="commercial">Commercial</option></select></label>
       <label className={label}>Collection<select value={draft.collection} onChange={(e)=>setField('collection',e.target.value)} className={input}><option value="selected-investment">Selected Investment</option><option value="signature">Signature Collection</option><option value="private">Private Opportunity</option></select></label>
-      <label className={label}>Devise<select value={draft.currency} onChange={(e)=>setField('currency',e.target.value)} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option></select></label>
+      <label className={label}>Devise<select value={draft.currency} onChange={(e)=>setField('currency',e.target.value)} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option><option>KZT</option><option>GEL</option></select></label>
       <label className={label}>Prix total<input value={draft.total_price||''} onChange={(e)=>setField('total_price',e.target.value)} className={input}/></label>
       <label className={label}>Capital aujourd’hui<input value={draft.entry_capital||''} onChange={(e)=>setField('entry_capital',e.target.value)} className={input}/></label>
       <label className={label}>Surface m²<input value={draft.surface_m2||''} onChange={(e)=>setField('surface_m2',e.target.value)} className={input}/></label>

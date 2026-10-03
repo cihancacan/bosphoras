@@ -58,9 +58,11 @@ function validatePayload(payload: any) {
   if (!['selected-investment', 'signature', 'private'].includes(payload.collection)) errors.push('Invalid collection');
   if (!['sale', 'rent'].includes(payload.transaction)) errors.push('Invalid transaction');
   if (!['apartment', 'villa', 'residence', 'penthouse', 'commercial'].includes(payload.propertyType)) errors.push('Invalid propertyType');
-  if (!['istanbul', 'bodrum', 'antalya'].includes(payload.city)) errors.push('Invalid city');
+  if (!String(payload.countryCode || '').trim()) errors.push('Country code is required');
+  if (!String(payload.countryName || '').trim()) errors.push('Country name is required');
+  if (!String(payload.city || '').trim()) errors.push('City is required');
   if (!String(payload.district || '').trim()) errors.push('District is required');
-  if (!['EUR', 'USD', 'TRY', 'GBP', 'CHF', 'AED'].includes(payload.currency)) errors.push('Invalid currency');
+  if (!['EUR', 'USD', 'TRY', 'GBP', 'CHF', 'AED', 'KZT', 'GEL'].includes(payload.currency)) errors.push('Invalid currency');
 
   const slugs = payload.slugs || {};
   for (const locale of LOCALES) {
@@ -158,7 +160,10 @@ export async function POST(request: NextRequest) {
     collection: payload.collection,
     transaction_type: payload.transaction,
     property_type: payload.propertyType,
-    city: payload.city,
+    country_code: String(payload.countryCode).trim().toUpperCase(),
+    country_name: String(payload.countryName).trim(),
+    city: String(payload.city).trim(),
+    city_name: String(payload.cityName || payload.city).trim(),
     district: String(payload.district).trim(),
     slug_fr: slugValue(payload.slugs.fr),
     slug_en: slugValue(payload.slugs.en),

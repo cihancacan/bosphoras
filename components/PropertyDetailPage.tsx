@@ -30,6 +30,7 @@ import { breadcrumbSchema, organizationSchema } from '@/lib/seo';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
+import { PropertyGallery } from '@/components/PropertyGallery';
 
 interface PropertyDetailPageProps {
   locale: Locale;
@@ -244,6 +245,11 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
     ])
   ) as Record<Locale, string>;
 
+  const propertyTitle = localized(property.title, locale);
+  const propertyLocation = [property.district, cityLabel(property), property.countryName].filter(Boolean).join(', ');
+  const requestHref = `${assessmentPath}?subject=property&property=${encodeURIComponent(property.id)}&property_title=${encodeURIComponent(propertyTitle)}&property_location=${encodeURIComponent(propertyLocation)}`;
+  const visitHref = `${assessmentPath}?subject=private-viewing&property=${encodeURIComponent(property.id)}&property_title=${encodeURIComponent(propertyTitle)}&property_location=${encodeURIComponent(propertyLocation)}`;
+
   const images = (property.images?.length ? property.images : [property.heroImage].filter(Boolean)) as string[];
   const paymentPlanVisible = property.paymentPlanEnabled !== false && Boolean(property.paymentPlan?.length);
   const hasDeveloperTerms =
@@ -323,57 +329,55 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
         </div>
       </section>
 
-      <section className="bg-[#10231e] px-5 py-8 text-white md:px-8 md:py-12">
-        <div className="mx-auto grid max-w-[1540px] gap-8 lg:grid-cols-[1.28fr_0.72fr] lg:items-stretch">
-          <div className="relative min-h-[420px] overflow-hidden rounded-3xl bg-[#173029] lg:min-h-[650px]">
-            {images[0] ? <img src={images[0]} alt={property.title[locale]} className="absolute inset-0 h-full w-full object-cover" /> : null}
-            <div className="absolute inset-0 bg-gradient-to-t from-[#081512]/85 via-transparent to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-              <p className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-[#d5b886]">{property.countryName} · {cityLabel(property)} · {property.district}</p>
-              <p className="mt-2 max-w-3xl text-sm leading-6 text-[#d8e0dd]">{localized(property.summary, locale)}</p>
+      <section className="bg-[#f2f5f4] px-5 py-7 md:px-8 md:py-10">
+        <div className="mx-auto grid max-w-[1320px] gap-6 lg:grid-cols-[minmax(0,1.5fr)_410px] lg:items-start">
+          <PropertyGallery
+            images={images}
+            title={propertyTitle}
+            summary={localized(property.summary, locale)}
+            location={propertyLocation}
+          />
+
+          <aside className="rounded-[1.65rem] border border-[#d7dfdc] bg-[#fffdfa] p-6 shadow-[0_22px_70px_rgba(20,40,34,.08)] md:p-7 lg:sticky lg:top-28">
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <p className="text-[0.67rem] font-semibold uppercase tracking-[0.18em] text-[#8a6a45]">{c.investmentMemo}</p>
+              <span className="rounded-full border border-[#b9cec5] bg-[#edf5f1] px-3 py-1.5 text-[0.62rem] font-semibold uppercase tracking-[0.08em] text-[#2f6d59]">{statusLabel(property.status, c)}</span>
             </div>
-          </div>
+            <h1 className="mt-5 text-[clamp(2rem,3.2vw,3.25rem)] font-semibold leading-[1.02] tracking-[-0.045em] text-[#12221f]">{propertyTitle}</h1>
+            <p className="mt-4 text-sm leading-7 text-[#65756f]">{propertyLocation}</p>
 
-          <div className="flex flex-col rounded-3xl border border-white/10 bg-[#0c1b18] p-6 md:p-8">
-            <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-[#c9aa7a]">{c.investmentMemo}</p>
-            <h1 className="mt-4 text-4xl font-semibold leading-[1.02] tracking-[-0.045em] md:text-5xl">{localized(property.title, locale)}</h1>
-
-            <div className="mt-8 grid gap-px overflow-hidden rounded-2xl bg-white/10 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
-              <div className="bg-white/[0.04] p-5">
-                <span className="text-[0.65rem] font-semibold uppercase tracking-[0.1em] text-[#96a6a0]">{c.price}</span>
-                <strong className="mt-2 block text-2xl font-semibold text-white">{formatPropertyPrice(property, locale)}</strong>
+            <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+              <div className="rounded-xl border border-[#dde4e1] bg-white p-4">
+                <span className="text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-[#7b8985]">{c.price}</span>
+                <strong className="mt-2 block text-xl font-semibold text-[#12221f]">{formatPropertyPrice(property, locale)}</strong>
               </div>
-              <div className="bg-[#c9aa7a] p-5 text-[#10231e]">
-                <span className="text-[0.65rem] font-semibold uppercase tracking-[0.1em] text-[#5c4b32]">{c.entry}</span>
-                <strong className="mt-2 block text-2xl font-semibold">{property.entryCapital ? money(property.entryCapital, property.currency, locale) : '—'}</strong>
+              <div className="rounded-xl border border-[#dfd0ad] bg-[#f7f0e1] p-4">
+                <span className="text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-[#7b6847]">{c.entry}</span>
+                <strong className="mt-2 block text-xl font-semibold text-[#5f4c2f]">{property.entryCapital ? money(property.entryCapital, property.currency, locale) : '—'}</strong>
               </div>
             </div>
 
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
               {facts.slice(0, 4).map((fact: any) => {
                 const Icon = fact.icon;
-                return <div key={fact.label} className="border-t border-white/10 pt-4"><Icon size={16} className="text-[#c9aa7a]" /><span className="mt-3 block text-[0.62rem] font-semibold uppercase tracking-[0.1em] text-[#96a6a0]">{fact.label}</span><strong className="mt-1 block text-sm font-medium text-white">{fact.value}</strong></div>;
+                return <div key={fact.label} className="rounded-xl border border-[#e2e8e5] bg-[#f8faf9] p-4"><Icon size={15} className="text-[#2f6d59]" /><span className="mt-3 block text-[0.59rem] font-semibold uppercase tracking-[0.1em] text-[#7b8985]">{fact.label}</span><strong className="mt-1 block text-sm font-medium text-[#12221f]">{fact.value}</strong></div>;
               })}
             </div>
 
-            <div className="mt-auto pt-8">
-              <Link href={`${assessmentPath}?subject=property&property=${encodeURIComponent(property.id)}`} className="inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-lg bg-[#c9aa7a] px-5 text-sm font-semibold text-[#10231e]">
+            <div className="mt-7 border-t border-[#e0e6e3] pt-6">
+              <Link href={requestHref} className="inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-xl bg-[#173d34] px-5 text-sm font-semibold text-white transition hover:bg-[#205044]">
                 {c.request}<ArrowRight size={16}/>
               </Link>
-              <Link href={`${assessmentPath}?subject=private-viewing&property=${encodeURIComponent(property.id)}`} className="mt-3 inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-lg border border-white/20 px-5 text-sm font-semibold text-white">
+              <Link href={visitHref} className="mt-3 inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-xl border border-[#b9c9c3] bg-white px-5 text-sm font-semibold text-[#173d34] transition hover:bg-[#f1f6f3]">
                 <CalendarDays size={16}/>{c.visit}
               </Link>
             </div>
-          </div>
+          </aside>
         </div>
-
-        {images.length > 1 ? <div className="mx-auto mt-4 grid max-w-[1540px] grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-5">
-          {images.slice(1, 6).map((image, index) => <div key={image} className="aspect-[16/10] overflow-hidden rounded-xl bg-[#173029]"><img src={image} alt={`${property.title[locale]} — ${index + 2}`} className="h-full w-full object-cover" /></div>)}
-        </div> : null}
       </section>
 
       <section className="px-5 py-12 md:px-8 md:py-16">
-        <div className="mx-auto grid max-w-[1540px] gap-8 lg:grid-cols-[1fr_430px]">
+        <div className="mx-auto grid max-w-[1320px] gap-7 lg:grid-cols-[minmax(0,1fr)_390px]">
           <div className="space-y-8">
             <section className="rounded-2xl border border-[#d7dfdc] bg-white p-6 md:p-8">
               <p className="text-[0.67rem] font-semibold uppercase tracking-[0.14em] text-[#8a6a45]">{c.overview}</p>
@@ -394,10 +398,10 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
               </div>
             </section> : null}
 
-            {property.technicalNotes?.length ? <section className="rounded-2xl border border-[#d7dfdc] bg-[#0f211c] p-6 text-white md:p-8">
-              <div className="flex items-center gap-3"><Wrench size={20} className="text-[#c9aa7a]" /><h2 className="text-2xl font-semibold tracking-[-0.025em]">{c.technical}</h2></div>
+            {property.technicalNotes?.length ? <section className="rounded-2xl border border-[#cfdcd6] bg-[#eef5f1] p-6 text-[#12221f] md:p-8">
+              <div className="flex items-center gap-3"><Wrench size={20} className="text-[#2f6d59]" /><h2 className="text-2xl font-semibold tracking-[-0.025em]">{c.technical}</h2></div>
               <div className="mt-6 grid gap-4 md:grid-cols-2">
-                {property.technicalNotes.map((item, index) => <div key={index} className="border-l border-[#c9aa7a]/70 pl-4 text-sm leading-7 text-[#c8d3cf]">{localized(item, locale)}</div>)}
+                {property.technicalNotes.map((item, index) => <div key={index} className="border-l border-[#7ca596] pl-4 text-sm leading-7 text-[#566761]">{localized(item, locale)}</div>)}
               </div>
             </section> : null}
 
@@ -441,8 +445,8 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
 
             <section className="rounded-2xl border border-[#d7dfdc] bg-white p-6">
               <p className="text-xs leading-6 text-[#6d7b76]">{c.disclaimer}</p>
-              <Link href={`${assessmentPath}?subject=property&property=${encodeURIComponent(property.id)}`} className="mt-5 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-lg bg-[#10231e] px-5 text-sm font-semibold text-white">{c.request}<ArrowRight size={15}/></Link>
-              <Link href={`${assessmentPath}?subject=private-viewing&property=${encodeURIComponent(property.id)}`} className="mt-3 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-lg border border-[#10231e] px-5 text-sm font-semibold text-[#10231e]"><CalendarDays size={15}/>{c.visit}</Link>
+              <Link href={requestHref} className="mt-5 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-lg bg-[#10231e] px-5 text-sm font-semibold text-white">{c.request}<ArrowRight size={15}/></Link>
+              <Link href={visitHref} className="mt-3 inline-flex min-h-[48px] w-full items-center justify-center gap-2 rounded-lg border border-[#10231e] px-5 text-sm font-semibold text-[#10231e]"><CalendarDays size={15}/>{c.visit}</Link>
             </section>
           </aside>
         </div>
