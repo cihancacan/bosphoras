@@ -398,7 +398,7 @@ export function ListingSubmissionEditor({ userId, listingId = null, initialSubmi
         </fieldset>
       </section>:null}
 
-      <fieldset disabled={!editable> className="space-y-7 disabled:opacity-70">
+      <fieldset disabled={!editable} className="space-y-7 disabled:opacity-70">
         <div className="grid gap-4 md:grid-cols-4">
           <label className={label}>Pays<input value={core.countryName} onChange={(e)=>setCore({...core,countryName:e.target.value})} className={input} placeholder="Turkey, UAE, Georgia…"/></label>
           <label className={label}>Code pays<input value={core.countryCode} onChange={(e)=>setCore({...core,countryCode:e.target.value.toUpperCase().slice(0,3)})} className={input} placeholder="TR, AE, GE…"/></label>
