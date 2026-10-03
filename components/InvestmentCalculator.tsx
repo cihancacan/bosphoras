@@ -261,8 +261,12 @@ export function InvestmentCalculator({
       '<h2>Plan promoteur simulé</h2><div class="pay"><strong>Prix comptant : '+money(result.developerCashPrice,currency)+'</strong><br>Prix échelonné : '+money(result.developerInstallmentTotal,currency)+' · Aujourd’hui : '+money(result.developerDeposit,currency)+' · Mensualité : '+money(result.developerMonthly,currency)+' · Livraison : '+money(result.developerBalloon,currency)+'<br><small>'+(developerInterestMode==='interest_bearing'?'Surcoût échéancier saisi : '+developerMarkupPct+'%':'Échéancier indiqué sans intérêt')+' · Remise comptant saisie : '+developerCashDiscountPct+'%</small></div>'+
       '<div class="note"><strong>Note de méthode.</strong> Cette simulation compare des hypothèses saisies par l’utilisateur. Elle ne constitue ni une évaluation, ni une promesse de rendement, ni un conseil fiscal, juridique, bancaire ou financier. Les coûts, taxes, taux, loyers et conditions de paiement doivent être vérifiés sur le dossier réel.</div>'+
       '</body></html>';
-    const w = window.open('', '_blank', 'noopener,noreferrer');
-    if (!w) return;
+    const w = window.open('', '_blank');
+    if (!w) {
+      setScenarioMessage('Le navigateur a bloqué la fenêtre PDF. Autorisez les fenêtres contextuelles pour Bosphoras puis réessayez.');
+      return;
+    }
+    try { w.opener = null; } catch {}
     w.document.open();
     w.document.write(html);
     w.document.close();
