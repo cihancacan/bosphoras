@@ -13,6 +13,7 @@ import { ListingSubmissionEditor } from '@/components/ListingSubmissionEditor';
 import { AdminPropertyImporter } from '@/components/AdminPropertyImporter';
 import { AdminListingEditor } from '@/components/AdminListingEditor';
 import { ProfessionalOperationsPanel } from '@/components/ProfessionalOperationsPanel';
+import { ProfessionalCrmPanel } from '@/components/ProfessionalCrmPanel';
 import { PortalAccountPanel } from '@/components/PortalAccountPanel';
 import { PortalNotificationBridge } from '@/components/PortalNotificationBridge';
 
@@ -330,7 +331,7 @@ export function PartnerWorkspace() {
             />
           )}
           {tab==='import' && isAdmin && <Section title="Importer une opportunité" kicker="Source partenaire → Bosphoras"><AdminPropertyImporter user={user} reload={loadAll}/></Section>}
-          {tab==='crm' && <CrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} listings={listings} partnerUsers={partnerUsers} reload={loadAll}/>}
+          {tab==='crm' && <ProfessionalCrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} listings={listings} partnerUsers={partnerUsers} reload={loadAll}/>}
           {tab==='operations' && <Section title="Opérations immobilières" kicker="Visites · documents · commissions"><ProfessionalOperationsPanel
             user={user}
             profile={profile}

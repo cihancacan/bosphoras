@@ -79,7 +79,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
       { label: locale === 'fr' ? 'Sante & Assurance' : locale === 'en' ? 'Health & Insurance' : locale === 'ru' ? 'Здоровье и страхование' : 'الصحة والتأمين', href: linkTo('health-insurance'), description: locale === 'fr' ? 'Medecins, cliniques, assurances.' : locale === 'en' ? 'Doctors, clinics, insurance.' : locale === 'ru' ? 'Врачи, клиники, страхование.' : 'أطباء، عيادات وتأمين.' },
       { label: locale === 'fr' ? 'Immobilier & Investissement' : locale === 'en' ? 'Property & Investment' : locale === 'ru' ? 'Недвижимость и инвестиции' : 'العقار والاستثمار', href: propertyInvestmentLink, tone: 'property', description: locale === 'fr' ? 'Sélection multi-pays, plans de paiement et lecture investissement.' : locale === 'en' ? 'Multi-country selection, payment plans and investment review.' : locale === 'ru' ? 'Международная подборка, рассрочка и инвестиционный анализ.' : 'اختيار متعدد الدول، خطط دفع وتحليل استثماري.' },
       { label: locale === 'fr' ? 'Transfert & chauffeur à la demande' : locale === 'en' ? 'Transfer & chauffeur on demand' : locale === 'ru' ? 'Трансфер и водитель по запросу' : 'نقل وسائق عند الطلب', href: mobilityLink, tone: 'transfer', description: locale === 'fr' ? 'Réservation immédiate ou programmée · Istanbul & Turquie.' : locale === 'en' ? 'Immediate or scheduled booking · Istanbul & Turkey.' : locale === 'ru' ? 'Немедленное или запланированное бронирование · Стамбул и Турция.' : 'حجز فوري أو مسبق · إسطنبول وتركيا.' },
-      { label: locale === 'fr' ? 'Conciergerie de Luxe' : locale === 'en' ? 'Luxury Concierge' : locale === 'ru' ? 'Luxury Concierge' : 'كونسيرج فاخر', href: linkTo('luxury-concierge'), description: locale === 'fr' ? 'Transport VIP, palaces, yachts, jets, shopping.' : locale === 'en' ? 'VIP transport, palaces, yachts, jets, shopping.' : locale === 'ru' ? 'VIP transport, palaces, yachts, jets, shopping.' : 'نقل VIP، فنادق فاخرة، يخوت، طائرات وتسوق.' },
+      { label: locale === 'fr' ? 'Conciergerie de Luxe' : locale === 'en' ? 'Luxury Concierge' : locale === 'ru' ? 'Luxury Concierge' : 'كونسيرج فاخر', href: linkTo('luxury-concierge'), description: locale === 'fr' ? 'Transport privé, palaces, yachts, jets, shopping.' : locale === 'en' ? 'Private transport, palaces, yachts, jets, shopping.' : locale === 'ru' ? 'Private transport, palaces, yachts, jets, shopping.' : 'نقل خاص، فنادق فاخرة، يخوت، طائرات وتسوق.' },
     ]},
     { label: labels.destinations, href: linkTo('istanbul'), items: [
       { label: locale === 'ru' ? 'Стамбул' : locale === 'ar' ? 'إسطنبول' : 'Istanbul', href: linkTo('istanbul') },
@@ -151,9 +151,6 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
         </div>
         {menuOpen && <div className="max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-[hsl(220,35%,15%)] bg-[hsl(220,45%,8%)] px-5 py-5 xl:hidden">
           <div className="flex flex-col gap-3">
-            <Link href={propertyInvestmentLink} onClick={() => setMenuOpen(false)} className="flex items-center justify-between border border-[#4f8d78]/65 bg-[#4f8d78]/12 px-4 py-3.5 text-sm font-bold uppercase tracking-[0.12em] text-[#b9dfd1]">
-              {propertyQuickLabel}<span className="text-[#78a998]">→</span>
-            </Link>
             {groups.map((group) => <div key={group.label} className="border-b border-white/5 pb-3">
               <button onClick={() => setOpenGroup(openGroup === group.label ? null : group.label)} className="flex w-full items-center justify-between py-2 text-left text-sm font-semibold uppercase tracking-[0.12em] text-[hsl(220,10%,58%)]">
                 {group.label}<span className="text-[hsl(42,65%,45%)]">▾</span>

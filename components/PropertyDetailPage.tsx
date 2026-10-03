@@ -31,6 +31,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 import { PropertyGallery } from '@/components/PropertyGallery';
+import { PropertyLocationMap } from '@/components/PropertyLocationMap';
 
 interface PropertyDetailPageProps {
   locale: Locale;
@@ -388,6 +389,8 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
               <p className="text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-[#5c7f72]">{c.overview}</p>
               <div className="mt-6 max-w-3xl whitespace-pre-line font-serif text-[1.35rem] leading-[1.65] text-[#343a37] sm:text-[1.5rem]">{localized(property.description, locale)}</div>
             </section>
+
+            <PropertyLocationMap locale={locale} location={propertyLocation} />
 
             {property.strengths?.length ? <section className="mt-14 border-t border-[#cbc5ba] pt-7">
               <div className="grid gap-8 md:grid-cols-[220px_1fr]">

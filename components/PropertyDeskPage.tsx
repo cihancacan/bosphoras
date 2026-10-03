@@ -167,59 +167,23 @@ export async function PropertyDeskPage({ page }: PropertyDeskPageProps) {
       <StructuredData data={breadcrumbSchema([{name:homeName,url:siteUrl+homeHref},{name:breadcrumbName,url:siteUrl+hubHref}])}/>
       {page.faqs?<StructuredData data={faqSchema(page.faqs)}/>:null}
 
-      <section className="relative overflow-hidden bg-[#0c1d19] px-5 pb-9 pt-28 text-white md:px-8 md:pb-12 md:pt-32">
-        <div className="pointer-events-none absolute inset-0" style={{background:'radial-gradient(circle at 78% 12%, rgba(204,174,124,.17), transparent 30%), radial-gradient(circle at 8% 85%, rgba(61,111,92,.18), transparent 32%)'}}/>
-        <div className="relative mx-auto max-w-[1540px]">
-          <div className="grid gap-8 xl:grid-cols-[0.92fr_1.08fr] xl:items-stretch">
-            <div className="flex flex-col justify-between py-5 xl:py-12">
-              <div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-[#d5b67e]/30 bg-[#d5b67e]/[0.07] px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[#d8bc8a]">
-                  <ShieldCheck size={14}/>{c.label}
-                </div>
-                <h1 className="mt-6 max-w-[850px] text-[clamp(2.8rem,6vw,6.2rem)] font-semibold leading-[0.92] tracking-[-0.065em]">{c.heroTitle}</h1>
-                <p className="mt-7 max-w-2xl text-base leading-8 text-[#bfccc7] md:text-lg">{c.heroText}</p>
-                <div className="mt-8 flex flex-wrap gap-3">
-                  <a href="#selection" className="inline-flex min-h-[50px] items-center gap-2 rounded-xl bg-[#d2b27c] px-6 text-sm font-semibold text-[#0c1d19] transition hover:bg-[#e0c796]">{c.browse}<ArrowRight size={16}/></a>
-                  <Link href={assessmentHref} className="inline-flex min-h-[50px] items-center gap-2 rounded-xl border border-white/15 bg-white/[0.03] px-6 text-sm font-semibold text-white transition hover:bg-white/[0.08]">{c.private}<ArrowRight size={16}/></Link>
-                </div>
-              </div>
-
-              <div className="mt-10 grid max-w-2xl grid-cols-3 gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10">
-                <div className="bg-[#102620]/95 p-4 md:p-5"><span className="block text-[0.6rem] font-semibold uppercase tracking-[0.1em] text-[#8ea49c]">{c.live}</span><strong className="mt-2 block text-2xl md:text-3xl">{properties.length}</strong></div>
-                <div className="bg-[#102620]/95 p-4 md:p-5"><span className="block text-[0.6rem] font-semibold uppercase tracking-[0.1em] text-[#8ea49c]">{c.markets}</span><strong className="mt-2 block text-2xl md:text-3xl">{markets.size||3}</strong></div>
-                <div className="bg-[#102620]/95 p-4 md:p-5"><span className="block text-[0.6rem] font-semibold uppercase tracking-[0.1em] text-[#8ea49c]">{c.entry}</span><strong className="mt-2 block text-lg md:text-2xl">{entry?new Intl.NumberFormat(locale==='fr'?'fr-FR':'en-GB',{style:'currency',currency:featured?.currency||'EUR',maximumFractionDigits:0,notation:'compact'}).format(entry):'—'}</strong></div>
-              </div>
+      <section className="border-b border-[#d8d3c9] bg-[#fbfaf6] px-4 pb-6 pt-24 sm:px-6 sm:pb-7 sm:pt-28 lg:px-8">
+        <div className="mx-auto max-w-[1280px]">
+          <div className="grid gap-5 lg:grid-cols-[1fr_auto] lg:items-end">
+            <div>
+              <div className="flex flex-wrap items-center gap-3 text-[0.65rem] font-semibold uppercase tracking-[0.15em] text-[#58786d]"><span>{c.label}</span><span className="h-px w-10 bg-[#9baa9f]"/><span>{properties.length} {c.live.toLowerCase()}</span></div>
+              <h1 className="mt-4 max-w-5xl font-serif text-[clamp(2.55rem,5vw,5rem)] font-normal leading-[0.98] tracking-[-0.05em] text-[#17201d]">{c.heroTitle}</h1>
+              <p className="mt-4 max-w-3xl text-sm leading-7 text-[#68716c] sm:text-base">{c.heroText}</p>
             </div>
-
-            <Link href={featuredHref} className="group relative min-h-[470px] overflow-hidden rounded-[2rem] border border-white/10 bg-[#19322b] shadow-[0_35px_120px_rgba(0,0,0,.32)] md:min-h-[610px]">
-              {featured?.heroImage||featured?.images?.[0]?<img src={featured.heroImage||featured.images[0]} alt={featured.title[locale]} className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.025]"/>:<div className="absolute inset-0 flex items-center justify-center text-xs uppercase tracking-[0.2em] text-[#8fa49d]">Bosphoras Property Desk</div>}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#07120f] via-[#07120f]/35 to-transparent"/>
-              <div className="absolute left-5 top-5 rounded-full border border-white/20 bg-[#07120f]/70 px-4 py-2 text-[0.65rem] font-semibold uppercase tracking-[0.13em] backdrop-blur-md">{c.featured}</div>
-              <div className="absolute inset-x-0 bottom-0 p-6 md:p-8 lg:p-10">
-                {featured?<>
-                  <div className="flex flex-wrap items-center gap-2 text-[0.67rem] font-semibold uppercase tracking-[0.12em] text-[#d6bd91]"><MapPin size={13}/>{featured.district} · {featured.cityName}</div>
-                  <h2 className="mt-3 max-w-3xl text-3xl font-semibold leading-tight tracking-[-0.04em] md:text-5xl">{featured.title[locale]}</h2>
-                  <p className="mt-4 line-clamp-2 max-w-2xl text-sm leading-6 text-[#c7d1cd] md:text-base">{featured.summary[locale]}</p>
-                  <div className="mt-6 flex flex-wrap items-center gap-3">
-                    <span className="rounded-xl bg-white px-4 py-3 text-sm font-semibold text-[#10211d]">{formatPropertyPrice(featured,locale)}</span>
-                    {featured.entryCapital?<span className="rounded-xl border border-white/15 bg-black/20 px-4 py-3 text-sm font-semibold">{formatEntryCapital(featured,locale)}</span>:null}
-                    {paymentBadge(featured,locale)?<span className="rounded-xl border border-[#d2b27c]/40 bg-[#d2b27c]/10 px-4 py-3 text-sm font-semibold text-[#e1c897]">{paymentBadge(featured,locale)}</span>:null}
-                  </div>
-                  <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white">{c.featuredCta}<ArrowRight size={16} className="transition group-hover:translate-x-1"/></span>
-                </>:<><h2 className="text-3xl font-semibold">{c.noFeatured}</h2><span className="mt-5 inline-flex items-center gap-2 text-sm">{c.private}<ArrowRight size={15}/></span></>}
-              </div>
-            </Link>
+            <div className="flex flex-wrap gap-2 lg:justify-end">
+              <Link href={assessmentHref} className="inline-flex min-h-[46px] items-center gap-2 border border-[#244b3f] px-5 text-sm font-semibold text-[#244b3f]">{c.private}<ArrowRight size={14}/></Link>
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section className="border-b border-[#dbe2de] bg-white px-5 md:px-8">
-        <div className="mx-auto grid max-w-[1540px] gap-px bg-[#dbe2de] md:grid-cols-3">
-          {[
-            [ShieldCheck,c.verified,c.verifiedText],
-            [WalletCards,c.payment,c.paymentText],
-            [Building2,c.selection,c.selectionText],
-          ].map(([Icon,title,text])=>{const I=Icon as typeof ShieldCheck;return <article key={title as string} className="bg-white px-5 py-7 md:px-7"><I size={19} className="text-[#87683c]"/><h2 className="mt-4 text-base font-semibold tracking-[-0.02em]">{title as string}</h2><p className="mt-2 text-sm leading-6 text-[#66746f]">{text as string}</p></article>;})}
+          <div className="mt-6 flex flex-wrap gap-x-7 gap-y-2 border-t border-[#e0dbd1] pt-4 text-xs text-[#717973]">
+            <span><strong className="text-[#28312e]">{properties.length}</strong> {c.live.toLowerCase()}</span>
+            <span><strong className="text-[#28312e]">{markets.size||1}</strong> {c.markets.toLowerCase()}</span>
+            {entry?<span>{c.entry}: <strong className="text-[#315f52]">{new Intl.NumberFormat(locale==='fr'?'fr-FR':'en-GB',{style:'currency',currency:featured?.currency||'EUR',maximumFractionDigits:0,notation:'compact'}).format(entry)}</strong></span>:null}
+          </div>
         </div>
       </section>
 
