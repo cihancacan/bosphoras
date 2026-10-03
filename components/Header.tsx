@@ -87,6 +87,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
       { label: locale === 'ru' ? 'Анталья' : locale === 'ar' ? 'أنطاليا' : 'Antalya', href: linkTo('antalya') },
     ]},
     { label: labels.privateAccess, href: linkTo('private-club'), items: [
+      { label: locale === 'fr' ? 'Cercle prive' : locale === 'en' ? 'Private Access Club' : locale === 'ru' ? 'Частный клуб' : 'النادي الخاص', href: linkTo('private-club') },
       { label: 'The Peninsula Istanbul', href: peninsulaLink, description: locale === 'fr' ? 'Adresse membre Bosphoras Premium a Istanbul.' : locale === 'en' ? 'Bosphoras Premium member address in Istanbul.' : locale === 'ru' ? 'Адрес участника Bosphoras Premium в Стамбуле.' : 'عنوان عضو Bosphoras Premium في إسطنبول.' },
       { label: locale === 'fr' ? 'Demande d adhesion' : locale === 'en' ? 'Membership application' : locale === 'ru' ? 'Заявка на членство' : 'طلب عضوية', href: linkTo('membership-application') },
       { label: locale === 'fr' ? 'Diagnostic prive' : locale === 'en' ? 'Private Assessment' : locale === 'ru' ? 'Частная консультация' : 'تقييم خاص', href: linkTo('private-assessment') },
@@ -160,7 +161,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
                   key={item.href}
                   href={item.href}
                   onClick={() => setMenuOpen(false)}
-                  className={`block border-l-2 px-3 py-2.5 text-sm ${item.tone === 'property' ? 'border border-[#4f8d78]/60 bg-[#4f8d78]/10 font-semibold text-[#b9dfd1]' : item.tone === 'transfer' ? 'border border-[hsl(42,65%,52%)]/45 bg-[hsl(42,65%,52%)]/[0.08] font-semibold text-[hsl(42,65%,67%)]' : 'border border-transparent text-[hsl(220,10%,68%)]'}`}
+                  className={`block border-l-2 px-3 py-2.5 text-sm ${item.tone === 'property' ? 'border-[#4f8d78] bg-[#4f8d78]/10 font-semibold text-[#b9dfd1]' : item.tone === 'transfer' ? 'border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)]/[0.06] font-semibold text-[hsl(42,65%,67%)]' : 'border-transparent text-[hsl(220,10%,68%)]'}`}
                 >{item.label}</Link>)}
               </div>}
             </div>)}
