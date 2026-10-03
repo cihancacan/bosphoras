@@ -14,6 +14,8 @@ import { AdminPropertyImporter } from '@/components/AdminPropertyImporter';
 import { AdminListingEditor } from '@/components/AdminListingEditor';
 import { ProfessionalOperationsPanel } from '@/components/ProfessionalOperationsPanel';
 import { ProfessionalCrmPanel } from '@/components/ProfessionalCrmPanel';
+import { ProfessionalListingsPanel } from '@/components/ProfessionalListingsPanel';
+import { BackofficeLocaleBridge } from '@/components/BackofficeLocaleBridge';
 import { PortalAccountPanel } from '@/components/PortalAccountPanel';
 import { PortalNotificationBridge } from '@/components/PortalNotificationBridge';
 
@@ -48,6 +50,7 @@ export function PartnerWorkspace() {
   const [showNewListing, setShowNewListing] = useState(false);
   const [profileCards, setProfileCards] = useState<any[]>([]);
   const [deskTheme, setDeskTheme] = useState<'light'|'dark'>('light');
+  const [deskLocale, setDeskLocale] = useState<'fr'|'en'|'ru'>('fr');
 
   const isAdmin = profile?.role === 'admin';
 
@@ -109,6 +112,8 @@ export function PartnerWorkspace() {
       ? (window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')
       : savedTheme;
     setDeskTheme(resolved==='dark'?'dark':'light');
+    const savedLocale=localStorage.getItem('bosphoras-desk-locale') || profileData.preferred_language || 'fr';
+    setDeskLocale(savedLocale==='en'||savedLocale==='ru'?savedLocale:'fr');
 
     const initialThread = (results[4].data || [])[0]?.id || null;
     if (initialThread && !selectedThread) setSelectedThread(initialThread);
@@ -212,6 +217,12 @@ export function PartnerWorkspace() {
     if(user?.id) await supabase.from('profiles').update({theme_preference:next}).eq('user_id',user.id);
   }
 
+  async function changeDeskLocale(next:'fr'|'en'|'ru'){
+    setDeskLocale(next);
+    localStorage.setItem('bosphoras-desk-locale',next);
+    if(user?.id) await supabase.from('profiles').update({preferred_language:next}).eq('user_id',user.id);
+  }
+
   const unread = notifications.filter(n => !n.read_at).length;
   const chatUnread = notifications.filter(n => !n.read_at && n.notification_type === 'chat_message').length;
   const listingReviewUnread = notifications.filter(n => !n.read_at && n.notification_type === 'listing_review').length;
@@ -258,6 +269,7 @@ export function PartnerWorkspace() {
 
   return (
     <div className={`bosphoras-desk ${deskTheme==='dark'?'desk-dark':'desk-light'} min-h-screen bg-[#f3f6f8] text-[#162334] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe_UI,sans-serif]`}>
+      <BackofficeLocaleBridge locale={deskLocale}/>
       <PortalNotificationBridge userId={user?.id}/>
       <header className="sticky top-0 z-40 border-b border-[#26394a] bg-[#0d1c2b] text-white">
         <div className="mx-auto flex max-w-[1700px] items-center justify-between gap-4 px-4 py-3 md:px-6">
@@ -269,6 +281,9 @@ export function PartnerWorkspace() {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            <select value={deskLocale} onChange={(e)=>changeDeskLocale(e.target.value as 'fr'|'en'|'ru')} aria-label="Langue du back-office" className="h-9 border border-white/15 bg-[#102638] px-2 text-[0.68rem] font-semibold uppercase tracking-[0.08em] text-[#c4d2dd] outline-none">
+              <option value="fr">FR</option><option value="en">EN</option><option value="ru">RU</option>
+            </select>
             <button onClick={toggleDeskTheme} className="p-2 text-[#b9d0e0] hover:text-white" aria-label={deskTheme==='dark'?'Passer en mode clair':'Passer en mode sombre'}>{deskTheme==='dark'?<Sun size={18}/>:<Moon size={18}/>}</button>
             <button onClick={()=>openTab('dashboard')} className="relative p-2 text-[#b9d0e0]"><Bell size={18}/>{unread>0&&<span className="absolute right-0 top-0 h-4 min-w-4 rounded-full bg-[#c76055] px-1 text-[0.6rem] leading-4 text-white">{unread}</span>}</button>
             <div className="hidden text-right text-xs md:block"><strong className="block text-white">{profile.full_name || profile.email}</strong><span className="text-[#9eb0bf]">{profile.role}</span></div>
@@ -314,7 +329,8 @@ export function PartnerWorkspace() {
             />
           )}
           {tab==='listings' && (
-            <ListingsPanel
+            <ProfessionalListingsPanel
+              locale={deskLocale}
               isAdmin={isAdmin}
               user={user}
               profile={profile}
