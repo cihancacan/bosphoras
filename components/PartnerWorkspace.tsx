@@ -4,8 +4,8 @@
 import { FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import {
   Bell, Building2, Calculator, CheckCircle2, ChevronRight, CircleDollarSign, ClipboardCheck,
-  Contact, KeyRound, LayoutDashboard, Link2, LogOut, MessageCircle, Plus, RefreshCw, Send,
-  ShieldCheck, Trash2, UserRound, Users, XCircle,
+  Archive, BellRing, Contact, Eye, KeyRound, LayoutDashboard, Link2, LogOut, MailOpen, MessageCircle,
+  Moon, Plus, RefreshCw, Search, Send, ShieldCheck, Sun, Trash2, UserRound, Users, XCircle,
 } from 'lucide-react';
 import { createIsolatedPortalSupabase, getPortalSupabase } from '@/lib/portalSupabase';
 import { InvestmentCalculator } from '@/components/InvestmentCalculator';
@@ -43,6 +43,8 @@ export function PartnerWorkspace() {
   const [editingSubmission, setEditingSubmission] = useState<any>(null);
   const [editingListing, setEditingListing] = useState<any>(null);
   const [showNewListing, setShowNewListing] = useState(false);
+  const [theme, setTheme] = useState<'light'|'dark'>('light');
+  const [notificationPrompt, setNotificationPrompt] = useState(false);
 
   const isAdmin = profile?.role === 'admin';
 
@@ -65,10 +67,11 @@ export function PartnerWorkspace() {
       return;
     }
     setProfile(profileData);
+    setTheme(profileData.theme_preference === 'dark' ? 'dark' : 'light');
 
     const requests: any[] = [
       supabase.from('property_listing_submissions').select('*').order('created_at', { ascending: false }),
-      supabase.from('property_listings').select('*').order('updated_at', { ascending: false }),
+      supabase.from('property_listings').select('*').is('deleted_at', null).order('updated_at', { ascending: false }),
       supabase.from('crm_contacts').select('*').order('updated_at', { ascending: false }),
       supabase.from('crm_deals').select('*').order('updated_at', { ascending: false }),
       supabase.from('chat_threads').select('*').order('last_message_at', { ascending: false, nullsFirst: false }),
@@ -105,6 +108,36 @@ export function PartnerWorkspace() {
   }, [loadAll]);
 
   useEffect(() => {
+    if (typeof window === 'undefined' || !user?.id) return;
+    if ('Notification' in window && Notification.permission === 'default') setNotificationPrompt(true);
+  }, [user?.id]);
+
+  async function enableDesktopNotifications(){
+    if (!('Notification' in window)) { setNotificationPrompt(false); return; }
+    const permission=await Notification.requestPermission();
+    setNotificationPrompt(false);
+    if(permission==='granted'){
+      new Notification('Bosphoras Partner Desk',{body:'Les notifications bureau sont activées.'});
+      await supabase.from('profiles').update({
+        notification_preferences:{...(profile?.notification_preferences||{}),desktop:true},
+        updated_at:new Date().toISOString(),
+      }).eq('user_id',user.id);
+    }
+  }
+
+  async function setWorkspaceTheme(next:'light'|'dark'){
+    setTheme(next);
+    if(user?.id) await supabase.from('profiles').update({theme_preference:next,updated_at:new Date().toISOString()}).eq('user_id',user.id);
+  }
+
+  async function clearReadNotifications(){
+    if(!user?.id) return;
+    const {error}=await supabase.from('notifications').delete().eq('user_id',user.id).not('read_at','is',null);
+    if(error) alert(error.message);
+    else setNotifications((current)=>current.filter((item)=>!item.read_at));
+  }
+
+  useEffect(() => {
     if (!selectedThread) {
       setMessages([]);
       return;
@@ -125,6 +158,9 @@ export function PartnerWorkspace() {
       .channel(`portal-alerts-${user.id}`)
       .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'notifications', filter: `user_id=eq.${user.id}` }, (payload) => {
         setNotifications((current) => [payload.new, ...current.filter((item) => item.id !== payload.new.id)]);
+        if(typeof window!=='undefined' && 'Notification' in window && Notification.permission==='granted'){
+          new Notification(payload.new.title||'Bosphoras',{body:payload.new.body||'',tag:payload.new.id});
+        }
       })
       .on('postgres_changes', { event: '*', schema: 'public', table: 'property_listing_submissions' }, () => {
         if (profile?.role === 'admin') loadAll();
@@ -222,7 +258,12 @@ export function PartnerWorkspace() {
   }
 
   return (
-    <div className="min-h-screen bg-[#f3f6f8] text-[#162334] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe_UI,sans-serif]">
+    <div className={`min-h-screen [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe_UI,sans-serif] ${theme==='dark'?'bo-dark bg-[#0b131d] text-[#e5edf4]':'bg-[#f3f6f8] text-[#162334]'}`}>
+      <style jsx global>{`
+        .bo-dark .bg-white{background:#111e2a!important}.bo-dark .bg-\\[\\#f3f6f8\\]{background:#0b131d!important}.bo-dark .bg-\\[\\#f7f9fb\\]{background:#152331!important}
+        .bo-dark .text-\\[\\#162334\\]{color:#e7eef5!important}.bo-dark .text-\\[\\#526272\\],.bo-dark .text-\\[\\#687685\\],.bo-dark .text-\\[\\#7b8794\\],.bo-dark .text-\\[\\#7b8490\\]{color:#a9b8c6!important}
+        .bo-dark input,.bo-dark select,.bo-dark textarea{background:#0e1924!important;color:#e7eef5!important;border-color:#314354!important}.bo-dark .border-\\[\\#d9e1e8\\],.bo-dark .border-\\[\\#e7edf2\\],.bo-dark .border-\\[\\#cfd8e3\\]{border-color:#2b3c4c!important}
+      `}</style>
       <header className="sticky top-0 z-40 border-b border-[#26394a] bg-[#0d1c2b] text-white">
         <div className="mx-auto flex max-w-[1700px] items-center justify-between gap-4 px-4 py-3 md:px-6">
           <div className="flex items-center gap-3">
@@ -233,6 +274,7 @@ export function PartnerWorkspace() {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            <button onClick={()=>setWorkspaceTheme(theme==='dark'?'light':'dark')} className="p-2 text-[#b9d0e0]" aria-label="Changer le thème">{theme==='dark'?<Sun size={18}/>:<Moon size={18}/>}</button>
             <button onClick={()=>openTab('dashboard')} className="relative p-2 text-[#b9d0e0]"><Bell size={18}/>{unread>0&&<span className="absolute right-0 top-0 h-4 min-w-4 rounded-full bg-[#c76055] px-1 text-[0.6rem] leading-4 text-white">{unread}</span>}</button>
             <div className="hidden text-right text-xs md:block"><strong className="block text-white">{profile.full_name || profile.email}</strong><span className="text-[#9eb0bf]">{profile.role}</span></div>
             <button onClick={logout} className="p-2 text-[#9eb0bf] hover:text-white" aria-label="Se déconnecter"><LogOut size={18}/></button>
@@ -273,6 +315,7 @@ export function PartnerWorkspace() {
               activeDeals={activeDeals}
               notifications={notifications}
               setTab={setTab}
+              clearReadNotifications={clearReadNotifications}
             />
           )}
           {tab==='listings' && (
@@ -314,10 +357,14 @@ export function PartnerWorkspace() {
             onSaved={loadAll}
           /></Section>}
           {tab==='partners' && isAdmin && <PartnersPanel partners={partners} partnerUsers={partnerUsers} reload={loadAll}/>}
-          {tab==='account' && <Section title="Mon compte" kicker="Accès & sécurité"><PortalAccountPanel user={user} profile={profile} partner={partners.find((p:any)=>p.id===profile?.partner_id)} /></Section>}
+          {tab==='account' && <Section title="Mon compte" kicker="Accès & sécurité"><PortalAccountPanel user={user} profile={profile} partner={partners.find((p:any)=>p.id===profile?.partner_id)} onSaved={loadAll} /></Section>}
           {tab==='approvals' && isAdmin && <ApprovalsPanel submissions={submissions} reload={loadAll}/>}
         </main>
       </div>
+      {notificationPrompt?<div className="fixed bottom-5 right-5 z-[100] w-[min(390px,calc(100vw-40px))] border border-[#315d7c] bg-[#0d1c2b] p-5 text-white shadow-2xl">
+        <div className="flex gap-3"><BellRing size={20} className="mt-0.5 text-[#b9d0e0]"/><div><strong className="block text-sm">Activer les notifications Bosphoras ?</strong><p className="mt-2 text-xs leading-5 text-[#b9c0ca]">Vous recevrez les nouveaux messages, validations et alertes importantes lorsque le Partner Desk est ouvert.</p></div></div>
+        <div className="mt-4 flex gap-2"><button onClick={enableDesktopNotifications} className="bg-white px-4 py-2 text-xs font-semibold text-[#12304a]">Oui, activer</button><button onClick={()=>setNotificationPrompt(false)} className="border border-white/20 px-4 py-2 text-xs font-semibold">Non</button></div>
+      </div>:null}
     </div>
   );
 }
@@ -326,7 +373,7 @@ function Section({title,kicker,children,action}:{title:string;kicker?:string;chi
   return <section><div className="mb-7 flex flex-wrap items-end justify-between gap-4"><div>{kicker&&<p className="text-xs font-bold uppercase tracking-[0.24em] text-[#315d7c]">{kicker}</p>}<h1 className="mt-2 font-sans text-4xl tracking-[-0.035em] md:text-5xl">{title}</h1></div>{action}</div>{children}</section>;
 }
 
-function Dashboard({isAdmin,partners,listings,contacts,deals,pipeline,pendingApprovals,activeDeals,notifications,setTab}:any) {
+function Dashboard({isAdmin,partners,listings,contacts,deals,pipeline,pendingApprovals,activeDeals,notifications,setTab,clearReadNotifications}:any) {
   const cards: Array<[string, string | number, any]> = [
     [isAdmin?'Partenaires actifs':'Biens attribués', isAdmin?partners.filter((p:any)=>p.status==='active').length:listings.length, Users],
     ['Contacts CRM', contacts.length, Contact],
@@ -348,7 +395,7 @@ function Dashboard({isAdmin,partners,listings,contacts,deals,pipeline,pendingApp
           </div>
         </div>
         <div className="border border-[#d9e1e8] bg-[#12304a] p-6 text-white">
-          <h2 className="font-sans text-3xl">Notifications</h2>
+          <div className="flex items-center justify-between gap-3"><h2 className="font-sans text-3xl">Notifications</h2>{notifications.some((n:any)=>n.read_at)?<button onClick={clearReadNotifications} className="text-[0.65rem] font-semibold uppercase tracking-[0.08em] text-[#b9d0e0]">Effacer les lues</button>:null}</div>
           <div className="mt-5 divide-y divide-white/10">
             {notifications.slice(0,6).map((n:any)=><div key={n.id} className="py-4"><strong className="block text-sm">{n.title}</strong><p className="mt-1 text-xs leading-5 text-[#a9bfd0]">{n.body}</p></div>)}
             {notifications.length===0&&<p className="py-6 text-sm text-[#a9bfd0]">Aucune notification.</p>}
