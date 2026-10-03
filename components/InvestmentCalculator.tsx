@@ -261,13 +261,35 @@ export function InvestmentCalculator({
       '<h2>Plan promoteur simulé</h2><div class="pay"><strong>Prix comptant : '+money(result.developerCashPrice,currency)+'</strong><br>Prix échelonné : '+money(result.developerInstallmentTotal,currency)+' · Aujourd’hui : '+money(result.developerDeposit,currency)+' · Mensualité : '+money(result.developerMonthly,currency)+' · Livraison : '+money(result.developerBalloon,currency)+'<br><small>'+(developerInterestMode==='interest_bearing'?'Surcoût échéancier saisi : '+developerMarkupPct+'%':'Échéancier indiqué sans intérêt')+' · Remise comptant saisie : '+developerCashDiscountPct+'%</small></div>'+
       '<div class="note"><strong>Note de méthode.</strong> Cette simulation compare des hypothèses saisies par l’utilisateur. Elle ne constitue ni une évaluation, ni une promesse de rendement, ni un conseil fiscal, juridique, bancaire ou financier. Les coûts, taxes, taux, loyers et conditions de paiement doivent être vérifiés sur le dossier réel.</div>'+
       '</body></html>';
-    const w = window.open('', '_blank', 'noopener,noreferrer');
-    if (!w) return;
-    w.document.open();
-    w.document.write(html);
-    w.document.close();
-    w.focus();
-    window.setTimeout(()=>w.print(),250);
+    const frame = document.createElement('iframe');
+    frame.setAttribute('title', 'Export PDF Bosphoras');
+    frame.style.position = 'fixed';
+    frame.style.right = '0';
+    frame.style.bottom = '0';
+    frame.style.width = '1px';
+    frame.style.height = '1px';
+    frame.style.border = '0';
+    frame.style.opacity = '0';
+    document.body.appendChild(frame);
+
+    const reportDocument = frame.contentWindow?.document;
+    if (!reportDocument) {
+      frame.remove();
+      return;
+    }
+
+    reportDocument.open();
+    reportDocument.write(html);
+    reportDocument.close();
+
+    window.setTimeout(() => {
+      try {
+        frame.contentWindow?.focus();
+        frame.contentWindow?.print();
+      } finally {
+        window.setTimeout(() => frame.remove(), 1200);
+      }
+    }, 350);
   }
 
   const metrics = [
@@ -359,8 +381,8 @@ export function InvestmentCalculator({
           <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">À la livraison</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerBalloon, currency)}</strong><small className="mt-1 block text-[#7b8794]">(solde final simulé)</small></div>
         </div>
         <div className="mt-5 flex flex-wrap items-center gap-3">
-          <button type="button" onClick={printReport} className="inline-flex min-h-[44px] items-center gap-2 border border-[#12304a] bg-white px-5 text-sm font-semibold text-[#12304a]"><FileDown size={16}/>PDF / Imprimer</button>
-          <span className="text-xs leading-5 text-[#687685]">Le bouton ouvre un rapport A4 optimisé pour impression ; choisissez « Enregistrer au format PDF » dans la boîte d’impression pour le partager.</span>
+          <button type="button" onClick={printReport} className="inline-flex min-h-[44px] items-center gap-2 border border-[#12304a] bg-white px-5 text-sm font-semibold text-[#12304a]"><FileDown size={16}/>Exporter en PDF</button>
+          <span className="text-xs leading-5 text-[#687685]">Le rapport A4 s’ouvre directement dans la boîte d’impression du navigateur. Choisissez « Enregistrer au format PDF » : aucun nouvel onglet n’est nécessaire.</span>
         </div>
       </section>
 
