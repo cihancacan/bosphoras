@@ -12,7 +12,7 @@ function urlBase64ToUint8Array(base64String: string) {
 }
 
 export function PortalNotificationBridge({ userId }: { userId?: string | null }) {
-  const supabase = getPortalSupabase();
+  const supabase: any = getPortalSupabase();
   const [permissionPrompt, setPermissionPrompt] = useState(false);
   const [toast, setToast] = useState<any>(null);
 
