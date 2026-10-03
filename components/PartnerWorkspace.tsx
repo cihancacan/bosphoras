@@ -3,9 +3,9 @@
 
 import { FormEvent, useCallback, useEffect, useMemo, useState } from 'react';
 import {
-  Bell, Building2, Calculator, CheckCircle2, ChevronRight, CircleDollarSign, ClipboardCheck,
-  Contact, KeyRound, LayoutDashboard, Link2, LogOut, MessageCircle, Plus, RefreshCw, Send,
-  ShieldCheck, Trash2, UserRound, Users, XCircle,
+  Archive, Bell, Building2, Calculator, CheckCircle2, CheckCheck, ChevronRight, CircleDollarSign, ClipboardCheck,
+  Contact, KeyRound, LayoutDashboard, Link2, LogOut, MessageCircle, Moon, Plus, RefreshCw, Search, Send,
+  ShieldCheck, Sun, Trash2, UserRound, Users, XCircle,
 } from 'lucide-react';
 import { createIsolatedPortalSupabase, getPortalSupabase } from '@/lib/portalSupabase';
 import { InvestmentCalculator } from '@/components/InvestmentCalculator';
@@ -14,6 +14,7 @@ import { AdminPropertyImporter } from '@/components/AdminPropertyImporter';
 import { AdminListingEditor } from '@/components/AdminListingEditor';
 import { ProfessionalOperationsPanel } from '@/components/ProfessionalOperationsPanel';
 import { PortalAccountPanel } from '@/components/PortalAccountPanel';
+import { PortalNotificationBridge } from '@/components/PortalNotificationBridge';
 
 type Tab = 'dashboard' | 'listings' | 'import' | 'crm' | 'operations' | 'chat' | 'calculators' | 'partners' | 'approvals' | 'account';
 
@@ -43,6 +44,8 @@ export function PartnerWorkspace() {
   const [editingSubmission, setEditingSubmission] = useState<any>(null);
   const [editingListing, setEditingListing] = useState<any>(null);
   const [showNewListing, setShowNewListing] = useState(false);
+  const [profileCards, setProfileCards] = useState<any[]>([]);
+  const [deskTheme, setDeskTheme] = useState<'light'|'dark'>('light');
 
   const isAdmin = profile?.role === 'admin';
 
@@ -68,7 +71,7 @@ export function PartnerWorkspace() {
 
     const requests: any[] = [
       supabase.from('property_listing_submissions').select('*').order('created_at', { ascending: false }),
-      supabase.from('property_listings').select('*').order('updated_at', { ascending: false }),
+      supabase.from('property_listings').select('*').is('deleted_at', null).order('updated_at', { ascending: false }),
       supabase.from('crm_contacts').select('*').order('updated_at', { ascending: false }),
       supabase.from('crm_deals').select('*').order('updated_at', { ascending: false }),
       supabase.from('chat_threads').select('*').order('last_message_at', { ascending: false, nullsFirst: false }),
@@ -94,6 +97,14 @@ export function PartnerWorkspace() {
     if (profileData.role === 'admin') {
       setPartnerUsers(results[8].data || []);
     }
+    const {data:directory}=await supabase.from('portal_profile_cards').select('*');
+    setProfileCards(directory||[]);
+
+    const savedTheme=localStorage.getItem('bosphoras-desk-theme') || profileData.theme_preference || 'system';
+    const resolved=savedTheme==='system'
+      ? (window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')
+      : savedTheme;
+    setDeskTheme(resolved==='dark'?'dark':'light');
 
     const initialThread = (results[4].data || [])[0]?.id || null;
     if (initialThread && !selectedThread) setSelectedThread(initialThread);
@@ -132,6 +143,19 @@ export function PartnerWorkspace() {
       .subscribe();
     return () => { supabase.removeChannel(channel); };
   }, [user?.id, profile?.role, supabase, loadAll]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const onTheme=(event:any)=>{
+      const requested=event?.detail || localStorage.getItem('bosphoras-desk-theme') || 'system';
+      const resolved=requested==='system'
+        ? (window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')
+        : requested;
+      setDeskTheme(resolved==='dark'?'dark':'light');
+    };
+    window.addEventListener('bosphoras-theme-change',onTheme);
+    return ()=>window.removeEventListener('bosphoras-theme-change',onTheme);
+  },[]);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
@@ -175,6 +199,13 @@ export function PartnerWorkspace() {
   async function logout() {
     await supabase.auth.signOut();
     window.location.href = '/connexion';
+  }
+
+  async function toggleDeskTheme(){
+    const next=deskTheme==='dark'?'light':'dark';
+    setDeskTheme(next);
+    localStorage.setItem('bosphoras-desk-theme',next);
+    if(user?.id) await supabase.from('profiles').update({theme_preference:next}).eq('user_id',user.id);
   }
 
   const unread = notifications.filter(n => !n.read_at).length;
@@ -222,7 +253,8 @@ export function PartnerWorkspace() {
   }
 
   return (
-    <div className="min-h-screen bg-[#f3f6f8] text-[#162334] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe_UI,sans-serif]">
+    <div className={`bosphoras-desk ${deskTheme==='dark'?'desk-dark':'desk-light'} min-h-screen bg-[#f3f6f8] text-[#162334] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe_UI,sans-serif]`}>
+      <PortalNotificationBridge userId={user?.id}/>
       <header className="sticky top-0 z-40 border-b border-[#26394a] bg-[#0d1c2b] text-white">
         <div className="mx-auto flex max-w-[1700px] items-center justify-between gap-4 px-4 py-3 md:px-6">
           <div className="flex items-center gap-3">
@@ -233,6 +265,7 @@ export function PartnerWorkspace() {
             </div>
           </div>
           <div className="flex items-center gap-3">
+            <button onClick={toggleDeskTheme} className="p-2 text-[#b9d0e0] hover:text-white" aria-label={deskTheme==='dark'?'Passer en mode clair':'Passer en mode sombre'}>{deskTheme==='dark'?<Sun size={18}/>:<Moon size={18}/>}</button>
             <button onClick={()=>openTab('dashboard')} className="relative p-2 text-[#b9d0e0]"><Bell size={18}/>{unread>0&&<span className="absolute right-0 top-0 h-4 min-w-4 rounded-full bg-[#c76055] px-1 text-[0.6rem] leading-4 text-white">{unread}</span>}</button>
             <div className="hidden text-right text-xs md:block"><strong className="block text-white">{profile.full_name || profile.email}</strong><span className="text-[#9eb0bf]">{profile.role}</span></div>
             <button onClick={logout} className="p-2 text-[#9eb0bf] hover:text-white" aria-label="Se déconnecter"><LogOut size={18}/></button>
@@ -273,6 +306,7 @@ export function PartnerWorkspace() {
               activeDeals={activeDeals}
               notifications={notifications}
               setTab={setTab}
+              reload={loadAll}
             />
           )}
           {tab==='listings' && (
@@ -303,7 +337,8 @@ export function PartnerWorkspace() {
             partners={partners}
             partnerUsers={partnerUsers}
           /></Section>}
-          {tab==='chat' && <ChatPanel isAdmin={isAdmin} user={user} threads={threads} partnerUsers={partnerUsers} selectedThread={selectedThread} setSelectedThread={setSelectedThread} messages={messages} notifications={notifications}/>}
+          {tab==='chat' && <ChatPanel isAdmin={isAdmin} user={user} threads={threads} profileCards={profileCards} partnerUsers={partnerUsers} selectedThread={selectedThread} setSelectedThread={setSelectedThread} messages={messages} notifications={notifications} reload={loadAll}/>}
+
           {tab==='calculators' && <Section title="Calculateurs investissement" kicker="Bosphoras Analysis"><InvestmentCalculator
             userId={user?.id}
             partnerId={profile?.partner_id}
@@ -326,7 +361,19 @@ function Section({title,kicker,children,action}:{title:string;kicker?:string;chi
   return <section><div className="mb-7 flex flex-wrap items-end justify-between gap-4"><div>{kicker&&<p className="text-xs font-bold uppercase tracking-[0.24em] text-[#315d7c]">{kicker}</p>}<h1 className="mt-2 font-sans text-4xl tracking-[-0.035em] md:text-5xl">{title}</h1></div>{action}</div>{children}</section>;
 }
 
-function Dashboard({isAdmin,partners,listings,contacts,deals,pipeline,pendingApprovals,activeDeals,notifications,setTab}:any) {
+function Dashboard({isAdmin,partners,listings,contacts,deals,pipeline,pendingApprovals,activeDeals,notifications,setTab,reload}:any) {
+  const supabase=getPortalSupabase();
+  async function deleteNotification(id:string){
+    const {error}=await supabase.from('notifications').delete().eq('id',id);
+    if(error)alert(error.message);else reload();
+  }
+  async function clearNotifications(){
+    if(!notifications.length)return;
+    if(!window.confirm('Effacer les notifications affichées ?'))return;
+    const ids=notifications.map((n:any)=>n.id);
+    const {error}=await supabase.from('notifications').delete().in('id',ids);
+    if(error)alert(error.message);else reload();
+  }
   const cards: Array<[string, string | number, any]> = [
     [isAdmin?'Partenaires actifs':'Biens attribués', isAdmin?partners.filter((p:any)=>p.status==='active').length:listings.length, Users],
     ['Contacts CRM', contacts.length, Contact],
@@ -348,9 +395,9 @@ function Dashboard({isAdmin,partners,listings,contacts,deals,pipeline,pendingApp
           </div>
         </div>
         <div className="border border-[#d9e1e8] bg-[#12304a] p-6 text-white">
-          <h2 className="font-sans text-3xl">Notifications</h2>
+          <div className="flex items-center justify-between gap-3"><h2 className="font-sans text-3xl">Notifications</h2>{notifications.length>0?<button onClick={clearNotifications} className="text-[0.68rem] font-semibold uppercase tracking-[0.08em] text-[#b9d0e0] hover:text-white">Tout effacer</button>:null}</div>
           <div className="mt-5 divide-y divide-white/10">
-            {notifications.slice(0,6).map((n:any)=><div key={n.id} className="py-4"><strong className="block text-sm">{n.title}</strong><p className="mt-1 text-xs leading-5 text-[#a9bfd0]">{n.body}</p></div>)}
+            {notifications.slice(0,6).map((n:any)=><div key={n.id} className="flex items-start gap-3 py-4"><div className="min-w-0 flex-1"><strong className="block text-sm">{n.title}</strong><p className="mt-1 text-xs leading-5 text-[#a9bfd0]">{n.body}</p></div><button onClick={()=>deleteNotification(n.id)} className="p-1 text-[#8fa1b0] hover:text-white" aria-label="Effacer la notification"><Trash2 size={14}/></button></div>)}
             {notifications.length===0&&<p className="py-6 text-sm text-[#a9bfd0]">Aucune notification.</p>}
           </div>
         </div>
@@ -375,6 +422,42 @@ function listingToPayload(l:any) {
 
 function ListingsPanel({isAdmin,user,profile,listings,submissions,showNew,setShowNew,editingSubmission,setEditingSubmission,editingListing,setEditingListing,reload}:any) {
   const supabase=getPortalSupabase();
+  const [listingSearch,setListingSearch]=useState('');
+  const [listingFilter,setListingFilter]=useState('all');
+
+  const visibleListings=listings.filter((listing:any)=>{
+    if(listingFilter==='published'&&!listing.published)return false;
+    if(listingFilter==='unpublished'&&listing.published)return false;
+    const q=listingSearch.trim().toLowerCase();
+    if(!q)return true;
+    return [listing.external_id,listing.title?.fr,listing.city,listing.city_name,listing.district,listing.developer].filter(Boolean).join(' ').toLowerCase().includes(q);
+  });
+
+  async function createAdminDraft(){
+    const stamp=Date.now().toString(36);
+    const row:any={
+      external_id:`ADM-${stamp.toUpperCase()}`,
+      published:false, featured:false, status:'available', collection:'selected-investment', transaction_type:'sale', property_type:'apartment',
+      country_code:'TR', country_name:'Turkey', city:'istanbul', city_name:'Istanbul', district:'À compléter',
+      slug_fr:`nouvelle-annonce-${stamp}`, slug_en:`new-listing-${stamp}`, slug_ru:`new-listing-${stamp}`, slug_ar:`new-listing-${stamp}`,
+      title:{fr:'Nouvelle annonce',en:'New listing',ru:'Новый объект',ar:'عقار جديد'},
+      summary:{fr:'',en:'',ru:'',ar:''}, description:{fr:'',en:'',ru:'',ar:''}, seo_title:{fr:'',en:'',ru:'',ar:''}, seo_description:{fr:'',en:'',ru:'',ar:''},
+      currency:'EUR', images:[], review_status:'approved', created_by:user.id,
+    };
+    const {data,error}=await supabase.from('property_listings').insert(row).select('*').single();
+    if(error){alert(error.message);return;}
+    await reload();
+    setEditingListing(data);
+  }
+
+  async function deleteListing(listing:any){
+    if(!isAdmin)return;
+    const label=listing.title?.fr||listing.external_id||'cette annonce';
+    if(!window.confirm(`Retirer ${label} de l’inventaire actif ? La fiche sera dépubliée et placée en corbeille interne.`))return;
+    const {error}=await supabase.from('property_listings').update({published:false,published_at:null,deleted_at:new Date().toISOString(),deleted_by:user.id}).eq('id',listing.id);
+    if(error)alert(error.message);else reload();
+  }
+
   async function togglePublish(listing:any) {
     const next=!listing.published;
     const {error}=await supabase.from('property_listings').update({published:next,published_at:next?new Date().toISOString():null}).eq('id',listing.id);
@@ -401,13 +484,17 @@ function ListingsPanel({isAdmin,user,profile,listings,submissions,showNew,setSho
       />
     </Section>;
   }
-  return <Section title="Biens & projets" kicker={isAdmin?'Inventaire global':'Vos opportunités'} action={!isAdmin?<button onClick={()=>setShowNew(true)} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-xs font-bold uppercase tracking-[0.12em] text-white"><Plus size={15}/>Nouvelle annonce</button>:null}>
+  return <Section title="Biens & projets" kicker={isAdmin?'Inventaire global':'Vos opportunités'} action={<button onClick={()=>isAdmin?createAdminDraft():setShowNew(true)} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-xs font-bold uppercase tracking-[0.12em] text-white"><Plus size={15}/>Nouvelle annonce</button>}>
     {!isAdmin&&<div className="mb-8 border border-[#d9e1e8] bg-[#f7f9fb] p-5 text-sm leading-6 text-[#526272]"><strong>Règle Bosphoras :</strong> une annonce créée ou modifiée par un partenaire reste en brouillon/soumission jusqu’à validation de l’administrateur. Une modification d’un bien déjà publié ne change jamais la version publique avant approbation.</div>}
+    <div className="mb-5 grid gap-3 rounded-xl border border-[#d9e1e8] bg-white p-4 md:grid-cols-[1fr_220px]">
+      <label className="relative"><Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#7b8794]"/><input value={listingSearch} onChange={(e)=>setListingSearch(e.target.value)} placeholder="Rechercher une référence, ville, quartier, promoteur…" className="min-h-[43px] w-full rounded-lg border border-[#cfd8e3] pl-10 pr-3 text-sm"/></label>
+      <select value={listingFilter} onChange={(e)=>setListingFilter(e.target.value)} className="min-h-[43px] rounded-lg border border-[#cfd8e3] bg-white px-3 text-sm"><option value="all">Toutes</option><option value="published">En ligne</option><option value="unpublished">Hors ligne / brouillons</option></select>
+    </div>
     <div className="grid gap-6 lg:grid-cols-2">
       <div className="border border-[#d9e1e8] bg-white p-5">
-        <h2 className="font-sans text-2xl">{isAdmin?'Toutes les annonces':'Biens attribués'}</h2>
+        <div className="flex items-center justify-between gap-3"><h2 className="font-sans text-2xl">{isAdmin?'Toutes les annonces':'Biens attribués'}</h2><span className="text-xs font-semibold text-[#687685]">{visibleListings.length} affichée(s)</span></div>
         <div className="mt-5 space-y-3">
-          {listings.map((l:any)=><article key={l.id} className="border border-[#e7edf2] p-4"><div className="flex items-start justify-between gap-4"><div><span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-[#315d7c]">{l.city} · {l.district}</span><h3 className="mt-1 font-sans text-xl">{l.title?.fr || l.external_id}</h3><p className="mt-2 text-sm text-[#687685]">{money(l.total_price,l.currency)} · {l.published?'Publié':'Non publié'} · rév. {l.revision}</p></div>{l.hero_image&&<img src={l.hero_image} alt="" className="h-16 w-20 object-cover"/>}</div><div className="mt-4 flex flex-wrap gap-2"><a href={'/espace/apercu?listing='+l.id} target="_blank" rel="noreferrer" className="border border-[#315d7c] bg-[#eef4f8] px-3 py-2 text-xs font-semibold uppercase text-[#315d7c]">Aperçu</a>{l.published&&l.slug_fr?<a href={'/immobilier-turquie/'+l.slug_fr} target="_blank" rel="noreferrer" className="border border-[#2f6d59] px-3 py-2 text-xs font-semibold uppercase text-[#2f6d59]">Page publique</a>:null}{isAdmin?<><button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase text-[#12304a]">Modifier</button><button onClick={()=>togglePublish(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">{l.published?'Dépublier':'Publier'}</button></>:<button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">Proposer une modification</button>}</div></article>)}
+          {visibleListings.map((l:any)=><article key={l.id} className="border border-[#e7edf2] p-4"><div className="flex items-start justify-between gap-4"><div><span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-[#315d7c]">{l.city} · {l.district}</span><h3 className="mt-1 font-sans text-xl">{l.title?.fr || l.external_id}</h3><p className="mt-2 text-sm text-[#687685]">{money(l.total_price,l.currency)} · {l.published?'Publié':'Non publié'} · rév. {l.revision}</p></div>{l.hero_image&&<img src={l.hero_image} alt="" className="h-16 w-20 object-cover"/>}</div><div className="mt-4 flex flex-wrap gap-2"><a href={'/espace/apercu?listing='+l.id} target="_blank" rel="noreferrer" className="border border-[#315d7c] bg-[#eef4f8] px-3 py-2 text-xs font-semibold uppercase text-[#315d7c]">Aperçu</a>{l.published&&l.slug_fr?<a href={'/immobilier-turquie/'+l.slug_fr} target="_blank" rel="noreferrer" className="border border-[#2f6d59] px-3 py-2 text-xs font-semibold uppercase text-[#2f6d59]">Page publique</a>:null}{isAdmin?<><button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase text-[#12304a]">Modifier</button><button onClick={()=>togglePublish(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">{l.published?'Dépublier':'Publier'}</button><button onClick={()=>deleteListing(l)} className="inline-flex items-center gap-1.5 border border-[#b96363] px-3 py-2 text-xs font-semibold uppercase text-[#9b4444]"><Trash2 size={13}/>Supprimer</button></>:<button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">Proposer une modification</button>}</div></article>)}
           {listings.length===0&&<p className="py-6 text-sm text-[#687685]">Aucun bien attribué pour le moment.</p>}
         </div>
       </div>
@@ -431,6 +518,10 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
   const [activities,setActivities]=useState<any[]>([]);
   const [contactBusy,setContactBusy]=useState(false);
   const [contactNotice,setContactNotice]=useState<{type:'success'|'error';text:string}|null>(null);
+  const [crmSearch,setCrmSearch]=useState('');
+  const [crmStatus,setCrmStatus]=useState('all');
+  const [crmOwner,setCrmOwner]=useState('all');
+  const [dealFilter,setDealFilter]=useState('all');
 
   async function loadActivities(){
     const {data}=await supabase.from('crm_activities').select('*').order('created_at',{ascending:false}).limit(100);
@@ -600,8 +691,22 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
   const dealById=Object.fromEntries(deals.map((x:any)=>[x.id,x]));
   const openActivities=activities.filter((x:any)=>!x.completed_at);
   const overdue=openActivities.filter((x:any)=>x.due_at&&new Date(x.due_at)<new Date()).length;
+  const filteredContacts=contacts.filter((contact:any)=>{
+    if(crmStatus!=='all'&&contact.status!==crmStatus)return false;
+    if(crmOwner!=='all'&&contact.owner_user_id!==crmOwner)return false;
+    const q=crmSearch.trim().toLowerCase();
+    if(!q)return true;
+    return [contact.first_name,contact.last_name,contact.company,contact.email,contact.phone,contact.whatsapp,contact.source,contact.nationality,contact.country_of_residence].filter(Boolean).join(' ').toLowerCase().includes(q);
+  });
+  const filteredDeals=deals.filter((deal:any)=>dealFilter==='all'||deal.stage===dealFilter);
 
   return <Section title="CRM investissement" kicker="Contacts · pipeline · relances" action={<button onClick={()=>setShow(!show)} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-xs font-semibold uppercase tracking-[0.1em] text-white"><Plus size={15}/>Nouveau contact</button>}>
+    <div className="mb-5 grid gap-3 rounded-xl border border-[#d9e1e8] bg-white p-4 md:grid-cols-2 xl:grid-cols-4">
+      <label className="relative md:col-span-2 xl:col-span-1"><Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#7b8794]"/><input value={crmSearch} onChange={(e)=>setCrmSearch(e.target.value)} placeholder="Nom, téléphone, e-mail, source…" className="min-h-[43px] w-full rounded-lg border border-[#cfd8e3] pl-10 pr-3 text-sm"/></label>
+      <select value={crmStatus} onChange={(e)=>setCrmStatus(e.target.value)} className="min-h-[43px] rounded-lg border border-[#cfd8e3] bg-white px-3 text-sm"><option value="all">Tous les statuts</option><option value="new">Nouveaux</option><option value="contacted">Contactés</option><option value="qualified">Qualifiés</option><option value="nurturing">À relancer</option><option value="converted">Convertis</option><option value="lost">Perdus</option><option value="inactive">Inactifs</option></select>
+      {isAdmin?<select value={crmOwner} onChange={(e)=>setCrmOwner(e.target.value)} className="min-h-[43px] rounded-lg border border-[#cfd8e3] bg-white px-3 text-sm"><option value="all">Tous les agents</option>{partnerUsers.map((p:any)=><option key={p.user_id} value={p.user_id}>{p.full_name||p.email}</option>)}</select>:<div className="hidden xl:block"/>}
+      <select value={dealFilter} onChange={(e)=>setDealFilter(e.target.value)} className="min-h-[43px] rounded-lg border border-[#cfd8e3] bg-white px-3 text-sm"><option value="all">Tout le pipeline</option><option value="lead">Lead</option><option value="qualified">Qualifié</option><option value="viewing">Visite</option><option value="offer">Offre</option><option value="reservation">Réservation</option><option value="due_diligence">Due diligence</option><option value="contract">Contrat</option><option value="closed_won">Gagné</option><option value="closed_lost">Perdu</option></select>
+    </div>
     {contactNotice?<div className={`mb-5 flex items-center justify-between border px-4 py-3 text-sm shadow-sm ${contactNotice.type==='success'?'border-[#a8c8b8] bg-[#f1faf5] text-[#245943]':'border-[#e0b5b5] bg-[#fff6f6] text-[#8b4040]'}`}><span>{contactNotice.text}</span><button type="button" onClick={()=>setContactNotice(null)} className="ml-4 text-lg leading-none">×</button></div>:null}
     <div className="mb-6 grid gap-px bg-[#d9e1e8] sm:grid-cols-3">
       <div className="bg-white p-5"><span className="text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#687685]">Contacts visibles</span><strong className="mt-2 block text-2xl font-semibold">{contacts.length}</strong></div>
@@ -632,7 +737,7 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
       <div className="border border-[#d9e1e8] bg-white p-5">
         <h2 className="text-2xl font-semibold tracking-[-0.02em]">Contacts</h2>
         <div className="mt-5 space-y-3">
-          {contacts.map((contact:any)=><article key={contact.id} className="border border-[#e7edf2] p-4">
+          {filteredContacts.map((contact:any)=><article key={contact.id} className="border border-[#e7edf2] p-4">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
                 <h3 className="font-semibold">{[contact.first_name,contact.last_name].filter(Boolean).join(' ')||contact.company||'Contact'}</h3>
@@ -667,7 +772,7 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
           <button className="bg-[#d8e6ef] px-4 py-2 text-xs font-semibold uppercase text-[#12304a]">Ajouter au pipeline</button>
         </form>}
         <div className="mt-5 space-y-3">
-          {deals.map((deal:any)=><article key={deal.id} className="border border-white/10 p-4">
+          {filteredDeals.map((deal:any)=><article key={deal.id} className="border border-white/10 p-4">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div><span className="text-[0.65rem] font-semibold uppercase tracking-[0.1em] text-[#b9d0e0]">{deal.stage}</span><h3 className="mt-1 text-xl font-semibold">{deal.title}</h3></div>
               <strong>{deal.probability}%</strong>
