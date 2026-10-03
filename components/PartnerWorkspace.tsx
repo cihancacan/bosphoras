@@ -361,6 +361,7 @@ export function PartnerWorkspace() {
           {tab==='chat' && <ChatPanel isAdmin={isAdmin} user={user} threads={threads} profileCards={profileCards} partnerUsers={partnerUsers} selectedThread={selectedThread} setSelectedThread={setSelectedThread} messages={messages} notifications={notifications} reload={loadAll}/>}
 
           {tab==='calculators' && <Section title="Calculateurs investissement" kicker="Bosphoras Analysis"><InvestmentCalculator
+            locale={deskLocale}
             userId={user?.id}
             partnerId={profile?.partner_id}
             contacts={contacts}
