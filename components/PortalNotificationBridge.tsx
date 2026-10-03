@@ -93,7 +93,7 @@ export function PortalNotificationBridge({ userId }: { userId?: string | null })
       .on(
         'postgres_changes',
         { event: 'INSERT', schema: 'public', table: 'notifications', filter: `user_id=eq.${userId}` },
-        async (payload) => {
+        async (payload: any) => {
           const item = payload.new as any;
           setToast(item);
           window.setTimeout(() => setToast((current: any) => (current?.id === item.id ? null : current)), 8000);
