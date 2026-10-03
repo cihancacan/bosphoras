@@ -27,7 +27,7 @@ export function PortalNotificationBridge({ userId }: { userId?: string | null })
 
   async function savePushSubscription(registration: ServiceWorkerRegistration) {
     if (!userId || !('PushManager' in window)) return;
-    const vapid = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY;
+    const vapid = process.env.NEXT_PUBLIC_VAPID_PUBLIC_KEY || 'BGUu5LrZJ2ewVVVeysSe8CmIs9L83Iw-cG9DwMBNWH0WG7k6nrSENw77oVa5T1qpec2mAN2RK6mGzmUZNh8E8x8';
     if (!vapid) return;
 
     try {
