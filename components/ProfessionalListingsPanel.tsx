@@ -6,7 +6,6 @@ import { AlertTriangle, CheckCircle2, ChevronRight, Eye, FileClock, Globe2, Imag
 import { getPortalSupabase } from '@/lib/portalSupabase';
 import { AdminListingEditor } from '@/components/AdminListingEditor';
 import { ListingSubmissionEditor } from '@/components/ListingSubmissionEditor';
-import { PartnerCatalogPicker } from '@/components/PartnerCatalogPicker';
 
 type DeskLocale='fr'|'en'|'ru';
 
@@ -107,7 +106,7 @@ export function ProfessionalListingsPanel({
   const l=(['fr','en','ru'].includes(locale)?locale:'fr') as DeskLocale;
   const c=copy(l);
   const supabase=getPortalSupabase();
-  const [mode,setMode]=useState<'inventory'|'submissions'|'partner'>('inventory');
+  const [mode,setMode]=useState<'inventory'|'submissions'>('inventory');
   const [selectedId,setSelectedId]=useState<string|null>(null);
   const [selectedSubmissionId,setSelectedSubmissionId]=useState<string|null>(null);
   const [search,setSearch]=useState('');
@@ -198,15 +197,14 @@ export function ProfessionalListingsPanel({
     <div className="mb-4 flex flex-wrap gap-2">
       <button onClick={()=>{setMode('inventory');setSelectedSubmissionId(null);}} className={`min-h-[40px] px-4 text-sm font-semibold ${mode==='inventory'?'bg-[#12304a] text-white':'border border-[#cfd8e3] bg-white text-[#526272]'}`}>{c.inventory} · {listings.length}</button>
       <button onClick={()=>{setMode('submissions');setSelectedId(null);}} className={`min-h-[40px] px-4 text-sm font-semibold ${mode==='submissions'?'bg-[#12304a] text-white':'border border-[#cfd8e3] bg-white text-[#526272]'}`}>{c.submissions} · {submissions.length}{pendingCount?` (${pendingCount})`:''}</button>
-      {isAdmin?<button onClick={()=>{setMode('partner');setSelectedId(null);setSelectedSubmissionId(null);}} className={`min-h-[40px] px-4 text-sm font-semibold ${mode==='partner'?'bg-[#315f52] text-white':'border border-[#9fb9af] bg-white text-[#315f52]'}`}>Istanbul Partner Feed</button>:null}
     </div>
 
-    {mode!=='partner'?<div className="mb-5 grid gap-2 border border-[#d9e1e8] bg-white p-3 md:grid-cols-[1fr_210px]">
+    <div className="mb-5 grid gap-2 border border-[#d9e1e8] bg-white p-3 md:grid-cols-[1fr_210px]">
       <label className="relative"><Search size={15} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#7b8794]"/><input value={search} onChange={(e)=>setSearch(e.target.value)} placeholder={c.search} className="min-h-[40px] w-full border border-[#d9e1e8] pl-9 pr-3 text-sm"/></label>
       <select value={filter} onChange={(e)=>setFilter(e.target.value)} className="min-h-[40px] border border-[#d9e1e8] bg-white px-3 text-sm"><option value="all">{c.all}</option><option value="published">{c.online}</option><option value="unpublished">{c.offline}</option></select>
-    </div>:null}
+    </div>
 
-    {mode==='partner'&&isAdmin?<PartnerCatalogPicker locale={l} user={user} listings={listings} reload={reload}/>:mode==='inventory'?<div className="grid gap-5 xl:grid-cols-[420px_minmax(0,1fr)]">
+    {mode==='inventory'?<div className="grid gap-5 xl:grid-cols-[420px_minmax(0,1fr)]">
       <aside className="border border-[#d9e1e8] bg-white">
         <div className="flex items-center justify-between border-b border-[#e7edf2] px-4 py-3"><strong className="text-sm">{c.inventory}</strong><span className="text-xs text-[#7a8690]">{filtered.length} {c.results}</span></div>
         <div className="max-h-[780px] overflow-y-auto">
