@@ -240,38 +240,121 @@ export function InvestmentCalculator({
     }
   }
 
-  function printReport() {
-    const reportName = scenarioName.trim() || 'Analyse investissement';
-    const listing = listings.find((item:any)=>item.id===scenarioListingId);
-    const propertyName = listing?.title?.fr || listing?.external_id || '';
-    const rows = metrics.map(([metric,value,help]) =>
-      '<tr><td><strong>'+metric+'</strong><br><small>'+help+'</small></td><td style="text-align:right;font-weight:700">'+value+'</td></tr>'
-    ).join('');
-    const html =
-      '<!doctype html><html><head><meta charset="utf-8"><title>'+reportName+'</title><style>'+
-      '@page{size:A4;margin:14mm}body{font-family:Arial,Helvetica,sans-serif;color:#162334;margin:0}'+
-      '.head{border-bottom:3px solid #12304a;padding-bottom:18px;margin-bottom:24px}.brand{font-size:11px;letter-spacing:2px;color:#315d7c;font-weight:700}.title{font-size:28px;margin:8px 0 0}.sub{color:#687685;font-size:12px;margin-top:7px}'+
-      '.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:18px 0}.box{border:1px solid #d9e1e8;padding:12px}.box small{display:block;color:#687685;text-transform:uppercase;font-size:9px;letter-spacing:.7px}.box strong{display:block;font-size:18px;margin-top:5px}'+
-      'h2{font-size:16px;margin:24px 0 10px}table{width:100%;border-collapse:collapse}td{border-bottom:1px solid #e7edf2;padding:8px 4px;font-size:11px;vertical-align:top}small{color:#7b8794}'+
-      '.note{margin-top:24px;padding:12px;background:#f3f6f8;font-size:10px;line-height:1.5;color:#526272}.pay{margin-top:12px;border:1px solid #d9e1e8;padding:14px;font-size:11px}.pay strong{font-size:14px}'+
-      '</style></head><body>'+
-      '<div class="head"><div class="brand">BOSPHORAS PROPERTY & INVESTMENT</div><div class="title">'+reportName+'</div><div class="sub">'+(propertyName?propertyName+' · ':'')+'Rapport généré '+new Date().toLocaleString('fr-FR')+'</div></div>'+
-      '<div class="summary"><div class="box"><small>Prix d’achat</small><strong>'+money(n(price),currency)+'</strong></div><div class="box"><small>Capital disponible</small><strong>'+money(n(entry),currency)+'</strong></div><div class="box"><small>Valeur de sortie</small><strong>'+money(n(exitValue),currency)+'</strong></div></div>'+
-      '<h2>Indicateurs d’investissement</h2><table>'+rows+'</table>'+
-      '<h2>Plan promoteur simulé</h2><div class="pay"><strong>Prix comptant : '+money(result.developerCashPrice,currency)+'</strong><br>Prix échelonné : '+money(result.developerInstallmentTotal,currency)+' · Aujourd’hui : '+money(result.developerDeposit,currency)+' · Mensualité : '+money(result.developerMonthly,currency)+' · Livraison : '+money(result.developerBalloon,currency)+'<br><small>'+(developerInterestMode==='interest_bearing'?'Surcoût échéancier saisi : '+developerMarkupPct+'%':'Échéancier indiqué sans intérêt')+' · Remise comptant saisie : '+developerCashDiscountPct+'%</small></div>'+
-      '<div class="note"><strong>Note de méthode.</strong> Cette simulation compare des hypothèses saisies par l’utilisateur. Elle ne constitue ni une évaluation, ni une promesse de rendement, ni un conseil fiscal, juridique, bancaire ou financier. Les coûts, taxes, taux, loyers et conditions de paiement doivent être vérifiés sur le dossier réel.</div>'+
-      '</body></html>';
-    const w = window.open('', '_blank');
-    if (!w) {
-      setScenarioMessage('Le navigateur a bloqué la fenêtre PDF. Autorisez les fenêtres contextuelles pour Bosphoras puis réessayez.');
-      return;
+  function pdfSafe(value:any) {
+    return String(value ?? '')
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g,'')
+      .replace(/[’‘]/g,"'")
+      .replace(/[“”]/g,'"')
+      .replace(/[–—]/g,'-')
+      .replace(/[^\x20-\x7E]/g,' ');
+  }
+
+  function wrapPdfText(value:string,max=88){
+    const words=pdfSafe(value).split(/\s+/).filter(Boolean);
+    const lines:string[]=[];
+    let line='';
+    words.forEach((word)=>{
+      const candidate=line?line+' '+word:word;
+      if(candidate.length>max&&line){lines.push(line);line=word;}else line=candidate;
+    });
+    if(line)lines.push(line);
+    return lines.length?lines:[''];
+  }
+
+  function createPdfBytes(rows:Array<{text:string;size?:number;bold?:boolean;gap?:number}>) {
+    const pages:Array<Array<{text:string;size:number;bold:boolean;y:number}>>=[[]];
+    let pageIndex=0;
+    let y=790;
+
+    const pushLine=(text:string,size=10,bold=false,gap=15)=>{
+      if(y<58){pages.push([]);pageIndex+=1;y=790;}
+      pages[pageIndex].push({text:pdfSafe(text),size,bold,y});
+      y-=gap;
+    };
+
+    rows.forEach((row)=>{
+      const size=row.size||10;
+      const gap=row.gap||Math.max(14,size+4);
+      wrapPdfText(row.text,size>=16?58:88).forEach((line,idx)=>pushLine(line,size,Boolean(row.bold),idx===0?gap:Math.max(13,size+2)));
+      if(size>=14)y-=4;
+    });
+
+    const pageCount=pages.length;
+    const regularFontObj=3+pageCount*2;
+    const boldFontObj=regularFontObj+1;
+    const objects:string[]=[];
+    objects[1]='<< /Type /Catalog /Pages 2 0 R >>';
+    const kids=pages.map((_,i)=>String(3+i*2)+' 0 R').join(' ');
+    objects[2]='<< /Type /Pages /Kids ['+kids+'] /Count '+pageCount+' >>';
+
+    pages.forEach((page,i)=>{
+      const pageObj=3+i*2;
+      const contentObj=pageObj+1;
+      const stream=page.map((line)=>{
+        const font=line.bold?'F2':'F1';
+        const escaped=line.text.replace(/\\/g,'\\\\').replace(/\(/g,'\\(').replace(/\)/g,'\\)');
+        return 'BT /'+font+' '+line.size+' Tf 1 0 0 1 50 '+line.y+' Tm ('+escaped+') Tj ET';
+      }).join('\n');
+      objects[pageObj]='<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 '+regularFontObj+' 0 R /F2 '+boldFontObj+' 0 R >> >> /Contents '+contentObj+' 0 R >>';
+      objects[contentObj]='<< /Length '+stream.length+' >>\nstream\n'+stream+'\nendstream';
+    });
+    objects[regularFontObj]='<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>';
+    objects[boldFontObj]='<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>';
+
+    let pdf='%PDF-1.4\n% Bosphoras\n';
+    const offsets:number[]=[0];
+    for(let i=1;i<objects.length;i++){
+      offsets[i]=pdf.length;
+      pdf+=String(i)+' 0 obj\n'+objects[i]+'\nendobj\n';
     }
-    try { w.opener = null; } catch {}
-    w.document.open();
-    w.document.write(html);
-    w.document.close();
-    w.focus();
-    window.setTimeout(()=>w.print(),250);
+    const xref=pdf.length;
+    pdf+='xref\n0 '+objects.length+'\n0000000000 65535 f \n';
+    for(let i=1;i<objects.length;i++)pdf+=String(offsets[i]).padStart(10,'0')+' 00000 n \n';
+    pdf+='trailer\n<< /Size '+objects.length+' /Root 1 0 R >>\nstartxref\n'+xref+'\n%%EOF';
+    return new Uint8Array(Array.from(pdf,(char)=>char.charCodeAt(0)&255));
+  }
+
+  function printReport() {
+    const reportName=scenarioName.trim()||'Analyse investissement';
+    const listing=listings.find((item:any)=>item.id===scenarioListingId);
+    const propertyName=listing?.title?.fr||listing?.external_id||'';
+    const reportRows:Array<{text:string;size?:number;bold?:boolean;gap?:number}>=[
+      {text:'BOSPHORAS PROPERTY & INVESTMENT',size:10,bold:true,gap:22},
+      {text:reportName,size:22,bold:true,gap:30},
+      {text:(propertyName?propertyName+' - ':'')+'Rapport genere '+new Date().toLocaleString('fr-FR'),size:9,gap:24},
+      {text:'SYNTHESE',size:13,bold:true,gap:22},
+      {text:'Prix achat : '+money(n(price),currency),size:11,bold:true},
+      {text:'Capital disponible : '+money(n(entry),currency),size:11,bold:true},
+      {text:'Valeur de sortie : '+money(n(exitValue),currency),size:11,bold:true,gap:24},
+      {text:'INDICATEURS INVESTISSEMENT',size:13,bold:true,gap:22},
+      ...metrics.flatMap(([metric,value,help])=>[
+        {text:metric+' : '+value,size:10,bold:true,gap:14},
+        {text:String(help),size:8,gap:13},
+      ]),
+      {text:'PLAN PROMOTEUR SIMULE',size:13,bold:true,gap:22},
+      {text:'Prix comptant : '+money(result.developerCashPrice,currency),size:10,bold:true},
+      {text:'Prix echelonne : '+money(result.developerInstallmentTotal,currency),size:10,bold:true},
+      {text:"Aujourd'hui : "+money(result.developerDeposit,currency),size:10},
+      {text:'Mensualite promoteur : '+money(result.developerMonthly,currency),size:10},
+      {text:'A la livraison : '+money(result.developerBalloon,currency),size:10},
+      {text:developerInterestMode==='interest_bearing'?'Surcout echeancier saisi : '+developerMarkupPct+'%':'Echeancier indique sans interet / 0%',size:9},
+      {text:'Remise comptant saisie : '+developerCashDiscountPct+'%',size:9,gap:24},
+      {text:'NOTE DE METHODE',size:12,bold:true,gap:20},
+      {text:"Cette simulation compare des hypotheses saisies par l'utilisateur. Elle ne constitue ni une evaluation, ni une promesse de rendement, ni un conseil fiscal, juridique, bancaire ou financier. Les couts, taxes, taux, loyers et conditions de paiement doivent etre verifies sur le dossier reel.",size:8,gap:12},
+    ];
+
+    const bytes=createPdfBytes(reportRows);
+    const blob=new Blob([bytes],{type:'application/pdf'});
+    const url=URL.createObjectURL(blob);
+    const link=document.createElement('a');
+    const safeName=pdfSafe(reportName).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'')||'analyse-investissement';
+    link.href=url;
+    link.download='bosphoras-'+safeName+'.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    window.setTimeout(()=>URL.revokeObjectURL(url),1500);
   }
 
   const metrics = [
@@ -363,8 +446,8 @@ export function InvestmentCalculator({
           <div className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">À la livraison</span><strong className="mt-2 block text-2xl font-semibold">{money(result.developerBalloon, currency)}</strong><small className="mt-1 block text-[#7b8794]">(solde final simulé)</small></div>
         </div>
         <div className="mt-5 flex flex-wrap items-center gap-3">
-          <button type="button" onClick={printReport} className="inline-flex min-h-[44px] items-center gap-2 border border-[#12304a] bg-white px-5 text-sm font-semibold text-[#12304a]"><FileDown size={16}/>PDF / Imprimer</button>
-          <span className="text-xs leading-5 text-[#687685]">Le bouton ouvre un rapport A4 optimisé pour impression ; choisissez « Enregistrer au format PDF » dans la boîte d’impression pour le partager.</span>
+          <button type="button" onClick={printReport} className="inline-flex min-h-[44px] items-center gap-2 border border-[#12304a] bg-white px-5 text-sm font-semibold text-[#12304a]"><FileDown size={16}/>Télécharger le PDF</button>
+          <span className="text-xs leading-5 text-[#687685]">Téléchargement direct d’un rapport PDF Bosphoras avec les hypothèses, indicateurs et conditions du plan promoteur.</span>
         </div>
       </section>
 
