@@ -847,15 +847,120 @@ function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,rel
   </Section>;
 }
 
-function ChatPanel({isAdmin,user,threads,partnerUsers,selectedThread,setSelectedThread,messages,notifications}:any) {
+function ChatPanel({isAdmin,user,threads,profileCards,partnerUsers,selectedThread,setSelectedThread,messages,notifications,reload}:any) {
   const supabase=getPortalSupabase();
   const [body,setBody]=useState('');
-  async function send(e:FormEvent) {e.preventDefault(); if(!selectedThread||!body.trim())return; const {error}=await supabase.from('chat_messages').insert({thread_id:selectedThread,sender_user_id:user.id,body:body.trim()}); if(error)alert(error.message);else setBody('');}
-  const profileMap=Object.fromEntries(partnerUsers.map((p:any)=>[p.user_id,p]));
-  return <Section title="Chat interne" kicker="Bosphoras Partner Support">
-    <div className="grid min-h-[620px] overflow-hidden border border-[#d9e1e8] bg-white lg:grid-cols-[300px_1fr]">
-      <aside className="border-b border-[#d9e1e8] lg:border-b-0 lg:border-r"><div className="p-4 text-xs font-bold uppercase tracking-[0.14em] text-[#687685]">{isAdmin?'Partenaires':'Votre fil Bosphoras'}</div>{threads.map((t:any)=>{const unreadForThread=(notifications||[]).filter((n:any)=>!n.read_at&&n.notification_type==='chat_message'&&String(n.href||'').includes(t.id)).length;return <button key={t.id} onClick={()=>setSelectedThread(t.id)} className={`w-full border-t border-[#e7edf2] p-4 text-left ${selectedThread===t.id?'bg-[#edf3f7]':''}`}><div className="flex items-start justify-between gap-3"><div><strong className="block text-sm">{isAdmin?(profileMap[t.partner_user_id]?.full_name||profileMap[t.partner_user_id]?.email||'Partenaire'):t.subject}</strong><span className="mt-1 block text-xs text-[#7b8490]">{t.last_message_at?new Date(t.last_message_at).toLocaleString('fr-FR'):'Aucun message'}</span></div>{unreadForThread>0?<span className="min-w-5 rounded-full bg-[#c76055] px-1.5 text-center text-[0.65rem] font-bold leading-5 text-white">{unreadForThread}</span>:null}</div></button>})}</aside>
-      <section className="flex min-h-[620px] flex-col"><div className="flex-1 space-y-3 overflow-y-auto bg-[#f3f6f8] p-5">{messages.map((m:any)=>{const mine=m.sender_user_id===user.id;return <div key={m.id} className={`max-w-[80%] p-3 text-sm leading-6 ${mine?'ml-auto bg-[#12304a] text-white':'bg-white text-[#303a46]'}`}><p>{m.body}</p><span className={`mt-1 block text-[0.62rem] ${mine?'text-[#a9bfd0]':'text-[#8a929d]'}`}>{new Date(m.created_at).toLocaleString('fr-FR')}</span></div>})}{!selectedThread&&<p className="text-sm text-[#687685]">Sélectionnez une conversation.</p>}</div><form onSubmit={send} className="flex gap-2 border-t border-[#d9e1e8] p-4"><input value={body} onChange={e=>setBody(e.target.value)} disabled={!selectedThread} placeholder="Écrire un message…" className="min-h-[46px] flex-1 border border-[#d9e1e8] px-3 text-sm"/><button disabled={!selectedThread||!body.trim()} className="inline-flex h-11 w-11 items-center justify-center bg-[#12304a] text-white disabled:opacity-40"><Send size={16}/></button></form></section>
+  const [showArchived,setShowArchived]=useState(false);
+  const profileMap=Object.fromEntries((profileCards||[]).map((p:any)=>[p.user_id,p]));
+  const visibleThreads=(threads||[]).filter((t:any)=>showArchived ? true : !(isAdmin?t.archived_by_admin_at:t.archived_by_partner_at));
+  const selected=threads.find((t:any)=>t.id===selectedThread);
+  const selectedPartner=isAdmin?profileMap[selected?.partner_user_id]:null;
+
+  async function markThreadRead(threadId:string){
+    const now=new Date().toISOString();
+    const readColumn=isAdmin?'read_by_admin_at':'read_by_partner_at';
+    const unreadColumn=isAdmin?'admin_marked_unread_at':'partner_marked_unread_at';
+    await Promise.all([
+      supabase.from('chat_messages').update({[readColumn]:now}).eq('thread_id',threadId).is(readColumn,null),
+      supabase.from('chat_threads').update({[unreadColumn]:null,updated_at:now}).eq('id',threadId),
+    ]);
+  }
+
+  async function openThread(threadId:string){
+    setSelectedThread(threadId);
+    await markThreadRead(threadId);
+    reload();
+  }
+
+  useEffect(()=>{
+    if(selectedThread) markThreadRead(selectedThread);
+  },[selectedThread,messages.length]);
+
+  async function send(e:FormEvent) {
+    e.preventDefault();
+    if(!selectedThread||!body.trim())return;
+    const {error}=await supabase.from('chat_messages').insert({thread_id:selectedThread,sender_user_id:user.id,body:body.trim()});
+    if(error)alert(error.message);else setBody('');
+  }
+
+  async function archiveThread(thread:any){
+    const column=isAdmin?'archived_by_admin_at':'archived_by_partner_at';
+    const next=thread[column]?null:new Date().toISOString();
+    const {error}=await supabase.from('chat_threads').update({[column]:next,updated_at:new Date().toISOString()}).eq('id',thread.id);
+    if(error)alert(error.message);else{if(next&&selectedThread===thread.id)setSelectedThread(null);reload();}
+  }
+
+  async function markUnread(thread:any){
+    const column=isAdmin?'admin_marked_unread_at':'partner_marked_unread_at';
+    const {error}=await supabase.from('chat_threads').update({[column]:new Date().toISOString(),updated_at:new Date().toISOString()}).eq('id',thread.id);
+    if(error)alert(error.message);else reload();
+  }
+
+  async function deleteThread(thread:any){
+    if(!isAdmin)return;
+    if(!window.confirm('Supprimer définitivement cette conversation et tous ses messages ?'))return;
+    const {error}=await supabase.from('chat_threads').delete().eq('id',thread.id);
+    if(error)alert(error.message);else{setSelectedThread(null);reload();}
+  }
+
+  return <Section title="Chat interne" kicker="Bosphoras Partner Support" action={<button onClick={()=>setShowArchived(!showArchived)} className="inline-flex min-h-[42px] items-center gap-2 rounded-lg border border-[#cfd8e3] bg-white px-4 text-xs font-semibold text-[#526272]"><Archive size={14}/>{showArchived?'Masquer les archives':'Voir les archives'}</button>}>
+    <div className="grid min-h-[620px] overflow-hidden rounded-xl border border-[#d9e1e8] bg-white lg:grid-cols-[320px_1fr]">
+      <aside className="border-b border-[#d9e1e8] lg:border-b-0 lg:border-r">
+        <div className="p-4 text-xs font-bold uppercase tracking-[0.14em] text-[#687685]">{isAdmin?'Conversations partenaires':'Votre fil Bosphoras'}</div>
+        {visibleThreads.map((t:any)=>{
+          const unreadForThread=(notifications||[]).filter((n:any)=>!n.read_at&&n.notification_type==='chat_message'&&String(n.href||'').includes(t.id)).length;
+          const forcedUnread=Boolean(isAdmin?t.admin_marked_unread_at:t.partner_marked_unread_at);
+          const person=isAdmin?profileMap[t.partner_user_id]:null;
+          return <button key={t.id} onClick={()=>openThread(t.id)} className={`w-full border-t border-[#e7edf2] p-4 text-left ${selectedThread===t.id?'bg-[#edf3f7]':''}`}>
+            <div className="flex items-start gap-3">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full bg-[#e5edf2] text-xs font-bold text-[#315d7c]">{person?.avatar_url?<img src={person.avatar_url} alt="" className="h-full w-full object-cover"/>:(person?.full_name||'B').slice(0,1).toUpperCase()}</div>
+              <div className="min-w-0 flex-1">
+                <div className="flex items-start justify-between gap-2"><strong className="block truncate text-sm">{isAdmin?(person?.full_name||'Partenaire'):t.subject}</strong>{unreadForThread>0||forcedUnread?<span className="min-w-5 rounded-full bg-[#c76055] px-1.5 text-center text-[0.65rem] font-bold leading-5 text-white">{unreadForThread||'•'}</span>:null}</div>
+                <span className="mt-1 block text-xs text-[#7b8490]">{t.last_message_at?new Date(t.last_message_at).toLocaleString('fr-FR'):'Aucun message'}{(isAdmin?t.archived_by_admin_at:t.archived_by_partner_at)?' · archivé':''}</span>
+              </div>
+            </div>
+          </button>;
+        })}
+        {visibleThreads.length===0?<p className="p-5 text-sm text-[#687685]">{showArchived?'Aucune conversation.':'Aucune conversation active.'}</p>:null}
+      </aside>
+
+      <section className="flex min-h-[620px] flex-col">
+        {selected?<div className="flex flex-wrap items-center justify-between gap-3 border-b border-[#d9e1e8] bg-white p-4">
+          <div className="flex items-center gap-3">
+            <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-[#e5edf2] text-sm font-bold text-[#315d7c]">{selectedPartner?.avatar_url?<img src={selectedPartner.avatar_url} alt="" className="h-full w-full object-cover"/>:(selectedPartner?.full_name||'B').slice(0,1).toUpperCase()}</div>
+            <div><strong className="block text-sm">{isAdmin?(selectedPartner?.full_name||selected.subject):'Support Bosphoras'}</strong><span className="text-xs text-[#7b8794]">{isAdmin?(selectedPartner?.job_title||'Partenaire'):'Équipe Bosphoras'}</span></div>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <button onClick={()=>markUnread(selected)} className="rounded-lg border border-[#cfd8e3] px-3 py-2 text-xs font-semibold">Non lu</button>
+            <button onClick={()=>archiveThread(selected)} className="inline-flex items-center gap-1.5 rounded-lg border border-[#cfd8e3] px-3 py-2 text-xs font-semibold"><Archive size={13}/>{(isAdmin?selected.archived_by_admin_at:selected.archived_by_partner_at)?'Désarchiver':'Archiver'}</button>
+            {isAdmin?<button onClick={()=>deleteThread(selected)} className="inline-flex items-center gap-1.5 rounded-lg border border-[#b96363] px-3 py-2 text-xs font-semibold text-[#9b4444]"><Trash2 size={13}/>Supprimer</button>:null}
+          </div>
+        </div>:null}
+
+        <div className="flex-1 space-y-3 overflow-y-auto bg-[#f3f6f8] p-5">
+          {messages.map((m:any)=>{
+            const mine=m.sender_user_id===user.id;
+            const sender=profileMap[m.sender_user_id];
+            const readAt=mine?(isAdmin?m.read_by_partner_at:m.read_by_admin_at):null;
+            return <div key={m.id} className={`flex items-end gap-2 ${mine?'justify-end':'justify-start'}`}>
+              {!mine?<div className="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-full bg-white text-[0.65rem] font-bold text-[#315d7c]">{sender?.avatar_url?<img src={sender.avatar_url} alt="" className="h-full w-full object-cover"/>:(sender?.full_name||'B').slice(0,1).toUpperCase()}</div>:null}
+              <div className={`max-w-[78%] rounded-2xl px-4 py-3 text-sm leading-6 ${mine?'rounded-br-sm bg-[#12304a] text-white':'rounded-bl-sm bg-white text-[#303a46]'}`}>
+                <p>{m.body}</p>
+                <span className={`mt-1 flex items-center justify-end gap-1 text-[0.62rem] ${mine?'text-[#a9bfd0]':'text-[#8a929d]'}`}>
+                  {new Date(m.created_at).toLocaleString('fr-FR')}
+                  {mine?<><CheckCheck size={12}/>{readAt?'Lu':'Distribué'}</>:null}
+                </span>
+              </div>
+            </div>;
+          })}
+          {!selectedThread&&<p className="text-sm text-[#687685]">Sélectionnez une conversation.</p>}
+        </div>
+
+        <form onSubmit={send} className="flex gap-2 border-t border-[#d9e1e8] p-4">
+          <input value={body} onChange={e=>setBody(e.target.value)} disabled={!selectedThread} placeholder="Écrire un message…" className="min-h-[46px] flex-1 rounded-lg border border-[#d9e1e8] px-3 text-sm"/>
+          <button disabled={!selectedThread||!body.trim()} className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-[#12304a] text-white disabled:opacity-40"><Send size={16}/></button>
+        </form>
+      </section>
     </div>
   </Section>;
 }
