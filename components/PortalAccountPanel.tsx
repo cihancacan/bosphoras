@@ -5,7 +5,7 @@ import { BellRing, Camera, KeyRound, LockKeyhole, Save, ShieldCheck, UserRound }
 import { getPortalSupabase } from '@/lib/portalSupabase';
 
 export function PortalAccountPanel({ user, profile, partner }: { user:any; profile:any; partner?:any }) {
-  const supabase=getPortalSupabase();
+  const supabase:any=getPortalSupabase();
   const [password,setPassword]=useState('');
   const [confirm,setConfirm]=useState('');
   const [busy,setBusy]=useState(false);
