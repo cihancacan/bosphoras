@@ -45,6 +45,8 @@ function labels(locale: Locale) {
     privateCta: 'Lancer une recherche privée',
     privateHref: '/diagnostic-prive?subject=property-desk',
     filters: 'Filtres investisseurs',
+    interest: 'Intérêt promoteur',
+    interestFree: 'Sans intérêt',
   };
   if (locale === 'ru') return {
     title: 'Инвестиционные объекты',
@@ -63,6 +65,8 @@ function labels(locale: Locale) {
     privateCta: 'Запросить частный поиск',
     privateHref: '/ru/chastnaya-konsultatsiya?subject=property-desk',
     filters: 'Фильтры инвестора',
+    interest: 'Ставка застройщика',
+    interestFree: 'Без процентов',
   };
   if (locale === 'ar') return {
     title: 'فرص عقارية استثمارية',
@@ -81,6 +85,8 @@ function labels(locale: Locale) {
     privateCta: 'طلب بحث خاص',
     privateHref: '/ar/تقييم-خاص?subject=property-desk',
     filters: 'فلاتر المستثمر',
+    interest: 'فائدة المطور',
+    interestFree: 'بدون فوائد',
   };
   return {
     title: 'Property opportunities',
@@ -99,6 +105,8 @@ function labels(locale: Locale) {
     privateCta: 'Request a private search',
     privateHref: '/en/private-assessment?subject=property-desk',
     filters: 'Investor filters',
+    interest: 'Developer interest',
+    interestFree: 'Interest-free',
   };
 }
 
@@ -204,6 +212,11 @@ export function PropertyDeskBrowser({ locale, properties, globalMode = false }: 
             {filtered.map((property) => {
               const capitalLabel = formatEntryCapital(property, locale);
               const payBadge = paymentBadge(property, locale);
+              const interestLabel = property.paymentInterestMode === 'interest_bearing'
+                ? `${copy.interest}: ${property.paymentInterestRate !== undefined ? property.paymentInterestRate + '%' : '—'}`
+                : property.paymentInterestMode === 'interest_free'
+                  ? copy.interestFree
+                  : '';
               return (
                 <article key={property.id} className="group overflow-hidden rounded-2xl border border-[#d7dfdc] bg-white shadow-[0_18px_50px_rgba(20,40,36,0.05)] transition hover:-translate-y-1 hover:shadow-[0_24px_70px_rgba(20,40,36,0.10)]">
                   <Link href={getLocalePath(locale, getPropertyPath(locale, property, globalMode))} className="block">
@@ -216,6 +229,7 @@ export function PropertyDeskBrowser({ locale, properties, globalMode = false }: 
                       <div className="absolute left-4 top-4 flex flex-wrap gap-2">
                         <span className="rounded-full bg-[#12221f]/90 px-3 py-1.5 text-[0.64rem] font-semibold uppercase tracking-[0.1em] text-white">{collectionLabels[property.collection][locale]}</span>
                         {payBadge ? <span className="rounded-full bg-white/95 px-3 py-1.5 text-[0.64rem] font-semibold text-[#2f6d59]">{payBadge}</span> : null}
+                        {interestLabel ? <span className="rounded-full bg-[#f7ead0]/95 px-3 py-1.5 text-[0.64rem] font-semibold text-[#6f5429]">{interestLabel}</span> : null}
                       </div>
                     </div>
                     <div className="p-5 md:p-6">
