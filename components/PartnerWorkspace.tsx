@@ -375,7 +375,7 @@ export function PartnerWorkspace() {
             />
           )}
           {tab==='import' && isAdmin && <Section title="Importer une opportunité" kicker="Source partenaire → Bosphoras"><AdminPropertyImporter user={user} reload={loadAll}/></Section>}
-          {tab==='crm' && <ProfessionalCrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} listings={listings} partnerUsers={partnerUsers} reload={loadAll} canViewContactDetails={isAdmin||access.can_view_contact_details}/>}
+          {tab==='crm' && <ProfessionalCrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} listings={listings} partnerUsers={partnerUsers} reload={loadAll} canViewContactDetails={isAdmin||access.can_view_contact_details} canManageDeals={isAdmin||access.can_manage_deals}/>}
           {tab==='projects' && <Section title="Projets & unités" kicker="Promoteurs · projets · stock"><RealEstateInventoryPanel user={user} profile={profile} isAdmin={isAdmin} partners={partners}/></Section>}
           {tab==='transactions' && (isAdmin||access.can_manage_deals) && <TransactionsPanel user={user} isAdmin={isAdmin} contacts={contacts} deals={deals} listings={listings} reloadWorkspace={loadAll}/>}
           {tab==='agenda' && <Section title="Agenda & tâches" kicker="Relances · visites · priorités"><AgendaPanel user={user} profile={profile} isAdmin={isAdmin} contacts={contacts} deals={deals} listings={listings}/></Section>}
