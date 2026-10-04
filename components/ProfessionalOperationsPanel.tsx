@@ -37,6 +37,8 @@ export function ProfessionalOperationsPanel({
   listings,
   partners,
   partnerUsers,
+  initialArea='viewings',
+  lockedArea=false,
 }:{
   user:any;
   profile:any;
@@ -46,9 +48,11 @@ export function ProfessionalOperationsPanel({
   listings:any[];
   partners:any[];
   partnerUsers:any[];
+  initialArea?:Area;
+  lockedArea?:boolean;
 }) {
   const supabase=getPortalSupabase();
-  const [area,setArea]=useState<Area>('viewings');
+  const [area,setArea]=useState<Area>(initialArea);
   const [busy,setBusy]=useState(false);
   const [message,setMessage]=useState('');
   const [viewings,setViewings]=useState<any[]>([]);
@@ -213,7 +217,7 @@ export function ProfessionalOperationsPanel({
   return (
     <div className="space-y-7 [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',sans-serif]">
       <div className="flex flex-wrap gap-2 border-b border-[#d9e1e8] pb-4">
-        {[
+        {!lockedArea ? [
           ['viewings','Visites',CalendarDays],
           ['documents','Documents',FileText],
           ['commissions','Commissions',CircleDollarSign],
@@ -221,7 +225,7 @@ export function ProfessionalOperationsPanel({
           <button key={value} onClick={()=>setArea(value)} className={`inline-flex min-h-[42px] items-center gap-2 px-4 text-sm font-semibold ${area===value?'bg-[#12304a] text-white':'border border-[#cfd8e3] bg-white text-[#526272]'}`}>
             <Icon size={16}/>{title}
           </button>
-        ))}
+        )) : <span className="text-sm font-semibold text-[#526272]">{area==='documents'?'Coffre documentaire':area==='commissions'?'Commissions':'Visites'}</span>}
         <button onClick={reload} className="ml-auto inline-flex h-10 w-10 items-center justify-center border border-[#cfd8e3] bg-white text-[#526272]" aria-label="Actualiser">
           <RefreshCw size={15} className={busy?'animate-spin':''}/>
         </button>
