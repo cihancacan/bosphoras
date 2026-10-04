@@ -202,7 +202,7 @@ export function TransactionsPanel({user,isAdmin,contacts=[],deals=[],listings=[]
       '<div class="card"><strong>Offre / réservation</strong><p>Offre '+esc(offer?money(offer.proposed_price,offer.currency):'—')+'</p><p>Réservation '+esc(reservation?money(reservation.amount,reservation.currency):'—')+'</p></div></div>'+
       '<h2>Échéancier</h2><table><thead><tr><th>Étape</th><th>Date</th><th>Montant</th><th>Statut</th></tr></thead><tbody>'+rows+'</tbody></table>'+
       '<p class="footer">Document interne/confidentiel Bosphoras. Les prix et conditions doivent être confirmés contractuellement avant engagement.</p><script>window.onload=()=>window.print()</script></body></html>';
-    const win=window.open('','_blank','noopener,noreferrer');
+    const win=window.open('','_blank');
     if(!win){setMessage('Autorisez les fenêtres pop-up pour générer le PDF.');return;}
     win.document.open();win.document.write(html);win.document.close();
   }
