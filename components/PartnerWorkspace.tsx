@@ -404,6 +404,7 @@ export function PartnerWorkspace() {
             listings={listings}
             savedScenarios={savedScenarios}
             onSaved={loadAll}
+            allowExport={isAdmin}
           /></Section>}
           {tab==='partners' && isAdmin && <PartnerAdminCrmPanel partners={partners} partnerUsers={partnerUsers} contacts={contacts} deals={deals} reload={loadAll}/>}
           {tab==='account' && <Section title="Mon compte" kicker="Accès & sécurité"><PortalAccountPanel user={user} profile={profile} partner={partners.find((p:any)=>p.id===profile?.partner_id)} /></Section>}
