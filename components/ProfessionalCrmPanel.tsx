@@ -66,7 +66,7 @@ function requestGoalLabel(value:string){
   return map[value]||value||'—';
 }
 
-export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,reload}:any){
+export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,reload,canViewContactDetails=true}:any){
   const supabase=getPortalSupabase();
   const [activities,setActivities]=useState<any[]>([]);
   const [requests,setRequests]=useState<any[]>([]);
@@ -157,11 +157,11 @@ export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listin
     const q=search.trim().toLowerCase();
     if(!q)return true;
     return [
-      contact.first_name,contact.last_name,contact.company,contact.email,contact.phone,contact.whatsapp,
-      ...(contact.alternate_emails||[]),...(contact.alternate_phones||[]),...(contact.tags||[]),
-      contact.source,contact.nationality,contact.country_of_residence
+      contact.first_name,contact.last_name,contact.company,
+      ...(canViewContactDetails?[contact.email,contact.phone,contact.whatsapp,...(contact.alternate_emails||[]),...(contact.alternate_phones||[])]:[]),
+      ...(contact.tags||[]),contact.source,contact.nationality,contact.country_of_residence
     ].filter(Boolean).join(' ').toLowerCase().includes(q);
-  }),[contacts,status,priority,owner,search]);
+  }),[contacts,status,priority,owner,search,canViewContactDetails]);
 
   const overdueContacts=contacts.filter((c:any)=>actionMeta(c).tone==='late').length;
   const todayContacts=contacts.filter((c:any)=>actionMeta(c).tone==='today').length;
@@ -473,7 +473,7 @@ export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listin
                 <div className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-xs font-bold ${contact.lead_priority==='hot'?'bg-[#fbe6e3] text-[#9a443e]':contact.lead_priority==='cold'?'bg-[#eef0f2] text-[#6f7881]':'bg-[#e7eff3] text-[#315d7c]'}`}>{contactName(contact).slice(0,1).toUpperCase()}</div>
                 <div className="min-w-0 flex-1">
                   <div className="flex items-start justify-between gap-2"><strong className="truncate text-sm text-[#162334]">{contactName(contact)}</strong><span className="shrink-0 text-[0.62rem] font-semibold uppercase tracking-[0.06em] text-[#6e7a85]">{statusLabel(contact.status)}</span></div>
-                  <p className="mt-1 truncate text-xs text-[#7b8794]">{contact.phone||contact.email||contact.whatsapp||'Coordonnées à compléter'}</p>
+                  <p className="mt-1 truncate text-xs text-[#7b8794]">{canViewContactDetails?(contact.phone||contact.email||contact.whatsapp||'Coordonnées à compléter'):'Coordonnées protégées'}</p>
                   <div className={`mt-2 border-l-2 pl-2 ${action.tone==='late'?'border-[#c85f55]':action.tone==='today'?'border-[#c49336]':action.tone==='none'?'border-[#cbd3d8]':'border-[#5d8298]'}`}>
                     <p className={`truncate text-xs font-semibold ${action.tone==='late'?'text-[#a54b45]':action.tone==='today'?'text-[#896522]':action.tone==='none'?'text-[#858f97]':'text-[#46697e]'}`}>{action.text}</p>
                     <p className="mt-0.5 text-[0.68rem] text-[#8a949b]">{action.sub}{action.count>1?` · +${action.count-1}`:''}</p>
@@ -496,14 +496,14 @@ export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listin
                 <h2 className="mt-3 text-3xl font-semibold tracking-[-0.035em] text-[#162334]">{contactName(selected)}</h2>
                 <p className="mt-1 text-sm text-[#75818b]">{selected.company||selected.source||'Dossier investisseur'}</p>
               </div>
-              <div className="flex flex-wrap gap-2"><button onClick={()=>setEditing(!editing)} className="inline-flex items-center gap-2 border border-[#315d7c] px-3 py-2 text-xs font-semibold text-[#315d7c]"><Pencil size={13}/>{editing?'Fermer édition':'Modifier'}</button>{isAdmin?<button onClick={deleteContact} className="inline-flex items-center gap-2 border border-[#c97a73] px-3 py-2 text-xs font-semibold text-[#9d4b45]"><Trash2 size={13}/>Supprimer</button>:null}</div>
+              <div className="flex flex-wrap gap-2">{(isAdmin||canViewContactDetails)?<button onClick={()=>setEditing(!editing)} className="inline-flex items-center gap-2 border border-[#315d7c] px-3 py-2 text-xs font-semibold text-[#315d7c]"><Pencil size={13}/>{editing?'Fermer édition':'Modifier'}</button>:null}{isAdmin?<button onClick={deleteContact} className="inline-flex items-center gap-2 border border-[#c97a73] px-3 py-2 text-xs font-semibold text-[#9d4b45]"><Trash2 size={13}/>Supprimer</button>:null}</div>
             </div>
 
             {!editing?<div className="p-5">
               <div className="grid gap-5 lg:grid-cols-2">
                 <div>
                   <p className="text-[0.66rem] font-semibold uppercase tracking-[0.1em] text-[#71808b]">Coordonnées</p>
-                  <div className="mt-3 space-y-2 text-sm">
+                  {canViewContactDetails?<><div className="mt-3 space-y-2 text-sm">
                     <p className="flex items-center gap-2"><Phone size={14} className="text-[#315d7c]"/><span>{selected.phone||'—'}</span></p>
                     {selected.whatsapp?<p className="flex items-center gap-2"><MessageCircle size={14} className="text-[#315d7c]"/><span>{selected.whatsapp}</span></p>:null}
                     <p className="flex items-center gap-2"><Mail size={14} className="text-[#315d7c]"/><span>{selected.email||'—'}</span></p>
@@ -514,7 +514,7 @@ export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listin
                     {selected.phone?<a href={'tel:'+String(selected.phone).replace(/\s+/g,'')} className="inline-flex min-h-[36px] items-center gap-2 border border-[#cfd8e3] px-3 text-xs font-semibold text-[#315d7c]"><Phone size={13}/>Appeler</a>:null}
                     {selected.whatsapp||selected.phone?<a href={'https://wa.me/'+String(selected.whatsapp||selected.phone).replace(/\D+/g,'')} target="_blank" rel="noreferrer" className="inline-flex min-h-[36px] items-center gap-2 border border-[#cfd8e3] px-3 text-xs font-semibold text-[#315d7c]"><MessageCircle size={13}/>WhatsApp</a>:null}
                     {selected.email?<a href={'mailto:'+selected.email} className="inline-flex min-h-[36px] items-center gap-2 border border-[#cfd8e3] px-3 text-xs font-semibold text-[#315d7c]"><Mail size={13}/>E-mail</a>:null}
-                  </div>
+                  </div></>:<div className="mt-3 border border-[#d9e1e8] bg-[#f7f9fb] p-4 text-sm leading-6 text-[#687685]">Coordonnées masquées par l’administrateur. Vous pouvez travailler le dossier et les prochaines actions sans accéder aux données de contact directes.</div>}
                   <div className="mt-3 flex flex-wrap gap-2">{(selected.tags||[]).map((tag:string)=><span key={tag} className="inline-flex items-center gap-1 bg-[#eef3f6] px-2 py-1 text-xs text-[#526b7a]"><Tags size={11}/>{tag}</span>)}</div>
                 </div>
                 <div>
