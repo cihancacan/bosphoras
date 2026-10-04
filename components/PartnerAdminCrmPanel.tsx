@@ -31,7 +31,6 @@ function initials(name=''){
 }
 const defaultPermissions={
   can_view_contact_details:true,
-  can_create_listings:true,
   can_manage_deals:true,
   can_view_finance:false,
   can_download_documents:false,
@@ -295,7 +294,7 @@ export function PartnerAdminCrmPanel({
             </div>
           </section>
 
-          <section className="grid gap-px bg-[#d9e1e8] sm:grid-cols-2 xl:grid-cols-5">
+          <section className="grid gap-px bg-[#d9e1e8] sm:grid-cols-2 xl:grid-cols-4">
             {[
               ['Deals en cours',activeDeals.length,BriefcaseBusiness],
               ['Pipeline pondéré',money(pipelineValue,activeDeals[0]?.currency||'EUR'),CircleDollarSign],
@@ -347,7 +346,6 @@ export function PartnerAdminCrmPanel({
                 <div className="mt-4 grid gap-2 sm:grid-cols-2 xl:grid-cols-5">
                   {[
                     ['can_view_contact_details','Coordonnées clients'],
-                    ['can_create_listings','Créer annonces'],
                     ['can_manage_deals','Gérer deals'],
                     ['can_view_finance','Voir finance'],
                     ['can_download_documents','Télécharger documents'],
