@@ -66,7 +66,7 @@ function requestGoalLabel(value:string){
   return map[value]||value||'—';
 }
 
-export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,reload,canViewContactDetails=true}:any){
+export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,reload,canViewContactDetails=true,canManageDeals=true}:any){
   const supabase=getPortalSupabase();
   const [activities,setActivities]=useState<any[]>([]);
   const [requests,setRequests]=useState<any[]>([]);
@@ -649,8 +649,8 @@ export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listin
             </div>
 
             <div className="border border-[#d9e1e8] bg-white p-5">
-              <div className="flex items-center justify-between gap-3"><div><p className="text-[0.66rem] font-semibold uppercase tracking-[0.1em] text-[#315d7c]">Pipeline</p><h3 className="mt-1 text-xl font-semibold">Deals du contact</h3></div><button onClick={()=>setShowDeal(!showDeal)} className="inline-flex items-center gap-2 border border-[#315d7c] px-3 py-2 text-xs font-semibold text-[#315d7c]"><Plus size={13}/>Deal</button></div>
-              {showDeal?<form onSubmit={createDeal} className="mt-4 grid gap-3 border-b border-[#e5eaee] pb-4">
+              <div className="flex items-center justify-between gap-3"><div><p className="text-[0.66rem] font-semibold uppercase tracking-[0.1em] text-[#315d7c]">Pipeline</p><h3 className="mt-1 text-xl font-semibold">Deals du contact</h3></div>{canManageDeals?<button onClick={()=>setShowDeal(!showDeal)} className="inline-flex items-center gap-2 border border-[#315d7c] px-3 py-2 text-xs font-semibold text-[#315d7c]"><Plus size={13}/>Deal</button>:null}</div>
+              {showDeal&&canManageDeals?<form onSubmit={createDeal} className="mt-4 grid gap-3 border-b border-[#e5eaee] pb-4">
                 <input name="title" required placeholder="Nom du deal" className={input}/>
                 <select name="listing_id" className={input}><option value="">Sans bien attribué</option>{listings.map((l:any)=><option key={l.id} value={l.id}>{l.title?.fr||l.external_id}</option>)}</select>
                 <div className="grid grid-cols-[1fr_100px] gap-2"><input name="deal_value" placeholder="Valeur" inputMode="decimal" className={input}/><select name="currency" className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>AED</option></select></div>
@@ -659,7 +659,7 @@ export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listin
                 <button className="bg-[#12304a] px-4 py-2 text-xs font-semibold uppercase text-white">Créer</button>
               </form>:null}
               <div className="mt-3 space-y-3">
-                {selectedDeals.map((deal:any)=><article key={deal.id} className="border border-[#e5eaee] p-3"><div className="flex items-start justify-between gap-3"><div><span className="text-[0.62rem] font-semibold uppercase tracking-[0.08em] text-[#315d7c]">{deal.stage}</span><h4 className="mt-1 text-sm font-semibold">{deal.title}</h4><p className="mt-1 text-xs text-[#77838d]">{money(deal.deal_value,deal.currency)} · {deal.probability}%</p></div><select value={deal.stage} onChange={(e)=>dealStage(deal.id,e.target.value)} className="min-h-[34px] border border-[#d9e1e8] bg-white px-2 text-xs"><option value="lead">Lead</option><option value="qualified">Qualifié</option><option value="viewing">Visite</option><option value="offer">Offre</option><option value="reservation">Réservation</option><option value="due_diligence">Due diligence</option><option value="contract">Contrat</option><option value="closed_won">Gagné</option><option value="closed_lost">Perdu</option></select></div></article>)}
+                {selectedDeals.map((deal:any)=><article key={deal.id} className="border border-[#e5eaee] p-3"><div className="flex items-start justify-between gap-3"><div><span className="text-[0.62rem] font-semibold uppercase tracking-[0.08em] text-[#315d7c]">{deal.stage}</span><h4 className="mt-1 text-sm font-semibold">{deal.title}</h4><p className="mt-1 text-xs text-[#77838d]">{money(deal.deal_value,deal.currency)} · {deal.probability}%</p></div>{canManageDeals?<select value={deal.stage} onChange={(e)=>dealStage(deal.id,e.target.value)} className="min-h-[34px] border border-[#d9e1e8] bg-white px-2 text-xs"><option value="lead">Lead</option><option value="qualified">Qualifié</option><option value="viewing">Visite</option><option value="offer">Offre</option><option value="reservation">Réservation</option><option value="due_diligence">Due diligence</option><option value="contract">Contrat</option><option value="closed_won">Gagné</option><option value="closed_lost">Perdu</option></select>:<span className="text-xs text-[#7b8794]">Lecture seule</span>}</div></article>)}
                 {!selectedDeals.length?<p className="py-4 text-sm text-[#7b8794]">Aucun deal pour ce contact.</p>:null}
               </div>
             </div>
