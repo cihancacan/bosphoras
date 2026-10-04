@@ -7,7 +7,7 @@ import {
   ChevronRight, CircleDollarSign, Clock3, FileLock2, History, Mail, MessageCircle,
   Phone, Plus, Search, ShieldCheck, Star, UserRound, Users
 } from 'lucide-react';
-import { getPortalSupabase } from '@/lib/portalSupabase';
+import { createIsolatedPortalSupabase, getPortalSupabase } from '@/lib/portalSupabase';
 
 function money(value:any,currency='EUR'){
   const n=Number(value||0);
@@ -52,6 +52,8 @@ export function PartnerAdminCrmPanel({
   const [audit,setAudit]=useState<any[]>([]);
   const [busy,setBusy]=useState(false);
   const [message,setMessage]=useState('');
+  const [showCreate,setShowCreate]=useState(false);
+  const [created,setCreated]=useState<any>(null);
 
   useEffect(()=>{if(!selectedId&&partners[0]?.id)setSelectedId(partners[0].id);},[partners,selectedId]);
 
@@ -116,6 +118,38 @@ export function PartnerAdminCrmPanel({
       return row.metadata?.partner_id===partner.id;
     }).slice(0,100);
   },[audit,partner?.id,userIds.join('|'),dealIds.join('|')]);
+
+  async function createPartner(e:FormEvent<HTMLFormElement>){
+    e.preventDefault();
+    setBusy(true);setMessage('');setCreated(null);
+    try{
+      const fd=new FormData(e.currentTarget);
+      const email=String(fd.get('email')||'').trim().toLowerCase();
+      const password=String(fd.get('password')||'');
+      const fullName=String(fd.get('full_name')||'').trim();
+      const company=String(fd.get('company')||'').trim();
+      const phone=String(fd.get('phone')||'').trim();
+      const city=String(fd.get('city')||'').trim();
+      if(password.length<10)throw new Error('Le mot de passe initial doit contenir au moins 10 caractères.');
+
+      const {data:prepared,error:prepareError}=await supabase.rpc('admin_prepare_partner_account',{
+        p_email:email,p_company_name:company,p_full_name:fullName,p_phone:phone||null,p_city:city||null,p_country:'TR'
+      });
+      if(prepareError)throw prepareError;
+
+      const isolated=createIsolatedPortalSupabase();
+      const {data:signup,error:signupError}=await isolated.auth.signUp({
+        email,password,options:{data:{full_name:fullName,provision_code:prepared.provision_code}}
+      });
+      if(signupError)throw signupError;
+
+      setCreated({email,fullName,company,sessionReady:Boolean(signup.session)});
+      e.currentTarget.reset();setShowCreate(false);
+      setMessage('Compte partenaire créé.');
+      await reload?.();await loadAdminData();
+    }catch(e:any){setMessage(e?.message||'Création impossible.');}
+    finally{setBusy(false);}
+  }
 
   async function status(id:string,next:string){
     setBusy(true);setMessage('');
@@ -193,11 +227,26 @@ export function PartnerAdminCrmPanel({
   const label='grid gap-1.5 text-[0.64rem] font-semibold uppercase tracking-[0.08em] text-[#687685]';
 
   return <section>
-    <div className="mb-6">
-      <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#315d7c]">Réseau · performance · contrôle d’accès</p>
-      <h1 className="mt-2 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">CRM partenaires</h1>
-      <p className="mt-3 max-w-3xl text-sm leading-6 text-[#687685]">Chaque partenaire possède une fiche unique synchronisée avec les informations qu’il renseigne dans son compte. Les données internes, la notation, le risque et l’historique d’audit restent réservés à l’administration.</p>
+    <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#315d7c]">Réseau · performance · contrôle d’accès</p>
+        <h1 className="mt-2 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">CRM partenaires</h1>
+        <p className="mt-3 max-w-3xl text-sm leading-6 text-[#687685]">Chaque partenaire possède une fiche unique synchronisée avec les informations qu’il renseigne dans son compte. Les données internes, la notation, le risque et l’historique d’audit restent réservés à l’administration.</p>
+      </div>
+      <button onClick={()=>setShowCreate((v)=>!v)} className="inline-flex min-h-[44px] items-center gap-2 bg-[#12304a] px-5 text-xs font-semibold uppercase tracking-[0.08em] text-white"><Plus size={14}/>{showCreate?'Fermer':'Nouveau partenaire'}</button>
     </div>
+
+    {showCreate?<form onSubmit={createPartner} className="mb-5 grid gap-3 border border-[#d9e1e8] bg-white p-5 md:grid-cols-3">
+      <input name="company" required placeholder="Société partenaire" className={input}/>
+      <input name="full_name" required placeholder="Nom du contact" className={input}/>
+      <input name="email" type="email" required placeholder="E-mail de connexion" className={input}/>
+      <input name="password" type="password" required minLength={10} placeholder="Mot de passe initial" className={input}/>
+      <input name="phone" placeholder="Téléphone" className={input}/>
+      <input name="city" placeholder="Ville / bureau" className={input}/>
+      <button disabled={busy} className="min-h-[42px] bg-[#12304a] px-4 text-xs font-semibold uppercase text-white md:col-span-3">{busy?'Création…':'Créer le compte partenaire'}</button>
+    </form>:null}
+
+    {created?<div className="mb-5 border border-[#b9cbd8] bg-[#f7fbfd] p-4 text-sm text-[#526272]"><strong className="text-[#162334]">{created.fullName} · {created.company}</strong><p className="mt-1">Identifiant : {created.email}. {created.sessionReady?'Compte utilisable immédiatement.':'Une confirmation e-mail peut être nécessaire selon la configuration Auth.'}</p></div>:null}
 
     {message?<div className="mb-5 border border-[#d9e1e8] bg-white px-4 py-3 text-sm text-[#526272]">{message}</div>:null}
 
