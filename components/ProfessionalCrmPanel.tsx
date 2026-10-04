@@ -510,7 +510,12 @@ export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listin
                     {(selected.alternate_phones||[]).map((x:string)=><p key={x} className="flex items-center gap-2 pl-6 text-[#596771]"><span>+ téléphone : {x}</span></p>)}
                     {(selected.alternate_emails||[]).map((x:string)=><p key={x} className="flex items-center gap-2 pl-6 text-[#596771]"><span>+ e-mail : {x}</span></p>)}
                   </div>
-                  <div className="mt-4 flex flex-wrap gap-2">{(selected.tags||[]).map((tag:string)=><span key={tag} className="inline-flex items-center gap-1 bg-[#eef3f6] px-2 py-1 text-xs text-[#526b7a]"><Tags size={11}/>{tag}</span>)}</div>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {selected.phone?<a href={'tel:'+String(selected.phone).replace(/\s+/g,'')} className="inline-flex min-h-[36px] items-center gap-2 border border-[#cfd8e3] px-3 text-xs font-semibold text-[#315d7c]"><Phone size={13}/>Appeler</a>:null}
+                    {selected.whatsapp||selected.phone?<a href={'https://wa.me/'+String(selected.whatsapp||selected.phone).replace(/\D+/g,'')} target="_blank" rel="noreferrer" className="inline-flex min-h-[36px] items-center gap-2 border border-[#cfd8e3] px-3 text-xs font-semibold text-[#315d7c]"><MessageCircle size={13}/>WhatsApp</a>:null}
+                    {selected.email?<a href={'mailto:'+selected.email} className="inline-flex min-h-[36px] items-center gap-2 border border-[#cfd8e3] px-3 text-xs font-semibold text-[#315d7c]"><Mail size={13}/>E-mail</a>:null}
+                  </div>
+                  <div className="mt-3 flex flex-wrap gap-2">{(selected.tags||[]).map((tag:string)=><span key={tag} className="inline-flex items-center gap-1 bg-[#eef3f6] px-2 py-1 text-xs text-[#526b7a]"><Tags size={11}/>{tag}</span>)}</div>
                 </div>
                 <div>
                   <p className="text-[0.66rem] font-semibold uppercase tracking-[0.1em] text-[#71808b]">Profil & contact</p>
