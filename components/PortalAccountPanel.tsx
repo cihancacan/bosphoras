@@ -140,6 +140,16 @@ export function PortalAccountPanel({ user, profile, partner }: { user:any; profi
         </form>
       </section>
 
+      {localProfile.role!=='admin'?<section className="border border-[#d9e1e8] bg-[#f7f9fb] p-5">
+        <div className="flex items-start gap-3">
+          <ShieldCheck size={19} className="mt-0.5 shrink-0 text-[#315d7c]"/>
+          <div>
+            <h2 className="text-base font-semibold text-[#162334]">Sécurité & traçabilité</h2>
+            <p className="mt-1 text-sm leading-6 text-[#687685]">Pour protéger les clients, les actifs et les échanges Bosphoras, les changements importants du compte et les actions opérationnelles sensibles peuvent être journalisés avec leur date et leur auteur. Ces journaux servent à la sécurité, à la conformité et au suivi interne.</p>
+          </div>
+        </div>
+      </section>:null}
+
       <section className="grid gap-6 lg:grid-cols-2">
         <div className="border border-[#d9e1e8] bg-white p-6">
           <div className="flex items-center gap-3">
