@@ -24,6 +24,7 @@ import { ProfessionalListingsPanel } from '@/components/ProfessionalListingsPane
 import { BackofficeLocaleBridge } from '@/components/BackofficeLocaleBridge';
 import { PortalAccountPanel } from '@/components/PortalAccountPanel';
 import { PortalNotificationBridge } from '@/components/PortalNotificationBridge';
+import { PartnerAdminCrmPanel } from '@/components/PartnerAdminCrmPanel';
 
 type Tab = 'dashboard' | 'crm' | 'projects' | 'listings' | 'transactions' | 'agenda' | 'documents' | 'finance' | 'reports' | 'import' | 'chat' | 'calculators' | 'partners' | 'approvals' | 'account';
 
@@ -79,6 +80,7 @@ export function PartnerWorkspace() {
       return;
     }
     setProfile(profileData);
+    await supabase.from('profiles').update({last_seen_at:new Date().toISOString()}).eq('user_id',authData.user.id);
 
     const requests: any[] = [
       supabase.from('property_listing_submissions').select('*').order('created_at', { ascending: false }),
@@ -183,6 +185,13 @@ export function PartnerWorkspace() {
     if (requestedThread) setSelectedThread(requestedThread);
   }, []);
 
+  useEffect(()=>{
+    if(!profile)return;
+    if(!isAdmin&&['reports','partners','approvals','import'].includes(tab))setTab('dashboard');
+    if(!isAdmin&&tab==='finance'&&!profile?.permissions?.can_view_finance)setTab('dashboard');
+  },[profile,isAdmin,tab]);
+
+
   async function openTab(next: Tab) {
     setTab(next);
     if (!user?.id) return;
@@ -247,15 +256,14 @@ export function PartnerWorkspace() {
       ['transactions','Transactions',CircleDollarSign],
       ['agenda','Agenda & tâches',CheckCheck],
       ['documents','Documents',Archive],
-      ['finance','Finance',Calculator],
-      ['reports','Rapports',Archive],
+      ...(isAdmin||profile?.permissions?.can_view_finance?[['finance','Finance',Calculator]]:[]),
       ['chat','Chat interne',MessageCircle],
       ['calculators','Calculateurs',Calculator],
       ['account','Mon compte',UserRound],
     ] as any[];
-    if (isAdmin) base.push(['import','Importer par lien',Link2],['partners','Partenaires',Users],['approvals','Validations',ClipboardCheck]);
+    if (isAdmin) base.push(['reports','Rapports',Archive],['import','Importer par lien',Link2],['partners','Partenaires',Users],['approvals','Validations',ClipboardCheck]);
     return base;
-  }, [isAdmin]);
+  }, [isAdmin, profile?.permissions]);
 
   if (loading) {
     return <div className="flex min-h-screen items-center justify-center bg-[#0f1725] text-white"><RefreshCw className="animate-spin" /></div>;
@@ -358,7 +366,7 @@ export function PartnerWorkspace() {
             />
           )}
           {tab==='import' && isAdmin && <Section title="Importer une opportunité" kicker="Source partenaire → Bosphoras"><AdminPropertyImporter user={user} reload={loadAll}/></Section>}
-          {tab==='crm' && <ProfessionalCrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} listings={listings} partnerUsers={partnerUsers} reload={loadAll}/>}
+          {tab==='crm' && <ProfessionalCrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} listings={listings} partnerUsers={partnerUsers} reload={loadAll} canViewContactDetails={isAdmin||profile?.permissions?.can_view_contact_details!==false}/>}
           {tab==='projects' && <Section title="Projets & unités" kicker="Promoteurs · projets · stock"><RealEstateInventoryPanel user={user} profile={profile} isAdmin={isAdmin} partners={partners}/></Section>}
           {tab==='transactions' && <TransactionsPanel user={user} isAdmin={isAdmin} contacts={contacts} deals={deals} listings={listings} reloadWorkspace={loadAll}/>}
           {tab==='agenda' && <Section title="Agenda & tâches" kicker="Relances · visites · priorités"><AgendaPanel user={user} profile={profile} isAdmin={isAdmin} contacts={contacts} deals={deals} listings={listings}/></Section>}
@@ -374,7 +382,8 @@ export function PartnerWorkspace() {
             initialArea="documents"
             lockedArea
           /></Section>}
-          {tab==='finance' && <FinancePanel isAdmin={isAdmin} deals={deals}/>}\n          {tab==='reports' && <ReportsPanel contacts={contacts} deals={deals}/>}
+          {tab==='finance' && (isAdmin||profile?.permissions?.can_view_finance) && <FinancePanel isAdmin={isAdmin} deals={deals}/>}
+          {tab==='reports' && isAdmin && <ReportsPanel contacts={contacts} deals={deals}/>}
           {tab==='chat' && <ChatPanel isAdmin={isAdmin} user={user} threads={threads} profileCards={profileCards} partnerUsers={partnerUsers} selectedThread={selectedThread} setSelectedThread={setSelectedThread} messages={messages} notifications={notifications} reload={loadAll}/>}
 
           {tab==='calculators' && <Section title="Calculateurs investissement" kicker="Bosphoras Analysis"><InvestmentCalculator
@@ -387,7 +396,7 @@ export function PartnerWorkspace() {
             savedScenarios={savedScenarios}
             onSaved={loadAll}
           /></Section>}
-          {tab==='partners' && isAdmin && <PartnersPanel partners={partners} partnerUsers={partnerUsers} reload={loadAll}/>}
+          {tab==='partners' && isAdmin && <PartnerAdminCrmPanel partners={partners} partnerUsers={partnerUsers} contacts={contacts} deals={deals} reload={loadAll}/>}
           {tab==='account' && <Section title="Mon compte" kicker="Accès & sécurité"><PortalAccountPanel user={user} profile={profile} partner={partners.find((p:any)=>p.id===profile?.partner_id)} /></Section>}
           {tab==='approvals' && isAdmin && <ApprovalsPanel submissions={submissions} reload={loadAll}/>}
         </main>
