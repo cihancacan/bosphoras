@@ -377,7 +377,7 @@ export function PartnerWorkspace() {
           {tab==='import' && isAdmin && <Section title="Importer une opportunité" kicker="Source partenaire → Bosphoras"><AdminPropertyImporter user={user} reload={loadAll}/></Section>}
           {tab==='crm' && <ProfessionalCrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} listings={listings} partnerUsers={partnerUsers} reload={loadAll} canViewContactDetails={isAdmin||access.can_view_contact_details}/>}
           {tab==='projects' && <Section title="Projets & unités" kicker="Promoteurs · projets · stock"><RealEstateInventoryPanel user={user} profile={profile} isAdmin={isAdmin} partners={partners}/></Section>}
-          {tab==='transactions' && <TransactionsPanel user={user} isAdmin={isAdmin} contacts={contacts} deals={deals} listings={listings} reloadWorkspace={loadAll}/>}
+          {tab==='transactions' && (isAdmin||access.can_manage_deals) && <TransactionsPanel user={user} isAdmin={isAdmin} contacts={contacts} deals={deals} listings={listings} reloadWorkspace={loadAll}/>}
           {tab==='agenda' && <Section title="Agenda & tâches" kicker="Relances · visites · priorités"><AgendaPanel user={user} profile={profile} isAdmin={isAdmin} contacts={contacts} deals={deals} listings={listings}/></Section>}
           {tab==='documents' && (isAdmin||access.can_download_documents) && <Section title="Documents" kicker="Coffre partenaire · conformité"><ProfessionalOperationsPanel
             user={user}
@@ -391,7 +391,7 @@ export function PartnerWorkspace() {
             initialArea="documents"
             lockedArea
           /></Section>}
-          {tab==='finance' && (isAdmin||profile?.permissions?.can_view_finance) && <FinancePanel isAdmin={isAdmin} deals={deals}/>}
+          {tab==='finance' && (isAdmin||access.can_view_finance) && <FinancePanel isAdmin={isAdmin} deals={deals}/>}
           {tab==='reports' && isAdmin && <ReportsPanel contacts={contacts} deals={deals}/>}
           {tab==='chat' && <ChatPanel isAdmin={isAdmin} user={user} threads={threads} profileCards={profileCards} partnerUsers={partnerUsers} selectedThread={selectedThread} setSelectedThread={setSelectedThread} messages={messages} notifications={notifications} reload={loadAll}/>}
 
