@@ -21,6 +21,8 @@ function dueTone(date?:string,status?:string){
   return new Date(date).getTime()<Date.now()?'text-[#a85656]':'text-[#687685]';
 }
 
+function esc(value:any){return String(value??'').replace(/[&<>"']/g,(m)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'} as any)[m]);}
+
 export function TransactionsPanel({user,isAdmin,contacts=[],deals=[],listings=[],reloadWorkspace}:{user:any;isAdmin:boolean;contacts:any[];deals:any[];listings:any[];reloadWorkspace?:()=>void}){
   const supabase=getPortalSupabase();
   const [projects,setProjects]=useState<any[]>([]);
@@ -184,6 +186,27 @@ export function TransactionsPanel({user,isAdmin,contacts=[],deals=[],listings=[]
     if(error)setMessage(error.message);else if(data?.signedUrl)window.open(data.signedUrl,'_blank','noopener,noreferrer');
   }
 
+  function printTransaction(){
+    if(!selected)return;
+    const contact=contactById[selected.contact_id];
+    const project=projectById[selected.project_id];
+    const unit=unitById[selected.unit_id];
+    const offer=selectedOffers[0];
+    const reservation=selectedReservations[0];
+    const rows=selectedPayments.map((p:any)=>'<tr><td>'+esc(p.label)+'</td><td>'+esc(p.due_date||'—')+'</td><td>'+esc(money(p.amount,p.currency))+'</td><td>'+esc(p.status)+'</td></tr>').join('');
+    const html='<!doctype html><html><head><meta charset="utf-8"><title>'+esc(selected.title)+'</title><style>body{font-family:Arial,sans-serif;color:#172334;margin:36px}h1{font-size:28px;margin:0 0 6px}.muted{color:#697887}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}.card{border:1px solid #d9e1e8;padding:14px}table{width:100%;border-collapse:collapse;margin-top:14px}th,td{border-bottom:1px solid #e7edf2;padding:9px;text-align:left;font-size:12px}th{background:#f4f7f9}.footer{margin-top:32px;font-size:10px;color:#778590}@media print{button{display:none}}</style></head><body>'+
+      '<p class="muted">BOSPHORAS · PROPERTY & INVESTMENT</p><h1>'+esc(selected.title)+'</h1><p class="muted">Dossier transaction · '+esc(new Date().toLocaleDateString('fr-FR'))+'</p>'+
+      '<div class="grid"><div class="card"><strong>Client</strong><p>'+esc(cname(contact))+'</p><p>'+esc(contact?.email||'')+'<br>'+esc(contact?.phone||contact?.whatsapp||'')+'</p></div>'+
+      '<div class="card"><strong>Actif</strong><p>'+esc(project?.name||listingById[selected.listing_id]?.title?.fr||'—')+'</p><p>'+esc(unitLabel(unit))+'</p></div>'+
+      '<div class="card"><strong>Transaction</strong><p>'+esc(selected.stage)+' · '+esc(money(selected.deal_value,selected.currency))+'</p><p>Probabilité '+esc(selected.probability)+' %</p></div>'+
+      '<div class="card"><strong>Offre / réservation</strong><p>Offre '+esc(offer?money(offer.proposed_price,offer.currency):'—')+'</p><p>Réservation '+esc(reservation?money(reservation.amount,reservation.currency):'—')+'</p></div></div>'+
+      '<h2>Échéancier</h2><table><thead><tr><th>Étape</th><th>Date</th><th>Montant</th><th>Statut</th></tr></thead><tbody>'+rows+'</tbody></table>'+
+      '<p class="footer">Document interne/confidentiel Bosphoras. Les prix et conditions doivent être confirmés contractuellement avant engagement.</p><script>window.onload=()=>window.print()</script></body></html>';
+    const win=window.open('','_blank','noopener,noreferrer');
+    if(!win){setMessage('Autorisez les fenêtres pop-up pour générer le PDF.');return;}
+    win.document.open();win.document.write(html);win.document.close();
+  }
+
   const input='min-h-[40px] w-full border border-[#cfd8e3] bg-white px-3 text-sm outline-none';
   const label='grid gap-1 text-[0.64rem] font-semibold uppercase tracking-[0.08em] text-[#687685]';
   const paid=selectedPayments.reduce((s:number,p:any)=>s+Number(p.amount_paid||0),0);
@@ -210,7 +233,7 @@ export function TransactionsPanel({user,isAdmin,contacts=[],deals=[],listings=[]
     {selected?<div className="grid gap-6 xl:grid-cols-[minmax(0,1.35fr)_minmax(360px,0.65fr)]">
       <section className="space-y-5">
         <div className="border border-[#d9e1e8] bg-[#132538] p-6 text-white">
-          <div className="flex flex-wrap items-start justify-between gap-4"><div><span className="text-[0.65rem] uppercase tracking-[0.1em] text-[#9eb6c8]">{selected.stage}</span><h3 className="mt-1 text-3xl font-semibold">{selected.title}</h3><p className="mt-2 text-sm text-[#b8c8d5]">{cname(contactById[selected.contact_id])}</p></div><div className="text-right"><strong className="text-2xl">{money(selected.deal_value,selected.currency)}</strong><span className="mt-1 block text-xs text-[#a9bfd0]">{selected.probability}% probabilité</span></div></div>
+          <div className="flex flex-wrap items-start justify-between gap-4"><div><span className="text-[0.65rem] uppercase tracking-[0.1em] text-[#9eb6c8]">{selected.stage}</span><h3 className="mt-1 text-3xl font-semibold">{selected.title}</h3><p className="mt-2 text-sm text-[#b8c8d5]">{cname(contactById[selected.contact_id])}</p></div><div className="text-right"><strong className="text-2xl">{money(selected.deal_value,selected.currency)}</strong><span className="mt-1 block text-xs text-[#a9bfd0]">{selected.probability}% probabilité</span><button onClick={printTransaction} className="mt-3 border border-white/30 px-3 py-2 text-xs font-semibold text-white">Imprimer / PDF</button></div></div>
           <div className="mt-5 grid gap-3 md:grid-cols-2">
             <select value={selected.project_id||''} onChange={e=>assignAsset(e.target.value,'')} className="min-h-[40px] bg-white px-3 text-sm text-[#162334]"><option value="">Projet non attribué</option>{projects.map((p:any)=><option key={p.id} value={p.id}>{p.name}</option>)}</select>
             <select value={selected.unit_id||''} onChange={e=>assignAsset(selected.project_id||'',e.target.value)} className="min-h-[40px] bg-white px-3 text-sm text-[#162334]"><option value="">Unité non attribuée</option>{projectUnits.map((u:any)=><option key={u.id} value={u.id}>{unitLabel(u)} · {money(u.list_price,u.currency)}</option>)}</select>
