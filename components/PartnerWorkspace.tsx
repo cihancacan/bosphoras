@@ -651,6 +651,11 @@ function PartnersPanel({partners,partnerUsers,reload}:any) {
     if(error)alert(error.message);else reload();
   }
 
+  async function updateWorkspaceRole(userId:string,workspaceRole:string){
+    const {error}=await supabase.from('profiles').update({workspace_role:workspaceRole,updated_at:new Date().toISOString()}).eq('user_id',userId);
+    if(error)alert(error.message);else reload();
+  }
+
   async function updateTerms(partnerId:string,patch:any){
     const current=terms.find((x:any)=>x.partner_id===partnerId)||{};
     const payload={
@@ -725,6 +730,11 @@ function PartnersPanel({partners,partnerUsers,reload}:any) {
             <button className="min-h-[40px] border border-[#12304a] px-4 text-xs font-semibold uppercase text-[#12304a] md:col-span-2">Enregistrer la société</button>
           </form>
 
+          <div className="space-y-4">
+            <div className="border border-[#e7edf2] bg-white p-4">
+              <h4 className="text-sm font-semibold text-[#162334]">Utilisateurs & rôles opérationnels</h4>
+              <div className="mt-3 space-y-3">{(usersByPartner[partner.id]||[]).map((u:any)=><div key={u.user_id} className="grid gap-2 border border-[#e8edf1] p-3 md:grid-cols-[1fr_180px] md:items-center"><div><strong className="block text-sm">{u.full_name||u.email}</strong><span className="text-xs text-[#687685]">{u.email}</span></div><select value={u.workspace_role||'partner'} onChange={(e)=>updateWorkspaceRole(u.user_id,e.target.value)} className="min-h-[38px] border border-[#cfd8e3] bg-white px-2 text-xs"><option value="partner">Partenaire</option><option value="advisor">Conseiller</option><option value="operations">Opérations</option><option value="finance">Finance</option><option value="read_only">Lecture seule</option></select></div>)}{!(usersByPartner[partner.id]||[]).length?<p className="text-sm text-[#687685]">Aucun utilisateur actif.</p>:null}</div>
+            </div>
           <div className="border border-[#e7edf2] bg-[#f7f9fb] p-4">
             <h4 className="text-sm font-semibold text-[#162334]">Cadre partenaire</h4>
             <div className="mt-4 grid gap-3">
@@ -744,6 +754,7 @@ function PartnersPanel({partners,partnerUsers,reload}:any) {
                 <textarea defaultValue={term.admin_notes||''} onBlur={(e)=>updateTerms(partner.id,{admin_notes:e.target.value||null})} rows={3} className="border border-[#cfd8e3] bg-white px-2 py-2 text-sm normal-case tracking-normal"/>
               </label>
             </div>
+          </div>
           </div>
         </div>
       </article>;
