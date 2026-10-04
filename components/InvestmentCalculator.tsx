@@ -119,9 +119,9 @@ function derivePlan(listing:any){
 }
 
 export function InvestmentCalculator({
-  locale='fr',userId,partnerId,contacts=[],deals=[],listings=[],savedScenarios=[],onSaved,
+  locale='fr',userId,partnerId,contacts=[],deals=[],listings=[],savedScenarios=[],onSaved,allowExport=true,
 }:{
-  locale?:DeskLocale;userId?:string;partnerId?:string|null;contacts?:any[];deals?:any[];listings?:any[];savedScenarios?:any[];onSaved?:()=>void;
+  locale?:DeskLocale;userId?:string;partnerId?:string|null;contacts?:any[];deals?:any[];listings?:any[];savedScenarios?:any[];onSaved?:()=>void;allowExport?:boolean;
 }={}){
   const l=(['fr','en','ru'].includes(locale)?locale:'fr') as DeskLocale;
   const c=C[l];
@@ -330,7 +330,7 @@ export function InvestmentCalculator({
     <section className="border border-[#cdd9e0] bg-[#f7fafb] p-5 md:p-6">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div><div className="flex items-center gap-2 text-[#315d7c]"><Link2 size={18}/><strong className="text-xs uppercase tracking-[0.12em]">Bosphoras Investor File</strong></div><h2 className="mt-2 text-2xl font-semibold tracking-[-0.025em] text-[#162334]">{c.dossier}</h2><p className="mt-2 max-w-3xl text-sm leading-6 text-[#687685]">{c.dossierText}</p></div>
-        <button type="button" onClick={generateReport} disabled={reportBusy} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-sm font-semibold text-white disabled:opacity-50"><FileDown size={16}/>{reportBusy?c.loadingReport:c.pdf}</button>
+        {allowExport?<button type="button" onClick={generateReport} disabled={reportBusy} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-sm font-semibold text-white disabled:opacity-50"><FileDown size={16}/>{reportBusy?c.loadingReport:c.pdf}</button>:null}
       </div>
       <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         <label className={labelClass}>{c.clientLink}{yesNo(useClient,(v)=>{setUseClient(v);if(!v)setScenarioContactId('');})}</label>
@@ -391,7 +391,7 @@ export function InvestmentCalculator({
       <div className="mt-6 grid gap-3 md:grid-cols-2 xl:grid-cols-5">
         {[[c.cashPrice,result.developerCashPrice],[c.installmentPrice,result.developerInstallmentTotal],[c.today,result.developerDeposit],[c.developerMonthly,result.developerMonthly],[c.handover,result.developerBalloon]].map(([label,value])=><div key={label} className="bg-white p-5"><span className="text-xs font-semibold uppercase tracking-[0.08em] text-[#657586]">{label}</span><strong className="mt-2 block text-xl font-semibold">{money(Number(value),currency,l)}</strong></div>)}
       </div>
-      <div className="mt-5 flex flex-wrap items-center gap-3"><button type="button" onClick={generateReport} disabled={reportBusy} className="inline-flex min-h-[44px] items-center gap-2 border border-[#12304a] bg-white px-5 text-sm font-semibold text-[#12304a] disabled:opacity-50"><FileDown size={16}/>{reportBusy?c.loadingReport:c.pdf}</button><span className="max-w-2xl text-xs leading-5 text-[#687685]">{c.pdfText}</span></div>
+      {allowExport?<div className="mt-5 flex flex-wrap items-center gap-3"><button type="button" onClick={generateReport} disabled={reportBusy} className="inline-flex min-h-[44px] items-center gap-2 border border-[#12304a] bg-white px-5 text-sm font-semibold text-[#12304a] disabled:opacity-50"><FileDown size={16}/>{reportBusy?c.loadingReport:c.pdf}</button><span className="max-w-2xl text-xs leading-5 text-[#687685]">{c.pdfText}</span></div>:null}
     </section>
 
     {userId?<section className="border border-[#d9e1e8] bg-white p-5 md:p-6">
