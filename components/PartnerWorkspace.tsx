@@ -188,8 +188,10 @@ export function PartnerWorkspace() {
   useEffect(()=>{
     if(!profile)return;
     if(!isAdmin&&['reports','partners','approvals','import'].includes(tab))setTab('dashboard');
-    if(!isAdmin&&tab==='finance'&&!profile?.permissions?.can_view_finance)setTab('dashboard');
-  },[profile,isAdmin,tab]);
+    if(!isAdmin&&tab==='finance'&&!access.can_view_finance)setTab('dashboard');
+    if(!isAdmin&&tab==='documents'&&!access.can_download_documents)setTab('dashboard');
+    if(!isAdmin&&tab==='transactions'&&!access.can_manage_deals)setTab('dashboard');
+  },[profile,isAdmin,tab,access.can_view_finance,access.can_download_documents,access.can_manage_deals]);
 
 
   async function openTab(next: Tab) {
@@ -247,23 +249,30 @@ export function PartnerWorkspace() {
     .filter(d => d.stage !== 'closed_lost')
     .reduce((sum, d) => sum + Number(d.deal_value || 0) * (Number(d.probability || 0) / 100), 0);
 
+  const access = {
+    can_view_contact_details: profile?.permissions?.can_view_contact_details !== false,
+    can_manage_deals: profile?.permissions?.can_manage_deals !== false,
+    can_view_finance: profile?.permissions?.can_view_finance === true,
+    can_download_documents: profile?.permissions?.can_download_documents === true,
+  };
+
   const nav = useMemo(() => {
     const base = [
       ['dashboard','Vue d’ensemble',LayoutDashboard],
       ['crm','CRM',Contact],
       ['projects','Projets & unités',Building2],
       ['listings','Publications',ClipboardCheck],
-      ['transactions','Transactions',CircleDollarSign],
+      ...(isAdmin||access.can_manage_deals?[['transactions','Transactions',CircleDollarSign]]:[]),
       ['agenda','Agenda & tâches',CheckCheck],
-      ['documents','Documents',Archive],
-      ...(isAdmin||profile?.permissions?.can_view_finance?[['finance','Finance',Calculator]]:[]),
+      ...(isAdmin||access.can_download_documents?[['documents','Documents',Archive]]:[]),
+      ...(isAdmin||access.can_view_finance?[['finance','Finance',Calculator]]:[]),
       ['chat','Chat interne',MessageCircle],
       ['calculators','Calculateurs',Calculator],
       ['account','Mon compte',UserRound],
     ] as any[];
     if (isAdmin) base.push(['reports','Rapports',Archive],['import','Importer par lien',Link2],['partners','Partenaires',Users],['approvals','Validations',ClipboardCheck]);
     return base;
-  }, [isAdmin, profile?.permissions]);
+  }, [isAdmin, access.can_manage_deals, access.can_download_documents, access.can_view_finance]);
 
   if (loading) {
     return <div className="flex min-h-screen items-center justify-center bg-[#0f1725] text-white"><RefreshCw className="animate-spin" /></div>;
@@ -366,11 +375,11 @@ export function PartnerWorkspace() {
             />
           )}
           {tab==='import' && isAdmin && <Section title="Importer une opportunité" kicker="Source partenaire → Bosphoras"><AdminPropertyImporter user={user} reload={loadAll}/></Section>}
-          {tab==='crm' && <ProfessionalCrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} listings={listings} partnerUsers={partnerUsers} reload={loadAll} canViewContactDetails={isAdmin||profile?.permissions?.can_view_contact_details!==false}/>}
+          {tab==='crm' && <ProfessionalCrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} listings={listings} partnerUsers={partnerUsers} reload={loadAll} canViewContactDetails={isAdmin||access.can_view_contact_details}/>}
           {tab==='projects' && <Section title="Projets & unités" kicker="Promoteurs · projets · stock"><RealEstateInventoryPanel user={user} profile={profile} isAdmin={isAdmin} partners={partners}/></Section>}
           {tab==='transactions' && <TransactionsPanel user={user} isAdmin={isAdmin} contacts={contacts} deals={deals} listings={listings} reloadWorkspace={loadAll}/>}
           {tab==='agenda' && <Section title="Agenda & tâches" kicker="Relances · visites · priorités"><AgendaPanel user={user} profile={profile} isAdmin={isAdmin} contacts={contacts} deals={deals} listings={listings}/></Section>}
-          {tab==='documents' && <Section title="Documents" kicker="Coffre partenaire · conformité"><ProfessionalOperationsPanel
+          {tab==='documents' && (isAdmin||access.can_download_documents) && <Section title="Documents" kicker="Coffre partenaire · conformité"><ProfessionalOperationsPanel
             user={user}
             profile={profile}
             isAdmin={isAdmin}
