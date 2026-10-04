@@ -4,6 +4,7 @@
 import { FormEvent, useEffect, useMemo, useState } from 'react';
 import { Building2, CheckCircle2, Layers3, Plus, RefreshCw, Search, Warehouse } from 'lucide-react';
 import { getPortalSupabase } from '@/lib/portalSupabase';
+import { AdminProjectImporter } from '@/components/AdminProjectImporter';
 
 function money(value:any,currency='EUR'){
   const n=Number(value||0);
@@ -68,6 +69,7 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
         email:String(fd.get('email')||'').trim()||null,
         phone:String(fd.get('phone')||'').trim()||null,
         whatsapp:String(fd.get('whatsapp')||'').trim()||null,
+        logo_url:String(fd.get('logo_url')||'').trim()||null,
         created_by:user?.id||null,
       });
       if(error)throw error;e.currentTarget.reset();setMessage('Promoteur ajouté.');await reload();
@@ -96,6 +98,8 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
         entry_capital_min:Number(fd.get('entry_capital_min')||0)||null,
         completion_date:String(fd.get('completion_date')||'')||null,
         sales_status:String(fd.get('sales_status')||'available'),
+        logo_url:String(fd.get('logo_url')||'').trim()||null,
+        hero_image:String(fd.get('hero_image')||'').trim()||null,
         status:'active',
         created_by:user?.id||null,updated_by:user?.id||null,last_verified_at:new Date().toISOString(),
       };
@@ -171,6 +175,8 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
 
     {message?<div className="border border-[#d9e1e8] bg-white px-4 py-3 text-sm">{message}</div>:null}
 
+    {isAdmin?<AdminProjectImporter user={user} profile={profile} isAdmin={isAdmin} partners={partners} developers={developers} onSaved={reload}/>:null}
+
     {isAdmin?<details className="border border-[#d9e1e8] bg-white">
       <summary className="cursor-pointer px-5 py-4 text-sm font-semibold">+ Ajouter un promoteur</summary>
       <form onSubmit={createDeveloper} className="grid gap-3 border-t border-[#e7edf2] p-5 md:grid-cols-3">
@@ -183,6 +189,7 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
         <label className={label}>E-mail<input name="email" type="email" className={input}/></label>
         <label className={label}>Téléphone<input name="phone" className={input}/></label>
         <label className={label}>WhatsApp<input name="whatsapp" className={input}/></label>
+        <label className={label+" md:col-span-2"}>Logo URL<input name="logo_url" className={input}/></label>
         <button disabled={busy} className="min-h-[42px] bg-[#12304a] px-4 text-sm font-semibold text-white md:col-span-3">Créer le promoteur</button>
       </form>
     </details>:null}
@@ -206,6 +213,8 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
         <label className={label}>Capital d'entrée min<input name="entry_capital_min" inputMode="decimal" className={input}/></label>
         <label className={label}>Livraison<input name="completion_date" type="date" className={input}/></label>
         <label className={label}>Commercialisation<select name="sales_status" className={input}><option value="prelaunch">Pré-lancement</option><option value="available">Disponible</option><option value="limited">Stock limité</option><option value="sold_out">Épuisé</option></select></label>
+        <label className={label+" md:col-span-2"}>Logo projet<input name="logo_url" className={input}/></label>
+        <label className={label+" md:col-span-2"}>Image principale<input name="hero_image" className={input}/></label>
         <button disabled={busy} className="min-h-[42px] bg-[#12304a] px-4 text-sm font-semibold text-white md:col-span-4">Créer le projet</button>
       </form>
     </details>
@@ -236,7 +245,7 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
         {selected?<div className="space-y-5">
           <div className="border border-[#d9e1e8] bg-[#132538] p-6 text-white">
             <div className="flex flex-wrap items-start justify-between gap-5">
-              <div><span className="text-[0.66rem] uppercase tracking-[0.12em] text-[#9eb6c8]">{developerById[selected.developer_id]?.name||'Promoteur non défini'}</span><h2 className="mt-2 text-3xl font-semibold">{selected.name}</h2><p className="mt-2 text-sm text-[#b9c9d6]">{[selected.city,selected.district,selected.completion_date?'Livraison '+selected.completion_date:null].filter(Boolean).join(' · ')}</p></div>
+              <div className="flex items-start gap-4">{selected.logo_url?<div className="flex h-16 w-24 shrink-0 items-center justify-center bg-white p-2"><img src={selected.logo_url} alt="" className="max-h-full max-w-full object-contain"/></div>:null}<div><span className="text-[0.66rem] uppercase tracking-[0.12em] text-[#9eb6c8]">{developerById[selected.developer_id]?.name||'Promoteur non défini'}</span><h2 className="mt-2 text-3xl font-semibold">{selected.name}</h2><p className="mt-2 text-sm text-[#b9c9d6]">{[selected.city,selected.district,selected.completion_date?'Livraison '+selected.completion_date:null].filter(Boolean).join(' · ')}</p></div></div>
               <div className="text-right"><strong className="block text-xl">{money(selected.price_min,selected.currency)} – {money(selected.price_max,selected.currency)}</strong><span className="mt-1 block text-xs text-[#a9bfd0]">Capital d'entrée {money(selected.entry_capital_min,selected.currency)}</span></div>
             </div>
             <div className="mt-5 flex flex-wrap gap-2">
