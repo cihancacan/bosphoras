@@ -70,6 +70,9 @@ export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listin
   const supabase=getPortalSupabase();
   const [activities,setActivities]=useState<any[]>([]);
   const [requests,setRequests]=useState<any[]>([]);
+  const [projects,setProjects]=useState<any[]>([]);
+  const [units,setUnits]=useState<any[]>([]);
+  const [shortlists,setShortlists]=useState<any[]>([]);
   const [selectedId,setSelectedId]=useState<string|null>(null);
   const [editing,setEditing]=useState(false);
   const [showNew,setShowNew]=useState(false);
@@ -85,12 +88,18 @@ export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listin
   const [owner,setOwner]=useState('all');
 
   async function loadRelated(){
-    const [{data:activityRows},{data:requestRows}]=await Promise.all([
-      supabase.from('crm_activities').select('*').order('created_at',{ascending:false}).limit(300),
-      supabase.from('crm_contact_requests').select('*').order('created_at',{ascending:false}).limit(300),
+    const [{data:activityRows},{data:requestRows},{data:projectRows},{data:unitRows},{data:shortlistRows}]=await Promise.all([
+      supabase.from('crm_activities').select('*').order('created_at',{ascending:false}).limit(500),
+      supabase.from('crm_contact_requests').select('*').order('created_at',{ascending:false}).limit(500),
+      supabase.from('real_estate_projects').select('*').order('updated_at',{ascending:false}),
+      supabase.from('project_units').select('*').order('updated_at',{ascending:false}),
+      supabase.from('client_property_shortlist').select('*').order('created_at',{ascending:false}).limit(1000),
     ]);
     setActivities(activityRows||[]);
     setRequests(requestRows||[]);
+    setProjects(projectRows||[]);
+    setUnits(unitRows||[]);
+    setShortlists(shortlistRows||[]);
   }
 
   useEffect(()=>{loadRelated();},[]);
@@ -225,6 +234,14 @@ export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listin
         currency:String(fd.get('currency')||'EUR'),
         timeframe:String(fd.get('timeframe')||'').trim()||null,
         investment_goal:String(fd.get('investment_goal')||'').trim()||null,
+        target_yield_pct:Number(fd.get('target_yield_pct')||0)||null,
+        financing_required:fd.get('financing_required')==='on',
+        visa_or_residency_goal:String(fd.get('visa_or_residency_goal')||'').trim()||null,
+        preferred_delivery_before:String(fd.get('preferred_delivery_before')||'')||null,
+        min_surface_m2:Number(fd.get('min_surface_m2')||0)||null,
+        max_entry_capital:Number(fd.get('max_entry_capital')||0)||null,
+        must_haves:splitList(fd.get('must_haves')),
+        excluded_areas:splitList(fd.get('excluded_areas')),
         notes:String(fd.get('notes')||'').trim()||null,
         next_action_at:String(fd.get('next_action_at')||'')?new Date(String(fd.get('next_action_at'))).toISOString():null,
         updated_at:new Date().toISOString(),
@@ -273,6 +290,14 @@ export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listin
       investment_goal:String(fd.get('investment_goal')||'').trim()||null,
       timeframe:String(fd.get('timeframe')||'').trim()||null,
       bedrooms_min:Number(fd.get('bedrooms_min')||0)||null,
+      target_yield_pct:Number(fd.get('target_yield_pct')||0)||null,
+      financing_required:fd.get('financing_required')==='on',
+      visa_or_residency_goal:String(fd.get('visa_or_residency_goal')||'').trim()||null,
+      preferred_delivery_before:String(fd.get('preferred_delivery_before')||'')||null,
+      min_surface_m2:Number(fd.get('min_surface_m2')||0)||null,
+      max_entry_capital:Number(fd.get('max_entry_capital')||0)||null,
+      must_haves:splitList(fd.get('must_haves')),
+      excluded_areas:splitList(fd.get('excluded_areas')),
       notes:String(fd.get('notes')||'').trim()||null,
       created_by:user.id,
     };
@@ -343,21 +368,58 @@ export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listin
     if(error)setNotice({type:'error',text:error.message});else reload();
   }
 
+  async function saveMatch(item:any,score:number){
+    if(!selected)return;
+    const payload:any={
+      contact_id:selected.id,
+      request_id:selectedRequests.find((r:any)=>r.status==='active')?.id||null,
+      listing_id:item._kind==='listing'?item.id:null,
+      project_id:item.project_id||null,
+      unit_id:item.unit_id||null,
+      score,status:'shortlisted',created_by:user.id
+    };
+    const {error}=await supabase.from('client_property_shortlist').upsert(payload,{onConflict:'contact_id,listing_id,project_id,unit_id'});
+    if(error)setNotice({type:'error',text:error.message});else{setNotice({type:'success',text:'Bien ajouté à la shortlist client.'});loadRelated();}
+  }
+
   const activeCriteria=selectedRequests.find((r:any)=>r.status==='active')||selected;
-  const matches=selected&&showMatches?listings.map((listing:any)=>{
+  const projectById=Object.fromEntries(projects.map((p:any)=>[p.id,p]));
+  const listingCandidates=(listings||[]).map((listing:any)=>({...listing,_kind:'listing'}));
+  const unitCandidates=(units||[]).filter((u:any)=>u.status==='available').map((u:any)=>{
+    const p=projectById[u.project_id]||{};
+    return {
+      id:'unit-'+u.id,_kind:'unit',unit_id:u.id,project_id:u.project_id,
+      title:{fr:(p.name||'Projet')+' · '+([u.unit_number,u.unit_type].filter(Boolean).join(' · ')||'Unité')},
+      city_name:p.city,city:p.city,district:p.district,property_type:u.unit_type||'apartment',
+      total_price:u.list_price||u.cash_price||u.installment_price,entry_capital:u.entry_capital,
+      currency:u.currency||p.currency||'EUR',surface_m2:u.gross_area_m2||u.net_area_m2,bedrooms:u.bedrooms,
+      delivery_date:p.completion_date,payment_plan_enabled:Array.isArray(u.payment_plan)&&u.payment_plan.length>0,
+    };
+  });
+  const matches=selected&&showMatches?[...listingCandidates,...unitCandidates].map((listing:any)=>{
     let score=0;const reasons:string[]=[];
     const cities=Array.isArray(activeCriteria?.target_cities)?activeCriteria.target_cities.map((x:any)=>String(x).toLowerCase()):[];
+    const excluded=Array.isArray(activeCriteria?.excluded_areas)?activeCriteria.excluded_areas.map((x:any)=>String(x).toLowerCase()):[];
     const types=Array.isArray(activeCriteria?.target_types)?activeCriteria.target_types.map((x:any)=>String(x).toLowerCase()):[];
     const listingCity=String(listing.city_name||listing.city||'').toLowerCase();
+    const district=String(listing.district||'').toLowerCase();
     const listingType=String(listing.property_type||'').toLowerCase();
-    if(!cities.length||cities.some((c:string)=>listingCity.includes(c)||c.includes(listingCity))){score+=30;reasons.push('ville');}
-    if(!types.length||types.includes(listingType)){score+=20;reasons.push('type');}
+    if(excluded.some((x:string)=>listingCity.includes(x)||district.includes(x)))return {listing,score:0,reasons:['zone exclue']};
+    if(!cities.length||cities.some((c:string)=>listingCity.includes(c)||district.includes(c)||c.includes(listingCity))){score+=20;reasons.push('localisation');}
+    if(!types.length||types.some((t:string)=>listingType.includes(t)||t.includes(listingType))){score+=15;reasons.push('type');}
     const budget=Number(activeCriteria?.budget_max||0),price=Number(listing.total_price||0);
-    if(!budget||!price||price<=budget){score+=25;reasons.push('budget');}
-    const capital=Number(activeCriteria?.capital_available||0),entry=Number(listing.entry_capital||listing.total_price||0);
-    if(!capital||!entry||entry<=capital){score+=25;reasons.push('capital');}
+    if(!budget||!price||price<=budget){score+=20;reasons.push('budget');}
+    const capital=Number(activeCriteria?.max_entry_capital||activeCriteria?.capital_available||0),entry=Number(listing.entry_capital||listing.total_price||0);
+    if(!capital||!entry||entry<=capital){score+=15;reasons.push('capital');}
+    const bedrooms=Number(activeCriteria?.bedrooms_min||0);
+    if(!bedrooms||!listing.bedrooms||Number(listing.bedrooms)>=bedrooms){score+=10;reasons.push('chambres');}
+    const minSurface=Number(activeCriteria?.min_surface_m2||0);
+    if(!minSurface||!listing.surface_m2||Number(listing.surface_m2)>=minSurface){score+=10;reasons.push('surface');}
+    const delivery=activeCriteria?.preferred_delivery_before;
+    if(!delivery||!listing.delivery_date||new Date(listing.delivery_date)<=new Date(delivery)){score+=5;reasons.push('livraison');}
+    if(!activeCriteria?.financing_required||listing.payment_plan_enabled){score+=5;reasons.push(activeCriteria?.financing_required?'paiement':'flexibilité');}
     return {listing,score,reasons};
-  }).filter((x:any)=>x.score>=50).sort((a:any,b:any)=>b.score-a.score).slice(0,8):[];
+  }).filter((x:any)=>x.score>=55).sort((a:any,b:any)=>b.score-a.score).slice(0,12):[];
 
   const input='min-h-[42px] w-full border border-[#d6dde3] bg-white px-3 text-sm text-[#162334] outline-none focus:border-[#315d7c]';
   const label='grid gap-1.5 text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#677481]';
@@ -498,6 +560,14 @@ export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listin
               <label className={label}>Devise<select name="currency" defaultValue={selected.currency||'EUR'} className={input}><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option><option>AED</option></select></label>
               <label className={label}>Objectif<select name="investment_goal" defaultValue={selected.investment_goal||''} className={input}><option value="">Non défini</option><option value="rental">Rendement locatif</option><option value="capital_growth">Valorisation</option><option value="residence">Résidence personnelle</option><option value="family">Usage familial</option><option value="diversification">Diversification</option></select></label>
               <label className={label}>Horizon<input name="timeframe" defaultValue={selected.timeframe||''} className={input} placeholder="3 mois, 12 mois…"/></label>
+              <label className={label}>Rendement cible %<input name="target_yield_pct" defaultValue={selected.target_yield_pct||''} inputMode="decimal" className={input}/></label>
+              <label className={label}>Surface min m²<input name="min_surface_m2" defaultValue={selected.min_surface_m2||''} inputMode="decimal" className={input}/></label>
+              <label className={label}>Capital d'entrée max<input name="max_entry_capital" defaultValue={selected.max_entry_capital||''} inputMode="decimal" className={input}/></label>
+              <label className={label}>Livraison avant<input name="preferred_delivery_before" defaultValue={selected.preferred_delivery_before||''} type="date" className={input}/></label>
+              <label className={label}>Objectif visa / résidence<input name="visa_or_residency_goal" defaultValue={selected.visa_or_residency_goal||''} className={input}/></label>
+              <label className={label}>Éléments indispensables<input name="must_haves" defaultValue={(selected.must_haves||[]).join(', ')} className={input} placeholder="vue mer, métro, piscine…"/></label>
+              <label className={label}>Zones exclues<input name="excluded_areas" defaultValue={(selected.excluded_areas||[]).join(', ')} className={input}/></label>
+              <label className={label+" flex-row items-center gap-2 pt-6"}><input name="financing_required" type="checkbox" defaultChecked={Boolean(selected.financing_required)} className="h-4 w-4"/> Financement / échéancier requis</label>
               <label className={label}>Prochaine action<input name="next_action_at" type="datetime-local" defaultValue={selected.next_action_at?new Date(new Date(selected.next_action_at).getTime()-new Date(selected.next_action_at).getTimezoneOffset()*60000).toISOString().slice(0,16):''} className={input}/></label>
               <label className={label+" md:col-span-2 xl:col-span-3"}>Note dossier<textarea name="notes" defaultValue={selected.notes||''} rows={4} className={input+" py-2"} placeholder="Contexte, préférences, objections, contraintes, informations familiales utiles…"/></label>
               <div className="md:col-span-2 xl:col-span-3 flex justify-end gap-2"><button type="button" onClick={()=>setEditing(false)} className="border border-[#cfd8e3] px-4 py-2 text-xs font-semibold uppercase">Annuler</button><button disabled={busy} className="bg-[#12304a] px-5 py-2 text-xs font-semibold uppercase text-white disabled:opacity-50">{busy?'Enregistrement…':'Enregistrer'}</button></div>
@@ -534,13 +604,21 @@ export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listin
               <select name="investment_goal" className={input}><option value="">Objectif</option><option value="rental">Rendement locatif</option><option value="capital_growth">Valorisation</option><option value="residence">Résidence personnelle</option><option value="family">Usage familial</option><option value="diversification">Diversification</option></select>
               <input name="timeframe" placeholder="Horizon / délai" className={input}/>
               <input name="bedrooms_min" placeholder="Chambres min" inputMode="numeric" className={input}/>
+              <input name="target_yield_pct" placeholder="Rendement cible %" inputMode="decimal" className={input}/>
+              <input name="min_surface_m2" placeholder="Surface min m²" inputMode="decimal" className={input}/>
+              <input name="max_entry_capital" placeholder="Capital entrée max" inputMode="decimal" className={input}/>
+              <input name="preferred_delivery_before" type="date" className={input}/>
+              <input name="visa_or_residency_goal" placeholder="Visa / résidence visé" className={input}/>
+              <input name="must_haves" placeholder="Indispensables : vue, métro…" className={input}/>
+              <input name="excluded_areas" placeholder="Zones exclues" className={input}/>
+              <label className="flex items-center gap-2 text-sm text-[#526272]"><input name="financing_required" type="checkbox"/> Financement / échéancier requis</label>
               <textarea name="notes" rows={3} placeholder="Critères spécifiques, quartiers, vue, financement, contraintes…" className={input+" py-2 md:col-span-2"}/>
               <button className="bg-[#12304a] px-4 py-2 text-xs font-semibold uppercase text-white">Ajouter</button>
             </form>:null}
 
             <button onClick={()=>setShowMatches(!showMatches)} className="mt-4 inline-flex items-center gap-2 text-xs font-semibold text-[#315d7c]"><Target size={14}/>{showMatches?'Masquer le matching':'Matcher les biens avec la demande active'}<ArrowRight size={13}/></button>
             {showMatches?<div className="mt-4 grid gap-3 md:grid-cols-2">
-              {matches.map(({listing,score,reasons}:any)=><article key={listing.id} className="border border-[#dce4e8] bg-[#f8fafb] p-4"><div className="flex items-start justify-between gap-3"><div><span className="text-[0.62rem] font-semibold uppercase tracking-[0.08em] text-[#315d7c]">{listing.city_name||listing.city} · {listing.district}</span><h4 className="mt-1 font-semibold">{listing.title?.fr||listing.external_id}</h4></div><strong className="text-lg text-[#315d7c]">{score}%</strong></div><p className="mt-2 text-sm text-[#687685]">{money(listing.total_price,listing.currency)} · entrée {money(listing.entry_capital||listing.total_price,listing.currency)}</p><p className="mt-2 text-xs text-[#87929a]">{reasons.join(' · ')}</p></article>)}
+              {matches.map(({listing,score,reasons}:any)=>{const saved=shortlists.some((x:any)=>x.contact_id===selected?.id&&((listing._kind==='unit'&&x.unit_id===listing.unit_id)||(listing._kind==='listing'&&x.listing_id===listing.id)));return <article key={listing.id} className="border border-[#dce4e8] bg-[#f8fafb] p-4"><div className="flex items-start justify-between gap-3"><div><span className="text-[0.62rem] font-semibold uppercase tracking-[0.08em] text-[#315d7c]">{listing._kind==='unit'?'UNITÉ · ':''}{listing.city_name||listing.city} · {listing.district}</span><h4 className="mt-1 font-semibold">{listing.title?.fr||listing.external_id}</h4></div><strong className="text-lg text-[#315d7c]">{score}%</strong></div><p className="mt-2 text-sm text-[#687685]">{money(listing.total_price,listing.currency)} · entrée {money(listing.entry_capital||listing.total_price,listing.currency)}</p><div className="mt-2 flex items-end justify-between gap-3"><p className="text-xs text-[#87929a]">{reasons.join(' · ')}</p><button disabled={saved} onClick={()=>saveMatch(listing,score)} className="shrink-0 border border-[#315d7c] px-2 py-1 text-[0.65rem] font-semibold text-[#315d7c] disabled:opacity-40">{saved?'Shortlist':'Garder'}</button></div></article>})}
               {!matches.length?<p className="text-sm text-[#7b8794]">Aucun bien suffisamment proche des critères actuels.</p>:null}
             </div>:null}
           </section>
