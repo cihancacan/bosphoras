@@ -13,13 +13,18 @@ import { ListingSubmissionEditor } from '@/components/ListingSubmissionEditor';
 import { AdminPropertyImporter } from '@/components/AdminPropertyImporter';
 import { AdminListingEditor } from '@/components/AdminListingEditor';
 import { ProfessionalOperationsPanel } from '@/components/ProfessionalOperationsPanel';
+import { RealEstateInventoryPanel } from '@/components/RealEstateInventoryPanel';
+import { TransactionsPanel } from '@/components/TransactionsPanel';
+import { AgendaPanel } from '@/components/AgendaPanel';
+import { FinancePanel } from '@/components/FinancePanel';
+import { ExecutiveDashboardMetrics } from '@/components/ExecutiveDashboardMetrics';
 import { ProfessionalCrmPanel } from '@/components/ProfessionalCrmPanel';
 import { ProfessionalListingsPanel } from '@/components/ProfessionalListingsPanel';
 import { BackofficeLocaleBridge } from '@/components/BackofficeLocaleBridge';
 import { PortalAccountPanel } from '@/components/PortalAccountPanel';
 import { PortalNotificationBridge } from '@/components/PortalNotificationBridge';
 
-type Tab = 'dashboard' | 'listings' | 'import' | 'crm' | 'operations' | 'chat' | 'calculators' | 'partners' | 'approvals' | 'account';
+type Tab = 'dashboard' | 'crm' | 'projects' | 'listings' | 'transactions' | 'agenda' | 'documents' | 'finance' | 'import' | 'chat' | 'calculators' | 'partners' | 'approvals' | 'account';
 
 function money(value: any, currency = 'EUR') {
   const n = Number(value || 0);
@@ -171,7 +176,7 @@ export function PartnerWorkspace() {
     const params = new URLSearchParams(window.location.search);
     const requestedTab = params.get('tab') as Tab | null;
     const requestedThread = params.get('thread');
-    if (requestedTab && ['dashboard','listings','import','crm','operations','chat','calculators','partners','approvals','account'].includes(requestedTab)) {
+    if (requestedTab && ['dashboard','crm','projects','listings','transactions','agenda','documents','finance','import','chat','calculators','partners','approvals','account'].includes(requestedTab)) {
       setTab(requestedTab);
     }
     if (requestedThread) setSelectedThread(requestedThread);
@@ -235,9 +240,13 @@ export function PartnerWorkspace() {
   const nav = useMemo(() => {
     const base = [
       ['dashboard','Vue d’ensemble',LayoutDashboard],
-      ['listings','Biens & projets',Building2],
       ['crm','CRM',Contact],
-      ['operations','Opérations',ClipboardCheck],
+      ['projects','Projets & unités',Building2],
+      ['listings','Publications',ClipboardCheck],
+      ['transactions','Transactions',CircleDollarSign],
+      ['agenda','Agenda & tâches',CheckCheck],
+      ['documents','Documents',Archive],
+      ['finance','Finance',Calculator],
       ['chat','Chat interne',MessageCircle],
       ['calculators','Calculateurs',Calculator],
       ['account','Mon compte',UserRound],
@@ -348,7 +357,10 @@ export function PartnerWorkspace() {
           )}
           {tab==='import' && isAdmin && <Section title="Importer une opportunité" kicker="Source partenaire → Bosphoras"><AdminPropertyImporter user={user} reload={loadAll}/></Section>}
           {tab==='crm' && <ProfessionalCrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} listings={listings} partnerUsers={partnerUsers} reload={loadAll}/>}
-          {tab==='operations' && <Section title="Opérations immobilières" kicker="Visites · documents · commissions"><ProfessionalOperationsPanel
+          {tab==='projects' && <Section title="Projets & unités" kicker="Promoteurs · projets · stock"><RealEstateInventoryPanel user={user} profile={profile} isAdmin={isAdmin} partners={partners}/></Section>}
+          {tab==='transactions' && <TransactionsPanel user={user} isAdmin={isAdmin} contacts={contacts} deals={deals} listings={listings} reloadWorkspace={loadAll}/>}
+          {tab==='agenda' && <Section title="Agenda & tâches" kicker="Relances · visites · priorités"><AgendaPanel user={user} profile={profile} isAdmin={isAdmin} contacts={contacts} deals={deals} listings={listings}/></Section>}
+          {tab==='documents' && <Section title="Documents" kicker="Coffre partenaire · conformité"><ProfessionalOperationsPanel
             user={user}
             profile={profile}
             isAdmin={isAdmin}
@@ -357,7 +369,10 @@ export function PartnerWorkspace() {
             listings={listings}
             partners={partners}
             partnerUsers={partnerUsers}
+            initialArea="documents"
+            lockedArea
           /></Section>}
+          {tab==='finance' && <FinancePanel isAdmin={isAdmin} deals={deals}/>}
           {tab==='chat' && <ChatPanel isAdmin={isAdmin} user={user} threads={threads} profileCards={profileCards} partnerUsers={partnerUsers} selectedThread={selectedThread} setSelectedThread={setSelectedThread} messages={messages} notifications={notifications} reload={loadAll}/>}
 
           {tab==='calculators' && <Section title="Calculateurs investissement" kicker="Bosphoras Analysis"><InvestmentCalculator
@@ -407,6 +422,7 @@ function Dashboard({isAdmin,partners,listings,contacts,deals,pipeline,pendingApp
       <div className="grid gap-px bg-[#d9e1e8] sm:grid-cols-2 xl:grid-cols-4">
         {cards.map(([label,value,Icon])=><article key={label as string} className="bg-white p-6"><Icon size={20} className="text-[#315d7c]"/><span className="mt-8 block text-xs font-bold uppercase tracking-[0.12em] text-[#687685]">{label as string}</span><strong className="mt-2 block font-sans text-4xl">{value as any}</strong></article>)}
       </div>
+      <ExecutiveDashboardMetrics contacts={contacts} deals={deals}/>
       <div className="mt-8 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="border border-[#d9e1e8] bg-white p-6">
           <div className="flex items-center justify-between"><h2 className="font-sans text-3xl">Priorités</h2>{isAdmin&&pendingApprovals>0&&<button onClick={()=>setTab('approvals')} className="text-xs font-bold uppercase tracking-[0.12em] text-[#315d7c]">{pendingApprovals} validation(s)</button>}</div>
@@ -426,498 +442,6 @@ function Dashboard({isAdmin,partners,listings,contacts,deals,pipeline,pendingApp
       </div>
     </Section>
   );
-}
-
-function listingToPayload(l:any) {
-  return {
-    externalId:l.external_id, featured:l.featured, status:l.status, collection:l.collection, transaction:l.transaction_type,
-    propertyType:l.property_type, countryCode:l.country_code||'TR', countryName:l.country_name||'Turkey', city:l.city, cityName:l.city_name||l.city, district:l.district,
-    slugs:{fr:l.slug_fr,en:l.slug_en,ru:l.slug_ru,ar:l.slug_ar},
-    title:l.title, summary:l.summary, description:l.description, seoTitle:l.seo_title, seoDescription:l.seo_description,
-    currency:l.currency,totalPrice:l.total_price,priceOnRequest:l.price_on_request,entryCapital:l.entry_capital,surfaceM2:l.surface_m2,
-    bedrooms:l.bedrooms,bathrooms:l.bathrooms,delivery:l.delivery,developer:l.developer,partner:l.partner,paymentPlan:l.payment_plan,paymentPlanEnabled:l.payment_plan_enabled!==false,paymentInterestMode:l.payment_interest_mode||'not_specified',paymentInterestRate:l.payment_interest_rate,cashDiscountPct:l.cash_discount_pct,cashPrice:l.cash_price,installmentPrice:l.installment_price,
-    highlights:l.highlights,technicalNotes:l.technical_notes,strengths:l.strengths,watchpoints:l.watchpoints,images:l.images,heroImage:l.hero_image,
-    verifiedAt:l.verified_at,
-    sourceUrl:l.source_url||'',sourceHost:l.source_host||'',
-  };
-}
-
-function ListingsPanel({isAdmin,user,profile,listings,listingInternal,submissions,showNew,setShowNew,editingSubmission,setEditingSubmission,editingListing,setEditingListing,reload}:any) {
-  const supabase=getPortalSupabase();
-  const [listingSearch,setListingSearch]=useState('');
-  const [listingFilter,setListingFilter]=useState('all');
-  const internalMap=new Map((listingInternal||[]).map((row:any)=>[row.listing_id,row]));
-
-  async function updateInternalVisibility(listingId:string,scope:string){
-    if(!isAdmin)return;
-    const {error}=await supabase.from('property_listing_internal').update({access_scope:scope,updated_at:new Date().toISOString()}).eq('listing_id',listingId);
-    if(error)alert(error.message);else reload();
-  }
-
-  const visibleListings=listings.filter((listing:any)=>{
-    if(listingFilter==='published'&&!listing.published)return false;
-    if(listingFilter==='unpublished'&&listing.published)return false;
-    const q=listingSearch.trim().toLowerCase();
-    if(!q)return true;
-    return [listing.external_id,listing.title?.fr,listing.city,listing.city_name,listing.district,listing.developer].filter(Boolean).join(' ').toLowerCase().includes(q);
-  });
-
-  async function createAdminDraft(){
-    const stamp=Date.now().toString(36);
-    const row:any={
-      external_id:`ADM-${stamp.toUpperCase()}`,
-      published:false, featured:false, status:'available', collection:'selected-investment', transaction_type:'sale', property_type:'apartment',
-      country_code:'TR', country_name:'Turkey', city:'istanbul', city_name:'Istanbul', district:'À compléter',
-      slug_fr:`nouvelle-annonce-${stamp}`, slug_en:`new-listing-${stamp}`, slug_ru:`new-listing-${stamp}`, slug_ar:`new-listing-${stamp}`,
-      title:{fr:'Nouvelle annonce',en:'New listing',ru:'Новый объект',ar:'عقار جديد'},
-      summary:{fr:'',en:'',ru:'',ar:''}, description:{fr:'',en:'',ru:'',ar:''}, seo_title:{fr:'',en:'',ru:'',ar:''}, seo_description:{fr:'',en:'',ru:'',ar:''},
-      currency:'EUR', images:[], review_status:'approved', created_by:user.id,
-    };
-    const {data,error}=await supabase.from('property_listings').insert(row).select('*').single();
-    if(error){alert(error.message);return;}
-    await reload();
-    setEditingListing(data);
-  }
-
-  async function deleteListing(listing:any){
-    if(!isAdmin)return;
-    const label=listing.title?.fr||listing.external_id||'cette annonce';
-    if(!window.confirm(`Retirer ${label} de l’inventaire actif ? La fiche sera dépubliée et placée en corbeille interne.`))return;
-    const {error}=await supabase.from('property_listings').update({published:false,published_at:null,deleted_at:new Date().toISOString(),deleted_by:user.id}).eq('id',listing.id);
-    if(error)alert(error.message);else reload();
-  }
-
-  async function togglePublish(listing:any) {
-    const next=!listing.published;
-    const {error}=await supabase.from('property_listings').update({published:next,published_at:next?new Date().toISOString():null}).eq('id',listing.id);
-    if(error) alert(error.message); else reload();
-  }
-  const editor = showNew || editingSubmission || editingListing;
-  if(editingListing && isAdmin) {
-    return <Section title="Modifier une annonce" kicker="Contrôle administrateur">
-      <AdminListingEditor
-        listing={editingListing}
-        reload={reload}
-        onClose={()=>setEditingListing(null)}
-      />
-    </Section>;
-  }
-  if(editor && !isAdmin) {
-    return <Section title="Éditeur partenaire" kicker="Validation obligatoire">
-      <ListingSubmissionEditor
-        userId={user.id}
-        listingId={editingListing?.id || editingSubmission?.listing_id || null}
-        initialSubmission={editingSubmission || (editingListing?{status:'draft',payload:listingToPayload(editingListing)}:undefined)}
-        onSaved={reload}
-        onClose={()=>{setShowNew(false);setEditingSubmission(null);setEditingListing(null);}}
-      />
-    </Section>;
-  }
-  return <Section title="Biens & projets" kicker={isAdmin?'Inventaire global':'Vos opportunités'} action={<button onClick={()=>isAdmin?createAdminDraft():setShowNew(true)} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-xs font-bold uppercase tracking-[0.12em] text-white"><Plus size={15}/>Nouvelle annonce</button>}>
-    {!isAdmin&&<div className="mb-8 border border-[#d9e1e8] bg-[#f7f9fb] p-5 text-sm leading-6 text-[#526272]"><strong>Règle Bosphoras :</strong> une annonce créée ou modifiée par un partenaire reste en brouillon/soumission jusqu’à validation de l’administrateur. Une modification d’un bien déjà publié ne change jamais la version publique avant approbation.</div>}
-    <div className="mb-5 grid gap-3 rounded-xl border border-[#d9e1e8] bg-white p-4 md:grid-cols-[1fr_220px]">
-      <label className="relative"><Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#7b8794]"/><input value={listingSearch} onChange={(e)=>setListingSearch(e.target.value)} placeholder="Rechercher une référence, ville, quartier, promoteur…" className="min-h-[43px] w-full rounded-lg border border-[#cfd8e3] pl-10 pr-3 text-sm"/></label>
-      <select value={listingFilter} onChange={(e)=>setListingFilter(e.target.value)} className="min-h-[43px] rounded-lg border border-[#cfd8e3] bg-white px-3 text-sm"><option value="all">Toutes</option><option value="published">En ligne</option><option value="unpublished">Hors ligne / brouillons</option></select>
-    </div>
-    <div className="grid gap-6 lg:grid-cols-2">
-      <div className="border border-[#d9e1e8] bg-white p-5">
-        <div className="flex items-center justify-between gap-3"><h2 className="font-sans text-2xl">{isAdmin?'Toutes les annonces':'Biens attribués'}</h2><span className="text-xs font-semibold text-[#687685]">{visibleListings.length} affichée(s)</span></div>
-        <div className="mt-5 space-y-3">
-          {visibleListings.map((l:any)=>{
-            const info=internalMap.get(l.id) as any;
-            const hasSeller=Boolean(info&&(info.seller_name||info.seller_company||info.seller_phone||info.seller_whatsapp||info.seller_email||info.seller_asking_price||info.seller_floor_price||info.internal_notes));
-            const discount=info&&Number(info.seller_asking_price)>0&&Number(info.seller_floor_price)>0
-              ? Math.max(0,((Number(info.seller_asking_price)-Number(info.seller_floor_price))/Number(info.seller_asking_price))*100)
-              : null;
-            return <article key={l.id} className="border border-[#e1e6ea] bg-white p-4">
-              <div className="flex items-start justify-between gap-4">
-                <div className="min-w-0">
-                  <span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-[#315d7c]">{l.city_name||l.city} · {l.district}</span>
-                  <h3 className="mt-1 font-sans text-xl">{l.title?.fr || l.external_id}</h3>
-                  <p className="mt-2 text-sm text-[#687685]">{money(l.total_price,l.currency)} · {l.published?'Publié':'Non publié'} · rév. {l.revision}</p>
-                </div>
-                {l.hero_image&&<img src={l.hero_image} alt="" className="h-16 w-20 shrink-0 object-cover"/>}
-              </div>
-
-              {info ? <div className="mt-4 border-l-2 border-[#4f8d78] bg-[#f5f8f6] px-4 py-3">
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <strong className="text-xs uppercase tracking-[0.1em] text-[#2f6d59]">Informations vendeur · interne</strong>
-                  <span className="text-[0.65rem] font-semibold uppercase tracking-[0.08em] text-[#64736e]">{info.access_scope==='all_agents'?'Visible toute l’équipe':'Partenaire propriétaire + admin'}</span>
-                </div>
-                {hasSeller ? <div className="mt-3 grid gap-x-5 gap-y-2 text-sm sm:grid-cols-2">
-                  <p><span className="text-[#7b8794]">Vendeur :</span> <strong>{info.seller_name||info.seller_company||'—'}</strong></p>
-                  <p><span className="text-[#7b8794]">Contact :</span> <strong>{info.seller_whatsapp||info.seller_phone||info.seller_email||'—'}</strong></p>
-                  <p><span className="text-[#7b8794]">Prix vendeur :</span> <strong>{info.seller_asking_price?money(info.seller_asking_price,l.currency):'—'}</strong></p>
-                  <p><span className="text-[#7b8794]">Minimum :</span> <strong>{info.seller_floor_price?money(info.seller_floor_price,l.currency):'—'}{discount!==null?` · remise max ${discount.toFixed(1)} %`:''}</strong></p>
-                  {info.internal_notes?<p className="sm:col-span-2"><span className="text-[#7b8794]">Notes :</span> {info.internal_notes}</p>:null}
-                </div>:<p className="mt-2 text-sm text-[#78847f]">Aucune information vendeur renseignée pour cette annonce.</p>}
-                {isAdmin ? <label className="mt-3 flex flex-wrap items-center gap-3 text-xs font-semibold uppercase tracking-[0.08em] text-[#526272]">
-                  Visibilité interne
-                  <select value={info.access_scope||'owner_only'} onChange={(e)=>updateInternalVisibility(l.id,e.target.value)} className="min-h-[34px] border border-[#c8d4ce] bg-white px-2 text-xs normal-case tracking-normal text-[#24322e]">
-                    <option value="owner_only">Partenaire propriétaire uniquement</option>
-                    <option value="all_agents">Toute l’équipe interne</option>
-                  </select>
-                  <span className="font-normal normal-case tracking-normal text-[#8a9691]">Jamais visible publiquement.</span>
-                </label>:null}
-              </div>:isAdmin?<div className="mt-4 border border-dashed border-[#d7dfdc] px-4 py-3 text-sm text-[#7b8794]">Aucune fiche vendeur interne. Ouvrez « Modifier » pour l’ajouter.</div>:null}
-
-              <div className="mt-4 flex flex-wrap gap-2">
-                <a href={'/espace/apercu?listing='+l.id} target="_blank" rel="noreferrer" className="border border-[#315d7c] bg-[#eef4f8] px-3 py-2 text-xs font-semibold uppercase text-[#315d7c]">Aperçu</a>
-                {l.published&&l.slug_fr?<a href={'/immobilier-turquie/'+l.slug_fr} target="_blank" rel="noreferrer" className="border border-[#2f6d59] px-3 py-2 text-xs font-semibold uppercase text-[#2f6d59]">Page publique</a>:null}
-                {isAdmin?<><button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase text-[#12304a]">Modifier</button><button onClick={()=>togglePublish(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">{l.published?'Dépublier':'Publier'}</button><button onClick={()=>deleteListing(l)} className="inline-flex items-center gap-1.5 border border-[#b96363] px-3 py-2 text-xs font-semibold uppercase text-[#9b4444]"><Trash2 size={13}/>Supprimer</button></>:<button onClick={()=>setEditingListing(l)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold uppercase">Proposer une modification</button>}
-              </div>
-            </article>;
-          })}
-          {listings.length===0&&<p className="py-6 text-sm text-[#687685]">Aucun bien attribué pour le moment.</p>}
-        </div>
-      </div>
-      <div className="border border-[#d9e1e8] bg-white p-5">
-        <h2 className="font-sans text-2xl">{isAdmin?'Soumissions récentes':'Mes soumissions'}</h2>
-        <div className="mt-5 space-y-3">
-          {submissions.slice(0,20).map((s:any)=><article key={s.id} className="border border-[#e7edf2] p-4"><div className="flex items-start justify-between gap-4"><div><span className="text-[0.65rem] font-bold uppercase tracking-[0.12em] text-[#315d7c]">{s.submission_type} · {s.status}</span><h3 className="mt-1 font-sans text-xl">{s.payload?.title?.fr || 'Annonce sans titre'}</h3><p className="mt-2 text-sm text-[#687685]">{s.payload?.city} · {s.payload?.district}</p>{s.admin_feedback&&<p className="mt-3 border-l-2 border-[#315d7c] pl-3 text-sm text-[#526272]">{s.admin_feedback}</p>}</div></div><div className="mt-4 flex flex-wrap gap-2"><a href={'/espace/apercu?submission='+s.id} target="_blank" rel="noreferrer" className="border border-[#315d7c] bg-[#eef4f8] px-3 py-2 text-xs font-semibold uppercase text-[#315d7c]">Aperçu</a>{!isAdmin&&['draft','changes_requested'].includes(s.status)&&<button onClick={()=>setEditingSubmission(s)} className="border border-[#12304a] px-3 py-2 text-xs font-bold uppercase">Continuer</button>}</div></article>)}
-          {submissions.length===0&&<p className="py-6 text-sm text-[#687685]">Aucune soumission.</p>}
-        </div>
-      </div>
-    </div>
-  </Section>;
-}
-
-function CrmPanel({isAdmin,user,profile,contacts,deals,listings,partnerUsers,reload}:any) {
-  const supabase=getPortalSupabase();
-  const [show,setShow]=useState(false);
-  const [dealContact,setDealContact]=useState<string>('');
-  const [activityContact,setActivityContact]=useState<string>('');
-  const [matchContact,setMatchContact]=useState<any>(null);
-  const [activities,setActivities]=useState<any[]>([]);
-  const [contactBusy,setContactBusy]=useState(false);
-  const [contactNotice,setContactNotice]=useState<{type:'success'|'error';text:string}|null>(null);
-  const [crmSearch,setCrmSearch]=useState('');
-  const [crmStatus,setCrmStatus]=useState('all');
-  const [crmOwner,setCrmOwner]=useState('all');
-  const [dealFilter,setDealFilter]=useState('all');
-
-  async function loadActivities(){
-    const {data}=await supabase.from('crm_activities').select('*').order('created_at',{ascending:false}).limit(100);
-    setActivities(data||[]);
-  }
-  useEffect(()=>{loadActivities();},[]);
-
-  async function createContact(e:FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    if(contactBusy) return;
-
-    const form=e.currentTarget;
-    const fd=new FormData(form);
-    const email=String(fd.get('email')||'').trim().toLowerCase();
-    const phone=String(fd.get('phone')||'').trim();
-    const normalizedPhone=phone.replace(/\D+/g,'');
-    const duplicate=contacts.find((contact:any)=>{
-      const sameEmail=email && String(contact.email||'').trim().toLowerCase()===email;
-      const existingPhone=String(contact.phone||'').replace(/\D+/g,'');
-      const samePhone=normalizedPhone.length>=7 && existingPhone===normalizedPhone;
-      return sameEmail||samePhone;
-    });
-
-    if(duplicate){
-      setContactNotice({
-        type:'error',
-        text:`Ce contact existe déjà dans le CRM : ${[duplicate.first_name,duplicate.last_name].filter(Boolean).join(' ')||duplicate.email||duplicate.phone}.`
-      });
-      return;
-    }
-
-    setContactBusy(true);
-    setContactNotice(null);
-
-    const row:any={
-      owner_user_id:user.id,
-      partner_id:isAdmin?null:profile.partner_id,
-      first_name:String(fd.get('first_name')||'').trim(),
-      last_name:String(fd.get('last_name')||'').trim(),
-      email:email||null,
-      phone:phone||null,
-      source:String(fd.get('source')||'partner').trim()||'partner',
-      status:'new',
-      budget_min:Number(fd.get('budget_min')||0)||null,
-      budget_max:Number(fd.get('budget_max')||0)||null,
-      capital_available:Number(fd.get('capital_available')||0)||null,
-      currency:String(fd.get('currency')||'EUR'),
-      target_cities:String(fd.get('target_city')||'').trim()?[String(fd.get('target_city'))]:[],
-      target_types:String(fd.get('target_type')||'').trim()?[String(fd.get('target_type'))]:[],
-      investment_goal:String(fd.get('investment_goal')||'').trim()||null,
-      timeframe:String(fd.get('timeframe')||'').trim()||null,
-      next_action_at:String(fd.get('next_action_at')||'')?new Date(String(fd.get('next_action_at'))).toISOString():null,
-      notes:String(fd.get('notes')||'').trim()||null,
-      created_by:user.id,
-    };
-
-    try{
-      const {data,error}=await supabase.from('crm_contacts').insert(row).select('*').single();
-      if(error) throw error;
-      await reload();
-      form.reset();
-      setShow(false);
-      setContactNotice({
-        type:'success',
-        text:`Contact enregistré : ${[data?.first_name,data?.last_name].filter(Boolean).join(' ')||data?.email||data?.phone||'nouveau contact'}.`
-      });
-      window.setTimeout(()=>setContactNotice(null),5000);
-    }catch(error:any){
-      const raw=String(error?.message||'');
-      const duplicateMessage=raw.includes('DUPLICATE_CRM_EMAIL')
-        ? 'Impossible d’enregistrer : cette adresse e-mail existe déjà dans le CRM.'
-        : raw.includes('DUPLICATE_CRM_PHONE')
-        ? 'Impossible d’enregistrer : ce numéro de téléphone existe déjà dans le CRM.'
-        : null;
-      setContactNotice({type:'error',text:duplicateMessage||raw||'Enregistrement impossible.'});
-    }finally{
-      setContactBusy(false);
-    }
-  }
-
-  async function deleteContact(contact:any){
-    if(!isAdmin) return;
-    const name=[contact.first_name,contact.last_name].filter(Boolean).join(' ')||contact.email||contact.phone||'ce contact';
-    const confirmed=window.confirm(`Supprimer définitivement ${name} ? Les deals, activités, visites et scénarios liés seront également supprimés.`);
-    if(!confirmed) return;
-
-    const {error}=await supabase.from('crm_contacts').delete().eq('id',contact.id);
-    if(error){
-      setContactNotice({type:'error',text:error.message});
-      return;
-    }
-    await reload();
-    setContactNotice({type:'success',text:`${name} a été supprimé du CRM.`});
-    window.setTimeout(()=>setContactNotice(null),5000);
-  }
-
-  async function assign(contactId:string,owner:string) {
-    if(!owner)return;
-    const {error}=await supabase.rpc('admin_assign_crm_contact',{p_contact_id:contactId,p_owner_user_id:owner});
-    if(error)alert(error.message);else reload();
-  }
-
-  async function contactStatus(contactId:string,status:string){
-    const {error}=await supabase.from('crm_contacts').update({status}).eq('id',contactId);
-    if(error)alert(error.message);else reload();
-  }
-
-  async function createDeal(e:FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    const fd=new FormData(e.currentTarget);
-    const contact=contacts.find((c:any)=>c.id===dealContact);
-    if(!contact)return;
-    const row={
-      contact_id:contact.id,
-      owner_user_id:contact.owner_user_id,
-      partner_id:contact.partner_id,
-      title:String(fd.get('title')||'Acquisition immobilière'),
-      stage:'lead',
-      deal_value:Number(fd.get('deal_value')||0)||null,
-      currency:String(fd.get('currency')||'EUR'),
-      probability:Number(fd.get('probability')||10),
-      expected_close_date:String(fd.get('expected_close_date')||'')||null,
-      created_by:user.id,
-    };
-    const {error}=await supabase.from('crm_deals').insert(row);
-    if(error)alert(error.message);else{setDealContact('');reload();}
-  }
-
-  async function dealStage(dealId:string,stage:string){
-    const probabilityMap:any={lead:10,qualified:25,viewing:40,offer:60,reservation:75,due_diligence:82,contract:90,closed_won:100,closed_lost:0};
-    const {error}=await supabase.from('crm_deals').update({stage,probability:probabilityMap[stage]??10}).eq('id',dealId);
-    if(error)alert(error.message);else reload();
-  }
-
-  async function createActivity(e:FormEvent<HTMLFormElement>){
-    e.preventDefault();
-    const fd=new FormData(e.currentTarget);
-    const contact=contacts.find((x:any)=>x.id===activityContact);
-    if(!contact)return;
-    const dealId=String(fd.get('deal_id')||'');
-    const {error}=await supabase.from('crm_activities').insert({
-      contact_id:contact.id,
-      deal_id:dealId||null,
-      owner_user_id:contact.owner_user_id||user.id,
-      activity_type:String(fd.get('activity_type')||'task'),
-      subject:String(fd.get('subject')||'').trim()||'Relance',
-      body:String(fd.get('body')||'').trim()||null,
-      due_at:String(fd.get('due_at')||'')?new Date(String(fd.get('due_at'))).toISOString():null,
-      created_by:user.id,
-    });
-    if(error)alert(error.message);
-    else{
-      if(fd.get('due_at')) await supabase.from('crm_contacts').update({next_action_at:new Date(String(fd.get('due_at'))).toISOString()}).eq('id',contact.id);
-      e.currentTarget.reset();
-      setActivityContact('');
-      await loadActivities();
-      reload();
-    }
-  }
-
-  async function completeActivity(id:string){
-    const {error}=await supabase.from('crm_activities').update({completed_at:new Date().toISOString()}).eq('id',id);
-    if(error)alert(error.message);else loadActivities();
-  }
-
-  const contactById=Object.fromEntries(contacts.map((x:any)=>[x.id,x]));
-  const dealById=Object.fromEntries(deals.map((x:any)=>[x.id,x]));
-  const openActivities=activities.filter((x:any)=>!x.completed_at);
-  const overdue=openActivities.filter((x:any)=>x.due_at&&new Date(x.due_at)<new Date()).length;
-  const filteredContacts=contacts.filter((contact:any)=>{
-    if(crmStatus!=='all'&&contact.status!==crmStatus)return false;
-    if(crmOwner!=='all'&&contact.owner_user_id!==crmOwner)return false;
-    const q=crmSearch.trim().toLowerCase();
-    if(!q)return true;
-    return [contact.first_name,contact.last_name,contact.company,contact.email,contact.phone,contact.whatsapp,contact.source,contact.nationality,contact.country_of_residence].filter(Boolean).join(' ').toLowerCase().includes(q);
-  });
-  const filteredDeals=deals.filter((deal:any)=>dealFilter==='all'||deal.stage===dealFilter);
-
-  return <Section title="CRM investissement" kicker="Contacts · pipeline · relances" action={<button onClick={()=>setShow(!show)} className="inline-flex min-h-[46px] items-center gap-2 bg-[#12304a] px-5 text-xs font-semibold uppercase tracking-[0.1em] text-white"><Plus size={15}/>Nouveau contact</button>}>
-    <div className="mb-5 grid gap-3 rounded-xl border border-[#d9e1e8] bg-white p-4 md:grid-cols-2 xl:grid-cols-4">
-      <label className="relative md:col-span-2 xl:col-span-1"><Search size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-[#7b8794]"/><input value={crmSearch} onChange={(e)=>setCrmSearch(e.target.value)} placeholder="Nom, téléphone, e-mail, source…" className="min-h-[43px] w-full rounded-lg border border-[#cfd8e3] pl-10 pr-3 text-sm"/></label>
-      <select value={crmStatus} onChange={(e)=>setCrmStatus(e.target.value)} className="min-h-[43px] rounded-lg border border-[#cfd8e3] bg-white px-3 text-sm"><option value="all">Tous les statuts</option><option value="new">Nouveaux</option><option value="contacted">Contactés</option><option value="qualified">Qualifiés</option><option value="nurturing">À relancer</option><option value="converted">Convertis</option><option value="lost">Perdus</option><option value="inactive">Inactifs</option></select>
-      {isAdmin?<select value={crmOwner} onChange={(e)=>setCrmOwner(e.target.value)} className="min-h-[43px] rounded-lg border border-[#cfd8e3] bg-white px-3 text-sm"><option value="all">Tous les agents</option>{partnerUsers.map((p:any)=><option key={p.user_id} value={p.user_id}>{p.full_name||p.email}</option>)}</select>:<div className="hidden xl:block"/>}
-      <select value={dealFilter} onChange={(e)=>setDealFilter(e.target.value)} className="min-h-[43px] rounded-lg border border-[#cfd8e3] bg-white px-3 text-sm"><option value="all">Tout le pipeline</option><option value="lead">Lead</option><option value="qualified">Qualifié</option><option value="viewing">Visite</option><option value="offer">Offre</option><option value="reservation">Réservation</option><option value="due_diligence">Due diligence</option><option value="contract">Contrat</option><option value="closed_won">Gagné</option><option value="closed_lost">Perdu</option></select>
-    </div>
-    {contactNotice?<div className={`mb-5 flex items-center justify-between border px-4 py-3 text-sm shadow-sm ${contactNotice.type==='success'?'border-[#a8c8b8] bg-[#f1faf5] text-[#245943]':'border-[#e0b5b5] bg-[#fff6f6] text-[#8b4040]'}`}><span>{contactNotice.text}</span><button type="button" onClick={()=>setContactNotice(null)} className="ml-4 text-lg leading-none">×</button></div>:null}
-    <div className="mb-6 grid gap-px bg-[#d9e1e8] sm:grid-cols-3">
-      <div className="bg-white p-5"><span className="text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#687685]">Contacts visibles</span><strong className="mt-2 block text-2xl font-semibold">{contacts.length}</strong></div>
-      <div className="bg-white p-5"><span className="text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#687685]">Relances ouvertes</span><strong className="mt-2 block text-2xl font-semibold">{openActivities.length}</strong></div>
-      <div className={`p-5 ${overdue?'bg-[#fff5f5]':'bg-white'}`}><span className="text-[0.66rem] font-semibold uppercase tracking-[0.08em] text-[#687685]">Relances en retard</span><strong className={`mt-2 block text-2xl font-semibold ${overdue?'text-[#a85656]':''}`}>{overdue}</strong></div>
-    </div>
-
-    {show&&<form onSubmit={createContact} className="mb-8 grid gap-4 border border-[#d9e1e8] bg-white p-6 md:grid-cols-4">
-      <input name="first_name" placeholder="Prénom" className="border border-[#d9e1e8] px-3 py-3"/>
-      <input name="last_name" placeholder="Nom" className="border border-[#d9e1e8] px-3 py-3"/>
-      <input name="email" type="email" placeholder="E-mail" className="border border-[#d9e1e8] px-3 py-3"/>
-      <input name="phone" placeholder="Téléphone / WhatsApp" className="border border-[#d9e1e8] px-3 py-3"/>
-      <input name="source" placeholder="Source du lead" className="border border-[#d9e1e8] px-3 py-3"/>
-      <input name="budget_min" placeholder="Budget min" inputMode="decimal" className="border border-[#d9e1e8] px-3 py-3"/>
-      <input name="budget_max" placeholder="Budget max" inputMode="decimal" className="border border-[#d9e1e8] px-3 py-3"/>
-      <input name="capital_available" placeholder="Capital disponible aujourd'hui" inputMode="decimal" className="border border-[#d9e1e8] px-3 py-3"/>
-      <select name="currency" className="border border-[#d9e1e8] px-3 py-3"><option>EUR</option><option>USD</option><option>TRY</option><option>GBP</option><option>CHF</option></select>
-      <select name="target_city" className="border border-[#d9e1e8] px-3 py-3"><option value="">Ville cible</option><option value="istanbul">Istanbul</option><option value="bodrum">Bodrum</option><option value="antalya">Antalya</option></select>
-      <select name="target_type" className="border border-[#d9e1e8] px-3 py-3"><option value="">Type cible</option><option value="apartment">Appartement</option><option value="residence">Résidence</option><option value="villa">Villa</option><option value="penthouse">Penthouse</option><option value="commercial">Commercial</option></select>
-      <select name="investment_goal" className="border border-[#d9e1e8] px-3 py-3"><option value="">Objectif</option><option value="rental">Rendement locatif</option><option value="capital_growth">Valorisation</option><option value="residence">Résidence personnelle</option><option value="family">Usage familial</option><option value="diversification">Diversification</option></select>
-      <input name="timeframe" placeholder="Horizon / délai (ex. 3 mois)" className="border border-[#d9e1e8] px-3 py-3"/>
-      <input name="next_action_at" type="datetime-local" className="border border-[#d9e1e8] px-3 py-3"/>
-      <textarea name="notes" placeholder="Contexte, critères, contraintes, préférences…" className="border border-[#d9e1e8] px-3 py-3 md:col-span-2"/>
-      <button disabled={contactBusy} className="bg-[#12304a] px-4 py-3 text-xs font-semibold uppercase text-white disabled:cursor-wait disabled:opacity-60">{contactBusy?'Enregistrement…':'Créer le contact'}</button>
-    </form>}
-
-    <div className="grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
-      <div className="border border-[#d9e1e8] bg-white p-5">
-        <h2 className="text-2xl font-semibold tracking-[-0.02em]">Contacts</h2>
-        <div className="mt-5 space-y-3">
-          {filteredContacts.map((contact:any)=><article key={contact.id} className="border border-[#e7edf2] p-4">
-            <div className="flex flex-wrap items-start justify-between gap-3">
-              <div>
-                <h3 className="font-semibold">{[contact.first_name,contact.last_name].filter(Boolean).join(' ')||contact.company||'Contact'}</h3>
-                <p className="mt-1 text-sm text-[#687685]">{contact.email||contact.phone||'—'}</p>
-                <p className="mt-2 text-xs text-[#315d7c]">Capital {money(contact.capital_available,contact.currency)} · Budget max {money(contact.budget_max,contact.currency)}</p>
-                {contact.next_action_at?<p className={`mt-2 text-xs ${new Date(contact.next_action_at)<new Date()?'font-semibold text-[#a85656]':'text-[#687685]'}`}>Prochaine action : {new Date(contact.next_action_at).toLocaleString('fr-FR')}</p>:null}
-              </div>
-              <div className="flex flex-wrap gap-2">
-                <button onClick={()=>setDealContact(contact.id)} className="border border-[#12304a] px-3 py-2 text-xs font-semibold">Créer deal</button>
-                <button onClick={()=>setActivityContact(contact.id)} className="border border-[#315d7c] px-3 py-2 text-xs font-semibold text-[#315d7c]">Ajouter relance</button>
-                <button onClick={()=>setMatchContact(contact)} className="border border-[#4d718a] bg-[#eef4f8] px-3 py-2 text-xs font-semibold text-[#315d7c]">Matcher les biens</button>
-                {isAdmin?<button onClick={()=>deleteContact(contact)} className="inline-flex items-center gap-1.5 border border-[#b96363] px-3 py-2 text-xs font-semibold text-[#9b4444]"><Trash2 size={13}/>Supprimer</button>:null}
-              </div>
-            </div>
-            <div className="mt-3 grid gap-2 sm:grid-cols-2">
-              <select value={contact.status} onChange={(e)=>contactStatus(contact.id,e.target.value)} className="min-h-[38px] border border-[#d9e1e8] px-2 text-xs">
-                <option value="new">Nouveau</option><option value="contacted">Contacté</option><option value="qualified">Qualifié</option><option value="nurturing">À nourrir</option><option value="inactive">Inactif</option><option value="converted">Converti</option><option value="lost">Perdu</option>
-              </select>
-              {isAdmin?<select value={contact.owner_user_id||''} onChange={(e)=>assign(contact.id,e.target.value)} className="min-h-[38px] border border-[#d9e1e8] px-2 text-xs"><option value="">Attribuer à un partenaire…</option>{partnerUsers.map((p:any)=><option key={p.user_id} value={p.user_id}>{p.full_name||p.email}</option>)}</select>:null}
-            </div>
-          </article>)}
-          {contacts.length===0&&<p className="py-5 text-sm text-[#687685]">Aucun contact.</p>}
-        </div>
-      </div>
-
-      <div className="border border-[#d9e1e8] bg-[#12304a] p-5 text-white">
-        <h2 className="text-2xl font-semibold tracking-[-0.02em]">Pipeline</h2>
-        {dealContact&&<form onSubmit={createDeal} className="mt-5 grid gap-3 border border-white/10 p-4">
-          <input name="title" placeholder="Nom du deal" className="bg-white px-3 py-2 text-sm text-[#162334]"/>
-          <div className="grid grid-cols-3 gap-2"><input name="deal_value" placeholder="Valeur" className="bg-white px-3 py-2 text-sm text-[#162334]"/><select name="currency" className="bg-white px-2 text-sm text-[#162334]"><option>EUR</option><option>USD</option><option>TRY</option></select><input name="probability" defaultValue="10" placeholder="%" className="bg-white px-3 py-2 text-sm text-[#162334]"/></div>
-          <input name="expected_close_date" type="date" className="bg-white px-3 py-2 text-sm text-[#162334]"/>
-          <button className="bg-[#d8e6ef] px-4 py-2 text-xs font-semibold uppercase text-[#12304a]">Ajouter au pipeline</button>
-        </form>}
-        <div className="mt-5 space-y-3">
-          {filteredDeals.map((deal:any)=><article key={deal.id} className="border border-white/10 p-4">
-            <div className="flex flex-wrap items-start justify-between gap-3">
-              <div><span className="text-[0.65rem] font-semibold uppercase tracking-[0.1em] text-[#b9d0e0]">{deal.stage}</span><h3 className="mt-1 text-xl font-semibold">{deal.title}</h3></div>
-              <strong>{deal.probability}%</strong>
-            </div>
-            <div className="mt-3 flex justify-between text-sm text-[#b9c0ca]"><span>{money(deal.deal_value,deal.currency)}</span><span>{deal.expected_close_date||'Date à définir'}</span></div>
-            <select value={deal.stage} onChange={(e)=>dealStage(deal.id,e.target.value)} className="mt-4 min-h-[38px] w-full bg-white px-2 text-xs text-[#162334]">
-              <option value="lead">Lead</option><option value="qualified">Qualifié</option><option value="viewing">Visite</option><option value="offer">Offre</option><option value="reservation">Réservation</option><option value="due_diligence">Due diligence</option><option value="contract">Contrat</option><option value="closed_won">Gagné</option><option value="closed_lost">Perdu</option>
-            </select>
-          </article>)}
-          {deals.length===0&&<p className="py-5 text-sm text-[#a9bfd0]">Aucun deal.</p>}
-        </div>
-      </div>
-    </div>
-
-    {matchContact ? <section className="mt-6 border border-[#d9e1e8] bg-white p-5">
-      <div className="flex flex-wrap items-start justify-between gap-4">
-        <div>
-          <span className="text-[0.66rem] font-semibold uppercase tracking-[0.1em] text-[#315d7c]">Matching client ↔ propriété</span>
-          <h2 className="mt-1 text-2xl font-semibold tracking-[-0.02em]">{[matchContact.first_name,matchContact.last_name].filter(Boolean).join(' ')||matchContact.email||'Client'}</h2>
-          <p className="mt-2 text-sm text-[#687685]">Classement interne basé sur ville, type de bien, budget total et capital disponible aujourd'hui. Ce score aide à prioriser ; il ne remplace pas votre analyse.</p>
-        </div>
-        <button onClick={()=>setMatchContact(null)} className="text-sm font-semibold text-[#687685]">Fermer</button>
-      </div>
-      <div className="mt-5 grid gap-3 lg:grid-cols-3">
-        {listings
-          .map((listing:any)=>{
-            let score=0;
-            const reasons:string[]=[];
-            const targetCities=Array.isArray(matchContact.target_cities)?matchContact.target_cities:[];
-            const targetTypes=Array.isArray(matchContact.target_types)?matchContact.target_types:[];
-            if(!targetCities.length||targetCities.includes(listing.city)){score+=30;reasons.push('ville compatible');}
-            if(!targetTypes.length||targetTypes.includes(listing.property_type)){score+=20;reasons.push('type compatible');}
-            const budget=Number(matchContact.budget_max||0);
-            const price=Number(listing.total_price||0);
-            if(!budget||!price||price<=budget){score+=25;reasons.push('budget compatible');}
-            const capital=Number(matchContact.capital_available||0);
-            const entry=Number(listing.entry_capital||listing.total_price||0);
-            if(!capital||!entry||entry<=capital){score+=25;reasons.push('capital initial compatible');}
-            return {listing,score,reasons};
-          })
-          .filter((x:any)=>x.score>=50)
-          .sort((a:any,b:any)=>b.score-a.score)
-          .slice(0,6)
-          .map(({listing,score,reasons}:any)=><article key={listing.id} className="border border-[#e1e7ed] bg-[#f8fafb] p-4">
-            <div className="flex items-start justify-between gap-3"><div><span className="text-[0.65rem] font-semibold uppercase tracking-[0.08em] text-[#315d7c]">{listing.city} · {listing.district}</span><h3 className="mt-1 font-semibold text-[#162334]">{listing.title?.fr||listing.external_id}</h3></div><strong className="text-lg text-[#315d7c]">{score}%</strong></div>
-            <p className="mt-3 text-sm text-[#687685]">{money(listing.total_price,listing.currency)} · entrée {money(listing.entry_capital||listing.total_price,listing.currency)}</p>
-            <p className="mt-2 text-xs leading-5 text-[#7b8794]">({reasons.join(' · ')})</p>
-          </article>)}
-      </div>
-    </section> : null}
-
-    <section className="mt-6 border border-[#d9e1e8] bg-white p-5">
-      <div className="flex flex-wrap items-center justify-between gap-3"><div><h2 className="text-2xl font-semibold tracking-[-0.02em]">Relances & activités</h2><p className="mt-1 text-sm text-[#687685]">Appels, WhatsApp, e-mails, réunions, tâches et notes liés au dossier.</p></div><span className="text-xs font-semibold text-[#315d7c]">{openActivities.length} ouverte(s)</span></div>
-
-      {activityContact&&<form onSubmit={createActivity} className="mt-5 grid gap-3 border border-[#e7edf2] bg-[#f7f9fb] p-4 md:grid-cols-4">
-        <select name="activity_type" className="border border-[#cfd8e3] bg-white px-3 py-2 text-sm"><option value="task">Tâche</option><option value="call">Appel</option><option value="whatsapp">WhatsApp</option><option value="email">E-mail</option><option value="meeting">Réunion</option><option value="note">Note</option><option value="viewing">Visite</option><option value="document">Document</option></select>
-        <input name="subject" required placeholder="Objet / prochaine action" className="border border-[#cfd8e3] bg-white px-3 py-2 text-sm"/>
-        <input name="due_at" type="datetime-local" className="border border-[#cfd8e3] bg-white px-3 py-2 text-sm"/>
-        <select name="deal_id" className="border border-[#cfd8e3] bg-white px-3 py-2 text-sm"><option value="">Sans deal</option>{deals.filter((d:any)=>d.contact_id===activityContact).map((d:any)=><option key={d.id} value={d.id}>{d.title}</option>)}</select>
-        <textarea name="body" placeholder="Compte rendu / détail" className="border border-[#cfd8e3] bg-white px-3 py-2 text-sm md:col-span-3"/>
-        <button className="bg-[#12304a] px-4 py-2 text-xs font-semibold uppercase text-white">Enregistrer</button>
-      </form>}
-
-      <div className="mt-5 divide-y divide-[#e7edf2]">
-        {activities.map((activity:any)=>{const contact=contactById[activity.contact_id];const deal=dealById[activity.deal_id];return <div key={activity.id} className="flex flex-wrap items-start justify-between gap-4 py-4">
-          <div><span className="text-[0.65rem] font-semibold uppercase tracking-[0.08em] text-[#315d7c]">{activity.activity_type}{activity.completed_at?' · terminé':''}</span><h3 className="mt-1 font-semibold">{activity.subject}</h3><p className="mt-1 text-sm text-[#687685]">{contact?[contact.first_name,contact.last_name].filter(Boolean).join(' '):'Contact'}{deal?` · ${deal.title}`:''}</p>{activity.body?<p className="mt-2 text-sm leading-6 text-[#526272]">{activity.body}</p>:null}{activity.due_at?<p className={`mt-2 text-xs ${!activity.completed_at&&new Date(activity.due_at)<new Date()?'font-semibold text-[#a85656]':'text-[#7b8794]'}`}>Échéance {new Date(activity.due_at).toLocaleString('fr-FR')}</p>:null}</div>
-          {!activity.completed_at?<button onClick={()=>completeActivity(activity.id)} className="border border-[#2f6d59] px-3 py-2 text-xs font-semibold text-[#2f6d59]">Terminer</button>:<CheckCircle2 size={18} className="text-[#2f6d59]"/>}
-        </div>})}
-        {!activities.length?<p className="py-6 text-sm text-[#687685]">Aucune activité enregistrée.</p>:null}
-      </div>
-    </section>
-  </Section>;
 }
 
 function ChatPanel({isAdmin,user,threads,profileCards,partnerUsers,selectedThread,setSelectedThread,messages,notifications,reload}:any) {
