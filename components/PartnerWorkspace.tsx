@@ -18,13 +18,14 @@ import { TransactionsPanel } from '@/components/TransactionsPanel';
 import { AgendaPanel } from '@/components/AgendaPanel';
 import { FinancePanel } from '@/components/FinancePanel';
 import { ExecutiveDashboardMetrics } from '@/components/ExecutiveDashboardMetrics';
+import { ReportsPanel } from '@/components/ReportsPanel';
 import { ProfessionalCrmPanel } from '@/components/ProfessionalCrmPanel';
 import { ProfessionalListingsPanel } from '@/components/ProfessionalListingsPanel';
 import { BackofficeLocaleBridge } from '@/components/BackofficeLocaleBridge';
 import { PortalAccountPanel } from '@/components/PortalAccountPanel';
 import { PortalNotificationBridge } from '@/components/PortalNotificationBridge';
 
-type Tab = 'dashboard' | 'crm' | 'projects' | 'listings' | 'transactions' | 'agenda' | 'documents' | 'finance' | 'import' | 'chat' | 'calculators' | 'partners' | 'approvals' | 'account';
+type Tab = 'dashboard' | 'crm' | 'projects' | 'listings' | 'transactions' | 'agenda' | 'documents' | 'finance' | 'reports' | 'import' | 'chat' | 'calculators' | 'partners' | 'approvals' | 'account';
 
 function money(value: any, currency = 'EUR') {
   const n = Number(value || 0);
@@ -176,7 +177,7 @@ export function PartnerWorkspace() {
     const params = new URLSearchParams(window.location.search);
     const requestedTab = params.get('tab') as Tab | null;
     const requestedThread = params.get('thread');
-    if (requestedTab && ['dashboard','crm','projects','listings','transactions','agenda','documents','finance','import','chat','calculators','partners','approvals','account'].includes(requestedTab)) {
+    if (requestedTab && ['dashboard','crm','projects','listings','transactions','agenda','documents','finance','reports','import','chat','calculators','partners','approvals','account'].includes(requestedTab)) {
       setTab(requestedTab);
     }
     if (requestedThread) setSelectedThread(requestedThread);
@@ -247,6 +248,7 @@ export function PartnerWorkspace() {
       ['agenda','Agenda & tâches',CheckCheck],
       ['documents','Documents',Archive],
       ['finance','Finance',Calculator],
+      ['reports','Rapports',Archive],
       ['chat','Chat interne',MessageCircle],
       ['calculators','Calculateurs',Calculator],
       ['account','Mon compte',UserRound],
@@ -372,7 +374,7 @@ export function PartnerWorkspace() {
             initialArea="documents"
             lockedArea
           /></Section>}
-          {tab==='finance' && <FinancePanel isAdmin={isAdmin} deals={deals}/>}
+          {tab==='finance' && <FinancePanel isAdmin={isAdmin} deals={deals}/>}\n          {tab==='reports' && <ReportsPanel contacts={contacts} deals={deals}/>}
           {tab==='chat' && <ChatPanel isAdmin={isAdmin} user={user} threads={threads} profileCards={profileCards} partnerUsers={partnerUsers} selectedThread={selectedThread} setSelectedThread={setSelectedThread} messages={messages} notifications={notifications} reload={loadAll}/>}
 
           {tab==='calculators' && <Section title="Calculateurs investissement" kicker="Bosphoras Analysis"><InvestmentCalculator
