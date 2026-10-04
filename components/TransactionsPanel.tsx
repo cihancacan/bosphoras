@@ -14,6 +14,7 @@ function money(value:any,currency='EUR'){
   try{return new Intl.NumberFormat('fr-FR',{style:'currency',currency,maximumFractionDigits:0}).format(n);}catch{return n.toLocaleString('fr-FR')+' '+currency;}
 }
 function cname(c:any){return [c?.first_name,c?.last_name].filter(Boolean).join(' ')||c?.company||c?.email||'Contact';}
+function unitLabel(u:any){return u?[u.unit_number,u.unit_type,u.bedrooms!=null?String(u.bedrooms)+' ch.':null].filter(Boolean).join(' · ')||u.external_id||'Unité':'—';}
 function dueTone(date?:string,status?:string){
   if(status==='paid')return 'text-[#2f6d59]';
   if(!date)return 'text-[#687685]';
