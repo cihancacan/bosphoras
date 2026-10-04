@@ -20,6 +20,7 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   const [developers,setDevelopers]=useState<any[]>([]);
   const [projects,setProjects]=useState<any[]>([]);
   const [units,setUnits]=useState<any[]>([]);
+  const [history,setHistory]=useState<any[]>([]);
   const [selectedProjectId,setSelectedProjectId]=useState('');
   const [query,setQuery]=useState('');
   const [status,setStatus]=useState('all');
@@ -29,13 +30,14 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   async function reload(){
     setBusy(true);setMessage('');
     try{
-      const [d,p,u]=await Promise.all([
+      const [d,p,u,h]=await Promise.all([
         supabase.from('developers').select('*').order('name'),
         supabase.from('real_estate_projects').select('*').order('updated_at',{ascending:false}),
         supabase.from('project_units').select('*').order('updated_at',{ascending:false}),
+        supabase.from('project_unit_history').select('*').order('created_at',{ascending:false}).limit(500),
       ]);
-      if(d.error)throw d.error;if(p.error)throw p.error;if(u.error)throw u.error;
-      setDevelopers(d.data||[]);setProjects(p.data||[]);setUnits(u.data||[]);
+      if(d.error)throw d.error;if(p.error)throw p.error;if(u.error)throw u.error;if(h.error)throw h.error;
+      setDevelopers(d.data||[]);setProjects(p.data||[]);setUnits(u.data||[]);setHistory(h.data||[]);
       if(!selectedProjectId&&p.data?.[0]?.id)setSelectedProjectId(p.data[0].id);
     }catch(e:any){setMessage(e?.message||'Chargement impossible.');}
     finally{setBusy(false);}
@@ -273,6 +275,10 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
             </table>
             {!selectedUnits.length?<p className="p-8 text-center text-sm text-[#687685]">Aucune unité. Ajoutez le stock de ce projet.</p>:null}
           </div>
+          <section className="border border-[#d9e1e8] bg-white p-5">
+            <h3 className="text-lg font-semibold">Historique du stock</h3>
+            <div className="mt-4 space-y-3">{history.filter((h:any)=>selectedUnits.some((u:any)=>u.id===h.unit_id)).slice(0,20).map((h:any)=>{const u=units.find((x:any)=>x.id===h.unit_id);return <div key={h.id} className="flex flex-wrap items-start justify-between gap-3 border-b border-[#edf1f4] pb-3"><div><strong className="block text-sm">{unitLabel(u)}</strong><span className="mt-1 block text-xs uppercase tracking-[0.08em] text-[#315d7c]">{h.event_type}</span></div><span className="text-xs text-[#7b8794]">{new Date(h.created_at).toLocaleString('fr-FR')}</span></div>})}{!history.some((h:any)=>selectedUnits.some((u:any)=>u.id===h.unit_id))?<p className="text-sm text-[#687685]">Aucune modification de stock enregistrée.</p>:null}</div>
+          </section>
         </div>:<div className="border border-dashed border-[#cfd8e3] bg-white p-10 text-center text-sm text-[#687685]">Sélectionnez un projet.</div>}
       </section>
     </div>
