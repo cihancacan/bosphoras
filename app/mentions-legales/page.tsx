@@ -9,7 +9,7 @@ export const metadata: Metadata = buildMetadata({
   path: '/mentions-legales',
   title: 'Mentions légales | Bosphoras par Panorama Grup',
   description:
-    'Mentions légales de Bosphoras, marque de Panorama Grup : éditeur, directeur de publication, adresse, SIRET, hébergement Vercel, propriété intellectuelle, responsabilité, confidentialité et contact.',
+    'Mentions légales de Bosphoras, marque de Panorama Grup : éditeur, directeur de publication, SIRET, hébergement Vercel, propriété intellectuelle, responsabilité, confidentialité et contact.',
 });
 
 const sections = [
@@ -17,9 +17,9 @@ const sections = [
     title: 'Éditeur du site',
     paragraphs: [
       'Le site Bosphoras est édité par Panorama Grup. Bosphoras est une marque exploitée par Panorama Grup.',
-      'Adresse de contact : 88 Avenue des Ternes, 75017 Paris, France.',
       'SIRET : 80962988400036.',
-      'Téléphone : 01 88 84 22 22.',
+      'Téléphone : +90 546 769 99 96.',
+      'WhatsApp : @bosphoras.',
       'Adresse email : contact@bosphoras.com.',
       'Site internet : https://bosphoras.com.',
     ],
