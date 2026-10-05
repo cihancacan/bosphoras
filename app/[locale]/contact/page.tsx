@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { ArrowRight, BriefcaseBusiness, Building2, Globe2, Lock, Mail, MapPin, Phone, ShieldCheck, UserRound } from 'lucide-react';
+import { ArrowRight, BriefcaseBusiness, Building2, Globe2, Lock, Mail, MessageCircle, Phone, ShieldCheck, UserRound } from 'lucide-react';
 import type { Locale } from '@/lib/i18n';
 import { localeDir } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
@@ -46,7 +46,7 @@ type Copy = {
   directContact: string;
   phoneLabel: string;
   emailLabel: string;
-  addressLabel: string;
+  whatsappLabel: string;
   privateDeskCta: string;
   membershipCta: string;
   sideTitle: string;
@@ -69,7 +69,7 @@ const copy: Record<SupportedLocale, Copy> = {
     directContact: 'Direct contact',
     phoneLabel: 'Phone',
     emailLabel: 'Email',
-    addressLabel: 'Paris office',
+    whatsappLabel: 'WhatsApp',
     privateDeskCta: 'Request a private assessment',
     membershipCta: 'Apply for membership',
     sideTitle: 'Bosphoras can coordinate',
@@ -90,7 +90,7 @@ const copy: Record<SupportedLocale, Copy> = {
     directContact: 'Прямой контакт',
     phoneLabel: 'Телефон',
     emailLabel: 'Email',
-    addressLabel: 'Офис в Париже',
+    whatsappLabel: 'WhatsApp',
     privateDeskCta: 'Получить частную консультацию',
     membershipCta: 'Подать заявку на членство',
     sideTitle: 'Bosphoras может координировать',
@@ -111,7 +111,7 @@ const copy: Record<SupportedLocale, Copy> = {
     directContact: 'تواصل مباشر',
     phoneLabel: 'الهاتف',
     emailLabel: 'البريد الإلكتروني',
-    addressLabel: 'مكتب باريس',
+    whatsappLabel: 'WhatsApp',
     privateDeskCta: 'طلب تقييم خاص',
     membershipCta: 'طلب عضوية',
     sideTitle: 'يمكن لـ Bosphoras تنسيق',
@@ -156,9 +156,9 @@ export default function ContactPage({ params }: PageProps) {
                 <Link href={membershipHref} className="inline-flex items-center justify-center border border-[#8a6728] px-7 py-4 text-xs font-bold uppercase tracking-[0.15em] text-[#8a6728] transition hover:bg-[#fffaf0]">{c.membershipCta}</Link>
               </div>
               <div className="mt-10 grid gap-4 text-sm text-[#3e4857] sm:grid-cols-2">
-                <div className="border border-[#d8c7a1] bg-white/60 p-5"><Phone className="mb-4 h-5 w-5 text-[#8a6728]" /><p className="font-bold">{c.phoneLabel}</p><p className="mt-1">+33 1 88 84 22 22</p></div>
-                <div className="border border-[#d8c7a1] bg-white/60 p-5"><Mail className="mb-4 h-5 w-5 text-[#8a6728]" /><p className="font-bold">{c.emailLabel}</p><p className="mt-1">contact@bosphoras.com</p></div>
-                <div className="border border-[#d8c7a1] bg-white/60 p-5 sm:col-span-2"><MapPin className="mb-4 h-5 w-5 text-[#8a6728]" /><p className="font-bold">{c.addressLabel}</p><p className="mt-1">88 Avenue des Ternes, 75017 Paris</p></div>
+                <div className="border border-[#d8c7a1] bg-white/60 p-5"><Phone className="mb-4 h-5 w-5 text-[#8a6728]" /><p className="font-bold">{c.phoneLabel}</p><p className="mt-1"><a href="tel:+905467699996" className="transition hover:text-[#8a6728]">+90 546 769 99 96</a></p></div>
+                <div className="border border-[#d8c7a1] bg-white/60 p-5"><MessageCircle className="mb-4 h-5 w-5 text-[#8a6728]" /><p className="font-bold">{c.whatsappLabel}</p><p className="mt-1"><a href="https://wa.me/905467699996" target="_blank" rel="noreferrer" className="transition hover:text-[#8a6728]">@bosphoras</a></p></div>
+                <div className="border border-[#d8c7a1] bg-white/60 p-5 sm:col-span-2"><Mail className="mb-4 h-5 w-5 text-[#8a6728]" /><p className="font-bold">{c.emailLabel}</p><p className="mt-1">contact@bosphoras.com</p></div>
               </div>
             </div>
 
