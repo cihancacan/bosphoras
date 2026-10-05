@@ -9,9 +9,9 @@ const supportedLocales: SupportedLocale[] = ['en', 'ru', 'ar'];
 type PageCopy = { path: string; title: string; description: string; eyebrow: string; h1: string; intro: string; updatedAt: string; sections: LegalSection[] };
 
 const common = {
-  en: ['Brand: Bosphoras.', 'Operating company: Panorama Grup.', 'Publication director: Panorama Grup.', 'Registered office: 88 Avenue des Ternes, 75017 Paris, France.', 'SIRET: 80962988400036.', 'Telephone: +33 1 88 84 22 22.', 'Email: contact@bosphoras.com.'],
-  ru: ['Бренд: Bosphoras.', 'Оператор: Panorama Grup.', 'Директор публикации: Panorama Grup.', 'Юридический адрес: 88 Avenue des Ternes, 75017 Paris, France.', 'SIRET: 80962988400036.', 'Телефон: +33 1 88 84 22 22.', 'Email: contact@bosphoras.com.'],
-  ar: ['العلامة التجارية: Bosphoras.', 'الشركة المشغلة: Panorama Grup.', 'مدير النشر: Panorama Grup.', 'المقر: 88 Avenue des Ternes, 75017 Paris, France.', 'SIRET: 80962988400036.', 'الهاتف: +33 1 88 84 22 22.', 'البريد الإلكتروني: contact@bosphoras.com.'],
+  en: ['Brand: Bosphoras.', 'Operating company: Panorama Grup.', 'Publication director: Panorama Grup.', 'SIRET: 80962988400036.', 'Telephone: +90 546 769 99 96.', 'WhatsApp: @bosphoras.', 'Email: contact@bosphoras.com.'],
+  ru: ['Бренд: Bosphoras.', 'Оператор: Panorama Grup.', 'Директор публикации: Panorama Grup.', 'SIRET: 80962988400036.', 'Телефон: +90 546 769 99 96.', 'WhatsApp: @bosphoras.', 'Email: contact@bosphoras.com.'],
+  ar: ['العلامة التجارية: Bosphoras.', 'الشركة المشغلة: Panorama Grup.', 'مدير النشر: Panorama Grup.', 'SIRET: 80962988400036.', 'الهاتف: +90 546 769 99 96.', 'WhatsApp: @bosphoras.', 'البريد الإلكتروني: contact@bosphoras.com.'],
 };
 
 const copy: Record<SupportedLocale, PageCopy> = {
