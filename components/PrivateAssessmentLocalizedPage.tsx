@@ -7,7 +7,7 @@ import {
   Globe,
   Lock,
   Mail,
-  MapPin,
+  MessageCircle,
   Phone,
   ShieldCheck,
   Sparkles,
@@ -24,7 +24,6 @@ type Copy = {
   intro: string;
   confidentiality: string;
   languages: string;
-  locations: string;
   needsEyebrow: string;
   needsTitle: string;
   needs: string[];
@@ -45,7 +44,6 @@ const copies: Record<Locale, Copy> = {
     intro: 'Décrivez votre demande. Nous analysons le sujet et revenons vers vous avec la bonne approche.',
     confidentiality: 'Confidentialité renforcée',
     languages: 'Français · English · Русский · العربية',
-    locations: 'Paris · Istanbul · Londres · Almaty · Moscou · Dubai',
     needsEyebrow: 'Demandes prises en charge',
     needsTitle: 'Les sujets que nous pouvons coordonner.',
     needs: ['Installation en Turquie', 'Création d’entreprise', 'Fiscalité & résidence', 'Avocat & conformité', 'Santé & assurance', 'Immobilier & relocation', 'Bureaux privés ou partagés', 'Transport VIP & hospitality', 'Hôtels, yachts, événements', 'Accès privé & membership'],
@@ -68,7 +66,6 @@ const copies: Record<Locale, Copy> = {
     intro: 'Describe your request. We analyse the subject and come back to you with the right approach.',
     confidentiality: 'Enhanced confidentiality',
     languages: 'Français · English · Русский · العربية',
-    locations: 'Paris · Istanbul · London · Almaty · Moscow · Dubai',
     needsEyebrow: 'Requests handled',
     needsTitle: 'The matters we can coordinate.',
     needs: ['Relocation to Turkey', 'Company formation', 'Tax & residence', 'Lawyer & compliance', 'Healthcare & insurance', 'Property & relocation', 'Private or shared offices', 'VIP transport & hospitality', 'Hotels, yachts, events', 'Private access & membership'],
@@ -91,7 +88,6 @@ const copies: Record<Locale, Copy> = {
     intro: 'Опишите ваш запрос. Мы анализируем тему и возвращаемся к вам с правильным подходом.',
     confidentiality: 'Повышенная конфиденциальность',
     languages: 'Français · English · Русский · العربية',
-    locations: 'Париж · Стамбул · Лондон · Алматы · Москва · Дубай',
     needsEyebrow: 'Запросы, которые мы координируем',
     needsTitle: 'Темы, которые мы можем координировать.',
     needs: ['Переезд в Турцию', 'Создание компании', 'Налоги и резиденция', 'Юрист и compliance', 'Здоровье и страхование', 'Недвижимость и relocation', 'Частные или shared офисы', 'VIP transport и hospitality', 'Отели, яхты, мероприятия', 'Private access и membership'],
@@ -114,7 +110,6 @@ const copies: Record<Locale, Copy> = {
     intro: 'اشرحوا طلبكم. نقوم بتحليل الموضوع ونعود إليكم بالنهج المناسب.',
     confidentiality: 'سرية معززة',
     languages: 'Français · English · Русский · العربية',
-    locations: 'باريس · إسطنبول · لندن · ألماتي · موسكو · دبي',
     needsEyebrow: 'الطلبات التي يمكننا التعامل معها',
     needsTitle: 'المواضيع التي يمكننا تنسيقها.',
     needs: ['الانتقال إلى تركيا', 'تأسيس شركة', 'الضرائب والإقامة', 'محامٍ وامتثال', 'الصحة والتأمين', 'العقار وrelocation', 'مكاتب خاصة أو مشتركة', 'النقل VIP وhospitality', 'فنادق، يخوت، فعاليات', 'الوصول الخاص والعضوية'],
@@ -154,9 +149,9 @@ export function PrivateAssessmentLocalizedPage({ locale }: Props) {
                 <p className="inline-flex items-center gap-2"><Globe aria-hidden="true" size={16} />{copy.languages}</p>
               </div>
               <div className="mt-5 flex flex-wrap gap-x-5 gap-y-3 text-sm text-[#3e4857]">
-                <p className="flex items-center gap-3"><Phone className="h-4 w-4 text-[#8a6728]" /><a href="tel:+33188842222" className="hover:text-[#8a6728]">01 88 84 22 22</a></p>
+                <p className="flex items-center gap-3"><Phone className="h-4 w-4 text-[#8a6728]" /><a href="tel:+905467699996" className="hover:text-[#8a6728]">+90 546 769 99 96</a></p>
+                <p className="flex items-center gap-3"><MessageCircle className="h-4 w-4 text-[#8a6728]" /><a href="https://wa.me/905467699996" target="_blank" rel="noreferrer" className="hover:text-[#8a6728]">WhatsApp @bosphoras</a></p>
                 <p className="flex items-center gap-3"><Mail className="h-4 w-4 text-[#8a6728]" /><a href="mailto:contact@bosphoras.com" className="hover:text-[#8a6728]">contact@bosphoras.com</a></p>
-                <p className="hidden items-center gap-3 lg:flex"><MapPin className="h-4 w-4 text-[#8a6728]" />{copy.locations}</p>
               </div>
             </div>
             <div className="relative">
