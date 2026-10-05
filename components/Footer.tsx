@@ -71,8 +71,8 @@ export function Footer({ locale }: FooterProps) {
               {locale === 'ar' && 'مكتب خاص للمستثمرين الدوليين والعائلات ورجال الأعمال في تركيا.'}
             </p>
             <div className="mt-7 space-y-2 text-sm text-[hsl(220,10%,55%)]">
-              <p>88 Avenue des Ternes, 75017 Paris</p>
-              <p><a href="tel:+33188842222" className="transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">01 88 84 22 22</a></p>
+              <p><a href="tel:+905467699996" className="transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">+90 546 769 99 96</a></p>
+              <p><a href="https://wa.me/905467699996" target="_blank" rel="noreferrer" className="transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">WhatsApp @bosphoras</a></p>
               <p><a href="mailto:contact@bosphoras.com" className="transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">contact@bosphoras.com</a></p>
             </div>
           </div>
