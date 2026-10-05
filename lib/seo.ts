@@ -70,21 +70,10 @@ export function organizationSchema() {
     name: 'Bosphoras',
     legalName: 'Panorama Grup',
     url: siteUrl,
-    telephone: '+33188842222',
+    telephone: '+905467699996',
     email: 'contact@bosphoras.com',
     description:
       'Bureau privé en Turquie pour investisseurs internationaux, familles, entrepreneurs, clients de banque privée et détenteurs de cartes premium.',
-    foundingLocation: {
-      '@type': 'Place',
-      name: 'Paris',
-    },
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '88 Avenue des Ternes',
-      postalCode: '75017',
-      addressLocality: 'Paris',
-      addressCountry: 'FR',
-    },
     areaServed: ['Paris', 'Istanbul', 'London', 'Almaty', 'Moscow', 'Dubai', 'Bodrum', 'Antalya', 'Turkey'],
     knowsLanguage: ['French', 'English', 'Russian', 'Arabic', 'Turkish', 'Kazakh'],
     serviceType: [
@@ -103,7 +92,7 @@ export function organizationSchema() {
     ],
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+33188842222',
+      telephone: '+905467699996',
       email: 'contact@bosphoras.com',
       contactType: 'private client assistance',
       availableLanguage: ['French', 'English', 'Russian', 'Arabic', 'Turkish', 'Kazakh'],
