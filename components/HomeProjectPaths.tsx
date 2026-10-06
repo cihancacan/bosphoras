@@ -17,6 +17,7 @@ import {
   formatEntryCapital,
   formatPropertyPrice,
   getPropertyPath,
+  globalPropertyHubPaths,
   paymentBadge,
   propertyLocationLabel,
 } from '@/data/propertyDesk';
@@ -46,6 +47,10 @@ type SalesCopy = {
   propertySectionText: string;
   allProperties: string;
   selectionFallback: string;
+  globalEyebrow: string;
+  globalTitle: string;
+  globalText: string;
+  globalCta: string;
   businessEyebrow: string;
   businessSectionTitle: string;
   businessSectionText: string;
@@ -92,6 +97,10 @@ const copy: Record<Locale, SalesCopy> = {
     propertySectionText: 'Nous privilégions une sélection courte de projets que nous pouvons expliquer, comparer et suivre. Vous voyez le produit avant de nous confier le reste.',
     allProperties: 'Voir toutes les opportunités immobilières',
     selectionFallback: 'Notre sélection publique évolue. Consultez le Property Desk pour voir les projets actuellement disponibles.',
+    globalEyebrow: 'Investissement international',
+    globalTitle: 'Vous recherchez aussi des opportunités hors de Turquie ?',
+    globalText: 'Bosphoras sélectionne progressivement des programmes neufs et des opportunités internationales pour ses clients investisseurs, avec plans de paiement promoteurs et lecture comparative.',
+    globalCta: 'Voir la sélection internationale',
     businessEyebrow: 'Entreprendre',
     businessSectionTitle: 'Créer votre société sans multiplier les interlocuteurs.',
     businessSectionText: 'Bosphoras coordonne la mise en place opérationnelle avec les professionnels adaptés, puis peut rester votre point de contact pour la suite.',
@@ -136,6 +145,10 @@ const copy: Record<Locale, SalesCopy> = {
     propertySectionText: 'We prefer a focused selection of projects we can explain, compare and follow. You see the product before entrusting us with the rest.',
     allProperties: 'View all property opportunities',
     selectionFallback: 'Our public selection changes regularly. Visit the Property Desk to see currently available projects.',
+    globalEyebrow: 'International investment',
+    globalTitle: 'Also looking at opportunities outside Turkey?',
+    globalText: 'Bosphoras gradually selects new developments and international opportunities for its investor clients, with developer payment plans and comparative investment review.',
+    globalCta: 'View international selection',
     businessEyebrow: 'Business',
     businessSectionTitle: 'Set up your company without multiplying contacts.',
     businessSectionText: 'Bosphoras coordinates the operational setup with the right professionals and can remain your point of contact afterwards.',
@@ -180,6 +193,10 @@ const copy: Record<Locale, SalesCopy> = {
     propertySectionText: 'Мы предпочитаем короткую подборку проектов, которые можем объяснить, сравнить и сопровождать.',
     allProperties: 'Все объекты и проекты',
     selectionFallback: 'Публичная подборка регулярно обновляется. Откройте Property Desk, чтобы увидеть актуальные проекты.',
+    globalEyebrow: 'Международные инвестиции',
+    globalTitle: 'Рассматриваете возможности за пределами Турции?',
+    globalText: 'Bosphoras постепенно добавляет для своих инвесторов отобранные новостройки и международные проекты с планами оплаты от застройщиков и сравнительным анализом.',
+    globalCta: 'Смотреть международную подборку',
     businessEyebrow: 'Бизнес',
     businessSectionTitle: 'Создайте компанию без десятка разных контактов.',
     businessSectionText: 'Bosphoras координирует операционный запуск с подходящими специалистами и может оставаться вашим единым контактом после регистрации.',
@@ -224,6 +241,10 @@ const copy: Record<Locale, SalesCopy> = {
     propertySectionText: 'نفضل مجموعة مركزة من المشاريع التي يمكننا شرحها ومقارنتها ومتابعتها.',
     allProperties: 'عرض جميع الفرص العقارية',
     selectionFallback: 'تتغير مجموعتنا العامة باستمرار. افتحوا Property Desk لرؤية المشاريع المتاحة حالياً.',
+    globalEyebrow: 'الاستثمار الدولي',
+    globalTitle: 'هل تبحثون أيضاً عن فرص خارج تركيا؟',
+    globalText: 'يضيف Bosphoras تدريجياً مشاريع جديدة وفرصاً دولية مختارة لعملائه المستثمرين، مع خطط دفع من المطورين وقراءة استثمارية مقارنة.',
+    globalCta: 'عرض الاختيار الدولي',
     businessEyebrow: 'الأعمال',
     businessSectionTitle: 'أسسوا شركتكم دون تعدد جهات الاتصال.',
     businessSectionText: 'ينسق Bosphoras الإعداد التشغيلي مع المختصين المناسبين ويمكن أن يبقى جهة الاتصال الرئيسية بعد التأسيس.',
@@ -259,11 +280,14 @@ function route(locale: Locale, id: Parameters<typeof getSlugForPage>[0]) {
 export async function HomeProjectPaths({ locale }: { locale: Locale }) {
   const c = copy[locale];
   const propertyHref = route(locale, 'property');
+  const globalPropertyHref = getLocalePath(locale, globalPropertyHubPaths[locale]);
   const businessHref = route(locale, 'business-setup');
   const relocationHref = route(locale, 'relocate');
   const assessmentHref = route(locale, 'private-assessment');
   const privateAccessHref = route(locale, 'private-club');
-  const properties = (await fetchPublishedProperties()).slice(0, 3);
+  const properties = (await fetchPublishedProperties())
+    .filter((property) => property.countryCode === 'TR' || /turkey|türkiye|turquie|турц|تركيا/i.test(property.countryName))
+    .slice(0, 3);
   const peninsulaHref = locale === 'fr' ? '/peninsula-istanbul' : `/${locale}/peninsula-istanbul`;
 
   const paths = [
@@ -359,6 +383,19 @@ export async function HomeProjectPaths({ locale }: { locale: Locale }) {
           )}
 
           <Link href={propertyHref} className={darkButton + ' mt-8'}>{c.allProperties}<ArrowRight size={16} aria-hidden="true" /></Link>
+
+          <div className="mt-12 border border-[#23483f] bg-[#0c1b18] p-7 text-white md:p-9">
+            <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#c9aa7a]">{c.globalEyebrow}</p>
+                <h3 className="mt-4 max-w-3xl font-serif text-3xl leading-tight tracking-[-0.03em] md:text-4xl">{c.globalTitle}</h3>
+                <p className="mt-4 max-w-3xl text-sm leading-7 text-[#c5d0cc] md:text-base">{c.globalText}</p>
+              </div>
+              <Link href={globalPropertyHref} className="inline-flex min-h-[48px] items-center justify-center gap-3 border border-[#c9aa7a]/55 px-6 py-4 text-sm font-semibold text-[#f6efe4] transition hover:bg-white/10">
+                {c.globalCta}<ArrowRight size={16} aria-hidden="true" />
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
