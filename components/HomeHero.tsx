@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Locale } from '@/lib/i18n';
+import { withAssessmentContext } from '@/lib/assessmentContext';
 
 type HomeHeroCopy = {
   eyebrow: string;
@@ -67,6 +68,7 @@ const heroCopy: Record<Locale, HomeHeroCopy> = {
 
 export function HomeHero({ locale }: { locale: Locale }) {
   const copy = heroCopy[locale];
+  const assessmentHref = withAssessmentContext(copy.assessmentHref, '/', copy.h1, 'home');
 
   return (
     <section className="relative overflow-hidden bg-[#071426] pt-20 text-white md:min-h-[82vh] md:pt-32">
@@ -103,7 +105,7 @@ export function HomeHero({ locale }: { locale: Locale }) {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row md:mt-10">
             <Link
-              href={copy.assessmentHref}
+              href={assessmentHref}
               data-cta-id="home_hero_adviser"
               className="inline-flex min-h-[52px] items-center justify-center bg-[#d2a863] px-7 py-4 text-sm font-semibold text-[#101827] transition hover:bg-[#e0bc78] md:px-8"
             >
