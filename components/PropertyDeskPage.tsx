@@ -10,6 +10,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 import { PropertyDeskBrowser } from '@/components/PropertyDeskBrowser';
+import { withAssessmentContext } from '@/lib/assessmentContext';
 
 interface PropertyDeskPageProps {
   page: MainPageContent;
@@ -138,9 +139,9 @@ export async function PropertyDeskPage({ page }: PropertyDeskPageProps) {
   const featured=properties.find((property)=>property.featured)||properties[0];
   const markets=new Set(properties.map((property)=>property.cityName||property.city).filter(Boolean));
   const entry=minEntry(properties);
-  const assessmentHref=getLocalePath(locale,page.cta.href);
   const homeHref=getLocalePath(locale,'/');
   const hubHref=getLocalePath(locale,propertyHubPaths[locale]);
+  const assessmentHref=withAssessmentContext(getLocalePath(locale,page.cta.href),hubHref,page.h1,'property-desk');
   const featuredHref=featured?getLocalePath(locale,getPropertyPath(locale,featured)):assessmentHref;
   const itemList={
     '@context':'https://schema.org',
@@ -217,7 +218,7 @@ export async function PropertyDeskPage({ page }: PropertyDeskPageProps) {
             <p className="mt-5 max-w-xl text-sm leading-7 text-[#65736e]">{c.capitalText}</p>
           </div>
           <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
-            {c.capitalOptions.map((amount)=><Link key={amount} href={assessmentHref+'?subject=property-desk&capital='+encodeURIComponent(amount)} className="group rounded-2xl border border-[#c9d4cf] bg-white p-5 transition hover:-translate-y-1 hover:border-[#a48758] hover:shadow-[0_18px_50px_rgba(20,40,36,.08)]"><WalletCards size={18} className="text-[#87683c]"/><strong className="mt-9 block text-xl tracking-[-0.03em]">{amount}</strong><span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-[#315d55]">{c.private}<ArrowRight size={13} className="transition group-hover:translate-x-1"/></span></Link>)}
+            {c.capitalOptions.map((amount)=><Link key={amount} href={assessmentHref+'&capital='+encodeURIComponent(amount)} className="group rounded-2xl border border-[#c9d4cf] bg-white p-5 transition hover:-translate-y-1 hover:border-[#a48758] hover:shadow-[0_18px_50px_rgba(20,40,36,.08)]"><WalletCards size={18} className="text-[#87683c]"/><strong className="mt-9 block text-xl tracking-[-0.03em]">{amount}</strong><span className="mt-3 inline-flex items-center gap-1 text-xs font-semibold text-[#315d55]">{c.private}<ArrowRight size={13} className="transition group-hover:translate-x-1"/></span></Link>)}
           </div>
         </div>
       </section>
