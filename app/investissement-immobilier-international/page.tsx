@@ -8,7 +8,7 @@ export const metadata: Metadata = buildMetadata({
   locale:'fr',
   path:'/investissement-immobilier-international',
   title:'Investissement immobilier international | Bosphoras',
-  description:'Opportunités immobilières internationales sélectionnées par Bosphoras : Turquie, Dubaï, Batumi, Almaty, Paris et autres marchés, avec plans de paiement et analyse investissement.',
+  description:'Opportunités immobilières internationales sélectionnées hors de Turquie par Bosphoras : programmes neufs, plans de paiement promoteurs et analyse d’investissement.',
   alternates:{
     fr:'https://www.bosphoras.com/investissement-immobilier-international',
     en:'https://www.bosphoras.com/en/international-property-investment',

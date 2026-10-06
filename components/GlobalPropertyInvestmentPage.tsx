@@ -15,7 +15,7 @@ function copy(locale: Locale) {
   if (locale === 'fr') return {
     label:'BOSPHORAS GLOBAL PROPERTY & INVESTMENT',
     title:'Investir dans l’immobilier international avec un seul bureau.',
-    text:'Turquie, Dubaï, Batumi, Almaty, Paris et autres marchés sélectionnés : Bosphoras centralise les opportunités de ses partenaires et les présente avec la même méthode de lecture.',
+    text:'Bosphoras réunit une sélection évolutive d’opportunités immobilières hors de Turquie et les présente avec la même méthode de lecture : produit, prix, conditions promoteur, capital requis et points de vigilance.',
     browse:'Voir les opportunités',
     search:'Définir ma recherche',
     markets:'Marchés internationaux',
@@ -29,7 +29,7 @@ function copy(locale: Locale) {
   if (locale === 'ru') return {
     label:'BOSPHORAS GLOBAL PROPERTY & INVESTMENT',
     title:'Международная недвижимость через один инвестиционный офис.',
-    text:'Турция, Дубай, Батуми, Алматы, Париж и другие отобранные рынки — единая структура Bosphoras для партнёрских предложений и анализа.',
+    text:'Bosphoras формирует развивающуюся подборку возможностей за пределами Турции и анализирует их по единой системе: продукт, цена, условия застройщика, необходимый капитал и ключевые риски.',
     browse:'Смотреть предложения',search:'Описать поиск',
     markets:'Международные рынки',marketsText:'Страны и города появляются по мере добавления проверенных возможностей.',
     payment:'Доступ и планы оплаты',paymentText:'Цена cash, скидка, рассрочка 0% или удорожание — только если это реально предложено.',
@@ -39,7 +39,7 @@ function copy(locale: Locale) {
   if (locale === 'ar') return {
     label:'BOSPHORAS GLOBAL PROPERTY & INVESTMENT',
     title:'استثمار عقاري دولي من خلال مكتب استثماري واحد.',
-    text:'تركيا ودبي وباتومي وألماتي وباريس وأسواق مختارة أخرى ضمن منهج Bosphoras نفسه للعرض والتحليل.',
+    text:'يجمع Bosphoras مجموعة متطورة من الفرص العقارية خارج تركيا ويعرضها بالمنهج نفسه: المنتج والسعر وشروط المطور ورأس المال المطلوب ونقاط الحذر.',
     browse:'عرض الفرص',search:'تحديد البحث',
     markets:'أسواق دولية',marketsText:'تظهر الدول والمدن مع إضافة فرص موثقة ومعتمدة إلى Property Desk.',
     payment:'الدخول وخطط الدفع',paymentText:'سعر نقدي وخصم وتقسيط 0٪ أو تكلفة إضافية فقط عندما تكون شروطاً فعلية.',
@@ -49,7 +49,7 @@ function copy(locale: Locale) {
   return {
     label:'BOSPHORAS GLOBAL PROPERTY & INVESTMENT',
     title:'International property investing through one private investment desk.',
-    text:'Turkey, Dubai, Batumi, Almaty, Paris and other selected markets brought into one Bosphoras framework for sourcing, presentation and analysis.',
+    text:'Bosphoras brings together an evolving selection of property opportunities outside Turkey and reviews them through one framework: product, price, developer terms, capital required and watchpoints.',
     browse:'View opportunities',search:'Define my search',
     markets:'International markets',marketsText:'Countries and cities appear as validated opportunities enter the Property Desk.',
     payment:'Access & developer payment',paymentText:'Cash price, cash discount, 0% instalments or priced instalments only when genuinely offered.',
@@ -60,7 +60,7 @@ function copy(locale: Locale) {
 
 export async function GlobalPropertyInvestmentPage({ locale }:{ locale:Locale }) {
   const c=copy(locale);
-  const properties=await fetchPublishedProperties();
+  const properties=(await fetchPublishedProperties()).filter((property)=>property.countryCode !== 'TR' && !/turkey|türkiye|turquie|турц|تركيا/i.test(property.countryName));
   const hub=getLocalePath(locale,globalPropertyHubPaths[locale]);
   const assessment=locale==='fr'?'/diagnostic-prive?subject=global-property':locale==='en'?'/en/private-assessment?subject=global-property':locale==='ru'?'/ru/chastnaya-konsultatsiya?subject=global-property':'/ar/تقييم-خاص?subject=global-property';
   const localizedPaths=Object.fromEntries((['fr','en','ru','ar'] as const).map((l)=>[l,getLocalePath(l,globalPropertyHubPaths[l])])) as Record<Locale,string>;
@@ -83,7 +83,7 @@ export async function GlobalPropertyInvestmentPage({ locale }:{ locale:Locale })
             <Link href={assessment} className="inline-flex min-h-[50px] items-center gap-2 rounded-lg border border-white/20 px-6 text-sm font-semibold text-white">{c.search}<ArrowRight size={16}/></Link>
           </div>
           <div className="mt-12 flex flex-wrap gap-2">
-            {(countries.length?countries:['Turkey','United Arab Emirates','Georgia','Kazakhstan','France','United States']).slice(0,10).map((country)=><span key={country} className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs text-[#c5d0cc]">{country}</span>)}
+            {countries.slice(0,10).map((country)=><span key={country} className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-xs text-[#c5d0cc]">{country}</span>)}
           </div>
         </div>
       </section>

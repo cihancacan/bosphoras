@@ -8,7 +8,7 @@ export const metadata: Metadata = buildMetadata({
   locale:'ar',
   path:'/الاستثمار-العقاري-الدولي',
   title:'الاستثمار العقاري الدولي | Bosphoras',
-  description:'فرص عقارية دولية مختارة في تركيا ودبي وباتومي وألماتي وباريس وأسواق أخرى مع خطط دفع وتحليل استثماري من Bosphoras.',
+  description:'فرص عقارية دولية مختارة خارج تركيا، مع مشاريع جديدة وخطط دفع من المطورين وتحليل استثماري من Bosphoras.',
   alternates:{
     fr:'https://www.bosphoras.com/investissement-immobilier-international',
     en:'https://www.bosphoras.com/en/international-property-investment',
