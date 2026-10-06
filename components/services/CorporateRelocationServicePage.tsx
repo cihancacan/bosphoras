@@ -21,6 +21,7 @@ import { StructuredData } from '@/components/StructuredData';
 import type { Locale } from '@/lib/i18n';
 import { organizationSchema, breadcrumbSchema } from '@/lib/seo';
 import { siteUrl } from '@/lib/routes';
+import { withAssessmentContext } from '@/lib/assessmentContext';
 
 const paths: Record<Locale, string> = {
   fr: '/relocation-corporate-turquie',
@@ -444,6 +445,7 @@ export function CorporateRelocationServicePage({ locale }: { locale: Locale }) {
   const c = content[locale];
   const dir = locale === 'ar' ? 'rtl' : 'ltr';
   const canonical = siteUrl + paths[locale];
+  const assessmentHref = withAssessmentContext(assessmentPaths[locale], paths[locale], c.title, 'corporate-relocation');
   const officialLinks = [
     ['https://www.csgb.gov.tr/uigm/en/calisma-izni/basvuru-kilavuzlari/', locale === 'fr' ? 'Ministère du Travail — permis de travail' : locale === 'en' ? 'Ministry of Labour — work permits' : locale === 'ru' ? 'Министерство труда — разрешения на работу' : 'وزارة العمل — تصاريح العمل'],
     ['https://en.goc.gov.tr/residence-permit-types', locale === 'fr' ? 'Migration Management — titres de séjour' : locale === 'en' ? 'Migration Management — residence permits' : locale === 'ru' ? 'Migration Management — виды ВНЖ' : 'إدارة الهجرة — أنواع الإقامة'],
@@ -510,7 +512,7 @@ export function CorporateRelocationServicePage({ locale }: { locale: Locale }) {
               <h1 className="max-w-5xl font-serif text-4xl leading-[1.06] tracking-tight text-[hsl(220,45%,12%)] md:text-5xl lg:text-6xl">{c.title}</h1>
               <p className="mt-8 max-w-4xl text-base font-normal leading-8 text-[hsl(220,18%,22%)] md:text-lg">{c.hero}</p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link href={assessmentPaths[locale]} className="inline-flex min-h-[48px] items-center gap-3 bg-[#121826] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#263246]">
+                <Link href={assessmentHref} className="inline-flex min-h-[48px] items-center gap-3 bg-[#121826] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#263246]">
                   {c.cta}<ArrowRight size={17} aria-hidden="true" />
                 </Link>
                 <Link href={contactPaths[locale]} className="inline-flex min-h-[48px] items-center gap-3 border border-[#d8c7a1] bg-white px-6 py-3 text-sm font-semibold text-[#121826] transition hover:border-[#8a6728]">
@@ -645,7 +647,7 @@ export function CorporateRelocationServicePage({ locale }: { locale: Locale }) {
                     <p className="text-[0.65rem] font-medium uppercase tracking-[0.3em] text-[#d2a863]">{c.confidential}</p>
                     <h2 className="mt-5 font-serif text-2xl leading-snug">{c.finalTitle}</h2>
                     <p className="mt-4 text-sm leading-7 text-white/75">{c.finalText}</p>
-                    <Link href={assessmentPaths[locale]} className="mt-7 inline-flex items-center gap-2 border-b border-[#d2a863]/50 pb-1 text-xs font-semibold uppercase tracking-[0.16em] text-[#d2a863]">
+                    <Link href={assessmentHref} className="mt-7 inline-flex items-center gap-2 border-b border-[#d2a863]/50 pb-1 text-xs font-semibold uppercase tracking-[0.16em] text-[#d2a863]">
                       {c.finalCta}<ArrowRight size={14} />
                     </Link>
                   </div>
@@ -668,7 +670,7 @@ export function CorporateRelocationServicePage({ locale }: { locale: Locale }) {
             <div className="mx-auto mb-7 h-px w-12 bg-[#d2a863]" />
             <h2 className="font-serif text-3xl leading-tight tracking-tight md:text-5xl">{c.finalTitle}</h2>
             <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-white/75">{c.finalText}</p>
-            <Link href={assessmentPaths[locale]} className="mt-8 inline-flex min-h-[50px] items-center gap-3 bg-[#d2a863] px-8 py-4 text-sm font-semibold text-[#121826]">
+            <Link href={assessmentHref} className="mt-8 inline-flex min-h-[50px] items-center gap-3 bg-[#d2a863] px-8 py-4 text-sm font-semibold text-[#121826]">
               {c.finalCta}<ArrowRight size={16} />
             </Link>
           </div>
