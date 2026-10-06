@@ -12,6 +12,7 @@ import {
 import type { Locale } from '@/lib/i18n';
 import { getSlugForPage } from '@/data/pages/types';
 import { getLocalePath } from '@/lib/routes';
+import { withAssessmentContext } from '@/lib/assessmentContext';
 import { fetchPublishedProperties } from '@/lib/propertyStore';
 import {
   formatEntryCapital,
@@ -283,7 +284,7 @@ export async function HomeProjectPaths({ locale }: { locale: Locale }) {
   const globalPropertyHref = getLocalePath(locale, globalPropertyHubPaths[locale]);
   const businessHref = route(locale, 'business-setup');
   const relocationHref = route(locale, 'relocate');
-  const assessmentHref = route(locale, 'private-assessment');
+  const assessmentHref = withAssessmentContext(route(locale, 'private-assessment'), '/', c.pathsTitle, 'home');
   const privateAccessHref = route(locale, 'private-club');
   const properties = (await fetchPublishedProperties())
     .filter((property) => property.countryCode === 'TR' || /turkey|türkiye|turquie|турц|تركيا/i.test(property.countryName))
@@ -486,7 +487,7 @@ export async function HomeProjectPaths({ locale }: { locale: Locale }) {
 
 export function HomeFinalContact({ locale }: { locale: Locale }) {
   const c = copy[locale];
-  const assessmentHref = route(locale, 'private-assessment');
+  const assessmentHref = withAssessmentContext(route(locale, 'private-assessment'), '/', c.finalTitle, 'home');
 
   return (
     <section className="bg-[#121826] px-5 py-16 text-[#fffaf0] md:px-8 md:py-24">
