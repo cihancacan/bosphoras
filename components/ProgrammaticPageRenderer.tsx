@@ -7,6 +7,7 @@ import { getSlugForPage } from '@/data/pages/types';
 import { localeDir } from '@/lib/i18n';
 import { getCanonicalUrl, getLocalePath } from '@/lib/routes';
 import { breadcrumbSchema, faqSchema, serviceSchema } from '@/lib/seo';
+import { withAssessmentContext } from '@/lib/assessmentContext';
 
 type Locale = ProgrammaticPage['locale'];
 type Category = ProgrammaticPage['service']['category'];
@@ -483,6 +484,11 @@ function ctaIntro(page: ProgrammaticPage) {
 export function ProgrammaticPageRenderer({ page }: { page: ProgrammaticPage }) {
   const l = labels(page);
   const locale = page.locale;
+  const assessmentHref = withAssessmentContext(
+    privateAssessmentPath(locale),
+    getLocalePath(locale, page.slug),
+    page.title.replace(' | Bosphoras', '')
+  );
   const faqs = buildFaqs(page);
   const canonical = getCanonicalUrl(locale, page.slug);
   const citySlug = getSlugForPage(page.city.id, locale);
@@ -513,7 +519,7 @@ export function ProgrammaticPageRenderer({ page }: { page: ProgrammaticPage }) {
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#8a6728]">{l.answer}</p>
               <p className="mt-3 text-lg leading-8 text-[#172032]">{directAnswer(page)}</p>
             </div>
-            <Link href={privateAssessmentPath(locale)} className="mt-8 inline-flex items-center justify-center gap-3 bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246]">{l.cta}<ArrowRight size={16} /></Link>
+            <Link href={assessmentHref} className="mt-8 inline-flex items-center justify-center gap-3 bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246]">{l.cta}<ArrowRight size={16} /></Link>
           </div>
         </div>
       </section>
@@ -579,7 +585,7 @@ export function ProgrammaticPageRenderer({ page }: { page: ProgrammaticPage }) {
               <h2 className="flex items-center gap-3 font-serif text-3xl"><ShieldCheck className="text-[#d2a863]" />Bosphoras Private Desk</h2>
               <p className="mt-5 text-base leading-8 text-[#d8cfbf]">{ctaIntro(page)}</p>
               <p className="mt-3 text-sm leading-7 text-[#b9b1a5]">{page.market.ctaWording}</p>
-              <Link href={privateAssessmentPath(locale)} className="mt-7 inline-flex items-center justify-center gap-3 border border-[#d2a863] px-7 py-4 text-xs font-bold uppercase tracking-[0.15em] text-[#d2a863] transition hover:bg-[#d2a863] hover:text-[#121826]">{l.cta}<ArrowRight size={15} /></Link>
+              <Link href={assessmentHref} className="mt-7 inline-flex items-center justify-center gap-3 border border-[#d2a863] px-7 py-4 text-xs font-bold uppercase tracking-[0.15em] text-[#d2a863] transition hover:bg-[#d2a863] hover:text-[#121826]">{l.cta}<ArrowRight size={15} /></Link>
             </section>
           </article>
         </div>
