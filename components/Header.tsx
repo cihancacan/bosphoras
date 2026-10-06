@@ -148,7 +148,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
                       className={`mb-1 block px-4 py-3.5 transition last:mb-0 ${item.tone === 'property' ? 'border-l-2 border-[#4f8d78] bg-[#4f8d78]/10 hover:bg-[#4f8d78]/18' : item.tone === 'transfer' ? 'border-l-2 border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)]/[0.07] hover:bg-[hsl(42,65%,52%)]/[0.12]' : 'border-b border-white/5 hover:bg-white/[0.04]'}`}
                     >
                       <span className={`block text-[0.76rem] font-semibold uppercase tracking-[0.12em] ${item.tone === 'property' ? 'text-[#a9d5c5]' : item.tone === 'transfer' ? 'text-[hsl(42,65%,63%)]' : 'text-[hsl(45,30%,96%)]'}`}>{item.label}</span>
-                      {item.description && <span className="mt-1 block text-[0.76rem] leading-5 text-[hsl(220,10%,62%)]">{item.description}</span>}
+                      {item.description && <span className="mt-1.5 block text-[0.79rem] font-medium leading-5 text-[hsl(220,12%,76%)]">{item.description}</span>}
                     </Link>
                   ))}
                 </div>
