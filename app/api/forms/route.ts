@@ -123,6 +123,8 @@ const internalFieldLabels: Record<string, string> = {
   'Confidentiality accepted': 'Confidentiality accepted',
   'Conditions accepted': 'Conditions accepted',
   'Validation accepted': 'Validation accepted',
+  'Source page': 'Source page',
+  'Source title': 'Source page title',
 };
 
 const clientCopy: Record<Locale, { subject: string; hello: string; intro: string; follow: string; closing: string; button: string; replyNote: string }> = {
@@ -239,11 +241,11 @@ function rows(fields: Record<string, string>, englishLabels = false): string {
 function premiumShell(content: string, locale: Locale): string {
   const dir = locale === 'ar' ? 'rtl' : 'ltr';
   const note = clientCopy[locale].replyNote;
-  return `<!doctype html><html dir="${dir}"><body style="margin:0;background:#f8f1e7;padding:28px;font-family:Georgia,'Times New Roman',serif;color:#111827;"><div style="max-width:720px;margin:0 auto;background:#fffaf0;border:1px solid #d8c7a1;box-shadow:0 24px 80px rgba(16,24,39,.08);"><div style="padding:34px 34px 22px;border-bottom:1px solid #d8c7a1;background:#121826;color:#fffaf0;"><div style="font-size:22px;letter-spacing:.20em;text-transform:uppercase;">Bosphoras</div><div style="margin-top:8px;color:#d2a863;font-size:11px;letter-spacing:.24em;text-transform:uppercase;">Private Desk · Istanbul</div></div><div style="padding:34px;">${content}</div><div style="padding:24px 34px;border-top:1px solid #d8c7a1;color:#6b7280;font-family:Arial,sans-serif;font-size:13px;line-height:1.7;"><strong style="color:#111827;">Équipe Bosphoras Istanbul</strong><br/>+33 1 88 84 22 22<br/><a href="https://bosphoras.com" style="color:#8a6728;text-decoration:none;">bosphoras.com</a><br/><span style="font-size:12px;">${note}</span></div></div></body></html>`;
+  return `<!doctype html><html dir="${dir}"><body style="margin:0;background:#f8f1e7;padding:28px;font-family:Georgia,'Times New Roman',serif;color:#111827;"><div style="max-width:720px;margin:0 auto;background:#fffaf0;border:1px solid #d8c7a1;box-shadow:0 24px 80px rgba(16,24,39,.08);"><div style="padding:34px 34px 22px;border-bottom:1px solid #d8c7a1;background:#121826;color:#fffaf0;"><div style="font-size:22px;letter-spacing:.20em;text-transform:uppercase;">Bosphoras</div><div style="margin-top:8px;color:#d2a863;font-size:11px;letter-spacing:.24em;text-transform:uppercase;">Private Desk · Istanbul</div></div><div style="padding:34px;">${content}</div><div style="padding:24px 34px;border-top:1px solid #d8c7a1;color:#6b7280;font-family:Arial,sans-serif;font-size:13px;line-height:1.7;"><strong style="color:#111827;">Équipe Bosphoras Istanbul</strong><br/>+90 546 769 99 96<br/><a href="https://bosphoras.com" style="color:#8a6728;text-decoration:none;">bosphoras.com</a><br/><span style="font-size:12px;">${note}</span></div></div></body></html>`;
 }
 
 function internalShell(content: string): string {
-  return `<!doctype html><html dir="ltr"><body style="margin:0;background:#f8f1e7;padding:28px;font-family:Georgia,'Times New Roman',serif;color:#111827;"><div style="max-width:720px;margin:0 auto;background:#fffaf0;border:1px solid #d8c7a1;box-shadow:0 24px 80px rgba(16,24,39,.08);"><div style="padding:34px 34px 22px;border-bottom:1px solid #d8c7a1;background:#121826;color:#fffaf0;"><div style="font-size:22px;letter-spacing:.20em;text-transform:uppercase;">Bosphoras</div><div style="margin-top:8px;color:#d2a863;font-size:11px;letter-spacing:.24em;text-transform:uppercase;">Private Desk · Istanbul</div></div><div style="padding:34px;">${content}</div><div style="padding:24px 34px;border-top:1px solid #d8c7a1;color:#6b7280;font-family:Arial,sans-serif;font-size:13px;line-height:1.7;"><strong style="color:#111827;">Bosphoras Istanbul Team</strong><br/>+33 1 88 84 22 22<br/><a href="https://bosphoras.com" style="color:#8a6728;text-decoration:none;">bosphoras.com</a><br/><span style="font-size:12px;">Internal team notification. Reply directly to the client from this email thread.</span></div></div></body></html>`;
+  return `<!doctype html><html dir="ltr"><body style="margin:0;background:#f8f1e7;padding:28px;font-family:Georgia,'Times New Roman',serif;color:#111827;"><div style="max-width:720px;margin:0 auto;background:#fffaf0;border:1px solid #d8c7a1;box-shadow:0 24px 80px rgba(16,24,39,.08);"><div style="padding:34px 34px 22px;border-bottom:1px solid #d8c7a1;background:#121826;color:#fffaf0;"><div style="font-size:22px;letter-spacing:.20em;text-transform:uppercase;">Bosphoras</div><div style="margin-top:8px;color:#d2a863;font-size:11px;letter-spacing:.24em;text-transform:uppercase;">Private Desk · Istanbul</div></div><div style="padding:34px;">${content}</div><div style="padding:24px 34px;border-top:1px solid #d8c7a1;color:#6b7280;font-family:Arial,sans-serif;font-size:13px;line-height:1.7;"><strong style="color:#111827;">Bosphoras Istanbul Team</strong><br/>+90 546 769 99 96<br/><a href="https://bosphoras.com" style="color:#8a6728;text-decoration:none;">bosphoras.com</a><br/><span style="font-size:12px;">Internal team notification. Reply directly to the client from this email thread.</span></div></div></body></html>`;
 }
 
 function clientHtml(locale: Locale): string {
@@ -253,7 +255,7 @@ function clientHtml(locale: Locale): string {
 
 function clientText(locale: Locale): string {
   const c = clientCopy[locale];
-  return `${c.hello}\n\n${c.intro}\n\n${c.follow}\n\n${c.closing}\n\nÉquipe Bosphoras Istanbul\n+33 1 88 84 22 22\nbosphoras.com`;
+  return `${c.hello}\n\n${c.intro}\n\n${c.follow}\n\n${c.closing}\n\nÉquipe Bosphoras Istanbul\n+90 546 769 99 96\nbosphoras.com`;
 }
 
 function internalHtml(payload: { locale: Locale; formKind: FormKind; fields: Record<string, string>; sourcePath: string }, clientEmail: string, clientName: string): string {
