@@ -375,13 +375,6 @@ const assessmentPaths: Record<Locale, string> = {
   ar: '/ar/تقييم-خاص',
 };
 
-const contactPaths: Record<Locale, string> = {
-  fr: '/contact',
-  en: '/en/contact',
-  ru: '/ru/contact',
-  ar: '/ar/contact',
-};
-
 const serviceCards = [
   { key: 'before' as const, icon: Plane },
   { key: 'arrival' as const, icon: Home },
@@ -515,9 +508,9 @@ export function CorporateRelocationServicePage({ locale }: { locale: Locale }) {
                 <Link href={assessmentHref} className="inline-flex min-h-[48px] items-center gap-3 bg-[#121826] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#263246]">
                   {c.cta}<ArrowRight size={17} aria-hidden="true" />
                 </Link>
-                <Link href={contactPaths[locale]} className="inline-flex min-h-[48px] items-center gap-3 border border-[#d8c7a1] bg-white px-6 py-3 text-sm font-semibold text-[#121826] transition hover:border-[#8a6728]">
+                <a href="tel:+905467699996" className="inline-flex min-h-[48px] items-center gap-3 border border-[#d8c7a1] bg-white px-6 py-3 text-sm font-semibold text-[#121826] transition hover:border-[#8a6728]">
                   +90 546 769 99 96
-                </Link>
+                </a>
               </div>
             </div>
           </div>
