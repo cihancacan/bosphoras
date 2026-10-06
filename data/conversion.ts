@@ -59,16 +59,16 @@ export const conversionCopy = {
     "trustTitle": "جهة اتصال واحدة للتنسيق. مختصون لكل مجال.",
     "faqs": [
       {
-        "question": "هل تشترط العضوية للتواصل؟",
-        "answer": "لا. يمكنكم وصف مشروعكم عبر التقييم الخاص. Private Access عرض منفصل لمن يرغب في مرافقة مستمرة وذات أولوية."
+        "question": "هل يمكن للمشتري الأجنبي شراء عقار في تركيا؟",
+        "answer": "نعم، وفق القواعد المطبقة على العقار ووضعكم. يختار Bosphoras المشاريع وينظم الزيارات وينسق المهنيين اللازمين لإتمام الشراء."
       },
       {
-        "question": "هل يجب تحديد المشروع بالكامل؟",
-        "answer": "لا. اذكروا ما ترغبون في تنظيمه وما يحتاج إلى توضيح. يمكن ترك التفاصيل الاختيارية لمحادثة لاحقة."
+        "question": "هل يستطيع Bosphoras تنسيق تأسيس شركتي وانتقالي؟",
+        "answer": "نعم. يمكننا تنسيق تأسيس الشركة والمحاسبة والتواصل البنكي، ثم الإقامة والسكن والتأمين والانتقال مع المهنيين المناسبين."
       },
       {
-        "question": "ماذا يحدث بعد إرسال الطلب؟",
-        "answer": "يدرس المكتب طلبكم ويتواصل معكم لتوضيح الاحتياجات والخطوات الممكنة. إرسال النموذج لا يشكل عضوية أو طلب خدمة."
+        "question": "هل أحتاج إلى عضوية Private Access للعمل مع Bosphoras؟",
+        "answer": "لا. العقارات وتأسيس الشركات والانتقال متاحة دون عضوية. Private Access عرض منفصل للعملاء الذين يريدون علاقة مستمرة وذات أولوية."
       }
     ]
   },
@@ -131,16 +131,16 @@ export const conversionCopy = {
     "trustTitle": "One contact to coordinate. Specialists for each profession.",
     "faqs": [
       {
-        "question": "Do I need to be a member to contact you?",
-        "answer": "No. You can describe your project through the private assessment. Private Access is a separate offer for ongoing, priority support."
+        "question": "Can a foreign buyer purchase property in Turkey?",
+        "answer": "Yes, subject to the rules applicable to the property and your situation. Bosphoras selects projects, organises viewings and coordinates the professionals needed for the acquisition."
       },
       {
-        "question": "Does my project need to be fully defined?",
-        "answer": "No. Tell us what you want to organise and what still needs clarification. Optional form details can wait for a later conversation."
+        "question": "Can Bosphoras coordinate my company setup and relocation?",
+        "answer": "Yes. We can coordinate company formation, accounting and banking contacts, then residence, housing, insurance and relocation with the relevant professionals."
       },
       {
-        "question": "What happens after I send my request?",
-        "answer": "The desk reviews your request and contacts you to clarify your needs and possible next steps. Sending the form does not constitute membership or an order for services."
+        "question": "Do I need Private Access membership to work with Bosphoras?",
+        "answer": "No. Property, company formation and relocation are available without membership. Private Access is a separate offer for clients seeking an ongoing, priority relationship."
       }
     ]
   },
@@ -203,16 +203,16 @@ export const conversionCopy = {
     "trustTitle": "Un interlocuteur pour coordonner. Des experts pour chaque métier.",
     "faqs": [
       {
-        "question": "Faut-il être membre pour vous contacter ?",
-        "answer": "Non. Vous pouvez présenter votre projet via le diagnostic privé. Private Access est une offre distincte pour les clients qui souhaitent une relation continue et prioritaire."
+        "question": "Puis-je acheter un bien en Turquie en tant qu’étranger ?",
+        "answer": "Oui, sous réserve des règles applicables au bien et à votre situation. Bosphoras sélectionne les projets, organise les visites et coordonne les professionnels nécessaires à l’acquisition."
       },
       {
-        "question": "Mon projet doit-il déjà être entièrement défini ?",
-        "answer": "Non. Indiquez ce que vous souhaitez organiser et ce qui reste à clarifier. Les précisions facultatives du formulaire peuvent attendre un échange ultérieur."
+        "question": "Bosphoras peut-il coordonner la création de ma société et mon installation ?",
+        "answer": "Oui. Nous pouvons coordonner la création de société, la comptabilité, les interlocuteurs bancaires, puis les sujets de résidence, logement, assurance et installation avec les professionnels concernés."
       },
       {
-        "question": "Que se passe-t-il après ma demande ?",
-        "answer": "Le bureau examine votre demande et vous recontacte pour préciser les besoins et la suite envisageable. L’envoi du formulaire ne constitue pas une adhésion ni une commande de prestation."
+        "question": "Dois-je devenir membre Private Access pour travailler avec Bosphoras ?",
+        "answer": "Non. L’immobilier, la création d’entreprise et la relocation sont accessibles sans adhésion. Private Access est une offre distincte destinée aux clients qui souhaitent une relation continue et prioritaire."
       }
     ]
   },
@@ -275,16 +275,16 @@ export const conversionCopy = {
     "trustTitle": "Один контакт для координации. Специалисты для каждой задачи.",
     "faqs": [
       {
-        "question": "Нужно ли быть участником, чтобы обратиться?",
-        "answer": "Нет. Вы можете описать проект через форму частной консультации. Private Access — отдельное предложение для постоянного приоритетного сопровождения."
+        "question": "Может ли иностранный покупатель приобрести недвижимость в Турции?",
+        "answer": "Да, с учётом правил, применимых к объекту и вашей ситуации. Bosphoras отбирает проекты, организует просмотры и координирует специалистов, необходимых для покупки."
       },
       {
-        "question": "Должен ли проект быть полностью определён?",
-        "answer": "Нет. Укажите, что хотите организовать и что ещё нужно уточнить. Необязательные поля можно оставить для последующего разговора."
+        "question": "Может ли Bosphoras координировать создание компании и мой переезд?",
+        "answer": "Да. Мы можем координировать регистрацию компании, бухгалтерию и банковские контакты, а затем вопросы резиденции, жилья, страхования и переезда."
       },
       {
-        "question": "Что происходит после отправки?",
-        "answer": "Офис изучит запрос и свяжется с вами для уточнения задачи и следующих шагов. Отправка формы не является вступлением в клуб или заказом услуг."
+        "question": "Нужно ли членство Private Access для работы с Bosphoras?",
+        "answer": "Нет. Недвижимость, создание компании и relocation доступны без членства. Private Access — отдельное предложение для клиентов, которым нужна постоянная приоритетная поддержка."
       }
     ]
   }
