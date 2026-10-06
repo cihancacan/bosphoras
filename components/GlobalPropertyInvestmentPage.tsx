@@ -10,6 +10,7 @@ import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 import { organizationSchema, breadcrumbSchema } from '@/lib/seo';
 import { PropertyDeskBrowser } from '@/components/PropertyDeskBrowser';
+import { withAssessmentContext } from '@/lib/assessmentContext';
 
 function copy(locale: Locale) {
   if (locale === 'fr') return {
@@ -62,7 +63,8 @@ export async function GlobalPropertyInvestmentPage({ locale }:{ locale:Locale })
   const c=copy(locale);
   const properties=(await fetchPublishedProperties()).filter((property)=>property.countryCode !== 'TR' && !/turkey|türkiye|turquie|турц|تركيا/i.test(property.countryName));
   const hub=getLocalePath(locale,globalPropertyHubPaths[locale]);
-  const assessment=locale==='fr'?'/diagnostic-prive?subject=global-property':locale==='en'?'/en/private-assessment?subject=global-property':locale==='ru'?'/ru/chastnaya-konsultatsiya?subject=global-property':'/ar/تقييم-خاص?subject=global-property';
+  const assessmentBase=locale==='fr'?'/diagnostic-prive?subject=global-property':locale==='en'?'/en/private-assessment?subject=global-property':locale==='ru'?'/ru/chastnaya-konsultatsiya?subject=global-property':'/ar/تقييم-خاص?subject=global-property';
+  const assessment=withAssessmentContext(assessmentBase,hub,c.title,'global-property');
   const localizedPaths=Object.fromEntries((['fr','en','ru','ar'] as const).map((l)=>[l,getLocalePath(l,globalPropertyHubPaths[l])])) as Record<Locale,string>;
   const countries=Array.from(new Set(properties.map((p)=>p.countryName).filter(Boolean)));
 
