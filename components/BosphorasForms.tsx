@@ -69,7 +69,7 @@ async function submitForm(event: React.FormEvent<HTMLFormElement>, locale: Local
   data.forEach((value, key) => { fields[key] = String(value); });
   setStatus('sending');
   try {
-    const response = await fetch('/api/forms', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ locale, formKind, fields, sourcePath: window.location.pathname }) });
+    const response = await fetch('/api/forms', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ locale, formKind, fields, sourcePath: fields['Source page'] || window.location.pathname }) });
     if (!response.ok) { trackConversion('lead_form_error', { form_id: formKind, error_type: 'server' }); setStatus('error'); return; }
     // Count a lead only after the server has accepted it. Never send form values to analytics.
     const analyticsWindow = window as typeof window & { gtag?: (...args: unknown[]) => void };
@@ -93,6 +93,122 @@ export function BosphorasForm({ locale, embedded = false, kind = 'private-assess
   if (kind === 'membership-application') return <BosphorasMembershipForm locale={locale} embedded={embedded} />;
   return <BosphorasAssessmentForm locale={locale} embedded={embedded} />;
 }
+function humanizeSourcePath(path: string): string {
+  const clean = decodeURIComponent(path || '').split('?')[0].replace(/\/$/, '');
+  const last = clean.split('/').filter(Boolean).pop() || '';
+  return last.replace(/[-_]+/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function contextualAssessmentMessage(locale: Locale, sourceTitle: string, sourcePath: string, subject: string): string {
+  const label = sourceTitle || humanizeSourcePath(sourcePath);
+  const context = [subject, sourceTitle, sourcePath].join(' ').toLowerCase();
+  const pageRef = label
+    ? {
+        fr: ` depuis la page « ${label} »`,
+        en: ` from the “${label}” page`,
+        ru: ` со страницы «${label}»`,
+        ar: ` من صفحة «${label}»`,
+      }[locale]
+    : '';
+
+  if (/corporate[-_ ]?relocation|relocation[-_ ]?corporate|korporativ|المؤسسي/.test(context)) {
+    return {
+      fr: `Bonjour, je vous contacte${pageRef}. Nous préparons la mobilité d’un collaborateur / dirigeant en Turquie et souhaitons être accompagnés sur l’organisation de la mission : statut administratif, logement, famille et installation. Merci de me recontacter pour cadrer le besoin et les prochaines étapes.`,
+      en: `Hello, I am contacting you${pageRef}. We are preparing the relocation of an employee / executive to Turkey and would like support coordinating the assignment: immigration status, housing, family and settling-in. Please contact me to define the scope and next steps.`,
+      ru: `Здравствуйте, я обращаюсь к вам${pageRef}. Мы готовим релокейшн сотрудника / руководителя в Турцию и хотим организовать административный статус, жильё, семью и адаптацию. Пожалуйста, свяжитесь со мной, чтобы определить объём сопровождения и следующие шаги.`,
+      ar: `مرحباً، أتواصل معكم${pageRef}. نحن نُحضّر انتقال موظف / مدير إلى تركيا ونرغب في تنسيق الوضع الإداري والسكن والعائلة والاستقرار. يرجى التواصل معي لتحديد نطاق المهمة والخطوات التالية.`,
+    }[locale];
+  }
+
+  if (/global-property|international.*property|investissement.*international|international.*invest|zarubezh|الدولي/.test(context)) {
+    return {
+      fr: `Bonjour, je vous contacte${pageRef}. Je souhaite étudier des opportunités immobilières internationales sélectionnées par Bosphoras. Merci de me recontacter pour préciser mon budget, mes marchés d’intérêt et les programmes actuellement disponibles.`,
+      en: `Hello, I am contacting you${pageRef}. I would like to review international property opportunities selected by Bosphoras. Please contact me to discuss my budget, target markets and currently available developments.`,
+      ru: `Здравствуйте, я обращаюсь к вам${pageRef}. Я хотел(а) бы рассмотреть международные объекты недвижимости, отобранные Bosphoras. Пожалуйста, свяжитесь со мной, чтобы обсудить бюджет, интересующие рынки и доступные проекты.`,
+      ar: `مرحباً، أتواصل معكم${pageRef}. أود دراسة فرص عقارية دولية مختارة من Bosphoras. يرجى التواصل معي لمناقشة الميزانية والأسواق المستهدفة والمشاريع المتاحة حالياً.`,
+    }[locale];
+  }
+
+  if (/property-desk|immobilier|property|nedvizh|عقار/.test(context)) {
+    return {
+      fr: `Bonjour, je vous contacte${pageRef}. Je recherche une opportunité immobilière et souhaite être accompagné sur la sélection des biens, le budget, les conditions de paiement et les prochaines étapes. Merci de me recontacter pour préciser ma recherche.`,
+      en: `Hello, I am contacting you${pageRef}. I am looking for a property opportunity and would like support with property selection, budget, payment terms and next steps. Please contact me to refine my search.`,
+      ru: `Здравствуйте, я обращаюсь к вам${pageRef}. Я ищу недвижимость и хотел(а) бы получить помощь с подбором объектов, бюджетом, условиями оплаты и следующими шагами. Пожалуйста, свяжитесь со мной, чтобы уточнить поиск.`,
+      ar: `مرحباً، أتواصل معكم${pageRef}. أبحث عن فرصة عقارية وأرغب في المساعدة في اختيار العقار والميزانية وشروط الدفع والخطوات التالية. يرجى التواصل معي لتحديد البحث.`,
+    }[locale];
+  }
+
+  if (/creation-entreprise|business-setup|company|sozdanie-kompanii|تأسيس/.test(context)) {
+    return {
+      fr: `Bonjour, je vous contacte${pageRef}. Je souhaite créer ou structurer une société en Turquie et être accompagné sur les étapes de constitution, comptabilité, banque et mise en place opérationnelle. Merci de me recontacter pour analyser mon projet.`,
+      en: `Hello, I am contacting you${pageRef}. I would like to set up or structure a company in Turkey and receive support with incorporation, accounting, banking and operational setup. Please contact me to review my project.`,
+      ru: `Здравствуйте, я обращаюсь к вам${pageRef}. Я хочу создать или структурировать компанию в Турции и получить сопровождение по регистрации, бухгалтерии, банку и операционному запуску. Пожалуйста, свяжитесь со мной для анализа проекта.`,
+      ar: `مرحباً، أتواصل معكم${pageRef}. أرغب في تأسيس أو تنظيم شركة في تركيا مع مرافقة في التأسيس والمحاسبة والبنوك والتشغيل. يرجى التواصل معي لتحليل المشروع.`,
+    }[locale];
+  }
+
+  if (/fiscal|tax|jurid|legal|nalog|yurid|ضريب|قانون/.test(context)) {
+    return {
+      fr: `Bonjour, je vous contacte${pageRef}. Je souhaite clarifier ma situation juridique / fiscale en Turquie et être orienté vers les professionnels adaptés. Merci de me recontacter afin de cadrer ma situation et les vérifications nécessaires.`,
+      en: `Hello, I am contacting you${pageRef}. I would like to clarify my legal / tax situation in Turkey and be connected with the appropriate professionals. Please contact me to review my circumstances and the checks required.`,
+      ru: `Здравствуйте, я обращаюсь к вам${pageRef}. Я хотел(а) бы уточнить юридическую / налоговую ситуацию в Турции и получить доступ к подходящим специалистам. Пожалуйста, свяжитесь со мной для анализа ситуации.`,
+      ar: `مرحباً، أتواصل معكم${pageRef}. أود توضيح وضعي القانوني / الضريبي في تركيا والتواصل مع المختصين المناسبين. يرجى التواصل معي لمراجعة الحالة والمتطلبات.`,
+    }[locale];
+  }
+
+  if (/visa|viza|ikamet|residence|séjour|sejour|إقامة|تأشيرة/.test(context)) {
+    return {
+      fr: `Bonjour, je vous contacte${pageRef}. Je souhaite clarifier les démarches de visa / résidence / ikamet correspondant à ma situation et connaître les documents, délais et prochaines étapes. Merci de me recontacter.`,
+      en: `Hello, I am contacting you${pageRef}. I would like to clarify the visa / residence / ikamet route that applies to my situation, including documents, timing and next steps. Please contact me.`,
+      ru: `Здравствуйте, я обращаюсь к вам${pageRef}. Я хотел(а) бы уточнить подходящую процедуру визы / ВНЖ / ikamet, необходимые документы, сроки и следующие шаги. Пожалуйста, свяжитесь со мной.`,
+      ar: `مرحباً، أتواصل معكم${pageRef}. أود توضيح مسار التأشيرة / الإقامة / ikamet المناسب لوضعي، بما في ذلك الوثائق والمدة والخطوات التالية. يرجى التواصل معي.`,
+    }[locale];
+  }
+
+  if (/installation|relocat|pereezd|переезд|انتقال/.test(context)) {
+    return {
+      fr: `Bonjour, je vous contacte${pageRef}. Je prépare une installation en Turquie et souhaite être accompagné sur les démarches, le logement et l’organisation pratique. Merci de me recontacter pour définir les priorités et le calendrier.`,
+      en: `Hello, I am contacting you${pageRef}. I am preparing a move to Turkey and would like support with formalities, housing and practical setup. Please contact me to define priorities and timing.`,
+      ru: `Здравствуйте, я обращаюсь к вам${pageRef}. Я готовлю переезд в Турцию и хочу получить сопровождение по документам, жилью и практической организации. Пожалуйста, свяжитесь со мной, чтобы определить приоритеты и сроки.`,
+      ar: `مرحباً، أتواصل معكم${pageRef}. أُحضّر للانتقال إلى تركيا وأرغب في المساعدة في الإجراءات والسكن والتنظيم العملي. يرجى التواصل معي لتحديد الأولويات والجدول الزمني.`,
+    }[locale];
+  }
+
+  if (/sante|santé|health|insurance|zdorov|strakh|صحة|تأمين/.test(context)) {
+    return {
+      fr: `Bonjour, je vous contacte${pageRef}. Je souhaite être accompagné concernant la santé / assurance en Turquie et identifier la solution ou les professionnels adaptés à ma situation. Merci de me recontacter.`,
+      en: `Hello, I am contacting you${pageRef}. I would like support regarding healthcare / insurance in Turkey and to identify the right solution or professionals for my situation. Please contact me.`,
+      ru: `Здравствуйте, я обращаюсь к вам${pageRef}. Мне нужна помощь по медицине / страхованию в Турции и подбор подходящего решения или специалистов. Пожалуйста, свяжитесь со мной.`,
+      ar: `مرحباً، أتواصل معكم${pageRef}. أرغب في المساعدة بخصوص الصحة / التأمين في تركيا واختيار الحل أو المختصين المناسبين لوضعي. يرجى التواصل معي.`,
+    }[locale];
+  }
+
+  if (/bureau|office|ofis|офис|مكتب/.test(context)) {
+    return {
+      fr: `Bonjour, je vous contacte${pageRef}. Je recherche une solution de bureau / adresse professionnelle en Turquie et souhaite connaître les options adaptées à mon activité. Merci de me recontacter.`,
+      en: `Hello, I am contacting you${pageRef}. I am looking for an office / business address solution in Turkey and would like to review options suited to my activity. Please contact me.`,
+      ru: `Здравствуйте, я обращаюсь к вам${pageRef}. Я ищу офис / профессиональный адрес в Турции и хочу рассмотреть варианты под мою деятельность. Пожалуйста, свяжитесь со мной.`,
+      ar: `مرحباً، أتواصل معكم${pageRef}. أبحث عن مكتب / عنوان مهني في تركيا وأرغب في معرفة الخيارات المناسبة لنشاطي. يرجى التواصل معي.`,
+    }[locale];
+  }
+
+  if (/transfer|chauffeur|transport|voditel|трансфер|نقل|سائق/.test(context)) {
+    return {
+      fr: `Bonjour, je vous contacte${pageRef}. Je souhaite organiser un transport / chauffeur en Turquie. Merci de me recontacter pour préciser les dates, trajets, nombre de passagers et niveau de véhicule souhaité.`,
+      en: `Hello, I am contacting you${pageRef}. I would like to arrange transport / chauffeur service in Turkey. Please contact me to confirm dates, routes, passenger count and vehicle level.`,
+      ru: `Здравствуйте, я обращаюсь к вам${pageRef}. Я хотел(а) бы организовать трансфер / водителя в Турции. Пожалуйста, свяжитесь со мной, чтобы уточнить даты, маршруты, пассажиров и класс автомобиля.`,
+      ar: `مرحباً، أتواصل معكم${pageRef}. أود تنظيم خدمة نقل / سائق في تركيا. يرجى التواصل معي لتحديد التواريخ والمسارات وعدد الركاب وفئة السيارة.`,
+    }[locale];
+  }
+
+  return {
+    fr: `Bonjour, je vous contacte${pageRef}. Je souhaite être accompagné sur ce sujet et obtenir une analyse de ma situation ainsi que les prochaines étapes. Merci de me recontacter.`,
+    en: `Hello, I am contacting you${pageRef}. I would like support with this matter and an assessment of my situation and the next steps. Please contact me.`,
+    ru: `Здравствуйте, я обращаюсь к вам${pageRef}. Я хотел(а) бы получить сопровождение по этому вопросу, анализ моей ситуации и следующие шаги. Пожалуйста, свяжитесь со мной.`,
+    ar: `مرحباً، أتواصل معكم${pageRef}. أرغب في المساعدة بخصوص هذا الموضوع وتحليل وضعي والخطوات التالية. يرجى التواصل معي.`,
+  }[locale];
+}
+
 function BosphorasAssessmentForm({ locale, embedded }: { locale: Locale; embedded: boolean }) {
   const copy = diagnostic[locale];
   const c = conversionCopy[locale];
@@ -100,6 +216,8 @@ function BosphorasAssessmentForm({ locale, embedded }: { locale: Locale; embedde
   const successHeading = useRef<HTMLHeadingElement>(null);
   const [selectedProject, setSelectedProject] = useState('');
   const [prefillMessage,setPrefillMessage]=useState('');
+  const [sourcePath,setSourcePath]=useState('');
+  const [sourceTitle,setSourceTitle]=useState('');
   useEffect(() => {
     const params=new URLSearchParams(window.location.search);
     const project=params.get('project');
@@ -107,6 +225,18 @@ function BosphorasAssessmentForm({ locale, embedded }: { locale: Locale; embedde
     if(index>=0)setSelectedProject(c.projects[index][0]);
 
     const subject=params.get('subject')||'';
+    let source=params.get('source')||'';
+    let sourceLabel=params.get('source_title')||'';
+    if(!source && document.referrer){
+      try{
+        const referrer=new URL(document.referrer);
+        if(referrer.origin===window.location.origin && referrer.pathname!==window.location.pathname) source=referrer.pathname;
+      }catch{}
+    }
+    if(!sourceLabel && source) sourceLabel=humanizeSourcePath(source);
+    setSourcePath(source);
+    setSourceTitle(sourceLabel);
+
     const propertyTitle=params.get('property_title')||'';
     const propertyLocation=params.get('property_location')||'';
     const propertyRef=params.get('property')||'';
@@ -131,6 +261,11 @@ function BosphorasAssessmentForm({ locale, embedded }: { locale: Locale; embedde
         setPrefillMessage(prefilled);
       }
     }
+
+    if(!(propertyTitle||propertyRef) && (source || sourceLabel || subject)){
+      const contextMessage=contextualAssessmentMessage(locale,sourceLabel,source,subject);
+      if(contextMessage)setPrefillMessage(contextMessage);
+    }
   }, [locale, c]);
 
   const [status, setStatus] = useState<Status>('idle');
@@ -142,6 +277,8 @@ function BosphorasAssessmentForm({ locale, embedded }: { locale: Locale; embedde
   };
   const form = status === 'success' ? <div className={formClass(embedded ? '' : 'mx-auto max-w-5xl')} role="status"><h2 ref={successHeading} tabIndex={-1} className="font-serif text-3xl outline-none">{c.successTitle}</h2><p className="mt-4 text-base leading-7">{c.successText}</p></div> : (
     <form onChange={onStart} onSubmit={(event) => submitForm(event, locale, 'private-assessment', setStatus)} className={formClass(embedded ? '' : 'mx-auto max-w-5xl')}>
+      <input type="hidden" name="Source page" value={sourcePath} />
+      <input type="hidden" name="Source title" value={sourceTitle} />
       <div className="mb-8 border-b border-[#d8c7a1] pb-6"><p className="text-[0.62rem] font-bold uppercase tracking-[0.26em] text-[#8a6728]">{copy.eyebrow}</p><h2 className="mt-3 font-serif text-3xl tracking-[-0.03em] text-[#121826] md:text-4xl">{copy.title}</h2></div>
       <div className="mb-5"><Field label={c.projectLabel}><select name={c.projectLabel} value={selectedProject} onChange={event => setSelectedProject(event.target.value)} className={inputClass()}><option value="">{c.projectEmpty}</option>{c.projects.map(project => <option key={project[0]} value={project[0]}>{project[0]}</option>)}</select></Field></div>
       <div className="grid gap-4 md:grid-cols-2">
