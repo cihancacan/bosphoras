@@ -106,7 +106,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
             <h1 className="text-[hsl(220,45%,12%)] font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.06] tracking-tight mb-8">
               {priceText(page.h1)}
             </h1>
-            <p className="max-w-3xl text-lg font-medium leading-relaxed text-[hsl(220,18%,22%)] md:text-xl">
+            <p className="max-w-3xl text-base font-normal leading-relaxed text-[hsl(220,18%,22%)] md:text-lg">
               {priceText(page.shortIntro)}
             </p>
             {!isFormPage && page.jsonLdType === 'Service' && (
@@ -213,7 +213,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
                           <span className="font-serif text-lg leading-snug block mb-1">
                             {link.label}
                           </span>
-                          <span className="line-clamp-2 text-sm font-medium leading-relaxed text-[hsl(220,14%,34%)]">
+                          <span className="line-clamp-2 text-sm font-normal leading-relaxed text-[hsl(220,14%,34%)]">
                             {link.intro}
                           </span>
                         </Link>
