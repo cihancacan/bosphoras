@@ -106,7 +106,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
             <h1 className="text-[hsl(220,45%,12%)] font-serif text-4xl md:text-5xl lg:text-6xl leading-[1.06] tracking-tight mb-8">
               {priceText(page.h1)}
             </h1>
-            <p className="text-[hsl(220,15%,30%)] text-lg md:text-xl leading-relaxed max-w-3xl font-light">
+            <p className="max-w-3xl text-lg font-medium leading-relaxed text-[hsl(220,18%,22%)] md:text-xl">
               {priceText(page.shortIntro)}
             </p>
             {!isFormPage && page.jsonLdType === 'Service' && (
@@ -140,7 +140,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
                   <h2 className="text-[hsl(220,45%,12%)] font-serif text-2xl md:text-3xl leading-tight tracking-tight mb-5">
                     {priceText(section.heading)}
                   </h2>
-                  <p className="text-[hsl(220,15%,28%)] text-base md:text-lg leading-relaxed mb-5">
+                  <p className="mb-5 text-base font-normal leading-relaxed text-[hsl(220,18%,22%)] md:text-lg">
                     {priceText(section.body)}
                   </p>
                   {section.bullets && section.bullets.length > 0 && (
@@ -148,7 +148,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
                       {section.bullets.map((bullet, i) => (
                         <li
                           key={i}
-                          className={`flex gap-3 text-[hsl(220,15%,30%)] text-base leading-relaxed ${
+                          className={`flex gap-3 text-base font-normal leading-relaxed text-[hsl(220,16%,25%)] ${
                             isRtl ? 'flex-row-reverse text-right' : ''
                           }`}
                         >
@@ -213,7 +213,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
                           <span className="font-serif text-lg leading-snug block mb-1">
                             {link.label}
                           </span>
-                          <span className="text-[hsl(220,15%,45%)] text-sm leading-relaxed line-clamp-2">
+                          <span className="line-clamp-2 text-sm font-medium leading-relaxed text-[hsl(220,14%,34%)]">
                             {link.intro}
                           </span>
                         </Link>
