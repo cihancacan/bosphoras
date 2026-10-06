@@ -3,6 +3,7 @@ import { ArrowRight, AlertTriangle, CheckCircle2, Clock, ShieldCheck } from 'luc
 import type { HighPotentialGuide } from '@/data/highPotentialPages';
 import { localeDir } from '@/lib/i18n';
 import { getCanonicalUrl } from '@/lib/routes';
+import { withAssessmentContext } from '@/lib/assessmentContext';
 
 function guideLabels(locale: HighPotentialGuide['locale']) {
   return {
@@ -61,7 +62,9 @@ function generatedSections(guide: HighPotentialGuide) {
 export function HighPotentialGuideRenderer({ guide }: { guide: HighPotentialGuide }) {
   const labels = guideLabels(guide.locale);
   const sections = generatedSections(guide);
-  const assessmentHref = guide.locale === 'fr' ? '/private-assessment' : `/${guide.locale}/private-assessment`;
+  const assessmentBase = guide.locale === 'fr' ? '/diagnostic-prive' : guide.locale === 'en' ? '/en/private-assessment' : guide.locale === 'ru' ? '/ru/chastnaya-konsultatsiya' : '/ar/تقييم-خاص';
+  const sourcePath = guide.locale === 'fr' ? guide.slug : `/${guide.locale}${guide.slug}`;
+  const assessmentHref = withAssessmentContext(assessmentBase, sourcePath, guide.h1);
   const canonical = getCanonicalUrl(guide.locale, guide.slug);
   const articleJsonLd = { '@context': 'https://schema.org', '@type': 'Article', headline: guide.h1, description: guide.metaDescription, dateModified: guide.updatedAt, datePublished: guide.updatedAt, mainEntityOfPage: canonical, publisher: { '@type': 'Organization', name: 'Bosphoras' } };
   const faqJsonLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: guide.faqs.map((faq) => ({ '@type': 'Question', name: faq.question, acceptedAnswer: { '@type': 'Answer', text: faq.answer } })) };
