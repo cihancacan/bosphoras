@@ -17,6 +17,7 @@ import { StructuredData } from './StructuredData';
 import { BosphorasForm } from './BosphorasForms';
 import type { MainPageContent } from '@/data/pages/types';
 import { getPage } from '@/data/pages';
+import { withAssessmentContext } from '@/lib/assessmentContext';
 
 interface MainPageRendererProps {
   page: MainPageContent;
@@ -60,9 +61,14 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
     })
     .filter((l): l is { label: string; href: string; intro: string } => l !== null);
 
-  const ctaHref = page.cta.href.startsWith('http')
+  const rawCtaHref = page.cta.href.startsWith('http')
     ? page.cta.href
     : getLocalePath(locale, page.cta.href);
+  const ctaHref = withAssessmentContext(
+    rawCtaHref,
+    getLocalePath(locale, page.slug),
+    priceText(page.h1)
+  );
 
   const formattedFaqs = page.faqs?.map((faq) => ({
     question: priceText(faq.question),
