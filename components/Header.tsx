@@ -10,7 +10,7 @@ import { getSlugForPage, pageSlugs } from '@/data/pages/types';
 import { getEquivalentHighPotentialSlug } from '@/data/highPotentialPages';
 import { longTailTaxRouteGroups } from '@/data/longTailTaxRoutes';
 import { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';
-import { globalPropertyHubPaths } from '@/data/propertyDesk';
+import { globalPropertyHubPaths, propertyHubPaths } from '@/data/propertyDesk';
 import dynamic from 'next/dynamic';
 const SearchOverlay = dynamic(() => import('@/components/SearchOverlay').then((module) => module.SearchOverlay));
 
@@ -59,6 +59,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
   const labels = {
     services: locale === 'fr' ? 'Services' : locale === 'en' ? 'Services' : locale === 'ru' ? 'Услуги' : 'الخدمات',
     destinations: locale === 'fr' ? 'Destinations' : locale === 'en' ? 'Destinations' : locale === 'ru' ? 'Направления' : 'الوجهات',
+    property: locale === 'fr' ? 'Immobilier' : locale === 'en' ? 'Property' : locale === 'ru' ? 'Недвижимость' : 'العقار',
     privateAccess: 'Private Access',
     information: locale === 'fr' ? 'Informations' : locale === 'en' ? 'Information' : locale === 'ru' ? 'Информация' : 'معلومات',
   };
@@ -67,8 +68,8 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
   const mobilityLink = locale === 'fr' ? '/transfert-aeroport-istanbul' : locale === 'en' ? '/en/istanbul-airport-transfer' : locale === 'ru' ? '/ru/transfer-aeroport-stambul' : '/ar/istanbul-airport-transfer';
   const peninsulaLink = locale === 'fr' ? '/peninsula-istanbul' : `/${locale}/peninsula-istanbul`;
   const corporateRelocationLink = corporateRelocationPaths[locale];
+  const propertyTurkeyLink = getLocalePath(locale, propertyHubPaths[locale]);
   const propertyInvestmentLink = getLocalePath(locale, globalPropertyHubPaths[locale]);
-  const propertyQuickLabel = locale === 'fr' ? 'Immobilier' : locale === 'en' ? 'Property' : locale === 'ru' ? 'Недвижимость' : 'العقار';
 
   const groups: MenuGroup[] = [
     { label: labels.services, href: linkTo('services'), items: [
@@ -77,9 +78,22 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
       { label: locale === 'fr' ? 'Conseil Juridique & Fiscal' : locale === 'en' ? 'Legal & Tax Advisory' : locale === 'ru' ? 'Право и налоги' : 'القانون والضرائب', href: linkTo('legal-tax'), description: locale === 'fr' ? 'Avocats, fiscalistes, conformite.' : locale === 'en' ? 'Lawyers, tax advisors, compliance.' : locale === 'ru' ? 'Юристы, налоги, compliance.' : 'محامون، ضرائب وامتثال.' },
       { label: locale === 'fr' ? "Creation d'Entreprise" : locale === 'en' ? 'Company Formation' : locale === 'ru' ? 'Создание компании' : 'تأسيس الشركات', href: linkTo('business-setup'), description: locale === 'fr' ? 'Societe, comptabilite, bureaux.' : locale === 'en' ? 'Company, accounting, offices.' : locale === 'ru' ? 'Компания, бухгалтерия, офисы.' : 'شركة، محاسبة ومكاتب.' },
       { label: locale === 'fr' ? 'Sante & Assurance' : locale === 'en' ? 'Health & Insurance' : locale === 'ru' ? 'Здоровье и страхование' : 'الصحة والتأمين', href: linkTo('health-insurance'), description: locale === 'fr' ? 'Medecins, cliniques, assurances.' : locale === 'en' ? 'Doctors, clinics, insurance.' : locale === 'ru' ? 'Врачи, клиники, страхование.' : 'أطباء، عيادات وتأمين.' },
-      { label: locale === 'fr' ? 'Immobilier & Investissement' : locale === 'en' ? 'Property & Investment' : locale === 'ru' ? 'Недвижимость и инвестиции' : 'العقار والاستثمار', href: propertyInvestmentLink, tone: 'property', description: locale === 'fr' ? 'Sélection multi-pays, plans de paiement et lecture investissement.' : locale === 'en' ? 'Multi-country selection, payment plans and investment review.' : locale === 'ru' ? 'Международная подборка, рассрочка и инвестиционный анализ.' : 'اختيار متعدد الدول، خطط دفع وتحليل استثماري.' },
       { label: locale === 'fr' ? 'Transfert & chauffeur à la demande' : locale === 'en' ? 'Transfer & chauffeur on demand' : locale === 'ru' ? 'Трансфер и водитель по запросу' : 'نقل وسائق عند الطلب', href: mobilityLink, tone: 'transfer', description: locale === 'fr' ? 'Réservation immédiate ou programmée · Istanbul & Turquie.' : locale === 'en' ? 'Immediate or scheduled booking · Istanbul & Turkey.' : locale === 'ru' ? 'Немедленное или запланированное бронирование · Стамбул и Турция.' : 'حجز فوري أو مسبق · إسطنبول وتركيا.' },
       { label: locale === 'fr' ? 'Conciergerie de Luxe' : locale === 'en' ? 'Luxury Concierge' : locale === 'ru' ? 'Luxury Concierge' : 'كونسيرج فاخر', href: linkTo('luxury-concierge'), description: locale === 'fr' ? 'Transport privé, palaces, yachts, jets, shopping.' : locale === 'en' ? 'Private transport, palaces, yachts, jets, shopping.' : locale === 'ru' ? 'Private transport, palaces, yachts, jets, shopping.' : 'نقل خاص، فنادق فاخرة، يخوت، طائرات وتسوق.' },
+    ]},
+    { label: labels.property, href: propertyTurkeyLink, items: [
+      {
+        label: locale === 'fr' ? 'Immobilier en Turquie' : locale === 'en' ? 'Property in Turkey' : locale === 'ru' ? 'Недвижимость в Турции' : 'العقارات في تركيا',
+        href: propertyTurkeyLink,
+        tone: 'property',
+        description: locale === 'fr' ? 'Istanbul, Bodrum et Antalya : projets sélectionnés, résidence et investissement.' : locale === 'en' ? 'Istanbul, Bodrum and Antalya: selected projects, living and investment.' : locale === 'ru' ? 'Стамбул, Бодрум и Анталья: отобранные проекты для жизни и инвестиций.' : 'إسطنبول وبودروم وأنطاليا: مشاريع مختارة للسكن والاستثمار.',
+      },
+      {
+        label: locale === 'fr' ? 'Investissement international' : locale === 'en' ? 'International investment' : locale === 'ru' ? 'Международные инвестиции' : 'الاستثمار الدولي',
+        href: propertyInvestmentLink,
+        tone: 'property',
+        description: locale === 'fr' ? 'Opportunités sélectionnées hors de Turquie, programmes neufs et plans de paiement promoteurs.' : locale === 'en' ? 'Selected opportunities outside Turkey, new developments and developer payment plans.' : locale === 'ru' ? 'Отобранные возможности за пределами Турции, новостройки и планы оплаты от застройщиков.' : 'فرص مختارة خارج تركيا، مشاريع جديدة وخطط دفع من المطورين.',
+      },
     ]},
     { label: labels.destinations, href: linkTo('istanbul'), items: [
       { label: locale === 'ru' ? 'Стамбул' : locale === 'ar' ? 'إسطنبول' : 'Istanbul', href: linkTo('istanbul') },
@@ -140,7 +154,6 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
                 </div>
               </div>
             ))}
-            <Link href={propertyInvestmentLink} className="whitespace-nowrap rounded-md border border-[#4f8d78]/70 bg-[#4f8d78]/10 px-3 py-2.5 text-[0.67rem] font-bold uppercase tracking-[0.075em] text-[#a9d5c5] transition hover:bg-[#4f8d78]/18">{propertyQuickLabel}</Link>
           </nav>
           <div className="hidden shrink-0 items-center gap-2 xl:flex">
             <button onClick={() => setSearchOpen(true)} className="inline-flex h-10 w-10 items-center justify-center border border-white/10 text-[hsl(45,30%,96%)] transition-colors duration-200 hover:border-[hsl(42,65%,52%)] hover:text-[hsl(42,65%,52%)]" aria-label={searchLabel}><Search size={15} /></button><Link href="/connexion" className="inline-flex h-10 w-10 items-center justify-center border border-white/10 text-[hsl(220,10%,65%)] transition-colors duration-200 hover:border-[hsl(42,65%,52%)] hover:text-[hsl(42,65%,52%)]" aria-label={locale === 'fr' ? 'Espace partenaire' : locale === 'en' ? 'Partner portal' : locale === 'ru' ? 'Партнёрский кабинет' : 'بوابة الشركاء'} title={locale === 'fr' ? 'Espace partenaire' : locale === 'en' ? 'Partner portal' : locale === 'ru' ? 'Партнёрский кабинет' : 'بوابة الشركاء'}><KeyRound size={16} /></Link>
