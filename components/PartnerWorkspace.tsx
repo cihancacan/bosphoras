@@ -11,6 +11,7 @@ import { getPortalSupabase } from '@/lib/portalSupabase';
 import { InvestmentCalculator } from '@/components/InvestmentCalculator';
 import { ListingSubmissionEditor } from '@/components/ListingSubmissionEditor';
 import { AdminPropertyImporter } from '@/components/AdminPropertyImporter';
+import { AdminApiProjectInbox } from '@/components/AdminApiProjectInbox';
 import { AdminListingEditor } from '@/components/AdminListingEditor';
 import { ProfessionalOperationsPanel } from '@/components/ProfessionalOperationsPanel';
 import { RealEstateInventoryPanel } from '@/components/RealEstateInventoryPanel';
@@ -26,7 +27,7 @@ import { PortalAccountPanel } from '@/components/PortalAccountPanel';
 import { PortalNotificationBridge } from '@/components/PortalNotificationBridge';
 import { PartnerAdminCrmPanel } from '@/components/PartnerAdminCrmPanel';
 
-type Tab = 'dashboard' | 'crm' | 'projects' | 'listings' | 'transactions' | 'agenda' | 'documents' | 'finance' | 'reports' | 'import' | 'chat' | 'calculators' | 'partners' | 'approvals' | 'account';
+type Tab = 'dashboard' | 'crm' | 'projects' | 'listings' | 'transactions' | 'agenda' | 'documents' | 'finance' | 'reports' | 'import' | 'api-import' | 'chat' | 'calculators' | 'partners' | 'approvals' | 'account';
 
 function money(value: any, currency = 'EUR') {
   const n = Number(value || 0);
@@ -179,7 +180,7 @@ export function PartnerWorkspace() {
     const params = new URLSearchParams(window.location.search);
     const requestedTab = params.get('tab') as Tab | null;
     const requestedThread = params.get('thread');
-    if (requestedTab && ['dashboard','crm','projects','listings','transactions','agenda','documents','finance','reports','import','chat','calculators','partners','approvals','account'].includes(requestedTab)) {
+    if (requestedTab && ['dashboard','crm','projects','listings','transactions','agenda','documents','finance','reports','import','api-import','chat','calculators','partners','approvals','account'].includes(requestedTab)) {
       setTab(requestedTab);
     }
     if (requestedThread) setSelectedThread(requestedThread);
@@ -187,7 +188,7 @@ export function PartnerWorkspace() {
 
   useEffect(()=>{
     if(!profile)return;
-    if(!isAdmin&&['reports','partners','approvals','import'].includes(tab))setTab('dashboard');
+    if(!isAdmin&&['reports','partners','approvals','import','api-import'].includes(tab))setTab('dashboard');
     if(!isAdmin&&tab==='finance'&&profile?.permissions?.can_view_finance!==true)setTab('dashboard');
     if(!isAdmin&&tab==='documents'&&profile?.permissions?.can_download_documents!==true)setTab('dashboard');
     if(!isAdmin&&tab==='transactions'&&profile?.permissions?.can_manage_deals===false)setTab('dashboard');
@@ -270,7 +271,7 @@ export function PartnerWorkspace() {
       ['calculators','Calculateurs',Calculator],
       ['account','Mon compte',UserRound],
     ] as any[];
-    if (isAdmin) base.push(['reports','Rapports',Archive],['import','Importer par lien',Link2],['partners','Partenaires',Users],['approvals','Validations',ClipboardCheck]);
+    if (isAdmin) base.push(['reports','Rapports',Archive],['import','Importer par lien',Link2],['api-import','Flux API projets',RefreshCw],['partners','Partenaires',Users],['approvals','Validations',ClipboardCheck]);
     return base;
   }, [isAdmin, access.can_manage_deals, access.can_download_documents, access.can_view_finance]);
 
@@ -375,6 +376,7 @@ export function PartnerWorkspace() {
             />
           )}
           {tab==='import' && isAdmin && <Section title="Importer une opportunité" kicker="Source partenaire → Bosphoras"><AdminPropertyImporter user={user} reload={loadAll}/></Section>}
+          {tab==='api-import' && isAdmin && <Section title="Flux API projets" kicker="API → validation → brouillon"><AdminApiProjectInbox user={user} reload={loadAll}/></Section>}
           {tab==='crm' && <ProfessionalCrmPanel isAdmin={isAdmin} user={user} profile={profile} contacts={contacts} deals={deals} listings={listings} partnerUsers={partnerUsers} reload={loadAll} canViewContactDetails={isAdmin||access.can_view_contact_details} canManageDeals={isAdmin||access.can_manage_deals}/>}
           {tab==='projects' && <Section title="Projets & unités" kicker="Promoteurs · projets · stock"><RealEstateInventoryPanel user={user} profile={profile} isAdmin={isAdmin} partners={partners}/></Section>}
           {tab==='transactions' && (isAdmin||access.can_manage_deals) && <TransactionsPanel user={user} isAdmin={isAdmin} contacts={contacts} deals={deals} listings={listings} reloadWorkspace={loadAll}/>}
