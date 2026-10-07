@@ -103,7 +103,7 @@ function mapBayut(item: any, page: number) {
   const locations = locationNames(item);
   const projectName = textValue(item.title || item.name || item.projectName);
   const developerName = textValue(item.developerName || item.developer || item.developer_name);
-  const city = locations.find((x)=>/dubai/i.test(x)) || textValue(item.city) || 'Dubai';
+  const city = locations.find((x:string)=>/dubai/i.test(x)) || textValue(item.city) || 'Dubai';
   const district = textValue(item.locationName || item.community || item.area || item.district) || locations.at(-1) || '';
   const images = imageList(item);
   const externalId = textValue(item.externalID || item.externalId || item.id || item.projectId);
