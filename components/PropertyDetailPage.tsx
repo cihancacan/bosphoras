@@ -733,7 +733,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
               </div>
             </div>
             <div className="min-w-0">
-              <PropertyLocationMap locale={locale} location={propertyLocation} latitude={property.projectLatitude} longitude={property.projectLongitude} />
+              <PropertyLocationMap locale={locale} location={propertyLocation} latitude={property.projectLatitude} longitude={property.projectLongitude} compact={Boolean(property.projectId)} />
             </div>
           </div>
         </div>
