@@ -35,6 +35,7 @@ import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 import { PropertyGallery } from '@/components/PropertyGallery';
 import { PropertyLocationMap } from '@/components/PropertyLocationMap';
+import { ProjectInquiryForm } from '@/components/ProjectInquiryForm';
 
 interface PropertyDetailPageProps {
   locale: Locale;
@@ -343,8 +344,8 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
 
   const propertyTitle = localized(property.title, locale);
   const propertyLocation = [property.district, cityLabel(property), property.countryName].filter(Boolean).join(', ');
-  const requestHref = `${assessmentPath}?subject=property&property=${encodeURIComponent(property.id)}&property_title=${encodeURIComponent(propertyTitle)}&property_location=${encodeURIComponent(propertyLocation)}`;
-  const visitHref = `${assessmentPath}?subject=private-viewing&property=${encodeURIComponent(property.id)}&property_title=${encodeURIComponent(propertyTitle)}&property_location=${encodeURIComponent(propertyLocation)}`;
+  const requestHref = property.projectId ? '#project-inquiry' : `${assessmentPath}?subject=property&property=${encodeURIComponent(property.id)}&property_title=${encodeURIComponent(propertyTitle)}&property_location=${encodeURIComponent(propertyLocation)}`;
+  const visitHref = property.projectId ? '#project-inquiry' : `${assessmentPath}?subject=private-viewing&property=${encodeURIComponent(property.id)}&property_title=${encodeURIComponent(propertyTitle)}&property_location=${encodeURIComponent(propertyLocation)}`;
 
   const images = (property.images?.length ? property.images : [property.heroImage].filter(Boolean)) as string[];
   const paymentPlanVisible = property.paymentPlanEnabled !== false && Boolean(property.paymentPlan?.length);
@@ -370,7 +371,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
       }).format(new Date(property.verifiedAt))
     : null;
 
-  const paymentReferencePrice = property.installmentPrice || property.totalPrice || property.cashPrice || null;
+  const paymentReferencePrice = property.projectId ? null : (property.installmentPrice || property.totalPrice || property.cashPrice || null);
   const paymentRows = paymentPlanVisible
     ? property.paymentPlan!.map((step) => {
         const amount = step.amount !== undefined
@@ -387,15 +388,15 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
     '@type': 'Offer',
     url: `${siteUrl}${fullPath}`,
     priceCurrency: property.currency,
-    ...(property.totalPrice && !property.priceOnRequest ? { price: property.totalPrice } : {}),
-    availability:
+    ...(!property.projectId && property.totalPrice && !property.priceOnRequest ? { price: property.totalPrice } : {}),
+    ...(!property.projectId ? { availability:
       property.status === 'available'
         ? 'https://schema.org/InStock'
         : property.status === 'reserved'
         ? 'https://schema.org/LimitedAvailability'
-        : 'https://schema.org/OutOfStock',
+        : 'https://schema.org/OutOfStock' } : {}),
     itemOffered: {
-      '@type': property.propertyType === 'villa' ? 'House' : property.propertyType === 'commercial' ? 'Place' : 'Apartment',
+      '@type': property.projectId ? 'ApartmentComplex' : property.propertyType === 'villa' ? 'House' : property.propertyType === 'commercial' ? 'Place' : 'Apartment',
       name: property.title[locale],
       description: property.summary[locale],
       address: {
@@ -511,7 +512,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
             <div className="flex flex-wrap items-center gap-2.5">
               <span className="rounded-full bg-[#244b3f] px-3 py-1.5 text-[0.61rem] font-semibold uppercase tracking-[0.12em] text-white">{c.project}</span>
               <span className="rounded-full border border-[#cfc8bc] px-3 py-1.5 text-[0.61rem] font-semibold uppercase tracking-[0.12em] text-[#6f695f]">{collectionLabel(property.collection, locale)}</span>
-              <span className="rounded-full border border-[#cfc8bc] px-3 py-1.5 text-[0.61rem] font-semibold uppercase tracking-[0.12em] text-[#6f695f]">{statusLabel(property.status, c)}</span>
+              <span className="rounded-full border border-[#cfc8bc] px-3 py-1.5 text-[0.61rem] font-semibold uppercase tracking-[0.12em] text-[#6f695f]">{property.projectId ? (locale==='fr'?'Disponibilités sur demande':locale==='en'?'Availability on request':locale==='ru'?'Наличие по запросу':'التوافر عند الطلب') : statusLabel(property.status, c)}</span>
             </div>
             <h1 className="mt-5 max-w-5xl font-serif text-[clamp(2.7rem,6vw,5.6rem)] font-normal leading-[0.94] tracking-[-0.055em] text-[#131a18]">{propertyTitle}</h1>
             <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-[#68706b]">
@@ -564,6 +565,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
       <div className="sticky top-[72px] z-30 hidden border-b border-[#ded9cf] bg-[#fbfaf6]/94 px-5 backdrop-blur-xl md:block">
         <nav className="mx-auto flex max-w-[1360px] items-center gap-8 overflow-x-auto py-4 text-[0.67rem] font-semibold uppercase tracking-[0.12em] text-[#6d746f]">
           <a href="#project" className="hover:text-[#244b3f]">{c.aboutNav}</a>
+          {property.projectId ? <a href="#unit-options" className="hover:text-[#244b3f]">{locale==='fr'?'Typologies':locale==='en'?'Unit types':locale==='ru'?'Планировки':'أنواع الوحدات'}</a> : null}
           {hasDeveloperTerms ? <a href="#payment" className="hover:text-[#244b3f]">{c.paymentNav}</a> : null}
           <a href="#location" className="hover:text-[#244b3f]">{c.locationNav}</a>
           {(property.strengths?.length || property.technicalNotes?.length || property.watchpoints?.length) ? <a href="#analysis" className="hover:text-[#244b3f]">{c.analysisNav}</a> : null}
@@ -625,6 +627,33 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
           ) : null}
         </div>
       </section>
+
+      {property.projectId ? (
+        <section id="unit-options" className="scroll-mt-36 border-t border-[#ded9cf] bg-[#faf9f5] px-5 py-16 sm:px-6 md:py-20 lg:px-8">
+          <div className="mx-auto max-w-[1280px]">
+            <p className="text-[0.67rem] font-semibold uppercase tracking-[0.18em] text-[#698474]">BOSPHORAS · PROJECT COLLECTION</p>
+            <h2 className="mt-4 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">{locale==='fr'?'Typologies & possibilités':locale==='en'?'Unit types & options':locale==='ru'?'Типы квартир и варианты':'أنواع الوحدات والخيارات'}</h2>
+            <p className="mt-4 max-w-3xl text-sm leading-7 text-[#68736b]">{locale==='fr'?'Les propositions ci-dessous décrivent des typologies ou des offres signalées par nos sources. Elles ne garantissent pas qu’un lot soit encore disponible. Nos conseillers confirment le stock, les prix et les conditions avant toute réservation.':locale==='en'?'The options below reflect advertised unit types or reported offers, not guaranteed current inventory. We confirm prices and availability before any reservation.':locale==='ru'?'Ниже показаны варианты из источников. Наличие конкретных квартир и цены уточняются перед бронированием.':'الخيارات أدناه معلومات إرشادية وليست تأكيداً للمخزون. نتحقق من الأسعار والتوافر قبل الحجز.'}</p>
+            {property.projectUnitOptions?.length ? (
+              <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+                {property.projectUnitOptions.map((unit,index)=>(
+                  <article key={index} className="rounded-2xl border border-[#dad5ca] bg-white p-6">
+                    <span className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-[#638270]">{unit.availability==='confirmed' ? (locale==='fr'?'Confirmée manuellement':locale==='en'?'Manually confirmed':locale==='ru'?'Подтверждено':'تم التأكيد') : (locale==='fr'?'Sur demande':locale==='en'?'On request':locale==='ru'?'По запросу':'حسب الطلب')}</span>
+                    <h3 className="mt-3 text-xl font-semibold text-[#15231c]">{unit.label}</h3>
+                    <div className="mt-4 flex flex-wrap gap-3 text-sm text-[#6a746d]">
+                      {unit.bedrooms!==undefined?<span>{unit.bedrooms} {locale==='fr'?'ch.':locale==='ru'?'сп.':locale==='ar'?'غرف':'bed'}</span>:null}
+                      {unit.bathrooms!==undefined?<span>{unit.bathrooms} {locale==='fr'?'SDB':locale==='ru'?'ванн.':locale==='ar'?'حمام':'bath'}</span>:null}
+                      {unit.areaM2?<span>{unit.areaM2} m²</span>:null}
+                    </div>
+                    <strong className="mt-5 block text-xl text-[#244b3f]">{unit.price?new Intl.NumberFormat(locale==='fr'?'fr-FR':locale==='ru'?'ru-RU':locale==='ar'?'ar':'en-GB',{style:'currency',currency:unit.currency||property.currency,maximumFractionDigits:0}).format(unit.price):(locale==='fr'?'Prix sur demande':locale==='en'?'Price on request':locale==='ru'?'Цена по запросу':'السعر عند الطلب')}</strong>
+                    <a href="#project-inquiry" className="mt-5 inline-flex items-center gap-2 border-b border-[#244b3f] pb-1 text-xs font-semibold text-[#244b3f]">{locale==='fr'?'Demander les disponibilités':locale==='en'?'Check availability':locale==='ru'?'Уточнить наличие':'التحقق من التوافر'} <ArrowRight size={14}/></a>
+                  </article>
+                ))}
+              </div>
+            ):<p className="mt-8 rounded-xl border border-[#dad5ca] bg-white px-5 py-5 text-sm text-[#69736c]">{locale==='fr'?'Détail des typologies sur demande. Nous pouvons vérifier les possibilités selon votre budget.':locale==='en'?'Unit types are available on request. We can check options based on your budget.':locale==='ru'?'Типы квартир уточняются по запросу.':'تفاصيل الوحدات حسب الطلب.'}</p>}
+          </div>
+        </section>
+      ):null}
 
       {hasDeveloperTerms ? (
         <section id="payment" className="scroll-mt-36 bg-[#0f211c] px-5 py-16 text-white sm:px-6 md:py-20 lg:px-8">
@@ -761,6 +790,8 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
           </div>
         </section>
       ) : null}
+
+      {property.projectId&&property.publicListingId?<ProjectInquiryForm locale={locale} listingId={property.publicListingId} projectId={property.projectId}/>:null}
 
       <section className="bg-[#091713] px-5 py-18 text-white sm:px-6 md:py-24 lg:px-8">
         <div className="mx-auto max-w-[980px] text-center">
