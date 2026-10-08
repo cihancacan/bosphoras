@@ -135,7 +135,8 @@ export function formatPropertyPrice(property: PropertyListing, locale: Locale): 
   if(property.projectId) {
     const low=property.totalPrice;
     const high=property.projectPriceMax;
-    return high && high>low ? format(low)+' – '+format(high) : fromLabel + format(low);
+    const observed = locale==='fr'?'Prix indicatif repéré : ':locale==='en'?'Indicative observed price: ':locale==='ru'?'Ориентировочная цена: ':'سعر إرشادي: ';
+    return high && high>low ? format(low)+' – '+format(high) : observed + format(low);
   }
   return format(property.totalPrice);
 }
