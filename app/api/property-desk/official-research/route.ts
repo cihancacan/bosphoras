@@ -42,6 +42,8 @@ export async function POST(req:NextRequest){
    const candidates=new Set((r.data.suggested_images||[]).map((v:any)=>v.url));
    const images=[...new Set(photoChoices)].filter((url:any)=>candidates.has(url)).slice(0,25);
    if(images.length && body.rights_confirmed!==true)return NextResponse.json({error:'Confirme les droits de réutilisation des photos avant de les ajouter.'},{status:400});
+   const unitAllowed=new Set(r.data.unit_mentions||[]);
+   const unitSelected=[...new Set(Array.isArray(body.unit_mentions)?body.unit_mentions:[])].filter((name:any)=>typeof name==='string'&&unitAllowed.has(name)).slice(0,12) as string[];
    const acceptDesc=body.description===true;
    const acceptLocation=body.location===true;
    const amendedDesc=acceptDesc?{...(project.description||{}),fr:r.data.suggested_description?.fr||''}:project.description;
@@ -51,6 +53,7 @@ export async function POST(req:NextRequest){
    });
    const projectUpdates:any={
      official_project_url:r.data.official_url,
+     ...(unitSelected.length?{official_unit_types:unitSelected}:{}),
      ...(acceptDesc?{description:amendedDesc}:{}),
      ...(approved.length?{amenities:approved,highlights:localized}:{}),
      ...(images.length?{
@@ -68,6 +71,11 @@ export async function POST(req:NextRequest){
        source_url:r.data.official_url,source_last_checked_at:new Date().toISOString(),
        ...(acceptDesc?{description:{...(draft.data.description||{}),fr:r.data.suggested_description?.fr||''}}:{}),
        ...(approved.length?{project_amenity_codes:approved,highlights:localized}:{}),
+       ...(unitSelected.length?{project_unit_options:[
+         ...(Array.isArray((await client.from('property_listings').select('project_unit_options').eq('id',draft.data.id).single()).data?.project_unit_options)
+           ?(await client.from('property_listings').select('project_unit_options').eq('id',draft.data.id).single()).data?.project_unit_options:[]),
+         ...unitSelected.map(label=>({label,availability:'on_request',source:'source_offer'}))
+       ].slice(0,16)}:{}),
        ...(images.length?{images:[...new Set([...(draft.data.images||[]),...images])].slice(0,32),
          hero_image:draft.data.hero_image||images[0]}:{}),
        ...(acceptLocation && r.data.suggested_latitude!=null&&r.data.suggested_longitude!=null?
@@ -76,6 +84,7 @@ export async function POST(req:NextRequest){
      const u=await client.from('property_listings').update(listing).eq('id',draft.data.id).eq('published',false);
      if(u.error)return NextResponse.json({error:'Projet privé actualisé, mais brouillon public non mis à jour : '+u.error.message},{status:503});
    }
+   await client.from('project_official_research').update({approved_by:user.id,approved_at:new Date().toISOString()}).eq('project_id',projectId);
    return NextResponse.json({ok:true,message:'Suggestions approuvées et sauvegardées en brouillon. Aucune publication automatique.'});
  }
  if(action!=='scan')return NextResponse.json({error:'Action non prise en charge.'},{status:400});
