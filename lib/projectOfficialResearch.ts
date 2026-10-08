@@ -127,11 +127,30 @@ export function parseOfficialProjectPage(html:string,url:string,project:{name:st
  const excerpt=[metaDesc,...paragraphs].filter(Boolean).slice(0,9).join('\n').slice(0,2500);
  const facts=detectAmenities([metaDesc,...paragraphs,body.slice(0,16000)].join(' '));
  const images:string[]=[];
- for(const v of [meta(html,'og:image'),meta(html,'twitter:image')]){const image=eligibleImage(v,url);if(image)images.push(image)}
- for(const m of main.matchAll(/<img\b[^>]*>/gi)){
-   for(const key of ['src','data-src','data-lazy-src','data-original']){
-    const image=eligibleImage(attr(m[0],key),url);if(image)images.push(image);
+ const add=(value:string)=>{const image=eligibleImage(value,url);if(image)images.push(image)};
+ for(const v of [meta(html,'og:image'),meta(html,'twitter:image'),meta(html,'twitter:image:src')])add(v);
+ // Include lazy-loaded, responsive <picture> sources and common project gallery attributes.
+ for(const m of html.matchAll(/<(?:img|source)\b[^>]*>/gi)){
+   for(const key of ['src','data-src','data-lazy-src','data-original','data-image','data-full','data-zoom-image','poster'])add(attr(m[0],key));
+   for(const key of ['srcset','data-srcset']){
+     const list=attr(m[0],key);
+     for(const part of list.split(',')){const candidate=part.trim().split(/\s+/)[0];if(candidate)add(candidate)}
    }
+ }
+ // Structured data frequently carries the gallery even when HTML uses a JS carousel.
+ for(const obj of jsonLd(html)){
+   const visit=(value:any,depth=0):void=>{
+     if(depth>5||images.length>100)return;
+     if(typeof value==='string'){if(/^https?:\/\//.test(value)&&/\.(?:jpe?g|png|webp|avif)(?:\?|$)/i.test(value))add(value);return}
+     if(Array.isArray(value)){for(const x of value.slice(0,40))visit(x,depth+1);return}
+     if(value&&typeof value==='object'){for(const k of ['image','images','photo','photos','contentUrl','url','thumbnailUrl','@graph','associatedMedia'])if(value[k])visit(value[k],depth+1)}
+   };
+   visit(obj);
+ }
+ // JSON hydration often embeds absolute gallery URLs, which are suggestions only.
+ for(const match of html.matchAll(/https?:\\?\/\\?\/[^"'\s<>\\]+\.(?:jpe?g|png|webp|avif)(?:\?[^"'\s<>\\]*)?/gi)){
+   if(images.length>110)break;
+   add(match[0].replace(/\\\//g,'/'));
  }
  const media=[...new Set(images)].slice(0,24).map(url=>({url}));
  const units=Array.from(new Set(Array.from(body.matchAll(/\b(?:studio|[1-6](?:\s*(?:-|to)\s*[1-6])?\s*(?:bedroom|bed|br|chambres?|yatak odalı))\b/gi)).map(x=>x[0]))).slice(0,9);
@@ -155,7 +174,7 @@ export function parseOfficialProjectPage(html:string,url:string,project:{name:st
     ' Les caractéristiques, dates, prix et disponibilités doivent être vérifiés auprès du promoteur.';
  return {
    source_title:title||h1,source_excerpt:excerpt,
-   suggested_description:{fr:summary,en:'',ru:'',ar:''},
+   suggested_description:{fr:excerpt ? (intro+' '+excerpt.slice(0,1700)+' Les prix et disponibilités doivent être confirmés auprès du promoteur.') : summary,en:'',ru:'',ar:''},
    suggested_amenities:facts.map(x=>x.code),
    amenity_evidence:Object.fromEntries(facts.map(x=>[x.code,x.evidence])),
    suggested_images:media,suggested_latitude:coordinates?.lat??null,
