@@ -39,6 +39,14 @@ function readPaymentForm(fd:FormData){
   if(parts.length&&Math.abs(total-100)>0.5)throw new Error('Le plan de paiement doit totaliser 100 % (actuellement '+total.toFixed(1)+' %).');
   return parts;
 }
+function verifiedAreaM2(payload:any){
+  const unit=String(payload?.areaUnit||payload?.area_unit||payload?.areaMeasurement||'').toLowerCase().trim();
+  const n=positiveNumber(payload?.area);
+  if(!n)return null;
+  if(['sqm','sq.m','m2','m²','square meters','square metres'].includes(unit))return Number(n.toFixed(2));
+  if(['sqft','sq.ft','ft2','ft²','square feet'].includes(unit))return Number((n*0.09290304).toFixed(2));
+  return null; // An unlabeled area is unsafe to import into a square-meter field.
+}
 function bayutPlanBreakdown(payload:any){
   const summaries=Array.isArray(payload?.paymentPlanSummaries)?payload.paymentPlanSummaries:[];
   return summaries.find((s:any)=>s?.breakdown&&typeof s.breakdown==='object')?.breakdown||null;
@@ -100,7 +108,7 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   const offer=prefillEnabled?importedReference.source_payload||{}:{};
   const paymentBreakdown=bayutPlanBreakdown(offer);
   const offerPrice=positiveNumber(offer.price);
-  const offerArea=positiveNumber(offer.area);
+  const offerArea=verifiedAreaM2(offer);
   const offerBedrooms=offer.rooms!=null&&offer.rooms!==''?Number(offer.rooms):null;
   const offerBathrooms=offer.baths!=null&&offer.baths!==''?Number(offer.baths):null;
   const editingUnit=selectedUnits.find((u:any)=>u.id===editingUnitId)||null;
@@ -361,6 +369,7 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
               {importedReference?<>
                 <strong>Annonce API retrouvée :</strong> des données de typologie, surface, prix indicatif et échéancier peuvent être proposées.
                 Elles ne constituent pas une liste d'unités disponibles certifiée par le promoteur.
+                Les surfaces API sans unité explicite restent à confirmer, et ne sont pas copiées dans les champs en m².
                 <button type="button" onClick={()=>setPrefillProjectId(prefillEnabled?'':selected.id)} className="ml-3 border border-[#315d7c] px-3 py-2 font-semibold text-[#12304a]">
                   {prefillEnabled?'Effacer les suggestions':'Préremplir depuis l’annonce importée'}
                 </button>
@@ -404,7 +413,7 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
               <div className="md:col-span-4">
                 <h3 className="text-sm font-semibold text-[#12304a]">Modifier l’unité — {unitLabel(editingUnit)}</h3>
                 {importedReference?<button type="button" onClick={()=>setEditPrefillUnitId(editingWithOffer?'':editingUnit.id)} className="mt-2 border border-[#315d7c] px-3 py-2 text-xs font-semibold text-[#12304a]">{editingWithOffer?'Retirer les suggestions':'Compléter les champs vides depuis l’annonce API'}</button>:null}
-                <p className="mt-2 text-xs text-[#687685]">L’annonce API ne certifie ni le numéro réel du lot ni sa disponibilité. Les champs existants restent prioritaires sur les suggestions.</p>
+                <p className="mt-2 text-xs text-[#687685]">L’annonce API ne certifie ni le numéro réel du lot ni sa disponibilité. Les champs existants restent prioritaires sur les suggestions. Une surface sans unité explicite n'est pas convertie.</p>
               </div>
               <label className={label}>N° unité<input name="unit_number" defaultValue={editingUnit.unit_number||''} className={input}/></label>
               <label className={label}>Bloc / bâtiment<input name="building" defaultValue={editingUnit.building||''} className={input}/></label>
@@ -412,7 +421,7 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
               <label className={label}>Typologie<input name="unit_type" defaultValue={editingUnit.unit_type||''} className={input}/></label>
               <label className={label}>Chambres<input name="bedrooms" type="number" min="0" defaultValue={fromOfferIfEmpty(editingUnit.bedrooms,editOffer.rooms)} className={input}/></label>
               <label className={label}>SDB<input name="bathrooms" type="number" min="0" defaultValue={fromOfferIfEmpty(editingUnit.bathrooms,editOffer.baths)} className={input}/></label>
-              <label className={label}>Surface brute (m²)<input name="gross_area_m2" type="number" step="0.01" min="0" defaultValue={fromOfferIfEmpty(editingUnit.gross_area_m2,positiveNumber(editOffer.area))} className={input}/></label>
+              <label className={label}>Surface brute (m²)<input name="gross_area_m2" type="number" step="0.01" min="0" defaultValue={fromOfferIfEmpty(editingUnit.gross_area_m2,verifiedAreaM2(editOffer))} className={input}/></label>
               <label className={label}>Surface nette (m²)<input name="net_area_m2" type="number" step="0.01" min="0" defaultValue={editingUnit.net_area_m2??''} className={input}/></label>
               <label className={label}>Devise<select name="currency" defaultValue={editingUnit.currency||selected.currency} className={input}><option>EUR</option><option>USD</option><option>AED</option><option>TRY</option><option>GBP</option></select></label>
               <label className={label}>Prix annonce (non vérifié)<input name="list_price" type="number" step="0.01" min="0" defaultValue={fromOfferIfEmpty(editingUnit.list_price,positiveNumber(editOffer.price))} className={input}/></label>
