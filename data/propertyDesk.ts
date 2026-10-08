@@ -28,6 +28,7 @@ export interface ProjectUnitOption {
 
 export interface PropertyListing {
   projectId?: string;
+  publicListingId?: string;
   projectPriceMax?: number;
   projectUnitOptions?: ProjectUnitOption[];
   id: string;
