@@ -594,6 +594,13 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
             </div>
           </div>
 
+          {property.projectId&&property.projectAmenityCodes?.length?(
+            <div className="mt-7 border-t border-[#d7d1c6] pt-5">
+              <p className="text-[0.66rem] font-semibold uppercase tracking-[0.16em] text-[#58786d]">{locale==='fr'?'Équipements du programme':locale==='en'?'Development amenities':locale==='ru'?'Инфраструктура проекта':'مرافق المشروع'}</p>
+              <ProjectAmenityIcons codes={property.projectAmenityCodes} locale={locale}/>
+              <p className="mt-3 text-xs leading-5 text-[#8b7657]">{locale==='fr'?'Équipements indiqués par le promoteur et sélectionnés pour ce programme. À reconfirmer pour la phase et l’unité choisies.':locale==='en'?'Amenities reported by the developer and reviewed for this project. Confirm availability for the relevant phase.':locale==='ru'?'Инфраструктура заявлена застройщиком и требует подтверждения для выбранного этапа.':'المرافق المذكورة من المطور وتحتاج لتأكيد حسب المرحلة.'}</p>
+            </div>
+          ):null}
           {property.highlights?.length ? (
             <section className={property.projectId?'mt-6 border-t border-[#d7d1c6] pt-4':'mt-14 border-t border-[#d7d1c6] pt-8'}>
               <div className="flex items-end justify-between gap-5">
