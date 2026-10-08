@@ -22,7 +22,7 @@ async function admin(request:NextRequest){
 }
 
 function mediaUrl(input:any):string|null{
- const value=typeof input==='string'?input:input?.url||input?.url_1||input?.src||input?.original||input?.large;
+ const value=typeof input==='string'?input:input?.original||input?.large||input?.url_1||input?.url||input?.src;
  if(typeof value!=='string'||value.length>1800)return null;
  try{
   const parsed=new URL(value);
@@ -82,7 +82,7 @@ export async function POST(request:NextRequest){
  const {data:candidate,error:candidateErr}=await scope.client.from('project_import_candidates').select('id,source_payload').eq('imported_project_id',projectId).eq('source_system','bayut').eq('review_status','imported').limit(1).maybeSingle();
  if(candidateErr||!candidate)return NextResponse.json({error:"Aucune annonce Bayut source rattachée à ce programme. Réimportation manuelle nécessaire."},{status:404});
  // CRITICAL: the project external ID is NOT the property-listing externalID expected by /property-details.
- const listingId=t(candidate.source_payload?.externalID??String(candidate.source_payload?.externalId??''));
+ const listingId=String(candidate.source_payload?.externalID??candidate.source_payload?.externalId??'').trim();
  if(!/^[0-9]{4,18}$/.test(listingId))return NextResponse.json({error:"Identifiant d'annonce Bayut absent. Il faut un externalID d'annonce, pas l'identifiant du programme."},{status:422});
  const existing=await scope.client.from('project_media_enrichments').select('project_id,photos,floorplans,fetched_at,listing_external_id').eq('project_id',projectId).maybeSingle();
  if(existing.error)return NextResponse.json({error:'Lecture du cache impossible.'},{status:503});
