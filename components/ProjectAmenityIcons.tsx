@@ -1,5 +1,5 @@
 import type {Locale} from '@/lib/i18n';
-import {Waves,Dumbbell,Sparkles,Flame,Clapperboard,Flower2,Activity,Baby,Trophy,Footprints,Trees,ShieldCheck,Wind,ConciergeBell,Volleyball} from 'lucide-react';
+import {Waves,Dumbbell,Sparkles,Flame,Clapperboard,Flower2,Activity,Baby,Trophy,Footprints,Trees,ShieldCheck,Wind,Bell,CircleDot} from 'lucide-react';
 const items=[
  {code:'pool',icon:Waves,fr:'Piscine',en:'Swimming pool',ru:'Бассейн',ar:'مسبح'},
  {code:'gym',icon:Dumbbell,fr:'Salle de sport',en:'Fitness studio',ru:'Фитнес-зал',ar:'صالة رياضية'},
@@ -12,10 +12,10 @@ const items=[
  {code:'boxing',icon:Activity,fr:'Boxe',en:'Boxing',ru:'Бокс',ar:'ملاكمة'},
  {code:'kids',icon:Baby,fr:'Espace enfants',en:'Kids’ play area',ru:'Детская зона',ar:'منطقة أطفال'},
  {code:'tennis',icon:Trophy,fr:'Tennis',en:'Tennis',ru:'Теннис',ar:'تنس'},
- {code:'basketball',icon:Volleyball,fr:'Basketball',en:'Basketball',ru:'Баскетбол',ar:'كرة السلة'},
+ {code:'basketball',icon:CircleDot,fr:'Basketball',en:'Basketball',ru:'Баскетбол',ar:'كرة السلة'},
  {code:'jogging',icon:Footprints,fr:'Jogging',en:'Jogging tracks',ru:'Беговые дорожки',ar:'مسارات للجري'},
  {code:'garden',icon:Trees,fr:'Jardins',en:'Gardens',ru:'Сады',ar:'حدائق'},
- {code:'concierge',icon:ConciergeBell,fr:'Conciergerie',en:'Concierge',ru:'Консьерж',ar:'كونسيرج'},
+ {code:'concierge',icon:Bell,fr:'Conciergerie',en:'Concierge',ru:'Консьерж',ar:'كونسيرج'},
  {code:'security',icon:ShieldCheck,fr:'Sécurité',en:'Security',ru:'Охрана',ar:'أمن'},
 ] as const;
 export function ProjectAmenityIcons({codes,locale}:{codes:string[];locale:Locale}){
