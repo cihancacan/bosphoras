@@ -36,6 +36,7 @@ import { StructuredData } from '@/components/StructuredData';
 import { PropertyGallery } from '@/components/PropertyGallery';
 import { PropertyLocationMap } from '@/components/PropertyLocationMap';
 import { ProjectInquiryForm } from '@/components/ProjectInquiryForm';
+import { ProjectAmenityIcons } from '@/components/ProjectAmenityIcons';
 import {ProjectSelectButton,ProjectWishlistTray} from '@/components/ProjectWishlist';
 
 interface PropertyDetailPageProps {
