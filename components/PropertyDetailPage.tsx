@@ -496,34 +496,35 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
         </div>
       </section>
 
-      <section className="bg-[#fbfaf6] px-0 py-0 sm:px-6 sm:py-7 lg:px-8 lg:py-9">
+      <section className={property.projectId?'bg-[#fbfaf6] px-0 sm:px-6 lg:px-8':'bg-[#fbfaf6] px-0 py-0 sm:px-6 sm:py-7 lg:px-8 lg:py-9'}>
         <div className="mx-auto max-w-[1500px]">
           <PropertyGallery
             images={images}
             title={propertyTitle}
-            summary={localized(property.summary, locale)}
+            summary={property.projectId?'':localized(property.summary, locale)}
             location={propertyLocation}
+            compact={Boolean(property.projectId)}
           />
         </div>
       </section>
 
-      <section className="border-y border-[#ded9cf] bg-[#fbfaf6] px-5 py-9 sm:px-6 md:py-12 lg:px-8">
-        <div className="mx-auto grid max-w-[1360px] gap-9 lg:grid-cols-[minmax(0,1fr)_390px] lg:items-end">
+      <section className={property.projectId?'border-y border-[#ded9cf] bg-[#fbfaf6] px-5 py-5 sm:px-6 md:py-7 lg:px-8':'border-y border-[#ded9cf] bg-[#fbfaf6] px-5 py-9 sm:px-6 md:py-12 lg:px-8'}>
+        <div className={property.projectId?'mx-auto grid max-w-[1360px] gap-5 lg:grid-cols-[minmax(0,1fr)_355px] lg:items-start':'mx-auto grid max-w-[1360px] gap-9 lg:grid-cols-[minmax(0,1fr)_390px] lg:items-end'}>
           <div>
             <div className="flex flex-wrap items-center gap-2.5">
               <span className="rounded-full bg-[#244b3f] px-3 py-1.5 text-[0.61rem] font-semibold uppercase tracking-[0.12em] text-white">{c.project}</span>
               <span className="rounded-full border border-[#cfc8bc] px-3 py-1.5 text-[0.61rem] font-semibold uppercase tracking-[0.12em] text-[#6f695f]">{collectionLabel(property.collection, locale)}</span>
               <span className="rounded-full border border-[#cfc8bc] px-3 py-1.5 text-[0.61rem] font-semibold uppercase tracking-[0.12em] text-[#6f695f]">{property.projectId ? (locale==='fr'?'Disponibilités sur demande':locale==='en'?'Availability on request':locale==='ru'?'Наличие по запросу':'التوافر عند الطلب') : statusLabel(property.status, c)}</span>
             </div>
-            <h1 className="mt-5 max-w-5xl font-serif text-[clamp(2.7rem,6vw,5.6rem)] font-normal leading-[0.94] tracking-[-0.055em] text-[#131a18]">{propertyTitle}</h1>
+            <h1 className={property.projectId?'mt-3 max-w-5xl font-serif text-[clamp(2.15rem,4vw,3.8rem)] font-normal leading-tight tracking-[-0.05em] text-[#131a18]':'mt-5 max-w-5xl font-serif text-[clamp(2.7rem,6vw,5.6rem)] font-normal leading-[0.94] tracking-[-0.055em] text-[#131a18]'}>{propertyTitle}</h1>
             <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-[#68706b]">
               <span className="inline-flex items-center gap-2"><MapPin size={16} className="text-[#58786d]"/>{propertyLocation}</span>
               {property.developer ? <span className="inline-flex items-center gap-2"><Building2 size={16} className="text-[#58786d]"/>{property.developer}</span> : null}
             </div>
-            {localized(property.summary, locale) ? <p className="mt-6 max-w-3xl text-base leading-8 text-[#5e6762]">{localized(property.summary, locale)}</p> : null}
+            {localized(property.summary, locale) ? <p className={property.projectId?'mt-3 line-clamp-3 max-w-3xl text-sm leading-6 text-[#5e6762]':'mt-6 max-w-3xl text-base leading-8 text-[#5e6762]'}>{localized(property.summary, locale)}</p> : null}
           </div>
 
-          <aside className="rounded-[1.5rem] border border-[#d8d2c7] bg-white p-6 shadow-[0_20px_70px_rgba(27,42,36,.07)] sm:p-7">
+          <aside className={property.projectId?'rounded-[1.25rem] border border-[#d8d2c7] bg-white p-5 shadow-[0_12px_32px_rgba(27,42,36,.06)]':'rounded-[1.5rem] border border-[#d8d2c7] bg-white p-6 shadow-[0_20px_70px_rgba(27,42,36,.07)] sm:p-7'}>
             <span className="text-[0.62rem] font-semibold uppercase tracking-[0.14em] text-[#8a867e]">{c.price}</span>
             <strong className="mt-2 block text-[2rem] font-semibold tracking-[-0.045em] text-[#18211e]">{formatPropertyPrice(property, locale)}</strong>
             <div className="mt-5 grid grid-cols-2 gap-3 border-t border-[#e7e2d8] pt-5">
@@ -540,20 +541,20 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
               <Link href={requestHref} className="inline-flex min-h-[52px] w-full items-center justify-center gap-2 rounded-xl bg-[#244b3f] px-5 text-sm font-semibold text-white transition hover:bg-[#1c3c33]">
                 {c.request}<ArrowRight size={16}/>
               </Link>
-              <Link href={visitHref} className="inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-xl border border-[#244b3f] px-5 text-sm font-semibold text-[#244b3f] transition hover:bg-[#eef2ef]">
+              {!property.projectId?<Link href={visitHref} className="inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-xl border border-[#244b3f] px-5 text-sm font-semibold text-[#244b3f] transition hover:bg-[#eef2ef]">
                 <CalendarDays size={16}/>{c.visit}
-              </Link>
+              </Link>:null}
               {property.projectId?<ProjectSelectButton locale={locale} property={property} href={fullPath}/>:null}
             </div>
           </aside>
         </div>
 
-        <div className="mx-auto mt-10 max-w-[1360px] overflow-hidden rounded-[1.5rem] border border-[#ddd7cc] bg-[#f7f5f0]">
+        <div className={property.projectId?'mx-auto mt-4 max-w-[1360px] overflow-hidden rounded-xl border border-[#ddd7cc] bg-[#f7f5f0]':'mx-auto mt-10 max-w-[1360px] overflow-hidden rounded-[1.5rem] border border-[#ddd7cc] bg-[#f7f5f0]'}>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6">
             {facts.map((fact:any, index:number) => {
               const Icon = fact.icon;
               return (
-                <div key={fact.label} className={`min-h-[120px] border-[#ddd7cc] p-5 ${index ? 'border-t sm:border-l sm:border-t-0' : ''} ${index >= 2 ? 'sm:border-t lg:border-t-0' : ''} ${index >= 3 ? 'lg:border-t xl:border-t-0' : ''}`}>
+                <div key={fact.label} className={`${property.projectId?'min-h-[80px] p-3':'min-h-[120px] p-5'} border-[#ddd7cc] ${index ? 'border-t sm:border-l sm:border-t-0' : ''} ${index >= 2 ? 'sm:border-t lg:border-t-0' : ''} ${index >= 3 ? 'lg:border-t xl:border-t-0' : ''}`}>
                   <Icon size={17} className="text-[#58786d]"/>
                   <span className="mt-4 block text-[0.6rem] font-semibold uppercase tracking-[0.11em] text-[#8d887f]">{fact.label}</span>
                   <strong className="mt-1 block text-sm font-medium leading-5 text-[#29312e]">{fact.value}</strong>
@@ -574,22 +575,22 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
         </nav>
       </div>
 
-      <section id="project" className="scroll-mt-36 px-5 py-16 sm:px-6 md:py-20 lg:px-8">
+      <section id="project" className={property.projectId?'scroll-mt-36 px-5 py-9 sm:px-6 md:py-11 lg:px-8':'scroll-mt-36 px-5 py-16 sm:px-6 md:py-20 lg:px-8'}>
         <div className="mx-auto max-w-[1280px]">
-          <div className="grid gap-10 lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-16">
+          <div className={property.projectId?'grid gap-4 lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-8':'grid gap-10 lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-16'}>
             <div>
               <p className="text-[0.67rem] font-semibold uppercase tracking-[0.2em] text-[#87683c]">{c.overviewEyebrow}</p>
               <h2 className="mt-4 font-serif text-4xl leading-[1.02] tracking-[-0.04em] text-[#17201d] sm:text-5xl">{c.overview}</h2>
             </div>
             <div>
-              <div className="whitespace-pre-line font-serif text-[1.35rem] leading-[1.65] text-[#343b37] sm:text-[1.55rem]">
+              <div className={property.projectId?'whitespace-pre-line text-[0.97rem] leading-7 text-[#343b37]':'whitespace-pre-line font-serif text-[1.35rem] leading-[1.65] text-[#343b37] sm:text-[1.55rem]'}>
                 {localized(property.description, locale) || localized(property.summary, locale)}
               </div>
             </div>
           </div>
 
           {property.highlights?.length ? (
-            <section className="mt-14 border-t border-[#d7d1c6] pt-8">
+            <section className={property.projectId?'mt-6 border-t border-[#d7d1c6] pt-4':'mt-14 border-t border-[#d7d1c6] pt-8'}>
               <div className="flex items-end justify-between gap-5">
                 <div>
                   <p className="text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-[#58786d]">{c.projectFacts}</p>
@@ -597,9 +598,9 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
                 </div>
                 <Sparkles size={20} className="text-[#87683c]"/>
               </div>
-              <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              <div className={property.projectId?'mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3':'mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3'}>
                 {property.highlights.map((item, index) => (
-                  <div key={index} className="flex min-h-[86px] items-start gap-3 rounded-2xl border border-[#d9d4ca] bg-[#fbfaf6] p-4">
+                  <div key={index} className={property.projectId?'flex items-start gap-2 rounded-lg border border-[#d9d4ca] bg-[#fbfaf6] p-3':'flex min-h-[86px] items-start gap-3 rounded-2xl border border-[#d9d4ca] bg-[#fbfaf6] p-4'}>
                     <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#e8eeeb] text-[#315f52]"><Check size={14}/></span>
                     <p className="text-sm leading-6 text-[#555e59]">{localized(item, locale)}</p>
                   </div>
@@ -609,7 +610,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
           ) : null}
 
           {property.strengths?.length ? (
-            <section id="analysis" className="mt-14 scroll-mt-36 overflow-hidden rounded-[2rem] bg-[#10231e] text-white">
+            <section id="analysis" className={property.projectId?'mt-7 scroll-mt-36 overflow-hidden rounded-xl bg-[#10231e] text-white':'mt-14 scroll-mt-36 overflow-hidden rounded-[2rem] bg-[#10231e] text-white'}>
               <div className="grid lg:grid-cols-[.78fr_1.22fr]">
                 <div className="border-b border-white/10 p-7 sm:p-9 lg:border-b-0 lg:border-r">
                   <p className="text-[0.67rem] font-semibold uppercase tracking-[0.2em] text-[#d2b27c]">BOSPHORAS</p>
@@ -631,15 +632,15 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
       </section>
 
       {property.projectId ? (
-        <section id="unit-options" className="scroll-mt-36 border-t border-[#ded9cf] bg-[#faf9f5] px-5 py-16 sm:px-6 md:py-20 lg:px-8">
+        <section id="unit-options" className="scroll-mt-36 border-t border-[#ded9cf] bg-[#faf9f5] px-5 py-9 sm:px-6 md:py-11 lg:px-8">
           <div className="mx-auto max-w-[1280px]">
             <p className="text-[0.67rem] font-semibold uppercase tracking-[0.18em] text-[#698474]">BOSPHORAS · PROJECT COLLECTION</p>
-            <h2 className="mt-4 font-serif text-4xl tracking-[-0.04em] sm:text-5xl">{locale==='fr'?'Typologies & possibilités':locale==='en'?'Unit types & options':locale==='ru'?'Типы квартир и варианты':'أنواع الوحدات والخيارات'}</h2>
+            <h2 className="mt-2 font-serif text-3xl tracking-[-0.04em] sm:text-4xl">{locale==='fr'?'Typologies & possibilités':locale==='en'?'Unit types & options':locale==='ru'?'Типы квартир и варианты':'أنواع الوحدات والخيارات'}</h2>
             <p className="mt-4 max-w-3xl text-sm leading-7 text-[#68736b]">{locale==='fr'?'Les propositions ci-dessous décrivent des typologies ou des offres signalées par nos sources. Elles ne garantissent pas qu’un lot soit encore disponible. Nos conseillers confirment le stock, les prix et les conditions avant toute réservation.':locale==='en'?'The options below reflect advertised unit types or reported offers, not guaranteed current inventory. We confirm prices and availability before any reservation.':locale==='ru'?'Ниже показаны варианты из источников. Наличие конкретных квартир и цены уточняются перед бронированием.':'الخيارات أدناه معلومات إرشادية وليست تأكيداً للمخزون. نتحقق من الأسعار والتوافر قبل الحجز.'}</p>
             {property.projectUnitOptions?.length ? (
-              <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+              <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
                 {property.projectUnitOptions.map((unit,index)=>(
-                  <article key={index} className="rounded-2xl border border-[#dad5ca] bg-white p-6">
+                  <article key={index} className="rounded-xl border border-[#dad5ca] bg-white p-4">
                     <span className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-[#638270]">{unit.availability==='confirmed' ? (locale==='fr'?'Confirmée manuellement':locale==='en'?'Manually confirmed':locale==='ru'?'Подтверждено':'تم التأكيد') : (locale==='fr'?'Sur demande':locale==='en'?'On request':locale==='ru'?'По запросу':'حسب الطلب')}</span>
                     <h3 className="mt-3 text-xl font-semibold text-[#15231c]">{unit.label}</h3>
                     <div className="mt-4 flex flex-wrap gap-3 text-sm text-[#6a746d]">
@@ -658,13 +659,13 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
       ):null}
 
       {hasDeveloperTerms ? (
-        <section id="payment" className="scroll-mt-36 bg-[#0f211c] px-5 py-16 text-white sm:px-6 md:py-20 lg:px-8">
+        <section id="payment" className={property.projectId?'scroll-mt-36 bg-[#0f211c] px-5 py-9 text-white sm:px-6 md:py-11 lg:px-8':'scroll-mt-36 bg-[#0f211c] px-5 py-16 text-white sm:px-6 md:py-20 lg:px-8'}>
           <div className="mx-auto max-w-[1280px]">
             <div className="grid gap-8 lg:grid-cols-[minmax(0,.78fr)_minmax(0,1.22fr)] lg:items-end">
               <div>
                 <p className="text-[0.67rem] font-semibold uppercase tracking-[0.2em] text-[#d2b27c]">{c.paymentEyebrow}</p>
                 <h2 className="mt-4 font-serif text-4xl leading-[1.02] tracking-[-0.04em] sm:text-5xl">{c.financing}</h2>
-                <p className="mt-5 max-w-xl text-sm leading-7 text-[#aebdb8]">{c.paymentIntro}</p>
+                {!property.projectId?<p className="mt-5 max-w-xl text-sm leading-7 text-[#aebdb8]">{c.paymentIntro}</p>:null}
                 {verifiedLabel ? <p className="mt-5 inline-flex items-center gap-2 text-xs text-white/55"><CheckCircle2 size={14}/>{c.verified}: {verifiedLabel}</p> : null}
               </div>
 
@@ -688,7 +689,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
                 </div>
                 <div className="mt-5 overflow-hidden rounded-[1.5rem] border border-white/10">
                   {paymentRows.map((step:any, index:number) => (
-                    <div key={index} className="grid gap-3 border-b border-white/10 bg-white/[0.025] px-5 py-5 last:border-b-0 sm:grid-cols-[52px_minmax(0,1fr)_150px_160px] sm:items-center">
+                    <div key={index} className={property.projectId?'grid grid-cols-[28px_minmax(0,1fr)_auto] items-center gap-3 border-b border-white/10 px-3 py-3 last:border-b-0 sm:px-5':'grid gap-3 border-b border-white/10 bg-white/[0.025] px-5 py-5 last:border-b-0 sm:grid-cols-[52px_minmax(0,1fr)_150px_160px] sm:items-center'}>
                       <span className="font-serif text-2xl text-[#d2b27c]">{String(index + 1).padStart(2, '0')}</span>
                       <div>
                         <strong className="block text-sm font-medium">{localized(step.label, locale)}</strong>
@@ -715,7 +716,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
         </section>
       ) : null}
 
-      <section id="location" className="scroll-mt-36 px-5 py-16 sm:px-6 md:py-20 lg:px-8">
+      <section id="location" className={property.projectId?'scroll-mt-36 px-5 py-9 sm:px-6 md:py-11 lg:px-8':'scroll-mt-36 px-5 py-16 sm:px-6 md:py-20 lg:px-8'}>
         <div className="mx-auto max-w-[1280px]">
           <div className="grid gap-8 lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-16">
             <div>
@@ -757,7 +758,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
         </section>
       ) : null}
 
-      {property.developer ? (
+      {property.developer && !property.projectId ? (
         <section className="px-5 py-16 sm:px-6 md:py-20 lg:px-8">
           <div className="mx-auto max-w-[1280px] overflow-hidden rounded-[2rem] border border-[#d9d4ca] bg-white">
             <div className="grid lg:grid-cols-[260px_minmax(0,1fr)]">
@@ -775,7 +776,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
       ) : null}
 
       {faqItems.length ? (
-        <section className="border-t border-[#ded9cf] bg-[#fbfaf6] px-5 py-16 sm:px-6 md:py-20 lg:px-8">
+        <section className={property.projectId?'border-t border-[#ded9cf] bg-[#fbfaf6] px-5 py-7 sm:px-6 lg:px-8':'border-t border-[#ded9cf] bg-[#fbfaf6] px-5 py-16 sm:px-6 md:py-20 lg:px-8'}>
           <div className="mx-auto max-w-[980px]">
             <h2 className="font-serif text-4xl tracking-[-0.04em] sm:text-5xl">{c.faqTitle}</h2>
             <div className="mt-7 divide-y divide-[#ddd7cc] border-y border-[#ddd7cc]">
@@ -795,7 +796,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
 
       {property.projectId&&property.publicListingId?<ProjectInquiryForm locale={locale} listingId={property.publicListingId} projectId={property.projectId}/>:null}
 
-      <section className="bg-[#091713] px-5 py-18 text-white sm:px-6 md:py-24 lg:px-8">
+      {!property.projectId?<section className="bg-[#091713] px-5 py-18 text-white sm:px-6 md:py-24 lg:px-8">
         <div className="mx-auto max-w-[980px] text-center">
           <p className="text-[0.67rem] font-semibold uppercase tracking-[0.2em] text-[#d2b27c]">{c.finalEyebrow}</p>
           <h2 className="mt-4 font-serif text-4xl leading-[1.02] tracking-[-0.05em] sm:text-6xl">{c.finalTitle}</h2>
@@ -806,7 +807,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
           </div>
           <p className="mx-auto mt-7 max-w-3xl text-[0.7rem] leading-6 text-white/45">{c.disclaimer}</p>
         </div>
-      </section>
+      </section>:null}
 
       {property.projectId?<ProjectWishlistTray locale={locale}/>:null}
       <Footer locale={locale} />
