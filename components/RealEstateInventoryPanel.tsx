@@ -131,6 +131,11 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   const [units,setUnits]=useState<any[]>([]);
   const [history,setHistory]=useState<any[]>([]);
   const [apiReferences,setApiReferences]=useState<any[]>([]);
+  const [mediaCandidates,setMediaCandidates]=useState<any[]>([]);
+  const [chosenMedia,setChosenMedia]=useState<string[]>([]);
+  const [mediaRightsConfirmed,setMediaRightsConfirmed]=useState(false);
+  const [mediaBusy,setMediaBusy]=useState(false);
+  const [mediaMessage,setMediaMessage]=useState('');
   const [publicProjects,setPublicProjects]=useState<any[]>([]);
   const [projectLeads,setProjectLeads]=useState<any[]>([]);
   const [prefillProjectId,setPrefillProjectId]=useState('');
@@ -147,7 +152,7 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
     setBusy(true);
     if(clearMessage)setMessage('');
     try{
-      const [d,p,u,h,c,l,i]=await Promise.all([
+      const [d,p,u,h,c,l,i,m]=await Promise.all([
         supabase.from('developers').select('*').order('name'),
         supabase.from('real_estate_projects').select('*').order('updated_at',{ascending:false}),
         supabase.from('project_units').select('*').order('updated_at',{ascending:false}),
@@ -161,12 +166,17 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
         isAdmin?supabase.from('project_inquiries')
           .select('id,project_id,full_name,email,phone,budget,wants_similar_options,created_at')
           .order('created_at',{ascending:false}).limit(100):Promise.resolve({data:[],error:null}),
+        isAdmin?supabase.from('project_media_enrichments')
+          .select('project_id,listing_external_id,photos,floorplans,source_description,amenities,fetched_at')
+          .order('fetched_at',{ascending:false}).limit(300):Promise.resolve({data:[],error:null}),
       ]);
       if(d.error)throw d.error;if(p.error)throw p.error;if(u.error)throw u.error;if(h.error)throw h.error;
       setDevelopers(d.data||[]);setProjects(p.data||[]);setUnits(u.data||[]);setHistory(h.data||[]);
       if(c.error){setApiReferences([]);}else setApiReferences(c.data||[]);
       setPublicProjects(l.error?[]:(l.data||[]));
       setProjectLeads(i.error?[]:(i.data||[]));
+      setMediaCandidates(m.error?[]:(m.data||[]));
+      if(m.error)setMediaMessage('La galerie privée ne peut pas être chargée : '+m.error.message);
       if(!selectedProjectId&&p.data?.[0]?.id)setSelectedProjectId(p.data[0].id);
     }catch(e:any){setMessage(e?.message||'Chargement impossible.');}
     finally{setBusy(false);}
@@ -185,6 +195,12 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   const publicProject=selected?publicProjects.find((l:any)=>l.real_estate_project_id===selected.id):null;
   const selectedLeads=selected?projectLeads.filter((lead:any)=>lead.project_id===selected.id):[];
   const importedReference=selected?apiReferences.find((c:any)=>c.imported_project_id===selected.id):null;
+  const reviewedMedia=selected?mediaCandidates.find((c:any)=>c.project_id===selected.id):null;
+  const availableMedia=reviewedMedia?[...(Array.isArray(reviewedMedia.photos)?reviewedMedia.photos:[]),
+    ...(Array.isArray(reviewedMedia.floorplans)?reviewedMedia.floorplans:[])]:[];
+  useEffect(()=>{
+    setChosenMedia([]);setMediaRightsConfirmed(false);setMediaMessage('');
+  },[selectedProjectId]);
   const prefillEnabled=Boolean(selected&&importedReference&&prefillProjectId===selected.id);
   const offer=prefillEnabled?importedReference.source_payload||{}:{};
   const paymentBreakdown=bayutPlanBreakdown(offer);
@@ -196,6 +212,59 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   const editingWithOffer=Boolean(editingUnit&&editPrefillUnitId===editingUnitId&&importedReference);
   const editOffer=editingWithOffer?importedReference.source_payload||{}:{};
   const editBreakdown=bayutPlanBreakdown(editOffer);
+
+  async function getBayutPhotoDetails(){
+    if(!isAdmin||!selected||selected.source_system!=='bayut'||mediaBusy)return;
+    if(!window.confirm("Interroger Bayut /property-details pour ce projet ? Un appel RapidAPI peut être décompté du quota ; si des résultats récents sont en cache, aucun nouvel appel ne sera fait."))return;
+    setMediaBusy(true);setMediaMessage('Récupération des photos détaillées de l’annonce Bayut…');
+    try{
+      const {data}=await supabase.auth.getSession();
+      if(!data.session?.access_token)throw new Error('Session expirée, reconnecte-toi.');
+      const response=await fetch('/api/property-desk/api-projects/media',{
+        method:'POST',headers:{Authorization:'Bearer '+data.session.access_token,'Content-Type':'application/json'},
+        body:JSON.stringify({project_id:selected.id})
+      });
+      const result=await response.json().catch(()=>({}));
+      if(!response.ok)throw new Error(result.error||'Échec de l’appel Bayut.');
+      await reload({clearMessage:false});
+      setMediaMessage((result.cached?'Cache réutilisé. ':'Détails Bayut récupérés. ')+
+        String(result.photos||0)+' photo(s), '+String(result.floorplans||0)+' plan(s) à examiner dans la galerie privée.');
+    }catch(error:any){setMediaMessage(error?.message||'Erreur pendant la récupération des images.');}
+    finally{setMediaBusy(false);}
+  }
+  async function saveReviewedBayutPhotos(){
+    if(!isAdmin||!selected||!reviewedMedia||!chosenMedia.length||!mediaRightsConfirmed||mediaBusy)return;
+    setMediaBusy(true);setMediaMessage('');
+    try{
+      const valid=new Set(availableMedia.map((item:any)=>item.url));
+      const approved=chosenMedia.filter(url=>valid.has(url));
+      if(!approved.length)throw new Error('Sélectionne au moins une image dans les propositions.');
+      const stored=Array.isArray(selected.images)?selected.images:[];
+      const next=Array.from(new Set([...stored,...approved])).slice(0,32);
+      const {error}=await supabase.from('real_estate_projects').update({
+        images:next,
+        hero_image:selected.hero_image||next[0]||null,
+        updated_by:user?.id||null,
+      }).eq('id',selected.id);
+      if(error)throw error;
+      // Never change the publicly displayed gallery without a separate publishing review.
+      if(publicProject&&!publicProject.published){
+        const current=Array.isArray(publicProject.images)?publicProject.images:[];
+        const draftImages=Array.from(new Set([...current,...approved])).slice(0,32);
+        const saveDraft=await supabase.from('property_listings').update({
+          images:draftImages,hero_image:publicProject.hero_image||draftImages[0]||null
+        }).eq('id',publicProject.id).eq('published',false);
+        if(saveDraft.error)throw new Error('Images enregistrées dans le projet privé, mais la mise à jour du brouillon public a échoué : '+saveDraft.error.message);
+      }
+      setChosenMedia([]);setMediaRightsConfirmed(false);
+      await reload({clearMessage:false});
+      setMediaMessage(approved.length+' image(s) approuvée(s) et ajoutée(s) sans remplacer les anciennes. '+
+        (publicProject?.published?'La fiche déjà publiée reste inchangée ; mets sa galerie à jour dans Publications après vérification.':
+          publicProject?'La galerie du brouillon a été mise à jour, sans publication automatique.':
+          'Elles seront proposées lors de la préparation de la fiche du programme.'));
+    }catch(error:any){setMediaMessage(error?.message||"Impossible d’enregistrer les photos.");}
+    finally{setMediaBusy(false);}
+  }
 
   async function createPublicationDraft(){
     if(!isAdmin||!selected||busy)return;
@@ -608,6 +677,41 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
               {publicProject?<a href={'/espace?tab=listings&listing='+publicProject.id} className="inline-flex min-h-[42px] items-center justify-center bg-[#12304a] px-4 text-xs font-semibold text-white">Ouvrir / publier la fiche</a>:<button onClick={createPublicationDraft} disabled={busy} className="min-h-[42px] bg-[#12304a] px-4 text-xs font-semibold text-white disabled:opacity-50">Préparer la fiche du programme</button>}
             </div>
             <p className="mt-3 text-xs text-[#9b6d33]">Avant publication : vérifier les droits d’utilisation des photos API, l’exactitude des prix, le promoteur et l’échéancier. Disponibilités jamais garanties par l’import.</p>
+            {selected.source_system==='bayut'?<div className="mt-5 border-t border-[#d9e1e8] pt-5">
+              <div className="flex flex-wrap items-start justify-between gap-4">
+                <div className="max-w-xl">
+                  <h4 className="text-sm font-semibold text-[#12304a]">Galerie photos Bayut · Import détaillé</h4>
+                  <p className="mt-2 text-xs leading-6 text-[#687685]">L’import initial contient une seule photo. Le bouton demande les détails de l’annonce rattachée à ce programme, pour retrouver d’autres visuels ou des plans. Ce ne sont pas nécessairement les photos officielles du promoteur.</p>
+                  {reviewedMedia?<p className="mt-2 text-xs text-[#315d7c]">Dernière récupération : {new Date(reviewedMedia.fetched_at).toLocaleString('fr-FR')} · Annonce Bayut n° {reviewedMedia.listing_external_id}</p>:null}
+                </div>
+                <button type="button" disabled={mediaBusy||busy||!importedReference} onClick={getBayutPhotoDetails} className="inline-flex min-h-[44px] items-center justify-center gap-2 bg-[#12304a] px-4 py-2 text-xs font-semibold text-white disabled:opacity-50">
+                  <RefreshCw size={14} className={mediaBusy?'animate-spin':''}/>{mediaBusy?'Récupération…':reviewedMedia?'Consulter / actualiser les détails Bayut':'Récupérer les photos détaillées'}
+                </button>
+              </div>
+              {!importedReference?<p className="mt-3 text-xs text-[#ad633d]">Le projet n’a pas d’annonce Bayut importée associée : aucune requête externe ne sera effectuée.</p>:null}
+              {reviewedMedia?.source_description?<details className="mt-3 border border-[#d9e1e8] bg-white p-3 text-xs text-[#526272]"><summary className="cursor-pointer font-semibold">Description provenant de l’annonce source (non publiée)</summary><p className="mt-2 whitespace-pre-line leading-6">{reviewedMedia.source_description}</p></details>:null}
+              {availableMedia.length?<div className="mt-5">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <strong className="text-sm text-[#12304a]">{availableMedia.length} image(s) proposées à vérifier</strong>
+                  <button type="button" onClick={()=>setChosenMedia(chosenMedia.length===availableMedia.length?[]:availableMedia.map((item:any)=>item.url))} className="border border-[#afbfcb] bg-white px-3 py-2 text-xs font-semibold text-[#315d7c]">{chosenMedia.length===availableMedia.length?'Tout désélectionner':'Tout sélectionner'}</button>
+                </div>
+                <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                  {availableMedia.map((item:any,i:number)=><label key={item.url} className={'group relative cursor-pointer overflow-hidden border-2 bg-white '+(chosenMedia.includes(item.url)?'border-[#245a47]':'border-[#d9e1e8]')}>
+                    <div className="relative aspect-[4/3] bg-[#ecf0f2]"><img src={item.url} alt={item.title||'Photo de l’annonce Bayut '+String(i+1)} loading="lazy" className="h-full w-full object-contain"/></div>
+                    <div className="flex items-start gap-2 p-3 text-xs">
+                      <input type="checkbox" checked={chosenMedia.includes(item.url)} onChange={e=>setChosenMedia(list=>e.target.checked?[...new Set([...list,item.url])]:list.filter(url=>url!==item.url))} className="mt-0.5"/>
+                      <span className="min-w-0 break-words text-[#526272]">{item.title||'Visuel '+String(i+1)}{i>=(reviewedMedia?.photos?.length||0)?' · Plan':''}</span>
+                    </div>
+                  </label>)}
+                </div>
+                <label className="mt-5 flex items-start gap-2 text-xs leading-6 text-[#4c5e69]"><input type="checkbox" checked={mediaRightsConfirmed} onChange={e=>setMediaRightsConfirmed(e.target.checked)} className="mt-1"/>
+                  Je confirme avoir vérifié que ces visuels correspondent bien au programme et que Bosphoras dispose du droit de les réutiliser.</label>
+                <button type="button" disabled={mediaBusy||busy||!chosenMedia.length||!mediaRightsConfirmed} onClick={saveReviewedBayutPhotos} className="mt-3 min-h-[44px] bg-[#245a47] px-5 text-xs font-semibold text-white disabled:opacity-40">Valider et ajouter {chosenMedia.length} image(s) à la galerie du projet</button>
+                <p className="mt-3 text-xs leading-5 text-[#687685]">Les photos existantes sont conservées. Si le programme est déjà publié, la galerie publique n’est pas modifiée automatiquement. Aucune publication n’est déclenchée.</p>
+              </div>:null}
+              {mediaMessage?<p role="status" aria-live="polite" className="mt-4 border border-[#d3e0df] bg-white p-3 text-xs leading-5 text-[#31576b]">{mediaMessage}</p>:null}
+            </div>:null}
+
             {publicProject&&!publicProject.published?<details className="mt-5 border-t border-[#d9e1e8] pt-4">
               <summary className="cursor-pointer text-sm font-semibold text-[#315d7c]">Enrichir la fiche du programme : description, typologies, fourchettes, carte</summary>
               <form onSubmit={updateProgramDetails} className="mt-4 grid gap-3 md:grid-cols-2">
