@@ -355,6 +355,22 @@ export async function POST(request: NextRequest) {
       };
       const saved=await portal.client.from('project_import_candidates').update(changes).eq('id',id);
       if(saved.error)throw saved.error;
+      // Existing private project drafts must also receive newly retrieved content.
+      if(candidate.imported_project_id){
+        const existingProject=await portal.client.from('real_estate_projects')
+          .select('id,status,images,hero_image,description').eq('id',candidate.imported_project_id).maybeSingle();
+        if(existingProject.data?.status==='draft'){
+          const currentImages=Array.isArray(existingProject.data.images)?existingProject.data.images:[];
+          const updatedImages=[...new Set([...currentImages,...images])].slice(0,32);
+          const narrative=typeof descriptive==='string'?descriptive.trim().slice(0,10000):'';
+          const updateProject:any={
+            images:updatedImages,hero_image:existingProject.data.hero_image||updatedImages[0]||null,
+            ...(!existingProject.data.description?.fr && narrative?{description:{...(existingProject.data.description||{}),fr:narrative}}:{})
+          };
+          const pushed=await portal.client.from('real_estate_projects').update(updateProject).eq('id',existingProject.data.id);
+          if(pushed.error)throw pushed.error;
+        }
+      }
       return NextResponse.json({ok:true,images:images.length,detailKeys:Object.keys(detail).slice(0,35),
         message:images.length?'Détails et photos proposés en brouillon privé.':'La réponse ne fournit aucune galerie exploitable : contrôler detailKeys et le contrat fournisseur.'});
     }catch(e:any){return NextResponse.json({error:'Enrichissement Emlakjet : '+String(e?.message||e)},{status:502});}
