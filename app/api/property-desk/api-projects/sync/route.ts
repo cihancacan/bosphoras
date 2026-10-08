@@ -339,8 +339,11 @@ export async function POST(request: NextRequest) {
       if(!response.ok)return NextResponse.json({error:'Détails Emlakjet HTTP '+response.status},{status:502});
       const detail=responseBody?.data?.project||responseBody?.data?.details||responseBody?.data||responseBody?.project||responseBody;
       if(!detail||typeof detail!=='object')return NextResponse.json({error:'Réponse projet vide.'},{status:422});
-      const images=[...new Set([...(candidate.images||[]),...imageList(detail)])].slice(0,32);
-      const raw={...(candidate.source_payload||{}),details:detail,description:detail.description||candidate.source_payload?.description};
+      const media=detail.photoGallery||detail.galleryImages||detail.projectImages||detail.media||{};
+      const detailMedia=[...(Array.isArray(media)?media:[]),...(Array.isArray(media.photos)?media.photos:[]),...(Array.isArray(media.images)?media.images:[])];
+      const images=[...new Set([...(candidate.images||[]),...imageList(detail),...detailMedia.map(imageUrl).filter(Boolean)])].slice(0,32);
+      const descriptive=detail.introText||detail.about||detail.description||detail.projectDescription||detail.descriptionText||candidate.source_payload?.description;
+      const raw={...(candidate.source_payload||{}),details:detail,description:descriptive};
       const changes:any={
         source_payload:raw,images,hero_image:images[0]||candidate.hero_image,
         developer_name:textValue(detail.developerName||detail.developer?.name||detail.companyName)||candidate.developer_name,
@@ -353,7 +356,7 @@ export async function POST(request: NextRequest) {
       const saved=await portal.client.from('project_import_candidates').update(changes).eq('id',id);
       if(saved.error)throw saved.error;
       return NextResponse.json({ok:true,images:images.length,detailKeys:Object.keys(detail).slice(0,35),
-        message:images.length?'Détails et photos proposés en brouillon privé.':'Détails récupérés mais aucune image exploitable fournie par cette réponse.'});
+        message:images.length?'Détails et photos proposés en brouillon privé.':'La réponse ne fournit aucune galerie exploitable : contrôler detailKeys et le contrat fournisseur.'});
     }catch(e:any){return NextResponse.json({error:'Enrichissement Emlakjet : '+String(e?.message||e)},{status:502});}
   }
   if(action==='test'){
