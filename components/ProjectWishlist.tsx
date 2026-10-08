@@ -84,7 +84,7 @@ export function ProjectWishlistTray({locale}:{locale:Locale}){
        accepts_contact:fd.get('accepts_contact')==='yes',wants_alternatives:fd.get('wants_alternatives')==='yes'
      })});
      if(!response.ok)throw new Error('send failed');
-     setResult('success');form.reset();update([]);
+     setResult('success');form.reset();
    }catch{setResult('error');}
    finally{setSending(false);}
  }
@@ -98,7 +98,7 @@ export function ProjectWishlistTray({locale}:{locale:Locale}){
   </button>
   {open?<div className="fixed inset-0 z-[110] overflow-y-auto bg-[#071913]/80 p-3 backdrop-blur-sm md:p-8" role="dialog" aria-modal="true" aria-label={c.compare}>
    <div className="mx-auto max-w-[1160px] rounded-2xl bg-[#faf9f6] p-4 text-[#12231c] shadow-2xl sm:p-8" dir={locale==='ar'?'rtl':'ltr'}>
-     <div className="flex items-center justify-between gap-3"><div><p className="text-xs uppercase tracking-widest text-[#6d836f]">BOSPHORAS PROPERTY DESK</p><h2 className="mt-2 font-serif text-3xl sm:text-4xl">{c.compare} ({items.length}/{max})</h2></div><button onClick={()=>setOpen(false)} className="rounded-full border border-[#d8d1c5] p-3" aria-label="Close"><X size={20}/></button></div>
+     <div className="flex items-center justify-between gap-3"><div><p className="text-xs uppercase tracking-widest text-[#6d836f]">BOSPHORAS PROPERTY DESK</p><h2 className="mt-2 font-serif text-3xl sm:text-4xl">{c.compare} ({items.length}/{max})</h2></div><button onClick={()=>{if(result==='success')update([]);setOpen(false);}} className="rounded-full border border-[#d8d1c5] p-3" aria-label="Close"><X size={20}/></button></div>
      <p className="mt-4 text-sm text-[#69746d]">{c.empty}</p>
      <div className="mt-6 overflow-x-auto rounded-xl border border-[#d8d3c9]">
        <table className="min-w-full table-fixed text-left text-xs sm:text-sm">
