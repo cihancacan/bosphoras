@@ -350,6 +350,10 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
 
   const images = (property.images?.length ? property.images : [property.heroImage].filter(Boolean)) as string[];
   const paymentPlanVisible = property.paymentPlanEnabled !== false && Boolean(property.paymentPlan?.length);
+  const hasPaymentMetrics=Boolean(
+    property.paymentInterestMode==='interest_free'||property.paymentInterestMode==='interest_bearing'||
+    property.cashPrice||property.installmentPrice||property.cashDiscountPct
+  );
   const hasDeveloperTerms =
     property.paymentPlanEnabled !== false &&
     (paymentPlanVisible ||
@@ -661,7 +665,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
       {hasDeveloperTerms ? (
         <section id="payment" className={property.projectId?'scroll-mt-36 bg-[#0f211c] px-5 py-9 text-white sm:px-6 md:py-11 lg:px-8':'scroll-mt-36 bg-[#0f211c] px-5 py-16 text-white sm:px-6 md:py-20 lg:px-8'}>
           <div className="mx-auto max-w-[1280px]">
-            <div className="grid gap-8 lg:grid-cols-[minmax(0,.78fr)_minmax(0,1.22fr)] lg:items-end">
+            <div className={property.projectId&&!hasPaymentMetrics?'grid gap-3':'grid gap-8 lg:grid-cols-[minmax(0,.78fr)_minmax(0,1.22fr)] lg:items-end'}>
               <div>
                 <p className="text-[0.67rem] font-semibold uppercase tracking-[0.2em] text-[#d2b27c]">{c.paymentEyebrow}</p>
                 <h2 className="mt-4 font-serif text-4xl leading-[1.02] tracking-[-0.04em] sm:text-5xl">{c.financing}</h2>
@@ -669,14 +673,14 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
                 {verifiedLabel ? <p className="mt-5 inline-flex items-center gap-2 text-xs text-white/55"><CheckCircle2 size={14}/>{c.verified}: {verifiedLabel}</p> : null}
               </div>
 
-              <div className="grid gap-px overflow-hidden rounded-[1.5rem] bg-white/12 sm:grid-cols-2">
+              {hasPaymentMetrics?<div className="grid gap-px overflow-hidden rounded-[1.5rem] bg-white/12 sm:grid-cols-2">
                 {property.paymentInterestMode === 'interest_free' ? <FinancialMetric label={c.interestRate} value={c.noInterest} note={c.noInterestNote} accent/> : null}
                 {property.paymentInterestMode === 'interest_bearing' ? <FinancialMetric label={c.interestRate} value={property.paymentInterestRate !== undefined ? `${property.paymentInterestRate}%` : c.notSpecified} note={c.interestNote} accent/> : null}
                 {property.cashPrice ? <FinancialMetric label={c.cashPrice} value={money(property.cashPrice, property.currency, locale)} note={c.cashPriceNote}/> : null}
                 {property.installmentPrice ? <FinancialMetric label={c.installmentPrice} value={money(property.installmentPrice, property.currency, locale)} note={c.installmentPriceNote}/> : null}
                 {installmentPremiumPct !== null && Math.abs(installmentPremiumPct) > 0.001 ? <FinancialMetric label={c.planSurcharge} value={`${installmentPremiumPct.toFixed(1)}%`} note={c.interestNote}/> : null}
                 {property.cashDiscountPct ? <FinancialMetric label={c.cashDiscount} value={`-${property.cashDiscountPct}%`} note={c.cashPriceNote}/> : null}
-              </div>
+              </div>:null}
             </div>
 
             {localized(property.paymentNotes, locale) ? <div className="mt-7 rounded-2xl border border-white/10 bg-white/[0.04] px-5 py-4 text-sm leading-7 text-white/70">{localized(property.paymentNotes, locale)}</div> : null}
@@ -716,7 +720,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
         </section>
       ) : null}
 
-      <section id="location" className={property.projectId?'scroll-mt-36 px-5 py-9 sm:px-6 md:py-11 lg:px-8':'scroll-mt-36 px-5 py-16 sm:px-6 md:py-20 lg:px-8'}>
+      <section id="location" className={property.projectId?'scroll-mt-36 px-5 py-7 sm:px-6 md:py-9 lg:px-8':'scroll-mt-36 px-5 py-16 sm:px-6 md:py-20 lg:px-8'}>
         <div className="mx-auto max-w-[1280px]">
           <div className="grid gap-8 lg:grid-cols-[320px_minmax(0,1fr)] lg:gap-16">
             <div>
