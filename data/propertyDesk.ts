@@ -30,6 +30,8 @@ export interface PropertyListing {
   projectId?: string;
   publicListingId?: string;
   projectPriceMax?: number;
+  projectLatitude?: number;
+  projectLongitude?: number;
   projectUnitOptions?: ProjectUnitOption[];
   id: string;
   published: boolean;
