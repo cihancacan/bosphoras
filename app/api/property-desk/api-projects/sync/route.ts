@@ -76,7 +76,7 @@ function imageUrl(value: any): string {
   if (!value) return '';
   if (typeof value === 'string') return /^https?:\/\//i.test(value) ? value : '';
   if (typeof value === 'object') {
-    return imageUrl(value.url || value.src || value.original || value.large || value.medium);
+    return imageUrl(value.url || value.src || value.original || value.large || value.medium || value.imageUrl || value.photoUrl || value.path || value.full || value.originalUrl);
   }
   return '';
 }
@@ -91,6 +91,11 @@ function imageList(item: any) {
     ...(Array.isArray(item.images) ? item.images : []),
     ...(Array.isArray(item.photos) ? item.photos : []),
     ...(Array.isArray(item.gallery) ? item.gallery : []),
+    ...(Array.isArray(item.media?.photos) ? item.media.photos : []),
+    ...(Array.isArray(item.media?.images) ? item.media.images : []),
+    ...(Array.isArray(item.project?.images) ? item.project.images : []),
+    ...(Array.isArray(item.project?.photos) ? item.project.photos : []),
+    ...(Array.isArray(item.photoGallery) ? item.photoGallery : []),
   ];
   return Array.from(new Set(raw.map(imageUrl).filter(Boolean))).slice(0, 20);
 }
@@ -134,7 +139,7 @@ function mapBayut(item: any, page: number) {
     district: district || null,
     currency: textValue(item.currency || item.priceCurrency) || 'AED',
     price_min: numeric(item.startingPrice, item.priceMin, item.minPrice, item.lowPrice, item.price),
-    price_max: numeric(item.priceMax, item.maxPrice, item.highPrice),
+    price_max: numeric(item.priceMax, item.maxPrice, item.highPrice, item.project?.maxPrice),
     handover_text: textValue(item.handover || item.handoverDate || item.completionStatus || item.completion_status) || null,
     completion_date: dateValue(item.handoverDate, item.completionDate, item.deliveryDate)
       || unixDelivery(item.completionDetails?.completionDate) || unixDelivery(project.completionDate),
@@ -145,13 +150,13 @@ function mapBayut(item: any, page: number) {
 }
 
 function mapEmlakjet(item: any, page: number) {
-  const projectName = textValue(item.projectName || item.title || item.name);
+  const projectName = textValue(item.projectName || item.title || item.name || item.project?.name || item.project?.title);
   const developerName = textValue(item.developerName || item.developer || item.companyName || item.firm);
   const city = textValue(item.city || item.province || item.location?.city || item.location?.province);
   const district = textValue(item.district || item.county || item.location?.district || item.location?.county);
   const images = imageList(item);
   const externalId = textValue(item.externalID || item.externalId || item.id || item.projectId || item.project_id);
-  const sourceUrl = textValue(item.url || item.link || item.webUrl || item.web_url);
+  const sourceUrl = textValue(item.url || item.link || item.webUrl || item.web_url || item.project?.url);
   return {
     source_system: 'emlakjet',
     source_external_id: externalId || null,
@@ -167,7 +172,7 @@ function mapEmlakjet(item: any, page: number) {
     currency: textValue(item.currency || item.priceCurrency) || 'TRY',
     price_min: numeric(item.startingPrice, item.priceMin, item.minPrice, item.lowPrice, item.price),
     price_max: numeric(item.priceMax, item.maxPrice, item.highPrice),
-    handover_text: textValue(item.handover || item.delivery || item.completionStatus) || null,
+    handover_text: textValue(item.handover || item.delivery || item.completionStatus || item.project?.deliveryDate) || null,
     completion_date: dateValue(item.handoverDate, item.completionDate, item.deliveryDate),
     hero_image: images[0] || null,
     images,
@@ -194,7 +199,15 @@ function unwrapCollection(source: string, payload: any) {
 }
 
 function smallBatch(source: string, items: any[]) {
-  if (source !== 'bayut') return items.slice(0, 8);
+  if (source !== 'bayut') {
+    const unique=new Map<string,any>();
+    for(const item of items){
+      const key=textValue(item?.externalID||item?.externalId||item?.id||item?.projectId||item?.project_id)||slugKey(textValue(item?.projectName||item?.title||item?.name));
+      if(key&&!unique.has(key))unique.set(key,item);
+      if(unique.size>=20)break;
+    }
+    return [...unique.values()];
+  }
   const unique = new Map<string, any>();
   for (const item of items) {
     const project = item?.project || {};
@@ -237,6 +250,8 @@ async function fetchSource(source: string, page: number) {
     if (locationId) url.searchParams.set('location_ids', locationId);
   } else {
     url.searchParams.set('query', process.env.EMLAKJET_PROJECT_QUERY || 'istanbul');
+    url.searchParams.set('page',String(page));
+    url.searchParams.set('limit','20');
   }
 
   const response = await fetch(url, {
