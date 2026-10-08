@@ -28,6 +28,7 @@ export interface ProjectUnitOption {
 
 export interface PropertyListing {
   projectId?: string;
+  projectAmenityCodes?: string[];
   publicListingId?: string;
   projectPriceMax?: number;
   projectLatitude?: number;
