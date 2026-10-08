@@ -41,6 +41,7 @@ function mapRow(row: PropertyRow): PropertyListing {
   return {
     id: row.external_id || row.id,
     projectId: row.real_estate_project_id || undefined,
+    projectAmenityCodes: Array.isArray(row.project_amenity_codes)?row.project_amenity_codes:[],
     publicListingId: row.id,
     projectPriceMax: row.project_price_max === null || row.project_price_max === undefined ? undefined : Number(row.project_price_max),
     projectUnitOptions: Array.isArray(row.project_unit_options) ? row.project_unit_options : [],
