@@ -8,13 +8,13 @@ function copy(locale:Locale){
   return{eyebrow:'Location',title:'Property location',note:'The map uses the location stated in the listing. When the exact address is not published, the marker represents the stated area.',open:'Open in Google Maps'};
 }
 
-export function PropertyLocationMap({locale,location,latitude,longitude}:{locale:Locale;location:string;latitude?:number;longitude?:number}){
+export function PropertyLocationMap({locale,location,latitude,longitude,compact=false}:{locale:Locale;location:string;latitude?:number;longitude?:number;compact?:boolean}){
   const c=copy(locale);
   const precise=typeof latitude==='number'&&Number.isFinite(latitude)&&latitude>=-90&&latitude<=90
     &&typeof longitude==='number'&&Number.isFinite(longitude)&&longitude>=-180&&longitude<=180;
   const query=encodeURIComponent(precise?latitude+','+longitude:location);
-  return <section className="mt-14 border-t border-[#cbc5ba] pt-7">
-    <div className="mb-5 flex flex-wrap items-end justify-between gap-4">
+  return <section className={compact?'border border-[#d5cfc4] bg-[#fbfaf6] p-3 sm:p-4':'mt-14 border-t border-[#cbc5ba] pt-7'}>
+    <div className={compact?'mb-3 flex flex-wrap items-end justify-between gap-4':'mb-5 flex flex-wrap items-end justify-between gap-4'}>
       <div><p className="text-[0.66rem] font-semibold uppercase tracking-[0.18em] text-[#5c7f72]">{c.eyebrow}</p><h2 className="mt-2 font-serif text-3xl tracking-[-0.03em] text-[#202724]">{c.title}</h2></div>
       <a href={`https://www.google.com/maps/search/?api=1&query=${query}`} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-xs font-semibold text-[#456d60]">{c.open}<ExternalLink size={13}/></a>
     </div>
@@ -22,7 +22,7 @@ export function PropertyLocationMap({locale,location,latitude,longitude}:{locale
       <iframe
         title={`${c.title} — ${location}`}
         src={`https://www.google.com/maps?q=${query}&z=14&output=embed`}
-        className="h-[300px] w-full border-0 sm:h-[380px] lg:h-[430px]"
+        className={compact?'h-[230px] w-full border-0 sm:h-[280px] lg:h-[300px]':'h-[300px] w-full border-0 sm:h-[380px] lg:h-[430px]'}
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         allowFullScreen
