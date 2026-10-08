@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import { ArrowRight, BadgePercent, MapPin, RotateCcw } from 'lucide-react';
 import type { Locale } from '@/lib/i18n';
+import {ProjectSelectButton,ProjectWishlistTray} from '@/components/ProjectWishlist';
 import { getLocalePath } from '@/lib/routes';
 import {
   formatEntryCapital,
@@ -161,9 +162,11 @@ export function PropertyDeskBrowser({locale,properties,globalMode=false}:Propert
                 {property.paymentPlanEnabled&&property.paymentInterestMode!=='not_specified'?<div className="mt-3 inline-flex items-center gap-2 text-[0.67rem] font-semibold uppercase tracking-[0.07em] text-[#55756a]"><BadgePercent size={13}/>{c.terms} · {property.paymentInterestMode==='interest_free'?(locale==='fr'?'0 % sans intérêt':locale==='ru'?'0% без процентов':locale==='ar'?'0٪ بدون فائدة':'0% interest-free'):property.paymentInterestRate!==undefined?`${property.paymentInterestRate}%`:payBadge}</div>:null}
               </div>
             </Link>
+            {property.projectId?<div className="mt-4"><ProjectSelectButton property={property} href={getLocalePath(locale,getPropertyPath(locale,property,globalMode))} locale={locale}/></div>:null}
           </article>;
         })}
       </div>}
+      <ProjectWishlistTray locale={locale}/>
     </div>
   </section>;
 }
