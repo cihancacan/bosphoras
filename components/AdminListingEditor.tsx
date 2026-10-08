@@ -207,21 +207,19 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
         seo_description:draft.seo_description,
         currency:draft.currency,
         total_price:draft.price_on_request?null:Number(draft.total_price)||null,
-        ...(draft.real_estate_project_id?{
-          project_price_max:Number(draft.project_price_max)||null,
-          project_latitude:draft.project_latitude!==''&&draft.project_latitude!==null?Number(draft.project_latitude):null,
-          project_longitude:draft.project_longitude!==''&&draft.project_longitude!==null?Number(draft.project_longitude):null,
-          project_unit_options:Array.isArray(draft.project_unit_options)?draft.project_unit_options.map((opt:any)=>({
-            label:String(opt.label||'Typologie à confirmer').slice(0,100),
-            bedrooms:opt.bedrooms===''||opt.bedrooms==null?undefined:Number(opt.bedrooms),
-            bathrooms:opt.bathrooms===''||opt.bathrooms==null?undefined:Number(opt.bathrooms),
-            areaM2:opt.areaM2===''||opt.areaM2==null?undefined:Number(opt.areaM2),
-            price:opt.price===''||opt.price==null?undefined:Number(opt.price),
-            currency:opt.currency||draft.currency,
-            availability:opt.availability==='confirmed'?'confirmed':'on_request',
-            source:'unit'
-          })).slice(0,16):[]
-        }:{}),
+        project_price_max:draft.real_estate_project_id?(Number(draft.project_price_max)||null):null,
+        project_latitude:draft.real_estate_project_id&&draft.project_latitude!==''&&draft.project_latitude!==null?Number(draft.project_latitude):null,
+        project_longitude:draft.real_estate_project_id&&draft.project_longitude!==''&&draft.project_longitude!==null?Number(draft.project_longitude):null,
+        project_unit_options:draft.real_estate_project_id&&Array.isArray(draft.project_unit_options)?draft.project_unit_options.map((opt:any)=>({
+          label:String(opt.label||'Typologie à confirmer').slice(0,100),
+          bedrooms:opt.bedrooms===''||opt.bedrooms==null?undefined:Number(opt.bedrooms),
+          bathrooms:opt.bathrooms===''||opt.bathrooms==null?undefined:Number(opt.bathrooms),
+          areaM2:opt.areaM2===''||opt.areaM2==null?undefined:Number(opt.areaM2),
+          price:opt.price===''||opt.price==null?undefined:Number(opt.price),
+          currency:opt.currency||draft.currency,
+          availability:opt.availability==='confirmed'?'confirmed':'on_request',
+          source:'unit'
+        })).slice(0,16):[],
         price_on_request:Boolean(draft.price_on_request),
         entry_capital:Number(draft.entry_capital)||null,
         surface_m2:Number(draft.surface_m2)||null,
