@@ -211,8 +211,25 @@ export function AdminApiProjectInbox({user,reload}:{user:any;reload?:()=>void}){
       }).eq('id',candidate.id);
       if(marked.error)throw marked.error;
 
-      setMessage('Projet validé et créé comme BROUILLON Bosphoras. Rien n’a été publié sur le site.');
+      // Enrichment runs only after creating a PRIVATE draft, and is best-effort.
+      // All extracted text, location, amenities and photos still require admin approval.
+      let officialFeedback='Consulte la section Recherche officielle dans Projets & unités.';
+      try{
+        const session=await supabase.auth.getSession();
+        const token=session.data.session?.access_token;
+        if(token){
+          const response=await fetch('/api/property-desk/official-research',{
+            method:'POST',headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},
+            body:JSON.stringify({action:'scan',project_id:inserted.data.id})
+          });
+          const result=await response.json().catch(()=>({}));
+          officialFeedback=result.ok?'Une source officielle a été analysée. Vérifie les suggestions dans Projets & unités.':
+            result.needs_url?'URL officielle à renseigner dans Projets & unités.':
+            'Recherche officielle indisponible. Tu peux ajouter la page officielle dans Projets & unités.';
+        }
+      }catch{officialFeedback='Recherche officielle non disponible. Le brouillon reste enregistré.';}
       await load();await reload?.();
+      setMessage('Projet enregistré comme BROUILLON privé. '+officialFeedback+' Rien n’a été publié.');
     }catch(e:any){
       setMessage(e?.message||'Création du brouillon impossible.');
     }finally{setBusy('');}
