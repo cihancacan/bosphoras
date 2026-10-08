@@ -546,8 +546,8 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
             </div>:null}
           </div>:null}
 
-          <details className="border border-[#d9e1e8] bg-white" open={selectedUnits.length===0}>
-            <summary className="cursor-pointer px-5 py-4 text-sm font-semibold">+ Ajouter une unité</summary>
+          <details className="border border-[#d9e1e8] bg-white">
+            <summary className="cursor-pointer px-5 py-4 text-sm font-semibold">Stock interne (facultatif) · Ajouter ou vérifier un lot précis</summary>
             <div className="border-t border-[#e7edf2] bg-[#f5f8fa] px-5 py-4 text-xs leading-6 text-[#526272]">
               {importedReference?<>
                 <strong>Annonce API retrouvée :</strong> des données de typologie, surface, prix indicatif et échéancier peuvent être proposées.
