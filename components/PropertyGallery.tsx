@@ -9,9 +9,10 @@ interface Props {
   title: string;
   summary: string;
   location: string;
+  compact?: boolean;
 }
 
-export function PropertyGallery({ images, title, summary, location }: Props) {
+export function PropertyGallery({ images, title, summary, location, compact = false }: Props) {
   const safeImages = images.filter(Boolean);
   const [index, setIndex] = useState(0);
   const [open, setOpen] = useState(false);
@@ -62,7 +63,7 @@ export function PropertyGallery({ images, title, summary, location }: Props) {
         onTouchStart={(event) => setTouchStart(event.touches[0]?.clientX ?? null)}
         onTouchEnd={onTouchEnd}
       >
-        <div className="relative aspect-[4/3] sm:aspect-[16/10]">
+        <div className={compact?'relative aspect-[16/10] sm:aspect-[2/1]':'relative aspect-[4/3] sm:aspect-[16/10]'}>
           <button type="button" onClick={() => openAt(index)} className="absolute inset-0 block h-full w-full" aria-label="Open gallery">
             <Image src={current} alt={title} fill unoptimized priority className="object-cover" sizes="100vw" />
           </button>
@@ -82,7 +83,7 @@ export function PropertyGallery({ images, title, summary, location }: Props) {
         </div>
       </div>
 
-      <div className="hidden h-[620px] grid-cols-[minmax(0,1.72fr)_minmax(300px,.72fr)] grid-rows-2 gap-2 overflow-hidden rounded-[2rem] lg:grid">
+      <div className={`hidden ${compact?'h-[410px]':'h-[620px]'} ${safeImages.length>1?'grid-cols-[minmax(0,1.72fr)_minmax(300px,.72fr)]':'grid-cols-1'} grid-rows-2 gap-2 overflow-hidden rounded-[1.5rem] lg:grid`}>
         <button type="button" onClick={() => openAt(0)} className="group relative row-span-2 overflow-hidden bg-[#d8d4cb] text-left" aria-label="Open main photo">
           <Image src={safeImages[0]} alt={title} fill unoptimized priority className="object-cover transition duration-700 group-hover:scale-[1.015]" sizes="72vw" />
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/72 via-black/25 to-transparent px-8 pb-7 pt-28 text-white">
@@ -95,9 +96,7 @@ export function PropertyGallery({ images, title, summary, location }: Props) {
           <button type="button" onClick={() => openAt(1)} className={`group relative overflow-hidden bg-[#d8d4cb] ${!safeImages[2] ? 'row-span-2' : ''}`} aria-label="Open second photo">
             <Image src={safeImages[1]} alt={`${title} — 2`} fill unoptimized className="object-cover transition duration-700 group-hover:scale-[1.025]" sizes="28vw" />
           </button>
-        ) : (
-          <div className="row-span-2 bg-[#d8d4cb]" />
-        )}
+        ) : null}
 
         {safeImages[2] ? (
           <button type="button" onClick={() => openAt(2)} className="group relative overflow-hidden bg-[#d8d4cb]" aria-label="Open third photo">
