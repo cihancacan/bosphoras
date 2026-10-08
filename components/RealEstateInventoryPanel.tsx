@@ -247,7 +247,12 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
         project_price_max:positiveNumber(project.price_max),
         price_on_request:!positiveNumber(project.price_min),
         entry_capital:positiveNumber(project.entry_capital_min),
-        delivery:project.handover_text?localizedText(project.handover_text):project.completion_date?localizedText(String(project.completion_date)):null,
+        delivery:project.completion_date?localizedText(String(project.completion_date)):project.handover_text?localizedText(project.handover_text):null,
+        project_latitude:project.latitude??null,
+        project_longitude:project.longitude??null,
+        highlights:Array.isArray(project.highlights)?project.highlights.filter((v:any)=>typeof v==='object'&&v.fr):[],
+        // Rich project fact sections are curated in Publications before release.
+        payment_interest_mode:'not_specified',
         developer:developerById[project.developer_id]?.name||null,
         payment_plan:plan,payment_plan_enabled:Boolean(plan.length),payment_interest_mode:'not_specified',
         payment_notes:plan.length?note:null,
