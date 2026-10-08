@@ -177,6 +177,9 @@ function mapEmlakjet(item: any, page: number) {
 
 function unwrapCollection(source: string, payload: any) {
   const data = payload?.data ?? payload;
+  if(Array.isArray(data))return data;
+  if(Array.isArray(payload))return payload;
+  if(Array.isArray(data?.data))return data.data;
   const projectSuggestions = Array.isArray(data?.suggestions)
     ? data.suggestions
       .filter((group:any)=>/project/i.test(textValue(group?.key)))
@@ -184,7 +187,9 @@ function unwrapCollection(source: string, payload: any) {
     : [];
   const candidates = source === 'bayut'
     ? [data?.properties, data?.projects, data?.results, payload?.properties]
-    : [data?.projects, projectSuggestions, data?.properties, data?.results, data?.items, payload?.projects];
+    : [data?.projects, projectSuggestions, data?.properties, data?.results, data?.items,
+       data?.records, data?.list, data?.data?.projects, data?.data?.items,
+       payload?.projects, payload?.results, payload?.items];
   return candidates.find(Array.isArray) || [];
 }
 
@@ -294,10 +299,48 @@ export async function POST(request: NextRequest) {
 
   const body = await request.json().catch(()=>({}));
   const source = String(body?.source || '').toLowerCase();
+  const action = String(body?.action || 'import').toLowerCase();
   const page = Math.max(1, Math.min(1000, Number(body?.page || 1)));
   if (!['bayut','emlakjet'].includes(source)) {
     return NextResponse.json({ error:'Source inconnue.' }, { status:400 });
   }
+
+  if(action==='test'){
+    // Authenticated, read-only smoke test: one provider request, never insert projects.
+    // An empty response is not automatically a broken connection.
+    try{
+      const payload=await fetchSource(source,1);
+      const data=payload?.data??payload;
+      const rows=unwrapCollection(source,payload);
+      const sample=rows.slice(0,3).map((item:any)=>({
+        id:textValue(item?.externalID||item?.externalId||item?.id||item?.projectId),
+        name:textValue(item?.projectName||item?.title||item?.name||item?.project?.title),
+      }));
+      const keys=(v:any)=>v&&typeof v==='object'&&!Array.isArray(v)?Object.keys(v).slice(0,24):[];
+      await portal.client.from('project_source_sync_runs').insert({
+        source_system:source,source_page:1,request_count:1,fetched_count:rows.length,
+        upserted_count:0,status:'success',created_by:portal.user.id,
+      });
+      return NextResponse.json({
+        ok:true,source,mode:'test',remoteStatus:200,results:rows.length,
+        topLevelKeys:keys(payload),dataKeys:keys(data),sample,
+        message:rows.length
+          ?'Connexion API vérifiée. Projets reçus, non importés.'
+          :'L’API répond HTTP 200, mais aucun projet n’a été reconnu : vérifie la structure des données et le terme de recherche.',
+      });
+    }catch(error:any){
+      await portal.client.from('project_source_sync_runs').insert({
+        source_system:source,source_page:1,
+        request_count:error?.code==='NOT_CONFIGURED'?0:1,
+        fetched_count:0,upserted_count:0,status:'failed',
+        error_message:'Test API : '+String(error?.message||error).slice(0,850),
+        created_by:portal.user.id,
+      });
+      return NextResponse.json({error:error?.message||'Échec du test de connexion.'},
+        {status:error?.code==='NOT_CONFIGURED'?409:502});
+    }
+  }
+  if(action!=='import')return NextResponse.json({error:'Action inconnue.'},{status:400});
 
   let fetchedCount = 0;
   let upsertedCount = 0;
