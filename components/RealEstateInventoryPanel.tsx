@@ -252,7 +252,6 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
         project_longitude:project.longitude??null,
         highlights:Array.isArray(project.highlights)?project.highlights.filter((v:any)=>typeof v==='object'&&v.fr):[],
         // Rich project fact sections are curated in Publications before release.
-        payment_interest_mode:'not_specified',
         developer:developerById[project.developer_id]?.name||null,
         payment_plan:plan,payment_plan_enabled:Boolean(plan.length),payment_interest_mode:'not_specified',
         payment_notes:plan.length?note:null,
