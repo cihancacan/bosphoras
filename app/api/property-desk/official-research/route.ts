@@ -104,7 +104,7 @@ export async function POST(req:NextRequest){
      const home=await fetchPublicHtml(root.toString());
      const match=discoverProjectLink(home.html,home.url,project.name);
      if(!match){
-       const msg:'string'='Le site du promoteur est connu, mais la page exacte du programme n’a pas été identifiée avec certitude. Renseigne son URL officielle.';
+       const msg:string='Le site du promoteur est connu, mais la page exacte du programme n’a pas été identifiée avec certitude. Renseigne son URL officielle.';
        const u=await client.from('project_official_research').upsert({project_id:projectId,status:'needs_url',status_message:msg,developer_domain:developerDomain,fetched_by:user.id,fetched_at:new Date().toISOString()},{onConflict:'project_id'});
        if(u.error)throw new Error(u.error.message);
        return NextResponse.json({ok:false,needs_url:true,message:msg},{status:200});
@@ -112,7 +112,7 @@ export async function POST(req:NextRequest){
      official=match;
    }
    const original=await validExternalUrl(official);
-   if(dev?.website)developerDomain=new URL(await validExternalUrl(dev.website)).hostname;
+   if(dev?.website)developerDomain=(await validExternalUrl(dev.website)).hostname;
    // An explicitly submitted official URL is accepted only as a pending human-reviewed source.
    // This never grants rights to copy descriptions or media.
    const page=await fetchPublicHtml(original.toString());
