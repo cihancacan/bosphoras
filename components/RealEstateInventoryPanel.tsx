@@ -72,9 +72,11 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   const [status,setStatus]=useState('all');
   const [busy,setBusy]=useState(false);
   const [message,setMessage]=useState('');
+  const [unitFormMessage,setUnitFormMessage]=useState('');
 
-  async function reload(){
-    setBusy(true);setMessage('');
+  async function reload({clearMessage=true}:{clearMessage?:boolean}={}){
+    setBusy(true);
+    if(clearMessage)setMessage('');
     try{
       const [d,p,u,h,c]=await Promise.all([
         supabase.from('developers').select('*').order('name'),
@@ -118,8 +120,9 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
 
   async function createDeveloper(e:FormEvent<HTMLFormElement>){
     e.preventDefault();setBusy(true);setMessage('');
+    const form=e.currentTarget;
     try{
-      const fd=new FormData(e.currentTarget);
+      const fd=new FormData(form);
       const {error}=await supabase.from('developers').insert({
         name:String(fd.get('name')||'').trim(),
         legal_name:String(fd.get('legal_name')||'').trim()||null,
@@ -133,15 +136,16 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
         logo_url:String(fd.get('logo_url')||'').trim()||null,
         created_by:user?.id||null,
       });
-      if(error)throw error;e.currentTarget.reset();setMessage('Promoteur ajouté.');await reload();
+      if(error)throw error;form.reset();await reload({clearMessage:false});setMessage('Promoteur ajouté.');
     }catch(e:any){setMessage(e?.message||'Création impossible.');}
     finally{setBusy(false);}
   }
 
   async function createProject(e:FormEvent<HTMLFormElement>){
     e.preventDefault();setBusy(true);setMessage('');
+    const form=e.currentTarget;
     try{
-      const fd=new FormData(e.currentTarget);
+      const fd=new FormData(form);
       const payload:any={
         name:String(fd.get('name')||'').trim(),
         developer_id:String(fd.get('developer_id')||'')||null,
@@ -165,16 +169,21 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
         created_by:user?.id||null,updated_by:user?.id||null,last_verified_at:new Date().toISOString(),
       };
       const {data,error}=await supabase.from('real_estate_projects').insert(payload).select('*').single();
-      if(error)throw error;e.currentTarget.reset();setSelectedProjectId(data.id);setMessage('Projet ajouté.');await reload();
+      if(error)throw error;form.reset();setSelectedProjectId(data.id);await reload({clearMessage:false});setMessage('Projet ajouté.');
     }catch(e:any){setMessage(e?.message||'Création impossible.');}
     finally{setBusy(false);}
   }
 
   async function createUnit(e:FormEvent<HTMLFormElement>){
     e.preventDefault();if(!selected)return;
-    setBusy(true);setMessage('');
+    if(busy)return;
+    const form=e.currentTarget;
+    setBusy(true);setMessage('');setUnitFormMessage('Enregistrement de l’unité…');
     try{
-      const fd=new FormData(e.currentTarget);
+      const fd=new FormData(form);
+      const hasUnitInfo=['unit_number','external_id','unit_type','bedrooms','gross_area_m2','list_price']
+        .some((field)=>String(fd.get(field)||'').trim()!=='');
+      if(!hasUnitInfo)throw new Error('Renseigne au moins une caractéristique (n° de lot, référence, typologie, surface, chambres ou prix) avant d’enregistrer.');
       const status=String(fd.get('status')||'unverified');
       const plan=readPaymentForm(fd);
       const usingOffer=Boolean(importedReference&&prefillProjectId===selected.id);
@@ -207,8 +216,15 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
         last_verified_at:status==='unverified'?null:new Date().toISOString(),
         created_by:user?.id||null,updated_by:user?.id||null,
       });
-      if(error)throw error;e.currentTarget.reset();setPrefillProjectId('');setMessage(status==='unverified'?'Unité enregistrée à vérifier, sans confirmation de disponibilité.':'Unité ajoutée. Disponibilité saisie manuellement, à maintenir à jour.');await reload();
-    }catch(e:any){setMessage(e?.message||'Création impossible.');}
+      if(error)throw error;
+      form.reset();setPrefillProjectId('');
+      await reload({clearMessage:false});
+      const feedback=status==='unverified'?'Unité enregistrée en stock privé, disponibilité à vérifier.':'Unité ajoutée au stock privé. Ce n’est pas une publication publique.';
+      setMessage(feedback);setUnitFormMessage(feedback);
+    }catch(e:any){
+      const errorText=e?.message||'Enregistrement de l’unité impossible.';
+      setMessage(errorText);setUnitFormMessage(errorText);
+    }
     finally{setBusy(false);}
   }
 
@@ -245,21 +261,21 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
       }).eq('id',editingUnit.id);
       if(error)throw error;
       setEditingUnitId('');setEditPrefillUnitId('');
+      await reload({clearMessage:false});
       setMessage('Fiche unité enregistrée'+(status==='unverified'?' — disponibilité toujours à vérifier.':'.'));
-      await reload();
     }catch(error:any){setMessage(error?.message||'Modification impossible.');}
     finally{setBusy(false);}
   }
   async function updateUnitStatus(id:string,next:string){
     setBusy(true);
     const {error}=await supabase.from('project_units').update({status:next,updated_by:user?.id||null,last_verified_at:next==='unverified'?null:new Date().toISOString()}).eq('id',id);
-    if(error)setMessage(error.message);else await reload();
+    if(error)setMessage(error.message);else {await reload({clearMessage:false});setMessage('Statut de l’unité mis à jour.');}
     setBusy(false);
   }
   async function updateProjectStatus(id:string,next:string){
     setBusy(true);
     const {error}=await supabase.from('real_estate_projects').update({sales_status:next,updated_by:user?.id||null,last_verified_at:new Date().toISOString()}).eq('id',id);
-    if(error)setMessage(error.message);else await reload();
+    if(error)setMessage(error.message);else {await reload({clearMessage:false});setMessage('Commercialisation interne mise à jour. Cela ne publie pas une annonce.');}
     setBusy(false);
   }
 
@@ -282,7 +298,11 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
       ].map(([k,v,Icon]:any)=><article key={k} className="bg-white p-5"><div className="flex items-center justify-between"><span className="text-[0.66rem] uppercase tracking-[0.08em] text-[#687685]">{k}</span><Icon size={17} className="text-[#315d7c]"/></div><strong className="mt-2 block text-3xl font-semibold">{v}</strong></article>)}
     </div>
 
-    {message?<div className="border border-[#d9e1e8] bg-white px-4 py-3 text-sm">{message}</div>:null}
+    {message?<div role="status" aria-live="polite" className="border border-[#d9e1e8] bg-white px-4 py-3 text-sm">{message}</div>:null}
+    <div className="flex flex-wrap items-center justify-between gap-3 border border-[#b9cbd8] bg-[#f4f8fb] p-4 text-sm">
+      <p className="max-w-3xl text-[#31536d]"><strong>Stock privé ≠ publication :</strong> « Ajouter une unité » enregistre uniquement un lot dans l'inventaire interne. Pour publier sur le site, il faut créer et approuver une annonce dans l'onglet Publications.</p>
+      {isAdmin?<a href="/espace?tab=listings" className="inline-flex min-h-[40px] items-center justify-center bg-[#12304a] px-4 text-xs font-semibold text-white">Ouvrir les publications</a>:null}
+    </div>
 
     {isAdmin?<AdminProjectImporter user={user} profile={profile} isAdmin={isAdmin} partners={partners} developers={developers} onSaved={reload}/>:null}
 
@@ -376,7 +396,7 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
                 {importedReference.source_url?<a href={importedReference.source_url} target="_blank" rel="noopener noreferrer" className="ml-3 underline">Voir la source</a>:null}
               </>:<>Aucune annonce API associée à ce projet. Les informations de chaque unité doivent être saisies et vérifiées manuellement.</>}
             </div>
-            <form key={selected.id+'-'+(prefillEnabled?'offer':'manual')} onSubmit={createUnit} className="grid gap-3 border-t border-[#e7edf2] p-5 md:grid-cols-4">
+            <form key={selected.id+'-'+(prefillEnabled?'offer':'manual')} onSubmit={createUnit} onInvalidCapture={(e:any)=>setUnitFormMessage('Un champ du formulaire est invalide : '+(e.target?.name||'vérifier les nombres saisis')+'.')} className="grid gap-3 border-t border-[#e7edf2] p-5 md:grid-cols-4">
               {prefillEnabled?<p className="md:col-span-4 text-xs text-[#9a6927]">Préremplissage indicatif issu d'une annonce. Vérifiez le numéro, le lot précis, le prix, les surfaces, l'échéancier et la disponibilité avant de faire une offre.</p>:null}
               <label className={label}>N° unité<input name="unit_number" className={input}/></label>
               <label className={label}>Réf. externe<input name="external_id" className={input}/></label>
@@ -400,7 +420,8 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
               </div>
               {paymentFields.map((f)=><label key={f.key} className={label}>{f.label} (%)<input name={f.name} type="number" step="0.1" min="0" max="100" defaultValue={paymentBreakdown?.[f.key]??''} className={input}/></label>)}
               <p className="md:col-span-4 text-xs leading-5 text-[#687685]">Un projet et une annonce API ne garantissent pas le stock réel. Le statut « À vérifier » n'est pas compté comme disponible.</p>
-              <button disabled={busy} className="min-h-[42px] bg-[#12304a] px-4 text-sm font-semibold text-white md:col-span-4"><Plus size={14} className="mr-2 inline"/>Enregistrer l'unité</button>
+              <button type="submit" disabled={busy} className="min-h-[42px] bg-[#12304a] px-4 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-50 md:col-span-4"><Plus size={14} className="mr-2 inline"/>{busy?'Enregistrement…':"Enregistrer l’unité dans le stock privé"}</button>
+              {unitFormMessage?<p role="status" aria-live="polite" className="md:col-span-4 border border-[#b9cbd8] bg-[#f4f8fb] p-3 text-xs text-[#12304a]">{unitFormMessage}</p>:null}
             </form>
           </details>
 
