@@ -12,6 +12,38 @@ function money(value:any,currency='EUR'){
   catch{return String(n)+' '+currency;}
 }
 function local(value=''){return {fr:value,en:value,ru:value,ar:value};}
+function cleanDescription(raw:any){
+  const candidates=[raw?.description?.en,raw?.description?.fr,
+    typeof raw?.description==='string'?raw.description:null,
+    raw?.summary?.en,typeof raw?.summary==='string'?raw.summary:null,
+    raw?.subtitle?.en,typeof raw?.subtitle==='string'?raw.subtitle:null];
+  return String(candidates.find((v:any)=>typeof v==='string'&&v.trim()&&!/^\[object Object\]$/i.test(v.trim()))||'').trim().slice(0,12000);
+}
+function factualProjectDescription(candidate:any,raw:any){
+  const description=cleanDescription(raw);
+  if(description)return {fr:'',en:description,ru:'',ar:''};
+  const name=String(candidate.project_name||'Ce programme');
+  const city=String(candidate.city||'').trim();
+  const district=String(candidate.district||'').trim();
+  const place=[district,city].filter(Boolean).join(', ');
+  const dev=String(candidate.developer_name||'').trim();
+  const rooms=raw.rooms!=null&&Number.isInteger(Number(raw.rooms))?Number(raw.rooms):null;
+  const delivery=String(candidate.completion_date||'').trim();
+  return {
+    fr:'Le programme '+name+(place?' se situe dans le secteur de '+place:'')+
+      (dev?'. Promoteur indiqué : '+dev+'.':'.')+
+      (rooms!==null?' Une offre source mentionne un logement de '+rooms+' chambre(s) ; les autres typologies restent à confirmer.':' Les typologies disponibles sont à confirmer.')+
+      (delivery?' Livraison prévisionnelle indiquée : '+delivery+'.':'')+
+      ' Les prix sont indicatifs et les disponibilités doivent être vérifiées auprès du promoteur.',
+    en:'The '+name+' development'+(place?' is located in '+place:'')+
+      (dev?'. Reported developer: '+dev+'.':'.')+
+      (rooms!==null?' One source listing mentions a '+rooms+'-bedroom unit; other types need confirmation.':' Available unit types require confirmation.')+
+      (delivery?' Reported expected delivery: '+delivery+'.':'')+
+      ' Indicative pricing and stock require developer confirmation.',
+    ru:'Проект '+name+(place+' .').trim()+' Доступность, типы квартир и условия необходимо подтвердить у застройщика.',
+    ar:'مشروع '+name+(place?' في '+place:'')+'. يلزم تأكيد أنواع الوحدات والأسعار والتوافر مع المطور.'
+  };
+}
 function when(value?:string|null){
   if(!value)return '—';
   const d=new Date(value);
@@ -141,7 +173,7 @@ export function AdminApiProjectInbox({user,reload}:{user:any;reload?:()=>void}){
       }
 
       const raw=candidate.source_payload||{};
-      const description=String(raw.description||raw.summary||raw.subtitle||'').slice(0,12000);
+      const description=factualProjectDescription(candidate,raw);
       const payload:any={
         developer_id:developerId,
         external_id:candidate.source_external_id||('API-'+candidate.id.slice(0,8)),
@@ -156,11 +188,11 @@ export function AdminApiProjectInbox({user,reload}:{user:any;reload?:()=>void}){
         status:'draft',
         sales_status:'available',
         completion_date:candidate.completion_date||null,
-        handover_text:candidate.handover_text||null,
+        handover_text:candidate.completion_date||candidate.handover_text||null,
         currency:candidate.currency||(candidate.country_code==='AE'?'AED':'TRY'),
         price_min:candidate.price_min||null,
         price_max:candidate.price_max||null,
-        description:local(description),
+        description,
         images:candidate.images||[],
         hero_image:candidate.hero_image||candidate.images?.[0]||null,
         source_last_synced_at:new Date().toISOString(),
