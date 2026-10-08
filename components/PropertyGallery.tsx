@@ -83,7 +83,7 @@ export function PropertyGallery({ images, title, summary, location, compact = fa
         </div>
       </div>
 
-      <div className={`hidden ${compact?'h-[410px]':'h-[620px]'} ${safeImages.length>1?'grid-cols-[minmax(0,1.72fr)_minmax(300px,.72fr)]':'grid-cols-1'} grid-rows-2 gap-2 overflow-hidden rounded-[1.5rem] lg:grid`}>
+      <div className={`hidden ${compact?'h-[380px]':'h-[480px]'} ${safeImages.length>1?'grid-cols-[minmax(0,1.72fr)_minmax(300px,.72fr)]':'grid-cols-1'} grid-rows-2 gap-2 overflow-hidden rounded-[1.5rem] lg:grid`}>
         <button type="button" onClick={() => openAt(0)} className="group relative row-span-2 overflow-hidden bg-[#d8d4cb] text-left" aria-label="Open main photo">
           <Image src={safeImages[0]} alt={title} fill unoptimized priority className="object-cover transition duration-700 group-hover:scale-[1.015]" sizes="72vw" />
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/72 via-black/25 to-transparent px-8 pb-7 pt-28 text-white">
