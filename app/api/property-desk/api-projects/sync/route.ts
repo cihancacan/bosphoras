@@ -101,12 +101,14 @@ function locationNames(item: any) {
 
 function mapBayut(item: any, page: number) {
   const locations = locationNames(item);
-  const projectName = textValue(item.title || item.name || item.projectName);
-  const developerName = textValue(item.developerName || item.developer || item.developer_name);
+  const project = item.project || {};
+  const projectLocation = [...locations].reverse().find((name:string)=>!/^dubai$|^uae$/i.test(name));
+  const projectName = textValue(project.title || project.name || item.projectName) || projectLocation || textValue(item.title || item.name);
+  const developerName = textValue(project.agency?.name || project.developerName || project.developer || item.developerName || item.developer || item.developer_name);
   const city = locations.find((x:string)=>/dubai/i.test(x)) || textValue(item.city) || 'Dubai';
   const district = textValue(item.locationName || item.community || item.area || item.district) || locations.at(-1) || '';
   const images = imageList(item);
-  const externalId = textValue(item.externalID || item.externalId || item.id || item.projectId);
+  const externalId = textValue(project.externalID || project.externalId || project.id || item.projectId || item.externalID || item.externalId || item.id);
   const sourceUrl = textValue(item.url || item.link || item.webURL || item.webUrl);
   return {
     source_system: 'bayut',
@@ -164,10 +166,27 @@ function mapEmlakjet(item: any, page: number) {
 
 function unwrapCollection(source: string, payload: any) {
   const data = payload?.data ?? payload;
+  const projectSuggestions = Array.isArray(data?.suggestions)
+    ? data.suggestions
+      .filter((group:any)=>/project/i.test(textValue(group?.key)))
+      .flatMap((group:any)=>Array.isArray(group?.records) ? group.records : [])
+    : [];
   const candidates = source === 'bayut'
     ? [data?.properties, data?.projects, data?.results, payload?.properties]
-    : [data?.projects, data?.properties, data?.results, data?.items, payload?.projects];
+    : [data?.projects, projectSuggestions, data?.properties, data?.results, data?.items, payload?.projects];
   return candidates.find(Array.isArray) || [];
+}
+
+function smallBatch(source: string, items: any[]) {
+  if (source !== 'bayut') return items.slice(0, 8);
+  const unique = new Map<string, any>();
+  for (const item of items) {
+    const project = item?.project || {};
+    const key = textValue(project.externalID || project.externalId || project.id || item.projectId || item.externalID || item.externalId || item.id);
+    if (key && !unique.has(key)) unique.set(key, item);
+    if (unique.size >= 8) break;
+  }
+  return [...unique.values()];
 }
 
 function sourceConfiguration(source: string) {
@@ -193,13 +212,15 @@ async function fetchSource(source: string, page: number) {
 
   const endpoint = source === 'bayut' ? '/search-new-projects' : '/project-search';
   const url = new URL('https://' + config.host + endpoint);
-  url.searchParams.set('page', String(page));
   if (source === 'bayut') {
+    url.searchParams.set('page', String(page));
     url.searchParams.set('langs','en');
     url.searchParams.set('property_type','residential');
     url.searchParams.set('sort_order','latest');
-    const locationId = process.env.BAYUT_DUBAI_LOCATION_ID;
+    const locationId = process.env.BAYUT_DUBAI_LOCATION_ID || '5002';
     if (locationId) url.searchParams.set('location_ids', locationId);
+  } else {
+    url.searchParams.set('query', process.env.EMLAKJET_PROJECT_QUERY || 'istanbul');
   }
 
   const response = await fetch(url, {
@@ -244,12 +265,12 @@ export async function GET(request: NextRequest) {
     sources: {
       bayut: {
         configured: sourceConfiguration('bayut').configured,
-        monthlyLimit: 900,
+        monthlyLimit: 300,
         ...(stats.bayut || { requests:0, fetched:0, upserted:0, runs:0 }),
       },
       emlakjet: {
         configured: sourceConfiguration('emlakjet').configured,
-        monthlyLimit: null,
+        monthlyLimit: 400,
         ...(stats.emlakjet || { requests:0, fetched:0, upserted:0, runs:0 }),
       },
     },
@@ -271,7 +292,7 @@ export async function POST(request: NextRequest) {
   let upsertedCount = 0;
   try {
     const payload = await fetchSource(source, page);
-    const items = unwrapCollection(source, payload).slice(0, 50);
+    const items = smallBatch(source, unwrapCollection(source, payload));
     fetchedCount = items.length;
 
     for (const raw of items) {
