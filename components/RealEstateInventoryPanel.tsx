@@ -16,12 +16,28 @@ function unitLabel(u:any){
   return [u?.unit_number,u?.unit_type,u?.bedrooms!=null?String(u.bedrooms)+' ch.':null].filter(Boolean).join(' · ')||u?.external_id||'Unité';
 }
 
+function positiveNumber(value:any){
+  const n=Number(value);
+  return Number.isFinite(n)&&n>0?n:null;
+}
+function bayutPlanBreakdown(payload:any){
+  const summaries=Array.isArray(payload?.paymentPlanSummaries)?payload.paymentPlanSummaries:[];
+  return summaries.find((s:any)=>s?.breakdown&&typeof s.breakdown==='object')?.breakdown||null;
+}
+const paymentFields=[
+  {key:'downPaymentPercentage',name:'payment_down_pct',label:'Acompte'},
+  {key:'preHandoverPercentage',name:'payment_pre_pct',label:'Avant livraison'},
+  {key:'handoverPercentage',name:'payment_handover_pct',label:'À la livraison'},
+  {key:'postHandoverPercentage',name:'payment_post_pct',label:'Après livraison'},
+];
 export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{user:any;profile:any;isAdmin:boolean;partners?:any[]}){
   const supabase=getPortalSupabase();
   const [developers,setDevelopers]=useState<any[]>([]);
   const [projects,setProjects]=useState<any[]>([]);
   const [units,setUnits]=useState<any[]>([]);
   const [history,setHistory]=useState<any[]>([]);
+  const [apiReferences,setApiReferences]=useState<any[]>([]);
+  const [prefillProjectId,setPrefillProjectId]=useState('');
   const [selectedProjectId,setSelectedProjectId]=useState('');
   const [query,setQuery]=useState('');
   const [status,setStatus]=useState('all');
@@ -31,14 +47,18 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   async function reload(){
     setBusy(true);setMessage('');
     try{
-      const [d,p,u,h]=await Promise.all([
+      const [d,p,u,h,c]=await Promise.all([
         supabase.from('developers').select('*').order('name'),
         supabase.from('real_estate_projects').select('*').order('updated_at',{ascending:false}),
         supabase.from('project_units').select('*').order('updated_at',{ascending:false}),
         supabase.from('project_unit_history').select('*').order('created_at',{ascending:false}).limit(500),
+        isAdmin?supabase.from('project_import_candidates')
+          .select('id,imported_project_id,source_system,source_external_id,source_url,source_payload,currency')
+          .eq('review_status','imported').limit(300):Promise.resolve({data:[],error:null}),
       ]);
       if(d.error)throw d.error;if(p.error)throw p.error;if(u.error)throw u.error;if(h.error)throw h.error;
       setDevelopers(d.data||[]);setProjects(p.data||[]);setUnits(u.data||[]);setHistory(h.data||[]);
+      if(c.error){setApiReferences([]);}else setApiReferences(c.data||[]);
       if(!selectedProjectId&&p.data?.[0]?.id)setSelectedProjectId(p.data[0].id);
     }catch(e:any){setMessage(e?.message||'Chargement impossible.');}
     finally{setBusy(false);}
@@ -54,6 +74,14 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   }),[projects,query,status,developerById]);
   const selected=projects.find((p:any)=>p.id===selectedProjectId)||filtered[0]||null;
   const selectedUnits=selected?units.filter((u:any)=>u.project_id===selected.id):[];
+  const importedReference=selected?apiReferences.find((c:any)=>c.imported_project_id===selected.id):null;
+  const prefillEnabled=Boolean(selected&&importedReference&&prefillProjectId===selected.id);
+  const offer=prefillEnabled?importedReference.source_payload||{}:{};
+  const paymentBreakdown=bayutPlanBreakdown(offer);
+  const offerPrice=positiveNumber(offer.price);
+  const offerArea=positiveNumber(offer.area);
+  const offerBedrooms=offer.rooms!=null&&offer.rooms!==''?Number(offer.rooms):null;
+  const offerBathrooms=offer.baths!=null&&offer.baths!==''?Number(offer.baths):null;
 
   async function createDeveloper(e:FormEvent<HTMLFormElement>){
     e.preventDefault();setBusy(true);setMessage('');
@@ -114,6 +142,17 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
     setBusy(true);setMessage('');
     try{
       const fd=new FormData(e.currentTarget);
+      const status=String(fd.get('status')||'unverified');
+      const plan=paymentFields.flatMap((f)=>{
+        const raw=String(fd.get(f.name)||'').trim();
+        if(!raw)return [];
+        const percentage=Number(raw);
+        if(!Number.isFinite(percentage)||percentage<0||percentage>100)throw new Error('Chaque échéance doit être comprise entre 0 et 100 %.');
+        return [{label:f.label,percentage}];
+      });
+      const planTotal=plan.reduce((s:any,p:any)=>s+p.percentage,0);
+      if(plan.length&&Math.abs(planTotal-100)>0.5)throw new Error('Le plan de paiement doit totaliser 100 % (actuellement '+planTotal.toFixed(1)+' %).');
+      const usingOffer=Boolean(importedReference&&prefillProjectId===selected.id);
       const {error}=await supabase.from('project_units').insert({
         project_id:selected.id,
         external_id:String(fd.get('external_id')||'').trim()||null,
@@ -132,11 +171,18 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
         cash_price:Number(fd.get('cash_price')||0)||null,
         installment_price:Number(fd.get('installment_price')||0)||null,
         entry_capital:Number(fd.get('entry_capital')||0)||null,
-        status:String(fd.get('status')||'available'),
-        last_verified_at:new Date().toISOString(),
+        status,
+        payment_plan:plan,
+        metadata:usingOffer?{
+          import_candidate_id:importedReference.id,
+          source_offer_reference:true,
+          source_offer_requires_verification:true,
+          availability_source:status==='unverified'?'unknown':'manual',
+        }:{availability_source:status==='unverified'?'unknown':'manual'},
+        last_verified_at:status==='unverified'?null:new Date().toISOString(),
         created_by:user?.id||null,updated_by:user?.id||null,
       });
-      if(error)throw error;e.currentTarget.reset();setMessage('Unité ajoutée.');await reload();
+      if(error)throw error;e.currentTarget.reset();setPrefillProjectId('');setMessage(status==='unverified'?'Unité enregistrée à vérifier, sans confirmation de disponibilité.':'Unité ajoutée. Disponibilité saisie manuellement, à maintenir à jour.');await reload();
     }catch(e:any){setMessage(e?.message||'Création impossible.');}
     finally{setBusy(false);}
   }
@@ -256,31 +302,48 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
 
           <details className="border border-[#d9e1e8] bg-white" open={selectedUnits.length===0}>
             <summary className="cursor-pointer px-5 py-4 text-sm font-semibold">+ Ajouter une unité</summary>
-            <form onSubmit={createUnit} className="grid gap-3 border-t border-[#e7edf2] p-5 md:grid-cols-4">
+            <div className="border-t border-[#e7edf2] bg-[#f5f8fa] px-5 py-4 text-xs leading-6 text-[#526272]">
+              {importedReference?<>
+                <strong>Annonce API retrouvée :</strong> des données de typologie, surface, prix indicatif et échéancier peuvent être proposées.
+                Elles ne constituent pas une liste d'unités disponibles certifiée par le promoteur.
+                <button type="button" onClick={()=>setPrefillProjectId(prefillEnabled?'':selected.id)} className="ml-3 border border-[#315d7c] px-3 py-2 font-semibold text-[#12304a]">
+                  {prefillEnabled?'Effacer les suggestions':'Préremplir depuis l’annonce importée'}
+                </button>
+                {importedReference.source_url?<a href={importedReference.source_url} target="_blank" rel="noopener noreferrer" className="ml-3 underline">Voir la source</a>:null}
+              </>:<>Aucune annonce API associée à ce projet. Les informations de chaque unité doivent être saisies et vérifiées manuellement.</>}
+            </div>
+            <form key={selected.id+'-'+(prefillEnabled?'offer':'manual')} onSubmit={createUnit} className="grid gap-3 border-t border-[#e7edf2] p-5 md:grid-cols-4">
+              {prefillEnabled?<p className="md:col-span-4 text-xs text-[#9a6927]">Préremplissage indicatif issu d'une annonce. Vérifiez le numéro, le lot précis, le prix, les surfaces, l'échéancier et la disponibilité avant de faire une offre.</p>:null}
               <label className={label}>N° unité<input name="unit_number" className={input}/></label>
               <label className={label}>Réf. externe<input name="external_id" className={input}/></label>
               <label className={label}>Bloc / bâtiment<input name="building" className={input}/></label>
               <label className={label}>Étage<input name="floor" className={input}/></label>
               <label className={label}>Typologie<input name="unit_type" placeholder="2+1, 2BR…" className={input}/></label>
-              <label className={label}>Chambres<input name="bedrooms" inputMode="numeric" className={input}/></label>
-              <label className={label}>SDB<input name="bathrooms" inputMode="numeric" className={input}/></label>
+              <label className={label}>Chambres<input name="bedrooms" type="number" min="0" defaultValue={Number.isInteger(offerBedrooms)&&offerBedrooms>=0?offerBedrooms:''} className={input}/></label>
+              <label className={label}>SDB<input name="bathrooms" type="number" min="0" defaultValue={Number.isInteger(offerBathrooms)&&offerBathrooms>=0?offerBathrooms:''} className={input}/></label>
               <label className={label}>Vue<input name="view" className={input}/></label>
-              <label className={label}>Surface brute<input name="gross_area_m2" inputMode="decimal" className={input}/></label>
+              <label className={label}>Surface brute (m², à confirmer)<input name="gross_area_m2" inputMode="decimal" defaultValue={offerArea||''} className={input}/></label>
               <label className={label}>Surface nette<input name="net_area_m2" inputMode="decimal" className={input}/></label>
               <label className={label}>Devise<select name="currency" defaultValue={selected.currency} className={input}><option>EUR</option><option>USD</option><option>AED</option><option>TRY</option><option>GBP</option></select></label>
-              <label className={label}>Prix catalogue<input name="list_price" inputMode="decimal" className={input}/></label>
+              <label className={label}>Prix annoncé (non vérifié)<input name="list_price" inputMode="decimal" defaultValue={offerPrice||''} className={input}/></label>
               <label className={label}>Prix cash<input name="cash_price" inputMode="decimal" className={input}/></label>
               <label className={label}>Prix échéancé<input name="installment_price" inputMode="decimal" className={input}/></label>
               <label className={label}>Capital d'entrée<input name="entry_capital" inputMode="decimal" className={input}/></label>
-              <label className={label}>Statut<select name="status" className={input}><option value="available">Disponible</option><option value="option">Option</option><option value="reserved">Réservée</option><option value="deposit_received">Acompte reçu</option><option value="contracted">Contractée</option><option value="sold">Vendue</option></select></label>
-              <button disabled={busy} className="min-h-[42px] bg-[#12304a] px-4 text-sm font-semibold text-white md:col-span-4"><Plus size={14} className="mr-2 inline"/>Ajouter l'unité</button>
+              <label className={label}>Statut réel<select name="status" defaultValue="unverified" className={input}><option value="unverified">À vérifier — non confirmée</option><option value="available">Disponible — confirmé manuellement</option><option value="option">Option</option><option value="reserved">Réservée</option><option value="deposit_received">Acompte reçu</option><option value="contracted">Contractée</option><option value="sold">Vendue</option><option value="withdrawn">Retirée</option></select></label>
+              <div className="md:col-span-4 border-t border-[#e7edf2] pt-4">
+                <p className="text-sm font-semibold text-[#12304a]">Plan de paiement de l'unité</p>
+                <p className="mt-1 text-xs text-[#687685]">Échéancier indicatif ; confirmation écrite du promoteur requise. Laisser vide si inconnu. Si renseigné, les pourcentages doivent totaliser 100 %.</p>
+              </div>
+              {paymentFields.map((f)=><label key={f.key} className={label}>{f.label} (%)<input name={f.name} type="number" step="0.1" min="0" max="100" defaultValue={paymentBreakdown?.[f.key]??''} className={input}/></label>)}
+              <p className="md:col-span-4 text-xs leading-5 text-[#687685]">Un projet et une annonce API ne garantissent pas le stock réel. Le statut « À vérifier » n'est pas compté comme disponible.</p>
+              <button disabled={busy} className="min-h-[42px] bg-[#12304a] px-4 text-sm font-semibold text-white md:col-span-4"><Plus size={14} className="mr-2 inline"/>Enregistrer l'unité</button>
             </form>
           </details>
 
           <div className="overflow-x-auto border border-[#d9e1e8] bg-white">
             <table className="w-full min-w-[950px] text-left text-sm">
               <thead className="border-b border-[#d9e1e8] bg-[#f7f9fb] text-[0.65rem] uppercase tracking-[0.08em] text-[#687685]"><tr><th className="p-3">Unité</th><th className="p-3">Étage</th><th className="p-3">Surface</th><th className="p-3">Vue</th><th className="p-3">Prix</th><th className="p-3">Entrée</th><th className="p-3">Statut</th></tr></thead>
-              <tbody>{selectedUnits.map((u:any)=><tr key={u.id} className="border-b border-[#edf1f4]"><td className="p-3"><strong>{unitLabel(u)}</strong><span className="mt-1 block text-xs text-[#7b8794]">{u.external_id||'—'}</span></td><td className="p-3">{u.floor||'—'}</td><td className="p-3">{u.gross_area_m2?String(u.gross_area_m2)+' m²':'—'}</td><td className="p-3">{u.view||'—'}</td><td className="p-3 font-semibold">{money(u.list_price,u.currency)}</td><td className="p-3">{money(u.entry_capital,u.currency)}</td><td className="p-3"><select value={u.status} onChange={e=>updateUnitStatus(u.id,e.target.value)} className="min-h-[36px] border border-[#cfd8e3] bg-white px-2 text-xs"><option value="available">Disponible</option><option value="option">Option</option><option value="reserved">Réservée</option><option value="deposit_received">Acompte reçu</option><option value="contracted">Contractée</option><option value="sold">Vendue</option><option value="withdrawn">Retirée</option></select></td></tr>)}</tbody>
+              <tbody>{selectedUnits.map((u:any)=><tr key={u.id} className="border-b border-[#edf1f4]"><td className="p-3"><strong>{unitLabel(u)}</strong><span className="mt-1 block text-xs text-[#7b8794]">{u.external_id||'—'}</span></td><td className="p-3">{u.floor||'—'}</td><td className="p-3">{u.gross_area_m2?String(u.gross_area_m2)+' m²':'—'}</td><td className="p-3">{u.view||'—'}</td><td className="p-3 font-semibold">{money(u.list_price,u.currency)}</td><td className="p-3">{money(u.entry_capital,u.currency)}</td><td className="p-3"><select value={u.status} onChange={e=>updateUnitStatus(u.id,e.target.value)} className="min-h-[36px] border border-[#cfd8e3] bg-white px-2 text-xs"><option value="unverified">À vérifier</option><option value="available">Disponible</option><option value="option">Option</option><option value="reserved">Réservée</option><option value="deposit_received">Acompte reçu</option><option value="contracted">Contractée</option><option value="sold">Vendue</option><option value="withdrawn">Retirée</option></select></td></tr>)}</tbody>
             </table>
             {!selectedUnits.length?<p className="p-8 text-center text-sm text-[#687685]">Aucune unité. Ajoutez le stock de ce projet.</p>:null}
           </div>
