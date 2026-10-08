@@ -44,6 +44,8 @@ function mapRow(row: PropertyRow): PropertyListing {
     publicListingId: row.id,
     projectPriceMax: row.project_price_max === null || row.project_price_max === undefined ? undefined : Number(row.project_price_max),
     projectUnitOptions: Array.isArray(row.project_unit_options) ? row.project_unit_options : [],
+    projectLatitude: row.project_latitude === null || row.project_latitude === undefined ? undefined : Number(row.project_latitude),
+    projectLongitude: row.project_longitude === null || row.project_longitude === undefined ? undefined : Number(row.project_longitude),
     published: Boolean(row.published),
     featured: Boolean(row.featured),
     status: row.status,
