@@ -1,7 +1,7 @@
 // @ts-nocheck
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { AlertTriangle, CheckCircle2, ChevronRight, Eye, FileClock, Globe2, Image as ImageIcon, Pencil, Plus, Search, Store, Trash2, XCircle } from 'lucide-react';
 import { getPortalSupabase } from '@/lib/portalSupabase';
 import { AdminListingEditor } from '@/components/AdminListingEditor';
@@ -108,6 +108,13 @@ export function ProfessionalListingsPanel({
   const supabase=getPortalSupabase();
   const [mode,setMode]=useState<'inventory'|'submissions'>('inventory');
   const [selectedId,setSelectedId]=useState<string|null>(null);
+  useEffect(()=>{
+    if(typeof window==='undefined')return;
+    const listingId=new URLSearchParams(window.location.search).get('listing');
+    if(listingId&&listings.some((row:any)=>row.id===listingId)){
+      setMode('inventory');setSelectedId(listingId);
+    }
+  },[listings]);
   const [selectedSubmissionId,setSelectedSubmissionId]=useState<string|null>(null);
   const [search,setSearch]=useState('');
   const [filter,setFilter]=useState('all');
@@ -161,8 +168,26 @@ export function ProfessionalListingsPanel({
   }
 
   async function togglePublish(item:any){
+    if(!isAdmin)return;
     const next=!item.published;
-    const {error}=await supabase.from('property_listings').update({published:next,published_at:next?new Date().toISOString():null}).eq('id',item.id);
+    if(next&&item.real_estate_project_id){
+      if(!(Array.isArray(item.images)&&item.images.length)&&!item.hero_image){
+        alert('Ajoutez au moins une photo dont Bosphoras détient le droit de publication.');
+        return;
+      }
+      if(!item.title?.fr||!item.city_name){
+        alert('Complétez le titre et la ville du programme avant publication.');
+        return;
+      }
+      if(!window.confirm('Publier ce PROGRAMME immobilier après vérification des droits des photos, prix et conditions ? Les typologies sont indicatives et les disponibilités restent sur demande.'))return;
+    }
+    const update:any={published:next,published_at:next?new Date().toISOString():null};
+    if(next&&item.real_estate_project_id){
+      update.review_status='approved';
+      update.approved_by=user.id;
+      update.approved_at=new Date().toISOString();
+    }
+    const {error}=await supabase.from('property_listings').update(update).eq('id',item.id);
     if(error)alert(error.message);else reload();
   }
 
