@@ -47,6 +47,73 @@ function verifiedAreaM2(payload:any){
   if(['sqft','sq.ft','ft2','ft²','square feet'].includes(unit))return Number((n*0.09290304).toFixed(2));
   return null; // An unlabeled area is unsafe to import into a square-meter field.
 }
+function projectSlug(value:string){
+  return value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,82)||'programme';
+}
+function localizedText(value:string){
+  return {fr:value,en:value,ru:value,ar:value};
+}
+function draftPaymentPlan(project:any,payload:any){
+  if(Array.isArray(project?.payment_plan)&&project.payment_plan.length) {
+    return project.payment_plan.every((step:any)=>step?.label&&typeof step.label==='object')
+      ? project.payment_plan : [];
+  }
+  const summary=bayutPlanBreakdown(payload);
+  if(!summary)return [];
+  const parts=[
+    ['downPaymentPercentage','Acompte','Down payment','Первый взнос','دفعة أولى'],
+    ['preHandoverPercentage','Avant livraison','Before handover','До сдачи','قبل التسليم'],
+    ['handoverPercentage','À la livraison','On handover','При сдаче','عند التسليم'],
+    ['postHandoverPercentage','Après livraison','After handover','После сдачи','بعد التسليم']
+  ];
+  const steps=parts.flatMap(([key,fr,en,ru,ar])=>{
+    const pct=Number(summary[key]);
+    return Number.isFinite(pct)&&pct>0&&pct<=100?[{
+      label:{fr,en,ru,ar},
+      percentage:pct,
+      due:{fr:'À confirmer',en:'To confirm',ru:'Уточняется',ar:'يُؤكد لاحقًا'}
+    }]:[];
+  });
+  return Math.abs(steps.reduce((sum:number,x:any)=>sum+x.percentage,0)-100)<0.5?steps:[];
+}
+function optionsForProject(project:any,projectUnits:any[],source:any){
+  const candidates=projectUnits.filter((unit:any)=>['available','unverified'].includes(unit.status)).map((unit:any)=>{
+    const bedrooms=unit.bedrooms===null||unit.bedrooms===undefined?undefined:Number(unit.bedrooms);
+    const areaM2=positiveNumber(unit.gross_area_m2)||undefined;
+    const price=positiveNumber(unit.list_price)||undefined;
+    return {
+      label:String(unit.unit_type|| (bedrooms===0?'Studio':bedrooms!==undefined?bedrooms+' BR':'Typologie sur demande')),
+      ...(bedrooms!==undefined?{bedrooms}:{}),
+      ...(unit.bathrooms!=null?{bathrooms:Number(unit.bathrooms)}:{}),
+      ...(areaM2?{areaM2}:{}),
+      ...(price?{price}:{}),
+      currency:unit.currency||project.currency,
+      availability:unit.status==='available'&&unit.last_verified_at?'confirmed':'on_request',
+      source:'unit',
+    };
+  });
+  const sourceBedrooms=source?.rooms===null||source?.rooms===undefined?null:Number(source.rooms);
+  const sourceBathrooms=source?.baths===null||source?.baths===undefined?null:Number(source.baths);
+  if(Number.isInteger(sourceBedrooms)&&sourceBedrooms>=0&&sourceBedrooms<=15){
+    candidates.push({
+      label:sourceBedrooms===0?'Studio':sourceBedrooms+' BR',
+      bedrooms:sourceBedrooms,
+      ...(Number.isInteger(sourceBathrooms)&&sourceBathrooms>=0?{bathrooms:sourceBathrooms}:{}),
+      // The source area lacks a reliable unit label. Do not treat it as m².
+      ...(positiveNumber(source.price)?{price:positiveNumber(source.price)}:{}),
+      currency:project.currency,
+      availability:'on_request',
+      source:'source_offer',
+    });
+  }
+  const seen=new Set<string>();
+  return candidates.filter((unit:any)=>{
+    const key=[unit.label,unit.price||'',unit.areaM2||'',unit.availability].join('|');
+    if(seen.has(key))return false;
+    seen.add(key);
+    return true;
+  }).slice(0,16);
+}
 function bayutPlanBreakdown(payload:any){
   const summaries=Array.isArray(payload?.paymentPlanSummaries)?payload.paymentPlanSummaries:[];
   return summaries.find((s:any)=>s?.breakdown&&typeof s.breakdown==='object')?.breakdown||null;
@@ -64,6 +131,8 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   const [units,setUnits]=useState<any[]>([]);
   const [history,setHistory]=useState<any[]>([]);
   const [apiReferences,setApiReferences]=useState<any[]>([]);
+  const [publicProjects,setPublicProjects]=useState<any[]>([]);
+  const [projectLeads,setProjectLeads]=useState<any[]>([]);
   const [prefillProjectId,setPrefillProjectId]=useState('');
   const [editingUnitId,setEditingUnitId]=useState('');
   const [editPrefillUnitId,setEditPrefillUnitId]=useState('');
@@ -78,7 +147,7 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
     setBusy(true);
     if(clearMessage)setMessage('');
     try{
-      const [d,p,u,h,c]=await Promise.all([
+      const [d,p,u,h,c,l,i]=await Promise.all([
         supabase.from('developers').select('*').order('name'),
         supabase.from('real_estate_projects').select('*').order('updated_at',{ascending:false}),
         supabase.from('project_units').select('*').order('updated_at',{ascending:false}),
@@ -86,10 +155,18 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
         isAdmin?supabase.from('project_import_candidates')
           .select('id,imported_project_id,source_system,source_external_id,source_url,source_payload,currency')
           .eq('review_status','imported').limit(300):Promise.resolve({data:[],error:null}),
+        isAdmin?supabase.from('property_listings')
+          .select('id,real_estate_project_id,published,review_status,slug_fr,country_code')
+          .not('real_estate_project_id','is',null).is('deleted_at',null).limit(1000):Promise.resolve({data:[],error:null}),
+        isAdmin?supabase.from('project_inquiries')
+          .select('id,project_id,full_name,email,phone,budget,wants_similar_options,created_at')
+          .order('created_at',{ascending:false}).limit(100):Promise.resolve({data:[],error:null}),
       ]);
       if(d.error)throw d.error;if(p.error)throw p.error;if(u.error)throw u.error;if(h.error)throw h.error;
       setDevelopers(d.data||[]);setProjects(p.data||[]);setUnits(u.data||[]);setHistory(h.data||[]);
       if(c.error){setApiReferences([]);}else setApiReferences(c.data||[]);
+      setPublicProjects(l.error?[]:(l.data||[]));
+      setProjectLeads(i.error?[]:(i.data||[]));
       if(!selectedProjectId&&p.data?.[0]?.id)setSelectedProjectId(p.data[0].id);
     }catch(e:any){setMessage(e?.message||'Chargement impossible.');}
     finally{setBusy(false);}
@@ -105,6 +182,8 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   }),[projects,query,status,developerById]);
   const selected=projects.find((p:any)=>p.id===selectedProjectId)||filtered[0]||null;
   const selectedUnits=selected?units.filter((u:any)=>u.project_id===selected.id):[];
+  const publicProject=selected?publicProjects.find((l:any)=>l.real_estate_project_id===selected.id):null;
+  const selectedLeads=selected?projectLeads.filter((lead:any)=>lead.project_id===selected.id):[];
   const importedReference=selected?apiReferences.find((c:any)=>c.imported_project_id===selected.id):null;
   const prefillEnabled=Boolean(selected&&importedReference&&prefillProjectId===selected.id);
   const offer=prefillEnabled?importedReference.source_payload||{}:{};
@@ -117,6 +196,76 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   const editingWithOffer=Boolean(editingUnit&&editPrefillUnitId===editingUnitId&&importedReference);
   const editOffer=editingWithOffer?importedReference.source_payload||{}:{};
   const editBreakdown=bayutPlanBreakdown(editOffer);
+
+  async function createPublicationDraft(){
+    if(!isAdmin||!selected||busy)return;
+    setBusy(true);setMessage('');
+    try{
+      if(publicProject)throw new Error('Une fiche publique existe déjà pour ce programme. Ouvre-la dans Publications.');
+      const project=selected;
+      const source=importedReference?.source_payload||{};
+      const imageUrls=Array.from(new Set(
+        [...(Array.isArray(project.images)?project.images:[]),project.hero_image].filter((u:any)=>typeof u==='string'&&/^https?:\/\//i.test(u))
+      )).slice(0,18);
+      const name=String(project.name||'').trim();
+      const city=String(project.city||'').trim();
+      if(!name||!city)throw new Error('Renseigne le nom et la ville du projet avant de préparer sa fiche.');
+      const slug=projectSlug(name)+'-'+project.id.slice(0,8);
+      const projectDescription=project.description&&typeof project.description==='object'?project.description:{};
+      const summary={
+        fr:'Programme immobilier à '+city+'. Prix indicatifs et typologies à découvrir. Disponibilités et conditions sous réserve de confirmation.',
+        en:'Property development in '+city+'. Indicative prices and unit types. Availability and terms subject to confirmation.',
+        ru:'Жилой проект в городе '+city+'. Ориентировочные цены и типы квартир. Наличие и условия уточняются.',
+        ar:'مشروع عقاري في '+city+'. أسعار وأنواع وحدات إرشادية. التوافر والشروط تتطلب التأكيد.'
+      };
+      const plan=draftPaymentPlan(project,source);
+      const opts=optionsForProject(project,selectedUnits,source);
+      const note={
+        fr:'Échéancier communiqué par la source : indicatif, non contractuel. Conditions et dates à confirmer auprès du promoteur.',
+        en:'Payment schedule from the source is indicative and non-contractual. Confirm terms and dates with the developer.',
+        ru:'График платежей из источника носит ориентировочный характер. Условия и даты уточняются у застройщика.',
+        ar:'جدول الدفع من المصدر إرشادي وغير تعاقدي. يرجى تأكيد الشروط والتواريخ مع المطور.'
+      };
+      const data:any={
+        external_id:'PRJ-'+project.id.replace(/-/g,'').slice(0,18).toUpperCase(),
+        real_estate_project_id:project.id,
+        published:false,featured:false,review_status:'draft',status:'private',
+        collection:'selected-investment',transaction_type:'sale',property_type:'residence',
+        country_code:project.country_code||'TR',
+        country_name:project.country_name||(project.country_code==='AE'?'United Arab Emirates':'Turkey'),
+        city:projectSlug(city),city_name:city,district:project.district||null,
+        slug_fr:slug,slug_en:slug,slug_ru:slug,slug_ar:slug,
+        title:localizedText(name),summary,
+        description:{
+          fr:projectDescription.fr||'',en:projectDescription.en||'',
+          ru:projectDescription.ru||'',ar:projectDescription.ar||''
+        },
+        seo_title:localizedText(name+' | Bosphoras'),
+        seo_description:summary,
+        currency:project.currency||'EUR',
+        total_price:positiveNumber(project.price_min),
+        project_price_max:positiveNumber(project.price_max),
+        price_on_request:!positiveNumber(project.price_min),
+        entry_capital:positiveNumber(project.entry_capital_min),
+        delivery:project.handover_text?localizedText(project.handover_text):project.completion_date?localizedText(String(project.completion_date)):null,
+        developer:developerById[project.developer_id]?.name||null,
+        payment_plan:plan,payment_plan_enabled:Boolean(plan.length),payment_interest_mode:'not_specified',
+        payment_notes:plan.length?note:null,
+        images:imageUrls,hero_image:imageUrls[0]||null,
+        project_unit_options:opts,
+        source_url:project.source_url||importedReference?.source_url||null,
+        source_host:project.source_system||null,
+        source_partner_name:developerById[project.developer_id]?.name||null,
+        partner_id:project.partner_id||null,
+        created_by:user?.id||null
+      };
+      const {error}=await supabase.from('property_listings').insert(data);
+      if(error)throw error;
+      await reload({clearMessage:false});
+      setMessage('Fiche publique créée en BROUILLON (non visible). Ouvre Publications, vérifie les droits des photos, les descriptions, les prix et les conditions puis publie.');
+    }catch(error:any){setMessage(error?.message||'Impossible de préparer le programme.');}
+    finally{setBusy(false);}
+  }
 
   async function createDeveloper(e:FormEvent<HTMLFormElement>){
     e.preventDefault();setBusy(true);setMessage('');
@@ -300,8 +449,8 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
 
     {message?<div role="status" aria-live="polite" className="border border-[#d9e1e8] bg-white px-4 py-3 text-sm">{message}</div>:null}
     <div className="flex flex-wrap items-center justify-between gap-3 border border-[#b9cbd8] bg-[#f4f8fb] p-4 text-sm">
-      <p className="max-w-3xl text-[#31536d]"><strong>Stock privé ≠ publication :</strong> « Ajouter une unité » enregistre uniquement un lot dans l'inventaire interne. Pour publier sur le site, il faut créer et approuver une annonce dans l'onglet Publications.</p>
-      {isAdmin?<a href="/espace?tab=listings" className="inline-flex min-h-[40px] items-center justify-center bg-[#12304a] px-4 text-xs font-semibold text-white">Ouvrir les publications</a>:null}
+      <p className="max-w-3xl text-[#31536d]"><strong>Programmes Turquie & Dubaï :</strong> crée une seule fiche publique par programme. Elle présente les photos, prix min–max, typologies et paiements. Les unités restent des données de suivi interne, et les clients demandent les disponibilités. Les annonces de biens individuels sont gérées séparément.</p>
+      {isAdmin?<a href="/espace?tab=listings" className="inline-flex min-h-[40px] items-center justify-center bg-[#12304a] px-4 text-xs font-semibold text-white">Gérer les publications</a>:null}
     </div>
 
     {isAdmin?<AdminProjectImporter user={user} profile={profile} isAdmin={isAdmin} partners={partners} developers={developers} onSaved={reload}/>:null}
@@ -379,9 +528,23 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
             </div>
             <div className="mt-5 flex flex-wrap gap-2">
               {['prelaunch','available','limited','sold_out','closed'].map(s=><button key={s} onClick={()=>updateProjectStatus(selected.id,s)} disabled={busy} className={'border px-3 py-2 text-xs font-semibold '+(selected.sales_status===s?'border-white bg-white text-[#132538]':'border-white/20 text-white')}>{s}</button>)}
-              <button onClick={reload} className="ml-auto inline-flex items-center gap-2 border border-white/20 px-3 py-2 text-xs"><RefreshCw size={13} className={busy?'animate-spin':''}/>Actualiser</button>
+              <button onClick={()=>reload()} className="ml-auto inline-flex items-center gap-2 border border-white/20 px-3 py-2 text-xs"><RefreshCw size={13} className={busy?'animate-spin':''}/>Actualiser</button>
             </div>
           </div>
+          {isAdmin?<div className="border border-[#d9e1e8] bg-[#f8fafb] p-5">
+            <div className="flex flex-wrap items-start justify-between gap-4">
+              <div className="max-w-2xl">
+                <h3 className="text-lg font-semibold text-[#12304a]">Publication du programme</h3>
+                <p className="mt-1 text-xs leading-6 text-[#687685]">Une seule annonce par projet pour la Turquie et Dubaï. Les photos, fourchettes de prix et typologies sont préparées dans une fiche non publiée. Les leads rejoignent le CRM après la demande du visiteur.</p>
+                {publicProject?<span className="mt-3 inline-block text-xs font-semibold text-[#315d7c]">{publicProject.published?'En ligne':'Brouillon / hors ligne'}</span>:null}
+              </div>
+              {publicProject?<a href={'/espace?tab=listings&listing='+publicProject.id} className="inline-flex min-h-[42px] items-center justify-center bg-[#12304a] px-4 text-xs font-semibold text-white">Ouvrir / publier la fiche</a>:<button onClick={createPublicationDraft} disabled={busy} className="min-h-[42px] bg-[#12304a] px-4 text-xs font-semibold text-white disabled:opacity-50">Préparer la fiche du programme</button>}
+            </div>
+            <p className="mt-3 text-xs text-[#9b6d33]">Avant publication : vérifier les droits d’utilisation des photos API, l’exactitude des prix, le promoteur et l’échéancier. Disponibilités jamais garanties par l’import.</p>
+            {selectedLeads.length?<div className="mt-5 border-t border-[#d9e1e8] pt-4"><strong className="text-sm text-[#12304a]">{selectedLeads.length} demande(s) de renseignements pour ce projet</strong>
+              <div className="mt-3 grid gap-2">{selectedLeads.slice(0,5).map((lead:any)=><div key={lead.id} className="flex flex-wrap items-center justify-between gap-2 border border-[#e2e7eb] bg-white px-3 py-2 text-xs"><span>{lead.full_name} · {lead.email} · {lead.budget||'Budget non précisé'}</span><span className="text-[#597463]">{lead.wants_similar_options?'Alternatives acceptées':'Projet uniquement'}</span></div>)}</div>
+            </div>:null}
+          </div>:null}
 
           <details className="border border-[#d9e1e8] bg-white" open={selectedUnits.length===0}>
             <summary className="cursor-pointer px-5 py-4 text-sm font-semibold">+ Ajouter une unité</summary>
