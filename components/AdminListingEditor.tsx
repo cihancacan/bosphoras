@@ -56,6 +56,7 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
       ru:listing.payment_notes?.ru||'',
       ar:listing.payment_notes?.ar||'',
     },
+    highlights_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.highlights||[],l)])),
     strengths_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.strengths||[],l)])),
     technical_notes_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.technical_notes||[],l)])),
     watchpoints_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.watchpoints||[],l)])),
@@ -181,6 +182,8 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
           throw new Error('Complète la description française et la ville.');
         if(!window.confirm('Confirmer la publication du programme après vérification des photos, prix et typologies ?')){setBusy(false);return;}
       }
+      if(draft.real_estate_project_id&&Number(draft.project_price_max)>0&&Number(draft.project_price_max)<Number(draft.total_price||0))
+        throw new Error('Le prix maximum du programme doit être supérieur ou égal au prix minimum.');
       const update={
         published:Boolean(draft.published),
         featured:Boolean(draft.featured),
@@ -234,6 +237,7 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
         cash_price:Number(draft.cash_price)||null,
         installment_price:Number(draft.installment_price)||null,
         payment_notes:draft.payment_notes,
+        highlights:linesToLocalized(draft.highlights_text),
         strengths:linesToLocalized(draft.strengths_text),
         technical_notes:linesToLocalized(draft.technical_notes_text),
         watchpoints:linesToLocalized(draft.watchpoints_text),
@@ -482,6 +486,7 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
 
     <section className="grid gap-5 lg:grid-cols-3">
       {[
+        ['Équipements & caractéristiques du programme','highlights_text'],
         ['Pourquoi Bosphoras le sélectionne','strengths_text'],
         ['Bosphoras Technical Notes','technical_notes_text'],
         ['Points de vigilance','watchpoints_text'],
