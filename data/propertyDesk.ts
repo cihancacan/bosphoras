@@ -15,7 +15,21 @@ export interface PropertyPaymentStep {
   due: LocalizedText;
 }
 
+export interface ProjectUnitOption {
+  label: string;
+  bedrooms?: number;
+  bathrooms?: number;
+  areaM2?: number;
+  price?: number;
+  currency?: string;
+  availability: 'confirmed' | 'on_request';
+  source: 'unit' | 'source_offer';
+}
+
 export interface PropertyListing {
+  projectId?: string;
+  projectPriceMax?: number;
+  projectUnitOptions?: ProjectUnitOption[];
   id: string;
   published: boolean;
   featured?: boolean;
@@ -110,14 +124,17 @@ export function formatPropertyPrice(property: PropertyListing, locale: Locale): 
       : 'السعر عند الطلب';
   }
 
-  return new Intl.NumberFormat(
+  const format = (value:number) => new Intl.NumberFormat(
     locale === 'fr' ? 'fr-FR' : locale === 'ru' ? 'ru-RU' : locale === 'ar' ? 'ar' : 'en-GB',
-    {
-      style: 'currency',
-      currency: property.currency,
-      maximumFractionDigits: 0,
-    }
-  ).format(property.totalPrice);
+    { style: 'currency', currency: property.currency, maximumFractionDigits: 0 }
+  ).format(value);
+  const fromLabel = locale === 'fr' ? 'À partir de ' : locale === 'en' ? 'From ' : locale === 'ru' ? 'От ' : 'ابتداءً من ';
+  if(property.projectId) {
+    const low=property.totalPrice;
+    const high=property.projectPriceMax;
+    return high && high>low ? format(low)+' – '+format(high) : fromLabel + format(low);
+  }
+  return format(property.totalPrice);
 }
 
 export function formatEntryCapital(property: PropertyListing, locale: Locale): string | null {
