@@ -8,6 +8,21 @@ const anonKey=process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY||'sb_publishable_yQPc71r
 const host='uae-real-estate3.p.rapidapi.com';
 const isUUID=(s:string)=>/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(s);
 const t=(value:any)=>typeof value==='string'?value.trim():'';
+const objectKeys=(value:any)=>value&&typeof value==='object'&&!Array.isArray(value)?Object.keys(value).slice(0,28):[];
+function apiDiagnostics(raw:any,details:any){
+  return {
+    topLevelKeys:objectKeys(raw),
+    dataKeys:objectKeys(raw?.data),
+    detailKeys:objectKeys(details),
+    dataKind:Array.isArray(raw?.data)?'array':typeof raw?.data,
+    hasSuccessFlag:typeof raw?.success==='boolean'?raw.success:null,
+    // Only structure is stored: no descriptions, phone numbers, URLs or contact details.
+    detailsPhotosType:typeof details?.photos,
+    detailsGalleryType:typeof details?.gallery,
+    detailsMediaType:typeof details?.media,
+    sourceIdType:'search-new-projects'
+  };
+}
 
 async function admin(request:NextRequest){
  const authorization=request.headers.get('authorization')||'';
@@ -32,10 +47,17 @@ function mediaUrl(input:any):string|null{
 }
 function photoList(data:any){
  const images:any[]=[];
- const raw=[data?.photos,data?.images,data?.gallery,data?.photoGallery,data?.media?.photos];
+ const raw=[data?.photos,data?.images,data?.gallery,data?.photoGallery,
+    data?.media?.photos,data?.media?.images,data?.property?.photos,
+    data?.property?.images,data?.propertyDetails?.photos,
+    data?.images?.items,data?.photoGallery?.items];
  for(const items of raw){
   if(Array.isArray(items))images.push(...items);
-  else if(items&&typeof items==='object'&&Array.isArray(items.photos))images.push(...items.photos);
+  else if(items&&typeof items==='object') {
+    if(Array.isArray(items.photos))images.push(...items.photos);
+    else if(Array.isArray(items.items))images.push(...items.items);
+    else if(mediaUrl(items))images.push(items);
+  }
  }
  if(data?.coverPhoto)images.push(data.coverPhoto);
  const result:{url:string;title:string}[]=[];
@@ -49,7 +71,8 @@ function photoList(data:any){
  return result;
 }
 function floorplans(data:any){
- const candidates=[data?.floorPlans,data?.floorplans,data?.floorPlan,data?.floor_plans,data?.plans];
+ const candidates=[data?.floorPlans,data?.floorplans,data?.floorPlan,data?.floor_plans,data?.plans,
+    data?.floorPlans?.plans,data?.floorplans?.items,data?.property?.floorPlans];
  const result:{url:string;title:string}[]=[];
  const seen=new Set<string>();
  for(const entries of candidates){
@@ -90,6 +113,19 @@ export async function POST(request:NextRequest){
  if(existing.data?.listing_external_id===listingId&&age>=0&&age<24*60*60*1000){
   return NextResponse.json({ok:true,cached:true,photos:existing.data.photos?.length||0,floorplans:existing.data.floorplans?.length||0,message:'Résultat du jour déjà enregistré. Aucun appel RapidAPI supplémentaire.'});
  }
+ const previous=await scope.client.from('project_media_api_calls')
+   .select('result,requested_at,response_diagnostics').eq('project_id',projectId)
+   .eq('listing_external_id',listingId).eq('result','no_usable_details')
+   .order('requested_at',{ascending:false}).limit(1).maybeSingle();
+ if(previous.error)return NextResponse.json({error:'Impossible de vérifier les précédents appels Bayut.'},{status:503});
+ const lastEmpty=previous.data?.requested_at?Date.now()-new Date(previous.data.requested_at).getTime():Infinity;
+ if(lastEmpty>=0&&lastEmpty<24*60*60*1000){
+   return NextResponse.json({
+     error:'Bayut a déjà répondu HTTP 200 sans galerie exploitable pour ce projet. Nouvel appel bloqué pendant 24 h pour protéger ton quota. La recherche de programmes et les détails des annonces individuelles utilisent des identifiants différents. Ajoute les photos officielles autorisées manuellement.',
+     code:'NO_PROJECT_GALLERY',cached:true,
+     diagnostics:previous.data?.response_diagnostics||{},
+   },{status:409});
+ }
  const month=new Date();const monthStart=new Date(Date.UTC(month.getUTCFullYear(),month.getUTCMonth(),1)).toISOString();
  const calls=await scope.client.from('project_media_api_calls').select('id',{count:'exact',head:true}).gte('requested_at',monthStart);
  if(calls.error)return NextResponse.json({error:'Impossible de vérifier la limite mensuelle.'},{status:503});
@@ -109,21 +145,37 @@ export async function POST(request:NextRequest){
      const message=status===429?'Quota RapidAPI atteint.':status>=500?'Le fournisseur Bayut renvoie une erreur serveur.':'Bayut a refusé la demande de détails.';
      throw new Error(message+' (HTTP '+status+')');
    }
-   const details=raw?.data?.property||raw?.data?.listing||raw?.data||raw?.property||raw;
+   const details=raw?.data?.property||raw?.data?.listing||raw?.data?.details||
+     raw?.data?.propertyDetails||raw?.property||raw?.data||raw;
    if(!details||typeof details!=='object'||raw?.success===false)throw new Error('La réponse Bayut ne contient pas de détails exploitables.');
    // Never stage media from a different property returned by a mismatched identifier.
    const returnedId=t(details.externalID??String(details.externalId??''));
    if(returnedId&&returnedId!==listingId)throw new Error("L'annonce renvoyée ne correspond pas à la source du projet.");
    const photos=photoList(details);
    const plans=floorplans(details);
-   if(!photos.length&&!plans.length)throw new Error("L'annonce détaillée ne contient aucune photo ni aucun plan.");
+   const diagnostics=apiDiagnostics(raw,details);
+   if(!photos.length&&!plans.length){
+     // HTTP 200 is not evidence that a property-ID from the off-plan feed is supported.
+     // Save structural diagnostics without logging PII or the API token.
+     await scope.client.from('project_media_api_calls').update({
+       result:'no_usable_details',http_status:status,response_diagnostics:diagnostics,
+     }).eq('id',audit.data.id);
+     return NextResponse.json({
+       error:'La connexion à Bayut répond HTTP 200, mais cette annonce issue de /search-new-projects ne fournit pas de galerie dans /property-details. Les identifiants de projets ne sont pas garantis compatibles avec les détails des biens individuels. Aucun nouvel essai automatique.',
+       code:'NO_PROJECT_GALLERY',diagnostics,
+       fieldsAvailable:{
+         description:Boolean(description(details)),amenities:amenities(details).length,
+         geography:Boolean(details?.geography),paymentPlan:Boolean(details?.paymentPlans),
+       }
+     },{status:422});
+   }
    const staged=await scope.client.from('project_media_enrichments').upsert({
      project_id:projectId,candidate_id:candidate.id,listing_external_id:listingId,
      photos,floorplans:plans,source_description:description(details),amenities:amenities(details),
      fetched_at:new Date().toISOString(),fetched_by:scope.user.id
    },{onConflict:'project_id'});
    if(staged.error)throw new Error('Impossible de sauvegarder les images candidates dans le back-office.');
-   await scope.client.from('project_media_api_calls').update({result:'success',http_status:status}).eq('id',audit.data.id);
+   await scope.client.from('project_media_api_calls').update({result:'success',http_status:status,response_diagnostics:diagnostics}).eq('id',audit.data.id);
    return NextResponse.json({ok:true,cached:false,photos:photos.length,floorplans:plans.length,message:'Photos et plans récupérés pour validation privée. Aucune publication automatique.'});
  }catch(e:any){
    await scope.client.from('project_media_api_calls').update({result:'error',http_status:status}).eq('id',audit.data.id);
