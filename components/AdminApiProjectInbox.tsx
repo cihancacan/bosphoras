@@ -18,6 +18,37 @@ function when(value?:string|null){
   return Number.isNaN(d.getTime())?'—':d.toLocaleString('fr-FR',{dateStyle:'medium',timeStyle:'short'});
 }
 
+function candidateScore(candidate:any){
+  let score=0;
+  if(candidate.project_name)score+=10;
+  if(candidate.developer_name)score+=12;
+  if(candidate.city)score+=8;
+  if(candidate.district)score+=5;
+  if(Number(candidate.price_min)>0)score+=15;
+  if(Number(candidate.price_max)>0)score+=5;
+  if(candidate.handover_text||candidate.completion_date)score+=10;
+  if(candidate.source_external_id)score+=5;
+  if(candidate.source_url)score+=5;
+  const images=Array.isArray(candidate.images)?candidate.images:[];
+  if(images.length>=1)score+=5;
+  if(images.length>=3)score+=5;
+  const raw=candidate.source_payload||{};
+  const hasPaymentPlan=Boolean(
+    raw.paymentPlan||raw.payment_plan||raw.paymentPlans||raw.payment_plans||
+    raw.installments||raw.installmentPlan||raw.installment_plan
+  );
+  if(hasPaymentPlan)score+=10;
+  if(candidate.matched_project_id)score-=25;
+  return Math.max(0,Math.min(100,score));
+}
+
+function scoreLabel(score:number){
+  if(score>=80)return 'Très complet';
+  if(score>=65)return 'À examiner';
+  if(score>=45)return 'À enrichir';
+  return 'Faible donnée';
+}
+
 export function AdminApiProjectInbox({user,reload}:{user:any;reload?:()=>void}){
   const supabase=getPortalSupabase();
   const [candidates,setCandidates]=useState<any[]>([]);
@@ -158,7 +189,7 @@ export function AdminApiProjectInbox({user,reload}:{user:any;reload?:()=>void}){
   const visible=useMemo(()=>candidates.filter((c:any)=>
     (status==='all'||c.review_status===status) &&
     (sourceFilter==='all'||c.source_system===sourceFilter)
-  ),[candidates,status,sourceFilter]);
+  ).sort((a:any,b:any)=>candidateScore(b)-candidateScore(a)),[candidates,status,sourceFilter]);
 
   const counts=useMemo(()=>candidates.reduce((a:any,c:any)=>{a[c.review_status]=(a[c.review_status]||0)+1;return a;},{}),[candidates]);
 
@@ -174,7 +205,7 @@ export function AdminApiProjectInbox({user,reload}:{user:any;reload?:()=>void}){
 
   return <div className="space-y-6">
     <div className="border border-[#b9cbd8] bg-[#f7fbfd] p-5 text-sm leading-6 text-[#526272]">
-      <strong className="text-[#162334]">Règle Bosphoras :</strong> les API alimentent uniquement cette file privée. Un clic « Créer brouillon » crée un projet interne non publié ; la publication reste une étape séparée.
+      <strong className="text-[#162334]">Règle Bosphoras :</strong> les API alimentent uniquement cette file privée. Un clic « Créer brouillon » crée un projet interne non publié ; la publication reste une étape séparée. Le score Bosphoras ci-dessous mesure la complétude et l'exploitabilité des données importées, pas la qualité financière de l'investissement.
     </div>
 
     <div className="grid gap-5 lg:grid-cols-2">
@@ -198,7 +229,7 @@ export function AdminApiProjectInbox({user,reload}:{user:any;reload?:()=>void}){
         <div className="grid gap-5 lg:grid-cols-[190px_minmax(0,1fr)_250px]">
           <div>{c.hero_image?<img src={c.hero_image} alt="" className="aspect-[4/3] w-full object-cover"/>:<div className="flex aspect-[4/3] items-center justify-center bg-[#eef2f5] text-[0.62rem] uppercase tracking-[0.12em] text-[#8a949b]">Sans image</div>}</div>
           <div className="min-w-0">
-            <div className="flex flex-wrap items-center gap-2"><span className="bg-[#eef3f6] px-2 py-1 text-[0.6rem] font-bold uppercase text-[#315d7c]">{c.source_system}</span><span className="text-[0.62rem] uppercase text-[#7b8794]">{c.country_code} · {c.city||'Ville non renseignée'}{c.district?' · '+c.district:''}</span></div>
+            <div className="flex flex-wrap items-center gap-2"><span className="bg-[#eef3f6] px-2 py-1 text-[0.6rem] font-bold uppercase text-[#315d7c]">{c.source_system}</span><span className="text-[0.62rem] uppercase text-[#7b8794]">{c.country_code} · {c.city||'Ville non renseignée'}{c.district?' · '+c.district:''}</span><span className="bg-[#edf7f1] px-2 py-1 text-[0.6rem] font-bold uppercase text-[#2f6d59]">Score Bosphoras {candidateScore(c)}/100 · {scoreLabel(candidateScore(c))}</span></div>
             <h3 className="mt-2 text-2xl font-semibold tracking-[-0.02em]">{c.project_name}</h3>
             <p className="mt-1 text-sm text-[#687685]">{c.developer_name||'Promoteur à confirmer'}</p>
             <div className="mt-4 grid gap-3 sm:grid-cols-3"><div><span className="text-[0.62rem] uppercase text-[#7b8794]">Prix départ</span><strong className="mt-1 block">{money(c.price_min,c.currency||'EUR')}</strong></div><div><span className="text-[0.62rem] uppercase text-[#7b8794]">Livraison</span><strong className="mt-1 block">{c.handover_text||c.completion_date||'—'}</strong></div><div><span className="text-[0.62rem] uppercase text-[#7b8794]">Dernière vue</span><strong className="mt-1 block text-sm">{when(c.last_seen_at)}</strong></div></div>
