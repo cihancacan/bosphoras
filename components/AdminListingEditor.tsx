@@ -40,10 +40,6 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
     delivery:{fr:listing.delivery?.fr||'',en:listing.delivery?.en||'',ru:listing.delivery?.ru||'',ar:listing.delivery?.ar||''},
     images:Array.isArray(listing.images)?listing.images:[],
     payment_plan:Array.isArray(listing.payment_plan)?listing.payment_plan:[],
-    project_price_max:listing.project_price_max??'',
-    project_latitude:listing.project_latitude??'',
-    project_longitude:listing.project_longitude??'',
-    project_unit_options:Array.isArray(listing.project_unit_options)?listing.project_unit_options:[],
     payment_plan_enabled:listing.payment_plan_enabled !== false,
     payment_interest_mode:listing.payment_interest_mode || 'not_specified',
     payment_interest_rate:listing.payment_interest_rate ?? '',
@@ -56,7 +52,6 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
       ru:listing.payment_notes?.ru||'',
       ar:listing.payment_notes?.ar||'',
     },
-    highlights_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.highlights||[],l)])),
     strengths_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.strengths||[],l)])),
     technical_notes_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.technical_notes||[],l)])),
     watchpoints_text:Object.fromEntries(locales.map((l)=>[l,linesFromArray(listing.watchpoints||[],l)])),
@@ -176,14 +171,6 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
   async function save(){
     setBusy(true);setMessage('');
     try{
-      if(draft.real_estate_project_id&&draft.published&&!listing.published){
-        if(!draft.images?.length&&!draft.hero_image)throw new Error('Ajoute une photo autorisée avant publication.');
-        if(!String(draft.description?.fr||'').trim()||!String(draft.city_name||'').trim())
-          throw new Error('Complète la description française et la ville.');
-        if(!window.confirm('Confirmer la publication du programme après vérification des photos, prix et typologies ?')){setBusy(false);return;}
-      }
-      if(draft.real_estate_project_id&&Number(draft.project_price_max)>0&&Number(draft.project_price_max)<Number(draft.total_price||0))
-        throw new Error('Le prix maximum du programme doit être supérieur ou égal au prix minimum.');
       const update={
         published:Boolean(draft.published),
         featured:Boolean(draft.featured),
@@ -207,19 +194,6 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
         seo_description:draft.seo_description,
         currency:draft.currency,
         total_price:draft.price_on_request?null:Number(draft.total_price)||null,
-        project_price_max:draft.real_estate_project_id?(Number(draft.project_price_max)||null):null,
-        project_latitude:draft.real_estate_project_id&&draft.project_latitude!==''&&draft.project_latitude!==null?Number(draft.project_latitude):null,
-        project_longitude:draft.real_estate_project_id&&draft.project_longitude!==''&&draft.project_longitude!==null?Number(draft.project_longitude):null,
-        project_unit_options:draft.real_estate_project_id&&Array.isArray(draft.project_unit_options)?draft.project_unit_options.map((opt:any)=>({
-          label:String(opt.label||'Typologie à confirmer').slice(0,100),
-          bedrooms:opt.bedrooms===''||opt.bedrooms==null?undefined:Number(opt.bedrooms),
-          bathrooms:opt.bathrooms===''||opt.bathrooms==null?undefined:Number(opt.bathrooms),
-          areaM2:opt.areaM2===''||opt.areaM2==null?undefined:Number(opt.areaM2),
-          price:opt.price===''||opt.price==null?undefined:Number(opt.price),
-          currency:opt.currency||draft.currency,
-          availability:opt.availability==='confirmed'?'confirmed':'on_request',
-          source:'unit'
-        })).slice(0,16):[],
         price_on_request:Boolean(draft.price_on_request),
         entry_capital:Number(draft.entry_capital)||null,
         surface_m2:Number(draft.surface_m2)||null,
@@ -235,7 +209,6 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
         cash_price:Number(draft.cash_price)||null,
         installment_price:Number(draft.installment_price)||null,
         payment_notes:draft.payment_notes,
-        highlights:linesToLocalized(draft.highlights_text),
         strengths:linesToLocalized(draft.strengths_text),
         technical_notes:linesToLocalized(draft.technical_notes_text),
         watchpoints:linesToLocalized(draft.watchpoints_text),
@@ -347,34 +320,6 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
       {locales.map((l)=><label key={l} className={label}>Slug {l.toUpperCase()}<input value={draft[`slug_${l}`]||''} onChange={(e)=>setField(`slug_${l}`,e.target.value)} className={input}/></label>)}
     </section>
 
-    {draft.real_estate_project_id?<section className="border border-[#b9c7bf] bg-[#f6f9f6] p-5">
-      <p className="text-[0.68rem] font-semibold uppercase tracking-widest text-[#406a55]">Programme immobilier · Turquie & Dubaï</p>
-      <h3 className="mt-2 text-xl font-semibold text-[#12304a]">Données du programme (pas du lot)</h3>
-      <p className="mt-2 text-xs leading-6 text-[#65756a]">Renseignez uniquement une fourchette confirmée. Si le prix maximum n'est pas connu, laissez-le vide. La disponibilité de chaque typologie reste sur demande jusqu'à vérification.</p>
-      <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-        <label className={label}>Prix minimum indicatif<input value={draft.total_price??''} onChange={e=>{setField('total_price',e.target.value);setField('price_on_request',!e.target.value);}} type="number" min="0" step="1" className={input}/></label>
-        <label className={label}>Prix maximum confirmé<input value={draft.project_price_max??''} onChange={e=>setField('project_price_max',e.target.value)} type="number" min="0" step="1" className={input}/></label>
-        <label className={label}>Date / période de livraison<input value={draft.delivery?.fr||''} onChange={e=>setLocale('delivery','fr',e.target.value)} className={input} placeholder="T3 2028"/></label>
-        <label className={label}>Latitude vérifiée<input value={draft.project_latitude??''} onChange={e=>setField('project_latitude',e.target.value)} type="number" min="-90" max="90" step="any" className={input}/></label>
-        <label className={label}>Longitude vérifiée<input value={draft.project_longitude??''} onChange={e=>setField('project_longitude',e.target.value)} type="number" min="-180" max="180" step="any" className={input}/></label>
-      </div>
-      <p className="mt-3 text-xs text-[#7a836f]">Sans coordonnées vérifiées, la carte affiche la zone du quartier, pas l'immeuble exact.</p>
-      <div className="mt-7 flex flex-wrap items-center justify-between gap-3 border-t border-[#cedbd0] pt-5">
-        <div><h4 className="font-semibold">Typologies prévues / repérées</h4><p className="mt-1 text-xs text-[#65756a]">Pas besoin de créer un appartement pour afficher 1BR, 2BR, etc.</p></div>
-        <button type="button" onClick={()=>setField('project_unit_options',[...(draft.project_unit_options||[]),{label:'',bedrooms:'',areaM2:'',price:'',currency:draft.currency,availability:'on_request',source:'unit'}].slice(0,16))} className="border border-[#315c48] bg-white px-4 py-2 text-xs font-semibold text-[#315c48]">+ Typologie</button>
-      </div>
-      <div className="mt-4 grid gap-3">{(draft.project_unit_options||[]).map((unit:any,index:number)=>(
-        <div key={index} className="grid gap-2 rounded-xl border border-[#d6dfd6] bg-white p-3 md:grid-cols-[1.2fr_0.55fr_0.7fr_0.9fr_1fr_auto]">
-          <label className={label}>Type<input value={unit.label||''} onChange={e=>setField('project_unit_options',(draft.project_unit_options||[]).map((u:any,i:number)=>i===index?{...u,label:e.target.value}:u))} className={input} placeholder="2 BR"/></label>
-          <label className={label}>Chambres<input value={unit.bedrooms??''} onChange={e=>setField('project_unit_options',(draft.project_unit_options||[]).map((u:any,i:number)=>i===index?{...u,bedrooms:e.target.value}:u))} className={input} type="number" min="0"/></label>
-          <label className={label}>Surface m²<input value={unit.areaM2??''} onChange={e=>setField('project_unit_options',(draft.project_unit_options||[]).map((u:any,i:number)=>i===index?{...u,areaM2:e.target.value}:u))} className={input} type="number" min="0" step="0.01"/></label>
-          <label className={label}>Prix indicatif<input value={unit.price??''} onChange={e=>setField('project_unit_options',(draft.project_unit_options||[]).map((u:any,i:number)=>i===index?{...u,price:e.target.value}:u))} className={input} type="number" min="0" step="1"/></label>
-          <label className={label}>Disponibilité<select value={unit.availability||'on_request'} onChange={e=>setField('project_unit_options',(draft.project_unit_options||[]).map((u:any,i:number)=>i===index?{...u,availability:e.target.value}:u))} className={input}><option value="on_request">Sur demande</option><option value="confirmed">Confirmée manuellement</option></select></label>
-          <button type="button" aria-label="Retirer typologie" onClick={()=>setField('project_unit_options',(draft.project_unit_options||[]).filter((_:any,i:number)=>i!==index))} className="self-end border border-[#e1c5c5] px-3 py-3 text-[#aa4949]">×</button>
-        </div>
-      ))}</div>
-    </section>
-
     <section className="border border-[#d9e1e8] bg-white p-5">
       <div>
         <p className="text-[0.68rem] font-semibold uppercase tracking-[0.1em] text-[#315d7c]">Contenu principal</p>
@@ -484,7 +429,6 @@ export function AdminListingEditor({listing,onClose,reload}:{listing:any;onClose
 
     <section className="grid gap-5 lg:grid-cols-3">
       {[
-        ['Équipements & caractéristiques du programme','highlights_text'],
         ['Pourquoi Bosphoras le sélectionne','strengths_text'],
         ['Bosphoras Technical Notes','technical_notes_text'],
         ['Points de vigilance','watchpoints_text'],
