@@ -32,7 +32,7 @@ export async function POST(req:NextRequest){
  if(action==='apply'){
    const r=await client.from('project_official_research').select('*').eq('project_id',projectId).maybeSingle();
    if(r.error||!r.data||r.data.status!=='ready')return NextResponse.json({error:'Aucune recherche officielle prête à valider.'},{status:409});
-   const draft=await client.from('property_listings').select('id,published,description,highlights,images,hero_image,project_latitude,project_longitude').eq('real_estate_project_id',projectId).is('deleted_at',null).maybeSingle();
+   const draft=await client.from('property_listings').select('id,published,description,highlights,images,hero_image,project_latitude,project_longitude,project_unit_options').eq('real_estate_project_id',projectId).is('deleted_at',null).maybeSingle();
    if(draft.error)return NextResponse.json({error:'Impossible de vérifier le brouillon public.'},{status:503});
    if(draft.data?.published)return NextResponse.json({error:'Programme déjà en ligne. Dépublie-le avant d’appliquer des modifications.'},{status:409});
    const chosen=Array.isArray(body.amenity_codes)?body.amenity_codes.filter((c:any)=>typeof c==='string'):[];
@@ -72,9 +72,9 @@ export async function POST(req:NextRequest){
        ...(acceptDesc?{description:{...(draft.data.description||{}),fr:r.data.suggested_description?.fr||''}}:{}),
        ...(approved.length?{project_amenity_codes:approved,highlights:localized}:{}),
        ...(unitSelected.length?{project_unit_options:[
-         ...(Array.isArray((await client.from('property_listings').select('project_unit_options').eq('id',draft.data.id).single()).data?.project_unit_options)
-           ?(await client.from('property_listings').select('project_unit_options').eq('id',draft.data.id).single()).data?.project_unit_options:[]),
-         ...unitSelected.map(label=>({label,availability:'on_request',source:'source_offer'}))
+         ...(Array.isArray(draft.data.project_unit_options)?draft.data.project_unit_options:[]),
+         ...unitSelected.filter(label=>!(draft.data.project_unit_options||[]).some((u:any)=>u.label===label))
+           .map(label=>({label,availability:'on_request',source:'source_offer'}))
        ].slice(0,16)}:{}),
        ...(images.length?{images:[...new Set([...(draft.data.images||[]),...images])].slice(0,32),
          hero_image:draft.data.hero_image||images[0]}:{}),
