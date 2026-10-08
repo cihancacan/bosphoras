@@ -36,6 +36,7 @@ import { StructuredData } from '@/components/StructuredData';
 import { PropertyGallery } from '@/components/PropertyGallery';
 import { PropertyLocationMap } from '@/components/PropertyLocationMap';
 import { ProjectInquiryForm } from '@/components/ProjectInquiryForm';
+import {ProjectSelectButton,ProjectWishlistTray} from '@/components/ProjectWishlist';
 
 interface PropertyDetailPageProps {
   locale: Locale;
@@ -542,6 +543,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
               <Link href={visitHref} className="inline-flex min-h-[50px] w-full items-center justify-center gap-2 rounded-xl border border-[#244b3f] px-5 text-sm font-semibold text-[#244b3f] transition hover:bg-[#eef2ef]">
                 <CalendarDays size={16}/>{c.visit}
               </Link>
+              {property.projectId?<ProjectSelectButton locale={locale} property={property} href={fullPath}/>:null}
             </div>
           </aside>
         </div>
@@ -806,6 +808,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
         </div>
       </section>
 
+      {property.projectId?<ProjectWishlistTray locale={locale}/>:null}
       <Footer locale={locale} />
     </main>
   );
