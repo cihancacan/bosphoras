@@ -56,6 +56,13 @@ function numeric(...values: any[]) {
   return null;
 }
 
+function unixDelivery(value: any) {
+  const n=Number(value);
+  if(!Number.isFinite(n)||n<1000000000||n>4102444800)return null;
+  const date=new Date(n*1000);
+  return Number.isNaN(date.getTime())?null:date.toISOString().slice(0,10);
+}
+
 function dateValue(...values: any[]) {
   for (const value of values) {
     const raw = textValue(value);
@@ -106,7 +113,10 @@ function mapBayut(item: any, page: number) {
   const projectName = textValue(project.title || project.name || item.projectName) || projectLocation || textValue(item.title || item.name);
   const developerName = textValue(project.agency?.name || project.developerName || project.developer || item.developerName || item.developer || item.developer_name);
   const city = locations.find((x:string)=>/dubai/i.test(x)) || textValue(item.city) || 'Dubai';
-  const district = textValue(item.locationName || item.community || item.area || item.district) || locations.at(-1) || '';
+  // Bayut item.area is numeric floor area, not the community.
+  const district = textValue(item.locationName || item.community || item.district)
+    || locations.filter((x:string)=>!/^uae$|^dubai$/i.test(x)).slice(-2,-1)[0]
+    || locations.find((x:string)=>!/^uae$|^dubai$/i.test(x)) || '';
   const images = imageList(item);
   const externalId = textValue(project.externalID || project.externalId || project.id || item.projectId || item.externalID || item.externalId || item.id);
   const sourceUrl = textValue(item.url || item.link || item.webURL || item.webUrl);
@@ -126,7 +136,8 @@ function mapBayut(item: any, page: number) {
     price_min: numeric(item.startingPrice, item.priceMin, item.minPrice, item.lowPrice, item.price),
     price_max: numeric(item.priceMax, item.maxPrice, item.highPrice),
     handover_text: textValue(item.handover || item.handoverDate || item.completionStatus || item.completion_status) || null,
-    completion_date: dateValue(item.handoverDate, item.completionDate, item.deliveryDate),
+    completion_date: dateValue(item.handoverDate, item.completionDate, item.deliveryDate)
+      || unixDelivery(item.completionDetails?.completionDate) || unixDelivery(project.completionDate),
     hero_image: images[0] || null,
     images,
     dedupe_key: slugKey([developerName, projectName, city].filter(Boolean).join('|')),
