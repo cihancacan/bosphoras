@@ -1,7 +1,7 @@
 // @ts-nocheck
 'use client';
 
-import { FormEvent, useEffect, useMemo, useState } from 'react';
+import { FormEvent, useEffect, useMemo, useRef, useState } from 'react';
 import { Building2, CheckCircle2, Layers3, Plus, RefreshCw, Search, Warehouse } from 'lucide-react';
 import { getPortalSupabase } from '@/lib/portalSupabase';
 import { AdminProjectImporter } from '@/components/AdminProjectImporter';
@@ -132,6 +132,16 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   const [history,setHistory]=useState<any[]>([]);
   const [apiReferences,setApiReferences]=useState<any[]>([]);
   const [mediaCandidates,setMediaCandidates]=useState<any[]>([]);
+  const [officialResearch,setOfficialResearch]=useState<any[]>([]);
+  const [officialBusy,setOfficialBusy]=useState(false);
+  const [officialMessage,setOfficialMessage]=useState('');
+  const [officialCodes,setOfficialCodes]=useState<string[]>([]);
+  const [officialUnits,setOfficialUnits]=useState<string[]>([]);
+  const [officialPhotos,setOfficialPhotos]=useState<string[]>([]);
+  const [officialUseDescription,setOfficialUseDescription]=useState(false);
+  const [officialUseLocation,setOfficialUseLocation]=useState(false);
+  const [officialPhotoRights,setOfficialPhotoRights]=useState(false);
+  const officialInput=useRef<HTMLInputElement|null>(null);
   const [chosenMedia,setChosenMedia]=useState<string[]>([]);
   const [mediaRightsConfirmed,setMediaRightsConfirmed]=useState(false);
   const [mediaBusy,setMediaBusy]=useState(false);
@@ -153,7 +163,7 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
     setBusy(true);
     if(clearMessage)setMessage('');
     try{
-      const [d,p,u,h,c,l,i,m]=await Promise.all([
+      const [d,p,u,h,c,l,i,m,o]=await Promise.all([
         supabase.from('developers').select('*').order('name'),
         supabase.from('real_estate_projects').select('*').order('updated_at',{ascending:false}),
         supabase.from('project_units').select('*').order('updated_at',{ascending:false}),
@@ -170,6 +180,8 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
         isAdmin?supabase.from('project_media_enrichments')
           .select('project_id,listing_external_id,photos,floorplans,source_description,amenities,fetched_at')
           .order('fetched_at',{ascending:false}).limit(300):Promise.resolve({data:[],error:null}),
+        isAdmin?supabase.from('project_official_research').select('*')
+          .order('fetched_at',{ascending:false}).limit(400):Promise.resolve({data:[],error:null}),
       ]);
       if(d.error)throw d.error;if(p.error)throw p.error;if(u.error)throw u.error;if(h.error)throw h.error;
       setDevelopers(d.data||[]);setProjects(p.data||[]);setUnits(u.data||[]);setHistory(h.data||[]);
@@ -177,6 +189,8 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
       setPublicProjects(l.error?[]:(l.data||[]));
       setProjectLeads(i.error?[]:(i.data||[]));
       setMediaCandidates(m.error?[]:(m.data||[]));
+      setOfficialResearch(o.error?[]:(o.data||[]));
+      if(o.error)setOfficialMessage('Recherche officielle inaccessible : '+o.error.message);
       if(m.error)setMediaMessage('La galerie privée ne peut pas être chargée : '+m.error.message);
       if(!selectedProjectId&&p.data?.[0]?.id)setSelectedProjectId(p.data[0].id);
     }catch(e:any){setMessage(e?.message||'Chargement impossible.');}
@@ -197,10 +211,14 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   const selectedLeads=selected?projectLeads.filter((lead:any)=>lead.project_id===selected.id):[];
   const importedReference=selected?apiReferences.find((c:any)=>c.imported_project_id===selected.id):null;
   const reviewedMedia=selected?mediaCandidates.find((c:any)=>c.project_id===selected.id):null;
+  const researched=selected?officialResearch.find((c:any)=>c.project_id===selected.id):null;
   const availableMedia=reviewedMedia?[...(Array.isArray(reviewedMedia.photos)?reviewedMedia.photos:[]),
     ...(Array.isArray(reviewedMedia.floorplans)?reviewedMedia.floorplans:[])]:[];
   useEffect(()=>{
     setChosenMedia([]);setMediaRightsConfirmed(false);setMediaMessage('');
+    setOfficialCodes([]);setOfficialUnits([]);setOfficialPhotos([]);
+    setOfficialUseDescription(false);setOfficialUseLocation(false);
+    setOfficialPhotoRights(false);setOfficialMessage('');
   },[selectedProjectId]);
   const prefillEnabled=Boolean(selected&&importedReference&&prefillProjectId===selected.id);
   const offer=prefillEnabled?importedReference.source_payload||{}:{};
@@ -304,6 +322,43 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
     finally{setMediaBusy(false);}
   }
 
+  async function officialAction(action:'scan'|'apply'){
+    if(!isAdmin||!selected||officialBusy||busy)return;
+    setOfficialBusy(true);setOfficialMessage('');
+    try{
+      const session=await supabase.auth.getSession();
+      const token=session.data.session?.access_token;
+      if(!token)throw new Error('Ta session administrateur a expiré. Reconnecte-toi.');
+      const body:any={action,project_id:selected.id};
+      if(action==='scan'){
+        const url=officialInput.current?.value?.trim();
+        if(url)body.official_url=url;
+      }else{
+        if(!officialUseDescription&&!officialUseLocation&&!officialCodes.length&&!officialUnits.length&&!officialPhotos.length)
+          throw new Error('Sélectionne au moins une catégorie d’informations à conserver.');
+        body.description=officialUseDescription;
+        body.location=officialUseLocation;
+        body.amenity_codes=officialCodes;
+        body.unit_mentions=officialUnits;
+        body.image_urls=officialPhotos;
+        body.rights_confirmed=officialPhotoRights;
+      }
+      const response=await fetch('/api/property-desk/official-research',{
+        method:'POST',headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},
+        body:JSON.stringify(body)
+      });
+      const result=await response.json().catch(()=>({}));
+      if(!response.ok)throw new Error(result.error||'Recherche officielle indisponible.');
+      await reload({clearMessage:false});
+      setOfficialMessage(result.message||'Opération enregistrée.');
+      if(action==='apply'){
+        setOfficialCodes([]);setOfficialUnits([]);setOfficialPhotos([]);
+        setOfficialUseDescription(false);setOfficialUseLocation(false);setOfficialPhotoRights(false);
+      }
+    }catch(error:any){setOfficialMessage(error?.message||'Impossible de traiter la source officielle.');}
+    finally{setOfficialBusy(false);}
+  }
+
   async function createPublicationDraft(){
     if(!isAdmin||!selected||busy)return;
     setBusy(true);setMessage('');
@@ -327,6 +382,9 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
       };
       const plan=draftPaymentPlan(project,source);
       const opts=optionsForProject(project,selectedUnits,source);
+      for(const label of Array.isArray(project.official_unit_types)?project.official_unit_types:[]){
+        if(!opts.some((unit:any)=>unit.label===label))opts.push({label,availability:'on_request',source:'source_offer',currency:project.currency});
+      }
       const note={
         fr:'Échéancier communiqué par la source : indicatif, non contractuel. Conditions et dates à confirmer auprès du promoteur.',
         en:'Payment schedule from the source is indicative and non-contractual. Confirm terms and dates with the developer.',
@@ -358,13 +416,14 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
         project_latitude:project.latitude??null,
         project_longitude:project.longitude??null,
         highlights:Array.isArray(project.highlights)?project.highlights.filter((v:any)=>typeof v==='object'&&v.fr):[],
+        project_amenity_codes:Array.isArray(project.amenities)?project.amenities.filter((v:any)=>typeof v==='string'):[],
         // Rich project fact sections are curated in Publications before release.
         developer:developerById[project.developer_id]?.name||null,
         payment_plan:plan,payment_plan_enabled:Boolean(plan.length),payment_interest_mode:'not_specified',
         payment_notes:plan.length?note:null,
         images:imageUrls,hero_image:imageUrls[0]||null,
         project_unit_options:opts,
-        source_url:project.source_url||importedReference?.source_url||null,
+        source_url:project.official_project_url||project.source_url||importedReference?.source_url||null,
         source_host:project.source_system||null,
         source_partner_name:developerById[project.developer_id]?.name||null,
         partner_id:project.partner_id||null,
