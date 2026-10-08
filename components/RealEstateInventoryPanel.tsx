@@ -156,7 +156,7 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
           .select('id,imported_project_id,source_system,source_external_id,source_url,source_payload,currency')
           .eq('review_status','imported').limit(300):Promise.resolve({data:[],error:null}),
         isAdmin?supabase.from('property_listings')
-          .select('id,real_estate_project_id,published,review_status,slug_fr,country_code')
+          .select('*')
           .not('real_estate_project_id','is',null).is('deleted_at',null).limit(1000):Promise.resolve({data:[],error:null}),
         isAdmin?supabase.from('project_inquiries')
           .select('id,project_id,full_name,email,phone,budget,wants_similar_options,created_at')
@@ -268,6 +268,69 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
       await reload({clearMessage:false});
       setMessage('Fiche publique créée en BROUILLON (non visible). Ouvre Publications, vérifie les droits des photos, les descriptions, les prix et les conditions puis publie.');
     }catch(error:any){setMessage(error?.message||'Impossible de préparer le programme.');}
+    finally{setBusy(false);}
+  }
+
+  async function updateProgramDetails(event:FormEvent<HTMLFormElement>){
+    event.preventDefault();if(!isAdmin||!publicProject||busy)return;
+    const form=event.currentTarget;
+    const fd=new FormData(form);
+    setBusy(true);setMessage('');
+    try{
+      if(publicProject.published)throw new Error('Dépublie temporairement le programme avant de modifier sa fiche publique.');
+      const existing=publicProject.project_unit_options||[];
+      const lines=String(fd.get('types')||'').split(/\n/g).map(x=>x.trim()).filter(Boolean).slice(0,16);
+      const options=lines.map(line=>{
+        const [label,roomsText,areaText,priceText,priceMaxText]=line.split('|').map(x=>x.trim());
+        const rooms=roomsText===''?undefined:Number(roomsText);
+        const area=areaText===''?undefined:Number(areaText);
+        const price=priceText===''?undefined:Number(priceText);
+        const priceMax=priceMaxText===''?undefined:Number(priceMaxText);
+        if(!label)throw new Error('Chaque typologie doit avoir un nom.');
+        for(const val of [rooms,area,price,priceMax]){
+          if(val!==undefined&&(!Number.isFinite(val)||val<0))throw new Error('Typologie invalide : '+line);
+        }
+        const prior=existing.find((o:any)=>o.label===label);
+        return {label,
+          ...(rooms!==undefined?{bedrooms:rooms}:{}),
+          ...(area!==undefined&&area>0?{areaM2:area}:{}),
+          ...(price!==undefined&&price>0?{price}:{}),
+          ...(priceMax!==undefined&&priceMax>0?{priceMax}:{}),
+          currency:publicProject.currency,
+          availability:prior?.availability==='confirmed'?'confirmed':'on_request',
+          source:'unit'};
+      });
+      const minimum=positiveNumber(fd.get('min'));
+      const maximum=positiveNumber(fd.get('max'));
+      if(minimum&&maximum&&maximum<minimum)throw new Error('Le prix maximum ne peut être inférieur au prix minimum.');
+      const latitude=String(fd.get('lat')||'').trim();
+      const longitude=String(fd.get('lng')||'').trim();
+      if(Boolean(latitude)!==Boolean(longitude))throw new Error('Renseigne les deux coordonnées ou laisse les deux vides.');
+      if(latitude&&(!Number.isFinite(Number(latitude))||Number(latitude)<-90||Number(latitude)>90||
+        !Number.isFinite(Number(longitude))||Number(longitude)<-180||Number(longitude)>180))
+        throw new Error('Coordonnées géographiques invalides.');
+      const description=String(fd.get('description')||'').trim().slice(0,12000);
+      const summary=String(fd.get('summary')||'').trim().slice(0,700);
+      const amenities=String(fd.get('amenities')||'').split(/\n/g).map(x=>x.trim()).filter(Boolean).slice(0,25);
+      const title=String(fd.get('title')||'').trim().slice(0,200);
+      const delivery=String(fd.get('delivery')||'').trim().slice(0,120);
+      const {error}=await supabase.from('property_listings').update({
+        title:{...(publicProject.title||{}),fr:title||publicProject.title?.fr||selected.name},
+        summary:{...(publicProject.summary||{}),fr:summary},
+        description:{...(publicProject.description||{}),fr:description},
+        total_price:minimum,price_on_request:!minimum,
+        project_price_max:maximum,
+        delivery:{...(publicProject.delivery||{}),fr:delivery},
+        project_unit_options:options,
+        project_latitude:latitude?Number(latitude):null,
+        project_longitude:longitude?Number(longitude):null,
+        highlights:amenities.map(x=>({fr:x,en:'',ru:'',ar:''})),
+        updated_at:new Date().toISOString()
+      }).eq('id',publicProject.id);
+      if(error)throw error;
+      await reload({clearMessage:false});
+      setMessage('Fiche programme enrichie et enregistrée en brouillon. Vérifie la galerie, les droits des photos et l’ensemble des données avant publication.');
+    }catch(err:any){setMessage(err?.message||'Modification du programme impossible.');}
     finally{setBusy(false);}
   }
 
@@ -545,6 +608,27 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
               {publicProject?<a href={'/espace?tab=listings&listing='+publicProject.id} className="inline-flex min-h-[42px] items-center justify-center bg-[#12304a] px-4 text-xs font-semibold text-white">Ouvrir / publier la fiche</a>:<button onClick={createPublicationDraft} disabled={busy} className="min-h-[42px] bg-[#12304a] px-4 text-xs font-semibold text-white disabled:opacity-50">Préparer la fiche du programme</button>}
             </div>
             <p className="mt-3 text-xs text-[#9b6d33]">Avant publication : vérifier les droits d’utilisation des photos API, l’exactitude des prix, le promoteur et l’échéancier. Disponibilités jamais garanties par l’import.</p>
+            {publicProject&&!publicProject.published?<details className="mt-5 border-t border-[#d9e1e8] pt-4">
+              <summary className="cursor-pointer text-sm font-semibold text-[#315d7c]">Enrichir la fiche du programme : description, typologies, fourchettes, carte</summary>
+              <form onSubmit={updateProgramDetails} className="mt-4 grid gap-3 md:grid-cols-2">
+                <label className={label+" md:col-span-2"}>Nom public du programme<input name="title" defaultValue={publicProject.title?.fr||selected.name} className={input} required/></label>
+                <label className={label+" md:col-span-2"}>Résumé commercial factuel<textarea name="summary" rows={2} defaultValue={publicProject.summary?.fr||''} className={input}/></label>
+                <label className={label+" md:col-span-2"}>Description complète FR<textarea name="description" rows={8} defaultValue={publicProject.description?.fr||''} className={input} placeholder="Présentation, cadre de vie, positionnement, finitions, informations réelles…"/></label>
+                <label className={label}>Prix minimum indicatif<input name="min" type="number" min="0" step="1" defaultValue={publicProject.total_price??''} className={input}/></label>
+                <label className={label}>Prix maximum (si connu)<input name="max" type="number" min="0" step="1" defaultValue={publicProject.project_price_max??''} className={input}/></label>
+                <label className={label+" md:col-span-2"}>Livraison prévue (date ou trimestre)<input name="delivery" defaultValue={publicProject.delivery?.fr||''} className={input} placeholder="Ex. T2 2028"/></label>
+                <label className={label+" md:col-span-2"}>Équipements / caractéristiques confirmés (un par ligne)<textarea name="amenities" rows={5} defaultValue={(publicProject.highlights||[]).map((x:any)=>x?.fr||'').filter(Boolean).join('\n')} className={input}/></label>
+                <label className={label+" md:col-span-2"}>Typologies (une par ligne : Type | chambres | surface m² | prix min | prix max)
+                  <textarea name="types" rows={5} defaultValue={(publicProject.project_unit_options||[]).map((o:any)=>[o.label,o.bedrooms??'',o.areaM2??'',o.price??'',o.priceMax??''].join(' | ')).join('\n')} className={input} placeholder="1 BR | 1 | 85 | 1200000 | 1500000"/>
+                  <span className="text-xs normal-case tracking-normal">Laisser vide tout chiffre inconnu. La typologie ne représente pas un lot réellement disponible.</span>
+                </label>
+                <label className={label}>Latitude vérifiée<input name="lat" type="number" step="any" min="-90" max="90" defaultValue={publicProject.project_latitude??''} className={input}/></label>
+                <label className={label}>Longitude vérifiée<input name="lng" type="number" step="any" min="-180" max="180" defaultValue={publicProject.project_longitude??''} className={input}/></label>
+                <p className="md:col-span-2 text-xs text-[#687685]">Sans coordonnées vérifiées, la carte pointe le secteur du quartier. Le plan de paiement et les photos se modifient dans Publications → Modifier.</p>
+                <button type="submit" disabled={busy} className="min-h-[44px] bg-[#12304a] px-5 text-sm font-semibold text-white md:col-span-2">Enregistrer l’enrichissement du programme</button>
+              </form>
+            </details>:null}
+
             {selectedLeads.length?<div className="mt-5 border-t border-[#d9e1e8] pt-4"><strong className="text-sm text-[#12304a]">{selectedLeads.length} demande(s) de renseignements pour ce projet</strong>
               <div className="mt-3 grid gap-2">{selectedLeads.slice(0,5).map((lead:any)=><div key={lead.id} className="flex flex-wrap items-center justify-between gap-2 border border-[#e2e7eb] bg-white px-3 py-2 text-xs"><span>{lead.full_name} · {lead.email} · {lead.budget||'Budget non précisé'}</span><span className="text-[#597463]">{lead.wants_similar_options?'Alternatives acceptées':'Projet uniquement'}</span></div>)}</div>
             </div>:null}
