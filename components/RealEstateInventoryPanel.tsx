@@ -774,6 +774,70 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
               {publicProject?<a href={'/espace?tab=listings&listing='+publicProject.id} className="inline-flex min-h-[42px] items-center justify-center bg-[#12304a] px-4 text-xs font-semibold text-white">Ouvrir / publier la fiche</a>:<button onClick={createPublicationDraft} disabled={busy} className="min-h-[42px] bg-[#12304a] px-4 text-xs font-semibold text-white disabled:opacity-50">Préparer la fiche du programme</button>}
             </div>
             <p className="mt-3 text-xs text-[#9b6d33]">Avant publication : vérifier les droits d’utilisation des photos API, l’exactitude des prix, le promoteur et l’échéancier. Disponibilités jamais garanties par l’import.</p>
+            <section className="mt-5 border-t border-[#d9e1e8] pt-5">
+              <div className="flex flex-wrap items-start justify-between gap-4">
+                <div>
+                  <h4 className="text-base font-semibold text-[#12304a]">1. Rechercher et enrichir depuis le site officiel</h4>
+                  <p className="mt-2 max-w-2xl text-xs leading-6 text-[#687685]">Bosphoras analyse la page du promoteur en brouillon : description factuelle, équipements, typologies, photos et éventuelles coordonnées. Aucun texte ni visuel n’est publié sans validation.</p>
+                  {developerById[selected.developer_id]?.website?<p className="mt-1 text-xs text-[#557263]">Promoteur : {developerById[selected.developer_id].website}</p>:<p className="mt-1 text-xs text-[#a16a39]">Site du promoteur non encore identifié ; tu peux renseigner la page officielle du programme.</p>}
+                </div>
+              </div>
+              <div className="mt-4 flex flex-wrap items-end gap-3">
+                <label className={label+" min-w-[220px] flex-1"}>Lien de la page officielle du programme
+                  <input key={selected.id} ref={officialInput} type="url" defaultValue={selected.official_project_url||researched?.official_url||''} placeholder="https://promoteur.com/projets/nom-du-programme" className={input}/>
+                </label>
+                <button type="button" disabled={busy||officialBusy} onClick={()=>officialAction('scan')} className="min-h-[42px] bg-[#12304a] px-4 text-xs font-semibold text-white disabled:opacity-50">{officialBusy?'Analyse en cours…':'Rechercher / analyser'}</button>
+              </div>
+              {researched?<div className="mt-4 border border-[#d9e1e8] bg-white p-4">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <strong className="text-sm text-[#12304a]">Résultat : {researched.status==='ready'?'Suggestions à examiner':researched.status==='needs_url'?'URL officielle manquante':researched.status==='error'?'Analyse non aboutie':researched.status}</strong>
+                  {researched.official_url?<a href={researched.official_url} target="_blank" rel="noopener noreferrer" className="text-xs font-semibold text-[#315d7c] underline">Ouvrir la source officielle</a>:null}
+                </div>
+                {researched.status_message?<p className="mt-2 text-xs leading-5 text-[#687685]">{researched.status_message}</p>:null}
+                {researched.status==='ready'&&!publicProject?.published?<div className="mt-4 grid gap-4">
+                  {researched.suggested_description?.fr?<label className="flex items-start gap-3 rounded-lg border border-[#dde5df] bg-[#f6faf7] p-3 text-xs">
+                    <input className="mt-1" type="checkbox" checked={officialUseDescription} onChange={e=>setOfficialUseDescription(e.target.checked)}/>
+                    <span><strong className="block text-sm text-[#153d2f]">Utiliser la description originale proposée</strong><span className="mt-2 block leading-6">{researched.suggested_description.fr}</span></span>
+                  </label>:null}
+                  {researched.source_excerpt?<details className="rounded-lg border border-[#d9e1e8] p-3 text-xs"><summary className="cursor-pointer font-semibold text-[#315d7c]">Éléments trouvés sur le site source (référence privée)</summary><p className="mt-3 whitespace-pre-line leading-6 text-[#526272]">{researched.source_excerpt}</p></details>:null}
+                  {(researched.suggested_amenities||[]).length?<div>
+                    <strong className="text-sm text-[#12304a]">Équipements mentionnés par la source — à confirmer pour cette phase</strong>
+                    <div className="mt-2 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+                      {researched.suggested_amenities.map((code:string)=><label key={code} className="flex cursor-pointer gap-2 rounded-lg border border-[#d7e2d7] bg-[#f4f8f4] px-3 py-3 text-xs">
+                        <input type="checkbox" checked={officialCodes.includes(code)} onChange={e=>setOfficialCodes(list=>e.target.checked?[...new Set([...list,code])]:list.filter(x=>x!==code))}/>
+                        <span><strong className="block text-[#2a5843]">{({pool:'Piscine',gym:'Salle de sport',spa:'Spa',hammam:'Hammam',sauna:'Sauna',bbq:'Barbecue',cinema:'Cinéma',yoga:'Yoga',boxing:'Boxe',kids:'Espace enfants',tennis:'Tennis',basketball:'Basketball',jogging:'Jogging',garden:'Jardins',concierge:'Conciergerie',security:'Sécurité'} as Record<string,string>)[code]||code}</strong>
+                          <small className="mt-1 block leading-4 text-[#687685]">{researched.amenity_evidence?.[code]||'Mention trouvée sur la page'}</small>
+                        </span>
+                      </label>)}
+                    </div>
+                  </div>:null}
+                  {(researched.unit_mentions||[]).length?<div>
+                    <strong className="text-sm text-[#12304a]">Typologies mentionnées — aucune disponibilité garantie</strong>
+                    <div className="mt-2 flex flex-wrap gap-2">{researched.unit_mentions.map((unit:string)=><label key={unit} className="inline-flex items-center gap-2 border border-[#d9e1e8] bg-white px-3 py-2 text-xs">
+                      <input type="checkbox" checked={officialUnits.includes(unit)} onChange={e=>setOfficialUnits(list=>e.target.checked?[...new Set([...list,unit])]:list.filter(x=>x!==unit))}/>{unit}
+                    </label>)}</div>
+                  </div>:null}
+                  {researched.suggested_latitude!=null&&researched.suggested_longitude!=null?<label className="flex items-center gap-3 border border-[#d9e1e8] p-3 text-xs">
+                    <input type="checkbox" checked={officialUseLocation} onChange={e=>setOfficialUseLocation(e.target.checked)}/>
+                    <span>Reprendre les coordonnées exactes indiquées sur cette page : {researched.suggested_latitude}, {researched.suggested_longitude} (vérifier sur la carte)</span>
+                  </label>:<p className="text-xs text-[#a16a39]">Le site n’indique pas de coordonnées géographiques exactes exploitables. La carte reste sur le secteur du projet.</p>}
+                  {(researched.suggested_images||[]).length?<div>
+                    <strong className="text-sm text-[#12304a]">Visuels repérés sur la page officielle — sélectionner uniquement ceux autorisés</strong>
+                    <div className="mt-3 grid gap-2 grid-cols-2 sm:grid-cols-3 xl:grid-cols-4">
+                      {researched.suggested_images.map((asset:any,i:number)=><label key={asset.url} className={'cursor-pointer overflow-hidden border-2 '+(officialPhotos.includes(asset.url)?'border-[#245a47]':'border-[#d9e1e8]')}>
+                        <img src={asset.url} loading="lazy" alt={'Image candidate n° '+(i+1)} className="aspect-[4/3] w-full bg-[#edf2f0] object-contain"/>
+                        <span className="flex items-center gap-2 p-2 text-xs"><input type="checkbox" checked={officialPhotos.includes(asset.url)} onChange={e=>setOfficialPhotos(list=>e.target.checked?[...new Set([...list,asset.url])]:list.filter(u=>u!==asset.url))}/>Visuel {i+1}</span>
+                      </label>)}
+                    </div>
+                    <label className="mt-3 flex items-start gap-2 text-xs leading-5"><input className="mt-1" type="checkbox" checked={officialPhotoRights} onChange={e=>setOfficialPhotoRights(e.target.checked)}/>Je confirme que Bosphoras dispose du droit de réutiliser les visuels sélectionnés.</label>
+                  </div>:null}
+                  <button type="button" onClick={()=>officialAction('apply')} disabled={busy||officialBusy||(officialPhotos.length>0&&!officialPhotoRights)} className="min-h-[46px] bg-[#245a47] px-5 text-sm font-semibold text-white disabled:opacity-50">Valider les informations sélectionnées dans le brouillon</button>
+                  {researched.approved_at?<p className="text-xs text-[#58806a]">Dernière validation : {new Date(researched.approved_at).toLocaleString('fr-FR')}</p>:null}
+                </div>:null}
+                {publicProject?.published?<p className="mt-2 text-xs text-[#8f673b]">Pour préserver les données en ligne, dépublie le projet avant d’appliquer de nouvelles suggestions.</p>:null}
+              </div>:null}
+              {officialMessage?<p role="status" aria-live="polite" className="mt-3 border border-[#d7e4df] bg-white p-3 text-xs leading-5 text-[#275943]">{officialMessage}</p>:null}
+            </section>
             {selected.source_system==='bayut'?<div className="mt-5 border-t border-[#d9e1e8] pt-5">
               <div className="flex flex-wrap items-start justify-between gap-4">
                 <div className="max-w-xl">
