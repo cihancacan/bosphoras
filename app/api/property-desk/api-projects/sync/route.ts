@@ -156,7 +156,8 @@ function mapEmlakjet(item: any, page: number) {
   const district = textValue(item.district || item.county || item.location?.district || item.location?.county);
   const images = imageList(item);
   const externalId = textValue(item.externalID || item.externalId || item.id || item.projectId || item.project_id);
-  const sourceUrl = textValue(item.url || item.link || item.webUrl || item.web_url || item.project?.url);
+  const sourceRaw = textValue(item.url || item.link || item.webUrl || item.web_url || item.project?.url);
+  const sourceUrl = sourceRaw.startsWith('/projeler/') ? new URL(sourceRaw,'https://www.emlakjet.com').toString() : sourceRaw;
   return {
     source_system: 'emlakjet',
     source_external_id: externalId || null,
@@ -332,7 +333,7 @@ export async function POST(request: NextRequest) {
     if(!config.configured)return NextResponse.json({error:'Emlakjet non configuré.'},{status:409});
     try{
       const url=new URL('https://'+config.host+'/project-details');
-      url.searchParams.set('id',externalId);
+      url.searchParams.set('slug',textValue(candidate.source_payload?.slug)||externalId);
       const response=await fetch(url,{headers:{'x-rapidapi-key':config.key,'x-rapidapi-host':config.host,Accept:'application/json'},cache:'no-store',signal:AbortSignal.timeout(20000)});
       const responseBody=await response.json().catch(()=>null);
       if(!response.ok)return NextResponse.json({error:'Détails Emlakjet HTTP '+response.status},{status:502});
