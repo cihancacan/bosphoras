@@ -1,0 +1,2 @@
+alter table public.property_listings add column if not exists project_price_max numeric;
+comment on column public.property_listings.project_price_max is 'Maximum indicative price for public project storefront; null means unspecified, not an upper bound.';
