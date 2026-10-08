@@ -136,6 +136,7 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   const [mediaRightsConfirmed,setMediaRightsConfirmed]=useState(false);
   const [mediaBusy,setMediaBusy]=useState(false);
   const [mediaMessage,setMediaMessage]=useState('');
+  const [manualImageUrls,setManualImageUrls]=useState('');
   const [publicProjects,setPublicProjects]=useState<any[]>([]);
   const [projectLeads,setProjectLeads]=useState<any[]>([]);
   const [prefillProjectId,setPrefillProjectId]=useState('');
@@ -263,6 +264,43 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
           publicProject?'La galerie du brouillon a été mise à jour, sans publication automatique.':
           'Elles seront proposées lors de la préparation de la fiche du programme.'));
     }catch(error:any){setMediaMessage(error?.message||"Impossible d’enregistrer les photos.");}
+    finally{setMediaBusy(false);}
+  }
+
+  async function addApprovedManualImages(event:FormEvent<HTMLFormElement>){
+    event.preventDefault();
+    if(!selected||!isAdmin||mediaBusy)return;
+    setMediaBusy(true);setMediaMessage('');
+    try{
+      const raw=manualImageUrls.split(/[\n,]+/g).map(x=>x.trim()).filter(Boolean);
+      if(!raw.length||raw.length>20)throw new Error('Renseigne entre 1 et 20 URL de photos officielles.');
+      if(!mediaRightsConfirmed)throw new Error('Confirme au préalable les droits de réutilisation des images.');
+      const urls=raw.map(value=>{
+        const u=new URL(value);
+        if(u.protocol!=='https:'||!u.hostname||u.username||u.password||value.length>1800)
+          throw new Error('Chaque photo doit avoir une URL HTTPS valide.');
+        return u.toString();
+      });
+      const current=Array.isArray(selected.images)?selected.images:[];
+      const merged=Array.from(new Set([...current,...urls])).slice(0,32);
+      const {error}=await supabase.from('real_estate_projects').update({
+        images:merged,hero_image:selected.hero_image||merged[0],updated_by:user?.id||null
+      }).eq('id',selected.id);
+      if(error)throw error;
+      if(publicProject&&!publicProject.published){
+        const publicImages=Array.isArray(publicProject.images)?publicProject.images:[];
+        const next=Array.from(new Set([...publicImages,...urls])).slice(0,32);
+        const save=await supabase.from('property_listings').update({
+          images:next,hero_image:publicProject.hero_image||next[0]
+        }).eq('id',publicProject.id).eq('published',false);
+        if(save.error)throw new Error('Projet privé mis à jour, mais erreur sur la galerie du brouillon : '+save.error.message);
+      }
+      setManualImageUrls('');setMediaRightsConfirmed(false);
+      await reload({clearMessage:false});
+      setMediaMessage(urls.length+' photo(s) officielle(s) ajoutée(s) au stock privé'+
+        (publicProject?.published?' ; la fiche en ligne reste inchangée.':
+         publicProject?' et au brouillon de publication.':' ; prêtes pour la création de la fiche publique.'));
+    }catch(error:any){setMediaMessage(error?.message||'Ajout impossible.');}
     finally{setMediaBusy(false);}
   }
 
@@ -709,6 +747,22 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
                 <button type="button" disabled={mediaBusy||busy||!chosenMedia.length||!mediaRightsConfirmed} onClick={saveReviewedBayutPhotos} className="mt-3 min-h-[44px] bg-[#245a47] px-5 text-xs font-semibold text-white disabled:opacity-40">Valider et ajouter {chosenMedia.length} image(s) à la galerie du projet</button>
                 <p className="mt-3 text-xs leading-5 text-[#687685]">Les photos existantes sont conservées. Si le programme est déjà publié, la galerie publique n’est pas modifiée automatiquement. Aucune publication n’est déclenchée.</p>
               </div>:null}
+              <details className="mt-5 border-t border-[#d9e1e8] pt-4">
+                <summary className="cursor-pointer text-xs font-semibold text-[#315d7c]">Ajouter des photos officielles autorisées — sans utiliser RapidAPI</summary>
+                <form className="mt-3 grid gap-3" onSubmit={addApprovedManualImages}>
+                  <label className={label}>URL HTTPS des photos (une par ligne)
+                    <textarea className={input+" min-h-[95px] py-2"} placeholder="https://site-du-promoteur.example/photo1.jpg" rows={3} value={manualImageUrls} onChange={e=>setManualImageUrls(e.target.value)}/>
+                  </label>
+                  <label className="flex items-start gap-2 text-xs leading-5 text-[#526272]"><input type="checkbox" checked={mediaRightsConfirmed} onChange={e=>setMediaRightsConfirmed(e.target.checked)} className="mt-1"/>
+                    Je confirme avoir vérifié que ces images correspondent au programme et que Bosphoras est autorisé à les réutiliser.</label>
+                  <button type="submit" disabled={mediaBusy||busy||!manualImageUrls.trim()||!mediaRightsConfirmed} className="min-h-[42px] bg-[#245a47] px-4 text-xs font-semibold text-white disabled:opacity-40">Ajouter à la galerie du projet</button>
+                </form>
+              </details>
+              {reviewedMedia?.amenities?.length?<details className="mt-3 border border-[#d9e1e8] bg-white p-3 text-xs text-[#526272]">
+                <summary className="cursor-pointer font-semibold">Autres données reçues de Bayut · {reviewedMedia.amenities.length} équipement(s)</summary>
+                <p className="mt-2 leading-6">{reviewedMedia.amenities.join(' · ')}</p>
+              </details>:null}
+
               {mediaMessage?<p role="status" aria-live="polite" className="mt-4 border border-[#d3e0df] bg-white p-3 text-xs leading-5 text-[#31576b]">{mediaMessage}</p>:null}
             </div>:null}
 
