@@ -20,6 +20,25 @@ function positiveNumber(value:any){
   const n=Number(value);
   return Number.isFinite(n)&&n>0?n:null;
 }
+function fromOfferIfEmpty(saved:any,suggested:any){
+  return saved!==null&&saved!==undefined&&saved!==''?saved:suggested??'';
+}
+function savedPaymentPercentage(plan:any,label:string){
+  if(!Array.isArray(plan))return '';
+  return plan.find((p:any)=>p?.label===label)?.percentage??'';
+}
+function readPaymentForm(fd:FormData){
+  const parts=paymentFields.flatMap((f)=>{
+    const raw=String(fd.get(f.name)||'').trim();
+    if(!raw)return [];
+    const percentage=Number(raw);
+    if(!Number.isFinite(percentage)||percentage<0||percentage>100)throw new Error('Chaque échéance doit être comprise entre 0 et 100 %.');
+    return [{label:f.label,percentage}];
+  });
+  const total=parts.reduce((sum:number,p:any)=>sum+p.percentage,0);
+  if(parts.length&&Math.abs(total-100)>0.5)throw new Error('Le plan de paiement doit totaliser 100 % (actuellement '+total.toFixed(1)+' %).');
+  return parts;
+}
 function bayutPlanBreakdown(payload:any){
   const summaries=Array.isArray(payload?.paymentPlanSummaries)?payload.paymentPlanSummaries:[];
   return summaries.find((s:any)=>s?.breakdown&&typeof s.breakdown==='object')?.breakdown||null;
@@ -38,6 +57,8 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   const [history,setHistory]=useState<any[]>([]);
   const [apiReferences,setApiReferences]=useState<any[]>([]);
   const [prefillProjectId,setPrefillProjectId]=useState('');
+  const [editingUnitId,setEditingUnitId]=useState('');
+  const [editPrefillUnitId,setEditPrefillUnitId]=useState('');
   const [selectedProjectId,setSelectedProjectId]=useState('');
   const [query,setQuery]=useState('');
   const [status,setStatus]=useState('all');
@@ -82,6 +103,10 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
   const offerArea=positiveNumber(offer.area);
   const offerBedrooms=offer.rooms!=null&&offer.rooms!==''?Number(offer.rooms):null;
   const offerBathrooms=offer.baths!=null&&offer.baths!==''?Number(offer.baths):null;
+  const editingUnit=selectedUnits.find((u:any)=>u.id===editingUnitId)||null;
+  const editingWithOffer=Boolean(editingUnit&&editPrefillUnitId===editingUnitId&&importedReference);
+  const editOffer=editingWithOffer?importedReference.source_payload||{}:{};
+  const editBreakdown=bayutPlanBreakdown(editOffer);
 
   async function createDeveloper(e:FormEvent<HTMLFormElement>){
     e.preventDefault();setBusy(true);setMessage('');
@@ -143,15 +168,7 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
     try{
       const fd=new FormData(e.currentTarget);
       const status=String(fd.get('status')||'unverified');
-      const plan=paymentFields.flatMap((f)=>{
-        const raw=String(fd.get(f.name)||'').trim();
-        if(!raw)return [];
-        const percentage=Number(raw);
-        if(!Number.isFinite(percentage)||percentage<0||percentage>100)throw new Error('Chaque échéance doit être comprise entre 0 et 100 %.');
-        return [{label:f.label,percentage}];
-      });
-      const planTotal=plan.reduce((s:any,p:any)=>s+p.percentage,0);
-      if(plan.length&&Math.abs(planTotal-100)>0.5)throw new Error('Le plan de paiement doit totaliser 100 % (actuellement '+planTotal.toFixed(1)+' %).');
+      const plan=readPaymentForm(fd);
       const usingOffer=Boolean(importedReference&&prefillProjectId===selected.id);
       const {error}=await supabase.from('project_units').insert({
         project_id:selected.id,
@@ -187,9 +204,47 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
     finally{setBusy(false);}
   }
 
+  async function updateExistingUnit(e:FormEvent<HTMLFormElement>){
+    e.preventDefault();if(!editingUnit)return;
+    setBusy(true);setMessage('');
+    try{
+      const fd=new FormData(e.currentTarget);
+      const status=String(fd.get('status')||'unverified');
+      const plan=readPaymentForm(fd);
+      const {error}=await supabase.from('project_units').update({
+        unit_number:String(fd.get('unit_number')||'').trim()||null,
+        building:String(fd.get('building')||'').trim()||null,
+        floor:String(fd.get('floor')||'').trim()||null,
+        unit_type:String(fd.get('unit_type')||'').trim()||null,
+        bedrooms:fd.get('bedrooms')===''?null:Number(fd.get('bedrooms')),
+        bathrooms:fd.get('bathrooms')===''?null:Number(fd.get('bathrooms')),
+        gross_area_m2:positiveNumber(fd.get('gross_area_m2')),
+        net_area_m2:positiveNumber(fd.get('net_area_m2')),
+        currency:String(fd.get('currency')||selected?.currency||'AED'),
+        list_price:positiveNumber(fd.get('list_price')),
+        cash_price:positiveNumber(fd.get('cash_price')),
+        installment_price:positiveNumber(fd.get('installment_price')),
+        entry_capital:positiveNumber(fd.get('entry_capital')),
+        status,
+        payment_plan:plan,
+        last_verified_at:status==='unverified'?null:new Date().toISOString(),
+        metadata:{
+          ...(editingUnit.metadata||{}),
+          availability_source:status==='unverified'?'unknown':'manual',
+          ...(editingWithOffer?{source_offer_reference:true,source_offer_requires_verification:true,import_candidate_id:importedReference.id}:{}),
+        },
+        updated_by:user?.id||null,
+      }).eq('id',editingUnit.id);
+      if(error)throw error;
+      setEditingUnitId('');setEditPrefillUnitId('');
+      setMessage('Fiche unité enregistrée'+(status==='unverified'?' — disponibilité toujours à vérifier.':'.'));
+      await reload();
+    }catch(error:any){setMessage(error?.message||'Modification impossible.');}
+    finally{setBusy(false);}
+  }
   async function updateUnitStatus(id:string,next:string){
     setBusy(true);
-    const {error}=await supabase.from('project_units').update({status:next,updated_by:user?.id||null,last_verified_at:new Date().toISOString()}).eq('id',id);
+    const {error}=await supabase.from('project_units').update({status:next,updated_by:user?.id||null,last_verified_at:next==='unverified'?null:new Date().toISOString()}).eq('id',id);
     if(error)setMessage(error.message);else await reload();
     setBusy(false);
   }
@@ -343,8 +398,32 @@ export function RealEstateInventoryPanel({user,profile,isAdmin,partners=[]}:{use
           <div className="overflow-x-auto border border-[#d9e1e8] bg-white">
             <table className="w-full min-w-[950px] text-left text-sm">
               <thead className="border-b border-[#d9e1e8] bg-[#f7f9fb] text-[0.65rem] uppercase tracking-[0.08em] text-[#687685]"><tr><th className="p-3">Unité</th><th className="p-3">Étage</th><th className="p-3">Surface</th><th className="p-3">Vue</th><th className="p-3">Prix</th><th className="p-3">Entrée</th><th className="p-3">Statut</th></tr></thead>
-              <tbody>{selectedUnits.map((u:any)=><tr key={u.id} className="border-b border-[#edf1f4]"><td className="p-3"><strong>{unitLabel(u)}</strong><span className="mt-1 block text-xs text-[#7b8794]">{u.external_id||'—'}</span></td><td className="p-3">{u.floor||'—'}</td><td className="p-3">{u.gross_area_m2?String(u.gross_area_m2)+' m²':'—'}</td><td className="p-3">{u.view||'—'}</td><td className="p-3 font-semibold">{money(u.list_price,u.currency)}</td><td className="p-3">{money(u.entry_capital,u.currency)}</td><td className="p-3"><select value={u.status} onChange={e=>updateUnitStatus(u.id,e.target.value)} className="min-h-[36px] border border-[#cfd8e3] bg-white px-2 text-xs"><option value="unverified">À vérifier</option><option value="available">Disponible</option><option value="option">Option</option><option value="reserved">Réservée</option><option value="deposit_received">Acompte reçu</option><option value="contracted">Contractée</option><option value="sold">Vendue</option><option value="withdrawn">Retirée</option></select></td></tr>)}</tbody>
+              <tbody>{selectedUnits.map((u:any)=><tr key={u.id} className="border-b border-[#edf1f4]"><td className="p-3"><strong>{unitLabel(u)}</strong><span className="mt-1 block text-xs text-[#7b8794]">{u.external_id||'—'}</span></td><td className="p-3">{u.floor||'—'}</td><td className="p-3">{u.gross_area_m2?String(u.gross_area_m2)+' m²':'—'}</td><td className="p-3">{u.view||'—'}</td><td className="p-3 font-semibold">{money(u.list_price,u.currency)}</td><td className="p-3">{money(u.entry_capital,u.currency)}</td><td className="p-3"><select value={u.status} onChange={e=>updateUnitStatus(u.id,e.target.value)} className="min-h-[36px] border border-[#cfd8e3] bg-white px-2 text-xs"><option value="unverified">À vérifier</option><option value="available">Disponible</option><option value="option">Option</option><option value="reserved">Réservée</option><option value="deposit_received">Acompte reçu</option><option value="contracted">Contractée</option><option value="sold">Vendue</option><option value="withdrawn">Retirée</option></select><button type="button" onClick={()=>{setEditingUnitId(editingUnitId===u.id?'':u.id);setEditPrefillUnitId('');}} className="ml-2 border border-[#cfd8e3] bg-white px-2 py-2 text-xs font-semibold text-[#315d7c]">Modifier</button></td></tr>)}</tbody>
             </table>
+            {editingUnit?<form key={editingUnit.id+'-'+(editingWithOffer?'source':'existing')} onSubmit={updateExistingUnit} className="grid gap-3 border-t border-[#d9e1e8] bg-[#f8fafb] p-5 md:grid-cols-4">
+              <div className="md:col-span-4">
+                <h3 className="text-sm font-semibold text-[#12304a]">Modifier l’unité — {unitLabel(editingUnit)}</h3>
+                {importedReference?<button type="button" onClick={()=>setEditPrefillUnitId(editingWithOffer?'':editingUnit.id)} className="mt-2 border border-[#315d7c] px-3 py-2 text-xs font-semibold text-[#12304a]">{editingWithOffer?'Retirer les suggestions':'Compléter les champs vides depuis l’annonce API'}</button>:null}
+                <p className="mt-2 text-xs text-[#687685]">L’annonce API ne certifie ni le numéro réel du lot ni sa disponibilité. Les champs existants restent prioritaires sur les suggestions.</p>
+              </div>
+              <label className={label}>N° unité<input name="unit_number" defaultValue={editingUnit.unit_number||''} className={input}/></label>
+              <label className={label}>Bloc / bâtiment<input name="building" defaultValue={editingUnit.building||''} className={input}/></label>
+              <label className={label}>Étage<input name="floor" defaultValue={editingUnit.floor||''} className={input}/></label>
+              <label className={label}>Typologie<input name="unit_type" defaultValue={editingUnit.unit_type||''} className={input}/></label>
+              <label className={label}>Chambres<input name="bedrooms" type="number" min="0" defaultValue={fromOfferIfEmpty(editingUnit.bedrooms,editOffer.rooms)} className={input}/></label>
+              <label className={label}>SDB<input name="bathrooms" type="number" min="0" defaultValue={fromOfferIfEmpty(editingUnit.bathrooms,editOffer.baths)} className={input}/></label>
+              <label className={label}>Surface brute (m²)<input name="gross_area_m2" type="number" step="0.01" min="0" defaultValue={fromOfferIfEmpty(editingUnit.gross_area_m2,positiveNumber(editOffer.area))} className={input}/></label>
+              <label className={label}>Surface nette (m²)<input name="net_area_m2" type="number" step="0.01" min="0" defaultValue={editingUnit.net_area_m2??''} className={input}/></label>
+              <label className={label}>Devise<select name="currency" defaultValue={editingUnit.currency||selected.currency} className={input}><option>EUR</option><option>USD</option><option>AED</option><option>TRY</option><option>GBP</option></select></label>
+              <label className={label}>Prix annonce (non vérifié)<input name="list_price" type="number" step="0.01" min="0" defaultValue={fromOfferIfEmpty(editingUnit.list_price,positiveNumber(editOffer.price))} className={input}/></label>
+              <label className={label}>Prix cash<input name="cash_price" type="number" step="0.01" min="0" defaultValue={editingUnit.cash_price??''} className={input}/></label>
+              <label className={label}>Prix échéancé<input name="installment_price" type="number" step="0.01" min="0" defaultValue={editingUnit.installment_price??''} className={input}/></label>
+              <label className={label}>Capital d'entrée<input name="entry_capital" type="number" step="0.01" min="0" defaultValue={editingUnit.entry_capital??''} className={input}/></label>
+              <label className={label}>Statut<select name="status" defaultValue={editingUnit.status} className={input}><option value="unverified">À vérifier</option><option value="available">Disponible confirmé</option><option value="option">Option</option><option value="reserved">Réservée</option><option value="deposit_received">Acompte reçu</option><option value="contracted">Contractée</option><option value="sold">Vendue</option><option value="withdrawn">Retirée</option></select></label>
+              <div className="md:col-span-4 border-t border-[#d9e1e8] pt-3"><strong className="text-sm">Échéancier de paiement (%)</strong><p className="text-xs text-[#687685]">Si connu, le total doit être égal à 100 %. À confirmer auprès du promoteur.</p></div>
+              {paymentFields.map((f)=><label key={f.key} className={label}>{f.label}<input name={f.name} type="number" step="0.1" min="0" max="100" defaultValue={fromOfferIfEmpty(savedPaymentPercentage(editingUnit.payment_plan,f.label),editBreakdown?.[f.key])} className={input}/></label>)}
+              <div className="md:col-span-4 flex gap-3"><button disabled={busy} className="min-h-[42px] bg-[#12304a] px-5 text-sm font-semibold text-white">Enregistrer les modifications</button><button type="button" onClick={()=>{setEditingUnitId('');setEditPrefillUnitId('');}} className="border border-[#cfd8e3] bg-white px-5 text-sm">Annuler</button></div>
+            </form>:null}
             {!selectedUnits.length?<p className="p-8 text-center text-sm text-[#687685]">Aucune unité. Ajoutez le stock de ce projet.</p>:null}
           </div>
           <section className="border border-[#d9e1e8] bg-white p-5">
