@@ -320,6 +320,41 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error:'Source inconnue.' }, { status:400 });
   }
 
+  if(action==='enrich' && source==='emlakjet'){
+    const id=String(body?.candidate_id||'');
+    if(!/^[0-9a-f-]{36}$/i.test(id))return NextResponse.json({error:'Candidat invalide.'},{status:400});
+    const found=await portal.client.from('project_import_candidates').select('*').eq('id',id).eq('source_system','emlakjet').maybeSingle();
+    if(found.error||!found.data)return NextResponse.json({error:'Projet introuvable.'},{status:404});
+    const candidate=found.data;
+    const externalId=textValue(candidate.source_external_id||candidate.source_payload?.projectId||candidate.source_payload?.id);
+    if(!externalId)return NextResponse.json({error:'Identifiant projet Emlakjet indisponible.'},{status:422});
+    const config=sourceConfiguration('emlakjet');
+    if(!config.configured)return NextResponse.json({error:'Emlakjet non configuré.'},{status:409});
+    try{
+      const url=new URL('https://'+config.host+'/project-details');
+      url.searchParams.set('id',externalId);
+      const response=await fetch(url,{headers:{'x-rapidapi-key':config.key,'x-rapidapi-host':config.host,Accept:'application/json'},cache:'no-store',signal:AbortSignal.timeout(20000)});
+      const responseBody=await response.json().catch(()=>null);
+      if(!response.ok)return NextResponse.json({error:'Détails Emlakjet HTTP '+response.status},{status:502});
+      const detail=responseBody?.data?.project||responseBody?.data?.details||responseBody?.data||responseBody?.project||responseBody;
+      if(!detail||typeof detail!=='object')return NextResponse.json({error:'Réponse projet vide.'},{status:422});
+      const images=[...new Set([...(candidate.images||[]),...imageList(detail)])].slice(0,32);
+      const raw={...(candidate.source_payload||{}),details:detail,description:detail.description||candidate.source_payload?.description};
+      const changes:any={
+        source_payload:raw,images,hero_image:images[0]||candidate.hero_image,
+        developer_name:textValue(detail.developerName||detail.developer?.name||detail.companyName)||candidate.developer_name,
+        city:textValue(detail.city||detail.location?.city)||candidate.city,
+        district:textValue(detail.district||detail.location?.district)||candidate.district,
+        price_min:numeric(detail.startingPrice,detail.minPrice,detail.priceMin,detail.price)||candidate.price_min,
+        price_max:numeric(detail.maxPrice,detail.priceMax)||candidate.price_max,
+        handover_text:textValue(detail.deliveryDate||detail.handover||detail.delivery)||candidate.handover_text,
+      };
+      const saved=await portal.client.from('project_import_candidates').update(changes).eq('id',id);
+      if(saved.error)throw saved.error;
+      return NextResponse.json({ok:true,images:images.length,detailKeys:Object.keys(detail).slice(0,35),
+        message:images.length?'Détails et photos proposés en brouillon privé.':'Détails récupérés mais aucune image exploitable fournie par cette réponse.'});
+    }catch(e:any){return NextResponse.json({error:'Enrichissement Emlakjet : '+String(e?.message||e)},{status:502});}
+  }
   if(action==='test'){
     // Authenticated, read-only smoke test: one provider request, never insert projects.
     // An empty response is not automatically a broken connection.
