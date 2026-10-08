@@ -67,13 +67,14 @@ export async function POST(req:NextRequest){
    const updateProject=await client.from('real_estate_projects').update(projectUpdates).eq('id',projectId);
    if(updateProject.error)return NextResponse.json({error:updateProject.error.message},{status:503});
    if(draft.data){
+     const existingUnits:any[]=Array.isArray(draft.data.project_unit_options)?draft.data.project_unit_options:[];
      const listing:any={
        source_url:r.data.official_url,source_last_checked_at:new Date().toISOString(),
        ...(acceptDesc?{description:{...(draft.data.description||{}),fr:r.data.suggested_description?.fr||''}}:{}),
        ...(approved.length?{project_amenity_codes:approved,highlights:localized}:{}),
        ...(unitSelected.length?{project_unit_options:[
-         ...(Array.isArray(draft.data.project_unit_options)?draft.data.project_unit_options:[]),
-         ...unitSelected.filter(label=>!(draft.data.project_unit_options||[]).some((u:any)=>u.label===label))
+         ...existingUnits,
+         ...unitSelected.filter(label=>!existingUnits.some((u:any)=>u.label===label))
            .map(label=>({label,availability:'on_request',source:'source_offer'}))
        ].slice(0,16)}:{}),
        ...(images.length?{images:[...new Set([...(draft.data.images||[]),...images])].slice(0,32),
