@@ -130,6 +130,21 @@ export function AdminApiProjectInbox({user,reload}:{user:any;reload?:()=>void}){
     finally{setBusy('');}
   }
 
+  async function enrichCandidate(candidate:any){
+    setBusy('enrich-'+candidate.id);setMessage('');
+    try{
+      const headers=await authHeaders();
+      const response=await fetch('/api/property-desk/api-projects/sync',{
+        method:'POST',headers,body:JSON.stringify({source:'emlakjet',action:'enrich',candidate_id:candidate.id})
+      });
+      const result=await response.json().catch(()=>({}));
+      if(!response.ok)throw new Error(result.error||'Enrichissement impossible.');
+      setMessage('Emlakjet · '+candidate.project_name+' : '+result.images+' photo(s). '+(result.message||''));
+      await load();
+    }catch(error:any){setMessage(error?.message||'Enrichissement impossible.');}
+    finally{setBusy('');}
+  }
+
   async function testConnection(source:string){
     setBusy('test-'+source);setMessage('');
     try{
@@ -309,7 +324,8 @@ export function AdminApiProjectInbox({user,reload}:{user:any;reload?:()=>void}){
           </div>
           <div className="flex flex-col justify-between gap-3 border-l border-[#edf1f4] pl-5">
             <div><span className="text-[0.62rem] uppercase text-[#7b8794]">Statut</span><strong className="mt-1 block capitalize">{c.review_status}</strong></div>
-            {c.review_status==='new'?<div className="grid gap-2">
+            {c.source_system==='emlakjet'&&c.review_status==='new'?<button disabled={busy!==''} onClick={()=>enrichCandidate(c)} className="min-h-[40px] border border-[#315d7c] px-3 text-xs font-semibold text-[#12304a] disabled:opacity-45">{busy==='enrich-'+c.id?'Enrichissement...':'Enrichir via Emlakjet (détails + photos)'}</button>:null}
+             {c.review_status==='new'?<div className="grid gap-2">
               <button disabled={busy!==''||Boolean(c.matched_project_id)} onClick={()=>createDraft(c)} className="inline-flex min-h-[40px] items-center justify-center gap-2 bg-[#12304a] px-3 text-xs font-semibold text-white disabled:opacity-45"><CheckCircle2 size={14}/>Créer brouillon</button>
               <button disabled={busy!==''} onClick={()=>setDecision(c,'duplicate')} className="min-h-[38px] border border-[#cfd8e3] px-3 text-xs font-semibold text-[#526272]">Marquer doublon</button>
               <button disabled={busy!==''} onClick={()=>setDecision(c,'rejected')} className="inline-flex min-h-[38px] items-center justify-center gap-2 border border-[#c88984] px-3 text-xs font-semibold text-[#9b4c46]"><XCircle size={13}/>Refuser</button>
