@@ -130,6 +130,27 @@ export function AdminApiProjectInbox({user,reload}:{user:any;reload?:()=>void}){
     finally{setBusy('');}
   }
 
+  async function testConnection(source:string){
+    setBusy('test-'+source);setMessage('');
+    try{
+      const headers=await authHeaders();
+      const response=await fetch('/api/property-desk/api-projects/sync',{
+        method:'POST',headers,body:JSON.stringify({source,action:'test'})
+      });
+      const data=await response.json().catch(()=>({}));
+      if(!response.ok)throw new Error(data.error||'Connexion impossible.');
+      const samples=Array.isArray(data.sample)?data.sample.map((item:any)=>item.name).filter(Boolean).join(', '):'';
+      setMessage('Test Emlakjet : HTTP '+(data.remoteStatus||200)+'. '+
+        Number(data.results||0)+' résultat(s) reconnus ; aucun projet importé. '+
+        (samples?'Exemples : '+samples+'. ':'')+
+        (data.results?'Connexion confirmée, tu peux importer le prochain lot.':
+         'L’API répond, mais la structure ou les critères de recherche doivent être examinés. '+
+         'Champs réponse : '+[...(data.topLevelKeys||[]),...(data.dataKeys||[])].slice(0,18).join(', ')+'.'));
+      await load();
+    }catch(error:any){setMessage('Test Emlakjet : '+(error?.message||'Connexion impossible.'));}
+    finally{setBusy('');}
+  }
+
   async function setDecision(candidate:any,next:string){
     let reason:string|null=null;
     if(next==='rejected'){
@@ -248,7 +269,8 @@ export function AdminApiProjectInbox({user,reload}:{user:any;reload?:()=>void}){
     return <article className="border border-[#d9e1e8] bg-white p-5">
       <div className="flex items-start justify-between gap-4"><div><span className="text-[0.64rem] font-bold uppercase tracking-[0.12em] text-[#315d7c]">{key}</span><h3 className="mt-1 text-xl font-semibold">{label}</h3><p className="mt-1 text-xs leading-5 text-[#7b8794]">{sub}</p></div><span className={'px-2 py-1 text-[0.62rem] font-bold uppercase '+(s.configured?'bg-[#edf7f1] text-[#2f6d59]':'bg-[#fff4e8] text-[#9a6927]')}>{s.configured?'Connectée':'Clé à ajouter'}</span></div>
       <div className="mt-5 grid grid-cols-3 gap-px bg-[#e5eaee] text-center"><div className="bg-[#f8fafb] p-3"><span className="block text-[0.58rem] uppercase text-[#7b8794]">Requêtes mois</span><strong className="mt-1 block text-xl">{s.requests||0}</strong></div><div className="bg-[#f8fafb] p-3"><span className="block text-[0.58rem] uppercase text-[#7b8794]">Projets vus</span><strong className="mt-1 block text-xl">{s.fetched||0}</strong></div><div className="bg-[#f8fafb] p-3"><span className="block text-[0.58rem] uppercase text-[#7b8794]">{remaining==null?'Limite':'Restantes'}</span><strong className="mt-1 block text-xl">{remaining==null?'—':remaining}</strong></div></div>
-      <button disabled={busy!==''||!s.configured} onClick={()=>sync(key)} className="mt-4 inline-flex min-h-[42px] w-full items-center justify-center gap-2 bg-[#12304a] px-4 text-xs font-semibold uppercase tracking-[0.07em] text-white disabled:opacity-45">{busy==='sync-'+key?<Loader2 size={14} className="animate-spin"/>:<CloudDownload size={14}/>}Importer le prochain lot</button>
+      {key==='emlakjet'?<button disabled={busy!==''||!s.configured} onClick={()=>testConnection(key)} className="mt-4 inline-flex min-h-[42px] w-full items-center justify-center gap-2 border border-[#315d7c] bg-white px-4 text-xs font-semibold uppercase tracking-[0.07em] text-[#12304a] disabled:opacity-45">{busy==='test-'+key?<Loader2 size={14} className="animate-spin"/>:<RefreshCw size={14}/>}Tester la connexion (sans importer)</button>:null}
+      <button disabled={busy!==''||!s.configured} onClick={()=>sync(key)} className="mt-3 inline-flex min-h-[42px] w-full items-center justify-center gap-2 bg-[#12304a] px-4 text-xs font-semibold uppercase tracking-[0.07em] text-white disabled:opacity-45">{busy==='sync-'+key?<Loader2 size={14} className="animate-spin"/>:<CloudDownload size={14}/>}Importer le prochain lot</button>
     </article>;
   };
 
