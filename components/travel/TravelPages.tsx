@@ -180,7 +180,7 @@ function Approach({ locale, destination, category }: { locale: TravelLocale; des
       <h2 className="font-serif text-2xl mb-3">{lens[1]}</h2>
       <ul className="list-disc list-inside space-y-3 text-[#465968] leading-7">{checks.map(v=><li key={v}>{v}</li>)}</ul>
       {locale === 'en' && travelEditorial[destination.slug] && <p className="mt-5 text-[#465968] leading-7">{travelEditorial[destination.slug].enDetail}</p>}
-      {locale === 'fr' && travelEditorial[destination.slug] && <p className="mt-5 text-[#465968] leading-7">{travelEditorial[destination.slug].frDetail}</p>
+      {locale === 'fr' && travelEditorial[destination.slug] && <p className="mt-5 text-[#465968] leading-7">{travelEditorial[destination.slug].frDetail}</p>}
     </article>
     <article className="border-t border-[#b7955d] pt-5">
       <h2 className="font-serif text-2xl mb-3">{lens[2]}</h2>
