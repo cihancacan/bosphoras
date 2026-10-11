@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { travelEditorial } from '@/data/travel/editorial';
+import { IstanbulFlagship } from '@/components/travel/IstanbulFlagship';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { destinationBySlug, travelCategories, travelDestinations, travelRegions, approvedDestinationSlugs, approvedCategorySlugs } from '@/data/travel/destinations';
@@ -95,7 +96,10 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
   const route = resolveTravelRoute(parts);
   if (!route) return { title: 'Not found', robots: { index: false } };
   const t = travelText(locale);
-  const pageTitle = route.kind === 'keyword' && route.category && route.destination
+  const isFlagship = route.kind === 'keyword' && route.destination?.slug === 'istanbul' && route.category === 'hotels' && (locale === 'fr' || locale === 'en');
+  const pageTitle = isFlagship
+    ? locale === 'fr' ? 'Meilleurs hôtels de luxe à Istanbul : Bosphore, palaces et quartiers' : 'Best luxury hotels in Istanbul: Bosphorus, palaces and neighbourhoods'
+    : route.kind === 'keyword' && route.category && route.destination
     ? heading(locale, route.category, route.destination.name)
     : route.kind === 'destination' && route.destination ? route.destination.name + ' — Luxury stays'
     : route.kind === 'category' && route.category ? travelKeywordTitles[route.category][locale]
@@ -106,7 +110,11 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
   const canonical = ORIGIN + travelHref(locale, route.slug);
   const specificEditorial = route.destination ? travelEditorial[route.destination.slug] : undefined;
   const localizedIntro = locale === 'fr' ? specificEditorial?.frIntro : locale === 'en' ? specificEditorial?.enIntro : undefined;
-  const description = localizedIntro
+  const description = isFlagship
+    ? locale === 'fr'
+      ? 'Guide indépendant des meilleurs hôtels de luxe à Istanbul : Bosphore, quartiers, palaces, vues, neuf adresses à comparer et conseils avant réservation.'
+      : 'An independent guide to luxury hotels in Istanbul: Bosphorus views, historic palaces, neighbourhoods, nine hotel profiles and practical booking advice.'
+    : localizedIntro
     ? (pageTitle + '. ' + localizedIntro).slice(0, 160)
     : (route.destination ? pageTitle + '. ' + t.value + ' ' + t.approach : t.slogan + ' ' + t.value).slice(0, 160);
   const ready = isApproved(route, locale);
@@ -247,6 +255,14 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
     : route.kind === 'last-minute' ? t.lastMinute
     : route.kind === 'private-collection' ? t.privateCollection
     : 'The World, Through Local Eyes.';
+  if (route.kind === 'keyword' && destination?.slug === 'istanbul' && category === 'hotels' && (locale === 'fr' || locale === 'en')) {
+    return <div lang={t.hreflang} dir="ltr" className="min-h-screen bg-[#f8f5ee]">
+      <Schema locale={locale} route={route}/>
+      <Header locale={locale} slug={route.slug}/>
+      <IstanbulFlagship locale={locale}/>
+      <Footer locale={locale}/>
+    </div>;
+  }
   return <div lang={t.hreflang} dir={locale === 'ar' ? 'rtl' : 'ltr'} className="min-h-screen bg-[#f9f7f1] text-[#1c2d39]">
     <Schema locale={locale} route={route}/>
     <Header locale={locale} slug={route.slug}/>
