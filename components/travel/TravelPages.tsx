@@ -254,7 +254,7 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
           {locale === 'en' && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug]?.enIntro || destination.angle}</p>}
           {locale === 'fr' && travelEditorial[destination.slug] && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug].frIntro}</p>}
           {locale === 'en' && travelEditorial[destination.slug] && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug].enDetail}</p>}
-          {locale === 'fr' && travelEditorial[destination.slug] && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug].frDetail}</p>
+          {locale === 'fr' && travelEditorial[destination.slug] && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug].frDetail}</p>}
           <p className="mt-5 text-sm text-[#7b6342]">{categoryLead[category].keyword}</p></section>
           <Approach locale={locale} destination={destination} category={category}/>
           <section className="mt-16 border-t border-[#e2d6c7] pt-9"><h2 className="font-serif text-3xl">{t.faqs}</h2>
