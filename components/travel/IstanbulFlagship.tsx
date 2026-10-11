@@ -2,9 +2,6 @@ import Link from 'next/link';
 import { istanbulHotels, istanbulDistricts, istanbulFaqs, istanbulJourneys, istanbulEditorialSourceDate } from '@/data/travel/istanbulFlagship';
 
 type Language = 'fr' | 'en';
-function Txt({ locale, fr, en }: { locale: Language; fr: string; en: string }) {
-  return <>{locale === 'fr' ? fr : en}</>;
-}
 const anchor = 'scroll-mt-24';
 
 export function IstanbulFlagship({ locale }: { locale: Language }) {

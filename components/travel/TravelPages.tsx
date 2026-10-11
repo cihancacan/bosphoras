@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { travelEditorial } from '@/data/travel/editorial';
 import { IstanbulFlagship } from '@/components/travel/IstanbulFlagship';
+import { istanbulHotels, istanbulEditorialSourceDate } from '@/data/travel/istanbulFlagship';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { destinationBySlug, travelCategories, travelDestinations, travelRegions, approvedDestinationSlugs, approvedCategorySlugs } from '@/data/travel/destinations';
@@ -197,6 +198,10 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
   const pathname = travelHref(locale, route.slug);
   const base = ORIGIN + pathname;
   const crumbs = travelCrumbs(locale, route);
+  const isIstanbulGuide = route.kind === 'keyword'
+    && route.destination?.slug === 'istanbul'
+    && route.category === 'hotels'
+    && (locale === 'fr' || locale === 'en');
   const node = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -204,7 +209,30 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
       { '@type': 'BreadcrumbList', itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Travel', item: ORIGIN + travelHref(locale) },
         ...crumbs.map((crumb, index) => ({ '@type': 'ListItem', position: index + 2, name: crumb.label, item: ORIGIN + travelHref(locale, crumb.slug) }))
-      ] }
+      ] },
+      ...(isIstanbulGuide ? [
+        {
+          '@type': 'Article',
+          '@id': base + '#article',
+          headline: locale === 'fr' ? 'Hôtels de luxe à Istanbul : neuf adresses, cinq quartiers et conseils de séjour' : 'Luxury hotels in Istanbul: nine addresses, five areas and booking advice',
+          description: locale === 'fr' ? 'Guide indépendant pour choisir son hôtel de luxe à Istanbul selon le quartier, les vues et le type de séjour.' : 'Independent luxury hotel guide to Istanbul neighbourhoods, views and different styles of stay.',
+          inLanguage: locale,
+          mainEntityOfPage: base,
+          dateModified: istanbulEditorialSourceDate,
+          author: { '@type': 'Organization', name: 'Bosphoras Luxury Stays', url: ORIGIN + '/travel' },
+          publisher: { '@type': 'Organization', name: 'Bosphoras Luxury Stays', url: ORIGIN + '/travel' }
+        },
+        {
+          '@type': 'ItemList',
+          '@id': base + '#editorial-hotels',
+          name: locale === 'fr' ? 'Hôtels étudiés à Istanbul' : 'Istanbul hotels reviewed',
+          itemListOrder: 'https://schema.org/ItemListUnordered',
+          numberOfItems: istanbulHotels.length,
+          itemListElement: istanbulHotels.map((hotel, index) => ({
+            '@type': 'ListItem', position: index + 1, name: hotel.name, url: hotel.officialUrl
+          }))
+        }
+      ] : [])
     ]
   };
   return <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(node).replace(/</g,'\\u003c') }} />;
