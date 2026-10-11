@@ -17,6 +17,26 @@ const categoryLead: Record<TravelCategory, { keyword: string; checks: string[] }
   helicopters: { keyword: 'helicopter tours · private helicopter transfer', checks: ['Tour versus point-to-point transfer', 'Weather and baggage limits', 'Operator, flight approval and refund terms'] },
   'private-jets': { keyword: 'private jet charter · empty leg flights', checks: ['Quoted flight versus confirmed availability', 'Aircraft, operator and airport details', 'Cancellation and repositioning conditions'] }
 };
+const frenchCategoryChecks: Record<TravelCategory, string[]> = {
+  hotels: ['La catégorie exacte de la chambre, sa vue et son emplacement', 'Les prestations comprises dans le tarif final', 'Les conditions d’annulation et le partenaire chargé de la réservation'],
+  villas: ['L’intimité de la piscine, le nombre de chambres et les accès', 'Le personnel et l’entretien réellement inclus', 'La caution, les frais de service et les conditions d’annulation'],
+  chalets: ['La distance réelle des remontées mécaniques et des pistes', 'Le caractère privatif du spa et de la piscine chauffée', 'Les transferts, les repas et les services compris'],
+  yachts: ['Le type de bateau, la capacité et l’itinéraire', 'L’équipage, le carburant et les frais de port', 'Les conditions météo et la confirmation de l’opérateur'],
+  helicopters: ['La différence entre survol touristique et transfert privé', 'Les limites météo, bagages et capacité', 'L’opérateur aérien, la confirmation du vol et les remboursements'],
+  'private-jets': ['La différence entre un devis et une disponibilité confirmée', 'L’appareil, l’opérateur et les aéroports desservis', 'Les règles d’annulation et de repositionnement']
+};
+const generalChecksByLocale: Record<TravelLocale, string[]> = {
+  fr: ['Comparer la localisation et l’expérience proposée', 'Vérifier ce qui est inclus dans le tarif', 'Lire les conditions de réservation et d’annulation'],
+  en: ['Compare location and experience', 'Verify what the final price includes', 'Review booking and cancellation terms'],
+  ru: ['Уточните местоположение и категорию размещения', 'Проверьте, что включено в итоговую стоимость', 'Изучите условия бронирования и отмены'],
+  ar: ['تحقق من الموقع وفئة الإقامة الفعلية', 'تأكد مما يشمله السعر النهائي', 'راجع شروط الحجز والإلغاء'],
+  de: ['Lage und genaue Unterkunftskategorie prüfen', 'Leistungen im Endpreis vergleichen', 'Buchungs- und Stornierungsbedingungen lesen'],
+  tr: ['Konumu ve konaklama kategorisini doğrulayın', 'Toplam fiyata nelerin dahil olduğunu kontrol edin', 'Rezervasyon ve iptal koşullarını inceleyin'],
+  es: ['Comprobar ubicación y categoría real del alojamiento', 'Verificar qué incluye el precio final', 'Revisar las condiciones de reserva y cancelación'],
+  zh: ['核对位置与实际房型', '确认最终价格包含的服务', '查看预订及取消条款'],
+  pt: ['Conferir localização e categoria da acomodação', 'Verificar o que o preço final inclui', 'Ler as condições de reserva e cancelamento'],
+  it: ['Verificare posizione e categoria della sistemazione', 'Controllare cosa è incluso nel prezzo finale', 'Leggere le condizioni di prenotazione e cancellazione']
+};
 const headings = {
   fr: ['Une sélection, pas un catalogue','Choisir une adresse d’exception','Réservation et transparence'],
   en: ['Selection, not a catalogue','Choosing an exceptional stay','Booking and transparency'],
@@ -145,7 +165,22 @@ function DestinationGrid({ locale, destinations, category }: { locale: TravelLoc
     {destinations.map(d => <DestCard key={d.slug} destination={d} locale={locale} category={category}/>)}
   </div>;
 }
-function BreadCrumb({ locale, items }: { locale: TravelLocale; items: {label:string;slug:string}[] }) {
+type TravelCrumb = { label: string; slug: string };
+function travelCrumbs(locale: TravelLocale, route: TravelRoute): TravelCrumb[] {
+  const t = travelText(locale);
+  if (route.kind === 'home') return [];
+  if (route.kind === 'destination' && route.destination)
+    return [{ label: t.destinations, slug: 'destinations' }, { label: route.destination.name, slug: route.slug }];
+  if (route.kind === 'keyword' && route.category && route.destination)
+    return [
+      { label: travelKeywordTitles[route.category][locale], slug: route.category },
+      { label: heading(locale, route.category, route.destination.name), slug: route.slug }
+    ];
+  if (route.kind === 'category' && route.category)
+    return [{ label: travelKeywordTitles[route.category][locale], slug: route.slug }];
+  return [{ label: route.kind === 'directory' ? t.destinations : route.kind === 'last-minute' ? t.lastMinute : t.privateCollection, slug: route.slug }];
+}
+function BreadCrumb({ locale, items }: { locale: TravelLocale; items: TravelCrumb[] }) {
   return <nav aria-label="Breadcrumb" className="text-xs text-[#63717c] mb-8 flex flex-wrap gap-2">
     <Link href={travelHref(locale)}>Travel</Link>{items.map(item => <span key={item.slug}> / <Link className="hover:underline" href={travelHref(locale,item.slug)}>{item.label}</Link></span>)}
   </nav>;
@@ -153,13 +188,14 @@ function BreadCrumb({ locale, items }: { locale: TravelLocale; items: {label:str
 function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute }) {
   const pathname = travelHref(locale, route.slug);
   const base = ORIGIN + pathname;
+  const crumbs = travelCrumbs(locale, route);
   const node = {
     '@context': 'https://schema.org',
     '@graph': [
       { '@type': 'WebPage', '@id': base + '#webpage', url: base, name: route.destination?.name || 'Bosphoras Luxury Stays', inLanguage: travelText(locale).hreflang, isPartOf: { '@type': 'WebSite', name: 'Bosphoras Luxury Stays', url: ORIGIN + '/travel' } },
       { '@type': 'BreadcrumbList', itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Travel', item: ORIGIN + travelHref(locale) },
-        ...(route.slug ? [{ '@type':'ListItem', position: 2, name: route.destination?.name || route.slug, item: base }] : [])
+        ...crumbs.map((crumb, index) => ({ '@type': 'ListItem', position: index + 2, name: crumb.label, item: ORIGIN + travelHref(locale, crumb.slug) }))
       ] }
     ]
   };
@@ -168,11 +204,9 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
 function Approach({ locale, destination, category }: { locale: TravelLocale; destination: TravelDestination; category?: TravelCategory }) {
   const t = travelText(locale);
   const lens = headings[locale];
-  const checks = category ? categoryLead[category].checks : [
-    'Compare location and property character, not just star ratings',
-    'Check the room or villa category rather than relying on hero photographs',
-    'Understand which company confirms the booking and handles changes'
-  ];
+  const checks = category && locale === 'fr' ? frenchCategoryChecks[category]
+    : category && locale === 'en' ? categoryLead[category].checks
+    : generalChecksByLocale[locale];
   return <div className="grid md:grid-cols-3 gap-6 mt-10">
     <article className="border-t border-[#b7955d] pt-5">
       <h2 className="font-serif text-2xl mb-3">{lens[0]}</h2>
@@ -227,10 +261,7 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
         </div>
       </section>
       <div className="mx-auto max-w-7xl px-5 py-12">
-        {route.kind !== 'home' && <BreadCrumb locale={locale} items={
-          destination ? [{label:t.destinations,slug:'destinations'},{label:destination.name,slug:'destinations/'+destination.slug}] :
-          [{label:focus,slug:route.slug}]
-        }/>}
+        {route.kind !== 'home' && <BreadCrumb locale={locale} items={travelCrumbs(locale, route)}/>}
         {route.kind === 'home' && <>
           <section className="mb-16">
             <h2 className="font-serif text-3xl sm:text-4xl">{t.collections}</h2>
