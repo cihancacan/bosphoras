@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { travelEditorial } from '@/data/travel/editorial';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { destinationBySlug, travelCategories, travelDestinations, travelRegions, approvedDestinationSlugs, approvedCategorySlugs } from '@/data/travel/destinations';
@@ -171,12 +172,15 @@ function Approach({ locale, destination, category }: { locale: TravelLocale; des
     <article className="border-t border-[#b7955d] pt-5">
       <h2 className="font-serif text-2xl mb-3">{lens[0]}</h2>
       <p className="text-[#465968] leading-7">{t.value}</p>
-      {locale === 'en' && <p className="mt-4 text-[#465968] leading-7">{destination.angle}</p>}
+      {locale === 'en' && <p className="mt-4 text-[#465968] leading-7">{travelEditorial[destination.slug]?.enIntro || destination.angle}</p>}
+      {locale === 'fr' && travelEditorial[destination.slug] && <p className="mt-4 text-[#465968] leading-7">{travelEditorial[destination.slug].frIntro}</p>}
       <p className="mt-4 text-[#465968] leading-7">{t.approach}</p>
     </article>
     <article className="border-t border-[#b7955d] pt-5">
       <h2 className="font-serif text-2xl mb-3">{lens[1]}</h2>
       <ul className="list-disc list-inside space-y-3 text-[#465968] leading-7">{checks.map(v=><li key={v}>{v}</li>)}</ul>
+      {locale === 'en' && travelEditorial[destination.slug] && <p className="mt-5 text-[#465968] leading-7">{travelEditorial[destination.slug].enDetail}</p>}
+      {locale === 'fr' && travelEditorial[destination.slug] && <p className="mt-5 text-[#465968] leading-7">{travelEditorial[destination.slug].frDetail}</p>
     </article>
     <article className="border-t border-[#b7955d] pt-5">
       <h2 className="font-serif text-2xl mb-3">{lens[2]}</h2>
@@ -247,7 +251,10 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
         {route.kind === 'keyword' && destination && category && <>
           <section className="max-w-4xl"><h2 className="font-serif text-3xl">{t.how} · {destination.name}</h2>
           <p className="leading-8 mt-5 text-[#435666]">{t.approach}</p>
-          {locale === 'en' && <p className="leading-8 mt-5 text-[#435666]">{destination.angle}</p>}
+          {locale === 'en' && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug]?.enIntro || destination.angle}</p>}
+          {locale === 'fr' && travelEditorial[destination.slug] && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug].frIntro}</p>}
+          {locale === 'en' && travelEditorial[destination.slug] && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug].enDetail}</p>}
+          {locale === 'fr' && travelEditorial[destination.slug] && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug].frDetail}</p>
           <p className="mt-5 text-sm text-[#7b6342]">{categoryLead[category].keyword}</p></section>
           <Approach locale={locale} destination={destination} category={category}/>
           <section className="mt-16 border-t border-[#e2d6c7] pt-9"><h2 className="font-serif text-3xl">{t.faqs}</h2>
