@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { EditorialHotelCard } from '@/components/travel/EditorialHotelCard';
 import { istanbulHotels, istanbulDistricts, istanbulFaqs, istanbulJourneys, istanbulEditorialSourceDate } from '@/data/travel/istanbulFlagship';
 
 type Language = 'fr' | 'en';
@@ -84,21 +85,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
         <p className="max-w-sm text-[#637077] text-sm leading-6">{fr ? 'Sélection éditoriale fondée sur les informations des établissements. Ce n’est ni un classement ni une liste d’offres réservables sur Bosphoras.' : 'An editorial shortlist grounded in the operators’ own information, not a ranking or a list of hotels already bookable with Bosphoras.'}</p>
       </div>
       <div className="space-y-4">
-        {istanbulHotels.map((hotel,i)=><article key={hotel.id} className="bg-white border border-[#e7e0d4] grid lg:grid-cols-[84px,minmax(0,1.2fr),minmax(0,1fr)]">
-          <div className="bg-[#142d39] text-[#dbc495] p-6 font-serif text-3xl">{String(i+1).padStart(2,'0')}</div>
-          <div className="px-6 py-7 sm:px-9 sm:py-9">
-            <p className="text-xs tracking-wider uppercase text-[#9c784a] mb-4">{hotel.zone}</p>
-            <h3 className="font-serif text-3xl sm:text-4xl">{hotel.name}</h3>
-            <p className="text-[#55656c] leading-7 mt-5">{fr?hotel.fr:hotel.en}</p>
-          </div>
-          <div className="bg-[#fbfaf6] px-6 py-7 sm:px-9 sm:py-9 flex flex-col">
-            <p className="text-xs tracking-wider uppercase text-[#9c784a] font-semibold">{fr ? 'À privilégier pour' : 'Especially suited to'}</p>
-            <p className="leading-7 mt-2 font-medium">{fr?hotel.frBest:hotel.enBest}</p>
-            <p className="text-xs tracking-wider uppercase text-[#9c784a] font-semibold mt-5">{fr ? 'À vérifier' : 'Check before booking'}</p>
-            <p className="text-sm leading-6 text-[#55656c] mt-2">{fr?hotel.frWatch:hotel.enWatch}</p>
-            <a href={hotel.officialUrl} rel="noopener noreferrer" target="_blank" className="mt-7 underline underline-offset-4 text-[#8d6836] hover:text-[#162d39] font-semibold text-sm">{fr ? 'Informations sur le site officiel' : 'View the official hotel details'} <span aria-hidden="true">↗</span><span className="sr-only"> {fr?'(nouvel onglet)':'(opens in new tab)'}</span></a>
-          </div>
-        </article>)}
+        {istanbulHotels.map((hotel,i)=><EditorialHotelCard key={hotel.id} hotel={hotel} index={i} locale={locale}/>)}
       </div>
       <p className="text-[#647078] text-sm leading-6 mt-7">{fr ? 'Photographies des hôtels, prix, liens de paiement, avantages et disponibilités seront intégrés seulement après vérification des droits d’utilisation et de distribution.' : 'Hotel photography, prices, checkout links, benefits and availability will only be added after image and distribution rights have been verified.'}</p>
     </section>
