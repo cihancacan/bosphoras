@@ -84,15 +84,18 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     : route.kind === 'private-collection' ? t.privateCollection
     : 'Bosphoras Luxury Stays';
   const canonical = ORIGIN + travelHref(locale, route.slug);
+  const specificEditorial = route.destination ? travelEditorial[route.destination.slug] : undefined;
+  const localizedIntro = locale === 'fr' ? specificEditorial?.frIntro : locale === 'en' ? specificEditorial?.enIntro : undefined;
+  const description = localizedIntro
+    ? (pageTitle + '. ' + localizedIntro).slice(0, 160)
+    : (route.destination ? pageTitle + '. ' + t.value + ' ' + t.approach : t.slogan + ' ' + t.value).slice(0, 160);
   const ready = isApproved(route, locale);
   const languageAlternates = ready
     ? Object.fromEntries(travelLocaleCodes.filter((code) => isApproved(route, code)).map((code) => [travelText(code).hreflang, ORIGIN + travelHref(code, route.slug)]))
     : {};
   return {
     title: pageTitle + ' | Bosphoras Luxury Stays',
-    description: (route.destination
-      ? pageTitle + '. ' + t.value + ' ' + t.approach
-      : t.slogan + ' ' + t.value).slice(0, 160),
+    description,
     alternates: { canonical, ...(Object.keys(languageAlternates).length ? { languages: languageAlternates } : {}) },
     openGraph: { title: pageTitle, description: t.value, url: canonical, siteName: 'Bosphoras Luxury Stays', type: 'website' },
     robots: { index: ready, follow: true, 'max-image-preview': 'large' },
@@ -105,13 +108,15 @@ function Header({ locale, slug }: { locale: TravelLocale; slug: string }) {
       <Link href={travelHref(locale)} className="tracking-[0.20em] text-sm sm:text-base font-semibold uppercase">
         BOSPHORAS <span className="text-[#cdb37b]">LUXURY STAYS</span>
       </Link>
-      <nav aria-label="Travel navigation" className="flex gap-4 sm:gap-6 text-xs sm:text-sm flex-wrap items-center">
+      <nav aria-label="Travel primary navigation" className="flex gap-4 sm:gap-6 text-xs sm:text-sm flex-wrap items-center">
         <Link href={travelHref(locale,'destinations')} className="hover:text-[#e7c78a]">{t.destinations}</Link>
-        <Link href={travelHref(locale,'hotels')} className="hover:text-[#e7c78a]">{travelKeywordTitles.hotels[locale]}</Link>
-        <Link href={travelHref(locale,'villas')} className="hover:text-[#e7c78a]">{travelKeywordTitles.villas[locale]}</Link>
+        <Link href={travelHref(locale,'last-minute')} className="hover:text-[#e7c78a]">{t.lastMinute}</Link>
         <Link href={travelHref(locale,'private-collection')} className="hover:text-[#e7c78a]">{t.privateCollection}</Link>
       </nav>
     </div>
+    <nav aria-label="Travel categories" className="mx-auto max-w-7xl px-5 pb-4 flex gap-6 overflow-x-auto whitespace-nowrap text-xs sm:text-sm">
+      {travelCategories.map(category => <Link key={category} className="hover:text-[#e7c78a] shrink-0" href={travelHref(locale,category)}>{travelKeywordTitles[category][locale]}</Link>)}
+    </nav>
     <nav aria-label="Travel language versions" className="mx-auto max-w-7xl px-5 pb-4 flex flex-wrap gap-x-3 gap-y-2 text-xs">
       {travelLocaleCodes.map(code => <Link key={code} href={travelHref(code,slug)} className={code === locale ? 'text-[#f0cb8e] underline underline-offset-4' : 'text-[#b6c3c5] hover:text-white'} lang={travelText(code).hreflang} hrefLang={travelText(code).hreflang}>{code === 'pt' ? 'PT-BR' : code.toUpperCase()}</Link>)}
     </nav>
@@ -132,7 +137,7 @@ function DestCard({ locale, destination, category }: { locale: TravelLocale; des
   const href = category ? travelHref(locale,category + '/' + destination.slug) : travelHref(locale,'destinations/' + destination.slug);
   return <Link href={href} className="group bg-white border border-[#e8e0d1] p-5 rounded-sm hover:border-[#b7955d] transition-colors min-h-[150px] flex flex-col justify-between">
     <div><p className="text-xs uppercase tracking-wider text-[#a17d48]">{destination.country}</p><h3 className="font-serif text-2xl text-[#1d2c39] mt-3">{destination.name}</h3></div>
-    <span className="text-sm text-[#687887] group-hover:text-[#8b6837] mt-4">Explore →</span>
+    <span className="text-sm text-[#687887] group-hover:text-[#8b6837] mt-4">{travelText(locale).explore} →</span>
   </Link>;
 }
 function DestinationGrid({ locale, destinations, category }: { locale: TravelLocale; destinations: TravelDestination[]; category?: TravelCategory }) {
@@ -257,12 +262,8 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
           {locale === 'fr' && travelEditorial[destination.slug] && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug].frDetail}</p>}
           <p className="mt-5 text-sm text-[#7b6342]">{categoryLead[category].keyword}</p></section>
           <Approach locale={locale} destination={destination} category={category}/>
-          <section className="mt-16 border-t border-[#e2d6c7] pt-9"><h2 className="font-serif text-3xl">{t.faqs}</h2>
-            <div className="mt-6 grid md:grid-cols-2 gap-6">
-              <article><h3 className="font-semibold">{t.how} : {destination.name} ?</h3><p className="text-[#536679] mt-3 leading-7">{t.approach}</p></article>
-              <article><h3 className="font-semibold">{t.verify} ?</h3><p className="text-[#536679] mt-3 leading-7">{t.draft}</p></article>
-            </div>
-          </section>
+          {/* Genuine destination FAQs are held back until locally researched and editorially reviewed.
+              Repeating boilerplate Q&A across hundreds of keyword URLs would reduce page quality. */}
         </>}
         {(route.kind === 'last-minute'||route.kind === 'private-collection') && <section className="max-w-4xl">
           <h2 className="font-serif text-3xl">{t.draftTitle}</h2><p className="text-[#536679] leading-8 mt-5">{t.draft}</p>
