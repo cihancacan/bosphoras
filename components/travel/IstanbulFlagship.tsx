@@ -37,8 +37,8 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
         <a className="shrink-0 hover:text-[#926b36]" href="#quartiers">{fr ? 'Les quartiers' : 'Neighbourhoods'}</a>
         <a className="shrink-0 hover:text-[#926b36]" href="#selection">{fr ? 'Les adresses' : 'The addresses'}</a>
         <a className="shrink-0 hover:text-[#926b36]" href="#experience">{fr ? 'Votre type de séjour' : 'Your kind of stay'}</a>
-        <a className="shrink-0 hover:text-[#926b36]" href="#chambres">{fr ? 'Comparer les chambres' : 'Compare room types'}</a>
         <a className="shrink-0 hover:text-[#926b36]" href="#conseils">{fr ? 'Les bons réflexes' : 'What to check'}</a>
+        <a className="shrink-0 hover:text-[#926b36]" href="#chambres">{fr ? 'Comparer les chambres' : 'Compare room types'}</a>
         <a className="shrink-0 hover:text-[#926b36]" href="#questions">FAQ</a>
       </div>
     </nav>
@@ -166,7 +166,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
           <article className="border border-[#bd9e6e] bg-white p-7 sm:p-9">
             <p className="text-[#956f3e] text-xs font-semibold uppercase tracking-[.17em]">{fr ? 'Choix 2 · La terrasse face au détroit' : 'Option 2 · A balcony facing the strait'}</p>
             <h3 className="font-serif text-3xl mt-4">Deluxe Bosphorus Suite with Balcony</h3>
-            <p className="mt-4 text-[#425663] leading-7">{fr ? '118 m² au total, avec un balcon privé de 15 m² donnant sur le Bosphore, selon la description officielle. C’est une expérience très différente, davantage tournée vers le temps passé dans la suite et sa vue.' : 'A 118 m² suite with a 15 m² private balcony overlooking the Bosphorus, according to the official description. This is a different experience, designed around time spent in the suite and its outlook.'}</p>
+            <p className="mt-4 text-[#425663] leading-7">{fr ? 'Une suite annoncée à 118 m², avec un balcon privé de 15 m² donnant sur le Bosphore, selon la description officielle. C’est une expérience très différente, davantage tournée vers le temps passé dans la suite et sa vue.' : 'A 118 m² suite with a 15 m² private balcony overlooking the Bosphorus, according to the official description. This is a different experience, designed around time spent in the suite and its outlook.'}</p>
             <p className="mt-4 text-sm text-[#8f6938] font-semibold">{fr ? 'Ce que l’on réserve : une catégorie explicitement décrite avec balcon et vue Bosphore.' : 'What to book: a category explicitly described with both balcony and Bosphorus view.'}</p>
             <a href="https://www.peninsula.com/en/istanbul/luxury-hotel-room-suite-types/deluxe-bosphorus-suite-with-balcony" target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4 text-[#896538] mt-6 text-sm font-medium">{fr ? 'Vérifier la suite sur le site officiel' : 'Verify the suite on the official website'} ↗</a>
           </article>
@@ -177,7 +177,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
 
     <section id="questions" className={anchor + ' bg-[#f0ebe1] py-16 sm:py-24'}>
       <div className="mx-auto max-w-5xl px-5">
-        <p className="text-[#9c784a] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? '05 · Questions utiles' : '05 · Helpful answers'}</p>
+        <p className="text-[#9c784a] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? '06 · Questions utiles' : '06 · Helpful answers'}</p>
         <h2 className="font-serif text-4xl sm:text-5xl mb-10">{fr ? 'Avant de choisir votre hôtel à Istanbul' : 'Before choosing your Istanbul hotel'}</h2>
         <div className="divide-y divide-[#d7cbbc] border-y border-[#d7cbbc]">
           {istanbulFaqs.map((faq,i)=><details key={i} className="group py-6">
