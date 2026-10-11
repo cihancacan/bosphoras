@@ -72,7 +72,7 @@ export const istanbulHotels = [
     "id": "shangri-la",
     "name": "Shangri-La Bosphorus, Istanbul",
     "zone": "Beşiktaş · Dolmabahçe",
-    "officialUrl": "https://www.shangri-la.com/en/istanbul/shangrila/",
+    "officialUrl": "https://www.shangri-la.com/istanbul/shangrila/",
     "focus": "waterside-city",
     "fr": "Cet hôtel occupe un bâtiment historique de Beşiktaş, près de Dolmabahçe. Il offre une alternative élégante aux palais historiques et permet de rejoindre les rues vivantes du quartier.",
     "en": "This hotel occupies a historic Beşiktaş building close to Dolmabahçe Palace. It offers refined waterside accommodation with easier access to the neighbourhood's everyday city rhythm.",

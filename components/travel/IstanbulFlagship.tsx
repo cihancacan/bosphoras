@@ -37,6 +37,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
         <a className="shrink-0 hover:text-[#926b36]" href="#quartiers">{fr ? 'Les quartiers' : 'Neighbourhoods'}</a>
         <a className="shrink-0 hover:text-[#926b36]" href="#selection">{fr ? 'Les adresses' : 'The addresses'}</a>
         <a className="shrink-0 hover:text-[#926b36]" href="#experience">{fr ? 'Votre type de séjour' : 'Your kind of stay'}</a>
+        <a className="shrink-0 hover:text-[#926b36]" href="#chambres">{fr ? 'Comparer les chambres' : 'Compare room types'}</a>
         <a className="shrink-0 hover:text-[#926b36]" href="#conseils">{fr ? 'Les bons réflexes' : 'What to check'}</a>
         <a className="shrink-0 hover:text-[#926b36]" href="#questions">FAQ</a>
       </div>
@@ -143,6 +144,34 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
             ]).map(x=><li key={x} className="flex gap-3"><span aria-hidden="true" className="text-[#9c784a]">◆</span><span>{x}</span></li>)}
           </ul>
         </div>
+      </div>
+    </section>
+
+
+    <section id="chambres" className={anchor + ' bg-[#f0ebe1] py-16 sm:py-24'}>
+      <div className="mx-auto max-w-7xl px-5">
+        <p className="text-[#9c784a] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? '05 · Décrypter les catégories' : '05 · Understand room categories'}</p>
+        <h2 className="font-serif text-4xl sm:text-5xl max-w-4xl">{fr ? 'Un même palace. Deux chambres. Deux Istanbul.' : 'One landmark hotel. Two rooms. Two different Istanbul experiences.'}</h2>
+        <p className="text-[#53636d] leading-8 mt-7 max-w-4xl">{fr
+          ? 'Le Peninsula Istanbul illustre parfaitement pourquoi il ne suffit pas de rechercher « hôtel Bosphore » : le nom et l’emplacement de l’établissement ne garantissent pas l’orientation de la chambre. Voici deux catégories décrites sur son site officiel, à titre d’exemple — sans indication de tarif ou de disponibilité.'
+          : 'The Peninsula Istanbul shows why searching for a “Bosphorus hotel” is not enough: the hotel name and waterfront address do not guarantee the room’s orientation. Below are two room categories documented on its official website, presented as examples without prices or availability claims.'}</p>
+        <div className="grid md:grid-cols-2 gap-5 mt-10">
+          <article className="border border-[#d8cdbc] bg-[#fcfaf5] p-7 sm:p-9">
+            <p className="text-[#956f3e] text-xs font-semibold uppercase tracking-[.17em]">{fr ? 'Choix 1 · Le quartier en perspective' : 'Option 1 · Neighbourhood outlook'}</p>
+            <h3 className="font-serif text-3xl mt-4">Grand Deluxe Room</h3>
+            <p className="mt-4 text-[#425663] leading-7">{fr ? '57 à 80 m² selon le bâtiment et la chambre. La catégorie indiquée sur le site officiel est « City View » : elle regarde le quartier de Karaköy, et non le Bosphore.' : '57–80 m² depending on the building and room. The official category is described as “City View”, overlooking Karaköy rather than the Bosphorus.'}</p>
+            <p className="mt-4 text-sm text-[#8f6938] font-semibold">{fr ? 'Ce que l’on achète : l’espace et la ville, pas une vue mer.' : 'What you are choosing: space and the city, not a strait-facing view.'}</p>
+            <a href="https://www.peninsula.com/en/istanbul/luxury-hotel-room-suite-types/grand-deluxe-room" target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4 text-[#896538] mt-6 text-sm font-medium">{fr ? 'Vérifier la chambre sur le site officiel' : 'Verify the room on the official website'} ↗</a>
+          </article>
+          <article className="border border-[#bd9e6e] bg-white p-7 sm:p-9">
+            <p className="text-[#956f3e] text-xs font-semibold uppercase tracking-[.17em]">{fr ? 'Choix 2 · La terrasse face au détroit' : 'Option 2 · A balcony facing the strait'}</p>
+            <h3 className="font-serif text-3xl mt-4">Deluxe Bosphorus Suite with Balcony</h3>
+            <p className="mt-4 text-[#425663] leading-7">{fr ? '118 m² au total, avec un balcon privé de 15 m² donnant sur le Bosphore, selon la description officielle. C’est une expérience très différente, davantage tournée vers le temps passé dans la suite et sa vue.' : 'A 118 m² suite with a 15 m² private balcony overlooking the Bosphorus, according to the official description. This is a different experience, designed around time spent in the suite and its outlook.'}</p>
+            <p className="mt-4 text-sm text-[#8f6938] font-semibold">{fr ? 'Ce que l’on réserve : une catégorie explicitement décrite avec balcon et vue Bosphore.' : 'What to book: a category explicitly described with both balcony and Bosphorus view.'}</p>
+            <a href="https://www.peninsula.com/en/istanbul/luxury-hotel-room-suite-types/deluxe-bosphorus-suite-with-balcony" target="_blank" rel="noopener noreferrer" className="inline-block underline underline-offset-4 text-[#896538] mt-6 text-sm font-medium">{fr ? 'Vérifier la suite sur le site officiel' : 'Verify the suite on the official website'} ↗</a>
+          </article>
+        </div>
+        <p className="text-sm leading-7 text-[#53636d] mt-7">{fr ? 'Ces descriptions ne remplacent jamais la confirmation de la catégorie, des inclusions et des conditions en vigueur au moment de réserver.' : 'These descriptions never replace confirmation of the booked category, inclusions and prevailing terms at the time of purchase.'}</p>
       </div>
     </section>
 
