@@ -303,8 +303,8 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
     "slug": "dubai",
     "name": "Dubaï",
     "country": "Émirats arabes unis",
-    "hero": "marina",
-    "secondary": "panorama",
+    "hero": "west-beach-hero",
+    "secondary": "marina-yachts-bright",
     "eyebrowFr": "Luxe urbain & bord de mer",
     "eyebrowEn": "City glamour & coastline",
     "headingFr": "Dubaï, choisir son horizon.",
@@ -412,6 +412,42 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
       "Verify real room views and allow for peak-hour traffic."
     ],
     "photos": {
+      "west-beach-hero": {
+        "src": "/images/travel/dubai-premium/destination/west-beach-hero.webp",
+        "fr": "Palm West Beach, sa plage animée et la skyline de Dubaï dans la lumière dorée du soir",
+        "en": "Palm West Beach, a lively luxury beachfront against Dubai's warm sunset skyline",
+        "author": "Condé Nast Traveller Middle East",
+        "license": "Droits commerciaux déclarés par le client · restrictions à confirmer avant production",
+        "licenseUrl": "https://www.cntravellerme.com/story/dubai-sunset-spots-best-places-with-a-view",
+        "sourcePage": "https://www.cntravellerme.com/story/dubai-sunset-spots-best-places-with-a-view"
+      },
+      "palm-aerial-bright": {
+        "src": "/images/travel/dubai-premium/destination/palm-aerial-bright.webp",
+        "fr": "Palm Jumeirah vue du ciel, ses îles en forme de palme et ses eaux bleues",
+        "en": "Sunny aerial view of Palm Jumeirah's fronds and surrounding blue Gulf waters",
+        "author": "Abid Ali · Pexels",
+        "license": "Pexels License",
+        "licenseUrl": "https://www.pexels.com/license/",
+        "sourcePage": "https://www.pexels.com/photo/aerial-view-of-palm-jumeirah-10593605/"
+      },
+      "downtown-fountain-day": {
+        "src": "/images/travel/dubai-premium/destination/downtown-fountain-day.webp",
+        "fr": "Burj Khalifa et le bassin turquoise des fontaines de Downtown Dubaï, en plein jour",
+        "en": "Burj Khalifa above Downtown Dubai's turquoise fountain lake in daylight",
+        "author": "The Wandering Quinn",
+        "license": "Droits commerciaux déclarés par le client · restrictions à confirmer avant production",
+        "licenseUrl": "https://thewanderingquinn.com/5-day-dubai-itinerary/",
+        "sourcePage": "https://thewanderingquinn.com/5-day-dubai-itinerary/"
+      },
+      "marina-yachts-bright": {
+        "src": "/images/travel/dubai-premium/destination/marina-yachts-bright.webp",
+        "fr": "Yachts de Dubai Marina et gratte-ciel lumineux se reflétant dans l'eau",
+        "en": "Luxury yachts at Dubai Marina reflected in the bright waterfront skyline",
+        "author": "Dubai Celebrations",
+        "license": "Droits commerciaux déclarés par le client · restrictions à confirmer avant production",
+        "licenseUrl": "https://www.dubaicelebrations.com/blogs/dubai-marina-hidden-gems",
+        "sourcePage": "https://www.dubaicelebrations.com/blogs/dubai-marina-hidden-gems"
+      },
       "marina": {
         "src": "/images/travel/city-guides/dubai/marina.webp",
         "fr": "Dubai Marina photographiée de jour",
