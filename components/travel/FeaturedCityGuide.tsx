@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { featuredCityGuides, type FeaturedCityGuideData, type FeaturedCityPhoto } from '@/data/travel/featuredCityGuides';
 import { travelHref } from '@/lib/travel/i18n';
 import { bodrumHotelEditorial, bodrumAreaVisuals } from '@/data/travel/bodrumPremiumEditorial';
+import { antalyaHotelEditorial, antalyaAreaVisuals } from '@/data/travel/antalyaPremiumEditorial';
+const hotelEditorialByCity={bodrum:bodrumHotelEditorial,antalya:antalyaHotelEditorial} as const;
 
 type Lang = 'fr' | 'en';
 type Variant = 'destination' | 'hotels';
@@ -29,8 +31,8 @@ function CityPhoto({photo,locale,priority=false}: {photo:FeaturedCityPhoto;local
 
 
 /** The photo must depict THIS hotel. No implied room view, booking inventory or verified photo rights. */
-function BodrumHotelGallery({hotelName,locale,expanded=false}: {hotelName:string;locale:Lang;expanded?:boolean}) {
-  const entry=bodrumHotelEditorial[hotelName];
+function PremiumHotelGallery({hotelName,city,locale,expanded=false}: {hotelName:string;city:FeaturedCityGuideData['slug'];locale:Lang;expanded?:boolean}) {
+  const entry=city==='bodrum'||city==='antalya' ? hotelEditorialByCity[city][hotelName] : undefined;
   if(!entry || !entry.photos.length) return null;
   const photos=entry.photos;
   const first=photos[0];
@@ -53,8 +55,8 @@ function BodrumHotelGallery({hotelName,locale,expanded=false}: {hotelName:string
   </figure>;
 }
 
-function BodrumAreaPhoto({index,locale}: {index:number;locale:Lang}) {
-  const photo=bodrumAreaVisuals[index];
+function DestinationAreaPhoto({city,index,locale}: {city:FeaturedCityGuideData['slug'];index:number;locale:Lang}) {
+  const photo=city==='bodrum' ? bodrumAreaVisuals[index] : city==='antalya' ? antalyaAreaVisuals[index] : null;
   if(!photo)return null;
   return <figure className="mt-5">
     <div className="relative aspect-[16/10] overflow-hidden bg-[#e8dfd0]">
@@ -64,7 +66,7 @@ function BodrumAreaPhoto({index,locale}: {index:number;locale:Lang}) {
     <figcaption className="mt-2 text-[11px] leading-5 text-[#66737a]">
       {locale==='fr'?photo.fr:photo.en} ·{' '}
       <a href={photo.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{photo.credit}</a>
-      {' · '}{locale==='fr'?'Image d’un hôtel du secteur, non une vue générique':'Photo of a local hotel, not a generic area view'}
+      {' · '}{locale==='fr'?'Photographie documentée du secteur':'Documented local-area photograph'}
     </figcaption>
   </figure>;
 }
@@ -88,11 +90,11 @@ function HotelTeaser({ guide, locale }: {guide:FeaturedCityGuideData;locale:Lang
         {guide.hotels.map((hotel,index)=><article key={hotel.name} className="flex flex-col bg-white p-6">
           <span className="text-xs tracking-[.15em] text-[#9b794b]">{String(index+1).padStart(2,'0')} · {hotel.area}</span>
           <h3 className="mt-4 font-serif text-2xl">{hotel.name}</h3>
-          {guide.slug==='bodrum' && <BodrumHotelGallery hotelName={hotel.name} locale={locale}/>}
+          {(guide.slug==='bodrum'||guide.slug==='antalya') && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale}/>}
           <p className="mt-4 text-sm leading-7 text-[#53636a]">{fr?hotel.fr:hotel.en}</p>
-          {guide.slug==='bodrum' && bodrumHotelEditorial[hotel.name] && <p className="mt-4 border-l-2 border-[#bb9867] pl-3 text-xs leading-6 text-[#5d6a71]">
+          {(guide.slug==='bodrum'||guide.slug==='antalya') && hotelEditorialByCity[guide.slug][hotel.name] && <p className="mt-4 border-l-2 border-[#bb9867] pl-3 text-xs leading-6 text-[#5d6a71]">
             <strong>{fr?'Pour qui ? ':'Best suited to: '}</strong>
-            {fr?bodrumHotelEditorial[hotel.name].frBest:bodrumHotelEditorial[hotel.name].enBest}
+            {fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'][hotel.name].frBest:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'][hotel.name].enBest}
           </p>}
         </article>)}
       </div>
@@ -115,15 +117,15 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
         <p className="text-xs uppercase tracking-[.14em] text-[#9a7849]">
           {String(i+1).padStart(2,'0')} · {hotel.area}</p>
         <h3 className="mt-4 font-serif text-3xl">{hotel.name}</h3>
-        {guide.slug==='bodrum' && <BodrumHotelGallery hotelName={hotel.name} locale={locale} expanded />}
+        {(guide.slug==='bodrum'||guide.slug==='antalya') && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale} expanded />}
         <p className="mt-6 leading-8 text-[#475862]">{fr?hotel.fr:hotel.en}</p>
-        {guide.slug==='bodrum' && bodrumHotelEditorial[hotel.name] && <div className="mt-7 border-t border-[#e7dac9] pt-6">
+        {(guide.slug==='bodrum'||guide.slug==='antalya') && hotelEditorialByCity[guide.slug][hotel.name] && <div className="mt-7 border-t border-[#e7dac9] pt-6">
           <h4 className="font-serif text-xl">{fr?'Notre lecture de cette adresse':'Our take on this address'}</h4>
           <p className="mt-4 text-sm leading-8 text-[#51616b]">
-            {fr?bodrumHotelEditorial[hotel.name].frStory:bodrumHotelEditorial[hotel.name].enStory}
+            {fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'][hotel.name].frStory:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'][hotel.name].enStory}
           </p>
           <p className="mt-5 text-sm leading-7 font-medium text-[#7d603b]">
-            {fr?'À privilégier pour : ':'Best for: '}{fr?bodrumHotelEditorial[hotel.name].frBest:bodrumHotelEditorial[hotel.name].enBest}
+            {fr?'À privilégier pour : ':'Best for: '}{fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'][hotel.name].frBest:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'][hotel.name].enBest}
           </p>
         </div>}
         <p className="mt-6 border-l-2 border-[#b18c55] pl-4 text-sm leading-7 text-[#53636c]">
@@ -176,18 +178,17 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           : <div className="absolute inset-0 bg-gradient-to-r from-[#081d28]/95 via-[#081d28]/75 to-[#081d28]/25"/>}
       </div>
       <div className="relative mx-auto max-w-7xl px-5 pb-28 pt-16 sm:pb-40 sm:pt-28">
-        <div className={city.slug === 'bodrum' ? 'max-w-[900px] rounded-2xl border border-white/10 bg-[#091c24]/65 px-5 py-7 shadow-2xl backdrop-blur-[3px] sm:px-10 sm:py-9' : ''}>
+        <div className={(city.slug === 'bodrum'||city.slug === 'antalya') ? 'max-w-[900px] rounded-2xl border border-white/10 bg-[#091c24]/65 px-5 py-7 shadow-2xl backdrop-blur-[3px] sm:px-10 sm:py-9' : ''}>
         <p className="text-xs uppercase tracking-[.25em] text-[#f1cc8f]">Bosphoras · Luxury Stays
           {' / '}{fr?city.eyebrowFr:city.eyebrowEn}</p>
-        <h1 className={city.slug === 'bodrum' ? 'mt-9 max-w-4xl font-serif text-4xl leading-tight text-white [text-shadow:0_3px_14px_rgba(0,0,0,0.65)] sm:text-6xl lg:text-7xl' : 'mt-9 max-w-4xl font-serif text-4xl leading-tight sm:text-6xl lg:text-7xl'}>
+        <h1 className={(city.slug === 'bodrum'||city.slug === 'antalya') ? 'mt-9 max-w-4xl font-serif text-4xl leading-tight text-white [text-shadow:0_3px_14px_rgba(0,0,0,0.65)] sm:text-6xl lg:text-7xl' : 'mt-9 max-w-4xl font-serif text-4xl leading-tight sm:text-6xl lg:text-7xl'}>
           {hotelPage?(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.')
             :(fr?city.headingFr:city.headingEn)}</h1>
-        {city.slug==='bodrum' && <p className="mt-4 text-xs text-[#efe0c7]">
-          {fr?'Paysage : une crique de la péninsule de Bodrum':'Landscape: a cove on the Bodrum Peninsula'} ·{' '}
-          <a href="https://www.luxurytribune.com/en/bulgari-hotels-resorts-opens-a-new-address-in-turkey"
-             rel="noopener noreferrer" target="_blank" className="underline underline-offset-2">Luxury Tribune</a>
+        {(city.slug==='bodrum'||city.slug==='antalya') && <p className="mt-4 text-xs text-[#efe0c7]">
+          {city.slug==='bodrum'?(fr?'Paysage : une crique de la péninsule de Bodrum':'Landscape: a Bodrum Peninsula cove'):(fr?'Paysage : plage de Konyaaltı à Antalya':'Landscape: Konyaaltı Beach in Antalya')} ·{' '}
+          <a href={hero.sourcePage} rel="noopener noreferrer" target="_blank" className="underline underline-offset-2">{hero.author}</a>
         </p>}
-        <p className={city.slug === 'bodrum' ? 'mt-8 max-w-3xl text-lg leading-8 text-white [text-shadow:0_2px_8px_rgba(0,0,0,0.65)]' : 'mt-8 max-w-3xl text-lg leading-8 text-[#e4e8e5]'}>
+        <p className={(city.slug === 'bodrum'||city.slug === 'antalya') ? 'mt-8 max-w-3xl text-lg leading-8 text-white [text-shadow:0_2px_8px_rgba(0,0,0,0.65)]' : 'mt-8 max-w-3xl text-lg leading-8 text-[#e4e8e5]'}>
           {hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}</p>
         </div>
         <div className="mt-10 flex flex-wrap gap-3">
@@ -223,7 +224,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         {city.areas.map((area,i)=><article key={area.name} className="flex flex-col border border-[#e6ddce] bg-white p-7">
           <p className="font-serif text-3xl text-[#b18f59]">{String(i+1).padStart(2,'0')}</p>
           <h3 className="mt-5 font-serif text-2xl">{fr?area.name:area.enName}</h3>
-          {city.slug==='bodrum' && <BodrumAreaPhoto index={i} locale={locale}/>}
+          {(city.slug==='bodrum'||city.slug==='antalya') && <DestinationAreaPhoto city={city.slug} index={i} locale={locale}/>}
           <p className="mt-5 text-sm leading-7 text-[#4c606b]">{fr?area.fr:area.en}</p>
           <p className="mt-auto border-t border-[#e7dfd2] pt-5 text-sm leading-7 text-[#786145]">{fr?area.frWatch:area.enWatch}</p>
         </article>)}
