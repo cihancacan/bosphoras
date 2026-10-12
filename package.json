@@ -13,6 +13,7 @@
     "seo:submit": "node scripts/submit-indexnow.mjs"
   },
   "dependencies": {
+    "@grpc/grpc-js": "^1.14.6",
     "@hookform/resolvers": "^3.9.0",
     "@netlify/plugin-nextjs": "^5.15.1",
     "@next/swc-wasm-nodejs": "13.5.1",
@@ -47,6 +48,7 @@
     "@types/node": "20.6.2",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
+    "ai": "^7.0.0",
     "autoprefixer": "10.4.15",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -55,6 +57,7 @@
     "embla-carousel-react": "^8.3.0",
     "eslint": "8.49.0",
     "eslint-config-next": "13.5.1",
+    "grpc-js-reflection-client": "^1.4.2",
     "input-otp": "^1.2.4",
     "lucide-react": "^0.446.0",
     "next": "13.5.1",
@@ -74,7 +77,6 @@
     "tailwindcss-animate": "^1.0.7",
     "typescript": "5.2.2",
     "vaul": "^0.9.9",
-    "zod": "^3.23.8",
-    "ai": "^7.0.0"
+    "zod": "^3.23.8"
   }
 }
