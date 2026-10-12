@@ -60,7 +60,7 @@ JOBS = [
  ["https://images.etihadholidays.com/background-lg/rms.etihadholidays.com/storage/1566988/2.jpg"],["beach","pool","sun loungers","private beach"]),
  ("jumeirah-al-naseem","al-naseem-ocean-suite","suite",
  "https://www.jumeirah.com/en/stay/dubai/jumeirah-al-naseem/accommodation",
- ["https://y.cdrst.com/foto/hotel-sf/9fa26/granderesp/jumeirah-al-naseem-general-1233d40f.jpg"],["ocean suite","room","suite","interior"]),
+ ["https://cdn.jumeirah.com/-/mediadh/dh/hospitality/jumeirah/hotels/dubai/jumeirah-al-naseem/rooms/jan/gulf-ocean-suite/jan-room-detail-gallery-2___gulf-ocean-suite.jpeg?h=1080&modified=20240423044318&w=1620"],["ocean suite","room","suite","interior"]),
 ]
 
 BAD = ("logo","icon","avatar","sprite","signature","favicon","placeholder","map","svg","button","arrow","cookie","profile","restaurant dish","food","portrait")
