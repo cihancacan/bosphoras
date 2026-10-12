@@ -183,7 +183,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           {fr?'Photo : hôtel Mandarin Oriental, Bodrum':'Photo: Mandarin Oriental, Bodrum'} ·{' '}
           <a href="https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery"
              rel="noopener noreferrer" target="_blank" className="underline underline-offset-2">{fr?'galerie officielle':'official gallery'}</a>
-        </p>
+        </p>}
         <p className="mt-8 max-w-3xl text-lg leading-8 text-[#e4e8e5]">
           {hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}</p>
         <div className="mt-10 flex flex-wrap gap-3">
