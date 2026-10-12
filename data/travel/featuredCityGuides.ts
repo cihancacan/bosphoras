@@ -161,7 +161,7 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
     "slug": "antalya",
     "name": "Antalya",
     "country": "Turquie",
-    "hero": "beach",
+    "hero": "golden-hour",
     "secondary": "harbour",
     "eyebrowFr": "La Méditerranée turque",
     "eyebrowEn": "The Turkish Mediterranean",
@@ -270,6 +270,15 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
       "Airport transfers, golf access and any course maintenance."
     ],
     "photos": {
+      "golden-hour": {
+        "src": "/images/travel/city-guides/antalya/antalya-golden-hour-hero.webp",
+        "fr": "Illustration éditoriale au soleil couchant inspirée de la côte d’Antalya, générée par IA",
+        "en": "AI-generated warm sunset editorial illustration inspired by the Antalya coastline",
+        "author": "Bosphoras Luxury Stays · création assistée par IA",
+        "license": "Illustration artistique, non une photographie réelle",
+        "licenseUrl": "https://openai.com/policies/terms-of-use/",
+        "sourcePage": "https://openai.com/index/image-generation/"
+      },
       "beach": {
         "src": "/images/travel/city-guides/antalya/beach.webp",
         "fr": "La plage de Konyaaltı à Antalya",
