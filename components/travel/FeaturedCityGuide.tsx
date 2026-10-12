@@ -179,6 +179,8 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="100vw" className="object-cover" />
         {city.slug === 'bodrum'
           ? <div className="absolute inset-0 bg-gradient-to-r from-[#07171d]/95 via-[#101f24]/72 to-[#142933]/15"/>
+          : city.slug === 'antalya'
+          ? <div className="absolute inset-0 bg-gradient-to-r from-[#111e25]/80 via-[#1a2730]/35 to-transparent"/>
           : <div className="absolute inset-0 bg-gradient-to-r from-[#081d28]/95 via-[#081d28]/75 to-[#081d28]/25"/>}
       </div>
       <div className="relative mx-auto max-w-7xl px-5 pb-28 pt-16 sm:pb-40 sm:pt-28">
@@ -189,8 +191,10 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           {hotelPage?(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.')
             :(fr?city.headingFr:city.headingEn)}</h1>
         {(city.slug==='bodrum'||city.slug==='antalya') && <p className="mt-4 text-xs text-[#efe0c7]">
-          {city.slug==='bodrum'?(fr?'Paysage : une crique de la péninsule de Bodrum':'Landscape: a Bodrum Peninsula cove'):(fr?'Paysage : plage de Konyaaltı à Antalya':'Landscape: Konyaaltı Beach in Antalya')} ·{' '}
-          <a href={hero.sourcePage} rel="noopener noreferrer" target="_blank" className="underline underline-offset-2">{hero.author}</a>
+          {city.slug==='bodrum'?(fr?'Paysage : une crique de la péninsule de Bodrum':'Landscape: a Bodrum Peninsula cove'):(fr?'Illustration IA inspirée d’Antalya · Vue artistique, non photographique':'AI illustration inspired by Antalya · Artistic view, not a photograph')} ·{' '}
+          {city.slug==='bodrum'
+            ? <a href={hero.sourcePage} rel="noopener noreferrer" target="_blank" className="underline underline-offset-2">{hero.author}</a>
+            : <span>{hero.author}</span>}
         </p>}
         <p className={(city.slug === 'bodrum'||city.slug === 'antalya') ? 'mt-8 max-w-3xl text-lg leading-8 text-white [text-shadow:0_2px_8px_rgba(0,0,0,0.65)]' : 'mt-8 max-w-3xl text-lg leading-8 text-[#e4e8e5]'}>
           {hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}</p>
