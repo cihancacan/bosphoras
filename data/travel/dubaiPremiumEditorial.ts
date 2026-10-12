@@ -12,7 +12,7 @@ export const dubaiHotelEditorial:Record<string,BodrumHotelEditorial>={
   'The Lana · Dorchester Collection':{
     photos:[
       hotelPhoto('the-lana','lana-marasi-exterior','L’architecture du Lana au bord de Marasi Bay, Dubaï','The Lana architecture on Dubai’s Marasi Bay waterfront','https://www.dorchestercollection.com/dubai','The Lana · Dorchester Collection'),
-      hotelPhoto('the-lana','lana-rooftop-pool','La piscine panoramique de High Society au Lana','The Lana’s High Society rooftop infinity pool','https://www.dorchestercollection.com/dubai/the-lana/pool','The Lana · Dorchester Collection'),
+      hotelPhoto('the-lana','lana-rooftop-pool','La piscine panoramique de High Society au Lana','The Lana’s High Society rooftop infinity pool','https://theroomscollection.com/news/openings/dorchester-collection-opens-first-hotel-in-the-middle-east/','The Rooms Collection · The Lana'),
       hotelPhoto('the-lana','lana-marina-suite','Salon de la Marina Royal Suite au Lana','Marina Royal Suite living room at The Lana','https://www.dorchestercollection.com/dubai/the-lana/rooms-suites/the-marina-royal-suite','The Lana · Dorchester Collection')
     ],
     credit:'The Lana · Dorchester Collection',
@@ -24,7 +24,7 @@ export const dubaiHotelEditorial:Record<string,BodrumHotelEditorial>={
   },
   'One&Only One Za\'abeel':{
     photos:[
-      hotelPhoto('one-only-zaabeel','zaabeel-exterior','Les tours One Za’abeel et leur passerelle suspendue à Dubaï','One Za’abeel towers and suspended Link above Dubai','https://www.oneandonlyresorts.com/one-zaabeel','One&Only One Za’abeel · site officiel'),
+      hotelPhoto('one-only-zaabeel','zaabeel-exterior','Les tours One Za’abeel et leur passerelle suspendue à Dubaï','One Za’abeel towers and suspended Link above Dubai','https://www.admagazine.fr/galerie/piscines-rooftop-plus-hautes-monde','AD Magazine · One Za’abeel'),
       hotelPhoto('one-only-zaabeel','zaabeel-infinity-pool','Piscine suspendue au niveau de The Link entre les tours One Za’abeel','Suspended Link infinity pool between the One Za’abeel towers','https://www.architecturaldigest.com/story/the-dubai-skyline-sets-a-new-record','One&Only One Za’abeel · site officiel'),
       hotelPhoto('one-only-zaabeel','zaabeel-suite','Une suite contemporaine du One&Only One Za’abeel','Contemporary suite at One&Only One Za’abeel','https://www.oneandonlyresorts.com/one-zaabeel/accommodation','One&Only One Za’abeel · site officiel')
     ],
@@ -37,8 +37,8 @@ export const dubaiHotelEditorial:Record<string,BodrumHotelEditorial>={
   },
   'Atlantis The Royal':{
     photos:[
-      hotelPhoto('atlantis-the-royal','atlantis-architecture','Façade monumentale et jardins du resort Atlantis The Royal à Palm Jumeirah','Atlantis The Royal landmark resort architecture on Palm Jumeirah','https://www.atlantis.com/dubai/atlantis-the-royal','Atlantis The Royal · site officiel'),
-      hotelPhoto('atlantis-the-royal','atlantis-cloud22-pool','Piscine suspendue Cloud 22 à Atlantis The Royal','Elevated Cloud 22 pool at Atlantis The Royal','https://www.atlantis.com/dubai/atlantis-the-royal/experiences/pools-and-beaches','Atlantis The Royal · site officiel'),
+      hotelPhoto('atlantis-the-royal','atlantis-architecture','Façade monumentale et jardins du resort Atlantis The Royal à Palm Jumeirah','Atlantis The Royal landmark resort architecture on Palm Jumeirah','https://www.ssyenc.com/en/business/overseas/view/759','Ssangyong Engineering & Construction · Atlantis The Royal'),
+      hotelPhoto('atlantis-the-royal','atlantis-cloud22-pool','Piscine suspendue Cloud 22 à Atlantis The Royal','Elevated Cloud 22 pool at Atlantis The Royal','https://www.squaremeal.ae/restaurants/best-for/restaurants-atlantis-the-royal-hotel-dubai-guide_62','SquareMeal · Cloud 22 Atlantis The Royal'),
       hotelPhoto('atlantis-the-royal','atlantis-sky-pool-villa','Salon d’une Sky Pool Villa avec vue sur la mer à Atlantis The Royal','Sea-facing Sky Pool Villa living room at Atlantis The Royal','https://tjctravel.vn/products/atlantis-the-royal-dubai','Atlantis The Royal · site officiel')
     ],
     credit:'Atlantis The Royal · site officiel',
