@@ -10,8 +10,8 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
     "slug": "bodrum",
     "name": "Bodrum",
     "country": "Turquie",
-    "hero": "marina",
-    "secondary": "harbour",
+    "hero": "paradise-bay",
+    "secondary": "edition-pool",
     "eyebrowFr": "La Riviera égéenne",
     "eyebrowEn": "The Aegean Riviera",
     "headingFr": "Bodrum, le luxe a le goût de la mer.",
@@ -119,6 +119,24 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
       "Yacht departure harbour and fuel policy if planning a day on the water."
     ],
     "photos": {
+      "paradise-bay": {
+        "src": "/images/travel/bodrum-premium/mandarin-oriental/mandarin-paradise-bay-terrace.webp",
+        "fr": "L'élégance des terrasses de Mandarin Oriental à Paradise Bay",
+        "en": "The elegant waterfront terraces at Mandarin Oriental, Paradise Bay",
+        "author": "Mandarin Oriental, Bodrum",
+        "license": "Photo de galerie officielle · usage à confirmer",
+        "licenseUrl": "https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery",
+        "sourcePage": "https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery"
+      },
+      "edition-pool": {
+        "src": "/images/travel/bodrum-premium/the-bodrum-edition/edition-infinity-pool.webp",
+        "fr": "La piscine à débordement du Bodrum EDITION",
+        "en": "The infinity pool at The Bodrum EDITION",
+        "author": "The Bodrum EDITION / Marriott",
+        "license": "Photo de galerie officielle · usage à confirmer",
+        "licenseUrl": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/",
+        "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+      },
       "marina": {
         "src": "/images/travel/city-guides/bodrum/marina.webp",
         "fr": "La marina de Yalıkavak photographiée en journée",
