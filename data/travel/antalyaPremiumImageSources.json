@@ -1,8 +1,8 @@
 {
   "scope": "Antalya editorial images; staging feature branch only",
-  "timestamp": "2026-10-12T22:13:58.524176+00:00",
-  "expected": 13,
-  "downloaded": 13,
+  "timestamp": "2026-10-12T22:18:24.578769+00:00",
+  "expected": 14,
+  "downloaded": 14,
   "items": [
     {
       "hotel": "regnum-carya",
@@ -218,6 +218,24 @@
       "outputHeight": 894,
       "bytes": 172108,
       "sha256": "104e118eccadff01699d5128d1db9af3a976524f8b0fd62f76030b79650c6cff",
+      "transformations": "EXIF orientation, aspect validation, resized and WebP quality 86"
+    },
+    {
+      "hotel": "destination",
+      "file": "belek-coast.webp",
+      "localPath": "/images/travel/antalya-premium/destination/belek-coast.webp",
+      "sourcePage": "https://www.tourbelek.com/",
+      "downloadUrl": "https://www.tourbelek.com/Content/images/userfiles/images/belek-beach-and-hotel-area.webp",
+      "credit": "TourBelek · Belek coastline panorama",
+      "scene": "Belek sandy coastline and resorts",
+      "rights": "user reports project permission; third-party restrictions not independently verified",
+      "status": "downloaded",
+      "sourceWidth": 800,
+      "sourceHeight": 518,
+      "outputWidth": 800,
+      "outputHeight": 518,
+      "bytes": 121860,
+      "sha256": "c0d447603176a30a6350d8f61155da7fb857d22ac8cdf7bef397e89c64654cde",
       "transformations": "EXIF orientation, aspect validation, resized and WebP quality 86"
     },
     {
