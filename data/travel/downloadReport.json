@@ -1,0 +1,381 @@
+{
+  "source": "Bosphoras Travel Istanbul editorial pilot",
+  "scope": "feature branch / 9 selected Istanbul hotels",
+  "note": "User stated image reuse is authorized; rights were not independently verified.",
+  "attempted": 37,
+  "downloaded": 25,
+  "unavailable": 12,
+  "items": [
+    {
+      "filename": "ciragan-01-hero.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://storage.kempinski.com/cdn-cgi/image/w%3D1920%2Cf%3Dauto%2Cg%3Dauto%2Cfit%3Dscale-down/ki-cms-prod/images/9/0/0/5/2025009-1-eng-GB/1615764249be-Ciragan-Palace-Kempinski-Istanbul-copyright-Kempinski-Hotels.jpg",
+      "downloadedFrom": "https://storage.kempinski.com/cdn-cgi/image/w%3D1920%2Cf%3Dauto%2Cg%3Dauto%2Cfit%3Dscale-down/ki-cms-prod/images/9/0/0/5/2025009-1-eng-GB/1615764249be-Ciragan-Palace-Kempinski-Istanbul-copyright-Kempinski-Hotels.jpg",
+      "localPath": "/images/travel/istanbul/ciragan/ciragan-01-hero.webp",
+      "sourceWidth": 1920,
+      "sourceHeight": 956,
+      "bytes": 238206,
+      "sha256": "df1aabab5f1aa9911fb16ad8d3a067bc03feb3a9b0f000f7a38c0d17520ad879"
+    },
+    {
+      "filename": "ciragan-02-palace.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://storage.kempinski.com/cdn-cgi/image/w%3D1920%2Cf%3Dauto%2Cfit%3Dscale-down%2Cg%3Dauto/ki-cms-prod/images/7/9/9/1/16421997-1-eng-GB/e0755ba91296-80352851_4K.jpg",
+      "downloadedFrom": "https://storage.kempinski.com/cdn-cgi/image/w%3D1920%2Cf%3Dauto%2Cfit%3Dscale-down%2Cg%3Dauto/ki-cms-prod/images/7/9/9/1/16421997-1-eng-GB/e0755ba91296-80352851_4K.jpg",
+      "localPath": "/images/travel/istanbul/ciragan/ciragan-02-palace.webp",
+      "sourceWidth": 1920,
+      "sourceHeight": 1438,
+      "bytes": 171962,
+      "sha256": "c55f9e3badee1f3ea02f4e9857e8215e7e6623325fc154f3a8af338fd120d56f"
+    },
+    {
+      "filename": "ciragan-03-hotel.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://storage.kempinski.com/cdn-cgi/image/w%3D1920%2Cf%3Dauto%2Cfit%3Dscale-down%2Cg%3Dauto/ki-cms-prod/images/8/7/4/9/179478-1-eng-GB/af84e187d7a6-73657607_4K.jpg",
+      "downloadedFrom": "https://storage.kempinski.com/cdn-cgi/image/w%3D1920%2Cf%3Dauto%2Cfit%3Dscale-down%2Cg%3Dauto/ki-cms-prod/images/8/7/4/9/179478-1-eng-GB/af84e187d7a6-73657607_4K.jpg",
+      "localPath": "/images/travel/istanbul/ciragan/ciragan-03-hotel.webp",
+      "sourceWidth": 1920,
+      "sourceHeight": 1279,
+      "bytes": 301578,
+      "sha256": "ea69c7029e50b96ff15b54781053fae59d6d1aae151b8fd26bac8a923667769a"
+    },
+    {
+      "filename": "ciragan-04-interior.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://storage.kempinski.com/cdn-cgi/image/w%3D1920%2Cf%3Dauto%2Cfit%3Dscale-down%2Cg%3Dauto/ki-cms-prod/images/7/3/0/2/16422037-1-eng-GB/239975ddf049-80352843_4K.jpg",
+      "downloadedFrom": "https://storage.kempinski.com/cdn-cgi/image/w%3D1920%2Cf%3Dauto%2Cfit%3Dscale-down%2Cg%3Dauto/ki-cms-prod/images/7/3/0/2/16422037-1-eng-GB/239975ddf049-80352843_4K.jpg",
+      "localPath": "/images/travel/istanbul/ciragan/ciragan-04-interior.webp",
+      "sourceWidth": 1920,
+      "sourceHeight": 1437,
+      "bytes": 277158,
+      "sha256": "8d4790832294e0338604c12ce45bfc175e55548b2ea1b43066a172e792ac4ce3"
+    },
+    {
+      "filename": "ciragan-05-details.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://storage.kempinski.com/cdn-cgi/image/w%3D1920%2Cf%3Dauto%2Cfit%3Dscale-down%2Cg%3Dauto/ki-cms-prod/images/8/1/1/9/179118-1-eng-GB/8be20947a472-73657673_4K.jpg",
+      "downloadedFrom": "https://storage.kempinski.com/cdn-cgi/image/w%3D1920%2Cf%3Dauto%2Cfit%3Dscale-down%2Cg%3Dauto/ki-cms-prod/images/8/1/1/9/179118-1-eng-GB/8be20947a472-73657673_4K.jpg",
+      "localPath": "/images/travel/istanbul/ciragan/ciragan-05-details.webp",
+      "sourceWidth": 1920,
+      "sourceHeight": 1188,
+      "bytes": 175594,
+      "sha256": "4e111d8875d0ef72b3baff134fdc7cc46f23eb936c78691107791ea084c19be1"
+    },
+    {
+      "filename": "four-seasons-bosphorus-01-hero.jpg",
+      "status": "unavailable",
+      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-38%2C7500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP_266_original.jpg",
+      "errors": [
+        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-38%2C7500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP_"
+      ]
+    },
+    {
+      "filename": "four-seasons-bosphorus-02-waterfront.jpg",
+      "status": "unavailable",
+      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-0%2C0000-1674%2C6667-942%2C0000/publish/content/dam/fourseasons/images/web/BOP/BOP_269_original.jpg",
+      "errors": [
+        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-0%2C0000-1674%2C6667-942%2C0000/publish/content/dam/fourseasons/images/web/BOP/BOP_26"
+      ]
+    },
+    {
+      "filename": "four-seasons-bosphorus-03-yali.jpg",
+      "status": "unavailable",
+      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP_1455_original.jpg",
+      "errors": [
+        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP"
+      ]
+    },
+    {
+      "filename": "four-seasons-bosphorus-04-room.jpg",
+      "status": "unavailable",
+      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP_002_original.jpg",
+      "errors": [
+        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP"
+      ]
+    },
+    {
+      "filename": "four-seasons-bosphorus-05-pool.jpg",
+      "status": "unavailable",
+      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP_1025_original.jpg",
+      "errors": [
+        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP"
+      ]
+    },
+    {
+      "filename": "mandarin-oriental-01-hero.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://www.pasifika.es/Content/images/foto/%E2%80%8BMandarin-Oriental-Bosphorus-h1.jpg",
+      "downloadedFrom": "https://www.pasifika.es/Content/images/foto/%E2%80%8BMandarin-Oriental-Bosphorus-h1.jpg",
+      "localPath": "/images/travel/istanbul/mandarin-oriental/mandarin-oriental-01-hero.webp",
+      "sourceWidth": 1020,
+      "sourceHeight": 600,
+      "bytes": 138998,
+      "sha256": "dd58698be20820a11841ac050e340a73502e1c3bedc2cd29180424cefb0540c2"
+    },
+    {
+      "filename": "mandarin-oriental-02-suite.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://media.assettype.com/gulfnews%2Fimport%2F2024%2F05%2F31%2FMandarin-Bosphorus-Suite-Living-Room-FOR-WEB_18fcec901bd_large.jpg",
+      "downloadedFrom": "https://media.assettype.com/gulfnews%2Fimport%2F2024%2F05%2F31%2FMandarin-Bosphorus-Suite-Living-Room-FOR-WEB_18fcec901bd_large.jpg",
+      "localPath": "/images/travel/istanbul/mandarin-oriental/mandarin-oriental-02-suite.webp",
+      "sourceWidth": 750,
+      "sourceHeight": 563,
+      "bytes": 70234,
+      "sha256": "facd255bc72c38452326014fcb740134e38145b28761cc4d8a2572eeb1002336"
+    },
+    {
+      "filename": "mandarin-oriental-03-bedroom.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://ik.imgkit.net/3vlqs5axxjf/MC-Asia/uploadedImages/Articles/News/Event_Technology/Mandarin-Oriental-Bosphorus-Istanbul-One-Bedroom-Suite-resize.jpg?Anchor=MiddleCenter&height=700&mode=crop&tr=w-920%2Cfo-auto&width=1366",
+      "downloadedFrom": "https://ik.imgkit.net/3vlqs5axxjf/MC-Asia/uploadedImages/Articles/News/Event_Technology/Mandarin-Oriental-Bosphorus-Istanbul-One-Bedroom-Suite-resize.jpg?Anchor=MiddleCenter&height=700&mode=crop&tr=w-920%2Cfo-auto&width=1366",
+      "localPath": "/images/travel/istanbul/mandarin-oriental/mandarin-oriental-03-bedroom.webp",
+      "sourceWidth": 920,
+      "sourceHeight": 604,
+      "bytes": 58948,
+      "sha256": "2281d79a8785bc0baaffd27a45f5f62395ba66bb345941f7b2304fc695f6d725"
+    },
+    {
+      "filename": "mandarin-oriental-04-spa.jpg",
+      "status": "unavailable",
+      "sourceUrl": "https://istanbulhammam.com/wp-content/uploads/2024/11/the-spa-at-mandarin-oriental-bosphorus-istanbul-6.jpg",
+      "errors": [
+        "ValueError: redirect-outside-allowlist"
+      ]
+    },
+    {
+      "filename": "four-seasons-sultanahmet-01-hero.jpg",
+      "status": "unavailable",
+      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~75.701.270%2C5849-0%2C0000-2666%2C6667-2000%2C0000/publish/content/dam/fourseasons/images/web/IST/IST_894_original.jpg",
+      "errors": [
+        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~75.701.270%2C5849-0%2C0000-2666%2C6667-2000%2C0000/publish/content/dam/fourseasons/images/web/IST/IST_"
+      ]
+    },
+    {
+      "filename": "four-seasons-sultanahmet-02-dining.jpg",
+      "status": "unavailable",
+      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-312%2C5000-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST_794_original.jpg",
+      "errors": [
+        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-312%2C5000-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST"
+      ]
+    },
+    {
+      "filename": "four-seasons-sultanahmet-03-room.jpg",
+      "status": "unavailable",
+      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-311%2C4004-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST_799_original.jpg",
+      "errors": [
+        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-311%2C4004-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST"
+      ]
+    },
+    {
+      "filename": "four-seasons-sultanahmet-04-gardens.jpg",
+      "status": "unavailable",
+      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-247%2C5000-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST_811_original.jpg",
+      "errors": [
+        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-247%2C5000-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST"
+      ]
+    },
+    {
+      "filename": "four-seasons-sultanahmet-05-rooftop.jpg",
+      "status": "unavailable",
+      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-164%2C2504-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST_817_original.jpg",
+      "errors": [
+        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-164%2C2504-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST"
+      ]
+    },
+    {
+      "filename": "shangri-la-01-hero.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://www.turizmajansi.com/images/haber/shangri-la-bosphorus_30562.jpg",
+      "downloadedFrom": "https://www.turizmajansi.com/images/haber/shangri-la-bosphorus_30562.jpg",
+      "localPath": "/images/travel/istanbul/shangri-la/shangri-la-01-hero.webp",
+      "sourceWidth": 1200,
+      "sourceHeight": 900,
+      "bytes": 150518,
+      "sha256": "ed70618cfa56070b727b605ed7616c7b54920da431373b87bfef0a6a7fca4aa7"
+    },
+    {
+      "filename": "shangri-la-02-suite.jpg",
+      "status": "unavailable",
+      "sourceUrl": "https://byconnoisseur.com/wp-content/uploads/2023/06/Shangri-La-Istanbul-5.jpg",
+      "errors": [
+        "ConnectionError: HTTPSConnectionPool(host='byconnoisseur.com', port=443): Max retries exceeded with url: /wp-content/uploads/2023/06/Shangri-La-Istanbul-5.jpg (Caused by NameResolutionError(\"HTTPSC"
+      ]
+    },
+    {
+      "filename": "shangri-la-03-lobby.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://bynder.onthebeach.co.uk/cdn-cgi/image/width%3D1400%2Cquality%3D70%2Cfit%3Dcover%2Cformat%3Dauto/m/59eb1c07f036f6e3/original/Shangri-La-Bosphorus-Istanbul-Lobby-13.jpg",
+      "downloadedFrom": "https://bynder.onthebeach.co.uk/cdn-cgi/image/width%3D1400%2Cquality%3D70%2Cfit%3Dcover%2Cformat%3Dauto/m/59eb1c07f036f6e3/original/Shangri-La-Bosphorus-Istanbul-Lobby-13.jpg",
+      "localPath": "/images/travel/istanbul/shangri-la/shangri-la-03-lobby.webp",
+      "sourceWidth": 1400,
+      "sourceHeight": 933,
+      "bytes": 169568,
+      "sha256": "65b2867262f4f2a5db5e51b9419dd39281a2785fe8bcc865826e801bdca5a5ae"
+    },
+    {
+      "filename": "shangri-la-04-waterfront.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://sitecore-cd.shangri-la.com/-/media/Shangri-La/Corporate/dlp/hsbc-me-cardholder-exclusive/202407_HSBC-DLP_CB_SLIB.jpg?h=900&hash=1AE4FF376DBCB9C743D2E162A7DA8BFB&iar=0&w=1640",
+      "downloadedFrom": "https://sitecore-cd.shangri-la.com/-/media/Shangri-La/Corporate/dlp/hsbc-me-cardholder-exclusive/202407_HSBC-DLP_CB_SLIB.jpg?h=900&hash=1AE4FF376DBCB9C743D2E162A7DA8BFB&iar=0&w=1640",
+      "localPath": "/images/travel/istanbul/shangri-la/shangri-la-04-waterfront.webp",
+      "sourceWidth": 1640,
+      "sourceHeight": 900,
+      "bytes": 196286,
+      "sha256": "b1fd1eaeec3f1984fb449b0d6bd8f6b8b98f15dd9e13d5b03c72d969831e94d9"
+    },
+    {
+      "filename": "raffles-01-hero.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://m.ahstatic.com/is/image/accorhotels/HCM_P_0004110?dpr=off&qlt=82&ts=1768892155290",
+      "downloadedFrom": "https://m.ahstatic.com/is/image/accorhotels/HCM_P_0004110?dpr=off&qlt=82&ts=1768892155290",
+      "localPath": "/images/travel/istanbul/raffles/raffles-01-hero.webp",
+      "sourceWidth": 1280,
+      "sourceHeight": 875,
+      "bytes": 160320,
+      "sha256": "197b0104db23c057b764b49a656db8d364794b089bbeeba3f51c084cc090ca92"
+    },
+    {
+      "filename": "raffles-02-art.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6620-03?dpr=on%2C2.625&qlt=82&ts=1760836887393&wid=575",
+      "downloadedFrom": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6620-03?dpr=on%2C2.625&qlt=82&ts=1760836887393&wid=575",
+      "localPath": "/images/travel/istanbul/raffles/raffles-02-art.webp",
+      "sourceWidth": 1510,
+      "sourceHeight": 925,
+      "bytes": 213370,
+      "sha256": "dba8f02346e0364bf0cc8d88cbc5a9f0242660d8d53e9c01956a1484103ca122"
+    },
+    {
+      "filename": "raffles-03-suite.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://media.cntraveler.com/photos/669143303bd402141027459b/16%3A9/w_2560%2Cc_limit/Raffles%20Istanbul_Bosphorus%20Suite.jpg",
+      "downloadedFrom": "https://media.cntraveler.com/photos/669143303bd402141027459b/16%3A9/w_2560%2Cc_limit/Raffles%20Istanbul_Bosphorus%20Suite.jpg",
+      "localPath": "/images/travel/istanbul/raffles/raffles-03-suite.webp",
+      "sourceWidth": 2560,
+      "sourceHeight": 1440,
+      "bytes": 140502,
+      "sha256": "b6e874af368796bde10adb64cca17f72668ba26c1dc87ae21d8def996a7080e0"
+    },
+    {
+      "filename": "raffles-04-spa.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://img.skininc.com/files/base/allured/all/image/2025/03/Raffles_Spa_at_Raffles_Istanbul___Credit_Raffles_Spa_at_Raffles_Istanbul.67d454b06a2c6.png?auto=format%2Ccompress&dpr=2&q=70&w=700",
+      "downloadedFrom": "https://img.skininc.com/files/base/allured/all/image/2025/03/Raffles_Spa_at_Raffles_Istanbul___Credit_Raffles_Spa_at_Raffles_Istanbul.67d454b06a2c6.png?auto=format%2Ccompress&dpr=2&q=70&w=700",
+      "localPath": "/images/travel/istanbul/raffles/raffles-04-spa.webp",
+      "sourceWidth": 1400,
+      "sourceHeight": 1050,
+      "bytes": 271074,
+      "sha256": "d22b431cb9bc4064bf28a1cf4db4b346af03cd62f0cae7dfc30f81a5ea79cf3a"
+    },
+    {
+      "filename": "st-regis-01-hero.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://cache.marriott.com/is/image/marriotts7prod/xr-istxr-hotel-exterior--22584-77790%3AWide-Hor?fit=constrain&wid=375",
+      "downloadedFrom": "https://cache.marriott.com/is/image/marriotts7prod/xr-istxr-hotel-exterior--22584-77790%3AWide-Hor?fit=constrain&wid=1200",
+      "localPath": "/images/travel/istanbul/st-regis/st-regis-01-hero.webp",
+      "sourceWidth": 1200,
+      "sourceHeight": 673,
+      "bytes": 83146,
+      "sha256": "e8e4b2e1017e8d96364d50eed13c3a6c999e2b9d9cd839242c084eb543c2374c"
+    },
+    {
+      "filename": "st-regis-02-atrium.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://cache.marriott.com/content/dam/marriott-renditions/ISTXR/istxr-atrium-6516-hor-wide.jpg?downsize=375px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "downloadedFrom": "https://cache.marriott.com/content/dam/marriott-renditions/ISTXR/istxr-atrium-6516-hor-wide.jpg?downsize=1200px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "localPath": "/images/travel/istanbul/st-regis/st-regis-02-atrium.webp",
+      "sourceWidth": 1200,
+      "sourceHeight": 675,
+      "bytes": 129198,
+      "sha256": "f145e0cf7b6913cea29fd63c64c60d33ada0a41e01ca77e83b6f3f8adceb8205"
+    },
+    {
+      "filename": "st-regis-03-suite.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://cache.marriott.com/content/dam/marriott-renditions/ISTXR/istxr-regis-suite-6544-hor-wide.jpg?downsize=375px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "downloadedFrom": "https://cache.marriott.com/content/dam/marriott-renditions/ISTXR/istxr-regis-suite-6544-hor-wide.jpg?downsize=1200px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "localPath": "/images/travel/istanbul/st-regis/st-regis-03-suite.webp",
+      "sourceWidth": 1200,
+      "sourceHeight": 675,
+      "bytes": 85670,
+      "sha256": "8ebd0a452708e68dbcfaa1c7e83adf6e6ed43119ef20b469ac7c02dee9ee33d1"
+    },
+    {
+      "filename": "st-regis-04-balcony.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://cache.marriott.com/content/dam/marriott-renditions/ISTXR/istxr-suite-balcony-3012-hor-wide.jpg?downsize=375px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "downloadedFrom": "https://cache.marriott.com/content/dam/marriott-renditions/ISTXR/istxr-suite-balcony-3012-hor-wide.jpg?downsize=1200px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "localPath": "/images/travel/istanbul/st-regis/st-regis-04-balcony.webp",
+      "sourceWidth": 1200,
+      "sourceHeight": 675,
+      "bytes": 214130,
+      "sha256": "c3243a99c4f11ce32d1d931d54c032b65eadd073720129647aba08af9292508f"
+    },
+    {
+      "filename": "st-regis-05-pool.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://cache.marriott.com/is/image/marriotts7prod/istxr-indoor-pool-3820%3AWide-Hor?fit=constrain&wid=750",
+      "downloadedFrom": "https://cache.marriott.com/is/image/marriotts7prod/istxr-indoor-pool-3820%3AWide-Hor?fit=constrain&wid=1200",
+      "localPath": "/images/travel/istanbul/st-regis/st-regis-05-pool.webp",
+      "sourceWidth": 1200,
+      "sourceHeight": 674,
+      "bytes": 106006,
+      "sha256": "3b0c6297212fc9606c20da5e830fc6ca21064f384fed12c99ff34a0d7c72ea77"
+    },
+    {
+      "filename": "ritz-carlton-01-hero.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://cache.marriott.com/content/dam/marriott-renditions/ISTRZ/istrz-tub-8161-hor-wide.jpg?downsize=750px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "downloadedFrom": "https://cache.marriott.com/content/dam/marriott-renditions/ISTRZ/istrz-tub-8161-hor-wide.jpg?downsize=750px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "localPath": "/images/travel/istanbul/ritz-carlton/ritz-carlton-01-hero.webp",
+      "sourceWidth": 750,
+      "sourceHeight": 421,
+      "bytes": 29594,
+      "sha256": "740d034ada5acc8f692fb5b3b443e9020c774145a77d90160dff2139b4bc66d0"
+    },
+    {
+      "filename": "ritz-carlton-02-room.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://cache.marriott.com/is/image/marriotts7prod/rz-istrz-trci-park-king-room-34217%3AWide-Hor?fit=constrain&wid=375",
+      "downloadedFrom": "https://cache.marriott.com/is/image/marriotts7prod/rz-istrz-trci-park-king-room-34217%3AWide-Hor?fit=constrain&wid=1200",
+      "localPath": "/images/travel/istanbul/ritz-carlton/ritz-carlton-02-room.webp",
+      "sourceWidth": 1200,
+      "sourceHeight": 675,
+      "bytes": 110932,
+      "sha256": "20c23a92aba161af5eb561cca13efa318055a793a3b45a064ae4fb2b38820588"
+    },
+    {
+      "filename": "ritz-carlton-03-balcony.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://cache.marriott.com/content/dam/marriott-renditions/ISTRZ/istrz-balcony-2024-hor-wide.jpg?downsize=375px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "downloadedFrom": "https://cache.marriott.com/content/dam/marriott-renditions/ISTRZ/istrz-balcony-2024-hor-wide.jpg?downsize=1200px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "localPath": "/images/travel/istanbul/ritz-carlton/ritz-carlton-03-balcony.webp",
+      "sourceWidth": 1200,
+      "sourceHeight": 675,
+      "bytes": 103100,
+      "sha256": "d6332315e5c2a9618d1fb22c81137ff0854334b4ecd855e9dd262c18abc190ce"
+    },
+    {
+      "filename": "ritz-carlton-04-suite.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://cache.marriott.com/content/dam/marriott-renditions/ISTRZ/istrz-suite-2183-hor-wide.jpg?downsize=375px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "downloadedFrom": "https://cache.marriott.com/content/dam/marriott-renditions/ISTRZ/istrz-suite-2183-hor-wide.jpg?downsize=1200px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "localPath": "/images/travel/istanbul/ritz-carlton/ritz-carlton-04-suite.webp",
+      "sourceWidth": 1200,
+      "sourceHeight": 675,
+      "bytes": 102526,
+      "sha256": "c0e853758e00bdb6a977fcde54a8f4d1a547a32e527b81286ce864e98542032f"
+    },
+    {
+      "filename": "ritz-carlton-05-view.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://cache.marriott.com/content/dam/marriott-renditions/ISTRZ/istrz-view-2016-hor-wide.jpg?downsize=375px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "downloadedFrom": "https://cache.marriott.com/content/dam/marriott-renditions/ISTRZ/istrz-view-2016-hor-wide.jpg?downsize=1200px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "localPath": "/images/travel/istanbul/ritz-carlton/ritz-carlton-05-view.webp",
+      "sourceWidth": 1200,
+      "sourceHeight": 675,
+      "bytes": 137866,
+      "sha256": "521c2bba79efc9c965d3dccd9d08417ee4aa34dc98d6764d1cde87abb69e49dc"
+    }
+  ]
+}
