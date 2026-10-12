@@ -1,0 +1,1369 @@
+{
+  "scope": "Bodrum only; official hospitality sites; review before publishing",
+  "hotels": {
+    "mandarin-oriental": {
+      "pages": [
+        {
+          "page": "https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery",
+          "status": 200,
+          "bytes": 1471839
+        },
+        {
+          "page": "https://www.mandarinoriental.com/en/bodrum/paradise-bay",
+          "status": 200,
+          "bytes": 1592861
+        },
+        {
+          "page": "https://press.mandarinoriental.com/bodrum/?lang=eng",
+          "status": 200,
+          "bytes": 83918
+        }
+      ],
+      "candidateCount": 5,
+      "candidates": [
+        {
+          "url": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/KkeV2ndoShmTc1B42m31.jpg",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery"
+        },
+        {
+          "url": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/bjqno34XYwY8nnPcgtki.jpg",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery"
+        },
+        {
+          "url": "https://press.mandarinoriental.com/wp-content/uploads/2026/09/3891f83b423da9f269d60adaf545c770-l.png",
+          "alt": "Mandarin Oriental and Globe-Trotter Unveil a Global Partnership Celebrating the Symbolic Art of Travel",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://press.mandarinoriental.com/bodrum/?lang=eng"
+        },
+        {
+          "url": "https://press.mandarinoriental.com/wp-content/uploads/2026/10/cd660c5ecefdda8cca2cb24e9554806d-l.jpg",
+          "alt": "Mandarin Oriental Exceptional Homes Continues Global Expansion into New Destinations",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://press.mandarinoriental.com/bodrum/?lang=eng"
+        },
+        {
+          "url": "https://press.mandarinoriental.com/wp-content/uploads/2024/10/797e19336875ac45265b0caa1e5f849f-l.jpg",
+          "alt": "banner post-2355",
+          "score": 3,
+          "source": "img",
+          "sourcePage": "https://press.mandarinoriental.com/bodrum/?lang=eng"
+        }
+      ]
+    },
+    "the-bodrum-edition": {
+      "pages": [
+        {
+          "page": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/",
+          "status": 200,
+          "bytes": 840818
+        },
+        {
+          "page": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/overview/",
+          "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/overview/"
+        }
+      ],
+      "candidateCount": 375,
+      "candidates": [
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/bjveb-infiniy-pool-8219:Wide-Hor?wid=1336&fit=constrain",
+          "alt": "og:image",
+          "score": 16,
+          "source": "og:image",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-bar-5542-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "Beach Bar",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-bar-5542-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "Beach Bar",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-bathroom-5551-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "Loft Sea View - Bathroom",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-bathroom-5551-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=750px:*",
+          "alt": "Loft Sea View - Bathroom",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-bathroom-5559-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "The Villa - Bathroom",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-bathroom-5559-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "The Villa - Bathroom",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-beach-5095-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-beach-5095-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=626px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-beach-5095-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "Beach Club",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-bedroom-5560-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "The Villa - Bedroom",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-bedroom-5560-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=750px:*",
+          "alt": "The Villa - Bedroom",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-bedroom-8081-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "The Villa Guest Bedroom",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-bedroom-8081-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "The Villa Guest Bedroom",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-deluxe-0003-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "Deluxe Garden View",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-deluxe-0003-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "Deluxe Garden View",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-exterior-5549-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-exterior-5549-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=626px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-exterior-5549-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "Exterior",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-guestroom-5476-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "King Premier Guest Room - Sea View",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-guestroom-5476-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "King Premier Guest Room - Sea View",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-guestroom-5545-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "King Deluxe Guest Room - Garden View",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-guestroom-5545-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "King Deluxe Guest Room - Garden View",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-guestroom-5546-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "Deluxe Queen/Queen Guest Room - Garden View",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-guestroom-5546-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "Deluxe Queen/Queen Guest Room - Garden View",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-hammam-5561-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "The Villa - Hammam",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-hammam-5561-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "The Villa - Hammam",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-kitchen-5562-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "The Villa - Kitchen",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-kitchen-5562-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "The Villa - Kitchen",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-kitchen-5566-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "Yalikavak Two-Bedroom Suite - Kitchen",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-kitchen-5566-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=750px:*",
+          "alt": "Yalikavak Two-Bedroom Suite - Kitchen",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-loft-5550-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "King Loft Guest Room - Garden View",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-loft-5550-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "King Loft Guest Room - Garden View",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-loft-7746-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "King Loft Guest Room - Sea View",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-loft-7746-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=750px:*",
+          "alt": "King Loft Guest Room - Sea View",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-spa-5558-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "Couple Spa Suite",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-spa-5558-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "Couple Spa Suite",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-suite-0014-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-suite-0014-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=626px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-suite-0014-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "Loft Sea View Suite",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-suite-0137-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-suite-0137-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=626px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-suite-0137-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "Aegean Suite",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-suite-0236-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-suite-0236-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=626px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-suite-0236-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "Yalikavak Two-Bedroom Suite",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-suite-5554-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-suite-5554-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=626px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-suite-5554-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "One-Bedroom Private Pool Suite",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-terrace-5567-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-terrace-5567-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=626px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-terrace-5567-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "Yalikavak Two-Bedroom Suite - Terrace",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-villa-0234-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-villa-0234-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=626px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-villa-0234-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "The Villa Living Room I",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-villa-0235-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-villa-0235-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=626px:*",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/content/dam/marriott-renditions/BJVEB/bjveb-villa-0235-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=375px:*",
+          "alt": "The Villa - Living Room II",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/bjveb-infiniy-pool-8219:Classic-Hor?wid=1336&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/bjveb-infiniy-pool-8219:Classic-Hor?wid=626&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/bjveb-infiniy-pool-8219:Wide-Hor?wid=375&fit=constrain",
+          "alt": "Infinity Pool ",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/bjveb-steam-5556:Classic-Ver?wid=377&fit=constrain",
+          "alt": "One-Bedroom Private Pool Suite - Steam Room",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/bjveb-steam-5556:Wide-Ver?wid=750&fit=constrain",
+          "alt": "One-Bedroom Private Pool Suite - Steam Room",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aegean-suite-30375-12509:Classic-Hor?wid=1336&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aegean-suite-30375-12509:Classic-Hor?wid=626&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aegean-suite-30375-12509:Wide-Hor?wid=375&fit=constrain",
+          "alt": "Aegean Suite Living Room and terrace",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aegean-suite-bed-29703-59523:Classic-Hor?wid=1336&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aegean-suite-bed-29703-59523:Classic-Hor?wid=626&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aegean-suite-bed-29703-59523:Wide-Hor?wid=375&fit=constrain",
+          "alt": "Aegean Suite Bedroom and terrace",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aegean-suite-jacuzzi--41695:Classic-Hor?wid=1336&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aegean-suite-jacuzzi--41695:Classic-Hor?wid=626&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aegean-suite-jacuzzi--41695:Wide-Hor?wid=375&fit=constrain",
+          "alt": "Terrace view of the Aegean Suite with the jacuzzi ",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aegean-suite-kitchen-39730:Classic-Hor?wid=1336&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aegean-suite-kitchen-39730:Classic-Hor?wid=626&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aegean-suite-kitchen-39730:Wide-Hor?wid=375&fit=constrain",
+          "alt": "Kitchen Area of The Aegean Suite",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aegean-suite-lounge-area--17724:Classic-Hor?wid=1336&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aegean-suite-lounge-area--17724:Classic-Hor?wid=626&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aegean-suite-lounge-area--17724:Wide-Hor?wid=375&fit=constrain",
+          "alt": "Lounge area and the sea view of the Aegean Suite",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aerial-view-at-dusk-61795:Classic-Hor?wid=1336&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aerial-view-at-dusk-61795:Classic-Hor?wid=626&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-aerial-view-at-dusk-61795:Wide-Hor?wid=375&fit=constrain",
+          "alt": "The Bodrum EDITION Aerial View",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-beach-cabana-20373:Classic-Hor?wid=1336&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-beach-cabana-20373:Classic-Hor?wid=626&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-beach-cabana-20373:Wide-Hor?wid=375&fit=constrain",
+          "alt": "Beach Cabana ",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-conscious-coastal-living-41629:Classic-Hor?wid=1336&fit=constrain",
+          "alt": "Gibi Bodrum lifestyle space",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-conscious-coastal-living-41629:Wide-Hor?wid=375&fit=constrain",
+          "alt": "Gibi Bodrum lifestyle space",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-daha-13153:Classic-Hor?wid=1336&fit=constrain",
+          "alt": "Seaside dining with Aegean view",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-daha-13153:Wide-Hor?wid=375&fit=constrain",
+          "alt": "Seaside dining with Aegean view",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-daha-mehmet-akda---garden-00591:Classic-Hor?wid=1336&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        },
+        {
+          "url": "https://cache.marriott.com/is/image/marriotts7prod/eb-bjveb-daha-mehmet-akda---garden-00591:Classic-Hor?wid=626&fit=constrain",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+        }
+      ]
+    },
+    "maxx-royal-bodrum": {
+      "pages": [
+        {
+          "page": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery",
+          "status": 200,
+          "bytes": 183428
+        },
+        {
+          "page": "https://www.maxxroyal.com/maxx-royal-bodrum",
+          "status": 200,
+          "bytes": 326031
+        }
+      ],
+      "candidateCount": 175,
+      "candidates": [
+        {
+          "url": "https://www.maxxroyal.com/media/unzn4h5l/maxx-royal-bodrum-fullbleed.jpg",
+          "alt": "og:image",
+          "score": 16,
+          "source": "og:image",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/am3c1xjz/mbo_maxx_island_villa_3.jpg?width=300&height=300",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/am3c1xjz/mbo_maxx_island_villa_3.jpg?width=300&height=300&format=webp",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/am3c1xjz/mbo_maxx_island_villa_3.jpg?width=400&height=200",
+          "alt": "",
+          "score": 14,
+          "source": "img",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/am3c1xjz/mbo_maxx_island_villa_3.jpg?width=448&height=224",
+          "alt": "",
+          "score": 14,
+          "source": "img",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/am3c1xjz/mbo_maxx_island_villa_3.jpg?width=800&height=400",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/am3c1xjz/mbo_maxx_island_villa_3.jpg?width=800&height=400&format=webp",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/am3c1xjz/mbo_maxx_island_villa_3.jpg?width=896&height=448",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/am3c1xjz/mbo_maxx_island_villa_3.jpg?width=896&height=448&format=webp",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/bq2ng2w4/maxxroyal_bodrum_r_3.jpg?width=300&height=300",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/bq2ng2w4/maxxroyal_bodrum_r_3.jpg?width=300&height=300&format=webp",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/bq2ng2w4/maxxroyal_bodrum_r_3.jpg?width=400&height=200",
+          "alt": "",
+          "score": 14,
+          "source": "img",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/bq2ng2w4/maxxroyal_bodrum_r_3.jpg?width=448&height=224",
+          "alt": "",
+          "score": 14,
+          "source": "img",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/bq2ng2w4/maxxroyal_bodrum_r_3.jpg?width=800&height=400",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/bq2ng2w4/maxxroyal_bodrum_r_3.jpg?width=800&height=400&format=webp",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/bq2ng2w4/maxxroyal_bodrum_r_3.jpg?width=896&height=448",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/bq2ng2w4/maxxroyal_bodrum_r_3.jpg?width=896&height=448&format=webp",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/unzn4h5l/maxx-royal-bodrum-fullbleed.jpg?width=1024&height=768",
+          "alt": "",
+          "score": 14,
+          "source": "img",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/unzn4h5l/maxx-royal-bodrum-fullbleed.jpg?width=2048&height=1536",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/unzn4h5l/maxx-royal-bodrum-fullbleed.jpg?width=2048&height=1536&format=webp",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/unzn4h5l/maxx-royal-bodrum-fullbleed.jpg?width=2560&height=1536",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/unzn4h5l/maxx-royal-bodrum-fullbleed.jpg?width=2560&height=1536&format=webp",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/unzn4h5l/maxx-royal-bodrum-fullbleed.jpg?width=5120&height=2880",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/unzn4h5l/maxx-royal-bodrum-fullbleed.jpg?width=5120&height=2880&format=webp",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/unzn4h5l/maxx-royal-bodrum-fullbleed.jpg?width=640&height=1385",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/unzn4h5l/maxx-royal-bodrum-fullbleed.jpg?width=640&height=1385&format=webp",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/unzn4h5l/maxx-royal-bodrum-fullbleed.jpg?width=768&height=1024",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/unzn4h5l/maxx-royal-bodrum-fullbleed.jpg?width=768&height=1024&format=webp",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ycgcnd15/maxx_royal_bodrum_suites.jpg?width=300&height=300",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ycgcnd15/maxx_royal_bodrum_suites.jpg?width=300&height=300&format=webp",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ycgcnd15/maxx_royal_bodrum_suites.jpg?width=400&height=200",
+          "alt": "",
+          "score": 14,
+          "source": "img",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ycgcnd15/maxx_royal_bodrum_suites.jpg?width=448&height=224",
+          "alt": "",
+          "score": 14,
+          "source": "img",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ycgcnd15/maxx_royal_bodrum_suites.jpg?width=800&height=400",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ycgcnd15/maxx_royal_bodrum_suites.jpg?width=800&height=400&format=webp",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ycgcnd15/maxx_royal_bodrum_suites.jpg?width=896&height=448",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ycgcnd15/maxx_royal_bodrum_suites.jpg?width=896&height=448&format=webp",
+          "alt": "",
+          "score": 14,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/bq2ng2w4/maxxroyal_bodrum_r_3.jpg?width=600&height=420",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/bq2ng2w4/maxxroyal_bodrum_r_3.jpg?width=600&height=420&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/bq2ng2w4/maxxroyal_bodrum_r_3.jpg?width=996&height=750",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/bq2ng2w4/maxxroyal_bodrum_r_3.jpg?width=996&height=750&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/gwfnu4o1/maxx-royal-bodrum-mainpage-pools.jpg?width=600&height=420",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/gwfnu4o1/maxx-royal-bodrum-mainpage-pools.jpg?width=600&height=420&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/gwfnu4o1/maxx-royal-bodrum-mainpage-pools.jpg?width=996&height=750",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/gwfnu4o1/maxx-royal-bodrum-mainpage-pools.jpg?width=996&height=750&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/jf0jwemd/maxx_royal_bodrum_stay_suites.jpg?rxy=0.44360902255639095%2C0.7195290293625645&width=600&height=420",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/jf0jwemd/maxx_royal_bodrum_stay_suites.jpg?rxy=0.44360902255639095%2C0.7195290293625645&width=600&height=420&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/jf0jwemd/maxx_royal_bodrum_stay_suites.jpg?rxy=0.44360902255639095%2C0.7195290293625645&width=996&height=750",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/jf0jwemd/maxx_royal_bodrum_stay_suites.jpg?rxy=0.44360902255639095%2C0.7195290293625645&width=996&height=750&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/kjtljf4d/maxxroyalbodrumspamaxxwellbeing3.jpg?width=392&height=408",
+          "alt": "",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/kjtljf4d/maxxroyalbodrumspamaxxwellbeing3.jpg?width=784&height=816",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/kjtljf4d/maxxroyalbodrumspamaxxwellbeing3.jpg?width=784&height=816&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/kjtljf4d/maxxroyalbodrumspamaxxwellbeing3.jpg?width=996&height=750",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/kjtljf4d/maxxroyalbodrumspamaxxwellbeing3.jpg?width=996&height=750&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/kvibhvyk/maxx_royal_bodrum_gastronomy_detail2.jpg?width=600&height=420",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/kvibhvyk/maxx_royal_bodrum_gastronomy_detail2.jpg?width=600&height=420&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/kvibhvyk/maxx_royal_bodrum_gastronomy_detail2.jpg?width=996&height=750",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/kvibhvyk/maxx_royal_bodrum_gastronomy_detail2.jpg?width=996&height=750&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/nmkdfxnk/maxxroyalassistant.jpg?width=600&height=906",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/nmkdfxnk/maxxroyalassistant.jpg?width=600&height=906&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/nmkdfxnk/maxxroyalassistant.jpg?width=768&height=1160",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/nmkdfxnk/maxxroyalassistant.jpg?width=768&height=1160&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/nmkdfxnk/maxxroyalassistant.jpg?width=768&height=787",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/nmkdfxnk/maxxroyalassistant.jpg?width=768&height=787&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/nmkdfxnk/maxxroyalassistant.jpg?width=802&height=940",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/nmkdfxnk/maxxroyalassistant.jpg?width=802&height=940&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/qzzhthbc/maxx_royal_bodrum_entertainment_detail.jpg?width=600&height=420",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/qzzhthbc/maxx_royal_bodrum_entertainment_detail.jpg?width=600&height=420&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/qzzhthbc/maxx_royal_bodrum_entertainment_detail.jpg?width=996&height=750",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/qzzhthbc/maxx_royal_bodrum_entertainment_detail.jpg?width=996&height=750&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ytkaixaz/maxxhelikopter3.jpg?rxy=0.6823895676691729%2C0.4982041096303444&width=1024&height=928",
+          "alt": "",
+          "score": 11,
+          "source": "img",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ytkaixaz/maxxhelikopter3.jpg?rxy=0.6823895676691729%2C0.4982041096303444&width=2048&height=1856",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ytkaixaz/maxxhelikopter3.jpg?rxy=0.6823895676691729%2C0.4982041096303444&width=2048&height=1856&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ytkaixaz/maxxhelikopter3.jpg?rxy=0.6823895676691729%2C0.4982041096303444&width=2880&height=1600",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ytkaixaz/maxxhelikopter3.jpg?rxy=0.6823895676691729%2C0.4982041096303444&width=2880&height=1600&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ytkaixaz/maxxhelikopter3.jpg?rxy=0.6823895676691729%2C0.4982041096303444&width=5120&height=2880",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ytkaixaz/maxxhelikopter3.jpg?rxy=0.6823895676691729%2C0.4982041096303444&width=5120&height=2880&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ytkaixaz/maxxhelikopter3.jpg?rxy=0.6823895676691729%2C0.4982041096303444&width=640&height=640",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ytkaixaz/maxxhelikopter3.jpg?rxy=0.6823895676691729%2C0.4982041096303444&width=640&height=640&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ytkaixaz/maxxhelikopter3.jpg?rxy=0.6823895676691729%2C0.4982041096303444&width=654&height=1688",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/ytkaixaz/maxxhelikopter3.jpg?rxy=0.6823895676691729%2C0.4982041096303444&width=654&height=1688&format=webp",
+          "alt": "",
+          "score": 11,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum"
+        },
+        {
+          "url": "https://www.maxxroyal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fetbis-logo-yeni.8da1e492.png&w=640&q=75",
+          "alt": "etbis",
+          "score": 6,
+          "source": "img",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/fzrhjav5/1200x1200.jpg",
+          "alt": "",
+          "score": 6,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/fzrhjav5/1200x1200.jpg?format=webp",
+          "alt": "",
+          "score": 6,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/fzrhjav5/1200x1200.jpg?width=540&height=302",
+          "alt": "",
+          "score": 6,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/fzrhjav5/1200x1200.jpg?width=540&height=302&format=webp",
+          "alt": "",
+          "score": 6,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/fzrhjav5/1200x1200.jpg?width=569&height=320",
+          "alt": "",
+          "score": 6,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/fzrhjav5/1200x1200.jpg?width=569&height=320&format=webp",
+          "alt": "",
+          "score": 6,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/fzrhjav5/1200x1200.jpg?width=864&height=1012",
+          "alt": "",
+          "score": 6,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/fzrhjav5/1200x1200.jpg?width=864&height=1012&format=webp",
+          "alt": "",
+          "score": 6,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        },
+        {
+          "url": "https://www.maxxroyal.com/media/jmxgzxtd/1200x1600.jpg",
+          "alt": "",
+          "score": 6,
+          "source": "srcset",
+          "sourcePage": "https://www.maxxroyal.com/maxx-royal-bodrum/gallery"
+        }
+      ]
+    },
+    "six-senses-kaplankaya": {
+      "pages": [
+        {
+          "page": "https://www.sixsenses.com/en/hotels-resorts/europe/turkey/kaplankaya/gallery",
+          "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sixsenses.com/en/hotels-resorts/europe/turkey/kaplankaya/gallery"
+        },
+        {
+          "page": "https://www.sixsenses.com/en/hotels-resorts/europe/turkey/kaplankaya",
+          "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sixsenses.com/en/hotels-resorts/europe/turkey/kaplankaya"
+        }
+      ],
+      "candidateCount": 0,
+      "candidates": []
+    }
+  }
+}
