@@ -28,6 +28,7 @@ ASSETS=[
 ("maxx-royal-kemer","maxx-kemer-coast","https://pim.novatours.eu/Hotels/12315/image-thumb__12315__nova_hi_res/TRAMAXROYK_KIRI-TOP-6215.jpg","https://www.novatours.ee/ru/search/TRAMAXROYK","Novatours · Maxx Royal Kemer","resort aerial"),
 ("maxx-royal-kemer","maxx-kemer-pools","https://www.maxxroyal.com/media/ai5lzogi/mrk_maxx_laguna_1_bedroom_1.jpg","https://www.maxxroyal.com/kemer-resort/stay/lagoon-suites","Maxx Royal Kemer official · Lagoon Suite","private lagoon pool"),
 ("maxx-royal-kemer","maxx-kemer-villa","https://www.maxxroyal.com/media/uagaiakp/maxx-royal-kemer-beach-villa-3-bedrooms-01.jpg?height=894&width=1440","https://www.maxxroyal.com/kemer-resort/stay/villas","Maxx Royal Kemer official · Beach Villa","beach villa living room"),
+("destination","belek-coast","https://www.tourbelek.com/Content/images/userfiles/images/belek-beach-and-hotel-area.webp","https://www.tourbelek.com/","TourBelek · Belek coastline panorama","Belek sandy coastline and resorts"),
 ("destination","kemer-panorama","https://commons.wikimedia.org/wiki/Special:FilePath/Kemer_-_Panorama.jpg","https://commons.wikimedia.org/wiki/File:Kemer_-_Panorama.jpg","ViseMoD · Wikimedia Commons · CC BY-SA 4.0","Kemer coastal landscape"),
 ]
 def download(session, hotel, stem, url, source, credit, scene):
