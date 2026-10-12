@@ -32,13 +32,13 @@ export const istanbulCityScenes = {
     "sourcePage": "https://commons.wikimedia.org/wiki/File:Ortaköy_Mosque_and_15th_July_Bridge.jpg"
   },
   "sultanahmet": {
-    "src": "/images/travel/istanbul/city/sultanahmet-skyline.webp",
-    "fr": "Sultanahmet de jour : Sainte-Sophie et la Mosquée bleue",
-    "en": "Daytime panorama of Sultanahmet: Hagia Sophia and the Blue Mosque",
-    "author": "Husain007",
-    "license": "CC BY-SA 4.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_and_Blue_Mosque.jpg"
+    "src": "/images/travel/istanbul/city/sultanahmet-hagia-sophia-day.webp",
+    "fr": "Sainte-Sophie à Sultanahmet, en journée",
+    "en": "Hagia Sophia in Sultanahmet, in daylight",
+    "author": "topkapi-palace.net (source)",
+    "license": "Source / image provided",
+    "licenseUrl": "https://topkapi-palace.net/wp-content/uploads/2024/10/hagia-sophia-in-turkey.jpg",
+    "sourcePage": "https://topkapi-palace.net/wp-content/uploads/2024/10/hagia-sophia-in-turkey.jpg"
   },
   "nisantasi": {
     "src": "/images/travel/istanbul/city/nisantasi-abdi-ipekci.webp",

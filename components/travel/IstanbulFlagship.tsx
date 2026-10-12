@@ -73,14 +73,9 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
             <h3 className="font-serif text-2xl">{d.name}</h3>
             <figure>
               <div className="relative aspect-[16/10] overflow-hidden bg-[#d8d3c8]">
-                {d.id === 'sultanahmet' && (
-                  <Image src={istanbulCityScenes[d.id].src} alt="" aria-hidden="true"
-                    fill sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 390px"
-                    className="scale-110 object-cover opacity-55 blur-lg" />
-                )}
                 <Image src={istanbulCityScenes[d.id].src} alt={fr ? istanbulCityScenes[d.id].fr : istanbulCityScenes[d.id].en}
                   fill sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 390px"
-                  className={d.id === 'sultanahmet' ? 'object-contain' : 'object-cover'} />
+                  className="object-cover" />
               </div>
               <figcaption className="mt-2 text-[11px] leading-5 text-[#6a7479]">
                 <a target="_blank" rel="noopener noreferrer" href={istanbulCityScenes[d.id].sourcePage}
