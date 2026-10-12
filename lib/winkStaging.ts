@@ -7,6 +7,23 @@ const ISTANBUL_GEONAME_ID = '745044';
 
 type JsonRecord = Record<string, any>;
 
+export type WinkStage = 'credentials' | 'token' | 'accounts-reflection' | 'accounts' | 'search-reflection' | 'search';
+
+export class WinkStagingError extends Error {
+  constructor(public readonly stage: WinkStage) {
+    super(`Wink staging failed at ${stage}`);
+    this.name = 'WinkStagingError';
+  }
+}
+
+async function atStage<T>(stage: WinkStage, action: () => Promise<T>) {
+  try {
+    return await action();
+  } catch {
+    throw new WinkStagingError(stage);
+  }
+}
+
 function requiredEnv(name: 'WINK_CLIENT_ID' | 'WINK_CLIENT_SECRET') {
   const value = process.env[name]?.trim();
   if (!value) throw new Error(`Missing ${name}`);
@@ -78,13 +95,13 @@ function futureDate(days = 30) {
 }
 
 export async function searchIstanbulInventory() {
-  const token = await getAccessToken();
+  const token = await atStage('token', getAccessToken);
   const auth = new grpc.Metadata();
   auth.set('authorization', `Bearer ${token}`);
 
-  const accountsPackage = await packageFor('wink.partner.v1.Accounts', token);
+  const accountsPackage = await atStage('accounts-reflection', () => packageFor('wink.partner.v1.Accounts', token));
   const accountsClient = service(accountsPackage, 'Accounts');
-  const accountsResponse = await unary(accountsClient, ['listAccounts', 'ListAccounts'], {}, auth);
+  const accountsResponse = await atStage('accounts', () => unary(accountsClient, ['listAccounts', 'ListAccounts'], {}, auth));
   accountsClient.close();
 
   const accounts = Array.isArray(accountsResponse.accounts) ? accountsResponse.accounts : [];
@@ -95,23 +112,25 @@ export async function searchIstanbulInventory() {
   metadata.set('authorization', `Bearer ${token}`);
   metadata.set('managing-entity-id', String(account.accountId));
 
-  const searchPackage = await packageFor('wink.partner.v1.Search', token);
+  const searchPackage = await atStage('search-reflection', () => packageFor('wink.partner.v1.Search', token));
   const searchClient = service(searchPackage, 'Search');
-  const response = await unary(
-    searchClient,
-    ['searchByCity', 'SearchByCity'],
-    {
-      geoNameId: ISTANBUL_GEONAME_ID,
-      userSession: {
-        itinerary: { startDate: futureDate(), nights: 2, room: { adults: 2, quantity: 1 } },
-        currencyCode: 'EUR',
-        languageCode: 'en',
+  const response = await atStage('search', () =>
+    unary(
+      searchClient,
+      ['searchByCity', 'SearchByCity'],
+      {
+        geoNameId: ISTANBUL_GEONAME_ID,
+        userSession: {
+          itinerary: { startDate: futureDate(), nights: 2, room: { adults: 2, quantity: 1 } },
+          currencyCode: 'EUR',
+          languageCode: 'en',
+        },
+        page: 0,
+        size: 20,
+        imageFormat: 'image/webp',
       },
-      page: 0,
-      size: 20,
-      imageFormat: 'image/webp',
-    },
-    metadata,
+      metadata,
+    ),
   );
   searchClient.close();
 

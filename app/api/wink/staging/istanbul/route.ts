@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { istanbulHotels } from '@/data/travel/istanbulFlagship';
-import { searchIstanbulInventory } from '@/lib/winkStaging';
+import { searchIstanbulInventory, WinkStagingError } from '@/lib/winkStaging';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -47,11 +47,9 @@ export async function POST() {
       { headers: { 'cache-control': 'no-store', 'x-robots-tag': 'noindex, nofollow' } },
     );
   } catch (error) {
-    const message = error instanceof Error && error.message.startsWith('Missing ')
-      ? 'Wink staging credentials are not configured.'
-      : 'Wink staging request failed.';
+    const stage = error instanceof WinkStagingError ? error.stage : 'configuration';
     return NextResponse.json(
-      { ok: false, error: message },
+      { ok: false, error: 'Wink staging request failed.', stage },
       { status: 502, headers: { 'cache-control': 'no-store', 'x-robots-tag': 'noindex, nofollow' } },
     );
   }
