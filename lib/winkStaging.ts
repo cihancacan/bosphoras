@@ -76,7 +76,7 @@ async function packageFor(symbol: string, token: string) {
     PARTNER_HOST,
     grpc.credentials.createSsl(),
     { 'grpc.keepalive_time_ms': 30_000, 'grpc.keepalive_permit_without_calls': 1 },
-    'v1alpha',
+    'v1',
   );
   const descriptor = await reflection.getDescriptorBySymbol(symbol, metadata, { deadline: Date.now() + 45_000 });
   return descriptor.getPackageObject({
