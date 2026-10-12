@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { hotelHeroPhoto } from '@/data/travel/hotelPhotography';
 
 /**
  * Reusable editorial hotel card (not an offer or a booking widget).
@@ -26,6 +27,7 @@ type EditorialHotelCardProps = {
 
 export function EditorialHotelCard({ hotel, index, locale }: EditorialHotelCardProps) {
   const fr = locale === 'fr';
+  const hero = hotelHeroPhoto(hotel.id);
   return (
     <article className="grid min-w-0 overflow-hidden bg-white border border-[#e7e0d4] lg:grid-cols-[84px_minmax(0,1.2fr)_minmax(0,1fr)]">
       <div className="flex items-center justify-between lg:block bg-[#142d39] text-[#dbc495] px-6 py-3 lg:p-6">
@@ -37,8 +39,8 @@ export function EditorialHotelCard({ hotel, index, locale }: EditorialHotelCardP
       <div className="min-w-0 px-6 py-7 sm:px-9 sm:py-9">
         <p className="text-xs tracking-wider uppercase text-[#9c784a] mb-4">{hotel.zone}</p>
         <h3 className="font-serif text-2xl sm:text-3xl lg:text-[2rem] leading-tight break-words">{hotel.name}</h3>
-        {hotel.id === 'peninsula' && <div className="relative mt-5 aspect-[16/9] overflow-hidden bg-[#eae5dc]">
-          <Image src="/images/Peninsula.pool.andwiew.jpg" alt={fr ? 'Piscine extérieure du Peninsula Istanbul' : 'Outdoor pool at The Peninsula Istanbul'} fill sizes="(max-width: 1024px) 100vw, 480px" className="object-cover" />
+        {hero && <div className="relative mt-5 aspect-[16/9] overflow-hidden bg-[#eae5dc]">
+          {hero.src.startsWith('/') ? <Image src={hero.src} alt={fr ? hero.fr : hero.en} fill sizes="(max-width: 1024px) 100vw, 480px" className="object-cover" /> : <img src={hero.src} alt={fr ? hero.fr : hero.en} loading="lazy" decoding="async" referrerPolicy="no-referrer" className="absolute inset-0 h-full w-full object-cover" />}
         </div>}
         <p className="text-[#55656c] leading-7 mt-5">{fr ? hotel.fr : hotel.en}</p>
       </div>

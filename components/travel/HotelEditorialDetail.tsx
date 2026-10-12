@@ -6,25 +6,20 @@ import Link from 'next/link';
 import { istanbulHotels } from '@/data/travel/istanbulFlagship';
 
 type Hotel = (typeof istanbulHotels)[number];
-type HotelPhoto = { src: string; fr: string; en: string };
+import { istanbulHotelPhotos, type HotelPhoto } from '@/data/travel/hotelPhotography';
 
-// Local assets already present on the protected Travel branch.
-// Other hotel galleries intentionally remain empty until the original approved files can be recovered.
-// Neither these photographs nor these profiles imply booking inventory or hotel affiliation.
-const photosByHotel: Partial<Record<Hotel['id'], readonly HotelPhoto[]>> = {
-  peninsula: [
-    { src: '/images/Peninsula.pool.andwiew.jpg', fr: 'La piscine extérieure et le Bosphore', en: 'Outdoor pool facing the Bosphorus' },
-    { src: '/images/peninsula.pool.and.saint-sophie.jpg', fr: 'La piscine et la silhouette de Sainte-Sophie', en: 'Pool and the Hagia Sophia skyline' },
-    { src: '/images/peninsula.interior.pool.jpg', fr: 'La piscine intérieure', en: 'Indoor swimming pool' },
-    { src: '/images/peninsula.lobby.jpg', fr: 'Les espaces intérieurs', en: 'Hotel interior' },
-    { src: '/images/peninsula.hammam.jpg', fr: 'Le hammam', en: 'Hammam facilities' },
-    { src: '/images/peninsula.fitness.jpg', fr: 'L’espace fitness', en: 'Fitness facilities' },
-  ],
-};
+
+function EditorialPhoto({ photo, locale, className, priority = false }: { photo: HotelPhoto; locale: 'fr' | 'en'; className: string; priority?: boolean }) {
+  const [failed, setFailed] = useState(false);
+  const alt = locale === 'fr' ? photo.fr : photo.en;
+  if (failed) return <span className="absolute inset-0 flex items-center justify-center bg-[#e7e0d4] p-5 text-center text-xs text-[#53626b]">{locale === 'fr' ? 'Photo temporairement indisponible' : 'Photo temporarily unavailable'}</span>;
+  if (photo.src.startsWith('/')) return <Image src={photo.src} alt={alt} fill priority={priority} sizes="(max-width: 1024px) 100vw, 1100px" className={className} />;
+  return <img src={photo.src} alt={alt} loading={priority ? 'eager' : 'lazy'} decoding="async" referrerPolicy="no-referrer" onError={() => setFailed(true)} className={'absolute inset-0 h-full w-full ' + className} />;
+}
 
 export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 'fr' | 'en' }) {
   const fr = locale === 'fr';
-  const photos = photosByHotel[hotel.id] ?? [];
+  const photos = istanbulHotelPhotos[hotel.id] ?? [];
   const [active, setActive] = useState(0);
   const [enlarged, setEnlarged] = useState(false);
 
@@ -62,7 +57,7 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
           <section aria-label={fr ? 'Photographies de l’hôtel' : 'Hotel photo gallery'} className="mb-16">
             <button type="button" className="relative block aspect-[16/9] w-full overflow-hidden bg-[#e8e0d2] text-left lg:aspect-[2/1]"
               onClick={() => setEnlarged(true)} aria-label={fr ? 'Agrandir la photographie' : 'Enlarge photograph'}>
-              <Image src={photos[active].src} alt={fr ? photos[active].fr : photos[active].en} fill priority sizes="(max-width: 1024px) 100vw, 1100px" className="object-cover" />
+              <EditorialPhoto photo={photos[active]} locale={locale} className="object-cover" priority />
               <span className="absolute bottom-4 right-4 bg-[#102b38]/90 px-4 py-2 text-xs font-semibold text-white">
                 {fr ? 'Agrandir' : 'Enlarge'} · {active + 1}/{photos.length}
               </span>
@@ -74,7 +69,7 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
                   aria-label={(fr ? 'Afficher la photographie ' : 'Show photograph ') + (index + 1)}
                   aria-pressed={active === index}
                   className={'relative h-20 w-32 shrink-0 overflow-hidden border-2 sm:h-24 sm:w-40 ' + (active === index ? 'border-[#b8955e]' : 'border-transparent')}>
-                  <Image src={photo.src} alt={fr ? photo.fr : photo.en} fill sizes="160px" className="object-cover" />
+                  <EditorialPhoto photo={photo} locale={locale} className="object-cover" />
                 </button>
               ))}
             </div>
@@ -127,7 +122,7 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
               className="border border-white/50 px-5 py-3 text-sm">{fr ? 'Fermer' : 'Close'} ✕</button>
           </div>
           <div className="relative mt-5 min-h-0 flex-1">
-            <Image src={photos[active].src} alt={fr ? photos[active].fr : photos[active].en} fill sizes="100vw" className="object-contain" />
+            <EditorialPhoto photo={photos[active]} locale={locale} className="object-contain" />
           </div>
           <div className="mt-5 flex items-center justify-between">
             <button type="button" onClick={() => setActive((i)=>(i-1+photos.length)%photos.length)}
