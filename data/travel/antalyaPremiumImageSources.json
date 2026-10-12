@@ -1,8 +1,8 @@
 {
   "scope": "Antalya editorial images; staging feature branch only",
-  "timestamp": "2026-10-12T22:13:03.565269+00:00",
+  "timestamp": "2026-10-12T22:13:58.524176+00:00",
   "expected": 13,
-  "downloaded": 11,
+  "downloaded": 13,
   "items": [
     {
       "hotel": "regnum-carya",
@@ -27,12 +27,18 @@
       "file": "regnum-main-pool.webp",
       "localPath": "/images/travel/antalya-premium/regnum-carya/regnum-main-pool.webp",
       "sourcePage": "https://www.regnumhotels.com/en/hotels/regnum-carya/",
-      "downloadUrl": "https://www.regnumhotels.com/media/v55oobq4/regnumcarya_pearlpoolrooms_generalview-02-card.jpg",
-      "credit": "Regnum Carya official · Pearl pool rooms",
+      "downloadUrl": "https://www.regnumhotels.com/media/rcubtt01/akra-hotels-pearl-pool-suite-slider-1.jpg",
+      "credit": "Regnum Carya official · Pearl Pool Suite",
       "scene": "pool accommodation",
       "rights": "user reports project permission; third-party restrictions not independently verified",
-      "status": "failed",
-      "error": "Too small: 640x692"
+      "status": "downloaded",
+      "sourceWidth": 1270,
+      "sourceHeight": 600,
+      "outputWidth": 1270,
+      "outputHeight": 600,
+      "bytes": 176992,
+      "sha256": "cc209b0733d3778b23967ca7c9a49c0655c21988b7726a6fcc37f83b493990e0",
+      "transformations": "EXIF orientation, aspect validation, resized and WebP quality 86"
     },
     {
       "hotel": "regnum-carya",
@@ -164,13 +170,19 @@
       "hotel": "maxx-royal-kemer",
       "file": "maxx-kemer-coast.webp",
       "localPath": "/images/travel/antalya-premium/maxx-royal-kemer/maxx-kemer-coast.webp",
-      "sourcePage": "https://www.easy-reisen.ch/hotel/maxx-royal-kemer-resort/",
-      "downloadUrl": "https://www.easy-reisen.ch/imgproxy/background-md/www.easy-reisen.ch/storage/18893/maxx_royal_kemer_resort_aerial_view.jpg",
-      "credit": "Easy Reisen · Maxx Royal Kemer",
+      "sourcePage": "https://www.novatours.ee/ru/search/TRAMAXROYK",
+      "downloadUrl": "https://pim.novatours.eu/Hotels/12315/image-thumb__12315__nova_hi_res/TRAMAXROYK_KIRI-TOP-6215.jpg",
+      "credit": "Novatours · Maxx Royal Kemer",
       "scene": "resort aerial",
       "rights": "user reports project permission; third-party restrictions not independently verified",
-      "status": "failed",
-      "error": "404 Client Error: Not Found for url: https://www.easy-reisen.ch/imgproxy/background-md/www.easy-reisen.ch/storage/18893/maxx_royal_kemer_resort_aerial_view.jpg"
+      "status": "downloaded",
+      "sourceWidth": 1440,
+      "sourceHeight": 817,
+      "outputWidth": 1440,
+      "outputHeight": 817,
+      "bytes": 308018,
+      "sha256": "8e74fa27a5b99b122091d02cf1b80d411a2b618d67c82b5e7cabd6badffccbfd",
+      "transformations": "EXIF orientation, aspect validation, resized and WebP quality 86"
     },
     {
       "hotel": "maxx-royal-kemer",
