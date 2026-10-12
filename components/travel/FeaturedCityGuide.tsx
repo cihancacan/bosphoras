@@ -182,9 +182,9 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           {hotelPage?(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.')
             :(fr?city.headingFr:city.headingEn)}</h1>
         {city.slug==='bodrum' && <p className="mt-4 text-xs text-[#efe0c7]">
-          {fr?'Photo : hôtel Mandarin Oriental, Bodrum':'Photo: Mandarin Oriental, Bodrum'} ·{' '}
-          <a href="https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery"
-             rel="noopener noreferrer" target="_blank" className="underline underline-offset-2">{fr?'galerie officielle':'official gallery'}</a>
+          {fr?'Paysage : une crique de la péninsule de Bodrum':'Landscape: a cove on the Bodrum Peninsula'} ·{' '}
+          <a href="https://www.luxurytribune.com/en/bulgari-hotels-resorts-opens-a-new-address-in-turkey"
+             rel="noopener noreferrer" target="_blank" className="underline underline-offset-2">Luxury Tribune</a>
         </p>}
         <p className="mt-8 max-w-3xl text-lg leading-8 text-[#e4e8e5]">
           {hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}</p>

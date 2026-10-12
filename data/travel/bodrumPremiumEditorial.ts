@@ -6,12 +6,29 @@ export type BodrumHotelEditorial = {photos:BodrumPremiumPhoto[];credit:string;so
 export const bodrumHotelEditorial:Record<string,BodrumHotelEditorial> = {
   "Mandarin Oriental, Bodrum": {
     "photos": [
-      {
-        "src": "/images/travel/bodrum-premium/mandarin-oriental/mandarin-paradise-bay-terrace.webp",
-        "fr": "Terrasse et panorama sur la baie à Mandarin Oriental, Bodrum",
-        "en": "The waterfront terrace at Mandarin Oriental, Bodrum",
-        "sourcePage": "https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery",
-        "credit": "Mandarin Oriental, Bodrum · galerie officielle"
+          {
+                "src": "/images/travel/bodrum-premium/mandarin-oriental/mandarin-infinity-pool-v2.webp",
+                "fr": "La piscine et les jardins de Mandarin Oriental, Bodrum",
+                "en": "The pool and gardens at Mandarin Oriental, Bodrum",
+                "sourcePage": "https://thefamilysuite.co.uk/hotels/mandarin-oriental-bodrum/",
+                "credit": "The Family Suite · Mandarin Oriental, Bodrum"
+          },
+          {
+                "src": "/images/travel/bodrum-premium/mandarin-oriental/mandarin-resort-aerial-v2.webp",
+                "fr": "Vue panoramique du resort Mandarin Oriental et de sa plage",
+                "en": "Panoramic view of the Mandarin Oriental resort and beach",
+                "sourcePage": "https://www.michelinkeyhotels.com/hotels/mandarin-oriental-bodrum",
+                "credit": "Michelin Key Hotels · Mandarin Oriental, Bodrum"
+          },
+          {
+                "src": "/images/travel/bodrum-premium/mandarin-oriental/mandarin-seaside-terrace-v2.webp",
+                "fr": "Terrasse et piscine en bord de mer du Mandarin Oriental, Bodrum",
+                "en": "Sea-facing terrace and pool at Mandarin Oriental, Bodrum",
+                "sourcePage": "https://www.seasong.com/hoteldetail/30/5/mandarin-oriental-bodrum",
+                "credit": "Sea Song · Mandarin Oriental, Bodrum"
+          }
+    ],
+        "credit": "Sources hôtelières identifiées, voir crédits individuels"
       },
       {
         "src": "/images/travel/bodrum-premium/mandarin-oriental/mandarin-bodrum-resort.webp",

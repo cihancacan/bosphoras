@@ -10,8 +10,8 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
     "slug": "bodrum",
     "name": "Bodrum",
     "country": "Turquie",
-    "hero": "paradise-bay",
-    "secondary": "edition-pool",
+    "hero": "bodrum-coast",
+    "secondary": "harbour",
     "eyebrowFr": "La Riviera égéenne",
     "eyebrowEn": "The Aegean Riviera",
     "headingFr": "Bodrum, le luxe a le goût de la mer.",
@@ -119,14 +119,14 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
       "Yacht departure harbour and fuel policy if planning a day on the water."
     ],
     "photos": {
-      "paradise-bay": {
-        "src": "/images/travel/bodrum-premium/mandarin-oriental/mandarin-paradise-bay-terrace.webp",
-        "fr": "L'élégance des terrasses de Mandarin Oriental à Paradise Bay",
-        "en": "The elegant waterfront terraces at Mandarin Oriental, Paradise Bay",
-        "author": "Mandarin Oriental, Bodrum",
-        "license": "Galerie officielle",
-        "licenseUrl": "https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery",
-        "sourcePage": "https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery"
+      "bodrum-coast": {
+        "src": "/images/travel/bodrum-premium/destination/bodrum-turquoise-bay-v2.webp",
+        "fr": "Crique turquoise et voiliers sur la côte de Bodrum",
+        "en": "Turquoise Bodrum bay with sailing boats",
+        "author": "Luxury Tribune · photographie de destination",
+        "license": "Crédit éditorial",
+        "licenseUrl": "https://www.luxurytribune.com/en/bulgari-hotels-resorts-opens-a-new-address-in-turkey",
+        "sourcePage": "https://www.luxurytribune.com/en/bulgari-hotels-resorts-opens-a-new-address-in-turkey"
       },
       "edition-pool": {
         "src": "/images/travel/bodrum-premium/the-bodrum-edition/edition-infinity-pool.webp",
