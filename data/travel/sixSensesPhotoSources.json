@@ -1,7 +1,7 @@
 {
   "scope": "Bosphoras Luxury Stays, Bodrum Travel preview only",
-  "downloaded": 2,
-  "total": 2,
+  "downloaded": 3,
+  "total": 3,
   "items": [
     {
       "id": "aerial",
@@ -34,6 +34,23 @@
       "height": 800,
       "bytes": 99268,
       "sha256": "02f7d81e79dc1deab7adb5b1d9517e9b9bcee1ded4eff131d7efb8a3a94def4e",
+      "transformations": "EXIF orientation applied, resized and saved as WebP",
+      "rightsNote": "User reports reuse authorization; third-party image rights not independently validated."
+    },
+    {
+      "id": "kaplankaya-coast",
+      "filename": "kaplankaya-rocky-coast-v2.webp",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/52c9f4ebe4b02c7007cdd86a/1746442617549-BUI4LTWXZO6NQYBAKQOO/Bays_2_%5B9616-A4%5D.jpg",
+      "sourcePage": "https://www.roomandwild.com/six-senses-kaplankaya",
+      "sourceCredit": "Room + Wild, Kaplankaya rocky coastline",
+      "altFr": "Côte rocheuse de Kaplankaya et eau turquoise",
+      "altEn": "Rocky Kaplankaya coast and turquoise water",
+      "status": "downloaded",
+      "localPath": "/images/travel/bodrum-premium/six-senses-kaplankaya/kaplankaya-rocky-coast-v2.webp",
+      "width": 2500,
+      "height": 1667,
+      "bytes": 555464,
+      "sha256": "7a4d88a51a823bea7992daa770dc4075cf7fdec5eb859e2746e697e674d96790",
       "transformations": "EXIF orientation applied, resized and saved as WebP",
       "rightsNote": "User reports reuse authorization; third-party image rights not independently validated."
     }
