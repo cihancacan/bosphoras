@@ -6,39 +6,29 @@ export type BodrumHotelEditorial = {photos:BodrumPremiumPhoto[];credit:string;so
 export const bodrumHotelEditorial:Record<string,BodrumHotelEditorial> = {
   "Mandarin Oriental, Bodrum": {
     "photos": [
-          {
-                "src": "/images/travel/bodrum-premium/mandarin-oriental/mandarin-infinity-pool-v2.webp",
-                "fr": "La piscine et les jardins de Mandarin Oriental, Bodrum",
-                "en": "The pool and gardens at Mandarin Oriental, Bodrum",
-                "sourcePage": "https://thefamilysuite.co.uk/hotels/mandarin-oriental-bodrum/",
-                "credit": "The Family Suite · Mandarin Oriental, Bodrum"
-          },
-          {
-                "src": "/images/travel/bodrum-premium/mandarin-oriental/mandarin-resort-aerial-v2.webp",
-                "fr": "Vue panoramique du resort Mandarin Oriental et de sa plage",
-                "en": "Panoramic view of the Mandarin Oriental resort and beach",
-                "sourcePage": "https://www.michelinkeyhotels.com/hotels/mandarin-oriental-bodrum",
-                "credit": "Michelin Key Hotels · Mandarin Oriental, Bodrum"
-          },
-          {
-                "src": "/images/travel/bodrum-premium/mandarin-oriental/mandarin-seaside-terrace-v2.webp",
-                "fr": "Terrasse et piscine en bord de mer du Mandarin Oriental, Bodrum",
-                "en": "Sea-facing terrace and pool at Mandarin Oriental, Bodrum",
-                "sourcePage": "https://www.seasong.com/hoteldetail/30/5/mandarin-oriental-bodrum",
-                "credit": "Sea Song · Mandarin Oriental, Bodrum"
-          }
-    ],
-        "credit": "Sources hôtelières identifiées, voir crédits individuels"
+      {
+        "src": "/images/travel/bodrum-premium/mandarin-oriental/mandarin-infinity-pool-v2.webp",
+        "fr": "La piscine du Mandarin Oriental, Bodrum",
+        "en": "Pool at Mandarin Oriental, Bodrum",
+        "sourcePage": "https://thefamilysuite.co.uk/hotels/mandarin-oriental-bodrum/",
+        "credit": "The Family Suite · Mandarin Oriental, Bodrum"
       },
       {
-        "src": "/images/travel/bodrum-premium/mandarin-oriental/mandarin-bodrum-resort.webp",
-        "fr": "Ambiance et architecture de Mandarin Oriental, Bodrum",
-        "en": "Resort design at Mandarin Oriental, Bodrum",
-        "sourcePage": "https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery",
-        "credit": "Mandarin Oriental, Bodrum · galerie officielle"
+        "src": "/images/travel/bodrum-premium/mandarin-oriental/mandarin-resort-aerial-v2.webp",
+        "fr": "Vue aérienne du resort Mandarin Oriental et de sa plage",
+        "en": "Aerial view of Mandarin Oriental resort and beach",
+        "sourcePage": "https://www.michelinkeyhotels.com/hotels/mandarin-oriental-bodrum",
+        "credit": "Michelin Key Hotels · Mandarin Oriental, Bodrum"
+      },
+      {
+        "src": "/images/travel/bodrum-premium/mandarin-oriental/mandarin-seaside-terrace-v2.webp",
+        "fr": "Terrasse et piscine en bord de mer au Mandarin Oriental, Bodrum",
+        "en": "Seaside terrace and pool at Mandarin Oriental, Bodrum",
+        "sourcePage": "https://www.seasong.com/hoteldetail/30/5/mandarin-oriental-bodrum",
+        "credit": "Sea Song · Mandarin Oriental, Bodrum"
       }
     ],
-    "credit": "Mandarin Oriental, Bodrum · galerie officielle",
+    "credit": "Sources hôtelières, voir les crédits individuels",
     "sourcePage": "https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery",
     "frBest": "Pour un séjour où la baie, les terrasses privées et le temps passé à l’hôtel comptent autant que les sorties.",
     "enBest": "For a stay shaped by the bay, private outdoor spaces and unhurried time on the property.",
@@ -134,11 +124,11 @@ export const bodrumAreaVisuals:BodrumPremiumPhoto[] = [
     "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
   },
   {
-    "src": "/images/travel/bodrum-premium/mandarin-oriental/mandarin-paradise-bay-terrace.webp",
-    "fr": "Terrasse de Mandarin Oriental, sur Paradise Bay",
-    "en": "Mandarin Oriental terrace overlooking Paradise Bay",
-    "credit": "Mandarin Oriental, Bodrum",
-    "sourcePage": "https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery"
+    "src": "/images/travel/bodrum-premium/destination/bodrum-turquoise-bay-v2.webp",
+    "fr": "Crique turquoise et voiliers sur la péninsule de Bodrum",
+    "en": "Turquoise cove and sailing boats on the Bodrum Peninsula",
+    "credit": "Luxury Tribune · photographie de destination",
+    "sourcePage": "https://www.luxurytribune.com/en/bulgari-hotels-resorts-opens-a-new-address-in-turkey"
   },
   {
     "src": "/images/travel/bodrum-premium/six-senses-kaplankaya/six-senses-sunset-terrace.webp",
