@@ -1,7 +1,7 @@
 {
   "scope": "Bosphoras Luxury Stays Travel Preview: 3 new destination city guides",
   "note": "Licensed landscape photos illustrate destinations, not a particular hotel, villa or room view.",
-  "downloaded": 5,
+  "downloaded": 6,
   "total": 6,
   "items": [
     {
@@ -11,8 +11,15 @@
       "author": "CeeGee",
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
-      "status": "unavailable",
-      "error": "License changed: 'https://creativecommons.org/publicdomain/zero/1.0/deed.en' expected 'https://creativecommons.org/publicdomain/zero/1.0'"
+      "status": "downloaded",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:YalıkavakMarina_(5).jpg",
+      "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Yal%C4%B1kavakMarina_%285%29.jpg/1920px-Yal%C4%B1kavakMarina_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "localPath": "/images/travel/city-guides/bodrum/marina.webp",
+      "sourceWidth": 1920,
+      "sourceHeight": 1272,
+      "bytes": 227398,
+      "sha256": "9659939ccaa369e227a73385e06dfd536eb826a973671d13d4bf87c8b3faecf8",
+      "transformations": "Orientation normalised, resized, WebP conversion"
     },
     {
       "city": "bodrum",
