@@ -33,12 +33,12 @@ export const istanbulCityScenes = {
   },
   "sultanahmet": {
     "src": "/images/travel/istanbul/city/sultanahmet-skyline.webp",
-    "fr": "Sultanahmet, Sainte-Sophie et la Mosquée bleue",
-    "en": "Sultanahmet, Hagia Sophia and the Blue Mosque",
-    "author": "Jorge1767",
-    "license": "Domaine public",
-    "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:SultanahmetIstanbul.jpg"
+    "fr": "Sultanahmet de jour : Sainte-Sophie et la Mosquée bleue",
+    "en": "Daytime panorama of Sultanahmet: Hagia Sophia and the Blue Mosque",
+    "author": "Husain007",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_and_Blue_Mosque.jpg"
   },
   "nisantasi": {
     "src": "/images/travel/istanbul/city/nisantasi-abdi-ipekci.webp",

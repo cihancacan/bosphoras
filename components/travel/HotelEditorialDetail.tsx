@@ -114,8 +114,14 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
           <div className="grid items-center gap-7 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] lg:gap-12">
             <figure className="min-w-0">
               <div className="relative aspect-[16/10] overflow-hidden bg-[#d8d3ca]">
+                {localStory.scene === 'sultanahmet' && (
+                  <Image src={cityScene.src} alt="" aria-hidden="true"
+                    fill sizes="(max-width: 1024px) 100vw, 650px"
+                    className="scale-110 object-cover opacity-55 blur-lg" />
+                )}
                 <Image src={cityScene.src} alt={fr ? cityScene.fr : cityScene.en}
-                  fill sizes="(max-width: 1024px) 100vw, 650px" className="object-cover" />
+                  fill sizes="(max-width: 1024px) 100vw, 650px"
+                  className={localStory.scene === 'sultanahmet' ? 'object-contain' : 'object-cover'} />
               </div>
               <figcaption className="mt-3 text-xs leading-5 text-[#66737a]">
                 {fr ? cityScene.fr : cityScene.en} · {fr ? 'Photo' : 'Photo'}{' '}

@@ -20,7 +20,7 @@ ASSETS=[
     dict(id="karakoy",filename="karakoy-galataport.webp",title="Galataport from Istanbul Museum of Modern Art in 2024 5623.jpg",author="Dosseman",licence="CC BY-SA 4.0",licenceUrl="https://creativecommons.org/licenses/by-sa/4.0/"),
     dict(id="ciragan",filename="ciragan-bosphorus.webp",title="Çırağan Palace from the Bosphorus Strait.jpg",author="flowcomm",licence="CC BY 2.0",licenceUrl="https://creativecommons.org/licenses/by/2.0/"),
     dict(id="kurucesme",filename="ortakoy-bosphorus.webp",title="Ortaköy Mosque and 15th July Bridge.jpg",author="Maurice Flesier",licence="CC BY-SA 4.0",licenceUrl="https://creativecommons.org/licenses/by-sa/4.0/"),
-    dict(id="sultanahmet",filename="sultanahmet-skyline.webp",title="SultanahmetIstanbul.jpg",author="Jorge1767",licence="Public domain",licenceUrl="https://creativecommons.org/publicdomain/mark/1.0/"),
+    dict(id="sultanahmet",filename="sultanahmet-skyline.webp",title="Hagia Sophia and Blue Mosque.jpg",author="Husain007",licence="CC BY-SA 4.0",licenceUrl="https://creativecommons.org/licenses/by-sa/4.0/"),
     dict(id="nisantasi",filename="nisantasi-abdi-ipekci.webp",title="Nişantaşı Abdi İpekçi Avenue.jpg",author="Metuboy",licence="CC BY-SA 4.0",licenceUrl="https://creativecommons.org/licenses/by-sa/4.0/"),
     dict(id="dolmabahce",filename="dolmabahce-palace.webp",title="Dolmabahce Istanbul Turkey.jpg",author="flowcomm",licence="CC BY 2.0",licenceUrl="https://creativecommons.org/licenses/by/2.0/"),
 ]
@@ -38,7 +38,7 @@ def get(url,params=None,stream=False):
     raise RuntimeError(f"Request failed: {url[:120]} — {err}")
 
 def checked_image(asset):
-    params={"action":"query","prop":"imageinfo","titles":"File:"+asset["title"],"iiprop":"url|extmetadata|size|mime","iiurlwidth":"1600","format":"json","formatversion":"2"}
+    params={"action":"query","prop":"imageinfo","titles":"File:"+asset["title"],"iiprop":"url|extmetadata|size|mime","iiurlwidth":"2200","format":"json","formatversion":"2"}
     result=get(API,params=params).json()
     page=result["query"]["pages"][0]
     if "missing" in page or not page.get("imageinfo"):
@@ -75,7 +75,7 @@ def checked_image(asset):
     with Image.open(io.BytesIO(raw)) as im:
         im=ImageOps.exif_transpose(im).convert("RGB")
         w,h=im.size
-        if w<900 or h<460:
+        if w<900 or (h<460 and not (asset["id"]=="sultanahmet" and h>=300 and (w/h)<=5.5)):
             raise ValueError(f"Source image too small: {w}x{h}")
         im.thumbnail((1700,1200),Image.Resampling.LANCZOS)
         out=io.BytesIO()
@@ -96,6 +96,8 @@ def main():
             prior={a["id"]:a for a in json.loads(REPORT.read_text()).get("items",[]) if a.get("status")=="downloaded"}
         except Exception: pass
     for asset in ASSETS:
+        if asset["id"] != "sultanahmet" and asset["id"] in prior:
+            continue
         try:
             prior[asset["id"]]=checked_image(asset)
             print("DOWNLOADED",asset["id"],flush=True)
