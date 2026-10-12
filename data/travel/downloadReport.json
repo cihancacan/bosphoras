@@ -3,8 +3,8 @@
   "scope": "feature branch / 9 selected Istanbul hotels",
   "note": "User stated image reuse is authorized; rights were not independently verified.",
   "attempted": 37,
-  "downloaded": 25,
-  "unavailable": 12,
+  "downloaded": 35,
+  "unavailable": 2,
   "items": [
     {
       "filename": "ciragan-01-hero.jpg",
@@ -63,43 +63,58 @@
     },
     {
       "filename": "four-seasons-bosphorus-01-hero.jpg",
-      "status": "unavailable",
-      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-38%2C7500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP_266_original.jpg",
-      "errors": [
-        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-38%2C7500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP_"
-      ]
+      "status": "downloaded",
+      "sourceUrl": "https://media.cntraveler.com/photos/69de69a9de6c259b76d3c400/16%3A9/w_2560%2Cc_limit/Four-Seasons-Hotel-Istanbul-at-the-Bosphorus-triple-crown-april2026-PR-Global-09.jpg",
+      "downloadedFrom": "https://media.cntraveler.com/photos/69de69a9de6c259b76d3c400/16%3A9/w_2560%2Cc_limit/Four-Seasons-Hotel-Istanbul-at-the-Bosphorus-triple-crown-april2026-PR-Global-09.jpg",
+      "localPath": "/images/travel/istanbul/four-seasons-bosphorus/four-seasons-bosphorus-01-hero.webp",
+      "sourceWidth": 2560,
+      "sourceHeight": 1440,
+      "bytes": 349240,
+      "sha256": "beec30a28c4a554702cb76a85c6c918c276fc6b66e8c92351364544166173f52"
     },
     {
       "filename": "four-seasons-bosphorus-02-waterfront.jpg",
-      "status": "unavailable",
-      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-0%2C0000-1674%2C6667-942%2C0000/publish/content/dam/fourseasons/images/web/BOP/BOP_269_original.jpg",
-      "errors": [
-        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-0%2C0000-1674%2C6667-942%2C0000/publish/content/dam/fourseasons/images/web/BOP/BOP_26"
-      ]
+      "status": "downloaded",
+      "sourceUrl": "https://media.cntraveler.com/photos/69de69ef221fdcedfa5f0f20/16%3A9/w_2560%2Cc_limit/Four-Seasons-Hotel-Istanbul-at-the-Bosphorus-triple-crown-april2026-PR-Global-74-bcaphoto-fs-25-05b-%281278%29.jpg",
+      "downloadedFrom": "https://media.cntraveler.com/photos/69de69ef221fdcedfa5f0f20/16%3A9/w_2560%2Cc_limit/Four-Seasons-Hotel-Istanbul-at-the-Bosphorus-triple-crown-april2026-PR-Global-74-bcaphoto-fs-25-05b-%281278%29.jpg",
+      "localPath": "/images/travel/istanbul/four-seasons-bosphorus/four-seasons-bosphorus-02-waterfront.webp",
+      "sourceWidth": 2560,
+      "sourceHeight": 1440,
+      "bytes": 265978,
+      "sha256": "ebebb287da02ce3773fab1964b31abdaca80b621772fe304c17a8aad6f147b43"
     },
     {
       "filename": "four-seasons-bosphorus-03-yali.jpg",
-      "status": "unavailable",
-      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP_1455_original.jpg",
-      "errors": [
-        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP"
-      ]
+      "status": "downloaded",
+      "sourceUrl": "https://media.cntraveler.com/photos/69de6987221fdcedfa5f0f14/16%3A9/w_2560%2Cc_limit/Breakfast-Four-Seasons-Hotel-Istanbul-at-the-Bosphorus-triple-crown-april2026-PR-Global-9.jpg",
+      "downloadedFrom": "https://media.cntraveler.com/photos/69de6987221fdcedfa5f0f14/16%3A9/w_2560%2Cc_limit/Breakfast-Four-Seasons-Hotel-Istanbul-at-the-Bosphorus-triple-crown-april2026-PR-Global-9.jpg",
+      "localPath": "/images/travel/istanbul/four-seasons-bosphorus/four-seasons-bosphorus-03-yali.webp",
+      "sourceWidth": 2560,
+      "sourceHeight": 1440,
+      "bytes": 187754,
+      "sha256": "4a0f3d2f7cd14eddd557de1035db2a8b3c33209b24d75b1492985f18d76fc099"
     },
     {
       "filename": "four-seasons-bosphorus-04-room.jpg",
-      "status": "unavailable",
-      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP_002_original.jpg",
-      "errors": [
-        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP"
-      ]
+      "status": "downloaded",
+      "sourceUrl": "https://media.cntraveler.com/photos/69de6a1ee591ddd951d7f291/16%3A9/w_2560%2Cc_limit/Pool-Four-Seasons-Hotel-Istanbul-at-the-Bosphorus-triple-crown-april2026-PR-Global-1.jpg",
+      "downloadedFrom": "https://media.cntraveler.com/photos/69de6a1ee591ddd951d7f291/16%3A9/w_2560%2Cc_limit/Pool-Four-Seasons-Hotel-Istanbul-at-the-Bosphorus-triple-crown-april2026-PR-Global-1.jpg",
+      "localPath": "/images/travel/istanbul/four-seasons-bosphorus/four-seasons-bosphorus-04-room.webp",
+      "sourceWidth": 2560,
+      "sourceHeight": 1440,
+      "bytes": 189960,
+      "sha256": "26db08d210b3452a6a0b82736071fd2adedb618eeacc7fef3420e36f2dafcd05"
     },
     {
       "filename": "four-seasons-bosphorus-05-pool.jpg",
-      "status": "unavailable",
-      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP_1025_original.jpg",
-      "errors": [
-        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/BOP/BOP"
-      ]
+      "status": "downloaded",
+      "sourceUrl": "https://media.cntraveler.com/photos/69de6a13de6c259b76d3c42d/16%3A9/w_2560%2Cc_limit/Front-Side-Courtyard-Four-Seasons-Hotel-Istanbul-at-the-Bosphorus-triple-crown-april2026-PR-Global-1.jpg",
+      "downloadedFrom": "https://media.cntraveler.com/photos/69de6a13de6c259b76d3c42d/16%3A9/w_2560%2Cc_limit/Front-Side-Courtyard-Four-Seasons-Hotel-Istanbul-at-the-Bosphorus-triple-crown-april2026-PR-Global-1.jpg",
+      "localPath": "/images/travel/istanbul/four-seasons-bosphorus/four-seasons-bosphorus-05-pool.webp",
+      "sourceWidth": 2560,
+      "sourceHeight": 1440,
+      "bytes": 458260,
+      "sha256": "46d3740156fa95fb22c224a6e10939a11a8c4e06767df0b986ff6830eda63887"
     },
     {
       "filename": "mandarin-oriental-01-hero.jpg",
@@ -144,43 +159,58 @@
     },
     {
       "filename": "four-seasons-sultanahmet-01-hero.jpg",
-      "status": "unavailable",
-      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~75.701.270%2C5849-0%2C0000-2666%2C6667-2000%2C0000/publish/content/dam/fourseasons/images/web/IST/IST_894_original.jpg",
-      "errors": [
-        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~75.701.270%2C5849-0%2C0000-2666%2C6667-2000%2C0000/publish/content/dam/fourseasons/images/web/IST/IST_"
-      ]
+      "status": "downloaded",
+      "sourceUrl": "https://media.cntraveler.com/photos/69de63e3db67fc16233f36c8/16%3A9/w_2560%2Cc_limit/Four-Seasons-Hotel-Istanbul-at-Sultanahmet-triple-crown-april2026-PR-Global-DJI_20250914222231_0056_D.jpg",
+      "downloadedFrom": "https://media.cntraveler.com/photos/69de63e3db67fc16233f36c8/16%3A9/w_2560%2Cc_limit/Four-Seasons-Hotel-Istanbul-at-Sultanahmet-triple-crown-april2026-PR-Global-DJI_20250914222231_0056_D.jpg",
+      "localPath": "/images/travel/istanbul/four-seasons-sultanahmet/four-seasons-sultanahmet-01-hero.webp",
+      "sourceWidth": 2560,
+      "sourceHeight": 1440,
+      "bytes": 482944,
+      "sha256": "4efc4718f70ac914eeb9e68c84b7b530992e508830f6124a25d1d170e870331d"
     },
     {
       "filename": "four-seasons-sultanahmet-02-dining.jpg",
-      "status": "unavailable",
-      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-312%2C5000-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST_794_original.jpg",
-      "errors": [
-        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-312%2C5000-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST"
-      ]
+      "status": "downloaded",
+      "sourceUrl": "https://media.cntraveler.com/photos/69de63af98d5afd348088233/16%3A9/w_2560%2Cc_limit/Four-Seasons-Hotel-Istanbul-at-Sultanahmet-triple-crown-april2026-PR-Global-_22_45564_A1.jpg",
+      "downloadedFrom": "https://media.cntraveler.com/photos/69de63af98d5afd348088233/16%3A9/w_2560%2Cc_limit/Four-Seasons-Hotel-Istanbul-at-Sultanahmet-triple-crown-april2026-PR-Global-_22_45564_A1.jpg",
+      "localPath": "/images/travel/istanbul/four-seasons-sultanahmet/four-seasons-sultanahmet-02-dining.webp",
+      "sourceWidth": 2560,
+      "sourceHeight": 1440,
+      "bytes": 149142,
+      "sha256": "33269e569b79a27f00d5669833032c7e90ff37ef167bde6f151f4afb94f38636"
     },
     {
       "filename": "four-seasons-sultanahmet-03-room.jpg",
-      "status": "unavailable",
-      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-311%2C4004-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST_799_original.jpg",
-      "errors": [
-        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-311%2C4004-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST"
-      ]
+      "status": "downloaded",
+      "sourceUrl": "https://media.cntraveler.com/photos/69de63d198d5afd348088245/16%3A9/w_2560%2Cc_limit/Four-Seasons-Hotel-Istanbul-at-Sultanahmet-triple-crown-april2026-PR-Global-26478_A1.jpg",
+      "downloadedFrom": "https://media.cntraveler.com/photos/69de63d198d5afd348088245/16%3A9/w_2560%2Cc_limit/Four-Seasons-Hotel-Istanbul-at-Sultanahmet-triple-crown-april2026-PR-Global-26478_A1.jpg",
+      "localPath": "/images/travel/istanbul/four-seasons-sultanahmet/four-seasons-sultanahmet-03-room.webp",
+      "sourceWidth": 2560,
+      "sourceHeight": 1440,
+      "bytes": 182434,
+      "sha256": "02b4951ab2dd96bbec6cb787bf1c23879153e68dd630657b6f9e1dee8f55262d"
     },
     {
       "filename": "four-seasons-sultanahmet-04-gardens.jpg",
-      "status": "unavailable",
-      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-247%2C5000-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST_811_original.jpg",
-      "errors": [
-        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-247%2C5000-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST"
-      ]
+      "status": "downloaded",
+      "sourceUrl": "https://media.cntraveler.com/photos/69de63fdd38aeb00771a576b/16%3A9/w_2560%2Cc_limit/Four-Seasons-Hotel-Istanbul-at-Sultanahmet-triple-crown-april2026-PR-Global-OCT_22_45451_A1.jpg",
+      "downloadedFrom": "https://media.cntraveler.com/photos/69de63fdd38aeb00771a576b/16%3A9/w_2560%2Cc_limit/Four-Seasons-Hotel-Istanbul-at-Sultanahmet-triple-crown-april2026-PR-Global-OCT_22_45451_A1.jpg",
+      "localPath": "/images/travel/istanbul/four-seasons-sultanahmet/four-seasons-sultanahmet-04-gardens.webp",
+      "sourceWidth": 2560,
+      "sourceHeight": 1440,
+      "bytes": 168516,
+      "sha256": "03fb77c15bf515139ed17bac2e42e5fc5f091df4b43abb47b8b1d9b800cb6448"
     },
     {
       "filename": "four-seasons-sultanahmet-05-rooftop.jpg",
-      "status": "unavailable",
-      "sourceUrl": "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-164%2C2504-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST_817_original.jpg",
-      "errors": [
-        "HTTPError: 403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-164%2C2504-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/IST/IST"
-      ]
+      "status": "downloaded",
+      "sourceUrl": "https://media.cntraveler.com/photos/69de63db98d5afd348088250/16%3A9/w_2560%2Cc_limit/Four-Seasons-Hotel-Istanbul-at-Sultanahmet-triple-crown-april2026-PR-Global-DJI_20250914221538_0036_D.jpg",
+      "downloadedFrom": "https://media.cntraveler.com/photos/69de63db98d5afd348088250/16%3A9/w_2560%2Cc_limit/Four-Seasons-Hotel-Istanbul-at-Sultanahmet-triple-crown-april2026-PR-Global-DJI_20250914221538_0036_D.jpg",
+      "localPath": "/images/travel/istanbul/four-seasons-sultanahmet/four-seasons-sultanahmet-05-rooftop.webp",
+      "sourceWidth": 2560,
+      "sourceHeight": 1440,
+      "bytes": 450884,
+      "sha256": "a9ccf8ede4603b1e9dde29ca6f11b38937dc3c0b5f17ca9ee854847d44c7471a"
     },
     {
       "filename": "shangri-la-01-hero.jpg",
