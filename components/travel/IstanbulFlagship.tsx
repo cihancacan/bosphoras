@@ -1,5 +1,7 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { EditorialHotelCard } from '@/components/travel/EditorialHotelCard';
+import { istanbulCityScenes } from '@/data/travel/istanbulCityScenes';
 import { istanbulHotels, istanbulDistricts, istanbulFaqs, istanbulJourneys, istanbulEditorialSourceDate } from '@/data/travel/istanbulFlagship';
 
 type Language = 'fr' | 'en';
@@ -69,6 +71,20 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
           {istanbulDistricts.map((d,i)=><article key={d.id} className="bg-[#fbfaf6] p-7 border border-[#ded4c5] flex flex-col gap-5">
             <div className="flex items-start justify-between"><span className="font-serif text-3xl text-[#b39263]">{String(i+1).padStart(2,'0')}</span><span className="text-xs text-[#9c784a] uppercase tracking-wider">Istanbul · Europe</span></div>
             <h3 className="font-serif text-2xl">{d.name}</h3>
+            <figure>
+              <div className="relative aspect-[16/10] overflow-hidden bg-[#d8d3c8]">
+                <Image src={istanbulCityScenes[d.id].src} alt={fr ? istanbulCityScenes[d.id].fr : istanbulCityScenes[d.id].en}
+                  fill sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 390px" className="object-cover" />
+              </div>
+              <figcaption className="mt-2 text-[11px] leading-5 text-[#6a7479]">
+                <a target="_blank" rel="noopener noreferrer" href={istanbulCityScenes[d.id].sourcePage}
+                  className="underline underline-offset-2">{istanbulCityScenes[d.id].author}</a>
+                {' · '}
+                <a target="_blank" rel="noopener noreferrer" href={istanbulCityScenes[d.id].licenseUrl}
+                  className="underline underline-offset-2">{istanbulCityScenes[d.id].license}</a>
+                {' · WebP'}
+              </figcaption>
+            </figure>
             <p className="text-[#52616a] leading-7">{fr?d.fr:d.en}</p>
             <p className="mt-auto border-t border-[#e5dfd6] pt-4 text-sm font-medium text-[#8b683e]">{fr?d.frTip:d.enTip}</p>
           </article>)}
@@ -87,7 +103,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
       <div className="space-y-4">
         {istanbulHotels.map((hotel,i)=><EditorialHotelCard key={hotel.id} hotel={hotel} index={i} locale={locale}/>)}
       </div>
-      <p className="text-[#647078] text-sm leading-6 mt-7">{fr ? 'Les fiches détaillées s’enrichissent progressivement des photographies autorisées. Les prix et disponibilités ne seront affichés qu’après validation du partenaire de réservation.' : 'Detailed profiles are gradually being enriched with authorized photography. Rates and availability will appear only after booking-partner verification.'}</p>
+      <p className="text-[#647078] text-sm leading-6 mt-7">{fr ? 'Les neuf fiches incluent des galeries locales et des vues de quartier documentées. Les prix et disponibilités ne seront affichés qu’après validation du partenaire de réservation.' : 'All nine profiles include locally stored hotel galleries and documented neighbourhood photography. Rates and availability will appear only after booking-partner verification.'}</p>
     </section>
 
     <section id="experience" className={anchor + ' bg-[#142d39] text-[#f8f2e6] py-16 sm:py-24'}>

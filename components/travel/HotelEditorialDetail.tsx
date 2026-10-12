@@ -7,6 +7,7 @@ import { istanbulHotels } from '@/data/travel/istanbulFlagship';
 
 type Hotel = (typeof istanbulHotels)[number];
 import { istanbulHotelPhotos, type HotelPhoto } from '@/data/travel/hotelPhotography';
+import { istanbulCityScenes, hotelCityStories } from '@/data/travel/istanbulCityScenes';
 
 
 function EditorialPhoto({ photo, locale, className, priority = false }: { photo: HotelPhoto; locale: 'fr' | 'en'; className: string; priority?: boolean }) {
@@ -20,6 +21,8 @@ function EditorialPhoto({ photo, locale, className, priority = false }: { photo:
 export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 'fr' | 'en' }) {
   const fr = locale === 'fr';
   const photos = istanbulHotelPhotos[hotel.id] ?? [];
+  const localStory = hotelCityStories[hotel.id];
+  const cityScene = istanbulCityScenes[localStory.scene];
   const [active, setActive] = useState(0);
   const [enlarged, setEnlarged] = useState(false);
 
@@ -100,6 +103,38 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
             </a>
           </aside>
         </div>
+
+        <section aria-label={fr ? 'Autour de l’hôtel' : 'Around the hotel'} className="mt-20 border-t border-[#e0d4c2] pt-10">
+          <div className="mb-8 max-w-3xl">
+            <p className="text-xs font-semibold uppercase tracking-[.2em] text-[#9c784a]">
+              {fr ? 'L’expérience de quartier' : 'The neighbourhood experience'}
+            </p>
+            <h2 className="mt-4 font-serif text-3xl sm:text-4xl">{fr ? localStory.frTitle : localStory.enTitle}</h2>
+          </div>
+          <div className="grid items-center gap-7 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] lg:gap-12">
+            <figure className="min-w-0">
+              <div className="relative aspect-[16/10] overflow-hidden bg-[#d8d3ca]">
+                <Image src={cityScene.src} alt={fr ? cityScene.fr : cityScene.en}
+                  fill sizes="(max-width: 1024px) 100vw, 650px" className="object-cover" />
+              </div>
+              <figcaption className="mt-3 text-xs leading-5 text-[#66737a]">
+                {fr ? cityScene.fr : cityScene.en} · {fr ? 'Photo' : 'Photo'}{' '}
+                <a href={cityScene.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{cityScene.author}</a>
+                {' · '}
+                <a href={cityScene.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{cityScene.license}</a>
+                {' · '}{fr ? 'Format WebP optimisé' : 'Optimised WebP'}
+              </figcaption>
+            </figure>
+            <div>
+              <p className="text-base leading-8 text-[#475964]">{fr ? localStory.fr : localStory.en}</p>
+              <p className="mt-6 border-l-2 border-[#b7955d] pl-4 text-sm leading-7 text-[#647078]">
+                {fr
+                  ? 'Vue de quartier à titre illustratif. La photographie ne représente pas la vue depuis la chambre ni un équipement de l’hôtel.'
+                  : 'Area photograph for context only. It does not depict a guaranteed guest-room view or an amenity of the hotel.'}
+              </p>
+            </div>
+          </div>
+        </section>
         <section className="mt-20 border-t border-[#e0d4c2] pt-10">
           <h2 className="font-serif text-3xl">{fr ? 'Autres adresses à découvrir' : 'Other addresses to explore'}</h2>
           <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
