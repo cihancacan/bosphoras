@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Import six manually reviewed Wikimedia Commons Istanbul city scenes, with verifiable credits.
+"""Import five Wikimedia city photos and the owner-supplied Sultanahmet photo.
 
 Runs on the isolated Travel feature branch only. No hotel booking endpoints or secrets.
 Only commits media that match a Commons file, expected licence, image type and resolution.
@@ -20,7 +20,7 @@ ASSETS=[
     dict(id="karakoy",filename="karakoy-galataport.webp",title="Galataport from Istanbul Museum of Modern Art in 2024 5623.jpg",author="Dosseman",licence="CC BY-SA 4.0",licenceUrl="https://creativecommons.org/licenses/by-sa/4.0/"),
     dict(id="ciragan",filename="ciragan-bosphorus.webp",title="Çırağan Palace from the Bosphorus Strait.jpg",author="flowcomm",licence="CC BY 2.0",licenceUrl="https://creativecommons.org/licenses/by/2.0/"),
     dict(id="kurucesme",filename="ortakoy-bosphorus.webp",title="Ortaköy Mosque and 15th July Bridge.jpg",author="Maurice Flesier",licence="CC BY-SA 4.0",licenceUrl="https://creativecommons.org/licenses/by-sa/4.0/"),
-    dict(id="sultanahmet",filename="sultanahmet-skyline.webp",title="Hagia Sophia and Blue Mosque.jpg",author="Husain007",licence="CC BY-SA 4.0",licenceUrl="https://creativecommons.org/licenses/by-sa/4.0/"),
+    dict(id="sultanahmet",filename="sultanahmet-hagia-sophia-day.webp",title="hagia-sophia-in-turkey.jpg",author="Unknown photographer (image hosted by topkapi-palace.net)",licence="Reuse authorized by the project owner; not independently verified",licenceUrl="https://topkapi-palace.net/wp-content/uploads/2024/10/hagia-sophia-in-turkey.jpg",sourceUrl="https://topkapi-palace.net/wp-content/uploads/2024/10/hagia-sophia-in-turkey.jpg"),
     dict(id="nisantasi",filename="nisantasi-abdi-ipekci.webp",title="Nişantaşı Abdi İpekçi Avenue.jpg",author="Metuboy",licence="CC BY-SA 4.0",licenceUrl="https://creativecommons.org/licenses/by-sa/4.0/"),
     dict(id="dolmabahce",filename="dolmabahce-palace.webp",title="Dolmabahce Istanbul Turkey.jpg",author="flowcomm",licence="CC BY 2.0",licenceUrl="https://creativecommons.org/licenses/by/2.0/"),
 ]
@@ -38,29 +38,41 @@ def get(url,params=None,stream=False):
     raise RuntimeError(f"Request failed: {url[:120]} — {err}")
 
 def checked_image(asset):
-    params={"action":"query","prop":"imageinfo","titles":"File:"+asset["title"],"iiprop":"url|extmetadata|size|mime","iiurlwidth":"2200","format":"json","formatversion":"2"}
-    result=get(API,params=params).json()
-    page=result["query"]["pages"][0]
-    if "missing" in page or not page.get("imageinfo"):
-        raise ValueError("Commons file not found: "+asset["title"])
-    info=page["imageinfo"][0]
-    meta=info.get("extmetadata",{})
-    lurl=re.sub(r"/+$","",re.sub(r"^http:", "https:", meta.get("LicenseUrl",{}).get("value","")))
-    expected=asset["licenceUrl"].rstrip("/")
-    short=meta.get("LicenseShortName",{}).get("value","").lower()
-    if asset["licence"]=="Public domain":
-        if not any(x in short for x in ("public domain","pd-")):
-            raise ValueError("Unexpected public domain claim: "+short)
-    elif lurl!=expected:
-        raise ValueError(f"Licence changed: {lurl} != {expected}")
-    src=info.get("thumburl") or info.get("url")
-    host=urlparse(src).hostname
-    if host not in {"upload.wikimedia.org","thumb.wikimedia.org"}:
-        raise ValueError("Unexpected image host: "+str(host))
+    if asset["id"] == "sultanahmet":
+        # Exact source explicitly supplied by the project owner.
+        # Do not infer a photographer's identity or a Creative Commons licence.
+        src = asset["sourceUrl"]
+        source_page = src
+        allowed_hosts = {"topkapi-palace.net", "www.topkapi-palace.net"}
+        if urlparse(src).hostname not in allowed_hosts or urlparse(src).scheme != "https":
+            raise ValueError("Unexpected user-provided image URL")
+    else:
+        params={"action":"query","prop":"imageinfo","titles":"File:"+asset["title"],"iiprop":"url|extmetadata|size|mime","iiurlwidth":"2200","format":"json","formatversion":"2"}
+        result=get(API,params=params).json()
+        page=result["query"]["pages"][0]
+        if "missing" in page or not page.get("imageinfo"):
+            raise ValueError("Commons file not found: "+asset["title"])
+        info=page["imageinfo"][0]
+        meta=info.get("extmetadata",{})
+        lurl=re.sub(r"/+$","",re.sub(r"^http:", "https:", meta.get("LicenseUrl",{}).get("value","")))
+        expected=asset["licenceUrl"].rstrip("/")
+        short=meta.get("LicenseShortName",{}).get("value","").lower()
+        if asset["licence"]=="Public domain":
+            if not any(x in short for x in ("public domain","pd-")):
+                raise ValueError("Unexpected public domain claim: "+short)
+        elif lurl!=expected:
+            raise ValueError(f"Licence changed: {lurl} != {expected}")
+        src=info.get("thumburl") or info.get("url")
+        source_page="https://commons.wikimedia.org/wiki/File:"+asset["title"].replace(" ","_")
+        allowed_hosts={"upload.wikimedia.org","thumb.wikimedia.org"}
+        if urlparse(src).hostname not in allowed_hosts:
+            raise ValueError("Unexpected image host: "+str(urlparse(src).hostname))
     response=get(src,stream=True)
     try:
-        if urlparse(response.url).hostname not in {"upload.wikimedia.org","thumb.wikimedia.org"}:
+        if urlparse(response.url).scheme != "https" or urlparse(response.url).hostname not in allowed_hosts:
             raise ValueError("Unapproved image redirect")
+        if not response.headers.get("content-type", "").lower().startswith("image/"):
+            raise ValueError("Image host did not return image content")
         chunks=[]; size=0
         for chunk in response.iter_content(131072):
             size+=len(chunk)
@@ -84,7 +96,7 @@ def checked_image(asset):
     output=DEST/asset["filename"]
     output.parent.mkdir(parents=True,exist_ok=True)
     output.write_bytes(binary)
-    return dict(asset, status="downloaded", sourcePage="https://commons.wikimedia.org/wiki/File:"+asset["title"].replace(" ","_"),
+    return dict(asset, status="downloaded", sourcePage=source_page,
                 sourceDownloadUrl=src, localPath="/images/travel/istanbul/city/"+asset["filename"],
                 sourceWidth=w, sourceHeight=h, bytes=len(binary),sha256=hashlib.sha256(binary).hexdigest(),
                 modifications="Resized, EXIF orientation normalized, converted to WebP")
@@ -105,7 +117,7 @@ def main():
             print("FAILED",asset["id"],str(e),flush=True)
             prior[asset["id"]]=dict(asset,status="unavailable",error=str(e)[:250])
     allitems=[prior[x["id"]] for x in ASSETS]
-    report={"scope":"Bosphoras Travel preview — Istanbul city scene photographs","source":"Wikimedia Commons, individually curated",
+    report={"scope":"Bosphoras Travel preview — Istanbul city scene photographs","source":"Wikimedia Commons + explicit owner-supplied image",
             "downloaded":sum(a["status"]=="downloaded" for a in allitems),"total":len(allitems),"items":allitems}
     REPORT.parent.mkdir(parents=True,exist_ok=True)
     REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
