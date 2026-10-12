@@ -3,8 +3,8 @@
   "scope": "feature branch / 9 selected Istanbul hotels",
   "note": "User stated image reuse is authorized; rights were not independently verified.",
   "attempted": 37,
-  "downloaded": 35,
-  "unavailable": 2,
+  "downloaded": 37,
+  "unavailable": 0,
   "items": [
     {
       "filename": "ciragan-01-hero.jpg",
@@ -150,14 +150,6 @@
       "sha256": "2281d79a8785bc0baaffd27a45f5f62395ba66bb345941f7b2304fc695f6d725"
     },
     {
-      "filename": "mandarin-oriental-04-spa.jpg",
-      "status": "unavailable",
-      "sourceUrl": "https://istanbulhammam.com/wp-content/uploads/2024/11/the-spa-at-mandarin-oriental-bosphorus-istanbul-6.jpg",
-      "errors": [
-        "ValueError: redirect-outside-allowlist"
-      ]
-    },
-    {
       "filename": "four-seasons-sultanahmet-01-hero.jpg",
       "status": "downloaded",
       "sourceUrl": "https://media.cntraveler.com/photos/69de63e3db67fc16233f36c8/16%3A9/w_2560%2Cc_limit/Four-Seasons-Hotel-Istanbul-at-Sultanahmet-triple-crown-april2026-PR-Global-DJI_20250914222231_0056_D.jpg",
@@ -222,14 +214,6 @@
       "sourceHeight": 900,
       "bytes": 150518,
       "sha256": "ed70618cfa56070b727b605ed7616c7b54920da431373b87bfef0a6a7fca4aa7"
-    },
-    {
-      "filename": "shangri-la-02-suite.jpg",
-      "status": "unavailable",
-      "sourceUrl": "https://byconnoisseur.com/wp-content/uploads/2023/06/Shangri-La-Istanbul-5.jpg",
-      "errors": [
-        "ConnectionError: HTTPSConnectionPool(host='byconnoisseur.com', port=443): Max retries exceeded with url: /wp-content/uploads/2023/06/Shangri-La-Istanbul-5.jpg (Caused by NameResolutionError(\"HTTPSC"
-      ]
     },
     {
       "filename": "shangri-la-03-lobby.jpg",
@@ -406,6 +390,28 @@
       "sourceHeight": 675,
       "bytes": 137866,
       "sha256": "521c2bba79efc9c965d3dccd9d08417ee4aa34dc98d6764d1cde87abb69e49dc"
+    },
+    {
+      "filename": "mandarin-oriental-04-royal-suite.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://media.cntraveler.com/photos/665f53976b61c1fc6581a03f/16%3A9/w_2560%2Cc_limit/Royal-Bosphorus-Suite-Mandarin-Oriental-Istanbul--dec22-pr.jpg",
+      "downloadedFrom": "https://media.cntraveler.com/photos/665f53976b61c1fc6581a03f/16%3A9/w_2560%2Cc_limit/Royal-Bosphorus-Suite-Mandarin-Oriental-Istanbul--dec22-pr.jpg",
+      "localPath": "/images/travel/istanbul/mandarin-oriental/mandarin-oriental-04-royal-suite.webp",
+      "sourceWidth": 2560,
+      "sourceHeight": 1440,
+      "bytes": 189322,
+      "sha256": "ca45e772f6c017dffe1c0c524689f937230eabce273f060e3b90cd17bcffa574"
+    },
+    {
+      "filename": "shangri-la-02-waterfront.jpg",
+      "status": "downloaded",
+      "sourceUrl": "https://media.cntraveler.com/photos/55f98ee9c753332a5bcdf82a/16%3A9/w_2560%2Cc_limit/shangri-la-bosphorus-istanbul-turkey.jpg",
+      "downloadedFrom": "https://media.cntraveler.com/photos/55f98ee9c753332a5bcdf82a/16%3A9/w_2560%2Cc_limit/shangri-la-bosphorus-istanbul-turkey.jpg",
+      "localPath": "/images/travel/istanbul/shangri-la/shangri-la-02-waterfront.webp",
+      "sourceWidth": 2048,
+      "sourceHeight": 1536,
+      "bytes": 149100,
+      "sha256": "b9f89ba4572b011138ed40b9b1c266819f860ec5034758b0c5a0ce8cc8e58639"
     }
   ]
 }
