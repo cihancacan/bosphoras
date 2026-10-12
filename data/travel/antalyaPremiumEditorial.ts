@@ -67,7 +67,7 @@ export const antalyaHotelEditorial:Record<string,BodrumHotelEditorial>={
 // Area photographs must be independent of the hotel galleries and accurately depict the named area.
 // The currently available city images depict Kemer/Konyaaltı/Kaleiçi, not Belek.
 export const antalyaAreaVisuals:(BodrumPremiumPhoto|null)[]=[
-  null,
+  {src:'/images/travel/antalya-premium/destination/belek-coast.webp',fr:'La plage de Belek et ses grands resorts sous les monts Taurus',en:'Belek sandy coastline and resorts beneath the Taurus Mountains',sourcePage:'https://www.tourbelek.com/',credit:'TourBelek · photographie de la côte de Belek'},
   {src:'/images/travel/antalya-premium/destination/kemer-panorama.webp',fr:'Panorama du littoral montagneux de Kemer',en:'Mountain-framed Kemer coastline panorama',sourcePage:'https://commons.wikimedia.org/wiki/File:Kemer_-_Panorama.jpg',credit:'ViseMoD · Wikimedia Commons · CC BY-SA 4.0'},
   {src:'/images/travel/city-guides/antalya/harbour.webp',fr:'Le vieux port d’Antalya au pied du quartier de Kaleiçi',en:'Antalya old harbour beneath Kaleiçi',sourcePage:'https://commons.wikimedia.org/wiki/File:2023-01-17_Antalya_Harbour.jpg',credit:'Maksym Kozlenko · Wikimedia Commons · CC BY-SA 4.0'}
 ];
