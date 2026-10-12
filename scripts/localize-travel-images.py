@@ -102,7 +102,7 @@ def download(entry):
 def main():
     text = MANIFEST.read_text(encoding="utf-8")
     entries = [(m.group("filename"), m.group("src")) for m in PATTERN.finditer(text)]
-    if len(entries) < 30 or len(entries) > 65:
+    if not entries or len(entries) > 65:
         raise RuntimeError(f"Unexpected remote image count: {len(entries)}")
     if len({name for name, _ in entries}) != len(entries):
         raise RuntimeError("Duplicate destination filenames")
@@ -120,14 +120,24 @@ def main():
         print(result["status"], result["filename"])
     MANIFEST.write_text(text, encoding="utf-8")
     REPORT.parent.mkdir(parents=True, exist_ok=True)
+    previous_items = []
+    if REPORT.exists():
+        try:
+            previous_items = json.loads(REPORT.read_text(encoding="utf-8")).get("items", [])
+        except (ValueError, OSError):
+            previous_items = []
+    merged = {item["filename"]: item for item in previous_items if "filename" in item}
+    for item in results:
+        merged[item["filename"]] = item
+    all_results = list(merged.values())
     report = {
         "source": "Bosphoras Travel Istanbul editorial pilot",
         "scope": "feature branch / 9 selected Istanbul hotels",
         "note": "User stated image reuse is authorized; rights were not independently verified.",
-        "attempted": len(entries),
-        "downloaded": sum(r["status"] == "downloaded" for r in results),
-        "unavailable": sum(r["status"] != "downloaded" for r in results),
-        "items": results,
+        "attempted": len(all_results),
+        "downloaded": sum(r["status"] == "downloaded" for r in all_results),
+        "unavailable": sum(r["status"] != "downloaded" for r in all_results),
+        "items": all_results,
     }
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("SUMMARY", json.dumps({k: report[k] for k in ("attempted", "downloaded", "unavailable")}))
