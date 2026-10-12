@@ -1,0 +1,51 @@
+name: Travel Dubai — import four approved bright destination photos
+on:
+  push:
+    branches:
+      - feature/luxury-travel-seo-destinations-20261012
+    paths:
+      - scripts/download-dubai-curated-city-photos.py
+      - .github/workflows/travel-dubai-curated-city-media.yml
+permissions:
+  contents: write
+concurrency:
+  group: travel-dubai-curated-city-media
+  cancel-in-progress: false
+jobs:
+  import-tourism-media:
+    if: github.ref == 'refs/heads/feature/luxury-travel-seo-destinations-20261012'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Prepare quality checking and compression
+        run: python -m pip install --disable-pip-version-check 'Pillow>=10,<12' 'requests>=2.31,<3'
+      - name: Fetch 4 specifically chosen tourism photographs with source ledger
+        id: download
+        run: python scripts/download-dubai-curated-city-photos.py
+      - name: Save vetted WebP files and provenance to Travel feature branch
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [ -f data/travel/dubaiReplacementMediaSources.json ]; then git add data/travel/dubaiReplacementMediaSources.json; fi
+          if [ -d public/images/travel/dubai-premium/destination ]; then git add public/images/travel/dubai-premium/destination; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): record real Dubai coast and district WebP photography [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
+      - name: Archive selection and source audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dubai-bright-tourism-media-audit
+          path: data/travel/dubaiReplacementMediaSources.json
+          if-no-files-found: ignore
