@@ -48,9 +48,13 @@ function PremiumHotelGallery({hotelName,city,locale,expanded=false}: {hotelName:
       </div>)}
     </div>}
     <figcaption className="mt-3 text-xs leading-5 text-[#68747b]">
-      {locale==='fr'?'Photographie de l’établissement':'Property photograph'} ·{' '}
-      <a href={entry.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{entry.credit}</a>
-      
+      <span className="block">{locale==='fr'?first.fr:first.en} ·{' '}
+        <a href={first.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{first.credit}</a>
+      </span>
+      {expanded && photos.slice(1,3).map(photo=><span key={photo.src} className="block">
+        {locale==='fr'?photo.fr:photo.en} ·{' '}
+        <a href={photo.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{photo.credit}</a>
+      </span>)}
     </figcaption>
   </figure>;
 }
