@@ -1,5 +1,6 @@
 import * as grpc from '@grpc/grpc-js';
-import { GrpcReflection } from 'grpc-js-reflection-client';
+import * as protoLoader from '@grpc/proto-loader';
+import path from 'node:path';
 
 const IAM_TOKEN_URL = 'https://staging-iam.wink.travel/oauth2/token';
 const PARTNER_HOST = 'staging-partner.wink.travel:443';
@@ -7,7 +8,7 @@ const ISTANBUL_GEONAME_ID = '745044';
 
 type JsonRecord = Record<string, any>;
 
-export type WinkStage = 'credentials' | 'token' | 'accounts-reflection' | 'accounts' | 'search-reflection' | 'search';
+export type WinkStage = 'credentials' | 'token' | 'accounts-schema' | 'accounts' | 'search-schema' | 'search';
 
 export class WinkStagingError extends Error {
   constructor(public readonly stage: WinkStage) {
@@ -69,23 +70,27 @@ function service(packageObject: JsonRecord, serviceName: 'Accounts' | 'Search') 
   });
 }
 
-async function packageFor(symbol: string, token: string) {
-  const metadata = new grpc.Metadata();
-  metadata.set('authorization', `Bearer ${token}`);
-  const reflection = new GrpcReflection(
-    PARTNER_HOST,
-    grpc.credentials.createSsl(),
-    { 'grpc.keepalive_time_ms': 30_000, 'grpc.keepalive_permit_without_calls': 1 },
-    'v1',
+let cachedPackage: JsonRecord | undefined;
+
+function partnerPackage() {
+  if (cachedPackage) return cachedPackage;
+  const protoRoot = path.join(process.cwd(), 'lib', 'wink-proto');
+  const definition = protoLoader.loadSync(
+    [
+      path.join(protoRoot, 'wink', 'partner', 'v1', 'partner_account.proto'),
+      path.join(protoRoot, 'wink', 'partner', 'v1', 'partner_search.proto'),
+    ],
+    {
+      includeDirs: [protoRoot],
+      keepCase: false,
+      longs: String,
+      enums: String,
+      defaults: true,
+      oneofs: true,
+    },
   );
-  const descriptor = await reflection.getDescriptorBySymbol(symbol, metadata, { deadline: Date.now() + 45_000 });
-  return descriptor.getPackageObject({
-    keepCase: false,
-    longs: String,
-    enums: String,
-    defaults: true,
-    oneofs: true,
-  }) as JsonRecord;
+  cachedPackage = grpc.loadPackageDefinition(definition) as JsonRecord;
+  return cachedPackage;
 }
 
 function futureDate(days = 30) {
@@ -99,7 +104,7 @@ export async function searchIstanbulInventory() {
   const auth = new grpc.Metadata();
   auth.set('authorization', `Bearer ${token}`);
 
-  const accountsPackage = await atStage('accounts-reflection', () => packageFor('wink.partner.v1.Accounts', token));
+  const accountsPackage = await atStage('accounts-schema', async () => partnerPackage());
   const accountsClient = service(accountsPackage, 'Accounts');
   const accountsResponse = await atStage('accounts', () => unary(accountsClient, ['listAccounts', 'ListAccounts'], {}, auth));
   accountsClient.close();
@@ -112,7 +117,7 @@ export async function searchIstanbulInventory() {
   metadata.set('authorization', `Bearer ${token}`);
   metadata.set('managing-entity-id', String(account.accountId));
 
-  const searchPackage = await atStage('search-reflection', () => packageFor('wink.partner.v1.Search', token));
+  const searchPackage = await atStage('search-schema', async () => partnerPackage());
   const searchClient = service(searchPackage, 'Search');
   const response = await atStage('search', () =>
     unary(
