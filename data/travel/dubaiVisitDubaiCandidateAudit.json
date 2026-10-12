@@ -1,0 +1,38 @@
+{
+  "hero-beach": {
+    "page": "https://www.visitdubai.com/en/places-to-visit/palm-west-beach",
+    "status": 403,
+    "candidateCount": 0,
+    "candidates": []
+  },
+  "hero-beach-alt": {
+    "page": "https://www.visitdubai.com/en/explore-dubai/dubai-neighbourhoods/palm-jumeirah",
+    "status": 403,
+    "candidateCount": 0,
+    "candidates": []
+  },
+  "palm-aerial": {
+    "page": "https://www.visitdubai.com/en/explore-dubai/dubai-neighbourhoods/palm-jumeirah",
+    "status": 403,
+    "candidateCount": 0,
+    "candidates": []
+  },
+  "downtown": {
+    "page": "https://www.visitdubai.com/en/explore-dubai/dubai-neighbourhoods/downtown-dubai",
+    "status": 403,
+    "candidateCount": 0,
+    "candidates": []
+  },
+  "business-bay": {
+    "page": "https://www.visitdubai.com/en/explore-dubai/dubai-neighbourhoods/business-bay",
+    "status": 403,
+    "candidateCount": 0,
+    "candidates": []
+  },
+  "marina": {
+    "page": "https://www.visitdubai.com/en/explore-dubai/dubai-neighbourhoods/dubai-marina",
+    "status": 403,
+    "candidateCount": 0,
+    "candidates": []
+  }
+}
