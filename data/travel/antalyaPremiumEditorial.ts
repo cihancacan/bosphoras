@@ -13,8 +13,8 @@ export const antalyaHotelEditorial:Record<string,BodrumHotelEditorial>={
   'Regnum Carya':{
     photos:[
       photo('regnum-carya','regnum-resort','Vue d’ensemble du Regnum Carya à Belek','Regnum Carya resort in Belek','https://www.regnumhotels.com/en/hotels/regnum-carya/','Regnum Carya · site officiel'),
-      photo('regnum-carya','regnum-main-pool','Piscine principale du Regnum Carya','Main pool at Regnum Carya','https://www.regnumhotels.com/en/hotels/regnum-carya/','Regnum Carya · site officiel'),
-      photo('regnum-carya','regnum-pool-suite','Hébergement de luxe avec accès piscine au Regnum Carya','Luxury pool accommodation at Regnum Carya','https://www.regnumhotels.com/en/hotels/regnum-carya/','Regnum Carya · site officiel')
+      photo('regnum-carya','regnum-main-pool','Piscine attenante à une Pearl Pool Suite du Regnum Carya','Pearl Pool Suite pool at Regnum Carya','https://www.regnumhotels.com/en/hotels/regnum-carya/','Regnum Carya · site officiel'),
+      photo('regnum-carya','regnum-pool-suite','La Jade Suite du Regnum Carya','The Jade Suite at Regnum Carya','https://www.regnumcarya.co.uk/accommodation/main-building-rooms/jade-suite/','Regnum Carya · Jade Suite officielle')
     ],
     credit:'Regnum Carya · galerie officielle',
     sourcePage:'https://www.regnumhotels.com/en/hotels/regnum-carya/',
@@ -26,8 +26,8 @@ export const antalyaHotelEditorial:Record<string,BodrumHotelEditorial>={
   'Cullinan Belek':{
     photos:[
       photo('cullinan-belek','cullinan-resort','Vue du resort Cullinan Belek et de ses piscines','Cullinan Belek resort and pool scene','https://www.cullinanhotels.com/gallery','Cullinan Belek · galerie officielle'),
-      photo('cullinan-belek','cullinan-pools','Piscines et aménagements extérieurs du Cullinan Belek','Pools and outdoor terraces at Cullinan Belek','https://www.cullinanhotels.com/gallery','Cullinan Belek · galerie officielle'),
-      photo('cullinan-belek','cullinan-suite','Suite ou villa du Cullinan Belek','Suite or villa at Cullinan Belek','https://www.cullinanhotels.com/gallery','Cullinan Belek · galerie officielle')
+      photo('cullinan-belek','cullinan-pools','Piscines et aménagements extérieurs du Cullinan Belek','Pools and outdoor terraces at Cullinan Belek','https://www.dertour.de/hotel/cullinan-belek-12mGQx','DERTOUR · Cullinan Belek'),
+      photo('cullinan-belek','cullinan-suite','Suite duplex avec accès piscine au Cullinan Belek','Swim-up duplex suite at Cullinan Belek','https://www.cullinanhotels.com/accommodation/superior-duplex-swim-up','Cullinan Belek · hébergement officiel')
     ],
     credit:'Cullinan Belek · galerie officielle',
     sourcePage:'https://www.cullinanhotels.com/gallery',
@@ -38,9 +38,9 @@ export const antalyaHotelEditorial:Record<string,BodrumHotelEditorial>={
   },
   'Rixos Premium Belek':{
     photos:[
-      photo('rixos-premium-belek','rixos-resort','Vue générale du Rixos Premium Belek face à la Méditerranée','Rixos Premium Belek Mediterranean resort view','https://www.rixos.com/hotel-resort/rixos-premium-belek-land-legends-access','Rixos Premium Belek · site officiel'),
-      photo('rixos-premium-belek','rixos-beach-pool','Plage et espaces aquatiques du Rixos Premium Belek','Beach and pool facilities at Rixos Premium Belek','https://www.rixos.com/hotel-resort/rixos-premium-belek-land-legends-access','Rixos Premium Belek · site officiel'),
-      photo('rixos-premium-belek','rixos-room','Chambre ou suite du Rixos Premium Belek','Room or suite at Rixos Premium Belek','https://www.rixos.com/hotel-resort/rixos-premium-belek-land-legends-access','Rixos Premium Belek · site officiel')
+      photo('rixos-premium-belek','rixos-resort','Vue générale du Rixos Premium Belek face à la Méditerranée','Rixos Premium Belek Mediterranean resort view','https://lastradar.pl/hotele/rixos-premium-belek-the-land-of-legends-theme-park-free-access/','LastRadar · Rixos Premium Belek'),
+      photo('rixos-premium-belek','rixos-beach-pool','Plage et espaces aquatiques du Rixos Premium Belek','Beach and pool facilities at Rixos Premium Belek','https://www.kelioniulaikas.lt/kelione/turkija-rixos-premium-belek-5','Kelionių Laikas · Rixos Premium Belek'),
+      photo('rixos-premium-belek','rixos-room','Chambre Deluxe du Rixos Premium Belek','Deluxe guestroom at Rixos Premium Belek','https://all.accor.com/hotel/B1J5/index.en.shtml','Accor / Rixos Premium Belek')
     ],
     credit:'Rixos Premium Belek · site officiel',
     sourcePage:'https://www.rixos.com/hotel-resort/rixos-premium-belek-land-legends-access',
@@ -51,7 +51,7 @@ export const antalyaHotelEditorial:Record<string,BodrumHotelEditorial>={
   },
   'Maxx Royal Kemer':{
     photos:[
-      photo('maxx-royal-kemer','maxx-kemer-coast','Vue panoramique du Maxx Royal Kemer et de sa baie','Maxx Royal Kemer bay and resort panorama','https://www.maxxroyal.com/Maxx-Royal-Kemer','Maxx Royal Kemer · site officiel'),
+      photo('maxx-royal-kemer','maxx-kemer-coast','Vue aérienne du Maxx Royal Kemer entre forêt et mer','Aerial view of Maxx Royal Kemer between pine forest and sea','https://www.novatours.ee/ru/search/TRAMAXROYK','Novatours · Maxx Royal Kemer'),
       photo('maxx-royal-kemer','maxx-kemer-pools','Piscines et villas du Maxx Royal Kemer entre mer et montagne','Pools and villas at Maxx Royal Kemer','https://www.maxxroyal.com/Gallery','Maxx Royal Kemer · galerie officielle'),
       photo('maxx-royal-kemer','maxx-kemer-villa','Intérieur et terrasse d’une villa du Maxx Royal Kemer','Villa interior and terrace at Maxx Royal Kemer','https://www.maxxroyal.com/maxx-royal-kemer/stay/villas/beach-villa-3-bedroom','Maxx Royal Kemer · site officiel')
     ],
