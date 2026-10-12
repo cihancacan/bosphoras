@@ -1,0 +1,200 @@
+{
+  "scope": "Dubai curated hotel photography, Travel feature branch preview only",
+  "createdAt": "2026-10-12T22:57:00.474885+00:00",
+  "expected": 12,
+  "downloaded": 6,
+  "items": [
+    {
+      "hotel": "the-lana",
+      "scene": "exterior",
+      "name": "lana-marasi-exterior",
+      "localPath": "/images/travel/dubai-premium/the-lana/lana-marasi-exterior.webp",
+      "sourcePage": "https://www.dorchestercollection.com/dubai/the-lana/gallery",
+      "status": "failed",
+      "rights": "User-reported project permission; third-party commercial rights need confirmation",
+      "error": "non-landscape image 1072x1072"
+    },
+    {
+      "hotel": "the-lana",
+      "scene": "pool",
+      "name": "lana-rooftop-pool",
+      "localPath": "/images/travel/dubai-premium/the-lana/lana-rooftop-pool.webp",
+      "sourcePage": "https://www.dorchestercollection.com/dubai/the-lana/pool",
+      "status": "downloaded",
+      "rights": "User-reported project permission; third-party commercial rights need confirmation",
+      "downloadUrl": "https://theroomscollection.com/wp-content/themes/yootheme/cache/09/The-Lana-High-Society-pool-Burj-DorchesterCollection-09aefa9f.jpeg",
+      "sourceDescription": "Identified property photograph",
+      "inputSize": [
+        1200,
+        700
+      ],
+      "outputSize": [
+        1200,
+        700
+      ],
+      "bytes": 79654,
+      "sha256": "1724258dd824af059e59c48f6d703f4534268f2015595865aee3ded3bf5642ad",
+      "compression": "WebP q86 optimized / max width 1920"
+    },
+    {
+      "hotel": "the-lana",
+      "scene": "suite",
+      "name": "lana-marina-suite",
+      "localPath": "/images/travel/dubai-premium/the-lana/lana-marina-suite.webp",
+      "sourcePage": "https://www.dorchestercollection.com/dubai/the-lana/rooms-suites/lana-suite",
+      "status": "failed",
+      "rights": "User-reported project permission; third-party commercial rights need confirmation",
+      "error": "No eligible exact-property photo source found"
+    },
+    {
+      "hotel": "one-only-zaabeel",
+      "scene": "exterior",
+      "name": "zaabeel-exterior",
+      "localPath": "/images/travel/dubai-premium/one-only-zaabeel/zaabeel-exterior.webp",
+      "sourcePage": "https://www.oneandonlyresorts.com/one-zaabeel/overview",
+      "status": "downloaded",
+      "rights": "User-reported project permission; third-party commercial rights need confirmation",
+      "downloadUrl": "https://media.admagazine.fr/photos/66b38cc953137dc7cb13091c/master/w_1024%2Cc_limit/231128-oooz-p3-aerial-morning-2235-master.jpg",
+      "sourceDescription": "Identified property photograph",
+      "inputSize": [
+        1024,
+        682
+      ],
+      "outputSize": [
+        1024,
+        682
+      ],
+      "bytes": 219662,
+      "sha256": "2e8bc300443ce39b61900be7495ee599609321c7643e40dd41c0184a80892290",
+      "compression": "WebP q86 optimized / max width 1920"
+    },
+    {
+      "hotel": "one-only-zaabeel",
+      "scene": "pool",
+      "name": "zaabeel-infinity-pool",
+      "localPath": "/images/travel/dubai-premium/one-only-zaabeel/zaabeel-infinity-pool.webp",
+      "sourcePage": "https://www.oneandonlyresorts.com/one-zaabeel/experiences/pools",
+      "status": "failed",
+      "rights": "User-reported project permission; third-party commercial rights need confirmation",
+      "error": "503 Server Error: Service Unavailable for url: https://assets.kerzner.com/api/public/content/33afcebbf4e44c5c96c0f0"
+    },
+    {
+      "hotel": "one-only-zaabeel",
+      "scene": "suite",
+      "name": "zaabeel-suite",
+      "localPath": "/images/travel/dubai-premium/one-only-zaabeel/zaabeel-suite.webp",
+      "sourcePage": "https://www.oneandonlyresorts.com/one-zaabeel/accommodation",
+      "status": "downloaded",
+      "rights": "User-reported project permission; third-party commercial rights need confirmation",
+      "downloadUrl": "https://dam.kerzner.com/i/kerzner/One%26Only_One_Za%27abeel_Wellness_Suite_Livingroom_Wide-1623_MASTER?poi=0.1361%2C0.4678%2C0%2C0&scaleFit=poi",
+      "sourceDescription": "Identified property photograph",
+      "inputSize": [
+        8000,
+        4978
+      ],
+      "outputSize": [
+        1920,
+        1195
+      ],
+      "bytes": 222978,
+      "sha256": "791ace365e46d44f5de514d502d2a9898a8350ffcdbb822a39207b825be25e19",
+      "compression": "WebP q86 optimized / max width 1920"
+    },
+    {
+      "hotel": "atlantis-the-royal",
+      "scene": "exterior",
+      "name": "atlantis-architecture",
+      "localPath": "/images/travel/dubai-premium/atlantis-the-royal/atlantis-architecture.webp",
+      "sourcePage": "https://www.atlantis.com/dubai/atlantis-the-royal",
+      "status": "downloaded",
+      "rights": "User-reported project permission; third-party commercial rights need confirmation",
+      "downloadUrl": "https://www.ssyenc.com/upload/project/9ddb7b5e65bf44f28dc6dfa52072d686.jpg",
+      "sourceDescription": "Identified property photograph",
+      "inputSize": [
+        2000,
+        1499
+      ],
+      "outputSize": [
+        1920,
+        1439
+      ],
+      "bytes": 469776,
+      "sha256": "be6ae9a324d4d587c51183c403dbeb6b40ba0f2047673e8b371d352f2626fcdb",
+      "compression": "WebP q86 optimized / max width 1920"
+    },
+    {
+      "hotel": "atlantis-the-royal",
+      "scene": "pool",
+      "name": "atlantis-cloud22-pool",
+      "localPath": "/images/travel/dubai-premium/atlantis-the-royal/atlantis-cloud22-pool.webp",
+      "sourcePage": "https://www.atlantis.com/dubai/atlantis-the-royal",
+      "status": "downloaded",
+      "rights": "User-reported project permission; third-party commercial rights need confirmation",
+      "downloadUrl": "https://cdn.squaremeal.ae/article/62/images/best-atlantis-the-royal-dubai-restaurants-and-bars-guide-cloud-22_15022023113046.jpg?w=1400",
+      "sourceDescription": "Identified property photograph",
+      "inputSize": [
+        1400,
+        840
+      ],
+      "outputSize": [
+        1400,
+        840
+      ],
+      "bytes": 222024,
+      "sha256": "c986336111e287fea188a79643e6805f44112d321989106362f6255c51a96861",
+      "compression": "WebP q86 optimized / max width 1920"
+    },
+    {
+      "hotel": "atlantis-the-royal",
+      "scene": "suite",
+      "name": "atlantis-sky-pool-villa",
+      "localPath": "/images/travel/dubai-premium/atlantis-the-royal/atlantis-sky-pool-villa.webp",
+      "sourcePage": "https://www.atlantis.com/dubai/atlantis-the-royal/stay/rooms-and-suites/suites/sky-pool-villa",
+      "status": "failed",
+      "rights": "User-reported project permission; third-party commercial rights need confirmation",
+      "error": "No eligible exact-property photo source found"
+    },
+    {
+      "hotel": "jumeirah-al-naseem",
+      "scene": "exterior",
+      "name": "al-naseem-resort",
+      "localPath": "/images/travel/dubai-premium/jumeirah-al-naseem/al-naseem-resort.webp",
+      "sourcePage": "https://www.jumeirah.com/en/stay/dubai/jumeirah-al-naseem/experiences/pool-and-beach",
+      "status": "downloaded",
+      "rights": "User-reported project permission; third-party commercial rights need confirmation",
+      "downloadUrl": "https://cdn.jumeirah.com/api/public/content/1af0bcc6bf6e4b819d341974a63b7f33?v=b0e252c1",
+      "sourceDescription": "Identified property photograph",
+      "inputSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1920,
+        1280
+      ],
+      "bytes": 445462,
+      "sha256": "e57c732ea40fc48495f104c2a2ae5621fa10fcdf2b4986e6ce927df26c740d05",
+      "compression": "WebP q86 optimized / max width 1920"
+    },
+    {
+      "hotel": "jumeirah-al-naseem",
+      "scene": "pool",
+      "name": "al-naseem-beach",
+      "localPath": "/images/travel/dubai-premium/jumeirah-al-naseem/al-naseem-beach.webp",
+      "sourcePage": "https://www.jumeirah.com/en/stay/dubai/jumeirah-al-naseem/experiences/pool-and-beach",
+      "status": "failed",
+      "rights": "User-reported project permission; third-party commercial rights need confirmation",
+      "error": "No eligible exact-property photo source found"
+    },
+    {
+      "hotel": "jumeirah-al-naseem",
+      "scene": "suite",
+      "name": "al-naseem-ocean-suite",
+      "localPath": "/images/travel/dubai-premium/jumeirah-al-naseem/al-naseem-ocean-suite.webp",
+      "sourcePage": "https://www.jumeirah.com/en/stay/dubai/jumeirah-al-naseem/accommodation",
+      "status": "failed",
+      "rights": "User-reported project permission; third-party commercial rights need confirmation",
+      "error": "No eligible exact-property photo source found"
+    }
+  ]
+}
