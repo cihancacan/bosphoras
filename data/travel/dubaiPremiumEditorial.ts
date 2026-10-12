@@ -11,9 +11,9 @@ const hotelPhoto=(folder:string,name:string,fr:string,en:string,sourcePage:strin
 export const dubaiHotelEditorial:Record<string,BodrumHotelEditorial>={
   'The Lana · Dorchester Collection':{
     photos:[
-      hotelPhoto('the-lana','lana-marasi-exterior','L’architecture du Lana au bord de Marasi Bay, Dubaï','The Lana architecture on Dubai’s Marasi Bay waterfront','https://www.dorchestercollection.com/dubai/the-lana/gallery','The Lana · Dorchester Collection'),
+      hotelPhoto('the-lana','lana-marasi-exterior','L’architecture du Lana au bord de Marasi Bay, Dubaï','The Lana architecture on Dubai’s Marasi Bay waterfront','https://www.dorchestercollection.com/dubai','The Lana · Dorchester Collection'),
       hotelPhoto('the-lana','lana-rooftop-pool','La piscine panoramique de High Society au Lana','The Lana’s High Society rooftop infinity pool','https://www.dorchestercollection.com/dubai/the-lana/pool','The Lana · Dorchester Collection'),
-      hotelPhoto('the-lana','lana-marina-suite','Intérieur d’une suite du Lana à Dubaï','The Lana suite interior in Dubai','https://www.dorchestercollection.com/dubai/the-lana/rooms-suites/lana-suite','The Lana · Dorchester Collection')
+      hotelPhoto('the-lana','lana-marina-suite','Salon de la Marina Royal Suite au Lana','Marina Royal Suite living room at The Lana','https://www.dorchestercollection.com/dubai/the-lana/rooms-suites/the-marina-royal-suite','The Lana · Dorchester Collection')
     ],
     credit:'The Lana · Dorchester Collection',
     sourcePage:'https://www.dorchestercollection.com/dubai/the-lana/gallery',
@@ -25,7 +25,7 @@ export const dubaiHotelEditorial:Record<string,BodrumHotelEditorial>={
   'One&Only One Za\'abeel':{
     photos:[
       hotelPhoto('one-only-zaabeel','zaabeel-exterior','Les tours One Za’abeel et leur passerelle suspendue à Dubaï','One Za’abeel towers and suspended Link above Dubai','https://www.oneandonlyresorts.com/one-zaabeel','One&Only One Za’abeel · site officiel'),
-      hotelPhoto('one-only-zaabeel','zaabeel-infinity-pool','Piscine panoramique en hauteur au One&Only One Za’abeel','Elevated infinity pool at One&Only One Za’abeel','https://www.oneandonlyresorts.com/one-zaabeel/experiences/pools','One&Only One Za’abeel · site officiel'),
+      hotelPhoto('one-only-zaabeel','zaabeel-infinity-pool','Piscine suspendue au niveau de The Link entre les tours One Za’abeel','Suspended Link infinity pool between the One Za’abeel towers','https://www.architecturaldigest.com/story/the-dubai-skyline-sets-a-new-record','One&Only One Za’abeel · site officiel'),
       hotelPhoto('one-only-zaabeel','zaabeel-suite','Une suite contemporaine du One&Only One Za’abeel','Contemporary suite at One&Only One Za’abeel','https://www.oneandonlyresorts.com/one-zaabeel/accommodation','One&Only One Za’abeel · site officiel')
     ],
     credit:'One&Only One Za’abeel · galerie officielle',
@@ -39,7 +39,7 @@ export const dubaiHotelEditorial:Record<string,BodrumHotelEditorial>={
     photos:[
       hotelPhoto('atlantis-the-royal','atlantis-architecture','Façade monumentale et jardins du resort Atlantis The Royal à Palm Jumeirah','Atlantis The Royal landmark resort architecture on Palm Jumeirah','https://www.atlantis.com/dubai/atlantis-the-royal','Atlantis The Royal · site officiel'),
       hotelPhoto('atlantis-the-royal','atlantis-cloud22-pool','Piscine suspendue Cloud 22 à Atlantis The Royal','Elevated Cloud 22 pool at Atlantis The Royal','https://www.atlantis.com/dubai/atlantis-the-royal/experiences/pools-and-beaches','Atlantis The Royal · site officiel'),
-      hotelPhoto('atlantis-the-royal','atlantis-sky-pool-villa','La terrasse avec piscine d’une Sky Pool Villa à Atlantis The Royal','Sky Pool Villa private pool terrace at Atlantis The Royal','https://www.atlantis.com/dubai/atlantis-the-royal/stay/rooms-and-suites/suites/sky-pool-villa','Atlantis The Royal · site officiel')
+      hotelPhoto('atlantis-the-royal','atlantis-sky-pool-villa','Salon d’une Sky Pool Villa avec vue sur la mer à Atlantis The Royal','Sea-facing Sky Pool Villa living room at Atlantis The Royal','https://tjctravel.vn/products/atlantis-the-royal-dubai','Atlantis The Royal · site officiel')
     ],
     credit:'Atlantis The Royal · site officiel',
     sourcePage:'https://www.atlantis.com/dubai/atlantis-the-royal',
@@ -51,8 +51,8 @@ export const dubaiHotelEditorial:Record<string,BodrumHotelEditorial>={
   'Jumeirah Al Naseem':{
     photos:[
       hotelPhoto('jumeirah-al-naseem','al-naseem-resort','Les jardins, piscines et la plage du Jumeirah Al Naseem','Jumeirah Al Naseem resort gardens, pools and beach','https://www.jumeirah.com/en/stay/dubai/jumeirah-al-naseem/experiences/pool-and-beach','Jumeirah · galerie officielle'),
-      hotelPhoto('jumeirah-al-naseem','al-naseem-beach','Plage et piscines du Jumeirah Al Naseem à Dubaï','Beach and pool scene at Jumeirah Al Naseem Dubai','https://www.jumeirah.com/en/stay/dubai/jumeirah-al-naseem/experiences/pool-and-beach','Jumeirah · galerie officielle'),
-      hotelPhoto('jumeirah-al-naseem','al-naseem-ocean-suite','Une suite avec vue sur le Golfe au Jumeirah Al Naseem','Gulf-facing suite at Jumeirah Al Naseem','https://www.jumeirah.com/en/stay/dubai/jumeirah-al-naseem/accommodation','Jumeirah · galerie officielle')
+      hotelPhoto('jumeirah-al-naseem','al-naseem-beach','Piscine du Jumeirah Al Naseem face au Burj Al Arab','Jumeirah Al Naseem pool with a Burj Al Arab outlook','https://www.etihadholidays.de/hotel/jumeirah/jumeirah-al-naseem/','Jumeirah · galerie officielle'),
+      hotelPhoto('jumeirah-al-naseem','al-naseem-ocean-suite','Chambre du Jumeirah Al Naseem avec balcon vue mer','Sea-view room with balcony at Jumeirah Al Naseem','https://reserving.com/hotels/asia/united-arab-emirates/dubai/dubai/jumeirah-al-naseem','Jumeirah · galerie officielle')
     ],
     credit:'Jumeirah Al Naseem · galerie officielle',
     sourcePage:'https://www.jumeirah.com/en/stay/dubai/jumeirah-al-naseem',
