@@ -57,7 +57,7 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
           <section aria-label={fr ? 'Photographies de l’hôtel' : 'Hotel photo gallery'} className="mb-16">
             <button type="button" className="relative block aspect-[16/9] w-full overflow-hidden bg-[#e8e0d2] text-left lg:aspect-[2/1]"
               onClick={() => setEnlarged(true)} aria-label={fr ? 'Agrandir la photographie' : 'Enlarge photograph'}>
-              <EditorialPhoto photo={photos[active]} locale={locale} className="object-cover" priority />
+              <EditorialPhoto key={photos[active].src} photo={photos[active]} locale={locale} className="object-cover" priority />
               <span className="absolute bottom-4 right-4 bg-[#102b38]/90 px-4 py-2 text-xs font-semibold text-white">
                 {fr ? 'Agrandir' : 'Enlarge'} · {active + 1}/{photos.length}
               </span>
@@ -122,7 +122,7 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
               className="border border-white/50 px-5 py-3 text-sm">{fr ? 'Fermer' : 'Close'} ✕</button>
           </div>
           <div className="relative mt-5 min-h-0 flex-1">
-            <EditorialPhoto photo={photos[active]} locale={locale} className="object-contain" />
+            <EditorialPhoto key={photos[active].src} photo={photos[active]} locale={locale} className="object-contain" />
           </div>
           <div className="mt-5 flex items-center justify-between">
             <button type="button" onClick={() => setActive((i)=>(i-1+photos.length)%photos.length)}

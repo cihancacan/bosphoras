@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { hotelHeroPhoto } from '@/data/travel/hotelPhotography';
@@ -39,9 +42,7 @@ export function EditorialHotelCard({ hotel, index, locale }: EditorialHotelCardP
       <div className="min-w-0 px-6 py-7 sm:px-9 sm:py-9">
         <p className="text-xs tracking-wider uppercase text-[#9c784a] mb-4">{hotel.zone}</p>
         <h3 className="font-serif text-2xl sm:text-3xl lg:text-[2rem] leading-tight break-words">{hotel.name}</h3>
-        {hero && <div className="relative mt-5 aspect-[16/9] overflow-hidden bg-[#eae5dc]">
-          {hero.src.startsWith('/') ? <Image src={hero.src} alt={fr ? hero.fr : hero.en} fill sizes="(max-width: 1024px) 100vw, 480px" className="object-cover" /> : <img src={hero.src} alt={fr ? hero.fr : hero.en} loading="lazy" decoding="async" referrerPolicy="no-referrer" className="absolute inset-0 h-full w-full object-cover" />}
-        </div>}
+        {hero && <HotelCardPicture src={hero.src} alt={fr ? hero.fr : hero.en} hotelName={hotel.name} />}
         <p className="text-[#55656c] leading-7 mt-5">{fr ? hotel.fr : hotel.en}</p>
       </div>
       <div className="min-w-0 bg-[#fbfaf6] px-6 py-6 sm:px-9 sm:py-9 flex flex-col">
@@ -68,5 +69,24 @@ export function EditorialHotelCard({ hotel, index, locale }: EditorialHotelCardP
         </a>
       </div>
     </article>
+  );
+}
+
+function HotelCardPicture({ src, alt, hotelName }: { src: string; alt: string; hotelName: string }) {
+  const [failed, setFailed] = useState(false);
+  return (
+    <div className="relative mt-5 aspect-[16/9] overflow-hidden bg-[#eae5dc]">
+      {failed ? (
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#172e3c] p-4 text-center text-[#f3e8d6]">
+          <span className="text-[10px] uppercase tracking-[0.2em] text-[#dbb780]">Bosphoras · Luxury Stays</span>
+          <span className="mt-3 font-serif text-lg">{hotelName}</span>
+        </div>
+      ) : src.startsWith('/') ? (
+        <Image src={src} alt={alt} fill sizes="(max-width: 1024px) 100vw, 480px" className="object-cover" />
+      ) : (
+        <img src={src} alt={alt} loading="lazy" decoding="async" referrerPolicy="no-referrer"
+          onError={() => setFailed(true)} className="absolute inset-0 h-full w-full object-cover" />
+      )}
+    </div>
   );
 }
