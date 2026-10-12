@@ -1,8 +1,8 @@
 {
   "scope": "Dubai curated hotel photography, Travel feature branch preview only",
-  "createdAt": "2026-10-12T23:00:25.865056+00:00",
+  "createdAt": "2026-10-12T23:03:29.618010+00:00",
   "expected": 12,
-  "downloaded": 11,
+  "downloaded": 12,
   "items": [
     {
       "hotel": "the-lana",
@@ -22,8 +22,8 @@
         1360,
         765
       ],
-      "bytes": 249074,
-      "sha256": "c9335abb18b4b15a53cb6cdefd0add01374c0494e7d67f61ef0489840cdc3c87",
+      "bytes": 251270,
+      "sha256": "f352ba0b9053a587e29e46409a33f882f21dfc5b4a98601699bb4f91089134a6",
       "compression": "WebP q86 optimized / max width 1920"
     },
     {
@@ -66,8 +66,8 @@
         1920,
         1098
       ],
-      "bytes": 238780,
-      "sha256": "a98f98b31545a4a0565997166d53c856a12a679c1c54a47ad6ed6c2308b7bfd3",
+      "bytes": 222782,
+      "sha256": "8a9583b6b5021147b947ec0dff41c3d67e1388a128a18e9772d220a7bacf500c",
       "compression": "WebP q86 optimized / max width 1920"
     },
     {
@@ -252,9 +252,21 @@
       "name": "al-naseem-ocean-suite",
       "localPath": "/images/travel/dubai-premium/jumeirah-al-naseem/al-naseem-ocean-suite.webp",
       "sourcePage": "https://www.jumeirah.com/en/stay/dubai/jumeirah-al-naseem/accommodation",
-      "status": "failed",
+      "status": "downloaded",
       "rights": "User-reported project permission; third-party commercial rights need confirmation",
-      "error": "404 Client Error: Not Found for url: https://y.cdrst.com/foto/hotel-sf/9fa26/granderesp/jumeirah-al-naseem-general-"
+      "downloadUrl": "https://cdn.jumeirah.com/-/mediadh/dh/hospitality/jumeirah/hotels/dubai/jumeirah-al-naseem/rooms/jan/gulf-ocean-suite/jan-room-detail-gallery-2___gulf-ocean-suite.jpeg?h=1080&modified=20240423044318&w=1620",
+      "sourceDescription": "Identified property photograph",
+      "inputSize": [
+        1620,
+        1080
+      ],
+      "outputSize": [
+        1620,
+        1080
+      ],
+      "bytes": 172248,
+      "sha256": "67b16c205f2de60ead34a84497bb554916b9fe6f6d15c4a620c75da714e400bb",
+      "compression": "WebP q86 optimized / max width 1920"
     }
   ]
 }
