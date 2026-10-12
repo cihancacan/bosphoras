@@ -1,5 +1,6 @@
 name: Travel Istanbul — localize editorial photos
 # Retry sourcing from reviewed CNTraveler hotel photo galleries (October 2026).
+# Final two photo sources: Mandarin Oriental and Shangri-La.
 
 on:
   push:

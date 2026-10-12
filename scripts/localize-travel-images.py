@@ -123,7 +123,7 @@ def main():
     previous_items = []
     if REPORT.exists():
         try:
-            previous_items = json.loads(REPORT.read_text(encoding="utf-8")).get("items", [])
+            previous_items = [item for item in json.loads(REPORT.read_text(encoding="utf-8")).get("items", []) if item.get("status") == "downloaded"]
         except (ValueError, OSError):
             previous_items = []
     merged = {item["filename"]: item for item in previous_items if "filename" in item}
