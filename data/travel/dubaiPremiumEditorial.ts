@@ -52,7 +52,7 @@ export const dubaiHotelEditorial:Record<string,BodrumHotelEditorial>={
     photos:[
       hotelPhoto('jumeirah-al-naseem','al-naseem-resort','Les jardins, piscines et la plage du Jumeirah Al Naseem','Jumeirah Al Naseem resort gardens, pools and beach','https://www.jumeirah.com/en/stay/dubai/jumeirah-al-naseem/experiences/pool-and-beach','Jumeirah · galerie officielle'),
       hotelPhoto('jumeirah-al-naseem','al-naseem-beach','Piscine du Jumeirah Al Naseem face au Burj Al Arab','Jumeirah Al Naseem pool with a Burj Al Arab outlook','https://www.etihadholidays.de/hotel/jumeirah/jumeirah-al-naseem/','Jumeirah · galerie officielle'),
-      hotelPhoto('jumeirah-al-naseem','al-naseem-ocean-suite','Chambre du Jumeirah Al Naseem avec balcon vue mer','Sea-view room with balcony at Jumeirah Al Naseem','https://reserving.com/hotels/asia/united-arab-emirates/dubai/dubai/jumeirah-al-naseem','Jumeirah · galerie officielle')
+      hotelPhoto('jumeirah-al-naseem','al-naseem-ocean-suite','Chambre de la Gulf Ocean Suite au Jumeirah Al Naseem','Bedroom of the Gulf Ocean Suite at Jumeirah Al Naseem','https://www.jumeirah.com/en/stay/dubai/jumeirah-al-naseem/accommodation/gulf-ocean-suite','Jumeirah · galerie officielle')
     ],
     credit:'Jumeirah Al Naseem · galerie officielle',
     sourcePage:'https://www.jumeirah.com/en/stay/dubai/jumeirah-al-naseem',
