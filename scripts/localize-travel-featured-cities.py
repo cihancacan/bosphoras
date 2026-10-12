@@ -52,7 +52,7 @@ def download(item):
     metadata=info.get("extmetadata",{})
     license_url=metadata.get("LicenseUrl",{}).get("value","").replace("http://","https://").rstrip("/")
     expected=item["licenseUrl"].rstrip("/")
-    if license_url!=expected:
+    if license_url!=expected and not (item["license"]=="CC0 1.0" and license_url==expected+"/deed.en"):
         raise ValueError(f"License changed: {license_url!r} expected {expected!r}")
     download_url=info.get("thumburl") or info["url"]
     if urlparse(download_url).scheme!="https" or urlparse(download_url).hostname not in ("upload.wikimedia.org","thumb.wikimedia.org"):
