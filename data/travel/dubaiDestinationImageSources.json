@@ -1,0 +1,63 @@
+{
+  "scope": "Dubai destination scenes only, not hotel or accommodation photos",
+  "checkedAt": "2026-10-12T22:56:45.989574+00:00",
+  "downloaded": 2,
+  "expected": 3,
+  "items": [
+    {
+      "key": "palm-jumeirah",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Palm_Jumeirah,_Dubai_(53384749864).jpg",
+      "sourceFile": "Palm Jumeirah, Dubai (53384749864).jpg",
+      "author": "Domenico Convertini",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "status": "downloaded",
+      "localPath": "/images/travel/dubai-premium/destination/palm-jumeirah.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/00/Palm_Jumeirah%2C_Dubai_%2853384749864%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "sourceSize": [
+        6000,
+        4000
+      ],
+      "outputSize": [
+        2000,
+        1333
+      ],
+      "bytes": 315690,
+      "sha256": "f977443e57d211cc6178c3d608a0af5626bd01b68e908e0b71a641a182d43523",
+      "modifications": "EXIF correction; resize; WebP Q87"
+    },
+    {
+      "key": "downtown-creek-sunset",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sunset_Burj_Khalifa_Horizon_View(Down_Town_Dubai),_Dubai_Creek_Harbour.png",
+      "sourceFile": "Sunset Burj Khalifa Horizon View(Down Town Dubai), Dubai Creek Harbour.png",
+      "author": "Vamos John",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "status": "downloaded",
+      "localPath": "/images/travel/dubai-premium/destination/downtown-creek-sunset.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Sunset_Burj_Khalifa_Horizon_View%28Down_Town_Dubai%29%2C_Dubai_Creek_Harbour.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+      "sourceSize": [
+        2976,
+        1680
+      ],
+      "outputSize": [
+        2000,
+        1129
+      ],
+      "bytes": 126614,
+      "sha256": "b952ac59a54bb591961c75ec1be655930af69888be500779a563828403e386b1",
+      "modifications": "EXIF correction; resize; WebP Q87"
+    },
+    {
+      "key": "dubai-sunset-hero",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dubai_skyline_at_sunset.jpg",
+      "sourceFile": "Dubai skyline at sunset.jpg",
+      "author": "Murtblackberry",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "status": "failed",
+      "localPath": "/images/travel/dubai-premium/destination/dubai-sunset-hero.webp",
+      "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/d/d6/Dubai_skyline_at_sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original"
+    }
+  ]
+}
