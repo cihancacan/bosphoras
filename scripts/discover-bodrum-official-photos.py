@@ -25,7 +25,10 @@ HOTELS={
  "https://www.maxxroyal.com/maxx-royal-bodrum"],
 "six-senses-kaplankaya":[
  "https://www.sixsenses.com/en/hotels-resorts/europe/turkey/kaplankaya/gallery",
- "https://www.sixsenses.com/en/hotels-resorts/europe/turkey/kaplankaya"],
+ "https://www.sixsenses.com/en/hotels-resorts/europe/turkey/kaplankaya",
+ "https://www.ihg.com/turkey",
+ "https://www.ihg.com/destined/properties",
+ "https://dev.sixsensesplace.com/en/hotels-resorts/europe/turkey/kaplankaya/gallery/"],
 }
 HEADERS={"User-Agent":"Mozilla/5.0 (compatible; BosphorasTravelEditorial/1.0)", "Accept":"text/html,application/xhtml+xml"}
 URL_RE=re.compile(r"https?:\\?/\\?/[^\\s\"'<>\\]+?\\.(?:jpeg|jpg|png|webp|avif)(?:\\?[^\\s\"'<>\\]+)?",re.I)
