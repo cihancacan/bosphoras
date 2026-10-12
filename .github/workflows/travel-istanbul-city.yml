@@ -1,0 +1,46 @@
+name: Travel Istanbul — curated city photographs
+on:
+  push:
+    branches:
+      - feature/luxury-travel-seo-destinations-20261012
+    paths:
+      - .github/workflows/travel-istanbul-city.yml
+      - scripts/localize-travel-city.py
+permissions:
+  contents: write
+concurrency:
+  group: bosphoras-travel-city-images
+  cancel-in-progress: false
+jobs:
+  source-city-images:
+    if: github.ref == 'refs/heads/feature/luxury-travel-seo-destinations-20261012'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check 'Pillow>=10,<12' 'requests>=2.31,<3'
+      - name: Download licensed city photos, inspect, convert to WebP and record author credits
+        run: python scripts/localize-travel-city.py
+      - name: Commit only verified assets to the Travel branch
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/travel/cityImageSources.json public/images/travel/istanbul/city/
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "assets(travel): local Istanbul destination scenes with attribution [skip ci]"
+          git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+      - name: Save acquisition report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: istanbul-city-photo-acquisition
+          path: data/travel/cityImageSources.json
+          if-no-files-found: ignore
