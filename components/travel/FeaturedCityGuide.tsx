@@ -186,7 +186,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           : city.slug === 'antalya'
           ? <div className="absolute inset-0 bg-gradient-to-r from-[#111e25]/80 via-[#1a2730]/35 to-transparent"/>
           : city.slug === 'dubai'
-          ? <div className="absolute inset-0 bg-gradient-to-r from-[#0c1d2e]/80 via-[#10283b]/45 to-transparent"/>
+          ? <div className="absolute inset-0 bg-gradient-to-r from-[#0c1d2e]/64 via-[#10283b]/25 to-transparent"/>
           : <div className="absolute inset-0 bg-gradient-to-r from-[#081d28]/95 via-[#081d28]/75 to-[#081d28]/25"/>}
       </div>
       <div className="relative mx-auto max-w-7xl px-5 pb-28 pt-16 sm:pb-40 sm:pt-28">
@@ -199,7 +199,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         {(city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai') && <p className="mt-4 text-xs text-[#efe0c7]">
           {city.slug==='bodrum'?(fr?'Paysage : une crique de la péninsule de Bodrum':'Landscape: a Bodrum Peninsula cove')
             :city.slug==='antalya'?(fr?'Illustration IA inspirée d’Antalya · Vue artistique, non photographique':'AI illustration inspired by Antalya · Artistic view, not a photograph')
-            :(fr?'Panorama de Dubai Marina · Photographie de destination':'Dubai Marina panorama · Destination photography')} ·{' '}
+            :(fr?'Palm West Beach · plage et skyline dans la lumière dorée':'Palm West Beach · sunny beachfront and golden skyline')} ·{' '}
           {city.slug==='antalya' ? <span>{hero.author}</span>
             : <a href={hero.sourcePage} rel="noopener noreferrer" target="_blank" className="underline underline-offset-2">{hero.author}</a>}
         </p>}
