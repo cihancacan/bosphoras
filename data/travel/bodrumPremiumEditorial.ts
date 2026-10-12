@@ -127,7 +127,8 @@ export const bodrumHotelEditorial:Record<string,BodrumHotelEditorial> = {
     "enBest": "For a secluded wellness escape with spa experiences, quiet beaches and Aegean outlooks, away from Yalıkavak’s nightlife.",
     "frStory": "Six Senses Kaplankaya privilégie l’espace et le ralentissement plutôt que la vie de marina. Installé sur les reliefs de Bozbük, dans le district de Milas, il associe plages, sentiers, architecture intégrée au paysage et un spa annoncé à 10 000 m², avec bassin intérieur chauffé, hammams et espaces hydrothermaux. C’est une adresse où l’on peut passer plusieurs journées entre la mer, une séance de yoga et une longue pause sur la terrasse. Le choix doit se faire selon la catégorie précise : certaines suites et résidences possèdent leur piscine privée, mais ce n’est pas le cas de toutes les chambres. À vérifier également : la vue réelle, les activités disponibles selon les dates et les transferts depuis l’aéroport ou Bodrum.",
     "enStory": "Six Senses Kaplankaya favours space, restoration and a slower rhythm over marina nightlife. Built into the hills of Bozbük in the Milas district, it brings together quiet beaches, walking trails, architecture that follows the landscape and a reported 10,000-square-metre spa with a heated indoor pool, hammams and hydrothermal facilities. Days here can flow between the Aegean, yoga and time on a private terrace. Room category matters: certain suites and residences have their own pools, but not every guestroom does. Check the actual outlook, seasonal activity schedule and transfers from the airport or Bodrum."
-  }};
+  }
+};
 export const bodrumAreaVisuals:BodrumPremiumPhoto[] = [
   {
     "src": "/images/travel/bodrum-premium/the-bodrum-edition/edition-beach-club.webp",
@@ -144,10 +145,10 @@ export const bodrumAreaVisuals:BodrumPremiumPhoto[] = [
     "sourcePage": "https://www.luxurytribune.com/en/bulgari-hotels-resorts-opens-a-new-address-in-turkey"
   },
   {
-    "src": "/images/travel/bodrum-premium/six-senses-kaplankaya/six-senses-sunset-terrace.webp",
-    "fr": "Six Senses Kaplankaya, terrasse au soleil couchant",
-    "en": "Six Senses Kaplankaya sunset terrace",
-    "credit": "Kemalcan Başaran / Behance",
-    "sourcePage": "https://www.behance.net/gallery/97152533/Six-Senses-Kaplankaya-Resort-Spa-Wayfinding-Design"
+    "src": "/images/travel/bodrum-premium/six-senses-kaplankaya/kaplankaya-rocky-coast-v2.webp",
+    "fr": "La côte rocheuse de Kaplankaya et ses eaux turquoise",
+    "en": "Rocky coastline and turquoise water at Kaplankaya",
+    "credit": "Room + Wild · panorama de côte",
+    "sourcePage": "https://www.roomandwild.com/six-senses-kaplankaya"
   }
 ];
