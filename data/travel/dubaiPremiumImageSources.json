@@ -1,8 +1,8 @@
 {
   "scope": "Dubai curated hotel photography, Travel feature branch preview only",
-  "createdAt": "2026-10-12T22:57:00.474885+00:00",
+  "createdAt": "2026-10-12T23:00:25.865056+00:00",
   "expected": 12,
-  "downloaded": 6,
+  "downloaded": 11,
   "items": [
     {
       "hotel": "the-lana",
@@ -10,9 +10,21 @@
       "name": "lana-marasi-exterior",
       "localPath": "/images/travel/dubai-premium/the-lana/lana-marasi-exterior.webp",
       "sourcePage": "https://www.dorchestercollection.com/dubai/the-lana/gallery",
-      "status": "failed",
+      "status": "downloaded",
       "rights": "User-reported project permission; third-party commercial rights need confirmation",
-      "error": "non-landscape image 1072x1072"
+      "downloadUrl": "https://www.dorchestercollection.com/media/kocawwzo/the-lana-exterior-marina-dorchestercollection-full-size.jpg?height=765&rmode=crop&rxy=0.5012533762721271%2C0.6101428857370743&width=1360",
+      "sourceDescription": "Identified property photograph",
+      "inputSize": [
+        1360,
+        765
+      ],
+      "outputSize": [
+        1360,
+        765
+      ],
+      "bytes": 249074,
+      "sha256": "c9335abb18b4b15a53cb6cdefd0add01374c0494e7d67f61ef0489840cdc3c87",
+      "compression": "WebP q86 optimized / max width 1920"
     },
     {
       "hotel": "the-lana",
@@ -41,10 +53,22 @@
       "scene": "suite",
       "name": "lana-marina-suite",
       "localPath": "/images/travel/dubai-premium/the-lana/lana-marina-suite.webp",
-      "sourcePage": "https://www.dorchestercollection.com/dubai/the-lana/rooms-suites/lana-suite",
-      "status": "failed",
+      "sourcePage": "https://www.dorchestercollection.com/dubai/the-lana/rooms-suites/the-marina-royal-suite",
+      "status": "downloaded",
       "rights": "User-reported project permission; third-party commercial rights need confirmation",
-      "error": "No eligible exact-property photo source found"
+      "downloadUrl": "https://www.dorchestercollection.com/media/jwkeihqi/the-lana-the-marina-royal-suite-living-room-dorchester-collection-full-size.jpg?height=1464&rmode=crop&rxy=0.4999998182206939%2C0.546527176458983&width=2560",
+      "sourceDescription": "Identified property photograph",
+      "inputSize": [
+        2560,
+        1464
+      ],
+      "outputSize": [
+        1920,
+        1098
+      ],
+      "bytes": 238780,
+      "sha256": "a98f98b31545a4a0565997166d53c856a12a679c1c54a47ad6ed6c2308b7bfd3",
+      "compression": "WebP q86 optimized / max width 1920"
     },
     {
       "hotel": "one-only-zaabeel",
@@ -74,9 +98,21 @@
       "name": "zaabeel-infinity-pool",
       "localPath": "/images/travel/dubai-premium/one-only-zaabeel/zaabeel-infinity-pool.webp",
       "sourcePage": "https://www.oneandonlyresorts.com/one-zaabeel/experiences/pools",
-      "status": "failed",
+      "status": "downloaded",
       "rights": "User-reported project permission; third-party commercial rights need confirmation",
-      "error": "503 Server Error: Service Unavailable for url: https://assets.kerzner.com/api/public/content/33afcebbf4e44c5c96c0f0"
+      "downloadUrl": "https://media.architecturaldigest.com/photos/65fda68d3c815b82da2bc0ae/16%3A9/w_4336%2Ch_2439%2Cc_limit/AD0424_GRAND_FINALE_1%20copy.jpg",
+      "sourceDescription": "Identified property photograph",
+      "inputSize": [
+        4336,
+        2439
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "bytes": 593924,
+      "sha256": "ef56b3fa1d289d34b2e61da892604df548e828c015cd4535fa71aa9588d04e76",
+      "compression": "WebP q86 optimized / max width 1920"
     },
     {
       "hotel": "one-only-zaabeel",
@@ -150,9 +186,21 @@
       "name": "atlantis-sky-pool-villa",
       "localPath": "/images/travel/dubai-premium/atlantis-the-royal/atlantis-sky-pool-villa.webp",
       "sourcePage": "https://www.atlantis.com/dubai/atlantis-the-royal/stay/rooms-and-suites/suites/sky-pool-villa",
-      "status": "failed",
+      "status": "downloaded",
       "rights": "User-reported project permission; third-party commercial rights need confirmation",
-      "error": "No eligible exact-property photo source found"
+      "downloadUrl": "https://tjctravel.vn/cdn/shop/files/ATR-Sky-Pool-Villa-Sea-View-Living-Room.webp?v=1706700853&width=1500",
+      "sourceDescription": "Identified property photograph",
+      "inputSize": [
+        1500,
+        1000
+      ],
+      "outputSize": [
+        1500,
+        1000
+      ],
+      "bytes": 100048,
+      "sha256": "d033c6bd79ad25e49dc3d083b560c25b4f80921448a3718dcdc691348490ffb0",
+      "compression": "WebP q86 optimized / max width 1920"
     },
     {
       "hotel": "jumeirah-al-naseem",
@@ -182,9 +230,21 @@
       "name": "al-naseem-beach",
       "localPath": "/images/travel/dubai-premium/jumeirah-al-naseem/al-naseem-beach.webp",
       "sourcePage": "https://www.jumeirah.com/en/stay/dubai/jumeirah-al-naseem/experiences/pool-and-beach",
-      "status": "failed",
+      "status": "downloaded",
       "rights": "User-reported project permission; third-party commercial rights need confirmation",
-      "error": "No eligible exact-property photo source found"
+      "downloadUrl": "https://images.etihadholidays.com/background-lg/rms.etihadholidays.com/storage/1566988/2.jpg",
+      "sourceDescription": "Identified property photograph",
+      "inputSize": [
+        1024,
+        682
+      ],
+      "outputSize": [
+        1024,
+        682
+      ],
+      "bytes": 116366,
+      "sha256": "bc87c2aa2abb2cad7535bc19c005bb024f7fb3f38eaab7e5cb9f7ca1345dee07",
+      "compression": "WebP q86 optimized / max width 1920"
     },
     {
       "hotel": "jumeirah-al-naseem",
@@ -194,7 +254,7 @@
       "sourcePage": "https://www.jumeirah.com/en/stay/dubai/jumeirah-al-naseem/accommodation",
       "status": "failed",
       "rights": "User-reported project permission; third-party commercial rights need confirmation",
-      "error": "No eligible exact-property photo source found"
+      "error": "404 Client Error: Not Found for url: https://y.cdrst.com/foto/hotel-sf/9fa26/granderesp/jumeirah-al-naseem-general-"
     }
   ]
 }
