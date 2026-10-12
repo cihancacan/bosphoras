@@ -1,0 +1,41 @@
+{
+  "scope": "Bosphoras Luxury Stays, Bodrum Travel preview only",
+  "downloaded": 2,
+  "total": 2,
+  "items": [
+    {
+      "id": "aerial",
+      "filename": "six-senses-bays-aerial-v2.webp",
+      "sourceUrl": "https://ejh-web-prod-images.s3-eu-west-1.amazonaws.com/TRBD0078_81/Large/TRBD0078_52.jpg",
+      "sourcePage": "https://www.easyjet.com/en/holidays/turkey/bodrum/bozbuk/six-senses-kaplankaya",
+      "sourceCredit": "easyJet Holidays, Six Senses Kaplankaya gallery",
+      "altFr": "Vue aérienne du Six Senses Kaplankaya et de sa baie turquoise",
+      "altEn": "Aerial view of Six Senses Kaplankaya and its turquoise bay",
+      "status": "downloaded",
+      "localPath": "/images/travel/bodrum-premium/six-senses-kaplankaya/six-senses-bays-aerial-v2.webp",
+      "width": 1024,
+      "height": 670,
+      "bytes": 199596,
+      "sha256": "897d0f5b9709da0c63f40aa1c00f77460bc7d24460a7b2d2aef0d7ab41d28c54",
+      "transformations": "EXIF orientation applied, resized and saved as WebP",
+      "rightsNote": "User reports reuse authorization; third-party image rights not independently validated."
+    },
+    {
+      "id": "suite",
+      "filename": "six-senses-pool-suite-v2.webp",
+      "sourceUrl": "https://planetescape.pl/app/uploads/2025/01/Six-Senses-Kaplankaya-Kaplankaya-Suite-with-Pool-Sea-View-Salon.jpg",
+      "sourcePage": "https://planetescape.pl/en/luxury/hotel/turcja-six-senses-kaplankaya/",
+      "sourceCredit": "Planet Escape, Six Senses Kaplankaya suite gallery",
+      "altFr": "Salon de la suite avec piscine et vue mer du Six Senses Kaplankaya",
+      "altEn": "Living room of a Six Senses Kaplankaya pool suite with sea view",
+      "status": "downloaded",
+      "localPath": "/images/travel/bodrum-premium/six-senses-kaplankaya/six-senses-pool-suite-v2.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 99268,
+      "sha256": "02f7d81e79dc1deab7adb5b1d9517e9b9bcee1ded4eff131d7efb8a3a94def4e",
+      "transformations": "EXIF orientation applied, resized and saved as WebP",
+      "rightsNote": "User reports reuse authorization; third-party image rights not independently validated."
+    }
+  ]
+}
