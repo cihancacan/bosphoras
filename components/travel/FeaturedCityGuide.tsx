@@ -176,7 +176,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
   return <main className="min-h-screen bg-[#faf7f0] text-[#182c38]">
     <section className="relative isolate overflow-hidden bg-[#112937] text-[#f8f3e8]">
       <div className="absolute inset-0" aria-hidden="true">
-        <Image src={hero.src} alt="" fill priority sizes="100vw" className="object-cover" />
+        <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="100vw" className="object-cover" />
         {city.slug === 'bodrum'
           ? <div className="absolute inset-0 bg-gradient-to-r from-[#07171d]/95 via-[#101f24]/72 to-[#142933]/15"/>
           : <div className="absolute inset-0 bg-gradient-to-r from-[#081d28]/95 via-[#081d28]/75 to-[#081d28]/25"/>}
