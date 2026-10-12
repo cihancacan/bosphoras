@@ -65,13 +65,25 @@ export const dubaiHotelEditorial:Record<string,BodrumHotelEditorial>={
 
 /** Area imagery is independent from hotel galleries. A null item never claims a mismatched scene. */
 export const dubaiAreaVisuals:(BodrumPremiumPhoto|null)[]=[
-  {src:'/images/travel/dubai-premium/destination/palm-jumeirah.webp',fr:'Vue aérienne du secteur de Palm Jumeirah à Dubaï',en:'Aerial view of the Palm Jumeirah area in Dubai',credit:'Domenico Convertini · CC BY-SA 2.0 · paysage local',sourcePage:'https://commons.wikimedia.org/wiki/File:Palm_Jumeirah,_Dubai_(53384749864).jpg'},
-  {src:'/images/travel/dubai-premium/destination/downtown-creek-sunset.webp',fr:'La silhouette de Downtown Dubai au coucher du soleil depuis Dubai Creek Harbour',en:'Downtown Dubai skyline at sunset from Dubai Creek Harbour',credit:'Vamos John · CC BY-SA 4.0 · paysage local',sourcePage:'https://commons.wikimedia.org/wiki/File:Sunset_Burj_Khalifa_Horizon_View(Down_Town_Dubai),_Dubai_Creek_Harbour.png'},
   {
-    src:'/images/travel/city-guides/dubai/marina.webp',
-    fr:'Dubai Marina, sa promenade et ses tours sur le front d’eau',
-    en:'Dubai Marina waterfront promenade and skyline',
-    credit:'Gfilip · Wikimedia Commons · CC BY-SA 4.0',
-    sourcePage:'https://commons.wikimedia.org/wiki/File:Dubai_Marina_by_day.jpg'
+    src:'/images/travel/dubai-premium/destination/palm-aerial-bright.webp',
+    fr:'Vue aérienne ensoleillée de Palm Jumeirah, de ses branches et des eaux bleues qui l’entourent',
+    en:'Bright aerial panorama of the Palm Jumeirah fronds and surrounding Gulf waters',
+    credit:'Abid Ali · Pexels · Pexels License',
+    sourcePage:'https://www.pexels.com/photo/aerial-view-of-palm-jumeirah-10593605/'
+  },
+  {
+    src:'/images/travel/dubai-premium/destination/downtown-fountain-day.webp',
+    fr:'Downtown Dubaï : fontaine, bassin turquoise et Burj Khalifa sous un ciel lumineux',
+    en:'Downtown Dubai: turquoise fountain lake and Burj Khalifa in daylight',
+    credit:'The Wandering Quinn · droits commerciaux déclarés par le client, à confirmer avant production',
+    sourcePage:'https://thewanderingquinn.com/5-day-dubai-itinerary/'
+  },
+  {
+    src:'/images/travel/dubai-premium/destination/marina-yachts-bright.webp',
+    fr:'Dubai Marina : yachts, promenade et tours baignées de lumière au bord de l’eau',
+    en:'Dubai Marina: yachts, bright towers and reflections along the waterfront',
+    credit:'Dubai Celebrations · droits commerciaux déclarés par le client, à confirmer avant production',
+    sourcePage:'https://www.dubaicelebrations.com/blogs/dubai-marina-hidden-gems'
   }
 ];
