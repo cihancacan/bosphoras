@@ -172,13 +172,14 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="absolute inset-0" aria-hidden="true">
         <Image src={hero.src} alt="" fill priority sizes="100vw" className="object-cover" />
         {city.slug === 'bodrum'
-          ? <div className="absolute inset-0 bg-gradient-to-r from-[#1d2627]/85 via-[#1a2c32]/55 to-[#152635]/15"/>
+          ? <div className="absolute inset-0 bg-gradient-to-r from-[#07171d]/95 via-[#101f24]/72 to-[#142933]/15"/>
           : <div className="absolute inset-0 bg-gradient-to-r from-[#081d28]/95 via-[#081d28]/75 to-[#081d28]/25"/>}
       </div>
       <div className="relative mx-auto max-w-7xl px-5 pb-28 pt-16 sm:pb-40 sm:pt-28">
+        <div className={city.slug === 'bodrum' ? 'max-w-[900px] rounded-2xl border border-white/10 bg-[#091c24]/65 px-5 py-7 shadow-2xl backdrop-blur-[3px] sm:px-10 sm:py-9' : ''}>
         <p className="text-xs uppercase tracking-[.25em] text-[#f1cc8f]">Bosphoras · Luxury Stays
           {' / '}{fr?city.eyebrowFr:city.eyebrowEn}</p>
-        <h1 className="mt-9 max-w-4xl font-serif text-4xl leading-tight sm:text-6xl lg:text-7xl">
+        <h1 className={city.slug === 'bodrum' ? 'mt-9 max-w-4xl font-serif text-4xl leading-tight text-white [text-shadow:0_3px_14px_rgba(0,0,0,0.65)] sm:text-6xl lg:text-7xl' : 'mt-9 max-w-4xl font-serif text-4xl leading-tight sm:text-6xl lg:text-7xl'}>
           {hotelPage?(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.')
             :(fr?city.headingFr:city.headingEn)}</h1>
         {city.slug==='bodrum' && <p className="mt-4 text-xs text-[#efe0c7]">
@@ -186,8 +187,9 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           <a href="https://www.luxurytribune.com/en/bulgari-hotels-resorts-opens-a-new-address-in-turkey"
              rel="noopener noreferrer" target="_blank" className="underline underline-offset-2">Luxury Tribune</a>
         </p>}
-        <p className="mt-8 max-w-3xl text-lg leading-8 text-[#e4e8e5]">
+        <p className={city.slug === 'bodrum' ? 'mt-8 max-w-3xl text-lg leading-8 text-white [text-shadow:0_2px_8px_rgba(0,0,0,0.65)]' : 'mt-8 max-w-3xl text-lg leading-8 text-[#e4e8e5]'}>
           {hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}</p>
+        </div>
         <div className="mt-10 flex flex-wrap gap-3">
           <a href={hotelPage?'#selection':'#quartiers'} className="bg-[#d9b77b] px-6 py-4 text-sm font-semibold text-[#142734] hover:bg-[#f0d39d]">
             {hotelPage?(fr?'Comparer les quatre adresses':'Compare four hotels'):(fr?'Découvrir les quartiers':'Discover neighbourhoods')} →
