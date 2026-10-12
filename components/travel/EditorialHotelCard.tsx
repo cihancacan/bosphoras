@@ -1,7 +1,10 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 /**
  * Reusable editorial hotel card (not an offer or a booking widget).
- * No ratings, prices, imagery or availability are shown until supplier data and
- * usage rights have been verified. Keep source content separate from commerce.
+ * No ratings, prices or availability without supplier confirmation.
+ * Existing authorized local images may be displayed. Keep editorial and commerce separate.
  */
 export type EditorialHotel = {
   id: string;
@@ -34,6 +37,9 @@ export function EditorialHotelCard({ hotel, index, locale }: EditorialHotelCardP
       <div className="min-w-0 px-6 py-7 sm:px-9 sm:py-9">
         <p className="text-xs tracking-wider uppercase text-[#9c784a] mb-4">{hotel.zone}</p>
         <h3 className="font-serif text-2xl sm:text-3xl lg:text-[2rem] leading-tight break-words">{hotel.name}</h3>
+        {hotel.id === 'peninsula' && <div className="relative mt-5 aspect-[16/9] overflow-hidden bg-[#eae5dc]">
+          <Image src="/images/Peninsula.pool.andwiew.jpg" alt={fr ? 'Piscine extérieure du Peninsula Istanbul' : 'Outdoor pool at The Peninsula Istanbul'} fill sizes="(max-width: 1024px) 100vw, 480px" className="object-cover" />
+        </div>}
         <p className="text-[#55656c] leading-7 mt-5">{fr ? hotel.fr : hotel.en}</p>
       </div>
       <div className="min-w-0 bg-[#fbfaf6] px-6 py-6 sm:px-9 sm:py-9 flex flex-col">
@@ -45,6 +51,9 @@ export function EditorialHotelCard({ hotel, index, locale }: EditorialHotelCardP
           {fr ? 'À vérifier avant de réserver' : 'Check before booking'}
         </p>
         <p className="text-sm leading-6 text-[#55656c] mt-2">{fr ? hotel.frWatch : hotel.enWatch}</p>
+        <Link href={fr ? '/travel/hotels/istanbul/' + hotel.id : '/en/travel/hotels/istanbul/' + hotel.id} className="mt-7 inline-flex w-fit bg-[#142d39] px-5 py-3 text-sm font-semibold text-[#f9f4e7] hover:bg-[#285063] focus-visible:outline-2 focus-visible:outline-offset-4">
+          {fr ? 'Découvrir la fiche de cet hôtel' : 'Explore this hotel profile'} →
+        </Link>
         <a
           href={hotel.officialUrl}
           target="_blank"

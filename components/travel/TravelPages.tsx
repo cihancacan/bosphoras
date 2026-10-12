@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { travelEditorial } from '@/data/travel/editorial';
 import { IstanbulFlagship } from '@/components/travel/IstanbulFlagship';
+import { HotelEditorialDetail } from '@/components/travel/HotelEditorialDetail';
 import { istanbulHotels, istanbulEditorialSourceDate } from '@/data/travel/istanbulFlagship';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
@@ -52,11 +53,15 @@ const headings = {
   it: ['Selezione, non catalogo','Come scegliere un soggiorno speciale','Prenotazione trasparente']
 } as const;
 
-export type TravelRoute = { kind: 'home' | 'directory' | 'destination' | 'category' | 'keyword' | 'last-minute' | 'private-collection'; destination?: TravelDestination; category?: TravelCategory; slug: string };
+export type TravelRoute = { kind: 'home' | 'directory' | 'destination' | 'category' | 'keyword' | 'hotel' | 'last-minute' | 'private-collection'; destination?: TravelDestination; category?: TravelCategory; hotel?: (typeof istanbulHotels)[number]; slug: string };
 
 export function resolveTravelRoute(parts: string[] = []): TravelRoute | null {
   const path = parts.filter(Boolean);
   if (path.length === 0) return { kind: 'home', slug: '' };
+  if (path.length === 3 && path[0] === 'hotels' && path[1] === 'istanbul') {
+    const hotel = istanbulHotels.find((item) => item.id === path[2]);
+    return hotel ? { kind: 'hotel', hotel, slug: path.join('/') } : null;
+  }
   if (path.length === 1 && path[0] === 'destinations') return { kind: 'directory', slug: 'destinations' };
   if (path.length === 1 && path[0] === 'last-minute') return { kind: 'last-minute', slug: 'last-minute' };
   if (path.length === 1 && path[0] === 'private-collection') return { kind: 'private-collection', slug: 'private-collection' };
@@ -98,7 +103,9 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
   if (!route) return { title: 'Not found', robots: { index: false } };
   const t = travelText(locale);
   const isFlagship = route.kind === 'keyword' && route.destination?.slug === 'istanbul' && route.category === 'hotels' && (locale === 'fr' || locale === 'en');
-  const pageTitle = isFlagship
+  const pageTitle = route.kind === 'hotel' && route.hotel
+    ? route.hotel.name + (locale === 'fr' ? ' : guide de séjour à Istanbul' : ' : Istanbul stay guide')
+    : isFlagship
     ? locale === 'fr' ? 'Meilleurs hôtels de luxe à Istanbul : Bosphore, palaces et quartiers' : 'Best luxury hotels in Istanbul: Bosphorus, palaces and neighbourhoods'
     : route.kind === 'keyword' && route.category && route.destination
     ? heading(locale, route.category, route.destination.name)
@@ -111,7 +118,9 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
   const canonical = ORIGIN + travelHref(locale, route.slug);
   const specificEditorial = route.destination ? travelEditorial[route.destination.slug] : undefined;
   const localizedIntro = locale === 'fr' ? specificEditorial?.frIntro : locale === 'en' ? specificEditorial?.enIntro : undefined;
-  const description = isFlagship
+  const description = route.kind === 'hotel' && route.hotel
+    ? (locale === 'fr' ? route.hotel.fr : route.hotel.en).slice(0, 160)
+    : isFlagship
     ? locale === 'fr'
       ? 'Guide indépendant des meilleurs hôtels de luxe à Istanbul : Bosphore, quartiers, palaces, vues, neuf adresses à comparer et conseils avant réservation.'
       : 'An independent guide to luxury hotels in Istanbul: Bosphorus views, historic palaces, neighbourhoods, nine hotel profiles and practical booking advice.'
@@ -130,7 +139,7 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     robots: { index: ready, follow: true, 'max-image-preview': 'large' },
   };
 }
-function Header({ locale, slug }: { locale: TravelLocale; slug: string }) {
+function Header({ locale, slug, limitedLocales = false }: { locale: TravelLocale; slug: string; limitedLocales?: boolean }) {
   const t = travelText(locale);
   return <header className="bg-[#0d1a23] text-[#faf6e9] border-b border-[#c5a56a]/30">
     <div className="mx-auto max-w-7xl px-5 py-5 flex flex-wrap gap-5 items-center justify-between">
@@ -147,7 +156,7 @@ function Header({ locale, slug }: { locale: TravelLocale; slug: string }) {
       {travelCategories.map(category => <Link key={category} className="hover:text-[#e7c78a] shrink-0" href={travelHref(locale,category)}>{travelKeywordTitles[category][locale]}</Link>)}
     </nav>
     <nav aria-label="Travel language versions" className="mx-auto max-w-7xl px-5 pb-4 flex flex-wrap gap-x-3 gap-y-2 text-xs">
-      {travelLocaleCodes.map(code => <Link key={code} href={travelHref(code,slug)} className={code === locale ? 'text-[#f0cb8e] underline underline-offset-4' : 'text-[#b6c3c5] hover:text-white'} lang={travelText(code).hreflang} hrefLang={travelText(code).hreflang}>{code === 'pt' ? 'PT-BR' : code.toUpperCase()}</Link>)}
+      {travelLocaleCodes.filter(code => !limitedLocales || code === 'fr' || code === 'en').map(code => <Link key={code} href={travelHref(code,slug)} className={code === locale ? 'text-[#f0cb8e] underline underline-offset-4' : 'text-[#b6c3c5] hover:text-white'} lang={travelText(code).hreflang} hrefLang={travelText(code).hreflang}>{code === 'pt' ? 'PT-BR' : code.toUpperCase()}</Link>)}
     </nav>
   </header>;
 }
@@ -178,6 +187,11 @@ type TravelCrumb = { label: string; slug: string };
 function travelCrumbs(locale: TravelLocale, route: TravelRoute): TravelCrumb[] {
   const t = travelText(locale);
   if (route.kind === 'home') return [];
+  if (route.kind === 'hotel' && route.hotel) return [
+    { label: travelKeywordTitles.hotels[locale], slug: 'hotels' },
+    { label: locale === 'fr' ? 'Hôtels à Istanbul' : 'Hotels in Istanbul', slug: 'hotels/istanbul' },
+    { label: route.hotel.name, slug: route.slug }
+  ];
   if (route.kind === 'destination' && route.destination)
     return [{ label: t.destinations, slug: 'destinations' }, { label: route.destination.name, slug: route.slug }];
   if (route.kind === 'keyword' && route.category && route.destination)
@@ -205,7 +219,7 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
   const node = {
     '@context': 'https://schema.org',
     '@graph': [
-      { '@type': 'WebPage', '@id': base + '#webpage', url: base, name: route.destination?.name || 'Bosphoras Luxury Stays', inLanguage: travelText(locale).hreflang, isPartOf: { '@type': 'WebSite', name: 'Bosphoras Luxury Stays', url: ORIGIN + '/travel' } },
+      { '@type': 'WebPage', '@id': base + '#webpage', url: base, name: route.hotel?.name || route.destination?.name || 'Bosphoras Luxury Stays', inLanguage: travelText(locale).hreflang, isPartOf: { '@type': 'WebSite', name: 'Bosphoras Luxury Stays', url: ORIGIN + '/travel' } },
       { '@type': 'BreadcrumbList', itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Travel', item: ORIGIN + travelHref(locale) },
         ...crumbs.map((crumb, index) => ({ '@type': 'ListItem', position: index + 2, name: crumb.label, item: ORIGIN + travelHref(locale, crumb.slug) }))
@@ -283,6 +297,15 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
     : route.kind === 'last-minute' ? t.lastMinute
     : route.kind === 'private-collection' ? t.privateCollection
     : 'The World, Through Local Eyes.';
+  if (route.kind === 'hotel' && route.hotel) {
+    if (locale !== 'fr' && locale !== 'en') notFound();
+    return <div lang={t.hreflang} dir="ltr" className="min-h-screen bg-[#f8f5ee]">
+      <Schema locale={locale} route={route}/>
+      <Header locale={locale} slug={route.slug} limitedLocales/>
+      <HotelEditorialDetail hotel={route.hotel} locale={locale}/>
+      <Footer locale={locale}/>
+    </div>;
+  }
   if (route.kind === 'keyword' && destination?.slug === 'istanbul' && category === 'hotels' && (locale === 'fr' || locale === 'en')) {
     return <div lang={t.hreflang} dir="ltr" className="min-h-screen bg-[#f8f5ee]">
       <Schema locale={locale} route={route}/>
