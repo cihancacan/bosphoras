@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Import two Six Senses Kaplankaya property photographs for Bodrum Preview.
+"""Import two Six Senses property photos and a distinct coastal landscape for Bodrum Preview.
 
 Sources are hotel editorial suppliers (easyJet Holidays, Planet Escape), not official
 Six Senses distribution. Do not conflate source with copyright permissions.
@@ -42,11 +42,21 @@ IMAGES = [
         "altFr": "Salon de la suite avec piscine et vue mer du Six Senses Kaplankaya",
         "altEn": "Living room of a Six Senses Kaplankaya pool suite with sea view",
     },
+    {
+        "id": "kaplankaya-coast",
+        "filename": "kaplankaya-rocky-coast-v2.webp",
+        "sourceUrl": "https://images.squarespace-cdn.com/content/v1/52c9f4ebe4b02c7007cdd86a/1746442617549-BUI4LTWXZO6NQYBAKQOO/Bays_2_%5B9616-A4%5D.jpg",
+        "sourcePage": "https://www.roomandwild.com/six-senses-kaplankaya",
+        "sourceCredit": "Room + Wild, Kaplankaya rocky coastline",
+        "altFr": "Côte rocheuse de Kaplankaya et eau turquoise",
+        "altEn": "Rocky Kaplankaya coast and turquoise water",
+    },
 ]
 HOSTS = {
     "ejh-web-prod-images.s3-eu-west-1.amazonaws.com",
     "planetescape.pl",
     "www.planetescape.pl",
+    "images.squarespace-cdn.com",
 }
 def fetch_image(item):
     url = item["sourceUrl"]
