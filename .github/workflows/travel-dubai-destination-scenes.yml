@@ -1,0 +1,46 @@
+name: Travel Dubai — independent destination landscape photographs
+on:
+  push:
+    branches:
+      - feature/luxury-travel-seo-destinations-20261012
+    paths:
+      - scripts/download-dubai-destination-scenes.py
+      - .github/workflows/travel-dubai-destination-scenes.yml
+permissions:
+  contents: write
+concurrency:
+  group: travel-dubai-destination-scenes
+  cancel-in-progress: false
+jobs:
+  download-city-images:
+    if: github.ref == 'refs/heads/feature/luxury-travel-seo-destinations-20261012'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check 'Pillow>=10,<12' 'requests>=2.31,<3'
+      - name: Download source-tracked landscape images
+        run: python scripts/download-dubai-destination-scenes.py
+      - name: Save WebP and audit report to Travel feature only
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -f data/travel/dubaiDestinationImageSources.json ]; then git add data/travel/dubaiDestinationImageSources.json; fi
+          if [ -d public/images/travel/dubai-premium/destination ]; then git add public/images/travel/dubai-premium/destination; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "assets(travel): add Dubai destination landscapes with CC attribution [skip ci]"
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: dubai-destination-photo-sources
+          path: data/travel/dubaiDestinationImageSources.json
+          if-no-files-found: ignore
