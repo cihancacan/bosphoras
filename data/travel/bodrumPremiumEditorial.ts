@@ -100,21 +100,34 @@ export const bodrumHotelEditorial:Record<string,BodrumHotelEditorial> = {
   "Six Senses Kaplankaya": {
     "photos": [
       {
+        "src": "/images/travel/bodrum-premium/six-senses-kaplankaya/six-senses-bays-aerial-v2.webp",
+        "fr": "Le Six Senses Kaplankaya et sa baie turquoise vus du ciel",
+        "en": "Six Senses Kaplankaya and its turquoise bay from above",
+        "sourcePage": "https://www.easyjet.com/en/holidays/turkey/bodrum/bozbuk/six-senses-kaplankaya",
+        "credit": "easyJet Holidays · Six Senses Kaplankaya"
+      },
+      {
         "src": "/images/travel/bodrum-premium/six-senses-kaplankaya/six-senses-sunset-terrace.webp",
-        "fr": "Terrasse et bassin au coucher du soleil à Six Senses Kaplankaya",
-        "en": "Sunset terrace and pool at Six Senses Kaplankaya",
+        "fr": "La terrasse du Six Senses Kaplankaya au coucher du soleil",
+        "en": "Six Senses Kaplankaya terrace at sunset",
         "sourcePage": "https://www.behance.net/gallery/97152533/Six-Senses-Kaplankaya-Resort-Spa-Wayfinding-Design",
-        "credit": "Projet Six Senses Kaplankaya · Kemalcan Başaran / Behance"
+        "credit": "Kemalcan Başaran / Behance · Six Senses Kaplankaya"
+      },
+      {
+        "src": "/images/travel/bodrum-premium/six-senses-kaplankaya/six-senses-pool-suite-v2.webp",
+        "fr": "Salon d’une suite avec piscine privative et vue mer à Six Senses Kaplankaya",
+        "en": "Living area of a private-pool sea-view suite at Six Senses Kaplankaya",
+        "sourcePage": "https://planetescape.pl/en/luxury/hotel/turcja-six-senses-kaplankaya/",
+        "credit": "Planet Escape · Six Senses Kaplankaya"
       }
     ],
-    "credit": "Projet Six Senses Kaplankaya · Kemalcan Başaran / Behance",
-    "sourcePage": "https://www.behance.net/gallery/97152533/Six-Senses-Kaplankaya-Resort-Spa-Wayfinding-Design",
-    "frBest": "Pour se retirer quelques jours, privilégier le bien-être et le paysage, loin de la marina et des soirées de Bodrum.",
-    "enBest": "For a few days of seclusion, wellness and landscape, away from Bodrum’s marina nightlife.",
-    "frStory": "Kaplankaya est une autre façon de vivre l’Égée : côte moins urbanisée, architecture intégrée au relief et temps réservé au spa, à la baignade et au repos. Le site se trouve dans le secteur de Milas ; les voyageurs qui souhaitent sortir chaque soir à Yalıkavak doivent compter les déplacements dans leur décision. Une suite avec piscine privée doit être distinguée d’une chambre disposant simplement d’un balcon.",
-    "enStory": "Kaplankaya presents another side of the Aegean: a less developed shoreline, architecture integrated into the landscape and time set aside for wellness, swimming and rest. The resort is in the Milas area, so regular evenings in Yalıkavak would involve travel. A private-pool suite is a different booking proposition from a room with a balcony."
-  }
-};
+    "credit": "Sources hôtelières identifiées, crédits détaillés sous les images",
+    "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/europe/turkey/kaplankaya/gallery",
+    "frBest": "Pour une retraite confidentielle avec spa et activités bien-être, plages et vues sur l’Égée, à l’écart des soirées animées de Yalıkavak.",
+    "enBest": "For a secluded wellness escape with spa experiences, quiet beaches and Aegean outlooks, away from Yalıkavak’s nightlife.",
+    "frStory": "Six Senses Kaplankaya privilégie l’espace et le ralentissement plutôt que la vie de marina. Installé sur les reliefs de Bozbük, dans le district de Milas, il associe plages, sentiers, architecture intégrée au paysage et un spa annoncé à 10 000 m², avec bassin intérieur chauffé, hammams et espaces hydrothermaux. C’est une adresse où l’on peut passer plusieurs journées entre la mer, une séance de yoga et une longue pause sur la terrasse. Le choix doit se faire selon la catégorie précise : certaines suites et résidences possèdent leur piscine privée, mais ce n’est pas le cas de toutes les chambres. À vérifier également : la vue réelle, les activités disponibles selon les dates et les transferts depuis l’aéroport ou Bodrum.",
+    "enStory": "Six Senses Kaplankaya favours space, restoration and a slower rhythm over marina nightlife. Built into the hills of Bozbük in the Milas district, it brings together quiet beaches, walking trails, architecture that follows the landscape and a reported 10,000-square-metre spa with a heated indoor pool, hammams and hydrothermal facilities. Days here can flow between the Aegean, yoga and time on a private terrace. Room category matters: certain suites and residences have their own pools, but not every guestroom does. Check the actual outlook, seasonal activity schedule and transfers from the airport or Bodrum."
+  }};
 export const bodrumAreaVisuals:BodrumPremiumPhoto[] = [
   {
     "src": "/images/travel/bodrum-premium/the-bodrum-edition/edition-beach-club.webp",
