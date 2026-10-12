@@ -48,8 +48,9 @@ export async function POST() {
     );
   } catch (error) {
     const stage = error instanceof WinkStagingError ? error.stage : 'configuration';
+    const grpcCode = error instanceof WinkStagingError ? error.grpcCode : undefined;
     return NextResponse.json(
-      { ok: false, error: 'Wink staging request failed.', stage },
+      { ok: false, error: 'Wink staging request failed.', stage, ...(grpcCode === undefined ? {} : { grpcCode }) },
       { status: 502, headers: { 'cache-control': 'no-store', 'x-robots-tag': 'noindex, nofollow' } },
     );
   }

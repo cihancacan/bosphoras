@@ -11,7 +11,7 @@ type JsonRecord = Record<string, any>;
 export type WinkStage = 'credentials' | 'token' | 'accounts-schema' | 'accounts' | 'search-schema' | 'search';
 
 export class WinkStagingError extends Error {
-  constructor(public readonly stage: WinkStage) {
+  constructor(public readonly stage: WinkStage, public readonly grpcCode?: number) {
     super(`Wink staging failed at ${stage}`);
     this.name = 'WinkStagingError';
   }
@@ -20,8 +20,11 @@ export class WinkStagingError extends Error {
 async function atStage<T>(stage: WinkStage, action: () => Promise<T>) {
   try {
     return await action();
-  } catch {
-    throw new WinkStagingError(stage);
+  } catch (error) {
+    const grpcCode = typeof (error as { code?: unknown })?.code === 'number'
+      ? (error as { code: number }).code
+      : undefined;
+    throw new WinkStagingError(stage, grpcCode);
   }
 }
 
