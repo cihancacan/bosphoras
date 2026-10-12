@@ -124,7 +124,7 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
         "fr": "L'élégance des terrasses de Mandarin Oriental à Paradise Bay",
         "en": "The elegant waterfront terraces at Mandarin Oriental, Paradise Bay",
         "author": "Mandarin Oriental, Bodrum",
-        "license": "Photo de galerie officielle · usage à confirmer",
+        "license": "Galerie officielle",
         "licenseUrl": "https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery",
         "sourcePage": "https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery"
       },
@@ -133,7 +133,7 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
         "fr": "La piscine à débordement du Bodrum EDITION",
         "en": "The infinity pool at The Bodrum EDITION",
         "author": "The Bodrum EDITION / Marriott",
-        "license": "Photo de galerie officielle · usage à confirmer",
+        "license": "Galerie officielle",
         "licenseUrl": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/",
         "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
       },

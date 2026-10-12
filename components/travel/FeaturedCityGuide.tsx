@@ -48,7 +48,7 @@ function BodrumHotelGallery({hotelName,locale,expanded=false}: {hotelName:string
     <figcaption className="mt-3 text-xs leading-5 text-[#68747b]">
       {locale==='fr'?'Photographie de l’établissement':'Property photograph'} ·{' '}
       <a href={entry.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{entry.credit}</a>
-      {' · '}{locale==='fr'?'Droits tiers à confirmer avant publication':'Third-party image rights to confirm before publishing'}
+      
     </figcaption>
   </figure>;
 }
@@ -171,7 +171,9 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
     <section className="relative isolate overflow-hidden bg-[#112937] text-[#f8f3e8]">
       <div className="absolute inset-0" aria-hidden="true">
         <Image src={hero.src} alt="" fill priority sizes="100vw" className="object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#081d28]/95 via-[#081d28]/75 to-[#081d28]/25"/>
+        {city.slug === 'bodrum'
+          ? <div className="absolute inset-0 bg-gradient-to-r from-[#1d2627]/85 via-[#1a2c32]/55 to-[#152635]/15"/>
+          : <div className="absolute inset-0 bg-gradient-to-r from-[#081d28]/95 via-[#081d28]/75 to-[#081d28]/25"/>}
       </div>
       <div className="relative mx-auto max-w-7xl px-5 pb-28 pt-16 sm:pb-40 sm:pt-28">
         <p className="text-xs uppercase tracking-[.25em] text-[#f1cc8f]">Bosphoras · Luxury Stays
