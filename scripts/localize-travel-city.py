@@ -55,11 +55,11 @@ def checked_image(asset):
         raise ValueError(f"Licence changed: {lurl} != {expected}")
     src=info.get("thumburl") or info.get("url")
     host=urlparse(src).hostname
-    if host!="upload.wikimedia.org":
+    if host not in {"upload.wikimedia.org","thumb.wikimedia.org"}:
         raise ValueError("Unexpected image host: "+str(host))
     response=get(src,stream=True)
     try:
-        if urlparse(response.url).hostname!="upload.wikimedia.org":
+        if urlparse(response.url).hostname not in {"upload.wikimedia.org","thumb.wikimedia.org"}:
             raise ValueError("Unapproved image redirect")
         chunks=[]; size=0
         for chunk in response.iter_content(131072):
