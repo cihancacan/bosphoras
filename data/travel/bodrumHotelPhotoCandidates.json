@@ -6,12 +6,12 @@
         {
           "page": "https://www.mandarinoriental.com/en/bodrum/paradise-bay/gallery",
           "status": 200,
-          "bytes": 1471839
+          "bytes": 1471844
         },
         {
           "page": "https://www.mandarinoriental.com/en/bodrum/paradise-bay",
           "status": 200,
-          "bytes": 1592861
+          "bytes": 1592866
         },
         {
           "page": "https://press.mandarinoriental.com/bodrum/?lang=eng",
@@ -1360,6 +1360,18 @@
         {
           "page": "https://www.sixsenses.com/en/hotels-resorts/europe/turkey/kaplankaya",
           "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sixsenses.com/en/hotels-resorts/europe/turkey/kaplankaya"
+        },
+        {
+          "page": "https://www.ihg.com/turkey",
+          "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.ihg.com/turkey"
+        },
+        {
+          "page": "https://www.ihg.com/destined/properties",
+          "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.ihg.com/destined/properties"
+        },
+        {
+          "page": "https://dev.sixsensesplace.com/en/hotels-resorts/europe/turkey/kaplankaya/gallery/",
+          "error": "HTTPError: 403 Client Error: Forbidden for url: https://dev.sixsensesplace.com/en/hotels-resorts/europe/turkey/kaplankaya/gallery/"
         }
       ],
       "candidateCount": 0,
