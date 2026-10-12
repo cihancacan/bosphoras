@@ -1,0 +1,54 @@
+name: Travel Dubai — curated luxury photo import
+on:
+  push:
+    branches:
+      - feature/luxury-travel-seo-destinations-20261012
+    paths:
+      - scripts/download-dubai-premium-photos.py
+      - .github/workflows/travel-dubai-premium-images.yml
+permissions:
+  contents: write
+concurrency:
+  group: travel-dubai-premium-import
+  cancel-in-progress: false
+jobs:
+  import-dubai:
+    if: github.ref == 'refs/heads/feature/luxury-travel-seo-destinations-20261012'
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install image tools
+        run: python -m pip install --disable-pip-version-check 'Pillow>=10,<12' 'requests>=2.31,<3' 'beautifulsoup4>=4.12,<5'
+      - name: Fetch individually sourced resort photos, reject weak images and record provenance
+        run: python scripts/download-dubai-premium-photos.py
+      - name: Commit image assets and reviewable report to feature branch
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -f data/travel/dubaiPremiumImageSources.json ]; then
+            git add data/travel/dubaiPremiumImageSources.json
+          fi
+          if [ -d public/images/travel/dubai-premium ]; then
+            git add public/images/travel/dubai-premium
+          fi
+          if ! git diff --cached --quiet; then
+            git commit -m "assets(travel): import validated Dubai property photographs [skip ci]"
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
+      - name: Preserve image provenance and failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dubai-photo-audit
+          path: data/travel/dubaiPremiumImageSources.json
+          if-no-files-found: ignore
