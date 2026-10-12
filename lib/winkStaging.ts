@@ -28,7 +28,7 @@ async function atStage<T>(stage: WinkStage, action: () => Promise<T>) {
   }
 }
 
-function requiredEnv(name: 'WINK_CLIENT_ID_V2' | 'WINK_CLIENT_SECRET_V2') {
+function requiredEnv(name: 'WINK_CLIENT_ID_V3' | 'WINK_CLIENT_SECRET_V3') {
   const value = process.env[name]?.trim();
   if (!value) throw new Error(`Missing ${name}`);
   return value;
@@ -40,9 +40,9 @@ async function getAccessToken() {
     headers: { 'content-type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({
       grant_type: 'client_credentials',
-      client_id: requiredEnv('WINK_CLIENT_ID_V2'),
-      client_secret: requiredEnv('WINK_CLIENT_SECRET_V2'),
-      scope: 'account.read inventory.read content.read',
+      client_id: requiredEnv('WINK_CLIENT_ID_V3'),
+      client_secret: requiredEnv('WINK_CLIENT_SECRET_V3'),
+      scope: 'inventory.read',
     }),
     cache: 'no-store',
   });
