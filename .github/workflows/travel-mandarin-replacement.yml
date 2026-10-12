@@ -1,0 +1,39 @@
+name: Bodrum — replace Mandarin accessory images
+on:
+  push:
+    branches:
+      - feature/luxury-travel-seo-destinations-20261012
+    paths:
+      - .github/workflows/travel-mandarin-replacement.yml
+      - scripts/fix-bodrum-mandarin-images.py
+permissions:
+  contents: write
+concurrency:
+  group: bodrum-mandarin-photo-fix
+  cancel-in-progress: false
+jobs:
+  import-verified-hotel-photography:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check 'Pillow>=10,<12' 'requests>=2.31,<3'
+      - name: Download exact shortlisted imagery and report provenance
+        run: python scripts/fix-bodrum-mandarin-images.py
+      - name: Commit downloaded preview images
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/travel/bodrumMandarinPhotoReplacement.json
+          if [ -d public/images/travel/bodrum-premium ]; then git add public/images/travel/bodrum-premium; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "assets(travel): Bodrum Mandarin resort and destination photos [skip ci]"
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
