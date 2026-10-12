@@ -87,7 +87,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
       <div className="space-y-4">
         {istanbulHotels.map((hotel,i)=><EditorialHotelCard key={hotel.id} hotel={hotel} index={i} locale={locale}/>)}
       </div>
-      <p className="text-[#647078] text-sm leading-6 mt-7">{fr ? 'Les fiches détaillées s'enrichissent progressivement des photographies autorisées. Les prix et disponibilités ne seront affichés qu'après validation du partenaire de réservation.' : 'Detailed profiles are gradually being enriched with authorized photography. Rates and availability will appear only after booking-partner verification.'}</p>
+      <p className="text-[#647078] text-sm leading-6 mt-7">{fr ? 'Les fiches détaillées s’enrichissent progressivement des photographies autorisées. Les prix et disponibilités ne seront affichés qu'après validation du partenaire de réservation.' : 'Detailed profiles are gradually being enriched with authorized photography. Rates and availability will appear only after booking-partner verification.'}</p>
     </section>
 
     <section id="experience" className={anchor + ' bg-[#142d39] text-[#f8f2e6] py-16 sm:py-24'}>
