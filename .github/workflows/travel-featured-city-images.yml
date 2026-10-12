@@ -1,0 +1,47 @@
+name: Travel City Guides — local editorial photography
+on:
+  push:
+    branches:
+      - feature/luxury-travel-seo-destinations-20261012
+    paths:
+      - .github/workflows/travel-featured-city-images.yml
+      - scripts/localize-travel-featured-cities.py
+permissions:
+  contents: write
+concurrency:
+  group: travel-featured-city-images
+  cancel-in-progress: false
+jobs:
+  fetch-city-scenes:
+    if: github.ref == 'refs/heads/feature/luxury-travel-seo-destinations-20261012'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check 'Pillow>=10,<12' 'requests>=2.31,<3'
+      - name: Fetch, validate and optimise landscape photographs
+        run: python scripts/localize-travel-featured-cities.py
+      - name: Commit validated image files to Travel branch
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- data/travel/featuredCityImageSources.json
+          if [ -d public/images/travel/city-guides ]; then git add -A -- public/images/travel/city-guides; fi
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "assets(travel): verified destination scenes for Bodrum Antalya and Dubai [skip ci]"
+          git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+      - name: Store report for editorial review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: city-scenes-source-report
+          path: data/travel/featuredCityImageSources.json
+          if-no-files-found: ignore
