@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { travelEditorial } from '@/data/travel/editorial';
 import { IstanbulFlagship } from '@/components/travel/IstanbulFlagship';
 import { FeaturedCityGuide } from '@/components/travel/FeaturedCityGuide';
@@ -184,9 +185,19 @@ function Footer({ locale }: { locale: TravelLocale }) {
 }
 function DestCard({ locale, destination, category }: { locale: TravelLocale; destination: TravelDestination; category?: TravelCategory }) {
   const href = category ? travelHref(locale,category + '/' + destination.slug) : travelHref(locale,'destinations/' + destination.slug);
-  return <Link href={href} className="group bg-white border border-[#e8e0d1] p-5 rounded-sm hover:border-[#b7955d] transition-colors min-h-[150px] flex flex-col justify-between">
-    <div><p className="text-xs uppercase tracking-wider text-[#a17d48]">{destination.country}</p><h3 className="font-serif text-2xl text-[#1d2c39] mt-3">{destination.name}</h3></div>
-    <span className="text-sm text-[#687887] group-hover:text-[#8b6837] mt-4">{travelText(locale).explore} →</span>
+  const city = featuredCityGuide(destination.slug);
+  const hero = city?.photos[city.hero];
+  return <Link href={href} className="group overflow-hidden bg-white border border-[#e8e0d1] rounded-sm hover:border-[#b7955d] transition-colors min-h-[150px] flex flex-col justify-between">
+    {hero && <div className="relative aspect-[16/9] overflow-hidden bg-[#c8d2d0]">
+      <Image src={hero.src} alt={locale === 'fr' ? hero.fr : hero.en} fill
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 430px"
+        className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
+    </div>}
+    <div className="flex flex-1 flex-col justify-between p-5">
+      <div><p className="text-xs uppercase tracking-wider text-[#a17d48]">{destination.country}</p>
+        <h3 className="font-serif text-2xl text-[#1d2c39] mt-3">{destination.name}</h3></div>
+      <span className="text-sm text-[#687887] group-hover:text-[#8b6837] mt-4">{travelText(locale).explore} →</span>
+    </div>
   </Link>;
 }
 function DestinationGrid({ locale, destinations, category }: { locale: TravelLocale; destinations: TravelDestination[]; category?: TravelCategory }) {
