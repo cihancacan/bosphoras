@@ -131,11 +131,11 @@ export const bodrumHotelEditorial:Record<string,BodrumHotelEditorial> = {
 };
 export const bodrumAreaVisuals:BodrumPremiumPhoto[] = [
   {
-    "src": "/images/travel/bodrum-premium/the-bodrum-edition/edition-beach-club.webp",
-    "fr": "Beach club de The Bodrum EDITION, secteur de Yalıkavak",
-    "en": "The Bodrum EDITION beach club in the Yalıkavak area",
-    "credit": "The Bodrum EDITION",
-    "sourcePage": "https://www.marriott.com/en-us/hotels/bjveb-the-bodrum-edition/photos/"
+    "src": "/images/travel/city-guides/bodrum/marina.webp",
+    "fr": "La marina de Yalıkavak et ses yachts sur la côte de Bodrum",
+    "en": "Yalıkavak Marina and its yachts on the Bodrum coast",
+    "credit": "CeeGee · Wikimedia Commons · CC0 1.0",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:YalıkavakMarina_(5).jpg"
   },
   {
     "src": "/images/travel/bodrum-premium/destination/bodrum-turquoise-bay-v2.webp",
