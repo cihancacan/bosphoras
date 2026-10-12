@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { travelEditorial } from '@/data/travel/editorial';
 import { IstanbulFlagship } from '@/components/travel/IstanbulFlagship';
+import { FeaturedCityGuide } from '@/components/travel/FeaturedCityGuide';
+import { featuredCityGuide } from '@/data/travel/featuredCityGuides';
 import { HotelEditorialDetail } from '@/components/travel/HotelEditorialDetail';
 import { istanbulHotels, istanbulEditorialSourceDate } from '@/data/travel/istanbulFlagship';
 import { notFound } from 'next/navigation';
@@ -11,7 +13,7 @@ import { travelHref, travelLocaleCodes, travelKeywordTitles, travelText } from '
 import type { TravelLocale } from '@/lib/travel/i18n';
 
 const ORIGIN = 'https://www.bosphoras.com';
-const activeDestinations = ['istanbul','bodrum','paris','saint-tropez','dubai','bali','phuket','koh-samui','maldives','los-cabos','saint-barthelemy','porto-cervo','mustique','courchevel-1850','st-moritz','aspen','niseko','costa-careyes'];
+const activeDestinations = ['istanbul','bodrum','antalya','paris','saint-tropez','dubai','bali','phuket','koh-samui','maldives','los-cabos','saint-barthelemy','porto-cervo','mustique','courchevel-1850','st-moritz','aspen','niseko','costa-careyes'];
 const categoryLead: Record<TravelCategory, { keyword: string; checks: string[] }> = {
   hotels: { keyword: 'best hotels · 5 star hotels · luxury resorts · boutique hotels', checks: ['Room category, view and location', 'What is included in the final rate', 'Cancellation conditions and booking provider'] },
   villas: { keyword: 'luxury villas · private pool villas · beachfront villas', checks: ['Pool privacy, bedrooms and access', 'Included housekeeping and staff', 'Deposit, service fees and cancellation'] },
@@ -103,10 +105,17 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
   if (!route) return { title: 'Not found', robots: { index: false } };
   const t = travelText(locale);
   const isFlagship = route.kind === 'keyword' && route.destination?.slug === 'istanbul' && route.category === 'hotels' && (locale === 'fr' || locale === 'en');
+  const featureGuide = (locale === 'fr' || locale === 'en') ? featuredCityGuide(route.destination?.slug) : undefined;
+  const isFeaturedHotelGuide = Boolean(featureGuide && route.kind === 'keyword' && route.category === 'hotels');
+  const isFeaturedDestinationGuide = Boolean(featureGuide && route.kind === 'destination');
   const pageTitle = route.kind === 'hotel' && route.hotel
     ? route.hotel.name + (locale === 'fr' ? ' : guide de séjour à Istanbul' : ' : Istanbul stay guide')
     : isFlagship
     ? locale === 'fr' ? 'Meilleurs hôtels de luxe à Istanbul : Bosphore, palaces et quartiers' : 'Best luxury hotels in Istanbul: Bosphorus, palaces and neighbourhoods'
+    : isFeaturedHotelGuide && featureGuide
+    ? (locale === 'fr' ? 'Hôtels de luxe à ' + featureGuide.name + ' : sélection et quartiers' : 'Luxury hotels in ' + featureGuide.name + ': curated guide and locations')
+    : isFeaturedDestinationGuide && featureGuide
+    ? (locale === 'fr' ? featureGuide.name + ' : où séjourner, hôtels et expériences de luxe' : featureGuide.name + ': luxury stays, neighbourhoods and experiences')
     : route.kind === 'keyword' && route.category && route.destination
     ? heading(locale, route.category, route.destination.name)
     : route.kind === 'destination' && route.destination ? route.destination.name + ' — Luxury stays'
@@ -124,6 +133,8 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     ? locale === 'fr'
       ? 'Guide indépendant des meilleurs hôtels de luxe à Istanbul : Bosphore, quartiers, palaces, vues, neuf adresses à comparer et conseils avant réservation.'
       : 'An independent guide to luxury hotels in Istanbul: Bosphorus views, historic palaces, neighbourhoods, nine hotel profiles and practical booking advice.'
+    : (isFeaturedHotelGuide || isFeaturedDestinationGuide) && featureGuide
+    ? (locale === 'fr' ? (isFeaturedHotelGuide ? featureGuide.hotelIntroFr : featureGuide.introFr) : (isFeaturedHotelGuide ? featureGuide.hotelIntroEn : featureGuide.introEn)).slice(0, 160)
     : localizedIntro
     ? (pageTitle + '. ' + localizedIntro).slice(0, 160)
     : (route.destination ? pageTitle + '. ' + t.value + ' ' + t.approach : t.slogan + ' ' + t.value).slice(0, 160);
@@ -311,6 +322,16 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
       <Schema locale={locale} route={route}/>
       <Header locale={locale} slug={route.slug}/>
       <IstanbulFlagship locale={locale}/>
+      <Footer locale={locale}/>
+    </div>;
+  }
+  const selectedCity = featuredCityGuide(destination?.slug);
+  if (selectedCity && (locale === 'fr' || locale === 'en') &&
+      (route.kind === 'destination' || (route.kind === 'keyword' && category === 'hotels'))) {
+    return <div lang={t.hreflang} dir="ltr" className="min-h-screen bg-[#f8f5ee]">
+      <Schema locale={locale} route={route}/>
+      <Header locale={locale} slug={route.slug} limitedLocales/>
+      <FeaturedCityGuide city={selectedCity} locale={locale} variant={route.kind === 'destination' ? 'destination' : 'hotels'}/>
       <Footer locale={locale}/>
     </div>;
   }
