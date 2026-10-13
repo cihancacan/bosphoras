@@ -1,0 +1,40 @@
+name: Travel Paris — independent Seine and neighbourhood imagery
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: [scripts/download-paris-destination-photos.py, .github/workflows/travel-paris-destination-photos.yml]
+permissions:
+  contents: write
+concurrency:
+  group: travel-paris-destination-image-import
+  cancel-in-progress: false
+jobs:
+  paris-destination-photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check 'Pillow>=10,<12' 'requests>=2.31,<3'
+      - run: python scripts/download-paris-destination-photos.py
+      - name: Commit licensed real Paris city scenes on feature branch
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -f data/travel/parisDestinationImageSources.json ]; then git add data/travel/parisDestinationImageSources.json; fi
+          if [ -d public/images/travel/paris-premium/destination ]; then git add public/images/travel/paris-premium/destination; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "assets(travel): add documented Paris landmark and area WebP photos [skip ci]"
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: paris-destination-media-attribution
+          path: data/travel/parisDestinationImageSources.json
+          if-no-files-found: ignore
