@@ -103,7 +103,9 @@ function futureDate(days = 30) {
 }
 
 export type WinkStagingQuery = {
-  scope: 'city' | 'country' | 'global';
+  scope: 'city' | 'country' | 'global' | 'geo';
+  point?: { latitude: number; longitude: number };
+  radiusMeters?: number;
   geoNameId?: string;
   countryCode?: string;
   checkIn: string;
@@ -116,7 +118,12 @@ export type WinkStagingQuery = {
 export async function searchStagingInventory(query: WinkStagingQuery) {
   if (query.scope === 'city' && !/^\d{3,12}$/.test(query.geoNameId ?? '')) throw new WinkStagingError('search');
   if (query.scope === 'country' && !/^[A-Z]{2}$/.test(query.countryCode ?? '')) throw new WinkStagingError('search');
-  if (!['city', 'country', 'global'].includes(query.scope)) throw new WinkStagingError('search');
+  if (query.scope === 'geo' && (!query.point || !Number.isFinite(query.point.latitude) ||
+      !Number.isFinite(query.point.longitude) || query.point.latitude < -90 ||
+      query.point.latitude > 90 || query.point.longitude < -180 ||
+      query.point.longitude > 180 || !query.radiusMeters ||
+      query.radiusMeters < 1000 || query.radiusMeters > 50000)) throw new WinkStagingError('search');
+  if (!['city', 'country', 'global', 'geo'].includes(query.scope)) throw new WinkStagingError('search');
   if (!/^\d{4}-\d{2}-\d{2}$/.test(query.checkIn)) throw new WinkStagingError('search');
   if (!(query.nights >= 1 && query.nights <= 14 && query.adults >= 1 && query.adults <= 4 && query.rooms >= 1 && query.rooms <= 2)) throw new WinkStagingError('search');
   const token = await atStage('token', getAccessToken);
@@ -141,8 +148,10 @@ export async function searchStagingInventory(query: WinkStagingQuery) {
   metadata.set('managing-entity-id', String(account.accountId));
 
   const methodNames = query.scope === 'city' ? ['searchByCity', 'SearchByCity']
+    : query.scope === 'geo' ? ['searchByGeo', 'SearchByGeo']
     : query.scope === 'country' ? ['rankByCountry', 'RankByCountry'] : ['rankGlobal', 'RankGlobal'];
   const region = query.scope === 'city' ? { geoNameId: query.geoNameId }
+    : query.scope === 'geo' ? { area: { point: query.point }, radiusInMeters: String(query.radiusMeters) }
     : query.scope === 'country' ? { countryCode: query.countryCode } : {};
   const searchClient = service(pkg, 'Search');
   let response: JsonRecord;
