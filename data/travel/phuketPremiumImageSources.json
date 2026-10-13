@@ -1,8 +1,8 @@
 {
   "scope": "Exact-property Phuket luxury hotel photos, Travel Preview only",
-  "createdAt": "2026-10-13T01:11:31.740649+00:00",
+  "createdAt": "2026-10-13T01:12:28.733419+00:00",
   "expected": 12,
-  "downloaded": 9,
+  "downloaded": 11,
   "items": [
     {
       "hotel": "amanpuri",
@@ -12,11 +12,20 @@
       "credit": "Amanpuri · site officiel",
       "localPath": "/images/travel/phuket-premium/amanpuri/resort-sea-terrace.webp",
       "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
-      "status": "failed",
-      "errors": [
-        "unsuitable landscape [453, 280]",
-        "unsuitable landscape [453, 280]"
-      ]
+      "status": "downloaded",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/masonry_extra_large_2x/public/2025-09/Amanpuri-_Thailand_-_Dining-_The_Beach_Terrace-_Upper_Deck-_Table_Set_Up-_Andaman_Sea.webp?itok=Tiu6uxNf",
+      "originalSize": [
+        906,
+        559
+      ],
+      "outputSize": [
+        906,
+        559
+      ],
+      "bytes": 126838,
+      "sha256": "3722b207bfcc8de1b753b28aac9c4c3e66c71c8d7bd5228677224f8aa4505f5d",
+      "brightness": 132.2,
+      "processing": "EXIF normalised, resized to max 1950px, WebP quality 86"
     },
     {
       "hotel": "amanpuri",
@@ -26,11 +35,20 @@
       "credit": "Amanpuri · site officiel",
       "localPath": "/images/travel/phuket-premium/amanpuri/resort-main-pool.webp",
       "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
-      "status": "failed",
-      "errors": [
-        "unsuitable landscape [453, 280]",
-        "unsuitable landscape [453, 596]"
-      ]
+      "status": "downloaded",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/masonry_extra_large_2x/public/2025-09/Amanpuri-_Thailand_-_Resort-_Pool_Terrace-_Pool.webp?itok=m29UdhtN",
+      "originalSize": [
+        906,
+        559
+      ],
+      "outputSize": [
+        906,
+        559
+      ],
+      "bytes": 80876,
+      "sha256": "7279a9f9adbf04feac27046689a5f57571296c573bf6c0395d5816ca344758e4",
+      "brightness": 88.1,
+      "processing": "EXIF normalised, resized to max 1950px, WebP quality 86"
     },
     {
       "hotel": "amanpuri",
@@ -42,8 +60,8 @@
       "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
       "status": "failed",
       "errors": [
-        "unsuitable landscape [697, 697]",
-        "unsuitable landscape [697, 697]"
+        "cannot identify image file <_io.BytesIO object at 0x7effb7526020>",
+        "unsuitable landscape [906, 906]"
       ]
     },
     {
