@@ -1,0 +1,257 @@
+{
+  "scope": "Exact-property Phuket luxury hotel photos, Travel Preview only",
+  "createdAt": "2026-10-13T01:11:31.740649+00:00",
+  "expected": 12,
+  "downloaded": 9,
+  "items": [
+    {
+      "hotel": "amanpuri",
+      "key": "resort-sea-terrace",
+      "scene": "Amanpuri's beach dining terrace overlooking Andaman Sea",
+      "sourcePage": "https://www.aman.com/resorts/amanpuri/gallery",
+      "credit": "Amanpuri · site officiel",
+      "localPath": "/images/travel/phuket-premium/amanpuri/resort-sea-terrace.webp",
+      "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
+      "status": "failed",
+      "errors": [
+        "unsuitable landscape [453, 280]",
+        "unsuitable landscape [453, 280]"
+      ]
+    },
+    {
+      "hotel": "amanpuri",
+      "key": "resort-main-pool",
+      "scene": "Amanpuri main pool with teak pavilions and palm grove",
+      "sourcePage": "https://www.aman.com/resorts/amanpuri/gallery",
+      "credit": "Amanpuri · site officiel",
+      "localPath": "/images/travel/phuket-premium/amanpuri/resort-main-pool.webp",
+      "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
+      "status": "failed",
+      "errors": [
+        "unsuitable landscape [453, 280]",
+        "unsuitable landscape [453, 596]"
+      ]
+    },
+    {
+      "hotel": "amanpuri",
+      "key": "ocean-pool-pavilion",
+      "scene": "Amanpuri Ocean Pool Pavilion specific guestroom category",
+      "sourcePage": "https://www.aman.com/resorts/amanpuri/accommodation/pavilions",
+      "credit": "Amanpuri · Ocean Pool Pavilion",
+      "localPath": "/images/travel/phuket-premium/amanpuri/ocean-pool-pavilion.webp",
+      "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
+      "status": "failed",
+      "errors": [
+        "unsuitable landscape [697, 697]",
+        "unsuitable landscape [697, 697]"
+      ]
+    },
+    {
+      "hotel": "trisara",
+      "key": "ocean-pool-villa",
+      "scene": "Trisara Ocean View Pool Villa private pool and sea beyond",
+      "sourcePage": "https://trisara.com/suite/ocean-view-pool-villa/",
+      "credit": "Trisara · photo officielle",
+      "localPath": "/images/travel/phuket-premium/trisara/ocean-pool-villa.webp",
+      "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
+      "status": "downloaded",
+      "downloadUrl": "https://trisara.com/wp-content/uploads/2025/01/Trisara-OPV-FMG-91-1-scaled.jpg",
+      "originalSize": [
+        2560,
+        1707
+      ],
+      "outputSize": [
+        1950,
+        1300
+      ],
+      "bytes": 217828,
+      "sha256": "b70606892a3fb8dc82d3f857a164c7641eae75f1def3f1e66581d85765d7ce09",
+      "brightness": 137.1,
+      "processing": "EXIF normalised, resized to max 1950px, WebP quality 86"
+    },
+    {
+      "hotel": "trisara",
+      "key": "villa-terrace",
+      "scene": "Trisara Ocean View Pool Villa terrace and outdoor scenery",
+      "sourcePage": "https://trisara.com/suite/ocean-view-pool-villa/",
+      "credit": "Trisara · Ocean View Pool Villa",
+      "localPath": "/images/travel/phuket-premium/trisara/villa-terrace.webp",
+      "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
+      "status": "downloaded",
+      "downloadUrl": "https://trisara.com/wp-content/uploads/2024/08/ocean_view_pool_villa_3.jpg",
+      "originalSize": [
+        1600,
+        600
+      ],
+      "outputSize": [
+        1600,
+        600
+      ],
+      "bytes": 103154,
+      "sha256": "ba90d8880cbffbe7686976cd0ae4c110156646f7bacb7b32f02dedd7be9e72dc",
+      "brightness": 127.9,
+      "processing": "EXIF normalised, resized to max 1950px, WebP quality 86"
+    },
+    {
+      "hotel": "trisara",
+      "key": "villa-pool-deck",
+      "scene": "Trisara Ocean View Pool Villa private pool deck",
+      "sourcePage": "https://trisara.com/suite/ocean-view-pool-villa/",
+      "credit": "Trisara · Ocean View Pool Villa",
+      "localPath": "/images/travel/phuket-premium/trisara/villa-pool-deck.webp",
+      "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
+      "status": "downloaded",
+      "downloadUrl": "https://trisara.com/wp-content/uploads/2024/08/ocean_view_pool_villa_4.jpg",
+      "originalSize": [
+        1600,
+        600
+      ],
+      "outputSize": [
+        1600,
+        600
+      ],
+      "bytes": 240300,
+      "sha256": "eae7012ac2d2d2c5b4c445d5b69ca6e1d75fd4296849a30961092e41f1244203",
+      "brightness": 119.8,
+      "processing": "EXIF normalised, resized to max 1950px, WebP quality 86"
+    },
+    {
+      "hotel": "rosewood",
+      "key": "emerald-bay-pool",
+      "scene": "Rosewood Phuket outdoor pool and beach at Emerald Bay",
+      "sourcePage": "https://www.rosewoodhotels.com/en/phuket/overview/gallery",
+      "credit": "Rosewood Phuket · image officielle",
+      "localPath": "/images/travel/phuket-premium/rosewood/emerald-bay-pool.webp",
+      "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
+      "status": "downloaded",
+      "downloadUrl": "https://images.rosewoodhotels.com/is/image/rwhg/pool-001-1",
+      "originalSize": [
+        3000,
+        2000
+      ],
+      "outputSize": [
+        1950,
+        1300
+      ],
+      "bytes": 983496,
+      "sha256": "49a65bc4a59f5cfc668d788bd3428c78bceb007baaaf7b444a35253ae193c6eb",
+      "brightness": 88.4,
+      "processing": "EXIF normalised, resized to max 1950px, WebP quality 86"
+    },
+    {
+      "hotel": "rosewood",
+      "key": "partial-ocean-pavilion",
+      "scene": "Rosewood Phuket Partial Ocean View Pool Pavilion",
+      "sourcePage": "https://www.rosewoodhotels.com/en/phuket/accommodation/pavilions/partial-ocean-view-pool",
+      "credit": "Rosewood Phuket · Partial Ocean View Pool Pavilion",
+      "localPath": "/images/travel/phuket-premium/rosewood/partial-ocean-pavilion.webp",
+      "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
+      "status": "downloaded",
+      "downloadUrl": "https://images.rosewoodhotels.com/is/image/rwhg/partial-oceanview-pool-pavilion-001-1",
+      "originalSize": [
+        2776,
+        2160
+      ],
+      "outputSize": [
+        1864,
+        1450
+      ],
+      "bytes": 319042,
+      "sha256": "265077e6ea9358f4eee0570affab95c4963b0e77c4dd0a686f58b0e3844b762e",
+      "brightness": 54.1,
+      "processing": "EXIF normalised, resized to max 1950px, WebP quality 86"
+    },
+    {
+      "hotel": "rosewood",
+      "key": "beachfront-villa",
+      "scene": "Rosewood Phuket Beachfront Pool Villa exterior",
+      "sourcePage": "https://www.rosewoodhotels.com/en/phuket/overview/gallery",
+      "credit": "Rosewood Phuket · Beachfront Pool Villa",
+      "localPath": "/images/travel/phuket-premium/rosewood/beachfront-villa.webp",
+      "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
+      "status": "downloaded",
+      "downloadUrl": "https://images.rosewoodhotels.com/is/image/rwhg/beachfront-pool-villa-003",
+      "originalSize": [
+        1701,
+        1134
+      ],
+      "outputSize": [
+        1701,
+        1134
+      ],
+      "bytes": 307368,
+      "sha256": "750706db180f56c28cfd264881a1d9cbc5730cb7dd87cc6416e50fb5e840bcfc",
+      "brightness": 91.2,
+      "processing": "EXIF normalised, resized to max 1950px, WebP quality 86"
+    },
+    {
+      "hotel": "keemala",
+      "key": "birds-nest-villa-exterior",
+      "scene": "Keemala Bird's Nest Pool Villa exterior in Kamala rainforest",
+      "sourcePage": "https://www.keemala.com/villa/birds-nest-pool-villas/",
+      "credit": "Keemala · Bird’s Nest Pool Villas",
+      "localPath": "/images/travel/phuket-premium/keemala/birds-nest-villa-exterior.webp",
+      "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
+      "status": "downloaded",
+      "downloadUrl": "https://www.keemala.com/wp-content/uploads/2022/11/08_BirdNestPoolVillas.jpg",
+      "originalSize": [
+        1440,
+        720
+      ],
+      "outputSize": [
+        1440,
+        720
+      ],
+      "bytes": 145306,
+      "sha256": "251eb284c7692602cd1aa4028b0de9c72a3f695c83124783bc96da25bcfca483",
+      "brightness": 132.3,
+      "processing": "EXIF normalised, resized to max 1950px, WebP quality 86"
+    },
+    {
+      "hotel": "keemala",
+      "key": "birds-nest-pool",
+      "scene": "Keemala Bird's Nest Pool Villa private terrace pool",
+      "sourcePage": "https://www.keemala.com/villa/birds-nest-pool-villas/",
+      "credit": "Keemala · Bird’s Nest Pool Villas",
+      "localPath": "/images/travel/phuket-premium/keemala/birds-nest-pool.webp",
+      "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
+      "status": "downloaded",
+      "downloadUrl": "https://www.keemala.com/wp-content/uploads/2022/11/06_BirdNestPoolVillas.jpg",
+      "originalSize": [
+        1440,
+        720
+      ],
+      "outputSize": [
+        1440,
+        720
+      ],
+      "bytes": 183970,
+      "sha256": "c0430f0f956679639c61678600e276e0a6d168b10ab629b64cc2d60c45fee748",
+      "brightness": 101.9,
+      "processing": "EXIF normalised, resized to max 1950px, WebP quality 86"
+    },
+    {
+      "hotel": "keemala",
+      "key": "birds-nest-interior",
+      "scene": "Keemala Bird's Nest Pool Villa interiors and tropical view",
+      "sourcePage": "https://www.keemala.com/villa/birds-nest-pool-villas/",
+      "credit": "Keemala · Bird’s Nest Pool Villas",
+      "localPath": "/images/travel/phuket-premium/keemala/birds-nest-interior.webp",
+      "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
+      "status": "downloaded",
+      "downloadUrl": "https://www.keemala.com/wp-content/uploads/2022/11/10_BirdNestPoolVillas.jpg",
+      "originalSize": [
+        1440,
+        750
+      ],
+      "outputSize": [
+        1440,
+        750
+      ],
+      "bytes": 200698,
+      "sha256": "e79ca16def045ae4b1fa7f8d249b54de0c730910bf26e9f3e94a4594cf261d91",
+      "brightness": 76.0,
+      "processing": "EXIF normalised, resized to max 1950px, WebP quality 86"
+    }
+  ]
+}
