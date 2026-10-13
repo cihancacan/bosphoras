@@ -10,11 +10,11 @@ type SearchResult = {
   error?: string; stage?: string; grpcCode?: number;
 };
 const searchAreas = [
-  { slug: 'global', label: '🌍 Monde entier · sans ville' },
-  { slug: 'country-TR', label: '🇹🇷 Toute la Turquie' },
-  { slug: 'country-FR', label: '🇫🇷 Toute la France' },
-  { slug: 'country-AE', label: '🇦🇪 Tous les Émirats' },
-  { slug: 'country-TH', label: '🇹🇭 Toute la Thaïlande' },
+  { slug: 'global', label: '🌍 Classement mondial Wink (RankGlobal)' },
+  { slug: 'country-TR', label: '🇹🇷 Classement Turquie (RankByCountry)' },
+  { slug: 'country-FR', label: '🇫🇷 Classement France (RankByCountry)' },
+  { slug: 'country-AE', label: '🇦🇪 Classement Émirats (RankByCountry)' },
+  { slug: 'country-TH', label: '🇹🇭 Classement Thaïlande (RankByCountry)' },
   { slug: 'city-istanbul', label: 'Istanbul seulement' },
   { slug: 'city-paris', label: 'Paris seulement' },
   { slug: 'city-dubai', label: 'Dubaï seulement' },
@@ -26,7 +26,7 @@ function dateInDays(days: number) {
 }
 
 export function WinkStagingSearchLab() {
-  const [scope, setScope] = useState('global');
+  const [scope, setScope] = useState('city-bangkok');
   const [checkIn, setCheckIn] = useState(() => dateInDays(14));
   const [nights, setNights] = useState(2);
   const [adults, setAdults] = useState(2);
@@ -62,11 +62,17 @@ export function WinkStagingSearchLab() {
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#b18a52]">Diagnostic privé · API de réservation</p>
         <h1 className="font-serif text-4xl leading-tight sm:text-5xl">Recherche d’hôtels Wink</h1>
         <p className="mt-4 text-base leading-relaxed text-slate-600">
-          Commence par « Monde entier » pour découvrir ce que contient Wink Staging sans filtre géographique,
-          puis compare avec un pays ou une ville. Les dates et voyageurs restent obligatoires pour calculer les offres.
-          Zéro résultat ne signifie pas qu’il n’existe aucun hôtel dans la destination.
+          Bangkok a déjà retourné des établissements sur Wink Staging. Commence par cette ville pour confirmer la connexion.
+          Les options « Monde » et « Pays » sont des classements (RankGlobal / RankByCountry), et non une liste exhaustive
+          du catalogue. Un classement vide ne prouve pas que Wink ne possède aucun hôtel.
         </p>
       </header>
+      <aside className="mb-7 rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 text-sm leading-relaxed text-amber-950">
+        <strong>Pourquoi « Monde » peut afficher zéro :</strong> RankGlobal classe des hôtels selon les scores Wink,
+        alors que SearchByCity interroge l’inventaire d’une ville. Ce sont deux méthodes différentes.
+        Aucun filtre facultatif (étoiles, nom, type de séjour) n’est activé, mais dates et nombre de voyageurs
+        restent nécessaires aux recherches tarifaires. Le catalogue de test Wink peut être limité.
+      </aside>
       <form onSubmit={submit} className="rounded-2xl border border-[#dedbd3] bg-white p-5 shadow-sm sm:p-7">
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
           <label className="block text-sm font-semibold">Périmètre de recherche
@@ -110,7 +116,7 @@ export function WinkStagingSearchLab() {
           {result.stage && <p className="mt-3 text-sm text-slate-500">Étape : <strong>{result.stage}</strong>{result.grpcCode !== undefined ? ` · code gRPC ${result.grpcCode}` : ''}</p>}
         </div> : <>
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#a37d4c]">Réponse API obtenue · Staging Wink</p>
-          <h2 className="mt-2 font-serif text-3xl">{result.totalElements === 0 ? 'Aucun hôtel retourné' : `${result.totalElements} établissement(s) identifié(s)`}</h2>
+          <h2 className="mt-2 font-serif text-3xl">{result.totalElements === 0 ? (result.method === 'RankGlobal' || result.method === 'RankByCountry' ? 'Classement Wink vide en staging' : 'Aucun hôtel retourné par la recherche') : `${result.totalElements} établissement(s) identifié(s)`}</h2>
           <p className="mt-2 text-slate-600">{result.city}, arrivée {result.checkIn}, {result.nights} nuit(s), {result.adults} adulte(s), {result.rooms} chambre(s).</p>
           <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
             <div className="rounded-xl bg-[#f6f5f2] p-4"><div className="text-xs text-slate-500">Total API</div><div className="mt-1 text-3xl font-semibold">{result.totalElements ?? '—'}</div></div>
@@ -119,7 +125,7 @@ export function WinkStagingSearchLab() {
             <div className="rounded-xl bg-[#f6f5f2] p-4"><div className="text-xs text-slate-500">Compte affilié</div><div className="mt-2 font-semibold">{result.accountConfirmed ? 'Reconnu' : 'Non confirmé'}</div></div>
           </div>
           <p className="mt-5 text-sm text-slate-600">{result.info}</p>
-          <p className="mt-2 text-xs text-slate-500">Méthode Wink : {result.method || '—'} · Aucun filtre facultatif appliqué. Total API distinct des 5 premières fiches.</p>
+          <p className="mt-2 text-xs text-slate-500">Méthode Wink : {result.method || '—'} · Aucun filtre facultatif appliqué. La page affiche au maximum 5 fiches ; le « Total API » est indépendant de cette limite.</p>
           {result.hotels && result.hotels.length > 0 && <div className="mt-7 space-y-3">
             {result.hotels.map((hotel, index) => <div key={index} className="flex items-center gap-4 rounded-xl border border-slate-200 p-3">
               {hotel.heroImageUrl && <img src={hotel.heroImageUrl} alt={hotel.name} loading="lazy" className="h-20 w-28 rounded-lg object-cover" />}
