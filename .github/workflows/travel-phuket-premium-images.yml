@@ -1,0 +1,41 @@
+name: Travel Phuket — curated luxury resort photo importer
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: [scripts/download-phuket-premium-hotel-photos.py, .github/workflows/travel-phuket-premium-images.yml]
+permissions:
+  contents: write
+concurrency:
+  group: travel-phuket-hotel-import
+  cancel-in-progress: false
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install --disable-pip-version-check 'requests>=2.31,<3' 'Pillow>=10,<12'
+      - run: python scripts/download-phuket-premium-hotel-photos.py
+      - name: Store WebP, source and rights ledger to feature branch
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [ -f data/travel/phuketPremiumImageSources.json ]; then git add data/travel/phuketPremiumImageSources.json; fi
+          if [ -d public/images/travel/phuket-premium ]; then git add public/images/travel/phuket-premium; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): import audited Phuket resort WebP photos [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: phuket-hotel-image-rights-ledger
+          path: data/travel/phuketPremiumImageSources.json
+          if-no-files-found: ignore
