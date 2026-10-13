@@ -1,0 +1,284 @@
+{
+  "scope": "Saint-Tropez four individual hotels only; NOT city images; PREVIEW branch",
+  "updatedAt": "2026-10-13T00:24:53.176218+00:00",
+  "expected": 12,
+  "downloaded": 12,
+  "items": [
+    {
+      "hotel": "cheval-blanc",
+      "key": "cheval-beachfront",
+      "scene": "Cheval Blanc St-Tropez directly on Bouillabaisse beach",
+      "sourcePage": "https://www.chevalblanc.com/en/maison/st-tropez/careers/careers-st-tropez/",
+      "credit": "Cheval Blanc St-Tropez · Oliver Fly",
+      "localPath": "/images/travel/saint-tropez-premium/cheval-blanc/cheval-beachfront.webp",
+      "status": "downloaded",
+      "rights": "Project owner says authorised; third-party commercial licence evidence remains to be verified before production",
+      "downloadUrl": "https://images.prismic.io/lvmh-chevalblanc/Z-FsNXdAxsiBvz_r_WebRGB-ChevalBlancSt-Tropez-DroneHeroShot-Fa%C3%A7ade-OliverFly2024.jpg?auto=format%2Ccompress",
+      "inputSize": [
+        7618,
+        5714
+      ],
+      "outputSize": [
+        2000,
+        1500
+      ],
+      "brightness": 159.9,
+      "bytes": 689866,
+      "sha256": "7ced306430a2c80cc11486f6ebd548ab5202d43d5fd3d0db5a8dabe3fbfddb1c",
+      "transformation": "EXIF normalized; max 2000px width; WebP q86"
+    },
+    {
+      "hotel": "cheval-blanc",
+      "key": "cheval-pool-sea",
+      "scene": "Cheval Blanc St-Tropez pool and private beach facing the bay",
+      "sourcePage": "https://www.luxurytraveladvisor.com/hotels/cheval-blanc-st-tropez-now-open",
+      "credit": "Luxury Travel Advisor · Cheval Blanc St-Tropez",
+      "localPath": "/images/travel/saint-tropez-premium/cheval-blanc/cheval-pool-sea.webp",
+      "status": "downloaded",
+      "rights": "Project owner says authorised; third-party commercial licence evidence remains to be verified before production",
+      "downloadUrl": "https://qtxasset.com/quartz/qcloud1/media/image/luxurytraveladvisor/1558537493/pool.jpg?VersionId=inDlXWFZpvRcOM0s6jHKJGN2zKTo2qD1",
+      "inputSize": [
+        800,
+        534
+      ],
+      "outputSize": [
+        800,
+        534
+      ],
+      "brightness": 155.0,
+      "bytes": 44478,
+      "sha256": "172de6ba3431326bfda03397e979777c07acc00de35f90524fdaa7fb4da7f58d",
+      "transformation": "EXIF normalized; max 2000px width; WebP q86"
+    },
+    {
+      "hotel": "cheval-blanc",
+      "key": "cheval-duplex-sea-suite",
+      "scene": "Cheval Blanc St-Tropez Duplex Sea Suite bedroom with balcony",
+      "sourcePage": "https://www.chevalblanc.com/en/maison/st-tropez/rooms-and-suites/duplex-sea-suite-st-tropez/",
+      "credit": "Cheval Blanc St-Tropez · V. Mati",
+      "localPath": "/images/travel/saint-tropez-premium/cheval-blanc/cheval-duplex-sea-suite.webp",
+      "status": "downloaded",
+      "rights": "Project owner says authorised; third-party commercial licence evidence remains to be verified before production",
+      "downloadUrl": "https://images.prismic.io/lvmh-chevalblanc/aLBzi2GNHVfTOaRc_Light-ChevalBlancSt-Tropez-DuplexSeaSuiteBedroom-V.Mati-2018.jpg?auto=format%2Ccompress",
+      "inputSize": [
+        7360,
+        4912
+      ],
+      "outputSize": [
+        2000,
+        1335
+      ],
+      "brightness": 182.8,
+      "bytes": 194612,
+      "sha256": "df3c627aa8f67f46cd9d6c3bbc69c92c8e1f4ea63ab54b0425ce2c23d0f43201",
+      "transformation": "EXIF normalized; max 2000px width; WebP q86"
+    },
+    {
+      "hotel": "byblos",
+      "key": "byblos-terrace-exterior",
+      "scene": "Hôtel Byblos Saint-Tropez white Mediterranean facades and lush outdoor terraces",
+      "sourcePage": "https://www.byblos.com/en/",
+      "credit": "Hôtel Byblos · Stephan Julliard",
+      "localPath": "/images/travel/saint-tropez-premium/byblos/byblos-terrace-exterior.webp",
+      "status": "downloaded",
+      "rights": "Project owner says authorised; third-party commercial licence evidence remains to be verified before production",
+      "downloadUrl": "https://www.byblos.com/wp-content/uploads/Hotel-Byblos_Saint-Tropez-%C2%A9Stephan-Julliard-3-1-1920x1280.jpg",
+      "inputSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1920,
+        1280
+      ],
+      "brightness": 115.6,
+      "bytes": 658436,
+      "sha256": "74adaaad5dfa3a7b15c009aca83e33a04212d845febbe4c3d449c360ee4a1639",
+      "transformation": "EXIF normalized; max 2000px width; WebP q86"
+    },
+    {
+      "hotel": "byblos",
+      "key": "byblos-pool",
+      "scene": "Byblos Saint-Tropez leafy garden outdoor pool",
+      "sourcePage": "https://www.byblos.com/en/galerie-photos/",
+      "credit": "Hôtel Byblos · galerie officielle",
+      "localPath": "/images/travel/saint-tropez-premium/byblos/byblos-pool.webp",
+      "status": "downloaded",
+      "rights": "Project owner says authorised; third-party commercial licence evidence remains to be verified before production",
+      "downloadUrl": "https://www.byblos.com/wp-content/uploads/hotel-byblos-piscine-cotedazur-saint-tropez-french-riviera-1-1024x680.jpg",
+      "inputSize": [
+        1024,
+        680
+      ],
+      "outputSize": [
+        1024,
+        680
+      ],
+      "brightness": 122.8,
+      "bytes": 161142,
+      "sha256": "0ab5e7723159c3ad0d525a12bc192bd1c087479d9dc8833f91a74313f3987925",
+      "transformation": "EXIF normalized; max 2000px width; WebP q86"
+    },
+    {
+      "hotel": "byblos",
+      "key": "byblos-laura-gonzalez-duplex",
+      "scene": "Hotel Byblos Saint-Tropez suite decorated by Laura Gonzalez",
+      "sourcePage": "https://www.byblos.com/en/galerie-photos/",
+      "credit": "Hôtel Byblos · Laura Gonzalez",
+      "localPath": "/images/travel/saint-tropez-premium/byblos/byblos-laura-gonzalez-duplex.webp",
+      "status": "downloaded",
+      "rights": "Project owner says authorised; third-party commercial licence evidence remains to be verified before production",
+      "downloadUrl": "https://www.byblos.com/wp-content/uploads/Hotel-Byblos-Saint-Tropez-Laura-Gonzalez-Duplex-4-1024x680.jpg",
+      "inputSize": [
+        1024,
+        680
+      ],
+      "outputSize": [
+        1024,
+        680
+      ],
+      "brightness": 174.3,
+      "bytes": 89136,
+      "sha256": "441a7c446bef25b596e2254a439d8d158534e19fa7e852188f9023a447977e02",
+      "transformation": "EXIF normalized; max 2000px width; WebP q86"
+    },
+    {
+      "hotel": "la-reserve",
+      "key": "reserve-sea-entrance",
+      "scene": "La Réserve Ramatuelle minimalist entrance framing a sea view",
+      "sourcePage": "https://www.fourhundred.com/march-2025/blog-post-title-four-7zg3y-34hjs",
+      "credit": "Four Hundred · La Réserve Ramatuelle",
+      "localPath": "/images/travel/saint-tropez-premium/la-reserve/reserve-sea-entrance.webp",
+      "status": "downloaded",
+      "rights": "Project owner says authorised; third-party commercial licence evidence remains to be verified before production",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/6759e39af1e34e5398aebf04/9017a8aa-94db-498c-be4c-14677377a40e/2_Hotel%2Bentrance%2B%282%29.jpg",
+      "inputSize": [
+        2500,
+        1667
+      ],
+      "outputSize": [
+        2000,
+        1334
+      ],
+      "brightness": 165.9,
+      "bytes": 302638,
+      "sha256": "535894631ea65be23f3febe78d8957fbf20663b79c7be98597a0af816ac70f42",
+      "transformation": "EXIF normalized; max 2000px width; WebP q86"
+    },
+    {
+      "hotel": "la-reserve",
+      "key": "reserve-pool-sea",
+      "scene": "La Réserve Ramatuelle outdoor pool overlooking the Mediterranean",
+      "sourcePage": "https://www.the-family-project.com/reiseziele/europa/frankreich/la-reserve-ramatuelle",
+      "credit": "The Family Project · La Réserve Ramatuelle",
+      "localPath": "/images/travel/saint-tropez-premium/la-reserve/reserve-pool-sea.webp",
+      "status": "downloaded",
+      "rights": "Project owner says authorised; third-party commercial licence evidence remains to be verified before production",
+      "downloadUrl": "https://www.the-family-project.com/hs-fs/hubfs/Website/europa/europa-fertig/8-frankreich/la-reserve-ramatuelle/la-reserve-ramatuelle-frankreich-familienluxusreisen-pool%282%29.jpg?name=la-reserve-ramatuelle-frankreich-familienluxusreisen-pool%282%29.jpg&width=1620",
+      "inputSize": [
+        1620,
+        1080
+      ],
+      "outputSize": [
+        1620,
+        1080
+      ],
+      "brightness": 145.0,
+      "bytes": 286092,
+      "sha256": "18e35538e7c85cf1677c005409da21ee524581e30e0d2d16a374f537783dd969",
+      "transformation": "EXIF normalized; max 2000px width; WebP q86"
+    },
+    {
+      "hotel": "la-reserve",
+      "key": "reserve-junior-suite-terrace",
+      "scene": "La Réserve Ramatuelle Deluxe Junior Suite terrace overlooking the Gulf",
+      "sourcePage": "https://www.lareserve-ramatuelle.com/en/accommodation/deluxe-junior-suite-sea-view-with-garden/",
+      "credit": "La Réserve Ramatuelle · galerie officielle",
+      "localPath": "/images/travel/saint-tropez-premium/la-reserve/reserve-junior-suite-terrace.webp",
+      "status": "downloaded",
+      "rights": "Project owner says authorised; third-party commercial licence evidence remains to be verified before production",
+      "downloadUrl": "https://www.lareserve-ramatuelle.com/wp-content/uploads/2020/11/lrr_junior_suite_deluxe_terrasse_03-800x600.jpg",
+      "inputSize": [
+        800,
+        600
+      ],
+      "outputSize": [
+        800,
+        600
+      ],
+      "brightness": 133.6,
+      "bytes": 54086,
+      "sha256": "cb4642127a2ca62a433a24a3f7f6518f2c07e0604a4d9e814c240b19e2af14c8",
+      "transformation": "EXIF normalized; max 2000px width; WebP q86"
+    },
+    {
+      "hotel": "messardiere",
+      "key": "messardiere-estate-aerial",
+      "scene": "Airelles Château de La Messardière hillside estate and French Riviera gardens",
+      "sourcePage": "https://airelles.com/en/destination/chateau-de-la-messardiere-hotel",
+      "credit": "Airelles · Jetlag",
+      "localPath": "/images/travel/saint-tropez-premium/messardiere/messardiere-estate-aerial.webp",
+      "status": "downloaded",
+      "rights": "Project owner says authorised; third-party commercial licence evidence remains to be verified before production",
+      "downloadUrl": "https://assets.airelles.com/images/airelles2023/aNKUyp5xUNkB1BB0_CDM-Vuedrone%C2%A9Jetlag-2.jpg?auto=format%2Ccompress&rect=0%2C80%2C1920%2C1280&w=1920&h=1280",
+      "inputSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1920,
+        1280
+      ],
+      "brightness": 73.7,
+      "bytes": 393450,
+      "sha256": "7608951aedd9dd6b3a662938fc74dfcab147740dbf7cc1e66f5dbe76e697a3ec",
+      "transformation": "EXIF normalized; max 2000px width; WebP q86"
+    },
+    {
+      "hotel": "messardiere",
+      "key": "messardiere-garden-pool",
+      "scene": "Airelles Château de La Messardière sunlit pool above garden terraces",
+      "sourcePage": "https://airelles.com/fr/destination/chateau-de-la-messardiere-hotel/la-plage-acces-prive-saint-tropez",
+      "credit": "Airelles · Marco Arguello",
+      "localPath": "/images/travel/saint-tropez-premium/messardiere/messardiere-garden-pool.webp",
+      "status": "downloaded",
+      "rights": "Project owner says authorised; third-party commercial licence evidence remains to be verified before production",
+      "downloadUrl": "https://assets.airelles.com/images/airelles2023/ch8ggBai77o_RYeC_Moyen-CDM-PiscinevueJardins-%40MarcoArguello.jpg?auto=format%2Ccompress&rect=0%2C235%2C2000%2C1000&w=2000&h=1000",
+      "inputSize": [
+        2000,
+        1000
+      ],
+      "outputSize": [
+        2000,
+        1000
+      ],
+      "brightness": 90.9,
+      "bytes": 597072,
+      "sha256": "0753c42371f9abe6fb67389b5dcb4e9116feed1b5c9fb61844b62dedbfb18c91",
+      "transformation": "EXIF normalized; max 2000px width; WebP q86"
+    },
+    {
+      "hotel": "messardiere",
+      "key": "messardiere-victoire-suite",
+      "scene": "Airelles Château de La Messardière Suite Victoire interiors",
+      "sourcePage": "https://airelles.com/en/destination/chateau-de-la-messardiere-hotel/suites",
+      "credit": "Airelles · Suite Victoire",
+      "localPath": "/images/travel/saint-tropez-premium/messardiere/messardiere-victoire-suite.webp",
+      "status": "downloaded",
+      "rights": "Project owner says authorised; third-party commercial licence evidence remains to be verified before production",
+      "downloadUrl": "https://images.prismic.io/airelles2023/Zeo8TnUurf2G3NBV_CDM-Suite-Victoire.jpg?auto=format%2Ccompress&rect=0%2C32%2C1728%2C907&w=2400&h=1260",
+      "inputSize": [
+        2400,
+        1260
+      ],
+      "outputSize": [
+        2000,
+        1050
+      ],
+      "brightness": 134.3,
+      "bytes": 257862,
+      "sha256": "fccb936973891fd6b482aeb2be6be3be7ba347af0194623e95e62758ee8c0e5a",
+      "transformation": "EXIF normalized; max 2000px width; WebP q86"
+    }
+  ]
+}
