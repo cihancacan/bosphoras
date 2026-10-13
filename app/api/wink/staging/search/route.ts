@@ -5,7 +5,8 @@ export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
 
-type SearchScope = { mode: 'city' | 'country' | 'global'; label: string; geoNameId?: string; countryCode?: string };
+type SearchScope = { mode: 'city' | 'country' | 'global' | 'geo'; label: string; geoNameId?: string; countryCode?: string;
+  point?: { latitude: number; longitude: number }; radiusMeters?: number };
 const scopes: Record<string, SearchScope> = {
   global: { mode: 'global', label: 'Monde entier · sans filtre de ville' },
   'country-TR': { mode: 'country', label: 'Toute la Turquie', countryCode: 'TR' },
@@ -17,6 +18,11 @@ const scopes: Record<string, SearchScope> = {
   'city-dubai': { mode: 'city', label: 'Dubaï', geoNameId: '292223' },
   'city-bangkok': { mode: 'city', label: 'Bangkok', geoNameId: '1609350' },
   'city-phuket': { mode: 'city', label: 'Phuket', geoNameId: '1151254' },
+  'geo-istanbul': { mode: 'geo', label: 'Autour du centre d’Istanbul · 35 km', point: { latitude: 41.0082, longitude: 28.9784 }, radiusMeters: 35000 },
+  'geo-paris': { mode: 'geo', label: 'Autour de Paris · 30 km', point: { latitude: 48.8566, longitude: 2.3522 }, radiusMeters: 30000 },
+  'geo-dubai': { mode: 'geo', label: 'Autour de Dubaï · 40 km', point: { latitude: 25.2048, longitude: 55.2708 }, radiusMeters: 40000 },
+  'geo-bangkok': { mode: 'geo', label: 'Autour de Bangkok · 30 km', point: { latitude: 13.7563, longitude: 100.5018 }, radiusMeters: 30000 },
+  'geo-phuket': { mode: 'geo', label: 'Ouest de Phuket · 40 km', point: { latitude: 7.92, longitude: 98.31 }, radiusMeters: 40000 },
 };
 
 let lastCallAt = 0; // Best-effort safeguard; no automatic calls from page load.
@@ -70,6 +76,7 @@ export async function POST(request: NextRequest) {
   try {
     const result = await searchStagingInventory({
       scope: selectedScope.mode, geoNameId: selectedScope.geoNameId, countryCode: selectedScope.countryCode,
+      point: selectedScope.point, radiusMeters: selectedScope.radiusMeters,
       checkIn, nights: Number(nights), adults: Number(adults),
       rooms: Number(rooms), size: 5,
     });
@@ -88,10 +95,12 @@ export async function POST(request: NextRequest) {
       },
       info: result.totalElements === 0
         ? selectedScope.mode === 'global'
-          ? 'RankGlobal ne renvoie aucun hôtel classé pour cet itinéraire en staging. Cette méthode ne liste pas tout le catalogue et ne prouve pas que les hôtels sont absents.'
+          ? 'RankGlobal ne renvoie aucun hôtel classé : ce classement n’est pas un catalogue mondial exhaustif. Wink indique que le Staging contient peu de données.'
           : selectedScope.mode === 'country'
-            ? 'RankByCountry ne renvoie aucun hôtel classé dans ce pays pour cet itinéraire de test. Vérifie une ville directement avec SearchByCity.'
-            : 'SearchByCity a répondu avec zéro résultat dans cette ville pour ces dates en staging. Les filtres facultatifs sont déjà absents. Il faut confirmer avec Wink quels hôtels sont publiés dans son environnement de démonstration.'
+            ? 'RankByCountry ne renvoie aucun hôtel classé : essaye SearchByCity ou SearchByGeo. Le Staging Wink n’a pas toute la production.'
+            : selectedScope.mode === 'geo'
+              ? 'SearchByGeo a répondu avec zéro propriété dans ce rayon pour cet itinéraire : la ville GeoNames n’est donc pas le seul obstacle. Le Staging peut ne contenir aucun inventaire disponible dans cette zone.'
+              : 'SearchByCity a répondu avec zéro résultat. Les filtres facultatifs sont absents ; teste la recherche géographique du même lieu pour comparer, puis demande à Wink de peupler son Staging.'
         : 'Données de test Wink staging : aucune disponibilité ou possibilité de réservation en production n’est garantie.',
     }, { headers: responseHeaders });
   } catch (error) {
