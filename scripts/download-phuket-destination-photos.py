@@ -16,7 +16,9 @@ PHOTOS=[
 ("phuket-nai-harn-sunset","Sunset at Nai Harn beach, Phuket, Thailand 05.jpg","Phuket@photographer.net","CC BY 2.0","https://creativecommons.org/licenses/by/2.0/","Lumière chaude du coucher de soleil sur Nai Harn Beach","Warm sunset light at Nai Harn beach"),
 ("phuket-old-town","Phuket Old Town 1.jpg","Ryomaandres","CC BY-SA 4.0","https://creativecommons.org/licenses/by-sa/4.0/","Façades historiques sino-portugaises de Phuket Old Town","Sino-Portuguese facades in Phuket Old Town"),
 ("phuket-promthep-cape","Promthep Cape Phuket.jpg","Christophe95","CC BY-SA 4.0","https://creativecommons.org/licenses/by-sa/4.0/","Promthep Cape, les falaises et la mer d’Andaman","Promthep Cape cliffs and the Andaman Sea"),
-("phuket-kata-alt","Phuket - Kata Beach 001.jpg","ADwarf","Public domain","https://creativecommons.org/publicdomain/mark/1.0/","Kata Beach et son littoral tropical","Kata Beach and Phuket tropical coast")
+("phuket-kata-alt","Phuket - Kata Beach 001.jpg","ADwarf","Public domain","https://creativecommons.org/publicdomain/mark/1.0/","Kata Beach et son littoral tropical","Kata Beach and Phuket tropical coast"),
+("phuket-bang-tao-beach","Bang Tao Beach (53668069638).jpg","Raita Futo","CC BY 2.0","https://creativecommons.org/licenses/by/2.0/","La plage de Bang Tao sur la côte nord-ouest de Phuket","Bang Tao Beach along Phuket's northwest shoreline"),
+("phuket-patong-beach","Patong Beach in Phuket.jpg","Ewong17","CC BY-SA 4.0","https://creativecommons.org/licenses/by-sa/4.0/","La plage de Patong et le front de mer à Phuket","Patong Beach on Phuket's western coastline")
 ]
 ROOT=Path("public/images/travel/phuket-premium/destination")
 REPORT=Path("data/travel/phuketDestinationImageSources.json")
