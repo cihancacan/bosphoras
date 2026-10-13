@@ -1,0 +1,264 @@
+{
+  "scope": "Bali four resort-specific gallery sources only; no city images; preview branch",
+  "updatedAt": "2026-10-13T00:55:00.317907+00:00",
+  "expected": 12,
+  "downloaded": 10,
+  "items": [
+    {
+      "hotel": "sayan",
+      "key": "sayan-rooftop-lotus",
+      "scene": "Four Seasons Sayan iconic lotus pond rooftop surrounded by rainforest",
+      "sourcePage": "https://www.sophibee.com/travel/bali-family-vacation-ubud/",
+      "credit": "SophiBee · Four Seasons Sayan",
+      "localPath": "/images/travel/bali-premium/sayan/sayan-rooftop-lotus.webp",
+      "status": "failed",
+      "commercialRights": "User says permission granted; third-party licence documentary proof unverified (PREVIEW only)",
+      "errors": [
+        "415 Client Error: Unsupported Media Type for url: https://www.sophibee.com/wp-content/uploads/2023/12/Ubud-Bali-Family-Vacation-at-Four-Seasons-Sayan-Resort-Overview.jpg"
+      ]
+    },
+    {
+      "hotel": "sayan",
+      "key": "sayan-riverfront-villa",
+      "scene": "Four Seasons Sayan Riverfront Villa entrance and tropical setting",
+      "sourcePage": "https://www.uniqhotels.com/four-seasons-resort-bali-at-sayan/",
+      "credit": "UNIQ Hotels · Four Seasons Sayan",
+      "localPath": "/images/travel/bali-premium/sayan/sayan-riverfront-villa.webp",
+      "status": "downloaded",
+      "commercialRights": "User says permission granted; third-party licence documentary proof unverified (PREVIEW only)",
+      "downloadUrl": "https://www.uniqhotels.com/media/hotels/cd/12._riverfront_villa_-_top_entrance_view.jpg",
+      "sourceSize": [
+        2000,
+        1288
+      ],
+      "outputSize": [
+        1900,
+        1224
+      ],
+      "brightness": 97.3,
+      "bytes": 899126,
+      "sha256": "2d05d7cd5ea77fdc5587b5c86f88c9d1c99989e77fdf4bb7439e7412cd2e607f",
+      "edit": "EXIF orientation normalized, resized up to 1900 px, WebP q86"
+    },
+    {
+      "hotel": "sayan",
+      "key": "sayan-spa-villa",
+      "scene": "Four Seasons Sayan private spa villa surrounded by lotus ponds",
+      "sourcePage": "https://www.spafinder.com/blog/spa-travel/aerial-yoga-exotic-retreats/",
+      "credit": "Spafinder · Four Seasons Sayan",
+      "localPath": "/images/travel/bali-premium/sayan/sayan-spa-villa.webp",
+      "status": "downloaded",
+      "commercialRights": "User says permission granted; third-party licence documentary proof unverified (PREVIEW only)",
+      "downloadUrl": "https://cdn.spafinder.com/2016/09/Four-Seasons-Sayan-Bali-spa-villa-.jpg",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "brightness": 76.2,
+      "bytes": 322526,
+      "sha256": "7402dfe4d85fe7724c61e47e7dbe4faa32313c77a1208650493686bc762cd825",
+      "edit": "EXIF orientation normalized, resized up to 1900 px, WebP q86"
+    },
+    {
+      "hotel": "bvlgari",
+      "key": "bvlgari-cliff-pool",
+      "scene": "Bvlgari Resort Bali clifftop pool estate above Indian Ocean",
+      "sourcePage": "https://harpersbazaar.co.id/articles/read/4/2025/22066/bvlgari-resort-bali-masuk-dalam-daftar-prestisius-50-best-discovery",
+      "credit": "Harper's Bazaar Indonesia · Bvlgari Resort Bali",
+      "localPath": "/images/travel/bali-premium/bvlgari/bvlgari-cliff-pool.webp",
+      "status": "downloaded",
+      "commercialRights": "User says permission granted; third-party licence documentary proof unverified (PREVIEW only)",
+      "downloadUrl": "https://images.harpersbazaar.co.id/unsafe/0x0/smart/media/body_0bdb93d8b889452a9bb513c6c23424dc.jpg",
+      "sourceSize": [
+        2527,
+        1962
+      ],
+      "outputSize": [
+        1868,
+        1450
+      ],
+      "brightness": 115.5,
+      "bytes": 624350,
+      "sha256": "828f2a0733face9bb292d5c8b87df7dcc0067e08508d16562c3046ceae3c6e73",
+      "edit": "EXIF orientation normalized, resized up to 1900 px, WebP q86"
+    },
+    {
+      "hotel": "bvlgari",
+      "key": "bvlgari-cliff-villa",
+      "scene": "Bvlgari Bali two-bedroom ocean cliff villa with private pool",
+      "sourcePage": "https://www.travelplusstyle.com/hotels/bulgari-resort-bali",
+      "credit": "TravelPlusStyle · Bvlgari two-bedroom villa",
+      "localPath": "/images/travel/bali-premium/bvlgari/bvlgari-cliff-villa.webp",
+      "status": "downloaded",
+      "commercialRights": "User says permission granted; third-party licence documentary proof unverified (PREVIEW only)",
+      "downloadUrl": "https://www.travelplusstyle.com/wp-content/gallery/bulgari-bali/two-bedroom-villa-cliff.jpg",
+      "sourceSize": [
+        1880,
+        1208
+      ],
+      "outputSize": [
+        1880,
+        1208
+      ],
+      "brightness": 86.4,
+      "bytes": 289868,
+      "sha256": "5313dfe4ba9b7af05ac00538af5e0aa6a6a86932b949f19f2a65210ef50e3325",
+      "edit": "EXIF orientation normalized, resized up to 1900 px, WebP q86"
+    },
+    {
+      "hotel": "bvlgari",
+      "key": "bvlgari-ocean-suite",
+      "scene": "Bvlgari Resort Bali One Bedroom Ocean Cliff Villa bedroom",
+      "sourcePage": "https://www.tatlerasia.com/lifestyle/travel/20-hotel-terbaik-tatler-best-indonesia-2026-hi",
+      "credit": "Tatler Asia · Bvlgari Ocean Cliff Villa",
+      "localPath": "/images/travel/bali-premium/bvlgari/bvlgari-ocean-suite.webp",
+      "status": "downloaded",
+      "commercialRights": "User says permission granted; third-party licence documentary proof unverified (PREVIEW only)",
+      "downloadUrl": "https://cdn.tatlerasia.com/tatlerasia/i/2026/04/05101921-one-bedroom-ocean-cliff-villa-2_cover_1600x1067.jpg",
+      "sourceSize": [
+        1600,
+        1067
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "brightness": 86.7,
+      "bytes": 236584,
+      "sha256": "c6a2bb902b4daf60dea953c88e74410ad5a6cba9b2aa30c587ff873e7fd253a7",
+      "edit": "EXIF orientation normalized, resized up to 1900 px, WebP q86"
+    },
+    {
+      "hotel": "raffles",
+      "key": "raffles-ocean-estate",
+      "scene": "Raffles Bali secluded coastal estate looking out to Jimbaran Bay",
+      "sourcePage": "https://www.raffles.com/bali/",
+      "credit": "Raffles Bali · official image, Accor",
+      "localPath": "/images/travel/bali-premium/raffles/raffles-ocean-estate.webp",
+      "status": "downloaded",
+      "commercialRights": "User says permission granted; third-party licence documentary proof unverified (PREVIEW only)",
+      "downloadUrl": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-66?wid=1920",
+      "sourceSize": [
+        1920,
+        1282
+      ],
+      "outputSize": [
+        1900,
+        1269
+      ],
+      "brightness": 147.2,
+      "bytes": 420168,
+      "sha256": "d079235737d7c3ba78dde769346ad4930f937803a785b6ec6e3b3eb943686d7f",
+      "edit": "EXIF orientation normalized, resized up to 1900 px, WebP q86"
+    },
+    {
+      "hotel": "raffles",
+      "key": "raffles-panoramic-pool-villa",
+      "scene": "Raffles Bali Panoramic One Bedroom Pool Villa private plunge pool",
+      "sourcePage": "https://www.raffles.com/bali/private-villas/vca/",
+      "credit": "Raffles Bali · Panoramic One Bedroom Pool Villa",
+      "localPath": "/images/travel/bali-premium/raffles/raffles-panoramic-pool-villa.webp",
+      "status": "downloaded",
+      "commercialRights": "User says permission granted; third-party licence documentary proof unverified (PREVIEW only)",
+      "downloadUrl": "https://www.ahstatic.com/photos/b695_rovca_00_p_1024x768.jpg",
+      "sourceSize": [
+        1024,
+        768
+      ],
+      "outputSize": [
+        1024,
+        768
+      ],
+      "brightness": 123.8,
+      "bytes": 98778,
+      "sha256": "59351e8d35cf056ff13a8135f80ee222821275635b20099c95ee2dcd8dd2d22b",
+      "edit": "EXIF orientation normalized, resized up to 1900 px, WebP q86"
+    },
+    {
+      "hotel": "raffles",
+      "key": "raffles-villa-interior",
+      "scene": "Raffles Bali Panoramic One Bedroom Pool Villa interior",
+      "sourcePage": "https://www.raffles.com/bali/private-villas/vca/",
+      "credit": "Raffles Bali · same Panoramic One Bedroom Pool Villa",
+      "localPath": "/images/travel/bali-premium/raffles/raffles-villa-interior.webp",
+      "status": "downloaded",
+      "commercialRights": "User says permission granted; third-party licence documentary proof unverified (PREVIEW only)",
+      "downloadUrl": "https://www.ahstatic.com/photos/b695_rovca_02_p_1024x768.jpg",
+      "sourceSize": [
+        1024,
+        768
+      ],
+      "outputSize": [
+        1024,
+        768
+      ],
+      "brightness": 116.6,
+      "bytes": 118786,
+      "sha256": "06355b3dc046dc7ab292618c18934a9ff9006b548b06dd6cc76a50b8788999bc",
+      "edit": "EXIF orientation normalized, resized up to 1900 px, WebP q86"
+    },
+    {
+      "hotel": "legian",
+      "key": "legian-infinity-pool",
+      "scene": "The Legian Seminyak oceanfront three-tier infinity pool and palm-lined coastline",
+      "sourcePage": "https://www.myboutiquehotel.com/en/boutique-hotels-seminyak/the-legian-bali.html",
+      "credit": "MyBoutiqueHotel · The Legian Seminyak",
+      "localPath": "/images/travel/bali-premium/legian/legian-infinity-pool.webp",
+      "status": "downloaded",
+      "commercialRights": "User says permission granted; third-party licence documentary proof unverified (PREVIEW only)",
+      "downloadUrl": "https://www.myboutiquehotel.com/photos/5761/the-legian-bali-seminyak-001-01916-900x570.jpg",
+      "sourceSize": [
+        856,
+        570
+      ],
+      "outputSize": [
+        856,
+        570
+      ],
+      "brightness": 137.6,
+      "bytes": 95874,
+      "sha256": "c7e8afc56195a3697cdb05423591b47d1aa6203034dd30501c1c0f47633a24af",
+      "edit": "EXIF orientation normalized, resized up to 1900 px, WebP q86"
+    },
+    {
+      "hotel": "legian",
+      "key": "legian-resort-terrace",
+      "scene": "The Legian Seminyak resort Tunjung terrace",
+      "sourcePage": "https://lhm-hotels.com/legian-seminyak/",
+      "credit": "LHM Hotels · The Legian Seminyak",
+      "localPath": "/images/travel/bali-premium/legian/legian-resort-terrace.webp",
+      "status": "failed",
+      "commercialRights": "User says permission granted; third-party licence documentary proof unverified (PREVIEW only)",
+      "errors": [
+        "Unsuitable photo (945, 1181)"
+      ]
+    },
+    {
+      "hotel": "legian",
+      "key": "legian-ocean-balcony",
+      "scene": "The Legian Seminyak ocean-view hotel balcony overlooking infinity pool",
+      "sourcePage": "https://www.booking.com/hotel/id/the-legian-bali.html",
+      "credit": "Booking.com · The Legian Seminyak guestroom",
+      "localPath": "/images/travel/bali-premium/legian/legian-ocean-balcony.webp",
+      "status": "downloaded",
+      "commercialRights": "User says permission granted; third-party licence documentary proof unverified (PREVIEW only)",
+      "downloadUrl": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/225367043.jpg?k=dd1c46419b5be222bcb50f54f0665f7d2ffe8f18c4ce9cdb7aeaf22041cd7102&o=",
+      "sourceSize": [
+        1024,
+        767
+      ],
+      "outputSize": [
+        1024,
+        767
+      ],
+      "brightness": 104.3,
+      "bytes": 100758,
+      "sha256": "ea90d1bc9d8ce0345b48b0f9ada828b810eab4ad7a6b83f939629089c6a2ea67",
+      "edit": "EXIF orientation normalized, resized up to 1900 px, WebP q86"
+    }
+  ]
+}
