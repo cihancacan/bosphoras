@@ -1,0 +1,152 @@
+{
+  "scope": "Saint-Tropez authentic destination imagery, no hotel depiction",
+  "createdAt": "2026-10-13T00:21:44.109038+00:00",
+  "expected": 6,
+  "downloaded": 6,
+  "items": [
+    {
+      "key": "saint-tropez-harbour-hero",
+      "sourceFile": "Aerial view of the old town and the old port of Saint-Tropez, France (52724205855).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_old_town_and_the_old_port_of_Saint-Tropez,_France_(52724205855).jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "fr": "La vieille ville et le port de Saint-Tropez au-dessus de la Méditerranée",
+      "en": "The old town and harbour of Saint-Tropez above the Mediterranean",
+      "status": "downloaded",
+      "localPath": "/images/travel/saint-tropez-premium/destination/saint-tropez-harbour-hero.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Aerial_view_of_the_old_town_and_the_old_port_of_Saint-Tropez%2C_France_%2852724205855%29.jpg/1920px-Aerial_view_of_the_old_town_and_the_old_port_of_Saint-Tropez%2C_France_%2852724205855%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceSize": [
+        1920,
+        1279
+      ],
+      "outputSize": [
+        1920,
+        1279
+      ],
+      "bytes": 954450,
+      "sha256": "c737c86975a202631e1023aaf62d0e86dc098933f3ec277b514adc3c6566b593",
+      "transformation": "EXIF orientation normalized, max 2000 px width, WebP quality 86"
+    },
+    {
+      "key": "saint-tropez-yachts-bay",
+      "sourceFile": "Aerial view of yachts near Saint-Tropez, France (52723269222).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_yachts_near_Saint-Tropez,_France_(52723269222).jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "fr": "Yachts mouillant près de Saint-Tropez, sur la Méditerranée azur",
+      "en": "Yachts anchored in Mediterranean blue water near Saint-Tropez",
+      "status": "downloaded",
+      "localPath": "/images/travel/saint-tropez-premium/destination/saint-tropez-yachts-bay.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Aerial_view_of_yachts_near_Saint-Tropez%2C_France_%2852723269222%29.jpg/1920px-Aerial_view_of_yachts_near_Saint-Tropez%2C_France_%2852723269222%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceSize": [
+        1920,
+        1279
+      ],
+      "outputSize": [
+        1920,
+        1279
+      ],
+      "bytes": 801416,
+      "sha256": "e0f209fd844188dd5b25f8902de18780c10cd8c44d5eec0a1b22aff68d3fee60",
+      "transformation": "EXIF orientation normalized, max 2000 px width, WebP quality 86"
+    },
+    {
+      "key": "saint-tropez-old-port",
+      "sourceFile": "Vieux port de pêche The old port of Saint-Tropez, France (52723272042).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Vieux_port_de_pêche_The_old_port_of_Saint-Tropez,_France_(52723272042).jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "fr": "Le Vieux-Port de pêche et les maisons colorées de Saint-Tropez",
+      "en": "Historic fishing harbour and colourful Saint-Tropez waterfront houses",
+      "status": "downloaded",
+      "localPath": "/images/travel/saint-tropez-premium/destination/saint-tropez-old-port.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Vieux_port_de_p%C3%AAche_The_old_port_of_Saint-Tropez%2C_France_%2852723272042%29.jpg/1920px-Vieux_port_de_p%C3%AAche_The_old_port_of_Saint-Tropez%2C_France_%2852723272042%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceSize": [
+        1920,
+        1279
+      ],
+      "outputSize": [
+        1920,
+        1279
+      ],
+      "bytes": 963314,
+      "sha256": "95aab55e453bf730996ef852c49523d5dae718c0fd83427ed3b66b2746e811fa",
+      "transformation": "EXIF orientation normalized, max 2000 px width, WebP quality 86"
+    },
+    {
+      "key": "saint-tropez-pampelonne",
+      "sourceFile": "Aerial view of Pampelonne Beach, Saint-Tropez, France (52723263302).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Pampelonne_Beach,_Saint-Tropez,_France_(52723263302).jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "fr": "La plage de Pampelonne et ses eaux claires sur la commune de Ramatuelle",
+      "en": "Sunny Pampelonne beach and the Mediterranean in Ramatuelle",
+      "status": "downloaded",
+      "localPath": "/images/travel/saint-tropez-premium/destination/saint-tropez-pampelonne.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Aerial_view_of_Pampelonne_Beach%2C_Saint-Tropez%2C_France_%2852723263302%29.jpg/1920px-Aerial_view_of_Pampelonne_Beach%2C_Saint-Tropez%2C_France_%2852723263302%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceSize": [
+        1920,
+        1279
+      ],
+      "outputSize": [
+        1920,
+        1279
+      ],
+      "bytes": 417520,
+      "sha256": "258ffd2a27f1cabc30b1d473eab6c2224a243815f1c5b4edc6ea12c71d00d06a",
+      "transformation": "EXIF orientation normalized, max 2000 px width, WebP quality 86"
+    },
+    {
+      "key": "saint-tropez-coast-vineyards",
+      "sourceFile": "Aerial view of vineyards in Pampelonne, Saint-Tropez, France (52724264298).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_vineyards_in_Pampelonne,_Saint-Tropez,_France_(52724264298).jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "fr": "Vignobles de Ramatuelle et paysages près de Pampelonne",
+      "en": "Vineyards and Mediterranean coast landscape near Pampelonne",
+      "status": "downloaded",
+      "localPath": "/images/travel/saint-tropez-premium/destination/saint-tropez-coast-vineyards.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Aerial_view_of_vineyards_in_Pampelonne%2C_Saint-Tropez%2C_France_%2852724264298%29.jpg/1920px-Aerial_view_of_vineyards_in_Pampelonne%2C_Saint-Tropez%2C_France_%2852724264298%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceSize": [
+        1920,
+        1279
+      ],
+      "outputSize": [
+        1920,
+        1279
+      ],
+      "bytes": 830922,
+      "sha256": "bbc276236b948c8a7ac699ccd222c02860da3f39056d145a66a855606664b324",
+      "transformation": "EXIF orientation normalized, max 2000 px width, WebP quality 86"
+    },
+    {
+      "key": "saint-tropez-pampelonne-bay",
+      "sourceFile": "Aerial view of the Bay of Pampelonne, Saint-Tropez, France (52724196595).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Bay_of_Pampelonne,_Saint-Tropez,_France_(52724196595).jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "fr": "La baie de Pampelonne vue du ciel, ses plages et sa mer turquoise",
+      "en": "Aerial Pampelonne bay, soft sandy coastline and turquoise sea",
+      "status": "downloaded",
+      "localPath": "/images/travel/saint-tropez-premium/destination/saint-tropez-pampelonne-bay.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Aerial_view_of_the_Bay_of_Pampelonne%2C_Saint-Tropez%2C_France_%2852724196595%29.jpg/1920px-Aerial_view_of_the_Bay_of_Pampelonne%2C_Saint-Tropez%2C_France_%2852724196595%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceSize": [
+        1920,
+        1279
+      ],
+      "outputSize": [
+        1920,
+        1279
+      ],
+      "bytes": 592192,
+      "sha256": "955abe38620c122d997eb95192c9e1d51ab7d3f1f5f90faca075257cca3415f9",
+      "transformation": "EXIF orientation normalized, max 2000 px width, WebP quality 86"
+    }
+  ]
+}
