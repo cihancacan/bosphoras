@@ -7,6 +7,7 @@
 const path = require('node:path');
 const grpc = require('@grpc/grpc-js');
 const protoLoader = require('@grpc/proto-loader');
+const tls = require('node:tls');
 
 function safeLog(event) { console.log('[wink-safe-preview-smoke] ' + JSON.stringify(event)); }
 const requiredBranch='feature/luxury-travel-seo-destinations-20261012';
@@ -37,6 +38,20 @@ async function check(){
  const token=(await res.json()).access_token;
  if(!token){safeLog({status:'failed',stage,reason:'no-token-returned'});return;}
  safeLog({status:'passed',stage});
+ stage='tls-h2-connectivity';
+ const tlsResult=await new Promise(resolve=>{
+   let finished=false;
+   const socket=tls.connect({
+      host:'staging-partner.wink.travel',port:443,servername:'staging-partner.wink.travel',
+      ALPNProtocols:['h2','http/1.1'],timeout:11000,rejectUnauthorized:true
+   });
+   const finish=(value)=>{if(finished)return;finished=true;socket.destroy();resolve(value)};
+   socket.once('secureConnect',()=>finish({status:'passed',alpn:socket.alpnProtocol||'none',authorized:socket.authorized}));
+   socket.once('error',()=>finish({status:'failed',reason:'tls-connect-error'}));
+   socket.once('timeout',()=>finish({status:'failed',reason:'tls-connect-timeout'}));
+ });
+ safeLog({stage,...tlsResult});
+ if(tlsResult.status!=='passed')return;
  const protoRoot=path.join(process.cwd(),'lib','wink-proto');
  stage='proto-schema';
  const defs=protoLoader.loadSync([
@@ -48,6 +63,17 @@ async function check(){
  stage='list-accounts';
  const accountsClient=new p.Accounts('staging-partner.wink.travel:443',grpc.credentials.createSsl());
  let accountsResponse;
+ stage='grpc-channel-ready';
+ let channelReady=true;
+ try{
+   await new Promise((resolve,reject)=>accountsClient.waitForReady(Date.now()+14500,err=>err?reject(err):resolve()));
+   safeLog({status:'passed',stage});
+ }catch(err){
+   channelReady=false;
+   safeLog({status:'failed',stage,reason:'grpc-not-ready'});
+ }
+ if(!channelReady){accountsClient.close();return;}
+ stage='list-accounts';
  try{accountsResponse=await unary(accountsClient,['listAccounts','ListAccounts'],{},headers);}
  finally{accountsClient.close();}
  const accounts=Array.isArray(accountsResponse.accounts)?accountsResponse.accounts:[];
