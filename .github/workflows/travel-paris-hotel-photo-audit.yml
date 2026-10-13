@@ -1,0 +1,35 @@
+name: Travel Paris — inspect official hotel photos
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - scripts/audit-paris-official-hotel-images.py
+      - .github/workflows/travel-paris-hotel-photo-audit.yml
+permissions:
+  contents: write
+jobs:
+  hotel-media-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check 'requests>=2.31,<3' 'beautifulsoup4>=4.12,<5'
+      - run: python scripts/audit-paris-official-hotel-images.py
+      - name: Save reviewed source references to Travel branch
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [ -f data/travel/parisHotelImageCandidates.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/travel/parisHotelImageCandidates.json
+            if ! git diff --cached --quiet; then
+              git commit -m "chore(travel): document official Paris luxury hotel media candidates [skip ci]"
+              git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+              git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+            fi
+          fi
