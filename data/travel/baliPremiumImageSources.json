@@ -1,21 +1,31 @@
 {
   "scope": "Bali four resort-specific gallery sources only; no city images; preview branch",
-  "updatedAt": "2026-10-13T00:55:00.317907+00:00",
+  "updatedAt": "2026-10-13T00:56:14.264581+00:00",
   "expected": 12,
-  "downloaded": 10,
+  "downloaded": 12,
   "items": [
     {
       "hotel": "sayan",
       "key": "sayan-rooftop-lotus",
       "scene": "Four Seasons Sayan iconic lotus pond rooftop surrounded by rainforest",
-      "sourcePage": "https://www.sophibee.com/travel/bali-family-vacation-ubud/",
-      "credit": "SophiBee · Four Seasons Sayan",
+      "sourcePage": "https://theluxurytravelexpert.com/review-four-seasons-sayan-ubud-bali/",
+      "credit": "The Luxury Travel Expert · Four Seasons Sayan",
       "localPath": "/images/travel/bali-premium/sayan/sayan-rooftop-lotus.webp",
-      "status": "failed",
+      "status": "downloaded",
       "commercialRights": "User says permission granted; third-party licence documentary proof unverified (PREVIEW only)",
-      "errors": [
-        "415 Client Error: Unsupported Media Type for url: https://www.sophibee.com/wp-content/uploads/2023/12/Ubud-Bali-Family-Vacation-at-Four-Seasons-Sayan-Resort-Overview.jpg"
-      ]
+      "downloadUrl": "https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2018/10/FS-SAYAN-HEADER.jpg?fit=1280%2C720&ssl=1",
+      "sourceSize": [
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "brightness": 84.8,
+      "bytes": 303698,
+      "sha256": "fa7514315e991c23032caa3f7c8d5cd5b36b98c33c3904a9503d2401b6daeb54",
+      "edit": "EXIF orientation normalized, resized up to 1900 px, WebP q86"
     },
     {
       "hotel": "sayan",
@@ -128,8 +138,8 @@
         1067
       ],
       "brightness": 86.7,
-      "bytes": 236584,
-      "sha256": "c6a2bb902b4daf60dea953c88e74410ad5a6cba9b2aa30c587ff873e7fd253a7",
+      "bytes": 229490,
+      "sha256": "ae6f0d29d466bde33a00602f3ba5fccd381b6612bb63b57226b1b85447c5da8d",
       "edit": "EXIF orientation normalized, resized up to 1900 px, WebP q86"
     },
     {
@@ -228,14 +238,24 @@
       "hotel": "legian",
       "key": "legian-resort-terrace",
       "scene": "The Legian Seminyak resort Tunjung terrace",
-      "sourcePage": "https://lhm-hotels.com/legian-seminyak/",
-      "credit": "LHM Hotels · The Legian Seminyak",
+      "sourcePage": "https://www.luxurylink.com/5star/hotels/bali-indonesia/legian-bali",
+      "credit": "LuxuryLink · The Legian Seminyak",
       "localPath": "/images/travel/bali-premium/legian/legian-resort-terrace.webp",
-      "status": "failed",
+      "status": "downloaded",
       "commercialRights": "User says permission granted; third-party licence documentary proof unverified (PREVIEW only)",
-      "errors": [
-        "Unsuitable photo (945, 1181)"
-      ]
+      "downloadUrl": "https://www.luxurylink.com/images/sho_549cd0e5/10127_36-2048/Exterior%2Bview.jpg?filtered=1",
+      "sourceSize": [
+        2048,
+        1073
+      ],
+      "outputSize": [
+        1900,
+        995
+      ],
+      "brightness": 127.9,
+      "bytes": 336218,
+      "sha256": "b47c1c5150b1447b36d7c73b8b4531489954c54f2539ad048cd70732e122d4b6",
+      "edit": "EXIF orientation normalized, resized up to 1900 px, WebP q86"
     },
     {
       "hotel": "legian",
