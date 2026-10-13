@@ -1,0 +1,152 @@
+{
+  "scope": "Six geolocated Bali landscape photos, not accommodation images",
+  "createdAt": "2026-10-13T00:53:11.522393+00:00",
+  "downloaded": 6,
+  "expected": 6,
+  "items": [
+    {
+      "key": "bali-uluwatu-ocean-hero",
+      "sourceFile": "Uluwatu Cliffs, Bali.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Uluwatu_Cliffs,_Bali.jpg",
+      "author": "Tiya20",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "fr": "Les falaises d’Uluwatu et l’océan Indien, Bali",
+      "en": "Uluwatu limestone cliffs overlooking the blue Indian Ocean",
+      "localPath": "/images/travel/bali-premium/destination/bali-uluwatu-ocean-hero.webp",
+      "status": "downloaded",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Uluwatu_Cliffs%2C_Bali.jpg/1920px-Uluwatu_Cliffs%2C_Bali.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "bytes": 411568,
+      "sha256": "25fed59788b6bbdd76e235c86dba41eadae3852ea43b3f284e03c1186e8d1089",
+      "edit": "Resized to max 2000 px, normalized EXIF orientation, converted to WebP q87"
+    },
+    {
+      "key": "bali-ubud-tegallalang",
+      "sourceFile": "Tegallalang Rice Terraces Bali.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tegallalang_Rice_Terraces_Bali.jpg",
+      "author": "Philip Nalangan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "fr": "Les rizières en terrasses de Tegallalang près d’Ubud",
+      "en": "Lush Tegallalang rice terraces in the Ubud countryside",
+      "localPath": "/images/travel/bali-premium/destination/bali-ubud-tegallalang.webp",
+      "status": "downloaded",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Tegallalang_Rice_Terraces_Bali.jpg/1920px-Tegallalang_Rice_Terraces_Bali.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1277
+      ],
+      "outputSize": [
+        1920,
+        1277
+      ],
+      "bytes": 1088944,
+      "sha256": "0202ec906606bf03a4d81ac97d19bd56a007d47f5cc4e05ede6db5db969ad196",
+      "edit": "Resized to max 2000 px, normalized EXIF orientation, converted to WebP q87"
+    },
+    {
+      "key": "bali-jimbaran-sunset",
+      "sourceFile": "Jimbaran beach at sunset.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Jimbaran_beach_at_sunset.jpg",
+      "author": "Akmaie Ajam",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "fr": "La plage de Jimbaran au coucher du soleil",
+      "en": "Sunset at Jimbaran beach with seaside restaurants",
+      "localPath": "/images/travel/bali-premium/destination/bali-jimbaran-sunset.webp",
+      "status": "downloaded",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Jimbaran_beach_at_sunset.jpg/1920px-Jimbaran_beach_at_sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1867,
+        1400
+      ],
+      "bytes": 361056,
+      "sha256": "efd9944ebaa994aeed154b391fa0f93579be8c7c623bfeb51d9c6c2c915a747f",
+      "edit": "Resized to max 2000 px, normalized EXIF orientation, converted to WebP q87"
+    },
+    {
+      "key": "bali-seminyak-sunset",
+      "sourceFile": "Seminyak Beach at sunset.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Seminyak_Beach_at_sunset.jpg",
+      "author": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "fr": "Plage de Seminyak dans la lumière du coucher du soleil",
+      "en": "Seminyak beach in warm sunset light",
+      "localPath": "/images/travel/bali-premium/destination/bali-seminyak-sunset.webp",
+      "status": "downloaded",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Seminyak_Beach_at_sunset.jpg/1920px-Seminyak_Beach_at_sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1867,
+        1400
+      ],
+      "bytes": 305440,
+      "sha256": "e239d5b2f42f74225741397ff2f6ba47f64d41a5f6464067299cbb2369428ed7",
+      "edit": "Resized to max 2000 px, normalized EXIF orientation, converted to WebP q87"
+    },
+    {
+      "key": "bali-padang-padang",
+      "sourceFile": "Padang Padang Beach.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Padang_Padang_Beach.jpg",
+      "author": "TMFalkner",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "fr": "La crique et la plage de Padang Padang dans le sud de Bali",
+      "en": "Padang Padang beach cove on Bali's south coast",
+      "localPath": "/images/travel/bali-premium/destination/bali-padang-padang.webp",
+      "status": "downloaded",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Padang_Padang_Beach.jpg/1920px-Padang_Padang_Beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1867,
+        1400
+      ],
+      "bytes": 552808,
+      "sha256": "8a89b3ea6460b77c94981bdc15aaf3151d20607867b51f93e73ee3e8c097a3d2",
+      "edit": "Resized to max 2000 px, normalized EXIF orientation, converted to WebP q87"
+    },
+    {
+      "key": "bali-tegallalang-secondary",
+      "sourceFile": "Tegalalang Rice Terraces.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tegalalang_Rice_Terraces.jpg",
+      "author": "Freddy eduardo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "fr": "Autre perspective sur les rizières de Tegallalang près d’Ubud",
+      "en": "Another landscape view of Tegallalang's stepped green rice paddies",
+      "localPath": "/images/travel/bali-premium/destination/bali-tegallalang-secondary.webp",
+      "status": "downloaded",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Tegalalang_Rice_Terraces.jpg/1920px-Tegalalang_Rice_Terraces.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1446
+      ],
+      "outputSize": [
+        1859,
+        1400
+      ],
+      "bytes": 1298696,
+      "sha256": "31716980eda6c263ce8b2a93558ab78a737d432a08b8958c969aaec2b87f7439",
+      "edit": "Resized to max 2000 px, normalized EXIF orientation, converted to WebP q87"
+    }
+  ]
+}
