@@ -112,8 +112,8 @@ export type WinkStagingQuery = {
 };
 
 export async function searchStagingInventory(query: WinkStagingQuery) {
-  if (!/^\\d{3,12}$/.test(query.geoNameId)) throw new WinkStagingError('search');
-  if (!/^\\d{4}-\\d{2}-\\d{2}$/.test(query.checkIn)) throw new WinkStagingError('search');
+  if (!/^\d{3,12}$/.test(query.geoNameId)) throw new WinkStagingError('search');
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(query.checkIn)) throw new WinkStagingError('search');
   if (!(query.nights >= 1 && query.nights <= 14 && query.adults >= 1 && query.adults <= 4 && query.rooms >= 1 && query.rooms <= 2)) throw new WinkStagingError('search');
   const token = await atStage('token', getAccessToken);
   const auth = new grpc.Metadata();
