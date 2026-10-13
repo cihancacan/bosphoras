@@ -103,7 +103,9 @@ function futureDate(days = 30) {
 }
 
 export type WinkStagingQuery = {
-  geoNameId: string;
+  scope: 'city' | 'country' | 'global';
+  geoNameId?: string;
+  countryCode?: string;
   checkIn: string;
   nights: number;
   adults: number;
@@ -112,7 +114,9 @@ export type WinkStagingQuery = {
 };
 
 export async function searchStagingInventory(query: WinkStagingQuery) {
-  if (!/^\d{3,12}$/.test(query.geoNameId)) throw new WinkStagingError('search');
+  if (query.scope === 'city' && !/^\d{3,12}$/.test(query.geoNameId ?? '')) throw new WinkStagingError('search');
+  if (query.scope === 'country' && !/^[A-Z]{2}$/.test(query.countryCode ?? '')) throw new WinkStagingError('search');
+  if (!['city', 'country', 'global'].includes(query.scope)) throw new WinkStagingError('search');
   if (!/^\d{4}-\d{2}-\d{2}$/.test(query.checkIn)) throw new WinkStagingError('search');
   if (!(query.nights >= 1 && query.nights <= 14 && query.adults >= 1 && query.adults <= 4 && query.rooms >= 1 && query.rooms <= 2)) throw new WinkStagingError('search');
   const token = await atStage('token', getAccessToken);
@@ -136,18 +140,23 @@ export async function searchStagingInventory(query: WinkStagingQuery) {
   metadata.set('authorization', `Bearer ${token}`);
   metadata.set('managing-entity-id', String(account.accountId));
 
+  const methodNames = query.scope === 'city' ? ['searchByCity', 'SearchByCity']
+    : query.scope === 'country' ? ['rankByCountry', 'RankByCountry'] : ['rankGlobal', 'RankGlobal'];
+  const region = query.scope === 'city' ? { geoNameId: query.geoNameId }
+    : query.scope === 'country' ? { countryCode: query.countryCode } : {};
   const searchClient = service(pkg, 'Search');
   let response: JsonRecord;
   try {
     await atStage('search', () => new Promise<void>((resolve, reject) =>
       searchClient.waitForReady(Date.now() + 15_000, (error: Error | undefined) => error ? reject(error) : resolve())));
-    response = await atStage('search', () => unary(searchClient, ['searchByCity', 'SearchByCity'], {
-      geoNameId: query.geoNameId,
+    response = await atStage('search', () => unary(searchClient, methodNames, {
+      ...region,
       userSession: {
         itinerary: { startDate: query.checkIn, nights: query.nights, room: { adults: query.adults, quantity: query.rooms } },
         currencyCode: 'EUR', languageCode: 'en',
       },
-      page: 0, size: Math.min(10, Math.max(1, query.size ?? 10)), imageFormat: 'image/webp',
+      // No optional searchFilters; only itinerary required by Wink.
+      page: 0, size: Math.min(5, Math.max(1, query.size ?? 5)), imageFormat: 'image/webp',
     }, metadata));
   } finally { searchClient.close(); }
 
@@ -158,12 +167,14 @@ export async function searchStagingInventory(query: WinkStagingQuery) {
     query,
     searchedAt: new Date().toISOString(),
     accountConfirmed: true,
+    method: methodNames[1],
     resultCount: hotels.length,
     totalElements: Number.isFinite(total) ? total : hotels.length,
     totalPages: Number(page.totalPages ?? 0),
     currency: String(response.currencyCode || 'EUR'),
     hotels: hotels.map((hotel: JsonRecord) => ({
       name: String(hotel.name || ''),
+      city: String(hotel.city?.name || ''),
       starRating: Number(hotel.starRating || 0),
       available: hotel.available === true,
       roomTypesCount: Array.isArray(hotel.roomTypes) ? hotel.roomTypes.length : 0,
