@@ -11,15 +11,12 @@ type SearchResult = {
   error?: string; stage?: string; grpcCode?: number;
 };
 const searchAreas = [
-  { slug: 'global', label: '🌍 Classement mondial Wink (RankGlobal)' },
-  { slug: 'country-TR', label: '🇹🇷 Classement Turquie (RankByCountry)' },
-  { slug: 'country-FR', label: '🇫🇷 Classement France (RankByCountry)' },
-  { slug: 'country-AE', label: '🇦🇪 Classement Émirats (RankByCountry)' },
-  { slug: 'country-TH', label: '🇹🇭 Classement Thaïlande (RankByCountry)' },
+  // RankGlobal/RankByCountry are ranked subsets, not worldwide inventory searches.
+  // Hide them in the primary tester: they misleadingly suggest that staging has a complete global catalogue.
   { slug: 'city-istanbul', label: 'Istanbul seulement' },
   { slug: 'city-paris', label: 'Paris seulement' },
   { slug: 'city-dubai', label: 'Dubaï seulement' },
-  { slug: 'city-bangkok', label: 'Bangkok seulement' },
+  { slug: 'city-bangkok', label: 'Bangkok · référence de test Wink' },
   { slug: 'city-phuket', label: 'Phuket seulement' },
   { slug: 'geo-istanbul', label: 'Autour Istanbul 35 km - SearchByGeo' },
   { slug: 'geo-paris', label: 'Autour Paris 30 km - SearchByGeo' },
@@ -68,18 +65,43 @@ export function WinkStagingSearchLab() {
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#b18a52]">Diagnostic privé · API de réservation</p>
         <h1 className="font-serif text-4xl leading-tight sm:text-5xl">Recherche d’hôtels Wink</h1>
         <p className="mt-4 text-base leading-relaxed text-slate-600">
-          Bangkok a déjà retourné des établissements sur Wink Staging. Commence par cette ville pour confirmer la connexion.
-          Wink indique que son Staging contient moins de donnees que la production. La recherche autour d'une ville (SearchByGeo) aide a diagnostiquer les lieux absents.
-          Les options « Monde » et « Pays » sont des classements (RankGlobal / RankByCountry), et non une liste exhaustive
-          du catalogue. Un classement vide ne prouve pas que Wink ne possède aucun hôtel.
+          Le raccordement OAuth et les recherches gRPC sont opérationnels, mais Wink Staging est un environnement de démonstration
+          au catalogue réduit, distinct de la Production. Bangkok a déjà retourné cinq établissements lors de tes tests ;
+          un résultat à zéro pour Paris, Istanbul ou Dubaï ne révèle donc pas forcément un dysfonctionnement du site.
+          Chaque clic lance une recherche réelle sur Wink Staging, jamais une liste artificielle.
         </p>
       </header>
       <aside className="mb-7 rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 text-sm leading-relaxed text-amber-950">
-        <strong>Pourquoi « Monde » peut afficher zéro :</strong> RankGlobal classe des hôtels selon les scores Wink,
-        alors que SearchByCity interroge l’inventaire d’une ville. Ce sont deux méthodes différentes.
-        Aucun filtre facultatif (étoiles, nom, type de séjour) n’est activé, mais dates et nombre de voyageurs
-        restent nécessaires aux recherches tarifaires. Le catalogue de test Wink peut être limité.
+        <strong>Diagnostic : absence d’inventaire dans Staging.</strong> Aucun filtre facultatif (étoiles, nom,
+        style de séjour ou « réservation directe uniquement ») n’est activé. Les dates et voyageurs restent
+        indispensables pour calculer les prix. Le classement mondial RankGlobal n’est pas un catalogue exhaustif :
+        l’élargissement à « Monde » ne peut pas ajouter des hôtels qui ne sont pas présents dans cette base de test.
+        <span className="mt-2 block">Wink confirme que Staging contient nettement moins de données que Production.{' '}
+          <a className="font-semibold underline underline-offset-2" href="https://wink.travel/developers/setup/" target="_blank" rel="noopener noreferrer">
+            Voir la documentation officielle
+          </a>.
+        </span>
       </aside>
+      <section className="mb-7 rounded-xl border border-[#cbd6d7] bg-white p-5 text-sm leading-relaxed text-[#243940]">
+        <h2 className="text-base font-semibold">Pour afficher les vrais hôtels dans toutes les destinations</h2>
+        <p className="mt-2">
+          Il faut un compte affilié et une application Machine-to-Machine <strong>Wink Production</strong>,
+          avec des identifiants différents du Staging. Le compte Staging actuel ne fournit pas
+          automatiquement l’inventaire commercial. Ne publie aucun jeton ou Client Secret dans le chat.
+        </p>
+        <p className="mt-3">
+          <a className="font-semibold text-[#24556b] underline underline-offset-2" href="https://app.wink.travel" target="_blank" rel="noopener noreferrer">
+            Ouvrir Wink Production
+          </a>
+          {' · '}
+          <a className="font-semibold text-[#24556b] underline underline-offset-2" href="https://wink.travel/developers/quickstart/" target="_blank" rel="noopener noreferrer">
+            Étapes officielles de connexion Production
+          </a>
+        </p>
+        <p className="mt-3 text-xs text-slate-600">
+          Bosphoras reste en Preview, sans recherche de prix en Production ni changement du site public.
+        </p>
+      </section>
       <form onSubmit={submit} className="rounded-2xl border border-[#dedbd3] bg-white p-5 shadow-sm sm:p-7">
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
           <label className="block text-sm font-semibold">Périmètre de recherche
@@ -121,6 +143,7 @@ export function WinkStagingSearchLab() {
           <h2 className="font-serif text-2xl text-rose-800">Recherche non aboutie</h2>
           <p className="mt-2 text-slate-700">{result.error}</p>
           {result.stage && <p className="mt-3 text-sm text-slate-500">Étape : <strong>{result.stage}</strong>{result.grpcCode !== undefined ? ` · code gRPC ${result.grpcCode}` : ''}</p>}
+          {result.grpcCode === 4 && <p className="mt-3 text-sm text-slate-700">Wink Staging peut être en veille et mettre environ une minute à redémarrer. Attends une minute, puis relance une seule recherche.</p>}
         </div> : <>
           <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#a37d4c]">Réponse API obtenue · Staging Wink</p>
           <h2 className="mt-2 font-serif text-3xl">{result.totalElements === 0 ? (result.method === 'RankGlobal' || result.method === 'RankByCountry' ? 'Classement Wink vide en staging' : 'Aucun hôtel retourné par la recherche') : `${result.totalElements} établissement(s) identifié(s)`}</h2>
@@ -132,6 +155,12 @@ export function WinkStagingSearchLab() {
             <div className="rounded-xl bg-[#f6f5f2] p-4"><div className="text-xs text-slate-500">Compte affilié</div><div className="mt-2 font-semibold">{result.accountConfirmed ? 'Reconnu' : 'Non confirmé'}</div></div>
           </div>
           <p className="mt-5 text-sm text-slate-600">{result.info}</p>
+          {result.totalElements === 0 && <div className="mt-4 rounded-xl border border-[#d7dedc] bg-[#f6f8f6] p-4 text-sm text-slate-700">
+            <strong>Ce n’est pas un filtre caché.</strong> Le serveur Wink a renvoyé une réponse valide,
+            mais aucune offre pour ces critères dans son environnement de test.
+            Si Bangkok affiche des propriétés avec les mêmes dates, le catalogue Staging est bien accessible.
+            Pour chercher dans le catalogue commercial, il faut brancher les identifiants Production.
+          </div>}
           <p className="mt-2 text-xs text-slate-500">Méthode Wink : <strong>{result.method || '—'}</strong> · Aucun filtre facultatif appliqué. La page affiche au maximum 5 fiches ; le « Total API » est indépendant de cette limite.</p>
           {result.diagnostics && <p className="mt-2 text-xs text-slate-500">Réponse gRPC reconnue : {result.diagnostics.responseShapeValid ? 'oui' : 'non'} · Lignes de la page selon Wink : {result.diagnostics.pageNumberOfElements} · Taille de page : {result.diagnostics.pageSize}. Les identifiants secrets et les comptes ne sont jamais affichés.</p>}
           {result.hotels && result.hotels.length > 0 && <div className="mt-7 space-y-3">
