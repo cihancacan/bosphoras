@@ -1,0 +1,128 @@
+{
+  "scope": "Paris destination landscapes only, hotels independent",
+  "downloaded": 5,
+  "expected": 5,
+  "updatedAt": "2026-10-13T00:03:21.018035+00:00",
+  "items": [
+    {
+      "key": "paris-seine-hero",
+      "sourceFile": "Louvre Pont des Arts.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Louvre_Pont_des_Arts.jpg",
+      "author": "Jebulon",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "fr": "Le Louvre et le pont des Arts depuis la Seine",
+      "en": "The Louvre river facade and Pont des Arts from the Seine",
+      "localPath": "/images/travel/paris-premium/destination/paris-seine-hero.webp",
+      "status": "downloaded",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Louvre_Pont_des_Arts.jpg/1920px-Louvre_Pont_des_Arts.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceSize": [
+        1920,
+        1195
+      ],
+      "outputSize": [
+        1920,
+        1195
+      ],
+      "bytes": 559470,
+      "sha256": "7688f786097264a1f80f1df5b5664e3734078ab5f18b8ce2d610dd124737c87b",
+      "transformations": "EXIF normalized, resized, WebP q86"
+    },
+    {
+      "key": "paris-pont-des-arts",
+      "sourceFile": "Louvre & pont des Arts.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Louvre_&_pont_des_Arts.jpg",
+      "author": "Tangopaso",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "fr": "Le Louvre et le pont des Arts photographiés depuis un bateau",
+      "en": "Louvre and Pont des Arts seen from a boat on the Seine",
+      "localPath": "/images/travel/paris-premium/destination/paris-pont-des-arts.webp",
+      "status": "downloaded",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Louvre_%26_pont_des_Arts.jpg/1920px-Louvre_%26_pont_des_Arts.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1867,
+        1400
+      ],
+      "bytes": 484372,
+      "sha256": "4fc3a6de61379cc43c8d7fcc5186629b3019c0dcd35ed2e67c8dc93fbe2e7569",
+      "transformations": "EXIF normalized, resized, WebP q86"
+    },
+    {
+      "key": "paris-champs-elysees",
+      "sourceFile": "Champs Elysees from the Arch.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Champs_Elysees_from_the_Arch.jpg",
+      "author": "ASaber91",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "fr": "Les Champs-Élysées depuis l’Arc de Triomphe au crépuscule",
+      "en": "Champs-Élysées from the Arc de Triomphe at dusk",
+      "localPath": "/images/travel/paris-premium/destination/paris-champs-elysees.webp",
+      "status": "downloaded",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Champs_Elysees_from_the_Arch.jpg/1920px-Champs_Elysees_from_the_Arch.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceSize": [
+        1920,
+        1220
+      ],
+      "outputSize": [
+        1920,
+        1220
+      ],
+      "bytes": 707858,
+      "sha256": "499379eaf45e8578c0399a84f93787e3a9bb862d3b0a1c527c3bea3764f7be3c",
+      "transformations": "EXIF normalized, resized, WebP q86"
+    },
+    {
+      "key": "paris-saint-germain",
+      "sourceFile": "Saint-Germain des Prés (3363718209).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Saint-Germain_des_Prés_(3363718209).jpg",
+      "author": "Serge Melki",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "fr": "Saint-Germain-des-Prés, son église historique et les cafés voisins",
+      "en": "Saint-Germain-des-Prés, the historic church and nearby Parisian café",
+      "localPath": "/images/travel/paris-premium/destination/paris-saint-germain.webp",
+      "status": "downloaded",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Saint-Germain_des_Pr%C3%A9s_%283363718209%29.jpg/1920px-Saint-Germain_des_Pr%C3%A9s_%283363718209%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceSize": [
+        1920,
+        1181
+      ],
+      "outputSize": [
+        1920,
+        1181
+      ],
+      "bytes": 221016,
+      "sha256": "8139e2a2176be0b0f24f377ea116e4a3630fa4326a1dd49d25c56978b91af109",
+      "transformations": "EXIF normalized, resized, WebP q86"
+    },
+    {
+      "key": "paris-pont-alexandre",
+      "sourceFile": "Eiffel Tower and Pont Alexandre III from Seine.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_and_Pont_Alexandre_III_from_Seine.jpg",
+      "author": "Philippe Alès",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "fr": "La tour Eiffel et le pont Alexandre III vus depuis la Seine",
+      "en": "Eiffel Tower and Pont Alexandre III from the Seine",
+      "localPath": "/images/travel/paris-premium/destination/paris-pont-alexandre.webp",
+      "status": "downloaded",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Eiffel_Tower_and_Pont_Alexandre_III_from_Seine.jpg/1920px-Eiffel_Tower_and_Pont_Alexandre_III_from_Seine.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceSize": [
+        1920,
+        2891
+      ],
+      "outputSize": [
+        930,
+        1400
+      ],
+      "bytes": 165732,
+      "sha256": "fdc2529adab155d244e630a6232bcc225b55203188fdfa8dce2686ebfcdbb60a",
+      "transformations": "EXIF normalized, resized, WebP q86"
+    }
+  ]
+}
