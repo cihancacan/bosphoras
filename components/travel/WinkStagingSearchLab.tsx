@@ -21,6 +21,11 @@ const searchAreas = [
   { slug: 'city-dubai', label: 'Dubaï seulement' },
   { slug: 'city-bangkok', label: 'Bangkok seulement' },
   { slug: 'city-phuket', label: 'Phuket seulement' },
+  { slug: 'geo-istanbul', label: '📍 35 km autour d’Istanbul (SearchByGeo)' },
+  { slug: 'geo-paris', label: '📍 30 km autour de Paris (SearchByGeo)' },
+  { slug: 'geo-dubai', label: '📍 40 km autour de Dubaï (SearchByGeo)' },
+  { slug: 'geo-bangkok', label: '📍 30 km autour de Bangkok (SearchByGeo)' },
+  { slug: 'geo-phuket', label: '📍 40 km dans l’ouest de Phuket (SearchByGeo)' },
 ];
 function dateInDays(days: number) {
   const d = new Date(); d.setUTCDate(d.getUTCDate() + days); return d.toISOString().slice(0, 10);
@@ -64,15 +69,19 @@ export function WinkStagingSearchLab() {
         <h1 className="font-serif text-4xl leading-tight sm:text-5xl">Recherche d’hôtels Wink</h1>
         <p className="mt-4 text-base leading-relaxed text-slate-600">
           Bangkok a déjà retourné des établissements sur Wink Staging. Commence par cette ville pour confirmer la connexion.
-          Les options « Monde » et « Pays » sont des classements (RankGlobal / RankByCountry), et non une liste exhaustive
-          du catalogue. Un classement vide ne prouve pas que Wink ne possède aucun hôtel.
+          Le compte Wink est connecté, mais Wink précise que son environnement Staging contient beaucoup moins
+          d’hôtels qu’en production. Les options « Monde » et « Pays » sont des classements, pas un inventaire
+          complet. Essaie la recherche « autour de » pour vérifier si une ville est mal référencée.
         </p>
       </header>
       <aside className="mb-7 rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 text-sm leading-relaxed text-amber-950">
         <strong>Pourquoi « Monde » peut afficher zéro :</strong> RankGlobal classe des hôtels selon les scores Wink,
         alors que SearchByCity interroge l’inventaire d’une ville. Ce sont deux méthodes différentes.
         Aucun filtre facultatif (étoiles, nom, type de séjour) n’est activé, mais dates et nombre de voyageurs
-        restent nécessaires aux recherches tarifaires. Le catalogue de test Wink peut être limité.
+        restent nécessaires aux recherches tarifaires. <strong>Le Staging Wink n’est pas le catalogue de production.</strong>
+        Pour tester un identifiant de ville qui ne renvoie rien, sélectionne l’option 📍 autour de la même ville,
+        qui utilise SearchByGeo (une seule requête manuelle). Si les deux donnent zéro, il faut demander à Wink
+        des hôtels de test supplémentaires ou passer à ses identifiants de production après validation.
       </aside>
       <form onSubmit={submit} className="rounded-2xl border border-[#dedbd3] bg-white p-5 shadow-sm sm:p-7">
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
@@ -126,6 +135,14 @@ export function WinkStagingSearchLab() {
             <div className="rounded-xl bg-[#f6f5f2] p-4"><div className="text-xs text-slate-500">Compte affilié</div><div className="mt-2 font-semibold">{result.accountConfirmed ? 'Reconnu' : 'Non confirmé'}</div></div>
           </div>
           <p className="mt-5 text-sm text-slate-600">{result.info}</p>
+          {result.totalElements === 0 && <div className="mt-5 rounded-xl border border-slate-200 bg-[#f7f7f4] p-4 text-sm text-slate-700">
+            <strong>Que faire si le résultat reste vide ?</strong> Une recherche de ville et une recherche géographique
+            permettent de distinguer un problème de référencement d’une absence de stock de test.
+            Même « Monde » vide ne prouve pas une panne. Pour un catalogue complet, Wink demande une application
+            et des identifiants distincts en production.
+            <a href="https://wink.travel/developers/setup/" target="_blank" rel="noopener noreferrer"
+               className="ml-1 font-semibold text-[#24556b] underline underline-offset-2">Documentation officielle Wink ↗</a>
+          </div>
           <p className="mt-2 text-xs text-slate-500">Méthode Wink : <strong>{result.method || '—'}</strong> · Aucun filtre facultatif appliqué. La page affiche au maximum 5 fiches ; le « Total API » est indépendant de cette limite.</p>
           {result.diagnostics && <p className="mt-2 text-xs text-slate-500">Réponse gRPC reconnue : {result.diagnostics.responseShapeValid ? 'oui' : 'non'} · Lignes de la page selon Wink : {result.diagnostics.pageNumberOfElements} · Taille de page : {result.diagnostics.pageSize}. Les identifiants secrets et les comptes ne sont jamais affichés.</p>}
           {result.hotels && result.hotels.length > 0 && <div className="mt-7 space-y-3">
