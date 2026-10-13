@@ -1,5 +1,5 @@
 /** Curated Travel destination guides. Editorial selections only: no supplier inventory, booking, rates or claim of first-hand inspection. */
-export type FeaturedCitySlug = 'bodrum' | 'antalya' | 'dubai' | 'paris' | 'saint-tropez';
+export type FeaturedCitySlug = 'bodrum' | 'antalya' | 'dubai' | 'paris' | 'saint-tropez' | 'bali';
 export type FeaturedCityPhoto = {src:string;fr:string;en:string;author:string;license:string;licenseUrl:string;sourcePage:string};
 export type FeaturedCityArea = {name:string;enName:string;fr:string;en:string;frWatch:string;enWatch:string};
 export type FeaturedCityExperience = {frTitle:string;enTitle:string;fr:string;en:string};
@@ -803,6 +803,189 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
       "license": "CC BY 2.0 · resized and WebP optimized",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Bay_of_Pampelonne,_Saint-Tropez,_France_(52724196595).jpg"
+    }
+  }
+},
+  "bali": {
+  "slug": "bali",
+  "name": "Bali",
+  "country": "Indonésie",
+  "hero": "uluwatu-coast",
+  "secondary": "ubud-rice-terraces",
+  "eyebrowFr": "L’île des contrastes",
+  "eyebrowEn": "The island of contrasts",
+  "headingFr": "Bali, entre jungle et océan.",
+  "headingEn": "Bali: from rainforest to ocean.",
+  "introFr": "Bali n’a pas un seul visage : la vallée d’Ubud enveloppée de jungle, les falaises d’Uluwatu dominant l’océan Indien, les soirées paisibles de Jimbaran et les plages animées de Seminyak dessinent quatre voyages différents. Le luxe commence par le bon emplacement.",
+  "introEn": "Bali has many faces: Ubud’s forested river valleys, Uluwatu’s cliffs above the Indian Ocean, Jimbaran’s gentle sunsets and Seminyak’s lively beachfront offer four very different journeys. Exceptional stays begin with choosing the right place.",
+  "editorialFr": "Nous retenons quatre maisons qui ne se ressemblent pas : un sanctuaire suspendu sur la vallée de Sayan, un resort très privé sur les falaises du Bukit, une collection de villas tournées vers la baie de Jimbaran et une adresse élégante face aux vagues de Seminyak. Pas un catalogue infini de villas interchangeables.",
+  "editorialEn": "Our four addresses each offer a distinct Bali: a rainforest sanctuary above the Ayung River, an exclusive resort on Bukit’s cliffs, a secluded collection of Jimbaran villas and a graceful Seminyak beachfront retreat. This is an edited shortlist, not an endless inventory of look-alike villas.",
+  "hotelIntroFr": "Quatre adresses de caractère, choisies pour la relation entre paysage, service et confort : Four Seasons Sayan, Bvlgari Bali, Raffles Bali et The Legian Seminyak. Sélection éditoriale indépendante, sans inventaire, tarif ni disponibilité non confirmés.",
+  "hotelIntroEn": "Four distinctive stays chosen for their setting, service and atmosphere: Four Seasons Sayan, Bvlgari Bali, Raffles Bali and The Legian Seminyak. Independent editorial recommendations, with no implied live inventory, rates or availability.",
+  "areas": [
+    {
+      "name": "Ubud & vallée de Sayan",
+      "enName": "Ubud & the Sayan Valley",
+      "fr": "Rizières, forêts, rivière Ayung, arts traditionnels et temples. Une expérience introspective, loin de la plage, au rythme des matinées dans la nature.",
+      "en": "Rice terraces, lush forest, the Ayung River, traditional arts and temples. A more introspective journey, away from the beach and shaped by the morning light.",
+      "frWatch": "Ubud n’est pas en bord de mer : prévoir les transferts et les déplacements entre rizières et centres culturels.",
+      "enWatch": "Ubud is inland, not beachfront; plan transport between rice terraces, resorts and cultural sights."
+    },
+    {
+      "name": "Uluwatu & péninsule de Bukit",
+      "enName": "Uluwatu & the Bukit Peninsula",
+      "fr": "Falaises calcaires, horizon ouvert sur l’océan Indien et villas avec piscines privées. C’est un Bali spectaculaire, avec parfois de longues routes jusqu’aux criques.",
+      "en": "Limestone cliffs, an uninterrupted Indian Ocean horizon and private-pool villas. Spectacular scenery, with some coves reached by lengthy walks or drives.",
+      "frWatch": "Un hôtel sur une falaise n’a pas nécessairement un accès direct, facile ou quotidien à la plage.",
+      "enWatch": "A cliffside hotel does not automatically offer direct, easy or unrestricted beach access."
+    },
+    {
+      "name": "Jimbaran & baie du sud",
+      "enName": "Jimbaran & the southern bay",
+      "fr": "Couchers de soleil, longues plages, restaurants les pieds dans le sable et villas à l’abri des regards. Un équilibre entre calme et proximité du sud de l’île.",
+      "en": "Golden sunsets, sweeping beach scenes, casual beachfront dining and quietly secluded villas. A balance between relaxed coastal life and access to southern Bali.",
+      "frWatch": "Toutes les villas dominant la baie ne sont pas sur le sable ; vérifier les transferts vers la plage et la vue réelle.",
+      "enWatch": "Bay-facing hillside villas are not necessarily on the beach; confirm beach transfers and the exact view."
+    },
+    {
+      "name": "Seminyak & plages de l’ouest",
+      "enName": "Seminyak & the west-coast beaches",
+      "fr": "Boutiques, restaurants, clubs de plage et hôtels face à l’océan. Pour mêler les journées au bord de l’eau et la vie sociale sans renoncer au confort.",
+      "en": "Boutiques, restaurants, beach clubs and hotels along the ocean. Ideal for combining shoreline time with dining and social life.",
+      "frWatch": "Le front de mer peut être animé et les courants puissants ; choisir un hôtel et une plage en connaissance de cause.",
+      "enWatch": "The shore can be lively and the currents strong; compare room quietness and safe swimming conditions."
+    }
+  ],
+  "experiences": [
+    {
+      "frTitle": "Le jour se lève sur les rizières",
+      "enTitle": "Sunrise over the terraces",
+      "fr": "Quitter sa villa tôt pour les rizières de Tegallalang, découvrir le paysage avant la foule et consacrer le reste de la journée à la vallée d’Ubud.",
+      "en": "Set out early for Tegallalang’s rice terraces before the crowds, then allow the rest of the day for the Ubud valley."
+    },
+    {
+      "frTitle": "L’océan depuis une falaise",
+      "enTitle": "A cliff above the ocean",
+      "fr": "Contempler la côte d’Uluwatu, parcourir les petits temples et terminer la journée face aux dernières lumières sur l’océan.",
+      "en": "Follow Uluwatu’s dramatic coastline, explore temple heritage respectfully and linger over the last light above the ocean."
+    },
+    {
+      "frTitle": "Le dîner pieds dans le sable",
+      "enTitle": "Dinner with your feet in the sand",
+      "fr": "S’arrêter à Jimbaran à l’heure dorée, choisir une table près de l’eau et laisser le soir ralentir la journée.",
+      "en": "Arrive in Jimbaran at golden hour, find a beachfront table and let the evening slow down naturally."
+    },
+    {
+      "frTitle": "Une soirée élégante à Seminyak",
+      "enTitle": "An elegant Seminyak evening",
+      "fr": "Profiter des boutiques et des bonnes tables avant de retrouver une terrasse privée et le bruit de l’océan.",
+      "en": "Enjoy boutiques and thoughtful dining before retreating to a private terrace and the sound of the sea."
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Four Seasons Resort Bali at Sayan",
+      "area": "Sayan · Ubud · vallée de la rivière Ayung",
+      "fr": "Un sanctuaire architectural en pleine jungle, célèbre pour son pont d’arrivée et son bassin aux lotus suspendu au-dessus de la vallée.",
+      "en": "An architectural rainforest sanctuary above the Ayung River, celebrated for its dramatic bridge arrival and rooftop lotus pond.",
+      "frWatch": "Vérifier catégorie villa ou suite, présence d’une piscine privée et accès à la rivière : toutes les unités ne sont pas identiques.",
+      "enWatch": "Confirm villa versus suite category, private pool and river access: layouts and inclusions differ.",
+      "officialUrl": "https://www.fourseasons.com/sayan/"
+    },
+    {
+      "name": "Bvlgari Resort Bali",
+      "area": "Pecatu · falaises d’Uluwatu",
+      "fr": "Élégance italo-balinaise au bord des falaises du Bukit, villas intimes, jardins et vues panoramiques sur l’océan Indien.",
+      "en": "Italian-Balinese design above the Bukit cliffs, with private villas, lush gardens and far-reaching Indian Ocean panoramas.",
+      "frWatch": "Confirmer la villa précise et son type de vue ; ne pas confondre accès plage et présence au niveau de la plage.",
+      "enWatch": "Verify the exact villa and view category, and distinguish clifftop beach access from a directly beachfront property.",
+      "officialUrl": "https://www.bulgarihotels.com/bali/the-resort/overview"
+    },
+    {
+      "name": "Raffles Bali",
+      "area": "Jimbaran · colline face à la baie",
+      "fr": "Un refuge composé de villas privées, chacune avec piscine, jardin et atmosphère feutrée au-dessus de la baie de Jimbaran.",
+      "en": "An intimate all-villa retreat, each villa featuring its own pool and garden amid the hillside overlooking Jimbaran Bay.",
+      "frWatch": "Comparer les différentes orientations océaniques, la taille des villas et l’organisation des transferts vers la plage.",
+      "enWatch": "Compare actual ocean outlooks, villa size and arrangements for reaching the beachfront.",
+      "officialUrl": "https://www.raffles.com/bali/"
+    },
+    {
+      "name": "The Legian Seminyak, Bali",
+      "area": "Seminyak · front de mer",
+      "fr": "Une adresse contemporaine face à l’océan, avec piscine à débordement, grandes perspectives marines et accès aux restaurants de Seminyak.",
+      "en": "An elegant beachfront retreat with striking infinity pools, open ocean views and easy access to Seminyak’s dining scene.",
+      "frWatch": "Vérifier l’orientation de la suite, l’intimité de la terrasse et la distinction entre hôtel principal et Club villas.",
+      "enWatch": "Confirm the exact suite outlook, terrace privacy and differences between the hotel and the separately located Club villas.",
+      "officialUrl": "https://lhm-hotels.com/legian-seminyak/"
+    }
+  ],
+  "checksFr": [
+    "Choisir d’abord entre Ubud, Uluwatu, Jimbaran et Seminyak : le temps de trajet peut être important.",
+    "Confirmer la villa ou suite exacte, les vues garanties, piscine privée et conditions du service personnalisé.",
+    "Vérifier l’accès réel à la plage, la baignade, les courants et les transferts, surtout dans les resorts sur falaises.",
+    "Tenir compte de la saison des pluies, des conditions de la mer, des politiques d’annulation et des prestations incluses."
+  ],
+  "checksEn": [
+    "Choose between Ubud, Uluwatu, Jimbaran and Seminyak before deciding on the hotel; transfers can be substantial.",
+    "Verify the exact villa or suite, guaranteed room view, private pool and personalised-service terms.",
+    "Confirm true beach access, swimming conditions and transport, especially from clifftop resorts.",
+    "Consider rainy-season conditions, sea state, cancellation policies and included services."
+  ],
+  "photos": {
+    "uluwatu-coast": {
+      "src": "/images/travel/bali-premium/destination/bali-uluwatu-ocean-hero.webp",
+      "fr": "Falaises d’Uluwatu et eaux bleues de l’océan Indien, au sud de Bali",
+      "en": "Uluwatu limestone cliffs above the blue Indian Ocean",
+      "author": "Tiya20",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Uluwatu_Cliffs,_Bali.jpg"
+    },
+    "ubud-rice-terraces": {
+      "src": "/images/travel/bali-premium/destination/bali-ubud-tegallalang.webp",
+      "fr": "Rizières en terrasse de Tegallalang près d’Ubud",
+      "en": "Tegallalang rice terraces in Bali’s lush Ubud countryside",
+      "author": "Philip Nalangan",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tegallalang_Rice_Terraces_Bali.jpg"
+    },
+    "jimbaran-sunset": {
+      "src": "/images/travel/bali-premium/destination/bali-jimbaran-sunset.webp",
+      "fr": "Plage de Jimbaran et terrasses au coucher du soleil",
+      "en": "Jimbaran beach and waterfront dining at sunset",
+      "author": "Akmaie Ajam",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Jimbaran_beach_at_sunset.jpg"
+    },
+    "seminyak-beach": {
+      "src": "/images/travel/bali-premium/destination/bali-seminyak-sunset.webp",
+      "fr": "Plage de Seminyak à la lumière du couchant",
+      "en": "Seminyak beach in Bali under warm sunset light",
+      "author": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Seminyak_Beach_at_sunset.jpg"
+    },
+    "padang-padang": {
+      "src": "/images/travel/bali-premium/destination/bali-padang-padang.webp",
+      "fr": "La crique de Padang Padang sur la côte sud de Bali",
+      "en": "Padang Padang sandy cove on Bali’s south coast",
+      "author": "TMFalkner",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Padang_Padang_Beach.jpg"
+    },
+    "ubud-tegallalang-secondary": {
+      "src": "/images/travel/bali-premium/destination/bali-tegallalang-secondary.webp",
+      "fr": "Rizières en escalier vertes de Tegallalang près d’Ubud",
+      "en": "Green terraced rice fields at Tegallalang near Ubud",
+      "author": "Freddy eduardo",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tegalalang_Rice_Terraces.jpg"
     }
   }
 }
