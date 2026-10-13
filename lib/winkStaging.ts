@@ -102,6 +102,76 @@ function futureDate(days = 30) {
   return date.toISOString().slice(0, 10);
 }
 
+export type WinkStagingQuery = {
+  geoNameId: string;
+  checkIn: string;
+  nights: number;
+  adults: number;
+  rooms: number;
+  size?: number;
+};
+
+export async function searchStagingInventory(query: WinkStagingQuery) {
+  if (!/^\\d{3,12}$/.test(query.geoNameId)) throw new WinkStagingError('search');
+  if (!/^\\d{4}-\\d{2}-\\d{2}$/.test(query.checkIn)) throw new WinkStagingError('search');
+  if (!(query.nights >= 1 && query.nights <= 14 && query.adults >= 1 && query.adults <= 4 && query.rooms >= 1 && query.rooms <= 2)) throw new WinkStagingError('search');
+  const token = await atStage('token', getAccessToken);
+  const auth = new grpc.Metadata();
+  auth.set('authorization', `Bearer ${token}`);
+
+  const pkg = await atStage('accounts-schema', async () => partnerPackage());
+  const accountsClient = service(pkg, 'Accounts');
+  let accountsResponse: JsonRecord;
+  try {
+    await atStage('accounts', () => new Promise<void>((resolve, reject) =>
+      accountsClient.waitForReady(Date.now() + 15_000, (error: Error | undefined) => error ? reject(error) : resolve())));
+    accountsResponse = await atStage('accounts', () => unary(accountsClient, ['listAccounts', 'ListAccounts'], {}, auth));
+  } finally { accountsClient.close(); }
+
+  const accounts = Array.isArray(accountsResponse.accounts) ? accountsResponse.accounts : [];
+  const account = accounts.find((item: JsonRecord) => /bosphoras luxury stays/i.test(String(item.name || '')));
+  if (!account?.accountId) throw new WinkStagingError('accounts');
+
+  const metadata = new grpc.Metadata();
+  metadata.set('authorization', `Bearer ${token}`);
+  metadata.set('managing-entity-id', String(account.accountId));
+
+  const searchClient = service(pkg, 'Search');
+  let response: JsonRecord;
+  try {
+    await atStage('search', () => new Promise<void>((resolve, reject) =>
+      searchClient.waitForReady(Date.now() + 15_000, (error: Error | undefined) => error ? reject(error) : resolve())));
+    response = await atStage('search', () => unary(searchClient, ['searchByCity', 'SearchByCity'], {
+      geoNameId: query.geoNameId,
+      userSession: {
+        itinerary: { startDate: query.checkIn, nights: query.nights, room: { adults: query.adults, quantity: query.rooms } },
+        currencyCode: 'EUR', languageCode: 'en',
+      },
+      page: 0, size: Math.min(10, Math.max(1, query.size ?? 10)), imageFormat: 'image/webp',
+    }, metadata));
+  } finally { searchClient.close(); }
+
+  const page = response.page || response;
+  const hotels = Array.isArray(page.content) ? page.content : [];
+  const total = Number(page.totalElements ?? hotels.length);
+  return {
+    query,
+    searchedAt: new Date().toISOString(),
+    accountConfirmed: true,
+    resultCount: hotels.length,
+    totalElements: Number.isFinite(total) ? total : hotels.length,
+    totalPages: Number(page.totalPages ?? 0),
+    currency: String(response.currencyCode || 'EUR'),
+    hotels: hotels.map((hotel: JsonRecord) => ({
+      name: String(hotel.name || ''),
+      starRating: Number(hotel.starRating || 0),
+      available: hotel.available === true,
+      roomTypesCount: Array.isArray(hotel.roomTypes) ? hotel.roomTypes.length : 0,
+      heroImageUrl: typeof hotel.heroImageUrl === 'string' && /^https:\/\//.test(hotel.heroImageUrl) ? hotel.heroImageUrl : null,
+    })),
+  };
+}
+
 export async function searchIstanbulInventory() {
   const token = await atStage('token', getAccessToken);
   const auth = new grpc.Metadata();
