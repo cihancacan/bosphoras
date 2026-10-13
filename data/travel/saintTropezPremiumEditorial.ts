@@ -23,7 +23,7 @@ export const saintTropezHotelEditorial:Record<string,BodrumHotelEditorial>={
   'Hôtel Byblos Saint-Tropez':{
     photos:[
       photo('byblos','byblos-terrace-exterior','Hôtel Byblos Saint-Tropez : architecture méditerranéenne et terrasses au cœur du village','Hôtel Byblos Saint-Tropez Mediterranean village-style architecture and terraces','https://www.byblos.com/en/','Hôtel Byblos · Stephan Julliard'),
-      photo('byblos','byblos-pool','La piscine extérieure du Byblos à Saint-Tropez au milieu des jardins','The Byblos Saint-Tropez outdoor pool amid the hotel's gardens','https://www.byblos.com/en/galerie-photos/','Hôtel Byblos · photo officielle'),
+      photo('byblos','byblos-pool','La piscine extérieure du Byblos à Saint-Tropez au milieu des jardins','The Byblos Saint-Tropez outdoor pool amid the landscaped gardens','https://www.byblos.com/en/galerie-photos/','Hôtel Byblos · photo officielle'),
       photo('byblos','byblos-laura-gonzalez-duplex','Suite Duplex du Byblos Saint-Tropez, décorée par Laura Gonzalez','Duplex Suite at Byblos Saint-Tropez designed by Laura Gonzalez','https://www.byblos.com/en/galerie-photos/','Hôtel Byblos · Laura Gonzalez')
     ],
     credit:'Hôtel Byblos Saint-Tropez · galerie officielle',
