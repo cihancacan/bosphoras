@@ -1,0 +1,248 @@
+{
+  "scope": "Only exact named Paris hotel photographs, never district views",
+  "createdAt": "2026-10-13T00:06:07.952970+00:00",
+  "expected": 12,
+  "downloaded": 9,
+  "items": [
+    {
+      "hotel": "cheval-blanc",
+      "key": "seine-exterior",
+      "scene": "historic Samaritaine riverside palace exterior",
+      "credit": "The World's 50 Best Hotels · Cheval Blanc Paris",
+      "sourcePage": "https://www.theworlds50best.com/hotels/the-list/cheval-blanc.html",
+      "localPath": "/images/travel/paris-premium/cheval-blanc/seine-exterior.webp",
+      "rights": "Project photo usage declared by the user; verify third-party commercial permission before production",
+      "status": "failed",
+      "errors": [
+        "under-sized: 620x400",
+        "under-sized: 620x400"
+      ]
+    },
+    {
+      "hotel": "cheval-blanc",
+      "key": "dior-spa-pool",
+      "scene": "Cheval Blanc Paris Dior Spa infinity pool",
+      "credit": "Cheval Blanc Paris · Oliver Fly / Dior Spa",
+      "sourcePage": "https://www.chevalblanc.com/fr/maison/paris/bien-etre/",
+      "localPath": "/images/travel/paris-premium/cheval-blanc/dior-spa-pool.webp",
+      "rights": "Project photo usage declared by the user; verify third-party commercial permission before production",
+      "status": "downloaded",
+      "downloadUrl": "https://images.prismic.io/lvmh-chevalblanc/ajqFAVbRV8_QfxE-_Light-ChevalBlancParis_DiorSpa_PiscineInfinie_2026_OliverFly-1-.jpg",
+      "sourceSize": [
+        6000,
+        2379
+      ],
+      "outputSize": [
+        1920,
+        761
+      ],
+      "bytes": 137734,
+      "sha256": "f702455adb7c3da049095c2e96d1881be4d0c0fbac21d5bd4c2f09e80bed9f31",
+      "transformations": "EXIF normalized, resized, WebP q85"
+    },
+    {
+      "hotel": "cheval-blanc",
+      "key": "seine-suite",
+      "scene": "Cheval Blanc Paris suite with window and Notre Dame view",
+      "credit": "ELLE · Cheval Blanc Paris suite",
+      "sourcePage": "https://travel.yahoo.com/hotels/articles/butler-dior-spa-cheval-blanc-130000465.html",
+      "localPath": "/images/travel/paris-premium/cheval-blanc/seine-suite.webp",
+      "rights": "Project photo usage declared by the user; verify third-party commercial permission before production",
+      "status": "downloaded",
+      "downloadUrl": "https://media.zenfs.com/en/elle_570/5f01b56fd2c09b121064aab99986d487.jpg",
+      "sourceSize": [
+        1440,
+        960
+      ],
+      "outputSize": [
+        1440,
+        960
+      ],
+      "bytes": 223830,
+      "sha256": "3eb4f814256bacf79334a574f124c34f81a5de1081e33a2322cef324e325f3e1",
+      "transformations": "EXIF normalized, resized, WebP q85"
+    },
+    {
+      "hotel": "george-v",
+      "key": "paris-entrance",
+      "scene": "Four Seasons Hotel George V entrance and facade in Paris",
+      "credit": "Four Seasons · George V Paris",
+      "sourcePage": "https://press.fourseasons.com/paris/hotel-news/2025/worlds-leading-sustainable-supply-chain-programme/",
+      "localPath": "/images/travel/paris-premium/george-v/paris-entrance.webp",
+      "rights": "Project photo usage declared by the user; verify third-party commercial permission before production",
+      "status": "failed",
+      "errors": [
+        "403 Client Error: Forbidden for url: https://www.fourseasons.com/content/dam/fourseasons/images/web/PAR/PAR_3352_aspect16x9.jpg",
+        "403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-0%2C0000-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/"
+      ]
+    },
+    {
+      "hotel": "george-v",
+      "key": "flowers-lobby",
+      "scene": "Four Seasons Hotel George V lobby with signature floral displays",
+      "credit": "Join UP! · George V Paris interior",
+      "sourcePage": "https://joinup.ro/en/hotel/29232",
+      "localPath": "/images/travel/paris-premium/george-v/flowers-lobby.webp",
+      "rights": "Project photo usage declared by the user; verify third-party commercial permission before production",
+      "status": "downloaded",
+      "downloadUrl": "https://media.joinup.travel/storage/hotel/30634/photos/Four-Seasons-George-V3.jpg",
+      "sourceSize": [
+        3200,
+        2400
+      ],
+      "outputSize": [
+        1867,
+        1400
+      ],
+      "bytes": 267774,
+      "sha256": "28a1ef0992361264306a695e1559cecc28b2593ebeaf152904eb7b345ab27aad",
+      "transformations": "EXIF normalized, resized, WebP q85"
+    },
+    {
+      "hotel": "george-v",
+      "key": "spa-pool",
+      "scene": "Four Seasons Hotel George V Paris long mosaic indoor spa pool",
+      "credit": "Four Seasons · Le Spa George V",
+      "sourcePage": "https://www.fourseasons.com/paris/spa/",
+      "localPath": "/images/travel/paris-premium/george-v/spa-pool.webp",
+      "rights": "Project photo usage declared by the user; verify third-party commercial permission before production",
+      "status": "failed",
+      "errors": [
+        "403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-3%2C2500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/",
+        "403 Client Error: Forbidden for url: https://www.fourseasons.com/content/dam/fourseasons/images/web/PAR/PAR_1390_original.jpg"
+      ]
+    },
+    {
+      "hotel": "le-bristol",
+      "key": "garden-terrace",
+      "scene": "Le Jardin Français courtyard and outdoor tables at Le Bristol Paris",
+      "credit": "Le Bristol Paris · Vincent Leroux",
+      "sourcePage": "https://www.oetkerhotels.com/hotels/le-bristol-paris/gallery/",
+      "localPath": "/images/travel/paris-premium/le-bristol/garden-terrace.webp",
+      "rights": "Project photo usage declared by the user; verify third-party commercial permission before production",
+      "status": "downloaded",
+      "downloadUrl": "https://images.eu.ctfassets.net/og3b0tarlg4b/1wfjJyy8HozQOuatmOtjtT/be9519c2d72b9807a250b438b65d085d/Le_Jardin_Fran%C3%83_ais_LBP_x_Schumacher_-_%C3%82_Vincent_Leroux__6rmUd.jpg?fit=fill&fm=jpg&h=1450&w=1900",
+      "sourceSize": [
+        1900,
+        1450
+      ],
+      "outputSize": [
+        1834,
+        1400
+      ],
+      "bytes": 854426,
+      "sha256": "3a5c6b7bee4eec5e1f4bd2b230c682e8c1cc6536c6ec520dcc68f95975017e99",
+      "transformations": "EXIF normalized, resized, WebP q85"
+    },
+    {
+      "hotel": "le-bristol",
+      "key": "deluxe-suite",
+      "scene": "Le Bristol Paris pastel bedroom in a Deluxe Suite",
+      "credit": "Le Bristol Paris · gallery",
+      "sourcePage": "https://www.oetkerhotels.com/hotels/le-bristol-paris/accommodations/rooms-suites/deluxe-suite/",
+      "localPath": "/images/travel/paris-premium/le-bristol/deluxe-suite.webp",
+      "rights": "Project photo usage declared by the user; verify third-party commercial permission before production",
+      "status": "downloaded",
+      "downloadUrl": "https://images.eu.ctfassets.net/og3b0tarlg4b/46L6ihLlhlmOWswGymkXAu/e5e18e5d57653a02545cd55520d4b535/room-SDLXG-image-le_bristol_paris-suite_deluxe-920_921-bd-4_S.jpg?fit=fill&fm=jpg&h=808&w=1070",
+      "sourceSize": [
+        1070,
+        808
+      ],
+      "outputSize": [
+        1070,
+        808
+      ],
+      "bytes": 88298,
+      "sha256": "9c0a1a45717d9b69bd13161e47faceb7093dcfb6704d4b7b750e3e03a3413783",
+      "transformations": "EXIF normalized, resized, WebP q85"
+    },
+    {
+      "hotel": "le-bristol",
+      "key": "suite-eden-spa",
+      "scene": "Suite Eden outdoor private spa at Le Bristol Paris",
+      "credit": "Le Bristol Paris · Franck Bohbot",
+      "sourcePage": "https://www.oetkerhotels.com/hotels/le-bristol-paris/accommodations/rooms-suites/suite-eden/gallery/",
+      "localPath": "/images/travel/paris-premium/le-bristol/suite-eden-spa.webp",
+      "rights": "Project photo usage declared by the user; verify third-party commercial permission before production",
+      "status": "downloaded",
+      "downloadUrl": "https://images.eu.ctfassets.net/og3b0tarlg4b/1CT2wpl7Q6Rfo1w5zrTPjH/83520a9ef2dc526401cdce68aa9e52ef/room-10TERX-image-LBP_-_SUITE_EDEN_-_FRANCK_BOHBOT_-_1_S.jpg?fit=fill&fm=jpg&h=1450&w=1900",
+      "sourceSize": [
+        1900,
+        1450
+      ],
+      "outputSize": [
+        1834,
+        1400
+      ],
+      "bytes": 370188,
+      "sha256": "45b8a1bc028b21aa4ea9bc3357ca72ff569a18fc1289d34651b23958ecc48459",
+      "transformations": "EXIF normalized, resized, WebP q85"
+    },
+    {
+      "hotel": "lutetia",
+      "key": "hotel-facade",
+      "scene": "Mandarin Oriental Lutetia facade by Boulevard Raspail at dusk",
+      "credit": "GLAMOUR · Mandarin Oriental Lutetia",
+      "sourcePage": "https://www.glamour.de/artikel/hotel-lutetia-paris-1",
+      "localPath": "/images/travel/paris-premium/lutetia/hotel-facade.webp",
+      "rights": "Project photo usage declared by the user; verify third-party commercial permission before production",
+      "status": "downloaded",
+      "downloadUrl": "https://assets.glamour.de/photos/69c3c592b58a30de792bb4a7/16%3A9/w_2560%2Cc_limit/Hotel_Lutetia_Facade_025.jpg",
+      "sourceSize": [
+        2560,
+        1440
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "bytes": 293494,
+      "sha256": "c3d73f36c43c9a3f72d712e32db667910a3ce4d6dbc59e7e46f9257a164ad988",
+      "transformations": "EXIF normalized, resized, WebP q85"
+    },
+    {
+      "hotel": "lutetia",
+      "key": "indoor-pool",
+      "scene": "Mandarin Oriental Lutetia marble blue swimming pool",
+      "credit": "Design & Contract · Lutetia",
+      "sourcePage": "https://designandcontract.com/it/realizzazioni/hotel-lutetia",
+      "localPath": "/images/travel/paris-premium/lutetia/indoor-pool.webp",
+      "rights": "Project photo usage declared by the user; verify third-party commercial permission before production",
+      "status": "downloaded",
+      "downloadUrl": "https://designandcontract.com/files/chunks/5c3f4830a0d55631ec0002d5/big-image_5c3f48c7a0d55632040002ce.jpg",
+      "sourceSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "bytes": 84794,
+      "sha256": "3230445f5130de7840198cc0356e081aa7b1b22fd07e9b4ed740e86d662c659e",
+      "transformations": "EXIF normalized, resized, WebP q85"
+    },
+    {
+      "hotel": "lutetia",
+      "key": "eiffel-suite",
+      "scene": "Lutetia Paris suite with Eiffel Tower balcony view",
+      "credit": "Casa Vogue · Mandarin Oriental Lutetia",
+      "sourcePage": "https://casavogue.globo.com/lazer-e-cultura/hoteis/noticia/2025/06/mandarin-oriental-lutetia.ghtml",
+      "localPath": "/images/travel/paris-premium/lutetia/eiffel-suite.webp",
+      "rights": "Project photo usage declared by the user; verify third-party commercial permission before production",
+      "status": "downloaded",
+      "downloadUrl": "https://s2-casavogue.glbimg.com/uXgwjjEB4IdHpTGXRrMgVLeq2cQ%3D/1200x/smart/filters%3Acover%28%29%3Astrip_icc%28%29/i.s3.glbimg.com/v1/AUTH_d72fd4bf0af74c0c89d27a5a226dbbf8/internal_photos/bs/2025/L/X/uNBXB2QDumtV4WtQVBJQ/hotel-lutetia-6-.jpg",
+      "sourceSize": [
+        1200,
+        764
+      ],
+      "outputSize": [
+        1200,
+        764
+      ],
+      "bytes": 88516,
+      "sha256": "33a537b9068396382c4d7c07dcdcf0ebd7eb0d11f3358f174944e1f52d2c7b88",
+      "transformations": "EXIF normalized, resized, WebP q85"
+    }
+  ]
+}
