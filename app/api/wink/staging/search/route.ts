@@ -5,12 +5,18 @@ export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
 
-const cities: Record<string, { geoNameId: string; label: string }> = {
-  istanbul: { geoNameId: '745044', label: 'Istanbul' },
-  paris: { geoNameId: '2988507', label: 'Paris' },
-  dubai: { geoNameId: '292223', label: 'Dubai' },
-  bangkok: { geoNameId: '1609350', label: 'Bangkok' },
-  phuket: { geoNameId: '1151254', label: 'Phuket' },
+type SearchScope = { mode: 'city' | 'country' | 'global'; label: string; geoNameId?: string; countryCode?: string };
+const scopes: Record<string, SearchScope> = {
+  global: { mode: 'global', label: 'Monde entier · sans filtre de ville' },
+  'country-TR': { mode: 'country', label: 'Toute la Turquie', countryCode: 'TR' },
+  'country-FR': { mode: 'country', label: 'Toute la France', countryCode: 'FR' },
+  'country-AE': { mode: 'country', label: 'Tous les Émirats arabes unis', countryCode: 'AE' },
+  'country-TH': { mode: 'country', label: 'Toute la Thaïlande', countryCode: 'TH' },
+  'city-istanbul': { mode: 'city', label: 'Istanbul', geoNameId: '745044' },
+  'city-paris': { mode: 'city', label: 'Paris', geoNameId: '2988507' },
+  'city-dubai': { mode: 'city', label: 'Dubaï', geoNameId: '292223' },
+  'city-bangkok': { mode: 'city', label: 'Bangkok', geoNameId: '1609350' },
+  'city-phuket': { mode: 'city', label: 'Phuket', geoNameId: '1151254' },
 };
 
 let lastCallAt = 0; // Best-effort safeguard; no automatic calls from page load.
@@ -35,8 +41,8 @@ export async function POST(request: NextRequest) {
   if (!raw || typeof raw !== 'object' || Array.isArray(raw)) {
     return NextResponse.json({ error: 'Paramètres invalides.' }, { status: 400, headers: responseHeaders });
   }
-  const cityCode = typeof raw.city === 'string' ? raw.city : '';
-  const city = cities[cityCode];
+  const scopeCode = typeof raw.scope === 'string' ? raw.scope : '';
+  const selectedScope = scopes[scopeCode];
   const checkIn = typeof raw.checkIn === 'string' ? raw.checkIn : '';
   const nights = raw.nights;
   const adults = raw.adults;
@@ -44,13 +50,13 @@ export async function POST(request: NextRequest) {
   const parsedDate = /^\d{4}-\d{2}-\d{2}$/.test(checkIn) ? new Date(checkIn + 'T00:00:00Z') : null;
   const today = new Date(); today.setUTCHours(0, 0, 0, 0);
   const max = new Date(today); max.setUTCDate(today.getUTCDate() + 180);
-  if (!city || !parsedDate || Number.isNaN(parsedDate.getTime()) ||
+  if (!selectedScope || !parsedDate || Number.isNaN(parsedDate.getTime()) ||
       parsedDate.toISOString().slice(0, 10) !== checkIn ||
       parsedDate < today || parsedDate > max ||
       !Number.isInteger(nights) || Number(nights) < 1 || Number(nights) > 14 ||
       !Number.isInteger(adults) || Number(adults) < 1 || Number(adults) > 4 ||
       !Number.isInteger(rooms) || Number(rooms) < 1 || Number(rooms) > 2) {
-    return NextResponse.json({ error: 'Choisis une ville, une date future (180 jours maximum), 1 à 14 nuits, 1 à 4 adultes et 1 ou 2 chambres.' },
+    return NextResponse.json({ error: 'Choisis une zone, une date future (180 jours maximum), 1 à 14 nuits, 1 à 4 adultes et 1 ou 2 chambres.' },
       { status: 400, headers: responseHeaders });
   }
 
@@ -63,16 +69,19 @@ export async function POST(request: NextRequest) {
 
   try {
     const result = await searchStagingInventory({
-      geoNameId: city.geoNameId, checkIn, nights: Number(nights), adults: Number(adults),
-      rooms: Number(rooms), size: 10,
+      scope: selectedScope.mode, geoNameId: selectedScope.geoNameId, countryCode: selectedScope.countryCode,
+      checkIn, nights: Number(nights), adults: Number(adults),
+      rooms: Number(rooms), size: 5,
     });
     return NextResponse.json({
-      ok: true, source: 'wink-staging', city: city.label, searchedAt: result.searchedAt,
+      ok: true, source: 'wink-staging', city: selectedScope.label, scope: selectedScope.mode,
+      method: result.method, filters: 'aucun filtre optionnel',
+      searchedAt: result.searchedAt,
       accountConfirmed: result.accountConfirmed, checkIn, nights, adults, rooms,
       pageCount: result.resultCount, totalElements: result.totalElements,
       totalPages: result.totalPages, currency: result.currency, hotels: result.hotels,
       info: result.totalElements === 0
-        ? 'La recherche a répondu correctement, mais aucun établissement ne correspond dans le catalogue Wink staging pour ces dates et cette ville.'
+        ? 'Zéro résultat pour ce périmètre et cet itinéraire en staging. Essaie « Monde entier » ou « Tout le pays » pour distinguer inventaire disponible et recherche par ville.'
         : 'Données de test Wink staging : aucune disponibilité ou possibilité de réservation en production n’est garantie.',
     }, { headers: responseHeaders });
   } catch (error) {
