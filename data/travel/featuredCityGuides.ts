@@ -1,5 +1,5 @@
 /** Curated Travel destination guides. Editorial selections only: no supplier inventory, booking, rates or claim of first-hand inspection. */
-export type FeaturedCitySlug = 'bodrum' | 'antalya' | 'dubai';
+export type FeaturedCitySlug = 'bodrum' | 'antalya' | 'dubai' | 'paris';
 export type FeaturedCityPhoto = {src:string;fr:string;en:string;author:string;license:string;licenseUrl:string;sourcePage:string};
 export type FeaturedCityArea = {name:string;enName:string;fr:string;en:string;frWatch:string;enWatch:string};
 export type FeaturedCityExperience = {frTitle:string;enTitle:string;fr:string;en:string};
@@ -467,7 +467,167 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
         "sourcePage": "https://commons.wikimedia.org/wiki/File:DubaiMarinaPanorama.jpg"
       }
     }
+  },
+  "paris": {
+  "slug": "paris",
+  "name": "Paris",
+  "country": "France",
+  "hero": "paris-seine-hero",
+  "secondary": "paris-pont-alexandre",
+  "eyebrowFr": "La Ville Lumière, autrement",
+  "eyebrowEn": "An intimate City of Light",
+  "headingFr": "Paris, la beauté d’un séjour à part.",
+  "headingEn": "Paris: an exceptional way to stay.",
+  "introFr": "La Seine au lever du jour, les salons d’un palace, l’art de flâner sur la rive gauche : Paris se découvre aussi par les adresses que l’on choisit. L'emplacement, la qualité d'une suite et le plaisir de sortir à pied façonnent l’expérience.",
+  "introEn": "The Seine at daybreak, a palace hotel's salons and the joy of wandering the Left Bank: a Paris stay is defined by the address you choose. Location, the right suite and being able to walk out into the city matter.",
+  "editorialFr": "Notre sélection privilégie la personnalité de quatre maisons différentes, non une compétition d’étoiles. Vue sur la Seine ou sur une cour intérieure, esprit contemporain ou charme historique, jardin caché ou Saint-Germain : ce sont les détails à choisir avant même la catégorie de chambre.",
+  "editorialEn": "Our shortlist is about four distinct personalities, not a contest of stars. Seine view or private courtyard, contemporary craft or classic grandeur, a hidden garden or Saint-Germain: these decisions matter long before room-category marketing.",
+  "hotelIntroFr": "Quatre palaces et maisons d’exception, chacun avec sa propre raison d’être : Cheval Blanc Paris au-dessus de la Seine, George V dans le Triangle d’Or, Le Bristol au Faubourg et Mandarin Oriental Lutetia sur la rive gauche. Aucun tarif ou inventaire n’est présenté comme disponible.",
+  "hotelIntroEn": "Four exceptional Paris addresses with distinct identities: Cheval Blanc above the Seine, George V in the Golden Triangle, Le Bristol on the Faubourg and Mandarin Oriental Lutetia on the Left Bank. No rates or inventory are presented as available.",
+  "areas": [
+    {
+      "name": "Le Louvre, la Seine & la Samaritaine",
+      "enName": "Louvre, the Seine & Samaritaine",
+      "fr": "Le cœur monumental de Paris, pour rejoindre à pied le Louvre, le Pont-Neuf, les quais et la rive gauche. Une adresse ici transforme la promenade en rituel quotidien.",
+      "en": "Historic central Paris, ideal for walking to the Louvre, Pont-Neuf, the riverbanks and across to the Left Bank. Staying here turns the daily walk into an event.",
+      "frWatch": "Une « vue Seine » dépend de l'étage, de l'orientation et de la catégorie exacte.",
+      "enWatch": "A ‘Seine view’ depends on floor, orientation and the exact room type."
+    },
+    {
+      "name": "Triangle d’Or & Faubourg Saint-Honoré",
+      "enName": "Golden Triangle & Faubourg Saint-Honoré",
+      "fr": "L’adresse du Paris des palaces, de la couture et de la gastronomie. Avenue George V et Faubourg Saint-Honoré offrent des ambiances différentes mais un service d’exception.",
+      "en": "The Paris of landmark palace hotels, couture and destination dining. Avenue George V and Faubourg Saint-Honoré have distinct rhythms and walking distances.",
+      "frWatch": "Vérifier le calme de la chambre : cour intérieure et grande avenue ne procurent pas la même expérience.",
+      "enWatch": "Confirm room outlook and noise levels: an inner courtyard and a grand avenue feel very different."
+    },
+    {
+      "name": "Saint-Germain-des-Prés & rive gauche",
+      "enName": "Saint-Germain-des-Prés & the Left Bank",
+      "fr": "Librairies, galeries, terrasses, adresses de quartier et une élégance plus résidentielle. Le Paris idéal pour ceux qui aiment prendre leur temps et sortir à pied.",
+      "en": "Bookshops, art galleries, cafés and an elegant residential pace. The Paris for guests who want to linger and explore on foot.",
+      "frWatch": "Les vues Tour Eiffel de certaines suites sont rares : ne pas les supposer incluses dans toutes les catégories.",
+      "enWatch": "Some Eiffel Tower suite views are rare; never assume they come with every room category."
+    }
+  ],
+  "experiences": [
+    {
+      "frTitle": "Paris par la Seine",
+      "enTitle": "Paris from the Seine",
+      "fr": "Un bateau privé à la bonne heure, le Louvre au détour des quais et la lumière qui change sur les ponts. Un privilège simple lorsque l’itinéraire est bien pensé.",
+      "en": "A private boat at the right hour, the Louvre glimpsed from the quays and light moving across historic bridges. A simple luxury when timing is considered."
+    },
+    {
+      "frTitle": "Un dîner qui devient un souvenir",
+      "enTitle": "Dining worth remembering",
+      "fr": "Choisir une grande table pour son atmosphère et son service, pas seulement pour sa réputation. Réservation et tenue éventuelle à confirmer en amont.",
+      "en": "Choose a great dining room for atmosphere and service, not reputation alone. Reservations and any dress code need confirmation."
+    },
+    {
+      "frTitle": "La rive gauche à son rythme",
+      "enTitle": "The Left Bank at your pace",
+      "fr": "Un café à Saint-Germain, une librairie, une galerie confidentielle et une promenade sans chronomètre jusqu’au jardin du Luxembourg.",
+      "en": "Coffee in Saint-Germain, a bookshop, a quiet gallery and an unhurried walk towards the Luxembourg Gardens."
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Cheval Blanc Paris",
+      "area": "La Seine · Samaritaine · 1er",
+      "fr": "Une maison contemporaine et confidentielle au-dessus de la Seine, avec les vues emblématiques de Paris selon la suite, un esprit d’art et de grands espaces bien-être.",
+      "en": "A discreet contemporary maison above the Seine, combining artful interiors, exceptional wellness and iconic city views in selected suites.",
+      "frWatch": "Confirmer précisément la vue, l’étage, la configuration des espaces et la catégorie de suite ; les photos illustrent des catégories spécifiques.",
+      "enWatch": "Verify view, floor, layout and the exact suite category; photographs depict particular room types.",
+      "officialUrl": "https://www.chevalblanc.com/en/maison/paris/"
+    },
+    {
+      "name": "Four Seasons Hotel George V, Paris",
+      "area": "Avenue George V · 8e",
+      "fr": "Le grand art du palace parisien : compositions florales spectaculaires, restauration de destination, cour intérieure et suites classiques dans le Triangle d’Or.",
+      "en": "Classic Paris palace theatre: extraordinary flowers, destination dining, a marble courtyard and elegant suites in the Golden Triangle.",
+      "frWatch": "Bien distinguer les chambres sur avenue, les vues sur cour et les suites avec panorama : la tour Eiffel n’est pas visible de toutes les chambres.",
+      "enWatch": "Distinguish avenue, courtyard and skyline categories; not every room overlooks the Eiffel Tower.",
+      "officialUrl": "https://www.fourseasons.com/paris/"
+    },
+    {
+      "name": "Le Bristol Paris",
+      "area": "Faubourg Saint-Honoré · 8e",
+      "fr": "Une maison qui conjugue le classicisme parisien à la douceur d’un jardin intérieur et à une gastronomie ambitieuse, dans une adresse historique du Faubourg.",
+      "en": "A Parisian institution marrying classic residential elegance, a secluded garden and destination dining on the Faubourg Saint-Honoré.",
+      "frWatch": "Comparer les catégories rénovées, les orientations sur rue ou jardin et l’accès aux équipements : toutes les chambres n’ont pas la même perspective.",
+      "enWatch": "Compare refurbished room types, street or garden outlooks and facility access; rooms do not all have the same view.",
+      "officialUrl": "https://www.oetkerhotels.com/hotels/le-bristol-paris/"
+    },
+    {
+      "name": "Mandarin Oriental Lutetia, Paris",
+      "area": "Boulevard Raspail · Saint-Germain · 6e",
+      "fr": "L’Art déco de la rive gauche, entre héritage culturel, design contemporain, spa et vues privilégiées sur les toits de Paris pour certaines suites.",
+      "en": "A Left Bank Art Deco landmark blending cultural heritage, contemporary design, wellness and special rooftop outlooks in selected suites.",
+      "frWatch": "Vérifier la catégorie de suite, le balcon et la vue éventuelle sur la tour Eiffel : ce ne sont pas des prestations universelles.",
+      "enWatch": "Confirm the suite category, balcony and any Eiffel Tower view; these are not standard room features.",
+      "officialUrl": "https://www.mandarinoriental.com/en/paris/lutetia"
+    }
+  ],
+  "checksFr": [
+    "Choisir son Paris avant son hôtel : rive gauche, Louvre ou Triangle d’Or impliquent des rythmes très différents.",
+    "Vérifier la chambre réellement réservée : vue, étage, balcon, accès spa et possibilité de chambres communicantes.",
+    "Anticiper restaurant, transfert et horaires d’arrivée ; les grandes tables ne garantissent pas de disponibilité.",
+    "Comparer conditions d’annulation, taxes, petit déjeuner et éventuels avantages propres à la catégorie."
+  ],
+  "checksEn": [
+    "Choose the Paris you want first: Left Bank, Louvre and Golden Triangle produce very different stays.",
+    "Confirm the actual room category, view, floor, balcony, spa access and any connecting rooms.",
+    "Plan restaurant reservations, transfers and arrival times; even celebrated hotel restaurants may be fully booked.",
+    "Compare cancellation rules, taxes, breakfast and category-specific inclusions."
+  ],
+  "photos": {
+    "paris-seine-hero": {
+      "src": "/images/travel/paris-premium/destination/paris-seine-hero.webp",
+      "fr": "Le Louvre et le pont des Arts photographiés depuis les quais de Seine à Paris",
+      "en": "The Louvre and Pont des Arts on Paris's Seine riverbank",
+      "author": "Jebulon",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Louvre_Pont_des_Arts.jpg"
+    },
+    "paris-pont-alexandre": {
+      "src": "/images/travel/paris-premium/destination/paris-pont-alexandre.webp",
+      "fr": "Vue sur la tour Eiffel et le pont Alexandre III depuis la Seine",
+      "en": "View of Eiffel Tower and Pont Alexandre III from the Seine",
+      "author": "Philippe Alès",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_and_Pont_Alexandre_III_from_Seine.jpg"
+    },
+    "paris-pont-des-arts": {
+      "src": "/images/travel/paris-premium/destination/paris-pont-des-arts.webp",
+      "fr": "Le Louvre et le pont des Arts depuis un bateau sur la Seine",
+      "en": "Louvre and Pont des Arts seen from a boat on the Seine",
+      "author": "Tangopaso",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Louvre_%26_pont_des_Arts.jpg"
+    },
+    "paris-champs-elysees": {
+      "src": "/images/travel/paris-premium/destination/paris-champs-elysees.webp",
+      "fr": "Les Champs-Élysées au crépuscule depuis l’Arc de Triomphe",
+      "en": "Champs-Élysées at dusk seen from the Arc de Triomphe",
+      "author": "ASaber91",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Champs_Elysees_from_the_Arch.jpg"
+    },
+    "paris-saint-germain": {
+      "src": "/images/travel/paris-premium/destination/paris-saint-germain.webp",
+      "fr": "Saint-Germain-des-Prés, l’église et les cafés voisins",
+      "en": "Saint-Germain-des-Prés church and nearby classic Paris cafés",
+      "author": "Serge Melki",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Saint-Germain_des_Pr%C3%A9s_(3363718209).jpg"
+    }
   }
+}
 };
 export function featuredCityGuide(slug:string | undefined):FeaturedCityGuideData | undefined {
  if (!slug || !(slug in featuredCityGuides)) return undefined;
