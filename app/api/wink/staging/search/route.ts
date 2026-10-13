@@ -80,8 +80,18 @@ export async function POST(request: NextRequest) {
       accountConfirmed: result.accountConfirmed, checkIn, nights, adults, rooms,
       pageCount: result.resultCount, totalElements: result.totalElements,
       totalPages: result.totalPages, currency: result.currency, hotels: result.hotels,
+      diagnostics: {
+        responseShapeValid: result.responseShapeValid,
+        pageNumberOfElements: result.pageNumberOfElements,
+        pageSize: result.pageSize,
+        queryMethod: result.method,
+      },
       info: result.totalElements === 0
-        ? 'Zéro résultat pour ce périmètre et cet itinéraire en staging. Essaie « Monde entier » ou « Tout le pays » pour distinguer inventaire disponible et recherche par ville.'
+        ? selectedScope.mode === 'global'
+          ? 'RankGlobal ne renvoie aucun hôtel classé pour cet itinéraire en staging. Cette méthode ne liste pas tout le catalogue et ne prouve pas que les hôtels sont absents.'
+          : selectedScope.mode === 'country'
+            ? 'RankByCountry ne renvoie aucun hôtel classé dans ce pays pour cet itinéraire de test. Vérifie une ville directement avec SearchByCity.'
+            : 'SearchByCity a répondu avec zéro résultat dans cette ville pour ces dates en staging. Les filtres facultatifs sont déjà absents. Il faut confirmer avec Wink quels hôtels sont publiés dans son environnement de démonstration.'
         : 'Données de test Wink staging : aucune disponibilité ou possibilité de réservation en production n’est garantie.',
     }, { headers: responseHeaders });
   } catch (error) {
