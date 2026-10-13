@@ -1,0 +1,1566 @@
+{
+  "cheval-blanc": {
+    "page": "https://www.chevalblanc.com/en/maison/paris/rooms-and-suites/",
+    "status": 403,
+    "url": "https://www.chevalblanc.com/en/maison/paris/rooms-and-suites/",
+    "length": 430,
+    "candidates": [],
+    "count": 0
+  },
+  "cheval-ravel": {
+    "page": "https://www.chevalblanc.com/en/maison/paris/rooms-and-suites/ravel-suite/",
+    "status": 403,
+    "url": "https://www.chevalblanc.com/en/maison/paris/rooms-and-suites/ravel-suite/",
+    "length": 450,
+    "candidates": [],
+    "count": 0
+  },
+  "cheval-home": {
+    "page": "https://www.chevalblanc.com/en/maison/paris/",
+    "status": 403,
+    "url": "https://www.chevalblanc.com/en/maison/paris/",
+    "length": 401,
+    "candidates": [],
+    "count": 0
+  },
+  "george-v": {
+    "page": "https://www.fourseasons.com/paris/photos-and-videos/",
+    "status": 403,
+    "url": "https://www.fourseasons.com/paris/photos-and-videos/",
+    "length": 411,
+    "candidates": [],
+    "count": 0
+  },
+  "george-v-home": {
+    "page": "https://www.fourseasons.com/paris/",
+    "status": 403,
+    "url": "https://www.fourseasons.com/paris/",
+    "length": 381,
+    "candidates": [],
+    "count": 0
+  },
+  "bristol": {
+    "page": "https://www.oetkerhotels.com/hotels/le-bristol-paris/gallery/",
+    "status": 429,
+    "url": "https://www.oetkerhotels.com/hotels/le-bristol-paris/gallery/",
+    "length": 33949,
+    "candidates": [],
+    "count": 0
+  },
+  "bristol-suite": {
+    "page": "https://www.oetkerhotels.com/hotels/le-bristol-paris/accommodations/rooms-suites/deluxe-suite-garden/gallery/",
+    "status": 429,
+    "url": "https://www.oetkerhotels.com/hotels/le-bristol-paris/accommodations/rooms-suites/deluxe-suite-garden/gallery/",
+    "length": 33949,
+    "candidates": [],
+    "count": 0
+  },
+  "lutetia": {
+    "page": "https://www.mandarinoriental.com/en/paris/lutetia/gallery",
+    "status": 200,
+    "url": "https://www.mandarinoriental.com/en/paris/lutetia/gallery",
+    "length": 1373516,
+    "candidates": [
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/nsZ8J29W3zvRCSVUKdTY.jpg",
+        "alt": "   ",
+        "type": "srcset"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/p2QyJk6K56bdtaZPxDoS.jpg",
+        "alt": "   ",
+        "type": "srcset"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/MHZoeVCBctQ7CntVRZ2z.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/Szq8MMmpoLyEYsaL5xyL.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/jEfHfvZ8R8EzFXUDwQG1.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/EnNTne4iuoiLz8nfW6Po.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/kU3FVVpZkr2EKDiGY7f6.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/WbuCMWKD3UGZ6mfVyXh3.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/cgQHJy2x5kZHt9TQ324s.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/BE9nDVxSr1AimkcQPstC.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/jC6JRdgmvuxLqhKedvmy.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/sSRRuX5HHYLBGmTdtFFj.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SLatQRjxNsNxDgWueaWo.JPG",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/2A4URrdt9kAXJEYwRuwn.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SR8cwmfiSvsssiVNfPmU.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/shCszWDMFsSXSn45vdpy.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/8u7cK6rKpb72Eeimd4DT.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/9AnzC9hDoFbsf5TjRjQJ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/4jrTXGwY8BbZJnUYRZa1.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/YwMhkuQuhgkqsKczGXuc.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/xbHKxz4RSDHSRvrT5pRF.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/aq2hRUD5Tfpkof5hz3A9.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/YynxrRiD2VztFhRrg78q.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/FBKogNPJfgGffjyAWRBq.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/RcrJTKLMpz1TzHAVVcAA.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/QXtJ3AbMM9XZzcUQCi2G.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/RrsSio6SK6NNp9mGbe7M.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/rbBVgu2chZajQG6eMnHV.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/ZB41Assk4CVSPk2C62s2.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/tzMipm5tmTuBm928rxnm.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/DmybWNEQcrJm2V2wTpqQ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/kWfzhcWkYqYy3mvfv6hK.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/4eztVCJ9UiWguhZupzUF.JPG",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/oguVS96uZPiShQWw188g.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/RigVFRjtUNiHH3Mn7mPb.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/erDVWJhYfucm1PU5qqfw.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/xi1ZF2HTHHvjMWiKT6gZ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/BBAR3LMyyLjrQn2W7D7o.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/EwXUatJJ45sCE9E8nD35.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/NnarpwtbV3PgWS9hJFph.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/xDyhCq9ioVmiBkCg4Ltb.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/5x382LhLqGrGZZH5UxRE.jpeg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SSBvhuYKs9CnE5LUXXPG.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/bpUVwdG1gx2hhWPYY5cs.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/MN4LPyHw4BR3ZLBqSa6y.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/dAgjF2xEWncNF5ve8L2M.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/absBHNUkDu79qVkKjm2d.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/9sKrfQG8HUyxzpuBXPhq.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/1tZni9RF2PtWfERCrk4V.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/nZe6UjRCUTeTd33dMtkZ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/AvtYN99cmhGdBaBobqJU.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/euimvkZMTyX2xiQyFpQV.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/LKqz4yvQxx8JZQosgN3N.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/YyqmJvy6M5Eh6KcKJFwg.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/htZiet8gg93G7XrYsxKW.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/hw1CjCoANWp48bvUNhTW.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/L7QXsynxjuWEH54udNWo.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/WznNi7HMWn843TF4Gdc4.JPG",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/kuJCCuUzRGpLak9NTu4Y.JPG",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/qTw2nFxv1idJ1dbouYTY.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/HxjPvwZzWi6Aj8W87325.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/gF7g2HoJ2et8F6ZvSGPS.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/1RRikx2EzAu9Wv7TpKTd.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/dEzRBwsCJqeZw9fpXAR8.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/cNEQoqU9x3c8JL52wbwK.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/tUZMSperZ3msbY4x5wQV.JPG",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/Na2XXpi2oHxTiTzrDaLd.JPG",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/kzoZxMFCtBUhaT19g5Pt.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/GmcgMuVzzkvYKiDM9GXx.JPG",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/xU3eCDKYpApUnhZYQRYt.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SVjci3N8WtN3YfD6uNWA.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/gJuzGRUhMkPkxheFfg2w.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/Sk74asEkvKX5exCLHimM.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/qvk6134fK3JwUBRviq1h.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/FtRuy13yZPCwgBDYoMVR.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/hycexqJVNWfN17b1QPiJ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/7PPXoc6kewPZkqQyvdMr.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/QXt5AjDzbxv6hg7a3o8b.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/Dp1L67ZGkQdRy3mcxbZo.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/sEhFY3dhC5CehBcwiQ44.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/yhZfrqvTvMktJbGvHccr.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/pLGJJhRWj35L6iajYAxo.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/VPb9VJ4yhWdZe7c1S9HR.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/xGiGhNyJG3SAcR2Nc6p5.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/qdf35sCjQZMtdeqAyLHX.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/XusycoVeJM8tCsHmZb3k.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/YvxVS5Cgf3q1CVGci2oE.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/PTYdAJMmMdoGDdgD5zqo.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/3utKg4z7HdrJ2Mzp59LT.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/reFLgzDrLw1d2KxFKSEw.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/9CkiicLbVqS78w8kTzQh.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/5DKpRXZ8WyTvRnh7hTJZ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/xy8s39TYd3vfhWiUiCPf.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/HffNZZQR3nCKdGDQuVyK.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/KYzx4HwJkWo25zbjVJsp.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/GHAFH7yzY9t7vskQNZFq.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/NBRSi1Gc7Amn4Aa69gdc.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/y6irsYgxeMFXwCoGv4dK.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/henvb6493n542z2HE67T.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/aZDxerrrCuZFUygJWEZP.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/s6ihZdXeAHUgigbsZdxS.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/jwaRE9gd5F9woBfWWBPS.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/aewMhsqYpgEnSmSxjNx1.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/Cv8dQZhZEcs89BdXocxw.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/23VNLjVeRdW4enonXYLV.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/bUM1v2RoSoyEvse2dsZG.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/gz4vNuuNJZV5DJgtDpi9.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/MMSrB6cSKzx5xtEoAfsL.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/M57tjB9WiJtcJNUiw98b.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/9sfPYezWqg1BRWS2kQZr.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/bTzZyRhGR1ZZr5Dqniy3.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/A9U7X4G4WkJJ6t9aDKE8.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/cuXJMJK4m2LWgmK7yHou.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/x2RBgBjUp7ePmQMXSkst.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/NfjAzQrdc4wRU1mM5qU8.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/14pMsqdPUfis6WdAVAow.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/WYub65oypteqhg5NNNwb.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/fyAqiDEsCgfwszwesHCz.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/TzgXEWKtj4wYaxY17qkS.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/bVJjX4NnWgWNGQycyUTd.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/qb581xzMYtS2JZsz6GZS.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/dE6rwpHocggffenUkQod.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/9d3UPH41wwhTxHKexNvh.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/dT88cSjLpKGF7HqUEUHE.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/QMp2L1fheAcF81XNYoq1.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/DJVwENwFg2UGYHc13CYy.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      }
+    ],
+    "count": 126
+  },
+  "lutetia-home": {
+    "page": "https://www.mandarinoriental.com/en/paris/lutetia",
+    "status": 200,
+    "url": "https://www.mandarinoriental.com/en/paris/lutetia",
+    "length": 1469893,
+    "candidates": [
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/nsZ8J29W3zvRCSVUKdTY.jpg",
+        "alt": "   ",
+        "type": "srcset"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/p2QyJk6K56bdtaZPxDoS.jpg",
+        "alt": "   ",
+        "type": "srcset"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/HxjPvwZzWi6Aj8W87325.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/gF7g2HoJ2et8F6ZvSGPS.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/MHZoeVCBctQ7CntVRZ2z.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/Szq8MMmpoLyEYsaL5xyL.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/jEfHfvZ8R8EzFXUDwQG1.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/EnNTne4iuoiLz8nfW6Po.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/kU3FVVpZkr2EKDiGY7f6.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/WbuCMWKD3UGZ6mfVyXh3.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/cgQHJy2x5kZHt9TQ324s.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/BE9nDVxSr1AimkcQPstC.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/jC6JRdgmvuxLqhKedvmy.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/sSRRuX5HHYLBGmTdtFFj.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SLatQRjxNsNxDgWueaWo.JPG",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/2A4URrdt9kAXJEYwRuwn.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SR8cwmfiSvsssiVNfPmU.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/shCszWDMFsSXSn45vdpy.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/8u7cK6rKpb72Eeimd4DT.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/9AnzC9hDoFbsf5TjRjQJ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/4jrTXGwY8BbZJnUYRZa1.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/YwMhkuQuhgkqsKczGXuc.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/xbHKxz4RSDHSRvrT5pRF.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/aq2hRUD5Tfpkof5hz3A9.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/YynxrRiD2VztFhRrg78q.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/FBKogNPJfgGffjyAWRBq.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/RcrJTKLMpz1TzHAVVcAA.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/QXtJ3AbMM9XZzcUQCi2G.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/RrsSio6SK6NNp9mGbe7M.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/rbBVgu2chZajQG6eMnHV.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/ZB41Assk4CVSPk2C62s2.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/tzMipm5tmTuBm928rxnm.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/DmybWNEQcrJm2V2wTpqQ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/kWfzhcWkYqYy3mvfv6hK.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/4eztVCJ9UiWguhZupzUF.JPG",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/oguVS96uZPiShQWw188g.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/RigVFRjtUNiHH3Mn7mPb.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/erDVWJhYfucm1PU5qqfw.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/xi1ZF2HTHHvjMWiKT6gZ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/BBAR3LMyyLjrQn2W7D7o.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/EwXUatJJ45sCE9E8nD35.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/NnarpwtbV3PgWS9hJFph.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/xDyhCq9ioVmiBkCg4Ltb.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/5x382LhLqGrGZZH5UxRE.jpeg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SSBvhuYKs9CnE5LUXXPG.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/bpUVwdG1gx2hhWPYY5cs.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/MN4LPyHw4BR3ZLBqSa6y.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/dAgjF2xEWncNF5ve8L2M.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/absBHNUkDu79qVkKjm2d.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/9sKrfQG8HUyxzpuBXPhq.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/1tZni9RF2PtWfERCrk4V.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/nZe6UjRCUTeTd33dMtkZ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/AvtYN99cmhGdBaBobqJU.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/euimvkZMTyX2xiQyFpQV.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/LKqz4yvQxx8JZQosgN3N.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/YyqmJvy6M5Eh6KcKJFwg.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/htZiet8gg93G7XrYsxKW.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/hw1CjCoANWp48bvUNhTW.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/L7QXsynxjuWEH54udNWo.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/WznNi7HMWn843TF4Gdc4.JPG",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/kuJCCuUzRGpLak9NTu4Y.JPG",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/qTw2nFxv1idJ1dbouYTY.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/1RRikx2EzAu9Wv7TpKTd.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/dEzRBwsCJqeZw9fpXAR8.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/cNEQoqU9x3c8JL52wbwK.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/tUZMSperZ3msbY4x5wQV.JPG",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/Na2XXpi2oHxTiTzrDaLd.JPG",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/kzoZxMFCtBUhaT19g5Pt.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/GmcgMuVzzkvYKiDM9GXx.JPG",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/xU3eCDKYpApUnhZYQRYt.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SVjci3N8WtN3YfD6uNWA.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/gJuzGRUhMkPkxheFfg2w.png",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/Sk74asEkvKX5exCLHimM.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/qvk6134fK3JwUBRviq1h.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/zLbUekHu8bYAPH1oQoaQ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/bQYe15tpx4gjFZbFr295.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/eHosWDQXem1XuZ5pcuST.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/bkBL44EnR8ZaSSscwixY.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/uhoZDdqoZPmAU1k6vdbU.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/AeCwz41HzWtSYeDwxcXu.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/FLDtyB9Rp5TZrytSSTFQ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/CzfKziBAmN1nTtKLGRT5.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/aSjJkqh2rt27o2RE2kyw.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/g2aa8GFHFRLwmRPftezK.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/1idH5nvcSYW3WFja6wmZ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/t1WrA9bxm6r8mA8Wd5eF.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/rX5opidPerx3HcTvGxbp.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/DHDobsSUDFYz63kzuFjH.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/ddLM69tSLczaZJ7Zr9BM.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/BWCo7ACW1vdy8PZHFhLZ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/bebbrhZSMGcwb2qhSGCk.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/YXcZMjtGSYjboyJFcH1f.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/BzLjM76f5upXBwBKXkMn.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/cUVzsfAS3WFiitzDBZcC.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/Q4ZNSW6Ae1EuboTTGWVq.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/atMLQWQvjfuZUKUSbLWw.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/oT7Cgq2Y9ZGB6yePceuF.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/dijrjjQWZoGV8A3YfPKf.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/rv4VLeGTys4hjcxjc9uh.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/CmvQRJezf26XuvHymovE.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/eSuzDMdtiESWxTEWFQGj.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/JsoDZ4FZucAzcr4VCbFF.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/fb9v1WcHiEeSzs4AL8Sk.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/QjrYmqo5VxYz8aH8564g.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/Dayj6jVPBxHb4byrL9ND.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/PbyBi9Q6vjJNK1ekx1XC.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/6cEZFcc1xX6FkPZTNRBh.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/7aAa4d8Axi1iLB6F2b3i.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/mPeoDijJhXSE9Cd63mR5.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/X1WJnH5CdYx7LfsTgL1i.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/Bw7oFMKMdimk2gHquSTQ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/oAiUJRRroYrDZbPWGMWu.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/YRziLcBsyBvA944hcFvY.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SFopPXPQvayZHRRGCDnb.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/UoLfBt5kE2d9iwiZPVUd.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/QMp2L1fheAcF81XNYoq1.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/kfvyP4D5RuVQwLXWYumF.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/V1jB9FE18Soe2kvA9D7u.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/vTUbpLpzbxjhYgJ8NsKP.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/qUSyy71WT1NeFPmCwDrw.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/afNtTdUR9RsJ1deifhRV.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/6fAdcRCuBCVGLPH63o9h.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/yhZfrqvTvMktJbGvHccr.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/EndrYMwzRTPb9Bd4KfqP.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/9poADQyzuFvD3UgHJ5ev.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/1gPbkQxALvFmCWC4AiwX.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/dWttGJgVDPKbToBJEGcd.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/RME2cdn6js1xntpuqtZ8.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/PTYdAJMmMdoGDdgD5zqo.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/A93uF3VwqeERtfDGSfbJ.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/i8iZf1fMatJCQwSQMJMq.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/Ysgrvm8es9hKctK7CpeT.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/WaXPLr5X3c42nA2oWo8W.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/otvHdqFtgz1bN3vvCLue.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/BYULTzrnXXchBYvAbudH.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/pwxarL241vHrUbNviEY2.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/d1c5hfZyAvPnHN3Wjvzg.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/hWHmorZQTFV91oW3vVQH.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/WDhz6n99N9vB96fBGXVD.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/8H5qojNAX9xWV2kUkYWF.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/JXYLuWb8caLhfa6VQEfF.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/v67bgJBtmSnubZpWp4t7.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/fjdBVwGgu2QPLiGgm13d.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/vxbRc9X7LWymRBunyjJg.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/STwNfx1ZetMN3G69E8Gr.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/bQHuqhHvTWm6WnvGK8Tn.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/iEJHBLdD2E5C2zwCBZna.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/NZQygARouuUMG2d7YutB.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/xu357DUm2HZsKVP5sB3c.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/oEWXCkqwCsr93g7zvcab.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/BwE4r4odqKq2rnBHPmtK.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/9iQnYtBvhNiiTjxm1uH5.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/4FzsdFqydmGBVyiqRksm.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/nUCZqzqWHygrrn8VM5JC.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/VmMaZg8U2uRPKYUtY6gR.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/fGqBuwrboFNJopgYPVUn.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/gJ9nrfwRHUcfFUySfT7U.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/2XMmEKzrgxiL5B2Z61MW.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/ukeCdFPDscKFTFnT7Amk.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/YWRU4k5CQrvF5fuwBnQy.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SjWdTavFZKcaamGm46ZL.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/SYxM2tkyv1cn8cPpjfib.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/iyZ7zoaRgKLmHKiSQyeE.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/LHMXLcQPViSfo5YY2t4Z.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/P4sdFY9cPusNjcqGbUqq.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/tDtyywN9K4LXen1sAYrE.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/FJGyGRzcrAQ7xnFFnVLw.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/r3buhT7SJhbaeoGS4oZT.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/oE4Sauoo3nDudANRqZJb.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/gnCGE5F6qQebNjUgByWi.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/sEhFY3dhC5CehBcwiQ44.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      },
+      {
+        "src": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/4bS6L6bsa31Qfu5nRYMk.jpg",
+        "alt": "page data URL",
+        "type": "script"
+      }
+    ],
+    "count": 172
+  }
+}
