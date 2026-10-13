@@ -7,6 +7,7 @@ type SearchResult = {
   ok: boolean; city?: string; checkIn?: string; nights?: number; adults?: number; rooms?: number;
   pageCount?: number; totalElements?: number; totalPages?: number; searchedAt?: string;
   currency?: string; hotels?: Hotel[]; accountConfirmed?: boolean; info?: string; method?: string; filters?: string;
+  diagnostics?: { responseShapeValid: boolean; pageNumberOfElements: number; pageSize: number; queryMethod: string };
   error?: string; stage?: string; grpcCode?: number;
 };
 const searchAreas = [
@@ -125,7 +126,8 @@ export function WinkStagingSearchLab() {
             <div className="rounded-xl bg-[#f6f5f2] p-4"><div className="text-xs text-slate-500">Compte affilié</div><div className="mt-2 font-semibold">{result.accountConfirmed ? 'Reconnu' : 'Non confirmé'}</div></div>
           </div>
           <p className="mt-5 text-sm text-slate-600">{result.info}</p>
-          <p className="mt-2 text-xs text-slate-500">Méthode Wink : {result.method || '—'} · Aucun filtre facultatif appliqué. La page affiche au maximum 5 fiches ; le « Total API » est indépendant de cette limite.</p>
+          <p className="mt-2 text-xs text-slate-500">Méthode Wink : <strong>{result.method || '—'}</strong> · Aucun filtre facultatif appliqué. La page affiche au maximum 5 fiches ; le « Total API » est indépendant de cette limite.</p>
+          {result.diagnostics && <p className="mt-2 text-xs text-slate-500">Réponse gRPC reconnue : {result.diagnostics.responseShapeValid ? 'oui' : 'non'} · Lignes de la page selon Wink : {result.diagnostics.pageNumberOfElements} · Taille de page : {result.diagnostics.pageSize}. Les identifiants secrets et les comptes ne sont jamais affichés.</p>}
           {result.hotels && result.hotels.length > 0 && <div className="mt-7 space-y-3">
             {result.hotels.map((hotel, index) => <div key={index} className="flex items-center gap-4 rounded-xl border border-slate-200 p-3">
               {hotel.heroImageUrl && <img src={hotel.heroImageUrl} alt={hotel.name} loading="lazy" className="h-20 w-28 rounded-lg object-cover" />}
