@@ -18,6 +18,8 @@ PICS=[
     "Champs-Élysées from the Arc de Triomphe at dusk","Les Champs-Élysées depuis l’Arc de Triomphe au crépuscule"),
   ("paris-saint-germain","Saint-Germain des Prés (3363718209).jpg","Serge Melki","CC BY 2.0","https://creativecommons.org/licenses/by/2.0/",
     "Saint-Germain-des-Prés, the historic church and nearby Parisian café","Saint-Germain-des-Prés, son église historique et les cafés voisins"),
+  ("paris-eiffel-seine-wide","Eiffel Tower from Seine river.jpg","Udit Kapoor","CC BY-SA 4.0","https://creativecommons.org/licenses/by-sa/4.0/",
+    "Wide view of the Eiffel Tower from the Seine riverbank","Vue panoramique de la tour Eiffel depuis la Seine"),
   ("paris-pont-alexandre","Eiffel Tower and Pont Alexandre III from Seine.jpg","Philippe Alès","CC BY-SA 3.0","https://creativecommons.org/licenses/by-sa/3.0/",
     "Eiffel Tower and Pont Alexandre III from the Seine","La tour Eiffel et le pont Alexandre III vus depuis la Seine")
 ]
