@@ -1,8 +1,8 @@
 {
   "scope": "Paris destination landscapes only, hotels independent",
-  "downloaded": 5,
-  "expected": 5,
-  "updatedAt": "2026-10-13T00:03:21.018035+00:00",
+  "downloaded": 6,
+  "expected": 6,
+  "updatedAt": "2026-10-13T00:11:00.609659+00:00",
   "items": [
     {
       "key": "paris-seine-hero",
@@ -98,6 +98,30 @@
       ],
       "bytes": 221016,
       "sha256": "8139e2a2176be0b0f24f377ea116e4a3630fa4326a1dd49d25c56978b91af109",
+      "transformations": "EXIF normalized, resized, WebP q86"
+    },
+    {
+      "key": "paris-eiffel-seine-wide",
+      "sourceFile": "Eiffel Tower from Seine river.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_from_Seine_river.jpg",
+      "author": "Udit Kapoor",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "fr": "Vue panoramique de la tour Eiffel depuis la Seine",
+      "en": "Wide view of the Eiffel Tower from the Seine riverbank",
+      "localPath": "/images/travel/paris-premium/destination/paris-eiffel-seine-wide.webp",
+      "status": "downloaded",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Eiffel_Tower_from_Seine_river.jpg/1920px-Eiffel_Tower_from_Seine_river.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceSize": [
+        1920,
+        1106
+      ],
+      "outputSize": [
+        1920,
+        1106
+      ],
+      "bytes": 460950,
+      "sha256": "f7873e046e541f6fa1a849a51e225105347babdf905ea2d82f1385c1a7466f39",
       "transformations": "EXIF normalized, resized, WebP q86"
     },
     {
