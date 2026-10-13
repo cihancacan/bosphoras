@@ -473,7 +473,7 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
   "name": "Paris",
   "country": "France",
   "hero": "paris-seine-hero",
-  "secondary": "paris-pont-alexandre",
+  "secondary": "paris-eiffel-seine-wide",
   "eyebrowFr": "La Ville Lumière, autrement",
   "eyebrowEn": "An intimate City of Light",
   "headingFr": "Paris, la beauté d’un séjour à part.",
@@ -589,6 +589,15 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
       "license": "CC0 1.0",
       "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Louvre_Pont_des_Arts.jpg"
+    },
+    "paris-eiffel-seine-wide": {
+      "src": "/images/travel/paris-premium/destination/paris-eiffel-seine-wide.webp",
+      "fr": "La tour Eiffel vue depuis la Seine, dans un cadrage panoramique lumineux",
+      "en": "A wide bright panorama of the Eiffel Tower seen from the Seine",
+      "author": "Udit Kapoor",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_from_Seine_river.jpg"
     },
     "paris-pont-alexandre": {
       "src": "/images/travel/paris-premium/destination/paris-pont-alexandre.webp",
