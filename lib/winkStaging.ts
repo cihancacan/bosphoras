@@ -160,9 +160,14 @@ export async function searchStagingInventory(query: WinkStagingQuery) {
     }, metadata));
   } finally { searchClient.close(); }
 
-  const page = response.page || response;
-  const hotels = Array.isArray(page.content) ? page.content : [];
+  // Do not turn an unexpected gRPC payload into a misleading "0 hotels" result.
+  const page = response.page ?? response;
+  if (!page || typeof page !== 'object' || !Array.isArray(page.content)) {
+    throw new WinkStagingError('search');
+  }
+  const hotels = page.content as JsonRecord[];
   const total = Number(page.totalElements ?? hotels.length);
+  const numberOfElements = Number(page.numberOfElements ?? hotels.length);
   return {
     query,
     searchedAt: new Date().toISOString(),
@@ -171,6 +176,9 @@ export async function searchStagingInventory(query: WinkStagingQuery) {
     resultCount: hotels.length,
     totalElements: Number.isFinite(total) ? total : hotels.length,
     totalPages: Number(page.totalPages ?? 0),
+    pageNumberOfElements: Number.isFinite(numberOfElements) ? numberOfElements : hotels.length,
+    pageSize: Number(page.size ?? query.size ?? 5),
+    responseShapeValid: true,
     currency: String(response.currencyCode || 'EUR'),
     hotels: hotels.map((hotel: JsonRecord) => ({
       name: String(hotel.name || ''),
