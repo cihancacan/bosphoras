@@ -6,11 +6,14 @@ import { bodrumHotelEditorial, bodrumAreaVisuals } from '@/data/travel/bodrumPre
 import { antalyaHotelEditorial, antalyaAreaVisuals } from '@/data/travel/antalyaPremiumEditorial';
 import { dubaiHotelEditorial, dubaiAreaVisuals } from '@/data/travel/dubaiPremiumEditorial';
 import { parisHotelEditorial, parisAreaVisuals } from '@/data/travel/parisPremiumEditorial';
+import { saintTropezHotelEditorial, saintTropezAreaVisuals } from '@/data/travel/saintTropezPremiumEditorial';
+import saintTropezPhotoManifest from '@/data/travel/saintTropezPremiumImageSources.json';
 import parisPhotoManifest from '@/data/travel/parisPremiumImageSources.json';
 import dubaiPhotoManifest from '@/data/travel/dubaiPremiumImageSources.json';
-const hotelEditorialByCity={bodrum:bodrumHotelEditorial,antalya:antalyaHotelEditorial,dubai:dubaiHotelEditorial,paris:parisHotelEditorial} as const;
+const hotelEditorialByCity={bodrum:bodrumHotelEditorial,antalya:antalyaHotelEditorial,dubai:dubaiHotelEditorial,paris:parisHotelEditorial,'saint-tropez':saintTropezHotelEditorial} as const;
 const confirmedDubaiAssets=new Set(dubaiPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 const confirmedParisAssets=new Set(parisPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
+const confirmedSaintTropezAssets=new Set(saintTropezPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 
 type Lang = 'fr' | 'en';
 type Variant = 'destination' | 'hotels';
@@ -40,7 +43,7 @@ function CityPhoto({photo,locale,priority=false}: {photo:FeaturedCityPhoto;local
 function PremiumHotelGallery({hotelName,city,locale,expanded=false}: {hotelName:string;city:FeaturedCityGuideData['slug'];locale:Lang;expanded?:boolean}) {
   const entry=hotelEditorialByCity[city][hotelName];
   if(!entry || !entry.photos.length) return null;
-  const photos=city==='dubai' ? entry.photos.filter(photo=>confirmedDubaiAssets.has(photo.src)) : city==='paris' ? entry.photos.filter(photo=>confirmedParisAssets.has(photo.src)) : entry.photos;
+  const photos=city==='dubai' ? entry.photos.filter(photo=>confirmedDubaiAssets.has(photo.src)) : city==='paris' ? entry.photos.filter(photo=>confirmedParisAssets.has(photo.src)) : city==='saint-tropez' ? entry.photos.filter(photo=>confirmedSaintTropezAssets.has(photo.src)) : entry.photos;
   if(!photos.length) return null;
   const first=photos[0];
   return <figure className="mt-5">
@@ -67,7 +70,7 @@ function PremiumHotelGallery({hotelName,city,locale,expanded=false}: {hotelName:
 }
 
 function DestinationAreaPhoto({city,index,locale}: {city:FeaturedCityGuideData['slug'];index:number;locale:Lang}) {
-  const photo=city==='bodrum' ? bodrumAreaVisuals[index] : city==='antalya' ? antalyaAreaVisuals[index] : city==='dubai' ? dubaiAreaVisuals[index] : parisAreaVisuals[index];
+  const photo=city==='bodrum' ? bodrumAreaVisuals[index] : city==='antalya' ? antalyaAreaVisuals[index] : city==='dubai' ? dubaiAreaVisuals[index] : city==='paris' ? parisAreaVisuals[index] : saintTropezAreaVisuals[index];
   if(!photo)return null;
   return <figure className="mt-5">
     <div className="relative aspect-[16/10] overflow-hidden bg-[#e8dfd0]">
@@ -101,11 +104,11 @@ function HotelTeaser({ guide, locale }: {guide:FeaturedCityGuideData;locale:Lang
         {guide.hotels.map((hotel,index)=><article key={hotel.name} className="flex flex-col bg-white p-6">
           <span className="text-xs tracking-[.15em] text-[#9b794b]">{String(index+1).padStart(2,'0')} · {hotel.area}</span>
           <h3 className="mt-4 font-serif text-2xl">{hotel.name}</h3>
-          {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris') && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale}/>}
+          {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez') && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale}/>}
           <p className="mt-4 text-sm leading-7 text-[#53636a]">{fr?hotel.fr:hotel.en}</p>
-          {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris') && hotelEditorialByCity[guide.slug][hotel.name] && <p className="mt-4 border-l-2 border-[#bb9867] pl-3 text-xs leading-6 text-[#5d6a71]">
+          {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez') && hotelEditorialByCity[guide.slug][hotel.name] && <p className="mt-4 border-l-2 border-[#bb9867] pl-3 text-xs leading-6 text-[#5d6a71]">
             <strong>{fr?'Pour qui ? ':'Best suited to: '}</strong>
-            {fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'][hotel.name].frBest:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'][hotel.name].enBest}
+            {fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'][hotel.name].frBest:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'][hotel.name].enBest}
           </p>}
         </article>)}
       </div>
@@ -128,15 +131,15 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
         <p className="text-xs uppercase tracking-[.14em] text-[#9a7849]">
           {String(i+1).padStart(2,'0')} · {hotel.area}</p>
         <h3 className="mt-4 font-serif text-3xl">{hotel.name}</h3>
-        {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris') && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale} expanded />}
+        {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez') && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale} expanded />}
         <p className="mt-6 leading-8 text-[#475862]">{fr?hotel.fr:hotel.en}</p>
-        {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris') && hotelEditorialByCity[guide.slug][hotel.name] && <div className="mt-7 border-t border-[#e7dac9] pt-6">
+        {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez') && hotelEditorialByCity[guide.slug][hotel.name] && <div className="mt-7 border-t border-[#e7dac9] pt-6">
           <h4 className="font-serif text-xl">{fr?'Notre lecture de cette adresse':'Our take on this address'}</h4>
           <p className="mt-4 text-sm leading-8 text-[#51616b]">
-            {fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'][hotel.name].frStory:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'][hotel.name].enStory}
+            {fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'][hotel.name].frStory:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'][hotel.name].enStory}
           </p>
           <p className="mt-5 text-sm leading-7 font-medium text-[#7d603b]">
-            {fr?'À privilégier pour : ':'Best for: '}{fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'][hotel.name].frBest:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'][hotel.name].enBest}
+            {fr?'À privilégier pour : ':'Best for: '}{fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'][hotel.name].frBest:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'][hotel.name].enBest}
           </p>
         </div>}
         <p className="mt-6 border-l-2 border-[#b18c55] pl-4 text-sm leading-7 text-[#53636c]">
@@ -192,24 +195,27 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           ? <div className="absolute inset-0 bg-gradient-to-r from-[#0c1d2e]/64 via-[#10283b]/25 to-transparent"/>
           : city.slug === 'paris'
           ? <div className="absolute inset-0 bg-gradient-to-r from-[#1b1c23]/85 via-[#242c33]/55 to-[#3b4144]/10"/>
+          : city.slug === 'saint-tropez'
+          ? <div className="absolute inset-0 bg-gradient-to-r from-[#081e28]/75 via-[#133244]/32 to-transparent"/>
           : <div className="absolute inset-0 bg-gradient-to-r from-[#081d28]/95 via-[#081d28]/75 to-[#081d28]/25"/>}
       </div>
       <div className="relative mx-auto max-w-7xl px-5 pb-28 pt-16 sm:pb-40 sm:pt-28">
-        <div className={(city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris') ? 'max-w-[900px] rounded-2xl border border-white/10 bg-[#091c24]/65 px-5 py-7 shadow-2xl backdrop-blur-[3px] sm:px-10 sm:py-9' : ''}>
+        <div className={(city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez') ? 'max-w-[900px] rounded-2xl border border-white/10 bg-[#091c24]/65 px-5 py-7 shadow-2xl backdrop-blur-[3px] sm:px-10 sm:py-9' : ''}>
         <p className="text-xs uppercase tracking-[.25em] text-[#f1cc8f]">Bosphoras · Luxury Stays
           {' / '}{fr?city.eyebrowFr:city.eyebrowEn}</p>
-        <h1 className={(city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris') ? 'mt-9 max-w-4xl font-serif text-4xl leading-tight text-white [text-shadow:0_3px_14px_rgba(0,0,0,0.65)] sm:text-6xl lg:text-7xl' : 'mt-9 max-w-4xl font-serif text-4xl leading-tight sm:text-6xl lg:text-7xl'}>
+        <h1 className={(city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez') ? 'mt-9 max-w-4xl font-serif text-4xl leading-tight text-white [text-shadow:0_3px_14px_rgba(0,0,0,0.65)] sm:text-6xl lg:text-7xl' : 'mt-9 max-w-4xl font-serif text-4xl leading-tight sm:text-6xl lg:text-7xl'}>
           {hotelPage?(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.')
             :(fr?city.headingFr:city.headingEn)}</h1>
-        {(city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris') && <p className="mt-4 text-xs text-[#efe0c7]">
+        {(city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez') && <p className="mt-4 text-xs text-[#efe0c7]">
           {city.slug==='bodrum'?(fr?'Paysage : une crique de la péninsule de Bodrum':'Landscape: a Bodrum Peninsula cove')
             :city.slug==='antalya'?(fr?'Illustration IA inspirée d’Antalya · Vue artistique, non photographique':'AI illustration inspired by Antalya · Artistic view, not a photograph')
             :city.slug==='dubai'?(fr?'Palm West Beach · plage et skyline dans la lumière dorée':'Palm West Beach · sunny beachfront and golden skyline')
-            :(fr?'La Seine, le Louvre et le pont des Arts · photographie de Paris':'The Seine, the Louvre and Pont des Arts · genuine Paris photograph')} ·{' '}
+            :city.slug==='paris'?(fr?'La Seine, le Louvre et le pont des Arts · photographie de Paris':'The Seine, the Louvre and Pont des Arts · genuine Paris photograph')
+            :(fr?'Saint-Tropez · village et Vieux-Port vus du ciel':'Saint-Tropez · aerial view of the village and Old Port')} ·{' '}
           {city.slug==='antalya' ? <span>{hero.author}</span>
             : <a href={hero.sourcePage} rel="noopener noreferrer" target="_blank" className="underline underline-offset-2">{hero.author}</a>}
         </p>}
-        <p className={(city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris') ? 'mt-8 max-w-3xl text-lg leading-8 text-white [text-shadow:0_2px_8px_rgba(0,0,0,0.65)]' : 'mt-8 max-w-3xl text-lg leading-8 text-[#e4e8e5]'}>
+        <p className={(city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez') ? 'mt-8 max-w-3xl text-lg leading-8 text-white [text-shadow:0_2px_8px_rgba(0,0,0,0.65)]' : 'mt-8 max-w-3xl text-lg leading-8 text-[#e4e8e5]'}>
           {hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}</p>
         </div>
         <div className="mt-10 flex flex-wrap gap-3">
@@ -245,7 +251,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         {city.areas.map((area,i)=><article key={area.name} className="flex flex-col border border-[#e6ddce] bg-white p-7">
           <p className="font-serif text-3xl text-[#b18f59]">{String(i+1).padStart(2,'0')}</p>
           <h3 className="mt-5 font-serif text-2xl">{fr?area.name:area.enName}</h3>
-          {(city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris') && <DestinationAreaPhoto city={city.slug} index={i} locale={locale}/>}
+          {(city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez') && <DestinationAreaPhoto city={city.slug} index={i} locale={locale}/>}
           <p className="mt-5 text-sm leading-7 text-[#4c606b]">{fr?area.fr:area.en}</p>
           <p className="mt-auto border-t border-[#e7dfd2] pt-5 text-sm leading-7 text-[#786145]">{fr?area.frWatch:area.enWatch}</p>
         </article>)}
