@@ -1,8 +1,8 @@
 {
   "scope": "Only genuine Phuket landscapes, no hotel galleries",
-  "downloaded": 7,
-  "expected": 7,
-  "updatedAt": "2026-10-13T01:09:53.063319+00:00",
+  "downloaded": 9,
+  "expected": 9,
+  "updatedAt": "2026-10-13T01:12:40.751050+00:00",
   "items": [
     {
       "key": "phuket-kata-noi-beach-hero",
@@ -73,10 +73,10 @@
         1920,
         582
       ],
-      "bytes": 300406,
+      "bytes": 334636,
       "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Kamala_beach.jpg/1920px-Kamala_beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
-      "brightness": 124.2,
-      "sha256": "4f3742edea18db6138a5d8d0605d5a50ac0bf72426857438774f02e8b30bf4a1",
+      "brightness": 124.3,
+      "sha256": "2148ff0d3ed645bf6e25ca9f33b51634cf8bb84db3c8cce814c591bbdb864cf3",
       "transformation": "Normalized EXIF, resized to 2000px max, WebP Q86, CSS crop only"
     },
     {
@@ -177,6 +177,56 @@
       "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Phuket_-_Kata_Beach_001.jpg/1920px-Phuket_-_Kata_Beach_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
       "brightness": 131.6,
       "sha256": "87bfd8e523848d770fd2c0d2091eac7f3897df9547d1fc14156b368c8f21f9a4",
+      "transformation": "Normalized EXIF, resized to 2000px max, WebP Q86, CSS crop only"
+    },
+    {
+      "key": "phuket-bang-tao-beach",
+      "sourceFile": "Bang Tao Beach (53668069638).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bang_Tao_Beach_(53668069638).jpg",
+      "author": "Raita Futo",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "fr": "La plage de Bang Tao sur la côte nord-ouest de Phuket",
+      "en": "Bang Tao Beach along Phuket's northwest shoreline",
+      "localPath": "/images/travel/phuket-premium/destination/phuket-bang-tao-beach.webp",
+      "status": "downloaded",
+      "sourceSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1920,
+        1280
+      ],
+      "bytes": 475390,
+      "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Bang_Tao_Beach_%2853668069638%29.jpg/1920px-Bang_Tao_Beach_%2853668069638%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "brightness": 132.1,
+      "sha256": "e24689bac410367d934199c954744975c6b4167df9a42c2c515daa0f2e960d8d",
+      "transformation": "Normalized EXIF, resized to 2000px max, WebP Q86, CSS crop only"
+    },
+    {
+      "key": "phuket-patong-beach",
+      "sourceFile": "Patong Beach in Phuket.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Patong_Beach_in_Phuket.jpg",
+      "author": "Ewong17",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "fr": "La plage de Patong et le front de mer à Phuket",
+      "en": "Patong Beach on Phuket's western coastline",
+      "localPath": "/images/travel/phuket-premium/destination/phuket-patong-beach.webp",
+      "status": "downloaded",
+      "sourceSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1867,
+        1400
+      ],
+      "bytes": 468910,
+      "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Patong_Beach_in_Phuket.jpg/1920px-Patong_Beach_in_Phuket.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "brightness": 156.8,
+      "sha256": "29b34a1305e32762f51b778ad8b0d041b71deef60b6db0293e86365b8926461e",
       "transformation": "Normalized EXIF, resized to 2000px max, WebP Q86, CSS crop only"
     }
   ]
