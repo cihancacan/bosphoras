@@ -1,0 +1,43 @@
+name: Travel Paris — curated hotel photo gallery import
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - scripts/download-paris-premium-hotel-images.py
+      - .github/workflows/travel-paris-premium-images.yml
+permissions:
+  contents: write
+concurrency:
+  group: paris-curated-hotel-photo-import
+  cancel-in-progress: false
+jobs:
+  paris-hotel-photography:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install --disable-pip-version-check 'Pillow>=10,<12' 'requests>=2.31,<3'
+      - name: Download and optimise 12 exact Paris hotel photographs
+        run: python scripts/download-paris-premium-hotel-images.py
+      - name: Preserve image and rights ledger, no production updates
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -f data/travel/parisPremiumImageSources.json ]; then git add data/travel/parisPremiumImageSources.json; fi
+          if [ -d public/images/travel/paris-premium ]; then git add public/images/travel/paris-premium; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "assets(travel): add audited Paris palace photography [skip ci]"
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: paris-hotel-photo-provenance
+          path: data/travel/parisPremiumImageSources.json
+          if-no-files-found: ignore
