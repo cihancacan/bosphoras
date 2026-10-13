@@ -43,6 +43,12 @@ if "application/json" in typ:
         else:
             report["failureStage"]=parsed.get("stage") if parsed.get("stage") in ("credentials","token","accounts-schema","accounts","search-schema","search") else "unclassified"
             if isinstance(parsed.get("grpcCode"),int):report["grpcCode"]=parsed["grpcCode"]
+            # Only record classification of a 401 provider response; never log arbitrary response content.
+            reason=str(parsed.get("error","")).lower()
+            report["accessFailureKind"]=(
+                "vercel-auth-or-deployment-protection" if any(x in reason for x in ("authentication required","deployment protection","vercel authentication","vercel auth"))
+                else "unauthorized-at-http-edge" if status in (401,403)
+                else "staging-application-error")
     except (ValueError,TypeError):
         report["errorClass"]="unexpected-json-payload"
 else:
