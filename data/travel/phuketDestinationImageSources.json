@@ -1,0 +1,183 @@
+{
+  "scope": "Only genuine Phuket landscapes, no hotel galleries",
+  "downloaded": 7,
+  "expected": 7,
+  "updatedAt": "2026-10-13T01:09:53.063319+00:00",
+  "items": [
+    {
+      "key": "phuket-kata-noi-beach-hero",
+      "sourceFile": "Kata Noi beach, Katathani resort (40414030520).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kata_Noi_beach,_Katathani_resort_(40414030520).jpg",
+      "author": "Phuket@photographer.net",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "fr": "La plage lumineuse de Kata Noi et l’eau turquoise de Phuket",
+      "en": "Sunlit Kata Noi beach and turquoise Andaman Sea",
+      "localPath": "/images/travel/phuket-premium/destination/phuket-kata-noi-beach-hero.webp",
+      "status": "downloaded",
+      "sourceSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1920,
+        1280
+      ],
+      "bytes": 196372,
+      "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Kata_Noi_beach%2C_Katathani_resort_%2840414030520%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+      "brightness": 98.2,
+      "sha256": "b0ed13bd5d82956465519180be2a03d0d3091602edccbb34453fab19b4cbccd0",
+      "transformation": "Normalized EXIF, resized to 2000px max, WebP Q86, CSS crop only"
+    },
+    {
+      "key": "phuket-surin-beach",
+      "sourceFile": "Surin Beach.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Surin_Beach.JPG",
+      "author": "Jpatokal",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "fr": "La plage de Surin au nord-ouest de Phuket",
+      "en": "Surin Beach on Phuket's northwest coast",
+      "localPath": "/images/travel/phuket-premium/destination/phuket-surin-beach.webp",
+      "status": "downloaded",
+      "sourceSize": [
+        1920,
+        1277
+      ],
+      "outputSize": [
+        1920,
+        1277
+      ],
+      "bytes": 774636,
+      "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Surin_Beach.JPG/1920px-Surin_Beach.JPG?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "brightness": 137.2,
+      "sha256": "2d9685170dfad728b80b9fa84ecec639a968a87ecf5212af2aa0ec555cc76c9f",
+      "transformation": "Normalized EXIF, resized to 2000px max, WebP Q86, CSS crop only"
+    },
+    {
+      "key": "phuket-kamala-beach",
+      "sourceFile": "Kamala beach.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kamala_beach.jpg",
+      "author": "govertvissers",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "fr": "Vue panoramique de la baie et de la plage de Kamala",
+      "en": "Panorama of Kamala Bay and beach",
+      "localPath": "/images/travel/phuket-premium/destination/phuket-kamala-beach.webp",
+      "status": "downloaded",
+      "sourceSize": [
+        1920,
+        582
+      ],
+      "outputSize": [
+        1920,
+        582
+      ],
+      "bytes": 300406,
+      "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Kamala_beach.jpg/1920px-Kamala_beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "brightness": 124.2,
+      "sha256": "4f3742edea18db6138a5d8d0605d5a50ac0bf72426857438774f02e8b30bf4a1",
+      "transformation": "Normalized EXIF, resized to 2000px max, WebP Q86, CSS crop only"
+    },
+    {
+      "key": "phuket-nai-harn-sunset",
+      "sourceFile": "Sunset at Nai Harn beach, Phuket, Thailand 05.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sunset_at_Nai_Harn_beach,_Phuket,_Thailand_05.jpg",
+      "author": "Phuket@photographer.net",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "fr": "Lumière chaude du coucher de soleil sur Nai Harn Beach",
+      "en": "Warm sunset light at Nai Harn beach",
+      "localPath": "/images/travel/phuket-premium/destination/phuket-nai-harn-sunset.webp",
+      "status": "downloaded",
+      "sourceSize": [
+        1920,
+        1082
+      ],
+      "outputSize": [
+        1920,
+        1082
+      ],
+      "bytes": 125230,
+      "downloadedFrom": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Sunset_at_Nai_Harn_beach%2C_Phuket%2C_Thailand_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled",
+      "brightness": 122.3,
+      "sha256": "030a1cc2cc56cb474d23408dec7e290a1b5181ff5536cf9bbdd53c05d856a6a0",
+      "transformation": "Normalized EXIF, resized to 2000px max, WebP Q86, CSS crop only"
+    },
+    {
+      "key": "phuket-old-town",
+      "sourceFile": "Phuket Old Town 1.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Phuket_Old_Town_1.jpg",
+      "author": "Ryomaandres",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "fr": "Façades historiques sino-portugaises de Phuket Old Town",
+      "en": "Sino-Portuguese facades in Phuket Old Town",
+      "localPath": "/images/travel/phuket-premium/destination/phuket-old-town.webp",
+      "status": "downloaded",
+      "sourceSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1867,
+        1400
+      ],
+      "bytes": 377388,
+      "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Phuket_Old_Town_1.jpg/1920px-Phuket_Old_Town_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "brightness": 151.2,
+      "sha256": "691d016fd0f0d4af3a149af185587ac373cee9af2885e8b952ff9336bb6cd729",
+      "transformation": "Normalized EXIF, resized to 2000px max, WebP Q86, CSS crop only"
+    },
+    {
+      "key": "phuket-promthep-cape",
+      "sourceFile": "Promthep Cape Phuket.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Promthep_Cape_Phuket.jpg",
+      "author": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "fr": "Promthep Cape, les falaises et la mer d’Andaman",
+      "en": "Promthep Cape cliffs and the Andaman Sea",
+      "localPath": "/images/travel/phuket-premium/destination/phuket-promthep-cape.webp",
+      "status": "downloaded",
+      "sourceSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1867,
+        1400
+      ],
+      "bytes": 610490,
+      "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Promthep_Cape_Phuket.jpg/1920px-Promthep_Cape_Phuket.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "brightness": 120.0,
+      "sha256": "bba2084a272876b33b36e2825e50f04ef8a178d5f3a55ecd0f70b775891dbd87",
+      "transformation": "Normalized EXIF, resized to 2000px max, WebP Q86, CSS crop only"
+    },
+    {
+      "key": "phuket-kata-alt",
+      "sourceFile": "Phuket - Kata Beach 001.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Phuket_-_Kata_Beach_001.jpg",
+      "author": "ADwarf",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "fr": "Kata Beach et son littoral tropical",
+      "en": "Kata Beach and Phuket tropical coast",
+      "localPath": "/images/travel/phuket-premium/destination/phuket-kata-alt.webp",
+      "status": "downloaded",
+      "sourceSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1867,
+        1400
+      ],
+      "bytes": 465872,
+      "downloadedFrom": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Phuket_-_Kata_Beach_001.jpg/1920px-Phuket_-_Kata_Beach_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "brightness": 131.6,
+      "sha256": "87bfd8e523848d770fd2c0d2091eac7f3897df9547d1fc14156b368c8f21f9a4",
+      "transformation": "Normalized EXIF, resized to 2000px max, WebP Q86, CSS crop only"
+    }
+  ]
+}
