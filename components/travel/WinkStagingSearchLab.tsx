@@ -69,7 +69,8 @@ export function WinkStagingSearchLab() {
         <h1 className="font-serif text-4xl leading-tight sm:text-5xl">Recherche d’hôtels Wink</h1>
         <p className="mt-4 text-base leading-relaxed text-slate-600">
           Bangkok a déjà retourné des établissements sur Wink Staging. Commence par cette ville pour confirmer la connexion.
-          Wink indique que son Staging contient moins de donnees que la production. La recherche autour d'une ville (SearchByGeo) aide a diagnostiquer les lieux absents.\n          Les options « Monde » et « Pays » sont des classements (RankGlobal / RankByCountry), et non une liste exhaustive
+          Wink indique que son Staging contient moins de donnees que la production. La recherche autour d'une ville (SearchByGeo) aide a diagnostiquer les lieux absents.
+          Les options « Monde » et « Pays » sont des classements (RankGlobal / RankByCountry), et non une liste exhaustive
           du catalogue. Un classement vide ne prouve pas que Wink ne possède aucun hôtel.
         </p>
       </header>
