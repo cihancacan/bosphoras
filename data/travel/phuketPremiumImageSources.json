@@ -1,8 +1,8 @@
 {
   "scope": "Exact-property Phuket luxury hotel photos, Travel Preview only",
-  "createdAt": "2026-10-13T01:12:28.733419+00:00",
+  "createdAt": "2026-10-13T01:14:18.011665+00:00",
   "expected": 12,
-  "downloaded": 11,
+  "downloaded": 12,
   "items": [
     {
       "hotel": "amanpuri",
@@ -52,17 +52,26 @@
     },
     {
       "hotel": "amanpuri",
-      "key": "ocean-pool-pavilion",
-      "scene": "Amanpuri Ocean Pool Pavilion specific guestroom category",
-      "sourcePage": "https://www.aman.com/resorts/amanpuri/accommodation/pavilions",
-      "credit": "Amanpuri · Ocean Pool Pavilion",
-      "localPath": "/images/travel/phuket-premium/amanpuri/ocean-pool-pavilion.webp",
+      "key": "villa-seven-sunset",
+      "scene": "Amanpuri secluded Villa 7 exterior at sunset",
+      "sourcePage": "https://www.aman.com/resorts/amanpuri/gallery",
+      "credit": "Amanpuri · Villa 7 sunset",
+      "localPath": "/images/travel/phuket-premium/amanpuri/villa-seven-sunset.webp",
       "rights": "User indicates permissions for project; verify third party commercial rights in writing before production",
-      "status": "failed",
-      "errors": [
-        "cannot identify image file <_io.BytesIO object at 0x7effb7526020>",
-        "unsuitable landscape [906, 906]"
-      ]
+      "status": "downloaded",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/masonry_extra_large_2x/public/2025-09/Amanpuri-_Thailand_-_Resort-_Villa_7-_Outdoor-_Sunset_0.webp?itok=snV_mny3",
+      "originalSize": [
+        906,
+        559
+      ],
+      "outputSize": [
+        906,
+        559
+      ],
+      "bytes": 107628,
+      "sha256": "050adc3000dce3f0a1a6d91648e7dba3fccdd5a4781cacf5ac1acf4e0a090af5",
+      "brightness": 71.0,
+      "processing": "EXIF normalised, resized to max 1950px, WebP quality 86"
     },
     {
       "hotel": "trisara",
