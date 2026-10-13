@@ -1,0 +1,1916 @@
+{
+  "cheval-home": {
+    "page": "https://www.chevalblanc.com/en/maison/st-tropez/",
+    "status": 403,
+    "url": "https://www.chevalblanc.com/en/maison/st-tropez/",
+    "bytes": 409,
+    "count": 0,
+    "images": []
+  },
+  "cheval-suites": {
+    "page": "https://www.chevalblanc.com/en/maison/st-tropez/rooms-and-suites/",
+    "status": 403,
+    "url": "https://www.chevalblanc.com/en/maison/st-tropez/rooms-and-suites/",
+    "bytes": 438,
+    "count": 0,
+    "images": []
+  },
+  "cheval-suite": {
+    "page": "https://www.chevalblanc.com/en/maison/st-tropez/rooms-and-suites/heure-bleue-suite/",
+    "status": 403,
+    "url": "https://www.chevalblanc.com/en/maison/st-tropez/rooms-and-suites/heure-bleue-suite/",
+    "bytes": 468,
+    "count": 0,
+    "images": []
+  },
+  "byblos-home": {
+    "page": "https://www.byblos.com/en/",
+    "status": 200,
+    "url": "https://www.byblos.com/en/",
+    "bytes": 199077,
+    "count": 57,
+    "images": [
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/hotel-byblos-saint-tropez-1.jpg",
+        "alt": "og:image",
+        "where": "meta"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-St-Tropez-Hotel-Stephan-Julliard-390x525.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-3-1-1920x1280.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Restaurant-IL-Giardino-restaurant-Hotel-Byblos-Saint-Tropez-800x995.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Sky-Bar_Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-3-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/B.Lounge_Bar_Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-9-1800x1388.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Hotel-Byblos-Saint-Tropez-Suite-800x995.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Hotel-Byblos-Saint-Tropez-Laura-Gonzalez-Suite-Deluxe-32-800x995.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/suite-deluxe-2chambres-800x995.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-suite-deluxe-800x995.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/hotel-saint-tropez-byblos-suiteduroy-800x995.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/hotel-saint-tropez-byblos-suite-duplex-800x995.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Hotel-Byblos-Saint-Tropez-Junior-Suite-1-800x995.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/hotel-saint-tropez-byblos-chambres-classique-deluxe-800x995.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Salon-de-soin-Byblos-spa-by-Sisley_Hotel-Byblos-Saint-Tropez-France.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Caves-du-Roy-Saint-Tropez-Hotel-Byblos-1.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Zuma-at-Hotel-Byblos-Saint-Tropez.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-Beach-Ramatuelle-ramatuelle-1-1800x1333.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-gift-shop.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/orlebar-brown-800x800.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/t-shirt-byblos-800x800.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Detail-Byblos-Saint-Tropez-4-©Alexandre-Chaplier-HD-800x800.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/sejour-gourmand-800x800.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-spa-by-Sisley_Hotel-Byblos-Saint-Tropez-©Alexandre-Chaplier-2-800x800.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Summer-Party-2016-Byblos-Saint-Tropez.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Saint-Tropez-lesvoiles-tourisme-1-800x800.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/paradis-porsche-2026-800x800.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/mer-800x800.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-hotel-1967-saint-tropez-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Saint-Tropez-lesvoiles-tourisme-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Hotel-Byblos-Saint-Tropez-521-Double-Deluxe-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-Saint-Tropez-Duplex-Suite-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Hotel-Byblos-Saint-Tropez-380-Suite-Du-Roy-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Deluxe-Suite-511-Byblos-Saint-Tropez-©Alexandre-Chaplier-HD-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/2-bedroom-Deluxe-Suite-503-Byblos-Saint-Tropez-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/laura-gonzalez-byblos-5-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-Suite-Presidentielle-Byblos-Riviera-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Restaurant-IL-Giardino_Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-7-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/B.Lounge_Bar_Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Sky-Bar_Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-4-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Le-Potager-Hotel-Byblos-Saint-Tropez-15-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Salon-de-soin-Byblos-spa-by-Sisley_Hotel-Byblos-Saint-Tropez-France-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Exp-Holistic-Byblos-SPA_Hotel-Byblos-Saint-Tropez-©-Alexandre-Chaplier-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-sport-club-hotel-sainttropez-3-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/hotel-byblos-piscine-cotedazur-saint-tropez-french-riviera-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Le-Potager-Hotel-Byblos-Saint-Tropez-13-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-hotel-sainttropez-poolside-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/lescavesduroy-club-st-tropez-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-Beach-Ramatuelle-ramatuelle-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-rolls-royce-sainttropez-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Ambiance-1-Summer-Party-2016-Byblos-Saint-Tropez-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/hotel-byblos-vue-drone-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/delasoul-martinsolveig-byblos-3.jpg-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/saint-tropez-france-travel-frenchriviera-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Le-Potager-du-Byblos-Saint-Tropez-©Adrien-Daste-13-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/restaurant-b-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-mythic-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      }
+    ]
+  },
+  "byblos-rooms": {
+    "page": "https://www.byblos.com/en/rooms-suites/",
+    "status": 404,
+    "url": "https://www.byblos.com/en/rooms-suites/",
+    "bytes": 171269,
+    "count": 31,
+    "images": [
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-St-Tropez-Hotel-Stephan-Julliard-390x525.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-3-1-1920x1280.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-hotel-1967-saint-tropez-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Saint-Tropez-lesvoiles-tourisme-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Hotel-Byblos-Saint-Tropez-521-Double-Deluxe-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-Saint-Tropez-Duplex-Suite-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Hotel-Byblos-Saint-Tropez-380-Suite-Du-Roy-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Deluxe-Suite-511-Byblos-Saint-Tropez-©Alexandre-Chaplier-HD-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/2-bedroom-Deluxe-Suite-503-Byblos-Saint-Tropez-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/laura-gonzalez-byblos-5-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-Suite-Presidentielle-Byblos-Riviera-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Restaurant-IL-Giardino_Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-7-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/B.Lounge_Bar_Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Sky-Bar_Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-4-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Le-Potager-Hotel-Byblos-Saint-Tropez-15-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Salon-de-soin-Byblos-spa-by-Sisley_Hotel-Byblos-Saint-Tropez-France-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Exp-Holistic-Byblos-SPA_Hotel-Byblos-Saint-Tropez-©-Alexandre-Chaplier-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-sport-club-hotel-sainttropez-3-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/hotel-byblos-piscine-cotedazur-saint-tropez-french-riviera-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Le-Potager-Hotel-Byblos-Saint-Tropez-13-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-hotel-sainttropez-poolside-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/lescavesduroy-club-st-tropez-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-Beach-Ramatuelle-ramatuelle-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-rolls-royce-sainttropez-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Ambiance-1-Summer-Party-2016-Byblos-Saint-Tropez-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/hotel-byblos-vue-drone-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/delasoul-martinsolveig-byblos-3.jpg-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/saint-tropez-france-travel-frenchriviera-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Le-Potager-du-Byblos-Saint-Tropez-©Adrien-Daste-13-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/restaurant-b-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-mythic-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      }
+    ]
+  },
+  "byblos-gallery": {
+    "page": "https://www.byblos.com/en/galerie-photos/",
+    "status": 200,
+    "url": "https://www.byblos.com/galerie-photos/",
+    "bytes": 196658,
+    "count": 57,
+    "images": [
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Sky-Bar-Hotel-Byblos-Saint-Tropez-image-10.jpg",
+        "alt": "og:image",
+        "where": "meta"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-St-Tropez-Hotel-Stephan-Julliard-390x525.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Sky-Bar-Hotel-Byblos-Saint-Tropez-image-10-1600x1000.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/hotel-byblos-piscine-cotedazur-saint-tropez-french-riviera-1-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Salon-de-soin-Byblos-spa-by-Sisley_Hotel-Byblos-Saint-Tropez-France-1024x680.jpg",
+        "alt": "SPA & Soins by Sisley Saint-Tropez - BYBLOS ©",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Hotel-Byblos-Saint-Tropez-Laura-Gonzalez-Duplex-4-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/PHOTO-6-Nvelle-Philosophie-Hammam-Byblos-spa-by-Sisley_Hotel-Byblos-Saint-Tropez-©Alexandre-Chaplier-1-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Restaurant-IL-Giardino_Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-6-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/laura-gonzalez-byblos-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-spa-by-Sisley_Hotel-Byblos-Saint-Tropez_Alexandre-Chaplier-9-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/2-bedroom-Deluxe-Suite-503-Byblos-Saint-Tropez-1-1-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-Saint-Tropez-Provence-France-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/PHOTO-4-Nvelle-Philosophie-Sauna_Byblos-spa-by-Sisley_Hotel-Byblos-Saint-Tropez-©Alexandre-Chaplier-43-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/2-bedroom-Suite-501-Byblos-Saint-Tropez-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/hotel-byblos-piscine-cotedazur-saint-tropez-french-riviera-2-1024x680.jpg",
+        "alt": "BYBLOS - Palace Hôtel luxe 5 étoiles à Saint-Tropez",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Sky-Bar_Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-1-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/yoga-byblos-saint-tropez-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Eventail_Hotel_Byblos_Saint-Tropez_1-1024x680.webp",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/hotel-byblos-piscine-cotedazur-saint-tropez-french-riviera-3-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/B.Lounge_Bar_Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-3-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Le-Potager-du-Byblos-Saint-Tropez-©Adrien-Daste-13-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/PHOTO-1-Nvelle-Philosophie-Salon-de-soin_Byblos-spa-by-Sisley_Hotel-Byblos-Saint-Tropez-©Alexandre-Chaplier-11-1-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Sky-Bar-Hotel-Byblos-Saint-Tropez-image-10-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Detail-Byblos-Saint-Tropez-1-©Alexandre-Chaplier-HD-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/st-tropez-dance-1600x1000-1-1024x680.jpg",
+        "alt": "",
+        "where": "data-src"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-hotel-1967-saint-tropez-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Saint-Tropez-lesvoiles-tourisme-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Hotel-Byblos-Saint-Tropez-521-Double-Deluxe-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Junior-Suite-227-Byblos-Saint-Tropez-©Alexandre-Chaplier-HD-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-Saint-Tropez-Duplex-Suite-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Hotel-Byblos-Saint-Tropez-380-Suite-Du-Roy-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Deluxe-Suite-511-Byblos-Saint-Tropez-©Alexandre-Chaplier-HD-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/2-bedroom-Deluxe-Suite-503-Byblos-Saint-Tropez-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/laura-gonzalez-byblos-5-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-Suite-Presidentielle-Byblos-Riviera-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Restaurant-IL-Giardino_Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-7-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/B.Lounge_Bar_Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Sky-Bar_Hotel-Byblos_Saint-Tropez-©Stephan-Julliard-4-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Le-Potager-Hotel-Byblos-Saint-Tropez-15-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Salon-de-soin-Byblos-spa-by-Sisley_Hotel-Byblos-Saint-Tropez-France-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Exp-Holistic-Byblos-SPA_Hotel-Byblos-Saint-Tropez-©-Alexandre-Chaplier-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-sport-club-hotel-sainttropez-3-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/hotel-byblos-piscine-cotedazur-saint-tropez-french-riviera-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Le-Potager-Hotel-Byblos-Saint-Tropez-13-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-hotel-sainttropez-poolside-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-Beach-Ramatuelle-ramatuelle-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/lescavesduroy-club-st-tropez-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-rolls-royce-sainttropez-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Ambiance-1-Summer-Party-2016-Byblos-Saint-Tropez-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/hotel-byblos-vue-drone-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/delasoul-martinsolveig-byblos-3.jpg-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/saint-tropez-france-travel-frenchriviera-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/cartouche-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Le-Potager-du-Byblos-Saint-Tropez-©Adrien-Daste-13-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/Byblos-Saint-Tropez-equipe-recrutement-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/restaurant-b-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://www.byblos.com/wp-content/uploads/byblos-mythic-1600x1000-1-390x525.jpg",
+        "alt": "inline JS image",
+        "where": "script"
+      }
+    ]
+  },
+  "reserve-home": {
+    "page": "https://www.lareserve-ramatuelle.com/en/",
+    "status": 403,
+    "url": "https://www.lareserve-ramatuelle.com/en/",
+    "bytes": 5481,
+    "count": 0,
+    "images": []
+  },
+  "reserve-gallery": {
+    "page": "https://www.lareserve-ramatuelle.com/hotel-galerie/",
+    "status": 403,
+    "url": "https://www.lareserve-ramatuelle.com/hotel-galerie/",
+    "bytes": 5535,
+    "count": 0,
+    "images": []
+  },
+  "messardiere-home": {
+    "page": "https://airelles.com/en/destination/chateau-de-la-messardiere-hotel",
+    "status": 200,
+    "url": "https://airelles.com/en/destination/chateau-de-la-messardiere-hotel",
+    "bytes": 497149,
+    "count": 29,
+    "images": [
+      {
+        "url": "https://images.prismic.io/airelles2023/Ze3V7HUurf2G3OwS_CDM-Privatisation.jpg?auto=format%2Ccompress&rect=0%2C36%2C1920%2C1008&w=2400&h=1260",
+        "alt": "og:image",
+        "where": "meta"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZuUfw_dLlTamO_fS_Fondvide%CC%81ohomeCDM.png?auto=format%2Ccompress&rect=261%2C0%2C2508%2C1672&w=1920&h=1280",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aNKUyp5xUNkB1BB0_CDM-Vuedrone%C2%A9Jetlag-2.jpg?auto=format%2Ccompress&rect=0%2C80%2C1920%2C1280&w=1920&h=1280",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/FfnUisc-cj8cavm7_Moyen-CDM-PiscinevueJardins-%40MarcoArguello.jpg?auto=format%2Ccompress&rect=0%2C250%2C2000%2C970&w=1980&h=960",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/maufC0NHbeCgrxin_Captured%E2%80%99e%CC%81cran2026-08-13a%CC%8015.25.28.png?auto=format%2Ccompress&rect=0%2C224%2C956%2C1195&w=1200&h=1500",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/_wPLPnwwG37u3n7U_CDM-Spa-Piscineinte%CC%81rieur%C2%A9VincentLeroux.jpg?auto=format%2Ccompress&rect=1692%2C0%2C4624%2C5344&w=649&h=750",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/kWWWAFugwTLL6mWb_JT-Vuemerterrasse%C2%A9MaximeMoreno.jpg?auto=format%2Ccompress&rect=0%2C464%2C4000%2C4536&w=649&h=736",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/2HJ3aYTsyEB-8PXK_V%26L-CDM.jpg?auto=format%2Ccompress&rect=0%2C999%2C5461%2C6193&w=649&h=736",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aNzVJJ5xUNkB1Uje_7.jpg?auto=format%2Ccompress&rect=0%2C0%2C1000%2C1500&w=1024&h=1536",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aSgrk3NYClf9nhdI_CDM-SuiteBelve%CC%81de%CC%80re-Chambre%C2%A9VincentLeroux.jpg?auto=format%2Ccompress&rect=1327%2C0%2C3261%2C4891&w=1024&h=1536",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aNzVWJ5xUNkB1Ujg_9.jpg?auto=format%2Ccompress&rect=0%2C0%2C1000%2C1499&w=1024&h=1535",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aNzWJJ5xUNkB1Ujy_SPA.jpg?auto=format%2Ccompress&rect=9%2C0%2C1000%2C1500&w=1024&h=1536",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aNzWZ55xUNkB1Uj5_CDM-Cine%CC%81maPleinAir%C2%A9LucasHorenburg.jpg?auto=format%2Ccompress&rect=699%2C0%2C1000%2C1500&w=1024&h=1536",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aNzWiZ5xUNkB1UkA_10.jpg?auto=format%2Ccompress&w=1024&h=1536",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/MEEMSzdxOUD4paxZ_Moyen-CDM-Piscinevuemer%C2%A9LucasHorenburg.jpg?auto=format%2Ccompress&rect=549%2C0%2C889%2C1333&w=1024&h=1536",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aNzW_55xUNkB1UkJ_CDM-TableMariage%C2%A9Eikon.jpg?auto=format%2Ccompress&rect=1%2C0%2C1000%2C1500&w=1024&h=1536",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aNzYcJ5xUNkB1UlA_Cha%CC%82teaudelaMessardie%CC%80re-BoutiqueV%26L-KV1%C2%A9Rene%CC%81eKemps-2024.jpg?auto=format%2Ccompress&rect=100%2C0%2C1000%2C1500&w=1024&h=1536",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aNzbVZ5xUNkB1Ul-_CDM-Voiturettejardin%C2%A9Eikon.jpg?auto=format%2Ccompress&rect=1%2C0%2C5333%2C8000&w=1024&h=1536",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZuUfw_dLlTamO_fS_Fondvide%CC%81ohomeCDM.png?auto=format%2Ccompress&amp;rect=261%2C0%2C2508%2C1672&amp;w=1920&amp;h=1280",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/Ze3V7HUurf2G3OwS_CDM-Privatisation.jpg?auto=format%2Ccompress&amp;rect=0%2C36%2C1920%2C1008&amp;w=2400&amp;h=1260",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aNKUyp5xUNkB1BB0_CDM-Vuedrone%C2%A9Jetlag-2.jpg?auto=format%2Ccompress&amp;rect=0%2C80%2C1920%2C1280&amp;w=1920&amp;h=1280",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/FfnUisc-cj8cavm7_Moyen-CDM-PiscinevueJardins-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;rect=0%2C250%2C2000%2C970&amp;w=1980&amp;h=960",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/maufC0NHbeCgrxin_Captured%E2%80%99e%CC%81cran2026-08-13a%CC%8015.25.28.png?auto=format%2Ccompress&amp;rect=0%2C224%2C956%2C1195&amp;w=1200&amp;h=1500",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/_wPLPnwwG37u3n7U_CDM-Spa-Piscineinte%CC%81rieur%C2%A9VincentLeroux.jpg?auto=format%2Ccompress&amp;rect=1692%2C0%2C4624%2C5344&amp;w=649&amp;h=750",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/kWWWAFugwTLL6mWb_JT-Vuemerterrasse%C2%A9MaximeMoreno.jpg?auto=format%2Ccompress&amp;rect=0%2C464%2C4000%2C4536&amp;w=649&amp;h=736",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/2HJ3aYTsyEB-8PXK_V%26L-CDM.jpg?auto=format%2Ccompress&amp;rect=0%2C999%2C5461%2C6193&amp;w=649&amp;h=736",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aNzVJJ5xUNkB1Uje_7.jpg?auto=format%2Ccompress&amp;rect=0%2C0%2C1000%2C1500&amp;w=1024&amp;h=1536",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aSgrk3NYClf9nhdI_CDM-SuiteBelve%CC%81de%CC%80re-Chambre%C2%A9VincentLeroux.jpg?auto=format%2Ccompress&amp;rect=1327%2C0%2C3261%2C4891&amp;w=1024&amp;h=1536",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aNzVWJ5xUNkB1Ujg_9.jpg?auto=format%2Ccompress&amp;rect=0%2C0%2C1000%2C1499&amp;w=1024&amp;h=1535",
+        "alt": "inline JS image",
+        "where": "script"
+      }
+    ]
+  },
+  "messardiere-rooms": {
+    "page": "https://airelles.com/en/destination/chateau-de-la-messardiere-hotel/suites",
+    "status": 200,
+    "url": "https://airelles.com/en/destination/chateau-de-la-messardiere-hotel/suites",
+    "bytes": 1030695,
+    "count": 1232,
+    "images": [
+      {
+        "url": "https://images.prismic.io/airelles2023/Zeo8TnUurf2G3NBV_CDM-Suite-Victoire.jpg?auto=format%2Ccompress&rect=0%2C32%2C1728%2C907&w=2400&h=1260",
+        "alt": "og:image",
+        "where": "meta"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjgLIF3NbkBX5x4_1-surBE--1-.jpg?auto=format,compress&rect=0,0,1919,1280&w=1024&h=683",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjgLIF3NbkBX5x4_1-surBE--1-.jpg?auto=format",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjgK4F3NbkBX5x3_Salledebain.jpg?auto=format,compress&rect=0,0,1919,1280&w=1024&h=683",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjgK4F3NbkBX5x3_Salledebain.jpg?auto=format",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=3840",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=320",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=360",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=384",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=540",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=640",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=683",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=720",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=750",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=768",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=960",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=1080",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=1280",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=1366",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=1440",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=1536",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=1920",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZxjbLYF3NbkBX5uE_3.Superiorroom-vue.jpg?auto=format%2Ccompress&w=2560",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=3840",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=320",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=360",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=384",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=540",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=640",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=683",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=720",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=750",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=768",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=960",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=1080",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=1280",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=1366",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=1440",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=1536",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=1920",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHem1EMqNJQqH94e_ChambreSup%C3%A9rieurevuemer-Vued%27ensemble.jpg?auto=format%2Ccompress&w=2560",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZilZDPPdc1huKwc1_Petit-ChambreSupe%CC%81rieure-6.png?auto=format%2Ccompress&rect=0%2C52%2C1000%2C563&w=1024&h=576",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=3840",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=320",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=360",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=384",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=540",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=640",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=683",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=720",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=750",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=768",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=960",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=1080",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=1280",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=1366",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=1440",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=1536",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=1920",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHeoIEMqNJQqH95T_ChambreSup%C3%A9rieurevuemer-Salledebain-2.jpg?auto=format%2Ccompress&w=2560",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=3840",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=320",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=360",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=384",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=540",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=640",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=683",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=720",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=750",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=768",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=960",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=1080",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=1280",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=1366",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=1440",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=1536",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=1920",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddHEMqNJQqH8wX_DeluxePiscine-Balcon-Chambre-2bre_02.jpg?auto=format%2Ccompress&w=2560",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=3840",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=320",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=360",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=384",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=540",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=640",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=683",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=720",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=750",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=768",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=960",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=1080",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=1280",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=1366",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=1440",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=1536",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=1920",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/aHddg0MqNJQqH8wm_DeluxePiscine-Balcon-Chambre-3.jpg?auto=format%2Ccompress&w=2560",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=3840",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=320",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=360",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=384",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=540",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=640",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=683",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=720",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=750",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=768",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=960",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=1080",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=1280",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=1366",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=1440",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=1536",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=1920",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZeosKHUurf2G3M7j_CDM-Chambre-Superieur-Piscine-3.jpg?auto=format%2Ccompress&w=2560",
+        "alt": "Château de La Messardiere, Saint-Tropez, chambre supérieure deluxe vue piscine",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZyO7e68jQArT0F-H_Grand-ChambreSup%C3%A9rieurevuemer-Vued_ensemble.jpg?auto=format%2Ccompress&w=3840",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZyO7e68jQArT0F-H_Grand-ChambreSup%C3%A9rieurevuemer-Vued_ensemble.jpg?auto=format%2Ccompress&w=320",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZyO7e68jQArT0F-H_Grand-ChambreSup%C3%A9rieurevuemer-Vued_ensemble.jpg?auto=format%2Ccompress&w=360",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZyO7e68jQArT0F-H_Grand-ChambreSup%C3%A9rieurevuemer-Vued_ensemble.jpg?auto=format%2Ccompress&w=384",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZyO7e68jQArT0F-H_Grand-ChambreSup%C3%A9rieurevuemer-Vued_ensemble.jpg?auto=format%2Ccompress&w=540",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZyO7e68jQArT0F-H_Grand-ChambreSup%C3%A9rieurevuemer-Vued_ensemble.jpg?auto=format%2Ccompress&w=640",
+        "alt": "",
+        "where": "srcset"
+      }
+    ]
+  },
+  "messardiere-pool": {
+    "page": "https://airelles.com/fr/destination/chateau-de-la-messardiere-hotel/la-plage-acces-prive-saint-tropez",
+    "status": 200,
+    "url": "https://airelles.com/fr/destination/chateau-de-la-messardiere-hotel/la-plage-acces-prive-saint-tropez",
+    "bytes": 439605,
+    "count": 70,
+    "images": [
+      {
+        "url": "https://images.prismic.io/airelles2023/Zhj_3zjCgu4jzxtM_Moyen-PiscinePampelonne-3.jpeg?auto=format%2Ccompress&rect=0%2C142%2C2000%2C1050&w=2400&h=1260",
+        "alt": "og:image",
+        "where": "meta"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ch8ggBai77o_RYeC_Moyen-CDM-PiscinevueJardins-%40MarcoArguello.jpg?auto=format%2Ccompress&rect=0%2C235%2C2000%2C1000&w=2000&h=1000",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/xlEKz3ELOreXkdQa_Moyen-CDM-PiscinevueCha%CC%82teau-%40MarcoArguello.jpg?auto=format%2Ccompress&rect=0%2C244%2C2000%2C2083&w=1920&h=2000",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=3840",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=320",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=360",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=384",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=540",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=640",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=683",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=720",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=750",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=768",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=960",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=1080",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=1280",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=1366",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=1440",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=1536",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=1920",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&w=2560",
+        "alt": "",
+        "where": "srcset"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/mASaCBZK9jVhf9Pq_Moyen-CDM-PiscinevueJardin-%40MarcoArguello.jpg?auto=format%2Ccompress&w=1920&h=1280",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZillBvPdc1huKwh5_Moyen-AirellesSummerCamp-Piscine.jpg?auto=format%2Ccompress&rect=0%2C0%2C1708%2C1334&w=1920&h=1500",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/rDMdL4u_ch1C6TUQ_Moyen-CDM-Spa-Piscineinte%CC%81rieur%C2%A9VincentLeroux.jpg?auto=format%2Ccompress&rect=0%2C0%2C2000%2C1333&w=1920&h=1280",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/kCS8sQnInlEG84SN_Moyen-JT-Plage.jpg?auto=format%2Ccompress&rect=0%2C718%2C2000%2C1600&w=2000&h=1600",
+        "alt": "",
+        "where": "src"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ch8ggBai77o_RYeC_Moyen-CDM-PiscinevueJardins-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;rect=0%2C235%2C2000%2C1000&amp;w=2000&amp;h=1000",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/Zhj_3zjCgu4jzxtM_Moyen-PiscinePampelonne-3.jpeg?auto=format%2Ccompress&amp;rect=0%2C142%2C2000%2C1050&amp;w=2400&amp;h=1260",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/xlEKz3ELOreXkdQa_Moyen-CDM-PiscinevueCha%CC%82teau-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;rect=0%2C244%2C2000%2C2083&amp;w=1920&amp;h=2000",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=320",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=360",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=384",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=540",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=640",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=683",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=720",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=750",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=768",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=960",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=1080",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=1280",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=1366",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=1440",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=1536",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=1920",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=2560",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=3840",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/mASaCBZK9jVhf9Pq_Moyen-CDM-PiscinevueJardin-%40MarcoArguello.jpg?auto=format%2Ccompress&amp;w=1920&amp;h=1280",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/ZillBvPdc1huKwh5_Moyen-AirellesSummerCamp-Piscine.jpg?auto=format%2Ccompress&amp;rect=0%2C0%2C1708%2C1334&amp;w=1920&amp;h=1500",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/rDMdL4u_ch1C6TUQ_Moyen-CDM-Spa-Piscineinte%CC%81rieur%C2%A9VincentLeroux.jpg?auto=format%2Ccompress&amp;rect=0%2C0%2C2000%2C1333&amp;w=1920&amp;h=1280",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://assets.airelles.com/images/airelles2023/kCS8sQnInlEG84SN_Moyen-JT-Plage.jpg?auto=format%2Ccompress&amp;rect=0%2C718%2C2000%2C1600&amp;w=2000&amp;h=1600",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/ch8ggBai77o_RYeC_Moyen-CDM-PiscinevueJardins-%40MarcoArguello.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/xlEKz3ELOreXkdQa_Moyen-CDM-PiscinevueCha%CC%82teau-%40MarcoArguello.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/T8E3EIKpztzP653j_Moyen-CDM-Piscine-%40MarcoArguello.jpg?auto=format,compress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/mASaCBZK9jVhf9Pq_Moyen-CDM-PiscinevueJardin-%40MarcoArguello.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/ZillBvPdc1huKwh5_Moyen-AirellesSummerCamp-Piscine.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/rDMdL4u_ch1C6TUQ_Moyen-CDM-Spa-Piscineinte%CC%81rieur%C2%A9VincentLeroux.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/kCS8sQnInlEG84SN_Moyen-JT-Plage.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/ZuUfw_dLlTamO_fS_Fondvide%CC%81ohomeCDM.png?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/aNKUyp5xUNkB1BB0_CDM-Vuedrone%C2%A9Jetlag-2.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/FfnUisc-cj8cavm7_Moyen-CDM-PiscinevueJardins-%40MarcoArguello.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/maufC0NHbeCgrxin_Captured%E2%80%99e%CC%81cran2026-08-13a%CC%8015.25.28.png?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/aNzVJJ5xUNkB1Uje_7.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/aSgrk3NYClf9nhdI_CDM-SuiteBelve%CC%81de%CC%80re-Chambre%C2%A9VincentLeroux.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/aNzVWJ5xUNkB1Ujg_9.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/aNzWJJ5xUNkB1Ujy_SPA.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/aNzWZ55xUNkB1Uj5_CDM-Cine%CC%81maPleinAir%C2%A9LucasHorenburg.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/aNzWiZ5xUNkB1UkA_10.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/MEEMSzdxOUD4paxZ_Moyen-CDM-Piscinevuemer%C2%A9LucasHorenburg.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/aNzW_55xUNkB1UkJ_CDM-TableMariage%C2%A9Eikon.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      },
+      {
+        "url": "https://images.prismic.io/airelles2023/aNzYcJ5xUNkB1UlA_Cha%CC%82teaudelaMessardie%CC%80re-BoutiqueV%26L-KV1%C2%A9Rene%CC%81eKemps-2024.jpg?auto=format%2Ccompress",
+        "alt": "inline JS image",
+        "where": "script"
+      }
+    ]
+  }
+}
