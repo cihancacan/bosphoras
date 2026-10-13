@@ -1,5 +1,5 @@
 /** Curated Travel destination guides. Editorial selections only: no supplier inventory, booking, rates or claim of first-hand inspection. */
-export type FeaturedCitySlug = 'bodrum' | 'antalya' | 'dubai' | 'paris' | 'saint-tropez' | 'bali';
+export type FeaturedCitySlug = 'bodrum' | 'antalya' | 'dubai' | 'paris' | 'saint-tropez' | 'bali' | 'phuket';
 export type FeaturedCityPhoto = {src:string;fr:string;en:string;author:string;license:string;licenseUrl:string;sourcePage:string};
 export type FeaturedCityArea = {name:string;enName:string;fr:string;en:string;frWatch:string;enWatch:string};
 export type FeaturedCityExperience = {frTitle:string;enTitle:string;fr:string;en:string};
@@ -986,6 +986,218 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Tegalalang_Rice_Terraces.jpg"
+    }
+  }
+},
+  "phuket": {
+  "slug": "phuket",
+  "name": "Phuket",
+  "country": "Thaïlande",
+  "hero": "kata-noi-seaside",
+  "secondary": "nai-harn-sunset",
+  "eyebrowFr": "La mer d’Andaman, plus intimement",
+  "eyebrowEn": "A quieter side of the Andaman",
+  "headingFr": "Phuket, des criques et des refuges.",
+  "headingEn": "Phuket: hidden bays and exceptional stays.",
+  "introFr": "Des plages entourées de collines, des maisons en bois précieux et des villas qui contemplent la mer d’Andaman : Phuket ne se résume pas à ses stations balnéaires les plus animées. Le luxe commence par le choix d’une baie, d’un promontoire ou d’un jardin privé.",
+  "introEn": "Forest-framed beaches, teak pavilions and private villas overlooking the Andaman Sea: Phuket offers far more than lively resort strips. A truly luxurious stay begins with choosing the right beach, headland or secluded garden.",
+  "editorialFr": "Quatre adresses, quatre atmosphères sans les confondre : Amanpuri et la plage de Pansea, Trisara et ses villas très privées, Rosewood Phuket dans l’écrin d’Emerald Bay, et Keemala, retraite insolite sur les hauteurs de Kamala. Notre sélection ne promet ni tarif ni disponibilité non vérifiés.",
+  "editorialEn": "Four distinct retreats, without treating them as interchangeable: Amanpuri on Pansea Beach, Trisara and its secluded private villas, Rosewood Phuket beside Emerald Bay and the imaginative hillside sanctuary of Keemala above Kamala. This editorial shortlist makes no unsupported price or availability claims.",
+  "hotelIntroFr": "Une sélection resserrée de quatre établissements qui incarnent des façons différentes d’habiter Phuket : pieds dans le sable, villa sur promontoire, baie tropicale ou forêt au-dessus de Kamala. Les vues, catégories et accès plage doivent être confirmés au moment de réserver.",
+  "hotelIntroEn": "Four carefully selected places to experience Phuket differently: beachfront tranquility, headland villas, a secluded bay or a forest retreat above Kamala. Confirm exact accommodation type, outlook and beach arrangements when booking.",
+  "areas": [
+    {
+      "name": "Pansea & Surin",
+      "enName": "Pansea & Surin",
+      "fr": "La côte nord-ouest se fait plus discrète entre la crique de Pansea et Surin. Amanpuri occupe Pansea, tandis que Surin offre une plage voisine au caractère différent.",
+      "en": "Phuket’s northwest coast feels more private around Pansea and neighbouring Surin. Amanpuri occupies Pansea Beach; nearby Surin offers a different and more public beach experience.",
+      "frWatch": "Pansea et Surin sont deux plages distinctes. Ne pas présenter l’accès privé d’un hôtel comme un accès libre à toute la baie.",
+      "enWatch": "Pansea and Surin are distinct beaches; resort beach privileges do not imply unrestricted public access."
+    },
+    {
+      "name": "Layan & Bang Tao",
+      "enName": "Layan & Bang Tao",
+      "fr": "Les longues plages du nord-ouest alternent avec des promontoires boisés et des villas très confidentielles. Trisara est situé sur une côte retirée au nord de Bang Tao.",
+      "en": "Long northwest beaches give way to forested headlands and unusually secluded villas. Trisara sits on a quiet stretch of coastline north of Bang Tao.",
+      "frWatch": "Trisara est sur un promontoire, et non directement au milieu des installations de Bang Tao. Les transferts comptent.",
+      "enWatch": "Trisara is on a private headland, not on the busy central Bang Tao beachfront. Plan transfers accordingly."
+    },
+    {
+      "name": "Emerald Bay & côte de Patong",
+      "enName": "Emerald Bay & the Patong coast",
+      "fr": "Au sud-ouest de Patong, des anses plus tranquilles gardent le bleu de l’Andaman à proximité des activités de la côte ouest. Rosewood Phuket bénéficie de cette séparation.",
+      "en": "Southwest of lively Patong, quieter bays offer Andaman colours while remaining within reach of the west coast. Rosewood Phuket sits in one of these more secluded pockets.",
+      "frWatch": "La photo montre Patong, pas la plage privative de Rosewood. Les baies ne sont pas interchangeables.",
+      "enWatch": "The district photograph shows Patong, not Rosewood’s own beach. Do not confuse the two bays."
+    },
+    {
+      "name": "Kamala & collines tropicales",
+      "enName": "Kamala & forested hills",
+      "fr": "Kamala associe une baie balnéaire à des hauteurs couvertes de végétation, où Keemala développe son univers architectural de villas parmi les arbres.",
+      "en": "Kamala combines a coastal bay with tree-covered hills, where Keemala’s extraordinary villa architecture is immersed in the forest.",
+      "frWatch": "Keemala est sur les collines : ce n’est pas un hôtel situé sur la plage de Kamala.",
+      "enWatch": "Keemala is a hillside resort, not a hotel located directly on Kamala’s beachfront."
+    }
+  ],
+  "experiences": [
+    {
+      "frTitle": "La côte nord-ouest à l’aube",
+      "enTitle": "The northwest coast at sunrise",
+      "fr": "Marcher au bord de l’eau avant les heures les plus chaudes et retrouver son pavillon pour une matinée lente.",
+      "en": "Walk by the water before the heat builds, then return to a shaded pavilion for a slow morning."
+    },
+    {
+      "frTitle": "La vieille ville au rythme des façades",
+      "enTitle": "Old Phuket Town by its facades",
+      "fr": "Explorer l’architecture sino-portugaise et les petites boutiques de Phuket Old Town : une autre lecture de l’île, loin des plages.",
+      "en": "Discover the Sino-Portuguese architecture and independent shops of Phuket Old Town, another side of the island away from the beaches."
+    },
+    {
+      "frTitle": "Dernières lumières au cap Promthep",
+      "enTitle": "Last light at Promthep Cape",
+      "fr": "Admirer la côte sud depuis ses points de vue. Se renseigner sur l’affluence et la météo avant de partir.",
+      "en": "Enjoy the south coast from its viewpoints, while allowing for weather and crowds."
+    },
+    {
+      "frTitle": "La mer d’Andaman en bateau",
+      "enTitle": "The Andaman by boat",
+      "fr": "Privilégier une sortie privée dont le trajet respecte la météo, les conditions de mer et les espaces naturels protégés.",
+      "en": "Opt for a private sea outing with a route adapted to weather, sea conditions and protected natural areas."
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Amanpuri",
+      "area": "Pansea Beach · côte nord-ouest",
+      "fr": "Adresse iconique de pavillons thaïs en teck, jardins tropicaux et accès privilégié à Pansea Beach.",
+      "en": "An iconic retreat of Thai teak pavilions, lush gardens and a privileged setting on Pansea Beach.",
+      "frWatch": "Pavillon, Pool Pavilion et villa privée ne proposent pas les mêmes espaces ni piscines. Vérifier l’orientation et la catégorie.",
+      "enWatch": "Pavilions, Pool Pavilions and private villas have different layouts and pools. Confirm the exact category and outlook.",
+      "officialUrl": "https://www.aman.com/resorts/amanpuri"
+    },
+    {
+      "name": "Trisara",
+      "area": "Côte de Layan · promontoire nord-ouest",
+      "fr": "Un domaine de villas très privées avec piscines et vues vers la mer, pensé pour le calme et l’intimité.",
+      "en": "A secluded estate of private-pool villas overlooking the Andaman Sea, designed for quiet and privacy.",
+      "frWatch": "Vérifier Ocean View, Oceanfront et configuration réelle de la villa ; les vues et accès au rivage varient.",
+      "enWatch": "Distinguish Ocean View and Oceanfront villa categories: outlook, layout and shore access differ.",
+      "officialUrl": "https://trisara.com/"
+    },
+    {
+      "name": "Rosewood Phuket",
+      "area": "Emerald Bay · au sud de Patong",
+      "fr": "Une retraite contemporaine avec pavillons et villas dans la végétation, à deux pas d’une baie abritée.",
+      "en": "A contemporary retreat of pavilions and villas integrated into lush gardens beside Emerald Bay.",
+      "frWatch": "Comparer pavillon et villa Beachfront ; piscine privée, terrasse et vue directe mer dépendent de la catégorie.",
+      "enWatch": "Compare pavilion and Beachfront Villa categories; private-pool size, terrace and direct sea view vary.",
+      "officialUrl": "https://www.rosewoodhotels.com/en/phuket"
+    },
+    {
+      "name": "Keemala",
+      "area": "Collines de Kamala · forêt tropicale",
+      "fr": "Un univers architectural insolite de villas avec piscine, au milieu des arbres plutôt que sur la plage.",
+      "en": "An extraordinary architectural retreat of private-pool villas among the trees, rather than on the beach.",
+      "frWatch": "Bird’s Nest, Tree Pool House et autres catégories diffèrent ; certaines vues donnent sur la forêt ou le resort, pas la mer.",
+      "enWatch": "Bird’s Nest, Tree Pool House and other villas differ; some views face forest or resort, not the sea.",
+      "officialUrl": "https://www.keemala.com/"
+    }
+  ],
+  "checksFr": [
+    "Choisir le séjour : Pansea en bord de plage, promontoire de Trisara, baie de Rosewood ou colline de Kamala.",
+    "Vérifier la villa exacte : vue, taille de piscine, terrasse et accès réel au rivage ne sont jamais universels.",
+    "Prévoir transferts et circulation entre aéroport, stations du nord-ouest et vieux Phuket.",
+    "Tenir compte de la mousson, des vagues et courants, notamment pour les sorties en mer et baignades.",
+    "Comparer horaires saisonniers, taxes, annulations et prestations comprises dans la catégorie réservée."
+  ],
+  "checksEn": [
+    "Choose the setting first: Pansea beachfront, Trisara’s headland, Rosewood’s bay or Kamala hillside.",
+    "Check the exact villa: outlook, pool, terrace and direct beach access are not universal.",
+    "Plan transfers and traffic between the airport, northwest resorts and Phuket Old Town.",
+    "Consider monsoon season, surf and currents, especially for swimming and boat outings.",
+    "Compare seasonal opening times, taxes, cancellation rules and room-category inclusions."
+  ],
+  "photos": {
+    "kata-noi-seaside": {
+      "src": "/images/travel/phuket-premium/destination/phuket-kata-noi-beach-hero.webp",
+      "fr": "La plage de Kata Noi sous une lumière tropicale, Phuket",
+      "en": "Kata Noi beach under tropical sunlight in Phuket",
+      "author": "Phuket@photographer.net",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kata_Noi_beach,_Katathani_resort_(40414030520).jpg"
+    },
+    "surin-beach": {
+      "src": "/images/travel/phuket-premium/destination/phuket-surin-beach.webp",
+      "fr": "Surin Beach, sur la côte nord-ouest de Phuket",
+      "en": "Surin Beach on Phuket’s northwest coast",
+      "author": "Jpatokal",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Surin_Beach.JPG"
+    },
+    "kamala-bay": {
+      "src": "/images/travel/phuket-premium/destination/phuket-kamala-beach.webp",
+      "fr": "Vue panoramique de Kamala Beach et de sa baie",
+      "en": "Panoramic view of Kamala Beach and bay",
+      "author": "govertvissers",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kamala_beach.jpg"
+    },
+    "nai-harn-sunset": {
+      "src": "/images/travel/phuket-premium/destination/phuket-nai-harn-sunset.webp",
+      "fr": "Le coucher du soleil sur Nai Harn Beach, Phuket",
+      "en": "Sunset over Phuket’s Nai Harn Beach",
+      "author": "Phuket@photographer.net",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sunset_at_Nai_Harn_beach,_Phuket,_Thailand_05.jpg"
+    },
+    "old-town": {
+      "src": "/images/travel/phuket-premium/destination/phuket-old-town.webp",
+      "fr": "Phuket Old Town et ses façades historiques",
+      "en": "Historic streets and architecture of Phuket Old Town",
+      "author": "Ryomaandres",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Phuket_Old_Town_1.jpg"
+    },
+    "promthep-cape": {
+      "src": "/images/travel/phuket-premium/destination/phuket-promthep-cape.webp",
+      "fr": "Le cap Promthep et l’océan d’Andaman",
+      "en": "Promthep Cape overlooking the Andaman Sea",
+      "author": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Promthep_Cape_Phuket.jpg"
+    },
+    "kata-beach": {
+      "src": "/images/travel/phuket-premium/destination/phuket-kata-alt.webp",
+      "fr": "Kata Beach et sa plage tropicale à Phuket",
+      "en": "Tropical beachfront on Kata Beach, Phuket",
+      "author": "ADwarf",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Phuket_-_Kata_Beach_001.jpg"
+    },
+    "bang-tao": {
+      "src": "/images/travel/phuket-premium/destination/phuket-bang-tao-beach.webp",
+      "fr": "Bang Tao Beach et sa côte au nord-ouest de Phuket",
+      "en": "Bang Tao Beach on Phuket’s northwest shoreline",
+      "author": "Raita Futo",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bang_Tao_Beach_(53668069638).jpg"
+    },
+    "patong-coast": {
+      "src": "/images/travel/phuket-premium/destination/phuket-patong-beach.webp",
+      "fr": "Patong Beach et la côte ouest de Phuket",
+      "en": "Patong Beach and Phuket’s west coast",
+      "author": "Ewong17",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Patong_Beach_in_Phuket.jpg"
     }
   }
 }
