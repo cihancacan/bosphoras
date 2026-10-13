@@ -12,8 +12,8 @@ from PIL import Image,ImageOps,ImageStat
 import json,requests,hashlib
 JOBS=[
  ("sayan","sayan-rooftop-lotus","Four Seasons Sayan iconic lotus pond rooftop surrounded by rainforest",
-  "https://www.sophibee.com/wp-content/uploads/2023/12/Ubud-Bali-Family-Vacation-at-Four-Seasons-Sayan-Resort-Overview.jpg",
-  "https://www.sophibee.com/travel/bali-family-vacation-ubud/","SophiBee · Four Seasons Sayan",
+  "https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2018/10/FS-SAYAN-HEADER.jpg?fit=1280%2C720&ssl=1",
+  "https://theluxurytravelexpert.com/review-four-seasons-sayan-ubud-bali/","The Luxury Travel Expert · Four Seasons Sayan",
   []),
  ("sayan","sayan-riverfront-villa","Four Seasons Sayan Riverfront Villa entrance and tropical setting",
   "https://www.uniqhotels.com/media/hotels/cd/12._riverfront_villa_-_top_entrance_view.jpg",
@@ -52,8 +52,8 @@ JOBS=[
   "https://www.myboutiquehotel.com/en/boutique-hotels-seminyak/the-legian-bali.html","MyBoutiqueHotel · The Legian Seminyak",
   []),
  ("legian","legian-resort-terrace","The Legian Seminyak resort Tunjung terrace",
-  "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/web/17339898112591/raw/LEG-Tunjung_JPG.jpg",
-  "https://lhm-hotels.com/legian-seminyak/","LHM Hotels · The Legian Seminyak",
+  "https://www.luxurylink.com/images/sho_549cd0e5/10127_36-2048/Exterior%2Bview.jpg?filtered=1",
+  "https://www.luxurylink.com/5star/hotels/bali-indonesia/legian-bali","LuxuryLink · The Legian Seminyak",
   []),
  ("legian","legian-ocean-balcony","The Legian Seminyak ocean-view hotel balcony overlooking infinity pool",
   "https://cf.bstatic.com/xdata/images/hotel/max1024x768/225367043.jpg?k=dd1c46419b5be222bcb50f54f0665f7d2ffe8f18c4ce9cdb7aeaf22041cd7102&o=",
