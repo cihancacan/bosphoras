@@ -9,7 +9,7 @@ const photo=(hotel:string,key:string,fr:string,en:string,sourcePage:string,credi
 export const parisHotelEditorial:Record<string,BodrumHotelEditorial>={
   'Cheval Blanc Paris':{
     photos:[
-      photo('cheval-blanc','seine-exterior','Le Cheval Blanc Paris dans le bâtiment de la Samaritaine, au bord de la Seine','Cheval Blanc Paris above the Seine in the historic Samaritaine building','https://www.theworlds50best.com/hotels/the-list/cheval-blanc.html',"The World's 50 Best Hotels · Cheval Blanc Paris"),
+      photo('cheval-blanc','seine-exterior','La façade historique de la Samaritaine abritant Cheval Blanc Paris, vue depuis le Pont-Neuf','Cheval Blanc Paris above the Seine in the historic Samaritaine building','https://commons.wikimedia.org/wiki/File:La_Samaritaine_depuis_le_pont_Neuf.jpg','Arthur Weidmann · CC BY-SA 4.0'),
       photo('cheval-blanc','dior-spa-pool','Les espaces piscine et relaxation du Dior Spa Cheval Blanc Paris','Pool and relaxation area at the Dior Spa, Cheval Blanc Paris','https://www.chevalblanc.com/fr/maison/paris/bien-etre/','Cheval Blanc Paris · Oliver Fly / Dior Spa'),
       photo('cheval-blanc','seine-suite','Salon d’une suite du Cheval Blanc Paris avec vue sur les toits et monuments','Cheval Blanc Paris suite living room with a view over Paris rooftops and landmarks','https://travel.yahoo.com/hotels/articles/butler-dior-spa-cheval-blanc-130000465.html','ELLE · Cheval Blanc Paris')
     ],
@@ -22,9 +22,9 @@ export const parisHotelEditorial:Record<string,BodrumHotelEditorial>={
   },
   'Four Seasons Hotel George V, Paris':{
     photos:[
-      photo('george-v','paris-entrance','L’entrée classique du Four Seasons Hotel George V sur l’avenue George V','Classic entrance of Four Seasons Hotel George V on Avenue George V','https://www.fourseasons.com/paris/','Four Seasons Hotel George V, Paris'),
+      photo('george-v','paris-entrance','L’entrée classique du Four Seasons Hotel George V sur l’avenue George V','Classic entrance of Four Seasons Hotel George V on Avenue George V','https://commons.wikimedia.org/wiki/File:H%C3%B4tel_George-V,_31_avenue_George-V,_Paris_8e_1.jpg','Polymagou · CC BY-SA 4.0'),
       photo('george-v','flowers-lobby','Le lobby en marbre et les installations florales du Four Seasons George V','Marble lobby and signature floral display at the Four Seasons George V','https://joinup.ro/en/hotel/29232','Join UP! · Four Seasons Hotel George V'),
-      photo('george-v','spa-pool','La piscine intérieure du spa Four Seasons Hotel George V à Paris','Indoor spa swimming pool at Four Seasons Hotel George V, Paris','https://www.fourseasons.com/paris/spa/','Four Seasons · Le Spa George V')
+      photo('george-v','spa-pool','La piscine intérieure du spa Four Seasons Hotel George V à Paris','Indoor spa swimming pool at Four Seasons Hotel George V, Paris','https://www.multivu.com/players/uk/8352351-new-spa-at-four-seasons-paris','MultiVu · Four Seasons George V Paris')
     ],
     credit:'Four Seasons George V · images et médias hôteliers',
     sourcePage:'https://www.fourseasons.com/paris/photos-and-videos/',
