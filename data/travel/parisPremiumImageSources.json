@@ -1,22 +1,30 @@
 {
   "scope": "Only exact named Paris hotel photographs, never district views",
-  "createdAt": "2026-10-13T00:06:07.952970+00:00",
+  "createdAt": "2026-10-13T00:07:50.364613+00:00",
   "expected": 12,
-  "downloaded": 9,
+  "downloaded": 12,
   "items": [
     {
       "hotel": "cheval-blanc",
       "key": "seine-exterior",
       "scene": "historic Samaritaine riverside palace exterior",
-      "credit": "The World's 50 Best Hotels · Cheval Blanc Paris",
-      "sourcePage": "https://www.theworlds50best.com/hotels/the-list/cheval-blanc.html",
+      "credit": "Arthur Weidmann · CC BY-SA 4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:La_Samaritaine_depuis_le_pont_Neuf.jpg",
       "localPath": "/images/travel/paris-premium/cheval-blanc/seine-exterior.webp",
       "rights": "Project photo usage declared by the user; verify third-party commercial permission before production",
-      "status": "failed",
-      "errors": [
-        "under-sized: 620x400",
-        "under-sized: 620x400"
-      ]
+      "status": "downloaded",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/La_Samaritaine_depuis_le_pont_Neuf.jpg/1920px-La_Samaritaine_depuis_le_pont_Neuf.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1920,
+        1280
+      ],
+      "bytes": 438070,
+      "sha256": "374d66be6535792976f05b4f577f07d35bf16602bec5d36d4e6b51fb92937ab4",
+      "transformations": "EXIF normalized, resized, WebP q85"
     },
     {
       "hotel": "cheval-blanc",
@@ -66,15 +74,23 @@
       "hotel": "george-v",
       "key": "paris-entrance",
       "scene": "Four Seasons Hotel George V entrance and facade in Paris",
-      "credit": "Four Seasons · George V Paris",
-      "sourcePage": "https://press.fourseasons.com/paris/hotel-news/2025/worlds-leading-sustainable-supply-chain-programme/",
+      "credit": "Polymagou · Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:H%C3%B4tel_George-V,_31_avenue_George-V,_Paris_8e_1.jpg",
       "localPath": "/images/travel/paris-premium/george-v/paris-entrance.webp",
       "rights": "Project photo usage declared by the user; verify third-party commercial permission before production",
-      "status": "failed",
-      "errors": [
-        "403 Client Error: Forbidden for url: https://www.fourseasons.com/content/dam/fourseasons/images/web/PAR/PAR_3352_aspect16x9.jpg",
-        "403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-0%2C0000-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/"
-      ]
+      "status": "downloaded",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/H%C3%B4tel_George-V%2C_31_avenue_George-V%2C_Paris_8e_1.jpg/1920px-H%C3%B4tel_George-V%2C_31_avenue_George-V%2C_Paris_8e_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1920,
+        1280
+      ],
+      "bytes": 584192,
+      "sha256": "24f7c4c6189190739c4dc189112a555ecc2386a1d723643559a0e7a818b6c10a",
+      "transformations": "EXIF normalized, resized, WebP q85"
     },
     {
       "hotel": "george-v",
@@ -102,15 +118,23 @@
       "hotel": "george-v",
       "key": "spa-pool",
       "scene": "Four Seasons Hotel George V Paris long mosaic indoor spa pool",
-      "credit": "Four Seasons · Le Spa George V",
-      "sourcePage": "https://www.fourseasons.com/paris/spa/",
+      "credit": "MultiVu · Four Seasons Le Spa George V",
+      "sourcePage": "https://www.multivu.com/players/uk/8352351-new-spa-at-four-seasons-paris",
       "localPath": "/images/travel/paris-premium/george-v/spa-pool.webp",
       "rights": "Project photo usage declared by the user; verify third-party commercial permission before production",
-      "status": "failed",
-      "errors": [
-        "403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-3%2C2500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/",
-        "403 Client Error: Forbidden for url: https://www.fourseasons.com/content/dam/fourseasons/images/web/PAR/PAR_1390_original.jpg"
-      ]
+      "status": "downloaded",
+      "downloadUrl": "https://www.multivu.com/players/uk/8352351-new-spa-at-four-seasons-paris/image/8352351pool_1530099977934-2-HR.jpg",
+      "sourceSize": [
+        2500,
+        1508
+      ],
+      "outputSize": [
+        1920,
+        1158
+      ],
+      "bytes": 366402,
+      "sha256": "9062703b48d2855695619574453a49d2082cd2e4dfb568be6020fc4bb3664b8c",
+      "transformations": "EXIF normalized, resized, WebP q85"
     },
     {
       "hotel": "le-bristol",
@@ -130,8 +154,8 @@
         1834,
         1400
       ],
-      "bytes": 854426,
-      "sha256": "3a5c6b7bee4eec5e1f4bd2b230c682e8c1cc6536c6ec520dcc68f95975017e99",
+      "bytes": 853404,
+      "sha256": "7cc769eb54715594eb5e179b3934863739cec26d37de4e2669494bfab7e0d1f5",
       "transformations": "EXIF normalized, resized, WebP q85"
     },
     {
