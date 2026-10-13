@@ -1,0 +1,41 @@
+name: Travel Phuket — authentic destination WebP imports
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: [scripts/download-phuket-destination-photos.py, .github/workflows/travel-phuket-destination-photos.yml]
+permissions:
+  contents: write
+concurrency:
+  group: travel-phuket-destination-import
+  cancel-in-progress: false
+jobs:
+  media:
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install --disable-pip-version-check 'requests>=2.31,<3' 'Pillow>=10,<12'
+      - run: python scripts/download-phuket-destination-photos.py
+      - name: Save WebP sources and rights ledger on feature
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if [ -f data/travel/phuketDestinationImageSources.json ]; then git add data/travel/phuketDestinationImageSources.json; fi
+          if [ -d public/images/travel/phuket-premium/destination ]; then git add public/images/travel/phuket-premium/destination; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): import geolocated Phuket beach photography [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: phuket-destination-provenance
+          path: data/travel/phuketDestinationImageSources.json
+          if-no-files-found: ignore
