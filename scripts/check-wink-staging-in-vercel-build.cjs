@@ -16,7 +16,7 @@ if(process.env.VERCEL_ENV !== 'preview' || process.env.VERCEL_GIT_COMMIT_REF !==
   process.exit(0);
 }
 const now = new Date();
-const itineraryDate=new Date(now.getTime()+30*24*60*60*1000).toISOString().slice(0,10);
+const itineraryDate=new Date(now.getTime()+14*24*60*60*1000).toISOString().slice(0,10);
 let stage='credentials';
 function unary(client, names, request, metadata) {
   const fn=names.find(name=>typeof client[name] === 'function');
@@ -84,15 +84,26 @@ async function check(){
  const meta=new grpc.Metadata();meta.set('authorization','Bearer '+token);meta.set('managing-entity-id',String(bosphoras.accountId));
  const searchClient=new p.Search('staging-partner.wink.travel:443',grpc.credentials.createSsl());
  let response;
- try{response=await unary(searchClient,['searchByCity','SearchByCity'],{
-   geoNameId:'745044',
-   userSession:{itinerary:{startDate:itineraryDate,nights:2,room:{adults:2,quantity:1}},currencyCode:'EUR',languageCode:'en'},
-   page:0,size:1,imageFormat:'image/webp'
- },meta);}
- finally{searchClient.close();}
- const page=response.page||response;
- const matches=Array.isArray(page.content)?page.content:[];
- safeLog({status:'passed',stage,city:'Istanbul',returnedProperties:matches.length,queryWasExecuted:true});
+ let comparison;
+ try{
+   response=await unary(searchClient,['searchByCity','SearchByCity'],{
+      geoNameId:'745044',
+      userSession:{itinerary:{startDate:itineraryDate,nights:2,room:{adults:2,quantity:1}},currencyCode:'EUR',languageCode:'en'},
+      page:0,size:1,imageFormat:'image/webp'
+   },meta);
+   comparison=await unary(searchClient,['searchByCity','SearchByCity'],{
+      geoNameId:'292223',
+      userSession:{itinerary:{startDate:itineraryDate,nights:2,room:{adults:2,quantity:1}},currencyCode:'EUR',languageCode:'en'},
+      page:0,size:1,imageFormat:'image/webp'
+   },meta);
+ } finally{searchClient.close();}
+ for(const [city,raw] of [['Istanbul',response],['Dubai',comparison]]) {
+   const page=raw.page||raw;
+   const content=Array.isArray(page.content)?page.content:[];
+   safeLog({status:'passed',stage,city,daysAhead:14,returnedProperties:content.length,
+     totalElements:Number(page.totalElements ?? 0),totalPages:Number(page.totalPages ?? 0),
+     availableInFirstPage:content.filter(x=>x.available===true).length,queryWasExecuted:true});
+ }
 }
 check().catch(err=>{
  const grpcCode=typeof err?.code==='number'?err.code:undefined;
