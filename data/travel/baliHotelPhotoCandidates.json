@@ -1,0 +1,1094 @@
+{
+  "sayan-photos": {
+    "page": "https://www.fourseasons.com/sayan/photos-and-videos/",
+    "status": 403,
+    "final": "https://www.fourseasons.com/sayan/photos-and-videos/",
+    "bytes": 413,
+    "totalCandidates": 0,
+    "photos": []
+  },
+  "sayan-home": {
+    "page": "https://www.fourseasons.com/sayan/",
+    "status": 403,
+    "final": "https://www.fourseasons.com/sayan/",
+    "bytes": 383,
+    "totalCandidates": 0,
+    "photos": []
+  },
+  "sayan-accommodation": {
+    "page": "https://www.fourseasons.com/sayan/accommodations/",
+    "status": 403,
+    "final": "https://www.fourseasons.com/sayan/accommodations/",
+    "bytes": 402,
+    "totalCandidates": 0,
+    "photos": []
+  },
+  "bulgari-photos": {
+    "page": "https://www.bulgarihotels.com/en_US/bali/image-gallery",
+    "status": 403,
+    "final": "https://www.bulgarihotels.com/en_US/bali/image-gallery",
+    "bytes": 415,
+    "totalCandidates": 0,
+    "photos": []
+  },
+  "bulgari-home": {
+    "page": "https://www.bulgarihotels.com/bali/the-resort/overview",
+    "status": 403,
+    "final": "https://www.bulgarihotels.com/bali/the-resort/overview",
+    "bytes": 411,
+    "totalCandidates": 0,
+    "photos": []
+  },
+  "bulgari-villas": {
+    "page": "https://www.bulgarihotels.com/en_US/bali/villas-and-mansions/One-bedrooms/ocean-view-villa",
+    "status": 403,
+    "final": "https://www.bulgarihotels.com/en_US/bali/villas-and-mansions/One-bedrooms/ocean-view-villa",
+    "bytes": 475,
+    "totalCandidates": 0,
+    "photos": []
+  },
+  "raffles-home": {
+    "page": "https://www.raffles.com/bali/",
+    "status": 200,
+    "final": "https://www.raffles.com/bali/",
+    "bytes": 658421,
+    "totalCandidates": 71,
+    "photos": [
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a019-54?wid=1920",
+        "alt": "twitter:image",
+        "where": "meta"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&ts=1748421661115&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=575&ts=1748421661115&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=991&ts=1748421661115&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=1199&ts=1748421661115&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=1920&ts=1748421661115&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a122-45?qlt=82&ts=1785986992716&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a122-45?qlt=82&wid=575&ts=1785986992716&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a122-45?qlt=82&wid=991&ts=1785986992716&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a122-45?qlt=82&wid=1199&ts=1785986992716&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a122-45?qlt=82&wid=1920&ts=1785986992716&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/2608_ACF_055?qlt=82&ts=1789025117845&dpr=off",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/2608_ACF_055?qlt=82&wid=575&ts=1789025117845&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/2608_ACF_055?qlt=82&wid=991&ts=1789025117845&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/2608_ACF_055?qlt=82&wid=1199&ts=1789025117845&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/2608_ACF_055?qlt=82&wid=1920&ts=1789025117845&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_7132-62?qlt=82&ts=1786069266736&dpr=off",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_7132-62?qlt=82&wid=575&ts=1786069266736&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_7132-62?qlt=82&wid=991&ts=1786069266736&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_7132-62?qlt=82&wid=1199&ts=1786069266736&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_7132-62?qlt=82&wid=1920&ts=1786069266736&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/acf_p_b028_93?qlt=82&ts=1754382897178&dpr=off",
+        "alt": "Photoshoot at the Resort   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/acf_p_b028_93?qlt=82&wid=575&ts=1754382897178&dpr=off",
+        "alt": "Photoshoot at the Resort   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/acf_p_b028_93?qlt=82&wid=991&ts=1754382897178&dpr=off",
+        "alt": "Photoshoot at the Resort   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/acf_p_b028_93?qlt=82&wid=1199&ts=1754382897178&dpr=off",
+        "alt": "Photoshoot at the Resort   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/acf_p_b028_93?qlt=82&wid=1920&ts=1754382897178&dpr=off",
+        "alt": "Photoshoot at the Resort   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a064-71?qlt=82&ts=1748362747945&dpr=off",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a064-71?qlt=82&wid=575&ts=1748362747945&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a064-71?qlt=82&wid=991&ts=1748362747945&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a064-71?qlt=82&wid=1199&ts=1748362747945&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a064-71?qlt=82&wid=1920&ts=1748362747945&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_7113-76?qlt=82&ts=1760873478276&dpr=off",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_7113-76?qlt=82&wid=575&ts=1760873478276&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_7113-76?qlt=82&wid=991&ts=1760873478276&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_7113-76?qlt=82&wid=1199&ts=1760873478276&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_7113-76?qlt=82&wid=1920&ts=1760873478276&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-66?qlt=82&ts=1785986805873&dpr=off",
+        "alt": "Raffles Bali - Indonesia   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-66?qlt=82&wid=575&ts=1785986805873&dpr=off",
+        "alt": "Raffles Bali - Indonesia   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-66?qlt=82&wid=991&ts=1785986805873&dpr=off",
+        "alt": "Raffles Bali - Indonesia   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-66?qlt=82&wid=1199&ts=1785986805873&dpr=off",
+        "alt": "Raffles Bali - Indonesia   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-66?qlt=82&wid=1920&ts=1785986805873&dpr=off",
+        "alt": "Raffles Bali - Indonesia   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-20?qlt=82&ts=1786068985140&dpr=off",
+        "alt": "Raffles Bali - Indonesia   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-20?qlt=82&wid=575&ts=1786068985140&dpr=off",
+        "alt": "Raffles Bali - Indonesia   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-20?qlt=82&wid=991&ts=1786068985140&dpr=off",
+        "alt": "Raffles Bali - Indonesia   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-20?qlt=82&wid=1199&ts=1786068985140&dpr=off",
+        "alt": "Raffles Bali - Indonesia   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-20?qlt=82&wid=1920&ts=1786068985140&dpr=off",
+        "alt": "Raffles Bali - Indonesia   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-09?qlt=82&ts=1777959445387&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-09?qlt=82&wid=575&ts=1777959445387&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-09?qlt=82&wid=991&ts=1777959445387&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-09?qlt=82&wid=1199&ts=1777959445387&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-09?qlt=82&wid=1920&ts=1777959445387&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-54?qlt=82&ts=1777959445502&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-54?qlt=82&wid=575&ts=1777959445502&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-54?qlt=82&wid=991&ts=1777959445502&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-54?qlt=82&wid=1199&ts=1777959445502&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-54?qlt=82&wid=1920&ts=1777959445502&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/Butler-1?qlt=82&ts=1777959445677&dpr=off",
+        "alt": "Man in a grand hallway   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/Butler-1?qlt=82&wid=575&ts=1777959445677&dpr=off",
+        "alt": "Man in a grand hallway   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/Butler-1?qlt=82&wid=991&ts=1777959445677&dpr=off",
+        "alt": "Man in a grand hallway   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/Butler-1?qlt=82&wid=1199&ts=1777959445677&dpr=off",
+        "alt": "Man in a grand hallway   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/Butler-1?qlt=82&wid=1920&ts=1777959445677&dpr=off",
+        "alt": "Man in a grand hallway   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&ts=1780307109659&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=575&ts=1780307109659&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=991&ts=1780307109659&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=1199&ts=1780307109659&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=1920&ts=1780307109659&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6549-22?qlt=82&ts=1773851803526&dpr=off",
+        "alt": "Raffles London at The OWO - United Kingdom   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6549-22?qlt=82&wid=575&ts=1773851803526&dpr=off",
+        "alt": "Raffles London at The OWO - United Kingdom   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6549-22?qlt=82&wid=991&ts=1773851803526&dpr=off",
+        "alt": "Raffles London at The OWO - United Kingdom   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6549-22?qlt=82&wid=1199&ts=1773851803526&dpr=off",
+        "alt": "Raffles London at The OWO - United Kingdom   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6549-22?qlt=82&wid=1920&ts=1773851803526&dpr=off",
+        "alt": "Raffles London at The OWO - United Kingdom   ",
+        "where": "srcset"
+      }
+    ]
+  },
+  "raffles-villas": {
+    "page": "https://www.raffles.com/bali/private-villas/",
+    "status": 200,
+    "final": "https://www.raffles.com/bali/private-villas/",
+    "bytes": 654815,
+    "totalCandidates": 81,
+    "photos": [
+      {
+        "url": "https://www.raffles.com/content/dam/raffles-aem/default-social-media-image.jpg/_jcr_content/renditions/cq5dam.zoom.2048.2048.jpeg",
+        "alt": "twitter:image",
+        "where": "meta"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&ts=1748421661115&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=575&ts=1748421661115&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=991&ts=1748421661115&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=1199&ts=1748421661115&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=1920&ts=1748421661115&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a122-46?qlt=82&ts=1760679038857&dpr=off",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a122-46?qlt=82&wid=575&ts=1760679038857&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a122-46?qlt=82&wid=991&ts=1760679038857&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a122-46?qlt=82&wid=1199&ts=1760679038857&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a122-46?qlt=82&wid=1920&ts=1760679038857&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-35?qlt=82&ts=1761769538766&dpr=off",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-35?qlt=82&wid=575&ts=1761769538766&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-35?qlt=82&wid=991&ts=1761769538766&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-35?qlt=82&wid=1199&ts=1761769538766&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-35?qlt=82&wid=1920&ts=1761769538766&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-64?qlt=82&ts=1762224889680&dpr=off",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-64?qlt=82&wid=575&ts=1762224889680&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-64?qlt=82&wid=991&ts=1762224889680&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-64?qlt=82&wid=1199&ts=1762224889680&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-64?qlt=82&wid=1920&ts=1762224889680&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-49?qlt=82&ts=1762181150117&dpr=off",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-49?qlt=82&wid=575&ts=1762181150117&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-49?qlt=82&wid=991&ts=1762181150117&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-49?qlt=82&wid=1199&ts=1762181150117&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-49?qlt=82&wid=1920&ts=1762181150117&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6429-35?qlt=82&ts=1762067112039&dpr=off",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6429-35?qlt=82&wid=575&ts=1762067112039&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6429-35?qlt=82&wid=991&ts=1762067112039&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6429-35?qlt=82&wid=1199&ts=1762067112039&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6429-35?qlt=82&wid=1920&ts=1762067112039&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-33?qlt=82&ts=1760865059636&dpr=off",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-33?qlt=82&wid=575&ts=1760865059636&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-33?qlt=82&wid=991&ts=1760865059636&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-33?qlt=82&wid=1199&ts=1760865059636&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-33?qlt=82&wid=1920&ts=1760865059636&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-51?qlt=82&ts=1762181359977&dpr=off",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-51?qlt=82&wid=575&ts=1762181359977&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-51?qlt=82&wid=991&ts=1762181359977&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-51?qlt=82&wid=1199&ts=1762181359977&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-51?qlt=82&wid=1920&ts=1762181359977&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6667-90?qlt=82&ts=1761689779039&dpr=off",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6667-90?qlt=82&wid=575&ts=1761689779039&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6667-90?qlt=82&wid=991&ts=1761689779039&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6667-90?qlt=82&wid=1199&ts=1761689779039&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6667-90?qlt=82&wid=1920&ts=1761689779039&dpr=off",
+        "alt": "   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/2510_acf_332?qlt=82&ts=1791173802844&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/2510_acf_332?qlt=82&wid=575&ts=1791173802844&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/2510_acf_332?qlt=82&wid=991&ts=1791173802844&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/2510_acf_332?qlt=82&wid=1199&ts=1791173802844&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/2510_acf_332?qlt=82&wid=1920&ts=1791173802844&dpr=off",
+        "alt": "Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/2512_acf_458?qlt=82&ts=1786150912076&dpr=off",
+        "alt": "Raffles Bali - Indonesia   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/2512_acf_458?qlt=82&wid=575&ts=1786150912076&dpr=off",
+        "alt": "Raffles Bali - Indonesia   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/2512_acf_458?qlt=82&wid=991&ts=1786150912076&dpr=off",
+        "alt": "Raffles Bali - Indonesia   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/2512_acf_458?qlt=82&wid=1199&ts=1786150912076&dpr=off",
+        "alt": "Raffles Bali - Indonesia   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/2512_acf_458?qlt=82&wid=1920&ts=1786150912076&dpr=off",
+        "alt": "Raffles Bali - Indonesia   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-41?qlt=82&ts=1784517613073&dpr=off",
+        "alt": "Rise and Shine - Raffles Bali   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-41?qlt=82&wid=575&ts=1784517613073&dpr=off",
+        "alt": "Rise and Shine - Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-41?qlt=82&wid=991&ts=1784517613073&dpr=off",
+        "alt": "Rise and Shine - Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-41?qlt=82&wid=1199&ts=1784517613073&dpr=off",
+        "alt": "Rise and Shine - Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-41?qlt=82&wid=1920&ts=1784517613073&dpr=off",
+        "alt": "Rise and Shine - Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-60?qlt=82&ts=1761621811643&dpr=off",
+        "alt": "Stay Longer with Raffles - Raffles Bali   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-60?qlt=82&wid=575&ts=1761621811643&dpr=off",
+        "alt": "Stay Longer with Raffles - Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-60?qlt=82&wid=991&ts=1761621811643&dpr=off",
+        "alt": "Stay Longer with Raffles - Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-60?qlt=82&wid=1199&ts=1761621811643&dpr=off",
+        "alt": "Stay Longer with Raffles - Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-60?qlt=82&wid=1920&ts=1761621811643&dpr=off",
+        "alt": "Stay Longer with Raffles - Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-38?qlt=82&ts=1761839606719&dpr=off",
+        "alt": "Book Early with Raffles - Raffles Bali   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-38?qlt=82&wid=575&ts=1761839606719&dpr=off",
+        "alt": "Book Early with Raffles - Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-38?qlt=82&wid=991&ts=1761839606719&dpr=off",
+        "alt": "Book Early with Raffles - Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-38?qlt=82&wid=1199&ts=1761839606719&dpr=off",
+        "alt": "Book Early with Raffles - Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/met_p_a072-38?qlt=82&wid=1920&ts=1761839606719&dpr=off",
+        "alt": "Book Early with Raffles - Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&ts=1780307109659&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=575&ts=1780307109659&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=991&ts=1780307109659&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=1199&ts=1780307109659&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=1920&ts=1780307109659&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6549-22?qlt=82&ts=1773851803526&dpr=off",
+        "alt": "Raffles London at The OWO - United Kingdom   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6549-22?qlt=82&wid=575&ts=1773851803526&dpr=off",
+        "alt": "Raffles London at The OWO - United Kingdom   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6549-22?qlt=82&wid=991&ts=1773851803526&dpr=off",
+        "alt": "Raffles London at The OWO - United Kingdom   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6549-22?qlt=82&wid=1199&ts=1773851803526&dpr=off",
+        "alt": "Raffles London at The OWO - United Kingdom   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6549-22?qlt=82&wid=1920&ts=1773851803526&dpr=off",
+        "alt": "Raffles London at The OWO - United Kingdom   ",
+        "where": "srcset"
+      }
+    ]
+  },
+  "raffles-one-bedroom": {
+    "page": "https://www.raffles.com/bali/private-villas/vca/",
+    "status": 200,
+    "final": "https://www.raffles.com/bali/private-villas/vca/",
+    "bytes": 700101,
+    "totalCandidates": 23,
+    "photos": [
+      {
+        "url": "https://www.raffles.com/content/dam/raffles-aem/default-social-media-image.jpg/_jcr_content/renditions/cq5dam.zoom.2048.2048.jpeg",
+        "alt": "twitter:image",
+        "where": "meta"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&ts=1748421661115&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=575&ts=1748421661115&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=991&ts=1748421661115&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=1199&ts=1748421661115&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=1920&ts=1748421661115&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://www.ahstatic.com/photos/b695_rovca_00_p_1024x768.jpg",
+        "alt": "Raffles   ",
+        "where": "src"
+      },
+      {
+        "url": "https://www.ahstatic.com/photos/b695_rovca_02_p_1024x768.jpg",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://www.ahstatic.com/photos/b695_rovca_03_p_1024x768.jpg",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://www.ahstatic.com/photos/b695_rovca_04_p_1024x768.jpg",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://www.ahstatic.com/photos/b695_rovca_05_p_1024x768.jpg",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://www.ahstatic.com/photos/b695_rovca_06_p_1024x768.jpg",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://www.ahstatic.com/photos/b695_rovca_01_p_1024x768.jpg",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&ts=1780307109659&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=575&ts=1780307109659&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=991&ts=1780307109659&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=1199&ts=1780307109659&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6160-04?qlt=82&wid=1920&ts=1780307109659&dpr=off",
+        "alt": "DO NOT USE Raffles Bali   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6549-22?qlt=82&ts=1773851803526&dpr=off",
+        "alt": "Raffles London at The OWO - United Kingdom   ",
+        "where": "src"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6549-22?qlt=82&wid=575&ts=1773851803526&dpr=off",
+        "alt": "Raffles London at The OWO - United Kingdom   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6549-22?qlt=82&wid=991&ts=1773851803526&dpr=off",
+        "alt": "Raffles London at The OWO - United Kingdom   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6549-22?qlt=82&wid=1199&ts=1773851803526&dpr=off",
+        "alt": "Raffles London at The OWO - United Kingdom   ",
+        "where": "srcset"
+      },
+      {
+        "url": "https://m.ahstatic.com/is/image/accorhotels/aja_p_6549-22?qlt=82&wid=1920&ts=1773851803526&dpr=off",
+        "alt": "Raffles London at The OWO - United Kingdom   ",
+        "where": "srcset"
+      }
+    ]
+  },
+  "legian-home": {
+    "page": "https://lhm-hotels.com/legian-seminyak/",
+    "status": 200,
+    "final": "https://lhm-hotels.com/en",
+    "bytes": 1220386,
+    "totalCandidates": 12,
+    "photos": [
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/web/17339898112591/raw/LEG-Tunjung_JPG.jpg",
+        "alt": "og:image",
+        "where": "meta"
+      },
+      {
+        "url": "https://lhm-hotels.com/images/home/lhm-global.png",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://lhm-hotels.com/images/New Travel + Leisure (2).png",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://lhm-hotels.com/images/New Tripadvisor (1).png",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/basic/homepage/17755598572851/raw/The_Club_kul-kul_edit_grass.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/magazine/17441931870881/raw/WEB.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/home/15764719204321/raw.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/magazine/17757001164451/raw/Two_Bedroom_Maisonette_Pool_Villa_-_Exterior.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/home/15771656616041/raw.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/wellness/16033565135861/raw/gym1.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/wellness/15784789565901/raw.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/home/15771605409511/big.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      }
+    ]
+  },
+  "legian-hotel": {
+    "page": "https://thelegianseminyak.com/",
+    "error": "HTTPSConnectionPool(host='thelegianseminyak.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for"
+  },
+  "legian-gallery": {
+    "page": "https://lhm-hotels.com/legian-seminyak/gallery/",
+    "status": 200,
+    "final": "https://lhm-hotels.com/en",
+    "bytes": 1220386,
+    "totalCandidates": 12,
+    "photos": [
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/web/17339898112591/raw/LEG-Tunjung_JPG.jpg",
+        "alt": "og:image",
+        "where": "meta"
+      },
+      {
+        "url": "https://lhm-hotels.com/images/home/lhm-global.png",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://lhm-hotels.com/images/New Travel + Leisure (2).png",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://lhm-hotels.com/images/New Tripadvisor (1).png",
+        "alt": "   ",
+        "where": "src"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/basic/homepage/17755598572851/raw/The_Club_kul-kul_edit_grass.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/magazine/17441931870881/raw/WEB.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/home/15764719204321/raw.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/magazine/17757001164451/raw/Two_Bedroom_Maisonette_Pool_Villa_-_Exterior.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/home/15771656616041/raw.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/wellness/16033565135861/raw/gym1.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/wellness/15784789565901/raw.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      },
+      {
+        "url": "https://vold-chain-hotel.s3-ap-southeast-1.amazonaws.com/5d89cb1f9dae8c37de0d36db/home/15771605409511/big.jpg",
+        "alt": "inline page data",
+        "where": "script"
+      }
+    ]
+  }
+}
