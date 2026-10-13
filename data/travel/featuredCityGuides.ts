@@ -1,5 +1,5 @@
 /** Curated Travel destination guides. Editorial selections only: no supplier inventory, booking, rates or claim of first-hand inspection. */
-export type FeaturedCitySlug = 'bodrum' | 'antalya' | 'dubai' | 'paris';
+export type FeaturedCitySlug = 'bodrum' | 'antalya' | 'dubai' | 'paris' | 'saint-tropez';
 export type FeaturedCityPhoto = {src:string;fr:string;en:string;author:string;license:string;licenseUrl:string;sourcePage:string};
 export type FeaturedCityArea = {name:string;enName:string;fr:string;en:string;frWatch:string;enWatch:string};
 export type FeaturedCityExperience = {frTitle:string;enTitle:string;fr:string;en:string};
@@ -634,6 +634,175 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Saint-Germain_des_Pr%C3%A9s_(3363718209).jpg"
+    }
+  }
+},
+  "saint-tropez": {
+  "slug": "saint-tropez",
+  "name": "Saint-Tropez",
+  "country": "France",
+  "hero": "saint-tropez-harbour-hero",
+  "secondary": "saint-tropez-yachts-bay",
+  "eyebrowFr": "L’art de vivre sur la Côte d’Azur",
+  "eyebrowEn": "The art of the French Riviera",
+  "headingFr": "Saint-Tropez, la Riviera à votre rythme.",
+  "headingEn": "Saint-Tropez: the Riviera at your own pace.",
+  "introFr": "Un matin au Vieux-Port, la lumière sur les voiles, une table discrète à l’ombre des pins et le bleu de Pampelonne : Saint-Tropez conjugue l’énergie d’un village mythique avec le calme de la mer. L’adresse et la saison changent toute l’expérience.",
+  "introEn": "Morning at the old harbour, sunlight on yacht sails, lunch beneath the pines and the blue waters of Pampelonne: Saint-Tropez blends legendary village life with the calm of the sea. Your address and the season define the stay.",
+  "editorialFr": "Nous préférons quatre maisons aux caractères opposés : une retraite les pieds dans l’eau, une institution au village, un refuge sur les hauteurs de Ramatuelle et un domaine-château. Ce sont quatre façons de vivre Saint-Tropez, pas quatre hôtels interchangeables.",
+  "editorialEn": "Our shortlist celebrates four distinct ways of living Saint-Tropez: an intimate seafront retreat, a village institution, a hillside sanctuary in Ramatuelle and a grand château estate. They are not interchangeable, and the real location matters.",
+  "hotelIntroFr": "Quatre adresses choisies pour leur identité, leur situation et la qualité de l’expérience. Sélection éditoriale indépendante : aucun tarif, disponibilité ou partenariat fournisseur non confirmé.",
+  "hotelIntroEn": "Four distinctive properties chosen for setting, personality and guest experience. Independent editorial shortlist: no live rates, unverified availability or supplier partnership is claimed.",
+  "areas": [
+    {
+      "name": "Vieux-Port & Place des Lices",
+      "enName": "Old Port & Place des Lices",
+      "fr": "Les yachts, les terrasses, les façades provençales et le marché constituent le cœur vivant de Saint-Tropez. Pour ceux qui aiment sortir à pied et rentrer tard.",
+      "en": "Yachts, harbour terraces, pastel houses and the market define the lively village heart. Ideal for guests who enjoy walking to dinner and returning on foot.",
+      "frWatch": "La proximité du port apporte animation et circulation : vérifier le calme de la chambre et l’accès voiture.",
+      "enWatch": "The harbour is lively and traffic is seasonal: confirm room quietness and car access."
+    },
+    {
+      "name": "Pampelonne & Ramatuelle",
+      "enName": "Pampelonne & Ramatuelle",
+      "fr": "Longue plage de sable, clubs de plage et paysages de vignes et de pins, distincts du village. L’endroit idéal pour donner priorité à la mer.",
+      "en": "A long sandy beach, beach clubs, vineyards and pine-covered landscape, separate from the village. Best when the shoreline is the priority.",
+      "frWatch": "Pampelonne est à Ramatuelle, pas au Vieux-Port : prévoir un trajet et vérifier l’accès au club de plage choisi.",
+      "enWatch": "Pampelonne is in Ramatuelle, not the village: plan transfers and check beach club access."
+    },
+    {
+      "name": "La Bouillabaisse & collines tropéziennes",
+      "enName": "Bouillabaisse Beach & the Saint-Tropez hills",
+      "fr": "Les maisons face au golfe et les domaines dans les collines offrent la respiration provençale, avec davantage d’intimité qu’au port.",
+      "en": "Bay-facing seaside maisons and hilltop estates offer a quieter Provençal rhythm, with more space and privacy than the harbour.",
+      "frWatch": "Plage directe ou domaine avec navette : la relation à la mer diffère fortement selon l’hôtel et la catégorie.",
+      "enWatch": "Direct beach access and a hilltop property with transfers are very different experiences."
+    }
+  ],
+  "experiences": [
+    {
+      "frTitle": "Un matin sur le port",
+      "enTitle": "An early morning by the harbour",
+      "fr": "Marcher avant la foule, prendre un café face aux bateaux et découvrir la place des Lices au rythme du village.",
+      "en": "Walk before the crowds, enjoy coffee overlooking the yachts and discover Place des Lices at the village's pace."
+    },
+    {
+      "frTitle": "Une journée à Pampelonne",
+      "enTitle": "A day on Pampelonne",
+      "fr": "Sable doré, eaux claires et déjeuner les pieds dans le sable. Choisir son club pour le service et l’ambiance, pas pour une réputation seule.",
+      "en": "Golden sand, clear water and lunch by the beach. Choose a beach club for service and atmosphere, not reputation alone."
+    },
+    {
+      "frTitle": "La Riviera depuis la mer",
+      "enTitle": "The Riviera from the sea",
+      "fr": "Prendre le large en bateau privé, découvrir criques et plages, et revenir au port lorsque la lumière s’adoucit.",
+      "en": "Head out on a private boat, discover bays and coves and return to harbour as the light turns golden."
+    }
+  ],
+  "hotels": [
+    {
+      "name": "Cheval Blanc St-Tropez",
+      "area": "Plage de la Bouillabaisse · Saint-Tropez",
+      "fr": "Petite maison en bord de mer, pinède et bleu Riviera signature : l’intimité d’un palace directement sur le golfe de Saint-Tropez.",
+      "en": "An intimate seafront maison, pine grove and signature Riviera blue: palace-level attention directly by the Gulf of Saint-Tropez.",
+      "frWatch": "Vérifier l’orientation mer, pinède ou village et la catégorie de suite. L’accès à certaines expériences dépend de la saison.",
+      "enWatch": "Confirm sea, pine grove or village outlook and the exact suite type. Seasonal experiences may vary.",
+      "officialUrl": "https://www.chevalblanc.com/en/maison/st-tropez/"
+    },
+    {
+      "name": "Hôtel Byblos Saint-Tropez",
+      "area": "Village · Place des Lices",
+      "fr": "Institution tropézienne au cœur du village, avec un esprit de maison méditerranéenne, terrasses et vie sociale.",
+      "en": "A village institution with the feel of a Mediterranean house, terraces, distinctive design and a lively social atmosphere.",
+      "frWatch": "Un hôtel de village, non un resort directement sur Pampelonne : confirmer l’accès plage et le calme souhaité.",
+      "enWatch": "A village hotel rather than a resort directly on Pampelonne: confirm beach arrangements and the level of quiet you want.",
+      "officialUrl": "https://www.byblos.com/"
+    },
+    {
+      "name": "La Réserve Ramatuelle",
+      "area": "Collines de Ramatuelle · vue Méditerranée",
+      "fr": "Retraite architecturale dans les hauteurs, tournée vers la mer, la confidentialité, le spa et les vastes terrasses.",
+      "en": "A secluded hilltop retreat oriented around Mediterranean views, privacy, wellness and expansive terraces.",
+      "frWatch": "La Réserve se trouve à Ramatuelle, pas au port. Ne pas confondre l’hôtel, les villas et leurs prestations.",
+      "enWatch": "La Réserve is in Ramatuelle, not at the harbour. Hotel and villa facilities and policies can differ.",
+      "officialUrl": "https://www.lareserve-ramatuelle.com/"
+    },
+    {
+      "name": "Airelles Château de la Messardière",
+      "area": "Route de Tahiti · collines de Saint-Tropez",
+      "fr": "Domaine-château dominant les jardins et les paysages tropéziens, entre piscines, expériences familiales et accès à Pampelonne selon conditions.",
+      "en": "A château estate above Saint-Tropez with landscaped gardens, pools, family experiences and access to Pampelonne subject to the property's terms.",
+      "frWatch": "Vérifier catégorie, accès aux piscines et plages, conditions de transferts et équipements famille avant de réserver.",
+      "enWatch": "Confirm room category, pool and beach access, transfers and family amenities before booking.",
+      "officialUrl": "https://airelles.com/en/destination/chateau-de-la-messardiere-hotel"
+    }
+  ],
+  "checksFr": [
+    "Choisir entre village, Bouillabaisse, collines de Saint-Tropez et Ramatuelle : les distances changent les journées.",
+    "Vérifier les périodes d’ouverture, notamment hors saison, et les conditions réelles de la plage.",
+    "Comparer la catégorie exacte de chambre, vue et terrasse ; les photos de villas ne représentent pas les chambres standards.",
+    "Anticiper les transferts et la circulation estivale ; ne pas supposer qu’un trajet court en kilomètres sera rapide."
+  ],
+  "checksEn": [
+    "Choose village life, Bouillabaisse beachfront, the Saint-Tropez hills or Ramatuelle: distance changes the daily rhythm.",
+    "Check seasonal opening dates and the real terms of beach access.",
+    "Verify the exact room type, view and terrace; villa imagery does not describe standard rooms.",
+    "Allow for summer traffic and transfers; short driving distances do not guarantee quick journeys."
+  ],
+  "photos": {
+    "saint-tropez-harbour-hero": {
+      "src": "/images/travel/saint-tropez-premium/destination/saint-tropez-harbour-hero.webp",
+      "fr": "Saint-Tropez et son Vieux-Port vus du ciel, dans la lumière de la Méditerranée",
+      "en": "Saint-Tropez old town and harbour viewed from above in Mediterranean light",
+      "author": "dronepicr",
+      "license": "CC BY 2.0 · resized and WebP optimized",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_old_town_and_the_old_port_of_Saint-Tropez,_France_(52724205855).jpg"
+    },
+    "saint-tropez-yachts-bay": {
+      "src": "/images/travel/saint-tropez-premium/destination/saint-tropez-yachts-bay.webp",
+      "fr": "Yachts dans la baie bleue de Saint-Tropez",
+      "en": "Yachts in Saint-Tropez's deep blue Mediterranean bay",
+      "author": "dronepicr",
+      "license": "CC BY 2.0 · resized and WebP optimized",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_yachts_near_Saint-Tropez,_France_(52723269222).jpg"
+    },
+    "saint-tropez-old-port": {
+      "src": "/images/travel/saint-tropez-premium/destination/saint-tropez-old-port.webp",
+      "fr": "Façades du Vieux-Port de pêche de Saint-Tropez",
+      "en": "Pastel houses and traditional boats at Saint-Tropez's old fishing harbour",
+      "author": "dronepicr",
+      "license": "CC BY 2.0 · resized and WebP optimized",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Vieux_port_de_pêche_The_old_port_of_Saint-Tropez,_France_(52723272042).jpg"
+    },
+    "saint-tropez-pampelonne": {
+      "src": "/images/travel/saint-tropez-premium/destination/saint-tropez-pampelonne.webp",
+      "fr": "Plage de Pampelonne et eau turquoise à Ramatuelle",
+      "en": "Pampelonne sandy beach and turquoise water in Ramatuelle",
+      "author": "dronepicr",
+      "license": "CC BY 2.0 · resized and WebP optimized",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_Pampelonne_Beach,_Saint-Tropez,_France_(52723263302).jpg"
+    },
+    "saint-tropez-coast-vineyards": {
+      "src": "/images/travel/saint-tropez-premium/destination/saint-tropez-coast-vineyards.webp",
+      "fr": "Vignobles autour de Pampelonne, sur les collines de Ramatuelle",
+      "en": "Vineyards surrounding Pampelonne in the Ramatuelle hills",
+      "author": "dronepicr",
+      "license": "CC BY 2.0 · resized and WebP optimized",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_vineyards_in_Pampelonne,_Saint-Tropez,_France_(52724264298).jpg"
+    },
+    "saint-tropez-pampelonne-bay": {
+      "src": "/images/travel/saint-tropez-premium/destination/saint-tropez-pampelonne-bay.webp",
+      "fr": "Baie de Pampelonne et plage vue du ciel",
+      "en": "Pampelonne bay, beach and blue water seen from above",
+      "author": "dronepicr",
+      "license": "CC BY 2.0 · resized and WebP optimized",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_the_Bay_of_Pampelonne,_Saint-Tropez,_France_(52724196595).jpg"
     }
   }
 }
