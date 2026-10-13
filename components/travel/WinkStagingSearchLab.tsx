@@ -6,20 +6,27 @@ type Hotel = { name: string; starRating: number; available: boolean; roomTypesCo
 type SearchResult = {
   ok: boolean; city?: string; checkIn?: string; nights?: number; adults?: number; rooms?: number;
   pageCount?: number; totalElements?: number; totalPages?: number; searchedAt?: string;
-  currency?: string; hotels?: Hotel[]; accountConfirmed?: boolean; info?: string;
+  currency?: string; hotels?: Hotel[]; accountConfirmed?: boolean; info?: string; method?: string; filters?: string;
   error?: string; stage?: string; grpcCode?: number;
 };
-const cities = [
-  { slug: 'istanbul', label: 'Istanbul' }, { slug: 'paris', label: 'Paris' },
-  { slug: 'dubai', label: 'Dubaï' }, { slug: 'bangkok', label: 'Bangkok' },
-  { slug: 'phuket', label: 'Phuket' },
+const searchAreas = [
+  { slug: 'global', label: '🌍 Monde entier · sans ville' },
+  { slug: 'country-TR', label: '🇹🇷 Toute la Turquie' },
+  { slug: 'country-FR', label: '🇫🇷 Toute la France' },
+  { slug: 'country-AE', label: '🇦🇪 Tous les Émirats' },
+  { slug: 'country-TH', label: '🇹🇭 Toute la Thaïlande' },
+  { slug: 'city-istanbul', label: 'Istanbul seulement' },
+  { slug: 'city-paris', label: 'Paris seulement' },
+  { slug: 'city-dubai', label: 'Dubaï seulement' },
+  { slug: 'city-bangkok', label: 'Bangkok seulement' },
+  { slug: 'city-phuket', label: 'Phuket seulement' },
 ];
 function dateInDays(days: number) {
   const d = new Date(); d.setUTCDate(d.getUTCDate() + days); return d.toISOString().slice(0, 10);
 }
 
 export function WinkStagingSearchLab() {
-  const [city, setCity] = useState('istanbul');
+  const [scope, setScope] = useState('global');
   const [checkIn, setCheckIn] = useState(() => dateInDays(14));
   const [nights, setNights] = useState(2);
   const [adults, setAdults] = useState(2);
@@ -36,7 +43,7 @@ export function WinkStagingSearchLab() {
       const response = await fetch('/api/wink/staging/search', {
         method: 'POST', cache: 'no-store', credentials: 'same-origin',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ city, checkIn, nights, adults, rooms }),
+        body: JSON.stringify({ scope, checkIn, nights, adults, rooms }),
       });
       const data = await response.json() as SearchResult;
       setResult(data);
@@ -55,16 +62,16 @@ export function WinkStagingSearchLab() {
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#b18a52]">Diagnostic privé · API de réservation</p>
         <h1 className="font-serif text-4xl leading-tight sm:text-5xl">Recherche d’hôtels Wink</h1>
         <p className="mt-4 text-base leading-relaxed text-slate-600">
-          Teste les villes et les dates directement dans l’environnement de démonstration Wink.
-          Cette recherche est indépendante de la sélection éditoriale des hôtels Bosphoras : zéro résultat
-          ne signifie pas qu’il n’existe aucun hôtel dans la ville.
+          Commence par « Monde entier » pour découvrir ce que contient Wink Staging sans filtre géographique,
+          puis compare avec un pays ou une ville. Les dates et voyageurs restent obligatoires pour calculer les offres.
+          Zéro résultat ne signifie pas qu’il n’existe aucun hôtel dans la destination.
         </p>
       </header>
       <form onSubmit={submit} className="rounded-2xl border border-[#dedbd3] bg-white p-5 shadow-sm sm:p-7">
         <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
-          <label className="block text-sm font-semibold">Destination
-            <select value={city} onChange={e => setCity(e.target.value)} className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm">
-              {cities.map(c => <option key={c.slug} value={c.slug}>{c.label}</option>)}
+          <label className="block text-sm font-semibold">Périmètre de recherche
+            <select value={scope} onChange={e => setScope(e.target.value)} className="mt-2 w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm">
+              {searchAreas.map(c => <option key={c.slug} value={c.slug}>{c.label}</option>)}
             </select>
           </label>
           <label className="block text-sm font-semibold">Date d’arrivée
@@ -89,7 +96,7 @@ export function WinkStagingSearchLab() {
           </label>
         </div>
         <div className="mt-6 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
-          <p className="text-xs leading-relaxed text-slate-500">Une requête par clic ; au maximum 10 hôtels renvoyés par page de résultat. Certains appels Wink peuvent être facturés.</p>
+          <p className="text-xs leading-relaxed text-slate-500">Un seul appel Wink par clic, 5 hôtels au maximum affichés par page pour limiter les coûts. Aucun filtre étoiles, style, disponibilité ou direct uniquement.</p>
           <button disabled={pending} className="w-full rounded-lg bg-[#163a48] px-7 py-3 font-semibold text-white transition hover:bg-[#24596a] disabled:opacity-50 sm:w-auto">
             {pending ? 'Recherche auprès de Wink…' : 'Rechercher les hôtels'}
           </button>
@@ -112,6 +119,7 @@ export function WinkStagingSearchLab() {
             <div className="rounded-xl bg-[#f6f5f2] p-4"><div className="text-xs text-slate-500">Compte affilié</div><div className="mt-2 font-semibold">{result.accountConfirmed ? 'Reconnu' : 'Non confirmé'}</div></div>
           </div>
           <p className="mt-5 text-sm text-slate-600">{result.info}</p>
+          <p className="mt-2 text-xs text-slate-500">Méthode Wink : {result.method || '—'} · Aucun filtre facultatif appliqué. Total API distinct des 5 premières fiches.</p>
           {result.hotels && result.hotels.length > 0 && <div className="mt-7 space-y-3">
             {result.hotels.map((hotel, index) => <div key={index} className="flex items-center gap-4 rounded-xl border border-slate-200 p-3">
               {hotel.heroImageUrl && <img src={hotel.heroImageUrl} alt={hotel.name} loading="lazy" className="h-20 w-28 rounded-lg object-cover" />}
