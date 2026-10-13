@@ -55,7 +55,7 @@ export const parisHotelEditorial:Record<string,BodrumHotelEditorial>={
     credit:'Mandarin Oriental Lutetia · presse et galerie',
     sourcePage:'https://www.mandarinoriental.com/en/paris/lutetia/gallery',
     frBest:'Pour la rive gauche, l’élégance littéraire de Saint-Germain et un palace Art déco à explorer à pied.',
-    enBest:'For literary Left Bank Paris, Saint-Germain's café culture and an Art Deco landmark to explore on foot.',
+    enBest:'For literary Left Bank Paris, Saint-Germain’s café culture and an Art Deco landmark to explore on foot.',
     frStory:"Lutetia raconte un Paris différent de celui des grands palaces de la rive droite : histoire culturelle, façades emblématiques, atmosphère de Saint-Germain et une façon plus libre d’habiter la ville. À quelques pas des librairies et galeries, on peut commencer la journée en terrasse avant de rejoindre le spa en fin d’après-midi. Certaines suites disposent de perspectives extraordinaires sur la tour Eiffel ; ce sont des catégories identifiées, non une promesse attachée au nom de l’hôtel. Vérifier l’orientation, le balcon et le plan de chaque suite.",
     enStory:"Lutetia expresses a different Paris from the grand right-bank palaces: cultural heritage, an instantly recognizable facade and the intellectual, café-lined atmosphere of Saint-Germain. Bookshops and galleries invite unhurried mornings, followed by an afternoon at the spa. Certain exceptional suites frame the Eiffel Tower, but those views are specific room categories, not a general hotel entitlement. Check each suite's outlook, balcony and floor plan."
   }
