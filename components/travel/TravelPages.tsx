@@ -148,7 +148,7 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     title: pageTitle + ' | Bosphoras Luxury Stays',
     description,
     alternates: { canonical, ...(Object.keys(languageAlternates).length ? { languages: languageAlternates } : {}) },
-    openGraph: { title: pageTitle, description: t.value, url: canonical, siteName: 'Bosphoras Luxury Stays', type: 'website' },
+    openGraph: { title: pageTitle, description: featureGuide?.slug === 'koh-samui' ? description : t.value, url: canonical, siteName: 'Bosphoras Luxury Stays', type: 'website' },
     robots: { index: ready, follow: true, 'max-image-preview': 'large' },
   };
 }
@@ -273,6 +273,14 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
         }
       ] : []),
       ...(isKohSamui && kohGuide ? [
+        { '@type':'Article', '@id':base+'#editorial-guide',
+          headline:locale==='fr'?'Hôtels de luxe à Koh Samui : quatre adresses et cinq secteurs':'Luxury hotels in Koh Samui: four hotels and five areas',
+          description:locale==='fr'?kohGuide.introFr:kohGuide.introEn,
+          inLanguage:locale,mainEntityOfPage:base,
+          image:ORIGIN+kohGuide.photos[kohGuide.hero].src,
+          author:{'@type':'Organization',name:'Bosphoras Luxury Stays',url:ORIGIN+'/travel'},
+          publisher:{'@type':'Organization',name:'Bosphoras Luxury Stays',url:ORIGIN+'/travel'}
+        },
         { '@type':'ItemList', '@id':base+'#curated-luxury-hotels',
           name:locale==='fr'?'Quatre hôtels de luxe sélectionnés à Koh Samui':'Four curated luxury hotels in Koh Samui',
           numberOfItems:kohGuide.hotels.length,
