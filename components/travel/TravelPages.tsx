@@ -4,6 +4,7 @@ import { travelEditorial } from '@/data/travel/editorial';
 import { IstanbulFlagship } from '@/components/travel/IstanbulFlagship';
 import { FeaturedCityGuide } from '@/components/travel/FeaturedCityGuide';
 import { featuredCityGuide } from '@/data/travel/featuredCityGuides';
+import { kohSamuiFaq } from '@/data/travel/kohSamuiFaq';
 import { HotelEditorialDetail } from '@/components/travel/HotelEditorialDetail';
 import { istanbulHotels, istanbulEditorialSourceDate } from '@/data/travel/istanbulFlagship';
 import { notFound } from 'next/navigation';
@@ -114,7 +115,7 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     : isFlagship
     ? locale === 'fr' ? 'Meilleurs hôtels de luxe à Istanbul : Bosphore, palaces et quartiers' : 'Best luxury hotels in Istanbul: Bosphorus, palaces and neighbourhoods'
     : isFeaturedHotelGuide && featureGuide
-    ? (locale === 'fr' ? 'Hôtels de luxe à ' + featureGuide.name + ' : sélection et quartiers' : 'Luxury hotels in ' + featureGuide.name + ': curated guide and locations')
+    ? (featureGuide.slug==='koh-samui' ? (locale==='fr' ? 'Hôtels de luxe à Koh Samui : notre sélection d’adresses d’exception' : 'Luxury Hotels in Koh Samui: Our Curated Island Collection') : (locale === 'fr' ? 'Hôtels de luxe à ' + featureGuide.name + ' : sélection et quartiers' : 'Luxury hotels in ' + featureGuide.name + ': curated guide and locations'))
     : isFeaturedDestinationGuide && featureGuide
     ? (locale === 'fr' ? featureGuide.name + ' : où séjourner, hôtels et expériences de luxe' : featureGuide.name + ': luxury stays, neighbourhoods and experiences')
     : route.kind === 'keyword' && route.category && route.destination
@@ -135,7 +136,7 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
       ? 'Guide indépendant des meilleurs hôtels de luxe à Istanbul : Bosphore, quartiers, palaces, vues, neuf adresses à comparer et conseils avant réservation.'
       : 'An independent guide to luxury hotels in Istanbul: Bosphorus views, historic palaces, neighbourhoods, nine hotel profiles and practical booking advice.'
     : (isFeaturedHotelGuide || isFeaturedDestinationGuide) && featureGuide
-    ? (locale === 'fr' ? (isFeaturedHotelGuide ? featureGuide.hotelIntroFr : featureGuide.introFr) : (isFeaturedHotelGuide ? featureGuide.hotelIntroEn : featureGuide.introEn)).slice(0, 160)
+    ? (featureGuide.slug==='koh-samui' ? (locale==='fr' ? 'Découvrez nos quatre hôtels de luxe à Koh Samui : villas privées, plages confidentielles, spas et conseils pour choisir la bonne côte.' : 'Explore four luxury hotels in Koh Samui: private pool villas, secluded beaches, wellness retreats and a curated island guide.') : (locale === 'fr' ? (isFeaturedHotelGuide ? featureGuide.hotelIntroFr : featureGuide.introFr) : (isFeaturedHotelGuide ? featureGuide.hotelIntroEn : featureGuide.introEn))).slice(0, 160)
     : localizedIntro
     ? (pageTitle + '. ' + localizedIntro).slice(0, 160)
     : (route.destination ? pageTitle + '. ' + t.value + ' ' + t.approach : t.slogan + ' ' + t.value).slice(0, 160);
@@ -238,6 +239,8 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
     && route.destination?.slug === 'istanbul'
     && route.category === 'hotels'
     && (locale === 'fr' || locale === 'en');
+  const kohGuide = ((locale==='fr'||locale==='en') && (route.kind==='destination'||(route.kind==='keyword' && route.category==='hotels'))) ? featuredCityGuide(route.destination?.slug) : undefined;
+  const isKohSamui = kohGuide?.slug==='koh-samui' && (locale==='fr'||locale==='en');
   const node = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -266,6 +269,20 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
           numberOfItems: istanbulHotels.length,
           itemListElement: istanbulHotels.map((hotel, index) => ({
             '@type': 'ListItem', position: index + 1, name: hotel.name, url: hotel.officialUrl
+          }))
+        }
+      ] : []),
+      ...(isKohSamui && kohGuide ? [
+        { '@type':'ItemList', '@id':base+'#curated-luxury-hotels',
+          name:locale==='fr'?'Quatre hôtels de luxe sélectionnés à Koh Samui':'Four curated luxury hotels in Koh Samui',
+          numberOfItems:kohGuide.hotels.length,
+          itemListElement:kohGuide.hotels.map((hotel,index)=>({
+            '@type':'ListItem',position:index+1,name:hotel.name,url:hotel.officialUrl
+          }))
+        },
+        { '@type':'FAQPage', '@id':base+'#faq',
+          mainEntity:kohSamuiFaq[locale as 'fr'|'en'].map(faq=>({
+            '@type':'Question',name:faq.q,acceptedAnswer:{'@type':'Answer',text:faq.a}
           }))
         }
       ] : [])
