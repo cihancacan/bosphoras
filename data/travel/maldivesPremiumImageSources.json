@@ -1,8 +1,8 @@
 {
   "scope": "Maldives official-resort galleries, Preview only; 12 exact-property shots sought",
-  "generatedAt": "2026-10-14T22:06:42.824807+00:00",
+  "generatedAt": "2026-10-14T22:09:33.804842+00:00",
   "expected": 12,
-  "downloaded": 11,
+  "downloaded": 12,
   "items": [
     {
       "hotel": "soneva-jani",
@@ -304,13 +304,24 @@
         "turtle",
         "discovery"
       ],
-      "sourcePage": "https://www.fourseasons.com/maldiveslg/",
+      "sourcePage": "https://www.hospemag.me/cms/four-seasons-resorts-maldives-pioneers-in-marine-conservation",
       "localPath": "/images/travel/maldives-premium/four-seasons-landaa/marine-discovery.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
-      "status": "failed",
-      "errors": [
-        "not a landscape editorial image"
-      ]
+      "status": "downloaded",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/5a74702ce45a7cd601df944b/1775558706548-37RQPUKD9HQKBR4P3581/Turtle%2BRehabilitation%2BProgramme%2Bat%2BFS%2BMaldives%2B%2B%281%29.jpg",
+      "sourceAlt": "Hospemag · Four Seasons Maldives turtle rehabilitation",
+      "originalSize": [
+        2500,
+        1668
+      ],
+      "outputSize": [
+        1950,
+        1301
+      ],
+      "brightness": 88.8,
+      "sha256": "4ad15102b94bacb683ed559318904bb42f4a3168cef5b3981b03e27feab5490c",
+      "bytes": 226350,
+      "credit": "Hospemag · Four Seasons Maldives turtle rehabilitation"
     }
   ]
 }
