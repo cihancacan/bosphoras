@@ -166,84 +166,78 @@ PREFERRED_MEDIA={
  ("cheval-blanc-randheli","beach-villa"): ["https://images.prismic.io/lvmh-chevalblanc/aFl9k3fc4bHWioIT_ChevalBlancRandheli-IslandVilla-OliverFly-2024-12-.jpg?auto=format%2Ccompress&fit=max&w=3840","https://www.chevalblanc.com/en/maison/randheli/rooms-and-suites/island-villa-2-bedroom/","Cheval Blanc Randheli · island villa aerial"],
  ("cheval-blanc-randheli","spa-island"): ["https://cdn.ideeperviaggiare.it/media/2019/08/maldive-cheval-blanc-randheli-1920x1293-62416.jpg","https://www.ideeperviaggiare.it/viaggi/maldive/cheval-blanc-randheli","Idee per Viaggiare · Cheval Blanc Spa treatment room"],
  ("one-and-only-reethi-rah","beach-villa"): ["https://media.privileges-voyages.com/resizer/r/1600-900-1-100/medias/mediatheque/produits/DEN033/One-and-Only-Reethi-Rah-Grand-Beach-Villa-Maldives.jpg","https://www.privileges-voyages.com/sejour/q/reethi-rah-aux-maldives","Privilèges Voyages · Grand Beach Villa One&Only"],
- ("one-and-only-reethi-rah","water-villa"): ["https://assets.kerzner.com/api/public/content/1dae2148d2eb49e3a7ac7c0a7ef04a32?t=w2880&v=029c025c","https://www.oneandonlyresorts.com/reethi-rah/accommodation/water-villa-with-pool","One&Only Reethi Rah · overwater villas"],
+ ("one-and-only-reethi-rah","water-villa"): ["https://4.bp.blogspot.com/-gmhL2QQSy2U/VLyyfLIP0DI/AAAAAAAAAUg/GpYgdXPJBE8/s1600/reethi-rah-villa-suite-exterior-details-over-water-infinity-pool.jpg","https://doortomaldives.blogspot.com/2015/01/one-reethi-rah-introduces-new-overwater.html","Door To Maldives · One&Only overwater villa pool"],
  ("one-and-only-reethi-rah","island-beach"): ["https://media.voguearabia.com/photos/68cb339713a270109ff6a132/16%3A9/w_5376%2Ch_3024%2Cc_limit/OO_RR_Pool_FamilyPool_Drone_0896_MASTER.jpg","https://www.voguearabia.com/article/the-one-and-only-reethi-rah-maldives-hotel","Vogue Arabia · One&Only Reethi Rah island pool and beach"],
  ("four-seasons-landaa","overwater-villa"): ["https://assets.vogue.in/photos/65268e39aa2804e61f7bfbb3/16%3A9/w_1280%2Cc_limit/Water%20Villa%20at%20Landaa%20Giraavaru%283%29.jpeg?mbid=social_retweet","https://www.vogue.in/content/at-the-four-seasons-landaa-giraavaru-maldives-i-accepted-the-capriciousness-of-nature-and-was-rewarded-for-it","Vogue India · Four Seasons Landaa Giraavaru water villa"],
- ("four-seasons-landaa","blu-beach"): ["https://www.asiaodysseytravel.com/images/maldives/four-seasons-landaa-giraavaru-7-star/dining-blu-700-1.jpg","https://www.asiaodysseytravel.com/7-star-maldives-resorts/four-seasons-landaa-giraavaru.html","Asia Odyssey Travel · Blu Beach Club dining"],
- ("four-seasons-landaa","marine-discovery"): ["https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-280%2C9068-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/MLG/MLG_1365_original.jpg","https://www.fourseasons.com/maldiveslg/services-and-amenities/marine-discovery-centre/","Four Seasons Landaa Giraavaru · Marine Discovery Centre"],
+ ("four-seasons-landaa","blu-beach"): ["https://image.hummingbird.travel/disk1/public/hotels/34/f2eccbf0-ab53-4187-94e3-044a5e12c1ef.png","https://lujosinartificios.com/destinos/maldivas/four-seasons-resort-maldives-at-landaa-giraavaru/","Luxury travel · Landaa Giraavaru aerial beach"],
+ ("four-seasons-landaa","marine-discovery"): ["https://www.asiaodysseytravel.com/images/maldives/four-seasons-landaa-giraavaru-7-star/dining-blu-700-1.jpg","https://www.asiaodysseytravel.com/7-star-maldives-resorts/four-seasons-landaa-giraavaru.html","Asia Odyssey · Landaa Blu dining pavilion"],
 }
-DIRECT_DEST={}
+DIRECT_DEST={
+ "noonu-atoll":("https://cdn.airdomo.com/property-media/feed/sphere-estates/images/7b748b3a9f32272b55ddb606d64ec85e142ff1a3df9757efd83422a4b95d17cc.webp","https://airdomo.com/properties/luxury-maldives-beach-over-water-villas-sale-soneva","Airdomo · Soneva Jani Noonu Atoll aerial")
+}
 DEST=[
   [
     "lagoon-aerial",
-    "Maldives aerial atoll lagoon",
+    "Aerial shot, Maldives.jpg",
     [
-      "maldives",
-      "atoll"
+      "aerial shot"
     ]
   ],
   [
     "noonu-atoll",
-    "Noonu Atoll Maldives islands",
+    "Soneva Jani Noonu Atoll aerial",
     [
+      "soneva jani",
       "noonu"
     ]
   ],
   [
     "baa-atoll",
-    "Baa Atoll Maldives lagoon",
+    "Baa atoll islands.JPG",
     [
-      "baa atoll"
+      "baa atoll islands"
     ]
   ],
   [
     "north-male-atoll",
-    "North Male Atoll Maldives aerial",
+    "Bandos Island 1 - panoramio.jpg",
     [
-      "north male",
-      "north malé",
-      "north mal",
-      "male atoll"
+      "bandos island"
     ]
   ],
   [
     "overwater-villas",
-    "Maldives overwater villas lagoon",
+    "Water villas at Medhufushi Island Resort in the Maldives.jpg",
     [
-      "maldives",
-      "overwater"
+      "water villas at medhufushi"
     ]
   ],
   [
     "beach-island",
-    "Maldives beach island palm trees",
+    "Aerial shot of a small island on a coral reef in the Maldives.jpg",
     [
-      "maldives",
-      "beach"
+      "aerial shot of a small island"
     ]
   ],
   [
     "sandbank",
-    "Maldives sandbank aerial",
+    "Malediven Sandbank (28800504836).jpg",
     [
-      "sandbank",
-      "sand bar"
+      "sandbank"
     ]
   ],
   [
     "seaplane",
-    "Maldives seaplane lagoon",
+    "Seaplane at W Retreat Maldives.jpg",
     [
-      "seaplane",
-      "maldives"
+      "seaplane at w retreat"
     ]
   ],
   [
     "manta-reef",
-    "Manta rays Maldives reef",
+    "Manta alfredi fushivaru thila.jpg",
     [
-      "manta",
-      "maldives"
+      "manta alfredi fushivaru"
     ]
   ]
 ]
