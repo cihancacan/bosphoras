@@ -1,0 +1,80 @@
+{
+  "scope": "Porto Cervo destination images from Wikimedia Commons only",
+  "generatedAt": "2026-10-14T23:17:39.282711+00:00",
+  "expected": 9,
+  "downloaded": 1,
+  "items": [
+    {
+      "key": "porto-cervo-marina",
+      "search": "Porto Cervo marina Sardinia aerial",
+      "localPath": "/images/travel/porto-cervo-premium/destination/porto-cervo-marina.webp",
+      "status": "failed"
+    },
+    {
+      "key": "cala-di-volpe-bay",
+      "search": "Cala di Volpe Sardinia bay",
+      "localPath": "/images/travel/porto-cervo-premium/destination/cala-di-volpe-bay.webp",
+      "status": "failed",
+      "lastError": "not a landscape editorial image"
+    },
+    {
+      "key": "porto-cervo-piazzetta",
+      "search": "Piazzetta Porto Cervo Sardinia",
+      "localPath": "/images/travel/porto-cervo-premium/destination/porto-cervo-piazzetta.webp",
+      "status": "failed"
+    },
+    {
+      "key": "romazzino-beach",
+      "search": "Spiaggia del Romazzino Sardinia",
+      "localPath": "/images/travel/porto-cervo-premium/destination/romazzino-beach.webp",
+      "status": "downloaded",
+      "sourceFile": "File:At the fabulous Romazzino beach, Romazzino OT, Sardinia, Italy - panoramio.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:At_the_fabulous_Romazzino_beach,_Romazzino_OT,_Sardinia,_Italy_-_panoramio.jpg",
+      "author": "trolvag",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/At_the_fabulous_Romazzino_beach%2C_Romazzino_OT%2C_Sardinia%2C_Italy_-_panoramio.jpg/1920px-At_the_fabulous_Romazzino_beach%2C_Romazzino_OT%2C_Sardinia%2C_Italy_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1920,
+        1440
+      ],
+      "brightness": 152.4,
+      "sha256": "0ac45c3d4f630fe0cb3fb941928c2c4be7b006b3e387e52f232b1ccf0a23d4c9",
+      "bytes": 346790
+    },
+    {
+      "key": "liscia-di-vacca",
+      "search": "Liscia di Vacca Sardinia",
+      "localPath": "/images/travel/porto-cervo-premium/destination/liscia-di-vacca.webp",
+      "status": "failed"
+    },
+    {
+      "key": "pevero-beach",
+      "search": "Spiaggia Grande Pevero Costa Smeralda",
+      "localPath": "/images/travel/porto-cervo-premium/destination/pevero-beach.webp",
+      "status": "failed"
+    },
+    {
+      "key": "spiaggia-del-principe",
+      "search": "Spiaggia del Principe Sardinia",
+      "localPath": "/images/travel/porto-cervo-premium/destination/spiaggia-del-principe.webp",
+      "status": "failed"
+    },
+    {
+      "key": "capriccioli-beach",
+      "search": "Spiaggia Capriccioli Sardinia",
+      "localPath": "/images/travel/porto-cervo-premium/destination/capriccioli-beach.webp",
+      "status": "failed"
+    },
+    {
+      "key": "sardinia-sailing",
+      "search": "Porto Cervo sailing boats",
+      "localPath": "/images/travel/porto-cervo-premium/destination/sardinia-sailing.webp",
+      "status": "failed"
+    }
+  ]
+}
