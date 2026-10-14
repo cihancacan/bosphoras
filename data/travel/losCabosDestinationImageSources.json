@@ -1,6 +1,6 @@
 {
   "scope": "Los Cabos destination images from Wikimedia Commons only",
-  "generatedAt": "2026-10-14T22:28:36.556072+00:00",
+  "generatedAt": "2026-10-14T22:32:30.669103+00:00",
   "expected": 9,
   "downloaded": 7,
   "items": [
@@ -54,7 +54,8 @@
       "key": "palmilla-bay",
       "search": "Palmilla beach Mexico",
       "localPath": "/images/travel/los-cabos-premium/destination/palmilla-bay.webp",
-      "status": "failed"
+      "status": "failed",
+      "fallbackError": "404 Client Error: File Not Found for url: https://i0.wp.com/playasde.net/wp-content/uploads/2022/11/Playa-Palmilla.jpg?ssl=1&w=1200"
     },
     {
       "key": "pedregal-cliffs",
@@ -83,7 +84,24 @@
       "key": "corridor-coast",
       "search": "Los Cabos tourist corridor",
       "localPath": "/images/travel/los-cabos-premium/destination/corridor-coast.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "Montage Los Cabos · Santa Maria Bay, Tourist Corridor",
+      "sourcePage": "https://www.montage.com/loscabos/resort-information/",
+      "author": "Montage Los Cabos · Santa Maria Bay, Tourist Corridor",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.montage.com/loscabos/resort-information/",
+      "downloadUrl": "https://uploads.montage.com/uploads/sites/7/2025/03/11144652/AerialOverviewofMontageLosCabos.jpg",
+      "originalSize": [
+        1800,
+        1348
+      ],
+      "outputSize": [
+        1800,
+        1348
+      ],
+      "brightness": 125.8,
+      "sha256": "4fea8c0df0b58cee3e1edf19c2c6fb127141abb95059d59285a6361c61e8bcbe",
+      "bytes": 521212
     },
     {
       "key": "puerto-los-cabos",
@@ -112,24 +130,8 @@
       "key": "san-jose-art",
       "search": "San Jose del Cabo historic",
       "localPath": "/images/travel/los-cabos-premium/destination/san-jose-art.webp",
-      "status": "downloaded",
-      "sourceFile": "File:San José del Cabo - panoramio - kajikawa.jpg",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:San_Jos%C3%A9_del_Cabo_-_panoramio_-_kajikawa.jpg",
-      "author": "kajikawa",
-      "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/San_Jos%C3%A9_del_Cabo_-_panoramio_-_kajikawa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "originalSize": [
-        1280,
-        960
-      ],
-      "outputSize": [
-        1280,
-        960
-      ],
-      "brightness": 98.8,
-      "sha256": "ec83d3fa3a4a7e92a1791295d8450667e9d12bfc57239b719775fcbb68632e23",
-      "bytes": 117430
+      "status": "failed",
+      "lastError": "429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.or"
     },
     {
       "key": "cabo-marina",

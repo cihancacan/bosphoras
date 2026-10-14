@@ -1,8 +1,8 @@
 {
   "scope": "Los Cabos official-resort galleries, Preview only; 12 exact-property shots sought",
-  "generatedAt": "2026-10-14T22:28:36.556072+00:00",
+  "generatedAt": "2026-10-14T22:32:30.669103+00:00",
   "expected": 12,
-  "downloaded": 10,
+  "downloaded": 11,
   "items": [
     {
       "hotel": "one-and-only-palmilla",
@@ -37,13 +37,24 @@
         "beach",
         "coast"
       ],
-      "sourcePage": "https://www.oneandonlyresorts.com/palmilla",
+      "sourcePage": "https://www.oneandonlyresorts.com/palmilla/newsletter",
       "localPath": "/images/travel/los-cabos-premium/one-and-only-palmilla/palmilla-beach.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
-      "status": "failed",
-      "errors": [
-        "503 Server Error: Service Unavailable for url: https://assets.kerzner.com/api/public/conte"
-      ]
+      "status": "downloaded",
+      "downloadUrl": "https://dam.kerzner.com/i/kerzner/OO_Palmilla_Drone_Morning_0860_MASTER?poi=0.643%2C0.645%2C0%2C0&scaleFit=poi",
+      "sourceAlt": "One&Only Palmilla · sunrise aerial beach",
+      "originalSize": [
+        5370,
+        3577
+      ],
+      "outputSize": [
+        1950,
+        1299
+      ],
+      "brightness": 115.8,
+      "sha256": "558029993a57407ce85488eccfc234755cfb8b938fa06870821a828221c4826c",
+      "bytes": 718590,
+      "credit": "One&Only Palmilla · sunrise aerial beach"
     },
     {
       "hotel": "one-and-only-palmilla",
@@ -56,7 +67,9 @@
       "localPath": "/images/travel/los-cabos-premium/one-and-only-palmilla/resort-pool.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
       "status": "failed",
-      "errors": []
+      "errors": [
+        "not a landscape editorial image"
+      ]
     },
     {
       "hotel": "waldorf-pedregal",
@@ -220,23 +233,23 @@
         "suite",
         "plunge"
       ],
-      "sourcePage": "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-a-ritz-carlton-reserve/photos/",
+      "sourcePage": "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-los-cabos-a-ritz-carlton-reserve/overview/",
       "localPath": "/images/travel/los-cabos-premium/zadun-reserve/pool-suite.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
       "status": "downloaded",
-      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/SJDZR/sjdzr-zadun-beachfront-7255-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
-      "sourceAlt": "Zadún Reserve Beachfront Suite",
+      "downloadUrl": "https://cache.marriott.com/is/image/marriotts7prod/rz-sjdzr-zadun-0435-37637:Classic-Hor?wid=1300&fit=constrain",
+      "sourceAlt": "Exterior",
       "originalSize": [
-        1336,
-        890
+        1300,
+        867
       ],
       "outputSize": [
-        1336,
-        890
+        1300,
+        867
       ],
-      "brightness": 132.0,
-      "sha256": "4bbcdaf5dcca83f31ea515ada2ad2b50210984c724ff4dd5ebb63d4c09015345",
-      "bytes": 208936,
+      "brightness": 120.2,
+      "sha256": "c776521793b9a536098505fc5623187ee8dfedfcec864f3f888b9487db66d83b",
+      "bytes": 311296,
       "credit": "Zadún, a Ritz-Carlton Reserve · official website"
     },
     {
@@ -246,23 +259,23 @@
         "aerial",
         "beach"
       ],
-      "sourcePage": "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-a-ritz-carlton-reserve/photos/",
+      "sourcePage": "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-los-cabos-a-ritz-carlton-reserve/overview/",
       "localPath": "/images/travel/los-cabos-premium/zadun-reserve/resort-aerial.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
       "status": "downloaded",
-      "downloadUrl": "https://cache.marriott.com/is/image/marriotts7prod/rz-sjdzr-20230627-093826-zad-26903-39140:Classic-Hor?wid=1336&fit=constrain",
-      "sourceAlt": "aerial view of pools, beach and sea",
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-digital/rz/cala/hws/s/sjdzr/en_us/photo/unlimited/assets/sjdzr-reserve-beachfront-8017.jpg",
+      "sourceAlt": "Grand Reserve Beachfront",
       "originalSize": [
-        1336,
-        890
+        5000,
+        3335
       ],
       "outputSize": [
-        1336,
-        890
+        1950,
+        1301
       ],
-      "brightness": 116.9,
-      "sha256": "bd71d6453345a916edd6a785b01dff8edefb34cbdf7add54977332e426bd5c3c",
-      "bytes": 322742,
+      "brightness": 115.1,
+      "sha256": "c8cef9f5de3512fd54120fcd325d1ccec1088acd59aba1d630182b0cdb6ef278",
+      "bytes": 635478,
       "credit": "Zadún, a Ritz-Carlton Reserve · official website"
     },
     {
@@ -272,23 +285,23 @@
         "spa",
         "sensei"
       ],
-      "sourcePage": "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-a-ritz-carlton-reserve/photos/",
+      "sourcePage": "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-los-cabos-a-ritz-carlton-reserve/overview/",
       "localPath": "/images/travel/los-cabos-premium/zadun-reserve/sensei-spa.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
       "status": "downloaded",
-      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/SJDZR/sjdzr-spa-alkemia-7319-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
-      "sourceAlt": "Spa Sensei - Pool",
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/SJDZR/sjdzr-spa-alkemia-7319-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=944px:*",
+      "sourceAlt": "gallery resort",
       "originalSize": [
-        1336,
-        890
+        944,
+        629
       ],
       "outputSize": [
-        1336,
-        890
+        944,
+        629
       ],
       "brightness": 117.1,
-      "sha256": "dce25b838f9354565452d2a74b0031a44af07dd5aaa4de62ef3da43ce2459c3a",
-      "bytes": 426652,
+      "sha256": "364fef51597d799a0b627e9f8a0be8585a17819bfef6cdf601adf07ce69e8d0b",
+      "bytes": 210050,
       "credit": "Zadún, a Ritz-Carlton Reserve · official website"
     }
   ]
