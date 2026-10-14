@@ -10,6 +10,7 @@ import { saintTropezHotelEditorial, saintTropezAreaVisuals } from '@/data/travel
 import { baliHotelEditorial, baliAreaVisuals } from '@/data/travel/baliPremiumEditorial';
 import { phuketHotelEditorial, phuketAreaVisuals } from '@/data/travel/phuketPremiumEditorial';
 import { kohSamuiHotelEditorial, kohSamuiAreaVisuals } from '@/data/travel/kohSamuiPremiumEditorial';
+import { kohSamuiFaq } from '@/data/travel/kohSamuiFaq';
 import phuketPhotoManifest from '@/data/travel/phuketPremiumImageSources.json';
 import baliPhotoManifest from '@/data/travel/baliPremiumImageSources.json';
 import saintTropezPhotoManifest from '@/data/travel/saintTropezPremiumImageSources.json';
@@ -300,6 +301,16 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         ← {fr?'Retour au guide complet de la destination':'Back to the complete destination guide'}
       </Link>
     </section>:<HotelTeaser guide={city} locale={locale}/>}
+    {city.slug==='koh-samui' && <section id="faq-koh-samui" className="mx-auto max-w-7xl px-5 py-14 sm:py-20">
+      <p className="text-xs uppercase tracking-[.2em] text-[#947048]">{fr?'Questions fréquentes':'Frequently asked questions'}</p>
+      <h2 className="mt-4 font-serif text-3xl sm:text-5xl">{fr?'Préparer un séjour de luxe à Koh Samui':'Plan a luxury stay in Koh Samui'}</h2>
+      <div className="mt-8 grid gap-4 md:grid-cols-2">
+        {kohSamuiFaq[locale].map(item=><article key={item.q} className="border border-[#e5dbcb] bg-white p-7">
+          <h3 className="font-serif text-xl text-[#173340]">{item.q}</h3>
+          <p className="mt-4 text-sm leading-7 text-[#54666d]">{item.a}</p>
+        </article>)}
+      </div>
+    </section>}
     <Advice guide={city} locale={locale}/>
     <section className="mx-auto max-w-7xl px-5 py-16">
       <h2 className="font-serif text-3xl">{fr?'Continuer votre découverte':'Continue exploring'}</h2>
