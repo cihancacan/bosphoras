@@ -174,7 +174,7 @@ PREFERRED_MEDIA={
  ("rosewood-guanahani","sense-spa"):["https://picasso.rosewoodhotelgroup.com/transform/89faf417-c8ec-4b7f-bbf4-19030fc31dc4/RWLGH_wellness_sensespa_treatmentroom","https://www.rosewoodhotels.com/en/le-guanahani/wellness/spa/treatment-menu","Rosewood Hotels · Sense Spa treatment room"],
 }
 DIRECT_DEST={
- "gustavia-aerial":["https://www.saintbarth-tourisme.com/wp-content/uploads/2023/10/Gustavia___31121_2-scaled.jpg","https://www.saintbarth-tourisme.com/en/destination-item/gustavia-st-barts/","Saint Barth Tourism · aerial Gustavia harbour"],
+ "gustavia-aerial":["https://cdn.prod.website-files.com/6480865ca5f310b312eb7419/650853a56f7b980a9c9f8a09_saintbarth4.webp","https://www.lagoongroup.com/destinations/saint-barthelemy","Lagoon Group · aerial Gustavia harbour"],
  "flamands-beach":["https://www.antillesexception.com/var/exv/storage/images/_aliases/embed1020x680/media/images/guide-touristique-de-saint-barth/plages/plage-de-flamands/plage-de-flamands-saint-barthelemy/31067729-1-fre-FR/Plage-de-Flamands-Saint-Barthelemy.jpg","https://www.antillesexception.com/location-villa/saint-barth/Splendide-villa-pieds-dans-l-eau-SBFL02","Antilles Exception · Flamands beach"],
  "st-jean-bay":["https://www.luxethika.com/wp-content/uploads/2020/08/St-Barth-Eden-Rock-Aerial-2-1540-880.jpg","https://www.luxethika.com/destinations/iles/saint-barthelemy/baie-de-st-jean/voir/eden-rock/","Luxethika · Saint Jean Bay with Eden Rock"],
  "saint-barth-sailing":["https://img.marinas.com/v2/9d190efcd28a27a36f29b75b97ee4a82d04008ce1602b6ea780f13e87dcbd929.jpg","https://marinas.com/view/marina/mncvq5_Gustavia_Port_Marina_St_Barts_Guadeloupe","Marinas.com · Gustavia yachts and sailboats"],
@@ -383,6 +383,19 @@ def try_destination(key,query,matches):
    persist(f"destination/{key}.webp",content,sha)
    row.update(status="downloaded",sourceFile=credit,sourcePage=page,author=credit,license="Client-authorised editorial use; written third-party reuse terms to verify before production",licenseUrl=page,downloadUrl=actual,originalSize=original,outputSize=output,brightness=light,sha256=sha,bytes=len(content))
   except Exception as error:row["fallbackError"]=str(error)[:160]
+ # The Commons search term once returned an unrelated ship, not the streets of Gustavia.
+ if key=="gustavia-streets":
+  url="https://i0.wp.com/travelawaits.com/wp-content/uploads/2021/12/gustavia-street.jpg?resize=1024%2C684&ssl=1"
+  source="https://www.travelawaits.com/2718805/st-barts-best-things-to-do/"
+  try:
+   data,actual=get(url,timeout=30)
+   converted,original,output,bright,sha=convert(data,850)
+   dest=ROOT/"destination/gustavia-streets.webp"
+   dest.parent.mkdir(parents=True,exist_ok=True)
+   dest.write_bytes(converted)
+   USED.add(sha)
+   row.update(status="downloaded",sourceFile="TravelAwaits · cobbled Gustavia shopping street",sourcePage=source,author="TravelAwaits",license="Client-stated authorisation; third-party commercial reuse to verify",licenseUrl=source,downloadUrl=actual,originalSize=original,outputSize=output,brightness=bright,sha256=sha,bytes=len(converted))
+  except Exception as exc:print("Gustavia street override failed",str(exc)[:160],flush=True)
  print("CITY",key,row["status"],row.get("sourceFile",""),flush=True)
  return row
 
