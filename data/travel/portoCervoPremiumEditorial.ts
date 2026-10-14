@@ -7,25 +7,25 @@ export const portoCervoHotelEditorial:Record<string,BodrumHotelEditorial> = {
         "src": "/images/travel/porto-cervo-premium/cala-di-volpe/bay-architecture.webp",
         "fr": "Cala di Volpe, architecture autour de sa baie",
         "en": "Hotel Cala di Volpe architecture above the bay",
-        "credit": "Crédit selon audit de source",
-        "sourcePage": "https://www.marriott.com/en-us/hotels/olblc-hotel-cala-di-volpe-a-luxury-collection-hotel-costa-smeralda/overview/"
+        "credit": "1Golf · Hotel Cala di Volpe aerial bay",
+        "sourcePage": "https://www.1golf.eu/en/hotel/hotel-cala-di-volpe-a-luxury-collection-hotel-costa-smeralda/"
       },
       {
         "src": "/images/travel/porto-cervo-premium/cala-di-volpe/pool-and-sea.webp",
         "fr": "Piscine et baie de l'Hotel Cala di Volpe",
         "en": "Pool and bay at Cala di Volpe",
-        "credit": "Crédit selon audit de source",
-        "sourcePage": "https://www.marriott.com/en-us/hotels/olblc-hotel-cala-di-volpe-a-luxury-collection-hotel-costa-smeralda/overview/"
+        "credit": "UNIQ Hotels · Cala di Volpe pool, bay and bridge",
+        "sourcePage": "https://www.uniqhotels.com/hotel-cala-di-volpe/"
       },
       {
         "src": "/images/travel/porto-cervo-premium/cala-di-volpe/suite-terrace.webp",
-        "fr": "Suite ou terrasse de Cala di Volpe",
-        "en": "Hotel Cala di Volpe suite or terrace",
-        "credit": "Crédit selon audit de source",
-        "sourcePage": "https://www.marriott.com/en-us/hotels/olblc-hotel-cala-di-volpe-a-luxury-collection-hotel-costa-smeralda/overview/"
+        "fr": "Chambre Premium Suite au Hotel Cala di Volpe",
+        "en": "Premium Suite bedroom at Hotel Cala di Volpe",
+        "credit": "Hotel Cala di Volpe, a Luxury Collection Hotel · official website",
+        "sourcePage": "https://www.uniqhotels.com/hotel-cala-di-volpe/"
       }
     ],
-    "credit": "Crédit photographique par image",
+    "credit": "Hotel Cala di Volpe, a Luxury Collection Hotel · sources détaillées par photographie",
     "sourcePage": "https://www.marriott.com/en-us/hotels/olblc-hotel-cala-di-volpe-a-luxury-collection-hotel-costa-smeralda/overview/",
     "frBest": "Pour l'architecture iconique et le glamour de la baie de Cala di Volpe.",
     "enBest": "For iconic architecture and the historic glamour of Cala di Volpe.",
@@ -38,25 +38,25 @@ export const portoCervoHotelEditorial:Record<string,BodrumHotelEditorial> = {
         "src": "/images/travel/porto-cervo-premium/romazzino-belmond/beach-hotel.webp",
         "fr": "Romazzino, A Belmond Hotel au bord de la mer",
         "en": "Romazzino, A Belmond Hotel beachfront",
-        "credit": "Crédit selon audit de source",
-        "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/romazzino-costa-smeralda"
+        "credit": "Audley Travel · Romazzino beachfront aerial",
+        "sourcePage": "https://www.audleytravel.com/us/italy/accommodation/hotel-romazzino"
       },
       {
         "src": "/images/travel/porto-cervo-premium/romazzino-belmond/garden-pool.webp",
         "fr": "Piscine et jardins au Romazzino",
         "en": "Romazzino hotel pool and gardens",
-        "credit": "Crédit selon audit de source",
-        "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/romazzino-costa-smeralda"
+        "credit": "84 Rooms · Romazzino beach pools and gardens",
+        "sourcePage": "https://www.84rooms.com/collections/15-of-our-favourite-italian-beach-hotels"
       },
       {
         "src": "/images/travel/porto-cervo-premium/romazzino-belmond/villa-sea.webp",
-        "fr": "Villa ou suite du Romazzino",
-        "en": "Room or villa at Romazzino",
-        "credit": "Crédit selon audit de source",
-        "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/romazzino-costa-smeralda"
+        "fr": "Architecture et espace de séjour au Romazzino Belmond",
+        "en": "Hotel space at Romazzino, A Belmond Hotel",
+        "credit": "Romazzino, A Belmond Hotel · official website",
+        "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/romazzino-costa-smeralda/accommodation"
       }
     ],
-    "credit": "Crédit photographique par image",
+    "credit": "Romazzino, A Belmond Hotel · sources détaillées par photographie",
     "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/romazzino-costa-smeralda",
     "frBest": "Pour les familles, la plage privée et les jardins méditerranéens.",
     "enBest": "For families, beachfront days and Mediterranean gardens.",
@@ -67,27 +67,27 @@ export const portoCervoHotelEditorial:Record<string,BodrumHotelEditorial> = {
     "photos": [
       {
         "src": "/images/travel/porto-cervo-premium/pitrizza/granite-coast.webp",
-        "fr": "Pitrizza au milieu des rochers de la Costa Smeralda",
-        "en": "Hotel Pitrizza and Sardinian granite coast",
-        "credit": "Crédit selon audit de source",
-        "sourcePage": "https://www.hotelpitrizza.com/en/"
+        "fr": "Vue aérienne du Hotel Pitrizza et de ses criques",
+        "en": "Aerial view of Hotel Pitrizza and coastal coves",
+        "credit": "TRIPinVIEW · Hotel Pitrizza aerial granite coast and beach",
+        "sourcePage": "https://tripinview.com/hotel/62900/hotel-pitrizza-a-luxury-collection-hotel-costa-smeralda"
       },
       {
         "src": "/images/travel/porto-cervo-premium/pitrizza/private-pool-suite.webp",
-        "fr": "Piscine et suite au Hotel Pitrizza",
-        "en": "Private pool suite at Hotel Pitrizza",
-        "credit": "Crédit selon audit de source",
-        "sourcePage": "https://www.hotelpitrizza.com/en/"
+        "fr": "Grande piscine d'eau salée sculptée dans la roche au Hotel Pitrizza",
+        "en": "Hotel Pitrizza saltwater swimming pool built among the rocks",
+        "credit": "Luxe Global Awards · Hotel Pitrizza saltwater pool",
+        "sourcePage": "https://www.luxeglobalawards.com/hotel/hotel-pitrizza-a-luxury-collection-hotel-costa-smeralda-udgfrH"
       },
       {
         "src": "/images/travel/porto-cervo-premium/pitrizza/hotel-terrace.webp",
-        "fr": "Terrasse panoramique du Pitrizza",
-        "en": "Sea-view terrace at Hotel Pitrizza",
-        "credit": "Crédit selon audit de source",
-        "sourcePage": "https://www.hotelpitrizza.com/en/"
+        "fr": "Terrasse du restaurant face à la mer au Hotel Pitrizza",
+        "en": "Sea-facing dining terrace at Hotel Pitrizza",
+        "credit": "Select Italy · Hotel Pitrizza oceanfront restaurant terrace",
+        "sourcePage": "https://selectitaly.com/italy-hotels/sardinia/porto-cervo-costa-smeralda/hotel-pitrizza"
       }
     ],
-    "credit": "Crédit photographique par image",
+    "credit": "Hotel Pitrizza · sources détaillées par photographie",
     "sourcePage": "https://www.hotelpitrizza.com/en/",
     "frBest": "Pour les villas discrètes, les rochers de granite et l'intimité.",
     "enBest": "For secluded villas, granite coves and privacy.",
@@ -98,27 +98,27 @@ export const portoCervoHotelEditorial:Record<string,BodrumHotelEditorial> = {
     "photos": [
       {
         "src": "/images/travel/porto-cervo-premium/cervo-hotel/piazzetta-facade.webp",
-        "fr": "Façade du Cervo Hotel sur la Piazzetta",
-        "en": "Cervo Hotel on Porto Cervo Piazzetta",
-        "credit": "Crédit selon audit de source",
-        "sourcePage": "https://www.marriott.com/en-us/hotels/olbsi-cervo-hotel-costa-smeralda-resort/overview/"
+        "fr": "Bar Cervo et ses espaces au centre de Porto Cervo",
+        "en": "Bar Cervo at Cervo Hotel in Porto Cervo village",
+        "credit": "Cervo Hotel, Costa Smeralda Resort · official website",
+        "sourcePage": "https://www.marriott.com/en-us/hotels/olbsi-cervo-hotel-costa-smeralda-resort/photos/"
       },
       {
         "src": "/images/travel/porto-cervo-premium/cervo-hotel/marina-view.webp",
-        "fr": "Vue sur la marina depuis le Cervo Hotel",
-        "en": "Marina view at Cervo Hotel",
-        "credit": "Crédit selon audit de source",
-        "sourcePage": "https://www.marriott.com/en-us/hotels/olbsi-cervo-hotel-costa-smeralda-resort/overview/"
+        "fr": "Vue aérienne du Cervo Hotel et de Porto Cervo Marina",
+        "en": "Aerial view of Cervo Hotel and Porto Cervo Marina",
+        "credit": "Charming Sardinia · Cervo Hotel overlooking Porto Cervo marina",
+        "sourcePage": "https://www.charmingsardinia.com/sardaigne/cervo"
       },
       {
         "src": "/images/travel/porto-cervo-premium/cervo-hotel/pool-terrace.webp",
         "fr": "Piscine du Cervo Hotel, Porto Cervo",
         "en": "Cervo Hotel resort pool terrace",
-        "credit": "Crédit selon audit de source",
+        "credit": "Marriott · Cervo Hotel seasonal pool",
         "sourcePage": "https://www.marriott.com/en-us/hotels/olbsi-cervo-hotel-costa-smeralda-resort/overview/"
       }
     ],
-    "credit": "Crédit photographique par image",
+    "credit": "Cervo Hotel, Costa Smeralda Resort · sources détaillées par photographie",
     "sourcePage": "https://www.marriott.com/en-us/hotels/olbsi-cervo-hotel-costa-smeralda-resort/overview/",
     "frBest": "Pour sortir à pied et profiter de l'animation du village et de la marina.",
     "enBest": "For strolls, restaurants and the village marina atmosphere.",
@@ -129,37 +129,37 @@ export const portoCervoHotelEditorial:Record<string,BodrumHotelEditorial> = {
 export const portoCervoAreaVisuals:(BodrumPremiumPhoto|null)[] = [
   {
     "src": "/images/travel/porto-cervo-premium/destination/porto-cervo-piazzetta.webp",
-    "fr": "Ruelles de la Piazzetta au cœur de Porto Cervo",
-    "en": "Porto Cervo Piazzetta streets",
-    "credit": "À renseigner depuis la source",
-    "sourcePage": "https://commons.wikimedia.org/"
+    "fr": "Promenade dans le centre pastel de Porto Cervo",
+    "en": "Pastel-coloured streets of Porto Cervo village",
+    "credit": "ImmobilSarda · Porto Cervo village promenade · Client-authorised editorial use; written third-party reuse terms to verify before production",
+    "sourcePage": "https://www.immobilsarda.com/en/localita/107-porto-cervo.html"
   },
   {
     "src": "/images/travel/porto-cervo-premium/destination/cala-di-volpe-bay.webp",
-    "fr": "Baie de Cala di Volpe en Sardaigne",
-    "en": "Cala di Volpe Bay in Sardinia",
-    "credit": "À renseigner depuis la source",
-    "sourcePage": "https://commons.wikimedia.org/"
+    "fr": "Plage et eau turquoise de la baie de Cala di Volpe",
+    "en": "Turquoise waters and sand at Cala di Volpe Bay",
+    "credit": "Porto di Olbia · Cala di Volpe bay beach · Client-authorised editorial use; written third-party reuse terms to verify before production",
+    "sourcePage": "https://www.portodiolbia.it/en/directory/spiaggia-cala-di-volpe"
   },
   {
     "src": "/images/travel/porto-cervo-premium/destination/romazzino-beach.webp",
     "fr": "Plage et rochers de la zone de Romazzino",
     "en": "Romazzino coastline and beach",
-    "credit": "À renseigner depuis la source",
-    "sourcePage": "https://commons.wikimedia.org/"
+    "credit": "trolvag · CC BY-SA 3.0",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:At_the_fabulous_Romazzino_beach,_Romazzino_OT,_Sardinia,_Italy_-_panoramio.jpg"
   },
   {
     "src": "/images/travel/porto-cervo-premium/destination/liscia-di-vacca.webp",
-    "fr": "Criques de Liscia di Vacca sur la Costa Smeralda",
-    "en": "Liscia di Vacca in Costa Smeralda",
-    "credit": "À renseigner depuis la source",
-    "sourcePage": "https://commons.wikimedia.org/"
+    "fr": "Plage privée du Pitrizza dans le secteur de Liscia di Vacca",
+    "en": "Hotel Pitrizza beach on the Liscia di Vacca coastline",
+    "credit": "Amex Travel · Hotel Pitrizza beach in Liscia di Vacca · Client-authorised editorial use; written third-party reuse terms to verify before production",
+    "sourcePage": "https://www.americanexpress.com/en-au/travel/discover/property/Italy/Porto-Cervo/Hotel-Pitrizza"
   },
   {
     "src": "/images/travel/porto-cervo-premium/destination/pevero-beach.webp",
-    "fr": "Plage du Grande Pevero près de Porto Cervo",
-    "en": "Grande Pevero Beach near Porto Cervo",
-    "credit": "À renseigner depuis la source",
-    "sourcePage": "https://commons.wikimedia.org/"
+    "fr": "Vue aérienne de la plage de Grande Pevero en Sardaigne",
+    "en": "Aerial view of Grande Pevero Beach, Sardinia",
+    "credit": "Marriott Bonvoy Traveler · Grand Pevero Beach · Client-authorised editorial use; written third-party reuse terms to verify before production",
+    "sourcePage": "https://www.emea.marriott.com/ar/travel-tips/6-incredible-short-haul-alternatives-to-famous-long-haul-destinations"
   }
 ];
