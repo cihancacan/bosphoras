@@ -1,0 +1,47 @@
+name: Travel Porto Cervo — real property and island photo import
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: [scripts/download-porto-cervo-images.py, .github/workflows/travel-porto-cervo-images.yml]
+permissions:
+  contents: write
+concurrency:
+  group: travel-porto-cervo-images
+  cancel-in-progress: false
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install --disable-pip-version-check 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -m py_compile scripts/download-porto-cervo-images.py
+      - name: Fetch verified sources and optimize WebP
+        run: python scripts/download-porto-cervo-images.py
+      - name: Commit downloaded WebP and rights/source manifests on feature branch
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          [ ! -d public/images/travel/porto-cervo-premium ] || git add public/images/travel/porto-cervo-premium
+          for f in data/travel/portoCervoPremiumImageSources.json data/travel/portoCervoDestinationImageSources.json; do
+            [ ! -f "$f" ] || git add "$f"
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): import Porto Cervo WebP and source manifests [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: porto-cervo-image-source-and-rights-audit
+          path: |
+            data/travel/portoCervoPremiumImageSources.json
+            data/travel/portoCervoDestinationImageSources.json
+          if-no-files-found: ignore
