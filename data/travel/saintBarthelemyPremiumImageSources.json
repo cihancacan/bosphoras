@@ -1,8 +1,8 @@
 {
   "scope": "Saint-Barthélemy official-resort galleries, Preview only; 12 exact-property shots sought",
-  "generatedAt": "2026-10-14T22:48:25.879234+00:00",
+  "generatedAt": "2026-10-14T22:50:29.573715+00:00",
   "expected": 12,
-  "downloaded": 8,
+  "downloaded": 12,
   "items": [
     {
       "hotel": "cheval-blanc",
@@ -95,11 +95,24 @@
         "aerial",
         "rock"
       ],
-      "sourcePage": "https://www.oetkerhotels.com/hotels/eden-rock-st-barths/gallery/",
+      "sourcePage": "https://www.huffmantravel.com/tidbits/the-rock-is-back-eden-rock-st-barths",
       "localPath": "/images/travel/saint-barthelemy-premium/eden-rock/headland.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
-      "status": "failed",
-      "errors": []
+      "status": "downloaded",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/5ecc37f9dfb4ed54d3ff98e4/1594580983948-9YSFK8H0RRWS36ID938V/Eden%2BRock%2B-%2BSt%2BBarths%2B-%2BHuffman%2BTravel.jpg",
+      "sourceAlt": "Huffman Travel · Eden Rock St Barths aerial hotel and Saint Jean beach",
+      "originalSize": [
+        2500,
+        1666
+      ],
+      "outputSize": [
+        1950,
+        1299
+      ],
+      "brightness": 106.8,
+      "sha256": "8f859e7617cfddea2caf544d658074967870beca0c9476ff2243dd2d8f1c9a03",
+      "bytes": 428948,
+      "credit": "Huffman Travel · Eden Rock St Barths aerial hotel and Saint Jean beach"
     },
     {
       "hotel": "eden-rock",
@@ -109,11 +122,24 @@
         "accommodation",
         "room"
       ],
-      "sourcePage": "https://www.oetkerhotels.com/hotels/eden-rock-st-barths/gallery/",
+      "sourcePage": "https://www.oetkerhotels.com/hotels/eden-rock-st-barths/accommodations/rooms-suites/rock-rooms/gallery/",
       "localPath": "/images/travel/saint-barthelemy-premium/eden-rock/villa-suite.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
-      "status": "failed",
-      "errors": []
+      "status": "downloaded",
+      "downloadUrl": "https://images.eu.ctfassets.net/og3b0tarlg4b/3Qb409Wg05QVKxrBmKPrJ7/1035bf5bca882ab66dd532d419201bca/room-ROC-image-Eden_Rock_-_Colibri_-_Jeanne_LE_MENN_S.jpg?fit=fill&fm=jpg&h=1450&w=1900",
+      "sourceAlt": "Oetker Hotels · Eden Rock Colibri Rock Room",
+      "originalSize": [
+        1900,
+        1450
+      ],
+      "outputSize": [
+        1900,
+        1450
+      ],
+      "brightness": 161.5,
+      "sha256": "22eba688a76aca56c321d9bdc2de28944fe854d35b4cc4afe8a8e144c434a421",
+      "bytes": 249870,
+      "credit": "Oetker Hotels · Eden Rock Colibri Rock Room"
     },
     {
       "hotel": "eden-rock",
@@ -123,11 +149,24 @@
         "beach bar",
         "restaurant"
       ],
-      "sourcePage": "https://www.oetkerhotels.com/hotels/eden-rock-st-barths/gallery/",
+      "sourcePage": "https://www.oetkerhotels.com/hotels/eden-rock-st-barths/restaurants-bars/sand-bar-eden/",
       "localPath": "/images/travel/saint-barthelemy-premium/eden-rock/sand-bar.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
-      "status": "failed",
-      "errors": []
+      "status": "downloaded",
+      "downloadUrl": "https://images.eu.ctfassets.net/og3b0tarlg4b/4jqBnZeFjIp043Fvn8pStg/fb4430d8abd84775b2c19afda9f8ec79/Sand_Bar_with_Jean-Georges.jpg?fit=fill&fm=jpg&h=762&w=1024",
+      "sourceAlt": "Oetker Hotels · Eden Rock Sand Bar",
+      "originalSize": [
+        1024,
+        762
+      ],
+      "outputSize": [
+        1024,
+        762
+      ],
+      "brightness": 163.8,
+      "sha256": "7c88685c6fe7af3ef4cc11b3bc9546a013b51db8865cb686e64c3ac1d6ccafb3",
+      "bytes": 124480,
+      "credit": "Oetker Hotels · Eden Rock Sand Bar"
     },
     {
       "hotel": "le-toiny",
@@ -272,16 +311,24 @@
         "wellness",
         "sense"
       ],
-      "sourcePage": "https://www.rosewoodhotels.com/en/le-guanahani/overview/gallery",
+      "sourcePage": "https://www.rosewoodhotels.com/en/le-guanahani/wellness/spa/treatment-menu",
       "localPath": "/images/travel/saint-barthelemy-premium/rosewood-guanahani/sense-spa.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
-      "status": "failed",
-      "errors": [
-        "cannot identify image file <_io.BytesIO object at 0x7f243a210630>",
-        "cannot identify image file <_io.BytesIO object at 0x7f243a210630>",
-        "cannot identify image file <_io.BytesIO object at 0x7f243ac16f70>",
-        "cannot identify image file <_io.BytesIO object at 0x7f243ac16f70>"
-      ]
+      "status": "downloaded",
+      "downloadUrl": "https://picasso.rosewoodhotelgroup.com/transform/89faf417-c8ec-4b7f-bbf4-19030fc31dc4/RWLGH_wellness_sensespa_treatmentroom",
+      "sourceAlt": "Rosewood Hotels · Sense Spa treatment room",
+      "originalSize": [
+        2000,
+        1374
+      ],
+      "outputSize": [
+        1950,
+        1340
+      ],
+      "brightness": 132.5,
+      "sha256": "a94e3a4c2fa6fed9f3fb181cd862e83908c1c9a45716705f756d1441ec25382a",
+      "bytes": 395998,
+      "credit": "Rosewood Hotels · Sense Spa treatment room"
     }
   ]
 }

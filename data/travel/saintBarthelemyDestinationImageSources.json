@@ -1,14 +1,15 @@
 {
   "scope": "Saint-Barthélemy destination images from Wikimedia Commons only",
-  "generatedAt": "2026-10-14T22:48:25.879234+00:00",
+  "generatedAt": "2026-10-14T22:50:29.573715+00:00",
   "expected": 9,
-  "downloaded": 5,
+  "downloaded": 8,
   "items": [
     {
       "key": "gustavia-aerial",
       "search": "Gustavia Saint Barthelemy aerial",
       "localPath": "/images/travel/saint-barthelemy-premium/destination/gustavia-aerial.webp",
-      "status": "failed"
+      "status": "failed",
+      "fallbackError": "404 Client Error: Not Found for url: https://www.saintbarth-tourisme.com/wp-content/uploads/2023/10/Gustavia___31121_2-scaled.jpg"
     },
     {
       "key": "colombier-bay",
@@ -37,13 +38,47 @@
       "key": "flamands-beach",
       "search": "Flamands beach St Barts",
       "localPath": "/images/travel/saint-barthelemy-premium/destination/flamands-beach.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "Antilles Exception · Flamands beach",
+      "sourcePage": "https://www.antillesexception.com/location-villa/saint-barth/Splendide-villa-pieds-dans-l-eau-SBFL02",
+      "author": "Antilles Exception · Flamands beach",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.antillesexception.com/location-villa/saint-barth/Splendide-villa-pieds-dans-l-eau-SBFL02",
+      "downloadUrl": "https://www.antillesexception.com/var/exv/storage/images/_aliases/embed1020x680/media/images/guide-touristique-de-saint-barth/plages/plage-de-flamands/plage-de-flamands-saint-barthelemy/31067729-1-fre-FR/Plage-de-Flamands-Saint-Barthelemy.jpg",
+      "originalSize": [
+        1020,
+        680
+      ],
+      "outputSize": [
+        1020,
+        680
+      ],
+      "brightness": 191.7,
+      "sha256": "93e4104cf25103e226fb53e80ddf77acb214adf20d476486ee87e8179faf95ea",
+      "bytes": 50494
     },
     {
       "key": "st-jean-bay",
       "search": "Saint Jean Bay St Barthelemy",
       "localPath": "/images/travel/saint-barthelemy-premium/destination/st-jean-bay.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "Luxethika · Saint Jean Bay with Eden Rock",
+      "sourcePage": "https://www.luxethika.com/destinations/iles/saint-barthelemy/baie-de-st-jean/voir/eden-rock/",
+      "author": "Luxethika · Saint Jean Bay with Eden Rock",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.luxethika.com/destinations/iles/saint-barthelemy/baie-de-st-jean/voir/eden-rock/",
+      "downloadUrl": "https://www.luxethika.com/wp-content/uploads/2020/08/St-Barth-Eden-Rock-Aerial-2-1540-880.jpg",
+      "originalSize": [
+        1540,
+        880
+      ],
+      "outputSize": [
+        1540,
+        880
+      ],
+      "brightness": 105.5,
+      "sha256": "f58788e8ac9987bdefa09d771e76caede3c6c7e72656b02796a40a42e3114c43",
+      "bytes": 321132
     },
     {
       "key": "gustavia-streets",
@@ -141,7 +176,24 @@
       "key": "saint-barth-sailing",
       "search": "Saint Barthelemy sailboat Gustavia",
       "localPath": "/images/travel/saint-barthelemy-premium/destination/saint-barth-sailing.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "Marinas.com · Gustavia yachts and sailboats",
+      "sourcePage": "https://marinas.com/view/marina/mncvq5_Gustavia_Port_Marina_St_Barts_Guadeloupe",
+      "author": "Marinas.com · Gustavia yachts and sailboats",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://marinas.com/view/marina/mncvq5_Gustavia_Port_Marina_St_Barts_Guadeloupe",
+      "downloadUrl": "https://img.marinas.com/v2/9d190efcd28a27a36f29b75b97ee4a82d04008ce1602b6ea780f13e87dcbd929.jpg",
+      "originalSize": [
+        4200,
+        2850
+      ],
+      "outputSize": [
+        1950,
+        1323
+      ],
+      "brightness": 115.5,
+      "sha256": "1edd9d49416d5cd9e5fe73947307cc62999a98bba5a3417c6163210ad91e56f6",
+      "bytes": 813858
     }
   ]
 }
