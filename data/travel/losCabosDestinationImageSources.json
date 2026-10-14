@@ -1,0 +1,181 @@
+{
+  "scope": "Los Cabos destination images from Wikimedia Commons only",
+  "generatedAt": "2026-10-14T22:28:36.556072+00:00",
+  "expected": 9,
+  "downloaded": 7,
+  "items": [
+    {
+      "key": "el-arco",
+      "search": "El Arco Cabo San Lucas",
+      "localPath": "/images/travel/los-cabos-premium/destination/el-arco.webp",
+      "status": "downloaded",
+      "sourceFile": "File:El Arco, Cabo San Lucas, Baja California Sur (16638939645).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:El_Arco,_Cabo_San_Lucas,_Baja_California_Sur_(16638939645).jpg",
+      "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/El_Arco%2C_Cabo_San_Lucas%2C_Baja_California_Sur_%2816638939645%29.jpg/1920px-El_Arco%2C_Cabo_San_Lucas%2C_Baja_California_Sur_%2816638939645%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1920,
+        1280
+      ],
+      "brightness": 100.1,
+      "sha256": "b5c0c21951f30bad44ddf37a418cf3dc72e8e0cf306c30e10bee42a6e75c3303",
+      "bytes": 579818
+    },
+    {
+      "key": "baja-coast",
+      "search": "Cabo San Lucas coast",
+      "localPath": "/images/travel/los-cabos-premium/destination/baja-coast.webp",
+      "status": "downloaded",
+      "sourceFile": "File:Cabo San Lucas RMG F1423.tiff",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cabo_San_Lucas_RMG_F1423.tiff",
+      "author": "Ringrose, Basil",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Cabo_San_Lucas_RMG_F1423.tiff/lossy-page1-1920px-Cabo_San_Lucas_RMG_F1423.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1474
+      ],
+      "outputSize": [
+        1889,
+        1450
+      ],
+      "brightness": 191.7,
+      "sha256": "34e6d18c170e3e5305754064e39641822fb015607916d7ab71dfe914a706bc86",
+      "bytes": 347828
+    },
+    {
+      "key": "palmilla-bay",
+      "search": "Palmilla beach Mexico",
+      "localPath": "/images/travel/los-cabos-premium/destination/palmilla-bay.webp",
+      "status": "failed"
+    },
+    {
+      "key": "pedregal-cliffs",
+      "search": "Pedregal Cabo San Lucas",
+      "localPath": "/images/travel/los-cabos-premium/destination/pedregal-cliffs.webp",
+      "status": "downloaded",
+      "sourceFile": "File:Pedregal Playa (Cabo San Lucas).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pedregal_Playa_(Cabo_San_Lucas).jpg",
+      "author": "Alexis Doine",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Pedregal_Playa_%28Cabo_San_Lucas%29.jpg/1920px-Pedregal_Playa_%28Cabo_San_Lucas%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "brightness": 136.8,
+      "sha256": "9b27c5be830f3cebf0c18be43f1c47dcbde324ef20f80e757754bfd957cfe8c1",
+      "bytes": 481724
+    },
+    {
+      "key": "corridor-coast",
+      "search": "Los Cabos tourist corridor",
+      "localPath": "/images/travel/los-cabos-premium/destination/corridor-coast.webp",
+      "status": "failed"
+    },
+    {
+      "key": "puerto-los-cabos",
+      "search": "Puerto Los Cabos",
+      "localPath": "/images/travel/los-cabos-premium/destination/puerto-los-cabos.webp",
+      "status": "downloaded",
+      "sourceFile": "File:Puerto Los Cabos (50819196673).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Puerto_Los_Cabos_(50819196673).jpg",
+      "author": "Sharon Hahn Darlin",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Puerto_Los_Cabos_%2850819196673%29.jpg/1920px-Puerto_Los_Cabos_%2850819196673%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1920,
+        1440
+      ],
+      "brightness": 111.8,
+      "sha256": "cf81495b8c6bbf3df49d2f343dc591c7aa4e3a4ed152c3eaabcfdc3d84493f5c",
+      "bytes": 655600
+    },
+    {
+      "key": "san-jose-art",
+      "search": "San Jose del Cabo historic",
+      "localPath": "/images/travel/los-cabos-premium/destination/san-jose-art.webp",
+      "status": "downloaded",
+      "sourceFile": "File:San José del Cabo - panoramio - kajikawa.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:San_Jos%C3%A9_del_Cabo_-_panoramio_-_kajikawa.jpg",
+      "author": "kajikawa",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/San_Jos%C3%A9_del_Cabo_-_panoramio_-_kajikawa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "originalSize": [
+        1280,
+        960
+      ],
+      "outputSize": [
+        1280,
+        960
+      ],
+      "brightness": 98.8,
+      "sha256": "ec83d3fa3a4a7e92a1791295d8450667e9d12bfc57239b719775fcbb68632e23",
+      "bytes": 117430
+    },
+    {
+      "key": "cabo-marina",
+      "search": "Marina Cabo San Lucas",
+      "localPath": "/images/travel/los-cabos-premium/destination/cabo-marina.webp",
+      "status": "downloaded",
+      "sourceFile": "File:A view of the surrounding beach of the Cabo San Lucas Marina, 27 March 2013.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:A_view_of_the_surrounding_beach_of_the_Cabo_San_Lucas_Marina,_27_March_2013.jpg",
+      "author": "TurfToe11.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/A_view_of_the_surrounding_beach_of_the_Cabo_San_Lucas_Marina%2C_27_March_2013.jpg/1920px-A_view_of_the_surrounding_beach_of_the_Cabo_San_Lucas_Marina%2C_27_March_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1920,
+        1440
+      ],
+      "brightness": 127.5,
+      "sha256": "7e6bb50b830776ccab8f18da583a8dd3313dded34dd398892198cc0e343ab3ef",
+      "bytes": 568360
+    },
+    {
+      "key": "whales",
+      "search": "Whale Cabo San Lucas",
+      "localPath": "/images/travel/los-cabos-premium/destination/whales.webp",
+      "status": "downloaded",
+      "sourceFile": "File:Ballena jorobada (Megaptera novaeangliae), Cabo San Lucas, México, 2024-12-22, DD 06.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ballena_jorobada_(Megaptera_novaeangliae),_Cabo_San_Lucas,_M%C3%A9xico,_2024-12-22,_DD_06.jpg",
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Ballena_jorobada_%28Megaptera_novaeangliae%29%2C_Cabo_San_Lucas%2C_M%C3%A9xico%2C_2024-12-22%2C_DD_06.jpg/1920px-Ballena_jorobada_%28Megaptera_novaeangliae%29%2C_Cabo_San_Lucas%2C_M%C3%A9xico%2C_2024-12-22%2C_DD_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1920,
+        1280
+      ],
+      "brightness": 94.3,
+      "sha256": "0a0da39c8ef8b3acb02319fdb9fe78df8ac4a26ffa1f5950746d6c510c6b7dc1",
+      "bytes": 556250
+    }
+  ]
+}

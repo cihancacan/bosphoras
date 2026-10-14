@@ -1,0 +1,295 @@
+{
+  "scope": "Los Cabos official-resort galleries, Preview only; 12 exact-property shots sought",
+  "generatedAt": "2026-10-14T22:28:36.556072+00:00",
+  "expected": 12,
+  "downloaded": 10,
+  "items": [
+    {
+      "hotel": "one-and-only-palmilla",
+      "key": "beachfront-villa",
+      "scene": [
+        "villa",
+        "casita"
+      ],
+      "sourcePage": "https://www.viajeselcorteingles.es/ficha/hotel/one-only-palmilla-ex37x9tr",
+      "localPath": "/images/travel/los-cabos-premium/one-and-only-palmilla/beachfront-villa.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://www.viajeselcorteingles.es/imagenes/tm/america/mexico-mx/cbl-cabo-san-lucas/cblco-corredor/ex37x9tr/mdm-18cblco511-oneandonly-palmilla-accommodation-villacortez-hr_x.jpg",
+      "sourceAlt": "Viajes El Corte Inglés · One&Only Palmilla Villa Cortez",
+      "originalSize": [
+        1000,
+        643
+      ],
+      "outputSize": [
+        1000,
+        643
+      ],
+      "brightness": 159.1,
+      "sha256": "51741fcc922f068225bafd8cb78e5de1d62e960c135acd6fc5a42b19370dcbc9",
+      "bytes": 131674,
+      "credit": "Viajes El Corte Inglés · One&Only Palmilla Villa Cortez"
+    },
+    {
+      "hotel": "one-and-only-palmilla",
+      "key": "palmilla-beach",
+      "scene": [
+        "beach",
+        "coast"
+      ],
+      "sourcePage": "https://www.oneandonlyresorts.com/palmilla",
+      "localPath": "/images/travel/los-cabos-premium/one-and-only-palmilla/palmilla-beach.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "failed",
+      "errors": [
+        "503 Server Error: Service Unavailable for url: https://assets.kerzner.com/api/public/conte"
+      ]
+    },
+    {
+      "hotel": "one-and-only-palmilla",
+      "key": "resort-pool",
+      "scene": [
+        "pool",
+        "vista"
+      ],
+      "sourcePage": "https://www.oneandonlyresorts.com/palmilla",
+      "localPath": "/images/travel/los-cabos-premium/one-and-only-palmilla/resort-pool.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "failed",
+      "errors": []
+    },
+    {
+      "hotel": "waldorf-pedregal",
+      "key": "pacific-villa",
+      "scene": [
+        "villa",
+        "suite"
+      ],
+      "sourcePage": "https://www.waldorfastorialoscabospedregal.com/resort/",
+      "localPath": "/images/travel/los-cabos-premium/waldorf-pedregal/pacific-villa.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://cdn.waldorfastorialoscabospedregal.com/wp-content/uploads/2021/10/14030433/K1RFU2-PEDREGAL-TWO-BEDROOM-BEACHFRONT-SUITE-WAPedregal-Low-Res-4-scaled.jpg",
+      "sourceAlt": "Waldorf Astoria Pedregal · beachfront private-pool suite",
+      "originalSize": [
+        2560,
+        1905
+      ],
+      "outputSize": [
+        1949,
+        1450
+      ],
+      "brightness": 136.2,
+      "sha256": "026fabe3683b91283900082ef19574152623d710966191ba162764aabe02d061",
+      "bytes": 351670,
+      "credit": "Waldorf Astoria Pedregal · beachfront private-pool suite"
+    },
+    {
+      "hotel": "waldorf-pedregal",
+      "key": "pedregal-cliff",
+      "scene": [
+        "resort",
+        "cliff"
+      ],
+      "sourcePage": "https://www.waldorfastorialoscabospedregal.com/rooms/one-bedroom-ocean-view-suite/",
+      "localPath": "/images/travel/los-cabos-premium/waldorf-pedregal/pedregal-cliff.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://cdn.waldorfastorialoscabospedregal.com/wp-content/uploads/2025/10/09183450/02-Guest-Rooms-Suites-King-Ocean-View-Vista.jpg",
+      "sourceAlt": "Waldorf Astoria Pedregal · ocean-view suite",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "brightness": 123.7,
+      "sha256": "43b0612557e411ff844c113bc6f040448e41ee145bb20c2556dca06bfbc1a485",
+      "bytes": 244720,
+      "credit": "Waldorf Astoria Pedregal · ocean-view suite"
+    },
+    {
+      "hotel": "waldorf-pedregal",
+      "key": "el-farallon",
+      "scene": [
+        "farallon",
+        "restaurant"
+      ],
+      "sourcePage": "https://www.waldorfastorialoscabospedregal.com/resort/",
+      "localPath": "/images/travel/los-cabos-premium/waldorf-pedregal/el-farallon.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://cdn.waldorfastorialoscabospedregal.com/wp-content/uploads/2023/10/14164712/Farallon-view-by-Elliott-Chau-scaled.jpg",
+      "sourceAlt": "",
+      "originalSize": [
+        2560,
+        1432
+      ],
+      "outputSize": [
+        1950,
+        1091
+      ],
+      "brightness": 79.1,
+      "sha256": "f03be5e7c7465022b8f231d57c04a699d74b6f0e5bdb83da81db327796f67cd0",
+      "bytes": 370946,
+      "credit": "Waldorf Astoria Los Cabos Pedregal · official website"
+    },
+    {
+      "hotel": "las-ventanas",
+      "key": "main-pool",
+      "scene": [
+        "pool"
+      ],
+      "sourcePage": "https://www.rosewoodhotels.com/en/las-ventanas-los-cabos/overview/gallery",
+      "localPath": "/images/travel/los-cabos-premium/las-ventanas/main-pool.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://picasso.rosewoodhotelgroup.com/transform/9474716e-25b8-487b-ab8c-46aa39822bb5/RWLVP_Experience_Resort_Pools",
+      "sourceAlt": "Oceanfront Junior Suite",
+      "originalSize": [
+        2000,
+        1200
+      ],
+      "outputSize": [
+        1950,
+        1170
+      ],
+      "brightness": 124.1,
+      "sha256": "d4d60e434731c35f22b109e25faeaa5791afcf67389cde0c611e5820a22b8690",
+      "bytes": 82462,
+      "credit": "Las Ventanas al Paraíso, A Rosewood Resort · official website"
+    },
+    {
+      "hotel": "las-ventanas",
+      "key": "ocean-suite",
+      "scene": [
+        "suite",
+        "oceanview"
+      ],
+      "sourcePage": "https://las-ventanas-al-paraiso-a-rosewood-resort.los-caboshotels.com/en/",
+      "localPath": "/images/travel/los-cabos-premium/las-ventanas/ocean-suite.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://las-ventanas-al-paraiso-a-rosewood-resort.los-caboshotels.com/data/Images/OriginalPhoto/17078/1707820/1707820885/image-san-jose-del-cabo-las-ventanas-al-paraiso-a-rosewood-resort-55.JPEG",
+      "sourceAlt": "Los Cabos Hotels · Las Ventanas ocean-view suite",
+      "originalSize": [
+        3000,
+        2011
+      ],
+      "outputSize": [
+        1950,
+        1307
+      ],
+      "brightness": 136.4,
+      "sha256": "e684f9348030c7c85d8cc442d00a14b29dadd63b8c75d4bc4aa0708ad914394c",
+      "bytes": 409266,
+      "credit": "Los Cabos Hotels · Las Ventanas ocean-view suite"
+    },
+    {
+      "hotel": "las-ventanas",
+      "key": "beachfront",
+      "scene": [
+        "beach",
+        "resort"
+      ],
+      "sourcePage": "https://www.rosewoodhotels.com/en/las-ventanas-los-cabos/overview/gallery",
+      "localPath": "/images/travel/los-cabos-premium/las-ventanas/beachfront.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://picasso.rosewoodhotelgroup.com/transform/a97c03eb-1289-49f5-9169-fce68452e2e8/RWLVP_Experience_Romance_Beach",
+      "sourceAlt": "Summer Experiences",
+      "originalSize": [
+        2000,
+        1200
+      ],
+      "outputSize": [
+        1950,
+        1170
+      ],
+      "brightness": 96.6,
+      "sha256": "ad14264a58ddbcbc4166803844de4b96bcc9613a23cd00f0dfca4e32535df7c7",
+      "bytes": 223434,
+      "credit": "Las Ventanas al Paraíso, A Rosewood Resort · official website"
+    },
+    {
+      "hotel": "zadun-reserve",
+      "key": "pool-suite",
+      "scene": [
+        "suite",
+        "plunge"
+      ],
+      "sourcePage": "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-a-ritz-carlton-reserve/photos/",
+      "localPath": "/images/travel/los-cabos-premium/zadun-reserve/pool-suite.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/SJDZR/sjdzr-zadun-beachfront-7255-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+      "sourceAlt": "Zadún Reserve Beachfront Suite",
+      "originalSize": [
+        1336,
+        890
+      ],
+      "outputSize": [
+        1336,
+        890
+      ],
+      "brightness": 132.0,
+      "sha256": "4bbcdaf5dcca83f31ea515ada2ad2b50210984c724ff4dd5ebb63d4c09015345",
+      "bytes": 208936,
+      "credit": "Zadún, a Ritz-Carlton Reserve · official website"
+    },
+    {
+      "hotel": "zadun-reserve",
+      "key": "resort-aerial",
+      "scene": [
+        "aerial",
+        "beach"
+      ],
+      "sourcePage": "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-a-ritz-carlton-reserve/photos/",
+      "localPath": "/images/travel/los-cabos-premium/zadun-reserve/resort-aerial.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://cache.marriott.com/is/image/marriotts7prod/rz-sjdzr-20230627-093826-zad-26903-39140:Classic-Hor?wid=1336&fit=constrain",
+      "sourceAlt": "aerial view of pools, beach and sea",
+      "originalSize": [
+        1336,
+        890
+      ],
+      "outputSize": [
+        1336,
+        890
+      ],
+      "brightness": 116.9,
+      "sha256": "bd71d6453345a916edd6a785b01dff8edefb34cbdf7add54977332e426bd5c3c",
+      "bytes": 322742,
+      "credit": "Zadún, a Ritz-Carlton Reserve · official website"
+    },
+    {
+      "hotel": "zadun-reserve",
+      "key": "sensei-spa",
+      "scene": [
+        "spa",
+        "sensei"
+      ],
+      "sourcePage": "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-a-ritz-carlton-reserve/photos/",
+      "localPath": "/images/travel/los-cabos-premium/zadun-reserve/sensei-spa.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/SJDZR/sjdzr-spa-alkemia-7319-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+      "sourceAlt": "Spa Sensei - Pool",
+      "originalSize": [
+        1336,
+        890
+      ],
+      "outputSize": [
+        1336,
+        890
+      ],
+      "brightness": 117.1,
+      "sha256": "dce25b838f9354565452d2a74b0031a44af07dd5aaa4de62ef3da43ce2459c3a",
+      "bytes": 426652,
+      "credit": "Zadún, a Ritz-Carlton Reserve · official website"
+    }
+  ]
+}
