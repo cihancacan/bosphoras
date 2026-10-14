@@ -14,6 +14,7 @@ import { kohSamuiFaq } from '@/data/travel/kohSamuiFaq';
 import { maldivesHotelEditorial, maldivesAreaVisuals } from '@/data/travel/maldivesPremiumEditorial';
 import { maldivesFaq } from '@/data/travel/maldivesFaq';
 import { losCabosFaq } from '@/data/travel/losCabosFaq';
+import { saintBarthelemyFaq } from '@/data/travel/saintBarthelemyFaq';
 import { losCabosHotelEditorial, losCabosAreaVisuals } from '@/data/travel/losCabosPremiumEditorial';
 import losCabosHotelManifest from '@/data/travel/losCabosPremiumImageSources.json';
 import losCabosDestinationManifest from '@/data/travel/losCabosDestinationImageSources.json';
@@ -367,11 +368,11 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         ← {fr?'Retour au guide complet de la destination':'Back to the complete destination guide'}
       </Link>
     </section>:<HotelTeaser guide={city} locale={locale}/>}
-    {(city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos') && <section id={city.slug==='los-cabos'?'faq-los-cabos':city.slug==='maldives'?'faq-maldives':'faq-koh-samui'} className="mx-auto max-w-7xl px-5 py-14 sm:py-20">
+    {(city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy') && <section id={city.slug==='saint-barthelemy'?'faq-saint-barthelemy':city.slug==='los-cabos'?'faq-los-cabos':city.slug==='maldives'?'faq-maldives':'faq-koh-samui'} className="mx-auto max-w-7xl px-5 py-14 sm:py-20">
       <p className="text-xs uppercase tracking-[.2em] text-[#947048]">{fr?'Questions fréquentes':'Frequently asked questions'}</p>
-      <h2 className="mt-4 font-serif text-3xl sm:text-5xl">{city.slug==='los-cabos'?(fr?'Préparer un séjour de luxe à Los Cabos':'Planning a luxury stay in Los Cabos'):city.slug==='maldives'?(fr?'Préparer votre séjour de luxe aux Maldives':'Planning a luxury stay in the Maldives'):(fr?'Préparer un séjour de luxe à Koh Samui':'Plan a luxury stay in Koh Samui')}</h2>
+      <h2 className="mt-4 font-serif text-3xl sm:text-5xl">{city.slug==='saint-barthelemy'?(fr?'Préparer votre voyage à Saint-Barth':'Planning your St Barth stay'):city.slug==='los-cabos'?(fr?'Préparer un séjour de luxe à Los Cabos':'Planning a luxury stay in Los Cabos'):city.slug==='maldives'?(fr?'Préparer votre séjour de luxe aux Maldives':'Planning a luxury stay in the Maldives'):(fr?'Préparer un séjour de luxe à Koh Samui':'Plan a luxury stay in Koh Samui')}</h2>
       <div className="mt-8 grid gap-4 md:grid-cols-2">
-        {(city.slug==='los-cabos'?losCabosFaq:city.slug==='maldives'?maldivesFaq:kohSamuiFaq)[locale].map(item=><article key={item.q} className="border border-[#e5dbcb] bg-white p-7">
+        {(city.slug==='saint-barthelemy'?saintBarthelemyFaq:city.slug==='los-cabos'?losCabosFaq:city.slug==='maldives'?maldivesFaq:kohSamuiFaq)[locale].map(item=><article key={item.q} className="border border-[#e5dbcb] bg-white p-7">
           <h3 className="font-serif text-xl text-[#173340]">{item.q}</h3>
           <p className="mt-4 text-sm leading-7 text-[#54666d]">{item.a}</p>
         </article>)}
