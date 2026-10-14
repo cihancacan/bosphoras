@@ -118,7 +118,7 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     : isFeaturedHotelGuide && featureGuide
     ? (featureGuide.slug==='maldives' ? (locale==='fr' ? 'Hôtels de luxe aux Maldives : notre sélection d’îles privées et de villas' : 'Luxury Hotels in the Maldives: Curated Private Islands & Villas') : featureGuide.slug==='koh-samui' ? (locale==='fr' ? 'Hôtels de luxe à Koh Samui : notre sélection d’adresses d’exception' : 'Luxury Hotels in Koh Samui: Our Curated Island Collection') : (locale === 'fr' ? 'Hôtels de luxe à ' + featureGuide.name + ' : sélection et quartiers' : 'Luxury hotels in ' + featureGuide.name + ': curated guide and locations'))
     : isFeaturedDestinationGuide && featureGuide
-    ? (locale === 'fr' ? featureGuide.name + ' : où séjourner, hôtels et expériences de luxe' : featureGuide.name + ': luxury stays, neighbourhoods and experiences')
+    ? (featureGuide.slug==='maldives' ? (locale==='fr'?'Maldives : atolls, hôtels de luxe et îles privées':'Maldives: Luxury Atolls, Private Islands & Resorts') : (locale === 'fr' ? featureGuide.name + ' : où séjourner, hôtels et expériences de luxe' : featureGuide.name + ': luxury stays, neighbourhoods and experiences'))
     : route.kind === 'keyword' && route.category && route.destination
     ? heading(locale, route.category, route.destination.name)
     : route.kind === 'destination' && route.destination ? route.destination.name + ' — Luxury stays'
