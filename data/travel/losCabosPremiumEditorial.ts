@@ -5,27 +5,27 @@ export const losCabosHotelEditorial:Record<string,BodrumHotelEditorial> = {
     "photos": [
       {
         "src": "/images/travel/los-cabos-premium/one-and-only-palmilla/beachfront-villa.webp",
-        "fr": "Villa et terrasse au One&Only Palmilla",
-        "en": "One&Only Palmilla beachfront villa and terrace",
-        "credit": "One&Only Palmilla · photographie à auditer",
-        "sourcePage": "https://www.oneandonlyresorts.com/palmilla"
+        "fr": "Villa Cortez et sa piscine au One&Only Palmilla",
+        "en": "Villa Cortez and pool at One&Only Palmilla",
+        "credit": "Viajes El Corte Inglés · One&Only Palmilla Villa Cortez",
+        "sourcePage": "https://www.viajeselcorteingles.es/ficha/hotel/one-only-palmilla-ex37x9tr"
       },
       {
         "src": "/images/travel/los-cabos-premium/one-and-only-palmilla/palmilla-beach.webp",
-        "fr": "Baie et plage du One&Only Palmilla",
-        "en": "One&Only Palmilla bay and beach",
-        "credit": "One&Only Palmilla · photographie à auditer",
-        "sourcePage": "https://www.oneandonlyresorts.com/palmilla"
+        "fr": "Vue aérienne matinale du One&Only Palmilla et de sa plage",
+        "en": "Aerial morning view of One&Only Palmilla beachfront",
+        "credit": "One&Only Palmilla · sunrise aerial beach",
+        "sourcePage": "https://www.oneandonlyresorts.com/palmilla/newsletter"
       },
       {
         "src": "/images/travel/los-cabos-premium/one-and-only-palmilla/resort-pool.webp",
         "fr": "Piscine et jardins du One&Only Palmilla",
         "en": "One&Only Palmilla resort pool and gardens",
-        "credit": "One&Only Palmilla · photographie à auditer",
-        "sourcePage": "https://www.oneandonlyresorts.com/palmilla"
+        "credit": "DERTOUR · One&Only Palmilla infinity pool",
+        "sourcePage": "https://www.dertour.de/reisemagazin/beste-hotels-mexiko"
       }
     ],
-    "credit": "One&Only Palmilla · galerie éditoriale",
+    "credit": "One&Only Palmilla · photographies documentées individuellement",
     "sourcePage": "https://www.oneandonlyresorts.com/palmilla",
     "frBest": "Pour l'hospitalité intemporelle, les familles et l'accès à une baie plus abritée.",
     "enBest": "For timeless hospitality, family stays and a more sheltered bay.",
@@ -38,25 +38,25 @@ export const losCabosHotelEditorial:Record<string,BodrumHotelEditorial> = {
         "src": "/images/travel/los-cabos-premium/waldorf-pedregal/pacific-villa.webp",
         "fr": "Suite et piscine privée du Waldorf Astoria Pedregal",
         "en": "Waldorf Astoria Pedregal private-pool suite",
-        "credit": "Waldorf Astoria Los Cabos Pedregal · photographie à auditer",
-        "sourcePage": "https://www.waldorfastorialoscabospedregal.com/"
+        "credit": "Waldorf Astoria Pedregal · beachfront private-pool suite",
+        "sourcePage": "https://www.waldorfastorialoscabospedregal.com/resort/"
       },
       {
         "src": "/images/travel/los-cabos-premium/waldorf-pedregal/pedregal-cliff.webp",
-        "fr": "Waldorf Astoria Los Cabos Pedregal et ses falaises",
-        "en": "Waldorf Astoria Los Cabos Pedregal cliffside resort",
-        "credit": "Waldorf Astoria Los Cabos Pedregal · photographie à auditer",
-        "sourcePage": "https://www.waldorfastorialoscabospedregal.com/"
+        "fr": "Suite avec vue sur l’océan au Waldorf Astoria Los Cabos Pedregal",
+        "en": "Ocean-view suite at Waldorf Astoria Los Cabos Pedregal",
+        "credit": "Waldorf Astoria Pedregal · ocean-view suite",
+        "sourcePage": "https://www.waldorfastorialoscabospedregal.com/rooms/one-bedroom-ocean-view-suite/"
       },
       {
         "src": "/images/travel/los-cabos-premium/waldorf-pedregal/el-farallon.webp",
-        "fr": "Terrasse et restaurant au Waldorf Astoria Pedregal",
-        "en": "Waldorf Astoria Pedregal oceanfront dining terrace",
-        "credit": "Waldorf Astoria Los Cabos Pedregal · photographie à auditer",
-        "sourcePage": "https://www.waldorfastorialoscabospedregal.com/"
+        "fr": "Vue du Waldorf Astoria Los Cabos Pedregal",
+        "en": "View of Waldorf Astoria Los Cabos Pedregal",
+        "credit": "Waldorf Astoria Los Cabos Pedregal · official website",
+        "sourcePage": "https://www.waldorfastorialoscabospedregal.com/resort/"
       }
     ],
-    "credit": "Waldorf Astoria Los Cabos Pedregal · galerie éditoriale",
+    "credit": "Waldorf Astoria Los Cabos Pedregal · photographies documentées individuellement",
     "sourcePage": "https://www.waldorfastorialoscabospedregal.com/",
     "frBest": "Pour la falaise du Pacifique, l'intimité et les dîners spectaculaires.",
     "enBest": "For Pacific cliffs, seclusion and remarkable dining.",
@@ -67,27 +67,27 @@ export const losCabosHotelEditorial:Record<string,BodrumHotelEditorial> = {
     "photos": [
       {
         "src": "/images/travel/los-cabos-premium/las-ventanas/main-pool.webp",
-        "fr": "Piscine principale de Las Ventanas al Paraíso",
-        "en": "Main pool at Las Ventanas al Paraíso",
-        "credit": "Las Ventanas al Paraíso, A Rosewood Resort · photographie à auditer",
-        "sourcePage": "https://www.rosewoodhotels.com/en/las-ventanas-los-cabos"
+        "fr": "Piscines principales de Las Ventanas al Paraíso face à la mer",
+        "en": "Main pools overlooking the sea at Las Ventanas al Paraíso",
+        "credit": "Expedia · Las Ventanas resort beachfront pools",
+        "sourcePage": "https://www.expedia.com/Los-Cabos-Hotels-Las-Ventanas-Al-Paraiso.h41895.Hotel-Information"
       },
       {
         "src": "/images/travel/los-cabos-premium/las-ventanas/ocean-suite.webp",
         "fr": "Suite avec vue mer de Las Ventanas al Paraíso",
         "en": "Ocean-view suite at Las Ventanas al Paraíso",
-        "credit": "Las Ventanas al Paraíso, A Rosewood Resort · photographie à auditer",
-        "sourcePage": "https://www.rosewoodhotels.com/en/las-ventanas-los-cabos"
+        "credit": "Los Cabos Hotels · Las Ventanas ocean-view suite",
+        "sourcePage": "https://las-ventanas-al-paraiso-a-rosewood-resort.los-caboshotels.com/en/"
       },
       {
         "src": "/images/travel/los-cabos-premium/las-ventanas/beachfront.webp",
-        "fr": "Las Ventanas al Paraíso et ses espaces face à l'océan",
-        "en": "Los Cabos beachfront at Las Ventanas al Paraíso",
-        "credit": "Las Ventanas al Paraíso, A Rosewood Resort · photographie à auditer",
-        "sourcePage": "https://www.rosewoodhotels.com/en/las-ventanas-los-cabos"
+        "fr": "Atmosphère de Las Ventanas al Paraíso à Los Cabos",
+        "en": "Resort atmosphere at Las Ventanas al Paraíso in Los Cabos",
+        "credit": "Las Ventanas al Paraíso, A Rosewood Resort · official website",
+        "sourcePage": "https://www.rosewoodhotels.com/en/las-ventanas-los-cabos/overview/gallery"
       }
     ],
-    "credit": "Las Ventanas al Paraíso, A Rosewood Resort · galerie éditoriale",
+    "credit": "Las Ventanas al Paraíso, A Rosewood Resort · photographies documentées individuellement",
     "sourcePage": "https://www.rosewoodhotels.com/en/las-ventanas-los-cabos",
     "frBest": "Pour l'art de recevoir et les belles suites face à la mer.",
     "enBest": "For refined service and elegant ocean-view suites.",
@@ -98,27 +98,27 @@ export const losCabosHotelEditorial:Record<string,BodrumHotelEditorial> = {
     "photos": [
       {
         "src": "/images/travel/los-cabos-premium/zadun-reserve/pool-suite.webp",
-        "fr": "Suite et plunge pool au Zadún Ritz-Carlton Reserve",
-        "en": "Suite plunge pool at Zadún Ritz-Carlton Reserve",
-        "credit": "Zadún, a Ritz-Carlton Reserve · photographie à auditer",
+        "fr": "Architecture contemporaine du Zadún Ritz-Carlton Reserve",
+        "en": "Contemporary resort architecture at Zadún Ritz-Carlton Reserve",
+        "credit": "Zadún, a Ritz-Carlton Reserve · official website",
         "sourcePage": "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-los-cabos-a-ritz-carlton-reserve/overview/"
       },
       {
         "src": "/images/travel/los-cabos-premium/zadun-reserve/resort-aerial.webp",
-        "fr": "Vue aérienne du resort Zadún Puerto Los Cabos",
-        "en": "Aerial view of Zadún Puerto Los Cabos resort",
-        "credit": "Zadún, a Ritz-Carlton Reserve · photographie à auditer",
+        "fr": "Villa Grand Reserve près de la plage au Zadún",
+        "en": "Grand Reserve Beachfront accommodation at Zadún",
+        "credit": "Zadún, a Ritz-Carlton Reserve · official website",
         "sourcePage": "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-los-cabos-a-ritz-carlton-reserve/overview/"
       },
       {
         "src": "/images/travel/los-cabos-premium/zadun-reserve/sensei-spa.webp",
-        "fr": "Spa Sensei au Zadún Ritz-Carlton Reserve",
-        "en": "Sensei Spa at Zadún Ritz-Carlton Reserve",
-        "credit": "Zadún, a Ritz-Carlton Reserve · photographie à auditer",
+        "fr": "Vue des espaces du Zadún Ritz-Carlton Reserve",
+        "en": "Resort detail at Zadún Ritz-Carlton Reserve",
+        "credit": "Zadún, a Ritz-Carlton Reserve · official website",
         "sourcePage": "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-los-cabos-a-ritz-carlton-reserve/overview/"
       }
     ],
-    "credit": "Zadún, a Ritz-Carlton Reserve · galerie éditoriale",
+    "credit": "Zadún, a Ritz-Carlton Reserve · photographies documentées individuellement",
     "sourcePage": "https://www.ritzcarlton.com/en/hotels/sjdzr-zadun-los-cabos-a-ritz-carlton-reserve/overview/",
     "frBest": "Pour le luxe discret, le désert de Baja et le bien-être.",
     "enBest": "For understated luxury, Baja landscapes and restorative wellness.",
@@ -131,35 +131,35 @@ export const losCabosAreaVisuals:(BodrumPremiumPhoto|null)[] = [
     "src": "/images/travel/los-cabos-premium/destination/palmilla-bay.webp",
     "fr": "Palmilla Bay et son eau claire près de San José del Cabo",
     "en": "Palmilla Bay near San José del Cabo",
-    "credit": "Crédit à préciser par registre photographique",
-    "sourcePage": "https://commons.wikimedia.org/"
+    "credit": "Places With Palms · Palmilla Beach Los Cabos · Client-authorised editorial use; written third-party reuse terms to verify before production",
+    "sourcePage": "https://www.placeswithpalms.com/to-do/cabos-best-beaches"
   },
   {
     "src": "/images/travel/los-cabos-premium/destination/pedregal-cliffs.webp",
     "fr": "Falaises de Pedregal sur le Pacifique",
     "en": "Pedregal cliffs on the Pacific coast",
-    "credit": "Crédit à préciser par registre photographique",
-    "sourcePage": "https://commons.wikimedia.org/"
+    "credit": "Alexis Doine · CC0",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Pedregal_Playa_(Cabo_San_Lucas).jpg"
   },
   {
     "src": "/images/travel/los-cabos-premium/destination/corridor-coast.webp",
-    "fr": "Côte entre Cabo San Lucas et San José del Cabo",
-    "en": "Tourist Corridor coastline between Cabo and San José",
-    "credit": "Crédit à préciser par registre photographique",
-    "sourcePage": "https://commons.wikimedia.org/"
+    "fr": "Vue aérienne de Santa María Bay et de Montage Los Cabos, dans le Tourist Corridor",
+    "en": "Aerial view of Santa María Bay and Montage Los Cabos, Tourist Corridor",
+    "credit": "Montage Los Cabos · Santa Maria Bay, Tourist Corridor · Client-authorised editorial use; written third-party reuse terms to verify before production",
+    "sourcePage": "https://www.montage.com/loscabos/resort-information/"
   },
   {
     "src": "/images/travel/los-cabos-premium/destination/puerto-los-cabos.webp",
     "fr": "Rivage de Puerto Los Cabos sur la mer de Cortés",
     "en": "Puerto Los Cabos shoreline on the Sea of Cortez",
-    "credit": "Crédit à préciser par registre photographique",
-    "sourcePage": "https://commons.wikimedia.org/"
+    "credit": "Sharon Hahn Darlin · CC BY 2.0",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Puerto_Los_Cabos_(50819196673).jpg"
   },
   {
     "src": "/images/travel/los-cabos-premium/destination/san-jose-art.webp",
     "fr": "Centre historique et galeries de San José del Cabo",
     "en": "San José del Cabo historic centre and galleries",
-    "credit": "Crédit à préciser par registre photographique",
-    "sourcePage": "https://commons.wikimedia.org/"
+    "credit": "kajikawa · CC BY 3.0",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:San_Jos%C3%A9_del_Cabo_-_panoramio_-_kajikawa.jpg"
   }
 ];
