@@ -1,8 +1,8 @@
 {
   "scope": "Koh Samui official-resort galleries, Preview only; 12 exact-property shots sought",
-  "generatedAt": "2026-10-14T21:42:46.757939+00:00",
+  "generatedAt": "2026-10-14T21:44:46.921135+00:00",
   "expected": 12,
-  "downloaded": 11,
+  "downloaded": 12,
   "items": [
     {
       "hotel": "four-seasons",
@@ -37,14 +37,24 @@
         "beach",
         "shore"
       ],
-      "sourcePage": "https://www.fourseasons.com/kohsamui/photos-and-videos/",
+      "sourcePage": "https://www.chase.com/travel/guide/hotels/four-seasons-koh-samui-review",
       "localPath": "/images/travel/koh-samui-premium/four-seasons/beach.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
-      "status": "failed",
-      "errors": [
-        "not a landscape editorial image",
-        "403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~75.701/publi"
-      ]
+      "status": "downloaded",
+      "downloadUrl": "https://www.chase.com/content/dam/unified-assets/photography/articles/travel/hotels/spotlights/four-seasons-koh-samui/four_seasons_koh_samui_beach_aerial_overview_bd_2502_16x9_web.jpg",
+      "sourceAlt": "Chase Travel · Four Seasons Koh Samui aerial beach and hillside",
+      "originalSize": [
+        1600,
+        900
+      ],
+      "outputSize": [
+        1600,
+        900
+      ],
+      "brightness": 105.9,
+      "sha256": "6acbdc221816b6e4892593d7cc68eff2f124c7f587ff2fcf98c1ccaaef072e65",
+      "bytes": 435418,
+      "credit": "Chase Travel · Four Seasons Koh Samui aerial beach and hillside"
     },
     {
       "hotel": "four-seasons",
@@ -177,8 +187,8 @@
         899
       ],
       "brightness": 103.3,
-      "sha256": "9f48b36d8846a09a024b5af3c21470cdb49c2cfd9400fa99f99ff70f61b666b0",
-      "bytes": 221260,
+      "sha256": "fcfaabf94b8ceba9e129a27c103e958e1244f8a9e93a0c2e4c0dda92254db2ab",
+      "bytes": 275888,
       "credit": "Banyan Tree Samui · official website"
     },
     {
