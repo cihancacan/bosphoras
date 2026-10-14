@@ -107,6 +107,7 @@ export type WinkStagingQuery = {
   point?: { latitude: number; longitude: number };
   radiusMeters?: number;
   geoNameId?: string;
+  urlName?: string;
   countryCode?: string;
   checkIn: string;
   nights: number;
@@ -116,7 +117,7 @@ export type WinkStagingQuery = {
 };
 
 export async function searchStagingInventory(query: WinkStagingQuery) {
-  if (query.scope === 'city' && !/^\d{3,12}$/.test(query.geoNameId ?? '')) throw new WinkStagingError('search');
+  if (query.scope === 'city' && (Boolean(query.geoNameId) === Boolean(query.urlName) || !(query.urlName ? /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(query.urlName) : /^\d{3,12}$/.test(query.geoNameId ?? '')))) throw new WinkStagingError('search');
   if (query.scope === 'country' && !/^[A-Z]{2}$/.test(query.countryCode ?? '')) throw new WinkStagingError('search');
   if (query.scope === 'geo' && (!query.point || !Number.isFinite(query.point.latitude) ||
       !Number.isFinite(query.point.longitude) || query.point.latitude < -90 ||
@@ -150,7 +151,7 @@ export async function searchStagingInventory(query: WinkStagingQuery) {
   const methodNames = query.scope === 'city' ? ['searchByCity', 'SearchByCity']
     : query.scope === 'geo' ? ['searchByGeo', 'SearchByGeo']
     : query.scope === 'country' ? ['rankByCountry', 'RankByCountry'] : ['rankGlobal', 'RankGlobal'];
-  const region = query.scope === 'city' ? { geoNameId: query.geoNameId }
+  const region = query.scope === 'city' ? (query.urlName ? { urlName: query.urlName } : { geoNameId: query.geoNameId })
     : query.scope === 'geo' ? { area: { point: query.point }, radiusInMeters: String(query.radiusMeters) }
     : query.scope === 'country' ? { countryCode: query.countryCode } : {};
   const searchClient = service(pkg, 'Search');
@@ -189,7 +190,20 @@ export async function searchStagingInventory(query: WinkStagingQuery) {
     pageSize: Number(page.size ?? query.size ?? 5),
     responseShapeValid: true,
     currency: String(response.currencyCode || 'EUR'),
+    currencyExponent: response.currencyExponent,
+    customizationConfigured: Boolean(process.env.WINK_STAGING_CUSTOMIZATION_ID?.trim()),
     hotels: hotels.map((hotel: JsonRecord) => ({
+      propertyId: String(hotel.propertyId || ''),
+      urlName: String(hotel.urlName || ''),
+      direct: hotel.direct === true,
+      offers: (Array.isArray(hotel.roomTypes) ? hotel.roomTypes : []).flatMap((room: JsonRecord) =>
+        (Array.isArray(room.rates) ? room.rates : []).filter((rate: JsonRecord) => rate.available === true)
+          .map((rate: JsonRecord) => ({ roomName: String(room.name || ''), totalMinor: String(rate.total), quantity: rate.quantity,
+            startDate: rate.startDate, endDate: rate.endDate, refundable: rate.refundable }))),
+      bookingUrl: hotel.available === true && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(hotel.urlName || '') && process.env.WINK_STAGING_CUSTOMIZATION_ID?.trim()
+        ? 'https://staging-book.wink.travel/hotel/' + hotel.urlName + '?' + new URLSearchParams({
+          'client-id': requiredEnv('WINK_CLIENT_ID_V3'), 'configuration-id': process.env.WINK_STAGING_CUSTOMIZATION_ID.trim(),
+        }).toString() : null,
       name: String(hotel.name || ''),
       city: String(hotel.city?.name || ''),
       starRating: Number(hotel.starRating || 0),

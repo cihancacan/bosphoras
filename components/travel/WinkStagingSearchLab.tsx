@@ -2,28 +2,15 @@
 
 import { useState } from 'react';
 
-type Hotel = { name: string; starRating: number; available: boolean; roomTypesCount: number; heroImageUrl: string | null };
+type Hotel = { name: string; starRating: number; available: boolean; roomTypesCount: number; heroImageUrl: string | null; direct: boolean; bookingUrl: string | null; offers: { roomName: string; totalMinor: string; quantity: number; startDate: string; endDate: string; refundable: boolean }[] };
 type SearchResult = {
   ok: boolean; city?: string; checkIn?: string; nights?: number; adults?: number; rooms?: number;
   pageCount?: number; totalElements?: number; totalPages?: number; searchedAt?: string;
-  currency?: string; hotels?: Hotel[]; accountConfirmed?: boolean; info?: string; method?: string; filters?: string;
-  diagnostics?: { responseShapeValid: boolean; pageNumberOfElements: number; pageSize: number; queryMethod: string };
+  currency?: string; currencyExponent?: number; customizationConfigured?: boolean; hotels?: Hotel[]; accountConfirmed?: boolean; info?: string; method?: string; filters?: string;
+  diagnostics?: { responseShapeValid: boolean; pageNumberOfElements: number; pageSize: number; queryMethod: string; citySlug?: string };
   error?: string; stage?: string; grpcCode?: number;
 };
-const searchAreas = [
-  // RankGlobal/RankByCountry are ranked subsets, not worldwide inventory searches.
-  // Hide them in the primary tester: they misleadingly suggest that staging has a complete global catalogue.
-  { slug: 'city-istanbul', label: 'Istanbul seulement' },
-  { slug: 'city-paris', label: 'Paris seulement' },
-  { slug: 'city-dubai', label: 'Dubaï seulement' },
-  { slug: 'city-bangkok', label: 'Bangkok · référence de test Wink' },
-  { slug: 'city-phuket', label: 'Phuket seulement' },
-  { slug: 'geo-istanbul', label: 'Autour Istanbul 35 km - SearchByGeo' },
-  { slug: 'geo-paris', label: 'Autour Paris 30 km - SearchByGeo' },
-  { slug: 'geo-dubai', label: 'Autour Dubai 40 km - SearchByGeo' },
-  { slug: 'geo-bangkok', label: 'Autour Bangkok 30 km - SearchByGeo' },
-  { slug: 'geo-phuket', label: 'Ouest Phuket 40 km - SearchByGeo' },
-];
+const searchAreas = [{ slug: 'city-bangkok', label: 'Bangkok · hôtels tests Wink' }];
 function dateInDays(days: number) {
   const d = new Date(); d.setUTCDate(d.getUTCDate() + days); return d.toISOString().slice(0, 10);
 }
@@ -31,7 +18,7 @@ function dateInDays(days: number) {
 export function WinkStagingSearchLab() {
   const [scope, setScope] = useState('city-bangkok');
   const [checkIn, setCheckIn] = useState(() => dateInDays(14));
-  const [nights, setNights] = useState(2);
+  const [nights, setNights] = useState(1);
   const [adults, setAdults] = useState(2);
   const [rooms, setRooms] = useState(1);
   const [pending, setPending] = useState(false);
@@ -65,14 +52,11 @@ export function WinkStagingSearchLab() {
         <p className="mb-3 text-xs font-semibold uppercase tracking-[0.22em] text-[#b18a52]">Diagnostic privé · API de réservation</p>
         <h1 className="font-serif text-4xl leading-tight sm:text-5xl">Recherche d’hôtels Wink</h1>
         <p className="mt-4 text-base leading-relaxed text-slate-600">
-          Le raccordement OAuth et les recherches gRPC sont opérationnels, mais Wink Staging est un environnement de démonstration
-          au catalogue réduit, distinct de la Production. Bangkok a déjà retourné cinq établissements lors de tes tests ;
-          un résultat à zéro pour Paris, Istanbul ou Dubaï ne révèle donc pas forcément un dysfonctionnement du site.
-          Chaque clic lance une recherche réelle sur Wink Staging, jamais une liste artificielle.
+          Wink confirme que Staging contient uniquement des hôtels tests à Bangkok. Cette recherche utilise le slug bangkok-thailand, des dates futures et aucun filtre facultatif. La couverture commerciale doit être vérifiée séparément en Production.
         </p>
       </header>
       <aside className="mb-7 rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 text-sm leading-relaxed text-amber-950">
-        <strong>Diagnostic : absence d’inventaire dans Staging.</strong> Aucun filtre facultatif (étoiles, nom,
+        <strong>Environnement de test : Bangkok uniquement.</strong> Aucun filtre facultatif (étoiles, nom,
         style de séjour ou « réservation directe uniquement ») n’est activé. Les dates et voyageurs restent
         indispensables pour calculer les prix. Le classement mondial RankGlobal n’est pas un catalogue exhaustif :
         l’élargissement à « Monde » ne peut pas ajouter des hôtels qui ne sont pas présents dans cette base de test.
@@ -83,7 +67,7 @@ export function WinkStagingSearchLab() {
         </span>
       </aside>
       <section className="mb-7 rounded-xl border border-[#cbd6d7] bg-white p-5 text-sm leading-relaxed text-[#243940]">
-        <h2 className="text-base font-semibold">Pour afficher les vrais hôtels dans toutes les destinations</h2>
+        <h2 className="text-base font-semibold">Préparer l’accès au catalogue commercial</h2>
         <p className="mt-2">
           Il faut un compte affilié et une application Machine-to-Machine <strong>Wink Production</strong>,
           avec des identifiants différents du Staging. Le compte Staging actuel ne fournit pas
@@ -110,7 +94,7 @@ export function WinkStagingSearchLab() {
             </select>
           </label>
           <label className="block text-sm font-semibold">Date d’arrivée
-            <input required type="date" min={dateInDays(0)} max={dateInDays(180)} value={checkIn}
+            <input required type="date" min={dateInDays(1)} max={dateInDays(180)} value={checkIn}
               onChange={e=>setCheckIn(e.target.value)}
               className="mt-2 w-full rounded-lg border border-slate-300 px-3 py-3 text-sm" />
           </label>
@@ -131,7 +115,7 @@ export function WinkStagingSearchLab() {
           </label>
         </div>
         <div className="mt-6 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
-          <p className="text-xs leading-relaxed text-slate-500">Un seul appel Wink par clic, 5 hôtels au maximum affichés par page pour limiter les coûts. Aucun filtre étoiles, style, disponibilité ou direct uniquement.</p>
+          <p className="text-xs leading-relaxed text-slate-500">Une recherche de prix par clic, 3 hôtels au maximum affichés par page pour limiter les coûts. Aucun filtre étoiles, style, disponibilité ou direct uniquement.</p>
           <button disabled={pending} className="w-full rounded-lg bg-[#163a48] px-7 py-3 font-semibold text-white transition hover:bg-[#24596a] disabled:opacity-50 sm:w-auto">
             {pending ? 'Recherche auprès de Wink…' : 'Rechercher les hôtels'}
           </button>
@@ -161,16 +145,21 @@ export function WinkStagingSearchLab() {
             Si Bangkok affiche des propriétés avec les mêmes dates, le catalogue Staging est bien accessible.
             Pour chercher dans le catalogue commercial, il faut brancher les identifiants Production.
           </div>}
-          <p className="mt-2 text-xs text-slate-500">Méthode Wink : <strong>{result.method || '—'}</strong> · Aucun filtre facultatif appliqué. La page affiche au maximum 5 fiches ; le « Total API » est indépendant de cette limite.</p>
+          <p className="mt-2 text-xs text-slate-500">Méthode Wink : <strong>{result.method || '—'}</strong> · Ville : {result.diagnostics?.citySlug || '—'} · Aucun filtre facultatif appliqué. La page affiche au maximum 3 fiches ; le « Total API » est indépendant de cette limite.</p>
           {result.diagnostics && <p className="mt-2 text-xs text-slate-500">Réponse gRPC reconnue : {result.diagnostics.responseShapeValid ? 'oui' : 'non'} · Lignes de la page selon Wink : {result.diagnostics.pageNumberOfElements} · Taille de page : {result.diagnostics.pageSize}. Les identifiants secrets et les comptes ne sont jamais affichés.</p>}
+          {!result.customizationConfigured && <p className="mt-3 text-sm text-amber-800">Lien de réservation bloqué : l’identifiant de personnalisation staging doit être configuré et vérifié pour attribuer les réservations à Bosphoras.</p>}
           {result.hotels && result.hotels.length > 0 && <div className="mt-7 space-y-3">
             {result.hotels.map((hotel, index) => <div key={index} className="flex items-center gap-4 rounded-xl border border-slate-200 p-3">
               {hotel.heroImageUrl && <img src={hotel.heroImageUrl} alt={hotel.name} loading="lazy" className="h-20 w-28 rounded-lg object-cover" />}
               <div className="min-w-0">
                 <div className="font-semibold">{hotel.name || 'Établissement sans nom'}</div>
                 <div className="mt-1 text-sm text-slate-500">{hotel.starRating > 0 ? `${hotel.starRating} étoiles · ` : ''}{hotel.roomTypesCount} type(s) de chambre · {hotel.available ? 'Disponibilité indiquée dans le test' : 'Pas de disponibilité confirmée'}</div>
+                <p className="mt-2 text-sm">{hotel.direct ? 'Inventaire direct' : 'Inventaire intermédiaire'}</p>
+                {hotel.offers.map((offer, i) => <p key={i} className="mt-2 text-sm">{offer.roomName} · {Number.isSafeInteger(Number(offer.totalMinor)) && Number(offer.totalMinor) > 0 && Number.isInteger(result.currencyExponent)
+                  ? new Intl.NumberFormat('fr-FR', { style: 'currency', currency: result.currency }).format(Number(offer.totalMinor) / 10 ** result.currencyExponent!) : 'Prix à confirmer'} pour le séjour, {offer.quantity} chambre(s) · {offer.startDate} → {offer.endDate}</p>)}
+                {hotel.bookingUrl && <a href={hotel.bookingUrl} target="_blank" rel="noopener noreferrer" className="mt-3 inline-block font-semibold underline">Ouvrir la réservation de test Wink</a>}
               </div>
-            </div>)}
+            </div>)} 
           </div>}
           <p className="mt-7 text-xs text-slate-500">Aucune réservation ne peut être confirmée ici. Ce tableau sert uniquement à diagnostiquer l’intégration avant ouverture commerciale.</p>
         </>}
