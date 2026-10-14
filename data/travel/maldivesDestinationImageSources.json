@@ -1,0 +1,97 @@
+{
+  "scope": "Maldives destination images from Wikimedia Commons only",
+  "generatedAt": "2026-10-14T22:02:07.576188+00:00",
+  "expected": 9,
+  "downloaded": 2,
+  "items": [
+    {
+      "key": "lagoon-aerial",
+      "search": "Maldives aerial atoll lagoon",
+      "localPath": "/images/travel/maldives-premium/destination/lagoon-aerial.webp",
+      "status": "failed"
+    },
+    {
+      "key": "noonu-atoll",
+      "search": "Noonu Atoll Maldives islands",
+      "localPath": "/images/travel/maldives-premium/destination/noonu-atoll.webp",
+      "status": "failed",
+      "lastError": "not a landscape editorial image"
+    },
+    {
+      "key": "baa-atoll",
+      "search": "Baa Atoll Maldives lagoon",
+      "localPath": "/images/travel/maldives-premium/destination/baa-atoll.webp",
+      "status": "failed"
+    },
+    {
+      "key": "north-male-atoll",
+      "search": "North Male Atoll Maldives aerial",
+      "localPath": "/images/travel/maldives-premium/destination/north-male-atoll.webp",
+      "status": "failed"
+    },
+    {
+      "key": "overwater-villas",
+      "search": "Maldives overwater villas lagoon",
+      "localPath": "/images/travel/maldives-premium/destination/overwater-villas.webp",
+      "status": "failed"
+    },
+    {
+      "key": "beach-island",
+      "search": "Maldives beach island palm trees",
+      "localPath": "/images/travel/maldives-premium/destination/beach-island.webp",
+      "status": "failed"
+    },
+    {
+      "key": "sandbank",
+      "search": "Maldives sandbank aerial",
+      "localPath": "/images/travel/maldives-premium/destination/sandbank.webp",
+      "status": "downloaded",
+      "sourceFile": "File:Malediven Sandbank (28800504836).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Malediven_Sandbank_(28800504836).jpg",
+      "author": "dronepicr",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Malediven_Sandbank_%2828800504836%29.jpg/1920px-Malediven_Sandbank_%2828800504836%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1078
+      ],
+      "outputSize": [
+        1920,
+        1078
+      ],
+      "brightness": 124.1,
+      "sha256": "740092d6b115f9c7393965cd594181b1c0a26e0112d6a3d66c692fce2ff15bab",
+      "bytes": 393462
+    },
+    {
+      "key": "seaplane",
+      "search": "Maldives seaplane lagoon",
+      "localPath": "/images/travel/maldives-premium/destination/seaplane.webp",
+      "status": "failed"
+    },
+    {
+      "key": "manta-reef",
+      "search": "Manta rays Maldives reef",
+      "localPath": "/images/travel/maldives-premium/destination/manta-reef.webp",
+      "status": "downloaded",
+      "sourceFile": "File:Manta alfredi fushivaru thila.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Manta_alfredi_fushivaru_thila.jpg",
+      "author": "asands from London, UK",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Manta_alfredi_fushivaru_thila.jpg/1920px-Manta_alfredi_fushivaru_thila.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1920,
+        1440
+      ],
+      "brightness": 118.1,
+      "sha256": "91faf0a0b68c4790df6930be304c605ab513b259159c8bfc67e1d53753614e62",
+      "bytes": 267066
+    }
+  ]
+}
