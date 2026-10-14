@@ -7,25 +7,25 @@ export const kohSamuiHotelEditorial:Record<string,BodrumHotelEditorial> = {
         "src": "/images/travel/koh-samui-premium/four-seasons/pool-villa.webp",
         "fr": "Villa avec piscine privée et vue sur le golfe de Thaïlande au Four Seasons",
         "en": "Private pool villa overlooking the Gulf at Four Seasons Koh Samui",
-        "credit": "Four Seasons Resort Koh Samui · galerie officielle",
-        "sourcePage": "https://www.fourseasons.com/kohsamui/photos-and-videos/"
+        "credit": "Audley Travel · Four Seasons Koh Samui pool villa",
+        "sourcePage": "https://www.audleytravel.com/us/thailand"
       },
       {
         "src": "/images/travel/koh-samui-premium/four-seasons/beach.webp",
-        "fr": "Plage du Four Seasons Resort Koh Samui",
+        "fr": "La plage et les villas du Four Seasons Koh Samui vues du ciel",
         "en": "Aerial view of Four Seasons Resort Koh Samui beach and hillside villas",
-        "credit": "Four Seasons Resort Koh Samui · galerie officielle",
-        "sourcePage": "https://www.fourseasons.com/kohsamui/photos-and-videos/"
+        "credit": "Chase Travel · Four Seasons Koh Samui aerial beach and hillside",
+        "sourcePage": "https://www.chase.com/travel/guide/hotels/four-seasons-koh-samui-review"
       },
       {
         "src": "/images/travel/koh-samui-premium/four-seasons/dining.webp",
-        "fr": "Restaurant et terrasse panoramique du Four Seasons Koh Samui",
-        "en": "Panoramic dining terrace at Four Seasons Koh Samui",
-        "credit": "Four Seasons Resort Koh Samui · galerie officielle",
-        "sourcePage": "https://www.fourseasons.com/kohsamui/photos-and-videos/"
+        "fr": "Dîner en bord de mer au Four Seasons Koh Samui",
+        "en": "Seaside dining at Four Seasons Resort Koh Samui",
+        "credit": "Privilèges Voyages · Four Seasons beachfront dining",
+        "sourcePage": "https://www.privileges-voyages.com/sejour/q/sejour-sur-mesure-luxe-en-thailande-au-four-seasons-koh-samui"
       }
     ],
-    "credit": "Four Seasons Resort Koh Samui · galerie officielle",
+    "credit": "Four Seasons Resort Koh Samui · photographies sourcées individuellement",
     "sourcePage": "https://www.fourseasons.com/kohsamui/photos-and-videos/",
     "frBest": "Pour l'excellence du service, les séjours en famille et les villas tropicales ouvertes sur la mer.",
     "enBest": "For legendary service, families and tropical villas facing the sea.",
@@ -38,25 +38,25 @@ export const kohSamuiHotelEditorial:Record<string,BodrumHotelEditorial> = {
         "src": "/images/travel/koh-samui-premium/six-senses/villa-pool.webp",
         "fr": "Villa avec piscine au Six Senses Samui",
         "en": "Pool villa at Six Senses Samui",
-        "credit": "Six Senses Samui · galerie officielle",
-        "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/samui/gallery/"
+        "credit": "Planet Escape · Six Senses Ocean Front Pool Villa Suite",
+        "sourcePage": "https://planetescape.pl/en/hotel/tajlandia-koh-samui-six-senses-samui/six-senses-samui-ocean-front-pool-villa-suite/"
       },
       {
         "src": "/images/travel/koh-samui-premium/six-senses/spa.webp",
         "fr": "Espace spa et bien-être du Six Senses Samui",
         "en": "Six Senses Samui spa and wellness",
-        "credit": "Six Senses Samui · galerie officielle",
-        "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/samui/gallery/"
+        "credit": "Ecoluxury · Six Senses Samui treatment room",
+        "sourcePage": "https://www.ecoluxury.com/en/retreats-of-the-world/469_six-senses-samui"
       },
       {
         "src": "/images/travel/koh-samui-premium/six-senses/coast.webp",
         "fr": "Paysage de l'établissement Six Senses Samui",
         "en": "Coastal setting at Six Senses Samui",
-        "credit": "Six Senses Samui · galerie officielle",
-        "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/samui/gallery/"
+        "credit": "Tatler Asia · Six Senses Samui Ocean Retreat",
+        "sourcePage": "https://www.tatlerasia.com/lifestyle/travel/samui-the-white-lotus-3"
       }
     ],
-    "credit": "Six Senses Samui · galerie officielle",
+    "credit": "Six Senses Samui · photographies sourcées individuellement",
     "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/samui/gallery/",
     "frBest": "Pour se déconnecter, ralentir et vivre un séjour bien-être dans la nature.",
     "enBest": "For reconnecting with nature, slowing down and wellness.",
@@ -69,25 +69,25 @@ export const kohSamuiHotelEditorial:Record<string,BodrumHotelEditorial> = {
         "src": "/images/travel/koh-samui-premium/banyan-tree/pool-villa.webp",
         "fr": "Villa avec piscine privée au Banyan Tree Samui",
         "en": "Private pool villa at Banyan Tree Samui",
-        "credit": "Banyan Tree Samui · galerie officielle",
-        "sourcePage": "https://www.banyantree.com/thailand/samui/gallery"
+        "credit": "Banyan Tree Samui · official website",
+        "sourcePage": "https://www.banyantree.com/thailand/samui"
       },
       {
         "src": "/images/travel/koh-samui-premium/banyan-tree/private-bay.webp",
         "fr": "Baie privée du Banyan Tree Samui",
         "en": "Banyan Tree Samui private bay",
-        "credit": "Banyan Tree Samui · galerie officielle",
-        "sourcePage": "https://www.banyantree.com/thailand/samui/gallery"
+        "credit": "Banyan Tree Samui · official website",
+        "sourcePage": "https://www.banyantree.com/thailand/samui"
       },
       {
         "src": "/images/travel/koh-samui-premium/banyan-tree/spa.webp",
         "fr": "Spa et espace bien-être au Banyan Tree Samui",
         "en": "Banyan Tree Samui wellness facilities",
-        "credit": "Banyan Tree Samui · galerie officielle",
-        "sourcePage": "https://www.banyantree.com/thailand/samui/gallery"
+        "credit": "Banyan Tree Samui · official wellness image",
+        "sourcePage": "https://www.banyantree.com/thailand/samui/spa/banyan-tree-spa-samui"
       }
     ],
-    "credit": "Banyan Tree Samui · galerie officielle",
+    "credit": "Banyan Tree Samui · photographies sourcées individuellement",
     "sourcePage": "https://www.banyantree.com/thailand/samui/gallery",
     "frBest": "Pour une retraite intime dans une baie préservée, entre piscine privée et spa.",
     "enBest": "For an intimate escape in a sheltered bay with private pool and spa.",
@@ -100,25 +100,25 @@ export const kohSamuiHotelEditorial:Record<string,BodrumHotelEditorial> = {
         "src": "/images/travel/koh-samui-premium/conrad/sunset-villa.webp",
         "fr": "Piscine au coucher du soleil au Conrad Koh Samui",
         "en": "Sunset pool at Conrad Koh Samui",
-        "credit": "Conrad Koh Samui · galerie officielle",
-        "sourcePage": "https://www.hilton.com/en/hotels/usmksci-conrad-koh-samui/"
+        "credit": "American Express Travel · Conrad Koh Samui sunset pool",
+        "sourcePage": "https://www.americanexpress.com/en-au/travel/discover/property/Thailand/Koh-Samui/conrad-koh-samui"
       },
       {
         "src": "/images/travel/koh-samui-premium/conrad/infinity-pool.webp",
         "fr": "Piscine à débordement face aux Five Islands au Conrad Koh Samui",
         "en": "Conrad Koh Samui infinity pool facing the Five Islands",
-        "credit": "Conrad Koh Samui · galerie officielle",
-        "sourcePage": "https://www.hilton.com/en/hotels/usmksci-conrad-koh-samui/"
+        "credit": "Viland Travel · Conrad Koh Samui hillside pool villa",
+        "sourcePage": "https://vilandtravel.com/accommodation/conrad-koh-samui"
       },
       {
         "src": "/images/travel/koh-samui-premium/conrad/five-islands.webp",
         "fr": "Vue aérienne des villas sur la colline du Conrad Koh Samui",
         "en": "Aerial view of Conrad Koh Samui hillside villas",
-        "credit": "Conrad Koh Samui · galerie officielle",
-        "sourcePage": "https://www.hilton.com/en/hotels/usmksci-conrad-koh-samui/"
+        "credit": "Kompas Tour · aerial view of Conrad Koh Samui hillside villas",
+        "sourcePage": "https://kompastour.com/ge/eng/country/thailand/samui/conrad_koh_samui/"
       }
     ],
-    "credit": "Conrad Koh Samui · galerie officielle",
+    "credit": "Conrad Koh Samui · photographies sourcées individuellement",
     "sourcePage": "https://www.hilton.com/en/hotels/usmksci-conrad-koh-samui/",
     "frBest": "Pour un panorama spectaculaire, des piscines privées et les couchers de soleil.",
     "enBest": "For spectacular sunsets, private pools and hillside seclusion.",
@@ -131,35 +131,35 @@ export const kohSamuiAreaVisuals:(BodrumPremiumPhoto|null)[] = [
     "src": "/images/travel/koh-samui-premium/destination/taling-ngam-sunset.webp",
     "fr": "Le littoral de Taling Ngam au soleil couchant",
     "en": "Taling Ngam coast at sunset",
-    "credit": "Wikimedia Commons · crédit détaillé dans le registre des photos",
-    "sourcePage": "https://commons.wikimedia.org/"
+    "credit": "Five Islands Beach House · Taling Ngam coast · Client-authorised editorial use; written third-party reuse terms to verify before production",
+    "sourcePage": "https://www.fiveislandssamui.com/location"
   },
   {
     "src": "/images/travel/koh-samui-premium/destination/plai-laem.webp",
-    "fr": "Côte de Plai Laem au nord-est de Koh Samui",
-    "en": "Plai Laem coast in northeast Koh Samui",
-    "credit": "Wikimedia Commons · crédit détaillé dans le registre des photos",
-    "sourcePage": "https://commons.wikimedia.org/"
+    "fr": "Le temple Wat Plai Laem au nord-est de Koh Samui",
+    "en": "Wat Plai Laem temple in northeast Koh Samui",
+    "credit": "Ozkartman · CC BY-SA 4.0",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Wat_Plai_Laem,_Koh_Samui,_Thailand.jpg"
   },
   {
     "src": "/images/travel/koh-samui-premium/destination/lamai-beach.webp",
     "fr": "Lamai Beach et la végétation tropicale",
     "en": "Lamai Beach and tropical landscape",
-    "credit": "Wikimedia Commons · crédit détaillé dans le registre des photos",
-    "sourcePage": "https://commons.wikimedia.org/"
+    "credit": "Fabio Achilli from Milano, Italy · CC BY 2.0",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Koh_Samui,_Lamai_Beach_(6217346513).jpg"
   },
   {
     "src": "/images/travel/koh-samui-premium/destination/bophut-fishermans.webp",
     "fr": "Fisherman's Village de Bophut et le front de mer",
     "en": "Bophut Fisherman's Village waterfront",
-    "credit": "Wikimedia Commons · crédit détaillé dans le registre des photos",
-    "sourcePage": "https://commons.wikimedia.org/"
+    "credit": "Karpe Diem Villa · Fisherman's Village waterfront · Client-authorised editorial use; written third-party reuse terms to verify before production",
+    "sourcePage": "https://karpediemvilla.com/fishermans-village.php"
   },
   {
     "src": "/images/travel/koh-samui-premium/destination/maenam-beach.webp",
     "fr": "La plage de Mae Nam bordée de cocotiers à Koh Samui",
     "en": "Mae Nam beach shaded by coconut palms in Koh Samui",
-    "credit": "Wikimedia Commons · crédit détaillé dans le registre des photos",
-    "sourcePage": "https://commons.wikimedia.org/"
+    "credit": "Fabio Achilli from Milano, Italy · CC BY 2.0",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Maenam_Beach,_Koh_Samui_(48107481886).jpg"
   }
 ];
