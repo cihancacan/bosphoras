@@ -151,7 +151,7 @@ HOTELS={
 PREFERRED_MEDIA={
  ("one-and-only-palmilla","beachfront-villa"): ["https://www.viajeselcorteingles.es/imagenes/tm/america/mexico-mx/cbl-cabo-san-lucas/cblco-corredor/ex37x9tr/mdm-18cblco511-oneandonly-palmilla-accommodation-villacortez-hr_x.jpg","https://www.viajeselcorteingles.es/ficha/hotel/one-only-palmilla-ex37x9tr","Viajes El Corte Inglés · One&Only Palmilla Villa Cortez"],
  ("one-and-only-palmilla","palmilla-beach"): ["https://dam.kerzner.com/i/kerzner/OO_Palmilla_Drone_Morning_0860_MASTER?poi=0.643%2C0.645%2C0%2C0&scaleFit=poi","https://www.oneandonlyresorts.com/palmilla/newsletter","One&Only Palmilla · sunrise aerial beach"],
- ("one-and-only-palmilla","resort-pool"): ["https://qtxasset.com/quartz/qcloud1/media/image/luxurytraveladvisor/1604336116/One%26Only%20Palmilla%20Exteriors_Aerials_4580_MASTER.jpg?VersionId=vuSmPgQ4PBKiY9hmitQPK7mVB2GNUn0z","https://www.luxurytraveladvisor.com/hotels/one-only-palmilla-reopens-new-offerings-guest-experiences","Luxury Travel Advisor · One&Only Palmilla resort aerial and pool"],
+ ("one-and-only-palmilla","resort-pool"): ["https://eu-images.contentstack.com/v3/assets/blte218090c2a6fb1e2/blt3e4daec77f8832fa/6695022512402825615a9dc6/one-and-only-palmilla-DER1119235.jpg","https://www.dertour.de/reisemagazin/beste-hotels-mexiko","DERTOUR · One&Only Palmilla infinity pool"],
  ("waldorf-pedregal","pacific-villa"): ["https://cdn.waldorfastorialoscabospedregal.com/wp-content/uploads/2021/10/14030433/K1RFU2-PEDREGAL-TWO-BEDROOM-BEACHFRONT-SUITE-WAPedregal-Low-Res-4-scaled.jpg","https://www.waldorfastorialoscabospedregal.com/resort/","Waldorf Astoria Pedregal · beachfront private-pool suite"],
  ("waldorf-pedregal","pedregal-cliff"): ["https://cdn.waldorfastorialoscabospedregal.com/wp-content/uploads/2025/10/09183450/02-Guest-Rooms-Suites-King-Ocean-View-Vista.jpg","https://www.waldorfastorialoscabospedregal.com/rooms/one-bedroom-ocean-view-suite/","Waldorf Astoria Pedregal · ocean-view suite"],
  ("las-ventanas","main-pool"): ["https://m.rosewoodhotels.com/content/dam/rosewoodhotels/property/las-ventanas-los-cabos/en/images/gallery/main-pool.jpeg","https://www.rosewoodhotels.com/en/las-ventanas-los-cabos/overview/gallery","Rosewood Las Ventanas · main pool"],
@@ -159,7 +159,8 @@ PREFERRED_MEDIA={
  ("zadun-reserve","pool-suite"): ["https://architectureprizecom.s3-us-west-2.amazonaws.com/uploads/97293/22-10824-21/medium/a8715926f5c041878f3199bcf539a20a.jpg","https://architectureprize.com/winners/winner.php?id=4770","Architecture MasterPrize · Zadún pool villa"],
 }
 DIRECT_DEST={
- "palmilla-bay":("https://i0.wp.com/playasde.net/wp-content/uploads/2022/11/Playa-Palmilla.jpg?ssl=1&w=1200","https://playasde.net/mexico/baja-california-sur/palmilla/","Playasde.net · Playa Palmilla, Los Cabos"),
+ "palmilla-bay":("https://images.squarespace-cdn.com/content/v1/6250a8d257a6e83aaad50c8e/22e655bd-234e-46c8-b972-bb6c7d056381/cabo-best-beaches-palmilla.jpg?format=1000w","https://www.placeswithpalms.com/to-do/cabos-best-beaches","Places With Palms · Palmilla Beach Los Cabos"),
+ "san-jose-art":("https://images.squarespace-cdn.com/content/v1/5856bc666a49634cd55b0ba9/1644959941119-AXZLE6COECGKVXLHV4O3/san-jose-del-cabo-art-district.jpg","https://www.travelingmitch.com/mostrecent/things-to-do-in-san-jose-del-cabo-mexico","Traveling Mitch · San José del Cabo Art District"),
  "corridor-coast":("https://uploads.montage.com/uploads/sites/7/2025/03/11144652/AerialOverviewofMontageLosCabos.jpg","https://www.montage.com/loscabos/resort-information/","Montage Los Cabos · Santa Maria Bay, Tourist Corridor")
 }
 DEST=[
