@@ -1,8 +1,8 @@
 {
   "scope": "Los Cabos official-resort galleries, Preview only; 12 exact-property shots sought",
-  "generatedAt": "2026-10-14T22:32:30.669103+00:00",
+  "generatedAt": "2026-10-14T22:35:21.712983+00:00",
   "expected": 12,
-  "downloaded": 11,
+  "downloaded": 12,
   "items": [
     {
       "hotel": "one-and-only-palmilla",
@@ -63,13 +63,24 @@
         "pool",
         "vista"
       ],
-      "sourcePage": "https://www.oneandonlyresorts.com/palmilla",
+      "sourcePage": "https://www.dertour.de/reisemagazin/beste-hotels-mexiko",
       "localPath": "/images/travel/los-cabos-premium/one-and-only-palmilla/resort-pool.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
-      "status": "failed",
-      "errors": [
-        "not a landscape editorial image"
-      ]
+      "status": "downloaded",
+      "downloadUrl": "https://eu-images.contentstack.com/v3/assets/blte218090c2a6fb1e2/blt3e4daec77f8832fa/6695022512402825615a9dc6/one-and-only-palmilla-DER1119235.jpg",
+      "sourceAlt": "DERTOUR · One&Only Palmilla infinity pool",
+      "originalSize": [
+        5314,
+        3543
+      ],
+      "outputSize": [
+        1950,
+        1300
+      ],
+      "brightness": 176.1,
+      "sha256": "e786ddbf0cd8a21a510ddf2184881e0194fa4f8a930a0fe2ee95b4bfb4f8c1cf",
+      "bytes": 435118,
+      "credit": "DERTOUR · One&Only Palmilla infinity pool"
     },
     {
       "hotel": "waldorf-pedregal",

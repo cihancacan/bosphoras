@@ -1,8 +1,8 @@
 {
   "scope": "Los Cabos destination images from Wikimedia Commons only",
-  "generatedAt": "2026-10-14T22:32:30.669103+00:00",
+  "generatedAt": "2026-10-14T22:35:21.712983+00:00",
   "expected": 9,
-  "downloaded": 7,
+  "downloaded": 9,
   "items": [
     {
       "key": "el-arco",
@@ -54,8 +54,24 @@
       "key": "palmilla-bay",
       "search": "Palmilla beach Mexico",
       "localPath": "/images/travel/los-cabos-premium/destination/palmilla-bay.webp",
-      "status": "failed",
-      "fallbackError": "404 Client Error: File Not Found for url: https://i0.wp.com/playasde.net/wp-content/uploads/2022/11/Playa-Palmilla.jpg?ssl=1&w=1200"
+      "status": "downloaded",
+      "sourceFile": "Places With Palms · Palmilla Beach Los Cabos",
+      "sourcePage": "https://www.placeswithpalms.com/to-do/cabos-best-beaches",
+      "author": "Places With Palms · Palmilla Beach Los Cabos",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.placeswithpalms.com/to-do/cabos-best-beaches",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/6250a8d257a6e83aaad50c8e/22e655bd-234e-46c8-b972-bb6c7d056381/cabo-best-beaches-palmilla.jpg?format=1000w",
+      "originalSize": [
+        1000,
+        563
+      ],
+      "outputSize": [
+        1000,
+        563
+      ],
+      "brightness": 177.4,
+      "sha256": "9e99ac3997d56226bbf074ad1c399851883024eb17e2287870b7470dd5a0703f",
+      "bytes": 96630
     },
     {
       "key": "pedregal-cliffs",
@@ -130,8 +146,24 @@
       "key": "san-jose-art",
       "search": "San Jose del Cabo historic",
       "localPath": "/images/travel/los-cabos-premium/destination/san-jose-art.webp",
-      "status": "failed",
-      "lastError": "429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.or"
+      "status": "downloaded",
+      "sourceFile": "File:San José del Cabo - panoramio - kajikawa.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:San_Jos%C3%A9_del_Cabo_-_panoramio_-_kajikawa.jpg",
+      "author": "kajikawa",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/2/25/San_Jos%C3%A9_del_Cabo_-_panoramio_-_kajikawa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "originalSize": [
+        1280,
+        960
+      ],
+      "outputSize": [
+        1280,
+        960
+      ],
+      "brightness": 98.8,
+      "sha256": "ec83d3fa3a4a7e92a1791295d8450667e9d12bfc57239b719775fcbb68632e23",
+      "bytes": 117430
     },
     {
       "key": "cabo-marina",
