@@ -133,82 +133,82 @@ export const losCabosGuide:FeaturedCityGuideData = {
       "src": "/images/travel/los-cabos-premium/destination/el-arco.webp",
       "fr": "L'arche naturelle El Arco au large de Cabo San Lucas",
       "en": "El Arco rock arch at Land's End in Cabo San Lucas",
-      "author": "Crédit à confirmer par registre d'import",
-      "license": "À valider",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Comisión Mexicana de Filmaciones from México D. F., México",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:El_Arco,_Cabo_San_Lucas,_Baja_California_Sur_(16638939645).jpg"
     },
     "baja-coast": {
       "src": "/images/travel/los-cabos-premium/destination/baja-coast.webp",
-      "fr": "Falaises désertiques et mer à Los Cabos",
-      "en": "Desert cliffs and ocean on the Los Cabos coastline",
-      "author": "Crédit à confirmer par registre d'import",
-      "license": "À valider",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Falaises rocheuses et mer turquoise à Cabo San Lucas, photographie d'Efrain Alonso",
+      "en": "Rocky coastal cliffs and turquoise sea at Cabo San Lucas, photographed by Efrain Alonso",
+      "author": "Efrain Alonso",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "sourcePage": "https://www.pexels.com/photo/photo-of-seashore-3355357/"
     },
     "palmilla-bay": {
       "src": "/images/travel/los-cabos-premium/destination/palmilla-bay.webp",
       "fr": "Palmilla Bay et son eau claire près de San José del Cabo",
       "en": "Palmilla Bay near San José del Cabo",
-      "author": "Crédit à confirmer par registre d'import",
-      "license": "À valider",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Places With Palms · Palmilla Beach Los Cabos",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.placeswithpalms.com/to-do/cabos-best-beaches",
+      "sourcePage": "https://www.placeswithpalms.com/to-do/cabos-best-beaches"
     },
     "pedregal-cliffs": {
       "src": "/images/travel/los-cabos-premium/destination/pedregal-cliffs.webp",
       "fr": "Falaises de Pedregal sur le Pacifique",
       "en": "Pedregal cliffs on the Pacific coast",
-      "author": "Crédit à confirmer par registre d'import",
-      "license": "À valider",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Alexis Doine",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pedregal_Playa_(Cabo_San_Lucas).jpg"
     },
     "corridor-coast": {
       "src": "/images/travel/los-cabos-premium/destination/corridor-coast.webp",
-      "fr": "Côte entre Cabo San Lucas et San José del Cabo",
-      "en": "Tourist Corridor coastline between Cabo and San José",
-      "author": "Crédit à confirmer par registre d'import",
-      "license": "À valider",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Vue aérienne de Santa María Bay et de Montage Los Cabos, dans le Tourist Corridor",
+      "en": "Aerial view of Santa María Bay and Montage Los Cabos, Tourist Corridor",
+      "author": "Montage Los Cabos · Santa Maria Bay, Tourist Corridor",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.montage.com/loscabos/resort-information/",
+      "sourcePage": "https://www.montage.com/loscabos/resort-information/"
     },
     "puerto-los-cabos": {
       "src": "/images/travel/los-cabos-premium/destination/puerto-los-cabos.webp",
       "fr": "Rivage de Puerto Los Cabos sur la mer de Cortés",
       "en": "Puerto Los Cabos shoreline on the Sea of Cortez",
-      "author": "Crédit à confirmer par registre d'import",
-      "license": "À valider",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Sharon Hahn Darlin",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Puerto_Los_Cabos_(50819196673).jpg"
     },
     "san-jose-art": {
       "src": "/images/travel/los-cabos-premium/destination/san-jose-art.webp",
       "fr": "Centre historique et galeries de San José del Cabo",
       "en": "San José del Cabo historic centre and galleries",
-      "author": "Crédit à confirmer par registre d'import",
-      "license": "À valider",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "kajikawa",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:San_Jos%C3%A9_del_Cabo_-_panoramio_-_kajikawa.jpg"
     },
     "cabo-marina": {
       "src": "/images/travel/los-cabos-premium/destination/cabo-marina.webp",
-      "fr": "Marina de Cabo San Lucas et ses bateaux",
-      "en": "Marina Cabo San Lucas with yachts",
-      "author": "Crédit à confirmer par registre d'import",
-      "license": "À valider",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Vue de la plage bordant la marina de Cabo San Lucas",
+      "en": "Beachfront by Cabo San Lucas Marina",
+      "author": "TurfToe11.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:A_view_of_the_surrounding_beach_of_the_Cabo_San_Lucas_Marina,_27_March_2013.jpg"
     },
     "whales": {
       "src": "/images/travel/los-cabos-premium/destination/whales.webp",
       "fr": "Baleine au large de la Basse-Californie en saison",
       "en": "Whale off Baja California during the migration season",
-      "author": "Crédit à confirmer par registre d'import",
-      "license": "À valider",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ballena_jorobada_(Megaptera_novaeangliae),_Cabo_San_Lucas,_M%C3%A9xico,_2024-12-22,_DD_06.jpg"
     }
   }
 };
