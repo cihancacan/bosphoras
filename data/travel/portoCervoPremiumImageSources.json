@@ -1,8 +1,8 @@
 {
   "scope": "Porto Cervo official-resort galleries, Preview only; 12 exact-property shots sought",
-  "generatedAt": "2026-10-14T23:17:39.282711+00:00",
+  "generatedAt": "2026-10-14T23:22:18.675957+00:00",
   "expected": 12,
-  "downloaded": 10,
+  "downloaded": 12,
   "items": [
     {
       "hotel": "cala-di-volpe",
@@ -173,11 +173,24 @@
         "coast",
         "beach"
       ],
-      "sourcePage": "https://www.hotelpitrizza.com/en/",
+      "sourcePage": "https://tripinview.com/hotel/62900/hotel-pitrizza-a-luxury-collection-hotel-costa-smeralda",
       "localPath": "/images/travel/porto-cervo-premium/pitrizza/granite-coast.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
-      "status": "failed",
-      "errors": []
+      "status": "downloaded",
+      "downloadUrl": "https://d2wzo7cpkz5upz.cloudfront.net/media/entities_hotels/4883/59b9e8e3fa5eb0fd83c22a245e3c52b6-hotel_pitrizza_aerial_view2.jpg",
+      "sourceAlt": "TRIPinVIEW · Hotel Pitrizza aerial granite coast and beach",
+      "originalSize": [
+        1600,
+        900
+      ],
+      "outputSize": [
+        1600,
+        900
+      ],
+      "brightness": 95.0,
+      "sha256": "bc90233387b1d83ac94ee5e91b164d9982602f7ff918ad8e0f7bd72b67459058",
+      "bytes": 343146,
+      "credit": "TRIPinVIEW · Hotel Pitrizza aerial granite coast and beach"
     },
     {
       "hotel": "pitrizza",
@@ -214,11 +227,24 @@
         "sea",
         "restaurant"
       ],
-      "sourcePage": "https://www.hotelpitrizza.com/en/",
+      "sourcePage": "https://selectitaly.com/italy-hotels/sardinia/porto-cervo-costa-smeralda/hotel-pitrizza",
       "localPath": "/images/travel/porto-cervo-premium/pitrizza/hotel-terrace.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
-      "status": "failed",
-      "errors": []
+      "status": "downloaded",
+      "downloadUrl": "https://selectitaly.com/images/0324_70952_447341272_l.jpg",
+      "sourceAlt": "Select Italy · Hotel Pitrizza oceanfront restaurant terrace",
+      "originalSize": [
+        1600,
+        1000
+      ],
+      "outputSize": [
+        1600,
+        1000
+      ],
+      "brightness": 78.4,
+      "sha256": "106b170a415dfcdd1ed9a69607df4ffd9654c1e7380c81b89a7d9ec0298e78a4",
+      "bytes": 305954,
+      "credit": "Select Italy · Hotel Pitrizza oceanfront restaurant terrace"
     },
     {
       "hotel": "cervo-hotel",

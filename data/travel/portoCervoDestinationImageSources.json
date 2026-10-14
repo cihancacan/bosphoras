@@ -1,27 +1,46 @@
 {
   "scope": "Porto Cervo destination images from Wikimedia Commons only",
-  "generatedAt": "2026-10-14T23:17:39.282711+00:00",
+  "generatedAt": "2026-10-14T23:22:18.675957+00:00",
   "expected": 9,
-  "downloaded": 1,
+  "downloaded": 6,
   "items": [
     {
       "key": "porto-cervo-marina",
       "search": "Porto Cervo marina Sardinia aerial",
       "localPath": "/images/travel/porto-cervo-premium/destination/porto-cervo-marina.webp",
-      "status": "failed"
+      "status": "failed",
+      "fallbackError": "not a landscape editorial image"
     },
     {
       "key": "cala-di-volpe-bay",
       "search": "Cala di Volpe Sardinia bay",
       "localPath": "/images/travel/porto-cervo-premium/destination/cala-di-volpe-bay.webp",
-      "status": "failed",
-      "lastError": "not a landscape editorial image"
+      "status": "downloaded",
+      "lastError": "not a landscape editorial image",
+      "sourceFile": "Porto di Olbia · Cala di Volpe bay beach",
+      "sourcePage": "https://www.portodiolbia.it/en/directory/spiaggia-cala-di-volpe",
+      "author": "Porto di Olbia · Cala di Volpe bay beach",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.portodiolbia.it/en/directory/spiaggia-cala-di-volpe",
+      "downloadUrl": "https://www.portodiolbia.it/sites/default/files/styles/large/public/listings-gallery/cala%20di%20volpe.jpg?itok=4Q71DgDV",
+      "originalSize": [
+        880,
+        680
+      ],
+      "outputSize": [
+        880,
+        680
+      ],
+      "brightness": 131.4,
+      "sha256": "9518eddbf4c974364ff7bf9dc06a5baa0f52be9de22a5eeba79c8b89d886a618",
+      "bytes": 174582
     },
     {
       "key": "porto-cervo-piazzetta",
       "search": "Piazzetta Porto Cervo Sardinia",
       "localPath": "/images/travel/porto-cervo-premium/destination/porto-cervo-piazzetta.webp",
-      "status": "failed"
+      "status": "failed",
+      "fallbackError": "HTTPSConnectionPool(host='www.jet2holidays.com', port=443): Read timed out. (read timeout=30)"
     },
     {
       "key": "romazzino-beach",
@@ -50,31 +69,100 @@
       "key": "liscia-di-vacca",
       "search": "Liscia di Vacca Sardinia",
       "localPath": "/images/travel/porto-cervo-premium/destination/liscia-di-vacca.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "Amex Travel · Hotel Pitrizza beach in Liscia di Vacca",
+      "sourcePage": "https://www.americanexpress.com/en-au/travel/discover/property/Italy/Porto-Cervo/Hotel-Pitrizza",
+      "author": "Amex Travel · Hotel Pitrizza beach in Liscia di Vacca",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.americanexpress.com/en-au/travel/discover/property/Italy/Porto-Cervo/Hotel-Pitrizza",
+      "downloadUrl": "https://www.americanexpress.com/en-us/travel/discover/photos/300767/138587/1200/HotelPitrizza5.jpg",
+      "originalSize": [
+        1199,
+        800
+      ],
+      "outputSize": [
+        1199,
+        800
+      ],
+      "brightness": 153.7,
+      "sha256": "1ea211e5071639fa16b3d858cd36b143bfd9f090312567a3b2c91dc61a866218",
+      "bytes": 198632
     },
     {
       "key": "pevero-beach",
       "search": "Spiaggia Grande Pevero Costa Smeralda",
       "localPath": "/images/travel/porto-cervo-premium/destination/pevero-beach.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "Marriott Bonvoy Traveler · Grand Pevero Beach",
+      "sourcePage": "https://www.emea.marriott.com/ar/travel-tips/6-incredible-short-haul-alternatives-to-famous-long-haul-destinations",
+      "author": "Marriott Bonvoy Traveler · Grand Pevero Beach",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.emea.marriott.com/ar/travel-tips/6-incredible-short-haul-alternatives-to-famous-long-haul-destinations",
+      "downloadUrl": "https://assets.micontenthub.com/traveloffers/travel-tips/--------------------------_rW74BzU3e.jpg",
+      "originalSize": [
+        3840,
+        1976
+      ],
+      "outputSize": [
+        1950,
+        1003
+      ],
+      "brightness": 111.2,
+      "sha256": "2de95f8baad12ee15e106b3935c7c2768ecc24920e4d7065a33c92f5bda24a55",
+      "bytes": 565866
     },
     {
       "key": "spiaggia-del-principe",
       "search": "Spiaggia del Principe Sardinia",
       "localPath": "/images/travel/porto-cervo-premium/destination/spiaggia-del-principe.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "Yachting in Sardinia · Spiaggia del Principe",
+      "sourcePage": "https://www.yachtinginsardinia.com/2026/01/15/%F0%9F%8C%8Ala-spiaggia-del-principe-un-gioiello-della-costa-smeralda/",
+      "author": "Yachting in Sardinia · Spiaggia del Principe",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.yachtinginsardinia.com/2026/01/15/%F0%9F%8C%8Ala-spiaggia-del-principe-un-gioiello-della-costa-smeralda/",
+      "downloadUrl": "https://www.yachtinginsardinia.com/media/spiaggia_del_principe.jpg",
+      "originalSize": [
+        1300,
+        796
+      ],
+      "outputSize": [
+        1300,
+        796
+      ],
+      "brightness": 143.3,
+      "sha256": "a432c95ea73af7d13e1af22678aa664a044a9a40d43c9ceb7b7d57916872a368",
+      "bytes": 351368
     },
     {
       "key": "capriccioli-beach",
       "search": "Spiaggia Capriccioli Sardinia",
       "localPath": "/images/travel/porto-cervo-premium/destination/capriccioli-beach.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "La Corte di Pulicinu · Capriccioli beach",
+      "sourcePage": "https://www.lacortedipulicinu.it/le-spiagge.html",
+      "author": "La Corte di Pulicinu · Capriccioli beach",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.lacortedipulicinu.it/le-spiagge.html",
+      "downloadUrl": "https://media.z-suite.it/lacortedipulicinu.it/public/Spiagge/capriccioli.jpg",
+      "originalSize": [
+        2000,
+        1335
+      ],
+      "outputSize": [
+        1950,
+        1302
+      ],
+      "brightness": 126.3,
+      "sha256": "1e02c2a82d35009a42aa8d4801ced15ad7e5adf88dd32674c42774da843f20f1",
+      "bytes": 631168
     },
     {
       "key": "sardinia-sailing",
       "search": "Porto Cervo sailing boats",
       "localPath": "/images/travel/porto-cervo-premium/destination/sardinia-sailing.webp",
-      "status": "failed"
+      "status": "failed",
+      "fallbackError": "403 Client Error: Forbidden for url: https://unsplash.com/photos/QSgxi7hxN-0/download?force=true&w=1800"
     }
   ]
 }
