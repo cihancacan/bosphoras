@@ -177,14 +177,14 @@ PREFERRED_MEDIA={
  ("cervo-hotel","marina-view"): ["https://static.charmingsardinia.com/hotels/7553/gallery/files/hotel-cervo-portcervo05.jpg","https://www.charmingsardinia.com/sardaigne/cervo","Charming Sardinia · Cervo Hotel overlooking Porto Cervo marina"],
 }
 DIRECT_DEST={
- "porto-cervo-marina":["https://images.pexels.com/photos/27916102/pexels-photo-27916102.jpeg?auto=compress&cs=tinysrgb&w=1800","https://www.pexels.com/photo/porto-cervo-italy-sardegna-27916102/","Jakub Krystkiewicz · Porto Cervo yacht marina"],
+ "porto-cervo-marina":["https://static.wixstatic.com/media/9c8337_13a5034f77b443b18c41b8dc11d44d34~mv2.webp","https://www.yachtandservicesardinia.com/luxury-yacht-charter-sardinia","Yacht and Service Sardinia · aerial Porto Cervo marina"],
  "cala-di-volpe-bay":["https://www.portodiolbia.it/sites/default/files/styles/large/public/listings-gallery/cala%20di%20volpe.jpg?itok=4Q71DgDV","https://www.portodiolbia.it/en/directory/spiaggia-cala-di-volpe","Porto di Olbia · Cala di Volpe bay beach"],
- "porto-cervo-piazzetta":["https://www.jet2holidays.com/-/media/olb0012_piazzetta.jpg?crop=0&h=950&w=1450","https://www.jet2holidays.com/destinations/italy/sardinia/porto-cervo","Jet2 Holidays · Porto Cervo Piazzetta"],
+ "porto-cervo-piazzetta":["https://cdn.immobilsarda.com/img_localita/large/9039383.jpg","https://www.immobilsarda.com/en/localita/107-porto-cervo.html","ImmobilSarda · Porto Cervo village promenade"],
  "liscia-di-vacca":["https://www.americanexpress.com/en-us/travel/discover/photos/300767/138587/1200/HotelPitrizza5.jpg","https://www.americanexpress.com/en-au/travel/discover/property/Italy/Porto-Cervo/Hotel-Pitrizza","Amex Travel · Hotel Pitrizza beach in Liscia di Vacca"],
  "pevero-beach":["https://assets.micontenthub.com/traveloffers/travel-tips/--------------------------_rW74BzU3e.jpg","https://www.emea.marriott.com/ar/travel-tips/6-incredible-short-haul-alternatives-to-famous-long-haul-destinations","Marriott Bonvoy Traveler · Grand Pevero Beach"],
  "spiaggia-del-principe":["https://www.yachtinginsardinia.com/media/spiaggia_del_principe.jpg","https://www.yachtinginsardinia.com/2026/01/15/%F0%9F%8C%8Ala-spiaggia-del-principe-un-gioiello-della-costa-smeralda/","Yachting in Sardinia · Spiaggia del Principe"],
  "capriccioli-beach":["https://media.z-suite.it/lacortedipulicinu.it/public/Spiagge/capriccioli.jpg","https://www.lacortedipulicinu.it/le-spiagge.html","La Corte di Pulicinu · Capriccioli beach"],
- "sardinia-sailing":["https://unsplash.com/photos/QSgxi7hxN-0/download?force=true&w=1800","https://unsplash.com/photos/an-aerial-view-of-a-boat-in-the-ocean-QSgxi7hxN-0","Ilan Dray · yacht off Porto Cervo, Unsplash"],
+ "sardinia-sailing":["https://media.rolex.com/image/upload/q_auto%3Aeco/f_auto/c_limit%2Cw_2440/v1785337224/rolexcom/rolex-events/sports/yachting/maxi-yacht-cup/rolex-events-sports-yaching-maxi-yacht-rolex-cup-cover_maxi_2509cb_13023756","https://www.rolex.com/en-us/rolex-event/yachting/maxi-yacht-rolex-cup","Rolex · Maxi Yacht Rolex Cup off Porto Cervo"],
 }
 DEST=[
   [
