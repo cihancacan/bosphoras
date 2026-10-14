@@ -1,0 +1,147 @@
+{
+  "scope": "Saint-Barthélemy destination images from Wikimedia Commons only",
+  "generatedAt": "2026-10-14T22:48:25.879234+00:00",
+  "expected": 9,
+  "downloaded": 5,
+  "items": [
+    {
+      "key": "gustavia-aerial",
+      "search": "Gustavia Saint Barthelemy aerial",
+      "localPath": "/images/travel/saint-barthelemy-premium/destination/gustavia-aerial.webp",
+      "status": "failed"
+    },
+    {
+      "key": "colombier-bay",
+      "search": "Colombier beach Saint Barthelemy",
+      "localPath": "/images/travel/saint-barthelemy-premium/destination/colombier-bay.webp",
+      "status": "downloaded",
+      "sourceFile": "File:Anse Colombier anchorage, St. Barths - panoramio.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Anse_Colombier_anchorage,_St._Barths_-_panoramio.jpg",
+      "author": "SV Zanshin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Anse_Colombier_anchorage%2C_St._Barths_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "originalSize": [
+        1920,
+        1272
+      ],
+      "outputSize": [
+        1920,
+        1272
+      ],
+      "brightness": 118.4,
+      "sha256": "00ae0c9cc290eec0a4b4a43b19ab42f49a6b2a26f054381713c84d4e8e04334e",
+      "bytes": 605208
+    },
+    {
+      "key": "flamands-beach",
+      "search": "Flamands beach St Barts",
+      "localPath": "/images/travel/saint-barthelemy-premium/destination/flamands-beach.webp",
+      "status": "failed"
+    },
+    {
+      "key": "st-jean-bay",
+      "search": "Saint Jean Bay St Barthelemy",
+      "localPath": "/images/travel/saint-barthelemy-premium/destination/st-jean-bay.webp",
+      "status": "failed"
+    },
+    {
+      "key": "gustavia-streets",
+      "search": "Gustavia St Barts street",
+      "localPath": "/images/travel/saint-barthelemy-premium/destination/gustavia-streets.webp",
+      "status": "downloaded",
+      "sourceFile": "File:2020-01-24 SEADREAM II - IMO 8203440, off Gustavia, Saint Barthélemy (St. Barts).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2020-01-24_SEADREAM_II_-_IMO_8203440,_off_Gustavia,_Saint_Barth%C3%A9lemy_(St._Barts).jpg",
+      "author": "Gordon Leggett",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/2020-01-24_SEADREAM_II_-_IMO_8203440%2C_off_Gustavia%2C_Saint_Barth%C3%A9lemy_%28St._Barts%29.jpg/1920px-2020-01-24_SEADREAM_II_-_IMO_8203440%2C_off_Gustavia%2C_Saint_Barth%C3%A9lemy_%28St._Barts%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1282
+      ],
+      "outputSize": [
+        1920,
+        1282
+      ],
+      "brightness": 160.8,
+      "sha256": "82a24d9805b6e04cf1b139c43cb6364ae1573f2f603f4b62fd5ece113e7a8b8e",
+      "bytes": 415468
+    },
+    {
+      "key": "grand-cul-de-sac",
+      "search": "Grand Cul de Sac St Barthelemy",
+      "localPath": "/images/travel/saint-barthelemy-premium/destination/grand-cul-de-sac.webp",
+      "status": "downloaded",
+      "sourceFile": "File:La Tortue island offshore from Anse de Grand Cul-de-Sac on St. Barthelemy, French West Indies - panoramio.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:La_Tortue_island_offshore_from_Anse_de_Grand_Cul-de-Sac_on_St._Barthelemy,_French_West_Indies_-_panoramio.jpg",
+      "author": "David Broad",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/La_Tortue_island_offshore_from_Anse_de_Grand_Cul-de-Sac_on_St._Barthelemy%2C_French_West_Indies_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "originalSize": [
+        1500,
+        1146
+      ],
+      "outputSize": [
+        1500,
+        1146
+      ],
+      "brightness": 118.5,
+      "sha256": "0ffa4d3d8b202f38aadb9a14a95def885d1d7ce4527b6c92ac2130a5c72f4789",
+      "bytes": 258356
+    },
+    {
+      "key": "toiny-coast",
+      "search": "Anse Toiny Saint Barthelemy",
+      "localPath": "/images/travel/saint-barthelemy-premium/destination/toiny-coast.webp",
+      "status": "downloaded",
+      "sourceFile": "File:St. Barthelemy - Anse de Toiny from Nureyev House - panoramio.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:St._Barthelemy_-_Anse_de_Toiny_from_Nureyev_House_-_panoramio.jpg",
+      "author": "David Broad",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/85/St._Barthelemy_-_Anse_de_Toiny_from_Nureyev_House_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "originalSize": [
+        1536,
+        990
+      ],
+      "outputSize": [
+        1536,
+        990
+      ],
+      "brightness": 123.8,
+      "sha256": "7b59956417c9dc458e4f4254c2d71bd5cd94e6c49da014565e2d8d7310a82dd4",
+      "bytes": 225032
+    },
+    {
+      "key": "saline-beach",
+      "search": "Saline Beach Saint Barthelemy",
+      "localPath": "/images/travel/saint-barthelemy-premium/destination/saline-beach.webp",
+      "status": "downloaded",
+      "sourceFile": "File:The best beach in the world - Saline Beach on St. Barthelemy FWI - panoramio.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_best_beach_in_the_world_-_Saline_Beach_on_St._Barthelemy_FWI_-_panoramio.jpg",
+      "author": "David Broad",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/The_best_beach_in_the_world_-_Saline_Beach_on_St._Barthelemy_FWI_-_panoramio.jpg/1920px-The_best_beach_in_the_world_-_Saline_Beach_on_St._Barthelemy_FWI_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        758
+      ],
+      "outputSize": [
+        1920,
+        758
+      ],
+      "brightness": 138.3,
+      "sha256": "4dbd150f5decb20ed960877a03b5abceef481aa18161ce72b3ee27ec023a4c64",
+      "bytes": 261514
+    },
+    {
+      "key": "saint-barth-sailing",
+      "search": "Saint Barthelemy sailboat Gustavia",
+      "localPath": "/images/travel/saint-barthelemy-premium/destination/saint-barth-sailing.webp",
+      "status": "failed"
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "scope": "Saint-Barthélemy official-resort galleries, Preview only; 12 exact-property shots sought",
+  "generatedAt": "2026-10-14T22:48:25.879234+00:00",
+  "expected": 12,
+  "downloaded": 8,
+  "items": [
+    {
+      "hotel": "cheval-blanc",
+      "key": "flamands-view",
+      "scene": [
+        "flamands",
+        "beach",
+        "isle de france"
+      ],
+      "sourcePage": "https://www.fivestaralliance.com/gallery/cheval-blanc-st-barth-isle-de-france-gallery-images",
+      "localPath": "/images/travel/saint-barthelemy-premium/cheval-blanc/flamands-view.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2013/22323/22323_4_chevalblancsaintbarth_fsa-g.jpg?itok=dEhpG7GS",
+      "sourceAlt": "Flamands Beach at Cheval Blanc Saint-Barth, French West Indies",
+      "originalSize": [
+        1000,
+        667
+      ],
+      "outputSize": [
+        1000,
+        667
+      ],
+      "brightness": 156.2,
+      "sha256": "3d5605a9d1fd17726e6e713105f31099aa7888a2fef1865ff8ae0c418389e2c2",
+      "bytes": 44226,
+      "credit": "Cheval Blanc St-Barth Isle de France · official website"
+    },
+    {
+      "hotel": "cheval-blanc",
+      "key": "beach-suite",
+      "scene": [
+        "suite",
+        "beach",
+        "room"
+      ],
+      "sourcePage": "https://www.fivestaralliance.com/gallery/cheval-blanc-st-barth-isle-de-france-gallery-images",
+      "localPath": "/images/travel/saint-barthelemy-premium/cheval-blanc/beach-suite.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2013/22323/22323_8_chevalblancsaintbarth_fsa-g.jpg?itok=dWBJtooT",
+      "sourceAlt": "Beach Suite Living Room at Cheval Blanc Saint-Barth, French West Indies",
+      "originalSize": [
+        1000,
+        667
+      ],
+      "outputSize": [
+        1000,
+        667
+      ],
+      "brightness": 176.6,
+      "sha256": "5d13bc143d448eca62b8666c5d787923d0245d07ab32dc977993ed436340200c",
+      "bytes": 75564,
+      "credit": "Cheval Blanc St-Barth Isle de France · official website"
+    },
+    {
+      "hotel": "cheval-blanc",
+      "key": "restaurant",
+      "scene": [
+        "restaurant",
+        "cabane",
+        "case",
+        "dining"
+      ],
+      "sourcePage": "https://www.fivestaralliance.com/gallery/cheval-blanc-st-barth-isle-de-france-gallery-images",
+      "localPath": "/images/travel/saint-barthelemy-premium/cheval-blanc/restaurant.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2013/22323/22323_1_chevalblancsaintbarth_fsa-g.jpg?itok=mQxvKVSy",
+      "sourceAlt": "La Cabane de lIsle at Cheval Blanc Saint-Barth, French West Indies",
+      "originalSize": [
+        1000,
+        667
+      ],
+      "outputSize": [
+        1000,
+        667
+      ],
+      "brightness": 172.5,
+      "sha256": "58a9f06632fe2f785b217d3a3f9682d42849855ee9178e0266e28a3ec542ebea",
+      "bytes": 124220,
+      "credit": "Cheval Blanc St-Barth Isle de France · official website"
+    },
+    {
+      "hotel": "eden-rock",
+      "key": "headland",
+      "scene": [
+        "hotel",
+        "exterior",
+        "aerial",
+        "rock"
+      ],
+      "sourcePage": "https://www.oetkerhotels.com/hotels/eden-rock-st-barths/gallery/",
+      "localPath": "/images/travel/saint-barthelemy-premium/eden-rock/headland.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "failed",
+      "errors": []
+    },
+    {
+      "hotel": "eden-rock",
+      "key": "villa-suite",
+      "scene": [
+        "suite",
+        "accommodation",
+        "room"
+      ],
+      "sourcePage": "https://www.oetkerhotels.com/hotels/eden-rock-st-barths/gallery/",
+      "localPath": "/images/travel/saint-barthelemy-premium/eden-rock/villa-suite.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "failed",
+      "errors": []
+    },
+    {
+      "hotel": "eden-rock",
+      "key": "sand-bar",
+      "scene": [
+        "sand bar",
+        "beach bar",
+        "restaurant"
+      ],
+      "sourcePage": "https://www.oetkerhotels.com/hotels/eden-rock-st-barths/gallery/",
+      "localPath": "/images/travel/saint-barthelemy-premium/eden-rock/sand-bar.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "failed",
+      "errors": []
+    },
+    {
+      "hotel": "le-toiny",
+      "key": "pool-villa",
+      "scene": [
+        "villa",
+        "suite",
+        "pool"
+      ],
+      "sourcePage": "https://letoiny.com/",
+      "localPath": "/images/travel/saint-barthelemy-premium/le-toiny/pool-villa.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://letoiny.com/wp-content/uploads/2026/02/photo-suites-scaled.jpg",
+      "sourceAlt": "",
+      "originalSize": [
+        2560,
+        1707
+      ],
+      "outputSize": [
+        1950,
+        1300
+      ],
+      "brightness": 170.6,
+      "sha256": "f81b9414da53c7357175b00ea83a7b2e281b8a55b7bf95745310fe7ed93ec833",
+      "bytes": 233314,
+      "credit": "Hôtel Le Toiny · official website"
+    },
+    {
+      "hotel": "le-toiny",
+      "key": "toiny-view",
+      "scene": [
+        "ocean",
+        "beach",
+        "view"
+      ],
+      "sourcePage": "https://letoiny.com/",
+      "localPath": "/images/travel/saint-barthelemy-premium/le-toiny/toiny-view.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://letoiny.com/wp-content/uploads/2026/02/1771614040488_cpfyz3_photo-beach-club-new.jpg",
+      "sourceAlt": "",
+      "originalSize": [
+        1440,
+        960
+      ],
+      "outputSize": [
+        1440,
+        960
+      ],
+      "brightness": 130.4,
+      "sha256": "83f90fe4e3dd2262d50b8be3725808cbc1679317e54ec065d48e0635970a6d0a",
+      "bytes": 347432,
+      "credit": "Hôtel Le Toiny · official website"
+    },
+    {
+      "hotel": "le-toiny",
+      "key": "beach-club",
+      "scene": [
+        "beach club",
+        "club",
+        "restaurant"
+      ],
+      "sourcePage": "https://letoiny.com/",
+      "localPath": "/images/travel/saint-barthelemy-premium/le-toiny/beach-club.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://letoiny.com/wp-content/uploads/2026/02/1771614040488_cpfyz3_photo-beach-club-new-1400x933.jpg",
+      "sourceAlt": "",
+      "originalSize": [
+        1400,
+        933
+      ],
+      "outputSize": [
+        1400,
+        933
+      ],
+      "brightness": 130.4,
+      "sha256": "18390f54b62345c0a6beeb0471c9c0c3cb74cf1fdb2ec58bf06dd13cb88da33a",
+      "bytes": 263390,
+      "credit": "Hôtel Le Toiny · official website"
+    },
+    {
+      "hotel": "rosewood-guanahani",
+      "key": "lagoon-resort",
+      "scene": [
+        "lagoon",
+        "exterior",
+        "resort"
+      ],
+      "sourcePage": "https://www.rosewoodhotels.com/en/le-guanahani/overview/gallery",
+      "localPath": "/images/travel/saint-barthelemy-premium/rosewood-guanahani/lagoon-resort.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://images.rosewoodhotels.com/is/image/rwhg/heroshot-punta-bonita-pool-and-beach-1",
+      "sourceAlt": "property resort",
+      "originalSize": [
+        3000,
+        2003
+      ],
+      "outputSize": [
+        1950,
+        1302
+      ],
+      "brightness": 178.3,
+      "sha256": "9ddc5dbeb560ced4c8fd467d5e9285206dc140c02d2dfd2fe253e37b2f60801e",
+      "bytes": 277910,
+      "credit": "Rosewood Le Guanahani St. Barth · official website"
+    },
+    {
+      "hotel": "rosewood-guanahani",
+      "key": "pool-suite",
+      "scene": [
+        "suite",
+        "pool",
+        "ocean"
+      ],
+      "sourcePage": "https://www.rosewoodhotels.com/en/le-guanahani/overview/gallery",
+      "localPath": "/images/travel/saint-barthelemy-premium/rosewood-guanahani/pool-suite.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://picasso.rosewoodhotelgroup.com/transform/ef2109bc-9415-4902-9c93-1d7eeb31e373/RWMDR_Facilities_Suite_Ocean-View-Mountain-Studio-Suite_Bedroom-with-Terrace-and-Pool?io=overlay:box",
+      "sourceAlt": "More Rosewood",
+      "originalSize": [
+        2000,
+        1500
+      ],
+      "outputSize": [
+        1933,
+        1450
+      ],
+      "brightness": 255.0,
+      "sha256": "63367979ceabb9f6ccdfed7264a9396abcbf8f5d58422f2d92f5818882b57213",
+      "bytes": 5074,
+      "credit": "Rosewood Le Guanahani St. Barth · official website"
+    },
+    {
+      "hotel": "rosewood-guanahani",
+      "key": "sense-spa",
+      "scene": [
+        "spa",
+        "wellness",
+        "sense"
+      ],
+      "sourcePage": "https://www.rosewoodhotels.com/en/le-guanahani/overview/gallery",
+      "localPath": "/images/travel/saint-barthelemy-premium/rosewood-guanahani/sense-spa.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "failed",
+      "errors": [
+        "cannot identify image file <_io.BytesIO object at 0x7f243a210630>",
+        "cannot identify image file <_io.BytesIO object at 0x7f243a210630>",
+        "cannot identify image file <_io.BytesIO object at 0x7f243ac16f70>",
+        "cannot identify image file <_io.BytesIO object at 0x7f243ac16f70>"
+      ]
+    }
+  ]
+}
