@@ -34,8 +34,8 @@ PREFERRED_MEDIA={
   "https://cdn.audleytravel.com/1600/1142/60/371694-beach-villa-four-seasons-resort-koh-samui.jpg",
   "https://www.audleytravel.com/us/thailand","Audley Travel · Four Seasons Koh Samui pool villa"),
  ("four-seasons","beach"):(
-  "https://images.squarespace-cdn.com/content/v1/654e445a0e2d9a21ad1ae737/1740079904772-ROC9GWO43BBOT2C01UYI/364106231_684983757005766_3226165556401945860_n.jpg",
-  "https://www.thehelloagency.com/travel-journal/live-your-white-lotus-fantasy-at-four-seasons-resort-koh-samui","The Hello Agency · Four Seasons beachfront villa"),
+  "https://www.chase.com/content/dam/unified-assets/photography/articles/travel/hotels/spotlights/four-seasons-koh-samui/four_seasons_koh_samui_beach_aerial_overview_bd_2502_16x9_web.jpg",
+  "https://www.chase.com/travel/guide/hotels/four-seasons-koh-samui-review","Chase Travel · Four Seasons Koh Samui aerial beach and hillside"),
  ("four-seasons","dining"):(
   "https://media.privileges-voyages.com/resizer/r/1600-900-1-100/medias/mediatheque/produits/NWL429/Four-Seasons-Koh-Samui-Thailande-Soiree.jpg",
   "https://www.privileges-voyages.com/sejour/q/sejour-sur-mesure-luxe-en-thailande-au-four-seasons-koh-samui","Privilèges Voyages · Four Seasons beachfront dining"),
