@@ -1,8 +1,8 @@
 {
   "scope": "Koh Samui destination images from Wikimedia Commons only",
-  "generatedAt": "2026-10-14T21:37:37.965196+00:00",
+  "generatedAt": "2026-10-14T21:42:46.757939+00:00",
   "expected": 9,
-  "downloaded": 7,
+  "downloaded": 9,
   "items": [
     {
       "key": "maenam-beach",
@@ -31,7 +31,24 @@
       "key": "taling-ngam-sunset",
       "search": "Taling Ngam Koh Samui",
       "localPath": "/images/travel/koh-samui-premium/destination/taling-ngam-sunset.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "Five Islands Beach House · Taling Ngam coast",
+      "sourcePage": "https://www.fiveislandssamui.com/location",
+      "author": "Five Islands Beach House · Taling Ngam coast",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.fiveislandssamui.com/location",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/5fe004ec879a260806859939/1608516911937-7HT4MG7OBCTA9I1CPMWZ/the-beach-3_40790833753_o.jpg",
+      "originalSize": [
+        2500,
+        1663
+      ],
+      "outputSize": [
+        1950,
+        1297
+      ],
+      "brightness": 149.0,
+      "sha256": "2f540f38f869fdb38d03101b0e32bf6d2f78a293d0e5d755595c677f5500f6a3",
+      "bytes": 202814
     },
     {
       "key": "plai-laem",
@@ -83,7 +100,24 @@
       "key": "bophut-fishermans",
       "search": "Bophut Fisherman Village Koh Samui",
       "localPath": "/images/travel/koh-samui-premium/destination/bophut-fishermans.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "Karpe Diem Villa · Fisherman's Village waterfront",
+      "sourcePage": "https://karpediemvilla.com/fishermans-village.php",
+      "author": "Karpe Diem Villa · Fisherman's Village waterfront",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://karpediemvilla.com/fishermans-village.php",
+      "downloadUrl": "https://karpediemvilla.com/images/attractions/fishermans-village.jpg",
+      "originalSize": [
+        1076,
+        717
+      ],
+      "outputSize": [
+        1076,
+        717
+      ],
+      "brightness": 130.1,
+      "sha256": "5959c6040e4646c1384e160711418534c60868576c4f58e9a86a289230edb6b8",
+      "bytes": 156614
     },
     {
       "key": "ang-thong",
