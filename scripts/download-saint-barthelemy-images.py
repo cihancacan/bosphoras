@@ -167,8 +167,18 @@ HOTELS={
     "seeds": []
   }
 }
-PREFERRED_MEDIA={}
-DIRECT_DEST={}
+PREFERRED_MEDIA={
+ ("eden-rock","headland"):["https://images.squarespace-cdn.com/content/v1/5ecc37f9dfb4ed54d3ff98e4/1594580983948-9YSFK8H0RRWS36ID938V/Eden%2BRock%2B-%2BSt%2BBarths%2B-%2BHuffman%2BTravel.jpg","https://www.huffmantravel.com/tidbits/the-rock-is-back-eden-rock-st-barths","Huffman Travel · Eden Rock St Barths aerial hotel and Saint Jean beach"],
+ ("eden-rock","villa-suite"):["https://images.eu.ctfassets.net/og3b0tarlg4b/3Qb409Wg05QVKxrBmKPrJ7/1035bf5bca882ab66dd532d419201bca/room-ROC-image-Eden_Rock_-_Colibri_-_Jeanne_LE_MENN_S.jpg?fit=fill&fm=jpg&h=1450&w=1900","https://www.oetkerhotels.com/hotels/eden-rock-st-barths/accommodations/rooms-suites/rock-rooms/gallery/","Oetker Hotels · Eden Rock Colibri Rock Room"],
+ ("eden-rock","sand-bar"):["https://images.eu.ctfassets.net/og3b0tarlg4b/4jqBnZeFjIp043Fvn8pStg/fb4430d8abd84775b2c19afda9f8ec79/Sand_Bar_with_Jean-Georges.jpg?fit=fill&fm=jpg&h=762&w=1024","https://www.oetkerhotels.com/hotels/eden-rock-st-barths/restaurants-bars/sand-bar-eden/","Oetker Hotels · Eden Rock Sand Bar"],
+ ("rosewood-guanahani","sense-spa"):["https://picasso.rosewoodhotelgroup.com/transform/89faf417-c8ec-4b7f-bbf4-19030fc31dc4/RWLGH_wellness_sensespa_treatmentroom","https://www.rosewoodhotels.com/en/le-guanahani/wellness/spa/treatment-menu","Rosewood Hotels · Sense Spa treatment room"],
+}
+DIRECT_DEST={
+ "gustavia-aerial":["https://www.saintbarth-tourisme.com/wp-content/uploads/2023/10/Gustavia___31121_2-scaled.jpg","https://www.saintbarth-tourisme.com/en/destination-item/gustavia-st-barts/","Saint Barth Tourism · aerial Gustavia harbour"],
+ "flamands-beach":["https://www.antillesexception.com/var/exv/storage/images/_aliases/embed1020x680/media/images/guide-touristique-de-saint-barth/plages/plage-de-flamands/plage-de-flamands-saint-barthelemy/31067729-1-fre-FR/Plage-de-Flamands-Saint-Barthelemy.jpg","https://www.antillesexception.com/location-villa/saint-barth/Splendide-villa-pieds-dans-l-eau-SBFL02","Antilles Exception · Flamands beach"],
+ "st-jean-bay":["https://www.luxethika.com/wp-content/uploads/2020/08/St-Barth-Eden-Rock-Aerial-2-1540-880.jpg","https://www.luxethika.com/destinations/iles/saint-barthelemy/baie-de-st-jean/voir/eden-rock/","Luxethika · Saint Jean Bay with Eden Rock"],
+ "saint-barth-sailing":["https://img.marinas.com/v2/9d190efcd28a27a36f29b75b97ee4a82d04008ce1602b6ea780f13e87dcbd929.jpg","https://marinas.com/view/marina/mncvq5_Gustavia_Port_Marina_St_Barts_Guadeloupe","Marinas.com · Gustavia yachts and sailboats"],
+}
 DEST=[
   [
     "gustavia-aerial",
