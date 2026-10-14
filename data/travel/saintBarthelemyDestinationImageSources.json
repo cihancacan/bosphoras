@@ -1,15 +1,31 @@
 {
   "scope": "Saint-Barthélemy destination images from Wikimedia Commons only",
-  "generatedAt": "2026-10-14T22:50:29.573715+00:00",
+  "generatedAt": "2026-10-14T22:52:56.597350+00:00",
   "expected": 9,
-  "downloaded": 8,
+  "downloaded": 9,
   "items": [
     {
       "key": "gustavia-aerial",
       "search": "Gustavia Saint Barthelemy aerial",
       "localPath": "/images/travel/saint-barthelemy-premium/destination/gustavia-aerial.webp",
-      "status": "failed",
-      "fallbackError": "404 Client Error: Not Found for url: https://www.saintbarth-tourisme.com/wp-content/uploads/2023/10/Gustavia___31121_2-scaled.jpg"
+      "status": "downloaded",
+      "sourceFile": "Lagoon Group · aerial Gustavia harbour",
+      "sourcePage": "https://www.lagoongroup.com/destinations/saint-barthelemy",
+      "author": "Lagoon Group · aerial Gustavia harbour",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.lagoongroup.com/destinations/saint-barthelemy",
+      "downloadUrl": "https://cdn.prod.website-files.com/6480865ca5f310b312eb7419/650853a56f7b980a9c9f8a09_saintbarth4.webp",
+      "originalSize": [
+        1366,
+        911
+      ],
+      "outputSize": [
+        1366,
+        911
+      ],
+      "brightness": 112.7,
+      "sha256": "6b3e7fea6163475b0a66f232e2d5359f36cd5ff604fd0d808705c7d2317fd443",
+      "bytes": 232452
     },
     {
       "key": "colombier-bay",
@@ -85,23 +101,23 @@
       "search": "Gustavia St Barts street",
       "localPath": "/images/travel/saint-barthelemy-premium/destination/gustavia-streets.webp",
       "status": "downloaded",
-      "sourceFile": "File:2020-01-24 SEADREAM II - IMO 8203440, off Gustavia, Saint Barthélemy (St. Barts).jpg",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:2020-01-24_SEADREAM_II_-_IMO_8203440,_off_Gustavia,_Saint_Barth%C3%A9lemy_(St._Barts).jpg",
-      "author": "Gordon Leggett",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/2020-01-24_SEADREAM_II_-_IMO_8203440%2C_off_Gustavia%2C_Saint_Barth%C3%A9lemy_%28St._Barts%29.jpg/1920px-2020-01-24_SEADREAM_II_-_IMO_8203440%2C_off_Gustavia%2C_Saint_Barth%C3%A9lemy_%28St._Barts%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceFile": "TravelAwaits · cobbled Gustavia shopping street",
+      "sourcePage": "https://www.travelawaits.com/2718805/st-barts-best-things-to-do/",
+      "author": "TravelAwaits",
+      "license": "Client-stated authorisation; third-party commercial reuse to verify",
+      "licenseUrl": "https://www.travelawaits.com/2718805/st-barts-best-things-to-do/",
+      "downloadUrl": "https://i0.wp.com/travelawaits.com/wp-content/uploads/2021/12/gustavia-street.jpg?resize=1024%2C684&ssl=1",
       "originalSize": [
-        1920,
-        1282
+        1024,
+        684
       ],
       "outputSize": [
-        1920,
-        1282
+        1024,
+        684
       ],
-      "brightness": 160.8,
-      "sha256": "82a24d9805b6e04cf1b139c43cb6364ae1573f2f603f4b62fd5ece113e7a8b8e",
-      "bytes": 415468
+      "brightness": 108.5,
+      "sha256": "f7cdf6b5ba2285b29d828e733a384c17f0dd216b81ab599556e91ddde9797e25",
+      "bytes": 183574
     },
     {
       "key": "grand-cul-de-sac",
