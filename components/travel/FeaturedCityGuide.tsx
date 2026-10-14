@@ -279,6 +279,27 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         </article>)}
       </div>
     </section>
+    {city.slug==='koh-samui' && <section id="explorer-koh-samui" className="bg-[#f1ece2] py-16 sm:py-20">
+      <div className="mx-auto max-w-7xl px-5">
+        <p className="text-xs uppercase tracking-[.2em] text-[#9a744a]">{fr?'Plus loin que votre villa':'Beyond your villa'}</p>
+        <h2 className="mt-4 max-w-4xl font-serif text-3xl sm:text-5xl">{fr?'Quatre autres façons de découvrir Koh Samui.':'Four more sides of Koh Samui to explore.'}</h2>
+        <p className="mt-5 max-w-3xl text-sm leading-7 text-[#53646c]">{fr
+          ?'Derrière les piscines privées, Koh Samui révèle ses temples, son archipel protégé et des rivages aux ambiances très différentes. Choisissez vos excursions selon la saison, la météo et votre envie de bouger.'
+          :'Beyond private pools, Samui reveals temples, protected island scenery and coastlines with very different moods. Choose excursions to suit the season, sea conditions and your pace.'}</p>
+        <div className="mt-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {([
+            {key:'ang-thong',fr:'L’archipel d’Ang Thong',en:'Ang Thong islands',frDetail:'Sortie en mer à préparer selon la météo et les conditions du parc marin.',enDetail:'Plan a boat excursion around the weather and marine-park conditions.'},
+            {key:'big-buddha',fr:'Le temple du Grand Bouddha',en:'Big Buddha temple',frDetail:'Une parenthèse culturelle à découvrir avec une tenue respectueuse du lieu.',enDetail:'A cultural stop best visited with respectful temple attire.'},
+            {key:'chaweng-coast',fr:'L’énergie de Chaweng',en:'Lively Chaweng',frDetail:'Une plage plus animée, pour changer du calme des hôtels isolés.',enDetail:'A busier stretch of beach to contrast with secluded resorts.'},
+            {key:'silver-beach',fr:'La petite Silver Beach',en:'Small-scale Silver Beach',frDetail:'Une crique à découvrir près de Lamai, selon l’affluence et l’état de la mer.',enDetail:'A pretty small cove near Lamai, best checked for crowds and sea conditions.'}
+          ] as const).map(item=><article key={item.key} className="bg-white p-4">
+            <CityPhoto photo={city.photos[item.key]} locale={locale}/>
+            <h3 className="mt-4 font-serif text-xl text-[#19323e]">{fr?item.fr:item.en}</h3>
+            <p className="mt-3 text-sm leading-6 text-[#546772]">{fr?item.frDetail:item.enDetail}</p>
+          </article>)}
+        </div>
+      </div>
+    </section>}
     <section id="experience" className="scroll-mt-24 bg-[#142d3a] py-16 text-[#f8f3e8] sm:py-24">
       <div className="mx-auto max-w-7xl px-5">
         <div className="grid items-center gap-8 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
