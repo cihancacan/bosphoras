@@ -131,84 +131,84 @@ export const portoCervoGuide:FeaturedCityGuideData = {
   "photos": {
     "porto-cervo-marina": {
       "src": "/images/travel/porto-cervo-premium/destination/porto-cervo-marina.webp",
-      "fr": "Vue aérienne de Porto Cervo et de sa marina",
-      "en": "Porto Cervo village and marina from above",
-      "author": "À vérifier selon registre d'import",
-      "license": "À confirmer avant publication",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Vue aérienne de la marina et des yachts de Porto Cervo",
+      "en": "Aerial view of Porto Cervo yacht marina",
+      "author": "Yacht and Service Sardinia · aerial Porto Cervo marina",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.yachtandservicesardinia.com/luxury-yacht-charter-sardinia",
+      "sourcePage": "https://www.yachtandservicesardinia.com/luxury-yacht-charter-sardinia"
     },
     "cala-di-volpe-bay": {
       "src": "/images/travel/porto-cervo-premium/destination/cala-di-volpe-bay.webp",
-      "fr": "Baie de Cala di Volpe en Sardaigne",
-      "en": "Cala di Volpe Bay in Sardinia",
-      "author": "À vérifier selon registre d'import",
-      "license": "À confirmer avant publication",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Plage et eau turquoise de la baie de Cala di Volpe",
+      "en": "Turquoise waters and sand at Cala di Volpe Bay",
+      "author": "Porto di Olbia · Cala di Volpe bay beach",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.portodiolbia.it/en/directory/spiaggia-cala-di-volpe",
+      "sourcePage": "https://www.portodiolbia.it/en/directory/spiaggia-cala-di-volpe"
     },
     "porto-cervo-piazzetta": {
       "src": "/images/travel/porto-cervo-premium/destination/porto-cervo-piazzetta.webp",
-      "fr": "Ruelles de la Piazzetta au cœur de Porto Cervo",
-      "en": "Porto Cervo Piazzetta streets",
-      "author": "À vérifier selon registre d'import",
-      "license": "À confirmer avant publication",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Promenade dans le centre pastel de Porto Cervo",
+      "en": "Pastel-coloured streets of Porto Cervo village",
+      "author": "ImmobilSarda · Porto Cervo village promenade",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.immobilsarda.com/en/localita/107-porto-cervo.html",
+      "sourcePage": "https://www.immobilsarda.com/en/localita/107-porto-cervo.html"
     },
     "romazzino-beach": {
       "src": "/images/travel/porto-cervo-premium/destination/romazzino-beach.webp",
       "fr": "Plage et rochers de la zone de Romazzino",
       "en": "Romazzino coastline and beach",
-      "author": "À vérifier selon registre d'import",
-      "license": "À confirmer avant publication",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "trolvag",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:At_the_fabulous_Romazzino_beach,_Romazzino_OT,_Sardinia,_Italy_-_panoramio.jpg"
     },
     "liscia-di-vacca": {
       "src": "/images/travel/porto-cervo-premium/destination/liscia-di-vacca.webp",
-      "fr": "Criques de Liscia di Vacca sur la Costa Smeralda",
-      "en": "Liscia di Vacca in Costa Smeralda",
-      "author": "À vérifier selon registre d'import",
-      "license": "À confirmer avant publication",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Plage privée du Pitrizza dans le secteur de Liscia di Vacca",
+      "en": "Hotel Pitrizza beach on the Liscia di Vacca coastline",
+      "author": "Amex Travel · Hotel Pitrizza beach in Liscia di Vacca",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.americanexpress.com/en-au/travel/discover/property/Italy/Porto-Cervo/Hotel-Pitrizza",
+      "sourcePage": "https://www.americanexpress.com/en-au/travel/discover/property/Italy/Porto-Cervo/Hotel-Pitrizza"
     },
     "pevero-beach": {
       "src": "/images/travel/porto-cervo-premium/destination/pevero-beach.webp",
-      "fr": "Plage du Grande Pevero près de Porto Cervo",
-      "en": "Grande Pevero Beach near Porto Cervo",
-      "author": "À vérifier selon registre d'import",
-      "license": "À confirmer avant publication",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Vue aérienne de la plage de Grande Pevero en Sardaigne",
+      "en": "Aerial view of Grande Pevero Beach, Sardinia",
+      "author": "Marriott Bonvoy Traveler · Grand Pevero Beach",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.emea.marriott.com/ar/travel-tips/6-incredible-short-haul-alternatives-to-famous-long-haul-destinations",
+      "sourcePage": "https://www.emea.marriott.com/ar/travel-tips/6-incredible-short-haul-alternatives-to-famous-long-haul-destinations"
     },
     "spiaggia-del-principe": {
       "src": "/images/travel/porto-cervo-premium/destination/spiaggia-del-principe.webp",
       "fr": "Spiaggia del Principe, crique emblématique de Sardaigne",
       "en": "Spiaggia del Principe beach in Sardinia",
-      "author": "À vérifier selon registre d'import",
-      "license": "À confirmer avant publication",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Yachting in Sardinia · Spiaggia del Principe",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.yachtinginsardinia.com/2026/01/15/%F0%9F%8C%8Ala-spiaggia-del-principe-un-gioiello-della-costa-smeralda/",
+      "sourcePage": "https://www.yachtinginsardinia.com/2026/01/15/%F0%9F%8C%8Ala-spiaggia-del-principe-un-gioiello-della-costa-smeralda/"
     },
     "capriccioli-beach": {
       "src": "/images/travel/porto-cervo-premium/destination/capriccioli-beach.webp",
       "fr": "Plage de Capriccioli sur la Costa Smeralda",
       "en": "Capriccioli beach on Costa Smeralda",
-      "author": "À vérifier selon registre d'import",
-      "license": "À confirmer avant publication",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "La Corte di Pulicinu · Capriccioli beach",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.lacortedipulicinu.it/le-spiagge.html",
+      "sourcePage": "https://www.lacortedipulicinu.it/le-spiagge.html"
     },
     "sardinia-sailing": {
       "src": "/images/travel/porto-cervo-premium/destination/sardinia-sailing.webp",
-      "fr": "Voiliers et yachts au mouillage sur la Costa Smeralda",
-      "en": "Yachts and sailing boats near Porto Cervo",
-      "author": "À vérifier selon registre d'import",
-      "license": "À confirmer avant publication",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Voiliers de compétition lors de la Maxi Yacht Rolex Cup au large de Porto Cervo",
+      "en": "Maxi Yacht Rolex Cup sailing yachts off Porto Cervo",
+      "author": "Rolex · Maxi Yacht Rolex Cup off Porto Cervo",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.rolex.com/en-us/rolex-event/yachting/maxi-yacht-rolex-cup",
+      "sourcePage": "https://www.rolex.com/en-us/rolex-event/yachting/maxi-yacht-rolex-cup"
     }
   }
 };
