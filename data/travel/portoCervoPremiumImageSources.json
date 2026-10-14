@@ -1,6 +1,6 @@
 {
   "scope": "Porto Cervo official-resort galleries, Preview only; 12 exact-property shots sought",
-  "generatedAt": "2026-10-14T23:22:18.675957+00:00",
+  "generatedAt": "2026-10-14T23:24:12.418629+00:00",
   "expected": 12,
   "downloaded": 12,
   "items": [
@@ -321,9 +321,9 @@
         1720,
         1146
       ],
-      "brightness": 127.6,
-      "sha256": "7b1932290be4b45aca1ef1d0aa54eea55b84747ecf37b90f0420876f6ec73b55",
-      "bytes": 421628,
+      "brightness": 127.7,
+      "sha256": "bacb77073b3cb04dfa623e206258c78503075f8bbb40531d77783535378ac66a",
+      "bytes": 402022,
       "credit": "Marriott · Cervo Hotel seasonal pool"
     }
   ]

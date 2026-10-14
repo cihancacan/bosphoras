@@ -1,15 +1,31 @@
 {
   "scope": "Porto Cervo destination images from Wikimedia Commons only",
-  "generatedAt": "2026-10-14T23:22:18.675957+00:00",
+  "generatedAt": "2026-10-14T23:24:12.418629+00:00",
   "expected": 9,
-  "downloaded": 6,
+  "downloaded": 9,
   "items": [
     {
       "key": "porto-cervo-marina",
       "search": "Porto Cervo marina Sardinia aerial",
       "localPath": "/images/travel/porto-cervo-premium/destination/porto-cervo-marina.webp",
-      "status": "failed",
-      "fallbackError": "not a landscape editorial image"
+      "status": "downloaded",
+      "sourceFile": "Yacht and Service Sardinia · aerial Porto Cervo marina",
+      "sourcePage": "https://www.yachtandservicesardinia.com/luxury-yacht-charter-sardinia",
+      "author": "Yacht and Service Sardinia · aerial Porto Cervo marina",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.yachtandservicesardinia.com/luxury-yacht-charter-sardinia",
+      "downloadUrl": "https://static.wixstatic.com/media/9c8337_13a5034f77b443b18c41b8dc11d44d34~mv2.webp",
+      "originalSize": [
+        2500,
+        1407
+      ],
+      "outputSize": [
+        1950,
+        1097
+      ],
+      "brightness": 80.2,
+      "sha256": "29a5f246af028c6f005aad31d8be5738dd54811fade630e187f0dbcab49cf1b7",
+      "bytes": 815994
     },
     {
       "key": "cala-di-volpe-bay",
@@ -39,8 +55,24 @@
       "key": "porto-cervo-piazzetta",
       "search": "Piazzetta Porto Cervo Sardinia",
       "localPath": "/images/travel/porto-cervo-premium/destination/porto-cervo-piazzetta.webp",
-      "status": "failed",
-      "fallbackError": "HTTPSConnectionPool(host='www.jet2holidays.com', port=443): Read timed out. (read timeout=30)"
+      "status": "downloaded",
+      "sourceFile": "ImmobilSarda · Porto Cervo village promenade",
+      "sourcePage": "https://www.immobilsarda.com/en/localita/107-porto-cervo.html",
+      "author": "ImmobilSarda · Porto Cervo village promenade",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.immobilsarda.com/en/localita/107-porto-cervo.html",
+      "downloadUrl": "https://cdn.immobilsarda.com/img_localita/large/9039383.jpg",
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ],
+      "brightness": 146.2,
+      "sha256": "f5c6deea3b07cb2024668cad4ef1fddd5fe50d92567a638d56dd9214c73235a2",
+      "bytes": 231508
     },
     {
       "key": "romazzino-beach",
@@ -161,8 +193,24 @@
       "key": "sardinia-sailing",
       "search": "Porto Cervo sailing boats",
       "localPath": "/images/travel/porto-cervo-premium/destination/sardinia-sailing.webp",
-      "status": "failed",
-      "fallbackError": "403 Client Error: Forbidden for url: https://unsplash.com/photos/QSgxi7hxN-0/download?force=true&w=1800"
+      "status": "downloaded",
+      "sourceFile": "Rolex · Maxi Yacht Rolex Cup off Porto Cervo",
+      "sourcePage": "https://www.rolex.com/en-us/rolex-event/yachting/maxi-yacht-rolex-cup",
+      "author": "Rolex · Maxi Yacht Rolex Cup off Porto Cervo",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.rolex.com/en-us/rolex-event/yachting/maxi-yacht-rolex-cup",
+      "downloadUrl": "https://media.rolex.com/image/upload/q_auto%3Aeco/f_auto/c_limit%2Cw_2440/v1785337224/rolexcom/rolex-events/sports/yachting/maxi-yacht-cup/rolex-events-sports-yaching-maxi-yacht-rolex-cup-cover_maxi_2509cb_13023756",
+      "originalSize": [
+        2440,
+        1373
+      ],
+      "outputSize": [
+        1950,
+        1097
+      ],
+      "brightness": 140.2,
+      "sha256": "8a710e439b271dbae9ddb2d6f8af0e40931ff223b2700dc4ac9be58806d57511",
+      "bytes": 421332
     }
   ]
 }
