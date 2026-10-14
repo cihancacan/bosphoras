@@ -26,6 +26,53 @@ HOTELS={
  "banyan-tree": {"name":"Banyan Tree Samui","source":"https://www.banyantree.com/thailand/samui/gallery","pages":["https://www.banyantree.com/thailand/samui"],"scenes":[("pool-villa",["pool","villa"]),("private-bay",["bay","beach","resort"]),("spa",["spa","rainforest","wellbeing"])],"seeds":[]},
  "conrad": {"name":"Conrad Koh Samui","source":"https://www.hilton.com/en/hotels/usmksci-conrad-koh-samui/","pages":["https://www.hilton.com/en/hotels/usmksci-conrad-koh-samui/rooms/","https://www.hilton.com/en/hotels/usmksci-conrad-koh-samui/gallery/"],"scenes":[("sunset-villa",["villa","sunset"]),("infinity-pool",["pool","infinity"]),("five-islands",["island","ocean","view","resort"])],"seeds":[]}
 }
+
+# Curated, property-identified photographs from galleries and travel editorial partners.
+# Credit the ACTUAL host; do not misattribute these to the official hotel's image library.
+PREFERRED_MEDIA={
+ ("four-seasons","pool-villa"):(
+  "https://cdn.audleytravel.com/1600/1142/60/371694-beach-villa-four-seasons-resort-koh-samui.jpg",
+  "https://www.audleytravel.com/us/thailand","Audley Travel · Four Seasons Koh Samui pool villa"),
+ ("four-seasons","beach"):(
+  "https://images.squarespace-cdn.com/content/v1/654e445a0e2d9a21ad1ae737/1740079904772-ROC9GWO43BBOT2C01UYI/364106231_684983757005766_3226165556401945860_n.jpg",
+  "https://www.thehelloagency.com/travel-journal/live-your-white-lotus-fantasy-at-four-seasons-resort-koh-samui","The Hello Agency · Four Seasons beachfront villa"),
+ ("four-seasons","dining"):(
+  "https://media.privileges-voyages.com/resizer/r/1600-900-1-100/medias/mediatheque/produits/NWL429/Four-Seasons-Koh-Samui-Thailande-Soiree.jpg",
+  "https://www.privileges-voyages.com/sejour/q/sejour-sur-mesure-luxe-en-thailande-au-four-seasons-koh-samui","Privilèges Voyages · Four Seasons beachfront dining"),
+ ("six-senses","villa-pool"):(
+  "https://planetescape.pl/app/uploads/2023/04/Six-Senses-Samui-%E2%80%93-Ocean-Front-Pool-Villa-Suite.jpg",
+  "https://planetescape.pl/en/hotel/tajlandia-koh-samui-six-senses-samui/six-senses-samui-ocean-front-pool-villa-suite/","Planet Escape · Six Senses Ocean Front Pool Villa Suite"),
+ ("six-senses","spa"):(
+  "https://www.ecoluxury.com/media/house/469/469-sixsensesspa-treatmentroom5450-a4s_1596184677.jpg",
+  "https://www.ecoluxury.com/en/retreats-of-the-world/469_six-senses-samui","Ecoluxury · Six Senses Samui treatment room"),
+ ("six-senses","coast"):(
+  "https://cdn.tatlerasia.com/tatlerasia/i/2025/01/30115341-sssmu-the-ocean-retreat-drone-shot_cover_1599x1066.jpg",
+  "https://www.tatlerasia.com/lifestyle/travel/samui-the-white-lotus-3","Tatler Asia · Six Senses Samui Ocean Retreat"),
+ ("banyan-tree","private-bay"):(
+  "https://image.umetravel.com/edit_upload/20200312/1583994155550789.jpg",
+  "https://www.umetravel.com/thailand-honeymoon/top-10-koh-samui-honeymoon-hotel.html","Ume Travel · Banyan Tree Samui private bay"),
+ ("banyan-tree","spa"):(
+  "https://www.banyantree.com/assets/2025-05/samui-bts-2.0-wellbeing-header-1920x1080.jpg",
+  "https://www.banyantree.com/thailand/samui/spa/banyan-tree-spa-samui","Banyan Tree Samui · official wellness image"),
+ ("conrad","sunset-villa"):(
+  "https://www.americanexpress.com/en-us/travel/discover/photos/101899/152665/1200/1O8A4682-Edit.jpg",
+  "https://www.americanexpress.com/en-au/travel/discover/property/Thailand/Koh-Samui/conrad-koh-samui","American Express Travel · Conrad Koh Samui sunset pool"),
+ ("conrad","infinity-pool"):(
+  "https://vilandtravel.com/files/images/hotel/Thailand/Conrad%20Koh%20Samui/Vignette-Conrad-Koh-Samui-1.jpg",
+  "https://vilandtravel.com/accommodation/conrad-koh-samui","Viland Travel · Conrad Koh Samui hillside pool villa"),
+ ("conrad","five-islands"):(
+  "https://kompastour.com/useruploads/hotels/main_590299d378.jpg",
+  "https://kompastour.com/ge/eng/country/thailand/samui/conrad_koh_samui/","Kompas Tour · aerial view of Conrad Koh Samui hillside villas")
+}
+DIRECT_DEST={
+ "taling-ngam-sunset":(
+  "https://images.squarespace-cdn.com/content/v1/5fe004ec879a260806859939/1608516911937-7HT4MG7OBCTA9I1CPMWZ/the-beach-3_40790833753_o.jpg",
+  "https://www.fiveislandssamui.com/location","Five Islands Beach House · Taling Ngam coast"),
+ "bophut-fishermans":(
+  "https://karpediemvilla.com/images/attractions/fishermans-village.jpg",
+  "https://karpediemvilla.com/fishermans-village.php","Karpe Diem Villa · Fisherman's Village waterfront")
+}
+
 # Each query is specific to a real Samui site, not a generic stock image.
 DEST=[
  ("maenam-beach","Maenam Beach Koh Samui",["maenam","mae nam"]),
@@ -103,6 +150,10 @@ def try_hotel(hotel,info):
  for key,words in info["scenes"]:
   row={"hotel":hotel,"key":key,"scene":words,"sourcePage":info["source"],"localPath":f"/images/travel/koh-samui-premium/{hotel}/{key}.webp","rights":"Client states permission; obtain written property/commercial re-use confirmation before production","status":"failed"}
   scored=[]
+  preferred=PREFERRED_MEDIA.get((hotel,key))
+  if preferred:
+   url,page,credit=preferred
+   scored.append((1000,url,credit,page))
   for url,alt,source in candidates:
    tag=unquote(url+" "+alt).lower()
    score=sum(7 for word in words if word in tag)
@@ -116,7 +167,8 @@ def try_hotel(hotel,info):
     binary,actual=get(url,timeout=22)
     image,original,output,light,sha=convert(binary)
     persist(f"{hotel}/{key}.webp",image,sha)
-    row.update(status="downloaded",downloadUrl=actual,sourcePage=source,sourceAlt=alt,originalSize=original,outputSize=output,brightness=light,sha256=sha,bytes=len(image),credit=info["name"]+" · official website")
+    actual_credit=(preferred[2] if preferred and url==preferred[0] else info["name"]+" · official website")
+    row.update(status="downloaded",downloadUrl=actual,sourcePage=source,sourceAlt=alt,originalSize=original,outputSize=output,brightness=light,sha256=sha,bytes=len(image),credit=actual_credit)
     break
    except Exception as err:errors.append(str(err)[:90])
   if row["status"]=="failed":row["errors"]=errors[:4];print("HOTEL FAILED",hotel,key,len(candidates),errors[:2],flush=True)
@@ -158,6 +210,14 @@ def try_destination(key,query,matches):
     break
    except Exception as err:row["lastError"]=str(err)[:140]
  except Exception as err:row["error"]=str(err)[:180]
+ if row["status"]=="failed" and key in DIRECT_DEST:
+  url,page,credit=DIRECT_DEST[key]
+  try:
+   binary,actual=get(url,timeout=30)
+   content,original,output,light,sha=convert(binary,850)
+   persist(f"destination/{key}.webp",content,sha)
+   row.update(status="downloaded",sourceFile=credit,sourcePage=page,author=credit,license="Client-authorised editorial use; written third-party reuse terms to verify before production",licenseUrl=page,downloadUrl=actual,originalSize=original,outputSize=output,brightness=light,sha256=sha,bytes=len(content))
+  except Exception as error:row["fallbackError"]=str(error)[:160]
  print("CITY",key,row["status"],row.get("sourceFile",""),flush=True)
  return row
 
