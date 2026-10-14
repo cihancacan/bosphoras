@@ -1,9 +1,10 @@
 import * as grpc from '@grpc/grpc-js';
 import * as protoLoader from '@grpc/proto-loader';
 import path from 'node:path';
+import { WINK_HOSTS } from './winkEnvironment';
 
-const IAM_TOKEN_URL = 'https://staging-iam.wink.travel/oauth2/token';
-const PARTNER_HOST = 'staging-partner.wink.travel:443';
+const IAM_TOKEN_URL = WINK_HOSTS.staging.tokenUrl;
+const PARTNER_HOST = WINK_HOSTS.staging.partnerHost;
 const ISTANBUL_GEONAME_ID = '745044';
 
 type JsonRecord = Record<string, any>;
@@ -141,7 +142,12 @@ export async function searchStagingInventory(query: WinkStagingQuery) {
   } finally { accountsClient.close(); }
 
   const accounts = Array.isArray(accountsResponse.accounts) ? accountsResponse.accounts : [];
-  const account = accounts.find((item: JsonRecord) => /bosphoras luxury stays/i.test(String(item.name || '')));
+  const expectedAccountId = process.env.WINK_STAGING_AFFILIATE_ID?.trim();
+  const matches = accounts.filter((item: JsonRecord) => expectedAccountId
+    ? item.accountId === expectedAccountId
+    : /^bosphoras luxury stays$/i.test(String(item.name || '').trim()));
+  if (matches.length !== 1) throw new WinkStagingError('accounts');
+  const account = matches[0];
   if (!account?.accountId) throw new WinkStagingError('accounts');
 
   const metadata = new grpc.Metadata();
