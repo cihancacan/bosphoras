@@ -166,6 +166,8 @@ HOTELS={
   }
 }
 PREFERRED_MEDIA={
+ ("pitrizza","granite-coast"):["https://d2wzo7cpkz5upz.cloudfront.net/media/entities_hotels/4883/59b9e8e3fa5eb0fd83c22a245e3c52b6-hotel_pitrizza_aerial_view2.jpg","https://tripinview.com/hotel/62900/hotel-pitrizza-a-luxury-collection-hotel-costa-smeralda","TRIPinVIEW · Hotel Pitrizza aerial granite coast and beach"],
+ ("pitrizza","hotel-terrace"):["https://selectitaly.com/images/0324_70952_447341272_l.jpg","https://selectitaly.com/italy-hotels/sardinia/porto-cervo-costa-smeralda/hotel-pitrizza","Select Italy · Hotel Pitrizza oceanfront restaurant terrace"],
  ("cala-di-volpe","bay-architecture"): ["https://www.1golf.eu/images/hotels/hotel-cala-di-volpe-a-luxury-collection-hotel-costa-smeralda_108947_full.jpg","https://www.1golf.eu/en/hotel/hotel-cala-di-volpe-a-luxury-collection-hotel-costa-smeralda/","1Golf · Hotel Cala di Volpe aerial bay"],
  ("cala-di-volpe","pool-and-sea"): ["https://www.uniqhotels.com/media/hotels/a9/1_jzDZmxl.jpg","https://www.uniqhotels.com/hotel-cala-di-volpe/","UNIQ Hotels · Cala di Volpe pool, bay and bridge"],
  ("romazzino-belmond","beach-hotel"): ["https://cdn.audleytravel.com/1400/999/60/15997369-hotel-romazzino-a-luxury-collection-hotel.jpg","https://www.audleytravel.com/us/italy/accommodation/hotel-romazzino","Audley Travel · Romazzino beachfront aerial"],
@@ -174,7 +176,16 @@ PREFERRED_MEDIA={
  ("cervo-hotel","pool-terrace"): ["https://cache.marriott.com/content/dam/marriott-renditions/OLBSI/olbsi-outdoor-pools-seasonal-8752-hor-clsc.jpg?downsize=1720px%3A%2A&interpolation=progressive-bilinear&output-quality=70","https://www.marriott.com/en-us/hotels/olbsi-cervo-hotel-costa-smeralda-resort/overview/","Marriott · Cervo Hotel seasonal pool"],
  ("cervo-hotel","marina-view"): ["https://static.charmingsardinia.com/hotels/7553/gallery/files/hotel-cervo-portcervo05.jpg","https://www.charmingsardinia.com/sardaigne/cervo","Charming Sardinia · Cervo Hotel overlooking Porto Cervo marina"],
 }
-DIRECT_DEST={}
+DIRECT_DEST={
+ "porto-cervo-marina":["https://images.pexels.com/photos/27916102/pexels-photo-27916102.jpeg?auto=compress&cs=tinysrgb&w=1800","https://www.pexels.com/photo/porto-cervo-italy-sardegna-27916102/","Jakub Krystkiewicz · Porto Cervo yacht marina"],
+ "cala-di-volpe-bay":["https://www.portodiolbia.it/sites/default/files/styles/large/public/listings-gallery/cala%20di%20volpe.jpg?itok=4Q71DgDV","https://www.portodiolbia.it/en/directory/spiaggia-cala-di-volpe","Porto di Olbia · Cala di Volpe bay beach"],
+ "porto-cervo-piazzetta":["https://www.jet2holidays.com/-/media/olb0012_piazzetta.jpg?crop=0&h=950&w=1450","https://www.jet2holidays.com/destinations/italy/sardinia/porto-cervo","Jet2 Holidays · Porto Cervo Piazzetta"],
+ "liscia-di-vacca":["https://www.americanexpress.com/en-us/travel/discover/photos/300767/138587/1200/HotelPitrizza5.jpg","https://www.americanexpress.com/en-au/travel/discover/property/Italy/Porto-Cervo/Hotel-Pitrizza","Amex Travel · Hotel Pitrizza beach in Liscia di Vacca"],
+ "pevero-beach":["https://assets.micontenthub.com/traveloffers/travel-tips/--------------------------_rW74BzU3e.jpg","https://www.emea.marriott.com/ar/travel-tips/6-incredible-short-haul-alternatives-to-famous-long-haul-destinations","Marriott Bonvoy Traveler · Grand Pevero Beach"],
+ "spiaggia-del-principe":["https://www.yachtinginsardinia.com/media/spiaggia_del_principe.jpg","https://www.yachtinginsardinia.com/2026/01/15/%F0%9F%8C%8Ala-spiaggia-del-principe-un-gioiello-della-costa-smeralda/","Yachting in Sardinia · Spiaggia del Principe"],
+ "capriccioli-beach":["https://media.z-suite.it/lacortedipulicinu.it/public/Spiagge/capriccioli.jpg","https://www.lacortedipulicinu.it/le-spiagge.html","La Corte di Pulicinu · Capriccioli beach"],
+ "sardinia-sailing":["https://unsplash.com/photos/QSgxi7hxN-0/download?force=true&w=1800","https://unsplash.com/photos/an-aerial-view-of-a-boat-in-the-ocean-QSgxi7hxN-0","Ilan Dray · yacht off Porto Cervo, Unsplash"],
+}
 DEST=[
   [
     "porto-cervo-marina",
