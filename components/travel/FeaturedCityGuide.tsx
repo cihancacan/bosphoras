@@ -11,6 +11,10 @@ import { baliHotelEditorial, baliAreaVisuals } from '@/data/travel/baliPremiumEd
 import { phuketHotelEditorial, phuketAreaVisuals } from '@/data/travel/phuketPremiumEditorial';
 import { kohSamuiHotelEditorial, kohSamuiAreaVisuals } from '@/data/travel/kohSamuiPremiumEditorial';
 import { kohSamuiFaq } from '@/data/travel/kohSamuiFaq';
+import { maldivesHotelEditorial, maldivesAreaVisuals } from '@/data/travel/maldivesPremiumEditorial';
+import { maldivesFaq } from '@/data/travel/maldivesFaq';
+import maldivesHotelManifest from '@/data/travel/maldivesPremiumImageSources.json';
+import maldivesDestinationManifest from '@/data/travel/maldivesDestinationImageSources.json';
 import kohSamuiHotelManifest from '@/data/travel/kohSamuiPremiumImageSources.json';
 import kohSamuiDestinationManifest from '@/data/travel/kohSamuiDestinationImageSources.json';
 import phuketPhotoManifest from '@/data/travel/phuketPremiumImageSources.json';
@@ -18,13 +22,14 @@ import baliPhotoManifest from '@/data/travel/baliPremiumImageSources.json';
 import saintTropezPhotoManifest from '@/data/travel/saintTropezPremiumImageSources.json';
 import parisPhotoManifest from '@/data/travel/parisPremiumImageSources.json';
 import dubaiPhotoManifest from '@/data/travel/dubaiPremiumImageSources.json';
-const hotelEditorialByCity={bodrum:bodrumHotelEditorial,antalya:antalyaHotelEditorial,dubai:dubaiHotelEditorial,paris:parisHotelEditorial,'saint-tropez':saintTropezHotelEditorial,bali:baliHotelEditorial,phuket:phuketHotelEditorial,'koh-samui':kohSamuiHotelEditorial} as const;
+const hotelEditorialByCity={bodrum:bodrumHotelEditorial,antalya:antalyaHotelEditorial,dubai:dubaiHotelEditorial,paris:parisHotelEditorial,'saint-tropez':saintTropezHotelEditorial,bali:baliHotelEditorial,phuket:phuketHotelEditorial,'koh-samui':kohSamuiHotelEditorial,maldives:maldivesHotelEditorial} as const;
 const confirmedDubaiAssets=new Set(dubaiPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 const confirmedParisAssets=new Set(parisPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 const confirmedSaintTropezAssets=new Set(saintTropezPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 const confirmedBaliAssets=new Set(baliPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 const confirmedPhuketAssets=new Set(phuketPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 const confirmedKohSamuiAssets=new Set([...kohSamuiHotelManifest.items,...kohSamuiDestinationManifest.items].filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
+const confirmedMaldivesAssets=new Set([...maldivesHotelManifest.items,...maldivesDestinationManifest.items].filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 
 type Lang = 'fr' | 'en';
 type Variant = 'destination' | 'hotels';
@@ -54,7 +59,7 @@ function CityPhoto({photo,locale,priority=false}: {photo:FeaturedCityPhoto;local
 function PremiumHotelGallery({hotelName,city,locale,expanded=false}: {hotelName:string;city:FeaturedCityGuideData['slug'];locale:Lang;expanded?:boolean}) {
   const entry=hotelEditorialByCity[city][hotelName];
   if(!entry || !entry.photos.length) return null;
-  const photos=city==='dubai' ? entry.photos.filter(photo=>confirmedDubaiAssets.has(photo.src)) : city==='paris' ? entry.photos.filter(photo=>confirmedParisAssets.has(photo.src)) : city==='saint-tropez' ? entry.photos.filter(photo=>confirmedSaintTropezAssets.has(photo.src)) : city==='bali' ? entry.photos.filter(photo=>confirmedBaliAssets.has(photo.src)) : city==='phuket' ? entry.photos.filter(photo=>confirmedPhuketAssets.has(photo.src)) : city==='koh-samui' ? entry.photos.filter(photo=>confirmedKohSamuiAssets.has(photo.src)) : entry.photos;
+  const photos=city==='dubai' ? entry.photos.filter(photo=>confirmedDubaiAssets.has(photo.src)) : city==='paris' ? entry.photos.filter(photo=>confirmedParisAssets.has(photo.src)) : city==='saint-tropez' ? entry.photos.filter(photo=>confirmedSaintTropezAssets.has(photo.src)) : city==='bali' ? entry.photos.filter(photo=>confirmedBaliAssets.has(photo.src)) : city==='phuket' ? entry.photos.filter(photo=>confirmedPhuketAssets.has(photo.src)) : city==='koh-samui' ? entry.photos.filter(photo=>confirmedKohSamuiAssets.has(photo.src)) : city==='maldives' ? entry.photos.filter(photo=>confirmedMaldivesAssets.has(photo.src)) : entry.photos;
   if(!photos.length) return null;
   const first=photos[0];
   return <figure className="mt-5">
@@ -81,8 +86,8 @@ function PremiumHotelGallery({hotelName,city,locale,expanded=false}: {hotelName:
 }
 
 function DestinationAreaPhoto({city,index,locale}: {city:FeaturedCityGuideData['slug'];index:number;locale:Lang}) {
-  const photo=city==='bodrum' ? bodrumAreaVisuals[index] : city==='antalya' ? antalyaAreaVisuals[index] : city==='dubai' ? dubaiAreaVisuals[index] : city==='paris' ? parisAreaVisuals[index] : city==='saint-tropez' ? saintTropezAreaVisuals[index] : city==='bali' ? baliAreaVisuals[index] : city==='phuket' ? phuketAreaVisuals[index] : kohSamuiAreaVisuals[index];
-  if(!photo || (city==='koh-samui' && !confirmedKohSamuiAssets.has(photo.src)))return null;
+  const photo=city==='bodrum' ? bodrumAreaVisuals[index] : city==='antalya' ? antalyaAreaVisuals[index] : city==='dubai' ? dubaiAreaVisuals[index] : city==='paris' ? parisAreaVisuals[index] : city==='saint-tropez' ? saintTropezAreaVisuals[index] : city==='bali' ? baliAreaVisuals[index] : city==='phuket' ? phuketAreaVisuals[index] : city==='koh-samui' ? kohSamuiAreaVisuals[index] : maldivesAreaVisuals[index];
+  if(!photo || ((city==='koh-samui' && !confirmedKohSamuiAssets.has(photo.src)) || (city==='maldives' && !confirmedMaldivesAssets.has(photo.src))))return null;
   return <figure className="mt-5">
     <div className="relative aspect-[16/10] overflow-hidden bg-[#e8dfd0]">
       <Image src={photo.src} alt={locale==='fr'?photo.fr:photo.en} fill
@@ -115,11 +120,11 @@ function HotelTeaser({ guide, locale }: {guide:FeaturedCityGuideData;locale:Lang
         {guide.hotels.map((hotel,index)=><article key={hotel.name} className="flex flex-col bg-white p-6">
           <span className="text-xs tracking-[.15em] text-[#9b794b]">{String(index+1).padStart(2,'0')} · {hotel.area}</span>
           <h3 className="mt-4 font-serif text-2xl">{hotel.name}</h3>
-          {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez'||guide.slug==='bali'||guide.slug==='phuket'||guide.slug==='koh-samui') && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale}/>}
+          {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez'||guide.slug==='bali'||guide.slug==='phuket'||guide.slug==='koh-samui'||guide.slug==='maldives') && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale}/>}
           <p className="mt-4 text-sm leading-7 text-[#53636a]">{fr?hotel.fr:hotel.en}</p>
-          {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez'||guide.slug==='bali'||guide.slug==='phuket'||guide.slug==='koh-samui') && hotelEditorialByCity[guide.slug][hotel.name] && <p className="mt-4 border-l-2 border-[#bb9867] pl-3 text-xs leading-6 text-[#5d6a71]">
+          {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez'||guide.slug==='bali'||guide.slug==='phuket'||guide.slug==='koh-samui'||guide.slug==='maldives') && hotelEditorialByCity[guide.slug][hotel.name] && <p className="mt-4 border-l-2 border-[#bb9867] pl-3 text-xs leading-6 text-[#5d6a71]">
             <strong>{fr?'Pour qui ? ':'Best suited to: '}</strong>
-            {fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'][hotel.name].frBest:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'][hotel.name].enBest}
+            {fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'|'maldives'][hotel.name].frBest:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'|'maldives'][hotel.name].enBest}
           </p>}
         </article>)}
       </div>
@@ -142,15 +147,15 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
         <p className="text-xs uppercase tracking-[.14em] text-[#9a7849]">
           {String(i+1).padStart(2,'0')} · {hotel.area}</p>
         <h3 className="mt-4 font-serif text-3xl">{hotel.name}</h3>
-        {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez'||guide.slug==='bali'||guide.slug==='phuket'||guide.slug==='koh-samui') && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale} expanded />}
+        {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez'||guide.slug==='bali'||guide.slug==='phuket'||guide.slug==='koh-samui'||guide.slug==='maldives') && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale} expanded />}
         <p className="mt-6 leading-8 text-[#475862]">{fr?hotel.fr:hotel.en}</p>
-        {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez'||guide.slug==='bali'||guide.slug==='phuket'||guide.slug==='koh-samui') && hotelEditorialByCity[guide.slug][hotel.name] && <div className="mt-7 border-t border-[#e7dac9] pt-6">
+        {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez'||guide.slug==='bali'||guide.slug==='phuket'||guide.slug==='koh-samui'||guide.slug==='maldives') && hotelEditorialByCity[guide.slug][hotel.name] && <div className="mt-7 border-t border-[#e7dac9] pt-6">
           <h4 className="font-serif text-xl">{fr?'Notre lecture de cette adresse':'Our take on this address'}</h4>
           <p className="mt-4 text-sm leading-8 text-[#51616b]">
-            {fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'][hotel.name].frStory:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'][hotel.name].enStory}
+            {fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'|'maldives'][hotel.name].frStory:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'|'maldives'][hotel.name].enStory}
           </p>
           <p className="mt-5 text-sm leading-7 font-medium text-[#7d603b]">
-            {fr?'À privilégier pour : ':'Best for: '}{fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'][hotel.name].frBest:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'][hotel.name].enBest}
+            {fr?'À privilégier pour : ':'Best for: '}{fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'|'maldives'][hotel.name].frBest:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'|'maldives'][hotel.name].enBest}
           </p>
         </div>}
         <p className="mt-6 border-l-2 border-[#b18c55] pl-4 text-sm leading-7 text-[#53636c]">
@@ -191,9 +196,9 @@ function Advice({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang}) {
 
 export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityGuideData;locale:Lang;variant:Variant}) {
   const fr=locale==='fr',hotelPage=variant==='hotels';
-  const hero=city.photos[city.hero];
+  const hero=(city.slug==='maldives' && !confirmedMaldivesAssets.has(city.photos[city.hero].src)) ? (Object.values(city.photos).find(photo=>confirmedMaldivesAssets.has(photo.src)) || city.photos[city.hero]) : city.photos[city.hero];
   const requestedSecondary=city.photos[city.secondary];
-  const secondary=(city.slug==='koh-samui' && !confirmedKohSamuiAssets.has(requestedSecondary.src)) ? city.photos['ang-thong'] : requestedSecondary;
+  const secondary=(city.slug==='koh-samui' && !confirmedKohSamuiAssets.has(requestedSecondary.src)) ? city.photos['ang-thong'] : (city.slug==='maldives' && !confirmedMaldivesAssets.has(requestedSecondary.src)) ? (Object.values(city.photos).find(photo=>confirmedMaldivesAssets.has(photo.src) && photo.src!==hero.src) || hero) : requestedSecondary;
   const hubHref=travelHref(locale,'destinations/'+city.slug);
   const hotelsHref=travelHref(locale,'hotels/'+city.slug);
   return <main className="min-h-screen bg-[#faf7f0] text-[#182c38]">
@@ -216,16 +221,16 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           ? <div className="absolute inset-0 bg-gradient-to-r from-[#092932]/76 via-[#0f3440]/28 to-transparent"/>
           : city.slug === 'koh-samui'
           ? <div className="absolute inset-0 bg-gradient-to-r from-[#082832]/78 via-[#103944]/28 to-transparent"/>
-          : <div className="absolute inset-0 bg-gradient-to-r from-[#081d28]/95 via-[#081d28]/75 to-[#081d28]/25"/>}
+          : city.slug==='maldives' ? <div className="absolute inset-0 bg-gradient-to-r from-[#082f3a]/77 via-[#10455a]/23 to-transparent"/> : <div className="absolute inset-0 bg-gradient-to-r from-[#081d28]/95 via-[#081d28]/75 to-[#081d28]/25"/>}
       </div>
       <div className="relative mx-auto max-w-7xl px-5 pb-28 pt-16 sm:pb-40 sm:pt-28">
-        <div className={(city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez'||city.slug === 'bali'||city.slug === 'phuket'||city.slug === 'koh-samui') ? 'max-w-[900px] rounded-2xl border border-white/10 bg-[#091c24]/65 px-5 py-7 shadow-2xl backdrop-blur-[3px] sm:px-10 sm:py-9' : ''}>
+        <div className={(city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez'||city.slug === 'bali'||city.slug === 'phuket'||city.slug === 'koh-samui'||city.slug === 'maldives') ? 'max-w-[900px] rounded-2xl border border-white/10 bg-[#091c24]/65 px-5 py-7 shadow-2xl backdrop-blur-[3px] sm:px-10 sm:py-9' : ''}>
         <p className="text-xs uppercase tracking-[.25em] text-[#f1cc8f]">Bosphoras · Luxury Stays
           {' / '}{fr?city.eyebrowFr:city.eyebrowEn}</p>
-        <h1 className={(city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez'||city.slug === 'bali'||city.slug === 'phuket'||city.slug === 'koh-samui') ? 'mt-9 max-w-4xl font-serif text-4xl leading-tight text-white [text-shadow:0_3px_14px_rgba(0,0,0,0.65)] sm:text-6xl lg:text-7xl' : 'mt-9 max-w-4xl font-serif text-4xl leading-tight sm:text-6xl lg:text-7xl'}>
-          {hotelPage?(city.slug==='koh-samui'?(fr?'Hôtels de luxe à Koh Samui : notre sélection d’adresses d’exception':'Luxury hotels in Koh Samui: our curated island collection'):(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.'))
+        <h1 className={(city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez'||city.slug === 'bali'||city.slug === 'phuket'||city.slug === 'koh-samui'||city.slug === 'maldives') ? 'mt-9 max-w-4xl font-serif text-4xl leading-tight text-white [text-shadow:0_3px_14px_rgba(0,0,0,0.65)] sm:text-6xl lg:text-7xl' : 'mt-9 max-w-4xl font-serif text-4xl leading-tight sm:text-6xl lg:text-7xl'}>
+          {hotelPage?(city.slug==='maldives'?(fr?'Hôtels de luxe aux Maldives : villas et îles privées d’exception':'Luxury hotels in the Maldives: exceptional private islands and villas'):city.slug==='koh-samui'?(fr?'Hôtels de luxe à Koh Samui : notre sélection d’adresses d’exception':'Luxury hotels in Koh Samui: our curated island collection'):(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.'))
             :(fr?city.headingFr:city.headingEn)}</h1>
-        {(city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui') && <p className="mt-4 text-xs text-[#efe0c7]">
+        {(city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui'||city.slug==='maldives') && <p className="mt-4 text-xs text-[#efe0c7]">
           {city.slug==='bodrum'?(fr?'Paysage : une crique de la péninsule de Bodrum':'Landscape: a Bodrum Peninsula cove')
             :city.slug==='antalya'?(fr?'Illustration IA inspirée d’Antalya · Vue artistique, non photographique':'AI illustration inspired by Antalya · Artistic view, not a photograph')
             :city.slug==='dubai'?(fr?'Palm West Beach · plage et skyline dans la lumière dorée':'Palm West Beach · sunny beachfront and golden skyline')
@@ -233,16 +238,16 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             :city.slug==='saint-tropez'?(fr?'Saint-Tropez · village et Vieux-Port vus du ciel':'Saint-Tropez · aerial view of the village and Old Port')
             :city.slug==='bali'?(fr?'Bali · falaises ensoleillées d’Uluwatu et océan Indien':'Bali · sunlit Uluwatu cliffs and the Indian Ocean')
             :city.slug==='phuket'?(fr?'Phuket · plage de Kata Noi et eaux turquoise de l’Andaman':'Phuket · Kata Noi beach and turquoise Andaman Sea')
-            :(fr?'Koh Samui · rivage tropical du golfe de Thaïlande':'Koh Samui · tropical Gulf of Thailand coast')} ·{' '}
+            :city.slug==='maldives'?(fr?'Maldives · lagon corallien de l’océan Indien':'Maldives · Indian Ocean coral lagoon'):(fr?'Koh Samui · rivage tropical du golfe de Thaïlande':'Koh Samui · tropical Gulf of Thailand coast')} ·{' '}
           {city.slug==='antalya' ? <span>{hero.author}</span>
             : <a href={hero.sourcePage} rel="noopener noreferrer" target="_blank" className="underline underline-offset-2">{hero.author}</a>}
         </p>}
-        <p className={(city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez'||city.slug === 'bali'||city.slug === 'phuket'||city.slug === 'koh-samui') ? 'mt-8 max-w-3xl text-lg leading-8 text-white [text-shadow:0_2px_8px_rgba(0,0,0,0.65)]' : 'mt-8 max-w-3xl text-lg leading-8 text-[#e4e8e5]'}>
+        <p className={(city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez'||city.slug === 'bali'||city.slug === 'phuket'||city.slug === 'koh-samui'||city.slug === 'maldives') ? 'mt-8 max-w-3xl text-lg leading-8 text-white [text-shadow:0_2px_8px_rgba(0,0,0,0.65)]' : 'mt-8 max-w-3xl text-lg leading-8 text-[#e4e8e5]'}>
           {hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}</p>
         </div>
         <div className="mt-10 flex flex-wrap gap-3">
           <a href={hotelPage?'#selection':'#quartiers'} className="bg-[#d9b77b] px-6 py-4 text-sm font-semibold text-[#142734] hover:bg-[#f0d39d]">
-            {hotelPage?(fr?'Comparer les quatre adresses':'Compare four hotels'):(fr?'Découvrir les quartiers':'Discover neighbourhoods')} →
+            {hotelPage?(fr?'Comparer les quatre adresses':'Compare four hotels'):(city.slug==='maldives'?(fr?'Découvrir les atolls':'Explore the atolls'):(fr?'Découvrir les quartiers':'Discover neighbourhoods'))} →
           </a>
           <Link href={hotelPage?hubHref:hotelsHref} className="border border-white/70 px-6 py-4 text-sm hover:bg-white/10">
             {hotelPage?(fr?'Voir le guide de la ville':'Explore the city guide'):(fr?'Voir les hôtels sélectionnés':'See the selected hotels')}
@@ -255,7 +260,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
     </section>
     <nav className="sticky top-0 z-20 border-b border-[#e0d7c8] bg-[#faf7f0]/95 px-5 backdrop-blur" aria-label={fr?'Naviguer dans le guide':'Guide sections'}>
       <div className="mx-auto flex max-w-7xl gap-6 overflow-x-auto py-4 text-xs sm:text-sm">
-        <a href={hotelPage?'#selection':'#quartiers'} className="shrink-0 hover:text-[#9e794a]">{hotelPage?(fr?'Les hôtels':'Hotels'):(fr?'Les quartiers':'Areas')}</a>
+        <a href={hotelPage?'#selection':'#quartiers'} className="shrink-0 hover:text-[#9e794a]">{hotelPage?(fr?'Les hôtels':'Hotels'):(city.slug==='maldives'?(fr?'Les atolls':'Atolls'):(fr?'Les quartiers':'Areas'))}</a>
         <a href="#experience" className="shrink-0 hover:text-[#9e794a]">{fr?'L’expérience':'Experiences'}</a>
         <a href="#conseils" className="shrink-0 hover:text-[#9e794a]">{fr?'Les conseils':'Advice'}</a>
       </div>
@@ -266,14 +271,14 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         {hotelPage?(fr?'02 · Comprendre la destination':'02 · Read the destination'):(fr?'01 · Choisir son paysage':'01 · Choose your surroundings')}
       </p>
       <h2 className="mt-4 max-w-4xl font-serif text-3xl sm:text-5xl">{fr
-        ?'Une ville, plusieurs façons de séjourner.'
-        :'One destination, very different places to stay.'}</h2>
+        ?city.slug==='maldives'?'Un archipel, plusieurs façons de vivre le luxe.':'Une ville, plusieurs façons de séjourner.'
+        :city.slug==='maldives'?'An archipelago, many ways to experience luxury.':'One destination, very different places to stay.'}</h2>
       <p className="mt-6 max-w-4xl text-base leading-8 text-[#50616b]">{fr?city.editorialFr:city.editorialEn}</p>
       <div className="mt-10 grid gap-4 md:grid-cols-3">
         {city.areas.map((area,i)=><article key={area.name} className="flex flex-col border border-[#e6ddce] bg-white p-7">
           <p className="font-serif text-3xl text-[#b18f59]">{String(i+1).padStart(2,'0')}</p>
           <h3 className="mt-5 font-serif text-2xl">{fr?area.name:area.enName}</h3>
-          {(city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui') && <DestinationAreaPhoto city={city.slug} index={i} locale={locale}/>}
+          {(city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui'||city.slug==='maldives') && <DestinationAreaPhoto city={city.slug} index={i} locale={locale}/>}
           <p className="mt-5 text-sm leading-7 text-[#4c606b]">{fr?area.fr:area.en}</p>
           <p className="mt-auto border-t border-[#e7dfd2] pt-5 text-sm leading-7 text-[#786145]">{fr?area.frWatch:area.enWatch}</p>
         </article>)}
@@ -296,6 +301,19 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             <CityPhoto photo={city.photos[item.key]} locale={locale}/>
             <h3 className="mt-4 font-serif text-xl text-[#19323e]">{fr?item.fr:item.en}</h3>
             <p className="mt-3 text-sm leading-6 text-[#546772]">{fr?item.frDetail:item.enDetail}</p>
+          </article>)}
+        </div>
+      </div>
+    </section>}
+    {city.slug==='maldives' && <section id="explorer-maldives" className="bg-[#f1ece2] py-16 sm:py-20">
+      <div className="mx-auto max-w-7xl px-5">
+        <p className="text-xs uppercase tracking-[.2em] text-[#9a744a]">{fr?'La vie entre deux horizons':'Beyond the horizon'}</p>
+        <h2 className="mt-4 font-serif text-3xl sm:text-5xl">{fr?'Depuis le ciel, jusque sous la surface.':'From the sky to life beneath the water.'}</h2>
+        <div className="mt-9 grid gap-6 sm:grid-cols-2">
+          {([{key:'seaplane',frTitle:'L’arrivée en hydravion',enTitle:'The seaplane arrival',frDetail:'Préparer les correspondances et les horaires de vols de jour.',enDetail:'Plan connections and daylight operating windows.'},{key:'manta-reef',frTitle:'Les raies manta',enTitle:'Manta encounters',frDetail:'Une rencontre avec la nature qui dépend de la saison et ne peut être garantie.',enDetail:'Seasonal wildlife sightings can never be guaranteed.'}] as const).map(item=>confirmedMaldivesAssets.has(city.photos[item.key].src) && <article key={item.key} className="bg-white p-5">
+            <CityPhoto photo={city.photos[item.key]} locale={locale}/>
+            <h3 className="mt-4 font-serif text-2xl">{fr?item.frTitle:item.enTitle}</h3>
+            <p className="mt-3 text-sm leading-7 text-[#53646c]">{fr?item.frDetail:item.enDetail}</p>
           </article>)}
         </div>
       </div>
@@ -329,11 +347,11 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         ← {fr?'Retour au guide complet de la destination':'Back to the complete destination guide'}
       </Link>
     </section>:<HotelTeaser guide={city} locale={locale}/>}
-    {city.slug==='koh-samui' && <section id="faq-koh-samui" className="mx-auto max-w-7xl px-5 py-14 sm:py-20">
+    {(city.slug==='koh-samui'||city.slug==='maldives') && <section id={city.slug==='maldives'?'faq-maldives':'faq-koh-samui'} className="mx-auto max-w-7xl px-5 py-14 sm:py-20">
       <p className="text-xs uppercase tracking-[.2em] text-[#947048]">{fr?'Questions fréquentes':'Frequently asked questions'}</p>
-      <h2 className="mt-4 font-serif text-3xl sm:text-5xl">{fr?'Préparer un séjour de luxe à Koh Samui':'Plan a luxury stay in Koh Samui'}</h2>
+      <h2 className="mt-4 font-serif text-3xl sm:text-5xl">{city.slug==='maldives'?(fr?'Préparer votre séjour de luxe aux Maldives':'Planning a luxury stay in the Maldives'):(fr?'Préparer un séjour de luxe à Koh Samui':'Plan a luxury stay in Koh Samui')}</h2>
       <div className="mt-8 grid gap-4 md:grid-cols-2">
-        {kohSamuiFaq[locale].map(item=><article key={item.q} className="border border-[#e5dbcb] bg-white p-7">
+        {(city.slug==='maldives'?maldivesFaq:kohSamuiFaq)[locale].map(item=><article key={item.q} className="border border-[#e5dbcb] bg-white p-7">
           <h3 className="font-serif text-xl text-[#173340]">{item.q}</h3>
           <p className="mt-4 text-sm leading-7 text-[#54666d]">{item.a}</p>
         </article>)}
