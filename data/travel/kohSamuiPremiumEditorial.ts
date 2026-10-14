@@ -13,7 +13,7 @@ export const kohSamuiHotelEditorial:Record<string,BodrumHotelEditorial> = {
       {
         "src": "/images/travel/koh-samui-premium/four-seasons/beach.webp",
         "fr": "Plage du Four Seasons Resort Koh Samui",
-        "en": "Four Seasons Resort Koh Samui beach",
+        "en": "Aerial view of Four Seasons Resort Koh Samui beach and hillside villas",
         "credit": "Four Seasons Resort Koh Samui · galerie officielle",
         "sourcePage": "https://www.fourseasons.com/kohsamui/photos-and-videos/"
       },
@@ -98,8 +98,8 @@ export const kohSamuiHotelEditorial:Record<string,BodrumHotelEditorial> = {
     "photos": [
       {
         "src": "/images/travel/koh-samui-premium/conrad/sunset-villa.webp",
-        "fr": "Villa au coucher du soleil au Conrad Koh Samui",
-        "en": "Sunset villa at Conrad Koh Samui",
+        "fr": "Piscine au coucher du soleil au Conrad Koh Samui",
+        "en": "Sunset pool at Conrad Koh Samui",
         "credit": "Conrad Koh Samui · galerie officielle",
         "sourcePage": "https://www.hilton.com/en/hotels/usmksci-conrad-koh-samui/"
       },
@@ -112,8 +112,8 @@ export const kohSamuiHotelEditorial:Record<string,BodrumHotelEditorial> = {
       },
       {
         "src": "/images/travel/koh-samui-premium/conrad/five-islands.webp",
-        "fr": "Vue sur les Five Islands depuis le Conrad Koh Samui",
-        "en": "View of the Five Islands from Conrad Koh Samui",
+        "fr": "Vue aérienne des villas sur la colline du Conrad Koh Samui",
+        "en": "Aerial view of Conrad Koh Samui hillside villas",
         "credit": "Conrad Koh Samui · galerie officielle",
         "sourcePage": "https://www.hilton.com/en/hotels/usmksci-conrad-koh-samui/"
       }
