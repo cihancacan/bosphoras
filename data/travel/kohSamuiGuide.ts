@@ -133,82 +133,82 @@ export const kohSamuiGuide:FeaturedCityGuideData = {
       "src": "/images/travel/koh-samui-premium/destination/maenam-beach.webp",
       "fr": "La plage de Mae Nam bordée de cocotiers à Koh Samui",
       "en": "Mae Nam beach shaded by coconut palms in Koh Samui",
-      "author": "Wikimedia Commons · auteur à vérifier dans le registre photo",
-      "license": "Attribution selon registre photo",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Fabio Achilli from Milano, Italy",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Maenam_Beach,_Koh_Samui_(48107481886).jpg"
     },
     "taling-ngam-sunset": {
       "src": "/images/travel/koh-samui-premium/destination/taling-ngam-sunset.webp",
       "fr": "Le littoral de Taling Ngam au soleil couchant",
       "en": "Taling Ngam coast at sunset",
-      "author": "Wikimedia Commons · auteur à vérifier dans le registre photo",
-      "license": "Attribution selon registre photo",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Five Islands Beach House · Taling Ngam coast",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.fiveislandssamui.com/location",
+      "sourcePage": "https://www.fiveislandssamui.com/location"
     },
     "plai-laem": {
       "src": "/images/travel/koh-samui-premium/destination/plai-laem.webp",
-      "fr": "Côte de Plai Laem au nord-est de Koh Samui",
-      "en": "Plai Laem coast in northeast Koh Samui",
-      "author": "Wikimedia Commons · auteur à vérifier dans le registre photo",
-      "license": "Attribution selon registre photo",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Le temple Wat Plai Laem au nord-est de Koh Samui",
+      "en": "Wat Plai Laem temple in northeast Koh Samui",
+      "author": "Ozkartman",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wat_Plai_Laem,_Koh_Samui,_Thailand.jpg"
     },
     "lamai-beach": {
       "src": "/images/travel/koh-samui-premium/destination/lamai-beach.webp",
       "fr": "Lamai Beach et la végétation tropicale",
       "en": "Lamai Beach and tropical landscape",
-      "author": "Wikimedia Commons · auteur à vérifier dans le registre photo",
-      "license": "Attribution selon registre photo",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Fabio Achilli from Milano, Italy",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Koh_Samui,_Lamai_Beach_(6217346513).jpg"
     },
     "bophut-fishermans": {
       "src": "/images/travel/koh-samui-premium/destination/bophut-fishermans.webp",
       "fr": "Fisherman's Village de Bophut et le front de mer",
       "en": "Bophut Fisherman's Village waterfront",
-      "author": "Wikimedia Commons · auteur à vérifier dans le registre photo",
-      "license": "Attribution selon registre photo",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Karpe Diem Villa · Fisherman's Village waterfront",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://karpediemvilla.com/fishermans-village.php",
+      "sourcePage": "https://karpediemvilla.com/fishermans-village.php"
     },
     "ang-thong": {
       "src": "/images/travel/koh-samui-premium/destination/ang-thong.webp",
       "fr": "Îles et eaux turquoise du parc marin d'Ang Thong",
       "en": "Islands and turquoise waters in Ang Thong Marine Park",
-      "author": "Wikimedia Commons · auteur à vérifier dans le registre photo",
-      "license": "Attribution selon registre photo",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Abrget47j",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ang_Thong_National_Marine_Park.jpg"
     },
     "big-buddha": {
       "src": "/images/travel/koh-samui-premium/destination/big-buddha.webp",
       "fr": "Le temple du Grand Bouddha de Koh Samui",
       "en": "Big Buddha temple on Koh Samui",
-      "author": "Wikimedia Commons · auteur à vérifier dans le registre photo",
-      "license": "Attribution selon registre photo",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Golfer70",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Koh_Samui,_Big_Buddha_01.jpg"
     },
     "chaweng-coast": {
       "src": "/images/travel/koh-samui-premium/destination/chaweng-coast.webp",
       "fr": "Vue de la plage de Chaweng à Koh Samui",
       "en": "Chaweng beachfront in Koh Samui",
-      "author": "Wikimedia Commons · auteur à vérifier dans le registre photo",
-      "license": "Attribution selon registre photo",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Damian Moore",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chaweng_Beach,_Koh_Samui_(27953535942).jpg"
     },
     "silver-beach": {
       "src": "/images/travel/koh-samui-premium/destination/silver-beach.webp",
       "fr": "Silver Beach près de Lamai à Koh Samui",
       "en": "Silver Beach near Lamai in Koh Samui",
-      "author": "Wikimedia Commons · auteur à vérifier dans le registre photo",
-      "license": "Attribution selon registre photo",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Koudkeu",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Silver_Beach_Samui.jpg"
     }
   }
 };
