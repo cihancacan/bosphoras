@@ -1,6 +1,6 @@
 {
   "scope": "Los Cabos official-resort galleries, Preview only; 12 exact-property shots sought",
-  "generatedAt": "2026-10-14T22:35:21.712983+00:00",
+  "generatedAt": "2026-10-14T22:38:12.577167+00:00",
   "expected": 12,
   "downloaded": 12,
   "items": [
@@ -166,24 +166,24 @@
       "scene": [
         "pool"
       ],
-      "sourcePage": "https://www.rosewoodhotels.com/en/las-ventanas-los-cabos/overview/gallery",
+      "sourcePage": "https://www.expedia.com/Los-Cabos-Hotels-Las-Ventanas-Al-Paraiso.h41895.Hotel-Information",
       "localPath": "/images/travel/los-cabos-premium/las-ventanas/main-pool.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
       "status": "downloaded",
-      "downloadUrl": "https://picasso.rosewoodhotelgroup.com/transform/9474716e-25b8-487b-ab8c-46aa39822bb5/RWLVP_Experience_Resort_Pools",
-      "sourceAlt": "Oceanfront Junior Suite",
+      "downloadUrl": "https://images.trvl-media.com/lodging/1000000/50000/41900/41895/a722ee47.jpg?impolicy=resizecrop&ra=fit&rw=1200",
+      "sourceAlt": "Expedia · Las Ventanas resort beachfront pools",
       "originalSize": [
-        2000,
-        1200
+        1200,
+        675
       ],
       "outputSize": [
-        1950,
-        1170
+        1200,
+        675
       ],
-      "brightness": 124.1,
-      "sha256": "d4d60e434731c35f22b109e25faeaa5791afcf67389cde0c611e5820a22b8690",
-      "bytes": 82462,
-      "credit": "Las Ventanas al Paraíso, A Rosewood Resort · official website"
+      "brightness": 123.5,
+      "sha256": "f522170a892cf42e5673fab0d70ae1466c376fa4a6a790274e89980bec4a79ac",
+      "bytes": 175082,
+      "credit": "Expedia · Las Ventanas resort beachfront pools"
     },
     {
       "hotel": "las-ventanas",

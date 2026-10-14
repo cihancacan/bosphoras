@@ -1,6 +1,6 @@
 {
   "scope": "Los Cabos destination images from Wikimedia Commons only",
-  "generatedAt": "2026-10-14T22:35:21.712983+00:00",
+  "generatedAt": "2026-10-14T22:38:12.577167+00:00",
   "expected": 9,
   "downloaded": 9,
   "items": [
@@ -32,23 +32,23 @@
       "search": "Cabo San Lucas coast",
       "localPath": "/images/travel/los-cabos-premium/destination/baja-coast.webp",
       "status": "downloaded",
-      "sourceFile": "File:Cabo San Lucas RMG F1423.tiff",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cabo_San_Lucas_RMG_F1423.tiff",
-      "author": "Ringrose, Basil",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Cabo_San_Lucas_RMG_F1423.tiff/lossy-page1-1920px-Cabo_San_Lucas_RMG_F1423.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourceFile": "Cabo San Lucas cliffscape by Efrain Alonso",
+      "sourcePage": "https://www.pexels.com/photo/photo-of-seashore-3355357/",
+      "author": "Efrain Alonso",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/",
+      "downloadUrl": "https://images.pexels.com/photos/3355357/pexels-photo-3355357.jpeg?auto=compress&cs=tinysrgb&w=1800",
       "originalSize": [
-        1920,
-        1474
+        1800,
+        1201
       ],
       "outputSize": [
-        1889,
-        1450
+        1800,
+        1201
       ],
-      "brightness": 191.7,
-      "sha256": "34e6d18c170e3e5305754064e39641822fb015607916d7ab71dfe914a706bc86",
-      "bytes": 347828
+      "brightness": 140.4,
+      "sha256": "bd31839e522d6353e4bf98d61916a1274692a22ff8ce4f32b233d7c8e2d73366",
+      "bytes": 368788
     },
     {
       "key": "palmilla-bay",
