@@ -154,7 +154,7 @@ PREFERRED_MEDIA={
  ("one-and-only-palmilla","resort-pool"): ["https://eu-images.contentstack.com/v3/assets/blte218090c2a6fb1e2/blt3e4daec77f8832fa/6695022512402825615a9dc6/one-and-only-palmilla-DER1119235.jpg","https://www.dertour.de/reisemagazin/beste-hotels-mexiko","DERTOUR · One&Only Palmilla infinity pool"],
  ("waldorf-pedregal","pacific-villa"): ["https://cdn.waldorfastorialoscabospedregal.com/wp-content/uploads/2021/10/14030433/K1RFU2-PEDREGAL-TWO-BEDROOM-BEACHFRONT-SUITE-WAPedregal-Low-Res-4-scaled.jpg","https://www.waldorfastorialoscabospedregal.com/resort/","Waldorf Astoria Pedregal · beachfront private-pool suite"],
  ("waldorf-pedregal","pedregal-cliff"): ["https://cdn.waldorfastorialoscabospedregal.com/wp-content/uploads/2025/10/09183450/02-Guest-Rooms-Suites-King-Ocean-View-Vista.jpg","https://www.waldorfastorialoscabospedregal.com/rooms/one-bedroom-ocean-view-suite/","Waldorf Astoria Pedregal · ocean-view suite"],
- ("las-ventanas","main-pool"): ["https://m.rosewoodhotels.com/content/dam/rosewoodhotels/property/las-ventanas-los-cabos/en/images/gallery/main-pool.jpeg","https://www.rosewoodhotels.com/en/las-ventanas-los-cabos/overview/gallery","Rosewood Las Ventanas · main pool"],
+ ("las-ventanas","main-pool"): ["https://images.trvl-media.com/lodging/1000000/50000/41900/41895/a722ee47.jpg?impolicy=resizecrop&ra=fit&rw=1200","https://www.expedia.com/Los-Cabos-Hotels-Las-Ventanas-Al-Paraiso.h41895.Hotel-Information","Expedia · Las Ventanas resort beachfront pools"],
  ("las-ventanas","ocean-suite"): ["https://las-ventanas-al-paraiso-a-rosewood-resort.los-caboshotels.com/data/Images/OriginalPhoto/17078/1707820/1707820885/image-san-jose-del-cabo-las-ventanas-al-paraiso-a-rosewood-resort-55.JPEG","https://las-ventanas-al-paraiso-a-rosewood-resort.los-caboshotels.com/en/","Los Cabos Hotels · Las Ventanas ocean-view suite"],
  ("zadun-reserve","pool-suite"): ["https://architectureprizecom.s3-us-west-2.amazonaws.com/uploads/97293/22-10824-21/medium/a8715926f5c041878f3199bcf539a20a.jpg","https://architectureprize.com/winners/winner.php?id=4770","Architecture MasterPrize · Zadún pool villa"],
 }
@@ -371,10 +371,29 @@ def try_destination(key,query,matches):
  print("CITY",key,row["status"],row.get("sourceFile",""),flush=True)
  return row
 
+# Independently identified Cabo coast image replaces a historical engraving if source is reachable.
+# Never describe an archival print as a modern photograph.
+def override_baja_photo(records):
+ for row in records:
+  if row["key"]!="baja-coast":continue
+  url="https://images.pexels.com/photos/3355357/pexels-photo-3355357.jpeg?auto=compress&cs=tinysrgb&w=1800"
+  source="https://www.pexels.com/photo/photo-of-seashore-3355357/"
+  try:
+   binary,actual=get(url,timeout=30)
+   content,original,output,light,sha=convert(binary,900)
+   persist("destination/baja-coast.webp",content,sha)
+   row.update(status="downloaded",sourceFile="Cabo San Lucas cliffscape by Efrain Alonso",sourcePage=source,
+      author="Efrain Alonso",license="Pexels License",licenseUrl="https://www.pexels.com/license/",
+      downloadUrl=actual,originalSize=original,outputSize=output,brightness=light,sha256=sha,bytes=len(content))
+   print("UPDATED Baja coast with real location photograph",flush=True)
+  except Exception as error:print("Baja image replacement unavailable",str(error)[:130],flush=True)
+ return records
+
 hotel_out=[]
 for key,record in HOTELS.items():
  hotel_out.extend(try_hotel(key,record))
 dest_out=[try_destination(key,q,terms) for key,q,terms in DEST]
+dest_out=override_baja_photo(dest_out)
 stamp=datetime.now(timezone.utc).isoformat()
 HOTEL_REPORT.write_text(json.dumps({"scope":"Los Cabos official-resort galleries, Preview only; 12 exact-property shots sought","generatedAt":stamp,"expected":12,"downloaded":sum(x["status"]=="downloaded" for x in hotel_out),"items":hotel_out},ensure_ascii=False,indent=2)+"\n")
 CITY_REPORT.write_text(json.dumps({"scope":"Los Cabos destination images from Wikimedia Commons only","generatedAt":stamp,"expected":9,"downloaded":sum(x["status"]=="downloaded" for x in dest_out),"items":dest_out},ensure_ascii=False,indent=2)+"\n")
