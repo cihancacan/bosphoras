@@ -1,5 +1,6 @@
+import { kohSamuiGuide } from './kohSamuiGuide';
 /** Curated Travel destination guides. Editorial selections only: no supplier inventory, booking, rates or claim of first-hand inspection. */
-export type FeaturedCitySlug = 'bodrum' | 'antalya' | 'dubai' | 'paris' | 'saint-tropez' | 'bali' | 'phuket';
+export type FeaturedCitySlug = 'bodrum' | 'antalya' | 'dubai' | 'paris' | 'saint-tropez' | 'bali' | 'phuket' | 'koh-samui';
 export type FeaturedCityPhoto = {src:string;fr:string;en:string;author:string;license:string;licenseUrl:string;sourcePage:string};
 export type FeaturedCityArea = {name:string;enName:string;fr:string;en:string;frWatch:string;enWatch:string};
 export type FeaturedCityExperience = {frTitle:string;enTitle:string;fr:string;en:string};
@@ -1200,7 +1201,8 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Patong_Beach_in_Phuket.jpg"
     }
   }
-}
+},
+'koh-samui': kohSamuiGuide
 };
 export function featuredCityGuide(slug:string | undefined):FeaturedCityGuideData | undefined {
  if (!slug || !(slug in featuredCityGuides)) return undefined;
