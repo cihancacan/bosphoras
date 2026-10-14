@@ -133,82 +133,82 @@ export const maldivesGuide:FeaturedCityGuideData = {
       "src": "/images/travel/maldives-premium/destination/lagoon-aerial.webp",
       "fr": "Lagon turquoise et îlots coralliens des Maldives vus du ciel",
       "en": "Aerial turquoise lagoon and coral islands of the Maldives",
-      "author": "À préciser après audit des photographies",
-      "license": "À confirmer",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Dr. Ondřej Havelka (cestovatel)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_shot,_Maldives.jpg"
     },
     "noonu-atoll": {
       "src": "/images/travel/maldives-premium/destination/noonu-atoll.webp",
-      "fr": "Atoll de Noonu et ses îles au milieu du lagon",
-      "en": "Noonu Atoll islands in a turquoise lagoon",
-      "author": "À préciser après audit des photographies",
-      "license": "À confirmer",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Vue aérienne des villas de Soneva Jani dans l’atoll de Noonu",
+      "en": "Aerial view of Soneva Jani villas in Noonu Atoll",
+      "author": "Airdomo · Soneva Jani Noonu Atoll aerial",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://airdomo.com/properties/luxury-maldives-beach-over-water-villas-sale-soneva",
+      "sourcePage": "https://airdomo.com/properties/luxury-maldives-beach-over-water-villas-sale-soneva"
     },
     "baa-atoll": {
       "src": "/images/travel/maldives-premium/destination/baa-atoll.webp",
       "fr": "Eaux turquoise et îles de l'atoll de Baa",
       "en": "Turquoise waters and islands of Baa Atoll",
-      "author": "À préciser après audit des photographies",
-      "license": "À confirmer",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Frédéric Ducarme",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Baa_atoll_islands.JPG"
     },
     "north-male-atoll": {
       "src": "/images/travel/maldives-premium/destination/north-male-atoll.webp",
-      "fr": "Îles de North Malé Atoll et leur lagon",
-      "en": "North Malé Atoll islands and lagoon",
-      "author": "À préciser après audit des photographies",
-      "license": "À confirmer",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Bandos Island dans l’atoll de Malé Nord",
+      "en": "Bandos Island in North Malé Atoll",
+      "author": "Frans-Banja Mulder",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bandos_Island_1_-_panoramio.jpg"
     },
     "overwater-villas": {
       "src": "/images/travel/maldives-premium/destination/overwater-villas.webp",
-      "fr": "Villas sur pilotis au-dessus du lagon maldivien",
-      "en": "Overwater villas above a Maldivian lagoon",
-      "author": "À préciser après audit des photographies",
-      "license": "À confirmer",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Villas sur pilotis à Medhufushi dans l’atoll de Meemu",
+      "en": "Overwater villas at Medhufushi in Meemu Atoll",
+      "author": "Priyaflorenceshah",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:View_from_the_water_villas_at_Medhufushi_Island_Resort_in_the_Maldives.jpg"
     },
     "beach-island": {
       "src": "/images/travel/maldives-premium/destination/beach-island.webp",
       "fr": "Plage de sable blanc et palmiers aux Maldives",
       "en": "Palm-lined white-sand beach in the Maldives",
-      "author": "À préciser après audit des photographies",
-      "license": "À confirmer",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Dr. Ondřej Havelka (cestovatel)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_shot_of_a_small_island_on_a_coral_reef_in_the_Maldives.jpg"
     },
     "sandbank": {
       "src": "/images/travel/maldives-premium/destination/sandbank.webp",
       "fr": "Banc de sable isolé au milieu de l'océan Indien",
       "en": "Secluded Maldives sandbank in the Indian Ocean",
-      "author": "À préciser après audit des photographies",
-      "license": "À confirmer",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "dronepicr",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Malediven_Sandbank_(28800504836).jpg"
     },
     "seaplane": {
       "src": "/images/travel/maldives-premium/destination/seaplane.webp",
-      "fr": "Hydravion arrivant dans le lagon des Maldives",
-      "en": "Seaplane arriving over Maldives lagoon",
-      "author": "À préciser après audit des photographies",
-      "license": "À confirmer",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Hydravion au large du W Retreat aux Maldives",
+      "en": "Seaplane by W Retreat in the Maldives",
+      "author": "Simon_sees from Australia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Seaplane_at_W_Retreat_Maldives.jpg"
     },
     "manta-reef": {
       "src": "/images/travel/maldives-premium/destination/manta-reef.webp",
-      "fr": "Raies manta dans les eaux maldiviennes",
-      "en": "Manta rays in Maldivian waters",
-      "author": "À préciser après audit des photographies",
-      "license": "À confirmer",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Raie manta observée près du récif de Fushivaru Thila",
+      "en": "Manta ray near the Fushivaru Thila reef",
+      "author": "asands from London, UK",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Manta_alfredi_fushivaru_thila.jpg"
     }
   }
 };
