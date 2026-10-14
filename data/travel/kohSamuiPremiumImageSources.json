@@ -1,0 +1,224 @@
+{
+  "scope": "Koh Samui official-resort galleries, Preview only; 12 exact-property shots sought",
+  "generatedAt": "2026-10-14T21:37:37.965196+00:00",
+  "expected": 12,
+  "downloaded": 3,
+  "items": [
+    {
+      "hotel": "four-seasons",
+      "key": "pool-villa",
+      "scene": [
+        "villa",
+        "pool"
+      ],
+      "sourcePage": "https://www.fourseasons.com/kohsamui/photos-and-videos/",
+      "localPath": "/images/travel/koh-samui-premium/four-seasons/pool-villa.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "failed",
+      "errors": [
+        "403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~75.701/publi"
+      ]
+    },
+    {
+      "hotel": "four-seasons",
+      "key": "beach",
+      "scene": [
+        "beach",
+        "shore"
+      ],
+      "sourcePage": "https://www.fourseasons.com/kohsamui/photos-and-videos/",
+      "localPath": "/images/travel/koh-samui-premium/four-seasons/beach.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "failed",
+      "errors": [
+        "403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~75.701/publi"
+      ]
+    },
+    {
+      "hotel": "four-seasons",
+      "key": "dining",
+      "scene": [
+        "dining",
+        "restaurant",
+        "kitchen",
+        "terrace"
+      ],
+      "sourcePage": "https://www.fourseasons.com/kohsamui/photos-and-videos/",
+      "localPath": "/images/travel/koh-samui-premium/four-seasons/dining.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "failed",
+      "errors": [
+        "403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~75.701/publi"
+      ]
+    },
+    {
+      "hotel": "six-senses",
+      "key": "villa-pool",
+      "scene": [
+        "villa",
+        "pool"
+      ],
+      "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/samui/gallery/",
+      "localPath": "/images/travel/koh-samui-premium/six-senses/villa-pool.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "failed",
+      "errors": [
+        "not a landscape editorial image"
+      ]
+    },
+    {
+      "hotel": "six-senses",
+      "key": "spa",
+      "scene": [
+        "spa",
+        "wellness",
+        "treatment"
+      ],
+      "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/samui/gallery/",
+      "localPath": "/images/travel/koh-samui-premium/six-senses/spa.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "failed",
+      "errors": [
+        "not a landscape editorial image"
+      ]
+    },
+    {
+      "hotel": "six-senses",
+      "key": "coast",
+      "scene": [
+        "sea",
+        "ocean",
+        "coast",
+        "beach"
+      ],
+      "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/samui/gallery/",
+      "localPath": "/images/travel/koh-samui-premium/six-senses/coast.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "failed",
+      "errors": [
+        "not a landscape editorial image"
+      ]
+    },
+    {
+      "hotel": "banyan-tree",
+      "key": "pool-villa",
+      "scene": [
+        "pool",
+        "villa"
+      ],
+      "sourcePage": "https://www.banyantree.com/thailand/samui",
+      "localPath": "/images/travel/koh-samui-premium/banyan-tree/pool-villa.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2023-11%2FBTTHSM_WK_0923_guest%20room_family%20horizon%20hillcrest_HR0001-1.jpg&w=3840&q=75",
+      "sourceAlt": "Luxurious family horizon hillcrest pool villas overlook lush forest at Banyan Tree Samui Thailand, offering tranquil escape.",
+      "originalSize": [
+        1200,
+        899
+      ],
+      "outputSize": [
+        1200,
+        899
+      ],
+      "brightness": 103.3,
+      "sha256": "9f48b36d8846a09a024b5af3c21470cdb49c2cfd9400fa99f99ff70f61b666b0",
+      "bytes": 221260,
+      "credit": "Banyan Tree Samui · official website"
+    },
+    {
+      "hotel": "banyan-tree",
+      "key": "private-bay",
+      "scene": [
+        "bay",
+        "beach",
+        "resort"
+      ],
+      "sourcePage": "https://www.banyantree.com/thailand/samui",
+      "localPath": "/images/travel/koh-samui-premium/banyan-tree/private-bay.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://www.banyantree.com/assets/2021-10/resort-masthead_0.jpg",
+      "sourceAlt": "Luxury Spa Retreat Villa & Resort in Banyan Tree Koh Samui",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "brightness": 107.7,
+      "sha256": "023bf3d2ab1e398cac7888320132d5fb550fbe3cc43c3c0ee11cfd97099a38a4",
+      "bytes": 482420,
+      "credit": "Banyan Tree Samui · official website"
+    },
+    {
+      "hotel": "banyan-tree",
+      "key": "spa",
+      "scene": [
+        "spa",
+        "rainforest",
+        "wellbeing"
+      ],
+      "sourcePage": "https://www.banyantree.com/thailand/samui",
+      "localPath": "/images/travel/koh-samui-premium/banyan-tree/spa.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "downloaded",
+      "downloadUrl": "https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2021-10%2Fresort-masthead_0.jpg&w=3840&q=75",
+      "sourceAlt": "Luxury Spa Retreat Villa & Resort in Banyan Tree Koh Samui",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "brightness": 107.8,
+      "sha256": "b7983f43df7b15ecd5d8ce4ffd89e55e52e39783a3098c91586ea40bedce8d47",
+      "bytes": 481898,
+      "credit": "Banyan Tree Samui · official website"
+    },
+    {
+      "hotel": "conrad",
+      "key": "sunset-villa",
+      "scene": [
+        "villa",
+        "sunset"
+      ],
+      "sourcePage": "https://www.hilton.com/en/hotels/usmksci-conrad-koh-samui/",
+      "localPath": "/images/travel/koh-samui-premium/conrad/sunset-villa.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "failed",
+      "errors": []
+    },
+    {
+      "hotel": "conrad",
+      "key": "infinity-pool",
+      "scene": [
+        "pool",
+        "infinity"
+      ],
+      "sourcePage": "https://www.hilton.com/en/hotels/usmksci-conrad-koh-samui/",
+      "localPath": "/images/travel/koh-samui-premium/conrad/infinity-pool.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "failed",
+      "errors": []
+    },
+    {
+      "hotel": "conrad",
+      "key": "five-islands",
+      "scene": [
+        "island",
+        "ocean",
+        "view",
+        "resort"
+      ],
+      "sourcePage": "https://www.hilton.com/en/hotels/usmksci-conrad-koh-samui/",
+      "localPath": "/images/travel/koh-samui-premium/conrad/five-islands.webp",
+      "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
+      "status": "failed",
+      "errors": []
+    }
+  ]
+}

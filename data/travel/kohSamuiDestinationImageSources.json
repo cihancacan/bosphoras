@@ -1,0 +1,181 @@
+{
+  "scope": "Koh Samui destination images from Wikimedia Commons only",
+  "generatedAt": "2026-10-14T21:37:37.965196+00:00",
+  "expected": 9,
+  "downloaded": 7,
+  "items": [
+    {
+      "key": "maenam-beach",
+      "search": "Maenam Beach Koh Samui",
+      "localPath": "/images/travel/koh-samui-premium/destination/maenam-beach.webp",
+      "status": "downloaded",
+      "sourceFile": "File:Maenam Beach, Koh Samui (48107481886).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Maenam_Beach,_Koh_Samui_(48107481886).jpg",
+      "author": "Fabio Achilli from Milano, Italy",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Maenam_Beach%2C_Koh_Samui_%2848107481886%29.jpg/1920px-Maenam_Beach%2C_Koh_Samui_%2848107481886%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "brightness": 142.0,
+      "sha256": "01284fa2c5a716f52358f134237cc48c63bf61d8ef1ac7ba2b0893c02ca9101c",
+      "bytes": 393374
+    },
+    {
+      "key": "taling-ngam-sunset",
+      "search": "Taling Ngam Koh Samui",
+      "localPath": "/images/travel/koh-samui-premium/destination/taling-ngam-sunset.webp",
+      "status": "failed"
+    },
+    {
+      "key": "plai-laem",
+      "search": "Plai Laem Koh Samui",
+      "localPath": "/images/travel/koh-samui-premium/destination/plai-laem.webp",
+      "status": "downloaded",
+      "sourceFile": "File:Wat Plai Laem, Koh Samui, Thailand.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wat_Plai_Laem,_Koh_Samui,_Thailand.jpg",
+      "author": "Ozkartman",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Wat_Plai_Laem%2C_Koh_Samui%2C_Thailand.jpg/1920px-Wat_Plai_Laem%2C_Koh_Samui%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        844
+      ],
+      "outputSize": [
+        1920,
+        844
+      ],
+      "brightness": 123.1,
+      "sha256": "a7db8981b371ca79ea57967fc02d54b54d773deae70ac8133c8e5afeb0c36c10",
+      "bytes": 357522
+    },
+    {
+      "key": "lamai-beach",
+      "search": "Lamai Beach Koh Samui",
+      "localPath": "/images/travel/koh-samui-premium/destination/lamai-beach.webp",
+      "status": "downloaded",
+      "sourceFile": "File:Koh Samui, Lamai Beach (6217346513).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Koh_Samui,_Lamai_Beach_(6217346513).jpg",
+      "author": "Fabio Achilli from Milano, Italy",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Koh_Samui%2C_Lamai_Beach_%286217346513%29.jpg/1920px-Koh_Samui%2C_Lamai_Beach_%286217346513%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1209
+      ],
+      "outputSize": [
+        1920,
+        1209
+      ],
+      "brightness": 136.2,
+      "sha256": "5432766abb0af49e1edf5bfe41688cfa93cd056a3a636235eed48e1176b62177",
+      "bytes": 497414
+    },
+    {
+      "key": "bophut-fishermans",
+      "search": "Bophut Fisherman Village Koh Samui",
+      "localPath": "/images/travel/koh-samui-premium/destination/bophut-fishermans.webp",
+      "status": "failed"
+    },
+    {
+      "key": "ang-thong",
+      "search": "Mu Ko Ang Thong National Marine Park",
+      "localPath": "/images/travel/koh-samui-premium/destination/ang-thong.webp",
+      "status": "downloaded",
+      "sourceFile": "File:Ang Thong National Marine Park.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ang_Thong_National_Marine_Park.jpg",
+      "author": "Abrget47j",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Ang_Thong_National_Marine_Park.jpg/1920px-Ang_Thong_National_Marine_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1285
+      ],
+      "outputSize": [
+        1920,
+        1285
+      ],
+      "brightness": 122.8,
+      "sha256": "da648669ebb1783f76f085ef78df80b28fc83d78835fb84984aaa7e403775833",
+      "bytes": 850404
+    },
+    {
+      "key": "big-buddha",
+      "search": "Big Buddha Koh Samui",
+      "localPath": "/images/travel/koh-samui-premium/destination/big-buddha.webp",
+      "status": "downloaded",
+      "sourceFile": "File:Koh Samui, Big Buddha 01.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Koh_Samui,_Big_Buddha_01.jpg",
+      "author": "Golfer70",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Koh_Samui%2C_Big_Buddha_01.jpg/1920px-Koh_Samui%2C_Big_Buddha_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1920,
+        1280
+      ],
+      "brightness": 94.7,
+      "sha256": "9332a0e08558780f7ce8257c999bc399cb60d2d7a511dece20eeb6c99fc22670",
+      "bytes": 265412
+    },
+    {
+      "key": "chaweng-coast",
+      "search": "Chaweng Beach Koh Samui",
+      "localPath": "/images/travel/koh-samui-premium/destination/chaweng-coast.webp",
+      "status": "downloaded",
+      "sourceFile": "File:Chaweng Beach, Koh Samui (27953535942).jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chaweng_Beach,_Koh_Samui_(27953535942).jpg",
+      "author": "Damian Moore",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Chaweng_Beach%2C_Koh_Samui_%2827953535942%29.jpg/1920px-Chaweng_Beach%2C_Koh_Samui_%2827953535942%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1213
+      ],
+      "outputSize": [
+        1920,
+        1213
+      ],
+      "brightness": 165.0,
+      "sha256": "706916daaaf384ff123d59e21dbb862d49d438877bdf756dd19d2744840a34ea",
+      "bytes": 227106
+    },
+    {
+      "key": "silver-beach",
+      "search": "Silver Beach Koh Samui",
+      "localPath": "/images/travel/koh-samui-premium/destination/silver-beach.webp",
+      "status": "downloaded",
+      "sourceFile": "File:Silver Beach Samui.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Silver_Beach_Samui.jpg",
+      "author": "Koudkeu",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Silver_Beach_Samui.jpg/1920px-Silver_Beach_Samui.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1920,
+        1440
+      ],
+      "brightness": 121.1,
+      "sha256": "cb287d5b56caf62599a6735f36796c60109564755572bb18b933b2171c3c60d2",
+      "bytes": 566910
+    }
+  ]
+}
