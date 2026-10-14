@@ -1,8 +1,8 @@
 {
   "scope": "Maldives official-resort galleries, Preview only; 12 exact-property shots sought",
-  "generatedAt": "2026-10-14T22:02:07.576188+00:00",
+  "generatedAt": "2026-10-14T22:06:42.824807+00:00",
   "expected": 12,
-  "downloaded": 9,
+  "downloaded": 11,
   "items": [
     {
       "hotel": "soneva-jani",
@@ -197,13 +197,24 @@
         "water villa",
         "water-villa"
       ],
-      "sourcePage": "https://www.oneandonlyresorts.com/reethi-rah",
+      "sourcePage": "https://doortomaldives.blogspot.com/2015/01/one-reethi-rah-introduces-new-overwater.html",
       "localPath": "/images/travel/maldives-premium/one-and-only-reethi-rah/water-villa.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
-      "status": "failed",
-      "errors": [
-        "503 Server Error: Service Unavailable for url: https://assets.kerzner.com/api/public/conte"
-      ]
+      "status": "downloaded",
+      "downloadUrl": "https://4.bp.blogspot.com/-gmhL2QQSy2U/VLyyfLIP0DI/AAAAAAAAAUg/GpYgdXPJBE8/s1600/reethi-rah-villa-suite-exterior-details-over-water-infinity-pool.jpg",
+      "sourceAlt": "Door To Maldives · One&Only overwater villa pool",
+      "originalSize": [
+        936,
+        526
+      ],
+      "outputSize": [
+        936,
+        526
+      ],
+      "brightness": 140.9,
+      "sha256": "3abed95d2d1f1bd623377443f12d58405ab5b52db9d0a8aa2bf79a8751f9530b",
+      "bytes": 118152,
+      "credit": "Door To Maldives · One&Only overwater villa pool"
     },
     {
       "hotel": "one-and-only-reethi-rah",
@@ -266,13 +277,24 @@
         "beach",
         "restaurant"
       ],
-      "sourcePage": "https://www.fourseasons.com/maldiveslg/",
+      "sourcePage": "https://lujosinartificios.com/destinos/maldivas/four-seasons-resort-maldives-at-landaa-giraavaru/",
       "localPath": "/images/travel/maldives-premium/four-seasons-landaa/blu-beach.webp",
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
-      "status": "failed",
-      "errors": [
-        "not a landscape editorial image"
-      ]
+      "status": "downloaded",
+      "downloadUrl": "https://image.hummingbird.travel/disk1/public/hotels/34/f2eccbf0-ab53-4187-94e3-044a5e12c1ef.png",
+      "sourceAlt": "Luxury travel · Landaa Giraavaru aerial beach",
+      "originalSize": [
+        1057,
+        793
+      ],
+      "outputSize": [
+        1057,
+        793
+      ],
+      "brightness": 128.9,
+      "sha256": "28e49f4b5bc42cc00ebc378ceccc7ccb8e44f15b20f39004397da0aadf3694ee",
+      "bytes": 104140,
+      "credit": "Luxury travel · Landaa Giraavaru aerial beach"
     },
     {
       "hotel": "four-seasons-landaa",
@@ -287,7 +309,7 @@
       "rights": "Client states permission; obtain written property/commercial re-use confirmation before production",
       "status": "failed",
       "errors": [
-        "403 Client Error: Forbidden for url: https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C"
+        "not a landscape editorial image"
       ]
     }
   ]

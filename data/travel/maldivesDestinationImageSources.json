@@ -1,49 +1,150 @@
 {
   "scope": "Maldives destination images from Wikimedia Commons only",
-  "generatedAt": "2026-10-14T22:02:07.576188+00:00",
+  "generatedAt": "2026-10-14T22:06:42.824807+00:00",
   "expected": 9,
-  "downloaded": 2,
+  "downloaded": 9,
   "items": [
     {
       "key": "lagoon-aerial",
-      "search": "Maldives aerial atoll lagoon",
+      "search": "Aerial shot, Maldives.jpg",
       "localPath": "/images/travel/maldives-premium/destination/lagoon-aerial.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "File:Aerial shot, Maldives.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_shot,_Maldives.jpg",
+      "author": "Dr. Ondřej Havelka (cestovatel)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Aerial_shot%2C_Maldives.jpg/1920px-Aerial_shot%2C_Maldives.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1920,
+        1280
+      ],
+      "brightness": 122.8,
+      "sha256": "a94eb1dfcc14bc8a94891aeade2a7b36cdeed015f0b07b1c402fc7898b8de2d7",
+      "bytes": 515746
     },
     {
       "key": "noonu-atoll",
-      "search": "Noonu Atoll Maldives islands",
+      "search": "Soneva Jani Noonu Atoll aerial",
       "localPath": "/images/travel/maldives-premium/destination/noonu-atoll.webp",
-      "status": "failed",
-      "lastError": "not a landscape editorial image"
+      "status": "downloaded",
+      "sourceFile": "Airdomo · Soneva Jani Noonu Atoll aerial",
+      "sourcePage": "https://airdomo.com/properties/luxury-maldives-beach-over-water-villas-sale-soneva",
+      "author": "Airdomo · Soneva Jani Noonu Atoll aerial",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://airdomo.com/properties/luxury-maldives-beach-over-water-villas-sale-soneva",
+      "downloadUrl": "https://cdn.airdomo.com/property-media/feed/sphere-estates/images/7b748b3a9f32272b55ddb606d64ec85e142ff1a3df9757efd83422a4b95d17cc.webp",
+      "originalSize": [
+        1920,
+        1339
+      ],
+      "outputSize": [
+        1920,
+        1339
+      ],
+      "brightness": 119.1,
+      "sha256": "4783d5846189f37f6c356495a9e5541179bf4957cde8e5699e6602a4163aa730",
+      "bytes": 172576
     },
     {
       "key": "baa-atoll",
-      "search": "Baa Atoll Maldives lagoon",
+      "search": "Baa atoll islands.JPG",
       "localPath": "/images/travel/maldives-premium/destination/baa-atoll.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "File:Baa atoll islands.JPG",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Baa_atoll_islands.JPG",
+      "author": "Frédéric Ducarme",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Baa_atoll_islands.JPG/1920px-Baa_atoll_islands.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1920,
+        1440
+      ],
+      "brightness": 122.1,
+      "sha256": "54ccf983d60d8b4b149bf0ae5a77081120af37146592ba20f5660522ce454326",
+      "bytes": 102572
     },
     {
       "key": "north-male-atoll",
-      "search": "North Male Atoll Maldives aerial",
+      "search": "Bandos Island 1 - panoramio.jpg",
       "localPath": "/images/travel/maldives-premium/destination/north-male-atoll.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "File:Bandos Island 1 - panoramio.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bandos_Island_1_-_panoramio.jpg",
+      "author": "Frans-Banja Mulder",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Bandos_Island_1_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "originalSize": [
+        1500,
+        1000
+      ],
+      "outputSize": [
+        1500,
+        1000
+      ],
+      "brightness": 104.9,
+      "sha256": "769ed38b161b5f0ff8abc564a8661472a500b7836fa375395d49aad467d636de",
+      "bytes": 64582
     },
     {
       "key": "overwater-villas",
-      "search": "Maldives overwater villas lagoon",
+      "search": "Water villas at Medhufushi Island Resort in the Maldives.jpg",
       "localPath": "/images/travel/maldives-premium/destination/overwater-villas.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "File:View from the water villas at Medhufushi Island Resort in the Maldives.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:View_from_the_water_villas_at_Medhufushi_Island_Resort_in_the_Maldives.jpg",
+      "author": "Priyaflorenceshah",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/View_from_the_water_villas_at_Medhufushi_Island_Resort_in_the_Maldives.jpg/1920px-View_from_the_water_villas_at_Medhufushi_Island_Resort_in_the_Maldives.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1081
+      ],
+      "outputSize": [
+        1920,
+        1081
+      ],
+      "brightness": 135.2,
+      "sha256": "e588225d4f1642d68914d7384ad2d9bee335107ae22f1a443beec75089d9a2a4",
+      "bytes": 263440
     },
     {
       "key": "beach-island",
-      "search": "Maldives beach island palm trees",
+      "search": "Aerial shot of a small island on a coral reef in the Maldives.jpg",
       "localPath": "/images/travel/maldives-premium/destination/beach-island.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "File:Aerial shot of a small island on a coral reef in the Maldives.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_shot_of_a_small_island_on_a_coral_reef_in_the_Maldives.jpg",
+      "author": "Dr. Ondřej Havelka (cestovatel)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Aerial_shot_of_a_small_island_on_a_coral_reef_in_the_Maldives.jpg/1920px-Aerial_shot_of_a_small_island_on_a_coral_reef_in_the_Maldives.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        957
+      ],
+      "outputSize": [
+        1920,
+        957
+      ],
+      "brightness": 137.7,
+      "sha256": "2376b087b0c0ef7a13fa0536b8633d30183785d1cd37837bc2d5adc989178267",
+      "bytes": 290432
     },
     {
       "key": "sandbank",
-      "search": "Maldives sandbank aerial",
+      "search": "Malediven Sandbank (28800504836).jpg",
       "localPath": "/images/travel/maldives-premium/destination/sandbank.webp",
       "status": "downloaded",
       "sourceFile": "File:Malediven Sandbank (28800504836).jpg",
@@ -66,13 +167,30 @@
     },
     {
       "key": "seaplane",
-      "search": "Maldives seaplane lagoon",
+      "search": "Seaplane at W Retreat Maldives.jpg",
       "localPath": "/images/travel/maldives-premium/destination/seaplane.webp",
-      "status": "failed"
+      "status": "downloaded",
+      "sourceFile": "File:Seaplane at W Retreat Maldives.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Seaplane_at_W_Retreat_Maldives.jpg",
+      "author": "Simon_sees from Australia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Seaplane_at_W_Retreat_Maldives.jpg/1920px-Seaplane_at_W_Retreat_Maldives.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1920,
+        1280
+      ],
+      "brightness": 168.0,
+      "sha256": "032910992e81f4121d80d21c2f2bbe99d89f8e9d8306e39eb0c961e9481fb718",
+      "bytes": 549884
     },
     {
       "key": "manta-reef",
-      "search": "Manta rays Maldives reef",
+      "search": "Manta alfredi fushivaru thila.jpg",
       "localPath": "/images/travel/maldives-premium/destination/manta-reef.webp",
       "status": "downloaded",
       "sourceFile": "File:Manta alfredi fushivaru thila.jpg",
