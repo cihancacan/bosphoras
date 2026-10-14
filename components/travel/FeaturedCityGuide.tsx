@@ -11,6 +11,8 @@ import { baliHotelEditorial, baliAreaVisuals } from '@/data/travel/baliPremiumEd
 import { phuketHotelEditorial, phuketAreaVisuals } from '@/data/travel/phuketPremiumEditorial';
 import { kohSamuiHotelEditorial, kohSamuiAreaVisuals } from '@/data/travel/kohSamuiPremiumEditorial';
 import { kohSamuiFaq } from '@/data/travel/kohSamuiFaq';
+import kohSamuiHotelManifest from '@/data/travel/kohSamuiPremiumImageSources.json';
+import kohSamuiDestinationManifest from '@/data/travel/kohSamuiDestinationImageSources.json';
 import phuketPhotoManifest from '@/data/travel/phuketPremiumImageSources.json';
 import baliPhotoManifest from '@/data/travel/baliPremiumImageSources.json';
 import saintTropezPhotoManifest from '@/data/travel/saintTropezPremiumImageSources.json';
@@ -22,6 +24,7 @@ const confirmedParisAssets=new Set(parisPhotoManifest.items.filter(photo=>photo.
 const confirmedSaintTropezAssets=new Set(saintTropezPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 const confirmedBaliAssets=new Set(baliPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 const confirmedPhuketAssets=new Set(phuketPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
+const confirmedKohSamuiAssets=new Set([...kohSamuiHotelManifest.items,...kohSamuiDestinationManifest.items].filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 
 type Lang = 'fr' | 'en';
 type Variant = 'destination' | 'hotels';
@@ -51,7 +54,7 @@ function CityPhoto({photo,locale,priority=false}: {photo:FeaturedCityPhoto;local
 function PremiumHotelGallery({hotelName,city,locale,expanded=false}: {hotelName:string;city:FeaturedCityGuideData['slug'];locale:Lang;expanded?:boolean}) {
   const entry=hotelEditorialByCity[city][hotelName];
   if(!entry || !entry.photos.length) return null;
-  const photos=city==='dubai' ? entry.photos.filter(photo=>confirmedDubaiAssets.has(photo.src)) : city==='paris' ? entry.photos.filter(photo=>confirmedParisAssets.has(photo.src)) : city==='saint-tropez' ? entry.photos.filter(photo=>confirmedSaintTropezAssets.has(photo.src)) : city==='bali' ? entry.photos.filter(photo=>confirmedBaliAssets.has(photo.src)) : city==='phuket' ? entry.photos.filter(photo=>confirmedPhuketAssets.has(photo.src)) : city==='koh-samui' ? entry.photos : entry.photos;
+  const photos=city==='dubai' ? entry.photos.filter(photo=>confirmedDubaiAssets.has(photo.src)) : city==='paris' ? entry.photos.filter(photo=>confirmedParisAssets.has(photo.src)) : city==='saint-tropez' ? entry.photos.filter(photo=>confirmedSaintTropezAssets.has(photo.src)) : city==='bali' ? entry.photos.filter(photo=>confirmedBaliAssets.has(photo.src)) : city==='phuket' ? entry.photos.filter(photo=>confirmedPhuketAssets.has(photo.src)) : city==='koh-samui' ? entry.photos.filter(photo=>confirmedKohSamuiAssets.has(photo.src)) : entry.photos;
   if(!photos.length) return null;
   const first=photos[0];
   return <figure className="mt-5">
@@ -79,7 +82,7 @@ function PremiumHotelGallery({hotelName,city,locale,expanded=false}: {hotelName:
 
 function DestinationAreaPhoto({city,index,locale}: {city:FeaturedCityGuideData['slug'];index:number;locale:Lang}) {
   const photo=city==='bodrum' ? bodrumAreaVisuals[index] : city==='antalya' ? antalyaAreaVisuals[index] : city==='dubai' ? dubaiAreaVisuals[index] : city==='paris' ? parisAreaVisuals[index] : city==='saint-tropez' ? saintTropezAreaVisuals[index] : city==='bali' ? baliAreaVisuals[index] : city==='phuket' ? phuketAreaVisuals[index] : kohSamuiAreaVisuals[index];
-  if(!photo)return null;
+  if(!photo || (city==='koh-samui' && !confirmedKohSamuiAssets.has(photo.src)))return null;
   return <figure className="mt-5">
     <div className="relative aspect-[16/10] overflow-hidden bg-[#e8dfd0]">
       <Image src={photo.src} alt={locale==='fr'?photo.fr:photo.en} fill
@@ -188,7 +191,9 @@ function Advice({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang}) {
 
 export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityGuideData;locale:Lang;variant:Variant}) {
   const fr=locale==='fr',hotelPage=variant==='hotels';
-  const hero=city.photos[city.hero],secondary=city.photos[city.secondary];
+  const hero=city.photos[city.hero];
+  const requestedSecondary=city.photos[city.secondary];
+  const secondary=(city.slug==='koh-samui' && !confirmedKohSamuiAssets.has(requestedSecondary.src)) ? city.photos['ang-thong'] : requestedSecondary;
   const hubHref=travelHref(locale,'destinations/'+city.slug);
   const hotelsHref=travelHref(locale,'hotels/'+city.slug);
   return <main className="min-h-screen bg-[#faf7f0] text-[#182c38]">
@@ -209,6 +214,8 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           ? <div className="absolute inset-0 bg-gradient-to-r from-[#08252c]/78 via-[#123c3d]/28 to-transparent"/>
           : city.slug === 'phuket'
           ? <div className="absolute inset-0 bg-gradient-to-r from-[#092932]/76 via-[#0f3440]/28 to-transparent"/>
+          : city.slug === 'koh-samui'
+          ? <div className="absolute inset-0 bg-gradient-to-r from-[#082832]/78 via-[#103944]/28 to-transparent"/>
           : <div className="absolute inset-0 bg-gradient-to-r from-[#081d28]/95 via-[#081d28]/75 to-[#081d28]/25"/>}
       </div>
       <div className="relative mx-auto max-w-7xl px-5 pb-28 pt-16 sm:pb-40 sm:pt-28">
