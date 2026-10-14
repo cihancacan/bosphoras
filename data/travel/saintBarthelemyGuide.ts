@@ -131,84 +131,84 @@ export const saintBarthelemyGuide:FeaturedCityGuideData = {
   "photos": {
     "gustavia-aerial": {
       "src": "/images/travel/saint-barthelemy-premium/destination/gustavia-aerial.webp",
-      "fr": "Vue aérienne du port de Gustavia et des toits rouges de Saint-Barth",
-      "en": "Aerial view of Gustavia harbour and red rooftops",
-      "author": "Photographe à vérifier dans le registre photo",
-      "license": "Source à vérifier",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Vue aérienne de Gustavia et de sa rade à Saint-Barthélemy",
+      "en": "Aerial view of Gustavia harbour on St Barth",
+      "author": "Lagoon Group · aerial Gustavia harbour",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.lagoongroup.com/destinations/saint-barthelemy",
+      "sourcePage": "https://www.lagoongroup.com/destinations/saint-barthelemy"
     },
     "colombier-bay": {
       "src": "/images/travel/saint-barthelemy-premium/destination/colombier-bay.webp",
       "fr": "La baie de Colombier et ses eaux turquoise à Saint-Barth",
       "en": "Turquoise waters in Colombier Bay, St Barth",
-      "author": "Photographe à vérifier dans le registre photo",
-      "license": "Source à vérifier",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "SV Zanshin",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Anse_Colombier_anchorage,_St._Barths_-_panoramio.jpg"
     },
     "flamands-beach": {
       "src": "/images/travel/saint-barthelemy-premium/destination/flamands-beach.webp",
       "fr": "La longue plage des Flamands à Saint-Barthélemy",
       "en": "Flamands Beach on the island of St Barth",
-      "author": "Photographe à vérifier dans le registre photo",
-      "license": "Source à vérifier",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Antilles Exception · Flamands beach",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.antillesexception.com/location-villa/saint-barth/Splendide-villa-pieds-dans-l-eau-SBFL02",
+      "sourcePage": "https://www.antillesexception.com/location-villa/saint-barth/Splendide-villa-pieds-dans-l-eau-SBFL02"
     },
     "st-jean-bay": {
       "src": "/images/travel/saint-barthelemy-premium/destination/st-jean-bay.webp",
       "fr": "La baie de Saint-Jean et le rocher de l'Eden Rock",
       "en": "St Jean Bay and Eden Rock headland",
-      "author": "Photographe à vérifier dans le registre photo",
-      "license": "Source à vérifier",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "Luxethika · Saint Jean Bay with Eden Rock",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://www.luxethika.com/destinations/iles/saint-barthelemy/baie-de-st-jean/voir/eden-rock/",
+      "sourcePage": "https://www.luxethika.com/destinations/iles/saint-barthelemy/baie-de-st-jean/voir/eden-rock/"
     },
     "gustavia-streets": {
       "src": "/images/travel/saint-barthelemy-premium/destination/gustavia-streets.webp",
-      "fr": "Ruelles et toits rouges du centre historique de Gustavia",
-      "en": "Historic streets and red rooftops of Gustavia",
-      "author": "Photographe à vérifier dans le registre photo",
-      "license": "Source à vérifier",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Rue pavée et maisons à toits rouges dans le centre de Gustavia",
+      "en": "Cobbled shopping street and red rooftops in Gustavia",
+      "author": "TravelAwaits",
+      "license": "Client-stated authorisation; third-party commercial reuse to verify",
+      "licenseUrl": "https://www.travelawaits.com/2718805/st-barts-best-things-to-do/",
+      "sourcePage": "https://www.travelawaits.com/2718805/st-barts-best-things-to-do/"
     },
     "grand-cul-de-sac": {
       "src": "/images/travel/saint-barthelemy-premium/destination/grand-cul-de-sac.webp",
-      "fr": "Le lagon de Grand Cul-de-Sac à Saint-Barth",
-      "en": "Grand Cul-de-Sac lagoon in St Barth",
-      "author": "Photographe à vérifier dans le registre photo",
-      "license": "Source à vérifier",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "L'île de la Tortue au large de l'anse de Grand Cul-de-Sac",
+      "en": "La Tortue islet offshore from Grand Cul-de-Sac Bay",
+      "author": "David Broad",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:La_Tortue_island_offshore_from_Anse_de_Grand_Cul-de-Sac_on_St._Barthelemy,_French_West_Indies_-_panoramio.jpg"
     },
     "toiny-coast": {
       "src": "/images/travel/saint-barthelemy-premium/destination/toiny-coast.webp",
-      "fr": "La côte rocheuse et sauvage de Toiny",
-      "en": "Wild rocky coast around Toiny",
-      "author": "Photographe à vérifier dans le registre photo",
-      "license": "Source à vérifier",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Littoral rocheux de Toiny vu depuis les hauteurs",
+      "en": "Rocky Toiny coastline seen from the hills",
+      "author": "David Broad",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:St._Barthelemy_-_Anse_de_Toiny_from_Nureyev_House_-_panoramio.jpg"
     },
     "saline-beach": {
       "src": "/images/travel/saint-barthelemy-premium/destination/saline-beach.webp",
       "fr": "La plage de Grande Saline à Saint-Barth",
       "en": "Grande Saline beach on St Barth",
-      "author": "Photographe à vérifier dans le registre photo",
-      "license": "Source à vérifier",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "author": "David Broad",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_best_beach_in_the_world_-_Saline_Beach_on_St._Barthelemy_FWI_-_panoramio.jpg"
     },
     "saint-barth-sailing": {
       "src": "/images/travel/saint-barthelemy-premium/destination/saint-barth-sailing.webp",
-      "fr": "Voiliers au mouillage dans les eaux de Saint-Barthélemy",
-      "en": "Sailing boats anchored off St Barth",
-      "author": "Photographe à vérifier dans le registre photo",
-      "license": "Source à vérifier",
-      "licenseUrl": "https://commons.wikimedia.org/",
-      "sourcePage": "https://commons.wikimedia.org/"
+      "fr": "Yachts et voiliers amarrés à la marina de Gustavia",
+      "en": "Yachts and sailing boats moored at Gustavia marina",
+      "author": "Marinas.com · Gustavia yachts and sailboats",
+      "license": "Client-authorised editorial use; written third-party reuse terms to verify before production",
+      "licenseUrl": "https://marinas.com/view/marina/mncvq5_Gustavia_Port_Marina_St_Barts_Guadeloupe",
+      "sourcePage": "https://marinas.com/view/marina/mncvq5_Gustavia_Port_Marina_St_Barts_Guadeloupe"
     }
   }
 };
