@@ -179,7 +179,7 @@ def main():
 
     # Each candidate comes from a separately identified photo of Courchevel 1850.
     # Import only proven sources, and preserve the actual credit for that image.
-    SCENES =     [
+    SCENES = [
         {
             "url": "https://alpineanswers.s3.amazonaws.com/dragonfly/production/2025/11/12/21/28/20/0129e7b9-844a-485f-871e-6513bdfb93f6/Courchevel_1850_ski_resort_guide%20%2832%29.jpg",
             "sourcePage": "https://www.alpineanswers.co.uk/ski-resorts/france/resort-guide-courchevel-1850",
@@ -221,6 +221,11 @@ def main():
             "credit": "Yonder · L'Apogée terrace, Courchevel 1850"
         },
         {
+            "url": "https://static.hiamag.com/inline-images/%D9%83%D9%88%D8%B1%D8%B4%D9%88%D9%81%D9%8A%D9%84%20%D9%A1%D9%A8%D9%A5%D9%A0%D8%8C%20%D9%81%D8%B1%D9%86%D8%B3%D8%A7.jpg",
+            "sourcePage": "https://www.hiamag.com/ترفيه-وفنون/سياحة-وسفر/1793081-5-وجهات-تزلج-تجمع-بين-سحر-الطبيعة-وخصوصية-المجتمع-المخملي",
+            "credit": "Hia Magazine · winter panorama of Courchevel 1850"
+        },
+        {
             "url": "https://static.mansionglobal.com/production/media/article-images/0b3c2ef16cc9d9d867caed23f41695e2/medium_Courchevel.jpg",
             "sourcePage": "https://www.mansionglobal.com/articles/living-the-high-life-in-courchevel-1850-16998",
             "credit": "Mansion Global · Courchevel 1850 winter lights"
@@ -239,6 +244,16 @@ def main():
             "url": "https://wtgs-production-uploads.s3.amazonaws.com/uploads/images_accommodation/image/67716/courchevel_1850_10.jpg",
             "sourcePage": "https://www.alpcourchevel.com/apartment/3666-apartment-courchevel-pralong-courchevel-1850",
             "credit": "Alp Courchevel · skiing at Courchevel 1850"
+        },
+        {
+            "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Front_de_neige_de_Courchevel_1850_%28d%C3%A9cembre_2019%29.JPG",
+            "sourcePage": "https://commons.wikimedia.org/wiki/File:Front_de_neige_de_Courchevel_1850_(décembre_2019).JPG",
+            "credit": "Florian Pépellin · CC BY-SA 4.0 · Courchevel 1850 snow front"
+        },
+        {
+            "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Courchevel_1850_et_front_de_neige_au_matin_avant_No%C3%ABl_%282019%29.JPG",
+            "sourcePage": "https://commons.wikimedia.org/wiki/File:Courchevel_1850_et_front_de_neige_au_matin_avant_Noël_(2019).JPG",
+            "credit": "Florian Pépellin · CC BY-SA 4.0 · Courchevel 1850 morning"
         }
     ]
     city_entries=[]
@@ -257,7 +272,7 @@ def main():
         loc.write_bytes(data)
         city_entries.append({"key":f"alps-{n}","localPath":local_path,
             "sourcePage":scene["sourcePage"],"status":"downloaded",
-            "rights":"Client-authorised Preview use; written third-party commercial rights require confirmation",
+            "rights":"CC BY-SA 4.0 with attribution and ShareAlike" if "commons.wikimedia.org" in scene["sourcePage"] else "Client-authorised Preview use; written third-party commercial rights require confirmation",
             "credit":scene["credit"],"downloadUrl":scene["url"],
             "originalSize":original,"outputSize":size,"bytes":len(data),"sha256":digest})
     for n in range(len(city_entries)+1,10):
@@ -275,8 +290,8 @@ def main():
         if record["status"]!="downloaded":continue
         photo=guide["photos"][record["key"]]
         photo["author"]=record["credit"]
-        photo["license"]="Client-authorised editorial Preview; written third-party commercial rights to confirm"
-        photo["licenseUrl"]=record["sourcePage"]
+        photo["license"]="CC BY-SA 4.0" if "commons.wikimedia.org" in record["sourcePage"] else "Client-authorised editorial Preview; written third-party commercial rights to confirm"
+        photo["licenseUrl"]="https://creativecommons.org/licenses/by-sa/4.0/" if "commons.wikimedia.org" in record["sourcePage"] else record["sourcePage"]
         photo["sourcePage"]=record["sourcePage"]
         photo["fr"]=record["credit"]+" · image réelle de Courchevel 1850"
         photo["en"]=record["credit"]+" · authentic Courchevel 1850 editorial photograph"

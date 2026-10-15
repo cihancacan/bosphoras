@@ -18,7 +18,7 @@ assert(site.includes('robots: { index: ready'), 'Keep noindex for non-approved p
 assert(site.includes('approvedCategorySlugs'), 'Publication approval gate was removed.');
 const widgets = read('components/travel/FeaturedCityGuide.tsx');
 assert(widgets.includes('confirmedMustiqueAssets'), 'Mustique media manifest filtering missing.');
-for (const path of ['data/travel/mustiquePremiumImageSources.json','data/travel/mustiqueDestinationImageSources.json']) {
+for (const path of ['data/travel/mustiquePremiumImageSources.json','data/travel/mustiqueDestinationImageSources.json','data/travel/courchevel1850PremiumImageSources.json','data/travel/courchevel1850DestinationImageSources.json']) {
  const manifest = JSON.parse(read(path));
  assert.equal(manifest.downloaded, manifest.items.filter(x => x.status === 'downloaded').length, 'Mismatch in ' + path);
  assert.equal(manifest.expected, manifest.items.length, 'Expected-count mismatch in ' + path);

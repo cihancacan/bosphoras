@@ -19,3 +19,7 @@
 
 ## Statut du lot ouvert
 Commencé après Porto Cervo : Mustique (guide/galeries FR-EN) et Courchevel 1850 (guide/galeries FR-EN). Les huit prochaines destinations doivent suivre la feuille de route déjà décidée, être traitées par 2 ou 3 et ne seront considérées comme achevées qu'après examen individuel.
+
+## Sécurité supplémentaire
+- Si des sites protègent leur galerie (HTTP 403/429), utiliser des photos identifiées de cette propriété depuis des sources vérifiables ; ne jamais détourner les photos d’un autre hôtel.
+- Les manifestes doivent consigner les téléchargements réussis ET les manquants ; le contrôle visuel et juridique reste indispensable, y compris après un résultat `downloaded`.
