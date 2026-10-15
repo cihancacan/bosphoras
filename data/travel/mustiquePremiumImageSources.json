@@ -1,8 +1,8 @@
 {
   "scope": "Four official Mustique property galleries (one hotel, three villas); PREVIEW rights pending",
-  "generatedAt": "2026-10-15T08:04:54.287715+00:00",
+  "generatedAt": "2026-10-15T08:07:12.153736+00:00",
   "expected": 12,
-  "downloaded": 10,
+  "downloaded": 11,
   "items": [
     {
       "key": "view-1",
@@ -28,9 +28,21 @@
       "key": "view-2",
       "sourcePage": "https://www.mustique-island.com/villas-and-hotel/the-cotton-house",
       "localPath": "/public/images/travel/mustique-premium/cotton-house/view-2.webp",
-      "status": "failed",
+      "status": "downloaded",
       "rights": "Preview only; the client authorises use but independent third-party commercial rights remain unverified",
-      "hotel": "cotton-house"
+      "hotel": "cotton-house",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/260224-coutinot-general-elevetions-draft-%282%29-%28002%29.jpg/27cf3beb575c43e1543a54471fde1b3b/260224-coutinot-general-elevetions-draft-%282%29-%28002%29.webp",
+      "credit": "The Mustique Company · official site",
+      "originalSize": [
+        1440,
+        600
+      ],
+      "outputSize": [
+        1440,
+        600
+      ],
+      "sha256": "113d6f4db0303c00d8fd5ec76551d257c25e7e077db91251d0cddffbf0839fe8",
+      "bytes": 95228
     },
     {
       "key": "view-3",
