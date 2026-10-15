@@ -4,7 +4,7 @@
   "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 10,
+  "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
@@ -121,27 +121,61 @@
       "property": "Kulm Hotel St. Moritz",
       "propertyKey": "kulm-hotel",
       "key": "view-2",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.kulm.com/en/winter/hotel",
         "https://www.kulm.com/en/winter/"
       ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+      "rights": "Commons photo licence verified at source; any attribution, share-alike, adaptation and trademark rules need compliance. Visual QA still required.",
+      "localPath": "/images/travel/st-moritz-premium/kulm-hotel/view-2.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Kulm_Hotel_Sankt_Moritz_2022-09-25_01.jpg/1920px-Kulm_Hotel_Sankt_Moritz_2022-09-25_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kulm_Hotel_Sankt_Moritz_2022-09-25_01.jpg",
+      "candidateContext": "Kulm Hotel Sankt Moritz 2022-09-25 01.jpg",
+      "credit": "Leonhard Lenz",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "ffa17bf3fffffaf77cfb3c44bc7f4eac629adf4d45bc7df6d26e7be1cf7feee3",
+      "bytes": 459106,
+      "originalSize": [
+        1920,
+        1281
+      ],
+      "outputSize": [
+        1800,
+        1201
+      ]
     },
     {
       "property": "Kulm Hotel St. Moritz",
       "propertyKey": "kulm-hotel",
       "key": "view-3",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.kulm.com/en/winter/hotel",
         "https://www.kulm.com/en/winter/"
       ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+      "rights": "Commons photo licence verified at source; any attribution, share-alike, adaptation and trademark rules need compliance. Visual QA still required.",
+      "localPath": "/images/travel/st-moritz-premium/kulm-hotel/view-3.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Kulm_Hotel_Sankt_Moritz_2022-09-25_03.jpg/1920px-Kulm_Hotel_Sankt_Moritz_2022-09-25_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kulm_Hotel_Sankt_Moritz_2022-09-25_03.jpg",
+      "candidateContext": "Kulm Hotel Sankt Moritz 2022-09-25 03.jpg",
+      "credit": "Leonhard Lenz",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "a2d7e935bfd7020a52eed16f2cb8057e3117104822a0d42241595523f860af69",
+      "bytes": 453968,
+      "originalSize": [
+        1920,
+        1281
+      ],
+      "outputSize": [
+        1800,
+        1201
+      ]
     },
     {
       "property": "Suvretta House",

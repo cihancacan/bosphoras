@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 9,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -490,25 +490,24 @@
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "rights": "Commons photo licence verified at source; any attribution, share-alike, adaptation and trademark rules need compliance. Visual QA still required.",
       "localPath": "/images/travel/niseko-premium/destination/scene-6.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Lake_Hangetsu.jpg/1920px-Lake_Hangetsu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lake_Hangetsu.jpg",
-      "candidateContext": "File:Lake Hangetsu.jpg",
-      "sha256": "09bb6e4b3dc0e227f74f9017f8729a03b1bdb6f9b0d118ae4ef09630a2a96e83",
-      "bytes": 338428,
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Kutchan-STA_2024.jpg/1920px-Kutchan-STA_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kutchan-STA_2024.jpg",
+      "candidateContext": "Kutchan-STA 2024.jpg",
+      "sha256": "4014655768cac14fd6ea04c119c8e0b2f2e0af8d462f027ab5d4f7f48b6713fc",
+      "bytes": 281170,
       "originalSize": [
         1920,
-        1281
+        1280
       ],
       "outputSize": [
-        1700,
-        1134
+        1800,
+        1200
       ],
-      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Yasu\" title=\"User:Yasu\">Yasu</a> (<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User_talk:Yasu\" title=\"User talk:Yasu\"><span class=\"signature-talk\">talk</span></a>)",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "visualQaWarning": "Lake Hangetsu photo is not documented as a Kutchan town scene"
+      "credit": "MaedaAkihiko",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
     },
     {
       "key": "scene-7",
@@ -566,10 +565,27 @@
       "key": "scene-9",
       "placeLabel": "Hokkaido onsen",
       "searchQuery": "Niseko Hokkaido onsen",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Commons photo licence verified at source; any attribution, share-alike, adaptation and trademark rules need compliance. Visual QA still required.",
+      "localPath": "/images/travel/niseko-premium/destination/scene-9.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Goshiki_spa_roten.JPG/1920px-Goshiki_spa_roten.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Goshiki_spa_roten.JPG",
+      "candidateContext": "Goshiki spa roten.JPG",
+      "credit": "Soica2001  (  talk  )",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sha256": "dc8910306c43a91c641daf908fe359b3305a1e286dec11d001f30fa6fc1e7f83",
+      "bytes": 368552,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1800,
+        1350
+      ]
     }
   ],
   "sourceCuration": "Third pass: source-specific Wikimedia files and exact hotel-only images, still visually unapproved."
