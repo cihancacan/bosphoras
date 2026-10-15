@@ -2,7 +2,7 @@
 
 > **INTERNE — Images candidates uniquement. Aucune image n'est encore approuvée pour publication.**
 
-**Couverture :** 12/12 photographies des établissements, 0/9 scènes locales, 12/21 en tout.
+**Couverture :** 12/12 photographies des établissements, 5/9 scènes locales, 17/21 en tout.
 
 **Statut de publication :** aucune validation visuelle globale, aucun feu vert de publication commerciale. Le guide reste en brouillon et non indexable.
 
@@ -27,15 +27,15 @@
 
 | Site ou quartier | Photo WebP authentique à examiner | Source / licence déclarée | Contrôles restants |
 |---|---|---|---|
-| Val d&#x27;Isère old village · scene-1 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
-| Solaise slopes · scene-2 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
+| Val d&#x27;Isère old village · scene-1 | <img src="../public/images/travel/val-disere-premium/destination/scene-1.webp" width="280" alt="File:Val-dIsere-église-chemin-du-Charvet.JPG"> | <a href="https://commons.wikimedia.org/wiki/File:Val-dIsere-église-chemin-du-Charvet.JPG">Source originale</a> / Public domain | Visuel non approuvé; Droits de publication à contrôler; Scene identity and season supported by filename, but still needs independent visual/legal/commercial review. |
+| Solaise slopes · scene-2 | <img src="../public/images/travel/val-disere-premium/destination/scene-2.webp" width="280" alt="File:Solaise à Val-d&#x27;Isère depuis Barrage de Tignes (février 2026).JPG"> | <a href="https://commons.wikimedia.org/wiki/File:Solaise_à_Val-d&#x27;Isère_depuis_Barrage_de_Tignes_(février_2026).JPG">Source originale</a> / CC BY-SA 4.0 | Visuel non approuvé; Droits de publication à contrôler; Scene identity and season supported by filename, but still needs independent visual/legal/commercial review. |
 | Bellevarde slopes · scene-3 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
-| La Daille Funival · scene-4 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
+| La Daille Funival · scene-4 | <img src="../public/images/travel/val-disere-premium/destination/scene-4.webp" width="280" alt="File:Funival @ La Daille 01.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Funival_@_La_Daille_01.jpg">Source originale</a> / CC BY-SA 4.0 | Visuel non approuvé; Droits de publication à contrôler; Scene identity and season supported by filename, but still needs independent visual/legal/commercial review. |
 | Le Laisinant · scene-5 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
-| Le Fornet winter · scene-6 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
+| Le Fornet winter · scene-6 | <img src="../public/images/travel/val-disere-premium/destination/scene-6.webp" width="280" alt="File:Maisons Le Fornet Val d&#x27;Isère.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Maisons_Le_Fornet_Val_d&#x27;Isère.jpg">Source originale</a> / CC BY-SA 4.0 | Visuel non approuvé; Droits de publication à contrôler; Actual Le Fornet hamlet photographed in September 2016; NOT a winter photograph, cannot be captioned &#x27;Le Fornet winter&#x27;. Change season or replace. |
 | Manchet valley · scene-7 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
 | Prariond chalets · scene-8 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
-| Val d&#x27;Isère summer · scene-9 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
+| Val d&#x27;Isère summer · scene-9 | <img src="../public/images/travel/val-disere-premium/destination/scene-9.webp" width="280" alt="File:Isère au Fornet à Val-d&#x27;Isère en été (juillet 2022).JPG"> | <a href="https://commons.wikimedia.org/wiki/File:Isère_au_Fornet_à_Val-d&#x27;Isère_en_été_(juillet_2022).JPG">Source originale</a> / CC BY-SA 4.0 | Visuel non approuvé; Droits de publication à contrôler; Scene identity and season supported by filename, but still needs independent visual/legal/commercial review. |
 
 ## Contrôles complémentaires
 

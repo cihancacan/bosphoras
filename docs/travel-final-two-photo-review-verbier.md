@@ -2,7 +2,7 @@
 
 > **INTERNE — Images candidates uniquement. Aucune image n'est encore approuvée pour publication.**
 
-**Couverture :** 12/12 photographies des établissements, 1/9 scènes locales, 13/21 en tout.
+**Couverture :** 12/12 photographies des établissements, 4/9 scènes locales, 16/21 en tout.
 
 **Statut de publication :** aucune validation visuelle globale, aucun feu vert de publication commerciale. Le guide reste en brouillon et non indexable.
 
@@ -27,14 +27,14 @@
 
 | Site ou quartier | Photo WebP authentique à examiner | Source / licence déclarée | Contrôles restants |
 |---|---|---|---|
-| Verbier Médran gondola · scene-1 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
+| Verbier Médran gondola · scene-1 | <img src="../public/images/travel/verbier-premium/destination/scene-1.webp" width="280" alt="File:Télécabines Verbier Dec 2021.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Télécabines_Verbier_Dec_2021.jpg">Source originale</a> / CC BY-SA 4.0 | Visuel non approuvé; Droits de publication à contrôler; Commons title does not establish which exact Verbier sector is pictured; detailed visual+map check required before caption. |
 | Place Blanche Verbier · scene-2 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
 | Place Centrale Verbier · scene-3 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
 | Savoleyres ski slopes · scene-4 | <img src="../public/images/travel/verbier-premium/destination/scene-4.webp" width="280" alt="File:Télécabines Verbier Dec 2021.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Télécabines_Verbier_Dec_2021.jpg">Source originale</a> / CC BY-SA 4.0 | Visuel non approuvé; Droits de publication à contrôler |
 | Les Esserts Verbier · scene-5 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
 | Les Creux Verbier · scene-6 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
-| Mont Fort panorama · scene-7 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
-| Le Châble valley · scene-8 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
+| Mont Fort panorama · scene-7 | <img src="../public/images/travel/verbier-premium/destination/scene-7.webp" width="280" alt="File:Verbier Mont Fort - panoramio.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Verbier_Mont_Fort_-_panoramio.jpg">Source originale</a> / CC BY 3.0 | Visuel non approuvé; Droits de publication à contrôler; Scene identity and season supported by filename, but still needs independent visual/legal/commercial review. |
+| Le Châble valley · scene-8 | <img src="../public/images/travel/verbier-premium/destination/scene-8.webp" width="280" alt="File:Le Châble depuis Verbier.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Le_Châble_depuis_Verbier.jpg">Source originale</a> / CC BY-SA 3.0 | Visuel non approuvé; Droits de publication à contrôler; Scene identity and season supported by filename, but still needs independent visual/legal/commercial review. |
 | Verbier après-ski · scene-9 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
 
 ## Contrôles complémentaires
@@ -47,3 +47,4 @@
 
 **Alerte :** plusieurs fichiers dérivent de la même image d'origine :
 - /content/dam/marriott-renditions/GVAWH/gvawh-wowsuite-loungearea-3039-hor-clsc.jpg (2)
+- /wikipedia/commons/thumb/2/2b/T%C3%A9l%C3%A9cabines_Verbier_Dec_2021.jpg/1920px-T%C3%A9l%C3%A9cabines_Verbier_Dec_2021.jpg (2)

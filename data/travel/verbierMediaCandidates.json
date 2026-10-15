@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 1,
+  "downloadedDestinationCandidates": 4,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -339,10 +339,28 @@
       "key": "scene-1",
       "placeLabel": "Verbier Médran gondola",
       "searchQuery": "Verbier Medran gondola",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
+      "localPath": "/images/travel/verbier-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Télécabines_Verbier_Dec_2021.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/T%C3%A9l%C3%A9cabines_Verbier_Dec_2021.jpg/1920px-T%C3%A9l%C3%A9cabines_Verbier_Dec_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Télécabines Verbier Dec 2021.jpg",
+      "credit": "WIKIMRDIA",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sha256": "262f92a803305f2e8576cfb7dac651f8aacbad2fc6734337edae366faafe936e",
+      "bytes": 72006,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "visualQaWarning": "Commons title does not establish which exact Verbier sector is pictured; detailed visual+map check required before caption."
     },
     {
       "key": "scene-2",
@@ -410,19 +428,55 @@
       "key": "scene-7",
       "placeLabel": "Mont Fort panorama",
       "searchQuery": "Verbier Mont Fort",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
+      "localPath": "/images/travel/verbier-premium/destination/scene-7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Verbier_Mont_Fort_-_panoramio.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Verbier_Mont_Fort_-_panoramio.jpg/1920px-Verbier_Mont_Fort_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Verbier Mont Fort - panoramio.jpg",
+      "credit": "Erwin Kreijne",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sha256": "a36afc6c235536dd35051f06a4ba35d26c8d7411a431a7bb7cb6017d73d550e6",
+      "bytes": 348812,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "visualQaWarning": "Scene identity and season supported by filename, but still needs independent visual/legal/commercial review."
     },
     {
       "key": "scene-8",
       "placeLabel": "Le Châble valley",
       "searchQuery": "Le Chable Switzerland Verbier",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
+      "localPath": "/images/travel/verbier-premium/destination/scene-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Le_Châble_depuis_Verbier.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Le_Ch%C3%A2ble_depuis_Verbier.jpg/1920px-Le_Ch%C3%A2ble_depuis_Verbier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Le Châble depuis Verbier.jpg",
+      "credit": "Ludovic Péron",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sha256": "2f4ba77bf91dcdb7d130b1c40d43a771878faad4f34685090ec8074dd0d12589",
+      "bytes": 424408,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "visualQaWarning": "Scene identity and season supported by filename, but still needs independent visual/legal/commercial review."
     },
     {
       "key": "scene-9",

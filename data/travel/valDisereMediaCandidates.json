@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 0,
+  "downloadedDestinationCandidates": 5,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -339,19 +339,55 @@
       "key": "scene-1",
       "placeLabel": "Val d'Isère old village",
       "searchQuery": "Val d Isere village church",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
+      "localPath": "/images/travel/val-disere-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Val-dIsere-église-chemin-du-Charvet.JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Val-dIsere-%C3%A9glise-chemin-du-Charvet.JPG/1920px-Val-dIsere-%C3%A9glise-chemin-du-Charvet.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Val-dIsere-église-chemin-du-Charvet.JPG",
+      "credit": "Rundvald",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sha256": "4e691dd0e4e9e6c9acf15531242c6a26ade8088aa3e9e39e4e30b3f2b7b0487e",
+      "bytes": 407058,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "visualQaWarning": "Scene identity and season supported by filename, but still needs independent visual/legal/commercial review."
     },
     {
       "key": "scene-2",
       "placeLabel": "Solaise slopes",
       "searchQuery": "Val d Isere Solaise",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
+      "localPath": "/images/travel/val-disere-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Solaise_à_Val-d'Isère_depuis_Barrage_de_Tignes_(février_2026).JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Solaise_%C3%A0_Val-d%27Is%C3%A8re_depuis_Barrage_de_Tignes_%28f%C3%A9vrier_2026%29.JPG/1920px-Solaise_%C3%A0_Val-d%27Is%C3%A8re_depuis_Barrage_de_Tignes_%28f%C3%A9vrier_2026%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Solaise à Val-d'Isère depuis Barrage de Tignes (février 2026).JPG",
+      "credit": "Florian Pépellin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sha256": "6b8c1cc1c57e2f344d61521680713d8cecf35006f898009681d6443b83737503",
+      "bytes": 406996,
+      "originalSize": [
+        1920,
+        1486
+      ],
+      "outputSize": [
+        1615,
+        1250
+      ],
+      "visualQaWarning": "Scene identity and season supported by filename, but still needs independent visual/legal/commercial review."
     },
     {
       "key": "scene-3",
@@ -366,10 +402,28 @@
       "key": "scene-4",
       "placeLabel": "La Daille Funival",
       "searchQuery": "La Daille Val d Isere",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
+      "localPath": "/images/travel/val-disere-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Funival_@_La_Daille_01.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Funival_%40_La_Daille_01.jpg/1920px-Funival_%40_La_Daille_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Funival @ La Daille 01.jpg",
+      "credit": "Rémih",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sha256": "9d46ec00f83820765c2ea9a67c4a64743e549526b3ecfa6f641e8f216933d4d8",
+      "bytes": 611124,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "visualQaWarning": "Scene identity and season supported by filename, but still needs independent visual/legal/commercial review."
     },
     {
       "key": "scene-5",
@@ -384,10 +438,28 @@
       "key": "scene-6",
       "placeLabel": "Le Fornet winter",
       "searchQuery": "Le Fornet Val d Isere",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
+      "localPath": "/images/travel/val-disere-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Maisons_Le_Fornet_Val_d'Isère.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Maisons_Le_Fornet_Val_d%27Is%C3%A8re.jpg/1920px-Maisons_Le_Fornet_Val_d%27Is%C3%A8re.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Maisons Le Fornet Val d'Isère.jpg",
+      "credit": "Anthospace",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sha256": "b7cacb5c0aca47824aeacb0c182d5b44480fe3fe34b0b025d984c06c712006fc",
+      "bytes": 591458,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "visualQaWarning": "Actual Le Fornet hamlet photographed in September 2016; NOT a winter photograph, cannot be captioned 'Le Fornet winter'. Change season or replace."
     },
     {
       "key": "scene-7",
@@ -411,10 +483,28 @@
       "key": "scene-9",
       "placeLabel": "Val d'Isère summer",
       "searchQuery": "Val d Isere summer mountains",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
+      "localPath": "/images/travel/val-disere-premium/destination/scene-9.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Isère_au_Fornet_à_Val-d'Isère_en_été_(juillet_2022).JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Is%C3%A8re_au_Fornet_%C3%A0_Val-d%27Is%C3%A8re_en_%C3%A9t%C3%A9_%28juillet_2022%29.JPG/1920px-Is%C3%A8re_au_Fornet_%C3%A0_Val-d%27Is%C3%A8re_en_%C3%A9t%C3%A9_%28juillet_2022%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Isère au Fornet à Val-d'Isère en été (juillet 2022).JPG",
+      "credit": "Florian Pépellin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sha256": "c2550889e19da209f36513236fc0bbcd907489c73bdce616b471651303e73087",
+      "bytes": 768446,
+      "originalSize": [
+        1920,
+        1436
+      ],
+      "outputSize": [
+        1671,
+        1250
+      ],
+      "visualQaWarning": "Scene identity and season supported by filename, but still needs independent visual/legal/commercial review."
     }
   ]
 }
