@@ -1,0 +1,39 @@
+name: Travel next alpine — curated source-specific image fixes
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - scripts/curate-alpine-authentic-media.py
+      - .github/workflows/travel-curate-alpine-media.yml
+permissions:
+  contents: write
+concurrency:
+  group: travel-curate-alpine
+  cancel-in-progress: false
+jobs:
+  curate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -m py_compile scripts/curate-alpine-authentic-media.py
+      - run: python -u scripts/curate-alpine-authentic-media.py
+      - name: Commit corrected images and sources with no Vercel build
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for slug in st-moritz aspen niseko; do
+            [ ! -d "public/images/travel/$slug-premium" ] || git add "public/images/travel/$slug-premium"
+          done
+          git add data/travel/stMoritzMediaCandidates.json data/travel/aspenMediaCandidates.json data/travel/nisekoMediaCandidates.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): improve distinct alpine hotel and geographic photo candidates [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
