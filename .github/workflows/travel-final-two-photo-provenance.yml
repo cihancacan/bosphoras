@@ -1,0 +1,44 @@
+name: Travel final two — Val d'Isere Verbier original photo provenance
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - scripts/collect-final-two-travel-photos.py
+      - scripts/render-final-two-photo-review.py
+      - .github/workflows/travel-final-two-photo-provenance.yml
+permissions:
+  contents: write
+concurrency:
+  group: travel-final-two-photo-provenance
+  cancel-in-progress: false
+jobs:
+  media:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -m py_compile scripts/collect-final-two-travel-photos.py scripts/render-final-two-photo-review.py
+      - run: python -u scripts/collect-final-two-travel-photos.py
+      - run: python scripts/render-final-two-photo-review.py
+      - name: Commit only source-backed candidates with full publication QA lock
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for slug in val-disere verbier; do
+            [ ! -d "public/images/travel/$slug-premium" ] || git add "public/images/travel/$slug-premium"
+          done
+          for key in valDisere verbier; do
+            [ ! -f "data/travel/${key}MediaCandidates.json" ] || git add "data/travel/${key}MediaCandidates.json"
+          done
+          [ ! -f docs/travel-final-two-photo-review-index.md ] || git add docs/travel-final-two-photo-review-*.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): candidate photos Val d Isere and Verbier pending source and rights QA [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
