@@ -32,8 +32,9 @@ def store(slug,item,url,source,credit="",license="",licence_url="",context=""):
  if not pic:return False
  binary,source_size,output=pic
  digest=d_hash(binary)
- people=ALL.get(slug,[])
- if any((digest^prior).bit_count()<12 for prior in hashes(people,item.get("localPath",""))):return False
+ people=ALL.get(slug,{})
+ photo_items=people.get("hotels",[])+people.get("destinationScenes",[])
+ if any((digest^prior).bit_count()<12 for prior in hashes(photo_items,item.get("localPath",""))):return False
  path=Path("public/images/travel")/(slug+"-premium")/(item["propertyKey"] if "propertyKey" in item else "destination")/(item["key"]+".webp")
  path.parent.mkdir(parents=True,exist_ok=True)
  path.write_bytes(binary)
