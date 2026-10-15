@@ -64,6 +64,8 @@ for(const [slug,stem] of rows){
     slug+' must stay blocked pending commercial rights review');
   assert(manifest.hotels.every((photo,i)=>photo.property===guide.hotels[Math.floor(i/3)].name),
     slug+' WRONG hotel/photograph assignment: do not mislabel one hotel as another');
+  const sourceUrls=manifest.destinationScenes.filter(x=>x.status==='candidate_needs_visual_review').map(x=>(x.downloadUrl||'').split('?')[0]);
+  assert.equal(new Set(sourceUrls).size,sourceUrls.length,slug+' same source scene used for multiple sectors');
   for(const item of manifest.hotels.concat(manifest.destinationScenes)){
    assert(['candidate_needs_visual_review','missing'].includes(item.status),'Unknown image QA status');
    if(item.status!=='candidate_needs_visual_review')continue;

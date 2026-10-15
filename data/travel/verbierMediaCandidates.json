@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 4,
+  "downloadedDestinationCandidates": 3,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -384,27 +384,17 @@
       "key": "scene-4",
       "placeLabel": "Savoleyres ski slopes",
       "searchQuery": "Verbier Savoleyres",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "localPath": "/images/travel/verbier-premium/destination/scene-4.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/T%C3%A9l%C3%A9cabines_Verbier_Dec_2021.jpg/1920px-T%C3%A9l%C3%A9cabines_Verbier_Dec_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Télécabines_Verbier_Dec_2021.jpg",
       "candidateContext": "File:Télécabines Verbier Dec 2021.jpg",
-      "sha256": "262f92a803305f2e8576cfb7dac651f8aacbad2fc6734337edae366faafe936e",
-      "bytes": 72006,
-      "originalSize": [
-        1920,
-        1280
-      ],
-      "outputSize": [
-        1700,
-        1133
-      ],
       "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:WIKIMRDIA?action=edit&amp;redlink=1\" title=\"User:WIKIMRDIA (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:WIKIMRDIA\"]}}'>WIKIMRDIA</a>",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "excludedCandidatePath": "/images/travel/verbier-premium/destination/scene-4.webp",
+      "excludedOriginalTitle": "File:Télécabines Verbier Dec 2021.jpg",
+      "visualQaWarning": "EXCLUE : photo identique à celle de Médran, et la source ne prouve pas qu'elle illustre Savoleyres. Ne pas réutiliser ce fichier."
     },
     {
       "key": "scene-5",
