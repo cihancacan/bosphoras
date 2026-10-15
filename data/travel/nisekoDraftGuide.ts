@@ -2,6 +2,7 @@
  * No claimed supplier inventory. Source dossier: docs/travel-niseko-source-review.md.
  */
 export const nisekoDraftGuide = {
+  "slug": "niseko",
   "name": "Niseko",
   "country": "Japon",
   "hero": "niseko-yotei",
@@ -119,7 +120,7 @@ export const nisekoDraftGuide = {
       "fr": "Au pied des pistes de Grand Hirafu, AYA propose studios, appartements, résidences et penthouses dans un style japonais contemporain. Les plus grandes résidences peuvent inclure leur propre onsen et des accès skis aux pieds dédiés. Ce n'est pas le même séjour qu'une chambre hôtelière classique : espace, cuisine et autonomie en sont les atouts.",
       "en": "AYA offers contemporary studios, apartments, private residences and penthouses at the foot of Grand Hirafu slopes. Selected large residences include private onsens and dedicated ski entry. This is a residential stay with living space and independence rather than a conventional grand-hotel room.",
       "frWatch": "Séparer studios et résidences, confirmer l'onsen dédié et la configuration des lits ; skier jusqu'à la porte dépend des conditions.",
-      "enWatch": "Distinguish studios from residences, confirm private-on­sen availability and bed layout, and check ski access for the actual snow."
+      "enWatch": "Distinguish studios from residences, confirm private-onsen availability and bed layout, and check ski access for the actual snow."
     }
   ],
   "checksFr": [

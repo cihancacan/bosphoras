@@ -2,6 +2,7 @@
  * No claimed supplier inventory. Source dossier: docs/travel-aspen-source-review.md.
  */
 export const aspenDraftGuide = {
+  "slug": "aspen",
   "name": "Aspen",
   "country": "États-Unis",
   "hero": "aspen-mountain",
