@@ -1,4 +1,9 @@
 import Image from 'next/image';
+import type { BodrumHotelEditorial } from '@/data/travel/bodrumPremiumEditorial';
+import { alpineHotelEditorialByCity,alpineAreaVisualsByCity,alpineAvailablePhotoPathsByCity } from '@/data/travel/alpinePremiumEditorial';
+import { stMoritzDraftFaq } from '@/data/travel/stMoritzDraftFaq';
+import { aspenDraftFaq } from '@/data/travel/aspenDraftFaq';
+import { nisekoDraftFaq } from '@/data/travel/nisekoDraftFaq';
 import Link from 'next/link';
 import { featuredCityGuides, type FeaturedCityGuideData, type FeaturedCityPhoto } from '@/data/travel/featuredCityGuides';
 import { travelHref } from '@/lib/travel/i18n';
@@ -42,7 +47,7 @@ import baliPhotoManifest from '@/data/travel/baliPremiumImageSources.json';
 import saintTropezPhotoManifest from '@/data/travel/saintTropezPremiumImageSources.json';
 import parisPhotoManifest from '@/data/travel/parisPremiumImageSources.json';
 import dubaiPhotoManifest from '@/data/travel/dubaiPremiumImageSources.json';
-const hotelEditorialByCity={bodrum:bodrumHotelEditorial,antalya:antalyaHotelEditorial,dubai:dubaiHotelEditorial,paris:parisHotelEditorial,'saint-tropez':saintTropezHotelEditorial,bali:baliHotelEditorial,phuket:phuketHotelEditorial,'koh-samui':kohSamuiHotelEditorial,maldives:maldivesHotelEditorial,'los-cabos':losCabosHotelEditorial,'saint-barthelemy':saintBarthelemyHotelEditorial,'porto-cervo':portoCervoHotelEditorial, mustique:mustiqueHotelEditorial,'courchevel-1850':courchevel1850HotelEditorial} as const;
+const hotelEditorialByCity:Record<FeaturedCityGuideData['slug'],Record<string,BodrumHotelEditorial>>={bodrum:bodrumHotelEditorial,antalya:antalyaHotelEditorial,dubai:dubaiHotelEditorial,paris:parisHotelEditorial,'saint-tropez':saintTropezHotelEditorial,bali:baliHotelEditorial,phuket:phuketHotelEditorial,'koh-samui':kohSamuiHotelEditorial,maldives:maldivesHotelEditorial,'los-cabos':losCabosHotelEditorial,'saint-barthelemy':saintBarthelemyHotelEditorial,'porto-cervo':portoCervoHotelEditorial, mustique:mustiqueHotelEditorial,'courchevel-1850':courchevel1850HotelEditorial, ...alpineHotelEditorialByCity};
 const confirmedDubaiAssets=new Set(dubaiPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 const confirmedParisAssets=new Set(parisPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 const confirmedSaintTropezAssets=new Set(saintTropezPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
@@ -56,6 +61,8 @@ const confirmedCourchevelAssets=new Set([...courchevel1850HotelManifest.items,..
 const confirmedMustiqueAssets=new Set([...mustiqueHotelManifest.items,...mustiqueDestinationManifest.items].filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 const confirmedPortoCervoAssets=new Set([...portoCervoHotelManifest.items,...portoCervoDestinationManifest.items].filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 
+const isAlpineCity=(slug:FeaturedCityGuideData['slug']):slug is keyof typeof alpineAvailablePhotoPathsByCity => slug==='st-moritz'||slug==='aspen'||slug==='niseko';
+const alpineFaqByCity={'st-moritz':stMoritzDraftFaq,aspen:aspenDraftFaq,niseko:nisekoDraftFaq} as const;
 type Lang = 'fr' | 'en';
 type Variant = 'destination' | 'hotels';
 
@@ -84,7 +91,7 @@ function CityPhoto({photo,locale,priority=false}: {photo:FeaturedCityPhoto;local
 function PremiumHotelGallery({hotelName,city,locale,expanded=false}: {hotelName:string;city:FeaturedCityGuideData['slug'];locale:Lang;expanded?:boolean}) {
   const entry=hotelEditorialByCity[city][hotelName];
   if(!entry || !entry.photos.length) return null;
-  const photos=city==='dubai' ? entry.photos.filter(photo=>confirmedDubaiAssets.has(photo.src)) : city==='paris' ? entry.photos.filter(photo=>confirmedParisAssets.has(photo.src)) : city==='saint-tropez' ? entry.photos.filter(photo=>confirmedSaintTropezAssets.has(photo.src)) : city==='bali' ? entry.photos.filter(photo=>confirmedBaliAssets.has(photo.src)) : city==='phuket' ? entry.photos.filter(photo=>confirmedPhuketAssets.has(photo.src)) : city==='koh-samui' ? entry.photos.filter(photo=>confirmedKohSamuiAssets.has(photo.src)) : city==='maldives' ? entry.photos.filter(photo=>confirmedMaldivesAssets.has(photo.src)) : city==='los-cabos' ? entry.photos.filter(photo=>confirmedLosCabosAssets.has(photo.src)) : city==='saint-barthelemy' ? entry.photos.filter(photo=>confirmedSaintBarthelemyAssets.has(photo.src)) : city==='porto-cervo' ? entry.photos.filter(photo=>confirmedPortoCervoAssets.has(photo.src)) : city==='mustique' ? entry.photos.filter(photo=>confirmedMustiqueAssets.has(photo.src)) : city==='courchevel-1850' ? entry.photos.filter(photo=>confirmedCourchevelAssets.has(photo.src)) : entry.photos;
+  const photos=city==='dubai' ? entry.photos.filter(photo=>confirmedDubaiAssets.has(photo.src)) : city==='paris' ? entry.photos.filter(photo=>confirmedParisAssets.has(photo.src)) : city==='saint-tropez' ? entry.photos.filter(photo=>confirmedSaintTropezAssets.has(photo.src)) : city==='bali' ? entry.photos.filter(photo=>confirmedBaliAssets.has(photo.src)) : city==='phuket' ? entry.photos.filter(photo=>confirmedPhuketAssets.has(photo.src)) : city==='koh-samui' ? entry.photos.filter(photo=>confirmedKohSamuiAssets.has(photo.src)) : city==='maldives' ? entry.photos.filter(photo=>confirmedMaldivesAssets.has(photo.src)) : city==='los-cabos' ? entry.photos.filter(photo=>confirmedLosCabosAssets.has(photo.src)) : city==='saint-barthelemy' ? entry.photos.filter(photo=>confirmedSaintBarthelemyAssets.has(photo.src)) : city==='porto-cervo' ? entry.photos.filter(photo=>confirmedPortoCervoAssets.has(photo.src)) : city==='mustique' ? entry.photos.filter(photo=>confirmedMustiqueAssets.has(photo.src)) : city==='courchevel-1850' ? entry.photos.filter(photo=>confirmedCourchevelAssets.has(photo.src)) : isAlpineCity(city) ? entry.photos.filter(photo=>alpineAvailablePhotoPathsByCity[city].has(photo.src)) : entry.photos;
   if(!photos.length) return null;
   const first=photos[0];
   return <figure className="mt-5">
@@ -111,8 +118,8 @@ function PremiumHotelGallery({hotelName,city,locale,expanded=false}: {hotelName:
 }
 
 function DestinationAreaPhoto({city,index,locale}: {city:FeaturedCityGuideData['slug'];index:number;locale:Lang}) {
-  const photo=city==='bodrum' ? bodrumAreaVisuals[index] : city==='antalya' ? antalyaAreaVisuals[index] : city==='dubai' ? dubaiAreaVisuals[index] : city==='paris' ? parisAreaVisuals[index] : city==='saint-tropez' ? saintTropezAreaVisuals[index] : city==='bali' ? baliAreaVisuals[index] : city==='phuket' ? phuketAreaVisuals[index] : city==='koh-samui' ? kohSamuiAreaVisuals[index] : city==='maldives' ? maldivesAreaVisuals[index] : city==='los-cabos' ? losCabosAreaVisuals[index] : city==='saint-barthelemy' ? saintBarthelemyAreaVisuals[index] : city==='courchevel-1850' ? courchevel1850AreaVisuals[index] : city==='mustique' ? mustiqueAreaVisuals[index] : portoCervoAreaVisuals[index];
-  if(!photo || ((city==='koh-samui' && !confirmedKohSamuiAssets.has(photo.src)) || (city==='maldives' && !confirmedMaldivesAssets.has(photo.src)) || (city==='los-cabos' && !confirmedLosCabosAssets.has(photo.src)) || (city==='saint-barthelemy' && !confirmedSaintBarthelemyAssets.has(photo.src)) || (city==='porto-cervo' && !confirmedPortoCervoAssets.has(photo.src)) || (city==='mustique' && !confirmedMustiqueAssets.has(photo.src)) || (city==='courchevel-1850' && !confirmedCourchevelAssets.has(photo.src))))return null;
+  const photo=city==='bodrum' ? bodrumAreaVisuals[index] : city==='antalya' ? antalyaAreaVisuals[index] : city==='dubai' ? dubaiAreaVisuals[index] : city==='paris' ? parisAreaVisuals[index] : city==='saint-tropez' ? saintTropezAreaVisuals[index] : city==='bali' ? baliAreaVisuals[index] : city==='phuket' ? phuketAreaVisuals[index] : city==='koh-samui' ? kohSamuiAreaVisuals[index] : city==='maldives' ? maldivesAreaVisuals[index] : city==='los-cabos' ? losCabosAreaVisuals[index] : city==='saint-barthelemy' ? saintBarthelemyAreaVisuals[index] : city==='courchevel-1850' ? courchevel1850AreaVisuals[index] : city==='mustique' ? mustiqueAreaVisuals[index] : isAlpineCity(city) ? alpineAreaVisualsByCity[city][index] : portoCervoAreaVisuals[index];
+  if(!photo || ((city==='koh-samui' && !confirmedKohSamuiAssets.has(photo.src)) || (city==='maldives' && !confirmedMaldivesAssets.has(photo.src)) || (city==='los-cabos' && !confirmedLosCabosAssets.has(photo.src)) || (city==='saint-barthelemy' && !confirmedSaintBarthelemyAssets.has(photo.src)) || (city==='porto-cervo' && !confirmedPortoCervoAssets.has(photo.src)) || (city==='mustique' && !confirmedMustiqueAssets.has(photo.src)) || (city==='courchevel-1850' && !confirmedCourchevelAssets.has(photo.src)) || (isAlpineCity(city) && !alpineAvailablePhotoPathsByCity[city].has(photo.src))))return null;
   return <figure className="mt-5">
     <div className="relative aspect-[16/10] overflow-hidden bg-[#e8dfd0]">
       <Image src={photo.src} alt={locale==='fr'?photo.fr:photo.en} fill
@@ -145,11 +152,11 @@ function HotelTeaser({ guide, locale }: {guide:FeaturedCityGuideData;locale:Lang
         {guide.hotels.map((hotel,index)=><article key={hotel.name} className="flex flex-col bg-white p-6">
           <span className="text-xs tracking-[.15em] text-[#9b794b]">{String(index+1).padStart(2,'0')} · {hotel.area}</span>
           <h3 className="mt-4 font-serif text-2xl">{hotel.name}</h3>
-          {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez'||guide.slug==='bali'||guide.slug==='phuket'||guide.slug==='koh-samui'||guide.slug==='maldives'||guide.slug==='los-cabos'||guide.slug==='saint-barthelemy'||guide.slug==='porto-cervo'||guide.slug==='mustique'||guide.slug==='courchevel-1850') && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale}/>}
+          {Boolean(hotelEditorialByCity[guide.slug]) && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale}/>}
           <p className="mt-4 text-sm leading-7 text-[#53636a]">{fr?hotel.fr:hotel.en}</p>
-          {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez'||guide.slug==='bali'||guide.slug==='phuket'||guide.slug==='koh-samui'||guide.slug==='maldives'||guide.slug==='los-cabos'||guide.slug==='saint-barthelemy'||guide.slug==='porto-cervo'||guide.slug==='mustique'||guide.slug==='courchevel-1850') && hotelEditorialByCity[guide.slug][hotel.name] && <p className="mt-4 border-l-2 border-[#bb9867] pl-3 text-xs leading-6 text-[#5d6a71]">
+          {Boolean(hotelEditorialByCity[guide.slug]) && hotelEditorialByCity[guide.slug][hotel.name] && <p className="mt-4 border-l-2 border-[#bb9867] pl-3 text-xs leading-6 text-[#5d6a71]">
             <strong>{fr?'Pour qui ? ':'Best suited to: '}</strong>
-            {fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'|'maldives'|'los-cabos'|'saint-barthelemy'|'porto-cervo'|'mustique'|'courchevel-1850'][hotel.name].frBest:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'|'maldives'|'los-cabos'|'saint-barthelemy'|'porto-cervo'|'mustique'|'courchevel-1850'][hotel.name].enBest}
+            {fr?hotelEditorialByCity[guide.slug][hotel.name].frBest:hotelEditorialByCity[guide.slug][hotel.name].enBest}
           </p>}
         </article>)}
       </div>
@@ -172,15 +179,15 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
         <p className="text-xs uppercase tracking-[.14em] text-[#9a7849]">
           {String(i+1).padStart(2,'0')} · {hotel.area}</p>
         <h3 className="mt-4 font-serif text-3xl">{hotel.name}</h3>
-        {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez'||guide.slug==='bali'||guide.slug==='phuket'||guide.slug==='koh-samui'||guide.slug==='maldives'||guide.slug==='los-cabos'||guide.slug==='saint-barthelemy'||guide.slug==='porto-cervo'||guide.slug==='mustique'||guide.slug==='courchevel-1850') && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale} expanded />}
+        {Boolean(hotelEditorialByCity[guide.slug]) && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale} expanded />}
         <p className="mt-6 leading-8 text-[#475862]">{fr?hotel.fr:hotel.en}</p>
-        {(guide.slug==='bodrum'||guide.slug==='antalya'||guide.slug==='dubai'||guide.slug==='paris'||guide.slug==='saint-tropez'||guide.slug==='bali'||guide.slug==='phuket'||guide.slug==='koh-samui'||guide.slug==='maldives'||guide.slug==='los-cabos'||guide.slug==='saint-barthelemy'||guide.slug==='porto-cervo'||guide.slug==='mustique'||guide.slug==='courchevel-1850') && hotelEditorialByCity[guide.slug][hotel.name] && <div className="mt-7 border-t border-[#e7dac9] pt-6">
+        {Boolean(hotelEditorialByCity[guide.slug]) && hotelEditorialByCity[guide.slug][hotel.name] && <div className="mt-7 border-t border-[#e7dac9] pt-6">
           <h4 className="font-serif text-xl">{fr?'Notre lecture de cette adresse':'Our take on this address'}</h4>
           <p className="mt-4 text-sm leading-8 text-[#51616b]">
-            {fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'|'maldives'|'los-cabos'|'saint-barthelemy'|'porto-cervo'|'mustique'|'courchevel-1850'][hotel.name].frStory:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'|'maldives'|'los-cabos'|'saint-barthelemy'|'porto-cervo'|'mustique'|'courchevel-1850'][hotel.name].enStory}
+            {fr?hotelEditorialByCity[guide.slug][hotel.name].frStory:hotelEditorialByCity[guide.slug][hotel.name].enStory}
           </p>
           <p className="mt-5 text-sm leading-7 font-medium text-[#7d603b]">
-            {fr?'À privilégier pour : ':'Best for: '}{fr?hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'|'maldives'|'los-cabos'|'saint-barthelemy'|'porto-cervo'|'mustique'|'courchevel-1850'][hotel.name].frBest:hotelEditorialByCity[guide.slug as 'bodrum'|'antalya'|'dubai'|'paris'|'saint-tropez'|'bali'|'phuket'|'koh-samui'|'maldives'|'los-cabos'|'saint-barthelemy'|'porto-cervo'|'mustique'|'courchevel-1850'][hotel.name].enBest}
+            {fr?'À privilégier pour : ':'Best for: '}{fr?hotelEditorialByCity[guide.slug][hotel.name].frBest:hotelEditorialByCity[guide.slug][hotel.name].enBest}
           </p>
         </div>}
         <p className="mt-6 border-l-2 border-[#b18c55] pl-4 text-sm leading-7 text-[#53636c]">
@@ -221,7 +228,7 @@ function Advice({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang}) {
 
 export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityGuideData;locale:Lang;variant:Variant}) {
   const fr=locale==='fr',hotelPage=variant==='hotels';
-  const destinationAssets=city.slug==='courchevel-1850'?confirmedCourchevelAssets:city.slug==='mustique'?confirmedMustiqueAssets:city.slug==='porto-cervo'?confirmedPortoCervoAssets:city.slug==='saint-barthelemy'?confirmedSaintBarthelemyAssets:city.slug==='los-cabos'?confirmedLosCabosAssets:city.slug==='maldives'?confirmedMaldivesAssets:null;
+  const destinationAssets=isAlpineCity(city.slug)?alpineAvailablePhotoPathsByCity[city.slug]:city.slug==='courchevel-1850'?confirmedCourchevelAssets:city.slug==='mustique'?confirmedMustiqueAssets:city.slug==='porto-cervo'?confirmedPortoCervoAssets:city.slug==='saint-barthelemy'?confirmedSaintBarthelemyAssets:city.slug==='los-cabos'?confirmedLosCabosAssets:city.slug==='maldives'?confirmedMaldivesAssets:null;
   const hero=(destinationAssets && !destinationAssets.has(city.photos[city.hero].src)) ? (Object.values(city.photos).find(photo=>destinationAssets.has(photo.src)) || city.photos[city.hero]) : city.photos[city.hero];
   const requestedSecondary=city.photos[city.secondary];
   const secondary=(city.slug==='koh-samui' && !confirmedKohSamuiAssets.has(requestedSecondary.src)) ? city.photos['ang-thong'] : (destinationAssets && !destinationAssets.has(requestedSecondary.src)) ? (Object.values(city.photos).find(photo=>destinationAssets.has(photo.src) && photo.src!==hero.src) || hero) : requestedSecondary;
@@ -230,7 +237,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
   return <main className="min-h-screen bg-[#faf7f0] text-[#182c38]">
     <section className="relative isolate overflow-hidden bg-[#112937] text-[#f8f3e8]">
       <div className="absolute inset-0" aria-hidden="true">
-        {(city.slug==='mustique'?confirmedMustiqueAssets.has(hero.src):city.slug==='courchevel-1850'?confirmedCourchevelAssets.has(hero.src):true) && <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="100vw" className="object-cover" />}
+        {(destinationAssets ? destinationAssets.has(hero.src) : true) && <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="100vw" className="object-cover" />}
         {city.slug === 'bodrum'
           ? <div className="absolute inset-0 bg-gradient-to-r from-[#07171d]/95 via-[#101f24]/72 to-[#142933]/15"/>
           : city.slug === 'antalya'
@@ -387,7 +394,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
     <section id="experience" className="scroll-mt-24 bg-[#142d3a] py-16 text-[#f8f3e8] sm:py-24">
       <div className="mx-auto max-w-7xl px-5">
         <div className="grid items-center gap-8 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
-          {(city.slug==='mustique'?confirmedMustiqueAssets.has(secondary.src):city.slug==='courchevel-1850'?confirmedCourchevelAssets.has(secondary.src):true) && <CityPhoto photo={secondary} locale={locale}/>}
+          {(destinationAssets ? destinationAssets.has(secondary.src) : true) && <CityPhoto photo={secondary} locale={locale}/>}
           <div>
             <p className="text-xs uppercase tracking-[.2em] text-[#d7b77d]">
               {fr?'02 · L’esprit du lieu':'02 · A sense of place'}</p>
@@ -413,11 +420,11 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         ← {fr?'Retour au guide complet de la destination':'Back to the complete destination guide'}
       </Link>
     </section>:<HotelTeaser guide={city} locale={locale}/>}
-    {(city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo'||city.slug==='mustique'||city.slug==='courchevel-1850') && <section id={city.slug==='courchevel-1850'?'faq-courchevel-1850':city.slug==='mustique'?'faq-mustique':city.slug==='porto-cervo'?'faq-porto-cervo':city.slug==='saint-barthelemy'?'faq-saint-barthelemy':city.slug==='los-cabos'?'faq-los-cabos':city.slug==='maldives'?'faq-maldives':'faq-koh-samui'} className="mx-auto max-w-7xl px-5 py-14 sm:py-20">
+    {(city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo'||city.slug==='mustique'||(city.slug==='courchevel-1850'||isAlpineCity(city.slug)) && <section id={isAlpineCity(city.slug)?'faq-'+city.slug:city.slug==='courchevel-1850'?'faq-courchevel-1850':city.slug==='mustique'?'faq-mustique':city.slug==='porto-cervo'?'faq-porto-cervo':city.slug==='saint-barthelemy'?'faq-saint-barthelemy':city.slug==='los-cabos'?'faq-los-cabos':city.slug==='maldives'?'faq-maldives':'faq-koh-samui'} className="mx-auto max-w-7xl px-5 py-14 sm:py-20">
       <p className="text-xs uppercase tracking-[.2em] text-[#947048]">{fr?'Questions fréquentes':'Frequently asked questions'}</p>
-      <h2 className="mt-4 font-serif text-3xl sm:text-5xl">{city.slug==='courchevel-1850'?(fr?'Préparer votre séjour à Courchevel 1850':'Plan your stay in Courchevel 1850'):city.slug==='mustique'?(fr?'Préparer votre séjour à Mustique':'Planning your Mustique stay'):city.slug==='porto-cervo'?(fr?'Préparer votre séjour sur la Costa Smeralda':'Planning your Costa Smeralda stay'):city.slug==='saint-barthelemy'?(fr?'Préparer votre voyage à Saint-Barth':'Planning your St Barth stay'):city.slug==='los-cabos'?(fr?'Préparer un séjour de luxe à Los Cabos':'Planning a luxury stay in Los Cabos'):city.slug==='maldives'?(fr?'Préparer votre séjour de luxe aux Maldives':'Planning a luxury stay in the Maldives'):(fr?'Préparer un séjour de luxe à Koh Samui':'Plan a luxury stay in Koh Samui')}</h2>
+      <h2 className="mt-4 font-serif text-3xl sm:text-5xl">{isAlpineCity(city.slug)?(fr?'Préparer votre séjour à '+city.name:'Planning your stay in '+city.name):city.slug==='courchevel-1850'?(fr?'Préparer votre séjour à Courchevel 1850':'Plan your stay in Courchevel 1850'):city.slug==='mustique'?(fr?'Préparer votre séjour à Mustique':'Planning your Mustique stay'):city.slug==='porto-cervo'?(fr?'Préparer votre séjour sur la Costa Smeralda':'Planning your Costa Smeralda stay'):city.slug==='saint-barthelemy'?(fr?'Préparer votre voyage à Saint-Barth':'Planning your St Barth stay'):city.slug==='los-cabos'?(fr?'Préparer un séjour de luxe à Los Cabos':'Planning a luxury stay in Los Cabos'):city.slug==='maldives'?(fr?'Préparer votre séjour de luxe aux Maldives':'Planning a luxury stay in the Maldives'):(fr?'Préparer un séjour de luxe à Koh Samui':'Plan a luxury stay in Koh Samui')}</h2>
       <div className="mt-8 grid gap-4 md:grid-cols-2">
-        {(city.slug==='courchevel-1850'?courchevel1850Faq:city.slug==='mustique'?mustiqueFaq:city.slug==='porto-cervo'?portoCervoFaq:city.slug==='saint-barthelemy'?saintBarthelemyFaq:city.slug==='los-cabos'?losCabosFaq:city.slug==='maldives'?maldivesFaq:kohSamuiFaq)[locale].map(item=><article key={item.q} className="border border-[#e5dbcb] bg-white p-7">
+        {(isAlpineCity(city.slug)?alpineFaqByCity[city.slug]:city.slug==='courchevel-1850'?courchevel1850Faq:city.slug==='mustique'?mustiqueFaq:city.slug==='porto-cervo'?portoCervoFaq:city.slug==='saint-barthelemy'?saintBarthelemyFaq:city.slug==='los-cabos'?losCabosFaq:city.slug==='maldives'?maldivesFaq:kohSamuiFaq)[locale].map(item=><article key={item.q} className="border border-[#e5dbcb] bg-white p-7">
           <h3 className="font-serif text-xl text-[#173340]">{item.q}</h3>
           <p className="mt-4 text-sm leading-7 text-[#54666d]">{item.a}</p>
         </article>)}
