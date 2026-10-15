@@ -1,6 +1,6 @@
 # Jackson Hole — 21 photographies à contrôler
 
-**Candidats récupérés : 17/21 · Validés visuellement : 11/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 17/21 · Validés visuellement : 12/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Jackson Hole](jackson-hole.jpg)
 
@@ -23,7 +23,7 @@
 | 15 | Jackson Town Square — scene-3 | [Source](https://commons.wikimedia.org/wiki/File:Elk_antler_arch_at_Jackson_Square,_Jackson,_WY_2022-07-11.jpg) · File:Elk antler arch at Jackson Square, Jackson, WY 2022-07-11.jpg| Candidate |
 | 16 | Snake River — scene-4 | [Source](https://commons.wikimedia.org/wiki/File:Grand_Teton_from_the_Snake_River_Overlook.jpg) · File:Grand Teton from the Snake River Overlook.jpg| Candidate |
 | 17 | Grand Teton — scene-5 | [Source](https://commons.wikimedia.org/wiki/File:Views_at_Grand_Teton_National_Park,_Wyoming_(24029770-4738-47df-8265-9e1d86a09f27).jpg) · File:Views at Grand Teton National Park, Wyoming (24029770-4738-47df-8265-9e1d86a09f27).jpg| Candidate |
-| 18 | Wildlife — scene-6 | [Source](https://commons.wikimedia.org/wiki/File:Moose_lying_in_grass_with_light_snow_and_female_moose_in_the_background_at_Grand_Teton_National_Park,_Wyoming_(27cbf884-c1b0-4e43-8ba0-46e2be45d43a).jpg) · File:Moose lying in grass with light snow and female moose in the background at Grand Teton National Park, Wyoming (27cb| Candidate; **Source place explicitly named, awaiting aesthetic / image-frame manual check; date and season: Faune du parc national de Grand Teton, orignaux** |
+| 18 | Wildlife — scene-6 | [Source](https://commons.wikimedia.org/wiki/File:Moose_lying_in_grass_with_light_snow_and_female_moose_in_the_background_at_Grand_Teton_National_Park,_Wyoming_(27cbf884-c1b0-4e43-8ba0-46e2be45d43a).jpg) · File:Moose lying in grass with light snow and female moose in the background at Grand Teton National Park, Wyoming (27cb| Candidate |
 | 19 | Snow covered cabins — scene-7 | Source à trouver · | Manquante |
 | 20 | National park — scene-8 | [Source](https://commons.wikimedia.org/wiki/File:Barns_grand_tetons.jpg) · File:Barns grand tetons.jpg| Candidate |
-| 21 | Western town street — scene-9 | [Source](https://commons.wikimedia.org/wiki/File:JacksonStreet2.jpg) · File:JacksonStreet2.jpg| Candidate; **Source place explicitly named, awaiting aesthetic / image-frame manual check; date and season: Rue proche de Town Square, Jackson, Wyoming, photo historique de 2006** |
+| 21 | Western town street — scene-9 | [Source](https://commons.wikimedia.org/wiki/File:JacksonStreet2.jpg) · File:JacksonStreet2.jpg| Candidate; **Rue authentique près de Town Square, mais cliché daté de 2006 avec parking et véhicules ; peu premium. Préférer une rue actuelle bien cadrée.** |

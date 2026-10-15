@@ -1,6 +1,6 @@
 # Val d'Isère — 21 photographies à contrôler
 
-**Candidats récupérés : 18/21 · Validés visuellement : 10/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 18/21 · Validés visuellement : 11/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Val d'Isère](val-disere.jpg)
 
@@ -20,7 +20,7 @@
 | 12 | Le Blizzard — view-3 | [Source](https://hotelblizzard.com/fr/) · restaurant le blizzard (1) hd 1920x1080| Candidate; **DOUBLON VISUEL : même salle que view-1.** |
 | 13 | Val d'Isère old village — scene-1 | [Source](https://commons.wikimedia.org/wiki/File:Val-dIsere-église-chemin-du-Charvet.JPG) · File:Val-dIsere-église-chemin-du-Charvet.JPG| Candidate |
 | 14 | Solaise slopes — scene-2 | [Source](https://commons.wikimedia.org/wiki/File:Solaise_à_Val-d'Isère_depuis_Barrage_de_Tignes_(février_2026).JPG) · File:Solaise à Val-d&#x27;Isère depuis Barrage de Tignes (février 2026).JPG| Candidate |
-| 15 | Bellevarde slopes — scene-3 | [Source](https://commons.wikimedia.org/wiki/File:Face_de_Bellevarde_2014.JPG) · File:Face de Bellevarde 2014.JPG| Candidate; **Source place explicitly named, awaiting aesthetic / image-frame manual check; date and season: Face de Bellevarde photographiée en hiver 2013/2014** |
+| 15 | Bellevarde slopes — scene-3 | [Source](https://commons.wikimedia.org/wiki/File:Face_de_Bellevarde_2014.JPG) · File:Face de Bellevarde 2014.JPG| Candidate |
 | 16 | La Daille Funival — scene-4 | [Source](https://commons.wikimedia.org/wiki/File:Funival_@_La_Daille_01.jpg) · File:Funival @ La Daille 01.jpg| Candidate |
 | 17 | Le Laisinant — scene-5 | Source à trouver · | Manquante |
 | 18 | Le Fornet winter — scene-6 | [Source](https://commons.wikimedia.org/wiki/File:Maisons_Le_Fornet_Val_d'Isère.jpg) · File:Maisons Le Fornet Val d&#x27;Isère.jpg| Candidate; **Actual Le Fornet hamlet photographed in September 2016; NOT a winter photograph, cannot be captioned 'Le Fornet winter'. Change season or replace.** |
