@@ -129,7 +129,7 @@ def build_entries(key: str, url: str, count: int, folder: str, property_slug: st
         name = f"view-{n}" if property_slug else f"island-{n}"
         dest = ROOT / folder / (name + ".webp")
         entry = {
-            "key": name, "sourcePage": url, "localPath": "/" + str(dest),
+            "key": name, "sourcePage": url, "localPath": "/" + str(dest.relative_to("public")),
             "status": "failed",
             "rights": "Preview only; the client authorises use but independent third-party commercial rights remain unverified",
         }
@@ -186,7 +186,7 @@ def main():
     for n in range(1, 10):
         name = f"island-{n}"
         dest = ROOT / "destination" / (name + ".webp")
-        entry = {"key": name, "sourcePage": BASE + "/", "localPath": "/" + str(dest), "status": "failed",
+        entry = {"key": name, "sourcePage": BASE + "/", "localPath": "/" + str(dest.relative_to("public")), "status": "failed",
                  "rights": "Preview only; image's precise subject and third-party commercial rights require approval"}
         while index < len(all_urls):
             candidate = all_urls[index]

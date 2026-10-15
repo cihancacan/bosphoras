@@ -24,6 +24,7 @@ for (const path of ['data/travel/mustiquePremiumImageSources.json','data/travel/
  assert.equal(manifest.expected, manifest.items.length, 'Expected-count mismatch in ' + path);
  for (const item of manifest.items) {
    if (item.status === 'downloaded') {
+     assert(item.localPath?.startsWith('/images/'), 'Image URLs must be web paths, not /public: '+item.localPath);
      assert(item.sourcePage?.startsWith('https://'), 'Image source page missing for ' + item.localPath);
      assert(item.downloadUrl?.startsWith('https://'), 'Image download URL missing for ' + item.localPath);
      assert(existsSync('public' + item.localPath), 'Downloaded media file not present: ' + item.localPath);
