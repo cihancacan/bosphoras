@@ -1,8 +1,8 @@
 {
   "scope": "Courchevel 1850 independently identified authentic destination scenes; rights review before publication",
-  "generatedAt": "2026-10-15T08:25:57.743048+00:00",
+  "generatedAt": "2026-10-15T08:29:00.938738+00:00",
   "expected": 9,
-  "downloaded": 8,
+  "downloaded": 9,
   "items": [
     {
       "key": "alps-1",
@@ -140,6 +140,25 @@
     {
       "key": "alps-8",
       "localPath": "/images/travel/courchevel-1850-premium/destination/alps-8.webp",
+      "sourcePage": "https://www.hiamag.com/ترفيه-وفنون/سياحة-وسفر/1793081-5-وجهات-تزلج-تجمع-بين-سحر-الطبيعة-وخصوصية-المجتمع-المخملي",
+      "status": "downloaded",
+      "rights": "Client-authorised Preview use; written third-party commercial rights require confirmation",
+      "credit": "Hia Magazine · winter panorama of Courchevel 1850",
+      "downloadUrl": "https://static.hiamag.com/inline-images/%D9%83%D9%88%D8%B1%D8%B4%D9%88%D9%81%D9%8A%D9%84%20%D9%A1%D9%A8%D9%A5%D9%A0%D8%8C%20%D9%81%D8%B1%D9%86%D8%B3%D8%A7.jpg",
+      "originalSize": [
+        3000,
+        2000
+      ],
+      "outputSize": [
+        1950,
+        1300
+      ],
+      "bytes": 447486,
+      "sha256": "2d76a85e0f0760a92855d8a0aee3eabd2617787d7e1302f7a444fd138be6255e"
+    },
+    {
+      "key": "alps-9",
+      "localPath": "/images/travel/courchevel-1850-premium/destination/alps-9.webp",
       "sourcePage": "https://www.alpcourchevel.com/apartment/3666-apartment-courchevel-pralong-courchevel-1850",
       "status": "downloaded",
       "rights": "Client-authorised Preview use; written third-party commercial rights require confirmation",
@@ -155,13 +174,6 @@
       ],
       "bytes": 151720,
       "sha256": "623859190d120998a956bfa0de4a5b2fcf2471a7e55698ab7de5e9d93f52be0c"
-    },
-    {
-      "key": "alps-9",
-      "localPath": "/images/travel/courchevel-1850-premium/destination/alps-9.webp",
-      "sourcePage": "",
-      "status": "failed",
-      "rights": "No verified image found; intentionally no substitute"
     }
   ]
 }

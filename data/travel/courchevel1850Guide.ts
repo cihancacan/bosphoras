@@ -196,21 +196,21 @@ export const courchevel1850Guide:FeaturedCityGuideData = {
     },
     "alps-8": {
       "src": "/images/travel/courchevel-1850-premium/destination/alps-8.webp",
+      "fr": "Hia Magazine · winter panorama of Courchevel 1850 · image réelle de Courchevel 1850",
+      "en": "Hia Magazine · winter panorama of Courchevel 1850 · authentic Courchevel 1850 editorial photograph",
+      "author": "Hia Magazine · winter panorama of Courchevel 1850",
+      "license": "Client-authorised editorial Preview; written third-party commercial rights to confirm",
+      "licenseUrl": "https://www.hiamag.com/ترفيه-وفنون/سياحة-وسفر/1793081-5-وجهات-تزلج-تجمع-بين-سحر-الطبيعة-وخصوصية-المجتمع-المخملي",
+      "sourcePage": "https://www.hiamag.com/ترفيه-وفنون/سياحة-وسفر/1793081-5-وجهات-تزلج-تجمع-بين-سحر-الطبيعة-وخصوصية-المجتمع-المخملي"
+    },
+    "alps-9": {
+      "src": "/images/travel/courchevel-1850-premium/destination/alps-9.webp",
       "fr": "Alp Courchevel · skiing at Courchevel 1850 · image réelle de Courchevel 1850",
       "en": "Alp Courchevel · skiing at Courchevel 1850 · authentic Courchevel 1850 editorial photograph",
       "author": "Alp Courchevel · skiing at Courchevel 1850",
       "license": "Client-authorised editorial Preview; written third-party commercial rights to confirm",
       "licenseUrl": "https://www.alpcourchevel.com/apartment/3666-apartment-courchevel-pralong-courchevel-1850",
       "sourcePage": "https://www.alpcourchevel.com/apartment/3666-apartment-courchevel-pralong-courchevel-1850"
-    },
-    "alps-9": {
-      "src": "/images/travel/courchevel-1850-premium/destination/alps-9.webp",
-      "fr": "Courchevel 1850, photographie documentaire des Alpes numéro 9",
-      "en": "Courchevel 1850, documentary alpine photograph 9",
-      "author": "Courchevel Tourisme · photographie officielle (source à auditer)",
-      "license": "Autorisation commerciale tierce à vérifier",
-      "licenseUrl": "https://courchevel.com/en/",
-      "sourcePage": "https://courchevel.com/en/"
     }
   }
 };
