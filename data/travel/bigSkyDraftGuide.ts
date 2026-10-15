@@ -1,4 +1,4 @@
-/** Original FR/EN draft only; not registered; images and commercial rights review outstanding. */
+/** Original distinct FR/EN editorial draft. Staged only, property photos and rights not approved. */
 export const bigSkyDraftGuide = {
   "slug": "big-sky",
   "name": "Big Sky",
@@ -88,8 +88,8 @@ export const bigSkyDraftGuide = {
       "name": "Montage Big Sky",
       "area": "Spanish Peaks",
       "officialUrl": "https://www.montage.com/bigsky/",
-      "fr": "Montage Big Sky offre une lecture particulière de Big Sky, depuis Spanish Peaks. Ski-in/out resort, spa and residences. Le bon choix dépend des habitudes de chaque voyageur, des transferts et du temps consacré à l'établissement plutôt qu'au seul prestige de l'adresse.",
-      "en": "Montage Big Sky provides a distinct way to experience Big Sky from Spanish Peaks. Ski-in/out resort, spa and residences. Consider the actual room or residence, transport and daily rhythm rather than treating every upscale address as interchangeable.",
+      "fr": "À Spanish Peaks, Montage déploie le versant hôtelier le plus complet de Big Sky : accès skis aux pieds annoncé, chambres et résidences, spa avec piscine et restaurants variés. C'est un séjour de resort où une grande part de l'expérience peut se dérouler sur place, avec la montagne en toile de fond.",
+      "en": "At Spanish Peaks, Montage provides a complete mountain resort proposition: published ski-in/ski-out access, rooms and private residences, a substantial spa and varied dining. This is a property designed to be lived in throughout the stay, with the ski mountain as its backdrop.",
       "frWatch": "Confirmer la saison d'ouverture, la catégorie de chambre, les services réellement inclus et le trajet depuis Spanish Peaks ; il n'existe aucune disponibilité Bosphoras vérifiée.",
       "enWatch": "Confirm seasonal dates, exact accommodation category, included services and the actual journey from Spanish Peaks; no verified Bosphoras inventory is claimed."
     },
@@ -97,8 +97,8 @@ export const bigSkyDraftGuide = {
       "name": "One&Only Moonlight Basin",
       "area": "Moonlight Basin",
       "officialUrl": "https://www.oneandonlyresorts.com/moonlight-basin/stays",
-      "fr": "One&Only Moonlight Basin offre une lecture particulière de Big Sky, depuis Moonlight Basin. Operating resort since 2025; rooms, suites, cabins and private homes. Le bon choix dépend des habitudes de chaque voyageur, des transferts et du temps consacré à l'établissement plutôt qu'au seul prestige de l'adresse.",
-      "en": "One&Only Moonlight Basin provides a distinct way to experience Big Sky from Moonlight Basin. Operating resort since 2025; rooms, suites, cabins and private homes. Consider the actual room or residence, transport and daily rhythm rather than treating every upscale address as interchangeable.",
+      "fr": "Ouvert fin 2025, One&Only Moonlight Basin occupe une position plus retirée dans la forêt du Montana. Les chambres, suites, cabines et maisons privées répondent à des besoins très différents : certaines privilégient un grand séjour familial, d'autres la tranquillité de deux personnes. Le caractère nouveau de l'établissement implique de confirmer précisément les services ouverts aux dates choisies.",
+      "en": "Opened in late 2025, One&Only Moonlight Basin occupies a forested, more secluded part of Big Sky. Rooms, suites, cabins and private homes offer genuinely distinct degrees of space and privacy; confirm the precise amenities and mountain connections for your date and accommodation.",
       "frWatch": "Confirmer la saison d'ouverture, la catégorie de chambre, les services réellement inclus et le trajet depuis Moonlight Basin ; il n'existe aucune disponibilité Bosphoras vérifiée.",
       "enWatch": "Confirm seasonal dates, exact accommodation category, included services and the actual journey from Moonlight Basin; no verified Bosphoras inventory is claimed."
     },
@@ -106,8 +106,8 @@ export const bigSkyDraftGuide = {
       "name": "Lone Mountain Ranch",
       "area": "Lone Mountain Ranch",
       "officialUrl": "https://lonemountainranch.com/",
-      "fr": "Lone Mountain Ranch offre une lecture particulière de Big Sky, depuis Lone Mountain Ranch. 26 private log cabins; ranch, Nordic routes, not lift-side lodging. Le bon choix dépend des habitudes de chaque voyageur, des transferts et du temps consacré à l'établissement plutôt qu'au seul prestige de l'adresse.",
-      "en": "Lone Mountain Ranch provides a distinct way to experience Big Sky from Lone Mountain Ranch. 26 private log cabins; ranch, Nordic routes, not lift-side lodging. Consider the actual room or residence, transport and daily rhythm rather than treating every upscale address as interchangeable.",
+      "fr": "Lone Mountain Ranch est une expérience équestre et montagnarde avant d'être une adresse de ski alpin. Vingt-six cabanes de bois authentiques accueillent couples et familles ; les itinéraires nordiques, les promenades à cheval et le restaurant Horn & Cantle façonnent les journées. Aucun luxe sincère ne consiste ici à faire croire à des remontées devant la porte.",
+      "en": "Lone Mountain Ranch is a heritage Montana ranch experience, not an Alpine ski hotel in disguise. Its 26 log cabins, Nordic trails, guided riding and Horn & Cantle restaurant offer a different kind of high-end travel. It should never be marketed as a lift-side stay.",
       "frWatch": "Confirmer la saison d'ouverture, la catégorie de chambre, les services réellement inclus et le trajet depuis Lone Mountain Ranch ; il n'existe aucune disponibilité Bosphoras vérifiée.",
       "enWatch": "Confirm seasonal dates, exact accommodation category, included services and the actual journey from Lone Mountain Ranch; no verified Bosphoras inventory is claimed."
     },
@@ -115,8 +115,8 @@ export const bigSkyDraftGuide = {
       "name": "Summit Hotel",
       "area": "Mountain Village",
       "officialUrl": "https://www.bigskyresort.com/lodging/hotels/summit-hotel",
-      "fr": "Summit Hotel offre une lecture particulière de Big Sky, depuis Mountain Village. Ski-base practical hotel, not an ultra-luxury palace. Le bon choix dépend des habitudes de chaque voyageur, des transferts et du temps consacré à l'établissement plutôt qu'au seul prestige de l'adresse.",
-      "en": "Summit Hotel provides a distinct way to experience Big Sky from Mountain Village. Ski-base practical hotel, not an ultra-luxury palace. Consider the actual room or residence, transport and daily rhythm rather than treating every upscale address as interchangeable.",
+      "fr": "Au pied de Lone Mountain, Summit Hotel propose une logistique de ski particulièrement lisible à Mountain Village. Les chambres et suites sont conçues pour privilégier les départs matinaux et les retrouvailles après les pistes. Son utilité est réelle, mais sa catégorie et son style doivent rester clairement distincts des deux grands resorts de luxe de notre sélection.",
+      "en": "Summit Hotel sits right at Big Sky's Mountain Village base, making its rooms and suites a practical choice for guests focused on mountain access and straightforward ski days. It has a clear role in the shortlist but should never be sold as the same ultra-luxury proposition as Montage or One&Only.",
       "frWatch": "Confirmer la saison d'ouverture, la catégorie de chambre, les services réellement inclus et le trajet depuis Mountain Village ; il n'existe aucune disponibilité Bosphoras vérifiée.",
       "enWatch": "Confirm seasonal dates, exact accommodation category, included services and the actual journey from Mountain Village; no verified Bosphoras inventory is claimed."
     }

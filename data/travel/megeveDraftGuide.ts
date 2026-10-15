@@ -1,4 +1,4 @@
-/** Original FR/EN draft only; not registered; images and commercial rights review outstanding. */
+/** Original distinct FR/EN editorial draft. Staged only, property photos and rights not approved. */
 export const megeveDraftGuide = {
   "slug": "megeve",
   "name": "Megève",
@@ -88,8 +88,8 @@ export const megeveDraftGuide = {
       "name": "Four Seasons Resort Megève",
       "area": "Mont d'Arbois",
       "officialUrl": "https://www.fourseasons.com/fr/megeve/",
-      "fr": "Four Seasons Resort Megève offre une lecture particulière de Megève, depuis Mont d'Arbois. Palace, ski access, 55 accommodations; verify exact operating period. Le bon choix dépend des habitudes de chaque voyageur, des transferts et du temps consacré à l'établissement plutôt qu'au seul prestige de l'adresse.",
-      "en": "Four Seasons Resort Megève provides a distinct way to experience Megève from Mont d'Arbois. Palace, ski access, 55 accommodations; verify exact operating period. Consider the actual room or residence, transport and daily rhythm rather than treating every upscale address as interchangeable.",
+      "fr": "À Mont d'Arbois, Four Seasons incarne le versant le plus palace de Megève : cinquante-cinq chambres et suites, un spa monumental, deux univers gastronomiques et un accès à la montagne soigneusement organisé. L'héritage Rothschild et l'éloignement relatif du centre piéton en font une destination en soi, pas un simple point de chute.",
+      "en": "At Mont d'Arbois, Four Seasons is Megève's full-scale palace experience: 55 rooms and suites, an extensive spa, distinguished dining and mountain access. Its Rothschild heritage and more secluded setting make the hotel the centre of the stay rather than a convenient overnight stop.",
       "frWatch": "Confirmer la saison d'ouverture, la catégorie de chambre, les services réellement inclus et le trajet depuis Mont d'Arbois ; il n'existe aucune disponibilité Bosphoras vérifiée.",
       "enWatch": "Confirm seasonal dates, exact accommodation category, included services and the actual journey from Mont d'Arbois; no verified Bosphoras inventory is claimed."
     },
@@ -97,8 +97,8 @@ export const megeveDraftGuide = {
       "name": "Les Fermes de Marie",
       "area": "Village / parc privé",
       "officialUrl": "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
-      "fr": "Les Fermes de Marie offre une lecture particulière de Megève, depuis Village / parc privé. Nine historic chalets; 70 rooms; resort-style spa. Le bon choix dépend des habitudes de chaque voyageur, des transferts et du temps consacré à l'établissement plutôt qu'au seul prestige de l'adresse.",
-      "en": "Les Fermes de Marie provides a distinct way to experience Megève from Village / parc privé. Nine historic chalets; 70 rooms; resort-style spa. Consider the actual room or residence, transport and daily rhythm rather than treating every upscale address as interchangeable.",
+      "fr": "Les Fermes de Marie réunit neuf chalets anciens transformés en hameau de montagne. On circule de salons en chambres de bois chaud, puis au spa La Ferme de Beauté, avant de retrouver le village. Sa force tient à ce sentiment de maison familiale et de tradition savoyarde, plus qu'à la performance d'un grand resort sur les pistes.",
+      "en": "Les Fermes de Marie groups nine original Alpine chalets into a lived-in hamlet. Wood-lined rooms, convivial lounges and La Ferme de Beauté spa create a genuine mountain-house rhythm near the village, rather than an anonymous slope-front resort experience.",
       "frWatch": "Confirmer la saison d'ouverture, la catégorie de chambre, les services réellement inclus et le trajet depuis Village / parc privé ; il n'existe aucune disponibilité Bosphoras vérifiée.",
       "enWatch": "Confirm seasonal dates, exact accommodation category, included services and the actual journey from Village / parc privé; no verified Bosphoras inventory is claimed."
     },
@@ -106,8 +106,8 @@ export const megeveDraftGuide = {
       "name": "L'Alpaga",
       "area": "Périphérie calme",
       "officialUrl": "https://alpaga.com/fr/proprietes/hotel-alpaga/chambres-suites/",
-      "fr": "L'Alpaga offre une lecture particulière de Megève, depuis Périphérie calme. 33 rooms and suites; quieter location away from core village. Le bon choix dépend des habitudes de chaque voyageur, des transferts et du temps consacré à l'établissement plutôt qu'au seul prestige de l'adresse.",
-      "en": "L'Alpaga provides a distinct way to experience Megève from Périphérie calme. 33 rooms and suites; quieter location away from core village. Consider the actual room or residence, transport and daily rhythm rather than treating every upscale address as interchangeable.",
+      "fr": "À l'écart des rues les plus animées, L'Alpaga privilégie le panorama, les façades de bois et l'espace que l'on peut retrouver dans une chambre ou un chalet. Sa petite taille et ses vues vers les massifs appellent des journées lentes ; l'accès au centre et aux remontées doit en revanche être anticipé.",
+      "en": "Set away from the busiest village streets, L'Alpaga trades instant centrality for Alpine views, warm timber interiors and chalet-like calm. Its intimate scale rewards unhurried days, but lift and restaurant transfers should be considered before choosing it.",
       "frWatch": "Confirmer la saison d'ouverture, la catégorie de chambre, les services réellement inclus et le trajet depuis Périphérie calme ; il n'existe aucune disponibilité Bosphoras vérifiée.",
       "enWatch": "Confirm seasonal dates, exact accommodation category, included services and the actual journey from Périphérie calme; no verified Bosphoras inventory is claimed."
     },
@@ -115,8 +115,8 @@ export const megeveDraftGuide = {
       "name": "Lodge Park",
       "area": "Village central",
       "officialUrl": "https://www.lodgepark.com/en/hotel-center-of-megeve",
-      "fr": "Lodge Park offre une lecture particulière de Megève, depuis Village central. 5-star, completed redesign late 2025; walk to Chamois gondola. Le bon choix dépend des habitudes de chaque voyageur, des transferts et du temps consacré à l'établissement plutôt qu'au seul prestige de l'adresse.",
-      "en": "Lodge Park provides a distinct way to experience Megève from Village central. 5-star, completed redesign late 2025; walk to Chamois gondola. Consider the actual room or residence, transport and daily rhythm rather than treating every upscale address as interchangeable.",
+      "fr": "Lodge Park se vit comme un club alpin au cœur du village. La transformation achevée fin 2025 associe matières patinées, tissus écossais et ambiance de salon contemporain. On peut rejoindre les boutiques, les restaurants et la télécabine du Chamois à pied ; il faut cependant distinguer proximité des remontées et véritable retour skis aux pieds.",
+      "en": "Lodge Park feels like a lively Alpine members' club in the village centre. Its late-2025 renovation brought tartans, aged leather and sociable lounge spaces. Chamois gondola, restaurants and shops are nearby on foot, though this is different from guaranteed door-to-slope skiing.",
       "frWatch": "Confirmer la saison d'ouverture, la catégorie de chambre, les services réellement inclus et le trajet depuis Village central ; il n'existe aucune disponibilité Bosphoras vérifiée.",
       "enWatch": "Confirm seasonal dates, exact accommodation category, included services and the actual journey from Village central; no verified Bosphoras inventory is claimed."
     }
