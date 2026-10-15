@@ -1,63 +1,63 @@
-/** Original French and English answers, research and media QA required before indexing. */
+/** Unpublished original bilingual FAQs for Megève. */
 export const megeveDraftFaq = {
   "fr": [
     {
-      "q": "Quel secteur choisir pour découvrir Megève à pied ?",
-      "a": "Le centre-village est le choix le plus direct pour les rues pavées, la place de l’église et les restaurants. Mont d’Arbois privilégie les pistes et les grands resorts ; vérifier le trajet précis selon l’hôtel."
+      "q": "Où séjourner à Megève pour un premier voyage ?",
+      "a": "Le choix dépend de vos priorités : montagne, restaurants accessibles à pied, tranquillité ou séjour familial. Village historique et Mont d'Arbois n'offrent pas la même logistique."
     },
     {
-      "q": "Four Seasons Megève est-il vraiment skis aux pieds ?",
-      "a": "Oui, l’établissement et Megève Tourisme confirment son accès direct aux pistes du Mont d’Arbois, sous réserve des conditions d’enneigement et de l’ouverture des remontées."
+      "q": "Les quatre établissements sont-ils équivalents ?",
+      "a": "Non. Four Seasons Resort Megève et L'Alpaga, par exemple, n'ont ni la même localisation ni la même proposition d'hébergement ; il faut comparer les services réellement inclus."
     },
     {
-      "q": "Le Lodge Park est-il identique aux Fermes de Marie ?",
-      "a": "Non. Lodge Park propose une adresse de village au style club entièrement rénovée fin 2025 ; Les Fermes de Marie privilégient un hameau de chalets traditionnels et un séjour familial."
+      "q": "Quel établissement convient aux familles ?",
+      "a": "Les catégories de chambres communicantes, les résidences et les cabines familiales diffèrent selon les maisons. Confirmez les lits, l'âge des enfants, les trajets et les équipements exacts."
     },
     {
-      "q": "À quelle date ouvrent les pistes en décembre 2026 ?",
-      "a": "Megève Tourisme annonce des ouvertures partielles les 5–6 décembre puis à partir du 12 décembre, et une ouverture générale le 19 décembre 2026, toujours selon les conditions."
+      "q": "Peut-on skier directement depuis son hôtel ?",
+      "a": "Cela dépend de l'adresse précise, de la saison et des pistes ouvertes. Une mention « près des pistes » n'est pas une confirmation ski-in/ski-out."
     },
     {
-      "q": "Les Chalets du Mont d’Arbois sont-ils toujours gérés par Four Seasons ?",
-      "a": "Non : Four Seasons a annoncé la fin de sa gestion au 1er octobre 2024. Il faut vérifier l’exploitant actuel et éviter d’associer automatiquement ce produit au Four Seasons Resort Megève."
+      "q": "Que découvrir à Megève sans skier ?",
+      "a": "La destination propose aussi des expériences de gastronomie, spa, paysages et nature adaptées aux saisons. Vérifiez les activités localement et leurs conditions."
     },
     {
-      "q": "Quel hôtel choisir pour un séjour plus intime ?",
-      "a": "Zannier Le Chalet propose seulement douze chambres et suites réparties dans trois chalets, mais il faut vérifier les ouvertures, l’agencement et l’accès aux pistes."
+      "q": "Faut-il réserver les transferts ?",
+      "a": "Oui, surtout pour les établissements isolés, les arrivées tardives, les familles et les conditions météorologiques hivernales ; ne présumez pas d'une navette gratuite."
     },
     {
-      "q": "Puis-je réserver ces quatre hôtels directement auprès de Bosphoras ?",
-      "a": "Ce guide est une sélection éditoriale indépendante. Aucun prix ou stock Bosphoras n’est confirmé sans vérification du fournisseur et de ses autorisations."
+      "q": "Bosphoras propose-t-il ces hôtels à la réservation ?",
+      "a": "Il s'agit actuellement d'une sélection éditoriale. Aucun tarif ou stock n'est présenté sans confirmation d'un fournisseur réellement connecté."
     }
   ],
   "en": [
     {
-      "q": "Which part of Megève is best for a walkable first stay?",
-      "a": "The pedestrian village centre puts shops and dining closest. Mont d’Arbois favours slope access, and actual walking distances depend on your hotel."
+      "q": "Where should first-time visitors stay in Megève?",
+      "a": "Choose by mountain access, walking-distance dining, privacy and family logistics. Historical village and Mont d'Arbois are not the same base."
     },
     {
-      "q": "Is Four Seasons Megève genuinely ski-in/ski-out?",
-      "a": "The hotel and destination office advertise direct slope access on Mont d’Arbois, subject to snow and operating lifts."
+      "q": "Are all four hotels equivalent? ",
+      "a": "No. Four Seasons Resort Megève and L'Alpaga, for example, offer different accommodation styles and access arrangements."
     },
     {
-      "q": "Are Lodge Park and Les Fermes de Marie the same style of hotel?",
-      "a": "No. Lodge Park is a newly renovated Alpine-club boutique hotel; Les Fermes de Marie is a traditional interconnected chalet hamlet with family appeal."
+      "q": "Which accommodation is best for families?",
+      "a": "Look closely at connecting rooms, residences and cabin layouts. Confirm ages, beds, included facilities and actual journey times."
     },
     {
-      "q": "When do the Megève lifts open in December 2026?",
-      "a": "Megève Tourism lists partial openings on 5–6 December and from 12 December, with general opening on 19 December 2026, all weather-dependent."
+      "q": "Can I ski directly from my hotel?",
+      "a": "Only some particular properties provide this, depending on mountain conditions and lift opening. Nearby is not the same as ski-in/ski-out."
     },
     {
-      "q": "Does Four Seasons still manage Les Chalets du Mont d’Arbois?",
-      "a": "No. Its management ended on 1 October 2024, so confirm the current operator separately from Four Seasons Resort Megève."
+      "q": "What can I do in Megève without skiing?",
+      "a": "Destination dining, spa, scenery and guided activities can be rewarding beyond the pistes, with opening and access subject to season."
     },
     {
-      "q": "Which address feels the most intimate?",
-      "a": "Zannier Le Chalet has just twelve rooms and suites spread across three chalets; check seasonal dates, layout and the practical ski route."
+      "q": "Should I arrange transportation in advance?",
+      "a": "For secluded properties, winter roads, airport transfers or evening dining, arrange transport based on precise addresses and current weather."
     },
     {
-      "q": "Are these four hotels bookable through Bosphoras?",
-      "a": "This is an independent editorial shortlist. No Bosphoras price, inventory or booking entitlement is claimed without verified supplier access."
+      "q": "Are the hotels already bookable on Bosphoras?",
+      "a": "No availability or price is represented as bookable without verified supplier inventory. This remains an independent editorial shortlist."
     }
   ]
 } as const;

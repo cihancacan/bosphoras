@@ -1,144 +1,141 @@
-/** Verified-source editorial preparation for Megève · 15 Oct 2026.
- * Original FR/EN content, not routed/indexable or claiming bookable inventory.
- * Sources: docs/travel-megeve-source-review.md.
- */
+/** Original FR/EN draft only; not registered; images and commercial rights review outstanding. */
 export const megeveDraftGuide = {
   "slug": "megeve",
   "name": "Megève",
   "country": "France",
-  "hero": "village-winter",
-  "secondary": "mont-arbois",
-  "eyebrowFr": "Haute-Savoie · Le luxe alpin à hauteur de village",
-  "eyebrowEn": "Haute-Savoie · Village life and mountain refinement",
-  "headingFr": "Megève, l'élégance d'un village qui prend son temps.",
-  "headingEn": "Megève: a mountain village with its own rhythm of luxury.",
-  "introFr": "À Megève, le privilège commence rarement par un palmarès de pistes. Il se trouve dans la place de l’église à la fin du jour, la chaleur d’une ferme ancienne, un déjeuner qui se prolonge et ce choix de rejoindre les remontées seulement lorsque la neige le mérite. L’hébergement peut changer radicalement l’expérience : le centre piéton pour flâner, le Mont d’Arbois pour le sport, ou un refuge de suites pour ne presque pas sortir.",
-  "introEn": "Megève’s appeal is not measured in lift counts alone. The church square, timber façades, long Savoyard lunches and the possibility of a slow afternoon make this a village first and a ski destination second. Where you stay changes the daily rhythm: pedestrian streets for shopping and dining, Mont d’Arbois for skiing, or an intimate suite refuge with its own quiet routine.",
-  "editorialFr": "La géographie compte plus qu’une adresse « Megève » affichée sur une annonce. Le centre permet de rejoindre cafés, artisans et restaurants à pied mais les remontées demandent parfois de marcher. Le Mont d’Arbois accueille le Four Seasons et son accès direct aux pistes ; Rochebrune possède ses propres départs et son environnement de chalets ; Jaillet ouvre vers Combloux et La Giettaz ; Cote 2000 évoque davantage la montagne et l’itinérance. Les domaines et les forfaits ne doivent pas être présumés identiques. Megève Tourisme annonce des ouvertures partielles les 5–6 puis 12 décembre 2026 et une ouverture générale le 19 décembre, sous réserve des conditions. Les quatre hôtels retenus proposent quatre expériences distinctes, des suites design de Zannier au grand resort Four Seasons, sans tarif ou disponibilité Bosphoras confirmés.",
-  "editorialEn": "A listing that simply says 'Megève' tells you too little. The pedestrian centre is ideal for cafés, galleries and après-ski without transport; Mont d’Arbois favours a more slope-oriented day; Rochebrune has its own departure points and chalet atmosphere; Jaillet connects toward Combloux and La Giettaz; Cote 2000 feels more mountain-led. Lift sectors and ticket coverage should not be treated as interchangeable. The destination office presently lists partial 2026 openings for 5–6 and 12 December, with general opening on 19 December, subject to conditions. Our four houses are intentionally different, from Zannier’s small suite retreat to the Four Seasons mountain resort. No price or Bosphoras supply is implied.",
-  "hotelIntroFr": "Quatre signatures réelles : Four Seasons sur le Mont d’Arbois pour le ski et les familles, Les Fermes de Marie pour les chalets d’antan, Lodge Park pour un club de village rénové, et Zannier Le Chalet pour l’intimité d’une très petite maison.",
-  "hotelIntroEn": "Four real addresses with little in common: Four Seasons for mountain access and family facilities, Les Fermes de Marie for lived-in Alpine heritage, renovated Lodge Park for village energy, and Zannier Le Chalet for discreet small-scale privacy.",
+  "hero": "scene-1",
+  "secondary": "scene-2",
+  "eyebrowFr": "Bosphoras · Luxury Stays · Sélection indépendante",
+  "eyebrowEn": "Bosphoras · Luxury Stays · Independent selection",
+  "headingFr": "Megève : le grand art de vivre alpin, à hauteur de village.",
+  "headingEn": "Megève: the Alpine village that makes time feel generous.",
+  "introFr": "Megève a gardé ce que tant de stations ont oublié : un cœur de village vivant, des chalets habités et des adresses où l'on vient autant pour la table et la cheminée que pour la neige. Le luxe ici n'est pas un décor unique : il se découvre différemment depuis Mont d'Arbois, le centre piéton, Rochebrune ou les hauteurs retirées.",
+  "introEn": "Megève's character begins in its lived-in village streets, not at the ski lift. Traditional chalets, intimate restaurants, spa rituals and mountain light make a stay here feel residential rather than transactional. Yet Mont d'Arbois, the old centre, Rochebrune and the quieter fringes create meaningfully different holidays.",
+  "editorialFr": "Un hôtel à Mont d'Arbois ne répond pas au même projet qu'un chalet à cinq minutes des ruelles du centre. Four Seasons attire les voyageurs qui veulent un resort complet et une approche directe des pistes sous réserve de conditions ; Les Fermes de Marie cultive l'univers de hameau de chalets ; Lodge Park simplifie les soirées à pied au village ; L'Alpaga préfère le recul et la contemplation. Les tarifs, catégories, services enfants, accès skis et navettes doivent être vérifiés adresse par adresse : aucun de ces établissements n'est présenté comme stock Bosphoras confirmé.",
+  "editorialEn": "A Mont d'Arbois mountain resort is not interchangeable with a village-based chalet hotel. Four Seasons offers a complete palace experience with direct mountain access subject to conditions; Les Fermes de Marie feels like a hamlet; Lodge Park puts boutiques and restaurants on the doorstep; L'Alpaga offers the luxury of distance. Verify actual winter opening dates, ski transfer arrangements, family spaces and room categories individually. No verified Bosphoras availability is implied.",
+  "hotelIntroFr": "Quatre propositions réellement distinctes, vérifiées par leurs sites officiels : Four Seasons Resort Megève, Les Fermes de Marie, L'Alpaga, Lodge Park. Le niveau de prestation, la localisation et l'ambiance ne doivent pas être confondus.",
+  "hotelIntroEn": "Four genuinely different stays verified on official sites: Four Seasons Resort Megève, Les Fermes de Marie, L'Alpaga, Lodge Park. Location, service level and hotel atmosphere are not interchangeable.",
   "areas": [
     {
-      "name": "Centre-village · la place de l’église",
-      "enName": "Village centre · the church square",
-      "fr": "Les passages pavés et les ruelles commerçantes sont la partie de Megève que l’on découvre sans skis : un café, une vitrine et une table appréciée après les pistes. Les Fermes de Marie et Lodge Park occupent des positions différentes autour de cette vie de village.",
-      "en": "Cobbled lanes, artisans, galleries and restaurants create the pedestrian heart of Megève. Les Fermes de Marie and Lodge Park offer different degrees of proximity to this daily village life.",
-      "frWatch": "Contrôler le chemin réel jusqu’aux télécabines du Chamois ou de Rochebrune, surtout avec enfants et chaussures de ski.",
-      "enWatch": "Confirm the actual boot-to-lift route to Chamois or Rochebrune, especially with children."
+      "name": "Village historique",
+      "enName": "Historical village",
+      "fr": "Boutiques, rues, salons et Chamois : parfait pour les soirées sans voiture.",
+      "en": "Walkable shops and Chamois gondola access make dinner effortless.",
+      "frWatch": "L'accès aux pistes dépend de la rue exacte et des horaires.",
+      "enWatch": "The specific lift approach changes from street to street."
     },
     {
-      "name": "Mont d’Arbois · le ski et la vue",
-      "enName": "Mont d’Arbois · ski-first elegance",
-      "fr": "Chalets disséminés, golf en été et secteur privilégié pour passer de la chambre à la montagne. Le Four Seasons y annonce son accès skis aux pieds, exceptionnel dans sa sélection locale.",
-      "en": "A refined hillside of chalets and an established golf course in summer, with a more ski-oriented winter setting. Four Seasons officially advertises ski-in/ski-out access here.",
-      "frWatch": "L’accès ski-in/ski-out concerne l’hôtel et les conditions réelles, pas tous les hébergements du quartier.",
-      "enWatch": "Slope access depends on the actual property, snow and operating lifts—not every Mont d’Arbois address."
+      "name": "Mont d'Arbois",
+      "enName": "Mont d'Arbois",
+      "fr": "Secteur résidentiel et sportif, avec grands chalets et certains départs de ski directs.",
+      "en": "A wooded, more resort-led area with chalets and mountain access.",
+      "frWatch": "Ne pas généraliser le ski-in/ski-out à tout le secteur.",
+      "enWatch": "Not every Mont d'Arbois address is directly ski-in/ski-out."
     },
     {
-      "name": "Rochebrune · un autre départ",
-      "enName": "Rochebrune · a different mountain base",
-      "fr": "Forêts et chalets s’échelonnent vers les départs de ce secteur. Un choix pour ceux qui apprécient la montagne sans rester au milieu de l’animation de la place.",
-      "en": "Chalets and wooded slopes lead toward a separate mountain departure, appealing to guests who prefer calm after a long day outdoors.",
-      "frWatch": "Vérifier les transferts vers le centre et ne pas présenter Rochebrune comme la même remontée que Mont d’Arbois.",
-      "enWatch": "Check town transfers and avoid treating Rochebrune and Mont d’Arbois as a single lift base."
+      "name": "Rochebrune",
+      "enName": "Rochebrune",
+      "fr": "Versant et base de ski différents, agréables pour penser sa journée autour de la glisse.",
+      "en": "A distinct piste base with its own lift logistics.",
+      "frWatch": "Comparer pistes ouvertes et transports avec les autres secteurs.",
+      "enWatch": "Verify lift connections and opening conditions."
     },
     {
-      "name": "Le Jaillet · panoramas et famille",
-      "enName": "Le Jaillet · broad views and family days",
-      "fr": "Un versant différent tourné vers Combloux et La Giettaz, attractif pour organiser des journées familiales avec un terrain de glisse adapté.",
-      "en": "An alternative side of the valley connected toward Combloux and La Giettaz, suitable for a different style of family skiing and wide views.",
-      "frWatch": "Les liaisons, conditions et forfaits doivent être revérifiés pour chaque date.",
-      "enWatch": "Verify which pistes, connecting lifts and tickets are operating on your dates."
+      "name": "Jaillet",
+      "enName": "Jaillet",
+      "fr": "Autre lecture du paysage, face aux Aravis et à l'ambiance village.",
+      "en": "A gentler perspective towards the Aravis and village.",
+      "frWatch": "Le bon secteur dépend des parcours accessibles et de la météo.",
+      "enWatch": "Match trails and family plans to conditions."
     },
     {
-      "name": "Cote 2000 · une montagne plus sauvage",
-      "enName": "Cote 2000 · beyond the village",
-      "fr": "Un paysage plus ouvert lié au ski sportif et aux grands espaces, davantage une excursion de journée qu’une base spontanée de shopping.",
-      "en": "A more mountain-focused landscape, attractive for an outdoor day rather than impromptu village shopping.",
-      "frWatch": "Privilégier des trajets planifiés et vérifier les horaires des équipements ; ce n’est pas le centre piétonnier.",
-      "enWatch": "Plan transport and check lift schedules instead of assuming it lies on the pedestrian village circuit."
+      "name": "Praz-sur-Arly et hauteurs",
+      "enName": "Outer hamlets",
+      "fr": "Plus d'espace et de tranquillité, avec la contrepartie des transferts.",
+      "en": "Quieter lodgings and more space away from the old core.",
+      "frWatch": "Calculer les navettes et sorties nocturnes plutôt que la distance à vol d'oiseau.",
+      "enWatch": "Plan evening transfers rather than relying on map distance."
     }
   ],
   "experiences": [
     {
-      "frTitle": "Le matin, skis ou ruelles ?",
-      "enTitle": "Pistes or village in the morning?",
-      "fr": "Choisir selon la météo : la première remontée si la neige est bonne, sinon un petit-déjeuner tardif près de la place avant de rejoindre la montagne.",
-      "en": "Let conditions decide between an early lift and a slower breakfast in the village, rather than planning every morning around a rigid ski schedule."
+      "frTitle": "La matinée au rythme des remontées",
+      "enTitle": "A properly planned ski morning",
+      "fr": "Choisir les pistes réellement accessibles selon le secteur de son hôtel.",
+      "en": "Choose lifts by your hotel's actual mountain base."
     },
     {
-      "frTitle": "Une table de Savoie après la neige",
-      "enTitle": "A long Savoyard lunch",
-      "fr": "Prévoir un déjeuner convivial de montagne en réservant suffisamment tôt les restaurants réputés ; le plaisir réside aussi dans le rythme.",
-      "en": "Reserve the mountain restaurant that really suits your route and allow lunch to become an experience rather than a hurried stop."
+      "frTitle": "Une table au village",
+      "enTitle": "An evening in the village",
+      "fr": "Une promenade piétonne et un dîner méritent de ne pas dépendre du dernier bus.",
+      "en": "Enjoy boutiques and dinner without depending on the final shuttle."
     },
     {
-      "frTitle": "Le spa comme refuge",
-      "enTitle": "The spa as a destination",
-      "fr": "Entre spa alpin des Fermes et soins du Four Seasons, privilégier les équipements réellement accessibles à sa catégorie et les horaires enfants.",
-      "en": "Choose wellness around the actual facilities included with your room and family access hours, not a glossy pool image."
+      "frTitle": "Spa puis feu de bois",
+      "enTitle": "Spa and a fireside afternoon",
+      "fr": "Laisser le temps au soin et au salon, sans transformer le séjour en course.",
+      "en": "Leave room for slow spa rituals and an unhurried lounge afternoon."
     },
     {
-      "frTitle": "L’été des alpages et des balcons",
-      "enTitle": "The green Alpine season",
-      "fr": "Le golf du Mont d’Arbois, les promenades et les longues terrasses prouvent que l’adresse se découvre aussi loin des vacances de février.",
-      "en": "Mont d’Arbois golf, gentle walks and mountain terraces reward a stay well beyond peak ski season."
+      "frTitle": "Les montagnes en été",
+      "enTitle": "The Alps in the green season",
+      "fr": "Randonnée et golf changent la lecture du lieu hors neige.",
+      "en": "Hiking and golf reveal a different town beyond winter."
     }
   ],
   "hotels": [
     {
       "name": "Four Seasons Resort Megève",
-      "area": "Mont d’Arbois · resort ski-in/ski-out",
-      "officialUrl": "https://www.fourseasons.com/fr/properties/megeve/",
-      "fr": "Sur les pentes du Mont d’Arbois, Four Seasons perpétue l’héritage des Rothschild dans un resort de 55 chambres et suites. Le site officiel et l’office de tourisme confirment l’accès skis aux pieds et la distinction Palace obtenue en 2026. Son spa, ses restaurants et ses services dédiés aux familles en font une adresse où les journées peuvent se concentrer sur la montagne et l’hôtel.",
-      "en": "On Mont d’Arbois, Four Seasons carries the Rothschild hospitality tradition into a 55-room-and-suite resort. The property and destination office confirm ski-in/ski-out access and its 2026 Palace distinction. A substantial spa, dining and family-oriented amenities create a ski-led, full-service stay with enough substance for a day spent entirely on property.",
-      "frWatch": "Confirmer les ouvertures des remontées, la catégorie de suite, les vues réelles et les équipements enfants. Four Seasons ne gère plus Les Chalets du Mont d’Arbois depuis octobre 2024.",
-      "enWatch": "Check lift operation, actual suite outlook and family facilities. Four Seasons stopped managing Les Chalets du Mont d’Arbois in October 2024."
+      "area": "Mont d'Arbois",
+      "officialUrl": "https://www.fourseasons.com/fr/megeve/",
+      "fr": "Four Seasons Resort Megève offre une lecture particulière de Megève, depuis Mont d'Arbois. Palace, ski access, 55 accommodations; verify exact operating period. Le bon choix dépend des habitudes de chaque voyageur, des transferts et du temps consacré à l'établissement plutôt qu'au seul prestige de l'adresse.",
+      "en": "Four Seasons Resort Megève provides a distinct way to experience Megève from Mont d'Arbois. Palace, ski access, 55 accommodations; verify exact operating period. Consider the actual room or residence, transport and daily rhythm rather than treating every upscale address as interchangeable.",
+      "frWatch": "Confirmer la saison d'ouverture, la catégorie de chambre, les services réellement inclus et le trajet depuis Mont d'Arbois ; il n'existe aucune disponibilité Bosphoras vérifiée.",
+      "enWatch": "Confirm seasonal dates, exact accommodation category, included services and the actual journey from Mont d'Arbois; no verified Bosphoras inventory is claimed."
     },
     {
       "name": "Les Fermes de Marie",
-      "area": "Centre de Megève · hameau de chalets",
-      "officialUrl": "https://www.fermesdemarie.com/",
-      "fr": "La maison Sibuet réunit de vieux chalets savoyards en un petit hameau résidentiel au cœur de Megève. Son parc, ses salons boisés, ses 70 chambres et son spa La Ferme de Beauté privilégient l’ambiance d’un séjour familial à la montagne. Le charme n’y repose ni sur une tour de palace ni sur un accès direct garanti à toutes les pistes, mais sur la vie dans les chalets et la table.",
-      "en": "The Sibuet family transformed old Alpine farms into a connected chalet hamlet, with 70 rooms, welcoming timber interiors and the La Ferme de Beauté spa. It is an address for a multi-generational stay and genuine chalet atmosphere, not a glass tower or an automatic promise of doorstep access to every slope.",
-      "frWatch": "Vérifier l’emplacement du chalet ou de la suite, la distance au centre, les navettes ski et les chambres communicantes.",
-      "enWatch": "Ask which chalet contains the room, how ski transfers work and whether connecting accommodation is available."
+      "area": "Village / parc privé",
+      "officialUrl": "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
+      "fr": "Les Fermes de Marie offre une lecture particulière de Megève, depuis Village / parc privé. Nine historic chalets; 70 rooms; resort-style spa. Le bon choix dépend des habitudes de chaque voyageur, des transferts et du temps consacré à l'établissement plutôt qu'au seul prestige de l'adresse.",
+      "en": "Les Fermes de Marie provides a distinct way to experience Megève from Village / parc privé. Nine historic chalets; 70 rooms; resort-style spa. Consider the actual room or residence, transport and daily rhythm rather than treating every upscale address as interchangeable.",
+      "frWatch": "Confirmer la saison d'ouverture, la catégorie de chambre, les services réellement inclus et le trajet depuis Village / parc privé ; il n'existe aucune disponibilité Bosphoras vérifiée.",
+      "enWatch": "Confirm seasonal dates, exact accommodation category, included services and the actual journey from Village / parc privé; no verified Bosphoras inventory is claimed."
+    },
+    {
+      "name": "L'Alpaga",
+      "area": "Périphérie calme",
+      "officialUrl": "https://alpaga.com/fr/proprietes/hotel-alpaga/chambres-suites/",
+      "fr": "L'Alpaga offre une lecture particulière de Megève, depuis Périphérie calme. 33 rooms and suites; quieter location away from core village. Le bon choix dépend des habitudes de chaque voyageur, des transferts et du temps consacré à l'établissement plutôt qu'au seul prestige de l'adresse.",
+      "en": "L'Alpaga provides a distinct way to experience Megève from Périphérie calme. 33 rooms and suites; quieter location away from core village. Consider the actual room or residence, transport and daily rhythm rather than treating every upscale address as interchangeable.",
+      "frWatch": "Confirmer la saison d'ouverture, la catégorie de chambre, les services réellement inclus et le trajet depuis Périphérie calme ; il n'existe aucune disponibilité Bosphoras vérifiée.",
+      "enWatch": "Confirm seasonal dates, exact accommodation category, included services and the actual journey from Périphérie calme; no verified Bosphoras inventory is claimed."
     },
     {
       "name": "Lodge Park",
-      "area": "Centre-village · près de la télécabine du Chamois",
+      "area": "Village central",
       "officialUrl": "https://www.lodgepark.com/en/hotel-center-of-megeve",
-      "fr": "Lodge Park a achevé une rénovation profonde fin 2025. L’identité de club alpin, les tartans, le cuir et un esprit de refuge élégant remplacent l’idée d’un chalet traditionnel figé. Installé dans son jardin au centre de Megève et à quelques pas du Chamois, il se prête à l’enchaînement boutiques, montagne et dîners dans un même séjour.",
-      "en": "Completely renovated by the end of 2025, Lodge Park is a more playful Alpine-club proposition: timber, tartan, worn leather and a fashion-conscious interior. Its own garden in the village and proximity to the Chamois gondola are especially appealing to travellers mixing mountain outings, shopping and dinners.",
-      "frWatch": "« À quelques pas » ne signifie pas ski-in/ski-out ; comparer le temps en chaussures de ski et les nouvelles catégories issues de la rénovation.",
-      "enWatch": "A short walk to Chamois is not ski-in/ski-out. Confirm the physical route and the post-renovation room category."
-    },
-    {
-      "name": "Zannier Le Chalet",
-      "area": "Au-dessus de Megève · douze chambres et suites",
-      "officialUrl": "https://www.zannierhotels.com/hotels/le-chalet-winter/",
-      "fr": "Trois chalets abritent seulement douze chambres et suites : Zannier Le Chalet est un choix de confidentialité plutôt que d’animation. Bois, cheminées, belles proportions et vues selon la suite composent une hospitalité presque privée. L’office du tourisme annonce une saison hivernale du 17 décembre 2026 au 29 mars 2027, à confirmer avant tout séjour.",
-      "en": "Three mountain chalets with only twelve rooms and suites make Zannier Le Chalet the opposite of a large ski resort. Open fires, calm interiors and category-dependent balconies give it a private-house mood. The destination office lists the 2026/27 winter operation as 17 December through 29 March, subject to confirmation.",
-      "frWatch": "Demander la suite exacte, les éventuels étages et escaliers, les transferts ski et l’ouverture saisonnière ; ne pas prétendre être skis aux pieds.",
-      "enWatch": "Verify the specific suite, stairs and layout, ski transfers and seasonal opening; do not assume direct slope access."
+      "fr": "Lodge Park offre une lecture particulière de Megève, depuis Village central. 5-star, completed redesign late 2025; walk to Chamois gondola. Le bon choix dépend des habitudes de chaque voyageur, des transferts et du temps consacré à l'établissement plutôt qu'au seul prestige de l'adresse.",
+      "en": "Lodge Park provides a distinct way to experience Megève from Village central. 5-star, completed redesign late 2025; walk to Chamois gondola. Consider the actual room or residence, transport and daily rhythm rather than treating every upscale address as interchangeable.",
+      "frWatch": "Confirmer la saison d'ouverture, la catégorie de chambre, les services réellement inclus et le trajet depuis Village central ; il n'existe aucune disponibilité Bosphoras vérifiée.",
+      "enWatch": "Confirm seasonal dates, exact accommodation category, included services and the actual journey from Village central; no verified Bosphoras inventory is claimed."
     }
   ],
   "checksFr": [
-    "Distinguer Mont d’Arbois, Rochebrune, Jaillet et Cote 2000 : les départs et les forfaits diffèrent.",
-    "Comparer l’accès skis aux pieds du Four Seasons au trajet à pied ou en navette des maisons du centre.",
-    "Pour début décembre 2026, vérifier l’ouverture progressive annoncée des domaines avant de réserver un séjour centré sur le ski.",
-    "Confirmer l’hôtel qui exploite réellement Les Chalets du Mont d’Arbois et ne plus l’attribuer à Four Seasons.",
-    "Demander la catégorie précise de la chambre, la configuration pour les enfants et les équipements spa accessibles.",
-    "Toutes ces adresses sont des choix éditoriaux sans stocks, prix ni réservation Bosphoras vérifiés."
+    "Vérifier précisément la localisation de l'hôtel et les transports.",
+    "Contrôler les périodes d'ouverture et les dates de voyage.",
+    "Distinguer chambre, suite, chalet et résidence familiale.",
+    "Ne pas présumer un accès skis aux pieds pour toutes les adresses.",
+    "Confirmer les activités réellement proposées selon la saison.",
+    "Aucun prix ni aucune disponibilité Bosphoras n'est affirmé."
   ],
   "checksEn": [
-    "Separate Mont d’Arbois, Rochebrune, Jaillet and Cote 2000 before comparing lift access and tickets.",
-    "Contrast Four Seasons’ direct slope access with village hotels’ walking or shuttle routes.",
-    "In early December 2026 verify the resort’s phased ski opening before centring the trip on the slopes.",
-    "Do not describe Les Chalets du Mont d’Arbois as Four Seasons managed after October 2024.",
-    "Confirm exact room category, family layout and which spa facilities are included.",
-    "These addresses are editorial recommendations, not verified Bosphoras rates or inventory."
+    "Confirm the actual property address and transportation needs.",
+    "Check seasonal operations for your specific dates.",
+    "Compare rooms, suites, cabins and family residences.",
+    "Do not assume every property has ski-in/ski-out access.",
+    "Verify that desired activities operate during your visit.",
+    "No live Bosphoras rate or booking inventory is claimed."
   ],
   "photos": {}
 } as const;
