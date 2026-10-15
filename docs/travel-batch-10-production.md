@@ -40,3 +40,9 @@ Commencé après Porto Cervo : Mustique (guide/galeries FR-EN) et Courchevel 185
 - **63/63 photos WebP candidates** (12 adresses × 3 et 9 paysages par destination), avec planches de revue photographique dans `docs/travel-alpine-photo-review-index.md`.
 - Premier examen visuel humain : plusieurs images peu premium ou mal adaptées à l'hébergement/la saison ; `docs/travel-alpine-first-visual-review.md` liste les remplacements exigés.
 - Ces trois guides **ne sont pas comptés comme achevés** ni routés en pages premium. La validation juridique/visuelle et l'intégration demeurent des préalables. **Aucun build Vercel lancé.**
+
+## Intégration en branche pour revue interne (15 octobre 2026)
+- St. Moritz, Aspen et Niseko : guides éditoriaux distincts FR/EN intégrés au registre, FAQ et schémas Article / ItemList / FAQPage et métadonnées. Chaque guide décrit quatre adresses réellement identifiées et cinq secteurs locaux.
+- 63/63 fichiers WebP sources conservés ; seules les photos **sans alerte éditoriale connue** sont proposées dans les galeries de la branche. Les images signalées (notamment la vue non-hôtelière de Setsu) restent masquées.
+- **Ne pas compter ces trois destinations comme définitivement publiables** : audit détaillé des licences commerciales et vérification visuelle complète restent nécessaires. Les photos de galerie officielle ne sont pas nécessairement libres de réutilisation.
+- TypeScript et garde noindex testés dans GitHub CI, sans déclencher de build Vercel. Uniquement une Preview Vercel quand les dix destinations auront passé la QA.
