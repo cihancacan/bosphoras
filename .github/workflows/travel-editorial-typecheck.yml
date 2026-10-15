@@ -6,6 +6,8 @@ on:
       - 'data/travel/**.ts'
       - 'components/travel/**.tsx'
       - 'scripts/check-travel-catalogue.mjs'
+      - 'scripts/check-next-alpine-drafts.mjs'
+      - 'data/travel/*MediaCandidates.json'
   workflow_dispatch:
 permissions:
   contents: read
@@ -23,3 +25,4 @@ jobs:
       - run: npm ci --no-audit --no-fund
       - run: npm run typecheck
       - run: node scripts/check-travel-catalogue.mjs
+      - run: node scripts/check-next-alpine-drafts.mjs
