@@ -1,0 +1,437 @@
+{
+  "destination": "verbier",
+  "generatedAt": "2026-10-15T13:42:26.736292+00:00",
+  "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
+  "expectedHotelPhotos": 12,
+  "expectedDestinationPhotos": 9,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 1,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "hotels": [
+    {
+      "property": "W Verbier",
+      "propertyKey": "w-verbier",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/overview/",
+        "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/rooms/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/verbier-premium/w-verbier/view-1.webp",
+      "downloadUrl": "https://www.marriott.com/content/dam/marriott-digital/digital-merchandising/us-canada/en_us/cobrand-cards/assets/pdt-0513-DCA-125892172130576.png",
+      "sourcePage": "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/rooms/",
+      "candidateContext": "Credit Card",
+      "sha256": "4abc5b45726987f2168cb21dc9095ef3c7d66817c88f6973b38a5e711db58693",
+      "bytes": 73176,
+      "originalSize": [
+        2000,
+        1260
+      ],
+      "outputSize": [
+        1700,
+        1071
+      ]
+    },
+    {
+      "property": "W Verbier",
+      "propertyKey": "w-verbier",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/overview/",
+        "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/rooms/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/verbier-premium/w-verbier/view-2.webp",
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/GVAWH/gvawh-wowsuite-loungearea-3039-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1920px:*",
+      "sourcePage": "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/rooms/",
+      "candidateContext": "",
+      "sha256": "5da98e84256c43f78bbf09dd49a6243e5c2df4acb158909d8a1890e058d149cb",
+      "bytes": 223648,
+      "originalSize": [
+        1920,
+        1279
+      ],
+      "outputSize": [
+        1700,
+        1132
+      ]
+    },
+    {
+      "property": "W Verbier",
+      "propertyKey": "w-verbier",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/overview/",
+        "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/rooms/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/verbier-premium/w-verbier/view-3.webp",
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/GVAWH/gvawh-wowsuite-loungearea-3039-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1200px:*",
+      "sourcePage": "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/rooms/",
+      "candidateContext": "",
+      "sha256": "b7cde219fe7f2fdf136c43098e3cafc1a1aa2a04bd98d8b2fc665c504e5892bc",
+      "bytes": 124768,
+      "originalSize": [
+        1200,
+        799
+      ],
+      "outputSize": [
+        1200,
+        799
+      ]
+    },
+    {
+      "property": "Chalet d'Adrien",
+      "propertyKey": "chalet-adrien",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://chalet-adrien.com/en/",
+        "https://chalet-adrien.com/en/rooms-suites-en/savoleyres-2/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/verbier-premium/chalet-adrien/view-1.webp",
+      "downloadUrl": "https://chalet-adrien.com/wp-content/uploads/2021/01/savoleyres1920-2.jpg",
+      "sourcePage": "https://chalet-adrien.com/en/rooms-suites-en/savoleyres-2/",
+      "candidateContext": "Official page sharing image",
+      "sha256": "b6e65b385c462320584ae6a4d65c1af0c3a326039baf95a513c74c1e86175584",
+      "bytes": 143404,
+      "originalSize": [
+        1920,
+        1077
+      ],
+      "outputSize": [
+        1700,
+        954
+      ]
+    },
+    {
+      "property": "Chalet d'Adrien",
+      "propertyKey": "chalet-adrien",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://chalet-adrien.com/en/",
+        "https://chalet-adrien.com/en/rooms-suites-en/savoleyres-2/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/verbier-premium/chalet-adrien/view-2.webp",
+      "downloadUrl": "https://chalet-adrien.com/wp-content/uploads/2020/12/chalet_adrien.jpg",
+      "sourcePage": "https://chalet-adrien.com/en/",
+      "candidateContext": "Le Chalet d'Adrien à Verbier",
+      "sha256": "2eb9e5202ecaddd6c17d0b1493721a8e62c46beb2f2f51d5ad3bfff3f4ceacc0",
+      "bytes": 433440,
+      "originalSize": [
+        1600,
+        1088
+      ],
+      "outputSize": [
+        1600,
+        1088
+      ]
+    },
+    {
+      "property": "Chalet d'Adrien",
+      "propertyKey": "chalet-adrien",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://chalet-adrien.com/en/",
+        "https://chalet-adrien.com/en/rooms-suites-en/savoleyres-2/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/verbier-premium/chalet-adrien/view-3.webp",
+      "downloadUrl": "https://chalet-adrien.com/wp-content/uploads/2020/12/chalet_adrien-1024x696.jpg",
+      "sourcePage": "https://chalet-adrien.com/en/",
+      "candidateContext": "Le Chalet d'Adrien à Verbier",
+      "sha256": "84469327899336b521c562c199f5f2d187f80bace0a10f53f9310a4c66602827",
+      "bytes": 192594,
+      "originalSize": [
+        1024,
+        696
+      ],
+      "outputSize": [
+        1024,
+        696
+      ]
+    },
+    {
+      "property": "La Cordée des Alpes",
+      "propertyKey": "la-cordee-des-alpes",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://hotelcordee.com/",
+        "https://www.verbier.com/hotels/la-corde-des-alpes"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/verbier-premium/la-cordee-des-alpes/view-1.webp",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/5c82902829f2cc7bb5650e0a/1629725367564-MAQ38ZA3AJYB3QPAHGBD/Hotel-cordee-des-alpes-verbier-hotels-exterior.jpg",
+      "sourcePage": "https://www.verbier.com/hotels/la-corde-des-alpes",
+      "candidateContext": "Hotel-cordee-des-alpes-verbier-hotels-exterior.jpg",
+      "sha256": "7eed16664f5a23b54a69791d58087f191ba460000a84f9eaf8af484ad83ed7f0",
+      "bytes": 300818,
+      "originalSize": [
+        2000,
+        1125
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
+    },
+    {
+      "property": "La Cordée des Alpes",
+      "propertyKey": "la-cordee-des-alpes",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://hotelcordee.com/",
+        "https://www.verbier.com/hotels/la-corde-des-alpes"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/verbier-premium/la-cordee-des-alpes/view-2.webp",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/5c82902829f2cc7bb5650e0a/1629724033839-PHHZPQU671CR2AVX8IHD/Hotel-cordee-des-alpes-verbier-hotels-suite.jpg",
+      "sourcePage": "https://www.verbier.com/hotels/la-corde-des-alpes",
+      "candidateContext": "Hotel-cordee-des-alpes-verbier-hotels-suite.jpg",
+      "sha256": "e56839ce9c7dce193acfbaf72e2e70ee2add1b422dd9a4d3de8d013f73e1b4af",
+      "bytes": 101386,
+      "originalSize": [
+        1920,
+        1254
+      ],
+      "outputSize": [
+        1700,
+        1110
+      ]
+    },
+    {
+      "property": "La Cordée des Alpes",
+      "propertyKey": "la-cordee-des-alpes",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://hotelcordee.com/",
+        "https://www.verbier.com/hotels/la-corde-des-alpes"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/verbier-premium/la-cordee-des-alpes/view-3.webp",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/5c82902829f2cc7bb5650e0a/1629724033660-VO2MCCFECXNKSWCJHIL8/Hotel-cordee-des-alpes-verbier-hotels-apartments.jpg",
+      "sourcePage": "https://www.verbier.com/hotels/la-corde-des-alpes",
+      "candidateContext": "Hotel-cordee-des-alpes-verbier-hotels-apartments.jpg",
+      "sha256": "7a76ea0626052c630e58a4bfa44b80cd46ee9487a3f76b2a5a3bee83ab1c23bb",
+      "bytes": 256066,
+      "originalSize": [
+        1918,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1135
+      ]
+    },
+    {
+      "property": "Experimental Chalet Verbier",
+      "propertyKey": "experimental-chalet",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.experimentalchalet.com/",
+        "https://fr.experimentalchalet.com/?no_redirect=true"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/verbier-premium/experimental-chalet/view-1.webp",
+      "downloadUrl": "https://cdn.prod.website-files.com/6932dc91bcf2019d2c1c5686/69ef6482f8a89dc0988cb65d_Experimental%20Chalet%20Verbier%20Winter.webp",
+      "sourcePage": "https://www.experimentalchalet.com/",
+      "candidateContext": "Official page sharing image",
+      "sha256": "c1aace7ca0a75f9dcfa5e251621c3eeed2b3684b4ca68ed1ce32ee3d03f29721",
+      "bytes": 28008,
+      "originalSize": [
+        1200,
+        630
+      ],
+      "outputSize": [
+        1200,
+        630
+      ]
+    },
+    {
+      "property": "Experimental Chalet Verbier",
+      "propertyKey": "experimental-chalet",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.experimentalchalet.com/",
+        "https://fr.experimentalchalet.com/?no_redirect=true"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/verbier-premium/experimental-chalet/view-2.webp",
+      "downloadUrl": "https://cdn.prod.website-files.com/6932dc91bcf2019d2c1c5686/6a354ec6bd64236c99abbf0c_experimental-group-hotel-chalet-verbier-winter-desktop.webp",
+      "sourcePage": "https://www.experimentalchalet.com/",
+      "candidateContext": "Blurred forest and hills seen through a train window with two empty seats on each side.",
+      "sha256": "a81111cfbb7ff223547951f6d3f8a2f5afe5291cadd719ff53846666895ba17f",
+      "bytes": 40038,
+      "originalSize": [
+        2880,
+        1620
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
+    },
+    {
+      "property": "Experimental Chalet Verbier",
+      "propertyKey": "experimental-chalet",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.experimentalchalet.com/",
+        "https://fr.experimentalchalet.com/?no_redirect=true"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/verbier-premium/experimental-chalet/view-3.webp",
+      "downloadUrl": "https://cdn.prod.website-files.com/6932dc91bcf2019d2c1c5686/6a428d8f43d1b45f5e051324_experimental-group-hotel-chalet-verbier-views-room.webp",
+      "sourcePage": "https://www.experimentalchalet.com/",
+      "candidateContext": "View from a room balcony with two chairs and snowy mountain peaks in the background.",
+      "sha256": "d7f32400b829725e99c012f280b0a9a2016de17152db693a6ce5a92d0d05f2b1",
+      "bytes": 121252,
+      "originalSize": [
+        2760,
+        1672
+      ],
+      "outputSize": [
+        1700,
+        1030
+      ]
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "placeLabel": "Verbier Médran gondola",
+      "searchQuery": "Verbier Medran gondola",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-2",
+      "placeLabel": "Place Blanche Verbier",
+      "searchQuery": "Place Blanche Verbier",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-3",
+      "placeLabel": "Place Centrale Verbier",
+      "searchQuery": "Verbier Place Centrale",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-4",
+      "placeLabel": "Savoleyres ski slopes",
+      "searchQuery": "Verbier Savoleyres",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/verbier-premium/destination/scene-4.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/T%C3%A9l%C3%A9cabines_Verbier_Dec_2021.jpg/1920px-T%C3%A9l%C3%A9cabines_Verbier_Dec_2021.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Télécabines_Verbier_Dec_2021.jpg",
+      "candidateContext": "File:Télécabines Verbier Dec 2021.jpg",
+      "sha256": "262f92a803305f2e8576cfb7dac651f8aacbad2fc6734337edae366faafe936e",
+      "bytes": 72006,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:WIKIMRDIA?action=edit&amp;redlink=1\" title=\"User:WIKIMRDIA (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:WIKIMRDIA\"]}}'>WIKIMRDIA</a>",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "key": "scene-5",
+      "placeLabel": "Les Esserts Verbier",
+      "searchQuery": "Verbier Les Esserts",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-6",
+      "placeLabel": "Les Creux Verbier",
+      "searchQuery": "Verbier Les Creux",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-7",
+      "placeLabel": "Mont Fort panorama",
+      "searchQuery": "Verbier Mont Fort",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-8",
+      "placeLabel": "Le Châble valley",
+      "searchQuery": "Le Chable Switzerland Verbier",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-9",
+      "placeLabel": "Verbier après-ski",
+      "searchQuery": "Verbier village evening",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    }
+  ]
+}

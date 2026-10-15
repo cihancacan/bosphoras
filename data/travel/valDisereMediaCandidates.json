@@ -1,0 +1,420 @@
+{
+  "destination": "val-disere",
+  "generatedAt": "2026-10-15T13:42:04.340031+00:00",
+  "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
+  "expectedHotelPhotos": 12,
+  "expectedDestinationPhotos": 9,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 0,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "hotels": [
+    {
+      "property": "Airelles Val d'Isère",
+      "propertyKey": "airelles-val-disere",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://airelles.com/fr/destination/val-d-isere-hotel",
+        "https://airelles.com/en/destination/val-d-isere-hotel"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/val-disere-premium/airelles-val-disere/view-1.webp",
+      "downloadUrl": "https://images.prismic.io/airelles2023/ZfNWN7TwE6aM1KQG_VDI---Facade---arrivee.jpg?auto=format%2Ccompress&rect=0%2C141%2C1920%2C1008&w=2400&h=1260",
+      "sourcePage": "https://airelles.com/fr/destination/val-d-isere-hotel",
+      "candidateContext": "Official page sharing image",
+      "sha256": "af31e681e0b77e2ffd55a628fa969e1347acd4105b10a67f366f55f269cd59fe",
+      "bytes": 363044,
+      "originalSize": [
+        2400,
+        1260
+      ],
+      "outputSize": [
+        1700,
+        893
+      ]
+    },
+    {
+      "property": "Airelles Val d'Isère",
+      "propertyKey": "airelles-val-disere",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://airelles.com/fr/destination/val-d-isere-hotel",
+        "https://airelles.com/en/destination/val-d-isere-hotel"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/val-disere-premium/airelles-val-disere/view-2.webp",
+      "downloadUrl": "https://images.prismic.io/airelles2023/65d1f16a9be9a5b998b5f885_VDI-AirellesVald%27Is%C3%A8re-Fa%C3%A7ade.jpg?auto=format%2Ccompress&rect=0%2C136%2C1920%2C1008&w=2400&h=1260",
+      "sourcePage": "https://airelles.com/en/destination/val-d-isere-hotel",
+      "candidateContext": "Official page sharing image",
+      "sha256": "414d6053789c456d7d372723dcb89531af1de6cc30dadce24cd8765dbc273a86",
+      "bytes": 241774,
+      "originalSize": [
+        2400,
+        1260
+      ],
+      "outputSize": [
+        1700,
+        893
+      ]
+    },
+    {
+      "property": "Airelles Val d'Isère",
+      "propertyKey": "airelles-val-disere",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://airelles.com/fr/destination/val-d-isere-hotel",
+        "https://airelles.com/en/destination/val-d-isere-hotel"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/val-disere-premium/airelles-val-disere/view-3.webp",
+      "downloadUrl": "https://assets.airelles.com/images/airelles2023/ZfMTFLTwE6aM1J1D_VDI---Val-d%27Ise%CC%80re---Lac-du-Chevril.jpg?auto=format%2Ccompress&rect=0%2C291%2C1920%2C960&w=1920&h=960",
+      "sourcePage": "https://airelles.com/en/destination/val-d-isere-hotel",
+      "candidateContext": "Airelles Val d'Isère, Hôtel 5 étoiles",
+      "sha256": "bfc73ba66ef857cc8a9f140a3f1e780abc60bdb208135cef7c57d4220538e68a",
+      "bytes": 280398,
+      "originalSize": [
+        1920,
+        960
+      ],
+      "outputSize": [
+        1700,
+        850
+      ]
+    },
+    {
+      "property": "Le K2 Chogori",
+      "propertyKey": "le-k2-chogori",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://lek2chogori.com/fr/",
+        "https://lek2chogori.com/fr/sejourner/chambres.html"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/val-disere-premium/le-k2-chogori/view-1.webp",
+      "downloadUrl": "https://lek2chogori.com/media/cache/jadro_resize/rc/nJx7L9d71790002183/jadroRoot/medias/663358bf9b0f4/photo-homepage-k2c-fermeture.jpg",
+      "sourcePage": "https://lek2chogori.com/fr/",
+      "candidateContext": "Hôtel de luxe à Val d'Isère, Le K2 Chogori",
+      "sha256": "c18d2e8124d3af57eb646fb4c64340286f61e782afdc96f1004c6c3d3d1d51cf",
+      "bytes": 276844,
+      "originalSize": [
+        1536,
+        863
+      ],
+      "outputSize": [
+        1536,
+        863
+      ]
+    },
+    {
+      "property": "Le K2 Chogori",
+      "propertyKey": "le-k2-chogori",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://lek2chogori.com/fr/",
+        "https://lek2chogori.com/fr/sejourner/chambres.html"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/val-disere-premium/le-k2-chogori/view-2.webp",
+      "downloadUrl": "https://lek2chogori.com/media/cache/jadro_resize/rc/hYeSs6vJ1790002181/jadroRoot/medias/5f64c7d485a60/6787e56f7681b/k2c_suite-chogori_25_07_stephane_berthe.jpg",
+      "sourcePage": "https://lek2chogori.com/fr/",
+      "candidateContext": "Chambre K2 Chogori, hôtel de luxe 5 étoiles à Val d'Isère",
+      "sha256": "2657b668fb3b09f757d30b582257868640b4ee2c670f00d6c5fcd344a37d5aa4",
+      "bytes": 81738,
+      "originalSize": [
+        960,
+        640
+      ],
+      "outputSize": [
+        960,
+        640
+      ]
+    },
+    {
+      "property": "Le K2 Chogori",
+      "propertyKey": "le-k2-chogori",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://lek2chogori.com/fr/",
+        "https://lek2chogori.com/fr/sejourner/chambres.html"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/val-disere-premium/le-k2-chogori/view-3.webp",
+      "downloadUrl": "https://lek2chogori.com/media/cache/jadro_resize/rc/g9dpaQpB1790002177/jadroRoot/medias/5c115c2415935/695bebd8391df/k2c_bottleneck_gastonomie_22_stephane_berthe.jpg",
+      "sourcePage": "https://lek2chogori.com/fr/",
+      "candidateContext": "Le Bottleneck restaurant fondues fromagères et cuisine à la braise à Val d'Isère au K2 Chogori",
+      "sha256": "1c98013fa58ef2ea01b86f89f4f851d201bfcbff960bb76b36f0bd23f4b9de59",
+      "bytes": 37118,
+      "originalSize": [
+        960,
+        640
+      ],
+      "outputSize": [
+        960,
+        640
+      ]
+    },
+    {
+      "property": "La Mourra",
+      "propertyKey": "la-mourra",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.hotellamourra.com/fr/",
+        "https://www.hotellamourra.com/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/val-disere-premium/la-mourra/view-1.webp",
+      "downloadUrl": "https://www.hotellamourra.com/wp-content/uploads/la-mourra_vue-exterieure-1.webp",
+      "sourcePage": "https://www.hotellamourra.com/fr/",
+      "candidateContext": "Official page sharing image",
+      "sha256": "78cfd2cbfd5c9ecb3ca10bd3e76febacf4e3d2d8601959fb15e1d1a4b65e9628",
+      "bytes": 280124,
+      "originalSize": [
+        2560,
+        1712
+      ],
+      "outputSize": [
+        1700,
+        1137
+      ]
+    },
+    {
+      "property": "La Mourra",
+      "propertyKey": "la-mourra",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.hotellamourra.com/fr/",
+        "https://www.hotellamourra.com/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/val-disere-premium/la-mourra/view-2.webp",
+      "downloadUrl": "https://www.hotellamourra.com/wp-content/uploads/la-mourra_vue-drone-2-2560x1920.webp",
+      "sourcePage": "https://www.hotellamourra.com/fr/",
+      "candidateContext": "Vue aérienne d'un bâtiment en montagne enneigée, Hôtel 5 Étoiles avec spa La Mourra à Val d’Isèr",
+      "sha256": "276778a6447a812eb6814ca00189785e289942048b786891680394a67e93f28b",
+      "bytes": 554618,
+      "originalSize": [
+        2560,
+        1920
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ]
+    },
+    {
+      "property": "La Mourra",
+      "propertyKey": "la-mourra",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.hotellamourra.com/fr/",
+        "https://www.hotellamourra.com/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/val-disere-premium/la-mourra/view-3.webp",
+      "downloadUrl": "https://www.hotellamourra.com/wp-content/uploads/la-mourra_vue-drone-2-1920x1440.webp",
+      "sourcePage": "https://www.hotellamourra.com/fr/",
+      "candidateContext": "Vue aérienne d'un bâtiment en montagne enneigée, Hôtel 5 Étoiles avec spa La Mourra à Val d’Isèr",
+      "sha256": "0168fe57ffd93be17c70667f076134cca0fa1d830c4d9c44e771898499871472",
+      "bytes": 461018,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ]
+    },
+    {
+      "property": "Le Blizzard",
+      "propertyKey": "le-blizzard",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://hotelblizzard.com/fr/",
+        "https://hotelblizzard.com/en/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/val-disere-premium/le-blizzard/view-1.webp",
+      "downloadUrl": "https://hotelblizzard.com/wp-content/uploads/restaurant_le-blizzard-1-hd-1920x1080-1-2560x1441.webp",
+      "sourcePage": "https://hotelblizzard.com/fr/",
+      "candidateContext": "restaurant le blizzard (1) hd 1920x1080",
+      "sha256": "e5335b110ed3d183eb3920a5ec415ea1100e000b1ced3c0de4e7fd7e0e3b2514",
+      "bytes": 303620,
+      "originalSize": [
+        1920,
+        1081
+      ],
+      "outputSize": [
+        1700,
+        957
+      ]
+    },
+    {
+      "property": "Le Blizzard",
+      "propertyKey": "le-blizzard",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://hotelblizzard.com/fr/",
+        "https://hotelblizzard.com/en/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/val-disere-premium/le-blizzard/view-2.webp",
+      "downloadUrl": "https://hotelblizzard.com/wp-content/uploads/restaurant_le-blizzard-1-hd-1920x1080-1-1440x810.webp",
+      "sourcePage": "https://hotelblizzard.com/fr/",
+      "candidateContext": "restaurant le blizzard (1) hd 1920x1080",
+      "sha256": "9b71ad3faaa246d30a80b234754a6ea0bb88c2f6d6cf885e1518a8f2fad45d14",
+      "bytes": 217154,
+      "originalSize": [
+        1440,
+        810
+      ],
+      "outputSize": [
+        1440,
+        810
+      ]
+    },
+    {
+      "property": "Le Blizzard",
+      "propertyKey": "le-blizzard",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://hotelblizzard.com/fr/",
+        "https://hotelblizzard.com/en/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/val-disere-premium/le-blizzard/view-3.webp",
+      "downloadUrl": "https://hotelblizzard.com/wp-content/uploads/restaurant_le-blizzard-1-hd-1920x1080-1-1280x720.webp",
+      "sourcePage": "https://hotelblizzard.com/fr/",
+      "candidateContext": "restaurant le blizzard (1) hd 1920x1080",
+      "sha256": "82c39cd03f4a6566ab55c192e8b8b28a58b468fdd35c9dff125c4bcb9ae37cbd",
+      "bytes": 177478,
+      "originalSize": [
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "placeLabel": "Val d'Isère old village",
+      "searchQuery": "Val d Isere village church",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-2",
+      "placeLabel": "Solaise slopes",
+      "searchQuery": "Val d Isere Solaise",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-3",
+      "placeLabel": "Bellevarde slopes",
+      "searchQuery": "Val d Isere Bellevarde",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-4",
+      "placeLabel": "La Daille Funival",
+      "searchQuery": "La Daille Val d Isere",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-5",
+      "placeLabel": "Le Laisinant",
+      "searchQuery": "Laisinant Val d Isere",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-6",
+      "placeLabel": "Le Fornet winter",
+      "searchQuery": "Le Fornet Val d Isere",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-7",
+      "placeLabel": "Manchet valley",
+      "searchQuery": "Manchet Val d Isere",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-8",
+      "placeLabel": "Prariond chalets",
+      "searchQuery": "Prariond Val d Isere",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-9",
+      "placeLabel": "Val d'Isère summer",
+      "searchQuery": "Val d Isere summer mountains",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    }
+  ]
+}
