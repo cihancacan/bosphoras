@@ -113,6 +113,17 @@ def fetch_webp(url: str) -> tuple[bytes, tuple[int, int], tuple[int, int]] | Non
 def build_entries(key: str, url: str, count: int, folder: str, property_slug: str | None = None) -> list[dict]:
     items: list[dict] = []
     candidates = collect_gallery(url)
+    if property_slug == "cotton-house":
+        # The main page has only one full-size image; these are the hotel's
+        # OFFICIAL room-gallery pages, never photos from another property.
+        for extra in (
+            BASE + "/villas-and-hotel/the-cotton-house/garden-view",
+            BASE + "/villas-and-hotel/the-cotton-house/sea-view",
+            BASE + "/villas-and-hotel/the-cotton-house/the-residence",
+        ):
+            for candidate in collect_gallery(extra):
+                if candidate not in candidates:
+                    candidates.append(candidate)
     index = 0
     for n in range(1, count + 1):
         name = f"view-{n}" if property_slug else f"island-{n}"
