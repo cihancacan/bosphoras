@@ -346,7 +346,8 @@
       ],
       "credit": "<a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/User:Crystalmountainskier\" title=\"en:User:Crystalmountainskier\" class=\"extiw\">Crystalmountainskier</a>",
       "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "visualQaWarning": "Photographie d'un bus START à Teton Village : scène géographiquement plausible, mais visuel inadapté à la sélection de luxe. À remplacer."
     },
     {
       "key": "scene-3",
@@ -483,5 +484,5 @@
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
     }
   ],
-  "publicationBlockedReason": "All photo publication requires identity, visual quality and commercial-rights verification."
+  "publicationBlockedReason": "Candidate hotel/place identity, luxury editorial quality and commercial photo rights require separate review before any premium publication."
 }

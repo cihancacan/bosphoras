@@ -4,7 +4,7 @@
   "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 9,
+  "downloadedHotelCandidates": 8,
   "downloadedDestinationCandidates": 5,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
@@ -268,7 +268,7 @@
       "property": "Summit Hotel",
       "propertyKey": "summit-hotel",
       "key": "view-3",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -276,20 +276,10 @@
         "https://www.bigskyresort.com/lodging"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "localPath": "/images/travel/big-sky-premium/summit-hotel/view-3.webp",
-      "downloadUrl": "https://cdn.sanity.io/images/8ts88bij/big-sky/0164e9b468c7c4be2abbcce19c3f08afc559ae93-2010x1458.png?w=1366&q=70&fit=min&auto=format",
-      "sourcePage": "https://www.bigskyresort.com/lodging/hotels/summit-hotel",
       "candidateContext": "",
-      "sha256": "1dd1053b74bc2c7bf68b33d530d23e1bd8d9f5518f75ce9f3634044c494c6c17",
-      "bytes": 10740,
-      "originalSize": [
-        1366,
-        991
-      ],
-      "outputSize": [
-        1366,
-        991
-      ]
+      "excludedCandidatePath": "/images/travel/big-sky-premium/summit-hotel/view-3.webp",
+      "excludedSource": "https://www.bigskyresort.com/lodging/hotels/summit-hotel",
+      "visualQaWarning": "EXCLU : photographie trop petite (10 740 octets), inadéquate pour une galerie hôtelière haut de gamme."
     }
   ],
   "destinationScenes": [
@@ -370,7 +360,8 @@
       ],
       "credit": "NOAA Photo Library, NOAA Central Library; Family of Captain William M. Scaife, C&amp;GS.",
       "license": "Public domain",
-      "licenseUrl": ""
+      "licenseUrl": "",
+      "visualQaWarning": "Localisation incertaine : le fichier source NOAA ne documente pas clairement Spanish Peaks du Montana. Ne pas afficher sous cette légende."
     },
     {
       "key": "scene-4",
@@ -396,7 +387,8 @@
       ],
       "credit": "<a rel=\"mw:WikiLink/Interwiki\" href=\"//www.flickr.com/people/11045073@N05\" title=\"flickruser:11045073@N05\" class=\"extiw\">Brett</a>",
       "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "visualQaWarning": "Source intitulée « Moonlight Basin replica » : impossible de garantir une vraie scène du domaine Moonlight Basin. Ne pas afficher sous cette légende."
     },
     {
       "key": "scene-5",
@@ -423,7 +415,7 @@
         1667,
         1250
       ],
-      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
+      "visualQaWarning": "Photographie de Lone Mountain, pas de Lone Mountain Ranch. Ne PAS la présenter comme montrant les cabanes ou les installations du ranch."
     },
     {
       "key": "scene-6",
@@ -462,5 +454,5 @@
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
     }
   ],
-  "publicationBlockedReason": "All photo publication requires identity, visual quality and commercial-rights verification."
+  "publicationBlockedReason": "Candidate hotel/place identity, luxury editorial quality and commercial photo rights require separate review before any premium publication."
 }
