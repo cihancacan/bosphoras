@@ -23,3 +23,8 @@ Commencé après Porto Cervo : Mustique (guide/galeries FR-EN) et Courchevel 185
 ## Sécurité supplémentaire
 - Si des sites protègent leur galerie (HTTP 403/429), utiliser des photos identifiées de cette propriété depuis des sources vérifiables ; ne jamais détourner les photos d’un autre hôtel.
 - Les manifestes doivent consigner les téléchargements réussis ET les manquants ; le contrôle visuel et juridique reste indispensable, y compris après un résultat `downloaded`.
+
+## Contrôle Courchevel 1850
+- 4 hôtels réels × 3 photographies = 12 WebP ; 9 photographies de destination avec auteur/source consignés.
+- Vérification technique GitHub complète avant toute Preview ; licences commerciales tierces toujours à confirmer avant publication publique.
+- Vérifier les visuels par jugement éditorial humain avant la publication finale du lot de dix.

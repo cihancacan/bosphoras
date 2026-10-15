@@ -3,7 +3,7 @@
  * Keeps the catalogue intact and prevents a premium guide from silently
  * becoming an indexable generic route before approval.
  */
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync, statSync } from 'node:fs';
 import assert from 'node:assert/strict';
 
 const read = p => readFileSync(p, 'utf8');
@@ -22,5 +22,13 @@ for (const path of ['data/travel/mustiquePremiumImageSources.json','data/travel/
  const manifest = JSON.parse(read(path));
  assert.equal(manifest.downloaded, manifest.items.filter(x => x.status === 'downloaded').length, 'Mismatch in ' + path);
  assert.equal(manifest.expected, manifest.items.length, 'Expected-count mismatch in ' + path);
+ for (const item of manifest.items) {
+   if (item.status === 'downloaded') {
+     assert(item.sourcePage?.startsWith('https://'), 'Image source page missing for ' + item.localPath);
+     assert(item.downloadUrl?.startsWith('https://'), 'Image download URL missing for ' + item.localPath);
+     assert(existsSync('public' + item.localPath), 'Downloaded media file not present: ' + item.localPath);
+     assert(statSync('public' + item.localPath).size >= 12000, 'Image file suspiciously small: ' + item.localPath);
+   }
+ }
 }
 console.log('Travel catalogue, uniqueness, Mustique manifests and noindex safeguards: OK');

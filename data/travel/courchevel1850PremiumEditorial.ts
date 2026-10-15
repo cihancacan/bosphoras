@@ -4,23 +4,23 @@ export const courchevel1850HotelEditorial:Record<string,BodrumHotelEditorial> = 
     "photos": [
       {
         "src": "/images/travel/courchevel-1850-premium/les-airelles/view-1.webp",
-        "fr": "Les Airelles Courchevel · photographie de la maison 1",
-        "en": "Les Airelles Courchevel · property photograph 1",
-        "credit": "Les Airelles Courchevel · source hôtelière officielle ; droits à vérifier",
-        "sourcePage": "https://airelles.com/en/destination/courchevel-hotel"
+        "fr": "Les Airelles, façade du palace sous la neige",
+        "en": "Les Airelles, façade du palace sous la neige · authentic property photo",
+        "credit": "Tatler · Les Airelles Courchevel · droits de réutilisation commerciale à confirmer",
+        "sourcePage": "https://media.tatler.com/photos/62065838a9f25b3e44961bd9/3%3A2/w_1920%2Ch_1280%2Cc_limit/LESAIRELLESCOURCHEVEL_11022022_Les%20Airelles%20-%20Fac%CC%A7ade%202.jpg"
       },
       {
         "src": "/images/travel/courchevel-1850-premium/les-airelles/view-2.webp",
-        "fr": "Les Airelles Courchevel · photographie de la maison 2",
-        "en": "Les Airelles Courchevel · property photograph 2",
-        "credit": "Les Airelles Courchevel · source hôtelière officielle ; droits à vérifier",
+        "fr": "Les Airelles, vue de la maison",
+        "en": "Les Airelles, vue de la maison · authentic property photo",
+        "credit": "Airelles · Les Airelles Courchevel · droits de réutilisation commerciale à confirmer",
         "sourcePage": "https://airelles.com/en/destination/courchevel-hotel"
       },
       {
         "src": "/images/travel/courchevel-1850-premium/les-airelles/view-3.webp",
-        "fr": "Les Airelles Courchevel · photographie de la maison 3",
-        "en": "Les Airelles Courchevel · property photograph 3",
-        "credit": "Les Airelles Courchevel · source hôtelière officielle ; droits à vérifier",
+        "fr": "Les Airelles, photographie de la maison",
+        "en": "Les Airelles, photographie de la maison · authentic property photo",
+        "credit": "Airelles · Les Airelles Courchevel · droits de réutilisation commerciale à confirmer",
         "sourcePage": "https://airelles.com/en/destination/courchevel-hotel"
       }
     ],
@@ -35,23 +35,23 @@ export const courchevel1850HotelEditorial:Record<string,BodrumHotelEditorial> = 
     "photos": [
       {
         "src": "/images/travel/courchevel-1850-premium/cheval-blanc/view-1.webp",
-        "fr": "Cheval Blanc Courchevel · photographie de la maison 1",
-        "en": "Cheval Blanc Courchevel · property photograph 1",
-        "credit": "Cheval Blanc Courchevel · source hôtelière officielle ; droits à vérifier",
-        "sourcePage": "https://www.chevalblanc.com/en/maison/courchevel/"
+        "fr": "Cheval Blanc Courchevel, vue sur le bâtiment",
+        "en": "Cheval Blanc Courchevel, vue sur le bâtiment · authentic property photo",
+        "credit": "Oxford Ski · Cheval Blanc Courchevel · droits de réutilisation commerciale à confirmer",
+        "sourcePage": "https://cdn.oxfordski.com/media/88496/oxford-ski-hotel-cheval-blanc-courchevel-hotel-2.jpg?height=698&mode=crop&quality=85&scale=downscaleonly&width=1240"
       },
       {
         "src": "/images/travel/courchevel-1850-premium/cheval-blanc/view-2.webp",
-        "fr": "Cheval Blanc Courchevel · photographie de la maison 2",
-        "en": "Cheval Blanc Courchevel · property photograph 2",
-        "credit": "Cheval Blanc Courchevel · source hôtelière officielle ; droits à vérifier",
+        "fr": "Cheval Blanc Courchevel, façade du palace sous la neige",
+        "en": "Cheval Blanc Courchevel, façade du palace sous la neige · authentic property photo",
+        "credit": "LVMH · Cheval Blanc Courchevel · droits de réutilisation commerciale à confirmer",
         "sourcePage": "https://www.chevalblanc.com/en/maison/courchevel/"
       },
       {
         "src": "/images/travel/courchevel-1850-premium/cheval-blanc/view-3.webp",
-        "fr": "Cheval Blanc Courchevel · photographie de la maison 3",
-        "en": "Cheval Blanc Courchevel · property photograph 3",
-        "credit": "Cheval Blanc Courchevel · source hôtelière officielle ; droits à vérifier",
+        "fr": "La réception du Spa Cheval Blanc Courchevel",
+        "en": "La réception du Spa Cheval Blanc Courchevel · authentic property photo",
+        "credit": "LVMH · Cheval Blanc Courchevel · droits de réutilisation commerciale à confirmer",
         "sourcePage": "https://www.chevalblanc.com/en/maison/courchevel/"
       }
     ],
@@ -66,23 +66,23 @@ export const courchevel1850HotelEditorial:Record<string,BodrumHotelEditorial> = 
     "photos": [
       {
         "src": "/images/travel/courchevel-1850-premium/lapogee/view-1.webp",
-        "fr": "L’Apogée Courchevel · photographie de la maison 1",
-        "en": "L’Apogée Courchevel · property photograph 1",
-        "credit": "L’Apogée Courchevel · source hôtelière officielle ; droits à vérifier",
+        "fr": "L’Apogée Courchevel, façade de l’hôtel",
+        "en": "L’Apogée Courchevel, façade de l’hôtel · authentic property photo",
+        "credit": "Oetker Hotels · L’Apogée Courchevel · droits de réutilisation commerciale à confirmer",
         "sourcePage": "https://www.oetkerhotels.com/hotels/lapogee-courchevel/"
       },
       {
         "src": "/images/travel/courchevel-1850-premium/lapogee/view-2.webp",
-        "fr": "L’Apogée Courchevel · photographie de la maison 2",
-        "en": "L’Apogée Courchevel · property photograph 2",
-        "credit": "L’Apogée Courchevel · source hôtelière officielle ; droits à vérifier",
+        "fr": "Suite de L’Apogée Courchevel, chambre aux poutres apparentes",
+        "en": "Suite de L’Apogée Courchevel, chambre aux poutres apparentes · authentic property photo",
+        "credit": "Oetker Hotels · L’Apogée Courchevel · droits de réutilisation commerciale à confirmer",
         "sourcePage": "https://www.oetkerhotels.com/hotels/lapogee-courchevel/"
       },
       {
         "src": "/images/travel/courchevel-1850-premium/lapogee/view-3.webp",
-        "fr": "L’Apogée Courchevel · photographie de la maison 3",
-        "en": "L’Apogée Courchevel · property photograph 3",
-        "credit": "L’Apogée Courchevel · source hôtelière officielle ; droits à vérifier",
+        "fr": "L’Apogée Club, espace de restauration à Courchevel",
+        "en": "L’Apogée Club, espace de restauration à Courchevel · authentic property photo",
+        "credit": "Oetker Hotels · L’Apogée Courchevel · droits de réutilisation commerciale à confirmer",
         "sourcePage": "https://www.oetkerhotels.com/hotels/lapogee-courchevel/"
       }
     ],
@@ -97,23 +97,23 @@ export const courchevel1850HotelEditorial:Record<string,BodrumHotelEditorial> = 
     "photos": [
       {
         "src": "/images/travel/courchevel-1850-premium/k2-palace/view-1.webp",
-        "fr": "Le K2 Palace · photographie de la maison 1",
-        "en": "Le K2 Palace · property photograph 1",
-        "credit": "Le K2 Palace · source hôtelière officielle ; droits à vérifier",
+        "fr": "Le K2 Palace Courchevel, vue du bâtiment en hiver",
+        "en": "Le K2 Palace Courchevel, vue du bâtiment en hiver · authentic property photo",
+        "credit": "Le K2 Palace · galerie officielle · droits de réutilisation commerciale à confirmer",
         "sourcePage": "https://www.lek2palace.com/en/"
       },
       {
         "src": "/images/travel/courchevel-1850-premium/k2-palace/view-2.webp",
-        "fr": "Le K2 Palace · photographie de la maison 2",
-        "en": "Le K2 Palace · property photograph 2",
-        "credit": "Le K2 Palace · source hôtelière officielle ; droits à vérifier",
+        "fr": "Le spa du K2 Palace à Courchevel",
+        "en": "Le spa du K2 Palace à Courchevel · authentic property photo",
+        "credit": "Le K2 Palace · galerie officielle · droits de réutilisation commerciale à confirmer",
         "sourcePage": "https://www.lek2palace.com/en/"
       },
       {
         "src": "/images/travel/courchevel-1850-premium/k2-palace/view-3.webp",
-        "fr": "Le K2 Palace · photographie de la maison 3",
-        "en": "Le K2 Palace · property photograph 3",
-        "credit": "Le K2 Palace · source hôtelière officielle ; droits à vérifier",
+        "fr": "Le K2 Palace, façade et architecture du complexe",
+        "en": "Le K2 Palace, façade et architecture du complexe · authentic property photo",
+        "credit": "Le K2 Palace · galerie officielle · droits de réutilisation commerciale à confirmer",
         "sourcePage": "https://www.lek2palace.com/en/"
       }
     ],
@@ -128,37 +128,37 @@ export const courchevel1850HotelEditorial:Record<string,BodrumHotelEditorial> = 
 export const courchevel1850AreaVisuals:(BodrumPremiumPhoto|null)[] = [
   {
     "src": "/images/travel/courchevel-1850-premium/destination/alps-1.webp",
-    "fr": "Courchevel 1850 · photographie alpine 1",
-    "en": "Courchevel 1850 · Alpine documentary image 1",
-    "credit": "Courchevel Tourisme · reproduction commerciale à vérifier",
-    "sourcePage": "https://courchevel.com/en/"
+    "fr": "Vue aérienne sur Courchevel 1850 et ses pistes",
+    "en": "Aerial view of Courchevel 1850 and its ski runs",
+    "credit": "Alpine Answers · aerial photograph of Courchevel 1850 · droits de réutilisation commerciale à confirmer",
+    "sourcePage": "https://www.alpineanswers.co.uk/ski-resorts/france/resort-guide-courchevel-1850"
   },
   {
     "src": "/images/travel/courchevel-1850-premium/destination/alps-2.webp",
-    "fr": "Courchevel 1850 · photographie alpine 2",
-    "en": "Courchevel 1850 · Alpine documentary image 2",
-    "credit": "Courchevel Tourisme · reproduction commerciale à vérifier",
-    "sourcePage": "https://courchevel.com/en/"
+    "fr": "Rue et commerces dans le centre de Courchevel 1850",
+    "en": "Courchevel 1850 central village street",
+    "credit": "Powder Edition · Courchevel 1850 village centre · droits de réutilisation commerciale à confirmer",
+    "sourcePage": "https://www.powderedition.com/journal/courchevel-skiing"
   },
   {
     "src": "/images/travel/courchevel-1850-premium/destination/alps-3.webp",
-    "fr": "Courchevel 1850 · photographie alpine 3",
-    "en": "Courchevel 1850 · Alpine documentary image 3",
-    "credit": "Courchevel Tourisme · reproduction commerciale à vérifier",
-    "sourcePage": "https://courchevel.com/en/"
+    "fr": "Pistes damées et télécabine à Courchevel 1850",
+    "en": "Groomed pistes and gondola at Courchevel 1850",
+    "credit": "Ski In Luxury · morning ski piste at Courchevel 1850 · droits de réutilisation commerciale à confirmer",
+    "sourcePage": "https://www.skiinluxury.com/resorts/france/courchevel-1850/luxury-chalets"
   },
   {
     "src": "/images/travel/courchevel-1850-premium/destination/alps-4.webp",
-    "fr": "Courchevel 1850 · photographie alpine 4",
-    "en": "Courchevel 1850 · Alpine documentary image 4",
-    "credit": "Courchevel Tourisme · reproduction commerciale à vérifier",
-    "sourcePage": "https://courchevel.com/en/"
+    "fr": "Village et montagnes enneigées de Courchevel 1850",
+    "en": "Courchevel 1850 mountain village and snowy peaks",
+    "credit": "Top Snow Travel · Courchevel 1850 winter panorama · droits de réutilisation commerciale à confirmer",
+    "sourcePage": "https://www.topsnowtravel.com/french-ski-resorts/courchevel/"
   },
   {
     "src": "/images/travel/courchevel-1850-premium/destination/alps-5.webp",
-    "fr": "Courchevel 1850 · photographie alpine 5",
-    "en": "Courchevel 1850 · Alpine documentary image 5",
-    "credit": "Courchevel Tourisme · reproduction commerciale à vérifier",
-    "sourcePage": "https://courchevel.com/en/"
+    "fr": "Pistes et forêt enneigée sur les hauteurs de Courchevel",
+    "en": "Snowy slopes and forest above Courchevel",
+    "credit": "Barrière Hotels · Courchevel 1850 Bellecôte landscape · droits de réutilisation commerciale à confirmer",
+    "sourcePage": "https://www.hotelsbarriere.com/collection-fouquet-s/courchevel"
   }
 ];
