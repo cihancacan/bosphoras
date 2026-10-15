@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 9,
-  "downloadedDestinationCandidates": 3,
+  "downloadedDestinationCandidates": 5,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -323,10 +323,28 @@
       "key": "scene-2",
       "placeLabel": "Mountain Village",
       "searchQuery": "Big Sky Mountain Village",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
+      "localPath": "/images/travel/big-sky-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Big_Sky_resort.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Big_Sky_resort.jpg/1920px-Big_Sky_resort.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Big Sky resort.jpg",
+      "credit": "Jim  from Lexington, KY, USA",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sha256": "dcbcc425f52daedae03976650aad63546349df55a5ca378ee54c6e4eda404f1b",
+      "bytes": 160340,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
     },
     {
       "key": "scene-3",
@@ -384,10 +402,28 @@
       "key": "scene-5",
       "placeLabel": "Lone Mountain Ranch",
       "searchQuery": "Lone Mountain Ranch Montana",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
+      "localPath": "/images/travel/big-sky-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lone_Mountain,_January_2018.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Lone_Mountain%2C_January_2018.jpg/1920px-Lone_Mountain%2C_January_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Lone Mountain, January 2018.jpg",
+      "credit": "Richardmouser",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sha256": "77ee3b55bc2e3f9f743c6c799d1ada98cd446ec477802fd33a83f019f188fc21",
+      "bytes": 456370,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
     },
     {
       "key": "scene-6",
@@ -425,5 +461,6 @@
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
     }
-  ]
+  ],
+  "publicationBlockedReason": "All photo publication requires identity, visual quality and commercial-rights verification."
 }

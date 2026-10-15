@@ -2,7 +2,7 @@
 
 > **INTERNE — Images candidates uniquement. Aucune image n'est encore approuvée pour publication.**
 
-**Couverture :** 9/12 photographies des établissements, 3/9 scènes locales, 12/21 en tout.
+**Couverture :** 9/12 photographies des établissements, 7/9 scènes locales, 16/21 en tout.
 
 **Statut de publication :** aucune validation visuelle globale, aucun feu vert de publication commerciale. Le guide reste en brouillon et non indexable.
 
@@ -27,13 +27,13 @@
 
 | Site ou quartier | Photo WebP authentique à examiner | Source / licence déclarée | Contrôles restants |
 |---|---|---|---|
-| Megève village · scene-1 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
-| Mont d&#x27;Arbois · scene-2 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
+| Megève village · scene-1 | <img src="../public/images/travel/megeve-premium/destination/scene-1.webp" width="280" alt="File:Village @ Megève (51295072586).jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Village_@_Megève_(51295072586).jpg">Source originale</a> / CC BY 2.0 | Visuel non approuvé; Droits de publication à contrôler; Commons title/source grounded, but manual geographic, season and aesthetic QA required. |
+| Mont d&#x27;Arbois · scene-2 | <img src="../public/images/travel/megeve-premium/destination/scene-2.webp" width="280" alt="File:Mont-d&#x27;Arbois-Megève (2017).jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Mont-d&#x27;Arbois-Megève_(2017).jpg">Source originale</a> / CC BY-SA 4.0 | Visuel non approuvé; Droits de publication à contrôler; Commons title/source grounded, but manual geographic, season and aesthetic QA required. |
 | Rochebrune · scene-3 | <img src="../public/images/travel/megeve-premium/destination/scene-3.webp" width="280" alt="File:Rochebrune @ Megève (51036605028).jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Rochebrune_@_Megève_(51036605028).jpg">Source originale</a> / CC BY 2.0 | Visuel non approuvé; Droits de publication à contrôler |
 | Jaillet · scene-4 | <img src="../public/images/travel/megeve-premium/destination/scene-4.webp" width="280" alt="File:Tête du Torraz.JPG"> | <a href="https://commons.wikimedia.org/wiki/File:Tête_du_Torraz.JPG">Source originale</a> / CC BY 3.0 | Visuel non approuvé; Droits de publication à contrôler; Photo du Tête du Torraz ; n&#x27;affirmer le lien exact avec Jaillet qu&#x27;après contrôle cartographique. |
 | Cote 2000 · scene-5 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
-| Church square · scene-6 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
-| Megève ski slopes · scene-7 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
+| Church square · scene-6 | <img src="../public/images/travel/megeve-premium/destination/scene-6.webp" width="280" alt="File:Megève - Eglise Saint-Jean-Baptiste 48.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Megève_-_Eglise_Saint-Jean-Baptiste_48.jpg">Source originale</a> / CC0 | Visuel non approuvé; Droits de publication à contrôler; Commons title/source grounded, but manual geographic, season and aesthetic QA required. |
+| Megève ski slopes · scene-7 | <img src="../public/images/travel/megeve-premium/destination/scene-7.webp" width="280" alt="File:View of the Mont d&#x27;Arbois front de neige, Megève, 2025.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:View_of_the_Mont_d&#x27;Arbois_front_de_neige,_Megève,_2025.jpg">Source originale</a> / CC0 | Visuel non approuvé; Droits de publication à contrôler; Commons title/source grounded, but manual geographic, season and aesthetic QA required. |
 | Megève summer · scene-8 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
 | Mont Blanc view · scene-9 | <img src="../public/images/travel/megeve-premium/destination/scene-9.webp" width="280" alt="File:Mont Blanc @ Megève (51037173286).jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Mont_Blanc_@_Megève_(51037173286).jpg">Source originale</a> / CC BY 2.0 | Visuel non approuvé; Droits de publication à contrôler |
 

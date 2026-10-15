@@ -2,7 +2,7 @@
 
 > **INTERNE — Images candidates uniquement. Aucune image n'est encore approuvée pour publication.**
 
-**Couverture :** 9/12 photographies des établissements, 3/9 scènes locales, 12/21 en tout.
+**Couverture :** 9/12 photographies des établissements, 6/9 scènes locales, 15/21 en tout.
 
 **Statut de publication :** aucune validation visuelle globale, aucun feu vert de publication commerciale. Le guide reste en brouillon et non indexable.
 
@@ -29,9 +29,9 @@
 |---|---|---|---|
 | Teton mountains · scene-1 | <img src="../public/images/travel/jackson-hole-premium/destination/scene-1.webp" width="280" alt="File:Garnet Canyon GTNP1.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Garnet_Canyon_GTNP1.jpg">Source originale</a> / CC BY-SA 4.0 | Visuel non approuvé; Droits de publication à contrôler |
 | Teton Village · scene-2 | <img src="../public/images/travel/jackson-hole-premium/destination/scene-2.webp" width="280" alt="File:START Bus in Teton Village.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:START_Bus_in_Teton_Village.jpg">Source originale</a> / CC BY-SA 3.0 | Visuel non approuvé; Droits de publication à contrôler |
-| Jackson Town Square · scene-3 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
-| Snake River · scene-4 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
-| Grand Teton · scene-5 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
+| Jackson Town Square · scene-3 | <img src="../public/images/travel/jackson-hole-premium/destination/scene-3.webp" width="280" alt="File:Elk antler arch at Jackson Square, Jackson, WY 2022-07-11.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Elk_antler_arch_at_Jackson_Square,_Jackson,_WY_2022-07-11.jpg">Source originale</a> / CC BY 4.0 | Visuel non approuvé; Droits de publication à contrôler; Commons title/source grounded, but manual geographic, season and aesthetic QA required. |
+| Snake River · scene-4 | <img src="../public/images/travel/jackson-hole-premium/destination/scene-4.webp" width="280" alt="File:Grand Teton from the Snake River Overlook.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Grand_Teton_from_the_Snake_River_Overlook.jpg">Source originale</a> / CC BY 2.0 | Visuel non approuvé; Droits de publication à contrôler; Commons title/source grounded, but manual geographic, season and aesthetic QA required. |
+| Grand Teton · scene-5 | <img src="../public/images/travel/jackson-hole-premium/destination/scene-5.webp" width="280" alt="File:Views at Grand Teton National Park, Wyoming (24029770-4738-47df-8265-9e1d86a09f27).jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Views_at_Grand_Teton_National_Park,_Wyoming_(24029770-4738-47df-8265-9e1d86a09f27).jpg">Source originale</a> / Public domain | Visuel non approuvé; Droits de publication à contrôler; Commons title/source grounded, but manual geographic, season and aesthetic QA required. |
 | Wildlife · scene-6 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
 | Snow covered cabins · scene-7 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
 | National park · scene-8 | <img src="../public/images/travel/jackson-hole-premium/destination/scene-8.webp" width="280" alt="File:Barns grand tetons.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Barns_grand_tetons.jpg">Source originale</a> / Public domain | Visuel non approuvé; Droits de publication à contrôler |

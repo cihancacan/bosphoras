@@ -2,7 +2,7 @@
 
 > **INTERNE — Images candidates uniquement. Aucune image n'est encore approuvée pour publication.**
 
-**Couverture :** 9/12 photographies des établissements, 3/9 scènes locales, 12/21 en tout.
+**Couverture :** 9/12 photographies des établissements, 5/9 scènes locales, 14/21 en tout.
 
 **Statut de publication :** aucune validation visuelle globale, aucun feu vert de publication commerciale. Le guide reste en brouillon et non indexable.
 
@@ -28,10 +28,10 @@
 | Site ou quartier | Photo WebP authentique à examiner | Source / licence déclarée | Contrôles restants |
 |---|---|---|---|
 | Lone Peak · scene-1 | <img src="../public/images/travel/big-sky-premium/destination/scene-1.webp" width="280" alt="File:Lone Peak, Big Sky, Montana.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Lone_Peak,_Big_Sky,_Montana.jpg">Source originale</a> / CC BY 3.0 | Visuel non approuvé; Droits de publication à contrôler |
-| Mountain Village · scene-2 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
+| Mountain Village · scene-2 | <img src="../public/images/travel/big-sky-premium/destination/scene-2.webp" width="280" alt="File:Big Sky resort.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Big_Sky_resort.jpg">Source originale</a> / CC BY-SA 2.0 | Visuel non approuvé; Droits de publication à contrôler; Commons title/source grounded, but manual geographic, season and aesthetic QA required. |
 | Spanish Peaks · scene-3 | <img src="../public/images/travel/big-sky-premium/destination/scene-3.webp" width="280" alt="File:Theb0802 - Flickr - NOAA Photo Library.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Theb0802_-_Flickr_-_NOAA_Photo_Library.jpg">Source originale</a> / Public domain | Visuel non approuvé; Droits de publication à contrôler |
 | Moonlight Basin · scene-4 | <img src="../public/images/travel/big-sky-premium/destination/scene-4.webp" width="280" alt="File:Moonlight Basin replica.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Moonlight_Basin_replica.jpg">Source originale</a> / CC BY 2.0 | Visuel non approuvé; Droits de publication à contrôler |
-| Lone Mountain Ranch · scene-5 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
+| Lone Mountain Ranch · scene-5 | <img src="../public/images/travel/big-sky-premium/destination/scene-5.webp" width="280" alt="File:Lone Mountain, January 2018.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Lone_Mountain,_January_2018.jpg">Source originale</a> / CC BY-SA 4.0 | Visuel non approuvé; Droits de publication à contrôler; Commons title/source grounded, but manual geographic, season and aesthetic QA required. |
 | Nordic trail · scene-6 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
 | Horse riding · scene-7 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |
 | Big Sky forest · scene-8 | Image absente | À identifier / Licence indépendante non confirmée | PHOTO ABSENTE; Visuel non approuvé; Droits de publication à contrôler |

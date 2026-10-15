@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 9,
-  "downloadedDestinationCandidates": 3,
+  "downloadedDestinationCandidates": 6,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -352,28 +352,82 @@
       "key": "scene-3",
       "placeLabel": "Jackson Town Square",
       "searchQuery": "Jackson town square Wyoming",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
+      "localPath": "/images/travel/jackson-hole-premium/destination/scene-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Elk_antler_arch_at_Jackson_Square,_Jackson,_WY_2022-07-11.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Elk_antler_arch_at_Jackson_Square%2C_Jackson%2C_WY_2022-07-11.jpg/1920px-Elk_antler_arch_at_Jackson_Square%2C_Jackson%2C_WY_2022-07-11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Elk antler arch at Jackson Square, Jackson, WY 2022-07-11.jpg",
+      "credit": "Schwerdf",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "sha256": "b8f5d1ed37f5c7333fc7c1c7458b235b6652589949caa0e720f3bb7b680ed8b1",
+      "bytes": 514354,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
     },
     {
       "key": "scene-4",
       "placeLabel": "Snake River",
       "searchQuery": "Snake River Jackson Wyoming",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
+      "localPath": "/images/travel/jackson-hole-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Grand_Teton_from_the_Snake_River_Overlook.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Grand_Teton_from_the_Snake_River_Overlook.jpg/1920px-Grand_Teton_from_the_Snake_River_Overlook.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Grand Teton from the Snake River Overlook.jpg",
+      "credit": "Frank Kovalchek",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sha256": "abed8eb3bd5f65205697abf5e9fc13bd509b2ecdcbc80e5c0412b2c6488a8a9e",
+      "bytes": 445838,
+      "originalSize": [
+        1920,
+        1231
+      ],
+      "outputSize": [
+        1700,
+        1090
+      ],
+      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
     },
     {
       "key": "scene-5",
       "placeLabel": "Grand Teton",
       "searchQuery": "Grand Teton peaks Wyoming",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
+      "localPath": "/images/travel/jackson-hole-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Views_at_Grand_Teton_National_Park,_Wyoming_(24029770-4738-47df-8265-9e1d86a09f27).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Views_at_Grand_Teton_National_Park%2C_Wyoming_%2824029770-4738-47df-8265-9e1d86a09f27%29.jpg/1920px-Views_at_Grand_Teton_National_Park%2C_Wyoming_%2824029770-4738-47df-8265-9e1d86a09f27%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Views at Grand Teton National Park, Wyoming (24029770-4738-47df-8265-9e1d86a09f27).jpg",
+      "credit": "NPS staff",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sha256": "e700df619e6a4355e759fed0579a56dde1cd5b88da0fa560cf47f36b836d701d",
+      "bytes": 261678,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
     },
     {
       "key": "scene-6",
@@ -428,5 +482,6 @@
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
     }
-  ]
+  ],
+  "publicationBlockedReason": "All photo publication requires identity, visual quality and commercial-rights verification."
 }

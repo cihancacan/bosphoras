@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 9,
-  "downloadedDestinationCandidates": 3,
+  "downloadedDestinationCandidates": 7,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -312,19 +312,55 @@
       "key": "scene-1",
       "placeLabel": "Megève village",
       "searchQuery": "Megeve France village",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
+      "localPath": "/images/travel/megeve-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Village_@_Megève_(51295072586).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Village_%40_Meg%C3%A8ve_%2851295072586%29.jpg/1920px-Village_%40_Meg%C3%A8ve_%2851295072586%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Village @ Megève (51295072586).jpg",
+      "credit": "Guilhem Vellut  from Annecy, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "sha256": "d1f0a8c4532c11c2fb6e27d2c2450207794e2ad48d951a323298a9014aabeaaf",
+      "bytes": 449704,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
     },
     {
       "key": "scene-2",
       "placeLabel": "Mont d'Arbois",
       "searchQuery": "Megeve Mont d Arbois",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
+      "localPath": "/images/travel/megeve-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mont-d'Arbois-Megève_(2017).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Mont-d%27Arbois-Meg%C3%A8ve_%282017%29.jpg/1920px-Mont-d%27Arbois-Meg%C3%A8ve_%282017%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Mont-d'Arbois-Megève (2017).jpg",
+      "credit": "B. Brassoud",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sha256": "c85d814640683f34d40d61780448ac217f8bd55821e4790b0a5fd8729a473a14",
+      "bytes": 283936,
+      "originalSize": [
+        1920,
+        1259
+      ],
+      "outputSize": [
+        1700,
+        1115
+      ],
+      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
     },
     {
       "key": "scene-3",
@@ -392,19 +428,55 @@
       "key": "scene-6",
       "placeLabel": "Church square",
       "searchQuery": "Eglise Megeve",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
+      "localPath": "/images/travel/megeve-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Megève_-_Eglise_Saint-Jean-Baptiste_48.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Meg%C3%A8ve_-_Eglise_Saint-Jean-Baptiste_48.jpg/1920px-Meg%C3%A8ve_-_Eglise_Saint-Jean-Baptiste_48.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Megève - Eglise Saint-Jean-Baptiste 48.jpg",
+      "credit": "Renhour48",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "d4571dc65dcc9fb9ab3f94f43171856847eda3c7a1cc646895de82cf40f61202",
+      "bytes": 226612,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
     },
     {
       "key": "scene-7",
       "placeLabel": "Megève ski slopes",
       "searchQuery": "Megève ski France",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
+      "localPath": "/images/travel/megeve-premium/destination/scene-7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:View_of_the_Mont_d'Arbois_front_de_neige,_Megève,_2025.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/View_of_the_Mont_d%27Arbois_front_de_neige%2C_Meg%C3%A8ve%2C_2025.jpg/1920px-View_of_the_Mont_d%27Arbois_front_de_neige%2C_Meg%C3%A8ve%2C_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:View of the Mont d'Arbois front de neige, Megève, 2025.jpg",
+      "credit": "DimiTalen",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "fd1045ae240a1fef4766f6d093b49297ca73f9870b72b71cfb170e509f659f19",
+      "bytes": 321682,
+      "originalSize": [
+        1920,
+        1276
+      ],
+      "outputSize": [
+        1700,
+        1130
+      ],
+      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
     },
     {
       "key": "scene-8",
@@ -442,6 +514,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
     }
   ],
-  "publicationBlockedReason": "Candidate matches/visual identities and rights still require independent review. Zannier excluded because featured hotel is L'Alpaga.",
+  "publicationBlockedReason": "All photo publication requires identity, visual quality and commercial-rights verification.",
   "candidateUniquenessAudit": "Image source URL identity compared, duplicate derivatives warned and hidden from planned galleries."
 }
