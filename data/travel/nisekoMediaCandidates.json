@@ -208,7 +208,9 @@
       ],
       "credit": "",
       "license": "",
-      "licenseUrl": ""
+      "licenseUrl": "",
+      "visualQaWarning": "Contrôle visuel : paysage du mont Yōtei SANS bâtiment Setsu identifiable. Ne doit PAS être présenté comme une photo de l'hôtel ; À REMPLACER par une suite ou un espace de Setsu.",
+      "visualQaReviewedAt": "2026-10-15"
     },
     {
       "property": "Setsu Niseko",
@@ -238,7 +240,9 @@
       ],
       "credit": "",
       "license": "",
-      "licenseUrl": ""
+      "licenseUrl": "",
+      "visualQaWarning": "Contrôle visuel : soin visage en espace bien-être, non la chambre ou la résidence. Utiliser seulement pour illustrer le spa si l'appartenance à Setsu est confirmée.",
+      "visualQaReviewedAt": "2026-10-15"
     },
     {
       "property": "Setsu Niseko",
@@ -585,7 +589,9 @@
       "outputSize": [
         1800,
         1350
-      ]
+      ],
+      "visualQaWarning": "Contrôle visuel : vrai bain extérieur Goshiki Onsen mais photo estivale ancienne, qualité peu premium ; À REMPLACER par un visuel d'onsen local plus adapté avant publication.",
+      "visualQaReviewedAt": "2026-10-15"
     }
   ],
   "sourceCuration": "Third pass: source-specific Wikimedia files and exact hotel-only images, still visually unapproved."

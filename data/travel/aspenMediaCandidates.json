@@ -199,7 +199,9 @@
       ],
       "credit": "St. Regis Aspen Resort · Marriott official property website",
       "license": "",
-      "licenseUrl": ""
+      "licenseUrl": "",
+      "visualQaWarning": "Contrôle visuel : vraie façade du St. Regis, photographiée en période verte. Ne pas présenter ce visuel comme une photographie hivernale.",
+      "visualQaReviewedAt": "2026-10-15"
     },
     {
       "property": "The St. Regis Aspen Resort",
@@ -573,7 +575,9 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "visualQaWarning": "Contrôle visuel : Maroon Bells réellement photographiées, mais contrail visible et cadrage peu haut de gamme ; chercher une image de paysage plus forte avant usage principal.",
+      "visualQaReviewedAt": "2026-10-15"
     }
   ],
   "sourceCuration": "Third pass: source-specific Wikimedia files and exact hotel-only images, still visually unapproved."

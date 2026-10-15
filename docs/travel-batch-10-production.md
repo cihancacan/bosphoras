@@ -34,3 +34,9 @@ Commencé après Porto Cervo : Mustique (guide/galeries FR-EN) et Courchevel 185
 - Courchevel 1850 : quatre palaces, cinq zones, descriptions et FAQ originales FR/EN ; photographies 12 + 9 ; réouverture Airelles le 04/12/2026 vérifiée auprès de la maison.
 - QA de cohérence (types, manifestes, fichiers WebP physiques, routes, noindex) bloquant dans GitHub ; aucune Preview Vercel avant les huit autres destinations du lot.
 - Statut juridique des photos tierces : *réutilisation commerciale indépendante à confirmer avant production*.
+
+## Deuxième sous-lot — St. Moritz, Aspen, Niseko (15/10/2026)
+- Brouillons originaux FR/EN, 5 secteurs, quatre établissements vérifiables et sept FAQ par langue, tests TypeScript et unicité des slugs.
+- **63/63 photos WebP candidates** (12 adresses × 3 et 9 paysages par destination), avec planches de revue photographique dans `docs/travel-alpine-photo-review-index.md`.
+- Premier examen visuel humain : plusieurs images peu premium ou mal adaptées à l'hébergement/la saison ; `docs/travel-alpine-first-visual-review.md` liste les remplacements exigés.
+- Ces trois guides **ne sont pas comptés comme achevés** ni routés en pages premium. La validation juridique/visuelle et l'intégration demeurent des préalables. **Aucun build Vercel lancé.**
