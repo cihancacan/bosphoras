@@ -8,6 +8,7 @@ on:
       - 'scripts/check-travel-catalogue.mjs'
       - 'scripts/check-next-alpine-drafts.mjs'
       - 'scripts/check-third-alpine-drafts.mjs'
+      - 'scripts/check-mountain-ten-batch-drafts.mjs'
       - 'data/travel/*MediaCandidates.json'
   workflow_dispatch:
 permissions:
@@ -28,3 +29,4 @@ jobs:
       - run: node scripts/check-travel-catalogue.mjs
       - run: node scripts/check-next-alpine-drafts.mjs
       - run: node scripts/check-third-alpine-drafts.mjs
+      - run: node scripts/check-mountain-ten-batch-drafts.mjs
