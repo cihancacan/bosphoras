@@ -1,103 +1,224 @@
 {
-  "scope": "Mustique official property galleries only · preview; third-party commercial rights must be verified",
+  "scope": "Four official Mustique property galleries (one hotel, three villas); PREVIEW rights pending",
+  "generatedAt": "2026-10-15T08:04:54.287715+00:00",
   "expected": 12,
-  "downloaded": 0,
+  "downloaded": 10,
   "items": [
     {
-      "hotel": "cotton-house",
       "key": "view-1",
-      "localPath": "/images/travel/mustique-premium/cotton-house/view-1.webp",
       "sourcePage": "https://www.mustique-island.com/villas-and-hotel/the-cotton-house",
-      "status": "failed",
-      "rights": "Client authorises project use; third-party reproduction approval pending"
-    },
-    {
+      "localPath": "/public/images/travel/mustique-premium/cotton-house/view-1.webp",
+      "status": "downloaded",
+      "rights": "Preview only; the client authorises use but independent third-party commercial rights remain unverified",
       "hotel": "cotton-house",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/231108_ch_beach_&_watersports_303-1737997551.jpg/d03be77c62b0a75448b7b653772f6737/231108_ch_beach_&_watersports_303-1737997551.webp",
+      "credit": "The Mustique Company · official site",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "sha256": "2de0b7de2265830f4b7288a2c989bf4286079c752e251a6dbe8a5c56489e4094",
+      "bytes": 404806
+    },
+    {
       "key": "view-2",
-      "localPath": "/images/travel/mustique-premium/cotton-house/view-2.webp",
       "sourcePage": "https://www.mustique-island.com/villas-and-hotel/the-cotton-house",
+      "localPath": "/public/images/travel/mustique-premium/cotton-house/view-2.webp",
       "status": "failed",
-      "rights": "Client authorises project use; third-party reproduction approval pending"
+      "rights": "Preview only; the client authorises use but independent third-party commercial rights remain unverified",
+      "hotel": "cotton-house"
     },
     {
-      "hotel": "cotton-house",
       "key": "view-3",
-      "localPath": "/images/travel/mustique-premium/cotton-house/view-3.webp",
       "sourcePage": "https://www.mustique-island.com/villas-and-hotel/the-cotton-house",
+      "localPath": "/public/images/travel/mustique-premium/cotton-house/view-3.webp",
       "status": "failed",
-      "rights": "Client authorises project use; third-party reproduction approval pending"
+      "rights": "Preview only; the client authorises use but independent third-party commercial rights remain unverified",
+      "hotel": "cotton-house"
     },
     {
-      "hotel": "the-beach-house",
       "key": "view-1",
-      "localPath": "/images/travel/mustique-premium/the-beach-house/view-1.webp",
       "sourcePage": "https://www.mustique-island.com/villa/the-beach-house",
-      "status": "failed",
-      "rights": "Client authorises project use; third-party reproduction approval pending"
-    },
-    {
+      "localPath": "/public/images/travel/mustique-premium/the-beach-house/view-1.webp",
+      "status": "downloaded",
+      "rights": "Preview only; the client authorises use but independent third-party commercial rights remain unverified",
       "hotel": "the-beach-house",
-      "key": "view-2",
-      "localPath": "/images/travel/mustique-premium/the-beach-house/view-2.webp",
-      "sourcePage": "https://www.mustique-island.com/villa/the-beach-house",
-      "status": "failed",
-      "rights": "Client authorises project use; third-party reproduction approval pending"
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/villa-images/the-beach-house/beachhouse-137r-copy.jpg/3bd60a777a4cccbc40fd2145dc0e82dd/beachhouse-137r-copy.webp",
+      "credit": "The Mustique Company · official site",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "sha256": "33783461489631666e42abae37e7a57d998c312bb4ce8ef8215b93b0d31846b9",
+      "bytes": 279930
     },
     {
+      "key": "view-2",
+      "sourcePage": "https://www.mustique-island.com/villa/the-beach-house",
+      "localPath": "/public/images/travel/mustique-premium/the-beach-house/view-2.webp",
+      "status": "downloaded",
+      "rights": "Preview only; the client authorises use but independent third-party commercial rights remain unverified",
       "hotel": "the-beach-house",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/villa-images/the-beach-house/the-beach-house-1.jpg/b87fb4a6a5b8e40538ce0d5e77a7f794/the-beach-house-1.webp",
+      "credit": "The Mustique Company · official site",
+      "originalSize": [
+        1500,
+        1000
+      ],
+      "outputSize": [
+        1500,
+        1000
+      ],
+      "sha256": "3e889aec5ee4597ba8c772f389c3424b1e346830b73851de3be1ea877fe75f09",
+      "bytes": 321344
+    },
+    {
       "key": "view-3",
-      "localPath": "/images/travel/mustique-premium/the-beach-house/view-3.webp",
       "sourcePage": "https://www.mustique-island.com/villa/the-beach-house",
-      "status": "failed",
-      "rights": "Client authorises project use; third-party reproduction approval pending"
+      "localPath": "/public/images/travel/mustique-premium/the-beach-house/view-3.webp",
+      "status": "downloaded",
+      "rights": "Preview only; the client authorises use but independent third-party commercial rights remain unverified",
+      "hotel": "the-beach-house",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/villa-images/the-beach-house/the-beach-house-4.jpg/ffb6a02994c2f76d16168de5b427745c/the-beach-house-4.webp",
+      "credit": "The Mustique Company · official site",
+      "originalSize": [
+        1500,
+        1018
+      ],
+      "outputSize": [
+        1500,
+        1018
+      ],
+      "sha256": "0726c91730182177f9ac51ac8cb6e018ee3ecc4ce9bf26ef90183939dc9eef64",
+      "bytes": 276904
     },
     {
-      "hotel": "macaroni-beach-house",
       "key": "view-1",
-      "localPath": "/images/travel/mustique-premium/macaroni-beach-house/view-1.webp",
       "sourcePage": "https://www.mustique-island.com/villa/macaroni-beach-house",
-      "status": "failed",
-      "rights": "Client authorises project use; third-party reproduction approval pending"
+      "localPath": "/public/images/travel/mustique-premium/macaroni-beach-house/view-1.webp",
+      "status": "downloaded",
+      "rights": "Preview only; the client authorises use but independent third-party commercial rights remain unverified",
+      "hotel": "macaroni-beach-house",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/241111_macaroni_beach_house_living_1457---main_large.jpg/465b3c24b289a619b14cdd5b31a3ef11/241111_macaroni_beach_house_living_1457---main_large.webp",
+      "credit": "The Mustique Company · official site",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "sha256": "b5f3f6f74e99ee9188de481f3cdc21e38e3f1965e17209336ace0c21008b341a",
+      "bytes": 203594
     },
     {
-      "hotel": "macaroni-beach-house",
       "key": "view-2",
-      "localPath": "/images/travel/mustique-premium/macaroni-beach-house/view-2.webp",
       "sourcePage": "https://www.mustique-island.com/villa/macaroni-beach-house",
-      "status": "failed",
-      "rights": "Client authorises project use; third-party reproduction approval pending"
-    },
-    {
+      "localPath": "/public/images/travel/mustique-premium/macaroni-beach-house/view-2.webp",
+      "status": "downloaded",
+      "rights": "Preview only; the client authorises use but independent third-party commercial rights remain unverified",
       "hotel": "macaroni-beach-house",
-      "key": "view-3",
-      "localPath": "/images/travel/mustique-premium/macaroni-beach-house/view-3.webp",
-      "sourcePage": "https://www.mustique-island.com/villa/macaroni-beach-house",
-      "status": "failed",
-      "rights": "Client authorises project use; third-party reproduction approval pending"
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/241111_macaroni_beach_house_living_1398_medium.jpg/552267f0a003e9b27cc185644eb3b2f0/241111_macaroni_beach_house_living_1398_medium.webp",
+      "credit": "The Mustique Company · official site",
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ],
+      "sha256": "8841f701e6a07a0bf9282cd1c95d4e726fc00ed1fd2ba2bab320020f0871c0c3",
+      "bytes": 98730
     },
     {
-      "hotel": "cottonwick",
+      "key": "view-3",
+      "sourcePage": "https://www.mustique-island.com/villa/macaroni-beach-house",
+      "localPath": "/public/images/travel/mustique-premium/macaroni-beach-house/view-3.webp",
+      "status": "downloaded",
+      "rights": "Preview only; the client authorises use but independent third-party commercial rights remain unverified",
+      "hotel": "macaroni-beach-house",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/241111_macaroni_beach_house_exterior_1121_medium.jpg/5321da48810721b89ed72714ba6f62b1/241111_macaroni_beach_house_exterior_1121_medium.webp",
+      "credit": "The Mustique Company · official site",
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ],
+      "sha256": "37447d63a957b5240056f133d57d81a7a6828c3ccbc7c2992a3fbd2c553c3bc2",
+      "bytes": 195910
+    },
+    {
       "key": "view-1",
-      "localPath": "/images/travel/mustique-premium/cottonwick/view-1.webp",
       "sourcePage": "https://www.mustique-island.com/villa/cottonwick",
-      "status": "failed",
-      "rights": "Client authorises project use; third-party reproduction approval pending"
+      "localPath": "/public/images/travel/mustique-premium/cottonwick/view-1.webp",
+      "status": "downloaded",
+      "rights": "Preview only; the client authorises use but independent third-party commercial rights remain unverified",
+      "hotel": "cottonwick",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/cottonwick_aerial_0769.jpg/436e991437499407dc4daa87546cc238/cottonwick_aerial_0769.webp",
+      "credit": "The Mustique Company · official site",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "sha256": "e9184db24f82a2c06c0b1c09f512929a7fc190c932328bc6fd29aa1cb014206e",
+      "bytes": 532334
     },
     {
-      "hotel": "cottonwick",
       "key": "view-2",
-      "localPath": "/images/travel/mustique-premium/cottonwick/view-2.webp",
       "sourcePage": "https://www.mustique-island.com/villa/cottonwick",
-      "status": "failed",
-      "rights": "Client authorises project use; third-party reproduction approval pending"
+      "localPath": "/public/images/travel/mustique-premium/cottonwick/view-2.webp",
+      "status": "downloaded",
+      "rights": "Preview only; the client authorises use but independent third-party commercial rights remain unverified",
+      "hotel": "cottonwick",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/cottonwick_lounge_1025.jpg/05877b43460f83c0b6d63501a761b6ec/cottonwick_lounge_1025.webp",
+      "credit": "The Mustique Company · official site",
+      "originalSize": [
+        2000,
+        1333
+      ],
+      "outputSize": [
+        1950,
+        1300
+      ],
+      "sha256": "f82c069ca41158b96a8369cbe4553054a971e0e30e9da2450bcfd4fe0698f41b",
+      "bytes": 380686
     },
     {
-      "hotel": "cottonwick",
       "key": "view-3",
-      "localPath": "/images/travel/mustique-premium/cottonwick/view-3.webp",
       "sourcePage": "https://www.mustique-island.com/villa/cottonwick",
-      "status": "failed",
-      "rights": "Client authorises project use; third-party reproduction approval pending"
+      "localPath": "/public/images/travel/mustique-premium/cottonwick/view-3.webp",
+      "status": "downloaded",
+      "rights": "Preview only; the client authorises use but independent third-party commercial rights remain unverified",
+      "hotel": "cottonwick",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/cottonwick_exterior_922.jpg/5ed5ffe2786da24cf7a8e845bd08c670/cottonwick_exterior_922.webp",
+      "credit": "The Mustique Company · official site",
+      "originalSize": [
+        2000,
+        1332
+      ],
+      "outputSize": [
+        1950,
+        1299
+      ],
+      "sha256": "0c448ef8eb64368d4be07672135459bdd0727463ce2f2c48c99bcc63a143f762",
+      "bytes": 883786
     }
   ]
 }

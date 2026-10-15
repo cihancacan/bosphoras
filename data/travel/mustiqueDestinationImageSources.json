@@ -1,70 +1,179 @@
 {
-  "scope": "Official Mustique destination scenes · preview only · attribution/rights review pending",
+  "scope": "Mustique destination photographs from official pages, generic editorial captions, PREVIEW rights pending",
+  "generatedAt": "2026-10-15T08:04:58.428486+00:00",
   "expected": 9,
-  "downloaded": 0,
+  "downloaded": 9,
   "items": [
     {
       "key": "island-1",
-      "localPath": "/images/travel/mustique-premium/destination/island-1.webp",
       "sourcePage": "https://www.mustique-island.com/",
-      "status": "failed",
-      "rights": "Rights and depicted location need review before production"
+      "localPath": "/public/images/travel/mustique-premium/destination/island-1.webp",
+      "status": "downloaded",
+      "rights": "Preview only; image's precise subject and third-party commercial rights require approval",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/cotton-house/trade_winds_035.jpg/3560e976af8c0d59127888fb9cf1da65/trade_winds_035.webp",
+      "credit": "The Mustique Company · official Mustique site",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "sha256": "0bc6d77a4b29790845bac9e0a81f817ab767a210b4c65e1561df497d57bccde1",
+      "bytes": 233730
     },
     {
       "key": "island-2",
-      "localPath": "/images/travel/mustique-premium/destination/island-2.webp",
       "sourcePage": "https://www.mustique-island.com/",
-      "status": "failed",
-      "rights": "Rights and depicted location need review before production"
+      "localPath": "/public/images/travel/mustique-premium/destination/island-2.webp",
+      "status": "downloaded",
+      "rights": "Preview only; image's precise subject and third-party commercial rights require approval",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/cotton-house/cotton_house_sunset_051.jpg/e4c801ae7406d2c916cfe1524efd87e0/cotton_house_sunset_051.webp",
+      "credit": "The Mustique Company · official Mustique site",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "sha256": "a425d1c591c043f74fddee50255b473d16c8c616b44edd1bb4e23b1af1936bdd",
+      "bytes": 239614
     },
     {
       "key": "island-3",
-      "localPath": "/images/travel/mustique-premium/destination/island-3.webp",
       "sourcePage": "https://www.mustique-island.com/",
-      "status": "failed",
-      "rights": "Rights and depicted location need review before production"
+      "localPath": "/public/images/travel/mustique-premium/destination/island-3.webp",
+      "status": "downloaded",
+      "rights": "Preview only; image's precise subject and third-party commercial rights require approval",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/421524549_697837085671439_8379647925876240474_n.jpg/225a10fba7e811f4736fc87758f506df/421524549_697837085671439_8379647925876240474_n.webp",
+      "credit": "The Mustique Company · official Mustique site",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "sha256": "239258b6cc89e6ed8ca4b0aeddfd63c008b9833b1f4e96cbfb11a55fa09e6848",
+      "bytes": 318884
     },
     {
       "key": "island-4",
-      "localPath": "/images/travel/mustique-premium/destination/island-4.webp",
       "sourcePage": "https://www.mustique-island.com/",
-      "status": "failed",
-      "rights": "Rights and depicted location need review before production"
+      "localPath": "/public/images/travel/mustique-premium/destination/island-4.webp",
+      "status": "downloaded",
+      "rights": "Preview only; image's precise subject and third-party commercial rights require approval",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/_mg_8811.jpg/03ec7cb7e9d4d3bc8114e7824d370b8e/_mg_8811.webp",
+      "credit": "The Mustique Company · official Mustique site",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "sha256": "5f4938066f47d5d866861df0f80dfd509e3f51123f83dc8383f0488660510273",
+      "bytes": 107706
     },
     {
       "key": "island-5",
-      "localPath": "/images/travel/mustique-premium/destination/island-5.webp",
       "sourcePage": "https://www.mustique-island.com/",
-      "status": "failed",
-      "rights": "Rights and depicted location need review before production"
+      "localPath": "/public/images/travel/mustique-premium/destination/island-5.webp",
+      "status": "downloaded",
+      "rights": "Preview only; image's precise subject and third-party commercial rights require approval",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/illustrations/illustration---turtle.png/0c96ddc7ecd9c5cf71ab54027e887604/illustration---turtle.webp",
+      "credit": "The Mustique Company · official Mustique site",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "sha256": "74165adad1690eb93bbb3ad274dd483f931816cd47765d648a4a61df3558b2f7",
+      "bytes": 77978
     },
     {
       "key": "island-6",
-      "localPath": "/images/travel/mustique-premium/destination/island-6.webp",
       "sourcePage": "https://www.mustique-island.com/",
-      "status": "failed",
-      "rights": "Rights and depicted location need review before production"
+      "localPath": "/public/images/travel/mustique-premium/destination/island-6.webp",
+      "status": "downloaded",
+      "rights": "Preview only; image's precise subject and third-party commercial rights require approval",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/conservation.jpg/11afc477f8d16def15f9d4b7ca8415df/conservation.webp",
+      "credit": "The Mustique Company · official Mustique site",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "sha256": "ff7b4e8c957b12c6c4e04b864cf2b6b2f3021511e706bd8e2df3fa18aba082ce",
+      "bytes": 492680
     },
     {
       "key": "island-7",
-      "localPath": "/images/travel/mustique-premium/destination/island-7.webp",
       "sourcePage": "https://www.mustique-island.com/",
-      "status": "failed",
-      "rights": "Rights and depicted location need review before production"
+      "localPath": "/public/images/travel/mustique-premium/destination/island-7.webp",
+      "status": "downloaded",
+      "rights": "Preview only; image's precise subject and third-party commercial rights require approval",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/tennis.jpg/b55b03266e4bf7eb75bb5449f5545df3/tennis.webp",
+      "credit": "The Mustique Company · official Mustique site",
+      "originalSize": [
+        1080,
+        718
+      ],
+      "outputSize": [
+        1080,
+        718
+      ],
+      "sha256": "b321b5bc1c5efc6e7ea56ceda1b55cdcd8ee6c31f83e037c8d27cb267945c92f",
+      "bytes": 70814
     },
     {
       "key": "island-8",
-      "localPath": "/images/travel/mustique-premium/destination/island-8.webp",
       "sourcePage": "https://www.mustique-island.com/",
-      "status": "failed",
-      "rights": "Rights and depicted location need review before production"
+      "localPath": "/public/images/travel/mustique-premium/destination/island-8.webp",
+      "status": "downloaded",
+      "rights": "Preview only; image's precise subject and third-party commercial rights require approval",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/backgammon-night.jpg/f9fc8bd095f9d4d462512a247764b106/backgammon-night.webp",
+      "credit": "The Mustique Company · official Mustique site",
+      "originalSize": [
+        1080,
+        721
+      ],
+      "outputSize": [
+        1080,
+        721
+      ],
+      "sha256": "799d35377dd5209db49ff9de7dde917ff2458b2d17a7837d969d487eab642275",
+      "bytes": 102634
     },
     {
       "key": "island-9",
-      "localPath": "/images/travel/mustique-premium/destination/island-9.webp",
       "sourcePage": "https://www.mustique-island.com/",
-      "status": "failed",
-      "rights": "Rights and depicted location need review before production"
+      "localPath": "/public/images/travel/mustique-premium/destination/island-9.webp",
+      "status": "downloaded",
+      "rights": "Preview only; image's precise subject and third-party commercial rights require approval",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/basils.jpg/b4b36d0005dd27883f9cb9ddad0e388a/basils.webp",
+      "credit": "The Mustique Company · official Mustique site",
+      "originalSize": [
+        1080,
+        720
+      ],
+      "outputSize": [
+        1080,
+        720
+      ],
+      "sha256": "b969d8bf7429c2c01e244c6c01b13166afd00947dee961afe12002ee3576f8dd",
+      "bytes": 75230
     }
   ]
 }
