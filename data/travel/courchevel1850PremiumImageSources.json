@@ -1,103 +1,200 @@
 {
-  "scope": "Courchevel 1850 four official property galleries; Preview only pending rights",
+  "scope": "Courchevel 1850: four genuine hotels, exact-property photographs, preview only",
+  "generatedAt": "2026-10-15T08:15:45.332492+00:00",
   "expected": 12,
-  "downloaded": 0,
+  "downloaded": 8,
   "items": [
     {
       "hotel": "les-airelles",
       "key": "view-1",
       "localPath": "/images/travel/courchevel-1850-premium/les-airelles/view-1.webp",
+      "status": "downloaded",
       "sourcePage": "https://airelles.com/en/destination/courchevel-hotel",
-      "status": "failed",
-      "rights": "Third-party commercial reuse to be verified"
+      "rights": "Preview only; commercial reuse approval must be verified",
+      "downloadUrl": "https://media.tatler.com/photos/62065838a9f25b3e44961bd9/3%3A2/w_1920%2Ch_1280%2Cc_limit/LESAIRELLESCOURCHEVEL_11022022_Les%20Airelles%20-%20Fac%CC%A7ade%202.jpg",
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1920,
+        1280
+      ],
+      "bytes": 260418,
+      "sha256": "5b7bc046dd2cf7b4c80475270111432fa7cce0e47a6d8a47b454da024cd66d05",
+      "credit": "Les Airelles Courchevel · official listing / selected property-specific source"
     },
     {
       "hotel": "les-airelles",
       "key": "view-2",
       "localPath": "/images/travel/courchevel-1850-premium/les-airelles/view-2.webp",
+      "status": "downloaded",
       "sourcePage": "https://airelles.com/en/destination/courchevel-hotel",
-      "status": "failed",
-      "rights": "Third-party commercial reuse to be verified"
+      "rights": "Preview only; commercial reuse approval must be verified",
+      "downloadUrl": "https://assets.airelles.com/images/airelles2023/abwDDbbci2UF6Rqd_VIDEOHEADERHOMEARL.jpg?auto=format%2Ccompress&rect=300%2C0%2C3240%2C2160&w=1920&h=1280",
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1920,
+        1280
+      ],
+      "bytes": 120184,
+      "sha256": "12b829868da192326831a6741878d168c2230c95586ed06cc732cd2b6dd5ae8f",
+      "credit": "Les Airelles Courchevel · official listing / selected property-specific source"
     },
     {
       "hotel": "les-airelles",
       "key": "view-3",
       "localPath": "/images/travel/courchevel-1850-premium/les-airelles/view-3.webp",
+      "status": "downloaded",
       "sourcePage": "https://airelles.com/en/destination/courchevel-hotel",
-      "status": "failed",
-      "rights": "Third-party commercial reuse to be verified"
+      "rights": "Preview only; commercial reuse approval must be verified",
+      "downloadUrl": "https://assets.airelles.com/images/airelles2023/aZNjdlWLo0XkEjY9_Designsanstitre-7.png?auto=format%2Ccompress&w=3840",
+      "originalSize": [
+        3840,
+        3000
+      ],
+      "outputSize": [
+        1920,
+        1500
+      ],
+      "bytes": 612316,
+      "sha256": "a7bd5e60bfb37458e81830cf64dfd6021bd7a3ffca1475b0470962e0a8a8637f",
+      "credit": "Les Airelles Courchevel · official listing / selected property-specific source"
     },
     {
       "hotel": "cheval-blanc",
       "key": "view-1",
       "localPath": "/images/travel/courchevel-1850-premium/cheval-blanc/view-1.webp",
+      "status": "downloaded",
       "sourcePage": "https://www.chevalblanc.com/en/maison/courchevel/",
-      "status": "failed",
-      "rights": "Third-party commercial reuse to be verified"
+      "rights": "Preview only; commercial reuse approval must be verified",
+      "downloadUrl": "https://cdn.oxfordski.com/media/88496/oxford-ski-hotel-cheval-blanc-courchevel-hotel-2.jpg?height=698&mode=crop&quality=85&scale=downscaleonly&width=1240",
+      "originalSize": [
+        1240,
+        698
+      ],
+      "outputSize": [
+        1240,
+        698
+      ],
+      "bytes": 120616,
+      "sha256": "8582dc2ca3b9a89a4ee14737c074a4e95a1cf5a21a7e2edd68eb757addf4935f",
+      "credit": "Cheval Blanc Courchevel · official listing / selected property-specific source"
     },
     {
       "hotel": "cheval-blanc",
       "key": "view-2",
       "localPath": "/images/travel/courchevel-1850-premium/cheval-blanc/view-2.webp",
-      "sourcePage": "https://www.chevalblanc.com/en/maison/courchevel/",
       "status": "failed",
-      "rights": "Third-party commercial reuse to be verified"
+      "sourcePage": "https://www.chevalblanc.com/en/maison/courchevel/",
+      "rights": "Preview only; commercial reuse approval must be verified"
     },
     {
       "hotel": "cheval-blanc",
       "key": "view-3",
       "localPath": "/images/travel/courchevel-1850-premium/cheval-blanc/view-3.webp",
-      "sourcePage": "https://www.chevalblanc.com/en/maison/courchevel/",
       "status": "failed",
-      "rights": "Third-party commercial reuse to be verified"
+      "sourcePage": "https://www.chevalblanc.com/en/maison/courchevel/",
+      "rights": "Preview only; commercial reuse approval must be verified"
     },
     {
       "hotel": "lapogee",
       "key": "view-1",
       "localPath": "/images/travel/courchevel-1850-premium/lapogee/view-1.webp",
+      "status": "downloaded",
       "sourcePage": "https://www.oetkerhotels.com/hotels/lapogee-courchevel/",
-      "status": "failed",
-      "rights": "Third-party commercial reuse to be verified"
+      "rights": "Preview only; commercial reuse approval must be verified",
+      "downloadUrl": "https://images.eu.ctfassets.net/og3b0tarlg4b/2tfd7tKIoiaj4azQNu42HT/7ced0449e1cb31568f3b861b0e93be61/05_FACADE_JOUR_4_copie.jpg?fit=fill&fm=jpg&h=906&w=2340",
+      "originalSize": [
+        2340,
+        906
+      ],
+      "outputSize": [
+        1950,
+        755
+      ],
+      "bytes": 337286,
+      "sha256": "8367f68f7703d9d4939157f724891057a1c46f352397d3572c2d333f5bfbaf7e",
+      "credit": "L'Apogée Courchevel · official listing / selected property-specific source"
     },
     {
       "hotel": "lapogee",
       "key": "view-2",
       "localPath": "/images/travel/courchevel-1850-premium/lapogee/view-2.webp",
-      "sourcePage": "https://www.oetkerhotels.com/hotels/lapogee-courchevel/",
       "status": "failed",
-      "rights": "Third-party commercial reuse to be verified"
+      "sourcePage": "https://www.oetkerhotels.com/hotels/lapogee-courchevel/",
+      "rights": "Preview only; commercial reuse approval must be verified"
     },
     {
       "hotel": "lapogee",
       "key": "view-3",
       "localPath": "/images/travel/courchevel-1850-premium/lapogee/view-3.webp",
-      "sourcePage": "https://www.oetkerhotels.com/hotels/lapogee-courchevel/",
       "status": "failed",
-      "rights": "Third-party commercial reuse to be verified"
+      "sourcePage": "https://www.oetkerhotels.com/hotels/lapogee-courchevel/",
+      "rights": "Preview only; commercial reuse approval must be verified"
     },
     {
       "hotel": "k2-palace",
       "key": "view-1",
       "localPath": "/images/travel/courchevel-1850-premium/k2-palace/view-1.webp",
+      "status": "downloaded",
       "sourcePage": "https://www.lek2palace.com/en/",
-      "status": "failed",
-      "rights": "Third-party commercial reuse to be verified"
+      "rights": "Preview only; commercial reuse approval must be verified",
+      "downloadUrl": "https://www.lek2palace.com/media/cache/jadro_resize/rc/F8uJarf61751615440/jadroRoot/medias/5c114a0d69f63/k2p_drone_exterieur_-11_stephane_berthe.jpg",
+      "originalSize": [
+        960,
+        719
+      ],
+      "outputSize": [
+        960,
+        719
+      ],
+      "bytes": 136806,
+      "sha256": "4aa2d3e14d0773b5b0fe67d7d6552eba76051c67536e7dd492b0dd5f58b5ad19",
+      "credit": "Le K2 Palace · official listing / selected property-specific source"
     },
     {
       "hotel": "k2-palace",
       "key": "view-2",
       "localPath": "/images/travel/courchevel-1850-premium/k2-palace/view-2.webp",
+      "status": "downloaded",
       "sourcePage": "https://www.lek2palace.com/en/",
-      "status": "failed",
-      "rights": "Third-party commercial reuse to be verified"
+      "rights": "Preview only; commercial reuse approval must be verified",
+      "downloadUrl": "https://www.lek2palace.com/media/cache/jadro_resize/rc/j9QP823b1790004818/jadroRoot/medias/5c11586d7df1e/5c11587d96270/k2p_spa_06_stephane_berthe.jpg",
+      "originalSize": [
+        960,
+        640
+      ],
+      "outputSize": [
+        960,
+        640
+      ],
+      "bytes": 44340,
+      "sha256": "c5e7c552ff0a6bd3254f630d93af79625753ac3d6f8a64ebbaa2081e4d2f2c05",
+      "credit": "Le K2 Palace · official listing / selected property-specific source"
     },
     {
       "hotel": "k2-palace",
       "key": "view-3",
       "localPath": "/images/travel/courchevel-1850-premium/k2-palace/view-3.webp",
+      "status": "downloaded",
       "sourcePage": "https://www.lek2palace.com/en/",
-      "status": "failed",
-      "rights": "Third-party commercial reuse to be verified"
+      "rights": "Preview only; commercial reuse approval must be verified",
+      "downloadUrl": "https://www.lek2palace.com/media/cache/jadro_resize/rc/iUAzRtb31790004816/jadroRoot/medias/5c114a0d69f63/k2p_exterieur_-54_stephane_berthe.jpg",
+      "originalSize": [
+        960,
+        719
+      ],
+      "outputSize": [
+        960,
+        719
+      ],
+      "bytes": 157580,
+      "sha256": "81b3efa14f9af50f6d4f329be22ad460b2f57a4e341d29d534dd67c9b966962a",
+      "credit": "Le K2 Palace · official listing / selected property-specific source"
     }
   ]
 }
