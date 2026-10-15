@@ -15,6 +15,7 @@ import { maldivesHotelEditorial, maldivesAreaVisuals } from '@/data/travel/maldi
 import { maldivesFaq } from '@/data/travel/maldivesFaq';
 import { losCabosFaq } from '@/data/travel/losCabosFaq';
 import { saintBarthelemyFaq } from '@/data/travel/saintBarthelemyFaq';
+import { mustiqueFaq } from '@/data/travel/mustiqueFaq';
 import { portoCervoFaq } from '@/data/travel/portoCervoFaq';
 import { portoCervoHotelEditorial, portoCervoAreaVisuals } from '@/data/travel/portoCervoPremiumEditorial';
 import portoCervoHotelManifest from '@/data/travel/portoCervoPremiumImageSources.json';
@@ -211,7 +212,7 @@ function Advice({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang}) {
 
 export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityGuideData;locale:Lang;variant:Variant}) {
   const fr=locale==='fr',hotelPage=variant==='hotels';
-  const destinationAssets=city.slug==='porto-cervo'?confirmedPortoCervoAssets:city.slug==='saint-barthelemy'?confirmedSaintBarthelemyAssets:city.slug==='los-cabos'?confirmedLosCabosAssets:city.slug==='maldives'?confirmedMaldivesAssets:null;
+  const destinationAssets=city.slug==='mustique'?new Set<string>():city.slug==='porto-cervo'?confirmedPortoCervoAssets:city.slug==='saint-barthelemy'?confirmedSaintBarthelemyAssets:city.slug==='los-cabos'?confirmedLosCabosAssets:city.slug==='maldives'?confirmedMaldivesAssets:null;
   const hero=(destinationAssets && !destinationAssets.has(city.photos[city.hero].src)) ? (Object.values(city.photos).find(photo=>destinationAssets.has(photo.src)) || city.photos[city.hero]) : city.photos[city.hero];
   const requestedSecondary=city.photos[city.secondary];
   const secondary=(city.slug==='koh-samui' && !confirmedKohSamuiAssets.has(requestedSecondary.src)) ? city.photos['ang-thong'] : (destinationAssets && !destinationAssets.has(requestedSecondary.src)) ? (Object.values(city.photos).find(photo=>destinationAssets.has(photo.src) && photo.src!==hero.src) || hero) : requestedSecondary;
@@ -220,7 +221,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
   return <main className="min-h-screen bg-[#faf7f0] text-[#182c38]">
     <section className="relative isolate overflow-hidden bg-[#112937] text-[#f8f3e8]">
       <div className="absolute inset-0" aria-hidden="true">
-        <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="100vw" className="object-cover" />
+        {city.slug!=='mustique' && <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="100vw" className="object-cover" />}
         {city.slug === 'bodrum'
           ? <div className="absolute inset-0 bg-gradient-to-r from-[#07171d]/95 via-[#101f24]/72 to-[#142933]/15"/>
           : city.slug === 'antalya'
@@ -247,7 +248,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         <p className="text-xs uppercase tracking-[.25em] text-[#f1cc8f]">Bosphoras · Luxury Stays
           {' / '}{fr?city.eyebrowFr:city.eyebrowEn}</p>
         <h1 className={(city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez'||city.slug === 'bali'||city.slug === 'phuket'||city.slug === 'koh-samui'||city.slug === 'maldives'||city.slug === 'los-cabos'||city.slug === 'saint-barthelemy'||city.slug === 'porto-cervo') ? 'mt-9 max-w-4xl font-serif text-4xl leading-tight text-white [text-shadow:0_3px_14px_rgba(0,0,0,0.65)] sm:text-6xl lg:text-7xl' : 'mt-9 max-w-4xl font-serif text-4xl leading-tight sm:text-6xl lg:text-7xl'}>
-          {hotelPage?(city.slug==='porto-cervo'?(fr?'Hôtels de luxe à Porto Cervo : nos quatre adresses iconiques':'Luxury hotels in Porto Cervo: four iconic Sardinian stays'):city.slug==='saint-barthelemy'?(fr?'Hôtels de luxe à Saint-Barth : quatre adresses iconiques':'Luxury hotels in St Barth: four iconic island stays'):city.slug==='los-cabos'?(fr?'Hôtels de luxe à Los Cabos : quatre resorts d’exception':'Luxury hotels in Los Cabos: four exceptional resorts'):city.slug==='maldives'?(fr?'Hôtels de luxe aux Maldives : villas et îles privées d’exception':'Luxury hotels in the Maldives: exceptional private islands and villas'):city.slug==='koh-samui'?(fr?'Hôtels de luxe à Koh Samui : notre sélection d’adresses d’exception':'Luxury hotels in Koh Samui: our curated island collection'):(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.'))
+          {hotelPage?(city.slug==='mustique'?(fr?'Mustique : un hôtel et trois villas de luxe':'Mustique: one hotel and three luxury villas'):city.slug==='porto-cervo'?(fr?'Hôtels de luxe à Porto Cervo : nos quatre adresses iconiques':'Luxury hotels in Porto Cervo: four iconic Sardinian stays'):city.slug==='saint-barthelemy'?(fr?'Hôtels de luxe à Saint-Barth : quatre adresses iconiques':'Luxury hotels in St Barth: four iconic island stays'):city.slug==='los-cabos'?(fr?'Hôtels de luxe à Los Cabos : quatre resorts d’exception':'Luxury hotels in Los Cabos: four exceptional resorts'):city.slug==='maldives'?(fr?'Hôtels de luxe aux Maldives : villas et îles privées d’exception':'Luxury hotels in the Maldives: exceptional private islands and villas'):city.slug==='koh-samui'?(fr?'Hôtels de luxe à Koh Samui : notre sélection d’adresses d’exception':'Luxury hotels in Koh Samui: our curated island collection'):(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.'))
             :(fr?city.headingFr:city.headingEn)}</h1>
         {(city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo') && <p className="mt-4 text-xs text-[#efe0c7]">
           {city.slug==='bodrum'?(fr?'Paysage : une crique de la péninsule de Bodrum':'Landscape: a Bodrum Peninsula cove')
@@ -266,7 +267,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         </div>
         <div className="mt-10 flex flex-wrap gap-3">
           <a href={hotelPage?'#selection':'#quartiers'} className="bg-[#d9b77b] px-6 py-4 text-sm font-semibold text-[#142734] hover:bg-[#f0d39d]">
-            {hotelPage?(fr?'Comparer les quatre adresses':'Compare four hotels'):(city.slug==='porto-cervo'?(fr?'Découvrir la Costa Smeralda':'Explore the Emerald Coast'):city.slug==='saint-barthelemy'?(fr?'Choisir son paysage':'Choose your setting'):city.slug==='los-cabos'?(fr?'Découvrir la côte':'Explore the coastline'):city.slug==='maldives'?(fr?'Découvrir les atolls':'Explore the atolls'):(fr?'Découvrir les quartiers':'Discover neighbourhoods'))} →
+            {hotelPage?(city.slug==='mustique'?(fr?'Comparer hôtel et villas':'Compare hotel and villas'):(fr?'Comparer les quatre adresses':'Compare four hotels')):(city.slug==='porto-cervo'?(fr?'Découvrir la Costa Smeralda':'Explore the Emerald Coast'):city.slug==='saint-barthelemy'?(fr?'Choisir son paysage':'Choose your setting'):city.slug==='los-cabos'?(fr?'Découvrir la côte':'Explore the coastline'):city.slug==='maldives'?(fr?'Découvrir les atolls':'Explore the atolls'):(fr?'Découvrir les quartiers':'Discover neighbourhoods'))} →
           </a>
           <Link href={hotelPage?hubHref:hotelsHref} className="border border-white/70 px-6 py-4 text-sm hover:bg-white/10">
             {hotelPage?(fr?'Voir le guide de la ville':'Explore the city guide'):(fr?'Voir les hôtels sélectionnés':'See the selected hotels')}
@@ -377,7 +378,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
     <section id="experience" className="scroll-mt-24 bg-[#142d3a] py-16 text-[#f8f3e8] sm:py-24">
       <div className="mx-auto max-w-7xl px-5">
         <div className="grid items-center gap-8 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
-          <CityPhoto photo={secondary} locale={locale}/>
+          {city.slug!=='mustique' && <CityPhoto photo={secondary} locale={locale}/>}
           <div>
             <p className="text-xs uppercase tracking-[.2em] text-[#d7b77d]">
               {fr?'02 · L’esprit du lieu':'02 · A sense of place'}</p>
@@ -403,11 +404,11 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         ← {fr?'Retour au guide complet de la destination':'Back to the complete destination guide'}
       </Link>
     </section>:<HotelTeaser guide={city} locale={locale}/>}
-    {(city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo') && <section id={city.slug==='porto-cervo'?'faq-porto-cervo':city.slug==='saint-barthelemy'?'faq-saint-barthelemy':city.slug==='los-cabos'?'faq-los-cabos':city.slug==='maldives'?'faq-maldives':'faq-koh-samui'} className="mx-auto max-w-7xl px-5 py-14 sm:py-20">
+    {(city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo'||city.slug==='mustique') && <section id={city.slug==='mustique'?'faq-mustique':city.slug==='porto-cervo'?'faq-porto-cervo':city.slug==='saint-barthelemy'?'faq-saint-barthelemy':city.slug==='los-cabos'?'faq-los-cabos':city.slug==='maldives'?'faq-maldives':'faq-koh-samui'} className="mx-auto max-w-7xl px-5 py-14 sm:py-20">
       <p className="text-xs uppercase tracking-[.2em] text-[#947048]">{fr?'Questions fréquentes':'Frequently asked questions'}</p>
-      <h2 className="mt-4 font-serif text-3xl sm:text-5xl">{city.slug==='porto-cervo'?(fr?'Préparer votre séjour sur la Costa Smeralda':'Planning your Costa Smeralda stay'):city.slug==='saint-barthelemy'?(fr?'Préparer votre voyage à Saint-Barth':'Planning your St Barth stay'):city.slug==='los-cabos'?(fr?'Préparer un séjour de luxe à Los Cabos':'Planning a luxury stay in Los Cabos'):city.slug==='maldives'?(fr?'Préparer votre séjour de luxe aux Maldives':'Planning a luxury stay in the Maldives'):(fr?'Préparer un séjour de luxe à Koh Samui':'Plan a luxury stay in Koh Samui')}</h2>
+      <h2 className="mt-4 font-serif text-3xl sm:text-5xl">{city.slug==='mustique'?(fr?'Préparer votre séjour à Mustique':'Planning your Mustique stay'):city.slug==='porto-cervo'?(fr?'Préparer votre séjour sur la Costa Smeralda':'Planning your Costa Smeralda stay'):city.slug==='saint-barthelemy'?(fr?'Préparer votre voyage à Saint-Barth':'Planning your St Barth stay'):city.slug==='los-cabos'?(fr?'Préparer un séjour de luxe à Los Cabos':'Planning a luxury stay in Los Cabos'):city.slug==='maldives'?(fr?'Préparer votre séjour de luxe aux Maldives':'Planning a luxury stay in the Maldives'):(fr?'Préparer un séjour de luxe à Koh Samui':'Plan a luxury stay in Koh Samui')}</h2>
       <div className="mt-8 grid gap-4 md:grid-cols-2">
-        {(city.slug==='porto-cervo'?portoCervoFaq:city.slug==='saint-barthelemy'?saintBarthelemyFaq:city.slug==='los-cabos'?losCabosFaq:city.slug==='maldives'?maldivesFaq:kohSamuiFaq)[locale].map(item=><article key={item.q} className="border border-[#e5dbcb] bg-white p-7">
+        {(city.slug==='mustique'?mustiqueFaq:city.slug==='porto-cervo'?portoCervoFaq:city.slug==='saint-barthelemy'?saintBarthelemyFaq:city.slug==='los-cabos'?losCabosFaq:city.slug==='maldives'?maldivesFaq:kohSamuiFaq)[locale].map(item=><article key={item.q} className="border border-[#e5dbcb] bg-white p-7">
           <h3 className="font-serif text-xl text-[#173340]">{item.q}</h3>
           <p className="mt-4 text-sm leading-7 text-[#54666d]">{item.a}</p>
         </article>)}

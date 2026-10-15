@@ -8,6 +8,7 @@ import { kohSamuiFaq } from '@/data/travel/kohSamuiFaq';
 import { maldivesFaq } from '@/data/travel/maldivesFaq';
 import { losCabosFaq } from '@/data/travel/losCabosFaq';
 import { saintBarthelemyFaq } from '@/data/travel/saintBarthelemyFaq';
+import { mustiqueFaq } from '@/data/travel/mustiqueFaq';
 import { portoCervoFaq } from '@/data/travel/portoCervoFaq';
 import { HotelEditorialDetail } from '@/components/travel/HotelEditorialDetail';
 import { istanbulHotels, istanbulEditorialSourceDate } from '@/data/travel/istanbulFlagship';
@@ -119,9 +120,9 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     : isFlagship
     ? locale === 'fr' ? 'Meilleurs hôtels de luxe à Istanbul : Bosphore, palaces et quartiers' : 'Best luxury hotels in Istanbul: Bosphorus, palaces and neighbourhoods'
     : isFeaturedHotelGuide && featureGuide
-    ? (featureGuide.slug==='porto-cervo' ? (locale==='fr'?'Hôtels de luxe à Porto Cervo : 4 adresses d’exception':'Luxury Hotels in Porto Cervo: Four Curated Sardinian Retreats') : featureGuide.slug==='saint-barthelemy' ? (locale==='fr'?'Hôtels de luxe à Saint-Barth : 4 adresses d’exception':'Luxury Hotels in St Barth: Four Curated Island Retreats') : featureGuide.slug==='los-cabos' ? (locale==='fr' ? 'Hôtels de luxe à Los Cabos : 4 resorts d’exception' : 'Luxury Hotels in Los Cabos: Four Exceptional Resorts') : featureGuide.slug==='maldives' ? (locale==='fr' ? 'Hôtels de luxe aux Maldives : notre sélection d’îles privées et de villas' : 'Luxury Hotels in the Maldives: Curated Private Islands & Villas') : featureGuide.slug==='koh-samui' ? (locale==='fr' ? 'Hôtels de luxe à Koh Samui : notre sélection d’adresses d’exception' : 'Luxury Hotels in Koh Samui: Our Curated Island Collection') : (locale === 'fr' ? 'Hôtels de luxe à ' + featureGuide.name + ' : sélection et quartiers' : 'Luxury hotels in ' + featureGuide.name + ': curated guide and locations'))
+    ? (featureGuide.slug==='mustique' ? (locale==='fr'?'Mustique : un hôtel et trois villas privées':'Mustique: One Hotel and Three Luxury Villas') : featureGuide.slug==='porto-cervo' ? (locale==='fr'?'Hôtels de luxe à Porto Cervo : 4 adresses d’exception':'Luxury Hotels in Porto Cervo: Four Curated Sardinian Retreats') : featureGuide.slug==='saint-barthelemy' ? (locale==='fr'?'Hôtels de luxe à Saint-Barth : 4 adresses d’exception':'Luxury Hotels in St Barth: Four Curated Island Retreats') : featureGuide.slug==='los-cabos' ? (locale==='fr' ? 'Hôtels de luxe à Los Cabos : 4 resorts d’exception' : 'Luxury Hotels in Los Cabos: Four Exceptional Resorts') : featureGuide.slug==='maldives' ? (locale==='fr' ? 'Hôtels de luxe aux Maldives : notre sélection d’îles privées et de villas' : 'Luxury Hotels in the Maldives: Curated Private Islands & Villas') : featureGuide.slug==='koh-samui' ? (locale==='fr' ? 'Hôtels de luxe à Koh Samui : notre sélection d’adresses d’exception' : 'Luxury Hotels in Koh Samui: Our Curated Island Collection') : (locale === 'fr' ? 'Hôtels de luxe à ' + featureGuide.name + ' : sélection et quartiers' : 'Luxury hotels in ' + featureGuide.name + ': curated guide and locations'))
     : isFeaturedDestinationGuide && featureGuide
-    ? (featureGuide.slug==='porto-cervo' ? (locale==='fr'?'Porto Cervo : hôtels de luxe, plages et marina':'Porto Cervo: Luxury Hotels, Sardinian Beaches & Marina') : featureGuide.slug==='saint-barthelemy' ? (locale==='fr'?'Saint-Barth : plages, hôtels de luxe et criques':'St Barth: Luxury Hotels, Beaches and Island Guide') : featureGuide.slug==='los-cabos' ? (locale==='fr'?'Los Cabos : plages, hôtels de luxe et désert de Baja':'Los Cabos: Baja Beaches, Desert Luxury & Private Resorts') : featureGuide.slug==='maldives' ? (locale==='fr'?'Maldives : atolls, hôtels de luxe et îles privées':'Maldives: Luxury Atolls, Private Islands & Resorts') : (locale === 'fr' ? featureGuide.name + ' : où séjourner, hôtels et expériences de luxe' : featureGuide.name + ': luxury stays, neighbourhoods and experiences'))
+    ? (featureGuide.slug==='mustique' ? (locale==='fr'?'Mustique : hôtel, villas privées et plages':'Mustique: Hotel, Villas and Private Beaches') : featureGuide.slug==='porto-cervo' ? (locale==='fr'?'Porto Cervo : hôtels de luxe, plages et marina':'Porto Cervo: Luxury Hotels, Sardinian Beaches & Marina') : featureGuide.slug==='saint-barthelemy' ? (locale==='fr'?'Saint-Barth : plages, hôtels de luxe et criques':'St Barth: Luxury Hotels, Beaches and Island Guide') : featureGuide.slug==='los-cabos' ? (locale==='fr'?'Los Cabos : plages, hôtels de luxe et désert de Baja':'Los Cabos: Baja Beaches, Desert Luxury & Private Resorts') : featureGuide.slug==='maldives' ? (locale==='fr'?'Maldives : atolls, hôtels de luxe et îles privées':'Maldives: Luxury Atolls, Private Islands & Resorts') : (locale === 'fr' ? featureGuide.name + ' : où séjourner, hôtels et expériences de luxe' : featureGuide.name + ': luxury stays, neighbourhoods and experiences'))
     : route.kind === 'keyword' && route.category && route.destination
     ? heading(locale, route.category, route.destination.name)
     : route.kind === 'destination' && route.destination ? route.destination.name + ' — Luxury stays'
@@ -248,6 +249,7 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
   const isMaldives = kohGuide?.slug==='maldives' && (locale==='fr'||locale==='en');
   const isLosCabos = kohGuide?.slug==='los-cabos' && (locale==='fr'||locale==='en');
   const isSaintBarth = kohGuide?.slug==='saint-barthelemy' && (locale==='fr'||locale==='en');
+  const isMustique = kohGuide?.slug==='mustique' && (locale==='fr'||locale==='en');
   const isPortoCervo = kohGuide?.slug==='porto-cervo' && (locale==='fr'||locale==='en');
   const node = {
     '@context': 'https://schema.org',
@@ -280,9 +282,9 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
           }))
         }
       ] : []),
-      ...((isKohSamui || isMaldives || isLosCabos || isSaintBarth || isPortoCervo) && kohGuide ? [
+      ...((isKohSamui || isMaldives || isLosCabos || isSaintBarth || isPortoCervo || isMustique) && kohGuide ? [
         { '@type':'Article', '@id':base+'#editorial-guide',
-          headline:locale==='fr'?(isPortoCervo?'Porto Cervo : quatre hôtels et cinq façons de séjourner':isSaintBarth?'Saint-Barth : quatre hôtels d’exception et cinq secteurs':isLosCabos?'Hôtels de luxe à Los Cabos : quatre resorts et cinq zones':isMaldives?'Hôtels de luxe aux Maldives : quatre îles et cinq façons de séjourner':'Hôtels de luxe à Koh Samui : quatre adresses et cinq secteurs'):(isPortoCervo?'Luxury hotels in Porto Cervo: four stays and five areas':isSaintBarth?'Luxury hotels in St Barth: four island hotels and five areas':isLosCabos?'Luxury hotels in Los Cabos: four resorts and five areas':isMaldives?'Luxury hotels in the Maldives: four resorts and five ways to stay':'Luxury hotels in Koh Samui: four hotels and five areas'),
+          headline:locale==='fr'?(isMustique?'Mustique : un hôtel et trois villas':isPortoCervo?'Porto Cervo : quatre hôtels et cinq façons de séjourner':isSaintBarth?'Saint-Barth : quatre hôtels d’exception et cinq secteurs':isLosCabos?'Hôtels de luxe à Los Cabos : quatre resorts et cinq zones':isMaldives?'Hôtels de luxe aux Maldives : quatre îles et cinq façons de séjourner':'Hôtels de luxe à Koh Samui : quatre adresses et cinq secteurs'):(isMustique?'Mustique: one hotel and three private villas':isPortoCervo?'Luxury hotels in Porto Cervo: four stays and five areas':isSaintBarth?'Luxury hotels in St Barth: four island hotels and five areas':isLosCabos?'Luxury hotels in Los Cabos: four resorts and five areas':isMaldives?'Luxury hotels in the Maldives: four resorts and five ways to stay':'Luxury hotels in Koh Samui: four hotels and five areas'),
           description:locale==='fr'?kohGuide.introFr:kohGuide.introEn,
           inLanguage:locale,mainEntityOfPage:base,
           image:ORIGIN+kohGuide.photos[kohGuide.hero].src,
@@ -290,14 +292,14 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
           publisher:{'@type':'Organization',name:'Bosphoras Luxury Stays',url:ORIGIN+'/travel'}
         },
         { '@type':'ItemList', '@id':base+'#curated-luxury-hotels',
-          name:locale==='fr'?(isPortoCervo?'Quatre hôtels de luxe sélectionnés à Porto Cervo':isSaintBarth?'Quatre hôtels de luxe sélectionnés à Saint-Barth':isLosCabos?'Quatre resorts de luxe sélectionnés à Los Cabos':isMaldives?'Quatre hôtels de luxe sélectionnés aux Maldives':'Quatre hôtels de luxe sélectionnés à Koh Samui'):(isPortoCervo?'Four curated luxury hotels in Porto Cervo':isSaintBarth?'Four curated luxury hotels in St Barth':isLosCabos?'Four curated luxury resorts in Los Cabos':isMaldives?'Four curated luxury hotels in the Maldives':'Four curated luxury hotels in Koh Samui'),
+          name:locale==='fr'?(isMustique?'Un hôtel et trois villas sélectionnés à Mustique':isPortoCervo?'Quatre hôtels de luxe sélectionnés à Porto Cervo':isSaintBarth?'Quatre hôtels de luxe sélectionnés à Saint-Barth':isLosCabos?'Quatre resorts de luxe sélectionnés à Los Cabos':isMaldives?'Quatre hôtels de luxe sélectionnés aux Maldives':'Quatre hôtels de luxe sélectionnés à Koh Samui'):(isMustique?'One hotel and three selected villas in Mustique':isPortoCervo?'Four curated luxury hotels in Porto Cervo':isSaintBarth?'Four curated luxury hotels in St Barth':isLosCabos?'Four curated luxury resorts in Los Cabos':isMaldives?'Four curated luxury hotels in the Maldives':'Four curated luxury hotels in Koh Samui'),
           numberOfItems:kohGuide.hotels.length,
           itemListElement:kohGuide.hotels.map((hotel,index)=>({
             '@type':'ListItem',position:index+1,name:hotel.name,url:hotel.officialUrl
           }))
         },
         { '@type':'FAQPage', '@id':base+'#faq',
-          mainEntity:(isPortoCervo?portoCervoFaq:isSaintBarth?saintBarthelemyFaq:isLosCabos?losCabosFaq:isMaldives?maldivesFaq:kohSamuiFaq)[locale as 'fr'|'en'].map(faq=>({
+          mainEntity:(isMustique?mustiqueFaq:isPortoCervo?portoCervoFaq:isSaintBarth?saintBarthelemyFaq:isLosCabos?losCabosFaq:isMaldives?maldivesFaq:kohSamuiFaq)[locale as 'fr'|'en'].map(faq=>({
             '@type':'Question',name:faq.q,acceptedAnswer:{'@type':'Answer',text:faq.a}
           }))
         }
