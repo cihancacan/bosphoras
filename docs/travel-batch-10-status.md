@@ -23,7 +23,7 @@
 | Big Sky | 4 hôtels | 8/12 | 5/9 | 13/21 | Brouillon, erreurs photo exclues |
 | Val d'Isère | 4 hôtels | 12/12 | 5/9 | 17/21 | Brouillon, saisons à vérifier |
 | Verbier | 4 hôtels | 12/12 | 3/9 | 15/21 | Brouillon, doublon Savoleyres exclu |
-| **Total** | | **113/120** | **68/90** | **181/210** | **29 dossiers photo encore manquants, tous droits/visuels à contrôler** |
+| **Total** | | **110/120** | **71/90** | **181/210** | **29 dossiers photo encore manquants, tous droits/visuels à contrôler** |
 
 Les **181 fichiers candidats** ne sont **pas 181 photographies approuvées**. Certains fichiers téléchargés ont une alerte qui les exclut de l'affichage envisagé. L'ensemble doit encore passer une revue d'identité, de qualité esthétique, de provenance et des droits d'utilisation commerciale.
 
