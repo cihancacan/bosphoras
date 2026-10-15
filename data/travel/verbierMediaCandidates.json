@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 9,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -506,10 +506,27 @@
       "key": "scene-6",
       "placeLabel": "Les Creux Verbier",
       "searchQuery": "Verbier Les Creux",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/verbier-premium/destination/scene-6.webp",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/5c82902829f2cc7bb5650e0a/1629721032699-6F6LG3F5A75N3VACGBGK/Le-chalet-d%27ardrien-verbier-hotels-exterior.jpg",
+      "sourcePage": "https://www.verbier.com/hotels/chalet-d-adrien",
+      "candidateContext": "Chalet d'Adrien, Route des Creux 91, Verbier; Le-chalet-d'ardrien-verbier-hotels-exterior.jpg  ",
+      "credit": "Official regional tourism or exact hotel website",
+      "bytes": 118604,
+      "sha256": "d15b29f1c3a99374176b659f2921b6f8743233f43a6d8064ec922ddefa42b684",
+      "originalSize": [
+        1200,
+        673
+      ],
+      "outputSize": [
+        1200,
+        673
+      ],
+      "ownerRightsAuthorization": "Bosphoras operator confirmed usage rights on 2026-10-15; keep original credit",
+      "visualQaWarning": "Geographically grounded photo, final manual image identity/season QA still pending."
     },
     {
       "key": "scene-7",

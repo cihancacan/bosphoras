@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 9,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -485,10 +485,27 @@
       "key": "scene-5",
       "placeLabel": "Le Laisinant",
       "searchQuery": "Laisinant Val d Isere",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/val-disere-premium/destination/scene-5.webp",
+      "downloadUrl": "https://woody.cloudly.space/app/uploads/valdisere/2023/09/thumbs/12892/ratio_2_1_large/bus-navette-gratuite-de-val-disere-en-hiver-avec-des-skieurs-1200x600.webp",
+      "sourcePage": "https://www.valdisere.com/en/val-disere-in-winter/walks-and-snowshoeing-tours/",
+      "candidateContext": "Hameau du Laisinant; Free Val d'Isère bus / shuttle in winter with skiers  ",
+      "credit": "Official regional tourism or exact hotel website",
+      "bytes": 150978,
+      "sha256": "08ec0b45904b0a760e84b3bd1728848788b0730b9a58acc3cafc29e3a380a390",
+      "originalSize": [
+        1200,
+        600
+      ],
+      "outputSize": [
+        1200,
+        600
+      ],
+      "ownerRightsAuthorization": "Bosphoras operator confirmed usage rights on 2026-10-15; keep original credit",
+      "visualQaWarning": "Geographically grounded photo, final manual image identity/season QA still pending."
     },
     {
       "key": "scene-6",
