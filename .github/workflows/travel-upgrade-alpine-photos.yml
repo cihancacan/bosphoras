@@ -1,0 +1,41 @@
+name: Travel alpine — official hotel gallery replacements
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - scripts/upgrade-alpine-rejected-photos.py
+      - .github/workflows/travel-upgrade-alpine-photos.yml
+permissions:
+  contents: write
+concurrency:
+  group: travel-alpine-official-replacements
+  cancel-in-progress: false
+jobs:
+  upgrade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -m py_compile scripts/upgrade-alpine-rejected-photos.py
+      - run: python -u scripts/upgrade-alpine-rejected-photos.py
+      - run: python scripts/render-alpine-photo-review.py
+      - name: Save factual hotel photograph corrections without a Vercel build
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for slug in st-moritz aspen niseko; do
+            [ ! -d "public/images/travel/$slug-premium" ] || git add "public/images/travel/$slug-premium"
+          done
+          git add data/travel/stMoritzMediaCandidates.json data/travel/aspenMediaCandidates.json data/travel/nisekoMediaCandidates.json
+          [ ! -f docs/travel-alpine-photo-review-index.md ] || git add docs/travel-alpine-photo-review-*.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): substitute verified official alpine hotel galleries and licensed landscape [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
