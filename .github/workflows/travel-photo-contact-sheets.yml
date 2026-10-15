@@ -4,6 +4,7 @@ on:
     branches: [feature/luxury-travel-seo-destinations-20261012]
     paths:
       - 'scripts/render-travel-photo-contact-sheets.py'
+      - 'data/travel/*MediaCandidates.json'
       - '.github/workflows/travel-photo-contact-sheets.yml'
 permissions:
   contents: write
