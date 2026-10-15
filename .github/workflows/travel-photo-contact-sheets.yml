@@ -1,0 +1,35 @@
+name: Travel luxury — generate GitHub-only photo contact sheets
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - 'scripts/render-travel-photo-contact-sheets.py'
+      - '.github/workflows/travel-photo-contact-sheets.yml'
+permissions:
+  contents: write
+concurrency:
+  group: travel-photo-contact-sheets
+  cancel-in-progress: false
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'Pillow>=10,<12'
+      - run: python -m py_compile scripts/render-travel-photo-contact-sheets.py
+      - run: python -u scripts/render-travel-photo-contact-sheets.py
+      - name: Commit internal review sheets without Vercel Preview
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/travel-photo-contact-sheets/
+          if ! git diff --cached --quiet; then
+            git commit -m 'quality(travel): picture contact sheets for eight mountain destination QA [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
