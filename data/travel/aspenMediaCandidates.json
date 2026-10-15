@@ -558,25 +558,24 @@
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons photo licence verified at source; any attribution, share-alike, adaptation and trademark rules need compliance. Visual QA still required.",
+      "rights": "Source documented and precise identity suggested; manual visual and legal approval still required",
       "localPath": "/images/travel/aspen-premium/destination/scene-9.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Maroon_Bells%2C_Aspen_Colorado_%2835486985686%29.jpg/1920px-Maroon_Bells%2C_Aspen_Colorado_%2835486985686%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Maroon_Bells,_Aspen_Colorado_(35486985686).jpg",
-      "candidateContext": "Maroon Bells, Aspen Colorado (35486985686).jpg",
-      "credit": "Lorie Shaull  from Washington, United States",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "sha256": "f70d096ae4d54d9ce91930eb7ade3ce0bf2f6c78f96d0dada667aa0dd0627ffc",
-      "bytes": 230534,
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Maroon_Bells%2C_two_peaks_in_the_Elk_Mountains_that_are_less_than_half-mile_apart%2C_are_reflected_on_Maroon_Lake.jpg/1920px-Maroon_Bells%2C_two_peaks_in_the_Elk_Mountains_that_are_less_than_half-mile_apart%2C_are_reflected_on_Maroon_Lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Maroon_Bells,_two_peaks_in_the_Elk_Mountains_that_are_less_than_half-mile_apart,_are_reflected_on_Maroon_Lake.jpg",
+      "candidateContext": "Reflets des Maroon Bells dans Maroon Lake, photographie officielle USDA",
+      "credit": "Scott Mecum, U.S. Forest Service / U.S. Department of Agriculture",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "sha256": "366eca88897f7acf566a2d6438cc05ab49e3706421ec46f2518c99c59615b230",
+      "bytes": 549582,
       "originalSize": [
         1920,
-        1280
+        1285
       ],
       "outputSize": [
-        1800,
-        1200
+        1900,
+        1272
       ],
-      "visualQaWarning": "Contrôle visuel : Maroon Bells réellement photographiées, mais contrail visible et cadrage peu haut de gamme ; chercher une image de paysage plus forte avant usage principal.",
       "visualQaReviewedAt": "2026-10-15"
     }
   ],

@@ -4,8 +4,6 @@
 
 **Couverture :** 12/12 photographies des établissements, 9/9 scènes locales, 21/21 en tout.
 
-**Revue humaine initiale :** certains visuels ont des alertes éditoriales détaillées dans le tableau ; 21/21 désigne uniquement les fichiers physiquement récupérés.
-
 **Statut de publication :** aucune validation visuelle globale, aucun feu vert de publication commerciale. Le guide reste en brouillon et non indexable.
 
 ## Hôtels : 4 adresses × 3 images
@@ -37,7 +35,7 @@
 | Aspen Highlands · scene-6 | <img src="../public/images/travel/aspen-premium/destination/scene-6.webp" width="280" alt="Aspen Highlands bowl from Loge Peak .jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Aspen_Highlands_bowl_from_Loge_Peak_.jpg">Source originale</a> / CC BY-SA 3.0 | Visuel non approuvé; Droits de publication à contrôler |
 | Buttermilk ski mountain · scene-7 | <img src="../public/images/travel/aspen-premium/destination/scene-7.webp" width="280" alt="File:Buttermilk in Winter.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Buttermilk_in_Winter.jpg">Source originale</a> / CC BY-SA 4.0 | Visuel non approuvé; Droits de publication à contrôler |
 | Snowmass Village · scene-8 | <img src="../public/images/travel/aspen-premium/destination/scene-8.webp" width="280" alt="File:Snowmass gondola and Ski area.jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Snowmass_gondola_and_Ski_area.jpg">Source originale</a> / CC BY-SA 3.0 | Visuel non approuvé; Droits de publication à contrôler |
-| Maroon Bells · scene-9 | <img src="../public/images/travel/aspen-premium/destination/scene-9.webp" width="280" alt="Maroon Bells, Aspen Colorado (35486985686).jpg"> | <a href="https://commons.wikimedia.org/wiki/File:Maroon_Bells,_Aspen_Colorado_(35486985686).jpg">Source originale</a> / CC BY-SA 2.0 | Visuel non approuvé; Droits de publication à contrôler; Contrôle visuel : Maroon Bells réellement photographiées, mais contrail visible et cadrage peu haut de gamme ; chercher une image de paysage plus forte avant usage principal. |
+| Maroon Bells · scene-9 | <img src="../public/images/travel/aspen-premium/destination/scene-9.webp" width="280" alt="Reflets des Maroon Bells dans Maroon Lake, photographie officielle USDA"> | <a href="https://commons.wikimedia.org/wiki/File:Maroon_Bells,_two_peaks_in_the_Elk_Mountains_that_are_less_than_half-mile_apart,_are_reflected_on_Maroon_Lake.jpg">Source originale</a> / Public domain | Visuel non approuvé; Droits de publication à contrôler |
 
 ## Contrôles complémentaires
 
