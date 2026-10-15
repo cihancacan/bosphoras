@@ -5,7 +5,7 @@ const draft=stMoritzDraftGuide;
 export const stMoritzGuide:FeaturedCityGuideData={
  ...draft,
  hero:"scene-8",
- secondary:"scene-2",
+ secondary:"scene-9",
  areas:draft.areas.map(a=>({...a})),
  experiences:draft.experiences.map(x=>({...x})),
  hotels:draft.hotels.map(h=>({...h})),
