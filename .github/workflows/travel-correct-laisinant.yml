@@ -1,0 +1,33 @@
+name: Travel luxury — exact Le Laisinant replacement from tourist office
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - 'scripts/correct-laisinant-image.py'
+      - '.github/workflows/travel-correct-laisinant.yml'
+permissions:
+  contents: write
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12'
+      - run: python -m py_compile scripts/correct-laisinant-image.py
+      - run: python -u scripts/correct-laisinant-image.py
+      - name: Commit authentic corrected Laisinant image only
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/travel/valDisereMediaCandidates.json
+          git add public/images/travel/val-disere-premium/destination/scene-5.webp
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): correct mislabelled Le Fornet shuttle with actual Laisinant photo [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
