@@ -75,8 +75,9 @@ for(const [slug,stem] of rows){
   for(const item of manifest.hotels.concat(manifest.destinationScenes)){
    assert(['candidate_needs_visual_review','missing'].includes(item.status),'Unknown image QA status');
    if(item.status!=='candidate_needs_visual_review')continue;
-   assert(item.visuallyVerified===false&&item.commercialRightsCleared===false,
-     slug+' photo must not self-approve');
+   assert(item.commercialRightsCleared===true&&item.ownerRightsAuthorization?.includes('2026-10-15'),
+     slug+' image owner's permission provenance is required');
+   assert(item.visuallyVerified!==true||!item.visualQaWarning,slug+' rejected image cannot enter premium gallery');
    assert(item.sourcePage?.startsWith('https://')&&item.downloadUrl?.startsWith('https://'),
      slug+' lacks provenance');
    assert(item.localPath?.startsWith('/images/travel/'+slug+'-premium/'),
@@ -84,7 +85,7 @@ for(const [slug,stem] of rows){
    const physical='public'+item.localPath;
    assert(existsSync(physical)&&statSync(physical).size>12000,slug+' missing tiny WebP file '+physical);
   }
-  console.log(' '+slug+': photos '+manifest.downloadedHotelCandidates+'/12 hotel & '+manifest.downloadedDestinationCandidates+'/9 destination candidates, ALL still rights/identity gated.');
+  console.log(' '+slug+': photos '+manifest.downloadedHotelCandidates+'/12 hotel & '+manifest.downloadedDestinationCandidates+'/9 destination candidates, rights user-affirmed; visual QA per image, site release still blocked.');
  } else console.log(' '+slug+': original draft done; photographs must still be collected.');
 }
 assert.equal(totalOriginalProfiles,20,'Five destinations x 4 genuine hotel profiles expected');

@@ -41,7 +41,9 @@ for(const slug of ['megeve','gstaad','zermatt']){
   for(const im of m.hotels.concat(m.destinationScenes)){
    assert(['missing','candidate_needs_visual_review'].includes(im.status));
    if(im.status==='candidate_needs_visual_review'){
-    assert(im.visuallyVerified===false && im.commercialRightsCleared===false);
+    if(im.commercialRightsCleared===true)assert(im.ownerRightsAuthorization?.includes('2026-10-15'),'Unattributed owner's rights statement');
+    else assert(im.visuallyVerified===false,'Photo approved without rights confirmation');
+    assert(im.visuallyVerified!==true||!im.visualQaWarning,'Flagged image self-approved');
     assert(im.sourcePage?.startsWith('https://')&&im.downloadUrl?.startsWith('https://'));
     assert(im.localPath?.startsWith('/images/travel/'+slug+'-premium/'));
     assert(existsSync('public'+im.localPath));
