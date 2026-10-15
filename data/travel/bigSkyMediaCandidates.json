@@ -4,7 +4,7 @@
   "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 11,
+  "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 5,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
@@ -101,14 +101,31 @@
       "property": "One&Only Moonlight Basin",
       "propertyKey": "oneonly-moonlight",
       "key": "view-1",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.oneandonlyresorts.com/moonlight-basin/stays",
         "https://www.oneandonlyresorts.com/moonlight-basin"
       ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/big-sky-premium/oneonly-moonlight/view-1.webp",
+      "downloadUrl": "https://www.carrier.co.uk/media/pfac5nvp/oneonly_moonlightbasin_p1_mock_up_bedroom-1066_master_v2.jpg?rxy=0.6805012372058705%2C0.30831576518187037&v=1dc951ca57603b0",
+      "sourcePage": "https://www.carrier.co.uk/design/hotels/oneonly-moonlight-basin/",
+      "candidateContext": "One&Only Moonlight Basin bedroom interior",
+      "credit": "One&Only Moonlight Basin — attributed original source",
+      "sha256": "3bee70f274233f0195db96bf76aaa61e5d03cd93d669ff4f8d099c256bb1baeb",
+      "bytes": 195924,
+      "originalSize": [
+        3256,
+        2172
+      ],
+      "outputSize": [
+        1800,
+        1201
+      ],
+      "ownerRightsAuthorization": "Bosphoras owner confirmed image rights on 2026-10-15.",
+      "visualQaWarning": "Exact property source checked; final visual identity and presentation review pending."
     },
     {
       "property": "One&Only Moonlight Basin",
