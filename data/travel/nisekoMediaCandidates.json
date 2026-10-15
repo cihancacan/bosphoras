@@ -1,0 +1,446 @@
+{
+  "destination": "niseko",
+  "generatedAt": "2026-10-15T11:54:14.918450+00:00",
+  "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
+  "expectedHotelPhotos": 12,
+  "expectedDestinationPhotos": 9,
+  "downloadedHotelCandidates": 9,
+  "downloadedDestinationCandidates": 4,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "hotels": [
+    {
+      "property": "Park Hyatt Niseko Hanazono",
+      "propertyKey": "park-hyatt-hanazono",
+      "key": "view-1",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono",
+        "https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono/rooms"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "Park Hyatt Niseko Hanazono",
+      "propertyKey": "park-hyatt-hanazono",
+      "key": "view-2",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono",
+        "https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono/rooms"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "Park Hyatt Niseko Hanazono",
+      "propertyKey": "park-hyatt-hanazono",
+      "key": "view-3",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono",
+        "https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono/rooms"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "Higashiyama Niseko Village, a Ritz-Carlton Reserve",
+      "propertyKey": "ritz-carlton-reserve",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/",
+        "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/rooms/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/niseko-premium/ritz-carlton-reserve/view-1.webp",
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/CTSRZ/ctsrz-lobby-9806-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+      "sourcePage": "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/",
+      "candidateContext": "Official page sharing image",
+      "sha256": "6a237ac8eee1305a18df5f893a92e0a52f8b8e0c32b5b91d61acb80647505d57",
+      "bytes": 145974,
+      "originalSize": [
+        1336,
+        751
+      ],
+      "outputSize": [
+        1336,
+        751
+      ]
+    },
+    {
+      "property": "Higashiyama Niseko Village, a Ritz-Carlton Reserve",
+      "propertyKey": "ritz-carlton-reserve",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/",
+        "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/rooms/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/niseko-premium/ritz-carlton-reserve/view-2.webp",
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-digital/rz/apec/hws/c/ctsrz/en_us/photo/unlimited/assets/ctsrz-lobby-9806.jpg",
+      "sourcePage": "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/",
+      "candidateContext": "Lobby",
+      "sha256": "45e1ac249b0c38c8c7b30ad28613481ca37e793d19eaea4a47bf0137d8d3f24e",
+      "bytes": 247120,
+      "originalSize": [
+        5000,
+        3334
+      ],
+      "outputSize": [
+        1700,
+        1134
+      ]
+    },
+    {
+      "property": "Higashiyama Niseko Village, a Ritz-Carlton Reserve",
+      "propertyKey": "ritz-carlton-reserve",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/",
+        "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/rooms/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/niseko-premium/ritz-carlton-reserve/view-3.webp",
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-digital/rz/apec/hws/c/ctsrz/en_us/photo/unlimited/assets/ctsrz-guest-bathroom-9781.jpg",
+      "sourcePage": "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/",
+      "candidateContext": "Guest Bathroom - Onsen-Style Soaking Tub",
+      "sha256": "ee6b936b27442ddb1fc70dc5ba7a5759187c4645636130670bbe7c3efa54255f",
+      "bytes": 209224,
+      "originalSize": [
+        5000,
+        3333
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ]
+    },
+    {
+      "property": "Setsu Niseko",
+      "propertyKey": "setsu-niseko",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://setsuniseko.com/en/",
+        "https://setsuniseko.com/en/suites/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/niseko-premium/setsu-niseko/view-1.webp",
+      "downloadUrl": "https://setsuniseko.com/wp-content/uploads/Shinonome-Niseko.jpg",
+      "sourcePage": "https://setsuniseko.com/en/",
+      "candidateContext": "Shinonome Niseko",
+      "sha256": "e175ccd83e9e1738d8748b859258b1cf4cd81bc9b2176ec1aa438d32c64647e7",
+      "bytes": 87360,
+      "originalSize": [
+        1600,
+        1067
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ]
+    },
+    {
+      "property": "Setsu Niseko",
+      "propertyKey": "setsu-niseko",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://setsuniseko.com/en/",
+        "https://setsuniseko.com/en/suites/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/niseko-premium/setsu-niseko/view-2.webp",
+      "downloadUrl": "https://setsuniseko.com/wp-content/uploads/Shinonome-Niseko-1536x1024.jpg",
+      "sourcePage": "https://setsuniseko.com/en/",
+      "candidateContext": "Shinonome Niseko",
+      "sha256": "269f39b3562bd6e68017c73396127d8fabd8d318e82318c3f3b77709dbfa0d3e",
+      "bytes": 72774,
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "outputSize": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "property": "Setsu Niseko",
+      "propertyKey": "setsu-niseko",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://setsuniseko.com/en/",
+        "https://setsuniseko.com/en/suites/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/niseko-premium/setsu-niseko/view-3.webp",
+      "downloadUrl": "https://setsuniseko.com/wp-content/uploads/Shinonome-Niseko-900x600.jpg",
+      "sourcePage": "https://setsuniseko.com/en/",
+      "candidateContext": "Shinonome Niseko",
+      "sha256": "47fbf824fd4314bed8e5d07b0b86ff150cb776f32ff1af125fd7e09bfde11d05",
+      "bytes": 30728,
+      "originalSize": [
+        900,
+        600
+      ],
+      "outputSize": [
+        900,
+        600
+      ]
+    },
+    {
+      "property": "AYA Niseko",
+      "propertyKey": "aya-niseko",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.ayaniseko.com/",
+        "https://www.ayaniseko.com/accommodation/residences"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/niseko-premium/aya-niseko/view-1.webp",
+      "downloadUrl": "https://d2zvpvpg8wrzfh.cloudfront.net/exterior/Exterior_7.jpg",
+      "sourcePage": "https://www.ayaniseko.com/",
+      "candidateContext": "Official page sharing image",
+      "sha256": "73527d04eaaa3c278b62c8f84489bbf08918133ad29990ed9a1ebf44ae4ec0d5",
+      "bytes": 393342,
+      "originalSize": [
+        1500,
+        1124
+      ],
+      "outputSize": [
+        1500,
+        1124
+      ]
+    },
+    {
+      "property": "AYA Niseko",
+      "propertyKey": "aya-niseko",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.ayaniseko.com/",
+        "https://www.ayaniseko.com/accommodation/residences"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/niseko-premium/aya-niseko/view-2.webp",
+      "downloadUrl": "https://d2zvpvpg8wrzfh.cloudfront.net/units/Residences/gcp_residencea_8.jpg",
+      "sourcePage": "https://www.ayaniseko.com/accommodation/residences",
+      "candidateContext": "Official page sharing image",
+      "sha256": "0f5d52974e26562c7f1131d4f609b28db5d3d386dea100fa3bfdcdfddc7ee879",
+      "bytes": 90844,
+      "originalSize": [
+        1200,
+        784
+      ],
+      "outputSize": [
+        1200,
+        784
+      ]
+    },
+    {
+      "property": "AYA Niseko",
+      "propertyKey": "aya-niseko",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.ayaniseko.com/",
+        "https://www.ayaniseko.com/accommodation/residences"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/niseko-premium/aya-niseko/view-3.webp",
+      "downloadUrl": "https://d2zvpvpg8wrzfh.cloudfront.net/units/Residences/_1088x650_crop_center-center_95_none/residence-b-5_180508_154142.jpg",
+      "sourcePage": "https://www.ayaniseko.com/accommodation/residences",
+      "candidateContext": "Residence B 5",
+      "sha256": "e39d348afd33f57d0eccac7ad50174772b2a56029c86b40005abcb06ada5f5ff",
+      "bytes": 69698,
+      "originalSize": [
+        1088,
+        650
+      ],
+      "outputSize": [
+        1088,
+        650
+      ]
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "placeLabel": "Mount Yotei",
+      "searchQuery": "Mount Yotei Hokkaido",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-2",
+      "placeLabel": "Niseko Grand Hirafu",
+      "searchQuery": "Niseko Grand Hirafu",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/niseko-premium/destination/scene-2.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Hirafu2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Hirafu2.jpg",
+      "candidateContext": "File:Hirafu2.jpg",
+      "sha256": "bdb3f4031edc989980a47b1584dd70006c1049bf5d7234a89f5d7c9d17dae4ea",
+      "bytes": 47790,
+      "originalSize": [
+        1024,
+        768
+      ],
+      "outputSize": [
+        1024,
+        768
+      ],
+      "credit": "No machine-readable author provided. <a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Oga~commonswiki\" title=\"User:Oga~commonswiki\">Oga~commonswiki</a> assumed (based on copyright claims).\n<link rel=\"mw:PageProp/Category\" href=\"./Category:Files_with_no_machine-readable_source\">",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    {
+      "key": "scene-3",
+      "placeLabel": "Niseko Hanazono",
+      "searchQuery": "Niseko Hanazono Hokkaido",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-4",
+      "placeLabel": "Niseko Village",
+      "searchQuery": "Niseko Village",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/niseko-premium/destination/scene-4.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/%E3%83%8B%E3%82%BB%E3%82%B3%E6%9D%B1%E5%B1%B1%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B42.JPG/1920px-%E3%83%8B%E3%82%BB%E3%82%B3%E6%9D%B1%E5%B1%B1%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B42.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:ニセコ東山スキー場2.JPG",
+      "candidateContext": "File:ニセコ東山スキー場2.JPG",
+      "sha256": "0b79e8a7da62aaea24cee370a25d39156936d655005b8509ef9c153c5cb1fef7",
+      "bytes": 183688,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "credit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Wakimasa&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Wakimasa (page does not exist)\">Wakimasa</a>",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "key": "scene-5",
+      "placeLabel": "Niseko Annupuri",
+      "searchQuery": "Niseko Annupuri",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/niseko-premium/destination/scene-5.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/%E3%83%8B%E3%82%BB%E3%82%B3%E8%8A%B1%E5%9C%92%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4.JPG/1920px-%E3%83%8B%E3%82%BB%E3%82%B3%E8%8A%B1%E5%9C%92%E3%82%B9%E3%82%AD%E3%83%BC%E5%A0%B4.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:ニセコ花園スキー場.JPG",
+      "candidateContext": "File:ニセコ花園スキー場.JPG",
+      "sha256": "4c106bf8d343071a242d0a6d66dbec8fa1a10658a5c3ffc77451fb858dd7302e",
+      "bytes": 206194,
+      "originalSize": [
+        1920,
+        1275
+      ],
+      "outputSize": [
+        1700,
+        1129
+      ],
+      "credit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Wakimasa&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Wakimasa (page does not exist)\">Wakimasa</a>",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "key": "scene-6",
+      "placeLabel": "Kutchan",
+      "searchQuery": "Kutchan Hokkaido",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/niseko-premium/destination/scene-6.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Lake_Hangetsu.jpg/1920px-Lake_Hangetsu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lake_Hangetsu.jpg",
+      "candidateContext": "File:Lake Hangetsu.jpg",
+      "sha256": "09bb6e4b3dc0e227f74f9017f8729a03b1bdb6f9b0d118ae4ef09630a2a96e83",
+      "bytes": 338428,
+      "originalSize": [
+        1920,
+        1281
+      ],
+      "outputSize": [
+        1700,
+        1134
+      ],
+      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Yasu\" title=\"User:Yasu\">Yasu</a> (<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User_talk:Yasu\" title=\"User talk:Yasu\"><span class=\"signature-talk\">talk</span></a>)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "key": "scene-7",
+      "placeLabel": "Niseko winter",
+      "searchQuery": "Niseko Hokkaido winter",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-8",
+      "placeLabel": "Niseko forest",
+      "searchQuery": "Niseko Hokkaido forest",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-9",
+      "placeLabel": "Hokkaido onsen",
+      "searchQuery": "Niseko Hokkaido onsen",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    }
+  ]
+}

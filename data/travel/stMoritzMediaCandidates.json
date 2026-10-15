@@ -1,0 +1,511 @@
+{
+  "destination": "st-moritz",
+  "generatedAt": "2026-10-15T11:53:25.165383+00:00",
+  "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
+  "expectedHotelPhotos": 12,
+  "expectedDestinationPhotos": 9,
+  "downloadedHotelCandidates": 10,
+  "downloadedDestinationCandidates": 7,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "hotels": [
+    {
+      "property": "Badrutt's Palace Hotel",
+      "propertyKey": "badrutts-palace",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://badruttspalace.com/en/winter/",
+        "https://badruttspalace.com/en/winter/accommodation/rooms/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/st-moritz-premium/badrutts-palace/view-1.webp",
+      "downloadUrl": "https://badruttspalace.com/media/jq0jxnwc/badrutts-palace-rooms-signature-double-room-lake-view-with-balcony.jpg?width=1920&height=1080&format=webp&v=1dc2703803feb10",
+      "sourcePage": "https://badruttspalace.com/en/winter/accommodation/rooms/",
+      "candidateContext": "Badrutts Palace Rooms Signature Double Room Lake View With Balcony",
+      "sha256": "94934bdc09240ca829995f249c6b74d3159fc0d5d31a5e0997d990101768b1ae",
+      "bytes": 116788,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
+    },
+    {
+      "property": "Badrutt's Palace Hotel",
+      "propertyKey": "badrutts-palace",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://badruttspalace.com/en/winter/",
+        "https://badruttspalace.com/en/winter/accommodation/rooms/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/st-moritz-premium/badrutts-palace/view-2.webp",
+      "downloadUrl": "https://badruttspalace.com/media/ivqldn5d/badrutts-palace-rooms-signature-double-room-lake-view-with-balcony-view-balcony.jpg?rxy=0.3383458646616541,0.9949874686716792&width=1920&height=1080&format=webp&v=1dc531d75e06730",
+      "sourcePage": "https://badruttspalace.com/en/winter/accommodation/rooms/",
+      "candidateContext": "Badrutts Palace Rooms Signature Double Room Lake View With Balcony View Balcony",
+      "sha256": "8d7e67909bf34d702d19a3ac42ffe5ecfd248f2b62f029263f77375d1b14501f",
+      "bytes": 268168,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
+    },
+    {
+      "property": "Badrutt's Palace Hotel",
+      "propertyKey": "badrutts-palace",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://badruttspalace.com/en/winter/",
+        "https://badruttspalace.com/en/winter/accommodation/rooms/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/st-moritz-premium/badrutts-palace/view-3.webp",
+      "downloadUrl": "https://badruttspalace.com/media/twtjswmu/badrutts-palace-rooms-signature-double-room-lake-view-with-balcony-bathroom.jpg?width=1920&height=1080&format=webp&v=1dc2703808187f0",
+      "sourcePage": "https://badruttspalace.com/en/winter/accommodation/rooms/",
+      "candidateContext": "Badrutts Palace Rooms Signature Double Room Lake View With Balcony Bathroom",
+      "sha256": "f582bec669f53e4f1e42f17db274891c4d7cceb6aaf265689b9a517ee49a6d9e",
+      "bytes": 97230,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
+    },
+    {
+      "property": "Kulm Hotel St. Moritz",
+      "propertyKey": "kulm-hotel",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.kulm.com/en/winter/hotel",
+        "https://www.kulm.com/en/winter/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/st-moritz-premium/kulm-hotel/view-1.webp",
+      "downloadUrl": "https://media.kulm.com/wp-content/uploads/sites/4/2024/08/27070841/image-2-1024x523.png",
+      "sourcePage": "https://www.kulm.com/en/winter/",
+      "candidateContext": "Official page sharing image",
+      "sha256": "da4783653e84b026d16de5e20edf7976106b535724bdba12a22039585f6e9aae",
+      "bytes": 107648,
+      "originalSize": [
+        1024,
+        523
+      ],
+      "outputSize": [
+        1024,
+        523
+      ]
+    },
+    {
+      "property": "Kulm Hotel St. Moritz",
+      "propertyKey": "kulm-hotel",
+      "key": "view-2",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.kulm.com/en/winter/hotel",
+        "https://www.kulm.com/en/winter/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "Kulm Hotel St. Moritz",
+      "propertyKey": "kulm-hotel",
+      "key": "view-3",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.kulm.com/en/winter/hotel",
+        "https://www.kulm.com/en/winter/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "Suvretta House",
+      "propertyKey": "suvretta-house",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://suvrettahouse.ch/en/startseite-winter",
+        "https://suvrettahouse.ch/en/rooms-suites"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/st-moritz-premium/suvretta-house/view-1.webp",
+      "downloadUrl": "https://suvrettahouse.ch/en/img/asset/YXNzZXRzL2wxMDYyNzYzLmpwZw/l1062763.jpg?w=1440&h=960&fit=crop&fm=webp&s=5ba5516f5a60afa3cc7e1fdf7cab5bcb",
+      "sourcePage": "https://suvrettahouse.ch/en/startseite-winter",
+      "candidateContext": "",
+      "sha256": "a89d89416e1d07142bb42c409642d169183971c5eb4c4c32510ee6e99924913a",
+      "bytes": 94078,
+      "originalSize": [
+        1440,
+        960
+      ],
+      "outputSize": [
+        1440,
+        960
+      ]
+    },
+    {
+      "property": "Suvretta House",
+      "propertyKey": "suvretta-house",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://suvrettahouse.ch/en/startseite-winter",
+        "https://suvrettahouse.ch/en/rooms-suites"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/st-moritz-premium/suvretta-house/view-2.webp",
+      "downloadUrl": "https://suvrettahouse.ch/en/img/asset/YXNzZXRzL2wxMDYyNzYzLmpwZw/l1062763.jpg?fit=crop&fm=webp&s=0361b410988a86adf24b89077c5168bd",
+      "sourcePage": "https://suvrettahouse.ch/en/startseite-winter",
+      "candidateContext": "",
+      "sha256": "da5a56dcd952f1e3ae6740da9d3845b04d4e41d5378a37e24224150e2a90f08f",
+      "bytes": 139606,
+      "originalSize": [
+        9520,
+        6336
+      ],
+      "outputSize": [
+        1700,
+        1131
+      ]
+    },
+    {
+      "property": "Suvretta House",
+      "propertyKey": "suvretta-house",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://suvrettahouse.ch/en/startseite-winter",
+        "https://suvrettahouse.ch/en/rooms-suites"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/st-moritz-premium/suvretta-house/view-3.webp",
+      "downloadUrl": "https://suvrettahouse.ch/en/img/asset/YXNzZXRzL2wxMDYzMDAzXy5qcGc/l1063003_.jpg?w=1440&h=960&fit=crop&fm=webp&s=286fb6d3318c4fadb0b7630f6635d8e7",
+      "sourcePage": "https://suvrettahouse.ch/en/startseite-winter",
+      "candidateContext": "",
+      "sha256": "9aeff1072c6843579310bb9f9093c0f233f6a2a7ba4585e520afba279e31ea8b",
+      "bytes": 60658,
+      "originalSize": [
+        1440,
+        960
+      ],
+      "outputSize": [
+        1440,
+        960
+      ]
+    },
+    {
+      "property": "Carlton Hotel St. Moritz",
+      "propertyKey": "carlton-hotel",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://tschuggencollection.ch/en/hotel/carlton-hotel",
+        "https://tschuggencollection.ch/en/hotel/carlton-hotel/rooms-suites"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/st-moritz-premium/carlton-hotel/view-1.webp",
+      "downloadUrl": "https://images.ctfassets.net/61in5m6adgj1/786GRG1S5aRwpbixTmwZn7/c37e1b77f3006eb1402b913b4301c93c/Carlton_Penthouse-9.jpg?fm=webp&w=1008&h=550&q=90&fit=fill&f=center",
+      "sourcePage": "https://tschuggencollection.ch/en/hotel/carlton-hotel",
+      "candidateContext": "Elegant hotel bedroom with tufted headboard, white bedding, exposed beams, desk area, and warm lighting throughout.",
+      "sha256": "28da2aee6c926462b996bab0ecf6e37fcf3974edf570542c5cf0bece712008e1",
+      "bytes": 87560,
+      "originalSize": [
+        1008,
+        550
+      ],
+      "outputSize": [
+        1008,
+        550
+      ]
+    },
+    {
+      "property": "Carlton Hotel St. Moritz",
+      "propertyKey": "carlton-hotel",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://tschuggencollection.ch/en/hotel/carlton-hotel",
+        "https://tschuggencollection.ch/en/hotel/carlton-hotel/rooms-suites"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/st-moritz-premium/carlton-hotel/view-2.webp",
+      "downloadUrl": "https://images.ctfassets.net/61in5m6adgj1/1PKettjM0FSrYEdUgklVxu/29f4e293b359f5f669984595268b1f49/Corner_Junior_Suite_Carlton_Hotel_St._Moritz.jpg?fm=webp&w=1008&h=550&q=90&fit=fill&f=center",
+      "sourcePage": "https://tschuggencollection.ch/en/hotel/carlton-hotel",
+      "candidateContext": "Spacious hotel suite with a gray sectional sofa, armchair, coffee table, blue curtains, and sloped ceilings.",
+      "sha256": "e799e0f9551ddceb643b61364a4e0fd69df80940bca489458d0c413868c074e1",
+      "bytes": 58736,
+      "originalSize": [
+        1008,
+        550
+      ],
+      "outputSize": [
+        1008,
+        550
+      ]
+    },
+    {
+      "property": "Carlton Hotel St. Moritz",
+      "propertyKey": "carlton-hotel",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://tschuggencollection.ch/en/hotel/carlton-hotel",
+        "https://tschuggencollection.ch/en/hotel/carlton-hotel/rooms-suites"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/st-moritz-premium/carlton-hotel/view-3.webp",
+      "downloadUrl": "https://images.ctfassets.net/61in5m6adgj1/1FfJ8LzfMnbIhsljpqVi7w/e0905569c5f4eab792d7615791e85b56/Carlton_St._Moritz_-_Da_Vittorio-_2025_-_Copyright_Olivia_Pulver.jpg?fm=webp&w=1008&h=550&q=90&fit=fill&f=center",
+      "sourcePage": "https://tschuggencollection.ch/en/hotel/carlton-hotel",
+      "candidateContext": "Elegant restaurant table with white linens, wine glasses, and floral centerpiece beneath Asian-inspired artwork on textured wall.",
+      "sha256": "1b8bad3d2da7e9210727880dbbe6f65292db9ce0e19af83599280473b61ba707",
+      "bytes": 39802,
+      "originalSize": [
+        1008,
+        550
+      ],
+      "outputSize": [
+        1008,
+        550
+      ]
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "placeLabel": "St. Moritz lake",
+      "searchQuery": "Lake St Moritz",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/st-moritz-premium/destination/scene-1.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/La_Gondla.jpg/1920px-La_Gondla.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:La_Gondla.jpg",
+      "candidateContext": "File:La Gondla.jpg",
+      "sha256": "07a1ce979f4eee8cc0a7e465a40f7cd7b1be4e17affdb964d7c444b30db2d6be",
+      "bytes": 392566,
+      "originalSize": [
+        1920,
+        1211
+      ],
+      "outputSize": [
+        1700,
+        1072
+      ],
+      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Kulmalukko\" title=\"User:Kulmalukko\">Tiia Monto</a>",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "key": "scene-2",
+      "placeLabel": "St. Moritz Dorf",
+      "searchQuery": "St Moritz village",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/st-moritz-premium/destination/scene-2.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/St._Moritz_village_and_baths_Grisons_Switzerland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:St._Moritz_village_and_baths_Grisons_Switzerland.jpg",
+      "candidateContext": "File:St. Moritz village and baths Grisons Switzerland.jpg",
+      "sha256": "69df8db429520a49aad9356c4231c5f68dbdbdfd9a4073afde5fb537736da2f7",
+      "bytes": 89716,
+      "originalSize": [
+        1069,
+        835
+      ],
+      "outputSize": [
+        1069,
+        835
+      ],
+      "credit": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.flickr.com/people/28496558@N02\" class=\"external text\">Snapshots Of  The Past</a>",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    {
+      "key": "scene-3",
+      "placeLabel": "St. Moritz Bad",
+      "searchQuery": "St Moritz Bad",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/st-moritz-premium/destination/scene-3.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/St._Moritz_Forum_Paracelsus.JPG/1920px-St._Moritz_Forum_Paracelsus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:St._Moritz_Forum_Paracelsus.JPG",
+      "candidateContext": "File:St. Moritz Forum Paracelsus.JPG",
+      "sha256": "c738e583c5aa6e3cc901c4fa8c804f94fd41de121f797daa95b7bd7a697c7d0f",
+      "bytes": 285562,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Paebi\" title=\"User:Paebi\">Paebi</a>",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "key": "scene-4",
+      "placeLabel": "Suvretta",
+      "searchQuery": "Suvretta St Moritz",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/st-moritz-premium/destination/scene-4.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Via_Suvretta.jpg/1920px-Via_Suvretta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Via_Suvretta.jpg",
+      "candidateContext": "File:Via Suvretta.jpg",
+      "sha256": "4d3a9673b19626da2fd50fe51439321e8a32b0481d3812025fda7640a49e4df1",
+      "bytes": 340838,
+      "originalSize": [
+        1920,
+        1216
+      ],
+      "outputSize": [
+        1700,
+        1077
+      ],
+      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Kulmalukko\" title=\"User:Kulmalukko\">Tiia Monto</a>",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "key": "scene-5",
+      "placeLabel": "Corviglia",
+      "searchQuery": "Corviglia St Moritz",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-6",
+      "placeLabel": "Celerina",
+      "searchQuery": "Celerina Switzerland",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/st-moritz-premium/destination/scene-6.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Lake_of_Staz.jpg/1920px-Lake_of_Staz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lake_of_Staz.jpg",
+      "candidateContext": "File:Lake of Staz.jpg",
+      "sha256": "99f1c6da703bd0a7dff59a10fe4767082b5d5f4fc62c5ef38df476424a6204e0",
+      "bytes": 408374,
+      "originalSize": [
+        1920,
+        996
+      ],
+      "outputSize": [
+        1700,
+        882
+      ],
+      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Kulmalukko\" title=\"User:Kulmalukko\">Tiia Monto</a>",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "key": "scene-7",
+      "placeLabel": "Pontresina",
+      "searchQuery": "Pontresina Engadin",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-8",
+      "placeLabel": "St. Moritz winter",
+      "searchQuery": "St Moritz winter",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/st-moritz-premium/destination/scene-8.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/StMoritz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:StMoritz.jpg",
+      "candidateContext": "File:StMoritz.jpg",
+      "sha256": "bef4ffb15c0c4b4ab2b75a4c3ef25d223cf6224f9096431f2afdc7320c799711",
+      "bytes": 99384,
+      "originalSize": [
+        1024,
+        738
+      ],
+      "outputSize": [
+        1024,
+        738
+      ],
+      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Alps?action=edit&amp;redlink=1\" title=\"User:Alps (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:Alps\"]}}'>Alps</a>",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    {
+      "key": "scene-9",
+      "placeLabel": "Engadin landscape",
+      "searchQuery": "Engadin Swiss Alps",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/st-moritz-premium/destination/scene-9.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Rockglacier_Corvatsch%2C_Permafrost.jpg/1920px-Rockglacier_Corvatsch%2C_Permafrost.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rockglacier_Corvatsch,_Permafrost.jpg",
+      "candidateContext": "File:Rockglacier Corvatsch, Permafrost.jpg",
+      "sha256": "398a7d1517d921a43f57d2a2d9ec34441b3cdcae128b59f9160b1e20848691ff",
+      "bytes": 563922,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Matti&amp;Keti\" title=\"User:Matti&amp;Keti\">Matti&amp;Keti</a>; Lorenz.King at Giessen.university.de",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    }
+  ]
+}

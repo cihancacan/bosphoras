@@ -1,0 +1,437 @@
+{
+  "destination": "aspen",
+  "generatedAt": "2026-10-15T11:53:39.801440+00:00",
+  "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
+  "expectedHotelPhotos": 12,
+  "expectedDestinationPhotos": 9,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 1,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "hotels": [
+    {
+      "property": "The Little Nell",
+      "propertyKey": "the-little-nell",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.thelittlenell.com/",
+        "https://www.thelittlenell.com/stay/rooms"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/aspen-premium/the-little-nell/view-1.webp",
+      "downloadUrl": "https://www.thelittlenell.com/-/media/thelittlenell/images/homepage-body-carousel/luxury-suites-home-body-slide-1/tln_hp_dining_e47.jpeg?h=654&iar=0&w=1560&hash=83468C4EDC00F46DDC189C7B04ABDC1F",
+      "sourcePage": "https://www.thelittlenell.com/",
+      "candidateContext": "food on table at element 47",
+      "sha256": "9a33b828ed1122447ae495a7f15bb8d692b707be6394f1ac6b9d99feb1836f2d",
+      "bytes": 215198,
+      "originalSize": [
+        1560,
+        654
+      ],
+      "outputSize": [
+        1560,
+        654
+      ]
+    },
+    {
+      "property": "The Little Nell",
+      "propertyKey": "the-little-nell",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.thelittlenell.com/",
+        "https://www.thelittlenell.com/stay/rooms"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/aspen-premium/the-little-nell/view-2.webp",
+      "downloadUrl": "https://www.thelittlenell.com/-/media/thelittlenell/images/homepage-body-carousel/luxury-suites-home-body-slide-1/tln_hp_dining_winebar.jpeg?h=654&iar=0&w=1560&hash=7DFCE20C3798A1B00C972E7CBA53AF2F",
+      "sourcePage": "https://www.thelittlenell.com/",
+      "candidateContext": "wine bar at the little nell",
+      "sha256": "6371dff447ee88af5c9cd1d2965dde5c56974239b1a0b792970b88c6b7a526c3",
+      "bytes": 147160,
+      "originalSize": [
+        1560,
+        654
+      ],
+      "outputSize": [
+        1560,
+        654
+      ]
+    },
+    {
+      "property": "The Little Nell",
+      "propertyKey": "the-little-nell",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.thelittlenell.com/",
+        "https://www.thelittlenell.com/stay/rooms"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/aspen-premium/the-little-nell/view-3.webp",
+      "downloadUrl": "https://www.thelittlenell.com/-/media/thelittlenell/images/homepage-body-carousel/luxury-suites-home-body-slide-1/tln_hp_dining_ajax.jpeg?h=654&iar=0&w=1560&hash=92618D0DDC687BD5047B042CEFDC0C11",
+      "sourcePage": "https://www.thelittlenell.com/",
+      "candidateContext": "food on table inside ajax overlooking aspen mountain",
+      "sha256": "407d1dd7779d35a327fba87ab295c8a73a345d9f4acb57e2353cb12262a8eeb7",
+      "bytes": 112392,
+      "originalSize": [
+        1560,
+        654
+      ],
+      "outputSize": [
+        1560,
+        654
+      ]
+    },
+    {
+      "property": "Hotel Jerome",
+      "propertyKey": "hotel-jerome",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://auberge.com/hotel-jerome/",
+        "https://auberge.com/hotel-jerome/stay/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/aspen-premium/hotel-jerome/view-1.webp",
+      "downloadUrl": "https://dreffui1gbt6t.cloudfront.net/images/hj/hj-aspensummer-slider-7.jpg",
+      "sourcePage": "https://auberge.com/hotel-jerome/",
+      "candidateContext": "Official page sharing image",
+      "sha256": "0b8d87f52c4ad071f8ae8b7d6f37b780d22f89368be67ce7db2d7597ea83080a",
+      "bytes": 278714,
+      "originalSize": [
+        1500,
+        844
+      ],
+      "outputSize": [
+        1500,
+        844
+      ]
+    },
+    {
+      "property": "Hotel Jerome",
+      "propertyKey": "hotel-jerome",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://auberge.com/hotel-jerome/",
+        "https://auberge.com/hotel-jerome/stay/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/aspen-premium/hotel-jerome/view-2.webp",
+      "downloadUrl": "https://dreffui1gbt6t.cloudfront.net/images/hj/HJ_Home_Spring-2024_Hero.jpg",
+      "sourcePage": "https://auberge.com/hotel-jerome/",
+      "candidateContext": "Embedded image in official property source",
+      "sha256": "6022310ee0a20277d88884521babc9a2b63501502d484b700740c98f6f279f1d",
+      "bytes": 233396,
+      "originalSize": [
+        2000,
+        1125
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
+    },
+    {
+      "property": "Hotel Jerome",
+      "propertyKey": "hotel-jerome",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://auberge.com/hotel-jerome/",
+        "https://auberge.com/hotel-jerome/stay/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/aspen-premium/hotel-jerome/view-3.webp",
+      "downloadUrl": "https://dreffui1gbt6t.cloudfront.net/images/hj/hj-home-winter-video-poster.jpg",
+      "sourcePage": "https://auberge.com/hotel-jerome/",
+      "candidateContext": "Embedded image in official property source",
+      "sha256": "beb7a9ea9f444db2cbd1f254926b963c83e940c5e4653c7da88ecf352e193bc8",
+      "bytes": 129714,
+      "originalSize": [
+        2000,
+        1125
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
+    },
+    {
+      "property": "The St. Regis Aspen Resort",
+      "propertyKey": "st-regis-aspen",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/overview/",
+        "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/rooms/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/aspen-premium/st-regis-aspen/view-1.webp",
+      "downloadUrl": "https://www.marriott.com/content/dam/marriott-digital/digital-merchandising/us-canada/en_us/cobrand-cards/assets/pdt-0513-DCA-125892172130576.png",
+      "sourcePage": "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/rooms/",
+      "candidateContext": "Credit Card",
+      "sha256": "4abc5b45726987f2168cb21dc9095ef3c7d66817c88f6973b38a5e711db58693",
+      "bytes": 73176,
+      "originalSize": [
+        2000,
+        1260
+      ],
+      "outputSize": [
+        1700,
+        1071
+      ]
+    },
+    {
+      "property": "The St. Regis Aspen Resort",
+      "propertyKey": "st-regis-aspen",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/overview/",
+        "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/rooms/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/aspen-premium/st-regis-aspen/view-2.webp",
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/ASEXR/asexr-deluxe-balcony-4667-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1920px:*",
+      "sourcePage": "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/rooms/",
+      "candidateContext": "",
+      "sha256": "abbbc1884bd7641d3446ce7c819bd3f6e662d59f3568f155b15064d8d86863e3",
+      "bytes": 204848,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ]
+    },
+    {
+      "property": "The St. Regis Aspen Resort",
+      "propertyKey": "st-regis-aspen",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/overview/",
+        "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/rooms/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/aspen-premium/st-regis-aspen/view-3.webp",
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/ASEXR/asexr-deluxe-balcony-4667-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1200px:*",
+      "sourcePage": "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/rooms/",
+      "candidateContext": "",
+      "sha256": "15227101af33eed6c3ce155c304b30bb972690f22006295cf75f8cc4b88d1a6d",
+      "bytes": 133692,
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ]
+    },
+    {
+      "property": "W Aspen",
+      "propertyKey": "w-aspen",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.marriott.com/en-us/hotels/asewh-w-aspen/overview/",
+        "https://www.marriott.com/en-us/hotels/asewh-w-aspen/rooms/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/aspen-premium/w-aspen/view-1.webp",
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/ASEWH/asewh-exterior-4620-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+      "sourcePage": "https://www.marriott.com/en-us/hotels/asewh-w-aspen/rooms/",
+      "candidateContext": "Official page sharing image",
+      "sha256": "31ca16bc8eb384346ca9edff8a5705bcba68b710db57be580f2126e4838efa66",
+      "bytes": 305658,
+      "originalSize": [
+        1336,
+        751
+      ],
+      "outputSize": [
+        1336,
+        751
+      ]
+    },
+    {
+      "property": "W Aspen",
+      "propertyKey": "w-aspen",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.marriott.com/en-us/hotels/asewh-w-aspen/overview/",
+        "https://www.marriott.com/en-us/hotels/asewh-w-aspen/rooms/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/aspen-premium/w-aspen/view-2.webp",
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/ASEWH/asewh-king-guestroom-3896-hor-feat.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1920px:*",
+      "sourcePage": "https://www.marriott.com/en-us/hotels/asewh-w-aspen/rooms/",
+      "candidateContext": "Aspen Ski Resort Guest Room",
+      "sha256": "c75a1dce1e6aecdb42f7078dc1ce9942f5854034bc861a1760bd8792bdfdcfd5",
+      "bytes": 109634,
+      "originalSize": [
+        1920,
+        768
+      ],
+      "outputSize": [
+        1700,
+        680
+      ]
+    },
+    {
+      "property": "W Aspen",
+      "propertyKey": "w-aspen",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.marriott.com/en-us/hotels/asewh-w-aspen/overview/",
+        "https://www.marriott.com/en-us/hotels/asewh-w-aspen/rooms/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/aspen-premium/w-aspen/view-3.webp",
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/ASEWH/asewh-exterior-wsignage-snowing-7543-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1300px:*",
+      "sourcePage": "https://www.marriott.com/en-us/hotels/asewh-w-aspen/rooms/",
+      "candidateContext": "",
+      "sha256": "bf6c15ddb24b21ab6f5f462d6080255354979a25dfea8301e01ec60166d8cdf6",
+      "bytes": 260682,
+      "originalSize": [
+        1300,
+        866
+      ],
+      "outputSize": [
+        1300,
+        866
+      ]
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "placeLabel": "Aspen Mountain",
+      "searchQuery": "Aspen Mountain Colorado",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/aspen-premium/destination/scene-1.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Skiers_on_Aspen_Mountain%2C_Colorado_in_1961.jpg/1920px-Skiers_on_Aspen_Mountain%2C_Colorado_in_1961.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Skiers_on_Aspen_Mountain,_Colorado_in_1961.jpg",
+      "candidateContext": "File:Skiers on Aspen Mountain, Colorado in 1961.jpg",
+      "sha256": "1cf550d330b51b6ec7b94c0388ec54927dc4b1957aefa9c5afba81afb5f30fc7",
+      "bytes": 141154,
+      "originalSize": [
+        1920,
+        1419
+      ],
+      "outputSize": [
+        1691,
+        1250
+      ],
+      "credit": "<a href=\"//commons.wikimedia.org/wiki/User:Buaidh\" title=\"User:Buaidh\">Buaidh</a>",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    {
+      "key": "scene-2",
+      "placeLabel": "Aspen downtown",
+      "searchQuery": "Aspen Colorado town",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-3",
+      "placeLabel": "Silver Queen Gondola",
+      "searchQuery": "Aspen Silver Queen Gondola",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-4",
+      "placeLabel": "Aspen Main Street",
+      "searchQuery": "Aspen Main Street",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-5",
+      "placeLabel": "Aspen West End",
+      "searchQuery": "Aspen historic houses Colorado",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-6",
+      "placeLabel": "Aspen Highlands",
+      "searchQuery": "Aspen Highlands Colorado",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-7",
+      "placeLabel": "Buttermilk ski mountain",
+      "searchQuery": "Buttermilk Aspen Colorado",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-8",
+      "placeLabel": "Snowmass Village",
+      "searchQuery": "Snowmass Colorado",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-9",
+      "placeLabel": "Maroon Bells",
+      "searchQuery": "Maroon Bells Aspen Colorado",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    }
+  ]
+}
