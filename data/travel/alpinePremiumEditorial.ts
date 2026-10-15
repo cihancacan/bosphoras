@@ -1,4 +1,5 @@
 import type { BodrumHotelEditorial, BodrumPremiumPhoto } from './bodrumPremiumEditorial';
+import { mountainBatchHotelEditorialByCity,mountainBatchAreaVisualsByCity,mountainBatchAvailablePhotoPathsByCity } from './mountainBatchPremiumEditorial';
 import { stMoritzGuide } from './stMoritzGuide';
 import stMoritzManifest from './stMoritzMediaCandidates.json';
 import { aspenGuide } from './aspenGuide';
@@ -9,7 +10,7 @@ import nisekoManifest from './nisekoMediaCandidates.json';
 /** Images are candidate media, not verified rights. Media with editorial warnings MUST stay hidden.
  * These guides are staged on an unbuilt branch, noindex and not approved for commercial publication.
  */
-type Candidate={key:string;localPath?:string;sourcePage?:string;status:string;visualQaWarning?:string;candidateContext?:string;propertyKey?:string;credit?:string};
+type Candidate={key:string;localPath?:string;sourcePage?:string;status:string;visualQaWarning?:string;candidateContext?:string;propertyKey?:string;credit?:string;visuallyVerified?:boolean;commercialRightsCleared?:boolean};
 type AlpinePlace = {name:string;enName:string};
 const areaNames={
  'st-moritz':['scene-2','scene-3','scene-4','scene-5','scene-7'],
@@ -24,7 +25,7 @@ function sourcePhoto(x:Candidate,place:string,locale:'fr'|'en'):BodrumPremiumPho
     sourcePage:x.sourcePage!,credit: (x.credit||place)+' · droits de diffusion commerciale à confirmer'};
 }
 function valid(c:Candidate):boolean{
- return c.status==='candidate_needs_visual_review' && !!c.localPath && !!c.sourcePage && !c.visualQaWarning;
+ return c.status==='candidate_needs_visual_review' && c.visuallyVerified===true && c.commercialRightsCleared===true && !!c.localPath && !!c.sourcePage && !c.visualQaWarning;
 }
 function hotelIndex(city:{hotels:readonly {name:string;officialUrl:string;fr:string;en:string;frWatch:string;enWatch:string}[]},
   media:readonly Candidate[]):Record<string,BodrumHotelEditorial>{
@@ -48,15 +49,18 @@ function areaIndex(city:{areas:readonly AlpinePlace[]},media:readonly Candidate[
 export const alpineHotelEditorialByCity={
  'st-moritz':hotelIndex(stMoritzGuide,stMoritzManifest.hotels),
  aspen:hotelIndex(aspenGuide,aspenManifest.hotels),
- niseko:hotelIndex(nisekoGuide,nisekoManifest.hotels)
+ niseko:hotelIndex(nisekoGuide,nisekoManifest.hotels),
+  ...mountainBatchHotelEditorialByCity
 } as const;
 export const alpineAreaVisualsByCity={
  'st-moritz':areaIndex(stMoritzGuide,stMoritzManifest.destinationScenes,'st-moritz'),
  aspen:areaIndex(aspenGuide,aspenManifest.destinationScenes,'aspen'),
- niseko:areaIndex(nisekoGuide,nisekoManifest.destinationScenes,'niseko')
+ niseko:areaIndex(nisekoGuide,nisekoManifest.destinationScenes,'niseko'),
+  ...mountainBatchAreaVisualsByCity
 } as const;
 export const alpineAvailablePhotoPathsByCity={
  'st-moritz':new Set([...stMoritzManifest.hotels,...stMoritzManifest.destinationScenes].filter(valid).map(x=>x.localPath!)),
  aspen:new Set([...aspenManifest.hotels,...aspenManifest.destinationScenes].filter(valid).map(x=>x.localPath!)),
- niseko:new Set([...nisekoManifest.hotels,...nisekoManifest.destinationScenes].filter(valid).map(x=>x.localPath!))
+ niseko:new Set([...nisekoManifest.hotels,...nisekoManifest.destinationScenes].filter(valid).map(x=>x.localPath!)),
+  ...mountainBatchAvailablePhotoPathsByCity
 } as const;
