@@ -444,7 +444,8 @@
       ],
       "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Kulmalukko\" title=\"User:Kulmalukko\">Tiia Monto</a>",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "visualQaWarning": "Candidate Lake Staz is not a geographically exact Celerina village scene"
     },
     {
       "key": "scene-7",
@@ -505,7 +506,8 @@
       ],
       "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Matti&amp;Keti\" title=\"User:Matti&amp;Keti\">Matti&amp;Keti</a>; Lorenz.King at Giessen.university.de",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "visualQaWarning": "Corvatsch rock glacier is not a neutral town Engadin panorama"
     }
   ]
 }
