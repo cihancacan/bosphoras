@@ -1,0 +1,14 @@
+# Bosphoras Luxury Stays — contrôle réel des photos
+
+Cette galerie n'est **pas** une preuve de validation des droits ni une autorisation de publication. Les photos sont des candidates sourcées ; chaque image doit correspondre à l'établissement ou au lieu nommé. La direction artistique et les alt FR/EN restent à vérifier.
+
+**Orange** = image candidate à examiner · **Rouge** = manquante ou signalée · **Vert** = validée visuellement, si et seulement si son manifeste l'indique.
+
+- [St. Moritz](st-moritz.md) — 21/21 fichiers candidats, 3 alertes ; [ouvrir l'image seule](st-moritz.jpg)
+- [Aspen](aspen.md) — 21/21 fichiers candidats, 1 alertes ; [ouvrir l'image seule](aspen.jpg)
+- [Niseko](niseko.md) — 21/21 fichiers candidats, 3 alertes ; [ouvrir l'image seule](niseko.jpg)
+- [Megève](megeve.md) — 16/21 fichiers candidats, 5 alertes ; [ouvrir l'image seule](megeve.jpg)
+- [Jackson Hole](jackson-hole.md) — 15/21 fichiers candidats, 4 alertes ; [ouvrir l'image seule](jackson-hole.jpg)
+- [Big Sky](big-sky.md) — 13/21 fichiers candidats, 5 alertes ; [ouvrir l'image seule](big-sky.jpg)
+- [Val d'Isère](val-disere.md) — 17/21 fichiers candidats, 5 alertes ; [ouvrir l'image seule](val-disere.jpg)
+- [Verbier](verbier.md) — 15/21 fichiers candidats, 4 alertes ; [ouvrir l'image seule](verbier.jpg)
