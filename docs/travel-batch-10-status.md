@@ -18,12 +18,12 @@
 | St. Moritz | 4 hôtels | 12/12 | 9/9 | 21/21 | Intégré, alertes de photos |
 | Aspen | 4 hôtels | 12/12 | 9/9 | 21/21 | Intégré, alertes de photos |
 | Niseko | 4 hôtels | 12/12 | 9/9 | 21/21 | Intégré, alertes de photos |
-| Megève | 4 hôtels | 9/12 | 7/9 | 16/21 | Intégré en branche, médias incomplets |
-| Jackson Hole | 4 hôtels | 9/12 | 6/9 | 15/21 | Intégré en branche, médias incomplets |
+| Megève | 4 hôtels | 9/12 | 9/9 | 18/21 | Intégré en branche, médias incomplets |
+| Jackson Hole | 4 hôtels | 9/12 | 8/9 | 17/21 | Intégré en branche, médias incomplets |
 | Big Sky | 4 hôtels | 8/12 | 5/9 | 13/21 | Intégré en branche, photos exclues |
-| Val d'Isère | 4 hôtels | 12/12 | 5/9 | 17/21 | Intégré en branche, saisons à vérifier |
+| Val d'Isère | 4 hôtels | 12/12 | 6/9 | 18/21 | Intégré en branche, saisons à vérifier |
 | Verbier | 4 hôtels | 12/12 | 3/9 | 15/21 | Intégré en branche, doublon exclu |
-| **Total** | | **110/120** | **76/90** | **186/210** | **24 dossiers photo encore manquants, tous droits/visuels à contrôler** |
+| **Total** | | **110/120** | **76/90** | **186/210** | **24 photos encore manquantes ; droits confirmés par l'exploitant, images restantes à contrôler** |
 
 **Droits d'utilisation confirmés par l'exploitant Bosphoras le 15 octobre 2026.** 86 clichés des huit guides alpins ont ensuite passé une première revue visuelle sur planches photo ; les autres restent hors affichage. Les **186 fichiers candidats** ne sont **pas 181 photographies toutes visuellement approuvées**. Certains fichiers téléchargés ont une alerte qui les exclut de l'affichage envisagé. L'ensemble doit encore passer une revue d'identité, de qualité esthétique, de provenance et des droits d'utilisation commerciale.
 
@@ -60,7 +60,7 @@ Le tableau de détail des 29 manques ci-dessous est conservé comme historique d
 | Verbier | Aucune | Place Blanche ; Place Centrale ; Savoleyres ; Les Esserts ; Les Creux ; après-ski | 6 |
 | **Total** | **10** | **19** | **29** |
 
-Les 24 fichiers manquants ne comprennent pas les images déjà téléchargées mais jugées peu pertinentes ou géographiquement douteuses.
+Les 24 fichiers encore manquants ne comprennent pas les images déjà téléchargées mais jugées peu pertinentes ou géographiquement douteuses.
 
 Les dix pages disposent maintenant d'une structure FR/EN sur la branche, avec FAQ. Les huit guides alpins récents ne présentent aucune image tant que les deux approbations photo requises ne sont pas explicitement confirmées. Les deux autres guides (Mustique et Courchevel 1850) restent aussi soumis à vérification finale.
 
