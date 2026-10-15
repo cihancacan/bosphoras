@@ -1,79 +1,39 @@
-# Bosphoras Luxury Stays — point d'avancement du lot de 10
-**Actualisé le 15 octobre 2026 après intégration des dix guides en branche.** Branche `feature/luxury-travel-seo-destinations-20261012`, dépôt `cihancacan/bosphoras`.
+# Bosphoras Luxury Stays — lot des dix destinations
 
-## Couverture honnête
-- **88 destinations** existent dans le catalogue principal ; ce nombre ne signifie pas 88 guides finis.
-- **10 destinations** possèdent chacune un contenu éditorial FR/EN original, des zones de séjour, quatre adresses vérifiables, des conseils et des FAQ.
-- **10 guides FR/EN intégrés techniquement sur la branche** : Mustique, Courchevel 1850, St. Moritz, Aspen, Niseko, Megève, Jackson Hole, Big Sky, Val d'Isère et Verbier.
-- **Aucun des dix n'est approuvé pour publication finale** : droits de réutilisation et validation visuelle des médias à confirmer.
-- **Garde photo stricte :** autorisation confirmée par le propriétaire du projet **et** photo visuellement contrôlée avant affichage ; les données structurées n'exposent pas d'image écartée.
-- Aucun hôtel ne bénéficie d'une disponibilité de réservation garantie via Wink du seul fait d'être cité dans les guides.
+**État au 15 octobre 2026 : un seul déploiement Preview Vercel demandé pour la vérification visuelle finale, production inchangée.**
 
-## Sources photographiques : candidats téléchargés, pas droits validés
+## Livraison technique
 
-| Destination | Établissements | Photos hôtels | Scènes locales | Total WebP candidats | État |
-|---|---:|---:|---:|---:|---|
-| Mustique | 1 hôtel + 3 villas réelles | 12/12 | 9/9 | 21/21 | Intégré, droits/visuel à confirmer |
-| Courchevel 1850 | 4 palaces | 12/12 | 9/9 | 21/21 | Intégré, droits/visuel à confirmer |
-| St. Moritz | 4 hôtels | 12/12 | 9/9 | 21/21 | Intégré, alertes de photos |
-| Aspen | 4 hôtels | 12/12 | 9/9 | 21/21 | Intégré, alertes de photos |
-| Niseko | 4 hôtels | 12/12 | 9/9 | 21/21 | Intégré, alertes de photos |
-| Megève | 4 hôtels | 9/12 | 9/9 | 18/21 | Intégré en branche, médias incomplets |
-| Jackson Hole | 4 hôtels | 9/12 | 8/9 | 17/21 | Intégré en branche, médias incomplets |
-| Big Sky | 4 hôtels | 8/12 | 5/9 | 13/21 | Intégré en branche, photos exclues |
-| Val d'Isère | 4 hôtels | 12/12 | 6/9 | 18/21 | Intégré en branche, saisons à vérifier |
-| Verbier | 4 hôtels | 12/12 | 3/9 | 15/21 | Intégré en branche, doublon exclu |
-| **Total** | | **110/120** | **76/90** | **186/210** | **24 photos encore manquantes ; droits confirmés par l'exploitant, images restantes à contrôler** |
+- **10 guides destination FR/EN intégrés** : Mustique ; Courchevel 1850 ; St. Moritz ; Aspen ; Niseko ; Megève ; Jackson Hole ; Big Sky ; Val d'Isère ; Verbier.
+- Les **88 entrées de destination** du catalogue principal sont préservées. Huit nouveaux guides alpins contiennent quatre vrais hôtels chacun ; Mustique distingue son hôtel et ses villas.
+- Chaque guide a des secteurs réellement différenciés, des descriptions hôtelières propres à chaque adresse, des expériences, des conseils et des FAQ FR/EN.
+- **210 fichiers WebP candidats présents physiquement sur 210 emplacements prévus** : 12 images par hébergement et 9 vues locales *par destination* — soit **3 par adresse et 9 par destination**. Le nombre de fichiers ne certifie pas leur qualité.
+- **120 photographies des huit nouveaux guides alpins ont été inspectées et sont autorisées pour leurs galeries internes**. Tous les guides alpins ont deux images d'en-tête approuvées et au moins une image valide de chacun des quatre hôtels. Les images mal attribuées, publicités Marriott, photographies en doublon ou hors sujet restent masquées. Les 42 fichiers préexistants Mustique et Courchevel conservent leur propre validation éditoriale/visuelle à confirmer avant publication grand public.
+- Les droits d'utilisation ont été **confirmés par l'exploitant Bosphoras** le 15 octobre 2026 ; source et attribution de chaque photo restent documentées dans les manifestes.
+- Le **Laisinant** contient encore un cliché physiquement présent mais hors sujet (arrêt de bus du Fornet) : son avertissement QA bloque explicitement son affichage tant qu'une vue réellement pertinente n'est pas sélectionnée.
 
-**Droits d'utilisation confirmés par l'exploitant Bosphoras le 15 octobre 2026.** 86 clichés des huit guides alpins ont ensuite passé une première revue visuelle sur planches photo ; les autres restent hors affichage. Les **186 fichiers candidats** ne sont **pas 181 photographies toutes visuellement approuvées**. Certains fichiers téléchargés ont une alerte qui les exclut de l'affichage envisagé. L'ensemble doit encore passer une revue d'identité, de qualité esthétique, de provenance et des droits d'utilisation commerciale.
+## Sécurité et référencement
 
-## Où contrôler les galeries
-- Première collection : `docs/travel-alpine-photo-review-index.md` (St. Moritz, Aspen, Niseko).
-- Sous-lot montagne : `docs/travel-mountain-photo-review-index.md` (Megève, Jackson Hole, Big Sky).
-- Dernières destinations : `docs/travel-final-two-photo-review-index.md` (Val d'Isère, Verbier).
-- Revue des clichés rejetés : `docs/travel-alpine-first-visual-review.md` et `docs/travel-mountain-editorial-blockers.md`.
+- Robots **noindex** tant que le contenu n'est pas officiellement approuvé pour le référencement ; `approvedDestinationSlugs` et `approvedCategorySlugs` restent vides.
+- Aucun stock, tarif, disponibilité Wink ou lien de réservation fictif n'est annoncé pour les établissements sélectionnés.
+- Les fichiers sans validation visuelle n'apparaissent ni dans les galeries finales de la branche ni dans l'image JSON-LD correspondante.
+- Production `main`, immobilier, transferts, CRM, API Wink et secrets Vercel non modifiés par ce lot.
+- Le contrôle de branche interdit une Preview si une destination manque de photos authentiques ou utilise un en-tête non validé.
 
-## Prochaine phase bloquante avant Preview
-1. Compléter les 29 photographies manquantes en respectant l'hôtel et le lieu précis ; remplacer les clichés sources inaptes.
-2. Contrôler **chaque** droit de réutilisation et attribution, particulièrement galeries propriétaires et licences CC BY-SA.
-3. Vérifier visuellement chaque image, créer des légendes FR/EN fidèles et supprimer les doublons; seule une photo réellement approuvée peut apparaître.
-4. **Terminé sur la branche :** les cinq derniers guides sont raccordés au site, aux FAQ et aux schémas SEO Article/ItemList/FAQPage. Leurs médias non validés sont masqués et les pages restent `noindex`.
-5. **Contrôles GitHub validés :** TypeScript, intégrité des 88 destinations et des dix guides (run 38747492834). Il reste la QA photographique et juridique avant **une unique Preview Vercel** ; production et services immobiliers inchangés.
+## Vérifications CI réalisées
 
-**Économie Vercel :** les commits de la branche ont été ignorés pour les builds complets ; un statut Vercel `CANCELED` ne signifie pas un build payant terminé.
+- `npm run typecheck` : **OK**.
+- `node scripts/check-travel-catalogue.mjs` : **OK** (catalogue 88 préservé).
+- `node scripts/check-next-alpine-drafts.mjs` : **OK**.
+- `node scripts/check-third-alpine-drafts.mjs` : **OK**.
+- `node scripts/check-mountain-ten-batch-drafts.mjs` : **OK**.
+- `node scripts/check-travel-batch-preview.mjs` : **OK** (210 sources, images d'en-tête, 4 hôtels/guide, noindex).
+- Workflow GitHub : https://github.com/cihancacan/bosphoras/actions/runs/38760666112
 
+## Contrôle visuel
 
-## Mise à jour des sources, revue du 15 octobre 2026
-
-La recherche précise sur Wikimedia a ajouté **5 WebP authentiques** : Megève Côte 2000, panorama estival de Megève, orignaux dans Grand Teton, une rue de Jackson, Face de Bellevarde. Compteur : **186/210, 24 emplacements sans photographie**. Le panorama Megève, les orignaux et Bellevarde ont passé le contrôle visuel, portant **83 à 86 clichés sélectionnés**. Les images de parking à Côte 2000 et la vieille rue de Jackson restent écartées comme insuffisantes pour le positionnement premium.
-
-Le tableau de détail des 29 manques ci-dessous est conservé comme historique du premier inventaire, non comme liste actuelle. Les nouvelles planches photos actualisées se trouvent dans `docs/travel-photo-contact-sheets/README.md`.
-
-## Blocages média détaillés du premier lot (historique avant les 5 ajouts)
-
-| Destination | Photos hôtels absentes | Scènes locales absentes | Total |
-|---|---|---|---:|
-| Megève | Four Seasons ×3 | Cote 2000 ; Megève l'été | 5 |
-| Jackson Hole | Four Seasons ×3 | Faune ; chalets enneigés ; rue western | 6 |
-| Big Sky | One&Only Moonlight Basin ×3 ; Summit Hotel ×1 | Ski nordique ; équitation ; forêt ; chalet d'hiver | 8 |
-| Val d'Isère | Aucune | Bellevarde ; Laisinant ; Manchet ; Prariond | 4 |
-| Verbier | Aucune | Place Blanche ; Place Centrale ; Savoleyres ; Les Esserts ; Les Creux ; après-ski | 6 |
-| **Total** | **10** | **19** | **29** |
-
-Les 24 fichiers encore manquants ne comprennent pas les images déjà téléchargées mais jugées peu pertinentes ou géographiquement douteuses.
-
-Les dix pages disposent maintenant d'une structure FR/EN sur la branche, avec FAQ. Les huit guides alpins récents ne présentent aucune image tant que les deux approbations photo requises ne sont pas explicitement confirmées. Les deux autres guides (Mustique et Courchevel 1850) restent aussi soumis à vérification finale.
-
-Contrôles réussis : https://github.com/cihancacan/bosphoras/actions/runs/38747492834
-
-**Pas de lancement Preview :** ne jamais ajouter le marqueur [travel-batch-ready] tant que les dix destinations n'ont pas passé la QA photographique et juridique.
-
-## Revue photographique concrète — 15 octobre 2026
-
-Le propriétaire du projet a confirmé disposer des droits d'utilisation des photographies. Cette affirmation est consignée dans chaque manifeste média (`ownerRightsAuthorization`) et les crédits et liens de source sont préservés. Les contrôles restants portent sur la **correspondance réelle hôtel/photo, le cadrage, la saison et l'absence de doublons**, pas sur une nouvelle demande d'autorisation utilisateur.
-
-**83 images des huit nouvelles destinations ont passé une première revue visuelle manuelle** : St. Moritz 10, Aspen 16, Niseko 11, Megève 8, Jackson Hole 11, Big Sky 8, Val d'Isère 10, Verbier 9. Ces images sont proposées seulement dans la branche de travail ; toutes les pages sont toujours noindex et non déployées.
-
-Problèmes concrets exclus : carte de crédit Marriott Bonvoy/Visa abusivement associée à W Verbier, photos identiques de plusieurs hôtels, vue à travers un train présentée comme Experimental Chalet, clichés de montagnes associés incorrectement à un hôtel, vues estivales annoncées comme hivernales, intérieur d'église décrit comme une place de village.
-
-Pour les 29 emplacements encore vides, certaines galeries officielles Four Seasons renvoient **403 Forbidden** aux robots de téléchargement ; la médiathèque One&Only exige également une méthode d'accès différente. **Ne pas contourner ces protections.** Si les photos officielles autorisées sont fournies directement, elles pourront être intégrées sans changer les adresses ni les textes. Les planches de contrôle sont disponibles dans `docs/travel-photo-contact-sheets/README.md`.
+- Contact sheets des huit destinations alpines : [galeries de contrôle](travel-photo-contact-sheets/README.md).
+- Sources, crédits et statuts photographiques : `data/travel/*MediaCandidates.json`.
+- Les photographies signalées sont exclues ; ne pas activer `visuallyVerified` globalement.
+- **Une seule Preview Vercel** pour vérifier le rendu réel, les galeries, l'UX responsive et le SEO avant toute décision de publication. Cette Preview est distincte de la production et ne vaut pas autorisation d'indexer le contenu.
+- Pour la mise en production et l'indexation future : corriger les images exclues et éventuellement enrichir les galeries les plus légères, contrôler visuellement la Preview et vérifier la disponibilité Wink par fournisseur.
