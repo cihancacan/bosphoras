@@ -1,8 +1,8 @@
 {
   "scope": "Four official Mustique property galleries (one hotel, three villas); PREVIEW rights pending",
-  "generatedAt": "2026-10-15T08:07:12.153736+00:00",
+  "generatedAt": "2026-10-15T08:12:50.230876+00:00",
   "expected": 12,
-  "downloaded": 11,
+  "downloaded": 12,
   "items": [
     {
       "key": "view-1",
@@ -48,9 +48,21 @@
       "key": "view-3",
       "sourcePage": "https://www.mustique-island.com/villas-and-hotel/the-cotton-house",
       "localPath": "/public/images/travel/mustique-premium/cotton-house/view-3.webp",
-      "status": "failed",
+      "status": "downloaded",
       "rights": "Preview only; the client authorises use but independent third-party commercial rights remain unverified",
-      "hotel": "cotton-house"
+      "hotel": "cotton-house",
+      "downloadUrl": "https://www.mustique-island.com/img/containers/assets/residence_015.jpg/aef1700683fd38c70b51cf1471c8404b/residence_015.webp",
+      "credit": "The Mustique Company · official site",
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1920,
+        1080
+      ],
+      "sha256": "e3866255a381d4ca29f9daa3e71345519039ea7bee738ea8c4ceb2bb45224be1",
+      "bytes": 242282
     },
     {
       "key": "view-1",
