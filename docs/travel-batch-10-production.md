@@ -28,3 +28,9 @@ Commencé après Porto Cervo : Mustique (guide/galeries FR-EN) et Courchevel 185
 - 4 hôtels réels × 3 photographies = 12 WebP ; 9 photographies de destination avec auteur/source consignés.
 - Vérification technique GitHub complète avant toute Preview ; licences commerciales tierces toujours à confirmer avant publication publique.
 - Vérifier les visuels par jugement éditorial humain avant la publication finale du lot de dix.
+
+## Premier sous-lot (2 destinations)
+- Mustique : un hôtel et trois villas (ne jamais les présenter comme quatre hôtels) ; photographies 12 + 9 ; images authentiques et provenance contrôlées techniquement.
+- Courchevel 1850 : quatre palaces, cinq zones, descriptions et FAQ originales FR/EN ; photographies 12 + 9 ; réouverture Airelles le 04/12/2026 vérifiée auprès de la maison.
+- QA de cohérence (types, manifestes, fichiers WebP physiques, routes, noindex) bloquant dans GitHub ; aucune Preview Vercel avant les huit autres destinations du lot.
+- Statut juridique des photos tierces : *réutilisation commerciale indépendante à confirmer avant production*.

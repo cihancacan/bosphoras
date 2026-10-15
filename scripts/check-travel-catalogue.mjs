@@ -22,6 +22,7 @@ for (const path of ['data/travel/mustiquePremiumImageSources.json','data/travel/
  const manifest = JSON.parse(read(path));
  assert.equal(manifest.downloaded, manifest.items.filter(x => x.status === 'downloaded').length, 'Mismatch in ' + path);
  assert.equal(manifest.expected, manifest.items.length, 'Expected-count mismatch in ' + path);
+ assert.equal(manifest.downloaded, manifest.expected, 'Destination still has incomplete photography: ' + path);
  for (const item of manifest.items) {
    if (item.status === 'downloaded') {
      assert(item.localPath?.startsWith('/images/'), 'Image URLs must be web paths, not /public: '+item.localPath);
