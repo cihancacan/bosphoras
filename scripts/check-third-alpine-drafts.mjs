@@ -50,7 +50,11 @@ for(const slug of ['megeve','gstaad','zermatt']){
   }
   console.log(slug+': '+m.downloadedHotelCandidates+'/12 hotels + '+m.downloadedDestinationCandidates+'/9 scenes, review pending');
  }
- assert(!registry.includes("'"+slug+"':") && !registry.includes(slug+":"),'Draft prematurely routed '+slug);
+ if(slug==='megeve'){
+   assert(registry.includes("'megeve': megeveGuide"),'Megève guide is not staged for noindex review');
+   assert(text('data/travel/alpinePremiumEditorial.ts').includes('commercialRightsCleared===true'),
+     'Source image publication gate missing');
+ } else assert(!registry.includes("'"+slug+"':")&&!registry.includes(slug+":"),'Unready alpine guide routed prematurely: '+slug);
  console.log(slug+': four documented hotels, five areas and 14 FR/EN FAQs — draft only');
 }
 console.log('Third Alpine editorial drafts, provenance and no-publication QA: OK');
