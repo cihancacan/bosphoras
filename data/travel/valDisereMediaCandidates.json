@@ -428,7 +428,7 @@
       "placeLabel": "Bellevarde slopes",
       "searchQuery": "Val d Isere Bellevarde",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "User confirmed rights. Preserve licence, author and share-alike terms when distributing derivative WebP.",
       "localPath": "/images/travel/val-disere-premium/destination/scene-3.webp",
@@ -449,7 +449,8 @@
         1300
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; original author and licence retained.",
-      "visualQaWarning": "Source place explicitly named, awaiting aesthetic / image-frame manual check; date and season: Face de Bellevarde photographiée en hiver 2013/2014"
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Face de Bellevarde enneigée, localisation conforme à la photographie Wikimedia datée 2013/2014."
     },
     {
       "key": "scene-4",

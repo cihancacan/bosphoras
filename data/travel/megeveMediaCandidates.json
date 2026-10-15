@@ -471,7 +471,7 @@
         1300
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; original author and licence retained.",
-      "visualQaWarning": "Source place explicitly named, awaiting aesthetic / image-frame manual check; date and season: Côte 2000, Megève, panorama estival confirmé par la description et le lieu"
+      "visualQaWarning": "La photo est située à Côte 2000 mais montre surtout un parking de voitures ; qualité insuffisante pour un guide luxe. À remplacer par un panorama sans parking."
     },
     {
       "key": "scene-6",
@@ -534,7 +534,7 @@
       "placeLabel": "Megève summer",
       "searchQuery": "Megeve summer",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "User confirmed rights. Preserve licence, author and share-alike terms when distributing derivative WebP.",
       "localPath": "/images/travel/megeve-premium/destination/scene-8.webp",
@@ -555,7 +555,8 @@
         810
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; original author and licence retained.",
-      "visualQaWarning": "Source place explicitly named, awaiting aesthetic / image-frame manual check; date and season: Village et environs de Megève en été, photographie de juillet 2023"
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Panorama estival de Megève vu depuis Mont-Joly; saison, cadrage et légende concordants."
     },
     {
       "key": "scene-9",

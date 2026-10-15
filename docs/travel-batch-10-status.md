@@ -23,9 +23,9 @@
 | Big Sky | 4 hôtels | 8/12 | 5/9 | 13/21 | Intégré en branche, photos exclues |
 | Val d'Isère | 4 hôtels | 12/12 | 5/9 | 17/21 | Intégré en branche, saisons à vérifier |
 | Verbier | 4 hôtels | 12/12 | 3/9 | 15/21 | Intégré en branche, doublon exclu |
-| **Total** | | **110/120** | **71/90** | **181/210** | **29 dossiers photo encore manquants, tous droits/visuels à contrôler** |
+| **Total** | | **110/120** | **76/90** | **186/210** | **24 dossiers photo encore manquants, tous droits/visuels à contrôler** |
 
-**Droits d'utilisation confirmés par l'exploitant Bosphoras le 15 octobre 2026.** 83 clichés des huit guides alpins ont ensuite passé une première revue visuelle sur planches photo ; les autres restent hors affichage. Les **181 fichiers candidats** ne sont **pas 181 photographies toutes visuellement approuvées**. Certains fichiers téléchargés ont une alerte qui les exclut de l'affichage envisagé. L'ensemble doit encore passer une revue d'identité, de qualité esthétique, de provenance et des droits d'utilisation commerciale.
+**Droits d'utilisation confirmés par l'exploitant Bosphoras le 15 octobre 2026.** 86 clichés des huit guides alpins ont ensuite passé une première revue visuelle sur planches photo ; les autres restent hors affichage. Les **186 fichiers candidats** ne sont **pas 181 photographies toutes visuellement approuvées**. Certains fichiers téléchargés ont une alerte qui les exclut de l'affichage envisagé. L'ensemble doit encore passer une revue d'identité, de qualité esthétique, de provenance et des droits d'utilisation commerciale.
 
 ## Où contrôler les galeries
 - Première collection : `docs/travel-alpine-photo-review-index.md` (St. Moritz, Aspen, Niseko).
@@ -42,7 +42,14 @@
 
 **Économie Vercel :** les commits de la branche ont été ignorés pour les builds complets ; un statut Vercel `CANCELED` ne signifie pas un build payant terminé.
 
-## Blocages média détaillés du premier lot
+
+## Mise à jour des sources, revue du 15 octobre 2026
+
+La recherche précise sur Wikimedia a ajouté **5 WebP authentiques** : Megève Côte 2000, panorama estival de Megève, orignaux dans Grand Teton, une rue de Jackson, Face de Bellevarde. Compteur : **186/210, 24 emplacements sans photographie**. Le panorama Megève, les orignaux et Bellevarde ont passé le contrôle visuel, portant **83 à 86 clichés sélectionnés**. Les images de parking à Côte 2000 et la vieille rue de Jackson restent écartées comme insuffisantes pour le positionnement premium.
+
+Le tableau de détail des 29 manques ci-dessous est conservé comme historique du premier inventaire, non comme liste actuelle. Les nouvelles planches photos actualisées se trouvent dans `docs/travel-photo-contact-sheets/README.md`.
+
+## Blocages média détaillés du premier lot (historique avant les 5 ajouts)
 
 | Destination | Photos hôtels absentes | Scènes locales absentes | Total |
 |---|---|---|---:|
@@ -53,7 +60,7 @@
 | Verbier | Aucune | Place Blanche ; Place Centrale ; Savoleyres ; Les Esserts ; Les Creux ; après-ski | 6 |
 | **Total** | **10** | **19** | **29** |
 
-Les 29 fichiers manquants ne comprennent pas les images déjà téléchargées mais jugées peu pertinentes ou géographiquement douteuses.
+Les 24 fichiers manquants ne comprennent pas les images déjà téléchargées mais jugées peu pertinentes ou géographiquement douteuses.
 
 Les dix pages disposent maintenant d'une structure FR/EN sur la branche, avec FAQ. Les huit guides alpins récents ne présentent aucune image tant que les deux approbations photo requises ne sont pas explicitement confirmées. Les deux autres guides (Mustique et Courchevel 1850) restent aussi soumis à vérification finale.
 
