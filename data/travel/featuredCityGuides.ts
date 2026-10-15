@@ -1,3 +1,4 @@
+import { courchevel1850Guide } from './courchevel1850Guide';
 import { mustiqueGuide } from './mustiqueGuide';
 import { portoCervoGuide } from './portoCervoGuide';
 import { saintBarthelemyGuide } from './saintBarthelemyGuide';
@@ -5,7 +6,7 @@ import { losCabosGuide } from './losCabosGuide';
 import { maldivesGuide } from './maldivesGuide';
 import { kohSamuiGuide } from './kohSamuiGuide';
 /** Curated Travel destination guides. Editorial selections only: no supplier inventory, booking, rates or claim of first-hand inspection. */
-export type FeaturedCitySlug = 'bodrum' | 'antalya' | 'dubai' | 'paris' | 'saint-tropez' | 'bali' | 'phuket' | 'koh-samui' | 'maldives' | 'los-cabos' | 'saint-barthelemy' | 'porto-cervo' | 'mustique';
+export type FeaturedCitySlug = 'bodrum' | 'antalya' | 'dubai' | 'paris' | 'saint-tropez' | 'bali' | 'phuket' | 'koh-samui' | 'maldives' | 'los-cabos' | 'saint-barthelemy' | 'porto-cervo' | 'mustique' | 'courchevel-1850';
 export type FeaturedCityPhoto = {src:string;fr:string;en:string;author:string;license:string;licenseUrl:string;sourcePage:string};
 export type FeaturedCityArea = {name:string;enName:string;fr:string;en:string;frWatch:string;enWatch:string};
 export type FeaturedCityExperience = {frTitle:string;enTitle:string;fr:string;en:string};
@@ -1212,7 +1213,8 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
 'los-cabos': losCabosGuide,
 'saint-barthelemy': saintBarthelemyGuide,
 'porto-cervo': portoCervoGuide,
-'mustique': mustiqueGuide
+'mustique': mustiqueGuide,
+'courchevel-1850': courchevel1850Guide
 };
 export function featuredCityGuide(slug:string | undefined):FeaturedCityGuideData | undefined {
  if (!slug || !(slug in featuredCityGuides)) return undefined;

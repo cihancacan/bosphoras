@@ -12,7 +12,7 @@ const slugs = [...catalogue.matchAll(/slug:\s*["']([^"']+)["']/g)].map(m => m[1]
 assert.equal(slugs.length, 88, 'Expected original 88 destinations, update catalogue test intentionally if a genuine 89th is added.');
 assert.equal(new Set(slugs).size, slugs.length, 'Duplicate destination slugs are not permitted.');
 const registry = read('data/travel/featuredCityGuides.ts');
-for (const slug of ['porto-cervo', 'mustique']) assert(registry.includes("'"+slug+"'"), slug + ' missing from premium guide registry');
+for (const slug of ['porto-cervo', 'mustique','courchevel-1850']) assert(registry.includes("'"+slug+"'"), slug + ' missing from premium guide registry');
 const site = read('components/travel/TravelPages.tsx');
 assert(site.includes('robots: { index: ready'), 'Keep noindex for non-approved pages.');
 assert(site.includes('approvedCategorySlugs'), 'Publication approval gate was removed.');

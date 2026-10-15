@@ -119,7 +119,7 @@ def build_entries(key: str, url: str, count: int, folder: str, property_slug: st
         for extra in (
             BASE + "/villas-and-hotel/the-cotton-house/garden-view",
             BASE + "/villas-and-hotel/the-cotton-house/sea-view",
-            BASE + "/villas-and-hotel/the-cotton-house/the-residence",
+            BASE + "/hotel-rooms/the-residence",
         ):
             for candidate in collect_gallery(extra):
                 if candidate not in candidates:

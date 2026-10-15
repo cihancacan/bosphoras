@@ -1,0 +1,103 @@
+{
+  "scope": "Courchevel 1850 four official property galleries; Preview only pending rights",
+  "expected": 12,
+  "downloaded": 0,
+  "items": [
+    {
+      "hotel": "les-airelles",
+      "key": "view-1",
+      "localPath": "/images/travel/courchevel-1850-premium/les-airelles/view-1.webp",
+      "sourcePage": "https://airelles.com/en/destination/courchevel-hotel",
+      "status": "failed",
+      "rights": "Third-party commercial reuse to be verified"
+    },
+    {
+      "hotel": "les-airelles",
+      "key": "view-2",
+      "localPath": "/images/travel/courchevel-1850-premium/les-airelles/view-2.webp",
+      "sourcePage": "https://airelles.com/en/destination/courchevel-hotel",
+      "status": "failed",
+      "rights": "Third-party commercial reuse to be verified"
+    },
+    {
+      "hotel": "les-airelles",
+      "key": "view-3",
+      "localPath": "/images/travel/courchevel-1850-premium/les-airelles/view-3.webp",
+      "sourcePage": "https://airelles.com/en/destination/courchevel-hotel",
+      "status": "failed",
+      "rights": "Third-party commercial reuse to be verified"
+    },
+    {
+      "hotel": "cheval-blanc",
+      "key": "view-1",
+      "localPath": "/images/travel/courchevel-1850-premium/cheval-blanc/view-1.webp",
+      "sourcePage": "https://www.chevalblanc.com/en/maison/courchevel/",
+      "status": "failed",
+      "rights": "Third-party commercial reuse to be verified"
+    },
+    {
+      "hotel": "cheval-blanc",
+      "key": "view-2",
+      "localPath": "/images/travel/courchevel-1850-premium/cheval-blanc/view-2.webp",
+      "sourcePage": "https://www.chevalblanc.com/en/maison/courchevel/",
+      "status": "failed",
+      "rights": "Third-party commercial reuse to be verified"
+    },
+    {
+      "hotel": "cheval-blanc",
+      "key": "view-3",
+      "localPath": "/images/travel/courchevel-1850-premium/cheval-blanc/view-3.webp",
+      "sourcePage": "https://www.chevalblanc.com/en/maison/courchevel/",
+      "status": "failed",
+      "rights": "Third-party commercial reuse to be verified"
+    },
+    {
+      "hotel": "lapogee",
+      "key": "view-1",
+      "localPath": "/images/travel/courchevel-1850-premium/lapogee/view-1.webp",
+      "sourcePage": "https://www.oetkerhotels.com/hotels/lapogee-courchevel/",
+      "status": "failed",
+      "rights": "Third-party commercial reuse to be verified"
+    },
+    {
+      "hotel": "lapogee",
+      "key": "view-2",
+      "localPath": "/images/travel/courchevel-1850-premium/lapogee/view-2.webp",
+      "sourcePage": "https://www.oetkerhotels.com/hotels/lapogee-courchevel/",
+      "status": "failed",
+      "rights": "Third-party commercial reuse to be verified"
+    },
+    {
+      "hotel": "lapogee",
+      "key": "view-3",
+      "localPath": "/images/travel/courchevel-1850-premium/lapogee/view-3.webp",
+      "sourcePage": "https://www.oetkerhotels.com/hotels/lapogee-courchevel/",
+      "status": "failed",
+      "rights": "Third-party commercial reuse to be verified"
+    },
+    {
+      "hotel": "k2-palace",
+      "key": "view-1",
+      "localPath": "/images/travel/courchevel-1850-premium/k2-palace/view-1.webp",
+      "sourcePage": "https://www.lek2palace.com/en/",
+      "status": "failed",
+      "rights": "Third-party commercial reuse to be verified"
+    },
+    {
+      "hotel": "k2-palace",
+      "key": "view-2",
+      "localPath": "/images/travel/courchevel-1850-premium/k2-palace/view-2.webp",
+      "sourcePage": "https://www.lek2palace.com/en/",
+      "status": "failed",
+      "rights": "Third-party commercial reuse to be verified"
+    },
+    {
+      "hotel": "k2-palace",
+      "key": "view-3",
+      "localPath": "/images/travel/courchevel-1850-premium/k2-palace/view-3.webp",
+      "sourcePage": "https://www.lek2palace.com/en/",
+      "status": "failed",
+      "rights": "Third-party commercial reuse to be verified"
+    }
+  ]
+}
