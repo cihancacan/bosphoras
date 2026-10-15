@@ -1,0 +1,70 @@
+{
+  "scope": "Official Mustique destination scenes · preview only · attribution/rights review pending",
+  "expected": 9,
+  "downloaded": 0,
+  "items": [
+    {
+      "key": "island-1",
+      "localPath": "/images/travel/mustique-premium/destination/island-1.webp",
+      "sourcePage": "https://www.mustique-island.com/",
+      "status": "failed",
+      "rights": "Rights and depicted location need review before production"
+    },
+    {
+      "key": "island-2",
+      "localPath": "/images/travel/mustique-premium/destination/island-2.webp",
+      "sourcePage": "https://www.mustique-island.com/",
+      "status": "failed",
+      "rights": "Rights and depicted location need review before production"
+    },
+    {
+      "key": "island-3",
+      "localPath": "/images/travel/mustique-premium/destination/island-3.webp",
+      "sourcePage": "https://www.mustique-island.com/",
+      "status": "failed",
+      "rights": "Rights and depicted location need review before production"
+    },
+    {
+      "key": "island-4",
+      "localPath": "/images/travel/mustique-premium/destination/island-4.webp",
+      "sourcePage": "https://www.mustique-island.com/",
+      "status": "failed",
+      "rights": "Rights and depicted location need review before production"
+    },
+    {
+      "key": "island-5",
+      "localPath": "/images/travel/mustique-premium/destination/island-5.webp",
+      "sourcePage": "https://www.mustique-island.com/",
+      "status": "failed",
+      "rights": "Rights and depicted location need review before production"
+    },
+    {
+      "key": "island-6",
+      "localPath": "/images/travel/mustique-premium/destination/island-6.webp",
+      "sourcePage": "https://www.mustique-island.com/",
+      "status": "failed",
+      "rights": "Rights and depicted location need review before production"
+    },
+    {
+      "key": "island-7",
+      "localPath": "/images/travel/mustique-premium/destination/island-7.webp",
+      "sourcePage": "https://www.mustique-island.com/",
+      "status": "failed",
+      "rights": "Rights and depicted location need review before production"
+    },
+    {
+      "key": "island-8",
+      "localPath": "/images/travel/mustique-premium/destination/island-8.webp",
+      "sourcePage": "https://www.mustique-island.com/",
+      "status": "failed",
+      "rights": "Rights and depicted location need review before production"
+    },
+    {
+      "key": "island-9",
+      "localPath": "/images/travel/mustique-premium/destination/island-9.webp",
+      "sourcePage": "https://www.mustique-island.com/",
+      "status": "failed",
+      "rights": "Rights and depicted location need review before production"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "scope": "Mustique official property galleries only · preview; third-party commercial rights must be verified",
+  "expected": 12,
+  "downloaded": 0,
+  "items": [
+    {
+      "hotel": "cotton-house",
+      "key": "view-1",
+      "localPath": "/images/travel/mustique-premium/cotton-house/view-1.webp",
+      "sourcePage": "https://www.mustique-island.com/villas-and-hotel/the-cotton-house",
+      "status": "failed",
+      "rights": "Client authorises project use; third-party reproduction approval pending"
+    },
+    {
+      "hotel": "cotton-house",
+      "key": "view-2",
+      "localPath": "/images/travel/mustique-premium/cotton-house/view-2.webp",
+      "sourcePage": "https://www.mustique-island.com/villas-and-hotel/the-cotton-house",
+      "status": "failed",
+      "rights": "Client authorises project use; third-party reproduction approval pending"
+    },
+    {
+      "hotel": "cotton-house",
+      "key": "view-3",
+      "localPath": "/images/travel/mustique-premium/cotton-house/view-3.webp",
+      "sourcePage": "https://www.mustique-island.com/villas-and-hotel/the-cotton-house",
+      "status": "failed",
+      "rights": "Client authorises project use; third-party reproduction approval pending"
+    },
+    {
+      "hotel": "the-beach-house",
+      "key": "view-1",
+      "localPath": "/images/travel/mustique-premium/the-beach-house/view-1.webp",
+      "sourcePage": "https://www.mustique-island.com/villa/the-beach-house",
+      "status": "failed",
+      "rights": "Client authorises project use; third-party reproduction approval pending"
+    },
+    {
+      "hotel": "the-beach-house",
+      "key": "view-2",
+      "localPath": "/images/travel/mustique-premium/the-beach-house/view-2.webp",
+      "sourcePage": "https://www.mustique-island.com/villa/the-beach-house",
+      "status": "failed",
+      "rights": "Client authorises project use; third-party reproduction approval pending"
+    },
+    {
+      "hotel": "the-beach-house",
+      "key": "view-3",
+      "localPath": "/images/travel/mustique-premium/the-beach-house/view-3.webp",
+      "sourcePage": "https://www.mustique-island.com/villa/the-beach-house",
+      "status": "failed",
+      "rights": "Client authorises project use; third-party reproduction approval pending"
+    },
+    {
+      "hotel": "macaroni-beach-house",
+      "key": "view-1",
+      "localPath": "/images/travel/mustique-premium/macaroni-beach-house/view-1.webp",
+      "sourcePage": "https://www.mustique-island.com/villa/macaroni-beach-house",
+      "status": "failed",
+      "rights": "Client authorises project use; third-party reproduction approval pending"
+    },
+    {
+      "hotel": "macaroni-beach-house",
+      "key": "view-2",
+      "localPath": "/images/travel/mustique-premium/macaroni-beach-house/view-2.webp",
+      "sourcePage": "https://www.mustique-island.com/villa/macaroni-beach-house",
+      "status": "failed",
+      "rights": "Client authorises project use; third-party reproduction approval pending"
+    },
+    {
+      "hotel": "macaroni-beach-house",
+      "key": "view-3",
+      "localPath": "/images/travel/mustique-premium/macaroni-beach-house/view-3.webp",
+      "sourcePage": "https://www.mustique-island.com/villa/macaroni-beach-house",
+      "status": "failed",
+      "rights": "Client authorises project use; third-party reproduction approval pending"
+    },
+    {
+      "hotel": "cottonwick",
+      "key": "view-1",
+      "localPath": "/images/travel/mustique-premium/cottonwick/view-1.webp",
+      "sourcePage": "https://www.mustique-island.com/villa/cottonwick",
+      "status": "failed",
+      "rights": "Client authorises project use; third-party reproduction approval pending"
+    },
+    {
+      "hotel": "cottonwick",
+      "key": "view-2",
+      "localPath": "/images/travel/mustique-premium/cottonwick/view-2.webp",
+      "sourcePage": "https://www.mustique-island.com/villa/cottonwick",
+      "status": "failed",
+      "rights": "Client authorises project use; third-party reproduction approval pending"
+    },
+    {
+      "hotel": "cottonwick",
+      "key": "view-3",
+      "localPath": "/images/travel/mustique-premium/cottonwick/view-3.webp",
+      "sourcePage": "https://www.mustique-island.com/villa/cottonwick",
+      "status": "failed",
+      "rights": "Client authorises project use; third-party reproduction approval pending"
+    }
+  ]
+}
