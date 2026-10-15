@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 5,
+  "downloadedDestinationCandidates": 8,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -517,28 +517,79 @@
       "key": "scene-6",
       "placeLabel": "Nordic trail",
       "searchQuery": "Big Sky Montana nordic trail",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/big-sky-premium/destination/scene-6.webp",
+      "sourcePage": "https://www.visitmt.com/listing/lone-mountain-ranch-cross-country-ski-trails",
+      "downloadUrl": "https://s3-us-west-2.amazonaws.com/montana-surveytoolimages/general/full-size/33342h.jpg",
+      "candidateContext": "Nordic skiing at Lone Mountain Ranch, Montana",
+      "credit": "Place photograph from identified original travel destination source",
+      "sha256": "90b59fee0530e2bf6d2d8b04c958e4d0dac9a888fc8599b9358ff2e6a4448ac9",
+      "bytes": 329536,
+      "originalSize": [
+        1680,
+        980
+      ],
+      "outputSize": [
+        1680,
+        980
+      ],
+      "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
+      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
     },
     {
       "key": "scene-7",
       "placeLabel": "Horse riding",
       "searchQuery": "Big Sky Montana horseback",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/big-sky-premium/destination/scene-7.webp",
+      "sourcePage": "https://www.wishesfamilytravel.com/blog/10805",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/64596cc852161f028641373d/1683589196693-8O4NN0VCPZIYTPOCBJFG/lone-mountain-horse.jpg?content-type=image%2Fjpeg",
+      "candidateContext": "Lone Mountain horseback excursion near Big Sky",
+      "credit": "Place photograph from identified original travel destination source",
+      "sha256": "128fe05466131b8a1a7516b2ca79e34ca5f2905423ad0e898dacd9f11bdac701",
+      "bytes": 354422,
+      "originalSize": [
+        1500,
+        1001
+      ],
+      "outputSize": [
+        1500,
+        1001
+      ],
+      "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
+      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
     },
     {
       "key": "scene-8",
       "placeLabel": "Big Sky forest",
       "searchQuery": "Big Sky Montana mountain forest",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/big-sky-premium/destination/scene-8.webp",
+      "sourcePage": "https://www.bigskyresort.com/mountain-info/new-this-season",
+      "downloadUrl": "https://cdn.sanity.io/images/8ts88bij/big-sky/c6c108c43d8c40ea9c007079480fe2be0bc06719-2100x1180.jpg?auto=format&fit=min&q=70&w=1920",
+      "candidateContext": "Big Sky winter spruce forest and Lone Peak",
+      "credit": "Place photograph from identified original travel destination source",
+      "sha256": "535b9567214467d7c9c4481b4ab3478ee87768b3e9c8d83adb34e80251945b8a",
+      "bytes": 234298,
+      "originalSize": [
+        1920,
+        1079
+      ],
+      "outputSize": [
+        1800,
+        1012
+      ],
+      "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
+      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
     },
     {
       "key": "scene-9",

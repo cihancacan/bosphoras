@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 11,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 9,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -531,10 +531,27 @@
       "key": "scene-7",
       "placeLabel": "Snow covered cabins",
       "searchQuery": "Jackson Hole cabins Wyoming",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/jackson-hole-premium/destination/scene-7.webp",
+      "sourcePage": "https://www.rmrentals.com/jackson-hole-rentals/granite-ridge-cabin-7608",
+      "downloadUrl": "https://gallery.streamlinevrs.com/units-gallery/00/06/A6/image_156894314.jpeg",
+      "candidateContext": "Granite Ridge log cabin in the snow, Teton Village / Jackson Hole",
+      "credit": "Place photograph from identified original travel destination source",
+      "sha256": "38c80df1fb9db58255a485631fbf3a621016a45bc815235aff44dfc966245bf2",
+      "bytes": 152712,
+      "originalSize": [
+        1023,
+        683
+      ],
+      "outputSize": [
+        1023,
+        683
+      ],
+      "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
+      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
     },
     {
       "key": "scene-8",

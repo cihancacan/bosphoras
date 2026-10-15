@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 3,
+  "downloadedDestinationCandidates": 8,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -398,44 +398,109 @@
       "key": "scene-2",
       "placeLabel": "Place Blanche Verbier",
       "searchQuery": "Place Blanche Verbier",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/verbier-premium/destination/scene-2.webp",
+      "sourcePage": "https://www.myswitzerland.com/en-us/accommodations/hotel-w-verbier/",
+      "downloadUrl": "https://media.myswitzerland.com/image/fetch/c_lfill%2Cg_auto%2Cw_3200%2Ch_1800/f_auto%2Cq_80%2Cfl_keep_iptc/https%3A/media-v2.discover.swiss/rawmedia/hs-my/ae16a8c2-7423-4505-b641-3f62d2b65303.jpg?_obv=202549",
+      "candidateContext": "W Verbier at Place Blanche near the Medran slopes, winter",
+      "credit": "Place photograph from identified original travel destination source",
+      "sha256": "fdb34ec3e2c9f21bca8ad0cbc9477cbd5c1d8387ded7ec076603fad931491d1e",
+      "bytes": 310530,
+      "originalSize": [
+        3200,
+        1800
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ],
+      "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
+      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
     },
     {
       "key": "scene-3",
       "placeLabel": "Place Centrale Verbier",
       "searchQuery": "Verbier Place Centrale",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/verbier-premium/destination/scene-3.webp",
+      "sourcePage": "https://in.pinterest.com/pin/la-place-centrale-verbier--187462403231206267/",
+      "downloadUrl": "https://i.pinimg.com/originals/bb/4d/cb/bb4dcba84bae195d663178452e7520b9.jpg",
+      "candidateContext": "Place Centrale in Verbier, winter dusk; archive original to check",
+      "credit": "Place photograph from identified original travel destination source",
+      "sha256": "6f79022e43367f7488166111fd77d045d300eb5f00b3a842f668d418e7e3bf91",
+      "bytes": 161416,
+      "originalSize": [
+        1080,
+        776
+      ],
+      "outputSize": [
+        1080,
+        776
+      ],
+      "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
+      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
     },
     {
       "key": "scene-4",
       "placeLabel": "Savoleyres ski slopes",
       "searchQuery": "Verbier Savoleyres",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "candidateContext": "File:Télécabines Verbier Dec 2021.jpg",
-      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:WIKIMRDIA?action=edit&amp;redlink=1\" title=\"User:WIKIMRDIA (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:WIKIMRDIA\"]}}'>WIKIMRDIA</a>",
+      "candidateContext": "Savoleyres piste 14 Verbier / 4 Vallees",
+      "credit": "Place photograph from identified original travel destination source",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "excludedCandidatePath": "/images/travel/verbier-premium/destination/scene-4.webp",
       "excludedOriginalTitle": "File:Télécabines Verbier Dec 2021.jpg",
-      "visualQaWarning": "EXCLUE : photo identique à celle de Médran, et la source ne prouve pas qu'elle illustre Savoleyres. Ne pas réutiliser ce fichier."
+      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review.",
+      "localPath": "/images/travel/verbier-premium/destination/scene-4.webp",
+      "sourcePage": "https://www.powderedition.com/journal/verbier-skiing",
+      "downloadUrl": "https://ik.imagekit.io/zo5luxjj1/journal/verbier-skiing/verbier-savoleyres-piste.png",
+      "sha256": "73311d7a3bde5455f30c7609e0b0cdadbe15d5773ed25ca763a144d60960a3bb",
+      "bytes": 231604,
+      "originalSize": [
+        1408,
+        768
+      ],
+      "outputSize": [
+        1408,
+        768
+      ],
+      "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15"
     },
     {
       "key": "scene-5",
       "placeLabel": "Les Esserts Verbier",
       "searchQuery": "Verbier Les Esserts",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/verbier-premium/destination/scene-5.webp",
+      "sourcePage": "https://verbier4vallees.ch/en/ski-resort/beginners-sector",
+      "downloadUrl": "https://verbier4vallees.ch/V4V-Website/Ski-sectors/Begginers/image-thumb__195__lightbox/DOMAINESKIABLE_DEBUTANT_Mosaique%20%284%29.webp",
+      "candidateContext": "Les Esserts beginners ski learning zone, Verbier",
+      "credit": "Place photograph from identified original travel destination source",
+      "sha256": "392ba9b442a08b340b7c9f2788da6af2b56fd224e0d75c03873140ae3368c2c2",
+      "bytes": 243668,
+      "originalSize": [
+        1350,
+        900
+      ],
+      "outputSize": [
+        1350,
+        900
+      ],
+      "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
+      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
     },
     {
       "key": "scene-6",
@@ -508,10 +573,27 @@
       "key": "scene-9",
       "placeLabel": "Verbier après-ski",
       "searchQuery": "Verbier village evening",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/verbier-premium/destination/scene-9.webp",
+      "sourcePage": "https://www.cntraveller.com/gallery/verbier-ski-hotels-chalets",
+      "downloadUrl": "https://media.cntraveller.com/photos/611bea5d69410e829d87e1a5/master/w_1024%2Cc_limit/verbier-3-conde-nast-traveller-10jan14-michael-turek.jpg",
+      "candidateContext": "Historic Verbier outdoor apres-ski gathering at chalet bar",
+      "credit": "Place photograph from identified original travel destination source",
+      "sha256": "9b715260c1b760d14b5c9334e7539358c0be972a32730c99f9f4ec5d9b2cc937",
+      "bytes": 139580,
+      "originalSize": [
+        1024,
+        683
+      ],
+      "outputSize": [
+        1024,
+        683
+      ],
+      "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
+      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
     }
   ],
   "ownerRightsAuthorization": "Bosphoras operator confirmed photo usage rights on 2026-10-15; source attribution obligations remain."

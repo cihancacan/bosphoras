@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 6,
+  "downloadedDestinationCandidates": 8,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -522,19 +522,53 @@
       "key": "scene-7",
       "placeLabel": "Manchet valley",
       "searchQuery": "Manchet Val d Isere",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/val-disere-premium/destination/scene-7.webp",
+      "sourcePage": "https://www.valdisere.com/en/val-disere-in-winter/skiing-winter-fun/cross-country-skiing/great-manchet-loop-val-disere-en-4710589/",
+      "downloadUrl": "https://api.cloudly.space/resize/cropratio/1920/1080/75/aHR0cHM6Ly9zdGF0aWMuYXBpZGFlLXRvdXJpc21lLmNvbS9maWxlc3RvcmUvb2JqZXRzLXRvdXJpc3RpcXVlcy9pbWFnZXMvMTExLzE2My8yMTQ3MjExMS5qcGc%3D/image.webp",
+      "candidateContext": "Manchet valley cross-country skiing, official tourism",
+      "credit": "Place photograph from identified original travel destination source",
+      "sha256": "483f4c0f1fe1e3e079d9d7ede0251959c447cbc134ccc018284414d08f8a5193",
+      "bytes": 249278,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ],
+      "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
+      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
     },
     {
       "key": "scene-8",
       "placeLabel": "Prariond chalets",
       "searchQuery": "Prariond Val d Isere",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/val-disere-premium/destination/scene-8.webp",
+      "sourcePage": "https://www.village-montana.com/val-disere/chalet-skadi",
+      "downloadUrl": "https://www.village-montana.com/sites/default/files/image/33675920716_c2ab6b7322_k_0.jpg",
+      "candidateContext": "Chalet Skadi facade, confirmed Avenue du Prariond Val d’Isère",
+      "credit": "Place photograph from identified original travel destination source",
+      "sha256": "904426e5f4e920d1defb1627aeead17096a564a1f7b0027c61780e6a3a9ddc99",
+      "bytes": 312862,
+      "originalSize": [
+        1910,
+        1701
+      ],
+      "outputSize": [
+        1516,
+        1350
+      ],
+      "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
+      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
     },
     {
       "key": "scene-9",
