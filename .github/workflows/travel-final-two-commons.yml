@@ -1,0 +1,43 @@
+name: Travel final two — exact Commons scenic images
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - scripts/refine-val-verbier-commons.py
+      - .github/workflows/travel-final-two-commons.yml
+permissions:
+  contents: write
+concurrency:
+  group: travel-final-two-commons
+  cancel-in-progress: false
+jobs:
+  refine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -m py_compile scripts/refine-val-verbier-commons.py
+      - run: python -u scripts/refine-val-verbier-commons.py
+      - run: python scripts/render-final-two-photo-review.py
+      - name: Commit source-identified scenic WebP pending commercial and visual verification
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for slug in val-disere verbier; do
+            [ ! -d "public/images/travel/$slug-premium" ] || git add "public/images/travel/$slug-premium"
+          done
+          for k in valDisere verbier; do
+            [ ! -f "data/travel/${k}MediaCandidates.json" ] || git add "data/travel/${k}MediaCandidates.json"
+          done
+          [ ! -f docs/travel-final-two-photo-review-index.md ] || git add docs/travel-final-two-photo-review-*.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): source-verified Val d Isere and Verbier Commons scene candidates [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
