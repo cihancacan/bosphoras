@@ -28,7 +28,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           [ ! -d public/images/travel/courchevel-1850-premium ] || git add public/images/travel/courchevel-1850-premium
-          git add data/travel/courchevel1850PremiumImageSources.json data/travel/courchevel1850DestinationImageSources.json
+          git add data/travel/courchevel1850PremiumImageSources.json data/travel/courchevel1850DestinationImageSources.json data/travel/courchevel1850Guide.ts
           if ! git diff --cached --quiet; then
             git commit -m 'assets(travel): Courchevel property and resort WebP images [skip ci]'
             git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
