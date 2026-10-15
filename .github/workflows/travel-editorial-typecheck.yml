@@ -1,0 +1,25 @@
+name: Travel editorial typecheck (GitHub only, not Vercel)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - 'data/travel/**.ts'
+      - 'components/travel/**.tsx'
+      - 'scripts/check-travel-catalogue.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: travel-typecheck-feature
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '24', cache: 'npm'}
+      - run: npm ci --no-audit --no-fund
+      - run: npm run typecheck
+      - run: node scripts/check-travel-catalogue.mjs
