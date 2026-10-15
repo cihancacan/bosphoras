@@ -57,7 +57,7 @@ for(const [slug,key] of [['st-moritz','stMoritz'],['aspen','aspen'],['niseko','n
   }
   console.log(' '+slug+': candidate photography '+manifest.downloadedHotelCandidates+'/12 hotels + '+manifest.downloadedDestinationCandidates+'/9 scenes, VISUAL QA REQUIRED');
  }
- assert(!registry.includes("'"+slug+"':"),'Draft '+slug+' must not enter the public guide registry before image QA');
- console.log(' '+slug+': bilingual original guide; 5 areas, 4 hotels, >=3 experiences, 14 FAQs: DRAFT ONLY');
+ assert(registry.includes("'"+slug+"':"),'Staged guide not in preview registry: '+slug);
+ console.log(' '+slug+': bilingual original guide; 5 areas, 4 hotels, >=3 experiences, 14 FAQs: STAGED NOINDEX, RIGHTS CHECK PENDING');
 }
 console.log('Alpine original-content and unpublished media QA: OK');
