@@ -1,0 +1,452 @@
+{
+  "destination": "zermatt",
+  "generatedAt": "2026-10-15T12:59:50.693363+00:00",
+  "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
+  "expectedHotelPhotos": 12,
+  "expectedDestinationPhotos": 9,
+  "downloadedHotelCandidates": 7,
+  "downloadedDestinationCandidates": 6,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "hotels": [
+    {
+      "property": "THE OMNIA",
+      "propertyKey": "the-omnia",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.the-omnia.com/",
+        "https://the-omnia.com/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/zermatt-premium/the-omnia/view-1.webp",
+      "downloadUrl": "https://the-omnia.com/files/seo/_1200x630_crop_center-center_82_none_ns/OMNIA_Outside_Winter.jpg?mtime=1733752311",
+      "sourcePage": "https://www.the-omnia.com/",
+      "candidateContext": "Official page sharing image",
+      "sha256": "9837481b6cba650bd559d0af65025f45b79dbbfc679f68ec5bb4c411c9a9e500",
+      "bytes": 116026,
+      "originalSize": [
+        1200,
+        630
+      ],
+      "outputSize": [
+        1200,
+        630
+      ]
+    },
+    {
+      "property": "THE OMNIA",
+      "propertyKey": "the-omnia",
+      "key": "view-2",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.the-omnia.com/",
+        "https://the-omnia.com/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "THE OMNIA",
+      "propertyKey": "the-omnia",
+      "key": "view-3",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.the-omnia.com/",
+        "https://the-omnia.com/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "Mont Cervin Palace",
+      "propertyKey": "mont-cervin-palace",
+      "key": "view-1",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.montcervinpalace.ch/en/",
+        "https://www.montcervinpalace.ch/en/hotel/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "Mont Cervin Palace",
+      "propertyKey": "mont-cervin-palace",
+      "key": "view-2",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.montcervinpalace.ch/en/",
+        "https://www.montcervinpalace.ch/en/hotel/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "Mont Cervin Palace",
+      "propertyKey": "mont-cervin-palace",
+      "key": "view-3",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.montcervinpalace.ch/en/",
+        "https://www.montcervinpalace.ch/en/hotel/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "CERVO Mountain Resort",
+      "propertyKey": "cervo-resort",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://cervo.swiss/en",
+        "https://cervo.swiss/en/rooms"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/zermatt-premium/cervo-resort/view-1.webp",
+      "downloadUrl": "https://cervo.swiss/media/site/402f72d3f7-1607680309/medien-04-1600x900.jpg",
+      "sourcePage": "https://cervo.swiss/en",
+      "candidateContext": "Official page sharing image",
+      "sha256": "13e0794b1c6235457041c16363e41f69a7670b0be9516c116cb65508c4fa8740",
+      "bytes": 386000,
+      "originalSize": [
+        1351,
+        900
+      ],
+      "outputSize": [
+        1351,
+        900
+      ]
+    },
+    {
+      "property": "CERVO Mountain Resort",
+      "propertyKey": "cervo-resort",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://cervo.swiss/en",
+        "https://cervo.swiss/en/rooms"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/zermatt-premium/cervo-resort/view-2.webp",
+      "downloadUrl": "https://cervo.swiss/media/pages/home/hero/a111d671dd-1702635083/dreimeta-cervo1059-1_nomad-l.jpg",
+      "sourcePage": "https://cervo.swiss/en",
+      "candidateContext": "CERVO Nomad Room",
+      "sha256": "56ffc8752c736ee969ff079ca3edc315a6a52762dbe63ea08b98771691540f72",
+      "bytes": 180602,
+      "originalSize": [
+        3500,
+        2334
+      ],
+      "outputSize": [
+        1700,
+        1134
+      ]
+    },
+    {
+      "property": "CERVO Mountain Resort",
+      "propertyKey": "cervo-resort",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://cervo.swiss/en",
+        "https://cervo.swiss/en/rooms"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/zermatt-premium/cervo-resort/view-3.webp",
+      "downloadUrl": "https://cervo.swiss/media/pages/home/hero/b5f20ae4ec-1702635219/dreimeta-cervo7211.jpg",
+      "sourcePage": "https://cervo.swiss/en",
+      "candidateContext": "CERVO Alpinist Room",
+      "sha256": "f5eacc8825a4d69ee0cd311533a8b2743c080010a0a2477834f8f9448372d0c3",
+      "bytes": 269880,
+      "originalSize": [
+        3500,
+        2333
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ]
+    },
+    {
+      "property": "Riffelalp Resort 2222m",
+      "propertyKey": "riffelalp",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.riffelalp.com/",
+        "https://www.riffelalp.com/en/welcome/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/zermatt-premium/riffelalp/view-1.webp",
+      "downloadUrl": "https://www.riffelalp.com/media/zpffn0fr/outdoor_9.jpg",
+      "sourcePage": "https://www.riffelalp.com/",
+      "candidateContext": "Official page sharing image",
+      "sha256": "21d6f96cde63f266059b2c86c220aad40d6dae23a57f6b08ba3731085cf70822",
+      "bytes": 301854,
+      "originalSize": [
+        3840,
+        2160
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
+    },
+    {
+      "property": "Riffelalp Resort 2222m",
+      "propertyKey": "riffelalp",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.riffelalp.com/",
+        "https://www.riffelalp.com/en/welcome/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/zermatt-premium/riffelalp/view-2.webp",
+      "downloadUrl": "https://www.riffelalp.com/media/ytln40d2/outdoor_winter_183.jpg?rxy=0.7163846158024116,0&width=1024&height=576&quality=80&v=1dd178cfe2e7260",
+      "sourcePage": "https://www.riffelalp.com/",
+      "candidateContext": "",
+      "sha256": "46a549dc77b0db582c1368b82b9cf79c7af59ff8f102298a40a06a1eaa0d5f18",
+      "bytes": 97436,
+      "originalSize": [
+        1024,
+        576
+      ],
+      "outputSize": [
+        1024,
+        576
+      ]
+    },
+    {
+      "property": "Riffelalp Resort 2222m",
+      "propertyKey": "riffelalp",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.riffelalp.com/",
+        "https://www.riffelalp.com/en/welcome/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/zermatt-premium/riffelalp/view-3.webp",
+      "downloadUrl": "https://www.riffelalp.com/media/ytln40d2/outdoor_winter_183.jpg?rxy=0.7163846158024116,0&width=2000&height=1125&quality=80&v=1dd178cfe2e7260",
+      "sourcePage": "https://www.riffelalp.com/",
+      "candidateContext": "",
+      "sha256": "5c26669dc4079c626d089544df3412b70033677f8aaf00957be676e04e682239",
+      "bytes": 266478,
+      "originalSize": [
+        2000,
+        1125
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "placeLabel": "Matterhorn",
+      "searchQuery": "Matterhorn Zermatt",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-1.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/36/Riffelsee.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Riffelsee.JPG",
+      "candidateContext": "File:Riffelsee.JPG",
+      "sha256": "8240c5fec800fff9853796177da50982ba0395ac1bc04d9660721f9ce631f801",
+      "bytes": 245434,
+      "originalSize": [
+        1600,
+        1200
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Llez\" title=\"User:Llez\">H. Zell</a>",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    },
+    {
+      "key": "scene-2",
+      "placeLabel": "Zermatt village",
+      "searchQuery": "Zermatt village Switzerland",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-3",
+      "placeLabel": "Bahnhofstrasse",
+      "searchQuery": "Bahnhofstrasse Zermatt",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-3.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Bahnhofstrasse.jpg/1920px-Bahnhofstrasse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bahnhofstrasse.jpg",
+      "candidateContext": "File:Bahnhofstrasse.jpg",
+      "sha256": "c32efb4baa0ac4a4b55cb742944f76981759aa7be5f1bde116e1587c65e1cd05",
+      "bytes": 261598,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Zacharie_Grossen\" title=\"User:Zacharie Grossen\">Zacharie Grossen</a>",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "key": "scene-4",
+      "placeLabel": "Sunnegga",
+      "searchQuery": "Sunnegga Zermatt",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-4.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Sunnegga.jpg/1920px-Sunnegga.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sunnegga.jpg",
+      "candidateContext": "File:Sunnegga.jpg",
+      "sha256": "33ffc16ef46d39739bdb438ae478907741f7c6d4f3aa09b9939693fd86452a9e",
+      "bytes": 320246,
+      "originalSize": [
+        1920,
+        942
+      ],
+      "outputSize": [
+        1700,
+        834
+      ],
+      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Kulmalukko\" title=\"User:Kulmalukko\">Tiia Monto</a>",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "key": "scene-5",
+      "placeLabel": "Gornergrat",
+      "searchQuery": "Gornergrat Switzerland",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-5.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Matterhorn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Matterhorn.jpg",
+      "candidateContext": "File:Matterhorn.jpg",
+      "sha256": "29c4bd60d6865f9094d55f96732e78bb24a3e0ad3732f663045066e1f9e3341a",
+      "bytes": 182178,
+      "originalSize": [
+        1680,
+        1050
+      ],
+      "outputSize": [
+        1680,
+        1050
+      ],
+      "credit": "Man Ho Lam (<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Lemon_ho\" title=\"User:Lemon ho\">Lemon_ho</a>)",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+    },
+    {
+      "key": "scene-6",
+      "placeLabel": "Riffelalp",
+      "searchQuery": "Riffelalp Switzerland",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-7",
+      "placeLabel": "Klein Matterhorn",
+      "searchQuery": "Klein Matterhorn",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-7.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/KleinMatterhorn.jpg/1920px-KleinMatterhorn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:KleinMatterhorn.jpg",
+      "candidateContext": "File:KleinMatterhorn.jpg",
+      "sha256": "29cbcfdab961bd7fa697693f51321444493ab854bb1d399ffc8700344d36ebf1",
+      "bytes": 298720,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Cable1?action=edit&amp;redlink=1\" title=\"User:Cable1 (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:Cable1\"]}}'>Cable1</a>",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    {
+      "key": "scene-8",
+      "placeLabel": "Findeln",
+      "searchQuery": "Findeln Zermatt",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-8.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Findeln_Zermatt.jpg/1920px-Findeln_Zermatt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Findeln_Zermatt.jpg",
+      "candidateContext": "File:Findeln Zermatt.jpg",
+      "sha256": "51aff226f4291befbcc4f790110f3919ed54c40fa4641774c2716aa0fbce292d",
+      "bytes": 343418,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Paebi\" title=\"User:Paebi\">Paebi</a>",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "key": "scene-9",
+      "placeLabel": "Zermatt summer",
+      "searchQuery": "Zermatt summer mountains",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    }
+  ]
+}

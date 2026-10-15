@@ -1,0 +1,429 @@
+{
+  "destination": "megeve",
+  "generatedAt": "2026-10-15T12:58:13.004480+00:00",
+  "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
+  "expectedHotelPhotos": 12,
+  "expectedDestinationPhotos": 9,
+  "downloadedHotelCandidates": 9,
+  "downloadedDestinationCandidates": 3,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "hotels": [
+    {
+      "property": "Four Seasons Resort Megève",
+      "propertyKey": "four-seasons-megeve",
+      "key": "view-1",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.fourseasons.com/fr/properties/megeve/",
+        "https://www.fourseasons.com/megeve/accommodations/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "Four Seasons Resort Megève",
+      "propertyKey": "four-seasons-megeve",
+      "key": "view-2",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.fourseasons.com/fr/properties/megeve/",
+        "https://www.fourseasons.com/megeve/accommodations/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "Four Seasons Resort Megève",
+      "propertyKey": "four-seasons-megeve",
+      "key": "view-3",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.fourseasons.com/fr/properties/megeve/",
+        "https://www.fourseasons.com/megeve/accommodations/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "Les Fermes de Marie",
+      "propertyKey": "les-fermes-de-marie",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
+        "https://www.fermesdemarie.com/en"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/megeve-premium/les-fermes-de-marie/view-1.webp",
+      "downloadUrl": "https://cdn.prod.website-files.com/611a55c899aa47208929d5d4/65c4f4d835655a27c094db24_les-fermes-de-marie-seo-image.png",
+      "sourcePage": "https://www.fermesdemarie.com/en",
+      "candidateContext": "Official page sharing image",
+      "sha256": "22992d5e65c6dde2b624f6199661c7c893e0e5930505c3a73fb85e97e7e93e5d",
+      "bytes": 124494,
+      "originalSize": [
+        1200,
+        630
+      ],
+      "outputSize": [
+        1200,
+        630
+      ]
+    },
+    {
+      "property": "Les Fermes de Marie",
+      "propertyKey": "les-fermes-de-marie",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
+        "https://www.fermesdemarie.com/en"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/megeve-premium/les-fermes-de-marie/view-2.webp",
+      "downloadUrl": "https://cdn.prod.website-files.com/67bd7c1b97c847605ceed35e/6890950bfcbdefa5681ed02a_hotel-5-etoiles-megeve-les-fermes-de-marie.jpg",
+      "sourcePage": "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
+      "candidateContext": "hotel-5-stars-Megeve-les-fermes-de-marie",
+      "sha256": "1e46cf0591cc2d2b6b0c15858996330554bb017897794e0bc4337d166b90f337",
+      "bytes": 213514,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
+    },
+    {
+      "property": "Les Fermes de Marie",
+      "propertyKey": "les-fermes-de-marie",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
+        "https://www.fermesdemarie.com/en"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/megeve-premium/les-fermes-de-marie/view-3.webp",
+      "downloadUrl": "https://cdn.prod.website-files.com/67bd7c1b97c847605ceed35e/6890950bfcbdefa5681ed02a_hotel-5-etoiles-megeve-les-fermes-de-marie-p-1080.jpg",
+      "sourcePage": "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
+      "candidateContext": "hotel-5-stars-Megeve-les-fermes-de-marie",
+      "sha256": "5761e13d17d70c5d888054dc8ab4077f234f4b58ac52672cead16128598303aa",
+      "bytes": 103276,
+      "originalSize": [
+        1080,
+        608
+      ],
+      "outputSize": [
+        1080,
+        608
+      ]
+    },
+    {
+      "property": "Lodge Park",
+      "propertyKey": "lodge-park",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.lodgepark.com/en/hotel-center-of-megeve",
+        "https://www.lodgepark.com/en"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/megeve-premium/lodge-park/view-1.webp",
+      "downloadUrl": "https://cdn.prod.website-files.com/67bd7d3ab637857b69461f63/69eb16822a33d8af35fa4b9a_brunch_lunch_megeve%20(22).jpg",
+      "sourcePage": "https://www.lodgepark.com/en",
+      "candidateContext": "Official page sharing image",
+      "sha256": "21182109e2140e1787033b8e3c842f5dc49e35fd27f1667a458add9ecef3f650",
+      "bytes": 252098,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
+    },
+    {
+      "property": "Lodge Park",
+      "propertyKey": "lodge-park",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.lodgepark.com/en/hotel-center-of-megeve",
+        "https://www.lodgepark.com/en"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/megeve-premium/lodge-park/view-2.webp",
+      "downloadUrl": "https://cdn.prod.website-files.com/67bd7d3ab637857b69461f8d/67bd7d3ab637857b694625db_hotel%20de%20luxe%20megeve.webp",
+      "sourcePage": "https://www.lodgepark.com/en/hotel-center-of-megeve",
+      "candidateContext": "Hotel-Lodge-Park-Megeve",
+      "sha256": "bd9f747accb99bed26f658bae5ea9ed7f10b025a0973ad9a8d074a21991ba811",
+      "bytes": 96480,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
+    },
+    {
+      "property": "Lodge Park",
+      "propertyKey": "lodge-park",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.lodgepark.com/en/hotel-center-of-megeve",
+        "https://www.lodgepark.com/en"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/megeve-premium/lodge-park/view-3.webp",
+      "downloadUrl": "https://cdn.prod.website-files.com/67bd7d3ab637857b69461f8d/67bd7d3ab637857b694625db_hotel%2520de%2520luxe%2520megeve-p-1080.webp",
+      "sourcePage": "https://www.lodgepark.com/en/hotel-center-of-megeve",
+      "candidateContext": "Hotel-Lodge-Park-Megeve",
+      "sha256": "78023483f686180a5f8609486e2806e92b95a5b5df2f126968b73768cf2b5653",
+      "bytes": 37822,
+      "originalSize": [
+        1080,
+        608
+      ],
+      "outputSize": [
+        1080,
+        608
+      ]
+    },
+    {
+      "property": "Zannier Le Chalet",
+      "propertyKey": "zannier-le-chalet",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.zannierhotels.com/hotels/le-chalet-winter/",
+        "https://www.zannierhotels.com/hotels/le-chalet-summer/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/megeve-premium/zannier-le-chalet/view-1.webp",
+      "downloadUrl": "https://www.zannierhotels.com/wp-content/uploads/2025/09/Zannier-Le-Chalet-Suite-1-3-©-Zannier-Hotels.webp",
+      "sourcePage": "https://www.zannierhotels.com/hotels/le-chalet-winter/",
+      "candidateContext": "Official page sharing image",
+      "sha256": "72689999108f64aceeb2f6713a46a1a468c4adc8491d9c342498b16ca47aca32",
+      "bytes": 124152,
+      "originalSize": [
+        1256,
+        834
+      ],
+      "outputSize": [
+        1256,
+        834
+      ]
+    },
+    {
+      "property": "Zannier Le Chalet",
+      "propertyKey": "zannier-le-chalet",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.zannierhotels.com/hotels/le-chalet-winter/",
+        "https://www.zannierhotels.com/hotels/le-chalet-summer/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/megeve-premium/zannier-le-chalet/view-2.webp",
+      "downloadUrl": "https://www.zannierhotels.com/wp-content/uploads/2025/04/Zannier-Hotels-Warm.webp",
+      "sourcePage": "https://www.zannierhotels.com/hotels/le-chalet-winter/",
+      "candidateContext": "",
+      "sha256": "76c1b95d9132084b9959de9386126506af699c0f43885c5832111ad4f34208be",
+      "bytes": 78432,
+      "originalSize": [
+        1768,
+        1126
+      ],
+      "outputSize": [
+        1700,
+        1083
+      ]
+    },
+    {
+      "property": "Zannier Le Chalet",
+      "propertyKey": "zannier-le-chalet",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.zannierhotels.com/hotels/le-chalet-winter/",
+        "https://www.zannierhotels.com/hotels/le-chalet-summer/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/megeve-premium/zannier-le-chalet/view-3.webp",
+      "downloadUrl": "https://www.zannierhotels.com/wp-content/uploads/2026/09/One-Michelin-Key.webp",
+      "sourcePage": "https://www.zannierhotels.com/hotels/le-chalet-winter/",
+      "candidateContext": "",
+      "sha256": "c602eeeac1211d73ae56e1e905053b3139843c064fa1401b1bd62d9ccb3cc221",
+      "bytes": 15290,
+      "originalSize": [
+        1824,
+        1368
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ]
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "placeLabel": "Megève village",
+      "searchQuery": "Megeve France village",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-2",
+      "placeLabel": "Mont d'Arbois",
+      "searchQuery": "Megeve Mont d Arbois",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-3",
+      "placeLabel": "Rochebrune",
+      "searchQuery": "Rochebrune Megeve",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/megeve-premium/destination/scene-3.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Rochebrune_%40_Meg%C3%A8ve_%2851036605028%29.jpg/1920px-Rochebrune_%40_Meg%C3%A8ve_%2851036605028%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rochebrune_@_Megève_(51036605028).jpg",
+      "candidateContext": "File:Rochebrune @ Megève (51036605028).jpg",
+      "sha256": "d3d3ce79d758117010fbc880c991ccb12a9fec01c532470a41c08dd403b2b26c",
+      "bytes": 350132,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "credit": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.flickr.com/people/22539273@N00\" class=\"external text\">Guilhem Vellut</a> from Annecy, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+      "key": "scene-4",
+      "placeLabel": "Jaillet",
+      "searchQuery": "Le Jaillet Megeve",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/megeve-premium/destination/scene-4.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/T%C3%AAte_du_Torraz.JPG/1920px-T%C3%AAte_du_Torraz.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tête_du_Torraz.JPG",
+      "candidateContext": "File:Tête du Torraz.JPG",
+      "sha256": "91ba1da38cfd71841262ffe38bc65e714466cc5645533159f0f7346107010e9a",
+      "bytes": 134782,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Corsica62?action=edit&amp;redlink=1\" title=\"User:Corsica62 (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:Corsica62\"]}}'>Corsica62</a>",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    },
+    {
+      "key": "scene-5",
+      "placeLabel": "Cote 2000",
+      "searchQuery": "Cote 2000 Megeve",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-6",
+      "placeLabel": "Church square",
+      "searchQuery": "Eglise Megeve",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-7",
+      "placeLabel": "Megève ski slopes",
+      "searchQuery": "Megève ski France",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-8",
+      "placeLabel": "Megève summer",
+      "searchQuery": "Megeve summer",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-9",
+      "placeLabel": "Mont Blanc view",
+      "searchQuery": "Mont Blanc Megeve",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/megeve-premium/destination/scene-9.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Mont_Blanc_%40_Meg%C3%A8ve_%2851037173286%29.jpg/1920px-Mont_Blanc_%40_Meg%C3%A8ve_%2851037173286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mont_Blanc_@_Megève_(51037173286).jpg",
+      "candidateContext": "File:Mont Blanc @ Megève (51037173286).jpg",
+      "sha256": "9f1a079a28f515b4646161faec905790ae346cfd137e79e776e80b4df1778e9c",
+      "bytes": 288572,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "credit": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.flickr.com/people/22539273@N00\" class=\"external text\">Guilhem Vellut</a> from Annecy, France",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    }
+  ]
+}
