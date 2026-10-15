@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 9,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -595,10 +595,27 @@
       "key": "scene-9",
       "placeLabel": "Montana winter lodge",
       "searchQuery": "Big Sky Montana winter resort",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/big-sky-premium/destination/scene-9.webp",
+      "downloadUrl": "https://cdn.sanity.io/images/8ts88bij/big-sky/2815043617e7ac2bd60243e75088ec7946bc331d-5464x3640.jpg?auto=format&q=75&w=1700",
+      "sourcePage": "https://www.bigskyresort.com/lodging/hotels/village-center/amenities",
+      "candidateContext": "Big Sky Mountain Village — Village Center Hotel snowy lodge and ski area, not Summit",
+      "credit": "Source originale du lieu ou de l'hôtel, identité précisée",
+      "bytes": 215638,
+      "sha256": "172228a71844d02b36ae513d7294b2f975d6cd1b3ab2c4d0696bfea8b9c123e5",
+      "originalSize": [
+        1700,
+        1133
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "ownerRightsAuthorization": "Bosphoras operator confirmed image use rights on 2026-10-15",
+      "visualQaWarning": "Exact site/location source checked; final visual QA before publication."
     }
   ],
   "publicationBlockedReason": "Candidate hotel/place identity, luxury editorial quality and commercial photo rights require separate review before any premium publication.",

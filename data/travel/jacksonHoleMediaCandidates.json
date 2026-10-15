@@ -4,7 +4,7 @@
   "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 11,
+  "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
@@ -75,15 +75,32 @@
       "property": "Four Seasons Resort Jackson Hole",
       "propertyKey": "four-seasons-jackson",
       "key": "view-3",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.fourseasons.com/jacksonhole/",
         "https://www.fourseasons.com/properties/jacksonhole/",
         "https://www.fourseasons.com/jacksonhole/photos-and-videos/"
       ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/jackson-hole-premium/four-seasons-jackson/view-3.webp",
+      "downloadUrl": "https://www.thehotelguru.com/_images/9e/e2/9ee211a0f446323d2a7b0a18247cec96/s1654x900.jpg",
+      "sourcePage": "https://www.thehotelguru.com/en-us/hotel/four-seasons-resort-jackson-hole-teton-village",
+      "candidateContext": "Four Seasons Jackson Hole Mountain-side guest room, exact resort",
+      "credit": "Source originale du lieu ou de l'hôtel, identité précisée",
+      "bytes": 103596,
+      "sha256": "e67cbefbaf63c4510bb3d1a6e57d765ae083c50fa30b2c88d4e890ea12ca9eb8",
+      "originalSize": [
+        1654,
+        900
+      ],
+      "outputSize": [
+        1654,
+        900
+      ],
+      "ownerRightsAuthorization": "Bosphoras operator confirmed image use rights on 2026-10-15",
+      "visualQaWarning": "Exact site/location source checked; final visual QA before publication."
     },
     {
       "property": "Caldera House",
