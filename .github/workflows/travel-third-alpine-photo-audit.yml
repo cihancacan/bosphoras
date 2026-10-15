@@ -1,0 +1,31 @@
+name: Travel third Alpine — candidate image identity and GitHub gallery audits
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - scripts/audit-third-alpine-media.py
+      - .github/workflows/travel-third-alpine-photo-audit.yml
+permissions:
+  contents: write
+jobs:
+  audit-sources:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m py_compile scripts/audit-third-alpine-media.py
+      - run: python -u scripts/audit-third-alpine-media.py
+      - name: Commit source review sheets and duplicate warning manifest updates
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/travel/megeveMediaCandidates.json data/travel/gstaadMediaCandidates.json data/travel/zermattMediaCandidates.json
+          git add docs/travel-third-alpine-photo-review-*.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'quality(travel): flag Alpine duplicate media and display internal photo audit without Vercel [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
