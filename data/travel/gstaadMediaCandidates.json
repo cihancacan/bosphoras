@@ -73,7 +73,8 @@
       "outputSize": [
         1700,
         1133
-      ]
+      ],
+      "credit": ""
     },
     {
       "property": "The Alpina Gstaad",
@@ -100,7 +101,8 @@
       "outputSize": [
         1700,
         1133
-      ]
+      ],
+      "credit": ""
     },
     {
       "property": "The Alpina Gstaad",
@@ -127,7 +129,8 @@
       "outputSize": [
         1700,
         1134
-      ]
+      ],
+      "credit": ""
     },
     {
       "property": "Le Grand Bellevue",
@@ -153,7 +156,8 @@
       "outputSize": [
         1082,
         720
-      ]
+      ],
+      "credit": ""
     },
     {
       "property": "Le Grand Bellevue",
@@ -179,7 +183,8 @@
       "outputSize": [
         1600,
         960
-      ]
+      ],
+      "credit": ""
     },
     {
       "property": "Le Grand Bellevue",
@@ -205,7 +210,9 @@
       "outputSize": [
         1309,
         785
-      ]
+      ],
+      "visualQaWarning": "Même cliché source que view-2 ; le redimensionnement ne constitue pas une nouvelle photo.",
+      "credit": ""
     },
     {
       "property": "Ultima Hotel Gstaad",
@@ -232,7 +239,9 @@
       "outputSize": [
         1536,
         1084
-      ]
+      ],
+      "visualQaWarning": "Image estivale du vrai hôtel, ne pas la légender comme photo d'hiver.",
+      "credit": ""
     },
     {
       "property": "Ultima Hotel Gstaad",
@@ -259,7 +268,9 @@
       "outputSize": [
         1536,
         1084
-      ]
+      ],
+      "visualQaWarning": "Même cliché source que view-1 ; le redimensionnement ne constitue pas une nouvelle photo.",
+      "credit": ""
     },
     {
       "property": "Ultima Hotel Gstaad",
@@ -286,7 +297,9 @@
       "outputSize": [
         1280,
         1080
-      ]
+      ],
+      "visualQaWarning": "Même cliché source que view-1 ; le redimensionnement ne constitue pas une nouvelle photo.",
+      "credit": ""
     }
   ],
   "destinationScenes": [
@@ -339,9 +352,10 @@
         1700,
         1115
       ],
-      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Icnieinesekpucnhppboe?action=edit&amp;redlink=1\" title=\"User:Icnieinesekpucnhppboe (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:Icnieinesekpucnhppboe\"]}}'>Icnieinesekpucnhppboe</a>",
+      "credit": "Icnieinesekpucnhppboe",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "visualQaWarning": "À REMPLACER : portrait d'une personne en station, pas panorama du secteur Eggli."
     },
     {
       "key": "scene-5",
@@ -388,5 +402,7 @@
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
     }
-  ]
+  ],
+  "publicationBlockedReason": "Missing images, duplicate originals, uncertain visual identity and/or unverified commercial photo rights.",
+  "candidateUniquenessAudit": "Image source URL identity compared, duplicate derivatives warned and hidden from planned galleries."
 }

@@ -73,7 +73,8 @@
       "outputSize": [
         1200,
         630
-      ]
+      ],
+      "credit": ""
     },
     {
       "property": "Les Fermes de Marie",
@@ -100,7 +101,8 @@
       "outputSize": [
         1700,
         956
-      ]
+      ],
+      "credit": ""
     },
     {
       "property": "Les Fermes de Marie",
@@ -127,7 +129,9 @@
       "outputSize": [
         1080,
         608
-      ]
+      ],
+      "visualQaWarning": "Même cliché source que view-2 ; le redimensionnement ne constitue pas une nouvelle photo.",
+      "credit": ""
     },
     {
       "property": "Lodge Park",
@@ -154,7 +158,9 @@
       "outputSize": [
         1700,
         956
-      ]
+      ],
+      "visualQaWarning": "À CONTRÔLER : image de restauration. Ne pas l’utiliser comme façade ou chambre.",
+      "credit": ""
     },
     {
       "property": "Lodge Park",
@@ -181,7 +187,8 @@
       "outputSize": [
         1700,
         956
-      ]
+      ],
+      "credit": ""
     },
     {
       "property": "Lodge Park",
@@ -208,7 +215,8 @@
       "outputSize": [
         1080,
         608
-      ]
+      ],
+      "credit": ""
     },
     {
       "property": "Zannier Le Chalet",
@@ -235,7 +243,8 @@
       "outputSize": [
         1256,
         834
-      ]
+      ],
+      "credit": ""
     },
     {
       "property": "Zannier Le Chalet",
@@ -262,7 +271,9 @@
       "outputSize": [
         1700,
         1083
-      ]
+      ],
+      "visualQaWarning": "À CONTRÔLER : image générique Zannier Warm, aucune chambre Le Chalet clairement identifiée.",
+      "credit": ""
     },
     {
       "property": "Zannier Le Chalet",
@@ -289,7 +300,9 @@
       "outputSize": [
         1667,
         1250
-      ]
+      ],
+      "visualQaWarning": "À REMPLACER : visuel de récompense ou logo, ne représente ni chambre ni espace hôtelier.",
+      "credit": ""
     }
   ],
   "destinationScenes": [
@@ -333,7 +346,7 @@
         1700,
         1133
       ],
-      "credit": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.flickr.com/people/22539273@N00\" class=\"external text\">Guilhem Vellut</a> from Annecy, France",
+      "credit": "Guilhem Vellut from Annecy, France",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
     },
@@ -359,9 +372,10 @@
         1667,
         1250
       ],
-      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Corsica62?action=edit&amp;redlink=1\" title=\"User:Corsica62 (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:Corsica62\"]}}'>Corsica62</a>",
+      "credit": "Corsica62",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "visualQaWarning": "Photo du Tête du Torraz ; n'affirmer le lien exact avec Jaillet qu'après contrôle cartographique."
     },
     {
       "key": "scene-5",
@@ -421,9 +435,11 @@
         1700,
         1133
       ],
-      "credit": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.flickr.com/people/22539273@N00\" class=\"external text\">Guilhem Vellut</a> from Annecy, France",
+      "credit": "Guilhem Vellut from Annecy, France",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
     }
-  ]
+  ],
+  "publicationBlockedReason": "Missing images, duplicate originals, uncertain visual identity and/or unverified commercial photo rights.",
+  "candidateUniquenessAudit": "Image source URL identity compared, duplicate derivatives warned and hidden from planned galleries."
 }
