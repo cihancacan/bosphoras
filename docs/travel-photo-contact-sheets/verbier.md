@@ -1,6 +1,6 @@
 # Verbier — 21 photographies à contrôler
 
-**Candidats récupérés : 15/21 · Validés visuellement : 9/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 15/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Verbier](verbier.jpg)
 
@@ -19,11 +19,11 @@
 | 11 | Experimental Chalet Verbier — view-2 | [Source](https://www.experimentalchalet.com/) · Blurred forest and hills seen through a train window with two empty seats on each side.| Candidate; **DOUBLON VISUEL et hors sujet : même photo floue que view-1.** |
 | 12 | Experimental Chalet Verbier — view-3 | [Source](https://www.experimentalchalet.com/) · View from a room balcony with two chairs and snowy mountain peaks in the background.| Candidate |
 | 13 | Verbier Médran gondola — scene-1 | [Source](https://commons.wikimedia.org/wiki/File:Télécabines_Verbier_Dec_2021.jpg) · File:Télécabines Verbier Dec 2021.jpg| Candidate; **Commons title does not establish which exact Verbier sector is pictured; detailed visual+map check required before caption.** |
-| 14 | Place Blanche Verbier — scene-2 | Source à trouver · | Manquante |
-| 15 | Place Centrale Verbier — scene-3 | Source à trouver · | Manquante |
-| 16 | Savoleyres ski slopes — scene-4 | Source à trouver · File:Télécabines Verbier Dec 2021.jpg| Manquante; **EXCLUE : photo identique à celle de Médran, et la source ne prouve pas qu'elle illustre Savoleyres. Ne pas réutiliser ce fichier.** |
-| 17 | Les Esserts Verbier — scene-5 | Source à trouver · | Manquante |
-| 18 | Les Creux Verbier — scene-6 | Source à trouver · | Manquante |
+| 14 | Place Blanche Verbier — scene-2 | [Source](https://www.myswitzerland.com/en-us/accommodations/hotel-w-verbier/) · W Verbier at Place Blanche near the Medran slopes, winter| Candidate |
+| 15 | Place Centrale Verbier — scene-3 | [Source](https://in.pinterest.com/pin/la-place-centrale-verbier--187462403231206267/) · Place Centrale in Verbier, winter dusk; archive original to check| Candidate |
+| 16 | Savoleyres ski slopes — scene-4 | [Source](https://www.powderedition.com/journal/verbier-skiing) · Savoleyres piste 14 Verbier / 4 Vallees| Candidate |
+| 17 | Les Esserts Verbier — scene-5 | [Source](https://verbier4vallees.ch/en/ski-resort/beginners-sector) · Les Esserts beginners ski learning zone, Verbier| Candidate |
+| 18 | Les Creux Verbier — scene-6 | [Source](https://www.verbier.com/hotels/chalet-d-adrien) · Chalet d&#x27;Adrien, Route des Creux 91, Verbier; Le-chalet-d&#x27;ardrien-verbier-hotels-exterior.jpg  | Candidate |
 | 19 | Mont Fort panorama — scene-7 | [Source](https://commons.wikimedia.org/wiki/File:Verbier_Mont_Fort_-_panoramio.jpg) · File:Verbier Mont Fort - panoramio.jpg| Candidate |
 | 20 | Le Châble valley — scene-8 | [Source](https://commons.wikimedia.org/wiki/File:Le_Châble_depuis_Verbier.jpg) · File:Le Châble depuis Verbier.jpg| Candidate |
-| 21 | Verbier après-ski — scene-9 | Source à trouver · | Manquante |
+| 21 | Verbier après-ski — scene-9 | [Source](https://www.cntraveller.com/gallery/verbier-ski-hotels-chalets) · Historic Verbier outdoor apres-ski gathering at chalet bar| Candidate |

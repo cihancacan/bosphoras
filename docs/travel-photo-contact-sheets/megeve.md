@@ -1,14 +1,14 @@
 # Megève — 21 photographies à contrôler
 
-**Candidats récupérés : 18/21 · Validés visuellement : 9/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 13/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Megève](megeve.jpg)
 
 | No | Etablissement / lieu | Source et métadonnées | État |
 |---:|---|---|---|
-| 1 | Four Seasons Resort Megève — view-1 | Source à trouver · | Manquante |
-| 2 | Four Seasons Resort Megève — view-2 | Source à trouver · | Manquante |
-| 3 | Four Seasons Resort Megève — view-3 | Source à trouver · | Manquante |
+| 1 | Four Seasons Resort Megève — view-1 | [Source](https://hurlinghamtravel.co.uk/hotel/four-seasons-hotel-megeve) · Winter exterior confirmed at property| Candidate |
+| 2 | Four Seasons Resort Megève — view-2 | [Source](https://www.momondo.in/hotels/megeve/Four-Seasons-Hotel-Megeve.mhd3148531.ksp) · Interior suite photographed at exact Four Seasons Megeve| Candidate |
+| 3 | Four Seasons Resort Megève — view-3 | [Source](https://four-seasons.hotelsmegeve.com/) · Exact resort indoor pool photograph| Candidate |
 | 4 | Les Fermes de Marie — view-1 | [Source](https://www.fermesdemarie.com/en) · Official page sharing image| Candidate |
 | 5 | Les Fermes de Marie — view-2 | [Source](https://www.fermesdemarie.com/en/hiver/hotel-megeve) · Winter-at-aux-Fermes-de-Marie| Candidate; **DOUBLON VISUEL : presque identique à view-1, même façade enneigée.** |
 | 6 | Les Fermes de Marie — view-3 | [Source](https://www.fermesdemarie.com/en/hiver/hotel-megeve) · Marie-farm-summer vacation| Candidate |
@@ -19,7 +19,7 @@
 | 11 | Lodge Park — view-2 | [Source](https://www.lodgepark.com/en/hotel-center-of-megeve) · Hotel-Lodge-Park-Megeve| Candidate |
 | 12 | Lodge Park — view-3 | [Source](https://www.lodgepark.com/en/hotel-center-of-megeve) · exclusive-offer-good-kissers-from-megeve| Candidate |
 | 13 | Megève village — scene-1 | [Source](https://commons.wikimedia.org/wiki/File:Village_@_Megève_(51295072586).jpg) · File:Village @ Megève (51295072586).jpg| Candidate; **Vue de quelques maisons périphériques, pas le centre historique de Megève. À remplacer pour cette légende.** |
-| 14 | Mont d'Arbois — scene-2 | [Source](https://commons.wikimedia.org/wiki/File:Mont-d'Arbois-Megève_(2017).jpg) · File:Mont-d&#x27;Arbois-Megève (2017).jpg| Candidate; **Commons title/source grounded, but manual geographic, season and aesthetic QA required.** |
+| 14 | Mont d'Arbois — scene-2 | [Source](https://commons.wikimedia.org/wiki/File:Mont-d'Arbois-Megève_(2017).jpg) · File:Mont-d&#x27;Arbois-Megève (2017).jpg| Candidate |
 | 15 | Rochebrune — scene-3 | [Source](https://commons.wikimedia.org/wiki/File:Rochebrune_@_Megève_(51036605028).jpg) · File:Rochebrune @ Megève (51036605028).jpg| Candidate |
 | 16 | Jaillet — scene-4 | [Source](https://commons.wikimedia.org/wiki/File:Tête_du_Torraz.JPG) · File:Tête du Torraz.JPG| Candidate; **Photo du Tête du Torraz ; n'affirmer le lien exact avec Jaillet qu'après contrôle cartographique.** |
 | 17 | Cote 2000 — scene-5 | [Source](https://commons.wikimedia.org/wiki/File:Megève_Côte_2000-_Pour_village_EDT.jpg) · File:Megève Côte 2000- Pour village EDT.jpg| Candidate; **La photo est située à Côte 2000 mais montre surtout un parking de voitures ; qualité insuffisante pour un guide luxe. À remplacer par un panorama sans parking.** |

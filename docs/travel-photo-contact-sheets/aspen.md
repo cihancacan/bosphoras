@@ -1,6 +1,6 @@
 # Aspen — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 16/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 19/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Aspen](aspen.jpg)
 

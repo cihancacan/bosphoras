@@ -1,6 +1,6 @@
 # St. Moritz — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 10/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 13/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle St. Moritz](st-moritz.jpg)
 
