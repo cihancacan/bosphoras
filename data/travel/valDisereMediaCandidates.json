@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 5,
+  "downloadedDestinationCandidates": 6,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -427,10 +427,29 @@
       "key": "scene-3",
       "placeLabel": "Bellevarde slopes",
       "searchQuery": "Val d Isere Bellevarde",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "User confirmed rights. Preserve licence, author and share-alike terms when distributing derivative WebP.",
+      "localPath": "/images/travel/val-disere-premium/destination/scene-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Face_de_Bellevarde_2014.JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Face_de_Bellevarde_2014.JPG/1920px-Face_de_Bellevarde_2014.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Face de Bellevarde 2014.JPG",
+      "credit": "Jmex",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sha256": "7ec6a7137ae7e174ebcc2fe912f869ec10f135fd0ab86957291cd395f43da0e1",
+      "bytes": 507872,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1733,
+        1300
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; original author and licence retained.",
+      "visualQaWarning": "Source place explicitly named, awaiting aesthetic / image-frame manual check; date and season: Face de Bellevarde photographiée en hiver 2013/2014"
     },
     {
       "key": "scene-4",

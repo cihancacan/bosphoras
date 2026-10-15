@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 9,
-  "downloadedDestinationCandidates": 7,
+  "downloadedDestinationCandidates": 9,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -449,10 +449,29 @@
       "key": "scene-5",
       "placeLabel": "Cote 2000",
       "searchQuery": "Cote 2000 Megeve",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "User confirmed rights. Preserve licence, author and share-alike terms when distributing derivative WebP.",
+      "localPath": "/images/travel/megeve-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Megève_Côte_2000-_Pour_village_EDT.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Meg%C3%A8ve_C%C3%B4te_2000-_Pour_village_EDT.jpg/1920px-Meg%C3%A8ve_C%C3%B4te_2000-_Pour_village_EDT.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Megève Côte 2000- Pour village EDT.jpg",
+      "credit": "Anthospace",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sha256": "f7726848113d60b8d4dc78e50775de3d48dd488ca6da65e270d7f54be1e0d50c",
+      "bytes": 298680,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1733,
+        1300
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; original author and licence retained.",
+      "visualQaWarning": "Source place explicitly named, awaiting aesthetic / image-frame manual check; date and season: Côte 2000, Megève, panorama estival confirmé par la description et le lieu"
     },
     {
       "key": "scene-6",
@@ -514,10 +533,29 @@
       "key": "scene-8",
       "placeLabel": "Megève summer",
       "searchQuery": "Megeve summer",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "User confirmed rights. Preserve licence, author and share-alike terms when distributing derivative WebP.",
+      "localPath": "/images/travel/megeve-premium/destination/scene-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Megève,_depuis_la_chaîne_du_Mont-Joly.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Meg%C3%A8ve%2C_depuis_la_cha%C3%AEne_du_Mont-Joly.jpg/1920px-Meg%C3%A8ve%2C_depuis_la_cha%C3%AEne_du_Mont-Joly.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Megève, depuis la chaîne du Mont-Joly.jpg",
+      "credit": "CBougault",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sha256": "cce237cad4b518e75c3963dcd4daa0cb09c395fbf9e7f551c17c9d274ed3a6d7",
+      "bytes": 344550,
+      "originalSize": [
+        1920,
+        864
+      ],
+      "outputSize": [
+        1800,
+        810
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; original author and licence retained.",
+      "visualQaWarning": "Source place explicitly named, awaiting aesthetic / image-frame manual check; date and season: Village et environs de Megève en été, photographie de juillet 2023"
     },
     {
       "key": "scene-9",

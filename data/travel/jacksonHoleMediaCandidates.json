@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 9,
-  "downloadedDestinationCandidates": 6,
+  "downloadedDestinationCandidates": 8,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -468,10 +468,29 @@
       "key": "scene-6",
       "placeLabel": "Wildlife",
       "searchQuery": "Grand Teton moose elk wildlife",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "User confirmed rights. Preserve licence, author and share-alike terms when distributing derivative WebP.",
+      "localPath": "/images/travel/jackson-hole-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Moose_lying_in_grass_with_light_snow_and_female_moose_in_the_background_at_Grand_Teton_National_Park,_Wyoming_(27cbf884-c1b0-4e43-8ba0-46e2be45d43a).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Moose_lying_in_grass_with_light_snow_and_female_moose_in_the_background_at_Grand_Teton_National_Park%2C_Wyoming_%2827cbf884-c1b0-4e43-8ba0-46e2be45d43a%29.jpg/1920px-Moose_lying_in_grass_with_light_snow_and_female_moose_in_the_background_at_Grand_Teton_National_Park%2C_Wyoming_%2827cbf884-c1b0-4e43-8ba0-46e2be45d43a%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Moose lying in grass with light snow and female moose in the background at Grand Teton National Park, Wyoming (27cbf884-c1b0-4e43-8ba0-46e2be45d43a).jpg",
+      "credit": "NPS staff",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sha256": "6b2f8b1f6ae54ec7cdb958b131ddeeb4071ceeeb37e0f04dfb6cac948c06c358",
+      "bytes": 348540,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; original author and licence retained.",
+      "visualQaWarning": "Source place explicitly named, awaiting aesthetic / image-frame manual check; date and season: Faune du parc national de Grand Teton, orignaux"
     },
     {
       "key": "scene-7",
@@ -515,10 +534,29 @@
       "key": "scene-9",
       "placeLabel": "Western town street",
       "searchQuery": "Jackson Wyoming downtown",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "commercialRightsCleared": true,
+      "rights": "User confirmed rights. Preserve licence, author and share-alike terms when distributing derivative WebP.",
+      "localPath": "/images/travel/jackson-hole-premium/destination/scene-9.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:JacksonStreet2.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/JacksonStreet2.jpg/1920px-JacksonStreet2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:JacksonStreet2.jpg",
+      "credit": "Jan Kronsell",
+      "license": "Public domain",
+      "licenseUrl": "",
+      "sha256": "c7ab80a0eef8b130521aa06d2ef2ab47a674ad2229f769e160254b69e7dc9023",
+      "bytes": 458608,
+      "originalSize": [
+        1920,
+        1437
+      ],
+      "outputSize": [
+        1737,
+        1300
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; original author and licence retained.",
+      "visualQaWarning": "Source place explicitly named, awaiting aesthetic / image-frame manual check; date and season: Rue proche de Town Square, Jackson, Wyoming, photo historique de 2006"
     }
   ],
   "publicationBlockedReason": "Candidate hotel/place identity, luxury editorial quality and commercial photo rights require separate review before any premium publication.",
