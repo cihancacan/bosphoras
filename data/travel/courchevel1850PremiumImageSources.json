@@ -1,8 +1,8 @@
 {
   "scope": "Courchevel 1850: four genuine hotels, exact-property photographs, preview only",
-  "generatedAt": "2026-10-15T08:15:45.332492+00:00",
+  "generatedAt": "2026-10-15T08:25:44.255082+00:00",
   "expected": 12,
-  "downloaded": 8,
+  "downloaded": 12,
   "items": [
     {
       "hotel": "les-airelles",
@@ -88,17 +88,41 @@
       "hotel": "cheval-blanc",
       "key": "view-2",
       "localPath": "/images/travel/courchevel-1850-premium/cheval-blanc/view-2.webp",
-      "status": "failed",
+      "status": "downloaded",
       "sourcePage": "https://www.chevalblanc.com/en/maison/courchevel/",
-      "rights": "Preview only; commercial reuse approval must be verified"
+      "rights": "Preview only; commercial reuse approval must be verified",
+      "downloadUrl": "https://images.prismic.io/lvmh-com/Zo1JrR5LeNNTw8kH_WebRGB-ChevalBlancCourchevel-Exte%CC%81rieursdrone-OliverFly.jpg?auto=format%2Ccompress%3Fauto%3Dcompress%2Cformat&fit=max&w=3840",
+      "originalSize": [
+        3840,
+        2880
+      ],
+      "outputSize": [
+        1950,
+        1463
+      ],
+      "bytes": 350992,
+      "sha256": "8316be3f27ddb07cd6a68bfb55e19f5c77e94ad52ffa2e6738492b0325ab2fb6",
+      "credit": "Cheval Blanc Courchevel · official listing / selected property-specific source"
     },
     {
       "hotel": "cheval-blanc",
       "key": "view-3",
       "localPath": "/images/travel/courchevel-1850-premium/cheval-blanc/view-3.webp",
-      "status": "failed",
+      "status": "downloaded",
       "sourcePage": "https://www.chevalblanc.com/en/maison/courchevel/",
-      "rights": "Preview only; commercial reuse approval must be verified"
+      "rights": "Preview only; commercial reuse approval must be verified",
+      "downloadUrl": "https://images.prismic.io/lvmh-chevalblanc/aCcuIydWJ-7kSOAT_ChevalBlancCourchevel-R%C3%A9ceptionSpa-EliseQuiniou-4-.jpg?auto=format%2Ccompress",
+      "originalSize": [
+        6224,
+        4672
+      ],
+      "outputSize": [
+        1950,
+        1464
+      ],
+      "bytes": 303568,
+      "sha256": "b5f855011c795ba0b37a768c568780ad9f7530a6d6801807f3b14692723c3efd",
+      "credit": "Cheval Blanc Courchevel · official listing / selected property-specific source"
     },
     {
       "hotel": "lapogee",
@@ -124,17 +148,41 @@
       "hotel": "lapogee",
       "key": "view-2",
       "localPath": "/images/travel/courchevel-1850-premium/lapogee/view-2.webp",
-      "status": "failed",
+      "status": "downloaded",
       "sourcePage": "https://www.oetkerhotels.com/hotels/lapogee-courchevel/",
-      "rights": "Preview only; commercial reuse approval must be verified"
+      "rights": "Preview only; commercial reuse approval must be verified",
+      "downloadUrl": "https://images.eu.ctfassets.net/og3b0tarlg4b/omEpa74YO2J3tc5i6TskE/748429b67cfbdae1dc450ceb297eae98/room-1BSD-image-lapogee-courchevel-deluxe-one-bedroom-suite-2.jpg?fit=fill&fm=jpg&h=1450&w=1900",
+      "originalSize": [
+        1900,
+        1450
+      ],
+      "outputSize": [
+        1900,
+        1450
+      ],
+      "bytes": 182624,
+      "sha256": "5816ab8e99fec61c4f3c186068cbaf5730f664e76452364f66316afe88e9e9c5",
+      "credit": "L'Apogée Courchevel · official listing / selected property-specific source"
     },
     {
       "hotel": "lapogee",
       "key": "view-3",
       "localPath": "/images/travel/courchevel-1850-premium/lapogee/view-3.webp",
-      "status": "failed",
+      "status": "downloaded",
       "sourcePage": "https://www.oetkerhotels.com/hotels/lapogee-courchevel/",
-      "rights": "Preview only; commercial reuse approval must be verified"
+      "rights": "Preview only; commercial reuse approval must be verified",
+      "downloadUrl": "https://images.eu.ctfassets.net/og3b0tarlg4b/51w1ITwyNLHlNOFuT0VTgG/331e02490b4fde1d67fe24dfb83a8a0b/2026-01-12_LAPOGEE_Courchevel7826_copie.jpg?fit=fill&fm=jpg&h=2380&w=3200",
+      "originalSize": [
+        3200,
+        2380
+      ],
+      "outputSize": [
+        1950,
+        1450
+      ],
+      "bytes": 629742,
+      "sha256": "ee11cb03ec7a8ce55a80ac6662d9fa1ea46fc2fcff234ca19d9b4b925470e15e",
+      "credit": "L'Apogée Courchevel · official listing / selected property-specific source"
     },
     {
       "hotel": "k2-palace",

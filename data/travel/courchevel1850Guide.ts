@@ -133,75 +133,75 @@ export const courchevel1850Guide:FeaturedCityGuideData = {
   "photos": {
     "alps-1": {
       "src": "/images/travel/courchevel-1850-premium/destination/alps-1.webp",
-      "fr": "Courchevel 1850, photographie documentaire des Alpes numéro 1",
-      "en": "Courchevel 1850, documentary alpine photograph 1",
-      "author": "Courchevel Tourisme · photographie officielle (source à auditer)",
-      "license": "Autorisation commerciale tierce à vérifier",
-      "licenseUrl": "https://courchevel.com/en/",
-      "sourcePage": "https://courchevel.com/en/"
+      "fr": "Alpine Answers · aerial photograph of Courchevel 1850 · image réelle de Courchevel 1850",
+      "en": "Alpine Answers · aerial photograph of Courchevel 1850 · authentic Courchevel 1850 editorial photograph",
+      "author": "Alpine Answers · aerial photograph of Courchevel 1850",
+      "license": "Client-authorised editorial Preview; written third-party commercial rights to confirm",
+      "licenseUrl": "https://www.alpineanswers.co.uk/ski-resorts/france/resort-guide-courchevel-1850",
+      "sourcePage": "https://www.alpineanswers.co.uk/ski-resorts/france/resort-guide-courchevel-1850"
     },
     "alps-2": {
       "src": "/images/travel/courchevel-1850-premium/destination/alps-2.webp",
-      "fr": "Courchevel 1850, photographie documentaire des Alpes numéro 2",
-      "en": "Courchevel 1850, documentary alpine photograph 2",
-      "author": "Courchevel Tourisme · photographie officielle (source à auditer)",
-      "license": "Autorisation commerciale tierce à vérifier",
-      "licenseUrl": "https://courchevel.com/en/",
-      "sourcePage": "https://courchevel.com/en/"
+      "fr": "Powder Edition · Courchevel 1850 village centre · image réelle de Courchevel 1850",
+      "en": "Powder Edition · Courchevel 1850 village centre · authentic Courchevel 1850 editorial photograph",
+      "author": "Powder Edition · Courchevel 1850 village centre",
+      "license": "Client-authorised editorial Preview; written third-party commercial rights to confirm",
+      "licenseUrl": "https://www.powderedition.com/journal/courchevel-skiing",
+      "sourcePage": "https://www.powderedition.com/journal/courchevel-skiing"
     },
     "alps-3": {
       "src": "/images/travel/courchevel-1850-premium/destination/alps-3.webp",
-      "fr": "Courchevel 1850, photographie documentaire des Alpes numéro 3",
-      "en": "Courchevel 1850, documentary alpine photograph 3",
-      "author": "Courchevel Tourisme · photographie officielle (source à auditer)",
-      "license": "Autorisation commerciale tierce à vérifier",
-      "licenseUrl": "https://courchevel.com/en/",
-      "sourcePage": "https://courchevel.com/en/"
+      "fr": "Ski In Luxury · morning ski piste at Courchevel 1850 · image réelle de Courchevel 1850",
+      "en": "Ski In Luxury · morning ski piste at Courchevel 1850 · authentic Courchevel 1850 editorial photograph",
+      "author": "Ski In Luxury · morning ski piste at Courchevel 1850",
+      "license": "Client-authorised editorial Preview; written third-party commercial rights to confirm",
+      "licenseUrl": "https://www.skiinluxury.com/resorts/france/courchevel-1850/luxury-chalets",
+      "sourcePage": "https://www.skiinluxury.com/resorts/france/courchevel-1850/luxury-chalets"
     },
     "alps-4": {
       "src": "/images/travel/courchevel-1850-premium/destination/alps-4.webp",
-      "fr": "Courchevel 1850, photographie documentaire des Alpes numéro 4",
-      "en": "Courchevel 1850, documentary alpine photograph 4",
-      "author": "Courchevel Tourisme · photographie officielle (source à auditer)",
-      "license": "Autorisation commerciale tierce à vérifier",
-      "licenseUrl": "https://courchevel.com/en/",
-      "sourcePage": "https://courchevel.com/en/"
+      "fr": "Top Snow Travel · Courchevel 1850 winter panorama · image réelle de Courchevel 1850",
+      "en": "Top Snow Travel · Courchevel 1850 winter panorama · authentic Courchevel 1850 editorial photograph",
+      "author": "Top Snow Travel · Courchevel 1850 winter panorama",
+      "license": "Client-authorised editorial Preview; written third-party commercial rights to confirm",
+      "licenseUrl": "https://www.topsnowtravel.com/french-ski-resorts/courchevel/",
+      "sourcePage": "https://www.topsnowtravel.com/french-ski-resorts/courchevel/"
     },
     "alps-5": {
       "src": "/images/travel/courchevel-1850-premium/destination/alps-5.webp",
-      "fr": "Courchevel 1850, photographie documentaire des Alpes numéro 5",
-      "en": "Courchevel 1850, documentary alpine photograph 5",
-      "author": "Courchevel Tourisme · photographie officielle (source à auditer)",
-      "license": "Autorisation commerciale tierce à vérifier",
-      "licenseUrl": "https://courchevel.com/en/",
-      "sourcePage": "https://courchevel.com/en/"
+      "fr": "Barrière Hotels · Courchevel 1850 Bellecôte landscape · image réelle de Courchevel 1850",
+      "en": "Barrière Hotels · Courchevel 1850 Bellecôte landscape · authentic Courchevel 1850 editorial photograph",
+      "author": "Barrière Hotels · Courchevel 1850 Bellecôte landscape",
+      "license": "Client-authorised editorial Preview; written third-party commercial rights to confirm",
+      "licenseUrl": "https://www.hotelsbarriere.com/collection-fouquet-s/courchevel",
+      "sourcePage": "https://www.hotelsbarriere.com/collection-fouquet-s/courchevel"
     },
     "alps-6": {
       "src": "/images/travel/courchevel-1850-premium/destination/alps-6.webp",
-      "fr": "Courchevel 1850, photographie documentaire des Alpes numéro 6",
-      "en": "Courchevel 1850, documentary alpine photograph 6",
-      "author": "Courchevel Tourisme · photographie officielle (source à auditer)",
-      "license": "Autorisation commerciale tierce à vérifier",
-      "licenseUrl": "https://courchevel.com/en/",
-      "sourcePage": "https://courchevel.com/en/"
+      "fr": "Paragon Ski Chalets · piste view in Courchevel 1850 · image réelle de Courchevel 1850",
+      "en": "Paragon Ski Chalets · piste view in Courchevel 1850 · authentic Courchevel 1850 editorial photograph",
+      "author": "Paragon Ski Chalets · piste view in Courchevel 1850",
+      "license": "Client-authorised editorial Preview; written third-party commercial rights to confirm",
+      "licenseUrl": "https://paragonskichalets.com/properties/chalet-le-namaste-courchevel-1850-france/",
+      "sourcePage": "https://paragonskichalets.com/properties/chalet-le-namaste-courchevel-1850-france/"
     },
     "alps-7": {
       "src": "/images/travel/courchevel-1850-premium/destination/alps-7.webp",
-      "fr": "Courchevel 1850, photographie documentaire des Alpes numéro 7",
-      "en": "Courchevel 1850, documentary alpine photograph 7",
-      "author": "Courchevel Tourisme · photographie officielle (source à auditer)",
-      "license": "Autorisation commerciale tierce à vérifier",
-      "licenseUrl": "https://courchevel.com/en/",
-      "sourcePage": "https://courchevel.com/en/"
+      "fr": "Yonder · L'Apogée terrace, Courchevel 1850 · image réelle de Courchevel 1850",
+      "en": "Yonder · L'Apogée terrace, Courchevel 1850 · authentic Courchevel 1850 editorial photograph",
+      "author": "Yonder · L'Apogée terrace, Courchevel 1850",
+      "license": "Client-authorised editorial Preview; written third-party commercial rights to confirm",
+      "licenseUrl": "https://www.yonder.fr/hotels/hotels-du-mois/l-apogee-oetker-collection-le-palace-discret-de-courchevel",
+      "sourcePage": "https://www.yonder.fr/hotels/hotels-du-mois/l-apogee-oetker-collection-le-palace-discret-de-courchevel"
     },
     "alps-8": {
       "src": "/images/travel/courchevel-1850-premium/destination/alps-8.webp",
-      "fr": "Courchevel 1850, photographie documentaire des Alpes numéro 8",
-      "en": "Courchevel 1850, documentary alpine photograph 8",
-      "author": "Courchevel Tourisme · photographie officielle (source à auditer)",
-      "license": "Autorisation commerciale tierce à vérifier",
-      "licenseUrl": "https://courchevel.com/en/",
-      "sourcePage": "https://courchevel.com/en/"
+      "fr": "Alp Courchevel · skiing at Courchevel 1850 · image réelle de Courchevel 1850",
+      "en": "Alp Courchevel · skiing at Courchevel 1850 · authentic Courchevel 1850 editorial photograph",
+      "author": "Alp Courchevel · skiing at Courchevel 1850",
+      "license": "Client-authorised editorial Preview; written third-party commercial rights to confirm",
+      "licenseUrl": "https://www.alpcourchevel.com/apartment/3666-apartment-courchevel-pralong-courchevel-1850",
+      "sourcePage": "https://www.alpcourchevel.com/apartment/3666-apartment-courchevel-pralong-courchevel-1850"
     },
     "alps-9": {
       "src": "/images/travel/courchevel-1850-premium/destination/alps-9.webp",

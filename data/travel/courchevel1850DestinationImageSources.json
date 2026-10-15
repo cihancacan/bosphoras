@@ -1,71 +1,167 @@
 {
-  "scope": "Courchevel 1850 tourism office photographs, precise scene/rights review pending",
-  "generatedAt": "2026-10-15T08:15:54.509274+00:00",
+  "scope": "Courchevel 1850 independently identified authentic destination scenes; rights review before publication",
+  "generatedAt": "2026-10-15T08:25:57.743048+00:00",
   "expected": 9,
-  "downloaded": 0,
+  "downloaded": 8,
   "items": [
     {
       "key": "alps-1",
       "localPath": "/images/travel/courchevel-1850-premium/destination/alps-1.webp",
-      "sourcePage": "https://courchevel.com/en/",
-      "status": "failed",
-      "rights": "Preview only; photographer and exact scene to be checked"
+      "sourcePage": "https://www.alpineanswers.co.uk/ski-resorts/france/resort-guide-courchevel-1850",
+      "status": "downloaded",
+      "rights": "Client-authorised Preview use; written third-party commercial rights require confirmation",
+      "credit": "Alpine Answers · aerial photograph of Courchevel 1850",
+      "downloadUrl": "https://alpineanswers.s3.amazonaws.com/dragonfly/production/2025/11/12/21/28/20/0129e7b9-844a-485f-871e-6513bdfb93f6/Courchevel_1850_ski_resort_guide%20%2832%29.jpg",
+      "originalSize": [
+        3000,
+        2000
+      ],
+      "outputSize": [
+        1950,
+        1300
+      ],
+      "bytes": 581454,
+      "sha256": "3d54af8030d583cce78a8bc0244cde59e3831fdd300d75d3decd54f62d241033"
     },
     {
       "key": "alps-2",
       "localPath": "/images/travel/courchevel-1850-premium/destination/alps-2.webp",
-      "sourcePage": "https://courchevel.com/en/",
-      "status": "failed",
-      "rights": "Preview only; photographer and exact scene to be checked"
+      "sourcePage": "https://www.powderedition.com/journal/courchevel-skiing",
+      "status": "downloaded",
+      "rights": "Client-authorised Preview use; written third-party commercial rights require confirmation",
+      "credit": "Powder Edition · Courchevel 1850 village centre",
+      "downloadUrl": "https://ik.imagekit.io/zo5luxjj1/journal/courchevel-skiing/courchevel-1850-village.png",
+      "originalSize": [
+        1408,
+        768
+      ],
+      "outputSize": [
+        1408,
+        768
+      ],
+      "bytes": 202404,
+      "sha256": "c81f2875699fb2e0619cefc5438c0d859f08ba0a4ab341ffc140fbf37f989751"
     },
     {
       "key": "alps-3",
       "localPath": "/images/travel/courchevel-1850-premium/destination/alps-3.webp",
-      "sourcePage": "https://courchevel.com/en/",
-      "status": "failed",
-      "rights": "Preview only; photographer and exact scene to be checked"
+      "sourcePage": "https://www.skiinluxury.com/resorts/france/courchevel-1850/luxury-chalets",
+      "status": "downloaded",
+      "rights": "Client-authorised Preview use; written third-party commercial rights require confirmation",
+      "credit": "Ski In Luxury · morning ski piste at Courchevel 1850",
+      "downloadUrl": "https://www.skiinluxury.com/attachments/photos/gallery/63622a20-186c-485b-a148-4bd80a000f09.JPG",
+      "originalSize": [
+        1920,
+        1281
+      ],
+      "outputSize": [
+        1920,
+        1281
+      ],
+      "bytes": 333488,
+      "sha256": "508d9398149f6cc15e7da09d1fc4468b694919e36b9d286c74a40e668345bb85"
     },
     {
       "key": "alps-4",
       "localPath": "/images/travel/courchevel-1850-premium/destination/alps-4.webp",
-      "sourcePage": "https://courchevel.com/en/",
-      "status": "failed",
-      "rights": "Preview only; photographer and exact scene to be checked"
+      "sourcePage": "https://www.topsnowtravel.com/french-ski-resorts/courchevel/",
+      "status": "downloaded",
+      "rights": "Client-authorised Preview use; written third-party commercial rights require confirmation",
+      "credit": "Top Snow Travel · Courchevel 1850 winter panorama",
+      "downloadUrl": "https://www.topsnowtravel.com/wp-content/uploads/2022/09/Courchevel-1850.jpg",
+      "originalSize": [
+        2000,
+        1125
+      ],
+      "outputSize": [
+        1950,
+        1097
+      ],
+      "bytes": 333856,
+      "sha256": "9b8f91e1ea9389699e90f0d0dc9ddb2a6a7c7c421d487778fce55c65146f7371"
     },
     {
       "key": "alps-5",
       "localPath": "/images/travel/courchevel-1850-premium/destination/alps-5.webp",
-      "sourcePage": "https://courchevel.com/en/",
-      "status": "failed",
-      "rights": "Preview only; photographer and exact scene to be checked"
+      "sourcePage": "https://www.hotelsbarriere.com/collection-fouquet-s/courchevel",
+      "status": "downloaded",
+      "rights": "Client-authorised Preview use; written third-party commercial rights require confirmation",
+      "credit": "Barrière Hotels · Courchevel 1850 Bellecôte landscape",
+      "downloadUrl": "https://a.storyblok.com/f/287000/2000x1125/65998a6ca1/galerie-12.jpg/m/1536x726/filters%3Aformat%28webp%29%3Aquality%2880%29",
+      "originalSize": [
+        1536,
+        726
+      ],
+      "outputSize": [
+        1536,
+        726
+      ],
+      "bytes": 261056,
+      "sha256": "2b57adbee257e08c2b67ed61de86bb1e1a105d010c5874565ac741ced7b3d1a1"
     },
     {
       "key": "alps-6",
       "localPath": "/images/travel/courchevel-1850-premium/destination/alps-6.webp",
-      "sourcePage": "https://courchevel.com/en/",
-      "status": "failed",
-      "rights": "Preview only; photographer and exact scene to be checked"
+      "sourcePage": "https://paragonskichalets.com/properties/chalet-le-namaste-courchevel-1850-france/",
+      "status": "downloaded",
+      "rights": "Client-authorised Preview use; written third-party commercial rights require confirmation",
+      "credit": "Paragon Ski Chalets · piste view in Courchevel 1850",
+      "downloadUrl": "https://paragonskichalets.com/wp-content/uploads/2020/11/Chalet-Namaste-Courchevel-1850-Bunk-Bedroom-View-from-the-Piste3.jpg",
+      "originalSize": [
+        1024,
+        684
+      ],
+      "outputSize": [
+        1024,
+        684
+      ],
+      "bytes": 143018,
+      "sha256": "56e45c89294356503340ca4befa3d34a22ab41dfa83472be73a70a01a5631377"
     },
     {
       "key": "alps-7",
       "localPath": "/images/travel/courchevel-1850-premium/destination/alps-7.webp",
-      "sourcePage": "https://courchevel.com/en/",
-      "status": "failed",
-      "rights": "Preview only; photographer and exact scene to be checked"
+      "sourcePage": "https://www.yonder.fr/hotels/hotels-du-mois/l-apogee-oetker-collection-le-palace-discret-de-courchevel",
+      "status": "downloaded",
+      "rights": "Client-authorised Preview use; written third-party commercial rights require confirmation",
+      "credit": "Yonder · L'Apogée terrace, Courchevel 1850",
+      "downloadUrl": "https://www.yonder.fr/sites/default/files/destinations/Apoge%CC%81e_courchevel-Terrace%20Bar_JMS_1.jpg",
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1920,
+        1280
+      ],
+      "bytes": 531464,
+      "sha256": "210241419cdac206a438bd32f7eb00ebab667059a168005421fb9dbba4175e6a"
     },
     {
       "key": "alps-8",
       "localPath": "/images/travel/courchevel-1850-premium/destination/alps-8.webp",
-      "sourcePage": "https://courchevel.com/en/",
-      "status": "failed",
-      "rights": "Preview only; photographer and exact scene to be checked"
+      "sourcePage": "https://www.alpcourchevel.com/apartment/3666-apartment-courchevel-pralong-courchevel-1850",
+      "status": "downloaded",
+      "rights": "Client-authorised Preview use; written third-party commercial rights require confirmation",
+      "credit": "Alp Courchevel · skiing at Courchevel 1850",
+      "downloadUrl": "https://wtgs-production-uploads.s3.amazonaws.com/uploads/images_accommodation/image/67716/courchevel_1850_10.jpg",
+      "originalSize": [
+        1440,
+        960
+      ],
+      "outputSize": [
+        1440,
+        960
+      ],
+      "bytes": 151720,
+      "sha256": "623859190d120998a956bfa0de4a5b2fcf2471a7e55698ab7de5e9d93f52be0c"
     },
     {
       "key": "alps-9",
       "localPath": "/images/travel/courchevel-1850-premium/destination/alps-9.webp",
-      "sourcePage": "https://courchevel.com/en/",
+      "sourcePage": "",
       "status": "failed",
-      "rights": "Preview only; photographer and exact scene to be checked"
+      "rights": "No verified image found; intentionally no substitute"
     }
   ]
 }
