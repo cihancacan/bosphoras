@@ -4,7 +4,7 @@
   "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 9,
+  "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
@@ -13,43 +13,94 @@
       "property": "Four Seasons Resort Megève",
       "propertyKey": "four-seasons-megeve",
       "key": "view-1",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.fourseasons.com/megeve/",
         "https://www.fourseasons.com/fr/megeve/",
         "https://www.fourseasons.com/megeve/photos-and-videos/"
       ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/megeve-premium/four-seasons-megeve/view-1.webp",
+      "downloadUrl": "https://static.hurlinghamtravel.co.uk/photos/1470/four-seasons-hotel-megeve-exterior-winter.jpg",
+      "sourcePage": "https://hurlinghamtravel.co.uk/hotel/four-seasons-hotel-megeve",
+      "candidateContext": "Winter exterior confirmed at property",
+      "credit": "Four Seasons Resort Megève — hotel/source gallery",
+      "sha256": "9e0c805887e4c401f54a098e112bd0add46d4c7a7487a969985c7aa3794404df",
+      "bytes": 105964,
+      "originalSize": [
+        1100,
+        671
+      ],
+      "outputSize": [
+        1100,
+        671
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; source origin retained.",
+      "visualQaWarning": "Exact hotel source is documented; pending manual inspection before the photo enters premium galleries."
     },
     {
       "property": "Four Seasons Resort Megève",
       "propertyKey": "four-seasons-megeve",
       "key": "view-2",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.fourseasons.com/megeve/",
         "https://www.fourseasons.com/fr/megeve/",
         "https://www.fourseasons.com/megeve/photos-and-videos/"
       ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/megeve-premium/four-seasons-megeve/view-2.webp",
+      "downloadUrl": "https://www.momondo.in/himg/bc/67/86/leonardo-3148531-519889-865723.jpg",
+      "sourcePage": "https://www.momondo.in/hotels/megeve/Four-Seasons-Hotel-Megeve.mhd3148531.ksp",
+      "candidateContext": "Interior suite photographed at exact Four Seasons Megeve",
+      "credit": "Four Seasons Resort Megève — hotel/source gallery",
+      "sha256": "1bd8ebf51411b5ba07bad8bef1ff7779e815370d2db3787ea68704a29492e2f8",
+      "bytes": 220244,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; source origin retained.",
+      "visualQaWarning": "Exact hotel source is documented; pending manual inspection before the photo enters premium galleries."
     },
     {
       "property": "Four Seasons Resort Megève",
       "propertyKey": "four-seasons-megeve",
       "key": "view-3",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.fourseasons.com/megeve/",
         "https://www.fourseasons.com/fr/megeve/",
         "https://www.fourseasons.com/megeve/photos-and-videos/"
       ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/megeve-premium/four-seasons-megeve/view-3.webp",
+      "downloadUrl": "https://four-seasons.hotelsmegeve.com/data/Photos/OriginalPhoto/17254/1725405/1725405736/four-seasons-resort-megeve-megeve-photo-39.JPEG",
+      "sourcePage": "https://four-seasons.hotelsmegeve.com/",
+      "candidateContext": "Exact resort indoor pool photograph",
+      "credit": "Four Seasons Resort Megève — hotel/source gallery",
+      "sha256": "05ba25e1eddfda8df7ce361956b8df812ab26f3d036d282fe4da57ab634d2395",
+      "bytes": 293696,
+      "originalSize": [
+        3802,
+        3360
+      ],
+      "outputSize": [
+        1584,
+        1400
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; source origin retained.",
+      "visualQaWarning": "Exact hotel source is documented; pending manual inspection before the photo enters premium galleries."
     },
     {
       "property": "Les Fermes de Marie",

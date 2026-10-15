@@ -4,7 +4,7 @@
   "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 9,
+  "downloadedHotelCandidates": 11,
   "downloadedDestinationCandidates": 8,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
@@ -13,29 +13,63 @@
       "property": "Four Seasons Resort Jackson Hole",
       "propertyKey": "four-seasons-jackson",
       "key": "view-1",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.fourseasons.com/jacksonhole/",
         "https://www.fourseasons.com/properties/jacksonhole/",
         "https://www.fourseasons.com/jacksonhole/photos-and-videos/"
       ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/jackson-hole-premium/four-seasons-jackson/view-1.webp",
+      "downloadUrl": "https://static.citylifestyle.com/articles/four-seasons-four-ways/JAC_462-1200.jpg?v=1",
+      "sourcePage": "https://citylifestyle.com/articles/four-seasons-four-ways",
+      "candidateContext": "Four Seasons Teton Village exterior, winter",
+      "credit": "Four Seasons Resort Jackson Hole — hotel/source gallery",
+      "sha256": "49ef709d5e24637a7046b774b89ef9fcb0ebe79dfd7bf1b0dcda560e54a8014d",
+      "bytes": 216812,
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; source origin retained.",
+      "visualQaWarning": "Exact hotel source is documented; pending manual inspection before the photo enters premium galleries."
     },
     {
       "property": "Four Seasons Resort Jackson Hole",
       "propertyKey": "four-seasons-jackson",
       "key": "view-2",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.fourseasons.com/jacksonhole/",
         "https://www.fourseasons.com/properties/jacksonhole/",
         "https://www.fourseasons.com/jacksonhole/photos-and-videos/"
       ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/jackson-hole-premium/four-seasons-jackson/view-2.webp",
+      "downloadUrl": "https://www.oxfordski.com/media/47503/fpo_jac_694.jpg?bgcolor=&height=698&mode=crop&quality=80&scale=downscaleonly&width=1240",
+      "sourcePage": "https://www.oxfordski.com/luxury-ski-chalets-hotels/united-states/jackson-hole-wyoming/four-seasons-resort-jackson-hole/",
+      "candidateContext": "Four Seasons Jackson Hole suite living room",
+      "credit": "Four Seasons Resort Jackson Hole — hotel/source gallery",
+      "sha256": "d9d4635af438cc3eea49d0b6268943a7e724429616eaeab9bcda9dc7aca97a3a",
+      "bytes": 93562,
+      "originalSize": [
+        1240,
+        698
+      ],
+      "outputSize": [
+        1240,
+        698
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; source origin retained.",
+      "visualQaWarning": "Exact hotel source is documented; pending manual inspection before the photo enters premium galleries."
     },
     {
       "property": "Four Seasons Resort Jackson Hole",

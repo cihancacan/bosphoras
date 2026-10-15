@@ -4,7 +4,7 @@
   "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 8,
+  "downloadedHotelCandidates": 11,
   "downloadedDestinationCandidates": 5,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
@@ -114,27 +114,61 @@
       "property": "One&Only Moonlight Basin",
       "propertyKey": "oneonly-moonlight",
       "key": "view-2",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.oneandonlyresorts.com/moonlight-basin/stays",
         "https://www.oneandonlyresorts.com/moonlight-basin"
       ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/big-sky-premium/oneonly-moonlight/view-2.webp",
+      "downloadUrl": "https://dam.kerzner.com/i/kerzner/One%26Only_MoonlightBasin_P2_30_Six_Bed_Master_Wide-7353_MASTER?poi=0.3813%2C0.6158%2C0%2C0&scaleFit=poi",
+      "sourcePage": "https://www.oneandonlyresorts.com/moonlight-basin/stays/private-home-rentals/signature-six-bedroom",
+      "candidateContext": "Official One&Only six bedroom home master",
+      "credit": "One&Only Moonlight Basin — hotel/source gallery",
+      "sha256": "8df52bd74df97472a710e14a2881f94c0920b23c06ae53f04284733a7a74056b",
+      "bytes": 295756,
+      "originalSize": [
+        7866,
+        5247
+      ],
+      "outputSize": [
+        1800,
+        1201
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; source origin retained.",
+      "visualQaWarning": "Exact hotel source is documented; pending manual inspection before the photo enters premium galleries."
     },
     {
       "property": "One&Only Moonlight Basin",
       "propertyKey": "oneonly-moonlight",
       "key": "view-3",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.oneandonlyresorts.com/moonlight-basin/stays",
         "https://www.oneandonlyresorts.com/moonlight-basin"
       ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/big-sky-premium/oneonly-moonlight/view-3.webp",
+      "downloadUrl": "https://dam.kerzner.com/i/kerzner/One-Only_MoonlightBasin_P2_30_Six_Bed_Living_View-6843_MASTER--1--jpg?crop=%7B0%25%7D%2C%7B9.29%25%7D%2C%7B100%25%7D%2C%7B84.37%25%7D",
+      "sourcePage": "https://www.oneandonlyresorts.com/moonlight-basin/offers/book-now-and-save",
+      "candidateContext": "Official One&Only residential living area",
+      "credit": "One&Only Moonlight Basin — hotel/source gallery",
+      "sha256": "31a34dd12083abda6d9a50fb88966f34c353c8042af125866241ff2b26e0a468",
+      "bytes": 328848,
+      "originalSize": [
+        7474,
+        4205
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; source origin retained.",
+      "visualQaWarning": "Exact hotel source is documented; pending manual inspection before the photo enters premium galleries."
     },
     {
       "property": "Lone Mountain Ranch",
@@ -290,18 +324,33 @@
       "property": "Summit Hotel",
       "propertyKey": "summit-hotel",
       "key": "view-3",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.bigskyresort.com/lodging/hotels/summit-hotel",
         "https://www.bigskyresort.com/lodging"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "candidateContext": "",
+      "candidateContext": "Summit 3-bedroom suite living area",
       "excludedCandidatePath": "/images/travel/big-sky-premium/summit-hotel/view-3.webp",
       "excludedSource": "https://www.bigskyresort.com/lodging/hotels/summit-hotel",
-      "visualQaWarning": "EXCLU : photographie trop petite (10 740 octets), inadéquate pour une galerie hôtelière haut de gamme."
+      "visualQaWarning": "Exact hotel source is documented; pending manual inspection before the photo enters premium galleries.",
+      "localPath": "/images/travel/big-sky-premium/summit-hotel/view-3.webp",
+      "downloadUrl": "https://cdn.sanity.io/images/8ts88bij/big-sky/a845df737f5e22583e27d7758ff7b70e13903234-5397x3600.jpg?auto=format&q=70&w=1920",
+      "sourcePage": "https://www.bigskyresort.com/lodging/hotels/summit-hotel/rooms-and-suites/three-bedroom",
+      "credit": "Summit Hotel — hotel/source gallery",
+      "sha256": "f8a089cb810890d88c21bc24646725a3c0cc05b324d70acf7e644dc9a213abc1",
+      "bytes": 193622,
+      "originalSize": [
+        1920,
+        1281
+      ],
+      "outputSize": [
+        1800,
+        1201
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; source origin retained."
     }
   ],
   "destinationScenes": [
