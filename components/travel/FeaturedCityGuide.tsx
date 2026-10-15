@@ -4,6 +4,11 @@ import { alpineHotelEditorialByCity,alpineAreaVisualsByCity,alpineAvailablePhoto
 import { stMoritzDraftFaq } from '@/data/travel/stMoritzDraftFaq';
 import { aspenDraftFaq } from '@/data/travel/aspenDraftFaq';
 import { nisekoDraftFaq } from '@/data/travel/nisekoDraftFaq';
+import { megeveDraftFaq } from '@/data/travel/megeveDraftFaq';
+import { jacksonHoleDraftFaq } from '@/data/travel/jacksonHoleDraftFaq';
+import { bigSkyDraftFaq } from '@/data/travel/bigSkyDraftFaq';
+import { valDisereDraftFaq } from '@/data/travel/valDisereDraftFaq';
+import { verbierDraftFaq } from '@/data/travel/verbierDraftFaq';
 import Link from 'next/link';
 import { featuredCityGuides, type FeaturedCityGuideData, type FeaturedCityPhoto } from '@/data/travel/featuredCityGuides';
 import { travelHref } from '@/lib/travel/i18n';
@@ -61,8 +66,8 @@ const confirmedCourchevelAssets=new Set([...courchevel1850HotelManifest.items,..
 const confirmedMustiqueAssets=new Set([...mustiqueHotelManifest.items,...mustiqueDestinationManifest.items].filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 const confirmedPortoCervoAssets=new Set([...portoCervoHotelManifest.items,...portoCervoDestinationManifest.items].filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 
-const isAlpineCity=(slug:FeaturedCityGuideData['slug']):slug is keyof typeof alpineAvailablePhotoPathsByCity => slug==='st-moritz'||slug==='aspen'||slug==='niseko';
-const alpineFaqByCity={'st-moritz':stMoritzDraftFaq,aspen:aspenDraftFaq,niseko:nisekoDraftFaq} as const;
+const isAlpineCity=(slug:FeaturedCityGuideData['slug']):slug is keyof typeof alpineAvailablePhotoPathsByCity => Object.prototype.hasOwnProperty.call(alpineAvailablePhotoPathsByCity,slug);
+const alpineFaqByCity={'st-moritz':stMoritzDraftFaq,aspen:aspenDraftFaq,niseko:nisekoDraftFaq,megeve:megeveDraftFaq,'jackson-hole':jacksonHoleDraftFaq,'big-sky':bigSkyDraftFaq,'val-disere':valDisereDraftFaq,verbier:verbierDraftFaq} as const;
 type Lang = 'fr' | 'en';
 type Variant = 'destination' | 'hotels';
 
@@ -314,7 +319,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         {city.areas.map((area,i)=><article key={area.name} className="flex flex-col border border-[#e6ddce] bg-white p-7">
           <p className="font-serif text-3xl text-[#b18f59]">{String(i+1).padStart(2,'0')}</p>
           <h3 className="mt-5 font-serif text-2xl">{fr?area.name:area.enName}</h3>
-          {(city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo'||city.slug==='mustique'||city.slug==='courchevel-1850') && <DestinationAreaPhoto city={city.slug} index={i} locale={locale}/>}
+          {(city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo'||city.slug==='mustique'||city.slug==='courchevel-1850'||isAlpineCity(city.slug)) && <DestinationAreaPhoto city={city.slug} index={i} locale={locale}/>}
           <p className="mt-5 text-sm leading-7 text-[#4c606b]">{fr?area.fr:area.en}</p>
           <p className="mt-auto border-t border-[#e7dfd2] pt-5 text-sm leading-7 text-[#786145]">{fr?area.frWatch:area.enWatch}</p>
         </article>)}

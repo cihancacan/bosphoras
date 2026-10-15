@@ -28,8 +28,10 @@ for(const [slug,stem] of rows){
  const faq=draft('data/travel/'+stem+'DraftFaq.ts',stem+'DraftFaq');
  assert.equal(guide.slug,slug,slug+' slug mismatch');
  assert(src.includes('slug: "'+slug+'"'),slug+' absent from original 88-destination catalogue');
- assert(!registry.includes('"'+slug+'": {')&&!registry.includes("'"+slug+"': "+stem+"Guide"),
-   slug+' should remain unregistered pending photographic and legal QA');
+ assert(registry.includes("'"+slug+"': "+stem+"Guide"),slug+' must be staged for internal noindex review');
+ assert(read('components/travel/FeaturedCityGuide.tsx').includes('alpineAvailablePhotoPathsByCity'),'Fail-closed alpine media gate missing');
+ assert(read('components/travel/TravelPages.tsx').includes('schemaHeroIsCleared'),'Structured data must not expose unapproved photos');
+ assert(read('components/travel/TravelPages.tsx').includes('robots: { index: ready'),'Robots noindex guard missing');
  assert.equal(guide.areas.length,5,slug+' requires five meaningful, real-world areas');
  assert(new Set(guide.areas.map(x=>x.name)).size===5,slug+' repeated area');
  assert(guide.experiences.length>=3,slug+' missing activities');
@@ -62,6 +64,10 @@ for(const [slug,stem] of rows){
   assert.equal(manifest.destinationScenes.length,9);
   assert(manifest.visuallyVerified===false&&manifest.approvedForCommercialPublication===false,
     slug+' must stay blocked pending commercial rights review');
+  const previewEditorial=read('data/travel/mountainBatchPremiumEditorial.ts');
+  assert(previewEditorial.includes('commercialRightsCleared===true') &&
+         previewEditorial.includes('visuallyVerified===true'),
+    slug+' no unapproved photos allowed in galleries');
   assert(manifest.hotels.every((photo,i)=>photo.property===guide.hotels[Math.floor(i/3)].name),
     slug+' WRONG hotel/photograph assignment: do not mislabel one hotel as another');
   const sourceUrls=manifest.destinationScenes.filter(x=>x.status==='candidate_needs_visual_review').map(x=>(x.downloadUrl||'').split('?')[0]);

@@ -8,6 +8,12 @@ import { kohSamuiFaq } from '@/data/travel/kohSamuiFaq';
 import { stMoritzDraftFaq } from '@/data/travel/stMoritzDraftFaq';
 import { aspenDraftFaq } from '@/data/travel/aspenDraftFaq';
 import { nisekoDraftFaq } from '@/data/travel/nisekoDraftFaq';
+import { megeveDraftFaq } from '@/data/travel/megeveDraftFaq';
+import { jacksonHoleDraftFaq } from '@/data/travel/jacksonHoleDraftFaq';
+import { bigSkyDraftFaq } from '@/data/travel/bigSkyDraftFaq';
+import { valDisereDraftFaq } from '@/data/travel/valDisereDraftFaq';
+import { verbierDraftFaq } from '@/data/travel/verbierDraftFaq';
+import { alpineAvailablePhotoPathsByCity } from '@/data/travel/alpinePremiumEditorial';
 import { maldivesFaq } from '@/data/travel/maldivesFaq';
 import { losCabosFaq } from '@/data/travel/losCabosFaq';
 import { saintBarthelemyFaq } from '@/data/travel/saintBarthelemyFaq';
@@ -24,7 +30,7 @@ import { travelHref, travelLocaleCodes, travelKeywordTitles, travelText } from '
 import type { TravelLocale } from '@/lib/travel/i18n';
 
 const ORIGIN = 'https://www.bosphoras.com';
-const activeDestinations = ['istanbul','bodrum','antalya','paris','saint-tropez','dubai','bali','phuket','koh-samui','maldives','los-cabos','saint-barthelemy','porto-cervo','mustique','courchevel-1850','st-moritz','aspen','niseko','costa-careyes'];
+const activeDestinations = ['istanbul','bodrum','antalya','paris','saint-tropez','dubai','bali','phuket','koh-samui','maldives','los-cabos','saint-barthelemy','porto-cervo','mustique','courchevel-1850','st-moritz','aspen','niseko','megeve','jackson-hole','big-sky','val-disere','verbier','costa-careyes'];
 const categoryLead: Record<TravelCategory, { keyword: string; checks: string[] }> = {
   hotels: { keyword: 'best hotels · 5 star hotels · luxury resorts · boutique hotels', checks: ['Room category, view and location', 'What is included in the final rate', 'Cancellation conditions and booking provider'] },
   villas: { keyword: 'luxury villas · private pool villas · beachfront villas', checks: ['Pool privacy, bedrooms and access', 'Included housekeeping and staff', 'Deposit, service fees and cancellation'] },
@@ -157,7 +163,7 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     title: pageTitle + ' | Bosphoras Luxury Stays',
     description,
     alternates: { canonical, ...(Object.keys(languageAlternates).length ? { languages: languageAlternates } : {}) },
-    openGraph: { title: pageTitle, description: (featureGuide?.slug === 'st-moritz'||featureGuide?.slug==='aspen'||featureGuide?.slug==='niseko'||featureGuide?.slug === 'koh-samui'||featureGuide?.slug==='maldives'||featureGuide?.slug==='los-cabos'||featureGuide?.slug==='saint-barthelemy'||featureGuide?.slug==='porto-cervo') ? description : t.value, url: canonical, siteName: 'Bosphoras Luxury Stays', type: 'website' },
+    openGraph: { title: pageTitle, description: (featureGuide?.slug === 'st-moritz'||featureGuide?.slug==='aspen'||featureGuide?.slug==='niseko'||featureGuide?.slug==='megeve'||featureGuide?.slug==='jackson-hole'||featureGuide?.slug==='big-sky'||featureGuide?.slug==='val-disere'||featureGuide?.slug==='verbier'||featureGuide?.slug === 'koh-samui'||featureGuide?.slug==='maldives'||featureGuide?.slug==='los-cabos'||featureGuide?.slug==='saint-barthelemy'||featureGuide?.slug==='porto-cervo') ? description : t.value, url: canonical, siteName: 'Bosphoras Luxury Stays', type: 'website' },
     robots: { index: ready, follow: true, 'max-image-preview': 'large' },
   };
 }
@@ -255,9 +261,13 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
   const isSaintBarth = kohGuide?.slug==='saint-barthelemy' && (locale==='fr'||locale==='en');
   const isCourchevel = kohGuide?.slug==='courchevel-1850' && (locale==='fr'||locale==='en');
   const isMustique = kohGuide?.slug==='mustique' && (locale==='fr'||locale==='en');
-  const isAlpine = Boolean(kohGuide && ['st-moritz','aspen','niseko'].includes(kohGuide.slug));
-  const alpineFaq = kohGuide?.slug==='st-moritz'?stMoritzDraftFaq:kohGuide?.slug==='aspen'?aspenDraftFaq:nisekoDraftFaq;
+  const isAlpine = Boolean(kohGuide && Object.prototype.hasOwnProperty.call(alpineAvailablePhotoPathsByCity,kohGuide.slug));
+  const alpineFaq = kohGuide?.slug==='st-moritz'?stMoritzDraftFaq:kohGuide?.slug==='aspen'?aspenDraftFaq:kohGuide?.slug==='megeve'?megeveDraftFaq:kohGuide?.slug==='jackson-hole'?jacksonHoleDraftFaq:kohGuide?.slug==='big-sky'?bigSkyDraftFaq:kohGuide?.slug==='val-disere'?valDisereDraftFaq:kohGuide?.slug==='verbier'?verbierDraftFaq:nisekoDraftFaq;
   const isPortoCervo = kohGuide?.slug==='porto-cervo' && (locale==='fr'||locale==='en');
+  // Unapproved alpine hotel and destination photos are excluded from JSON-LD as well as the UI.
+  const clearedImageSet = kohGuide && Object.prototype.hasOwnProperty.call(alpineAvailablePhotoPathsByCity,kohGuide.slug)
+    ? (alpineAvailablePhotoPathsByCity as Record<string, Set<string>>)[kohGuide.slug] : undefined;
+  const schemaHeroIsCleared = !clearedImageSet || clearedImageSet.has(kohGuide?.photos[kohGuide.hero].src || '');
   const node = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -294,7 +304,7 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
           headline:locale==='fr'?(isAlpine?kohGuide.headingFr:isCourchevel?'Courchevel 1850 : quatre palaces et cinq secteurs':isMustique?'Mustique : un hôtel et trois villas':isPortoCervo?'Porto Cervo : quatre hôtels et cinq façons de séjourner':isSaintBarth?'Saint-Barth : quatre hôtels d’exception et cinq secteurs':isLosCabos?'Hôtels de luxe à Los Cabos : quatre resorts et cinq zones':isMaldives?'Hôtels de luxe aux Maldives : quatre îles et cinq façons de séjourner':'Hôtels de luxe à Koh Samui : quatre adresses et cinq secteurs'):(isAlpine?kohGuide.headingEn:isCourchevel?'Courchevel 1850: four luxury palaces and five areas':isMustique?'Mustique: one hotel and three private villas':isPortoCervo?'Luxury hotels in Porto Cervo: four stays and five areas':isSaintBarth?'Luxury hotels in St Barth: four island hotels and five areas':isLosCabos?'Luxury hotels in Los Cabos: four resorts and five areas':isMaldives?'Luxury hotels in the Maldives: four resorts and five ways to stay':'Luxury hotels in Koh Samui: four hotels and five areas'),
           description:locale==='fr'?kohGuide.introFr:kohGuide.introEn,
           inLanguage:locale,mainEntityOfPage:base,
-          image:ORIGIN+kohGuide.photos[kohGuide.hero].src,
+          ...(schemaHeroIsCleared ? {image:ORIGIN+kohGuide.photos[kohGuide.hero].src} : {}),
           author:{'@type':'Organization',name:'Bosphoras Luxury Stays',url:ORIGIN+'/travel'},
           publisher:{'@type':'Organization',name:'Bosphoras Luxury Stays',url:ORIGIN+'/travel'}
         },
