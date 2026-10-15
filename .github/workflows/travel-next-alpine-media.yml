@@ -1,0 +1,51 @@
+name: Travel next alpine — genuine photo candidates (QA gated)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - scripts/download-next-alpine-media.py
+      - .github/workflows/travel-next-alpine-media.yml
+permissions:
+  contents: write
+concurrency:
+  group: travel-next-alpine-media
+  cancel-in-progress: false
+jobs:
+  import-photo-candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -m py_compile scripts/download-next-alpine-media.py
+      - name: Import property-specific and geographic candidate WebP (review gate stays closed)
+        run: python -u scripts/download-next-alpine-media.py
+      - name: Commit media candidates without a Vercel build
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for slug in st-moritz aspen niseko; do
+            [ ! -d "public/images/travel/$slug-premium" ] || git add "public/images/travel/$slug-premium"
+          done
+          for manifest in data/travel/stMoritzMediaCandidates.json data/travel/aspenMediaCandidates.json data/travel/nisekoMediaCandidates.json; do
+            [ ! -f "$manifest" ] || git add "$manifest"
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): three alpine destination media candidates awaiting visual and rights QA [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: travel-next-alpine-media-provenance
+          path: |
+            data/travel/stMoritzMediaCandidates.json
+            data/travel/aspenMediaCandidates.json
+            data/travel/nisekoMediaCandidates.json
+          if-no-files-found: ignore
