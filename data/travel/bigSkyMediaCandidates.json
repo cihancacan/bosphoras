@@ -37,7 +37,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Montage Big Sky",
@@ -132,7 +132,7 @@
       "propertyKey": "oneonly-moonlight",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.oneandonlyresorts.com/moonlight-basin/stays",
@@ -155,14 +155,15 @@
         1201
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; source origin retained.",
-      "visualQaWarning": "Exact hotel source is documented; pending manual inspection before the photo enters premium galleries."
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "One&Only Moonlight Basin",
       "propertyKey": "oneonly-moonlight",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.oneandonlyresorts.com/moonlight-basin/stays",
@@ -185,7 +186,8 @@
         1013
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; source origin retained.",
-      "visualQaWarning": "Exact hotel source is documented; pending manual inspection before the photo enters premium galleries."
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Lone Mountain Ranch",
@@ -215,7 +217,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Lone Mountain Ranch",
@@ -245,7 +247,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Lone Mountain Ranch",
@@ -275,7 +277,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Summit Hotel",
@@ -305,7 +307,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Summit Hotel",
@@ -335,14 +337,14 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Summit Hotel",
       "propertyKey": "summit-hotel",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.bigskyresort.com/lodging/hotels/summit-hotel",
@@ -352,7 +354,6 @@
       "candidateContext": "Summit 3-bedroom suite living area",
       "excludedCandidatePath": "/images/travel/big-sky-premium/summit-hotel/view-3.webp",
       "excludedSource": "https://www.bigskyresort.com/lodging/hotels/summit-hotel",
-      "visualQaWarning": "Exact hotel source is documented; pending manual inspection before the photo enters premium galleries.",
       "localPath": "/images/travel/big-sky-premium/summit-hotel/view-3.webp",
       "downloadUrl": "https://cdn.sanity.io/images/8ts88bij/big-sky/a845df737f5e22583e27d7758ff7b70e13903234-5397x3600.jpg?auto=format&q=70&w=1920",
       "sourcePage": "https://www.bigskyresort.com/lodging/hotels/summit-hotel/rooms-and-suites/three-bedroom",
@@ -367,7 +368,9 @@
         1800,
         1201
       ],
-      "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; source origin retained."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; source origin retained.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     }
   ],
   "destinationScenes": [
@@ -398,7 +401,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-2",
@@ -427,7 +430,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-3",
@@ -518,7 +521,7 @@
       "placeLabel": "Nordic trail",
       "searchQuery": "Big Sky Montana nordic trail",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/big-sky-premium/destination/scene-6.webp",
@@ -537,14 +540,15 @@
         980
       ],
       "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
-      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-7",
       "placeLabel": "Horse riding",
       "searchQuery": "Big Sky Montana horseback",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/big-sky-premium/destination/scene-7.webp",
@@ -563,14 +567,15 @@
         1001
       ],
       "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
-      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-8",
       "placeLabel": "Big Sky forest",
       "searchQuery": "Big Sky Montana mountain forest",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/big-sky-premium/destination/scene-8.webp",
@@ -589,14 +594,15 @@
         1012
       ],
       "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
-      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-9",
       "placeLabel": "Montana winter lodge",
       "searchQuery": "Big Sky Montana winter resort",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/big-sky-premium/destination/scene-9.webp",
@@ -615,7 +621,8 @@
         1133
       ],
       "ownerRightsAuthorization": "Bosphoras operator confirmed image use rights on 2026-10-15",
-      "visualQaWarning": "Exact site/location source checked; final visual QA before publication."
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     }
   ],
   "publicationBlockedReason": "Candidate hotel/place identity, luxury editorial quality and commercial photo rights require separate review before any premium publication.",

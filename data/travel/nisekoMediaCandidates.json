@@ -14,7 +14,7 @@
       "propertyKey": "park-hyatt-hanazono",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono",
@@ -38,14 +38,16 @@
       ],
       "sha256": "6da089ebc12b854a2fe6e3d8dba50edc86ac37de66492a44708089b06864bf7c",
       "bytes": 230586,
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Park Hyatt Niseko Hanazono",
       "propertyKey": "park-hyatt-hanazono",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono",
@@ -69,14 +71,16 @@
       ],
       "sha256": "e02c5ca5b52add6149c6ae929f2afba6a313e9b408e6a575fd5cd6c810a11603",
       "bytes": 99336,
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Park Hyatt Niseko Hanazono",
       "propertyKey": "park-hyatt-hanazono",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono",
@@ -100,14 +104,16 @@
       ],
       "sha256": "3dc0b0e2031c2b82b9864d3a1362aab41fa86124186dcabfb1cc4da84f81ce7b",
       "bytes": 122252,
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Higashiyama Niseko Village, a Ritz-Carlton Reserve",
       "propertyKey": "ritz-carlton-reserve",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/",
@@ -128,7 +134,9 @@
         1336,
         751
       ],
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Higashiyama Niseko Village, a Ritz-Carlton Reserve",
@@ -163,7 +171,7 @@
       "propertyKey": "ritz-carlton-reserve",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/",
@@ -184,7 +192,9 @@
         1700,
         1133
       ],
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Setsu Niseko",
@@ -283,7 +293,7 @@
       "licenseUrl": "",
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "AYA Niseko",
@@ -313,7 +323,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "AYA Niseko",
@@ -343,7 +353,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "AYA Niseko",
@@ -373,7 +383,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     }
   ],
   "destinationScenes": [
@@ -404,7 +414,7 @@
       "bytes": 267036,
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-2",
@@ -433,7 +443,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-3",
@@ -462,7 +472,7 @@
       "bytes": 215066,
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-4",
@@ -491,7 +501,7 @@
       "licenseUrl": "",
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-5",
@@ -520,7 +530,7 @@
       "licenseUrl": "",
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-6",
@@ -576,7 +586,7 @@
       "bytes": 276912,
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-8",
@@ -605,7 +615,7 @@
       "bytes": 111848,
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-9",

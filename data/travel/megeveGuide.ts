@@ -3,7 +3,7 @@ import { megeveDraftGuide } from './megeveDraftGuide';
 /** Staged FR/EN guide; NOT commercially image-approved and NOT indexed. */
 const draft=megeveDraftGuide;
 export const megeveGuide:FeaturedCityGuideData={
- ...draft,hero:"scene-1",secondary:"scene-2",
+ ...draft,hero:"scene-2",secondary:"scene-8",
  areas:draft.areas.map(x=>({...x})),experiences:draft.experiences.map(x=>({...x})),
  hotels:draft.hotels.map(x=>({...x})),checksFr:[...draft.checksFr],checksEn:[...draft.checksEn],
  photos:{

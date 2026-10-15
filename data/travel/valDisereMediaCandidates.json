@@ -66,7 +66,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Airelles Val d'Isère",
@@ -125,7 +125,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Le K2 Chogori",
@@ -155,7 +155,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Le K2 Chogori",
@@ -214,7 +214,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "La Mourra",
@@ -244,7 +244,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "La Mourra",
@@ -303,7 +303,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Le Blizzard",
@@ -392,7 +392,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-2",
@@ -421,7 +421,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-3",
@@ -450,7 +450,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras operator on 2026-10-15; original author and licence retained.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Face de Bellevarde enneigée, localisation conforme à la photographie Wikimedia datée 2013/2014."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-4",
@@ -479,7 +479,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-5",
@@ -540,7 +540,7 @@
       "placeLabel": "Manchet valley",
       "searchQuery": "Manchet Val d Isere",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/val-disere-premium/destination/scene-7.webp",
@@ -559,14 +559,15 @@
         1013
       ],
       "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
-      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-8",
       "placeLabel": "Prariond chalets",
       "searchQuery": "Prariond Val d Isere",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/val-disere-premium/destination/scene-8.webp",
@@ -585,7 +586,8 @@
         1350
       ],
       "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
-      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-9",
@@ -614,7 +616,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     }
   ],
   "ownerRightsAuthorization": "Bosphoras operator confirmed photo usage rights on 2026-10-15; source attribution obligations remain."

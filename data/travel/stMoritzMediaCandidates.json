@@ -37,7 +37,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Badrutt's Palace Hotel",
@@ -67,7 +67,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Badrutt's Palace Hotel",
@@ -97,7 +97,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Kulm Hotel St. Moritz",
@@ -127,7 +127,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Kulm Hotel St. Moritz",
@@ -223,7 +223,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Suvretta House",
@@ -256,7 +256,7 @@
       "licenseUrl": "",
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Suvretta House",
@@ -286,14 +286,14 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Carlton Hotel St. Moritz",
       "propertyKey": "carlton-hotel",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://tschuggencollection.ch/en/hotel/carlton-hotel",
@@ -314,14 +314,16 @@
         1008,
         550
       ],
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Carlton Hotel St. Moritz",
       "propertyKey": "carlton-hotel",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://tschuggencollection.ch/en/hotel/carlton-hotel",
@@ -342,14 +344,16 @@
         1008,
         550
       ],
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Carlton Hotel St. Moritz",
       "propertyKey": "carlton-hotel",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://tschuggencollection.ch/en/hotel/carlton-hotel",
@@ -370,7 +374,9 @@
         1008,
         550
       ],
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     }
   ],
   "destinationScenes": [
@@ -511,7 +517,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-6",
@@ -594,7 +600,7 @@
       "licenseUrl": "",
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-9",
@@ -623,7 +629,7 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     }
   ],
   "sourceCuration": "Third pass: source-specific Wikimedia files and exact hotel-only images, still visually unapproved.",

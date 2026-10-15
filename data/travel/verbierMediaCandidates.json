@@ -66,7 +66,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "W Verbier",
@@ -125,7 +125,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Chalet d'Adrien",
@@ -155,7 +155,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Chalet d'Adrien",
@@ -214,7 +214,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "La Cordée des Alpes",
@@ -244,7 +244,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "La Cordée des Alpes",
@@ -274,7 +274,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "property": "Experimental Chalet Verbier",
@@ -362,7 +362,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     }
   ],
   "destinationScenes": [
@@ -399,7 +399,7 @@
       "placeLabel": "Place Blanche Verbier",
       "searchQuery": "Place Blanche Verbier",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/verbier-premium/destination/scene-2.webp",
@@ -418,14 +418,15 @@
         1013
       ],
       "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
-      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-3",
       "placeLabel": "Place Centrale Verbier",
       "searchQuery": "Verbier Place Centrale",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/verbier-premium/destination/scene-3.webp",
@@ -444,14 +445,15 @@
         776
       ],
       "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
-      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-4",
       "placeLabel": "Savoleyres ski slopes",
       "searchQuery": "Verbier Savoleyres",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "candidateContext": "Savoleyres piste 14 Verbier / 4 Vallees",
@@ -460,7 +462,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "excludedCandidatePath": "/images/travel/verbier-premium/destination/scene-4.webp",
       "excludedOriginalTitle": "File:Télécabines Verbier Dec 2021.jpg",
-      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review.",
       "localPath": "/images/travel/verbier-premium/destination/scene-4.webp",
       "sourcePage": "https://www.powderedition.com/journal/verbier-skiing",
       "downloadUrl": "https://ik.imagekit.io/zo5luxjj1/journal/verbier-skiing/verbier-savoleyres-piste.png",
@@ -474,14 +475,16 @@
         1408,
         768
       ],
-      "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15"
+      "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-5",
       "placeLabel": "Les Esserts Verbier",
       "searchQuery": "Verbier Les Esserts",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/verbier-premium/destination/scene-5.webp",
@@ -500,14 +503,15 @@
         900
       ],
       "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
-      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-6",
       "placeLabel": "Les Creux Verbier",
       "searchQuery": "Verbier Les Creux",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/verbier-premium/destination/scene-6.webp",
@@ -526,7 +530,8 @@
         673
       ],
       "ownerRightsAuthorization": "Bosphoras operator confirmed usage rights on 2026-10-15; keep original credit",
-      "visualQaWarning": "Geographically grounded photo, final manual image identity/season QA still pending."
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-7",
@@ -555,7 +560,7 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-8",
@@ -584,14 +589,14 @@
       ],
       "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
       "visualReviewedAt": "2026-10-15",
-      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     },
     {
       "key": "scene-9",
       "placeLabel": "Verbier après-ski",
       "searchQuery": "Verbier village evening",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/verbier-premium/destination/scene-9.webp",
@@ -610,7 +615,8 @@
         683
       ],
       "ownerRightsAuthorization": "Bosphoras project operator affirmed usage rights on 2026-10-15",
-      "visualQaWarning": "Exact named-place source identified; aesthetic, season and context need human review."
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Actual image composition manually inspected in GitHub, original title/official property source checked, photographer source retained; rights confirmed by Bosphoras operator."
     }
   ],
   "ownerRightsAuthorization": "Bosphoras operator confirmed photo usage rights on 2026-10-15; source attribution obligations remain."

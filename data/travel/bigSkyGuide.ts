@@ -3,7 +3,7 @@ import { bigSkyDraftGuide } from './bigSkyDraftGuide';
 /** Staged FR/EN guide; NOT commercially image-approved and NOT indexed. */
 const draft=bigSkyDraftGuide;
 export const bigSkyGuide:FeaturedCityGuideData={
- ...draft,hero:"scene-1",secondary:"scene-3",
+ ...draft,hero:"scene-1",secondary:"scene-2",
  areas:draft.areas.map(x=>({...x})),experiences:draft.experiences.map(x=>({...x})),
  hotels:draft.hotels.map(x=>({...x})),checksFr:[...draft.checksFr],checksEn:[...draft.checksEn],
  photos:{
