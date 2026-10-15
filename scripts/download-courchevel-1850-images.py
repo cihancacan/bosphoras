@@ -127,7 +127,7 @@ def save(item,urls,used,source_page):
         digest=hashlib.sha256(payload).hexdigest()
         if digest in used:continue
         used.add(digest)
-        local=Path(item["localPath"].lstrip("/"))
+        local=Path("public" + item["localPath"])
         local.parent.mkdir(parents=True,exist_ok=True)
         local.write_bytes(payload)
         item.update(status="downloaded",downloadUrl=url,sourcePage=source_page,
@@ -166,7 +166,7 @@ def main():
                 digest=hashlib.sha256(data).hexdigest()
                 if digest in USED:continue
                 USED.add(digest)
-                local=Path(item["localPath"].lstrip("/"))
+                local=Path("public" + item["localPath"])
                 local.parent.mkdir(parents=True,exist_ok=True)
                 local.write_bytes(data)
                 item.update(status="downloaded",downloadUrl=url,sourcePage=prop["pages"][0],
