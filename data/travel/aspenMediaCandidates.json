@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 4,
+  "downloadedDestinationCandidates": 8,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -182,21 +182,24 @@
         "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/overview/",
         "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/rooms/"
       ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
       "localPath": "/images/travel/aspen-premium/st-regis-aspen/view-1.webp",
-      "downloadUrl": "https://www.marriott.com/content/dam/marriott-digital/digital-merchandising/us-canada/en_us/cobrand-cards/assets/pdt-0513-DCA-125892172130576.png",
-      "sourcePage": "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/rooms/",
-      "candidateContext": "Credit Card",
-      "sha256": "4abc5b45726987f2168cb21dc9095ef3c7d66817c88f6973b38a5e711db58693",
-      "bytes": 73176,
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/ASEXR/asexr-exterior-9054-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+      "sourcePage": "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/photos/",
+      "candidateContext": "",
+      "sha256": "4cd06e04ec77a99f26fd22d1191b7427440a97f0b1104d19b6e20d329906dfb6",
+      "bytes": 282016,
       "originalSize": [
-        2000,
-        1260
+        1336,
+        890
       ],
       "outputSize": [
-        1700,
-        1071
-      ]
+        1336,
+        890
+      ],
+      "credit": "St. Regis Aspen Resort · Marriott official property website",
+      "license": "",
+      "licenseUrl": ""
     },
     {
       "property": "The St. Regis Aspen Resort",
@@ -236,21 +239,24 @@
         "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/overview/",
         "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/rooms/"
       ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
       "localPath": "/images/travel/aspen-premium/st-regis-aspen/view-3.webp",
-      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/ASEXR/asexr-deluxe-balcony-4667-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1200px:*",
-      "sourcePage": "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/rooms/",
+      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/ASEXR/asexr-exterior-4586-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
+      "sourcePage": "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/photos/",
       "candidateContext": "",
-      "sha256": "15227101af33eed6c3ce155c304b30bb972690f22006295cf75f8cc4b88d1a6d",
-      "bytes": 133692,
+      "sha256": "8198745c6b4beea949a23f519e788a768dd059d4b85ba9c94f22c249a477930e",
+      "bytes": 399758,
       "originalSize": [
-        1200,
-        800
+        1336,
+        890
       ],
       "outputSize": [
-        1200,
-        800
-      ]
+        1336,
+        890
+      ],
+      "credit": "St. Regis Aspen Resort · Marriott official property website",
+      "license": "",
+      "licenseUrl": ""
     },
     {
       "property": "W Aspen",
@@ -342,24 +348,24 @@
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
       "localPath": "/images/travel/aspen-premium/destination/scene-1.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Skiers_on_Aspen_Mountain%2C_Colorado_in_1961.jpg/1920px-Skiers_on_Aspen_Mountain%2C_Colorado_in_1961.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Skiers_on_Aspen_Mountain,_Colorado_in_1961.jpg",
-      "candidateContext": "File:Skiers on Aspen Mountain, Colorado in 1961.jpg",
-      "sha256": "1cf550d330b51b6ec7b94c0388ec54927dc4b1957aefa9c5afba81afb5f30fc7",
-      "bytes": 141154,
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Aspen_Mountain_Silver_Queen_Gondola_over_Silver_dip_run.jpg/1920px-Aspen_Mountain_Silver_Queen_Gondola_over_Silver_dip_run.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aspen_Mountain_Silver_Queen_Gondola_over_Silver_dip_run.jpg",
+      "candidateContext": "Aspen Mountain Silver Queen Gondola over Silver dip run.jpg",
+      "sha256": "fb3606b939441f4c61e9eefc3193e9e15d7067daa65fea650d635e7203ce03fd",
+      "bytes": 349556,
       "originalSize": [
         1920,
-        1419
+        1281
       ],
       "outputSize": [
-        1691,
-        1250
+        1800,
+        1201
       ],
-      "credit": "<a href=\"//commons.wikimedia.org/wiki/User:Buaidh\" title=\"User:Buaidh\">Buaidh</a>",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+      "credit": "This Photo  was taken by    Wolfgang Moroder   .        \n Feel free to use my photos, but please mention me as the author and send me a   message .        \n  \n   \n \n         \n   This image is  not in the  public domain  . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically  excludes use in social media , if applicable terms of the licenses listed here not appropriate. \n     \n\n \n         \n   Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates  derivative  or  extract .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
     },
     {
       "key": "scene-2",
@@ -391,37 +397,105 @@
       "key": "scene-3",
       "placeLabel": "Silver Queen Gondola",
       "searchQuery": "Aspen Silver Queen Gondola",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
+      "localPath": "/images/travel/aspen-premium/destination/scene-3.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Silver_Queen_Gondola_base_station%2C_Gondola_Plaza%2C_Aspen%2C_2009.jpg/1920px-Silver_Queen_Gondola_base_station%2C_Gondola_Plaza%2C_Aspen%2C_2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Silver_Queen_Gondola_base_station,_Gondola_Plaza,_Aspen,_2009.jpg",
+      "candidateContext": "Silver Queen Gondola base station, Gondola Plaza, Aspen, 2009.jpg",
+      "credit": "DimiTalen",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "sha256": "522c36012c753b931ec082b5b421676572d7ee20e676220d59a536b93f349519",
+      "bytes": 349786,
+      "originalSize": [
+        1920,
+        1277
+      ],
+      "outputSize": [
+        1800,
+        1197
+      ]
     },
     {
       "key": "scene-4",
       "placeLabel": "Aspen Main Street",
       "searchQuery": "Aspen Main Street",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
+      "localPath": "/images/travel/aspen-premium/destination/scene-4.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/La_Fave_Block%2C_Aspen%2C_CO.jpg/1920px-La_Fave_Block%2C_Aspen%2C_CO.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:La_Fave_Block,_Aspen,_CO.jpg",
+      "candidateContext": "La Fave Block, Aspen, CO.jpg",
+      "credit": "Daniel Case",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sha256": "ff7d5bd65c8ac8ea5720ee962e1bb0ff3c8c4246c88af537c032b24018b00c69",
+      "bytes": 420778,
+      "originalSize": [
+        1920,
+        1595
+      ],
+      "outputSize": [
+        1625,
+        1350
+      ]
     },
     {
       "key": "scene-5",
       "placeLabel": "Aspen West End",
       "searchQuery": "Aspen historic houses Colorado",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
+      "localPath": "/images/travel/aspen-premium/destination/scene-5.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Shilling-Lamb_House.JPG/1920px-Shilling-Lamb_House.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Shilling-Lamb_House.JPG",
+      "candidateContext": "Shilling-Lamb House.JPG",
+      "credit": "Jeffrey Beall",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sha256": "10c0aac6d425df1ded8eb01d5b7c373cad8a37f97c5e36c1f11414bca47cfa65",
+      "bytes": 818022,
+      "originalSize": [
+        1920,
+        1623
+      ],
+      "outputSize": [
+        1597,
+        1350
+      ]
     },
     {
       "key": "scene-6",
       "placeLabel": "Aspen Highlands",
       "searchQuery": "Aspen Highlands Colorado",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
+      "localPath": "/images/travel/aspen-premium/destination/scene-6.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Aspen_Highlands_bowl_from_Loge_Peak_.jpg/1920px-Aspen_Highlands_bowl_from_Loge_Peak_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aspen_Highlands_bowl_from_Loge_Peak_.jpg",
+      "candidateContext": "Aspen Highlands bowl from Loge Peak .jpg",
+      "credit": "This Photo  was taken by    Wolfgang Moroder   .        \n Feel free to use my photos, but please mention me as the author and send me a   message .        \n  \n   \n \n         \n   This image is  not in the  public domain  . Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically  excludes use in social media , if applicable terms of the licenses listed here not appropriate. \n     \n\n \n         \n   Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved. Please if you think that any changes should be required, please inform the author. Otherwise you can upload a new image with a new name. Please use one of the templates  derivative  or  extract .",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sha256": "6436f5ccc71d9ffcd8fb246f038bad710ce53a5eecae2371d1d6fd6bfb79204e",
+      "bytes": 361338,
+      "originalSize": [
+        1920,
+        1281
+      ],
+      "outputSize": [
+        1800,
+        1201
+      ]
     },
     {
       "key": "scene-7",
@@ -484,5 +558,6 @@
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
     }
-  ]
+  ],
+  "sourceCuration": "Third pass: source-specific Wikimedia files and exact hotel-only images, still visually unapproved."
 }
