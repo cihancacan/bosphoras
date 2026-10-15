@@ -3,6 +3,7 @@
  * Sources: docs/travel-gstaad-source-review.md.
  */
 export const gstaadDraftGuide = {
+  "slug": "gstaad",
   "name": "Gstaad",
   "country": "Suisse",
   "hero": "gstaad-village",

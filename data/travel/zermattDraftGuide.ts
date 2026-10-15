@@ -3,6 +3,7 @@
  * Sources: docs/travel-zermatt-source-review.md.
  */
 export const zermattDraftGuide = {
+  "slug": "zermatt",
   "name": "Zermatt",
   "country": "Suisse",
   "hero": "matterhorn",

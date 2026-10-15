@@ -3,6 +3,7 @@
  * Sources: docs/travel-megeve-source-review.md.
  */
 export const megeveDraftGuide = {
+  "slug": "megeve",
   "name": "Megève",
   "country": "France",
   "hero": "village-winter",
