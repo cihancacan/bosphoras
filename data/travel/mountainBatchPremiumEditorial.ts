@@ -28,7 +28,7 @@ function hotelEntries(
  const out:Record<string,BodrumHotelEditorial>={};
  for(let i=0;i<hotels.length;i++){
   const h=hotels[i],key=media[i*3]?.propertyKey;
-  const photos=media.filter(x=>x.propertyKey===key&&approved(x)).map(x=>mediaPhoto(x,h.name));
+  const photos=media.filter(approved).filter(x=>x.propertyKey===key).map(x=>mediaPhoto(x,h.name));
   out[h.name]={photos,sourcePage:h.officialUrl,credit:h.name+' · origine vérifiée',
    frBest:h.frWatch,enBest:h.enWatch,frStory:h.fr,enStory:h.en};
  }
