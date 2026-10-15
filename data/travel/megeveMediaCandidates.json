@@ -17,8 +17,9 @@
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
-        "https://www.fourseasons.com/fr/properties/megeve/",
-        "https://www.fourseasons.com/megeve/accommodations/"
+        "https://www.fourseasons.com/megeve/",
+        "https://www.fourseasons.com/fr/megeve/",
+        "https://www.fourseasons.com/megeve/photos-and-videos/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified"
     },
@@ -30,8 +31,9 @@
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
-        "https://www.fourseasons.com/fr/properties/megeve/",
-        "https://www.fourseasons.com/megeve/accommodations/"
+        "https://www.fourseasons.com/megeve/",
+        "https://www.fourseasons.com/fr/megeve/",
+        "https://www.fourseasons.com/megeve/photos-and-videos/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified"
     },
@@ -43,8 +45,9 @@
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
-        "https://www.fourseasons.com/fr/properties/megeve/",
-        "https://www.fourseasons.com/megeve/accommodations/"
+        "https://www.fourseasons.com/megeve/",
+        "https://www.fourseasons.com/fr/megeve/",
+        "https://www.fourseasons.com/megeve/photos-and-videos/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified"
     },
@@ -57,7 +60,7 @@
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
-        "https://www.fermesdemarie.com/en"
+        "https://www.fermesdemarie.com/en/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/megeve-premium/les-fermes-de-marie/view-1.webp",
@@ -85,24 +88,24 @@
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
-        "https://www.fermesdemarie.com/en"
+        "https://www.fermesdemarie.com/en/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "candidateContext": "Winter-at-aux-Fermes-de-Marie",
+      "credit": "Les Fermes de Marie · official property source",
       "localPath": "/images/travel/megeve-premium/les-fermes-de-marie/view-2.webp",
-      "downloadUrl": "https://cdn.prod.website-files.com/67bd7c1b97c847605ceed35e/6890950bfcbdefa5681ed02a_hotel-5-etoiles-megeve-les-fermes-de-marie.jpg",
+      "downloadUrl": "https://cdn.prod.website-files.com/67bd7c1b97c847605ceed35e/67bd7c1b97c847605ceedd21_les-fermes-de-marie-hiver-sejours-megeve.jpg",
       "sourcePage": "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
-      "candidateContext": "hotel-5-stars-Megeve-les-fermes-de-marie",
-      "sha256": "1e46cf0591cc2d2b6b0c15858996330554bb017897794e0bc4337d166b90f337",
-      "bytes": 213514,
+      "sha256": "efec1600a1fb84ed579b08dcefd2d68c8d60ca38b74640986041465b79de3d7f",
+      "bytes": 111256,
       "originalSize": [
-        1920,
-        1080
+        1100,
+        500
       ],
       "outputSize": [
-        1700,
-        956
-      ],
-      "credit": ""
+        1100,
+        500
+      ]
     },
     {
       "property": "Les Fermes de Marie",
@@ -113,25 +116,111 @@
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
-        "https://www.fermesdemarie.com/en"
+        "https://www.fermesdemarie.com/en/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "candidateContext": "Marie-farm-summer vacation",
+      "credit": "Les Fermes de Marie · official property source",
       "localPath": "/images/travel/megeve-premium/les-fermes-de-marie/view-3.webp",
-      "downloadUrl": "https://cdn.prod.website-files.com/67bd7c1b97c847605ceed35e/6890950bfcbdefa5681ed02a_hotel-5-etoiles-megeve-les-fermes-de-marie-p-1080.jpg",
+      "downloadUrl": "https://cdn.prod.website-files.com/67bd7c1b97c847605ceed35e/69b16a6c6679f89befea74f9_vacances-ete-fermes-de-marie.png",
       "sourcePage": "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
-      "candidateContext": "hotel-5-stars-Megeve-les-fermes-de-marie",
-      "sha256": "5761e13d17d70c5d888054dc8ab4077f234f4b58ac52672cead16128598303aa",
-      "bytes": 103276,
+      "sha256": "9cb9d9d30862c01f12a974b48240fda92aede2fe23e7a2393d29e26796fef701",
+      "bytes": 295960,
       "originalSize": [
-        1080,
-        608
+        1400,
+        800
       ],
       "outputSize": [
-        1080,
-        608
+        1400,
+        800
+      ]
+    },
+    {
+      "property": "L'Alpaga",
+      "propertyKey": "l-alpaga",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Original hotel site file is not a commercial photo licence.",
+      "sourcePages": [
+        "https://alpaga.com/fr/proprietes/hotel-alpaga/chambres-suites/",
+        "https://alpaga.com/fr/proprietes/hotel-alpaga/",
+        "https://alpaga.com/"
       ],
-      "visualQaWarning": "Même cliché source que view-2 ; le redimensionnement ne constitue pas une nouvelle photo.",
-      "credit": ""
+      "localPath": "/images/travel/megeve-premium/l-alpaga/view-1.webp",
+      "downloadUrl": "https://alpaga.com/media/twtemvjg/2023_hal_bedroom_charlotte_lindet_bedroom.jpg?width=1920&v=1dbcbadfbc36930",
+      "sourcePage": "https://alpaga.com/fr/proprietes/hotel-alpaga/chambres-suites/",
+      "candidateContext": "Un lit douillet vert foncé est placé contre un mur en bois avec deux portraits au-dessus.",
+      "sha256": "ef4feb007134b08c4da922226f72c7dd439ffaca47eb569bf42ea97031165a55",
+      "bytes": 96888,
+      "originalSize": [
+        1920,
+        940
+      ],
+      "outputSize": [
+        1700,
+        832
+      ],
+      "credit": "L'Alpaga · official property source"
+    },
+    {
+      "property": "L'Alpaga",
+      "propertyKey": "l-alpaga",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Original hotel site file is not a commercial photo licence.",
+      "sourcePages": [
+        "https://alpaga.com/fr/proprietes/hotel-alpaga/chambres-suites/",
+        "https://alpaga.com/fr/proprietes/hotel-alpaga/",
+        "https://alpaga.com/"
+      ],
+      "localPath": "/images/travel/megeve-premium/l-alpaga/view-2.webp",
+      "downloadUrl": "https://alpaga.com/media/hytppttc/225a4217.jpg?width=1200&v=1dbc966ac58a7a0",
+      "sourcePage": "https://alpaga.com/fr/proprietes/hotel-alpaga/chambres-suites/",
+      "candidateContext": "Un canapé au toucher plume est placé près du mur en bois avec une table basse noire.",
+      "sha256": "85469c9e4e0865e73d242c113a3a208b76b7bf4f5e96567304ccd965922fd694",
+      "bytes": 47340,
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "credit": "L'Alpaga · official property source"
+    },
+    {
+      "property": "L'Alpaga",
+      "propertyKey": "l-alpaga",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Original hotel site file is not a commercial photo licence.",
+      "sourcePages": [
+        "https://alpaga.com/fr/proprietes/hotel-alpaga/chambres-suites/",
+        "https://alpaga.com/fr/proprietes/hotel-alpaga/",
+        "https://alpaga.com/"
+      ],
+      "localPath": "/images/travel/megeve-premium/l-alpaga/view-3.webp",
+      "downloadUrl": "https://alpaga.com/media/nycnlthp/225a4228.jpg?width=1200&v=1dbc966bdd82d70",
+      "sourcePage": "https://alpaga.com/fr/proprietes/hotel-alpaga/chambres-suites/",
+      "candidateContext": "Un lit douillet est placé près d'une grande fenêtre vitrée avec deux portraits au-dessus.",
+      "sha256": "f59aca32b67c51e3065125fa7b69820c45aea5fc2a62b1c94c5f3a2696d5e12d",
+      "bytes": 48506,
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "credit": "L'Alpaga · official property source"
     },
     {
       "property": "Lodge Park",
@@ -142,25 +231,24 @@
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.lodgepark.com/en/hotel-center-of-megeve",
-        "https://www.lodgepark.com/en"
+        "https://www.lodgepark.com/en/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "candidateContext": "the-lodge-reset-recovery-longevity-club-megeve",
+      "credit": "Lodge Park · official property source",
       "localPath": "/images/travel/megeve-premium/lodge-park/view-1.webp",
-      "downloadUrl": "https://cdn.prod.website-files.com/67bd7d3ab637857b69461f63/69eb16822a33d8af35fa4b9a_brunch_lunch_megeve%20(22).jpg",
-      "sourcePage": "https://www.lodgepark.com/en",
-      "candidateContext": "Official page sharing image",
-      "sha256": "21182109e2140e1787033b8e3c842f5dc49e35fd27f1667a458add9ecef3f650",
-      "bytes": 252098,
+      "downloadUrl": "https://cdn.prod.website-files.com/67bd7d3ab637857b69461f8d/6a9a85290a3f566ea0f595b1_the-lodge-reset-recuperation-longevity-club-megeve.png",
+      "sourcePage": "https://www.lodgepark.com/en/hotel-center-of-megeve",
+      "sha256": "432a9faf44456b0e12112844c5d8e03ff081e49d366bd5a8efc896e5b12685ad",
+      "bytes": 60082,
       "originalSize": [
-        1920,
-        1080
+        921,
+        558
       ],
       "outputSize": [
-        1700,
-        956
-      ],
-      "visualQaWarning": "À CONTRÔLER : image de restauration. Ne pas l’utiliser comme façade ou chambre.",
-      "credit": ""
+        921,
+        558
+      ]
     },
     {
       "property": "Lodge Park",
@@ -171,7 +259,7 @@
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.lodgepark.com/en/hotel-center-of-megeve",
-        "https://www.lodgepark.com/en"
+        "https://www.lodgepark.com/en/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/megeve-premium/lodge-park/view-2.webp",
@@ -199,110 +287,24 @@
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.lodgepark.com/en/hotel-center-of-megeve",
-        "https://www.lodgepark.com/en"
+        "https://www.lodgepark.com/en/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "candidateContext": "exclusive-offer-good-kissers-from-megeve",
+      "credit": "Lodge Park · official property source",
       "localPath": "/images/travel/megeve-premium/lodge-park/view-3.webp",
-      "downloadUrl": "https://cdn.prod.website-files.com/67bd7d3ab637857b69461f8d/67bd7d3ab637857b694625db_hotel%2520de%2520luxe%2520megeve-p-1080.webp",
+      "downloadUrl": "https://cdn.prod.website-files.com/67bd7d3ab637857b69461f8d/67bd7d3ab637857b6946267b_offre-romantique-megeve%20(1).webp",
       "sourcePage": "https://www.lodgepark.com/en/hotel-center-of-megeve",
-      "candidateContext": "Hotel-Lodge-Park-Megeve",
-      "sha256": "78023483f686180a5f8609486e2806e92b95a5b5df2f126968b73768cf2b5653",
-      "bytes": 37822,
+      "sha256": "f5e95edf28346b209d3491296ff2d917a49b7cca0e2c74dda6a548a1f62fb2f1",
+      "bytes": 44618,
       "originalSize": [
-        1080,
-        608
+        921,
+        558
       ],
       "outputSize": [
-        1080,
-        608
-      ],
-      "credit": ""
-    },
-    {
-      "property": "Zannier Le Chalet",
-      "propertyKey": "zannier-le-chalet",
-      "key": "view-1",
-      "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "sourcePages": [
-        "https://www.zannierhotels.com/hotels/le-chalet-winter/",
-        "https://www.zannierhotels.com/hotels/le-chalet-summer/"
-      ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "localPath": "/images/travel/megeve-premium/zannier-le-chalet/view-1.webp",
-      "downloadUrl": "https://www.zannierhotels.com/wp-content/uploads/2025/09/Zannier-Le-Chalet-Suite-1-3-©-Zannier-Hotels.webp",
-      "sourcePage": "https://www.zannierhotels.com/hotels/le-chalet-winter/",
-      "candidateContext": "Official page sharing image",
-      "sha256": "72689999108f64aceeb2f6713a46a1a468c4adc8491d9c342498b16ca47aca32",
-      "bytes": 124152,
-      "originalSize": [
-        1256,
-        834
-      ],
-      "outputSize": [
-        1256,
-        834
-      ],
-      "credit": ""
-    },
-    {
-      "property": "Zannier Le Chalet",
-      "propertyKey": "zannier-le-chalet",
-      "key": "view-2",
-      "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "sourcePages": [
-        "https://www.zannierhotels.com/hotels/le-chalet-winter/",
-        "https://www.zannierhotels.com/hotels/le-chalet-summer/"
-      ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "localPath": "/images/travel/megeve-premium/zannier-le-chalet/view-2.webp",
-      "downloadUrl": "https://www.zannierhotels.com/wp-content/uploads/2025/04/Zannier-Hotels-Warm.webp",
-      "sourcePage": "https://www.zannierhotels.com/hotels/le-chalet-winter/",
-      "candidateContext": "",
-      "sha256": "76c1b95d9132084b9959de9386126506af699c0f43885c5832111ad4f34208be",
-      "bytes": 78432,
-      "originalSize": [
-        1768,
-        1126
-      ],
-      "outputSize": [
-        1700,
-        1083
-      ],
-      "visualQaWarning": "À CONTRÔLER : image générique Zannier Warm, aucune chambre Le Chalet clairement identifiée.",
-      "credit": ""
-    },
-    {
-      "property": "Zannier Le Chalet",
-      "propertyKey": "zannier-le-chalet",
-      "key": "view-3",
-      "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "sourcePages": [
-        "https://www.zannierhotels.com/hotels/le-chalet-winter/",
-        "https://www.zannierhotels.com/hotels/le-chalet-summer/"
-      ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "localPath": "/images/travel/megeve-premium/zannier-le-chalet/view-3.webp",
-      "downloadUrl": "https://www.zannierhotels.com/wp-content/uploads/2026/09/One-Michelin-Key.webp",
-      "sourcePage": "https://www.zannierhotels.com/hotels/le-chalet-winter/",
-      "candidateContext": "",
-      "sha256": "c602eeeac1211d73ae56e1e905053b3139843c064fa1401b1bd62d9ccb3cc221",
-      "bytes": 15290,
-      "originalSize": [
-        1824,
-        1368
-      ],
-      "outputSize": [
-        1667,
-        1250
-      ],
-      "visualQaWarning": "À REMPLACER : visuel de récompense ou logo, ne représente ni chambre ni espace hôtelier.",
-      "credit": ""
+        921,
+        558
+      ]
     }
   ],
   "destinationScenes": [
@@ -440,6 +442,6 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
     }
   ],
-  "publicationBlockedReason": "Missing images, duplicate originals, uncertain visual identity and/or unverified commercial photo rights.",
+  "publicationBlockedReason": "Candidate matches/visual identities and rights still require independent review. Zannier excluded because featured hotel is L'Alpaga.",
   "candidateUniquenessAudit": "Image source URL identity compared, duplicate derivatives warned and hidden from planned galleries."
 }

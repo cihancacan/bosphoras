@@ -1,0 +1,429 @@
+{
+  "destination": "big-sky",
+  "generatedAt": "2026-10-15T13:27:12.348222+00:00",
+  "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
+  "expectedHotelPhotos": 12,
+  "expectedDestinationPhotos": 9,
+  "downloadedHotelCandidates": 9,
+  "downloadedDestinationCandidates": 3,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "hotels": [
+    {
+      "property": "Montage Big Sky",
+      "propertyKey": "montage-big-sky",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.montage.com/bigsky/",
+        "https://www.montage.com/bigsky/accommodations/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/big-sky-premium/montage-big-sky/view-1.webp",
+      "downloadUrl": "https://uploads.montage.com/uploads/sites/11/2023/03/16123940/MBS-Architecture-Guestroom-King-Peak-View-East-2-scaled.jpeg",
+      "sourcePage": "https://www.montage.com/bigsky/accommodations/",
+      "candidateContext": "Official page sharing image",
+      "sha256": "b0779d11e69aab971e32f522af6468f70ca6fbd0d6ab5e53f992003240a1c458",
+      "bytes": 151408,
+      "originalSize": [
+        2560,
+        1626
+      ],
+      "outputSize": [
+        1700,
+        1080
+      ]
+    },
+    {
+      "property": "Montage Big Sky",
+      "propertyKey": "montage-big-sky",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.montage.com/bigsky/",
+        "https://www.montage.com/bigsky/accommodations/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/big-sky-premium/montage-big-sky/view-2.webp",
+      "downloadUrl": "https://uploads.montage.com/uploads/sites/11/2023/03/16123940/MBS-Architecture-Guestroom-King-Peak-View-East-2-scaled.webp",
+      "sourcePage": "https://www.montage.com/bigsky/accommodations/",
+      "candidateContext": "Official page sharing image",
+      "sha256": "ef4d03b2d8488095971e838ca89fb5f0f003c1dd264858d14e8447b81ac424d1",
+      "bytes": 142332,
+      "originalSize": [
+        2560,
+        1626
+      ],
+      "outputSize": [
+        1700,
+        1080
+      ]
+    },
+    {
+      "property": "Montage Big Sky",
+      "propertyKey": "montage-big-sky",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.montage.com/bigsky/",
+        "https://www.montage.com/bigsky/accommodations/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/big-sky-premium/montage-big-sky/view-3.webp",
+      "downloadUrl": "https://uploads.montage.com/uploads/sites/11/2026/09/17060146/MBS-Social-Kyle-Niego-Fall-2026-Cowboy-Tears-Horseback-Riding-1-1024x683.webp",
+      "sourcePage": "https://www.montage.com/bigsky/",
+      "candidateContext": "Two women riding horses in Big Sky",
+      "sha256": "7db4f813089a486815539bfe3f547623e06ea8025fdc5225698250d4a039bfd0",
+      "bytes": 113056,
+      "originalSize": [
+        1024,
+        683
+      ],
+      "outputSize": [
+        1024,
+        683
+      ]
+    },
+    {
+      "property": "One&Only Moonlight Basin",
+      "propertyKey": "oneonly-moonlight",
+      "key": "view-1",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.oneandonlyresorts.com/moonlight-basin/stays",
+        "https://www.oneandonlyresorts.com/moonlight-basin"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "One&Only Moonlight Basin",
+      "propertyKey": "oneonly-moonlight",
+      "key": "view-2",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.oneandonlyresorts.com/moonlight-basin/stays",
+        "https://www.oneandonlyresorts.com/moonlight-basin"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "One&Only Moonlight Basin",
+      "propertyKey": "oneonly-moonlight",
+      "key": "view-3",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.oneandonlyresorts.com/moonlight-basin/stays",
+        "https://www.oneandonlyresorts.com/moonlight-basin"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "Lone Mountain Ranch",
+      "propertyKey": "lone-mountain-ranch",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://lonemountainranch.com/",
+        "https://lonemountainranch.com/stay/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/big-sky-premium/lone-mountain-ranch/view-1.webp",
+      "downloadUrl": "https://lonemountainranch.com/wp-content/uploads/2023/04/cabins-1-.jpg",
+      "sourcePage": "https://lonemountainranch.com/",
+      "candidateContext": "| cabins 1",
+      "sha256": "e6acfc2752736ef6d647c4687e52ccb3b15e2fdf6b453de2ba3c586291a66c2f",
+      "bytes": 268278,
+      "originalSize": [
+        1400,
+        937
+      ],
+      "outputSize": [
+        1400,
+        937
+      ]
+    },
+    {
+      "property": "Lone Mountain Ranch",
+      "propertyKey": "lone-mountain-ranch",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://lonemountainranch.com/",
+        "https://lonemountainranch.com/stay/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/big-sky-premium/lone-mountain-ranch/view-2.webp",
+      "downloadUrl": "https://lonemountainranch.com/wp-content/uploads/2023/04/cabins-3-.jpg",
+      "sourcePage": "https://lonemountainranch.com/",
+      "candidateContext": "| cabins 3",
+      "sha256": "17faacca7568bbc728acf7cf51fc6bbe8913bf505c0eec4e785bdadaa0fbaceb",
+      "bytes": 231586,
+      "originalSize": [
+        1400,
+        1125
+      ],
+      "outputSize": [
+        1400,
+        1125
+      ]
+    },
+    {
+      "property": "Lone Mountain Ranch",
+      "propertyKey": "lone-mountain-ranch",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://lonemountainranch.com/",
+        "https://lonemountainranch.com/stay/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/big-sky-premium/lone-mountain-ranch/view-3.webp",
+      "downloadUrl": "https://lonemountainranch.com/wp-content/uploads/2021/12/sleigh-ride-dinner-hero-2048x1365.jpg",
+      "sourcePage": "https://lonemountainranch.com/",
+      "candidateContext": "CSS image from official property page",
+      "sha256": "5f45e503519479113abd4359ef7c655eed9fd005c7516bca61816b81cc8e9562",
+      "bytes": 198046,
+      "originalSize": [
+        2048,
+        1365
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ]
+    },
+    {
+      "property": "Summit Hotel",
+      "propertyKey": "summit-hotel",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.bigskyresort.com/lodging/hotels/summit-hotel",
+        "https://www.bigskyresort.com/lodging"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/big-sky-premium/summit-hotel/view-1.webp",
+      "downloadUrl": "https://cdn.sanity.io/images/8ts88bij/big-sky/e85d4266357f2c88074f419fa10957795d6e03a4-5254x3500.jpg?w=1200&fm=png&fit=min",
+      "sourcePage": "https://www.bigskyresort.com/lodging/hotels/summit-hotel",
+      "candidateContext": "Official page sharing image",
+      "sha256": "b5b5559dfdd54c7151862917081fc7d9ee0e41064c52a1c76eabe97d5e89c8b4",
+      "bytes": 123438,
+      "originalSize": [
+        1200,
+        799
+      ],
+      "outputSize": [
+        1200,
+        799
+      ]
+    },
+    {
+      "property": "Summit Hotel",
+      "propertyKey": "summit-hotel",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.bigskyresort.com/lodging/hotels/summit-hotel",
+        "https://www.bigskyresort.com/lodging"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/big-sky-premium/summit-hotel/view-2.webp",
+      "downloadUrl": "https://cdn.sanity.io/images/8ts88bij/big-sky/78c3d23df95ba682aebaab6f9a1e2044e1befb81-3600x2400.png?w=1200&fm=png&fit=min",
+      "sourcePage": "https://www.bigskyresort.com/lodging",
+      "candidateContext": "Official page sharing image",
+      "sha256": "1a02d638d99fa3b6c4170b161d38f9f4e922c47b4ca41909358cad73c837fc13",
+      "bytes": 58244,
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ]
+    },
+    {
+      "property": "Summit Hotel",
+      "propertyKey": "summit-hotel",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.bigskyresort.com/lodging/hotels/summit-hotel",
+        "https://www.bigskyresort.com/lodging"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/big-sky-premium/summit-hotel/view-3.webp",
+      "downloadUrl": "https://cdn.sanity.io/images/8ts88bij/big-sky/0164e9b468c7c4be2abbcce19c3f08afc559ae93-2010x1458.png?w=1366&q=70&fit=min&auto=format",
+      "sourcePage": "https://www.bigskyresort.com/lodging/hotels/summit-hotel",
+      "candidateContext": "",
+      "sha256": "1dd1053b74bc2c7bf68b33d530d23e1bd8d9f5518f75ce9f3634044c494c6c17",
+      "bytes": 10740,
+      "originalSize": [
+        1366,
+        991
+      ],
+      "outputSize": [
+        1366,
+        991
+      ]
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "placeLabel": "Lone Peak",
+      "searchQuery": "Lone Peak Big Sky Montana",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/big-sky-premium/destination/scene-1.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Lone_Peak%2C_Big_Sky%2C_Montana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lone_Peak,_Big_Sky,_Montana.jpg",
+      "candidateContext": "File:Lone Peak, Big Sky, Montana.jpg",
+      "sha256": "6aa6a7331736afa7cf777298c489e78a838724e26f31be2e6604da3eb6bd07a8",
+      "bytes": 127254,
+      "originalSize": [
+        1600,
+        1200
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "credit": "<a href=\"//commons.wikimedia.org/wiki/User:Goldman60\" title=\"User:Goldman60\">Goldman60</a>",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+    },
+    {
+      "key": "scene-2",
+      "placeLabel": "Mountain Village",
+      "searchQuery": "Big Sky Mountain Village",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-3",
+      "placeLabel": "Spanish Peaks",
+      "searchQuery": "Spanish Peaks Montana",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/big-sky-premium/destination/scene-3.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Theb0802_-_Flickr_-_NOAA_Photo_Library.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Theb0802_-_Flickr_-_NOAA_Photo_Library.jpg",
+      "candidateContext": "File:Theb0802 - Flickr - NOAA Photo Library.jpg",
+      "sha256": "cc6edc462ca9556a4838614ccc25668debfc13fa63bb76e807fe12919d1c728d",
+      "bytes": 136262,
+      "originalSize": [
+        1380,
+        900
+      ],
+      "outputSize": [
+        1380,
+        900
+      ],
+      "credit": "NOAA Photo Library, NOAA Central Library; Family of Captain William M. Scaife, C&amp;GS.",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    {
+      "key": "scene-4",
+      "placeLabel": "Moonlight Basin",
+      "searchQuery": "Moonlight Basin Big Sky",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/big-sky-premium/destination/scene-4.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Moonlight_Basin_replica.jpg/1920px-Moonlight_Basin_replica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Moonlight_Basin_replica.jpg",
+      "candidateContext": "File:Moonlight Basin replica.jpg",
+      "sha256": "1431036a9efa896cddf64594186ed9c218a49cf4cd7f4ab953d130a4d8e9ed32",
+      "bytes": 185762,
+      "originalSize": [
+        1920,
+        905
+      ],
+      "outputSize": [
+        1700,
+        801
+      ],
+      "credit": "<a rel=\"mw:WikiLink/Interwiki\" href=\"//www.flickr.com/people/11045073@N05\" title=\"flickruser:11045073@N05\" class=\"extiw\">Brett</a>",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+    },
+    {
+      "key": "scene-5",
+      "placeLabel": "Lone Mountain Ranch",
+      "searchQuery": "Lone Mountain Ranch Montana",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-6",
+      "placeLabel": "Nordic trail",
+      "searchQuery": "Big Sky Montana nordic trail",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-7",
+      "placeLabel": "Horse riding",
+      "searchQuery": "Big Sky Montana horseback",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-8",
+      "placeLabel": "Big Sky forest",
+      "searchQuery": "Big Sky Montana mountain forest",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-9",
+      "placeLabel": "Montana winter lodge",
+      "searchQuery": "Big Sky Montana winter resort",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    }
+  ]
+}

@@ -1,0 +1,432 @@
+{
+  "destination": "jackson-hole",
+  "generatedAt": "2026-10-15T13:26:14.149637+00:00",
+  "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
+  "expectedHotelPhotos": 12,
+  "expectedDestinationPhotos": 9,
+  "downloadedHotelCandidates": 9,
+  "downloadedDestinationCandidates": 3,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "hotels": [
+    {
+      "property": "Four Seasons Resort Jackson Hole",
+      "propertyKey": "four-seasons-jackson",
+      "key": "view-1",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.fourseasons.com/jacksonhole/",
+        "https://www.fourseasons.com/properties/jacksonhole/",
+        "https://www.fourseasons.com/jacksonhole/photos-and-videos/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "Four Seasons Resort Jackson Hole",
+      "propertyKey": "four-seasons-jackson",
+      "key": "view-2",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.fourseasons.com/jacksonhole/",
+        "https://www.fourseasons.com/properties/jacksonhole/",
+        "https://www.fourseasons.com/jacksonhole/photos-and-videos/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "Four Seasons Resort Jackson Hole",
+      "propertyKey": "four-seasons-jackson",
+      "key": "view-3",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.fourseasons.com/jacksonhole/",
+        "https://www.fourseasons.com/properties/jacksonhole/",
+        "https://www.fourseasons.com/jacksonhole/photos-and-videos/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+    },
+    {
+      "property": "Caldera House",
+      "propertyKey": "caldera-house",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://calderahouse.com/jackson-hole-hotel-suites/",
+        "https://calderahouse.com/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/jackson-hole-premium/caldera-house/view-1.webp",
+      "downloadUrl": "https://calderahouse.com/wp-content/uploads/2018/09/Valles_carousel-3.jpg",
+      "sourcePage": "https://calderahouse.com/jackson-hole-hotel-suites/",
+      "candidateContext": "Official page sharing image",
+      "sha256": "32ad8259209370c5275d79a3b2cfa4bb12e58cbab85917ec4c0a8a9b7100d25a",
+      "bytes": 160900,
+      "originalSize": [
+        2400,
+        1745
+      ],
+      "outputSize": [
+        1700,
+        1236
+      ]
+    },
+    {
+      "property": "Caldera House",
+      "propertyKey": "caldera-house",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://calderahouse.com/jackson-hole-hotel-suites/",
+        "https://calderahouse.com/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/jackson-hole-premium/caldera-house/view-2.webp",
+      "downloadUrl": "https://calderahouse.com/wp-content/uploads/2020/09/Caldera_FirePit_742_desktop_hero-2.jpg",
+      "sourcePage": "https://calderahouse.com/",
+      "candidateContext": "Official page sharing image",
+      "sha256": "c10b1edc130c83300cb39cbfd63a904da6b10c71a3717ab1d0a22bc42c4c1cfc",
+      "bytes": 415332,
+      "originalSize": [
+        1800,
+        1309
+      ],
+      "outputSize": [
+        1700,
+        1236
+      ]
+    },
+    {
+      "property": "Caldera House",
+      "propertyKey": "caldera-house",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://calderahouse.com/jackson-hole-hotel-suites/",
+        "https://calderahouse.com/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/jackson-hole-premium/caldera-house/view-3.webp",
+      "downloadUrl": "https://calderahouse.com/wp-content/uploads/2018/09/suites_landing_two_aira-1800x1200.jpg",
+      "sourcePage": "https://calderahouse.com/jackson-hole-hotel-suites/",
+      "candidateContext": "Aira Two Bedroom Suite",
+      "sha256": "8e4b0d3bced88bb8e05b76ac55535d9db424e261c0ce4316e1570e764e4e1ca7",
+      "bytes": 259252,
+      "originalSize": [
+        1800,
+        1200
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ]
+    },
+    {
+      "property": "Hotel Jackson",
+      "propertyKey": "hotel-jackson",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://hoteljackson.com/",
+        "https://hoteljackson.com/accommodations/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/jackson-hole-premium/hotel-jackson/view-1.webp",
+      "downloadUrl": "https://hoteljackson.com/wp-content/uploads/2026/08/RooftopWideEveningOutdoorHero-1-1.jpg",
+      "sourcePage": "https://hoteljackson.com/",
+      "candidateContext": "Juliette rooftop restaurant at Hotel Jackson overlooking downtown Jackson Hole",
+      "sha256": "66e5357a25760ee977e994432b86f804b5891c6430725b4cf6b7d48d67cca30f",
+      "bytes": 131616,
+      "originalSize": [
+        1343,
+        825
+      ],
+      "outputSize": [
+        1343,
+        825
+      ]
+    },
+    {
+      "property": "Hotel Jackson",
+      "propertyKey": "hotel-jackson",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://hoteljackson.com/",
+        "https://hoteljackson.com/accommodations/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/jackson-hole-premium/hotel-jackson/view-2.webp",
+      "downloadUrl": "https://hoteljackson.com/wp-content/uploads/2026/08/RooftopWideEveningOutdoorHero-1-1-1024x629.jpg",
+      "sourcePage": "https://hoteljackson.com/",
+      "candidateContext": "Juliette rooftop restaurant at Hotel Jackson overlooking downtown Jackson Hole",
+      "sha256": "682f3acc1f5d64c6b9d68882cb43d94feb337bfea0be74b43f8f71b4dc7013bd",
+      "bytes": 85956,
+      "originalSize": [
+        1024,
+        629
+      ],
+      "outputSize": [
+        1024,
+        629
+      ]
+    },
+    {
+      "property": "Hotel Jackson",
+      "propertyKey": "hotel-jackson",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://hoteljackson.com/",
+        "https://hoteljackson.com/accommodations/"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/jackson-hole-premium/hotel-jackson/view-3.webp",
+      "downloadUrl": "https://hoteljackson.com/wp-content/uploads/2026/07/image-3.webp",
+      "sourcePage": "https://hoteljackson.com/",
+      "candidateContext": "Luxury spa and wellness at Hotel Jackson, Jackson Hole Wyoming , massages, facials and restorative treatments in downtown Jackson",
+      "sha256": "eca7a4162c4b362e4cc6b8cfa936c0841f031ab03c594ffa8acbe16bca1faec8",
+      "bytes": 135006,
+      "originalSize": [
+        1343,
+        825
+      ],
+      "outputSize": [
+        1343,
+        825
+      ]
+    },
+    {
+      "property": "The Wort Hotel",
+      "propertyKey": "wort-hotel",
+      "key": "view-1",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.worthotel.com/",
+        "https://www.worthotel.com/rooms-suites"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/jackson-hole-premium/wort-hotel/view-1.webp",
+      "downloadUrl": "https://wort-hotel.s3.amazonaws.com/1206/ntda_vjh-8959__large.jpg",
+      "sourcePage": "https://www.worthotel.com/",
+      "candidateContext": "Close to Two National Parks",
+      "sha256": "c099aaa88db9e384cee19a94361c9c77be45a8d476bef6f14498f7277ea53f9e",
+      "bytes": 144660,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
+    },
+    {
+      "property": "The Wort Hotel",
+      "propertyKey": "wort-hotel",
+      "key": "view-2",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.worthotel.com/",
+        "https://www.worthotel.com/rooms-suites"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/jackson-hole-premium/wort-hotel/view-2.webp",
+      "downloadUrl": "https://wort-hotel.s3.amazonaws.com/965/deluxe_double_queen__large.jpg",
+      "sourcePage": "https://www.worthotel.com/",
+      "candidateContext": "Deluxe Double Queen",
+      "sha256": "4b8c2ea2340f818d71a9215919baf0dae9c8664f9e011e16102a351eb5490c62",
+      "bytes": 153128,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
+    },
+    {
+      "property": "The Wort Hotel",
+      "propertyKey": "wort-hotel",
+      "key": "view-3",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.worthotel.com/",
+        "https://www.worthotel.com/rooms-suites"
+      ],
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "localPath": "/images/travel/jackson-hole-premium/wort-hotel/view-3.webp",
+      "downloadUrl": "https://wort-hotel.s3.amazonaws.com/1205/fall_moose__large.jpg",
+      "sourcePage": "https://www.worthotel.com/",
+      "candidateContext": "Let us help you plan your fall adventures",
+      "sha256": "2f3b8c3b9463d7f31206a85fea3cf6051a4f52755e042073817c6390b5417208",
+      "bytes": 162764,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "placeLabel": "Teton mountains",
+      "searchQuery": "Grand Teton National Park Wyoming",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/jackson-hole-premium/destination/scene-1.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Garnet_Canyon_GTNP1.jpg/1920px-Garnet_Canyon_GTNP1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Garnet_Canyon_GTNP1.jpg",
+      "candidateContext": "File:Garnet Canyon GTNP1.jpg",
+      "sha256": "33aaad736b4b6117b5cb54bd89e9b85817bba144ead7fb403ad786c91dbe1a12",
+      "bytes": 650464,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "credit": "<a href=\"//commons.wikimedia.org/wiki/User:Acroterion\" title=\"User:Acroterion\">Acroterion</a>",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    {
+      "key": "scene-2",
+      "placeLabel": "Teton Village",
+      "searchQuery": "Teton Village Wyoming",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/jackson-hole-premium/destination/scene-2.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/START_Bus_in_Teton_Village.jpg/1920px-START_Bus_in_Teton_Village.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:START_Bus_in_Teton_Village.jpg",
+      "candidateContext": "File:START Bus in Teton Village.jpg",
+      "sha256": "089664e7fa494444a64eed0677779d81ef96aa5b254a7f431c4c9e5066348813",
+      "bytes": 413584,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "credit": "<a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/User:Crystalmountainskier\" title=\"en:User:Crystalmountainskier\" class=\"extiw\">Crystalmountainskier</a>",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    {
+      "key": "scene-3",
+      "placeLabel": "Jackson Town Square",
+      "searchQuery": "Jackson town square Wyoming",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-4",
+      "placeLabel": "Snake River",
+      "searchQuery": "Snake River Jackson Wyoming",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-5",
+      "placeLabel": "Grand Teton",
+      "searchQuery": "Grand Teton peaks Wyoming",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-6",
+      "placeLabel": "Wildlife",
+      "searchQuery": "Grand Teton moose elk wildlife",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-7",
+      "placeLabel": "Snow covered cabins",
+      "searchQuery": "Jackson Hole cabins Wyoming",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    },
+    {
+      "key": "scene-8",
+      "placeLabel": "National park",
+      "searchQuery": "Grand Teton National Park",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "localPath": "/images/travel/jackson-hole-premium/destination/scene-8.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Barns_grand_tetons.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Barns_grand_tetons.jpg",
+      "candidateContext": "File:Barns grand tetons.jpg",
+      "sha256": "22e77b6bce3ec50ca6a799c247f96947e55ee201cef56be753a07fecce247dd9",
+      "bytes": 365402,
+      "originalSize": [
+        1600,
+        1195
+      ],
+      "outputSize": [
+        1600,
+        1195
+      ],
+      "credit": "Jon Sullivan, PD Photo.",
+      "license": "Public domain",
+      "licenseUrl": ""
+    },
+    {
+      "key": "scene-9",
+      "placeLabel": "Western town street",
+      "searchQuery": "Jackson Wyoming downtown",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+    }
+  ]
+}
