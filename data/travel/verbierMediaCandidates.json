@@ -15,7 +15,7 @@
       "key": "view-1",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/overview/",
         "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/rooms/"
@@ -34,15 +34,17 @@
       "outputSize": [
         1700,
         1071
-      ]
+      ],
+      "visualQaWarning": "ERREUR CRITIQUE : publicité carte bancaire Marriott Bonvoy/Visa, pas un hôtel. Ne jamais publier.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "W Verbier",
       "propertyKey": "w-verbier",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/overview/",
         "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/rooms/"
@@ -61,7 +63,10 @@
       "outputSize": [
         1700,
         1132
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "W Verbier",
@@ -69,7 +74,7 @@
       "key": "view-3",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/overview/",
         "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/rooms/"
@@ -88,15 +93,17 @@
       "outputSize": [
         1200,
         799
-      ]
+      ],
+      "visualQaWarning": "DOUBLON VISUEL : même salon que view-2.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Chalet d'Adrien",
       "propertyKey": "chalet-adrien",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://chalet-adrien.com/en/",
         "https://chalet-adrien.com/en/rooms-suites-en/savoleyres-2/"
@@ -115,15 +122,18 @@
       "outputSize": [
         1700,
         954
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Chalet d'Adrien",
       "propertyKey": "chalet-adrien",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://chalet-adrien.com/en/",
         "https://chalet-adrien.com/en/rooms-suites-en/savoleyres-2/"
@@ -142,7 +152,10 @@
       "outputSize": [
         1600,
         1088
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Chalet d'Adrien",
@@ -150,7 +163,7 @@
       "key": "view-3",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://chalet-adrien.com/en/",
         "https://chalet-adrien.com/en/rooms-suites-en/savoleyres-2/"
@@ -169,15 +182,17 @@
       "outputSize": [
         1024,
         696
-      ]
+      ],
+      "visualQaWarning": "DOUBLON VISUEL : même façade d'hôtel enneigée que view-2.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "La Cordée des Alpes",
       "propertyKey": "la-cordee-des-alpes",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://hotelcordee.com/",
         "https://www.verbier.com/hotels/la-corde-des-alpes"
@@ -196,15 +211,18 @@
       "outputSize": [
         1700,
         956
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "La Cordée des Alpes",
       "propertyKey": "la-cordee-des-alpes",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://hotelcordee.com/",
         "https://www.verbier.com/hotels/la-corde-des-alpes"
@@ -223,15 +241,18 @@
       "outputSize": [
         1700,
         1110
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "La Cordée des Alpes",
       "propertyKey": "la-cordee-des-alpes",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://hotelcordee.com/",
         "https://www.verbier.com/hotels/la-corde-des-alpes"
@@ -250,7 +271,10 @@
       "outputSize": [
         1700,
         1135
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Experimental Chalet Verbier",
@@ -258,7 +282,7 @@
       "key": "view-1",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.experimentalchalet.com/",
         "https://fr.experimentalchalet.com/?no_redirect=true"
@@ -277,7 +301,9 @@
       "outputSize": [
         1200,
         630
-      ]
+      ],
+      "visualQaWarning": "Image floue à travers une fenêtre de transport, n'illustre pas l'Experimental Chalet.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Experimental Chalet Verbier",
@@ -285,7 +311,7 @@
       "key": "view-2",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.experimentalchalet.com/",
         "https://fr.experimentalchalet.com/?no_redirect=true"
@@ -304,15 +330,17 @@
       "outputSize": [
         1700,
         956
-      ]
+      ],
+      "visualQaWarning": "DOUBLON VISUEL et hors sujet : même photo floue que view-1.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Experimental Chalet Verbier",
       "propertyKey": "experimental-chalet",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.experimentalchalet.com/",
         "https://fr.experimentalchalet.com/?no_redirect=true"
@@ -331,7 +359,10 @@
       "outputSize": [
         1700,
         1030
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     }
   ],
   "destinationScenes": [
@@ -341,7 +372,7 @@
       "searchQuery": "Verbier Medran gondola",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
       "localPath": "/images/travel/verbier-premium/destination/scene-1.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Télécabines_Verbier_Dec_2021.jpg",
@@ -360,7 +391,8 @@
         1700,
         1133
       ],
-      "visualQaWarning": "Commons title does not establish which exact Verbier sector is pictured; detailed visual+map check required before caption."
+      "visualQaWarning": "Commons title does not establish which exact Verbier sector is pictured; detailed visual+map check required before caption.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-2",
@@ -419,8 +451,8 @@
       "placeLabel": "Mont Fort panorama",
       "searchQuery": "Verbier Mont Fort",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
       "localPath": "/images/travel/verbier-premium/destination/scene-7.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Verbier_Mont_Fort_-_panoramio.jpg",
@@ -439,15 +471,17 @@
         1667,
         1250
       ],
-      "visualQaWarning": "Scene identity and season supported by filename, but still needs independent visual/legal/commercial review."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-8",
       "placeLabel": "Le Châble valley",
       "searchQuery": "Le Chable Switzerland Verbier",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
       "localPath": "/images/travel/verbier-premium/destination/scene-8.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Le_Châble_depuis_Verbier.jpg",
@@ -466,7 +500,9 @@
         1700,
         1133
       ],
-      "visualQaWarning": "Scene identity and season supported by filename, but still needs independent visual/legal/commercial review."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-9",
@@ -477,5 +513,6 @@
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
     }
-  ]
+  ],
+  "ownerRightsAuthorization": "Bosphoras operator confirmed photo usage rights on 2026-10-15; source attribution obligations remain."
 }

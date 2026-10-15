@@ -14,8 +14,8 @@
       "propertyKey": "badrutts-palace",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://badruttspalace.com/en/winter/",
         "https://badruttspalace.com/en/winter/accommodation/rooms/"
@@ -34,15 +34,18 @@
       "outputSize": [
         1700,
         956
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Badrutt's Palace Hotel",
       "propertyKey": "badrutts-palace",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://badruttspalace.com/en/winter/",
         "https://badruttspalace.com/en/winter/accommodation/rooms/"
@@ -61,15 +64,18 @@
       "outputSize": [
         1700,
         956
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Badrutt's Palace Hotel",
       "propertyKey": "badrutts-palace",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://badruttspalace.com/en/winter/",
         "https://badruttspalace.com/en/winter/accommodation/rooms/"
@@ -88,15 +94,18 @@
       "outputSize": [
         1700,
         956
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Kulm Hotel St. Moritz",
       "propertyKey": "kulm-hotel",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.kulm.com/en/winter/hotel",
         "https://www.kulm.com/en/winter/"
@@ -115,7 +124,10 @@
       "outputSize": [
         1024,
         523
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Kulm Hotel St. Moritz",
@@ -123,7 +135,7 @@
       "key": "view-2",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.kulm.com/en/winter/hotel",
         "https://www.kulm.com/en/winter/"
@@ -147,7 +159,8 @@
         1201
       ],
       "visualQaWarning": "Contrôle visuel : entrée réelle du Kulm, mais cliché extérieur de 2022 peu représentatif d'un palace d'hiver ; conserver uniquement en photo secondaire tant qu'une meilleure image n'est pas sélectionnée.",
-      "visualQaReviewedAt": "2026-10-15"
+      "visualQaReviewedAt": "2026-10-15",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Kulm Hotel St. Moritz",
@@ -155,7 +168,7 @@
       "key": "view-3",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.kulm.com/en/winter/hotel",
         "https://www.kulm.com/en/winter/"
@@ -179,15 +192,16 @@
         1201
       ],
       "visualQaWarning": "Contrôle visuel : pelouse et terrain extérieur du domaine, sans mise en valeur de l'hôtel ; À REMPLACER par une photo intérieure, spa ou façade du Kulm.",
-      "visualQaReviewedAt": "2026-10-15"
+      "visualQaReviewedAt": "2026-10-15",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Suvretta House",
       "propertyKey": "suvretta-house",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://suvrettahouse.ch/en/startseite-winter",
         "https://suvrettahouse.ch/en/rooms-suites"
@@ -206,15 +220,18 @@
       "outputSize": [
         1440,
         960
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Suvretta House",
       "propertyKey": "suvretta-house",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://suvrettahouse.ch/en/startseite-winter",
         "https://suvrettahouse.ch/en/rooms-suites"
@@ -236,15 +253,18 @@
       ],
       "credit": "Suvretta House official property photo",
       "license": "",
-      "licenseUrl": ""
+      "licenseUrl": "",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Suvretta House",
       "propertyKey": "suvretta-house",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://suvrettahouse.ch/en/startseite-winter",
         "https://suvrettahouse.ch/en/rooms-suites"
@@ -263,7 +283,10 @@
       "outputSize": [
         1440,
         960
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Carlton Hotel St. Moritz",
@@ -271,7 +294,7 @@
       "key": "view-1",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://tschuggencollection.ch/en/hotel/carlton-hotel",
         "https://tschuggencollection.ch/en/hotel/carlton-hotel/rooms-suites"
@@ -290,7 +313,8 @@
       "outputSize": [
         1008,
         550
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Carlton Hotel St. Moritz",
@@ -298,7 +322,7 @@
       "key": "view-2",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://tschuggencollection.ch/en/hotel/carlton-hotel",
         "https://tschuggencollection.ch/en/hotel/carlton-hotel/rooms-suites"
@@ -317,7 +341,8 @@
       "outputSize": [
         1008,
         550
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Carlton Hotel St. Moritz",
@@ -325,7 +350,7 @@
       "key": "view-3",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://tschuggencollection.ch/en/hotel/carlton-hotel",
         "https://tschuggencollection.ch/en/hotel/carlton-hotel/rooms-suites"
@@ -344,7 +369,8 @@
       "outputSize": [
         1008,
         550
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     }
   ],
   "destinationScenes": [
@@ -354,7 +380,7 @@
       "searchQuery": "Lake St Moritz",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-1.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Blick_%C3%BCber_den_Sankt_Moritzersee_auf_Sankt_Moritz.jpg/1920px-Blick_%C3%BCber_den_Sankt_Moritzersee_auf_Sankt_Moritz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -374,7 +400,8 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "visualQaWarning": "Contrôle visuel : panorama réel du lac en automne. Ne pas légender comme une vue d'hiver ni utiliser pour promettre les conditions de neige.",
-      "visualQaReviewedAt": "2026-10-15"
+      "visualQaReviewedAt": "2026-10-15",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-2",
@@ -382,7 +409,7 @@
       "searchQuery": "St Moritz village",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-2.webp",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/St._Moritz_village_and_baths_Grisons_Switzerland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -400,7 +427,8 @@
       ],
       "credit": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.flickr.com/people/28496558@N02\" class=\"external text\">Snapshots Of  The Past</a>",
       "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-3",
@@ -408,7 +436,7 @@
       "searchQuery": "St Moritz Bad",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-3.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/St._Moritz_Forum_Paracelsus.JPG/1920px-St._Moritz_Forum_Paracelsus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -426,7 +454,8 @@
       ],
       "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Paebi\" title=\"User:Paebi\">Paebi</a>",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-4",
@@ -434,7 +463,7 @@
       "searchQuery": "Suvretta St Moritz",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-4.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Via_Suvretta.jpg/1920px-Via_Suvretta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -452,15 +481,16 @@
       ],
       "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Kulmalukko\" title=\"User:Kulmalukko\">Tiia Monto</a>",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-5",
       "placeLabel": "Corviglia",
       "searchQuery": "Corviglia St Moritz",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-5.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/St._Moritz_Corviglia_2.jpg/1920px-St._Moritz_Corviglia_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -478,7 +508,10 @@
       "outputSize": [
         1800,
         1350
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-6",
@@ -486,7 +519,7 @@
       "searchQuery": "Celerina Switzerland",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-6.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Celerina_Engadin.jpg/1920px-Celerina_Engadin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -504,7 +537,8 @@
       ],
       "credit": "Jensens",
       "license": "Public domain",
-      "licenseUrl": ""
+      "licenseUrl": "",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-7",
@@ -512,7 +546,7 @@
       "searchQuery": "Pontresina Engadin",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-7.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Pontresina-01.jpg/1920px-Pontresina-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -530,15 +564,16 @@
       "outputSize": [
         1800,
         1010
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-8",
       "placeLabel": "St. Moritz winter",
       "searchQuery": "St Moritz winter",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-8.webp",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/StMoritz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -556,15 +591,18 @@
       ],
       "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Alps?action=edit&amp;redlink=1\" title=\"User:Alps (page does not exist)\" class=\"new\" typeof=\"mw:LocalizedAttrs\" data-mw-i18n='{\"title\":{\"lang\":\"x-page\",\"key\":\"red-link-title\",\"params\":[\"User:Alps\"]}}'>Alps</a>",
       "license": "Public domain",
-      "licenseUrl": ""
+      "licenseUrl": "",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-9",
       "placeLabel": "Engadin landscape",
       "searchQuery": "Engadin Swiss Alps",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-9.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/St._Moritz_-_Pontresina.jpg/1920px-St._Moritz_-_Pontresina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -582,8 +620,12 @@
       ],
       "credit": "Tiia Monto",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     }
   ],
-  "sourceCuration": "Third pass: source-specific Wikimedia files and exact hotel-only images, still visually unapproved."
+  "sourceCuration": "Third pass: source-specific Wikimedia files and exact hotel-only images, still visually unapproved.",
+  "ownerRightsAuthorization": "Bosphoras operator confirmed photo usage rights on 2026-10-15; source attribution obligations remain."
 }

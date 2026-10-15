@@ -15,7 +15,7 @@
       "key": "view-1",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://airelles.com/fr/destination/val-d-isere-hotel",
         "https://airelles.com/en/destination/val-d-isere-hotel"
@@ -34,15 +34,17 @@
       "outputSize": [
         1700,
         893
-      ]
+      ],
+      "visualQaWarning": "Photo archivale ancienne qui ne reflète pas nécessairement l'état actuel du palace. À remplacer avant marketing.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Airelles Val d'Isère",
       "propertyKey": "airelles-val-disere",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://airelles.com/fr/destination/val-d-isere-hotel",
         "https://airelles.com/en/destination/val-d-isere-hotel"
@@ -61,7 +63,10 @@
       "outputSize": [
         1700,
         893
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Airelles Val d'Isère",
@@ -69,7 +74,7 @@
       "key": "view-3",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://airelles.com/fr/destination/val-d-isere-hotel",
         "https://airelles.com/en/destination/val-d-isere-hotel"
@@ -88,15 +93,17 @@
       "outputSize": [
         1700,
         850
-      ]
+      ],
+      "visualQaWarning": "Paysage montagnard sans Airelles identifiable ; ne pas présenter comme photo du palace.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Le K2 Chogori",
       "propertyKey": "le-k2-chogori",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://lek2chogori.com/fr/",
         "https://lek2chogori.com/fr/sejourner/chambres.html"
@@ -115,15 +122,18 @@
       "outputSize": [
         1536,
         863
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Le K2 Chogori",
       "propertyKey": "le-k2-chogori",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://lek2chogori.com/fr/",
         "https://lek2chogori.com/fr/sejourner/chambres.html"
@@ -142,7 +152,10 @@
       "outputSize": [
         960,
         640
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Le K2 Chogori",
@@ -150,7 +163,7 @@
       "key": "view-3",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://lek2chogori.com/fr/",
         "https://lek2chogori.com/fr/sejourner/chambres.html"
@@ -169,15 +182,17 @@
       "outputSize": [
         960,
         640
-      ]
+      ],
+      "visualQaWarning": "Photo d'assiette seule : n'illustre ni chambre ni équipement de l'hôtel.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "La Mourra",
       "propertyKey": "la-mourra",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.hotellamourra.com/fr/",
         "https://www.hotellamourra.com/"
@@ -196,15 +211,18 @@
       "outputSize": [
         1700,
         1137
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "La Mourra",
       "propertyKey": "la-mourra",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.hotellamourra.com/fr/",
         "https://www.hotellamourra.com/"
@@ -223,7 +241,10 @@
       "outputSize": [
         1667,
         1250
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "La Mourra",
@@ -231,7 +252,7 @@
       "key": "view-3",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.hotellamourra.com/fr/",
         "https://www.hotellamourra.com/"
@@ -250,15 +271,17 @@
       "outputSize": [
         1667,
         1250
-      ]
+      ],
+      "visualQaWarning": "DOUBLON VISUEL : même bâtiment vue du même angle que view-2.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Le Blizzard",
       "propertyKey": "le-blizzard",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://hotelblizzard.com/fr/",
         "https://hotelblizzard.com/en/"
@@ -277,7 +300,10 @@
       "outputSize": [
         1700,
         957
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Le Blizzard",
@@ -285,7 +311,7 @@
       "key": "view-2",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://hotelblizzard.com/fr/",
         "https://hotelblizzard.com/en/"
@@ -304,7 +330,9 @@
       "outputSize": [
         1440,
         810
-      ]
+      ],
+      "visualQaWarning": "DOUBLON VISUEL : même salle que view-1.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Le Blizzard",
@@ -312,7 +340,7 @@
       "key": "view-3",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://hotelblizzard.com/fr/",
         "https://hotelblizzard.com/en/"
@@ -331,7 +359,9 @@
       "outputSize": [
         1280,
         720
-      ]
+      ],
+      "visualQaWarning": "DOUBLON VISUEL : même salle que view-1.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     }
   ],
   "destinationScenes": [
@@ -340,8 +370,8 @@
       "placeLabel": "Val d'Isère old village",
       "searchQuery": "Val d Isere village church",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
       "localPath": "/images/travel/val-disere-premium/destination/scene-1.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Val-dIsere-église-chemin-du-Charvet.JPG",
@@ -360,15 +390,17 @@
         1667,
         1250
       ],
-      "visualQaWarning": "Scene identity and season supported by filename, but still needs independent visual/legal/commercial review."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-2",
       "placeLabel": "Solaise slopes",
       "searchQuery": "Val d Isere Solaise",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
       "localPath": "/images/travel/val-disere-premium/destination/scene-2.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Solaise_à_Val-d'Isère_depuis_Barrage_de_Tignes_(février_2026).JPG",
@@ -387,7 +419,9 @@
         1615,
         1250
       ],
-      "visualQaWarning": "Scene identity and season supported by filename, but still needs independent visual/legal/commercial review."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-3",
@@ -403,8 +437,8 @@
       "placeLabel": "La Daille Funival",
       "searchQuery": "La Daille Val d Isere",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
       "localPath": "/images/travel/val-disere-premium/destination/scene-4.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Funival_@_La_Daille_01.jpg",
@@ -423,7 +457,9 @@
         1667,
         1250
       ],
-      "visualQaWarning": "Scene identity and season supported by filename, but still needs independent visual/legal/commercial review."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-5",
@@ -440,7 +476,7 @@
       "searchQuery": "Le Fornet Val d Isere",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
       "localPath": "/images/travel/val-disere-premium/destination/scene-6.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Maisons_Le_Fornet_Val_d'Isère.jpg",
@@ -459,7 +495,8 @@
         1667,
         1250
       ],
-      "visualQaWarning": "Actual Le Fornet hamlet photographed in September 2016; NOT a winter photograph, cannot be captioned 'Le Fornet winter'. Change season or replace."
+      "visualQaWarning": "Actual Le Fornet hamlet photographed in September 2016; NOT a winter photograph, cannot be captioned 'Le Fornet winter'. Change season or replace.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-7",
@@ -484,8 +521,8 @@
       "placeLabel": "Val d'Isère summer",
       "searchQuery": "Val d Isere summer mountains",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
       "localPath": "/images/travel/val-disere-premium/destination/scene-9.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Isère_au_Fornet_à_Val-d'Isère_en_été_(juillet_2022).JPG",
@@ -504,7 +541,10 @@
         1671,
         1250
       ],
-      "visualQaWarning": "Scene identity and season supported by filename, but still needs independent visual/legal/commercial review."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     }
-  ]
+  ],
+  "ownerRightsAuthorization": "Bosphoras operator confirmed photo usage rights on 2026-10-15; source attribution obligations remain."
 }

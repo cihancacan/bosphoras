@@ -56,8 +56,8 @@
       "propertyKey": "les-fermes-de-marie",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
         "https://www.fermesdemarie.com/en/"
@@ -77,7 +77,10 @@
         1200,
         630
       ],
-      "credit": ""
+      "credit": "",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Les Fermes de Marie",
@@ -85,7 +88,7 @@
       "key": "view-2",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
         "https://www.fermesdemarie.com/en/"
@@ -105,15 +108,17 @@
       "outputSize": [
         1100,
         500
-      ]
+      ],
+      "visualQaWarning": "DOUBLON VISUEL : presque identique à view-1, même façade enneigée.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Les Fermes de Marie",
       "propertyKey": "les-fermes-de-marie",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
         "https://www.fermesdemarie.com/en/"
@@ -133,15 +138,18 @@
       "outputSize": [
         1400,
         800
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "L'Alpaga",
       "propertyKey": "l-alpaga",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Original hotel site file is not a commercial photo licence.",
       "sourcePages": [
         "https://alpaga.com/fr/proprietes/hotel-alpaga/chambres-suites/",
@@ -162,15 +170,18 @@
         1700,
         832
       ],
-      "credit": "L'Alpaga · official property source"
+      "credit": "L'Alpaga · official property source",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "L'Alpaga",
       "propertyKey": "l-alpaga",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Original hotel site file is not a commercial photo licence.",
       "sourcePages": [
         "https://alpaga.com/fr/proprietes/hotel-alpaga/chambres-suites/",
@@ -191,7 +202,10 @@
         1200,
         675
       ],
-      "credit": "L'Alpaga · official property source"
+      "credit": "L'Alpaga · official property source",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "L'Alpaga",
@@ -199,7 +213,7 @@
       "key": "view-3",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Original hotel site file is not a commercial photo licence.",
       "sourcePages": [
         "https://alpaga.com/fr/proprietes/hotel-alpaga/chambres-suites/",
@@ -220,7 +234,9 @@
         1200,
         675
       ],
-      "credit": "L'Alpaga · official property source"
+      "credit": "L'Alpaga · official property source",
+      "visualQaWarning": "DOUBLON/ANGLE TRÈS SIMILAIRE : même chambre et tête de lit que view-1.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Lodge Park",
@@ -228,7 +244,7 @@
       "key": "view-1",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.lodgepark.com/en/hotel-center-of-megeve",
         "https://www.lodgepark.com/en/"
@@ -248,15 +264,17 @@
       "outputSize": [
         921,
         558
-      ]
+      ],
+      "visualQaWarning": "Montage publicitaire mi-employé mi-gym, pas une seule photographie immobilière haut de gamme.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Lodge Park",
       "propertyKey": "lodge-park",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.lodgepark.com/en/hotel-center-of-megeve",
         "https://www.lodgepark.com/en/"
@@ -276,15 +294,18 @@
         1700,
         956
       ],
-      "credit": ""
+      "credit": "",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Lodge Park",
       "propertyKey": "lodge-park",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.lodgepark.com/en/hotel-center-of-megeve",
         "https://www.lodgepark.com/en/"
@@ -304,7 +325,10 @@
       "outputSize": [
         921,
         558
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     }
   ],
   "destinationScenes": [
@@ -314,7 +338,7 @@
       "searchQuery": "Megeve France village",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
       "localPath": "/images/travel/megeve-premium/destination/scene-1.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Village_@_Megève_(51295072586).jpg",
@@ -333,7 +357,8 @@
         1700,
         1133
       ],
-      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
+      "visualQaWarning": "Vue de quelques maisons périphériques, pas le centre historique de Megève. À remplacer pour cette légende.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-2",
@@ -341,7 +366,7 @@
       "searchQuery": "Megeve Mont d Arbois",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
       "localPath": "/images/travel/megeve-premium/destination/scene-2.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Mont-d'Arbois-Megève_(2017).jpg",
@@ -360,15 +385,16 @@
         1700,
         1115
       ],
-      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
+      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-3",
       "placeLabel": "Rochebrune",
       "searchQuery": "Rochebrune Megeve",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/megeve-premium/destination/scene-3.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Rochebrune_%40_Meg%C3%A8ve_%2851036605028%29.jpg/1920px-Rochebrune_%40_Meg%C3%A8ve_%2851036605028%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -386,7 +412,10 @@
       ],
       "credit": "Guilhem Vellut from Annecy, France",
       "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-4",
@@ -394,7 +423,7 @@
       "searchQuery": "Le Jaillet Megeve",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/megeve-premium/destination/scene-4.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/T%C3%AAte_du_Torraz.JPG/1920px-T%C3%AAte_du_Torraz.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -413,7 +442,8 @@
       "credit": "Corsica62",
       "license": "CC BY 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-      "visualQaWarning": "Photo du Tête du Torraz ; n'affirmer le lien exact avec Jaillet qu'après contrôle cartographique."
+      "visualQaWarning": "Photo du Tête du Torraz ; n'affirmer le lien exact avec Jaillet qu'après contrôle cartographique.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-5",
@@ -430,7 +460,7 @@
       "searchQuery": "Eglise Megeve",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
       "localPath": "/images/travel/megeve-premium/destination/scene-6.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Megève_-_Eglise_Saint-Jean-Baptiste_48.jpg",
@@ -449,7 +479,8 @@
         1700,
         1133
       ],
-      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
+      "visualQaWarning": "Photographie du plafond intérieur, pas de la place de l'église ; ne pas présenter comme place.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-7",
@@ -457,7 +488,7 @@
       "searchQuery": "Megève ski France",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
       "localPath": "/images/travel/megeve-premium/destination/scene-7.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:View_of_the_Mont_d'Arbois_front_de_neige,_Megève,_2025.jpg",
@@ -476,7 +507,8 @@
         1700,
         1130
       ],
-      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
+      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-8",
@@ -492,8 +524,8 @@
       "placeLabel": "Mont Blanc view",
       "searchQuery": "Mont Blanc Megeve",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/megeve-premium/destination/scene-9.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Mont_Blanc_%40_Meg%C3%A8ve_%2851037173286%29.jpg/1920px-Mont_Blanc_%40_Meg%C3%A8ve_%2851037173286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -511,9 +543,13 @@
       ],
       "credit": "Guilhem Vellut from Annecy, France",
       "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     }
   ],
   "publicationBlockedReason": "Candidate hotel/place identity, luxury editorial quality and commercial photo rights require separate review before any premium publication.",
-  "candidateUniquenessAudit": "Image source URL identity compared, duplicate derivatives warned and hidden from planned galleries."
+  "candidateUniquenessAudit": "Image source URL identity compared, duplicate derivatives warned and hidden from planned galleries.",
+  "ownerRightsAuthorization": "Bosphoras operator confirmed photo usage rights on 2026-10-15; source attribution obligations remain."
 }

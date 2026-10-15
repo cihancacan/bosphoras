@@ -56,8 +56,8 @@
       "propertyKey": "caldera-house",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://calderahouse.com/jackson-hole-hotel-suites/",
         "https://calderahouse.com/"
@@ -76,15 +76,18 @@
       "outputSize": [
         1700,
         1236
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Caldera House",
       "propertyKey": "caldera-house",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://calderahouse.com/jackson-hole-hotel-suites/",
         "https://calderahouse.com/"
@@ -103,15 +106,18 @@
       "outputSize": [
         1700,
         1236
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Caldera House",
       "propertyKey": "caldera-house",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://calderahouse.com/jackson-hole-hotel-suites/",
         "https://calderahouse.com/"
@@ -130,15 +136,18 @@
       "outputSize": [
         1700,
         1133
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Hotel Jackson",
       "propertyKey": "hotel-jackson",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://hoteljackson.com/",
         "https://hoteljackson.com/accommodations/"
@@ -157,7 +166,10 @@
       "outputSize": [
         1343,
         825
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Hotel Jackson",
@@ -165,7 +177,7 @@
       "key": "view-2",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://hoteljackson.com/",
         "https://hoteljackson.com/accommodations/"
@@ -184,15 +196,17 @@
       "outputSize": [
         1024,
         629
-      ]
+      ],
+      "visualQaWarning": "DOUBLON VISUEL : identique à view-1 (même terrasse), une seule image à garder.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Hotel Jackson",
       "propertyKey": "hotel-jackson",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://hoteljackson.com/",
         "https://hoteljackson.com/accommodations/"
@@ -211,7 +225,10 @@
       "outputSize": [
         1343,
         825
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "The Wort Hotel",
@@ -219,7 +236,7 @@
       "key": "view-1",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.worthotel.com/",
         "https://www.worthotel.com/rooms-suites"
@@ -238,15 +255,17 @@
       "outputSize": [
         1700,
         956
-      ]
+      ],
+      "visualQaWarning": "Photo des Tetons, sans hôtel identifié. Ne pas la présenter comme vue de The Wort.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "The Wort Hotel",
       "propertyKey": "wort-hotel",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.worthotel.com/",
         "https://www.worthotel.com/rooms-suites"
@@ -265,7 +284,10 @@
       "outputSize": [
         1700,
         956
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "The Wort Hotel",
@@ -273,7 +295,7 @@
       "key": "view-3",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.worthotel.com/",
         "https://www.worthotel.com/rooms-suites"
@@ -292,7 +314,9 @@
       "outputSize": [
         1700,
         956
-      ]
+      ],
+      "visualQaWarning": "Photo d'un orignal, pas de l'hôtel The Wort ; à déplacer en rubrique nature seulement.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     }
   ],
   "destinationScenes": [
@@ -301,8 +325,8 @@
       "placeLabel": "Teton mountains",
       "searchQuery": "Grand Teton National Park Wyoming",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/jackson-hole-premium/destination/scene-1.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Garnet_Canyon_GTNP1.jpg/1920px-Garnet_Canyon_GTNP1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -320,7 +344,10 @@
       ],
       "credit": "<a href=\"//commons.wikimedia.org/wiki/User:Acroterion\" title=\"User:Acroterion\">Acroterion</a>",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-2",
@@ -328,7 +355,7 @@
       "searchQuery": "Teton Village Wyoming",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/jackson-hole-premium/destination/scene-2.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/START_Bus_in_Teton_Village.jpg/1920px-START_Bus_in_Teton_Village.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -347,15 +374,16 @@
       "credit": "<a rel=\"mw:WikiLink/Interwiki\" href=\"https://en.wikipedia.org/wiki/User:Crystalmountainskier\" title=\"en:User:Crystalmountainskier\" class=\"extiw\">Crystalmountainskier</a>",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "visualQaWarning": "Photographie d'un bus START à Teton Village : scène géographiquement plausible, mais visuel inadapté à la sélection de luxe. À remplacer."
+      "visualQaWarning": "Photographie d'un bus START à Teton Village : scène géographiquement plausible, mais visuel inadapté à la sélection de luxe. À remplacer.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-3",
       "placeLabel": "Jackson Town Square",
       "searchQuery": "Jackson town square Wyoming",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
       "localPath": "/images/travel/jackson-hole-premium/destination/scene-3.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Elk_antler_arch_at_Jackson_Square,_Jackson,_WY_2022-07-11.jpg",
@@ -374,15 +402,17 @@
         1700,
         1133
       ],
-      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-4",
       "placeLabel": "Snake River",
       "searchQuery": "Snake River Jackson Wyoming",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
       "localPath": "/images/travel/jackson-hole-premium/destination/scene-4.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Grand_Teton_from_the_Snake_River_Overlook.jpg",
@@ -401,15 +431,17 @@
         1700,
         1090
       ],
-      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-5",
       "placeLabel": "Grand Teton",
       "searchQuery": "Grand Teton peaks Wyoming",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
       "localPath": "/images/travel/jackson-hole-premium/destination/scene-5.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Views_at_Grand_Teton_National_Park,_Wyoming_(24029770-4738-47df-8265-9e1d86a09f27).jpg",
@@ -428,7 +460,9 @@
         1700,
         1133
       ],
-      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-6",
@@ -453,8 +487,8 @@
       "placeLabel": "National park",
       "searchQuery": "Grand Teton National Park",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/jackson-hole-premium/destination/scene-8.webp",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Barns_grand_tetons.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -472,7 +506,10 @@
       ],
       "credit": "Jon Sullivan, PD Photo.",
       "license": "Public domain",
-      "licenseUrl": ""
+      "licenseUrl": "",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-9",
@@ -484,5 +521,6 @@
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
     }
   ],
-  "publicationBlockedReason": "Candidate hotel/place identity, luxury editorial quality and commercial photo rights require separate review before any premium publication."
+  "publicationBlockedReason": "Candidate hotel/place identity, luxury editorial quality and commercial photo rights require separate review before any premium publication.",
+  "ownerRightsAuthorization": "Bosphoras operator confirmed photo usage rights on 2026-10-15; source attribution obligations remain."
 }

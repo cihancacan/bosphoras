@@ -15,7 +15,7 @@
       "key": "view-1",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono",
         "https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono/rooms"
@@ -37,7 +37,8 @@
         956
       ],
       "sha256": "6da089ebc12b854a2fe6e3d8dba50edc86ac37de66492a44708089b06864bf7c",
-      "bytes": 230586
+      "bytes": 230586,
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Park Hyatt Niseko Hanazono",
@@ -45,7 +46,7 @@
       "key": "view-2",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono",
         "https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono/rooms"
@@ -67,7 +68,8 @@
         956
       ],
       "sha256": "e02c5ca5b52add6149c6ae929f2afba6a313e9b408e6a575fd5cd6c810a11603",
-      "bytes": 99336
+      "bytes": 99336,
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Park Hyatt Niseko Hanazono",
@@ -75,7 +77,7 @@
       "key": "view-3",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono",
         "https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono/rooms"
@@ -97,7 +99,8 @@
         956
       ],
       "sha256": "3dc0b0e2031c2b82b9864d3a1362aab41fa86124186dcabfb1cc4da84f81ce7b",
-      "bytes": 122252
+      "bytes": 122252,
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Higashiyama Niseko Village, a Ritz-Carlton Reserve",
@@ -105,7 +108,7 @@
       "key": "view-1",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/",
         "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/rooms/"
@@ -124,7 +127,8 @@
       "outputSize": [
         1336,
         751
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Higashiyama Niseko Village, a Ritz-Carlton Reserve",
@@ -132,7 +136,7 @@
       "key": "view-2",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/",
         "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/rooms/"
@@ -151,7 +155,8 @@
       "outputSize": [
         1700,
         1134
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Higashiyama Niseko Village, a Ritz-Carlton Reserve",
@@ -159,7 +164,7 @@
       "key": "view-3",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/",
         "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/rooms/"
@@ -178,7 +183,8 @@
       "outputSize": [
         1700,
         1133
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Setsu Niseko",
@@ -186,7 +192,7 @@
       "key": "view-1",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://setsuniseko.com/en/",
         "https://setsuniseko.com/en/suites/"
@@ -210,7 +216,8 @@
       "license": "",
       "licenseUrl": "",
       "visualQaWarning": "Contrôle visuel : paysage du mont Yōtei SANS bâtiment Setsu identifiable. Ne doit PAS être présenté comme une photo de l'hôtel ; À REMPLACER par une suite ou un espace de Setsu.",
-      "visualQaReviewedAt": "2026-10-15"
+      "visualQaReviewedAt": "2026-10-15",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Setsu Niseko",
@@ -218,7 +225,7 @@
       "key": "view-2",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://setsuniseko.com/en/",
         "https://setsuniseko.com/en/suites/"
@@ -242,15 +249,16 @@
       "license": "",
       "licenseUrl": "",
       "visualQaWarning": "Contrôle visuel : soin visage en espace bien-être, non la chambre ou la résidence. Utiliser seulement pour illustrer le spa si l'appartenance à Setsu est confirmée.",
-      "visualQaReviewedAt": "2026-10-15"
+      "visualQaReviewedAt": "2026-10-15",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Setsu Niseko",
       "propertyKey": "setsu-niseko",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://setsuniseko.com/en/",
         "https://setsuniseko.com/en/suites/"
@@ -272,15 +280,18 @@
       ],
       "credit": "",
       "license": "",
-      "licenseUrl": ""
+      "licenseUrl": "",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "AYA Niseko",
       "propertyKey": "aya-niseko",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.ayaniseko.com/",
         "https://www.ayaniseko.com/accommodation/residences"
@@ -299,15 +310,18 @@
       "outputSize": [
         1500,
         1124
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "AYA Niseko",
       "propertyKey": "aya-niseko",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.ayaniseko.com/",
         "https://www.ayaniseko.com/accommodation/residences"
@@ -326,15 +340,18 @@
       "outputSize": [
         1200,
         784
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "AYA Niseko",
       "propertyKey": "aya-niseko",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.ayaniseko.com/",
         "https://www.ayaniseko.com/accommodation/residences"
@@ -353,7 +370,10 @@
       "outputSize": [
         1088,
         650
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     }
   ],
   "destinationScenes": [
@@ -362,8 +382,8 @@
       "placeLabel": "Mount Yotei",
       "searchQuery": "Mount Yotei Hokkaido",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/niseko-premium/destination/scene-1.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Mount_Yōtei_and_Mount_Niseko-Annupuri.jpg",
@@ -381,15 +401,18 @@
         1250
       ],
       "sha256": "66f521acdae6a7f841900a3bdb60d6e2a09b4dc758661ac562932c2e1df950a3",
-      "bytes": 267036
+      "bytes": 267036,
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-2",
       "placeLabel": "Niseko Grand Hirafu",
       "searchQuery": "Niseko Grand Hirafu",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/niseko-premium/destination/scene-2.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Grand_HIRAFU_Mountain_Center_and_Annex.jpg/1920px-Grand_HIRAFU_Mountain_Center_and_Annex.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -407,15 +430,18 @@
       ],
       "credit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Excellent_moniteur_de_ski&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Excellent moniteur de ski (page does not exist)\">Excellent moniteur de ski</a>",
       "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-3",
       "placeLabel": "Niseko Hanazono",
       "searchQuery": "Niseko Hanazono Hokkaido",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/niseko-premium/destination/scene-3.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:HANAZONO_1st_Lift_(6-seater).jpg",
@@ -433,15 +459,18 @@
         1250
       ],
       "sha256": "0b19ff80a9b395eab03c3adc75d0e0a3a5f6abde324b3a4987d4e55cca1001a3",
-      "bytes": 215066
+      "bytes": 215066,
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-4",
       "placeLabel": "Niseko Village",
       "searchQuery": "Niseko Village",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/niseko-premium/destination/scene-4.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Niseko-Higashiyama.JPG/1920px-Niseko-Higashiyama.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -459,15 +488,18 @@
       ],
       "credit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Wakimasa&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Wakimasa (page does not exist)\">Wakimasa</a>",
       "license": "Public domain",
-      "licenseUrl": ""
+      "licenseUrl": "",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-5",
       "placeLabel": "Niseko Annupuri",
       "searchQuery": "Niseko Annupuri",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/niseko-premium/destination/scene-5.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Niseko-Annupuri.JPG/1920px-Niseko-Annupuri.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -485,7 +517,10 @@
       ],
       "credit": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Wakimasa&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Wakimasa (page does not exist)\">Wakimasa</a>",
       "license": "Public domain",
-      "licenseUrl": ""
+      "licenseUrl": "",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-6",
@@ -493,7 +528,7 @@
       "searchQuery": "Kutchan Hokkaido",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Commons photo licence verified at source; any attribution, share-alike, adaptation and trademark rules need compliance. Visual QA still required.",
       "localPath": "/images/travel/niseko-premium/destination/scene-6.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Kutchan-STA_2024.jpg/1920px-Kutchan-STA_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -511,15 +546,16 @@
       ],
       "credit": "MaedaAkihiko",
       "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-7",
       "placeLabel": "Niseko winter",
       "searchQuery": "Niseko Hokkaido winter",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/niseko-premium/destination/scene-7.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:2018_skiing_in_niseko.jpg",
@@ -537,15 +573,18 @@
         1250
       ],
       "sha256": "d09493090779c1d328a8d676b5c5911c08f08e597312f42fda2d0ce20949f3b3",
-      "bytes": 276912
+      "bytes": 276912,
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-8",
       "placeLabel": "Niseko forest",
       "searchQuery": "Niseko Hokkaido forest",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/niseko-premium/destination/scene-8.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:2010-02.niseko_annupuri.jpg",
@@ -563,7 +602,10 @@
         1250
       ],
       "sha256": "f0d3ccaf009fff0911102105fc2f94c51dbe249e1a979a55e4b859acb1a0cc93",
-      "bytes": 111848
+      "bytes": 111848,
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-9",
@@ -571,7 +613,7 @@
       "searchQuery": "Niseko Hokkaido onsen",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Commons photo licence verified at source; any attribution, share-alike, adaptation and trademark rules need compliance. Visual QA still required.",
       "localPath": "/images/travel/niseko-premium/destination/scene-9.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Goshiki_spa_roten.JPG/1920px-Goshiki_spa_roten.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -591,8 +633,10 @@
         1350
       ],
       "visualQaWarning": "Contrôle visuel : vrai bain extérieur Goshiki Onsen mais photo estivale ancienne, qualité peu premium ; À REMPLACER par un visuel d'onsen local plus adapté avant publication.",
-      "visualQaReviewedAt": "2026-10-15"
+      "visualQaReviewedAt": "2026-10-15",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     }
   ],
-  "sourceCuration": "Third pass: source-specific Wikimedia files and exact hotel-only images, still visually unapproved."
+  "sourceCuration": "Third pass: source-specific Wikimedia files and exact hotel-only images, still visually unapproved.",
+  "ownerRightsAuthorization": "Bosphoras operator confirmed photo usage rights on 2026-10-15; source attribution obligations remain."
 }

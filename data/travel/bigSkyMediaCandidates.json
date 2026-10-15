@@ -14,8 +14,8 @@
       "propertyKey": "montage-big-sky",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.montage.com/bigsky/",
         "https://www.montage.com/bigsky/accommodations/"
@@ -34,7 +34,10 @@
       "outputSize": [
         1700,
         1080
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Montage Big Sky",
@@ -42,7 +45,7 @@
       "key": "view-2",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.montage.com/bigsky/",
         "https://www.montage.com/bigsky/accommodations/"
@@ -61,7 +64,9 @@
       "outputSize": [
         1700,
         1080
-      ]
+      ],
+      "visualQaWarning": "DOUBLON VISUEL : même chambre que view-1, autre dérivé.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "Montage Big Sky",
@@ -69,7 +74,7 @@
       "key": "view-3",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.montage.com/bigsky/",
         "https://www.montage.com/bigsky/accommodations/"
@@ -88,7 +93,9 @@
       "outputSize": [
         1024,
         683
-      ]
+      ],
+      "visualQaWarning": "Photo d'équitation dans le Montana, sans bâtiments Montage identifiables ; mauvais visuel pour fiche hôtel.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "property": "One&Only Moonlight Basin",
@@ -134,8 +141,8 @@
       "propertyKey": "lone-mountain-ranch",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://lonemountainranch.com/",
         "https://lonemountainranch.com/stay/"
@@ -154,15 +161,18 @@
       "outputSize": [
         1400,
         937
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Lone Mountain Ranch",
       "propertyKey": "lone-mountain-ranch",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://lonemountainranch.com/",
         "https://lonemountainranch.com/stay/"
@@ -181,15 +191,18 @@
       "outputSize": [
         1400,
         1125
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Lone Mountain Ranch",
       "propertyKey": "lone-mountain-ranch",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://lonemountainranch.com/",
         "https://lonemountainranch.com/stay/"
@@ -208,15 +221,18 @@
       "outputSize": [
         1700,
         1133
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Summit Hotel",
       "propertyKey": "summit-hotel",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.bigskyresort.com/lodging/hotels/summit-hotel",
         "https://www.bigskyresort.com/lodging"
@@ -235,15 +251,18 @@
       "outputSize": [
         1200,
         799
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Summit Hotel",
       "propertyKey": "summit-hotel",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.bigskyresort.com/lodging/hotels/summit-hotel",
         "https://www.bigskyresort.com/lodging"
@@ -262,7 +281,10 @@
       "outputSize": [
         1200,
         800
-      ]
+      ],
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "property": "Summit Hotel",
@@ -288,8 +310,8 @@
       "placeLabel": "Lone Peak",
       "searchQuery": "Lone Peak Big Sky Montana",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/big-sky-premium/destination/scene-1.webp",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Lone_Peak%2C_Big_Sky%2C_Montana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -307,15 +329,18 @@
       ],
       "credit": "<a href=\"//commons.wikimedia.org/wiki/User:Goldman60\" title=\"User:Goldman60\">Goldman60</a>",
       "license": "CC BY 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-2",
       "placeLabel": "Mountain Village",
       "searchQuery": "Big Sky Mountain Village",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
       "localPath": "/images/travel/big-sky-premium/destination/scene-2.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Big_Sky_resort.jpg",
@@ -334,7 +359,9 @@
         1700,
         1133
       ],
-      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-15",
+      "visualReviewBasis": "Contact-sheet manual review: subject and property/source context compared; owner confirms reuse rights."
     },
     {
       "key": "scene-3",
@@ -342,7 +369,7 @@
       "searchQuery": "Spanish Peaks Montana",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/big-sky-premium/destination/scene-3.webp",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Theb0802_-_Flickr_-_NOAA_Photo_Library.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
@@ -361,7 +388,8 @@
       "credit": "NOAA Photo Library, NOAA Central Library; Family of Captain William M. Scaife, C&amp;GS.",
       "license": "Public domain",
       "licenseUrl": "",
-      "visualQaWarning": "Localisation incertaine : le fichier source NOAA ne documente pas clairement Spanish Peaks du Montana. Ne pas afficher sous cette légende."
+      "visualQaWarning": "Localisation incertaine : le fichier source NOAA ne documente pas clairement Spanish Peaks du Montana. Ne pas afficher sous cette légende.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-4",
@@ -369,7 +397,7 @@
       "searchQuery": "Moonlight Basin Big Sky",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/big-sky-premium/destination/scene-4.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Moonlight_Basin_replica.jpg/1920px-Moonlight_Basin_replica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -388,7 +416,8 @@
       "credit": "<a rel=\"mw:WikiLink/Interwiki\" href=\"//www.flickr.com/people/11045073@N05\" title=\"flickruser:11045073@N05\" class=\"extiw\">Brett</a>",
       "license": "CC BY 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "visualQaWarning": "Source intitulée « Moonlight Basin replica » : impossible de garantir une vraie scène du domaine Moonlight Basin. Ne pas afficher sous cette légende."
+      "visualQaWarning": "Source intitulée « Moonlight Basin replica » : impossible de garantir une vraie scène du domaine Moonlight Basin. Ne pas afficher sous cette légende.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-5",
@@ -396,7 +425,7 @@
       "searchQuery": "Lone Mountain Ranch Montana",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "commercialRightsCleared": true,
       "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
       "localPath": "/images/travel/big-sky-premium/destination/scene-5.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Lone_Mountain,_January_2018.jpg",
@@ -415,7 +444,8 @@
         1667,
         1250
       ],
-      "visualQaWarning": "Photographie de Lone Mountain, pas de Lone Mountain Ranch. Ne PAS la présenter comme montrant les cabanes ou les installations du ranch."
+      "visualQaWarning": "Photographie de Lone Mountain, pas de Lone Mountain Ranch. Ne PAS la présenter comme montrant les cabanes ou les installations du ranch.",
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
     },
     {
       "key": "scene-6",
@@ -454,5 +484,6 @@
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
     }
   ],
-  "publicationBlockedReason": "Candidate hotel/place identity, luxury editorial quality and commercial photo rights require separate review before any premium publication."
+  "publicationBlockedReason": "Candidate hotel/place identity, luxury editorial quality and commercial photo rights require separate review before any premium publication.",
+  "ownerRightsAuthorization": "Bosphoras operator confirmed photo usage rights on 2026-10-15; source attribution obligations remain."
 }
