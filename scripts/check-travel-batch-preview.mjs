@@ -29,8 +29,19 @@ for(const [slug,stem] of slugs){
   }
  }
  const guide=fs('data/travel/'+stem+'Guide.ts','utf8');
+ const photoAt=guide.lastIndexOf('photos:');
+ const guideEnd=guide.lastIndexOf('\n};');
+ assert(photoAt>0 && guideEnd>photoAt,slug+' photo registry missing');
+ const guidePhotos=JSON.parse(guide.slice(photoAt+'photos:'.length,guideEnd).trim());
+ const approvedKeys=m.destinationScenes.filter(x=>x.visuallyVerified===true&&x.commercialRightsCleared===true&&!x.visualQaWarning);
+ for(const item of approvedKeys){
+   assert(guidePhotos[item.key] && guidePhotos[item.key].src===item.localPath,
+     slug+' approved scene not in guide photos: '+item.key);
+ }
+
  const hero=guide.match(/hero:"(scene-\d+)"/)?.[1];
  const second=guide.match(/secondary:"(scene-\d+)"/)?.[1];
+ assert(guidePhotos[hero]?.src && guidePhotos[second]?.src,slug+' requested hero/secondary is missing from page metadata');
  assert(hero&&second,slug+' missing staged hero/secondary');
  for(const key of [hero,second]){
   assert(m.destinationScenes.some(x=>x.key===key&&x.visuallyVerified===true&&!x.visualQaWarning),
@@ -45,7 +56,10 @@ for(const [slug,stem] of slugs){
 const catalogue=fs('data/travel/destinations.ts','utf8');
 assert(catalogue.includes('approvedDestinationSlugs: ReadonlySet<string> = new Set([])'),'Indexability guard weakened');
 assert(catalogue.includes('approvedCategorySlugs: ReadonlySet<string> = new Set([])'),'Category indexability guard weakened');
+const ui=fs('components/travel/FeaturedCityGuide.tsx','utf8');
+assert(ui.includes('const approvedPhotos=')&&ui.includes('hero && (destinationAssets'),
+  'Missing image fallback could crash the premium destination component');
 const site=fs('components/travel/TravelPages.tsx','utf8');
 assert(site.includes('robots: { index: ready'),'Robots noindex must remain');
-assert(site.includes('schemaHeroIsCleared'),'Unapproved images must remain excluded from JSON-LD');
+assert(site.includes('schemaHeroPhoto')&&site.includes('schemaHeroIsCleared'),'Unapproved images must remain excluded from JSON-LD');
 console.log('ALL EIGHT NEW GUIDES HAVE REAL UNIQUE SOURCE PHOTOS, APPROVED HERO AND FOUR NONEMPTY PROPERTY GALLERIES, INDEXABLE=false. Usable photos:',approved);
