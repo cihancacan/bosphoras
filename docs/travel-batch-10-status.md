@@ -37,3 +37,16 @@
 - Les photographies signalées sont exclues ; ne pas activer `visuallyVerified` globalement.
 - **Une seule Preview Vercel** pour vérifier le rendu réel, les galeries, l'UX responsive et le SEO avant toute décision de publication. Cette Preview est distincte de la production et ne vaut pas autorisation d'indexer le contenu.
 - Pour la mise en production et l'indexation future : corriger les images exclues et éventuellement enrichir les galeries les plus légères, contrôler visuellement la Preview et vérifier la disponibilité Wink par fournisseur.
+
+## Correctif de prévisualisation — 16 octobre 2026
+
+Le premier déploiement Preview avait l'état Vercel `READY`, **mais les pages avaient des erreurs SSR** `TypeError: Cannot read properties of undefined (reading 'src')`. Le rendu échouait lorsqu'un guide référençait une scène d'en-tête ajoutée dans son manifeste plus tard que dans l'objet `Guide.ts`. Une Preview READY **n'est donc pas une preuve suffisante de bon fonctionnement**.
+
+Correctifs appliqués :
+- Ajout des nouvelles scènes réellement vérifiées aux métadonnées `Guide.ts`, notamment `scene-2` à Verbier et `scene-8` à Megève.
+- `FeaturedCityGuide` : protection contre les références photos manquantes, sélection de repli parmi les photos réellement approuvées, sinon fond neutre.
+- `TravelPages` : ne plus lire `.src` quand une photo d'en-tête est absente ; exclusion de son URL du JSON-LD.
+- `scripts/check-travel-batch-preview.mjs` : contrôle systématique de la présence des scènes approuvées dans les pages, et des clés hero/secondary.
+- CI TypeScript et qualité de l'ensemble des dix destinations : https://github.com/cihancacan/bosphoras/actions/runs/38875842252
+
+**Une unique Preview de correction supplémentaire** est nécessaire parce que la première avait un défaut de rendu. Aucune publication en production, aucune activation de l'indexation et aucune modification des API Wink/immobilier/CRM.
