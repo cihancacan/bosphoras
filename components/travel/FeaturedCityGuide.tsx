@@ -234,15 +234,21 @@ function Advice({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang}) {
 export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityGuideData;locale:Lang;variant:Variant}) {
   const fr=locale==='fr',hotelPage=variant==='hotels';
   const destinationAssets=isAlpineCity(city.slug)?alpineAvailablePhotoPathsByCity[city.slug]:city.slug==='courchevel-1850'?confirmedCourchevelAssets:city.slug==='mustique'?confirmedMustiqueAssets:city.slug==='porto-cervo'?confirmedPortoCervoAssets:city.slug==='saint-barthelemy'?confirmedSaintBarthelemyAssets:city.slug==='los-cabos'?confirmedLosCabosAssets:city.slug==='maldives'?confirmedMaldivesAssets:null;
-  const hero=(destinationAssets && !destinationAssets.has(city.photos[city.hero].src)) ? (Object.values(city.photos).find(photo=>destinationAssets.has(photo.src)) || city.photos[city.hero]) : city.photos[city.hero];
+  // The approved manifest can advance ahead of hand-curated guide captions.
+  // Never read a photo's .src before proving the key exists and the asset is allowed.
+  const approvedPhotos=Object.values(city.photos).filter(photo=>!destinationAssets || destinationAssets.has(photo.src));
+  const requestedHero=city.photos[city.hero];
+  const hero=requestedHero && approvedPhotos.some(photo=>photo.src===requestedHero.src)
+    ? requestedHero : approvedPhotos[0];
   const requestedSecondary=city.photos[city.secondary];
-  const secondary=(city.slug==='koh-samui' && !confirmedKohSamuiAssets.has(requestedSecondary.src)) ? city.photos['ang-thong'] : (destinationAssets && !destinationAssets.has(requestedSecondary.src)) ? (Object.values(city.photos).find(photo=>destinationAssets.has(photo.src) && photo.src!==hero.src) || hero) : requestedSecondary;
+  const secondary=requestedSecondary && approvedPhotos.some(photo=>photo.src===requestedSecondary.src) && requestedSecondary.src!==hero?.src
+    ? requestedSecondary : (approvedPhotos.find(photo=>photo.src!==hero?.src) || hero);
   const hubHref=travelHref(locale,'destinations/'+city.slug);
   const hotelsHref=travelHref(locale,'hotels/'+city.slug);
   return <main className="min-h-screen bg-[#faf7f0] text-[#182c38]">
     <section className="relative isolate overflow-hidden bg-[#112937] text-[#f8f3e8]">
       <div className="absolute inset-0" aria-hidden="true">
-        {(destinationAssets ? destinationAssets.has(hero.src) : true) && <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="100vw" className="object-cover" />}
+        {hero && (destinationAssets ? destinationAssets.has(hero.src) : true) && <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="100vw" className="object-cover" />}
         {city.slug === 'bodrum'
           ? <div className="absolute inset-0 bg-gradient-to-r from-[#07171d]/95 via-[#101f24]/72 to-[#142933]/15"/>
           : city.slug === 'antalya'
@@ -280,8 +286,8 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             :city.slug==='bali'?(fr?'Bali · falaises ensoleillées d’Uluwatu et océan Indien':'Bali · sunlit Uluwatu cliffs and the Indian Ocean')
             :city.slug==='phuket'?(fr?'Phuket · plage de Kata Noi et eaux turquoise de l’Andaman':'Phuket · Kata Noi beach and turquoise Andaman Sea')
             :city.slug==='porto-cervo'?(fr?'Porto Cervo · marina et baies de la Costa Smeralda':'Porto Cervo · marina and Emerald Coast coves'):city.slug==='saint-barthelemy'?(fr?'Saint-Barth · port de Gustavia et mer des Caraïbes':'St Barth · Gustavia harbour and Caribbean Sea'):city.slug==='los-cabos'?(fr?'Los Cabos · El Arco et la côte de Baja':'Los Cabos · El Arco on the Baja coast'):city.slug==='maldives'?(fr?'Maldives · lagon corallien de l’océan Indien':'Maldives · Indian Ocean coral lagoon'):(fr?'Koh Samui · rivage tropical du golfe de Thaïlande':'Koh Samui · tropical Gulf of Thailand coast')} ·{' '}
-          {city.slug==='antalya' ? <span>{hero.author}</span>
-            : <a href={hero.sourcePage} rel="noopener noreferrer" target="_blank" className="underline underline-offset-2">{hero.author}</a>}
+          {city.slug==='antalya' ? <span>{hero?.author}</span>
+            : hero ? <a href={hero.sourcePage} rel="noopener noreferrer" target="_blank" className="underline underline-offset-2">{hero.author}</a> : null}
         </p>}
         <p className={(city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez'||city.slug === 'bali'||city.slug === 'phuket'||city.slug === 'koh-samui'||city.slug === 'maldives'||city.slug === 'los-cabos'||city.slug === 'saint-barthelemy'||city.slug === 'porto-cervo') ? 'mt-8 max-w-3xl text-lg leading-8 text-white [text-shadow:0_2px_8px_rgba(0,0,0,0.65)]' : 'mt-8 max-w-3xl text-lg leading-8 text-[#e4e8e5]'}>
           {hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}</p>
@@ -399,7 +405,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
     <section id="experience" className="scroll-mt-24 bg-[#142d3a] py-16 text-[#f8f3e8] sm:py-24">
       <div className="mx-auto max-w-7xl px-5">
         <div className="grid items-center gap-8 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
-          {(destinationAssets ? destinationAssets.has(secondary.src) : true) && <CityPhoto photo={secondary} locale={locale}/>}
+          {secondary && (destinationAssets ? destinationAssets.has(secondary.src) : true) && <CityPhoto photo={secondary} locale={locale}/>}
           <div>
             <p className="text-xs uppercase tracking-[.2em] text-[#d7b77d]">
               {fr?'02 · L’esprit du lieu':'02 · A sense of place'}</p>

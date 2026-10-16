@@ -267,7 +267,8 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
   // Unapproved alpine hotel and destination photos are excluded from JSON-LD as well as the UI.
   const clearedImageSet = kohGuide && Object.prototype.hasOwnProperty.call(alpineAvailablePhotoPathsByCity,kohGuide.slug)
     ? (alpineAvailablePhotoPathsByCity as Record<string, Set<string>>)[kohGuide.slug] : undefined;
-  const schemaHeroIsCleared = !clearedImageSet || clearedImageSet.has(kohGuide?.photos[kohGuide.hero].src || '');
+  const schemaHeroPhoto = kohGuide ? kohGuide.photos[kohGuide.hero] : undefined;
+  const schemaHeroIsCleared = Boolean(schemaHeroPhoto && (!clearedImageSet || clearedImageSet.has(schemaHeroPhoto.src)));
   const node = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -304,7 +305,7 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
           headline:locale==='fr'?(isAlpine?kohGuide.headingFr:isCourchevel?'Courchevel 1850 : quatre palaces et cinq secteurs':isMustique?'Mustique : un hôtel et trois villas':isPortoCervo?'Porto Cervo : quatre hôtels et cinq façons de séjourner':isSaintBarth?'Saint-Barth : quatre hôtels d’exception et cinq secteurs':isLosCabos?'Hôtels de luxe à Los Cabos : quatre resorts et cinq zones':isMaldives?'Hôtels de luxe aux Maldives : quatre îles et cinq façons de séjourner':'Hôtels de luxe à Koh Samui : quatre adresses et cinq secteurs'):(isAlpine?kohGuide.headingEn:isCourchevel?'Courchevel 1850: four luxury palaces and five areas':isMustique?'Mustique: one hotel and three private villas':isPortoCervo?'Luxury hotels in Porto Cervo: four stays and five areas':isSaintBarth?'Luxury hotels in St Barth: four island hotels and five areas':isLosCabos?'Luxury hotels in Los Cabos: four resorts and five areas':isMaldives?'Luxury hotels in the Maldives: four resorts and five ways to stay':'Luxury hotels in Koh Samui: four hotels and five areas'),
           description:locale==='fr'?kohGuide.introFr:kohGuide.introEn,
           inLanguage:locale,mainEntityOfPage:base,
-          ...(schemaHeroIsCleared ? {image:ORIGIN+kohGuide.photos[kohGuide.hero].src} : {}),
+          ...(schemaHeroIsCleared && schemaHeroPhoto ? {image:ORIGIN+schemaHeroPhoto.src} : {}),
           author:{'@type':'Organization',name:'Bosphoras Luxury Stays',url:ORIGIN+'/travel'},
           publisher:{'@type':'Organization',name:'Bosphoras Luxury Stays',url:ORIGIN+'/travel'}
         },
