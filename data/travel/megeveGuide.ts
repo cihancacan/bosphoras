@@ -69,6 +69,16 @@ export const megeveGuide:FeaturedCityGuideData={
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "sourcePage": "https://commons.wikimedia.org/wiki/File:Mont_Blanc_@_Megève_(51037173286).jpg"
+  },
+  "scene-8": {
+    "src": "/images/travel/megeve-premium/destination/scene-8.webp",
+    "fr": "Megève summer · vue vérifiée de Megève",
+    "en": "Megève summer · verified view of Megève",
+    "author": "CBougault",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Megève,_depuis_la_chaîne_du_Mont-Joly.jpg"
   }
 }
+
 };

@@ -82,6 +82,16 @@ export const aspenGuide:FeaturedCityGuideData={
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "sourcePage": "https://commons.wikimedia.org/wiki/File:Snowmass_gondola_and_Ski_area.jpg"
+  },
+  "scene-9": {
+    "src": "/images/travel/aspen-premium/destination/scene-9.webp",
+    "fr": "Maroon Bells · vue vérifiée de Aspen",
+    "en": "Maroon Bells · verified view of Aspen",
+    "author": "Scott Mecum, U.S. Forest Service / U.S. Department of Agriculture",
+    "license": "Public domain",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Maroon_Bells,_two_peaks_in_the_Elk_Mountains_that_are_less_than_half-mile_apart,_are_reflected_on_Maroon_Lake.jpg"
   }
 }
+
 };
