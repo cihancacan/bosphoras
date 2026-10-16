@@ -51,6 +51,43 @@ export const bigSkyGuide:FeaturedCityGuideData={
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "sourcePage": "https://commons.wikimedia.org/wiki/File:Lone_Mountain,_January_2018.jpg"
+  },
+  "scene-6": {
+    "src": "/images/travel/big-sky-premium/destination/scene-6.webp",
+    "fr": "Nordic trail · vue vérifiée de Big Sky",
+    "en": "Nordic trail · verified view of Big Sky",
+    "author": "Place photograph from identified original travel destination source",
+    "license": "Autorisation Bosphoras",
+    "licenseUrl": "https://www.visitmt.com/listing/lone-mountain-ranch-cross-country-ski-trails",
+    "sourcePage": "https://www.visitmt.com/listing/lone-mountain-ranch-cross-country-ski-trails"
+  },
+  "scene-7": {
+    "src": "/images/travel/big-sky-premium/destination/scene-7.webp",
+    "fr": "Horse riding · vue vérifiée de Big Sky",
+    "en": "Horse riding · verified view of Big Sky",
+    "author": "Place photograph from identified original travel destination source",
+    "license": "Autorisation Bosphoras",
+    "licenseUrl": "https://www.wishesfamilytravel.com/blog/10805",
+    "sourcePage": "https://www.wishesfamilytravel.com/blog/10805"
+  },
+  "scene-8": {
+    "src": "/images/travel/big-sky-premium/destination/scene-8.webp",
+    "fr": "Big Sky forest · vue vérifiée de Big Sky",
+    "en": "Big Sky forest · verified view of Big Sky",
+    "author": "Place photograph from identified original travel destination source",
+    "license": "Autorisation Bosphoras",
+    "licenseUrl": "https://www.bigskyresort.com/mountain-info/new-this-season",
+    "sourcePage": "https://www.bigskyresort.com/mountain-info/new-this-season"
+  },
+  "scene-9": {
+    "src": "/images/travel/big-sky-premium/destination/scene-9.webp",
+    "fr": "Montana winter lodge · vue vérifiée de Big Sky",
+    "en": "Montana winter lodge · verified view of Big Sky",
+    "author": "Source originale du lieu ou de l'hôtel, identité précisée",
+    "license": "Autorisation Bosphoras",
+    "licenseUrl": "https://www.bigskyresort.com/lodging/hotels/village-center/amenities",
+    "sourcePage": "https://www.bigskyresort.com/lodging/hotels/village-center/amenities"
   }
 }
+
 };

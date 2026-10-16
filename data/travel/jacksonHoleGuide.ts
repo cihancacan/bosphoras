@@ -60,6 +60,25 @@ export const jacksonHoleGuide:FeaturedCityGuideData={
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/File:Barns_grand_tetons.jpg",
     "sourcePage": "https://commons.wikimedia.org/wiki/File:Barns_grand_tetons.jpg"
+  },
+  "scene-6": {
+    "src": "/images/travel/jackson-hole-premium/destination/scene-6.webp",
+    "fr": "Wildlife · vue vérifiée de Jackson Hole",
+    "en": "Wildlife · verified view of Jackson Hole",
+    "author": "NPS staff",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Moose_lying_in_grass_with_light_snow_and_female_moose_in_the_background_at_Grand_Teton_National_Park,_Wyoming_(27cbf884-c1b0-4e43-8ba0-46e2be45d43a).jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Moose_lying_in_grass_with_light_snow_and_female_moose_in_the_background_at_Grand_Teton_National_Park,_Wyoming_(27cbf884-c1b0-4e43-8ba0-46e2be45d43a).jpg"
+  },
+  "scene-7": {
+    "src": "/images/travel/jackson-hole-premium/destination/scene-7.webp",
+    "fr": "Snow covered cabins · vue vérifiée de Jackson Hole",
+    "en": "Snow covered cabins · verified view of Jackson Hole",
+    "author": "Place photograph from identified original travel destination source",
+    "license": "Autorisation Bosphoras",
+    "licenseUrl": "https://www.rmrentals.com/jackson-hole-rentals/granite-ridge-cabin-7608",
+    "sourcePage": "https://www.rmrentals.com/jackson-hole-rentals/granite-ridge-cabin-7608"
   }
 }
+
 };
