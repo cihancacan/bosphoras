@@ -1,6 +1,6 @@
 # St. Moritz — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 17/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 18/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle St. Moritz](st-moritz.jpg)
 
@@ -20,7 +20,7 @@
 | 12 | Carlton Hotel St. Moritz — view-3 | [Source](https://tschuggencollection.ch/en/hotel/carlton-hotel) · Elegant restaurant table with white linens, wine glasses, and floral centerpiece beneath Asian-inspired artwork on textu| Candidate |
 | 13 | St. Moritz lake — scene-1 | [Source](https://commons.wikimedia.org/wiki/File:Blick_über_den_Sankt_Moritzersee_auf_Sankt_Moritz.jpg) · Blick über den Sankt Moritzersee auf Sankt Moritz.jpg| Candidate; **Contrôle visuel : panorama réel du lac en automne. Ne pas légender comme une vue d'hiver ni utiliser pour promettre les conditions de neige.** |
 | 14 | St. Moritz Dorf — scene-2 | [Source](https://commons.wikimedia.org/wiki/File:SMoritz_Dorf_from_lake.jpg) · File:SMoritz Dorf from lake.jpg| Candidate |
-| 15 | St. Moritz Bad — scene-3 | [Source](https://commons.wikimedia.org/wiki/File:St._Moritz_Forum_Paracelsus.JPG) · File:St. Moritz Forum Paracelsus.JPG| Candidate |
+| 15 | St. Moritz Bad — scene-3 | [Source](https://commons.wikimedia.org/wiki/File:St._Moritz_panorama_3.jpg) · St. Moritz panorama 3.jpg| Candidate |
 | 16 | Suvretta — scene-4 | [Source](https://commons.wikimedia.org/wiki/File:Pass_Suvretta.jpg) · File:Pass Suvretta.jpg| Candidate |
 | 17 | Corviglia — scene-5 | [Source](https://commons.wikimedia.org/wiki/File:St._Moritz_Corviglia_2.jpg) · St. Moritz Corviglia 2.jpg| Candidate |
 | 18 | Celerina — scene-6 | [Source](https://commons.wikimedia.org/wiki/File:Celerina_Engadin.jpg) · Celerina Engadin.jpg| Candidate |
