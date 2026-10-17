@@ -151,21 +151,23 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/niseko-premium/ritz-carlton-reserve/view-2.webp",
-      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-digital/rz/apec/hws/c/ctsrz/en_us/photo/unlimited/assets/ctsrz-lobby-9806.jpg",
-      "sourcePage": "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/",
-      "candidateContext": "Lobby",
-      "sha256": "45e1ac249b0c38c8c7b30ad28613481ca37e793d19eaea4a47bf0137d8d3f24e",
-      "bytes": 247120,
+      "downloadUrl": "https://cache.marriott.com.cn/content/dam/marriott-renditions/dm-static-renditions/rz/apec/hws/c/ctsrz/en_us/photo/unlimited/assets/rz-ctsrz-yotei-reserve-twin-room-36282-classic-hor.jpg?downsize=1336px%3A%2A&interpolation=progressive-bilinear&output-quality=70",
+      "sourcePage": "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/rooms/",
+      "candidateContext": "Higashiyama Niseko Village Ritz-Carlton Reserve Yotei Twin Room",
+      "sha256": "d1d0c8019000677daf7eb0eb0b639e9c46c695c98b4f559526f1ae8f7351c753",
+      "bytes": 96394,
       "originalSize": [
-        5000,
-        3334
+        1336,
+        890
       ],
       "outputSize": [
-        1700,
-        1134
+        1336,
+        890
       ],
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
-      "visualQaWarning": "Photo de lobby du Ritz-Carlton Reserve quasi identique au cliché view-1 ; duplicata refusé jusqu'à remplacement."
+      "ownerRightsAuthorization": "Bosphoras operator confirmed image usage authorization in conversation, 2026-10-17.",
+      "visualQaWarning": "NEW exact-property photo candidate; inspect the downloaded image before approving this hotel's gallery.",
+      "credit": "Higashiyama Niseko Village Ritz-Carlton Reserve Yotei Twin Room · publisher/property source",
+      "previousImageUrl": "https://cache.marriott.com/content/dam/marriott-digital/rz/apec/hws/c/ctsrz/en_us/photo/unlimited/assets/ctsrz-lobby-9806.jpg"
     },
     {
       "property": "Higashiyama Niseko Village, a Ritz-Carlton Reserve",
@@ -243,25 +245,26 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/niseko-premium/setsu-niseko/view-2.webp",
-      "downloadUrl": "https://setsuniseko.com/wp-content/uploads/2024.10_cropped-for-hotel-website--scaled.jpg",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/6420def8e68db247e9a2f052/2c0dc355-8c92-4e8f-9715-dbfd2465d652/NISEKO%2BBlack%2BSetsu%2Bqueen%2Bbedroom.jpg",
       "sourcePage": "https://setsuniseko.com/en/gallery/",
-      "candidateContext": "2024.10 Cropped For Hotel Website",
-      "sha256": "b12e045455ee2d7115f70ace7af5e91ab9facac3cfe36650fe65f19463da73d6",
-      "bytes": 47230,
+      "candidateContext": "Setsu Niseko bedroom",
+      "sha256": "21ba789499b0a3277d5f56d92c1451184fa0f18ba7d7d72fb2a535fd779ba45e",
+      "bytes": 152774,
       "originalSize": [
-        2560,
-        1484
+        2000,
+        1338
       ],
       "outputSize": [
-        1700,
-        985
+        1800,
+        1204
       ],
-      "credit": "",
+      "credit": "Setsu Niseko bedroom · publisher/property source",
       "license": "",
       "licenseUrl": "",
-      "visualQaWarning": "Contrôle visuel : soin visage en espace bien-être, non la chambre ou la résidence. Utiliser seulement pour illustrer le spa si l'appartenance à Setsu est confirmée.",
+      "visualQaWarning": "NEW exact-property photo candidate; inspect the downloaded image before approving this hotel's gallery.",
       "visualQaReviewedAt": "2026-10-15",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Bosphoras operator confirmed image usage authorization in conversation, 2026-10-17.",
+      "previousImageUrl": "https://setsuniseko.com/wp-content/uploads/2024.10_cropped-for-hotel-website--scaled.jpg"
     },
     {
       "property": "Setsu Niseko",

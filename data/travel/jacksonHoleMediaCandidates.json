@@ -297,21 +297,23 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/jackson-hole-premium/wort-hotel/view-1.webp",
-      "downloadUrl": "https://wort-hotel.s3.amazonaws.com/1206/ntda_vjh-8959__large.jpg",
-      "sourcePage": "https://www.worthotel.com/",
-      "candidateContext": "Close to Two National Parks",
-      "sha256": "c099aaa88db9e384cee19a94361c9c77be45a8d476bef6f14498f7277ea53f9e",
-      "bytes": 144660,
+      "downloadUrl": "https://media.cntraveler.com/photos/55c0f1c8b72c15d77364d18a/master/w_1200%2Cc_limit/wort-hotel-jackson-wyoming-fireplace.jpg",
+      "sourcePage": "https://www.cntraveler.com/hotels/jackson/the-wort-hotel",
+      "candidateContext": "The Wort Hotel historic fireplace, Jackson",
+      "sha256": "1609520890d46df6c1de6d6b46e9f0dabdfa509bcd251874f313b8744110357d",
+      "bytes": 214212,
       "originalSize": [
-        1920,
-        1080
+        1200,
+        900
       ],
       "outputSize": [
-        1700,
-        956
+        1200,
+        900
       ],
-      "visualQaWarning": "Photo des Tetons, sans hôtel identifié. Ne pas la présenter comme vue de The Wort.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "NEW exact-property photo candidate; inspect the downloaded image before approving this hotel's gallery.",
+      "ownerRightsAuthorization": "Bosphoras operator confirmed image usage authorization in conversation, 2026-10-17.",
+      "credit": "The Wort Hotel historic fireplace, Jackson · publisher/property source",
+      "previousImageUrl": "https://wort-hotel.s3.amazonaws.com/1206/ntda_vjh-8959__large.jpg"
     },
     {
       "property": "The Wort Hotel",
@@ -356,21 +358,23 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/jackson-hole-premium/wort-hotel/view-3.webp",
-      "downloadUrl": "https://wort-hotel.s3.amazonaws.com/1205/fall_moose__large.jpg",
-      "sourcePage": "https://www.worthotel.com/",
-      "candidateContext": "Let us help you plan your fall adventures",
-      "sha256": "2f3b8c3b9463d7f31206a85fea3cf6051a4f52755e042073817c6390b5417208",
-      "bytes": 162764,
+      "downloadUrl": "https://www.thehotelguru.com/_images/e4/da/e4da5f95ab64a50a5138fa05114894bf/s1654x900.jpg",
+      "sourcePage": "https://www.thehotelguru.com/en-us/hotel/the-wort-hotel-jackson",
+      "candidateContext": "The Wort Hotel guest accommodation",
+      "sha256": "63fc316842ed783fa239a6f900f00c46d8044ae8f66b946c6afe1174fa20fa84",
+      "bytes": 129546,
       "originalSize": [
-        1920,
-        1080
+        1654,
+        900
       ],
       "outputSize": [
-        1700,
-        956
+        1654,
+        900
       ],
-      "visualQaWarning": "Photo d'un orignal, pas de l'hôtel The Wort ; à déplacer en rubrique nature seulement.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "NEW exact-property photo candidate; inspect the downloaded image before approving this hotel's gallery.",
+      "ownerRightsAuthorization": "Bosphoras operator confirmed image usage authorization in conversation, 2026-10-17.",
+      "credit": "The Wort Hotel guest accommodation · publisher/property source",
+      "previousImageUrl": "https://wort-hotel.s3.amazonaws.com/1205/fall_moose__large.jpg"
     }
   ],
   "destinationScenes": [
