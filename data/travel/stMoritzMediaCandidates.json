@@ -450,23 +450,26 @@
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-3.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/St._Moritz_Forum_Paracelsus.JPG/1920px-St._Moritz_Forum_Paracelsus.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:St._Moritz_Forum_Paracelsus.JPG",
-      "candidateContext": "File:St. Moritz Forum Paracelsus.JPG",
-      "sha256": "c738e583c5aa6e3cc901c4fa8c804f94fd41de121f797daa95b7bd7a697c7d0f",
-      "bytes": 285562,
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/St._Moritz_panorama_3.jpg/1920px-St._Moritz_panorama_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:St._Moritz_panorama_3.jpg",
+      "candidateContext": "St. Moritz panorama 3.jpg",
+      "sha256": "31fd13229f2b641899c726b9699ec838c998e106c15e5734eebbd6d37ead1157",
+      "bytes": 244466,
       "originalSize": [
         1920,
-        1440
+        543
       ],
       "outputSize": [
-        1667,
-        1250
+        1700,
+        1060
       ],
-      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Paebi\" title=\"User:Paebi\">Paebi</a>",
+      "credit": "Tiia Monto",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Owner confirmed usage 2026-10-17. Preserve photographer and CC attribution.",
+      "frCaption": "Panorama estival de Saint-Moritz et de ses montagnes (2021)",
+      "enCaption": "Summer panoramic mountain view of St. Moritz (2021)",
+      "visualQaWarning": "Exact geographic scene sourced; still requires human visual and quality approval."
     },
     {
       "key": "scene-4",

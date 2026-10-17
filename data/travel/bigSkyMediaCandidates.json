@@ -445,24 +445,26 @@
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/big-sky-premium/destination/scene-3.webp",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/89/Theb0802_-_Flickr_-_NOAA_Photo_Library.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Theb0802_-_Flickr_-_NOAA_Photo_Library.jpg",
-      "candidateContext": "File:Theb0802 - Flickr - NOAA Photo Library.jpg",
-      "sha256": "cc6edc462ca9556a4838614ccc25668debfc13fa63bb76e807fe12919d1c728d",
-      "bytes": 136262,
+      "downloadUrl": "https://spanishpeaks.com/wp-content/uploads/2023/07/171209_170117__S013488-Pano-scaled.jpg",
+      "sourcePage": "https://spanishpeaks.com/skiing/",
+      "candidateContext": "Spanish Peaks Mountain Club official resort skiing photograph",
+      "sha256": "2fafe91e6ffa3a17035daba72c2a6c8e88753ee714ebf53cf5b6d30e7530f03a",
+      "bytes": 348678,
       "originalSize": [
-        1380,
-        900
+        2560,
+        1440
       ],
       "outputSize": [
-        1380,
-        900
+        1700,
+        1060
       ],
-      "credit": "NOAA Photo Library, NOAA Central Library; Family of Captain William M. Scaife, C&amp;GS.",
-      "license": "Public domain",
-      "licenseUrl": "",
-      "visualQaWarning": "Localisation incertaine : le fichier source NOAA ne documente pas clairement Spanish Peaks du Montana. Ne pas afficher sous cette légende.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "credit": "Spanish Peaks Mountain Club, official skiing guide",
+      "license": "Authorized by operator",
+      "licenseUrl": "https://spanishpeaks.com/skiing/",
+      "visualQaWarning": "Exact geographic scene sourced; still requires human visual and quality approval.",
+      "ownerRightsAuthorization": "Owner confirmed usage 2026-10-17. Preserve photographer and CC attribution.",
+      "frCaption": "Pistes enneigées du Spanish Peaks Mountain Club dans la région de Big Sky",
+      "enCaption": "Snow-covered slopes at Spanish Peaks Mountain Club, Big Sky, Montana"
     },
     {
       "key": "scene-4",
