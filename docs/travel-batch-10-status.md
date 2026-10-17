@@ -8,9 +8,9 @@
 - Les **88 entrées de destination** du catalogue principal sont préservées. Huit nouveaux guides alpins contiennent quatre vrais hôtels chacun ; Mustique distingue son hôtel et ses villas.
 - Chaque guide a des secteurs réellement différenciés, des descriptions hôtelières propres à chaque adresse, des expériences, des conseils et des FAQ FR/EN.
 - **210 fichiers WebP candidats présents physiquement sur 210 emplacements prévus** : 12 images par hébergement et 9 vues locales *par destination* — soit **3 par adresse et 9 par destination**. Le nombre de fichiers ne certifie pas leur qualité.
-- **120 photographies des huit nouveaux guides alpins ont été inspectées et sont autorisées pour leurs galeries internes**. Tous les guides alpins ont deux images d'en-tête approuvées et au moins une image valide de chacun des quatre hôtels. Les images mal attribuées, publicités Marriott, photographies en doublon ou hors sujet restent masquées. Les 42 fichiers préexistants Mustique et Courchevel conservent leur propre validation éditoriale/visuelle à confirmer avant publication grand public.
+- **155 photographies des huit nouveaux guides alpins ont été inspectées et sont autorisées pour leurs galeries internes**. Tous les guides alpins ont deux images d'en-tête approuvées et au moins une image valide de chacun des quatre hôtels. Les images mal attribuées, publicités Marriott, photographies en doublon ou hors sujet restent masquées. Les 42 fichiers préexistants Mustique et Courchevel conservent leur propre validation éditoriale/visuelle à confirmer avant publication grand public.
 - Les droits d'utilisation ont été **confirmés par l'exploitant Bosphoras** le 15 octobre 2026 ; source et attribution de chaque photo restent documentées dans les manifestes.
-- Le **Laisinant** contient encore un cliché physiquement présent mais hors sujet (arrêt de bus du Fornet) : son avertissement QA bloque explicitement son affichage tant qu'une vue réellement pertinente n'est pas sélectionnée.
+- Le **Laisinant** contient encore un visuel de carte, et non une photographie de paysage : son avertissement QA bloque explicitement son affichage tant qu'une vue réellement pertinente n'est pas sélectionnée.
 
 ## Sécurité et référencement
 
@@ -56,3 +56,14 @@ Correctifs appliqués :
 Les corrections précises demandées après revue des dix pages sont consignées dans `docs/travel-image-corrections-2026-10-17.md`. La version précédente des planches et des captures Vercel peut contenir des doublons et visuels retirés ; la branche `feature/luxury-travel-seo-destinations-20261012` contient les nouvelles images, leurs sources et le blocage de publication des photos non approuvées.
 
 **IMPORTANT** : les 210 fichiers WebP physiquement présents ne représentent pas 210 photographies toutes approuvées. Certains ont été remplacés, d'autres restent masqués. Le déploiement Vercel Preview le plus récent affichant les corrections du 17 octobre reste à préparer et tester ; production intacte.
+
+## Préparation de la Preview unique — 17 octobre 2026
+
+- **GitHub Actions** : typecheck, catalogue 88, huit guides alpins, 210 fichiers, héros, FAQ et filtrage photo tous OK après corrections. https://github.com/cihancacan/bosphoras/actions/runs/39028898847
+- **155/168 photographies alpines approuvées visuellement**, **13 encore volontairement masquées** : hôtel ou secteur non identifiable, doublon, ancien visuel, mauvaise attribution ou présentation incompatible avec notre site de luxe. Les 42 photographies existantes de Mustique/Courchevel ne sont pas dans ce nombre.
+- **Les dix destinations ont une page FR** située à `/travel/destinations/{slug}` et une page EN à `/en/travel/destinations/{slug}`. Pas de préfixe `/fr` en français.
+- Les sources et les crédits des images restent conservés. Usage des photos autorisé par l'opérateur Bosphoras.
+- **Preview seulement** : en attente de confirmation de statuts HTTP et de qualité SSR. La production reste inchangée, les pages `noindex`, les réservations Wink non inventées.
+- Les clichés rejetés sont énumérés dans `docs/travel-final-preview-qa-2026-10-17.md`.
+
+Déploiement autorisé par le commit dédié de Preview ; aucun nouveau build inutile ne doit être déclenché ensuite.
