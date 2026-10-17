@@ -4,7 +4,9 @@ Cette galerie n'est **pas** une preuve de validation des droits ni une autorisat
 
 **Orange** = image candidate à examiner · **Rouge** = manquante ou signalée · **Vert** = validée visuellement, si et seulement si son manifeste l'indique.
 
-- [St. Moritz](st-moritz.md) — 21/21 fichiers candidats, 3 alertes ; [ouvrir l'image seule](st-moritz.jpg)
+Les photographies récemment remplacées restent rouges tant qu'elles n'ont pas été revues image par image.
+
+- [St. Moritz](st-moritz.md) — 21/21 fichiers candidats, 6 alertes ; [ouvrir l'image seule](st-moritz.jpg)
 - [Aspen](aspen.md) — 21/21 fichiers candidats, 1 alertes ; [ouvrir l'image seule](aspen.jpg)
 - [Niseko](niseko.md) — 21/21 fichiers candidats, 4 alertes ; [ouvrir l'image seule](niseko.jpg)
 - [Megève](megeve.md) — 21/21 fichiers candidats, 7 alertes ; [ouvrir l'image seule](megeve.jpg)
