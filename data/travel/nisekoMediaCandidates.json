@@ -143,7 +143,7 @@
       "propertyKey": "ritz-carlton-reserve",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/",
@@ -165,9 +165,11 @@
         890
       ],
       "ownerRightsAuthorization": "Bosphoras operator confirmed image usage authorization in conversation, 2026-10-17.",
-      "visualQaWarning": "NEW exact-property photo candidate; inspect the downloaded image before approving this hotel's gallery.",
       "credit": "Higashiyama Niseko Village Ritz-Carlton Reserve Yotei Twin Room · publisher/property source",
-      "previousImageUrl": "https://cache.marriott.com/content/dam/marriott-digital/rz/apec/hws/c/ctsrz/en_us/photo/unlimited/assets/ctsrz-lobby-9806.jpg"
+      "previousImageUrl": "https://cache.marriott.com/content/dam/marriott-digital/rz/apec/hws/c/ctsrz/en_us/photo/unlimited/assets/ctsrz-lobby-9806.jpg",
+      "frCaption": "Chambre Yōtei Reserve avec lits jumeaux au Ritz-Carlton Reserve Niseko",
+      "enCaption": "Yotei Reserve twin room at Ritz-Carlton Reserve Niseko",
+      "visualReviewBasis": "2026-10-17, image file read and inspected directly: genuine property room/lounge, no duplicate with existing approved shots; source preserved."
     },
     {
       "property": "Higashiyama Niseko Village, a Ritz-Carlton Reserve",
@@ -237,7 +239,7 @@
       "propertyKey": "setsu-niseko",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://setsuniseko.com/en/",
@@ -261,10 +263,12 @@
       "credit": "Setsu Niseko bedroom · publisher/property source",
       "license": "",
       "licenseUrl": "",
-      "visualQaWarning": "NEW exact-property photo candidate; inspect the downloaded image before approving this hotel's gallery.",
       "visualQaReviewedAt": "2026-10-15",
       "ownerRightsAuthorization": "Bosphoras operator confirmed image usage authorization in conversation, 2026-10-17.",
-      "previousImageUrl": "https://setsuniseko.com/wp-content/uploads/2024.10_cropped-for-hotel-website--scaled.jpg"
+      "previousImageUrl": "https://setsuniseko.com/wp-content/uploads/2024.10_cropped-for-hotel-website--scaled.jpg",
+      "frCaption": "Chambre de Setsu Niseko, vue de l'hébergement",
+      "enCaption": "Bedroom inside Setsu Niseko",
+      "visualReviewBasis": "2026-10-17, image file read and inspected directly: genuine property room/lounge, no duplicate with existing approved shots; source preserved."
     },
     {
       "property": "Setsu Niseko",

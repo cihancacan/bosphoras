@@ -12,14 +12,14 @@ import verbierManifest from './verbierMediaCandidates.json';
 /** Asset manifests describe unapproved candidates. Empty gallery until BOTH visual and commercial-rights review flags are true.
  * A source URL, downloaded WebP and clean filename never imply a publishing licence.
  */
-type Candidate={key:string;propertyKey?:string;status:string;localPath?:string;sourcePage?:string;candidateContext?:string;credit?:string;visuallyVerified?:boolean;commercialRightsCleared?:boolean;visualQaWarning?:string};
+type Candidate={key:string;propertyKey?:string;status:string;localPath?:string;sourcePage?:string;candidateContext?:string;credit?:string;visuallyVerified?:boolean;commercialRightsCleared?:boolean;visualQaWarning?:string;frCaption?:string;enCaption?:string};
 const cityAreas={"megeve":["scene-1","scene-2","scene-3","scene-4","scene-8"],"jackson-hole":["scene-2","scene-3","scene-4","scene-5",null],"big-sky":["scene-2","scene-3","scene-4","scene-5",null],"val-disere":["scene-1","scene-4","scene-5","scene-6","scene-7"],"verbier":["scene-2","scene-3","scene-4","scene-6","scene-8"]} as const;
 function approved(x:Candidate):x is Candidate & {localPath:string;sourcePage:string}{
  return x.status==='candidate_needs_visual_review' && x.visuallyVerified===true &&
   x.commercialRightsCleared===true && !!x.localPath && !!x.sourcePage && !x.visualQaWarning;
 }
 function mediaPhoto(c:Candidate & {localPath:string;sourcePage:string},label:string):BodrumPremiumPhoto {
- return {src:c.localPath,fr:'Photo vérifiée : '+label,en:'Verified image: '+label,
+ return {src:c.localPath,fr:c.frCaption||('Photographie de '+label),en:c.enCaption||('Photograph of '+label),
   sourcePage:c.sourcePage,credit:c.credit||label};
 }
 function hotelEntries(

@@ -289,7 +289,7 @@
       "propertyKey": "wort-hotel",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.worthotel.com/",
@@ -310,10 +310,12 @@
         1200,
         900
       ],
-      "visualQaWarning": "NEW exact-property photo candidate; inspect the downloaded image before approving this hotel's gallery.",
       "ownerRightsAuthorization": "Bosphoras operator confirmed image usage authorization in conversation, 2026-10-17.",
       "credit": "The Wort Hotel historic fireplace, Jackson · publisher/property source",
-      "previousImageUrl": "https://wort-hotel.s3.amazonaws.com/1206/ntda_vjh-8959__large.jpg"
+      "previousImageUrl": "https://wort-hotel.s3.amazonaws.com/1206/ntda_vjh-8959__large.jpg",
+      "frCaption": "Salon historique avec cheminée du Wort Hotel",
+      "enCaption": "The Wort Hotel's historic fireside lounge",
+      "visualReviewBasis": "2026-10-17, image file read and inspected directly: genuine property room/lounge, no duplicate with existing approved shots; source preserved."
     },
     {
       "property": "The Wort Hotel",
@@ -350,7 +352,7 @@
       "propertyKey": "wort-hotel",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.worthotel.com/",
@@ -371,10 +373,12 @@
         1654,
         900
       ],
-      "visualQaWarning": "NEW exact-property photo candidate; inspect the downloaded image before approving this hotel's gallery.",
       "ownerRightsAuthorization": "Bosphoras operator confirmed image usage authorization in conversation, 2026-10-17.",
       "credit": "The Wort Hotel guest accommodation · publisher/property source",
-      "previousImageUrl": "https://wort-hotel.s3.amazonaws.com/1205/fall_moose__large.jpg"
+      "previousImageUrl": "https://wort-hotel.s3.amazonaws.com/1205/fall_moose__large.jpg",
+      "frCaption": "Chambre aux accents western du Wort Hotel",
+      "enCaption": "Western-style bedroom at The Wort Hotel",
+      "visualReviewBasis": "2026-10-17, image file read and inspected directly: genuine property room/lounge, no duplicate with existing approved shots; source preserved."
     }
   ],
   "destinationScenes": [

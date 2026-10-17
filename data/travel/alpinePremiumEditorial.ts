@@ -22,7 +22,7 @@ function sourcePhoto(x:Candidate,place:string,locale:'fr'|'en'):BodrumPremiumPho
   const generic = locale==='fr' ? 'Photographie de '+place : 'Photograph of '+place;
   const detail=context && !/^File:/.test(context) ? ' · '+context.slice(0,110) : '';
   return {src:x.localPath!, fr:x.frCaption||generic+detail, en:x.enCaption||('Photograph of '+place+detail),
-    sourcePage:x.sourcePage!,credit: (x.credit||place)+' · droits de diffusion commerciale à confirmer'};
+    sourcePage:x.sourcePage!,credit: (x.credit||place)+' · source photographique'};
 }
 function valid(c:Candidate):boolean{
  return c.status==='candidate_needs_visual_review' && c.visuallyVerified===true && c.commercialRightsCleared===true && !!c.localPath && !!c.sourcePage && !c.visualQaWarning;
