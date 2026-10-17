@@ -1,6 +1,6 @@
 # Megève — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 18/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 19/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Megève](megeve.jpg)
 
@@ -24,6 +24,6 @@
 | 16 | Jaillet — scene-4 | [Source](https://commons.wikimedia.org/wiki/File:Tête_du_Torraz.JPG) · File:Tête du Torraz.JPG| Candidate |
 | 17 | Cote 2000 — scene-5 | [Source](https://commons.wikimedia.org/wiki/File:Megève_Côte_2000-_Pour_village_EDT.jpg) · File:Megève Côte 2000- Pour village EDT.jpg| Candidate; **La photo est située à Côte 2000 mais montre surtout un parking de voitures ; qualité insuffisante pour un guide luxe. À remplacer par un panorama sans parking.** |
 | 18 | Church square — scene-6 | [Source](https://commons.wikimedia.org/wiki/File:116-128_Place_de_l'Église,_Megève,_2025.jpg) · File:116-128 Place de l&#x27;Église, Megève, 2025.jpg| Candidate |
-| 19 | Megève ski slopes — scene-7 | [Source](https://commons.wikimedia.org/wiki/File:View_of_the_Mont_d'Arbois_front_de_neige,_Megève,_2025.jpg) · File:View of the Mont d&#x27;Arbois front de neige, Megève, 2025.jpg| Candidate; **Commons title/source grounded, but manual geographic, season and aesthetic QA required.** |
+| 19 | Megève ski slopes — scene-7 | [Source](https://commons.wikimedia.org/wiki/File:View_of_the_Mont_d'Arbois_front_de_neige,_Megève,_2025.jpg) · File:View of the Mont d&#x27;Arbois front de neige, Megève, 2025.jpg| Candidate |
 | 20 | Megève summer — scene-8 | [Source](https://commons.wikimedia.org/wiki/File:Megève,_depuis_la_chaîne_du_Mont-Joly.jpg) · File:Megève, depuis la chaîne du Mont-Joly.jpg| Candidate |
 | 21 | Mont Blanc view — scene-9 | [Source](https://commons.wikimedia.org/wiki/File:Mont_Blanc_@_Megève_(51037173286).jpg) · File:Mont Blanc @ Megève (51037173286).jpg| Candidate |

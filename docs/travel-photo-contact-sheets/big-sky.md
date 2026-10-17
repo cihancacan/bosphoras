@@ -9,7 +9,7 @@
 | 1 | Montage Big Sky — view-1 | [Source](https://www.montage.com/bigsky/accommodations/) · Official page sharing image| Candidate |
 | 2 | Montage Big Sky — view-2 | [Source](https://www.montage.com/bigsky/accommodations/) · Montage Big Sky overlooking the Spanish Peaks in the winter.| Candidate |
 | 3 | Montage Big Sky — view-3 | [Source](https://www.montage.com/bigsky/) · King Mountain View guestroom at Montage Big Sky| Candidate |
-| 4 | One&Only Moonlight Basin — view-1 | [Source](https://www.carrier.co.uk/design/hotels/oneonly-moonlight-basin/) · One&amp;Only Moonlight Basin bedroom interior| Candidate; **Exact property source checked; final visual identity and presentation review pending.** |
+| 4 | One&Only Moonlight Basin — view-1 | [Source](https://www.carrier.co.uk/design/hotels/oneonly-moonlight-basin/) · One&amp;Only Moonlight Basin bedroom interior| Candidate; **REJET : fichier original désigné « mock_up_bedroom » ; il s'agit d'une représentation promotionnelle/conceptuelle, pas d'une chambre photographiée et vérifiée. Éviter de la présenter comme photo authentique.** |
 | 5 | One&Only Moonlight Basin — view-2 | [Source](https://www.oneandonlyresorts.com/moonlight-basin/stays/private-home-rentals/signature-six-bedroom) · Official One&amp;Only six bedroom home master| Candidate |
 | 6 | One&Only Moonlight Basin — view-3 | [Source](https://www.oneandonlyresorts.com/moonlight-basin/offers/book-now-and-save) · Official One&amp;Only residential living area| Candidate |
 | 7 | Lone Mountain Ranch — view-1 | [Source](https://lonemountainranch.com/) · | cabins 1| Candidate |

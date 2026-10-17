@@ -15,7 +15,7 @@
 | 7 | La Cordée des Alpes — view-1 | [Source](https://www.verbier.com/hotels/la-corde-des-alpes) · Hotel-cordee-des-alpes-verbier-hotels-exterior.jpg| Candidate |
 | 8 | La Cordée des Alpes — view-2 | [Source](https://www.verbier.com/hotels/la-corde-des-alpes) · Hotel-cordee-des-alpes-verbier-hotels-suite.jpg| Candidate |
 | 9 | La Cordée des Alpes — view-3 | [Source](https://www.verbier.com/hotels/la-corde-des-alpes) · Hotel-cordee-des-alpes-verbier-hotels-apartments.jpg| Candidate |
-| 10 | Experimental Chalet Verbier — view-1 | [Source](https://www.experimentalchalet.com/) · Official hotel&#x27;s page hero photograph| Candidate; **New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.** |
+| 10 | Experimental Chalet Verbier — view-1 | [Source](https://www.experimentalchalet.com/) · Official hotel&#x27;s page hero photograph| Candidate; **REJET VÉRIFIÉ : fenêtre d'un train flou, non identifiable comme Experimental Chalet Verbier.** |
 | 11 | Experimental Chalet Verbier — view-2 | [Source](https://www.experimentalgroup.com/verbier/experimental-chalet-verbier/gallery) · Hotel room with white bed, green headboard, painting, brown curtains, and window view of pine trees.| Candidate |
 | 12 | Experimental Chalet Verbier — view-3 | [Source](https://www.experimentalchalet.com/) · View from a room balcony with two chairs and snowy mountain peaks in the background.| Candidate |
 | 13 | Verbier Médran gondola — scene-1 | [Source](https://commons.wikimedia.org/wiki/File:Télécabines_Verbier_Dec_2021.jpg) · File:Télécabines Verbier Dec 2021.jpg| Candidate; **Commons title does not establish which exact Verbier sector is pictured; detailed visual+map check required before caption.** |
