@@ -1,6 +1,6 @@
 # Aspen — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 19/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 20/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Aspen](aspen.jpg)
 
@@ -12,7 +12,7 @@
 | 4 | Hotel Jerome — view-1 | [Source](https://auberge.com/hotel-jerome/) · Official page sharing image| Candidate |
 | 5 | Hotel Jerome — view-2 | [Source](https://auberge.com/hotel-jerome/) · Embedded image in official property source| Candidate |
 | 6 | Hotel Jerome — view-3 | [Source](https://auberge.com/hotel-jerome/) · Embedded image in official property source| Candidate; **Image d'une télécabine Aspen, ne présente pas Hotel Jerome ; conserver comme scène locale, pas photo d'hôtel.** |
-| 7 | The St. Regis Aspen Resort — view-1 | [Source](https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/photos/) · | Candidate; **Contrôle visuel : vraie façade du St. Regis, photographiée en période verte. Ne pas présenter ce visuel comme une photographie hivernale.** |
+| 7 | The St. Regis Aspen Resort — view-1 | [Source](https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/photos/) · | Candidate |
 | 8 | The St. Regis Aspen Resort — view-2 | [Source](https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/rooms/) · | Candidate |
 | 9 | The St. Regis Aspen Resort — view-3 | [Source](https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/photos/) · | Candidate |
 | 10 | W Aspen — view-1 | [Source](https://www.marriott.com/en-us/hotels/asewh-w-aspen/rooms/) · Official page sharing image| Candidate |
