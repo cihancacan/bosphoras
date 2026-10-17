@@ -32,7 +32,7 @@ def wrap(text,n=37):
  return textwrap.wrap(str(text or ""),width=n)[:2]
 index=["# Bosphoras Luxury Stays — contrôle réel des photos","",
        "Cette galerie n'est **pas** une preuve de validation des droits ni une autorisation de publication. Les photos sont des candidates sourcées ; chaque image doit correspondre à l'établissement ou au lieu nommé. La direction artistique et les alt FR/EN restent à vérifier.","",
-       "**Orange** = image candidate à examiner · **Rouge** = manquante ou signalée · **Vert** = validée visuellement, si et seulement si son manifeste l'indique.",""]
+       "**Orange** = image candidate à examiner · **Rouge** = manquante ou signalée · **Vert** = validée visuellement, si et seulement si son manifeste l'indique.","", "Les photographies récemment remplacées restent rouges tant qu'elles n'ont pas été revues image par image.",""]
 for stem,slug,name in REGISTRY:
  p=Path("data/travel")/(stem+"MediaCandidates.json")
  m=json.loads(p.read_text(encoding="utf8"))

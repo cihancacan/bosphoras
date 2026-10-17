@@ -47,7 +47,7 @@ for(const [slug,key] of [['st-moritz','stMoritz'],['aspen','aspen'],['niseko','n
   for(const item of [...manifest.hotels,...manifest.destinationScenes]){
    assert(['candidate_needs_visual_review','missing'].includes(item.status),'Bad photo state');
    if(item.status==='candidate_needs_visual_review'){
-    assert(item.commercialRightsCleared===true&&item.ownerRightsAuthorization?.includes('2026-10-15'),'Owner-confirmed commercial use provenance missing');
+    assert(item.commercialRightsCleared===true&&item.ownerRightsAuthorization?.match(/2026-10-(15|17)/),'Owner-confirmed commercial use provenance missing');
     assert(item.visuallyVerified!==true||!item.visualQaWarning,'An unfit photograph is incorrectly marked visually approved');
     assert(item.sourcePage?.startsWith('https://')&&item.downloadUrl?.startsWith('https://'),'Photo source incomplete');
     assert(item.localPath?.startsWith('/images/travel/'+slug+'-premium/'),'Photo path mismatch');

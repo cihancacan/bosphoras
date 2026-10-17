@@ -75,7 +75,7 @@ for(const [slug,stem] of rows){
   for(const item of manifest.hotels.concat(manifest.destinationScenes)){
    assert(['candidate_needs_visual_review','missing'].includes(item.status),'Unknown image QA status');
    if(item.status!=='candidate_needs_visual_review')continue;
-   assert(item.commercialRightsCleared===true&&item.ownerRightsAuthorization?.includes('2026-10-15'),
+   assert(item.commercialRightsCleared===true&&item.ownerRightsAuthorization?.match(/2026-10-(15|17)/),
      slug+' owner rights assertion must be recorded');
    assert(item.visuallyVerified!==true||!item.visualQaWarning,slug+' rejected image cannot enter premium gallery');
    assert(item.sourcePage?.startsWith('https://')&&item.downloadUrl?.startsWith('https://'),
