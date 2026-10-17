@@ -551,7 +551,7 @@
       "placeLabel": "Pontresina",
       "searchQuery": "Pontresina Engadin",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-7.webp",
@@ -571,7 +571,9 @@
         1800,
         1010
       ],
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-17",
+      "visualReviewBasis": "Manually inspected panorama / official village-place attribution; summer greenery is correctly presented as seasonal landscape."
     },
     {
       "key": "scene-8",

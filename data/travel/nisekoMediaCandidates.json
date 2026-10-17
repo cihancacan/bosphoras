@@ -164,7 +164,8 @@
         1700,
         1134
       ],
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualQaWarning": "Photo de lobby du Ritz-Carlton Reserve quasi identique au cliché view-1 ; duplicata refusé jusqu'à remplacement."
     },
     {
       "property": "Higashiyama Niseko Village, a Ritz-Carlton Reserve",
@@ -537,7 +538,7 @@
       "placeLabel": "Kutchan",
       "searchQuery": "Kutchan Hokkaido",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons photo licence verified at source; any attribution, share-alike, adaptation and trademark rules need compliance. Visual QA still required.",
       "localPath": "/images/travel/niseko-premium/destination/scene-6.webp",
@@ -557,7 +558,9 @@
       "credit": "MaedaAkihiko",
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-17",
+      "visualReviewBasis": "Documented Kutchan railway station, exactly matches access logistics; avoid calling it a ski landscape."
     },
     {
       "key": "scene-7",

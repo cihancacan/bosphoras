@@ -193,7 +193,7 @@
       "propertyKey": "st-regis-aspen",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/overview/",
@@ -217,9 +217,11 @@
       "credit": "St. Regis Aspen Resort · Marriott official property website",
       "license": "",
       "licenseUrl": "",
-      "visualQaWarning": "Contrôle visuel : vraie façade du St. Regis, photographiée en période verte. Ne pas présenter ce visuel comme une photographie hivernale.",
       "visualQaReviewedAt": "2026-10-15",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewedAt": "2026-10-17",
+      "visualReviewBasis": "Authentic photo of St Regis Aspen exterior in green season; seasonal photo only, not a winter portrayal.",
+      "originalVisualQaWarning": "Contrôle visuel : vraie façade du St. Regis, photographiée en période verte. Ne pas présenter ce visuel comme une photographie hivernale."
     },
     {
       "property": "The St. Regis Aspen Resort",
