@@ -473,24 +473,26 @@
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/big-sky-premium/destination/scene-4.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Moonlight_Basin_replica.jpg/1920px-Moonlight_Basin_replica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Moonlight_Basin_replica.jpg",
-      "candidateContext": "File:Moonlight Basin replica.jpg",
-      "sha256": "1431036a9efa896cddf64594186ed9c218a49cf4cd7f4ab953d130a4d8e9ed32",
-      "bytes": 185762,
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Feb_1%2C_2009_-_Lone_Peak_in_Big_Sky%2C_Montana.jpg/1920px-Feb_1%2C_2009_-_Lone_Peak_in_Big_Sky%2C_Montana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Feb_1,_2009_-_Lone_Peak_in_Big_Sky,_Montana.jpg",
+      "candidateContext": "File:Feb 1, 2009 - Lone Peak in Big Sky, Montana.jpg",
+      "sha256": "3324a82f406e8ff78b4784c920ff7fec9b6da018d526ffecbc02652ef8141def",
+      "bytes": 250360,
       "originalSize": [
         1920,
-        905
+        1440
       ],
       "outputSize": [
         1700,
-        801
+        1060
       ],
-      "credit": "<a rel=\"mw:WikiLink/Interwiki\" href=\"//www.flickr.com/people/11045073@N05\" title=\"flickruser:11045073@N05\" class=\"extiw\">Brett</a>",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "visualQaWarning": "Source intitulée « Moonlight Basin replica » : impossible de garantir une vraie scène du domaine Moonlight Basin. Ne pas afficher sous cette légende.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "credit": "Dennis Matheson",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "visualQaWarning": "Correct place established by original file metadata; framed WebP still needs manual visual/aesthetic QA.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in chat, 2026-10-17; Commons attribution and sharing conditions preserved.",
+      "frCaption": "Versant nord de Lone Peak et secteur historique de Moonlight Basin (hiver)",
+      "enCaption": "Lone Peak north face and historical Moonlight Basin ski area in winter"
     },
     {
       "key": "scene-5",

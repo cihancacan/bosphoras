@@ -420,23 +420,26 @@
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-2.webp",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/St._Moritz_village_and_baths_Grisons_Switzerland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:St._Moritz_village_and_baths_Grisons_Switzerland.jpg",
-      "candidateContext": "File:St. Moritz village and baths Grisons Switzerland.jpg",
-      "sha256": "69df8db429520a49aad9356c4231c5f68dbdbdfd9a4073afde5fb537736da2f7",
-      "bytes": 89716,
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/SMoritz_Dorf_from_lake.jpg/1920px-SMoritz_Dorf_from_lake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:SMoritz_Dorf_from_lake.jpg",
+      "candidateContext": "File:SMoritz Dorf from lake.jpg",
+      "sha256": "0e1251ad3f586a7f87e3c8833cc4b2699a70642e703dd6cf666e50ae07df43cc",
+      "bytes": 196256,
       "originalSize": [
-        1069,
-        835
+        1920,
+        1289
       ],
       "outputSize": [
-        1069,
-        835
+        1700,
+        1060
       ],
-      "credit": "<a rel=\"mw:ExtLink nofollow\" href=\"https://www.flickr.com/people/28496558@N02\" class=\"external text\">Snapshots Of  The Past</a>",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "credit": "Frédéric de Goldschmidt www.frederic.net",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in chat, 2026-10-17; Commons attribution and sharing conditions preserved.",
+      "frCaption": "St. Moritz Dorf depuis le lac gelé (hiver 2008)",
+      "enCaption": "St. Moritz Dorf viewed from frozen Lake St. Moritz, winter 2008",
+      "visualQaWarning": "Correct place established by original file metadata; framed WebP still needs manual visual/aesthetic QA."
     },
     {
       "key": "scene-3",
@@ -474,23 +477,26 @@
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-4.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Via_Suvretta.jpg/1920px-Via_Suvretta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Via_Suvretta.jpg",
-      "candidateContext": "File:Via Suvretta.jpg",
-      "sha256": "4d3a9673b19626da2fd50fe51439321e8a32b0481d3812025fda7640a49e4df1",
-      "bytes": 340838,
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Pass_Suvretta.jpg/1920px-Pass_Suvretta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pass_Suvretta.jpg",
+      "candidateContext": "File:Pass Suvretta.jpg",
+      "sha256": "6ddf883dbfb48ec5931b442b8687412766593c4f79700a29b7ec613d1d6cc09b",
+      "bytes": 410042,
       "originalSize": [
         1920,
-        1216
+        1222
       ],
       "outputSize": [
         1700,
-        1077
+        1060
       ],
-      "credit": "<a rel=\"mw:WikiLink\" href=\"https://commons.wikimedia.org/wiki/User:Kulmalukko\" title=\"User:Kulmalukko\">Tiia Monto</a>",
+      "credit": "Tiia Monto",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Owner confirmed usage rights in chat, 2026-10-17; Commons attribution and sharing conditions preserved.",
+      "frCaption": "Paysage du Pass Suvretta et du Lej Suvretta, au-dessus de St. Moritz",
+      "enCaption": "High Alpine landscape at Pass Suvretta and Lej Suvretta above St. Moritz",
+      "visualQaWarning": "Correct place established by original file metadata; framed WebP still needs manual visual/aesthetic QA."
     },
     {
       "key": "scene-5",
@@ -553,29 +559,32 @@
       "placeLabel": "Pontresina",
       "searchQuery": "Pontresina Engadin",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": true,
+      "visuallyVerified": false,
       "commercialRightsCleared": true,
       "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-7.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Pontresina-01.jpg/1920px-Pontresina-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pontresina-01.jpg",
-      "candidateContext": "Pontresina-01.jpg",
-      "credit": "Asurnipal",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "sha256": "2959f9189003f51bb59d1f533514ce24c7ac34d44dfb3560a032384d64917342",
-      "bytes": 282476,
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Engadin_-_mountains.jpg/1920px-Engadin_-_mountains.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Engadin_-_mountains.jpg",
+      "candidateContext": "File:Engadin - mountains.jpg",
+      "credit": "Tiia Monto",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "sha256": "77c5a2554cb740747641d1f7be2f0bcd2bf88c6ec08d7eb578fdc5db8681ad02",
+      "bytes": 291938,
       "originalSize": [
         1920,
-        1077
+        557
       ],
       "outputSize": [
-        1800,
-        1010
+        1700,
+        1060
       ],
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in chat, 2026-10-17; Commons attribution and sharing conditions preserved.",
       "visualReviewedAt": "2026-10-17",
-      "visualReviewBasis": "Manually inspected panorama / official village-place attribution; summer greenery is correctly presented as seasonal landscape."
+      "visualReviewBasis": "Manually inspected panorama / official village-place attribution; summer greenery is correctly presented as seasonal landscape.",
+      "frCaption": "Montagnes de l'Engadine vues depuis Pontresina en été",
+      "enCaption": "Engadin mountain landscape photographed from Pontresina in summer",
+      "visualQaWarning": "Correct place established by original file metadata; framed WebP still needs manual visual/aesthetic QA."
     },
     {
       "key": "scene-8",

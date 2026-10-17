@@ -398,24 +398,26 @@
       "commercialRightsCleared": true,
       "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
       "localPath": "/images/travel/megeve-premium/destination/scene-1.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Village_@_Megève_(51295072586).jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Village_%40_Meg%C3%A8ve_%2851295072586%29.jpg/1920px-Village_%40_Meg%C3%A8ve_%2851295072586%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "candidateContext": "File:Village @ Megève (51295072586).jpg",
-      "credit": "Guilhem Vellut  from Annecy, France",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "sha256": "d1f0a8c4532c11c2fb6e27d2c2450207794e2ad48d951a323298a9014aabeaaf",
-      "bytes": 449704,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Megeve_-_panoramio_(18).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Megeve_-_panoramio_%2818%29.jpg/1920px-Megeve_-_panoramio_%2818%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Megeve - panoramio (18).jpg",
+      "credit": "chisloup",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "sha256": "e92cdb1b5163fa3549f43c386d2d7f3fb86c3459bf5deddb46d39553b199c233",
+      "bytes": 388882,
       "originalSize": [
         1920,
-        1280
+        1440
       ],
       "outputSize": [
         1700,
-        1133
+        1060
       ],
-      "visualQaWarning": "Vue de quelques maisons périphériques, pas le centre historique de Megève. À remplacer pour cette légende.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "Correct place established by original file metadata; framed WebP still needs manual visual/aesthetic QA.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in chat, 2026-10-17; Commons attribution and sharing conditions preserved.",
+      "frCaption": "Centre ancien de Megève et église Saint-Jean-Baptiste en été",
+      "enCaption": "Megève historic centre and Saint-Jean-Baptiste church in summer"
     },
     {
       "key": "scene-2",
@@ -540,24 +542,26 @@
       "commercialRightsCleared": true,
       "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
       "localPath": "/images/travel/megeve-premium/destination/scene-6.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Megève_-_Eglise_Saint-Jean-Baptiste_48.jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Meg%C3%A8ve_-_Eglise_Saint-Jean-Baptiste_48.jpg/1920px-Meg%C3%A8ve_-_Eglise_Saint-Jean-Baptiste_48.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "candidateContext": "File:Megève - Eglise Saint-Jean-Baptiste 48.jpg",
-      "credit": "Renhour48",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:116-128_Place_de_l'Église,_Megève,_2025.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/116-128_Place_de_l%27%C3%89glise%2C_Meg%C3%A8ve%2C_2025.jpg/1920px-116-128_Place_de_l%27%C3%89glise%2C_Meg%C3%A8ve%2C_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:116-128 Place de l'Église, Megève, 2025.jpg",
+      "credit": "DimiTalen",
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "sha256": "d4571dc65dcc9fb9ab3f94f43171856847eda3c7a1cc646895de82cf40f61202",
-      "bytes": 226612,
+      "sha256": "d830743bf2fcc7c783bb7ebdd63ee403b0967e2fbb25087d0772be36db5ae2ec",
+      "bytes": 399600,
       "originalSize": [
         1920,
-        1280
+        1277
       ],
       "outputSize": [
         1700,
-        1133
+        1060
       ],
-      "visualQaWarning": "Photographie du plafond intérieur, pas de la place de l'église ; ne pas présenter comme place.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "Correct place established by original file metadata; framed WebP still needs manual visual/aesthetic QA.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in chat, 2026-10-17; Commons attribution and sharing conditions preserved.",
+      "frCaption": "Place de l'Église à Megève, mars 2025",
+      "enCaption": "Place de l'Église, Megève, March 2025"
     },
     {
       "key": "scene-7",
