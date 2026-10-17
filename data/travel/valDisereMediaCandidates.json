@@ -14,7 +14,7 @@
       "propertyKey": "airelles-val-disere",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://airelles.com/fr/destination/val-d-isere-hotel",
@@ -35,10 +35,12 @@
         1800,
         945
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
       "replacedSource": "https://images.prismic.io/airelles2023/ZfNWN7TwE6aM1KQG_VDI---Facade---arrivee.jpg?auto=format%2Ccompress&rect=0%2C141%2C1920%2C1008&w=2400&h=1260",
-      "credit": "Airelles Val d'Isère · photo on exact property's own gallery; original credit retained at source"
+      "credit": "Airelles Val d'Isère · photo on exact property's own gallery; original credit retained at source",
+      "frCaption": "Façade en bois et pierre de l’hôtel Airelles Val d’Isère, arrivée au front de neige",
+      "enCaption": "Wood-and-stone façade of Airelles Val d’Isère beside the slopes",
+      "visualReviewBasis": "Façade officielle de l’hôtel, enseigne Airelles visible et lieu conforme à la page source."
     },
     {
       "property": "Airelles Val d'Isère",
@@ -96,7 +98,7 @@
         1800,
         1013
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "visualQaWarning": "REJET VÉRIFIÉ : panorama de Val d'Isère sans Airelles identifiable ; pourrait illustrer la destination mais ne doit pas être une photo d'hôtel.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
       "replacedSource": "https://assets.airelles.com/images/airelles2023/ZfMTFLTwE6aM1J1D_VDI---Val-d%27Ise%CC%80re---Lac-du-Chevril.jpg?auto=format%2Ccompress&rect=0%2C291%2C1920%2C960&w=1920&h=960",
       "credit": "Airelles Val d'Isère · photo on exact property's own gallery; original credit retained at source"
@@ -187,7 +189,7 @@
         960,
         640
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "visualQaWarning": "REJET VÉRIFIÉ : photo d'un plat de restaurant seul. Ne constitue pas une troisième photographie de l'hôtel/suite demandée.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
       "replacedSource": "https://lek2chogori.com/media/cache/jadro_resize/rc/g9dpaQpB1790002177/jadroRoot/medias/5c115c2415935/695bebd8391df/k2c_bottleneck_gastonomie_22_stephane_berthe.jpg",
       "credit": "Le K2 Chogori · photo on exact property's own gallery; original credit retained at source"
@@ -517,7 +519,7 @@
         1013
       ],
       "ownerRightsAuthorization": "Bosphoras confirmed rights 2026-10-15; office source and credits preserved.",
-      "visualQaWarning": "Official Le Laisinant caption verified; photograph requires final visual framing check."
+      "visualQaWarning": "REJET VÉRIFIÉ : visuel de carte et d'itinéraire Le Laisinant/Le Fornet. Pour un bloc paysage, demander une photographie du hameau plutôt qu'une carte."
     },
     {
       "key": "scene-6",

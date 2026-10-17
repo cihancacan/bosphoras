@@ -568,7 +568,7 @@
       "placeLabel": "Megève ski slopes",
       "searchQuery": "Megève ski France",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
       "localPath": "/images/travel/megeve-premium/destination/scene-7.webp",
@@ -588,8 +588,10 @@
         1700,
         1130
       ],
-      "visualQaWarning": "Commons title/source grounded, but manual geographic, season and aesthetic QA required.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "frCaption": "Front de neige du Mont d’Arbois à Megève, fin de saison hivernale",
+      "enCaption": "Mont d’Arbois ski base in Megève at the end of winter",
+      "visualReviewBasis": "Image 2025 de Mont d'Arbois identifiée par le nom du fichier Commons; neige discontinue clairement mentionnée."
     },
     {
       "key": "scene-8",

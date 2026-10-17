@@ -192,7 +192,7 @@
         900,
         675
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "visualQaWarning": "REJET VÉRIFIÉ : la photographie représente un portrait historique, pas une vue d'hôtel, chambre ou équipement. Ne pas afficher sur la fiche Kulm.",
       "visualQaReviewedAt": "2026-10-15",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
       "replacedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Kulm_Hotel_Sankt_Moritz_2022-09-25_03.jpg/1920px-Kulm_Hotel_Sankt_Moritz_2022-09-25_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
@@ -387,7 +387,7 @@
       "placeLabel": "St. Moritz lake",
       "searchQuery": "Lake St Moritz",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-1.webp",
@@ -407,9 +407,11 @@
       "credit": "JoachimKohler-HB",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "visualQaWarning": "Contrôle visuel : panorama réel du lac en automne. Ne pas légender comme une vue d'hiver ni utiliser pour promettre les conditions de neige.",
       "visualQaReviewedAt": "2026-10-15",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "frCaption": "Lac de Saint-Moritz et village en automne, panorama sur l’Engadine",
+      "enCaption": "Lake St. Moritz and the town in autumn, Engadin panorama",
+      "visualReviewBasis": "Paysage réel identifié dans la source Wikimedia ; saison automnale explicitement mentionnée."
     },
     {
       "key": "scene-2",
@@ -535,7 +537,7 @@
       "placeLabel": "Celerina",
       "searchQuery": "Celerina Switzerland",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-6.webp",
@@ -555,7 +557,10 @@
       "credit": "Jensens",
       "license": "Public domain",
       "licenseUrl": "",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "frCaption": "Celerina et les prairies de la vallée de l’Engadine en été",
+      "enCaption": "Celerina and the Engadin valley meadows in summer",
+      "visualReviewBasis": "Photo ancienne authentique de Celerina ; cadrage paysage, saison estivale explicite."
     },
     {
       "key": "scene-7",
