@@ -7,8 +7,8 @@
 | No | Etablissement / lieu | Source et métadonnées | État |
 |---:|---|---|---|
 | 1 | Montage Big Sky — view-1 | [Source](https://www.montage.com/bigsky/accommodations/) · Official page sharing image| Candidate |
-| 2 | Montage Big Sky — view-2 | [Source](https://www.montage.com/bigsky/accommodations/) · Official page sharing image| Candidate; **DOUBLON VISUEL : même chambre que view-1, autre dérivé.** |
-| 3 | Montage Big Sky — view-3 | [Source](https://www.montage.com/bigsky/) · Two women riding horses in Big Sky| Candidate; **Photo d'équitation dans le Montana, sans bâtiments Montage identifiables ; mauvais visuel pour fiche hôtel.** |
+| 2 | Montage Big Sky — view-2 | [Source](https://www.montage.com/bigsky/accommodations/) · Montage Big Sky overlooking the Spanish Peaks in the winter.| Candidate; **New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.** |
+| 3 | Montage Big Sky — view-3 | [Source](https://www.montage.com/bigsky/) · King Mountain View guestroom at Montage Big Sky| Candidate; **New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.** |
 | 4 | One&Only Moonlight Basin — view-1 | [Source](https://www.carrier.co.uk/design/hotels/oneonly-moonlight-basin/) · One&amp;Only Moonlight Basin bedroom interior| Candidate; **Exact property source checked; final visual identity and presentation review pending.** |
 | 5 | One&Only Moonlight Basin — view-2 | [Source](https://www.oneandonlyresorts.com/moonlight-basin/stays/private-home-rentals/signature-six-bedroom) · Official One&amp;Only six bedroom home master| Candidate |
 | 6 | One&Only Moonlight Basin — view-3 | [Source](https://www.oneandonlyresorts.com/moonlight-basin/offers/book-now-and-save) · Official One&amp;Only residential living area| Candidate |

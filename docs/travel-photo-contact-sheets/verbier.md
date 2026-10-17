@@ -6,17 +6,17 @@
 
 | No | Etablissement / lieu | Source et métadonnées | État |
 |---:|---|---|---|
-| 1 | W Verbier — view-1 | [Source](https://www.marriott.com/en-us/hotels/gvawh-w-verbier/rooms/) · Credit Card| Candidate; **ERREUR CRITIQUE : publicité carte bancaire Marriott Bonvoy/Visa, pas un hôtel. Ne jamais publier.** |
+| 1 | W Verbier — view-1 | [Source](https://www.verbier.com/hotels/w-verbier) · W-Verbier-verbier-hotels-bedroom.jpg| Candidate; **New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.** |
 | 2 | W Verbier — view-2 | [Source](https://www.marriott.com/en-us/hotels/gvawh-w-verbier/rooms/) · | Candidate |
-| 3 | W Verbier — view-3 | [Source](https://www.marriott.com/en-us/hotels/gvawh-w-verbier/rooms/) · | Candidate; **DOUBLON VISUEL : même salon que view-2.** |
+| 3 | W Verbier — view-3 | [Source](https://www.verbier.com/hotels/w-verbier) · W-Verbier-verbier-hotels-pool.jpg| Candidate; **New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.** |
 | 4 | Chalet d'Adrien — view-1 | [Source](https://chalet-adrien.com/en/rooms-suites-en/savoleyres-2/) · Official page sharing image| Candidate |
 | 5 | Chalet d'Adrien — view-2 | [Source](https://chalet-adrien.com/en/) · Le Chalet d&#x27;Adrien à Verbier| Candidate |
-| 6 | Chalet d'Adrien — view-3 | [Source](https://chalet-adrien.com/en/) · Le Chalet d&#x27;Adrien à Verbier| Candidate; **DOUBLON VISUEL : même façade d'hôtel enneigée que view-2.** |
+| 6 | Chalet d'Adrien — view-3 | [Source](https://chalet-adrien.com/en/) · La Terrasse du Chalet d&#x27;Adrien| Candidate; **New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.** |
 | 7 | La Cordée des Alpes — view-1 | [Source](https://www.verbier.com/hotels/la-corde-des-alpes) · Hotel-cordee-des-alpes-verbier-hotels-exterior.jpg| Candidate |
 | 8 | La Cordée des Alpes — view-2 | [Source](https://www.verbier.com/hotels/la-corde-des-alpes) · Hotel-cordee-des-alpes-verbier-hotels-suite.jpg| Candidate |
 | 9 | La Cordée des Alpes — view-3 | [Source](https://www.verbier.com/hotels/la-corde-des-alpes) · Hotel-cordee-des-alpes-verbier-hotels-apartments.jpg| Candidate |
-| 10 | Experimental Chalet Verbier — view-1 | [Source](https://www.experimentalchalet.com/) · Official page sharing image| Candidate; **Image floue à travers une fenêtre de transport, n'illustre pas l'Experimental Chalet.** |
-| 11 | Experimental Chalet Verbier — view-2 | [Source](https://www.experimentalchalet.com/) · Blurred forest and hills seen through a train window with two empty seats on each side.| Candidate; **DOUBLON VISUEL et hors sujet : même photo floue que view-1.** |
+| 10 | Experimental Chalet Verbier — view-1 | [Source](https://www.experimentalchalet.com/) · Official hotel&#x27;s page hero photograph| Candidate; **New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.** |
+| 11 | Experimental Chalet Verbier — view-2 | [Source](https://www.experimentalgroup.com/verbier/experimental-chalet-verbier/gallery) · Hotel room with white bed, green headboard, painting, brown curtains, and window view of pine trees.| Candidate; **New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.** |
 | 12 | Experimental Chalet Verbier — view-3 | [Source](https://www.experimentalchalet.com/) · View from a room balcony with two chairs and snowy mountain peaks in the background.| Candidate |
 | 13 | Verbier Médran gondola — scene-1 | [Source](https://commons.wikimedia.org/wiki/File:Télécabines_Verbier_Dec_2021.jpg) · File:Télécabines Verbier Dec 2021.jpg| Candidate; **Commons title does not establish which exact Verbier sector is pictured; detailed visual+map check required before caption.** |
 | 14 | Place Blanche Verbier — scene-2 | [Source](https://www.myswitzerland.com/en-us/accommodations/hotel-w-verbier/) · W Verbier at Place Blanche near the Medran slopes, winter| Candidate |

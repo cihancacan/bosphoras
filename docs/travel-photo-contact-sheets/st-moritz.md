@@ -10,8 +10,8 @@
 | 2 | Badrutt's Palace Hotel — view-2 | [Source](https://badruttspalace.com/en/winter/accommodation/rooms/) · Badrutts Palace Rooms Signature Double Room Lake View With Balcony View Balcony| Candidate |
 | 3 | Badrutt's Palace Hotel — view-3 | [Source](https://badruttspalace.com/en/winter/accommodation/rooms/) · Badrutts Palace Rooms Signature Double Room Lake View With Balcony Bathroom| Candidate |
 | 4 | Kulm Hotel St. Moritz — view-1 | [Source](https://www.kulm.com/en/winter/) · Official page sharing image| Candidate |
-| 5 | Kulm Hotel St. Moritz — view-2 | [Source](https://commons.wikimedia.org/wiki/File:Kulm_Hotel_Sankt_Moritz_2022-09-25_01.jpg) · Kulm Hotel Sankt Moritz 2022-09-25 01.jpg| Candidate; **Contrôle visuel : entrée réelle du Kulm, mais cliché extérieur de 2022 peu représentatif d'un palace d'hiver ; conserver uniquement en photo secondaire tant qu'une meilleure image n'est pas sélectionnée.** |
-| 6 | Kulm Hotel St. Moritz — view-3 | [Source](https://commons.wikimedia.org/wiki/File:Kulm_Hotel_Sankt_Moritz_2022-09-25_03.jpg) · Kulm Hotel Sankt Moritz 2022-09-25 03.jpg| Candidate; **Contrôle visuel : pelouse et terrain extérieur du domaine, sans mise en valeur de l'hôtel ; À REMPLACER par une photo intérieure, spa ou façade du Kulm.** |
+| 5 | Kulm Hotel St. Moritz — view-2 | [Source](https://www.kulm.com/en/winter/) · The immersive St. Moritz alpine spa| Candidate; **New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.** |
+| 6 | Kulm Hotel St. Moritz — view-3 | [Source](https://www.kulm.com/en/winter/) · The remarkable heritage of the hotel that makes winter| Candidate; **New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.** |
 | 7 | Suvretta House — view-1 | [Source](https://suvrettahouse.ch/en/startseite-winter) · | Candidate |
 | 8 | Suvretta House — view-2 | [Source](https://suvrettahouse.ch/en/startseite-winter) · | Candidate |
 | 9 | Suvretta House — view-3 | [Source](https://suvrettahouse.ch/en/startseite-winter) · | Candidate |
