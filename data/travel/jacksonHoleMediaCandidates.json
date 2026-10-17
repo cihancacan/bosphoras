@@ -230,7 +230,7 @@
       "propertyKey": "hotel-jackson",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://hoteljackson.com/",
@@ -251,9 +251,11 @@
         1750,
         1168
       ],
-      "visualQaWarning": "Downloaded property-specific room from hotel/publisher gallery; visual framing review pending.",
       "ownerRightsAuthorization": "Confirmed by operator 2026-10-17; preserve original source and credit.",
-      "credit": "hotel-jackson · property/gallery publisher"
+      "credit": "hotel-jackson · property/gallery publisher",
+      "frCaption": "Suite avec cheminée et balcon de l'Hotel Jackson",
+      "enCaption": "Guest suite with fireplace and balcony at Hotel Jackson",
+      "visualReviewBasis": "2026-10-17: image directly opened and visually checked against documented exact hotel/photo source; distinct accommodation photo."
     },
     {
       "property": "Hotel Jackson",

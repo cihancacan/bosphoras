@@ -206,7 +206,7 @@
       "propertyKey": "setsu-niseko",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://setsuniseko.com/en/",
@@ -230,9 +230,11 @@
       "credit": "setsu-niseko · property/gallery publisher",
       "license": "",
       "licenseUrl": "",
-      "visualQaWarning": "Downloaded property-specific room from hotel/publisher gallery; visual framing review pending.",
       "visualQaReviewedAt": "2026-10-15",
-      "ownerRightsAuthorization": "Confirmed by operator 2026-10-17; preserve original source and credit."
+      "ownerRightsAuthorization": "Confirmed by operator 2026-10-17; preserve original source and credit.",
+      "frCaption": "Suite avec salon contemporain et vue hivernale sur le mont Yōtei à Setsu Niseko",
+      "enCaption": "Setsu Niseko suite living room with winter view of Mount Yotei",
+      "visualReviewBasis": "2026-10-17: image directly opened and visually checked against documented exact hotel/photo source; distinct accommodation photo."
     },
     {
       "property": "Setsu Niseko",

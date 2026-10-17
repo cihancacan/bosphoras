@@ -164,7 +164,7 @@
       "propertyKey": "hotel-jerome",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://auberge.com/hotel-jerome/",
@@ -185,10 +185,12 @@
         1750,
         984
       ],
-      "visualQaWarning": "Downloaded property-specific room from hotel/publisher gallery; visual framing review pending.",
       "ownerRightsAuthorization": "Confirmed by operator 2026-10-17; preserve original source and credit.",
       "replacedSource": "https://dreffui1gbt6t.cloudfront.net/images/hj/hj-home-winter-video-poster.jpg",
-      "credit": "hotel-jerome · property/gallery publisher"
+      "credit": "hotel-jerome · property/gallery publisher",
+      "frCaption": "Chambre Deluxe King à l'Hotel Jerome d'Aspen",
+      "enCaption": "Deluxe King room at Hotel Jerome, Aspen",
+      "visualReviewBasis": "2026-10-17: image directly opened and visually checked against documented exact hotel/photo source; distinct accommodation photo."
     },
     {
       "property": "The St. Regis Aspen Resort",

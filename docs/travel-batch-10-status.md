@@ -50,3 +50,9 @@ Correctifs appliqués :
 - CI TypeScript et qualité de l'ensemble des dix destinations : https://github.com/cihancacan/bosphoras/actions/runs/38875842252
 
 **Une unique Preview de correction supplémentaire** est nécessaire parce que la première avait un défaut de rendu. Aucune publication en production, aucune activation de l'indexation et aucune modification des API Wink/immobilier/CRM.
+
+## Corrections photographiques supplémentaires — 17 octobre 2026
+
+Les corrections précises demandées après revue des dix pages sont consignées dans `docs/travel-image-corrections-2026-10-17.md`. La version précédente des planches et des captures Vercel peut contenir des doublons et visuels retirés ; la branche `feature/luxury-travel-seo-destinations-20261012` contient les nouvelles images, leurs sources et le blocage de publication des photos non approuvées.
+
+**IMPORTANT** : les 210 fichiers WebP physiquement présents ne représentent pas 210 photographies toutes approuvées. Certains ont été remplacés, d'autres restent masqués. Le déploiement Vercel Preview le plus récent affichant les corrections du 17 octobre reste à préparer et tester ; production intacte.
