@@ -480,7 +480,7 @@
       "placeLabel": "Jaillet",
       "searchQuery": "Le Jaillet Megeve",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/megeve-premium/destination/scene-4.webp",
@@ -500,8 +500,8 @@
       "credit": "Corsica62",
       "license": "CC BY 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-      "visualQaWarning": "Photo du Tête du Torraz ; n'affirmer le lien exact avec Jaillet qu'après contrôle cartographique.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewBasis": "2026-10-17: landscape depicts Tête du Torraz, a distinct Portes du Mont-Blanc sector; caption states exact subject not the Jaillet village."
     },
     {
       "key": "scene-5",

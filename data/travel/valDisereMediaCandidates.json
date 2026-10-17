@@ -524,7 +524,7 @@
       "placeLabel": "Le Fornet winter",
       "searchQuery": "Le Fornet Val d Isere",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons file: source and licence retained, derivative WebP and CC attribution/share-alike obligations still require review.",
       "localPath": "/images/travel/val-disere-premium/destination/scene-6.webp",
@@ -544,8 +544,8 @@
         1667,
         1250
       ],
-      "visualQaWarning": "Actual Le Fornet hamlet photographed in September 2016; NOT a winter photograph, cannot be captioned 'Le Fornet winter'. Change season or replace.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution.",
+      "visualReviewBasis": "2026-10-17: photo depicts actual Le Fornet hamlet in SUMMER 2016. Caption explicitly states summer, never winter."
     },
     {
       "key": "scene-7",

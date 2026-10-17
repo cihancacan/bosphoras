@@ -13,7 +13,7 @@ import verbierManifest from './verbierMediaCandidates.json';
  * A source URL, downloaded WebP and clean filename never imply a publishing licence.
  */
 type Candidate={key:string;propertyKey?:string;status:string;localPath?:string;sourcePage?:string;candidateContext?:string;credit?:string;visuallyVerified?:boolean;commercialRightsCleared?:boolean;visualQaWarning?:string};
-const cityAreas={"megeve":["scene-1","scene-2","scene-3",null,null],"jackson-hole":["scene-2","scene-3","scene-4","scene-5",null],"big-sky":["scene-2","scene-3","scene-4","scene-5",null],"val-disere":["scene-1","scene-4","scene-5","scene-6","scene-7"],"verbier":["scene-1","scene-3","scene-4","scene-6","scene-8"]} as const;
+const cityAreas={"megeve":["scene-1","scene-2","scene-3","scene-4","scene-8"],"jackson-hole":["scene-2","scene-3","scene-4","scene-5",null],"big-sky":["scene-2","scene-3","scene-4","scene-5",null],"val-disere":["scene-1","scene-4","scene-5","scene-6","scene-7"],"verbier":["scene-2","scene-3","scene-4","scene-6","scene-8"]} as const;
 function approved(x:Candidate):x is Candidate & {localPath:string;sourcePage:string}{
  return x.status==='candidate_needs_visual_review' && x.visuallyVerified===true &&
   x.commercialRightsCleared===true && !!x.localPath && !!x.sourcePage && !x.visualQaWarning;
@@ -39,7 +39,13 @@ function areaEntries(
 ):(BodrumPremiumPhoto|null)[]{
  return cityAreas[slug].map((key,i)=>{
   const item=media.find(x=>x.key===key);
-  return item&&approved(item)?mediaPhoto(item,guide.areas[i].name):null;
+  if(!item||!approved(item))return null;
+  const label=slug==='megeve'&&key==='scene-4'?'Tête du Torraz · panorama du domaine Portes du Mont-Blanc'
+   :slug==='megeve'&&key==='scene-8'?'Panorama estival de la vallée de Megève'
+   :slug==='val-disere'&&key==='scene-6'?'Le Fornet en été, vue authentique du hameau'
+   :slug==='verbier'&&key==='scene-2'?'Place Blanche, près des remontées de Médran'
+   :guide.areas[i].name;
+  return mediaPhoto(item,label);
  });
 }
 export const mountainBatchHotelEditorialByCity={

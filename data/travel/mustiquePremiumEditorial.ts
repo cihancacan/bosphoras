@@ -157,8 +157,8 @@ export const mustiqueAreaVisuals:(BodrumPremiumPhoto|null)[] = [
   },
   {
     "src": "/images/travel/mustique-premium/destination/island-6.webp",
-    "fr": "Paysage côtier de Mustique, vue aérienne d’une crique (secteur exact à confirmer)",
-    "en": "Mustique coastal aerial landscape, precise bay location unconfirmed",
+    "fr": "Paysage aérien naturel de la côte de Mustique, crique turquoise et falaises végétalisées (baie précise non confirmée)",
+    "en": "Aerial island landscape, turquoise natural cove and green coastline on Mustique (exact bay unconfirmed)",
     "credit": "The Mustique Company · Mustique editorial imagery",
     "sourcePage": "https://www.mustique-island.com/"
   }

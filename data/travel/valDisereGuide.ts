@@ -36,8 +36,8 @@ export const valDisereGuide:FeaturedCityGuideData={
   },
   "scene-6": {
     "src": "/images/travel/val-disere-premium/destination/scene-6.webp",
-    "fr": "Le Fornet winter — photographie de Val d'Isère, à contrôler avant publication",
-    "en": "Le Fornet winter — Val d'Isère source-backed photograph pending review",
+    "fr": "Le Fornet, hameau authentique photographié en été",
+    "en": "Le Fornet hamlet in summer, not a winter view",
     "author": "Anthospace",
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
