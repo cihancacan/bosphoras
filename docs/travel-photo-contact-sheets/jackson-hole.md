@@ -1,6 +1,6 @@
 # Jackson Hole — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 16/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 18/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Jackson Hole](jackson-hole.jpg)
 
@@ -15,9 +15,9 @@
 | 7 | Hotel Jackson — view-1 | [Source](https://hoteljackson.com/) · Juliette rooftop restaurant at Hotel Jackson overlooking downtown Jackson Hole| Candidate |
 | 8 | Hotel Jackson — view-2 | [Source](https://hoteljackson.com/) · Juliette rooftop restaurant at Hotel Jackson overlooking downtown Jackson Hole| Candidate; **DOUBLON VISUEL : identique à view-1 (même terrasse), une seule image à garder.** |
 | 9 | Hotel Jackson — view-3 | [Source](https://hoteljackson.com/) · Luxury spa and wellness at Hotel Jackson, Jackson Hole Wyoming , massages, facials and restorative treatments in downtow| Candidate |
-| 10 | The Wort Hotel — view-1 | [Source](https://www.worthotel.com/) · Close to Two National Parks| Candidate; **Photo des Tetons, sans hôtel identifié. Ne pas la présenter comme vue de The Wort.** |
+| 10 | The Wort Hotel — view-1 | [Source](https://www.cntraveler.com/hotels/jackson/the-wort-hotel) · The Wort Hotel historic fireplace, Jackson| Candidate |
 | 11 | The Wort Hotel — view-2 | [Source](https://www.worthotel.com/) · Deluxe Double Queen| Candidate |
-| 12 | The Wort Hotel — view-3 | [Source](https://www.worthotel.com/) · Let us help you plan your fall adventures| Candidate; **Photo d'un orignal, pas de l'hôtel The Wort ; à déplacer en rubrique nature seulement.** |
+| 12 | The Wort Hotel — view-3 | [Source](https://www.thehotelguru.com/en-us/hotel/the-wort-hotel-jackson) · The Wort Hotel guest accommodation| Candidate |
 | 13 | Teton mountains — scene-1 | [Source](https://commons.wikimedia.org/wiki/File:Garnet_Canyon_GTNP1.jpg) · File:Garnet Canyon GTNP1.jpg| Candidate |
 | 14 | Teton Village — scene-2 | [Source](https://commons.wikimedia.org/wiki/File:MK01466_Teton_Village_Jackson_Hole.jpg) · File:MK01466 Teton Village Jackson Hole.jpg| Candidate; **Correct place established by original file metadata; framed WebP still needs manual visual/aesthetic QA.** |
 | 15 | Jackson Town Square — scene-3 | [Source](https://commons.wikimedia.org/wiki/File:Elk_antler_arch_at_Jackson_Square,_Jackson,_WY_2022-07-11.jpg) · File:Elk antler arch at Jackson Square, Jackson, WY 2022-07-11.jpg| Candidate |

@@ -1,6 +1,6 @@
 # Niseko — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 17/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 19/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Niseko](niseko.jpg)
 
@@ -10,10 +10,10 @@
 | 2 | Park Hyatt Niseko Hanazono — view-2 | [Source](https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono/gallery) · Verified property gallery asset| Candidate |
 | 3 | Park Hyatt Niseko Hanazono — view-3 | [Source](https://www.hyatt.com/park-hyatt/en-US/ctsph-park-hyatt-niseko-hanazono/gallery) · Verified property gallery asset| Candidate |
 | 4 | Higashiyama Niseko Village, a Ritz-Carlton Reserve — view-1 | [Source](https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/) · Official page sharing image| Candidate |
-| 5 | Higashiyama Niseko Village, a Ritz-Carlton Reserve — view-2 | [Source](https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/) · Lobby| Candidate; **Photo de lobby du Ritz-Carlton Reserve quasi identique au cliché view-1 ; duplicata refusé jusqu'à remplacement.** |
+| 5 | Higashiyama Niseko Village, a Ritz-Carlton Reserve — view-2 | [Source](https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/rooms/) · Higashiyama Niseko Village Ritz-Carlton Reserve Yotei Twin Room| Candidate |
 | 6 | Higashiyama Niseko Village, a Ritz-Carlton Reserve — view-3 | [Source](https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/) · Guest Bathroom - Onsen-Style Soaking Tub| Candidate |
 | 7 | Setsu Niseko — view-1 | [Source](https://setsuniseko.com/en/gallery/) · Summer Yotei| Candidate; **Contrôle visuel : paysage du mont Yōtei SANS bâtiment Setsu identifiable. Ne doit PAS être présenté comme une photo de l'hôtel ; À REMPLACER par une suite ou un espace de Setsu.** |
-| 8 | Setsu Niseko — view-2 | [Source](https://setsuniseko.com/en/gallery/) · 2024.10 Cropped For Hotel Website| Candidate; **Contrôle visuel : soin visage en espace bien-être, non la chambre ou la résidence. Utiliser seulement pour illustrer le spa si l'appartenance à Setsu est confirmée.** |
+| 8 | Setsu Niseko — view-2 | [Source](https://setsuniseko.com/en/gallery/) · Setsu Niseko bedroom| Candidate |
 | 9 | Setsu Niseko — view-3 | [Source](https://setsuniseko.com/en/gallery/) · Setsu Exterior With Sign| Candidate |
 | 10 | AYA Niseko — view-1 | [Source](https://www.ayaniseko.com/) · Official page sharing image| Candidate |
 | 11 | AYA Niseko — view-2 | [Source](https://www.ayaniseko.com/accommodation/residences) · Official page sharing image| Candidate |
