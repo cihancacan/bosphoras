@@ -11,6 +11,15 @@ export const stMoritzGuide:FeaturedCityGuideData={
  hotels:draft.hotels.map(h=>({...h})),
  checksFr:[...draft.checksFr],checksEn:[...draft.checksEn],
  photos:{
+  "scene-1": {
+    "src": "/images/travel/st-moritz-premium/destination/scene-1.webp",
+    "fr": "Lac de St. Moritz et ville en automne, paysage réel de l'Engadine",
+    "en": "Lake St. Moritz and the town in autumn, an authentic Engadin panorama",
+    "author": "JoachimKohler-HB",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Blick_über_den_Sankt_Moritzersee_auf_Sankt_Moritz.jpg"
+  },
   "scene-2": {
     "src": "/images/travel/st-moritz-premium/destination/scene-2.webp",
     "fr": "St. Moritz Dorf — photographie de la destination",

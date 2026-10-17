@@ -54,8 +54,8 @@ export const megeveGuide:FeaturedCityGuideData={
   },
   "scene-7": {
     "src": "/images/travel/megeve-premium/destination/scene-7.webp",
-    "fr": "Megève ski slopes — photographie de Megève, à contrôler avant publication",
-    "en": "Megève ski slopes — Megève source-backed photograph pending review",
+    "fr": "Front de neige du Mont d’Arbois à Megève, fin de saison hivernale",
+    "en": "Mont d’Arbois ski base in Megève at the end of winter",
     "author": "DimiTalen",
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
