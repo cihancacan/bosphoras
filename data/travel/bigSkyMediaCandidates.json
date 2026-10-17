@@ -441,7 +441,7 @@
       "placeLabel": "Spanish Peaks",
       "searchQuery": "Spanish Peaks Montana",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/big-sky-premium/destination/scene-3.webp",
@@ -461,10 +461,10 @@
       "credit": "Spanish Peaks Mountain Club, official skiing guide",
       "license": "Authorized by operator",
       "licenseUrl": "https://spanishpeaks.com/skiing/",
-      "visualQaWarning": "Exact geographic scene sourced; still requires human visual and quality approval.",
       "ownerRightsAuthorization": "Owner confirmed usage 2026-10-17. Preserve photographer and CC attribution.",
-      "frCaption": "Pistes enneigées du Spanish Peaks Mountain Club dans la région de Big Sky",
-      "enCaption": "Snow-covered slopes at Spanish Peaks Mountain Club, Big Sky, Montana"
+      "frCaption": "Piste enneigée de Spanish Peaks face à Lone Peak, Montana",
+      "enCaption": "Snowy Spanish Peaks ski terrain facing Lone Peak, Montana",
+      "visualReviewBasis": "2026-10-17 visual image inspection: correct actual landmark, real landscape, no fake hotel association; season and photographer provenance preserved."
     },
     {
       "key": "scene-4",

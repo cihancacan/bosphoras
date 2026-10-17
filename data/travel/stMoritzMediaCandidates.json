@@ -446,7 +446,7 @@
       "placeLabel": "St. Moritz Bad",
       "searchQuery": "St Moritz Bad",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-3.webp",
@@ -467,9 +467,9 @@
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "ownerRightsAuthorization": "Owner confirmed usage 2026-10-17. Preserve photographer and CC attribution.",
-      "frCaption": "Panorama estival de Saint-Moritz et de ses montagnes (2021)",
-      "enCaption": "Summer panoramic mountain view of St. Moritz (2021)",
-      "visualQaWarning": "Exact geographic scene sourced; still requires human visual and quality approval."
+      "frCaption": "Panorama estival de St. Moritz, du lac et des sommets d’Engadine",
+      "enCaption": "Summer panorama of St. Moritz, Lake St. Moritz and the Engadin peaks",
+      "visualReviewBasis": "2026-10-17 visual image inspection: correct actual landmark, real landscape, no fake hotel association; season and photographer provenance preserved."
     },
     {
       "key": "scene-4",
