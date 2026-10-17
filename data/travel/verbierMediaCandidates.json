@@ -22,21 +22,23 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/verbier-premium/w-verbier/view-1.webp",
-      "downloadUrl": "https://www.marriott.com/content/dam/marriott-digital/digital-merchandising/us-canada/en_us/cobrand-cards/assets/pdt-0513-DCA-125892172130576.png",
-      "sourcePage": "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/rooms/",
-      "candidateContext": "Credit Card",
-      "sha256": "4abc5b45726987f2168cb21dc9095ef3c7d66817c88f6973b38a5e711db58693",
-      "bytes": 73176,
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/5c82902829f2cc7bb5650e0a/1629721357345-HIQ7FSQSHLCE8D4A7M5X/W-Verbier-verbier-hotels-bedroom.jpg",
+      "sourcePage": "https://www.verbier.com/hotels/w-verbier",
+      "candidateContext": "W-Verbier-verbier-hotels-bedroom.jpg",
+      "sha256": "4b3536cac61be6f6c162491e10a2b33bfd21fb3caed2b69a85168d35caa388e7",
+      "bytes": 196022,
       "originalSize": [
-        2000,
-        1260
+        1500,
+        844
       ],
       "outputSize": [
-        1700,
-        1071
+        1500,
+        844
       ],
-      "visualQaWarning": "ERREUR CRITIQUE : publicité carte bancaire Marriott Bonvoy/Visa, pas un hôtel. Ne jamais publier.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://www.marriott.com/content/dam/marriott-digital/digital-merchandising/us-canada/en_us/cobrand-cards/assets/pdt-0513-DCA-125892172130576.png",
+      "credit": "W Verbier · photo on exact property's own gallery; original credit retained at source"
     },
     {
       "property": "W Verbier",
@@ -81,21 +83,23 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/verbier-premium/w-verbier/view-3.webp",
-      "downloadUrl": "https://cache.marriott.com/content/dam/marriott-renditions/GVAWH/gvawh-wowsuite-loungearea-3039-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1200px:*",
-      "sourcePage": "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/rooms/",
-      "candidateContext": "",
-      "sha256": "b7cde219fe7f2fdf136c43098e3cafc1a1aa2a04bd98d8b2fc665c504e5892bc",
-      "bytes": 124768,
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/5c82902829f2cc7bb5650e0a/1629721357071-ZVRLU4FGMK8B7HN1JHET/W-Verbier-verbier-hotels-pool.jpg",
+      "sourcePage": "https://www.verbier.com/hotels/w-verbier",
+      "candidateContext": "W-Verbier-verbier-hotels-pool.jpg",
+      "sha256": "066a69250d5a238b4b59d566718453771f70737a1d233a276fb6706e25592d72",
+      "bytes": 208152,
       "originalSize": [
-        1200,
-        799
+        1500,
+        1000
       ],
       "outputSize": [
-        1200,
-        799
+        1500,
+        1000
       ],
-      "visualQaWarning": "DOUBLON VISUEL : même salon que view-2.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://cache.marriott.com/content/dam/marriott-renditions/GVAWH/gvawh-wowsuite-loungearea-3039-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1200px:*",
+      "credit": "W Verbier · photo on exact property's own gallery; original credit retained at source"
     },
     {
       "property": "Chalet d'Adrien",
@@ -170,21 +174,23 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/verbier-premium/chalet-adrien/view-3.webp",
-      "downloadUrl": "https://chalet-adrien.com/wp-content/uploads/2020/12/chalet_adrien-1024x696.jpg",
+      "downloadUrl": "https://chalet-adrien.com/wp-content/uploads/2021/01/la-terrasse.jpg",
       "sourcePage": "https://chalet-adrien.com/en/",
-      "candidateContext": "Le Chalet d'Adrien à Verbier",
-      "sha256": "84469327899336b521c562c199f5f2d187f80bace0a10f53f9310a4c66602827",
-      "bytes": 192594,
+      "candidateContext": "La Terrasse du Chalet d'Adrien",
+      "sha256": "ab56f742518321303fdcab3499f983f1c6d2587e328da5b4ecfd1fd03065211e",
+      "bytes": 115310,
       "originalSize": [
-        1024,
-        696
+        1439,
+        576
       ],
       "outputSize": [
-        1024,
-        696
+        1439,
+        576
       ],
-      "visualQaWarning": "DOUBLON VISUEL : même façade d'hôtel enneigée que view-2.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://chalet-adrien.com/wp-content/uploads/2020/12/chalet_adrien-1024x696.jpg",
+      "credit": "Chalet d'Adrien · photo on exact property's own gallery; original credit retained at source"
     },
     {
       "property": "La Cordée des Alpes",
@@ -291,9 +297,9 @@
       "localPath": "/images/travel/verbier-premium/experimental-chalet/view-1.webp",
       "downloadUrl": "https://cdn.prod.website-files.com/6932dc91bcf2019d2c1c5686/69ef6482f8a89dc0988cb65d_Experimental%20Chalet%20Verbier%20Winter.webp",
       "sourcePage": "https://www.experimentalchalet.com/",
-      "candidateContext": "Official page sharing image",
-      "sha256": "c1aace7ca0a75f9dcfa5e251621c3eeed2b3684b4ca68ed1ce32ee3d03f29721",
-      "bytes": 28008,
+      "candidateContext": "Official hotel's page hero photograph",
+      "sha256": "de3a9248df9f985f45525c9d496db337aab1e6690f698145be82456fa46d7c6a",
+      "bytes": 30570,
       "originalSize": [
         1200,
         630
@@ -302,8 +308,10 @@
         1200,
         630
       ],
-      "visualQaWarning": "Image floue à travers une fenêtre de transport, n'illustre pas l'Experimental Chalet.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://cdn.prod.website-files.com/6932dc91bcf2019d2c1c5686/69ef6482f8a89dc0988cb65d_Experimental%20Chalet%20Verbier%20Winter.webp",
+      "credit": "Experimental Chalet Verbier · photo on exact property's own gallery; original credit retained at source"
     },
     {
       "property": "Experimental Chalet Verbier",
@@ -318,21 +326,23 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/verbier-premium/experimental-chalet/view-2.webp",
-      "downloadUrl": "https://cdn.prod.website-files.com/6932dc91bcf2019d2c1c5686/6a354ec6bd64236c99abbf0c_experimental-group-hotel-chalet-verbier-winter-desktop.webp",
-      "sourcePage": "https://www.experimentalchalet.com/",
-      "candidateContext": "Blurred forest and hills seen through a train window with two empty seats on each side.",
-      "sha256": "a81111cfbb7ff223547951f6d3f8a2f5afe5291cadd719ff53846666895ba17f",
-      "bytes": 40038,
+      "downloadUrl": "https://cdn.prod.website-files.com/6932dc91bcf2019d2c1c5686/6a29411318e494568eabab89_verbier-experimental-group-hotel-bedroom-window.webp",
+      "sourcePage": "https://www.experimentalgroup.com/verbier/experimental-chalet-verbier/gallery",
+      "candidateContext": "Hotel room with white bed, green headboard, painting, brown curtains, and window view of pine trees.",
+      "sha256": "b71d72cf3b38454d39886f156a9db0dcb24b8e0a52178b541a322133aa74215e",
+      "bytes": 156672,
       "originalSize": [
-        2880,
-        1620
+        2500,
+        1669
       ],
       "outputSize": [
-        1700,
-        956
+        1800,
+        1202
       ],
-      "visualQaWarning": "DOUBLON VISUEL et hors sujet : même photo floue que view-1.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://cdn.prod.website-files.com/6932dc91bcf2019d2c1c5686/6a354ec6bd64236c99abbf0c_experimental-group-hotel-chalet-verbier-winter-desktop.webp",
+      "credit": "Experimental Chalet Verbier · photo on exact property's own gallery; original credit retained at source"
     },
     {
       "property": "Experimental Chalet Verbier",

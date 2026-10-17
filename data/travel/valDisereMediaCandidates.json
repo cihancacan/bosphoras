@@ -24,19 +24,21 @@
       "localPath": "/images/travel/val-disere-premium/airelles-val-disere/view-1.webp",
       "downloadUrl": "https://images.prismic.io/airelles2023/ZfNWN7TwE6aM1KQG_VDI---Facade---arrivee.jpg?auto=format%2Ccompress&rect=0%2C141%2C1920%2C1008&w=2400&h=1260",
       "sourcePage": "https://airelles.com/fr/destination/val-d-isere-hotel",
-      "candidateContext": "Official page sharing image",
-      "sha256": "af31e681e0b77e2ffd55a628fa969e1347acd4105b10a67f366f55f269cd59fe",
-      "bytes": 363044,
+      "candidateContext": "Official hotel's page hero photograph",
+      "sha256": "bd7b10b7d2f4c5b654cb02ac1a1ea339d7f131f5aee4241d771a75f0f4663a92",
+      "bytes": 434870,
       "originalSize": [
         2400,
         1260
       ],
       "outputSize": [
-        1700,
-        893
+        1800,
+        945
       ],
-      "visualQaWarning": "Photo archivale ancienne qui ne reflète pas nécessairement l'état actuel du palace. À remplacer avant marketing.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://images.prismic.io/airelles2023/ZfNWN7TwE6aM1KQG_VDI---Facade---arrivee.jpg?auto=format%2Ccompress&rect=0%2C141%2C1920%2C1008&w=2400&h=1260",
+      "credit": "Airelles Val d'Isère · photo on exact property's own gallery; original credit retained at source"
     },
     {
       "property": "Airelles Val d'Isère",
@@ -81,21 +83,23 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/val-disere-premium/airelles-val-disere/view-3.webp",
-      "downloadUrl": "https://assets.airelles.com/images/airelles2023/ZfMTFLTwE6aM1J1D_VDI---Val-d%27Ise%CC%80re---Lac-du-Chevril.jpg?auto=format%2Ccompress&rect=0%2C291%2C1920%2C960&w=1920&h=960",
-      "sourcePage": "https://airelles.com/en/destination/val-d-isere-hotel",
-      "candidateContext": "Airelles Val d'Isère, Hôtel 5 étoiles",
-      "sha256": "bfc73ba66ef857cc8a9f140a3f1e780abc60bdb208135cef7c57d4220538e68a",
-      "bytes": 280398,
+      "downloadUrl": "https://assets.airelles.com/images/airelles2023/abwDo7bci2UF6RrB_IMAGEVIDEOHEADERVDI.jpg?auto=format%2Ccompress&w=1920&h=1080",
+      "sourcePage": "https://airelles.com/fr/destination/val-d-isere-hotel",
+      "candidateContext": "",
+      "sha256": "518f71742a7e9873f5ff3a8b70a5aa5e43d453f3fcc198bd3adb4c23df97997a",
+      "bytes": 339254,
       "originalSize": [
         1920,
-        960
+        1080
       ],
       "outputSize": [
-        1700,
-        850
+        1800,
+        1013
       ],
-      "visualQaWarning": "Paysage montagnard sans Airelles identifiable ; ne pas présenter comme photo du palace.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://assets.airelles.com/images/airelles2023/ZfMTFLTwE6aM1J1D_VDI---Val-d%27Ise%CC%80re---Lac-du-Chevril.jpg?auto=format%2Ccompress&rect=0%2C291%2C1920%2C960&w=1920&h=960",
+      "credit": "Airelles Val d'Isère · photo on exact property's own gallery; original credit retained at source"
     },
     {
       "property": "Le K2 Chogori",
@@ -173,8 +177,8 @@
       "downloadUrl": "https://lek2chogori.com/media/cache/jadro_resize/rc/g9dpaQpB1790002177/jadroRoot/medias/5c115c2415935/695bebd8391df/k2c_bottleneck_gastonomie_22_stephane_berthe.jpg",
       "sourcePage": "https://lek2chogori.com/fr/",
       "candidateContext": "Le Bottleneck restaurant fondues fromagères et cuisine à la braise à Val d'Isère au K2 Chogori",
-      "sha256": "1c98013fa58ef2ea01b86f89f4f851d201bfcbff960bb76b36f0bd23f4b9de59",
-      "bytes": 37118,
+      "sha256": "12e684a42f376d3b83ef0e977e20550e38fd791601c7a1bcb767cd0ef3dc6e66",
+      "bytes": 43068,
       "originalSize": [
         960,
         640
@@ -183,8 +187,10 @@
         960,
         640
       ],
-      "visualQaWarning": "Photo d'assiette seule : n'illustre ni chambre ni équipement de l'hôtel.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://lek2chogori.com/media/cache/jadro_resize/rc/g9dpaQpB1790002177/jadroRoot/medias/5c115c2415935/695bebd8391df/k2c_bottleneck_gastonomie_22_stephane_berthe.jpg",
+      "credit": "Le K2 Chogori · photo on exact property's own gallery; original credit retained at source"
     },
     {
       "property": "La Mourra",
@@ -259,21 +265,23 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/val-disere-premium/la-mourra/view-3.webp",
-      "downloadUrl": "https://www.hotellamourra.com/wp-content/uploads/la-mourra_vue-drone-2-1920x1440.webp",
+      "downloadUrl": "https://www.hotellamourra.com/wp-content/uploads/la-mourra_vue-exterieure-2-2560x1707.webp",
       "sourcePage": "https://www.hotellamourra.com/fr/",
-      "candidateContext": "Vue aérienne d'un bâtiment en montagne enneigée, Hôtel 5 Étoiles avec spa La Mourra à Val d’Isèr",
-      "sha256": "0168fe57ffd93be17c70667f076134cca0fa1d830c4d9c44e771898499871472",
-      "bytes": 461018,
+      "candidateContext": "Chalet enneigé en montagne sous ciel bleu, Hôtel 5 Étoiles avec spa La Mourra à Val d’Isèr",
+      "sha256": "98b4a4f5507647cde6f74e661ef599ecc74de24871015f0d30b8a07201c43dda",
+      "bytes": 435970,
       "originalSize": [
-        1920,
-        1440
+        2560,
+        1707
       ],
       "outputSize": [
-        1667,
-        1250
+        1800,
+        1200
       ],
-      "visualQaWarning": "DOUBLON VISUEL : même bâtiment vue du même angle que view-2.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://www.hotellamourra.com/wp-content/uploads/la-mourra_vue-drone-2-1920x1440.webp",
+      "credit": "La Mourra · photo on exact property's own gallery; original credit retained at source"
     },
     {
       "property": "Le Blizzard",
@@ -318,21 +326,23 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/val-disere-premium/le-blizzard/view-2.webp",
-      "downloadUrl": "https://hotelblizzard.com/wp-content/uploads/restaurant_le-blizzard-1-hd-1920x1080-1-1440x810.webp",
+      "downloadUrl": "https://hotelblizzard.com/wp-content/uploads/restaurant_le-blizzard-3-hd-1920x1080-1-2560x1440.webp",
       "sourcePage": "https://hotelblizzard.com/fr/",
-      "candidateContext": "restaurant le blizzard (1) hd 1920x1080",
-      "sha256": "9b71ad3faaa246d30a80b234754a6ea0bb88c2f6d6cf885e1518a8f2fad45d14",
-      "bytes": 217154,
+      "candidateContext": "restaurant le blizzard (3) hd 1920x1080",
+      "sha256": "29b2cc36da306767232f8e629f9688f745b69c2ea02f2381051318c4d80a81e9",
+      "bytes": 286494,
       "originalSize": [
-        1440,
-        810
+        1920,
+        1080
       ],
       "outputSize": [
-        1440,
-        810
+        1800,
+        1013
       ],
-      "visualQaWarning": "DOUBLON VISUEL : même salle que view-1.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://hotelblizzard.com/wp-content/uploads/restaurant_le-blizzard-1-hd-1920x1080-1-1440x810.webp",
+      "credit": "Le Blizzard · photo on exact property's own gallery; original credit retained at source"
     },
     {
       "property": "Le Blizzard",
@@ -347,21 +357,23 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/val-disere-premium/le-blizzard/view-3.webp",
-      "downloadUrl": "https://hotelblizzard.com/wp-content/uploads/restaurant_le-blizzard-1-hd-1920x1080-1-1280x720.webp",
+      "downloadUrl": "https://hotelblizzard.com/wp-content/uploads/hotelleblizzard-menu-accueil-hiver-2560x1440.webp",
       "sourcePage": "https://hotelblizzard.com/fr/",
-      "candidateContext": "restaurant le blizzard (1) hd 1920x1080",
-      "sha256": "82c39cd03f4a6566ab55c192e8b8b28a58b468fdd35c9dff125c4bcb9ae37cbd",
-      "bytes": 177478,
+      "candidateContext": "",
+      "sha256": "658c00ebab444b4f9910ca74f6686ecbeea2058d242c046b76e745d4383aaa7f",
+      "bytes": 281230,
       "originalSize": [
-        1280,
-        720
+        1920,
+        1080
       ],
       "outputSize": [
-        1280,
-        720
+        1800,
+        1013
       ],
-      "visualQaWarning": "DOUBLON VISUEL : même salle que view-1.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://hotelblizzard.com/wp-content/uploads/restaurant_le-blizzard-1-hd-1920x1080-1-1280x720.webp",
+      "credit": "Le Blizzard · photo on exact property's own gallery; original credit retained at source"
     }
   ],
   "destinationScenes": [

@@ -148,23 +148,24 @@
         "https://www.fermesdemarie.com/en/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "candidateContext": "Winter-at-aux-Fermes-de-Marie",
-      "credit": "Les Fermes de Marie · official property source",
+      "candidateContext": "spa-pure-altitude-les-fermes-de-maria-megeve",
+      "credit": "Les Fermes de Marie · photo on exact property's own gallery; original credit retained at source",
       "localPath": "/images/travel/megeve-premium/les-fermes-de-marie/view-2.webp",
-      "downloadUrl": "https://cdn.prod.website-files.com/67bd7c1b97c847605ceed35e/67bd7c1b97c847605ceedd21_les-fermes-de-marie-hiver-sejours-megeve.jpg",
-      "sourcePage": "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
-      "sha256": "efec1600a1fb84ed579b08dcefd2d68c8d60ca38b74640986041465b79de3d7f",
-      "bytes": 111256,
+      "downloadUrl": "https://cdn.prod.website-files.com/67bd7c1b97c847605ceed35e/67bd7c1b97c847605ceede02_64e4ac7cb42c4886d9f9ef56_spafdm.png",
+      "sourcePage": "https://www.fermesdemarie.com/en/",
+      "sha256": "bdaebe1a9d02565d73cce8ebcb7743fc8aa177ac090389edd82f45f3d4e39265",
+      "bytes": 117900,
       "originalSize": [
-        1100,
-        500
+        1920,
+        700
       ],
       "outputSize": [
-        1100,
-        500
+        1800,
+        656
       ],
-      "visualQaWarning": "DOUBLON VISUEL : presque identique à view-1, même façade enneigée.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://cdn.prod.website-files.com/67bd7c1b97c847605ceed35e/67bd7c1b97c847605ceedd21_les-fermes-de-marie-hiver-sejours-megeve.jpg"
     },
     {
       "property": "Les Fermes de Marie",
@@ -275,11 +276,11 @@
         "https://alpaga.com/"
       ],
       "localPath": "/images/travel/megeve-premium/l-alpaga/view-3.webp",
-      "downloadUrl": "https://alpaga.com/media/nycnlthp/225a4228.jpg?width=1200&v=1dbc966bdd82d70",
+      "downloadUrl": "https://alpaga.com/media/t31hr5lp/hal-20221211_chalet-g-room-42_hd-3.jpg?width=1200&v=1dbc9725d2bd510",
       "sourcePage": "https://alpaga.com/fr/proprietes/hotel-alpaga/chambres-suites/",
-      "candidateContext": "Un lit douillet est placé près d'une grande fenêtre vitrée avec deux portraits au-dessus.",
-      "sha256": "f59aca32b67c51e3065125fa7b69820c45aea5fc2a62b1c94c5f3a2696d5e12d",
-      "bytes": 48506,
+      "candidateContext": "Une photo de l'espace de vie présente un ensemble de canapés confortables placés près de la fenêtre.",
+      "sha256": "738bf30a9af1440e28c66baf4f5a69a61336ddbf7135dde17a38e9af36f20e45",
+      "bytes": 76060,
       "originalSize": [
         1200,
         675
@@ -288,9 +289,10 @@
         1200,
         675
       ],
-      "credit": "L'Alpaga · official property source",
-      "visualQaWarning": "DOUBLON/ANGLE TRÈS SIMILAIRE : même chambre et tête de lit que view-1.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "credit": "L'Alpaga · photo on exact property's own gallery; original credit retained at source",
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://alpaga.com/media/nycnlthp/225a4228.jpg?width=1200&v=1dbc966bdd82d70"
     },
     {
       "property": "Lodge Park",
@@ -305,12 +307,12 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "candidateContext": "the-lodge-reset-recovery-longevity-club-megeve",
-      "credit": "Lodge Park · official property source",
+      "credit": "Lodge Park · photo on exact property's own gallery; original credit retained at source",
       "localPath": "/images/travel/megeve-premium/lodge-park/view-1.webp",
       "downloadUrl": "https://cdn.prod.website-files.com/67bd7d3ab637857b69461f8d/6a9a85290a3f566ea0f595b1_the-lodge-reset-recuperation-longevity-club-megeve.png",
       "sourcePage": "https://www.lodgepark.com/en/hotel-center-of-megeve",
-      "sha256": "432a9faf44456b0e12112844c5d8e03ff081e49d366bd5a8efc896e5b12685ad",
-      "bytes": 60082,
+      "sha256": "31ffaede57d43ef71bfb2c2e64183c0c95b44b15a59b2d163c6d9746155b6658",
+      "bytes": 69046,
       "originalSize": [
         921,
         558
@@ -319,8 +321,9 @@
         921,
         558
       ],
-      "visualQaWarning": "Montage publicitaire mi-employé mi-gym, pas une seule photographie immobilière haut de gamme.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://cdn.prod.website-files.com/67bd7d3ab637857b69461f8d/6a9a85290a3f566ea0f595b1_the-lodge-reset-recuperation-longevity-club-megeve.png"
     },
     {
       "property": "Lodge Park",

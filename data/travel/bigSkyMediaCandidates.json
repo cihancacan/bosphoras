@@ -52,21 +52,23 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/big-sky-premium/montage-big-sky/view-2.webp",
-      "downloadUrl": "https://uploads.montage.com/uploads/sites/11/2023/03/16123940/MBS-Architecture-Guestroom-King-Peak-View-East-2-scaled.webp",
+      "downloadUrl": "https://uploads.montage.com/uploads/sites/11/2024/09/03091354/MBS-5-EXTERIORS-08-0723-1920x1080.webp",
       "sourcePage": "https://www.montage.com/bigsky/accommodations/",
-      "candidateContext": "Official page sharing image",
-      "sha256": "ef4d03b2d8488095971e838ca89fb5f0f003c1dd264858d14e8447b81ac424d1",
-      "bytes": 142332,
+      "candidateContext": "Montage Big Sky overlooking the Spanish Peaks in the winter.",
+      "sha256": "33e7b65f75adb12e98520a5db44272347ad6103a2913524de89fb853f090873e",
+      "bytes": 220784,
       "originalSize": [
-        2560,
-        1626
-      ],
-      "outputSize": [
-        1700,
+        1920,
         1080
       ],
-      "visualQaWarning": "DOUBLON VISUEL : même chambre que view-1, autre dérivé.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "outputSize": [
+        1800,
+        1013
+      ],
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://uploads.montage.com/uploads/sites/11/2023/03/16123940/MBS-Architecture-Guestroom-King-Peak-View-East-2-scaled.webp",
+      "credit": "Montage Big Sky · photo on exact property's own gallery; original credit retained at source"
     },
     {
       "property": "Montage Big Sky",
@@ -81,21 +83,23 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/big-sky-premium/montage-big-sky/view-3.webp",
-      "downloadUrl": "https://uploads.montage.com/uploads/sites/11/2026/09/17060146/MBS-Social-Kyle-Niego-Fall-2026-Cowboy-Tears-Horseback-Riding-1-1024x683.webp",
+      "downloadUrl": "https://uploads.montage.com/uploads/sites/11/2024/09/04132253/MBS-Architecture-Guestroom-King-Mountain-View-West-Fire-On-1465x730.webp",
       "sourcePage": "https://www.montage.com/bigsky/",
-      "candidateContext": "Two women riding horses in Big Sky",
-      "sha256": "7db4f813089a486815539bfe3f547623e06ea8025fdc5225698250d4a039bfd0",
-      "bytes": 113056,
+      "candidateContext": "King Mountain View guestroom at Montage Big Sky",
+      "sha256": "51309acafc8b76de9837166dd13d0d6de95dcb802176c884daa24ad16af218a6",
+      "bytes": 142812,
       "originalSize": [
-        1024,
-        683
+        1465,
+        730
       ],
       "outputSize": [
-        1024,
-        683
+        1465,
+        730
       ],
-      "visualQaWarning": "Photo d'équitation dans le Montana, sans bâtiments Montage identifiables ; mauvais visuel pour fiche hôtel.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://uploads.montage.com/uploads/sites/11/2026/09/17060146/MBS-Social-Kyle-Niego-Fall-2026-Cowboy-Tears-Horseback-Riding-1-1024x683.webp",
+      "credit": "Montage Big Sky · photo on exact property's own gallery; original credit retained at source"
     },
     {
       "property": "One&Only Moonlight Basin",

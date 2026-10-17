@@ -142,25 +142,26 @@
       ],
       "rights": "Commons photo licence verified at source; any attribution, share-alike, adaptation and trademark rules need compliance. Visual QA still required.",
       "localPath": "/images/travel/st-moritz-premium/kulm-hotel/view-2.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Kulm_Hotel_Sankt_Moritz_2022-09-25_01.jpg/1920px-Kulm_Hotel_Sankt_Moritz_2022-09-25_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kulm_Hotel_Sankt_Moritz_2022-09-25_01.jpg",
-      "candidateContext": "Kulm Hotel Sankt Moritz 2022-09-25 01.jpg",
-      "credit": "Leonhard Lenz",
+      "downloadUrl": "https://media.kulm.com/size:900x675,mode:crop/wp-content/uploads/sites/4/2024/10/09075410/KulmHotel_1S8A3664_NilsGrubba-1.png",
+      "sourcePage": "https://www.kulm.com/en/winter/",
+      "candidateContext": "The immersive St. Moritz alpine spa",
+      "credit": "Kulm Hotel St. Moritz · photo on exact property's own gallery; original credit retained at source",
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "sha256": "ffa17bf3fffffaf77cfb3c44bc7f4eac629adf4d45bc7df6d26e7be1cf7feee3",
-      "bytes": 459106,
+      "sha256": "ddcf54ed95fb768de1f922bf979f6e4048d19393fab7a16d37222f061c3e27f4",
+      "bytes": 60452,
       "originalSize": [
-        1920,
-        1281
+        900,
+        675
       ],
       "outputSize": [
-        1800,
-        1201
+        900,
+        675
       ],
-      "visualQaWarning": "Contrôle visuel : entrée réelle du Kulm, mais cliché extérieur de 2022 peu représentatif d'un palace d'hiver ; conserver uniquement en photo secondaire tant qu'une meilleure image n'est pas sélectionnée.",
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
       "visualQaReviewedAt": "2026-10-15",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Kulm_Hotel_Sankt_Moritz_2022-09-25_01.jpg/1920px-Kulm_Hotel_Sankt_Moritz_2022-09-25_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "property": "Kulm Hotel St. Moritz",
@@ -175,25 +176,26 @@
       ],
       "rights": "Commons photo licence verified at source; any attribution, share-alike, adaptation and trademark rules need compliance. Visual QA still required.",
       "localPath": "/images/travel/st-moritz-premium/kulm-hotel/view-3.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Kulm_Hotel_Sankt_Moritz_2022-09-25_03.jpg/1920px-Kulm_Hotel_Sankt_Moritz_2022-09-25_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kulm_Hotel_Sankt_Moritz_2022-09-25_03.jpg",
-      "candidateContext": "Kulm Hotel Sankt Moritz 2022-09-25 03.jpg",
-      "credit": "Leonhard Lenz",
+      "downloadUrl": "https://media.kulm.com/size:900x675,mode:crop/wp-content/uploads/sites/4/2025/01/23154925/Small-Johannes-Badrutts-Office-1.jpg",
+      "sourcePage": "https://www.kulm.com/en/winter/",
+      "candidateContext": "The remarkable heritage of the hotel that makes winter",
+      "credit": "Kulm Hotel St. Moritz · photo on exact property's own gallery; original credit retained at source",
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "sha256": "a2d7e935bfd7020a52eed16f2cb8057e3117104822a0d42241595523f860af69",
-      "bytes": 453968,
+      "sha256": "17af66e43fff6957ee63b718e18984ca5a7208812a4c4fc3a8a4826270623ff0",
+      "bytes": 105636,
       "originalSize": [
-        1920,
-        1281
+        900,
+        675
       ],
       "outputSize": [
-        1800,
-        1201
+        900,
+        675
       ],
-      "visualQaWarning": "Contrôle visuel : pelouse et terrain extérieur du domaine, sans mise en valeur de l'hôtel ; À REMPLACER par une photo intérieure, spa ou façade du Kulm.",
+      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
       "visualQaReviewedAt": "2026-10-15",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "replacedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Kulm_Hotel_Sankt_Moritz_2022-09-25_03.jpg/1920px-Kulm_Hotel_Sankt_Moritz_2022-09-25_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "property": "Suvretta House",
