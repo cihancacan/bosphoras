@@ -16,3 +16,31 @@ Le propriétaire du projet a confirmé les droits d'utilisation ; les auteurs et
 - Mise en page : les photos sans validation visuelle ou dont le sujet exact n'est pas garanti sont exclues des galeries et du JSON-LD ; les routes restent en `noindex`.
 
 Les 10 destinations sont intégrées FR/EN, mais **la vérification finale du rendu de la Preview Vercel actualisée n'a pas encore eu lieu**. L'ancienne Preview ne présente pas ces dernières modifications. Aucun déploiement en production.
+
+## Bilan vérifié après les derniers remplacements (17 octobre)
+
+**151/168 images approuvées visuellement** dans les huit guides alpins, **17/168 bloquées** (tous les fichiers peuvent être présents physiquement, mais ils ne sont pas forcément publiables). Les 42 photos de Mustique/Courchevel sont suivies dans leurs propres manifestes et exclues de ce compteur.
+
+| Destination | Images utilisables | Encore bloquées |
+|---|---:|---:|
+| St. Moritz | 18/21 | 3 |
+| Aspen | 21/21 | 0 |
+| Niseko | 20/21 | 1 |
+| Megève | 18/21 | 3 |
+| Jackson Hole | 19/21 | 2 |
+| Big Sky | 19/21 | 2 |
+| Val d'Isère | 17/21 | 4 |
+| Verbier | 19/21 | 2 |
+
+Derniers changements authentiques : Ritz-Carlton Reserve suite Yōtei, Setsu Niseko salon face au mont Yōtei et chambre, Hotel Jerome Deluxe King, Wort Hotel salon avec cheminée et chambre western, Hotel Jackson chambre avec cheminée, St. Moritz panorama, Spanish Peaks Montana piste de ski. Photographies originales et sources renseignées dans les manifestes.
+
+Les **17 éléments bloqués**, à remplacer par une photo réellement distincte du lieu ou hôtel :
+- St. Moritz : Kulm 3e photo (portrait historique), lac automnal si présenté comme hiver, Celerina (paysage trop générique).
+- Niseko : scène Hokkaidō onsen estivale ancienne.
+- Megève : Lodge Park montage publicitaire, Cote 2000 parking, piste Megève dont l'identité exacte reste à vérifier.
+- Jackson Hole : Teton Village panorama insuffisant, rue western historique de faible qualité.
+- Big Sky : One&Only Moonlight Basin 1re image non assez probante, « Lone Mountain Ranch » scène représentant plutôt Lone Peak.
+- Val d'Isère : Airelles photo d'archive et paysage sans l'hôtel, K2 Chogori simple assiette, Laisinant carte d'information plutôt que vrai paysage.
+- Verbier : Experimental Chalet image par fenêtre de transport, Médran ancienne télécabine non localisée précisément (une image alternative approuvée de Place Blanche s'affiche sur la page).
+
+**Important :** les dix guides sont intégrés dans la branche mais la dernière **Preview Vercel pour vérifier le rendu réel n'est pas encore créée**. Le déploiement de la branche est ignoré pour limiter les dépenses. La production reste inchangée. Les URL d'ancienne Preview ne montrent pas les corrections ci-dessus.
