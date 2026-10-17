@@ -1,6 +1,6 @@
 # Niseko — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 19/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 20/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Niseko](niseko.jpg)
 
@@ -12,7 +12,7 @@
 | 4 | Higashiyama Niseko Village, a Ritz-Carlton Reserve — view-1 | [Source](https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/) · Official page sharing image| Candidate |
 | 5 | Higashiyama Niseko Village, a Ritz-Carlton Reserve — view-2 | [Source](https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/rooms/) · Higashiyama Niseko Village Ritz-Carlton Reserve Yotei Twin Room| Candidate |
 | 6 | Higashiyama Niseko Village, a Ritz-Carlton Reserve — view-3 | [Source](https://www.ritzcarlton.com/en/hotels/ctsrz-higashiyama-niseko-village-a-ritz-carlton-reserve/overview/) · Guest Bathroom - Onsen-Style Soaking Tub| Candidate |
-| 7 | Setsu Niseko — view-1 | [Source](https://setsuniseko.com/en/gallery/) · Summer Yotei| Candidate; **Contrôle visuel : paysage du mont Yōtei SANS bâtiment Setsu identifiable. Ne doit PAS être présenté comme une photo de l'hôtel ; À REMPLACER par une suite ou un espace de Setsu.** |
+| 7 | Setsu Niseko — view-1 | [Source](https://www.tatlerasia.com/places/setsu-niseko) · Real Setsu Niseko four-bedroom suite living room with snowy Mt Yotei view| Candidate |
 | 8 | Setsu Niseko — view-2 | [Source](https://setsuniseko.com/en/gallery/) · Setsu Niseko bedroom| Candidate |
 | 9 | Setsu Niseko — view-3 | [Source](https://setsuniseko.com/en/gallery/) · Setsu Exterior With Sign| Candidate |
 | 10 | AYA Niseko — view-1 | [Source](https://www.ayaniseko.com/) · Official page sharing image| Candidate |

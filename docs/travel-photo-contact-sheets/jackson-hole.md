@@ -1,6 +1,6 @@
 # Jackson Hole — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 18/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 19/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Jackson Hole](jackson-hole.jpg)
 
@@ -13,7 +13,7 @@
 | 5 | Caldera House — view-2 | [Source](https://calderahouse.com/) · Official page sharing image| Candidate |
 | 6 | Caldera House — view-3 | [Source](https://calderahouse.com/jackson-hole-hotel-suites/) · Aira Two Bedroom Suite| Candidate |
 | 7 | Hotel Jackson — view-1 | [Source](https://hoteljackson.com/) · Juliette rooftop restaurant at Hotel Jackson overlooking downtown Jackson Hole| Candidate |
-| 8 | Hotel Jackson — view-2 | [Source](https://hoteljackson.com/) · Juliette rooftop restaurant at Hotel Jackson overlooking downtown Jackson Hole| Candidate; **DOUBLON VISUEL : identique à view-1 (même terrasse), une seule image à garder.** |
+| 8 | Hotel Jackson — view-2 | [Source](https://www.hoteljackson.com/) · Hotel Jackson King Balcony suite with fireplace| Candidate |
 | 9 | Hotel Jackson — view-3 | [Source](https://hoteljackson.com/) · Luxury spa and wellness at Hotel Jackson, Jackson Hole Wyoming , massages, facials and restorative treatments in downtow| Candidate |
 | 10 | The Wort Hotel — view-1 | [Source](https://www.cntraveler.com/hotels/jackson/the-wort-hotel) · The Wort Hotel historic fireplace, Jackson| Candidate |
 | 11 | The Wort Hotel — view-2 | [Source](https://www.worthotel.com/) · Deluxe Double Queen| Candidate |

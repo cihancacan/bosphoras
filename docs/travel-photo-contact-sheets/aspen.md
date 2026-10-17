@@ -1,6 +1,6 @@
 # Aspen — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 20/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 21/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Aspen](aspen.jpg)
 
@@ -11,7 +11,7 @@
 | 3 | The Little Nell — view-3 | [Source](https://www.thelittlenell.com/) · food on table inside ajax overlooking aspen mountain| Candidate |
 | 4 | Hotel Jerome — view-1 | [Source](https://auberge.com/hotel-jerome/) · Official page sharing image| Candidate |
 | 5 | Hotel Jerome — view-2 | [Source](https://auberge.com/hotel-jerome/) · Embedded image in official property source| Candidate |
-| 6 | Hotel Jerome — view-3 | [Source](https://auberge.com/hotel-jerome/stay/) · Embedded image on exact hotel page| Candidate; **New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.** |
+| 6 | Hotel Jerome — view-3 | [Source](https://auberge.com/hotel-jerome/galleries/resort/) · Hotel Jerome Aspen, official Deluxe King room| Candidate |
 | 7 | The St. Regis Aspen Resort — view-1 | [Source](https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/photos/) · | Candidate |
 | 8 | The St. Regis Aspen Resort — view-2 | [Source](https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/rooms/) · | Candidate |
 | 9 | The St. Regis Aspen Resort — view-3 | [Source](https://www.marriott.com/en-us/hotels/asexr-the-st-regis-aspen-resort/photos/) · | Candidate |
