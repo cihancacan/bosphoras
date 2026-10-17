@@ -214,25 +214,25 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/niseko-premium/setsu-niseko/view-1.webp",
-      "downloadUrl": "https://setsuniseko.com/wp-content/uploads/Summer-Yotei.jpeg",
-      "sourcePage": "https://setsuniseko.com/en/gallery/",
-      "candidateContext": "Summer Yotei",
-      "sha256": "8d0c0be07465b5e1783f596f552a3e47eee8847a045502cb232e8de09fd81d3a",
-      "bytes": 215044,
+      "downloadUrl": "https://cdn.tatlerasia.com/tatlerasia/i/2024/11/28115351-setsu-niseko-4bdr-living-room-winter_cover_1599x1066.jpg",
+      "sourcePage": "https://www.tatlerasia.com/places/setsu-niseko",
+      "candidateContext": "Real Setsu Niseko four-bedroom suite living room with snowy Mt Yotei view",
+      "sha256": "7607d97ea647ba7438968db2cad520519b9f6a3a2d9ed606f7e730e74a9f3e9f",
+      "bytes": 114984,
       "originalSize": [
-        7360,
-        4912
+        1599,
+        1066
       ],
       "outputSize": [
-        1700,
-        1135
+        1599,
+        1066
       ],
-      "credit": "",
+      "credit": "setsu-niseko · property/gallery publisher",
       "license": "",
       "licenseUrl": "",
-      "visualQaWarning": "Contrôle visuel : paysage du mont Yōtei SANS bâtiment Setsu identifiable. Ne doit PAS être présenté comme une photo de l'hôtel ; À REMPLACER par une suite ou un espace de Setsu.",
+      "visualQaWarning": "Downloaded property-specific room from hotel/publisher gallery; visual framing review pending.",
       "visualQaReviewedAt": "2026-10-15",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "ownerRightsAuthorization": "Confirmed by operator 2026-10-17; preserve original source and credit."
     },
     {
       "property": "Setsu Niseko",

@@ -172,23 +172,23 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/aspen-premium/hotel-jerome/view-3.webp",
-      "downloadUrl": "https://dreffui1gbt6t.cloudfront.net/images/hj/HJ_Main-Menu-Overlay-Image.jpg",
-      "sourcePage": "https://auberge.com/hotel-jerome/stay/",
-      "candidateContext": "Embedded image on exact hotel page",
-      "sha256": "50210bcad723974e8ea25cefab23702f1d969da4b7baac510caefeee255b274e",
-      "bytes": 272162,
+      "downloadUrl": "https://dreffui1gbt6t.cloudfront.net/images/hj/HJ_Accommodations_Deluxe-King1.jpg",
+      "sourcePage": "https://auberge.com/hotel-jerome/galleries/resort/",
+      "candidateContext": "Hotel Jerome Aspen, official Deluxe King room",
+      "sha256": "ca268ea31ac69157a1668d9ab27e7e103e634c6060f142cbbb6b4b5323660f24",
+      "bytes": 275742,
       "originalSize": [
         2000,
         1125
       ],
       "outputSize": [
-        1800,
-        1013
+        1750,
+        984
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
-      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "visualQaWarning": "Downloaded property-specific room from hotel/publisher gallery; visual framing review pending.",
+      "ownerRightsAuthorization": "Confirmed by operator 2026-10-17; preserve original source and credit.",
       "replacedSource": "https://dreffui1gbt6t.cloudfront.net/images/hj/hj-home-winter-video-poster.jpg",
-      "credit": "Hotel Jerome · photo on exact property's own gallery; original credit retained at source"
+      "credit": "hotel-jerome · property/gallery publisher"
     },
     {
       "property": "The St. Regis Aspen Resort",

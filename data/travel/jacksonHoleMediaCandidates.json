@@ -238,21 +238,22 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/jackson-hole-premium/hotel-jackson/view-2.webp",
-      "downloadUrl": "https://hoteljackson.com/wp-content/uploads/2026/08/RooftopWideEveningOutdoorHero-1-1-1024x629.jpg",
-      "sourcePage": "https://hoteljackson.com/",
-      "candidateContext": "Juliette rooftop restaurant at Hotel Jackson overlooking downtown Jackson Hole",
-      "sha256": "682f3acc1f5d64c6b9d68882cb43d94feb337bfea0be74b43f8f71b4dc7013bd",
-      "bytes": 85956,
+      "downloadUrl": "https://image-tc.galaxy.tf/wijpeg-9sp3v0xai84tti8nv7e6ysywf/pkingbalcony.jpg?width=1920",
+      "sourcePage": "https://www.hoteljackson.com/",
+      "candidateContext": "Hotel Jackson King Balcony suite with fireplace",
+      "sha256": "173cf8c5e6ef07b7484e9b0844e8bb7da876dfd398c28f3c32d7c918a1033fb8",
+      "bytes": 116032,
       "originalSize": [
-        1024,
-        629
+        1920,
+        1282
       ],
       "outputSize": [
-        1024,
-        629
+        1750,
+        1168
       ],
-      "visualQaWarning": "DOUBLON VISUEL : identique à view-1 (même terrasse), une seule image à garder.",
-      "ownerRightsAuthorization": "Confirmed by Bosphoras project operator in conversation on 2026-10-15; retain source, author, and licence attribution."
+      "visualQaWarning": "Downloaded property-specific room from hotel/publisher gallery; visual framing review pending.",
+      "ownerRightsAuthorization": "Confirmed by operator 2026-10-17; preserve original source and credit.",
+      "credit": "hotel-jackson · property/gallery publisher"
     },
     {
       "property": "Hotel Jackson",
