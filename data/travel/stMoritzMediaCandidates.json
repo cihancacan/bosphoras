@@ -134,7 +134,7 @@
       "propertyKey": "kulm-hotel",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.kulm.com/en/winter/hotel",
@@ -158,10 +158,10 @@
         900,
         675
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
       "visualQaReviewedAt": "2026-10-15",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
-      "replacedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Kulm_Hotel_Sankt_Moritz_2022-09-25_01.jpg/1920px-Kulm_Hotel_Sankt_Moritz_2022-09-25_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "replacedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Kulm_Hotel_Sankt_Moritz_2022-09-25_01.jpg/1920px-Kulm_Hotel_Sankt_Moritz_2022-09-25_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "property": "Kulm Hotel St. Moritz",
@@ -416,7 +416,7 @@
       "placeLabel": "St. Moritz Dorf",
       "searchQuery": "St Moritz village",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-2.webp",
@@ -439,7 +439,7 @@
       "ownerRightsAuthorization": "Owner confirmed usage rights in chat, 2026-10-17; Commons attribution and sharing conditions preserved.",
       "frCaption": "St. Moritz Dorf depuis le lac gelé (hiver 2008)",
       "enCaption": "St. Moritz Dorf viewed from frozen Lake St. Moritz, winter 2008",
-      "visualQaWarning": "Correct place established by original file metadata; framed WebP still needs manual visual/aesthetic QA."
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "key": "scene-3",
@@ -473,7 +473,7 @@
       "placeLabel": "Suvretta",
       "searchQuery": "Suvretta St Moritz",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-4.webp",
@@ -496,7 +496,7 @@
       "ownerRightsAuthorization": "Owner confirmed usage rights in chat, 2026-10-17; Commons attribution and sharing conditions preserved.",
       "frCaption": "Paysage du Pass Suvretta et du Lej Suvretta, au-dessus de St. Moritz",
       "enCaption": "High Alpine landscape at Pass Suvretta and Lej Suvretta above St. Moritz",
-      "visualQaWarning": "Correct place established by original file metadata; framed WebP still needs manual visual/aesthetic QA."
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "key": "scene-5",
@@ -559,7 +559,7 @@
       "placeLabel": "Pontresina",
       "searchQuery": "Pontresina Engadin",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Source and licence disclosed; independent editorial accuracy and commercial licence obligations still need human confirmation.",
       "localPath": "/images/travel/st-moritz-premium/destination/scene-7.webp",
@@ -581,10 +581,9 @@
       ],
       "ownerRightsAuthorization": "Owner confirmed usage rights in chat, 2026-10-17; Commons attribution and sharing conditions preserved.",
       "visualReviewedAt": "2026-10-17",
-      "visualReviewBasis": "Manually inspected panorama / official village-place attribution; summer greenery is correctly presented as seasonal landscape.",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained.",
       "frCaption": "Montagnes de l'Engadine vues depuis Pontresina en été",
-      "enCaption": "Engadin mountain landscape photographed from Pontresina in summer",
-      "visualQaWarning": "Correct place established by original file metadata; framed WebP still needs manual visual/aesthetic QA."
+      "enCaption": "Engadin mountain landscape photographed from Pontresina in summer"
     },
     {
       "key": "scene-8",

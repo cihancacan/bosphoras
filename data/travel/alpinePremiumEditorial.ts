@@ -10,7 +10,7 @@ import nisekoManifest from './nisekoMediaCandidates.json';
 /** Images are candidate media, not verified rights. Media with editorial warnings MUST stay hidden.
  * These guides are staged on an unbuilt branch, noindex and not approved for commercial publication.
  */
-type Candidate={key:string;localPath?:string;sourcePage?:string;status:string;visualQaWarning?:string;candidateContext?:string;propertyKey?:string;credit?:string;visuallyVerified?:boolean;commercialRightsCleared?:boolean};
+type Candidate={key:string;localPath?:string;sourcePage?:string;status:string;visualQaWarning?:string;candidateContext?:string;propertyKey?:string;credit?:string;visuallyVerified?:boolean;commercialRightsCleared?:boolean;frCaption?:string;enCaption?:string};
 type AlpinePlace = {name:string;enName:string};
 const areaNames={
  'st-moritz':['scene-2','scene-3','scene-4','scene-5','scene-7'],
@@ -21,7 +21,7 @@ function sourcePhoto(x:Candidate,place:string,locale:'fr'|'en'):BodrumPremiumPho
   const context=(x.candidateContext||'').replace(/<[^>]*>/g,'').trim();
   const generic = locale==='fr' ? 'Photographie de '+place : 'Photograph of '+place;
   const detail=context && !/^File:/.test(context) ? ' · '+context.slice(0,110) : '';
-  return {src:x.localPath!, fr:generic+detail, en:'Photograph of '+place+detail,
+  return {src:x.localPath!, fr:x.frCaption||generic+detail, en:x.enCaption||('Photograph of '+place+detail),
     sourcePage:x.sourcePage!,credit: (x.credit||place)+' · droits de diffusion commerciale à confirmer'};
 }
 function valid(c:Candidate):boolean{

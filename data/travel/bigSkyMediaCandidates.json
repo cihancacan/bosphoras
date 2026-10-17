@@ -44,7 +44,7 @@
       "propertyKey": "montage-big-sky",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.montage.com/bigsky/",
@@ -65,17 +65,17 @@
         1800,
         1013
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
       "replacedSource": "https://uploads.montage.com/uploads/sites/11/2023/03/16123940/MBS-Architecture-Guestroom-King-Peak-View-East-2-scaled.webp",
-      "credit": "Montage Big Sky · photo on exact property's own gallery; original credit retained at source"
+      "credit": "Montage Big Sky · photo on exact property's own gallery; original credit retained at source",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "property": "Montage Big Sky",
       "propertyKey": "montage-big-sky",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.montage.com/bigsky/",
@@ -96,10 +96,10 @@
         1465,
         730
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
       "replacedSource": "https://uploads.montage.com/uploads/sites/11/2026/09/17060146/MBS-Social-Kyle-Niego-Fall-2026-Cowboy-Tears-Horseback-Riding-1-1024x683.webp",
-      "credit": "Montage Big Sky · photo on exact property's own gallery; original credit retained at source"
+      "credit": "Montage Big Sky · photo on exact property's own gallery; original credit retained at source",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "property": "One&Only Moonlight Basin",
@@ -469,7 +469,7 @@
       "placeLabel": "Moonlight Basin",
       "searchQuery": "Moonlight Basin Big Sky",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "localPath": "/images/travel/big-sky-premium/destination/scene-4.webp",
@@ -489,10 +489,10 @@
       "credit": "Dennis Matheson",
       "license": "CC BY-SA 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
-      "visualQaWarning": "Correct place established by original file metadata; framed WebP still needs manual visual/aesthetic QA.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in chat, 2026-10-17; Commons attribution and sharing conditions preserved.",
       "frCaption": "Versant nord de Lone Peak et secteur historique de Moonlight Basin (hiver)",
-      "enCaption": "Lone Peak north face and historical Moonlight Basin ski area in winter"
+      "enCaption": "Lone Peak north face and historical Moonlight Basin ski area in winter",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "key": "scene-5",

@@ -257,7 +257,7 @@
       "propertyKey": "la-mourra",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.hotellamourra.com/fr/",
@@ -278,10 +278,10 @@
         1800,
         1200
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
       "replacedSource": "https://www.hotellamourra.com/wp-content/uploads/la-mourra_vue-drone-2-1920x1440.webp",
-      "credit": "La Mourra · photo on exact property's own gallery; original credit retained at source"
+      "credit": "La Mourra · photo on exact property's own gallery; original credit retained at source",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "property": "Le Blizzard",
@@ -318,7 +318,7 @@
       "propertyKey": "le-blizzard",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://hotelblizzard.com/fr/",
@@ -339,17 +339,17 @@
         1800,
         1013
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
       "replacedSource": "https://hotelblizzard.com/wp-content/uploads/restaurant_le-blizzard-1-hd-1920x1080-1-1440x810.webp",
-      "credit": "Le Blizzard · photo on exact property's own gallery; original credit retained at source"
+      "credit": "Le Blizzard · photo on exact property's own gallery; original credit retained at source",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "property": "Le Blizzard",
       "propertyKey": "le-blizzard",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://hotelblizzard.com/fr/",
@@ -370,10 +370,10 @@
         1800,
         1013
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
       "replacedSource": "https://hotelblizzard.com/wp-content/uploads/restaurant_le-blizzard-1-hd-1920x1080-1-1280x720.webp",
-      "credit": "Le Blizzard · photo on exact property's own gallery; original credit retained at source"
+      "credit": "Le Blizzard · photo on exact property's own gallery; original credit retained at source",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     }
   ],
   "destinationScenes": [

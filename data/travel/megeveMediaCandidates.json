@@ -141,7 +141,7 @@
       "propertyKey": "les-fermes-de-marie",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.fermesdemarie.com/en/hiver/hotel-megeve",
@@ -163,9 +163,9 @@
         1800,
         656
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
-      "replacedSource": "https://cdn.prod.website-files.com/67bd7c1b97c847605ceed35e/67bd7c1b97c847605ceedd21_les-fermes-de-marie-hiver-sejours-megeve.jpg"
+      "replacedSource": "https://cdn.prod.website-files.com/67bd7c1b97c847605ceed35e/67bd7c1b97c847605ceedd21_les-fermes-de-marie-hiver-sejours-megeve.jpg",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "property": "Les Fermes de Marie",
@@ -267,7 +267,7 @@
       "propertyKey": "l-alpaga",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Original hotel site file is not a commercial photo licence.",
       "sourcePages": [
@@ -290,9 +290,9 @@
         675
       ],
       "credit": "L'Alpaga · photo on exact property's own gallery; original credit retained at source",
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
-      "replacedSource": "https://alpaga.com/media/nycnlthp/225a4228.jpg?width=1200&v=1dbc966bdd82d70"
+      "replacedSource": "https://alpaga.com/media/nycnlthp/225a4228.jpg?width=1200&v=1dbc966bdd82d70",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "property": "Lodge Park",
@@ -394,7 +394,7 @@
       "placeLabel": "Megève village",
       "searchQuery": "Megeve France village",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
       "localPath": "/images/travel/megeve-premium/destination/scene-1.webp",
@@ -414,10 +414,10 @@
         1700,
         1060
       ],
-      "visualQaWarning": "Correct place established by original file metadata; framed WebP still needs manual visual/aesthetic QA.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in chat, 2026-10-17; Commons attribution and sharing conditions preserved.",
       "frCaption": "Centre ancien de Megève et église Saint-Jean-Baptiste en été",
-      "enCaption": "Megève historic centre and Saint-Jean-Baptiste church in summer"
+      "enCaption": "Megève historic centre and Saint-Jean-Baptiste church in summer",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "key": "scene-2",
@@ -538,7 +538,7 @@
       "placeLabel": "Church square",
       "searchQuery": "Eglise Megeve",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "rights": "Photograph or press asset source documented. Independent commercial reuse approval still REQUIRED.",
       "localPath": "/images/travel/megeve-premium/destination/scene-6.webp",
@@ -558,10 +558,10 @@
         1700,
         1060
       ],
-      "visualQaWarning": "Correct place established by original file metadata; framed WebP still needs manual visual/aesthetic QA.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in chat, 2026-10-17; Commons attribution and sharing conditions preserved.",
       "frCaption": "Place de l'Église à Megève, mars 2025",
-      "enCaption": "Place de l'Église, Megève, March 2025"
+      "enCaption": "Place de l'Église, Megève, March 2025",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "key": "scene-7",

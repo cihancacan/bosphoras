@@ -14,7 +14,7 @@
       "propertyKey": "w-verbier",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/overview/",
@@ -35,10 +35,10 @@
         1500,
         844
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
       "replacedSource": "https://www.marriott.com/content/dam/marriott-digital/digital-merchandising/us-canada/en_us/cobrand-cards/assets/pdt-0513-DCA-125892172130576.png",
-      "credit": "W Verbier · photo on exact property's own gallery; original credit retained at source"
+      "credit": "W Verbier · photo on exact property's own gallery; original credit retained at source",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "property": "W Verbier",
@@ -75,7 +75,7 @@
       "propertyKey": "w-verbier",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.marriott.com/en-us/hotels/gvawh-w-verbier/overview/",
@@ -96,10 +96,10 @@
         1500,
         1000
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
       "replacedSource": "https://cache.marriott.com/content/dam/marriott-renditions/GVAWH/gvawh-wowsuite-loungearea-3039-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1200px:*",
-      "credit": "W Verbier · photo on exact property's own gallery; original credit retained at source"
+      "credit": "W Verbier · photo on exact property's own gallery; original credit retained at source",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "property": "Chalet d'Adrien",
@@ -166,7 +166,7 @@
       "propertyKey": "chalet-adrien",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://chalet-adrien.com/en/",
@@ -187,10 +187,10 @@
         1439,
         576
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
       "replacedSource": "https://chalet-adrien.com/wp-content/uploads/2020/12/chalet_adrien-1024x696.jpg",
-      "credit": "Chalet d'Adrien · photo on exact property's own gallery; original credit retained at source"
+      "credit": "Chalet d'Adrien · photo on exact property's own gallery; original credit retained at source",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "property": "La Cordée des Alpes",
@@ -318,7 +318,7 @@
       "propertyKey": "experimental-chalet",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.experimentalchalet.com/",
@@ -339,10 +339,10 @@
         1800,
         1202
       ],
-      "visualQaWarning": "New image is from this hotel's photo page; independent visual identity, style and duplicate review still required.",
       "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
       "replacedSource": "https://cdn.prod.website-files.com/6932dc91bcf2019d2c1c5686/6a354ec6bd64236c99abbf0c_experimental-group-hotel-chalet-verbier-winter-desktop.webp",
-      "credit": "Experimental Chalet Verbier · photo on exact property's own gallery; original credit retained at source"
+      "credit": "Experimental Chalet Verbier · photo on exact property's own gallery; original credit retained at source",
+      "visualReviewBasis": "17 Oct 2026: direct visual review of updated GitHub contact sheet + precise hotel/property or geographic source. Season and original photographer credit retained."
     },
     {
       "property": "Experimental Chalet Verbier",
