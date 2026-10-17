@@ -1,0 +1,37 @@
+name: Travel — precise St Moritz and Spanish Peaks landscapes
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - 'scripts/correct-last-landscape-scenes.py'
+      - '.github/workflows/travel-precise-panorama-fixes.yml'
+permissions:
+  contents: write
+concurrency:
+  group: travel-precise-panorama-fixes
+  cancel-in-progress: false
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12'
+      - run: python -m py_compile scripts/correct-last-landscape-scenes.py
+      - run: python -u scripts/correct-last-landscape-scenes.py
+      - name: Save exact landscape source candidates, Vercel still skipped
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/travel/stMoritzMediaCandidates.json data/travel/bigSkyMediaCandidates.json
+          git add public/images/travel/st-moritz-premium/destination public/images/travel/big-sky-premium/destination
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): authentic St Moritz panorama and Big Sky Spanish Peaks ski scenery [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
