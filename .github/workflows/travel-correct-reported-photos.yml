@@ -1,0 +1,41 @@
+name: Bosphoras correction — targeted official hotel photo replacements
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - 'scripts/replace-targeted-hotel-photos.py'
+      - '.github/workflows/travel-correct-reported-photos.yml'
+permissions:
+  contents: write
+concurrency:
+  group: travel-correct-reported-hotel-photos
+  cancel-in-progress: false
+jobs:
+  correct:
+    runs-on: ubuntu-latest
+    timeout-minutes: 52
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -m py_compile scripts/replace-targeted-hotel-photos.py
+      - run: python -u scripts/replace-targeted-hotel-photos.py
+      - name: Commit accurate property-specific media candidates without a Vercel deployment
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for slug in st-moritz aspen niseko megeve jackson-hole big-sky val-disere verbier; do
+            [ ! -d "public/images/travel/$slug-premium" ] || git add "public/images/travel/$slug-premium"
+          done
+          for key in stMoritz aspen niseko megeve jacksonHole bigSky valDisere verbier; do
+            [ ! -f "data/travel/${key}MediaCandidates.json" ] || git add "data/travel/${key}MediaCandidates.json"
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): replace inaccurate hotel candidate photos with property-gallery assets [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
