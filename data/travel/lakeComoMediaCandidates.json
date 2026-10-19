@@ -185,23 +185,25 @@
       "sourcePages": [
         "https://www.grandhoteltremezzo.com/en/"
       ],
-      "visualQaWarning": "Need real Water-on-the-Water floating pool, existing reflection/pavilion image rejected. Original DJI 0031 photo was incorrectly put on URL denylist by collector.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/grand-hotel-tremezzo/view-3.webp",
-      "downloadUrl": "https://www.grandhoteltremezzo.com/media/ikomnjus/grand_hotel_tremezzo-pools-julius-l1210114.jpg?width=1766&height=1226&format=webp&v=1da398a6417c380",
+      "downloadUrl": "https://www.grandhoteltremezzo.com/media/rxyntdgz/grand_hotel_tremezzo-pools-julius-dji_0031.jpg?width=1825&height=1217&format=webp&v=1da398aa747edb0",
       "sourcePage": "https://www.grandhoteltremezzo.com/en/resort/pools/",
-      "candidateContext": "    ",
-      "credit": "Official hotel photo",
-      "sha256": "57dd89c9b65913ec855910c904fd472696a8426bbd83e4d2f23eda61d29cfa00",
-      "dhash": "0011001000110011000010010100001111110011101101110011111010001001",
-      "bytes": 234768,
+      "candidateContext": "Actual Water-on-the-Water lake floating pool, confirmed image DJI-0031",
+      "credit": "Grand Hotel Tremezzo · official photo",
+      "sha256": "aeacc3b86d77894e86c2f496e37c53b6977e6c6cbfba5eb55cb140c073962a5c",
+      "dhash": "0110110001101100011000000011010001011100011110010110100111010011",
+      "bytes": 346034,
       "originalSize": [
-        1766,
-        1226
+        1825,
+        1217
       ],
       "outputSize": [
-        1729,
+        1800,
         1200
-      ]
+      ],
+      "rejectedSource": "https://www.grandhoteltremezzo.com/media/ikomnjus/grand_hotel_tremezzo-pools-julius-l1210114.jpg?width=1766&height=1226&format=webp&v=1da398a6417c380",
+      "rejectedCandidateContext": "Need real Water-on-the-Water floating pool, existing reflection/pavilion image rejected. Original DJI 0031 photo was incorrectly put on URL denylist by collector."
     },
     {
       "property": "Passalacqua",
@@ -417,16 +419,16 @@
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
       "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Lago_Como_aerial_1.jpg/1920px-Lago_Como_aerial_1.jpg",
+      "rejectedSource": "https://images.pexels.com/photos/32569620/pexels-photo-32569620.jpeg?auto=compress&cs=tinysrgb&w=1800",
       "rejectedCandidateContext": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-1.webp",
-      "downloadUrl": "https://images.pexels.com/photos/32569620/pexels-photo-32569620.jpeg?auto=compress&cs=tinysrgb&w=1800",
-      "sourcePage": "https://www.pexels.com/photo/scenic-view-of-lake-como-in-italy-s-lombardy-region-32569620/",
-      "candidateContext": "Real Lake Como sunlit mountain aerial original photo",
-      "credit": "Earth Photart · Pexels licence",
-      "sha256": "1a8abff73b93bd31543ec97390962bd105c95803487ef9791e644156eff67d8f",
-      "dhash": "1111111111111111010111110100011100100101000011010000110001001001",
-      "bytes": 354566,
+      "downloadUrl": "https://images.pexels.com/photos/36483983/pexels-photo-36483983.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      "sourcePage": "https://www.pexels.com/photo/scenic-view-of-lake-como-surrounded-by-mountains-36483983/",
+      "candidateContext": "Bright Lake Como mountains and blue water by Oskar Gross",
+      "credit": "Oskar Gross · Pexels licence",
+      "sha256": "eb95da8418f957a308521f9f9bb58d6c64a361c97d7acfd495de87e809f27773",
+      "dhash": "0011110001111001011001110010111100000111001001110110011101100100",
+      "bytes": 153098,
       "originalSize": [
         1800,
         1350
