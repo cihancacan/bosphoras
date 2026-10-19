@@ -4,8 +4,8 @@
   "scope": "SOURCE CANDIDATES ONLY; DRAFT FR EN, NOINDEX; NOT A FINISHED 21-PHOTO GUIDE",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 9,
-  "downloadedDestinationCandidates": 5,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 6,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "ownerRightsAuthorization": "Bosphoras operator confirmed rights to use suitable project photos on 2026-10-19. Subject identity, attribution and image-specific publication review still required.",
@@ -184,40 +184,66 @@
       "propertyKey": "hotel-hermitage",
       "key": "view-3",
       "slotIntent": "jardin-d-hiver",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Image inspected and rejected: requires correct premium hotel architecture/lagoon or bright genuinely representative district photo.",
-      "sourcePage": "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo",
-      "candidateContext": "    ",
-      "credit": "Official hotel photo",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "sourcePage": "https://signemagazine.com/lifestyle/hotel-hermitage-monte-carlo-a-belle-epoque-treasure/",
+      "candidateContext": "Hôtel Hermitage winter garden under Eiffel-designed stained glass dome",
+      "credit": "Hotel Hermitage photo via Signé Magazine",
       "rejectedSource": "https://asset.montecarlosbm.com/styles/list_item_short_style_desktop_2x_webp/s3/media/orphea/hh_simple_suite_exclusive_521_22_garden_view_0003.jpg.webp?h=b01f5044&itok=SOf8thB7",
       "rejectedCandidateContext": "    ",
-      "rejectedSourcePage": "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo"
+      "rejectedSourcePage": "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo",
+      "localPath": "/images/travel/monaco-premium/hotel-hermitage/view-3.webp",
+      "downloadUrl": "https://signemagazine.com/wp-content/uploads/2019/09/d7f8f-02-hc3b4tel-hermitage-lobby-eiffel-3.jpg",
+      "sha256": "9e732f44dfcce5a089bf5a226c71640a8d9ee2682d06824e222a2b63ebd99aaa",
+      "dhash": "0110110001001100000101100010101001101001011010010111000001110000",
+      "bytes": 308710,
+      "originalSize": [
+        1280,
+        853
+      ],
+      "outputSize": [
+        1280,
+        853
+      ]
     },
     {
       "property": "Hôtel Métropole Monte-Carlo",
       "propertyKey": "hotel-metropole",
       "key": "view-1",
       "slotIntent": "courtyard",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.metropole.com/"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Image inspected and rejected: requires correct premium hotel architecture/lagoon or bright genuinely representative district photo.",
-      "sourcePage": "https://www.metropole.com/",
-      "candidateContext": "Well-dressed man and woman holding wine glasses, standing on a terrace overlooking a city skyline with domed rooftops at sunset.    ",
-      "credit": "Official hotel photo",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "sourcePage": "https://www.timeout.com/europe/hotels/hotel-metropole-monte-carlo",
+      "candidateContext": "Hôtel Métropole historic sunlit planted courtyard and true façade, architecture, no people",
+      "credit": "Hotel Metropole photograph sourced from Time Out hotel review",
       "rejectedSource": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/699f049192a407b5ca42551c_From%20Metropole-p-1080.avif",
       "rejectedCandidateContext": "Well-dressed man and woman holding wine glasses, standing on a terrace overlooking a city skyline with domed rooftops at sunset.    ",
-      "rejectedSourcePage": "https://www.metropole.com/"
+      "rejectedSourcePage": "https://www.metropole.com/",
+      "localPath": "/images/travel/monaco-premium/hotel-metropole/view-1.webp",
+      "downloadUrl": "https://media.timeout.com/images/106346724/1536/864/image.jpg",
+      "sha256": "1dc0d49f6251cf48c2f5642accd175b0b1b3e1df34ca39dc9720c2afbe0d6036",
+      "dhash": "1001110111011101110011111100111111011011100110111101011111001011",
+      "bytes": 432428,
+      "originalSize": [
+        1536,
+        864
+      ],
+      "outputSize": [
+        1536,
+        864
+      ]
     },
     {
       "property": "Hôtel Métropole Monte-Carlo",
@@ -296,19 +322,32 @@
       "propertyKey": "monte-carlo-bay",
       "key": "view-1",
       "slotIntent": "lagoon",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Image inspected and rejected: requires correct premium hotel architecture/lagoon or bright genuinely representative district photo.",
-      "sourcePage": "https://www.montecarlosbm.com/en/bar-nightclub-monaco/lhippocampe-bar-lagon",
-      "candidateContext": "Lagon    ",
-      "credit": "Official hotel photo",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "sourcePage": "https://www.montecarlosbm.com/en/wellness/monte-carlo-bay-hotel-resort/lagoon-monte-carlo-bay-hotel-resort",
+      "candidateContext": "Official aerial view of Monte-Carlo Bay sand-bottom lagoon and beach access",
+      "credit": "Monte-Carlo Société des Bains de Mer official resort photograph",
       "rejectedSource": "https://asset.montecarlosbm.com/styles/hero_desktop_wide_responsive_webp/s3/media/image/8-%20MONTE%20CARLO%20BAY%20retouche.jpg.webp?VersionId=6Tubwvu3XcExUrYrzM0MTu9yVoyfgCmt&h=ef239dbb&itok=sYksjbgK",
-      "rejectedSourcePage": "https://www.montecarlosbm.com/en/bar-nightclub-monaco/lhippocampe-bar-lagon"
+      "rejectedSourcePage": "https://www.montecarlosbm.com/en/bar-nightclub-monaco/lhippocampe-bar-lagon",
+      "localPath": "/images/travel/monaco-premium/monte-carlo-bay/view-1.webp",
+      "downloadUrl": "https://asset.montecarlosbm.com/styles/hero_image_desktop/s3/media/image/005-MCBAY-SHOOTING-ESPACES-BALNEAIRES-DRONE-aircreative.jpg.jpeg?VersionId=MVWpwMombZZmKiNAUb_hks27sXwTSCps&h=246a840d&itok=_MTEGE1_",
+      "sha256": "888466e26af76db27759763aa3ecf2a66433c0649e6e83c96a68ad51c5f84bb0",
+      "dhash": "1001111111011001110010100110011110010011100100110001011100000110",
+      "bytes": 424092,
+      "originalSize": [
+        1440,
+        750
+      ],
+      "outputSize": [
+        1440,
+        750
+      ]
     },
     {
       "property": "Monte-Carlo Bay Hotel & Resort",
@@ -510,14 +549,31 @@
       "key": "scene-6",
       "label": "Hermitage area and Monte-Carlo skyline",
       "query": "Monaco Hotel Hermitage Casino gardens",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.visitmonaco.com/"
       ],
-      "rights": "Operator authorization noted; retain author and license evidence and review each image manually"
+      "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/monaco-premium/destination/scene-6.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Monaco_Casino_de_Monte_Carlo_Jardin.jpg/1920px-Monaco_Casino_de_Monte_Carlo_Jardin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Casino_de_Monte_Carlo_Jardin.jpg",
+      "candidateContext": "Monaco Casino de Monte Carlo Jardin.jpg",
+      "credit": "Zairon · CC BY-SA 4.0",
+      "sha256": "19197b71eb03f70f1f185be2ac13bfae23d321df5a05fd0e7845f176dc45d8df",
+      "dhash": "1111111111110111001100001111010011010000110100011101000111100100",
+      "bytes": 449190,
+      "originalSize": [
+        1920,
+        1385
+      ],
+      "outputSize": [
+        1664,
+        1200
+      ]
     },
     {
       "key": "scene-7",
