@@ -185,25 +185,25 @@
       "sourcePages": [
         "https://www.grandhoteltremezzo.com/en/"
       ],
-      "visualQaWarning": "REJECTED AFTER VISUAL QA: this is a beautiful land-based garden swimming pool, not the requested Water-on-the-Water floating lake pool. Do not miscaption.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://www.grandhoteltremezzo.com/media/pbqjenz3/grand_hotel_tremezzo-pools-ruben-0g5a6755.jpg?width=1766&height=1226&format=webp&v=1da398aa75b4ea0",
+      "rejectedCandidateContext": "REJECTED AFTER VISUAL QA: this is a beautiful land-based garden swimming pool, not the requested Water-on-the-Water floating lake pool. Do not miscaption.",
       "localPath": "/images/travel/lake-como-premium/grand-hotel-tremezzo/view-3.webp",
-      "downloadUrl": "https://www.grandhoteltremezzo.com/media/pbqjenz3/grand_hotel_tremezzo-pools-ruben-0g5a6755.jpg?width=1766&height=1226&format=webp&v=1da398aa75b4ea0",
+      "downloadUrl": "https://www.grandhoteltremezzo.com/media/rxyntdgz/grand_hotel_tremezzo-pools-julius-dji_0031.jpg?width=1825&height=1217&format=webp&v=1da398aa747edb0",
       "sourcePage": "https://www.grandhoteltremezzo.com/en/resort/pools/",
-      "candidateContext": "    ",
-      "credit": "Official hotel photo",
-      "sha256": "cabd24d6196194cc06e7f9444de79ef4dd823e8ce801b60145dcde87e44d6f0d",
-      "dhash": "1011111100011100000001000000001100110011110100110011101100110010",
-      "bytes": 343018,
+      "candidateContext": "Grand Hotel Tremezzo officially labelled Pools Julius DJI 0031 showing Water-on-the-Water floating lake pool",
+      "credit": "Grand Hotel Tremezzo · official floating pool photograph",
+      "sha256": "aeacc3b86d77894e86c2f496e37c53b6977e6c6cbfba5eb55cb140c073962a5c",
+      "dhash": "0110110001101100011000000011010001011100011110010110100111010011",
+      "bytes": 346034,
       "originalSize": [
-        1766,
-        1226
+        1825,
+        1217
       ],
       "outputSize": [
-        1729,
+        1800,
         1200
-      ],
-      "rejectedSource": "https://www.grandhoteltremezzo.com/media/ikomnjus/grand_hotel_tremezzo-pools-julius-l1210114.jpg?width=1766&height=1226&format=webp&v=1da398a6417c380",
-      "rejectedCandidateContext": "REJECTED: visual dominated by upside-down building reflection in water, fails distinctive Water-on-the-Water floating pool subject and brand premium clarity."
+      ]
     },
     {
       "property": "Passalacqua",
@@ -418,25 +418,25 @@
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "REJECTED AFTER VISUAL QA: cloudy dusk, low contrast and dark brown hillsides unsuitable as premium Lake Como destination hero.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Panorama_Lago_di_Como.jpg/1920px-Panorama_Lago_di_Como.jpg",
+      "rejectedCandidateContext": "REJECTED AFTER VISUAL QA: cloudy dusk, low contrast and dark brown hillsides unsuitable as premium Lake Como destination hero.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-1.webp",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Panorama_Lago_di_Como.jpg/1920px-Panorama_Lago_di_Como.jpg",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panorama_Lago_di_Como.jpg",
-      "candidateContext": "Panorama Lago di Como.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Lago_di_Como_panorama.jpg/1920px-Lago_di_Como_panorama.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lago_di_Como_panorama.jpg",
+      "candidateContext": "Lago di Como panorama.jpg",
       "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
-      "sha256": "38a70b0a87278a1566451b214d99cfd176525b12a6860854e329354c3d15a595",
-      "dhash": "1000011011000110111000111100001001100010000110001001101110101000",
-      "bytes": 460038,
+      "sha256": "eedc47bd71e3d73e0c28e54ca98238e94a51126295096835e9f3c09b46459fa0",
+      "dhash": "0010001100001111000111010100011011010110010101100000011100000100",
+      "bytes": 423344,
       "originalSize": [
         1920,
-        1280
+        1440
       ],
       "outputSize": [
-        1800,
+        1600,
         1200
-      ],
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Panorama_del_lago_di_Como.jpg/1920px-Panorama_del_lago_di_Como.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedCandidateContext": "REJECTED: hazy dark high-elevation panorama with mostly barren mountain foreground; find rich daylight turquoise water and green mountains suitable for hero."
+      ]
     },
     {
       "key": "scene-2",
