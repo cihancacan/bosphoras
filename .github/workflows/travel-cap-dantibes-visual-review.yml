@@ -1,0 +1,47 @@
+name: Travel Cap d'Antibes - actual 21 photo visual review, no Vercel
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: ['.github/workflows/travel-cap-dantibes-visual-review.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'Pillow>=10,<12'
+      - name: Inspect genuine downloaded files through private GitHub QA logs
+        run: |
+          python - <<'PY'
+          import base64,io,json,math
+          from pathlib import Path
+          from PIL import Image,ImageOps,ImageDraw,ImageFont
+          m=json.loads(Path('data/travel/capDAntibesMediaCandidates.json').read_text())
+          items=m['hotels']+m['destinationScenes']
+          assert len(items)==21
+          try: font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',18)
+          except OSError: font=ImageFont.load_default()
+          for page in range(math.ceil(len(items)/6)):
+              subset=items[page*6:page*6+6]
+              board=Image.new('RGB',(1200,760),(248,247,245));draw=ImageDraw.Draw(board)
+              for i,x in enumerate(subset):
+                  col=i%3;row=i//3;left=12+col*395;top=8+row*375
+                  file=Path('public'+x['localPath'])
+                  assert file.exists(),str(file)
+                  with Image.open(file) as im:
+                      image=ImageOps.fit(im.convert('RGB'),(378,264),method=Image.Resampling.LANCZOS)
+                  board.paste(image,(left,top))
+                  draw.text((left,top+269),(x.get('propertyKey') or 'destination')[:31],font=font,fill=(19,40,51))
+                  draw.text((left,top+301),x['key']+' '+str(x.get('outputSize'))[:20],font=font,fill=(19,40,51))
+                  draw.text((left,top+331),(x.get('credit') or '')[:33],font=font,fill=(35,68,78))
+              out=io.BytesIO();board.save(out,'JPEG',quality=71,optimize=True)
+              print('CAP_ANTIBES_PHOTOS_START_'+str(page+1))
+              print(base64.b64encode(out.getvalue()).decode())
+              print('CAP_ANTIBES_PHOTOS_END_'+str(page+1))
+          print('Photo review only, not automatic approvals')
+          PY
