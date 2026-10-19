@@ -59,7 +59,31 @@ EXACT_HOTELS={
   ("https://pics.tui.com/pics/pics1600x1200/tui/7/748a3e47d24de3fb1d75c875389b1039_ocpprod.jpg",
   "https://www.tui.com/hotels/mont-cervin-palace-26481/hotelinformation/","Mont Cervin Palace winter exterior")],
 }
-EXACT_SCENES={
+EXACT_# Additional publisher-identified resort photographs with distinct subjects:
+EXACT_HOTELS.update({
+ "mont-cervin-palace/view-2":[
+  ("https://assets.cntraveller.in/photos/60ba066bee63ec1fe6ee8308/master/w_1600%2Cc_limit/3.Mont-Cervin-Palace.jpg",
+   "https://www.cntraveller.in/story/your-guide-to-switzerlands-prettiest-ski-resort/",
+   "Mont Cervin Palace panoramic Matterhorn Duplex Suite living room"),
+  ("https://www.thehotelguru.com/_images/2f/4b/2f4b8d0aa386d63f44a0f043ef4b6881/s1654x900.jpg",
+   "https://www.thehotelguru.com/hotel/mont-cervin-palace-zermatt",
+   "Mont Cervin Palace suite living area with Matterhorn outlook")],
+ "mont-cervin-palace/view-3":[
+  ("https://cdn.oxfordski.com/media/72071/pool-resized-2.png?quality=85&scale=downscaleonly&width=1500",
+   "https://www.oxfordski.com/luxury-ski-chalets-hotels/switzerland/zermatt/mont-cervin-palace/",
+   "Mont Cervin Palace authentic indoor spa swimming pool with arched bridge"),
+  ("https://www.redsavannah.com/-/media/countries/switzerland/accommodation/mont-cervin-palace/mont-cervin-palace-switzerland-pool.jpg?cropregion=36%2C374%2C1800%2C1141&h=610&hash=AD1FB8454B7F40EE8D8394F1970115E2&udi=1&w=1400",
+   "https://www.redsavannah.com/europe/switzerland/hotels/mont-cervin-palace",
+   "Mont Cervin Palace indoor pool with wooden beams and natural light")],
+})
+EXACT_SCENES.update({
+ "scene-9":[
+  ("https://theplanetd.com/images/5-lakes-hike-zermatt-Switzerland-Stellisee-Lake-1536x1024.jpg",
+   "https://theplanetd.com/5-lakes-hike-zermatt/",
+   "Stellisee reflecting Matterhorn in warm sunrise light, travel photographer")
+ ],
+})
+SCENES={
  "scene-5":[("https://commons.wikimedia.org/wiki/Special:Redirect/file/Panorama_vom_Gornergrat-Zermatt.jpg?width=1600",
   "https://commons.wikimedia.org/wiki/File:Panorama_vom_Gornergrat-Zermatt.jpg",
   "Gornergrat panorama over Monte Rosa mountain ridge")],
