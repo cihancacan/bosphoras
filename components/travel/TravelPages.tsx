@@ -13,6 +13,7 @@ import { jacksonHoleDraftFaq } from '@/data/travel/jacksonHoleDraftFaq';
 import { bigSkyDraftFaq } from '@/data/travel/bigSkyDraftFaq';
 import { valDisereDraftFaq } from '@/data/travel/valDisereDraftFaq';
 import { verbierDraftFaq } from '@/data/travel/verbierDraftFaq';
+import { gstaadDraftFaq } from '@/data/travel/gstaadDraftFaq';
 import { alpineAvailablePhotoPathsByCity } from '@/data/travel/alpinePremiumEditorial';
 import { maldivesFaq } from '@/data/travel/maldivesFaq';
 import { losCabosFaq } from '@/data/travel/losCabosFaq';
@@ -163,7 +164,7 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     title: pageTitle + ' | Bosphoras Luxury Stays',
     description,
     alternates: { canonical, ...(Object.keys(languageAlternates).length ? { languages: languageAlternates } : {}) },
-    openGraph: { title: pageTitle, description: (featureGuide?.slug === 'st-moritz'||featureGuide?.slug==='aspen'||featureGuide?.slug==='niseko'||featureGuide?.slug==='megeve'||featureGuide?.slug==='jackson-hole'||featureGuide?.slug==='big-sky'||featureGuide?.slug==='val-disere'||featureGuide?.slug==='verbier'||featureGuide?.slug === 'koh-samui'||featureGuide?.slug==='maldives'||featureGuide?.slug==='los-cabos'||featureGuide?.slug==='saint-barthelemy'||featureGuide?.slug==='porto-cervo') ? description : t.value, url: canonical, siteName: 'Bosphoras Luxury Stays', type: 'website' },
+    openGraph: { title: pageTitle, description: (featureGuide?.slug === 'st-moritz'||featureGuide?.slug==='aspen'||featureGuide?.slug==='niseko'||featureGuide?.slug==='megeve'||featureGuide?.slug==='jackson-hole'||featureGuide?.slug==='big-sky'||featureGuide?.slug==='val-disere'||featureGuide?.slug==='verbier'||featureGuide?.slug==='gstaad'||featureGuide?.slug === 'koh-samui'||featureGuide?.slug==='maldives'||featureGuide?.slug==='los-cabos'||featureGuide?.slug==='saint-barthelemy'||featureGuide?.slug==='porto-cervo') ? description : t.value, url: canonical, siteName: 'Bosphoras Luxury Stays', type: 'website' },
     robots: { index: ready, follow: true, 'max-image-preview': 'large' },
   };
 }
@@ -262,7 +263,7 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
   const isCourchevel = kohGuide?.slug==='courchevel-1850' && (locale==='fr'||locale==='en');
   const isMustique = kohGuide?.slug==='mustique' && (locale==='fr'||locale==='en');
   const isAlpine = Boolean(kohGuide && Object.prototype.hasOwnProperty.call(alpineAvailablePhotoPathsByCity,kohGuide.slug));
-  const alpineFaq = kohGuide?.slug==='st-moritz'?stMoritzDraftFaq:kohGuide?.slug==='aspen'?aspenDraftFaq:kohGuide?.slug==='megeve'?megeveDraftFaq:kohGuide?.slug==='jackson-hole'?jacksonHoleDraftFaq:kohGuide?.slug==='big-sky'?bigSkyDraftFaq:kohGuide?.slug==='val-disere'?valDisereDraftFaq:kohGuide?.slug==='verbier'?verbierDraftFaq:nisekoDraftFaq;
+  const alpineFaq = kohGuide?.slug==='st-moritz'?stMoritzDraftFaq:kohGuide?.slug==='aspen'?aspenDraftFaq:kohGuide?.slug==='megeve'?megeveDraftFaq:kohGuide?.slug==='jackson-hole'?jacksonHoleDraftFaq:kohGuide?.slug==='big-sky'?bigSkyDraftFaq:kohGuide?.slug==='val-disere'?valDisereDraftFaq:kohGuide?.slug==='verbier'?verbierDraftFaq:kohGuide?.slug==='gstaad'?gstaadDraftFaq:nisekoDraftFaq;
   const isPortoCervo = kohGuide?.slug==='porto-cervo' && (locale==='fr'||locale==='en');
   // Unapproved alpine hotel and destination photos are excluded from JSON-LD as well as the UI.
   const clearedImageSet = kohGuide && Object.prototype.hasOwnProperty.call(alpineAvailablePhotoPathsByCity,kohGuide.slug)
