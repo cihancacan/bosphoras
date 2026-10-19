@@ -143,14 +143,13 @@
       "key": "view-2",
       "slotIntent": "Bright real hotel room with terrace and accurately identified category",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://capdantibes-beachhotel.com/en"
       ],
       "rejectedSource": "https://www.limetravel.se/app/uploads/2018/12/cap_dantibes_beach_hotel_design_suite_with_terrace.jpg",
       "rejectedCandidateContext": "REPLACE: image dated 2018 is older than the Cap d'Antibes Beach Hotel 2023 Bernard Dubois redesign; no historical room photo in current luxury guide.",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/cap-dantibes-beach-hotel/view-2.webp",
       "downloadUrl": "https://www.bernarddubois.com/wp-content/uploads/2023/05/CABH_BD13-1920x1280.jpg",
       "sourcePage": "https://www.bernarddubois.com/projects/beach-hotel/",
@@ -166,7 +165,12 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "frCaption": "Cap d’Antibes Beach Hotel — chambre rénovée par Bernard Dubois, mobilier en bois sombre et lumière filtrée par les voilages",
+      "enCaption": "Cap d’Antibes Beach Hotel — Bernard Dubois renovated guestroom with bespoke dark-wood furniture and soft daylight through curtains",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual locally downloaded 1800x1200 WebP inspected in GitHub run 39317838002: current room photographed by the hotel's 2023 redesign architect Bernard Dubois, dark bespoke furniture, fresh upholstery and generous diffused daylight. Distinct from other selected photographs; pre-2023 room image revoked.",
+      "ownerRightsAuthorization": "Bosphoras operator general photo-use authorization, October 2026; respect architect/studio source, underlying photographer's credits and any separate licensing conditions."
     },
     {
       "property": "Cap d’Antibes Beach Hotel",
