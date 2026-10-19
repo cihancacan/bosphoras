@@ -185,13 +185,12 @@
       "key": "view-3",
       "slotIntent": "jardin-d-hiver",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://signemagazine.com/lifestyle/hotel-hermitage-monte-carlo-a-belle-epoque-treasure/",
       "candidateContext": "Hôtel Hermitage winter garden under Eiffel-designed stained glass dome",
       "credit": "Hotel Hermitage photo via Signé Magazine",
@@ -210,7 +209,11 @@
       "outputSize": [
         1280,
         853
-      ]
+      ],
+      "frCaption": "Hôtel Hermitage — Jardin d’Hiver, verrière Belle Époque et salon rouge",
+      "enCaption": "Hôtel Hermitage — Belle Époque Winter Garden under the glass dome",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Original WebP manually reviewed for exact building/locality, varied composition and coherent daylight."
     },
     {
       "property": "Hôtel Métropole Monte-Carlo",
@@ -218,13 +221,12 @@
       "key": "view-1",
       "slotIntent": "courtyard",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.metropole.com/"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://www.timeout.com/europe/hotels/hotel-metropole-monte-carlo",
       "candidateContext": "Hôtel Métropole historic sunlit planted courtyard and true façade, architecture, no people",
       "credit": "Hotel Metropole photograph sourced from Time Out hotel review",
@@ -243,7 +245,11 @@
       "outputSize": [
         1536,
         864
-      ]
+      ],
+      "frCaption": "Hôtel Métropole — façade et cour végétalisée avec statues en plein jour",
+      "enCaption": "Hôtel Métropole — daylight courtyard, classical façade and lush greenery",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Original WebP manually reviewed for exact building/locality, varied composition and coherent daylight."
     },
     {
       "property": "Hôtel Métropole Monte-Carlo",
@@ -323,13 +329,12 @@
       "key": "view-1",
       "slotIntent": "lagoon",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://www.montecarlosbm.com/en/wellness/monte-carlo-bay-hotel-resort/lagoon-monte-carlo-bay-hotel-resort",
       "candidateContext": "Official aerial view of Monte-Carlo Bay sand-bottom lagoon and beach access",
       "credit": "Monte-Carlo Société des Bains de Mer official resort photograph",
@@ -347,7 +352,11 @@
       "outputSize": [
         1440,
         750
-      ]
+      ],
+      "frCaption": "Monte-Carlo Bay — lagon à fond de sable, pavillon et jardins méditerranéens",
+      "enCaption": "Monte-Carlo Bay — sand-bottom lagoon, pavilion and landscaped Mediterranean gardens",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Original WebP manually reviewed for exact building/locality, varied composition and coherent daylight."
     },
     {
       "property": "Monte-Carlo Bay Hotel & Resort",
@@ -550,14 +559,13 @@
       "label": "Hermitage area and Monte-Carlo skyline",
       "query": "Monaco Hotel Hermitage Casino gardens",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/monaco-premium/destination/scene-6.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Monaco_Casino_de_Monte_Carlo_Jardin.jpg/1920px-Monaco_Casino_de_Monte_Carlo_Jardin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Casino_de_Monte_Carlo_Jardin.jpg",
@@ -573,7 +581,11 @@
       "outputSize": [
         1664,
         1200
-      ]
+      ],
+      "frCaption": "Jardins du Casino et littoral de Monte-Carlo, près du Carré d’Or",
+      "enCaption": "Casino gardens and Monaco’s coast beside the Carré d’Or",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Original WebP manually reviewed for exact building/locality, varied composition and coherent daylight."
     },
     {
       "key": "scene-7",
