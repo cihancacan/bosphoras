@@ -80,19 +80,18 @@
       "propertyKey": "gstaad-palace",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.palace.ch/en/",
         "https://www.palace.ch/en/data-facts-and-figures"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
       "localPath": "/images/travel/gstaad-premium/gstaad-palace/view-3.webp",
       "downloadUrl": "https://media.tatler.com/photos/64ae821d2d2f64fb4d90b470/master/w_1600%2Cc_limit/Travel_120723_Copyright%2520Gstaad%2520Palace_Indoor%2520Pool.jpg",
       "sourcePage": "https://www.tatler.com/article/forget-st-tropez-why-gstaad-is-the-most-glamorous-summer-hotspot",
       "candidateContext": "Gstaad Palace true refurbished indoor pool, original hotel photo credited",
-      "credit": "Gstaad Palace hotel photograph sourced from attributed travel publisher",
+      "credit": "Gstaad Palace · photographie de l'établissement reproduite par Tatler ; photographe original non précisé",
       "sha256": "1302f3679674e6c4c667184b838e8acbe312089ea1198187412ec7758ed1f142",
       "bytes": 310374,
       "originalSize": [
@@ -102,7 +101,12 @@
       "outputSize": [
         1600,
         1067
-      ]
+      ],
+      "frCaption": "Gstaad Palace — piscine intérieure rénovée, poutres en bois et panorama enneigé",
+      "enCaption": "Gstaad Palace — renovated indoor pool with timber ceiling and snow-covered garden view",
+      "ownerRightsAuthorization": "Bosphoras operator confirms use of hotel images, 2026-10-19",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual 1600px WebP inspected: genuine hotel pool, blue water, timber structure, outdoor snow and two swimmers; credit/source verified"
     },
     {
       "property": "The Alpina Gstaad",
