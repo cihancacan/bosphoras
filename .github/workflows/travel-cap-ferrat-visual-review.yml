@@ -1,0 +1,51 @@
+name: Travel Cap Ferrat — actual 13 image visual review (GitHub only)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: ['.github/workflows/travel-cap-ferrat-visual-review.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  create_inspection_previews:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'Pillow>=10,<12'
+      - name: Log compact genuine-image montages for human editorial review
+        run: |
+          python - <<'PY'
+          import base64,io,json,math
+          from pathlib import Path
+          from PIL import Image,ImageOps,ImageDraw,ImageFont
+          manifest=json.loads(Path('data/travel/saintJeanCapFerratMediaCandidates.json').read_text())
+          pending=[i for i in manifest['hotels']+manifest['destinationScenes'] if not i.get('visuallyVerified')]
+          try:
+              font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',17)
+          except OSError: font=ImageFont.load_default()
+          assert len(pending)>=1
+          for section in range(math.ceil(len(pending)/5)):
+              subset=pending[section*5:section*5+5]
+              img=Image.new('RGB',(1200,730),(246,244,240))
+              draw=ImageDraw.Draw(img)
+              for n,s in enumerate(subset):
+                  col=n%3;row=n//3
+                  x=12+col*395;y=12+row*355
+                  p=Path('public'+s['localPath'])
+                  assert p.exists(),str(p)
+                  with Image.open(p) as original:
+                      photo=ImageOps.fit(original.convert('RGB'),(375,260),method=Image.Resampling.LANCZOS)
+                  img.paste(photo,(x,y))
+                  draw.text((x+2,y+266),(s.get('propertyKey') or 'destination')[:28],font=font,fill=(16,31,36))
+                  draw.text((x+2,y+295),s['key']+'  '+str(s.get('outputSize',''))[:20],font=font,fill=(32,51,58))
+                  draw.text((x+2,y+322),'SOURCE: '+str(s.get('credit',''))[:31],font=font,fill=(40,64,73))
+              buf=io.BytesIO();img.save(buf,'JPEG',quality=69,subsampling=2,optimize=True)
+              encoded=base64.b64encode(buf.getvalue()).decode()
+              print('PHOTO_REVIEW_START_'+str(section+1))
+              print(encoded)
+              print('PHOTO_REVIEW_END_'+str(section+1))
+          print('PHOTO_REVIEW_COMPOSITIONS',len(pending),'pending photos, not automatically approved.')
+          PY
