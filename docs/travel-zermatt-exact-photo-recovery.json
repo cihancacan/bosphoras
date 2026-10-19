@@ -1,20 +1,14 @@
 {
   "saved": [
     {
-      "slot": "destination/scene-7",
-      "bytes": 287240,
-      "source": "https://commons.wikimedia.org/wiki/File:Swiss_Alps.jpg",
+      "slot": "destination/scene-3",
+      "bytes": 213842,
+      "source": "https://commons.wikimedia.org/wiki/File:Bahnhofstrasse_(Zermatt)_25.jpg",
       "original_size": [
         1920,
         1440
       ]
     }
   ],
-  "failure_details": [
-    {
-      "slot": "destination/scene-3",
-      "source": "https://www.derbyzermatt.ch/assets/Images/64846748-E13E-44BD-8B6D-FA207A874046-v2__FocusFillWzY0MCw1MTIsIngiLDY0XQ.jpeg",
-      "error": "Too small or wrong aspect: (640, 512)"
-    }
-  ]
+  "failure_details": []
 }
