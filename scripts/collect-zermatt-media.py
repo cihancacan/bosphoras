@@ -237,6 +237,9 @@ def main():
   if group not in OFFICIAL:continue
   sources=OFFICIAL[group].get(key,[])
   options=[(100,url,source,caption,"Published hotel photograph; identity and rights still QA gated") for url,source,caption in EXACT_HOTELS.get(group+"/"+key,[])]
+  if options and candidate(item,options,used_urls,digests):
+   changed=True
+   continue
   if group=="mont-cervin-palace" and key=="view-1":
    options.extend(commons_images("Mont Cervin Palace Zermatt hotel 2019",("mont cervin palace",)))
   for source in sources:
@@ -248,6 +251,9 @@ def main():
  for item in scenes:
   query,terms=SCENES[item["key"]]
   options=[(100,url,source,caption,"Named Commons landscape; still QA gated") for url,source,caption in EXACT_SCENES.get(item["key"],[])]
+  if options and candidate(item,options,used_urls,digests):
+   changed=True
+   continue
   options.extend(commons_images(query,terms))
   if not options:
    fallback={
