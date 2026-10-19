@@ -14,4 +14,4 @@ Les photographies récemment remplacées restent rouges tant qu'elles n'ont pas 
 - [Big Sky](big-sky.md) — 21/21 fichiers candidats, 2 alertes ; [ouvrir l'image seule](big-sky.jpg)
 - [Val d'Isère](val-disere.md) — 21/21 fichiers candidats, 2 alertes ; [ouvrir l'image seule](val-disere.jpg)
 - [Verbier](verbier.md) — 21/21 fichiers candidats, 2 alertes ; [ouvrir l'image seule](verbier.jpg)
-- [Saint-Jean-Cap-Ferrat](saint-jean-cap-ferrat.md) — 21/21 fichiers candidats, 17 alertes ; [ouvrir l'image seule](saint-jean-cap-ferrat.jpg)
+- [Saint-Jean-Cap-Ferrat](saint-jean-cap-ferrat.md) — 21/21 fichiers candidats, 13 alertes ; [ouvrir l'image seule](saint-jean-cap-ferrat.jpg)
