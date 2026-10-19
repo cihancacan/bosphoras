@@ -11,11 +11,17 @@ ASSETS={
  'destination/scene-3':[
   ('https://commons.wikimedia.org/wiki/Special:Redirect/file/Bahnhofstrasse_%28Zermatt%29_25.jpg?width=1600',
    'https://commons.wikimedia.org/wiki/File:Bahnhofstrasse_(Zermatt)_25.jpg',
-   'Bahnhofstrasse in Zermatt · 2022 original photo by Abxbay, Creative Commons')],
+   'Bahnhofstrasse in Zermatt · 2022 original photo by Abxbay, Creative Commons'),
+  ('https://commons.wikimedia.org/wiki/Special:Redirect/file/Bahnhofstrasse_%28Zermatt%29_08.jpg?width=1600',
+   'https://commons.wikimedia.org/wiki/File:Bahnhofstrasse_(Zermatt)_08.jpg',
+   'Zermatt Bahnhofstrasse 2022 photo by Abxbay, Creative Commons')],
  'destination/scene-6':[
   ('https://www.riffelalp.com/fileadmin/documents/riffelalp.ch/images/restaurant-bar/Al_Bosco/Al_Bosco_hiver_2.jpg',
    'https://www.riffelalp.com/de/kulinarik/ristorante-al-bosco/',
-   'Riffelalp Al Bosco snowy terrace with Matterhorn and winter sun, official resort')],
+   'Riffelalp Al Bosco snowy terrace with Matterhorn and winter sun, official resort'),
+  ('https://www.riffelalp.com/fileadmin/documents/riffelalp.ch/images/galeries/Bar_2_222m/Bar_2_222m__5_.jpg',
+   'https://www.riffelalp.com/de/kulinarik/bar-2222m/',
+   'Riffelalp Resort sunshine and snow from panoramic mountain bar terrace')],
  'destination/scene-7':[
   ('https://commons.wikimedia.org/wiki/Special:Redirect/file/Swiss_Alps.jpg?width=1600',
    'https://commons.wikimedia.org/wiki/File:Swiss_Alps.jpg',
@@ -31,9 +37,6 @@ ASSETS={
   ('https://i0.wp.com/onholidaysagain.com/wp-content/uploads/2020/06/Balade-%C3%A0-Zermatt-et-vue-sur-le-Cervin-scaled.jpg?resize=1536%2C1002&ssl=1',
    'https://onholidaysagain.com/europe/suisse/week-end-a-zermatt-que-faire/',
    'Historic timber chalets of Zermatt with Matterhorn in bright sunshine')],
- 'destination/scene-3':[
-  ('https://www.derbyzermatt.ch/assets/Images/64846748-E13E-44BD-8B6D-FA207A874046-v2__FocusFillWzY0MCw1MTIsIngiLDY0XQ.jpeg',
-   'https://www.derbyzermatt.ch/','Winter evening on Bahnhofstrasse; requires resolution check')],
  'destination/scene-5':[
   ('https://commons.wikimedia.org/wiki/Special:Redirect/file/Panorama_vom_Gornergrat-Zermatt.jpg?width=1600',
    'https://commons.wikimedia.org/wiki/File:Panorama_vom_Gornergrat-Zermatt.jpg',
