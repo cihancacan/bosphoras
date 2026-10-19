@@ -1,10 +1,7 @@
 name: Travel Saint Jean Cap Ferrat - Photo Source Collection
 on:
-  push:
-    branches: [feature/luxury-travel-seo-destinations-20261012]
-    paths:
-      - scripts/collect-saint-jean-cap-ferrat-media.py
-      - .github/workflows/travel-saint-jean-cap-ferrat-media.yml
+  # Manual fallback only: primary photo collector workflow handles push events
+  # to avoid duplicate GitHub runner jobs and competing writes to one manifest.
   workflow_dispatch:
 permissions:
   contents: write

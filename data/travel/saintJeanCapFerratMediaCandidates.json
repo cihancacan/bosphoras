@@ -4,7 +4,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 7,
+  "downloadedDestinationCandidates": 6,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "ownerRightsAuthorization": "Bosphoras operator authorizes appropriate photos for this project, 19 Oct 2026. Keep exact photographic source and credits; verify image identity and permitted reuse per file.",
@@ -476,31 +476,16 @@
       "key": "scene-5",
       "label": "Port Saint-Jean-Cap-Ferrat village harbour",
       "query": "Port Saint Jean Cap Ferrat harbor",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Backlit_view_of_the_complete_French_Riviera.jpg/1920px-Backlit_view_of_the_complete_French_Riviera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Hôtel_La_voile_d'Or_Saint-Jean-Cap-Ferrat.jpg",
-      "candidateContext": "File:Hôtel La voile d'Or Saint-Jean-Cap-Ferrat.jpg",
-      "credit": "Aeroceanaute · CC BY-SA 4.0",
-      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-5.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/H%C3%B4tel_La_voile_d%27Or_Saint-Jean-Cap-Ferrat.jpg/1920px-H%C3%B4tel_La_voile_d%27Or_Saint-Jean-Cap-Ferrat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sha256": "1ab625fa5e7877b87613a0fc123867e02c064c4de4e2aef6be1cfd375dea0496",
-      "dhash": "0000000100010110011101001111110011011000001111001000010110110101",
-      "bytes": 427424,
-      "originalSize": [
-        1920,
-        1320
-      ],
-      "outputSize": [
-        1745,
-        1200
-      ]
+      "visualQaWarning": "Image not sufficiently identified as Saint-Jean marina; replace with Commons exact port photograph",
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/H%C3%B4tel_La_voile_d%27Or_Saint-Jean-Cap-Ferrat.jpg/1920px-H%C3%B4tel_La_voile_d%27Or_Saint-Jean-Cap-Ferrat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "Photo title identifies Hôtel La Voile d’Or, not a confirmed view of the Saint-Jean marina"
     },
     {
       "key": "scene-6",

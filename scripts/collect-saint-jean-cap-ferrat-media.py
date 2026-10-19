@@ -26,12 +26,24 @@ lib.HOTEL_DIRECT={
 # Geographically exact original photographs, each linked to its genuine source.
 # A fetched image remains UNAPPROVED pending visual, source and rights QA.
 lib.DIRECT_LANDSCAPES={
- "scene-1":[(98,
+ "scene-1":[(100,
+   "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/73/53/16921929.jpg",
+   "https://www.explorenicecotedazur.com/fiche/cap-ferrat/",
+   "Actual Cap-Ferrat headland and peninsula coastline with real lighthouse visible",
+   "Nice Côte d’Azur tourist office"),(98,
    "https://www.explorenicecotedazur.com/content/uploads/2023/07/vue-aerienne-saint-jean-cap-ferrat-scaled.jpg",
    "https://www.explorenicecotedazur.com/en/saint-jean-cap-ferrat/",
    "Actual Saint-Jean-Cap-Ferrat peninsula from above, bay and harbour visible",
    "Nice Côte d'Azur Tourism Board")],
- "scene-2":[(95,
+ "scene-2":[(100,
+   "https://yeslondonmagazine.com/images/2024/07/03/IMG_0898_large.png",
+   "https://yeslondonmagazine.com/travel/grand-hotel-du-cap-ferrat-timeless-luxury-on-the-french-riviera",
+   "Identifiable Grand-Hôtel du Cap-Ferrat exterior among pines and Club Dauphin below",
+   "Yes London Magazine · Grand-Hôtel Cap-Ferrat resort aerial"),(98,
+   "https://bynder.onthebeach.co.uk/cdn-cgi/image/width%3D1400%2Cquality%3D80%2Cfit%3Dcover%2Cformat%3Dauto/m/5cf6b632057f899/original/Grand-Hotel-du-Cap-Ferrat-A-Four-Seasons-Hotel-General-view-12.jpg",
+   "https://www.onthebeach.ie/hotels/france/cote-dazur/nice/grand-hotel-du-cap-ferrat-a-four-seasons-hotel",
+   "Grand-Hôtel du Cap-Ferrat documented coastal pool viewed from above",
+   "On the Beach hotel media"),(95,
    "https://www.gordonweddingfilms.com/wp-content/uploads/2024/10/10_Wedding-Cap-Ferrat-Four-Seasons.jpg",
    "https://www.gordonweddingfilms.com/wedding-videographer-grand-hotel-four-seasons-cap-ferrat/",
    "Overhead photograph of Club Dauphin pool at the rocky Grand-Hôtel Cap-Ferrat coast",
@@ -39,6 +51,7 @@ lib.DIRECT_LANDSCAPES={
 }
 # The Commons file page supplies exact place, photographer, licence and geolocation;
 # prefer its own thumbnail over an unverifiable generic resort photograph.
+lib.DIRECT_LANDSCAPES["scene-5"]=lib.commons_exact("Port de Saint-Jean Cap-Ferrat.jpg")
 lib.DIRECT_LANDSCAPES["scene-6"]=lib.commons_exact("Plage de Passable.jpg")
 lib.DIRECT_LANDSCAPES["scene-7"]=lib.commons_exact("Cap-Ferrat lighthouse from east.jpg")
 # Four Seasons does not allow the collector to scrape its website (HTTP 403).
