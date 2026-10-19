@@ -37,3 +37,13 @@
 - Keep FR `/travel/destinations/monaco` and EN `/en/travel/destinations/monaco` **noindex**, with equivalent curated hotels routes.
 - JSON-LD Article, ListItem hotel names and FAQ answers; no invented live Wink rates, bookable times or hotel distribution permission.
 - Do not modify production, real estate CRM, transfers or Wink. No Preview until the next agreed batch passes QA.
+
+## Final 21-photo QA — 19 October 2026
+
+- **21/21 source-backed WebP files individually inspected and approved**: 12 hotel images (3 distinct frames per named hotel) and 9 geographically identified Monaco views. Approved asset metadata is persisted at `data/travel/monacoMediaCandidates.json` with original links, credit, image hash, WebP path, flags and precise FR/EN captions.
+- Photo slots include: Hôtel de Paris exterior, Diamond Suite Garnier terrace, Bar Américain; Hermitage exterior, Diamond Suite, glass-domed Jardin d’Hiver; Hôtel Métropole planted courtyard, suite living room, Odyssey pool; Monte-Carlo Bay sand-bottom lagoon, gardens/sea outlook, resort pools and coast.
+- Destination slots include: Casino façade and mirror fountain; Port Hercule during **Monaco Yacht Show 2017**; the Prince’s Palace; Larvotto beachfront; Fontvieille marina; Casino gardens; Japanese Garden; Oceanographic Museum; Mareterra shoreline.
+- All selected imagery is location-specific and visually different. Rejected earlier photographs (construction cranes, outdated archival Casino view, crowded seafront, hotel couples blocking property views, lifestyle close-ups, duplicates) remain out of the active manifest and site.
+- **Age/provenance caveats:** Port Hercule photograph is specifically from the 2017 Yacht Show, not a view of 2026 permanent berthing; Casino Square landscaping may have changed since the selected source photograph. Do not claim either photo shows exact current arrangements. General Bosphoras operator photo authorization is recorded; underlying originator credits and source pages remain attached.
+- Branch-only internal FR/EN guide registration: `data/travel/monacoGuide.ts` and `data/travel/monacoPremiumEditorial.ts` with photo whitelist and `components/travel/TravelPages.tsx` FAQ/Article JSON-LD. Image approvals do **not** authorize indexing or promotion by themselves: `approvedDestinationSlugs` remains empty and the route remains **noindex**.
+- Next step: pass Monaco final GitHub Actions TypeScript/editorial/media QA, then include the staged destination in one coordinated ten-destination Preview. **Do not trigger a standalone Monaco Vercel build or promote production.**
