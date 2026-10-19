@@ -1,6 +1,6 @@
 # Saint-Jean-Cap-Ferrat — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 20/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 21/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Saint-Jean-Cap-Ferrat](saint-jean-cap-ferrat.jpg)
 
@@ -26,4 +26,4 @@
 | 18 | Source — scene-6 | [Source](https://commons.wikimedia.org/wiki/File:Plage_de_Passable.jpg) · Plage de Passable.jpg| Candidate |
 | 19 | Source — scene-7 | [Source](https://commons.wikimedia.org/wiki/File:France-002563_-_Cap_Ferrat_Light_(15720311590).jpg) · France-002563 - Cap Ferrat Light (15720311590).jpg| Candidate |
 | 20 | Source — scene-8 | [Source](https://commons.wikimedia.org/wiki/File:20211209_130841_Promenade_Maurice_Rouvier.jpg) · File:20211209 130841 Promenade Maurice Rouvier.jpg| Candidate |
-| 21 | Source — scene-9 | [Source](https://commons.wikimedia.org/wiki/File:Baie_des_fourmis.jpg) · Baie des fourmis.jpg| Candidate; **REPLACE: correct bay scene but midday tourist loungers and glare are not premium enough. Seeking a precisely geolocated sunlit landscape with hotel named correctly.** |
+| 21 | Source — scene-9 | [Source](https://www.explorenicecotedazur.com/hotel/hotel-delcloy/) · Sunlit aerial Baie des Fourmis coastal turquoise water, Delcloy hotel landscaped seafront on Saint-Jean-Cap-Ferrat| Candidate |
