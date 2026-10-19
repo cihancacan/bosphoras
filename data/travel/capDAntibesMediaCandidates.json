@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 7,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "property": "Hôtel du Cap-Eden-Roc",
@@ -415,15 +415,31 @@
       "key": "scene-3",
       "label": "Plage de la Garoupe and real turquoise Garoupe Bay",
       "query": "Plage de la Garoupe Cap d'Antibes",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "REJECTED: historic black-and-white beach postcard is not a contemporary scenic view; exact public Garoupe photo now required.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Baigneuses_sur_la_riviera_%C3%A0_Garoupe_Beach_%28Antibes%29_%28CN%29_-_btv1b53280113c.jpg/1920px-Baigneuses_sur_la_riviera_%C3%A0_Garoupe_Beach_%28Antibes%29_%28CN%29_-_btv1b53280113c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedCandidateContext": "1900s black-and-white historical beach bathers, unsuitable for 2026 premium destination photography."
+      "rejectedCandidateContext": "1900s black-and-white historical beach bathers, unsuitable for 2026 premium destination photography.",
+      "localPath": "/images/travel/cap-dantibes-premium/destination/scene-3.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Plage_de_la_garoupe.jpg/1920px-Plage_de_la_garoupe.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Plage_de_la_garoupe.jpg",
+      "candidateContext": "Plage de la garoupe.jpg",
+      "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
+      "sha256": "3b6edea2052e6b5585803993129824b698c2fe059829f801314510301db1745c",
+      "dhash": "1000000000000010100000010011010100100001011101011010011100010111",
+      "bytes": 191306,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-4",
@@ -457,13 +473,29 @@
       "key": "scene-5",
       "label": "Port Gallice small boat harbour Cap d’Antibes",
       "query": "Port Gallice Antibes",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/destination/scene-5.webp",
+      "downloadUrl": "https://leportgallice.com/wp-content/uploads/sites/4/2020/05/port-gallice-yachting-plaisance-7.jpg",
+      "sourcePage": "https://leportgallice.com/",
+      "candidateContext": "Actual yachts in sunny Port Gallice official photo, Cap d Antibes",
+      "credit": "Port Gallice · official port photograph",
+      "sha256": "6aac761de75675dc996dae85e33f25823ff0a8751e0e2c772e961709868d9ecb",
+      "dhash": "1100000011000000000101011100110011001000100011001001110010111100",
+      "bytes": 277342,
+      "originalSize": [
+        1600,
+        1200
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-6",
