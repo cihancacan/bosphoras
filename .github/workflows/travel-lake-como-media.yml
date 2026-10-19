@@ -1,0 +1,60 @@
+name: Travel Lake Como - acquire exact 21 photo candidates (GitHub only)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - 'scripts/collect-lake-como-media.py'
+      - '.github/workflows/travel-lake-como-media.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: lake-como-image-collection
+  cancel-in-progress: false
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'Pillow>=10,<12' 'requests>=2.31,<3' 'beautifulsoup4>=4.12,<5'
+      - run: python -m py_compile scripts/collect-monaco-media.py scripts/collect-lake-como-media.py
+      - name: Download genuine sources, never autoapprove
+        run: python -u scripts/collect-lake-como-media.py
+      - name: Verify all assets have credits and never self-approve
+        run: |
+          python - <<'PY'
+          import json,re
+          from pathlib import Path
+          m=json.loads(Path('data/travel/lakeComoMediaCandidates.json').read_text())
+          items=m['hotels']+m['destinationScenes']
+          assert len(m['hotels'])==12 and len(m['destinationScenes'])==9
+          assert not m['approvedForCommercialPublication'] and not m['visuallyVerified']
+          for x in items:
+              if x.get('visuallyVerified'):
+                  assert x.get('commercialRightsCleared') is True and not x.get('visualQaWarning'),x['key']
+                  assert x.get('frCaption') and x.get('enCaption'),x['key']
+              else:
+                  assert x.get('commercialRightsCleared') is False,x['key']
+                  assert x.get('visualQaWarning'),x['key']
+              if x.get('localPath'):
+                  assert Path('public'+x['localPath']).exists(),x['key']
+                  assert re.fullmatch('[a-f0-9]{64}',x['sha256']),x['key']
+                  assert re.fullmatch('[01]{64}',x['dhash']),x['key']
+                  assert x.get('sourcePage') and x.get('credit'),x['key']
+          print('LAKE_COMO_SOURCE_CANDIDATES',sum(bool(x.get('localPath')) for x in items),'of 21')
+          PY
+      - name: Save source WebPs and manifest on feature branch without Vercel build
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- data/travel/lakeComoMediaCandidates.json public/images/travel/lake-como-premium || true
+          if ! git diff --cached --quiet; then
+            git commit -m "assets(travel): verified-source Lake Como WebP candidates, no automatic approvals [skip ci]"
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi

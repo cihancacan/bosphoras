@@ -1,0 +1,25 @@
+name: Travel Lake Como - bilingual editorial, photo and TypeScript QA only
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - 'data/travel/lakeComo*'
+      - 'scripts/check-lake-como-draft.mjs'
+      - '.github/workflows/travel-lake-como-qa.yml'
+      - 'components/travel/FeaturedCityGuide.tsx'
+      - 'components/travel/TravelPages.tsx'
+      - 'data/travel/featuredCityGuides.ts'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '20',cache: npm}
+      - run: npm ci --no-audit --no-fund
+      - run: npm run typecheck
+      - run: node scripts/check-lake-como-draft.mjs
