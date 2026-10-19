@@ -78,7 +78,8 @@ COMMONS_EXACT={
  "scene-5":"Monaco Port de Fontvieille 25.jpg",
  "scene-7":"Japanese garden Monaco (pond and bridge).jpg",
  "scene-8":"Musée Océanographique de Monaco cliff view.jpg",
- "scene-9":"Mareterra drone shot in 2024.png"
+ "scene-9":"Mareterra drone shot in 2024.png",
+ "scene-6":"Monaco Casino de Monte Carlo Jardin.jpg"
 }
 BLOCK=("logo","advert","banner","brochure","map","poster","screenshot","face portrait",
        "wikipedia-logo","svg","icon","watermark","grand prix car","football","yacht interior")
