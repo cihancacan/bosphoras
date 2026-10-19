@@ -32,7 +32,14 @@ jobs:
           assert m['destination']=='cap-dantibes' and len(m['hotels'])==12 and len(m['destinationScenes'])==9
           assert not m['visuallyVerified'] and not m['approvedForCommercialPublication']
           for x in m['hotels']+m['destinationScenes']:
-              assert not x['visuallyVerified'] and not x['commercialRightsCleared'],x['key']
+              # Already reviewed photographs must remain approved, while any
+              # freshly downloaded replacement MUST stay unapproved.
+              if x.get('visuallyVerified'):
+                  assert x.get('commercialRightsCleared') is True and not x.get('visualQaWarning'),x['key']
+                  assert x.get('frCaption') and x.get('enCaption'),x['key']
+              else:
+                  assert x.get('commercialRightsCleared') is False,x['key']
+                  assert x.get('visualQaWarning'),x['key']
               if x['status']=='candidate_needs_visual_review':
                   assert x['localPath'].startswith('/images/travel/cap-dantibes-premium/')
                   assert re.fullmatch('[a-f0-9]{64}',x['sha256'])
