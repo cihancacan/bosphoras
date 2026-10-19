@@ -1,0 +1,51 @@
+name: Travel Saint Jean Cap Ferrat - Photo Source Collection
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - scripts/collect-saint-jean-cap-ferrat-media.py
+      - .github/workflows/travel-saint-jean-cap-ferrat-media.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: saint-jean-cap-ferrat-images
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Dependencies
+        run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - name: Syntax check
+        run: python -m py_compile scripts/collect-monaco-media.py scripts/collect-saint-jean-cap-ferrat-media.py
+      - name: Collect image candidates
+        run: python -u scripts/collect-saint-jean-cap-ferrat-media.py
+      - name: Verify safe status
+        run: |
+          python - <<'PY'
+          import json
+          m=json.load(open('data/travel/saintJeanCapFerratMediaCandidates.json'))
+          assert m['destination']=='saint-jean-cap-ferrat'
+          assert len(m['hotels'])==12 and len(m['destinationScenes'])==9
+          assert not m['approvedForCommercialPublication']
+          for image in m['hotels']+m['destinationScenes']:
+            assert not image.get('visuallyVerified') or (image.get('commercialRightsCleared') and image.get('localPath') and not image.get('visualQaWarning'))
+          print('No unreviewed asset is marked approved')
+          PY
+      - name: Commit photo candidates without Vercel build
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- data/travel/saintJeanCapFerratMediaCandidates.json public/images/travel/saint-jean-cap-ferrat-premium || true
+          if ! git diff --cached --quiet; then
+            git commit -m "assets(travel): Saint Jean Cap Ferrat real-photo candidates for individual QA [skip ci]"
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
