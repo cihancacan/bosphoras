@@ -45,7 +45,7 @@ jobs:
           set -euo pipefail
           mkdir -p docs
           {
-            echo '# Zermatt GitHub QA — $(date -u +%Y-%m-%dT%H:%M:%SZ)'
+            echo "# Zermatt GitHub QA — $(date -u +%Y-%m-%dT%H:%M:%SZ)"
             echo
             echo "Source commit: ${GITHUB_SHA}"
             echo
