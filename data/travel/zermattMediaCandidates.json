@@ -4,8 +4,8 @@
   "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 8,
-  "downloadedDestinationCandidates": 4,
+  "downloadedHotelCandidates": 7,
+  "downloadedDestinationCandidates": 3,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -32,14 +32,13 @@
       "propertyKey": "the-omnia",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.the-omnia.com/",
         "https://the-omnia.com/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "visualQaWarning": "New image candidate; inspect composition, location, season, uniqueness and source attribution before publishing.",
       "localPath": "/images/travel/zermatt-premium/the-omnia/view-2.webp",
       "sourcePage": "https://the-omnia.com/en/rooms/roof-suite",
       "downloadUrl": "https://the-omnia.com/files/stay/roof-suite/_background2xl/4366/OMNIA_RoofSuite_Omnia_JulianPirker_0063.webp",
@@ -54,21 +53,25 @@
       "outputSize": [
         1700,
         1134
-      ]
+      ],
+      "frCaption": "THE OMNIA — salon lumineux de la Roof Suite avec cheminée et mobilier contemporain",
+      "enCaption": "THE OMNIA — daylit Roof Suite lounge with fireplace and contemporary furnishings",
+      "ownerRightsAuthorization": "Bosphoras operator confirms photo usage rights 2026-10-19",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Image physically inspected as WebP and compared to exact source subject, location and season."
     },
     {
       "property": "THE OMNIA",
       "propertyKey": "the-omnia",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.the-omnia.com/",
         "https://the-omnia.com/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "visualQaWarning": "New image candidate; inspect composition, location, season, uniqueness and source attribution before publishing.",
       "localPath": "/images/travel/zermatt-premium/the-omnia/view-3.webp",
       "sourcePage": "https://the-omnia.com/en/relax",
       "downloadUrl": "https://the-omnia.com/files/relax/_imageInSliderLightbox/5898/OMNIA_Spa_JulianPirker_0739.webp",
@@ -83,7 +86,12 @@
       "outputSize": [
         1700,
         1134
-      ]
+      ],
+      "frCaption": "THE OMNIA — piscine intérieure vitrée et lumière turquoise",
+      "enCaption": "THE OMNIA — glass-fronted indoor swimming pool with turquoise light",
+      "ownerRightsAuthorization": "Bosphoras operator confirms photo usage rights 2026-10-19",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Image physically inspected as WebP and compared to exact source subject, location and season."
     },
     {
       "property": "Mont Cervin Palace",
@@ -227,7 +235,7 @@
       "property": "Riffelalp Resort 2222m",
       "propertyKey": "riffelalp",
       "key": "view-1",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -238,28 +246,16 @@
       "sourcePage": "https://www.riffelalp.com/en/gallery/?L=1",
       "candidateContext": "riffelalp-resort-spa-2222m-baignade-cervin-hiver-piscine-01.jpeg    ",
       "credit": "Official hotel page / image",
-      "rejectedSource": "https://www.riffelalp.com/media/zpffn0fr/outdoor_9.jpg",
-      "visualQaWarning": "New image candidate; inspect composition, location, season, uniqueness and source attribution before publishing.",
-      "localPath": "/images/travel/zermatt-premium/riffelalp/view-1.webp",
-      "downloadUrl": "https://www.riffelalp.com/media/tf0lzkb0/spa_winter_107.jpg?width=2000&height=1125&quality=80&v=1dd1dcea2a5db70",
-      "sha256": "7af39c89bb15c5d5454442917651ad08a56349f3902f638b385fdf8514349824",
-      "bytes": 57768,
-      "originalSize": [
-        2000,
-        1125
-      ],
-      "outputSize": [
-        1700,
-        956
-      ]
+      "rejectedSource": "https://www.riffelalp.com/media/tf0lzkb0/spa_winter_107.jpg?width=2000&height=1125&quality=80&v=1dd1dcea2a5db70",
+      "visualQaWarning": "Overexposed blurry spa photo with an unidentifiable person; not premium enough for a hotel gallery."
     },
     {
       "property": "Riffelalp Resort 2222m",
       "propertyKey": "riffelalp",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.riffelalp.com/",
         "https://www.riffelalp.com/en/welcome/"
@@ -269,7 +265,6 @@
       "candidateContext": "riffelalp-resort-monte-rosa-suite-chambre-lumiere-naturelle-01.jpeg    ",
       "credit": "Official hotel page / image",
       "rejectedSource": "https://www.riffelalp.com/media/ytln40d2/outdoor_winter_183.jpg?rxy=0.7163846158024116,0&width=1024&height=576&quality=80&v=1dd178cfe2e7260",
-      "visualQaWarning": "New image candidate; inspect composition, location, season, uniqueness and source attribution before publishing.",
       "localPath": "/images/travel/zermatt-premium/riffelalp/view-2.webp",
       "downloadUrl": "https://www.riffelalp.com/media/ervnd5od/7-room_suite_mrtf_2222_7.jpg?rxy=0.6997179166829345,0.44658589132303556&width=2000&height=1125&quality=80&v=1dd1dbf342bd5f0",
       "sha256": "262203531820501ae6bc698a64238f0d38c35433ddd1d793fac2f4adcd807743",
@@ -281,15 +276,20 @@
       "outputSize": [
         1700,
         956
-      ]
+      ],
+      "frCaption": "Riffelalp Resort — suite de bois clair avec grand lit et textiles rouges",
+      "enCaption": "Riffelalp Resort — warm pinewood suite with large bed and red accents",
+      "ownerRightsAuthorization": "Bosphoras operator confirms photo usage rights 2026-10-19",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Image physically inspected as WebP and compared to exact source subject, location and season."
     },
     {
       "property": "Riffelalp Resort 2222m",
       "propertyKey": "riffelalp",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.riffelalp.com/",
         "https://www.riffelalp.com/en/welcome/"
@@ -297,7 +297,6 @@
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "sourcePage": "https://www.riffelalp.com/en/gallery/?L=1",
       "candidateContext": "    ",
-      "visualQaWarning": "New image candidate; inspect composition, location, season, uniqueness and source attribution before publishing.",
       "credit": "Official hotel page / image",
       "rejectedSource": "https://www.riffelalp.com/media/ytln40d2/outdoor_winter_183.jpg?rxy=0.7163846158024116,0&width=2000&height=1125&quality=80&v=1dd178cfe2e7260",
       "localPath": "/images/travel/zermatt-premium/riffelalp/view-3.webp",
@@ -311,7 +310,12 @@
       "outputSize": [
         1700,
         956
-      ]
+      ],
+      "frCaption": "Riffelalp Resort — salon de montagne lumineux avec cheminée centrale",
+      "enCaption": "Riffelalp Resort — light-filled alpine lounge with a central fireplace",
+      "ownerRightsAuthorization": "Bosphoras operator confirms photo usage rights 2026-10-19",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Image physically inspected as WebP and compared to exact source subject, location and season."
     }
   ],
   "destinationScenes": [
@@ -376,8 +380,8 @@
       "placeLabel": "Sunnegga",
       "searchQuery": "Sunnegga Zermatt",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:CH.VS.Zermatt_Sunnegga_Grindjisee_Matterhorn_9034_16x9-R_16K.jpg",
       "candidateContext": "File:CH.VS.Zermatt Sunnegga Grindjisee Matterhorn 9034 16x9-R 16K.jpg",
@@ -385,7 +389,6 @@
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Sunnegga.jpg/1920px-Sunnegga.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "visualQaWarning": "New image candidate; inspect composition, location, season, uniqueness and source attribution before publishing.",
       "localPath": "/images/travel/zermatt-premium/destination/scene-4.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/CH.VS.Zermatt_Sunnegga_Grindjisee_Matterhorn_9034_16x9-R_16K.jpg/1920px-CH.VS.Zermatt_Sunnegga_Grindjisee_Matterhorn_9034_16x9-R_16K.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sha256": "4f5e0ef303f24fae3799d5a5b687a050bf1783ae8f8b49c8efd21754f56da137",
@@ -397,7 +400,12 @@
       "outputSize": [
         1700,
         956
-      ]
+      ],
+      "frCaption": "Grindjisee dans le secteur de Sunnegga, avec reflet automnal du Cervin",
+      "enCaption": "Grindjisee lake in the Sunnegga area, reflecting the Matterhorn in autumn",
+      "ownerRightsAuthorization": "Bosphoras operator confirms photo usage rights 2026-10-19",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Image physically inspected as WebP and compared to exact source subject, location and season."
     },
     {
       "key": "scene-5",
@@ -419,26 +427,15 @@
       "key": "scene-6",
       "placeLabel": "Riffelalp",
       "searchQuery": "Riffelalp Switzerland",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "visualQaWarning": "New image candidate; inspect composition, location, season, uniqueness and source attribution before publishing.",
-      "localPath": "/images/travel/zermatt-premium/destination/scene-6.webp",
+      "visualQaWarning": "Another close-up of the Matterhorn; duplicates the subject of other scenes rather than describing Gornergrat or Riffelberg's distinct geography.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:3818_-_Riffelberg_-_Matterhorn_viewed_from_Gornergratbahn.JPG",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/3818_-_Riffelberg_-_Matterhorn_viewed_from_Gornergratbahn.JPG/1920px-3818_-_Riffelberg_-_Matterhorn_viewed_from_Gornergratbahn.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "candidateContext": "File:3818 - Riffelberg - Matterhorn viewed from Gornergratbahn.JPG",
       "credit": "Andrew Bossi · CC BY-SA 2.5",
-      "sha256": "400e8460c6c100633b0783ff6e9cd333da9802aac2f7d9be7ffe80d614ec1a89",
-      "bytes": 308412,
-      "originalSize": [
-        1920,
-        1440
-      ],
-      "outputSize": [
-        1600,
-        1200
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/3818_-_Riffelberg_-_Matterhorn_viewed_from_Gornergratbahn.JPG/1920px-3818_-_Riffelberg_-_Matterhorn_viewed_from_Gornergratbahn.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
       "key": "scene-7",
