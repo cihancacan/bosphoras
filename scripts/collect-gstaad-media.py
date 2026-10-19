@@ -161,6 +161,9 @@ PALACE_EXACT = {
 }
 PALACE_ALTERNATES = {
  "view-3": [
+  ("https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?height=698&mode=crop&quality=85&scale=downscaleonly&width=1240",
+   "https://www.oxfordski.com/luxury-ski-chalets-hotels/switzerland/gstaad/gstaad-palace/",
+   "Gstaad Palace genuine indoor pool showing timber beams and snowy garden"),
   ("https://cms.inspirato.com/ImageGen.ashx?image=%2Fmedia%2F9461972%2F9copyright-gstaad-palace_stefano-scata_indoor-pool-palace-spa_570396_300dpi_rgb_favourite.jpg&width=1440",
    "https://www.inspirato.com/destinations/gstaad-switzerland/residences/gstaad-superior-room-mountain-view/",
    "Gstaad Palace indoor spa pool, hotel photography credited to Stefano Scatà"),
@@ -177,6 +180,9 @@ PALACE_ALTERNATES = {
 }
 SCENES_EXACT = {
  "scene-6": [
+  ("https://img.oastatic.com/img2/59563467/source/variant.jpg",
+   "https://lenk-simmental.ch/erlebnisse-touren/tour/detail/vom-leiterli-auf-den-wasserngrat",
+   "Genuine Wasserngrat ridge trail panorama, hikers on summit at sunset"),
   ("https://img.welt.de/img/reise/nah/mobile189889565/9640247907-coriginal-w1200/Wasserngrat-Terrasse-jpg.jpg",
    "https://www.welt.de/reise/nah/article189738501/Gstaad-Heli-Yoga-und-Warhol-Kuehe-in-der-Tiefgarage.html",
    "Wasserngrat alpine restaurant terrace with laid tables and distant snowy mountain skyline"),
