@@ -48,6 +48,25 @@ OFFICIAL={
   "view-3":[("https://www.riffelalp.com/en/gallery/?L=1","spa","pool","wellness","swimming")],
  }
 }
+# Prefer exact hotel and location source photographs before generic searches.
+# Any downloaded file is STILL blocked pending individual visual approval.
+EXACT_HOTELS={
+ "the-omnia/view-1":[("https://www.yonder.fr/sites/default/files/destinations/OMNIA_Outside_Summer_q%C2%A9Bruno%20Augsburger%2C%20THE%20OMNIA.jpg",
+  "https://www.yonder.fr/hotels/chambres-avec-vues/zermatt-the-omnia-reinterpete-codes-montagne",
+  "THE OMNIA daylit summer exterior · Bruno Augsburger")],
+ "mont-cervin-palace/view-1":[("https://cdn2.indagare.com/i/41710/w3840","https://indagare.com/article/zermatt-guide",
+  "Mont Cervin Palace main winter exterior with pool"),
+  ("https://pics.tui.com/pics/pics1600x1200/tui/7/748a3e47d24de3fb1d75c875389b1039_ocpprod.jpg",
+  "https://www.tui.com/hotels/mont-cervin-palace-26481/hotelinformation/","Mont Cervin Palace winter exterior")],
+}
+EXACT_SCENES={
+ "scene-5":[("https://commons.wikimedia.org/wiki/Special:Redirect/file/Panorama_vom_Gornergrat-Zermatt.jpg?width=1600",
+  "https://commons.wikimedia.org/wiki/File:Panorama_vom_Gornergrat-Zermatt.jpg",
+  "Gornergrat panorama over Monte Rosa mountain ridge")],
+ "scene-6":[("https://commons.wikimedia.org/wiki/Special:Redirect/file/3809_-_Zermatt_-_View_from_Gornergratbahn.JPG?width=1600",
+  "https://commons.wikimedia.org/wiki/File:3809_-_Zermatt_-_View_from_Gornergratbahn.JPG",
+  "Alpine view from Gornergratbahn near Riffelberg")],
+}
 SCENES={
  "scene-1":("Riffelsee Matterhorn lake Zermatt",("riffelsee",)),
  "scene-2":("Zermatt village old town Matterhorn panoramic",("zermatt",)),
@@ -178,7 +197,7 @@ def main():
   group=item["propertyKey"];key=item["key"]
   if group not in OFFICIAL:continue
   sources=OFFICIAL[group].get(key,[])
-  options=[]
+  options=[(100,url,source,caption,"Published hotel photograph; identity and rights still QA gated") for url,source,caption in EXACT_HOTELS.get(group+"/"+key,[])]
   if group=="mont-cervin-palace" and key=="view-1":
    options.extend(commons_images("Mont Cervin Palace Zermatt hotel 2019",("mont cervin palace",)))
   for source in sources:
@@ -189,7 +208,8 @@ def main():
   changed|=candidate(item,options,used_urls,digests)
  for item in scenes:
   query,terms=SCENES[item["key"]]
-  options=commons_images(query,terms)
+  options=[(100,url,source,caption,"Named Commons landscape; still QA gated") for url,source,caption in EXACT_SCENES.get(item["key"],[])]
+  options.extend(commons_images(query,terms))
   if not options:
    fallback={
     "scene-2":("Zermatt Swiss old town Matterhorn",("zermatt",)),
