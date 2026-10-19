@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 6,
+  "downloadedDestinationCandidates": 9,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "ownerRightsAuthorization": "Bosphoras operator confirmed rights to use suitable project photos on 2026-10-19. Subject identity, attribution and image-specific publication review still required.",
@@ -432,7 +432,7 @@
       "key": "scene-1",
       "label": "Casino Square and Hôtel de Paris façade",
       "query": "Monaco Casino Square promenade",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -440,19 +440,32 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Image inspected and rejected: requires correct premium hotel architecture/lagoon or bright genuinely representative district photo.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Casino_de_Monte-Carlo,_Monaco_(53968726718).jpg",
-      "candidateContext": "Casino de Monte-Carlo, Monaco (53968726718).jpg",
-      "credit": "Charles from Port Chester, New York · CC BY 2.0",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "sourcePage": "https://generationvoyage.fr/visiter-monte-carlo-faire-voir/",
+      "candidateContext": "Casino de Monte-Carlo, contemporary sunlit façade and mirrored globe fountain",
+      "credit": "Génération Voyage — photograph of Monte-Carlo Casino Square",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Casino_de_Monte-Carlo%2C_Monaco_%2853968726718%29.jpg/1920px-Casino_de_Monte-Carlo%2C_Monaco_%2853968726718%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedCandidateContext": "File:Liebherr LTM LTM 1300-6.2 (52993821916).jpg",
-      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Casino_de_Monte-Carlo,_Monaco_(53968726718).jpg"
+      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Casino_de_Monte-Carlo,_Monaco_(53968726718).jpg",
+      "localPath": "/images/travel/monaco-premium/destination/scene-1.webp",
+      "downloadUrl": "https://cdn.generationvoyage.fr/2025/06/Place-du-Casino-Monte-Carlo-1536x1024.jpeg",
+      "sha256": "e995d6a255a5797c8e6d804a82b6b8a1db89d06b748c04dc6821aadae71018dd",
+      "dhash": "0000011101101011110011001101010001001000010011000110100101001101",
+      "bytes": 305484,
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "outputSize": [
+        1536,
+        1024
+      ]
     },
     {
       "key": "scene-2",
       "label": "Port Hercule yachts and bay",
       "query": "Monaco Port Hercule yachts harbour panorama",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -460,12 +473,25 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Image inspected and rejected: requires correct premium hotel architecture/lagoon or bright genuinely representative district photo.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Rocher_de_Monaco_Vue_sur_le_Port_Hercule_30.jpg",
-      "candidateContext": "Monaco Rocher de Monaco Vue sur le Port Hercule 30.jpg",
-      "credit": "Zairon · CC BY-SA 4.0",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "sourcePage": "https://www.hellomonaco.com/news/latest-news/what-s-making-news-in-monaco/",
+      "candidateContext": "Port Hercule at the Monaco Yacht Show 2017, aerial panorama of superyachts and waterfront",
+      "credit": "HelloMonaco / Monaco Yacht Show event photograph",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Monaco_Rocher_de_Monaco_Vue_sur_le_Port_Hercule_30.jpg/1920px-Monaco_Rocher_de_Monaco_Vue_sur_le_Port_Hercule_30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Rocher_de_Monaco_Vue_sur_le_Port_Hercule_30.jpg"
+      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Rocher_de_Monaco_Vue_sur_le_Port_Hercule_30.jpg",
+      "localPath": "/images/travel/monaco-premium/destination/scene-2.webp",
+      "downloadUrl": "https://www.hellomonaco.com/wordpress/wp-content/uploads/2018/07/yacht-show-2017-facebook--monacoyachtshow.jpg",
+      "sha256": "be3c77be90644c515fba2bf1dc9ee372559da46189b00939997a08b04b3348d2",
+      "dhash": "0111101111100101100011001010100111010011110010110111000111111001",
+      "bytes": 767470,
+      "originalSize": [
+        2048,
+        1534
+      ],
+      "outputSize": [
+        1602,
+        1200
+      ]
     },
     {
       "key": "scene-3",
@@ -504,7 +530,7 @@
       "key": "scene-4",
       "label": "Larvotto beach waterfront",
       "query": "Monaco Larvotto beach promenade",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -512,12 +538,25 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Image inspected and rejected: requires correct premium hotel architecture/lagoon or bright genuinely representative district photo.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco03.JPG",
-      "candidateContext": "Monaco03.JPG",
-      "credit": "Laslovarga · CC BY-SA 3.0",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "sourcePage": "https://www.revigorate.com/things-to-do-in-monaco-pt.html",
+      "candidateContext": "Larvotto beach with turquoise Mediterranean sea, summer swimmers and coastal promenade",
+      "credit": "Revigorate travel photography, Monaco Larvotto",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Monaco03.JPG/1920px-Monaco03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monaco03.JPG"
+      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monaco03.JPG",
+      "localPath": "/images/travel/monaco-premium/destination/scene-4.webp",
+      "downloadUrl": "https://www.revigorate.com/images/turquoise-Plage-du-Larvotto-Monaco.jpg",
+      "sha256": "050a57375d6f3d9016229a25a650fb08e3c5f7d12dc385996045c6107d16de46",
+      "dhash": "1110111100111111100111100011111101111111011111101001110010001100",
+      "bytes": 204290,
+      "originalSize": [
+        1300,
+        865
+      ],
+      "outputSize": [
+        1300,
+        865
+      ]
     },
     {
       "key": "scene-5",
