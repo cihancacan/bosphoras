@@ -72,6 +72,36 @@ lib.DIRECT_LANDSCAPES={
  "scene-8":lib.commons_exact("Como Cathedral.jpg"),
  "scene-9":lib.commons_exact("Moltrasio Lake Como.jpg")
 }
+# Source-identified true Il Sereno architecture and exact official suite.
+lib.HOTEL_DIRECT["il-sereno/view-1"]=[
+ (120,"https://leisureopportunities.co.uk/images/HIGH18053_478034.jpg",
+  "https://www.spabusiness.com/wellness-news/Patricia-Urquiola-Sereno-Hotels-Lake-Como-Italy-Il-Sereno-Lago-di-Como-architecture-design/331014",
+  "Il Sereno Torno genuine wood-slat lakeside facade with mountains and water",
+  "Spa Business · source-labelled Il Sereno architecture photograph"),
+ (105,"https://www.leisureopportunities.co.uk/images/46924_795991.jpg",
+  "https://www.cladglobal.com/architecture-design-features?codeid=31975&p=12&source=home",
+  "Il Sereno Torno original shore-facing glass-and-stone architectural facade",
+  "CLAD Global · identified Il Sereno architectural photo")
+]
+lib.HOTEL_DIRECT["il-sereno/view-2"]=[
+ (120,"https://s3.amazonaws.com/uploads.serenohotels.com/app/uploads/2016/12/16210344/PITER2016SerenoComo_7943-scaled.jpg",
+  "https://www.serenohotels.com/property/il-sereno/suites/1-bedroom-suites/corner-suite/",
+  "Il Sereno actual corner suite with walnut furnishings and furnished lake view terrace",
+  "Sereno Hotels · official Corner Suite image"),
+ (112,"https://d20kc7ig5255k8.cloudfront.net/Rooms/Pictures/the-darsena-suite-62be59362af3f.jpg",
+  "https://luxuriavacations.com/destinations/europe/italy/il-sereno-lago-di-como/rooms/il-sereno-lago-di-como-the-darsena-suite",
+  "Il Sereno Darsena suite true furnished terrace overlooking Lake Como",
+  "Luxuria Vacations · exact Il Sereno Darsena Suite photo")
+]
+# Exact Commons filenames with documented source descriptions; no generic lake stand-ins.
+lib.DIRECT_LANDSCAPES.update({
+ "scene-1":lib.commons_exact("Panorama del lago di Como.jpg"),
+ "scene-2":lib.commons_exact("Cernobbio hillside from Lake Como.jpg"),
+ "scene-3":lib.commons_exact("Bellagio panorama from Lake Como ferry.jpg"),
+ "scene-5":lib.commons_exact("Veduta del lago di Como da Bellagio.jpg"),
+ "scene-6":lib.commons_exact("Varenna lakecomo.jpg"),
+ "scene-9":lib.commons_exact("Panoramic view of the harbour of Moltrasio - 1.jpg")
+})
 lib.COMMONS_EXACT={}
 lib.DIRECT_WIKIMEDIA={}
 # A candidate already visually approved is never replaced, nor is a different
