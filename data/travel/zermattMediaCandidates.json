@@ -105,11 +105,11 @@
         "https://www.montcervinpalace.ch/en/hotel/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "visualQaWarning": "This image depicts a hotel floor plan/architectural diagram, not a genuine exterior photograph.",
+      "visualQaWarning": "Diagrammatic 3D property map with letters and text, not an authentic hotel photograph.",
       "sourcePage": "https://www.europeexpress.com/hotels/mont-cervin-palace/",
       "candidateContext": "Mont Cervin Palace hotel exterior    ",
       "credit": "Official hotel page / image",
-      "rejectedSource": "https://int-source-images.s3-eu-west-1.amazonaws.com/images/0a51f3556b574cd6b504b742dc3ae1c4.jpg"
+      "rejectedSource": "https://www.europeexpress.com/hotels/mont-cervin-palace/"
     },
     {
       "property": "Mont Cervin Palace",
@@ -264,11 +264,11 @@
         1700,
         956
       ],
-      "frCaption": "Riffelalp Resort — piscine extérieure avec vue sur le Cervin et terrasses fleuries",
-      "enCaption": "Riffelalp Resort — outdoor swimming pool overlooking the Matterhorn and flower-lined terrace",
-      "ownerRightsAuthorization": "Bosphoras operator confirms photo use 2026-10-19",
+      "frCaption": "Riffelalp Resort — piscine panoramique face au Cervin en été",
+      "enCaption": "Riffelalp Resort — panoramic outdoor pool overlooking the Matterhorn in summer",
+      "ownerRightsAuthorization": "Bosphoras operator confirmed photo usage rights 2026-10-19",
       "visualReviewedAt": "2026-10-19",
-      "visualReviewBasis": "Real saved WebP visually inspected for source authenticity, composition, season and nonduplication."
+      "visualReviewBasis": "Visual inspection of original official Riffelalp resort photo and matching landscape"
     },
     {
       "property": "Riffelalp Resort 2222m",
@@ -441,8 +441,8 @@
       "credit": "Xonqnopp · CC BY-SA 4.0",
       "license": "CC BY 2.5",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
-      "visualQaWarning": "Gorner glacier viewed through a plane window with heavy reflections; visual quality does not meet Bosphoras premium standards.",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Above_the_Alps_2018-07-14_103117.jpg/1920px-Above_the_Alps_2018-07-14_103117.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "visualQaWarning": "Glacial vista taken through a window with haze, glare and foreground obstruction; not premium enough.",
+      "rejectedSource": "https://commons.wikimedia.org/wiki/File:Above_the_Alps_2018-07-14_103117.jpg"
     },
     {
       "key": "scene-6",
@@ -452,11 +452,11 @@
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "visualQaWarning": "Busy ski slope centered on skiers and another Matterhorn close-up, redundant and insufficiently premium.",
+      "visualQaWarning": "Crowded ski-piste snapshot with marker/signs and tourists; below elegant luxury destination photography standards.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Matterhorn_Cervino_4478_m_from_ski_run_from_Gornergrat_3089_m_to_Riffelberg_2582_m_-_panoramio.jpg",
       "candidateContext": "File:Matterhorn Cervino 4478 m from ski run from Gornergrat 3089 m to Riffelberg 2582 m - panoramio.jpg",
       "credit": "qwesy qwesy · CC BY 3.0",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Matterhorn_Cervino_4478_m_from_ski_run_from_Gornergrat_3089_m_to_Riffelberg_2582_m_-_panoramio.jpg/1920px-Matterhorn_Cervino_4478_m_from_ski_run_from_Gornergrat_3089_m_to_Riffelberg_2582_m_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "rejectedSource": "https://commons.wikimedia.org/wiki/File:Matterhorn_Cervino_4478_m_from_ski_run_from_Gornergrat_3089_m_to_Riffelberg_2582_m_-_panoramio.jpg"
     },
     {
       "key": "scene-7",
