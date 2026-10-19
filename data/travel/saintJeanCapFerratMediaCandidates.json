@@ -253,25 +253,25 @@
       "sourcePages": [
         "https://villacapferrat.fr/"
       ],
-      "sourcePage": "https://villacapferrat.fr/en/rooms/",
-      "candidateContext": "Official CMS image matched by source context",
-      "credit": "Official hotel CMS",
-      "rejectedSource": "https://villacapferrat.fr/wp-content/uploads/2024/12/2025-junior-suite-3.jpg",
-      "rejectedCandidateContext": "    ",
+      "rejectedSource": "https://villacapferrat.fr/wp-content/uploads/2024/12/2025-junior-suite-2.jpg",
+      "rejectedCandidateContext": "EDITORIAL HOLD: Below luxury standard: dark dated bedroom composition and little recognisable sea outlook; seek a brighter true balcony/sea-view room.",
       "ownerRightsAuthorization": "Bosphoras operator confirmed project photo use rights 2026-10-19",
-      "visualQaWarning": "EDITORIAL HOLD: Below luxury standard: dark dated bedroom composition and little recognisable sea outlook; seek a brighter true balcony/sea-view room.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/la-villa-cap-ferrat/view-2.webp",
-      "downloadUrl": "https://villacapferrat.fr/wp-content/uploads/2024/12/2025-junior-suite-2.jpg",
-      "sha256": "1b2d38a3f0564e555bb0cb4cd1a39978cdb19492f6199755285181496b3a4e85",
-      "dhash": "1100000111100000101000000110011011001000000110000011011010010110",
-      "bytes": 164302,
+      "downloadUrl": "https://images.trvl-media.com/lodging/5000000/4330000/4320600/4320552/a2f6fb75.jpg",
+      "sourcePage": "https://www.expedia.com/Nice-Hotels-Boutique-Hotel-Spa-La-Villa-Cap-Ferrat.h4320552.Hotel-Information",
+      "candidateContext": "Actual La Villa Cap Ferrat spacious bright seaview room and balcony",
+      "credit": "Expedia · verified La Villa Cap Ferrat hotel listing",
+      "sha256": "d2eec97abfa38c18662d85c2dce67da50228dd7847b3969407d009493066a49b",
+      "dhash": "1001101110010110011101100111011001110110111101101010010010001100",
+      "bytes": 205974,
       "originalSize": [
-        1984,
-        1170
+        3840,
+        1866
       ],
       "outputSize": [
         1800,
-        1061
+        875
       ]
     },
     {
@@ -351,24 +351,24 @@
       "sourcePages": [
         "https://www.hotel-brisemarine.com/"
       ],
-      "visualQaWarning": "EDITORIAL HOLD: Authentic balcony but dated white plastic furniture dominates; replace with a clearer sunlit hotel interior/sea view.",
-      "sourcePage": "https://www.hotel-brisemarine.com/en/chambres-230.html",
-      "candidateContext": "    ",
-      "credit": "Official hotel photo",
-      "rejectedSource": "https://www.hotel-brisemarine.com/images/gallery/chambres/IMG_1342.JPG",
-      "rejectedCandidateContext": "    ",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://www.hotel-brisemarine.com/images/gallery/chambres/Balcon.JPG",
+      "rejectedCandidateContext": "EDITORIAL HOLD: Authentic balcony but dated white plastic furniture dominates; replace with a clearer sunlit hotel interior/sea view.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/brise-marine/view-2.webp",
-      "downloadUrl": "https://www.hotel-brisemarine.com/images/gallery/chambres/Balcon.JPG",
-      "sha256": "f07855028b35fae48b500eb72f40a8ddff109704c00f78736ac697ac0452a9fc",
-      "dhash": "0010001110011001110111001011111001111011110111011000110011010100",
-      "bytes": 96010,
+      "downloadUrl": "https://www.hotel-brisemarine.com/images/gallery/gallerie/0505_ok_cliente.jpg",
+      "sourcePage": "https://www.hotel-brisemarine.com/en/gallery-237.html",
+      "candidateContext": "Brise Marine charming bright garden dining and breakfast terrace with Mediterranean hills",
+      "credit": "Hôtel Brise Marine · official photograph",
+      "sha256": "a82b6d18702fc765266fe80761c5c8f516c4a65c3b26c318868c5967dfa26aa5",
+      "dhash": "0001101000111111001111100010011000111010001001100011000110011001",
+      "bytes": 423276,
       "originalSize": [
-        1200,
-        900
+        1890,
+        1417
       ],
       "outputSize": [
-        1200,
-        900
+        1601,
+        1200
       ]
     },
     {
@@ -485,25 +485,25 @@
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Champion_HV_%26_Paloma_beach_-_panoramio.jpg/1920px-Champion_HV_%26_Paloma_beach_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/20211209_123405_Plage_de_la_Paloma.jpg/1920px-20211209_123405_Plage_de_la_Paloma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "ownerRightsAuthorization": "Bosphoras operator confirmed project photo use rights 2026-10-19",
-      "rejectedCandidateContext": "REJECTED GEOLOCATION: photo depicts Kemer, Antalya, Türkiye; must replace with exact Paloma Beach, Saint-Jean-Cap-Ferrat.",
+      "rejectedCandidateContext": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-3.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/20211209_123405_Plage_de_la_Paloma.jpg/1920px-20211209_123405_Plage_de_la_Paloma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:20211209_123405_Plage_de_la_Paloma.jpg",
-      "candidateContext": "20211209 123405 Plage de la Paloma.jpg",
-      "credit": "Horizon06 · CC BY-SA 4.0",
-      "sha256": "39584939316cac8b0803a9453bcd47ebd094d744c172db5c03cdf4102feabc63",
-      "dhash": "0101110101010101011100111100101100110111000011111010101100101010",
-      "bytes": 677892,
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Paloma_Beach%2C_Saint-Jean-Cap-Ferrat.png/1920px-Paloma_Beach%2C_Saint-Jean-Cap-Ferrat.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Paloma_Beach,_Saint-Jean-Cap-Ferrat.png",
+      "candidateContext": "Paloma Beach, Saint-Jean-Cap-Ferrat.png",
+      "credit": "VManteuffel · CC BY-SA 4.0",
+      "sha256": "00c5a81eec70c2e791f70beedec0b9c177fc75a36f8c411eb706610c799cac4a",
+      "dhash": "1111100011110100101111000001011100001100010101011101010111110100",
+      "bytes": 299806,
       "originalSize": [
         1920,
-        910
+        671
       ],
       "outputSize": [
         1800,
-        853
+        629
       ]
     },
     {
