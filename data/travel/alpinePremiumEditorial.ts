@@ -67,6 +67,6 @@ export const alpineAvailablePhotoPathsByCity={
  'st-moritz':new Set([...stMoritzManifest.hotels,...stMoritzManifest.destinationScenes].filter(valid).map(x=>x.localPath!)),
  aspen:new Set([...aspenManifest.hotels,...aspenManifest.destinationScenes].filter(valid).map(x=>x.localPath!)),
  niseko:new Set([...nisekoManifest.hotels,...nisekoManifest.destinationScenes].filter(valid).map(x=>x.localPath!)),
- gstaad:new Set([...gstaadManifest.hotels,...gstaadManifest.destinationScenes].filter(valid).map(x=>x.localPath!))
+ gstaad:new Set([...gstaadManifest.hotels,...gstaadManifest.destinationScenes].filter(valid).map(x=>x.localPath!)),
   ...mountainBatchAvailablePhotoPathsByCity
 } as const;
