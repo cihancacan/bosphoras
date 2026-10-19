@@ -16,23 +16,25 @@
       "sourcePages": [
         "https://www.villadeste.com/"
       ],
-      "visualQaWarning": "REJECTED: twilight/night facade with artificially illuminated floating pool fails bright daytime hero standard; replace with genuine sunlit property exterior.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/villa-d-este/view-1.webp",
-      "downloadUrl": "https://cdn.sanity.io/images/f489xjk7/production/fce30d517c05b2ca476ecf387a60dde4761f2512-1800x1348.jpg?auto=format&h=1348&w=1800",
-      "sourcePage": "https://www.kirkerholidays.com/hotel/villa-d-este/",
-      "candidateContext": "Actual Villa d'Este Cernobbio exterior from water at dusk and floating pool",
-      "credit": "Kirker Holidays · identified Villa d'Este property photo",
-      "sha256": "20f0c5faff1fe4d1e646040698e1a9f945c7770a7480c8fcf4641dbee8a0c0aa",
-      "dhash": "0000100000000111000011110101111011000110001110110000110001000100",
-      "bytes": 240644,
+      "downloadUrl": "https://tg24.sky.it/assets/images/587367d38599034524f542152a0f5f6993917391/skytg24/it/economia/2022/09/02/forum-ambrosetti-2022-cernobbio/villa%20este%20cernobbio%20fotogramma.jpg",
+      "sourcePage": "https://tg24.sky.it/economia/2025/09/04/forum-ambrosetti-cernobbio-2025",
+      "candidateContext": "Villa d'Este real cream historic lakefront façade photographed in brilliant daylight from water, wooded slopes behind",
+      "credit": "Sky TG24 · identified actual Villa d'Este Cernobbio daylight photograph",
+      "sha256": "2fa90b7fa52b85fdb8799188106e083ccb4593e3a369c3e65fae67c92c99cac6",
+      "dhash": "1111011111101110101000110001001111010111111100111111011111110110",
+      "bytes": 575636,
       "originalSize": [
-        1800,
-        1348
+        3680,
+        2456
       ],
       "outputSize": [
-        1602,
+        1798,
         1200
-      ]
+      ],
+      "rejectedSource": "https://cdn.sanity.io/images/f489xjk7/production/fce30d517c05b2ca476ecf387a60dde4761f2512-1800x1348.jpg?auto=format&h=1348&w=1800",
+      "rejectedCandidateContext": "REJECTED: twilight/night facade with artificially illuminated floating pool fails bright daytime hero standard; replace with genuine sunlit property exterior."
     },
     {
       "property": "Villa d’Este",
@@ -144,23 +146,25 @@
       "sourcePages": [
         "https://www.grandhoteltremezzo.com/en/"
       ],
-      "visualQaWarning": "REJECTED: balcony lake perspective without visible bedroom does not establish real premium suite interior; replace with exact hotel suite.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/grand-hotel-tremezzo/view-2.webp",
-      "downloadUrl": "https://www.grandhoteltremezzo.com/media/s4vp5wjt/grand_hotel_tremezzo-roomssuites-ruben-0g5a9791.jpg?width=1518&height=1012&format=webp&v=1da398ab3776f70",
-      "sourcePage": "https://www.grandhoteltremezzo.com/en/",
+      "downloadUrl": "https://www.grandhoteltremezzo.com/media/qynd0bcu/grand_hotel_tremezzo-roomssuites-ruben-0g5a0105.jpg?width=1766&height=1226&format=webp&v=1da342397b2d430",
+      "sourcePage": "https://www.grandhoteltremezzo.com/en/rooms-suites/signature-suite/",
       "candidateContext": "    ",
       "credit": "Official hotel photo",
-      "sha256": "e985e759f62b7274012e83d3098a0cfd669d9d409d4fa62ac048ee1a7e4a66c7",
-      "dhash": "1001011110010111100101111001011010010110100101101001011010000110",
-      "bytes": 155084,
+      "sha256": "83a23ec4a3511c04e55bc8908754cb877303e39897d522e701287fdbfedf1660",
+      "dhash": "1000010111101001100011111100111111001110110011100011111000110010",
+      "bytes": 194680,
       "originalSize": [
-        1518,
-        1012
+        1766,
+        1226
       ],
       "outputSize": [
-        1518,
-        1012
-      ]
+        1729,
+        1200
+      ],
+      "rejectedSource": "https://www.grandhoteltremezzo.com/media/s4vp5wjt/grand_hotel_tremezzo-roomssuites-ruben-0g5a9791.jpg?width=1518&height=1012&format=webp&v=1da398ab3776f70",
+      "rejectedCandidateContext": "REJECTED: balcony lake perspective without visible bedroom does not establish real premium suite interior; replace with exact hotel suite."
     },
     {
       "property": "Grand Hotel Tremezzo",
@@ -173,15 +177,15 @@
       "sourcePages": [
         "https://www.grandhoteltremezzo.com/en/"
       ],
-      "visualQaWarning": "REJECTED: visual dominated by upside-down building reflection in water, fails distinctive Water-on-the-Water floating pool subject and brand premium clarity.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/grand-hotel-tremezzo/view-3.webp",
-      "downloadUrl": "https://www.grandhoteltremezzo.com/media/ikomnjus/grand_hotel_tremezzo-pools-julius-l1210114.jpg?width=1766&height=1226&format=webp&v=1da398a6417c380",
+      "downloadUrl": "https://www.grandhoteltremezzo.com/media/pbqjenz3/grand_hotel_tremezzo-pools-ruben-0g5a6755.jpg?width=1766&height=1226&format=webp&v=1da398aa75b4ea0",
       "sourcePage": "https://www.grandhoteltremezzo.com/en/resort/pools/",
       "candidateContext": "    ",
       "credit": "Official hotel photo",
-      "sha256": "57dd89c9b65913ec855910c904fd472696a8426bbd83e4d2f23eda61d29cfa00",
-      "dhash": "0011001000110011000010010100001111110011101101110011111010001001",
-      "bytes": 234768,
+      "sha256": "cabd24d6196194cc06e7f9444de79ef4dd823e8ce801b60145dcde87e44d6f0d",
+      "dhash": "1011111100011100000001000000001100110011110100110011101100110010",
+      "bytes": 343018,
       "originalSize": [
         1766,
         1226
@@ -189,7 +193,9 @@
       "outputSize": [
         1729,
         1200
-      ]
+      ],
+      "rejectedSource": "https://www.grandhoteltremezzo.com/media/ikomnjus/grand_hotel_tremezzo-pools-julius-l1210114.jpg?width=1766&height=1226&format=webp&v=1da398a6417c380",
+      "rejectedCandidateContext": "REJECTED: visual dominated by upside-down building reflection in water, fails distinctive Water-on-the-Water floating pool subject and brand premium clarity."
     },
     {
       "property": "Passalacqua",
@@ -202,23 +208,25 @@
       "sourcePages": [
         "https://www.passalacqua.it/en/"
       ],
-      "visualQaWarning": "REJECTED: garden/cart foreground with villa mostly invisible; find real sunlit villa façade and terraced gardens.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/passalacqua/view-1.webp",
-      "downloadUrl": "https://www.passalacqua.it/media/boddhokh/passalacqua-luxury-hotel-lake-como_23.jpg?width=1050&height=684&format=webp&v=1d8eaacb8899b10",
-      "sourcePage": "https://www.passalacqua.it/en/",
-      "candidateContext": "    ",
-      "credit": "Official hotel photo",
-      "sha256": "eb84f4d973211fd3df50b5be1ceca8c13659ac1fbaf41f1e2ebd33753bd558ed",
-      "dhash": "0000000100000011010101100101001101100011001101100101111001011111",
-      "bytes": 158814,
+      "downloadUrl": "https://static.wixstatic.com/media/ccff2c_d250ea595d484f5584a7e73fc4aac696~mv2.webp",
+      "sourcePage": "https://www.katefulller.com/post/passalacqua-lake-como-boutique-hotel",
+      "candidateContext": "Passalacqua real eighteenth-century pale villa façade with pink and green gardens, terraced pool, mountains and daylight",
+      "credit": "Kate Fulller · confirmed sunny Passalacqua hotel façade",
+      "sha256": "cf57126d0db3eb62e7ed73646e25e9e7d2c9c29be3227b9cbe5655152aef7e1f",
+      "dhash": "0000000100010001000110010010011010010100100111110010011000100110",
+      "bytes": 498538,
       "originalSize": [
-        1050,
-        684
+        2560,
+        1442
       ],
       "outputSize": [
-        1050,
-        684
-      ]
+        1800,
+        1014
+      ],
+      "rejectedSource": "https://www.passalacqua.it/media/boddhokh/passalacqua-luxury-hotel-lake-como_23.jpg?width=1050&height=684&format=webp&v=1d8eaacb8899b10",
+      "rejectedCandidateContext": "REJECTED: garden/cart foreground with villa mostly invisible; find real sunlit villa façade and terraced gardens."
     },
     {
       "property": "Passalacqua",
@@ -398,23 +406,25 @@
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "REJECTED: hazy dark high-elevation panorama with mostly barren mountain foreground; find rich daylight turquoise water and green mountains suitable for hero.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-1.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Panorama_del_lago_di_Como.jpg/1920px-Panorama_del_lago_di_Como.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panorama_del_lago_di_Como.jpg",
-      "candidateContext": "Panorama del lago di Como.jpg",
-      "credit": "BeppeViews · CC BY 4.0",
-      "sha256": "a2f6d3d77cc4ef9964020ffee47f57f77f246c2596c38d1411937566020987bf",
-      "dhash": "0100000101000110010011101111010011001010111001101100011011001001",
-      "bytes": 215094,
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Panorama_Lago_di_Como.jpg/1920px-Panorama_Lago_di_Como.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panorama_Lago_di_Como.jpg",
+      "candidateContext": "Panorama Lago di Como.jpg",
+      "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
+      "sha256": "38a70b0a87278a1566451b214d99cfd176525b12a6860854e329354c3d15a595",
+      "dhash": "1000011011000110111000111100001001100010000110001001101110101000",
+      "bytes": 460038,
       "originalSize": [
         1920,
-        731
+        1280
       ],
       "outputSize": [
         1800,
-        685
-      ]
+        1200
+      ],
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Panorama_del_lago_di_Como.jpg/1920px-Panorama_del_lago_di_Como.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "REJECTED: hazy dark high-elevation panorama with mostly barren mountain foreground; find rich daylight turquoise water and green mountains suitable for hero."
     },
     {
       "key": "scene-2",
@@ -555,23 +565,25 @@
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "REJECTED: Villa Monastero arcade interior (Varenna area) rather than requested colorful waterfront; must use a true photographed Varenna village view.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-6.webp",
-      "downloadUrl": "https://lakecomotravel.com/wp-content/uploads/2024/12/villa-monastero-varenna-lake-como-italy.webp",
-      "sourcePage": "https://lakecomotravel.com/varenna/",
-      "candidateContext": "Official CMS image matched by source context",
-      "credit": "Official hotel CMS",
-      "sha256": "a5a6d9adc5673fec47cc66c0d2070140a9ff08b81ef82f1517efd3998cf606f5",
-      "dhash": "0000001000000110111001101010011011100111111001101110011110011001",
-      "bytes": 120368,
+      "downloadUrl": "https://images.pexels.com/photos/29185823/pexels-photo-29185823.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      "sourcePage": "https://www.pexels.com/photo/colorful-houses-along-lake-como-waterfront-29185823/",
+      "candidateContext": "Varenna colourful old-town houses on genuine Lake Como waterfront photographed in sunshine",
+      "credit": "Pexels · C1 Superstar · original Varenna photo, Pexels licence",
+      "sha256": "5772b03508c9f4902cce9ddb5d174c223d4f3eb44ba7e361d8babaefd8a66a2c",
+      "dhash": "0011101101111100110010111001001100001101000101111110011111100011",
+      "bytes": 517526,
       "originalSize": [
         1800,
-        1012
+        1200
       ],
       "outputSize": [
         1800,
-        1012
-      ]
+        1200
+      ],
+      "rejectedSource": "https://lakecomotravel.com/wp-content/uploads/2024/12/villa-monastero-varenna-lake-como-italy.webp",
+      "rejectedCandidateContext": "REJECTED: Villa Monastero arcade interior (Varenna area) rather than requested colorful waterfront; must use a true photographed Varenna village view."
     },
     {
       "key": "scene-7",
