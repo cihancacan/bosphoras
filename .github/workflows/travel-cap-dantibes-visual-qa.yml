@@ -1,0 +1,48 @@
+name: Travel Cap d'Antibes — inspect real local WebP images (GitHub only)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: ['.github/workflows/travel-cap-dantibes-visual-qa.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'Pillow>=10,<12'
+      - name: Human inspect actual 21 destinations images, no publication
+        run: |
+          python - <<'PY'
+          import base64,io,json,math
+          from pathlib import Path
+          from PIL import Image,ImageOps,ImageFont,ImageDraw
+          m=json.loads(Path("data/travel/capDAntibesMediaCandidates.json").read_text())
+          items=m["hotels"]+m["destinationScenes"]
+          assert len(items)==21
+          font=ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",14)
+          for block in range(math.ceil(len(items)/6)):
+              out=Image.new("RGB",(1260,815),(247,244,240))
+              pen=ImageDraw.Draw(out)
+              for n,x in enumerate(items[block*6:block*6+6]):
+                  col=n%3;row=n//3
+                  left=12+col*415;top=12+row*398
+                  if x.get("localPath"):
+                      p=Path("public"+x["localPath"]);assert p.exists(),str(p)
+                      with Image.open(p) as original:
+                          rendered=ImageOps.fit(original.convert("RGB"),(390,291),method=Image.Resampling.LANCZOS)
+                      out.paste(rendered,(left,top))
+                  else:pen.text((left+40,top+110),"PHOTO ABSENTE",font=font,fill=(120,25,25))
+                  pen.text((left,top+302),(x.get("propertyKey") or "destination")[:39],font=font,fill=(25,43,55))
+                  pen.text((left,top+327),x["key"]+" | "+str(x.get("outputSize","")),font=font,fill=(35,50,64))
+                  pen.text((left,top+352),(x.get("candidateContext") or x.get("label") or "")[:45],font=font,fill=(55,65,76))
+              buf=io.BytesIO();out.save(buf,"JPEG",quality=68,optimize=True)
+              print("CAP_ANTIBES_IMAGE_START_"+str(block+1))
+              print(base64.b64encode(buf.getvalue()).decode())
+              print("CAP_ANTIBES_IMAGE_END_"+str(block+1))
+          print("PHOTO_REVIEW_PENDING",sum(not x["visuallyVerified"] for x in items))
+          PY
