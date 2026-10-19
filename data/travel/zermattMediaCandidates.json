@@ -4,8 +4,8 @@
   "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 7,
-  "downloadedDestinationCandidates": 3,
+  "downloadedHotelCandidates": 9,
+  "downloadedDestinationCandidates": 5,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -97,14 +97,30 @@
       "property": "Mont Cervin Palace",
       "propertyKey": "mont-cervin-palace",
       "key": "view-1",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.montcervinpalace.ch/en/",
         "https://www.montcervinpalace.ch/en/hotel/"
       ],
-      "rights": "Photographs from official property HTML; independent commercial licence must be verified"
+      "rights": "Photographs from official property HTML; independent commercial licence must be verified",
+      "visualQaWarning": "New image candidate; inspect composition, location, season, uniqueness and source attribution before publishing.",
+      "localPath": "/images/travel/zermatt-premium/mont-cervin-palace/view-1.webp",
+      "sourcePage": "https://www.europeexpress.com/hotels/mont-cervin-palace/",
+      "downloadUrl": "https://int-source-images.s3-eu-west-1.amazonaws.com/images/0a51f3556b574cd6b504b742dc3ae1c4.jpg",
+      "candidateContext": "Mont Cervin Palace hotel exterior    ",
+      "credit": "Official hotel page / image",
+      "sha256": "86b8893bb7acbeb8be4ad719ea60b017ccf6cc62ebb33fd1a9b0d2c95b408576",
+      "bytes": 87128,
+      "originalSize": [
+        1024,
+        768
+      ],
+      "outputSize": [
+        1024,
+        768
+      ]
     },
     {
       "property": "Mont Cervin Palace",
@@ -235,7 +251,7 @@
       "property": "Riffelalp Resort 2222m",
       "propertyKey": "riffelalp",
       "key": "view-1",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -244,10 +260,22 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "sourcePage": "https://www.riffelalp.com/en/gallery/?L=1",
-      "candidateContext": "riffelalp-resort-spa-2222m-baignade-cervin-hiver-piscine-01.jpeg    ",
+      "candidateContext": "    ",
       "credit": "Official hotel page / image",
       "rejectedSource": "https://www.riffelalp.com/media/tf0lzkb0/spa_winter_107.jpg?width=2000&height=1125&quality=80&v=1dd1dcea2a5db70",
-      "visualQaWarning": "Overexposed blurry spa photo with an unidentifiable person; not premium enough for a hotel gallery."
+      "visualQaWarning": "New image candidate; inspect composition, location, season, uniqueness and source attribution before publishing.",
+      "localPath": "/images/travel/zermatt-premium/riffelalp/view-1.webp",
+      "downloadUrl": "https://www.riffelalp.com/media/1xidvl14/spa_19.jpg?rmode=max&width=1920&height=1080&quality=80&v=1dd1dded83bdd10",
+      "sha256": "b02c4bd98fcfcd15eab3167cdf493cfb67ac4a4537e5195d74223f165ec2d98e",
+      "bytes": 100656,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1700,
+        956
+      ]
     },
     {
       "property": "Riffelalp Resort 2222m",
@@ -411,31 +439,55 @@
       "key": "scene-5",
       "placeLabel": "Gornergrat",
       "searchQuery": "Gornergrat Switzerland",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Matterhorn.jpg",
-      "candidateContext": "File:Matterhorn.jpg",
-      "credit": "Man Ho Lam ( Lemon_ho )",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Above_the_Alps_2018-07-14_103117.jpg",
+      "candidateContext": "File:Above the Alps 2018-07-14 103117.jpg",
+      "credit": "Xonqnopp · CC BY-SA 4.0",
       "license": "CC BY 2.5",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
-      "visualQaWarning": "Second Matterhorn lake reflection mislabeled as Gornergrat sector; redundant with Riffelsee scene-1.",
-      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Matterhorn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+      "visualQaWarning": "New image candidate; inspect composition, location, season, uniqueness and source attribution before publishing.",
+      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Matterhorn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-5.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Above_the_Alps_2018-07-14_103117.jpg/1920px-Above_the_Alps_2018-07-14_103117.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha256": "d967b4abf70a7389c8e4b99f5feecd9bf4012e16c91f3814e75fabc0d2077db0",
+      "bytes": 211398,
+      "originalSize": [
+        1920,
+        1275
+      ],
+      "outputSize": [
+        1700,
+        1129
+      ]
     },
     {
       "key": "scene-6",
       "placeLabel": "Riffelalp",
       "searchQuery": "Riffelalp Switzerland",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "visualQaWarning": "Another close-up of the Matterhorn; duplicates the subject of other scenes rather than describing Gornergrat or Riffelberg's distinct geography.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:3818_-_Riffelberg_-_Matterhorn_viewed_from_Gornergratbahn.JPG",
-      "candidateContext": "File:3818 - Riffelberg - Matterhorn viewed from Gornergratbahn.JPG",
-      "credit": "Andrew Bossi · CC BY-SA 2.5",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/3818_-_Riffelberg_-_Matterhorn_viewed_from_Gornergratbahn.JPG/1920px-3818_-_Riffelberg_-_Matterhorn_viewed_from_Gornergratbahn.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "visualQaWarning": "New image candidate; inspect composition, location, season, uniqueness and source attribution before publishing.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Matterhorn_Cervino_4478_m_from_ski_run_from_Gornergrat_3089_m_to_Riffelberg_2582_m_-_panoramio.jpg",
+      "candidateContext": "File:Matterhorn Cervino 4478 m from ski run from Gornergrat 3089 m to Riffelberg 2582 m - panoramio.jpg",
+      "credit": "qwesy qwesy · CC BY 3.0",
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/3818_-_Riffelberg_-_Matterhorn_viewed_from_Gornergratbahn.JPG/1920px-3818_-_Riffelberg_-_Matterhorn_viewed_from_Gornergratbahn.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-6.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Matterhorn_Cervino_4478_m_from_ski_run_from_Gornergrat_3089_m_to_Riffelberg_2582_m_-_panoramio.jpg/1920px-Matterhorn_Cervino_4478_m_from_ski_run_from_Gornergrat_3089_m_to_Riffelberg_2582_m_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha256": "bbd57fa2b7a2b92721d7f8ae9b049795a74a9c495b68baeec9bcdb70caa96fc9",
+      "bytes": 293704,
+      "originalSize": [
+        1920,
+        1054
+      ],
+      "outputSize": [
+        1700,
+        933
+      ]
     },
     {
       "key": "scene-7",
