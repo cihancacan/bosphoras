@@ -186,22 +186,22 @@
         "https://www.grandhoteltremezzo.com/en/"
       ],
       "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "rejectedSource": "https://www.grandhoteltremezzo.com/media/pbqjenz3/grand_hotel_tremezzo-pools-ruben-0g5a6755.jpg?width=1766&height=1226&format=webp&v=1da398aa75b4ea0",
-      "rejectedCandidateContext": "REJECTED AFTER VISUAL QA: this is a beautiful land-based garden swimming pool, not the requested Water-on-the-Water floating lake pool. Do not miscaption.",
+      "rejectedSource": "https://www.grandhoteltremezzo.com/media/rxyntdgz/grand_hotel_tremezzo-pools-julius-dji_0031.jpg?width=1825&height=1217&format=webp&v=1da398aa747edb0",
+      "rejectedCandidateContext": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/grand-hotel-tremezzo/view-3.webp",
-      "downloadUrl": "https://www.grandhoteltremezzo.com/media/rxyntdgz/grand_hotel_tremezzo-pools-julius-dji_0031.jpg?width=1825&height=1217&format=webp&v=1da398aa747edb0",
+      "downloadUrl": "https://www.grandhoteltremezzo.com/media/ikomnjus/grand_hotel_tremezzo-pools-julius-l1210114.jpg?width=1766&height=1226&format=webp&v=1da398a6417c380",
       "sourcePage": "https://www.grandhoteltremezzo.com/en/resort/pools/",
-      "candidateContext": "Grand Hotel Tremezzo officially labelled Pools Julius DJI 0031 showing Water-on-the-Water floating lake pool",
-      "credit": "Grand Hotel Tremezzo · official floating pool photograph",
-      "sha256": "aeacc3b86d77894e86c2f496e37c53b6977e6c6cbfba5eb55cb140c073962a5c",
-      "dhash": "0110110001101100011000000011010001011100011110010110100111010011",
-      "bytes": 346034,
+      "candidateContext": "    ",
+      "credit": "Official hotel photo",
+      "sha256": "57dd89c9b65913ec855910c904fd472696a8426bbd83e4d2f23eda61d29cfa00",
+      "dhash": "0011001000110011000010010100001111110011101101110011111010001001",
+      "bytes": 234768,
       "originalSize": [
-        1825,
-        1217
+        1766,
+        1226
       ],
       "outputSize": [
-        1800,
+        1729,
         1200
       ]
     },
@@ -419,22 +419,22 @@
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
       "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Panorama_Lago_di_Como.jpg/1920px-Panorama_Lago_di_Como.jpg",
-      "rejectedCandidateContext": "REJECTED AFTER VISUAL QA: cloudy dusk, low contrast and dark brown hillsides unsuitable as premium Lake Como destination hero.",
+      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Lago_di_Como_panorama.jpg/1920px-Lago_di_Como_panorama.jpg",
+      "rejectedCandidateContext": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-1.webp",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Lago_di_Como_panorama.jpg/1920px-Lago_di_Como_panorama.jpg",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lago_di_Como_panorama.jpg",
-      "candidateContext": "Lago di Como panorama.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Lago_Como_aerial_1.jpg/1920px-Lago_Como_aerial_1.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lago_Como_aerial_1.jpg",
+      "candidateContext": "Lago Como aerial 1.jpg",
       "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
-      "sha256": "eedc47bd71e3d73e0c28e54ca98238e94a51126295096835e9f3c09b46459fa0",
-      "dhash": "0010001100001111000111010100011011010110010101100000011100000100",
-      "bytes": 423344,
+      "sha256": "8928f2c0b56a3b4f9c863f1722a55b74044b63adf3c5c36b1a74eacc47725694",
+      "dhash": "0010011100111111101111110001111100111011111111111111111100111111",
+      "bytes": 135582,
       "originalSize": [
         1920,
-        1440
+        1280
       ],
       "outputSize": [
-        1600,
+        1800,
         1200
       ]
     },
@@ -515,15 +515,15 @@
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "REJECTED: Villa Carlotta hall interior rather than the promised botanical gardens and exterior.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-4.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Villa_Carlotta%2C_Tremezzo%2C_Lake_Como.jpg/1920px-Villa_Carlotta%2C_Tremezzo%2C_Lake_Como.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Villa_Carlotta,_Tremezzo,_Lake_Como.jpg",
-      "candidateContext": "Villa Carlotta, Tremezzo, Lake Como.jpg",
-      "credit": "Ray in Manila · CC BY 2.0",
-      "sha256": "62df54a63c28b5df8dd745a63aeb8faf1eaf499dd4be7b20044dc6db7af56e09",
-      "dhash": "0011001110001010101101100000111100001011001010101000111011001100",
-      "bytes": 764762,
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Veduta_di_villa_Carlotta%2C_Tremezzo%2C_Lago_di_Como.jpg/1920px-Veduta_di_villa_Carlotta%2C_Tremezzo%2C_Lago_di_Como.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Veduta_di_villa_Carlotta%2C_Tremezzo%2C_Lago_di_Como.jpg",
+      "candidateContext": "Veduta di villa Carlotta, Tremezzo, Lago di Como.jpg",
+      "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
+      "sha256": "5ffc0897301036be7ea1bbd02eac751e8617ed47a7f962351683d67c8bd89d72",
+      "dhash": "0110101111100011101100110000011010001111100011110010011100001111",
+      "bytes": 661592,
       "originalSize": [
         1920,
         1280
@@ -531,7 +531,9 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Villa_Carlotta%2C_Tremezzo%2C_Lake_Como.jpg/1920px-Villa_Carlotta%2C_Tremezzo%2C_Lake_Como.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "REJECTED: Villa Carlotta hall interior rather than the promised botanical gardens and exterior."
     },
     {
       "key": "scene-5",
