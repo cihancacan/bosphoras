@@ -3,7 +3,7 @@
   "generatedAt": "2026-10-19",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 6,
+  "downloadedHotelCandidates": 1,
   "downloadedDestinationCandidates": 0,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
@@ -53,29 +53,18 @@
       "propertyKey": "royal-riviera",
       "key": "view-1",
       "slotIntent": "seafront hotel exterior",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.royal-riviera.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/royal-riviera/view-1.webp",
-      "downloadUrl": "https://www.royal-riviera.com/wp-content/uploads/2022/04/DSC_8490_1440x864.jpg",
+      "visualQaWarning": "Hotel pool photograph shows two people as main subjects with dark shaded background; does not fulfil an exterior or grounds premium hero slot.",
       "sourcePage": "https://www.royal-riviera.com/",
       "candidateContext": "    ",
       "credit": "Official hotel photo",
-      "sha256": "a3b43992cb203b1a09a4206f33200e6feff2a86af3530922079298976f646196",
-      "dhash": "0010011100101111001001010101001100101010001110010010111100100111",
-      "bytes": 269942,
-      "originalSize": [
-        1440,
-        864
-      ],
-      "outputSize": [
-        1440,
-        864
-      ]
+      "rejectedSource": "https://www.royal-riviera.com/wp-content/uploads/2022/04/DSC_8490_1440x864.jpg",
+      "rejectedCandidateContext": "    "
     },
     {
       "property": "Royal-Riviera",
@@ -109,12 +98,11 @@
       "key": "view-1",
       "slotIntent": "hotel pool garden exterior",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://villacapferrat.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/la-villa-cap-ferrat/view-1.webp",
       "downloadUrl": "https://villacapferrat.fr/wp-content/uploads/2024/12/drone-hotel-villa-cap-ferrat1-scaled.jpg",
       "sourcePage": "https://villacapferrat.fr/en/home/",
@@ -130,123 +118,84 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "La Villa Cap Ferrat — vue aérienne réelle du bâtiment, de la piscine et du village avec la mer en arrière-plan",
+      "enCaption": "La Villa Cap Ferrat — aerial view of the actual hotel, pool, village and Mediterranean coastline",
+      "ownerRightsAuthorization": "Bosphoras operator authorisation for sourced image in project, 2026-10-19",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Inspected actual local WebP and verified exact La Villa Cap Ferrat building and resort layout against the original property website."
     },
     {
       "property": "La Villa Cap Ferrat Hôtel & Spa",
       "propertyKey": "la-villa-cap-ferrat",
       "key": "view-2",
       "slotIntent": "sea-facing terrace bedroom",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://villacapferrat.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/la-villa-cap-ferrat/view-2.webp",
-      "downloadUrl": "https://villacapferrat.fr/wp-content/uploads/2024/12/2025-junior-suite-2.jpg",
+      "visualQaWarning": "Ordinary small room photographed with inadequate premium composition; replace with sunlit sea-facing superior terrace category.",
       "sourcePage": "https://villacapferrat.fr/en/rooms/",
       "candidateContext": "Official CMS image matched by source context",
       "credit": "Official hotel CMS",
-      "sha256": "1b2d38a3f0564e555bb0cb4cd1a39978cdb19492f6199755285181496b3a4e85",
-      "dhash": "1100000111100000101000000110011011001000000110000011011010010110",
-      "bytes": 164302,
-      "originalSize": [
-        1984,
-        1170
-      ],
-      "outputSize": [
-        1800,
-        1061
-      ]
+      "rejectedSource": "https://villacapferrat.fr/wp-content/uploads/2024/12/2025-junior-suite-2.jpg",
+      "rejectedCandidateContext": "Official CMS image matched by source context"
     },
     {
       "property": "La Villa Cap Ferrat Hôtel & Spa",
       "propertyKey": "la-villa-cap-ferrat",
       "key": "view-3",
       "slotIntent": "spa sauna jacuzzi",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://villacapferrat.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/la-villa-cap-ferrat/view-3.webp",
-      "downloadUrl": "https://villacapferrat.fr/wp-content/uploads/2024/12/villa-cap-ferrat-spa-4-scaled.jpg",
+      "visualQaWarning": "Dark and dated spa image; subject is authentic but below Bosphoras luxurious lighting and framing standard.",
       "sourcePage": "https://villacapferrat.fr/en/home/",
       "candidateContext": "Official CMS image matched by source context",
       "credit": "Official hotel CMS",
-      "sha256": "2121f9d33399455326e2e4799c1d89e1109fd3facc7cbd9183d63f19f4973805",
-      "dhash": "1111110111110101101101011101010110011100100011011001010010010000",
-      "bytes": 291860,
-      "originalSize": [
-        2048,
-        1363
-      ],
-      "outputSize": [
-        1800,
-        1198
-      ]
+      "rejectedSource": "https://villacapferrat.fr/wp-content/uploads/2024/12/villa-cap-ferrat-spa-4-scaled.jpg",
+      "rejectedCandidateContext": "Official CMS image matched by source context"
     },
     {
       "property": "Hôtel Brise Marine",
       "propertyKey": "brise-marine",
       "key": "view-1",
       "slotIntent": "Italianate villa historic exterior",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.hotel-brisemarine.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/brise-marine/view-1.webp",
-      "downloadUrl": "https://www.hotel-brisemarine.com/images/gallery/gallerie/0036_ok_cliente_mod.jpg",
+      "visualQaWarning": "Sea panorama and stone lion statue rather than a photograph of the actual Italian-style hotel exterior.",
       "sourcePage": "https://www.hotel-brisemarine.com/",
       "candidateContext": "    ",
       "credit": "Official hotel photo",
-      "sha256": "8c0a3c5c76518a11a17c79c568e871bfc7f07a5756a1ca8375a807064d6a3ef2",
-      "dhash": "0000111100001111000110110000000000100101001001001011010000111010",
-      "bytes": 296456,
-      "originalSize": [
-        1890,
-        1417
-      ],
-      "outputSize": [
-        1601,
-        1200
-      ]
+      "rejectedSource": "https://www.hotel-brisemarine.com/images/gallery/gallerie/0036_ok_cliente_mod.jpg",
+      "rejectedCandidateContext": "    "
     },
     {
       "property": "Hôtel Brise Marine",
       "propertyKey": "brise-marine",
       "key": "view-2",
       "slotIntent": "sea-view premium room terrace",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.hotel-brisemarine.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/brise-marine/view-2.webp",
-      "downloadUrl": "https://www.hotel-brisemarine.com/images/gallery/chambres/Balcon.JPG",
+      "visualQaWarning": "Plastic patio furniture and flat lighting fall below Bosphoras premium editorial photo quality.",
       "sourcePage": "https://www.hotel-brisemarine.com/en/chambres-230.html",
       "candidateContext": "    ",
       "credit": "Official hotel photo",
-      "sha256": "f07855028b35fae48b500eb72f40a8ddff109704c00f78736ac697ac0452a9fc",
-      "dhash": "0010001110011001110111001011111001111011110111011000110011010100",
-      "bytes": 96010,
-      "originalSize": [
-        1200,
-        900
-      ],
-      "outputSize": [
-        1200,
-        900
-      ]
+      "rejectedSource": "https://www.hotel-brisemarine.com/images/gallery/chambres/Balcon.JPG",
+      "rejectedCandidateContext": "    "
     },
     {
       "property": "Hôtel Brise Marine",
