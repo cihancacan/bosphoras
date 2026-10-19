@@ -119,6 +119,27 @@ lib.DIRECT_WIKIMEDIA={}
 # A candidate already visually approved is never replaced, nor is a different
 # hotel's photograph borrowed to fill a missing slot. The library enforces this.
 
+# Documentary-specific and official sources for final three visual QA holds.
+# Actual "DJI 0031" appears alongside floating Water-on-the-Water pool on official site.
+# Filter by that exact photographer image filename rather than a vague "pool" hint.
+_lake_pool_page="https://www.grandhoteltremezzo.com/en/resort/pools/"
+lib.HOTEL_DIRECT["grand-hotel-tremezzo/view-3"]=[
+ (260,url,page,
+  "Grand Hotel Tremezzo officially labelled Pools Julius DJI 0031 showing Water-on-the-Water floating lake pool",
+  "Grand Hotel Tremezzo · official floating pool photograph")
+ for _,url,page,_,_ in lib.hotels_from_page(_lake_pool_page,["dji","0031"])
+ if "dji" in url.lower() and "0031" in url.lower()
+]
+lib.DIRECT_LANDSCAPES["scene-1"]=[
+ *lib.direct_wikimedia("Lago Como aerial 1.jpg"),
+ *lib.direct_wikimedia("Lake Como panorama from ferry off Argegno.jpg")
+]
+lib.DIRECT_LANDSCAPES["scene-4"]=[
+ *lib.direct_wikimedia("Villa Carlotta - the garden.JPG"),
+ *lib.direct_wikimedia("Tremezzo Villa Carlotta fioritura azalee.jpg"),
+ *lib.direct_wikimedia("Tremezzo Villa Carlotta giardino vecchio Azalee.jpg")
+]
+
 # Replacement frames individually matched to the real hotels; unreviewed by default.
 lib.HOTEL_DIRECT["villa-d-este/view-1"]=[
  (200,"https://tg24.sky.it/assets/images/587367d38599034524f542152a0f5f6993917391/skytg24/it/economia/2022/09/02/forum-ambrosetti-2022-cernobbio/villa%20este%20cernobbio%20fotogramma.jpg",
