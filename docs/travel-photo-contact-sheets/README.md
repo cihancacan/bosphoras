@@ -15,4 +15,4 @@ Les photographies récemment remplacées restent rouges tant qu'elles n'ont pas 
 - [Val d'Isère](val-disere.md) — 21/21 fichiers candidats, 2 alertes ; [ouvrir l'image seule](val-disere.jpg)
 - [Verbier](verbier.md) — 21/21 fichiers candidats, 2 alertes ; [ouvrir l'image seule](verbier.jpg)
 - [Saint-Jean-Cap-Ferrat](saint-jean-cap-ferrat.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](saint-jean-cap-ferrat.jpg)
-- [Cap d’Antibes](cap-dantibes.md) — 21/21 fichiers candidats, 5 alertes ; [ouvrir l'image seule](cap-dantibes.jpg)
+- [Cap d’Antibes](cap-dantibes.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](cap-dantibes.jpg)
