@@ -118,5 +118,78 @@ lib.COMMONS_EXACT={}
 lib.DIRECT_WIKIMEDIA={}
 # A candidate already visually approved is never replaced, nor is a different
 # hotel's photograph borrowed to fill a missing slot. The library enforces this.
+
+# Replacement frames individually matched to the real hotels; unreviewed by default.
+lib.HOTEL_DIRECT["villa-d-este/view-1"]=[
+ (200,"https://tg24.sky.it/assets/images/587367d38599034524f542152a0f5f6993917391/skytg24/it/economia/2022/09/02/forum-ambrosetti-2022-cernobbio/villa%20este%20cernobbio%20fotogramma.jpg",
+  "https://tg24.sky.it/economia/2025/09/04/forum-ambrosetti-cernobbio-2025",
+  "Villa d'Este real cream historic lakefront façade photographed in brilliant daylight from water, wooded slopes behind",
+  "Sky TG24 · identified actual Villa d'Este Cernobbio daylight photograph")
+]
+lib.HOTELS["grand-hotel-tremezzo"]["view-2"]=[
+ ("https://www.grandhoteltremezzo.com/en/rooms-suites/signature-suite/",["0g5a0133","0g5a0105","signature","bedroom","suite"]),
+ ("https://www.grandhoteltremezzo.com/en/rooms-suites/lake-view-deluxe-room",["0g5a0249","0g5a0267","bedroom","room"])
+]
+lib.HOTEL_DIRECT["grand-hotel-tremezzo/view-2"]=[
+ (190,"https://d19lgisewk9l6l.cloudfront.net/assetbank/Suite_Carlotta_Bedroom_Grand_Hotel_Tremezzo_391761.jpg",
+  "https://www.wexas.com/travel-article/italian-lakes-in-focus",
+  "Actual Grand Hotel Tremezzo Suite Carlotta bedchamber with fine period furniture and bedroom amenities",
+  "Wexas Travel · accurately labelled Grand Hotel Tremezzo Suite Carlotta")
+]
+lib.HOTELS["grand-hotel-tremezzo"]["view-3"]=[
+ ("https://www.grandhoteltremezzo.com/en/resort/pools/",["dji-0031","water-on-the-water","pools","wow","l1210114"]),
+ ("https://www.grandhoteltremezzo.com/it/gallery/",["water-on-the-water","wow","pool","floating"])
+]
+lib.HOTEL_DIRECT["passalacqua/view-1"]=[
+ (190,"https://static.wixstatic.com/media/ccff2c_d250ea595d484f5584a7e73fc4aac696~mv2.webp",
+  "https://www.katefulller.com/post/passalacqua-lake-como-boutique-hotel",
+  "Passalacqua real eighteenth-century pale villa façade with pink and green gardens, terraced pool, mountains and daylight",
+  "Kate Fulller · confirmed sunny Passalacqua hotel façade"),
+ (175,"https://img.i-scmp.com/cdn-cgi/image/fit%3Dcontain%2Cwidth%3D1098%2Cformat%3Dauto/sites/default/files/styles/1200x800/public/d8/images/canvas/2022/07/15/38e1f768-b30d-46c4-9d63-0a2e7305fe81_1d533c5b.jpg?itok=dzLsIzie&v=1657880644",
+  "https://www.scmp.com/magazines/post-magazine/travel/article/3184328/lake-como-villa-once-hosted-winston-churchill-now",
+  "Passalacqua real cream villa and awnings in daylit grounds by Moltrasio",
+  "South China Morning Post · exact Passalacqua hotel photo")
+]
+lib.DIRECT_LANDSCAPES["scene-1"]=lib.direct_wikimedia("Panorama Lago di Como.jpg")+lib.direct_wikimedia("Lago di Como panorama.jpg")
+lib.DIRECT_LANDSCAPES["scene-4"]=lib.direct_wikimedia("Tremezzo Villa Carlotta exterior (14).jpg")
+lib.DIRECT_LANDSCAPES["scene-6"]=[
+ (180,"https://fullsuitcase.com/wp-content/uploads/2022/10/Riva-Grande-waterfront-area-in-Varenna-Lake-Como-1024x683.jpg",
+  "https://fullsuitcase.com/varenna-italy/",
+  "Genuine Varenna Riva Grande sunny shoreline and colourful houses at lake",
+  "Full Suitcase · original Varenna Riva Grande waterfront photography"),
+ (175,"https://images.pexels.com/photos/29185823/pexels-photo-29185823.jpeg?auto=compress&cs=tinysrgb&w=1800",
+  "https://www.pexels.com/photo/colorful-houses-along-lake-como-waterfront-29185823/",
+  "Varenna colourful old-town houses on genuine Lake Como waterfront photographed in sunshine",
+  "Pexels · C1 Superstar · original Varenna photo, Pexels licence")
+]
+TO_REPLACE={
+ ("villa-d-este","view-1"),("grand-hotel-tremezzo","view-2"),
+ ("grand-hotel-tremezzo","view-3"),("passalacqua","view-1"),
+ ("destination","scene-1"),("destination","scene-4"),("destination","scene-6")
+}
+_original_collect=lib.collect
+def replacement_collect(slot,candidates,sha_used,url_used,visual_used):
+    group=slot.get("propertyKey") or "destination"
+    if (group,slot["key"]) not in TO_REPLACE or slot.get("visuallyVerified") or not slot.get("visualQaWarning"):
+        return _original_collect(slot,candidates,sha_used,url_used,visual_used)
+    original=dict(slot)
+    prior=original.get("downloadUrl")
+    if prior:url_used.add(prior.split("?")[0])
+    for field in ("localPath","downloadUrl","sourcePage","candidateContext","credit",
+                  "sha256","dhash","bytes","originalSize","outputSize",
+                  "frCaption","enCaption"):
+        slot.pop(field,None)
+    slot["status"]="missing";slot["visuallyVerified"]=False;slot["commercialRightsCleared"]=False
+    try:ok=_original_collect(slot,candidates,sha_used,url_used,visual_used)
+    except Exception:
+        slot.clear();slot.update(original);raise
+    if ok:
+        slot["rejectedSource"]=prior
+        slot["rejectedCandidateContext"]=original.get("visualQaWarning","Previously rejected original")
+        return True
+    slot.clear();slot.update(original)
+    return False
+lib.collect=replacement_collect
+
 if __name__=="__main__":
  lib.main()
