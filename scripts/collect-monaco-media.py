@@ -24,20 +24,20 @@ HOTELS={
  "hotel-de-paris":{
   "view-1":[("https://www.montecarlosbm.com/en/hotel-monaco/hotel-paris-monte-carlo",["hotel","paris","facade","exterior","casino"])],
   "view-2":[("https://www.montecarlosbm.com/en/hotel-monaco/hotel-paris-monte-carlo/accommodation",["suite","room","terrace"])],
-  "view-3":[("https://www.montecarlosbm.com/en/hotel-monaco/hotel-paris-monte-carlo",["american","bar","louis","dining"])],
+  "view-3":[("https://www.montecarlosbm.com/en/restaurant-monaco/le-bar-americain",["bar","americain","interior","ambience"]),("https://www.montecarlosbm.com/en/hotel-monaco/hotel-paris-monte-carlo",["american","bar","louis","dining"])],
  },
  "hotel-hermitage":{
   "view-1":[("https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo",["hermitage","facade","exterior","front"])],
   "view-2":[("https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo/accommodation",["suite","room","diamond","terrace"])],
-  "view-3":[("https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo",["winter","garden","verriere","jardin","eiffel"])],
+  "view-3":[("https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo",["winter","garden","verriere","jardin","eiffel"]),("https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo/le-jardin-d-hiver",["verriere","winter","jardin","garden"])],
  },
  "hotel-metropole":{
-  "view-1":[("https://www.metropole.com/",["metropole","exterior","courtyard","facade","entrance"])],
-  "view-2":[("https://www.metropole.com/rooms-suites",["suite","deluxe","room","bedroom","carré"])],
-  "view-3":[("https://www.metropole.com/",["odyssey","pool","guerlain","spa"])],
+  "view-1":[("https://www.metropole.com/",["metropole","exterior","courtyard","facade","entrance"]),("https://www.metropole.com/article/the-art-of-a-grand-entrance",["entrance","facade","courtyard"])],
+  "view-2":[("https://www.metropole.com/rooms-suites/carre-d-or-suite",["suite","carre","lounge","interior","room"]),("https://www.metropole.com/rooms-suites/deluxe-suite",["suite","living","interior"]),("https://www.metropole.com/rooms-suites",["suite","deluxe","room","bedroom","carré"])],
+  "view-3":[("https://www.metropole.com/odyssey-pool-by-karl-lagerfeld",["pool","odyssey","terrace","mural"]),("https://www.metropole.com/",["odyssey","pool","guerlain","spa"])],
  },
  "monte-carlo-bay":{
-  "view-1":[("https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort",["lagoon","lagon","pool","garden"])],
+  "view-1":[("https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort",["lagoon","lagon","pool","garden"]),("https://www.montecarlosbm.com/en/leisure-monaco/monte-carlo-bay-lagoon",["lagoon","sand","pool","lagon"])],
   "view-2":[("https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort/accommodation",["suite","room","bedroom","balcony","sea"])],
   "view-3":[("https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort",["garden","blue","bay","restaurant","marcel"])],
  }}
@@ -53,14 +53,14 @@ LANDSCAPES={
 "scene-9":("Mareterra Monaco new waterfront park 2025",("mareterra",))
 }
 COMMONS_EXACT={
- "scene-1":"2024-09-22 Casino de Monte Carlo.jpg",
- "scene-2":"View of luxury yachts on Port Hercules from Avenue de la Porte Neuve, Monaco (53969600210).jpg",
+ "scene-1":"Monte Carlo Casino met op de voorgrond een park met palmbomen, SFA209000090.jpg",
+ "scene-2":"Port Hercule Monaco.jpg",
  "scene-3":"View of the peninsula of Monaco.jpg",
- "scene-4":"View from Larvotto Beach (2022).jpg",
- "scene-5":"Port of Fontvieille from the exotic garden of Monaco.jpg",
+ "scene-4":"Monaco - Vue vers la plage du Larvotto 01.jpg",
+ "scene-5":"Monaco pano b.jpg",
  "scene-7":"Japanese garden Monaco (pond and bridge).jpg",
- "scene-8":"Monaco Oceanographic Museum 01.jpg",
- "scene-9":"Mareterra - Le Portier.jpg"
+ "scene-8":"Musée Océanographique de Monaco cliff view.jpg",
+ "scene-9":"Mareterra drone shot in 2024.png"
 }
 BLOCK=("logo","advert","banner","brochure","map","poster","screenshot","face portrait",
        "wikipedia-logo","svg","icon","watermark","grand prix car","football","yacht interior")
@@ -187,7 +187,7 @@ def collect(slot,candidates,sha_used,url_used,visual_used):
 def main():
  manifest=json.loads(MANIFEST.read_text(encoding="utf8"))
  slots=manifest["hotels"]+manifest["destinationScenes"]
- url_used={x["downloadUrl"].split("?")[0] for x in slots if x.get("downloadUrl")}
+ url_used={u.split("?")[0] for x in slots for u in (x.get("downloadUrl"),x.get("rejectedSource")) if isinstance(u,str) and u.startswith("https://")}
  sha_used={x["sha256"] for x in slots if x.get("sha256")}
  visual_used={x["dhash"] for x in slots if x.get("dhash")}
  updated=False
