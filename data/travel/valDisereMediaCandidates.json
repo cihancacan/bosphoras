@@ -176,21 +176,21 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/val-disere-premium/le-k2-chogori/view-3.webp",
-      "downloadUrl": "https://lek2chogori.com/media/cache/jadro_resize/rc/g9dpaQpB1790002177/jadroRoot/medias/5c115c2415935/695bebd8391df/k2c_bottleneck_gastonomie_22_stephane_berthe.jpg",
-      "sourcePage": "https://lek2chogori.com/fr/",
-      "candidateContext": "Le Bottleneck restaurant fondues fromagères et cuisine à la braise à Val d'Isère au K2 Chogori",
-      "sha256": "12e684a42f376d3b83ef0e977e20550e38fd791601c7a1bcb767cd0ef3dc6e66",
-      "bytes": 43068,
+      "downloadUrl": "https://api.cloudly.space/resize/cropratio/1920/1080/75/aHR0cHM6Ly9zdGF0aWMuYXBpZGFlLXRvdXJpc21lLmNvbS9maWxlc3RvcmUvb2JqZXRzLXRvdXJpc3RpcXVlcy9pbWFnZXMvMjUyLzY0LzM2NTIwMTg4LmpwZw==/image.webp",
+      "sourcePage": "https://www.valdisere.com/preparer-mon-sejour/hebergements/hotels/k2-chogori-val-disere-fr-4194656/",
+      "candidateContext": "Ski Shop_Le K2 Chogori",
+      "sha256": "5e87790b83420b9ba8278a048ff3878a5ebf3ca5186ad9e8baa6c313d7c34170",
+      "bytes": 130966,
       "originalSize": [
-        960,
-        640
+        1920,
+        1080
       ],
       "outputSize": [
-        960,
-        640
+        1700,
+        956
       ],
-      "visualQaWarning": "REJET VÉRIFIÉ : photo d'un plat de restaurant seul. Ne constitue pas une troisième photographie de l'hôtel/suite demandée.",
-      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "visualQaWarning": "Replacement from exact property/location page; needs visual verification before display.",
+      "ownerRightsAuthorization": "Bosphoras operator affirmed photo rights on 2026-10-15",
       "replacedSource": "https://lek2chogori.com/media/cache/jadro_resize/rc/g9dpaQpB1790002177/jadroRoot/medias/5c115c2415935/695bebd8391df/k2c_bottleneck_gastonomie_22_stephane_berthe.jpg",
       "credit": "Le K2 Chogori · photo on exact property's own gallery; original credit retained at source"
     },

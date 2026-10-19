@@ -295,21 +295,21 @@
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "localPath": "/images/travel/verbier-premium/experimental-chalet/view-1.webp",
-      "downloadUrl": "https://cdn.prod.website-files.com/6932dc91bcf2019d2c1c5686/69ef6482f8a89dc0988cb65d_Experimental%20Chalet%20Verbier%20Winter.webp",
-      "sourcePage": "https://www.experimentalchalet.com/",
-      "candidateContext": "Official hotel's page hero photograph",
-      "sha256": "de3a9248df9f985f45525c9d496db337aab1e6690f698145be82456fa46d7c6a",
-      "bytes": 30570,
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/5c82902829f2cc7bb5650e0a/1629722105997-7EVUZIWDGBROKKUU8DF7/Experimental-chalet-verbier-hotels-bedroom.jpg",
+      "sourcePage": "https://www.verbier.com/hotels/experimental-chalet",
+      "candidateContext": "Experimental-chalet-verbier-hotels-bedroom.jpg",
+      "sha256": "0a8174584f36b426f1f4f9f275964f6f1eb8fadf3b93f54503455356c7854cbe",
+      "bytes": 76674,
       "originalSize": [
-        1200,
-        630
+        1400,
+        935
       ],
       "outputSize": [
-        1200,
-        630
+        1400,
+        935
       ],
-      "visualQaWarning": "REJET VÉRIFIÉ : fenêtre d'un train flou, non identifiable comme Experimental Chalet Verbier.",
-      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "visualQaWarning": "Replacement from exact property/location page; needs visual verification before display.",
+      "ownerRightsAuthorization": "Bosphoras operator affirmed photo rights on 2026-10-15",
       "replacedSource": "https://cdn.prod.website-files.com/6932dc91bcf2019d2c1c5686/69ef6482f8a89dc0988cb65d_Experimental%20Chalet%20Verbier%20Winter.webp",
       "credit": "Experimental Chalet Verbier · photo on exact property's own gallery; original credit retained at source"
     },
