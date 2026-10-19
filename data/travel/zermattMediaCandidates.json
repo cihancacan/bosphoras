@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 6,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -571,7 +571,7 @@
       "key": "scene-6",
       "placeLabel": "Riffelalp",
       "searchQuery": "Riffelalp Switzerland",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
@@ -584,25 +584,13 @@
       "ownerRightsAuthorization": "Bosphoras operator confirms image usage rights on 2026-10-19",
       "visualReviewedAt": "2026-10-19",
       "visualReviewBasis": "Original WebP inspected individually, scene geographically matched to source with premium quality and seasonal accuracy.",
-      "visualQaWarning": "Downloaded exact publisher source; individual visual and rights review still required.",
-      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/3809_-_Zermatt_-_View_from_Gornergratbahn.JPG?width=1600",
-      "localPath": "/images/travel/zermatt-premium/destination/scene-6.webp",
-      "sha256": "478cb58b39c4bf7380f02ac60996dda77a9df206f0350aa358edf6ab39e9cc73",
-      "bytes": 750596,
-      "originalSize": [
-        1920,
-        1440
-      ],
-      "outputSize": [
-        1600,
-        1200
-      ]
+      "visualQaWarning": "Repeated photograph from Gornergratbahn with intrusive power/cable line, not suitable for Bosphoras luxury guide."
     },
     {
       "key": "scene-7",
       "placeLabel": "Klein Matterhorn",
       "searchQuery": "Klein Matterhorn",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
@@ -611,20 +599,8 @@
       "credit": "Photograph from the named original publisher; author needs confirmation",
       "license": "Public domain",
       "licenseUrl": "",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/KleinMatterhorn.jpg/1920px-KleinMatterhorn.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "visualQaWarning": "Downloaded exact publisher source; individual visual and rights review still required.",
-      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matterhorn_Glacier_Paradise%2C_Theodulglacier_-_panoramio.jpg?width=1600",
-      "localPath": "/images/travel/zermatt-premium/destination/scene-7.webp",
-      "sha256": "1757a67ad0ba91f0d2effa410f4823191d881263de1ffb3f475f3344ae50c568",
-      "bytes": 430626,
-      "originalSize": [
-        1920,
-        1440
-      ],
-      "outputSize": [
-        1600,
-        1200
-      ]
+      "rejectedSource": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matterhorn_Glacier_Paradise%2C_Theodulglacier_-_panoramio.jpg?width=1600",
+      "visualQaWarning": "Cold, flat glacier snapshot with overly blue cast and ski infrastructure, not premium enough for Matterhorn Glacier Paradise."
     },
     {
       "key": "scene-8",
