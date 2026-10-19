@@ -703,24 +703,24 @@
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "REPLACE: correct bay scene but midday tourist loungers and glare are not premium enough. Seeking a precisely geolocated sunlit landscape with hotel named correctly.",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/085F_Beaulieu-sur-Mer_%2815885396822%29.jpg/1920px-085F_Beaulieu-sur-Mer_%2815885396822%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedCandidateContext": "REJECTED HISTORIC: actual source is an archival 1978 photograph, not a contemporary premium Baie des Fourmis view. Seek authentic later photograph.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Baie_des_fourmis.jpg/1920px-Baie_des_fourmis.jpg",
+      "rejectedCandidateContext": "REPLACE: correct bay scene but midday tourist loungers and glare are not premium enough. Seeking a precisely geolocated sunlit landscape with hotel named correctly.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-9.webp",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Baie_des_fourmis.jpg/1920px-Baie_des_fourmis.jpg",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Baie_des_fourmis.jpg",
-      "candidateContext": "Baie des fourmis.jpg",
-      "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
-      "sha256": "26d59fdd7aea55bff9c90f0d03076916e4b4b2d88cb8d1559f87f87abeb954f1",
-      "dhash": "0000000100000011100000010010000100100001000101010101010101010101",
-      "bytes": 507452,
+      "downloadUrl": "https://cdn.iris-etourism.io/uploads/nice/2f2/226-121-38238690.webp",
+      "sourcePage": "https://www.explorenicecotedazur.com/hotel/hotel-delcloy/",
+      "candidateContext": "Sunlit aerial Baie des Fourmis coastal turquoise water, Delcloy hotel landscaped seafront on Saint-Jean-Cap-Ferrat",
+      "credit": "Office de tourisme Nice Cote d'Azur · Baie des Fourmis / Delcloy aerial photograph",
+      "sha256": "28956db11fec11102e362b0f9258b292b1ef6159330a8387457808b879de7dfb",
+      "dhash": "0001010000100100010010011101100011011000001110000100110010010100",
+      "bytes": 579418,
       "originalSize": [
-        1920,
-        1082
+        1600,
+        900
       ],
       "outputSize": [
-        1800,
-        1014
+        1600,
+        900
       ]
     }
   ]
