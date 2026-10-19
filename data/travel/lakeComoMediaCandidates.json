@@ -1,0 +1,284 @@
+{
+  "destination": "lake-como",
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "hotels": [
+    {
+      "property": "Villa d’Este",
+      "propertyKey": "villa-d-este",
+      "key": "view-1",
+      "slotIntent": "Historic waterfront Villa d'Este façade and manicured gardens",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.villadeste.com/"
+      ],
+      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+    },
+    {
+      "property": "Villa d’Este",
+      "propertyKey": "villa-d-este",
+      "key": "view-2",
+      "slotIntent": "Contemporary photo of real Villa d’Este furnished lake-facing suite",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.villadeste.com/"
+      ],
+      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+    },
+    {
+      "property": "Villa d’Este",
+      "propertyKey": "villa-d-este",
+      "key": "view-3",
+      "slotIntent": "Original Villa d’Este floating pool and lakeside grounds",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.villadeste.com/"
+      ],
+      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+    },
+    {
+      "property": "Grand Hotel Tremezzo",
+      "propertyKey": "grand-hotel-tremezzo",
+      "key": "view-1",
+      "slotIntent": "Grand Hotel Tremezzo Belle Époque ochre and white façade",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.grandhoteltremezzo.com/en/"
+      ],
+      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+    },
+    {
+      "property": "Grand Hotel Tremezzo",
+      "propertyKey": "grand-hotel-tremezzo",
+      "key": "view-2",
+      "slotIntent": "Actual Grand Hotel Tremezzo luxury suite with lake view",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.grandhoteltremezzo.com/en/"
+      ],
+      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+    },
+    {
+      "property": "Grand Hotel Tremezzo",
+      "propertyKey": "grand-hotel-tremezzo",
+      "key": "view-3",
+      "slotIntent": "Grand Hotel Tremezzo official Water-on-the-Water floating pool",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.grandhoteltremezzo.com/en/"
+      ],
+      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+    },
+    {
+      "property": "Passalacqua",
+      "propertyKey": "passalacqua",
+      "key": "view-1",
+      "slotIntent": "Passalacqua original Moltrasio villa façade and Italian gardens",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.passalacqua.it/en/"
+      ],
+      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+    },
+    {
+      "property": "Passalacqua",
+      "propertyKey": "passalacqua",
+      "key": "view-2",
+      "slotIntent": "Actual Passalacqua restored suite with bright 18th century decor",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.passalacqua.it/en/"
+      ],
+      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+    },
+    {
+      "property": "Passalacqua",
+      "propertyKey": "passalacqua",
+      "key": "view-3",
+      "slotIntent": "Passalacqua terrace and lakeside garden or pool",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.passalacqua.it/en/"
+      ],
+      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+    },
+    {
+      "property": "Il Sereno Lago di Como",
+      "propertyKey": "il-sereno",
+      "key": "view-1",
+      "slotIntent": "Il Sereno Torno contemporary architectural lakefront building",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.serenohotels.com/property/il-sereno/"
+      ],
+      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+    },
+    {
+      "property": "Il Sereno Lago di Como",
+      "propertyKey": "il-sereno",
+      "key": "view-2",
+      "slotIntent": "Original Il Sereno Patricia Urquiola lake-view suite",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.serenohotels.com/property/il-sereno/"
+      ],
+      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+    },
+    {
+      "property": "Il Sereno Lago di Como",
+      "propertyKey": "il-sereno",
+      "key": "view-3",
+      "slotIntent": "Il Sereno true lakefront infinity pool and waterfront",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.serenohotels.com/property/il-sereno/"
+      ],
+      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "label": "Panorama of real Lake Como green mountains and deep blue water",
+      "query": "Lake Como aerial Italy mountains",
+      "tag": "lake-como",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
+      ],
+      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+    },
+    {
+      "key": "scene-2",
+      "label": "Cernobbio lakeside and historic Villa d'Este waterfront",
+      "query": "Villa d Este Cernobbio shore",
+      "tag": "cernobbio",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
+      ],
+      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+    },
+    {
+      "key": "scene-3",
+      "label": "Grand Hotel Tremezzo facing Bellagio over central Lake Como",
+      "query": "Tremezzo Bellagio Lake Como panorama",
+      "tag": "tremezzo",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
+      ],
+      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+    },
+    {
+      "key": "scene-4",
+      "label": "Villa Carlotta garden and facade in Tremezzina",
+      "query": "Villa Carlotta Tremezzo exterior garden",
+      "tag": "villa-carlotta",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
+      ],
+      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+    },
+    {
+      "key": "scene-5",
+      "label": "Bellagio Punta Spartivento promontory and blue Lake Como",
+      "query": "Bellagio Punta Spartivento lake",
+      "tag": "bellagio",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
+      ],
+      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+    },
+    {
+      "key": "scene-6",
+      "label": "Varenna colorful shoreline and marina with lake",
+      "query": "Varenna Lake Como waterfront",
+      "tag": "varenna",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
+      ],
+      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+    },
+    {
+      "key": "scene-7",
+      "label": "Villa del Balbianello on Lavedo peninsula Lenno",
+      "query": "Villa del Balbianello Lake Como",
+      "tag": "balbianello",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
+      ],
+      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+    },
+    {
+      "key": "scene-8",
+      "label": "Como historic lakeside promenade and cathedral setting",
+      "query": "Como Cathedral Lake Como city waterfront",
+      "tag": "como",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
+      ],
+      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+    },
+    {
+      "key": "scene-9",
+      "label": "Moltrasio waterfront and mountains on western Lake Como arm",
+      "query": "Moltrasio Lake Como waterfront",
+      "tag": "moltrasio",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
+      ],
+      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+    }
+  ]
+}
