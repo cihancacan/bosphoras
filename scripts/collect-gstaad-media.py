@@ -37,6 +37,14 @@ PALACE = [
     ("view-3", ["https://www.palace.ch/en/gallery"],
      ["spa", "indoor", "pool"], ["portrait", "history", "wedding"]),
 ])
+ULTIMA = [
+    ("view-2", ["https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation/four-bedroom-residence",
+                "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation"],
+     ["residence", "living", "suite"], ["exterior_summer", "ultima-courchevel", "ultima_crans"]),
+    ("view-3", ["https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/wellness",
+                "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/gallery"],
+     ["spa", "pool", "wellness", "jacuzzi"], ["exterior_summer", "ultima-courchevel", "ultima_crans"]),
+]
 SCENES = {
     "scene-1": ("Gstaad pedestrian promenade", ("gstaad", "promenade")),
     "scene-2": ("Gstaad Palace village panorama", ("gstaad", "palace")),
@@ -60,7 +68,7 @@ def get(url: str, **kwargs):
         print("SOURCE_ERROR", url[:160], str(exc)[:180], flush=True)
         return None
 
-def images_from_official(page: str, wanted: list[str], unwanted: list[str]):
+def images_from_official(page: str, wanted: list[str], unwanted: list[str], domain_filter: str = "palace.ch"):
     response = get(page)
     if response is None:
         return []
@@ -78,7 +86,7 @@ def images_from_official(page: str, wanted: list[str], unwanted: list[str]):
                     continue
                 url = urljoin(page, candidate)
                 domain = (urlparse(url).hostname or "").lower()
-                if not url.startswith("https://") or "palace.ch" not in domain:
+                if not url.startswith("https://") or not (domain == domain_filter or domain.endswith("."+domain_filter)):
                     continue
                 if not re.search(r"\.(jpg|jpeg|png|webp)(?:$|[?])", url, re.I):
                     continue
@@ -191,6 +199,28 @@ def main():
         hits = []
         for page in pages:
             hits.extend(images_from_official(page, good, bad))
+        changed |= write_candidate(item, hits, used_hashes, used_urls)
+    # Existing three Ultima slots reuse the same summer exterior in different sizes.
+    # Keep the original in view-1, replace view-2 and view-3 ONLY from exact
+    # Ultima Gstaad accommodation/wellness pages. Do not call duplicates distinct.
+    originals = [next(x for x in hotel_items if x.get("propertyKey")=="ultima-hotel-gstaad"
+                 and x["key"]==f"view-{i}") for i in (1, 2, 3)]
+    reference = (originals[0].get("downloadUrl") or "").split("?")[0]
+    for item in originals[1:]:
+        if (item.get("downloadUrl") or "").split("?")[0] == reference and reference:
+            item["rejectedDuplicateSource"] = item.get("downloadUrl")
+            item["status"] = "missing"
+            item["visuallyVerified"] = False
+            item["commercialRightsCleared"] = False
+            item["visualQaWarning"] = "Same photograph as Ultima view-1, not a new gallery frame."
+            for field in ("localPath","downloadUrl","sha256","bytes","outputSize","originalSize"):
+                item.pop(field, None)
+            changed = True
+    for key, pages, good, bad in ULTIMA:
+        item = next(x for x in hotel_items if x.get("propertyKey")=="ultima-hotel-gstaad" and x["key"]==key)
+        hits = []
+        for page in pages:
+            hits.extend(images_from_official(page, good, bad, "ultimacollection.com"))
         changed |= write_candidate(item, hits, used_hashes, used_urls)
     for key, (query, terms) in SCENES.items():
         item = next(x for x in scene_items if x["key"] == key)
