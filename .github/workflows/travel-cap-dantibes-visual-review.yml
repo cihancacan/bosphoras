@@ -1,4 +1,4 @@
-name: Travel Cap d'Antibes - actual 21 photo visual review, no Vercel
+name: Travel Cap d'Antibes — inspect the final 5 actual photo replacements
 on:
   push:
     branches: [feature/luxury-travel-seo-destinations-20261012]
@@ -22,8 +22,8 @@ jobs:
           from pathlib import Path
           from PIL import Image,ImageOps,ImageDraw,ImageFont
           m=json.loads(Path('data/travel/capDAntibesMediaCandidates.json').read_text())
-          items=m['hotels']+m['destinationScenes']
-          assert len(items)==21
+          items=[x for x in m['hotels']+m['destinationScenes'] if not x.get('visuallyVerified')]
+          assert len(items)==5,('Unexpected unapproved count',len(items))
           try: font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',18)
           except OSError: font=ImageFont.load_default()
           for page in range(math.ceil(len(items)/6)):
