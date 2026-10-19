@@ -86,6 +86,11 @@ lib.HOTEL_DIRECT.update({
        "Brise Marine original garden terrace and dining tables in sunshine",
        "Hôtel Brise Marine · official hotel photograph")],
 })
+# Last-resort verified hotel building shot from Commons; never confuse with other properties.
+# Commons file metadata identifies the actual Grand-Hôtel and photographer.
+lib.HOTEL_DIRECT["grand-hotel-cap-ferrat/view-1"].extend(
+    lib.commons_exact("Cap-Ferrat - Avenue de la Corniche - View NNW on Grand Hotel du Cap Ferrat.jpg")
+)
 lib.DIRECT_WIKIMEDIA={}
 lib.COMMONS_EXACT={}
 lib.MANIFEST=Path("data/travel/saintJeanCapFerratMediaCandidates.json")
