@@ -45,6 +45,21 @@ jobs:
               assert x.get('commercialRightsCleared') and not x.get('visualQaWarning')
           print('No uninspected Cap Ferrat images released.')
           PY
+      - name: Audit downloaded candidates without approving them
+        run: |
+          python - <<'PY'
+          import json,re
+          m=json.load(open('data/travel/saintJeanCapFerratMediaCandidates.json',encoding='utf8'))
+          candidates=[x for x in m['hotels']+m['destinationScenes'] if x.get('localPath')]
+          for x in candidates:
+              assert x['status']=='candidate_needs_visual_review',(x.get('propertyKey'),x['key'])
+              assert (x.get('sourcePage') or '').startswith('https://'),x['key']
+              assert (x.get('downloadUrl') or '').startswith('https://'),x['key']
+              assert re.fullmatch('[a-f0-9]{64}',x.get('sha256','')),x['key']
+              assert re.fullmatch('[01]{64}',x.get('dhash','')),x['key']
+              assert x.get('credit'),x['key']
+          print('Provenance-valid Cap-Ferrat candidates:',len(candidates),'/21; manual review mandatory.')
+          PY
       - name: Commit retrieved WebP candidates only, no Vercel build
         run: |
           set -euo pipefail

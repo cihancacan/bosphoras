@@ -64,6 +64,18 @@ for(const x of all)if(x.visuallyVerified){
  const p='public'+x.localPath;
  assert(existsSync(p) && statSync(p).size>20000,'Missing approved image '+p);
 }
+// Approved images must be truly sourced, independently identifiable and non-duplicate.
+const approved=all.filter(x=>x.visuallyVerified);
+for(const x of approved){
+ assert(/^[a-f0-9]{64}$/i.test(x.sha256||''),'Missing photograph SHA-256 '+x.key);
+ assert(/^[01]{64}$/.test(x.dhash||''),'Missing 64-bit visual fingerprint '+x.key);
+ assert(x.downloadUrl?.startsWith('https://'),'Missing original photographic URL '+x.key);
+ assert(x.credit?.trim().length>=6,'Missing photographic source credit '+x.key);
+}
+for(let i=0;i<approved.length;i++)for(let j=i+1;j<approved.length;j++){
+ const hamming=[...approved[i].dhash].filter((bit,k)=>bit!==approved[j].dhash[k]).length;
+ assert(hamming>5,'Near-duplicate approved Cap-Ferrat photos '+approved[i].key+'/'+approved[j].key);
+}
 const urls=all.filter(x=>x.downloadUrl).map(x=>x.downloadUrl.split('?')[0]);
 assert.equal(urls.length,new Set(urls).size,'Duplicate original photo sources');
 console.log(JSON.stringify({status:'QA_CHECKS_PASSED',hotelProfiles:guide.hotels.length,
