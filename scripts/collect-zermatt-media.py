@@ -30,11 +30,15 @@ OFFICIAL={
  },
  "mont-cervin-palace":{
   "view-1":[("https://www.montcervinpalace.ch/en/gallery/","hotel","exterior","mont-cervin","facade"),
-            ("https://www.montcervinpalace.ch/en/hotel/","palace","hotel","exterior")],
+            ("https://www.montcervinpalace.ch/en/hotel/","palace","hotel","exterior"),
+            ("https://www.europeexpress.com/hotels/mont-cervin-palace/","mont","cervin","exterior")],
   "view-2":[("https://www.montcervinpalace.ch/en/accommodation/castor-suite/","suite","room","castor","bed"),
-            ("https://www.montcervinpalace.ch/en/rooms/","room","suite","interior")],
+            ("https://www.montcervinpalace.ch/en/accommodation/matterhorn-suite/","matterhorn","suite","bedroom"),
+            ("https://www.montcervinpalace.ch/en/rooms/","room","suite","interior"),
+            ("https://www.fivestaralliance.com/gallery/mont-cervin-palace-gallery-images","suite","room","bedroom")],
   "view-3":[("https://www.montcervinpalace.ch/en/spa-wellness/","pool","spa","indoor","wellness"),
-            ("https://www.montcervinpalace.ch/en/gallery/","spa","pool","wellness")],
+            ("https://www.montcervinpalace.ch/en/gallery/","spa","pool","wellness"),
+            ("https://www.fivestaralliance.com/gallery/mont-cervin-palace-gallery-images","indoor","pool","spa")],
  },
  "riffelalp":{
   "view-1":[("https://www.riffelalp.com/en/gallery/?L=1","riffelalp","hotel","resort","outdoors","exterior")],
@@ -166,13 +170,27 @@ def main():
   if group not in OFFICIAL:continue
   sources=OFFICIAL[group].get(key,[])
   options=[]
+  if group=="mont-cervin-palace" and key=="view-1":
+   options.extend(commons_images("Mont Cervin Palace Zermatt hotel 2019",("mont cervin palace",)))
   for source in sources:
    page,*want=source
-   options.extend(page_images(page,want))
+   possibilities=page_images(page,want)
+   print("HOTEL_SOURCE",group,key,page,"candidate links",len(possibilities),flush=True)
+   options.extend(possibilities)
   changed|=candidate(item,options,used_urls,digests)
  for item in scenes:
   query,terms=SCENES[item["key"]]
-  changed|=candidate(item,commons_images(query,terms),used_urls,digests)
+  options=commons_images(query,terms)
+  if not options:
+   fallback={
+    "scene-2":("Zermatt Swiss old town Matterhorn",("zermatt",)),
+    "scene-3":("Zermatt village main street 2023",("zermatt",)),
+    "scene-5":("Gornergrat Gornergletscher glacier Swiss Alps",("gornergrat",)),
+    "scene-7":("Klein Matterhorn mountain Alps",("klein matterhorn",)),
+    "scene-9":("Stellisee Matterhorn reflection Valais",("stellisee",))
+   }.get(item["key"])
+   if fallback:options=commons_images(*fallback)
+  changed|=candidate(item,options,used_urls,digests)
  m["downloadedHotelCandidates"]=sum(x["status"]=="candidate_needs_visual_review" for x in hotel)
  m["downloadedDestinationCandidates"]=sum(x["status"]=="candidate_needs_visual_review" for x in scenes)
  m["visuallyVerified"]=False
