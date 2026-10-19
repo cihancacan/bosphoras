@@ -289,23 +289,23 @@
         "https://villacapferrat.fr/"
       ],
       "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "rejectedSource": "https://cdn.iris-etourism.io/uploads/nice/9d5/247-2-12714743.webp",
-      "rejectedCandidateContext": "EDITORIAL HOLD: Below luxury standard: crowded rooftop/terrace and pool view duplicates the already approved property panorama; seek a distinct amenity or better spa/garden angle.",
+      "rejectedSource": "https://villacapferrat.fr/wp-content/uploads/2019/12/spa.jpg",
+      "rejectedCandidateContext": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/la-villa-cap-ferrat/view-3.webp",
-      "downloadUrl": "https://villacapferrat.fr/wp-content/uploads/2019/12/spa.jpg",
-      "sourcePage": "https://villacapferrat.fr/en/gallery/",
-      "candidateContext": "    ",
-      "credit": "Official hotel photo",
-      "sha256": "7b0a93655024675893380daf2da2e66d9694bac95d54c131b010defa8dee2475",
-      "dhash": "0010011101111101011100010111010110100111100101011100000111001001",
-      "bytes": 238562,
+      "downloadUrl": "https://cf.bstatic.com/xdata/images/hotel/max1280x900/618788637.jpg?k=c6ac86646dccf8b982a66c59aa6285b87338e57116c000310606c64207e503b1&o=",
+      "sourcePage": "https://www.booking.com/hotel/fr/hotel-spa-la-villa-cap.html",
+      "candidateContext": "Sunlit real La Villa Cap Ferrat breakfast terrace overlooking its swimming pool and the sea",
+      "credit": "Booking.com · verified property gallery",
+      "sha256": "92466b67729da1f29c80d29433d9e2f1e2b12618fe9b6401a2b20e005fa67f5d",
+      "dhash": "0001110011010110101011010110110001111110001111000100110001011100",
+      "bytes": 118562,
       "originalSize": [
-        1920,
-        1323
+        1280,
+        853
       ],
       "outputSize": [
-        1741,
-        1200
+        1280,
+        853
       ]
     },
     {
