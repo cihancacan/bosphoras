@@ -15,7 +15,7 @@ on:
       - components/travel/TravelPages.tsx
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -25,7 +25,50 @@ jobs:
       - uses: actions/setup-node@v4
         with: {node-version: '20', cache: 'npm'}
       - run: npm ci --no-audit --no-fund
-      - run: npm run typecheck
-      - run: node scripts/check-zermatt-draft.mjs
-      - name: Check other completed alpine guides unchanged
+      - id: types
+        continue-on-error: true
+        run: npm run typecheck
+      - id: editorial
+        continue-on-error: true
+        run: node scripts/check-zermatt-draft.mjs
+      - id: regression
+        continue-on-error: true
+        name: Check other completed alpine guides unchanged
         run: node scripts/check-travel-batch-preview.mjs
+      - name: Record verification evidence in branch
+        if: always()
+        env:
+          TYPES: ${{ steps.types.outcome }}
+          EDITORIAL: ${{ steps.editorial.outcome }}
+          REGRESSION: ${{ steps.regression.outcome }}
+        run: |
+          set -euo pipefail
+          mkdir -p docs
+          {
+            echo '# Zermatt GitHub QA — $(date -u +%Y-%m-%dT%H:%M:%SZ)'
+            echo
+            echo "Source commit: ${GITHUB_SHA}"
+            echo
+            echo "| Check | Result |"
+            echo "| --- | --- |"
+            echo "| TypeScript | ${TYPES} |"
+            echo "| Zermatt editorial / images | ${EDITORIAL} |"
+            echo "| Existing alpine guides | ${REGRESSION} |"
+            echo
+            echo "No Vercel build requested by this workflow. Photo approval remains individual."
+          } > docs/travel-zermatt-qa-latest.md
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/travel-zermatt-qa-latest.md
+          if ! git diff --cached --quiet; then
+            git commit -m 'docs(travel): Zermatt QA evidence [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
+      - name: Block completion if any verification failed
+        if: always()
+        env:
+          TYPES: ${{ steps.types.outcome }}
+          EDITORIAL: ${{ steps.editorial.outcome }}
+          REGRESSION: ${{ steps.regression.outcome }}
+        run: test "$TYPES" = success && test "$EDITORIAL" = success && test "$REGRESSION" = success
