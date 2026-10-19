@@ -104,6 +104,16 @@ EXACT_SCENES.update({
   "https://commons.wikimedia.org/wiki/File:3809_-_Zermatt_-_View_from_Gornergratbahn.JPG",
   "Alpine view from Gornergratbahn near Riffelberg")],
 })
+EXACT_COMMONS={
+ "scene-5":[("File:Grenzgletscher & Gornergletscher.JPG",
+             "Gorner and Grenz glaciers viewed from the Gornergrat summit")],
+ "scene-6":[("File:3873 - View from Gornergrat.JPG",
+             "Bright true Swiss alpine panorama from Gornergrat")],
+ "scene-7":[("File:Matterhorn Glacier Paradise, Theodulglacier - panoramio.jpg",
+             "Matterhorn Glacier Paradise and Theodul Glacier summit panorama")],
+ "scene-9":[("File:Sunrise on the Matterhorn.jpg",
+             "Orange first light on the Matterhorn reflected in Stellisee, 2018")],
+}
 SCENES={
  "scene-1":("Riffelsee Matterhorn lake Zermatt",("riffelsee",)),
  "scene-2":("Zermatt village old town Matterhorn panoramic",("zermatt",)),
@@ -188,6 +198,22 @@ def commons_images(search,terms):
                 f"{author or 'Commons author'} · {license}"))
  return sorted(found,key=lambda x:(-x[0],x[2]))
 
+def exact_commons(title,caption):
+ r=fetch(COMMONS,params={"action":"query","titles":title,"prop":"imageinfo",
+                           "iiprop":"url|extmetadata","iiurlwidth":1700,"format":"json"})
+ if not r:return []
+ try:
+  pages=list(r.json()["query"]["pages"].values())
+  item=pages[0]["imageinfo"][0]
+  url=item.get("thumburl") or item.get("url")
+  md=item.get("extmetadata") or {}
+  artist=BeautifulSoup(md.get("Artist",{}).get("value",""),"html.parser").get_text(" ",strip=True)
+  lic=md.get("LicenseShortName",{}).get("value","photographer attribution required")
+  page="https://commons.wikimedia.org/wiki/"+title.replace(" ","_")
+  return [(110,url,page,caption,f"{artist} | {lic}")]
+ except (KeyError,IndexError,TypeError,ValueError):
+  return []
+
 def candidate(item, options, used_urls, digests):
  if item.get("visuallyVerified"):return False
  if item.get("status")=="candidate_needs_visual_review" and item.get("localPath"):return False
@@ -252,7 +278,10 @@ def main():
  for item in scenes:
   if item.get("visuallyVerified") or (item.get("status")=="candidate_needs_visual_review" and item.get("localPath")):continue
   query,terms=SCENES[item["key"]]
-  options=[(100,url,source,caption,"Named Commons landscape; still QA gated") for url,source,caption in EXACT_SCENES.get(item["key"],[])]
+  options=[]
+  for filename,caption in EXACT_COMMONS.get(item["key"],[]):
+   options.extend(exact_commons(filename,caption))
+  options.extend((100,url,source,caption,"Named Commons landscape; still QA gated") for url,source,caption in EXACT_SCENES.get(item["key"],[]))
   if options and candidate(item,options,used_urls,digests):
    changed=True
    continue
