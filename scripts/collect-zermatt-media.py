@@ -22,6 +22,8 @@ S=requests.Session()
 S.headers.update({"User-Agent":"BosphorasLuxuryStays/2.0 (photo source review, bosphoras.com)",
                   "Accept":"text/html,application/json,image/webp,image/jpeg,image/*;q=.8"})
 COMMONS="https://commons.wikimedia.org/w/api.php"
+SOURCE_DIAGNOSTICS={}
+
 OFFICIAL={
  "the-omnia":{
   "view-1":[("https://the-omnia.com/en/","exterior","outside","zermatt","omnia")],
@@ -75,6 +77,13 @@ def page_images(url,want):
  if r is None:return result
  soup=BeautifulSoup(r.text,"html.parser")
  elements=soup.select("img,source,a[href],meta[property='og:image'],meta[name='twitter:image'],picture")
+ if "montcervinpalace.ch" in url:
+  tagged=[{"tag":t.name,"src":t.get("src"),"srcset":t.get("srcset"),"dataSrc":t.get("data-src"),
+           "dataBackground":t.get("data-bg"),"href":t.get("href"),"alt":t.get("alt"),
+           "style":t.get("style")} for t in soup.select("img,source,picture,video,figure")[:50]]
+  raw_urls=list(dict.fromkeys(re.findall(r"""(?:https?:)?//[^"'s<>]{2,190}(?:webp|jpg|jpeg|png|avif)[^"'s<>]*""",r.text,re.I)))[:60]
+  SOURCE_DIAGNOSTICS[url]={"bytes":len(r.text),"media_tags":tagged,"raw_urls":raw_urls,
+                           "script_count":len(soup.find_all("script"))}
  for t in elements:
   lab=" ".join(str(t.get(k) or "") for k in ("alt","title","aria-label","data-caption","data-name"))
   for k in ("src","srcset","data-src","data-srcset","data-lazy-src","data-original","href","content"):
@@ -195,6 +204,10 @@ def main():
  m["downloadedDestinationCandidates"]=sum(x["status"]=="candidate_needs_visual_review" for x in scenes)
  m["visuallyVerified"]=False
  m["approvedForCommercialPublication"]=False
+ if SOURCE_DIAGNOSTICS:
+  p=Path("docs/travel-zermatt-image-source-debug.json")
+  p.parent.mkdir(parents=True,exist_ok=True)
+  p.write_text(json.dumps(SOURCE_DIAGNOSTICS,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
  if changed:ROOT.write_text(json.dumps(m,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
  print("ZERMATT_CANDIDATES",m["downloadedHotelCandidates"],"/12 hotel",m["downloadedDestinationCandidates"],"/9 scenes; approval unchanged.",flush=True)
 
