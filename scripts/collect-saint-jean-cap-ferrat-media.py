@@ -52,6 +52,8 @@ lib.DIRECT_LANDSCAPES={
 # The Commons file page supplies exact place, photographer, licence and geolocation;
 # prefer its own thumbnail over an unverifiable generic resort photograph.
 lib.DIRECT_LANDSCAPES["scene-5"]=lib.commons_exact("Port de Saint-Jean Cap-Ferrat.jpg")
+# Explicit high-confidence Paloma Beach sources, geographically in Saint-Jean-Cap-Ferrat.
+lib.DIRECT_LANDSCAPES["scene-3"]=lib.commons_exact("20211209 123405 Plage de la Paloma.jpg")+lib.commons_exact("Paloma Beach, Saint-Jean-Cap-Ferrat.png")
 lib.DIRECT_LANDSCAPES["scene-6"]=lib.commons_exact("Plage de Passable.jpg")
 lib.DIRECT_LANDSCAPES["scene-7"]=lib.commons_exact("Cap-Ferrat lighthouse from east.jpg")
 # Four Seasons does not allow the collector to scrape its website (HTTP 403).
@@ -104,6 +106,21 @@ lib.HOTEL_DIRECT.update({
 lib.HOTEL_DIRECT["grand-hotel-cap-ferrat/view-1"].extend(
     lib.commons_exact("Cap-Ferrat - Avenue de la Corniche - View NNW on Grand Hotel du Cap Ferrat.jpg")
 )
+# Alternative real sources for visually rejected photographs; all remain unapproved
+# until each downloaded image has been individually inspected.
+lib.HOTEL_DIRECT["royal-riviera/view-1"]=[
+ (100,"https://www.royal-riviera.com/wp-content/uploads/2022/01/DSC07159-HDR.jpg",
+  "https://www.royal-riviera.com/en/the-royal-riviera/the-royal-riviera-atmosphere/",
+  "Royal-Riviera classic beige Belle Epoque hotel front framed by palm gardens", "Royal-Riviera official architecture photo"),
+ (96,"https://www.royal-riviera.com/wp-content/uploads/2022/01/DSC07159-HDR-1440x864.jpg",
+  "https://www.royal-riviera.com/en/the-royal-riviera/the-royal-riviera-atmosphere/",
+  "Sunlit Royal-Riviera facade and manicured gardens", "Royal-Riviera official hotel CMS")
+]
+lib.HOTELS["la-villa-cap-ferrat"]["view-2"]=[("https://villacapferrat.fr/en/rooms/",["terrace","balcony","sea","superior","view","chambre"])]
+lib.HOTELS["la-villa-cap-ferrat"]["view-3"]=[("https://villacapferrat.fr/en/gallery/",["spa","sauna","jacuzzi","garden","terrace","breakfast","wellness"])]
+lib.HOTELS["brise-marine"]["view-2"]=[("https://www.hotel-brisemarine.com/en/gallery-237.html",["vue","sea","balcon","chambre","room","terrace"])]
+lib.DIRECT_LANDSCAPES["scene-7"]=lib.commons_exact("France-002563 - Cap Ferrat Light (15720311590).jpg")
+lib.DIRECT_LANDSCAPES["scene-9"]=lib.commons_exact("Panorama baie des Fourmis Beaulieu-sur-Mer.jpg")
 lib.DIRECT_WIKIMEDIA={}
 lib.COMMONS_EXACT={}
 lib.MANIFEST=Path("data/travel/saintJeanCapFerratMediaCandidates.json")
@@ -143,11 +160,46 @@ lib.LANDSCAPES={
 
 # Do not retry rejected image URLs or treat different crops as separate photos.
 _original_collect=lib.collect
+REPLACE_WHEN_REJECTED={
+ ("grand-hotel-cap-ferrat","view-1"):False,
+ ("royal-riviera","view-1"):True,
+ ("la-villa-cap-ferrat","view-2"):True,
+ ("la-villa-cap-ferrat","view-3"):True,
+ ("brise-marine","view-2"):True,
+ ("destination","scene-3"):True,
+ ("destination","scene-5"):False,
+ ("destination","scene-7"):True,
+ ("destination","scene-9"):True,
+}
 def collect_with_rejections(item,candidates,sha_used,url_used,visual_used):
     rejected=item.get("rejectedSource")
-    if rejected:
-        url_used.add(rejected.split("?")[0])
-    return _original_collect(item,candidates,sha_used,url_used,visual_used)
+    if rejected:url_used.add(rejected.split("?")[0])
+    group=item.get("propertyKey") or "destination"
+    key=(group,item["key"])
+    if not REPLACE_WHEN_REJECTED.get(key) or item.get("visuallyVerified") or not item.get("localPath"):
+        return _original_collect(item,candidates,sha_used,url_used,visual_used)
+    old=dict(item)
+    old_src=old.get("downloadUrl")
+    if old_src:url_used.add(old_src.split("?")[0])
+    for field in ("localPath","downloadUrl","sourcePage","candidateContext","credit",
+                  "sha256","dhash","bytes","originalSize","outputSize",
+                  "frCaption","enCaption"):
+        item.pop(field,None)
+    item["status"]="missing"
+    item["visuallyVerified"]=False
+    item["commercialRightsCleared"]=False
+    try:
+        found=_original_collect(item,candidates,sha_used,url_used,visual_used)
+    except Exception:
+        item.clear();item.update(old)
+        raise
+    if found:
+        item["rejectedSource"]=old_src
+        item["rejectedCandidateContext"]=old.get("visualQaWarning","Replaced for exact-geography/luxury quality")
+        # Collector always keeps new candidate unapproved for separate manual visual QA.
+        return True
+    item.clear();item.update(old)
+    return False
 lib.collect=collect_with_rejections
 if __name__=="__main__":
  lib.main()

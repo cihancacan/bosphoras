@@ -15,12 +15,11 @@
       "key": "view-1",
       "slotIntent": "exterior gardens",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.fourseasons.com/capferrat/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/grand-hotel-cap-ferrat/view-1.webp",
       "downloadUrl": "https://media.cntraveler.com/photos/67f54caceeae371d698ede51/master/w_1600%2Cc_limit/Grand-Ho%25CC%2582tel%2520du%2520Cap-Ferrat_White%2520Lotus_070425_pr_global..jpg",
       "sourcePage": "https://www.cntraveler.com/story/where-will-the-white-lotus-season-4-be-filmed",
@@ -36,7 +35,12 @@
       "outputSize": [
         1600,
         1033
-      ]
+      ],
+      "frCaption": "Grand-Hôtel du Cap-Ferrat, A Four Seasons Hotel — façade Belle Époque blanche, pelouse paysagée et ciel azur",
+      "enCaption": "Grand-Hôtel du Cap-Ferrat, A Four Seasons Hotel — white Belle Époque façade, manicured lawns and blue sky",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual local photo sheet inspected: exact Grand-Hôtel building, daylight and strong architectural composition; Conde Nast source.",
+      "ownerRightsAuthorization": "Bosphoras operator project-wide photograph permission, 2026-10-19; preserve original creator/source and comply with actual original licence."
     },
     {
       "property": "Grand-Hôtel du Cap-Ferrat, A Four Seasons Hotel",
@@ -77,12 +81,11 @@
       "key": "view-3",
       "slotIntent": "Club Dauphin seawater pool",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.fourseasons.com/capferrat/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/grand-hotel-cap-ferrat/view-3.webp",
       "downloadUrl": "https://1.bp.blogspot.com/-I6VgPcSptBg/YVnKWyhK5tI/AAAAAAAAQr0/pJI-Wts3b5IkDzI3mw1BgZT5qVHXDm0XACLcBGAsYHQ/s1926/Grand-Hotel-Cap-Ferrat-Beach-Club.jpg",
       "sourcePage": "https://www.homeandartmag.com/2021/07/royal-riviera-st-jean-cap-ferrat.html",
@@ -98,7 +101,12 @@
       "outputSize": [
         1800,
         1196
-      ]
+      ],
+      "frCaption": "Club Dauphin du Grand-Hôtel du Cap-Ferrat — grande piscine d’eau de mer, parasols blancs et Méditerranée",
+      "enCaption": "Grand-Hôtel du Cap-Ferrat Club Dauphin — seawater infinity pool, white parasols and Mediterranean vista",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual recovered WebP inspected: distinct real Club Dauphin seawater pool and the characteristic Saint-Jean-Cap-Ferrat headland, sunlit, no person blocking view.",
+      "ownerRightsAuthorization": "Bosphoras operator project-wide photograph permission, 2026-10-19; preserve original creator/source and comply with actual original licence."
     },
     {
       "property": "Royal-Riviera",
@@ -111,7 +119,7 @@
       "sourcePages": [
         "https://www.royal-riviera.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "EDITORIAL HOLD: Below luxury standard: foreground guests and loungers obscure the hotel's architecture; seek genuine sunlit façade/garden.",
       "sourcePage": "https://www.royal-riviera.com/",
       "candidateContext": "Official CMS image matched by source context",
       "credit": "Official hotel CMS",
@@ -247,7 +255,7 @@
       "rejectedSource": "https://villacapferrat.fr/wp-content/uploads/2024/12/2025-junior-suite-3.jpg",
       "rejectedCandidateContext": "    ",
       "ownerRightsAuthorization": "Bosphoras operator confirmed project photo use rights 2026-10-19",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "EDITORIAL HOLD: Below luxury standard: dark dated bedroom composition and little recognisable sea outlook; seek a brighter true balcony/sea-view room.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/la-villa-cap-ferrat/view-2.webp",
       "downloadUrl": "https://villacapferrat.fr/wp-content/uploads/2024/12/2025-junior-suite-2.jpg",
       "sha256": "1b2d38a3f0564e555bb0cb4cd1a39978cdb19492f6199755285181496b3a4e85",
@@ -273,7 +281,7 @@
       "sourcePages": [
         "https://villacapferrat.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "EDITORIAL HOLD: Below luxury standard: crowded rooftop/terrace and pool view duplicates the already approved property panorama; seek a distinct amenity or better spa/garden angle.",
       "sourcePage": "https://www.explorenicecotedazur.com/en/hotel/hotel-spa-la-villa-cap-ferrat/",
       "candidateContext": "La Villa Cap Ferrat boutique hotel, terrace pool and sunny sea view",
       "credit": "Nice Côte d'Azur Tourism Board",
@@ -339,7 +347,7 @@
       "sourcePages": [
         "https://www.hotel-brisemarine.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "EDITORIAL HOLD: Authentic balcony but dated white plastic furniture dominates; replace with a clearer sunlit hotel interior/sea view.",
       "sourcePage": "https://www.hotel-brisemarine.com/en/chambres-230.html",
       "candidateContext": "    ",
       "credit": "Official hotel photo",
@@ -365,12 +373,11 @@
       "key": "view-3",
       "slotIntent": "flower garden patio Mediterranean view",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.hotel-brisemarine.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/brise-marine/view-3.webp",
       "downloadUrl": "https://www.hotel-brisemarine.com/images/gallery/gallerie/0563_ok_cliente.jpg",
       "sourcePage": "https://www.hotel-brisemarine.com/en/",
@@ -386,7 +393,12 @@
       "outputSize": [
         1601,
         1200
-      ]
+      ],
+      "frCaption": "Hôtel Brise Marine — façade historique jaune et jardin fleuri au soleil à Saint-Jean-Cap-Ferrat",
+      "enCaption": "Hôtel Brise Marine — historic pale-yellow villa façade and sunlit flowering Mediterranean garden",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual recovered official property photo inspected: authentic yellow 1878 villa, garden flowers, distinct from its earlier pavilion frame; faithfully labeled family hotel, not a palace.",
+      "ownerRightsAuthorization": "Bosphoras operator project-wide photograph permission, 2026-10-19; preserve original creator/source and comply with actual original licence."
     }
   ],
   "destinationScenes": [
@@ -429,13 +441,12 @@
       "label": "Grand-Hôtel Le Club Dauphin coastline",
       "query": "Grand Hotel du Cap Ferrat lighthouse coast",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "rejectedSource": "https://www.hellomonaco.com/wordpress/wp-content/uploads/2018/07/yacht-show-2017-facebook--monacoyachtshow.jpg",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-2.webp",
       "downloadUrl": "https://yeslondonmagazine.com/images/2024/07/03/IMG_0898_large.png",
@@ -452,7 +463,12 @@
       "outputSize": [
         1200,
         892
-      ]
+      ],
+      "frCaption": "Cap-Ferrat — Grand-Hôtel niché dans la pinède et Club Dauphin au bord du littoral rocheux",
+      "enCaption": "Cap-Ferrat — Grand-Hôtel among pine trees and Club Dauphin on the rugged Mediterranean coastline",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual WebP visually inspected: aerial hotel and seaside Club Dauphin, identifiable geographically, distinct composition, genuine daylight photograph.",
+      "ownerRightsAuthorization": "Bosphoras operator project-wide photograph permission, 2026-10-19; preserve original creator/source and comply with actual original licence."
     },
     {
       "key": "scene-3",
@@ -465,13 +481,13 @@
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/20211209_123405_Plage_de_la_Paloma.jpg/1920px-20211209_123405_Plage_de_la_Paloma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Champion_HV_%26_Paloma_beach_-_panoramio.jpg/1920px-Champion_HV_%26_Paloma_beach_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Champion_HV_&_Paloma_beach_-_panoramio.jpg",
       "candidateContext": "File:Champion HV & Paloma beach - panoramio.jpg",
       "credit": "Павлуша · CC BY-SA 3.0",
       "ownerRightsAuthorization": "Bosphoras operator confirmed project photo use rights 2026-10-19",
-      "rejectedCandidateContext": "File:20211209 123405 Plage de la Paloma.jpg",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedCandidateContext": "Wikimedia geo 36.708812, 30.572376: Goynuk/Kemer Antalya Turkey, not Paloma Beach Cap Ferrat. Never publish.",
+      "visualQaWarning": "REJECTED GEOLOCATION: photo depicts Kemer, Antalya, Türkiye; must replace with exact Paloma Beach, Saint-Jean-Cap-Ferrat.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-3.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Champion_HV_%26_Paloma_beach_-_panoramio.jpg/1920px-Champion_HV_%26_Paloma_beach_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sha256": "90bcbdc6a894c6b52704075119c74a875965d372ef2994a7e00384809929cd6f",
@@ -531,7 +547,7 @@
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "EDITORIAL HOLD: Correct harbour, but ordinary roadside foreground dominates; prefer more premium marina-wide photograph.",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/H%C3%B4tel_La_voile_d%27Or_Saint-Jean-Cap-Ferrat.jpg/1920px-H%C3%B4tel_La_voile_d%27Or_Saint-Jean-Cap-Ferrat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedCandidateContext": "Photo title identifies Hôtel La Voile d’Or, not a confirmed view of the Saint-Jean marina",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-5.webp",
@@ -556,13 +572,12 @@
       "label": "Passable Beach and Villefranche Bay",
       "query": "Plage de Passable Saint Jean Cap Ferrat",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Monaco_Casino_de_Monte_Carlo_Jardin.jpg/1920px-Monaco_Casino_de_Monte_Carlo_Jardin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-6.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Plage_de_Passable.jpg/1920px-Plage_de_Passable.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -579,7 +594,12 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Plage de Passable à Saint-Jean-Cap-Ferrat — crique aux eaux claires et rivage méditerranéen",
+      "enCaption": "Passable Beach in Saint-Jean-Cap-Ferrat — clear Mediterranean water and sheltered pebble shoreline",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual Commons WebP reviewed: authentic Passable cove, light turquoise waters, real geographic source Tangopaso public domain.",
+      "ownerRightsAuthorization": "Bosphoras operator project-wide photograph permission, 2026-10-19; preserve original creator/source and comply with actual original licence."
     },
     {
       "key": "scene-7",
@@ -592,7 +612,7 @@
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "EDITORIAL HOLD: Geographically correct but overexposed white rock dominates and the lighthouse is too small; seek more attractive lighthouse/coastal framing.",
       "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Japanese_garden_Monaco_(pond_and_bridge).jpg/1920px-Japanese_garden_Monaco_(pond_and_bridge).jpg",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-7.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Cap-Ferrat_lighthouse_from_east.jpg/1920px-Cap-Ferrat_lighthouse_from_east.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -656,7 +676,7 @@
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "EDITORIAL HOLD: Correct coastline, but brightly oversaturated tourist umbrellas and crowds weaken restrained luxury palette; seek a calmer, cleaner panorama.",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/085F_Beaulieu-sur-Mer_%2815885396822%29.jpg/1920px-085F_Beaulieu-sur-Mer_%2815885396822%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Baie_des_Fourmis,_Beaulieu-sur-Mer.jpg",
       "candidateContext": "File:Baie des Fourmis, Beaulieu-sur-Mer.jpg",
