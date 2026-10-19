@@ -1,0 +1,56 @@
+{
+  "saved": [
+    {
+      "slot": "the-omnia/view-1",
+      "bytes": 463036,
+      "source": "https://www.yonder.fr/hotels/chambres-avec-vues/zermatt-the-omnia-reinterpete-codes-montagne",
+      "original_size": [
+        1920,
+        1280
+      ]
+    },
+    {
+      "slot": "destination/scene-2",
+      "bytes": 291202,
+      "source": "https://onholidaysagain.com/europe/suisse/week-end-a-zermatt-que-faire/",
+      "original_size": [
+        1536,
+        1002
+      ]
+    },
+    {
+      "slot": "destination/scene-5",
+      "bytes": 250840,
+      "source": "https://commons.wikimedia.org/wiki/File:Panorama_vom_Gornergrat-Zermatt.jpg",
+      "original_size": [
+        1920,
+        872
+      ]
+    },
+    {
+      "slot": "destination/scene-6",
+      "bytes": 750596,
+      "source": "https://commons.wikimedia.org/wiki/File:3809_-_Zermatt_-_View_from_Gornergratbahn.JPG",
+      "original_size": [
+        1920,
+        1440
+      ]
+    },
+    {
+      "slot": "destination/scene-9",
+      "bytes": 87842,
+      "source": "https://theplanetd.com/5-lakes-hike-zermatt/",
+      "original_size": [
+        1536,
+        1024
+      ]
+    }
+  ],
+  "failure_details": [
+    {
+      "slot": "destination/scene-3",
+      "source": "https://www.derbyzermatt.ch/assets/Images/64846748-E13E-44BD-8B6D-FA207A874046-v2__FocusFillWzY0MCw1MTIsIngiLDY0XQ.jpeg",
+      "error": "Too small or wrong aspect: (640, 512)"
+    }
+  ]
+}

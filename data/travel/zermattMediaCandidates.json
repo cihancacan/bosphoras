@@ -4,8 +4,8 @@
   "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 11,
-  "downloadedDestinationCandidates": 3,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 7,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -13,7 +13,7 @@
       "property": "THE OMNIA",
       "propertyKey": "the-omnia",
       "key": "view-1",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -21,11 +21,23 @@
         "https://the-omnia.com/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "sourcePage": "https://www.the-omnia.com/",
-      "candidateContext": "Official page sharing image",
-      "credit": "",
+      "sourcePage": "https://www.yonder.fr/hotels/chambres-avec-vues/zermatt-the-omnia-reinterpete-codes-montagne",
+      "candidateContext": "THE OMNIA official sunny exterior, photo Bruno Augsburger",
+      "credit": "Photograph from the named original publisher; author needs confirmation",
       "rejectedSource": "https://the-omnia.com/files/seo/_1200x630_crop_center-center_82_none_ns/OMNIA_Outside_Winter.jpg?mtime=1733752311",
-      "visualQaWarning": "Dusk image of hotel exterior too dark for premium first hotel image; seek daylit distinctive THE OMNIA image."
+      "visualQaWarning": "Downloaded exact publisher source; individual visual and rights review still required.",
+      "downloadUrl": "https://www.yonder.fr/sites/default/files/destinations/OMNIA_Outside_Summer_q%C2%A9Bruno%20Augsburger%2C%20THE%20OMNIA.jpg",
+      "localPath": "/images/travel/zermatt-premium/the-omnia/view-1.webp",
+      "sha256": "2625cca95876e4f59ab1e4375aa0efdf10556d9de24f68d618f17a9e32d42fb2",
+      "bytes": 463036,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ]
     },
     {
       "property": "THE OMNIA",
@@ -446,10 +458,26 @@
       "key": "scene-2",
       "placeLabel": "Zermatt village",
       "searchQuery": "Zermatt village Switzerland",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "visualQaWarning": "Downloaded exact publisher source; individual visual and rights review still required.",
+      "downloadUrl": "https://i0.wp.com/onholidaysagain.com/wp-content/uploads/2020/06/Balade-%C3%A0-Zermatt-et-vue-sur-le-Cervin-scaled.jpg?resize=1536%2C1002&ssl=1",
+      "sourcePage": "https://onholidaysagain.com/europe/suisse/week-end-a-zermatt-que-faire/",
+      "candidateContext": "Historic timber chalets of Zermatt with Matterhorn in bright sunshine",
+      "credit": "Photograph from the named original publisher; author needs confirmation",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-2.webp",
+      "sha256": "678f069e63755679baa061d0862b29d0b83f87820d200883850efe33d39b6896",
+      "bytes": 291202,
+      "originalSize": [
+        1536,
+        1002
+      ],
+      "outputSize": [
+        1536,
+        1002
+      ]
     },
     {
       "key": "scene-3",
@@ -503,31 +531,55 @@
       "key": "scene-5",
       "placeLabel": "Gornergrat",
       "searchQuery": "Gornergrat Switzerland",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Above_the_Alps_2018-07-14_103117.jpg",
-      "candidateContext": "File:Above the Alps 2018-07-14 103117.jpg",
-      "credit": "Xonqnopp · CC BY-SA 4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panorama_vom_Gornergrat-Zermatt.jpg",
+      "candidateContext": "Named Gornergrat panorama with Monte Rosa massif",
+      "credit": "Photograph from the named original publisher; author needs confirmation",
       "license": "CC BY 2.5",
       "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
-      "visualQaWarning": "Glacial vista taken through a window with haze, glare and foreground obstruction; not premium enough.",
-      "rejectedSource": "https://commons.wikimedia.org/wiki/File:Above_the_Alps_2018-07-14_103117.jpg"
+      "visualQaWarning": "Downloaded exact publisher source; individual visual and rights review still required.",
+      "rejectedSource": "https://commons.wikimedia.org/wiki/File:Above_the_Alps_2018-07-14_103117.jpg",
+      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Panorama_vom_Gornergrat-Zermatt.jpg?width=1600",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-5.webp",
+      "sha256": "39afd0d626e8780b269c4953b96ff58238c342348257b83f8c3f5971dba1117c",
+      "bytes": 250840,
+      "originalSize": [
+        1920,
+        872
+      ],
+      "outputSize": [
+        1700,
+        772
+      ]
     },
     {
       "key": "scene-6",
       "placeLabel": "Riffelalp",
       "searchQuery": "Riffelalp Switzerland",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "visualQaWarning": "Crowded ski-piste snapshot with marker/signs and tourists; below elegant luxury destination photography standards.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Matterhorn_Cervino_4478_m_from_ski_run_from_Gornergrat_3089_m_to_Riffelberg_2582_m_-_panoramio.jpg",
-      "candidateContext": "File:Matterhorn Cervino 4478 m from ski run from Gornergrat 3089 m to Riffelberg 2582 m - panoramio.jpg",
-      "credit": "qwesy qwesy · CC BY 3.0",
-      "rejectedSource": "https://commons.wikimedia.org/wiki/File:Matterhorn_Cervino_4478_m_from_ski_run_from_Gornergrat_3089_m_to_Riffelberg_2582_m_-_panoramio.jpg"
+      "visualQaWarning": "Downloaded exact publisher source; individual visual and rights review still required.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:3809_-_Zermatt_-_View_from_Gornergratbahn.JPG",
+      "candidateContext": "Alpine views along the Gornergratbahn",
+      "credit": "Photograph from the named original publisher; author needs confirmation",
+      "rejectedSource": "https://commons.wikimedia.org/wiki/File:Matterhorn_Cervino_4478_m_from_ski_run_from_Gornergrat_3089_m_to_Riffelberg_2582_m_-_panoramio.jpg",
+      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/3809_-_Zermatt_-_View_from_Gornergratbahn.JPG?width=1600",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-6.webp",
+      "sha256": "478cb58b39c4bf7380f02ac60996dda77a9df206f0350aa358edf6ab39e9cc73",
+      "bytes": 750596,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-7",
@@ -580,10 +632,26 @@
       "key": "scene-9",
       "placeLabel": "Zermatt summer",
       "searchQuery": "Zermatt summer mountains",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "visualQaWarning": "Downloaded exact publisher source; individual visual and rights review still required.",
+      "downloadUrl": "https://theplanetd.com/images/5-lakes-hike-zermatt-Switzerland-Stellisee-Lake-1536x1024.jpg",
+      "sourcePage": "https://theplanetd.com/5-lakes-hike-zermatt/",
+      "candidateContext": "Matterhorn reflecting at Stellisee during golden sunrise",
+      "credit": "Photograph from the named original publisher; author needs confirmation",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-9.webp",
+      "sha256": "920cce3b6fb187670eb601cf35437afde97d268ce5e2dca70d32bf5c26673b66",
+      "bytes": 87842,
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "outputSize": [
+        1536,
+        1024
+      ]
     }
   ],
   "publicationBlockedReason": "Missing images, duplicate originals, uncertain visual identity and/or unverified commercial photo rights.",
