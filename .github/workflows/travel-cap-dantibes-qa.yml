@@ -1,0 +1,25 @@
+name: Travel Cap d'Antibes — editorial and TypeScript QA (no Vercel)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - '.github/workflows/travel-cap-dantibes-qa.yml'
+      - 'scripts/check-cap-dantibes-draft.mjs'
+      - 'data/travel/capDAntibes*'
+      - 'data/travel/featuredCityGuides.ts'
+      - 'components/travel/FeaturedCityGuide.tsx'
+      - 'components/travel/TravelPages.tsx'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  cap_dantibes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '20', cache: npm}
+      - run: npm ci --no-audit --no-fund
+      - run: npm run typecheck
+      - run: node scripts/check-cap-dantibes-draft.mjs
