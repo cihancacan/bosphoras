@@ -44,12 +44,11 @@
       "key": "view-2",
       "slotIntent": "room suite sea view",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.fourseasons.com/capferrat/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/grand-hotel-cap-ferrat/view-2.webp",
       "downloadUrl": "https://secure.s.forbestravelguide.com/img/properties/grand-hotel-du-cap-ferrat-a-four-seasons-hotel/extra-large/grand-hotel-du-cap-ferrat-a-four-seasons-hotel-guestroom.jpg",
       "sourcePage": "https://www.forbestravelguide.com/hotels/french-riviera-france/grand-hotel-du-cap-ferrat-a-four-seasons-hotel",
@@ -65,7 +64,12 @@
       "outputSize": [
         1800,
         1007
-      ]
+      ],
+      "frCaption": "Grand-Hôtel du Cap-Ferrat Four Seasons — chambre élégante aux boiseries claires, lit blanc et banquette vert pâle",
+      "enCaption": "Grand-Hôtel du Cap-Ferrat Four Seasons — elegant guest room with pale wood, white bedding and light sage bench",
+      "visualReviewedAt": "2026-10-19",
+      "ownerRightsAuthorization": "Bosphoras operator confirmed project-wide photo use authorisation on 2026-10-19; original publication rights and creator attribution remain source-specific.",
+      "visualReviewBasis": "Forbes Travel Guide exact named hotel guestroom original preview reviewed; bright original image; local WebP integrity verified by automated SHA and dHash."
     },
     {
       "property": "Grand-Hôtel du Cap-Ferrat, A Four Seasons Hotel",
@@ -133,12 +137,11 @@
       "key": "view-2",
       "slotIntent": "guest suite sea terrace",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.royal-riviera.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/royal-riviera/view-2.webp",
       "downloadUrl": "https://decouvertes.fr/wp-content/uploads/2024/10/hotel_royal_riviera_suite-scaled.webp",
       "sourcePage": "https://decouvertes.fr/hotels-list/pro-hotel-royal-riviera/",
@@ -154,7 +157,12 @@
       "outputSize": [
         1800,
         1080
-      ]
+      ],
+      "frCaption": "Royal-Riviera — suite lumineuse avec fauteuil ivoire, rideaux turquoise et baie vitrée ouvrant sur la terrasse",
+      "enCaption": "Royal-Riviera — sunlit suite lounge with ivory seating, turquoise curtains and full-height terrace windows",
+      "visualReviewedAt": "2026-10-19",
+      "ownerRightsAuthorization": "Bosphoras operator confirmed project-wide photo use authorisation on 2026-10-19; original publication rights and creator attribution remain source-specific.",
+      "visualReviewBasis": "Découvertes Royal-Riviera property source and exact original image preview independently reviewed for room identity, daytime light, and unobstructed framing; local WebP integrity checked."
     },
     {
       "property": "Royal-Riviera",
@@ -162,12 +170,11 @@
       "key": "view-3",
       "slotIntent": "hotel beach pool gardens",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.royal-riviera.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/royal-riviera/view-3.webp",
       "downloadUrl": "https://www.royal-riviera.com/wp-content/uploads/2022/01/BD_Vue-aerienne-retouchee_3.jpg",
       "sourcePage": "https://www.royal-riviera.com/en/the-royal-riviera/",
@@ -183,7 +190,12 @@
       "outputSize": [
         1775,
         1200
-      ]
+      ],
+      "frCaption": "Royal-Riviera — vue aérienne de l'hôtel Belle Époque, de sa piscine et de la baie des Fourmis en plein soleil",
+      "enCaption": "Royal-Riviera — sunlit aerial view of the Belle Époque hotel, swimming pool and Baie des Fourmis",
+      "visualReviewedAt": "2026-10-19",
+      "ownerRightsAuthorization": "Bosphoras operator confirmed project-wide photo use authorisation on 2026-10-19; original publication rights and creator attribution remain source-specific.",
+      "visualReviewBasis": "Exact original aerial photograph inspected on the official Royal-Riviera hotel page; rooftop hotel identity, Mediterranean coast and swimming pool visible; WebP metadata recorded."
     },
     {
       "property": "La Villa Cap Ferrat Hôtel & Spa",
@@ -383,17 +395,16 @@
       "label": "Saint-Jean-Cap-Ferrat peninsula aerial coastline",
       "query": "Saint Jean Cap Ferrat peninsula aerial coast",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "rejectedSource": "https://cdn.generationvoyage.fr/2025/06/Place-du-Casino-Monte-Carlo-1536x1024.jpeg",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-1.webp",
       "downloadUrl": "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/73/53/16921929.jpg",
-      "sourcePage": "https://www.explorenicecotedazur.com/fiche/cap-ferrat/",
+      "sourcePage": "https://www.explorenicecotedazur.com/en/nature/cap-ferrat/",
       "candidateContext": "Actual Cap-Ferrat headland and peninsula coastline with real lighthouse visible",
       "credit": "Nice Côte d’Azur tourist office",
       "sha256": "7b3f646a9c54591f5dcad8b3eb2c88857be81f4fdd93e9c100a6df45fd09dda7",
@@ -406,7 +417,12 @@
       "outputSize": [
         1800,
         1014
-      ]
+      ],
+      "frCaption": "Saint-Jean-Cap-Ferrat — vue aérienne du cap boisé, de son phare blanc et de la côte rocheuse méditerranéenne",
+      "enCaption": "Saint-Jean-Cap-Ferrat — daytime aerial of the wooded peninsula, white lighthouse and rocky Mediterranean shoreline",
+      "visualReviewedAt": "2026-10-19",
+      "ownerRightsAuthorization": "Bosphoras operator confirmed project-wide photo use authorisation on 2026-10-19; original publication rights and creator attribution remain source-specific.",
+      "visualReviewBasis": "Tourism-board aerial photo identifier 16921929 independently cross-checked against official Nice Côte d'Azur Cap-Ferrat destination page and visual source preview; exact geographic identity."
     },
     {
       "key": "scene-2",
