@@ -7,6 +7,8 @@ on:
       - scripts/collect-gstaad-media.py
       - .github/workflows/travel-gstaad-media.yml
   workflow_dispatch:
+# This workflow must be triggered by a push WITHOUT [skip ci] in its commit
+# message. Vercel's ignored-build rule controls builds independently.
 permissions:
   contents: write
 concurrency:
