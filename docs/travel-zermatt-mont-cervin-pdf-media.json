@@ -1,0 +1,117 @@
+{
+  "destination": "zermatt",
+  "property": "Mont Cervin Palace",
+  "purpose": "Research candidates only; not ready for Bosphoras galleries",
+  "photos": [
+    {
+      "status": "candidate_needs_visual_review",
+      "approved": false,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/zermatt-premium/mont-cervin-research/mcp-brochure-p02-im0128.webp",
+      "originalPdfUrl": "https://www.montcervinpalace.ch/wp-content/uploads/mice-brochure-en-fr.pdf",
+      "pageNumber": 2,
+      "xref": 128,
+      "pageContext": "nestled at the base of the iconic matterhorn, zermatt is a famous mountain resort town located in the swiss alps. the mont cervin palace belongs to one of the historic hotels in zermatt and holds a leading role in the local tourism. opened in 1852 with 150 rooms and suites in fou",
+      "sha256": "929bdda0ac0848131e0641a7d5b2e8212ef9901808eed46e98829011dae729ad",
+      "bytes": 138316,
+      "originalSize": [
+        1204,
+        799
+      ],
+      "outputSize": [
+        1204,
+        799
+      ],
+      "attribution": "Mont Cervin Palace official PDF brochure, original photographer credit to be checked"
+    },
+    {
+      "status": "candidate_needs_visual_review",
+      "approved": false,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/zermatt-premium/mont-cervin-research/mcp-brochure-p03-im0139.webp",
+      "originalPdfUrl": "https://www.montcervinpalace.ch/wp-content/uploads/mice-brochure-en-fr.pdf",
+      "pageNumber": 3,
+      "xref": 139,
+      "pageContext": "the best ideas need the best environment: zermatt and the mont cervin palace are two of these places. here we will personally take care of the success of your event. whether it’s a meeting, team- building event or a seminar – with us at your side, your event will be a complete su",
+      "sha256": "a75684c9aa6d9162de304d9c9a655d02df9560a3b31536b814269a46eadbb565",
+      "bytes": 133376,
+      "originalSize": [
+        1206,
+        765
+      ],
+      "outputSize": [
+        1206,
+        765
+      ],
+      "attribution": "Mont Cervin Palace official PDF brochure, original photographer credit to be checked"
+    },
+    {
+      "status": "candidate_needs_visual_review",
+      "approved": false,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/zermatt-premium/mont-cervin-research/mcp-brochure-p05-im0166.webp",
+      "originalPdfUrl": "https://www.montcervinpalace.ch/wp-content/uploads/mice-brochure-en-fr.pdf",
+      "pageNumber": 5,
+      "xref": 166,
+      "pageContext": "a c d a the mont cervin palace represents 5-star luxury; a calm resort though situated in the heart of car-free zermatt, only 5 minutes walking distance from the train station. the lifts to the ski runs are also within a few minutes walking distance. just around the corner are sp",
+      "sha256": "f1ed24cda5e3e676ad010f2fbce655995a7151d0664836393b607c1c21119c1e",
+      "bytes": 120846,
+      "originalSize": [
+        1060,
+        737
+      ],
+      "outputSize": [
+        1060,
+        737
+      ],
+      "attribution": "Mont Cervin Palace official PDF brochure, original photographer credit to be checked"
+    },
+    {
+      "status": "candidate_needs_visual_review",
+      "approved": false,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/zermatt-premium/mont-cervin-research/mcp-brochure-p06-im0222.webp",
+      "originalPdfUrl": "https://www.montcervinpalace.ch/wp-content/uploads/mice-brochure-en-fr.pdf",
+      "pageNumber": 6,
+      "xref": 222,
+      "pageContext": "enhance your body and mind – spa nescens & wellness un esprit sain dans un corps sain – spa nescens & wellness enlarged pool and wellness area on 1.700 m2/18‘300 sqft at the mont cervin palace – enough space for exercise and relaxation, enjoyment and calm. smooth water, reflectin",
+      "sha256": "07a5790712d78f42991811590f3399af00392c47f192a9cc63c4d1e8ed2355e0",
+      "bytes": 158832,
+      "originalSize": [
+        1180,
+        793
+      ],
+      "outputSize": [
+        1180,
+        793
+      ],
+      "attribution": "Mont Cervin Palace official PDF brochure, original photographer credit to be checked"
+    },
+    {
+      "status": "candidate_needs_visual_review",
+      "approved": false,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/zermatt-premium/mont-cervin-research/mcp-brochure-p07-im0010.webp",
+      "originalPdfUrl": "https://www.montcervinpalace.ch/wp-content/uploads/mice-brochure-en-fr.pdf",
+      "pageNumber": 7,
+      "xref": 10,
+      "pageContext": "the mont cervin palace has a total of 150 rooms and suites. in the main building, the rooms are in alpine style, in le petit cervin, the chalet style dominates and in the residence building, the family suites are impressive. all rooms have been designed to the same standards of c",
+      "sha256": "de257a06a66a0bd4eea016f624f40735de5969aa107a330f014bcd4f0467ed35",
+      "bytes": 53436,
+      "originalSize": [
+        1192,
+        794
+      ],
+      "outputSize": [
+        1192,
+        794
+      ],
+      "attribution": "Mont Cervin Palace official PDF brochure, original photographer credit to be checked"
+    }
+  ]
+}
