@@ -3,8 +3,8 @@
   "generatedAt": "2026-10-19",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 3,
-  "downloadedDestinationCandidates": 3,
+  "downloadedHotelCandidates": 5,
+  "downloadedDestinationCandidates": 5,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "ownerRightsAuthorization": "Bosphoras operator authorizes appropriate photos for this project, 19 Oct 2026. Keep exact photographic source and credits; verify image identity and permitted reuse per file.",
@@ -53,18 +53,31 @@
       "propertyKey": "royal-riviera",
       "key": "view-1",
       "slotIntent": "seafront hotel exterior",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.royal-riviera.com/"
       ],
-      "visualQaWarning": "Hotel not visible; couple posing dominates the scene, not a premium hotel exterior.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://www.royal-riviera.com/",
       "candidateContext": "Official CMS image matched by source context",
       "credit": "Official hotel CMS",
       "rejectedSource": "https://www.royal-riviera.com/wp-content/uploads/2022/10/Royal-Riviera_1440x864_2.jpg",
-      "rejectedCandidateContext": "    "
+      "rejectedCandidateContext": "    ",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/royal-riviera/view-1.webp",
+      "downloadUrl": "https://www.royal-riviera.com/wp-content/uploads/2022/04/DSC_8490_1440x864.jpg",
+      "sha256": "a3b43992cb203b1a09a4206f33200e6feff2a86af3530922079298976f646196",
+      "dhash": "0010011100101111001001010101001100101010001110010010111100100111",
+      "bytes": 269942,
+      "originalSize": [
+        1440,
+        864
+      ],
+      "outputSize": [
+        1440,
+        864
+      ]
     },
     {
       "property": "Royal-Riviera",
@@ -218,18 +231,31 @@
       "propertyKey": "brise-marine",
       "key": "view-2",
       "slotIntent": "sea-view premium room terrace",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.hotel-brisemarine.com/"
       ],
-      "visualQaWarning": "Low-grade dated furniture and plastic chairs; not premium enough for Bosphoras.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://www.hotel-brisemarine.com/en/chambres-230.html",
       "candidateContext": "    ",
       "credit": "Official hotel photo",
       "rejectedSource": "https://www.hotel-brisemarine.com/images/gallery/chambres/IMG_1342.JPG",
-      "rejectedCandidateContext": "    "
+      "rejectedCandidateContext": "    ",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/brise-marine/view-2.webp",
+      "downloadUrl": "https://www.hotel-brisemarine.com/images/gallery/chambres/Balcon.JPG",
+      "sha256": "f07855028b35fae48b500eb72f40a8ddff109704c00f78736ac697ac0452a9fc",
+      "dhash": "0010001110011001110111001011111001111011110111011000110011010100",
+      "bytes": 96010,
+      "originalSize": [
+        1200,
+        900
+      ],
+      "outputSize": [
+        1200,
+        900
+      ]
     },
     {
       "property": "Hôtel Brise Marine",
@@ -346,18 +372,31 @@
       "key": "scene-5",
       "label": "Port Saint-Jean-Cap-Ferrat village harbour",
       "query": "Port Saint Jean Cap Ferrat harbor",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "Generic distant aerial coastline, not a verifiable Saint-Jean-Cap-Ferrat harbour scene.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Backlit_view_of_the_complete_French_Riviera.jpg/1920px-Backlit_view_of_the_complete_French_Riviera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Backlit_view_of_the_complete_French_Riviera.jpg",
-      "candidateContext": "File:Backlit view of the complete French Riviera.jpg",
-      "credit": "Olivier Cleynen · CC BY 4.0"
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Hôtel_La_voile_d'Or_Saint-Jean-Cap-Ferrat.jpg",
+      "candidateContext": "File:Hôtel La voile d'Or Saint-Jean-Cap-Ferrat.jpg",
+      "credit": "Aeroceanaute · CC BY-SA 4.0",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-5.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/H%C3%B4tel_La_voile_d%27Or_Saint-Jean-Cap-Ferrat.jpg/1920px-H%C3%B4tel_La_voile_d%27Or_Saint-Jean-Cap-Ferrat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha256": "1ab625fa5e7877b87613a0fc123867e02c064c4de4e2aef6be1cfd375dea0496",
+      "dhash": "0000000100010110011101001111110011011000001111001000010110110101",
+      "bytes": 427424,
+      "originalSize": [
+        1920,
+        1320
+      ],
+      "outputSize": [
+        1745,
+        1200
+      ]
     },
     {
       "key": "scene-6",
@@ -425,18 +464,31 @@
       "key": "scene-9",
       "label": "Baie des Fourmis with Royal Riviera shoreline",
       "query": "Baie des Fourmis Cap Ferrat hotel coastline",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "Cold hazy low-detail blue coast panorama, not premium Baie des Fourmis image.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/085F_Beaulieu-sur-Mer_%2815885396822%29.jpg/1920px-085F_Beaulieu-sur-Mer_%2815885396822%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:085F_Beaulieu-sur-Mer_(15885396822).jpg",
-      "candidateContext": "File:085F Beaulieu-sur-Mer (15885396822).jpg",
-      "credit": "Rüdiger Stehn from Kiel, Deutschland · CC BY-SA 2.0"
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Baie_des_Fourmis,_Beaulieu-sur-Mer.jpg",
+      "candidateContext": "File:Baie des Fourmis, Beaulieu-sur-Mer.jpg",
+      "credit": "Ianholton · CC BY 3.0",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-9.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Baie_des_Fourmis%2C_Beaulieu-sur-Mer.jpg/1920px-Baie_des_Fourmis%2C_Beaulieu-sur-Mer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha256": "c6c4a414f310ec0f86d4ff4afb0b3a35d241c585d7a8698d351f56682020433c",
+      "dhash": "0000000000000000010000000100000000011000010111000011011100110011",
+      "bytes": 529702,
+      "originalSize": [
+        1920,
+        1438
+      ],
+      "outputSize": [
+        1602,
+        1200
+      ]
     }
   ]
 }
