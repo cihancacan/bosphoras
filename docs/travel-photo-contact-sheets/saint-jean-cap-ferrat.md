@@ -14,7 +14,7 @@
 | 6 | Royal-Riviera — view-3 | [Source](https://www.royal-riviera.com/en/the-royal-riviera/) · Actual Royal-Riviera hotel, outdoor pool and Baie des Fourmis in sunshine| Candidate |
 | 7 | La Villa Cap Ferrat Hôtel & Spa — view-1 | [Source](https://villacapferrat.fr/en/home/) · Official CMS image matched by source context| Candidate |
 | 8 | La Villa Cap Ferrat Hôtel & Spa — view-2 | [Source](https://www.expedia.com/Nice-Hotels-Boutique-Hotel-Spa-La-Villa-Cap-Ferrat.h4320552.Hotel-Information) · Actual La Villa Cap Ferrat spacious bright seaview room and balcony| Candidate |
-| 9 | La Villa Cap Ferrat Hôtel & Spa — view-3 | [Source](https://villacapferrat.fr/en/gallery/) ·     | Candidate; **Identity, photograph distinctness, quality and attribution await human inspection.** |
+| 9 | La Villa Cap Ferrat Hôtel & Spa — view-3 | [Source](https://www.booking.com/hotel/fr/hotel-spa-la-villa-cap.html) · Sunlit real La Villa Cap Ferrat breakfast terrace overlooking its swimming pool and the sea| Candidate; **Identity, photograph distinctness, quality and attribution await human inspection.** |
 | 10 | Hôtel Brise Marine — view-1 | [Source](https://www.hotel-brisemarine.com/) ·     | Candidate |
 | 11 | Hôtel Brise Marine — view-2 | [Source](https://www.hotel-brisemarine.com/en/gallery-237.html) · Brise Marine charming bright garden dining and breakfast terrace with Mediterranean hills| Candidate |
 | 12 | Hôtel Brise Marine — view-3 | [Source](https://www.hotel-brisemarine.com/en/) · Original Brise Marine yellow villa façade and flowering garden in daylight| Candidate |
@@ -26,4 +26,4 @@
 | 18 | Source — scene-6 | [Source](https://commons.wikimedia.org/wiki/File:Plage_de_Passable.jpg) · Plage de Passable.jpg| Candidate |
 | 19 | Source — scene-7 | [Source](https://commons.wikimedia.org/wiki/File:France-002563_-_Cap_Ferrat_Light_(15720311590).jpg) · France-002563 - Cap Ferrat Light (15720311590).jpg| Candidate |
 | 20 | Source — scene-8 | [Source](https://commons.wikimedia.org/wiki/File:20211209_130841_Promenade_Maurice_Rouvier.jpg) · File:20211209 130841 Promenade Maurice Rouvier.jpg| Candidate |
-| 21 | Source — scene-9 | [Source](https://commons.wikimedia.org/wiki/File:Panorama_baie_des_Fourmis_Beaulieu-sur-Mer.jpg) · Panorama baie des Fourmis Beaulieu-sur-Mer.jpg| Candidate; **Identity, photograph distinctness, quality and attribution await human inspection.** |
+| 21 | Source — scene-9 | [Source](https://commons.wikimedia.org/wiki/File:085F_Beaulieu-sur-Mer_(15885396822).jpg) · File:085F Beaulieu-sur-Mer (15885396822).jpg| Candidate; **REJECTED HISTORIC: actual source is an archival 1978 photograph, not a contemporary premium Baie des Fourmis view. Seek authentic later photograph.** |
