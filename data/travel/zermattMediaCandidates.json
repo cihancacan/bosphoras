@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 7,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -491,7 +491,7 @@
       "key": "scene-3",
       "placeLabel": "Bahnhofstrasse",
       "searchQuery": "Bahnhofstrasse Zermatt",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
@@ -500,20 +500,8 @@
       "credit": "Photograph from the named original publisher; author needs confirmation",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Bahnhofstrasse.jpg/1920px-Bahnhofstrasse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "visualQaWarning": "Downloaded exact publisher source; individual visual and rights review still required.",
-      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bahnhofstrasse_%28Zermatt%29_25.jpg?width=1600",
-      "localPath": "/images/travel/zermatt-premium/destination/scene-3.webp",
-      "sha256": "c3c89fae51505e46ae3ea56be2d338c1afc9d8708671c5a9dca594dbd000c515",
-      "bytes": 213842,
-      "originalSize": [
-        1920,
-        1440
-      ],
-      "outputSize": [
-        1600,
-        1200
-      ]
+      "rejectedSource": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bahnhofstrasse_%28Zermatt%29_25.jpg?width=1600",
+      "visualQaWarning": "Photograph dominated by a large blue garbage collection truck and bins, not a luxury Bahnhofstrasse streetscape; rejected after actual WebP inspection."
     },
     {
       "key": "scene-4",
