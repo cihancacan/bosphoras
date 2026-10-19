@@ -417,12 +417,11 @@
       "query": "Lake Como aerial Italy mountains",
       "tag": "lake-como",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "rejectedSource": "https://images.pexels.com/photos/36483983/pexels-photo-36483983.jpeg?auto=compress&cs=tinysrgb&w=1800",
       "rejectedCandidateContext": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-1.webp",
@@ -440,7 +439,12 @@
       "outputSize": [
         1200,
         800
-      ]
+      ],
+      "frCaption": "Lac de Côme — vue aérienne du bassin central, village au bord de l’eau, montagnes et bateaux",
+      "enCaption": "Lake Como — sunlit aerial of the central lake basin, waterfront village, mountains and boats",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "The actual saved 1200x800 original photograph was visually inspected via GitHub Actions 39324165094: bright blue lake, shoreline village, mountains and two boat wakes, identifiable from HeliFly Greece source as central Lake Como. Correct high-quality destination hero, not a generic lake image.",
+      "ownerRightsAuthorization": "Bosphoras operator declared permission to use photographs for the complete Bosphoras project; retain original creator/source attribution and respect any separate licence terms."
     },
     {
       "key": "scene-2",
