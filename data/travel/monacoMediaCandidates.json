@@ -4,8 +4,8 @@
   "scope": "SOURCE CANDIDATES ONLY; DRAFT FR EN, NOINDEX; NOT A FINISHED 21-PHOTO GUIDE",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 10,
-  "downloadedDestinationCandidates": 2,
+  "downloadedHotelCandidates": 6,
+  "downloadedDestinationCandidates": 0,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "ownerRightsAuthorization": "Bosphoras operator confirmed rights to use suitable project photos on 2026-10-19. Subject identity, attribution and image-specific publication review still required.",
@@ -16,13 +16,12 @@
       "key": "view-1",
       "slotIntent": "facade-casino-square",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.montecarlosbm.com/en/hotel-monaco/hotel-paris-monte-carlo"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/monaco-premium/hotel-de-paris/view-1.webp",
       "downloadUrl": "https://asset.montecarlosbm.com/styles/hero_desktop_minsize_2x_webp/s3/media/orphea/hotel-de-paris-monte-carlo-facade-de-jour-2024-013_1.jpg.webp?itok=1fFyeq4T",
       "sourcePage": "https://www.montecarlosbm.com/en/hotel-monaco/hotel-paris-monte-carlo",
@@ -38,7 +37,12 @@
       "outputSize": [
         1638,
         1200
-      ]
+      ],
+      "frCaption": "Hôtel de Paris Monte-Carlo — façade Belle Époque en plein jour sur la Place du Casino",
+      "enCaption": "Hôtel de Paris Monte-Carlo — sunlit Belle Époque façade beside Casino Square",
+      "ownerRightsAuthorization": "Bosphoras operator affirmed image-use authorization 2026-10-19",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Personally inspected the saved GitHub WebP and matched the visible subject to the exact hotel page."
     },
     {
       "property": "Hôtel de Paris Monte-Carlo",
@@ -46,13 +50,12 @@
       "key": "view-2",
       "slotIntent": "suite",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.montecarlosbm.com/en/hotel-monaco/hotel-paris-monte-carlo"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/monaco-premium/hotel-de-paris/view-2.webp",
       "downloadUrl": "https://asset.montecarlosbm.com/styles/list_item_common_mobile_2x_webp/s3/media/orphea/hp_diamond_suite_garnier_terrace_2020_001.jpg.webp?itok=0HMGxj7z",
       "sourcePage": "https://www.montecarlosbm.com/en/hotel-monaco/hotel-paris-monte-carlo/accommodation",
@@ -68,7 +71,12 @@
       "outputSize": [
         1440,
         720
-      ]
+      ],
+      "frCaption": "Hôtel de Paris Monte-Carlo — terrasse de la Diamond Suite Garnier face au Casino",
+      "enCaption": "Hôtel de Paris Monte-Carlo — Diamond Suite Garnier terrace overlooking the Casino",
+      "ownerRightsAuthorization": "Bosphoras operator affirmed image-use authorization 2026-10-19",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Personally inspected the saved GitHub WebP and matched the visible subject to the exact hotel page."
     },
     {
       "property": "Hôtel de Paris Monte-Carlo",
@@ -89,13 +97,12 @@
       "key": "view-1",
       "slotIntent": "belle-epoque-facade",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/monaco-premium/hotel-hermitage/view-1.webp",
       "downloadUrl": "https://asset.montecarlosbm.com/styles/hero_desktop_minsize_2x_webp/s3/media/orphea/hotel-hermitage-monaco-palace-5-etoiles-daily_facade_2019_0003_1_3.jpg.webp?VersionId=FK.ZwjYVxZP5rFe6L.UuERIZylwZwy_P&h=07048217&itok=GJcDKNHu",
       "sourcePage": "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo",
@@ -111,7 +118,12 @@
       "outputSize": [
         1638,
         1200
-      ]
+      ],
+      "frCaption": "Hôtel Hermitage Monte-Carlo — façade Belle Époque encadrée par des jardins",
+      "enCaption": "Hôtel Hermitage Monte-Carlo — Belle Époque facade framed by gardens",
+      "ownerRightsAuthorization": "Bosphoras operator affirmed image-use authorization 2026-10-19",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Personally inspected the saved GitHub WebP and matched the visible subject to the exact hotel page."
     },
     {
       "property": "Hôtel Hermitage Monte-Carlo",
@@ -119,13 +131,12 @@
       "key": "view-2",
       "slotIntent": "diamond-suite",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/monaco-premium/hotel-hermitage/view-2.webp",
       "downloadUrl": "https://asset.montecarlosbm.com/styles/list_item_common_mobile_2x_webp/s3/media/orphea/diamond%20suite%20pr%C3%A9sidentielle_h%C3%B4tel%20hermitage%20monte-carlo_03.jpg.webp?VersionId=wTt3OiW1Amvh3e.o5JNUc6gmainbNxGM&h=7323da3b&itok=O_lktZGS",
       "sourcePage": "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo/accommodation",
@@ -141,127 +152,88 @@
       "outputSize": [
         1440,
         720
-      ]
+      ],
+      "frCaption": "Hôtel Hermitage Monte-Carlo — salon lumineux d'une Diamond Suite vue mer",
+      "enCaption": "Hôtel Hermitage Monte-Carlo — sunlit sea-facing Diamond Suite lounge",
+      "ownerRightsAuthorization": "Bosphoras operator affirmed image-use authorization 2026-10-19",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Personally inspected the saved GitHub WebP and matched the visible subject to the exact hotel page."
     },
     {
       "property": "Hôtel Hermitage Monte-Carlo",
       "propertyKey": "hotel-hermitage",
       "key": "view-3",
       "slotIntent": "jardin-d-hiver",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "localPath": "/images/travel/monaco-premium/hotel-hermitage/view-3.webp",
-      "downloadUrl": "https://asset.montecarlosbm.com/styles/list_item_common_mobile_2x_webp/s3/media/orphea/hh_simple_suite_exclusive_521_22_garden_view_0003.jpg.webp?h=b01f5044&itok=XPvRquiq",
+      "visualQaWarning": "Distinct room photograph but a second living room: must replace with Winter Garden or a distinct dining/wellness scene, not three suite views.",
       "sourcePage": "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo",
       "candidateContext": "    ",
       "credit": "Official hotel photo",
-      "sha256": "32b445ac21b1d6d48b9c6107367de76ee3a4c69d470e5ff802553443c6332b79",
-      "dhash": "0000100110011011100100111010001110100011101001000101010001011001",
-      "bytes": 75152,
-      "originalSize": [
-        1440,
-        720
-      ],
-      "outputSize": [
-        1440,
-        720
-      ]
+      "rejectedSource": "https://asset.montecarlosbm.com/styles/list_item_common_mobile_2x_webp/s3/media/orphea/hh_simple_suite_exclusive_521_22_garden_view_0003.jpg.webp?h=b01f5044&itok=XPvRquiq",
+      "rejectedCandidateContext": "    "
     },
     {
       "property": "Hôtel Métropole Monte-Carlo",
       "propertyKey": "hotel-metropole",
       "key": "view-1",
       "slotIntent": "courtyard",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.metropole.com/"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "localPath": "/images/travel/monaco-premium/hotel-metropole/view-1.webp",
-      "downloadUrl": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/699f049192a407b5ca42551c_From%20Metropole-p-1080.avif",
+      "visualQaWarning": "Couple photographed from behind occupies the frame; not an architectural courtyard or hotel exterior.",
       "sourcePage": "https://www.metropole.com/",
       "candidateContext": "Well-dressed man and woman holding wine glasses, standing on a terrace overlooking a city skyline with domed rooftops at sunset.    ",
       "credit": "Official hotel photo",
-      "sha256": "c5ba483779088146881d3a532507245f1f3df4341412045ad36e873541386833",
-      "dhash": "0000100100110100101101000011010001110110001101000011010000110110",
-      "bytes": 43476,
-      "originalSize": [
-        1080,
-        675
-      ],
-      "outputSize": [
-        1080,
-        675
-      ]
+      "rejectedSource": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/699f049192a407b5ca42551c_From%20Metropole-p-1080.avif",
+      "rejectedCandidateContext": "Well-dressed man and woman holding wine glasses, standing on a terrace overlooking a city skyline with domed rooftops at sunset.    "
     },
     {
       "property": "Hôtel Métropole Monte-Carlo",
       "propertyKey": "hotel-metropole",
       "key": "view-2",
       "slotIntent": "jacques-garcia-suite",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.metropole.com/"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "localPath": "/images/travel/monaco-premium/hotel-metropole/view-2.webp",
-      "downloadUrl": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/69a0414d38b33848fae45990_cover-p-1080.webp",
+      "visualQaWarning": "Close-up of an upholstered headboard rather than a compelling complete suite view; seek fuller room image.",
       "sourcePage": "https://www.metropole.com/rooms-suites",
       "candidateContext": "Elegant bedroom corner with a red velvet headboard, white pillows, decorative cushion, floral wallpaper, and a vintage table lamp on a glass side table.    ",
       "credit": "Official hotel photo",
-      "sha256": "c9fe7cd3e5f5c89cf5d684ff6c1501f910248448636b831ed902a5f37a85e1f8",
-      "dhash": "1001111101111011011101101101010001111001101110011001100110011000",
-      "bytes": 59192,
-      "originalSize": [
-        1080,
-        588
-      ],
-      "outputSize": [
-        1080,
-        588
-      ]
+      "rejectedSource": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/69a0414d38b33848fae45990_cover-p-1080.webp",
+      "rejectedCandidateContext": "Elegant bedroom corner with a red velvet headboard, white pillows, decorative cushion, floral wallpaper, and a vintage table lamp on a glass side table.    "
     },
     {
       "property": "Hôtel Métropole Monte-Carlo",
       "propertyKey": "hotel-metropole",
       "key": "view-3",
       "slotIntent": "odyssey-pool",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.metropole.com/"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "localPath": "/images/travel/monaco-premium/hotel-metropole/view-3.webp",
-      "downloadUrl": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/69aff15352e9c07f370f419b_pool-p-1080.avif",
+      "visualQaWarning": "Waiter walking in foreground beside a dim pool; prefer uncluttered premium Odyssey panorama.",
       "sourcePage": "https://www.metropole.com/",
       "candidateContext": "Man in white uniform carrying a tray with drinks, walking beside a swimming pool with outdoor tables, chairs, and umbrellas, and a large black-and-white mural in the background.    ",
       "credit": "Official hotel photo",
-      "sha256": "58636e43a637f7f20e5cdd6ca14290eb3f9b0158d3c1326b50e365fd68115995",
-      "dhash": "1001001100000001100010111000010010011011001100101000000110000001",
-      "bytes": 97122,
-      "originalSize": [
-        1080,
-        675
-      ],
-      "outputSize": [
-        1080,
-        675
-      ]
+      "rejectedSource": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/69aff15352e9c07f370f419b_pool-p-1080.avif",
+      "rejectedCandidateContext": "Man in white uniform carrying a tray with drinks, walking beside a swimming pool with outdoor tables, chairs, and umbrellas, and a large black-and-white mural in the background.    "
     },
     {
       "property": "Monte-Carlo Bay Hotel & Resort",
@@ -282,13 +254,12 @@
       "key": "view-2",
       "slotIntent": "sea-view-room",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/monaco-premium/monte-carlo-bay/view-2.webp",
       "downloadUrl": "https://asset.montecarlosbm.com/styles/hero_desktop_minsize_2x_webp/s3/media/orphea/mc_room_balcony_view_0033.jpg.webp?h=3e346c1f&itok=AU3g2p_4",
       "sourcePage": "https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort/accommodation",
@@ -304,7 +275,12 @@
       "outputSize": [
         1638,
         1200
-      ]
+      ],
+      "frCaption": "Monte-Carlo Bay — panorama sur les palmiers et la Méditerranée depuis l'hôtel",
+      "enCaption": "Monte-Carlo Bay — hotel-side panorama over palms and the Mediterranean",
+      "ownerRightsAuthorization": "Bosphoras operator affirmed image-use authorization 2026-10-19",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Personally inspected the saved GitHub WebP and matched the visible subject to the exact hotel page."
     },
     {
       "property": "Monte-Carlo Bay Hotel & Resort",
@@ -312,13 +288,12 @@
       "key": "view-3",
       "slotIntent": "gardens-blue-bay",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/monaco-premium/monte-carlo-bay/view-3.webp",
       "downloadUrl": "https://asset.montecarlosbm.com/styles/hero_desktop_minsize_2x_webp/s3/media/orphea/hotel-monte-carlo-bay-monaco-4-etoiles-exterior_view_2022_0037_5.jpeg.webp?itok=NHrTvUVg",
       "sourcePage": "https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort",
@@ -334,7 +309,12 @@
       "outputSize": [
         1638,
         1200
-      ]
+      ],
+      "frCaption": "Monte-Carlo Bay — architecture du resort et lagon entouré de jardins au bord de la mer",
+      "enCaption": "Monte-Carlo Bay — coastal resort architecture with Mediterranean gardens and lagoon",
+      "ownerRightsAuthorization": "Bosphoras operator affirmed image-use authorization 2026-10-19",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Personally inspected the saved GitHub WebP and matched the visible subject to the exact hotel page."
     }
   ],
   "destinationScenes": [
@@ -342,7 +322,7 @@
       "key": "scene-1",
       "label": "Casino Square and Hôtel de Paris façade",
       "query": "Monaco Casino Square promenade",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -350,23 +330,12 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "localPath": "/images/travel/monaco-premium/destination/scene-1.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Liebherr_LTM_LTM_1300-6.2_%2852993821916%29.jpg/1920px-Liebherr_LTM_LTM_1300-6.2_%2852993821916%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "visualQaWarning": "Entire frame dominated by yellow crane and worksite, not Casino Square.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Liebherr_LTM_LTM_1300-6.2_(52993821916).jpg",
       "candidateContext": "File:Liebherr LTM LTM 1300-6.2 (52993821916).jpg",
       "credit": "Alexandre Prevot from Nancy, France · CC BY-SA 2.0",
-      "sha256": "7dde219a76f2e3c2a4086865effe54eac3ce87d2843d413e49a01a14afff7fb3",
-      "dhash": "0110011101101101011011000101111111001011001100011111011011100110",
-      "bytes": 447668,
-      "originalSize": [
-        1920,
-        1280
-      ],
-      "outputSize": [
-        1800,
-        1200
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Liebherr_LTM_LTM_1300-6.2_%2852993821916%29.jpg/1920px-Liebherr_LTM_LTM_1300-6.2_%2852993821916%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "File:Liebherr LTM LTM 1300-6.2 (52993821916).jpg"
     },
     {
       "key": "scene-2",
@@ -437,7 +406,7 @@
       "key": "scene-7",
       "label": "Japanese Garden Monaco",
       "query": "Monaco Jardin Japonais scenic",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -445,23 +414,12 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "localPath": "/images/travel/monaco-premium/destination/scene-7.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Japanese_garden_Monaco2.jpg/1920px-Japanese_garden_Monaco2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "visualQaWarning": "Dark cropped gravel garden with information sign, not a distinctive polished Japanese Garden view.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Japanese_garden_Monaco2.jpg",
       "candidateContext": "File:Japanese garden Monaco2.jpg",
       "credit": "Tangopaso · Public domain",
-      "sha256": "745a3e3423e3491a60d46d0caf3ab2b1f095827c137aad85a558619e9301113f",
-      "dhash": "0101100011001000110011000000011101100011000001110000111001011100",
-      "bytes": 700178,
-      "originalSize": [
-        1920,
-        1440
-      ],
-      "outputSize": [
-        1600,
-        1200
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Japanese_garden_Monaco2.jpg/1920px-Japanese_garden_Monaco2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "File:Japanese garden Monaco2.jpg"
     },
     {
       "key": "scene-8",
