@@ -4,8 +4,8 @@
   "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 5,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 9,
+  "downloadedDestinationCandidates": 2,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -215,25 +215,37 @@
       "property": "Le Grand Bellevue",
       "propertyKey": "le-grand-bellevue",
       "key": "view-3",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://bellevue-gstaad.ch/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "sourcePage": "https://bellevue-gstaad.ch/",
-      "candidateContext": "Embedded image in official property source",
-      "visualQaWarning": "Exact same dining-room composition as Bellevue view-2; not a third distinct hotel image.",
-      "credit": "",
+      "sourcePage": "https://bellevue-gstaad.ch/gallery/",
+      "candidateContext": "   ",
+      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
+      "credit": "Official hotel media; exact subject must be checked",
       "rejectedSource": "https://bellevue-gstaad.ch/wp-content/uploads/2025/12/tobias.kaser_photo.5852-1309x785.jpg",
-      "rejectedCandidateContext": "Embedded image in official property source"
+      "rejectedCandidateContext": "Embedded image in official property source",
+      "localPath": "/images/travel/gstaad-premium/le-grand-bellevue/view-3.webp",
+      "downloadUrl": "https://bellevue-gstaad.ch/wp-content/uploads/2018/05/Suite-Etoile-Bathroom-1-1600x960.jpg",
+      "sha256": "4f2cb1e7475d508e66d3f30967a85c15220ead6743a8c9ef380cad18c209628a",
+      "bytes": 202948,
+      "originalSize": [
+        1600,
+        960
+      ],
+      "outputSize": [
+        1600,
+        960
+      ]
     },
     {
       "property": "Ultima Hotel Gstaad",
       "propertyKey": "ultima-hotel",
       "key": "view-1",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -241,18 +253,30 @@
         "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "sourcePage": "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad",
-      "candidateContext": "",
-      "visualQaWarning": "Exterior facade with dominant paved parking apron; below Bosphoras premium editorial standard.",
-      "credit": "",
+      "sourcePage": "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/gallery",
+      "candidateContext": "Ultima Hotel Gstaad · winter season exterior",
+      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
+      "credit": "Ultima Collection official hotel gallery",
       "rejectedSource": "https://www.ultimacollection.com/media/jh4ofzy2/ultima_hotel_gstaad_exterior_summerseason.jpg?rxy=0.24436090225563908%2C0.6207815275310835&width=1536&format=webp",
-      "rejectedCandidateContext": ""
+      "rejectedCandidateContext": "",
+      "localPath": "/images/travel/gstaad-premium/ultima-hotel/view-1.webp",
+      "downloadUrl": "https://www.ultimacollection.com/media/feupntnc/ultima-collection-gstaad-exterior-09.jpg?width=1536",
+      "sha256": "673abebb9b86287de57702085b8dea363d673e893bf74dd85b91aa3109bb8137",
+      "bytes": 138862,
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "outputSize": [
+        1536,
+        1024
+      ]
     },
     {
       "property": "Ultima Hotel Gstaad",
       "propertyKey": "ultima-hotel",
       "key": "view-2",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -260,18 +284,30 @@
         "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "sourcePage": "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad",
-      "candidateContext": "",
-      "visualQaWarning": "Duplicate of Ultima view-1 with crop only; not a distinct suite photo.",
-      "credit": "",
+      "sourcePage": "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/gallery",
+      "candidateContext": "Ultima Hotel Gstaad · Signature Suite interior",
+      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
+      "credit": "Ultima Collection official hotel gallery",
       "rejectedSource": "https://www.ultimacollection.com/media/jh4ofzy2/ultima_hotel_gstaad_exterior_summerseason.jpg?rxy=0.24436090225563908%2C0.6207815275310835&width=1536",
-      "rejectedCandidateContext": ""
+      "rejectedCandidateContext": "",
+      "localPath": "/images/travel/gstaad-premium/ultima-hotel/view-2.webp",
+      "downloadUrl": "https://www.ultimacollection.com/media/50kfr2v3/10_ultimacollection_ultimahotelgstaad_interior_signaturesuite01.jpg?width=1536",
+      "sha256": "e728bd2eafada475a5d93e0e3c302173e42042b9fa67ee1057311108dbf14e7b",
+      "bytes": 202082,
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "outputSize": [
+        1536,
+        1024
+      ]
     },
     {
       "property": "Ultima Hotel Gstaad",
       "propertyKey": "ultima-hotel",
       "key": "view-3",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -279,12 +315,24 @@
         "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "sourcePage": "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad",
-      "candidateContext": "",
-      "visualQaWarning": "Duplicate of Ultima view-1 with crop only; not a distinct wellness photo.",
-      "credit": "",
+      "sourcePage": "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/wellness",
+      "candidateContext": "Ultima Hotel Gstaad · spa setting — identity to confirm visually",
+      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
+      "credit": "Ultima Collection official hotel gallery",
       "rejectedSource": "https://www.ultimacollection.com/media/jh4ofzy2/ultima_hotel_gstaad_exterior_summerseason.jpg?rxy=0.24436090225563908%2C0.6207815275310835&width=1280&height=1080&format=webp",
-      "rejectedCandidateContext": ""
+      "rejectedCandidateContext": "",
+      "localPath": "/images/travel/gstaad-premium/ultima-hotel/view-3.webp",
+      "downloadUrl": "https://www.ultimacollection.com/media/kqwh2tr3/202502-gstaad-98-5.jpg?width=1536",
+      "sha256": "5a1045b84a3e1db8ef00a60ecc120bc8fc343dd8396c8e7f8687ade91301d298",
+      "bytes": 175586,
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "outputSize": [
+        1536,
+        1024
+      ]
     }
   ],
   "destinationScenes": [
@@ -336,10 +384,26 @@
       "key": "scene-5",
       "placeLabel": "Wispile",
       "searchQuery": "Wispile Gstaad",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
+      "localPath": "/images/travel/gstaad-premium/destination/scene-5.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Giferspitz_from_Wispile.jpg/1920px-Giferspitz_from_Wispile.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Giferspitz_from_Wispile.jpg",
+      "candidateContext": "File:Giferspitz from Wispile.jpg",
+      "credit": "Zacharie Grossen | CC BY-SA 3.0",
+      "sha256": "39287a851d654ca35767e9b11791ad57605dcd17c76e3cf185a1abef0390ae9d",
+      "bytes": 205756,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ]
     },
     {
       "key": "scene-6",
@@ -354,10 +418,26 @@
       "key": "scene-7",
       "placeLabel": "Saanen",
       "searchQuery": "Saanen village",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA"
+      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
+      "localPath": "/images/travel/gstaad-premium/destination/scene-7.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Panoramaweg_Saanenm%C3%B6ser_-_Sch%C3%B6nried_-_Gruben_-_Gstaad_-_panoramio_%281%29.jpg/1920px-Panoramaweg_Saanenm%C3%B6ser_-_Sch%C3%B6nried_-_Gruben_-_Gstaad_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panoramaweg_Saanenmöser_-_Schönried_-_Gruben_-_Gstaad_-_panoramio_(1).jpg",
+      "candidateContext": "File:Panoramaweg Saanenmöser - Schönried - Gruben - Gstaad - panoramio (1).jpg",
+      "credit": "Patrick Nouhailler's… | CC BY-SA 3.0",
+      "sha256": "0f6e4508edf07a31ef1f4e8eee4e8512dd3786b5653bb94ef6914c2788bede0d",
+      "bytes": 294482,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ]
     },
     {
       "key": "scene-8",
