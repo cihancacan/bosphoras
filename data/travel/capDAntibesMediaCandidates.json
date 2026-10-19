@@ -1,0 +1,275 @@
+{
+  "destination": "cap-dantibes",
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "hotels": [
+    {
+      "property": "Hôtel du Cap-Eden-Roc",
+      "propertyKey": "hotel-du-cap-eden-roc",
+      "key": "view-1",
+      "slotIntent": "Historic hotel façade in full daylight, original Hôtel du Cap white Belle Époque building",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.oetkerhotels.com/fr/hotels/hotel-du-cap-eden-roc/"
+      ],
+      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+    },
+    {
+      "property": "Hôtel du Cap-Eden-Roc",
+      "propertyKey": "hotel-du-cap-eden-roc",
+      "key": "view-2",
+      "slotIntent": "Real guestroom or terrace at Hôtel du Cap-Eden-Roc, not another Oetker hotel",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.oetkerhotels.com/fr/hotels/hotel-du-cap-eden-roc/"
+      ],
+      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+    },
+    {
+      "property": "Hôtel du Cap-Eden-Roc",
+      "propertyKey": "hotel-du-cap-eden-roc",
+      "key": "view-3",
+      "slotIntent": "Signature Eden-Roc seawater pool and rock coastline, sunlit and authentic",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.oetkerhotels.com/fr/hotels/hotel-du-cap-eden-roc/"
+      ],
+      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+    },
+    {
+      "property": "Cap d’Antibes Beach Hotel",
+      "propertyKey": "cap-dantibes-beach-hotel",
+      "key": "view-1",
+      "slotIntent": "Contemporary low hotel building and genuine private beach in daylight",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://capdantibes-beachhotel.com/"
+      ],
+      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+    },
+    {
+      "property": "Cap d’Antibes Beach Hotel",
+      "propertyKey": "cap-dantibes-beach-hotel",
+      "key": "view-2",
+      "slotIntent": "Bright real hotel room with terrace and accurately identified category",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://capdantibes-beachhotel.com/en"
+      ],
+      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+    },
+    {
+      "property": "Cap d’Antibes Beach Hotel",
+      "propertyKey": "cap-dantibes-beach-hotel",
+      "key": "view-3",
+      "slotIntent": "Distinct authentic beachfront BABA or swimming pool at Cap d’Antibes Beach Hotel",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://capdantibes-beachhotel.com/en"
+      ],
+      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+    },
+    {
+      "property": "Villa Miraé",
+      "propertyKey": "villa-mirae",
+      "key": "view-1",
+      "slotIntent": "Current Villa Miraé exterior after rebranding, NEVER a dated Impérial Garoupe image",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.villamirae-capantibes.com/"
+      ],
+      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+    },
+    {
+      "property": "Villa Miraé",
+      "propertyKey": "villa-mirae",
+      "key": "view-2",
+      "slotIntent": "Current Villa Miraé genuine room or suite with distinct balcony/garden outlook",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.villamirae-capantibes.com/en/"
+      ],
+      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+    },
+    {
+      "property": "Villa Miraé",
+      "propertyKey": "villa-mirae",
+      "key": "view-3",
+      "slotIntent": "Current Villa Miraé real pool and Mediterranean garden in bright daylight",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.villamirae-capantibes.com/"
+      ],
+      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+    },
+    {
+      "property": "Hôtel Belles Rives",
+      "propertyKey": "hotel-belles-rives",
+      "key": "view-1",
+      "slotIntent": "Actual Hotel Belles Rives historic Art Deco façade facing the sea",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.bellesrives.com/fr/"
+      ],
+      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+    },
+    {
+      "property": "Hôtel Belles Rives",
+      "propertyKey": "hotel-belles-rives",
+      "key": "view-2",
+      "slotIntent": "Belles Rives authentic elegantly lit room or suite, distinct from restaurant",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.bellesrives.com/en/"
+      ],
+      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+    },
+    {
+      "property": "Hôtel Belles Rives",
+      "propertyKey": "hotel-belles-rives",
+      "key": "view-3",
+      "slotIntent": "Belles Rives sea-facing terrace or restaurant La Passagère in daylight",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.bellesrives.com/fr/"
+      ],
+      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "label": "Aerial Cap d’Antibes peninsula with hotel estates and rocky coastline in clear sunlight",
+      "query": "Cap d'Antibes aerial headland France",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.antibesjuanlespins.com/"
+      ],
+      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+    },
+    {
+      "key": "scene-2",
+      "label": "Hôtel du Cap-Eden-Roc headland Côte d'Azur seascape, not Nice or Monaco",
+      "query": "Cap Antibes Pointe Bacon Eden Roc coast",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.antibesjuanlespins.com/"
+      ],
+      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+    },
+    {
+      "key": "scene-3",
+      "label": "Plage de la Garoupe and real turquoise Garoupe Bay",
+      "query": "Plage de la Garoupe Cap d'Antibes",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.antibesjuanlespins.com/"
+      ],
+      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+    },
+    {
+      "key": "scene-4",
+      "label": "Cap d’Antibes rocky coastal Tirepoil path and pines, geographically verified",
+      "query": "Sentier Tirepoil Cap Antibes",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.antibesjuanlespins.com/"
+      ],
+      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+    },
+    {
+      "key": "scene-5",
+      "label": "Port Gallice small boat harbour Cap d’Antibes",
+      "query": "Port Gallice Antibes",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.antibesjuanlespins.com/"
+      ],
+      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+    },
+    {
+      "key": "scene-6",
+      "label": "Port du Crouton and western bays, clearly identified Cap d'Antibes",
+      "query": "Port du Crouton Cap Antibes",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.antibesjuanlespins.com/"
+      ],
+      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+    },
+    {
+      "key": "scene-7",
+      "label": "Notre-Dame de la Garoupe and headland lighthouse; real location",
+      "query": "Phare de la Garoupe Cap d'Antibes",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.antibesjuanlespins.com/"
+      ],
+      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+    },
+    {
+      "key": "scene-8",
+      "label": "Villa Eilenroc grounds and coastline (do not imply public lodging)",
+      "query": "Villa Eilenroc Antibes",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.antibesjuanlespins.com/"
+      ],
+      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+    },
+    {
+      "key": "scene-9",
+      "label": "Juan-les-Pins Belles Rives west Cap d’Antibes waterfront and sea",
+      "query": "Juan-les-Pins Belles Rives waterfront",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.antibesjuanlespins.com/"
+      ],
+      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+    }
+  ]
+}
