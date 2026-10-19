@@ -32,3 +32,9 @@ Villa Miraé est l’ancienne Impérial Garoupe ; ne jamais réutiliser des clic
 - Photos refusées : Cap d'Antibes Beach Hotel vue-2 (collage de plusieurs chambres) et vue-3 (mosaïque publicitaire) ; Villa Miraé vue-1 (image abstraite, hôtel non reconnaissable) ; scène-3 Garoupe (route et voitures au lieu d'une plage identifiable) ; scène-7 phare de la Garoupe (antenne prédominante, ciel terne). Ne jamais les qualifier de validées.
 - Remplacements requis : une vraie chambre lumineuse unique et la plage/piscine réelles du Beach Hotel ; une vue extérieure véritable de Villa Miraé après rénovation ; plage de Garoupe et phare de la Garoupe photographiés avec cadrage premium.
 - **Pas de publication** : manifest global non approuvé, pages noindex, aucune preuve de disponibilité Wink et aucun nouveau Vercel Preview de lot demandé. Il faudra inspecter chaque image de remplacement avant d'activer son emplacement.
+
+## Reprise des cinq remplacements — octobre 2026
+
+- Les cinq images précédemment rejetées restent invisibles tant qu'un original de remplacement n'a pas passé la revue photo. Le collecteur a été corrigé pour remplacer les slots rejetés sans réutiliser leur URL ni toucher aux 16 photographies approuvées.
+- Sources ciblées avec photographies individuelles : Relais & Châteaux ou galerie spécialisée documentée pour la chambre du Beach Hotel ; ePaillote / Relais & Châteaux pour la plage et la piscine du même hôtel ; source actuelle Villa Miraé et communiqué 2025 pour la façade rénovée ; une véritable plage de Garoupe ; site officiel de l'office du tourisme pour le phare.
+- Après téléchargement, toute nouvelle photo est enregistrée comme candidate **non approuvée** avec URL source, crédit, empreinte et image WebP. Contrôle visuel manuel requis avant la validation finale. Aucune nouvelle Preview Vercel.
