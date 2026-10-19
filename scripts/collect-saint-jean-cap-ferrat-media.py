@@ -20,12 +20,12 @@ lib.MANIFEST=Path("data/travel/saintJeanCapFerratMediaCandidates.json")
 lib.OUT=Path("public/images/travel/saint-jean-cap-ferrat-premium")
 lib.HOTELS={
 "grand-hotel-cap-ferrat":{
- "view-1":[("https://www.fourseasons.com/capferrat/",["grand","exterior","capferrat","hotel","gardens"])],
- "view-2":[("https://www.fourseasons.com/capferrat/accommodations/",["suite","bedroom","room","sea"])],
- "view-3":[("https://www.fourseasons.com/capferrat/services-and-amenities/",["dauphin","pool","swimming","seawater"])],
+ "view-1":[("https://www.fourseasons.com/capferrat/photos-and-videos/",["grand","exterior","hotel","cap","ferrat"])],
+ "view-2":[("https://www.fourseasons.com/capferrat/photos-and-videos/",["suite","bedroom","room","sea"])],
+ "view-3":[("https://www.fourseasons.com/capferrat/photos-and-videos/",["dauphin","pool","swimming","seawater"])],
 },
 "royal-riviera":{
- "view-1":[("https://www.royal-riviera.com/",["royal","riviera","exterior","facade"])],
+ "view-1":[("https://www.royal-riviera.com/",["royal","riviera","exterior","facade","hotel"])],
  "view-2":[("https://www.royal-riviera.com/en/rooms-suites/",["room","suite","balcony","sea"])],
  "view-3":[("https://www.royal-riviera.com/en/",["beach","pool","garden","terrace"])],
 },
@@ -50,5 +50,14 @@ lib.LANDSCAPES={
  "scene-8":("Promenade Maurice Rouvier Saint Jean Cap Ferrat",("rouvier",)),
  "scene-9":("Baie des Fourmis Saint Jean Cap Ferrat",("fourmis",)),
 }
+
+# Do not retry rejected image URLs or treat different crops as separate photos.
+_original_collect=lib.collect
+def collect_with_rejections(item,candidates,sha_used,url_used,visual_used):
+    rejected=item.get("rejectedSource")
+    if rejected:
+        url_used.add(rejected.split("?")[0])
+    return _original_collect(item,candidates,sha_used,url_used,visual_used)
+lib.collect=collect_with_rejections
 if __name__=="__main__":
  lib.main()
