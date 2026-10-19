@@ -4,8 +4,8 @@
   "scope": "SOURCE CANDIDATES ONLY; DRAFT FR EN, NOINDEX; NOT A FINISHED 21-PHOTO GUIDE",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 6,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 10,
+  "downloadedDestinationCandidates": 4,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "ownerRightsAuthorization": "Bosphoras operator confirmed rights to use suitable project photos on 2026-10-19. Subject identity, attribution and image-specific publication review still required.",
@@ -164,76 +164,128 @@
       "propertyKey": "hotel-hermitage",
       "key": "view-3",
       "slotIntent": "jardin-d-hiver",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Distinct room photograph but a second living room: must replace with Winter Garden or a distinct dining/wellness scene, not three suite views.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo",
       "candidateContext": "    ",
       "credit": "Official hotel photo",
       "rejectedSource": "https://asset.montecarlosbm.com/styles/list_item_common_mobile_2x_webp/s3/media/orphea/hh_simple_suite_exclusive_521_22_garden_view_0003.jpg.webp?h=b01f5044&itok=XPvRquiq",
-      "rejectedCandidateContext": "    "
+      "rejectedCandidateContext": "    ",
+      "localPath": "/images/travel/monaco-premium/hotel-hermitage/view-3.webp",
+      "downloadUrl": "https://asset.montecarlosbm.com/styles/list_item_common_mobile_2x_webp/s3/media/orphea/hh_simple_suite_exclusive_521_22_garden_view_0003.jpg.webp?h=b01f5044&itok=XPvRquiq",
+      "sha256": "32b445ac21b1d6d48b9c6107367de76ee3a4c69d470e5ff802553443c6332b79",
+      "dhash": "0000100110011011100100111010001110100011101001000101010001011001",
+      "bytes": 75152,
+      "originalSize": [
+        1440,
+        720
+      ],
+      "outputSize": [
+        1440,
+        720
+      ]
     },
     {
       "property": "Hôtel Métropole Monte-Carlo",
       "propertyKey": "hotel-metropole",
       "key": "view-1",
       "slotIntent": "courtyard",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.metropole.com/"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Couple photographed from behind occupies the frame; not an architectural courtyard or hotel exterior.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://www.metropole.com/",
       "candidateContext": "Well-dressed man and woman holding wine glasses, standing on a terrace overlooking a city skyline with domed rooftops at sunset.    ",
       "credit": "Official hotel photo",
       "rejectedSource": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/699f049192a407b5ca42551c_From%20Metropole-p-1080.avif",
-      "rejectedCandidateContext": "Well-dressed man and woman holding wine glasses, standing on a terrace overlooking a city skyline with domed rooftops at sunset.    "
+      "rejectedCandidateContext": "Well-dressed man and woman holding wine glasses, standing on a terrace overlooking a city skyline with domed rooftops at sunset.    ",
+      "localPath": "/images/travel/monaco-premium/hotel-metropole/view-1.webp",
+      "downloadUrl": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/699f049192a407b5ca42551c_From%20Metropole-p-1080.avif",
+      "sha256": "c5ba483779088146881d3a532507245f1f3df4341412045ad36e873541386833",
+      "dhash": "0000100100110100101101000011010001110110001101000011010000110110",
+      "bytes": 43476,
+      "originalSize": [
+        1080,
+        675
+      ],
+      "outputSize": [
+        1080,
+        675
+      ]
     },
     {
       "property": "Hôtel Métropole Monte-Carlo",
       "propertyKey": "hotel-metropole",
       "key": "view-2",
       "slotIntent": "jacques-garcia-suite",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.metropole.com/"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Close-up of an upholstered headboard rather than a compelling complete suite view; seek fuller room image.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://www.metropole.com/rooms-suites",
       "candidateContext": "Elegant bedroom corner with a red velvet headboard, white pillows, decorative cushion, floral wallpaper, and a vintage table lamp on a glass side table.    ",
       "credit": "Official hotel photo",
       "rejectedSource": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/69a0414d38b33848fae45990_cover-p-1080.webp",
-      "rejectedCandidateContext": "Elegant bedroom corner with a red velvet headboard, white pillows, decorative cushion, floral wallpaper, and a vintage table lamp on a glass side table.    "
+      "rejectedCandidateContext": "Elegant bedroom corner with a red velvet headboard, white pillows, decorative cushion, floral wallpaper, and a vintage table lamp on a glass side table.    ",
+      "localPath": "/images/travel/monaco-premium/hotel-metropole/view-2.webp",
+      "downloadUrl": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/69a0414d38b33848fae45990_cover-p-1080.webp",
+      "sha256": "c9fe7cd3e5f5c89cf5d684ff6c1501f910248448636b831ed902a5f37a85e1f8",
+      "dhash": "1001111101111011011101101101010001111001101110011001100110011000",
+      "bytes": 59192,
+      "originalSize": [
+        1080,
+        588
+      ],
+      "outputSize": [
+        1080,
+        588
+      ]
     },
     {
       "property": "Hôtel Métropole Monte-Carlo",
       "propertyKey": "hotel-metropole",
       "key": "view-3",
       "slotIntent": "odyssey-pool",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.metropole.com/"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Waiter walking in foreground beside a dim pool; prefer uncluttered premium Odyssey panorama.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://www.metropole.com/",
       "candidateContext": "Man in white uniform carrying a tray with drinks, walking beside a swimming pool with outdoor tables, chairs, and umbrellas, and a large black-and-white mural in the background.    ",
       "credit": "Official hotel photo",
       "rejectedSource": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/69aff15352e9c07f370f419b_pool-p-1080.avif",
-      "rejectedCandidateContext": "Man in white uniform carrying a tray with drinks, walking beside a swimming pool with outdoor tables, chairs, and umbrellas, and a large black-and-white mural in the background.    "
+      "rejectedCandidateContext": "Man in white uniform carrying a tray with drinks, walking beside a swimming pool with outdoor tables, chairs, and umbrellas, and a large black-and-white mural in the background.    ",
+      "localPath": "/images/travel/monaco-premium/hotel-metropole/view-3.webp",
+      "downloadUrl": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/69aff15352e9c07f370f419b_pool-p-1080.avif",
+      "sha256": "58636e43a637f7f20e5cdd6ca14290eb3f9b0158d3c1326b50e365fd68115995",
+      "dhash": "1001001100000001100010111000010010011011001100101000000110000001",
+      "bytes": 97122,
+      "originalSize": [
+        1080,
+        675
+      ],
+      "outputSize": [
+        1080,
+        675
+      ]
     },
     {
       "property": "Monte-Carlo Bay Hotel & Resort",
@@ -322,7 +374,7 @@
       "key": "scene-1",
       "label": "Casino Square and Hôtel de Paris façade",
       "query": "Monaco Casino Square promenade",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -330,25 +382,55 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Entire frame dominated by yellow crane and worksite, not Casino Square.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Liebherr_LTM_LTM_1300-6.2_(52993821916).jpg",
-      "candidateContext": "File:Liebherr LTM LTM 1300-6.2 (52993821916).jpg",
-      "credit": "Alexandre Prevot from Nancy, France · CC BY-SA 2.0",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2024-09-22_Casino_de_Monte_Carlo.jpg",
+      "candidateContext": "2024-09-22 Casino de Monte Carlo.jpg",
+      "credit": "Alexkom000 · CC BY 4.0",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Liebherr_LTM_LTM_1300-6.2_%2852993821916%29.jpg/1920px-Liebherr_LTM_LTM_1300-6.2_%2852993821916%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedCandidateContext": "File:Liebherr LTM LTM 1300-6.2 (52993821916).jpg"
+      "rejectedCandidateContext": "File:Liebherr LTM LTM 1300-6.2 (52993821916).jpg",
+      "localPath": "/images/travel/monaco-premium/destination/scene-1.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/2024-09-22_Casino_de_Monte_Carlo.jpg/1920px-2024-09-22_Casino_de_Monte_Carlo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha256": "53a9d806b5db05ba5e4265d06cd8ec5b7ec82d40a22cf2bee149d7626934cfe5",
+      "dhash": "0110101001101001011100010011001100010111000101110011011101100101",
+      "bytes": 568736,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     },
     {
       "key": "scene-2",
       "label": "Port Hercule yachts and bay",
       "query": "Monaco Port Hercule yachts harbour panorama",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.visitmonaco.com/"
       ],
-      "rights": "Operator authorization noted; retain author and license evidence and review each image manually"
+      "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/monaco-premium/destination/scene-2.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/View_of_luxury_yachts_on_Port_Hercules_from_Avenue_de_la_Porte_Neuve%2C_Monaco_%2853969600210%29.jpg/1920px-View_of_luxury_yachts_on_Port_Hercules_from_Avenue_de_la_Porte_Neuve%2C_Monaco_%2853969600210%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:View_of_luxury_yachts_on_Port_Hercules_from_Avenue_de_la_Porte_Neuve,_Monaco_(53969600210).jpg",
+      "candidateContext": "View of luxury yachts on Port Hercules from Avenue de la Porte Neuve, Monaco (53969600210).jpg",
+      "credit": "Charles from Port Chester, New York · CC BY 2.0",
+      "sha256": "913995652784253fc20c7b44e001cd9a4b862677e9880cee73e913161ceac23b",
+      "dhash": "0000111101101001010100011001100111001000011010111111101111001011",
+      "bytes": 427816,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     },
     {
       "key": "scene-3",
@@ -367,27 +449,61 @@
       "key": "scene-4",
       "label": "Larvotto beach waterfront",
       "query": "Monaco Larvotto beach promenade",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.visitmonaco.com/"
       ],
-      "rights": "Operator authorization noted; retain author and license evidence and review each image manually"
+      "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/monaco-premium/destination/scene-4.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/View_from_Larvotto_Beach_%282022%29.jpg/1920px-View_from_Larvotto_Beach_%282022%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:View_from_Larvotto_Beach_(2022).jpg",
+      "candidateContext": "View from Larvotto Beach (2022).jpg",
+      "credit": "Einaz80 · CC BY-SA 4.0",
+      "sha256": "9a5cce637232e62f123646e23b6e5ffa029c09df5e7ba6ce677a440ee3744e0c",
+      "dhash": "1111111011101110111001110110001110000000000110001100110111100001",
+      "bytes": 295982,
+      "originalSize": [
+        1920,
+        657
+      ],
+      "outputSize": [
+        1800,
+        616
+      ]
     },
     {
       "key": "scene-5",
       "label": "Fontvieille harbour panorama",
       "query": "Monaco Port de Fontvieille marina",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.visitmonaco.com/"
       ],
-      "rights": "Operator authorization noted; retain author and license evidence and review each image manually"
+      "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/monaco-premium/destination/scene-5.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Port_of_Fontvieille_from_the_exotic_garden_of_Monaco.jpg/1920px-Port_of_Fontvieille_from_the_exotic_garden_of_Monaco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Port_of_Fontvieille_from_the_exotic_garden_of_Monaco.jpg",
+      "candidateContext": "Port of Fontvieille from the exotic garden of Monaco.jpg",
+      "credit": "Tangopaso · Public domain",
+      "sha256": "3bd95e762b1f7943eba06a88cc50ed21c46a800e068f97b27430df82ef5efc5d",
+      "dhash": "0000000010100000001001100110110110111010110101111100010110001100",
+      "bytes": 568926,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-6",
