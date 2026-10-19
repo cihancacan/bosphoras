@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 7,
+  "downloadedDestinationCandidates": 8,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -491,17 +491,29 @@
       "key": "scene-3",
       "placeLabel": "Bahnhofstrasse",
       "searchQuery": "Bahnhofstrasse Zermatt",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bahnhofstrasse_(Zermatt)_25.jpg",
-      "candidateContext": "Bahnhofstrasse in Zermatt · 2022 original photo by Abxbay, Creative Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bahnhofstrasse_(Zermatt)_08.jpg",
+      "candidateContext": "Zermatt Bahnhofstrasse 2022 photo by Abxbay, Creative Commons",
       "credit": "Photograph from the named original publisher; author needs confirmation",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "rejectedSource": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bahnhofstrasse_%28Zermatt%29_25.jpg?width=1600",
-      "visualQaWarning": "Photograph dominated by a large blue garbage collection truck and bins, not a luxury Bahnhofstrasse streetscape; rejected after actual WebP inspection."
+      "visualQaWarning": "Downloaded exact publisher source; individual visual and rights review still required.",
+      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bahnhofstrasse_%28Zermatt%29_08.jpg?width=1600",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-3.webp",
+      "sha256": "2d874fdbcabee1134c5fbb0ece368c8d7fe096bd9a14f2dedce0ebe18f1d214b",
+      "bytes": 498288,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-4",

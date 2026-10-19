@@ -2,13 +2,24 @@
   "saved": [
     {
       "slot": "destination/scene-3",
-      "bytes": 213842,
-      "source": "https://commons.wikimedia.org/wiki/File:Bahnhofstrasse_(Zermatt)_25.jpg",
+      "bytes": 498288,
+      "source": "https://commons.wikimedia.org/wiki/File:Bahnhofstrasse_(Zermatt)_08.jpg",
       "original_size": [
         1920,
         1440
       ]
     }
   ],
-  "failure_details": []
+  "failure_details": [
+    {
+      "slot": "destination/scene-6",
+      "source": "https://www.riffelalp.com/fileadmin/documents/riffelalp.ch/images/restaurant-bar/Al_Bosco/Al_Bosco_hiver_2.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.riffelalp.com/fileadmin/documents/riffelalp.ch/images/restaurant-bar/Al_Bosco/Al_Bosco_hiver_2.jpg"
+    },
+    {
+      "slot": "destination/scene-6",
+      "source": "https://www.riffelalp.com/fileadmin/documents/riffelalp.ch/images/galeries/Bar_2_222m/Bar_2_222m__5_.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.riffelalp.com/fileadmin/documents/riffelalp.ch/images/galeries/Bar_2_222m/Bar_2_222m__5_.jpg"
+    }
+  ]
 }
