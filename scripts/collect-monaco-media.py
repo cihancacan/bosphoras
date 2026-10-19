@@ -52,6 +52,16 @@ LANDSCAPES={
 "scene-8":("Oceanographic museum Monaco sea cliff daylight",("oceanographique","monaco")),
 "scene-9":("Mareterra Monaco new waterfront park 2025",("mareterra",))
 }
+COMMONS_EXACT={
+ "scene-1":"2024-09-22 Casino de Monte Carlo.jpg",
+ "scene-2":"View of luxury yachts on Port Hercules from Avenue de la Porte Neuve, Monaco (53969600210).jpg",
+ "scene-3":"View of the peninsula of Monaco.jpg",
+ "scene-4":"View from Larvotto Beach (2022).jpg",
+ "scene-5":"Port of Fontvieille from the exotic garden of Monaco.jpg",
+ "scene-7":"Japanese garden Monaco (pond and bridge).jpg",
+ "scene-8":"Monaco Oceanographic Museum 01.jpg",
+ "scene-9":"Mareterra - Le Portier.jpg"
+}
 BLOCK=("logo","advert","banner","brochure","map","poster","screenshot","face portrait",
        "wikipedia-logo","svg","icon","watermark","grand prix car","football","yacht interior")
 
@@ -115,6 +125,25 @@ def commons(query,terms):
   choices.append((sum(t in hay for t in terms)*3,u,source,title,f"{author or 'Commons contributor'} · {lic}"))
  return sorted(choices,key=lambda x:(-x[0],x[2]))
 
+def commons_exact(title):
+ full="File:"+title
+ r=fetch(COMMONS,params={"action":"query","titles":full,"prop":"imageinfo",
+     "iiprop":"url|extmetadata","iiurlwidth":1800,"format":"json"})
+ if not r:return []
+ try:items=r.json().get("query",{}).get("pages",{}).values()
+ except (ValueError,TypeError):return []
+ out=[]
+ for p in items:
+  if "missing" in p:continue
+  info=(p.get("imageinfo") or [{}])[0];meta=info.get("extmetadata") or {}
+  url=info.get("thumburl") or info.get("url")
+  if not url:continue
+  author=BeautifulSoup(meta.get("Artist",{}).get("value",""),"html.parser").get_text(" ",strip=True)
+  lic=meta.get("LicenseShortName",{}).get("value","license to inspect")
+  source="https://commons.wikimedia.org/wiki/"+full.replace(" ","_")
+  out.append((40,url,source,title,(author or "Commons author")+" · "+lic))
+ return out
+
 def content_hash(img):
  small=ImageOps.grayscale(img).resize((9,8),Image.Resampling.LANCZOS)
  px=list(small.getdata());return "".join("1" if px[y*9+x]>px[y*9+x+1] else "0"
@@ -169,7 +198,8 @@ def main():
   updated|=collect(item,suggestions,sha_used,url_used,visual_used)
  for item in manifest["destinationScenes"]:
   q,terms=LANDSCAPES[item["key"]]
-  updated|=collect(item,commons(q,terms),sha_used,url_used,visual_used)
+  direct=commons_exact(COMMONS_EXACT[item["key"]]) if item["key"] in COMMONS_EXACT else []
+  updated|=collect(item,direct+commons(q,terms),sha_used,url_used,visual_used)
  manifest["downloadedHotelCandidates"]=sum(x["status"]=="candidate_needs_visual_review" for x in manifest["hotels"])
  manifest["downloadedDestinationCandidates"]=sum(x["status"]=="candidate_needs_visual_review" for x in manifest["destinationScenes"])
  manifest["visuallyVerified"]=False;manifest["approvedForCommercialPublication"]=False
