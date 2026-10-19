@@ -5,6 +5,8 @@ import stMoritzManifest from './stMoritzMediaCandidates.json';
 import { aspenGuide } from './aspenGuide';
 import aspenManifest from './aspenMediaCandidates.json';
 import { nisekoGuide } from './nisekoGuide';
+import { gstaadGuide } from './gstaadGuide';
+import gstaadManifest from './gstaadMediaCandidates.json';
 import nisekoManifest from './nisekoMediaCandidates.json';
 
 /** Images are candidate media, not verified rights. Media with editorial warnings MUST stay hidden.
@@ -15,7 +17,8 @@ type AlpinePlace = {name:string;enName:string};
 const areaNames={
  'st-moritz':['scene-2','scene-3','scene-4','scene-5','scene-7'],
  aspen:['scene-3','scene-4','scene-5','scene-6','scene-8'],
- niseko:['scene-2','scene-3','scene-4','scene-5','scene-6']
+ niseko:['scene-2','scene-3','scene-4','scene-5','scene-6'],
+ gstaad:['scene-1','scene-2','scene-4','scene-6','scene-7']
 } as const;
 function sourcePhoto(x:Candidate,place:string,locale:'fr'|'en'):BodrumPremiumPhoto{
   const context=(x.candidateContext||'').replace(/<[^>]*>/g,'').trim();
@@ -50,17 +53,20 @@ export const alpineHotelEditorialByCity={
  'st-moritz':hotelIndex(stMoritzGuide,stMoritzManifest.hotels),
  aspen:hotelIndex(aspenGuide,aspenManifest.hotels),
  niseko:hotelIndex(nisekoGuide,nisekoManifest.hotels),
+ gstaad:hotelIndex(gstaadGuide,gstaadManifest.hotels),
   ...mountainBatchHotelEditorialByCity
 } as const;
 export const alpineAreaVisualsByCity={
  'st-moritz':areaIndex(stMoritzGuide,stMoritzManifest.destinationScenes,'st-moritz'),
  aspen:areaIndex(aspenGuide,aspenManifest.destinationScenes,'aspen'),
  niseko:areaIndex(nisekoGuide,nisekoManifest.destinationScenes,'niseko'),
+ gstaad:areaIndex(gstaadGuide,gstaadManifest.destinationScenes,'gstaad'),
   ...mountainBatchAreaVisualsByCity
 } as const;
 export const alpineAvailablePhotoPathsByCity={
  'st-moritz':new Set([...stMoritzManifest.hotels,...stMoritzManifest.destinationScenes].filter(valid).map(x=>x.localPath!)),
  aspen:new Set([...aspenManifest.hotels,...aspenManifest.destinationScenes].filter(valid).map(x=>x.localPath!)),
  niseko:new Set([...nisekoManifest.hotels,...nisekoManifest.destinationScenes].filter(valid).map(x=>x.localPath!)),
+ gstaad:new Set([...gstaadManifest.hotels,...gstaadManifest.destinationScenes].filter(valid).map(x=>x.localPath!))
   ...mountainBatchAvailablePhotoPathsByCity
 } as const;
