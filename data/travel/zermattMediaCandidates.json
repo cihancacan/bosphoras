@@ -591,16 +591,15 @@
       "placeLabel": "Klein Matterhorn",
       "searchQuery": "Klein Matterhorn",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Swiss_Alps.jpg",
       "candidateContext": "Swiss Alps from Klein Matterhorn summit, credited Devil Dancer",
-      "credit": "Photograph from the named original publisher; author needs confirmation",
+      "credit": "Devil Dancer · Wikimedia Commons (licence et attribution indiquées sur la source)",
       "license": "Public domain",
       "licenseUrl": "",
       "rejectedSource": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matterhorn_Glacier_Paradise%2C_Theodulglacier_-_panoramio.jpg?width=1600",
-      "visualQaWarning": "Downloaded exact publisher source; individual visual and rights review still required.",
       "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Swiss_Alps.jpg?width=1600",
       "localPath": "/images/travel/zermatt-premium/destination/scene-7.webp",
       "sha256": "caf1afb860005daf6914a50208491516f18f6638317870e7674c6972f8ce3be3",
@@ -612,7 +611,12 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Matterhorn Glacier Paradise — panorama lumineux sur les Alpes enneigées depuis le Klein Matterhorn",
+      "enCaption": "Matterhorn Glacier Paradise — bright winter panorama across the snowy Alps from Klein Matterhorn",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Original image inspected: broad daylight, verified Klein Matterhorn viewpoint, distinct high-altitude alpine panorama.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms rights for this project, 2026-10-19"
     },
     {
       "key": "scene-8",
