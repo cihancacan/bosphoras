@@ -2,8 +2,8 @@
   "destination": "cap-dantibes",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 10,
+  "downloadedDestinationCandidates": 2,
   "hotels": [
     {
       "property": "Hôtel du Cap-Eden-Roc",
@@ -23,13 +23,29 @@
       "propertyKey": "hotel-du-cap-eden-roc",
       "key": "view-2",
       "slotIntent": "Real guestroom or terrace at Hôtel du Cap-Eden-Roc, not another Oetker hotel",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.oetkerhotels.com/fr/hotels/hotel-du-cap-eden-roc/"
       ],
-      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/hotel-du-cap-eden-roc/view-2.webp",
+      "downloadUrl": "https://teresaperezcollection.com/images/0bijhalf/production/563c06905c229003d62433e18db0ae4de34a8709-3000x1917.webp?fit=clip&fm=jpg&q=80&w=2048",
+      "sourcePage": "https://teresaperezcollection.com/hotel/hotel-du-cap-eden-roc",
+      "candidateContext": "Real Hotel du Cap-Eden-Roc suite with sea-facing balcony and turquoise drapes",
+      "credit": "Teresa Perez Collection · original identified property photo",
+      "sha256": "85a7b6d63a654df8ae50fe46217b21a84cced5288cc0a804cf858a07baa8440d",
+      "dhash": "0001111110001111100110111001100110010010100010111010100110011100",
+      "bytes": 296352,
+      "originalSize": [
+        2048,
+        1309
+      ],
+      "outputSize": [
+        1800,
+        1150
+      ]
     },
     {
       "property": "Hôtel du Cap-Eden-Roc",
@@ -49,117 +65,261 @@
       "propertyKey": "cap-dantibes-beach-hotel",
       "key": "view-1",
       "slotIntent": "Contemporary low hotel building and genuine private beach in daylight",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://capdantibes-beachhotel.com/"
       ],
-      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/cap-dantibes-beach-hotel/view-1.webp",
+      "downloadUrl": "https://capdantibes-beachhotel.com/_next/static/media/home_4.e805a538.jpg",
+      "sourcePage": "https://capdantibes-beachhotel.com/en",
+      "candidateContext": "chambre au bord de l'eau    ",
+      "credit": "Official hotel photo",
+      "sha256": "00aa5c1bd193e9affa6621fd67af25508994f8e68b773c24412994e62f9fc11a",
+      "dhash": "1001100100100001011001001001010101000101110000111001001100000110",
+      "bytes": 155246,
+      "originalSize": [
+        1200,
+        926
+      ],
+      "outputSize": [
+        1200,
+        926
+      ]
     },
     {
       "property": "Cap d’Antibes Beach Hotel",
       "propertyKey": "cap-dantibes-beach-hotel",
       "key": "view-2",
       "slotIntent": "Bright real hotel room with terrace and accurately identified category",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://capdantibes-beachhotel.com/en"
       ],
-      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/cap-dantibes-beach-hotel/view-2.webp",
+      "downloadUrl": "https://capdantibes-beachhotel.com/_next/static/media/room_0.95b0ca20.jpg",
+      "sourcePage": "https://capdantibes-beachhotel.com/en/suite-sea-view",
+      "candidateContext": "images de Sea view suite    ",
+      "credit": "Official hotel photo",
+      "sha256": "4b98429bf9115d07d1b254d0c8a61d5dba6b2a3c958ffa7a36d47b186ac0b5ef",
+      "dhash": "0001110000001100000111001001010000111101111010011011011001011101",
+      "bytes": 223276,
+      "originalSize": [
+        1920,
+        1641
+      ],
+      "outputSize": [
+        1404,
+        1200
+      ]
     },
     {
       "property": "Cap d’Antibes Beach Hotel",
       "propertyKey": "cap-dantibes-beach-hotel",
       "key": "view-3",
       "slotIntent": "Distinct authentic beachfront BABA or swimming pool at Cap d’Antibes Beach Hotel",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://capdantibes-beachhotel.com/en"
       ],
-      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/cap-dantibes-beach-hotel/view-3.webp",
+      "downloadUrl": "https://capdantibes-beachhotel.com/_next/static/media/slider_0.cd77e257.jpg",
+      "sourcePage": "https://capdantibes-beachhotel.com/en",
+      "candidateContext": "liste d'image    ",
+      "credit": "Official hotel photo",
+      "sha256": "52b7d3e303432a41d8eca49d0a38678af7d5681d863ae10710785edf16cdd03b",
+      "dhash": "1010011110110001010110010100010110100101001000100011101000101010",
+      "bytes": 188394,
+      "originalSize": [
+        4082,
+        1346
+      ],
+      "outputSize": [
+        1800,
+        594
+      ]
     },
     {
       "property": "Villa Miraé",
       "propertyKey": "villa-mirae",
       "key": "view-1",
       "slotIntent": "Current Villa Miraé exterior after rebranding, NEVER a dated Impérial Garoupe image",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.villamirae-capantibes.com/"
       ],
-      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/villa-mirae/view-1.webp",
+      "downloadUrl": "https://d1nzrcdi1gg6zy.cloudfront.net/cache/img/hotel-villa-mirae-mer-248782-1920-500-landscape.jpg?q=1745501431",
+      "sourcePage": "https://www.villamirae-capantibes.com/en/",
+      "candidateContext": "Hôtel Villa Miraé - Mer    ",
+      "credit": "Official hotel photo",
+      "sha256": "8cf2409284f8b18bda0f2856faae32645e30fcbe98fc39d00d7db4e8d3a67a2f",
+      "dhash": "0000101100110011001001110100011100010011000111110000110100000001",
+      "bytes": 152552,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     },
     {
       "property": "Villa Miraé",
       "propertyKey": "villa-mirae",
       "key": "view-2",
       "slotIntent": "Current Villa Miraé genuine room or suite with distinct balcony/garden outlook",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.villamirae-capantibes.com/en/"
       ],
-      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/villa-mirae/view-2.webp",
+      "downloadUrl": "https://d1nzrcdi1gg6zy.cloudfront.net/cache/img/villa-mirae-chambre-248787-1788-920-landscape.jpg?q=1751967546",
+      "sourcePage": "https://www.villamirae-capantibes.com/en/",
+      "candidateContext": "Official CMS image matched by source context",
+      "credit": "Official hotel CMS",
+      "sha256": "07cd94b9e1dd373ae2e08de048d8a9c188c6f6d7d3ad29671c7d8bbaa12fdae0",
+      "dhash": "0000111100001111001011010010110000101100000011010000110101100100",
+      "bytes": 194698,
+      "originalSize": [
+        1788,
+        927
+      ],
+      "outputSize": [
+        1788,
+        927
+      ]
     },
     {
       "property": "Villa Miraé",
       "propertyKey": "villa-mirae",
       "key": "view-3",
       "slotIntent": "Current Villa Miraé real pool and Mediterranean garden in bright daylight",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.villamirae-capantibes.com/"
       ],
-      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/villa-mirae/view-3.webp",
+      "downloadUrl": "https://d1nzrcdi1gg6zy.cloudfront.net/cache/img/villa-mirae-piscine-258231-1640-1100-landscape.jpg?q=1753092192",
+      "sourcePage": "https://www.villamirae-capantibes.com/en/",
+      "candidateContext": "    ",
+      "credit": "Official hotel photo",
+      "sha256": "edfd89e200f6314bcae1702304f94057df8f0fb267bf41a10e47c05eb2c81a6a",
+      "dhash": "0111001111100111001001000111011000100111000011100001110000111000",
+      "bytes": 215830,
+      "originalSize": [
+        1640,
+        922
+      ],
+      "outputSize": [
+        1640,
+        922
+      ]
     },
     {
       "property": "Hôtel Belles Rives",
       "propertyKey": "hotel-belles-rives",
       "key": "view-1",
       "slotIntent": "Actual Hotel Belles Rives historic Art Deco façade facing the sea",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.bellesrives.com/fr/"
       ],
-      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/hotel-belles-rives/view-1.webp",
+      "downloadUrl": "https://www.bellesrives.com/media/cache/jadro_resize/rc/4EGj2lEW1792071824/jadroRoot/medias/63ee10ae40e23/nouveau-restaurant-la-passagere-mars-2016-2-.jpeg",
+      "sourcePage": "https://www.bellesrives.com/en/",
+      "candidateContext": "Official CMS image matched by source context",
+      "credit": "Official hotel CMS",
+      "sha256": "5f19aac91c35272f4c69b6b29919d4e6cc32be13fb082dfa39742b3cc376d39a",
+      "dhash": "0001000010010011100001111100100111000101101010011100101111110011",
+      "bytes": 327296,
+      "originalSize": [
+        1860,
+        1159
+      ],
+      "outputSize": [
+        1800,
+        1122
+      ]
     },
     {
       "property": "Hôtel Belles Rives",
       "propertyKey": "hotel-belles-rives",
       "key": "view-2",
       "slotIntent": "Belles Rives authentic elegantly lit room or suite, distinct from restaurant",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.bellesrives.com/en/"
       ],
-      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/hotel-belles-rives/view-2.webp",
+      "downloadUrl": "https://lucidcm.imgix.net/95182/Hotel/60839/Image/9PBsIXmfrkOPC69ZyhnDQ_Panoramic%20Suite%20Sea%20View%201.jpg.jpg?h=4315&w=6131",
+      "sourcePage": "https://slh.com/hotels/hotel-belles-rives",
+      "candidateContext": "Actual Belles Rives suite lounge with arched sea-view windows and Art Deco carpet",
+      "credit": "Small Luxury Hotels · original Belles Rives suite",
+      "sha256": "9339f51608f1ba0d70846857ad8a4ef8f6d0f028c390bea9fe7f3dcd9e9598af",
+      "dhash": "0010001100000110011000100110001101100100011000110101101111000011",
+      "bytes": 372090,
+      "originalSize": [
+        6131,
+        4315
+      ],
+      "outputSize": [
+        1705,
+        1200
+      ]
     },
     {
       "property": "Hôtel Belles Rives",
       "propertyKey": "hotel-belles-rives",
       "key": "view-3",
       "slotIntent": "Belles Rives sea-facing terrace or restaurant La Passagère in daylight",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.bellesrives.com/fr/"
       ],
-      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/hotel-belles-rives/view-3.webp",
+      "downloadUrl": "https://www.bellesrives.com/media/cache/jadro_resize/rc/Hiq3jjzt1792071825/jadroRoot/medias/652ea9818c6a4/08-pergola-restaurant-plage-min.jpg",
+      "sourcePage": "https://www.bellesrives.com/en/",
+      "candidateContext": "Official CMS image matched by source context",
+      "credit": "Official hotel CMS",
+      "sha256": "37cbd4d619b7b663d5bf6a08658a4874ee60e025a7f3b67f03ad84d0854b8f7b",
+      "dhash": "0000101110100110001101010010100111101000111011011010110010101100",
+      "bytes": 481474,
+      "originalSize": [
+        2300,
+        1647
+      ],
+      "outputSize": [
+        1676,
+        1200
+      ]
     }
   ],
   "destinationScenes": [
@@ -191,13 +351,29 @@
       "key": "scene-3",
       "label": "Plage de la Garoupe and real turquoise Garoupe Bay",
       "query": "Plage de la Garoupe Cap d'Antibes",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/destination/scene-3.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Baigneuses_sur_la_riviera_%C3%A0_Garoupe_Beach_%28Antibes%29_%28CN%29_-_btv1b53280113c.jpg/1920px-Baigneuses_sur_la_riviera_%C3%A0_Garoupe_Beach_%28Antibes%29_%28CN%29_-_btv1b53280113c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Baigneuses_sur_la_riviera_à_Garoupe_Beach_(Antibes)_(CN)_-_btv1b53280113c.jpg",
+      "candidateContext": "File:Baigneuses sur la riviera à Garoupe Beach (Antibes) (CN) - btv1b53280113c.jpg",
+      "credit": "Central News (Agence photographique). Agence photographique pour le document reproduit (commanditaire) Agence Rol. Agence photographique (commanditaire) · Public domain",
+      "sha256": "3bba2ffd410f58161dce5a7abdedf8051e6904bd7181ad9f04bf763d1e92a786",
+      "dhash": "0011100111001111110001111100111111011001101001011110011100110101",
+      "bytes": 391326,
+      "originalSize": [
+        1920,
+        1387
+      ],
+      "outputSize": [
+        1661,
+        1200
+      ]
     },
     {
       "key": "scene-4",
@@ -239,13 +415,29 @@
       "key": "scene-7",
       "label": "Notre-Dame de la Garoupe and headland lighthouse; real location",
       "query": "Phare de la Garoupe Cap d'Antibes",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/destination/scene-7.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/ANTIBES_-_Phare_de_la_Garoupe.jpg/1920px-ANTIBES_-_Phare_de_la_Garoupe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:ANTIBES_-_Phare_de_la_Garoupe.jpg",
+      "candidateContext": "File:ANTIBES - Phare de la Garoupe.jpg",
+      "credit": "Abxbay · CC BY-SA 4.0",
+      "sha256": "09319a05c0385bf8726db098e1c66fc3d289da8cf8f44a0f18aa6fc48cb9f5f4",
+      "dhash": "0000000110100001101001101001011010011110100010100010010100100011",
+      "bytes": 81244,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-8",
