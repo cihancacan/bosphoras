@@ -176,25 +176,25 @@
       ],
       "rights": "Commons photo licence verified at source; any attribution, share-alike, adaptation and trademark rules need compliance. Visual QA still required.",
       "localPath": "/images/travel/st-moritz-premium/kulm-hotel/view-3.webp",
-      "downloadUrl": "https://media.kulm.com/size:900x675,mode:crop/wp-content/uploads/sites/4/2025/01/23154925/Small-Johannes-Badrutts-Office-1.jpg",
-      "sourcePage": "https://www.kulm.com/en/winter/",
-      "candidateContext": "The remarkable heritage of the hotel that makes winter",
+      "downloadUrl": "https://media.kulm.com/wp-content/uploads/sites/4/2024/08/31142818/Corvatsch-Suite-2-scaled.jpg",
+      "sourcePage": "https://www.kulm.com/en/rooms/corvatsch-suite",
+      "candidateContext": "Official property gallery",
       "credit": "Kulm Hotel St. Moritz · photo on exact property's own gallery; original credit retained at source",
       "license": "CC0",
       "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "sha256": "17af66e43fff6957ee63b718e18984ca5a7208812a4c4fc3a8a4826270623ff0",
-      "bytes": 105636,
+      "sha256": "f61a41d756967a66d343b243c9b2ec434a54d5d28858fd601edda8fb71aea568",
+      "bytes": 196876,
       "originalSize": [
-        900,
-        675
+        2560,
+        1708
       ],
       "outputSize": [
-        900,
-        675
+        1700,
+        1134
       ],
-      "visualQaWarning": "REJET VÉRIFIÉ : la photographie représente un portrait historique, pas une vue d'hôtel, chambre ou équipement. Ne pas afficher sur la fiche Kulm.",
+      "visualQaWarning": "Replacement from exact property/location page; needs visual verification before display.",
       "visualQaReviewedAt": "2026-10-15",
-      "ownerRightsAuthorization": "Owner confirmed usage rights in current chat, 2026-10-17; visual matching still to be checked.",
+      "ownerRightsAuthorization": "Bosphoras operator affirmed photo rights on 2026-10-15",
       "replacedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Kulm_Hotel_Sankt_Moritz_2022-09-25_03.jpg/1920px-Kulm_Hotel_Sankt_Moritz_2022-09-25_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
     },
     {
