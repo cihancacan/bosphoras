@@ -148,25 +148,25 @@
       "sourcePages": [
         "https://capdantibes-beachhotel.com/en"
       ],
+      "rejectedSource": "https://www.limetravel.se/app/uploads/2018/12/cap_dantibes_beach_hotel_design_suite_with_terrace.jpg",
+      "rejectedCandidateContext": "REPLACE: image dated 2018 is older than the Cap d'Antibes Beach Hotel 2023 Bernard Dubois redesign; no historical room photo in current luxury guide.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/cap-dantibes-beach-hotel/view-2.webp",
-      "downloadUrl": "https://www.limetravel.se/app/uploads/2018/12/cap_dantibes_beach_hotel_design_suite_with_terrace.jpg",
-      "sourcePage": "https://www.limetravel.se/destinationer/europa/frankrike/cap-dantibes-beach-hotel/",
-      "candidateContext": "Single bright actual Cap d'Antibes Beach Hotel sea-view suite with open terrace",
-      "credit": "Lime Travel · documented Cap d'Antibes Beach Hotel image",
-      "sha256": "b7d71ce85af550fcb3f2be7951ffbd41e65177bbacc044b49b2b5ade5f73f72d",
-      "dhash": "1111100001101101111001011110010101100110111001101101101010011000",
-      "bytes": 180732,
+      "downloadUrl": "https://www.bernarddubois.com/wp-content/uploads/2023/05/CABH_BD13-1920x1280.jpg",
+      "sourcePage": "https://www.bernarddubois.com/projects/beach-hotel/",
+      "candidateContext": "Renovated 2023 Cap d'Antibes Beach Hotel actual luxury room, architect Bernard Dubois",
+      "credit": "Bernard Dubois Architects · post-2023 redesigned hotel photography",
+      "sha256": "f0b3671e56e12a3ee48b0f2542b29cd32aa9c6cbbe5e7a4174124d45ff3898eb",
+      "dhash": "0010001100100011001010110011101100000111011001111100011111000011",
+      "bytes": 126154,
       "originalSize": [
-        1600,
-        1100
+        1920,
+        1280
       ],
       "outputSize": [
-        1600,
-        1100
-      ],
-      "rejectedSource": "https://capdantibes-beachhotel.com/_next/static/media/room_0.95b0ca20.jpg",
-      "rejectedCandidateContext": "REJECTED: property listing image is an assembled multi-room collage, not one authentic suite photograph.",
-      "visualQaWarning": "REPLACE: image dated 2018 is older than the Cap d'Antibes Beach Hotel 2023 Bernard Dubois redesign; no historical room photo in current luxury guide."
+        1800,
+        1200
+      ]
     },
     {
       "property": "Cap d’Antibes Beach Hotel",
