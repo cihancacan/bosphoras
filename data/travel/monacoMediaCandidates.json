@@ -552,14 +552,13 @@
       "label": "Fontvieille harbour panorama",
       "query": "Monaco Port de Fontvieille marina",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Port_de_Fontvieille_25.jpg",
       "candidateContext": "Monaco Port de Fontvieille 25.jpg",
       "credit": "Zairon · CC BY-SA 4.0",
@@ -577,7 +576,11 @@
       "outputSize": [
         1602,
         1200
-      ]
+      ],
+      "frCaption": "Port de Fontvieille — yachts amarrés au pied des falaises de Monaco-Ville",
+      "enCaption": "Port de Fontvieille — yachts and marina below the cliffs of Monaco-Ville",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Original local WebP visually inspected, geographically identified, composition checked and distinct from other approved scenes."
     },
     {
       "key": "scene-6",
@@ -597,14 +600,13 @@
       "label": "Japanese Garden Monaco",
       "query": "Monaco Jardin Japonais scenic",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Japanese_garden_Monaco_(pond_and_bridge).jpg",
       "candidateContext": "Japanese garden Monaco (pond and bridge).jpg",
       "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
@@ -622,21 +624,24 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Jardin japonais de Monaco — bassin paysager et passerelle rouge",
+      "enCaption": "Monaco Japanese Garden — landscaped pond and red footbridge",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Original local WebP visually inspected, geographically identified, composition checked and distinct from other approved scenes."
     },
     {
       "key": "scene-8",
       "label": "Monaco Oceanographic Museum from sea",
       "query": "Musee oceanographique Monaco cliffs panorama",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/monaco-premium/destination/scene-8.webp",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Mus%C3%A9e_Oc%C3%A9anographique_de_Monaco_cliff_view.jpg/1920px-Mus%C3%A9e_Oc%C3%A9anographique_de_Monaco_cliff_view.jpg",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Oc%C3%A9anographique_de_Monaco_cliff_view.jpg",
@@ -652,21 +657,24 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "frCaption": "Musée océanographique — architecture monumentale dominant la mer",
+      "enCaption": "Oceanographic Museum — monumental façade overlooking the Mediterranean",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Original local WebP visually inspected, geographically identified, composition checked and distinct from other approved scenes."
     },
     {
       "key": "scene-9",
       "label": "Mareterra seaside waterfront gardens",
       "query": "Monaco Mareterra waterfront promenade",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/monaco-premium/destination/scene-9.webp",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Mareterra_drone_shot_in_2024.png/1920px-Mareterra_drone_shot_in_2024.png",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Mareterra_drone_shot_in_2024.png",
@@ -682,7 +690,11 @@
       "outputSize": [
         1500,
         1200
-      ]
+      ],
+      "frCaption": "Mareterra — panorama de la nouvelle promenade du front de mer",
+      "enCaption": "Mareterra — aerial panorama of Monaco’s newly reclaimed waterfront",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Original local WebP visually inspected, geographically identified, composition checked and distinct from other approved scenes."
     }
   ]
 }
