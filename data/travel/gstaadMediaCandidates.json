@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 9,
-  "downloadedDestinationCandidates": 2,
+  "downloadedDestinationCandidates": 1,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -216,15 +216,14 @@
       "propertyKey": "le-grand-bellevue",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://bellevue-gstaad.ch/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "sourcePage": "https://bellevue-gstaad.ch/gallery/",
       "candidateContext": "   ",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
       "credit": "Official hotel media; exact subject must be checked",
       "rejectedSource": "https://bellevue-gstaad.ch/wp-content/uploads/2025/12/tobias.kaser_photo.5852-1309x785.jpg",
       "rejectedCandidateContext": "Embedded image in official property source",
@@ -239,23 +238,27 @@
       "outputSize": [
         1600,
         960
-      ]
+      ],
+      "frCaption": "Le Grand Bellevue — salle de bains de la Suite Étoile avec baignoire sous la charpente",
+      "enCaption": "Le Grand Bellevue — Suite Étoile bathroom with a tub below the chalet roof",
+      "ownerRightsAuthorization": "Bosphoras operator confirms use of sourced photographs, 2026-10-19",
+      "visualReviewBasis": "Actual GitHub WebP visually inspected and compared to exact property or geographic source on 2026-10-19",
+      "visualReviewedAt": "2026-10-19"
     },
     {
       "property": "Ultima Hotel Gstaad",
       "propertyKey": "ultima-hotel",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad",
         "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "sourcePage": "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/gallery",
-      "candidateContext": "Ultima Hotel Gstaad · winter season exterior",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
+      "candidateContext": "Winter balcony panorama, NOT hotel exterior facade",
       "credit": "Ultima Collection official hotel gallery",
       "rejectedSource": "https://www.ultimacollection.com/media/jh4ofzy2/ultima_hotel_gstaad_exterior_summerseason.jpg?rxy=0.24436090225563908%2C0.6207815275310835&width=1536&format=webp",
       "rejectedCandidateContext": "",
@@ -270,15 +273,20 @@
       "outputSize": [
         1536,
         1024
-      ]
+      ],
+      "frCaption": "Ultima Hotel Gstaad — balcon avec vue sur les chalets enneigés",
+      "enCaption": "Ultima Hotel Gstaad — balcony overlooking snow-covered chalets",
+      "ownerRightsAuthorization": "Bosphoras operator confirms use of sourced photographs, 2026-10-19",
+      "visualReviewBasis": "Actual GitHub WebP visually inspected and compared to exact property or geographic source on 2026-10-19",
+      "visualReviewedAt": "2026-10-19"
     },
     {
       "property": "Ultima Hotel Gstaad",
       "propertyKey": "ultima-hotel",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad",
         "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation"
@@ -286,7 +294,6 @@
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "sourcePage": "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/gallery",
       "candidateContext": "Ultima Hotel Gstaad · Signature Suite interior",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
       "credit": "Ultima Collection official hotel gallery",
       "rejectedSource": "https://www.ultimacollection.com/media/jh4ofzy2/ultima_hotel_gstaad_exterior_summerseason.jpg?rxy=0.24436090225563908%2C0.6207815275310835&width=1536",
       "rejectedCandidateContext": "",
@@ -301,15 +308,20 @@
       "outputSize": [
         1536,
         1024
-      ]
+      ],
+      "frCaption": "Ultima Hotel Gstaad — intérieur d'une suite Signature, salon et lit",
+      "enCaption": "Ultima Hotel Gstaad — Signature Suite interior with lounge and bed",
+      "ownerRightsAuthorization": "Bosphoras operator confirms use of sourced photographs, 2026-10-19",
+      "visualReviewBasis": "Actual GitHub WebP visually inspected and compared to exact property or geographic source on 2026-10-19",
+      "visualReviewedAt": "2026-10-19"
     },
     {
       "property": "Ultima Hotel Gstaad",
       "propertyKey": "ultima-hotel",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad",
         "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation"
@@ -317,7 +329,6 @@
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
       "sourcePage": "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/wellness",
       "candidateContext": "Ultima Hotel Gstaad · spa setting — identity to confirm visually",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
       "credit": "Ultima Collection official hotel gallery",
       "rejectedSource": "https://www.ultimacollection.com/media/jh4ofzy2/ultima_hotel_gstaad_exterior_summerseason.jpg?rxy=0.24436090225563908%2C0.6207815275310835&width=1280&height=1080&format=webp",
       "rejectedCandidateContext": "",
@@ -332,7 +343,12 @@
       "outputSize": [
         1536,
         1024
-      ]
+      ],
+      "frCaption": "Ultima Hotel Gstaad — piscine intérieure et espace bien-être",
+      "enCaption": "Ultima Hotel Gstaad — indoor swimming pool and wellness space",
+      "ownerRightsAuthorization": "Bosphoras operator confirms use of sourced photographs, 2026-10-19",
+      "visualReviewBasis": "Actual GitHub WebP visually inspected and compared to exact property or geographic source on 2026-10-19",
+      "visualReviewedAt": "2026-10-19"
     }
   ],
   "destinationScenes": [
@@ -385,10 +401,9 @@
       "placeLabel": "Wispile",
       "searchQuery": "Wispile Gstaad",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
       "localPath": "/images/travel/gstaad-premium/destination/scene-5.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Giferspitz_from_Wispile.jpg/1920px-Giferspitz_from_Wispile.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Giferspitz_from_Wispile.jpg",
@@ -403,7 +418,12 @@
       "outputSize": [
         1700,
         1133
-      ]
+      ],
+      "frCaption": "Massif du Giferspitz vu depuis le secteur de Wispile en été",
+      "enCaption": "Giferspitz mountain viewed from the Wispile area in summer",
+      "ownerRightsAuthorization": "Bosphoras operator confirms use of sourced photographs, 2026-10-19",
+      "visualReviewBasis": "Actual GitHub WebP visually inspected and compared to exact property or geographic source on 2026-10-19",
+      "visualReviewedAt": "2026-10-19"
     },
     {
       "key": "scene-6",
@@ -418,26 +438,16 @@
       "key": "scene-7",
       "placeLabel": "Saanen",
       "searchQuery": "Saanen village",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
-      "localPath": "/images/travel/gstaad-premium/destination/scene-7.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Panoramaweg_Saanenm%C3%B6ser_-_Sch%C3%B6nried_-_Gruben_-_Gstaad_-_panoramio_%281%29.jpg/1920px-Panoramaweg_Saanenm%C3%B6ser_-_Sch%C3%B6nried_-_Gruben_-_Gstaad_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "visualQaWarning": "Scene shows a train rather than a premium panorama of Schönried; do not display.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Panoramaweg_Saanenmöser_-_Schönried_-_Gruben_-_Gstaad_-_panoramio_(1).jpg",
       "candidateContext": "File:Panoramaweg Saanenmöser - Schönried - Gruben - Gstaad - panoramio (1).jpg",
       "credit": "Patrick Nouhailler's… | CC BY-SA 3.0",
-      "sha256": "0f6e4508edf07a31ef1f4e8eee4e8512dd3786b5653bb94ef6914c2788bede0d",
-      "bytes": 294482,
-      "originalSize": [
-        1920,
-        1280
-      ],
-      "outputSize": [
-        1700,
-        1133
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Panoramaweg_Saanenm%C3%B6ser_-_Sch%C3%B6nried_-_Gruben_-_Gstaad_-_panoramio_%281%29.jpg/1920px-Panoramaweg_Saanenm%C3%B6ser_-_Sch%C3%B6nried_-_Gruben_-_Gstaad_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "File:Panoramaweg Saanenmöser - Schönried - Gruben - Gstaad - panoramio (1).jpg"
     },
     {
       "key": "scene-8",
