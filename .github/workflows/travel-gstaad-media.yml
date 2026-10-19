@@ -41,8 +41,8 @@ jobs:
           assert len(m['hotels'])==12 and len(m['destinationScenes'])==9
           assert not m['approvedForCommercialPublication']
           assert not m['visuallyVerified']
-          assert not any(x.get('visuallyVerified') for x in m['hotels']+m['destinationScenes'])
-          print('Verified candidate stage; never claim approved image status.')
+          assert all(not x.get('visuallyVerified') or (x.get('commercialRightsCleared') and x.get('localPath') and not x.get('visualQaWarning')) for x in m['hotels']+m['destinationScenes'])
+          print('Previously human-reviewed hotel photos stay approved; new images remain candidates for QA.')
           PY
       - name: Save collected WebP candidates without triggering a Vercel build
         run: |
