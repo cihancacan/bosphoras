@@ -38,6 +38,8 @@ PALACE = [
      ["spa", "indoor", "pool"], ["portrait", "history", "wedding"]),
 ]
 ULTIMA = [
+    ("view-1", ["https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/gallery"],
+     ["gstaad", "exterior"], ["exterior_summer", "ultima-courchevel", "ultima_crans"]),
     ("view-2", ["https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation/four-bedroom-residence",
                 "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation",
                 "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/gallery"],
@@ -45,6 +47,11 @@ ULTIMA = [
     ("view-3", ["https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/wellness",
                 "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/gallery"],
      ["spa", "pool", "wellness", "jacuzzi", "gstaad-98", "gstaad-108"], ["exterior_summer", "exterior_image", "ultima-courchevel", "ultima_crans"]),
+]
+BELLEVUE = [
+ ("view-3", ["https://bellevue-gstaad.ch/spa/", "https://bellevue-gstaad.ch/gallery/",
+             "https://bellevue-gstaad.ch/rooms-suites/"],
+  ["spa", "suite", "pool", "bedroom", "room"], ["restaurant", "tobias.kaser_photo.5852"]),
 ]
 SCENES = {
     "scene-1": ("Gstaad pedestrian promenade", ("gstaad", "promenade")),
@@ -75,7 +82,7 @@ def images_from_official(page: str, wanted: list[str], unwanted: list[str], doma
         return []
     soup = BeautifulSoup(response.text, "html.parser")
     result = []
-    for tag in soup.select("img,source,a[href],meta[property='og:image']"):
+    for tag in soup.select("img,source,a[href],meta[property='og:image'],meta[name='twitter:image']"):
         label = " ".join(str(tag.get(k) or "") for k in
                          ("alt","title","aria-label","data-caption"))
         for attr in ("src", "data-src", "data-lazy-src", "data-original",
@@ -123,7 +130,7 @@ def images_from_commons(query: str, required: tuple[str, ...]):
         tokens = [x.casefold().replace("ö","o") for x in required]
         if not any(token in txt for token in tokens):
             continue
-        if any(word in title.casefold() for word in EXCLUDE):
+        if any(word in (title+" "+description).casefold() for word in EXCLUDE):
             continue
         url = data.get("thumburl") or data.get("url")
         if not url or not re.search(r"\.(jpe?g|png|webp)(?:$|[?])", url, re.I):
@@ -138,6 +145,9 @@ def images_from_commons(query: str, required: tuple[str, ...]):
 
 # Exact hotel-image assets linked from Ultima Gstaad official galleries:
 ULTIMA_EXACT = {
+ "view-1": ("https://www.ultimacollection.com/media/feupntnc/ultima-collection-gstaad-exterior-09.jpg?width=1536",
+             "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/gallery",
+             "Ultima Hotel Gstaad · winter season exterior"),
  "view-2": ("https://www.ultimacollection.com/media/50kfr2v3/10_ultimacollection_ultimahotelgstaad_interior_signaturesuite01.jpg?width=1536",
              "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/gallery",
              "Ultima Hotel Gstaad · Signature Suite interior"),
@@ -235,6 +245,12 @@ def main():
             hits.append((20, url, source, caption, "Ultima Collection official hotel gallery"))
         for page in pages:
             hits.extend(images_from_official(page, good, bad, "ultimacollection.com"))
+        changed |= write_candidate(item, hits, used_hashes, used_urls)
+    for key, pages, good, bad in BELLEVUE:
+        item = next(x for x in hotel_items if x.get("propertyKey")=="le-grand-bellevue" and x["key"]==key)
+        hits = []
+        for page in pages:
+            hits.extend(images_from_official(page, good, bad, "bellevue-gstaad.ch"))
         changed |= write_candidate(item, hits, used_hashes, used_urls)
     for key, (query, terms) in SCENES.items():
         item = next(x for x in scene_items if x["key"] == key)
