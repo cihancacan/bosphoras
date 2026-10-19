@@ -93,38 +93,38 @@ export const capDAntibesDraftGuide = {
     {
       "name": "Hôtel du Cap-Eden-Roc",
       "area": "Pointe Bacon · domaine historique et pavillon Eden-Roc",
-      "url": "https://www.oetkerhotels.com/fr/hotels/hotel-du-cap-eden-roc/",
       "fr": "À la pointe du cap, l’Hôtel du Cap-Eden-Roc incarne le grand palace estival, installé dans un parc de pins centenaires descendant vers la Méditerranée. Sa piscine taillée dans le rocher, les terrasses du pavillon Eden-Roc et les jardins de la demeure historique forment trois univers distincts : on ne réserve pas une chambre en supposant bénéficier de la même vue ou du même accès depuis tous les bâtiments. L’établissement dispose également de villas privées, dont le statut et les services doivent être vérifiés séparément. Le prestige du nom ne dispense pas de vérifier les dates saisonnières, la configuration exacte de la suite et les conditions d’accès aux installations.",
       "en": "At the tip of the peninsula, Hôtel du Cap-Eden-Roc is a storied summer palace set in century-old pine gardens stretching down to the Mediterranean. Its famous rock-hewn swimming pool, the Eden-Roc pavilion and the original mansion offer very different perspectives, so not every room faces the sea or has the same relationship to the waterfront. Private villas form a separate accommodation category and should not be confused with ordinary hotel rooms. The name alone never guarantees a particular view, privacy standard or facility access: confirm seasonal operation, exact building, suite type and any conditions attached to the pool and restaurants.",
       "frWatch": "Choisir expressément le bâtiment et la catégorie de chambre ; vérifier ouverture saisonnière, vue mer réelle, accès piscine et éventuelle formule villa indépendante.",
-      "enWatch": "Confirm the exact building and room category, seasonal dates, authentic sea view, pool access and any separate private-villa arrangements."
+      "enWatch": "Confirm the exact building and room category, seasonal dates, authentic sea view, pool access and any separate private-villa arrangements.",
+      "officialUrl": "https://www.oetkerhotels.com/fr/hotels/hotel-du-cap-eden-roc/"
     },
     {
       "name": "Cap d’Antibes Beach Hotel",
       "area": "Port Gallice et Port du Crouton · plage privée",
-      "url": "https://capdantibes-beachhotel.com/",
       "fr": "Le Cap d’Antibes Beach Hotel propose une interprétation résolument contemporaine du bord de mer : un cinq étoiles de 35 chambres et suites, implanté entre les petits ports de Gallice et du Crouton. Son architecture géométrique et ses jardins créent un contraste avec les palaces classiques de la presqu’île ; la plage privée, le restaurant BABA et Les Pêcheurs composent une adresse tournée vers les journées à l’extérieur. Les vues varient selon l’étage et la catégorie, certaines suites ouvrant sur une terrasse ou un jardin privatif plutôt que sur une vue mer panoramique. L’ambiance peut être animée autour de la plage : mieux vaut vérifier horaires, espace choisi et tranquillité souhaitée avant de réserver.",
       "en": "Cap d’Antibes Beach Hotel offers a distinctly contemporary waterfront stay, with 35 rooms and suites between Port Gallice and Port du Crouton. Its geometric architecture, exotic garden and direct beach setting are a sharp contrast to the peninsula’s historic palaces. The BABA beach restaurant and fine-dining Les Pêcheurs give the property a social, sea-facing rhythm rather than the secluded atmosphere of a private headland estate. Room outlooks differ: some suites open onto private gardens while others enjoy higher terraces. Confirm the precise accommodation category, seasonal beach service and potential music or restaurant activity when choosing the quietest setting.",
       "frWatch": "Ne pas confondre terrasse jardin et véritable suite vue mer ; confirmer les horaires de BABA, les transats, les services saisonniers et l’ambiance du soir.",
-      "enWatch": "Distinguish a garden terrace from a genuine sea-view suite; verify BABA hours, lounger arrangements, seasonal services and evening atmosphere."
+      "enWatch": "Distinguish a garden terrace from a genuine sea-view suite; verify BABA hours, lounger arrangements, seasonal services and evening atmosphere.",
+      "officialUrl": "https://capdantibes-beachhotel.com/"
     },
     {
       "name": "Villa Miraé",
       "area": "Garoupe · ancienne Impérial Garoupe",
-      "url": "https://www.villamirae-capantibes.com/",
       "fr": "Villa Miraé, anciennement Impérial Garoupe, est une demeure cinq étoiles de la collection Inwood Hotels, membre de Relais & Châteaux, près de l’anse de la Garoupe. Le jardin méditerranéen, les terrasses des chambres et la piscine en font une adresse à taille humaine plutôt qu’un resort tentaculaire. Les suites s’ouvrent sur des perspectives différentes — jardin, piscine ou terrasse — et la présence d’un accès vers la plage n’implique ni transat inclus ni privatisation permanente. La transformation récente de l’ancienne maison justifie de se référer exclusivement à la dénomination actuelle, à la catégorie exacte et aux équipements disponibles aux dates de séjour.",
       "en": "Villa Miraé, the former Impérial Garoupe, is a five-star Inwood Hotels property and a member of Relais & Châteaux near Garoupe Bay. Mediterranean gardens, individually styled rooms and their terraces create a quiet, residential atmosphere rather than the scale of a resort campus. Suite outlooks can face the garden or pool; a nearby route to the beach must not be mistaken for unlimited private sunbed access. Because the property has reopened under a new name and identity, all editorial references should use Villa Miraé and verify the current room inventory, wellness arrangements and seasonal operating dates rather than reusing obsolete Impérial Garoupe details.",
       "frWatch": "Éviter les anciennes photos de l’Impérial Garoupe ; confirmer dates de saison, catégorie de suite, terrasse réelle et accès au solarium ou à la plage.",
-      "enWatch": "Avoid pre-rebranding Impérial Garoupe images; confirm current seasonal dates, suite category, actual terrace and any beach or solarium terms."
+      "enWatch": "Avoid pre-rebranding Impérial Garoupe images; confirm current seasonal dates, suite category, actual terrace and any beach or solarium terms.",
+      "officialUrl": "https://www.villamirae-capantibes.com/"
     },
     {
       "name": "Hôtel Belles Rives",
       "area": "Juan-les-Pins · façade ouest du Cap d’Antibes",
-      "url": "https://www.bellesrives.com/fr/",
       "fr": "À l’entrée occidentale du cap, côté Juan-les-Pins, l’Hôtel Belles Rives conserve l’âme Art déco liée à Francis Scott Fitzgerald et Zelda. Ses terrasses au-dessus de la mer, la plage privée et le restaurant La Passagère en font une alternative culturelle et balnéaire au domaine isolé de l’Eden-Roc. Il faut toutefois le situer correctement : l’adresse est au boulevard Édouard Baudoin, à Juan-les-Pins, et non près de la pointe de la Garoupe. Les chambres ne bénéficient pas toutes d’une terrasse ni de la même orientation. Pour un séjour paisible, comparer la vue, le niveau d’étage, l’accès au ponton et la saison effective de la plage et du restaurant.",
       "en": "On the western approach to the cape, on the Juan-les-Pins side, Hôtel Belles Rives retains an intimate Art Deco atmosphere associated with F. Scott Fitzgerald and Zelda. Its waterfront terraces, beach and La Passagère restaurant offer a literary and seaside alternative to Eden-Roc’s secluded garden estate. Geography matters: the hotel is on Boulevard Édouard Baudoin in Juan-les-Pins, not beside Garoupe at the southern end of the cape. Rooms differ by outlook and balcony configuration, so select the actual category instead of inferring a sea-facing terrace from marketing photographs. Verify the hotel’s seasonal calendar and restaurant or pontoon availability.",
       "frWatch": "L’adresse est à Juan-les-Pins : valider distance vers Garoupe, exposition de la chambre, véritable balcon, plage privée et horaires du restaurant.",
-      "enWatch": "Located in Juan-les-Pins: verify distance to Garoupe, room aspect, actual balcony, private beach rules and seasonal restaurant hours."
+      "enWatch": "Located in Juan-les-Pins: verify distance to Garoupe, room aspect, actual balcony, private beach rules and seasonal restaurant hours.",
+      "officialUrl": "https://www.bellesrives.com/fr/"
     }
   ],
   "checksFr": [
