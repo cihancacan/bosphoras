@@ -37,7 +37,11 @@ def scan(page,hosts,positive,negative):
   for section in re.split(r",\s*(?=https?://|/)",html.unescape(str(src))):
    url=urljoin(page,section.strip().strip("'\"").split(" ")[0].replace("\\/","/"))
    host=urlparse(url).hostname or ""
-   if not url.startswith("https://") or not any(host==h or host.endswith("."+h) for h in hosts):continue
+   # Official tourism page may serve a specifically captioned photo from its media CDN.
+   official_host=any(host==h or host.endswith("."+h) for h in hosts)
+   exact_laisinant=("laisinant" in positive and any(k in caption.lower() for k in ("laisinant","female skier walking","small hamlet")))
+   exact_moonlight=("moonlight" in positive and "moonlight basin" in (url+" "+caption).lower())
+   if not url.startswith("https://") or not (official_host or exact_laisinant or exact_moonlight):continue
    if not re.search(r"\.(jpe?g|webp|png|avif)$",urlparse(url).path,re.I):continue
    content=(url+" "+caption).lower()
    if any(x in content for x in negative):continue
@@ -55,6 +59,8 @@ def run(slug,stem,group,key,pages,hosts,positive,negative):
  data=json.loads(path.read_text(encoding="utf8"))
  items=data["destinationScenes"] if group=="destination" else data["hotels"]
  item=next(x for x in items if x["key"]==key and (group=="destination" or x.get("propertyKey")==group))
+ if item.get("visuallyVerified") is True:
+  print("KEEP_APPROVED_PHOTO",slug,group,key,flush=True);return
  candidates=[]
  for page in pages:
   result=scan(page,hosts,positive,negative);print("OFFICIAL_SCAN",slug,key,page,len(result),flush=True)
