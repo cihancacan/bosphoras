@@ -105,6 +105,10 @@ EXACT_SCENES.update({
   "Alpine view from Gornergratbahn near Riffelberg")],
 })
 EXACT_COMMONS={
+ "scene-3":[("File:4022 - Zermatt - Matterhorn from Bahnhofstrasse.JPG",
+             "The Matterhorn viewed from Bahnhofstrasse in Zermatt")],
+ "scene-6":[("File:Gornergrat panorama.jpg",
+             "Gornergrat glacier and alpine summit panorama, 2021")],
  "scene-5":[("File:Grenzgletscher & Gornergletscher.JPG",
              "Gorner and Grenz glaciers viewed from the Gornergrat summit")],
  "scene-6":[("File:3873 - View from Gornergrat.JPG",
