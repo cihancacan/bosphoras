@@ -4,7 +4,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 6,
+  "downloadedDestinationCandidates": 9,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "ownerRightsAuthorization": "Bosphoras operator authorizes appropriate photos for this project, 19 Oct 2026. Keep exact photographic source and credits; verify image identity and permitted reuse per file.",
@@ -382,29 +382,61 @@
       "key": "scene-1",
       "label": "Saint-Jean-Cap-Ferrat peninsula aerial coastline",
       "query": "Saint Jean Cap Ferrat peninsula aerial coast",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "REJECTED: Monaco image imported by inherited direct-source table, not Saint-Jean-Cap-Ferrat.",
-      "rejectedSource": "https://cdn.generationvoyage.fr/2025/06/Place-du-Casino-Monte-Carlo-1536x1024.jpeg"
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://cdn.generationvoyage.fr/2025/06/Place-du-Casino-Monte-Carlo-1536x1024.jpeg",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-1.webp",
+      "downloadUrl": "https://static.apidae-tourisme.com/filestore/objets-touristiques/images/73/53/16921929.jpg",
+      "sourcePage": "https://www.explorenicecotedazur.com/fiche/cap-ferrat/",
+      "candidateContext": "Actual Cap-Ferrat headland and peninsula coastline with real lighthouse visible",
+      "credit": "Nice Côte d’Azur tourist office",
+      "sha256": "7b3f646a9c54591f5dcad8b3eb2c88857be81f4fdd93e9c100a6df45fd09dda7",
+      "dhash": "1111000011100000110000001100000010011100100111001011100011100000",
+      "bytes": 298256,
+      "originalSize": [
+        4000,
+        2254
+      ],
+      "outputSize": [
+        1800,
+        1014
+      ]
     },
     {
       "key": "scene-2",
       "label": "Grand-Hôtel Le Club Dauphin coastline",
       "query": "Grand Hotel du Cap Ferrat lighthouse coast",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "REJECTED: Monaco image imported by inherited direct-source table, not Saint-Jean-Cap-Ferrat.",
-      "rejectedSource": "https://www.hellomonaco.com/wordpress/wp-content/uploads/2018/07/yacht-show-2017-facebook--monacoyachtshow.jpg"
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://www.hellomonaco.com/wordpress/wp-content/uploads/2018/07/yacht-show-2017-facebook--monacoyachtshow.jpg",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-2.webp",
+      "downloadUrl": "https://yeslondonmagazine.com/images/2024/07/03/IMG_0898_large.png",
+      "sourcePage": "https://yeslondonmagazine.com/travel/grand-hotel-du-cap-ferrat-timeless-luxury-on-the-french-riviera",
+      "candidateContext": "Identifiable Grand-Hôtel du Cap-Ferrat exterior among pines and Club Dauphin below",
+      "credit": "Yes London Magazine · Grand-Hôtel Cap-Ferrat resort aerial",
+      "sha256": "aed77b72fa1e56b2975eabdeae7360f31a324e9338add9f669cbf82f52fced07",
+      "dhash": "1110000010100100110001101000011000010100000101101001101111100011",
+      "bytes": 312046,
+      "originalSize": [
+        1200,
+        892
+      ],
+      "outputSize": [
+        1200,
+        892
+      ]
     },
     {
       "key": "scene-3",
@@ -476,16 +508,32 @@
       "key": "scene-5",
       "label": "Port Saint-Jean-Cap-Ferrat village harbour",
       "query": "Port Saint Jean Cap Ferrat harbor",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "Image not sufficiently identified as Saint-Jean marina; replace with Commons exact port photograph",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/H%C3%B4tel_La_voile_d%27Or_Saint-Jean-Cap-Ferrat.jpg/1920px-H%C3%B4tel_La_voile_d%27Or_Saint-Jean-Cap-Ferrat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedCandidateContext": "Photo title identifies Hôtel La Voile d’Or, not a confirmed view of the Saint-Jean marina"
+      "rejectedCandidateContext": "Photo title identifies Hôtel La Voile d’Or, not a confirmed view of the Saint-Jean marina",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-5.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Port_de_Saint-Jean_Cap-Ferrat.jpg/1920px-Port_de_Saint-Jean_Cap-Ferrat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Port_de_Saint-Jean_Cap-Ferrat.jpg",
+      "candidateContext": "Port de Saint-Jean Cap-Ferrat.jpg",
+      "credit": "Tangopaso · Public domain",
+      "sha256": "de60ab479f61c2cf20466074601d25dd079c442f9be8b093998065f7b07cf4ce",
+      "dhash": "1111111100011111100100111000010011100010010110101001110010101101",
+      "bytes": 478888,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-6",
