@@ -1,0 +1,55 @@
+name: Travel Gstaad — collect authentic photo candidates (no Vercel build)
+on:
+  push:
+    branches:
+      - feature/luxury-travel-seo-destinations-20261012
+    paths:
+      - scripts/collect-gstaad-media.py
+      - .github/workflows/travel-gstaad-media.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: travel-gstaad-source-candidates
+  cancel-in-progress: false
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 24
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install restricted photo-processing dependencies
+        run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - name: Verify collector syntax
+        run: python -m py_compile scripts/collect-gstaad-media.py
+      - name: Recover only image candidates with exact provenance
+        run: python -u scripts/collect-gstaad-media.py
+      - name: Assert source-only status and counts
+        run: |
+          python - <<'PY'
+          import json
+          p='data/travel/gstaadMediaCandidates.json'
+          m=json.load(open(p,encoding='utf8'))
+          assert m['destination']=='gstaad'
+          assert len(m['hotels'])==12 and len(m['destinationScenes'])==9
+          assert not m['approvedForCommercialPublication']
+          assert not m['visuallyVerified']
+          assert not any(x.get('visuallyVerified') for x in m['hotels']+m['destinationScenes'])
+          print('Verified candidate stage; never claim approved image status.')
+          PY
+      - name: Save collected WebP candidates without triggering a Vercel build
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- public/images/travel/gstaad-premium data/travel/gstaadMediaCandidates.json || true
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): Gstaad source-backed photo candidates for manual QA [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
