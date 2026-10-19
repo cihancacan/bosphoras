@@ -1,0 +1,19 @@
+{
+  "destination": "monaco",
+  "status": "INTERNAL_QA_PASSED",
+  "branch": "feature/luxury-travel-seo-destinations-20261012",
+  "qaCommit": "da870d3018caa5cd8497f612f324372f404ea5bc",
+  "hotelPhotosApproved": 12,
+  "localScenesApproved": 9,
+  "totalApproved": 21,
+  "frFaqCount": 7,
+  "enFaqCount": 7,
+  "verifiedBy": [
+    "npm run typecheck",
+    "node scripts/check-monaco-draft.mjs",
+    "node scripts/check-travel-catalogue.mjs"
+  ],
+  "indexing": "noindex",
+  "productionDeployed": false,
+  "vercelBuildRequested": false
+}
