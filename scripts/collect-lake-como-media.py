@@ -114,6 +114,26 @@ lib.DIRECT_LANDSCAPES["scene-9"]=[
   "Actual Moltrasio waterfront and verdant hillside, wooden private dock, blue lake",
   "Italy Review · accurately labelled Moltrasio harbour photo")
 ]
+# Final 2026 luxury QA: only the documented lake-floating Tremezzo pool, not garden pool or reflection.
+lib.HOTEL_DIRECT["grand-hotel-tremezzo/view-3"]=[
+ (400,"https://www.grandhoteltremezzo.com/media/rxyntdgz/grand_hotel_tremezzo-pools-julius-dji_0031.jpg?width=1825&height=1217&format=webp&v=1da398aa747edb0",
+ "https://www.grandhoteltremezzo.com/en/resort/pools/",
+ "Real aerial Water-on-the-Water floating lake pool with blue water and orange sun umbrellas",
+ "Grand Hotel Tremezzo · exact official DJI 0031 floating lake pool photograph")
+]
+# No generic search fallback to a different land-based pool.
+lib.HOTELS["grand-hotel-tremezzo"]["view-3"]=[]
+# Free-licence original Lake Como panorama by precisely named photographers.
+lib.DIRECT_LANDSCAPES["scene-1"]=[
+ (300,"https://images.pexels.com/photos/32569620/pexels-photo-32569620.jpeg?auto=compress&cs=tinysrgb&w=1800",
+ "https://www.pexels.com/photo/scenic-view-of-lake-como-in-italy-s-lombardy-region-32569620/",
+ "Sunny aerial Lake Como surrounded by green mountains; original author Earth Photart",
+ "Earth Photart · original Lake Como panorama · Pexels licence"),
+ (280,"https://images.pexels.com/photos/36483983/pexels-photo-36483983.jpeg?auto=compress&cs=tinysrgb&w=1800",
+ "https://www.pexels.com/photo/scenic-view-of-lake-como-surrounded-by-mountains-36483983/",
+ "Bright Lake Como mountain panorama photographed by Oskar Gross, exact location Lecco",
+ "Oskar Gross · Lake Como panorama · Pexels licence")
+]
 lib.COMMONS_EXACT={}
 lib.DIRECT_WIKIMEDIA={}
 # A candidate already visually approved is never replaced, nor is a different
@@ -196,6 +216,11 @@ lib.DIRECT_LANDSCAPES["scene-6"]=[
   "Varenna colourful old-town houses on genuine Lake Como waterfront photographed in sunshine",
   "Pexels · C1 Superstar · original Varenna photo, Pexels licence")
 ]
+# Final deliberate overrides must run after older candidate declarations.
+lib.HOTEL_DIRECT["grand-hotel-tremezzo/view-3"]=[(400,"https://www.grandhoteltremezzo.com/media/rxyntdgz/grand_hotel_tremezzo-pools-julius-dji_0031.jpg?width=1825&height=1217&format=webp&v=1da398aa747edb0","https://www.grandhoteltremezzo.com/en/resort/pools/","Actual Water-on-the-Water lake floating pool, confirmed image DJI-0031","Grand Hotel Tremezzo · official photo")]
+lib.HOTELS["grand-hotel-tremezzo"]["view-3"]=[]
+lib.DIRECT_LANDSCAPES["scene-1"]=[(300,"https://images.pexels.com/photos/32569620/pexels-photo-32569620.jpeg?auto=compress&cs=tinysrgb&w=1800","https://www.pexels.com/photo/scenic-view-of-lake-como-in-italy-s-lombardy-region-32569620/","Real Lake Como sunlit mountain aerial original photo","Earth Photart · Pexels licence"),(280,"https://images.pexels.com/photos/36483983/pexels-photo-36483983.jpeg?auto=compress&cs=tinysrgb&w=1800","https://www.pexels.com/photo/scenic-view-of-lake-como-surrounded-by-mountains-36483983/","Bright Lake Como mountains and blue water by Oskar Gross","Oskar Gross · Pexels licence")]
+
 TO_REPLACE={
  ("villa-d-este","view-1"),("grand-hotel-tremezzo","view-2"),
  ("grand-hotel-tremezzo","view-3"),("passalacqua","view-1"),
