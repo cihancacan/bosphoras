@@ -54,6 +54,34 @@ assert(schema.includes('isCapFerrat?saintJeanCapFerratDraftFaq'));
 assert(schema.includes('confirmedCapFerratAssets'));
 assert(schema.includes("robots: { index: ready"));
 const all=media.hotels.concat(media.destinationScenes);
+// Acquisition-complete safety gate for all 21 Cap Ferrat sources.
+// Validation of source metadata is not permission to publish: visual approval
+// remains per image, and all draft pages must continue noindex.
+assert.equal(all.length,21);
+assert(all.every(x=>x.status==='candidate_needs_visual_review'),'Cap Ferrat 21/21 sourced candidates required');
+const sourceHashes=new Set();
+const perceptualHashes=[];
+for(const x of all){
+ assert(x.localPath?.startsWith('/images/travel/saint-jean-cap-ferrat-premium/'),'Source local path missing '+x.key);
+ assert(x.sourcePage?.startsWith('https://'),'Source page missing '+x.key);
+ assert(x.downloadUrl?.startsWith('https://'),'Source image URL missing '+x.key);
+ assert(x.credit?.trim().length>=5,'Photographic attribution missing '+x.key);
+ assert(/^[a-f0-9]{64}$/i.test(x.sha256||''),'SHA-256 invalid '+x.key);
+ assert(/^[01]{64}$/.test(x.dhash||''),'Perceptual hash invalid '+x.key);
+ const path='public'+x.localPath;
+ assert(existsSync(path)&&statSync(path).size>20000,'Missing downloaded WebP '+path);
+ assert(!sourceHashes.has(x.sha256),'Duplicate Cap Ferrat file '+x.key);
+ sourceHashes.add(x.sha256);
+ for(const previous of perceptualHashes){
+  assert([...x.dhash].filter((bit,i)=>bit!==previous[i]).length>5,
+   'Perceptual near-duplicate in Cap Ferrat source photos '+x.key);
+ }
+ perceptualHashes.push(x.dhash);
+ if(!x.visuallyVerified){
+  assert(x.commercialRightsCleared===false && Boolean(x.visualQaWarning),
+   'Unreviewed photo cannot be published '+x.key);
+ }
+}
 for(const x of all)if(x.visuallyVerified){
  assert.equal(x.commercialRightsCleared,true);
  assert.equal(x.status,'candidate_needs_visual_review');

@@ -17,6 +17,7 @@ REGISTRY=[
  ("bigSky","big-sky","Big Sky"),
  ("valDisere","val-disere","Val d'Isère"),
  ("verbier","verbier","Verbier"),
+ ("saintJeanCapFerrat","saint-jean-cap-ferrat","Saint-Jean-Cap-Ferrat"),
 ]
 OUT=Path("docs/travel-photo-contact-sheets");OUT.mkdir(parents=True,exist_ok=True)
 try:
@@ -76,5 +77,5 @@ for stem,slug,name in REGISTRY:
  page.save(OUT/(slug+".jpg"),"JPEG",quality=82,optimize=True,subsampling=2)
  (OUT/(slug+".md")).write_text("\n".join(markdown)+"\n",encoding="utf8")
  index.append(f"- [{name}]({slug}.md) — {got}/21 fichiers candidats, {sum(bool(x.get('visualQaWarning')) for x in items)} alertes ; [ouvrir l'image seule]({slug}.jpg)")
-print("REVIEW_BOARD_COMPLETE",len(REGISTRY),"cities; visual approval remains manual",flush=True)
+print("REVIEW_BOARD_COMPLETE",len(REGISTRY),"destinations; visual approval remains manual",flush=True)
 (OUT/"README.md").write_text("\n".join(index)+"\n",encoding="utf8")
