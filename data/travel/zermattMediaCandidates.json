@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 6,
+  "downloadedDestinationCandidates": 7,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -590,17 +590,29 @@
       "key": "scene-7",
       "placeLabel": "Klein Matterhorn",
       "searchQuery": "Klein Matterhorn",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Matterhorn_Glacier_Paradise,_Theodulglacier_-_panoramio.jpg",
-      "candidateContext": "Theodulglacier from Matterhorn Glacier Paradise by qwesy qwesy, CC BY 3.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Swiss_Alps.jpg",
+      "candidateContext": "Swiss Alps from Klein Matterhorn summit, credited Devil Dancer",
       "credit": "Photograph from the named original publisher; author needs confirmation",
       "license": "Public domain",
       "licenseUrl": "",
       "rejectedSource": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matterhorn_Glacier_Paradise%2C_Theodulglacier_-_panoramio.jpg?width=1600",
-      "visualQaWarning": "Cold, flat glacier snapshot with overly blue cast and ski infrastructure, not premium enough for Matterhorn Glacier Paradise."
+      "visualQaWarning": "Downloaded exact publisher source; individual visual and rights review still required.",
+      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Swiss_Alps.jpg?width=1600",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-7.webp",
+      "sha256": "caf1afb860005daf6914a50208491516f18f6638317870e7674c6972f8ce3be3",
+      "bytes": 287240,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-8",
