@@ -12,7 +12,17 @@ lib=importlib.util.module_from_spec(spec)
 spec.loader.exec_module(lib)
 # Clear the Monaco-specific direct URL tables; otherwise they take precedence
 # over geography-specific Commons queries and silently contaminate this destination.
-lib.HOTEL_DIRECT={}
+# Source photograph on the hotel's official website. This is a candidate only;
+# visual identity, commercial rights and editorial quality remain manual gates.
+lib.HOTEL_DIRECT={
+ "grand-hotel-cap-ferrat/view-3":[(
+  100,
+  "https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-156%2C2500-3000%2C0000-1687%2C5000/publish/content/dam/fourseasons/images/web/GHF/GHF_109_original.jpg",
+  "https://www.fourseasons.com/capferrat/dining/restaurants/club_dauphin/",
+  "Four Seasons official image of Club Dauphin infinity pool above the coast",
+  "Four Seasons · official Grand-Hôtel du Cap-Ferrat photograph"
+ )]
+}
 lib.DIRECT_LANDSCAPES={}
 lib.DIRECT_WIKIMEDIA={}
 lib.COMMONS_EXACT={}
@@ -20,9 +30,9 @@ lib.MANIFEST=Path("data/travel/saintJeanCapFerratMediaCandidates.json")
 lib.OUT=Path("public/images/travel/saint-jean-cap-ferrat-premium")
 lib.HOTELS={
 "grand-hotel-cap-ferrat":{
- "view-1":[("https://www.fourseasons.com/capferrat/photos-and-videos/",["grand","exterior","hotel","cap","ferrat"])],
- "view-2":[("https://www.fourseasons.com/capferrat/photos-and-videos/",["suite","bedroom","room","sea"])],
- "view-3":[("https://www.fourseasons.com/capferrat/photos-and-videos/",["dauphin","pool","swimming","seawater"])],
+ "view-1":[("https://www.fourseasons.com/capferrat/photos-and-videos/",["grand","exterior","hotel","cap","ferrat"]),("https://www.fourseasons.com/capferrat/",["grand","exterior","hotel","facade"])],
+ "view-2":[("https://www.fourseasons.com/capferrat/accommodations/heritage-rooms-and-suites/palace-sea-view-suite/",["suite","bedroom","room","sea"]),("https://www.fourseasons.com/capferrat/photos-and-videos/",["suite","bedroom","room","sea"])],
+ "view-3":[("https://www.fourseasons.com/capferrat/dining/restaurants/club_dauphin/",["dauphin","pool","swimming","seawater"]),("https://www.fourseasons.com/capferrat/photos-and-videos/",["dauphin","pool","swimming","seawater"])],
 },
 "royal-riviera":{
  "view-1":[("https://www.royal-riviera.com/",["royal","riviera","exterior","facade","hotel"])],

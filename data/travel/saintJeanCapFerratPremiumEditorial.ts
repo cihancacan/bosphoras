@@ -29,5 +29,5 @@ export const capFerratAreaVisuals:(BodrumPremiumPhoto|null)[]=areaKeys.map((key,
  return x&&approved(x)?toPhoto(x,saintJeanCapFerratDraftGuide.areas[i].name):null;
 });
 export const confirmedCapFerratAssets=new Set(
- [...media.hotels,...media.destinationScenes].filter(approved).map(x=>x.localPath!)
+ ([...media.hotels,...media.destinationScenes] as Candidate[]).filter(approved).map(x=>x.localPath!)
 );
