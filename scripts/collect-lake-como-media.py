@@ -94,6 +94,7 @@ lib.HOTEL_DIRECT["il-sereno/view-2"]=[
   "Luxuria Vacations · exact Il Sereno Darsena Suite photo")
 ]
 # Exact Commons filenames with documented source descriptions; no generic lake stand-ins.
+# Fetch source-specific thumbnails directly for five towns because Commons JSON API rate-limits batch usage.
 lib.DIRECT_LANDSCAPES.update({
  "scene-1":lib.commons_exact("Panorama del lago di Como.jpg"),
  "scene-2":lib.direct_wikimedia("Cernobbio hillside from Lake Como.jpg"),
