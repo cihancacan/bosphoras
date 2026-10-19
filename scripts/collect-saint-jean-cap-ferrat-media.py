@@ -23,7 +23,69 @@ lib.HOTEL_DIRECT={
   "Four Seasons · official Grand-Hôtel du Cap-Ferrat photograph"
  )]
 }
-lib.DIRECT_LANDSCAPES={}
+# Geographically exact original photographs, each linked to its genuine source.
+# A fetched image remains UNAPPROVED pending visual, source and rights QA.
+lib.DIRECT_LANDSCAPES={
+ "scene-1":[(98,
+   "https://www.explorenicecotedazur.com/content/uploads/2023/07/vue-aerienne-saint-jean-cap-ferrat-scaled.jpg",
+   "https://www.explorenicecotedazur.com/en/saint-jean-cap-ferrat/",
+   "Actual Saint-Jean-Cap-Ferrat peninsula from above, bay and harbour visible",
+   "Nice Côte d'Azur Tourism Board")],
+ "scene-2":[(95,
+   "https://www.gordonweddingfilms.com/wp-content/uploads/2024/10/10_Wedding-Cap-Ferrat-Four-Seasons.jpg",
+   "https://www.gordonweddingfilms.com/wedding-videographer-grand-hotel-four-seasons-cap-ferrat/",
+   "Overhead photograph of Club Dauphin pool at the rocky Grand-Hôtel Cap-Ferrat coast",
+   "Gordon Wedding Films · credited wedding photography")],
+}
+# The Commons file page supplies exact place, photographer, licence and geolocation;
+# prefer its own thumbnail over an unverifiable generic resort photograph.
+lib.DIRECT_LANDSCAPES["scene-6"]=lib.commons_exact("Plage de Passable.jpg")
+lib.DIRECT_LANDSCAPES["scene-7"]=lib.commons_exact("Cap-Ferrat lighthouse from east.jpg")
+# Four Seasons does not allow the collector to scrape its website (HTTP 403).
+# These ORIGINAL external publisher/industry images explicitly identify this hotel.
+# None are silently re-labelled as an official direct hotel download.
+lib.HOTEL_DIRECT.update({
+ "grand-hotel-cap-ferrat/view-1":[
+  (99,"https://media.cntraveler.com/photos/67f54caceeae371d698ede51/master/w_1600%2Cc_limit/Grand-Ho%25CC%2582tel%2520du%2520Cap-Ferrat_White%2520Lotus_070425_pr_global..jpg",
+      "https://www.cntraveler.com/story/where-will-the-white-lotus-season-4-be-filmed",
+      "Grand-Hôtel du Cap-Ferrat actual white Belle Époque façade and sunny formal gardens",
+      "Condé Nast Traveler · Grand-Hôtel du Cap-Ferrat exterior"),
+  (97,"https://images.cvent.com/CSN/e403de07-a1ee-4cd9-8a63-7ddb96037606/images/4d3d59f2a5aa4e299d28f619bf227cba_LARGE!_!4c6f3919fcc8ce657b24b71a09c4c65f.jpg",
+      "https://www.cvent.com/venues/nice/hotel/grand-hotel-du-cap-ferrat-a-four-seasons-hotel/venue-e403de07-a1ee-4cd9-8a63-7ddb96037606",
+      "Confirmed Grand-Hôtel main entrance façade from venue image", "Cvent hotel listing")],
+ "grand-hotel-cap-ferrat/view-2":[
+  (100,"https://secure.s.forbestravelguide.com/img/properties/grand-hotel-du-cap-ferrat-a-four-seasons-hotel/extra-large/grand-hotel-du-cap-ferrat-a-four-seasons-hotel-guestroom.jpg",
+       "https://www.forbestravelguide.com/hotels/french-riviera-france/grand-hotel-du-cap-ferrat-a-four-seasons-hotel",
+       "Real Grand-Hôtel du Cap-Ferrat guestroom with pale mint bench and white linen", "Forbes Travel Guide")],
+ "grand-hotel-cap-ferrat/view-3":[
+  (100,"https://1.bp.blogspot.com/-I6VgPcSptBg/YVnKWyhK5tI/AAAAAAAAQr0/pJI-Wts3b5IkDzI3mw1BgZT5qVHXDm0XACLcBGAsYHQ/s1926/Grand-Hotel-Cap-Ferrat-Beach-Club.jpg",
+       "https://www.homeandartmag.com/2021/07/royal-riviera-st-jean-cap-ferrat.html",
+       "Real Club Dauphin pool and lighthouse above the rocky Mediterranean headland", "Home & Art Magazine · Cap-Ferrat Beach Club"),
+  (99,"https://www.gordonweddingfilms.com/wp-content/uploads/2024/10/10_Wedding-Cap-Ferrat-Four-Seasons.jpg",
+      "https://www.gordonweddingfilms.com/wedding-videographer-grand-hotel-four-seasons-cap-ferrat/",
+      "Club Dauphin infinity pool and rocks from overhead", "Gordon Wedding Films")],
+ "royal-riviera/view-2":[
+  (100,"https://decouvertes.fr/wp-content/uploads/2024/10/hotel_royal_riviera_suite-scaled.webp",
+       "https://decouvertes.fr/hotels-list/pro-hotel-royal-riviera/",
+       "Daylight Royal-Riviera suite, turquoise curtains, terrace and natural light", "Découvertes · Royal-Riviera suite")],
+ "royal-riviera/view-3":[
+  (100,"https://www.royal-riviera.com/wp-content/uploads/2022/01/BD_Vue-aerienne-retouchee_3.jpg",
+       "https://www.royal-riviera.com/en/the-royal-riviera/",
+       "Actual Royal-Riviera hotel, outdoor pool and Baie des Fourmis in sunshine", "Royal-Riviera · official hotel photo")],
+ "la-villa-cap-ferrat/view-3":[
+  (98,"https://cdn.iris-etourism.io/uploads/nice/9d5/247-2-12714743.webp",
+       "https://www.explorenicecotedazur.com/en/hotel/hotel-spa-la-villa-cap-ferrat/",
+       "La Villa Cap Ferrat boutique hotel, terrace pool and sunny sea view", "Nice Côte d'Azur Tourism Board")],
+ "brise-marine/view-3":[
+  (100,"https://www.hotel-brisemarine.com/images/gallery/gallerie/0563_ok_cliente.jpg",
+       "https://www.hotel-brisemarine.com/en/",
+       "Original Brise Marine yellow villa façade and flowering garden in daylight",
+       "Hôtel Brise Marine · official hotel photograph"),
+  (94,"https://www.hotel-brisemarine.com/images/gallery/gallerie/0505_ok_cliente.jpg",
+       "https://www.hotel-brisemarine.com/en/",
+       "Brise Marine original garden terrace and dining tables in sunshine",
+       "Hôtel Brise Marine · official hotel photograph")],
+})
 lib.DIRECT_WIKIMEDIA={}
 lib.COMMONS_EXACT={}
 lib.MANIFEST=Path("data/travel/saintJeanCapFerratMediaCandidates.json")
