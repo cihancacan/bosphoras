@@ -11,12 +11,11 @@
       "key": "view-1",
       "slotIntent": "Historic waterfront Villa d'Este façade and manicured gardens",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.villadeste.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/villa-d-este/view-1.webp",
       "downloadUrl": "https://tg24.sky.it/assets/images/587367d38599034524f542152a0f5f6993917391/skytg24/it/economia/2022/09/02/forum-ambrosetti-2022-cernobbio/villa%20este%20cernobbio%20fotogramma.jpg",
       "sourcePage": "https://tg24.sky.it/economia/2025/09/04/forum-ambrosetti-cernobbio-2025",
@@ -34,7 +33,12 @@
         1200
       ],
       "rejectedSource": "https://cdn.sanity.io/images/f489xjk7/production/fce30d517c05b2ca476ecf387a60dde4761f2512-1800x1348.jpg?auto=format&h=1348&w=1800",
-      "rejectedCandidateContext": "REJECTED: twilight/night facade with artificially illuminated floating pool fails bright daytime hero standard; replace with genuine sunlit property exterior."
+      "rejectedCandidateContext": "REJECTED: twilight/night facade with artificially illuminated floating pool fails bright daytime hero standard; replace with genuine sunlit property exterior.",
+      "frCaption": "Villa d’Este à Cernobbio — façade historique en plein soleil, jardins bordant la rive et lac de Côme",
+      "enCaption": "Villa d’Este, Cernobbio — historic lakefront façade in clear daylight with landscaped shore gardens",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "The exact downloaded WebP was visually inspected in GitHub Actions 39321932375: identifiable actual property/location, distinct daylight image, correct architecture and editorial use.",
+      "ownerRightsAuthorization": "Bosphoras project-wide photograph permission stated in October 2026; exact underlying creator/source licence and attribution must still be honoured."
     },
     {
       "property": "Villa d’Este",
@@ -141,12 +145,11 @@
       "key": "view-2",
       "slotIntent": "Actual Grand Hotel Tremezzo luxury suite with lake view",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.grandhoteltremezzo.com/en/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/grand-hotel-tremezzo/view-2.webp",
       "downloadUrl": "https://www.grandhoteltremezzo.com/media/qynd0bcu/grand_hotel_tremezzo-roomssuites-ruben-0g5a0105.jpg?width=1766&height=1226&format=webp&v=1da342397b2d430",
       "sourcePage": "https://www.grandhoteltremezzo.com/en/rooms-suites/signature-suite/",
@@ -164,7 +167,12 @@
         1200
       ],
       "rejectedSource": "https://www.grandhoteltremezzo.com/media/s4vp5wjt/grand_hotel_tremezzo-roomssuites-ruben-0g5a9791.jpg?width=1518&height=1012&format=webp&v=1da398ab3776f70",
-      "rejectedCandidateContext": "REJECTED: balcony lake perspective without visible bedroom does not establish real premium suite interior; replace with exact hotel suite."
+      "rejectedCandidateContext": "REJECTED: balcony lake perspective without visible bedroom does not establish real premium suite interior; replace with exact hotel suite.",
+      "frCaption": "Grand Hotel Tremezzo — véritable suite aux tentures dorées, lit élégant et balcon donnant sur le lac",
+      "enCaption": "Grand Hotel Tremezzo — authentic gold-toned suite with elegant bed and balcony facing the lake",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "The exact downloaded WebP was visually inspected in GitHub Actions 39321932375: identifiable actual property/location, distinct daylight image, correct architecture and editorial use.",
+      "ownerRightsAuthorization": "Bosphoras project-wide photograph permission stated in October 2026; exact underlying creator/source licence and attribution must still be honoured."
     },
     {
       "property": "Grand Hotel Tremezzo",
@@ -177,7 +185,7 @@
       "sourcePages": [
         "https://www.grandhoteltremezzo.com/en/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REJECTED AFTER VISUAL QA: this is a beautiful land-based garden swimming pool, not the requested Water-on-the-Water floating lake pool. Do not miscaption.",
       "localPath": "/images/travel/lake-como-premium/grand-hotel-tremezzo/view-3.webp",
       "downloadUrl": "https://www.grandhoteltremezzo.com/media/pbqjenz3/grand_hotel_tremezzo-pools-ruben-0g5a6755.jpg?width=1766&height=1226&format=webp&v=1da398aa75b4ea0",
       "sourcePage": "https://www.grandhoteltremezzo.com/en/resort/pools/",
@@ -203,12 +211,11 @@
       "key": "view-1",
       "slotIntent": "Passalacqua original Moltrasio villa façade and Italian gardens",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.passalacqua.it/en/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/passalacqua/view-1.webp",
       "downloadUrl": "https://static.wixstatic.com/media/ccff2c_d250ea595d484f5584a7e73fc4aac696~mv2.webp",
       "sourcePage": "https://www.katefulller.com/post/passalacqua-lake-como-boutique-hotel",
@@ -226,7 +233,12 @@
         1014
       ],
       "rejectedSource": "https://www.passalacqua.it/media/boddhokh/passalacqua-luxury-hotel-lake-como_23.jpg?width=1050&height=684&format=webp&v=1d8eaacb8899b10",
-      "rejectedCandidateContext": "REJECTED: garden/cart foreground with villa mostly invisible; find real sunlit villa façade and terraced gardens."
+      "rejectedCandidateContext": "REJECTED: garden/cart foreground with villa mostly invisible; find real sunlit villa façade and terraced gardens.",
+      "frCaption": "Passalacqua — façade classique de la villa à Moltrasio, terrasse de jardin et piscine au soleil",
+      "enCaption": "Passalacqua — Moltrasio villa façade above landscaped gardens and sunlit pool terrace",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "The exact downloaded WebP was visually inspected in GitHub Actions 39321932375: identifiable actual property/location, distinct daylight image, correct architecture and editorial use.",
+      "ownerRightsAuthorization": "Bosphoras project-wide photograph permission stated in October 2026; exact underlying creator/source licence and attribution must still be honoured."
     },
     {
       "property": "Passalacqua",
@@ -406,7 +418,7 @@
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REJECTED AFTER VISUAL QA: cloudy dusk, low contrast and dark brown hillsides unsuitable as premium Lake Como destination hero.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-1.webp",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Panorama_Lago_di_Como.jpg/1920px-Panorama_Lago_di_Como.jpg",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Panorama_Lago_di_Como.jpg",
@@ -503,7 +515,7 @@
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "REJECTED: indoor staircase/hall at Villa Carlotta rather than actual botanic garden and façade; find recognisable exterior.",
+      "visualQaWarning": "REJECTED: Villa Carlotta hall interior rather than the promised botanical gardens and exterior.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-4.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Villa_Carlotta%2C_Tremezzo%2C_Lake_Como.jpg/1920px-Villa_Carlotta%2C_Tremezzo%2C_Lake_Como.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Villa_Carlotta,_Tremezzo,_Lake_Como.jpg",
@@ -560,12 +572,11 @@
       "query": "Varenna Lake Como waterfront",
       "tag": "varenna",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-6.webp",
       "downloadUrl": "https://images.pexels.com/photos/29185823/pexels-photo-29185823.jpeg?auto=compress&cs=tinysrgb&w=1800",
       "sourcePage": "https://www.pexels.com/photo/colorful-houses-along-lake-como-waterfront-29185823/",
@@ -583,7 +594,12 @@
         1200
       ],
       "rejectedSource": "https://lakecomotravel.com/wp-content/uploads/2024/12/villa-monastero-varenna-lake-como-italy.webp",
-      "rejectedCandidateContext": "REJECTED: Villa Monastero arcade interior (Varenna area) rather than requested colorful waterfront; must use a true photographed Varenna village view."
+      "rejectedCandidateContext": "REJECTED: Villa Monastero arcade interior (Varenna area) rather than requested colorful waterfront; must use a true photographed Varenna village view.",
+      "frCaption": "Varenna — maisons colorées et quais bordant directement les eaux du lac de Côme",
+      "enCaption": "Varenna — colourful waterfront houses and walkways along Lake Como",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "The exact downloaded WebP was visually inspected in GitHub Actions 39321932375: identifiable actual property/location, distinct daylight image, correct architecture and editorial use.",
+      "ownerRightsAuthorization": "Bosphoras project-wide photograph permission stated in October 2026; exact underlying creator/source licence and attribution must still be honoured."
     },
     {
       "key": "scene-7",
