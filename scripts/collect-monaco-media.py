@@ -42,6 +42,23 @@ HOTELS={
   "view-2":[("https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort/accommodation",["suite","room","bedroom","balcony","sea"])],
   "view-3":[("https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort",["garden","blue","bay","restaurant","marcel"])],
  }}
+HOTEL_DIRECT={
+ "hotel-metropole/view-1":[
+  (95,"https://media.timeout.com/images/106346724/1536/864/image.jpg",
+   "https://www.timeout.com/europe/hotels/hotel-metropole-monte-carlo",
+   "Hôtel Métropole historic sunlit planted courtyard and true façade, architecture, no people",
+   "Hotel Metropole photograph sourced from Time Out hotel review")],
+ "hotel-hermitage/view-3":[
+  (95,"https://signemagazine.com/wp-content/uploads/2019/09/d7f8f-02-hc3b4tel-hermitage-lobby-eiffel-3.jpg",
+   "https://signemagazine.com/lifestyle/hotel-hermitage-monte-carlo-a-belle-epoque-treasure/",
+   "Hôtel Hermitage winter garden under Eiffel-designed stained glass dome",
+   "Hotel Hermitage photo via Signé Magazine")],
+ "monte-carlo-bay/view-1":[
+  (99,"https://asset.montecarlosbm.com/styles/hero_image_desktop/s3/media/image/005-MCBAY-SHOOTING-ESPACES-BALNEAIRES-DRONE-aircreative.jpg.jpeg?VersionId=MVWpwMombZZmKiNAUb_hks27sXwTSCps&h=246a840d&itok=_MTEGE1_",
+   "https://www.montecarlosbm.com/en/wellness/monte-carlo-bay-hotel-resort/lagoon-monte-carlo-bay-hotel-resort",
+   "Official aerial view of Monte-Carlo Bay sand-bottom lagoon and beach access",
+   "Monte-Carlo Société des Bains de Mer official resort photograph")],
+}
 LANDSCAPES={
 "scene-1":("Place du Casino Monte Carlo Monaco architecture",("casino","monaco")),
 "scene-2":("Port Hercule Monaco harbor aerial yachts",("hercule","monaco")),
@@ -207,7 +224,7 @@ def main():
  updated=False
  for item in manifest["hotels"]:
   sources=HOTELS.get(item["propertyKey"],{}).get(item["key"],[])
-  suggestions=[]
+  suggestions=HOTEL_DIRECT.get(item["propertyKey"]+"/"+item["key"],[]).copy()
   for p,words in sources:suggestions+=hotels_from_page(p,words)
   updated|=collect(item,suggestions,sha_used,url_used,visual_used)
  for item in manifest["destinationScenes"]:
