@@ -7,6 +7,7 @@ Human image review, duplication, season, attribution and authenticity are mandat
 """
 from __future__ import annotations
 import hashlib, html, json, re
+from urllib.parse import quote
 from io import BytesIO
 from pathlib import Path
 from urllib.parse import urljoin,urlparse
@@ -37,7 +38,7 @@ HOTELS={
   "view-3":[("https://www.metropole.com/odyssey-pool-by-karl-lagerfeld",["pool","odyssey","terrace","mural"]),("https://www.metropole.com/",["odyssey","pool","guerlain","spa"])],
  },
  "monte-carlo-bay":{
-  "view-1":[("https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort",["lagoon","lagon","pool","garden"]),("https://www.montecarlosbm.com/en/leisure-monaco/monte-carlo-bay-lagoon",["lagoon","sand","pool","lagon"])],
+  "view-1":[("https://www.montecarlosbm.com/en/bar-nightclub-monaco/lhippocampe-bar-lagon",["lagoon","lagon","pool","sand"]),("https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort",["lagoon","lagon","pool","garden"])],
   "view-2":[("https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort/accommodation",["suite","room","bedroom","balcony","sea"])],
   "view-3":[("https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort",["garden","blue","bay","restaurant","marcel"])],
  }}
@@ -144,6 +145,19 @@ def commons_exact(title):
   out.append((40,url,source,title,(author or "Commons author")+" · "+lic))
  return out
 
+DIRECT_WIKIMEDIA={
+  "scene-7":"Japanese garden Monaco (pond and bridge).jpg",
+  "scene-8":"Musée Océanographique de Monaco cliff view.jpg",
+  "scene-9":"Mareterra drone shot in 2024.png",
+}
+def direct_wikimedia(title):
+  filename=title.replace(" ","_")
+  digest=hashlib.md5(filename.encode("utf-8")).hexdigest()
+  encoded=quote(filename,safe="()'-_.")
+  thumb="https://upload.wikimedia.org/wikipedia/commons/thumb/"+digest[0]+"/"+digest[:2]+"/"+encoded+"/1600px-"+encoded
+  link="https://commons.wikimedia.org/wiki/File:"+encoded
+  return [(45,thumb,link,title,"Wikimedia Commons photo · attribution and license to inspect on linked file page")]
+
 def content_hash(img):
  small=ImageOps.grayscale(img).resize((9,8),Image.Resampling.LANCZOS)
  px=list(small.getdata());return "".join("1" if px[y*9+x]>px[y*9+x+1] else "0"
@@ -198,8 +212,10 @@ def main():
   updated|=collect(item,suggestions,sha_used,url_used,visual_used)
  for item in manifest["destinationScenes"]:
   q,terms=LANDSCAPES[item["key"]]
-  direct=commons_exact(COMMONS_EXACT[item["key"]]) if item["key"] in COMMONS_EXACT else []
-  updated|=collect(item,direct+commons(q,terms),sha_used,url_used,visual_used)
+  direct=direct_wikimedia(DIRECT_WIKIMEDIA[item["key"]]) if item["key"] in DIRECT_WIKIMEDIA else []
+  if not direct and item["key"] in COMMONS_EXACT:direct=commons_exact(COMMONS_EXACT[item["key"]])
+  choices=direct or commons(q,terms)
+  updated|=collect(item,choices,sha_used,url_used,visual_used)
  manifest["downloadedHotelCandidates"]=sum(x["status"]=="candidate_needs_visual_review" for x in manifest["hotels"])
  manifest["downloadedDestinationCandidates"]=sum(x["status"]=="candidate_needs_visual_review" for x in manifest["destinationScenes"])
  manifest["visuallyVerified"]=False;manifest["approvedForCommercialPublication"]=False
