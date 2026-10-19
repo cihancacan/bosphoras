@@ -22,6 +22,7 @@ from PIL import Image, ImageOps
 
 ROOT = Path("data/travel/gstaadMediaCandidates.json")
 OUT = Path("public/images/travel/gstaad-premium")
+RUN_DIAGNOSTICS = []
 SESSION = requests.Session()
 SESSION.headers.update({
     "User-Agent": "BosphorasLuxuryStays/2.0 (Gstaad provenance and QA; contact via bosphoras.com)",
@@ -74,6 +75,7 @@ def get(url: str, **kwargs):
         r.raise_for_status()
         return r
     except requests.RequestException as exc:
+        RUN_DIAGNOSTICS.append({"type":"source_error","url":url[:250],"error":str(exc)[:220]})
         print("SOURCE_ERROR", url[:160], str(exc)[:180], flush=True)
         return None
 
@@ -288,6 +290,7 @@ def write_candidate(item, candidates, used_hashes, used_urls):
         used_urls.add(canonical)
         print("CANDIDATE_SAVED", item.get("propertyKey", "destination"), item["key"], source, flush=True)
         return True
+    RUN_DIAGNOSTICS.append({"type":"still_missing","slot":(item.get("propertyKey") or "destination")+"/"+item["key"],"urls_tried":[x[1][:250] for x in candidates[:25]]})
     print("STILL_MISSING", item.get("propertyKey", "destination"), item["key"], flush=True)
     return False
 
@@ -359,6 +362,16 @@ def main():
     data["approvedForCommercialPublication"] = False
     if changed:
         ROOT.write_text(json.dumps(data, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
+    report = Path("docs/travel-gstaad-download-report.json")
+    report.parent.mkdir(exist_ok=True, parents=True)
+    report.write_text(json.dumps({
+      "workflow": "travel-gstaad-media", "scope": "Gstaad authentic assets, no public preview",
+      "hotel_candidates": data["downloadedHotelCandidates"],
+      "landscape_candidates": data["downloadedDestinationCandidates"],
+      "missing": [("destination" if "propertyKey" not in x else x["propertyKey"])+"/"+x["key"]
+                  for x in hotel_items+scene_items if x["status"]=="missing"],
+      "diagnostics": RUN_DIAGNOSTICS[:80]
+    },ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     print("GSTAAD_ASSET_COUNTS",data["downloadedHotelCandidates"],"/12 hotels,",
           data["downloadedDestinationCandidates"],"/9 landscape candidates; all new assets remain hidden")
 
