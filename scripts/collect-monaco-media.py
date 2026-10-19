@@ -59,6 +59,35 @@ HOTEL_DIRECT={
    "Official aerial view of Monte-Carlo Bay sand-bottom lagoon and beach access",
    "Monte-Carlo Société des Bains de Mer official resort photograph")],
 }
+DIRECT_LANDSCAPES={
+ "scene-1":[
+  (100,"https://cdn.generationvoyage.fr/2025/06/Place-du-Casino-Monte-Carlo-1536x1024.jpeg",
+   "https://generationvoyage.fr/visiter-monte-carlo-faire-voir/",
+   "Casino de Monte-Carlo, contemporary sunlit façade and mirrored globe fountain",
+   "Génération Voyage — photograph of Monte-Carlo Casino Square"),
+  (92,"https://d36vnx92dgl2c5.cloudfront.net/uploads/websites/3158/cms/d431221bb711d239752742875d3e6e22.webp",
+   "https://www.lifeproperties.mc/en/contact-us",
+   "Monte-Carlo Casino Square, morning palm-lined pedestrian esplanade",
+   "Life Properties Monaco location photography")],
+ "scene-2":[
+  (100,"https://www.hellomonaco.com/wordpress/wp-content/uploads/2018/07/yacht-show-2017-facebook--monacoyachtshow.jpg",
+   "https://www.hellomonaco.com/news/latest-news/what-s-making-news-in-monaco/",
+   "Port Hercule at the Monaco Yacht Show 2017, aerial panorama of superyachts and waterfront",
+   "HelloMonaco / Monaco Yacht Show event photograph"),
+  (93,"https://www.solamito-properties-real-estate.com/photoquartierbig/2300/1200/55368cbfd4940-le-port.jpg",
+   "https://www.solamito-properties-real-estate.com/",
+   "Port Hercule marina photographed from above, Monaco",
+   "Solamito Monaco real estate destination photography")],
+ "scene-4":[
+  (100,"https://www.revigorate.com/images/turquoise-Plage-du-Larvotto-Monaco.jpg",
+   "https://www.revigorate.com/things-to-do-in-monaco-pt.html",
+   "Larvotto beach with turquoise Mediterranean sea, summer swimmers and coastal promenade",
+   "Revigorate travel photography, Monaco Larvotto"),
+  (95,"https://www.heritageproperties.mc/medias_upload/moxie/Quartiers/Larvotto/DSC05559-Edit.jpg",
+   "https://www.heritageproperties.mc/en/discover-monaco-47",
+   "Larvotto beachfront curving along the Mediterranean with palm-lined walkway",
+   "Heritage Properties Monaco neighbourhood photography")],
+}
 LANDSCAPES={
 "scene-1":("Place du Casino Monte Carlo Monaco architecture",("casino","monaco")),
 "scene-2":("Port Hercule Monaco harbor aerial yachts",("hercule","monaco")),
@@ -230,7 +259,8 @@ def main():
   updated|=collect(item,suggestions,sha_used,url_used,visual_used)
  for item in manifest["destinationScenes"]:
   q,terms=LANDSCAPES[item["key"]]
-  direct=direct_wikimedia(DIRECT_WIKIMEDIA[item["key"]]) if item["key"] in DIRECT_WIKIMEDIA else []
+  direct=DIRECT_LANDSCAPES.get(item["key"],[]).copy()
+  if not direct and item["key"] in DIRECT_WIKIMEDIA:direct=direct_wikimedia(DIRECT_WIKIMEDIA[item["key"]])
   if not direct and item["key"] in COMMONS_EXACT:direct=commons_exact(COMMONS_EXACT[item["key"]])
   choices=direct or commons(q,terms)
   updated|=collect(item,choices,sha_used,url_used,visual_used)
