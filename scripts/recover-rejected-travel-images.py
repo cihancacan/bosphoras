@@ -23,7 +23,16 @@ TASKS=[
  "https://oneandonlybrand.com/asset/oneonly-moonlight-basin-sky-lodge-5/",
  "https://www.oneandonlyresorts.com/moonlight-basin/stays/rooms/moonlight-room"],
  ["oneandonlybrand.com","oneandonlyresorts.com","kerznercommunications.com"],
- ["moonlight","suite","room","landing","lodge"],["mockup","mock_up","render","rendering","concept","floorplan","logo","icon"])]
+ ["moonlight","suite","room","landing","lodge"],["mockup","mock_up","render","rendering","concept","floorplan","logo","icon"]) ,("val-disere","valDisere","le-k2-chogori","view-3",[
+ "https://www.valdisere.com/preparer-mon-sejour/hebergements/hotels/k2-chogori-val-disere-fr-4194656/",
+ "https://lek2chogori.com/en/staying-here/rooms.html"],["valdisere.com","lek2chogori.com"],
+ ["chogori","chambre supérieure","suite chogori","lobby"],["bottleneck","fondue","dish","meal","food","plate","logo","icon"]),
+ ("verbier","verbier","experimental-chalet","view-1",[
+ "https://www.verbier.com/hotels/experimental-chalet",
+ "https://www.experimentalgroup.com/verbier/experimental-chalet-verbier/gallery"],
+ ["verbier.com","experimentalgroup.com","experimentalchalet.com"],
+ ["experimental","chalet","bedroom","room"],["train","logo","icon","food","restaurant","cocktail","bar","paysage générique"])
+]
 def scan(page,hosts,positive,negative):
  try:
   r=S.get(page,timeout=24);r.raise_for_status()
@@ -41,7 +50,8 @@ def scan(page,hosts,positive,negative):
    official_host=any(host==h or host.endswith("."+h) for h in hosts)
    exact_laisinant=("laisinant" in positive and any(k in caption.lower() for k in ("laisinant","female skier walking","small hamlet")))
    exact_moonlight=("moonlight" in positive and "moonlight basin" in (url+" "+caption).lower())
-   if not url.startswith("https://") or not (official_host or exact_laisinant or exact_moonlight):continue
+   exact_named_hotel=(("chogori" in positive and "chogori" in caption.lower()) or ("experimental" in positive and "experimental" in caption.lower() and "chalet" in caption.lower()))
+   if not url.startswith("https://") or not (official_host or exact_laisinant or exact_moonlight or exact_named_hotel):continue
    if not re.search(r"\.(jpe?g|webp|png|avif)$",urlparse(url).path,re.I):continue
    content=(url+" "+caption).lower()
    if any(x in content for x in negative):continue
