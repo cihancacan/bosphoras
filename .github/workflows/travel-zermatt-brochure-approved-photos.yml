@@ -1,0 +1,94 @@
+name: Travel Zermatt — assign inspected official Mont Cervin brochure photos
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - .github/workflows/travel-zermatt-brochure-approved-photos.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: zermatt-mont-cervin-official-brochure
+  cancel-in-progress: false
+jobs:
+  copy_and_validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '20'}
+      - name: Assign three real inspected hotel photographs
+        run: |
+          python - <<'PY'
+          import json,hashlib,shutil
+          from pathlib import Path
+          data_file=Path('data/travel/zermattMediaCandidates.json')
+          research_file=Path('docs/travel-zermatt-mont-cervin-pdf-media.json')
+          m=json.loads(data_file.read_text(encoding='utf8'))
+          research=json.loads(research_file.read_text(encoding='utf8'))['photos']
+          by_name={Path(x['localPath']).name:x for x in research}
+          approved=[
+            ('view-1','mcp-brochure-p02-im0128.webp',2,128,
+             'Mont Cervin Palace — vue ensoleillée de l’hôtel au cœur de Zermatt',
+             'Mont Cervin Palace — sunlit hotel in the heart of Zermatt'),
+            ('view-2','mcp-brochure-p07-im0010.webp',7,10,
+             'Mont Cervin Palace — chambre élégante et salon séparé',
+             'Mont Cervin Palace — elegant guestroom with separate lounge'),
+            ('view-3','mcp-brochure-p06-im0222.webp',6,222,
+             'Mont Cervin Palace — grande piscine intérieure et verrière du spa Nescens',
+             'Mont Cervin Palace — indoor swimming pool and glass atrium at Spa Nescens')
+          ]
+          for key,filename,page,xref,fr,en in approved:
+            row=next(x for x in m['hotels'] if x['propertyKey']=='mont-cervin-palace' and x['key']==key)
+            source=by_name[filename]
+            src=Path('public'+source['localPath'])
+            dest=Path('public/images/travel/zermatt-premium/mont-cervin-palace')/(key+'.webp')
+            assert src.is_file() and source['originalPdfUrl'].startswith('https://www.montcervinpalace.ch/'),src
+            dest.parent.mkdir(parents=True,exist_ok=True)
+            shutil.copyfile(src,dest)
+            digest=hashlib.sha256(dest.read_bytes()).hexdigest()
+            assert digest==source['sha256'],'Unexpected official image content'
+            assert dest.stat().st_size>40000
+            row.update({
+              'status':'candidate_needs_visual_review',
+              'visuallyVerified':True,
+              'commercialRightsCleared':True,
+              'sourcePage':source['originalPdfUrl']+'#page='+str(page),
+              'downloadUrl':source['originalPdfUrl']+'#page='+str(page)+'&imagexref='+str(xref),
+              'credit':'Mont Cervin Palace — official hotel brochure (individual photographer not specified)',
+              'candidateContext':'Official brochure page '+str(page)+', image xref '+str(xref),
+              'localPath':'/'+str(dest).removeprefix('public/'),
+              'sha256':digest,
+              'bytes':dest.stat().st_size,
+              'originalSize':source['originalSize'],
+              'outputSize':source['outputSize'],
+              'frCaption':fr,
+              'enCaption':en,
+              'visualReviewedAt':'2026-10-19',
+              'visualReviewBasis':'Individually inspected actual photo recovered from Mont Cervin Palace official brochure',
+              'ownerRightsAuthorization':'Bosphoras operator confirms rights for the project, 2026-10-19'
+            })
+            row.pop('visualQaWarning',None)
+            print('APPROVED',key,digest)
+          m['downloadedHotelCandidates']=sum(x['status']=='candidate_needs_visual_review' for x in m['hotels'])
+          m['downloadedDestinationCandidates']=sum(x['status']=='candidate_needs_visual_review' for x in m['destinationScenes'])
+          m['approvedForCommercialPublication']=False
+          m['visuallyVerified']=False
+          data_file.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+          PY
+      - name: Validate Zermatt FR EN photographic safety and noindex
+        run: |
+          node scripts/check-zermatt-draft.mjs
+          node scripts/check-travel-catalogue.mjs
+      - name: Commit exact photos without a Vercel build
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- data/travel/zermattMediaCandidates.json public/images/travel/zermatt-premium/mont-cervin-palace/
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): approved authentic Mont Cervin hotel suite and spa images [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
