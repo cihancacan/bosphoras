@@ -3,8 +3,8 @@
   "generatedAt": "2026-10-19",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 4,
-  "downloadedDestinationCandidates": 4,
+  "downloadedHotelCandidates": 5,
+  "downloadedDestinationCandidates": 5,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "ownerRightsAuthorization": "Bosphoras operator authorizes appropriate photos for this project, 19 Oct 2026. Keep exact photographic source and credits; verify image identity and permitted reuse per file.",
@@ -143,19 +143,32 @@
       "propertyKey": "la-villa-cap-ferrat",
       "key": "view-2",
       "slotIntent": "sea-facing terrace bedroom",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://villacapferrat.fr/"
       ],
       "sourcePage": "https://villacapferrat.fr/en/rooms/",
-      "candidateContext": "    ",
-      "credit": "Official hotel photo",
+      "candidateContext": "Official CMS image matched by source context",
+      "credit": "Official hotel CMS",
       "rejectedSource": "https://villacapferrat.fr/wp-content/uploads/2024/12/2025-junior-suite-3.jpg",
       "rejectedCandidateContext": "    ",
       "ownerRightsAuthorization": "Bosphoras operator confirmed project photo use rights 2026-10-19",
-      "visualQaWarning": "Confirmed hotel room, but yellow indoor lighting, close-up bed and no distinctive premium composition. Replace with a bright sea-facing terrace suite."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/la-villa-cap-ferrat/view-2.webp",
+      "downloadUrl": "https://villacapferrat.fr/wp-content/uploads/2024/12/2025-junior-suite-2.jpg",
+      "sha256": "1b2d38a3f0564e555bb0cb4cd1a39978cdb19492f6199755285181496b3a4e85",
+      "dhash": "1100000111100000101000000110011011001000000110000011011010010110",
+      "bytes": 164302,
+      "originalSize": [
+        1984,
+        1170
+      ],
+      "outputSize": [
+        1800,
+        1061
+      ]
     },
     {
       "property": "La Villa Cap Ferrat Hôtel & Spa",
@@ -288,7 +301,7 @@
       "key": "scene-3",
       "label": "Paloma Beach and Pointe Saint-Hospice",
       "query": "Paloma Beach Saint Jean Cap Ferrat",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -296,12 +309,25 @@
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/20211209_123405_Plage_de_la_Paloma.jpg/1920px-20211209_123405_Plage_de_la_Paloma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:20211209_123405_Plage_de_la_Paloma.jpg",
-      "candidateContext": "File:20211209 123405 Plage de la Paloma.jpg",
-      "credit": "Horizon06 · CC BY-SA 4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Champion_HV_&_Paloma_beach_-_panoramio.jpg",
+      "candidateContext": "File:Champion HV & Paloma beach - panoramio.jpg",
+      "credit": "Павлуша · CC BY-SA 3.0",
       "ownerRightsAuthorization": "Bosphoras operator confirmed project photo use rights 2026-10-19",
       "rejectedCandidateContext": "File:20211209 123405 Plage de la Paloma.jpg",
-      "visualQaWarning": "The overcast Paloma cove photograph is geographically correct but too flat and grey for the luminous Riviera photo standard."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-3.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Champion_HV_%26_Paloma_beach_-_panoramio.jpg/1920px-Champion_HV_%26_Paloma_beach_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha256": "90bcbdc6a894c6b52704075119c74a875965d372ef2994a7e00384809929cd6f",
+      "dhash": "0001011100001111000000101001001100110111011111110000111100001011",
+      "bytes": 407466,
+      "originalSize": [
+        1920,
+        1277
+      ],
+      "outputSize": [
+        1800,
+        1197
+      ]
     },
     {
       "key": "scene-4",
