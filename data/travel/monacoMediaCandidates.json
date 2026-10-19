@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 1,
+  "downloadedDestinationCandidates": 8,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "ownerRightsAuthorization": "Bosphoras operator confirmed rights to use suitable project photos on 2026-10-19. Subject identity, attribution and image-specific publication review still required.",
@@ -421,7 +421,7 @@
       "key": "scene-1",
       "label": "Casino Square and Hôtel de Paris façade",
       "query": "Monaco Casino Square promenade",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -429,19 +429,32 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Photo lacks a clear bright premium portrayal of the requested sector (crowds, construction cranes, poor light, or generic tower block).",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Place_du_Casino_1.jpg",
-      "candidateContext": "Monaco Place du Casino 1.jpg",
-      "credit": "Zairon · CC BY-SA 4.0",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Casino_de_Monte-Carlo,_Monaco_(53968726718).jpg",
+      "candidateContext": "Casino de Monte-Carlo, Monaco (53968726718).jpg",
+      "credit": "Charles from Port Chester, New York · CC BY 2.0",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Monaco_Place_du_Casino_1.jpg/1920px-Monaco_Place_du_Casino_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedCandidateContext": "File:Liebherr LTM LTM 1300-6.2 (52993821916).jpg",
-      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Place_du_Casino_1.jpg"
+      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Place_du_Casino_1.jpg",
+      "localPath": "/images/travel/monaco-premium/destination/scene-1.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Casino_de_Monte-Carlo%2C_Monaco_%2853968726718%29.jpg/1920px-Casino_de_Monte-Carlo%2C_Monaco_%2853968726718%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha256": "a701628eb221d1e90879594e14d82e616dcfb037ced0620b6e61ea9183b78114",
+      "dhash": "1100000000100010101111011001110111000101011010010100011011000111",
+      "bytes": 450350,
+      "originalSize": [
+        1920,
+        1138
+      ],
+      "outputSize": [
+        1800,
+        1067
+      ]
     },
     {
       "key": "scene-2",
       "label": "Port Hercule yachts and bay",
       "query": "Monaco Port Hercule yachts harbour panorama",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -449,12 +462,25 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Photo lacks a clear bright premium portrayal of the requested sector (crowds, construction cranes, poor light, or generic tower block).",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Port_Hercule_Vue_panoramique_1.jpg",
-      "candidateContext": "Monaco Port Hercule Vue panoramique 1.jpg",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Rocher_de_Monaco_Vue_sur_le_Port_Hercule_30.jpg",
+      "candidateContext": "Monaco Rocher de Monaco Vue sur le Port Hercule 30.jpg",
       "credit": "Zairon · CC BY-SA 4.0",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Monaco_Port_Hercule_Vue_panoramique_1.jpg/1920px-Monaco_Port_Hercule_Vue_panoramique_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Port_Hercule_Vue_panoramique_1.jpg"
+      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Port_Hercule_Vue_panoramique_1.jpg",
+      "localPath": "/images/travel/monaco-premium/destination/scene-2.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Monaco_Rocher_de_Monaco_Vue_sur_le_Port_Hercule_30.jpg/1920px-Monaco_Rocher_de_Monaco_Vue_sur_le_Port_Hercule_30.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha256": "0fe7d519ea1dc53292477571845d17a1d37cdcf041b37f4fc1383098dfd088c6",
+      "dhash": "1101111100010000110010100100111101001101110011011011110111110011",
+      "bytes": 738910,
+      "originalSize": [
+        1920,
+        1420
+      ],
+      "outputSize": [
+        1623,
+        1200
+      ]
     },
     {
       "key": "scene-3",
@@ -493,7 +519,7 @@
       "key": "scene-4",
       "label": "Larvotto beach waterfront",
       "query": "Monaco Larvotto beach promenade",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -501,18 +527,31 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Photo lacks a clear bright premium portrayal of the requested sector (crowds, construction cranes, poor light, or generic tower block).",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Larvotto_beach_drone_shot_in_2024.png",
-      "candidateContext": "Larvotto beach drone shot in 2024.png",
-      "credit": "Joeys Journeys · CC BY 3.0",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco03.JPG",
+      "candidateContext": "Monaco03.JPG",
+      "credit": "Laslovarga · CC BY-SA 3.0",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Larvotto_beach_drone_shot_in_2024.png/1920px-Larvotto_beach_drone_shot_in_2024.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Larvotto_beach_drone_shot_in_2024.png"
+      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Larvotto_beach_drone_shot_in_2024.png",
+      "localPath": "/images/travel/monaco-premium/destination/scene-4.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Monaco03.JPG/1920px-Monaco03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha256": "dfbc0536ca4d02d93283d981c1c3345c85c0dea413e9f4ad35d63b3799512f4f",
+      "dhash": "0100110100100110000101110000010100010101010001010100110100010101",
+      "bytes": 373770,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-5",
       "label": "Fontvieille harbour panorama",
       "query": "Monaco Port de Fontvieille marina",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -520,12 +559,25 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Photo lacks a clear bright premium portrayal of the requested sector (crowds, construction cranes, poor light, or generic tower block).",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Port_de_Fontvieille_02.jpg",
-      "candidateContext": "Monaco Port de Fontvieille 02.jpg",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Port_de_Fontvieille_25.jpg",
+      "candidateContext": "Monaco Port de Fontvieille 25.jpg",
       "credit": "Zairon · CC BY-SA 4.0",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Monaco_Port_de_Fontvieille_02.jpg/1920px-Monaco_Port_de_Fontvieille_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Port_de_Fontvieille_02.jpg"
+      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Port_de_Fontvieille_02.jpg",
+      "localPath": "/images/travel/monaco-premium/destination/scene-5.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Monaco_Port_de_Fontvieille_25.jpg/1920px-Monaco_Port_de_Fontvieille_25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha256": "ebe417bd409b63b268a25d573d97572960bcf7e506d2d65176e69b437f5ff125",
+      "dhash": "1001000010000100001000000100100011001100010111001010110000011110",
+      "bytes": 511562,
+      "originalSize": [
+        1920,
+        1438
+      ],
+      "outputSize": [
+        1602,
+        1200
+      ]
     },
     {
       "key": "scene-6",
@@ -544,7 +596,7 @@
       "key": "scene-7",
       "label": "Japanese Garden Monaco",
       "query": "Monaco Jardin Japonais scenic",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -552,38 +604,85 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Dark cropped gravel garden with information sign, not a distinctive polished Japanese Garden view.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Japanese_garden_Monaco2.jpg",
-      "candidateContext": "File:Japanese garden Monaco2.jpg",
-      "credit": "Tangopaso · Public domain",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Japanese_garden_Monaco_(pond_and_bridge).jpg",
+      "candidateContext": "Japanese garden Monaco (pond and bridge).jpg",
+      "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Japanese_garden_Monaco2.jpg/1920px-Japanese_garden_Monaco2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedCandidateContext": "File:Japanese garden Monaco2.jpg"
+      "rejectedCandidateContext": "File:Japanese garden Monaco2.jpg",
+      "localPath": "/images/travel/monaco-premium/destination/scene-7.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Japanese_garden_Monaco_(pond_and_bridge).jpg/1920px-Japanese_garden_Monaco_(pond_and_bridge).jpg",
+      "sha256": "431ce8a1716010e47c414faac644f5e089a85ee25681b77ef6376e8a2fc75f79",
+      "dhash": "0000100100000000010000110001011101011101001011000010110100101101",
+      "bytes": 558572,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-8",
       "label": "Monaco Oceanographic Museum from sea",
       "query": "Musee oceanographique Monaco cliffs panorama",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.visitmonaco.com/"
       ],
-      "rights": "Operator authorization noted; retain author and license evidence and review each image manually"
+      "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/monaco-premium/destination/scene-8.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Mus%C3%A9e_Oc%C3%A9anographique_de_Monaco_cliff_view.jpg/1920px-Mus%C3%A9e_Oc%C3%A9anographique_de_Monaco_cliff_view.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Oc%C3%A9anographique_de_Monaco_cliff_view.jpg",
+      "candidateContext": "Musée Océanographique de Monaco cliff view.jpg",
+      "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
+      "sha256": "dc85f89ae21dd2ccb8b4bd1ee590ddc283a451241a4880228ec153b494ca8c35",
+      "dhash": "0011100100110010011001001110100011101010110100101001011000010010",
+      "bytes": 611854,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     },
     {
       "key": "scene-9",
       "label": "Mareterra seaside waterfront gardens",
       "query": "Monaco Mareterra waterfront promenade",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.visitmonaco.com/"
       ],
-      "rights": "Operator authorization noted; retain author and license evidence and review each image manually"
+      "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/monaco-premium/destination/scene-9.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Mareterra_drone_shot_in_2024.png/1920px-Mareterra_drone_shot_in_2024.png",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mareterra_drone_shot_in_2024.png",
+      "candidateContext": "Mareterra drone shot in 2024.png",
+      "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
+      "sha256": "73a723c8ba402c98083b77d68b6a948abb01204d442833e9a07e3ef9e2d26b42",
+      "dhash": "0000001100000111000111101101100000101101001011100001011100000100",
+      "bytes": 311366,
+      "originalSize": [
+        1920,
+        1536
+      ],
+      "outputSize": [
+        1500,
+        1200
+      ]
     }
   ]
 }
