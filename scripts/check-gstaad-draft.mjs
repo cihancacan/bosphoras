@@ -69,5 +69,7 @@ console.log("Gstaad draft: 4 hotels, 5 sectors, FR+EN, 7 FAQ/language: PASS");
 const approved=present.filter(x=>x.visuallyVerified===true);
 console.log("Gstaad approved and sourced image counts:",approved.length,"/21; hotel:",media.hotels.filter(x=>x.visuallyVerified).length,"/12; landscape:",media.destinationScenes.filter(x=>x.visuallyVerified).length,"/9");
 if(approved.length!==21)console.warn("This Gstaad guide remains internally staged with short galleries; photos still missing:",21-approved.length);
-if(duplicates.length) console.warn("Duplicate original image URLs require replacement:",[...new Set(duplicates)]);
+assert.equal(duplicates.length,0,"Duplicate candidate source images prohibited: "+[...new Set(duplicates)].join(", "));
+const realHashes=present.map(x=>x.sha256).filter(Boolean);
+assert.equal(new Set(realHashes).size,realHashes.length,"Repeated WebP hash among Gstaad image candidates");
 console.log("Gstaad FR/EN internal pages registered, indexation disabled by empty approvedDestinationSlugs, production not promoted.");
