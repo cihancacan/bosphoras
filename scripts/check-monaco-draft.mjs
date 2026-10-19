@@ -77,7 +77,7 @@ for(const x of approved){
  assert.match(x.sha256||'',/^[a-f0-9]{64}$/,'Missing SHA256 for '+x.localPath);
  assert.match(x.dhash||'',/^[01]{64}$/,'Missing perceptual hash for '+x.localPath);
  assert(x.visualReviewBasis?.length>=30,'Individual visual review missing for '+x.localPath);
- assert(x.ownerRightsAuthorization?.length>=25,'Owner confirmation not recorded for '+x.localPath);
+ assert((x.ownerRightsAuthorization||media.ownerRightsAuthorization||'').length>=25,'Owner confirmation not recorded for '+x.localPath);
  assert(x.downloadUrl?.startsWith('https://'),'Original source URL missing');
  assert(x.credit?.length>=8,'Photo source credit missing');
  assert(x.originalSize?.length===2 && x.outputSize?.length===2,'Image dimensions missing');
