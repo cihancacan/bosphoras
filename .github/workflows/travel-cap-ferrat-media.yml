@@ -1,4 +1,5 @@
 name: Travel Cap Ferrat — authentic hotel and peninsula images
+# Re-run after explicit isolation of Monaco direct-source tables and quality review.
 on:
   push:
     branches:
