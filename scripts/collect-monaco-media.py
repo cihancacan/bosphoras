@@ -54,11 +54,11 @@ LANDSCAPES={
 "scene-9":("Mareterra Monaco new waterfront park 2025",("mareterra",))
 }
 COMMONS_EXACT={
- "scene-1":"Monaco Place du Casino 1.jpg",
- "scene-2":"Monaco Port Hercule Vue panoramique 1.jpg",
+ "scene-1":"Casino de Monte-Carlo, Monaco (53968726718).jpg",
+ "scene-2":"Monaco Rocher de Monaco Vue sur le Port Hercule 30.jpg",
  "scene-3":"Princely Palace of Monaco.JPG",
- "scene-4":"Larvotto beach drone shot in 2024.png",
- "scene-5":"Monaco Port de Fontvieille 02.jpg",
+ "scene-4":"Monaco03.JPG",
+ "scene-5":"Monaco Port de Fontvieille 25.jpg",
  "scene-7":"Japanese garden Monaco (pond and bridge).jpg",
  "scene-8":"Musée Océanographique de Monaco cliff view.jpg",
  "scene-9":"Mareterra drone shot in 2024.png"
@@ -154,7 +154,7 @@ def direct_wikimedia(title):
   filename=title.replace(" ","_")
   digest=hashlib.md5(filename.encode("utf-8")).hexdigest()
   encoded=quote(filename,safe="()'-_.")
-  thumb="https://upload.wikimedia.org/wikipedia/commons/thumb/"+digest[0]+"/"+digest[:2]+"/"+encoded+"/1600px-"+encoded
+  thumb="https://upload.wikimedia.org/wikipedia/commons/thumb/"+digest[0]+"/"+digest[:2]+"/"+encoded+"/1920px-"+encoded
   link="https://commons.wikimedia.org/wiki/File:"+encoded
   return [(45,thumb,link,title,"Wikimedia Commons photo · attribution and license to inspect on linked file page")]
 
