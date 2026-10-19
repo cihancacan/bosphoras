@@ -283,12 +283,11 @@
       "key": "view-3",
       "slotIntent": "sunny poolside breakfast terrace (replace underlit spa)",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://villacapferrat.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "rejectedSource": "https://villacapferrat.fr/wp-content/uploads/2019/12/spa.jpg",
       "rejectedCandidateContext": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/la-villa-cap-ferrat/view-3.webp",
@@ -306,7 +305,12 @@
       "outputSize": [
         1280,
         853
-      ]
+      ],
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Manually inspected saved 1280x853 image: genuine La Villa Cap Ferrat breakfast/poolside terrace, sunny Mediterranean water beyond; verified actual hotel property gallery. Different aspect and subject from La Villa exterior and guest room.",
+      "frCaption": "La Villa Cap Ferrat — petit-déjeuner en terrasse face à la piscine et à la mer Méditerranée",
+      "enCaption": "La Villa Cap Ferrat — sunlit breakfast terrace beside the pool overlooking the Mediterranean",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photograph permission, 2026-10-19; retain source attribution and obtain any required underlying licence."
     },
     {
       "property": "Hôtel Brise Marine",
@@ -699,7 +703,7 @@
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REPLACE: correct bay scene but midday tourist loungers and glare are not premium enough. Seeking a precisely geolocated sunlit landscape with hotel named correctly.",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/085F_Beaulieu-sur-Mer_%2815885396822%29.jpg/1920px-085F_Beaulieu-sur-Mer_%2815885396822%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedCandidateContext": "REJECTED HISTORIC: actual source is an archival 1978 photograph, not a contemporary premium Baie des Fourmis view. Seek authentic later photograph.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-9.webp",

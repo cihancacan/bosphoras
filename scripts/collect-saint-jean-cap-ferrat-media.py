@@ -129,7 +129,15 @@ lib.HOTEL_DIRECT["la-villa-cap-ferrat/view-3"]=[
   "Sunlit real La Villa Cap Ferrat breakfast terrace overlooking its swimming pool and the sea",
   "Booking.com · verified property gallery")]
 # Alternate true Baie des Fourmis originals, never a generic tourism photo.
-lib.DIRECT_LANDSCAPES["scene-9"]=lib.direct_wikimedia("Baie des fourmis.jpg")
+# Exact Baie des Fourmis coast from Nice Cote d'Azur tourism board's geolocated
+# Hotel Delcloy Saint-Jean-Cap-Ferrat photo: one area landscape, never a selected hotel.
+# Source itself confirms Hotel Delcloy overlooks Baie des Fourmis.
+lib.DIRECT_LANDSCAPES["scene-9"]=[
+ (100,"https://cdn.iris-etourism.io/uploads/nice/2f2/226-121-38238690.webp",
+  "https://www.explorenicecotedazur.com/hotel/hotel-delcloy/",
+  "Sunlit aerial Baie des Fourmis coastal turquoise water, Delcloy hotel landscaped seafront on Saint-Jean-Cap-Ferrat",
+  "Office de tourisme Nice Cote d'Azur · Baie des Fourmis / Delcloy aerial photograph")
+]
 lib.HOTEL_DIRECT["royal-riviera/view-1"]=[
  (100,"https://www.royal-riviera.com/wp-content/uploads/2022/01/DSC07159-HDR.jpg",
   "https://www.royal-riviera.com/en/the-royal-riviera/the-royal-riviera-atmosphere/",
