@@ -54,18 +54,19 @@ BELLEVUE = [
   ["spa", "suite", "pool", "bedroom", "room"], ["restaurant", "tobias.kaser_photo.5852"]),
 ]
 SCENES = {
-    "scene-1": ("Gstaad pedestrian promenade", ("gstaad", "promenade")),
-    "scene-2": ("Gstaad Palace village panorama", ("gstaad", "palace")),
-    "scene-3": ("Saanen village old town Switzerland", ("saanen",)),
-    "scene-4": ("Eggli Gstaad mountain panorama", ("eggli",)),
+    "scene-1": ("Gstaad promenade", ("gstaad",)),
+    "scene-2": ("Gstaad village panorama", ("gstaad",)),
+    "scene-3": ("Saanen village Switzerland", ("saanen",)),
+    "scene-4": ("Eggli Gstaad Alps", ("eggli",)),
     "scene-5": ("Wispile Gstaad mountain", ("wispile",)),
-    "scene-6": ("Wasserngrat Gstaad mountain", ("wasserngrat",)),
+    "scene-6": ("Wasserngrat Gstaad", ("wasserngrat",)),
     "scene-7": ("Schönried village Saanen", ("schönried",)),
-    "scene-8": ("Saanenmöser Swiss Alps", ("saanenmöser",)),
-    "scene-9": ("Lauenensee Lauenen landscape", ("lauenensee",)),
+    "scene-8": ("Saanenmöser Gstaad", ("saanenmöser",)),
+    "scene-9": ("Lauenensee Switzerland", ("lauenensee",)),
 }
 EXCLUDE = ("portrait", "selfie", "advert", "poster", "plan", "map", "logo",
-           "chef", "politician", "airport", "advertisement", "railway map")
+           "chef", "lindner", "politician", "airport", "advertisement",
+           "train", "railway", "bahn", "locomotive", "station", "interview")
 
 def get(url: str, **kwargs):
     try:
@@ -144,6 +145,20 @@ def images_from_commons(query: str, required: tuple[str, ...]):
     return sorted(result, key=lambda x: (-x[0], x[2]))
 
 # Exact hotel-image assets linked from Ultima Gstaad official galleries:
+PALACE_EXACT = {
+ "view-1": (
+  "https://resc.deskline.net/images/GRI/1/a2291c76-f5c2-4d8a-a94f-2bc06e9ad6b2/99/image.jpg",
+  "https://www.gstaad.ch/en/plan-book/booking/accommodation/detail/gstaad-palace-7566ljvf",
+  "Gstaad Palace, sunny garden exterior from the official regional listing"),
+ "view-2": (
+  "https://cms.inspirato.com/ImageGen.ashx?image=%2Fmedia%2F9461967%2Fcopyright-gstaad-palace_stefano-scata_deluxe-junior-suite-mountain-view_n-18_549489_300dpi_rgb_cut-as-per-as.jpg&width=1440",
+  "https://www.inspirato.com/destinations/gstaad-switzerland/residences/gstaad-deluxe-junior-suite-mountain-view/",
+  "Gstaad Palace Deluxe Junior Suite; publisher identifies hotel photo credit"),
+ "view-3": (
+  "https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?height=900&mode=crop&quality=90&scale=downscaleonly&width=1440",
+  "https://www.oxfordski.com/luxury-ski-chalets-hotels/switzerland/gstaad/gstaad-palace/",
+  "Gstaad Palace indoor swimming pool in winter, source credits hotel"),
+}
 ULTIMA_EXACT = {
  "view-1": ("https://www.ultimacollection.com/media/feupntnc/ultima-collection-gstaad-exterior-09.jpg?width=1536",
              "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/gallery",
@@ -211,12 +226,18 @@ def main():
     hotel_items = data["hotels"]
     scene_items = data["destinationScenes"]
     used_hashes = {x.get("sha256") for x in hotel_items + scene_items if x.get("sha256")}
-    used_urls = {x.get("downloadUrl", "").split("?")[0].replace("https://thumb.wikimedia.org",
-        "https://upload.wikimedia.org") for x in hotel_items + scene_items if x.get("downloadUrl")}
+    used_urls = {url.split("?")[0].replace("https://thumb.wikimedia.org", "https://upload.wikimedia.org")
+        for x in hotel_items + scene_items
+        for url in (x.get("downloadUrl"), x.get("rejectedSource"))
+        if isinstance(url,str) and url.startswith("https://")}
     changed = False
     for key, pages, good, bad in PALACE:
         item = next(x for x in hotel_items if x.get("propertyKey") == "gstaad-palace" and x["key"] == key)
         hits = []
+        exact = PALACE_EXACT.get(key)
+        if exact:
+            url, source, caption = exact
+            hits.append((30, url, source, caption, "Exact Gstaad Palace hotel image; publisher attribution"))
         for page in pages:
             hits.extend(images_from_official(page, good, bad))
         changed |= write_candidate(item, hits, used_hashes, used_urls)
