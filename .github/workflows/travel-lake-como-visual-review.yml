@@ -1,4 +1,4 @@
-name: Travel Lake Como — inspect final 3 real photographic candidates
+name: Travel Lake Como — review new actual hero and Villa Carlotta exterior
 on:
   push:
     branches: [feature/luxury-travel-seo-destinations-20261012]
