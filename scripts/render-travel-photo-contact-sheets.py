@@ -19,6 +19,7 @@ REGISTRY=[
  ("verbier","verbier","Verbier"),
  ("saintJeanCapFerrat","saint-jean-cap-ferrat","Saint-Jean-Cap-Ferrat"),
  ("capDAntibes","cap-dantibes","Cap d’Antibes"),
+ ("lakeComo","lake-como","Lake Como"),
 ]
 OUT=Path("docs/travel-photo-contact-sheets");OUT.mkdir(parents=True,exist_ok=True)
 try:
