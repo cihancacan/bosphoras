@@ -3,8 +3,8 @@
   "generatedAt": "2026-10-19",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 5,
-  "downloadedDestinationCandidates": 5,
+  "downloadedHotelCandidates": 4,
+  "downloadedDestinationCandidates": 4,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "ownerRightsAuthorization": "Bosphoras operator authorizes appropriate photos for this project, 19 Oct 2026. Keep exact photographic source and credits; verify image identity and permitted reuse per file.",
@@ -143,35 +143,19 @@
       "propertyKey": "la-villa-cap-ferrat",
       "key": "view-2",
       "slotIntent": "sea-facing terrace bedroom",
-      "status": "candidate_needs_visual_review",
-      "visuallyVerified": true,
-      "commercialRightsCleared": true,
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
       "sourcePages": [
         "https://villacapferrat.fr/"
       ],
       "sourcePage": "https://villacapferrat.fr/en/rooms/",
       "candidateContext": "    ",
       "credit": "Official hotel photo",
-      "rejectedSource": "https://villacapferrat.fr/wp-content/uploads/2024/12/2025-junior-suite-2.jpg",
-      "rejectedCandidateContext": "Official CMS image matched by source context",
-      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/la-villa-cap-ferrat/view-2.webp",
-      "downloadUrl": "https://villacapferrat.fr/wp-content/uploads/2024/12/2025-junior-suite-3.jpg",
-      "sha256": "0e6f00ac22340047d52a33c9ad82982f4398f9208fd8c1546ab445cb59c42833",
-      "dhash": "0010010001011001011110011100100100001110001101101100101100000111",
-      "bytes": 227078,
-      "originalSize": [
-        1984,
-        1306
-      ],
-      "outputSize": [
-        1800,
-        1185
-      ],
-      "frCaption": "La Villa Cap Ferrat — chambre double contemporaine",
-      "enCaption": "La Villa Cap Ferrat — contemporary double bedroom",
+      "rejectedSource": "https://villacapferrat.fr/wp-content/uploads/2024/12/2025-junior-suite-3.jpg",
+      "rejectedCandidateContext": "    ",
       "ownerRightsAuthorization": "Bosphoras operator confirmed project photo use rights 2026-10-19",
-      "visualReviewBasis": "Actual saved image individually inspected for property/location identity, variety, daylight and premium framing",
-      "visualReviewedAt": "2026-10-19"
+      "visualQaWarning": "Confirmed hotel room, but yellow indoor lighting, close-up bed and no distinctive premium composition. Replace with a bright sea-facing terrace suite."
     },
     {
       "property": "La Villa Cap Ferrat Hôtel & Spa",
@@ -304,35 +288,20 @@
       "key": "scene-3",
       "label": "Paloma Beach and Pointe Saint-Hospice",
       "query": "Paloma Beach Saint Jean Cap Ferrat",
-      "status": "candidate_needs_visual_review",
-      "visuallyVerified": true,
-      "commercialRightsCleared": true,
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Princely_Palace_of_Monaco.JPG/1920px-Princely_Palace_of_Monaco.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-3.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/20211209_123405_Plage_de_la_Paloma.jpg/1920px-20211209_123405_Plage_de_la_Paloma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/20211209_123405_Plage_de_la_Paloma.jpg/1920px-20211209_123405_Plage_de_la_Paloma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:20211209_123405_Plage_de_la_Paloma.jpg",
       "candidateContext": "File:20211209 123405 Plage de la Paloma.jpg",
       "credit": "Horizon06 · CC BY-SA 4.0",
-      "sha256": "39584939316cac8b0803a9453bcd47ebd094d744c172db5c03cdf4102feabc63",
-      "dhash": "0101110101010101011100111100101100110111000011111010101100101010",
-      "bytes": 677892,
-      "originalSize": [
-        1920,
-        910
-      ],
-      "outputSize": [
-        1800,
-        853
-      ],
-      "frCaption": "Plage de Paloma — crique de la pointe Saint-Hospice parmi les pins",
-      "enCaption": "Paloma Beach — sheltered cove at Saint-Hospice amid pine trees",
       "ownerRightsAuthorization": "Bosphoras operator confirmed project photo use rights 2026-10-19",
-      "visualReviewBasis": "Actual saved image individually inspected for property/location identity, variety, daylight and premium framing",
-      "visualReviewedAt": "2026-10-19"
+      "rejectedCandidateContext": "File:20211209 123405 Plage de la Paloma.jpg",
+      "visualQaWarning": "The overcast Paloma cove photograph is geographically correct but too flat and grey for the luminous Riviera photo standard."
     },
     {
       "key": "scene-4",
