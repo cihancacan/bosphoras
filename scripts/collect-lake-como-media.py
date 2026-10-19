@@ -171,8 +171,21 @@ lib.HOTEL_DIRECT["passalacqua/view-1"]=[
   "Passalacqua real cream villa and awnings in daylit grounds by Moltrasio",
   "South China Morning Post · exact Passalacqua hotel photo")
 ]
-lib.DIRECT_LANDSCAPES["scene-1"]=lib.direct_wikimedia("Panorama Lago di Como.jpg")+lib.direct_wikimedia("Lago di Como panorama.jpg")
-lib.DIRECT_LANDSCAPES["scene-4"]=lib.direct_wikimedia("Tremezzo Villa Carlotta exterior (14).jpg")
+lib.DIRECT_LANDSCAPES["scene-1"]=(
+  lib.direct_wikimedia("Lago Como aerial 1.jpg")
+ +lib.direct_wikimedia("Como Lake from mountains.jpg")
+)
+lib.DIRECT_LANDSCAPES["scene-4"]=[
+ (220,"https://www.varesenews.it/photogallery_new/images/2020/08/villa-carlotta-giardini-1170433.610x431.jpg",
+  "https://www.varesenews.it/2020/08/grand-tour-villa-carlotta-la-delizia-del-lago-como/955519/",
+  "Actual Villa Carlotta exterior and its cascading green formal gardens in clear daylight",
+  "VareseNews · actual Villa Carlotta formal gardens and façade"),
+ (210,"https://www.italymagazine.com/sites/default/files/story/villa-carlotta-lake-como.jpg",
+  "https://www.italymagazine.com/featured-story/admire-lake-comos-most-famous-garden-villa-carlotta",
+  "Actual Villa Carlotta lake-facing white façade and surrounding botanical garden",
+  "Italy Magazine · identified real Villa Carlotta lakeside façade"),
+ *lib.direct_wikimedia("Veduta di villa Carlotta, Tremezzo, Lago di Como.jpg")
+]
 lib.DIRECT_LANDSCAPES["scene-6"]=[
  (180,"https://fullsuitcase.com/wp-content/uploads/2022/10/Riva-Grande-waterfront-area-in-Varenna-Lake-Como-1024x683.jpg",
   "https://fullsuitcase.com/varenna-italy/",
