@@ -6,7 +6,7 @@ Cette galerie n'est **pas** une preuve de validation des droits ni une autorisat
 
 Les photographies récemment remplacées restent rouges tant qu'elles n'ont pas été revues image par image.
 
-- [St. Moritz](st-moritz.md) — 21/21 fichiers candidats, 1 alertes ; [ouvrir l'image seule](st-moritz.jpg)
+- [St. Moritz](st-moritz.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](st-moritz.jpg)
 - [Aspen](aspen.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](aspen.jpg)
 - [Niseko](niseko.md) — 21/21 fichiers candidats, 1 alertes ; [ouvrir l'image seule](niseko.jpg)
 - [Megève](megeve.md) — 21/21 fichiers candidats, 2 alertes ; [ouvrir l'image seule](megeve.jpg)

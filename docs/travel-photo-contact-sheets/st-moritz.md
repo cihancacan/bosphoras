@@ -1,6 +1,6 @@
 # St. Moritz — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 20/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 21/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle St. Moritz](st-moritz.jpg)
 
@@ -11,7 +11,7 @@
 | 3 | Badrutt's Palace Hotel — view-3 | [Source](https://badruttspalace.com/en/winter/accommodation/rooms/) · Badrutts Palace Rooms Signature Double Room Lake View With Balcony Bathroom| Candidate |
 | 4 | Kulm Hotel St. Moritz — view-1 | [Source](https://www.kulm.com/en/winter/) · Official page sharing image| Candidate |
 | 5 | Kulm Hotel St. Moritz — view-2 | [Source](https://www.kulm.com/en/winter/) · The immersive St. Moritz alpine spa| Candidate |
-| 6 | Kulm Hotel St. Moritz — view-3 | [Source](https://www.kulm.com/en/winter/) · The remarkable heritage of the hotel that makes winter| Candidate; **REJET VÉRIFIÉ : la photographie représente un portrait historique, pas une vue d'hôtel, chambre ou équipement. Ne pas afficher sur la fiche Kulm.** |
+| 6 | Kulm Hotel St. Moritz — view-3 | [Source](https://www.kulm.com/en/rooms/corvatsch-suite) · Corvatsch Suite — salon avec grandes baies vitrées donnant sur les montagnes enneigées| Candidate |
 | 7 | Suvretta House — view-1 | [Source](https://suvrettahouse.ch/en/startseite-winter) · | Candidate |
 | 8 | Suvretta House — view-2 | [Source](https://suvrettahouse.ch/en/startseite-winter) · | Candidate |
 | 9 | Suvretta House — view-3 | [Source](https://suvrettahouse.ch/en/startseite-winter) · | Candidate |
