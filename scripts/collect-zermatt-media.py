@@ -59,7 +59,7 @@ EXACT_HOTELS={
   ("https://pics.tui.com/pics/pics1600x1200/tui/7/748a3e47d24de3fb1d75c875389b1039_ocpprod.jpg",
   "https://www.tui.com/hotels/mont-cervin-palace-26481/hotelinformation/","Mont Cervin Palace winter exterior")],
 }
-EXACT_# Additional publisher-identified resort photographs with distinct subjects:
+# Additional publisher-identified resort photographs with distinct subjects:
 EXACT_HOTELS.update({
  "mont-cervin-palace/view-2":[
   ("https://assets.cntraveller.in/photos/60ba066bee63ec1fe6ee8308/master/w_1600%2Cc_limit/3.Mont-Cervin-Palace.jpg",
@@ -76,13 +76,13 @@ EXACT_HOTELS.update({
    "https://www.redsavannah.com/europe/switzerland/hotels/mont-cervin-palace",
    "Mont Cervin Palace indoor pool with wooden beams and natural light")],
 })
-EXACT_SCENES.update({
+EXACT_SCENES={
  "scene-9":[
   ("https://theplanetd.com/images/5-lakes-hike-zermatt-Switzerland-Stellisee-Lake-1536x1024.jpg",
    "https://theplanetd.com/5-lakes-hike-zermatt/",
    "Stellisee reflecting Matterhorn in warm sunrise light, travel photographer")
  ],
-})
+}
 # Precisely described Zermatt village and Matterhorn scenes.
 EXACT_SCENES.update({
  "scene-2":[
@@ -96,14 +96,14 @@ EXACT_SCENES.update({
    "Bahnhofstrasse in Zermatt illuminated at snowy winter twilight")
  ],
 })
-SCENES={
+EXACT_SCENES.update({
  "scene-5":[("https://commons.wikimedia.org/wiki/Special:Redirect/file/Panorama_vom_Gornergrat-Zermatt.jpg?width=1600",
   "https://commons.wikimedia.org/wiki/File:Panorama_vom_Gornergrat-Zermatt.jpg",
   "Gornergrat panorama over Monte Rosa mountain ridge")],
  "scene-6":[("https://commons.wikimedia.org/wiki/Special:Redirect/file/3809_-_Zermatt_-_View_from_Gornergratbahn.JPG?width=1600",
   "https://commons.wikimedia.org/wiki/File:3809_-_Zermatt_-_View_from_Gornergratbahn.JPG",
   "Alpine view from Gornergratbahn near Riffelberg")],
-}
+})
 SCENES={
  "scene-1":("Riffelsee Matterhorn lake Zermatt",("riffelsee",)),
  "scene-2":("Zermatt village old town Matterhorn panoramic",("zermatt",)),
