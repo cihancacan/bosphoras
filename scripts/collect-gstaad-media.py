@@ -163,6 +163,9 @@ PALACE_EXACT = {
 }
 PALACE_ALTERNATES = {
  "view-3": [
+  ("https://media.tatler.com/photos/64ae821d2d2f64fb4d90b470/master/w_1600%2Cc_limit/Travel_120723_Copyright%2520Gstaad%2520Palace_Indoor%2520Pool.jpg",
+   "https://www.tatler.com/article/forget-st-tropez-why-gstaad-is-the-most-glamorous-summer-hotspot",
+   "Gstaad Palace true refurbished indoor pool, original hotel photo credited"),
   ("https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?height=698&mode=crop&quality=85&scale=downscaleonly&width=1240",
    "https://www.oxfordski.com/luxury-ski-chalets-hotels/switzerland/gstaad/gstaad-palace/",
    "Gstaad Palace genuine indoor pool showing timber beams and snowy garden"),
@@ -182,6 +185,9 @@ PALACE_ALTERNATES = {
 }
 SCENES_EXACT = {
  "scene-6": [
+  ("https://madeinbern.com/fileadmin/_processed_/f/8/csm_6_8_f_2_68f286a5a219113204b1e8b9dce4c1321b911e8f_25-03f9d784f61163777ed2dfd2d5697d95_e0225c805f.jpg",
+   "https://madeinbern.com/en/business/venue-finder/wasserngrat-mountain-restaurant-gstaad",
+   "Wasserngrat mountain restaurant at evening with warmly lit glass terrace and surrounding Alps"),
   ("https://img.oastatic.com/img2/59563467/source/variant.jpg",
    "https://lenk-simmental.ch/erlebnisse-touren/tour/detail/vom-leiterli-auf-den-wasserngrat",
    "Genuine Wasserngrat ridge trail panorama, hikers on summit at sunset"),
@@ -365,7 +371,7 @@ def main():
     report = Path("docs/travel-gstaad-download-report.json")
     report.parent.mkdir(exist_ok=True, parents=True)
     report.write_text(json.dumps({
-      "workflow": "travel-gstaad-media", "scope": "Gstaad authentic assets, no public preview",
+      "workflow": "travel-gstaad-media", "collector_revision": "2026-10-19-v3-luxury-two-assets", "scope": "Gstaad authentic assets, no public preview",
       "hotel_candidates": data["downloadedHotelCandidates"],
       "landscape_candidates": data["downloadedDestinationCandidates"],
       "missing": [("destination" if "propertyKey" not in x else x["propertyKey"])+"/"+x["key"]
