@@ -1,0 +1,288 @@
+{
+  "destination": "saint-jean-cap-ferrat",
+  "generatedAt": "2026-10-19",
+  "expectedHotelPhotos": 12,
+  "expectedDestinationPhotos": 9,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "ownerRightsAuthorization": "Bosphoras operator authorizes appropriate photos for this project, 19 Oct 2026. Keep exact photographic source and credits; verify image identity and permitted reuse per file.",
+  "hotels": [
+    {
+      "property": "Grand-Hôtel du Cap-Ferrat, A Four Seasons Hotel",
+      "propertyKey": "grand-hotel-cap-ferrat",
+      "key": "view-1",
+      "slotIntent": "exterior gardens",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.fourseasons.com/capferrat/"
+      ],
+      "visualQaWarning": "No actual local image downloaded or reviewed for this hotel slot."
+    },
+    {
+      "property": "Grand-Hôtel du Cap-Ferrat, A Four Seasons Hotel",
+      "propertyKey": "grand-hotel-cap-ferrat",
+      "key": "view-2",
+      "slotIntent": "room suite sea view",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.fourseasons.com/capferrat/"
+      ],
+      "visualQaWarning": "No actual local image downloaded or reviewed for this hotel slot."
+    },
+    {
+      "property": "Grand-Hôtel du Cap-Ferrat, A Four Seasons Hotel",
+      "propertyKey": "grand-hotel-cap-ferrat",
+      "key": "view-3",
+      "slotIntent": "Club Dauphin seawater pool",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.fourseasons.com/capferrat/"
+      ],
+      "visualQaWarning": "No actual local image downloaded or reviewed for this hotel slot."
+    },
+    {
+      "property": "Royal-Riviera",
+      "propertyKey": "royal-riviera",
+      "key": "view-1",
+      "slotIntent": "seafront hotel exterior",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.royal-riviera.com/"
+      ],
+      "visualQaWarning": "No actual local image downloaded or reviewed for this hotel slot."
+    },
+    {
+      "property": "Royal-Riviera",
+      "propertyKey": "royal-riviera",
+      "key": "view-2",
+      "slotIntent": "guest suite sea terrace",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.royal-riviera.com/"
+      ],
+      "visualQaWarning": "No actual local image downloaded or reviewed for this hotel slot."
+    },
+    {
+      "property": "Royal-Riviera",
+      "propertyKey": "royal-riviera",
+      "key": "view-3",
+      "slotIntent": "hotel beach pool gardens",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.royal-riviera.com/"
+      ],
+      "visualQaWarning": "No actual local image downloaded or reviewed for this hotel slot."
+    },
+    {
+      "property": "La Villa Cap Ferrat Hôtel & Spa",
+      "propertyKey": "la-villa-cap-ferrat",
+      "key": "view-1",
+      "slotIntent": "hotel pool garden exterior",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://villacapferrat.fr/"
+      ],
+      "visualQaWarning": "No actual local image downloaded or reviewed for this hotel slot."
+    },
+    {
+      "property": "La Villa Cap Ferrat Hôtel & Spa",
+      "propertyKey": "la-villa-cap-ferrat",
+      "key": "view-2",
+      "slotIntent": "sea-facing terrace bedroom",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://villacapferrat.fr/"
+      ],
+      "visualQaWarning": "No actual local image downloaded or reviewed for this hotel slot."
+    },
+    {
+      "property": "La Villa Cap Ferrat Hôtel & Spa",
+      "propertyKey": "la-villa-cap-ferrat",
+      "key": "view-3",
+      "slotIntent": "spa sauna jacuzzi",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://villacapferrat.fr/"
+      ],
+      "visualQaWarning": "No actual local image downloaded or reviewed for this hotel slot."
+    },
+    {
+      "property": "Hôtel Brise Marine",
+      "propertyKey": "brise-marine",
+      "key": "view-1",
+      "slotIntent": "Italianate villa historic exterior",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.hotel-brisemarine.com/"
+      ],
+      "visualQaWarning": "No actual local image downloaded or reviewed for this hotel slot."
+    },
+    {
+      "property": "Hôtel Brise Marine",
+      "propertyKey": "brise-marine",
+      "key": "view-2",
+      "slotIntent": "sea-view premium room terrace",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.hotel-brisemarine.com/"
+      ],
+      "visualQaWarning": "No actual local image downloaded or reviewed for this hotel slot."
+    },
+    {
+      "property": "Hôtel Brise Marine",
+      "propertyKey": "brise-marine",
+      "key": "view-3",
+      "slotIntent": "flower garden patio Mediterranean view",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.hotel-brisemarine.com/"
+      ],
+      "visualQaWarning": "No actual local image downloaded or reviewed for this hotel slot."
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "label": "Saint-Jean-Cap-Ferrat peninsula aerial coastline",
+      "query": "Saint Jean Cap Ferrat peninsula aerial coast",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.saintjeancapferrat-tourisme.fr/"
+      ],
+      "visualQaWarning": "No exact, premium landscape downloaded and reviewed for this local scene."
+    },
+    {
+      "key": "scene-2",
+      "label": "Grand-Hôtel Le Club Dauphin coastline",
+      "query": "Grand Hotel du Cap Ferrat lighthouse coast",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.saintjeancapferrat-tourisme.fr/"
+      ],
+      "visualQaWarning": "No exact, premium landscape downloaded and reviewed for this local scene."
+    },
+    {
+      "key": "scene-3",
+      "label": "Paloma Beach and Pointe Saint-Hospice",
+      "query": "Paloma Beach Saint Jean Cap Ferrat",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.saintjeancapferrat-tourisme.fr/"
+      ],
+      "visualQaWarning": "No exact, premium landscape downloaded and reviewed for this local scene."
+    },
+    {
+      "key": "scene-4",
+      "label": "Villa Ephrussi de Rothschild gardens",
+      "query": "Villa Ephrussi Rothschild Saint Jean Cap Ferrat gardens",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.saintjeancapferrat-tourisme.fr/"
+      ],
+      "visualQaWarning": "No exact, premium landscape downloaded and reviewed for this local scene."
+    },
+    {
+      "key": "scene-5",
+      "label": "Port Saint-Jean-Cap-Ferrat village harbour",
+      "query": "Port Saint Jean Cap Ferrat harbor",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.saintjeancapferrat-tourisme.fr/"
+      ],
+      "visualQaWarning": "No exact, premium landscape downloaded and reviewed for this local scene."
+    },
+    {
+      "key": "scene-6",
+      "label": "Passable Beach and Villefranche Bay",
+      "query": "Plage de Passable Saint Jean Cap Ferrat",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.saintjeancapferrat-tourisme.fr/"
+      ],
+      "visualQaWarning": "No exact, premium landscape downloaded and reviewed for this local scene."
+    },
+    {
+      "key": "scene-7",
+      "label": "Cap Ferrat lighthouse and coastal trail",
+      "query": "Phare du Cap Ferrat Mediterranean sentier",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.saintjeancapferrat-tourisme.fr/"
+      ],
+      "visualQaWarning": "No exact, premium landscape downloaded and reviewed for this local scene."
+    },
+    {
+      "key": "scene-8",
+      "label": "Maurice Rouvier promenade Baie des Fourmis",
+      "query": "Promenade Maurice Rouvier Cap Ferrat",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.saintjeancapferrat-tourisme.fr/"
+      ],
+      "visualQaWarning": "No exact, premium landscape downloaded and reviewed for this local scene."
+    },
+    {
+      "key": "scene-9",
+      "label": "Baie des Fourmis with Royal Riviera shoreline",
+      "query": "Baie des Fourmis Cap Ferrat hotel coastline",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.saintjeancapferrat-tourisme.fr/"
+      ],
+      "visualQaWarning": "No exact, premium landscape downloaded and reviewed for this local scene."
+    }
+  ]
+}
