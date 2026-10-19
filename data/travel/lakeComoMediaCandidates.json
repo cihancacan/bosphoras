@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 4,
+  "downloadedDestinationCandidates": 7,
   "hotels": [
     {
       "property": "Villa d’Este",
@@ -389,26 +389,58 @@
       "label": "Cernobbio lakeside and historic Villa d'Este waterfront",
       "query": "Villa d Este Cernobbio shore",
       "tag": "cernobbio",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/destination/scene-2.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cernobbio_hillside_from_Lake_Como.jpg/1920px-Cernobbio_hillside_from_Lake_Como.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cernobbio_hillside_from_Lake_Como.jpg",
+      "candidateContext": "Cernobbio hillside from Lake Como.jpg",
+      "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
+      "sha256": "d00aa9eef0ffc0ba337b149c3703d95bc1b97ad2ba6266b4e98df94c42bb2751",
+      "dhash": "1111111111100111011000110100010011000010100100001000010011000000",
+      "bytes": 478884,
+      "originalSize": [
+        1920,
+        999
+      ],
+      "outputSize": [
+        1800,
+        937
+      ]
     },
     {
       "key": "scene-3",
       "label": "Grand Hotel Tremezzo facing Bellagio over central Lake Como",
       "query": "Tremezzo Bellagio Lake Como panorama",
       "tag": "tremezzo",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/destination/scene-3.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Bellagio_panorama_from_Lake_Como_ferry.jpg/1920px-Bellagio_panorama_from_Lake_Como_ferry.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bellagio_panorama_from_Lake_Como_ferry.jpg",
+      "candidateContext": "Bellagio panorama from Lake Como ferry.jpg",
+      "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
+      "sha256": "7fd38b4f1236e3c27a0b704db69a8c3db412b6d6f29ee911269db35305641a4e",
+      "dhash": "0101110110001111111001110111000101100111010011110100100110110111",
+      "bytes": 191102,
+      "originalSize": [
+        1920,
+        641
+      ],
+      "outputSize": [
+        1800,
+        601
+      ]
     },
     {
       "key": "scene-4",
@@ -444,13 +476,29 @@
       "label": "Bellagio Punta Spartivento promontory and blue Lake Como",
       "query": "Bellagio Punta Spartivento lake",
       "tag": "bellagio",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/destination/scene-5.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Veduta_del_lago_di_Como_da_Bellagio.jpg/1920px-Veduta_del_lago_di_Como_da_Bellagio.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Veduta_del_lago_di_Como_da_Bellagio.jpg",
+      "candidateContext": "Veduta del lago di Como da Bellagio.jpg",
+      "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
+      "sha256": "b6a24885bae3072c0b4fc32dfddefb915e4f6eb11143198c38230de54da106bf",
+      "dhash": "1110100111111111000100110001110101011101101110001011100000101001",
+      "bytes": 555510,
+      "originalSize": [
+        1920,
+        1277
+      ],
+      "outputSize": [
+        1800,
+        1197
+      ]
     },
     {
       "key": "scene-6",
