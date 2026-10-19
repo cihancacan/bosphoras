@@ -699,24 +699,24 @@
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "REJECTED HISTORIC: actual source is an archival 1978 photograph, not a contemporary premium Baie des Fourmis view. Seek authentic later photograph.",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Panorama_baie_des_Fourmis_Beaulieu-sur-Mer.jpg/1920px-Panorama_baie_des_Fourmis_Beaulieu-sur-Mer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedCandidateContext": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/085F_Beaulieu-sur-Mer_%2815885396822%29.jpg/1920px-085F_Beaulieu-sur-Mer_%2815885396822%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "REJECTED HISTORIC: actual source is an archival 1978 photograph, not a contemporary premium Baie des Fourmis view. Seek authentic later photograph.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-9.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/085F_Beaulieu-sur-Mer_%2815885396822%29.jpg/1920px-085F_Beaulieu-sur-Mer_%2815885396822%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:085F_Beaulieu-sur-Mer_(15885396822).jpg",
-      "candidateContext": "File:085F Beaulieu-sur-Mer (15885396822).jpg",
-      "credit": "Rüdiger Stehn from Kiel, Deutschland · CC BY-SA 2.0",
-      "sha256": "5cb7cc51630c38fc8956212550a8d00eace7b803d630ed22f6dbd80a5f9f94c7",
-      "dhash": "0011011100010111000001110000010100011011000110110001011100011111",
-      "bytes": 236314,
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Baie_des_fourmis.jpg/1920px-Baie_des_fourmis.jpg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Baie_des_fourmis.jpg",
+      "candidateContext": "Baie des fourmis.jpg",
+      "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
+      "sha256": "26d59fdd7aea55bff9c90f0d03076916e4b4b2d88cb8d1559f87f87abeb954f1",
+      "dhash": "0000000100000011100000010010000100100001000101010101010101010101",
+      "bytes": 507452,
       "originalSize": [
         1920,
-        1267
+        1082
       ],
       "outputSize": [
         1800,
-        1188
+        1014
       ]
     }
   ]
