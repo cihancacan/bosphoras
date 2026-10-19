@@ -119,24 +119,24 @@
       "sourcePages": [
         "https://www.royal-riviera.com/"
       ],
-      "visualQaWarning": "EDITORIAL HOLD: Below luxury standard: foreground guests and loungers obscure the hotel's architecture; seek genuine sunlit façade/garden.",
-      "sourcePage": "https://www.royal-riviera.com/",
-      "candidateContext": "Official CMS image matched by source context",
-      "credit": "Official hotel CMS",
-      "rejectedSource": "https://www.royal-riviera.com/wp-content/uploads/2022/10/Royal-Riviera_1440x864_2.jpg",
-      "rejectedCandidateContext": "    ",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://www.royal-riviera.com/wp-content/uploads/2022/04/DSC_8490_1440x864.jpg",
+      "rejectedCandidateContext": "EDITORIAL HOLD: Below luxury standard: foreground guests and loungers obscure the hotel's architecture; seek genuine sunlit façade/garden.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/royal-riviera/view-1.webp",
-      "downloadUrl": "https://www.royal-riviera.com/wp-content/uploads/2022/04/DSC_8490_1440x864.jpg",
-      "sha256": "a3b43992cb203b1a09a4206f33200e6feff2a86af3530922079298976f646196",
-      "dhash": "0010011100101111001001010101001100101010001110010010111100100111",
-      "bytes": 269942,
+      "downloadUrl": "https://www.royal-riviera.com/wp-content/uploads/2022/01/DSC07159-HDR.jpg",
+      "sourcePage": "https://www.royal-riviera.com/en/the-royal-riviera/the-royal-riviera-atmosphere/",
+      "candidateContext": "Royal-Riviera classic beige Belle Epoque hotel front framed by palm gardens",
+      "credit": "Royal-Riviera official architecture photo",
+      "sha256": "3bcd35cce055b41ac07bf17c9feee6658ed30dac33c91b6d3d1d70dde681b998",
+      "dhash": "1110111111100100110010010101101100101111001101011100110001001111",
+      "bytes": 519760,
       "originalSize": [
-        1440,
-        864
+        7002,
+        4668
       ],
       "outputSize": [
-        1440,
-        864
+        1800,
+        1200
       ]
     },
     {
@@ -281,23 +281,23 @@
       "sourcePages": [
         "https://villacapferrat.fr/"
       ],
-      "visualQaWarning": "EDITORIAL HOLD: Below luxury standard: crowded rooftop/terrace and pool view duplicates the already approved property panorama; seek a distinct amenity or better spa/garden angle.",
-      "sourcePage": "https://www.explorenicecotedazur.com/en/hotel/hotel-spa-la-villa-cap-ferrat/",
-      "candidateContext": "La Villa Cap Ferrat boutique hotel, terrace pool and sunny sea view",
-      "credit": "Nice Côte d'Azur Tourism Board",
-      "rejectedSource": "https://villacapferrat.fr/wp-content/uploads/2024/12/villa-cap-ferrat-spa-4-scaled.jpg",
-      "rejectedCandidateContext": "Official CMS image matched by source context",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://cdn.iris-etourism.io/uploads/nice/9d5/247-2-12714743.webp",
+      "rejectedCandidateContext": "EDITORIAL HOLD: Below luxury standard: crowded rooftop/terrace and pool view duplicates the already approved property panorama; seek a distinct amenity or better spa/garden angle.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/la-villa-cap-ferrat/view-3.webp",
-      "downloadUrl": "https://cdn.iris-etourism.io/uploads/nice/9d5/247-2-12714743.webp",
-      "sha256": "d773e2e7f22e3468e934e66bf632a56d78c3bfd5895a58cc69a975e6c68424dd",
-      "dhash": "0000001100000100000011000111100101110111001000111010101111101110",
-      "bytes": 322430,
+      "downloadUrl": "https://villacapferrat.fr/wp-content/uploads/2019/12/spa.jpg",
+      "sourcePage": "https://villacapferrat.fr/en/gallery/",
+      "candidateContext": "    ",
+      "credit": "Official hotel photo",
+      "sha256": "7b0a93655024675893380daf2da2e66d9694bac95d54c131b010defa8dee2475",
+      "dhash": "0010011101111101011100010111010110100111100101011100000111001001",
+      "bytes": 238562,
       "originalSize": [
-        1600,
-        1200
+        1920,
+        1323
       ],
       "outputSize": [
-        1600,
+        1741,
         1200
       ]
     },
@@ -482,24 +482,24 @@
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Champion_HV_%26_Paloma_beach_-_panoramio.jpg/1920px-Champion_HV_%26_Paloma_beach_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Champion_HV_&_Paloma_beach_-_panoramio.jpg",
-      "candidateContext": "File:Champion HV & Paloma beach - panoramio.jpg",
-      "credit": "Павлуша · CC BY-SA 3.0",
       "ownerRightsAuthorization": "Bosphoras operator confirmed project photo use rights 2026-10-19",
-      "rejectedCandidateContext": "Wikimedia geo 36.708812, 30.572376: Goynuk/Kemer Antalya Turkey, not Paloma Beach Cap Ferrat. Never publish.",
-      "visualQaWarning": "REJECTED GEOLOCATION: photo depicts Kemer, Antalya, Türkiye; must replace with exact Paloma Beach, Saint-Jean-Cap-Ferrat.",
+      "rejectedCandidateContext": "REJECTED GEOLOCATION: photo depicts Kemer, Antalya, Türkiye; must replace with exact Paloma Beach, Saint-Jean-Cap-Ferrat.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-3.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Champion_HV_%26_Paloma_beach_-_panoramio.jpg/1920px-Champion_HV_%26_Paloma_beach_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sha256": "90bcbdc6a894c6b52704075119c74a875965d372ef2994a7e00384809929cd6f",
-      "dhash": "0001011100001111000000101001001100110111011111110000111100001011",
-      "bytes": 407466,
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/20211209_123405_Plage_de_la_Paloma.jpg/1920px-20211209_123405_Plage_de_la_Paloma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20211209_123405_Plage_de_la_Paloma.jpg",
+      "candidateContext": "20211209 123405 Plage de la Paloma.jpg",
+      "credit": "Horizon06 · CC BY-SA 4.0",
+      "sha256": "39584939316cac8b0803a9453bcd47ebd094d744c172db5c03cdf4102feabc63",
+      "dhash": "0101110101010101011100111100101100110111000011111010101100101010",
+      "bytes": 677892,
       "originalSize": [
         1920,
-        1277
+        910
       ],
       "outputSize": [
         1800,
-        1197
+        853
       ]
     },
     {
@@ -612,24 +612,25 @@
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "EDITORIAL HOLD: Geographically correct but overexposed white rock dominates and the lighthouse is too small; seek more attractive lighthouse/coastal framing.",
-      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Japanese_garden_Monaco_(pond_and_bridge).jpg/1920px-Japanese_garden_Monaco_(pond_and_bridge).jpg",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Cap-Ferrat_lighthouse_from_east.jpg/1920px-Cap-Ferrat_lighthouse_from_east.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-7.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Cap-Ferrat_lighthouse_from_east.jpg/1920px-Cap-Ferrat_lighthouse_from_east.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cap-Ferrat_lighthouse_from_east.jpg",
-      "candidateContext": "Cap-Ferrat lighthouse from east.jpg",
-      "credit": "Tangopaso · Public domain",
-      "sha256": "e4443f64fd2e4dac6eae45a2070b284c0a3161421cb4173255807e272ea73734",
-      "dhash": "1111111111111111111110000001000000001001001000000000110100011101",
-      "bytes": 544854,
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/France-002563_-_Cap_Ferrat_Light_%2815720311590%29.jpg/1920px-France-002563_-_Cap_Ferrat_Light_%2815720311590%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:France-002563_-_Cap_Ferrat_Light_(15720311590).jpg",
+      "candidateContext": "France-002563 - Cap Ferrat Light (15720311590).jpg",
+      "credit": "Dennis G. Jarvis · CC BY-SA 2.0",
+      "sha256": "81d97fa732ec74217a80207e4e18269ee88eac916a2d989ad79f69974f55286f",
+      "dhash": "0000011110001011001100110000101100100000001001110110011110111000",
+      "bytes": 300972,
       "originalSize": [
         1920,
-        1440
+        1307
       ],
       "outputSize": [
-        1600,
+        1763,
         1200
-      ]
+      ],
+      "rejectedCandidateContext": "EDITORIAL HOLD: Geographically correct but overexposed white rock dominates and the lighthouse is too small; seek more attractive lighthouse/coastal framing."
     },
     {
       "key": "scene-8",
@@ -676,24 +677,25 @@
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "EDITORIAL HOLD: Correct coastline, but brightly oversaturated tourist umbrellas and crowds weaken restrained luxury palette; seek a calmer, cleaner panorama.",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/085F_Beaulieu-sur-Mer_%2815885396822%29.jpg/1920px-085F_Beaulieu-sur-Mer_%2815885396822%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Baie_des_Fourmis,_Beaulieu-sur-Mer.jpg",
-      "candidateContext": "File:Baie des Fourmis, Beaulieu-sur-Mer.jpg",
-      "credit": "Ianholton · CC BY 3.0",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Baie_des_Fourmis%2C_Beaulieu-sur-Mer.jpg/1920px-Baie_des_Fourmis%2C_Beaulieu-sur-Mer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-9.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Baie_des_Fourmis%2C_Beaulieu-sur-Mer.jpg/1920px-Baie_des_Fourmis%2C_Beaulieu-sur-Mer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sha256": "c6c4a414f310ec0f86d4ff4afb0b3a35d241c585d7a8698d351f56682020433c",
-      "dhash": "0000000000000000010000000100000000011000010111000011011100110011",
-      "bytes": 529702,
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Panorama_baie_des_Fourmis_Beaulieu-sur-Mer.jpg/1920px-Panorama_baie_des_Fourmis_Beaulieu-sur-Mer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panorama_baie_des_Fourmis_Beaulieu-sur-Mer.jpg",
+      "candidateContext": "Panorama baie des Fourmis Beaulieu-sur-Mer.jpg",
+      "credit": "Miniwark · CC BY-SA 4.0",
+      "sha256": "55cd784cf74d94e99007fd20b3ac73eeb79e148fd512a5be3b457b714ac5cd31",
+      "dhash": "0111111101111101101111001100000000001000011100000110010101101011",
+      "bytes": 162124,
       "originalSize": [
         1920,
-        1438
+        628
       ],
       "outputSize": [
-        1602,
-        1200
-      ]
+        1800,
+        589
+      ],
+      "rejectedCandidateContext": "EDITORIAL HOLD: Correct coastline, but brightly oversaturated tourist umbrellas and crowds weaken restrained luxury palette; seek a calmer, cleaner panorama."
     }
   ]
 }
