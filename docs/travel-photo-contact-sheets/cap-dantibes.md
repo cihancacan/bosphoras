@@ -1,6 +1,6 @@
 # Cap d’Antibes — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 21/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 20/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Cap d’Antibes](cap-dantibes.jpg)
 
@@ -10,7 +10,7 @@
 | 2 | Hôtel du Cap-Eden-Roc — view-2 | [Source](https://teresaperezcollection.com/hotel/hotel-du-cap-eden-roc) · Real Hotel du Cap-Eden-Roc suite with sea-facing balcony and turquoise drapes| Candidate |
 | 3 | Hôtel du Cap-Eden-Roc — view-3 | [Source](https://www.oetkerhotels.com/hotels/hotel-du-cap-eden-roc/the-hotel/leisure/pool) · Actual Oetker Hotel du Cap-Eden-Roc iconic rock-hewn saltwater pool| Candidate |
 | 4 | Cap d’Antibes Beach Hotel — view-1 | [Source](https://capdantibes-beachhotel.com/en) · chambre au bord de l&#x27;eau    | Candidate |
-| 5 | Cap d’Antibes Beach Hotel — view-2 | [Source](https://www.limetravel.se/destinationer/europa/frankrike/cap-dantibes-beach-hotel/) · Single bright actual Cap d&#x27;Antibes Beach Hotel sea-view suite with open terrace| Candidate |
+| 5 | Cap d’Antibes Beach Hotel — view-2 | [Source](https://www.limetravel.se/destinationer/europa/frankrike/cap-dantibes-beach-hotel/) · Single bright actual Cap d&#x27;Antibes Beach Hotel sea-view suite with open terrace| Candidate; **REPLACE: image dated 2018 is older than the Cap d'Antibes Beach Hotel 2023 Bernard Dubois redesign; no historical room photo in current luxury guide.** |
 | 6 | Cap d’Antibes Beach Hotel — view-3 | [Source](https://en.epaillote.com/plages-privees/france/06-alpes-maritimes/antibes-juan-les-pins/baba-cap-d-antibes-beach-hotel) · BABA Cap d&#x27;Antibes Beach Hotel single aerial of private beach, turquoise water and property| Candidate |
 | 7 | Villa Miraé — view-1 | [Source](https://www.villamirae-capantibes.com/en/) · Villa Miraé renovated coral-pink hotel courtyard with patio arches, white umbrellas, dining tables and fountain| Candidate |
 | 8 | Villa Miraé — view-2 | [Source](https://www.villamirae-capantibes.com/en/) · Official CMS image matched by source context| Candidate |
