@@ -1,0 +1,32 @@
+name: Travel Zermatt — install three manually reviewed hotel photographs
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - scripts/approve-zermatt-mont-pdf.py
+      - .github/workflows/travel-zermatt-mont-pdf-approve.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  approved_hotel_photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m py_compile scripts/approve-zermatt-mont-pdf.py
+      - run: python -u scripts/approve-zermatt-mont-pdf.py
+      - name: Commit approved source-derived photos without a Vercel build
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- public/images/travel/zermatt-premium/mont-cervin-palace data/travel/zermattMediaCandidates.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'quality(travel): Mont Cervin Palace authentic hotel suite and pool photography [skip ci]'
+            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
+            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+          fi
