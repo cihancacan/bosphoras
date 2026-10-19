@@ -66,6 +66,26 @@ for(const x of approved){
 }
 const candidates=all.filter(x=>x.status==='candidate_needs_visual_review');
 for(const x of all)if(x.status==='missing')assert(!x.visuallyVerified);
+// Release-quality photo gate: all four hotels and all nine landscapes are truly reviewed.
+assert.equal(approved.length,21,'Monaco cannot be declared finished with fewer than 21 approved photographs');
+assert.equal(media.hotels.filter(x=>x.visuallyVerified).length,12,'Each of four hotels requires three approved frames');
+assert.equal(media.destinationScenes.filter(x=>x.visuallyVerified).length,9,'All nine Monaco local scenes need visual approval');
+assert.equal(new Set(approved.map(x=>x.localPath)).size,21,'Repeated local photo path');
+assert.equal(new Set(approved.map(x=>x.sha256)).size,21,'Same image bytes used more than once');
+assert.equal(new Set(approved.map(x=>x.dhash)).size,21,'Duplicate perceptual image hash');
+for(const x of approved){
+ assert.match(x.sha256||'',/^[a-f0-9]{64}$/,'Missing SHA256 for '+x.localPath);
+ assert.match(x.dhash||'',/^[01]{64}$/,'Missing perceptual hash for '+x.localPath);
+ assert(x.visualReviewBasis?.length>=30,'Individual visual review missing for '+x.localPath);
+ assert(x.ownerRightsAuthorization?.length>=25,'Owner confirmation not recorded for '+x.localPath);
+ assert(x.downloadUrl?.startsWith('https://'),'Original source URL missing');
+ assert(x.credit?.length>=8,'Photo source credit missing');
+ assert(x.originalSize?.length===2 && x.outputSize?.length===2,'Image dimensions missing');
+}
+const hamming=(a,b)=>[...a].reduce((sum,c,i)=>sum+(c!==b[i]),0);
+for(let i=0;i<approved.length;i++)for(let j=i+1;j<approved.length;j++)
+ assert(hamming(approved[i].dhash,approved[j].dhash)>=8,
+  'Near-duplicate photographic composition detected: '+approved[i].localPath+' & '+approved[j].localPath);
 const originalUrls=all.filter(x=>x.downloadUrl).map(x=>x.downloadUrl.split('?')[0]);
 assert.equal(originalUrls.length,new Set(originalUrls).size,'Exact duplicate Monaco photo source URL');
 console.log(JSON.stringify({checks:'PASS',hotels:guide.hotels.length,areas:guide.areas.length,
