@@ -168,20 +168,20 @@
       "propertyKey": "kulm-hotel",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.kulm.com/en/winter/hotel",
         "https://www.kulm.com/en/winter/"
       ],
-      "rights": "Commons photo licence verified at source; any attribution, share-alike, adaptation and trademark rules need compliance. Visual QA still required.",
+      "rights": "L'utilisateur confirme disposer des droits d'utilisation. Original photograph from Kulm Hotel official Corvatsch Suite page; retain attribution.",
       "localPath": "/images/travel/st-moritz-premium/kulm-hotel/view-3.webp",
       "downloadUrl": "https://media.kulm.com/wp-content/uploads/sites/4/2024/08/31142818/Corvatsch-Suite-2-scaled.jpg",
       "sourcePage": "https://www.kulm.com/en/rooms/corvatsch-suite",
-      "candidateContext": "Official property gallery",
-      "credit": "Kulm Hotel St. Moritz · photo on exact property's own gallery; original credit retained at source",
-      "license": "CC0",
-      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "candidateContext": "Corvatsch Suite — salon avec grandes baies vitrées donnant sur les montagnes enneigées",
+      "credit": "Kulm Hotel St. Moritz · galerie photographique officielle",
+      "license": "Droits d’utilisation confirmés par Bosphoras — photographie officielle Kulm",
+      "licenseUrl": "https://www.kulm.com/en/rooms/corvatsch-suite",
       "sha256": "f61a41d756967a66d343b243c9b2ec434a54d5d28858fd601edda8fb71aea568",
       "bytes": 196876,
       "originalSize": [
@@ -192,10 +192,12 @@
         1700,
         1134
       ],
-      "visualQaWarning": "Replacement from exact property/location page; needs visual verification before display.",
       "visualQaReviewedAt": "2026-10-15",
       "ownerRightsAuthorization": "Bosphoras operator affirmed photo rights on 2026-10-15",
-      "replacedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Kulm_Hotel_Sankt_Moritz_2022-09-25_03.jpg/1920px-Kulm_Hotel_Sankt_Moritz_2022-09-25_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "frCaption": "Kulm Hotel St. Moritz — salon de la Corvatsch Suite, baies vitrées et panorama alpin enneigé",
+      "enCaption": "Kulm Hotel St. Moritz — Corvatsch Suite lounge with panoramic snowy mountain views",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Visual inspection of downloaded WebP: sunlit Corvatsch Suite lounge, wood panelling, large alpine-view windows; compared to exact hotel's official suite page."
     },
     {
       "property": "Suvretta House",
