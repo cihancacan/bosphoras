@@ -139,7 +139,6 @@ lib.HOTEL_DIRECT["royal-riviera/view-1"]=[
   "Sunlit Royal-Riviera facade and manicured gardens", "Royal-Riviera official hotel CMS")
 ]
 lib.DIRECT_LANDSCAPES["scene-7"]=lib.commons_exact("France-002563 - Cap Ferrat Light (15720311590).jpg")
-lib.DIRECT_LANDSCAPES["scene-9"]=lib.commons_exact("Panorama baie des Fourmis Beaulieu-sur-Mer.jpg")
 lib.DIRECT_WIKIMEDIA={}
 lib.COMMONS_EXACT={}
 lib.MANIFEST=Path("data/travel/saintJeanCapFerratMediaCandidates.json")
