@@ -44,7 +44,7 @@ assert.equal(media.expectedDestinationPhotos,9);
 assert.equal(media.approvedForCommercialPublication,false);
 assert.equal(media.visuallyVerified,false);
 assert(registry.includes("'monaco': monacoGuide"));
-assert(registry.includes("| 'monaco';"));
+assert(registry.includes("| 'monaco'"),"Monaco missing from FeaturedCitySlug union");
 assert(catalogue.includes('slug: "monaco"'));
 assert(catalogue.includes('approvedDestinationSlugs: ReadonlySet<string> = new Set([])'));
 assert(code.includes('confirmedMonacoAssets.has(photo.src)'));
