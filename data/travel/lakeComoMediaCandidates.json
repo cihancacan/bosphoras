@@ -180,12 +180,11 @@
       "key": "view-3",
       "slotIntent": "Grand Hotel Tremezzo official Water-on-the-Water floating pool",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.grandhoteltremezzo.com/en/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/grand-hotel-tremezzo/view-3.webp",
       "downloadUrl": "https://www.grandhoteltremezzo.com/media/rxyntdgz/grand_hotel_tremezzo-pools-julius-dji_0031.jpg?width=1825&height=1217&format=webp&v=1da398aa747edb0",
       "sourcePage": "https://www.grandhoteltremezzo.com/en/resort/pools/",
@@ -203,7 +202,12 @@
         1200
       ],
       "rejectedSource": "https://www.grandhoteltremezzo.com/media/ikomnjus/grand_hotel_tremezzo-pools-julius-l1210114.jpg?width=1766&height=1226&format=webp&v=1da398a6417c380",
-      "rejectedCandidateContext": "Need real Water-on-the-Water floating pool, existing reflection/pavilion image rejected. Original DJI 0031 photo was incorrectly put on URL denylist by collector."
+      "rejectedCandidateContext": "Need real Water-on-the-Water floating pool, existing reflection/pavilion image rejected. Original DJI 0031 photo was incorrectly put on URL denylist by collector.",
+      "frCaption": "Grand Hotel Tremezzo — piscine flottante Water-on-the-Water, pontons de bois et parasols orange sur le lac",
+      "enCaption": "Grand Hotel Tremezzo — actual Water-on-the-Water floating pool, timber pontoons and orange parasols on Lake Como",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual 1800x1200 official DJI 0031 local WebP inspected in GitHub Actions run 39323710140; rectangular floating basin built into the wooden lake pontoon with characteristic striped umbrellas, not a land pool or reflected pavilion.",
+      "ownerRightsAuthorization": "Bosphoras operator confirmed general project-wide photo use October 2026; official hotel image attribution and any photographer-specific rights must be respected."
     },
     {
       "property": "Passalacqua",

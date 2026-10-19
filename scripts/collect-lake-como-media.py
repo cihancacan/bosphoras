@@ -219,7 +219,20 @@ lib.DIRECT_LANDSCAPES["scene-6"]=[
 # Final deliberate overrides must run after older candidate declarations.
 lib.HOTEL_DIRECT["grand-hotel-tremezzo/view-3"]=[(400,"https://www.grandhoteltremezzo.com/media/rxyntdgz/grand_hotel_tremezzo-pools-julius-dji_0031.jpg?width=1825&height=1217&format=webp&v=1da398aa747edb0","https://www.grandhoteltremezzo.com/en/resort/pools/","Actual Water-on-the-Water lake floating pool, confirmed image DJI-0031","Grand Hotel Tremezzo · official photo")]
 lib.HOTELS["grand-hotel-tremezzo"]["view-3"]=[]
-lib.DIRECT_LANDSCAPES["scene-1"]=[(300,"https://images.pexels.com/photos/32569620/pexels-photo-32569620.jpeg?auto=compress&cs=tinysrgb&w=1800","https://www.pexels.com/photo/scenic-view-of-lake-como-in-italy-s-lombardy-region-32569620/","Real Lake Como sunlit mountain aerial original photo","Earth Photart · Pexels licence"),(280,"https://images.pexels.com/photos/36483983/pexels-photo-36483983.jpeg?auto=compress&cs=tinysrgb&w=1800","https://www.pexels.com/photo/scenic-view-of-lake-como-surrounded-by-mountains-36483983/","Bright Lake Como mountains and blue water by Oskar Gross","Oskar Gross · Pexels licence")]
+lib.DIRECT_LANDSCAPES["scene-1"]=[
+ (370,"https://images.pexels.com/photos/37481049/pexels-photo-37481049.jpeg?auto=compress&cs=tinysrgb&w=1800",
+ "https://www.pexels.com/photo/stunning-aerial-view-of-lake-como-italy-37481049/",
+ "Authentic bright Lake Como aerial with green shore villages and mountains",
+ "Earth Photart · original Lake Como photo · Pexels licence"),
+ (360,"https://images.pexels.com/photos/32569603/pexels-photo-32569603.jpeg?auto=compress&cs=tinysrgb&w=1800",
+ "https://www.pexels.com/photo/stunning-aerial-view-of-lake-como-italy-32569603/",
+ "Authentic aerial of Lake Como with sunlit green hills and deep blue waters",
+ "Earth Photart · original aerial Lake Como · Pexels licence"),
+ (340,"https://heliflygreece.com/wp-content/uploads/2021/03/Como-ed-il-centro-lago-022.jpg",
+ "https://heliflygreece.com/helicopter-tours/from-milan-helicopter-tour/",
+ "Actual sunny Lake Como central basin with blue lake, pastel villages and two boats",
+ "HeliFly Greece · original Lake Como helicopter photo")
+]
 
 TO_REPLACE={
  ("villa-d-este","view-1"),("grand-hotel-tremezzo","view-2"),
