@@ -7,8 +7,10 @@ function objectInTs(path) {
   const source=read(path);
   const start=source.indexOf("= {");
   assert(start>=0, "Missing exported object in "+path);
-  const end=source.lastIndexOf("};");
-  assert(end>start, "Incomplete draft in "+path);
+  const tail=source.match(/}\s*as const;\s*$/);
+  assert(tail, "Incomplete draft in "+path);
+  const end=tail.index;
+  assert(end>start);
   return JSON.parse(source.slice(start+2,end+1).trim());
 }
 const guide=objectInTs("data/travel/gstaadDraftGuide.ts");
