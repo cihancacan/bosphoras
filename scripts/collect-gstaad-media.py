@@ -203,7 +203,7 @@ def main():
     # Existing three Ultima slots reuse the same summer exterior in different sizes.
     # Keep the original in view-1, replace view-2 and view-3 ONLY from exact
     # Ultima Gstaad accommodation/wellness pages. Do not call duplicates distinct.
-    originals = [next(x for x in hotel_items if x.get("propertyKey")=="ultima-hotel-gstaad"
+    originals = [next(x for x in hotel_items if x.get("propertyKey")=="ultima-hotel"
                  and x["key"]==f"view-{i}") for i in (1, 2, 3)]
     reference = (originals[0].get("downloadUrl") or "").split("?")[0]
     for item in originals[1:]:
@@ -217,7 +217,7 @@ def main():
                 item.pop(field, None)
             changed = True
     for key, pages, good, bad in ULTIMA:
-        item = next(x for x in hotel_items if x.get("propertyKey")=="ultima-hotel-gstaad" and x["key"]==key)
+        item = next(x for x in hotel_items if x.get("propertyKey")=="ultima-hotel" and x["key"]==key)
         hits = []
         for page in pages:
             hits.extend(images_from_official(page, good, bad, "ultimacollection.com"))
