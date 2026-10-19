@@ -67,6 +67,39 @@ lib.LANDSCAPES={
  "scene-8":("Villa Eilenroc Cap d'Antibes garden",("eilenroc",)),
  "scene-9":("Juan-les-Pins Cap Antibes Belles Rives seaside",("juan-les-pins","belles rives"))
 }
+# Real geographically identified public Commons files, no Monaco sources.
+# Each image remains an unapproved source candidate until a separate visual QA.
+lib.DIRECT_LANDSCAPES={
+ "scene-1":lib.commons_exact("Cap d'Antibes vue aerienne.jpg"),
+ "scene-2":[(100,
+  "https://www.ontheluce.com/wp-content/uploads/2022/08/cap-dantibes-from-above-1440x900.jpg",
+  "https://www.ontheluce.com/boats-and-beaches-what-to-see-and-do-in-antibes/",
+  "True Cap d'Antibes rocky headland and natural coves, photographed from above",
+  "On the Luce · exact Cap d'Antibes aerial")],
+ "scene-3":lib.commons_exact("Plage de la garoupe.jpg"),
+ "scene-4":lib.commons_exact("Sentier de Tirepoil.jpg"),
+ "scene-6":[(100,
+  "https://static.seetheworld.com/image_uploader/photos/2c/original/port-du-crouton-antibes.jpg",
+  "https://www.seeantibes.com/sea/marinas/port-du-crouton",
+  "Port du Crouton real small boats and masts by Antibes west shoreline",
+  "SeeAntibes · documented Port du Crouton")],
+ "scene-8":lib.commons_exact("Villa Eilenroc sud.JPG"),
+ "scene-9":lib.commons_exact("JuanLesPinsDepuisLeCap.jpg")
+}
+lib.HOTEL_DIRECT["hotel-du-cap-eden-roc/view-1"]=lib.commons_exact("Gartenfassade Hotel Du Cap.jpg")
+lib.HOTEL_DIRECT["hotel-du-cap-eden-roc/view-3"]=[
+ (110,
+  "https://images.eu.ctfassets.net/og3b0tarlg4b/5hOabtzktscWIpkSJnFs08/cee497d61429c1534933799fdaf64d08/HDC_-_Pool_cut.jpg?fm=jpg&w=1800",
+  "https://www.oetkerhotels.com/hotels/hotel-du-cap-eden-roc/the-hotel/leisure/pool",
+  "Actual Oetker Hotel du Cap-Eden-Roc iconic rock-hewn saltwater pool",
+  "Oetker Hotels · official Eden-Roc pool photograph"),
+ (92,
+  "https://shopdarius.com/cdn/shop/files/PoolsideattheHotelduCapEdenRoc_Small_f880f774-f9e0-4421-bec2-7394a72b1d25.jpg?v=1758942289&width=1520",
+  "https://shopdarius.com/products/poolside-at-the-hotel-du-cap-eden-roc-print",
+  "Documented real Eden-Roc pool, source must pass separate commercial photo rights review",
+  "Darius James photographer · source only, commercial permission NOT established")
+]
+
 # One file may be known with precise Commons metadata; queries are otherwise
 # restricted to the actual place name and manually reviewed after download.
 # Never use Monaco or Cap-Ferrat direct images for this peninsula.

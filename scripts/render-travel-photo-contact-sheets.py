@@ -18,6 +18,7 @@ REGISTRY=[
  ("valDisere","val-disere","Val d'Isère"),
  ("verbier","verbier","Verbier"),
  ("saintJeanCapFerrat","saint-jean-cap-ferrat","Saint-Jean-Cap-Ferrat"),
+ ("capDAntibes","cap-dantibes","Cap d’Antibes"),
 ]
 OUT=Path("docs/travel-photo-contact-sheets");OUT.mkdir(parents=True,exist_ok=True)
 try:
