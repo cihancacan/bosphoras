@@ -1,0 +1,47 @@
+name: Travel Lake Como — inspect real 21 photograph candidates, no Vercel
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: ['.github/workflows/travel-lake-como-visual-review.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'Pillow>=10,<12'
+      - name: Emit contact-sheet montages for actual downloaded originals
+        run: |
+          python - <<'PY'
+          import base64,io,json,math
+          from pathlib import Path
+          from PIL import Image,ImageOps,ImageDraw,ImageFont
+          m=json.loads(Path('data/travel/lakeComoMediaCandidates.json').read_text())
+          items=m['hotels']+m['destinationScenes']
+          assert len(items)==21
+          assert all(x.get('localPath') for x in items)
+          try: font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',16)
+          except OSError:font=ImageFont.load_default()
+          for p in range(math.ceil(len(items)/6)):
+              xs=items[p*6:p*6+6]
+              board=Image.new('RGB',(1310,810),(246,244,241));draw=ImageDraw.Draw(board)
+              for i,x in enumerate(xs):
+                  col=i%3;row=i//3;left=12+col*433;top=12+row*393
+                  asset=Path('public'+x['localPath']);assert asset.exists(),str(asset)
+                  with Image.open(asset) as z:
+                      photo=ImageOps.fit(z.convert('RGB'),(408,292),method=Image.Resampling.LANCZOS)
+                  board.paste(photo,(left,top))
+                  draw.text((left+2,top+298),(x.get('propertyKey') or 'destination')[:35],font=font,fill=(20,42,56))
+                  draw.text((left+2,top+324),x['key']+' '+str(x.get('outputSize',''))[:18],font=font,fill=(20,42,56))
+                  draw.text((left+2,top+347),str(x.get('credit',''))[:45],font=font,fill=(47,66,76))
+              b=io.BytesIO();board.save(b,'JPEG',quality=73,optimize=True)
+              print('LAKE_COMO_VISUAL_START_'+str(p+1))
+              print(base64.b64encode(b.getvalue()).decode())
+              print('LAKE_COMO_VISUAL_END_'+str(p+1))
+          print('LAKE_COMO_VISUAL_CANDIDATES',len(items))
+          PY
