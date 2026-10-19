@@ -4,7 +4,7 @@
   "scope": "SOURCE CANDIDATES ONLY; DRAFT FR EN, NOINDEX; NOT A FINISHED 21-PHOTO GUIDE",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 11,
+  "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 1,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
@@ -322,13 +322,30 @@
       "propertyKey": "monte-carlo-bay",
       "key": "view-1",
       "slotIntent": "lagoon",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort"
       ],
-      "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release"
+      "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/monaco-premium/monte-carlo-bay/view-1.webp",
+      "downloadUrl": "https://asset.montecarlosbm.com/styles/hero_desktop_wide_responsive_webp/s3/media/image/8-%20MONTE%20CARLO%20BAY%20retouche.jpg.webp?VersionId=6Tubwvu3XcExUrYrzM0MTu9yVoyfgCmt&h=ef239dbb&itok=sYksjbgK",
+      "sourcePage": "https://www.montecarlosbm.com/en/bar-nightclub-monaco/lhippocampe-bar-lagon",
+      "candidateContext": "Lagon    ",
+      "credit": "Official hotel photo",
+      "sha256": "c07520e9b72c4313aae4bee3974777b77db76e55c22f3d4f04980da25887f176",
+      "dhash": "1100110111011001011100000110011011101111111011010110010101100010",
+      "bytes": 96484,
+      "originalSize": [
+        1900,
+        750
+      ],
+      "outputSize": [
+        1800,
+        711
+      ]
     },
     {
       "property": "Monte-Carlo Bay Hotel & Resort",
