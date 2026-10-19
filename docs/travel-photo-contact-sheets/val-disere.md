@@ -1,6 +1,6 @@
 # Val d'Isère — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 18/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 21/21 · Validés visuellement : 19/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Val d'Isère](val-disere.jpg)
 
@@ -22,7 +22,7 @@
 | 14 | Solaise slopes — scene-2 | [Source](https://commons.wikimedia.org/wiki/File:Solaise_à_Val-d'Isère_depuis_Barrage_de_Tignes_(février_2026).JPG) · File:Solaise à Val-d&#x27;Isère depuis Barrage de Tignes (février 2026).JPG| Candidate |
 | 15 | Bellevarde slopes — scene-3 | [Source](https://commons.wikimedia.org/wiki/File:Face_de_Bellevarde_2014.JPG) · File:Face de Bellevarde 2014.JPG| Candidate |
 | 16 | La Daille Funival — scene-4 | [Source](https://commons.wikimedia.org/wiki/File:Funival_@_La_Daille_01.jpg) · File:Funival @ La Daille 01.jpg| Candidate |
-| 17 | Le Laisinant — scene-5 | [Source](https://www.valdisere.com/en/val-disere-in-winter/walks-and-snowshoeing-tours/) · Official Val d&#x27;Isère Tourisme photo — winter walk/snowshoe in Le Laisinant| Candidate; **REJET VÉRIFIÉ : visuel de carte et d'itinéraire Le Laisinant/Le Fornet. Pour un bloc paysage, demander une photographie du hameau plutôt qu'une carte.** |
+| 17 | Le Laisinant — scene-5 | [Source](https://www.valdisere.com/en/val-disere-in-winter/walks-and-snowshoeing-tours/) · Photographie officielle du hameau du Laisinant en hiver : skieuse portant son matériel à pied| Candidate |
 | 18 | Le Fornet winter — scene-6 | [Source](https://commons.wikimedia.org/wiki/File:Maisons_Le_Fornet_Val_d'Isère.jpg) · File:Maisons Le Fornet Val d&#x27;Isère.jpg| Candidate |
 | 19 | Manchet valley — scene-7 | [Source](https://www.valdisere.com/en/val-disere-in-winter/skiing-winter-fun/cross-country-skiing/great-manchet-loop-val-disere-en-4710589/) · Manchet valley cross-country skiing, official tourism| Candidate |
 | 20 | Prariond chalets — scene-8 | [Source](https://www.village-montana.com/val-disere/chalet-skadi) · Chalet Skadi facade, confirmed Avenue du Prariond Val d’Isère| Candidate |

@@ -12,5 +12,5 @@ Les photographies récemment remplacées restent rouges tant qu'elles n'ont pas 
 - [Megève](megeve.md) — 21/21 fichiers candidats, 2 alertes ; [ouvrir l'image seule](megeve.jpg)
 - [Jackson Hole](jackson-hole.md) — 21/21 fichiers candidats, 2 alertes ; [ouvrir l'image seule](jackson-hole.jpg)
 - [Big Sky](big-sky.md) — 21/21 fichiers candidats, 2 alertes ; [ouvrir l'image seule](big-sky.jpg)
-- [Val d'Isère](val-disere.md) — 21/21 fichiers candidats, 3 alertes ; [ouvrir l'image seule](val-disere.jpg)
+- [Val d'Isère](val-disere.md) — 21/21 fichiers candidats, 2 alertes ; [ouvrir l'image seule](val-disere.jpg)
 - [Verbier](verbier.md) — 21/21 fichiers candidats, 2 alertes ; [ouvrir l'image seule](verbier.jpg)
