@@ -161,6 +161,12 @@ PALACE_EXACT = {
 }
 PALACE_ALTERNATES = {
  "view-3": [
+  ("https://cms.inspirato.com/ImageGen.ashx?image=%2Fmedia%2F9461972%2F9copyright-gstaad-palace_stefano-scata_indoor-pool-palace-spa_570396_300dpi_rgb_favourite.jpg&width=1440",
+   "https://www.inspirato.com/destinations/gstaad-switzerland/residences/gstaad-superior-room-mountain-view/",
+   "Gstaad Palace indoor spa pool, hotel photography credited to Stefano Scatà"),
+  ("https://static-new.lhw.com/HotelImages/Final/LW1606/lw1606_202074221_1400x600.jpg",
+   "https://www.lhw.com/hotel/Gstaad-Palace-Gstaad-Switzerland",
+   "Gstaad Palace renovated spa with indoor pool and lounge"),
   ("https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2022/02/IMG_6593.jpeg?ssl=1",
    "https://theluxurytravelexpert.com/review-gstaad-palace/",
    "Gstaad Palace true indoor pool and timber-beam spa; travel review source"),
@@ -170,6 +176,14 @@ PALACE_ALTERNATES = {
  ]
 }
 SCENES_EXACT = {
+ "scene-6": [
+  ("https://img.welt.de/img/reise/nah/mobile189889565/9640247907-coriginal-w1200/Wasserngrat-Terrasse-jpg.jpg",
+   "https://www.welt.de/reise/nah/article189738501/Gstaad-Heli-Yoga-und-Warhol-Kuehe-in-der-Tiefgarage.html",
+   "Wasserngrat alpine restaurant terrace with laid tables and distant snowy mountain skyline"),
+  ("https://www.gaultmillau.ch/sites/default/files/restaurant_wasserngrat_gstaad.jpg",
+   "https://www.gaultmillau.ch/pop/gstaad/wasserngrat-der-gipfel-des-genusses",
+   "Wasserngrat terrace with Swiss flag, panorama, and tables"),
+ ],
  "scene-1": [
   ("https://cdn.globeair.com/website/m/Gstaad-Header.jpg",
    "https://www.globeair.com/b/best-ski-resorts-in-europe-for-2024",
