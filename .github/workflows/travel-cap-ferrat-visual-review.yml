@@ -1,4 +1,4 @@
-name: Travel Cap Ferrat — final two actual photo checks (GitHub only)
+name: Travel Cap Ferrat — final Baie des Fourmis photo actual inspection
 on:
   push:
     branches: [feature/luxury-travel-seo-destinations-20261012]
