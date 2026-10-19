@@ -53,11 +53,11 @@ LANDSCAPES={
 "scene-9":("Mareterra Monaco new waterfront park 2025",("mareterra",))
 }
 COMMONS_EXACT={
- "scene-1":"Monte Carlo Casino met op de voorgrond een park met palmbomen, SFA209000090.jpg",
- "scene-2":"Port Hercule Monaco.jpg",
- "scene-3":"View of the peninsula of Monaco.jpg",
- "scene-4":"Monaco - Vue vers la plage du Larvotto 01.jpg",
- "scene-5":"Monaco pano b.jpg",
+ "scene-1":"Monaco Place du Casino 1.jpg",
+ "scene-2":"Monaco Port Hercule Vue panoramique 1.jpg",
+ "scene-3":"Princely Palace of Monaco.JPG",
+ "scene-4":"Larvotto beach drone shot in 2024.png",
+ "scene-5":"Monaco Port de Fontvieille 02.jpg",
  "scene-7":"Japanese garden Monaco (pond and bridge).jpg",
  "scene-8":"Musée Océanographique de Monaco cliff view.jpg",
  "scene-9":"Mareterra drone shot in 2024.png"
