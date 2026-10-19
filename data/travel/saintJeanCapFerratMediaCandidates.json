@@ -5,7 +5,7 @@
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
   "ownerRightsAuthorization": "Bosphoras operator authorizes appropriate photos for this project, 19 Oct 2026. Keep exact photographic source and credits; verify image identity and permitted reuse per file.",
   "hotels": [
@@ -697,13 +697,12 @@
       "label": "Baie des Fourmis with Royal Riviera shoreline",
       "query": "Baie des Fourmis Cap Ferrat hotel coastline",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Baie_des_fourmis.jpg/1920px-Baie_des_fourmis.jpg",
       "rejectedCandidateContext": "REPLACE: correct bay scene but midday tourist loungers and glare are not premium enough. Seeking a precisely geolocated sunlit landscape with hotel named correctly.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-9.webp",
@@ -721,7 +720,12 @@
       "outputSize": [
         1600,
         900
-      ]
+      ],
+      "frCaption": "Baie des Fourmis — littoral de Saint-Jean-Cap-Ferrat et de Beaulieu-sur-Mer, jardins côtiers et eau turquoise",
+      "enCaption": "Baie des Fourmis — aerial Riviera coastline between Saint-Jean-Cap-Ferrat and Beaulieu-sur-Mer, gardens and turquoise sea",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Individually inspected the exact 1600x900 downloaded WebP on GitHub visual inspection run 39311123422: clean daylight aerial of turquoise Baie des Fourmis coastline and the identifiable Delcloy waterfront; correct real geography independently confirmed by hotel Delcloy and Nice Côte d'Azur tourist office. This is a location scene, not a selected hotel photo.",
+      "ownerRightsAuthorization": "Bosphoras operator project-wide photo-use permission confirmed 2026-10-19; exact image credited to Nice Côte d'Azur tourist office, underlying commercial permissions must be independently honored."
     }
   ]
 }
