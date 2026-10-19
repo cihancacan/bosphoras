@@ -11,7 +11,7 @@
 | 3 | Airelles Val d'Isère — view-3 | [Source](https://airelles.com/fr/destination/val-d-isere-hotel) · | Candidate; **REJET VÉRIFIÉ : panorama de Val d'Isère sans Airelles identifiable ; pourrait illustrer la destination mais ne doit pas être une photo d'hôtel.** |
 | 4 | Le K2 Chogori — view-1 | [Source](https://lek2chogori.com/fr/) · Hôtel de luxe à Val d&#x27;Isère, Le K2 Chogori| Candidate |
 | 5 | Le K2 Chogori — view-2 | [Source](https://lek2chogori.com/fr/) · Chambre K2 Chogori, hôtel de luxe 5 étoiles à Val d&#x27;Isère| Candidate |
-| 6 | Le K2 Chogori — view-3 | [Source](https://lek2chogori.com/fr/) · Le Bottleneck restaurant fondues fromagères et cuisine à la braise à Val d&#x27;Isère au K2 Chogori| Candidate; **REJET VÉRIFIÉ : photo d'un plat de restaurant seul. Ne constitue pas une troisième photographie de l'hôtel/suite demandée.** |
+| 6 | Le K2 Chogori — view-3 | [Source](https://www.valdisere.com/preparer-mon-sejour/hebergements/hotels/k2-chogori-val-disere-fr-4194656/) · Ski Shop_Le K2 Chogori| Candidate; **Replacement from exact property/location page; needs visual verification before display.** |
 | 7 | La Mourra — view-1 | [Source](https://www.hotellamourra.com/fr/) · Official page sharing image| Candidate |
 | 8 | La Mourra — view-2 | [Source](https://www.hotellamourra.com/fr/) · Vue aérienne d&#x27;un bâtiment en montagne enneigée, Hôtel 5 Étoiles avec spa La Mourra à Val d’Isèr| Candidate |
 | 9 | La Mourra — view-3 | [Source](https://www.hotellamourra.com/fr/) · Chalet enneigé en montagne sous ciel bleu, Hôtel 5 Étoiles avec spa La Mourra à Val d’Isèr| Candidate |
