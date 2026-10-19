@@ -15,6 +15,8 @@ import { valDisereDraftFaq } from '@/data/travel/valDisereDraftFaq';
 import { verbierDraftFaq } from '@/data/travel/verbierDraftFaq';
 import { gstaadDraftFaq } from '@/data/travel/gstaadDraftFaq';
 import { zermattDraftFaq } from '@/data/travel/zermattDraftFaq';
+import { monacoDraftFaq } from '@/data/travel/monacoDraftFaq';
+import { confirmedMonacoAssets } from '@/data/travel/monacoPremiumEditorial';
 import { alpineAvailablePhotoPathsByCity } from '@/data/travel/alpinePremiumEditorial';
 import { maldivesFaq } from '@/data/travel/maldivesFaq';
 import { losCabosFaq } from '@/data/travel/losCabosFaq';
@@ -165,7 +167,7 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     title: pageTitle + ' | Bosphoras Luxury Stays',
     description,
     alternates: { canonical, ...(Object.keys(languageAlternates).length ? { languages: languageAlternates } : {}) },
-    openGraph: { title: pageTitle, description: (featureGuide?.slug === 'st-moritz'||featureGuide?.slug==='aspen'||featureGuide?.slug==='niseko'||featureGuide?.slug==='megeve'||featureGuide?.slug==='jackson-hole'||featureGuide?.slug==='big-sky'||featureGuide?.slug==='val-disere'||featureGuide?.slug==='verbier'||featureGuide?.slug==='gstaad'||featureGuide?.slug==='zermatt'||featureGuide?.slug === 'koh-samui'||featureGuide?.slug==='maldives'||featureGuide?.slug==='los-cabos'||featureGuide?.slug==='saint-barthelemy'||featureGuide?.slug==='porto-cervo') ? description : t.value, url: canonical, siteName: 'Bosphoras Luxury Stays', type: 'website' },
+    openGraph: { title: pageTitle, description: (featureGuide?.slug === 'st-moritz'||featureGuide?.slug==='aspen'||featureGuide?.slug==='niseko'||featureGuide?.slug==='megeve'||featureGuide?.slug==='jackson-hole'||featureGuide?.slug==='big-sky'||featureGuide?.slug==='val-disere'||featureGuide?.slug==='verbier'||featureGuide?.slug==='gstaad'||featureGuide?.slug==='zermatt'||featureGuide?.slug==='monaco'||featureGuide?.slug === 'koh-samui'||featureGuide?.slug==='maldives'||featureGuide?.slug==='los-cabos'||featureGuide?.slug==='saint-barthelemy'||featureGuide?.slug==='porto-cervo') ? description : t.value, url: canonical, siteName: 'Bosphoras Luxury Stays', type: 'website' },
     robots: { index: ready, follow: true, 'max-image-preview': 'large' },
   };
 }
@@ -263,11 +265,12 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
   const isSaintBarth = kohGuide?.slug==='saint-barthelemy' && (locale==='fr'||locale==='en');
   const isCourchevel = kohGuide?.slug==='courchevel-1850' && (locale==='fr'||locale==='en');
   const isMustique = kohGuide?.slug==='mustique' && (locale==='fr'||locale==='en');
+  const isMonaco = kohGuide?.slug==='monaco' && (locale==='fr'||locale==='en');
   const isAlpine = Boolean(kohGuide && Object.prototype.hasOwnProperty.call(alpineAvailablePhotoPathsByCity,kohGuide.slug));
-  const alpineFaq = kohGuide?.slug==='st-moritz'?stMoritzDraftFaq:kohGuide?.slug==='aspen'?aspenDraftFaq:kohGuide?.slug==='megeve'?megeveDraftFaq:kohGuide?.slug==='jackson-hole'?jacksonHoleDraftFaq:kohGuide?.slug==='big-sky'?bigSkyDraftFaq:kohGuide?.slug==='val-disere'?valDisereDraftFaq:kohGuide?.slug==='verbier'?verbierDraftFaq:kohGuide?.slug==='gstaad'?gstaadDraftFaq:kohGuide?.slug==='zermatt'?zermattDraftFaq:nisekoDraftFaq;
+  const alpineFaq = kohGuide?.slug==='st-moritz'?stMoritzDraftFaq:kohGuide?.slug==='aspen'?aspenDraftFaq:kohGuide?.slug==='megeve'?megeveDraftFaq:kohGuide?.slug==='jackson-hole'?jacksonHoleDraftFaq:kohGuide?.slug==='big-sky'?bigSkyDraftFaq:kohGuide?.slug==='val-disere'?valDisereDraftFaq:kohGuide?.slug==='verbier'?verbierDraftFaq:kohGuide?.slug==='gstaad'?gstaadDraftFaq:kohGuide?.slug==='zermatt'?zermattDraftFaq:kohGuide?.slug==='monaco'?monacoDraftFaq:nisekoDraftFaq;
   const isPortoCervo = kohGuide?.slug==='porto-cervo' && (locale==='fr'||locale==='en');
   // Unapproved alpine hotel and destination photos are excluded from JSON-LD as well as the UI.
-  const clearedImageSet = kohGuide && Object.prototype.hasOwnProperty.call(alpineAvailablePhotoPathsByCity,kohGuide.slug)
+  const clearedImageSet = kohGuide?.slug==='monaco' ? confirmedMonacoAssets : kohGuide && Object.prototype.hasOwnProperty.call(alpineAvailablePhotoPathsByCity,kohGuide.slug)
     ? (alpineAvailablePhotoPathsByCity as Record<string, Set<string>>)[kohGuide.slug] : undefined;
   const schemaHeroPhoto = kohGuide ? kohGuide.photos[kohGuide.hero] : undefined;
   const schemaHeroIsCleared = Boolean(schemaHeroPhoto && (!clearedImageSet || clearedImageSet.has(schemaHeroPhoto.src)));
@@ -302,7 +305,7 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
           }))
         }
       ] : []),
-      ...((isKohSamui || isMaldives || isLosCabos || isSaintBarth || isPortoCervo || isMustique || isCourchevel || isAlpine) && kohGuide ? [
+      ...((isKohSamui || isMaldives || isLosCabos || isSaintBarth || isPortoCervo || isMustique || isCourchevel || isAlpine || isMonaco) && kohGuide ? [
         { '@type':'Article', '@id':base+'#editorial-guide',
           headline:locale==='fr'?(isAlpine?kohGuide.headingFr:isCourchevel?'Courchevel 1850 : quatre palaces et cinq secteurs':isMustique?'Mustique : un hôtel et trois villas':isPortoCervo?'Porto Cervo : quatre hôtels et cinq façons de séjourner':isSaintBarth?'Saint-Barth : quatre hôtels d’exception et cinq secteurs':isLosCabos?'Hôtels de luxe à Los Cabos : quatre resorts et cinq zones':isMaldives?'Hôtels de luxe aux Maldives : quatre îles et cinq façons de séjourner':'Hôtels de luxe à Koh Samui : quatre adresses et cinq secteurs'):(isAlpine?kohGuide.headingEn:isCourchevel?'Courchevel 1850: four luxury palaces and five areas':isMustique?'Mustique: one hotel and three private villas':isPortoCervo?'Luxury hotels in Porto Cervo: four stays and five areas':isSaintBarth?'Luxury hotels in St Barth: four island hotels and five areas':isLosCabos?'Luxury hotels in Los Cabos: four resorts and five areas':isMaldives?'Luxury hotels in the Maldives: four resorts and five ways to stay':'Luxury hotels in Koh Samui: four hotels and five areas'),
           description:locale==='fr'?kohGuide.introFr:kohGuide.introEn,
@@ -319,7 +322,7 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
           }))
         },
         { '@type':'FAQPage', '@id':base+'#faq',
-          mainEntity:(isAlpine?alpineFaq:isCourchevel?courchevel1850Faq:isMustique?mustiqueFaq:isPortoCervo?portoCervoFaq:isSaintBarth?saintBarthelemyFaq:isLosCabos?losCabosFaq:isMaldives?maldivesFaq:kohSamuiFaq)[locale as 'fr'|'en'].map(faq=>({
+          mainEntity:(isMonaco?monacoDraftFaq:isAlpine?alpineFaq:isCourchevel?courchevel1850Faq:isMustique?mustiqueFaq:isPortoCervo?portoCervoFaq:isSaintBarth?saintBarthelemyFaq:isLosCabos?losCabosFaq:isMaldives?maldivesFaq:kohSamuiFaq)[locale as 'fr'|'en'].map(faq=>({
             '@type':'Question',name:faq.q,acceptedAnswer:{'@type':'Answer',text:faq.a}
           }))
         }
