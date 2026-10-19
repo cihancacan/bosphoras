@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 7,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -491,7 +491,7 @@
       "key": "scene-3",
       "placeLabel": "Bahnhofstrasse",
       "searchQuery": "Bahnhofstrasse Zermatt",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
@@ -500,20 +500,9 @@
       "credit": "Photograph from the named original publisher; author needs confirmation",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "rejectedSource": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bahnhofstrasse_%28Zermatt%29_25.jpg?width=1600",
-      "visualQaWarning": "Downloaded exact publisher source; individual visual and rights review still required.",
-      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bahnhofstrasse_%28Zermatt%29_08.jpg?width=1600",
-      "localPath": "/images/travel/zermatt-premium/destination/scene-3.webp",
-      "sha256": "2d874fdbcabee1134c5fbb0ece368c8d7fe096bd9a14f2dedce0ebe18f1d214b",
-      "bytes": 498288,
-      "originalSize": [
-        1920,
-        1440
-      ],
-      "outputSize": [
-        1600,
-        1200
-      ]
+      "rejectedSource": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bahnhofstrasse_%28Zermatt%29_08.jpg?width=1600",
+      "visualQaWarning": "Swiss flags and retail signs dominate; lacks the broad elegant Bahnhofstrasse view required for Bosphoras premium.",
+      "rejectedCandidateContext": "Zermatt Bahnhofstrasse 2022 photo by Abxbay, Creative Commons"
     },
     {
       "key": "scene-4",
