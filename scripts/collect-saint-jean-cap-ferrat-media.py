@@ -128,7 +128,10 @@ lib.HOTEL_DIRECT["la-villa-cap-ferrat/view-3"]=[
   "https://www.booking.com/hotel/fr/hotel-spa-la-villa-cap.html",
   "Sunlit real La Villa Cap Ferrat breakfast terrace overlooking its swimming pool and the sea",
   "Booking.com · verified property gallery")]
-lib.DIRECT_LANDSCAPES["scene-9"]=lib.commons_exact("Baie des fourmis.jpg")
+# Alternate true Baie des Fourmis originals, never a generic tourism photo.
+lib.DIRECT_LANDSCAPES["scene-9"]=(lib.commons_exact("Baie des fourmis.jpg")
+ +lib.commons_exact("Riviera française - Littoral de Beaulieu-sur-Mer.jpg")
+ +lib.commons_exact("Cap-Ferrat - Avenue Ephrussi de Rothschild - View NE towards Beaulieu-sur-Mer.jpg"))
 lib.HOTEL_DIRECT["royal-riviera/view-1"]=[
  (100,"https://www.royal-riviera.com/wp-content/uploads/2022/01/DSC07159-HDR.jpg",
   "https://www.royal-riviera.com/en/the-royal-riviera/the-royal-riviera-atmosphere/",
