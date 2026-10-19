@@ -34,10 +34,18 @@ The local market does **not** contain four equivalent five-star palaces. Bosphor
 
 ## Work state
 
-Original source-based FR+EN destination guide and 14 FAQ answers staged in GitHub. Four real hotels and five authentic sectors registered. Latest verified manifest state: 4 of 21 authentic photographs approved (La Villa view-1, Brise Marine view-1, Villa Ephrussi scene-4, Maurice Rouvier promenade scene-8); 4 downloaded candidates still require review and 13 slots remain missing. The Grand-Hôtel Four Seasons collector now prioritizes its official Club Dauphin photograph and exact accommodation pages as **unapproved candidates**, never as automatically approved images. All incomplete gallery items remain fail-closed. No indexation or production deployment.
+Original source-based FR+EN destination guide and 14 FAQ answers staged in GitHub. Four real hotels and five authentic sectors registered. Latest verified manifest state: 4 of 21 authentic photographs approved (La Villa view-1, Brise Marine view-1, Villa Ephrussi scene-4, Maurice Rouvier promenade scene-8); 6 downloaded candidates still require review and 11 slots remain missing. The Grand-Hôtel Four Seasons collector now prioritizes its official Club Dauphin photograph and exact accommodation pages as **unapproved candidates**, never as automatically approved images. All incomplete gallery items remain fail-closed. No indexation or production deployment.
 
 ## QA remediation — 19 October 2026
 
 - Fixed the TypeScript union over hotel and destination photo records so absent optional `localPath` fields are typed as `Candidate[]`; previously the Cap-Ferrat GitHub QA failed TS2339 on `.localPath` when a scene was still missing.
 - Added an official Four Seasons Club Dauphin photo candidate from the exact restaurant/pool page and targeted the actual Four Seasons Palace Sea-View Suite gallery for hotel image recovery. Download success is **not** asserted; workflow execution and subsequent visual inspection must establish it.
 - Candidate collector still requires real local WebP bytes and never sets `visuallyVerified` or `commercialRightsCleared`. Production, Vercel deployments and Wink are unaffected by these file edits.
+
+## Verified follow-up — 19 October 2026, GitHub Actions
+
+- Cap-Ferrat media collector run **39302640222**: SUCCESS; ten source-backed downloaded WebP candidates exist (four approved + six not approved), eleven slots missing. Two new photo candidates were downloaded: La Villa Cap Ferrat room view-2 and Paloma Beach scene-3. No automatic approvals.
+- Cap-Ferrat TypeScript and editorial QA run **39302640239**: SUCCESS on commit `5661b5cea2587309b346c4c1535a7e3cbf5bf599`. Explicit noindex and candidate safety checks continue to pass; this does **not** assert image collection is complete.
+- Four Seasons upstream `www.fourseasons.com` returns HTTP 403 for its official pages and even for the exact official Club Dauphin image in GitHub Actions. All three Grand-Hôtel photo slots remain empty; never reassign another hotel's photo or assert these were downloaded.
+- Royal-Riviera `/en/rooms-suites/` returned 404; replace with a verified official gallery URL before the next dedicated collection. Existing Royal-Riviera hotel view-1 is a candidate, not approved.
+- Vercel ignored and cancelled branch deployments on recent commits; no new Preview or production deployment. The older ten-destination Preview is `bosphoras-dpe0fz7uf-cihans-projects-effb03c3.vercel.app`, commit `4f1c59ae...`, not the current branch content.
