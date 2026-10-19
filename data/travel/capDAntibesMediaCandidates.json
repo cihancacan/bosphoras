@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 7,
   "hotels": [
     {
       "property": "Hôtel du Cap-Eden-Roc",
@@ -415,29 +415,15 @@
       "key": "scene-3",
       "label": "Plage de la Garoupe and real turquoise Garoupe Bay",
       "query": "Plage de la Garoupe Cap d'Antibes",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "localPath": "/images/travel/cap-dantibes-premium/destination/scene-3.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Baigneuses_sur_la_riviera_%C3%A0_Garoupe_Beach_%28Antibes%29_%28CN%29_-_btv1b53280113c.jpg/1920px-Baigneuses_sur_la_riviera_%C3%A0_Garoupe_Beach_%28Antibes%29_%28CN%29_-_btv1b53280113c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Baigneuses_sur_la_riviera_à_Garoupe_Beach_(Antibes)_(CN)_-_btv1b53280113c.jpg",
-      "candidateContext": "File:Baigneuses sur la riviera à Garoupe Beach (Antibes) (CN) - btv1b53280113c.jpg",
-      "credit": "Central News (Agence photographique). Agence photographique pour le document reproduit (commanditaire) Agence Rol. Agence photographique (commanditaire) · Public domain",
-      "sha256": "3bba2ffd410f58161dce5a7abdedf8051e6904bd7181ad9f04bf763d1e92a786",
-      "dhash": "0011100111001111110001111100111111011001101001011110011100110101",
-      "bytes": 391326,
-      "originalSize": [
-        1920,
-        1387
-      ],
-      "outputSize": [
-        1661,
-        1200
-      ]
+      "visualQaWarning": "REJECTED: historic black-and-white beach postcard is not a contemporary scenic view; exact public Garoupe photo now required.",
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Baigneuses_sur_la_riviera_%C3%A0_Garoupe_Beach_%28Antibes%29_%28CN%29_-_btv1b53280113c.jpg/1920px-Baigneuses_sur_la_riviera_%C3%A0_Garoupe_Beach_%28Antibes%29_%28CN%29_-_btv1b53280113c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "1900s black-and-white historical beach bathers, unsuitable for 2026 premium destination photography."
     },
     {
       "key": "scene-4",
