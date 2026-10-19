@@ -67,3 +67,14 @@ Les corrections précises demandées après revue des dix pages sont consignées
 - Les clichés rejetés sont énumérés dans `docs/travel-final-preview-qa-2026-10-17.md`.
 
 Déploiement autorisé par le commit dédié de Preview ; aucun nouveau build inutile ne doit être déclenché ensuite.
+
+
+## Reprise vérifiée — 19 octobre 2026
+
+- **Preview créée et READY le 17 octobre 2026** : commit \`4f1c59ae86a0b643a7e43860b499521dfbdd44c9\`, URL de contrôle https://bosphoras-dpe0fz7uf-cihans-projects-effb03c3.vercel.app
+- **Ne pas confondre READY et QA terminée** : les 20 pages (10 FR + 10 EN) n'ont pas été certifiées HTTP 200 ni contrôlées visuellement depuis la reprise du 19 octobre. L'authentification Vercel protège cette Preview. Les erreurs SSR documentées datent du déploiement antérieur du 16 octobre ; aucune nouvelle erreur n'a été remontée dans les logs consultables du déploiement READY, ce qui ne prouve pas encore l'absence d'erreur sur chaque page.
+- **Routes correctes** : FR \`/travel/destinations/{slug}\`, EN \`/en/travel/destinations/{slug}\`. Ne pas utiliser \`/fr/travel/destinations/{slug}\` comme chemin principal de validation malgré la liste historique du document de QA du 17 octobre.
+- **Slugs du lot 1** : \`mustique\`, \`courchevel-1850\`, \`st-moritz\`, \`aspen\`, \`niseko\`, \`megeve\`, \`jackson-hole\`, \`big-sky\`, \`val-disere\`, \`verbier\`.
+- **QA photographique** : le bilan de pré-Preview était de 155/168 vues alpines approuvées et 13 masquées, en excluant Mustique/Courchevel. Le workflow GitHub de recherche de remplacements exacts pour Kulm, Laisinant et Moonlight Basin a été corrigé le 19 octobre : les fichiers récupérés restent des candidats non validés visuellement.
+- **Coûts et production** : commits ordinaires sans \`[travel-batch-ready]\`; les déploiements associés sont ignorés/annulés par Vercel, pas de nouveau build Preview demandé ; \`main\`/production, immobilier, transferts, CRM et Wink inchangés.
+- **Prochaine validation** : contrôler en contexte authentifié les 20 URL, les en-têtes noindex, les images réellement affichées, le SSR, le responsive et les 13 exclusions ; aucune indexation ni mise en production avant cet examen.
