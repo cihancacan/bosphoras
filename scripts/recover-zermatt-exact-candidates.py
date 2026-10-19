@@ -8,6 +8,21 @@ D=Path('data/travel/zermattMediaCandidates.json')
 O=Path('public/images/travel/zermatt-premium')
 REPORT=Path('docs/travel-zermatt-exact-photo-recovery.json')
 ASSETS={
+ 'destination/scene-3':[
+  ('https://commons.wikimedia.org/wiki/Special:Redirect/file/Bahnhofstrasse_%28Zermatt%29_25.jpg?width=1600',
+   'https://commons.wikimedia.org/wiki/File:Bahnhofstrasse_(Zermatt)_25.jpg',
+   'Bahnhofstrasse in Zermatt · 2022 original photo by Abxbay, Creative Commons')],
+ 'destination/scene-6':[
+  ('https://www.riffelalp.com/fileadmin/documents/riffelalp.ch/images/restaurant-bar/Al_Bosco/Al_Bosco_hiver_2.jpg',
+   'https://www.riffelalp.com/de/kulinarik/ristorante-al-bosco/',
+   'Riffelalp Al Bosco snowy terrace with Matterhorn and winter sun, official resort')],
+ 'destination/scene-7':[
+  ('https://commons.wikimedia.org/wiki/Special:Redirect/file/Matterhorn_Glacier_Paradise%2C_Theodulglacier_-_panoramio.jpg?width=1600',
+   'https://commons.wikimedia.org/wiki/File:Matterhorn_Glacier_Paradise,_Theodulglacier_-_panoramio.jpg',
+   'Theodulglacier from Matterhorn Glacier Paradise by qwesy qwesy, CC BY 3.0'),
+  ('https://commons.wikimedia.org/wiki/Special:Redirect/file/Swiss_Alps.jpg?width=1600',
+   'https://commons.wikimedia.org/wiki/File:Swiss_Alps.jpg',
+   'Swiss Alps from Klein Matterhorn summit, credited Devil Dancer')],
  'the-omnia/view-1':[
   ('https://www.yonder.fr/sites/default/files/destinations/OMNIA_Outside_Summer_q%C2%A9Bruno%20Augsburger%2C%20THE%20OMNIA.jpg',
    'https://www.yonder.fr/hotels/chambres-avec-vues/zermatt-the-omnia-reinterpete-codes-montagne',
