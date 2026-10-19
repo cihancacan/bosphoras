@@ -56,7 +56,17 @@ for(const slug of ['megeve','gstaad','zermatt']){
    assert(registry.includes("'megeve': megeveGuide"),'Megève guide is not staged for noindex review');
    assert(text('data/travel/alpinePremiumEditorial.ts').includes('commercialRightsCleared===true'),
      'Source image publication gate missing');
- } else assert(!registry.includes("'"+slug+"':")&&!registry.includes(slug+":"),'Unready alpine guide routed prematurely: '+slug);
+ } else {
+   // Gstaad and Zermatt were subsequently staged, with per-photo source gates,
+   // but are NOT approved for indexing or live inventory. Reject a stale test
+   // that incorrectly treats their noindex route registration as publication.
+   assert(registry.includes("'"+slug+"': "+slug+"Guide"),'Expected staged noindex guide: '+slug);
+   const gd=text('data/travel/'+slug+'Guide.ts');
+   assert(gd.includes('commercialRightsCleared===true') && gd.includes('visuallyVerified===true'),
+     'Missing per-photo staging safety guard: '+slug);
+   assert(catalog.includes('approvedDestinationSlugs: ReadonlySet<string> = new Set([])'),
+     'A staged alpine draft must stay noindex');
+ }
  console.log(slug+': four documented hotels, five areas and 14 FR/EN FAQs — draft only');
 }
 console.log('Third Alpine editorial drafts, provenance and no-publication QA: OK');
