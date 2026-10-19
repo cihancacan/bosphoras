@@ -1,0 +1,77 @@
+{
+  "workflow": "travel-gstaad-media",
+  "scope": "Gstaad authentic assets, no public preview",
+  "hotel_candidates": 11,
+  "landscape_candidates": 8,
+  "missing": [
+    "gstaad-palace/view-3",
+    "destination/scene-6"
+  ],
+  "diagnostics": [
+    {
+      "type": "source_error",
+      "url": "https://www.palace.ch/en/gallery",
+      "error": "403 Client Error: Forbidden for url: https://www.palace.ch/en/gallery"
+    },
+    {
+      "type": "source_error",
+      "url": "https://www.palace.ch/en/",
+      "error": "403 Client Error: Forbidden for url: https://www.palace.ch/en/"
+    },
+    {
+      "type": "source_error",
+      "url": "https://www.palace.ch/en/rooms-suites/tower-junior-suite-mountain-view/",
+      "error": "403 Client Error: Forbidden for url: https://www.palace.ch/en/rooms-suites/tower-junior-suite-mountain-view/"
+    },
+    {
+      "type": "source_error",
+      "url": "https://www.palace.ch/en/gallery",
+      "error": "403 Client Error: Forbidden for url: https://www.palace.ch/en/gallery"
+    },
+    {
+      "type": "source_error",
+      "url": "https://www.palace.ch/en/gallery",
+      "error": "403 Client Error: Forbidden for url: https://www.palace.ch/en/gallery"
+    },
+    {
+      "type": "source_error",
+      "url": "https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?height=900&mode=crop&quality=90&scale=downscaleonly&width=1440",
+      "error": "404 Client Error: Not Found for url: https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?height=900&mode=crop&quality=90&scale=downscaleonly&width=1440"
+    },
+    {
+      "type": "source_error",
+      "url": "https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?height=698&mode=crop&quality=85&scale=downscaleonly&width=1240",
+      "error": "404 Client Error: Not Found for url: https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?height=698&mode=crop&quality=85&scale=downscaleonly&width=1240"
+    },
+    {
+      "type": "source_error",
+      "url": "https://static-new.lhw.com/HotelImages/Final/LW1606/lw1606_202074221_1400x600.jpg",
+      "error": "403 Client Error: Forbidden for url: https://static-new.lhw.com/HotelImages/Final/LW1606/lw1606_202074221_1400x600.jpg"
+    },
+    {
+      "type": "source_error",
+      "url": "https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?width=1240",
+      "error": "404 Client Error: Not Found for url: https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?width=1240"
+    },
+    {
+      "type": "still_missing",
+      "slot": "gstaad-palace/view-3",
+      "urls_tried": [
+        "https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?height=900&mode=crop&quality=90&scale=downscaleonly&width=1440",
+        "https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?height=698&mode=crop&quality=85&scale=downscaleonly&width=1240",
+        "https://cms.inspirato.com/ImageGen.ashx?image=%2Fmedia%2F9461972%2F9copyright-gstaad-palace_stefano-scata_indoor-pool-palace-spa_570396_300dpi_rgb_favourite.jpg&width=1440",
+        "https://static-new.lhw.com/HotelImages/Final/LW1606/lw1606_202074221_1400x600.jpg",
+        "https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2022/02/IMG_6593.jpeg?ssl=1",
+        "https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?width=1240"
+      ]
+    },
+    {
+      "type": "still_missing",
+      "slot": "destination/scene-6",
+      "urls_tried": [
+        "https://media.myswitzerland.com/image/fetch/c_lfill%2Cg_auto%2Cw_3200%2Ch_1800/f_auto%2Cq_80%2Cfl_keep_iptc/https%3A/www.myswitzerland.com/-/media/st/gadmin/images/destinations/winter/vantage%20point/alpenbeizli_wasserngrat-gstaad-terrasse_239273.jpg",
+        "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/CH-NB_Photoglob-Wehrli_EAD-WEHR-38382-B.tif/lossy-page1-1920px-CH-NB_Photoglob-Wehrli_EAD-WEHR-38382-B.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      ]
+    }
+  ]
+}
