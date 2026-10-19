@@ -148,23 +148,25 @@
       "sourcePages": [
         "https://capdantibes-beachhotel.com/en"
       ],
-      "visualQaWarning": "REJECTED: property listing image is an assembled multi-room collage, not one authentic suite photograph.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/cap-dantibes-beach-hotel/view-2.webp",
-      "downloadUrl": "https://capdantibes-beachhotel.com/_next/static/media/room_0.95b0ca20.jpg",
-      "sourcePage": "https://capdantibes-beachhotel.com/en/suite-sea-view",
-      "candidateContext": "images de Sea view suite    ",
-      "credit": "Official hotel photo",
-      "sha256": "4b98429bf9115d07d1b254d0c8a61d5dba6b2a3c958ffa7a36d47b186ac0b5ef",
-      "dhash": "0001110000001100000111001001010000111101111010011011011001011101",
-      "bytes": 223276,
+      "downloadUrl": "https://www.limetravel.se/app/uploads/2018/12/cap_dantibes_beach_hotel_design_suite_with_terrace.jpg",
+      "sourcePage": "https://www.limetravel.se/destinationer/europa/frankrike/cap-dantibes-beach-hotel/",
+      "candidateContext": "Single bright actual Cap d'Antibes Beach Hotel sea-view suite with open terrace",
+      "credit": "Lime Travel · documented Cap d'Antibes Beach Hotel image",
+      "sha256": "b7d71ce85af550fcb3f2be7951ffbd41e65177bbacc044b49b2b5ade5f73f72d",
+      "dhash": "1111100001101101111001011110010101100110111001101101101010011000",
+      "bytes": 180732,
       "originalSize": [
-        1920,
-        1641
+        1600,
+        1100
       ],
       "outputSize": [
-        1404,
-        1200
-      ]
+        1600,
+        1100
+      ],
+      "rejectedSource": "https://capdantibes-beachhotel.com/_next/static/media/room_0.95b0ca20.jpg",
+      "rejectedCandidateContext": "REJECTED: property listing image is an assembled multi-room collage, not one authentic suite photograph."
     },
     {
       "property": "Cap d’Antibes Beach Hotel",
@@ -177,23 +179,25 @@
       "sourcePages": [
         "https://capdantibes-beachhotel.com/en"
       ],
-      "visualQaWarning": "REJECTED: promotional collage of unrelated panels and text/signage, not a single genuine hotel photograph.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/cap-dantibes-beach-hotel/view-3.webp",
-      "downloadUrl": "https://capdantibes-beachhotel.com/_next/static/media/slider_0.cd77e257.jpg",
-      "sourcePage": "https://capdantibes-beachhotel.com/en",
-      "candidateContext": "liste d'image    ",
-      "credit": "Official hotel photo",
-      "sha256": "52b7d3e303432a41d8eca49d0a38678af7d5681d863ae10710785edf16cdd03b",
-      "dhash": "1010011110110001010110010100010110100101001000100011101000101010",
-      "bytes": 188394,
+      "downloadUrl": "https://en.epaillote.com/project/resources/img/fullsize/view-from-the-sky_cap-d-antibes-beach-hotel_rc_preview.jpg",
+      "sourcePage": "https://en.epaillote.com/plages-privees/france/06-alpes-maritimes/antibes-juan-les-pins/baba-cap-d-antibes-beach-hotel",
+      "candidateContext": "BABA Cap d'Antibes Beach Hotel single aerial of private beach, turquoise water and property",
+      "credit": "ePaillote · documented BABA Cap d'Antibes Beach Hotel",
+      "sha256": "41a7ba7a3236a93833eaa98ac88336bbf958f607b3c7487f6b867775ece76d1d",
+      "dhash": "0010110010001110010010000010111100001111000000110110001101100010",
+      "bytes": 469166,
       "originalSize": [
-        4082,
-        1346
+        1600,
+        1186
       ],
       "outputSize": [
-        1800,
-        594
-      ]
+        1600,
+        1186
+      ],
+      "rejectedSource": "https://capdantibes-beachhotel.com/_next/static/media/slider_0.cd77e257.jpg",
+      "rejectedCandidateContext": "REJECTED: promotional collage of unrelated panels and text/signage, not a single genuine hotel photograph."
     },
     {
       "property": "Villa Miraé",
@@ -206,23 +210,25 @@
       "sourcePages": [
         "https://www.villamirae-capantibes.com/"
       ],
-      "visualQaWarning": "REJECTED: predominantly abstract cyan reflection, not an identifiable external photograph of renovated Villa Miraé.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/villa-mirae/view-1.webp",
-      "downloadUrl": "https://d1nzrcdi1gg6zy.cloudfront.net/cache/img/hotel-villa-mirae-mer-248782-1920-500-landscape.jpg?q=1745501431",
+      "downloadUrl": "https://d1nzrcdi1gg6zy.cloudfront.net/cache/img/villa-mirae-exterieur-249915-3840-2160-crop.jpg?q=1745501408",
       "sourcePage": "https://www.villamirae-capantibes.com/en/",
-      "candidateContext": "Hôtel Villa Miraé - Mer    ",
-      "credit": "Official hotel photo",
-      "sha256": "8cf2409284f8b18bda0f2856faae32645e30fcbe98fc39d00d7db4e8d3a67a2f",
-      "dhash": "0000101100110011001001110100011100010011000111110000110100000001",
-      "bytes": 152552,
+      "candidateContext": "Villa Miraé renovated coral-pink hotel courtyard with patio arches, white umbrellas, dining tables and fountain",
+      "credit": "Villa Miraé · current official hotel photography",
+      "sha256": "6e0a9062280c159d5c9ddeeca727553acf1ce387de2bd752469bd11ff00f8c88",
+      "dhash": "0001110100110111111011000110111111100110011101111001011000110110",
+      "bytes": 221918,
       "originalSize": [
-        1920,
-        1280
+        3840,
+        2160
       ],
       "outputSize": [
         1800,
-        1200
-      ]
+        1013
+      ],
+      "rejectedSource": "https://d1nzrcdi1gg6zy.cloudfront.net/cache/img/hotel-villa-mirae-mer-248782-1920-500-landscape.jpg?q=1745501431",
+      "rejectedCandidateContext": "REJECTED: predominantly abstract cyan reflection, not an identifiable external photograph of renovated Villa Miraé."
     },
     {
       "property": "Villa Miraé",
@@ -465,24 +471,24 @@
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "REJECTED: distant seascape dominated by road and vehicles; does not depict the required Garoupe beach.",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Baigneuses_sur_la_riviera_%C3%A0_Garoupe_Beach_%28Antibes%29_%28CN%29_-_btv1b53280113c.jpg/1920px-Baigneuses_sur_la_riviera_%C3%A0_Garoupe_Beach_%28Antibes%29_%28CN%29_-_btv1b53280113c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedCandidateContext": "1900s black-and-white historical beach bathers, unsuitable for 2026 premium destination photography.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Plage_de_la_garoupe.jpg/1920px-Plage_de_la_garoupe.jpg",
+      "rejectedCandidateContext": "REJECTED: distant seascape dominated by road and vehicles; does not depict the required Garoupe beach.",
       "localPath": "/images/travel/cap-dantibes-premium/destination/scene-3.webp",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Plage_de_la_garoupe.jpg/1920px-Plage_de_la_garoupe.jpg",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Plage_de_la_garoupe.jpg",
-      "candidateContext": "Plage de la garoupe.jpg",
-      "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
-      "sha256": "3b6edea2052e6b5585803993129824b698c2fe059829f801314510301db1745c",
-      "dhash": "1000000000000010100000010011010100100001011101011010011100010111",
-      "bytes": 191306,
+      "downloadUrl": "https://thetraveler.s3.amazonaws.com/images/hero/plage-de-la-garoupe-french-riviera-beach-day_1200x675.jpg",
+      "sourcePage": "https://www.thetraveler.org/is-plage-de-la-garoupe-worth-a-french-riviera-beach-day/",
+      "candidateContext": "Genuine Cap d'Antibes Garoupe cove with sand, umbrella pines, clear azure water and shoreline villas",
+      "credit": "TheTraveler · exact Plage de la Garoupe photo",
+      "sha256": "515b45240cc5953ceee3071baf49f043ab154b68d711eda24138e48f5e09557e",
+      "dhash": "0000000000000001000001111000011110010011011111111111111100011111",
+      "bytes": 151998,
       "originalSize": [
-        1920,
-        1440
+        1200,
+        675
       ],
       "outputSize": [
-        1600,
-        1200
+        1200,
+        675
       ]
     },
     {
@@ -591,23 +597,25 @@
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "REJECTED: distant antenna-dominated lighthouse under grey sky, below Bosphoras premium daylight standard.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/destination/scene-7.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/ANTIBES_-_Phare_de_la_Garoupe.jpg/1920px-ANTIBES_-_Phare_de_la_Garoupe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:ANTIBES_-_Phare_de_la_Garoupe.jpg",
-      "candidateContext": "File:ANTIBES - Phare de la Garoupe.jpg",
-      "credit": "Abxbay · CC BY-SA 4.0",
-      "sha256": "09319a05c0385bf8726db098e1c66fc3d289da8cf8f44a0f18aa6fc48cb9f5f4",
-      "dhash": "0000000110100001101001101001011010011110100010100010010100100011",
-      "bytes": 81244,
+      "downloadUrl": "https://www.antibesjuanlespins.com/sites/antibes/files/styles/ratio_16_9_xl/public/content/images/yq4b2233.jpg?itok=3O6RgzBa",
+      "sourcePage": "https://www.antibesjuanlespins.com/en/discover/the-must-sees/the-garoupe-plateau",
+      "candidateContext": "Recognisable historic Garoupe lighthouse white tower and red lantern beside blossom and blue sky",
+      "credit": "Antibes Juan-les-Pins official tourism office",
+      "sha256": "2cc00e1d183d55ab3632b016947f309845d9f36b65e7f30b56145a92c2d1ad43",
+      "dhash": "0101111001001111001011010010100100001111010011100000011000000110",
+      "bytes": 291042,
       "originalSize": [
         1920,
-        1440
+        1080
       ],
       "outputSize": [
-        1600,
-        1200
-      ]
+        1800,
+        1013
+      ],
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/ANTIBES_-_Phare_de_la_Garoupe.jpg/1920px-ANTIBES_-_Phare_de_la_Garoupe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "REJECTED: distant antenna-dominated lighthouse under grey sky, below Bosphoras premium daylight standard."
     },
     {
       "key": "scene-8",
