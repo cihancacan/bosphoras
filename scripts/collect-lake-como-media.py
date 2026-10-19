@@ -96,11 +96,11 @@ lib.HOTEL_DIRECT["il-sereno/view-2"]=[
 # Exact Commons filenames with documented source descriptions; no generic lake stand-ins.
 lib.DIRECT_LANDSCAPES.update({
  "scene-1":lib.commons_exact("Panorama del lago di Como.jpg"),
- "scene-2":lib.commons_exact("Cernobbio hillside from Lake Como.jpg"),
- "scene-3":lib.commons_exact("Bellagio panorama from Lake Como ferry.jpg"),
- "scene-5":lib.commons_exact("Veduta del lago di Como da Bellagio.jpg"),
- "scene-6":lib.commons_exact("Varenna lakecomo.jpg"),
- "scene-9":lib.commons_exact("Panoramic view of the harbour of Moltrasio - 1.jpg")
+ "scene-2":lib.direct_wikimedia("Cernobbio hillside from Lake Como.jpg"),
+ "scene-3":lib.direct_wikimedia("Bellagio panorama from Lake Como ferry.jpg"),
+ "scene-5":lib.direct_wikimedia("Veduta del lago di Como da Bellagio.jpg"),
+ "scene-6":lib.direct_wikimedia("Varenna lakecomo.jpg"),
+ "scene-9":lib.direct_wikimedia("Panoramic view of the harbour of Moltrasio - 1.jpg")
 })
 lib.COMMONS_EXACT={}
 lib.DIRECT_WIKIMEDIA={}
