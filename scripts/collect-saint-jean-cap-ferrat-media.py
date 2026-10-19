@@ -53,7 +53,7 @@ lib.DIRECT_LANDSCAPES={
 # prefer its own thumbnail over an unverifiable generic resort photograph.
 lib.DIRECT_LANDSCAPES["scene-5"]=lib.commons_exact("Port de Saint-Jean Cap-Ferrat.jpg")
 # Explicit high-confidence Paloma Beach sources, geographically in Saint-Jean-Cap-Ferrat.
-lib.DIRECT_LANDSCAPES["scene-3"]=lib.commons_exact("20211209 123405 Plage de la Paloma.jpg")+lib.commons_exact("Paloma Beach, Saint-Jean-Cap-Ferrat.png")
+lib.DIRECT_LANDSCAPES["scene-3"]=lib.commons_exact("Paloma Beach, Saint-Jean-Cap-Ferrat.png")+lib.commons_exact("20211209 123405 Plage de la Paloma.jpg")
 lib.DIRECT_LANDSCAPES["scene-6"]=lib.commons_exact("Plage de Passable.jpg")
 lib.DIRECT_LANDSCAPES["scene-7"]=lib.commons_exact("Cap-Ferrat lighthouse from east.jpg")
 # Four Seasons does not allow the collector to scrape its website (HTTP 403).
@@ -108,6 +108,20 @@ lib.HOTEL_DIRECT["grand-hotel-cap-ferrat/view-1"].extend(
 )
 # Alternative real sources for visually rejected photographs; all remain unapproved
 # until each downloaded image has been individually inspected.
+# Hotel-identified daylight interior image; use as an unapproved replacement candidate.
+lib.HOTEL_DIRECT["la-villa-cap-ferrat/view-2"]=[
+ (100,"https://images.trvl-media.com/lodging/5000000/4330000/4320600/4320552/a2f6fb75.jpg",
+  "https://www.expedia.com/Nice-Hotels-Boutique-Hotel-Spa-La-Villa-Cap-Ferrat.h4320552.Hotel-Information",
+  "Actual La Villa Cap Ferrat spacious bright seaview room and balcony", "Expedia · verified La Villa Cap Ferrat hotel listing"),
+ (99,"https://images.trvl-media.com/lodging/5000000/4330000/4320600/4320552/b5c81466.jpg",
+  "https://www.hotels.com/ho376460/boutique-hotel-spa-la-villa-cap-ferrat-saint-jean-cap-ferrat-france/",
+  "Actual La Villa Cap Ferrat bright bedroom with terrace overlooking sea", "Hotels.com · La Villa Cap Ferrat property images")
+]
+lib.HOTEL_DIRECT["brise-marine/view-2"]=[
+ (100,"https://www.hotel-brisemarine.com/images/gallery/gallerie/0505_ok_cliente.jpg",
+  "https://www.hotel-brisemarine.com/en/gallery-237.html",
+  "Brise Marine charming bright garden dining and breakfast terrace with Mediterranean hills", "Hôtel Brise Marine · official photograph")
+]
 lib.HOTEL_DIRECT["royal-riviera/view-1"]=[
  (100,"https://www.royal-riviera.com/wp-content/uploads/2022/01/DSC07159-HDR.jpg",
   "https://www.royal-riviera.com/en/the-royal-riviera/the-royal-riviera-atmosphere/",

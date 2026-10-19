@@ -114,12 +114,11 @@
       "key": "view-1",
       "slotIntent": "seafront hotel exterior",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.royal-riviera.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "rejectedSource": "https://www.royal-riviera.com/wp-content/uploads/2022/04/DSC_8490_1440x864.jpg",
       "rejectedCandidateContext": "EDITORIAL HOLD: Below luxury standard: foreground guests and loungers obscure the hotel's architecture; seek genuine sunlit façade/garden.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/royal-riviera/view-1.webp",
@@ -137,7 +136,12 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "frCaption": "Royal-Riviera à Saint-Jean-Cap-Ferrat — façade Belle Époque rose et allée de palmiers dans un jardin verdoyant",
+      "enCaption": "Royal-Riviera in Saint-Jean-Cap-Ferrat — Belle Époque pink façade and palm-lined path in lush gardens",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Genuine downloaded original WebP inspected in second contact sheet, official Royal-Riviera architecture source, daytime property-identifying shot with clean garden foreground.",
+      "ownerRightsAuthorization": "Bosphoras operator confirmed project photo-use permission 2026-10-19; retain exact underlying author and share-alike licence if relevant."
     },
     {
       "property": "Royal-Riviera",
@@ -340,7 +344,7 @@
       "property": "Hôtel Brise Marine",
       "propertyKey": "brise-marine",
       "key": "view-2",
-      "slotIntent": "sea-view premium room terrace",
+      "slotIntent": "terrace breakfast with Riviera outlook (replace poor balcony furniture shot)",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
@@ -606,13 +610,12 @@
       "label": "Cap Ferrat lighthouse and coastal trail",
       "query": "Phare du Cap Ferrat Mediterranean sentier",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Cap-Ferrat_lighthouse_from_east.jpg/1920px-Cap-Ferrat_lighthouse_from_east.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-7.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/France-002563_-_Cap_Ferrat_Light_%2815720311590%29.jpg/1920px-France-002563_-_Cap_Ferrat_Light_%2815720311590%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -630,7 +633,12 @@
         1763,
         1200
       ],
-      "rejectedCandidateContext": "EDITORIAL HOLD: Geographically correct but overexposed white rock dominates and the lighthouse is too small; seek more attractive lighthouse/coastal framing."
+      "rejectedCandidateContext": "EDITORIAL HOLD: Geographically correct but overexposed white rock dominates and the lighthouse is too small; seek more attractive lighthouse/coastal framing.",
+      "frCaption": "Phare du cap Ferrat — tour blanche dominant les pins, la côte rocheuse et la mer Méditerranée",
+      "enCaption": "Cap Ferrat lighthouse — white coastal tower above pine-covered cliffs and blue Mediterranean water",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Real new Commons aerial-coast photograph inspected, recognisable lighthouse and deep blue sea, author Dennis G. Jarvis, CC BY-SA 2.0, genuine geographical subject.",
+      "ownerRightsAuthorization": "Bosphoras operator confirmed project photo-use permission 2026-10-19; retain exact underlying author and share-alike licence if relevant."
     },
     {
       "key": "scene-8",
