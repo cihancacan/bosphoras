@@ -1,0 +1,33 @@
+name: Travel Monaco - editorial and TypeScript QA without Vercel build
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - .github/workflows/travel-monaco-qa.yml
+      - scripts/check-monaco-draft.mjs
+      - data/travel/monacoGuide.ts
+      - data/travel/monacoDraftGuide.ts
+      - data/travel/monacoDraftFaq.ts
+      - data/travel/monacoMediaCandidates.json
+      - data/travel/monacoPremiumEditorial.ts
+      - data/travel/featuredCityGuides.ts
+      - components/travel/FeaturedCityGuide.tsx
+      - components/travel/TravelPages.tsx
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: TypeScript compile without Vercel build
+        run: npm run typecheck
+      - name: Monaco editorial, indexation and provenance checks
+        run: node scripts/check-monaco-draft.mjs
