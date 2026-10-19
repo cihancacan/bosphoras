@@ -1,0 +1,31 @@
+name: Travel Zermatt — TypeScript and 21-photo editorial QA
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - .github/workflows/travel-zermatt-qa.yml
+      - scripts/check-zermatt-draft.mjs
+      - data/travel/zermattGuide.ts
+      - data/travel/zermattDraftGuide.ts
+      - data/travel/zermattDraftFaq.ts
+      - data/travel/zermattMediaCandidates.json
+      - data/travel/featuredCityGuides.ts
+      - data/travel/alpinePremiumEditorial.ts
+      - components/travel/FeaturedCityGuide.tsx
+      - components/travel/TravelPages.tsx
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 17
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '20', cache: 'npm'}
+      - run: npm ci --no-audit --no-fund
+      - run: npm run typecheck
+      - run: node scripts/check-zermatt-draft.mjs
+      - name: Check other completed alpine guides unchanged
+        run: node scripts/check-travel-batch-preview.mjs
