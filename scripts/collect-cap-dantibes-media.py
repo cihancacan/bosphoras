@@ -69,6 +69,21 @@ lib.HOTEL_DIRECT["cap-dantibes-beach-hotel/view-2"]=[
  "Single bright actual Cap d'Antibes Beach Hotel sea-view suite with open terrace",
  "Lime Travel · documented Cap d'Antibes Beach Hotel image")
 ]
+# 2023+ redesigned rooms only (architect Bernard Dubois), not pre-reopening shots.
+lib.HOTEL_DIRECT["cap-dantibes-beach-hotel/view-2"]=[
+ (160,"https://capdantibes-beachhotel.com/_next/static/media/random_1.03012bb9.jpg",
+   "https://capdantibes-beachhotel.com/en/le-cap-suite",
+   "Actual contemporary 2023-redesigned Le Cap Suite, bespoke pale furniture, full-width sea-view terrace",
+   "Cap d'Antibes Beach Hotel · official renovated 2023+ Le Cap Suite photo"),
+ (150,"https://www.bernarddubois.com/wp-content/uploads/2023/05/CABH_BD13-1920x1280.jpg",
+   "https://www.bernarddubois.com/projects/beach-hotel/",
+   "Renovated 2023 Cap d'Antibes Beach Hotel actual luxury room, architect Bernard Dubois",
+   "Bernard Dubois Architects · post-2023 redesigned hotel photography"),
+ (140,"https://storage.googleapis.com/webimages-p1shrd/hotel/25890/images/room/suite_le_cap_02.jpg",
+   "https://www.relaischateaux.com/us/hotel/cap-d-antibes-beach-hotel/",
+   "Current Cap d'Antibes Beach Hotel Le Cap Suite sea-facing bedroom and terrace",
+   "Relais & Châteaux · contemporary Le Cap Suite photograph")
+]+lib.HOTEL_DIRECT["cap-dantibes-beach-hotel/view-2"]
 lib.HOTEL_DIRECT["cap-dantibes-beach-hotel/view-3"]=[
  (120,"https://en.epaillote.com/project/resources/img/fullsize/view-from-the-sky_cap-d-antibes-beach-hotel_rc_preview.jpg",
  "https://en.epaillote.com/plages-privees/france/06-alpes-maritimes/antibes-juan-les-pins/baba-cap-d-antibes-beach-hotel",

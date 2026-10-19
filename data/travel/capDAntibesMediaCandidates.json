@@ -143,8 +143,8 @@
       "key": "view-2",
       "slotIntent": "Bright real hotel room with terrace and accurately identified category",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": true,
-      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
       "sourcePages": [
         "https://capdantibes-beachhotel.com/en"
       ],
@@ -166,11 +166,7 @@
       ],
       "rejectedSource": "https://capdantibes-beachhotel.com/_next/static/media/room_0.95b0ca20.jpg",
       "rejectedCandidateContext": "REJECTED: property listing image is an assembled multi-room collage, not one authentic suite photograph.",
-      "frCaption": "Cap d’Antibes Beach Hotel — suite contemporaine avec fauteuil bleu et terrasse face à la Méditerranée",
-      "enCaption": "Cap d’Antibes Beach Hotel — contemporary suite with blue lounge seating and sea-facing terrace",
-      "visualReviewedAt": "2026-10-19",
-      "visualReviewBasis": "Inspected saved 1600x1100 true single hotel suite image in GitHub Actions 39317010287; balcony, sofa and Mediterranean visible, property identified by original specialist travel publication.",
-      "ownerRightsAuthorization": "Bosphoras operator confirms project-wide rights to use photographs (October 2026); credit original sources and respect any specific photographer or Creative Commons licence. Direct third-party licence not separately independently verified."
+      "visualQaWarning": "REPLACE: image dated 2018 is older than the Cap d'Antibes Beach Hotel 2023 Bernard Dubois redesign; no historical room photo in current luxury guide."
     },
     {
       "property": "Cap d’Antibes Beach Hotel",

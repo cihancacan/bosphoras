@@ -46,3 +46,8 @@ Villa Miraé est l’ancienne Impérial Garoupe ; ne jamais réutiliser des clic
 - **Bilan final 12/12 photos d’hôtels + 9/9 lieux**, soit 21/21 candidats téléchargés et approuvés individuellement pour la galerie interne ; légendes françaises et anglaises contextualisées, sources et crédits conservés. Les anciennes photographies rejetées ne sont plus référencées par le manifeste du guide.
 - Une autorisation générale d'utilisation des photos pour Bosphoras a été déclarée par l'opérateur ; conserver l'attribution et les obligations des licences propres aux sources. Ceci ne prouve pas un accord commercial individuel de chaque photographe.
 - **Protection maintenue :** `approvedForCommercialPublication=false`, `visuallyVerified=false` au niveau global, destinations `noindex` jusqu'à la Preview finale de lot et l'audit du rendu. Aucun prix ni stock Wink confirmé, aucune mise en production ni build Vercel demandé.
+
+### Ultime exigence de fraîcheur photographique
+
+- La première suite trouvée sur un site de voyage (galerie datée de 2018) précède la refonte de l'hôtel par Bernard Dubois en 2023. Bien qu'elle représente l'ancien établissement, **sa validation est révoquée** : Bosphoras doit montrer une suite réellement représentative de la rénovation. Sources de remplacement prioritaires : [la suite Le Cap actuelle](https://capdantibes-beachhotel.com/en/le-cap-suite), [architecte du projet rénové](https://www.bernarddubois.com/projects/beach-hotel/) et [Relais & Châteaux](https://www.relaischateaux.com/us/hotel/cap-d-antibes-beach-hotel/).
+- Nouvelle image à télécharger, inspecter visuellement et revérifier avant de rétablir l’état **21/21**. Pas de publication de l’ancienne photo.
