@@ -10,6 +10,12 @@ import importlib.util
 spec=importlib.util.spec_from_file_location("bosphoras_image_collector",Path("scripts/collect-monaco-media.py"))
 lib=importlib.util.module_from_spec(spec)
 spec.loader.exec_module(lib)
+# Clear the Monaco-specific direct URL tables; otherwise they take precedence
+# over geography-specific Commons queries and silently contaminate this destination.
+lib.HOTEL_DIRECT={}
+lib.DIRECT_LANDSCAPES={}
+lib.DIRECT_WIKIMEDIA={}
+lib.COMMONS_EXACT={}
 lib.MANIFEST=Path("data/travel/saintJeanCapFerratMediaCandidates.json")
 lib.OUT=Path("public/images/travel/saint-jean-cap-ferrat-premium")
 lib.HOTELS={
