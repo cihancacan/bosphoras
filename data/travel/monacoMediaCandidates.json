@@ -1,0 +1,289 @@
+{
+  "destination": "monaco",
+  "generatedAt": "2026-10-19",
+  "scope": "SOURCE CANDIDATES ONLY; DRAFT FR EN, NOINDEX; NOT A FINISHED 21-PHOTO GUIDE",
+  "expectedHotelPhotos": 12,
+  "expectedDestinationPhotos": 9,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "ownerRightsAuthorization": "Bosphoras operator confirmed rights to use suitable project photos on 2026-10-19. Subject identity, attribution and image-specific publication review still required.",
+  "hotels": [
+    {
+      "property": "Hôtel de Paris Monte-Carlo",
+      "propertyKey": "hotel-de-paris",
+      "key": "view-1",
+      "slotIntent": "facade-casino-square",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.montecarlosbm.com/en/hotel-monaco/hotel-paris-monte-carlo"
+      ],
+      "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release"
+    },
+    {
+      "property": "Hôtel de Paris Monte-Carlo",
+      "propertyKey": "hotel-de-paris",
+      "key": "view-2",
+      "slotIntent": "suite",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.montecarlosbm.com/en/hotel-monaco/hotel-paris-monte-carlo"
+      ],
+      "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release"
+    },
+    {
+      "property": "Hôtel de Paris Monte-Carlo",
+      "propertyKey": "hotel-de-paris",
+      "key": "view-3",
+      "slotIntent": "bar-americain",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.montecarlosbm.com/en/hotel-monaco/hotel-paris-monte-carlo"
+      ],
+      "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release"
+    },
+    {
+      "property": "Hôtel Hermitage Monte-Carlo",
+      "propertyKey": "hotel-hermitage",
+      "key": "view-1",
+      "slotIntent": "belle-epoque-facade",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo"
+      ],
+      "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release"
+    },
+    {
+      "property": "Hôtel Hermitage Monte-Carlo",
+      "propertyKey": "hotel-hermitage",
+      "key": "view-2",
+      "slotIntent": "diamond-suite",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo"
+      ],
+      "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release"
+    },
+    {
+      "property": "Hôtel Hermitage Monte-Carlo",
+      "propertyKey": "hotel-hermitage",
+      "key": "view-3",
+      "slotIntent": "jardin-d-hiver",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.montecarlosbm.com/en/hotel-monaco/hotel-hermitage-monte-carlo"
+      ],
+      "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release"
+    },
+    {
+      "property": "Hôtel Métropole Monte-Carlo",
+      "propertyKey": "hotel-metropole",
+      "key": "view-1",
+      "slotIntent": "courtyard",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.metropole.com/"
+      ],
+      "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release"
+    },
+    {
+      "property": "Hôtel Métropole Monte-Carlo",
+      "propertyKey": "hotel-metropole",
+      "key": "view-2",
+      "slotIntent": "jacques-garcia-suite",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.metropole.com/"
+      ],
+      "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release"
+    },
+    {
+      "property": "Hôtel Métropole Monte-Carlo",
+      "propertyKey": "hotel-metropole",
+      "key": "view-3",
+      "slotIntent": "odyssey-pool",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.metropole.com/"
+      ],
+      "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release"
+    },
+    {
+      "property": "Monte-Carlo Bay Hotel & Resort",
+      "propertyKey": "monte-carlo-bay",
+      "key": "view-1",
+      "slotIntent": "lagoon",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort"
+      ],
+      "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release"
+    },
+    {
+      "property": "Monte-Carlo Bay Hotel & Resort",
+      "propertyKey": "monte-carlo-bay",
+      "key": "view-2",
+      "slotIntent": "sea-view-room",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort"
+      ],
+      "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release"
+    },
+    {
+      "property": "Monte-Carlo Bay Hotel & Resort",
+      "propertyKey": "monte-carlo-bay",
+      "key": "view-3",
+      "slotIntent": "gardens-blue-bay",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://www.montecarlosbm.com/en/hotel-monaco/monte-carlo-bay-hotel-resort"
+      ],
+      "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release"
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "label": "Casino Square and Hôtel de Paris façade",
+      "query": "Monaco Casino Square promenade",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.visitmonaco.com/"
+      ],
+      "rights": "Operator authorization noted; retain author and license evidence and review each image manually"
+    },
+    {
+      "key": "scene-2",
+      "label": "Port Hercule yachts and bay",
+      "query": "Monaco Port Hercule yachts harbour panorama",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.visitmonaco.com/"
+      ],
+      "rights": "Operator authorization noted; retain author and license evidence and review each image manually"
+    },
+    {
+      "key": "scene-3",
+      "label": "Monaco-Ville and Prince's Palace",
+      "query": "Palais Princier de Monaco Rocher",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.visitmonaco.com/"
+      ],
+      "rights": "Operator authorization noted; retain author and license evidence and review each image manually"
+    },
+    {
+      "key": "scene-4",
+      "label": "Larvotto beach waterfront",
+      "query": "Monaco Larvotto beach promenade",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.visitmonaco.com/"
+      ],
+      "rights": "Operator authorization noted; retain author and license evidence and review each image manually"
+    },
+    {
+      "key": "scene-5",
+      "label": "Fontvieille harbour panorama",
+      "query": "Monaco Port de Fontvieille marina",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.visitmonaco.com/"
+      ],
+      "rights": "Operator authorization noted; retain author and license evidence and review each image manually"
+    },
+    {
+      "key": "scene-6",
+      "label": "Hermitage area and Monte-Carlo skyline",
+      "query": "Monaco Hotel Hermitage Casino gardens",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.visitmonaco.com/"
+      ],
+      "rights": "Operator authorization noted; retain author and license evidence and review each image manually"
+    },
+    {
+      "key": "scene-7",
+      "label": "Japanese Garden Monaco",
+      "query": "Monaco Jardin Japonais scenic",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.visitmonaco.com/"
+      ],
+      "rights": "Operator authorization noted; retain author and license evidence and review each image manually"
+    },
+    {
+      "key": "scene-8",
+      "label": "Monaco Oceanographic Museum from sea",
+      "query": "Musee oceanographique Monaco cliffs panorama",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.visitmonaco.com/"
+      ],
+      "rights": "Operator authorization noted; retain author and license evidence and review each image manually"
+    },
+    {
+      "key": "scene-9",
+      "label": "Mareterra seaside waterfront gardens",
+      "query": "Monaco Mareterra waterfront promenade",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "sourcePages": [
+        "https://commons.wikimedia.org/",
+        "https://www.visitmonaco.com/"
+      ],
+      "rights": "Operator authorization noted; retain author and license evidence and review each image manually"
+    }
+  ]
+}
