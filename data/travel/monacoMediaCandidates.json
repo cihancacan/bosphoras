@@ -433,14 +433,13 @@
       "label": "Casino Square and Hôtel de Paris façade",
       "query": "Monaco Casino Square promenade",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://generationvoyage.fr/visiter-monte-carlo-faire-voir/",
       "candidateContext": "Casino de Monte-Carlo, contemporary sunlit façade and mirrored globe fountain",
       "credit": "Génération Voyage — photograph of Monte-Carlo Casino Square",
@@ -459,21 +458,25 @@
       "outputSize": [
         1536,
         1024
-      ]
+      ],
+      "frCaption": "Casino de Monte-Carlo — façade, palmiers et fontaine miroir, perspective photographique de la place",
+      "enCaption": "Casino de Monte-Carlo — ornate façade, palms and mirror fountain; photographic view of the square",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Saved WebP individually inspected at original pixel detail; correct Monaco landmark/location, genuine photographic framing, varied subjects, no duplicate. Dated event photo explicitly labelled.",
+      "visualQaNote": "Photograph sourced from article published 2025; casino landscaping may have evolved; do not claim current layout."
     },
     {
       "key": "scene-2",
       "label": "Port Hercule yachts and bay",
       "query": "Monaco Port Hercule yachts harbour panorama",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://www.hellomonaco.com/news/latest-news/what-s-making-news-in-monaco/",
       "candidateContext": "Port Hercule at the Monaco Yacht Show 2017, aerial panorama of superyachts and waterfront",
       "credit": "HelloMonaco / Monaco Yacht Show event photograph",
@@ -491,7 +494,12 @@
       "outputSize": [
         1602,
         1200
-      ]
+      ],
+      "frCaption": "Port Hercule lors du Monaco Yacht Show 2017 — panorama aérien des superyachts",
+      "enCaption": "Port Hercule during the 2017 Monaco Yacht Show — aerial panorama of superyachts",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Saved WebP individually inspected at original pixel detail; correct Monaco landmark/location, genuine photographic framing, varied subjects, no duplicate. Dated event photo explicitly labelled.",
+      "visualQaNote": "2017 Monaco Yacht Show event photograph, not representation of permanent 2026 mooring layout."
     },
     {
       "key": "scene-3",
@@ -531,14 +539,13 @@
       "label": "Larvotto beach waterfront",
       "query": "Monaco Larvotto beach promenade",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://www.revigorate.com/things-to-do-in-monaco-pt.html",
       "candidateContext": "Larvotto beach with turquoise Mediterranean sea, summer swimmers and coastal promenade",
       "credit": "Revigorate travel photography, Monaco Larvotto",
@@ -556,7 +563,11 @@
       "outputSize": [
         1300,
         865
-      ]
+      ],
+      "frCaption": "Larvotto — plage ensoleillée, Méditerranée turquoise et palmiers",
+      "enCaption": "Larvotto — sunlit beach, turquoise Mediterranean water and palms",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Saved WebP individually inspected at original pixel detail; correct Monaco landmark/location, genuine photographic framing, varied subjects, no duplicate. Dated event photo explicitly labelled."
     },
     {
       "key": "scene-5",
