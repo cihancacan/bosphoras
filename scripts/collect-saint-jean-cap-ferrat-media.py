@@ -116,9 +116,6 @@ lib.HOTEL_DIRECT["royal-riviera/view-1"]=[
   "https://www.royal-riviera.com/en/the-royal-riviera/the-royal-riviera-atmosphere/",
   "Sunlit Royal-Riviera facade and manicured gardens", "Royal-Riviera official hotel CMS")
 ]
-lib.HOTELS["la-villa-cap-ferrat"]["view-2"]=[("https://villacapferrat.fr/en/rooms/",["terrace","balcony","sea","superior","view","chambre"])]
-lib.HOTELS["la-villa-cap-ferrat"]["view-3"]=[("https://villacapferrat.fr/en/gallery/",["spa","sauna","jacuzzi","garden","terrace","breakfast","wellness"])]
-lib.HOTELS["brise-marine"]["view-2"]=[("https://www.hotel-brisemarine.com/en/gallery-237.html",["vue","sea","balcon","chambre","room","terrace"])]
 lib.DIRECT_LANDSCAPES["scene-7"]=lib.commons_exact("France-002563 - Cap Ferrat Light (15720311590).jpg")
 lib.DIRECT_LANDSCAPES["scene-9"]=lib.commons_exact("Panorama baie des Fourmis Beaulieu-sur-Mer.jpg")
 lib.DIRECT_WIKIMEDIA={}
@@ -157,6 +154,11 @@ lib.LANDSCAPES={
  "scene-8":("Promenade Maurice Rouvier Saint Jean Cap Ferrat",("rouvier",)),
  "scene-9":("Baie des Fourmis Saint Jean Cap Ferrat",("fourmis",)),
 }
+
+# Override existing hotel pages only after lib.HOTELS has been defined.
+lib.HOTELS["la-villa-cap-ferrat"]["view-2"]=[("https://villacapferrat.fr/en/rooms/",["terrace","balcony","sea","superior","view","chambre"])]
+lib.HOTELS["la-villa-cap-ferrat"]["view-3"]=[("https://villacapferrat.fr/en/gallery/",["spa","sauna","jacuzzi","garden","terrace","breakfast","wellness"])]
+lib.HOTELS["brise-marine"]["view-2"]=[("https://www.hotel-brisemarine.com/en/gallery-237.html",["vue","sea","balcon","chambre","room","terrace"])]
 
 # Do not retry rejected image URLs or treat different crops as separate photos.
 _original_collect=lib.collect
