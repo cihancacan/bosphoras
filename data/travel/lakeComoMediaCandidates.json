@@ -16,7 +16,7 @@
       "sourcePages": [
         "https://www.villadeste.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REJECTED: twilight/night facade with artificially illuminated floating pool fails bright daytime hero standard; replace with genuine sunlit property exterior.",
       "localPath": "/images/travel/lake-como-premium/villa-d-este/view-1.webp",
       "downloadUrl": "https://cdn.sanity.io/images/f489xjk7/production/fce30d517c05b2ca476ecf387a60dde4761f2512-1800x1348.jpg?auto=format&h=1348&w=1800",
       "sourcePage": "https://www.kirkerholidays.com/hotel/villa-d-este/",
@@ -40,12 +40,11 @@
       "key": "view-2",
       "slotIntent": "Contemporary photo of real Villa d’Este furnished lake-facing suite",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.villadeste.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/villa-d-este/view-2.webp",
       "downloadUrl": "https://www.villadeste.com/assets/img/transform/_1600x1280_crop_center-center_80_none/2721/05-image-room-small-junior-suite-exclusive.webp",
       "sourcePage": "https://www.villadeste.com/rooms-and-suites",
@@ -61,7 +60,12 @@
       "outputSize": [
         1500,
         1200
-      ]
+      ],
+      "frCaption": "Villa d’Este — chambre classique aux moulures élégantes, ciel de lit et mobilier ancien",
+      "enCaption": "Villa d’Este — classic suite with ornate drapery, carved furnishings and period details",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded local WebP independently inspected in genuine 21-image visual review GitHub Actions 39320895262. Geographic/property-specific identity matches cited exact original; photographic composition and uniqueness reviewed.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use authorization Oct 2026; underlying individual creator/source licences still govern reuse and attribution."
     },
     {
       "property": "Villa d’Este",
@@ -69,12 +73,11 @@
       "key": "view-3",
       "slotIntent": "Original Villa d’Este floating pool and lakeside grounds",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.villadeste.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/villa-d-este/view-3.webp",
       "downloadUrl": "https://www.villadeste.com/assets/img/transform/_1860x1500_crop_center-center_80_none/15170/05-img-text-classico-piscina-galleggiante-sporting-club_2025-09-04-165456_dwmo.webp",
       "sourcePage": "https://www.villadeste.com/sporting-club",
@@ -90,7 +93,12 @@
       "outputSize": [
         1488,
         1200
-      ]
+      ],
+      "frCaption": "Villa d’Este — piscine extérieure et transats rayés au bord du lac",
+      "enCaption": "Villa d’Este — lakeside outdoor pool with striped loungers and garden umbrellas",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded local WebP independently inspected in genuine 21-image visual review GitHub Actions 39320895262. Geographic/property-specific identity matches cited exact original; photographic composition and uniqueness reviewed.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use authorization Oct 2026; underlying individual creator/source licences still govern reuse and attribution."
     },
     {
       "property": "Grand Hotel Tremezzo",
@@ -98,12 +106,11 @@
       "key": "view-1",
       "slotIntent": "Grand Hotel Tremezzo Belle Époque ochre and white façade",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.grandhoteltremezzo.com/en/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/grand-hotel-tremezzo/view-1.webp",
       "downloadUrl": "https://media-assets.ad-italia.it/photos/665f14a84ff4f5eceb98d54a/4%3A3/w_4032%2Ch_3024%2Cc_limit/Grand%20Hotel%20Tremezzo.jpg",
       "sourcePage": "https://www.ad-italia.it/article/grand-hotel-tremezzo-lago-di-como/",
@@ -119,7 +126,12 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Grand Hotel Tremezzo — façade Belle Époque aux stores orange et piscine flottante face au lac",
+      "enCaption": "Grand Hotel Tremezzo — sunlit Belle Époque façade with orange awnings and iconic floating pool",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded local WebP independently inspected in genuine 21-image visual review GitHub Actions 39320895262. Geographic/property-specific identity matches cited exact original; photographic composition and uniqueness reviewed.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use authorization Oct 2026; underlying individual creator/source licences still govern reuse and attribution."
     },
     {
       "property": "Grand Hotel Tremezzo",
@@ -132,7 +144,7 @@
       "sourcePages": [
         "https://www.grandhoteltremezzo.com/en/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REJECTED: balcony lake perspective without visible bedroom does not establish real premium suite interior; replace with exact hotel suite.",
       "localPath": "/images/travel/lake-como-premium/grand-hotel-tremezzo/view-2.webp",
       "downloadUrl": "https://www.grandhoteltremezzo.com/media/s4vp5wjt/grand_hotel_tremezzo-roomssuites-ruben-0g5a9791.jpg?width=1518&height=1012&format=webp&v=1da398ab3776f70",
       "sourcePage": "https://www.grandhoteltremezzo.com/en/",
@@ -161,7 +173,7 @@
       "sourcePages": [
         "https://www.grandhoteltremezzo.com/en/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REJECTED: visual dominated by upside-down building reflection in water, fails distinctive Water-on-the-Water floating pool subject and brand premium clarity.",
       "localPath": "/images/travel/lake-como-premium/grand-hotel-tremezzo/view-3.webp",
       "downloadUrl": "https://www.grandhoteltremezzo.com/media/ikomnjus/grand_hotel_tremezzo-pools-julius-l1210114.jpg?width=1766&height=1226&format=webp&v=1da398a6417c380",
       "sourcePage": "https://www.grandhoteltremezzo.com/en/resort/pools/",
@@ -190,7 +202,7 @@
       "sourcePages": [
         "https://www.passalacqua.it/en/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REJECTED: garden/cart foreground with villa mostly invisible; find real sunlit villa façade and terraced gardens.",
       "localPath": "/images/travel/lake-como-premium/passalacqua/view-1.webp",
       "downloadUrl": "https://www.passalacqua.it/media/boddhokh/passalacqua-luxury-hotel-lake-como_23.jpg?width=1050&height=684&format=webp&v=1d8eaacb8899b10",
       "sourcePage": "https://www.passalacqua.it/en/",
@@ -214,12 +226,11 @@
       "key": "view-2",
       "slotIntent": "Actual Passalacqua restored suite with bright 18th century decor",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.passalacqua.it/en/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/passalacqua/view-2.webp",
       "downloadUrl": "https://www.passalacqua.it/media/phthqv04/ruben23_suiteagnese_02.jpg?format=webp&height=1150&v=1d9e6193342d890&width=1725",
       "sourcePage": "https://www.passalacqua.it/en/rooms/suite-agnese-in-the-villa/",
@@ -235,7 +246,12 @@
       "outputSize": [
         1725,
         1150
-      ]
+      ],
+      "frCaption": "Passalacqua — salon de la suite Agnese, boiseries historiques, tapis raffiné et cheminée",
+      "enCaption": "Passalacqua — Suite Agnese sitting room with historic detailing, antique furnishings and fireplace",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded local WebP independently inspected in genuine 21-image visual review GitHub Actions 39320895262. Geographic/property-specific identity matches cited exact original; photographic composition and uniqueness reviewed.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use authorization Oct 2026; underlying individual creator/source licences still govern reuse and attribution."
     },
     {
       "property": "Passalacqua",
@@ -243,12 +259,11 @@
       "key": "view-3",
       "slotIntent": "Passalacqua terrace and lakeside garden or pool",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.passalacqua.it/en/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/passalacqua/view-3.webp",
       "downloadUrl": "https://www.passalacqua.it/media/jf0e3rhx/01-passalacqua-lake-como_bo4a4971-edit.jpg?width=1920&height=1080&format=webp&v=1d8f98f725df770",
       "sourcePage": "https://www.passalacqua.it/en/",
@@ -264,7 +279,12 @@
       "outputSize": [
         1800,
         1013
-      ]
+      ],
+      "frCaption": "Passalacqua — jardins en terrasses et piscine bordée d’arbres face au lac de Côme",
+      "enCaption": "Passalacqua — terraced gardens and swimming pool overlooking Lake Como",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded local WebP independently inspected in genuine 21-image visual review GitHub Actions 39320895262. Geographic/property-specific identity matches cited exact original; photographic composition and uniqueness reviewed.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use authorization Oct 2026; underlying individual creator/source licences still govern reuse and attribution."
     },
     {
       "property": "Il Sereno Lago di Como",
@@ -272,12 +292,11 @@
       "key": "view-1",
       "slotIntent": "Il Sereno Torno contemporary architectural lakefront building",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.serenohotels.com/property/il-sereno/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/il-sereno/view-1.webp",
       "downloadUrl": "https://leisureopportunities.co.uk/images/HIGH18053_478034.jpg",
       "sourcePage": "https://www.spabusiness.com/wellness-news/Patricia-Urquiola-Sereno-Hotels-Lake-Como-Italy-Il-Sereno-Lago-di-Como-architecture-design/331014",
@@ -293,7 +312,12 @@
       "outputSize": [
         1200,
         800
-      ]
+      ],
+      "frCaption": "Il Sereno à Torno — façade contemporaine de pierre, verre et bois au bord de l’eau",
+      "enCaption": "Il Sereno in Torno — contemporary stone, glass and timber hotel façade beside the lake",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded local WebP independently inspected in genuine 21-image visual review GitHub Actions 39320895262. Geographic/property-specific identity matches cited exact original; photographic composition and uniqueness reviewed.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use authorization Oct 2026; underlying individual creator/source licences still govern reuse and attribution."
     },
     {
       "property": "Il Sereno Lago di Como",
@@ -301,12 +325,11 @@
       "key": "view-2",
       "slotIntent": "Original Il Sereno Patricia Urquiola lake-view suite",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.serenohotels.com/property/il-sereno/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/il-sereno/view-2.webp",
       "downloadUrl": "https://s3.amazonaws.com/uploads.serenohotels.com/app/uploads/2016/12/16210344/PITER2016SerenoComo_7943-scaled.jpg",
       "sourcePage": "https://www.serenohotels.com/property/il-sereno/suites/1-bedroom-suites/corner-suite/",
@@ -322,7 +345,12 @@
       "outputSize": [
         1800,
         1170
-      ]
+      ],
+      "frCaption": "Il Sereno — véritable suite d’angle avec salon design et grande terrasse sur le lac",
+      "enCaption": "Il Sereno — actual Corner Suite with modern lounge and open lake-facing terrace",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded local WebP independently inspected in genuine 21-image visual review GitHub Actions 39320895262. Geographic/property-specific identity matches cited exact original; photographic composition and uniqueness reviewed.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use authorization Oct 2026; underlying individual creator/source licences still govern reuse and attribution."
     },
     {
       "property": "Il Sereno Lago di Como",
@@ -330,12 +358,11 @@
       "key": "view-3",
       "slotIntent": "Il Sereno true lakefront infinity pool and waterfront",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.serenohotels.com/property/il-sereno/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/il-sereno/view-3.webp",
       "downloadUrl": "https://www.soldoutservice.com/wp-content/uploads/2023/03/il-sereno-lago-di-como-hotel-lusso-2.jpg",
       "sourcePage": "https://www.soldoutservice.com/sereno-lago-di-como-hotel-lusso/",
@@ -351,7 +378,12 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "frCaption": "Il Sereno — piscine à débordement au bord du lac et vedettes orangées au ponton",
+      "enCaption": "Il Sereno — lakeside infinity pool and orange launch boats moored by the pontoon",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded local WebP independently inspected in genuine 21-image visual review GitHub Actions 39320895262. Geographic/property-specific identity matches cited exact original; photographic composition and uniqueness reviewed.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use authorization Oct 2026; underlying individual creator/source licences still govern reuse and attribution."
     }
   ],
   "destinationScenes": [
@@ -366,7 +398,7 @@
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REJECTED: hazy dark high-elevation panorama with mostly barren mountain foreground; find rich daylight turquoise water and green mountains suitable for hero.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-1.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Panorama_del_lago_di_Como.jpg/1920px-Panorama_del_lago_di_Como.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Panorama_del_lago_di_Como.jpg",
@@ -390,12 +422,11 @@
       "query": "Villa d Este Cernobbio shore",
       "tag": "cernobbio",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-2.webp",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Cernobbio_hillside_from_Lake_Como.jpg/1920px-Cernobbio_hillside_from_Lake_Como.jpg",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Cernobbio_hillside_from_Lake_Como.jpg",
@@ -411,7 +442,12 @@
       "outputSize": [
         1800,
         937
-      ]
+      ],
+      "frCaption": "Cernobbio — village boisé et façade de Villa d’Este photographiés depuis le lac",
+      "enCaption": "Cernobbio — wooded waterfront with Villa d’Este seen from Lake Como",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded local WebP independently inspected in genuine 21-image visual review GitHub Actions 39320895262. Geographic/property-specific identity matches cited exact original; photographic composition and uniqueness reviewed.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use authorization Oct 2026; underlying individual creator/source licences still govern reuse and attribution."
     },
     {
       "key": "scene-3",
@@ -419,12 +455,11 @@
       "query": "Tremezzo Bellagio Lake Como panorama",
       "tag": "tremezzo",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-3.webp",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Bellagio_panorama_from_Lake_Como_ferry.jpg/1920px-Bellagio_panorama_from_Lake_Como_ferry.jpg",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Bellagio_panorama_from_Lake_Como_ferry.jpg",
@@ -440,7 +475,12 @@
       "outputSize": [
         1800,
         601
-      ]
+      ],
+      "frCaption": "Bellagio — montagnes de la région centrale photographiées depuis un bateau sur le lac",
+      "enCaption": "Bellagio — central Lake Como mountains photographed from a boat crossing",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded local WebP independently inspected in genuine 21-image visual review GitHub Actions 39320895262. Geographic/property-specific identity matches cited exact original; photographic composition and uniqueness reviewed.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use authorization Oct 2026; underlying individual creator/source licences still govern reuse and attribution."
     },
     {
       "key": "scene-4",
@@ -453,7 +493,7 @@
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REJECTED: indoor staircase/hall at Villa Carlotta rather than actual botanic garden and façade; find recognisable exterior.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-4.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Villa_Carlotta%2C_Tremezzo%2C_Lake_Como.jpg/1920px-Villa_Carlotta%2C_Tremezzo%2C_Lake_Como.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Villa_Carlotta,_Tremezzo,_Lake_Como.jpg",
@@ -477,12 +517,11 @@
       "query": "Bellagio Punta Spartivento lake",
       "tag": "bellagio",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-5.webp",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Veduta_del_lago_di_Como_da_Bellagio.jpg/1920px-Veduta_del_lago_di_Como_da_Bellagio.jpg",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Veduta_del_lago_di_Como_da_Bellagio.jpg",
@@ -498,7 +537,12 @@
       "outputSize": [
         1800,
         1197
-      ]
+      ],
+      "frCaption": "Lac de Côme — montagnes et eaux bleues depuis Punta Spartivento, à Bellagio",
+      "enCaption": "Lake Como — blue water and Alpine hills seen from Bellagio’s Punta Spartivento",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded local WebP independently inspected in genuine 21-image visual review GitHub Actions 39320895262. Geographic/property-specific identity matches cited exact original; photographic composition and uniqueness reviewed.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use authorization Oct 2026; underlying individual creator/source licences still govern reuse and attribution."
     },
     {
       "key": "scene-6",
@@ -511,7 +555,7 @@
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REJECTED: Villa Monastero arcade interior (Varenna area) rather than requested colorful waterfront; must use a true photographed Varenna village view.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-6.webp",
       "downloadUrl": "https://lakecomotravel.com/wp-content/uploads/2024/12/villa-monastero-varenna-lake-como-italy.webp",
       "sourcePage": "https://lakecomotravel.com/varenna/",
@@ -535,12 +579,11 @@
       "query": "Villa del Balbianello Lake Como",
       "tag": "balbianello",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-7.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Villa_del_Balbianello.jpg/1920px-Villa_del_Balbianello.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Villa_del_Balbianello.jpg",
@@ -556,7 +599,12 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "frCaption": "Villa del Balbianello — demeure historique sur la presqu’île boisée de Lenno",
+      "enCaption": "Villa del Balbianello — historic residence on the wooded Lenno peninsula",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded local WebP independently inspected in genuine 21-image visual review GitHub Actions 39320895262. Geographic/property-specific identity matches cited exact original; photographic composition and uniqueness reviewed.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use authorization Oct 2026; underlying individual creator/source licences still govern reuse and attribution."
     },
     {
       "key": "scene-8",
@@ -564,12 +612,11 @@
       "query": "Como Cathedral Lake Como city waterfront",
       "tag": "como",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-8.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Como_Cathedral.jpg/1920px-Como_Cathedral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Como_Cathedral.jpg",
@@ -585,7 +632,12 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Côme — cathédrale à coupoles et centre historique vus depuis les hauteurs",
+      "enCaption": "Como — domed cathedral and old-town rooftops viewed from above",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded local WebP independently inspected in genuine 21-image visual review GitHub Actions 39320895262. Geographic/property-specific identity matches cited exact original; photographic composition and uniqueness reviewed.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use authorization Oct 2026; underlying individual creator/source licences still govern reuse and attribution."
     },
     {
       "key": "scene-9",
@@ -593,12 +645,11 @@
       "query": "Moltrasio Lake Como waterfront",
       "tag": "moltrasio",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-9.webp",
       "downloadUrl": "https://www.italyreview.com/uploads/2/6/3/6/26365745/moltrasio-lake-como-lombardy-italy-7_orig.jpg",
       "sourcePage": "https://www.italyreview.com/moltrasio.html",
@@ -614,7 +665,12 @@
       "outputSize": [
         1100,
         619
-      ]
+      ],
+      "frCaption": "Moltrasio — quai au bord de l’eau, maisons colorées et montagnes verdoyantes",
+      "enCaption": "Moltrasio — waterfront jetty, pastel houses and green mountains by Lake Como",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded local WebP independently inspected in genuine 21-image visual review GitHub Actions 39320895262. Geographic/property-specific identity matches cited exact original; photographic composition and uniqueness reviewed.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use authorization Oct 2026; underlying individual creator/source licences still govern reuse and attribution."
     }
   ]
 }
