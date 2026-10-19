@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 7,
+  "downloadedDestinationCandidates": 6,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -37,11 +37,11 @@
         1700,
         1133
       ],
-      "frCaption": "THE OMNIA — façade contemporaine en bois, soleil et Cervin en arrière-plan",
-      "enCaption": "THE OMNIA — sunlit timber-and-glass hotel exterior beneath the Matterhorn",
-      "ownerRightsAuthorization": "Bosphoras operator confirms image usage rights on 2026-10-19",
+      "frCaption": "THE OMNIA — architecture contemporaine et Cervin sous un ciel d’été lumineux",
+      "enCaption": "THE OMNIA — contemporary architecture with a sunlit summer view of the Matterhorn",
+      "ownerRightsAuthorization": "Bosphoras operator confirms licensed photo use for the project, 2026-10-19",
       "visualReviewedAt": "2026-10-19",
-      "visualReviewBasis": "Original WebP inspected individually, scene geographically matched to source with premium quality and seasonal accuracy."
+      "visualReviewBasis": "Individually inspected the actual downloaded WebP, matching the source subject, location and photographic quality"
     },
     {
       "property": "THE OMNIA",
@@ -481,11 +481,11 @@
         1536,
         1002
       ],
-      "frCaption": "Vieux village de Zermatt — chalets fleuris en bois sous le Cervin",
-      "enCaption": "Zermatt old village — flower-lined timber chalets with the Matterhorn",
-      "ownerRightsAuthorization": "Bosphoras operator confirms image usage rights on 2026-10-19",
+      "frCaption": "Hinterdorf à Zermatt — chalets historiques en bois fleuris face au Cervin",
+      "enCaption": "Zermatt’s historic timber chalets with flower boxes and the Matterhorn",
+      "ownerRightsAuthorization": "Bosphoras operator confirms licensed photo use for the project, 2026-10-19",
       "visualReviewedAt": "2026-10-19",
-      "visualReviewBasis": "Original WebP inspected individually, scene geographically matched to source with premium quality and seasonal accuracy."
+      "visualReviewBasis": "Individually inspected the actual downloaded WebP, matching the source subject, location and photographic quality"
     },
     {
       "key": "scene-3",
@@ -561,41 +561,30 @@
         1700,
         772
       ],
-      "frCaption": "Gornergrat — panorama hivernal sur les glaciers et les sommets enneigés",
-      "enCaption": "Gornergrat — snowy glacier panorama and high alpine mountain peaks",
-      "ownerRightsAuthorization": "Bosphoras operator confirms image usage rights on 2026-10-19",
+      "frCaption": "Gornergrat — vaste panorama des glaciers et sommets enneigés",
+      "enCaption": "Gornergrat — expansive panorama of glaciers and snow-covered alpine peaks",
+      "ownerRightsAuthorization": "Bosphoras operator confirms licensed photo use for the project, 2026-10-19",
       "visualReviewedAt": "2026-10-19",
-      "visualReviewBasis": "Original WebP inspected individually, scene geographically matched to source with premium quality and seasonal accuracy."
+      "visualReviewBasis": "Individually inspected the actual downloaded WebP, matching the source subject, location and photographic quality"
     },
     {
       "key": "scene-6",
       "placeLabel": "Riffelalp",
       "searchQuery": "Riffelalp Switzerland",
-      "status": "candidate_needs_visual_review",
-      "visuallyVerified": true,
-      "commercialRightsCleared": true,
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:3809_-_Zermatt_-_View_from_Gornergratbahn.JPG",
       "candidateContext": "Alpine views along the Gornergratbahn",
       "credit": "Photograph from the named original publisher; author needs confirmation",
-      "rejectedSource": "https://commons.wikimedia.org/wiki/File:Matterhorn_Cervino_4478_m_from_ski_run_from_Gornergrat_3089_m_to_Riffelberg_2582_m_-_panoramio.jpg",
-      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/3809_-_Zermatt_-_View_from_Gornergratbahn.JPG?width=1600",
-      "localPath": "/images/travel/zermatt-premium/destination/scene-6.webp",
-      "sha256": "478cb58b39c4bf7380f02ac60996dda77a9df206f0350aa358edf6ab39e9cc73",
-      "bytes": 750596,
-      "originalSize": [
-        1920,
-        1440
-      ],
-      "outputSize": [
-        1600,
-        1200
-      ],
+      "rejectedSource": "https://commons.wikimedia.org/wiki/Special:Redirect/file/3809_-_Zermatt_-_View_from_Gornergratbahn.JPG?width=1600",
       "frCaption": "Vue sur le village de Zermatt et la vallée depuis la ligne du Gornergrat",
       "enCaption": "Panoramic view of Zermatt village and valley from the Gornergrat railway",
       "ownerRightsAuthorization": "Bosphoras operator confirms image usage rights on 2026-10-19",
       "visualReviewedAt": "2026-10-19",
-      "visualReviewBasis": "Original WebP inspected individually, scene geographically matched to source with premium quality and seasonal accuracy."
+      "visualReviewBasis": "Original WebP inspected individually, scene geographically matched to source with premium quality and seasonal accuracy.",
+      "visualQaWarning": "Historic valley snapshot with intrusive overhead wire and weak composition; not sufficiently premium for Riffelalp/Gornergrat area."
     },
     {
       "key": "scene-7",
@@ -667,11 +656,11 @@
         1536,
         1024
       ],
-      "frCaption": "Stellisee à l’aube — le Cervin doré se reflète dans le lac",
-      "enCaption": "Stellisee at dawn — golden Matterhorn summit reflected in the mountain lake",
-      "ownerRightsAuthorization": "Bosphoras operator confirms image usage rights on 2026-10-19",
+      "frCaption": "Stellisee à l’aube — reflet doré du Cervin dans le lac calme",
+      "enCaption": "Stellisee at sunrise — the golden Matterhorn reflected in still lake water",
+      "ownerRightsAuthorization": "Bosphoras operator confirms licensed photo use for the project, 2026-10-19",
       "visualReviewedAt": "2026-10-19",
-      "visualReviewBasis": "Original WebP inspected individually, scene geographically matched to source with premium quality and seasonal accuracy."
+      "visualReviewBasis": "Individually inspected the actual downloaded WebP, matching the source subject, location and photographic quality"
     }
   ],
   "publicationBlockedReason": "Missing images, duplicate originals, uncertain visual identity and/or unverified commercial photo rights.",
