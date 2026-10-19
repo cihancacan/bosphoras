@@ -16,3 +16,4 @@ Les photographies récemment remplacées restent rouges tant qu'elles n'ont pas 
 - [Verbier](verbier.md) — 21/21 fichiers candidats, 2 alertes ; [ouvrir l'image seule](verbier.jpg)
 - [Saint-Jean-Cap-Ferrat](saint-jean-cap-ferrat.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](saint-jean-cap-ferrat.jpg)
 - [Cap d’Antibes](cap-dantibes.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](cap-dantibes.jpg)
+- [Lake Como](lake-como.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](lake-como.jpg)
