@@ -423,23 +423,23 @@
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
       "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "rejectedSource": "https://images.pexels.com/photos/32569620/pexels-photo-32569620.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      "rejectedSource": "https://images.pexels.com/photos/36483983/pexels-photo-36483983.jpeg?auto=compress&cs=tinysrgb&w=1800",
       "rejectedCandidateContext": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-1.webp",
-      "downloadUrl": "https://images.pexels.com/photos/36483983/pexels-photo-36483983.jpeg?auto=compress&cs=tinysrgb&w=1800",
-      "sourcePage": "https://www.pexels.com/photo/scenic-view-of-lake-como-surrounded-by-mountains-36483983/",
-      "candidateContext": "Bright Lake Como mountains and blue water by Oskar Gross",
-      "credit": "Oskar Gross · Pexels licence",
-      "sha256": "eb95da8418f957a308521f9f9bb58d6c64a361c97d7acfd495de87e809f27773",
-      "dhash": "0011110001111001011001110010111100000111001001110110011101100100",
-      "bytes": 153098,
+      "downloadUrl": "https://heliflygreece.com/wp-content/uploads/2021/03/Como-ed-il-centro-lago-022.jpg",
+      "sourcePage": "https://heliflygreece.com/helicopter-tours/from-milan-helicopter-tour/",
+      "candidateContext": "Actual sunny Lake Como central basin with blue lake, pastel villages and two boats",
+      "credit": "HeliFly Greece · original Lake Como helicopter photo",
+      "sha256": "c7a915c7967d14082278a8075cfaa511dd0f8fe7c872f412a852f80722c5d2a4",
+      "dhash": "0110000001100000011110100111100000110011011110110010000101100000",
+      "bytes": 136644,
       "originalSize": [
-        1800,
-        1350
+        1200,
+        800
       ],
       "outputSize": [
-        1600,
-        1200
+        1200,
+        800
       ]
     },
     {
