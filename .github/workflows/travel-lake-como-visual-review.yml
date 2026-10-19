@@ -1,4 +1,4 @@
-name: Travel Lake Como — inspect real 21 photograph candidates, no Vercel
+name: Travel Lake Como — review final seven replacements, no Vercel
 on:
   push:
     branches: [feature/luxury-travel-seo-destinations-20261012]
@@ -22,8 +22,8 @@ jobs:
           from pathlib import Path
           from PIL import Image,ImageOps,ImageDraw,ImageFont
           m=json.loads(Path('data/travel/lakeComoMediaCandidates.json').read_text())
-          items=m['hotels']+m['destinationScenes']
-          assert len(items)==21
+          items=[x for x in m['hotels']+m['destinationScenes'] if not x.get('visuallyVerified')]
+          assert len(items)==7,('Unexpected pending count',len(items))
           assert all(x.get('localPath') for x in items)
           try: font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',16)
           except OSError:font=ImageFont.load_default()
