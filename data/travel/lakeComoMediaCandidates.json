@@ -2,125 +2,269 @@
   "destination": "lake-como",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 10,
+  "downloadedDestinationCandidates": 3,
   "hotels": [
     {
       "property": "Villa d’Este",
       "propertyKey": "villa-d-este",
       "key": "view-1",
       "slotIntent": "Historic waterfront Villa d'Este façade and manicured gardens",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.villadeste.com/"
       ],
-      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/villa-d-este/view-1.webp",
+      "downloadUrl": "https://cdn.sanity.io/images/f489xjk7/production/fce30d517c05b2ca476ecf387a60dde4761f2512-1800x1348.jpg?auto=format&h=1348&w=1800",
+      "sourcePage": "https://www.kirkerholidays.com/hotel/villa-d-este/",
+      "candidateContext": "Actual Villa d'Este Cernobbio exterior from water at dusk and floating pool",
+      "credit": "Kirker Holidays · identified Villa d'Este property photo",
+      "sha256": "20f0c5faff1fe4d1e646040698e1a9f945c7770a7480c8fcf4641dbee8a0c0aa",
+      "dhash": "0000100000000111000011110101111011000110001110110000110001000100",
+      "bytes": 240644,
+      "originalSize": [
+        1800,
+        1348
+      ],
+      "outputSize": [
+        1602,
+        1200
+      ]
     },
     {
       "property": "Villa d’Este",
       "propertyKey": "villa-d-este",
       "key": "view-2",
       "slotIntent": "Contemporary photo of real Villa d’Este furnished lake-facing suite",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.villadeste.com/"
       ],
-      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/villa-d-este/view-2.webp",
+      "downloadUrl": "https://www.villadeste.com/assets/img/transform/_1600x1280_crop_center-center_80_none/2721/05-image-room-small-junior-suite-exclusive.webp",
+      "sourcePage": "https://www.villadeste.com/rooms-and-suites",
+      "candidateContext": "    ",
+      "credit": "Official hotel photo",
+      "sha256": "99df6faa00b9852289567502a235084a31902ad8bc96c1a076dc442abd452393",
+      "dhash": "0011111010011100100110001000110110001101100111001011010011011100",
+      "bytes": 141244,
+      "originalSize": [
+        1600,
+        1280
+      ],
+      "outputSize": [
+        1500,
+        1200
+      ]
     },
     {
       "property": "Villa d’Este",
       "propertyKey": "villa-d-este",
       "key": "view-3",
       "slotIntent": "Original Villa d’Este floating pool and lakeside grounds",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.villadeste.com/"
       ],
-      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/villa-d-este/view-3.webp",
+      "downloadUrl": "https://www.villadeste.com/assets/img/transform/_1860x1500_crop_center-center_80_none/15170/05-img-text-classico-piscina-galleggiante-sporting-club_2025-09-04-165456_dwmo.webp",
+      "sourcePage": "https://www.villadeste.com/sporting-club",
+      "candidateContext": "    ",
+      "credit": "Official hotel photo",
+      "sha256": "c58a663168f9ee726cfed9773b9ac9686773aec480b21051bffcd13dc2f1680c",
+      "dhash": "1000000100111010101011011001011111001101111011110000011110000111",
+      "bytes": 288514,
+      "originalSize": [
+        1860,
+        1500
+      ],
+      "outputSize": [
+        1488,
+        1200
+      ]
     },
     {
       "property": "Grand Hotel Tremezzo",
       "propertyKey": "grand-hotel-tremezzo",
       "key": "view-1",
       "slotIntent": "Grand Hotel Tremezzo Belle Époque ochre and white façade",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.grandhoteltremezzo.com/en/"
       ],
-      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/grand-hotel-tremezzo/view-1.webp",
+      "downloadUrl": "https://media-assets.ad-italia.it/photos/665f14a84ff4f5eceb98d54a/4%3A3/w_4032%2Ch_3024%2Cc_limit/Grand%20Hotel%20Tremezzo.jpg",
+      "sourcePage": "https://www.ad-italia.it/article/grand-hotel-tremezzo-lago-di-como/",
+      "candidateContext": "Genuine sunlit Grand Hotel Tremezzo Belle Epoque front and orange parasols, floating pool in foreground",
+      "credit": "Architectural Digest Italia · identified hotel building image",
+      "sha256": "09456a618acd55f1f0071c1d567abff414f250b1ef3f14e25275fd624f5b67e4",
+      "dhash": "0010110010000110000101111001011111011000010010011001011110000111",
+      "bytes": 503204,
+      "originalSize": [
+        4032,
+        3024
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "property": "Grand Hotel Tremezzo",
       "propertyKey": "grand-hotel-tremezzo",
       "key": "view-2",
       "slotIntent": "Actual Grand Hotel Tremezzo luxury suite with lake view",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.grandhoteltremezzo.com/en/"
       ],
-      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/grand-hotel-tremezzo/view-2.webp",
+      "downloadUrl": "https://www.grandhoteltremezzo.com/media/s4vp5wjt/grand_hotel_tremezzo-roomssuites-ruben-0g5a9791.jpg?width=1518&height=1012&format=webp&v=1da398ab3776f70",
+      "sourcePage": "https://www.grandhoteltremezzo.com/en/",
+      "candidateContext": "    ",
+      "credit": "Official hotel photo",
+      "sha256": "e985e759f62b7274012e83d3098a0cfd669d9d409d4fa62ac048ee1a7e4a66c7",
+      "dhash": "1001011110010111100101111001011010010110100101101001011010000110",
+      "bytes": 155084,
+      "originalSize": [
+        1518,
+        1012
+      ],
+      "outputSize": [
+        1518,
+        1012
+      ]
     },
     {
       "property": "Grand Hotel Tremezzo",
       "propertyKey": "grand-hotel-tremezzo",
       "key": "view-3",
       "slotIntent": "Grand Hotel Tremezzo official Water-on-the-Water floating pool",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.grandhoteltremezzo.com/en/"
       ],
-      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/grand-hotel-tremezzo/view-3.webp",
+      "downloadUrl": "https://www.grandhoteltremezzo.com/media/ikomnjus/grand_hotel_tremezzo-pools-julius-l1210114.jpg?width=1766&height=1226&format=webp&v=1da398a6417c380",
+      "sourcePage": "https://www.grandhoteltremezzo.com/en/resort/pools/",
+      "candidateContext": "    ",
+      "credit": "Official hotel photo",
+      "sha256": "57dd89c9b65913ec855910c904fd472696a8426bbd83e4d2f23eda61d29cfa00",
+      "dhash": "0011001000110011000010010100001111110011101101110011111010001001",
+      "bytes": 234768,
+      "originalSize": [
+        1766,
+        1226
+      ],
+      "outputSize": [
+        1729,
+        1200
+      ]
     },
     {
       "property": "Passalacqua",
       "propertyKey": "passalacqua",
       "key": "view-1",
       "slotIntent": "Passalacqua original Moltrasio villa façade and Italian gardens",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.passalacqua.it/en/"
       ],
-      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/passalacqua/view-1.webp",
+      "downloadUrl": "https://www.passalacqua.it/media/boddhokh/passalacqua-luxury-hotel-lake-como_23.jpg?width=1050&height=684&format=webp&v=1d8eaacb8899b10",
+      "sourcePage": "https://www.passalacqua.it/en/",
+      "candidateContext": "    ",
+      "credit": "Official hotel photo",
+      "sha256": "eb84f4d973211fd3df50b5be1ceca8c13659ac1fbaf41f1e2ebd33753bd558ed",
+      "dhash": "0000000100000011010101100101001101100011001101100101111001011111",
+      "bytes": 158814,
+      "originalSize": [
+        1050,
+        684
+      ],
+      "outputSize": [
+        1050,
+        684
+      ]
     },
     {
       "property": "Passalacqua",
       "propertyKey": "passalacqua",
       "key": "view-2",
       "slotIntent": "Actual Passalacqua restored suite with bright 18th century decor",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.passalacqua.it/en/"
       ],
-      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/passalacqua/view-2.webp",
+      "downloadUrl": "https://www.passalacqua.it/media/phthqv04/ruben23_suiteagnese_02.jpg?format=webp&height=1150&v=1d9e6193342d890&width=1725",
+      "sourcePage": "https://www.passalacqua.it/en/rooms/suite-agnese-in-the-villa/",
+      "candidateContext": "Actual Passalacqua Suite Agnese living room with antiques, blush walls and restored eighteenth century features",
+      "credit": "Passalacqua · official Suite Agnese photograph",
+      "sha256": "21356ac748f2a709a2970db52a21a209594ed9dc3ec33cf868ded15edab4b2e8",
+      "dhash": "0000001110000111110101101001011010011110011111000111101101010011",
+      "bytes": 186094,
+      "originalSize": [
+        1725,
+        1150
+      ],
+      "outputSize": [
+        1725,
+        1150
+      ]
     },
     {
       "property": "Passalacqua",
       "propertyKey": "passalacqua",
       "key": "view-3",
       "slotIntent": "Passalacqua terrace and lakeside garden or pool",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.passalacqua.it/en/"
       ],
-      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/passalacqua/view-3.webp",
+      "downloadUrl": "https://www.passalacqua.it/media/jf0e3rhx/01-passalacqua-lake-como_bo4a4971-edit.jpg?width=1920&height=1080&format=webp&v=1d8f98f725df770",
+      "sourcePage": "https://www.passalacqua.it/en/",
+      "candidateContext": "    ",
+      "credit": "Official hotel photo",
+      "sha256": "7242abd4d3c411c26dac36fe159c19c4ef548bbeecea0d2b6f5637538400d2f0",
+      "dhash": "0100101100110111110011111100110010011101100101111000001110001001",
+      "bytes": 502062,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ]
     },
     {
       "property": "Il Sereno Lago di Como",
@@ -153,13 +297,29 @@
       "propertyKey": "il-sereno",
       "key": "view-3",
       "slotIntent": "Il Sereno true lakefront infinity pool and waterfront",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.serenohotels.com/property/il-sereno/"
       ],
-      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/il-sereno/view-3.webp",
+      "downloadUrl": "https://www.soldoutservice.com/wp-content/uploads/2023/03/il-sereno-lago-di-como-hotel-lusso-2.jpg",
+      "sourcePage": "https://www.soldoutservice.com/sereno-lago-di-como-hotel-lusso/",
+      "candidateContext": "Real Il Sereno Lake Como aqua infinity pool, deck, green loungers and orange boats moored beside lake",
+      "credit": "SoldoutService · identified Il Sereno hotel waterfront photo",
+      "sha256": "dc4b3b410e4889d2959479e81a0dc7752bbb14f58b2d99d5c7b27e61f761d642",
+      "dhash": "1111111110001111011111110010111010011101001110111001111000011101",
+      "bytes": 400398,
+      "originalSize": [
+        1800,
+        1200
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     }
   ],
   "destinationScenes": [
@@ -207,13 +367,29 @@
       "label": "Villa Carlotta garden and facade in Tremezzina",
       "query": "Villa Carlotta Tremezzo exterior garden",
       "tag": "villa-carlotta",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/destination/scene-4.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Villa_Carlotta%2C_Tremezzo%2C_Lake_Como.jpg/1920px-Villa_Carlotta%2C_Tremezzo%2C_Lake_Como.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Villa_Carlotta,_Tremezzo,_Lake_Como.jpg",
+      "candidateContext": "Villa Carlotta, Tremezzo, Lake Como.jpg",
+      "credit": "Ray in Manila · CC BY 2.0",
+      "sha256": "62df54a63c28b5df8dd745a63aeb8faf1eaf499dd4be7b20044dc6db7af56e09",
+      "dhash": "0011001110001010101101100000111100001011001010101000111011001100",
+      "bytes": 764762,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     },
     {
       "key": "scene-5",
@@ -246,26 +422,58 @@
       "label": "Villa del Balbianello on Lavedo peninsula Lenno",
       "query": "Villa del Balbianello Lake Como",
       "tag": "balbianello",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/destination/scene-7.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Villa_del_Balbianello.jpg/1920px-Villa_del_Balbianello.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Villa_del_Balbianello.jpg",
+      "candidateContext": "Villa del Balbianello.jpg",
+      "credit": "Navin75 · CC BY-SA 2.0",
+      "sha256": "affd689101044e0b781b7c090b5cc9bd0074100ec0102f6593b0b294adeebf62",
+      "dhash": "1011001111000001100010000000110000001101001011010010110000001100",
+      "bytes": 515906,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     },
     {
       "key": "scene-8",
       "label": "Como historic lakeside promenade and cathedral setting",
       "query": "Como Cathedral Lake Como city waterfront",
       "tag": "como",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/destination/scene-8.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Como_Cathedral.jpg/1920px-Como_Cathedral.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Como_Cathedral.jpg",
+      "candidateContext": "Como Cathedral.jpg",
+      "credit": "GuidoB · CC BY-SA 3.0",
+      "sha256": "734315d683f5e1d54d8c49721d65abdfbf171e8ba8c4a354debbf312be16a947",
+      "dhash": "0000111100000111000011110100111100101110010001100111001100101111",
+      "bytes": 484776,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-9",
