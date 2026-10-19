@@ -17,12 +17,12 @@ ASSETS={
    'https://www.riffelalp.com/de/kulinarik/ristorante-al-bosco/',
    'Riffelalp Al Bosco snowy terrace with Matterhorn and winter sun, official resort')],
  'destination/scene-7':[
-  ('https://commons.wikimedia.org/wiki/Special:Redirect/file/Matterhorn_Glacier_Paradise%2C_Theodulglacier_-_panoramio.jpg?width=1600',
-   'https://commons.wikimedia.org/wiki/File:Matterhorn_Glacier_Paradise,_Theodulglacier_-_panoramio.jpg',
-   'Theodulglacier from Matterhorn Glacier Paradise by qwesy qwesy, CC BY 3.0'),
   ('https://commons.wikimedia.org/wiki/Special:Redirect/file/Swiss_Alps.jpg?width=1600',
    'https://commons.wikimedia.org/wiki/File:Swiss_Alps.jpg',
-   'Swiss Alps from Klein Matterhorn summit, credited Devil Dancer')],
+   'Swiss Alps from Klein Matterhorn summit, credited Devil Dancer'),
+  ('https://commons.wikimedia.org/wiki/Special:Redirect/file/View_to_Zermatt_from_Matterhorn_Glacier_Paradise_-_panoramio.jpg?width=1600',
+   'https://commons.wikimedia.org/wiki/File:View_to_Zermatt_from_Matterhorn_Glacier_Paradise_-_panoramio.jpg',
+   'Matterhorn Glacier Paradise alpine landscape facing Zermatt, licensed photographer qwesy qwesy')],
  'the-omnia/view-1':[
   ('https://www.yonder.fr/sites/default/files/destinations/OMNIA_Outside_Summer_q%C2%A9Bruno%20Augsburger%2C%20THE%20OMNIA.jpg',
    'https://www.yonder.fr/hotels/chambres-avec-vues/zermatt-the-omnia-reinterpete-codes-montagne',
@@ -53,7 +53,7 @@ ASSETS={
 def main():
  data=json.loads(D.read_text(encoding='utf8'))
  rows=data['hotels']+data['destinationScenes']
- existing={x.get('downloadUrl','').split('?')[0] for x in rows if x.get('downloadUrl')}
+ existing={u.split('?')[0] for x in rows for u in (x.get('downloadUrl'),x.get('rejectedSource')) if isinstance(u,str) and u.startswith('https://')}
  failures=[];saved=[]
  for target,candidates in ASSETS.items():
   group,key=target.split('/')
