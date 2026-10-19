@@ -83,6 +83,19 @@ EXACT_SCENES.update({
    "Stellisee reflecting Matterhorn in warm sunrise light, travel photographer")
  ],
 })
+# Precisely described Zermatt village and Matterhorn scenes.
+EXACT_SCENES.update({
+ "scene-2":[
+  ("https://i0.wp.com/onholidaysagain.com/wp-content/uploads/2020/06/Balade-%C3%A0-Zermatt-et-vue-sur-le-Cervin-scaled.jpg?resize=1536%2C1002&ssl=1",
+   "https://onholidaysagain.com/europe/suisse/week-end-a-zermatt-que-faire/",
+   "Zermatt historic timber chalets and the Matterhorn in sunlight")
+ ],
+ "scene-3":[
+  ("https://www.derbyzermatt.ch/assets/Images/64846748-E13E-44BD-8B6D-FA207A874046-v2__FocusFillWzY0MCw1MTIsIngiLDY0XQ.jpeg",
+   "https://www.derbyzermatt.ch/",
+   "Bahnhofstrasse in Zermatt illuminated at snowy winter twilight")
+ ],
+})
 SCENES={
  "scene-5":[("https://commons.wikimedia.org/wiki/Special:Redirect/file/Panorama_vom_Gornergrat-Zermatt.jpg?width=1600",
   "https://commons.wikimedia.org/wiki/File:Panorama_vom_Gornergrat-Zermatt.jpg",
