@@ -11,12 +11,11 @@
       "key": "view-1",
       "slotIntent": "Historic hotel façade in full daylight, original Hôtel du Cap white Belle Époque building",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.oetkerhotels.com/fr/hotels/hotel-du-cap-eden-roc/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/hotel-du-cap-eden-roc/view-1.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Gartenfassade_Hotel_Du_Cap.jpg/1920px-Gartenfassade_Hotel_Du_Cap.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Gartenfassade_Hotel_Du_Cap.jpg",
@@ -32,7 +31,12 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Hôtel du Cap-Eden-Roc — façade historique blanche bordée de pins et de palmiers",
+      "enCaption": "Hôtel du Cap-Eden-Roc — historic white façade framed by pine trees and palms",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     },
     {
       "property": "Hôtel du Cap-Eden-Roc",
@@ -40,12 +44,11 @@
       "key": "view-2",
       "slotIntent": "Real guestroom or terrace at Hôtel du Cap-Eden-Roc, not another Oetker hotel",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.oetkerhotels.com/fr/hotels/hotel-du-cap-eden-roc/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/hotel-du-cap-eden-roc/view-2.webp",
       "downloadUrl": "https://teresaperezcollection.com/images/0bijhalf/production/563c06905c229003d62433e18db0ae4de34a8709-3000x1917.webp?fit=clip&fm=jpg&q=80&w=2048",
       "sourcePage": "https://teresaperezcollection.com/hotel/hotel-du-cap-eden-roc",
@@ -61,7 +64,12 @@
       "outputSize": [
         1800,
         1150
-      ]
+      ],
+      "frCaption": "Hôtel du Cap-Eden-Roc — chambre lumineuse avec terrasse ouverte sur la Méditerranée",
+      "enCaption": "Hôtel du Cap-Eden-Roc — elegant sunlit guestroom with Mediterranean-facing terrace",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     },
     {
       "property": "Hôtel du Cap-Eden-Roc",
@@ -69,12 +77,11 @@
       "key": "view-3",
       "slotIntent": "Signature Eden-Roc seawater pool and rock coastline, sunlit and authentic",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.oetkerhotels.com/fr/hotels/hotel-du-cap-eden-roc/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/hotel-du-cap-eden-roc/view-3.webp",
       "downloadUrl": "https://images.eu.ctfassets.net/og3b0tarlg4b/5hOabtzktscWIpkSJnFs08/cee497d61429c1534933799fdaf64d08/HDC_-_Pool_cut.jpg?fm=jpg&w=1800",
       "sourcePage": "https://www.oetkerhotels.com/hotels/hotel-du-cap-eden-roc/the-hotel/leisure/pool",
@@ -90,7 +97,12 @@
       "outputSize": [
         1553,
         1200
-      ]
+      ],
+      "frCaption": "Eden-Roc — piscine à débordement turquoise creusée au-dessus de la côte rocheuse",
+      "enCaption": "Eden-Roc — turquoise infinity pool perched above the rocky Mediterranean shore",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     },
     {
       "property": "Cap d’Antibes Beach Hotel",
@@ -98,12 +110,11 @@
       "key": "view-1",
       "slotIntent": "Contemporary low hotel building and genuine private beach in daylight",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://capdantibes-beachhotel.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/cap-dantibes-beach-hotel/view-1.webp",
       "downloadUrl": "https://capdantibes-beachhotel.com/_next/static/media/home_4.e805a538.jpg",
       "sourcePage": "https://capdantibes-beachhotel.com/en",
@@ -119,7 +130,12 @@
       "outputSize": [
         1200,
         926
-      ]
+      ],
+      "frCaption": "Cap d’Antibes Beach Hotel — plage privée et alignement de parasols aux tons corail",
+      "enCaption": "Cap d’Antibes Beach Hotel — private beach with rows of coral-coloured parasols",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     },
     {
       "property": "Cap d’Antibes Beach Hotel",
@@ -132,7 +148,7 @@
       "sourcePages": [
         "https://capdantibes-beachhotel.com/en"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REJECTED: property listing image is an assembled multi-room collage, not one authentic suite photograph.",
       "localPath": "/images/travel/cap-dantibes-premium/cap-dantibes-beach-hotel/view-2.webp",
       "downloadUrl": "https://capdantibes-beachhotel.com/_next/static/media/room_0.95b0ca20.jpg",
       "sourcePage": "https://capdantibes-beachhotel.com/en/suite-sea-view",
@@ -161,7 +177,7 @@
       "sourcePages": [
         "https://capdantibes-beachhotel.com/en"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REJECTED: promotional collage of unrelated panels and text/signage, not a single genuine hotel photograph.",
       "localPath": "/images/travel/cap-dantibes-premium/cap-dantibes-beach-hotel/view-3.webp",
       "downloadUrl": "https://capdantibes-beachhotel.com/_next/static/media/slider_0.cd77e257.jpg",
       "sourcePage": "https://capdantibes-beachhotel.com/en",
@@ -190,7 +206,7 @@
       "sourcePages": [
         "https://www.villamirae-capantibes.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REJECTED: predominantly abstract cyan reflection, not an identifiable external photograph of renovated Villa Miraé.",
       "localPath": "/images/travel/cap-dantibes-premium/villa-mirae/view-1.webp",
       "downloadUrl": "https://d1nzrcdi1gg6zy.cloudfront.net/cache/img/hotel-villa-mirae-mer-248782-1920-500-landscape.jpg?q=1745501431",
       "sourcePage": "https://www.villamirae-capantibes.com/en/",
@@ -214,12 +230,11 @@
       "key": "view-2",
       "slotIntent": "Current Villa Miraé genuine room or suite with distinct balcony/garden outlook",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.villamirae-capantibes.com/en/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/villa-mirae/view-2.webp",
       "downloadUrl": "https://d1nzrcdi1gg6zy.cloudfront.net/cache/img/villa-mirae-chambre-248787-1788-920-landscape.jpg?q=1751967546",
       "sourcePage": "https://www.villamirae-capantibes.com/en/",
@@ -235,7 +250,12 @@
       "outputSize": [
         1788,
         927
-      ]
+      ],
+      "frCaption": "Villa Miraé — chambre rénovée aux tons naturels et portes-fenêtres sur la terrasse",
+      "enCaption": "Villa Miraé — renovated bedroom in soft natural colours opening onto a terrace",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     },
     {
       "property": "Villa Miraé",
@@ -243,12 +263,11 @@
       "key": "view-3",
       "slotIntent": "Current Villa Miraé real pool and Mediterranean garden in bright daylight",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.villamirae-capantibes.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/villa-mirae/view-3.webp",
       "downloadUrl": "https://d1nzrcdi1gg6zy.cloudfront.net/cache/img/villa-mirae-piscine-258231-1640-1100-landscape.jpg?q=1753092192",
       "sourcePage": "https://www.villamirae-capantibes.com/en/",
@@ -264,7 +283,12 @@
       "outputSize": [
         1640,
         922
-      ]
+      ],
+      "frCaption": "Villa Miraé — piscine paisible entourée de bains de soleil et de jardins",
+      "enCaption": "Villa Miraé — tranquil outdoor pool framed by sun loungers and gardens",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     },
     {
       "property": "Hôtel Belles Rives",
@@ -272,12 +296,11 @@
       "key": "view-1",
       "slotIntent": "Actual Hotel Belles Rives historic Art Deco façade facing the sea",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.bellesrives.com/fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/hotel-belles-rives/view-1.webp",
       "downloadUrl": "https://www.bellesrives.com/media/cache/jadro_resize/rc/4EGj2lEW1792071824/jadroRoot/medias/63ee10ae40e23/nouveau-restaurant-la-passagere-mars-2016-2-.jpeg",
       "sourcePage": "https://www.bellesrives.com/en/",
@@ -293,7 +316,12 @@
       "outputSize": [
         1800,
         1122
-      ]
+      ],
+      "frCaption": "Hôtel Belles Rives — salle de restaurant Art déco et verrière lumineuse",
+      "enCaption": "Hôtel Belles Rives — light-filled Art Deco dining room overlooking the waterfront",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     },
     {
       "property": "Hôtel Belles Rives",
@@ -301,12 +329,11 @@
       "key": "view-2",
       "slotIntent": "Belles Rives authentic elegantly lit room or suite, distinct from restaurant",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.bellesrives.com/en/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/hotel-belles-rives/view-2.webp",
       "downloadUrl": "https://lucidcm.imgix.net/95182/Hotel/60839/Image/9PBsIXmfrkOPC69ZyhnDQ_Panoramic%20Suite%20Sea%20View%201.jpg.jpg?h=4315&w=6131",
       "sourcePage": "https://slh.com/hotels/hotel-belles-rives",
@@ -322,7 +349,12 @@
       "outputSize": [
         1705,
         1200
-      ]
+      ],
+      "frCaption": "Hôtel Belles Rives — suite lumineuse Art déco et fenêtres tournées vers la mer",
+      "enCaption": "Hôtel Belles Rives — elegant Art Deco suite with light-filled sea-facing windows",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     },
     {
       "property": "Hôtel Belles Rives",
@@ -330,12 +362,11 @@
       "key": "view-3",
       "slotIntent": "Belles Rives sea-facing terrace or restaurant La Passagère in daylight",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.bellesrives.com/fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/hotel-belles-rives/view-3.webp",
       "downloadUrl": "https://www.bellesrives.com/media/cache/jadro_resize/rc/Hiq3jjzt1792071825/jadroRoot/medias/652ea9818c6a4/08-pergola-restaurant-plage-min.jpg",
       "sourcePage": "https://www.bellesrives.com/en/",
@@ -351,7 +382,12 @@
       "outputSize": [
         1676,
         1200
-      ]
+      ],
+      "frCaption": "Hôtel Belles Rives — façade historique et ponton sur la mer à Juan-les-Pins",
+      "enCaption": "Hôtel Belles Rives — historic waterfront façade and private pier in Juan-les-Pins",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     }
   ],
   "destinationScenes": [
@@ -360,12 +396,11 @@
       "label": "Aerial Cap d’Antibes peninsula with hotel estates and rocky coastline in clear sunlight",
       "query": "Cap d'Antibes aerial headland France",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/destination/scene-1.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Cap_d%27Antibes_vue_aerienne.jpg/1920px-Cap_d%27Antibes_vue_aerienne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Cap_d'Antibes_vue_aerienne.jpg",
@@ -381,19 +416,23 @@
       "outputSize": [
         1704,
         1200
-      ]
+      ],
+      "frCaption": "Cap d’Antibes — vue aérienne de la presqu’île boisée et de ses criques",
+      "enCaption": "Cap d’Antibes — aerial panorama of the wooded headland and its coves",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     },
     {
       "key": "scene-2",
       "label": "Hôtel du Cap-Eden-Roc headland Côte d'Azur seascape, not Nice or Monaco",
       "query": "Cap Antibes Pointe Bacon Eden Roc coast",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/destination/scene-2.webp",
       "downloadUrl": "https://www.ontheluce.com/wp-content/uploads/2022/08/cap-dantibes-from-above-1440x900.jpg",
       "sourcePage": "https://www.ontheluce.com/boats-and-beaches-what-to-see-and-do-in-antibes/",
@@ -409,7 +448,12 @@
       "outputSize": [
         1440,
         900
-      ]
+      ],
+      "frCaption": "Cap d’Antibes — côte rocheuse, pins et eaux bleues vus du ciel",
+      "enCaption": "Cap d’Antibes — aerial of pine-covered rocky coastline and blue Mediterranean",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     },
     {
       "key": "scene-3",
@@ -421,7 +465,7 @@
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REJECTED: distant seascape dominated by road and vehicles; does not depict the required Garoupe beach.",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Baigneuses_sur_la_riviera_%C3%A0_Garoupe_Beach_%28Antibes%29_%28CN%29_-_btv1b53280113c.jpg/1920px-Baigneuses_sur_la_riviera_%C3%A0_Garoupe_Beach_%28Antibes%29_%28CN%29_-_btv1b53280113c.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedCandidateContext": "1900s black-and-white historical beach bathers, unsuitable for 2026 premium destination photography.",
       "localPath": "/images/travel/cap-dantibes-premium/destination/scene-3.webp",
@@ -446,12 +490,11 @@
       "label": "Cap d’Antibes rocky coastal Tirepoil path and pines, geographically verified",
       "query": "Sentier Tirepoil Cap Antibes",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/destination/scene-4.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Sentier_de_Tirepoil.jpg/1920px-Sentier_de_Tirepoil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Sentier_de_Tirepoil.jpg",
@@ -467,19 +510,23 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Sentier littoral du Cap d’Antibes — rochers battus par les vagues",
+      "enCaption": "Cap d’Antibes coastal trail — rugged rocks and Mediterranean surf",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     },
     {
       "key": "scene-5",
       "label": "Port Gallice small boat harbour Cap d’Antibes",
       "query": "Port Gallice Antibes",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/destination/scene-5.webp",
       "downloadUrl": "https://leportgallice.com/wp-content/uploads/sites/4/2020/05/port-gallice-yachting-plaisance-7.jpg",
       "sourcePage": "https://leportgallice.com/",
@@ -495,19 +542,23 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Port Gallice — yachts amarrés dans une marina ensoleillée",
+      "enCaption": "Port Gallice — sunlit marina with yachts moored side by side",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     },
     {
       "key": "scene-6",
       "label": "Port du Crouton and western bays, clearly identified Cap d'Antibes",
       "query": "Port du Crouton Cap Antibes",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/destination/scene-6.webp",
       "downloadUrl": "https://static.seetheworld.com/image_uploader/photos/2c/original/port-du-crouton-antibes.jpg",
       "sourcePage": "https://www.seeantibes.com/sea/marinas/port-du-crouton",
@@ -523,7 +574,12 @@
       "outputSize": [
         1200,
         675
-      ]
+      ],
+      "frCaption": "Port du Crouton — voiliers dans la marina à l’abri de la côte",
+      "enCaption": "Port du Crouton — sailboats and smaller vessels in a sheltered marina",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     },
     {
       "key": "scene-7",
@@ -535,7 +591,7 @@
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REJECTED: distant antenna-dominated lighthouse under grey sky, below Bosphoras premium daylight standard.",
       "localPath": "/images/travel/cap-dantibes-premium/destination/scene-7.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/ANTIBES_-_Phare_de_la_Garoupe.jpg/1920px-ANTIBES_-_Phare_de_la_Garoupe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:ANTIBES_-_Phare_de_la_Garoupe.jpg",
@@ -558,12 +614,11 @@
       "label": "Villa Eilenroc grounds and coastline (do not imply public lodging)",
       "query": "Villa Eilenroc Antibes",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/destination/scene-8.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Villa_Eilenroc_sud.JPG/1920px-Villa_Eilenroc_sud.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Villa_Eilenroc_sud.JPG",
@@ -579,19 +634,23 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "frCaption": "Villa Eilenroc — demeure historique encadrée d’arbres au Cap d’Antibes",
+      "enCaption": "Villa Eilenroc — historic estate framed by trees at Cap d’Antibes",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     },
     {
       "key": "scene-9",
       "label": "Juan-les-Pins Belles Rives west Cap d’Antibes waterfront and sea",
       "query": "Juan-les-Pins Belles Rives waterfront",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/cap-dantibes-premium/destination/scene-9.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/JuanLesPinsDepuisLeCap.jpg/1920px-JuanLesPinsDepuisLeCap.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:JuanLesPinsDepuisLeCap.jpg",
@@ -607,7 +666,12 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Juan-les-Pins — voiliers au mouillage face au littoral de la Riviera",
+      "enCaption": "Juan-les-Pins — yachts and sailing boats anchored off the Riviera coastline",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual original WebP inspected in GitHub photo review run 39315601213; property/location matched to accompanying named source, unique frame and appropriate editorial use. Supporting photo, not inferred booking inventory.",
+      "ownerRightsAuthorization": "Bosphoras operator declared general project photo usage authorisation on 2026-10-19; original photographer/source attribution and any licence requirements retained."
     }
   ]
 }
