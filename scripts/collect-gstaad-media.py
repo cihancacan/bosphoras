@@ -36,14 +36,15 @@ PALACE = [
      ["junior", "suite", "room"], ["portrait", "history", "staff", "wedding"]),
     ("view-3", ["https://www.palace.ch/en/gallery"],
      ["spa", "indoor", "pool"], ["portrait", "history", "wedding"]),
-])
+]
 ULTIMA = [
     ("view-2", ["https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation/four-bedroom-residence",
-                "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation"],
-     ["residence", "living", "suite"], ["exterior_summer", "ultima-courchevel", "ultima_crans"]),
+                "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation",
+                "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/gallery"],
+     ["residence", "living", "suite", "interior"], ["exterior_summer", "exterior_image", "ultima-courchevel", "ultima_crans"]),
     ("view-3", ["https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/wellness",
                 "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/gallery"],
-     ["spa", "pool", "wellness", "jacuzzi"], ["exterior_summer", "ultima-courchevel", "ultima_crans"]),
+     ["spa", "pool", "wellness", "jacuzzi", "gstaad-98", "gstaad-108"], ["exterior_summer", "exterior_image", "ultima-courchevel", "ultima_crans"]),
 ]
 SCENES = {
     "scene-1": ("Gstaad pedestrian promenade", ("gstaad", "promenade")),
@@ -135,6 +136,15 @@ def images_from_commons(query: str, required: tuple[str, ...]):
         result.append((score, url, source, title, credit))
     return sorted(result, key=lambda x: (-x[0], x[2]))
 
+# Exact hotel-image assets linked from Ultima Gstaad official galleries:
+ULTIMA_EXACT = {
+ "view-2": ("https://www.ultimacollection.com/media/50kfr2v3/10_ultimacollection_ultimahotelgstaad_interior_signaturesuite01.jpg?width=1536",
+             "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/gallery",
+             "Ultima Hotel Gstaad · Signature Suite interior"),
+ "view-3": ("https://www.ultimacollection.com/media/kqwh2tr3/202502-gstaad-98-5.jpg?width=1536",
+             "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/wellness",
+             "Ultima Hotel Gstaad · spa setting — identity to confirm visually"),
+}
 def write_candidate(item, candidates, used_hashes, used_urls):
     if item.get("status") == "candidate_needs_visual_review" and item.get("localPath"):
         return False
@@ -219,6 +229,10 @@ def main():
     for key, pages, good, bad in ULTIMA:
         item = next(x for x in hotel_items if x.get("propertyKey")=="ultima-hotel" and x["key"]==key)
         hits = []
+        candidate = ULTIMA_EXACT.get(key)
+        if candidate:
+            url, source, caption = candidate
+            hits.append((20, url, source, caption, "Ultima Collection official hotel gallery"))
         for page in pages:
             hits.extend(images_from_official(page, good, bad, "ultimacollection.com"))
         changed |= write_candidate(item, hits, used_hashes, used_urls)
