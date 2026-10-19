@@ -4,8 +4,8 @@
   "scope": "SOURCE CANDIDATES ONLY; DRAFT FR EN, NOINDEX; NOT A FINISHED 21-PHOTO GUIDE",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 11,
-  "downloadedDestinationCandidates": 3,
+  "downloadedHotelCandidates": 10,
+  "downloadedDestinationCandidates": 0,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "ownerRightsAuthorization": "Bosphoras operator confirmed rights to use suitable project photos on 2026-10-19. Subject identity, attribution and image-specific publication review still required.",
@@ -84,13 +84,12 @@
       "key": "view-3",
       "slotIntent": "bar-americain",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.montecarlosbm.com/en/hotel-monaco/hotel-paris-monte-carlo"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/monaco-premium/hotel-de-paris/view-3.webp",
       "downloadUrl": "https://asset.montecarlosbm.com/styles/hero_image_desktop/s3/media/orphea/bar-americain-restaurant-hotel-de-paris-monte-carlo-bar-2024-022_0.jpg.jpeg?itok=F3UHPHGd",
       "sourcePage": "https://www.montecarlosbm.com/en/restaurant-monaco/le-bar-americain",
@@ -106,7 +105,11 @@
       "outputSize": [
         1440,
         750
-      ]
+      ],
+      "frCaption": "Hôtel de Paris Monte-Carlo — atmosphère du Bar Américain et comptoir boisé",
+      "enCaption": "Hôtel de Paris Monte-Carlo — warm wooden interiors at Le Bar Américain",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded WebP visually checked for property identity, image quality and distinctness."
     },
     {
       "property": "Hôtel Hermitage Monte-Carlo",
@@ -214,33 +217,20 @@
       "propertyKey": "hotel-metropole",
       "key": "view-1",
       "slotIntent": "courtyard",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.metropole.com/"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "Rejected by photo editor: low-light/archival/road signs or people-led visual, not premium current Monaco subject.",
       "sourcePage": "https://www.metropole.com/",
       "candidateContext": "Well-dressed man and woman holding wine glasses, standing on a terrace overlooking a city skyline with domed rooftops at sunset.    ",
       "credit": "Official hotel photo",
-      "rejectedSource": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/699f049192a407b5ca42551c_From%20Metropole-p-1080.avif",
+      "rejectedSource": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/699f049192a407b5ca42551c_From%20Metropole.avif",
       "rejectedCandidateContext": "Well-dressed man and woman holding wine glasses, standing on a terrace overlooking a city skyline with domed rooftops at sunset.    ",
-      "rejectedSourcePage": "https://www.metropole.com/",
-      "localPath": "/images/travel/monaco-premium/hotel-metropole/view-1.webp",
-      "downloadUrl": "https://cdn.prod.website-files.com/699ebcd8fa9b29072030bf91/699f049192a407b5ca42551c_From%20Metropole.avif",
-      "sha256": "8f2c3082c06ea32599e18c09da50de4691a94b31d07720ae1259adc1cdc7a1e0",
-      "dhash": "0000100100110100101101000011010001110110001101000011010000110110",
-      "bytes": 64450,
-      "originalSize": [
-        1440,
-        900
-      ],
-      "outputSize": [
-        1440,
-        900
-      ]
+      "rejectedSourcePage": "https://www.metropole.com/"
     },
     {
       "property": "Hôtel Métropole Monte-Carlo",
@@ -248,13 +238,12 @@
       "key": "view-2",
       "slotIntent": "jacques-garcia-suite",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.metropole.com/"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://www.metropole.com/rooms-suites/carre-d-or-suite",
       "candidateContext": "    ",
       "credit": "Official hotel photo",
@@ -273,7 +262,11 @@
       "outputSize": [
         1440,
         900
-      ]
+      ],
+      "frCaption": "Hôtel Métropole — salon de suite avec étoffes prune et panorama sur Monte-Carlo",
+      "enCaption": "Hôtel Métropole — purple-upholstered suite lounge overlooking Monte-Carlo",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded WebP visually checked for property identity, image quality and distinctness."
     },
     {
       "property": "Hôtel Métropole Monte-Carlo",
@@ -281,13 +274,12 @@
       "key": "view-3",
       "slotIntent": "odyssey-pool",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.metropole.com/"
       ],
       "rights": "Operator authorization noted; image-specific origin and authenticity must be inspected before release",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://www.metropole.com/odyssey-pool-by-karl-lagerfeld",
       "candidateContext": "Outdoor swimming pool with turquoise water surrounded by lounge chairs, cabanas, umbrellas, and greenery in front of a classic building.    ",
       "credit": "Official hotel photo",
@@ -306,7 +298,11 @@
       "outputSize": [
         1080,
         675
-      ]
+      ],
+      "frCaption": "Hôtel Métropole — piscine Odyssey et terrasses baignées de soleil",
+      "enCaption": "Hôtel Métropole — sunlit Odyssey pool and landscaped terrace",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual downloaded WebP visually checked for property identity, image quality and distinctness."
     },
     {
       "property": "Monte-Carlo Bay Hotel & Resort",
@@ -395,7 +391,7 @@
       "key": "scene-1",
       "label": "Casino Square and Hôtel de Paris façade",
       "query": "Monaco Casino Square promenade",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -403,32 +399,19 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "Rejected by photo editor: low-light/archival/road signs or people-led visual, not premium current Monaco subject.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Monte_Carlo_Casino_met_op_de_voorgrond_een_park_met_palmbomen,_SFA209000090.jpg",
       "candidateContext": "Monte Carlo Casino met op de voorgrond een park met palmbomen, SFA209000090.jpg",
       "credit": "Unknown author Unknown author · Public domain",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/2024-09-22_Casino_de_Monte_Carlo.jpg/1920px-2024-09-22_Casino_de_Monte_Carlo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Monte_Carlo_Casino_met_op_de_voorgrond_een_park_met_palmbomen%2C_SFA209000090.jpg/1920px-Monte_Carlo_Casino_met_op_de_voorgrond_een_park_met_palmbomen%2C_SFA209000090.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedCandidateContext": "File:Liebherr LTM LTM 1300-6.2 (52993821916).jpg",
-      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:2024-09-22_Casino_de_Monte_Carlo.jpg",
-      "localPath": "/images/travel/monaco-premium/destination/scene-1.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Monte_Carlo_Casino_met_op_de_voorgrond_een_park_met_palmbomen%2C_SFA209000090.jpg/1920px-Monte_Carlo_Casino_met_op_de_voorgrond_een_park_met_palmbomen%2C_SFA209000090.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sha256": "ddce7c435433dda36da7c090737265195adaaeaa3f40e479733de856e76dd051",
-      "dhash": "0100111100100100101101110010001101101010110011101011011110101110",
-      "bytes": 642264,
-      "originalSize": [
-        1920,
-        1472
-      ],
-      "outputSize": [
-        1565,
-        1200
-      ]
+      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monte_Carlo_Casino_met_op_de_voorgrond_een_park_met_palmbomen,_SFA209000090.jpg"
     },
     {
       "key": "scene-2",
       "label": "Port Hercule yachts and bay",
       "query": "Monaco Port Hercule yachts harbour panorama",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -436,25 +419,12 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "Rejected by photo editor: low-light/archival/road signs or people-led visual, not premium current Monaco subject.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Port_Hercule_Monaco.jpg",
       "candidateContext": "Port Hercule Monaco.jpg",
       "credit": "Einaz80 · CC BY-SA 4.0",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/View_of_luxury_yachts_on_Port_Hercules_from_Avenue_de_la_Porte_Neuve%2C_Monaco_%2853969600210%29.jpg/1920px-View_of_luxury_yachts_on_Port_Hercules_from_Avenue_de_la_Porte_Neuve%2C_Monaco_%2853969600210%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:View_of_luxury_yachts_on_Port_Hercules_from_Avenue_de_la_Porte_Neuve,_Monaco_(53969600210).jpg",
-      "localPath": "/images/travel/monaco-premium/destination/scene-2.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Port_Hercule_Monaco.jpg/1920px-Port_Hercule_Monaco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sha256": "075d59ccbe1c4553182c2bf9d9dbab4eb9a4b9f6ceabe02fcd2bfe8fecabe2aa",
-      "dhash": "0101011001110101011011111111001000110000011000111110101100101110",
-      "bytes": 411072,
-      "originalSize": [
-        1920,
-        1440
-      ],
-      "outputSize": [
-        1600,
-        1200
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Port_Hercule_Monaco.jpg/1920px-Port_Hercule_Monaco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Port_Hercule_Monaco.jpg"
     },
     {
       "key": "scene-3",
@@ -473,7 +443,7 @@
       "key": "scene-4",
       "label": "Larvotto beach waterfront",
       "query": "Monaco Larvotto beach promenade",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -481,25 +451,12 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "Rejected by photo editor: low-light/archival/road signs or people-led visual, not premium current Monaco subject.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_-_Vue_vers_la_plage_du_Larvotto_01.jpg",
       "candidateContext": "Monaco - Vue vers la plage du Larvotto 01.jpg",
       "credit": "Kev22 · CC BY-SA 4.0",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/View_from_Larvotto_Beach_%282022%29.jpg/1920px-View_from_Larvotto_Beach_%282022%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:View_from_Larvotto_Beach_(2022).jpg",
-      "localPath": "/images/travel/monaco-premium/destination/scene-4.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Monaco_-_Vue_vers_la_plage_du_Larvotto_01.jpg/1920px-Monaco_-_Vue_vers_la_plage_du_Larvotto_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sha256": "022d9b1afa744b407e5e79e4b1dca655eee3e5aa22d8c96e80037ad7a9f00b16",
-      "dhash": "0110000001110001000001101100001110011000011000100110100001101010",
-      "bytes": 409896,
-      "originalSize": [
-        1920,
-        1280
-      ],
-      "outputSize": [
-        1800,
-        1200
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Monaco_-_Vue_vers_la_plage_du_Larvotto_01.jpg/1920px-Monaco_-_Vue_vers_la_plage_du_Larvotto_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_-_Vue_vers_la_plage_du_Larvotto_01.jpg"
     },
     {
       "key": "scene-5",
