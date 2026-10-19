@@ -1,4 +1,4 @@
-name: Travel Cap d'Antibes — inspect real local WebP images (GitHub only)
+name: Travel Cap d'Antibes — visually inspect final authentic 21 files
 on:
   push:
     branches: [feature/luxury-travel-seo-destinations-20261012]
