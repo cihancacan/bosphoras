@@ -189,7 +189,9 @@ def main():
  m=json.loads(ROOT.read_text(encoding="utf8"))
  hotel=m["hotels"];scenes=m["destinationScenes"]
  all_items=hotel+scenes
- used_urls={x.get("downloadUrl","").split("?")[0] for x in all_items if x.get("downloadUrl")}
+ used_urls={url.split("?")[0]
+  for x in all_items for url in (x.get("downloadUrl"),x.get("rejectedSource"))
+  if isinstance(url,str) and url.startswith("https://")}
  used_urls.update(x.get("rejectedSource","").split("?")[0] for x in all_items if x.get("rejectedSource"))
  digests={x["sha256"] for x in all_items if x.get("sha256")}
  changed=False
