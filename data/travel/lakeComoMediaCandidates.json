@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 7,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "property": "Villa d’Este",
@@ -505,13 +505,29 @@
       "label": "Varenna colorful shoreline and marina with lake",
       "query": "Varenna Lake Como waterfront",
       "tag": "varenna",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/destination/scene-6.webp",
+      "downloadUrl": "https://lakecomotravel.com/wp-content/uploads/2024/12/villa-monastero-varenna-lake-como-italy.webp",
+      "sourcePage": "https://lakecomotravel.com/varenna/",
+      "candidateContext": "Official CMS image matched by source context",
+      "credit": "Official hotel CMS",
+      "sha256": "a5a6d9adc5673fec47cc66c0d2070140a9ff08b81ef82f1517efd3998cf606f5",
+      "dhash": "0000001000000110111001101010011011100111111001101110011110011001",
+      "bytes": 120368,
+      "originalSize": [
+        1800,
+        1012
+      ],
+      "outputSize": [
+        1800,
+        1012
+      ]
     },
     {
       "key": "scene-7",
@@ -576,13 +592,29 @@
       "label": "Moltrasio waterfront and mountains on western Lake Como arm",
       "query": "Moltrasio Lake Como waterfront",
       "tag": "moltrasio",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/destination/scene-9.webp",
+      "downloadUrl": "https://www.italyreview.com/uploads/2/6/3/6/26365745/moltrasio-lake-como-lombardy-italy-7_orig.jpg",
+      "sourcePage": "https://www.italyreview.com/moltrasio.html",
+      "candidateContext": "Actual Moltrasio waterfront and verdant hillside, wooden private dock, blue lake",
+      "credit": "Italy Review · accurately labelled Moltrasio harbour photo",
+      "sha256": "670b49703a15d285505e715124155f702b46c7d163b7ac2d2ee6e497b3dba42a",
+      "dhash": "0011000110011001010001010011001101110011000001111101011110010011",
+      "bytes": 150838,
+      "originalSize": [
+        1100,
+        619
+      ],
+      "outputSize": [
+        1100,
+        619
+      ]
     }
   ]
 }
