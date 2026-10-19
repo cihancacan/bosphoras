@@ -71,11 +71,11 @@ for stem,slug,name in REGISTRY:
   place=x.get("property") or x.get("placeLabel") or x.get("propertyKey") or "Source"
   pen.text((left+12,top+IMAGE_H+12),str(idx+1).zfill(2)+" · "+shorten(place,34),font=FONT,fill=(31,48,59))
   pen.text((left+12,top+IMAGE_H+38),shorten(x.get("key"),34),font=FONT,fill=(70,83,96))
-  status="ALERTE : "+shorten(warn,32) if warn else "MANQUANTE" if missing else "SOURCE CANDIDATE"
+  status="ALERTE : "+shorten(warn,32) if warn else "MANQUANTE" if missing else "VALIDÉE VISUELLEMENT" if approved else "SOURCE CANDIDATE"
   pen.text((left+12,top+IMAGE_H+65),shorten(status,39),font=FONT,fill=color)
   source=x.get("sourcePage","")
   origin=(" [Source]("+source+")" if source.startswith("https://") else " Source à trouver")
-  markdown.append(f"| {idx+1} | {str(place).replace('|','/')} — {x.get('key')} |{origin} · {html.escape(x.get('candidateContext','')[:120])}| {'Manquante' if missing else 'Candidate'}"+("; **"+warn.replace("|","/")+"**" if warn else "")+" |")
+  markdown.append(f"| {idx+1} | {str(place).replace('|','/')} — {x.get('key')} |{origin} · {html.escape(x.get('candidateContext','')[:120])}| {'Manquante' if missing else 'Validée visuellement' if approved else 'Candidate'}"+("; **"+warn.replace("|","/")+"**" if warn else "")+" |")
  page.save(OUT/(slug+".jpg"),"JPEG",quality=82,optimize=True,subsampling=2)
  (OUT/(slug+".md")).write_text("\n".join(markdown)+"\n",encoding="utf8")
  index.append(f"- [{name}]({slug}.md) — {got}/21 fichiers candidats, {sum(bool(x.get('visualQaWarning')) for x in items)} alertes ; [ouvrir l'image seule]({slug}.jpg)")

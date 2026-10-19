@@ -19,6 +19,13 @@ const catalog=read('data/travel/destinations.ts');assert(catalog.includes('slug:
 assert(!m.visuallyVerified&&!m.approvedForCommercialPublication);
 const all=m.hotels.concat(m.destinationScenes);
 assert.equal(all.length,21);assert.equal(m.hotels.length,12);assert.equal(m.destinationScenes.length,9);
+assert.equal(m.downloadedHotelCandidates,12,'All hotel originals must be present');
+assert.equal(m.downloadedDestinationCandidates,9,'All geographic originals must be present');
+assert.equal(all.filter(x=>x.localPath).length,21,'Cannot finish Lake Como without 21 real WebP photos');
+assert.equal(all.filter(x=>x.visuallyVerified===true).length,21,'Cannot finish Lake Como with unreviewed photographs');
+assert.equal(all.filter(x=>x.commercialRightsCleared===true).length,21,'Every photo needs operator rights review');
+assert(all.every(x=>x.visualReviewBasis?.length>45 && x.ownerRightsAuthorization?.length>55),
+  'Missing individual visual / operator rights review trail');
 const hashes=new Set(),urls=new Set(),vis=[];
 for(const x of all){
  assert(['missing','candidate_needs_visual_review'].includes(x.status));
@@ -34,5 +41,9 @@ for(const x of all){
  if(x.visuallyVerified){assert(x.commercialRightsCleared===true&&!x.visualQaWarning&&x.frCaption?.length>35&&x.enCaption?.length>35);}
  else assert(x.commercialRightsCleared===false&&Boolean(x.visualQaWarning));
 }
+assert(!m.approvedForCommercialPublication && !m.visuallyVerified);
+assert(page.includes("const isLakeComo") && page.includes("confirmedLakeComoAssets"));
+assert(read('data/travel/lakeComoPremiumEditorial.ts').includes("confirmedLakeComoAssets"));
+assert(read('components/travel/FeaturedCityGuide.tsx').includes("lakeComoDraftFaq"));
 console.log(JSON.stringify({status:'LAKE_COMO_QA_PASSED',hotels:4,areas:5,faqFr:7,faqEn:7,photoSlots:21,
  sourced:all.filter(x=>x.localPath).length,approved:all.filter(x=>x.visuallyVerified).length,noindex:true},null,2));

@@ -32,3 +32,11 @@
 - Le niveau global `visuallyVerified=false` et `approvedForCommercialPublication=false` est conservé jusqu'au contrôle d'une Preview groupée : aucun déploiement production, pas d'indexation.
 - L'autorisation générale des photos déclarée par l'opérateur ne démontre pas à elle seule la licence individuelle de chaque photographe. Attribution et obligations des sources restent à respecter avant publication publique.
 
+
+## Contrôle de clôture — 20 octobre 2026
+
+- 21 fichiers réels WebP avec identité et source du lieu, 12 vues d’hôtels et 9 paysages, ont été inspectés et marqués approuvés dans le manifeste (sources, auteurs quand connus, empreintes, légendes FR/EN et historique par photo). La piscine flottante réelle de Tremezzo et le panorama principal ont été corrigés.
+- Guide FR/EN original : 4 hôtels, 5 secteurs, 5 expériences, 7 FAQ par langue, intégré aux métadonnées, Article, ItemList et FAQPage. Aucun prix temps réel, droit de distribution Wink ou navette privée garanti.
+- La QA exige maintenant **21/21 fichiers réels et 21/21 approbations individuelles**, plus les garde-fous de non-publication ; une photo refusée ou manquante bloque la certification.
+- Le générateur de planches affiche maintenant « Validée visuellement » sur les emplacements approuvés, plutôt que « Candidate ». Il s’agit d’une validation éditoriale, pas d’une preuve indépendante de licence commerciale individuelle.
+- `noindex`, `approvedForCommercialPublication=false` et `approvedDestinationSlugs` vide jusqu’à validation du rendu Preview groupé. Aucune publication en production et aucune modification Wink.
