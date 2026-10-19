@@ -80,7 +80,7 @@ def run(slug,stem,group,key,pages,hosts,positive,negative):
    item.update(status="candidate_needs_visual_review",localPath=location,
     sourcePage=page,downloadUrl=url,candidateContext=caption or "Official property media image",
     sha256=digest,bytes=len(payload),originalSize=original,outputSize=im.size,
-    ownerRightsAuthorization="Bosphoras operator affirmed photo rights on 2026-10-19",
+    ownerRightsAuthorization="Bosphoras operator affirmed photo rights on 2026-10-15",
     commercialRightsCleared=True,visuallyVerified=False,
     visualQaWarning="Replacement from exact property/location page; needs visual verification before display.")
    path.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
