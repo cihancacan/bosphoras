@@ -2,21 +2,37 @@
   "destination": "cap-dantibes",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 10,
-  "downloadedDestinationCandidates": 2,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 8,
   "hotels": [
     {
       "property": "Hôtel du Cap-Eden-Roc",
       "propertyKey": "hotel-du-cap-eden-roc",
       "key": "view-1",
       "slotIntent": "Historic hotel façade in full daylight, original Hôtel du Cap white Belle Époque building",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.oetkerhotels.com/fr/hotels/hotel-du-cap-eden-roc/"
       ],
-      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/hotel-du-cap-eden-roc/view-1.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Gartenfassade_Hotel_Du_Cap.jpg/1920px-Gartenfassade_Hotel_Du_Cap.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Gartenfassade_Hotel_Du_Cap.jpg",
+      "candidateContext": "Gartenfassade Hotel Du Cap.jpg",
+      "credit": "John Jason Junior · CC BY-SA 3.0",
+      "sha256": "65721e3e51910190425ca71e40ba80ff75441845d1ca23c9499cd4b3e3683f08",
+      "dhash": "0001101110000110011011010000111110001111000011110000001100000111",
+      "bytes": 457412,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "property": "Hôtel du Cap-Eden-Roc",
@@ -52,13 +68,29 @@
       "propertyKey": "hotel-du-cap-eden-roc",
       "key": "view-3",
       "slotIntent": "Signature Eden-Roc seawater pool and rock coastline, sunlit and authentic",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.oetkerhotels.com/fr/hotels/hotel-du-cap-eden-roc/"
       ],
-      "visualQaWarning": "Real original WebP not yet downloaded; exact hotel, distinctness, premium daylight and image-rights review required."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/hotel-du-cap-eden-roc/view-3.webp",
+      "downloadUrl": "https://images.eu.ctfassets.net/og3b0tarlg4b/5hOabtzktscWIpkSJnFs08/cee497d61429c1534933799fdaf64d08/HDC_-_Pool_cut.jpg?fm=jpg&w=1800",
+      "sourcePage": "https://www.oetkerhotels.com/hotels/hotel-du-cap-eden-roc/the-hotel/leisure/pool",
+      "candidateContext": "Actual Oetker Hotel du Cap-Eden-Roc iconic rock-hewn saltwater pool",
+      "credit": "Oetker Hotels · official Eden-Roc pool photograph",
+      "sha256": "a9ad3ab1e74b102741d27b76e028e28ae980566e5a9e81eaebf6163ea9ac7e8e",
+      "dhash": "1111111101001111000000110011000011111001001001110000001100100001",
+      "bytes": 426660,
+      "originalSize": [
+        1800,
+        1391
+      ],
+      "outputSize": [
+        1553,
+        1200
+      ]
     },
     {
       "property": "Cap d’Antibes Beach Hotel",
@@ -327,25 +359,57 @@
       "key": "scene-1",
       "label": "Aerial Cap d’Antibes peninsula with hotel estates and rocky coastline in clear sunlight",
       "query": "Cap d'Antibes aerial headland France",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/destination/scene-1.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Cap_d%27Antibes_vue_aerienne.jpg/1920px-Cap_d%27Antibes_vue_aerienne.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cap_d'Antibes_vue_aerienne.jpg",
+      "candidateContext": "Cap d'Antibes vue aerienne.jpg",
+      "credit": "Patrick Rouzet · CC BY-SA 3.0",
+      "sha256": "b665c7ee3d4ba3fffe154e4a30180916eee80653b38023dd11c7e7e6d3da62b9",
+      "dhash": "0000111100001101111000000110001000100001001001110110110111010000",
+      "bytes": 477716,
+      "originalSize": [
+        1920,
+        1352
+      ],
+      "outputSize": [
+        1704,
+        1200
+      ]
     },
     {
       "key": "scene-2",
       "label": "Hôtel du Cap-Eden-Roc headland Côte d'Azur seascape, not Nice or Monaco",
       "query": "Cap Antibes Pointe Bacon Eden Roc coast",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/destination/scene-2.webp",
+      "downloadUrl": "https://www.ontheluce.com/wp-content/uploads/2022/08/cap-dantibes-from-above-1440x900.jpg",
+      "sourcePage": "https://www.ontheluce.com/boats-and-beaches-what-to-see-and-do-in-antibes/",
+      "candidateContext": "True Cap d'Antibes rocky headland and natural coves, photographed from above",
+      "credit": "On the Luce · exact Cap d'Antibes aerial",
+      "sha256": "0fb0ef513e71b79e5a30846d46eb3c13e060161fd619c2255011f15d8a86ae4a",
+      "dhash": "0000001000000000000000010000001010000100100110011100011000100110",
+      "bytes": 392186,
+      "originalSize": [
+        1440,
+        900
+      ],
+      "outputSize": [
+        1440,
+        900
+      ]
     },
     {
       "key": "scene-3",
@@ -379,13 +443,29 @@
       "key": "scene-4",
       "label": "Cap d’Antibes rocky coastal Tirepoil path and pines, geographically verified",
       "query": "Sentier Tirepoil Cap Antibes",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/destination/scene-4.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Sentier_de_Tirepoil.jpg/1920px-Sentier_de_Tirepoil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sentier_de_Tirepoil.jpg",
+      "candidateContext": "Sentier de Tirepoil.jpg",
+      "credit": "Einaz80 · CC BY-SA 4.0",
+      "sha256": "4dd8af7105c1003c56f9e23f6b2808793fefc029185aaec4aaeeb0b8f63b8098",
+      "dhash": "0111011110001110000110010001111110000110111100100111100100101100",
+      "bytes": 625554,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-5",
@@ -403,13 +483,29 @@
       "key": "scene-6",
       "label": "Port du Crouton and western bays, clearly identified Cap d'Antibes",
       "query": "Port du Crouton Cap Antibes",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/destination/scene-6.webp",
+      "downloadUrl": "https://static.seetheworld.com/image_uploader/photos/2c/original/port-du-crouton-antibes.jpg",
+      "sourcePage": "https://www.seeantibes.com/sea/marinas/port-du-crouton",
+      "candidateContext": "Port du Crouton real small boats and masts by Antibes west shoreline",
+      "credit": "SeeAntibes · documented Port du Crouton",
+      "sha256": "76baddd1bf218eb4dda58c637ef8dc921fe3ae1749fef47ffa6aa6890eb6e5da",
+      "dhash": "0110010010100100011001010101001001010001100010110110001001011101",
+      "bytes": 155510,
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ]
     },
     {
       "key": "scene-7",
@@ -443,25 +539,57 @@
       "key": "scene-8",
       "label": "Villa Eilenroc grounds and coastline (do not imply public lodging)",
       "query": "Villa Eilenroc Antibes",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/destination/scene-8.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Villa_Eilenroc_sud.JPG/1920px-Villa_Eilenroc_sud.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Villa_Eilenroc_sud.JPG",
+      "candidateContext": "Villa Eilenroc sud.JPG",
+      "credit": "Dacoucou · CC BY-SA 3.0",
+      "sha256": "9596f9ef3c65ad74bb3a5a1111d7bd252186382be0bee34fb54e78a83627ef1d",
+      "dhash": "1000001111011011010010010100110000001101000111011000110100101111",
+      "bytes": 471930,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     },
     {
       "key": "scene-9",
       "label": "Juan-les-Pins Belles Rives west Cap d’Antibes waterfront and sea",
       "query": "Juan-les-Pins Belles Rives waterfront",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.antibesjuanlespins.com/"
       ],
-      "visualQaWarning": "Authentic Cap d’Antibes geographically identified daylight photo not yet collected or manually approved."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/cap-dantibes-premium/destination/scene-9.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/JuanLesPinsDepuisLeCap.jpg/1920px-JuanLesPinsDepuisLeCap.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:JuanLesPinsDepuisLeCap.jpg",
+      "candidateContext": "JuanLesPinsDepuisLeCap.jpg",
+      "credit": "Ameilland · CC BY-SA 3.0",
+      "sha256": "0697aaa040f3279af031f267532422777a0c56571d0ee66fa02f7c4db676b607",
+      "dhash": "0000000000000000000000000000111000001011001010000010010000000000",
+      "bytes": 276410,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     }
   ]
 }
