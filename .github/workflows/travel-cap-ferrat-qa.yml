@@ -1,0 +1,34 @@
+name: Travel Saint-Jean-Cap-Ferrat — editorial and TypeScript QA
+on:
+  push:
+    branches:
+      - feature/luxury-travel-seo-destinations-20261012
+    paths:
+      - .github/workflows/travel-cap-ferrat-qa.yml
+      - scripts/check-cap-ferrat-draft.mjs
+      - data/travel/saintJeanCapFerratGuide.ts
+      - data/travel/saintJeanCapFerratDraftGuide.ts
+      - data/travel/saintJeanCapFerratDraftFaq.ts
+      - data/travel/saintJeanCapFerratPremiumEditorial.ts
+      - data/travel/saintJeanCapFerratMediaCandidates.json
+      - data/travel/featuredCityGuides.ts
+      - components/travel/FeaturedCityGuide.tsx
+      - components/travel/TravelPages.tsx
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  typecheck_and_editorial:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: TypeScript integration without Vercel build
+        run: npm run typecheck
+      - name: Cap-Ferrat hotel/FAQ/rights/noindex checks
+        run: node scripts/check-cap-ferrat-draft.mjs
