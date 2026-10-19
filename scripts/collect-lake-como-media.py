@@ -248,6 +248,8 @@ def replacement_collect(slot,candidates,sha_used,url_used,visual_used):
         return True
     slot.clear();slot.update(original)
     return False
+# The previous wrong draft mistakenly blacklisted DJI_0031 as a rejected URL.
+# Clearing that manifest field permits this exact confirmed original to be retried.
 lib.collect=replacement_collect
 
 if __name__=="__main__":

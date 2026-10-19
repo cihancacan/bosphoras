@@ -185,9 +185,7 @@
       "sourcePages": [
         "https://www.grandhoteltremezzo.com/en/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "rejectedSource": "https://www.grandhoteltremezzo.com/media/rxyntdgz/grand_hotel_tremezzo-pools-julius-dji_0031.jpg?width=1825&height=1217&format=webp&v=1da398aa747edb0",
-      "rejectedCandidateContext": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "Need real Water-on-the-Water floating pool, existing reflection/pavilion image rejected. Original DJI 0031 photo was incorrectly put on URL denylist by collector.",
       "localPath": "/images/travel/lake-como-premium/grand-hotel-tremezzo/view-3.webp",
       "downloadUrl": "https://www.grandhoteltremezzo.com/media/ikomnjus/grand_hotel_tremezzo-pools-julius-l1210114.jpg?width=1766&height=1226&format=webp&v=1da398a6417c380",
       "sourcePage": "https://www.grandhoteltremezzo.com/en/resort/pools/",
