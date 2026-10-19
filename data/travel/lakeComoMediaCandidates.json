@@ -419,22 +419,22 @@
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
       "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Lago_di_Como_panorama.jpg/1920px-Lago_di_Como_panorama.jpg",
+      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Lago_Como_aerial_1.jpg/1920px-Lago_Como_aerial_1.jpg",
       "rejectedCandidateContext": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/lake-como-premium/destination/scene-1.webp",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Lago_Como_aerial_1.jpg/1920px-Lago_Como_aerial_1.jpg",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lago_Como_aerial_1.jpg",
-      "candidateContext": "Lago Como aerial 1.jpg",
-      "credit": "Wikimedia Commons photo · attribution and license to inspect on linked file page",
-      "sha256": "8928f2c0b56a3b4f9c863f1722a55b74044b63adf3c5c36b1a74eacc47725694",
-      "dhash": "0010011100111111101111110001111100111011111111111111111100111111",
-      "bytes": 135582,
+      "downloadUrl": "https://images.pexels.com/photos/32569620/pexels-photo-32569620.jpeg?auto=compress&cs=tinysrgb&w=1800",
+      "sourcePage": "https://www.pexels.com/photo/scenic-view-of-lake-como-in-italy-s-lombardy-region-32569620/",
+      "candidateContext": "Real Lake Como sunlit mountain aerial original photo",
+      "credit": "Earth Photart · Pexels licence",
+      "sha256": "1a8abff73b93bd31543ec97390962bd105c95803487ef9791e644156eff67d8f",
+      "dhash": "1111111111111111010111110100011100100101000011010000110001001001",
+      "bytes": 354566,
       "originalSize": [
-        1920,
-        1280
+        1800,
+        1350
       ],
       "outputSize": [
-        1800,
+        1600,
         1200
       ]
     },
