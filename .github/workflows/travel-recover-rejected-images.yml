@@ -28,7 +28,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           for slug in st-moritz val-disere big-sky; do
-            git add "public/images/travel/$"+"{slug}-premium" || true
+            git add -A -- "public/images/travel/${slug}-premium" || true
           done
           git add data/travel/stMoritzMediaCandidates.json data/travel/valDisereMediaCandidates.json data/travel/bigSkyMediaCandidates.json
           if ! git diff --cached --quiet; then
