@@ -1,10 +1,10 @@
 {
   "workflow": "travel-gstaad-media",
+  "collector_revision": "2026-10-19-v3-luxury-two-assets",
   "scope": "Gstaad authentic assets, no public preview",
-  "hotel_candidates": 11,
+  "hotel_candidates": 12,
   "landscape_candidates": 8,
   "missing": [
-    "gstaad-palace/view-3",
     "destination/scene-6"
   ],
   "diagnostics": [
@@ -37,33 +37,6 @@
       "type": "source_error",
       "url": "https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?height=900&mode=crop&quality=90&scale=downscaleonly&width=1440",
       "error": "404 Client Error: Not Found for url: https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?height=900&mode=crop&quality=90&scale=downscaleonly&width=1440"
-    },
-    {
-      "type": "source_error",
-      "url": "https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?height=698&mode=crop&quality=85&scale=downscaleonly&width=1240",
-      "error": "404 Client Error: Not Found for url: https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?height=698&mode=crop&quality=85&scale=downscaleonly&width=1240"
-    },
-    {
-      "type": "source_error",
-      "url": "https://static-new.lhw.com/HotelImages/Final/LW1606/lw1606_202074221_1400x600.jpg",
-      "error": "403 Client Error: Forbidden for url: https://static-new.lhw.com/HotelImages/Final/LW1606/lw1606_202074221_1400x600.jpg"
-    },
-    {
-      "type": "source_error",
-      "url": "https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?width=1240",
-      "error": "404 Client Error: Not Found for url: https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?width=1240"
-    },
-    {
-      "type": "still_missing",
-      "slot": "gstaad-palace/view-3",
-      "urls_tried": [
-        "https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?height=900&mode=crop&quality=90&scale=downscaleonly&width=1440",
-        "https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?height=698&mode=crop&quality=85&scale=downscaleonly&width=1240",
-        "https://cms.inspirato.com/ImageGen.ashx?image=%2Fmedia%2F9461972%2F9copyright-gstaad-palace_stefano-scata_indoor-pool-palace-spa_570396_300dpi_rgb_favourite.jpg&width=1440",
-        "https://static-new.lhw.com/HotelImages/Final/LW1606/lw1606_202074221_1400x600.jpg",
-        "https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2022/02/IMG_6593.jpeg?ssl=1",
-        "https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?width=1240"
-      ]
     },
     {
       "type": "still_missing",
