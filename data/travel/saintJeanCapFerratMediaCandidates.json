@@ -700,24 +700,24 @@
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
       "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Baie_des_Fourmis%2C_Beaulieu-sur-Mer.jpg/1920px-Baie_des_Fourmis%2C_Beaulieu-sur-Mer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Panorama_baie_des_Fourmis_Beaulieu-sur-Mer.jpg/1920px-Panorama_baie_des_Fourmis_Beaulieu-sur-Mer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-9.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Panorama_baie_des_Fourmis_Beaulieu-sur-Mer.jpg/1920px-Panorama_baie_des_Fourmis_Beaulieu-sur-Mer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panorama_baie_des_Fourmis_Beaulieu-sur-Mer.jpg",
-      "candidateContext": "Panorama baie des Fourmis Beaulieu-sur-Mer.jpg",
-      "credit": "Miniwark · CC BY-SA 4.0",
-      "sha256": "55cd784cf74d94e99007fd20b3ac73eeb79e148fd512a5be3b457b714ac5cd31",
-      "dhash": "0111111101111101101111001100000000001000011100000110010101101011",
-      "bytes": 162124,
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/085F_Beaulieu-sur-Mer_%2815885396822%29.jpg/1920px-085F_Beaulieu-sur-Mer_%2815885396822%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:085F_Beaulieu-sur-Mer_(15885396822).jpg",
+      "candidateContext": "File:085F Beaulieu-sur-Mer (15885396822).jpg",
+      "credit": "Rüdiger Stehn from Kiel, Deutschland · CC BY-SA 2.0",
+      "sha256": "5cb7cc51630c38fc8956212550a8d00eace7b803d630ed22f6dbd80a5f9f94c7",
+      "dhash": "0011011100010111000001110000010100011011000110110001011100011111",
+      "bytes": 236314,
       "originalSize": [
         1920,
-        628
+        1267
       ],
       "outputSize": [
         1800,
-        589
-      ],
-      "rejectedCandidateContext": "EDITORIAL HOLD: Correct coastline, but brightly oversaturated tourist umbrellas and crowds weaken restrained luxury palette; seek a calmer, cleaner panorama."
+        1188
+      ]
     }
   ]
 }
