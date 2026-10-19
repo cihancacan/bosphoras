@@ -103,6 +103,17 @@ lib.DIRECT_LANDSCAPES.update({
  "scene-6":lib.direct_wikimedia("Varenna lakecomo.jpg"),
  "scene-9":lib.direct_wikimedia("Panoramic view of the harbour of Moltrasio - 1.jpg")
 })
+# Commons image servers rate-limit repetitive downloads; switch two remaining
+# source candidates to photographically documented destination publisher pages.
+lib.DIRECT_LANDSCAPES["scene-6"]=lib.hotels_from_page(
+ "https://lakecomotravel.com/varenna/",["varenna","waterfront","lake","town"]
+)
+lib.DIRECT_LANDSCAPES["scene-9"]=[
+ (115,"https://www.italyreview.com/uploads/2/6/3/6/26365745/moltrasio-lake-como-lombardy-italy-7_orig.jpg",
+  "https://www.italyreview.com/moltrasio.html",
+  "Actual Moltrasio waterfront and verdant hillside, wooden private dock, blue lake",
+  "Italy Review · accurately labelled Moltrasio harbour photo")
+]
 lib.COMMONS_EXACT={}
 lib.DIRECT_WIKIMEDIA={}
 # A candidate already visually approved is never replaced, nor is a different
