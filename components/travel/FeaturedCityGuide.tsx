@@ -10,6 +10,7 @@ import { bigSkyDraftFaq } from '@/data/travel/bigSkyDraftFaq';
 import { valDisereDraftFaq } from '@/data/travel/valDisereDraftFaq';
 import { verbierDraftFaq } from '@/data/travel/verbierDraftFaq';
 import { gstaadDraftFaq } from '@/data/travel/gstaadDraftFaq';
+import { zermattDraftFaq } from '@/data/travel/zermattDraftFaq';
 import Link from 'next/link';
 import { featuredCityGuides, type FeaturedCityGuideData, type FeaturedCityPhoto } from '@/data/travel/featuredCityGuides';
 import { travelHref } from '@/lib/travel/i18n';
@@ -68,7 +69,7 @@ const confirmedMustiqueAssets=new Set([...mustiqueHotelManifest.items,...mustiqu
 const confirmedPortoCervoAssets=new Set([...portoCervoHotelManifest.items,...portoCervoDestinationManifest.items].filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 
 const isAlpineCity=(slug:FeaturedCityGuideData['slug']):slug is keyof typeof alpineAvailablePhotoPathsByCity => Object.prototype.hasOwnProperty.call(alpineAvailablePhotoPathsByCity,slug);
-const alpineFaqByCity={'st-moritz':stMoritzDraftFaq,aspen:aspenDraftFaq,niseko:nisekoDraftFaq,megeve:megeveDraftFaq,'jackson-hole':jacksonHoleDraftFaq,'big-sky':bigSkyDraftFaq,'val-disere':valDisereDraftFaq,verbier:verbierDraftFaq,gstaad:gstaadDraftFaq} as const;
+const alpineFaqByCity={'st-moritz':stMoritzDraftFaq,aspen:aspenDraftFaq,niseko:nisekoDraftFaq,megeve:megeveDraftFaq,'jackson-hole':jacksonHoleDraftFaq,'big-sky':bigSkyDraftFaq,'val-disere':valDisereDraftFaq,verbier:verbierDraftFaq,gstaad:gstaadDraftFaq,zermatt:zermattDraftFaq} as const;
 type Lang = 'fr' | 'en';
 type Variant = 'destination' | 'hotels';
 
