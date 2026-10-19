@@ -233,6 +233,7 @@ def main():
  digests={x["sha256"] for x in all_items if x.get("sha256")}
  changed=False
  for item in hotel:
+  if item.get("visuallyVerified") or (item.get("status")=="candidate_needs_visual_review" and item.get("localPath")):continue
   group=item["propertyKey"];key=item["key"]
   if group not in OFFICIAL:continue
   sources=OFFICIAL[group].get(key,[])
@@ -249,6 +250,7 @@ def main():
    options.extend(possibilities)
   changed|=candidate(item,options,used_urls,digests)
  for item in scenes:
+  if item.get("visuallyVerified") or (item.get("status")=="candidate_needs_visual_review" and item.get("localPath")):continue
   query,terms=SCENES[item["key"]]
   options=[(100,url,source,caption,"Named Commons landscape; still QA gated") for url,source,caption in EXACT_SCENES.get(item["key"],[])]
   if options and candidate(item,options,used_urls,digests):
