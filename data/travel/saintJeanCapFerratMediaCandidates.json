@@ -699,7 +699,7 @@
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "REJECTED HISTORIC: actual source is an archival 1978 photograph, not a contemporary premium Baie des Fourmis view. Seek authentic later photograph.",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Panorama_baie_des_Fourmis_Beaulieu-sur-Mer.jpg/1920px-Panorama_baie_des_Fourmis_Beaulieu-sur-Mer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedCandidateContext": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-9.webp",
