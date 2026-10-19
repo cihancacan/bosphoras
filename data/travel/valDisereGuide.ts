@@ -78,6 +78,15 @@ export const valDisereGuide:FeaturedCityGuideData={
     "license": "Autorisation Bosphoras",
     "licenseUrl": "https://www.village-montana.com/val-disere/chalet-skadi",
     "sourcePage": "https://www.village-montana.com/val-disere/chalet-skadi"
+  },
+  "scene-5": {
+    "src": "/images/travel/val-disere-premium/destination/scene-5.webp",
+    "fr": "Le Laisinant à Val d'Isère en hiver : maisons de pierre enneigées et skieuse dans la ruelle",
+    "en": "Le Laisinant in Val d'Isère in winter: snow-covered stone chalets and a skier walking through the hamlet",
+    "author": "Yann Allègre · Val d’Isère Tourisme",
+    "license": "Autorisation Bosphoras",
+    "licenseUrl": "https://www.valdisere.com/en/val-disere-in-winter/walks-and-snowshoeing-tours/",
+    "sourcePage": "https://www.valdisere.com/en/val-disere-in-winter/walks-and-snowshoeing-tours/"
   }
 }
 

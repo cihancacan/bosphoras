@@ -500,14 +500,14 @@
       "placeLabel": "Le Laisinant",
       "searchQuery": "Laisinant Val d Isere",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
+      "rights": "Droits d'utilisation confirmés par l'exploitant Bosphoras ; crédit Yann Allègre / Val d’Isère Tourisme.",
       "localPath": "/images/travel/val-disere-premium/destination/scene-5.webp",
       "downloadUrl": "https://woody.cloudly.space/app/uploads/valdisere/2023/09/thumbs/valdisere-00035644-1920x1080.webp",
       "sourcePage": "https://www.valdisere.com/en/val-disere-in-winter/walks-and-snowshoeing-tours/",
-      "candidateContext": "Female skier walking through the village with her skis on her shoulder in Le Laisinant, Val d'Isère, in winter",
-      "credit": "Val d'Isère Tourisme",
+      "candidateContext": "Photographie officielle du hameau du Laisinant en hiver : skieuse portant son matériel à pied",
+      "credit": "Yann Allègre · Val d’Isère Tourisme",
       "bytes": 310204,
       "sha256": "ea12272ee06d2c23f1a6b4b8d98d27d5c16bd9dbec590231f142d600c3179126",
       "originalSize": [
@@ -519,7 +519,10 @@
         956
       ],
       "ownerRightsAuthorization": "Bosphoras operator affirmed photo rights on 2026-10-15",
-      "visualQaWarning": "Replacement from exact property/location page; needs visual verification before display."
+      "frCaption": "Le Laisinant à Val d'Isère en hiver : maisons de pierre enneigées et skieuse dans la ruelle",
+      "enCaption": "Le Laisinant in Val d'Isère in winter: snow-covered stone chalets and a skier walking through the hamlet",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Visual review of 1920×1080 tourism image: snowy stone hamlet, person carrying skis, mountains visible; matched official page alt text naming Le Laisinant."
     },
     {
       "key": "scene-6",
