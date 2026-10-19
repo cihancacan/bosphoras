@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 11,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 2,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -14,14 +14,13 @@
       "propertyKey": "gstaad-palace",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.palace.ch/en/",
         "https://www.palace.ch/en/data-facts-and-figures"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
       "localPath": "/images/travel/gstaad-premium/gstaad-palace/view-1.webp",
       "downloadUrl": "https://resc.deskline.net/images/GRI/1/a2291c76-f5c2-4d8a-a94f-2bc06e9ad6b2/99/image.jpg",
       "sourcePage": "https://www.gstaad.ch/en/plan-book/booking/accommodation/detail/gstaad-palace-7566ljvf",
@@ -36,21 +35,25 @@
       "outputSize": [
         1700,
         1133
-      ]
+      ],
+      "frCaption": "Gstaad Palace — façade et jardins ensoleillés pendant l'été",
+      "enCaption": "Gstaad Palace — sunlit historic exterior and gardens in summer",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Photo WebP individually inspected against exact named hotel or geographic subject, realistic seasonal caption",
+      "ownerRightsAuthorization": "Bosphoras operator confirms usage rights, 2026-10-19"
     },
     {
       "property": "Gstaad Palace",
       "propertyKey": "gstaad-palace",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.palace.ch/en/",
         "https://www.palace.ch/en/data-facts-and-figures"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
       "localPath": "/images/travel/gstaad-premium/gstaad-palace/view-2.webp",
       "downloadUrl": "https://cms.inspirato.com/ImageGen.ashx?image=%2Fmedia%2F9461967%2Fcopyright-gstaad-palace_stefano-scata_deluxe-junior-suite-mountain-view_n-18_549489_300dpi_rgb_cut-as-per-as.jpg&width=1440",
       "sourcePage": "https://www.inspirato.com/destinations/gstaad-switzerland/residences/gstaad-deluxe-junior-suite-mountain-view/",
@@ -65,7 +68,12 @@
       "outputSize": [
         1440,
         810
-      ]
+      ],
+      "frCaption": "Gstaad Palace — Deluxe Junior Suite avec salon et vue sur les Alpes",
+      "enCaption": "Gstaad Palace — Deluxe Junior Suite lounge with alpine outlook",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Photo WebP individually inspected against exact named hotel or geographic subject, realistic seasonal caption",
+      "ownerRightsAuthorization": "Bosphoras operator confirms usage rights, 2026-10-19"
     },
     {
       "property": "Gstaad Palace",
@@ -388,36 +396,25 @@
       "key": "scene-1",
       "placeLabel": "Gstaad chalet village",
       "searchQuery": "Gstaad Switzerland village",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
-      "localPath": "/images/travel/gstaad-premium/destination/scene-1.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Gstaad_-_panoramio_%2828%29.jpg/1920px-Gstaad_-_panoramio_%2828%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "visualQaWarning": "Generic Posthotel facade, not the premium pedestrian promenade panorama required.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Gstaad_-_panoramio_(28).jpg",
       "candidateContext": "File:Gstaad - panoramio (28).jpg",
       "credit": "Patrick Nouhailler's… | CC BY-SA 3.0",
-      "sha256": "3c151e3722f99421f443577ceae392719d91a953df1849263d159f6dbb1c07c4",
-      "bytes": 319606,
-      "originalSize": [
-        1920,
-        1280
-      ],
-      "outputSize": [
-        1700,
-        1133
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Gstaad_-_panoramio_%2828%29.jpg/1920px-Gstaad_-_panoramio_%2828%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "File:Gstaad - panoramio (28).jpg"
     },
     {
       "key": "scene-2",
       "placeLabel": "Gstaad promenade",
       "searchQuery": "Gstaad promenade",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
       "localPath": "/images/travel/gstaad-premium/destination/scene-2.webp",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/50/GstaadPanoramaVillage.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:GstaadPanoramaVillage.jpg",
@@ -432,32 +429,27 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Village de Gstaad en hiver — toits de chalets et reliefs enneigés",
+      "enCaption": "Gstaad village in winter — snow-covered chalet roofs and mountain slopes",
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Photo WebP individually inspected against exact named hotel or geographic subject, realistic seasonal caption",
+      "ownerRightsAuthorization": "Bosphoras operator confirms usage rights, 2026-10-19"
     },
     {
       "key": "scene-3",
       "placeLabel": "Gstaad panoramic hillside",
       "searchQuery": "Gstaad panorama",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
-      "localPath": "/images/travel/gstaad-premium/destination/scene-3.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Saanen_Goat_Statue.jpg/1920px-Saanen_Goat_Statue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "visualQaWarning": "A goat sculpture by the road, not a distinguished Saanen village streetscape.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Saanen_Goat_Statue.jpg",
       "candidateContext": "File:Saanen Goat Statue.jpg",
       "credit": "Sumit Surai | CC BY-SA 4.0",
-      "sha256": "bb0764044337ad7d048107f1d094871dd3e55aeac4b7956d841e37c0a4dcd608",
-      "bytes": 656238,
-      "originalSize": [
-        1920,
-        1291
-      ],
-      "outputSize": [
-        1700,
-        1143
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Saanen_Goat_Statue.jpg/1920px-Saanen_Goat_Statue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "File:Saanen Goat Statue.jpg"
     },
     {
       "key": "scene-4",
@@ -509,103 +501,61 @@
       "key": "scene-6",
       "placeLabel": "Wasserngrat",
       "searchQuery": "Wasserngrat Gstaad",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
-      "localPath": "/images/travel/gstaad-premium/destination/scene-6.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/CH-NB_Photoglob-Wehrli_EAD-WEHR-38382-B.tif/lossy-page1-1920px-CH-NB_Photoglob-Wehrli_EAD-WEHR-38382-B.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "visualQaWarning": "Archival black-and-white mountain print with scratches and frame; not a real current Wasserngrat panorama.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:CH-NB_Photoglob-Wehrli_EAD-WEHR-38382-B.tif",
       "candidateContext": "File:CH-NB Photoglob-Wehrli EAD-WEHR-38382-B.tif",
       "credit": "Dr. [?] Kuhn | Public domain",
-      "sha256": "2a61875d7f796d1572dd08842c13380edf43159b838dbe585bcd1e92e82fbbb6",
-      "bytes": 381038,
-      "originalSize": [
-        1920,
-        1450
-      ],
-      "outputSize": [
-        1589,
-        1200
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/CH-NB_Photoglob-Wehrli_EAD-WEHR-38382-B.tif/lossy-page1-1920px-CH-NB_Photoglob-Wehrli_EAD-WEHR-38382-B.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "File:CH-NB Photoglob-Wehrli EAD-WEHR-38382-B.tif"
     },
     {
       "key": "scene-7",
       "placeLabel": "Saanen",
       "searchQuery": "Saanen village",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
+      "visualQaWarning": "Modern train and railway lines, not a scenic Schönried village image.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Schönried_20220731E506_204.jpg",
       "candidateContext": "File:Schönried 20220731E506 204.jpg",
       "credit": "Markus Giger | CC BY-SA 4.0",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Panoramaweg_Saanenm%C3%B6ser_-_Sch%C3%B6nried_-_Gruben_-_Gstaad_-_panoramio_%281%29.jpg/1920px-Panoramaweg_Saanenm%C3%B6ser_-_Sch%C3%B6nried_-_Gruben_-_Gstaad_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedCandidateContext": "File:Panoramaweg Saanenmöser - Schönried - Gruben - Gstaad - panoramio (1).jpg",
-      "localPath": "/images/travel/gstaad-premium/destination/scene-7.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Sch%C3%B6nried_20220731E506_204.jpg/1920px-Sch%C3%B6nried_20220731E506_204.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sha256": "2a44e663812e1678d395314a006288ce46ccfe21f2e2778180f42fc70f8a0980",
-      "bytes": 321012,
-      "originalSize": [
-        1920,
-        1280
-      ],
-      "outputSize": [
-        1700,
-        1133
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Sch%C3%B6nried_20220731E506_204.jpg/1920px-Sch%C3%B6nried_20220731E506_204.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "File:Schönried 20220731E506 204.jpg"
     },
     {
       "key": "scene-8",
       "placeLabel": "Schönried",
       "searchQuery": "Schoenried village",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
-      "localPath": "/images/travel/gstaad-premium/destination/scene-8.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Gstaad_-_Sch%C3%B6nried_-_Saanenm%C3%B6ser_-_panoramio.jpg/1920px-Gstaad_-_Sch%C3%B6nried_-_Saanenm%C3%B6ser_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "visualQaWarning": "Featureless snowy slope and pole, not a distinctive Saanenmöser alpine landscape.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Gstaad_-_Schönried_-_Saanenmöser_-_panoramio.jpg",
       "candidateContext": "File:Gstaad - Schönried - Saanenmöser - panoramio.jpg",
       "credit": "Patrick Nouhailler's… | CC BY-SA 3.0",
-      "sha256": "760daddbcf737c61539b7a9dd299697ab781c767c2e3ae4dafd5f291043c1e08",
-      "bytes": 166660,
-      "originalSize": [
-        1920,
-        1280
-      ],
-      "outputSize": [
-        1700,
-        1133
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Gstaad_-_Sch%C3%B6nried_-_Saanenm%C3%B6ser_-_panoramio.jpg/1920px-Gstaad_-_Sch%C3%B6nried_-_Saanenm%C3%B6ser_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "File:Gstaad - Schönried - Saanenmöser - panoramio.jpg"
     },
     {
       "key": "scene-9",
       "placeLabel": "Saanenland mountains",
       "searchQuery": "Saanenland mountains",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
-      "localPath": "/images/travel/gstaad-premium/destination/scene-9.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/CH-NB_Photoglob-Wehrli_EAD-WEHR-13393-B.tif/lossy-page1-1920px-CH-NB_Photoglob-Wehrli_EAD-WEHR-13393-B.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "visualQaWarning": "Archival black-and-white photo, not contemporary Lauenensee scenery.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:CH-NB_Photoglob-Wehrli_EAD-WEHR-13393-B.tif",
       "candidateContext": "File:CH-NB Photoglob-Wehrli EAD-WEHR-13393-B.tif",
       "credit": "Bruno Wehrli | Public domain",
-      "sha256": "fd3f3296fbc594b44a62d35a09ba51fa410d1994c2947ba3b908b90ded085db0",
-      "bytes": 444908,
-      "originalSize": [
-        1920,
-        1456
-      ],
-      "outputSize": [
-        1582,
-        1200
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/CH-NB_Photoglob-Wehrli_EAD-WEHR-13393-B.tif/lossy-page1-1920px-CH-NB_Photoglob-Wehrli_EAD-WEHR-13393-B.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "File:CH-NB Photoglob-Wehrli EAD-WEHR-13393-B.tif"
     }
   ],
   "publicationBlockedReason": "Missing images, duplicate originals, uncertain visual identity and/or unverified commercial photo rights.",
