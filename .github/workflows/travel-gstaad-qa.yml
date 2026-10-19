@@ -1,0 +1,34 @@
+name: Travel Gstaad — bilingual guide and media QA (no Vercel build)
+on:
+  push:
+    branches:
+      - feature/luxury-travel-seo-destinations-20261012
+    paths:
+      - .github/workflows/travel-gstaad-qa.yml
+      - scripts/check-gstaad-draft.mjs
+      - data/travel/gstaadGuide.ts
+      - data/travel/gstaadDraftGuide.ts
+      - data/travel/gstaadDraftFaq.ts
+      - data/travel/gstaadMediaCandidates.json
+      - data/travel/featuredCityGuides.ts
+      - data/travel/alpinePremiumEditorial.ts
+      - components/travel/FeaturedCityGuide.tsx
+      - components/travel/TravelPages.tsx
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm run typecheck
+      - run: node scripts/check-gstaad-draft.mjs
+      - run: node scripts/check-travel-catalogue.mjs
+      - run: node scripts/check-travel-batch-preview.mjs
