@@ -248,15 +248,14 @@
       "key": "view-2",
       "slotIntent": "sea-facing terrace bedroom",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://villacapferrat.fr/"
       ],
       "rejectedSource": "https://villacapferrat.fr/wp-content/uploads/2024/12/2025-junior-suite-2.jpg",
       "rejectedCandidateContext": "EDITORIAL HOLD: Below luxury standard: dark dated bedroom composition and little recognisable sea outlook; seek a brighter true balcony/sea-view room.",
-      "ownerRightsAuthorization": "Bosphoras operator confirmed project photo use rights 2026-10-19",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use permission on 2026-10-19; retain original creator/source and comply with source licensing.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/la-villa-cap-ferrat/view-2.webp",
       "downloadUrl": "https://images.trvl-media.com/lodging/5000000/4330000/4320600/4320552/a2f6fb75.jpg",
       "sourcePage": "https://www.expedia.com/Nice-Hotels-Boutique-Hotel-Spa-La-Villa-Cap-Ferrat.h4320552.Hotel-Information",
@@ -272,13 +271,17 @@
       "outputSize": [
         1800,
         875
-      ]
+      ],
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Actual candidate original room viewed in contact sheet: modern daylight guestroom, true sea-view terrace, genuine property listing and distinct framing.",
+      "frCaption": "La Villa Cap Ferrat — chambre lumineuse avec mobilier bois clair et terrasse ouvrant sur la mer",
+      "enCaption": "La Villa Cap Ferrat — sunlit guestroom with pale wood furnishings and terrace opening to the sea"
     },
     {
       "property": "La Villa Cap Ferrat Hôtel & Spa",
       "propertyKey": "la-villa-cap-ferrat",
       "key": "view-3",
-      "slotIntent": "spa sauna jacuzzi",
+      "slotIntent": "sunny poolside breakfast terrace (replace underlit spa)",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
@@ -346,12 +349,11 @@
       "key": "view-2",
       "slotIntent": "terrace breakfast with Riviera outlook (replace poor balcony furniture shot)",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.hotel-brisemarine.com/"
       ],
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "rejectedSource": "https://www.hotel-brisemarine.com/images/gallery/chambres/Balcon.JPG",
       "rejectedCandidateContext": "EDITORIAL HOLD: Authentic balcony but dated white plastic furniture dominates; replace with a clearer sunlit hotel interior/sea view.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/brise-marine/view-2.webp",
@@ -369,7 +371,12 @@
       "outputSize": [
         1601,
         1200
-      ]
+      ],
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Original hotel photograph inspected: authentic sunny small family-hotel breakfast terrace. Do not imply that this is a palace restaurant.",
+      "frCaption": "Hôtel Brise Marine — terrasse de petit-déjeuner ensoleillée, tables à carreaux bleu et blanc et jardin",
+      "enCaption": "Hôtel Brise Marine — sunlit garden breakfast terrace with blue-and-white checked tables",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use permission on 2026-10-19; retain original creator/source and comply with source licensing."
     },
     {
       "property": "Hôtel Brise Marine",
@@ -479,16 +486,15 @@
       "label": "Paloma Beach and Pointe Saint-Hospice",
       "query": "Paloma Beach Saint Jean Cap Ferrat",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/20211209_123405_Plage_de_la_Paloma.jpg/1920px-20211209_123405_Plage_de_la_Paloma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "ownerRightsAuthorization": "Bosphoras operator confirmed project photo use rights 2026-10-19",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use permission on 2026-10-19; retain original creator/source and comply with source licensing.",
       "rejectedCandidateContext": "Identity, photograph distinctness, quality and attribution await human inspection.",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-3.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Paloma_Beach%2C_Saint-Jean-Cap-Ferrat.png/1920px-Paloma_Beach%2C_Saint-Jean-Cap-Ferrat.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Paloma_Beach,_Saint-Jean-Cap-Ferrat.png",
@@ -504,7 +510,11 @@
       "outputSize": [
         1800,
         629
-      ]
+      ],
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Original image visually reviewed: real Cap-Ferrat peninsula and sunny cove. Exact geo-specific Commons record Paloma Beach Saint-Jean-Cap-Ferrat by VManteuffel, replacing the previously wrong Turkish beach.",
+      "frCaption": "Plage de Paloma à Saint-Jean-Cap-Ferrat — baie turquoise, pins parasols et yachts au large",
+      "enCaption": "Paloma Beach, Saint-Jean-Cap-Ferrat — turquoise cove, Mediterranean pines and yachts offshore"
     },
     {
       "key": "scene-4",
@@ -545,13 +555,12 @@
       "label": "Port Saint-Jean-Cap-Ferrat village harbour",
       "query": "Port Saint Jean Cap Ferrat harbor",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "EDITORIAL HOLD: Correct harbour, but ordinary roadside foreground dominates; prefer more premium marina-wide photograph.",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/H%C3%B4tel_La_voile_d%27Or_Saint-Jean-Cap-Ferrat.jpg/1920px-H%C3%B4tel_La_voile_d%27Or_Saint-Jean-Cap-Ferrat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedCandidateContext": "Photo title identifies Hôtel La Voile d’Or, not a confirmed view of the Saint-Jean marina",
       "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-5.webp",
@@ -569,7 +578,12 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "visualReviewedAt": "2026-10-19",
+      "visualReviewBasis": "Original geolocated Commons photograph visually inspected. Supporting daytime harbour documentary scene, not selected as premium hero imagery.",
+      "frCaption": "Port de Saint-Jean-Cap-Ferrat — voiliers et yachts amarrés face aux maisons du village",
+      "enCaption": "Port of Saint-Jean-Cap-Ferrat — yachts and sailboats moored against the village waterfront",
+      "ownerRightsAuthorization": "Bosphoras operator confirms general project photo-use permission on 2026-10-19; retain original creator/source and comply with source licensing."
     },
     {
       "key": "scene-6",

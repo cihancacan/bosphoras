@@ -122,6 +122,13 @@ lib.HOTEL_DIRECT["brise-marine/view-2"]=[
   "https://www.hotel-brisemarine.com/en/gallery-237.html",
   "Brise Marine charming bright garden dining and breakfast terrace with Mediterranean hills", "Hôtel Brise Marine · official photograph")
 ]
+# Distinct daylight hotel breakfast-pool terrace as a spa-image alternative.
+lib.HOTEL_DIRECT["la-villa-cap-ferrat/view-3"]=[
+ (100,"https://cf.bstatic.com/xdata/images/hotel/max1280x900/618788637.jpg?k=c6ac86646dccf8b982a66c59aa6285b87338e57116c000310606c64207e503b1&o=",
+  "https://www.booking.com/hotel/fr/hotel-spa-la-villa-cap.html",
+  "Sunlit real La Villa Cap Ferrat breakfast terrace overlooking its swimming pool and the sea",
+  "Booking.com · verified property gallery")],
+lib.DIRECT_LANDSCAPES["scene-9"]=lib.commons_exact("Baie des fourmis.jpg")
 lib.HOTEL_DIRECT["royal-riviera/view-1"]=[
  (100,"https://www.royal-riviera.com/wp-content/uploads/2022/01/DSC07159-HDR.jpg",
   "https://www.royal-riviera.com/en/the-royal-riviera/the-royal-riviera-atmosphere/",
