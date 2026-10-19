@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 11,
-  "downloadedDestinationCandidates": 5,
+  "downloadedDestinationCandidates": 1,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "ownerRightsAuthorization": "Bosphoras operator confirmed rights to use suitable project photos on 2026-10-19. Subject identity, attribution and image-specific publication review still required.",
@@ -404,7 +404,7 @@
       "key": "scene-1",
       "label": "Casino Square and Hôtel de Paris façade",
       "query": "Monaco Casino Square promenade",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -412,32 +412,19 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "Photo lacks a clear bright premium portrayal of the requested sector (crowds, construction cranes, poor light, or generic tower block).",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Place_du_Casino_1.jpg",
       "candidateContext": "Monaco Place du Casino 1.jpg",
       "credit": "Zairon · CC BY-SA 4.0",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Monte_Carlo_Casino_met_op_de_voorgrond_een_park_met_palmbomen%2C_SFA209000090.jpg/1920px-Monte_Carlo_Casino_met_op_de_voorgrond_een_park_met_palmbomen%2C_SFA209000090.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Monaco_Place_du_Casino_1.jpg/1920px-Monaco_Place_du_Casino_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedCandidateContext": "File:Liebherr LTM LTM 1300-6.2 (52993821916).jpg",
-      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monte_Carlo_Casino_met_op_de_voorgrond_een_park_met_palmbomen,_SFA209000090.jpg",
-      "localPath": "/images/travel/monaco-premium/destination/scene-1.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Monaco_Place_du_Casino_1.jpg/1920px-Monaco_Place_du_Casino_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sha256": "c7501e715fba6073b3221abdab945b6e6941fb90d8435cffead2754261c8c139",
-      "dhash": "0100000100100111101011101000101011101110000100110001101101001110",
-      "bytes": 542626,
-      "originalSize": [
-        1920,
-        1259
-      ],
-      "outputSize": [
-        1800,
-        1180
-      ]
+      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Place_du_Casino_1.jpg"
     },
     {
       "key": "scene-2",
       "label": "Port Hercule yachts and bay",
       "query": "Monaco Port Hercule yachts harbour panorama",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -445,39 +432,25 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "Photo lacks a clear bright premium portrayal of the requested sector (crowds, construction cranes, poor light, or generic tower block).",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Port_Hercule_Vue_panoramique_1.jpg",
       "candidateContext": "Monaco Port Hercule Vue panoramique 1.jpg",
       "credit": "Zairon · CC BY-SA 4.0",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Port_Hercule_Monaco.jpg/1920px-Port_Hercule_Monaco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Port_Hercule_Monaco.jpg",
-      "localPath": "/images/travel/monaco-premium/destination/scene-2.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Monaco_Port_Hercule_Vue_panoramique_1.jpg/1920px-Monaco_Port_Hercule_Vue_panoramique_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sha256": "7b8cb0e4561c0f431f4d6ac84000fb1391ce8acf2e85d643dc826db02feceb0e",
-      "dhash": "0101100001000111101001010111000101111001001110111101100111010011",
-      "bytes": 389670,
-      "originalSize": [
-        1920,
-        1401
-      ],
-      "outputSize": [
-        1645,
-        1200
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Monaco_Port_Hercule_Vue_panoramique_1.jpg/1920px-Monaco_Port_Hercule_Vue_panoramique_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Port_Hercule_Vue_panoramique_1.jpg"
     },
     {
       "key": "scene-3",
       "label": "Monaco-Ville and Prince's Palace",
       "query": "Palais Princier de Monaco Rocher",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "localPath": "/images/travel/monaco-premium/destination/scene-3.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Princely_Palace_of_Monaco.JPG/1920px-Princely_Palace_of_Monaco.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Princely_Palace_of_Monaco.JPG",
@@ -493,13 +466,17 @@
       "outputSize": [
         1800,
         1196
-      ]
+      ],
+      "frCaption": "Monaco-Ville — façade ensoleillée du Palais princier sur le Rocher",
+      "enCaption": "Monaco-Ville — sunlit façade of the Prince's Palace on the Rock",
+      "visualReviewBasis": "Downloaded image inspected for actual Princely Palace architecture and location.",
+      "visualReviewedAt": "2026-10-19"
     },
     {
       "key": "scene-4",
       "label": "Larvotto beach waterfront",
       "query": "Monaco Larvotto beach promenade",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -507,31 +484,18 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "Photo lacks a clear bright premium portrayal of the requested sector (crowds, construction cranes, poor light, or generic tower block).",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Larvotto_beach_drone_shot_in_2024.png",
       "candidateContext": "Larvotto beach drone shot in 2024.png",
       "credit": "Joeys Journeys · CC BY 3.0",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Monaco_-_Vue_vers_la_plage_du_Larvotto_01.jpg/1920px-Monaco_-_Vue_vers_la_plage_du_Larvotto_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_-_Vue_vers_la_plage_du_Larvotto_01.jpg",
-      "localPath": "/images/travel/monaco-premium/destination/scene-4.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Larvotto_beach_drone_shot_in_2024.png/1920px-Larvotto_beach_drone_shot_in_2024.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sha256": "4cdc8d0518413e73f51a6f9cdfcf9f0f03e43ce6709f1138118857dc8ab9b9ac",
-      "dhash": "0111110111111001100001110011011001010010010010011010010010110110",
-      "bytes": 524756,
-      "originalSize": [
-        1920,
-        1080
-      ],
-      "outputSize": [
-        1800,
-        1013
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Larvotto_beach_drone_shot_in_2024.png/1920px-Larvotto_beach_drone_shot_in_2024.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Larvotto_beach_drone_shot_in_2024.png"
     },
     {
       "key": "scene-5",
       "label": "Fontvieille harbour panorama",
       "query": "Monaco Port de Fontvieille marina",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -539,25 +503,12 @@
         "https://www.visitmonaco.com/"
       ],
       "rights": "Operator authorization noted; retain author and license evidence and review each image manually",
-      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "visualQaWarning": "Photo lacks a clear bright premium portrayal of the requested sector (crowds, construction cranes, poor light, or generic tower block).",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Port_de_Fontvieille_02.jpg",
       "candidateContext": "Monaco Port de Fontvieille 02.jpg",
       "credit": "Zairon · CC BY-SA 4.0",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Port_of_Fontvieille_from_the_exotic_garden_of_Monaco.jpg/1920px-Port_of_Fontvieille_from_the_exotic_garden_of_Monaco.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Port_of_Fontvieille_from_the_exotic_garden_of_Monaco.jpg",
-      "localPath": "/images/travel/monaco-premium/destination/scene-5.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Monaco_Port_de_Fontvieille_02.jpg/1920px-Monaco_Port_de_Fontvieille_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "sha256": "6062e96349653c0c1321fb3e0d6d82a9e7e58745b7a625c38f0b92824625fa65",
-      "dhash": "0001101100001101000111011011101110011101110011011110011100000111",
-      "bytes": 307780,
-      "originalSize": [
-        1920,
-        1406
-      ],
-      "outputSize": [
-        1639,
-        1200
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Monaco_Port_de_Fontvieille_02.jpg/1920px-Monaco_Port_de_Fontvieille_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedSourcePage": "https://commons.wikimedia.org/wiki/File:Monaco_Port_de_Fontvieille_02.jpg"
     },
     {
       "key": "scene-6",
