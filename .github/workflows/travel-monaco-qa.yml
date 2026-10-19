@@ -31,3 +31,4 @@ jobs:
         run: npm run typecheck
       - name: Monaco editorial, indexation and provenance checks
         run: node scripts/check-monaco-draft.mjs
+# Final Monaco release candidate: 21 manually reviewed real-source images; noindex retained.
