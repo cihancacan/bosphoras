@@ -44,10 +44,6 @@ ASSETS={
   ('https://upload.wikimedia.org/wikipedia/commons/c/c6/Aerial_panorama_of_the_Matterhorn_from_the_Gornergrat_170622.jpg',
    'https://commons.wikimedia.org/wiki/File:Aerial_panorama_of_the_Matterhorn_from_the_Gornergrat_170622.jpg',
    'Gornergrat aerial panorama and glacial valley')],
- 'destination/scene-6':[
-  ('https://commons.wikimedia.org/wiki/Special:Redirect/file/3809_-_Zermatt_-_View_from_Gornergratbahn.JPG?width=1600',
-   'https://commons.wikimedia.org/wiki/File:3809_-_Zermatt_-_View_from_Gornergratbahn.JPG',
-   'Alpine views along the Gornergratbahn')],
  'destination/scene-9':[
   ('https://theplanetd.com/images/5-lakes-hike-zermatt-Switzerland-Stellisee-Lake-1536x1024.jpg',
    'https://theplanetd.com/5-lakes-hike-zermatt/',
