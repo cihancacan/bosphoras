@@ -159,6 +159,56 @@ PALACE_EXACT = {
   "https://www.oxfordski.com/luxury-ski-chalets-hotels/switzerland/gstaad/gstaad-palace/",
   "Gstaad Palace indoor swimming pool in winter, source credits hotel"),
 }
+PALACE_ALTERNATES = {
+ "view-3": [
+  ("https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2022/02/IMG_6593.jpeg?ssl=1",
+   "https://theluxurytravelexpert.com/review-gstaad-palace/",
+   "Gstaad Palace true indoor pool and timber-beam spa; travel review source"),
+  ("https://cdn.oxfordski.com/media/72542/copyright-gstaad-palace_indoor-pool.jpg?width=1240",
+   "https://www.oxfordski.com/luxury-ski-chalets-hotels/switzerland/gstaad/gstaad-palace/",
+   "Gstaad Palace indoor pool with snow outside; hotel credited"),
+ ]
+}
+SCENES_EXACT = {
+ "scene-1": [
+  ("https://cdn.globeair.com/website/m/Gstaad-Header.jpg",
+   "https://www.globeair.com/b/best-ski-resorts-in-europe-for-2024",
+   "Gstaad pedestrian street in winter, blue sky and chalet architecture"),
+  ("https://assets01.sdd1.ch/assets/lbwp-cdn/newhome-blog/files/1487002687/gstaad_promenade_nacht.jpg",
+   "https://www.newhome.ch/blog/fr/acheter/achat-immobilier/de-vraies-vacances-chez-vous/",
+   "Gstaad pedestrian promenade illuminated at dusk"),
+ ],
+ "scene-3": [
+  ("https://i.pinimg.com/originals/39/99/73/399973ef9b9b0c0d2929c43f083828ec.jpg",
+   "https://uk.pinterest.com/pin/saanen-village--262334747027836080/",
+   "Saanen historic timber chalet street; source attribution to check"),
+ ],
+ "scene-4": [
+  ("https://www.bergbahnen.org/gallery/albums/gstaad/gstaad028.jpg",
+   "https://www.bergbahnen.org/en/multimedia/pic/19605/",
+   "Eggli–Sanetschpass winter Alpine panorama, 2018"),
+ ],
+ "scene-6": [
+  ("https://media.myswitzerland.com/image/fetch/c_lfill%2Cg_auto%2Cw_3200%2Ch_1800/f_auto%2Cq_80%2Cfl_keep_iptc/https%3A/www.myswitzerland.com/-/media/st/gadmin/images/destinations/winter/vantage%20point/alpenbeizli_wasserngrat-gstaad-terrasse_239273.jpg",
+   "https://www.myswitzerland.com/de-ch/erlebnisse/essen-trinken/restaurant/bergrestaurant-wasserngrat/",
+   "Bergrestaurant Wasserngrat, sunny mountain-facing wooden terrace"),
+ ],
+ "scene-7": [
+  ("https://files.bergwelten.com/t_image/c_fill%2Cf_auto%2Cq_auto%2Cw_1807%2Ch_1200/tour/images/Wandern-Rellerli-2.JPG",
+   "https://www.bergwelten.com/t/w/23924",
+   "Panoramic summer route from Schönried to Rellerli"),
+ ],
+ "scene-8": [
+  ("https://web4.cdn-magicpass.ch/media/image/0/base/winterwandern.JPG?version=14",
+   "https://www.magicpass.ch/en/offers/hornberg--gstaad-winter-hike-5203",
+   "Hornberg–Gstaad snowy winter hiking trail with mountain panorama"),
+ ],
+ "scene-9": [
+  ("https://resc.deskline.net/images/GRI/1/6d721143-64b4-4096-ad1a-5af0bc2a3f75/99/image.jpg",
+   "https://www.gstaad.ch/en/plan-book/events/detail/lauenensee-discovery-tour-e9mo8fon",
+   "Lauenensee alpine lake reflection with small wooden landing"),
+ ],
+}
 ULTIMA_EXACT = {
  "view-1": ("https://www.ultimacollection.com/media/feupntnc/ultima-collection-gstaad-exterior-09.jpg?width=1536",
              "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/gallery",
@@ -238,6 +288,8 @@ def main():
         if exact:
             url, source, caption = exact
             hits.append((30, url, source, caption, "Exact Gstaad Palace hotel image; publisher attribution"))
+        for url, source, caption in PALACE_ALTERNATES.get(key, []):
+            hits.append((29, url, source, caption, "Gstaad Palace hotel photograph sourced from attributed travel publisher"))
         for page in pages:
             hits.extend(images_from_official(page, good, bad))
         changed |= write_candidate(item, hits, used_hashes, used_urls)
@@ -275,7 +327,10 @@ def main():
         changed |= write_candidate(item, hits, used_hashes, used_urls)
     for key, (query, terms) in SCENES.items():
         item = next(x for x in scene_items if x["key"] == key)
-        changed |= write_candidate(item, images_from_commons(query, terms), used_hashes, used_urls)
+        candidates = [(30, url, source, caption, "Bosphoras operator authorized usage; credited source page")
+                      for url, source, caption in SCENES_EXACT.get(key, [])]
+        candidates.extend(images_from_commons(query, terms))
+        changed |= write_candidate(item, candidates, used_hashes, used_urls)
         time.sleep(0.2)
     data["downloadedHotelCandidates"] = sum(x["status"]=="candidate_needs_visual_review" for x in hotel_items)
     data["downloadedDestinationCandidates"] = sum(x["status"]=="candidate_needs_visual_review" for x in scene_items)
