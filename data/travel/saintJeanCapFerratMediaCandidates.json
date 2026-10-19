@@ -3,8 +3,8 @@
   "generatedAt": "2026-10-19",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 1,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 5,
+  "downloadedDestinationCandidates": 5,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "ownerRightsAuthorization": "Bosphoras operator authorizes appropriate photos for this project, 19 Oct 2026. Keep exact photographic source and credits; verify image identity and permitted reuse per file.",
@@ -53,18 +53,31 @@
       "propertyKey": "royal-riviera",
       "key": "view-1",
       "slotIntent": "seafront hotel exterior",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.royal-riviera.com/"
       ],
-      "visualQaWarning": "Hotel pool photograph shows two people as main subjects with dark shaded background; does not fulfil an exterior or grounds premium hero slot.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://www.royal-riviera.com/",
-      "candidateContext": "    ",
-      "credit": "Official hotel photo",
+      "candidateContext": "Official CMS image matched by source context",
+      "credit": "Official hotel CMS",
       "rejectedSource": "https://www.royal-riviera.com/wp-content/uploads/2022/04/DSC_8490_1440x864.jpg",
-      "rejectedCandidateContext": "    "
+      "rejectedCandidateContext": "    ",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/royal-riviera/view-1.webp",
+      "downloadUrl": "https://www.royal-riviera.com/wp-content/uploads/2022/10/Royal-Riviera_1440x864_2.jpg",
+      "sha256": "eb730280e80dfcc7c0f7dcaf99bf2646c8190e1f560428a2542c56bc8f06e832",
+      "dhash": "0001011100001011000001000010000000110100001001100110100011111001",
+      "bytes": 157990,
+      "originalSize": [
+        1440,
+        864
+      ],
+      "outputSize": [
+        1440,
+        864
+      ]
     },
     {
       "property": "Royal-Riviera",
@@ -130,18 +143,31 @@
       "propertyKey": "la-villa-cap-ferrat",
       "key": "view-2",
       "slotIntent": "sea-facing terrace bedroom",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://villacapferrat.fr/"
       ],
-      "visualQaWarning": "Ordinary small room photographed with inadequate premium composition; replace with sunlit sea-facing superior terrace category.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://villacapferrat.fr/en/rooms/",
-      "candidateContext": "Official CMS image matched by source context",
-      "credit": "Official hotel CMS",
+      "candidateContext": "    ",
+      "credit": "Official hotel photo",
       "rejectedSource": "https://villacapferrat.fr/wp-content/uploads/2024/12/2025-junior-suite-2.jpg",
-      "rejectedCandidateContext": "Official CMS image matched by source context"
+      "rejectedCandidateContext": "Official CMS image matched by source context",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/la-villa-cap-ferrat/view-2.webp",
+      "downloadUrl": "https://villacapferrat.fr/wp-content/uploads/2024/12/2025-junior-suite-3.jpg",
+      "sha256": "0e6f00ac22340047d52a33c9ad82982f4398f9208fd8c1546ab445cb59c42833",
+      "dhash": "0010010001011001011110011100100100001110001101101100101100000111",
+      "bytes": 227078,
+      "originalSize": [
+        1984,
+        1306
+      ],
+      "outputSize": [
+        1800,
+        1185
+      ]
     },
     {
       "property": "La Villa Cap Ferrat Hôtel & Spa",
@@ -166,36 +192,62 @@
       "propertyKey": "brise-marine",
       "key": "view-1",
       "slotIntent": "Italianate villa historic exterior",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.hotel-brisemarine.com/"
       ],
-      "visualQaWarning": "Sea panorama and stone lion statue rather than a photograph of the actual Italian-style hotel exterior.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://www.hotel-brisemarine.com/",
       "candidateContext": "    ",
       "credit": "Official hotel photo",
       "rejectedSource": "https://www.hotel-brisemarine.com/images/gallery/gallerie/0036_ok_cliente_mod.jpg",
-      "rejectedCandidateContext": "    "
+      "rejectedCandidateContext": "    ",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/brise-marine/view-1.webp",
+      "downloadUrl": "https://www.hotel-brisemarine.com/images/gallery/gallerie/0043_ok_cliente.jpg",
+      "sha256": "1b6504a9fe31e3b33b91fc2d26a68c3d672a48cc8df1e109776b7da6e14009c9",
+      "dhash": "1011100110110101101101110101100101000011010001110110010000011101",
+      "bytes": 695282,
+      "originalSize": [
+        1890,
+        1417
+      ],
+      "outputSize": [
+        1601,
+        1200
+      ]
     },
     {
       "property": "Hôtel Brise Marine",
       "propertyKey": "brise-marine",
       "key": "view-2",
       "slotIntent": "sea-view premium room terrace",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.hotel-brisemarine.com/"
       ],
-      "visualQaWarning": "Plastic patio furniture and flat lighting fall below Bosphoras premium editorial photo quality.",
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
       "sourcePage": "https://www.hotel-brisemarine.com/en/chambres-230.html",
       "candidateContext": "    ",
       "credit": "Official hotel photo",
       "rejectedSource": "https://www.hotel-brisemarine.com/images/gallery/chambres/Balcon.JPG",
-      "rejectedCandidateContext": "    "
+      "rejectedCandidateContext": "    ",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/brise-marine/view-2.webp",
+      "downloadUrl": "https://www.hotel-brisemarine.com/images/gallery/chambres/IMG_1342.JPG",
+      "sha256": "36e23d1061db48f65db180646ee14a127f16cdcdcbf998b046d48b421b78137c",
+      "dhash": "0010110010001100101111111000011100111001001111101001101100011111",
+      "bytes": 89734,
+      "originalSize": [
+        1200,
+        900
+      ],
+      "outputSize": [
+        1200,
+        900
+      ]
     },
     {
       "property": "Hôtel Brise Marine",
@@ -244,43 +296,91 @@
       "key": "scene-3",
       "label": "Paloma Beach and Pointe Saint-Hospice",
       "query": "Paloma Beach Saint Jean Cap Ferrat",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "REJECTED: Monaco image imported by inherited direct-source table, not Saint-Jean-Cap-Ferrat.",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Princely_Palace_of_Monaco.JPG/1920px-Princely_Palace_of_Monaco.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Princely_Palace_of_Monaco.JPG/1920px-Princely_Palace_of_Monaco.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-3.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/20211209_123405_Plage_de_la_Paloma.jpg/1920px-20211209_123405_Plage_de_la_Paloma.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20211209_123405_Plage_de_la_Paloma.jpg",
+      "candidateContext": "File:20211209 123405 Plage de la Paloma.jpg",
+      "credit": "Horizon06 · CC BY-SA 4.0",
+      "sha256": "39584939316cac8b0803a9453bcd47ebd094d744c172db5c03cdf4102feabc63",
+      "dhash": "0101110101010101011100111100101100110111000011111010101100101010",
+      "bytes": 677892,
+      "originalSize": [
+        1920,
+        910
+      ],
+      "outputSize": [
+        1800,
+        853
+      ]
     },
     {
       "key": "scene-4",
       "label": "Villa Ephrussi de Rothschild gardens",
       "query": "Villa Ephrussi Rothschild Saint Jean Cap Ferrat gardens",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "REJECTED: Monaco image imported by inherited direct-source table, not Saint-Jean-Cap-Ferrat.",
-      "rejectedSource": "https://www.revigorate.com/images/turquoise-Plage-du-Larvotto-Monaco.jpg"
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://www.revigorate.com/images/turquoise-Plage-du-Larvotto-Monaco.jpg",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-4.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/France_PACA_06_Saint_Jean_Cap_Ferrat_Villa_Ephrussi_de_Rothschild_01.jpg/1920px-France_PACA_06_Saint_Jean_Cap_Ferrat_Villa_Ephrussi_de_Rothschild_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:France_PACA_06_Saint_Jean_Cap_Ferrat_Villa_Ephrussi_de_Rothschild_01.jpg",
+      "candidateContext": "File:France PACA 06 Saint Jean Cap Ferrat Villa Ephrussi de Rothschild 01.jpg",
+      "credit": "Calips · CC BY-SA 3.0",
+      "sha256": "895ef93640be7bf7dc677e0e88094ff9417146b154c5250fe94199addf54f8ca",
+      "dhash": "1111111011111111101001110010011100011110000011000010110000101100",
+      "bytes": 415880,
+      "originalSize": [
+        1920,
+        1255
+      ],
+      "outputSize": [
+        1800,
+        1177
+      ]
     },
     {
       "key": "scene-5",
       "label": "Port Saint-Jean-Cap-Ferrat village harbour",
       "query": "Port Saint Jean Cap Ferrat harbor",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "REJECTED: Monaco image imported by inherited direct-source table, not Saint-Jean-Cap-Ferrat.",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Monaco_Port_de_Fontvieille_25.jpg/1920px-Monaco_Port_de_Fontvieille_25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Monaco_Port_de_Fontvieille_25.jpg/1920px-Monaco_Port_de_Fontvieille_25.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-5.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Backlit_view_of_the_complete_French_Riviera.jpg/1920px-Backlit_view_of_the_complete_French_Riviera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Backlit_view_of_the_complete_French_Riviera.jpg",
+      "candidateContext": "File:Backlit view of the complete French Riviera.jpg",
+      "credit": "Olivier Cleynen · CC BY 4.0",
+      "sha256": "68e91ca4a93af0cfcea57960e2e4900bc1c23dbe262c3f66fcc8092891fd2121",
+      "dhash": "0000111100111111001111110011110000111110001111110111101101111111",
+      "bytes": 249812,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     },
     {
       "key": "scene-6",
@@ -314,29 +414,61 @@
       "key": "scene-8",
       "label": "Maurice Rouvier promenade Baie des Fourmis",
       "query": "Promenade Maurice Rouvier Cap Ferrat",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "REJECTED: Monaco image imported by inherited direct-source table, not Saint-Jean-Cap-Ferrat.",
-      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Mus%C3%A9e_Oc%C3%A9anographique_de_Monaco_cliff_view.jpg/1920px-Mus%C3%A9e_Oc%C3%A9anographique_de_Monaco_cliff_view.jpg"
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Mus%C3%A9e_Oc%C3%A9anographique_de_Monaco_cliff_view.jpg/1920px-Mus%C3%A9e_Oc%C3%A9anographique_de_Monaco_cliff_view.jpg",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-8.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/20211209_130841_Promenade_Maurice_Rouvier.jpg/1920px-20211209_130841_Promenade_Maurice_Rouvier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20211209_130841_Promenade_Maurice_Rouvier.jpg",
+      "candidateContext": "File:20211209 130841 Promenade Maurice Rouvier.jpg",
+      "credit": "Horizon06 · CC BY-SA 4.0",
+      "sha256": "a83c07a37124a39f93f175f874c28e8d68440660b69607e0793ffefa6e071a36",
+      "dhash": "0100101101000011110100101010001101100011011010110110001111110000",
+      "bytes": 609106,
+      "originalSize": [
+        1920,
+        910
+      ],
+      "outputSize": [
+        1800,
+        853
+      ]
     },
     {
       "key": "scene-9",
       "label": "Baie des Fourmis with Royal Riviera shoreline",
       "query": "Baie des Fourmis Cap Ferrat hotel coastline",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://commons.wikimedia.org/",
         "https://www.saintjeancapferrat-tourisme.fr/"
       ],
-      "visualQaWarning": "REJECTED: Monaco image imported by inherited direct-source table, not Saint-Jean-Cap-Ferrat.",
-      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Mareterra_drone_shot_in_2024.png/1920px-Mareterra_drone_shot_in_2024.png"
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Mareterra_drone_shot_in_2024.png/1920px-Mareterra_drone_shot_in_2024.png",
+      "localPath": "/images/travel/saint-jean-cap-ferrat-premium/destination/scene-9.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/085F_Beaulieu-sur-Mer_%2815885396822%29.jpg/1920px-085F_Beaulieu-sur-Mer_%2815885396822%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:085F_Beaulieu-sur-Mer_(15885396822).jpg",
+      "candidateContext": "File:085F Beaulieu-sur-Mer (15885396822).jpg",
+      "credit": "Rüdiger Stehn from Kiel, Deutschland · CC BY-SA 2.0",
+      "sha256": "5cb7cc51630c38fc8956212550a8d00eace7b803d630ed22f6dbd80a5f9f94c7",
+      "dhash": "0011011100010111000001110000010100011011000110110001011100011111",
+      "bytes": 236314,
+      "originalSize": [
+        1920,
+        1267
+      ],
+      "outputSize": [
+        1800,
+        1188
+      ]
     }
   ]
 }
