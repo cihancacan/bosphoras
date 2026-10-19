@@ -4,8 +4,8 @@
   "scope": "SOURCE CANDIDATES ONLY; NOT READY TO DISPLAY OR COUNT AS COMPLETED",
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
-  "downloadedHotelCandidates": 9,
-  "downloadedDestinationCandidates": 1,
+  "downloadedHotelCandidates": 5,
+  "downloadedDestinationCandidates": 0,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -53,8 +53,8 @@
       "propertyKey": "the-alpina",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.thealpinagstaad.ch/en/5-star-alpina-gstaad-hotel",
         "https://www.thealpinagstaad.ch/en/"
@@ -74,15 +74,20 @@
         1700,
         1133
       ],
-      "credit": ""
+      "credit": "",
+      "frCaption": "The Alpina Gstaad — suite avec cheminée et mobilier alpin contemporain",
+      "enCaption": "The Alpina Gstaad — contemporary alpine suite with fireplace",
+      "ownerRightsAuthorization": "Bosphoras operator confirms photo usage rights, 2026-10-19",
+      "visualReviewBasis": "Individually inspected photograph against its identified hotel source; season and subject matched.",
+      "visualReviewedAt": "2026-10-19"
     },
     {
       "property": "The Alpina Gstaad",
       "propertyKey": "the-alpina",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.thealpinagstaad.ch/en/5-star-alpina-gstaad-hotel",
         "https://www.thealpinagstaad.ch/en/"
@@ -102,15 +107,20 @@
         1700,
         1133
       ],
-      "credit": ""
+      "credit": "",
+      "frCaption": "The Alpina Gstaad — balcon privatif et panorama enneigé",
+      "enCaption": "The Alpina Gstaad — private balcony overlooking snow-covered peaks",
+      "ownerRightsAuthorization": "Bosphoras operator confirms photo usage rights, 2026-10-19",
+      "visualReviewBasis": "Individually inspected photograph against its identified hotel source; season and subject matched.",
+      "visualReviewedAt": "2026-10-19"
     },
     {
       "property": "The Alpina Gstaad",
       "propertyKey": "the-alpina",
       "key": "view-3",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://www.thealpinagstaad.ch/en/5-star-alpina-gstaad-hotel",
         "https://www.thealpinagstaad.ch/en/"
@@ -130,15 +140,20 @@
         1700,
         1134
       ],
-      "credit": ""
+      "credit": "",
+      "frCaption": "The Alpina Gstaad — salon et bar contemporain",
+      "enCaption": "The Alpina Gstaad — contemporary lounge and bar",
+      "ownerRightsAuthorization": "Bosphoras operator confirms photo usage rights, 2026-10-19",
+      "visualReviewBasis": "Individually inspected photograph against its identified hotel source; season and subject matched.",
+      "visualReviewedAt": "2026-10-19"
     },
     {
       "property": "Le Grand Bellevue",
       "propertyKey": "le-grand-bellevue",
       "key": "view-1",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://bellevue-gstaad.ch/"
       ],
@@ -157,15 +172,20 @@
         1082,
         720
       ],
-      "credit": ""
+      "credit": "",
+      "frCaption": "Le Grand Bellevue — façade historique dans le jardin en été",
+      "enCaption": "Le Grand Bellevue — historic hotel façade and garden in summer",
+      "ownerRightsAuthorization": "Bosphoras operator confirms photo usage rights, 2026-10-19",
+      "visualReviewBasis": "Individually inspected photograph against its identified hotel source; season and subject matched.",
+      "visualReviewedAt": "2026-10-19"
     },
     {
       "property": "Le Grand Bellevue",
       "propertyKey": "le-grand-bellevue",
       "key": "view-2",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
       "sourcePages": [
         "https://bellevue-gstaad.ch/"
       ],
@@ -184,41 +204,36 @@
         1600,
         960
       ],
-      "credit": ""
+      "credit": "",
+      "frCaption": "Le Grand Bellevue — salon de restauration lumineux",
+      "enCaption": "Le Grand Bellevue — elegant light-filled dining room",
+      "ownerRightsAuthorization": "Bosphoras operator confirms photo usage rights, 2026-10-19",
+      "visualReviewBasis": "Individually inspected photograph against its identified hotel source; season and subject matched.",
+      "visualReviewedAt": "2026-10-19"
     },
     {
       "property": "Le Grand Bellevue",
       "propertyKey": "le-grand-bellevue",
       "key": "view-3",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://bellevue-gstaad.ch/"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "localPath": "/images/travel/gstaad-premium/le-grand-bellevue/view-3.webp",
-      "downloadUrl": "https://bellevue-gstaad.ch/wp-content/uploads/2025/12/tobias.kaser_photo.5852-1309x785.jpg",
       "sourcePage": "https://bellevue-gstaad.ch/",
       "candidateContext": "Embedded image in official property source",
-      "sha256": "a9277e248c999d687796cd4c89c7b4b3faf4dcaa60af5ba7c5b21afdeca6d493",
-      "bytes": 118668,
-      "originalSize": [
-        1309,
-        785
-      ],
-      "outputSize": [
-        1309,
-        785
-      ],
-      "visualQaWarning": "Même cliché source que view-2 ; le redimensionnement ne constitue pas une nouvelle photo.",
-      "credit": ""
+      "visualQaWarning": "Exact same dining-room composition as Bellevue view-2; not a third distinct hotel image.",
+      "credit": "",
+      "rejectedSource": "https://bellevue-gstaad.ch/wp-content/uploads/2025/12/tobias.kaser_photo.5852-1309x785.jpg",
+      "rejectedCandidateContext": "Embedded image in official property source"
     },
     {
       "property": "Ultima Hotel Gstaad",
       "propertyKey": "ultima-hotel",
       "key": "view-1",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -226,28 +241,18 @@
         "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "localPath": "/images/travel/gstaad-premium/ultima-hotel/view-1.webp",
-      "downloadUrl": "https://www.ultimacollection.com/media/jh4ofzy2/ultima_hotel_gstaad_exterior_summerseason.jpg?rxy=0.24436090225563908%2C0.6207815275310835&width=1536&format=webp",
       "sourcePage": "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad",
       "candidateContext": "",
-      "sha256": "26fe84d4aa98b43cf1d4e9c258ad4beb865de1122889d0cf4765adb236a3f2fb",
-      "bytes": 151490,
-      "originalSize": [
-        1536,
-        1084
-      ],
-      "outputSize": [
-        1536,
-        1084
-      ],
-      "visualQaWarning": "Image estivale du vrai hôtel, ne pas la légender comme photo d'hiver.",
-      "credit": ""
+      "visualQaWarning": "Exterior facade with dominant paved parking apron; below Bosphoras premium editorial standard.",
+      "credit": "",
+      "rejectedSource": "https://www.ultimacollection.com/media/jh4ofzy2/ultima_hotel_gstaad_exterior_summerseason.jpg?rxy=0.24436090225563908%2C0.6207815275310835&width=1536&format=webp",
+      "rejectedCandidateContext": ""
     },
     {
       "property": "Ultima Hotel Gstaad",
       "propertyKey": "ultima-hotel",
       "key": "view-2",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -255,28 +260,18 @@
         "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "localPath": "/images/travel/gstaad-premium/ultima-hotel/view-2.webp",
-      "downloadUrl": "https://www.ultimacollection.com/media/jh4ofzy2/ultima_hotel_gstaad_exterior_summerseason.jpg?rxy=0.24436090225563908%2C0.6207815275310835&width=1536",
       "sourcePage": "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad",
       "candidateContext": "",
-      "sha256": "3cc9de8501f2d5fbd702dd21b9e01ffc403963ab5927110dafff99d9f5071d54",
-      "bytes": 186508,
-      "originalSize": [
-        1536,
-        1084
-      ],
-      "outputSize": [
-        1536,
-        1084
-      ],
-      "visualQaWarning": "Même cliché source que view-1 ; le redimensionnement ne constitue pas une nouvelle photo.",
-      "credit": ""
+      "visualQaWarning": "Duplicate of Ultima view-1 with crop only; not a distinct suite photo.",
+      "credit": "",
+      "rejectedSource": "https://www.ultimacollection.com/media/jh4ofzy2/ultima_hotel_gstaad_exterior_summerseason.jpg?rxy=0.24436090225563908%2C0.6207815275310835&width=1536",
+      "rejectedCandidateContext": ""
     },
     {
       "property": "Ultima Hotel Gstaad",
       "propertyKey": "ultima-hotel",
       "key": "view-3",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
@@ -284,22 +279,12 @@
         "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad/accommodation"
       ],
       "rights": "Photographs from official property HTML; independent commercial licence must be verified",
-      "localPath": "/images/travel/gstaad-premium/ultima-hotel/view-3.webp",
-      "downloadUrl": "https://www.ultimacollection.com/media/jh4ofzy2/ultima_hotel_gstaad_exterior_summerseason.jpg?rxy=0.24436090225563908%2C0.6207815275310835&width=1280&height=1080&format=webp",
       "sourcePage": "https://www.ultimacollection.com/our-collection/ultima-hotel-gstaad",
       "candidateContext": "",
-      "sha256": "301429f883bf1ca45edf60964f4b62ce1fa11183d26460e626031e2429a306be",
-      "bytes": 117822,
-      "originalSize": [
-        1280,
-        1080
-      ],
-      "outputSize": [
-        1280,
-        1080
-      ],
-      "visualQaWarning": "Même cliché source que view-1 ; le redimensionnement ne constitue pas une nouvelle photo.",
-      "credit": ""
+      "visualQaWarning": "Duplicate of Ultima view-1 with crop only; not a distinct wellness photo.",
+      "credit": "",
+      "rejectedSource": "https://www.ultimacollection.com/media/jh4ofzy2/ultima_hotel_gstaad_exterior_summerseason.jpg?rxy=0.24436090225563908%2C0.6207815275310835&width=1280&height=1080&format=webp",
+      "rejectedCandidateContext": ""
     }
   ],
   "destinationScenes": [
@@ -334,28 +319,18 @@
       "key": "scene-4",
       "placeLabel": "Eggli",
       "searchQuery": "Eggli Gstaad",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "localPath": "/images/travel/gstaad-premium/destination/scene-4.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Marcus_G._Lindner_an_der_Bergstation_Eggli%2C_Gstaad%2C_Schweiz.jpg/1920px-Marcus_G._Lindner_an_der_Bergstation_Eggli%2C_Gstaad%2C_Schweiz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Marcus_G._Lindner_an_der_Bergstation_Eggli,_Gstaad,_Schweiz.jpg",
       "candidateContext": "File:Marcus G. Lindner an der Bergstation Eggli, Gstaad, Schweiz.jpg",
-      "sha256": "6e3584b9c7e9168286286e56a7f268ec47d7b586f4e5f98e5243d34dde981cd7",
-      "bytes": 130864,
-      "originalSize": [
-        1920,
-        1259
-      ],
-      "outputSize": [
-        1700,
-        1115
-      ],
       "credit": "Icnieinesekpucnhppboe",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "visualQaWarning": "À REMPLACER : portrait d'une personne en station, pas panorama du secteur Eggli."
+      "visualQaWarning": "Photo depicts a man's portrait outside Eggli rather than a mountain landscape.",
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Marcus_G._Lindner_an_der_Bergstation_Eggli%2C_Gstaad%2C_Schweiz.jpg/1920px-Marcus_G._Lindner_an_der_Bergstation_Eggli%2C_Gstaad%2C_Schweiz.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedCandidateContext": "File:Marcus G. Lindner an der Bergstation Eggli, Gstaad, Schweiz.jpg"
     },
     {
       "key": "scene-5",
