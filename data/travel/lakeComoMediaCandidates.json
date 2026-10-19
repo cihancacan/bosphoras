@@ -2,8 +2,8 @@
   "destination": "lake-como",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 10,
-  "downloadedDestinationCandidates": 3,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 4,
   "hotels": [
     {
       "property": "Villa d’Este",
@@ -271,26 +271,58 @@
       "propertyKey": "il-sereno",
       "key": "view-1",
       "slotIntent": "Il Sereno Torno contemporary architectural lakefront building",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.serenohotels.com/property/il-sereno/"
       ],
-      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/il-sereno/view-1.webp",
+      "downloadUrl": "https://leisureopportunities.co.uk/images/HIGH18053_478034.jpg",
+      "sourcePage": "https://www.spabusiness.com/wellness-news/Patricia-Urquiola-Sereno-Hotels-Lake-Como-Italy-Il-Sereno-Lago-di-Como-architecture-design/331014",
+      "candidateContext": "Il Sereno Torno genuine wood-slat lakeside facade with mountains and water",
+      "credit": "Spa Business · source-labelled Il Sereno architecture photograph",
+      "sha256": "3668a82a467dc1634bcd5b7b20f4775cf0f5a65d1e584a925d92f6c03715ac72",
+      "dhash": "1010010010011100110011001100110110001011100000111001010011000010",
+      "bytes": 208706,
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ]
     },
     {
       "property": "Il Sereno Lago di Como",
       "propertyKey": "il-sereno",
       "key": "view-2",
       "slotIntent": "Original Il Sereno Patricia Urquiola lake-view suite",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.serenohotels.com/property/il-sereno/"
       ],
-      "visualQaWarning": "Actual hotel photo not retrieved or visually approved yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/il-sereno/view-2.webp",
+      "downloadUrl": "https://s3.amazonaws.com/uploads.serenohotels.com/app/uploads/2016/12/16210344/PITER2016SerenoComo_7943-scaled.jpg",
+      "sourcePage": "https://www.serenohotels.com/property/il-sereno/suites/1-bedroom-suites/corner-suite/",
+      "candidateContext": "Il Sereno actual corner suite with walnut furnishings and furnished lake view terrace",
+      "credit": "Sereno Hotels · official Corner Suite image",
+      "sha256": "fea05eed6eb35844592ea7ae1597a678959e0a8d23340d7129d0328cc554f97b",
+      "dhash": "0000111100000011001000110001001100000011110010011111000110010001",
+      "bytes": 203888,
+      "originalSize": [
+        2560,
+        1664
+      ],
+      "outputSize": [
+        1800,
+        1170
+      ]
     },
     {
       "property": "Il Sereno Lago di Como",
@@ -328,13 +360,29 @@
       "label": "Panorama of real Lake Como green mountains and deep blue water",
       "query": "Lake Como aerial Italy mountains",
       "tag": "lake-como",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "sourcePages": [
         "https://www.navigazionelaghi.it/en/tickets-and-timetables-lake-como/"
       ],
-      "visualQaWarning": "Geographically verified true location photo not retrieved and reviewed yet."
+      "visualQaWarning": "Identity, photograph distinctness, quality and attribution await human inspection.",
+      "localPath": "/images/travel/lake-como-premium/destination/scene-1.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Panorama_del_lago_di_Como.jpg/1920px-Panorama_del_lago_di_Como.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panorama_del_lago_di_Como.jpg",
+      "candidateContext": "Panorama del lago di Como.jpg",
+      "credit": "BeppeViews · CC BY 4.0",
+      "sha256": "a2f6d3d77cc4ef9964020ffee47f57f77f246c2596c38d1411937566020987bf",
+      "dhash": "0100000101000110010011101111010011001010111001101100011011001001",
+      "bytes": 215094,
+      "originalSize": [
+        1920,
+        731
+      ],
+      "outputSize": [
+        1800,
+        685
+      ]
     },
     {
       "key": "scene-2",
