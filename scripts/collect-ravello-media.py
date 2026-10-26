@@ -27,6 +27,42 @@ SCENES={
 "scene-7":("Marmorata Amalfi coast sea",("marmorata",)),
 "scene-8":("Oscar Niemeyer Auditorium Ravello",("niemeyer","ravello")),
 "scene-9":("Atrani Amalfi panorama Ravello",("atrani","amalfi"))}
+
+# Precise site-specific photo sources, not ambiguous "Marmorata" from Sardinia.
+EXACT_COMMONS={
+ "scene-5":[
+  ("Vue emblématique de Ravello.jpg","Authentic elevated Ravello town and sea panorama; inspect daylight and orientation"),
+  ("View of Ravello in September 2017.jpg","Ravello rooftops seen across hillside in daylight"),
+  ("Ravello Italy.JPG","Authentic Ravello village overview from countryside")],
+ "scene-6":[
+  ("Scala Campania panorama.jpg","Authentic Scala inland village and Lattari mountains"),
+  ("Piazza Scala.JPG","Historic Scala village square and hills"),
+  ("Campania Ravello1 tango7174.jpg","The hill town Scala as viewed from Ravello")],
+ "scene-7":[
+  ("Minori from Ravello.jpg","Coast around Minori, adjoining Marmorata, seen from Ravello, not Marmorata itself"),
+  ("Amalfi coast at Minori.jpg","Clear Tyrrhenian coastline near Ravello's Marmorata locality")],
+ "scene-9":[
+  ("Campania Ravello2 tango7174.jpg","Directly documented panorama from Ravello towards Pontone and Atrani on the sea"),
+  ("Ausblick von Ravello 2.jpg","Coast towards Amalfi viewed from Ravello"),
+  ("Atrani (Italy).jpg","Authentic Atrani on the coast near Amalfi, photographed from nearby")],
+}
+EXACT_SCENE_PAGES={
+ "scene-7":["https://hotelmarmorata.com/en/gallery","https://www.palazzoavino.com/clubhouse-by-the-sea/"],
+}
+def commons_exact(filename,context):
+ response=request("https://commons.wikimedia.org/w/api.php",params={"action":"query","titles":"File:"+filename,
+   "prop":"imageinfo","iiprop":"url|extmetadata","iiurlwidth":1750,"format":"json"})
+ if not response:return []
+ try:
+  page=next(p for p in response.json()["query"]["pages"].values() if "missing" not in p)
+  info=page["imageinfo"][0];url=info.get("thumburl") or info.get("url")
+  md=info.get("extmetadata") or {}
+  artist=BeautifulSoup(md.get("Artist",{}).get("value",""),"html.parser").get_text(" ",strip=True)[:150]
+  lic=md.get("LicenseShortName",{}).get("value","Rights check required")
+  source="https://commons.wikimedia.org/wiki/"+page["title"].replace(" ","_")
+  return [(130,url,source,context,(artist or "Commons contributor")+" · "+lic,lic)] if url else []
+ except (ValueError,TypeError,KeyError,IndexError,StopIteration):return []
+
 errors=[]
 def request(url,params=None):
  try:
@@ -136,7 +172,13 @@ def main():
  for item in m["destinationScenes"]:
   if item.get("localPath"):continue
   q,terms=SCENES[item["key"]]
-  capture(item,commons_candidates(q,terms),seen_urls,seen_hashes,seen_dhash)
+  known=[]
+  for name,context in EXACT_COMMONS.get(item["key"],[]):known.extend(commons_exact(name,context))
+  exactPages=[c for page in EXACT_SCENE_PAGES.get(item["key"],[]) for c in candidates_from_hotel(page)]
+  # An actual Marmorata coastline image should outrank a nearby Minori photo;
+  # art direction and locality are still manually reviewed after download.
+  exactPages=[(125,url,page,desc,author,lic) for _,url,page,desc,author,lic in exactPages]
+  capture(item,exactPages+known+commons_candidates(q,terms),seen_urls,seen_hashes,seen_dhash)
  m["downloadedHotelCandidates"]=sum(bool(x.get("localPath")) for x in m["hotels"])
  m["downloadedDestinationCandidates"]=sum(bool(x.get("localPath")) for x in m["destinationScenes"])
  m["visuallyVerified"]=False;m["approvedForCommercialPublication"]=False
