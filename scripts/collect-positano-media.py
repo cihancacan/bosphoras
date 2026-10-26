@@ -12,9 +12,9 @@ REPORT=Path("docs/travel-positano-download-report.json")
 S=requests.Session()
 S.headers.update({"User-Agent":"BosphorasLuxuryStays/2.0 (photo provenance assessment, bosphoras.com)","Accept":"text/html,application/json,image/webp,image/jpeg,image/png,*/*;q=.7"})
 HOTELS={
-"le-sirenuse":["https://sirenuse.it/en/","https://sirenuse.it/en/rooms-and-suites/","https://sirenuse.it/en/restaurant-la-sponda/"],
-"hotel-poseidon":["https://www.hotelposeidonpositano.it/en/","https://www.hotelposeidonpositano.it/en/hotel-with-pool-positano","https://www.hotelposeidonpositano.it/en/hotel-in-positano"],
-"villa-treville":["https://villatreville.com/","https://villatreville.com/suites/","https://villatreville.com/gallery/"],
+"le-sirenuse":["https://sirenuse.it/en/gallery/rooms-suites/","https://sirenuse.it/en/gallery/hotel/","https://sirenuse.it/en/rooms-suites/","https://sirenuse.it/en/"],
+"hotel-poseidon":["https://www.hotelposeidonpositano.it/en/gallery/","https://www.hotelposeidonpositano.it/en/rooms-hotel-in-positano","https://www.hotelposeidonpositano.it/en/hotel-with-pool-positano","https://www.hotelposeidonpositano.it/en/hotel-in-positano"],
+"villa-treville":["https://villatreville.com/accommodations/","https://refit.villatreville.com/gallery.php","https://villatreville.com/","https://www.ad-italia.it/gallery/villa-treville-positano-interni-renzo-mongiardino-foto/"],
 "il-san-pietro":["https://www.ilsanpietro.com/","https://www.ilsanpietro.com/rooms-suites/","https://www.ilsanpietro.com/restaurants/"]
 }
 SCENES={
@@ -28,6 +28,49 @@ SCENES={
 "scene-8":("Positano colorful ceramic street",("positano","ceramic")),
 "scene-9":("Positano Praiano Amalfi coastline",("praiano","positano"))
 }
+EXACT={
+ "hotel-poseidon/view-1":[("https://smallandeleganthotels.com/images/blog/Poseidon_-_sun_terrace_2_%287%29.jpg",
+   "https://smallandeleganthotels.com/destinations/italy/amalfi-coast-sorrento-positano/hotel-poseidon-positano/",
+   "Authentic sunlit Hotel Poseidon pool terrace, striped parasols and sun loungers")],
+ "hotel-poseidon/view-2":[("https://www.hotelposeidonpositano.it/storage/1450/TOP-new/top_esterni8.jpg",
+   "https://www.hotelposeidonpositano.it/en/hotel-in-positano",
+   "Hotel Poseidon Positano hillside exterior")],
+ "hotel-poseidon/view-3":[("https://images.squarespace-cdn.com/content/v1/663b6e06900de569cb5eff86/1722093018761-YQQW4QGKR9TFV8FJP6A6/poseidon%2Bcocktail%2Bhour.jpg",
+   "https://plannedtowhere.com/blog/best-hotels-positano",
+   "Real Hotel Poseidon dining terrace with illuminated pool at blue hour")],
+ "villa-treville/view-1":[("https://www.americanexpress.com/en-us/travel/discover/photos/482955/92265/1200/DSC06641.jpg",
+   "https://www.americanexpress.com/es-es/travel/discover/property/Italy/Positano/Villa-Treville",
+   "Real Villa TreVille pool overlooking Positano from a private guest terrace")],
+ "villa-treville/view-2":[("https://cdn.mos.cms.futurecdn.net/P4QodJ2zzEbAUCRJBmapJV-1920-80.png",
+   "https://theweek.com/culture-life/travel/villa-treville-positano-a-glamorous-sanctuary-on-the-amalfi-coast",
+   "Actual turquoise and orange mosaic living room in the Callas suite of Villa TreVille")],
+ "villa-treville/view-3":[("https://hips.hearstapps.com/hmg-prod/images/villa-treville-positano-4-675b10eb3f2f8.jpg",
+   "https://www.redonline.co.uk/travel/a63081582/villa-treville-positano/",
+   "Original Villa TreVille Positano pergola-shaded panoramic outdoor lounge")],
+}
+SCENES_EXACT={
+ "scene-1":[("AmalfiküstePositano.jpg","True Positano village viewed from coastline, bright daylight"),("Amalfi Coast from Positano.jpg","Positano Amalfi coast landscape")],
+ "scene-5":[("Positano, Amalfi Coast, Italy (22286060906).jpg","Historical true Via Pasitea building and road perspective in Positano"),("Vista di Positano Campania.jpg","Positano hillside roads from Via Pasitea")],
+ "scene-6":[("84017 Arienzo SA, Italy - panoramio (1).jpg","Authentic Arienzo Positano coast scene geolocated on Wikimedia Commons"),("84017 Arienzo SA, Italy - panoramio.jpg","Alternative Arienzo photograph at precisely named site")],
+ "scene-7":[("Il San Pietro di Positano-14460805246.jpg","True San Pietro di Positano and Laurito coast from nearby Praiano"),("84017 Arienzo SA, Italy - panoramio (2).jpg","Nearby east Positano coast context: inspect geographic identity")],
+ "scene-8":[("Positano (32632824125).jpg","Real Positano village shopping streets and colourful houses, subject identity to inspect"),("Positano - 7271.jpg","Positano village lane, confirm ceramic context")],
+ "scene-9":[("Praiano, Amalfitan Coast.jpeg","Actual Praiano and coastal panorama east of Positano, verified coordinates"),("View of Praiano from the sea, 2010.jpg","Real nearby Praiano photographed from Tyrrhenian Sea")]
+}
+def exact_commons(title,caption):
+ r=fetch("https://commons.wikimedia.org/w/api.php",params={
+ "action":"query","titles":"File:"+title,"prop":"imageinfo",
+ "iiprop":"url|extmetadata","iiurlwidth":1750,"format":"json"})
+ if not r:return []
+ try:
+  page=next(x for x in r.json()["query"]["pages"].values() if "missing" not in x)
+  info=page["imageinfo"][0];url=info.get("thumburl") or info.get("url")
+  meta=info.get("extmetadata") or {}
+  artist=BeautifulSoup(meta.get("Artist",{}).get("value",""),"html.parser").get_text(" ",strip=True)[:180]
+  license=meta.get("LicenseShortName",{}).get("value","License needs review")
+  source="https://commons.wikimedia.org/wiki/"+page["title"].replace(" ","_")
+  return [(120,url,source,caption,(artist or "Commons contributor")+" · "+license,license)] if url else []
+ except (KeyError,IndexError,TypeError,StopIteration,ValueError):return []
+
 errors=[]
 def fetch(url,params=None):
  try:
@@ -130,11 +173,14 @@ def main():
    for page in HOTELS[key]:opts.extend(hotel_images(page))
    cache[key]=opts
    print("POSITANO_HOTEL_SOURCES",key,len(opts),flush=True)
-  candidate(x,cache[key],urls,hashes,p)
+  opts=[(150,url,source,desc,"Exact property image linked at "+source,"Publisher/source licence check required") for url,source,desc in EXACT.get(key+"/"+x["key"],[])]
+  candidate(x,opts+cache[key],urls,hashes,p)
  for x in m["destinationScenes"]:
   if x.get("localPath"):continue
   query,tokens=SCENES[x["key"]]
-  candidate(x,commons_images(query,tokens),urls,hashes,p)
+  confirmed=[]
+  for title,caption in SCENES_EXACT.get(x["key"],[]):confirmed.extend(exact_commons(title,caption))
+  candidate(x,confirmed or commons_images(query,tokens),urls,hashes,p)
  m["downloadedHotelCandidates"]=sum(bool(x.get("localPath")) for x in m["hotels"])
  m["downloadedDestinationCandidates"]=sum(bool(x.get("localPath")) for x in m["destinationScenes"])
  m["visuallyVerified"]=False;m["approvedForCommercialPublication"]=False
