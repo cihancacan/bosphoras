@@ -20,3 +20,10 @@
 - **Santa Marina and Mykonos Blu**: three distinct real resort views each; photos of pools and suites are described accurately and should never be portrayed as guaranteed room-level inclusions.
 - Hotel/gallery rights rely on the user's project-wide operator attestation unless a specific Creative Commons licence is documented; underlying hotel/photographer licences were not independently supplied.
 - Pages stay `noindex`, unavailable for commercial release; actual supplier rooms and booking permissions must be checked. Vercel build deliberately deferred until next ten-destination batch.
+
+## Final design and geolocation corrections — 27 October 2026
+
+- Corrected five wrongly aligned area photos: Chora now shows Little Venice; Tagoo shows the Old Port; Ornos shows the Ornos beach; Aleomandra its actual sunset; Psarou its own beach. Previously Tagoo displayed Ornos, Aleomandra displayed Chora windmill, and Ornos displayed an Aleomandra sunset.
+- Revised the hero to bright recognisable Little Venice (scene-2, Wikimedia CC BY-SA 2.0) with turquoise Agios Ioannis coast secondary (scene-9). The isolated historic windmill remains in the set of 21 source images; not the oversized hero.
+- Each of four hotel cards now starts with the best daylight image of the **actual named property**; preserves all three photos per hotel, 12 distinct hotel images and 9 destination photos. Hotel-page H1 and premium hero text contrast are specific to Mykonos.
+- QA now checks local image bytes, the 21 hashes, true 5-area mapping, real credited images, and custom Mykonos heading. Noindex and supplier authorization restrictions remain. The current READY Vercel Preview predates these features and cannot show them until a newly authorised Preview build.
