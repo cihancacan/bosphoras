@@ -42,9 +42,16 @@ EXACT={
  "hotel-poseidon/view-3":[("https://images.squarespace-cdn.com/content/v1/663b6e06900de569cb5eff86/1722093018761-YQQW4QGKR9TFV8FJP6A6/poseidon%2Bcocktail%2Bhour.jpg",
    "https://plannedtowhere.com/blog/best-hotels-positano",
    "Real Hotel Poseidon dining terrace with illuminated pool at blue hour")],
- "il-san-pietro/view-1":[("https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1354946.jpg",
-   "https://guide.michelin.com/br/pt_BR/hotels-stays/positano/il-san-pietro-di-positano-7453",
-   "Authentic Il San Pietro cliffside exterior and terrace with blue sea in clear daylight")],
+ "il-san-pietro/view-1":[
+  ("https://hips.hearstapps.com/townandcountry/assets/16/40/1475785304-01panoramic-view.jpg",
+   "https://www.townandcountrymag.com/leisure/travel-guide/a8136/il-san-pietro-amalfi/",
+   "Real sunny aerial panorama of Il San Pietro hotel perched over deep blue water"),
+  ("https://files.thehandbook.com/uploads/2024/07/panoramic-swimmingpool-at-il-san-pietro-positano-7-edited.jpg",
+   "https://www.thehandbook.com/hotels-on-the-amalfi-coast/",
+   "Authentic Il San Pietro pool terrace with orange sunbeds overlooking the blue sea"),
+  ("https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1514454.jpg",
+   "https://guide.michelin.com/es/es/hotels-stays/positano/il-san-pietro-di-positano-7453",
+   "Real Il San Pietro cliffside building and swimming pool seen from above")],
  "villa-treville/view-1":[("https://www.americanexpress.com/en-us/travel/discover/photos/482955/92265/1200/DSC06641.jpg",
    "https://www.americanexpress.com/es-es/travel/discover/property/Italy/Positano/Villa-Treville",
    "Real Villa TreVille pool overlooking Positano from a private guest terrace")],
@@ -69,10 +76,15 @@ SCENE_PHOTOS={
    "https://www.positano.com/it/c/bagni-arienzo","Same Arienzo source photo in full resolution if available")],
  "scene-7":[("https://i0.wp.com/amalficoastlovers.com/wp-content/uploads/2023/10/spiaggia-laurito-positano-costiera-amalfitana-amalficoastlovers-jpg.webp?fit=1500%2C1000&ssl=1",
   "https://amalficoastlovers.com/en/laurito/","Actual Laurito beach, turquoise sea with umbrellas below cliffs")],
- "scene-8":[("https://uploads.grupodicas.com/2024/11/2c0OPVRU-image.png",
-   "https://www.grupodicas.com/onde-ficar-em-positano-melhor-regiao-e-hoteis-baratos/","Actual colourful Positano ceramics storefront on bright pedestrian street")]
+ "scene-8":[("https://www.amalfipositano.com/photos/positano-ceramics-shop-in-the-center-1280x800.jpg",
+   "https://www.amalfipositano.com/en/photo/positano-ceramics-shop-in-the-center",
+   "Photograph of traditional ceramic storefront in Positano: publisher explicitly permits reuse with attribution link"),
+  ("https://uploads.grupodicas.com/2024/11/2c0OPVRU-image.png",
+   "https://www.grupodicas.com/onde-ficar-em-positano-melhor-regiao-e-hoteis-baratos/",
+   "Actual colourful Positano ceramics storefront on bright pedestrian street")]
 }
 SCENES_EXACT={
+ "scene-8":[("Positano View.JPG","Hand-painted traditional Positano ceramics with hillside village in the background, copyright Mykola Swarnyk CC BY-SA 3.0")],
  "scene-1":[("AmalfiküstePositano.jpg","True Positano village viewed from coastline, bright daylight"),("Amalfi Coast from Positano.jpg","Positano Amalfi coast landscape")],
  "scene-5":[("Positano, Amalfi Coast, Italy (22286060906).jpg","Historical true Via Pasitea building and road perspective in Positano"),("Vista di Positano Campania.jpg","Positano hillside roads from Via Pasitea")],
  "scene-6":[("84017 Arienzo SA, Italy - panoramio (1).jpg","Authentic Arienzo Positano coast scene geolocated on Wikimedia Commons"),("84017 Arienzo SA, Italy - panoramio.jpg","Alternative Arienzo photograph at precisely named site")],
@@ -185,7 +197,7 @@ def candidate(row,options,urls,hashes,dhashes):
 def main():
  m=json.loads(DOC.read_text(encoding="utf8"))
  all_items=m["hotels"]+m["destinationScenes"]
- urls={x["downloadUrl"].split("?")[0] for x in all_items if x.get("downloadUrl")}
+ urls={u.split("?")[0] for x in all_items for u in (x.get("downloadUrl"),x.get("rejectedSource")) if isinstance(u,str) and u.startswith("https://")}
  hashes={x["sha256"] for x in all_items if x.get("sha256")}
  p=[x["dhash"] for x in all_items if x.get("dhash")]
  cache={}

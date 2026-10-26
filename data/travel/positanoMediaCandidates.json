@@ -2,7 +2,7 @@
   "destination": "positano",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 12,
+  "downloadedHotelCandidates": 11,
   "downloadedDestinationCandidates": 8,
   "hotels": [
     {
@@ -260,29 +260,13 @@
       "propertyKey": "il-san-pietro",
       "slotIntent": "actual sunlit hotel exterior",
       "sourcePage": "https://www.ilsanpietro.com/",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visualQaWarning": "Previously rejected kitchen/staff photo recaptured due to source URL reuse; require actual cliffside building or property exterior.",
       "rejectedSource": "https://www.ilsanpietro.com/wp-content/uploads/2025/12/Kitchen_Zass_restaurant_at_il_san_pietro_positano_17-1024x613.jpg",
       "rejectedOriginalSha256": "3a1448e725944792417987ab419c2bab916396a808edef3105e685efcceea51c",
-      "rejectedCandidateContext": "Kitchen Zass restaurant at il san pietro positano 17   ",
-      "localPath": "/images/travel/positano-premium/il-san-pietro/view-1.webp",
-      "downloadUrl": "https://www.ilsanpietro.com/wp-content/uploads/2025/12/Kitchen_Zass_restaurant_at_il_san_pietro_positano_17-1024x613.jpg",
-      "candidateContext": "Kitchen Zass restaurant at il san pietro positano 17   ",
-      "credit": "Official source webpage; photographer rights to verify",
-      "license": "Copyright held by source/photographer",
-      "sha256": "3a1448e725944792417987ab419c2bab916396a808edef3105e685efcceea51c",
-      "dhash": "0011101110111010110110110110101110100100111011000110110110001111",
-      "bytes": 98996,
-      "originalSize": [
-        1024,
-        613
-      ],
-      "outputSize": [
-        1024,
-        613
-      ]
+      "rejectedCandidateContext": "Kitchen Zass restaurant at il san pietro positano 17   "
     },
     {
       "key": "view-2",
