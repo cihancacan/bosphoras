@@ -1,6 +1,6 @@
 # Positano — 21 photographies à contrôler
 
-**Candidats récupérés : 19/21 · Validés visuellement : 0/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 20/21 · Validés visuellement : 0/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Positano](positano.jpg)
 
@@ -15,7 +15,7 @@
 | 7 | Villa TreVille — view-1 | [Source](https://www.americanexpress.com/es-es/travel/discover/property/Italy/Positano/Villa-Treville) · Real Villa TreVille pool overlooking Positano from a private guest terrace| Candidate; **Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.** |
 | 8 | Villa TreVille — view-2 | [Source](https://theweek.com/culture-life/travel/villa-treville-positano-a-glamorous-sanctuary-on-the-amalfi-coast) · Actual turquoise and orange mosaic living room in the Callas suite of Villa TreVille| Candidate; **Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.** |
 | 9 | Villa TreVille — view-3 | [Source](https://villatreville.com/accommodations/) ·    | Candidate; **Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.** |
-| 10 | Il San Pietro di Positano — view-1 | [Source](https://www.ilsanpietro.com/) · | Manquante; **Previously rejected kitchen/staff photo recaptured due to source URL reuse; require actual cliffside building or property exterior.** |
+| 10 | Il San Pietro di Positano — view-1 | [Source](https://www.townandcountrymag.com/leisure/travel-guide/a8136/il-san-pietro-amalfi/) · Real sunny aerial panorama of Il San Pietro hotel perched over deep blue water| Candidate; **Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.** |
 | 11 | Il San Pietro di Positano — view-2 | [Source](https://www.ilsanpietro.com/rooms-suites/) · Classic room at il san pietro positano   | Candidate; **Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.** |
 | 12 | Il San Pietro di Positano — view-3 | [Source](https://www.ilsanpietro.com/rooms-suites/) · DELUXE rooms at the hotel San Pietro di Positano   | Candidate; **Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.** |
 | 13 | Positano pastel village and Spiaggia Grande — scene-1 | [Source](https://www.celebritycruises.com/blog/things-to-do-in-positano) · Sunlit colorful Positano village and bay from the sea| Candidate; **Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.** |
@@ -25,5 +25,5 @@
 | 17 | Positano hillside panorama from the upper streets — scene-5 | [Source](https://www.praianonline.com/en/destinations/explore-positano-amalfi-coast/) · Bright panoramic view down Positano hillside to town church and sea, street not represented| Candidate; **Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.** |
 | 18 | Arienzo coves below the cliff — scene-6 | [Source](https://www.positano.com/it/c/bagni-arienzo) · Exact turquoise Arienzo bathing cove with beach, coast and white villas| Candidate; **Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.** |
 | 19 | Laurito coastline — scene-7 | [Source](https://amalficoastlovers.com/en/laurito/) · Actual Laurito beach, turquoise sea with umbrellas below cliffs| Candidate; **Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.** |
-| 20 | Positano ceramics and village streets — scene-8 | [Source](https://commons.wikimedia.org/wiki/File:Positano_(32632824125).jpg) · | Manquante; **Street scene lacks Positano ceramics shops, which the intended caption promises.** |
+| 20 | Positano ceramics and village streets — scene-8 | [Source](https://www.amalfipositano.com/en/photo/positano-ceramics-shop-in-the-center) · | Manquante; **Previous photograph contains prominent publisher logo watermark; select an unwatermarked real photo of ceramics and Positano.** |
 | 21 | Coastal view towards Praiano — scene-9 | [Source](https://www.laconchigliapraiano.it/) · Real sunlit panorama of Praiano along the Tyrrhenian coast| Candidate; **Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.** |
