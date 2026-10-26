@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 9,
+  "downloadedDestinationCandidates": 8,
   "hotels": [
     {
       "key": "view-1",
@@ -549,30 +549,14 @@
       "placeLabel": "Positano ceramics and village streets",
       "searchQuery": "Positano narrow streets colourful ceramic",
       "slotIntent": "Positano ceramics and village streets",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visualQaWarning": "Previous photograph contains prominent publisher logo watermark; select an unwatermarked real photo of ceramics and Positano.",
       "sourcePage": "https://www.amalfipositano.com/en/photo/positano-ceramics-shop-in-the-center",
-      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Positano_%2832632824125%29.jpg/1920px-Positano_%2832632824125%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedOriginalSha256": "9c280c5586833240115a76e01922848547488f482cbeb17c0917ef58904661ac",
-      "rejectedCandidateContext": "Real Positano village shopping streets and colourful houses, subject identity to inspect",
-      "localPath": "/images/travel/positano-premium/destination/scene-8.webp",
-      "downloadUrl": "https://www.amalfipositano.com/photos/positano-ceramics-shop-in-the-center-1280x800.jpg",
-      "candidateContext": "Photograph of traditional ceramic storefront in Positano: publisher explicitly permits reuse with attribution link",
-      "credit": "Source image from https://www.amalfipositano.com/en/photo/positano-ceramics-shop-in-the-center",
-      "license": "Publisher/photographer permission requires verification",
-      "sha256": "dd9c8de9e6a37d03c13eb1710687f6af443fc8be4b1d008caf41ed0840a3f482",
-      "dhash": "0100111100110111001100011011001110111011101110111000111111011101",
-      "bytes": 231594,
-      "originalSize": [
-        1280,
-        800
-      ],
-      "outputSize": [
-        1280,
-        800
-      ]
+      "rejectedSource": "https://www.amalfipositano.com/photos/positano-ceramics-shop-in-the-center-1280x800.jpg",
+      "rejectedOriginalSha256": "dd9c8de9e6a37d03c13eb1710687f6af443fc8be4b1d008caf41ed0840a3f482",
+      "rejectedCandidateContext": "Photograph of traditional ceramic storefront in Positano: publisher explicitly permits reuse with attribution link"
     },
     {
       "key": "scene-9",

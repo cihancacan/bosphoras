@@ -76,12 +76,8 @@ SCENE_PHOTOS={
    "https://www.positano.com/it/c/bagni-arienzo","Same Arienzo source photo in full resolution if available")],
  "scene-7":[("https://i0.wp.com/amalficoastlovers.com/wp-content/uploads/2023/10/spiaggia-laurito-positano-costiera-amalfitana-amalficoastlovers-jpg.webp?fit=1500%2C1000&ssl=1",
   "https://amalficoastlovers.com/en/laurito/","Actual Laurito beach, turquoise sea with umbrellas below cliffs")],
- "scene-8":[("https://www.amalfipositano.com/photos/positano-ceramics-shop-in-the-center-1280x800.jpg",
-   "https://www.amalfipositano.com/en/photo/positano-ceramics-shop-in-the-center",
-   "Photograph of traditional ceramic storefront in Positano: publisher explicitly permits reuse with attribution link"),
-  ("https://uploads.grupodicas.com/2024/11/2c0OPVRU-image.png",
-   "https://www.grupodicas.com/onde-ficar-em-positano-melhor-regiao-e-hoteis-baratos/",
-   "Actual colourful Positano ceramics storefront on bright pedestrian street")]
+ # Prefer source-cleared original Commons rather than the shop image carrying a publisher watermark.
+
 }
 SCENES_EXACT={
  "scene-8":[("Positano View.JPG","Hand-painted traditional Positano ceramics with hillside village in the background, copyright Mykola Swarnyk CC BY-SA 3.0")],
