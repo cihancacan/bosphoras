@@ -2,8 +2,8 @@
   "destination": "capri",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 6,
+  "downloadedDestinationCandidates": 6,
   "hotels": [
     {
       "key": "view-1",
@@ -44,10 +44,26 @@
       "propertyKey": "jk-place-capri",
       "slotIntent": "Authentic sunlit hotel exterior",
       "sourcePage": "https://jkcapri.com/en/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/jk-place-capri/view-1.webp",
+      "downloadUrl": "https://www.jkplaces.com/jkcapri/wp-content/themes/startup_pro/inc/php-global/s-image/index.php?img=/var/www/vhosts/jkplaces.com/httpdocs/jkcapri/wp-content/uploads//2025/04/jk_capri_5_stars_hotel.jpg&mod=3&w=1456",
+      "candidateContext": "J.K. Place Capri    ",
+      "credit": "Source: https://jkcapri.com/en/",
+      "license": "Unverified photographer licence",
+      "sha256": "2186e7600b4ba9338a426c5dafb7d03cc75475dcd5f90272dd0f2052ab0df8f3",
+      "dhash": "1000100110101110101010001100100100001101011011000111101111111001",
+      "bytes": 105844,
+      "originalSize": [
+        1456,
+        698
+      ],
+      "outputSize": [
+        1456,
+        698
+      ]
     },
     {
       "key": "view-2",
@@ -55,10 +71,26 @@
       "propertyKey": "jk-place-capri",
       "slotIntent": "Actual room or suite",
       "sourcePage": "https://jkcapri.com/en/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/jk-place-capri/view-2.webp",
+      "downloadUrl": "https://www.jkplaces.com/jkcapri/wp-content/uploads/2024/08/private-dining-4.jpg",
+      "candidateContext": "Hotel page background candidate",
+      "credit": "Source: https://jkcapri.com/en/",
+      "license": "Unverified photographer licence",
+      "sha256": "0a14a62ae09e242448ffca80a6e08ecb195734bee1fbfe1fa75823e4de75ad55",
+      "dhash": "1000110010001100100011011000110110001101011100010011111100110011",
+      "bytes": 174064,
+      "originalSize": [
+        1600,
+        1101
+      ],
+      "outputSize": [
+        1600,
+        1101
+      ]
     },
     {
       "key": "view-3",
@@ -76,11 +108,27 @@
       "property": "Hotel Punta Tragara",
       "propertyKey": "punta-tragara",
       "slotIntent": "Authentic sunlit hotel exterior",
-      "sourcePage": "https://manfredihotels.com/tragara/",
-      "status": "missing",
+      "sourcePage": "https://www.capri.com/en/c/punta-tragara",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/punta-tragara/view-1.webp",
+      "downloadUrl": "https://images.ng.ondaplatform.com/card/10/gallery/3-ART-PUNTA-TRAGARA-003471-3244-ArtSuite.jpg/w736_h485_csmart_d1.6_u1708360261.webp",
+      "candidateContext": "    ",
+      "credit": "Source: https://www.capri.com/en/c/punta-tragara",
+      "license": "Unverified photographer licence",
+      "sha256": "03c89c3f8fd8fed1b2f36248a699d0e5ea2fdae356479388c9b9f39ab4f98dbf",
+      "dhash": "0000011100101100010110110100001101001110000101000101100101010010",
+      "bytes": 188928,
+      "originalSize": [
+        1178,
+        776
+      ],
+      "outputSize": [
+        1178,
+        776
+      ]
     },
     {
       "key": "view-2",
@@ -110,10 +158,26 @@
       "propertyKey": "jumeirah-capri-palace",
       "slotIntent": "Authentic sunlit hotel exterior",
       "sourcePage": "https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/jumeirah-capri-palace/view-1.webp",
+      "downloadUrl": "https://cdn.jumeirah.com/api/public/content/31f699caee7a4c8aa28782688421d878?v=589780b6",
+      "candidateContext": "Gallery image 1    ",
+      "credit": "Source: https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace",
+      "license": "Unverified photographer licence",
+      "sha256": "9fc026a587e5ff53c8f198987b9a154016a479f6329f1ce84bf42f7fa76ef0a8",
+      "dhash": "0011111100010001100011001000110001000100011001010011001100110011",
+      "bytes": 482020,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     },
     {
       "key": "view-2",
@@ -121,10 +185,26 @@
       "propertyKey": "jumeirah-capri-palace",
       "slotIntent": "Actual room or suite",
       "sourcePage": "https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/jumeirah-capri-palace/view-2.webp",
+      "downloadUrl": "https://cdn.jumeirah.com/api/public/content/b233a175b1fc4c3a995731888d7582c8?v=111e4bb7",
+      "candidateContext": "Gallery image 1    ",
+      "credit": "Source: https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace",
+      "license": "Unverified photographer licence",
+      "sha256": "f7e1fd54bfe86819da7bcee08f225588eb5d502557f1b8030f3f391d559efcfd",
+      "dhash": "0010111100111001000111011001011010101011100100011011001111001000",
+      "bytes": 172364,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     },
     {
       "key": "view-3",
@@ -132,10 +212,26 @@
       "propertyKey": "jumeirah-capri-palace",
       "slotIntent": "Real hotel restaurant, pool or terrace",
       "sourcePage": "https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/jumeirah-capri-palace/view-3.webp",
+      "downloadUrl": "https://cdn.jumeirah.com/api/public/content/dda57a443da04b849bb0001b2d3305d2?v=e17dce47",
+      "candidateContext": "Gallery image 1    ",
+      "credit": "Source: https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace",
+      "license": "Unverified photographer licence",
+      "sha256": "68037be3a4984c4fc5953b3ef4410b9268e27445ae333b823bf630c202f28f1f",
+      "dhash": "0111001100110001001110110010101100111011000110110111101101110011",
+      "bytes": 354028,
+      "originalSize": [
+        1880,
+        1253
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     }
   ],
   "destinationScenes": [
@@ -154,20 +250,54 @@
       "placeLabel": "Marina Grande",
       "slotIntent": "Marina Grande",
       "searchQuery": "Capri Marina Grande harbour",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/destination/scene-2.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Boats%2C_Capri_Harbour_-_scan01.jpg/1920px-Boats%2C_Capri_Harbour_-_scan01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Boats,_Capri_Harbour_-_scan01.jpg",
+      "candidateContext": "File:Boats, Capri Harbour - scan01.jpg",
+      "credit": "Rept0n1x · CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "sha256": "bde942d1103a05dcdfe1e1c5e821a3f7518cb9ee22f3028d7138cc58e9a1b81a",
+      "dhash": "0010011101011111001111101011110010001101001111110011110100010111",
+      "bytes": 180682,
+      "originalSize": [
+        1920,
+        1337
+      ],
+      "outputSize": [
+        1723,
+        1200
+      ]
     },
     {
       "key": "scene-3",
       "placeLabel": "Piazzetta",
       "slotIntent": "Piazzetta",
       "searchQuery": "Capri Piazzetta square",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/destination/scene-3.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Piazza_Umberto_I_din_Capri.jpg/1920px-Piazza_Umberto_I_din_Capri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Piazza_Umberto_I_din_Capri.jpg",
+      "candidateContext": "File:Piazza Umberto I din Capri.jpg",
+      "credit": "Cezar Suceveanu · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "sha256": "7d4d7e1d1e14107d7c70a13aa991f0367d586a8c15433a94e3dd9425d4023dbe",
+      "dhash": "0000111110111010111110111111110110110100101101110100111110001110",
+      "bytes": 366922,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-4",
@@ -184,10 +314,27 @@
       "placeLabel": "Marina Piccola",
       "slotIntent": "Marina Piccola",
       "searchQuery": "Capri Marina Piccola bay",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/destination/scene-5.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/A._Leto_-_Marina_Piccola_a_Capri.jpg/1920px-A._Leto_-_Marina_Piccola_a_Capri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:A._Leto_-_Marina_Piccola_a_Capri.jpg",
+      "candidateContext": "File:A. Leto - Marina Piccola a Capri.jpg",
+      "credit": "Antonino Leto · Public domain",
+      "license": "Public domain",
+      "sha256": "1edb3a2646acfd7bd33d12a2e34f069efcf64ed3f1e562df43b1294665a82734",
+      "dhash": "0100101110110110001100110110100000110011000100110000001100010000",
+      "bytes": 320776,
+      "originalSize": [
+        1920,
+        1239
+      ],
+      "outputSize": [
+        1800,
+        1162
+      ]
     },
     {
       "key": "scene-6",
@@ -204,30 +351,81 @@
       "placeLabel": "Monte Solaro",
       "slotIntent": "Monte Solaro",
       "searchQuery": "Monte Solaro views",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/destination/scene-7.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Capri_Centre_Belvedere.jpg/1920px-Capri_Centre_Belvedere.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Capri_Centre_Belvedere.jpg",
+      "candidateContext": "File:Capri Centre Belvedere.jpg",
+      "credit": "Paolo Costa Baldi · CC BY 3.0",
+      "license": "CC BY 3.0",
+      "sha256": "3403132ccb1e79461e34a25a39ebc1f59ead3336e15756aa9c93d74860a63564",
+      "dhash": "1111110010110010111110010110100000100101011001010110000011000001",
+      "bytes": 451514,
+      "originalSize": [
+        1920,
+        936
+      ],
+      "outputSize": [
+        1800,
+        878
+      ]
     },
     {
       "key": "scene-8",
       "placeLabel": "Giardini di Augusto",
       "slotIntent": "Giardini di Augusto",
       "searchQuery": "Augustus Gardens Capri",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/destination/scene-8.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Giardini_di_Augusto_overlook%2C_seen_from_the_Punta_Cannone_overlook%2C_Capri%2C_2010.jpg/1920px-Giardini_di_Augusto_overlook%2C_seen_from_the_Punta_Cannone_overlook%2C_Capri%2C_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Giardini_di_Augusto_overlook,_seen_from_the_Punta_Cannone_overlook,_Capri,_2010.jpg",
+      "candidateContext": "File:Giardini di Augusto overlook, seen from the Punta Cannone overlook, Capri, 2010.jpg",
+      "credit": "DimiTalen · CC0",
+      "license": "CC0",
+      "sha256": "4d97b79914f968794e93145d6dc937ca0a391752ce92fde3880e413594ba548e",
+      "dhash": "0111001000110110000110101101101111000101110001101100011011010011",
+      "bytes": 729358,
+      "originalSize": [
+        1920,
+        1277
+      ],
+      "outputSize": [
+        1800,
+        1197
+      ]
     },
     {
       "key": "scene-9",
       "placeLabel": "Punta Carena",
       "slotIntent": "Punta Carena",
       "searchQuery": "Punta Carena lighthouse Capri",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/destination/scene-9.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Campania_Lighthouse_Punta_Carena_Capri.jpg/1920px-Campania_Lighthouse_Punta_Carena_Capri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Campania_Lighthouse_Punta_Carena_Capri.jpg",
+      "candidateContext": "File:Campania Lighthouse Punta Carena Capri.jpg",
+      "credit": "Arnoldius · CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "sha256": "67a8fe111b739820e18cb43c76cec09a809f6e515f311ed0b6ad91d880054a4c",
+      "dhash": "0000000100000000011000000000100000000011010000000011010000000001",
+      "bytes": 272412,
+      "originalSize": [
+        1920,
+        1024
+      ],
+      "outputSize": [
+        1800,
+        960
+      ]
     }
   ],
   "publicationBlockedReason": "No locally sourced WebP photographs have passed visual approval, provenance and rights QA."
