@@ -2,8 +2,8 @@
   "destination": "antiparos",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 6,
-  "downloadedDestinationCandidates": 3,
+  "downloadedHotelCandidates": 11,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
@@ -118,22 +118,54 @@
       "property": "The Beach House Antiparos",
       "propertyKey": "the-beach-house",
       "slotIntent": "real suite or bedroom",
-      "sourcePage": "https://beachhouseantiparos.com/",
-      "status": "missing",
+      "sourcePage": "https://greciamia.it/products/antiparos-beach-house",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original verified image yet; do not render."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/antiparos-premium/the-beach-house/view-2.webp",
+      "downloadUrl": "https://cdn.shopify.com/s/files/1/0015/0028/2982/files/Antiparos_Beach_House_casa_vacanze_sul_mare_3.jpg?v=1767357925",
+      "candidateContext": "Real renovated Beach House guestroom at Apantima, Cycladic blue and white interior",
+      "credit": "Verified named-property source; photographer at https://greciamia.it/products/antiparos-beach-house",
+      "license": "Commercial photographer permission to verify",
+      "sha256": "60ea2876195ff9c9c206f609d8922209ee1ad9a3abedf4741634bd59cad72cf6",
+      "dhash": "0000110000001100001011010000110100001001000110010000010000000000",
+      "bytes": 73084,
+      "originalSize": [
+        1000,
+        667
+      ],
+      "outputSize": [
+        1000,
+        667
+      ]
     },
     {
       "key": "view-3",
       "property": "The Beach House Antiparos",
       "propertyKey": "the-beach-house",
       "slotIntent": "real pool, dining or beach",
-      "sourcePage": "https://beachhouseantiparos.com/",
-      "status": "missing",
+      "sourcePage": "https://www.turquoiseholidays.co.uk/destinations/mediterranean/greece/paros-antiparos/the-beach-house/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original verified image yet; do not render."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/antiparos-premium/the-beach-house/view-3.webp",
+      "downloadUrl": "https://www.turquoiseholidays.co.uk/media/31118/dsc07846.jpg?center=0.5%2C0.5&height=940&mode=crop&quality=70&rnd=134159900030000000&width=1920",
+      "candidateContext": "Actual Beach House Antiparos shaded outdoor lounge beside Apantima cove",
+      "credit": "Verified named-property source; photographer at https://www.turquoiseholidays.co.uk/destinations/mediterranean/greece/paros-antiparos/the-beach-house/",
+      "license": "Commercial photographer permission to verify",
+      "sha256": "5a20d50a76e4735e551da0e762162001dc2ea90b94510b366f5ed0101312211c",
+      "dhash": "0000011100101111001011110010111101001111110000100100100100001001",
+      "bytes": 389894,
+      "originalSize": [
+        1920,
+        940
+      ],
+      "outputSize": [
+        1750,
+        857
+      ]
     },
     {
       "key": "view-1",
@@ -194,22 +226,54 @@
       "property": "Soros Beach Antiparos",
       "propertyKey": "soros-beach",
       "slotIntent": "real pool, dining or beach",
-      "sourcePage": "https://www.sorosbeach.gr/",
-      "status": "missing",
+      "sourcePage": "https://www.living-postcards.com/blog/soros-beach-seafood-suites",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original verified image yet; do not render."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/antiparos-premium/soros-beach/view-3.webp",
+      "downloadUrl": "https://www.living-postcards.com/sites/default/files/10974601_348904911961552_6729751623096848134_o.jpg",
+      "candidateContext": "Verified Soros Beach seaside dining terrace with tables and parasols",
+      "credit": "Verified named-property source; photographer at https://www.living-postcards.com/blog/soros-beach-seafood-suites",
+      "license": "Commercial photographer permission to verify",
+      "sha256": "230405368db0d3790300a81b97c255a2a9a2bfb383a0c9c50d742b62836ff5ad",
+      "dhash": "1111101010011110100111111001111110111111001001111000000111010000",
+      "bytes": 225774,
+      "originalSize": [
+        2048,
+        1362
+      ],
+      "outputSize": [
+        1750,
+        1164
+      ]
     },
     {
       "key": "view-1",
       "property": "Kastro Boutique Resort Antiparos",
       "propertyKey": "kastro-boutique",
       "slotIntent": "real property exterior",
-      "sourcePage": "https://www.antiparosgreece.com/",
-      "status": "missing",
+      "sourcePage": "https://www.myboutiquehotel.com/en/boutique-hotels-antiparos-town/kastro-antiparos.html",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original verified image yet; do not render."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/antiparos-premium/kastro-boutique/view-1.webp",
+      "downloadUrl": "https://www.myboutiquehotel.com/photos/112827/kastro-antiparos-antiparos-town-003-43692-2220x1400.jpg",
+      "candidateContext": "Kastro Boutique Resort genuine pool and cabana daybeds in sunlight",
+      "credit": "Verified named-property source; photographer at https://www.myboutiquehotel.com/en/boutique-hotels-antiparos-town/kastro-antiparos.html",
+      "license": "Commercial photographer permission to verify",
+      "sha256": "56ad6ebbcb17a3f485198f6b05f4f62a6f86389a108bc7d41abe5700d9c78bda",
+      "dhash": "0000000100101111100101100001001000011010000111011001011010010110",
+      "bytes": 117422,
+      "originalSize": [
+        2099,
+        1400
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ]
     },
     {
       "key": "view-2",
@@ -227,11 +291,27 @@
       "property": "Kastro Boutique Resort Antiparos",
       "propertyKey": "kastro-boutique",
       "slotIntent": "real pool, dining or beach",
-      "sourcePage": "https://www.antiparosgreece.com/",
-      "status": "missing",
+      "sourcePage": "https://www.myboutiquehotel.com/en/boutique-hotels-antiparos-town/kastro-antiparos.html",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original verified image yet; do not render."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/antiparos-premium/kastro-boutique/view-3.webp",
+      "downloadUrl": "https://www.myboutiquehotel.com/photos/112827/kastro-antiparos-antiparos-town-007-43693-2220x1400.jpg",
+      "candidateContext": "Kastro Antiparos real shaded pergola outdoor dining area beside pool",
+      "credit": "Verified named-property source; photographer at https://www.myboutiquehotel.com/en/boutique-hotels-antiparos-town/kastro-antiparos.html",
+      "license": "Commercial photographer permission to verify",
+      "sha256": "0d0bc527b8bae821f3d804455fd9dcba14f8f2b8122b68fd83dadf130e9940d8",
+      "dhash": "0101000110100011110011010010110100101010110010100100000101100101",
+      "bytes": 183026,
+      "originalSize": [
+        2099,
+        1400
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ]
     }
   ],
   "destinationScenes": [
@@ -240,10 +320,27 @@
       "placeLabel": "Village et port de Chora",
       "searchQuery": "Antiparos Chora Greece harbour",
       "slotIntent": "Village et port de Chora",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original verified image yet; do not render."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/antiparos-premium/destination/scene-1.webp",
+      "sourcePage": "https://traveler.welcomepickups.com/en/paros/sightseeing_rides/antiparos-ride-cave-town-castle-experience",
+      "downloadUrl": "https://s3-eu-west-1.amazonaws.com/welcome.mobile.production/uploads/welcome_experience/image/1598/traveler_page_header_antiparos__2_.jpg",
+      "candidateContext": "Real aerial photograph of Antiparos Chora and port with boats and clear turquoise water",
+      "credit": "Documented exact place source: https://traveler.welcomepickups.com/en/paros/sightseeing_rides/antiparos-ride-cave-town-castle-experience",
+      "license": "Photographer commercial permission requires verification",
+      "sha256": "9e6898969646d6faede6929fdd7ec321004fca74d0a73fe88e5fdd4d1010a0d0",
+      "dhash": "1111000010011100011111001011000000111000010011101100001010011000",
+      "bytes": 346102,
+      "originalSize": [
+        4400,
+        2475
+      ],
+      "outputSize": [
+        1750,
+        984
+      ]
     },
     {
       "key": "scene-2",
@@ -277,44 +374,111 @@
       "placeLabel": "Coucher de soleil Sifneikos Gialos",
       "searchQuery": "Antiparos Sifneikos Gialos sunset",
       "slotIntent": "Coucher de soleil Sifneikos Gialos",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original verified image yet; do not render."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/antiparos-premium/destination/scene-3.webp",
+      "sourcePage": "https://www.tripadvisor.ch/Restaurant_Review-g3569526-d12334953-Reviews-Sifneiko_Cafe-Antiparos_Town_Antiparos_Cyclades_South_Aegean.html",
+      "downloadUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/89/7c/0d/amazing-sunset-sifneiko.jpg?h=-1&s=1&w=1200",
+      "candidateContext": "Sifneikos Gialos sunset viewed from Sifneiko Café's sea-facing terrace",
+      "credit": "Documented exact place source: https://www.tripadvisor.ch/Restaurant_Review-g3569526-d12334953-Reviews-Sifneiko_Cafe-Antiparos_Town_Antiparos_Cyclades_South_Aegean.html",
+      "license": "Photographer commercial permission requires verification",
+      "sha256": "dd05f685567a935b03cef6ef6a9a217d7c2b51ab104a14494da0444af43ae923",
+      "dhash": "0000111100001111000011110000111100001110000111111011111100010011",
+      "bytes": 126802,
+      "originalSize": [
+        1200,
+        741
+      ],
+      "outputSize": [
+        1200,
+        741
+      ]
     },
     {
       "key": "scene-4",
       "placeLabel": "Plage de Livadi",
       "searchQuery": "Antiparos Livadi beach",
       "slotIntent": "Plage de Livadi",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original verified image yet; do not render."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/antiparos-premium/destination/scene-4.webp",
+      "sourcePage": "https://www.greekislandhopping.de/blog/antiparos-straende",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/6489d831dc9a515d83f5e390/7c60a337-8a66-411e-9736-7e6b946cb2c6/Livadia-Beach_Strand.jpg",
+      "candidateContext": "Livadia beach on Antiparos with west-coast dunes and natural wide sandy cove, not Livadia on Paros",
+      "credit": "Documented exact place source: https://www.greekislandhopping.de/blog/antiparos-straende",
+      "license": "Photographer commercial permission requires verification",
+      "sha256": "000cb8a5e4c1edb5b3b69e6c0b3d3723e7d8b705c7c25fc09d12353f34d1a01c",
+      "dhash": "1111111111111111100010111000000000011010010111110110001110010001",
+      "bytes": 263716,
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "outputSize": [
+        1536,
+        1024
+      ]
     },
     {
       "key": "scene-5",
       "placeLabel": "Baie d'Apantima",
       "searchQuery": "Antiparos Apantima beach",
       "slotIntent": "Baie d'Apantima",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original verified image yet; do not render."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/antiparos-premium/destination/scene-5.webp",
+      "sourcePage": "https://www.thethinkingtraveller.com/greece/antiparos/villas/lexie",
+      "downloadUrl": "https://www.thethinkingtraveller.com/media/Resized/Greece%20Local%20Areas/Antiparos/Beaches/Apantima/1920/shutterstock_763417117.jpg",
+      "candidateContext": "True Apantima Antiparos coastal hillside and shallow bay with traditional windmill",
+      "credit": "Documented exact place source: https://www.thethinkingtraveller.com/greece/antiparos/villas/lexie",
+      "license": "Photographer commercial permission requires verification",
+      "sha256": "d93d8153a36f5f069da41a36a5168ebae3c62585a77b132433fe45dee51dc36c",
+      "dhash": "1111111100011111111110111101000001001101111000111111101011111110",
+      "bytes": 475224,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ]
     },
     {
       "key": "scene-6",
       "placeLabel": "Plage de Soros",
       "searchQuery": "Soros Beach Antiparos",
       "slotIntent": "Plage de Soros",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Generic Antiparos Beach Wikimedia file actually depicts north nude beach; it is not the Soros coast. Exact geolocated Soros image required.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Antiparos_Beach.jpg",
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "sourcePage": "https://www.thethinkingtraveller.com/greece/antiparos/villas/yvoni",
       "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Antiparos_Beach.jpg",
       "rejectedOriginalSha256": "ce34ba1db4396786b75617aa1ffb7a70c3d2655a1d5eb4a1dd8f2ac1194ab6fc",
-      "rejectedCandidateContext": "Generic Antiparos beach; do not claim it depicts Soros without exact geolocation"
+      "rejectedCandidateContext": "Generic Antiparos beach; do not claim it depicts Soros without exact geolocation",
+      "localPath": "/images/travel/antiparos-premium/destination/scene-6.webp",
+      "downloadUrl": "https://www.thethinkingtraveller.com/media/Resized/Greece%20Local%20Areas/Antiparos/Beaches/Soros/1920/shutterstock_764227255.jpg",
+      "candidateContext": "Actual Soros sandy beach and clear sea with hilly background; source path specifically identifies Soros",
+      "credit": "Documented exact place source: https://www.thethinkingtraveller.com/greece/antiparos/villas/yvoni",
+      "license": "Photographer commercial permission requires verification",
+      "sha256": "aa69a8bcc10faacea4d9887121811f24782302d97e76923797450a1cfc5e7ef7",
+      "dhash": "1111111111111111111111110111101111101001110000000001001000000001",
+      "bytes": 445540,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ]
     },
     {
       "key": "scene-7",
@@ -375,10 +539,27 @@
       "placeLabel": "Port et traversée Pounta",
       "searchQuery": "Antiparos port ferry Greece",
       "slotIntent": "Port et traversée Pounta",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original verified image yet; do not render."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/antiparos-premium/destination/scene-9.webp",
+      "sourcePage": "https://www.bonatsahouse.com/lifestyle/antiparos-travel-tips",
+      "downloadUrl": "https://cdn.prod.website-files.com/6626c3effbfcaaa0f48ca4b8/6626e2fb10d1a4be10ebb506_image%2035.webp",
+      "candidateContext": "Original Antiparos ferry quay photograph showing passenger and vehicle boats by island waterfront",
+      "credit": "Documented exact place source: https://www.bonatsahouse.com/lifestyle/antiparos-travel-tips",
+      "license": "Photographer commercial permission requires verification",
+      "sha256": "aa875342fe0434ce848d157a3f3cb586b0bc375545959321e7e761035eb447f7",
+      "dhash": "0000000110000111110100010010000101011011001110110101110100110111",
+      "bytes": 301126,
+      "originalSize": [
+        1950,
+        1068
+      ],
+      "outputSize": [
+        1750,
+        958
+      ]
     }
   ],
   "publicationBlockedReason": "All 21 precise original photos must pass visual and rights checks before publication."
