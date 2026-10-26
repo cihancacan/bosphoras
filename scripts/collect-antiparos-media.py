@@ -49,6 +49,10 @@ EXACT_HOTEL_URLS={
   ("https://www.myboutiquehotel.com/photos/112827/kastro-antiparos-antiparos-town-003-43692-2220x1400.jpg",
    "https://www.myboutiquehotel.com/en/boutique-hotels-antiparos-town/kastro-antiparos.html",
    "Kastro Boutique Resort genuine pool and cabana daybeds in sunlight")],
+ "kastro-boutique/view-2":[
+  ("https://www.myboutiquehotel.com/photos/112827/kastro-antiparos-antiparos-town-008-43694-1110x700.jpg",
+   "https://www.myboutiquehotel.com/en/boutique-hotels-antiparos-town/kastro-antiparos.html",
+   "True Kastro Boutique Resort poolside bar and stone pergola at blue hour (NOT a guestroom)")],
  "kastro-boutique/view-3":[
   ("https://www.myboutiquehotel.com/photos/112827/kastro-antiparos-antiparos-town-007-43693-2220x1400.jpg",
    "https://www.myboutiquehotel.com/en/boutique-hotels-antiparos-town/kastro-antiparos.html",

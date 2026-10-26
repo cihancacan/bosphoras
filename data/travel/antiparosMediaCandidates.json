@@ -279,12 +279,12 @@
       "key": "view-2",
       "property": "Kastro Boutique Resort Antiparos",
       "propertyKey": "kastro-boutique",
-      "slotIntent": "real suite or bedroom",
+      "slotIntent": "real Kastro Resort poolside bar with sandstone pergola at evening, distinct from daytime pool and shaded table; no fictional guestroom",
       "sourcePage": "https://www.antiparosgreece.com/",
       "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original verified image yet; do not render."
+      "visualQaWarning": "No verified hotel suite photograph available; source alternative for Kastro poolside bar must be independently visually inspected and correctly captioned."
     },
     {
       "key": "view-3",
