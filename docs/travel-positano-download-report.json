@@ -1,32 +1,18 @@
 {
-  "hotels": 6,
-  "scenes": 3,
+  "hotels": 11,
+  "scenes": 8,
   "missing": [
-    "hotel-poseidon/view-1",
     "hotel-poseidon/view-2",
-    "hotel-poseidon/view-3",
-    "villa-treville/view-1",
-    "villa-treville/view-2",
-    "villa-treville/view-3",
-    "destination/scene-1",
-    "destination/scene-5",
-    "destination/scene-6",
-    "destination/scene-7",
-    "destination/scene-8",
     "destination/scene-9"
   ],
   "errors": [
     {
-      "url": "https://sirenuse.it/en/rooms-and-suites/",
-      "error": "404 Client Error: Not Found for url: https://sirenuse.it/en/rooms-and-suites/"
+      "url": "https://www.hotelposeidonpositano.it/storage/1450/TOP-new/top_esterni8.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/storage/1450/TOP-new/top_esterni8.jpg"
     },
     {
-      "url": "https://sirenuse.it/en/restaurant-la-sponda/",
-      "error": "404 Client Error: Not Found for url: https://sirenuse.it/en/restaurant-la-sponda/"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/gallery/pool07-gallery.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/gallery/pool07-gallery.jpg"
     },
     {
       "url": "https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/TOP-new/top_piscina.jpg",
@@ -41,220 +27,8 @@
       "error": "404 Client Error: Not Found for url: https://cdn.blastness.biz/cdn-cgi/image/format=auto"
     },
     {
-      "url": "https://cdn.blastness.biz/cdn-cgi/image/format=auto",
-      "error": "404 Client Error: Not Found for url: https://cdn.blastness.biz/cdn-cgi/image/format=auto"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/gallery/Anteprima-3Â°-video.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/gallery/Anteprima-3%C3%82%C2%B0-video.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAA"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/gallery/Anteprima-3Â°-video.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/gallery/Anteprima-3%C3%82%C2%B0-video.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/h=812",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/h=812"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=456",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=456"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/fit=cover/storage/1450/TOP-new/top_piscina.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/fit=cover/storage/1450/TOP-new/top_piscina.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/GALLERY-new/gallery_piscina1.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/GALLERY-new/gallery_piscina1.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/GALLERY-new/gallery_piscina1.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/GALLERY-new/gallery_piscina1.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina_2.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina_2.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina_2.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina_2.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina3.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina3.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina3.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina3.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina4.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina4.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina4.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina4.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina2.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina2.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina2.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina2.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_esterni2.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_esterni2.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_esterni2.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_esterni2.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/defibrillatore.png",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/defibrillatore.png"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/ricarica.png",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/ricarica.png"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/pet.png",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/pet.png"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/maggiolino.png",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/maggiolino.png"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/gallery/Anteprima-3Â°-video.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/gallery/Anteprima-3%C3%82%C2%B0-video.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAA"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/gallery/Anteprima-3Â°-video.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/gallery/Anteprima-3%C3%82%C2%B0-video.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/h=812",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/h=812"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=456",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=456"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/fit=cover/storage/1450/TOP-new/top_esterni8.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/fit=cover/storage/1450/TOP-new/top_esterni8.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_esterni8.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_esterni8.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/fit=cover/storage/1450/TOP-new/top_ristorante15.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/fit=cover/storage/1450/TOP-new/top_ristorante15.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/TOP-new/top_ristorante15.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/TOP-new/top_ristorante15.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_ristorante15.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_ristorante15.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/TOP-new/top_vista2.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/TOP-new/top_vista2.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_vista2.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_vista2.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/GALLERY-new/gallery_Famiglia-in-Storia.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/GALLERY-new/gallery_Famiglia-in-Storia.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/GALLERY-new/gallery_Famiglia-in-Storia.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/GALLERY-new/gallery_Famiglia-in-Storia.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/GALLERY-new/gallery_porta.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/GALLERY-new/gallery_porta.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/GALLERY-new/gallery_porta.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/GALLERY-new/gallery_porta.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/gallery/gallery_scale.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/gallery/gallery_scale.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/gallery/gallery_scale.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/gallery/gallery_scale.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_esterni1.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_esterni1.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_esterni1.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_esterni1.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_pergola_ristorante.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_pergola_ristorante.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_pergola_ristorante.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_pergola_ristorante.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/defibrillatore.png",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/defibrillatore.png"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/ricarica.png",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/ricarica.png"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/pet.png",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/pet.png"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/maggiolino.png",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/loghi-footer/maggiolino.png"
-    },
-    {
-      "url": "https://cdn.blastness.biz/cdn-cgi/image/format=webp",
-      "error": "404 Client Error: Not Found for url: https://cdn.blastness.biz/cdn-cgi/image/format=webp"
-    },
-    {
-      "url": "https://cdn.blastness.biz/cdn-cgi/image/format=webp",
-      "error": "404 Client Error: Not Found for url: https://cdn.blastness.biz/cdn-cgi/image/format=webp"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/TOP-new/top_piscina.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/TOP-new/top_piscina.jpg"
-    },
-    {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/TOP-new/top_esterni8.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/TOP-new/top_esterni8.jpg"
+      "url": "https://cdn.blastness.biz/cdn-cgi/image/format=auto/storage/1450/",
+      "error": "404 Client Error: Not Found for url: https://cdn.blastness.biz/cdn-cgi/image/format=auto/storage/1450/"
     },
     {
       "url": "https://cdn.blastness.biz/cdn-cgi/image/format=auto",
@@ -265,76 +39,292 @@
       "error": "404 Client Error: Not Found for url: https://cdn.blastness.biz/cdn-cgi/image/format=auto"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/gallery/Anteprima-3Â°-video.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/gallery/Anteprima-3%C3%82%C2%B0-video.jpg"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/gallery/Anteprima-3Â°-video.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/gallery/Anteprima-3%C3%82%C2%B0-vide"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAA"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/gallery/Anteprima-3Â°-video.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/gallery/Anteprima-3%C3%82%C2%B0-video.jpg"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/gallery/Anteprima-3Â°-video.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/gallery/Anteprima-3%C3%82%C2%B0-vid"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/h=812",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/h=812"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/h=812",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/h=812"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/w=456",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=456"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=456",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=456"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/fit=cover/storage/1450/TOP-new/top_piscina.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/fit=cover/storage/1450/TOP-new/top_piscina.jpg"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/fit=cover/storage/1450/TOP-new/top_dettagli1.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/fit=cover/storage/1450/TOP-new/top_dettagli1.jpg"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina.jpg"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/TOP-new/top_dettagli1.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/TOP-new/top_dettagli1.jpg"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/GALLERY-new/gallery_piscina1.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/GALLERY-new/gallery_piscina1.jpg"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1920/storage/1450/TOP-new/top_dettagli1.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1920/storage/1450/TOP-new/top_dettagli1.jpg"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/GALLERY-new/gallery_piscina1.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1024/storage/1450/GALLERY-new/gallery_piscina1.jpg"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_piscina2.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_piscina2.jpg"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina_2.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina_2.jpg"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_piscina2.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_piscina2.jpg"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina_2.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina_2.jpg"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_piscina1.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_piscina1.jpg"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina3.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina3.jpg"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_piscina1.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_piscina1.jpg"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina3.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina3.jpg"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_piscina3.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_piscina3.jpg"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina4.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina4.jpg"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_piscina3.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_piscina3.jpg"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina4.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina4.jpg"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_piscina.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_piscina.jpg"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina2.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_piscina2.jpg"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_piscina.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_piscina.jpg"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina2.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=1920/storage/1450/TOP-new/top_piscina2.jpg"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_drone3.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_drone3.jpg"
     },
     {
-      "url": "https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_esterni2.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/w=680/storage/1450/TOP-new/top_esterni2.jpg"
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_drone3.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_drone3.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_esterni21.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_esterni21.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_esterni21.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_esterni21.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/Vista_esterno_da_drone_ridimensionata.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/Vista_esterno_da_drone_r"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/Vista_esterno_da_drone_ridimensionata.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/Vista_esterno_da_drone_"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_entrata9.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_entrata9.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_entrata9.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_entrata9.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/gallery/ingresso01-gallery.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/gallery/ingresso01-gallery.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/gallery/ingresso01-gallery.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/gallery/ingresso01-gallery.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_Lobby-at-Hotel-Poseidon---Positano.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_Lobby-at-Hotel-P"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_Lobby-at-Hotel-Poseidon---Positano.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_Lobby-at-Hotel-"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_reception1.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_reception1.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_reception1.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_reception1.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_interni2.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_interni2.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_interni2.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_interni2.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_interni21.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_interni21.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_interni21.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_interni21.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/Gallery---Hotel-Poseidon---Positano1.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/Gallery---Hotel-Poseidon"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/Gallery---Hotel-Poseidon---Positano1.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/Gallery---Hotel-Poseido"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery---Hotel-Poseidon---Positano.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery---Hotel-Poseidon"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery---Hotel-Poseidon---Positano.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery---Hotel-Poseido"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_ristorante.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_ristorante.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_ristorante.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_ristorante.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_ristorante14.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_ristorante14.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_ristorante14.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_ristorante14.jp"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_wow-suite10.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_wow-suite10.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_wow-suite10.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_wow-suite10.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/gallery/superior06-gallery.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/gallery/superior06-gallery.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/gallery/superior06-gallery.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/gallery/superior06-gallery.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_superior-suite8.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_superior-suite8."
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_superior-suite8.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_superior-suite8"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_superior-junior-suite3.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_superior-junior-"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_superior-junior-suite3.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_superior-junior"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_superior-junior-suite4.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_superior-junior-"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_superior-junior-suite4.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_superior-junior"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_superior-room1.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_superior-room1.j"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_superior-room1.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_superior-room1."
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_deluxe-junior-suite.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_deluxe-junior-su"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_deluxe-junior-suite.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_deluxe-junior-s"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_standard-junior-suite3.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_standard-junior-"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_standard-junior-suite3.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_standard-junior"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_liliana-suite14.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_liliana-suite14."
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_liliana-suite14.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_liliana-suite14"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_liliana-suite9.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_liliana-suite9.j"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_liliana-suite9.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_liliana-suite9."
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_liliana-suite11.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_liliana-suite11."
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_liliana-suite11.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_liliana-suite11"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_superior-suite.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_superior-suite.j"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_superior-suite.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_superior-suite."
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_standard-room.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_standard-room.jp"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_standard-room.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_standard-room.j"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_wow-suite5.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/GALLERY-new/gallery_wow-suite5.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_wow-suite5.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/GALLERY-new/gallery_wow-suite5.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/TOP-new/top_wow_room.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=680/storage/1450/TOP-new/top_wow_room.jpg"
+    },
+    {
+      "url": "https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/TOP-new/top_wow_room.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.hotelposeidonpositano.it/en/gallery/w=1024/storage/1450/TOP-new/top_wow_room.jpg"
     }
   ]
 }

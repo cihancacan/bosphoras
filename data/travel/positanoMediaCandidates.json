@@ -2,8 +2,8 @@
   "destination": "positano",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 4,
-  "downloadedDestinationCandidates": 3,
+  "downloadedHotelCandidates": 11,
+  "downloadedDestinationCandidates": 8,
   "hotels": [
     {
       "key": "view-1",
@@ -37,39 +37,87 @@
       "property": "Le Sirenuse",
       "propertyKey": "le-sirenuse",
       "slotIntent": "real guestroom or suite",
-      "sourcePage": "https://sirenuse.it/en/",
-      "status": "missing",
+      "sourcePage": "https://sirenuse.it/en/gallery/rooms-suites/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Image is Li Galli islands rather than an actual hotel suite.",
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
       "rejectedSource": "https://sirenuse.it/media/2z2igrsa/li-galli-islands-14-copy.jpg?width=1252&height=940&format=webp&v=1da002525f0a9d0",
       "rejectedOriginalSha256": "42345e5f73736219145196dd305bc80237e0ed80a8af5a184b5e6c9ded48c698",
-      "rejectedCandidateContext": "   "
+      "rejectedCandidateContext": "   ",
+      "localPath": "/images/travel/positano-premium/le-sirenuse/view-2.webp",
+      "downloadUrl": "https://sirenuse.it/media/0fdffs1o/le-sirenuse_room_deluxe-executive-aaq_0964.jpg?width=1632&height=1088&format=webp&v=1d70b5d35e8c3f0",
+      "candidateContext": "   ",
+      "credit": "Official source webpage; photographer rights to verify",
+      "license": "Copyright held by source/photographer",
+      "sha256": "1c153ffe34b0a64115d7658342cb9b208840f686717e1eb6f9b3dc7eb23427b9",
+      "dhash": "0011010100001110010010101000101110101010001010110001100101101111",
+      "bytes": 157410,
+      "originalSize": [
+        1632,
+        1088
+      ],
+      "outputSize": [
+        1632,
+        1088
+      ]
     },
     {
       "key": "view-3",
       "property": "Le Sirenuse",
       "propertyKey": "le-sirenuse",
       "slotIntent": "actual terrace pool dining setting",
-      "sourcePage": "https://sirenuse.it/en/",
-      "status": "missing",
+      "sourcePage": "https://sirenuse.it/en/gallery/rooms-suites/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Image shows a separate Le Sirenuse Mare facility rather than the in-hotel restaurant or pool.",
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
       "rejectedSource": "https://sirenuse.it/media/4jpce5b5/le-sirenuse-mare-0a8a2366.jpg?rxy=0.7982456140350878",
       "rejectedOriginalSha256": "e79184d7b7d2738e2bab00e1d900cae0e22955f67186fd4c6bc5ba32d8c156aa",
-      "rejectedCandidateContext": "   "
+      "rejectedCandidateContext": "   ",
+      "localPath": "/images/travel/positano-premium/le-sirenuse/view-3.webp",
+      "downloadUrl": "https://sirenuse.it/media/loqhtgs5/le-sirenuse_room_junior-suite-superior-b1j_0324.jpg?width=1632&height=1088&format=webp&v=1d70b5f0d9a3e90",
+      "candidateContext": "   ",
+      "credit": "Official source webpage; photographer rights to verify",
+      "license": "Copyright held by source/photographer",
+      "sha256": "8e50abca610d8c8cdf1d222e057e234b26d804c28e216440ba264336952b3a0b",
+      "dhash": "0100000101000011000100110001011100101101001100100011001100111001",
+      "bytes": 271030,
+      "originalSize": [
+        1632,
+        1088
+      ],
+      "outputSize": [
+        1632,
+        1088
+      ]
     },
     {
       "key": "view-1",
       "property": "Hotel Poseidon Positano",
       "propertyKey": "hotel-poseidon",
       "slotIntent": "actual sunlit hotel exterior",
-      "sourcePage": "https://www.hotelposeidonpositano.it/en/",
-      "status": "missing",
+      "sourcePage": "https://smallandeleganthotels.com/destinations/italy/amalfi-coast-sorrento-positano/hotel-poseidon-positano/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/hotel-poseidon/view-1.webp",
+      "downloadUrl": "https://smallandeleganthotels.com/images/blog/Poseidon_-_sun_terrace_2_%287%29.jpg",
+      "candidateContext": "Authentic sunlit Hotel Poseidon pool terrace, striped parasols and sun loungers",
+      "credit": "Exact property image linked at https://smallandeleganthotels.com/destinations/italy/amalfi-coast-sorrento-positano/hotel-poseidon-positano/",
+      "license": "Publisher/source licence check required",
+      "sha256": "008ec53e1ea2fe70304f78377ff941d98621ae57000df964f400c4c48e439ad5",
+      "dhash": "1101001111111100111011011001011111010011110100111110011110000011",
+      "bytes": 565132,
+      "originalSize": [
+        4000,
+        2667
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ]
     },
     {
       "key": "view-2",
@@ -87,44 +135,108 @@
       "property": "Hotel Poseidon Positano",
       "propertyKey": "hotel-poseidon",
       "slotIntent": "actual terrace pool dining setting",
-      "sourcePage": "https://www.hotelposeidonpositano.it/en/",
-      "status": "missing",
+      "sourcePage": "https://plannedtowhere.com/blog/best-hotels-positano",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/hotel-poseidon/view-3.webp",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/663b6e06900de569cb5eff86/1722093018761-YQQW4QGKR9TFV8FJP6A6/poseidon%2Bcocktail%2Bhour.jpg",
+      "candidateContext": "Real Hotel Poseidon dining terrace with illuminated pool at blue hour",
+      "credit": "Exact property image linked at https://plannedtowhere.com/blog/best-hotels-positano",
+      "license": "Publisher/source licence check required",
+      "sha256": "f526d746010468be4cce15dcffe2b1af07f46e403fc467ae6e85dbf7e874f966",
+      "dhash": "0101001000010111100010010010000101100001011010010000011100001111",
+      "bytes": 152804,
+      "originalSize": [
+        1211,
+        800
+      ],
+      "outputSize": [
+        1211,
+        800
+      ]
     },
     {
       "key": "view-1",
       "property": "Villa TreVille",
       "propertyKey": "villa-treville",
       "slotIntent": "actual sunlit hotel exterior",
-      "sourcePage": "https://villatreville.com/",
-      "status": "missing",
+      "sourcePage": "https://www.americanexpress.com/es-es/travel/discover/property/Italy/Positano/Villa-Treville",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/villa-treville/view-1.webp",
+      "downloadUrl": "https://www.americanexpress.com/en-us/travel/discover/photos/482955/92265/1200/DSC06641.jpg",
+      "candidateContext": "Real Villa TreVille pool overlooking Positano from a private guest terrace",
+      "credit": "Exact property image linked at https://www.americanexpress.com/es-es/travel/discover/property/Italy/Positano/Villa-Treville",
+      "license": "Publisher/source licence check required",
+      "sha256": "f55d8b8c507810c58c0a49962a57073634f47dda80ad75251856fc4cc832c9a6",
+      "dhash": "1010110101000110001000100010001000110010000100110001001101100111",
+      "bytes": 279586,
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ]
     },
     {
       "key": "view-2",
       "property": "Villa TreVille",
       "propertyKey": "villa-treville",
       "slotIntent": "real guestroom or suite",
-      "sourcePage": "https://villatreville.com/",
-      "status": "missing",
+      "sourcePage": "https://theweek.com/culture-life/travel/villa-treville-positano-a-glamorous-sanctuary-on-the-amalfi-coast",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/villa-treville/view-2.webp",
+      "downloadUrl": "https://cdn.mos.cms.futurecdn.net/P4QodJ2zzEbAUCRJBmapJV-1920-80.png",
+      "candidateContext": "Actual turquoise and orange mosaic living room in the Callas suite of Villa TreVille",
+      "credit": "Exact property image linked at https://theweek.com/culture-life/travel/villa-treville-positano-a-glamorous-sanctuary-on-the-amalfi-coast",
+      "license": "Publisher/source licence check required",
+      "sha256": "72c8d745d508e620513f96b500d583421c97acec2cc21ba994aa63b34b33ba29",
+      "dhash": "0000000100000100010011000100110000011101011100010100100110011100",
+      "bytes": 294922,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1750,
+        984
+      ]
     },
     {
       "key": "view-3",
       "property": "Villa TreVille",
       "propertyKey": "villa-treville",
       "slotIntent": "actual terrace pool dining setting",
-      "sourcePage": "https://villatreville.com/",
-      "status": "missing",
+      "sourcePage": "https://villatreville.com/accommodations/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/villa-treville/view-3.webp",
+      "downloadUrl": "https://villatreville.com/wp-content/uploads/2024/02/Photo-Dan-Kullberg-to-Villa-Treville-2018-FINAL-8282.webp",
+      "candidateContext": "   ",
+      "credit": "Official source webpage; photographer rights to verify",
+      "license": "Copyright held by source/photographer",
+      "sha256": "6b80a2d521581e8d0ea1e1318fd825cfd40a505aa2512635d7db6aea95f4e4fb",
+      "dhash": "0011001000110001001100110011011000110011011100110011011100110011",
+      "bytes": 93476,
+      "originalSize": [
+        2560,
+        1700
+      ],
+      "outputSize": [
+        1750,
+        1162
+      ]
     },
     {
       "key": "view-1",
@@ -214,10 +326,27 @@
       "placeLabel": "Positano pastel village and Spiaggia Grande",
       "searchQuery": "Positano village Spiaggia Grande sunny panoramic",
       "slotIntent": "Positano pastel village and Spiaggia Grande",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:AmalfiküstePositano.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Amalfik%C3%BCstePositano.jpg/1920px-Amalfik%C3%BCstePositano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "True Positano village viewed from coastline, bright daylight",
+      "credit": "Joergsam · CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "sha256": "bf1cd9af842f2b413ce55cd28f366107c1c08fa4b52c1d7321dbce5c26ca047a",
+      "dhash": "0100000000101100011001000011000100011001000100010011000100010001",
+      "bytes": 335776,
+      "originalSize": [
+        1920,
+        1237
+      ],
+      "outputSize": [
+        1750,
+        1127
+      ]
     },
     {
       "key": "scene-2",
@@ -305,40 +434,108 @@
       "placeLabel": "Via Pasitea hillside street",
       "searchQuery": "Positano Via Pasitea road panorama",
       "slotIntent": "Via Pasitea hillside street",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Positano,_Amalfi_Coast,_Italy_(22286060906).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Positano%2C_Amalfi_Coast%2C_Italy_%2822286060906%29.jpg/1920px-Positano%2C_Amalfi_Coast%2C_Italy_%2822286060906%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "Historical true Via Pasitea building and road perspective in Positano",
+      "credit": "VV Nincic from Toronto, Canada · CC BY 2.0",
+      "license": "CC BY 2.0",
+      "sha256": "4dde14f1e5db7de5e865fe5cb66ba3c325e6aa50ee35098a19fed06a32bc3fdb",
+      "dhash": "0011000000000011011100110110001110001011001111000111100110101001",
+      "bytes": 231646,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-6",
       "placeLabel": "Arienzo coves below the cliff",
       "searchQuery": "Positano Arienzo beach Amalfi",
       "slotIntent": "Arienzo coves below the cliff",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:84017_Arienzo_SA,_Italy_-_panoramio_(1).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/84017_Arienzo_SA%2C_Italy_-_panoramio_%281%29.jpg/1920px-84017_Arienzo_SA%2C_Italy_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "Authentic Arienzo Positano coast scene geolocated on Wikimedia Commons",
+      "credit": "villlamania · CC BY 3.0",
+      "license": "CC BY 3.0",
+      "sha256": "186eb916d4fc9a73b25b450bf7201a6642d3a8e22a13f6578d577c3ddb262ad0",
+      "dhash": "1111111011111110100100001101101111011010100111101000110110111000",
+      "bytes": 255662,
+      "originalSize": [
+        1920,
+        1392
+      ],
+      "outputSize": [
+        1655,
+        1200
+      ]
     },
     {
       "key": "scene-7",
       "placeLabel": "Laurito coastline",
       "searchQuery": "Positano Laurito beach coastline",
       "slotIntent": "Laurito coastline",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/destination/scene-7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Il_San_Pietro_di_Positano-14460805246.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Il_San_Pietro_di_Positano-14460805246.jpg/1920px-Il_San_Pietro_di_Positano-14460805246.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "True San Pietro di Positano and Laurito coast from nearby Praiano",
+      "credit": "Marco Assini · CC BY-SA 2.0",
+      "license": "CC BY-SA 2.0",
+      "sha256": "3c24bb212056e60f527243701d2f12c0a68a05d44f27f76c233b4315892a1e7a",
+      "dhash": "0001001100000111001000100100001100000100001000001101100001110100",
+      "bytes": 479428,
+      "originalSize": [
+        1920,
+        1281
+      ],
+      "outputSize": [
+        1750,
+        1168
+      ]
     },
     {
       "key": "scene-8",
       "placeLabel": "Positano ceramics and village streets",
       "searchQuery": "Positano narrow streets colourful ceramic",
       "slotIntent": "Positano ceramics and village streets",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/destination/scene-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Positano_(32632824125).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Positano_%2832632824125%29.jpg/1920px-Positano_%2832632824125%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "Real Positano village shopping streets and colourful houses, subject identity to inspect",
+      "credit": "VV Nincic from Toronto, Canada · CC BY 2.0",
+      "license": "CC BY 2.0",
+      "sha256": "9c280c5586833240115a76e01922848547488f482cbeb17c0917ef58904661ac",
+      "dhash": "0000000100000100100101011001100001000100100011000001110000011111",
+      "bytes": 395872,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ]
     },
     {
       "key": "scene-9",
