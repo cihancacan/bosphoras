@@ -22,7 +22,8 @@ REGISTRY=[
  ("lakeComo","lake-como","Lake Como"),
  ("capri","capri","Capri"),
  ("positano","positano","Positano"),
- ("ravello","ravello","Ravello"), # no approval implied by a green or orange preview without manifest evidence
+ ("ravello","ravello","Ravello"),
+ ("mykonos","mykonos","Mykonos"), # no approval implied by a green or orange preview without manifest evidence
 ]
 OUT=Path("docs/travel-photo-contact-sheets");OUT.mkdir(parents=True,exist_ok=True)
 try:
