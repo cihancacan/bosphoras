@@ -1,6 +1,6 @@
 {
   "destination": "positano",
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
@@ -12,13 +12,13 @@
       "slotIntent": "actual sunlit hotel exterior",
       "sourcePage": "https://sirenuse.it/en/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/positano-premium/le-sirenuse/view-1.webp",
       "downloadUrl": "https://sirenuse.it/media/o0kpl5si/le_sirenuse_drone-1783.jpg?width=1252&height=940&format=webp&v=1da9cabfef59920",
       "candidateContext": "   ",
-      "credit": "Official source webpage; photographer rights to verify",
+      "credit": "Le Sirenuse · official property website; photographer unspecified",
       "license": "Copyright held by source/photographer",
       "sha256": "18478fe1f06afc93d82b22f90ac0a7e1b3e775493c9ddc4b91646433a9fd250e",
       "dhash": "1110110001101011010011111011110011011010011001101101110110100001",
@@ -30,7 +30,15 @@
       "outputSize": [
         1252,
         940
-      ]
+      ],
+      "frCaption": "Piscine à mosaïque bleu azur de l’hôtel Le Sirenuse, vue en plongée sur les terrasses de Positano.",
+      "enCaption": "Overhead view of the blue mosaic swimming pool at Le Sirenuse, Positano.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://sirenuse.it/en/"
     },
     {
       "key": "view-2",
@@ -39,16 +47,16 @@
       "slotIntent": "real guestroom or suite",
       "sourcePage": "https://sirenuse.it/en/gallery/rooms-suites/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "rejectedSource": "https://sirenuse.it/media/2z2igrsa/li-galli-islands-14-copy.jpg?width=1252&height=940&format=webp&v=1da002525f0a9d0",
       "rejectedOriginalSha256": "42345e5f73736219145196dd305bc80237e0ed80a8af5a184b5e6c9ded48c698",
       "rejectedCandidateContext": "   ",
       "localPath": "/images/travel/positano-premium/le-sirenuse/view-2.webp",
       "downloadUrl": "https://sirenuse.it/media/0fdffs1o/le-sirenuse_room_deluxe-executive-aaq_0964.jpg?width=1632&height=1088&format=webp&v=1d70b5d35e8c3f0",
       "candidateContext": "   ",
-      "credit": "Official source webpage; photographer rights to verify",
+      "credit": "Le Sirenuse · official property website; photographer unspecified",
       "license": "Copyright held by source/photographer",
       "sha256": "1c153ffe34b0a64115d7658342cb9b208840f686717e1eb6f9b3dc7eb23427b9",
       "dhash": "0011010100001110010010101000101110101010001010110001100101101111",
@@ -60,7 +68,15 @@
       "outputSize": [
         1632,
         1088
-      ]
+      ],
+      "frCaption": "Suite lumineuse du Sirenuse aux tons ivoire, avec mobilier classique et rideaux blancs.",
+      "enCaption": "Bright ivory-toned guest suite at Le Sirenuse, with classical furnishings and soft white curtains.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://sirenuse.it/en/gallery/rooms-suites/"
     },
     {
       "key": "view-3",
@@ -69,16 +85,16 @@
       "slotIntent": "actual terrace pool dining setting",
       "sourcePage": "https://sirenuse.it/en/gallery/rooms-suites/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "rejectedSource": "https://sirenuse.it/media/4jpce5b5/le-sirenuse-mare-0a8a2366.jpg?rxy=0.7982456140350878",
       "rejectedOriginalSha256": "e79184d7b7d2738e2bab00e1d900cae0e22955f67186fd4c6bc5ba32d8c156aa",
       "rejectedCandidateContext": "   ",
       "localPath": "/images/travel/positano-premium/le-sirenuse/view-3.webp",
       "downloadUrl": "https://sirenuse.it/media/loqhtgs5/le-sirenuse_room_junior-suite-superior-b1j_0324.jpg?width=1632&height=1088&format=webp&v=1d70b5f0d9a3e90",
       "candidateContext": "   ",
-      "credit": "Official source webpage; photographer rights to verify",
+      "credit": "Le Sirenuse · official property website; photographer unspecified",
       "license": "Copyright held by source/photographer",
       "sha256": "8e50abca610d8c8cdf1d222e057e234b26d804c28e216440ba264336952b3a0b",
       "dhash": "0100000101000011000100110001011100101101001100100011001100111001",
@@ -90,7 +106,15 @@
       "outputSize": [
         1632,
         1088
-      ]
+      ],
+      "frCaption": "Terrasse du Sirenuse avec transats blancs et vue sur les maisons de Positano et la mer.",
+      "enCaption": "Le Sirenuse terrace with white loungers overlooking Positano’s hillside and the sea.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://sirenuse.it/en/gallery/rooms-suites/"
     },
     {
       "key": "view-1",
@@ -99,13 +123,13 @@
       "slotIntent": "actual sunlit hotel exterior",
       "sourcePage": "https://smallandeleganthotels.com/destinations/italy/amalfi-coast-sorrento-positano/hotel-poseidon-positano/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/positano-premium/hotel-poseidon/view-1.webp",
       "downloadUrl": "https://smallandeleganthotels.com/images/blog/Poseidon_-_sun_terrace_2_%287%29.jpg",
       "candidateContext": "Authentic sunlit Hotel Poseidon pool terrace, striped parasols and sun loungers",
-      "credit": "Exact property image linked at https://smallandeleganthotels.com/destinations/italy/amalfi-coast-sorrento-positano/hotel-poseidon-positano/",
+      "credit": "Hotel Poseidon Positano · source publication; photographer unspecified",
       "license": "Publisher/source licence check required",
       "sha256": "008ec53e1ea2fe70304f78377ff941d98621ae57000df964f400c4c48e439ad5",
       "dhash": "1101001111111100111011011001011111010011110100111110011110000011",
@@ -117,7 +141,15 @@
       "outputSize": [
         1750,
         1167
-      ]
+      ],
+      "frCaption": "Terrasse ensoleillée de l’Hotel Poseidon et ses transats face aux hauteurs de Positano.",
+      "enCaption": "Sunny terrace at Hotel Poseidon, with loungers facing Positano’s hillside.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://smallandeleganthotels.com/destinations/italy/amalfi-coast-sorrento-positano/hotel-poseidon-positano/"
     },
     {
       "key": "view-2",
@@ -126,13 +158,13 @@
       "slotIntent": "real guestroom or suite",
       "sourcePage": "https://www.hotelposeidonpositano.it/en/rooms-hotel-in-positano/wow-suite",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/positano-premium/hotel-poseidon/view-2.webp",
       "downloadUrl": "https://cdn.blastness.biz/media/1450/TOP-new/thumbs/full/top_wow_room.jpg",
       "candidateContext": "Authentic Hotel Poseidon spacious WOW! Suite with vibrant rugs, terrace and red curtains",
-      "credit": "Exact property image linked at https://www.hotelposeidonpositano.it/en/rooms-hotel-in-positano/wow-suite",
+      "credit": "Hotel Poseidon Positano · source publication; photographer unspecified",
       "license": "Publisher/source licence check required",
       "sha256": "85082bc898c4c721e826b62fb0108fa8d8dedec7085f6dc1da0026bef9b704e5",
       "dhash": "0010001100111011001110010011010101100100001011001000110111001101",
@@ -144,7 +176,15 @@
       "outputSize": [
         1750,
         984
-      ]
+      ],
+      "frCaption": "Suite aux rideaux roses de l’Hotel Poseidon, terrasse et tapis aux motifs colorés.",
+      "enCaption": "Hotel Poseidon guest suite with pink curtains, colourful rugs and an opening to its terrace.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://www.hotelposeidonpositano.it/en/rooms-hotel-in-positano/wow-suite"
     },
     {
       "key": "view-3",
@@ -153,13 +193,13 @@
       "slotIntent": "actual terrace pool dining setting",
       "sourcePage": "https://plannedtowhere.com/blog/best-hotels-positano",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/positano-premium/hotel-poseidon/view-3.webp",
       "downloadUrl": "https://images.squarespace-cdn.com/content/v1/663b6e06900de569cb5eff86/1722093018761-YQQW4QGKR9TFV8FJP6A6/poseidon%2Bcocktail%2Bhour.jpg",
       "candidateContext": "Real Hotel Poseidon dining terrace with illuminated pool at blue hour",
-      "credit": "Exact property image linked at https://plannedtowhere.com/blog/best-hotels-positano",
+      "credit": "Hotel Poseidon Positano · source publication; photographer unspecified",
       "license": "Publisher/source licence check required",
       "sha256": "f526d746010468be4cce15dcffe2b1af07f46e403fc467ae6e85dbf7e874f966",
       "dhash": "0101001000010111100010010010000101100001011010010000011100001111",
@@ -171,7 +211,15 @@
       "outputSize": [
         1211,
         800
-      ]
+      ],
+      "frCaption": "Piscine et terrasse du Poseidon au crépuscule, avec tables dressées dominant la côte.",
+      "enCaption": "Hotel Poseidon’s pool and dining terrace in the early evening overlooking the coast.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://plannedtowhere.com/blog/best-hotels-positano"
     },
     {
       "key": "view-1",
@@ -180,13 +228,13 @@
       "slotIntent": "actual sunlit hotel exterior",
       "sourcePage": "https://www.americanexpress.com/es-es/travel/discover/property/Italy/Positano/Villa-Treville",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/positano-premium/villa-treville/view-1.webp",
       "downloadUrl": "https://www.americanexpress.com/en-us/travel/discover/photos/482955/92265/1200/DSC06641.jpg",
       "candidateContext": "Real Villa TreVille pool overlooking Positano from a private guest terrace",
-      "credit": "Exact property image linked at https://www.americanexpress.com/es-es/travel/discover/property/Italy/Positano/Villa-Treville",
+      "credit": "Villa TreVille · source publication; photographer unspecified",
       "license": "Publisher/source licence check required",
       "sha256": "f55d8b8c507810c58c0a49962a57073634f47dda80ad75251856fc4cc832c9a6",
       "dhash": "1010110101000110001000100010001000110010000100110001001101100111",
@@ -198,7 +246,15 @@
       "outputSize": [
         1200,
         800
-      ]
+      ],
+      "frCaption": "Petite piscine privée de Villa TreVille sous une pergola, dans les jardins d’Arienzo.",
+      "enCaption": "Private plunge pool at Villa TreVille, beneath a pergola in its Arienzo estate gardens.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://www.americanexpress.com/es-es/travel/discover/property/Italy/Positano/Villa-Treville"
     },
     {
       "key": "view-2",
@@ -207,13 +263,13 @@
       "slotIntent": "real guestroom or suite",
       "sourcePage": "https://theweek.com/culture-life/travel/villa-treville-positano-a-glamorous-sanctuary-on-the-amalfi-coast",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/positano-premium/villa-treville/view-2.webp",
       "downloadUrl": "https://cdn.mos.cms.futurecdn.net/P4QodJ2zzEbAUCRJBmapJV-1920-80.png",
       "candidateContext": "Actual turquoise and orange mosaic living room in the Callas suite of Villa TreVille",
-      "credit": "Exact property image linked at https://theweek.com/culture-life/travel/villa-treville-positano-a-glamorous-sanctuary-on-the-amalfi-coast",
+      "credit": "Villa TreVille · source publication; photographer unspecified",
       "license": "Publisher/source licence check required",
       "sha256": "72c8d745d508e620513f96b500d583421c97acec2cc21ba994aa63b34b33ba29",
       "dhash": "0000000100000100010011000100110000011101011100010100100110011100",
@@ -225,7 +281,15 @@
       "outputSize": [
         1750,
         984
-      ]
+      ],
+      "frCaption": "Suite de Villa TreVille décorée en turquoise et blanc, mobilier méditerranéen et céramique.",
+      "enCaption": "Turquoise-and-white guest suite at Villa TreVille featuring Mediterranean furnishings.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://theweek.com/culture-life/travel/villa-treville-positano-a-glamorous-sanctuary-on-the-amalfi-coast"
     },
     {
       "key": "view-3",
@@ -234,13 +298,13 @@
       "slotIntent": "actual terrace pool dining setting",
       "sourcePage": "https://villatreville.com/accommodations/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/positano-premium/villa-treville/view-3.webp",
       "downloadUrl": "https://villatreville.com/wp-content/uploads/2024/02/Photo-Dan-Kullberg-to-Villa-Treville-2018-FINAL-8282.webp",
       "candidateContext": "   ",
-      "credit": "Official source webpage; photographer rights to verify",
+      "credit": "Villa TreVille · official property website; photographer unspecified",
       "license": "Copyright held by source/photographer",
       "sha256": "6b80a2d521581e8d0ea1e1318fd825cfd40a505aa2512635d7db6aea95f4e4fb",
       "dhash": "0011001000110001001100110011011000110011011100110011011100110011",
@@ -252,7 +316,15 @@
       "outputSize": [
         1750,
         1162
-      ]
+      ],
+      "frCaption": "Façade rose pâle et détails architecturaux de Villa TreVille ouverts sur la côte.",
+      "enCaption": "Pale pink façade and architectural details at Villa TreVille above the coastline.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://villatreville.com/accommodations/"
     },
     {
       "key": "view-1",
@@ -261,16 +333,16 @@
       "slotIntent": "actual sunlit hotel exterior",
       "sourcePage": "https://www.townandcountrymag.com/leisure/travel-guide/a8136/il-san-pietro-amalfi/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "rejectedSource": "https://www.ilsanpietro.com/wp-content/uploads/2025/12/Kitchen_Zass_restaurant_at_il_san_pietro_positano_17-1024x613.jpg",
       "rejectedOriginalSha256": "3a1448e725944792417987ab419c2bab916396a808edef3105e685efcceea51c",
       "rejectedCandidateContext": "Kitchen Zass restaurant at il san pietro positano 17   ",
       "localPath": "/images/travel/positano-premium/il-san-pietro/view-1.webp",
       "downloadUrl": "https://hips.hearstapps.com/townandcountry/assets/16/40/1475785304-01panoramic-view.jpg",
       "candidateContext": "Real sunny aerial panorama of Il San Pietro hotel perched over deep blue water",
-      "credit": "Exact property image linked at https://www.townandcountrymag.com/leisure/travel-guide/a8136/il-san-pietro-amalfi/",
+      "credit": "Il San Pietro di Positano · source publication; photographer unspecified",
       "license": "Publisher/source licence check required",
       "sha256": "dc24a91313a4eec4ffed95510354593932d613b016d6029ab7b96e23a879b76e",
       "dhash": "1011001010100110101000011100000111000100110000010111001100001001",
@@ -282,7 +354,15 @@
       "outputSize": [
         1750,
         1166
-      ]
+      ],
+      "frCaption": "Il San Pietro de Positano accroché à la falaise au-dessus de la mer Tyrrhénienne.",
+      "enCaption": "Aerial view of Il San Pietro di Positano on the rocky headland above the Tyrrhenian Sea.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://www.townandcountrymag.com/leisure/travel-guide/a8136/il-san-pietro-amalfi/"
     },
     {
       "key": "view-2",
@@ -291,13 +371,13 @@
       "slotIntent": "real guestroom or suite",
       "sourcePage": "https://www.ilsanpietro.com/rooms-suites/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/positano-premium/il-san-pietro/view-2.webp",
       "downloadUrl": "https://www.ilsanpietro.com/wp-content/uploads/2020/03/Classic_room_at_il_san_pietro_positano_4-1024x683.jpg",
       "candidateContext": "Classic room at il san pietro positano   ",
-      "credit": "Official source webpage; photographer rights to verify",
+      "credit": "Il San Pietro di Positano · official property website; photographer unspecified",
       "license": "Copyright held by source/photographer",
       "sha256": "e5788f4bf44f02a840bb810371ee2a73172ba68c608127ae239bef51f50a23ee",
       "dhash": "0100001001101100011001000110001000100001001011000001010101101111",
@@ -309,7 +389,15 @@
       "outputSize": [
         1024,
         683
-      ]
+      ],
+      "frCaption": "Chambre du San Pietro ouvrant sur une terrasse avec vue sur la mer et les arbres.",
+      "enCaption": "Il San Pietro guestroom opening onto a tree-framed sea-view terrace.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://www.ilsanpietro.com/rooms-suites/"
     },
     {
       "key": "view-3",
@@ -318,13 +406,13 @@
       "slotIntent": "actual terrace pool dining setting",
       "sourcePage": "https://www.ilsanpietro.com/rooms-suites/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/positano-premium/il-san-pietro/view-3.webp",
       "downloadUrl": "https://www.ilsanpietro.com/wp-content/uploads/2020/03/DELUXE_36_2-1024x683.webp",
       "candidateContext": "DELUXE rooms at the hotel San Pietro di Positano   ",
-      "credit": "Official source webpage; photographer rights to verify",
+      "credit": "Il San Pietro di Positano · official property website; photographer unspecified",
       "license": "Copyright held by source/photographer",
       "sha256": "0b8e2db538f2ada56544575ac1bfdbd82771a86d6c45a9cbf0610d77632a7602",
       "dhash": "1100000111001011010101100011000011111000011100000001100100001011",
@@ -336,7 +424,15 @@
       "outputSize": [
         1024,
         683
-      ]
+      ],
+      "frCaption": "Chambre blanche d’Il San Pietro avec balcon privatif face au littoral de Laurito.",
+      "enCaption": "White guestroom at Il San Pietro with private balcony overlooking the Laurito coastline.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://www.ilsanpietro.com/rooms-suites/"
     }
   ],
   "destinationScenes": [
@@ -346,9 +442,9 @@
       "searchQuery": "Positano village Spiaggia Grande sunny panoramic",
       "slotIntent": "Positano pastel village and Spiaggia Grande",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "sourcePage": "https://www.celebritycruises.com/blog/things-to-do-in-positano",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Amalfik%C3%BCstePositano.jpg/1920px-Amalfik%C3%BCstePositano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "bf1cd9af842f2b413ce55cd28f366107c1c08fa4b52c1d7321dbce5c26ca047a",
@@ -356,7 +452,7 @@
       "localPath": "/images/travel/positano-premium/destination/scene-1.webp",
       "downloadUrl": "https://www.celebritycruises.com/blog/content/uploads/2022/11/things-to-do-in-positano-cta.jpg",
       "candidateContext": "Sunlit colorful Positano village and bay from the sea",
-      "credit": "Source image from https://www.celebritycruises.com/blog/things-to-do-in-positano",
+      "credit": "Positano pastel village and Spiaggia Grande · source publication; photographer unspecified",
       "license": "Publisher/photographer permission requires verification",
       "sha256": "828f473bd5ce4fc44c506cdf4de5b680a240afc4765b47887d08a8e93b8eef92",
       "dhash": "0001011010100100111000010101110001111100101110000001100001001000",
@@ -368,7 +464,15 @@
       "outputSize": [
         1750,
         737
-      ]
+      ],
+      "frCaption": "Le village de Positano, façades pastel étagées au-dessus de la mer turquoise.",
+      "enCaption": "Positano’s pastel hillside village rising above a vivid turquoise bay.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://www.celebritycruises.com/blog/things-to-do-in-positano"
     },
     {
       "key": "scene-2",
@@ -376,9 +480,9 @@
       "searchQuery": "Positano Santa Maria Assunta dome seaside",
       "slotIntent": "Santa Maria Assunta majolica church dome",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/positano-premium/destination/scene-2.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Positano_-_Collegiata_di_Santa_Maria_Assunta_-_2023-10-01_01-32-25_001.JPG",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Positano_-_Collegiata_di_Santa_Maria_Assunta_-_2023-10-01_01-32-25_001.JPG/1920px-Positano_-_Collegiata_di_Santa_Maria_Assunta_-_2023-10-01_01-32-25_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -395,7 +499,15 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Coupole en faïence de Santa Maria Assunta et mer bleu profond derrière les toits.",
+      "enCaption": "Majolica-tiled dome of Santa Maria Assunta above the deep-blue Tyrrhenian Sea.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "commons_public_license",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     {
       "key": "scene-3",
@@ -403,9 +515,9 @@
       "searchQuery": "Positano Spiaggia Grande beach blue sea",
       "slotIntent": "Spiaggia Grande and excursion pier",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "sourcePage": "https://www.expedia.co.uk/Spiaggia-Grande-Positano-City-Centre.d6075152.Attraction",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Blick_auf_die_Spiaggia_Grande_%28Positano%29_von_der_Via_Cristoforo_Colombo.jpg/1920px-Blick_auf_die_Spiaggia_Grande_%28Positano%29_von_der_Via_Cristoforo_Colombo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "ba2a05f041397b407803ef7009c19164c740ac6eceb0cd99bebb02956ce8aa5c",
@@ -413,7 +525,7 @@
       "localPath": "/images/travel/positano-premium/destination/scene-3.webp",
       "downloadUrl": "https://images.trvl-media.com/place/6075152/b76eb983-8c2c-4948-9461-723c46ffbfce.jpg",
       "candidateContext": "Vibrant Spiaggia Grande beach with alternating blue/yellow parasols and pastel Positano backdrop",
-      "credit": "Source image from https://www.expedia.co.uk/Spiaggia-Grande-Positano-City-Centre.d6075152.Attraction",
+      "credit": "Spiaggia Grande and excursion pier · source publication; photographer unspecified",
       "license": "Publisher/photographer permission requires verification",
       "sha256": "6af4f2bef6feeff6daf330ebd24f2ac6dd702b2883718116bc7623a831cc2614",
       "dhash": "1110110010110011011001101100010111000101100001000010001001010011",
@@ -425,7 +537,15 @@
       "outputSize": [
         1750,
         1167
-      ]
+      ],
+      "frCaption": "Spiaggia Grande, parasols orange et bleus devant le village en terrasses de Positano.",
+      "enCaption": "Spiaggia Grande with orange and blue umbrellas beneath Positano’s pastel hillside.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://www.expedia.co.uk/Spiaggia-Grande-Positano-City-Centre.d6075152.Attraction"
     },
     {
       "key": "scene-4",
@@ -433,9 +553,9 @@
       "searchQuery": "Positano Fornillo beach coastline",
       "slotIntent": "Fornillo coast footpath",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/positano-premium/destination/scene-4.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Positano_-_Fornillo_Beach.jpg",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Positano_-_Fornillo_Beach.jpg/1920px-Positano_-_Fornillo_Beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -452,7 +572,15 @@
       "outputSize": [
         1750,
         1172
-      ]
+      ],
+      "frCaption": "Plage de Fornillo, eau turquoise et falaises verdoyantes sur la côte de Positano.",
+      "enCaption": "Turquoise waters of Fornillo Beach below Positano’s green cliffs.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "commons_public_license",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     {
       "key": "scene-5",
@@ -460,9 +588,9 @@
       "searchQuery": "Positano hillside panoramic sunny streets",
       "slotIntent": "Positano sunlit hillside above Spiaggia Grande",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "sourcePage": "https://www.praianonline.com/en/destinations/explore-positano-amalfi-coast/",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Positano%2C_Amalfi_Coast%2C_Italy_%2822286060906%29.jpg/1920px-Positano%2C_Amalfi_Coast%2C_Italy_%2822286060906%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "4dde14f1e5db7de5e865fe5cb66ba3c325e6aa50ee35098a19fed06a32bc3fdb",
@@ -470,7 +598,7 @@
       "localPath": "/images/travel/positano-premium/destination/scene-5.webp",
       "downloadUrl": "https://www.praianonline.com/wp-content/uploads/2020/09/positano-panorama.jpg",
       "candidateContext": "Bright panoramic view down Positano hillside to town church and sea, street not represented",
-      "credit": "Source image from https://www.praianonline.com/en/destinations/explore-positano-amalfi-coast/",
+      "credit": "Positano hillside panorama from the upper streets · source publication; photographer unspecified",
       "license": "Publisher/photographer permission requires verification",
       "sha256": "a6be461d0ab3d35ce0f177c91943c4a5c0feafaa10952fccffbf4dccc4ff52af",
       "dhash": "0011100101111011111101100111110101111011011100100110000001010001",
@@ -482,7 +610,15 @@
       "outputSize": [
         1300,
         650
-      ]
+      ],
+      "frCaption": "Panorama du village de Positano et de la plage depuis les hauteurs, par beau temps.",
+      "enCaption": "Sunny overview of Positano’s village and beach from an upper coastal viewpoint.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://www.praianonline.com/en/destinations/explore-positano-amalfi-coast/"
     },
     {
       "key": "scene-6",
@@ -490,9 +626,9 @@
       "searchQuery": "Positano Arienzo beach Amalfi",
       "slotIntent": "Arienzo coves below the cliff",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "sourcePage": "https://www.positano.com/it/c/bagni-arienzo",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/84017_Arienzo_SA%2C_Italy_-_panoramio_%281%29.jpg/1920px-84017_Arienzo_SA%2C_Italy_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "186eb916d4fc9a73b25b450bf7201a6642d3a8e22a13f6578d577c3ddb262ad0",
@@ -500,7 +636,7 @@
       "localPath": "/images/travel/positano-premium/destination/scene-6.webp",
       "downloadUrl": "https://images.ng.ondaplatform.com/card/3364/gallery/bagni-arienzo-positano2.jpg/w1280_h900_csmart_d1.6_u1668505558.webp",
       "candidateContext": "Exact turquoise Arienzo bathing cove with beach, coast and white villas",
-      "credit": "Source image from https://www.positano.com/it/c/bagni-arienzo",
+      "credit": "Arienzo coves below the cliff · source publication; photographer unspecified",
       "license": "Publisher/photographer permission requires verification",
       "sha256": "9e2107defdc9513fecb1143caf9baf099dfd57e7a4d94b68a77db479f14a2b56",
       "dhash": "0110010101010001100100011000000111100001111100011111100011110000",
@@ -512,7 +648,15 @@
       "outputSize": [
         1707,
         1200
-      ]
+      ],
+      "frCaption": "Crique d’Arienzo à Positano, petite plage en contrebas de falaises couvertes de végétation.",
+      "enCaption": "Arienzo cove near Positano, with its small beach below lush cliffs.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://www.positano.com/it/c/bagni-arienzo"
     },
     {
       "key": "scene-7",
@@ -520,9 +664,9 @@
       "searchQuery": "Positano Laurito beach coastline",
       "slotIntent": "Laurito coastline",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "sourcePage": "https://amalficoastlovers.com/en/laurito/",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Il_San_Pietro_di_Positano-14460805246.jpg/1920px-Il_San_Pietro_di_Positano-14460805246.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "3c24bb212056e60f527243701d2f12c0a68a05d44f27f76c233b4315892a1e7a",
@@ -530,7 +674,7 @@
       "localPath": "/images/travel/positano-premium/destination/scene-7.webp",
       "downloadUrl": "https://i0.wp.com/amalficoastlovers.com/wp-content/uploads/2023/10/spiaggia-laurito-positano-costiera-amalfitana-amalficoastlovers-jpg.webp?fit=1500%2C1000&ssl=1",
       "candidateContext": "Actual Laurito beach, turquoise sea with umbrellas below cliffs",
-      "credit": "Source image from https://amalficoastlovers.com/en/laurito/",
+      "credit": "Laurito coastline · source publication; photographer unspecified",
       "license": "Publisher/photographer permission requires verification",
       "sha256": "53062e33586a6a028b5f972c21849f7967fff4ee5719379f405a92dca2449dd0",
       "dhash": "0000011001010110100100110010000100000110000000110100000100010100",
@@ -542,7 +686,15 @@
       "outputSize": [
         1500,
         1000
-      ]
+      ],
+      "frCaption": "Plage et crique de Laurito, eau claire, transats et falaises sur la côte amalfitaine.",
+      "enCaption": "Laurito beach with clear water, loungers and the Amalfi Coast’s steep cliffs.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://amalficoastlovers.com/en/laurito/"
     },
     {
       "key": "scene-8",
@@ -550,9 +702,9 @@
       "searchQuery": "Positano narrow streets colourful ceramic",
       "slotIntent": "Positano ceramics and village streets",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Positano_(Italy)_05.jpg",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Positano_%2832632824125%29.jpg/1920px-Positano_%2832632824125%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "9c280c5586833240115a76e01922848547488f482cbeb17c0917ef58904661ac",
@@ -572,7 +724,15 @@
       "outputSize": [
         1750,
         1167
-      ]
+      ],
+      "frCaption": "Quatre têtes en céramique ornées de citrons, photographiées à Positano.",
+      "enCaption": "Four lemon-crowned ceramic head vases photographed in Positano.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Actual source WebP opened and compared to dated Commons photo record; position/subject verified.",
+      "rightsEvidenceType": "commons_public_license",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
     },
     {
       "key": "scene-9",
@@ -580,9 +740,9 @@
       "searchQuery": "Positano Praiano Amalfi coast daylight",
       "slotIntent": "Coastal view towards Praiano",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/positano-premium/destination/scene-9.webp",
       "sourcePage": "https://www.laconchigliapraiano.it/",
       "downloadUrl": "https://www.laconchigliapraiano.it/Assets/vovoproductions_hotel-shots_2025-02-01_1250/Resized/Amalfi-1%20%28Personalizzato%29.jpg",
@@ -599,8 +759,18 @@
       "outputSize": [
         1579,
         1200
-      ]
+      ],
+      "frCaption": "Vue sur les falaises et les maisons de Praiano au-dessus d’une mer bleu azur.",
+      "enCaption": "Bright coastal panorama of Praiano’s rocky shoreline and houses above the blue sea.",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Positano 21-photo contact sheet inspected with geolocation and property source references; true location and caption verified to the extent visible from editorial material.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator states that rights to use all project photos have been obtained, including hotel and editorial pictures; underlying licence documents were not independently furnished.",
+      "imageTransformation": "Converted original image to WebP and resized; no subject editing.",
+      "licenseUrl": "https://www.laconchigliapraiano.it/"
     }
   ],
-  "publicationBlockedReason": "Draft remains noindex until 21 genuine WebP originals verified visually with rights provenance and validated in batch Preview."
+  "publicationBlockedReason": "21 photo slots editorially reviewed; still noindex pending group Vercel Preview responsive QA and supplier bookability check.",
+  "editorialPhotoQaAt": "2026-10-26",
+  "photoRightsBasis": "Source-specific Commons licenses where documented, otherwise relying on Bosphoras operator declaration of image permissions. No independent audit of each third-party photographer contract."
 }
