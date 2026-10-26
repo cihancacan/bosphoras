@@ -2,8 +2,8 @@
   "destination": "positano",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 11,
-  "downloadedDestinationCandidates": 8,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
@@ -124,11 +124,27 @@
       "property": "Hotel Poseidon Positano",
       "propertyKey": "hotel-poseidon",
       "slotIntent": "real guestroom or suite",
-      "sourcePage": "https://www.hotelposeidonpositano.it/en/",
-      "status": "missing",
+      "sourcePage": "https://www.hotelposeidonpositano.it/en/rooms-hotel-in-positano/wow-suite",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/hotel-poseidon/view-2.webp",
+      "downloadUrl": "https://cdn.blastness.biz/media/1450/TOP-new/thumbs/full/top_wow_room.jpg",
+      "candidateContext": "Authentic Hotel Poseidon spacious WOW! Suite with vibrant rugs, terrace and red curtains",
+      "credit": "Exact property image linked at https://www.hotelposeidonpositano.it/en/rooms-hotel-in-positano/wow-suite",
+      "license": "Publisher/source licence check required",
+      "sha256": "85082bc898c4c721e826b62fb0108fa8d8dedec7085f6dc1da0026bef9b704e5",
+      "dhash": "0010001100111011001110010011010101100100001011001000110111001101",
+      "bytes": 193898,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1750,
+        984
+      ]
     },
     {
       "key": "view-3",
@@ -542,10 +558,27 @@
       "placeLabel": "Coastal view towards Praiano",
       "searchQuery": "Positano Praiano Amalfi coast daylight",
       "slotIntent": "Coastal view towards Praiano",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/destination/scene-9.webp",
+      "sourcePage": "https://www.laconchigliapraiano.it/",
+      "downloadUrl": "https://www.laconchigliapraiano.it/Assets/vovoproductions_hotel-shots_2025-02-01_1250/Resized/Amalfi-1%20%28Personalizzato%29.jpg",
+      "candidateContext": "Real sunlit panorama of Praiano along the Tyrrhenian coast",
+      "credit": "La Conchiglia Hotel · official 2025 Praiano area photo",
+      "license": "Official hotel photographer rights check required",
+      "sha256": "af40bb24a172de68df8a8bea7025882fbc0eeb78889553a6b269cd230e5403fb",
+      "dhash": "1110011010011001111100101110011011001011110010011101001101011001",
+      "bytes": 341544,
+      "originalSize": [
+        3000,
+        2280
+      ],
+      "outputSize": [
+        1579,
+        1200
+      ]
     }
   ],
   "publicationBlockedReason": "Draft remains noindex until 21 genuine WebP originals verified visually with rights provenance and validated in batch Preview."
