@@ -1,6 +1,6 @@
 {
   "destination": "capri",
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
@@ -12,9 +12,9 @@
       "slotIntent": "Authentic sunlit hotel exterior",
       "sourcePage": "https://www.oetkerhotels.com/hotels/hotel-la-palma/restaurants-bars/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/hotel-la-palma/view-1.webp",
       "downloadUrl": "https://images.eu.ctfassets.net/og3b0tarlg4b/4mqfWVzquDTXQ7jByoQ3LQ/39f72fafde43223f242f74e5388dad00/Hotel_La_Palma_Facade.jpg",
       "candidateContext": "Current hotel façade with bougainvillea photographed in full daylight",
@@ -30,7 +30,14 @@
       "outputSize": [
         1800,
         1012
-      ]
+      ],
+      "frCaption": "Hotel La Palma, façade blanche de la demeure historique avec plantes grimpantes à Capri",
+      "enCaption": "Hotel La Palma, white façade of the historic house with climbing greenery in Capri",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://www.oetkerhotels.com/hotels/hotel-la-palma/restaurants-bars/"
     },
     {
       "key": "view-2",
@@ -39,9 +46,9 @@
       "slotIntent": "Actual room or suite",
       "sourcePage": "https://www.countrylife.co.uk/travel/hotel-la-palma-review-the-dazzling-new-place-to-stay-on-the-island-of-capri-266457",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/hotel-la-palma/view-2.webp",
       "downloadUrl": "https://cdn.mos.cms.futurecdn.net/pTtHLhxxya74sRa357kF5c.jpg",
       "candidateContext": "Actual Hotel La Palma bright renovated guestroom with mint furniture and terrace",
@@ -57,7 +64,14 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "frCaption": "Suite lumineuse d'Hotel La Palma, décor vert sauge et matières naturelles",
+      "enCaption": "Sunlit Hotel La Palma guest suite with sage-green furnishings and natural textures",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://www.countrylife.co.uk/travel/hotel-la-palma-review-the-dazzling-new-place-to-stay-on-the-island-of-capri-266457"
     },
     {
       "key": "view-3",
@@ -66,9 +80,9 @@
       "slotIntent": "Real hotel restaurant, pool or terrace",
       "sourcePage": "https://www.oetkerhotels.com/hotels/hotel-la-palma/gallery/?tag=pool",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/hotel-la-palma/view-3.webp",
       "downloadUrl": "https://images.eu.ctfassets.net/og3b0tarlg4b/7ogq6p5XPHyBiCDeKxPtSl/8eab2b33cbe1791af9e06d51586b6933/01_CAPRI_HOMEPAGE_2340x1743_02.jpg?fit=fill&fm=jpg&h=1450&w=1900",
       "candidateContext": "Real Hotel La Palma renovated pool deck and white façade",
@@ -84,7 +98,14 @@
       "outputSize": [
         1572,
         1200
-      ]
+      ],
+      "frCaption": "Piscine et façade blanche d'Hotel La Palma, terrasses ensoleillées du centre de Capri",
+      "enCaption": "Hotel La Palma swimming pool and white arcaded façade in central Capri",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://www.oetkerhotels.com/hotels/hotel-la-palma/gallery/?tag=pool"
     },
     {
       "key": "view-1",
@@ -93,9 +114,9 @@
       "slotIntent": "Authentic sunlit hotel exterior",
       "sourcePage": "https://jkcapri.com/en/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/jk-place-capri/view-1.webp",
       "downloadUrl": "https://www.jkplaces.com/jkcapri/wp-content/themes/startup_pro/inc/php-global/s-image/index.php?img=/var/www/vhosts/jkplaces.com/httpdocs/jkcapri/wp-content/uploads//2025/04/jk_capri_5_stars_hotel.jpg&mod=3&w=1456",
       "candidateContext": "J.K. Place Capri    ",
@@ -111,7 +132,14 @@
       "outputSize": [
         1456,
         698
-      ]
+      ],
+      "frCaption": "Salon bleu et blanc de J.K. Place Capri, intérieur raffiné aux détails nautiques",
+      "enCaption": "Navy-and-white sitting room inside J.K. Place Capri with coastal design details",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://jkcapri.com/en/"
     },
     {
       "key": "view-2",
@@ -120,9 +148,9 @@
       "slotIntent": "Actual room or suite",
       "sourcePage": "https://jkcapri.com/en/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/jk-place-capri/view-2.webp",
       "downloadUrl": "https://www.jkplaces.com/jkcapri/wp-content/uploads/2024/08/private-dining-4.jpg",
       "candidateContext": "Hotel page background candidate",
@@ -138,7 +166,14 @@
       "outputSize": [
         1600,
         1101
-      ]
+      ],
+      "frCaption": "Salon de J.K. Place Capri ouvrant sur une fenêtre panoramique vers la mer",
+      "enCaption": "Elegant J.K. Place Capri lounge with open window framing the Bay of Naples",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://jkcapri.com/en/"
     },
     {
       "key": "view-3",
@@ -147,9 +182,9 @@
       "slotIntent": "Real hotel restaurant, pool or terrace",
       "sourcePage": "https://jk-place.go-capri-hotels.com/it/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/jk-place-capri/view-3.webp",
       "downloadUrl": "https://jk-place.go-capri-hotels.com/data/Photos/OriginalPhoto/2801/280162/280162333.JPEG",
       "candidateContext": "Real J.K. Place Capri north-coast building above the sea, exterior daylight",
@@ -165,7 +200,14 @@
       "outputSize": [
         1800,
         1159
-      ]
+      ],
+      "frCaption": "Entrée blanche de J.K. Place Capri au-dessus du littoral de Marina Grande",
+      "enCaption": "White hotel entrance of J.K. Place Capri above the Marina Grande shoreline",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://jk-place.go-capri-hotels.com/it/"
     },
     {
       "key": "view-1",
@@ -174,9 +216,9 @@
       "slotIntent": "Authentic sunlit hotel exterior",
       "sourcePage": "https://www.capri.com/en/c/punta-tragara",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/punta-tragara/view-1.webp",
       "downloadUrl": "https://images.ng.ondaplatform.com/card/10/gallery/3-ART-PUNTA-TRAGARA-003471-3244-ArtSuite.jpg/w736_h485_csmart_d1.6_u1708360261.webp",
       "candidateContext": "    ",
@@ -192,7 +234,14 @@
       "outputSize": [
         1178,
         776
-      ]
+      ],
+      "frCaption": "Terrasse du Punta Tragara dominant les rochers Faraglioni et la Méditerranée",
+      "enCaption": "Punta Tragara terrace overlooking the Faraglioni rock formations and the sea",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://www.capri.com/en/c/punta-tragara"
     },
     {
       "key": "view-2",
@@ -201,9 +250,9 @@
       "slotIntent": "Actual room or suite",
       "sourcePage": "https://www.marieclaire.it/lifestyle/viaggi/a46305320/suite-capri-hotel-punta-tragara/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/punta-tragara/view-2.webp",
       "downloadUrl": "https://hips.hearstapps.com/hmg-prod/images/2-art-punta-tragara-003471-2982-artsuite-65a003b31b68f.jpeg?resize=2048%3A%2A",
       "candidateContext": "Actual Punta Tragara Art Suite bedroom framing Faraglioni",
@@ -219,7 +268,14 @@
       "outputSize": [
         1280,
         854
-      ]
+      ],
+      "frCaption": "Suite claire du Punta Tragara, fenêtre cintrée cadrant les Faraglioni",
+      "enCaption": "Light-filled Punta Tragara suite with arched opening towards the Faraglioni",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://www.marieclaire.it/lifestyle/viaggi/a46305320/suite-capri-hotel-punta-tragara/"
     },
     {
       "key": "view-3",
@@ -228,9 +284,9 @@
       "slotIntent": "Real hotel restaurant, pool or terrace",
       "sourcePage": "https://www.internimagazine.it/interior/hotel-punta-tragara-a-capri/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/punta-tragara/view-3.webp",
       "downloadUrl": "https://www.internimagazine.it/content/uploads/2022/06/Le-Monzu%CC%80-Terrace-1200x820.jpg",
       "candidateContext": "True Hotel Punta Tragara pool and Le Monzù terrace, ochre façade",
@@ -246,7 +302,14 @@
       "outputSize": [
         1200,
         820
-      ]
+      ],
+      "frCaption": "Piscine sur les terrasses ocre du Punta Tragara face au golfe de Capri",
+      "enCaption": "Outdoor pool on Punta Tragara's ochre terraces above the Capri coastline",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://www.internimagazine.it/interior/hotel-punta-tragara-a-capri/"
     },
     {
       "key": "view-1",
@@ -255,9 +318,9 @@
       "slotIntent": "Authentic sunlit hotel exterior",
       "sourcePage": "https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/jumeirah-capri-palace/view-1.webp",
       "downloadUrl": "https://cdn.jumeirah.com/api/public/content/31f699caee7a4c8aa28782688421d878?v=589780b6",
       "candidateContext": "Gallery image 1    ",
@@ -273,7 +336,14 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "frCaption": "Piscine extérieure du Jumeirah Capri Palace, parasols jaunes et jardins d'Anacapri",
+      "enCaption": "Jumeirah Capri Palace outdoor pool with yellow parasols in Anacapri",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace"
     },
     {
       "key": "view-2",
@@ -282,9 +352,9 @@
       "slotIntent": "Actual room or suite",
       "sourcePage": "https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/jumeirah-capri-palace/view-2.webp",
       "downloadUrl": "https://cdn.jumeirah.com/api/public/content/b233a175b1fc4c3a995731888d7582c8?v=111e4bb7",
       "candidateContext": "Gallery image 1    ",
@@ -300,7 +370,14 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "frCaption": "Table dressée face à la mer au Jumeirah Capri Palace, scène de restaurant",
+      "enCaption": "Seafront dining setting associated with Jumeirah Capri Palace overlooking the Gulf",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace"
     },
     {
       "key": "view-3",
@@ -309,9 +386,9 @@
       "slotIntent": "Real hotel restaurant, pool or terrace",
       "sourcePage": "https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/jumeirah-capri-palace/view-3.webp",
       "downloadUrl": "https://cdn.jumeirah.com/api/public/content/dda57a443da04b849bb0001b2d3305d2?v=e17dce47",
       "candidateContext": "Gallery image 1    ",
@@ -327,7 +404,14 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "frCaption": "Salon blanc aux arches méditerranéennes du Jumeirah Capri Palace",
+      "enCaption": "Jumeirah Capri Palace white lounge with Mediterranean arches and blue accents",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace"
     }
   ],
   "destinationScenes": [
@@ -337,9 +421,9 @@
       "slotIntent": "Faraglioni",
       "searchQuery": "Faraglioni cliffs and turquoise sea",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/destination/scene-1.webp",
       "downloadUrl": "https://images.squarespace-cdn.com/content/v1/620b705876b230130e2b3710/ec733abb-8455-4830-9a24-9fd86f8f5f6d/Capri%2BItaly.jpg?format=2500w",
       "sourcePage": "https://academytravel.com.au/pompeii-capri-the-bay-of-naples-italy-tour-april-2026",
@@ -356,7 +440,14 @@
       "outputSize": [
         1800,
         1012
-      ]
+      ],
+      "frCaption": "Les Faraglioni de Capri baignés de soleil dans une mer d'un bleu profond",
+      "enCaption": "Capri's Faraglioni sea stacks rising from vivid blue water in bright daylight",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://academytravel.com.au/pompeii-capri-the-bay-of-naples-italy-tour-april-2026"
     },
     {
       "key": "scene-2",
@@ -364,9 +455,9 @@
       "slotIntent": "Marina Grande",
       "searchQuery": "Capri Marina Grande harbour",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Harbour_Marina_Grande_in_Capri.jpg",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Boats%2C_Capri_Harbour_-_scan01.jpg/1920px-Boats%2C_Capri_Harbour_-_scan01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "bde942d1103a05dcdfe1e1c5e821a3f7518cb9ee22f3028d7138cc58e9a1b81a",
@@ -386,7 +477,14 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "frCaption": "Marina Grande à Capri vue d'en haut, ferries, yachts et quais de la baie",
+      "enCaption": "Aerial view of Capri's Marina Grande harbour with ferries, boats and waterfront",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     {
       "key": "scene-3",
@@ -394,9 +492,9 @@
       "slotIntent": "Piazzetta",
       "searchQuery": "Capri Piazzetta square",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Piazzetta_(Capri),_2016.jpg",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Piazza_Umberto_I_din_Capri.jpg/1920px-Piazza_Umberto_I_din_Capri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "7d4d7e1d1e14107d7c70a13aa991f0367d586a8c15433a94e3dd9425d4023dbe",
@@ -416,7 +514,14 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "frCaption": "Piazzetta de Capri, terrasses de café et façades pastel sous le soleil",
+      "enCaption": "Capri's Piazzetta with café umbrellas and pastel town façades in the sunshine",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     {
       "key": "scene-4",
@@ -424,9 +529,9 @@
       "slotIntent": "Belvedere di Tragara",
       "searchQuery": "Tragara Faraglioni viewpoint",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/destination/scene-4.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Capri_%2815645877605%29.jpg/1920px-Capri_%2815645877605%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Capri_(15645877605).jpg",
@@ -443,7 +548,14 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "frCaption": "Rochers Faraglioni vus depuis le belvédère de Tragara au-dessus de la mer",
+      "enCaption": "Faraglioni rocks viewed from the elevated Belvedere di Tragara",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
     },
     {
       "key": "scene-5",
@@ -451,9 +563,9 @@
       "slotIntent": "Marina Piccola",
       "searchQuery": "Capri Marina Piccola bay",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "sourcePage": "https://www.celebritycruises.com/blog/beaches-in-naples-italy",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/A._Leto_-_Marina_Piccola_a_Capri.jpg/1920px-A._Leto_-_Marina_Piccola_a_Capri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "1edb3a2646acfd7bd33d12a2e34f069efcf64ed3f1e562df43b1294665a82734",
@@ -473,7 +585,14 @@
       "outputSize": [
         1712,
         1200
-      ]
+      ],
+      "frCaption": "Baie turquoise de Marina Piccola à Capri, criques et barques près des Faraglioni",
+      "enCaption": "Turquoise waters and bathing coves of Capri's Marina Piccola bay",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://www.celebritycruises.com/blog/beaches-in-naples-italy"
     },
     {
       "key": "scene-6",
@@ -481,9 +600,9 @@
       "slotIntent": "Anacapri",
       "searchQuery": "Anacapri old town",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/destination/scene-6.webp",
       "downloadUrl": "https://www.citalia.com/-/media/Bynder/Citalia-destinations/Italy/Islands/Capri/Anacapri/Anacapri-2024-Church-St-Michele-Shutterstock-557041132-Hybris.jpg?w=1900",
       "sourcePage": "https://www.citalia.com/holidays/italy/campania/capri/anacapri/",
@@ -500,7 +619,14 @@
       "outputSize": [
         1800,
         1013
-      ]
+      ],
+      "frCaption": "Église baroque et petite place d'Anacapri, pierres claires sous le ciel bleu",
+      "enCaption": "Baroque church and sunlit piazza in Anacapri's historic village centre",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://www.citalia.com/holidays/italy/campania/capri/anacapri/"
     },
     {
       "key": "scene-7",
@@ -508,9 +634,9 @@
       "slotIntent": "Monte Solaro",
       "searchQuery": "Monte Solaro views",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Capri,_Italy_(51249368958).jpg",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/View_of_Capri_from_Monte_Solaro%2C_2010.jpg/1920px-View_of_Capri_from_Monte_Solaro%2C_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "e45113f2f35c64c2c1abeaa95ab400e3537698168d8d7bfac2fac5c7c634cd91",
@@ -530,7 +656,14 @@
       "outputSize": [
         1800,
         1013
-      ]
+      ],
+      "frCaption": "Panorama depuis Monte Solaro vers le sud de Capri et les Faraglioni",
+      "enCaption": "Wide panorama from Monte Solaro across Capri towards the Faraglioni",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
     },
     {
       "key": "scene-8",
@@ -538,9 +671,9 @@
       "slotIntent": "Giardini di Augusto",
       "searchQuery": "Augustus Gardens Capri",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/capri-premium/destination/scene-8.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Giardini_di_Augusto_overlook%2C_seen_from_the_Punta_Cannone_overlook%2C_Capri%2C_2010.jpg/1920px-Giardini_di_Augusto_overlook%2C_seen_from_the_Punta_Cannone_overlook%2C_Capri%2C_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Giardini_di_Augusto_overlook,_seen_from_the_Punta_Cannone_overlook,_Capri,_2010.jpg",
@@ -557,7 +690,14 @@
       "outputSize": [
         1800,
         1197
-      ]
+      ],
+      "frCaption": "Les jardins d'Auguste et les falaises de Capri vus depuis le belvédère de Punta Cannone",
+      "enCaption": "Cliffside Gardens of Augustus seen from Capri's Punta Cannone viewpoint",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
     },
     {
       "key": "scene-9",
@@ -565,9 +705,9 @@
       "slotIntent": "Punta Carena",
       "searchQuery": "Punta Carena lighthouse Capri",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Punta_Carena_Lighthouse.jpg",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Campania_Lighthouse_Punta_Carena_Capri.jpg/1920px-Campania_Lighthouse_Punta_Carena_Capri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "67a8fe111b739820e18cb43c76cec09a809f6e515f311ed0b6ad91d880054a4c",
@@ -587,8 +727,17 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "frCaption": "Phare rouge et blanc de Punta Carena sur son promontoire rocheux de Capri",
+      "enCaption": "Red-and-white Punta Carena lighthouse above Capri's rugged rocky headland",
+      "visualReviewedAt": "2026-10-26",
+      "visualReviewBasis": "Original 21-slot Capri contact sheet inspected in full, with distinctive hotel interiors/exteriors and geolocated landmarks; large-format images inspected for corrected Monte Solaro, Marina Grande, Piazzetta and Punta Carena scenes. Original source references and unique checksums retained.",
+      "ownerRightsAuthorization": "Bosphoras operator attested on 2026-10-19 that permission covers all photographs for the entire project; record relies on operator assertion, not direct photographer contract review.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
     }
   ],
-  "publicationBlockedReason": "No locally sourced WebP photographs have passed visual approval, provenance and rights QA."
+  "publicationBlockedReason": "Editorial and photographs individually reviewed with user-stated operator rights. Route remains noindex until final Preview QA and authorised supplier/inventory verification.",
+  "editorialPhotoQaAt": "2026-10-26",
+  "photoRightsBasis": "Owner/agency attestation only; publishing remains contingent on operator's rights statement being accurate for each original image and preserving Creative Commons attributions."
 }
