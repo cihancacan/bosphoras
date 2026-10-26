@@ -1,0 +1,47 @@
+{
+  "hotels": 6,
+  "scenes": 4,
+  "missing": [
+    "the-beach-house/view-2",
+    "the-beach-house/view-3",
+    "soros-beach/view-3",
+    "kastro-boutique/view-1",
+    "kastro-boutique/view-2",
+    "kastro-boutique/view-3",
+    "destination/scene-1",
+    "destination/scene-3",
+    "destination/scene-4",
+    "destination/scene-5",
+    "destination/scene-9"
+  ],
+  "diagnostics": [
+    {
+      "url": "https://beachhouseantiparos.com/rooms/",
+      "error": "404 Client Error: Not Found for url: https://beachhouseantiparos.com/rooms/"
+    },
+    {
+      "url": "https://beachhouseantiparos.com/gallery/",
+      "error": "404 Client Error: Not Found for url: https://beachhouseantiparos.com/gallery/"
+    },
+    {
+      "url": "https://www.antiparosgreece.com/rooms/",
+      "error": "404 Client Error: Not Found for url: https://www.antiparosgreece.com/rooms/"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Antiparos.jpg",
+      "error": "404 Client Error: Not Found for url: https://upload.wikimedia.org/wikipedia/commons/d/d9/Antiparos.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Antiparos_Cave.jpg",
+      "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/8/8f/Antiparos_Cave.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Antiparos-cave.jpg",
+      "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/f/fe/Antiparos-cave.jpg"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Despotiko.jpg",
+      "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/1/1d/Despotiko.jpg"
+    }
+  ]
+}
