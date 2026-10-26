@@ -10,3 +10,13 @@
 - FR/EN distinctive descriptions; 4 hotels, 5 zones, 5 experiences, 7 FAQ each language.
 - 12 named-property originals (3 each) plus 9 true island landscape images. No published imagery until verified authors, license, separate visual review, uniqueness and genuine Mykonos geolocation.
 - Noindex remains; no real-time Wink inventory, no fake offers or private boat bookings. **No Vercel build until next ten-destination batch completes.**
+
+## Source gallery review and editor QA — 27 October 2026
+
+- 21/21 distinct WebP originals individually sourced, 12 authentic photos tied to four properties and nine Mykonos-specific views. Original source, sha256, captions in French and English, visual review date, rights basis and URLs retained.
+- **Kalesma**: removed the two redundant horse photographs, substituting a verified aerial terrace, real sea-view suite and sunlit hotel pool. Sources Time Out, Travel Beyond and TTG, no individual rights agreement independently verified.
+- **Ornos and Psarou**: rejected distant rocky hillside images and used genuine bathing beaches. **Agios Ioannis**: replaced a second near-identical sunset photo with a real sandy beach and turquoise sea. Spot identity checked at the source and in rendered photo.
+- **Cavo Tagoo**: three real hotel photos, including design-studio documentation of actual cave living spaces and hotel infinity pool. No unverified accommodation category promised.
+- **Santa Marina and Mykonos Blu**: three distinct real resort views each; photos of pools and suites are described accurately and should never be portrayed as guaranteed room-level inclusions.
+- Hotel/gallery rights rely on the user's project-wide operator attestation unless a specific Creative Commons licence is documented; underlying hotel/photographer licences were not independently supplied.
+- Pages stay `noindex`, unavailable for commercial release; actual supplier rooms and booking permissions must be checked. Vercel build deliberately deferred until next ten-destination batch.
