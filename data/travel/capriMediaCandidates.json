@@ -1,0 +1,234 @@
+{
+  "destination": "capri",
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "hotels": [
+    {
+      "key": "view-1",
+      "property": "Hotel La Palma, Oetker Hotels",
+      "propertyKey": "hotel-la-palma",
+      "slotIntent": "Authentic sunlit hotel exterior",
+      "sourcePage": "https://www.oetkerhotels.com/hotels/hotel-la-palma/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "view-2",
+      "property": "Hotel La Palma, Oetker Hotels",
+      "propertyKey": "hotel-la-palma",
+      "slotIntent": "Actual room or suite",
+      "sourcePage": "https://www.oetkerhotels.com/hotels/hotel-la-palma/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "view-3",
+      "property": "Hotel La Palma, Oetker Hotels",
+      "propertyKey": "hotel-la-palma",
+      "slotIntent": "Real hotel restaurant, pool or terrace",
+      "sourcePage": "https://www.oetkerhotels.com/hotels/hotel-la-palma/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "view-1",
+      "property": "J.K. Place Capri",
+      "propertyKey": "jk-place-capri",
+      "slotIntent": "Authentic sunlit hotel exterior",
+      "sourcePage": "https://jkcapri.com/en/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "view-2",
+      "property": "J.K. Place Capri",
+      "propertyKey": "jk-place-capri",
+      "slotIntent": "Actual room or suite",
+      "sourcePage": "https://jkcapri.com/en/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "view-3",
+      "property": "J.K. Place Capri",
+      "propertyKey": "jk-place-capri",
+      "slotIntent": "Real hotel restaurant, pool or terrace",
+      "sourcePage": "https://jkcapri.com/en/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "view-1",
+      "property": "Hotel Punta Tragara",
+      "propertyKey": "punta-tragara",
+      "slotIntent": "Authentic sunlit hotel exterior",
+      "sourcePage": "https://manfredihotels.com/tragara/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "view-2",
+      "property": "Hotel Punta Tragara",
+      "propertyKey": "punta-tragara",
+      "slotIntent": "Actual room or suite",
+      "sourcePage": "https://manfredihotels.com/tragara/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "view-3",
+      "property": "Hotel Punta Tragara",
+      "propertyKey": "punta-tragara",
+      "slotIntent": "Real hotel restaurant, pool or terrace",
+      "sourcePage": "https://manfredihotels.com/tragara/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "view-1",
+      "property": "Jumeirah Capri Palace",
+      "propertyKey": "jumeirah-capri-palace",
+      "slotIntent": "Authentic sunlit hotel exterior",
+      "sourcePage": "https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "view-2",
+      "property": "Jumeirah Capri Palace",
+      "propertyKey": "jumeirah-capri-palace",
+      "slotIntent": "Actual room or suite",
+      "sourcePage": "https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "view-3",
+      "property": "Jumeirah Capri Palace",
+      "propertyKey": "jumeirah-capri-palace",
+      "slotIntent": "Real hotel restaurant, pool or terrace",
+      "sourcePage": "https://www.jumeirah.com/en/stay/italy/jumeirah-capri-palace",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "placeLabel": "Faraglioni",
+      "slotIntent": "Faraglioni",
+      "searchQuery": "Faraglioni cliffs and turquoise sea",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "scene-2",
+      "placeLabel": "Marina Grande",
+      "slotIntent": "Marina Grande",
+      "searchQuery": "Capri Marina Grande harbour",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "scene-3",
+      "placeLabel": "Piazzetta",
+      "slotIntent": "Piazzetta",
+      "searchQuery": "Capri Piazzetta square",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "scene-4",
+      "placeLabel": "Belvedere di Tragara",
+      "slotIntent": "Belvedere di Tragara",
+      "searchQuery": "Tragara Faraglioni viewpoint",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "scene-5",
+      "placeLabel": "Marina Piccola",
+      "slotIntent": "Marina Piccola",
+      "searchQuery": "Capri Marina Piccola bay",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "scene-6",
+      "placeLabel": "Anacapri",
+      "slotIntent": "Anacapri",
+      "searchQuery": "Anacapri old town",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "scene-7",
+      "placeLabel": "Monte Solaro",
+      "slotIntent": "Monte Solaro",
+      "searchQuery": "Monte Solaro views",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "scene-8",
+      "placeLabel": "Giardini di Augusto",
+      "slotIntent": "Giardini di Augusto",
+      "searchQuery": "Augustus Gardens Capri",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    },
+    {
+      "key": "scene-9",
+      "placeLabel": "Punta Carena",
+      "slotIntent": "Punta Carena",
+      "searchQuery": "Punta Carena lighthouse Capri",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+    }
+  ],
+  "publicationBlockedReason": "No locally sourced WebP photographs have passed visual approval, provenance and rights QA."
+}
