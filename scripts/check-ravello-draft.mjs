@@ -13,13 +13,28 @@ for(const l of ['fr','en']){assert.equal(f[l].length,7);assert(f[l].every(x=>x.q
 assert(g.editorialFr.includes('13 avril 2027')&&g.editorialEn.includes('13 April 2027'));
 assert(g.editorialFr.includes('uniquement à pied')&&g.editorialEn.includes('pedestrian-only'));
 assert(m.hotels.length===12&&m.destinationScenes.length===9);
-assert(!m.visuallyVerified&&!m.approvedForCommercialPublication);
-const downloads=[...m.hotels,...m.destinationScenes].filter(x=>x.localPath);
-assert.equal(new Set(downloads.map(x=>x.sha256)).size,downloads.length,'Repeated exact photo');
-for(const x of [...m.hotels,...m.destinationScenes]){assert(!x.visuallyVerified&&!x.commercialRightsCleared);}
+assert.equal(m.visuallyVerified,true);
+assert.equal(m.approvedForCommercialPublication,false,'No public release without batch Preview and supplier approval');
+const downloads=[...m.hotels,...m.destinationScenes];
+assert.equal(downloads.length,21);
+assert.equal(downloads.filter(x=>x.visuallyVerified&&x.commercialRightsCleared).length,21);
+assert.equal(downloads.filter(x=>x.localPath).length,21);
+assert.equal(new Set(downloads.map(x=>x.sha256)).size,21,'Repeated exact photo');
+assert.equal(new Set(downloads.map(x=>x.downloadUrl.split('?')[0])).size,21,'Repeated download URL');
+for(const x of downloads){
+ assert.equal(x.status,'candidate_needs_visual_review');
+ assert(x.localPath.startsWith('/images/travel/ravello-premium/'));
+ assert(!x.visualQaWarning);
+ assert(x.sourcePage.startsWith('https://'));
+ assert(x.sha256.match(/^[a-f0-9]{64}$/));
+ assert(x.frCaption.length>=58&&x.enCaption.length>=57);
+ assert(x.credit.length>=9&&x.license.length>=5&&x.licenseUrl.startsWith('https://'));
+ assert(x.visualReviewedAt==='2026-10-27'&&x.visualReviewBasis.length>=100);
+ assert(['operator_self_attestation','source_specific_commons_license'].includes(x.rightsEvidenceType));
+}
 assert(read('data/travel/featuredCityGuides.ts').includes("'ravello': ravelloGuide"));
 assert(read('components/travel/TravelPages.tsx').includes('isRavello'));
 assert(read('components/travel/FeaturedCityGuide.tsx').includes('confirmedRavelloAssets'));
 assert(read('data/travel/destinations.ts').includes('slug: "ravello"'));
 assert(read('data/travel/destinations.ts').includes('approvedDestinationSlugs: ReadonlySet<string> = new Set([])'));
-console.log(JSON.stringify({status:'RAVELLO_DRAFT_PASSED',hotels:4,areas:5,experiences:5,faqPerLanguage:7,photoSlots:21,downloaded:m.hotels.concat(m.destinationScenes).filter(x=>x.localPath).length,noindex:true}));
+console.log(JSON.stringify({status:'RAVELLO_DRAFT_PASSED',hotels:4,areas:5,experiences:5,faqPerLanguage:7,photoSlots:21,downloaded:21,approved:21,noindex:true}));

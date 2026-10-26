@@ -1,6 +1,6 @@
 {
   "destination": "ravello",
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
@@ -12,9 +12,9 @@
       "slotIntent": "actual hotel exterior and architecture",
       "sourcePage": "https://www.simplyluxuryescapes.co.uk/product/caruso-a-belmond-hotel-amalfi-coast/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "rejectedSource": "https://img.belmond.com/f_auto/t_2580x1299/photos/CDC/cdc-cam-legend10.jpg",
       "rejectedOriginalSha256": "864fa0e9d12c891d15bde22864cdee0fd35b69b434838ba394fba210e2e030fe",
       "rejectedCandidateContext": "   ",
@@ -33,7 +33,15 @@
       "outputSize": [
         1750,
         984
-      ]
+      ],
+      "frCaption": "Piscine panoramique à débordement de Caruso, surplombant la côte amalfitaine depuis Ravello.",
+      "enCaption": "Caruso's hillside infinity pool overlooking the Amalfi coastline from Ravello.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator stated project-wide permission for photos in October 2026; no signed publisher/photographer-specific usage agreement was reviewed here.",
+      "licenseUrl": "https://www.simplyluxuryescapes.co.uk/product/caruso-a-belmond-hotel-amalfi-coast/"
     },
     {
       "key": "view-2",
@@ -42,9 +50,9 @@
       "slotIntent": "genuine guestroom or suite interior",
       "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast/accommodation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "rejectedSource": "https://img.belmond.com/f_auto/t_1080_ar_5_4/photos/vso/vso-journey-villeggiatura12.jpg",
       "rejectedOriginalSha256": "37350eea5aa7b37f4e8bee491d9b9ef7daecc85a8d9c5c66165fb49d804dcff6",
       "rejectedCandidateContext": "A man in a blue train steward's uniform holds open a Villeggiatura newspaper, obscuring his face, on an Amalfi-view terrace.   ",
@@ -63,7 +71,15 @@
       "outputSize": [
         1080,
         864
-      ]
+      ],
+      "frCaption": "Salon d'une suite du Caruso : voûte ancienne, bibliothèque et assises bleues.",
+      "enCaption": "Suite sitting room at Caruso with a painted vaulted ceiling, books and blue seating.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator stated project-wide permission for photos in October 2026; no signed publisher/photographer-specific usage agreement was reviewed here.",
+      "licenseUrl": "https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast/accommodation"
     },
     {
       "key": "view-3",
@@ -72,9 +88,9 @@
       "slotIntent": "property pool, gardens or restaurant",
       "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast/accommodation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ravello-premium/caruso-belmond/view-3.webp",
       "downloadUrl": "https://img.belmond.com/f_auto/t_1080_ar_5_4/photos/car/car-acc-room-garden-view-with-terrace02.jpg",
       "candidateContext": "A king bed with white linens and heavy silk amber drapes sits centre of a Romanesque-styled room with ochre wall edge lines   ",
@@ -90,7 +106,15 @@
       "outputSize": [
         1080,
         864
-      ]
+      ],
+      "frCaption": "Chambre au mobilier classique de Caruso, tons crème et rideaux ocres.",
+      "enCaption": "Caruso guestroom furnished in cream and ochre with classic carved details.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator stated project-wide permission for photos in October 2026; no signed publisher/photographer-specific usage agreement was reviewed here.",
+      "licenseUrl": "https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast/accommodation"
     },
     {
       "key": "view-1",
@@ -99,9 +123,9 @@
       "slotIntent": "actual hotel exterior and architecture",
       "sourcePage": "https://www.palazzoavino.com/clubhouse-by-the-sea/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "rejectedSource": "https://www.palazzoavino.com/wp-content/uploads/2020/09/PA_Beach-Club-Pool-2.jpg",
       "rejectedOriginalSha256": "5e7244e7fd35536555c40c9a70dccdc19d8dd89973052c22f564282988a93f01",
       "rejectedCandidateContext": "   ",
@@ -120,7 +144,15 @@
       "outputSize": [
         1750,
         984
-      ]
+      ],
+      "frCaption": "Piscine du Clubhouse by the Sea de Palazzo Avino, situé à Marmorata et non dans le palais de Ravello.",
+      "enCaption": "Swimming pool at Palazzo Avino's separate Clubhouse by the Sea in Marmorata, not at the hilltop hotel.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator stated project-wide permission for photos in October 2026; no signed publisher/photographer-specific usage agreement was reviewed here.",
+      "licenseUrl": "https://www.palazzoavino.com/clubhouse-by-the-sea/"
     },
     {
       "key": "view-2",
@@ -129,9 +161,9 @@
       "slotIntent": "genuine guestroom or suite interior",
       "sourcePage": "https://www.palazzoavino.com/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "rejectedSource": "https://www.palazzoavino.com/wp-content/uploads/2020/09/Landing-Page-1-min.jpg",
       "rejectedOriginalSha256": "72850642621e3f9fa7749db46921186d7853ed2835c503fafeffc9d39db08e9d",
       "rejectedCandidateContext": "   ",
@@ -150,7 +182,15 @@
       "outputSize": [
         1750,
         984
-      ]
+      ],
+      "frCaption": "Jacuzzi sur la terrasse privée de la Belvedere Suite de Palazzo Avino, vue sur la mer.",
+      "enCaption": "Private sea-facing hot tub on the Belvedere Suite terrace at Palazzo Avino.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator stated project-wide permission for photos in October 2026; no signed publisher/photographer-specific usage agreement was reviewed here.",
+      "licenseUrl": "https://www.palazzoavino.com/"
     },
     {
       "key": "view-3",
@@ -159,9 +199,9 @@
       "slotIntent": "property pool, gardens or restaurant",
       "sourcePage": "https://www.palazzoavino.com/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ravello-premium/palazzo-avino/view-3.webp",
       "downloadUrl": "https://www.palazzoavino.com/wp-content/uploads/2020/05/Webp.net-resizeimage-min.jpg",
       "candidateContext": "   ",
@@ -177,7 +217,15 @@
       "outputSize": [
         1750,
         1094
-      ]
+      ],
+      "frCaption": "Façade rose de Palazzo Avino en plein soleil, accompagnée d’un détail de citronnier.",
+      "enCaption": "Sunlit pink façade of Palazzo Avino paired with a close-up of citrus foliage.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator stated project-wide permission for photos in October 2026; no signed publisher/photographer-specific usage agreement was reviewed here.",
+      "licenseUrl": "https://www.palazzoavino.com/"
     },
     {
       "key": "view-1",
@@ -186,9 +234,9 @@
       "slotIntent": "actual hotel exterior and architecture",
       "sourcePage": "https://www.hotelvillacimbrone.com/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ravello-premium/hotel-villa-cimbrone/view-1.webp",
       "downloadUrl": "https://www.hotelvillacimbrone.com/wp-content/uploads/2020/02/Hotel-Villa-Cimbrone-23-1920.jpg",
       "candidateContext": "   ",
@@ -204,7 +252,15 @@
       "outputSize": [
         1750,
         984
-      ]
+      ],
+      "frCaption": "Vue aérienne de Villa Cimbrone au crépuscule : jardins historiques, bâtiment et piscine illuminée.",
+      "enCaption": "Dusk aerial view of Villa Cimbrone's historic estate, gardens and illuminated pool.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator stated project-wide permission for photos in October 2026; no signed publisher/photographer-specific usage agreement was reviewed here.",
+      "licenseUrl": "https://www.hotelvillacimbrone.com/"
     },
     {
       "key": "view-2",
@@ -213,9 +269,9 @@
       "slotIntent": "genuine guestroom or suite interior",
       "sourcePage": "https://www.hotelvillacimbrone.com/rooms-and-suites/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ravello-premium/hotel-villa-cimbrone/view-2.webp",
       "downloadUrl": "https://www.hotelvillacimbrone.com/wp-content/uploads/2020/06/Hotel-Villa-Cimbrone-EBW-suite-7-1920.jpg",
       "candidateContext": "   ",
@@ -231,7 +287,15 @@
       "outputSize": [
         1591,
         1200
-      ]
+      ],
+      "frCaption": "Suite historique de Villa Cimbrone : plafond peint, cheminée sculptée et textiles carmin.",
+      "enCaption": "Historic Villa Cimbrone suite featuring a frescoed ceiling, carved fireplace and carmine furnishings.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator stated project-wide permission for photos in October 2026; no signed publisher/photographer-specific usage agreement was reviewed here.",
+      "licenseUrl": "https://www.hotelvillacimbrone.com/rooms-and-suites/"
     },
     {
       "key": "view-3",
@@ -240,9 +304,9 @@
       "slotIntent": "property pool, gardens or restaurant",
       "sourcePage": "https://www.hotelvillacimbrone.com/rooms-and-suite/studio-suite/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ravello-premium/hotel-villa-cimbrone/view-3.webp",
       "downloadUrl": "https://www.hotelvillacimbrone.com/wp-content/uploads/2019/12/Hotel-Villa-Cimbrone-stuidio-suite-10.jpg",
       "candidateContext": "   ",
@@ -258,7 +322,15 @@
       "outputSize": [
         1600,
         1067
-      ]
+      ],
+      "frCaption": "Chambre de Villa Cimbrone aux décors peints et mobilier vert, dans un palais ancien.",
+      "enCaption": "Villa Cimbrone guestroom with decorated vaulted ceiling and green-accented furnishings.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator stated project-wide permission for photos in October 2026; no signed publisher/photographer-specific usage agreement was reviewed here.",
+      "licenseUrl": "https://www.hotelvillacimbrone.com/rooms-and-suite/studio-suite/"
     },
     {
       "key": "view-1",
@@ -267,9 +339,9 @@
       "slotIntent": "actual hotel exterior and architecture",
       "sourcePage": "https://palazzoconfalone.com/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ravello-premium/palazzo-confalone/view-1.webp",
       "downloadUrl": "https://palazzoconfalone.it/wp-content/uploads/2020/01/hall.jpg",
       "candidateContext": " hall  ",
@@ -285,7 +357,15 @@
       "outputSize": [
         1750,
         1176
-      ]
+      ],
+      "frCaption": "Atrium historique de Palazzo Confalone, colonnes médiévales et sol en céramique bleue.",
+      "enCaption": "Historic Palazzo Confalone atrium with medieval columns and blue-patterned tile floor.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator stated project-wide permission for photos in October 2026; no signed publisher/photographer-specific usage agreement was reviewed here.",
+      "licenseUrl": "https://palazzoconfalone.com/"
     },
     {
       "key": "view-2",
@@ -294,9 +374,9 @@
       "slotIntent": "genuine guestroom or suite interior",
       "sourcePage": "https://palazzoconfalone.com/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ravello-premium/palazzo-confalone/view-2.webp",
       "downloadUrl": "https://palazzoconfalone.it/wp-content/uploads/2021/01/evento-matrimonio-esterno.jpg",
       "candidateContext": " evento-matrimonio-esterno  ",
@@ -312,7 +392,15 @@
       "outputSize": [
         1750,
         1164
-      ]
+      ],
+      "frCaption": "Jardin de Palazzo Confalone aménagé pour une cérémonie, chaises blanches sous les glycines.",
+      "enCaption": "Palazzo Confalone garden arranged for a ceremony with white chairs beneath wisteria.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator stated project-wide permission for photos in October 2026; no signed publisher/photographer-specific usage agreement was reviewed here.",
+      "licenseUrl": "https://palazzoconfalone.com/"
     },
     {
       "key": "view-3",
@@ -321,9 +409,9 @@
       "slotIntent": "property pool, gardens or restaurant",
       "sourcePage": "https://palazzoconfalone.com/",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ravello-premium/palazzo-confalone/view-3.webp",
       "downloadUrl": "https://palazzoconfalone.it/wp-content/uploads/2020/01/esterni-confalone.jpg",
       "candidateContext": " esterni-confalone  ",
@@ -339,7 +427,15 @@
       "outputSize": [
         1750,
         1167
-      ]
+      ],
+      "frCaption": "Terrasse fleurie de Palazzo Confalone avec balustrade donnant sur les falaises et la mer.",
+      "enCaption": "Flower-lined Palazzo Confalone terrace looking towards the mountains and sea.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator stated project-wide permission for photos in October 2026; no signed publisher/photographer-specific usage agreement was reviewed here.",
+      "licenseUrl": "https://palazzoconfalone.com/"
     }
   ],
   "destinationScenes": [
@@ -349,9 +445,9 @@
       "searchQuery": "Ravello Villa Rufolo gardens panoramic sea",
       "slotIntent": "Villa Rufolo gardens and Tyrrhenian Sea",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ravello-premium/destination/scene-1.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Jardines_de_Villa_Rufolo.jpg",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Jardines_de_Villa_Rufolo.jpg/1920px-Jardines_de_Villa_Rufolo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -368,7 +464,15 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Parterre fleuri et pergola dans les jardins historiques de Villa Rufolo à Ravello.",
+      "enCaption": "Flower bed and pergola in the historic Villa Rufolo gardens of Ravello.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "source_specific_commons_license",
+      "ownerRightsAuthorization": "Original photographer's published Commons licence and attribution documented in the source-page metadata.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     {
       "key": "scene-2",
@@ -376,9 +480,9 @@
       "searchQuery": "Ravello Villa Cimbrone Infinity Terrace sea",
       "slotIntent": "Terrazza dell'Infinito Villa Cimbrone marble busts",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Cimbrone_terraza_infinito_01.jpg",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Cimbrone_IMG_9872.JPG/1920px-Cimbrone_IMG_9872.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "7efe56388a831007039ac790930b633e8fb5cf5de38477c90a936402a7b4c93b",
@@ -398,7 +502,15 @@
       "outputSize": [
         1750,
         1167
-      ]
+      ],
+      "frCaption": "Bustes de marbre sur la Terrazza dell’Infinito à Villa Cimbrone, face à la mer.",
+      "enCaption": "Marble busts above the sea at the Terrace of Infinity in Villa Cimbrone.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "source_specific_commons_license",
+      "ownerRightsAuthorization": "Original photographer's published Commons licence and attribution documented in the source-page metadata.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     {
       "key": "scene-3",
@@ -406,9 +518,9 @@
       "searchQuery": "Ravello Piazza Duomo cathedral",
       "slotIntent": "Ravello Piazza Duomo and cathedral",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ravello-premium/destination/scene-3.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Duomo_Ravello,_from_Piazza_Duomo.jpg",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Duomo_Ravello%2C_from_Piazza_Duomo.jpg/1920px-Duomo_Ravello%2C_from_Piazza_Duomo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -425,7 +537,15 @@
       "outputSize": [
         1750,
         1167
-      ]
+      ],
+      "frCaption": "Façade de la cathédrale de Ravello et place du Duomo avec les visiteurs.",
+      "enCaption": "Ravello Cathedral's façade and the visitor-filled Piazza Duomo.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "source_specific_commons_license",
+      "ownerRightsAuthorization": "Original photographer's published Commons licence and attribution documented in the source-page metadata.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     {
       "key": "scene-4",
@@ -433,9 +553,9 @@
       "searchQuery": "Ravello San Giovanni del Toro church interior pulpit",
       "slotIntent": "Authentic decorated medieval church interior, not street panorama",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:San_Giovanni_del_Toro_Ravello.jpg",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Ravello._Chiesa_di_San_Giovanni_del_Toro_Interieur_Preekstoel%2C_GD012734.jpg/1920px-Ravello._Chiesa_di_San_Giovanni_del_Toro_Interieur_Preekstoel%2C_GD012734.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "fbb779357b84bc1899ba5cdd368fdcb470af178e493e0641210a531a49591471",
@@ -455,7 +575,15 @@
       "outputSize": [
         1450,
         1128
-      ]
+      ],
+      "frCaption": "Église San Giovanni del Toro à Ravello, façade et clocher médiévaux dans les jardins.",
+      "enCaption": "San Giovanni del Toro church in Ravello, its medieval exterior and bell tower.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "source_specific_commons_license",
+      "ownerRightsAuthorization": "Original photographer's published Commons licence and attribution documented in the source-page metadata.",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
     },
     {
       "key": "scene-5",
@@ -463,9 +591,9 @@
       "searchQuery": "view from Ravello to Minori seaside coastline",
       "slotIntent": "Real view of the sea and Minori town from Ravello viewpoint",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ravello-premium/destination/scene-5.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Vue_emblématique_de_Ravello.jpg",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Vue_embl%C3%A9matique_de_Ravello.jpg/1920px-Vue_embl%C3%A9matique_de_Ravello.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -482,7 +610,15 @@
       "outputSize": [
         1750,
         1167
-      ]
+      ],
+      "frCaption": "Côte de Minori et mer Tyrrhénienne vues depuis les hauteurs de Ravello.",
+      "enCaption": "Minori's coastal shoreline and the Tyrrhenian Sea viewed from elevated Ravello.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "source_specific_commons_license",
+      "ownerRightsAuthorization": "Original photographer's published Commons licence and attribution documented in the source-page metadata.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     {
       "key": "scene-6",
@@ -490,9 +626,9 @@
       "searchQuery": "Scala village Ravello mountains Italy",
       "slotIntent": "Scala mountain village overlooking valley",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ravello-premium/destination/scene-6.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Scala_Campania_panorama.jpg",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Scala_Campania_panorama.jpg/1920px-Scala_Campania_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -509,7 +645,15 @@
       "outputSize": [
         1750,
         772
-      ]
+      ],
+      "frCaption": "Village de Scala sur les terrasses agricoles des monts Lattari, près de Ravello.",
+      "enCaption": "Scala village on the terraced slopes of the Lattari mountains near Ravello.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "source_specific_commons_license",
+      "ownerRightsAuthorization": "Original photographer's published Commons licence and attribution documented in the source-page metadata.",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
     },
     {
       "key": "scene-7",
@@ -517,9 +661,9 @@
       "searchQuery": "Marmorata Amalfi coast Atrani",
       "slotIntent": "Marmorata coast below Ravello",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ravello-premium/destination/scene-7.webp",
       "sourcePage": "https://www.wexas.com/accommodation-offers/palazzo-avino-ravello-153313",
       "downloadUrl": "https://d19lgisewk9l6l.cloudfront.net/assetbank/palazzo-avino-clubhouse-by-the-sea-kayaking-1_51282.jpg",
@@ -536,7 +680,15 @@
       "outputSize": [
         1000,
         670
-      ]
+      ],
+      "frCaption": "Clubhouse by the Sea de Palazzo Avino à Marmorata : plateformes rocheuses et kayaks.",
+      "enCaption": "Palazzo Avino's separate Marmorata Clubhouse by the Sea, with rocky platforms and kayaks.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Bosphoras operator stated project-wide permission for photos in October 2026; no signed publisher/photographer-specific usage agreement was reviewed here.",
+      "licenseUrl": "https://www.wexas.com/accommodation-offers/palazzo-avino-ravello-153313"
     },
     {
       "key": "scene-8",
@@ -544,9 +696,9 @@
       "searchQuery": "Ravello Oscar Niemeyer auditorium",
       "slotIntent": "Auditorium Oscar Niemeyer Ravello exterior",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ravello-premium/destination/scene-8.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Ravello_-_Auditorium_Oscar_Niemeyer_-_2024-09-29_19-16-49_001.jpg",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Ravello_-_Auditorium_Oscar_Niemeyer_-_2024-09-29_19-16-49_001.jpg/1920px-Ravello_-_Auditorium_Oscar_Niemeyer_-_2024-09-29_19-16-49_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -563,7 +715,15 @@
       "outputSize": [
         1750,
         1169
-      ]
+      ],
+      "frCaption": "Auditorium Oscar Niemeyer à Ravello à l'heure du coucher du soleil.",
+      "enCaption": "Ravello's Oscar Niemeyer Auditorium overlooking the sea at sunset.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "source_specific_commons_license",
+      "ownerRightsAuthorization": "Original photographer's published Commons licence and attribution documented in the source-page metadata.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     {
       "key": "scene-9",
@@ -571,9 +731,9 @@
       "searchQuery": "Atrani Amalfi from sea",
       "slotIntent": "Atrani town and arches photographed from coast level, not from Ravello itself",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ravello-premium/destination/scene-9.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Atrani_(Italy).jpg",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Atrani_(Italy).jpg",
@@ -590,8 +750,18 @@
       "outputSize": [
         1750,
         1167
-      ]
+      ],
+      "frCaption": "Village littoral d’Atrani et arcades près d’Amalfi, photographiés depuis la mer.",
+      "enCaption": "Atrani's coastal village and arcades near Amalfi, photographed from sea level.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "Original WebP reviewed at full size in source-based visual gallery; real property or landmark, distinct photograph, correct location and caption checked; off-location and archival images removed.",
+      "imageTransformation": "Resized/re-encoded original JPEG to WebP without alteration to pictured subjects.",
+      "rightsEvidenceType": "source_specific_commons_license",
+      "ownerRightsAuthorization": "Original photographer's published Commons licence and attribution documented in the source-page metadata.",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
     }
   ],
-  "publicationBlockedReason": "Original source-backed 21-photo set not yet downloaded, visually approved, or licensed per original photographer. Noindex, no supplier bookability."
+  "publicationBlockedReason": "Ravello source/photo QA and bilingual editorial checks completed, but publication remains noindex pending full ten-destination Preview and authorised hotel inventory.",
+  "editorialPhotoQaAt": "2026-10-27",
+  "photoRightsBasis": "Eight Commons photos documented by specific public licences/public domain. Other originals visually matched the named provider and rely on operator's previously stated project-wide photo authorization; not a per-photographer contract audit."
 }
