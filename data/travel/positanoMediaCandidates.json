@@ -2,8 +2,8 @@
   "destination": "positano",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 11,
-  "downloadedDestinationCandidates": 8,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
@@ -259,14 +259,30 @@
       "property": "Il San Pietro di Positano",
       "propertyKey": "il-san-pietro",
       "slotIntent": "actual sunlit hotel exterior",
-      "sourcePage": "https://www.ilsanpietro.com/",
-      "status": "missing",
+      "sourcePage": "https://www.townandcountrymag.com/leisure/travel-guide/a8136/il-san-pietro-amalfi/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Previously rejected kitchen/staff photo recaptured due to source URL reuse; require actual cliffside building or property exterior.",
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
       "rejectedSource": "https://www.ilsanpietro.com/wp-content/uploads/2025/12/Kitchen_Zass_restaurant_at_il_san_pietro_positano_17-1024x613.jpg",
       "rejectedOriginalSha256": "3a1448e725944792417987ab419c2bab916396a808edef3105e685efcceea51c",
-      "rejectedCandidateContext": "Kitchen Zass restaurant at il san pietro positano 17   "
+      "rejectedCandidateContext": "Kitchen Zass restaurant at il san pietro positano 17   ",
+      "localPath": "/images/travel/positano-premium/il-san-pietro/view-1.webp",
+      "downloadUrl": "https://hips.hearstapps.com/townandcountry/assets/16/40/1475785304-01panoramic-view.jpg",
+      "candidateContext": "Real sunny aerial panorama of Il San Pietro hotel perched over deep blue water",
+      "credit": "Exact property image linked at https://www.townandcountrymag.com/leisure/travel-guide/a8136/il-san-pietro-amalfi/",
+      "license": "Publisher/source licence check required",
+      "sha256": "dc24a91313a4eec4ffed95510354593932d613b016d6029ab7b96e23a879b76e",
+      "dhash": "1011001010100110101000011100000111000100110000010111001100001001",
+      "bytes": 499508,
+      "originalSize": [
+        2048,
+        1365
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ]
     },
     {
       "key": "view-2",
@@ -533,14 +549,30 @@
       "placeLabel": "Positano ceramics and village streets",
       "searchQuery": "Positano narrow streets colourful ceramic",
       "slotIntent": "Positano ceramics and village streets",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Street scene lacks Positano ceramics shops, which the intended caption promises.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Positano_(32632824125).jpg",
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "sourcePage": "https://www.amalfipositano.com/en/photo/positano-ceramics-shop-in-the-center",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Positano_%2832632824125%29.jpg/1920px-Positano_%2832632824125%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "9c280c5586833240115a76e01922848547488f482cbeb17c0917ef58904661ac",
-      "rejectedCandidateContext": "Real Positano village shopping streets and colourful houses, subject identity to inspect"
+      "rejectedCandidateContext": "Real Positano village shopping streets and colourful houses, subject identity to inspect",
+      "localPath": "/images/travel/positano-premium/destination/scene-8.webp",
+      "downloadUrl": "https://www.amalfipositano.com/photos/positano-ceramics-shop-in-the-center-1280x800.jpg",
+      "candidateContext": "Photograph of traditional ceramic storefront in Positano: publisher explicitly permits reuse with attribution link",
+      "credit": "Source image from https://www.amalfipositano.com/en/photo/positano-ceramics-shop-in-the-center",
+      "license": "Publisher/photographer permission requires verification",
+      "sha256": "dd9c8de9e6a37d03c13eb1710687f6af443fc8be4b1d008caf41ed0840a3f482",
+      "dhash": "0100111100110111001100011011001110111011101110111000111111011101",
+      "bytes": 231594,
+      "originalSize": [
+        1280,
+        800
+      ],
+      "outputSize": [
+        1280,
+        800
+      ]
     },
     {
       "key": "scene-9",
