@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 6,
-  "downloadedDestinationCandidates": 4,
+  "downloadedDestinationCandidates": 3,
   "hotels": [
     {
       "key": "view-1",
@@ -307,27 +307,14 @@
       "placeLabel": "Plage de Soros",
       "searchQuery": "Soros Beach Antiparos",
       "slotIntent": "Plage de Soros",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
-      "localPath": "/images/travel/antiparos-premium/destination/scene-6.webp",
+      "visualQaWarning": "Generic Antiparos Beach Wikimedia file actually depicts north nude beach; it is not the Soros coast. Exact geolocated Soros image required.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Antiparos_Beach.jpg",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Antiparos_Beach.jpg",
-      "candidateContext": "Generic Antiparos beach; do not claim it depicts Soros without exact geolocation",
-      "credit": "Wikimedia Commons source author, check file history for attribution",
-      "license": "Creative Commons licence to verify in file",
-      "sha256": "ce34ba1db4396786b75617aa1ffb7a70c3d2655a1d5eb4a1dd8f2ac1194ab6fc",
-      "dhash": "0000000000000000000001000000110000000011000001110000110100110001",
-      "bytes": 251238,
-      "originalSize": [
-        2048,
-        1536
-      ],
-      "outputSize": [
-        1600,
-        1200
-      ]
+      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Antiparos_Beach.jpg",
+      "rejectedOriginalSha256": "ce34ba1db4396786b75617aa1ffb7a70c3d2655a1d5eb4a1dd8f2ac1194ab6fc",
+      "rejectedCandidateContext": "Generic Antiparos beach; do not claim it depicts Soros without exact geolocation"
     },
     {
       "key": "scene-7",

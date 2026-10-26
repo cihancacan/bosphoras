@@ -13,9 +13,9 @@ S.headers.update({"User-Agent":"BosphorasLuxuryStays/2.0 (editorial photo source
 "Accept":"text/html,image/jpeg,image/png,image/webp,*/*;q=.7"})
 HOTELS={
 "the-rooster":["https://therooster.me/","https://theroosterantiparos.com/accommodation/","https://therooster.me/accommodation/"],
-"the-beach-house":["https://beachhouseantiparos.com/","https://beachhouseantiparos.com/rooms/","https://beachhouseantiparos.com/gallery/"],
+"the-beach-house":["https://beachhouseantiparos.com/stay/","https://beachhouseantiparos.com/stay/medium-sea-view/","https://beachhouseantiparos.com/stay/large-sea-view/","https://beachhouseantiparos.com/"],
 "soros-beach":["https://www.sorosbeach.gr/","https://www.sorosbeach.gr/accommodation/"],
-"kastro-boutique":["https://www.antiparosgreece.com/","https://www.antiparosgreece.com/rooms/"]
+"kastro-boutique":["https://www.antiparosgreece.com/antiparos-rooms/","https://www.antiparosgreece.com/antiparos-accommodation/","https://www.antiparosgreece.com/hotel-photos-antiparos/","https://www.antiparosgreece.com/"]
 }
 SCENES={
 "scene-1":("Antiparos Chora harbour village Greece",("antiparos","chora")),
@@ -31,6 +31,56 @@ SCENES={
 # Exact sources are tied to the named real property or geolocated island place.
 # None implies commercial reuse rights until reviewed.
 EXACT_HOTELS={}
+
+EXACT_HOTEL_URLS={
+ "the-beach-house/view-2":[
+  ("https://cdn.shopify.com/s/files/1/0015/0028/2982/files/Antiparos_Beach_House_casa_vacanze_sul_mare_3.jpg?v=1767357925",
+   "https://greciamia.it/products/antiparos-beach-house",
+   "Real renovated Beach House guestroom at Apantima, Cycladic blue and white interior")],
+ "the-beach-house/view-3":[
+  ("https://www.turquoiseholidays.co.uk/media/31118/dsc07846.jpg?center=0.5%2C0.5&height=940&mode=crop&quality=70&rnd=134159900030000000&width=1920",
+   "https://www.turquoiseholidays.co.uk/destinations/mediterranean/greece/paros-antiparos/the-beach-house/",
+   "Actual Beach House Antiparos shaded outdoor lounge beside Apantima cove")],
+ "soros-beach/view-3":[
+  ("https://www.living-postcards.com/sites/default/files/10974601_348904911961552_6729751623096848134_o.jpg",
+   "https://www.living-postcards.com/blog/soros-beach-seafood-suites",
+   "Verified Soros Beach seaside dining terrace with tables and parasols")],
+ "kastro-boutique/view-1":[
+  ("https://www.myboutiquehotel.com/photos/112827/kastro-antiparos-antiparos-town-003-43692-2220x1400.jpg",
+   "https://www.myboutiquehotel.com/en/boutique-hotels-antiparos-town/kastro-antiparos.html",
+   "Kastro Boutique Resort genuine pool and cabana daybeds in sunlight")],
+ "kastro-boutique/view-3":[
+  ("https://www.myboutiquehotel.com/photos/112827/kastro-antiparos-antiparos-town-007-43693-2220x1400.jpg",
+   "https://www.myboutiquehotel.com/en/boutique-hotels-antiparos-town/kastro-antiparos.html",
+   "Kastro Antiparos real shaded pergola outdoor dining area beside pool")]
+}
+EXACT_LANDSCAPES={
+ "scene-1":[
+  ("https://s3-eu-west-1.amazonaws.com/welcome.mobile.production/uploads/welcome_experience/image/1598/traveler_page_header_antiparos__2_.jpg",
+   "https://traveler.welcomepickups.com/en/paros/sightseeing_rides/antiparos-ride-cave-town-castle-experience",
+   "Real aerial photograph of Antiparos Chora and port with boats and clear turquoise water")],
+ "scene-3":[
+  ("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/89/7c/0d/amazing-sunset-sifneiko.jpg?h=-1&s=1&w=1200",
+   "https://www.tripadvisor.ch/Restaurant_Review-g3569526-d12334953-Reviews-Sifneiko_Cafe-Antiparos_Town_Antiparos_Cyclades_South_Aegean.html",
+   "Sifneikos Gialos sunset viewed from Sifneiko Café's sea-facing terrace")],
+ "scene-4":[
+  ("https://images.squarespace-cdn.com/content/v1/6489d831dc9a515d83f5e390/7c60a337-8a66-411e-9736-7e6b946cb2c6/Livadia-Beach_Strand.jpg",
+   "https://www.greekislandhopping.de/blog/antiparos-straende",
+   "Livadia beach on Antiparos with west-coast dunes and natural wide sandy cove, not Livadia on Paros")],
+ "scene-5":[
+  ("https://www.thethinkingtraveller.com/media/Resized/Greece%20Local%20Areas/Antiparos/Beaches/Apantima/1920/shutterstock_763417117.jpg",
+   "https://www.thethinkingtraveller.com/greece/antiparos/villas/lexie",
+   "True Apantima Antiparos coastal hillside and shallow bay with traditional windmill")],
+ "scene-6":[
+  ("https://www.thethinkingtraveller.com/media/Resized/Greece%20Local%20Areas/Antiparos/Beaches/Soros/1920/shutterstock_764227255.jpg",
+   "https://www.thethinkingtraveller.com/greece/antiparos/villas/yvoni",
+   "Actual Soros sandy beach and clear sea with hilly background; source path specifically identifies Soros")],
+ "scene-9":[
+  ("https://cdn.prod.website-files.com/6626c3effbfcaaa0f48ca4b8/6626e2fb10d1a4be10ebb506_image%2035.webp",
+   "https://www.bonatsahouse.com/lifestyle/antiparos-travel-tips",
+   "Original Antiparos ferry quay photograph showing passenger and vehicle boats by island waterfront")]
+}
+
 # Fallback photographic file titles validated as locations on Wikimedia Commons.
 # These originals are unapproved until a separate visual and licensing review.
 EXACT_SCENES={
@@ -38,7 +88,7 @@ EXACT_SCENES={
 "scene-7":[("Antiparos Cave.jpg","Real cave interior from 2015 by Kondephy, geolocated Antiparos"),("Antiparos-cave.jpg","Genuine Greek Antiparos cave, Dimorsitanos 2009")],
 "scene-8":[("Despotiko.jpg","View from Agios Georgios towards island of Despotiko, Wicki2009")],
 "scene-1":[("Antiparos.jpg","Authentic Antiparos village or harbour, requires visual geographical QA")],
-"scene-6":[("Antiparos Beach.jpg","Generic Antiparos beach; do not claim it depicts Soros without exact geolocation")]
+"scene-6":[]
 }
 EXACT_SCENE_URLS={}
 def commons_original(filename):
@@ -142,7 +192,9 @@ def main():
    siteCache[key]=found;print("ANTIPAROS_SITE",key,len(found),flush=True)
   exact=[(150,url,page,ctx,"Photographer or source: "+page,"Commercial reuse licence needs confirmation")
     for url,page,ctx in EXACT_HOTELS.get(key+"/"+item["key"],[])]
-  capture(item,exact+siteCache[key],seenURLs,seenHashes,seenDHash)
+  linked=[(210,url,page,context,"Verified named-property source; photographer at "+page,
+    "Commercial photographer permission to verify") for url,page,context in EXACT_HOTEL_URLS.get(key+"/"+item["key"],[])]
+  capture(item,linked+exact+siteCache[key],seenURLs,seenHashes,seenDHash)
  for item in m["destinationScenes"]:
   if item.get("localPath"):continue
   query,tokens=SCENES[item["key"]]
@@ -151,7 +203,9 @@ def main():
      for name,ctx in EXACT_SCENES.get(item["key"],[])]
   direct=[(180,url,page,ctx,"Source photographer at "+page,"Publisher/photographer permission required")
      for url,page,ctx in EXACT_SCENE_URLS.get(item["key"],[])]
-  capture(item,direct+exact+commons(query,tokens),seenURLs,seenHashes,seenDHash)
+  located=[(210,url,page,context,"Documented exact place source: "+page,
+   "Photographer commercial permission requires verification") for url,page,context in EXACT_LANDSCAPES.get(item["key"],[])]
+  capture(item,located+direct+exact+commons(query,tokens),seenURLs,seenHashes,seenDHash)
  m["downloadedHotelCandidates"]=sum(bool(x.get("localPath")) for x in m["hotels"])
  m["downloadedDestinationCandidates"]=sum(bool(x.get("localPath")) for x in m["destinationScenes"])
  m["visuallyVerified"]=False;m["approvedForCommercialPublication"]=False
