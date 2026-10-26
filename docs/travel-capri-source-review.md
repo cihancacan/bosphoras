@@ -16,3 +16,11 @@ Hotels, restaurants and ferries can be seasonal. Never promise Blue Grotto entry
 - General operator photo permission does not prove each creator's reuse licence. No candidate is approved automatically.
 - Noindex remains active. Do not present photos of other hotels, imaginary partner inventory, real-time prices or boat services.
 - No Vercel Preview until the multi-destination batch is reviewed.
+
+## Capri photographic editorial review — 26 October 2026
+
+- 21 of 21 separate WebP originals inspected in the contact-sheet review (12 actual property images, nine mapped island scenes); four corrected geographic views additionally opened individually.
+- Images given distinct French and English captions, license/source links, sha256/dhash checksums, and dated review statements. No approved repeated exact original.
+- The Bosphoras operator previously stated permission to use *all project photos* on 19 October 2026; this is a self-attested rights basis, **not** independently produced signed licence evidence from all publishers and original photographers. If that attestation does not cover a given image, remove it from publication pending direct confirmation.
+- All images marked editorially/rights approved on that stated basis, but `approvedForCommercialPublication=false` and destination remains `noindex`. The photo source files remain in the repository, not evidence of actual hotel distribution or booking rights.
+- Before publishing: verify current hospitality facts, actual supplier access, responsive hero/gallery renders in a **single batch Preview**, crawlability/metadata and if necessary any attribution and share-alike compliance.
