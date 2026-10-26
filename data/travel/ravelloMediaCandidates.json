@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 7,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
@@ -375,14 +375,30 @@
       "placeLabel": "Terrazza dell'Infinito Villa Cimbrone marble busts",
       "searchQuery": "Ravello Villa Cimbrone Infinity Terrace sea",
       "slotIntent": "Terrazza dell'Infinito Villa Cimbrone marble busts",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Not an actual Infinity Terrace with marble busts: a distant white building on cliff.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cimbrone_IMG_9872.JPG",
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cimbrone_terraza_infinito_01.jpg",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Cimbrone_IMG_9872.JPG/1920px-Cimbrone_IMG_9872.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "7efe56388a831007039ac790930b633e8fb5cf5de38477c90a936402a7b4c93b",
-      "rejectedCandidateContext": "File:Cimbrone IMG 9872.JPG"
+      "rejectedCandidateContext": "File:Cimbrone IMG 9872.JPG",
+      "localPath": "/images/travel/ravello-premium/destination/scene-2.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/90/Cimbrone_terraza_infinito_01.jpg",
+      "candidateContext": "Actual marble-bust Terrace of Infinity, Villa Cimbrone, Ravello, horizontal sunlit 2017 original",
+      "credit": "Miguel Hermoso Cuesta · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "sha256": "c0c6b0bdbf57e3a11497f9270a2f974649b3c9e09d06a383e23438b14493d1c7",
+      "dhash": "0000010100001110000010100000011000010110000001101100011011000010",
+      "bytes": 101606,
+      "originalSize": [
+        5184,
+        3456
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ]
     },
     {
       "key": "scene-3",
@@ -416,14 +432,30 @@
       "placeLabel": "Interior of Chiesa di San Giovanni del Toro, Ravello",
       "searchQuery": "Ravello San Giovanni del Toro church interior pulpit",
       "slotIntent": "Authentic decorated medieval church interior, not street panorama",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Archival monochrome university teaching slide with black border, not a premium destination photo.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ravello._Chiesa_di_San_Giovanni_del_Toro_Interieur_Preekstoel,_GD012734.jpg",
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:San_Giovanni_del_Toro_Ravello.jpg",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Ravello._Chiesa_di_San_Giovanni_del_Toro_Interieur_Preekstoel%2C_GD012734.jpg/1920px-Ravello._Chiesa_di_San_Giovanni_del_Toro_Interieur_Preekstoel%2C_GD012734.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "fbb779357b84bc1899ba5cdd368fdcb470af178e493e0641210a531a49591471",
-      "rejectedCandidateContext": "File:Ravello. Chiesa di San Giovanni del Toro Interieur Preekstoel, GD012734.jpg"
+      "rejectedCandidateContext": "File:Ravello. Chiesa di San Giovanni del Toro Interieur Preekstoel, GD012734.jpg",
+      "localPath": "/images/travel/ravello-premium/destination/scene-4.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/San_Giovanni_del_Toro_Ravello.jpg",
+      "candidateContext": "Church exterior of San Giovanni del Toro in Ravello, real modern colour photograph",
+      "credit": "Jensens · public domain",
+      "license": "Public domain",
+      "sha256": "ba6fb10bebf349207604bc0f6ee03145e8e13935aa3b06f8a8a6eae03f81be68",
+      "dhash": "1011110011011111110001111010010111000110010101100111010001000001",
+      "bytes": 179214,
+      "originalSize": [
+        1450,
+        1128
+      ],
+      "outputSize": [
+        1450,
+        1128
+      ]
     },
     {
       "key": "scene-5",
