@@ -1,0 +1,52 @@
+{
+  "hotels": 9,
+  "scenes": 4,
+  "missing": [
+    "cavo-tagoo/view-1",
+    "cavo-tagoo/view-2",
+    "cavo-tagoo/view-3",
+    "destination/scene-3",
+    "destination/scene-4",
+    "destination/scene-5",
+    "destination/scene-6",
+    "destination/scene-9"
+  ],
+  "diagnostics": [
+    {
+      "url": "https://www.kalesmamykonos.com/gallery/",
+      "error": "404 Client Error: Not Found for url: https://www.kalesmamykonos.com/gallery/"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/jmklc-santa-marina-a-luxury-collection-resort-mykonos/overview/",
+      "error": "403 Client Error: Forbidden for url: https://www.marriott.com/en-us/hotels/jmklc-santa-marina-a-luxury-collection-resort-mykonos/overview/"
+    },
+    {
+      "url": "https://www.cavotagoo.com/mykonos/",
+      "error": "429 Client Error: Too Many Requests for url: https://www.cavotagoo.com/mykonos/"
+    },
+    {
+      "url": "https://booking-mykonos.cavotagoo.com/about",
+      "error": "403 Client Error: Forbidden for url: https://booking-mykonos.cavotagoo.com/about"
+    },
+    {
+      "url": "https://www.cavotagoo.com/mykonos/gallery/",
+      "error": "429 Client Error: Too Many Requests for url: https://www.cavotagoo.com/mykonos/gallery/"
+    },
+    {
+      "url": "https://www.grecotel.com/mykonosblu/gallery/",
+      "error": "404 Client Error: Not Found for url: https://www.grecotel.com/mykonosblu/gallery/"
+    },
+    {
+      "url": "https://www.grecotel.com/mykonosblu/PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3Lncz",
+      "error": "404 Client Error: Not Found for url: https://www.grecotel.com/mykonosblu/PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5v"
+    },
+    {
+      "url": "https://www.grecotel.com/mykonosblu/PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3Lncz",
+      "error": "404 Client Error: Not Found for url: https://www.grecotel.com/mykonosblu/PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5v"
+    },
+    {
+      "url": "https://www.grecotel.com/mykonosblu/wp-content/uploads/sites/5/webm/2026/05/02-grecotel-mykonos-blu-accommodation.webm",
+      "error": "404 Client Error: Not Found for url: https://www.grecotel.com/mykonosblu/wp-content/uploads/sites/5/webm/2026/05/02-grecotel-mykonos-blu-accommod"
+    }
+  ]
+}

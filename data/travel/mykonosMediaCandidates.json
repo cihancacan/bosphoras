@@ -2,8 +2,8 @@
   "destination": "mykonos",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 9,
+  "downloadedDestinationCandidates": 4,
   "hotels": [
     {
       "key": "view-1",
@@ -11,10 +11,26 @@
       "propertyKey": "kalesma",
       "slotIntent": "original hotel exterior or recognizable property view",
       "sourcePage": "https://www.kalesmamykonos.com/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/kalesma/view-1.webp",
+      "downloadUrl": "https://mozcp.kalesmamykonos.com/wp-content/uploads/2026/03/KalesmaMykonos1985-2.jpg",
+      "candidateContext": "   ",
+      "credit": "Original property site; photographer unidentified",
+      "license": "Commercial licence requires confirmation",
+      "sha256": "1eb20b929a3c81fcaf377cf42910dcb4e6629ab53f3c5008b6200aacd0614f31",
+      "dhash": "0000101100001011100111011000110110000101001011100010110001101100",
+      "bytes": 46240,
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ]
     },
     {
       "key": "view-2",
@@ -22,10 +38,26 @@
       "propertyKey": "kalesma",
       "slotIntent": "actual guestroom, suite or villa interior",
       "sourcePage": "https://www.kalesmamykonos.com/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/kalesma/view-2.webp",
+      "downloadUrl": "https://mozcp.kalesmamykonos.com/wp-content/uploads/2026/01/DSF4225-1.jpg.webp",
+      "candidateContext": "   ",
+      "credit": "Original property site; photographer unidentified",
+      "license": "Commercial licence requires confirmation",
+      "sha256": "018cfbbbd935444093b00860bc7fc858bb2f272377d418eb7b82c133d4c44fc0",
+      "dhash": "0111101011111001100110001101101011011011011110000111100001110010",
+      "bytes": 172096,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1750,
+        984
+      ]
     },
     {
       "key": "view-3",
@@ -33,43 +65,107 @@
       "propertyKey": "kalesma",
       "slotIntent": "real beach, pool or hotel dining terrace",
       "sourcePage": "https://www.kalesmamykonos.com/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/kalesma/view-3.webp",
+      "downloadUrl": "https://mozcp.kalesmamykonos.com/wp-content/uploads/2026/02/DSF2788.jpg.webp",
+      "candidateContext": "   ",
+      "credit": "Original property site; photographer unidentified",
+      "license": "Commercial licence requires confirmation",
+      "sha256": "9dbd8b6423eba43ebd3a1351fc7ed8464f3ed40ed5b7e1f24e4a2f2316745912",
+      "dhash": "1011001010110011101001111010011110101111101111111011111110111111",
+      "bytes": 220058,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1750,
+        984
+      ]
     },
     {
       "key": "view-1",
       "property": "Santa Marina, a Luxury Collection Resort, Mykonos",
       "propertyKey": "santa-marina",
       "slotIntent": "original hotel exterior or recognizable property view",
-      "sourcePage": "https://www.marriott.com/en-us/hotels/jmklc-santa-marina-a-luxury-collection-resort-mykonos/overview/",
-      "status": "missing",
+      "sourcePage": "https://www.santa-marina.gr/accommodation",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/santa-marina/view-1.webp",
+      "downloadUrl": "https://santamarina-15c57.kxcdn.com/wp-content/uploads/2026/09/smm-presidential-villa-header.jpg",
+      "candidateContext": "THE PRESIDENTIAL   ",
+      "credit": "Original property site; photographer unidentified",
+      "license": "Commercial licence requires confirmation",
+      "sha256": "77bd05e19656d967fb7b5b94287939fb60771c79550b9dd0cdf50a4ffa71ca22",
+      "dhash": "1001001100100011101100111001001111111101110110011001010111011111",
+      "bytes": 404784,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1750,
+        984
+      ]
     },
     {
       "key": "view-2",
       "property": "Santa Marina, a Luxury Collection Resort, Mykonos",
       "propertyKey": "santa-marina",
       "slotIntent": "actual guestroom, suite or villa interior",
-      "sourcePage": "https://www.marriott.com/en-us/hotels/jmklc-santa-marina-a-luxury-collection-resort-mykonos/overview/",
-      "status": "missing",
+      "sourcePage": "https://www.santa-marina.gr/accommodation",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/santa-marina/view-2.webp",
+      "downloadUrl": "https://santamarina-15c57.kxcdn.com/wp-content/uploads/2023/03/santa-marina-villa-turquoise-header.webp",
+      "candidateContext": "VILLA TURQUOISE   ",
+      "credit": "Original property site; photographer unidentified",
+      "license": "Commercial licence requires confirmation",
+      "sha256": "33ae212997596e476796bf6f18a8b49313a919339518679478463c4fcb6ba50a",
+      "dhash": "0010000000000000100000001110001101110110100110110010100101100100",
+      "bytes": 271024,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1750,
+        984
+      ]
     },
     {
       "key": "view-3",
       "property": "Santa Marina, a Luxury Collection Resort, Mykonos",
       "propertyKey": "santa-marina",
       "slotIntent": "real beach, pool or hotel dining terrace",
-      "sourcePage": "https://www.marriott.com/en-us/hotels/jmklc-santa-marina-a-luxury-collection-resort-mykonos/overview/",
-      "status": "missing",
+      "sourcePage": "https://www.santa-marina.gr/accommodation",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/santa-marina/view-3.webp",
+      "downloadUrl": "https://santamarina-15c57.kxcdn.com/wp-content/uploads/2023/03/santa-marina-villa-tanzanite-header.webp",
+      "candidateContext": "VILLA TANZANITE   ",
+      "credit": "Original property site; photographer unidentified",
+      "license": "Commercial licence requires confirmation",
+      "sha256": "55b1125b272ce95c08f6e226f2911a972deb3532b458f9f9b4644df8ee7feed1",
+      "dhash": "1111111111111111001111110111011001001110100011100001011101011001",
+      "bytes": 172028,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1750,
+        984
+      ]
     },
     {
       "key": "view-1",
@@ -109,11 +205,27 @@
       "property": "Mykonos Blu, Grecotel",
       "propertyKey": "mykonos-blu",
       "slotIntent": "original hotel exterior or recognizable property view",
-      "sourcePage": "https://www.grecotel.com/mykonosblu/",
-      "status": "missing",
+      "sourcePage": "https://www.grecotel.com/mykonosblu/accommodation/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/mykonos-blu/view-1.webp",
+      "downloadUrl": "https://www.grecotel.com/mykonosblu/wp-content/uploads/sites/5/2025/07/01-grecotel-mykonos-blu-aegean-sea.jpg",
+      "candidateContext": "   ",
+      "credit": "Original property site; photographer unidentified",
+      "license": "Commercial licence requires confirmation",
+      "sha256": "19fdeb3c3f41055c31f04f84557db20c8b575d4dde076c26fb9884e722d278de",
+      "dhash": "0000000000000011000011110100111101000011001111101111111101111100",
+      "bytes": 126290,
+      "originalSize": [
+        3500,
+        1970
+      ],
+      "outputSize": [
+        1750,
+        985
+      ]
     },
     {
       "key": "view-2",
@@ -121,10 +233,26 @@
       "propertyKey": "mykonos-blu",
       "slotIntent": "actual guestroom, suite or villa interior",
       "sourcePage": "https://www.grecotel.com/mykonosblu/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/mykonos-blu/view-2.webp",
+      "downloadUrl": "https://www.grecotel.com/mykonosblu/wp-content/uploads/sites/5/2026/06/01-the-resort-grecotel-mykonos-blu.jpg",
+      "candidateContext": "   ",
+      "credit": "Original property site; photographer unidentified",
+      "license": "Commercial licence requires confirmation",
+      "sha256": "fd7a4646220d461cecb076667a09d8fe4a4014d318ab39f2cef28238b7a5e857",
+      "dhash": "0000000000000000000000011000101110010011111100111010111100111000",
+      "bytes": 120926,
+      "originalSize": [
+        1600,
+        1090
+      ],
+      "outputSize": [
+        1600,
+        1090
+      ]
     },
     {
       "key": "view-3",
@@ -132,10 +260,26 @@
       "propertyKey": "mykonos-blu",
       "slotIntent": "real beach, pool or hotel dining terrace",
       "sourcePage": "https://www.grecotel.com/mykonosblu/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/mykonos-blu/view-3.webp",
+      "downloadUrl": "https://www.grecotel.com/mykonosblu/wp-content/uploads/sites/5/2026/06/04-mykonos-blu-grecotel-beach-pools.jpg",
+      "candidateContext": "   ",
+      "credit": "Original property site; photographer unidentified",
+      "license": "Commercial licence requires confirmation",
+      "sha256": "70255647b63a012ad181127b695e49aaddb4df1b404cd77720fd30736a64f546",
+      "dhash": "1111011101111011010110111001100110111111101111101010011110001111",
+      "bytes": 123730,
+      "originalSize": [
+        1600,
+        1090
+      ],
+      "outputSize": [
+        1600,
+        1090
+      ]
     }
   ],
   "destinationScenes": [
@@ -144,20 +288,54 @@
       "placeLabel": "Chora Mykonos whitewashed town and windmills",
       "slotIntent": "Chora Mykonos whitewashed town and windmills",
       "searchQuery": "Chora Mykonos whitewashed town and windmills Mykonos Greece photo",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chora_Windmills,_Mykonos,_Greece_(53505710707).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Chora_Windmills%2C_Mykonos%2C_Greece_%2853505710707%29.jpg/1920px-Chora_Windmills%2C_Mykonos%2C_Greece_%2853505710707%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Chora Windmills, Mykonos, Greece (53505710707).jpg",
+      "credit": "Warren LeMay from Chicago, IL, United States · CC BY-SA 2.0",
+      "license": "CC BY-SA 2.0",
+      "sha256": "9946192dce4c235c2e422ed742903721b04eb04fbd722ee8b9b41cfb9eac6d83",
+      "dhash": "1011000010110000100001101000011010000110100001100000001001011011",
+      "bytes": 405048,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-2",
       "placeLabel": "Little Venice waterfront houses and balconies",
       "slotIntent": "Little Venice waterfront houses and balconies",
       "searchQuery": "Little Venice waterfront houses and balconies Mykonos Greece photo",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Little_Venice,_Chora,_Mykonos,_Greece_(53505704507).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Little_Venice%2C_Chora%2C_Mykonos%2C_Greece_%2853505704507%29.jpg/1920px-Little_Venice%2C_Chora%2C_Mykonos%2C_Greece_%2853505704507%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Little Venice, Chora, Mykonos, Greece (53505704507).jpg",
+      "credit": "Warren LeMay from Chicago, IL, United States · CC BY-SA 2.0",
+      "license": "CC BY-SA 2.0",
+      "sha256": "aa25ada748b44509b08d6fed372420499c16c5b3f3e00a0c980d1df1a4e95333",
+      "dhash": "1001010011000001110101001011011010111011010101001000011100110101",
+      "bytes": 550764,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-3",
@@ -204,20 +382,54 @@
       "placeLabel": "Delos ancient ruins with Aegean Sea",
       "slotIntent": "Delos ancient ruins with Aegean Sea",
       "searchQuery": "Delos ancient ruins with Aegean Sea Mykonos Greece photo",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/destination/scene-7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:A_panoramic_view_of_Delos.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/A_panoramic_view_of_Delos.jpg/1920px-A_panoramic_view_of_Delos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:A panoramic view of Delos.jpg",
+      "credit": "ftrc · CC BY-SA 2.0",
+      "license": "CC BY-SA 2.0",
+      "sha256": "89bc98aecb42cf13ce1449b0d03d44006802662cbcac931b272fd58d9b61fcae",
+      "dhash": "1111110011111111111111110000011100001101100101101000011100011011",
+      "bytes": 602440,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1750,
+        984
+      ]
     },
     {
       "key": "scene-8",
       "placeLabel": "Ano Mera Mykonos monastery village",
       "slotIntent": "Ano Mera Mykonos monastery village",
       "searchQuery": "Ano Mera Mykonos monastery village Mykonos Greece photo",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/destination/scene-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mykonos_–_Kloster_Ano_Mera_-_panoramio_(1).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Mykonos_%E2%80%93_Kloster_Ano_Mera_-_panoramio_%281%29.jpg/1920px-Mykonos_%E2%80%93_Kloster_Ano_Mera_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Mykonos – Kloster Ano Mera - panoramio (1).jpg",
+      "credit": "giggel · CC BY 3.0",
+      "license": "CC BY 3.0",
+      "sha256": "8d50bcbb891a1970073698746470ad33fbb589d666980aed4405995c4aecf615",
+      "dhash": "1000000000101000010000010100111001010010111100110001100010010000",
+      "bytes": 69144,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-9",
