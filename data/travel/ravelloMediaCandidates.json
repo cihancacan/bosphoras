@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 9,
+  "downloadedDestinationCandidates": 7,
   "hotels": [
     {
       "key": "view-1",
@@ -375,27 +375,14 @@
       "placeLabel": "Terrazza dell'Infinito Villa Cimbrone marble busts",
       "searchQuery": "Ravello Villa Cimbrone Infinity Terrace sea",
       "slotIntent": "Terrazza dell'Infinito Villa Cimbrone marble busts",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
-      "localPath": "/images/travel/ravello-premium/destination/scene-2.webp",
+      "visualQaWarning": "Not an actual Infinity Terrace with marble busts: a distant white building on cliff.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Cimbrone_IMG_9872.JPG",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Cimbrone_IMG_9872.JPG/1920px-Cimbrone_IMG_9872.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "candidateContext": "File:Cimbrone IMG 9872.JPG",
-      "credit": "Deror_avi · CC BY-SA 4.0",
-      "license": "CC BY-SA 4.0",
-      "sha256": "7efe56388a831007039ac790930b633e8fb5cf5de38477c90a936402a7b4c93b",
-      "dhash": "1111111011101110010110011010011011100011110110000110011000100111",
-      "bytes": 139056,
-      "originalSize": [
-        1920,
-        1280
-      ],
-      "outputSize": [
-        1750,
-        1167
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Cimbrone_IMG_9872.JPG/1920px-Cimbrone_IMG_9872.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedOriginalSha256": "7efe56388a831007039ac790930b633e8fb5cf5de38477c90a936402a7b4c93b",
+      "rejectedCandidateContext": "File:Cimbrone IMG 9872.JPG"
     },
     {
       "key": "scene-3",
@@ -429,33 +416,20 @@
       "placeLabel": "Interior of Chiesa di San Giovanni del Toro, Ravello",
       "searchQuery": "Ravello San Giovanni del Toro church interior pulpit",
       "slotIntent": "Authentic decorated medieval church interior, not street panorama",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
-      "localPath": "/images/travel/ravello-premium/destination/scene-4.webp",
+      "visualQaWarning": "Archival monochrome university teaching slide with black border, not a premium destination photo.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Ravello._Chiesa_di_San_Giovanni_del_Toro_Interieur_Preekstoel,_GD012734.jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Ravello._Chiesa_di_San_Giovanni_del_Toro_Interieur_Preekstoel%2C_GD012734.jpg/1920px-Ravello._Chiesa_di_San_Giovanni_del_Toro_Interieur_Preekstoel%2C_GD012734.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "candidateContext": "File:Ravello. Chiesa di San Giovanni del Toro Interieur Preekstoel, GD012734.jpg",
-      "credit": "Unknown author Unknown author · Public domain",
-      "license": "Public domain",
-      "sha256": "fbb779357b84bc1899ba5cdd368fdcb470af178e493e0641210a531a49591471",
-      "dhash": "1000011010010110100111101001101010010010100101101001111010011100",
-      "bytes": 249168,
-      "originalSize": [
-        1920,
-        1625
-      ],
-      "outputSize": [
-        1418,
-        1200
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Ravello._Chiesa_di_San_Giovanni_del_Toro_Interieur_Preekstoel%2C_GD012734.jpg/1920px-Ravello._Chiesa_di_San_Giovanni_del_Toro_Interieur_Preekstoel%2C_GD012734.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedOriginalSha256": "fbb779357b84bc1899ba5cdd368fdcb470af178e493e0641210a531a49591471",
+      "rejectedCandidateContext": "File:Ravello. Chiesa di San Giovanni del Toro Interieur Preekstoel, GD012734.jpg"
     },
     {
       "key": "scene-5",
-      "placeLabel": "Ravello village rooftops and coast",
-      "searchQuery": "Ravello rooftop Amalfi coastline",
-      "slotIntent": "Ravello village rooftops and coast",
+      "placeLabel": "Amalfi coastline and Minori beach seen from Ravello",
+      "searchQuery": "view from Ravello to Minori seaside coastline",
+      "slotIntent": "Real view of the sea and Minori town from Ravello viewpoint",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
@@ -561,9 +535,9 @@
     },
     {
       "key": "scene-9",
-      "placeLabel": "Amalfi and Atrani panorama from Ravello",
-      "searchQuery": "Amalfi Atrani coast view Ravello",
-      "slotIntent": "Amalfi and Atrani panorama from Ravello",
+      "placeLabel": "Atrani shoreline seen from sea beneath the Ravello hills",
+      "searchQuery": "Atrani Amalfi from sea",
+      "slotIntent": "Atrani town and arches photographed from coast level, not from Ravello itself",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,

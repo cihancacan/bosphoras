@@ -62,6 +62,16 @@ EXACT_COMMONS={
   ("Campania Ravello2 tango7174.jpg","Authentic view from Ravello towards Pontone and Atrani on the sea")],
 }
 EXACT_DIRECT={
+ "scene-2":[
+  ("COMMONS_ORIGINAL:Cimbrone terraza infinito 01.jpg",
+   "https://commons.wikimedia.org/wiki/File:Cimbrone_terraza_infinito_01.jpg",
+   "Actual marble-bust Terrace of Infinity, Villa Cimbrone, Ravello, horizontal sunlit 2017 original",
+   "Miguel Hermoso Cuesta · CC BY-SA 4.0")],
+ "scene-4":[
+  ("COMMONS_ORIGINAL:San Giovanni del Toro Ravello.jpg",
+   "https://commons.wikimedia.org/wiki/File:San_Giovanni_del_Toro_Ravello.jpg",
+   "Church exterior of San Giovanni del Toro in Ravello, real modern colour photograph",
+   "Jensens · public domain")],
  "scene-9":[
   ("COMMONS_ORIGINAL:Atrani (Italy).jpg",
    "https://commons.wikimedia.org/wiki/File:Atrani_(Italy).jpg",
@@ -197,7 +207,7 @@ def capture(item,options,seen_urls,seen_hashes,seen_dhash):
 def main():
  m=json.loads(DOC.read_text(encoding="utf8"))
  items=m["hotels"]+m["destinationScenes"]
- seen_urls={x["downloadUrl"].split("?")[0] for x in items if x.get("downloadUrl")}
+ seen_urls={u.split("?")[0] for x in items for u in (x.get("downloadUrl"),x.get("rejectedSource")) if isinstance(u,str) and u.startswith("https://")}
  seen_hashes={x["sha256"] for x in items if x.get("sha256")}
  seen_dhash=[x["dhash"] for x in items if x.get("dhash")]
  cache={}
@@ -229,7 +239,7 @@ def main():
   # art direction and locality are still manually reviewed after download.
   exactPages=[(125,url,page,desc,author,lic) for _,url,page,desc,author,lic in exactPages]
   exact=[(220,commons_original_url(url.split(":",1)[1]) if url.startswith("COMMONS_ORIGINAL:") else url,
-    page,desc,author,"CC BY 4.0" if url.startswith("COMMONS_ORIGINAL:") else "Original photographer permission requires verification")
+    page,desc,author,("CC BY-SA 4.0" if item["key"]=="scene-2" else "Public domain" if item["key"]=="scene-4" else "CC BY 4.0") if url.startswith("COMMONS_ORIGINAL:") else "Original photographer permission requires verification")
     for url,page,desc,author in EXACT_DIRECT.get(item["key"],[])]
   capture(item,exact+exactPages+known+commons_candidates(q,terms),seen_urls,seen_hashes,seen_dhash)
  m["downloadedHotelCandidates"]=sum(bool(x.get("localPath")) for x in m["hotels"])
