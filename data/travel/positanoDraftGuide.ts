@@ -94,10 +94,10 @@ export const positanoDraftGuide = {
       "name": "Le Sirenuse",
       "area": "Via Cristoforo Colombo 30 · Positano centre",
       "officialUrl": "https://sirenuse.it/en/",
-      "fr": "Le Sirenuse est l'adresse emblématique de la pente centrale de Positano. Fondé par la famille Sersale, il associe les terrasses ocre, l'art et la vue sur la coupole de Santa Maria Assunta à une hospitalité intime. Le restaurant La Sponda et les bars appartiennent à l'expérience de l'établissement, mais une photographie de table n'en assure pas la réservation. Les chambres et suites ne disposent pas toutes de la même orientation ni du même balcon ; il faut confirmer catégorie, dimensions et perspective véritable. Les ruelles et escaliers vers Spiaggia Grande sont une composante du séjour : le palace domine le centre, il n'est pas une plage de sable privée accessible sans dénivelé. Les services saisonniers et réservations doivent être vérifiés aux dates choisies.",
-      "en": "Le Sirenuse is the signature hotel on Positano's central hillside. The Sersale family's property pairs warm-toned terraces, art, dining and a celebrated view towards Santa Maria Assunta with the feel of a private home. La Sponda and the bars are part of its identity, but a photograph of a table is not a confirmed restaurant reservation. Room types differ in layout, terrace access and exact view; request the booked category rather than inferring its outlook from a panoramic hotel portrait. Walks down to Spiaggia Grande involve Positano's typical slopes and stairs. This elevated grand hotel is not the same as a sandy waterfront resort; seasonal facilities must be verified for the actual dates.",
-      "frWatch": "Vérifier suite, balcon, vue, accès au restaurant et escaliers jusqu'à Spiaggia Grande.",
-      "enWatch": "Confirm suite, balcony, exact outlook, dining access and steps to Spiaggia Grande."
+      "fr": "Le Sirenuse est l'adresse emblématique de la pente centrale de Positano. Fondé par la famille Sersale, il associe les terrasses ocre, l'art et la vue sur la coupole de Santa Maria Assunta à une hospitalité intime. Le restaurant La Sponda et les bars appartiennent à l'expérience de l'établissement, mais une photographie de table n'en assure pas la réservation. Les chambres et suites ne disposent pas toutes de la même orientation ni du même balcon ; il faut confirmer catégorie, dimensions et perspective véritable. Les ruelles et escaliers vers Spiaggia Grande sont une composante du séjour : le palace domine le centre, il n'est pas une plage de sable privée accessible sans dénivelé. Les services saisonniers et réservations doivent être vérifiés aux dates choisies. Attention aux familles : dans ses conditions de chambre publiées, Le Sirenuse indique ne pas accueillir les enfants jusqu'à 6 ans. Vérifier ces règles directement avec l'hôtel avant de proposer un séjour.",
+      "en": "Le Sirenuse is the signature hotel on Positano's central hillside. The Sersale family's property pairs warm-toned terraces, art, dining and a celebrated view towards Santa Maria Assunta with the feel of a private home. La Sponda and the bars are part of its identity, but a photograph of a table is not a confirmed restaurant reservation. Room types differ in layout, terrace access and exact view; request the booked category rather than inferring its outlook from a panoramic hotel portrait. Walks down to Spiaggia Grande involve Positano's typical slopes and stairs. This elevated grand hotel is not the same as a sandy waterfront resort; seasonal facilities must be verified for the actual dates. Important for families: the hotel's published room terms do not allow children aged six or younger. Reconfirm the precise age policy with the property before proposing a stay.",
+      "frWatch": "Confirmer suite, balcon et escaliers ; l'hôtel indique que les enfants de 6 ans ou moins ne sont pas admis.",
+      "enWatch": "Confirm room, balcony and stairs; the hotel's published terms exclude children aged six and under."
     },
     {
       "name": "Hotel Poseidon Positano",
@@ -132,13 +132,15 @@ export const positanoDraftGuide = {
     "Les escaliers sont nombreux : demander la dépose et le transport des bagages.",
     "Les ferries vers Capri et Amalfi sont sensibles à l'état de la mer.",
     "Fornillo et Spiaggia Grande sont deux plages différentes aux accès distincts.",
-    "Réserver séparément plage privée, restaurant et transfert sur confirmation réelle."
+    "Réserver séparément plage privée, restaurant et transfert sur confirmation réelle.",
+    "Pour Le Sirenuse, vérifier la politique d'âge : les conditions publiées excluent les enfants jusqu'à 6 ans."
   ],
   "checksEn": [
     "A hotel sea panorama does not guarantee a sea-view room or direct beach access.",
     "Expect significant stairs: check vehicle drop-off and baggage assistance.",
     "Ferries to Capri and Amalfi are subject to sea conditions.",
     "Fornillo and Spiaggia Grande are separate beaches with different approaches.",
-    "Confirm beach clubs, restaurants and transfers as independent reservations."
+    "Confirm beach clubs, restaurants and transfers as independent reservations.",
+    "Le Sirenuse's published terms exclude children aged six and under; verify the age policy before booking."
   ]
 } as const;
