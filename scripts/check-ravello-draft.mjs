@@ -14,6 +14,8 @@ assert(g.editorialFr.includes('13 avril 2027')&&g.editorialEn.includes('13 April
 assert(g.editorialFr.includes('uniquement à pied')&&g.editorialEn.includes('pedestrian-only'));
 assert(m.hotels.length===12&&m.destinationScenes.length===9);
 assert(!m.visuallyVerified&&!m.approvedForCommercialPublication);
+const downloads=[...m.hotels,...m.destinationScenes].filter(x=>x.localPath);
+assert.equal(new Set(downloads.map(x=>x.sha256)).size,downloads.length,'Repeated exact photo');
 for(const x of [...m.hotels,...m.destinationScenes]){assert(!x.visuallyVerified&&!x.commercialRightsCleared);}
 assert(read('data/travel/featuredCityGuides.ts').includes("'ravello': ravelloGuide"));
 assert(read('components/travel/TravelPages.tsx').includes('isRavello'));

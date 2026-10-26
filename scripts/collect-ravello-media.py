@@ -87,6 +87,7 @@ def dhash(im):
  return "".join("1" if p[y*9+x]>p[y*9+x+1] else "0" for y in range(8) for x in range(8))
 def capture(item,options,seen_urls,seen_hashes,seen_dhash):
  if item.get("localPath"):return False
+ # Do not treat a downloaded file as proof of a real-property match or commercial permission.
  for priority,url,source,description,author,licence in sorted(options,key=lambda x:-x[0]):
   if url.split("?")[0] in seen_urls:continue
   r=request(url)
