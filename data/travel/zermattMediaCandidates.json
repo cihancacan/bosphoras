@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 7,
+  "downloadedDestinationCandidates": 9,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -491,18 +491,30 @@
       "key": "scene-3",
       "placeLabel": "Bahnhofstrasse",
       "searchQuery": "Bahnhofstrasse Zermatt",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bahnhofstrasse_(Zermatt)_08.jpg",
-      "candidateContext": "Zermatt Bahnhofstrasse 2022 photo by Abxbay, Creative Commons",
-      "credit": "Photograph from the named original publisher; author needs confirmation",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bahnhofstrasse_in_Zermatt.jpg",
+      "candidateContext": "Authentic wide view along Bahnhofstrasse toward St. Mauritius, photographed August 2019; summer streetscape",
+      "credit": "Tiia Monto | CC BY-SA 3.0",
       "license": "CC BY-SA 3.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "rejectedSource": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bahnhofstrasse_%28Zermatt%29_08.jpg?width=1600",
-      "visualQaWarning": "Swiss flags and retail signs dominate; lacks the broad elegant Bahnhofstrasse view required for Bosphoras premium.",
-      "rejectedCandidateContext": "Zermatt Bahnhofstrasse 2022 photo by Abxbay, Creative Commons"
+      "visualQaWarning": "New image candidate; inspect composition, location, season, uniqueness and source attribution before publishing.",
+      "rejectedCandidateContext": "Zermatt Bahnhofstrasse 2022 photo by Abxbay, Creative Commons",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-3.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Bahnhofstrasse_in_Zermatt.jpg/1920px-Bahnhofstrasse_in_Zermatt.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha256": "e8b002f3c674040c3b2ab9801deea19a5db6558670f508756ebbf7783fc3c9a2",
+      "bytes": 427218,
+      "originalSize": [
+        1920,
+        1185
+      ],
+      "outputSize": [
+        1700,
+        1049
+      ]
     },
     {
       "key": "scene-4",
@@ -572,20 +584,32 @@
       "key": "scene-6",
       "placeLabel": "Riffelalp",
       "searchQuery": "Riffelalp Switzerland",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:3809_-_Zermatt_-_View_from_Gornergratbahn.JPG",
-      "candidateContext": "Alpine views along the Gornergratbahn",
-      "credit": "Photograph from the named original publisher; author needs confirmation",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:3978_-_Zermatt_and_Riffelalp_viewed_from_Riffelberg.JPG",
+      "candidateContext": "Riffelalp and Zermatt below Riffelberg; actual historic geographic view, not hotel grounds",
+      "credit": "Andrew Bossi | CC BY-SA 2.5",
       "rejectedSource": "https://commons.wikimedia.org/wiki/Special:Redirect/file/3809_-_Zermatt_-_View_from_Gornergratbahn.JPG?width=1600",
       "frCaption": "Vue sur le village de Zermatt et la vallée depuis la ligne du Gornergrat",
       "enCaption": "Panoramic view of Zermatt village and valley from the Gornergrat railway",
       "ownerRightsAuthorization": "Bosphoras operator confirms image usage rights on 2026-10-19",
       "visualReviewedAt": "2026-10-19",
       "visualReviewBasis": "Original WebP inspected individually, scene geographically matched to source with premium quality and seasonal accuracy.",
-      "visualQaWarning": "Repeated photograph from Gornergratbahn with intrusive power/cable line, not suitable for Bosphoras luxury guide."
+      "visualQaWarning": "New image candidate; inspect composition, location, season, uniqueness and source attribution before publishing.",
+      "localPath": "/images/travel/zermatt-premium/destination/scene-6.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/3978_-_Zermatt_and_Riffelalp_viewed_from_Riffelberg.JPG/1920px-3978_-_Zermatt_and_Riffelalp_viewed_from_Riffelberg.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sha256": "46ed629540d1ba8c0d29f73528dbcb6a50c70d99c5a5c9e6c9d64742b526915f",
+      "bytes": 413692,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-7",
