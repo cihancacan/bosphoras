@@ -2,8 +2,8 @@
   "destination": "antiparos",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 9,
+  "downloadedHotelCandidates": 11,
+  "downloadedDestinationCandidates": 6,
   "hotels": [
     {
       "key": "view-1",
@@ -173,26 +173,13 @@
       "propertyKey": "soros-beach",
       "slotIntent": "real property exterior",
       "sourcePage": "https://www.sorosbeach.gr/",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
-      "localPath": "/images/travel/antiparos-premium/soros-beach/view-1.webp",
-      "downloadUrl": "https://www.sorosbeach.gr/wp-content/uploads/2021/04/soros_bliss_greece-1.jpg",
-      "candidateContext": "   ",
-      "credit": "Original property site; photographer unidentified",
-      "license": "Commercial licence requires confirmation",
-      "sha256": "c303b52a9bd22a8fec3092d5570370b2bb7c6e10eb4d2a10d273c404ba8d76de",
-      "dhash": "0110111001101110011001000110110001101100011011001010111001001110",
-      "bytes": 121820,
-      "originalSize": [
-        1920,
-        824
-      ],
-      "outputSize": [
-        1750,
-        751
-      ]
+      "visualQaWarning": "Current photo is a promotional fashion model holding branded tote, not the actual hotel or room.",
+      "rejectedSource": "https://www.sorosbeach.gr/wp-content/uploads/2021/04/soros_bliss_greece-1.jpg",
+      "rejectedOriginalSha256": "c303b52a9bd22a8fec3092d5570370b2bb7c6e10eb4d2a10d273c404ba8d76de",
+      "rejectedCandidateContext": "   "
     },
     {
       "key": "view-2",
@@ -390,27 +377,14 @@
       "placeLabel": "Coucher de soleil Sifneikos Gialos",
       "searchQuery": "Antiparos Sifneikos Gialos sunset",
       "slotIntent": "Coucher de soleil Sifneikos Gialos",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
-      "localPath": "/images/travel/antiparos-premium/destination/scene-3.webp",
+      "visualQaWarning": "Sunset photograph contains visible Sifneiko Cafe watermark and logo. Replace with unwatermarked coastal source.",
       "sourcePage": "https://www.tripadvisor.ch/Restaurant_Review-g3569526-d12334953-Reviews-Sifneiko_Cafe-Antiparos_Town_Antiparos_Cyclades_South_Aegean.html",
-      "downloadUrl": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/89/7c/0d/amazing-sunset-sifneiko.jpg?h=-1&s=1&w=1200",
-      "candidateContext": "Sifneikos Gialos sunset viewed from Sifneiko Café's sea-facing terrace",
-      "credit": "Documented exact place source: https://www.tripadvisor.ch/Restaurant_Review-g3569526-d12334953-Reviews-Sifneiko_Cafe-Antiparos_Town_Antiparos_Cyclades_South_Aegean.html",
-      "license": "Photographer commercial permission requires verification",
-      "sha256": "dd05f685567a935b03cef6ef6a9a217d7c2b51ab104a14494da0444af43ae923",
-      "dhash": "0000111100001111000011110000111100001110000111111011111100010011",
-      "bytes": 126802,
-      "originalSize": [
-        1200,
-        741
-      ],
-      "outputSize": [
-        1200,
-        741
-      ]
+      "rejectedSource": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/89/7c/0d/amazing-sunset-sifneiko.jpg?h=-1&s=1&w=1200",
+      "rejectedOriginalSha256": "dd05f685567a935b03cef6ef6a9a217d7c2b51ab104a14494da0444af43ae923",
+      "rejectedCandidateContext": "Sifneikos Gialos sunset viewed from Sifneiko Café's sea-facing terrace"
     },
     {
       "key": "scene-4",
@@ -501,54 +475,28 @@
       "placeLabel": "Grotte d'Antiparos",
       "searchQuery": "Antiparos Cave Greece",
       "slotIntent": "Grotte d'Antiparos",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
-      "localPath": "/images/travel/antiparos-premium/destination/scene-7.webp",
+      "visualQaWarning": "Source shows garish artificial lime-green cave lighting; prefer modern geographically verified cave original.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Antiparos_cave.JPG",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Antiparos_cave.JPG/1920px-Antiparos_cave.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "candidateContext": "File:Antiparos cave.JPG",
-      "credit": "Vitum · Public domain",
-      "license": "Public domain",
-      "sha256": "6701b90b0ee09a0da8582df6dd27e6b3d7d7f0bd471f6136d73126065314b05e",
-      "dhash": "0011001100011110000111110000111100001111001010111001101110011011",
-      "bytes": 574972,
-      "originalSize": [
-        1920,
-        1440
-      ],
-      "outputSize": [
-        1600,
-        1200
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Antiparos_cave.JPG/1920px-Antiparos_cave.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedOriginalSha256": "6701b90b0ee09a0da8582df6dd27e6b3d7d7f0bd471f6136d73126065314b05e",
+      "rejectedCandidateContext": "File:Antiparos cave.JPG"
     },
     {
       "key": "scene-8",
-      "placeLabel": "Agios Georgios et îlot Despotiko",
+      "placeLabel": "Despotiko beach and turquoise cove facing Antiparos",
       "searchQuery": "Antiparos Agios Georgios Despotiko",
-      "slotIntent": "Agios Georgios et îlot Despotiko",
-      "status": "candidate_needs_visual_review",
+      "slotIntent": "Genuine cove on Despotiko, viewed from shore, not false viewpoint on Agios Georgios.",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
-      "localPath": "/images/travel/antiparos-premium/destination/scene-8.webp",
+      "visualQaWarning": "Previous Despotiko photograph is foggy and featureless, missing distinctive turquoise coast. Replace with real cove.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Despotiko.jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Despotiko.jpg/1920px-Despotiko.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "candidateContext": "File:Despotiko.jpg",
-      "credit": "Wicki2009 at English Wikipedia · CC BY-SA 3.0",
-      "license": "CC BY-SA 3.0",
-      "sha256": "2d8e11343c582240d34d2a339ba44f0eb22b32e3fe7a3b67e27ef13d06f9ffd3",
-      "dhash": "0000011100000001000110000000111100001111000100110000011100010011",
-      "bytes": 79316,
-      "originalSize": [
-        1920,
-        1284
-      ],
-      "outputSize": [
-        1750,
-        1170
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Despotiko.jpg/1920px-Despotiko.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedOriginalSha256": "2d8e11343c582240d34d2a339ba44f0eb22b32e3fe7a3b67e27ef13d06f9ffd3",
+      "rejectedCandidateContext": "File:Despotiko.jpg"
     },
     {
       "key": "scene-9",

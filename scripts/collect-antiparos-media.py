@@ -33,6 +33,9 @@ SCENES={
 EXACT_HOTELS={}
 
 EXACT_HOTEL_URLS={
+ "soros-beach/view-1":[("https://www.living-postcards.com/sites/default/files/10582814_366068893578487_2840551803589687895_o.jpg",
+   "https://www.living-postcards.com/blog/soros-beach-seafood-suites",
+   "Real Soros Beach Antiparos beach daybeds with olive-and-purple cushions beneath straw shading, NOT a fashion advertisement")],
  "the-beach-house/view-2":[
   ("https://cdn.shopify.com/s/files/1/0015/0028/2982/files/Antiparos_Beach_House_casa_vacanze_sul_mare_3.jpg?v=1767357925",
    "https://greciamia.it/products/antiparos-beach-house",
@@ -59,6 +62,12 @@ EXACT_HOTEL_URLS={
    "Kastro Antiparos real shaded pergola outdoor dining area beside pool")]
 }
 EXACT_LANDSCAPES={
+ "scene-3":[("https://www.fantasytravelofgreece.com/sites/default/files/sifneiko_beach.png",
+   "https://www.fantasytravelofgreece.com/tours-in-greece/cruise-around-antiparos-and-despotiko",
+   "Authentic Sifneiko coast at golden sunset with a yacht silhouette, no watermarked cafe footer")],
+ "scene-8":[("https://www.topgreekislands.gr/sites/default/files/images/spot/despotiko_2.jpg",
+   "https://www.topgreekislands.gr/en/sights/beaches-despotiko",
+   "Genuine cove and beach on Despotiko Island offshore Agios Georgios, Antiparos; do not call it the main Agios Georgios village beach")],
  "scene-1":[
   ("https://s3-eu-west-1.amazonaws.com/welcome.mobile.production/uploads/welcome_experience/image/1598/traveler_page_header_antiparos__2_.jpg",
    "https://traveler.welcomepickups.com/en/paros/sightseeing_rides/antiparos-ride-cave-town-castle-experience",
@@ -88,6 +97,8 @@ EXACT_LANDSCAPES={
 # Fallback photographic file titles validated as locations on Wikimedia Commons.
 # These originals are unapproved until a separate visual and licensing review.
 EXACT_SCENES={
+ "scene-7":[("Antiparos Cave 247279.jpg","Actual cave interior photographed by Zde June 2024, CC BY-SA 4.0")],
+
 "scene-2":[("Antiparos, Kastro, 247356.jpg","Antiparos village near the historic Kastro, Zde 2024")],
 "scene-7":[("Antiparos Cave.jpg","Real cave interior from 2015 by Kondephy, geolocated Antiparos"),("Antiparos-cave.jpg","Genuine Greek Antiparos cave, Dimorsitanos 2009")],
 "scene-8":[("Despotiko.jpg","View from Agios Georgios towards island of Despotiko, Wicki2009")],
@@ -209,7 +220,7 @@ def main():
      for url,page,ctx in EXACT_SCENE_URLS.get(item["key"],[])]
   located=[(210,url,page,context,"Documented exact place source: "+page,
    "Photographer commercial permission requires verification") for url,page,context in EXACT_LANDSCAPES.get(item["key"],[])]
-  capture(item,located+direct+exact+commons(query,tokens),seenURLs,seenHashes,seenDHash)
+  capture(item,exact+located+direct+commons(query,tokens),seenURLs,seenHashes,seenDHash)
  m["downloadedHotelCandidates"]=sum(bool(x.get("localPath")) for x in m["hotels"])
  m["downloadedDestinationCandidates"]=sum(bool(x.get("localPath")) for x in m["destinationScenes"])
  m["visuallyVerified"]=False;m["approvedForCommercialPublication"]=False
