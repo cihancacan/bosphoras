@@ -185,6 +185,10 @@ PALACE_ALTERNATES = {
 }
 SCENES_EXACT = {
  "scene-6": [
+  # Prefer clear daytime official tourism imagery; retain fallback sources.
+  ("https://media.myswitzerland.com/image/fetch/c_lfill%2Cg_auto%2Cw_3200%2Ch_1800/f_auto%2Cq_80%2Cfl_keep_iptc/https%3A/www.myswitzerland.com/-/media/st/gadmin/images/destinations/winter/vantage%20point/alpenbeizli_wasserngrat-gstaad-terrasse_239273.jpg",
+   "https://www.myswitzerland.com/de-ch/erlebnisse/essen-trinken/restaurant/bergrestaurant-wasserngrat/",
+   "Bergrestaurant Wasserngrat, sunny mountain-facing wooden terrace"),
   ("https://madeinbern.com/fileadmin/_processed_/f/8/csm_6_8_f_2_68f286a5a219113204b1e8b9dce4c1321b911e8f_25-03f9d784f61163777ed2dfd2d5697d95_e0225c805f.jpg",
    "https://madeinbern.com/en/business/venue-finder/wasserngrat-mountain-restaurant-gstaad",
    "Wasserngrat mountain restaurant at evening with warmly lit glass terrace and surrounding Alps"),
@@ -216,11 +220,7 @@ SCENES_EXACT = {
    "https://www.bergbahnen.org/en/multimedia/pic/19605/",
    "Eggli–Sanetschpass winter Alpine panorama, 2018"),
  ],
- "scene-6": [
-  ("https://media.myswitzerland.com/image/fetch/c_lfill%2Cg_auto%2Cw_3200%2Ch_1800/f_auto%2Cq_80%2Cfl_keep_iptc/https%3A/www.myswitzerland.com/-/media/st/gadmin/images/destinations/winter/vantage%20point/alpenbeizli_wasserngrat-gstaad-terrasse_239273.jpg",
-   "https://www.myswitzerland.com/de-ch/erlebnisse/essen-trinken/restaurant/bergrestaurant-wasserngrat/",
-   "Bergrestaurant Wasserngrat, sunny mountain-facing wooden terrace"),
- ],
+
  "scene-7": [
   ("https://files.bergwelten.com/t_image/c_fill%2Cf_auto%2Cq_auto%2Cw_1807%2Ch_1200/tour/images/Wandern-Rellerli-2.JPG",
    "https://www.bergwelten.com/t/w/23924",
