@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 5,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
@@ -363,28 +363,60 @@
       "placeLabel": "Marina Grande",
       "slotIntent": "Marina Grande",
       "searchQuery": "Capri Marina Grande harbour",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Image of Marina Grande is washed out, grey and dated: lacks premium bright blue-water quality.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Boats,_Capri_Harbour_-_scan01.jpg",
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Harbour_Marina_Grande_in_Capri.jpg",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Boats%2C_Capri_Harbour_-_scan01.jpg/1920px-Boats%2C_Capri_Harbour_-_scan01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "bde942d1103a05dcdfe1e1c5e821a3f7518cb9ee22f3028d7138cc58e9a1b81a",
-      "rejectedCandidateContext": "File:Boats, Capri Harbour - scan01.jpg"
+      "rejectedCandidateContext": "File:Boats, Capri Harbour - scan01.jpg",
+      "localPath": "/images/travel/capri-premium/destination/scene-2.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Harbour_Marina_Grande_in_Capri.jpg/1920px-Harbour_Marina_Grande_in_Capri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "Real bright boat-filled port of Marina Grande on Capri, Sally V 2016",
+      "credit": "Sally V · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "sha256": "4565444137289bca3b0e1feeaea6a41a336db101dc9afecf42d23a4c3589ca89",
+      "dhash": "0000111100011011010100111001001001100010001001010010101100101101",
+      "bytes": 378176,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     },
     {
       "key": "scene-3",
       "placeLabel": "Piazzetta",
       "slotIntent": "Piazzetta",
       "searchQuery": "Capri Piazzetta square",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Piazzetta original is dominated by the crowd and lacks the distinctive clock tower required by the premium brief.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Piazza_Umberto_I_din_Capri.jpg",
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Piazzetta_(Capri),_2016.jpg",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Piazza_Umberto_I_din_Capri.jpg/1920px-Piazza_Umberto_I_din_Capri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "7d4d7e1d1e14107d7c70a13aa991f0367d586a8c15433a94e3dd9425d4023dbe",
-      "rejectedCandidateContext": "File:Piazza Umberto I din Capri.jpg"
+      "rejectedCandidateContext": "File:Piazza Umberto I din Capri.jpg",
+      "localPath": "/images/travel/capri-premium/destination/scene-3.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Piazzetta_%28Capri%29%2C_2016.jpg/1920px-Piazzetta_%28Capri%29%2C_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "Real Capri Piazza Umberto I with town clock; Ekrem Canli 2016",
+      "credit": "Ekrem Canli · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "sha256": "8e0c89fa5a55a86c42a5ebe728f4e22278bf7879800f193118b6397aa6fd8c0d",
+      "dhash": "0110000001001001110101010111000110110100100111000110101000101111",
+      "bytes": 418888,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     },
     {
       "key": "scene-4",
@@ -475,14 +507,30 @@
       "placeLabel": "Monte Solaro",
       "slotIntent": "Monte Solaro",
       "searchQuery": "Monte Solaro views",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "View is geographically correct from Monte Solaro but excessively hazy, grey and unappealing for luxury landscape editorial.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:View_of_Capri_from_Monte_Solaro,_2010.jpg",
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Capri,_Italy_(51249368958).jpg",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/View_of_Capri_from_Monte_Solaro%2C_2010.jpg/1920px-View_of_Capri_from_Monte_Solaro%2C_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "e45113f2f35c64c2c1abeaa95ab400e3537698168d8d7bfac2fac5c7c634cd91",
-      "rejectedCandidateContext": "Photographed from Monte Solaro summit toward Capri and the Sorrento peninsula; DimiTalen CC0, 2010"
+      "rejectedCandidateContext": "Photographed from Monte Solaro summit toward Capri and the Sorrento peninsula; DimiTalen CC0, 2010",
+      "localPath": "/images/travel/capri-premium/destination/scene-7.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Capri%2C_Italy_%2851249368958%29.jpg/1920px-Capri%2C_Italy_%2851249368958%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "Real panorama from the Monte Solaro area, verify exact viewpoint before approval",
+      "credit": "Hannes Flo from Austria · CC BY 2.0",
+      "license": "CC BY 2.0",
+      "sha256": "d2fe27a90c3eb9935093d4af207e381aa94bb4b8a306c923c5928b76d4565f68",
+      "dhash": "1110111101101111001111111010000100110110001110010110110100100110",
+      "bytes": 394196,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ]
     },
     {
       "key": "scene-8",
@@ -516,14 +564,30 @@
       "placeLabel": "Punta Carena",
       "slotIntent": "Punta Carena",
       "searchQuery": "Punta Carena lighthouse Capri",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Previous Punta Carena view is very grey with flat sky and sea; needs a luminous photo of the red-and-white lighthouse.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Campania_Lighthouse_Punta_Carena_Capri.jpg",
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Punta_Carena_Lighthouse.jpg",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Campania_Lighthouse_Punta_Carena_Capri.jpg/1920px-Campania_Lighthouse_Punta_Carena_Capri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "67a8fe111b739820e18cb43c76cec09a809f6e515f311ed0b6ad91d880054a4c",
-      "rejectedCandidateContext": "File:Campania Lighthouse Punta Carena Capri.jpg"
+      "rejectedCandidateContext": "File:Campania Lighthouse Punta Carena Capri.jpg",
+      "localPath": "/images/travel/capri-premium/destination/scene-9.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Punta_Carena_Lighthouse.jpg/1920px-Punta_Carena_Lighthouse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "Genuine red-and-white Punta Carena lighthouse above sunny Capri sea; Dr Tr 2009",
+      "credit": "Dr Tr from Saint-Petersburg, Russia · CC BY 2.0",
+      "license": "CC BY 2.0",
+      "sha256": "ef3b7290a6b82ec89ebcc20ff4d79f8aa2e115db4e56bd7a343679956a787faf",
+      "dhash": "1111111111111111111111111101111101001111000010001011100011011100",
+      "bytes": 551808,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     }
   ],
   "publicationBlockedReason": "No locally sourced WebP photographs have passed visual approval, provenance and rights QA."
