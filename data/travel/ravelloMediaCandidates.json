@@ -2,7 +2,7 @@
   "destination": "ravello",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 12,
+  "downloadedHotelCandidates": 8,
   "downloadedDestinationCandidates": 9,
   "hotels": [
     {
@@ -11,26 +11,13 @@
       "propertyKey": "caruso-belmond",
       "slotIntent": "actual hotel exterior and architecture",
       "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
-      "localPath": "/images/travel/ravello-premium/caruso-belmond/view-1.webp",
-      "downloadUrl": "https://img.belmond.com/f_auto/t_2580x1299/photos/CDC/cdc-cam-legend10.jpg",
-      "candidateContext": "   ",
-      "credit": "Official hotel website; photographer rights require review",
-      "license": "Publisher/photographer permission not verified",
-      "sha256": "864fa0e9d12c891d15bde22864cdee0fd35b69b434838ba394fba210e2e030fe",
-      "dhash": "0011101110010011100110011001100111011100110110011010001110100111",
-      "bytes": 160954,
-      "originalSize": [
-        2580,
-        1299
-      ],
-      "outputSize": [
-        1750,
-        881
-      ]
+      "visualQaWarning": "Wrong subject: a person drinking coffee, not the Caruso hotel exterior or pool.",
+      "rejectedSource": "https://img.belmond.com/f_auto/t_2580x1299/photos/CDC/cdc-cam-legend10.jpg",
+      "rejectedOriginalSha256": "864fa0e9d12c891d15bde22864cdee0fd35b69b434838ba394fba210e2e030fe",
+      "rejectedCandidateContext": "   "
     },
     {
       "key": "view-2",
@@ -38,26 +25,13 @@
       "propertyKey": "caruso-belmond",
       "slotIntent": "genuine guestroom or suite interior",
       "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
-      "localPath": "/images/travel/ravello-premium/caruso-belmond/view-2.webp",
-      "downloadUrl": "https://img.belmond.com/f_auto/t_1080_ar_5_4/photos/vso/vso-journey-villeggiatura12.jpg",
-      "candidateContext": "A man in a blue train steward's uniform holds open a Villeggiatura newspaper, obscuring his face, on an Amalfi-view terrace.   ",
-      "credit": "Official hotel website; photographer rights require review",
-      "license": "Publisher/photographer permission not verified",
-      "sha256": "37350eea5aa7b37f4e8bee491d9b9ef7daecc85a8d9c5c66165fb49d804dcff6",
-      "dhash": "0010101110110010000100000100010001100100001001100010010001001110",
-      "bytes": 104840,
-      "originalSize": [
-        1080,
-        864
-      ],
-      "outputSize": [
-        1080,
-        864
-      ]
+      "visualQaWarning": "Wrong subject: Venice Simplon-Orient-Express attendant holding a train newspaper, not the hotel suite.",
+      "rejectedSource": "https://img.belmond.com/f_auto/t_1080_ar_5_4/photos/vso/vso-journey-villeggiatura12.jpg",
+      "rejectedOriginalSha256": "37350eea5aa7b37f4e8bee491d9b9ef7daecc85a8d9c5c66165fb49d804dcff6",
+      "rejectedCandidateContext": "A man in a blue train steward's uniform holds open a Villeggiatura newspaper, obscuring his face, on an Amalfi-view terrace.   "
     },
     {
       "key": "view-3",
@@ -92,26 +66,13 @@
       "propertyKey": "palazzo-avino",
       "slotIntent": "actual hotel exterior and architecture",
       "sourcePage": "https://www.palazzoavino.com/clubhouse-by-the-sea/",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
-      "localPath": "/images/travel/ravello-premium/palazzo-avino/view-1.webp",
-      "downloadUrl": "https://www.palazzoavino.com/wp-content/uploads/2020/09/PA_Beach-Club-Pool-2.jpg",
-      "candidateContext": "   ",
-      "credit": "Official hotel website; photographer rights require review",
-      "license": "Publisher/photographer permission not verified",
-      "sha256": "5e7244e7fd35536555c40c9a70dccdc19d8dd89973052c22f564282988a93f01",
-      "dhash": "0000001000010010000010100100011100000011000010010001111111000001",
-      "bytes": 295664,
-      "originalSize": [
-        2000,
-        1125
-      ],
-      "outputSize": [
-        1750,
-        984
-      ]
+      "visualQaWarning": "Wrong slot: swimming pool at the Marmorata Clubhouse by the Sea rather than the pink hilltop palace.",
+      "rejectedSource": "https://www.palazzoavino.com/wp-content/uploads/2020/09/PA_Beach-Club-Pool-2.jpg",
+      "rejectedOriginalSha256": "5e7244e7fd35536555c40c9a70dccdc19d8dd89973052c22f564282988a93f01",
+      "rejectedCandidateContext": "   "
     },
     {
       "key": "view-2",
@@ -119,26 +80,13 @@
       "propertyKey": "palazzo-avino",
       "slotIntent": "genuine guestroom or suite interior",
       "sourcePage": "https://www.palazzoavino.com/",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
-      "localPath": "/images/travel/ravello-premium/palazzo-avino/view-2.webp",
-      "downloadUrl": "https://www.palazzoavino.com/wp-content/uploads/2020/09/Landing-Page-1-min.jpg",
-      "candidateContext": "   ",
-      "credit": "Official hotel website; photographer rights require review",
-      "license": "Publisher/photographer permission not verified",
-      "sha256": "72850642621e3f9fa7749db46921186d7853ed2835c503fafeffc9d39db08e9d",
-      "dhash": "0000011100001111001111110110011100000011100011101000111100000111",
-      "bytes": 171354,
-      "originalSize": [
-        1920,
-        1281
-      ],
-      "outputSize": [
-        1750,
-        1168
-      ]
+      "visualQaWarning": "Wrong slot: panoramic sea terrace, not a hotel room or suite.",
+      "rejectedSource": "https://www.palazzoavino.com/wp-content/uploads/2020/09/Landing-Page-1-min.jpg",
+      "rejectedOriginalSha256": "72850642621e3f9fa7749db46921186d7853ed2835c503fafeffc9d39db08e9d",
+      "rejectedCandidateContext": "   "
     },
     {
       "key": "view-3",
@@ -414,9 +362,9 @@
     },
     {
       "key": "scene-4",
-      "placeLabel": "San Giovanni del Toro Ravello historic quarter",
-      "searchQuery": "Ravello San Giovanni del Toro church",
-      "slotIntent": "San Giovanni del Toro Ravello historic quarter",
+      "placeLabel": "Interior of Chiesa di San Giovanni del Toro, Ravello",
+      "searchQuery": "Ravello San Giovanni del Toro church interior pulpit",
+      "slotIntent": "Authentic decorated medieval church interior, not street panorama",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,

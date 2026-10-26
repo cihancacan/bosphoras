@@ -29,6 +29,20 @@ SCENES={
 "scene-9":("Atrani Amalfi panorama Ravello",("atrani","amalfi"))}
 
 # Precise site-specific photo sources, not ambiguous "Marmorata" from Sardinia.
+EXACT_HOTEL={
+ "caruso-belmond/view-1":[
+  ("https://www.simplyluxuryescapes.co.uk/wp-content/uploads/2021/03/car-gst-pool13_2580x1451-2048x1152.jpg",
+   "https://www.simplyluxuryescapes.co.uk/product/caruso-a-belmond-hotel-amalfi-coast/",
+   "True Hotel Caruso infinity pool and 11th-century stone property under clear skies")],
+ "palazzo-avino/view-1":[
+  ("https://www.travoh.com/wp-content/uploads/2023/10/010-Palazzo-Avino-Amalfi-Coast-Hotel-Ravello-Italy-Aerial-View.jpg",
+   "https://www.travoh.com/stays/palazzo-avino-amalfi-coast-hotel-ravello-italy/attachment/010-palazzo-avino-amalfi-coast-hotel-ravello-italy-aerial-view/",
+   "Real Palazzo Avino pink palace hotel exterior seen from elevated angle")],
+ "palazzo-avino/view-2":[
+  ("https://www.redsavannah.com/-/media/countries/italy/accommodation/palazzo-avino/palazzo-avino-italy-bedroom.jpg?cropregion=0%2C230%2C2000%2C1101&h=610&hash=06B1FA55CE7D7DBB6EFE76C058BE0370&udi=1&w=1400",
+   "https://www.redsavannah.com/europe/italy/hotels/palazzo-avino",
+   "Genuine Palazzo Avino guest bedroom with white bedding and turquoise headboard")],
+}
 EXACT_COMMONS={
  "scene-5":[
   ("Vue emblématique de Ravello.jpg","Authentic elevated Ravello town and sea panorama; inspect daylight and orientation"),
@@ -193,7 +207,18 @@ def main():
   if k not in cache:
    cache[k]=[candidate for page in HOTELS[k] for candidate in candidates_from_hotel(page)]
    print("RAVELLO_HOTEL_SOURCES",k,len(cache[k]),flush=True)
-  capture(item,cache[k],seen_urls,seen_hashes,seen_dhash)
+  exact=[(240,url,page,caption,"Photographer/source publication: "+page,
+    "Copyright and commercial reuse permission require confirmation")
+    for url,page,caption in EXACT_HOTEL.get(k+"/"+item["key"],[])]
+  candidates=cache[k]
+  if k=="caruso-belmond":
+   candidates=[c for c in candidates if "/photos/car/" in c[1].lower() or "/photos/car-" in c[1].lower()]
+   if item["key"]=="view-2":
+    rooms=[c for c in candidates if "room" in c[1].lower() or "suite" in c[1].lower() or "acc-" in c[1].lower()]
+    candidates=rooms or candidates
+  if k=="palazzo-avino" and item["key"]=="view-2":
+   candidates=[c for c in candidates if any(w in (c[1]+" "+c[3]).lower() for w in ("suite","room","camera","bedroom"))]
+  capture(item,exact+candidates,seen_urls,seen_hashes,seen_dhash)
  for item in m["destinationScenes"]:
   if item.get("localPath"):continue
   q,terms=SCENES[item["key"]]
