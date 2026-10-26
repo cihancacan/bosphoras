@@ -1,0 +1,234 @@
+{
+  "destination": "ibiza",
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "hotels": [
+    {
+      "key": "view-1",
+      "property": "Six Senses Ibiza",
+      "propertyKey": "six-senses-ibiza",
+      "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/",
+      "slotIntent": "recognisable property exterior or coast setting",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "view-2",
+      "property": "Six Senses Ibiza",
+      "propertyKey": "six-senses-ibiza",
+      "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/",
+      "slotIntent": "real guestroom or suite interior",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "view-3",
+      "property": "Six Senses Ibiza",
+      "propertyKey": "six-senses-ibiza",
+      "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/",
+      "slotIntent": "authentic hotel pool/dining/terrace",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "view-1",
+      "property": "Nobu Hotel Ibiza Bay",
+      "propertyKey": "nobu-ibiza-bay",
+      "sourcePage": "https://www.nobuhotelibizabay.com/",
+      "slotIntent": "recognisable property exterior or coast setting",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "view-2",
+      "property": "Nobu Hotel Ibiza Bay",
+      "propertyKey": "nobu-ibiza-bay",
+      "sourcePage": "https://www.nobuhotelibizabay.com/",
+      "slotIntent": "real guestroom or suite interior",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "view-3",
+      "property": "Nobu Hotel Ibiza Bay",
+      "propertyKey": "nobu-ibiza-bay",
+      "sourcePage": "https://www.nobuhotelibizabay.com/",
+      "slotIntent": "authentic hotel pool/dining/terrace",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "view-1",
+      "property": "7Pines Resort Ibiza",
+      "propertyKey": "7pines-resort-ibiza",
+      "sourcePage": "https://7pines-ibiza.com/en/resort",
+      "slotIntent": "recognisable property exterior or coast setting",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "view-2",
+      "property": "7Pines Resort Ibiza",
+      "propertyKey": "7pines-resort-ibiza",
+      "sourcePage": "https://7pines-ibiza.com/en/resort",
+      "slotIntent": "real guestroom or suite interior",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "view-3",
+      "property": "7Pines Resort Ibiza",
+      "propertyKey": "7pines-resort-ibiza",
+      "sourcePage": "https://7pines-ibiza.com/en/resort",
+      "slotIntent": "authentic hotel pool/dining/terrace",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "view-1",
+      "property": "The Standard, Ibiza",
+      "propertyKey": "the-standard-ibiza",
+      "sourcePage": "https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza",
+      "slotIntent": "recognisable property exterior or coast setting",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "view-2",
+      "property": "The Standard, Ibiza",
+      "propertyKey": "the-standard-ibiza",
+      "sourcePage": "https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza",
+      "slotIntent": "real guestroom or suite interior",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "view-3",
+      "property": "The Standard, Ibiza",
+      "propertyKey": "the-standard-ibiza",
+      "sourcePage": "https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza",
+      "slotIntent": "authentic hotel pool/dining/terrace",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "placeLabel": "Dalt Vila Eivissa ancienne citadelle",
+      "searchQuery": "Ibiza Dalt Vila old town aerial daylight",
+      "slotIntent": "Dalt Vila Eivissa ancienne citadelle",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "scene-2",
+      "placeLabel": "Port et Marina Botafoch",
+      "searchQuery": "Ibiza Marina Botafoch yachts promenade",
+      "slotIntent": "Port et Marina Botafoch",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "scene-3",
+      "placeLabel": "Baie de Talamanca",
+      "searchQuery": "Talamanca Bay beach Ibiza sunny",
+      "slotIntent": "Baie de Talamanca",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "scene-4",
+      "placeLabel": "Cala Xarraca, crique du nord",
+      "searchQuery": "Cala Xarraca Ibiza north cove",
+      "slotIntent": "Cala Xarraca, crique du nord",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "scene-5",
+      "placeLabel": "Vue Es Vedrà depuis falaises occidentales",
+      "searchQuery": "Ibiza Es Vedra west cliffs",
+      "slotIntent": "Vue Es Vedrà depuis falaises occidentales",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "scene-6",
+      "placeLabel": "Cala Codolar",
+      "searchQuery": "Cala Codolar Ibiza beach sunny",
+      "slotIntent": "Cala Codolar",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "scene-7",
+      "placeLabel": "Cala Conta eaux turquoise",
+      "searchQuery": "Cala Conta Ibiza turquoise water",
+      "slotIntent": "Cala Conta eaux turquoise",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "scene-8",
+      "placeLabel": "Salines et dunes du sud",
+      "searchQuery": "Ses Salines Ibiza protected coast",
+      "slotIntent": "Salines et dunes du sud",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    },
+    {
+      "key": "scene-9",
+      "placeLabel": "Village de Sant Joan",
+      "searchQuery": "Sant Joan de Labritja Ibiza village",
+      "slotIntent": "Village de Sant Joan",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+    }
+  ],
+  "publicationBlockedReason": "Need 21 unique genuine images (12 hotels + 9 Ibiza locales), each visually verified, source and commercial rights established, batch Preview not yet deployed."
+}
