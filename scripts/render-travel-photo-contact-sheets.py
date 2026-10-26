@@ -58,7 +58,9 @@ for stem,slug,name in REGISTRY:
   warn=x.get("visualQaWarning","")
   missing=x.get("status")!="candidate_needs_visual_review"
   approved=x.get("visuallyVerified") is True and x.get("commercialRightsCleared") is True and not warn
-  color=(169,50,54) if missing or warn else (38,118,83) if approved else (196,136,42)
+  awaiting_review=warn.startswith(("Candidate only:","New candidate;","New image candidate;"))
+  rejected=missing or (bool(warn) and not awaiting_review)
+  color=(169,50,54) if rejected else (38,118,83) if approved else (196,136,42)
   pen.rounded_rectangle((left,top,left+CW,top+CARD_H),radius=10,fill=(255,255,255),outline=color,width=4)
   file=Path("public"+x.get("localPath","")) if x.get("localPath") else None
   if file and file.is_file() and not missing:
@@ -72,7 +74,7 @@ for stem,slug,name in REGISTRY:
   place=x.get("property") or x.get("placeLabel") or x.get("propertyKey") or "Source"
   pen.text((left+12,top+IMAGE_H+12),str(idx+1).zfill(2)+" · "+shorten(place,34),font=FONT,fill=(31,48,59))
   pen.text((left+12,top+IMAGE_H+38),shorten(x.get("key"),34),font=FONT,fill=(70,83,96))
-  status="ALERTE : "+shorten(warn,32) if warn else "MANQUANTE" if missing else "VALIDÉE VISUELLEMENT" if approved else "SOURCE CANDIDATE"
+  status="MANQUANTE" if missing else ("ALERTE : "+shorten(warn,32) if rejected else "VALIDÉE VISUELLEMENT" if approved else "SOURCE CANDIDATE — À CONTRÔLER")
   pen.text((left+12,top+IMAGE_H+65),shorten(status,39),font=FONT,fill=color)
   source=x.get("sourcePage","")
   origin=(" [Source]("+source+")" if source.startswith("https://") else " Source à trouver")
