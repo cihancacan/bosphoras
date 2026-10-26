@@ -22,6 +22,7 @@ REGISTRY=[
  ("lakeComo","lake-como","Lake Como"),
  ("capri","capri","Capri"),
  ("positano","positano","Positano"),
+ ("ravello","ravello","Ravello"),
 ]
 OUT=Path("docs/travel-photo-contact-sheets");OUT.mkdir(parents=True,exist_ok=True)
 try:

@@ -1,0 +1,26 @@
+name: Travel Ravello — editorial and TypeScript QA (GitHub only)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - 'data/travel/ravello*'
+      - 'data/travel/featuredCityGuides.ts'
+      - 'components/travel/TravelPages.tsx'
+      - 'components/travel/FeaturedCityGuide.tsx'
+      - 'scripts/check-ravello-draft.mjs'
+      - '.github/workflows/travel-ravello-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '20',cache: npm}
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm run typecheck
+      - run: node scripts/check-ravello-draft.mjs
+      - run: node scripts/check-travel-catalogue.mjs

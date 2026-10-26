@@ -1,0 +1,146 @@
+#!/usr/bin/env python3
+"""Ravello photo acquisition: candidates only, no automatic photo approval or Vercel build."""
+import io,json,hashlib,re
+from pathlib import Path
+from urllib.parse import urljoin
+import requests
+from bs4 import BeautifulSoup
+from PIL import Image,ImageOps
+DOC=Path("data/travel/ravelloMediaCandidates.json")
+OUT=Path("public/images/travel/ravello-premium")
+REPORT=Path("docs/travel-ravello-download-report.json")
+S=requests.Session()
+S.headers.update({"User-Agent":"BosphorasLuxuryStays/2.0 (photo sourcing and credits review)",
+"Accept":"text/html,application/json,image/jpeg,image/png,image/webp,*/*;q=0.7"})
+HOTELS={
+"caruso-belmond":["https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast","https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast/accommodation","https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast/dining"],
+"palazzo-avino":["https://www.palazzoavino.com/","https://www.palazzoavino.com/suites/","https://www.palazzoavino.com/rooms/","https://www.palazzoavino.com/clubhouse-by-the-sea/"],
+"hotel-villa-cimbrone":["https://www.hotelvillacimbrone.com/","https://www.hotelvillacimbrone.com/rooms-and-suites/","https://www.hotelvillacimbrone.com/rooms-and-suite/studio-suite/"],
+"palazzo-confalone":["https://palazzoconfalone.com/","https://palazzoconfalone.com/palazzo-confalone-hotel/","https://palazzoconfalone.com/rooms/","https://palazzoconfalone.com/villa-confalone/"]}
+SCENES={
+"scene-1":("Villa Rufolo Ravello gardens",("rufolo",)),
+"scene-2":("Villa Cimbrone Terrazza Infinito Ravello",("cimbrone",)),
+"scene-3":("Piazza Duomo Ravello cathedral",("ravello","duomo")),
+"scene-4":("San Giovanni del Toro Ravello church",("giovanni","toro")),
+"scene-5":("Ravello village rooftops sea Amalfi",("ravello",)),
+"scene-6":("Scala Salerno Italy village panorama",("scala",)),
+"scene-7":("Marmorata Amalfi coast sea",("marmorata",)),
+"scene-8":("Oscar Niemeyer Auditorium Ravello",("niemeyer","ravello")),
+"scene-9":("Atrani Amalfi panorama Ravello",("atrani","amalfi"))}
+errors=[]
+def request(url,params=None):
+ try:
+  r=S.get(url,params=params,timeout=16)
+  r.raise_for_status()
+  return r
+ except requests.RequestException as e:
+  errors.append({"url":url[:190],"error":str(e)[:160]})
+  return None
+def candidates_from_hotel(page):
+ r=request(page)
+ if not r or "html" not in r.headers.get("content-type","").lower():return []
+ soup=BeautifulSoup(r.text,"html.parser")
+ records=[]
+ for tag in soup.select("meta[property='og:image'],meta[name='twitter:image'],img,source,picture"):
+  alt=" ".join(str(tag.get(k) or "") for k in ("alt","title","aria-label","data-caption"))
+  for attr in ("content","src","data-src","data-lazy-src","data-original","srcset","data-srcset"):
+   raw=tag.get(attr)
+   if not raw:continue
+   for item in str(raw).split(","):
+    img=item.strip().split(" ")[0]
+    if not img or img.startswith("data:"):continue
+    url=urljoin(page,img)
+    if not url.startswith("https://") or any(x in url.lower() for x in (".svg",".gif","logo","icon","favicon","pixel","placeholder")):continue
+    score=14 if tag.name=="meta" else 4
+    if any(x in (url+" "+alt).lower() for x in ("suite","hotel","room","terrace","caruso","palazzo","ravello","cimbrone","belmond","pool","garden")):score+=8
+    records.append((score,url,page,alt or "Hotel website image, exact hotel not yet visually verified","Official hotel website; photographer rights require review","Publisher/photographer permission not verified"))
+ unique=set();found=[]
+ for x in sorted(records,key=lambda q:-q[0]):
+  normalized=x[1].split("?")[0]
+  if normalized in unique:continue
+  unique.add(normalized);found.append(x)
+ return found[:95]
+def commons_candidates(query,tokens):
+ r=request("https://commons.wikimedia.org/w/api.php",params={
+ "action":"query","generator":"search","gsrsearch":query,"gsrnamespace":6,"gsrlimit":50,
+ "prop":"imageinfo","iiprop":"url|extmetadata","iiurlwidth":1700,"format":"json"})
+ if not r:return []
+ try:pages=r.json()["query"]["pages"].values()
+ except (KeyError,ValueError,TypeError):return []
+ opts=[]
+ for page in pages:
+  name=page.get("title",""); lower=name.lower()
+  if not lower.endswith((".jpg",".jpeg",".png",".webp",".tiff",".tif")):continue
+  if not any(x in lower for x in tokens):continue
+  if any(x in lower for x in ("map","drawing","watercolour","painting","poster","logo","diagram","sign","watermark","stamp","etching")):continue
+  img=(page.get("imageinfo") or [{}])[0]
+  url=img.get("thumburl") or img.get("url")
+  if not url or not url.startswith("https://"):continue
+  meta=img.get("extmetadata") or {}
+  artist=BeautifulSoup(meta.get("Artist",{}).get("value",""),"html.parser").get_text(" ",strip=True)[:140]
+  licence=meta.get("LicenseShortName",{}).get("value","Photographer license requires review")
+  source="https://commons.wikimedia.org/wiki/"+name.replace(" ","_")
+  opts.append((40+sum(t in lower for t in tokens)*3,url,source,name,(artist or "Commons contributor")+" · "+licence,licence))
+ return sorted(opts,key=lambda x:-x[0])
+def dhash(im):
+ p=list(im.convert("L").resize((9,8),Image.Resampling.LANCZOS).getdata())
+ return "".join("1" if p[y*9+x]>p[y*9+x+1] else "0" for y in range(8) for x in range(8))
+def capture(item,options,seen_urls,seen_hashes,seen_dhash):
+ if item.get("localPath"):return False
+ for priority,url,source,description,author,licence in sorted(options,key=lambda x:-x[0]):
+  if url.split("?")[0] in seen_urls:continue
+  r=request(url)
+  if not r or len(r.content)>18000000:continue
+  try:
+   with Image.open(io.BytesIO(r.content)) as orig:
+    im=ImageOps.exif_transpose(orig).convert("RGB")
+    original=list(im.size)
+    if im.width<1000 or im.height<560 or not 1.11<im.width/im.height<3.4:continue
+    im.thumbnail((1750,1200),Image.Resampling.LANCZOS)
+    d=dhash(im)
+    if any(sum(a!=b for a,b in zip(d,prior))<7 for prior in seen_dhash):continue
+    out=io.BytesIO();im.save(out,"WEBP",quality=85,method=5)
+    content=out.getvalue()
+  except (OSError,ValueError):continue
+  digest=hashlib.sha256(content).hexdigest()
+  if len(content)<26000 or digest in seen_hashes:continue
+  folder=item.get("propertyKey") or "destination"
+  target=OUT/folder/(item["key"]+".webp")
+  target.parent.mkdir(parents=True,exist_ok=True);target.write_bytes(content)
+  item.update({"status":"candidate_needs_visual_review","visuallyVerified":False,
+   "commercialRightsCleared":False,"visualQaWarning":"Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+   "localPath":"/"+str(target).removeprefix("public/"),"sourcePage":source,
+   "downloadUrl":url,"candidateContext":description[:280],"credit":author[:240],
+   "license":licence[:100],"sha256":digest,"dhash":d,"bytes":len(content),
+   "originalSize":original,"outputSize":list(im.size)})
+  seen_urls.add(url.split("?")[0]);seen_hashes.add(digest);seen_dhash.append(d)
+  print("RAVELLO_CANDIDATE",folder,item["key"],source,flush=True)
+  return True
+ print("RAVELLO_UNFILLED",item.get("propertyKey") or "destination",item["key"],flush=True)
+ return False
+def main():
+ m=json.loads(DOC.read_text(encoding="utf8"))
+ items=m["hotels"]+m["destinationScenes"]
+ seen_urls={x["downloadUrl"].split("?")[0] for x in items if x.get("downloadUrl")}
+ seen_hashes={x["sha256"] for x in items if x.get("sha256")}
+ seen_dhash=[x["dhash"] for x in items if x.get("dhash")]
+ cache={}
+ for item in m["hotels"]:
+  if item.get("localPath"):continue
+  k=item["propertyKey"]
+  if k not in cache:
+   cache[k]=[candidate for page in HOTELS[k] for candidate in candidates_from_hotel(page)]
+   print("RAVELLO_HOTEL_SOURCES",k,len(cache[k]),flush=True)
+  capture(item,cache[k],seen_urls,seen_hashes,seen_dhash)
+ for item in m["destinationScenes"]:
+  if item.get("localPath"):continue
+  q,terms=SCENES[item["key"]]
+  capture(item,commons_candidates(q,terms),seen_urls,seen_hashes,seen_dhash)
+ m["downloadedHotelCandidates"]=sum(bool(x.get("localPath")) for x in m["hotels"])
+ m["downloadedDestinationCandidates"]=sum(bool(x.get("localPath")) for x in m["destinationScenes"])
+ m["visuallyVerified"]=False;m["approvedForCommercialPublication"]=False
+ DOC.write_text(json.dumps(m,ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+ REPORT.parent.mkdir(parents=True,exist_ok=True)
+ REPORT.write_text(json.dumps({"hotels":m["downloadedHotelCandidates"],"scenes":m["downloadedDestinationCandidates"],"missing":[(x.get("propertyKey") or "destination")+"/"+x["key"] for x in items if not x.get("localPath")],"errors":errors[:80]},ensure_ascii=False,indent=2)+"\n",encoding="utf8")
+ print("RAVELLO_RESULTS",m["downloadedHotelCandidates"],"/12",m["downloadedDestinationCandidates"],"/9; all unapproved.",flush=True)
+if __name__=="__main__":main()
