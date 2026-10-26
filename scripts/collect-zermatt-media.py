@@ -249,6 +249,9 @@ def candidate(item, options, used_urls, digests):
   file=OUTPUT/group/(item["key"]+".webp")
   file.parent.mkdir(parents=True,exist_ok=True)
   file.write_bytes(data)
+  # A new photograph invalidates the captions, licences and reviews of the discarded one.
+  for stale in ("frCaption","enCaption","ownerRightsAuthorization","visualReviewedAt","visualReviewBasis","license","licenseUrl"):
+   item.pop(stale,None)
   item.update({"status":"candidate_needs_visual_review","visuallyVerified":False,
    "commercialRightsCleared":False,"visualQaWarning":"New image candidate; inspect composition, location, season, uniqueness and source attribution before publishing.",
    "localPath":"/"+file.as_posix().removeprefix("public/"),"sourcePage":page,

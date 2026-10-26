@@ -592,11 +592,6 @@
       "candidateContext": "Riffelalp and Zermatt below Riffelberg; actual historic geographic view, not hotel grounds",
       "credit": "Andrew Bossi | CC BY-SA 2.5",
       "rejectedSource": "https://commons.wikimedia.org/wiki/Special:Redirect/file/3809_-_Zermatt_-_View_from_Gornergratbahn.JPG?width=1600",
-      "frCaption": "Vue sur le village de Zermatt et la vallée depuis la ligne du Gornergrat",
-      "enCaption": "Panoramic view of Zermatt village and valley from the Gornergrat railway",
-      "ownerRightsAuthorization": "Bosphoras operator confirms image usage rights on 2026-10-19",
-      "visualReviewedAt": "2026-10-19",
-      "visualReviewBasis": "Original WebP inspected individually, scene geographically matched to source with premium quality and seasonal accuracy.",
       "visualQaWarning": "New image candidate; inspect composition, location, season, uniqueness and source attribution before publishing.",
       "localPath": "/images/travel/zermatt-premium/destination/scene-6.webp",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/3978_-_Zermatt_and_Riffelalp_viewed_from_Riffelberg.JPG/1920px-3978_-_Zermatt_and_Riffelalp_viewed_from_Riffelberg.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -609,7 +604,9 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "license": "CC BY-SA 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/"
     },
     {
       "key": "scene-7",
