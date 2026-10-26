@@ -2,8 +2,8 @@
   "destination": "mykonos",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 9,
-  "downloadedDestinationCandidates": 4,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 8,
   "hotels": [
     {
       "key": "view-1",
@@ -172,33 +172,81 @@
       "property": "Cavo Tagoo Mykonos",
       "propertyKey": "cavo-tagoo",
       "slotIntent": "original hotel exterior or recognizable property view",
-      "sourcePage": "https://www.cavotagoo.com/mykonos/",
-      "status": "missing",
+      "sourcePage": "https://www.tatlerasia.com/lifestyle/travel/hk-5-heavenly-retreats-in-mykonos",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/cavo-tagoo/view-1.webp",
+      "downloadUrl": "https://cdn.tatlerasia.com/asiatatler/i/hk/2018/11/02193148-cavo-tagoo_cover_2000x1335.jpg",
+      "candidateContext": "Actual Cavo Tagoo hotel stepped pool and sunset sea view, not a generic Mykonos infinity pool",
+      "credit": "Photographer or source: https://www.tatlerasia.com/lifestyle/travel/hk-5-heavenly-retreats-in-mykonos",
+      "license": "Commercial reuse licence needs confirmation",
+      "sha256": "2b8cb88dcd4780e4921945ca8911d9060a819a49d2bf814fc683f348b81f88d9",
+      "dhash": "1111101111111111011111111111101101101111110110011001100100101001",
+      "bytes": 103404,
+      "originalSize": [
+        2000,
+        1335
+      ],
+      "outputSize": [
+        1750,
+        1168
+      ]
     },
     {
       "key": "view-2",
       "property": "Cavo Tagoo Mykonos",
       "propertyKey": "cavo-tagoo",
       "slotIntent": "actual guestroom, suite or villa interior",
-      "sourcePage": "https://www.cavotagoo.com/mykonos/",
-      "status": "missing",
+      "sourcePage": "https://kinoussis.gr/cavo-tagoo.html",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/cavo-tagoo/view-2.webp",
+      "downloadUrl": "https://kinoussis.gr/assets/lib/2020/05/06/cavo_tagoo_1.jpg",
+      "candidateContext": "Actual Cavo Tagoo cliffside cave interior from design company and documented project",
+      "credit": "Photographer or source: https://kinoussis.gr/cavo-tagoo.html",
+      "license": "Commercial reuse licence needs confirmation",
+      "sha256": "9030c11733911b578302e31d066f36330bd8876d041ce1374174fe83600d5c6e",
+      "dhash": "1111000111000011001001100000010100010001010010111100100100001101",
+      "bytes": 156292,
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ]
     },
     {
       "key": "view-3",
       "property": "Cavo Tagoo Mykonos",
       "propertyKey": "cavo-tagoo",
       "slotIntent": "real beach, pool or hotel dining terrace",
-      "sourcePage": "https://www.cavotagoo.com/mykonos/",
-      "status": "missing",
+      "sourcePage": "https://theluxurytravelexpert.com/cavo-tagoo-mykonos-review/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/cavo-tagoo/view-3.webp",
+      "downloadUrl": "https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2024/01/IMG_5224.jpeg?ssl=1",
+      "candidateContext": "Real Cavo Tagoo sunset infinity pool with floating daybeds and sea, original editorial review",
+      "credit": "Photographer or source: https://theluxurytravelexpert.com/cavo-tagoo-mykonos-review/",
+      "license": "Commercial reuse licence needs confirmation",
+      "sha256": "c34aa3d8ec996ee2f15d5d89734816f2d30a0709f1dff430a63c8769abe057f3",
+      "dhash": "0111111101111111001111110011111101011101010110100111100101101011",
+      "bytes": 89018,
+      "originalSize": [
+        1000,
+        750
+      ],
+      "outputSize": [
+        1000,
+        750
+      ]
     },
     {
       "key": "view-1",
@@ -342,40 +390,108 @@
       "placeLabel": "Ornos Bay white beach and turquoise water",
       "slotIntent": "Ornos Bay white beach and turquoise water",
       "searchQuery": "Ornos Bay white beach and turquoise water Mykonos Greece photo",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/destination/scene-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mykonos_Ornos_01.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Mykonos_Ornos_01.jpg",
+      "candidateContext": "Verified Mykonos Ornos beach town and cove, Olaf Tausch",
+      "credit": "Wikimedia Commons source author, check file history for attribution",
+      "license": "Creative Commons licence to verify in file",
+      "sha256": "c7bd2c5a96ec035b87ef3ee41be0af884ba9ef67efcb953704048bb27ae8702f",
+      "dhash": "0000000100001101011011001001101000000001000000111101001101100101",
+      "bytes": 451128,
+      "originalSize": [
+        4589,
+        3440
+      ],
+      "outputSize": [
+        1601,
+        1200
+      ]
     },
     {
       "key": "scene-4",
       "placeLabel": "Aleomandra sunset view towards Delos",
       "slotIntent": "Aleomandra sunset view towards Delos",
       "searchQuery": "Aleomandra sunset view towards Delos Mykonos Greece photo",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/destination/scene-4.webp",
+      "sourcePage": "https://saltyble.com/",
+      "downloadUrl": "https://saltyble.com/images/andreas_bekas_2025_web-15.jpeg",
+      "candidateContext": "Genuine west-facing Aleomandra coast sunset and Aegean sea as seen from a local villa",
+      "credit": "Source photographer at https://saltyble.com/",
+      "license": "Publisher/photographer permission required",
+      "sha256": "8d24bf89882404c6a69c7d163634d8f32635de7193001c637ac6c46afa9aeeb8",
+      "dhash": "0000001100000011000001110000001100000011000000110000000100000001",
+      "bytes": 46872,
+      "originalSize": [
+        1247,
+        935
+      ],
+      "outputSize": [
+        1247,
+        935
+      ]
     },
     {
       "key": "scene-5",
       "placeLabel": "Psarou Bay and sailing yachts",
       "slotIntent": "Psarou Bay and sailing yachts",
       "searchQuery": "Psarou Bay and sailing yachts Mykonos Greece photo",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Psarou_mykonos.JPG",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Psarou_mykonos.JPG",
+      "candidateContext": "True Psarou bay beach Mykonos stitched panorama, photographer sailko",
+      "credit": "Wikimedia Commons source author, check file history for attribution",
+      "license": "Creative Commons licence to verify in file",
+      "sha256": "5e0ac60da47790fccbdb222cf23c854e2bf671062a439b9764556a3bfcbca266",
+      "dhash": "0011001100111110000001110000111101110010111010111101001101010100",
+      "bytes": 285900,
+      "originalSize": [
+        5163,
+        2225
+      ],
+      "outputSize": [
+        1750,
+        754
+      ]
     },
     {
       "key": "scene-6",
       "placeLabel": "Tagoo hillside and Old Port Mykonos",
       "slotIntent": "Tagoo hillside and Old Port Mykonos",
       "searchQuery": "Tagoo hillside and Old Port Mykonos Mykonos Greece photo",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Old_Port_of_Mykonos_01.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Old_Port_of_Mykonos_01.jpg",
+      "candidateContext": "Geolocated Mykonos Old Port and Tagoo area, Bernard Gagnon",
+      "credit": "Wikimedia Commons source author, check file history for attribution",
+      "license": "Creative Commons licence to verify in file",
+      "sha256": "bd49cc2feb0bc7887512778e0aee5a471ea527850e9d0c13d9fdeff50f8856bc",
+      "dhash": "0000000000000000100000000000100000011101101001000100110000100000",
+      "bytes": 239944,
+      "originalSize": [
+        3456,
+        1636
+      ],
+      "outputSize": [
+        1750,
+        828
+      ]
     },
     {
       "key": "scene-7",
