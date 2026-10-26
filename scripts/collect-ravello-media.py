@@ -48,6 +48,11 @@ EXACT_COMMONS={
   ("Campania Ravello2 tango7174.jpg","Authentic view from Ravello towards Pontone and Atrani on the sea")],
 }
 EXACT_DIRECT={
+ "scene-9":[
+  ("COMMONS_ORIGINAL:Atrani (Italy).jpg",
+   "https://commons.wikimedia.org/wiki/File:Atrani_(Italy).jpg",
+   "Bernard Gagnon original daylight photograph of Atrani; coastal scene, not hotel location or a Ravello camera position",
+   "Bernard Gagnon · CC BY 4.0")],
  "scene-7":[
   ("https://media.houseandgarden.co.uk/photos/6888e077e0021db31082b70c/master/w_1600,c_limit/Palazzo-Avino-12.jpg",
   "https://www.houseandgarden.co.uk/article/palazzo-avino-ravello-review",
@@ -61,6 +66,14 @@ EXACT_DIRECT={
 EXACT_SCENE_PAGES={
  "scene-7":["https://hotelmarmorata.com/en/gallery","https://www.palazzoavino.com/clubhouse-by-the-sea/"],
 }
+
+def commons_original_url(filename):
+ """Generate canonical Wikimedia Commons original path by MD5 of UTF-8 normalized filename."""
+ from urllib.parse import quote
+ canonical=filename.replace(" ","_")
+ digest=hashlib.md5(canonical.encode("utf-8")).hexdigest()
+ return "https://upload.wikimedia.org/wikipedia/commons/"+digest[0]+"/"+digest[:2]+"/"+quote(canonical,safe="()")
+
 def commons_exact(filename,context):
  response=request("https://commons.wikimedia.org/w/api.php",params={"action":"query","titles":"File:"+filename,
    "prop":"imageinfo","iiprop":"url|extmetadata","iiurlwidth":1750,"format":"json"})
@@ -190,7 +203,9 @@ def main():
   # An actual Marmorata coastline image should outrank a nearby Minori photo;
   # art direction and locality are still manually reviewed after download.
   exactPages=[(125,url,page,desc,author,lic) for _,url,page,desc,author,lic in exactPages]
-  exact=[(200,url,page,desc,author,"Original photographer permission requires verification") for url,page,desc,author in EXACT_DIRECT.get(item["key"],[])]
+  exact=[(220,commons_original_url(url.split(":",1)[1]) if url.startswith("COMMONS_ORIGINAL:") else url,
+    page,desc,author,"CC BY 4.0" if url.startswith("COMMONS_ORIGINAL:") else "Original photographer permission requires verification")
+    for url,page,desc,author in EXACT_DIRECT.get(item["key"],[])]
   capture(item,exact+exactPages+known+commons_candidates(q,terms),seen_urls,seen_hashes,seen_dhash)
  m["downloadedHotelCandidates"]=sum(bool(x.get("localPath")) for x in m["hotels"])
  m["downloadedDestinationCandidates"]=sum(bool(x.get("localPath")) for x in m["destinationScenes"])
