@@ -2,7 +2,7 @@
   "destination": "antiparos",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 11,
+  "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 6,
   "hotels": [
     {
@@ -172,14 +172,30 @@
       "property": "Soros Beach Antiparos",
       "propertyKey": "soros-beach",
       "slotIntent": "real property exterior",
-      "sourcePage": "https://www.sorosbeach.gr/",
-      "status": "missing",
+      "sourcePage": "https://www.living-postcards.com/blog/soros-beach-seafood-suites",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Current photo is a promotional fashion model holding branded tote, not the actual hotel or room.",
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
       "rejectedSource": "https://www.sorosbeach.gr/wp-content/uploads/2021/04/soros_bliss_greece-1.jpg",
       "rejectedOriginalSha256": "c303b52a9bd22a8fec3092d5570370b2bb7c6e10eb4d2a10d273c404ba8d76de",
-      "rejectedCandidateContext": "   "
+      "rejectedCandidateContext": "   ",
+      "localPath": "/images/travel/antiparos-premium/soros-beach/view-1.webp",
+      "downloadUrl": "https://www.living-postcards.com/sites/default/files/10582814_366068893578487_2840551803589687895_o.jpg",
+      "candidateContext": "Real Soros Beach Antiparos beach daybeds with olive-and-purple cushions beneath straw shading, NOT a fashion advertisement",
+      "credit": "Verified named-property source; photographer at https://www.living-postcards.com/blog/soros-beach-seafood-suites",
+      "license": "Commercial photographer permission to verify",
+      "sha256": "ad5f1806f651494008f0e50042fac7c9adb9f5424579d42a190c0fedd0774b9b",
+      "dhash": "1100111111011111010111100100111100001111000100110010001100100100",
+      "bytes": 396120,
+      "originalSize": [
+        2048,
+        1362
+      ],
+      "outputSize": [
+        1750,
+        1164
+      ]
     },
     {
       "key": "view-2",
