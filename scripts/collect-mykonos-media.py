@@ -58,7 +58,14 @@ EXACT_SCENE_URLS={
  "scene-4":[
   ("https://saltyble.com/images/andreas_bekas_2025_web-15.jpeg",
    "https://saltyble.com/",
-   "Genuine west-facing Aleomandra coast sunset and Aegean sea as seen from a local villa")]
+   "Genuine west-facing Aleomandra coast sunset and Aegean sea as seen from a local villa")],
+ "scene-9":[
+  ("https://www.saintjohn.gr/uploads/nr_photos/location_8408.jpg",
+   "https://www.saintjohn.gr/mykonos_beach_hotel/",
+   "Actual coastal outlook over Agios Ioannis Mykonos bay and Delos at sunset; photographed from the Saint John hotel"),
+  ("https://app.divineproperty.com/storage/property/2/images/1531f0e0ea9fbd8b270f0a0bccace4d8.jpg",
+   "https://divineproperty.com/villas/villa-sunset/",
+   "Aleomandra terrace near Agios Ioannis, Mykonos, sunset over sea with Delos in distance")]
 }
 def commons_original(filename):
  from urllib.parse import quote
