@@ -1,0 +1,234 @@
+{
+  "destination": "antiparos",
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "hotels": [
+    {
+      "key": "view-1",
+      "property": "The Rooster Antiparos",
+      "propertyKey": "the-rooster",
+      "slotIntent": "real property exterior",
+      "sourcePage": "https://therooster.me/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "view-2",
+      "property": "The Rooster Antiparos",
+      "propertyKey": "the-rooster",
+      "slotIntent": "real suite or bedroom",
+      "sourcePage": "https://therooster.me/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "view-3",
+      "property": "The Rooster Antiparos",
+      "propertyKey": "the-rooster",
+      "slotIntent": "real pool, dining or beach",
+      "sourcePage": "https://therooster.me/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "view-1",
+      "property": "The Beach House Antiparos",
+      "propertyKey": "the-beach-house",
+      "slotIntent": "real property exterior",
+      "sourcePage": "https://beachhouseantiparos.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "view-2",
+      "property": "The Beach House Antiparos",
+      "propertyKey": "the-beach-house",
+      "slotIntent": "real suite or bedroom",
+      "sourcePage": "https://beachhouseantiparos.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "view-3",
+      "property": "The Beach House Antiparos",
+      "propertyKey": "the-beach-house",
+      "slotIntent": "real pool, dining or beach",
+      "sourcePage": "https://beachhouseantiparos.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "view-1",
+      "property": "Soros Beach Antiparos",
+      "propertyKey": "soros-beach",
+      "slotIntent": "real property exterior",
+      "sourcePage": "https://www.sorosbeach.gr/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "view-2",
+      "property": "Soros Beach Antiparos",
+      "propertyKey": "soros-beach",
+      "slotIntent": "real suite or bedroom",
+      "sourcePage": "https://www.sorosbeach.gr/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "view-3",
+      "property": "Soros Beach Antiparos",
+      "propertyKey": "soros-beach",
+      "slotIntent": "real pool, dining or beach",
+      "sourcePage": "https://www.sorosbeach.gr/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "view-1",
+      "property": "Kastro Boutique Resort Antiparos",
+      "propertyKey": "kastro-boutique",
+      "slotIntent": "real property exterior",
+      "sourcePage": "https://www.antiparosgreece.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "view-2",
+      "property": "Kastro Boutique Resort Antiparos",
+      "propertyKey": "kastro-boutique",
+      "slotIntent": "real suite or bedroom",
+      "sourcePage": "https://www.antiparosgreece.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "view-3",
+      "property": "Kastro Boutique Resort Antiparos",
+      "propertyKey": "kastro-boutique",
+      "slotIntent": "real pool, dining or beach",
+      "sourcePage": "https://www.antiparosgreece.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "placeLabel": "Village et port de Chora",
+      "searchQuery": "Antiparos Chora Greece harbour",
+      "slotIntent": "Village et port de Chora",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "scene-2",
+      "placeLabel": "Ruelles blanches du Kastro",
+      "searchQuery": "Antiparos village Kastro",
+      "slotIntent": "Ruelles blanches du Kastro",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "scene-3",
+      "placeLabel": "Coucher de soleil Sifneikos Gialos",
+      "searchQuery": "Antiparos Sifneikos Gialos sunset",
+      "slotIntent": "Coucher de soleil Sifneikos Gialos",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "scene-4",
+      "placeLabel": "Plage de Livadi",
+      "searchQuery": "Antiparos Livadi beach",
+      "slotIntent": "Plage de Livadi",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "scene-5",
+      "placeLabel": "Baie d'Apantima",
+      "searchQuery": "Antiparos Apantima beach",
+      "slotIntent": "Baie d'Apantima",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "scene-6",
+      "placeLabel": "Plage de Soros",
+      "searchQuery": "Soros Beach Antiparos",
+      "slotIntent": "Plage de Soros",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "scene-7",
+      "placeLabel": "Grotte d'Antiparos",
+      "searchQuery": "Antiparos Cave Greece",
+      "slotIntent": "Grotte d'Antiparos",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "scene-8",
+      "placeLabel": "Agios Georgios et îlot Despotiko",
+      "searchQuery": "Antiparos Agios Georgios Despotiko",
+      "slotIntent": "Agios Georgios et îlot Despotiko",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    },
+    {
+      "key": "scene-9",
+      "placeLabel": "Port et traversée Pounta",
+      "searchQuery": "Antiparos port ferry Greece",
+      "slotIntent": "Port et traversée Pounta",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original verified image yet; do not render."
+    }
+  ],
+  "publicationBlockedReason": "All 21 precise original photos must pass visual and rights checks before publication."
+}
