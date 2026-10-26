@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
@@ -549,14 +549,30 @@
       "placeLabel": "Positano ceramics and village streets",
       "searchQuery": "Positano narrow streets colourful ceramic",
       "slotIntent": "Positano ceramics and village streets",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Previous photograph contains prominent publisher logo watermark; select an unwatermarked real photo of ceramics and Positano.",
-      "sourcePage": "https://www.amalfipositano.com/en/photo/positano-ceramics-shop-in-the-center",
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Positano_(32632824125).jpg",
       "rejectedSource": "https://www.amalfipositano.com/photos/positano-ceramics-shop-in-the-center-1280x800.jpg",
       "rejectedOriginalSha256": "dd9c8de9e6a37d03c13eb1710687f6af443fc8be4b1d008caf41ed0840a3f482",
-      "rejectedCandidateContext": "Photograph of traditional ceramic storefront in Positano: publisher explicitly permits reuse with attribution link"
+      "rejectedCandidateContext": "Photograph of traditional ceramic storefront in Positano: publisher explicitly permits reuse with attribution link",
+      "localPath": "/images/travel/positano-premium/destination/scene-8.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Positano_%2832632824125%29.jpg/1920px-Positano_%2832632824125%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "Real Positano village shopping streets and colourful houses, subject identity to inspect",
+      "credit": "VV Nincic from Toronto, Canada · CC BY 2.0",
+      "license": "CC BY 2.0",
+      "sha256": "9c280c5586833240115a76e01922848547488f482cbeb17c0917ef58904661ac",
+      "dhash": "0000000100000100100101011001100001000100100011000001110000011111",
+      "bytes": 395872,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ]
     },
     {
       "key": "scene-9",
