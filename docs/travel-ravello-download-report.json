@@ -2,5 +2,18 @@
   "hotels": 12,
   "scenes": 9,
   "missing": [],
-  "errors": []
+  "errors": [
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast/dining",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast/dining"
+    },
+    {
+      "url": "https://www.palazzoavino.com/rooms/",
+      "error": "404 Client Error: Not Found for url: https://www.palazzoavino.com/rooms/"
+    },
+    {
+      "url": "https://www.redsavannah.com/-/media/countries/italy/accommodation/palazzo-avino/palazzo-avino-italy-bedroom.jpg?cropregion=0%2C230%2C2000%2C1101&h=610&hash=06B1FA55CE7D7DBB6EFE76C058BE0370&u",
+      "error": "403 Client Error: Forbidden for url: https://www.redsavannah.com/-/media/countries/italy/accommodation/palazzo-avino/palazzo-avino-italy-bedroom.jpg?cropregion="
+    }
+  ]
 }
