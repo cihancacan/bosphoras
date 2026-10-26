@@ -41,6 +41,32 @@ SCENES={
  "scene-8":("Giardini di Augusto Capri",("giardini","capri")),
  "scene-9":("Punta Carena lighthouse Capri",("carena","capri")),
 }
+# Exact photographic sources reviewed as belonging to the named property or location.
+# Attribution is recorded, but NO downloaded file is auto-approved for commercial display.
+EXACT={
+ "hotel-la-palma/view-1":[("https://images.eu.ctfassets.net/og3b0tarlg4b/4mqfWVzquDTXQ7jByoQ3LQ/39f72fafde43223f242f74e5388dad00/Hotel_La_Palma_Facade.jpg",
+   "https://www.oetkerhotels.com/hotels/hotel-la-palma/restaurants-bars/","Current hotel façade with bougainvillea photographed in full daylight","Oetker Hotels · hotel imagery")],
+ "hotel-la-palma/view-2":[("https://cdn.mos.cms.futurecdn.net/pTtHLhxxya74sRa357kF5c.jpg",
+   "https://www.countrylife.co.uk/travel/hotel-la-palma-review-the-dazzling-new-place-to-stay-on-the-island-of-capri-266457",
+   "Actual Hotel La Palma bright renovated guestroom with mint furniture and terrace","Country Life / original credited hotel photographer")],
+ "hotel-la-palma/view-3":[("https://images.eu.ctfassets.net/og3b0tarlg4b/7ogq6p5XPHyBiCDeKxPtSl/8eab2b33cbe1791af9e06d51586b6933/01_CAPRI_HOMEPAGE_2340x1743_02.jpg?fit=fill&fm=jpg&h=1450&w=1900",
+   "https://www.oetkerhotels.com/hotels/hotel-la-palma/gallery/?tag=pool","Real Hotel La Palma renovated pool deck and white façade","Oetker Hotels · official hotel pool photograph")],
+ "jk-place-capri/view-3":[("https://jk-place.go-capri-hotels.com/data/Photos/OriginalPhoto/2801/280162/280162333.JPEG",
+   "https://jk-place.go-capri-hotels.com/it/","Real J.K. Place Capri north-coast building above the sea, exterior daylight","Property photograph republished by hotel listing")],
+ "punta-tragara/view-2":[("https://hips.hearstapps.com/hmg-prod/images/2-art-punta-tragara-003471-2982-artsuite-65a003b31b68f.jpeg?resize=2048%3A%2A",
+   "https://www.marieclaire.it/lifestyle/viaggi/a46305320/suite-capri-hotel-punta-tragara/","Actual Punta Tragara Art Suite bedroom framing Faraglioni","Marie Claire Italy · exact Art Suite")],
+ "punta-tragara/view-3":[("https://www.internimagazine.it/content/uploads/2022/06/Le-Monzu%CC%80-Terrace-1200x820.jpg",
+   "https://www.internimagazine.it/interior/hotel-punta-tragara-a-capri/","True Hotel Punta Tragara pool and Le Monzù terrace, ochre façade","Interni magazine · real hotel terrace")],
+ "destination/scene-1":[("https://images.squarespace-cdn.com/content/v1/620b705876b230130e2b3710/ec733abb-8455-4830-9a24-9fd86f8f5f6d/Capri%2BItaly.jpg?format=2500w",
+   "https://academytravel.com.au/pompeii-capri-the-bay-of-naples-italy-tour-april-2026","Real bright Faraglioni sea stacks with boats from aerial perspective","Academy Travel · source photograph")],
+ "destination/scene-4":[("https://images.squarespace-cdn.com/content/v1/5cbc87a1d86cc9225e8d4b6a/d7c53767-2dac-4b9d-b099-32c39b2fc5bd/Enjoying%2BThe%2BViews%2BFrom%2BBelvedere%2Bdi%2BTragara.jpg",
+   "https://thesensiblefay.com/blog/3-day-capri-itinerary","Actual view of Faraglioni from Belvedere di Tragara on Capri","The Sensible Fay · photographed from Tragara")],
+ "destination/scene-5":[("https://www.celebritycruises.com/blog/content/uploads/2022/01/beaches-in-naples-italy-marina-piccola-beach-capri-1.jpg",
+   "https://www.celebritycruises.com/blog/beaches-in-naples-italy","Genuine Marina Piccola swimming cove with turquoise sea and Faraglioni","Celebrity Cruises · original location photograph")],
+ "destination/scene-6":[("https://www.citalia.com/-/media/Bynder/Citalia-destinations/Italy/Islands/Capri/Anacapri/Anacapri-2024-Church-St-Michele-Shutterstock-557041132-Hybris.jpg?w=1900",
+   "https://www.citalia.com/holidays/italy/campania/capri/anacapri/","Real historic church and piazza in Anacapri in bright daylight","Citalia · Shutterstock author requires attribution review")],
+}
+
 diagnostics=[]
 def get(url,params=None):
  try:
@@ -87,7 +113,7 @@ def commons_images(query,tokens):
  for entry in entries:
   title=entry.get("title","")
   if not title.lower().endswith((".jpg",".jpeg",".png",".tif",".tiff",".webp")):continue
-  if any(x in title.lower() for x in ("map","diagram","logo","poster","sign","ticket","render")):continue
+  if any(x in title.lower() for x in ("map","diagram","logo","poster","sign","ticket","render","painting","oil","watercolor","watercolour","lithograph","etching")):continue
   text=(title+" "+(entry.get("snippet") or "")).lower()
   if not any(t in text for t in tokens):continue
   info=(entry.get("imageinfo") or [{}])[0]; url=info.get("thumburl") or info.get("url")
@@ -143,7 +169,7 @@ def save_candidate(item,options,used_urls,used_hashes,used_vis):
 def main():
  m=json.loads(MANIFEST.read_text(encoding="utf8"))
  all_items=m["hotels"]+m["destinationScenes"]
- urls={x["downloadUrl"].split("?")[0] for x in all_items if x.get("downloadUrl")}
+ urls={u.split("?")[0] for x in all_items for u in (x.get("downloadUrl"),x.get("rejectedSource")) if isinstance(u,str) and u.startswith("https://")}
  hashes={x["sha256"] for x in all_items if x.get("sha256")}
  vis=[x["dhash"] for x in all_items if x.get("dhash")]
  cache={}
@@ -156,11 +182,13 @@ def main():
     matches.extend(page_images(page))
    cache[key]=matches
    print("CAPRI_SOURCES",key,len(matches),flush=True)
-  changed=save_candidate(h,cache[key],urls,hashes,vis) or changed
+  exact=[(100,url,page,caption,credit,"Source-specific licence requires independent verification") for url,page,caption,credit in EXACT.get(key+"/"+h["key"],[])]
+  changed=save_candidate(h,exact+cache[key],urls,hashes,vis) or changed
  for scene in m["destinationScenes"]:
   query,terms=SCENES[scene["key"]]
   images=commons_images(query,terms)
-  changed=save_candidate(scene,images,urls,hashes,vis) or changed
+  exact=[(100,url,page,caption,credit,"Source-specific licence requires independent verification") for url,page,caption,credit in EXACT.get("destination/"+scene["key"],[])]
+  changed=save_candidate(scene,exact+images,urls,hashes,vis) or changed
  m["downloadedHotelCandidates"]=sum(bool(x.get("localPath")) for x in m["hotels"])
  m["downloadedDestinationCandidates"]=sum(bool(x.get("localPath")) for x in m["destinationScenes"])
  m["visuallyVerified"]=False;m["approvedForCommercialPublication"]=False

@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 6,
-  "downloadedDestinationCandidates": 6,
+  "downloadedDestinationCandidates": 4,
   "hotels": [
     {
       "key": "view-1",
@@ -314,27 +314,14 @@
       "placeLabel": "Marina Piccola",
       "slotIntent": "Marina Piccola",
       "searchQuery": "Capri Marina Piccola bay",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
-      "localPath": "/images/travel/capri-premium/destination/scene-5.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/A._Leto_-_Marina_Piccola_a_Capri.jpg/1920px-A._Leto_-_Marina_Piccola_a_Capri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "visualQaWarning": "Original was a historic oil painting by A. Leto, not a current landscape photograph of Marina Piccola.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:A._Leto_-_Marina_Piccola_a_Capri.jpg",
-      "candidateContext": "File:A. Leto - Marina Piccola a Capri.jpg",
-      "credit": "Antonino Leto · Public domain",
-      "license": "Public domain",
-      "sha256": "1edb3a2646acfd7bd33d12a2e34f069efcf64ed3f1e562df43b1294665a82734",
-      "dhash": "0100101110110110001100110110100000110011000100110000001100010000",
-      "bytes": 320776,
-      "originalSize": [
-        1920,
-        1239
-      ],
-      "outputSize": [
-        1800,
-        1162
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/A._Leto_-_Marina_Piccola_a_Capri.jpg/1920px-A._Leto_-_Marina_Piccola_a_Capri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedOriginalSha256": "1edb3a2646acfd7bd33d12a2e34f069efcf64ed3f1e562df43b1294665a82734",
+      "rejectedCandidateContext": "File:A. Leto - Marina Piccola a Capri.jpg"
     },
     {
       "key": "scene-6",
@@ -351,27 +338,14 @@
       "placeLabel": "Monte Solaro",
       "slotIntent": "Monte Solaro",
       "searchQuery": "Monte Solaro views",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
-      "localPath": "/images/travel/capri-premium/destination/scene-7.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Capri_Centre_Belvedere.jpg/1920px-Capri_Centre_Belvedere.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "visualQaWarning": "Photo shows Capri town with Monte Solaro in the distance, not the requested scenic viewpoint from the summit.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Capri_Centre_Belvedere.jpg",
-      "candidateContext": "File:Capri Centre Belvedere.jpg",
-      "credit": "Paolo Costa Baldi · CC BY 3.0",
-      "license": "CC BY 3.0",
-      "sha256": "3403132ccb1e79461e34a25a39ebc1f59ead3336e15756aa9c93d74860a63564",
-      "dhash": "1111110010110010111110010110100000100101011001010110000011000001",
-      "bytes": 451514,
-      "originalSize": [
-        1920,
-        936
-      ],
-      "outputSize": [
-        1800,
-        878
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Capri_Centre_Belvedere.jpg/1920px-Capri_Centre_Belvedere.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedOriginalSha256": "3403132ccb1e79461e34a25a39ebc1f59ead3336e15756aa9c93d74860a63564",
+      "rejectedCandidateContext": "File:Capri Centre Belvedere.jpg"
     },
     {
       "key": "scene-8",
