@@ -17,4 +17,4 @@ Les photographies récemment remplacées restent rouges tant qu'elles n'ont pas 
 - [Saint-Jean-Cap-Ferrat](saint-jean-cap-ferrat.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](saint-jean-cap-ferrat.jpg)
 - [Cap d’Antibes](cap-dantibes.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](cap-dantibes.jpg)
 - [Lake Como](lake-como.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](lake-como.jpg)
-- [Capri](capri.md) — 21/21 fichiers candidats, 21 alertes ; [ouvrir l'image seule](capri.jpg)
+- [Capri](capri.md) — 17/21 fichiers candidats, 21 alertes ; [ouvrir l'image seule](capri.jpg)
