@@ -2,7 +2,7 @@
   "destination": "antiparos",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 11,
+  "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
   "hotels": [
     {
@@ -280,11 +280,27 @@
       "property": "Kastro Boutique Resort Antiparos",
       "propertyKey": "kastro-boutique",
       "slotIntent": "real Kastro Resort poolside bar with sandstone pergola at evening, distinct from daytime pool and shaded table; no fictional guestroom",
-      "sourcePage": "https://www.antiparosgreece.com/",
-      "status": "missing",
+      "sourcePage": "https://www.myboutiquehotel.com/en/boutique-hotels-antiparos-town/kastro-antiparos.html",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified hotel suite photograph available; source alternative for Kastro poolside bar must be independently visually inspected and correctly captioned."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/antiparos-premium/kastro-boutique/view-2.webp",
+      "downloadUrl": "https://www.myboutiquehotel.com/photos/112827/kastro-antiparos-antiparos-town-008-43694-1110x700.jpg",
+      "candidateContext": "True Kastro Boutique Resort poolside bar and stone pergola at blue hour (NOT a guestroom)",
+      "credit": "Verified named-property source; photographer at https://www.myboutiquehotel.com/en/boutique-hotels-antiparos-town/kastro-antiparos.html",
+      "license": "Commercial photographer permission to verify",
+      "sha256": "612bba71c684623d1c1642da1570a8544c899864fa47af36e29610b4d2e7d66f",
+      "dhash": "0011110101111111100111111000010100001101110001011011010110111101",
+      "bytes": 68708,
+      "originalSize": [
+        1110,
+        700
+      ],
+      "outputSize": [
+        1110,
+        700
+      ]
     },
     {
       "key": "view-3",

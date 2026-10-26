@@ -1,8 +1,6 @@
 {
-  "hotels": 11,
+  "hotels": 12,
   "scenes": 9,
-  "missing": [
-    "kastro-boutique/view-2"
-  ],
+  "missing": [],
   "diagnostics": []
 }
