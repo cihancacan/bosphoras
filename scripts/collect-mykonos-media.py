@@ -32,6 +32,10 @@ SCENES={
 # Exact sources are tied to the named real property or geolocated island place.
 # None implies commercial reuse rights until reviewed.
 EXACT_HOTELS={
+ "kalesma/view-1":[("https://media.timeout.com/images/106326909/image.jpg","https://www.timeout.com/greece/hotels/kalesma-mykonos","Real Kalesma hilltop architectural pools with wooden pergola and Delos sunset")],
+ "kalesma/view-2":[("https://www.travelbeyond.se/media/46701442/gr_kalesma-mykonos-suite_web.jpg","https://www.travelbeyond.se/resor/grekland/mykonos/kalesma","Authentic Kalesma light bedroom with timber-beamed ceiling and doorway opening to blue sea")],
+ "kalesma/view-3":[("https://www.ttgmedia.com/sites/default/files/styles/content_banner/public/dam/273/Kalesma_Mykonos_-_Main_Pool__Bar__Chapel.jpg?h=b69f83ed&itok=fm9RNj-I","https://www.ttgmedia.com/luxury/why-kalesma-is-the-ultimate-greek-getaway-36079","True Kalesma main pool and pergola with bougainvillea in sunny daylight")],
+
  "cavo-tagoo/view-1":[
   ("https://cdn.tatlerasia.com/asiatatler/i/hk/2018/11/02193148-cavo-tagoo_cover_2000x1335.jpg",
    "https://www.tatlerasia.com/lifestyle/travel/hk-5-heavenly-retreats-in-mykonos",
@@ -49,8 +53,10 @@ EXACT_HOTELS={
    "Real Cavo Tagoo sunset infinity pool with floating daybeds and sea, original editorial review")]
 }
 EXACT_SCENES={
- "scene-3":[("Mykonos Ornos 01.jpg","Verified Mykonos Ornos beach town and cove, Olaf Tausch")],
- "scene-5":[("Psarou mykonos.JPG","True Psarou bay beach Mykonos stitched panorama, photographer sailko")],
+ "scene-3":[("GR-mykonos-ornos-beach.jpg","Photograph of real sandy Ornos beach on Mykonos, author Bgabel 2012 CC BY-SA 3.0")],
+ "scene-5":[("Cyclades Mykonos Psarou Plage 23062013 - panoramio.jpg","Actual Psarou Beach Mykonos, June 2013, verify quality at full size")],
+
+
  "scene-6":[("Old Port of Mykonos 01.jpg","Geolocated Mykonos Old Port and Tagoo area, Bernard Gagnon")],
  "scene-9":[("Agios Ioannis, Mykonos, Greece (53496488711).jpg","True Agios Ioannis on Mykonos island, modern geolocated photograph")],
 }
@@ -60,12 +66,12 @@ EXACT_SCENE_URLS={
    "https://saltyble.com/",
    "Genuine west-facing Aleomandra coast sunset and Aegean sea as seen from a local villa")],
  "scene-9":[
-  ("https://www.saintjohn.gr/uploads/nr_photos/location_8408.jpg",
-   "https://www.saintjohn.gr/mykonos_beach_hotel/",
-   "Actual coastal outlook over Agios Ioannis Mykonos bay and Delos at sunset; photographed from the Saint John hotel"),
-  ("https://app.divineproperty.com/storage/property/2/images/1531f0e0ea9fbd8b270f0a0bccace4d8.jpg",
-   "https://divineproperty.com/villas/villa-sunset/",
-   "Aleomandra terrace near Agios Ioannis, Mykonos, sunset over sea with Delos in distance")]
+  ("https://www.wowabouts.com/z-media/2018/10/Agios%20Ioannis%20Beach.jpg",
+   "https://www.wowabouts.com/explore/post-agios-ioannis-beach",
+   "Actual sandy Agios Ioannis beach in Mykonos with white parasols, clear turquoise water and hills"),
+  ("https://www.sovereign.com/-/media/Bynder/Sovereign-properties/Greece/Mykonos/Mykonos-Grand/Views/Mykonos-Grand-2022-Beach-001-121809-Hybris.jpg?hash=989B71825460B223E14E53113823F945&rev=be576d61f814461ea26b3627d9dffdf7",
+   "https://www.sovereign.com/holidays/greece/mykonos/agios-ioannis/hotels/mykonos-grand/",
+   "True Agios Ioannis beach by Mykonos Grand hotel, with turquoise sea and thatched umbrellas")]
 }
 def commons_original(filename):
  from urllib.parse import quote
