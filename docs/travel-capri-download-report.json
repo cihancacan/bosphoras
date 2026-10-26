@@ -1,17 +1,10 @@
 {
-  "hotelPhotos": 6,
-  "destinationPhotos": 6,
+  "hotelPhotos": 12,
+  "destinationPhotos": 7,
   "unapproved": 21,
   "missing": [
-    "hotel-la-palma/view-1",
-    "hotel-la-palma/view-2",
-    "hotel-la-palma/view-3",
-    "jk-place-capri/view-3",
-    "punta-tragara/view-2",
-    "punta-tragara/view-3",
-    "destination/scene-1",
     "destination/scene-4",
-    "destination/scene-6"
+    "destination/scene-7"
   ],
   "diagnostics": [
     {
@@ -31,52 +24,16 @@
       "error": "429 Client Error: Too Many Requests for url: https://www.oetkerhotels.com/hotels/hotel-la-palma/restaurants-bars/"
     },
     {
-      "slot": "hotel-la-palma/view-1",
-      "result": "NO_MATCHING_AUTHENTIC_IMAGE"
-    },
-    {
-      "slot": "hotel-la-palma/view-2",
-      "result": "NO_MATCHING_AUTHENTIC_IMAGE"
-    },
-    {
-      "slot": "hotel-la-palma/view-3",
-      "result": "NO_MATCHING_AUTHENTIC_IMAGE"
-    },
-    {
-      "slot": "jk-place-capri/view-3",
-      "result": "NO_MATCHING_AUTHENTIC_IMAGE"
-    },
-    {
       "source": "https://manfredihotels.com/tragara/",
       "error": "403 Client Error: Forbidden for url: https://www.manfredihotels.com/tragara/"
-    },
-    {
-      "slot": "punta-tragara/view-2",
-      "result": "NO_MATCHING_AUTHENTIC_IMAGE"
-    },
-    {
-      "slot": "punta-tragara/view-3",
-      "result": "NO_MATCHING_AUTHENTIC_IMAGE"
-    },
-    {
-      "slot": "destination/scene-1",
-      "result": "NO_MATCHING_AUTHENTIC_IMAGE"
     },
     {
       "slot": "destination/scene-4",
       "result": "NO_MATCHING_AUTHENTIC_IMAGE"
     },
     {
-      "source": "https://upload.wikimedia.org/wikipedia/commons/a/ae/Fritz_Petzholdt_-_Udsigt_over_byen_Anacapri.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "error": "429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/a/ae/Fritz"
-    },
-    {
-      "slot": "destination/scene-6",
+      "slot": "destination/scene-7",
       "result": "NO_MATCHING_AUTHENTIC_IMAGE"
-    },
-    {
-      "source": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Brogi%2C_Giacomo_%281822-1881%29_-_n._5542_-_Isola_di_Capri_-_Panorama_dal_Monte_Solaro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&",
-      "error": "429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wikipedia/commons/c/cf/Brogi"
     }
   ]
 }

@@ -2,41 +2,89 @@
   "destination": "capri",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 6,
-  "downloadedDestinationCandidates": 4,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 7,
   "hotels": [
     {
       "key": "view-1",
       "property": "Hotel La Palma, Oetker Hotels",
       "propertyKey": "hotel-la-palma",
       "slotIntent": "Authentic sunlit hotel exterior",
-      "sourcePage": "https://www.oetkerhotels.com/hotels/hotel-la-palma/",
-      "status": "missing",
+      "sourcePage": "https://www.oetkerhotels.com/hotels/hotel-la-palma/restaurants-bars/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/hotel-la-palma/view-1.webp",
+      "downloadUrl": "https://images.eu.ctfassets.net/og3b0tarlg4b/4mqfWVzquDTXQ7jByoQ3LQ/39f72fafde43223f242f74e5388dad00/Hotel_La_Palma_Facade.jpg",
+      "candidateContext": "Current hotel façade with bougainvillea photographed in full daylight",
+      "credit": "Oetker Hotels · hotel imagery",
+      "license": "Source-specific licence requires independent verification",
+      "sha256": "e2582b8e7067dc1e496b7dadedbba89c99626cac559e6fd57bbcccacdf9f382c",
+      "dhash": "1101100111010000010011011100101001101010111010101110101101101010",
+      "bytes": 461332,
+      "originalSize": [
+        5199,
+        2924
+      ],
+      "outputSize": [
+        1800,
+        1012
+      ]
     },
     {
       "key": "view-2",
       "property": "Hotel La Palma, Oetker Hotels",
       "propertyKey": "hotel-la-palma",
       "slotIntent": "Actual room or suite",
-      "sourcePage": "https://www.oetkerhotels.com/hotels/hotel-la-palma/",
-      "status": "missing",
+      "sourcePage": "https://www.countrylife.co.uk/travel/hotel-la-palma-review-the-dazzling-new-place-to-stay-on-the-island-of-capri-266457",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/hotel-la-palma/view-2.webp",
+      "downloadUrl": "https://cdn.mos.cms.futurecdn.net/pTtHLhxxya74sRa357kF5c.jpg",
+      "candidateContext": "Actual Hotel La Palma bright renovated guestroom with mint furniture and terrace",
+      "credit": "Country Life / original credited hotel photographer",
+      "license": "Source-specific licence requires independent verification",
+      "sha256": "ed053563c0ffdd78b7ca9c29fcf734b6beda6f6e74f482a7092441dc3f363a44",
+      "dhash": "0111111110001111110011111101111011000110100011111110100111110011",
+      "bytes": 168256,
+      "originalSize": [
+        2481,
+        1654
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     },
     {
       "key": "view-3",
       "property": "Hotel La Palma, Oetker Hotels",
       "propertyKey": "hotel-la-palma",
       "slotIntent": "Real hotel restaurant, pool or terrace",
-      "sourcePage": "https://www.oetkerhotels.com/hotels/hotel-la-palma/",
-      "status": "missing",
+      "sourcePage": "https://www.oetkerhotels.com/hotels/hotel-la-palma/gallery/?tag=pool",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/hotel-la-palma/view-3.webp",
+      "downloadUrl": "https://images.eu.ctfassets.net/og3b0tarlg4b/7ogq6p5XPHyBiCDeKxPtSl/8eab2b33cbe1791af9e06d51586b6933/01_CAPRI_HOMEPAGE_2340x1743_02.jpg?fit=fill&fm=jpg&h=1450&w=1900",
+      "candidateContext": "Real Hotel La Palma renovated pool deck and white façade",
+      "credit": "Oetker Hotels · official hotel pool photograph",
+      "license": "Source-specific licence requires independent verification",
+      "sha256": "e5f9fc1f52e945dfb6d0b4da1966b1a0c34beac12903d7ca985d144c663450f4",
+      "dhash": "0010101000111100011011000011111000011110001100111101010101000101",
+      "bytes": 323464,
+      "originalSize": [
+        1900,
+        1450
+      ],
+      "outputSize": [
+        1572,
+        1200
+      ]
     },
     {
       "key": "view-1",
@@ -97,11 +145,27 @@
       "property": "J.K. Place Capri",
       "propertyKey": "jk-place-capri",
       "slotIntent": "Real hotel restaurant, pool or terrace",
-      "sourcePage": "https://jkcapri.com/en/",
-      "status": "missing",
+      "sourcePage": "https://jk-place.go-capri-hotels.com/it/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/jk-place-capri/view-3.webp",
+      "downloadUrl": "https://jk-place.go-capri-hotels.com/data/Photos/OriginalPhoto/2801/280162/280162333.JPEG",
+      "candidateContext": "Real J.K. Place Capri north-coast building above the sea, exterior daylight",
+      "credit": "Property photograph republished by hotel listing",
+      "license": "Source-specific licence requires independent verification",
+      "sha256": "d6537e517552656f503d14335c612005cf56e19f31cbdda9214c25ad7d242951",
+      "dhash": "1000000001100000001100000001000000110000101001001010110010100100",
+      "bytes": 184464,
+      "originalSize": [
+        2000,
+        1288
+      ],
+      "outputSize": [
+        1800,
+        1159
+      ]
     },
     {
       "key": "view-1",
@@ -135,22 +199,54 @@
       "property": "Hotel Punta Tragara",
       "propertyKey": "punta-tragara",
       "slotIntent": "Actual room or suite",
-      "sourcePage": "https://manfredihotels.com/tragara/",
-      "status": "missing",
+      "sourcePage": "https://www.marieclaire.it/lifestyle/viaggi/a46305320/suite-capri-hotel-punta-tragara/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/punta-tragara/view-2.webp",
+      "downloadUrl": "https://hips.hearstapps.com/hmg-prod/images/2-art-punta-tragara-003471-2982-artsuite-65a003b31b68f.jpeg?resize=2048%3A%2A",
+      "candidateContext": "Actual Punta Tragara Art Suite bedroom framing Faraglioni",
+      "credit": "Marie Claire Italy · exact Art Suite",
+      "license": "Source-specific licence requires independent verification",
+      "sha256": "b9934b568f0d617c55dfbbed4270aceddd87538c7e6a8df56e88d4db6bb2612d",
+      "dhash": "0001111100011100110011111101011111011011100111010011110001001101",
+      "bytes": 72276,
+      "originalSize": [
+        1280,
+        854
+      ],
+      "outputSize": [
+        1280,
+        854
+      ]
     },
     {
       "key": "view-3",
       "property": "Hotel Punta Tragara",
       "propertyKey": "punta-tragara",
       "slotIntent": "Real hotel restaurant, pool or terrace",
-      "sourcePage": "https://manfredihotels.com/tragara/",
-      "status": "missing",
+      "sourcePage": "https://www.internimagazine.it/interior/hotel-punta-tragara-a-capri/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/punta-tragara/view-3.webp",
+      "downloadUrl": "https://www.internimagazine.it/content/uploads/2022/06/Le-Monzu%CC%80-Terrace-1200x820.jpg",
+      "candidateContext": "True Hotel Punta Tragara pool and Le Monzù terrace, ochre façade",
+      "credit": "Interni magazine · real hotel terrace",
+      "license": "Source-specific licence requires independent verification",
+      "sha256": "467f8394ef59004a0e677017b7b23994c34023f85468fd11692fd0aedd719623",
+      "dhash": "1010000010000000100000000000000000110000011011010110011100110001",
+      "bytes": 124080,
+      "originalSize": [
+        1200,
+        820
+      ],
+      "outputSize": [
+        1200,
+        820
+      ]
     },
     {
       "key": "view-1",
@@ -240,10 +336,27 @@
       "placeLabel": "Faraglioni",
       "slotIntent": "Faraglioni",
       "searchQuery": "Faraglioni cliffs and turquoise sea",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/destination/scene-1.webp",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/620b705876b230130e2b3710/ec733abb-8455-4830-9a24-9fd86f8f5f6d/Capri%2BItaly.jpg?format=2500w",
+      "sourcePage": "https://academytravel.com.au/pompeii-capri-the-bay-of-naples-italy-tour-april-2026",
+      "candidateContext": "Real bright Faraglioni sea stacks with boats from aerial perspective",
+      "credit": "Academy Travel · source photograph",
+      "license": "Source-specific licence requires independent verification",
+      "sha256": "c0bcad95d04d96e716851d2007f97a36cca4836302a3a3cbcde5536c8265a573",
+      "dhash": "1110010011101101111111011000100111001010100010001101000001110010",
+      "bytes": 384998,
+      "originalSize": [
+        2500,
+        1406
+      ],
+      "outputSize": [
+        1800,
+        1012
+      ]
     },
     {
       "key": "scene-2",
@@ -314,24 +427,57 @@
       "placeLabel": "Marina Piccola",
       "slotIntent": "Marina Piccola",
       "searchQuery": "Capri Marina Piccola bay",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Original was a historic oil painting by A. Leto, not a current landscape photograph of Marina Piccola.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:A._Leto_-_Marina_Piccola_a_Capri.jpg",
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "sourcePage": "https://www.celebritycruises.com/blog/beaches-in-naples-italy",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/A._Leto_-_Marina_Piccola_a_Capri.jpg/1920px-A._Leto_-_Marina_Piccola_a_Capri.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "1edb3a2646acfd7bd33d12a2e34f069efcf64ed3f1e562df43b1294665a82734",
-      "rejectedCandidateContext": "File:A. Leto - Marina Piccola a Capri.jpg"
+      "rejectedCandidateContext": "File:A. Leto - Marina Piccola a Capri.jpg",
+      "localPath": "/images/travel/capri-premium/destination/scene-5.webp",
+      "downloadUrl": "https://www.celebritycruises.com/blog/content/uploads/2022/01/beaches-in-naples-italy-marina-piccola-beach-capri-1.jpg",
+      "candidateContext": "Genuine Marina Piccola swimming cove with turquoise sea and Faraglioni",
+      "credit": "Celebrity Cruises · original location photograph",
+      "license": "Source-specific licence requires independent verification",
+      "sha256": "9c3860a0fa4f3fc91bc43eee5269dd67466b8f2324d0675277fa29941c6b8dcf",
+      "dhash": "0110111101111111001111111001001101000011011111110111111101111111",
+      "bytes": 475084,
+      "originalSize": [
+        1920,
+        1346
+      ],
+      "outputSize": [
+        1712,
+        1200
+      ]
     },
     {
       "key": "scene-6",
       "placeLabel": "Anacapri",
       "slotIntent": "Anacapri",
       "searchQuery": "Anacapri old town",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/destination/scene-6.webp",
+      "downloadUrl": "https://www.citalia.com/-/media/Bynder/Citalia-destinations/Italy/Islands/Capri/Anacapri/Anacapri-2024-Church-St-Michele-Shutterstock-557041132-Hybris.jpg?w=1900",
+      "sourcePage": "https://www.citalia.com/holidays/italy/campania/capri/anacapri/",
+      "candidateContext": "Real historic church and piazza in Anacapri in bright daylight",
+      "credit": "Citalia · Shutterstock author requires attribution review",
+      "license": "Source-specific licence requires independent verification",
+      "sha256": "0a86fcc6240c6174cd6be9db973dbaa697b054de9ba48605a11f64e71f2391d8",
+      "dhash": "1111111111110111111011000011110000011010000010110000101000010100",
+      "bytes": 230266,
+      "originalSize": [
+        1900,
+        1069
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ]
     },
     {
       "key": "scene-7",
