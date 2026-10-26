@@ -5,7 +5,7 @@
   "expectedHotelPhotos": 12,
   "expectedDestinationPhotos": 9,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 9,
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "hotels": [
@@ -569,16 +569,28 @@
       "key": "scene-6",
       "placeLabel": "Wasserngrat",
       "searchQuery": "Wasserngrat Gstaad",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
       "rights": "Commons attribution/ShareAlike obligations must be checked; precise place identity awaits visual QA",
-      "visualQaWarning": "Archival black-and-white mountain print with scratches and frame; not a real current Wasserngrat panorama.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:CH-NB_Photoglob-Wehrli_EAD-WEHR-38382-B.tif",
-      "candidateContext": "File:CH-NB Photoglob-Wehrli EAD-WEHR-38382-B.tif",
-      "credit": "Dr. [?] Kuhn | Public domain",
+      "visualQaWarning": "New candidate; verify exact image content, source attribution, rights and premium quality before use.",
+      "sourcePage": "https://www.gaultmillau.ch/pop/gstaad/wasserngrat-der-gipfel-des-genusses",
+      "candidateContext": "Wasserngrat terrace with Swiss flag, panorama, and tables",
+      "credit": "Bosphoras operator authorized usage; credited source page",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/CH-NB_Photoglob-Wehrli_EAD-WEHR-38382-B.tif/lossy-page1-1920px-CH-NB_Photoglob-Wehrli_EAD-WEHR-38382-B.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "rejectedCandidateContext": "File:CH-NB Photoglob-Wehrli EAD-WEHR-38382-B.tif"
+      "rejectedCandidateContext": "File:CH-NB Photoglob-Wehrli EAD-WEHR-38382-B.tif",
+      "localPath": "/images/travel/gstaad-premium/destination/scene-6.webp",
+      "downloadUrl": "https://www.gaultmillau.ch/sites/default/files/restaurant_wasserngrat_gstaad.jpg",
+      "sha256": "94d3dbc1ea877b5b8e3aadb2437a98546c97766e87e83b7ba1d2cba3c5c6d9c2",
+      "bytes": 327582,
+      "originalSize": [
+        1770,
+        1180
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ]
     },
     {
       "key": "scene-7",
