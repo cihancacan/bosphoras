@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
@@ -549,14 +549,30 @@
       "placeLabel": "Positano ceramics and village streets",
       "searchQuery": "Positano narrow streets colourful ceramic",
       "slotIntent": "Positano ceramics and village streets",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "The previous Commons photograph depicted a village street but not the intended ceramics. Replaced with an explicitly ceramic subject from Commons.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Positano_(32632824125).jpg",
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Positano_(Italy)_05.jpg",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Positano_%2832632824125%29.jpg/1920px-Positano_%2832632824125%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "9c280c5586833240115a76e01922848547488f482cbeb17c0917ef58904661ac",
-      "rejectedCandidateContext": "Real Positano village shopping streets and colourful houses, subject identity to inspect"
+      "rejectedCandidateContext": "Real Positano village shopping streets and colourful houses, subject identity to inspect",
+      "localPath": "/images/travel/positano-premium/destination/scene-8.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Positano_%28Italy%29_05.jpg/1920px-Positano_%28Italy%29_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "Ceramic heads photographed in Positano by Bernard Gagnon, 8 May 2022, CC BY 4.0",
+      "credit": "Bernard Gagnon · CC BY 4.0",
+      "license": "CC BY 4.0",
+      "sha256": "61f05ca99310181aceed8bea91cfaeaa005c77f14d317c821ee7cf0c43f9b9d5",
+      "dhash": "1100010010001110000011100110010010101100101000110001111010011110",
+      "bytes": 289714,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ]
     },
     {
       "key": "scene-9",
