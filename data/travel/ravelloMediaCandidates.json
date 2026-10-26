@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 5,
+  "downloadedDestinationCandidates": 8,
   "hotels": [
     {
       "key": "view-1",
@@ -444,30 +444,81 @@
       "placeLabel": "Ravello village rooftops and coast",
       "searchQuery": "Ravello rooftop Amalfi coastline",
       "slotIntent": "Ravello village rooftops and coast",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Vue_emblématique_de_Ravello.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Vue_embl%C3%A9matique_de_Ravello.jpg/1920px-Vue_embl%C3%A9matique_de_Ravello.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "Authentic elevated Ravello town and sea panorama; inspect daylight and orientation",
+      "credit": "Chloemseau · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "sha256": "41c8168e2df86efa911658b7eedb264406c8367f4733e6fe5c47b788e3ec1ebd",
+      "dhash": "1100011101100111001101110000111101000111001101110001111100010111",
+      "bytes": 356384,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ]
     },
     {
       "key": "scene-6",
       "placeLabel": "Scala mountain village overlooking valley",
       "searchQuery": "Scala village Ravello mountains Italy",
       "slotIntent": "Scala mountain village overlooking valley",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Scala_Campania_panorama.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Scala_Campania_panorama.jpg/1920px-Scala_Campania_panorama.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "Authentic Scala inland village and Lattari mountains",
+      "credit": "Jensens · Public domain",
+      "license": "Public domain",
+      "sha256": "0812c3825cfe425afab9a3e04ad482aeccebfa2e86abd2f77d651f8bff581f76",
+      "dhash": "0010010011100000110010000101010010010000001000010110100111111011",
+      "bytes": 307314,
+      "originalSize": [
+        1920,
+        847
+      ],
+      "outputSize": [
+        1750,
+        772
+      ]
     },
     {
       "key": "scene-7",
       "placeLabel": "Marmorata coast below Ravello",
       "searchQuery": "Marmorata Amalfi coast Atrani",
       "slotIntent": "Marmorata coast below Ravello",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/destination/scene-7.webp",
+      "sourcePage": "https://www.wexas.com/accommodation-offers/palazzo-avino-ravello-153313",
+      "downloadUrl": "https://d19lgisewk9l6l.cloudfront.net/assetbank/palazzo-avino-clubhouse-by-the-sea-kayaking-1_51282.jpg",
+      "candidateContext": "Marmorata coast kayak and authentic Palazzo Avino waterside platform",
+      "credit": "Wexas Travel / original photographer (copyright verification required)",
+      "license": "Original photographer permission requires verification",
+      "sha256": "a6850806c443182a87a7168c5d804a19ffd5db9cd83d4eb38d4305ec94633655",
+      "dhash": "0100111000001000000010010000011100100101001011010000110100001001",
+      "bytes": 253228,
+      "originalSize": [
+        1000,
+        670
+      ],
+      "outputSize": [
+        1000,
+        670
+      ]
     },
     {
       "key": "scene-8",
