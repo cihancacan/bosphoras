@@ -28,6 +28,44 @@ SCENES={
 "scene-8":("Ano Mera monastery Mykonos",("ano mera","mykonos")),
 "scene-9":("Agios Ioannis Mykonos bay",("agios ioannis","mykonos"))
 }
+
+# Exact sources are tied to the named real property or geolocated island place.
+# None implies commercial reuse rights until reviewed.
+EXACT_HOTELS={
+ "cavo-tagoo/view-1":[
+  ("https://cdn.tatlerasia.com/asiatatler/i/hk/2018/11/02193148-cavo-tagoo_cover_2000x1335.jpg",
+   "https://www.tatlerasia.com/lifestyle/travel/hk-5-heavenly-retreats-in-mykonos",
+   "Actual Cavo Tagoo hotel stepped pool and sunset sea view, not a generic Mykonos infinity pool")],
+ "cavo-tagoo/view-2":[
+  ("https://kinoussis.gr/assets/lib/2020/05/06/cavo_tagoo_1.jpg",
+   "https://kinoussis.gr/cavo-tagoo.html",
+   "Actual Cavo Tagoo cliffside cave interior from design company and documented project"),
+  ("https://assets.holidaypirates.group/2021_12/MTY0MDcwNjg5Mjc5MA.jpeg",
+   "https://www.urlaubspiraten.de/hotels/cavo-tagoo-mykonos",
+   "Cavo Tagoo real guest lounge and cave pool suite interior")],
+ "cavo-tagoo/view-3":[
+  ("https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2024/01/IMG_5224.jpeg?ssl=1",
+   "https://theluxurytravelexpert.com/cavo-tagoo-mykonos-review/",
+   "Real Cavo Tagoo sunset infinity pool with floating daybeds and sea, original editorial review")]
+}
+EXACT_SCENES={
+ "scene-3":[("Mykonos Ornos 01.jpg","Verified Mykonos Ornos beach town and cove, Olaf Tausch")],
+ "scene-5":[("Psarou mykonos.JPG","True Psarou bay beach Mykonos stitched panorama, photographer sailko")],
+ "scene-6":[("Old Port of Mykonos 01.jpg","Geolocated Mykonos Old Port and Tagoo area, Bernard Gagnon")],
+ "scene-9":[("Agios Ioannis, Mykonos, Greece (53496488711).jpg","True Agios Ioannis on Mykonos island, modern geolocated photograph")],
+}
+EXACT_SCENE_URLS={
+ "scene-4":[
+  ("https://saltyble.com/images/andreas_bekas_2025_web-15.jpeg",
+   "https://saltyble.com/",
+   "Genuine west-facing Aleomandra coast sunset and Aegean sea as seen from a local villa")]
+}
+def commons_original(filename):
+ from urllib.parse import quote
+ canon=filename.replace(" ","_")
+ h=hashlib.md5(canon.encode("utf-8")).hexdigest()
+ return "https://upload.wikimedia.org/wikipedia/commons/"+h[0]+"/"+h[:2]+"/"+quote(canon,safe="()")
+
 diagnostics=[]
 def fetch(url,params=None):
  try:
@@ -121,11 +159,18 @@ def main():
    found=[]
    for page in HOTELS[key]:found.extend(site_images(page))
    siteCache[key]=found;print("MYKONOS_SITE",key,len(found),flush=True)
-  capture(item,siteCache[key],seenURLs,seenHashes,seenDHash)
+  exact=[(150,url,page,ctx,"Photographer or source: "+page,"Commercial reuse licence needs confirmation")
+    for url,page,ctx in EXACT_HOTELS.get(key+"/"+item["key"],[])]
+  capture(item,exact+siteCache[key],seenURLs,seenHashes,seenDHash)
  for item in m["destinationScenes"]:
   if item.get("localPath"):continue
   query,tokens=SCENES[item["key"]]
-  capture(item,commons(query,tokens),seenURLs,seenHashes,seenDHash)
+  exact=[(170,commons_original(name),"https://commons.wikimedia.org/wiki/File:"+name.replace(" ","_"),
+     ctx,"Wikimedia Commons source author, check file history for attribution","Creative Commons licence to verify in file")
+     for name,ctx in EXACT_SCENES.get(item["key"],[])]
+  direct=[(180,url,page,ctx,"Source photographer at "+page,"Publisher/photographer permission required")
+     for url,page,ctx in EXACT_SCENE_URLS.get(item["key"],[])]
+  capture(item,direct+exact+commons(query,tokens),seenURLs,seenHashes,seenDHash)
  m["downloadedHotelCandidates"]=sum(bool(x.get("localPath")) for x in m["hotels"])
  m["downloadedDestinationCandidates"]=sum(bool(x.get("localPath")) for x in m["destinationScenes"])
  m["visuallyVerified"]=False;m["approvedForCommercialPublication"]=False
