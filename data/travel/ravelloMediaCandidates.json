@@ -1,0 +1,234 @@
+{
+  "destination": "ravello",
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "hotels": [
+    {
+      "key": "view-1",
+      "property": "Caruso, A Belmond Hotel, Amalfi Coast",
+      "propertyKey": "caruso-belmond",
+      "slotIntent": "actual hotel exterior and architecture",
+      "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "view-2",
+      "property": "Caruso, A Belmond Hotel, Amalfi Coast",
+      "propertyKey": "caruso-belmond",
+      "slotIntent": "genuine guestroom or suite interior",
+      "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "view-3",
+      "property": "Caruso, A Belmond Hotel, Amalfi Coast",
+      "propertyKey": "caruso-belmond",
+      "slotIntent": "property pool, gardens or restaurant",
+      "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "view-1",
+      "property": "Palazzo Avino",
+      "propertyKey": "palazzo-avino",
+      "slotIntent": "actual hotel exterior and architecture",
+      "sourcePage": "https://www.palazzoavino.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "view-2",
+      "property": "Palazzo Avino",
+      "propertyKey": "palazzo-avino",
+      "slotIntent": "genuine guestroom or suite interior",
+      "sourcePage": "https://www.palazzoavino.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "view-3",
+      "property": "Palazzo Avino",
+      "propertyKey": "palazzo-avino",
+      "slotIntent": "property pool, gardens or restaurant",
+      "sourcePage": "https://www.palazzoavino.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "view-1",
+      "property": "Hotel Villa Cimbrone",
+      "propertyKey": "hotel-villa-cimbrone",
+      "slotIntent": "actual hotel exterior and architecture",
+      "sourcePage": "https://www.hotelvillacimbrone.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "view-2",
+      "property": "Hotel Villa Cimbrone",
+      "propertyKey": "hotel-villa-cimbrone",
+      "slotIntent": "genuine guestroom or suite interior",
+      "sourcePage": "https://www.hotelvillacimbrone.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "view-3",
+      "property": "Hotel Villa Cimbrone",
+      "propertyKey": "hotel-villa-cimbrone",
+      "slotIntent": "property pool, gardens or restaurant",
+      "sourcePage": "https://www.hotelvillacimbrone.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "view-1",
+      "property": "Palazzo Confalone",
+      "propertyKey": "palazzo-confalone",
+      "slotIntent": "actual hotel exterior and architecture",
+      "sourcePage": "https://palazzoconfalone.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "view-2",
+      "property": "Palazzo Confalone",
+      "propertyKey": "palazzo-confalone",
+      "slotIntent": "genuine guestroom or suite interior",
+      "sourcePage": "https://palazzoconfalone.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "view-3",
+      "property": "Palazzo Confalone",
+      "propertyKey": "palazzo-confalone",
+      "slotIntent": "property pool, gardens or restaurant",
+      "sourcePage": "https://palazzoconfalone.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "placeLabel": "Villa Rufolo gardens and Tyrrhenian Sea",
+      "searchQuery": "Ravello Villa Rufolo gardens panoramic sea",
+      "slotIntent": "Villa Rufolo gardens and Tyrrhenian Sea",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "scene-2",
+      "placeLabel": "Terrazza dell'Infinito Villa Cimbrone marble busts",
+      "searchQuery": "Ravello Villa Cimbrone Infinity Terrace sea",
+      "slotIntent": "Terrazza dell'Infinito Villa Cimbrone marble busts",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "scene-3",
+      "placeLabel": "Ravello Piazza Duomo and cathedral",
+      "searchQuery": "Ravello Piazza Duomo cathedral",
+      "slotIntent": "Ravello Piazza Duomo and cathedral",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "scene-4",
+      "placeLabel": "San Giovanni del Toro Ravello historic quarter",
+      "searchQuery": "Ravello San Giovanni del Toro church",
+      "slotIntent": "San Giovanni del Toro Ravello historic quarter",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "scene-5",
+      "placeLabel": "Ravello village rooftops and coast",
+      "searchQuery": "Ravello rooftop Amalfi coastline",
+      "slotIntent": "Ravello village rooftops and coast",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "scene-6",
+      "placeLabel": "Scala mountain village overlooking valley",
+      "searchQuery": "Scala village Ravello mountains Italy",
+      "slotIntent": "Scala mountain village overlooking valley",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "scene-7",
+      "placeLabel": "Marmorata coast below Ravello",
+      "searchQuery": "Marmorata Amalfi coast Atrani",
+      "slotIntent": "Marmorata coast below Ravello",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "scene-8",
+      "placeLabel": "Auditorium Oscar Niemeyer Ravello exterior",
+      "searchQuery": "Ravello Oscar Niemeyer auditorium",
+      "slotIntent": "Auditorium Oscar Niemeyer Ravello exterior",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    },
+    {
+      "key": "scene-9",
+      "placeLabel": "Amalfi and Atrani panorama from Ravello",
+      "searchQuery": "Amalfi Atrani coast view Ravello",
+      "slotIntent": "Amalfi and Atrani panorama from Ravello",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+    }
+  ],
+  "publicationBlockedReason": "Original source-backed 21-photo set not yet downloaded, visually approved, or licensed per original photographer. Noindex, no supplier bookability."
+}
