@@ -32,9 +32,13 @@ EXACT={
  "hotel-poseidon/view-1":[("https://smallandeleganthotels.com/images/blog/Poseidon_-_sun_terrace_2_%287%29.jpg",
    "https://smallandeleganthotels.com/destinations/italy/amalfi-coast-sorrento-positano/hotel-poseidon-positano/",
    "Authentic sunlit Hotel Poseidon pool terrace, striped parasols and sun loungers")],
- "hotel-poseidon/view-2":[("https://www.hotelposeidonpositano.it/storage/1450/TOP-new/top_esterni8.jpg",
-   "https://www.hotelposeidonpositano.it/en/hotel-in-positano",
-   "Hotel Poseidon Positano hillside exterior")],
+ "hotel-poseidon/view-2":[
+  ("https://cdn.blastness.biz/media/1450/TOP-new/thumbs/full/top_wow_room.jpg",
+   "https://www.hotelposeidonpositano.it/en/rooms-hotel-in-positano/wow-suite",
+   "Authentic Hotel Poseidon spacious WOW! Suite with vibrant rugs, terrace and red curtains"),
+  ("https://cdn.blastness.biz/media/1450/GALLERY-new/thumbs/medium/gallery_wow-suite5.jpg",
+   "https://www.hotelposeidonpositano.it/en/rooms-hotel-in-positano/wow-suite",
+   "Positano Hotel Poseidon WOW Suite interior with white seating and flowers")],
  "hotel-poseidon/view-3":[("https://images.squarespace-cdn.com/content/v1/663b6e06900de569cb5eff86/1722093018761-YQQW4QGKR9TFV8FJP6A6/poseidon%2Bcocktail%2Bhour.jpg",
    "https://plannedtowhere.com/blog/best-hotels-positano",
    "Real Hotel Poseidon dining terrace with illuminated pool at blue hour")],
@@ -54,7 +58,7 @@ SCENES_EXACT={
  "scene-6":[("84017 Arienzo SA, Italy - panoramio (1).jpg","Authentic Arienzo Positano coast scene geolocated on Wikimedia Commons"),("84017 Arienzo SA, Italy - panoramio.jpg","Alternative Arienzo photograph at precisely named site")],
  "scene-7":[("Il San Pietro di Positano-14460805246.jpg","True San Pietro di Positano and Laurito coast from nearby Praiano"),("84017 Arienzo SA, Italy - panoramio (2).jpg","Nearby east Positano coast context: inspect geographic identity")],
  "scene-8":[("Positano (32632824125).jpg","Real Positano village shopping streets and colourful houses, subject identity to inspect"),("Positano - 7271.jpg","Positano village lane, confirm ceramic context")],
- "scene-9":[("Praiano, Amalfitan Coast.jpeg","Actual Praiano and coastal panorama east of Positano, verified coordinates"),("View of Praiano from the sea, 2010.jpg","Real nearby Praiano photographed from Tyrrhenian Sea")]
+ "scene-9":[("View of Praiano from the sea, 2010.jpg","Real nearby Praiano photographed from Tyrrhenian Sea"),("Praiano, Amalfitan Coast.jpeg","Actual Praiano and coastal panorama east of Positano, verified coordinates")]
 }
 def exact_commons(title,caption):
  r=fetch("https://commons.wikimedia.org/w/api.php",params={
@@ -180,7 +184,9 @@ def main():
   query,tokens=SCENES[x["key"]]
   confirmed=[]
   for title,caption in SCENES_EXACT.get(x["key"],[]):confirmed.extend(exact_commons(title,caption))
-  candidate(x,confirmed or commons_images(query,tokens),urls,hashes,p)
+  fallback=[(150,"https://www.laconchigliapraiano.it/Assets/vovoproductions_hotel-shots_2025-02-01_1250/Resized/Amalfi-1%20%28Personalizzato%29.jpg",
+     "https://www.laconchigliapraiano.it/","Real sunlit panorama of Praiano along the Tyrrhenian coast","La Conchiglia Hotel · official 2025 Praiano area photo","Official hotel photographer rights check required")] if x["key"]=="scene-9" else []
+  candidate(x,fallback+confirmed+commons_images(query,tokens),urls,hashes,p)
  m["downloadedHotelCandidates"]=sum(bool(x.get("localPath")) for x in m["hotels"])
  m["downloadedDestinationCandidates"]=sum(bool(x.get("localPath")) for x in m["destinationScenes"])
  m["visuallyVerified"]=False;m["approvedForCommercialPublication"]=False
