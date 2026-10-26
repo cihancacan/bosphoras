@@ -1,14 +1,14 @@
 # Mykonos — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 0/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 15/21 · Validés visuellement : 0/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Mykonos](mykonos.jpg)
 
 | No | Etablissement / lieu | Source et métadonnées | État |
 |---:|---|---|---|
-| 1 | Kalesma Mykonos — view-1 | [Source](https://www.kalesmamykonos.com/) ·    | Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
-| 2 | Kalesma Mykonos — view-2 | [Source](https://www.kalesmamykonos.com/) ·    | Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
-| 3 | Kalesma Mykonos — view-3 | [Source](https://www.kalesmamykonos.com/) ·    | Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
+| 1 | Kalesma Mykonos — view-1 | [Source](https://www.kalesmamykonos.com/) · | Manquante; **Main image shows hotel horse and brand wall, not an architecture photo appropriate as premier exterior.** |
+| 2 | Kalesma Mykonos — view-2 | [Source](https://www.kalesmamykonos.com/) · | Manquante; **Another detail of the same hotel horse, near-duplicate and not a guestroom interior.** |
+| 3 | Kalesma Mykonos — view-3 | [Source](https://www.kalesmamykonos.com/) · | Manquante; **Close crop of a draped bed and plunge pool wall without identifiable premium property context.** |
 | 4 | Santa Marina, a Luxury Collection Resort, Mykonos — view-1 | [Source](https://www.santa-marina.gr/accommodation) · THE PRESIDENTIAL   | Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
 | 5 | Santa Marina, a Luxury Collection Resort, Mykonos — view-2 | [Source](https://www.santa-marina.gr/accommodation) · VILLA TURQUOISE   | Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
 | 6 | Santa Marina, a Luxury Collection Resort, Mykonos — view-3 | [Source](https://www.santa-marina.gr/accommodation) · VILLA TANZANITE   | Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
@@ -20,10 +20,10 @@
 | 12 | Mykonos Blu, Grecotel — view-3 | [Source](https://www.grecotel.com/mykonosblu/) ·    | Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
 | 13 | Chora Mykonos whitewashed town and windmills — scene-1 | [Source](https://commons.wikimedia.org/wiki/File:Chora_Windmills,_Mykonos,_Greece_(53505710707).jpg) · File:Chora Windmills, Mykonos, Greece (53505710707).jpg| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
 | 14 | Little Venice waterfront houses and balconies — scene-2 | [Source](https://commons.wikimedia.org/wiki/File:Little_Venice,_Chora,_Mykonos,_Greece_(53505704507).jpg) · File:Little Venice, Chora, Mykonos, Greece (53505704507).jpg| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
-| 15 | Ornos Bay white beach and turquoise water — scene-3 | [Source](https://commons.wikimedia.org/wiki/File:Mykonos_Ornos_01.jpg) · Verified Mykonos Ornos beach town and cove, Olaf Tausch| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
+| 15 | Ornos Bay white beach and turquoise water — scene-3 | [Source](https://commons.wikimedia.org/wiki/File:Mykonos_Ornos_01.jpg) · | Manquante; **Ornos source photograph mainly shows dry hillside, not the sandy beach promised by the slot.** |
 | 16 | Aleomandra sunset view towards Delos — scene-4 | [Source](https://saltyble.com/) · Genuine west-facing Aleomandra coast sunset and Aegean sea as seen from a local villa| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
-| 17 | Psarou Bay and sailing yachts — scene-5 | [Source](https://commons.wikimedia.org/wiki/File:Psarou_mykonos.JPG) · True Psarou bay beach Mykonos stitched panorama, photographer sailko| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
+| 17 | Psarou Bay and sailing yachts — scene-5 | [Source](https://commons.wikimedia.org/wiki/File:Psarou_mykonos.JPG) · | Manquante; **Source image of Psarou shows distant hillside but not the turquoise bathing beach or yachts.** |
 | 18 | Tagoo hillside and Old Port Mykonos — scene-6 | [Source](https://commons.wikimedia.org/wiki/File:Old_Port_of_Mykonos_01.jpg) · Geolocated Mykonos Old Port and Tagoo area, Bernard Gagnon| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
 | 19 | Delos ancient ruins with Aegean Sea — scene-7 | [Source](https://commons.wikimedia.org/wiki/File:A_panoramic_view_of_Delos.jpg) · File:A panoramic view of Delos.jpg| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
 | 20 | Ano Mera Mykonos monastery village — scene-8 | [Source](https://commons.wikimedia.org/wiki/File:Mykonos_–_Kloster_Ano_Mera_-_panoramio_(1).jpg) · File:Mykonos – Kloster Ano Mera - panoramio (1).jpg| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
-| 21 | Agios Ioannis beach and coast Mykonos — scene-9 | [Source](https://divineproperty.com/villas/villa-sunset/) · Aleomandra terrace near Agios Ioannis, Mykonos, sunset over sea with Delos in distance| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
+| 21 | Agios Ioannis beach and coast Mykonos — scene-9 | [Source](https://divineproperty.com/villas/villa-sunset/) · | Manquante; **Second sunset over villa plunge pool duplicates Aleomandra sunset and does not show Agios Ioannis beach.** |
