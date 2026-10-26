@@ -20,6 +20,7 @@ REGISTRY=[
  ("saintJeanCapFerrat","saint-jean-cap-ferrat","Saint-Jean-Cap-Ferrat"),
  ("capDAntibes","cap-dantibes","Cap d’Antibes"),
  ("lakeComo","lake-como","Lake Como"),
+ ("capri","capri","Capri"),
 ]
 OUT=Path("docs/travel-photo-contact-sheets");OUT.mkdir(parents=True,exist_ok=True)
 try:
