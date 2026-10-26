@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
@@ -552,10 +552,27 @@
       "placeLabel": "Agios Ioannis beach and coast Mykonos",
       "slotIntent": "Agios Ioannis beach and coast Mykonos",
       "searchQuery": "Agios Ioannis beach and coast Mykonos Mykonos Greece photo",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "localPath": "/images/travel/mykonos-premium/destination/scene-9.webp",
+      "sourcePage": "https://divineproperty.com/villas/villa-sunset/",
+      "downloadUrl": "https://app.divineproperty.com/storage/property/2/images/1531f0e0ea9fbd8b270f0a0bccace4d8.jpg",
+      "candidateContext": "Aleomandra terrace near Agios Ioannis, Mykonos, sunset over sea with Delos in distance",
+      "credit": "Source photographer at https://divineproperty.com/villas/villa-sunset/",
+      "license": "Publisher/photographer permission required",
+      "sha256": "28e32b361818956213d3bc8102b0608dbdc56de211f8db3fc32b719bfd385463",
+      "dhash": "0000011100000111000001110000011100000111000001110000011100000111",
+      "bytes": 175818,
+      "originalSize": [
+        1620,
+        1080
+      ],
+      "outputSize": [
+        1620,
+        1080
+      ]
     }
   ],
   "publicationBlockedReason": "Need 21 exact sourced WebPs, individual visual and rights QA, and ten-destination batch Preview."

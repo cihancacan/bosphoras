@@ -1,25 +1,6 @@
 {
   "hotels": 12,
-  "scenes": 8,
-  "missing": [
-    "destination/scene-9"
-  ],
-  "diagnostics": [
-    {
-      "url": "https://www.cavotagoo.com/mykonos/",
-      "error": "429 Client Error: Too Many Requests for url: https://www.cavotagoo.com/mykonos/"
-    },
-    {
-      "url": "https://booking-mykonos.cavotagoo.com/about",
-      "error": "403 Client Error: Forbidden for url: https://booking-mykonos.cavotagoo.com/about"
-    },
-    {
-      "url": "https://www.cavotagoo.com/mykonos/gallery/",
-      "error": "429 Client Error: Too Many Requests for url: https://www.cavotagoo.com/mykonos/gallery/"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Agios_Ioannis%2C_Mykonos%2C_Greece_(53496488711).jpg",
-      "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/c/c6/Agios_Ioannis%2C_Mykonos%2C_Greece_(53"
-    }
-  ]
+  "scenes": 9,
+  "missing": [],
+  "diagnostics": []
 }
