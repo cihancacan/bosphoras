@@ -1,33 +1,6 @@
 {
   "hotels": 12,
-  "scenes": 8,
-  "missing": [
-    "destination/scene-9"
-  ],
-  "errors": [
-    {
-      "url": "https://commons.wikimedia.org/w/api.php",
-      "error": "429 Client Error: Too Many Requests for url: https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Marmorata+Amalfi+coast+sea&gsrnames"
-    },
-    {
-      "url": "https://commons.wikimedia.org/w/api.php",
-      "error": "429 Client Error: Too Many Requests for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3AAtrani+%28Italy%29.jpg&prop=imageinfo&iiprop=url"
-    },
-    {
-      "url": "https://commons.wikimedia.org/w/api.php",
-      "error": "429 Client Error: Too Many Requests for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3AAmalfi+Coast%2C+Italy+Panoramic.jpg&prop=imagein"
-    },
-    {
-      "url": "https://commons.wikimedia.org/w/api.php",
-      "error": "429 Client Error: Too Many Requests for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3AAmalfitan+Coast+from+Ravello.JPG&prop=imageinfo&"
-    },
-    {
-      "url": "https://commons.wikimedia.org/w/api.php",
-      "error": "429 Client Error: Too Many Requests for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3ACampania+Ravello2+tango7174.jpg&prop=imageinfo&i"
-    },
-    {
-      "url": "https://commons.wikimedia.org/w/api.php",
-      "error": "429 Client Error: Too Many Requests for url: https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Atrani+Amalfi+panorama+Ravello&gsrn"
-    }
-  ]
+  "scenes": 9,
+  "missing": [],
+  "errors": []
 }

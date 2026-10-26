@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
@@ -552,10 +552,27 @@
       "placeLabel": "Amalfi and Atrani panorama from Ravello",
       "searchQuery": "Amalfi Atrani coast view Ravello",
       "slotIntent": "Amalfi and Atrani panorama from Ravello",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/destination/scene-9.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Atrani_(Italy).jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Atrani_(Italy).jpg",
+      "candidateContext": "Bernard Gagnon original daylight photograph of Atrani; coastal scene, not hotel location or a Ravello camera position",
+      "credit": "Bernard Gagnon · CC BY 4.0",
+      "license": "CC BY 4.0",
+      "sha256": "f025d135e76b599c71bcb52bd47b20843cc559934557415f6aec775832f14f3e",
+      "dhash": "1010001100101100011111000001100100011001001111001111101101111101",
+      "bytes": 678168,
+      "originalSize": [
+        4140,
+        2760
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ]
     }
   ],
   "publicationBlockedReason": "Original source-backed 21-photo set not yet downloaded, visually approved, or licensed per original photographer. Noindex, no supplier bookability."
