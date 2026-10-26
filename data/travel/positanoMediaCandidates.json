@@ -2,8 +2,8 @@
   "destination": "positano",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 6,
+  "downloadedDestinationCandidates": 3,
   "hotels": [
     {
       "key": "view-1",
@@ -11,10 +11,26 @@
       "propertyKey": "le-sirenuse",
       "slotIntent": "actual sunlit hotel exterior",
       "sourcePage": "https://sirenuse.it/en/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/le-sirenuse/view-1.webp",
+      "downloadUrl": "https://sirenuse.it/media/o0kpl5si/le_sirenuse_drone-1783.jpg?width=1252&height=940&format=webp&v=1da9cabfef59920",
+      "candidateContext": "   ",
+      "credit": "Official source webpage; photographer rights to verify",
+      "license": "Copyright held by source/photographer",
+      "sha256": "18478fe1f06afc93d82b22f90ac0a7e1b3e775493c9ddc4b91646433a9fd250e",
+      "dhash": "1110110001101011010011111011110011011010011001101101110110100001",
+      "bytes": 250804,
+      "originalSize": [
+        1252,
+        940
+      ],
+      "outputSize": [
+        1252,
+        940
+      ]
     },
     {
       "key": "view-2",
@@ -22,10 +38,26 @@
       "propertyKey": "le-sirenuse",
       "slotIntent": "real guestroom or suite",
       "sourcePage": "https://sirenuse.it/en/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/le-sirenuse/view-2.webp",
+      "downloadUrl": "https://sirenuse.it/media/2z2igrsa/li-galli-islands-14-copy.jpg?width=1252&height=940&format=webp&v=1da002525f0a9d0",
+      "candidateContext": "   ",
+      "credit": "Official source webpage; photographer rights to verify",
+      "license": "Copyright held by source/photographer",
+      "sha256": "42345e5f73736219145196dd305bc80237e0ed80a8af5a184b5e6c9ded48c698",
+      "dhash": "0000100100000011000010000001010111101010111010000001001100001000",
+      "bytes": 32468,
+      "originalSize": [
+        1252,
+        940
+      ],
+      "outputSize": [
+        1252,
+        940
+      ]
     },
     {
       "key": "view-3",
@@ -33,10 +65,26 @@
       "propertyKey": "le-sirenuse",
       "slotIntent": "actual terrace pool dining setting",
       "sourcePage": "https://sirenuse.it/en/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/le-sirenuse/view-3.webp",
+      "downloadUrl": "https://sirenuse.it/media/4jpce5b5/le-sirenuse-mare-0a8a2366.jpg?rxy=0.7982456140350878",
+      "candidateContext": "   ",
+      "credit": "Official source webpage; photographer rights to verify",
+      "license": "Copyright held by source/photographer",
+      "sha256": "e79184d7b7d2738e2bab00e1d900cae0e22955f67186fd4c6bc5ba32d8c156aa",
+      "dhash": "1001010000101011110011101111111111111111111111010100010011001000",
+      "bytes": 398590,
+      "originalSize": [
+        2560,
+        1749
+      ],
+      "outputSize": [
+        1750,
+        1196
+      ]
     },
     {
       "key": "view-1",
@@ -110,32 +158,80 @@
       "propertyKey": "il-san-pietro",
       "slotIntent": "actual sunlit hotel exterior",
       "sourcePage": "https://www.ilsanpietro.com/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/il-san-pietro/view-1.webp",
+      "downloadUrl": "https://www.ilsanpietro.com/wp-content/uploads/2025/12/Kitchen_Zass_restaurant_at_il_san_pietro_positano_17-1024x613.jpg",
+      "candidateContext": "Kitchen Zass restaurant at il san pietro positano 17   ",
+      "credit": "Official source webpage; photographer rights to verify",
+      "license": "Copyright held by source/photographer",
+      "sha256": "3a1448e725944792417987ab419c2bab916396a808edef3105e685efcceea51c",
+      "dhash": "0011101110111010110110110110101110100100111011000110110110001111",
+      "bytes": 98996,
+      "originalSize": [
+        1024,
+        613
+      ],
+      "outputSize": [
+        1024,
+        613
+      ]
     },
     {
       "key": "view-2",
       "property": "Il San Pietro di Positano",
       "propertyKey": "il-san-pietro",
       "slotIntent": "real guestroom or suite",
-      "sourcePage": "https://www.ilsanpietro.com/",
-      "status": "missing",
+      "sourcePage": "https://www.ilsanpietro.com/rooms-suites/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/il-san-pietro/view-2.webp",
+      "downloadUrl": "https://www.ilsanpietro.com/wp-content/uploads/2020/03/Classic_room_at_il_san_pietro_positano_4-1024x683.jpg",
+      "candidateContext": "Classic room at il san pietro positano   ",
+      "credit": "Official source webpage; photographer rights to verify",
+      "license": "Copyright held by source/photographer",
+      "sha256": "e5788f4bf44f02a840bb810371ee2a73172ba68c608127ae239bef51f50a23ee",
+      "dhash": "0100001001101100011001000110001000100001001011000001010101101111",
+      "bytes": 97550,
+      "originalSize": [
+        1024,
+        683
+      ],
+      "outputSize": [
+        1024,
+        683
+      ]
     },
     {
       "key": "view-3",
       "property": "Il San Pietro di Positano",
       "propertyKey": "il-san-pietro",
       "slotIntent": "actual terrace pool dining setting",
-      "sourcePage": "https://www.ilsanpietro.com/",
-      "status": "missing",
+      "sourcePage": "https://www.ilsanpietro.com/rooms-suites/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/il-san-pietro/view-3.webp",
+      "downloadUrl": "https://www.ilsanpietro.com/wp-content/uploads/2020/03/DELUXE_36_2-1024x683.webp",
+      "candidateContext": "DELUXE rooms at the hotel San Pietro di Positano   ",
+      "credit": "Official source webpage; photographer rights to verify",
+      "license": "Copyright held by source/photographer",
+      "sha256": "0b8e2db538f2ada56544575ac1bfdbd82771a86d6c45a9cbf0610d77632a7602",
+      "dhash": "1100000111001011010101100011000011111000011100000001100100001011",
+      "bytes": 49976,
+      "originalSize": [
+        1024,
+        683
+      ],
+      "outputSize": [
+        1024,
+        683
+      ]
     }
   ],
   "destinationScenes": [
@@ -154,30 +250,81 @@
       "placeLabel": "Santa Maria Assunta majolica church dome",
       "searchQuery": "Positano Santa Maria Assunta dome seaside",
       "slotIntent": "Santa Maria Assunta majolica church dome",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Positano_-_Collegiata_di_Santa_Maria_Assunta_-_2023-10-01_01-32-25_001.JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Positano_-_Collegiata_di_Santa_Maria_Assunta_-_2023-10-01_01-32-25_001.JPG/1920px-Positano_-_Collegiata_di_Santa_Maria_Assunta_-_2023-10-01_01-32-25_001.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Positano - Collegiata di Santa Maria Assunta - 2023-10-01 01-32-25 001.JPG",
+      "credit": "Justinawind · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "sha256": "f96ead095ef41e60ef66e1332e020a97d1057b61d384977ed7521a8c8e34ee86",
+      "dhash": "0000001001100100100100101001010110011010000111110111001001010111",
+      "bytes": 373010,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-3",
       "placeLabel": "Spiaggia Grande and excursion pier",
       "searchQuery": "Positano Spiaggia Grande beach blue sea",
       "slotIntent": "Spiaggia Grande and excursion pier",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/destination/scene-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Blick_auf_die_Spiaggia_Grande_(Positano)_von_der_Via_Cristoforo_Colombo.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Blick_auf_die_Spiaggia_Grande_%28Positano%29_von_der_Via_Cristoforo_Colombo.jpg/1920px-Blick_auf_die_Spiaggia_Grande_%28Positano%29_von_der_Via_Cristoforo_Colombo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Blick auf die Spiaggia Grande (Positano) von der Via Cristoforo Colombo.jpg",
+      "credit": "Rudolfo Kithera · CC0",
+      "license": "CC0",
+      "sha256": "ba2a05f041397b407803ef7009c19164c740ac6eceb0cd99bebb02956ce8aa5c",
+      "dhash": "1011000000110001000110000000101100100100100001111101000101011000",
+      "bytes": 504122,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1750,
+        984
+      ]
     },
     {
       "key": "scene-4",
       "placeLabel": "Fornillo coast footpath",
       "searchQuery": "Positano Fornillo beach coastline",
       "slotIntent": "Fornillo coast footpath",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
+      "localPath": "/images/travel/positano-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Positano_-_Fornillo_Beach.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Positano_-_Fornillo_Beach.jpg/1920px-Positano_-_Fornillo_Beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Positano - Fornillo Beach.jpg",
+      "credit": "Mihael Grmek · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "sha256": "dd285dfed2f13b1abb7709085a7daec67683ce36ee0e66b6e3e5b020bdfcc41f",
+      "dhash": "0011110100111001001110010001010011010000001100010011000000000100",
+      "bytes": 653236,
+      "originalSize": [
+        1920,
+        1286
+      ],
+      "outputSize": [
+        1750,
+        1172
+      ]
     },
     {
       "key": "scene-5",
