@@ -63,6 +63,27 @@ EXACT={
    "https://thesensiblefay.com/blog/3-day-capri-itinerary","Actual view of Faraglioni from Belvedere di Tragara on Capri","The Sensible Fay · photographed from Tragara")],
  "destination/scene-5":[("https://www.celebritycruises.com/blog/content/uploads/2022/01/beaches-in-naples-italy-marina-piccola-beach-capri-1.jpg",
    "https://www.celebritycruises.com/blog/beaches-in-naples-italy","Genuine Marina Piccola swimming cove with turquoise sea and Faraglioni","Celebrity Cruises · original location photograph")],
+ "destination/scene-2":[("https://www.amalfipositano.com/photos/boats-in-main-port-of-capri-island-marina-grande-1280x800.jpg",
+   "https://www.amalfipositano.com/en/photo/boats-in-main-port-of-capri-island-marina-grande",
+   "Photograph of the boats in Marina Grande in clear sunny conditions; named original photographer grants reuse with attribution",
+   "AmalfiPositano.com original licensed for use with linked attribution")],
+ "destination/scene-3":[("https://www.aziendaturismopositano.it/wp-content/uploads/2025/03/cosa-vedere-piazzetta-di-capri-costiera-amalfitana-3.webp",
+   "https://www.aziendaturismopositano.it/piazzetta-di-capri/",
+   "Bright quiet Piazza Umberto I with clock tower and historic pastel facades",
+   "Azienda Turismo Positano · verify source-specific permission")],
+ "destination/scene-7":[
+  ("https://capriseggiovia.it/images/f-capri-8-big.jpg",
+   "https://capriseggiovia.it/gallery.html",
+   "Actual Monte Solaro summit panorama in clear daylight with Capri and Faraglioni",
+   "Seggiovia Monte Solaro official panorama · rights check"),
+  ("https://www.amalfipositano.com/photos/capri-panoramic-view-from-monte-solaro-2-1280x800.jpg",
+   "https://www.amalfipositano.com/en/photo/capri-panoramic-view-from-monte-solaro-2",
+   "Bright verified view FROM the Monte Solaro summit with terrace and Faraglioni",
+   "AmalfiPositano.com original licensed with source attribution")],
+ "destination/scene-9":[("https://d1y2b7cw1bm7e.cloudfront.net/page_section/167/image/DJI-0308_d_0_0_900.jpg?mt=20220330192656",
+    "https://www.motoscafisticapri.com/en/gallery",
+    "Real sunny aerial of Punta Carena rocky lighthouse and blue sea",
+    "Motoscafisti Capri official photograph · verify reuse rights")],
  "destination/scene-6":[("https://www.citalia.com/-/media/Bynder/Citalia-destinations/Italy/Islands/Capri/Anacapri/Anacapri-2024-Church-St-Michele-Shutterstock-557041132-Hybris.jpg?w=1900",
    "https://www.citalia.com/holidays/italy/campania/capri/anacapri/","Real historic church and piazza in Anacapri in bright daylight","Citalia · Shutterstock author requires attribution review")],
 }
@@ -143,6 +164,9 @@ def exact_commons(title,caption):
   return [(120,url,source,caption,(artist or "Commons contributor")+" · "+licence,licence)] if url else []
  except (KeyError,TypeError,StopIteration,ValueError,IndexError):return []
 EXACT_COMMONS_SCENES={
+ "scene-2":[("Harbour Marina Grande in Capri.jpg","Real bright boat-filled port of Marina Grande on Capri, Sally V 2016"),("Marina Grande Capri.jpg","True Capri harbour, newer daylight photo; Wolfgang Moroder")],
+ "scene-3":[("Piazzetta (Capri), 2016.jpg","Real Capri Piazza Umberto I with town clock; Ekrem Canli 2016")],
+ "scene-9":[("Punta Carena Lighthouse.jpg","Genuine red-and-white Punta Carena lighthouse above sunny Capri sea; Dr Tr 2009")],
  "scene-4":[
   ("Capri (15645877605).jpg","Photograph from the actual Belvedere di Tragara, Faraglioni rock formations and clear sea; Marlis Börger, 2014, CC BY-SA 2.0"),
   ("Capri Faraglioni with boat.jpg","Actual Belvedere Tragara Faraglioni perspective with vessel, CC BY-SA 2.0")],
