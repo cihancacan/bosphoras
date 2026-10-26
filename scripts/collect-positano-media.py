@@ -80,12 +80,11 @@ SCENE_PHOTOS={
 
 }
 SCENES_EXACT={
- "scene-8":[("Positano View.JPG","Hand-painted traditional Positano ceramics with hillside village in the background, copyright Mykola Swarnyk CC BY-SA 3.0")],
+ "scene-8":[("Positano (Italy) 05.jpg","Ceramic heads photographed in Positano by Bernard Gagnon, 8 May 2022, CC BY 4.0"),("Positano View.JPG","Hand-painted traditional Positano ceramics with hillside village behind, CC BY-SA 3.0")],
  "scene-1":[("AmalfiküstePositano.jpg","True Positano village viewed from coastline, bright daylight"),("Amalfi Coast from Positano.jpg","Positano Amalfi coast landscape")],
  "scene-5":[("Positano, Amalfi Coast, Italy (22286060906).jpg","Historical true Via Pasitea building and road perspective in Positano"),("Vista di Positano Campania.jpg","Positano hillside roads from Via Pasitea")],
  "scene-6":[("84017 Arienzo SA, Italy - panoramio (1).jpg","Authentic Arienzo Positano coast scene geolocated on Wikimedia Commons"),("84017 Arienzo SA, Italy - panoramio.jpg","Alternative Arienzo photograph at precisely named site")],
  "scene-7":[("Il San Pietro di Positano-14460805246.jpg","True San Pietro di Positano and Laurito coast from nearby Praiano"),("84017 Arienzo SA, Italy - panoramio (2).jpg","Nearby east Positano coast context: inspect geographic identity")],
- "scene-8":[("Positano (32632824125).jpg","Real Positano village shopping streets and colourful houses, subject identity to inspect"),("Positano - 7271.jpg","Positano village lane, confirm ceramic context")],
  "scene-9":[("View of Praiano from the sea, 2010.jpg","Real nearby Praiano photographed from Tyrrhenian Sea"),("Praiano, Amalfitan Coast.jpeg","Actual Praiano and coastal panorama east of Positano, verified coordinates")]
 }
 def exact_commons(title,caption):

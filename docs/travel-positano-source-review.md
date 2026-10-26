@@ -14,3 +14,9 @@ Branch `feature/luxury-travel-seo-destinations-20261012` · no public indexation
 - Capri/Amalfi ferries and beach clubs season/weather contingent.
 - 12 hotel originals (3 each) + 9 geolocated landscapes required, distinct, bright, actual places, licence and review documented.
 - Until all photos verified, assets must fail closed; noindex throughout and no uncontracted supplier inventory.
+
+## Correction ceramics — source-specific review
+
+- Replacement: [Positano (Italy) 05.jpg](https://commons.wikimedia.org/wiki/File:Positano_(Italy)_05.jpg), **Bernard Gagnon**, own photograph, 8 May 2022, with ceramic heads in Positano. Licence **CC BY 4.0**, https://creativecommons.org/licenses/by/4.0/ .
+- The earlier photo `Positano (32632824125).jpg` showed a street without ceramic artwork; do not re-use it for this slot.
+- The image collector's duplicate `scene-8` dictionary entry was corrected. Download and visual review of the actual WebP are still mandatory before publication.
