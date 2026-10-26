@@ -2,8 +2,8 @@
   "destination": "positano",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 9,
+  "downloadedHotelCandidates": 11,
+  "downloadedDestinationCandidates": 3,
   "hotels": [
     {
       "key": "view-1",
@@ -260,26 +260,13 @@
       "propertyKey": "il-san-pietro",
       "slotIntent": "actual sunlit hotel exterior",
       "sourcePage": "https://www.ilsanpietro.com/",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
-      "localPath": "/images/travel/positano-premium/il-san-pietro/view-1.webp",
-      "downloadUrl": "https://www.ilsanpietro.com/wp-content/uploads/2025/12/Kitchen_Zass_restaurant_at_il_san_pietro_positano_17-1024x613.jpg",
-      "candidateContext": "Kitchen Zass restaurant at il san pietro positano 17   ",
-      "credit": "Official source webpage; photographer rights to verify",
-      "license": "Copyright held by source/photographer",
-      "sha256": "3a1448e725944792417987ab419c2bab916396a808edef3105e685efcceea51c",
-      "dhash": "0011101110111010110110110110101110100100111011000110110110001111",
-      "bytes": 98996,
-      "originalSize": [
-        1024,
-        613
-      ],
-      "outputSize": [
-        1024,
-        613
-      ]
+      "visualQaWarning": "Chef portrait in a kitchen is not the requested exterior of the San Pietro cliffside hotel.",
+      "rejectedSource": "https://www.ilsanpietro.com/wp-content/uploads/2025/12/Kitchen_Zass_restaurant_at_il_san_pietro_positano_17-1024x613.jpg",
+      "rejectedOriginalSha256": "3a1448e725944792417987ab419c2bab916396a808edef3105e685efcceea51c",
+      "rejectedCandidateContext": "Kitchen Zass restaurant at il san pietro positano 17   "
     },
     {
       "key": "view-2",
@@ -342,27 +329,14 @@
       "placeLabel": "Positano pastel village and Spiaggia Grande",
       "searchQuery": "Positano village Spiaggia Grande sunny panoramic",
       "slotIntent": "Positano pastel village and Spiaggia Grande",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
-      "localPath": "/images/travel/positano-premium/destination/scene-1.webp",
+      "visualQaWarning": "Low-contrast dark/grainy village scene does not meet bright Bosphoras hero quality.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:AmalfiküstePositano.jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Amalfik%C3%BCstePositano.jpg/1920px-Amalfik%C3%BCstePositano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "candidateContext": "True Positano village viewed from coastline, bright daylight",
-      "credit": "Joergsam · CC BY-SA 3.0",
-      "license": "CC BY-SA 3.0",
-      "sha256": "bf1cd9af842f2b413ce55cd28f366107c1c08fa4b52c1d7321dbce5c26ca047a",
-      "dhash": "0100000000101100011001000011000100011001000100010011000100010001",
-      "bytes": 335776,
-      "originalSize": [
-        1920,
-        1237
-      ],
-      "outputSize": [
-        1750,
-        1127
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Amalfik%C3%BCstePositano.jpg/1920px-Amalfik%C3%BCstePositano.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedOriginalSha256": "bf1cd9af842f2b413ce55cd28f366107c1c08fa4b52c1d7321dbce5c26ca047a",
+      "rejectedCandidateContext": "True Positano village viewed from coastline, bright daylight"
     },
     {
       "key": "scene-2",
@@ -396,27 +370,14 @@
       "placeLabel": "Spiaggia Grande and excursion pier",
       "searchQuery": "Positano Spiaggia Grande beach blue sea",
       "slotIntent": "Spiaggia Grande and excursion pier",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
-      "localPath": "/images/travel/positano-premium/destination/scene-3.webp",
+      "visualQaWarning": "Image shows a sea-facing roof rather than the actual Spiaggia Grande beach and pier.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Blick_auf_die_Spiaggia_Grande_(Positano)_von_der_Via_Cristoforo_Colombo.jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Blick_auf_die_Spiaggia_Grande_%28Positano%29_von_der_Via_Cristoforo_Colombo.jpg/1920px-Blick_auf_die_Spiaggia_Grande_%28Positano%29_von_der_Via_Cristoforo_Colombo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "candidateContext": "File:Blick auf die Spiaggia Grande (Positano) von der Via Cristoforo Colombo.jpg",
-      "credit": "Rudolfo Kithera · CC0",
-      "license": "CC0",
-      "sha256": "ba2a05f041397b407803ef7009c19164c740ac6eceb0cd99bebb02956ce8aa5c",
-      "dhash": "1011000000110001000110000000101100100100100001111101000101011000",
-      "bytes": 504122,
-      "originalSize": [
-        1920,
-        1080
-      ],
-      "outputSize": [
-        1750,
-        984
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Blick_auf_die_Spiaggia_Grande_%28Positano%29_von_der_Via_Cristoforo_Colombo.jpg/1920px-Blick_auf_die_Spiaggia_Grande_%28Positano%29_von_der_Via_Cristoforo_Colombo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedOriginalSha256": "ba2a05f041397b407803ef7009c19164c740ac6eceb0cd99bebb02956ce8aa5c",
+      "rejectedCandidateContext": "File:Blick auf die Spiaggia Grande (Positano) von der Via Cristoforo Colombo.jpg"
     },
     {
       "key": "scene-4",
@@ -447,111 +408,59 @@
     },
     {
       "key": "scene-5",
-      "placeLabel": "Via Pasitea hillside street",
-      "searchQuery": "Positano Via Pasitea road panorama",
-      "slotIntent": "Via Pasitea hillside street",
-      "status": "candidate_needs_visual_review",
+      "placeLabel": "Positano hillside panorama from the upper streets",
+      "searchQuery": "Positano hillside panoramic sunny streets",
+      "slotIntent": "Positano sunlit hillside above Spiaggia Grande",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
-      "localPath": "/images/travel/positano-premium/destination/scene-5.webp",
+      "visualQaWarning": "Dark hillside photograph neither clearly shows Via Pasitea nor meets sunny premium requirement.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Positano,_Amalfi_Coast,_Italy_(22286060906).jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Positano%2C_Amalfi_Coast%2C_Italy_%2822286060906%29.jpg/1920px-Positano%2C_Amalfi_Coast%2C_Italy_%2822286060906%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "candidateContext": "Historical true Via Pasitea building and road perspective in Positano",
-      "credit": "VV Nincic from Toronto, Canada · CC BY 2.0",
-      "license": "CC BY 2.0",
-      "sha256": "4dde14f1e5db7de5e865fe5cb66ba3c325e6aa50ee35098a19fed06a32bc3fdb",
-      "dhash": "0011000000000011011100110110001110001011001111000111100110101001",
-      "bytes": 231646,
-      "originalSize": [
-        1920,
-        1440
-      ],
-      "outputSize": [
-        1600,
-        1200
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Positano%2C_Amalfi_Coast%2C_Italy_%2822286060906%29.jpg/1920px-Positano%2C_Amalfi_Coast%2C_Italy_%2822286060906%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedOriginalSha256": "4dde14f1e5db7de5e865fe5cb66ba3c325e6aa50ee35098a19fed06a32bc3fdb",
+      "rejectedCandidateContext": "Historical true Via Pasitea building and road perspective in Positano"
     },
     {
       "key": "scene-6",
       "placeLabel": "Arienzo coves below the cliff",
       "searchQuery": "Positano Arienzo beach Amalfi",
       "slotIntent": "Arienzo coves below the cliff",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
-      "localPath": "/images/travel/positano-premium/destination/scene-6.webp",
+      "visualQaWarning": "Historic geolocated Arienzo village view does not show the intended coastline or cove.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:84017_Arienzo_SA,_Italy_-_panoramio_(1).jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/84017_Arienzo_SA%2C_Italy_-_panoramio_%281%29.jpg/1920px-84017_Arienzo_SA%2C_Italy_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "candidateContext": "Authentic Arienzo Positano coast scene geolocated on Wikimedia Commons",
-      "credit": "villlamania · CC BY 3.0",
-      "license": "CC BY 3.0",
-      "sha256": "186eb916d4fc9a73b25b450bf7201a6642d3a8e22a13f6578d577c3ddb262ad0",
-      "dhash": "1111111011111110100100001101101111011010100111101000110110111000",
-      "bytes": 255662,
-      "originalSize": [
-        1920,
-        1392
-      ],
-      "outputSize": [
-        1655,
-        1200
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/84017_Arienzo_SA%2C_Italy_-_panoramio_%281%29.jpg/1920px-84017_Arienzo_SA%2C_Italy_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedOriginalSha256": "186eb916d4fc9a73b25b450bf7201a6642d3a8e22a13f6578d577c3ddb262ad0",
+      "rejectedCandidateContext": "Authentic Arienzo Positano coast scene geolocated on Wikimedia Commons"
     },
     {
       "key": "scene-7",
       "placeLabel": "Laurito coastline",
       "searchQuery": "Positano Laurito beach coastline",
       "slotIntent": "Laurito coastline",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
-      "localPath": "/images/travel/positano-premium/destination/scene-7.webp",
+      "visualQaWarning": "Flat grey Laurito coastline photograph lacks premium bright turquoise sea.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Il_San_Pietro_di_Positano-14460805246.jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Il_San_Pietro_di_Positano-14460805246.jpg/1920px-Il_San_Pietro_di_Positano-14460805246.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "candidateContext": "True San Pietro di Positano and Laurito coast from nearby Praiano",
-      "credit": "Marco Assini · CC BY-SA 2.0",
-      "license": "CC BY-SA 2.0",
-      "sha256": "3c24bb212056e60f527243701d2f12c0a68a05d44f27f76c233b4315892a1e7a",
-      "dhash": "0001001100000111001000100100001100000100001000001101100001110100",
-      "bytes": 479428,
-      "originalSize": [
-        1920,
-        1281
-      ],
-      "outputSize": [
-        1750,
-        1168
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Il_San_Pietro_di_Positano-14460805246.jpg/1920px-Il_San_Pietro_di_Positano-14460805246.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedOriginalSha256": "3c24bb212056e60f527243701d2f12c0a68a05d44f27f76c233b4315892a1e7a",
+      "rejectedCandidateContext": "True San Pietro di Positano and Laurito coast from nearby Praiano"
     },
     {
       "key": "scene-8",
       "placeLabel": "Positano ceramics and village streets",
       "searchQuery": "Positano narrow streets colourful ceramic",
       "slotIntent": "Positano ceramics and village streets",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source-backed candidate. Actual visual identity, premium quality, copyright and user permissions must be independently reviewed.",
-      "localPath": "/images/travel/positano-premium/destination/scene-8.webp",
+      "visualQaWarning": "Street scene lacks Positano ceramics shops, which the intended caption promises.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Positano_(32632824125).jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Positano_%2832632824125%29.jpg/1920px-Positano_%2832632824125%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "candidateContext": "Real Positano village shopping streets and colourful houses, subject identity to inspect",
-      "credit": "VV Nincic from Toronto, Canada · CC BY 2.0",
-      "license": "CC BY 2.0",
-      "sha256": "9c280c5586833240115a76e01922848547488f482cbeb17c0917ef58904661ac",
-      "dhash": "0000000100000100100101011001100001000100100011000001110000011111",
-      "bytes": 395872,
-      "originalSize": [
-        1920,
-        1280
-      ],
-      "outputSize": [
-        1750,
-        1167
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Positano_%2832632824125%29.jpg/1920px-Positano_%2832632824125%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedOriginalSha256": "9c280c5586833240115a76e01922848547488f482cbeb17c0917ef58904661ac",
+      "rejectedCandidateContext": "Real Positano village shopping streets and colourful houses, subject identity to inspect"
     },
     {
       "key": "scene-9",

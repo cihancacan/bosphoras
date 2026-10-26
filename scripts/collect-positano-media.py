@@ -42,6 +42,9 @@ EXACT={
  "hotel-poseidon/view-3":[("https://images.squarespace-cdn.com/content/v1/663b6e06900de569cb5eff86/1722093018761-YQQW4QGKR9TFV8FJP6A6/poseidon%2Bcocktail%2Bhour.jpg",
    "https://plannedtowhere.com/blog/best-hotels-positano",
    "Real Hotel Poseidon dining terrace with illuminated pool at blue hour")],
+ "il-san-pietro/view-1":[("https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1354946.jpg",
+   "https://guide.michelin.com/br/pt_BR/hotels-stays/positano/il-san-pietro-di-positano-7453",
+   "Authentic Il San Pietro cliffside exterior and terrace with blue sea in clear daylight")],
  "villa-treville/view-1":[("https://www.americanexpress.com/en-us/travel/discover/photos/482955/92265/1200/DSC06641.jpg",
    "https://www.americanexpress.com/es-es/travel/discover/property/Italy/Positano/Villa-Treville",
    "Real Villa TreVille pool overlooking Positano from a private guest terrace")],
@@ -51,6 +54,23 @@ EXACT={
  "villa-treville/view-3":[("https://hips.hearstapps.com/hmg-prod/images/villa-treville-positano-4-675b10eb3f2f8.jpg",
    "https://www.redonline.co.uk/travel/a63081582/villa-treville-positano/",
    "Original Villa TreVille Positano pergola-shaded panoramic outdoor lounge")],
+}
+SCENE_PHOTOS={
+ "scene-1":[("https://www.celebritycruises.com/blog/content/uploads/2022/11/things-to-do-in-positano-cta.jpg",
+    "https://www.celebritycruises.com/blog/things-to-do-in-positano","Sunlit colorful Positano village and bay from the sea")],
+ "scene-3":[("https://images.trvl-media.com/place/6075152/b76eb983-8c2c-4948-9461-723c46ffbfce.jpg",
+    "https://www.expedia.co.uk/Spiaggia-Grande-Positano-City-Centre.d6075152.Attraction","Vibrant Spiaggia Grande beach with alternating blue/yellow parasols and pastel Positano backdrop")],
+ "scene-5":[("https://www.praianonline.com/wp-content/uploads/2020/09/positano-panorama.jpg",
+    "https://www.praianonline.com/en/destinations/explore-positano-amalfi-coast/","Bright panoramic view down Positano hillside to town church and sea, street not represented")],
+ "scene-6":[
+  ("https://images.ng.ondaplatform.com/card/3364/gallery/bagni-arienzo-positano2.jpg/w1280_h900_csmart_d1.6_u1668505558.webp",
+   "https://www.positano.com/it/c/bagni-arienzo","Exact turquoise Arienzo bathing cove with beach, coast and white villas"),
+  ("https://images.ng.ondaplatform.com/card/3364/gallery/bagni-arienzo-positano2.jpg",
+   "https://www.positano.com/it/c/bagni-arienzo","Same Arienzo source photo in full resolution if available")],
+ "scene-7":[("https://i0.wp.com/amalficoastlovers.com/wp-content/uploads/2023/10/spiaggia-laurito-positano-costiera-amalfitana-amalficoastlovers-jpg.webp?fit=1500%2C1000&ssl=1",
+  "https://amalficoastlovers.com/en/laurito/","Actual Laurito beach, turquoise sea with umbrellas below cliffs")],
+ "scene-8":[("https://uploads.grupodicas.com/2024/11/2c0OPVRU-image.png",
+   "https://www.grupodicas.com/onde-ficar-em-positano-melhor-regiao-e-hoteis-baratos/","Actual colourful Positano ceramics storefront on bright pedestrian street")]
 }
 SCENES_EXACT={
  "scene-1":[("AmalfiküstePositano.jpg","True Positano village viewed from coastline, bright daylight"),("Amalfi Coast from Positano.jpg","Positano Amalfi coast landscape")],
@@ -186,7 +206,9 @@ def main():
   for title,caption in SCENES_EXACT.get(x["key"],[]):confirmed.extend(exact_commons(title,caption))
   fallback=[(150,"https://www.laconchigliapraiano.it/Assets/vovoproductions_hotel-shots_2025-02-01_1250/Resized/Amalfi-1%20%28Personalizzato%29.jpg",
      "https://www.laconchigliapraiano.it/","Real sunlit panorama of Praiano along the Tyrrhenian coast","La Conchiglia Hotel · official 2025 Praiano area photo","Official hotel photographer rights check required")] if x["key"]=="scene-9" else []
-  candidate(x,fallback+confirmed+commons_images(query,tokens),urls,hashes,p)
+  direct=[(180,url,page,caption,"Source image from "+page,"Publisher/photographer permission requires verification")
+    for url,page,caption in SCENE_PHOTOS.get(x["key"],[])]
+  candidate(x,direct+fallback+confirmed+commons_images(query,tokens),urls,hashes,p)
  m["downloadedHotelCandidates"]=sum(bool(x.get("localPath")) for x in m["hotels"])
  m["downloadedDestinationCandidates"]=sum(bool(x.get("localPath")) for x in m["destinationScenes"])
  m["visuallyVerified"]=False;m["approvedForCommercialPublication"]=False
