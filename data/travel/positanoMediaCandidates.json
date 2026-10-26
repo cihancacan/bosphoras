@@ -1,0 +1,234 @@
+{
+  "destination": "positano",
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "hotels": [
+    {
+      "key": "view-1",
+      "property": "Le Sirenuse",
+      "propertyKey": "le-sirenuse",
+      "slotIntent": "actual sunlit hotel exterior",
+      "sourcePage": "https://sirenuse.it/en/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "view-2",
+      "property": "Le Sirenuse",
+      "propertyKey": "le-sirenuse",
+      "slotIntent": "real guestroom or suite",
+      "sourcePage": "https://sirenuse.it/en/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "view-3",
+      "property": "Le Sirenuse",
+      "propertyKey": "le-sirenuse",
+      "slotIntent": "actual terrace pool dining setting",
+      "sourcePage": "https://sirenuse.it/en/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "view-1",
+      "property": "Hotel Poseidon Positano",
+      "propertyKey": "hotel-poseidon",
+      "slotIntent": "actual sunlit hotel exterior",
+      "sourcePage": "https://www.hotelposeidonpositano.it/en/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "view-2",
+      "property": "Hotel Poseidon Positano",
+      "propertyKey": "hotel-poseidon",
+      "slotIntent": "real guestroom or suite",
+      "sourcePage": "https://www.hotelposeidonpositano.it/en/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "view-3",
+      "property": "Hotel Poseidon Positano",
+      "propertyKey": "hotel-poseidon",
+      "slotIntent": "actual terrace pool dining setting",
+      "sourcePage": "https://www.hotelposeidonpositano.it/en/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "view-1",
+      "property": "Villa TreVille",
+      "propertyKey": "villa-treville",
+      "slotIntent": "actual sunlit hotel exterior",
+      "sourcePage": "https://villatreville.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "view-2",
+      "property": "Villa TreVille",
+      "propertyKey": "villa-treville",
+      "slotIntent": "real guestroom or suite",
+      "sourcePage": "https://villatreville.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "view-3",
+      "property": "Villa TreVille",
+      "propertyKey": "villa-treville",
+      "slotIntent": "actual terrace pool dining setting",
+      "sourcePage": "https://villatreville.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "view-1",
+      "property": "Il San Pietro di Positano",
+      "propertyKey": "il-san-pietro",
+      "slotIntent": "actual sunlit hotel exterior",
+      "sourcePage": "https://www.ilsanpietro.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "view-2",
+      "property": "Il San Pietro di Positano",
+      "propertyKey": "il-san-pietro",
+      "slotIntent": "real guestroom or suite",
+      "sourcePage": "https://www.ilsanpietro.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "view-3",
+      "property": "Il San Pietro di Positano",
+      "propertyKey": "il-san-pietro",
+      "slotIntent": "actual terrace pool dining setting",
+      "sourcePage": "https://www.ilsanpietro.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "placeLabel": "Positano pastel village and Spiaggia Grande",
+      "searchQuery": "Positano village Spiaggia Grande sunny panoramic",
+      "slotIntent": "Positano pastel village and Spiaggia Grande",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "scene-2",
+      "placeLabel": "Santa Maria Assunta majolica church dome",
+      "searchQuery": "Positano Santa Maria Assunta dome seaside",
+      "slotIntent": "Santa Maria Assunta majolica church dome",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "scene-3",
+      "placeLabel": "Spiaggia Grande and excursion pier",
+      "searchQuery": "Positano Spiaggia Grande beach blue sea",
+      "slotIntent": "Spiaggia Grande and excursion pier",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "scene-4",
+      "placeLabel": "Fornillo coast footpath",
+      "searchQuery": "Positano Fornillo beach coastline",
+      "slotIntent": "Fornillo coast footpath",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "scene-5",
+      "placeLabel": "Via Pasitea hillside street",
+      "searchQuery": "Positano Via Pasitea road panorama",
+      "slotIntent": "Via Pasitea hillside street",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "scene-6",
+      "placeLabel": "Arienzo coves below the cliff",
+      "searchQuery": "Positano Arienzo beach Amalfi",
+      "slotIntent": "Arienzo coves below the cliff",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "scene-7",
+      "placeLabel": "Laurito coastline",
+      "searchQuery": "Positano Laurito beach coastline",
+      "slotIntent": "Laurito coastline",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "scene-8",
+      "placeLabel": "Positano ceramics and village streets",
+      "searchQuery": "Positano narrow streets colourful ceramic",
+      "slotIntent": "Positano ceramics and village streets",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    },
+    {
+      "key": "scene-9",
+      "placeLabel": "Coastal view towards Praiano",
+      "searchQuery": "Positano Praiano Amalfi coast daylight",
+      "slotIntent": "Coastal view towards Praiano",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No original source-backed WebP or independent photo/rights review yet. Excluded from all galleries."
+    }
+  ],
+  "publicationBlockedReason": "Draft remains noindex until 21 genuine WebP originals verified visually with rights provenance and validated in batch Preview."
+}

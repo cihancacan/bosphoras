@@ -1,0 +1,16 @@
+# Positano — source-backed FR/EN destination draft (26 October 2026)
+Branch `feature/luxury-travel-seo-destinations-20261012` · no public indexation or supplier booking offer.
+
+## Real hotels, official locations
+- Le Sirenuse: Via Cristoforo Colombo 30, central Positano, https://sirenuse.it/en/contacts/
+- Hotel Poseidon: Via Pasitea 148, https://www.hotelposeidonpositano.it/en/contacts
+- Villa TreVille: Via Arienzo 30, https://villatreville.com/contacts/
+- Il San Pietro di Positano: Via Laurito 2, https://www.ilsanpietro.com/contact/
+
+## Geographic and seasonal claims
+- Centre is not the main beach; stairs matter; Fornillo is distinct from Spiaggia Grande.
+- Hotel Poseidon is an established four-star rather than being misrepresented as a five-star palace.
+- Il San Pietro officially describes guest shuttle, which still needs dates/services verified; never claim free public access.
+- Capri/Amalfi ferries and beach clubs season/weather contingent.
+- 12 hotel originals (3 each) + 9 geolocated landscapes required, distinct, bright, actual places, licence and review documented.
+- Until all photos verified, assets must fail closed; noindex throughout and no uncontracted supplier inventory.
