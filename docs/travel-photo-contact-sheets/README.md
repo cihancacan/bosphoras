@@ -19,4 +19,4 @@ Les photographies récemment remplacées restent rouges tant qu'elles n'ont pas 
 - [Lake Como](lake-como.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](lake-como.jpg)
 - [Capri](capri.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](capri.jpg)
 - [Positano](positano.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](positano.jpg)
-- [Ravello](ravello.md) — 0/21 fichiers candidats, 21 alertes ; [ouvrir l'image seule](ravello.jpg)
+- [Ravello](ravello.md) — 17/21 fichiers candidats, 21 alertes ; [ouvrir l'image seule](ravello.jpg)
