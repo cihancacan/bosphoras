@@ -1,0 +1,234 @@
+{
+  "destination": "mykonos",
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "hotels": [
+    {
+      "key": "view-1",
+      "property": "Kalesma Mykonos",
+      "propertyKey": "kalesma",
+      "slotIntent": "original hotel exterior or recognizable property view",
+      "sourcePage": "https://www.kalesmamykonos.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+    },
+    {
+      "key": "view-2",
+      "property": "Kalesma Mykonos",
+      "propertyKey": "kalesma",
+      "slotIntent": "actual guestroom, suite or villa interior",
+      "sourcePage": "https://www.kalesmamykonos.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+    },
+    {
+      "key": "view-3",
+      "property": "Kalesma Mykonos",
+      "propertyKey": "kalesma",
+      "slotIntent": "real beach, pool or hotel dining terrace",
+      "sourcePage": "https://www.kalesmamykonos.com/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+    },
+    {
+      "key": "view-1",
+      "property": "Santa Marina, a Luxury Collection Resort, Mykonos",
+      "propertyKey": "santa-marina",
+      "slotIntent": "original hotel exterior or recognizable property view",
+      "sourcePage": "https://www.marriott.com/en-us/hotels/jmklc-santa-marina-a-luxury-collection-resort-mykonos/overview/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+    },
+    {
+      "key": "view-2",
+      "property": "Santa Marina, a Luxury Collection Resort, Mykonos",
+      "propertyKey": "santa-marina",
+      "slotIntent": "actual guestroom, suite or villa interior",
+      "sourcePage": "https://www.marriott.com/en-us/hotels/jmklc-santa-marina-a-luxury-collection-resort-mykonos/overview/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+    },
+    {
+      "key": "view-3",
+      "property": "Santa Marina, a Luxury Collection Resort, Mykonos",
+      "propertyKey": "santa-marina",
+      "slotIntent": "real beach, pool or hotel dining terrace",
+      "sourcePage": "https://www.marriott.com/en-us/hotels/jmklc-santa-marina-a-luxury-collection-resort-mykonos/overview/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+    },
+    {
+      "key": "view-1",
+      "property": "Cavo Tagoo Mykonos",
+      "propertyKey": "cavo-tagoo",
+      "slotIntent": "original hotel exterior or recognizable property view",
+      "sourcePage": "https://www.cavotagoo.com/mykonos/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+    },
+    {
+      "key": "view-2",
+      "property": "Cavo Tagoo Mykonos",
+      "propertyKey": "cavo-tagoo",
+      "slotIntent": "actual guestroom, suite or villa interior",
+      "sourcePage": "https://www.cavotagoo.com/mykonos/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+    },
+    {
+      "key": "view-3",
+      "property": "Cavo Tagoo Mykonos",
+      "propertyKey": "cavo-tagoo",
+      "slotIntent": "real beach, pool or hotel dining terrace",
+      "sourcePage": "https://www.cavotagoo.com/mykonos/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+    },
+    {
+      "key": "view-1",
+      "property": "Mykonos Blu, Grecotel",
+      "propertyKey": "mykonos-blu",
+      "slotIntent": "original hotel exterior or recognizable property view",
+      "sourcePage": "https://www.grecotel.com/mykonosblu/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+    },
+    {
+      "key": "view-2",
+      "property": "Mykonos Blu, Grecotel",
+      "propertyKey": "mykonos-blu",
+      "slotIntent": "actual guestroom, suite or villa interior",
+      "sourcePage": "https://www.grecotel.com/mykonosblu/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+    },
+    {
+      "key": "view-3",
+      "property": "Mykonos Blu, Grecotel",
+      "propertyKey": "mykonos-blu",
+      "slotIntent": "real beach, pool or hotel dining terrace",
+      "sourcePage": "https://www.grecotel.com/mykonosblu/",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo not downloaded, individually verified or licensed. Exclude from rendering."
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "placeLabel": "Chora Mykonos whitewashed town and windmills",
+      "slotIntent": "Chora Mykonos whitewashed town and windmills",
+      "searchQuery": "Chora Mykonos whitewashed town and windmills Mykonos Greece photo",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+    },
+    {
+      "key": "scene-2",
+      "placeLabel": "Little Venice waterfront houses and balconies",
+      "slotIntent": "Little Venice waterfront houses and balconies",
+      "searchQuery": "Little Venice waterfront houses and balconies Mykonos Greece photo",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+    },
+    {
+      "key": "scene-3",
+      "placeLabel": "Ornos Bay white beach and turquoise water",
+      "slotIntent": "Ornos Bay white beach and turquoise water",
+      "searchQuery": "Ornos Bay white beach and turquoise water Mykonos Greece photo",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+    },
+    {
+      "key": "scene-4",
+      "placeLabel": "Aleomandra sunset view towards Delos",
+      "slotIntent": "Aleomandra sunset view towards Delos",
+      "searchQuery": "Aleomandra sunset view towards Delos Mykonos Greece photo",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+    },
+    {
+      "key": "scene-5",
+      "placeLabel": "Psarou Bay and sailing yachts",
+      "slotIntent": "Psarou Bay and sailing yachts",
+      "searchQuery": "Psarou Bay and sailing yachts Mykonos Greece photo",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+    },
+    {
+      "key": "scene-6",
+      "placeLabel": "Tagoo hillside and Old Port Mykonos",
+      "slotIntent": "Tagoo hillside and Old Port Mykonos",
+      "searchQuery": "Tagoo hillside and Old Port Mykonos Mykonos Greece photo",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+    },
+    {
+      "key": "scene-7",
+      "placeLabel": "Delos ancient ruins with Aegean Sea",
+      "slotIntent": "Delos ancient ruins with Aegean Sea",
+      "searchQuery": "Delos ancient ruins with Aegean Sea Mykonos Greece photo",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+    },
+    {
+      "key": "scene-8",
+      "placeLabel": "Ano Mera Mykonos monastery village",
+      "slotIntent": "Ano Mera Mykonos monastery village",
+      "searchQuery": "Ano Mera Mykonos monastery village Mykonos Greece photo",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+    },
+    {
+      "key": "scene-9",
+      "placeLabel": "Agios Ioannis beach and coast Mykonos",
+      "slotIntent": "Agios Ioannis beach and coast Mykonos",
+      "searchQuery": "Agios Ioannis beach and coast Mykonos Mykonos Greece photo",
+      "status": "missing",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "No verified genuine Mykonos original; exclude from rendering."
+    }
+  ],
+  "publicationBlockedReason": "Need 21 exact sourced WebPs, individual visual and rights QA, and ten-destination batch Preview."
+}
