@@ -2,5 +2,10 @@
   "hotels": 12,
   "scenes": 9,
   "missing": [],
-  "diagnostics": []
+  "diagnostics": [
+    {
+      "url": "https://www.kalesmamykonos.com/gallery/",
+      "error": "404 Client Error: Not Found for url: https://www.kalesmamykonos.com/gallery/"
+    }
+  ]
 }

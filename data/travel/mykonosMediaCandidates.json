@@ -2,50 +2,98 @@
   "destination": "mykonos",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 9,
-  "downloadedDestinationCandidates": 6,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
       "property": "Kalesma Mykonos",
       "propertyKey": "kalesma",
       "slotIntent": "original hotel exterior or recognizable property view",
-      "sourcePage": "https://www.kalesmamykonos.com/",
-      "status": "missing",
+      "sourcePage": "https://www.timeout.com/greece/hotels/kalesma-mykonos",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Main image shows hotel horse and brand wall, not an architecture photo appropriate as premier exterior.",
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
       "rejectedSource": "https://mozcp.kalesmamykonos.com/wp-content/uploads/2026/03/KalesmaMykonos1985-2.jpg",
       "rejectedOriginalSha256": "1eb20b929a3c81fcaf377cf42910dcb4e6629ab53f3c5008b6200aacd0614f31",
-      "rejectedCandidateContext": "   "
+      "rejectedCandidateContext": "   ",
+      "localPath": "/images/travel/mykonos-premium/kalesma/view-1.webp",
+      "downloadUrl": "https://media.timeout.com/images/106326909/image.jpg",
+      "candidateContext": "Real Kalesma hilltop architectural pools with wooden pergola and Delos sunset",
+      "credit": "Photographer or source: https://www.timeout.com/greece/hotels/kalesma-mykonos",
+      "license": "Commercial reuse licence needs confirmation",
+      "sha256": "e3758fd05989c8d2e96449b837050a6f4f0441cec0ba5b85a1b5f5f6f6b33c1a",
+      "dhash": "0000111100000111000001111110000011000100010001110110001100000111",
+      "bytes": 128292,
+      "originalSize": [
+        3000,
+        2101
+      ],
+      "outputSize": [
+        1713,
+        1200
+      ]
     },
     {
       "key": "view-2",
       "property": "Kalesma Mykonos",
       "propertyKey": "kalesma",
       "slotIntent": "actual guestroom, suite or villa interior",
-      "sourcePage": "https://www.kalesmamykonos.com/",
-      "status": "missing",
+      "sourcePage": "https://www.travelbeyond.se/resor/grekland/mykonos/kalesma",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Another detail of the same hotel horse, near-duplicate and not a guestroom interior.",
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
       "rejectedSource": "https://mozcp.kalesmamykonos.com/wp-content/uploads/2026/01/DSF4225-1.jpg.webp",
       "rejectedOriginalSha256": "018cfbbbd935444093b00860bc7fc858bb2f272377d418eb7b82c133d4c44fc0",
-      "rejectedCandidateContext": "   "
+      "rejectedCandidateContext": "   ",
+      "localPath": "/images/travel/mykonos-premium/kalesma/view-2.webp",
+      "downloadUrl": "https://www.travelbeyond.se/media/46701442/gr_kalesma-mykonos-suite_web.jpg",
+      "candidateContext": "Authentic Kalesma light bedroom with timber-beamed ceiling and doorway opening to blue sea",
+      "credit": "Photographer or source: https://www.travelbeyond.se/resor/grekland/mykonos/kalesma",
+      "license": "Commercial reuse licence needs confirmation",
+      "sha256": "983ac79bae5be3e8736ce53226520a42419e512ee1d837864e67224a2301a9c2",
+      "dhash": "1001111011001100010010000010101001011010110010100110001101101001",
+      "bytes": 189418,
+      "originalSize": [
+        2380,
+        1753
+      ],
+      "outputSize": [
+        1629,
+        1200
+      ]
     },
     {
       "key": "view-3",
       "property": "Kalesma Mykonos",
       "propertyKey": "kalesma",
       "slotIntent": "real beach, pool or hotel dining terrace",
-      "sourcePage": "https://www.kalesmamykonos.com/",
-      "status": "missing",
+      "sourcePage": "https://www.ttgmedia.com/luxury/why-kalesma-is-the-ultimate-greek-getaway-36079",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Close crop of a draped bed and plunge pool wall without identifiable premium property context.",
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
       "rejectedSource": "https://mozcp.kalesmamykonos.com/wp-content/uploads/2026/02/DSF2788.jpg.webp",
       "rejectedOriginalSha256": "9dbd8b6423eba43ebd3a1351fc7ed8464f3ed40ed5b7e1f24e4a2f2316745912",
-      "rejectedCandidateContext": "   "
+      "rejectedCandidateContext": "   ",
+      "localPath": "/images/travel/mykonos-premium/kalesma/view-3.webp",
+      "downloadUrl": "https://www.ttgmedia.com/sites/default/files/styles/content_banner/public/dam/273/Kalesma_Mykonos_-_Main_Pool__Bar__Chapel.jpg?h=b69f83ed&itok=fm9RNj-I",
+      "candidateContext": "True Kalesma main pool and pergola with bougainvillea in sunny daylight",
+      "credit": "Photographer or source: https://www.ttgmedia.com/luxury/why-kalesma-is-the-ultimate-greek-getaway-36079",
+      "license": "Commercial reuse licence needs confirmation",
+      "sha256": "f504e57b2414548b3a96fa19bc3da18f23342fb032f7011931b3a206646449ef",
+      "dhash": "0000000000000010001111100100111001101110010011001000111110010110",
+      "bytes": 125612,
+      "originalSize": [
+        1600,
+        1067
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ]
     },
     {
       "key": "view-1",
@@ -351,14 +399,30 @@
       "placeLabel": "Ornos Bay white beach and turquoise water",
       "slotIntent": "Ornos Bay white beach and turquoise water",
       "searchQuery": "Ornos Bay white beach and turquoise water Mykonos Greece photo",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Ornos source photograph mainly shows dry hillside, not the sandy beach promised by the slot.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mykonos_Ornos_01.jpg",
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:GR-mykonos-ornos-beach.jpg",
       "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/9/98/Mykonos_Ornos_01.jpg",
       "rejectedOriginalSha256": "c7bd2c5a96ec035b87ef3ee41be0af884ba9ef67efcb953704048bb27ae8702f",
-      "rejectedCandidateContext": "Verified Mykonos Ornos beach town and cove, Olaf Tausch"
+      "rejectedCandidateContext": "Verified Mykonos Ornos beach town and cove, Olaf Tausch",
+      "localPath": "/images/travel/mykonos-premium/destination/scene-3.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/08/GR-mykonos-ornos-beach.jpg",
+      "candidateContext": "Photograph of real sandy Ornos beach on Mykonos, author Bgabel 2012 CC BY-SA 3.0",
+      "credit": "Wikimedia Commons source author, check file history for attribution",
+      "license": "Creative Commons licence to verify in file",
+      "sha256": "016fa3335e6e129ca858ca2773add6a829dc769e9cf5ecd492228734073a2c85",
+      "dhash": "0111100101101110000110111110010100111111011101100110011010011000",
+      "bytes": 297798,
+      "originalSize": [
+        1211,
+        807
+      ],
+      "outputSize": [
+        1211,
+        807
+      ]
     },
     {
       "key": "scene-4",
@@ -392,14 +456,30 @@
       "placeLabel": "Psarou Bay and sailing yachts",
       "slotIntent": "Psarou Bay and sailing yachts",
       "searchQuery": "Psarou Bay and sailing yachts Mykonos Greece photo",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Source image of Psarou shows distant hillside but not the turquoise bathing beach or yachts.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Psarou_mykonos.JPG",
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cyclades_Mykonos_Psarou_Plage_23062013_-_panoramio.jpg",
       "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Psarou_mykonos.JPG",
       "rejectedOriginalSha256": "5e0ac60da47790fccbdb222cf23c854e2bf671062a439b9764556a3bfcbca266",
-      "rejectedCandidateContext": "True Psarou bay beach Mykonos stitched panorama, photographer sailko"
+      "rejectedCandidateContext": "True Psarou bay beach Mykonos stitched panorama, photographer sailko",
+      "localPath": "/images/travel/mykonos-premium/destination/scene-5.webp",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Cyclades_Mykonos_Psarou_Plage_23062013_-_panoramio.jpg",
+      "candidateContext": "Actual Psarou Beach Mykonos, June 2013, verify quality at full size",
+      "credit": "Wikimedia Commons source author, check file history for attribution",
+      "license": "Creative Commons licence to verify in file",
+      "sha256": "e9c6d1202d819255b307b4b2d39198c792878d029312302914a501048caf59db",
+      "dhash": "0000000100000001000100100001001101000001000100011111001110000110",
+      "bytes": 392862,
+      "originalSize": [
+        1600,
+        1200
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-6",
@@ -487,14 +567,30 @@
       "placeLabel": "Agios Ioannis beach and coast Mykonos",
       "slotIntent": "Agios Ioannis beach and coast Mykonos",
       "searchQuery": "Agios Ioannis beach and coast Mykonos Mykonos Greece photo",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Second sunset over villa plunge pool duplicates Aleomandra sunset and does not show Agios Ioannis beach.",
-      "sourcePage": "https://divineproperty.com/villas/villa-sunset/",
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "sourcePage": "https://www.wowabouts.com/explore/post-agios-ioannis-beach",
       "rejectedSource": "https://app.divineproperty.com/storage/property/2/images/1531f0e0ea9fbd8b270f0a0bccace4d8.jpg",
       "rejectedOriginalSha256": "28e32b361818956213d3bc8102b0608dbdc56de211f8db3fc32b719bfd385463",
-      "rejectedCandidateContext": "Aleomandra terrace near Agios Ioannis, Mykonos, sunset over sea with Delos in distance"
+      "rejectedCandidateContext": "Aleomandra terrace near Agios Ioannis, Mykonos, sunset over sea with Delos in distance",
+      "localPath": "/images/travel/mykonos-premium/destination/scene-9.webp",
+      "downloadUrl": "https://www.wowabouts.com/z-media/2018/10/Agios%20Ioannis%20Beach.jpg",
+      "candidateContext": "Actual sandy Agios Ioannis beach in Mykonos with white parasols, clear turquoise water and hills",
+      "credit": "Source photographer at https://www.wowabouts.com/explore/post-agios-ioannis-beach",
+      "license": "Publisher/photographer permission required",
+      "sha256": "5b1ea92eae21213867bda0970df175de91ac83989c034646aaacbe031b133b71",
+      "dhash": "0000000101100001011011110000000100100011000000110010011100110111",
+      "bytes": 449656,
+      "originalSize": [
+        1600,
+        990
+      ],
+      "outputSize": [
+        1600,
+        990
+      ]
     }
   ],
   "publicationBlockedReason": "Need 21 exact sourced WebPs, individual visual and rights QA, and ten-destination batch Preview."
