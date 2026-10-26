@@ -2,7 +2,7 @@
   "destination": "monaco",
   "status": "INTERNAL_QA_PASSED",
   "branch": "feature/luxury-travel-seo-destinations-20261012",
-  "qaCommit": "da870d3018caa5cd8497f612f324372f404ea5bc",
+  "qaCommit": "e8fbc59e6fde4e3c5f195bce4d39a1c71d1add6d",
   "hotelPhotosApproved": 12,
   "localScenesApproved": 9,
   "totalApproved": 21,
