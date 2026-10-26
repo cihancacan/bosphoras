@@ -1,6 +1,33 @@
 {
   "hotels": 12,
-  "scenes": 9,
-  "missing": [],
-  "errors": []
+  "scenes": 8,
+  "missing": [
+    "destination/scene-8"
+  ],
+  "errors": [
+    {
+      "url": "https://commons.wikimedia.org/w/api.php",
+      "error": "429 Client Error: Too Many Requests for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3AIl+San+Pietro+di+Positano-14"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php",
+      "error": "429 Client Error: Too Many Requests for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3A84017+Arienzo+SA%2C+Italy+-+"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php",
+      "error": "429 Client Error: Too Many Requests for url: https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Laurito+beach+P"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php",
+      "error": "429 Client Error: Too Many Requests for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3APositano+%2832632824125%29.j"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php",
+      "error": "429 Client Error: Too Many Requests for url: https://commons.wikimedia.org/w/api.php?action=query&titles=File%3APositano+-+7271.jpg&prop=ima"
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/api.php",
+      "error": "429 Client Error: Too Many Requests for url: https://commons.wikimedia.org/w/api.php?action=query&generator=search&gsrsearch=Positano+colorf"
+    }
+  ]
 }
