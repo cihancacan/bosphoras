@@ -1,6 +1,6 @@
 # Antiparos — 21 photographies à contrôler
 
-**Candidats récupérés : 17/21 · Validés visuellement : 0/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 18/21 · Validés visuellement : 0/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Antiparos](antiparos.jpg)
 
@@ -12,7 +12,7 @@
 | 4 | The Beach House Antiparos — view-1 | [Source](https://beachhouseantiparos.com/) ·    | Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
 | 5 | The Beach House Antiparos — view-2 | [Source](https://greciamia.it/products/antiparos-beach-house) · Real renovated Beach House guestroom at Apantima, Cycladic blue and white interior| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
 | 6 | The Beach House Antiparos — view-3 | [Source](https://www.turquoiseholidays.co.uk/destinations/mediterranean/greece/paros-antiparos/the-beach-house/) · Actual Beach House Antiparos shaded outdoor lounge beside Apantima cove| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
-| 7 | Soros Beach Antiparos — view-1 | [Source](https://www.sorosbeach.gr/) · | Manquante; **Current photo is a promotional fashion model holding branded tote, not the actual hotel or room.** |
+| 7 | Soros Beach Antiparos — view-1 | [Source](https://www.living-postcards.com/blog/soros-beach-seafood-suites) · Real Soros Beach Antiparos beach daybeds with olive-and-purple cushions beneath straw shading, NOT a fashion advertiseme| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
 | 8 | Soros Beach Antiparos — view-2 | [Source](https://www.sorosbeach.gr/) ·    | Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
 | 9 | Soros Beach Antiparos — view-3 | [Source](https://www.living-postcards.com/blog/soros-beach-seafood-suites) · Verified Soros Beach seaside dining terrace with tables and parasols| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
 | 10 | Kastro Boutique Resort Antiparos — view-1 | [Source](https://www.myboutiquehotel.com/en/boutique-hotels-antiparos-town/kastro-antiparos.html) · Kastro Boutique Resort genuine pool and cabana daybeds in sunlight| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
