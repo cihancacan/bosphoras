@@ -125,6 +125,32 @@ def commons_images(query,tokens):
   score=22+sum(t in text for t in tokens)*6
   out.append((score,url,page,title,(author or "Commons contributor")+" · "+licence,licence))
  return sorted(out,key=lambda x:-x[0])
+def exact_commons(title,caption):
+ """Fetch authoritative exact Commons file metadata, not vague filename search matches."""
+ r=get("https://commons.wikimedia.org/w/api.php",params={
+  "action":"query","titles":"File:"+title,"prop":"imageinfo",
+  "iiprop":"url|extmetadata","iiurlwidth":1750,"format":"json"})
+ if not r:return []
+ try:
+  pages=r.json()["query"]["pages"].values()
+  page=next(p for p in pages if "missing" not in p)
+  info=page["imageinfo"][0]
+  url=info.get("thumburl") or info.get("url")
+  meta=info.get("extmetadata") or {}
+  artist=BeautifulSoup(meta.get("Artist",{}).get("value",""),"html.parser").get_text(" ",strip=True)[:180]
+  licence=meta.get("LicenseShortName",{}).get("value","Licence requires verification")
+  source="https://commons.wikimedia.org/wiki/"+page["title"].replace(" ","_")
+  return [(120,url,source,caption,(artist or "Commons contributor")+" · "+licence,licence)] if url else []
+ except (KeyError,TypeError,StopIteration,ValueError,IndexError):return []
+EXACT_COMMONS_SCENES={
+ "scene-4":[
+  ("Capri (15645877605).jpg","Photograph from the actual Belvedere di Tragara, Faraglioni rock formations and clear sea; Marlis Börger, 2014, CC BY-SA 2.0"),
+  ("Capri Faraglioni with boat.jpg","Actual Belvedere Tragara Faraglioni perspective with vessel, CC BY-SA 2.0")],
+ "scene-7":[
+  ("View of Capri from Monte Solaro, 2010.jpg","Photographed from Monte Solaro summit toward Capri and the Sorrento peninsula; DimiTalen CC0, 2010"),
+  ("Capri, Italy (51249368958).jpg","Real panorama from the Monte Solaro area, verify exact viewpoint before approval")],
+}
+
 def dhash(image):
  g=image.convert("L").resize((9,8),Image.Resampling.LANCZOS)
  p=list(g.getdata());return "".join("1" if p[y*9+x]>p[y*9+x+1] else "0" for y in range(8) for x in range(8))
@@ -175,6 +201,7 @@ def main():
  cache={}
  changed=False
  for h in m["hotels"]:
+  if h.get("localPath"):continue
   key=h["propertyKey"]
   if key not in cache:
    matches=[]
@@ -185,10 +212,14 @@ def main():
   exact=[(100,url,page,caption,credit,"Source-specific licence requires independent verification") for url,page,caption,credit in EXACT.get(key+"/"+h["key"],[])]
   changed=save_candidate(h,exact+cache[key],urls,hashes,vis) or changed
  for scene in m["destinationScenes"]:
+  if scene.get("localPath"):continue
   query,terms=SCENES[scene["key"]]
-  images=commons_images(query,terms)
+  commons=[]
+  for title,caption in EXACT_COMMONS_SCENES.get(scene["key"],[]):
+   commons.extend(exact_commons(title,caption))
   exact=[(100,url,page,caption,credit,"Source-specific licence requires independent verification") for url,page,caption,credit in EXACT.get("destination/"+scene["key"],[])]
-  changed=save_candidate(scene,exact+images,urls,hashes,vis) or changed
+  images=commons_images(query,terms) if not commons else []
+  changed=save_candidate(scene,commons+exact+images,urls,hashes,vis) or changed
  m["downloadedHotelCandidates"]=sum(bool(x.get("localPath")) for x in m["hotels"])
  m["downloadedDestinationCandidates"]=sum(bool(x.get("localPath")) for x in m["destinationScenes"])
  m["visuallyVerified"]=False;m["approvedForCommercialPublication"]=False
