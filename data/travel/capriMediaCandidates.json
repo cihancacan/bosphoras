@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 7,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
@@ -417,10 +417,27 @@
       "placeLabel": "Belvedere di Tragara",
       "slotIntent": "Belvedere di Tragara",
       "searchQuery": "Tragara Faraglioni viewpoint",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No local original, no individual photograph validation, no proven commercial licence: exclude."
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "localPath": "/images/travel/capri-premium/destination/scene-4.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Capri_%2815645877605%29.jpg/1920px-Capri_%2815645877605%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Capri_(15645877605).jpg",
+      "candidateContext": "Photograph from the actual Belvedere di Tragara, Faraglioni rock formations and clear sea; Marlis Börger, 2014, CC BY-SA 2.0",
+      "credit": "Marlis Börger from Mecklenburg-Vorpommern - Germany · CC BY-SA 2.0",
+      "license": "CC BY-SA 2.0",
+      "sha256": "7cd153c8c4043b746044a801d9b06b83d2f71aae173d19ce18a0077ab7b14906",
+      "dhash": "1111011011111010001111001001111000011110001111100100101001101010",
+      "bytes": 336582,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     },
     {
       "key": "scene-5",
@@ -484,14 +501,30 @@
       "placeLabel": "Monte Solaro",
       "slotIntent": "Monte Solaro",
       "searchQuery": "Monte Solaro views",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Photo shows Capri town with Monte Solaro in the distance, not the requested scenic viewpoint from the summit.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Capri_Centre_Belvedere.jpg",
+      "visualQaWarning": "Candidate only: inspect exact WebP, real hotel/location, aesthetics, attribution and specific licence before approval.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:View_of_Capri_from_Monte_Solaro,_2010.jpg",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Capri_Centre_Belvedere.jpg/1920px-Capri_Centre_Belvedere.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "3403132ccb1e79461e34a25a39ebc1f59ead3336e15756aa9c93d74860a63564",
-      "rejectedCandidateContext": "File:Capri Centre Belvedere.jpg"
+      "rejectedCandidateContext": "File:Capri Centre Belvedere.jpg",
+      "localPath": "/images/travel/capri-premium/destination/scene-7.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/View_of_Capri_from_Monte_Solaro%2C_2010.jpg/1920px-View_of_Capri_from_Monte_Solaro%2C_2010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "Photographed from Monte Solaro summit toward Capri and the Sorrento peninsula; DimiTalen CC0, 2010",
+      "credit": "DimiTalen · CC0",
+      "license": "CC0",
+      "sha256": "e45113f2f35c64c2c1abeaa95ab400e3537698168d8d7bfac2fac5c7c634cd91",
+      "dhash": "1101101001001110011001100000001010001110000001100100001011001110",
+      "bytes": 580118,
+      "originalSize": [
+        1920,
+        1277
+      ],
+      "outputSize": [
+        1800,
+        1197
+      ]
     },
     {
       "key": "scene-8",

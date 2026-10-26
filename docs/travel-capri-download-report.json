@@ -1,39 +1,7 @@
 {
   "hotelPhotos": 12,
-  "destinationPhotos": 7,
+  "destinationPhotos": 9,
   "unapproved": 21,
-  "missing": [
-    "destination/scene-4",
-    "destination/scene-7"
-  ],
-  "diagnostics": [
-    {
-      "source": "https://www.oetkerhotels.com/hotels/hotel-la-palma/",
-      "error": "429 Client Error: Too Many Requests for url: https://www.oetkerhotels.com/hotels/hotel-la-palma/"
-    },
-    {
-      "source": "https://www.oetkerhotels.com/hotels/hotel-la-palma/the-hotel/",
-      "error": "429 Client Error: Too Many Requests for url: https://www.oetkerhotels.com/hotels/hotel-la-palma/the-hotel/"
-    },
-    {
-      "source": "https://www.oetkerhotels.com/hotels/hotel-la-palma/rooms-suites/",
-      "error": "429 Client Error: Too Many Requests for url: https://www.oetkerhotels.com/hotels/hotel-la-palma/rooms-suites/"
-    },
-    {
-      "source": "https://www.oetkerhotels.com/hotels/hotel-la-palma/restaurants-bars/",
-      "error": "429 Client Error: Too Many Requests for url: https://www.oetkerhotels.com/hotels/hotel-la-palma/restaurants-bars/"
-    },
-    {
-      "source": "https://manfredihotels.com/tragara/",
-      "error": "403 Client Error: Forbidden for url: https://www.manfredihotels.com/tragara/"
-    },
-    {
-      "slot": "destination/scene-4",
-      "result": "NO_MATCHING_AUTHENTIC_IMAGE"
-    },
-    {
-      "slot": "destination/scene-7",
-      "result": "NO_MATCHING_AUTHENTIC_IMAGE"
-    }
-  ]
+  "missing": [],
+  "diagnostics": []
 }
