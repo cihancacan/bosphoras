@@ -42,9 +42,21 @@ EXACT_COMMONS={
   ("Minori from Ravello.jpg","Coast around Minori, adjoining Marmorata, seen from Ravello, not Marmorata itself"),
   ("Amalfi coast at Minori.jpg","Clear Tyrrhenian coastline near Ravello's Marmorata locality")],
  "scene-9":[
-  ("Campania Ravello2 tango7174.jpg","Directly documented panorama from Ravello towards Pontone and Atrani on the sea"),
-  ("Ausblick von Ravello 2.jpg","Coast towards Amalfi viewed from Ravello"),
-  ("Atrani (Italy).jpg","Authentic Atrani on the coast near Amalfi, photographed from nearby")],
+  ("Atrani (Italy).jpg","Bernard Gagnon authentic daylight photograph of Atrani on the Amalfi coast; do not claim camera was in Ravello"),
+  ("Amalfi Coast, Italy Panoramic.jpg","Wide panoramic view of historic Atrani beside Amalfi, coastal perspective"),
+  ("Amalfitan Coast from Ravello.JPG","True Amalfi coastline viewed from Ravello"),
+  ("Campania Ravello2 tango7174.jpg","Authentic view from Ravello towards Pontone and Atrani on the sea")],
+}
+EXACT_DIRECT={
+ "scene-7":[
+  ("https://media.houseandgarden.co.uk/photos/6888e077e0021db31082b70c/master/w_1600,c_limit/Palazzo-Avino-12.jpg",
+  "https://www.houseandgarden.co.uk/article/palazzo-avino-ravello-review",
+  "Actual Marmorata coastline Palazzo Avino Clubhouse by the Sea seen overhead, with pink striped parasols",
+  "House & Garden photographer (copyright verification required)"),
+  ("https://d19lgisewk9l6l.cloudfront.net/assetbank/palazzo-avino-clubhouse-by-the-sea-kayaking-1_51282.jpg",
+  "https://www.wexas.com/accommodation-offers/palazzo-avino-ravello-153313",
+  "Marmorata coast kayak and authentic Palazzo Avino waterside platform",
+  "Wexas Travel / original photographer (copyright verification required)")]
 }
 EXACT_SCENE_PAGES={
  "scene-7":["https://hotelmarmorata.com/en/gallery","https://www.palazzoavino.com/clubhouse-by-the-sea/"],
@@ -178,7 +190,8 @@ def main():
   # An actual Marmorata coastline image should outrank a nearby Minori photo;
   # art direction and locality are still manually reviewed after download.
   exactPages=[(125,url,page,desc,author,lic) for _,url,page,desc,author,lic in exactPages]
-  capture(item,exactPages+known+commons_candidates(q,terms),seen_urls,seen_hashes,seen_dhash)
+  exact=[(200,url,page,desc,author,"Original photographer permission requires verification") for url,page,desc,author in EXACT_DIRECT.get(item["key"],[])]
+  capture(item,exact+exactPages+known+commons_candidates(q,terms),seen_urls,seen_hashes,seen_dhash)
  m["downloadedHotelCandidates"]=sum(bool(x.get("localPath")) for x in m["hotels"])
  m["downloadedDestinationCandidates"]=sum(bool(x.get("localPath")) for x in m["destinationScenes"])
  m["visuallyVerified"]=False;m["approvedForCommercialPublication"]=False

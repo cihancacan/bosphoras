@@ -40,6 +40,16 @@ jobs:
           git add -A -- public/images/travel/ravello-premium data/travel/ravelloMediaCandidates.json docs/travel-ravello-download-report.json
           if ! git diff --cached --quiet; then
             git commit -m 'assets(travel): Ravello source-linked image candidates [skip ci]'
-            git pull --rebase origin feature/luxury-travel-seo-destinations-20261012
-            git push origin HEAD:feature/luxury-travel-seo-destinations-20261012
+            for attempt in 1 2 3 4 5; do
+              git fetch origin feature/luxury-travel-seo-destinations-20261012
+              git rebase origin/feature/luxury-travel-seo-destinations-20261012
+              if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then
+                echo "Ravello originals committed successfully"
+                exit 0
+              fi
+              echo "Concurrent branch update, retry ${attempt}/5"
+              sleep 2
+            done
+            echo 'Unable to persist Ravello originals without racing branch updates' >&2
+            exit 1
           fi
