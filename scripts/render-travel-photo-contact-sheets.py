@@ -59,7 +59,7 @@ for stem,slug,name in REGISTRY:
   warn=x.get("visualQaWarning","")
   missing=x.get("status")!="candidate_needs_visual_review"
   approved=x.get("visuallyVerified") is True and x.get("commercialRightsCleared") is True and not warn
-  awaiting_review=warn.startswith(("Candidate only:","New candidate;","New image candidate;"))
+  awaiting_review=warn.startswith(("Candidate only:","New candidate;","New image candidate;","Source-backed candidate."))
   rejected=missing or (bool(warn) and not awaiting_review)
   color=(169,50,54) if rejected else (38,118,83) if approved else (196,136,42)
   pen.rounded_rectangle((left,top,left+CW,top+CARD_H),radius=10,fill=(255,255,255),outline=color,width=4)
