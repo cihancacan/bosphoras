@@ -2,8 +2,8 @@
   "destination": "ravello",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 5,
   "hotels": [
     {
       "key": "view-1",
@@ -11,10 +11,26 @@
       "propertyKey": "caruso-belmond",
       "slotIntent": "actual hotel exterior and architecture",
       "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/caruso-belmond/view-1.webp",
+      "downloadUrl": "https://img.belmond.com/f_auto/t_2580x1299/photos/CDC/cdc-cam-legend10.jpg",
+      "candidateContext": "   ",
+      "credit": "Official hotel website; photographer rights require review",
+      "license": "Publisher/photographer permission not verified",
+      "sha256": "864fa0e9d12c891d15bde22864cdee0fd35b69b434838ba394fba210e2e030fe",
+      "dhash": "0011101110010011100110011001100111011100110110011010001110100111",
+      "bytes": 160954,
+      "originalSize": [
+        2580,
+        1299
+      ],
+      "outputSize": [
+        1750,
+        881
+      ]
     },
     {
       "key": "view-2",
@@ -22,32 +38,80 @@
       "propertyKey": "caruso-belmond",
       "slotIntent": "genuine guestroom or suite interior",
       "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/caruso-belmond/view-2.webp",
+      "downloadUrl": "https://img.belmond.com/f_auto/t_1080_ar_5_4/photos/vso/vso-journey-villeggiatura12.jpg",
+      "candidateContext": "A man in a blue train steward's uniform holds open a Villeggiatura newspaper, obscuring his face, on an Amalfi-view terrace.   ",
+      "credit": "Official hotel website; photographer rights require review",
+      "license": "Publisher/photographer permission not verified",
+      "sha256": "37350eea5aa7b37f4e8bee491d9b9ef7daecc85a8d9c5c66165fb49d804dcff6",
+      "dhash": "0010101110110010000100000100010001100100001001100010010001001110",
+      "bytes": 104840,
+      "originalSize": [
+        1080,
+        864
+      ],
+      "outputSize": [
+        1080,
+        864
+      ]
     },
     {
       "key": "view-3",
       "property": "Caruso, A Belmond Hotel, Amalfi Coast",
       "propertyKey": "caruso-belmond",
       "slotIntent": "property pool, gardens or restaurant",
-      "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast",
-      "status": "missing",
+      "sourcePage": "https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast/accommodation",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/caruso-belmond/view-3.webp",
+      "downloadUrl": "https://img.belmond.com/f_auto/t_1080_ar_5_4/photos/car/car-acc-room-garden-view-with-terrace02.jpg",
+      "candidateContext": "A king bed with white linens and heavy silk amber drapes sits centre of a Romanesque-styled room with ochre wall edge lines   ",
+      "credit": "Official hotel website; photographer rights require review",
+      "license": "Publisher/photographer permission not verified",
+      "sha256": "d243309937111e7bad009a2f887a4d0b9833bb6e21db254f5aac4ecdf3402a16",
+      "dhash": "0000001100000111000011110000101100001010000101100001011010011110",
+      "bytes": 80606,
+      "originalSize": [
+        1080,
+        864
+      ],
+      "outputSize": [
+        1080,
+        864
+      ]
     },
     {
       "key": "view-1",
       "property": "Palazzo Avino",
       "propertyKey": "palazzo-avino",
       "slotIntent": "actual hotel exterior and architecture",
-      "sourcePage": "https://www.palazzoavino.com/",
-      "status": "missing",
+      "sourcePage": "https://www.palazzoavino.com/clubhouse-by-the-sea/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/palazzo-avino/view-1.webp",
+      "downloadUrl": "https://www.palazzoavino.com/wp-content/uploads/2020/09/PA_Beach-Club-Pool-2.jpg",
+      "candidateContext": "   ",
+      "credit": "Official hotel website; photographer rights require review",
+      "license": "Publisher/photographer permission not verified",
+      "sha256": "5e7244e7fd35536555c40c9a70dccdc19d8dd89973052c22f564282988a93f01",
+      "dhash": "0000001000010010000010100100011100000011000010010001111111000001",
+      "bytes": 295664,
+      "originalSize": [
+        2000,
+        1125
+      ],
+      "outputSize": [
+        1750,
+        984
+      ]
     },
     {
       "key": "view-2",
@@ -55,10 +119,26 @@
       "propertyKey": "palazzo-avino",
       "slotIntent": "genuine guestroom or suite interior",
       "sourcePage": "https://www.palazzoavino.com/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/palazzo-avino/view-2.webp",
+      "downloadUrl": "https://www.palazzoavino.com/wp-content/uploads/2020/09/Landing-Page-1-min.jpg",
+      "candidateContext": "   ",
+      "credit": "Official hotel website; photographer rights require review",
+      "license": "Publisher/photographer permission not verified",
+      "sha256": "72850642621e3f9fa7749db46921186d7853ed2835c503fafeffc9d39db08e9d",
+      "dhash": "0000011100001111001111110110011100000011100011101000111100000111",
+      "bytes": 171354,
+      "originalSize": [
+        1920,
+        1281
+      ],
+      "outputSize": [
+        1750,
+        1168
+      ]
     },
     {
       "key": "view-3",
@@ -66,10 +146,26 @@
       "propertyKey": "palazzo-avino",
       "slotIntent": "property pool, gardens or restaurant",
       "sourcePage": "https://www.palazzoavino.com/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/palazzo-avino/view-3.webp",
+      "downloadUrl": "https://www.palazzoavino.com/wp-content/uploads/2020/05/Webp.net-resizeimage-min.jpg",
+      "candidateContext": "   ",
+      "credit": "Official hotel website; photographer rights require review",
+      "license": "Publisher/photographer permission not verified",
+      "sha256": "9c425df93fe34ed019acb33f566164f356a29e12f3f87731f0bfe5d94d47c8e1",
+      "dhash": "1001100111011010111010001111001111100100111000111110011111101100",
+      "bytes": 198066,
+      "originalSize": [
+        1920,
+        1200
+      ],
+      "outputSize": [
+        1750,
+        1094
+      ]
     },
     {
       "key": "view-1",
@@ -77,32 +173,80 @@
       "propertyKey": "hotel-villa-cimbrone",
       "slotIntent": "actual hotel exterior and architecture",
       "sourcePage": "https://www.hotelvillacimbrone.com/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/hotel-villa-cimbrone/view-1.webp",
+      "downloadUrl": "https://www.hotelvillacimbrone.com/wp-content/uploads/2020/02/Hotel-Villa-Cimbrone-23-1920.jpg",
+      "candidateContext": "   ",
+      "credit": "Official hotel website; photographer rights require review",
+      "license": "Publisher/photographer permission not verified",
+      "sha256": "be96b5ccf258f3aa2dd5e4bc90f066f42eb768990d1ba444efe54a0a4b084ef3",
+      "dhash": "0000111100001101011010001110011010100110001011100000011001000010",
+      "bytes": 336118,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1750,
+        984
+      ]
     },
     {
       "key": "view-2",
       "property": "Hotel Villa Cimbrone",
       "propertyKey": "hotel-villa-cimbrone",
       "slotIntent": "genuine guestroom or suite interior",
-      "sourcePage": "https://www.hotelvillacimbrone.com/",
-      "status": "missing",
+      "sourcePage": "https://www.hotelvillacimbrone.com/rooms-and-suites/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/hotel-villa-cimbrone/view-2.webp",
+      "downloadUrl": "https://www.hotelvillacimbrone.com/wp-content/uploads/2020/06/Hotel-Villa-Cimbrone-EBW-suite-7-1920.jpg",
+      "candidateContext": "   ",
+      "credit": "Official hotel website; photographer rights require review",
+      "license": "Publisher/photographer permission not verified",
+      "sha256": "facd5641081a8d2b23484710e338952d86c8ec3dbc2c944ca4cc8747b8b68869",
+      "dhash": "0111100001011110110101100001111010010101010111011100110000011010",
+      "bytes": 494210,
+      "originalSize": [
+        1920,
+        1448
+      ],
+      "outputSize": [
+        1591,
+        1200
+      ]
     },
     {
       "key": "view-3",
       "property": "Hotel Villa Cimbrone",
       "propertyKey": "hotel-villa-cimbrone",
       "slotIntent": "property pool, gardens or restaurant",
-      "sourcePage": "https://www.hotelvillacimbrone.com/",
-      "status": "missing",
+      "sourcePage": "https://www.hotelvillacimbrone.com/rooms-and-suite/studio-suite/",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/hotel-villa-cimbrone/view-3.webp",
+      "downloadUrl": "https://www.hotelvillacimbrone.com/wp-content/uploads/2019/12/Hotel-Villa-Cimbrone-stuidio-suite-10.jpg",
+      "candidateContext": "   ",
+      "credit": "Official hotel website; photographer rights require review",
+      "license": "Publisher/photographer permission not verified",
+      "sha256": "99645cf5feb0bf89beed232245b9f5cf337c997586d7afbd66cf3b73bdcefe78",
+      "dhash": "0110011101011111010011100110010001010110110011100001010000110110",
+      "bytes": 399734,
+      "originalSize": [
+        1600,
+        1067
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ]
     },
     {
       "key": "view-1",
@@ -110,10 +254,26 @@
       "propertyKey": "palazzo-confalone",
       "slotIntent": "actual hotel exterior and architecture",
       "sourcePage": "https://palazzoconfalone.com/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/palazzo-confalone/view-1.webp",
+      "downloadUrl": "https://palazzoconfalone.it/wp-content/uploads/2020/01/hall.jpg",
+      "candidateContext": " hall  ",
+      "credit": "Official hotel website; photographer rights require review",
+      "license": "Publisher/photographer permission not verified",
+      "sha256": "8244cf8c9091ee3305cd308fc7df4018767504c2bc51890bf570271b512028e5",
+      "dhash": "0001001100010110001001101010111000111111000111101001110100011111",
+      "bytes": 315710,
+      "originalSize": [
+        1920,
+        1290
+      ],
+      "outputSize": [
+        1750,
+        1176
+      ]
     },
     {
       "key": "view-2",
@@ -121,10 +281,26 @@
       "propertyKey": "palazzo-confalone",
       "slotIntent": "genuine guestroom or suite interior",
       "sourcePage": "https://palazzoconfalone.com/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/palazzo-confalone/view-2.webp",
+      "downloadUrl": "https://palazzoconfalone.it/wp-content/uploads/2021/01/evento-matrimonio-esterno.jpg",
+      "candidateContext": " evento-matrimonio-esterno  ",
+      "credit": "Official hotel website; photographer rights require review",
+      "license": "Publisher/photographer permission not verified",
+      "sha256": "8b92112c3df30ee24d46151818dbd150c4ede146ec9f734da5385f26d5eb1e73",
+      "dhash": "1110000000010111000101111101101100100101001010111110011010001101",
+      "bytes": 574158,
+      "originalSize": [
+        1920,
+        1277
+      ],
+      "outputSize": [
+        1750,
+        1164
+      ]
     },
     {
       "key": "view-3",
@@ -132,10 +308,26 @@
       "propertyKey": "palazzo-confalone",
       "slotIntent": "property pool, gardens or restaurant",
       "sourcePage": "https://palazzoconfalone.com/",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/palazzo-confalone/view-3.webp",
+      "downloadUrl": "https://palazzoconfalone.it/wp-content/uploads/2020/01/esterni-confalone.jpg",
+      "candidateContext": " esterni-confalone  ",
+      "credit": "Official hotel website; photographer rights require review",
+      "license": "Publisher/photographer permission not verified",
+      "sha256": "4cb48d29e448bfee40dc18462e71c6c612b309729b7b1253ea98f868f51d71cc",
+      "dhash": "1010111001001101010011010100010110000101100011011000110100101001",
+      "bytes": 558208,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ]
     }
   ],
   "destinationScenes": [
@@ -144,40 +336,108 @@
       "placeLabel": "Villa Rufolo gardens and Tyrrhenian Sea",
       "searchQuery": "Ravello Villa Rufolo gardens panoramic sea",
       "slotIntent": "Villa Rufolo gardens and Tyrrhenian Sea",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Jardines_de_Villa_Rufolo.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Jardines_de_Villa_Rufolo.jpg/1920px-Jardines_de_Villa_Rufolo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Jardines de Villa Rufolo.jpg",
+      "credit": "Hmaglione10 · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "sha256": "20f85d373e20519da44c8227c759c30e772ae27af9f774b9c524f0a59e94e1fe",
+      "dhash": "0000011010000111100100011001010110011100010011111100100111100000",
+      "bytes": 506026,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-2",
       "placeLabel": "Terrazza dell'Infinito Villa Cimbrone marble busts",
       "searchQuery": "Ravello Villa Cimbrone Infinity Terrace sea",
       "slotIntent": "Terrazza dell'Infinito Villa Cimbrone marble busts",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cimbrone_IMG_9872.JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Cimbrone_IMG_9872.JPG/1920px-Cimbrone_IMG_9872.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Cimbrone IMG 9872.JPG",
+      "credit": "Deror_avi · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "sha256": "7efe56388a831007039ac790930b633e8fb5cf5de38477c90a936402a7b4c93b",
+      "dhash": "1111111011101110010110011010011011100011110110000110011000100111",
+      "bytes": 139056,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ]
     },
     {
       "key": "scene-3",
       "placeLabel": "Ravello Piazza Duomo and cathedral",
       "searchQuery": "Ravello Piazza Duomo cathedral",
       "slotIntent": "Ravello Piazza Duomo and cathedral",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/destination/scene-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Duomo_Ravello,_from_Piazza_Duomo.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Duomo_Ravello%2C_from_Piazza_Duomo.jpg/1920px-Duomo_Ravello%2C_from_Piazza_Duomo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Duomo Ravello, from Piazza Duomo.jpg",
+      "credit": "Nessy · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "sha256": "26b8879225f56bf9a4a57e399ff01102550b526d8d9f3b9246373cfa1bed1a56",
+      "dhash": "0000011100110111001101110011111101011101000111010001110001001101",
+      "bytes": 285716,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ]
     },
     {
       "key": "scene-4",
       "placeLabel": "San Giovanni del Toro Ravello historic quarter",
       "searchQuery": "Ravello San Giovanni del Toro church",
       "slotIntent": "San Giovanni del Toro Ravello historic quarter",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ravello._Chiesa_di_San_Giovanni_del_Toro_Interieur_Preekstoel,_GD012734.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Ravello._Chiesa_di_San_Giovanni_del_Toro_Interieur_Preekstoel%2C_GD012734.jpg/1920px-Ravello._Chiesa_di_San_Giovanni_del_Toro_Interieur_Preekstoel%2C_GD012734.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Ravello. Chiesa di San Giovanni del Toro Interieur Preekstoel, GD012734.jpg",
+      "credit": "Unknown author Unknown author · Public domain",
+      "license": "Public domain",
+      "sha256": "fbb779357b84bc1899ba5cdd368fdcb470af178e493e0641210a531a49591471",
+      "dhash": "1000011010010110100111101001101010010010100101101001111010011100",
+      "bytes": 249168,
+      "originalSize": [
+        1920,
+        1625
+      ],
+      "outputSize": [
+        1418,
+        1200
+      ]
     },
     {
       "key": "scene-5",
@@ -214,10 +474,27 @@
       "placeLabel": "Auditorium Oscar Niemeyer Ravello exterior",
       "searchQuery": "Ravello Oscar Niemeyer auditorium",
       "slotIntent": "Auditorium Oscar Niemeyer Ravello exterior",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No verified original WebP or commercial licence for this exact slot. Must not display."
+      "visualQaWarning": "Source-backed photo candidate only: verify actual identity, seasonal photo accuracy, artistic quality and precise commercial reuse licence.",
+      "localPath": "/images/travel/ravello-premium/destination/scene-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ravello_-_Auditorium_Oscar_Niemeyer_-_2024-09-29_19-16-49_001.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Ravello_-_Auditorium_Oscar_Niemeyer_-_2024-09-29_19-16-49_001.jpg/1920px-Ravello_-_Auditorium_Oscar_Niemeyer_-_2024-09-29_19-16-49_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Ravello - Auditorium Oscar Niemeyer - 2024-09-29 19-16-49 001.jpg",
+      "credit": "Greymouser · CC BY-SA 4.0",
+      "license": "CC BY-SA 4.0",
+      "sha256": "f8fc664f173c38d9bdb4332c3a1ca4b8ec188abbf5c3539e1eaf1cb82c6f14f3",
+      "dhash": "0000111100111001000100010110110101100111101011100011100101111011",
+      "bytes": 263836,
+      "originalSize": [
+        1920,
+        1283
+      ],
+      "outputSize": [
+        1750,
+        1169
+      ]
     },
     {
       "key": "scene-9",

@@ -1,0 +1,100 @@
+{
+  "hotels": 12,
+  "scenes": 5,
+  "missing": [
+    "destination/scene-5",
+    "destination/scene-6",
+    "destination/scene-7",
+    "destination/scene-9"
+  ],
+  "errors": [
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast/dining",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/caruso-amalfi-coast/dining"
+    },
+    {
+      "url": "https://img.belmond.com/video/upload/so_0",
+      "error": "404 Client Error: Not Found for url: https://img.belmond.com/video/upload/so_0"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/w_920",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/w_920"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/ar_4:5",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/ar_4:5"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/c_fill",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/c_fill"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/g_auto/f_auto",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/g_auto/f_auto"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/q_auto/v1681919424/videos/CAR/car-homepage-loop-legends01.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/q_auto/v1681919424/videos/CAR/car-homepage-loop-legends01.jpg"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/w_1280",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/w_1280"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/ar_16:9",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/ar_16:9"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/w_1920",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/w_1920"
+    },
+    {
+      "url": "https://img.belmond.com/video/upload/so_0",
+      "error": "404 Client Error: Not Found for url: https://img.belmond.com/video/upload/so_0"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/w_920",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/w_920"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/ar_4:5",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/ar_4:5"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/c_fill",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/c_fill"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/g_auto/f_auto",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/g_auto/f_auto"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/q_auto/v1681919424/videos/CAR/car-homepage-loop-legends01.jpg",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/q_auto/v1681919424/videos/CAR/car-homepage-loop-legends01.jpg"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/w_1280",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/w_1280"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/ar_16:9",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/ar_16:9"
+    },
+    {
+      "url": "https://www.belmond.com/en/hotels/europe/italy/w_1920",
+      "error": "404 Client Error: Not Found for url: https://www.belmond.com/en/hotels/europe/italy/w_1920"
+    },
+    {
+      "url": "https://www.palazzoavino.com/rooms/",
+      "error": "404 Client Error: Not Found for url: https://www.palazzoavino.com/rooms/"
+    },
+    {
+      "url": "https://www.palazzoavino.com/R0lGODlhAQABAIAAAP/wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
+      "error": "404 Client Error: Not Found for url: https://www.palazzoavino.com/R0lGODlhAQABAIAAAP/wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+    },
+    {
+      "url": "https://www.palazzoavino.com/R0lGODlhAQABAIAAAP/wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==",
+      "error": "404 Client Error: Not Found for url: https://www.palazzoavino.com/R0lGODlhAQABAIAAAP/wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+    }
+  ]
+}
