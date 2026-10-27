@@ -2,7 +2,7 @@ import type {BodrumHotelEditorial,BodrumPremiumPhoto} from './bodrumPremiumEdito
 import {costaCareyesDraftGuide} from './costaCareyesDraftGuide';
 import {approvedCareyesPreviewPhoto} from './costaCareyesGuide';
 import media from './costaCareyesMediaCandidates.json';
-type Candidate={key:string;propertyKey?:string;localPath?:string;sourcePage?:string;credit?:string;frCaption?:string;enCaption?:string;status:string;visuallyVerified?:boolean;visualQaWarning?:string;sha256?:string;bytes?:number};
+type Candidate={key:string;propertyKey?:string|null;localPath?:string;sourcePage?:string;credit?:string;frCaption?:string;enCaption?:string;status:string;visuallyVerified?:boolean;visualQaWarning?:string;sha256?:string;bytes?:number};
 const photo=(p:Candidate):BodrumPremiumPhoto=>({src:p.localPath!,fr:p.frCaption!,en:p.enCaption!,credit:p.credit||'Careyes operator publisher, rights pending',sourcePage:p.sourcePage!});
 const keys=['sol','carioca','club','bungalow'];
 export const costaCareyesHotelEditorial:Record<string,BodrumHotelEditorial>=Object.fromEntries(
