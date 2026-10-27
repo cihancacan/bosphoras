@@ -24,7 +24,8 @@ REGISTRY=[
  ("positano","positano","Positano"),
  ("ravello","ravello","Ravello"),
  ("mykonos","mykonos","Mykonos"),
- ("antiparos","antiparos","Antiparos"), # downloaded Mykonos originals: inspect without auto approval # no approval implied by a green or orange preview without manifest evidence
+ ("antiparos","antiparos","Antiparos"),
+ ("ibiza","ibiza","Ibiza"), # downloaded Mykonos originals: inspect without auto approval # no approval implied by a green or orange preview without manifest evidence
 ]
 OUT=Path("docs/travel-photo-contact-sheets");OUT.mkdir(parents=True,exist_ok=True)
 try:
