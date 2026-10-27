@@ -40,3 +40,5 @@ jobs:
             done
             exit 1
           fi
+
+# Start verified official North Island image download after isolated collector dry-run (21/21 unique files).
