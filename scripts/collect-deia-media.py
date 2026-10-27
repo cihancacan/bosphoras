@@ -26,7 +26,7 @@ HOTELS=[
 ('costa-dor','Hoposa Costa d’Or','https://www.hoposa.es/hotels/costa-dor',[
 ('https://www.hoposa.es/images/hoposa/hoteles/costador/slider/gallery/costa_5.jpg','Hoposa Costa d’Or · maison majorquine sur les hauteurs','Hoposa Costa d’Or · hillside Mallorcan building'),
 ('https://www.hoposa.es/images/hoposa/hoteles/costador/slider/gallery/costa_room.jpg','Hoposa Costa d’Or · chambre de l’hôtel','Hoposa Costa d’Or · official room photography'),
-('https://www.hoposa.es/images/hoposa/hoteles/costador/adults-only-3.jpg','Hoposa Costa d’Or · piscine panoramique','Hoposa Costa d’Or · panoramic swimming pool')])
+('https://www.hoposa.es/images/hoposa/hoteles/costador/slider/gallery/costa_1.jpg','Hoposa Costa d’Or · piscine panoramique','Hoposa Costa d’Or · panoramic swimming pool')])
 ]
 COMMONS=[
 ('scene-1',"Deià, Serra de Tramuntana, Mallorca - Flickr - pom'..jpg","Deià · panorama des maisons dans la Serra de Tramuntana","Deià · village panorama in the Tramuntana mountains"),
