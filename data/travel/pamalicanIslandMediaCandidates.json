@@ -1,0 +1,634 @@
+{
+  "destination": "pamalican-island",
+  "hotels": [
+    {
+      "key": "view-1",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo/accommodation/casitas/beach-pool-casita",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/full_size_extra_large_2x/public/2022-04/Amanpulo%20Beach%20Pool%20Casita.webp?itok=Ry_tR_Gq",
+      "sourceAlt": "Amanpulo beach pool casita at dusk, with illuminated pavilion reflected in still water, surrounded by tropical vegetation.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo/accommodation/casitas/beach-pool-casita",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Beach Pool Casita · bassin à la tombée du jour",
+      "enCaption": "Beach Pool Casita · pool at dusk",
+      "localPath": "/images/travel/pamalican-island-premium/beachpool/view-1.webp",
+      "sha256": "ab0317d8dd3bf49c3e598782fa694fad8a0b086358655ee1df1e0bc2eaa53da7",
+      "bytes": 312538,
+      "originalSize": [
+        2880,
+        1780
+      ],
+      "outputSize": [
+        1650,
+        1020
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "propertyKey": "beachpool",
+      "property": "Amanpulo — Beach Pool Casita"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo/accommodation/casitas/beach-pool-casita",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/full_size_extra_large_2x/public/2022-04/Amanpulo%2C%20Beach%20Pool%20Casita%2C%20Indoor%20.webp?itok=Je7lI0Ea",
+      "sourceAlt": "Beach Pool Casita bedroom at Amanpulo with expansive windows overlooking tropical gardens and ocean views.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo/accommodation/casitas/beach-pool-casita",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Beach Pool Casita · chambre donnant sur les tropiques",
+      "enCaption": "Beach Pool Casita · real bedroom",
+      "localPath": "/images/travel/pamalican-island-premium/beachpool/view-2.webp",
+      "sha256": "9b523fd8d68b38ccc269191ba4c1944fbe9a8b552d1dad13f456217a7e0e4d78",
+      "bytes": 152988,
+      "originalSize": [
+        2880,
+        1780
+      ],
+      "outputSize": [
+        1650,
+        1020
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "propertyKey": "beachpool",
+      "property": "Amanpulo — Beach Pool Casita"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo/accommodation/casitas/beach-pool-casita",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/full_size_extra_large_2x/public/2022-04/Amanpulo%2C%20Beach%20Pool%20Casita%20copy.webp?itok=BqhGK1vb",
+      "sourceAlt": "Beach Pool Casita at Amanpulo with thatched-roof pavilion overlooking tropical waters and lush gardens.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo/accommodation/casitas/beach-pool-casita",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Beach Pool Casita · pavillon et terrasse",
+      "enCaption": "Beach Pool Casita · villa-style pavilion",
+      "localPath": "/images/travel/pamalican-island-premium/beachpool/view-3.webp",
+      "sha256": "de10ae913f8c11e430346dda2bf3120f7dfc9071aa334c9194a00c83c705c0bc",
+      "bytes": 273498,
+      "originalSize": [
+        2880,
+        1780
+      ],
+      "outputSize": [
+        1650,
+        1020
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "propertyKey": "beachpool",
+      "property": "Amanpulo — Beach Pool Casita"
+    },
+    {
+      "key": "view-1",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo/accommodation/casitas/treetop-pool-casita",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/full_size_extra_large_2x/public/2021-05/Amanpulo%2C%20Accomodation%20-%20Treetop%20Pool%20Casita.webp?itok=tHsYJgQl",
+      "sourceAlt": "Treetop pool casita with blue plunge pool and sun loungers overlooking tropical forest at Amanpulo.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo/accommodation/casitas/treetop-pool-casita",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Treetop Pool · bassin dans les arbres",
+      "enCaption": "Treetop Pool · pool above the canopy",
+      "localPath": "/images/travel/pamalican-island-premium/treetoppool/view-1.webp",
+      "sha256": "950d3b34ce6df3675419588f9890e5ed2365771719aab733660626fdc614e82b",
+      "bytes": 257696,
+      "originalSize": [
+        2880,
+        1780
+      ],
+      "outputSize": [
+        1650,
+        1020
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "propertyKey": "treetoppool",
+      "property": "Amanpulo — Treetop Pool Casita"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo/accommodation/casitas/treetop-pool-casita",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/full_size_extra_large_2x/public/2021-02/Treetop%20Pool%20Casita%2C%20Amanpulo%2C%20Philippines_2.webp?itok=nFCoT8o2",
+      "sourceAlt": "Spacious casita bedroom at Amanpulo with wooden furnishings, high ceilings, and tropical views through large windows.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo/accommodation/casitas/treetop-pool-casita",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Treetop Pool · chambre et plafond en bois",
+      "enCaption": "Treetop Pool · real bedroom",
+      "localPath": "/images/travel/pamalican-island-premium/treetoppool/view-2.webp",
+      "sha256": "bc9267d1729aa1297a3cfd20916e229d1f76d570d924144fb5ee0031ba714e2c",
+      "bytes": 151044,
+      "originalSize": [
+        2880,
+        1780
+      ],
+      "outputSize": [
+        1650,
+        1020
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "propertyKey": "treetoppool",
+      "property": "Amanpulo — Treetop Pool Casita"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo/accommodation/casitas/treetop-pool-casita",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/full_size_extra_large_2x/public/2021-02/Treetop%20Pool%20Casita%2C%20Amanpulo%2C%20Philippines_3.webp?itok=Y3ziUbKD",
+      "sourceAlt": "Symmetrical spa bathroom at Amanpulo with dual vanities, round soaking tub, and verdant garden views.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo/accommodation/casitas/treetop-pool-casita",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Treetop Pool · salle de bains intérieure",
+      "enCaption": "Treetop Pool · original bathroom",
+      "localPath": "/images/travel/pamalican-island-premium/treetoppool/view-3.webp",
+      "sha256": "72d70c86992c976f02a218efea40b472a690617d5141eca178a31bf92d7695f7",
+      "bytes": 116528,
+      "originalSize": [
+        2880,
+        1780
+      ],
+      "outputSize": [
+        1650,
+        1020
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "propertyKey": "treetoppool",
+      "property": "Amanpulo — Treetop Pool Casita"
+    },
+    {
+      "key": "view-1",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/central_carousel_large_2x/public/2026-06/Amanpulo--Philippines---Accommodation--Grand-Beach-Pool-Casita--8-.webp?itok=kwYRGucM",
+      "sourceAlt": "Grand Beach Pool Casita with infinity pool overlooking tropical palms at Amanpulo, Philippines.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Grand Beach Pool · piscine privative et jungle",
+      "enCaption": "Grand Beach Pool · private pool beside palms",
+      "localPath": "/images/travel/pamalican-island-premium/grand/view-1.webp",
+      "sha256": "3cee9e6947bbfe2aedf82d6870890ecbd150ab0de603c5dc33b2953f5469194f",
+      "bytes": 175102,
+      "originalSize": [
+        900,
+        900
+      ],
+      "outputSize": [
+        900,
+        900
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "propertyKey": "grand",
+      "property": "Amanpulo — Grand Beach Pool Casita"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/central_carousel_large_2x/public/2026-07/Amanpulo--Philippines---Accommodation--Grand-Beach-Pool-Casita--9-.webp?itok=8KCDqgNx",
+      "sourceAlt": "Grand Beach Pool Casita bedroom at Amanpulo with wooden furnishings and garden views.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Grand Beach Pool · chambre officielle",
+      "enCaption": "Grand Beach Pool · genuine bedroom",
+      "localPath": "/images/travel/pamalican-island-premium/grand/view-2.webp",
+      "sha256": "e322b54aa4bdae573a1ee4bd86d59e2f50f232d615801083f161080e60d616d7",
+      "bytes": 117744,
+      "originalSize": [
+        3626,
+        4771
+      ],
+      "outputSize": [
+        874,
+        1150
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "propertyKey": "grand",
+      "property": "Amanpulo — Grand Beach Pool Casita"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/central_carousel_large_2x/public/2026-07/Amanpulo--Philippines---Accommodation--Grand-Beach-Pool-Casita--10-.webp?itok=1-KQvACw",
+      "sourceAlt": "Grand Beach Pool Casita with wooden architecture and ocean views at Amanpulo, Philippines.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Grand Beach Pool · pavillon et vue océan",
+      "enCaption": "Grand Beach Pool · pavilion by the sea",
+      "localPath": "/images/travel/pamalican-island-premium/grand/view-3.webp",
+      "sha256": "005d7b50f9932eb2173723f7522c2d8352afb0a7ea6541aaaac96ab7f8eddd98",
+      "bytes": 212502,
+      "originalSize": [
+        7153,
+        4415
+      ],
+      "outputSize": [
+        1650,
+        1018
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "propertyKey": "grand",
+      "property": "Amanpulo — Grand Beach Pool Casita"
+    },
+    {
+      "key": "view-1",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/central_carousel_large_2x/public/2026-07/Amanpulo--Philippines---Accommodation--Villa-3---7--Pool-View.webp?itok=pzTABIOb",
+      "sourceAlt": "Villa pool terrace at Amanpulo, Philippines, with loungers overlooking calm water at dusk.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Villas Amanpulo · terrasse avec bassin, vue générique",
+      "enCaption": "Amanpulo Villas · representative pool terrace",
+      "localPath": "/images/travel/pamalican-island-premium/villas/view-1.webp",
+      "sha256": "8673c06c3b38dd57d15b993ddb3b2d90727bfdc58a72ad80207e460a1568f1c3",
+      "bytes": 246506,
+      "originalSize": [
+        7153,
+        4415
+      ],
+      "outputSize": [
+        1650,
+        1018
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "propertyKey": "villas",
+      "property": "Amanpulo — Villas quatre chambres"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo/accommodation/villas",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/listing_teaser_large_2x/public/2022-06/amanpulo-villa-square.webp?itok=I_mjSlUJ",
+      "sourceAlt": "Amanpulo villa terrace with daybed overlooking tropical gardens and lagoon.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo/accommodation/villas",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Villas Amanpulo · salon extérieur représentatif",
+      "enCaption": "Amanpulo Villas · representative daybed terrace",
+      "localPath": "/images/travel/pamalican-island-premium/villas/view-2.webp",
+      "sha256": "92c4bc41452f10b1d0616e13a3ad2d67c8bfb65f61ac3d3c6b5b9b62f4fcc64c",
+      "bytes": 244218,
+      "originalSize": [
+        1200,
+        1200
+      ],
+      "outputSize": [
+        1150,
+        1150
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "propertyKey": "villas",
+      "property": "Amanpulo — Villas quatre chambres"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo/accommodation/villas/four-bedroom-palawan-villa",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/listing_teaser_large_2x/public/2021-05/Amanpulo%2C%20Philippines%20%E2%80%93%20Accommodation%2C%20Four-Bedroom%20%20%28Villa%2025%29.webp?itok=m5G7hTth",
+      "sourceAlt": "Four-bedroom villa interior with wooden furnishings, large windows overlooking tropical gardens at Amanpulo, Philippines.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo/accommodation/villas/four-bedroom-palawan-villa",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Villas quatre chambres · intérieur de catégorie villa",
+      "enCaption": "Four-bedroom villas · representative villa interior",
+      "localPath": "/images/travel/pamalican-island-premium/villas/view-3.webp",
+      "sha256": "20be8e793d0e1958d825dcdfaae08302df9f8d097a4fd3181e5e1d1650b936b6",
+      "bytes": 158564,
+      "originalSize": [
+        1200,
+        1200
+      ],
+      "outputSize": [
+        1150,
+        1150
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "propertyKey": "villas",
+      "property": "Amanpulo — Villas quatre chambres"
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/central_carousel_extra_large_2x/public/2021-03/Amanpulo-Gallery-3.webp?itok=tJ9NXM_q",
+      "sourceAlt": "Turquoise waters glimpsed through dense tropical forest at Amanpulo.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Pamalican · mer turquoise et forêt dense",
+      "enCaption": "Pamalican · turquoise water through island trees",
+      "localPath": "/images/travel/pamalican-island-premium/destination/scene-1.webp",
+      "sha256": "134598cecc1d4690c47d5e7d224628bdfa27ce02cf75868568ab45945d4adf4b",
+      "bytes": 270136,
+      "originalSize": [
+        1080,
+        1421
+      ],
+      "outputSize": [
+        874,
+        1150
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "place": "Pamalican Island / Amanpulo, Philippines"
+    },
+    {
+      "key": "scene-2",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/central_carousel_large_2x/public/2022-05/AMANPULO_LIFESTYLEDJI_0208-2.webp?itok=eA9n23XD",
+      "sourceAlt": "Aerial view of a solitary figure on a pristine white sand beach with turquoise waters at Amanpulo.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Pamalican · plage de sable blanc vue du ciel",
+      "enCaption": "Pamalican · aerial white-sand beach",
+      "localPath": "/images/travel/pamalican-island-premium/destination/scene-2.webp",
+      "sha256": "75c82a77459ec7a4196cd1188b9e1982a600c9ff5978326d08e52c49dcf29262",
+      "bytes": 140694,
+      "originalSize": [
+        5359,
+        3305
+      ],
+      "outputSize": [
+        1650,
+        1018
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "place": "Pamalican Island / Amanpulo, Philippines"
+    },
+    {
+      "key": "scene-3",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/central_carousel_large_2x/public/2026-07/Amanpulo--Philippines---View.webp?itok=VQpaYEda",
+      "sourceAlt": "Tall palm tree rising above coastal vegetation at Amanpulo, Philippines at dusk.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Palmiers et littoral de l’île au soir",
+      "enCaption": "Pamalican palms near sunset",
+      "localPath": "/images/travel/pamalican-island-premium/destination/scene-3.webp",
+      "sha256": "08582d8e8f7ffe7915554ca11f3e173692355a45cce4401eb47d78023977a890",
+      "bytes": 39946,
+      "originalSize": [
+        900,
+        900
+      ],
+      "outputSize": [
+        900,
+        900
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "place": "Pamalican Island / Amanpulo, Philippines"
+    },
+    {
+      "key": "scene-4",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/central_carousel_large_2x/public/2026-06/Amanpulo--Philippines---Wellness--Aman-Spa-Aerial.webp?itok=KOh9HHHv",
+      "sourceAlt": "Aerial view of Aman Spa nestled amongst tropical vegetation at Amanpulo, Philippines, with turquoise waters visible beyond.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Aman Spa · pavillons entourés de jungle",
+      "enCaption": "Aman Spa within tropical greenery",
+      "localPath": "/images/travel/pamalican-island-premium/destination/scene-4.webp",
+      "sha256": "8fe67c61bd614768c5326e15bd6e8c1d9c4f773d3da6d89ce53d96ee3fd969e8",
+      "bytes": 179618,
+      "originalSize": [
+        900,
+        900
+      ],
+      "outputSize": [
+        900,
+        900
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "place": "Pamalican Island / Amanpulo, Philippines"
+    },
+    {
+      "key": "scene-5",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/central_carousel_large_2x/public/2025-04/amanpulo_philippines_-_famp_b_drone_43.tif_.webp?itok=jSLGf9Q2",
+      "sourceAlt": "Amanpulo's beachfront resort nestled between dense tropical forest and turquoise waters, viewed from above.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Rivage de Pamalican entre forêt et lagon",
+      "enCaption": "Amanpulo forest meets the island lagoon",
+      "localPath": "/images/travel/pamalican-island-premium/destination/scene-5.webp",
+      "sha256": "92fc1fab16ae5eb4249a7641867a90d521ef57998c32870923e0b590b0bfcae2",
+      "bytes": 208422,
+      "originalSize": [
+        4000,
+        2469
+      ],
+      "outputSize": [
+        1650,
+        1018
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "place": "Pamalican Island / Amanpulo, Philippines"
+    },
+    {
+      "key": "scene-6",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/central_carousel_large_2x/public/2023-10/amanpulo_philippines_-_experience_floating_kawayan_bar_aerial_4.webp?itok=98a9fbrF",
+      "sourceAlt": "Aerial view of the floating Kawayan Bar at Amanpulo, Philippines, with thatched roof structure on turquoise water.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Kawayan Bar · restaurant flottant et lagon",
+      "enCaption": "Kawayan floating bar in the lagoon",
+      "localPath": "/images/travel/pamalican-island-premium/destination/scene-6.webp",
+      "sha256": "b2a26bebd4cbd54f68b460ef301312c7ad55bc2a3cae42ced5c13feba2c2f26e",
+      "bytes": 236710,
+      "originalSize": [
+        1197,
+        1197
+      ],
+      "outputSize": [
+        1150,
+        1150
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "place": "Pamalican Island / Amanpulo, Philippines"
+    },
+    {
+      "key": "scene-7",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/central_carousel_large_2x/public/2021-03/Amanpulo-Gallery-19.webp?itok=qllPbMVJ",
+      "sourceAlt": "Rocky islet with turquoise waters at Amanpulo, Philippines.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Petit îlot rocheux et eau cristalline",
+      "enCaption": "Rocky islet in Amanpulo waters",
+      "localPath": "/images/travel/pamalican-island-premium/destination/scene-7.webp",
+      "sha256": "fa23214cf61e8a5da95f0edf143706a11cbaf2ea950353a447049fca327d3461",
+      "bytes": 209504,
+      "originalSize": [
+        1000,
+        1000
+      ],
+      "outputSize": [
+        1000,
+        1000
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "place": "Pamalican Island / Amanpulo, Philippines"
+    },
+    {
+      "key": "scene-8",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/central_carousel_large_2x/public/2024-11/amanpulo_philippines_experience_nature_walk.webp?itok=YRIjWV9t",
+      "sourceAlt": "A wooden pavilion structure surrounded by dense tropical forest with mountainous island coastline and turquoise waters visible beyond at Amanpulo.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Pavillon et paysage tropical de Pamalican",
+      "enCaption": "Island pavilion surrounded by nature",
+      "localPath": "/images/travel/pamalican-island-premium/destination/scene-8.webp",
+      "sha256": "5fbd46f9b570cab4be8ce77418f64bc40c23df11ce0e6a8a21d73808aa2f60a5",
+      "bytes": 323680,
+      "originalSize": [
+        1172,
+        1172
+      ],
+      "outputSize": [
+        1150,
+        1150
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "place": "Pamalican Island / Amanpulo, Philippines"
+    },
+    {
+      "key": "scene-9",
+      "sourcePage": "https://www.aman.com/resorts/amanpulo",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/central_carousel_extra_large_2x/public/2021-03/Amanpulo-Gallery-52.webp?itok=4JICm22c",
+      "sourceAlt": "Surfer in wetsuit carrying white board on Amanpulo beach at dawn.",
+      "credit": "Amanpulo · original Aman luxury-resort publisher; photographer not individually identified",
+      "license": "Operator-attested photo-use permission, separate individual photographer-rights audit pending",
+      "licenseUrl": "https://www.aman.com/resorts/amanpulo",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Pending manual photo QA and original photographer permission",
+      "frCaption": "Amanpulo · promenade de plage et activité nautique",
+      "enCaption": "Amanpulo beach with a surfer",
+      "localPath": "/images/travel/pamalican-island-premium/destination/scene-9.webp",
+      "sha256": "696f307f5bf1561806eec37f972eb6fcfe2cf43ddc4e8cd3b1bce8efb1c2e48d",
+      "bytes": 34522,
+      "originalSize": [
+        1080,
+        1421
+      ],
+      "outputSize": [
+        874,
+        1150
+      ],
+      "imageTransformation": "Aman official publisher responsive high-res source converted to local WebP preserving aspect",
+      "place": "Pamalican Island / Amanpulo, Philippines"
+    }
+  ],
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "publicationBlockedReason": "Official publisher images downloaded but final visual review and original-photographer licensing still needed",
+  "photoRightsBasis": "Original Aman website; site-operator image use attested for private Preview only"
+}
