@@ -50,3 +50,5 @@ jobs:
             done
             exit 1
           fi
+
+# Trigger one GitHub-only media-collection workflow without touching Vercel production.
