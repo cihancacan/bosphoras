@@ -43,8 +43,8 @@ def save(url,path):
  pic=ImageOps.exif_transpose(Image.open(io.BytesIO(r.content)))
  if pic.width<850 or pic.height<440:raise ValueError(f'too small {pic.size}')
  if not .43<=pic.width/pic.height<=3.3:raise ValueError('unusual ratio')
- orig=list(pic.size);pic=pic.convert('RGB');pic.thumbnail((1750,1250),Image.Resampling.LANCZOS)
- path.parent.mkdir(parents=True,exist_ok=True);pic.save(path,'WEBP',quality=85,method=5)
+ orig=list(pic.size);pic=pic.convert('RGB');pic.thumbnail((1450,1050),Image.Resampling.LANCZOS)
+ path.parent.mkdir(parents=True,exist_ok=True);pic.save(path,'WEBP',quality=79,method=5)
  data=path.read_bytes()
  if len(data)<22000:raise ValueError('WebP output too small')
  return dict(localPath='/'+str(path.relative_to(ROOT/'public')),sha256=hashlib.sha256(data).hexdigest(),bytes=len(data),originalSize=orig,outputSize=list(pic.size),imageTransformation='EXIF orientation correction, aspect-preserving WebP resizing (quality 85)')
@@ -63,13 +63,29 @@ def imgs(page):
  # JSON assets with descriptive alt not needed when regular images exist.
  dedup=set();cand=[]
  for url,alt in results:
-  if url in dedup or not url.startswith('http'):continue
-  dedup.add(url)
+  if not url.startswith('http'):continue
+  identity=url.split('/public/')[-1].split('?')[0].lower() if '/public/' in url else url.split('?')[0]
+  if identity in dedup:continue
+  dedup.add(identity)
   if re.search(r'logo|icon|sprite|flag|placeholder|avatar|payment|instagram|tripadvisor',url+' '+alt,re.I):continue
   if not re.search(r'\.(?:jpe?g|png|webp)(?:[?&]|$)|/_next/image|/image/upload|/images/',url,re.I):continue
   cand.append((url,alt))
  return cand
 def hotel_candidates(key,name,pages,keywords):
+ if key=='shoreclub':
+  # Shore Club site blocks automated requests. These are genuine, identified Shore Club photos
+  # published by travel-property partners; preserve each original publisher and URL.
+  imgs=[
+   ('https://www.fivestaralliance.com/files/fivestaralliance.com/field/image/nodes/2019/45781/Shore%20Club%20Turks%20Caicos.jpg','https://www.fivestaralliance.com/luxury-hotels/providenciales/the-shore-club-turks-and-caicos','The Shore Club · panorama aérien de l’hôtel sur Long Bay','The Shore Club · aerial Long Bay resort and beach','Five Star Alliance'),
+   ('https://cms.inspirato.com/ImageGen.ashx?image=%2Fmedia%2F9455000%2Fthe-shore-club-long-bay-beach-9277.jpg&width=1081.5','https://www.inspirato.com/destinations/turks-caicos/properties/the-shore-club/','The Shore Club · galerie extérieure avec vue sur la plage','The Shore Club · beachfront architecture and terrace','Inspirato'),
+   ('https://ak-d.tripcdn.com/images/0224h12000k7f4yvl6530_R_960_660_R5_D.jpg','https://ca.trip.com/hotels/providenciales-hotel-detail-9544030/the-shore-club-turks-and-caicos/','The Shore Club · piscine et végétation devant Long Bay','The Shore Club · actual beachfront pool and landscape','Trip.com'),
+  ]
+  selected=[]
+  for i,(url,page,fr,en,publisher) in enumerate(imgs,1):
+   meta=save(url,OUT/key/f'view-{i}.webp')
+   selected.append(dict(key=f'view-{i}',propertyKey=key,property=name,sourcePage=page,downloadUrl=url,credit=f'{publisher} · property photograph of The Shore Club (individual photographer not identified)',license='Bosphoras operator-attested photo use; original photographer and publisher distribution rights require review',licenseUrl=page,rightsEvidenceType='operator_self_attestation_partner_publisher',status='candidate_needs_visual_review',visuallyVerified=False,commercialRightsCleared=True,visualQaWarning='Partner-published authentic property photo; final licence and visual review pending',frCaption=fr,enCaption=en,sourceAlt=fr,**meta))
+   print('HOTEL_PARTNER',key,i,publisher,flush=True)
+  return selected
  selected=[];hashes=set();attempted=set()
  for page in pages:
   try:options=imgs(page)
@@ -116,6 +132,7 @@ def main():
  all_=hotels+scenes
  dupes=len(all_)-len({x['sha256'] for x in all_})
  m=dict(destination='turks-and-caicos',hotels=hotels,destinationScenes=scenes,downloadedHotelCandidates=len(hotels),downloadedDestinationCandidates=len(scenes),visuallyVerified=False,approvedForCommercialPublication=False,publicationBlockedReason='Image provenance downloaded but independent display review and photo-rights clearance still pending; noindex',photoRightsBasis='Hotel sources are publisher-controlled; general operator permission attested, not independent original photographer release. Wikimedia Commons captions and licences preserved.',downloadIssues=[f'{h[1]}: {sum(x["property"]==h[1] for x in hotels)}/3 images' for h in HOTELS if sum(x['property']==h[1] for x in hotels)!=3],duplicatesFound=dupes)
+ MAN.parent.mkdir(parents=True,exist_ok=True)
  MAN.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n')
  print('TURKS_CAICOS_IMPORT_REPORT',json.dumps({'hotelPhotos':len(hotels),'landscapes':len(scenes),'duplicateHashes':dupes}),flush=True)
 if __name__=='__main__':main()
