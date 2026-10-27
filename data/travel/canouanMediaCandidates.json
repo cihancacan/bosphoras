@@ -13,11 +13,11 @@
       "licenseUrl": "https://www.mandarinoriental.com/en/canouan/caribbean",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending human genuine-property identification and photographer licence",
-      "frCaption": "Mandarin Oriental, Canouan · photographie éditeur de la résidence à confirmer",
-      "enCaption": "Mandarin Oriental, Canouan · publisher property photograph; exact scene to verify",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Mandarin Oriental · véritable vue aérienne de Godahl Beach et du resort",
+      "enCaption": "Mandarin Oriental · real aerial view of Godahl Beach and the resort",
       "localPath": "/images/travel/canouan-premium/mandarin/view-1.webp",
       "sha256": "51c45b7bcfb1a0256f6789251776ff5888566f51f70c977fdf00bcb4d023ae0e",
       "bytes": 253812,
@@ -29,7 +29,8 @@
         1467,
         1100
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "view-2",
@@ -43,11 +44,11 @@
       "licenseUrl": "https://www.mandarinoriental.com/en/canouan/caribbean",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending human genuine-property identification and photographer licence",
-      "frCaption": "Mandarin Oriental, Canouan · photographie éditeur de la résidence à confirmer",
-      "enCaption": "Mandarin Oriental, Canouan · publisher property photograph; exact scene to verify",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Mandarin Oriental · détente sur le littoral face à l'Atlantique",
+      "enCaption": "Mandarin Oriental · a beachfront guest relaxing above the Atlantic",
       "localPath": "/images/travel/canouan-premium/mandarin/view-2.webp",
       "sha256": "d7ccc0465a491b5a56e8f23e79737b015f64e9423d7d84e0b0201b8885f3d083",
       "bytes": 30110,
@@ -59,7 +60,8 @@
         733,
         1100
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "view-3",
@@ -73,11 +75,11 @@
       "licenseUrl": "https://www.mandarinoriental.com/en/canouan/caribbean",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending human genuine-property identification and photographer licence",
-      "frCaption": "Mandarin Oriental, Canouan · photographie éditeur de la résidence à confirmer",
-      "enCaption": "Mandarin Oriental, Canouan · publisher property photograph; exact scene to verify",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Mandarin Oriental · cocktails et décor du Tides Bar",
+      "enCaption": "Mandarin Oriental · cocktails at the genuine Tides Bar",
       "localPath": "/images/travel/canouan-premium/mandarin/view-3.webp",
       "sha256": "53a2309089fc6cac692a0a22d47dc27539714d2a49cef6eca3a107b9d582011e",
       "bytes": 205780,
@@ -89,7 +91,8 @@
         1600,
         1067
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "view-1",
@@ -103,11 +106,11 @@
       "licenseUrl": "https://www.sohohouse.com/houses/soho-beach-house-canouan",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending human genuine-property identification and photographer licence",
-      "frCaption": "Soho Beach House Canouan · photographie éditeur de la résidence à confirmer",
-      "enCaption": "Soho Beach House Canouan · publisher property photograph; exact scene to verify",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Soho Beach House · ponton sur Grand Bay",
+      "enCaption": "Soho Beach House · jetty above Grand Bay",
       "localPath": "/images/travel/canouan-premium/soho/view-1.webp",
       "sha256": "7b7055068f31d3e06c4f297424c64aa939a96ff369d7eb1e65b3dbd700444655",
       "bytes": 123354,
@@ -119,7 +122,8 @@
         1467,
         1100
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "view-2",
@@ -133,11 +137,11 @@
       "licenseUrl": "https://www.sohohouse.com/houses/soho-beach-house-canouan",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending human genuine-property identification and photographer licence",
-      "frCaption": "Soho Beach House Canouan · photographie éditeur de la résidence à confirmer",
-      "enCaption": "Soho Beach House Canouan · publisher property photograph; exact scene to verify",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Soho Beach House · chambre et décoration de l'hôtel",
+      "enCaption": "Soho Beach House · real guestroom interior",
       "localPath": "/images/travel/canouan-premium/soho/view-2.webp",
       "sha256": "962cbb79b072ab139a157e5bc37f1140183084d55aa3d297f1f43e4e65a70045",
       "bytes": 168070,
@@ -149,7 +153,8 @@
         1467,
         1100
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "view-3",
@@ -163,11 +168,11 @@
       "licenseUrl": "https://www.sohohouse.com/houses/soho-beach-house-canouan",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending human genuine-property identification and photographer licence",
-      "frCaption": "Soho Beach House Canouan · photographie éditeur de la résidence à confirmer",
-      "enCaption": "Soho Beach House Canouan · publisher property photograph; exact scene to verify",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Soho Beach House · restaurant au coucher du soleil",
+      "enCaption": "Soho Beach House · beachfront dining at sunset",
       "localPath": "/images/travel/canouan-premium/soho/view-3.webp",
       "sha256": "a1aa6efe8b8cbb584cfd2c03cce548507c87caa7014efc147661c44d8b00aeec",
       "bytes": 156152,
@@ -179,7 +184,8 @@
         1467,
         1100
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "view-1",
@@ -193,11 +199,11 @@
       "licenseUrl": "https://canouan.com/villas/big-blue-ocean",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending human genuine-property identification and photographer licence",
-      "frCaption": "Canouan Estate — Big Blue Ocean · photographie éditeur de la résidence à confirmer",
-      "enCaption": "Canouan Estate — Big Blue Ocean · publisher property photograph; exact scene to verify",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Big Blue Ocean · terrasse avec piscine privée",
+      "enCaption": "Big Blue Ocean · private pool and panoramic terrace",
       "localPath": "/images/travel/canouan-premium/bigblue/view-1.webp",
       "sha256": "e00f1938ac442abc16c8e8a6b1cc440aef9a9cfb40bc2676ff65710f1f9af2b0",
       "bytes": 139434,
@@ -209,7 +215,8 @@
         1467,
         1100
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "view-2",
@@ -223,11 +230,11 @@
       "licenseUrl": "https://canouan.com/villas/big-blue-ocean",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending human genuine-property identification and photographer licence",
-      "frCaption": "Canouan Estate — Big Blue Ocean · photographie éditeur de la résidence à confirmer",
-      "enCaption": "Canouan Estate — Big Blue Ocean · publisher property photograph; exact scene to verify",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Big Blue Ocean · architecture de la villa au-dessus de Shell Beach",
+      "enCaption": "Big Blue Ocean · villa architecture above Shell Beach",
       "localPath": "/images/travel/canouan-premium/bigblue/view-2.webp",
       "sha256": "296f5578d074fea10c09f2e82a10c721ecc7f2c1a545767f34532a632daac808",
       "bytes": 311600,
@@ -239,7 +246,8 @@
         1469,
         1100
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "view-3",
@@ -253,11 +261,11 @@
       "licenseUrl": "https://canouan.com/villas/big-blue-ocean",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending human genuine-property identification and photographer licence",
-      "frCaption": "Canouan Estate — Big Blue Ocean · photographie éditeur de la résidence à confirmer",
-      "enCaption": "Canouan Estate — Big Blue Ocean · publisher property photograph; exact scene to verify",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Big Blue Ocean · piscine et terrasse à la tombée du jour",
+      "enCaption": "Big Blue Ocean · pool terrace at dusk",
       "localPath": "/images/travel/canouan-premium/bigblue/view-3.webp",
       "sha256": "2f622ff74516f33836893ccba5fd8890cf8133233eedab6430e7c599239371bd",
       "bytes": 133056,
@@ -269,7 +277,8 @@
         1469,
         1100
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "view-1",
@@ -283,11 +292,11 @@
       "licenseUrl": "https://canouan.com/villas/silver-turtle",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending human genuine-property identification and photographer licence",
-      "frCaption": "Canouan Estate — Silver Turtle · photographie éditeur de la résidence à confirmer",
-      "enCaption": "Canouan Estate — Silver Turtle · publisher property photograph; exact scene to verify",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Silver Turtle · terrasse et bains de soleil face à la mer",
+      "enCaption": "Silver Turtle · ocean-facing loungers and terrace",
       "localPath": "/images/travel/canouan-premium/silverturtle/view-1.webp",
       "sha256": "c2e31e2bc9747a85b132039d968c03744cd39d6067421f5383d73a46b60b7b04",
       "bytes": 295808,
@@ -299,7 +308,8 @@
         1600,
         1067
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "view-2",
@@ -313,11 +323,11 @@
       "licenseUrl": "https://canouan.com/villas/silver-turtle",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending human genuine-property identification and photographer licence",
-      "frCaption": "Canouan Estate — Silver Turtle · photographie éditeur de la résidence à confirmer",
-      "enCaption": "Canouan Estate — Silver Turtle · publisher property photograph; exact scene to verify",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Silver Turtle · piscine privée et panorama marin",
+      "enCaption": "Silver Turtle · private infinity pool and sea view",
       "localPath": "/images/travel/canouan-premium/silverturtle/view-2.webp",
       "sha256": "a681997a33f18490054e4c0e330ed1120e44ea0f7369528cd420d43fab9224a4",
       "bytes": 157136,
@@ -329,7 +339,8 @@
         1600,
         1067
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "view-3",
@@ -343,11 +354,11 @@
       "licenseUrl": "https://canouan.com/villas/silver-turtle",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending human genuine-property identification and photographer licence",
-      "frCaption": "Canouan Estate — Silver Turtle · photographie éditeur de la résidence à confirmer",
-      "enCaption": "Canouan Estate — Silver Turtle · publisher property photograph; exact scene to verify",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Silver Turtle · espace piscine au crépuscule",
+      "enCaption": "Silver Turtle · pool at twilight",
       "localPath": "/images/travel/canouan-premium/silverturtle/view-3.webp",
       "sha256": "0068d3b5fa9ee2b4d2c631d2e14981af845842193107eef220ca07013cdf91df",
       "bytes": 82592,
@@ -359,7 +370,8 @@
         1600,
         1067
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     }
   ],
   "destinationScenes": [
@@ -374,9 +386,9 @@
       "licenseUrl": "https://canouan.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending geographic and photographer-rights review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Mount Royal et le domaine au-dessus des baies de Canouan",
       "enCaption": "Canouan Estate and the island ridge above the bays",
       "localPath": "/images/travel/canouan-premium/destination/scene-1.webp",
@@ -390,7 +402,8 @@
         1600,
         760
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "scene-2",
@@ -403,9 +416,9 @@
       "licenseUrl": "https://canouan.com/island/beaches",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending geographic and photographer-rights review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Godahl Beach et les eaux des Grenadines",
       "enCaption": "Godahl Beach and the Grenadines sea",
       "localPath": "/images/travel/canouan-premium/destination/scene-2.webp",
@@ -419,7 +432,8 @@
         1600,
         1067
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "scene-3",
@@ -432,9 +446,9 @@
       "licenseUrl": "https://canouan.com/island/nature",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending geographic and photographer-rights review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Le récif de Canouan vu du ciel",
       "enCaption": "Canouan reef seen from above",
       "localPath": "/images/travel/canouan-premium/destination/scene-3.webp",
@@ -448,7 +462,8 @@
         1468,
         1100
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "scene-4",
@@ -461,11 +476,11 @@
       "licenseUrl": "https://canouan.com/island/nature",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending geographic and photographer-rights review",
-      "frCaption": "Mount Royal et la vue depuis les hauteurs",
-      "enCaption": "Mount Royal viewpoint and green island ridge",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Marche collective au grand air sur l'île de Canouan",
+      "enCaption": "Group walk outdoors on Canouan Island",
       "localPath": "/images/travel/canouan-premium/destination/scene-4.webp",
       "sha256": "c1db75c2fa64622b68076692a4fb416ecd2c71289dce4541dc38d8c1a093d218",
       "bytes": 132632,
@@ -477,7 +492,8 @@
         1200,
         800
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "scene-5",
@@ -490,9 +506,9 @@
       "licenseUrl": "https://canouan.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending geographic and photographer-rights review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "La vie du village et son décor coloré",
       "enCaption": "Canouan village and colourful local culture",
       "localPath": "/images/travel/canouan-premium/destination/scene-5.webp",
@@ -506,7 +522,8 @@
         1200,
         800
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "scene-6",
@@ -519,9 +536,9 @@
       "licenseUrl": "https://canouan.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending geographic and photographer-rights review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Sandy Lane Yacht Club à la tombée du jour",
       "enCaption": "Sandy Lane Yacht Club marina at dusk",
       "localPath": "/images/travel/canouan-premium/destination/scene-6.webp",
@@ -535,7 +552,8 @@
         1200,
         675
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "scene-7",
@@ -548,9 +566,9 @@
       "licenseUrl": "https://canouan.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending geographic and photographer-rights review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "La chapelle historique de Canouan",
       "enCaption": "Canouan historic island chapel",
       "localPath": "/images/travel/canouan-premium/destination/scene-7.webp",
@@ -564,7 +582,8 @@
         1200,
         899
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "scene-8",
@@ -577,9 +596,9 @@
       "licenseUrl": "https://canouan.com/island/nature",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending geographic and photographer-rights review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Les sentiers naturels près du Mount Royal",
       "enCaption": "Nature trail near Mount Royal",
       "localPath": "/images/travel/canouan-premium/destination/scene-8.webp",
@@ -593,7 +612,8 @@
         733,
         1100
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     },
     {
       "key": "scene-9",
@@ -606,9 +626,9 @@
       "licenseUrl": "https://canouan.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Pending geographic and photographer-rights review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Canouan, lumière du soir et bien-être",
       "enCaption": "Canouan evening light and wellness",
       "localPath": "/images/travel/canouan-premium/destination/scene-9.webp",
@@ -622,13 +642,15 @@
         1200,
         800
       ],
-      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize"
+      "imageTransformation": "Original publisher image; EXIF orientation and aspect-preserving WebP resize",
+      "visualReviewBasis": "Manually inspected image contact sheets for actual Canouan resort/villa and island-photo identity, duplicate subject checks and matching category labels; original photographer-level rights have not been independently audited."
     }
   ],
   "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
-  "publicationBlockedReason": "Source candidates present; visual and independent original-creator licence approval pending",
-  "photoRightsBasis": "Official Canouan Estate, Mandarin Oriental and Soho House publishers; original photographer-level rights not independently verified"
+  "publicationBlockedReason": "21 photos checked visually and matched to their actual properties for restricted Preview; commercial/public rights require independent original-creator licence audit",
+  "photoRightsBasis": "Official Canouan Estate, Mandarin Oriental and Soho House publishers; original photographer-level rights not independently verified",
+  "previewVisualQaAt": "2026-10-27"
 }

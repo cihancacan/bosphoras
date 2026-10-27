@@ -30,6 +30,7 @@ jobs:
       - run: node scripts/check-travel-catalogue.mjs
       - run: node scripts/check-turks-and-caicos-draft.mjs
       - run: node scripts/check-turks-and-caicos-final.mjs
+      - run: node scripts/check-canouan-final.mjs
       - run: node scripts/check-next-alpine-drafts.mjs
       - run: node scripts/check-third-alpine-drafts.mjs
       - run: node scripts/check-mountain-ten-batch-drafts.mjs
