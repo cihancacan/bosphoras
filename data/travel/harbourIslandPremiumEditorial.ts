@@ -1,0 +1,13 @@
+import type {BodrumHotelEditorial,BodrumPremiumPhoto} from './bodrumPremiumEditorial';
+import {harbourIslandDraftGuide} from './harbourIslandDraftGuide';
+import {approvedHarbourIslandPhoto} from './harbourIslandGuide';
+import media from './harbourIslandMediaCandidates.json';
+type Candidate={key:string;propertyKey?:string;status:string;localPath?:string;sourcePage?:string;credit?:string;frCaption?:string;enCaption?:string;visuallyVerified?:boolean;commercialRightsCleared?:boolean;visualQaWarning?:string};
+const photo=(x:Candidate):BodrumPremiumPhoto=>({src:x.localPath!,fr:x.frCaption!,en:x.enCaption!,sourcePage:x.sourcePage!,credit:x.credit||'Original photographer'});
+const keys=["dunmore","coral","pinksands","landing"];
+export const harbourIslandHotelEditorial:Record<string,BodrumHotelEditorial>=Object.fromEntries(harbourIslandDraftGuide.hotels.map((h,i)=>[h.name,{
+ photos:(media.hotels as Candidate[]).filter(x=>x.propertyKey===keys[i]&&approvedHarbourIslandPhoto(x)).map(photo),
+ credit:h.name+' · sourced property photos',sourcePage:h.officialUrl,frBest:h.frWatch,enBest:h.enWatch,frStory:h.fr+' '+h.frWatch,enStory:h.en+' '+h.enWatch}]));
+const scenes=['scene-1','scene-2','scene-4','scene-6','scene-7'];
+export const harbourIslandAreaVisuals:(BodrumPremiumPhoto|null)[]=scenes.map(k=>{const x=(media.destinationScenes as Candidate[]).find(x=>x.key===k);return x&&approvedHarbourIslandPhoto(x)?photo(x):null;});
+export const confirmedHarbourIslandAssets=new Set(([...media.hotels,...media.destinationScenes] as Candidate[]).filter(approvedHarbourIslandPhoto).map(x=>x.localPath!));
