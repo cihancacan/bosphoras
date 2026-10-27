@@ -24,3 +24,12 @@
 - Four correctly differentiated real resorts, five geographic areas, 14 FR/EN FAQs. Private gated peninsula differs from public coastline.
 - Publisher photos are for restricted nonindexed owner Preview only, no independently verified commercial permission; `approvedForCommercialPublication=false` remains.
 - UI article, FAQ, gallery and schema integrations are deliberately nonindexed; catalogue remains 88.
+
+## Punta Mita visual and technical quality gate — 28 Oct 2026
+- 21 unique locally stored images; four authentic resorts with 3 photographs each and nine Nayarit coastal scenes, inspected on the photo contact sheet (GitHub Actions 40586367151).
+- Three landscape images with Wikimedia Commons author/licence and six publisher-sourced scenic images restricted to owner Preview.
+- The hotel and non-Commons publisher photographs are not independently licensed for public-commercial reproduction; publication and indexation blocked.
+- Five sectors correctly distinguish gated Punta Mita from village and outside resorts; exact bedroom/private pool/golf policies not fabricated.
+- 14 French/English FAQs, guide galleries, structured data and all 88 original destinations preserved.
+- Final TypeScript and regression GitHub Actions passed (run 40586926100).
+- User requested individual destination Preview; marker `[travel-batch-ready]` is deliberately used only now to satisfy existing Vercel ignored-build gate. No production release.
