@@ -1,247 +1,625 @@
 {
   "destination": "port-andratx",
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
       "propertyKey": "monport",
       "property": "Mon Port Hotel & Spa",
       "sourcePage": "https://www.hotelmonport.com/en",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting source photo collection and manual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.hotelmonport.com/intranet/images/thumbs/tn_1736_1123_12_08_2514_44_2814_12_217_50_565b___copia___copia__1_.jpg",
+      "credit": "Mon Port Hotel & Spa · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.hotelmonport.com/en",
+      "frCaption": "Mon Port · jardins et architecture traditionnelle",
+      "enCaption": "Mon Port · traditional hotel gardens and architecture",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/port-andratx-premium/monport/view-1.webp",
+      "sha256": "87cbb55118ef82c6e090d44ab600e5e49b2b5de94ca497e438deddfd53e9c0e1",
+      "bytes": 482326,
+      "originalSize": [
+        1736,
+        1123
+      ],
+      "outputSize": [
+        1736,
+        1123
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-2",
       "propertyKey": "monport",
       "property": "Mon Port Hotel & Spa",
       "sourcePage": "https://www.hotelmonport.com/en",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting source photo collection and manual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.hotelmonport.com/intranet/images/thumbs/tn_1736_1123_12_08_2514_49_1902_03_1812_31_53spa__1_.jpg",
+      "credit": "Mon Port Hotel & Spa · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.hotelmonport.com/en",
+      "frCaption": "Mon Port · installations de spa de l'hôtel",
+      "enCaption": "Mon Port · official hotel spa facilities",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/port-andratx-premium/monport/view-2.webp",
+      "sha256": "d4a8a2d5e04f1638dfcaf2265f7bb0f153f5995a4f91843302b6745ac17c27a2",
+      "bytes": 103708,
+      "originalSize": [
+        1280,
+        853
+      ],
+      "outputSize": [
+        1280,
+        853
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-3",
       "propertyKey": "monport",
       "property": "Mon Port Hotel & Spa",
       "sourcePage": "https://www.hotelmonport.com/en",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting source photo collection and manual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.hotelmonport.com/intranet/images/thumbs/tn_1736_1123_12_08_2514_49_0213_12_2115_38_50MP7__1_.jpg",
+      "credit": "Mon Port Hotel & Spa · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.hotelmonport.com/en",
+      "frCaption": "Mon Port · espaces de l'établissement",
+      "enCaption": "Mon Port · hotel interior and shared spaces",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/port-andratx-premium/monport/view-3.webp",
+      "sha256": "21b22fb10108ba56725c68fa43976134fe0c38e72d359d9e04e95682650ef493",
+      "bytes": 159520,
+      "originalSize": [
+        1736,
+        1123
+      ],
+      "outputSize": [
+        1736,
+        1123
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-1",
       "propertyKey": "pergola",
       "property": "La Pérgola Aparthotel",
       "sourcePage": "https://www.hotelpergolamallorca.com/en",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting source photo collection and manual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.hotelpergolamallorca.com/images/thumbs/tn_1736_1123_21_03_187_36_56Apartamentos_LaPergola_226_copia.jpg",
+      "credit": "La Pérgola Aparthotel · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.hotelpergolamallorca.com/en",
+      "frCaption": "La Pérgola · espaces de l’aparthôtel près du port",
+      "enCaption": "La Pérgola · aparthotel setting near the harbour",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/port-andratx-premium/pergola/view-1.webp",
+      "sha256": "b8d24977819d0b36d03556164f4d48586ef9a761f8657e5b446f4b781a085a71",
+      "bytes": 200216,
+      "originalSize": [
+        1280,
+        641
+      ],
+      "outputSize": [
+        1280,
+        641
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-2",
       "propertyKey": "pergola",
       "property": "La Pérgola Aparthotel",
       "sourcePage": "https://www.hotelpergolamallorca.com/en",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting source photo collection and manual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.hotelpergolamallorca.com/images/thumbs/tn_1736_1123_21_03_187_37_03Apartamentos_LaPergola_212_copia.jpg",
+      "credit": "La Pérgola Aparthotel · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.hotelpergolamallorca.com/en",
+      "frCaption": "La Pérgola · piscine et jardin de la résidence",
+      "enCaption": "La Pérgola · aparthotel pool and gardens",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/port-andratx-premium/pergola/view-2.webp",
+      "sha256": "d13e35a72d531553fc45a208366bd15751f02bc59327f485cca0cd879fc742d6",
+      "bytes": 147220,
+      "originalSize": [
+        1400,
+        933
+      ],
+      "outputSize": [
+        1400,
+        933
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-3",
       "propertyKey": "pergola",
       "property": "La Pérgola Aparthotel",
       "sourcePage": "https://www.hotelpergolamallorca.com/en",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting source photo collection and manual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.hotelpergolamallorca.com/images/thumbs/tn_1736_1123_18_05_187_50_22ap1_1200.jpg",
+      "credit": "La Pérgola Aparthotel · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.hotelpergolamallorca.com/en",
+      "frCaption": "La Pérgola · hébergement de type appartement",
+      "enCaption": "La Pérgola · apartment accommodation on the official site",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/port-andratx-premium/pergola/view-3.webp",
+      "sha256": "c62fb0ea99b6a0841563dd742a48e3f284d516b0a0453deeefaf88ebde2a0a69",
+      "bytes": 54954,
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-1",
       "propertyKey": "zafiro",
       "property": "Zafiro Palace Andratx",
       "sourcePage": "https://www.zafirohotels.com/en/zafiro-palace-andratx/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting source photo collection and manual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.zafirohotels.com/data/webp/zafiropalaceandratx-oct21-ownersuite-12480374-26105f679fe85f3ddfa1833b3fd36232.webp",
+      "credit": "Zafiro Palace Andratx · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.zafirohotels.com/en/zafiro-palace-andratx/",
+      "frCaption": "Zafiro Palace · Owner Suite, catégorie distincte",
+      "enCaption": "Zafiro Palace · Owner Suite, a separate suite category",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/port-andratx-premium/zafiro/view-1.webp",
+      "sha256": "8493061ff3cbc8747623e0a9eb5fda5eb33cb5d4cf56764b7658839ac9add278",
+      "bytes": 43532,
+      "originalSize": [
+        800,
+        533
+      ],
+      "outputSize": [
+        800,
+        533
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-2",
       "propertyKey": "zafiro",
       "property": "Zafiro Palace Andratx",
       "sourcePage": "https://www.zafirohotels.com/en/zafiro-palace-andratx/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting source photo collection and manual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.zafirohotels.com/data/webp/zafiropalaceandratx-oct21-juniorsuite-penthouse-minipiscinaprivada-7205-15612812-e9187b7f19fc47b372f01047f225c2f1.webp",
+      "credit": "Zafiro Palace Andratx · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.zafirohotels.com/en/zafiro-palace-andratx/",
+      "frCaption": "Zafiro Palace · penthouse avec bassin privé",
+      "enCaption": "Zafiro Palace · penthouse suite with plunge pool",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/port-andratx-premium/zafiro/view-2.webp",
+      "sha256": "d70d0d3398a16038e8fbd6de6c70d3c0ccbbfcfc5929f592cc172b27a6252b51",
+      "bytes": 45704,
+      "originalSize": [
+        800,
+        510
+      ],
+      "outputSize": [
+        800,
+        510
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-3",
       "propertyKey": "zafiro",
       "property": "Zafiro Palace Andratx",
       "sourcePage": "https://www.zafirohotels.com/en/zafiro-palace-andratx/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting source photo collection and manual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.zafirohotels.com/data/webp/zafiropalaceandratx-oct21-juniorsuite-piscina-privada-7005-12830616-c232caa0d98b4aa8e89d914e043dfcf0.webp",
+      "credit": "Zafiro Palace Andratx · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.zafirohotels.com/en/zafiro-palace-andratx/",
+      "frCaption": "Zafiro Palace · suite avec piscine privative",
+      "enCaption": "Zafiro Palace · pool suite category on official site",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/port-andratx-premium/zafiro/view-3.webp",
+      "sha256": "7c25681ad346f8eb366e70f8a403a929bf4d3340a47ae4c9e3aa6e7cdaa8b85b",
+      "bytes": 57452,
+      "originalSize": [
+        800,
+        533
+      ],
+      "outputSize": [
+        800,
+        533
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-1",
       "propertyKey": "campdemar",
       "property": "THE CAMP DE MAR Hotel & Resort",
       "sourcePage": "https://www.hotel-campdemar.com/en/home",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting source photo collection and manual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://hotel-campdemar.com/assets/images/9/rooms-2cf18a6e.webp",
+      "credit": "THE CAMP DE MAR Hotel & Resort · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.hotel-campdemar.com/en/home",
+      "frCaption": "THE CAMP DE MAR · hébergement lumineux du resort",
+      "enCaption": "THE CAMP DE MAR · bright room on hotel official site",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/port-andratx-premium/campdemar/view-1.webp",
+      "sha256": "16199a29c4d1d06d2b2ca85a9f3d43d64cb91401bc5fc8ee0734fd7952101b24",
+      "bytes": 32070,
+      "originalSize": [
+        600,
+        400
+      ],
+      "outputSize": [
+        600,
+        400
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-2",
       "propertyKey": "campdemar",
       "property": "THE CAMP DE MAR Hotel & Resort",
       "sourcePage": "https://www.hotel-campdemar.com/en/home",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting source photo collection and manual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://hotel-campdemar.com/assets/images/9/mediterranea-81900390.webp",
+      "credit": "THE CAMP DE MAR Hotel & Resort · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.hotel-campdemar.com/en/home",
+      "frCaption": "THE CAMP DE MAR · espace de restauration méditerranéen",
+      "enCaption": "THE CAMP DE MAR · Mediterranean dining setting",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/port-andratx-premium/campdemar/view-2.webp",
+      "sha256": "6b3dac3a869d72cc7ab1cada33f33a9f260824dca22fedd93939c8fa6cda1d8f",
+      "bytes": 45348,
+      "originalSize": [
+        600,
+        400
+      ],
+      "outputSize": [
+        600,
+        400
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-3",
       "propertyKey": "campdemar",
       "property": "THE CAMP DE MAR Hotel & Resort",
       "sourcePage": "https://www.hotel-campdemar.com/en/home",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting source photo collection and manual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://hotel-campdemar.com/files/usr/pages/index/cms/bucht-mallorca.jpg",
+      "credit": "THE CAMP DE MAR Hotel & Resort · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.hotel-campdemar.com/en/home",
+      "frCaption": "THE CAMP DE MAR · la baie de Camp de Mar photographiée par l’hôtel",
+      "enCaption": "THE CAMP DE MAR · the bay of Camp de Mar photographed by the hotel",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/port-andratx-premium/campdemar/view-3.webp",
+      "sha256": "1e98abb61f816bb6778cb3478d5beaaf794b1cceae4730542725e9af7385643e",
+      "bytes": 250510,
+      "originalSize": [
+        1024,
+        1024
+      ],
+      "outputSize": [
+        1024,
+        1024
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     }
   ],
   "destinationScenes": [
     {
       "key": "scene-1",
       "place": "Andratx Mallorca.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting geographic and rights photo review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Andratx_Mallorca.jpg/1920px-Andratx_Mallorca.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Port d’Andratx · marina et yachts devant les collines",
+      "enCaption": "Port d’Andratx · yachts in the sheltered harbour",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Andratx_Mallorca.jpg",
+      "credit": "Liilia Moroz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/port-andratx-premium/destination/scene-1.webp",
+      "sha256": "ba5410c7a6629b5ff49646f3d5cfb64c93f0f9380eee245c6066969b885bf494",
+      "bytes": 372832,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-2",
       "place": "Port d'Andratx (Mallorca, Spain), Harbour -- 2009 -- 1540.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting geographic and rights photo review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Port_d%27Andratx_%28Mallorca%2C_Spain%29%2C_Harbour_--_2009_--_1540.jpg/1920px-Port_d%27Andratx_%28Mallorca%2C_Spain%29%2C_Harbour_--_2009_--_1540.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Port d’Andratx · vue du port naturel",
+      "enCaption": "Port d’Andratx · natural-harbour panorama",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Port_d%27Andratx_(Mallorca,_Spain),_Harbour_--_2009_--_1540.jpg",
+      "credit": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/port-andratx-premium/destination/scene-2.webp",
+      "sha256": "1db12669e5fc2c1fb08d8b4544957e7185e3fa1cea17fa0073d4f8c000b7027c",
+      "bytes": 540034,
+      "originalSize": [
+        1920,
+        1305
+      ],
+      "outputSize": [
+        1750,
+        1189
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-3",
       "place": "Embarcaciones Puerto-Andratx-Mallorca-rafax.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting geographic and rights photo review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Embarcaciones_Puerto-Andratx-Mallorca-rafax.jpg/1920px-Embarcaciones_Puerto-Andratx-Mallorca-rafax.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Port d’Andratx · embarcations sur les quais",
+      "enCaption": "Port d’Andratx · boats moored by the quays",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Embarcaciones_Puerto-Andratx-Mallorca-rafax.jpg",
+      "credit": "Rafax",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "localPath": "/images/travel/port-andratx-premium/destination/scene-3.webp",
+      "sha256": "c7e54d7924d9c664940dc08d7af18cd2ea12fd975a545765ca114997c2b251e3",
+      "bytes": 271020,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-4",
       "place": "Cala d'Egos ,Puerto de Andratx.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting geographic and rights photo review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Cala_d%27Egos_%2CPuerto_de_Andratx.jpg/1920px-Cala_d%27Egos_%2CPuerto_de_Andratx.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Cala d’Egos · crique sauvage près du port",
+      "enCaption": "Cala d’Egos · secluded cove near Port d’Andratx",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cala_d%27Egos_,Puerto_de_Andratx.jpg",
+      "credit": "Josefa Álvarez",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/port-andratx-premium/destination/scene-4.webp",
+      "sha256": "24a60f03b113947902a0d90c0094c57867aae658fac4b4ec3583aba481a19a59",
+      "bytes": 277570,
+      "originalSize": [
+        1920,
+        3419
+      ],
+      "outputSize": [
+        702,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-5",
       "place": "Andratx, Balearic Islands, Spain - panoramio - georama (6).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting geographic and rights photo review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Andratx%2C_Balearic_Islands%2C_Spain_-_panoramio_-_georama_%286%29.jpg/1920px-Andratx%2C_Balearic_Islands%2C_Spain_-_panoramio_-_georama_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Cala Llamp · criques et côte rocheuse",
+      "enCaption": "Cala Llamp · rocky shoreline and coves",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Andratx,_Balearic_Islands,_Spain_-_panoramio_-_georama_(6).jpg",
+      "credit": "georama",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "localPath": "/images/travel/port-andratx-premium/destination/scene-5.webp",
+      "sha256": "957d94ac76865ba8c972109ee7576009419bf42ff02d0355ad1def17842953d9",
+      "bytes": 614816,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-6",
       "place": "Camp de Mar Mallorca 2013.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting geographic and rights photo review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Camp_de_Mar_Mallorca_2013.jpg/1920px-Camp_de_Mar_Mallorca_2013.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Camp de Mar · plage et baie de sable",
+      "enCaption": "Camp de Mar · beach and sandy bay",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Camp_de_Mar_Mallorca_2013.jpg",
+      "credit": "Liilia Moroz",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/port-andratx-premium/destination/scene-6.webp",
+      "sha256": "7b0d74c3b86032031188841e7b81037c4d9230f1d0c189f3c0c6df08e3912f82",
+      "bytes": 381402,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-7",
       "place": "Mallorca - Dragonera.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting geographic and rights photo review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Mallorca_-_Dragonera.jpg/1920px-Mallorca_-_Dragonera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Sa Dragonera · île naturelle à l’ouest de Majorque",
+      "enCaption": "Sa Dragonera · protected island to Mallorca's west",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mallorca_-_Dragonera.jpg",
+      "credit": "Ingo Mehling",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "localPath": "/images/travel/port-andratx-premium/destination/scene-7.webp",
+      "sha256": "1cfccbb2d4677a91bca6acc6f9a5b3296359cd85f5b109715124d5af0f9f302f",
+      "bytes": 511510,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-8",
       "place": "Sant Elm Pantaleu.JPG",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting geographic and rights photo review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Sant_Elm_Pantaleu.JPG/1920px-Sant_Elm_Pantaleu.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Sant Elm · village côtier et îlot du Pantaleu",
+      "enCaption": "Sant Elm · seaside village and Pantaleu islet",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sant_Elm_Pantaleu.JPG",
+      "credit": "Kai Alpers( KaiHB )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "localPath": "/images/travel/port-andratx-premium/destination/scene-8.webp",
+      "sha256": "3db5e12f2256bc177a7e3994337fb6e413c7dcb999cb403c12adaec50903b981",
+      "bytes": 318578,
+      "originalSize": [
+        1920,
+        1176
+      ],
+      "outputSize": [
+        1750,
+        1072
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-9",
       "place": "Cala Egos 09.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting geographic and rights photo review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Cala_Egos_09.jpg/1920px-Cala_Egos_09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Cala d’Egos · pinède et relief rocheux",
+      "enCaption": "Cala d’Egos · pine-covered rocky landscape",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cala_Egos_09.jpg",
+      "credit": "Xxlstier",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/port-andratx-premium/destination/scene-9.webp",
+      "sha256": "5d39f0838adec49df3b53f23d899431aa8d3b9f5dd5bd28287a3ea5b1d524d28",
+      "bytes": 182180,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     }
   ],
-  "publicationBlockedReason": "21 genuine photograph files pending source validation; never index or deploy until photo and QA succeed",
-  "photoRightsBasis": "Operator confirms project-wide permission; individual photographer agreements not independently inspected; Commons licences must be retained."
+  "publicationBlockedReason": "Images committed and automatically checked; pending final human visual and authenticated private Preview QA, no live supplier stock.",
+  "photoRightsBasis": "Publisher photo rights operator-attested only; Commons photo licence/attribution recorded."
 }
