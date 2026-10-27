@@ -45,7 +45,7 @@ HOTELS=[
 SCENES=[
  (['beaches','accommodation','architecture'],r'(?:coastline[-_]careyes|costa[-_]alegre)',"La côte découpée de Costa Careyes vue du ciel","The dramatic Costa Careyes shoreline"),
  (['beaches'],r'(?:playa[-_]rosa|beach[-_]rosa)',"Playa Rosa et son rivage abrité","Playa Rosa and its coastal bay"),
- (['beaches','architecture'],r'(?:casitas[-_]de[-_]las[-_]flores|casitas[-_]de[-_]las[-_]flores)',"Casitas de las Flores et leurs façades colorées","The colourful Casitas de las Flores"),
+ (['accommodation','beaches','architecture'],r'(?:coastline[-_]careyes[-_]mexico[-_]properties[-_]casitas[-_]de[-_]las[-_]flores|casitas[-_]de[-_]las[-_]flores)',"Casitas de las Flores et leurs façades colorées","The colourful Casitas de las Flores"),
  (['beaches','wonders'],r'(?:careyitos|sol[-_]de[-_]oriente|sol[-_]de[-_]occidente)',"Careyitos : villas et petites criques du Pacifique","Careyitos: iconic villas and Pacific coves"),
  (['beaches','activities'],r'(?:teopa|turtle[-_]|tortugas)',"Playa Teopa : dunes, rivage naturel et sanctuaire","Playa Teopa: natural beach and conservation"),
  (['wonders'],r'(?:copa[-_]del[-_]sol|careyes[-_]wonders[-_]copa)',"Copa del Sol : sculpture monumentale dans le paysage","Copa del Sol: monumental landscape sculpture"),
@@ -123,8 +123,23 @@ def download(entry,key,folder,fr,en,extra):
   status='visually_awaiting_review',visuallyVerified=False,visualQaWarning='Photo contact sheet must be inspected',
   frCaption=fr,enCaption=en,originalFile=entry['file'],originalSize=dimensions,outputSize=list(im.size),
   sha256=hashlib.sha256(data).hexdigest(),bytes=len(data),**extra)
+PREFERRED_HOTEL={
+ 'sol':['00-4-sol-de-oriente-luxury-villa-careyes-mexico-0786.jpg','00-2-sol-de-oriente-careyes-mexico-pacific-coast-careyitos.jpg','d-sol-de-oriente-luxury-villa-careyes-mexico-7982-terrace-sunbeds.jpg'],
+ 'carioca':['00-1-careyes-mexico-properties-villas-casita-carioca-_c_karlacifuentes-5348.jpg','00-3-careyes-mexico-properties-villas-casita-carioca-drone-_c_karlacifuentes-0484.jpg','02-4-careyes-mexico-properties-villas-casita-carioca-terrace-lounge-ocean-view-4273.jpg'],
+ 'club':['00-1-careyes-mexico-properties-el-careyes-club-and-residences-general-0444.jpg','03-2-careyes-mexico-properties-el-careyes-club-and-residences-general-pools-0326.jpg','03-2-careyes-club-and-residences-general-lounge-pool-0365.jpg'],
+ 'bungalow':['g-4-careyes-mexico-bungalows-playa-rosa-0612.jpg','g-6-careyes-mexico-bungalows-playa-rosa-drone-view-0008.jpg','g-1-careyes-mexico-bungalows-playa-rosa-0576.jpg']
+}
+PREFERRED_SCENE={
+ 3:['00-coastline-careyes-mexico-properties-casitas-de-las-flores-0233.jpg'],
+ 5:['playa-teopa-careyes-mexico-0968.jpg','playa-teopa-careyes-mexico-0980.jpg'],
+ 6:['careyes-wonders-copa-del-sol-0924-edited-opt2.jpg','careyes-wonders-copa-del-sol-0037-opt2.jpg'],
+ 8:['careyes-coastal-tour-boat-trip-0109.jpg','careyes-coastal-tour-boat-trip-1710.jpg']
+}
+def rank(items,names):
+ lookup={n:i for i,n in enumerate(names)}
+ return sorted(items,key=lambda x:(lookup.get(x['file'],999),x['file'].endswith('-mobile.jpg'),x['file']))
 def choose(pool,pat,used,needed,label,frens,key,folder,strict=True):
- matches=[x for x in pool if re.search(pat,x['file'],re.I) and x['file'] not in used]
+ matches=rank([x for x in pool if re.search(pat,x['file'],re.I) and x['file'] not in used],PREFERRED_HOTEL.get(folder,[]))
  print('MATCHES',label,len(matches),[x['file'] for x in matches[:9]],flush=True)
  out=[]
  for item in matches:
@@ -167,7 +182,7 @@ def main():
   for p in pageset:
    for x in pages[p]:
     if x['file'] not in seen:pool.append(x);seen.add(x['file'])
-  matched=[x for x in pool if re.search(pattern,x['file'],re.I) and x['file'] not in used]
+  matched=rank([x for x in pool if re.search(pattern,x['file'],re.I) and x['file'] not in used],PREFERRED_SCENE.get(i,[]))
   print('SCENE',i,'MATCHES',len(matched),[x['file'] for x in matched[:12]],flush=True)
   accepted=None
   for x in matched:
