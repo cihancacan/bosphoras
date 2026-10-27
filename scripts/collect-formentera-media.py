@@ -59,6 +59,8 @@ def commons_file(title):
  credit=re.sub("<[^>]*>"," ",meta.get("Artist",{}).get("value","Wikimedia Commons contributor"))
  credit=re.sub(r"\s+"," ",credit).strip()[:260]
  licurl=meta.get("LicenseUrl",{}).get("value","") or info.get("descriptionurl","")
+ if licurl.startswith("http://"):licurl="https://"+licurl[len("http://"):]
+
  url=info.get("thumburl") or info["url"]
  return url,info["descriptionurl"],credit,licence,licurl,info
 def dhash(im):
