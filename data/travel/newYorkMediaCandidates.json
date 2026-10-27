@@ -2,7 +2,7 @@
   "destination": "new-york",
   "scope": "owner-only private Preview; do not index",
   "note": "Real operator-published hotel pictures; not proof of photo reuse licence nor property/room visual QA. Commons images carry CC attribution/share-alike as listed.",
-  "hotelCount": 9,
+  "hotelCount": 12,
   "cityCount": 9,
   "hotels": [
     {
@@ -14,14 +14,14 @@
         1394,
         1394
       ],
-      "bytes": 70824,
-      "sha256": "51ec3d729af9615dd3fddf0fa8b16dfcc7a09051892b11b460aef3adb300ad88",
+      "bytes": 89356,
+      "sha256": "1c52e65de6dec385613589ca7d5af7db03587d363fef65aa726d12d4932b5662",
       "key": "view-1",
       "propertyKey": "aman",
       "property": "Aman New York",
       "localPath": "/images/travel/new-york-premium/aman/view-1.webp",
       "sourcePage": "https://www.aman.com/hotels/aman-new-york/accommodation/rooms-suites",
-      "downloadUrl": "https://www.aman.com/sites/default/files/styles/listing_teaser_extra_large_2x/public/2025-12/Aman%20New%20York%2C%20USA%20-%20Accommodation%2C%20Three-Bedroom%20Home%2C%20Penthouse%20Square%20.webp?itok=VG7NWRec",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/listing_teaser_extra_large_2x/public/2023-08/aman_new_york_usa_-_three-bedroom_home.webp?itok=QFOoAefJ",
       "credit": "Aman New York — publisher-owned photography, creator licence unverified",
       "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
       "licenseUrl": "https://www.aman.com/hotels/aman-new-york/accommodation/rooms-suites",
@@ -43,14 +43,14 @@
         1394,
         1394
       ],
-      "bytes": 50498,
-      "sha256": "aa430e9d2914d4589025dcb3c3e6f53bbbddf6d5a472220f3c0c362c1e602596",
+      "bytes": 89082,
+      "sha256": "99d2a15cfd67b81b4fa1ec19992ab1b1454a739fe2197d842a979106f871c68e",
       "key": "view-2",
       "propertyKey": "aman",
       "property": "Aman New York",
       "localPath": "/images/travel/new-york-premium/aman/view-2.webp",
       "sourcePage": "https://www.aman.com/hotels/aman-new-york/accommodation/rooms-suites",
-      "downloadUrl": "https://www.aman.com/sites/default/files/styles/listing_teaser_extra_large_2x/public/2025-12/Aman%20New%20York%2C%20USA%20-%20Accommodation%2C%20Three-Bedroom%20Home%2C%20Penthouse%20-%20Office%20-%20Square.webp?itok=yOh3oD80",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/listing_teaser_extra_large_2x/public/2023-09/aman_new_york_usa_-_homes_three_bedroom_dining_area.webp?itok=F0Oq4L9z",
       "credit": "Aman New York — publisher-owned photography, creator licence unverified",
       "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
       "licenseUrl": "https://www.aman.com/hotels/aman-new-york/accommodation/rooms-suites",
@@ -72,14 +72,14 @@
         1394,
         1394
       ],
-      "bytes": 77020,
-      "sha256": "64744fcbc2e1a1c9cbfe24ed93b474b3e8c6913be47ef804cb2c58d72412d5de",
+      "bytes": 85260,
+      "sha256": "d535ae5fddca9850015e23257fa891921ec318564f071cd82ebb2642ddb495c8",
       "key": "view-3",
       "propertyKey": "aman",
       "property": "Aman New York",
       "localPath": "/images/travel/new-york-premium/aman/view-3.webp",
       "sourcePage": "https://www.aman.com/hotels/aman-new-york/accommodation/rooms-suites",
-      "downloadUrl": "https://www.aman.com/sites/default/files/styles/listing_teaser_extra_large_2x/public/2025-12/Aman%20New%20York%2C%20USA%20-%20Accommodation%2C%20Three-Bedroom%20Home%2C%20Penthouse%20-%20Living%20Area%20Wide%20-%20Square.webp?itok=dP4N3oLM",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/listing_teaser_extra_large_2x/public/2023-09/aman_new_york_usa_-_home_three-bedroom_living.webp?itok=VWkJfKZg",
       "credit": "Aman New York — publisher-owned photography, creator licence unverified",
       "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
       "licenseUrl": "https://www.aman.com/hotels/aman-new-york/accommodation/rooms-suites",
@@ -265,6 +265,93 @@
       "frCaption": "The Greenwich Hotel · photographie de la galerie officielle à confirmer visuellement",
       "enCaption": "The Greenwich Hotel · official property imagery pending individual visual review",
       "originalAlt": "Looking through a doorway at the front desk inside the Shibui Spa"
+    },
+    {
+      "originalSize": [
+        800,
+        450
+      ],
+      "outputSize": [
+        800,
+        450
+      ],
+      "bytes": 54572,
+      "sha256": "b2d006d5f1caf450fe295041c4d8ae3b7c0adaca9a7303ea38d281dd324afed2",
+      "key": "view-1",
+      "propertyKey": "lowell",
+      "property": "The Lowell",
+      "localPath": "/images/travel/new-york-premium/lowell/view-1.webp",
+      "sourcePage": "https://www.lowellhotel.com/gallery",
+      "downloadUrl": "https://static.arocdn.com/Sites/50/lowellhotel/uploads/images/PanelImages/General/Garden_SuiteWebsize.jpg",
+      "credit": "The Lowell official gallery",
+      "license": "Private editorial owner preview only; commercial rights not independently cleared",
+      "licenseUrl": "https://www.lowellhotel.com/gallery",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "visualQaWarning": "Commercial image reuse rights pending",
+      "frCaption": "The Lowell: salon de la Garden Suite",
+      "enCaption": "The Lowell: Garden Suite living room",
+      "originalAlt": "The Lowell: Garden Suite living room"
+    },
+    {
+      "originalSize": [
+        800,
+        450
+      ],
+      "outputSize": [
+        800,
+        450
+      ],
+      "bytes": 62546,
+      "sha256": "eeed72250ef7fe9fbeca20bbd272ea207a6c2b3414a7a8801cd19a2fd8ff8229",
+      "key": "view-2",
+      "propertyKey": "lowell",
+      "property": "The Lowell",
+      "localPath": "/images/travel/new-york-premium/lowell/view-2.webp",
+      "sourcePage": "https://www.lowellhotel.com/gallery",
+      "downloadUrl": "https://scdn.aro.ie/Sites/50/lowellhotel/uploads/images/PanelImages/General/Hollywood_Suite_Living_Room.jpg",
+      "credit": "The Lowell official gallery",
+      "license": "Private editorial owner preview only; commercial rights not independently cleared",
+      "licenseUrl": "https://www.lowellhotel.com/gallery",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "visualQaWarning": "Commercial image reuse rights pending",
+      "frCaption": "The Lowell: salon et cheminée de la Hollywood Suite",
+      "enCaption": "The Lowell: Hollywood Suite lounge and fireplace",
+      "originalAlt": "The Lowell: Hollywood Suite lounge and fireplace"
+    },
+    {
+      "originalSize": [
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "bytes": 244192,
+      "sha256": "544ad80ab0f1a8f5235063f03f18b1d3a6f7ea354e8c54087a4c4903e05716e5",
+      "key": "view-3",
+      "propertyKey": "lowell",
+      "property": "The Lowell",
+      "localPath": "/images/travel/new-york-premium/lowell/view-3.webp",
+      "sourcePage": "https://www.cntraveler.com/gallery/hotels-balcony-nyc",
+      "downloadUrl": "https://media.cntraveler.com/photos/5f611c8768f3712403129f1e/16%3A9/w_1280%2Cc_limit/the-lowell-terrace.jpg",
+      "credit": "Condé Nast Traveler / originating photographer not independently cleared",
+      "license": "Private editorial owner preview only; commercial rights not independently cleared",
+      "licenseUrl": "https://www.cntraveler.com/gallery/hotels-balcony-nyc",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "visualQaWarning": "Commercial image reuse rights pending",
+      "frCaption": "The Lowell : terrasse privée avec vue sur Manhattan",
+      "enCaption": "The Lowell: private terrace with Manhattan surroundings",
+      "originalAlt": "The Lowell: private terrace with Manhattan surroundings"
     }
   ],
   "destinationScenes": [
