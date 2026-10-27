@@ -60,6 +60,9 @@ def resolve(group,filename):
    for el in page(k).select('img'):
     u=el.get('data-src') or el.get('src') or ''
     if u.split('?')[0].rsplit('/',1)[-1]==filename:possible.append(u)
+ if not possible and group=='home':
+  meta=doc.select_one('meta[property="og:image"]')
+  if meta and meta.get('content','').split('?')[0].rsplit('/',1)[-1]==filename:possible.append(meta.get('content'))
  if not possible and group!='home':
   for el in page('home').select('img'):
    u=el.get('data-src') or el.get('src') or ''
