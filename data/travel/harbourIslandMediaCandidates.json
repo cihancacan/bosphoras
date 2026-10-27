@@ -1,247 +1,625 @@
 {
   "destination": "harbour-island",
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
       "propertyKey": "dunmore",
       "property": "The Dunmore",
       "sourcePage": "https://www.dunmorebeach.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source candidate not audited for commercial publication",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.dunmorebeach.com/wp-content/uploads/2025/11/Dunmore-Beach-Club-080-1536x1024.jpg",
+      "frCaption": "The Dunmore · architecture du Clubhouse sur la plage",
+      "enCaption": "The Dunmore · beachfront Clubhouse architecture",
+      "credit": "The Dunmore · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.dunmorebeach.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/harbour-island-premium/dunmore/view-1.webp",
+      "sha256": "91429b083c6582f2e81cd80688a6feb0ffc4990cb9f6c162095275c73b9614d4",
+      "bytes": 461430,
+      "originalSize": [
+        1536,
+        1024
+      ],
+      "outputSize": [
+        1536,
+        1024
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "dunmore",
       "property": "The Dunmore",
       "sourcePage": "https://www.dunmorebeach.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source candidate not audited for commercial publication",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.dunmorebeach.com/wp-content/uploads/2026/04/IMG_8366-1152x1536.jpg",
+      "frCaption": "The Dunmore · maison et espaces communs de la propriété",
+      "enCaption": "The Dunmore · property architecture and living spaces",
+      "credit": "The Dunmore · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.dunmorebeach.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/harbour-island-premium/dunmore/view-2.webp",
+      "sha256": "560fa98a2bf4de5b5603abea5d3fba8c1860c29ff62bd8220cf713e4786c4b61",
+      "bytes": 127438,
+      "originalSize": [
+        1152,
+        1536
+      ],
+      "outputSize": [
+        937,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "dunmore",
       "property": "The Dunmore",
       "sourcePage": "https://www.dunmorebeach.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source candidate not audited for commercial publication",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.dunmorebeach.com/wp-content/uploads/2026/04/A266297A-8743-4F00-9220-25149B5B8DCD-1152x1536.jpg",
+      "frCaption": "The Dunmore · intérieur au caractère rétro-chic",
+      "enCaption": "The Dunmore · vintage-inspired hotel interior",
+      "credit": "The Dunmore · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.dunmorebeach.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/harbour-island-premium/dunmore/view-3.webp",
+      "sha256": "4d2114083970087e15a3263303549b9f32b3ce268bb9050553f360bb98d5de35",
+      "bytes": 146948,
+      "originalSize": [
+        1152,
+        1536
+      ],
+      "outputSize": [
+        937,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "coral",
       "property": "Coral Sands Inn & Cottages",
       "sourcePage": "https://www.coralsands.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source candidate not audited for commercial publication",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://coralsandsapi.kinsta.cloud/wp-content/uploads/2026/03/entry_dec_25.jpg",
+      "frCaption": "Coral Sands · entrée et jardin de l'établissement",
+      "enCaption": "Coral Sands · hotel entrance and garden",
+      "credit": "Coral Sands Inn & Cottages · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.coralsands.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/harbour-island-premium/coral/view-1.webp",
+      "sha256": "1d04613087ab336e345e5ba1c00677aa9d4fb325dee499d79d6b439913201fbf",
+      "bytes": 343958,
+      "originalSize": [
+        1520,
+        1088
+      ],
+      "outputSize": [
+        1520,
+        1088
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "coral",
       "property": "Coral Sands Inn & Cottages",
       "sourcePage": "https://www.coralsands.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source candidate not audited for commercial publication",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://coralsandsapi.kinsta.cloud/wp-content/uploads/2026/03/pool_dec_25.jpg",
+      "frCaption": "Coral Sands · piscine bordée de palmiers",
+      "enCaption": "Coral Sands · palm-framed swimming pool",
+      "credit": "Coral Sands Inn & Cottages · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.coralsands.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/harbour-island-premium/coral/view-2.webp",
+      "sha256": "2f9e395178ca2ebc7f0d19928645fa0e77639d2175de07aee3505e326df5180f",
+      "bytes": 291198,
+      "originalSize": [
+        960,
+        1200
+      ],
+      "outputSize": [
+        960,
+        1200
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "coral",
       "property": "Coral Sands Inn & Cottages",
       "sourcePage": "https://www.coralsands.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source candidate not audited for commercial publication",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://coralsandsapi.kinsta.cloud/wp-content/uploads/2026/03/sea_suite_deluxe_home.jpg",
+      "frCaption": "Coral Sands · suite de catégorie Sea Suite, vue spécifique",
+      "enCaption": "Coral Sands · Sea Suite guestroom category",
+      "credit": "Coral Sands Inn & Cottages · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.coralsands.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/harbour-island-premium/coral/view-3.webp",
+      "sha256": "81d77411c508f72292a1cae9312c6f44ef426b84de7d926a389677d906b7c33d",
+      "bytes": 444938,
+      "originalSize": [
+        1696,
+        1088
+      ],
+      "outputSize": [
+        1696,
+        1088
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "pinksands",
       "property": "Pink Sands Resort",
       "sourcePage": "https://pinksandsresort.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source candidate not audited for commercial publication",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://pinksandsresort.com/wp-content/themes/pinksands/assets/images/hero_home.jpg",
+      "frCaption": "Pink Sands Resort · littoral et jardin du resort",
+      "enCaption": "Pink Sands Resort · beach resort and lush garden",
+      "credit": "Pink Sands Resort · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://pinksandsresort.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/harbour-island-premium/pinksands/view-1.webp",
+      "sha256": "f77f20e3513c8a9414b6105fa0f31202a7a69f86cdef916afe19450a6e20e253",
+      "bytes": 121048,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1750,
+        984
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "pinksands",
       "property": "Pink Sands Resort",
       "sourcePage": "https://pinksandsresort.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source candidate not audited for commercial publication",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://pinksandsresort.com/wp-content/themes/pinksands/assets/images/stay-img1-new.jpg",
+      "frCaption": "Pink Sands Resort · cottage de la collection du resort",
+      "enCaption": "Pink Sands Resort · individual cottage accommodation",
+      "credit": "Pink Sands Resort · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://pinksandsresort.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/harbour-island-premium/pinksands/view-2.webp",
+      "sha256": "840e105b38236366569c97113ed88e7976ec3dc8215c9d8beedc9e84f06cabc4",
+      "bytes": 169204,
+      "originalSize": [
+        1071,
+        745
+      ],
+      "outputSize": [
+        1071,
+        745
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "pinksands",
       "property": "Pink Sands Resort",
       "sourcePage": "https://pinksandsresort.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source candidate not audited for commercial publication",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://pinksandsresort.com/wp-content/themes/pinksands/assets/images/stay-img2-new.jpg",
+      "frCaption": "Pink Sands Resort · seconde catégorie d'hébergement",
+      "enCaption": "Pink Sands Resort · different accommodation category",
+      "credit": "Pink Sands Resort · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://pinksandsresort.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/harbour-island-premium/pinksands/view-3.webp",
+      "sha256": "34408897215d5b18a737fbb7ac55b32f5b155b0a725cf25094fc0f968f9ddd27",
+      "bytes": 196626,
+      "originalSize": [
+        1071,
+        745
+      ],
+      "outputSize": [
+        1071,
+        745
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "landing",
       "property": "The Landing",
       "sourcePage": "https://harbourislandlanding.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source candidate not audited for commercial publication",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://harbourislandlanding.com/wp-content/uploads/2016/03/MG_8440.jpg",
+      "frCaption": "The Landing · demeure historique et jardin de Dunmore Town",
+      "enCaption": "The Landing · historic guesthouse and garden",
+      "credit": "The Landing · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://harbourislandlanding.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/harbour-island-premium/landing/view-1.webp",
+      "sha256": "9c1838a9ab52f1d4b8ee2338844c460fd4e786260661e13cd5f0c2e9dc7abbb8",
+      "bytes": 92404,
+      "originalSize": [
+        5076,
+        2891
+      ],
+      "outputSize": [
+        1750,
+        997
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "landing",
       "property": "The Landing",
       "sourcePage": "https://harbourislandlanding.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source candidate not audited for commercial publication",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://harbourislandlanding.com/wp-content/uploads/2016/04/IMG_0894-1.jpg",
+      "frCaption": "The Landing · chambre coloniale à baldaquin, catégorie précise",
+      "enCaption": "The Landing · colonial four-poster room category",
+      "credit": "The Landing · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://harbourislandlanding.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/harbour-island-premium/landing/view-2.webp",
+      "sha256": "1df9c15daeba6984bb8aa3b876e630a5c688554054f20712518f593e78526e4c",
+      "bytes": 77508,
+      "originalSize": [
+        3888,
+        2592
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "landing",
       "property": "The Landing",
       "sourcePage": "https://harbourislandlanding.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Source candidate not audited for commercial publication",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://harbourislandlanding.com/wp-content/uploads/2016/04/IMG_0887-1.jpg",
+      "frCaption": "The Landing · chambre aux décors inspirés par India Hicks",
+      "enCaption": "The Landing · India Hicks-inspired guestroom",
+      "credit": "The Landing · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://harbourislandlanding.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/harbour-island-premium/landing/view-3.webp",
+      "sha256": "3cc1e07af354d7c9ec1b5865c48518af81b07ec95c936fdcbf8ae156d6862d45",
+      "bytes": 110488,
+      "originalSize": [
+        3849,
+        2392
+      ],
+      "outputSize": [
+        1750,
+        1088
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     }
   ],
   "destinationScenes": [
     {
       "key": "scene-1",
       "place": "Pink Sands Beach, Harbour Island, Bahamas (5279465868).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Archive/geographic provenance and licence require verification",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Pink Sands Beach · sable naturellement rosé et Atlantique",
+      "enCaption": "Pink Sands Beach · blush-tinted Atlantic sand",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Pink_Sands_Beach%2C_Harbour_Island%2C_Bahamas_%285279465868%29.jpg/1920px-Pink_Sands_Beach%2C_Harbour_Island%2C_Bahamas_%285279465868%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pink_Sands_Beach,_Harbour_Island,_Bahamas_(5279465868).jpg",
+      "credit": "Mike's Birds from Riverside, CA, US",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "localPath": "/images/travel/harbour-island-premium/destination/scene-1.webp",
+      "sha256": "56702a7c84c26dc8c97efe0b0e5cb4afafec7b51a90db171e84d7447cb24c67f",
+      "bytes": 96132,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-2",
       "place": "Bahamas 1989 (336) Eleuthera Dunmore Town, Harbour Island (24237453931).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Archive/geographic provenance and licence require verification",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Dunmore Town · architecture et rue historique (archive de 1989)",
+      "enCaption": "Dunmore Town · period streetscape (1989 archival photo)",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Bahamas_1989_%28336%29_Eleuthera_Dunmore_Town%2C_Harbour_Island_%2824237453931%29.jpg/1920px-Bahamas_1989_%28336%29_Eleuthera_Dunmore_Town%2C_Harbour_Island_%2824237453931%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bahamas_1989_(336)_Eleuthera_Dunmore_Town,_Harbour_Island_(24237453931).jpg",
+      "credit": "Rüdiger Stehn from Kiel, Deutschland",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "localPath": "/images/travel/harbour-island-premium/destination/scene-2.webp",
+      "sha256": "17a84f9cf78dbed36704f174e3dddf8c06e8a10284be07caab66b2673200ca0b",
+      "bytes": 74342,
+      "originalSize": [
+        1920,
+        1194
+      ],
+      "outputSize": [
+        1750,
+        1088
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-3",
       "place": "Pink Sands Beach, Harbour Island (4236832563).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Archive/geographic provenance and licence require verification",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Harbour Island · promenade le long de la plage rose",
+      "enCaption": "Harbour Island · walking by Pink Sands Beach",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Pink_Sands_Beach%2C_Harbour_Island_%284236832563%29.jpg/1920px-Pink_Sands_Beach%2C_Harbour_Island_%284236832563%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pink_Sands_Beach,_Harbour_Island_(4236832563).jpg",
+      "credit": "Mike's Birds from Riverside, CA, US",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "localPath": "/images/travel/harbour-island-premium/destination/scene-3.webp",
+      "sha256": "c7cfc3d1086c2fe21818ab51dccb023bad67e971e1a739ad358e71d2bddf2a6d",
+      "bytes": 154028,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-4",
       "place": "Bahamas 1989 (342) Eleuthera Harbour Island (24320422055).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Archive/geographic provenance and licence require verification",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Harbour Island · front de port (photographie d'archives 1989)",
+      "enCaption": "Harbour Island · historic harbour view (1989 photo)",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Bahamas_1989_%28342%29_Eleuthera_Harbour_Island_%2824320422055%29.jpg/1920px-Bahamas_1989_%28342%29_Eleuthera_Harbour_Island_%2824320422055%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bahamas_1989_(342)_Eleuthera_Harbour_Island_(24320422055).jpg",
+      "credit": "Rüdiger Stehn from Kiel, Deutschland",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "localPath": "/images/travel/harbour-island-premium/destination/scene-4.webp",
+      "sha256": "67bb99643ad0f3f7999f4b7e48c73ec6e85121bea292d1ff0cfc27757ee8fd39",
+      "bytes": 328284,
+      "originalSize": [
+        1920,
+        1233
+      ],
+      "outputSize": [
+        1750,
+        1124
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-5",
       "place": "Sunrise at Pink Sands, Harbour Island (4236832127).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Archive/geographic provenance and licence require verification",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Pink Sands Beach · plage à la lumière du matin",
+      "enCaption": "Pink Sands Beach · shoreline in morning light",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Sunrise_at_Pink_Sands%2C_Harbour_Island_%284236832127%29.jpg/1920px-Sunrise_at_Pink_Sands%2C_Harbour_Island_%284236832127%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sunrise_at_Pink_Sands,_Harbour_Island_(4236832127).jpg",
+      "credit": "Mike's Birds from Riverside, CA, US",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "localPath": "/images/travel/harbour-island-premium/destination/scene-5.webp",
+      "sha256": "fd6dcd710c531e375a62782f9b5d6ab3dda34a79bbd90c1f0f364246034cb711",
+      "bytes": 208732,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-6",
       "place": "Bahamas 1989 (339) Eleuthera Dunmore Town, Harbour Island (24293986816).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Archive/geographic provenance and licence require verification",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Dunmore Town · maison de style bahamien (archive historique)",
+      "enCaption": "Dunmore Town · heritage cottage (historical photo)",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Bahamas_1989_%28339%29_Eleuthera_Dunmore_Town%2C_Harbour_Island_%2824293986816%29.jpg/1920px-Bahamas_1989_%28339%29_Eleuthera_Dunmore_Town%2C_Harbour_Island_%2824293986816%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bahamas_1989_(339)_Eleuthera_Dunmore_Town,_Harbour_Island_(24293986816).jpg",
+      "credit": "Rüdiger Stehn from Kiel, Deutschland",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "localPath": "/images/travel/harbour-island-premium/destination/scene-6.webp",
+      "sha256": "178eb5b06ba8c9298732d4c2de97773d761a9f5a6e521f295aaee375c122a1cf",
+      "bytes": 308544,
+      "originalSize": [
+        1920,
+        1247
+      ],
+      "outputSize": [
+        1750,
+        1137
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-7",
       "place": "Pink Sands Beach - panoramio.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Archive/geographic provenance and licence require verification",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Harbour Island · eaux turquoise et plage de sable fin",
+      "enCaption": "Harbour Island · turquoise sea and pink sands",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Pink_Sands_Beach_-_panoramio.jpg/1920px-Pink_Sands_Beach_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pink_Sands_Beach_-_panoramio.jpg",
+      "credit": "Oscar Flowers",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "localPath": "/images/travel/harbour-island-premium/destination/scene-7.webp",
+      "sha256": "c629fa0f31eb5ab540572b390458fcdbbc1adc0e53e24c5caf945fb21c3d76fb",
+      "bytes": 197710,
+      "originalSize": [
+        1920,
+        1195
+      ],
+      "outputSize": [
+        1750,
+        1089
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-8",
       "place": "Bahamas 1989 (343) Eleuthera Harbour Island (24211710172).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Archive/geographic provenance and licence require verification",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Harbour Island · littoral et embarcadère (archive historique 1989)",
+      "enCaption": "Harbour Island · waterside scene (1989 archival view)",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Bahamas_1989_%28343%29_Eleuthera_Harbour_Island_%2824211710172%29.jpg/1920px-Bahamas_1989_%28343%29_Eleuthera_Harbour_Island_%2824211710172%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bahamas_1989_(343)_Eleuthera_Harbour_Island_(24211710172).jpg",
+      "credit": "Rüdiger Stehn from Kiel, Deutschland",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "localPath": "/images/travel/harbour-island-premium/destination/scene-8.webp",
+      "sha256": "3f5983ff60946cf275d583a1748102ade773a9fb44a4c4cf62dec33a57e464f9",
+      "bytes": 457544,
+      "originalSize": [
+        1920,
+        1237
+      ],
+      "outputSize": [
+        1750,
+        1127
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-9",
       "place": "Stunning Scene At Harbour Island Eleuthera Bahamas Imran (55954984).jpeg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Archive/geographic provenance and licence require verification",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Harbour Island · paysage naturel à l'horizon",
+      "enCaption": "Harbour Island · natural coastal landscape",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Stunning_Scene_At_Harbour_Island_Eleuthera_Bahamas_Imran_%2855954984%29.jpeg/1920px-Stunning_Scene_At_Harbour_Island_Eleuthera_Bahamas_Imran_%2855954984%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Stunning_Scene_At_Harbour_Island_Eleuthera_Bahamas_Imran_(55954984).jpeg",
+      "credit": "Imran Anwar",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "localPath": "/images/travel/harbour-island-premium/destination/scene-9.webp",
+      "sha256": "3639bb39359c5ee8f93e12da02c974a751874c944d729804ee2a9a380905e838",
+      "bytes": 304954,
+      "originalSize": [
+        1920,
+        1393
+      ],
+      "outputSize": [
+        1723,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     }
   ],
-  "publicationBlockedReason": "21 original sourced photos and preview visual/rights checks required",
-  "photoRightsBasis": "Hotel photography attested by operator, original photographer contracts not inspected; Commons author and licences retained."
+  "publicationBlockedReason": "21 local photos passed automated source and uniqueness QA; final independent Preview display and hotel licensing signoff still pending",
+  "photoRightsBasis": "Commercial hotel photo use stated by operator but photographer agreements not audited; Commons license and credit stored per photo"
 }
