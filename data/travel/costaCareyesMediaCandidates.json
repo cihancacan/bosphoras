@@ -1,0 +1,643 @@
+{
+  "destination": "costa-careyes",
+  "hotels": [
+    {
+      "key": "view-1",
+      "localPath": "/images/travel/costa-careyes-premium/sol/view-1.webp",
+      "propertyKey": "sol",
+      "sourcePage": "https://careyes.net/iconic-villas",
+      "downloadUrl": "https://static.showit.co/1200/s_5K_tBWSDONMwkYQZfI6w/210868/00-4-sol-de-oriente-luxury-villa-careyes-mexico-0786.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.net/iconic-villas",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Sol de Oriente : piscine circulaire suspendue au Pacifique",
+      "enCaption": "Sol de Oriente: circular panoramic Pacific pool",
+      "originalFile": "00-4-sol-de-oriente-luxury-villa-careyes-mexico-0786.jpg",
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "sha256": "397ee8559f2155df54c007ec7a814de2ec3337e9a91ac487543559250ea94a6e",
+      "bytes": 259464,
+      "property": "Sol de Oriente — Iconic Villa"
+    },
+    {
+      "key": "view-2",
+      "localPath": "/images/travel/costa-careyes-premium/sol/view-2.webp",
+      "propertyKey": "sol",
+      "sourcePage": "https://careyes.net/accommodations",
+      "downloadUrl": "https://static.showit.co/1200/nstyxYlFRkGZYwpGiHQOGA/210868/00-2-sol-de-oriente-careyes-mexico-pacific-coast-careyitos.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.net/accommodations",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Sol de Oriente : palapa sculpturale et terrasse",
+      "enCaption": "Sol de Oriente: sculptural palapa and terrace",
+      "originalFile": "00-2-sol-de-oriente-careyes-mexico-pacific-coast-careyitos.jpg",
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "sha256": "aa3a86aa9ac62518b84bb218c55e1658554cc61bf9448b3c03e608a2663145b4",
+      "bytes": 146092,
+      "property": "Sol de Oriente — Iconic Villa"
+    },
+    {
+      "key": "view-3",
+      "localPath": "/images/travel/costa-careyes-premium/sol/view-3.webp",
+      "propertyKey": "sol",
+      "sourcePage": "https://careyes.com/architecture",
+      "downloadUrl": "https://static.showit.co/1200/tdYzKMnPT-y-LOi15bIKig/shared/careyes-architecture-style-sol-de-oriente-10.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.com/architecture",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Sol de Oriente : architecture et panorama de Careyitos",
+      "enCaption": "Sol de Oriente: landmark villa over Careyitos",
+      "originalFile": "careyes-architecture-style-sol-de-oriente-10.jpg",
+      "originalSize": [
+        1200,
+        1745
+      ],
+      "outputSize": [
+        825,
+        1200
+      ],
+      "sha256": "532504f314d49e5fb1267b5208eee0f9af61abe77b3842258398a85091a3c9e3",
+      "bytes": 100042,
+      "property": "Sol de Oriente — Iconic Villa"
+    },
+    {
+      "key": "view-1",
+      "localPath": "/images/travel/costa-careyes-premium/carioca/view-1.webp",
+      "propertyKey": "carioca",
+      "sourcePage": "https://careyes.net/villa-casita-carioca",
+      "downloadUrl": "https://static.showit.co/1200/Gx2fVXSscgYOYE-DrVc_Bw/210868/00-1-careyes-mexico-properties-villas-casita-carioca-_c_karlacifuentes-5348.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.net/villa-casita-carioca",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Casita Carioca : villa côtière colorée",
+      "enCaption": "Casita Carioca: colourful oceanfront villa",
+      "originalFile": "00-1-careyes-mexico-properties-villas-casita-carioca-_c_karlacifuentes-5348.jpg",
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ],
+      "sha256": "c3cea9281bd16bb4c8d0202c99087c9abebdbf2f502f3c3eaeff4cb04a743df3",
+      "bytes": 274472,
+      "property": "Casita Carioca — Signature Villa"
+    },
+    {
+      "key": "view-2",
+      "localPath": "/images/travel/costa-careyes-premium/carioca/view-2.webp",
+      "propertyKey": "carioca",
+      "sourcePage": "https://careyes.net/villa-casita-carioca",
+      "downloadUrl": "https://static.showit.co/1200/eJllrMPPT8WPoeHoGMtAkA/210868/d-careyes-mexico-properties-villas-casita-carioca-5375.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.net/villa-casita-carioca",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Casita Carioca : piscine à débordement et terrasse",
+      "enCaption": "Casita Carioca: infinity pool and terrace",
+      "originalFile": "d-careyes-mexico-properties-villas-casita-carioca-5375.jpg",
+      "originalSize": [
+        1199,
+        1800
+      ],
+      "outputSize": [
+        799,
+        1200
+      ],
+      "sha256": "e682a790eb17eb65b1a95022a2e374bc91d30d34530fbdaad386aa3512abb9fa",
+      "bytes": 143854,
+      "property": "Casita Carioca — Signature Villa"
+    },
+    {
+      "key": "view-3",
+      "localPath": "/images/travel/costa-careyes-premium/carioca/view-3.webp",
+      "propertyKey": "carioca",
+      "sourcePage": "https://careyes.net/villa-casita-carioca",
+      "downloadUrl": "https://static.showit.co/1200/QKw4eUWtQIyyWIwyUCrY9A/210868/d-careyes-mexico-properties-villas-casita-carioca-sunset-ocean-view-0422.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.net/villa-casita-carioca",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Casita Carioca : vie intérieure et vue sur la mer",
+      "enCaption": "Casita Carioca: interior living and sea views",
+      "originalFile": "d-careyes-mexico-properties-villas-casita-carioca-sunset-ocean-view-0422.jpg",
+      "originalSize": [
+        1200,
+        1804
+      ],
+      "outputSize": [
+        798,
+        1200
+      ],
+      "sha256": "6ff7c1516c9dddaf6d57e5f81e59bb4596be1524a63e2648a982d09d06f6d232",
+      "bytes": 148556,
+      "property": "Casita Carioca — Signature Villa"
+    },
+    {
+      "key": "view-1",
+      "localPath": "/images/travel/costa-careyes-premium/club/view-1.webp",
+      "propertyKey": "club",
+      "sourcePage": "https://careyes.net/el-careyes-club-and-residences",
+      "downloadUrl": "https://static.showit.co/1200/hRNPvE5OT1GlbThA4CAwkA/210868/00-1-careyes-mexico-properties-el-careyes-club-and-residences-general-0444.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.net/el-careyes-club-and-residences",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "El Careyes Club : piscine à débordement face au Pacifique",
+      "enCaption": "El Careyes Club: oceanfront infinity pool",
+      "originalFile": "00-1-careyes-mexico-properties-el-careyes-club-and-residences-general-0444.jpg",
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "sha256": "f1dba2b1d728926e1b9c2974c208a97874b6539e4fbea1b97f7ea94f637b5a2a",
+      "bytes": 208726,
+      "property": "El Careyes Club & Residences"
+    },
+    {
+      "key": "view-2",
+      "localPath": "/images/travel/costa-careyes-premium/club/view-2.webp",
+      "propertyKey": "club",
+      "sourcePage": "https://careyes.net/el-careyes-club-and-residences",
+      "downloadUrl": "https://static.showit.co/1200/P6VbdL93R_KuBkJlNsFHsQ/210868/03-2-careyes-mexico-properties-el-careyes-club-and-residences-general-pools-0326.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.net/el-careyes-club-and-residences",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "El Careyes Club : architecture des résidences privées",
+      "enCaption": "El Careyes Club: private residence architecture",
+      "originalFile": "03-2-careyes-mexico-properties-el-careyes-club-and-residences-general-pools-0326.jpg",
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "sha256": "3bb32afb7510b01d15ed27d4cea5eb2b90e90abe8409a942a8a237256c627e13",
+      "bytes": 136966,
+      "property": "El Careyes Club & Residences"
+    },
+    {
+      "key": "view-3",
+      "localPath": "/images/travel/costa-careyes-premium/club/view-3.webp",
+      "propertyKey": "club",
+      "sourcePage": "https://careyes.net/el-careyes-club-and-residences",
+      "downloadUrl": "https://static.showit.co/1200/wEAIokMkQqadwKnBrc9NZg/210868/03-2-careyes-club-and-residences-general-lounge-pool-0365.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.net/el-careyes-club-and-residences",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "El Careyes Club : espaces de détente et plage",
+      "enCaption": "El Careyes Club: relaxing spaces and beach",
+      "originalFile": "03-2-careyes-club-and-residences-general-lounge-pool-0365.jpg",
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ],
+      "sha256": "11cbfa8d6513237d0f09d95f3e51f6c4015defb63cf32d1c08e9f240036053a9",
+      "bytes": 114382,
+      "property": "El Careyes Club & Residences"
+    },
+    {
+      "key": "view-1",
+      "localPath": "/images/travel/costa-careyes-premium/bungalow/view-1.webp",
+      "propertyKey": "bungalow",
+      "sourcePage": "https://careyes.net/playa-rosa-bungalows",
+      "downloadUrl": "https://static.showit.co/1200/3GUb_2xzTz2l07AvE6UxBQ/210868/g-4-careyes-mexico-bungalows-playa-rosa-0612.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.net/playa-rosa-bungalows",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Playa Rosa : authentiques bungalows roses à toit de palapa",
+      "enCaption": "Playa Rosa: authentic thatched beachfront bungalows",
+      "originalFile": "g-4-careyes-mexico-bungalows-playa-rosa-0612.jpg",
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "sha256": "94576de805d70745b34752563e89dab6a442bf10e6e9b1b3b31967628009e640",
+      "bytes": 216250,
+      "property": "Playa Rosa Bungalows"
+    },
+    {
+      "key": "view-2",
+      "localPath": "/images/travel/costa-careyes-premium/bungalow/view-2.webp",
+      "propertyKey": "bungalow",
+      "sourcePage": "https://careyes.net/playa-rosa-bungalows",
+      "downloadUrl": "https://static.showit.co/1200/gujP-nOaSe6wscZOlQTDPQ/210868/g-6-careyes-mexico-bungalows-playa-rosa-drone-view-0008.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.net/playa-rosa-bungalows",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Playa Rosa : bungalow tropical coloré et terrasse",
+      "enCaption": "Playa Rosa: colourful tropical bungalow and terrace",
+      "originalFile": "g-6-careyes-mexico-bungalows-playa-rosa-drone-view-0008.jpg",
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "sha256": "e8cfddb88ee22488b9291e52755197530f95cb3a4d0b7a6cfa821d879ce736b4",
+      "bytes": 326580,
+      "property": "Playa Rosa Bungalows"
+    },
+    {
+      "key": "view-3",
+      "localPath": "/images/travel/costa-careyes-premium/bungalow/view-3.webp",
+      "propertyKey": "bungalow",
+      "sourcePage": "https://careyes.net/playa-rosa-bungalows",
+      "downloadUrl": "https://static.showit.co/1200/GoWWFFgZQLqMNm6wRnTKZA/210868/g-1-careyes-mexico-bungalows-playa-rosa-0576.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.net/playa-rosa-bungalows",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Playa Rosa : chambres et ambiance de bord de mer",
+      "enCaption": "Playa Rosa: distinctive beach bungalow interiors",
+      "originalFile": "g-1-careyes-mexico-bungalows-playa-rosa-0576.jpg",
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "sha256": "efb9aac47e5bb1742fd9238652f0fe444af178c978556dd3174b51b07306d254",
+      "bytes": 276864,
+      "property": "Playa Rosa Bungalows"
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "localPath": "/images/travel/costa-careyes-premium/destination/scene-1.webp",
+      "propertyKey": null,
+      "sourcePage": "https://careyes.com/beaches",
+      "downloadUrl": "https://static.showit.co/1200/bqaWLTHGxbzcTvDdOSmWUw/shared/careyes-mexico-coastline-costa-alegre-_c_-karla-cifuentes-0577-original-updated-opt2.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.com/beaches",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "La côte découpée de Costa Careyes vue du ciel",
+      "enCaption": "The dramatic Costa Careyes shoreline",
+      "originalFile": "careyes-mexico-coastline-costa-alegre-_c_-karla-cifuentes-0577-original-updated-opt2.jpg",
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "sha256": "9bd9e2c0791c136b0bdea3fc56cd12b49716c7e51ab4dd3d7d834db08ad15d36",
+      "bytes": 186508,
+      "place": "Costa Careyes, Jalisco, México"
+    },
+    {
+      "key": "scene-2",
+      "localPath": "/images/travel/costa-careyes-premium/destination/scene-2.webp",
+      "propertyKey": null,
+      "sourcePage": "https://careyes.com/beaches",
+      "downloadUrl": "https://static.showit.co/1200/GMOhCEcCe6I1A2IyOvLoUA/shared/playa-rosa-beach-careyes-mexico-pacific-coast-0238.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.com/beaches",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Playa Rosa et son rivage abrité",
+      "enCaption": "Playa Rosa and its coastal bay",
+      "originalFile": "playa-rosa-beach-careyes-mexico-pacific-coast-0238.jpg",
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "sha256": "186d968955dec292084fcb1551b57b4b573ee914c5e24c4164b961fea1c0f851",
+      "bytes": 175236,
+      "place": "Costa Careyes, Jalisco, México"
+    },
+    {
+      "key": "scene-3",
+      "localPath": "/images/travel/costa-careyes-premium/destination/scene-3.webp",
+      "propertyKey": null,
+      "sourcePage": "https://careyes.com/architecture",
+      "downloadUrl": "https://static.showit.co/1200/WN1GTYJCTtOdpS7S0lCvNw/shared/d-careyes-mexico-properties-casitas-de-las-flores-2190.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.com/architecture",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Casitas de las Flores et leurs façades colorées",
+      "enCaption": "The colourful Casitas de las Flores",
+      "originalFile": "d-careyes-mexico-properties-casitas-de-las-flores-2190.jpg",
+      "originalSize": [
+        1200,
+        1801
+      ],
+      "outputSize": [
+        800,
+        1200
+      ],
+      "sha256": "ba8887b718d561c93327989ef3d779e392f4a11c7a464068688f42b087a66991",
+      "bytes": 156104,
+      "place": "Costa Careyes, Jalisco, México"
+    },
+    {
+      "key": "scene-4",
+      "localPath": "/images/travel/costa-careyes-premium/destination/scene-4.webp",
+      "propertyKey": null,
+      "sourcePage": "https://careyes.com/beaches",
+      "downloadUrl": "https://static.showit.co/1200/_j6sxrcTkb5tlMVPM6cKBw/shared/careyes-mexico-beaches-playas-careyitos-0929.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.com/beaches",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Careyitos : villas et petites criques du Pacifique",
+      "enCaption": "Careyitos: iconic villas and Pacific coves",
+      "originalFile": "careyes-mexico-beaches-playas-careyitos-0929.jpg",
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "sha256": "cd09abbaf6aff3b831fa4585e579f129056cd34b0d376d5005b1041990e23d09",
+      "bytes": 233760,
+      "place": "Costa Careyes, Jalisco, México"
+    },
+    {
+      "key": "scene-5",
+      "localPath": "/images/travel/costa-careyes-premium/destination/scene-5.webp",
+      "propertyKey": null,
+      "sourcePage": "https://careyes.com/beaches",
+      "downloadUrl": "https://static.showit.co/1200/gsKg3XuiyaFpTOb7saNkxQ/shared/playa-teopa-careyes-mexico-0217-mobile.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.com/beaches",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Playa Teopa : dunes, rivage naturel et sanctuaire",
+      "enCaption": "Playa Teopa: natural beach and conservation",
+      "originalFile": "playa-teopa-careyes-mexico-0217-mobile.jpg",
+      "originalSize": [
+        1200,
+        1680
+      ],
+      "outputSize": [
+        857,
+        1200
+      ],
+      "sha256": "79f3f1c5713f07fbdefe6760bfee1d36111c39d89ff15e018ddddd050f5d675c",
+      "bytes": 58460,
+      "place": "Costa Careyes, Jalisco, México"
+    },
+    {
+      "key": "scene-6",
+      "localPath": "/images/travel/costa-careyes-premium/destination/scene-6.webp",
+      "propertyKey": null,
+      "sourcePage": "https://careyes.com/careyes-wonders",
+      "downloadUrl": "https://static.showit.co/1200/2GCma5sZnr6JuEHqFU0AGQ/shared/careyes-wonders-copa-del-sol-0041-enhanced-mobile.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.com/careyes-wonders",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Copa del Sol : sculpture monumentale dans le paysage",
+      "enCaption": "Copa del Sol: monumental landscape sculpture",
+      "originalFile": "careyes-wonders-copa-del-sol-0041-enhanced-mobile.jpg",
+      "originalSize": [
+        1200,
+        1800
+      ],
+      "outputSize": [
+        800,
+        1200
+      ],
+      "sha256": "bc06c2cf759e1e88daf82d63ec14181ea0304d43cdc3b3951577b780f3639ae7",
+      "bytes": 83028,
+      "place": "Costa Careyes, Jalisco, México"
+    },
+    {
+      "key": "scene-7",
+      "localPath": "/images/travel/costa-careyes-premium/destination/scene-7.webp",
+      "propertyKey": null,
+      "sourcePage": "https://careyes.com/activities",
+      "downloadUrl": "https://static.showit.co/1200/GHqtx7WAf54X8FmBEUza3g/shared/careyes-mexico-land-activities-horsebackriding-teopa-11.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.com/activities",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Careyes : polo ou promenade à cheval au bord du Pacifique",
+      "enCaption": "Careyes: polo or horseback adventures",
+      "originalFile": "careyes-mexico-land-activities-horsebackriding-teopa-11.jpg",
+      "originalSize": [
+        1200,
+        674
+      ],
+      "outputSize": [
+        1200,
+        674
+      ],
+      "sha256": "57ee5d5a9572624c306d19593769eb6126ecb3d653a7a4b3ffe9ca904e1d7311",
+      "bytes": 95446,
+      "place": "Costa Careyes, Jalisco, México"
+    },
+    {
+      "key": "scene-8",
+      "localPath": "/images/travel/costa-careyes-premium/destination/scene-8.webp",
+      "propertyKey": null,
+      "sourcePage": "https://careyes.com/activities",
+      "downloadUrl": "https://static.showit.co/1200/T_COsBjCEdEasyzk-15Aag/shared/careyes-coastal-tour-boat-trip-0109-mobile.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.com/activities",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Excursion maritime entre les criques de Careyes",
+      "enCaption": "Careyes: a coastal excursion and offshore waters",
+      "originalFile": "careyes-coastal-tour-boat-trip-0109-mobile.jpg",
+      "originalSize": [
+        1046,
+        1308
+      ],
+      "outputSize": [
+        960,
+        1200
+      ],
+      "sha256": "130e5b9b8c88962f4f264b475d9046f0bc2ef506ca27a61b651c42be5b6bdea7",
+      "bytes": 251350,
+      "place": "Costa Careyes, Jalisco, México"
+    },
+    {
+      "key": "scene-9",
+      "localPath": "/images/travel/costa-careyes-premium/destination/scene-9.webp",
+      "propertyKey": null,
+      "sourcePage": "https://careyes.com/beaches",
+      "downloadUrl": "https://static.showit.co/1200/Ou1nHOI2Sv6uZ2xqCvJjpA/shared/careyes-mexico-coastline-costa-alegre-_c_-karla-cifuentes-0054.jpg",
+      "photographerCredit": "Careyes official website / named photographer on original source; permission not independently established",
+      "credit": "Careyes official photography · creator publication rights pending",
+      "license": "Private editorial review only. No independent commercial reproduction licence.",
+      "licenseUrl": "https://careyes.com/beaches",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "visually_awaiting_review",
+      "visuallyVerified": false,
+      "visualQaWarning": "Photo contact sheet must be inspected",
+      "frCaption": "Costa Careyes : l'architecture rencontre le littoral sauvage",
+      "enCaption": "Costa Careyes: architecture and wild Pacific coastline",
+      "originalFile": "careyes-mexico-coastline-costa-alegre-_c_-karla-cifuentes-0054.jpg",
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "sha256": "0db865e2115d76365e18d2dc5c34449d1cfcf90c1785127685fe3b6d1c31ea05",
+      "bytes": 110950,
+      "place": "Costa Careyes, Jalisco, México"
+    }
+  ],
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "publicationBlockedReason": "Operator photos are not independently licensed for public commercial reproduction. Restricted nonindexable owner Preview only.",
+  "provenanceNote": "Source pages, filenames, image hashes and source attribution tracked. Careyes is a private villa/club community, not four distinct hotels."
+}
