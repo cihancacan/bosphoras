@@ -10,3 +10,5 @@ export const neckerIslandGuide:FeaturedCityGuideData={...g,areas:g.areas.map(x=>
 // Images verified for owner Preview; public-commercial photo rights and search indexing remain gated.
 
 // NeckerIsland visual preview QA: four named addresses, source-vetted local photos and editorial noindex.
+
+// Four clusters use authentic Necker Island photographs; preview only pending final visual QA.
