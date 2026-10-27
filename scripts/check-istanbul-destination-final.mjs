@@ -7,7 +7,7 @@ assert.equal(catalog.length,88);assert.equal(new Set(catalog).size,88);
 assert(d.includes('approvedDestinationSlugs: ReadonlySet<string> = new Set([])'));
 const reg=r('data/travel/featuredCityGuides.ts');
 const guides=[...(reg.match(/export type FeaturedCitySlug\s*=\s*([\s\S]*?);/)?.[1]||'').matchAll(/'([^']+)'/g)].map(m=>m[1]);
-assert(guides.length>=55,'Istanbul should remain within all future feature guides');assert.equal(new Set(guides).size,55);
+assert(guides.length>=55,'Istanbul should remain within all future feature guides');assert.equal(new Set(guides).size,guides.length);
 assert(guides.includes('istanbul'));assert(reg.includes('istanbul: istanbulGuide'));
 const g=r('data/travel/istanbulGuide.ts');
 assert(g.includes('istanbulHotels.map')&&g.includes('istanbulDistricts.map'));
