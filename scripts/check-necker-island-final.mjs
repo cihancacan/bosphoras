@@ -17,6 +17,7 @@ for(const key of ['great','hi','lo','temple'])assert.equal(m.hotels.filter(x=>x.
 const c=read('data/travel/destinations.ts'),slugs=[...c.matchAll(/slug:\s*["']([^"']+)["']/g)].map(x=>x[1]);
 assert.equal(slugs.length,88);assert.equal(new Set(slugs).size,88);assert(slugs.includes('necker-island'));
 assert(c.includes('approvedDestinationSlugs: ReadonlySet<string> = new Set([])'));
+assert(/slug: "necker-island"[^\n]*categories: \["hotels","villas","yachts"\]/.test(c),'Necker accommodation route must accept /travel/hotels/necker-island');
 assert(read('data/travel/featuredCityGuides.ts').includes("'necker-island': neckerIslandGuide"));
 const fg=read('components/travel/FeaturedCityGuide.tsx');assert(fg.includes('neckerIslandHotelEditorial')&&fg.includes('neckerIslandDraftFaq'));
 const pg=read('components/travel/TravelPages.tsx');assert(pg.includes('isNeckerIsland')&&pg.includes('confirmedNeckerIslandAssets'));
