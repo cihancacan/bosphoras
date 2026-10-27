@@ -40,3 +40,5 @@ jobs:
             done
             exit 1
           fi
+
+# Run verified LAUCALA 21-file source collector (dry run complete on 27 October 2026).
