@@ -2,8 +2,8 @@
   "destination": "ibiza",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 10,
-  "downloadedDestinationCandidates": 8,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
@@ -198,14 +198,30 @@
       "key": "view-2",
       "property": "7Pines Resort Ibiza",
       "propertyKey": "7pines-resort-ibiza",
-      "sourcePage": "https://7pines-ibiza.com/en/dining",
+      "sourcePage": "https://www.hyatt.com/destination-by-hyatt/en-US/ibzdh-7-pines-resort-ibiza/rooms",
       "slotIntent": "real guestroom or suite interior",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Image was the 7Pines restaurant terrace; the view-2 intent is an authentic hotel guest suite.",
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
       "rejectedSource": "https://7pines-ibiza.com/media/dining-seaview-outdoorseating-3459.webp",
-      "rejectedOriginalSha256": "c46020c9cdc64a8739ccaab874c1250af43b7ed39dc0bfd4cf72db0407980bbd"
+      "rejectedOriginalSha256": "c46020c9cdc64a8739ccaab874c1250af43b7ed39dc0bfd4cf72db0407980bbd",
+      "localPath": "/images/travel/ibiza-premium/7pines-resort-ibiza/view-2.webp",
+      "downloadUrl": "https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2021/04/26/1344/IBZDH-P0061-Laguna-Suite-Sea-View-Bedroom.jpg/IBZDH-P0061-Laguna-Suite-Sea-View-Bedroom.16x9.jpg?imwidth=2560",
+      "candidateContext": "Real Laguna Suite Sea View bedroom at 7Pines Ibiza, turquoise throw and ivory bed",
+      "credit": "Named hotel gallery; original photographer/source: https://www.hyatt.com/destination-by-hyatt/en-US/ibzdh-7-pines-resort-ibiza/rooms",
+      "license": "Commercial licence requires verified operator/photographer rights",
+      "sha256": "854c7c24ba9d5801a44e5161cd05ba534a4e0c67e9c56d6597a18902470634b8",
+      "dhash": "1000011110100111001001110010011000000100010000110011101001011010",
+      "bytes": 179252,
+      "originalSize": [
+        2560,
+        1440
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ]
     },
     {
       "key": "view-3",
@@ -292,14 +308,30 @@
       "key": "view-3",
       "property": "The Standard, Ibiza",
       "propertyKey": "the-standard-ibiza",
-      "sourcePage": "https://www.cntraveller.com/hotels/the-standard-ibiza-review",
+      "sourcePage": "https://www.yatzer.com/the-standard-ibiza",
       "slotIntent": "authentic hotel pool/dining/terrace",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "The old Jara crop mostly showed curtains and a lamp, not the distinctive restaurant; replacing with a wider properly sourced room.",
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
       "rejectedSource": "https://media.cntraveller.com/photos/626bcb35b25d31f55e79d7ab/16%3A9/w_2560%2Cc_limit/jara-the%2520standard%2520ibiza-apr22-pr2.jpg",
-      "rejectedOriginalSha256": "367dcf56161fcd199702b2fa727275523b87a2b161b682c8304f8f7036f9f24e"
+      "rejectedOriginalSha256": "367dcf56161fcd199702b2fa727275523b87a2b161b682c8304f8f7036f9f24e",
+      "localPath": "/images/travel/ibiza-premium/the-standard-ibiza/view-3.webp",
+      "downloadUrl": "https://media.yatzer.com/39_p_jara_restaurant_the_standard_ibiza_photography_standard_hotels_yatzer-1-1400x934.jpg",
+      "candidateContext": "Bright real Jara restaurant and garden-style furniture photographed at The Standard Ibiza by the hotel's media team",
+      "credit": "Named hotel gallery; original photographer/source: https://www.yatzer.com/the-standard-ibiza",
+      "license": "Commercial licence requires verified operator/photographer rights",
+      "sha256": "8e133ae048f7c3ba16d3ca9b1c0b3268d90f729b1b96a4195a3c60c858a60b33",
+      "dhash": "1000100011000000000000011000011001101000000110010111100001101000",
+      "bytes": 192424,
+      "originalSize": [
+        1400,
+        934
+      ],
+      "outputSize": [
+        1400,
+        934
+      ]
     }
   ],
   "destinationScenes": [
@@ -335,13 +367,29 @@
       "placeLabel": "Port et Marina Botafoch",
       "searchQuery": "Ibiza Marina Botafoch yachts promenade",
       "slotIntent": "Port et Marina Botafoch",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "The old Ibiza port photo is hazy and low-contrast, fails premium sunny marina art direction.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ibiza_Port.jpg",
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "sourcePage": "https://www.ibizatopcharter.com/",
       "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Ibiza_Port.jpg",
-      "rejectedOriginalSha256": "ab1de941474604c589026cec55086d79fee1832881290b7b3ea876f1a70c1f6d"
+      "rejectedOriginalSha256": "ab1de941474604c589026cec55086d79fee1832881290b7b3ea876f1a70c1f6d",
+      "localPath": "/images/travel/ibiza-premium/destination/scene-2.webp",
+      "downloadUrl": "https://static.wixstatic.com/media/652426_a059a541ea0442f6a1c541570e37826f~mv2.jpg",
+      "candidateContext": "Ibiza harbour with yachts and Eivissa old town behind, exact marina harbour image; independently verify harbour location",
+      "credit": "Publisher: https://www.ibizatopcharter.com/",
+      "license": "Publisher commercial photo rights require individual verification",
+      "sha256": "3b0ce1ec7a31097c61908852b35a22e37c05f972587461cdafefb20d4cc25775",
+      "dhash": "0001011100100111010100100101011010011000101000110010001011100110",
+      "bytes": 307900,
+      "originalSize": [
+        2000,
+        1056
+      ],
+      "outputSize": [
+        1800,
+        950
+      ]
     },
     {
       "key": "scene-3",

@@ -4,6 +4,14 @@
   "missing": [],
   "diagnostics": [
     {
+      "url": "https://7pines-ibiza.com/en/suites",
+      "error": "404 Client Error: Not Found for url: https://7pines-ibiza.com/en/suites"
+    },
+    {
+      "url": "https://7pines-ibiza.com/en/gallery",
+      "error": "404 Client Error: Not Found for url: https://7pines-ibiza.com/en/gallery"
+    },
+    {
       "url": "https://www.standardhotels.com/ibiza/properties/ibiza",
       "error": "403 Client Error: Forbidden for url: https://www.standardhotels.com/ibiza/properties/ibiza"
     },
