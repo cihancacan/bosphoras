@@ -128,7 +128,7 @@ export const formenteraDraftGuide = {
     }
   ],
   "checksFr": [
-    "Choisir d'abord la côte et la catégorie de chambre, avant une photo spectaculaire.",
+    "Choisir d'abord la côte et la catégorie de chambre, avant une photo spectaculaire ; confirmer les restrictions d'âge à Teranka (12 ans).",
     "Vérifier ferries Ibiza–La Savina et marges de correspondance avec l'avion.",
     "Du 1er juin au 30 septembre, confirmer les règles d'autorisation pour les véhicules amenés sur l'île.",
     "Distinguer l'accès au beach club, au spa et aux restaurants de la nuit d'hôtel.",
@@ -136,7 +136,7 @@ export const formenteraDraftGuide = {
     "Ne jamais présenter comme acquis une chambre, un transfert ou une sortie yacht sans fournisseur confirmé."
   ],
   "checksEn": [
-    "Choose coast and exact room category before judging a spectacular photograph.",
+    "Choose coast and exact room category before judging a spectacular photograph; reconfirm Teranka's minimum child age of 12.",
     "Verify Ibiza–La Savina ferries and leave adequate flight connection time.",
     "From 1 June to 30 September, confirm authorisation rules for bringing a vehicle to the island.",
     "Separate beach-club, spa and dining access from the accommodation itself.",
