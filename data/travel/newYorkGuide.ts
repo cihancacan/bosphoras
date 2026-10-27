@@ -29,4 +29,6 @@ for(const p of sources.destinationScenes as Candidate[]){
   license:p.license!,licenseUrl:p.licenseUrl!,sourcePage:p.sourcePage!
  };
 }
+// 56th premium guide: five distinct local areas, four named Manhattan hotels, two languages.
+// Public release requires owner image-rights approval after private Preview review.
 export const newYorkGuide:FeaturedCityGuideData={...newYorkDraftGuide, photos};
