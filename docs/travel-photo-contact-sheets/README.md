@@ -22,4 +22,4 @@ Les photographies récemment remplacées restent rouges tant qu'elles n'ont pas 
 - [Ravello](ravello.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](ravello.jpg)
 - [Mykonos](mykonos.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](mykonos.jpg)
 - [Antiparos](antiparos.md) — 18/21 fichiers candidats, 21 alertes ; [ouvrir l'image seule](antiparos.jpg)
-- [Ibiza](ibiza.md) — 0/21 fichiers candidats, 21 alertes ; [ouvrir l'image seule](ibiza.jpg)
+- [Ibiza](ibiza.md) — 21/21 fichiers candidats, 21 alertes ; [ouvrir l'image seule](ibiza.jpg)
