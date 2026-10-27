@@ -132,7 +132,7 @@ def hotel_photos(item):
     score= 3*any(x in low for x in ['suite','room','hotel','lobby','bedroom','bed','pool','spa','interior','facade','terrace'])
     score+= 2*any(x in low for x in ['aman','fifth','greenwich','lowell'])
     score+= 2 if page==pages[0] else 0
-    score-= 2 if any(x in low for x in ['food','drink','cocktail','restaurant','chef','map','amenities-icon'])
+    score-= 2 if any(x in low for x in ['food','drink','cocktail','restaurant','chef','map','amenities-icon']) else 0
     scores.append((score,url,alt,page))
     n+=1
    print(name,'candidate URLs',n,'from',page,flush=True)
