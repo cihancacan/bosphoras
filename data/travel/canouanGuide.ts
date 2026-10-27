@@ -8,3 +8,5 @@ for(const x of media.destinationScenes as Candidate[])if(approvedCanouanPhoto(x)
 const g=canouanDraftGuide;
 export const canouanGuide:FeaturedCityGuideData={...g,areas:g.areas.map(x=>({...x})),experiences:g.experiences.map(x=>({...x})),hotels:g.hotels.map(x=>({...x})),checksFr:[...g.checksFr],checksEn:[...g.checksEn],photos};
 // Images verified for owner Preview; public-commercial photo rights and search indexing remain gated.
+
+// Canouan visual preview QA: four named addresses, source-vetted local photos and editorial noindex.
