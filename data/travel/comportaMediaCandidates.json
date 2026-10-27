@@ -1,247 +1,625 @@
 {
   "destination": "comporta",
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
       "propertyKey": "sublime",
       "property": "Sublime Comporta",
       "sourcePage": "https://www.sublimehotels.pt/en/stay/sublime-comporta/the-resort/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Image not collected or manually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.sublimehotels.pt/xms/img/1900x/aaeee/cT05MCZmPXdlYnAmZmx0cltdPQ/L08zbS8tME0zWnJTbS95enNlajdTRm1zYXUwRk0zU3NVajNram43Wi95enNiUlNzbFNtam43L1VqM2tqbjdac2JSU3NsU21qbjdzcXp0enRka3I.webp",
+      "frCaption": "Sublime Comporta · cabanas et domaine boisé",
+      "enCaption": "Sublime Comporta · pinewood retreat",
+      "credit": "Sublime Comporta · official publisher (original photographer not identified)",
+      "license": "Commercial photo use operator-attested only; underlying licence not independently checked",
+      "licenseUrl": "https://www.sublimehotels.pt/en/stay/sublime-comporta/the-resort/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator confirms overall photo permission; originals not inspected.",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/sublime/view-1.webp",
+      "sha256": "69f85c5995c1071ac43787bb12a89241dcc07102e53823ecd3024187bf59339a",
+      "bytes": 196506,
+      "originalSize": [
+        1900,
+        2659
+      ],
+      "outputSize": [
+        893,
+        1250
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "view-2",
       "propertyKey": "sublime",
       "property": "Sublime Comporta",
       "sourcePage": "https://www.sublimehotels.pt/en/stay/sublime-comporta/the-resort/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Image not collected or manually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.sublimehotels.pt/xms/img/1900x/0158e/cT05MCZmPXdlYnAmZmx0cltdPQ/L08zbS8tME0zWnJTbS95enNlajdTRm1zYXUwRk0zU3NVajNram43Wi95enNiUlNzbFNtam43L1VqM2tqbjdac2JSU3NsU21qbjdzNkx0enRka3I.webp",
+      "frCaption": "Sublime Comporta · architecture parmi les pins",
+      "enCaption": "Sublime Comporta · architecture among pines",
+      "credit": "Sublime Comporta · official publisher (original photographer not identified)",
+      "license": "Commercial photo use operator-attested only; underlying licence not independently checked",
+      "licenseUrl": "https://www.sublimehotels.pt/en/stay/sublime-comporta/the-resort/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator confirms overall photo permission; originals not inspected.",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/sublime/view-2.webp",
+      "sha256": "a008d3e8beb48b4954e8b246d6754c34a556d19f7ada55f073223237108f01b4",
+      "bytes": 325886,
+      "originalSize": [
+        1900,
+        1067
+      ],
+      "outputSize": [
+        1750,
+        983
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "view-3",
       "propertyKey": "sublime",
       "property": "Sublime Comporta",
       "sourcePage": "https://www.sublimehotels.pt/en/stay/sublime-comporta/the-resort/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Image not collected or manually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.sublimehotels.pt/xms/img/1900x/b0b5d/cT05MCZmPXdlYnAmZmx0cltdPQ/L08zbS8tME0zWnJTbS95enNlajdTRm1zYXUwRk0zU3NVajNram43Wi95NHNoS0tqMzNqLVo3TWpKbS95enNiU25uWktqNzdac2FOaHNhdU03Uy9VajNram43WnNiU25uWktqNzdac2FOaHNhdU03U3N6dHp0ZGty.webp",
+      "frCaption": "Sublime Comporta · paysage et espaces du resort",
+      "enCaption": "Sublime Comporta · estate setting and resort facilities",
+      "credit": "Sublime Comporta · official publisher (original photographer not identified)",
+      "license": "Commercial photo use operator-attested only; underlying licence not independently checked",
+      "licenseUrl": "https://www.sublimehotels.pt/en/stay/sublime-comporta/the-resort/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator confirms overall photo permission; originals not inspected.",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/sublime/view-3.webp",
+      "sha256": "7ab7893958785786fd3057bb3215ffeb0da81eb6a182f8894504ace045bfbc7f",
+      "bytes": 166344,
+      "originalSize": [
+        1900,
+        1267
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "view-1",
       "propertyKey": "quinta",
       "property": "Quinta da Comporta – Wellness Boutique Resort",
       "sourcePage": "https://www.quintadacomporta.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Image not collected or manually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/60de094af226ad50dabb59a9/1737025771233-S0UKNDCZCWYTUU0BI13T/splash-qdc.jpg",
+      "frCaption": "Quinta da Comporta · architecture et paysages de rizières",
+      "enCaption": "Quinta da Comporta · architecture in the rice-field landscape",
+      "credit": "Quinta da Comporta – Wellness Boutique Resort · official publisher (original photographer not identified)",
+      "license": "Commercial photo use operator-attested only; underlying licence not independently checked",
+      "licenseUrl": "https://www.quintadacomporta.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator confirms overall photo permission; originals not inspected.",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/quinta/view-1.webp",
+      "sha256": "99f8fd3a7e9baccb131d7083494e07dd6193e0898d3818705edb4e4edf4fb1ca",
+      "bytes": 194116,
+      "originalSize": [
+        2500,
+        1405
+      ],
+      "outputSize": [
+        1750,
+        984
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "view-2",
       "propertyKey": "quinta",
       "property": "Quinta da Comporta – Wellness Boutique Resort",
       "sourcePage": "https://www.quintadacomporta.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Image not collected or manually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/60de094af226ad50dabb59a9/1625568113826-Z50XA7IQFNNP7EKZ8HY7/banner-pool-villas.jpg",
+      "frCaption": "Quinta da Comporta · villas et espaces privés",
+      "enCaption": "Quinta da Comporta · villa and outdoor spaces",
+      "credit": "Quinta da Comporta – Wellness Boutique Resort · official publisher (original photographer not identified)",
+      "license": "Commercial photo use operator-attested only; underlying licence not independently checked",
+      "licenseUrl": "https://www.quintadacomporta.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator confirms overall photo permission; originals not inspected.",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/quinta/view-2.webp",
+      "sha256": "655ed9d14cdf0bf2ed981fa2e1f9a5e52082e878332b78f0cb4ede45640f8e34",
+      "bytes": 244876,
+      "originalSize": [
+        2500,
+        1667
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "view-3",
       "propertyKey": "quinta",
       "property": "Quinta da Comporta – Wellness Boutique Resort",
       "sourcePage": "https://www.quintadacomporta.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Image not collected or manually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/60de094af226ad50dabb59a9/1625568705814-68XNZP433HFX8AFBVW5Z/accommodation.jpg",
+      "frCaption": "Quinta da Comporta · hébergements dans l’Alentejo",
+      "enCaption": "Quinta da Comporta · local-inspired accommodation",
+      "credit": "Quinta da Comporta – Wellness Boutique Resort · official publisher (original photographer not identified)",
+      "license": "Commercial photo use operator-attested only; underlying licence not independently checked",
+      "licenseUrl": "https://www.quintadacomporta.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator confirms overall photo permission; originals not inspected.",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/quinta/view-3.webp",
+      "sha256": "46ff40d1fea93cbf1767836adf0b7d43785438be8f912be16475c7e903b23c6d",
+      "bytes": 297368,
+      "originalSize": [
+        2500,
+        1668
+      ],
+      "outputSize": [
+        1750,
+        1168
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "view-1",
       "propertyKey": "spatia",
       "property": "Spatia Comporta",
       "sourcePage": "https://www.spatiacomporta.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Image not collected or manually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/62f7cb733a49884c891356af/23a3d852-c51d-4a6f-92a3-b4a084d22f57/SPATIA_LNG-346.jpg",
+      "frCaption": "Spatia Comporta · pavillons dispersés dans la pinède",
+      "enCaption": "Spatia Comporta · pinewood retreat architecture",
+      "credit": "Spatia Comporta · official publisher (original photographer not identified)",
+      "license": "Commercial photo use operator-attested only; underlying licence not independently checked",
+      "licenseUrl": "https://www.spatiacomporta.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator confirms overall photo permission; originals not inspected.",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/spatia/view-1.webp",
+      "sha256": "6ef6ba1d38c63cd72a8cdfde1088f553b3ee190c874ca1303da78077fcbeeeae",
+      "bytes": 121304,
+      "originalSize": [
+        2048,
+        1366
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "view-2",
       "propertyKey": "spatia",
       "property": "Spatia Comporta",
       "sourcePage": "https://www.spatiacomporta.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Image not collected or manually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/62f7cb733a49884c891356af/681bc451-e9c3-4ac1-9b82-5126ee5aa548/SPATIA_LNG-298.jpg",
+      "frCaption": "Spatia Comporta · maison et piscine du domaine",
+      "enCaption": "Spatia Comporta · accommodation and estate pool",
+      "credit": "Spatia Comporta · official publisher (original photographer not identified)",
+      "license": "Commercial photo use operator-attested only; underlying licence not independently checked",
+      "licenseUrl": "https://www.spatiacomporta.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator confirms overall photo permission; originals not inspected.",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/spatia/view-2.webp",
+      "sha256": "c337ff5fc4b9db7ede986a4e77421c0d2d96ed3b483055a81c04e90ed10dfc60",
+      "bytes": 678002,
+      "originalSize": [
+        2048,
+        1366
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "view-3",
       "propertyKey": "spatia",
       "property": "Spatia Comporta",
       "sourcePage": "https://www.spatiacomporta.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Image not collected or manually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/62f7cb733a49884c891356af/73cdc65e-af11-4ac0-8364-a86a83b1dbc4/Spatia_Comporta+-+180.jpeg",
+      "frCaption": "Spatia Comporta · confort et architecture contemporaine",
+      "enCaption": "Spatia Comporta · refined contemporary design",
+      "credit": "Spatia Comporta · official publisher (original photographer not identified)",
+      "license": "Commercial photo use operator-attested only; underlying licence not independently checked",
+      "licenseUrl": "https://www.spatiacomporta.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator confirms overall photo permission; originals not inspected.",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/spatia/view-3.webp",
+      "sha256": "b1e77cb79aed5d12009261e633754d6e5e82d204c2081a35761e6fc11540953d",
+      "bytes": 459602,
+      "originalSize": [
+        2048,
+        1365
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "view-1",
       "propertyKey": "almalusa",
       "property": "AlmaLusa Comporta",
       "sourcePage": "https://www.almalusahotels.com/comporta/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Image not collected or manually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://static.guestcentric.net/bin/f4899f244512df72/almalusa-comporta-imageLink07_2026-16_25_54-2-.webp",
+      "frCaption": "AlmaLusa Comporta · ambiance village et hôtel",
+      "enCaption": "AlmaLusa Comporta · village-hotel atmosphere",
+      "credit": "AlmaLusa Comporta · official publisher (original photographer not identified)",
+      "license": "Commercial photo use operator-attested only; underlying licence not independently checked",
+      "licenseUrl": "https://www.almalusahotels.com/comporta/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator confirms overall photo permission; originals not inspected.",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/almalusa/view-1.webp",
+      "sha256": "69878d570e7973b0babaa9a006091defa487933e482c3fe65b7b8b109e28d833",
+      "bytes": 48646,
+      "originalSize": [
+        600,
+        632
+      ],
+      "outputSize": [
+        600,
+        632
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "view-2",
       "propertyKey": "almalusa",
       "property": "AlmaLusa Comporta",
       "sourcePage": "https://www.almalusahotels.com/comporta/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Image not collected or manually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://static.guestcentric.net/bin/f4899f244512df72/almalusa-comporta-imageLinkalmalusa-comporta-swimming-pool.webp",
+      "frCaption": "AlmaLusa Comporta · piscine extérieure de l’établissement",
+      "enCaption": "AlmaLusa Comporta · hotel outdoor pool",
+      "credit": "AlmaLusa Comporta · official publisher (original photographer not identified)",
+      "license": "Commercial photo use operator-attested only; underlying licence not independently checked",
+      "licenseUrl": "https://www.almalusahotels.com/comporta/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator confirms overall photo permission; originals not inspected.",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/almalusa/view-2.webp",
+      "sha256": "448d969c60541230f6df55043c6bb34063564b0c2b6594323351679caf3f97c1",
+      "bytes": 49280,
+      "originalSize": [
+        600,
+        632
+      ],
+      "outputSize": [
+        600,
+        632
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "view-3",
       "propertyKey": "almalusa",
       "property": "AlmaLusa Comporta",
       "sourcePage": "https://www.almalusahotels.com/comporta/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Image not collected or manually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://static.guestcentric.net/bin/f4899f244512df72/almalusa-comporta-imageLinkgarden-suites00006-4.webp",
+      "frCaption": "AlmaLusa Comporta · terrasse de suite jardin",
+      "enCaption": "AlmaLusa Comporta · garden suite terrace",
+      "credit": "AlmaLusa Comporta · official publisher (original photographer not identified)",
+      "license": "Commercial photo use operator-attested only; underlying licence not independently checked",
+      "licenseUrl": "https://www.almalusahotels.com/comporta/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator confirms overall photo permission; originals not inspected.",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/almalusa/view-3.webp",
+      "sha256": "d78abf5eb14ebc40bdc0f3fc3309e93b6c357e9dae1b4534827821c467e9c5c8",
+      "bytes": 97818,
+      "originalSize": [
+        600,
+        632
+      ],
+      "outputSize": [
+        600,
+        632
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     }
   ],
   "destinationScenes": [
     {
       "key": "scene-1",
       "place": "Comporta Beach in May - panoramio.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Original Commons image licence and location pending confirmation",
-      "frCaption": "",
-      "enCaption": ""
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Comporta_Beach_in_May_-_panoramio.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/31/Comporta_Beach_in_May_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "augustoptm",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "frCaption": "Praia da Comporta · dunes et côte Atlantique",
+      "enCaption": "Praia da Comporta · Atlantic dunes and coast",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/destination/scene-1.webp",
+      "sha256": "6cdcf0d629d0f2e70031f05b784bd8aa15903ad73847763af8c9d5c22d5034df",
+      "bytes": 136454,
+      "originalSize": [
+        1280,
+        960
+      ],
+      "outputSize": [
+        1280,
+        960
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "scene-2",
       "place": "Praia da Comporta.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Original Commons image licence and location pending confirmation",
-      "frCaption": "",
-      "enCaption": ""
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Praia_da_Comporta.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Praia_da_Comporta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Cristiano Tomás",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "frCaption": "Praia da Comporta · accès à la plage de sable",
+      "enCaption": "Praia da Comporta · sandy beach access",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/destination/scene-2.webp",
+      "sha256": "04c7426aaac66d216a4fb8ea6f065c843c71acb35751068ac591e9e80c25f48b",
+      "bytes": 246658,
+      "originalSize": [
+        1440,
+        1920
+      ],
+      "outputSize": [
+        937,
+        1250
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "scene-3",
       "place": "Praia do Pego, Comporta.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Original Commons image licence and location pending confirmation",
-      "frCaption": "",
-      "enCaption": ""
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Praia_do_Pego,_Comporta.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Praia_do_Pego%2C_Comporta.jpg/1920px-Praia_do_Pego%2C_Comporta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Cristiano Tomás",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "frCaption": "Praia do Pego · côte de Carvalhal",
+      "enCaption": "Praia do Pego · coastline near Carvalhal",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/destination/scene-3.webp",
+      "sha256": "f73baf413d24c282eb311441daed7226ef6b673e28b0b9da92d62dc529f4befc",
+      "bytes": 493832,
+      "originalSize": [
+        1920,
+        1475
+      ],
+      "outputSize": [
+        1627,
+        1250
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "scene-4",
       "place": "Litoral entre a Praia do Carvalhal e a Praia dos Brejos - Portugal (48800641158).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Original Commons image licence and location pending confirmation",
-      "frCaption": "",
-      "enCaption": ""
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Litoral_entre_a_Praia_do_Carvalhal_e_a_Praia_dos_Brejos_-_Portugal_(48800641158).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Litoral_entre_a_Praia_do_Carvalhal_e_a_Praia_dos_Brejos_-_Portugal_%2848800641158%29.jpg/1920px-Litoral_entre_a_Praia_do_Carvalhal_e_a_Praia_dos_Brejos_-_Portugal_%2848800641158%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "frCaption": "Carvalhal · côte sauvage et dunes",
+      "enCaption": "Carvalhal · protected sand and dunes",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/destination/scene-4.webp",
+      "sha256": "9c96025017164d01ab8906e71cafc554274616ef28d678cfd93db6ef0f2ebe9a",
+      "bytes": 623956,
+      "originalSize": [
+        1920,
+        1242
+      ],
+      "outputSize": [
+        1750,
+        1132
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "scene-5",
       "place": "Carrasqueira palafitic pier, Comporta, Portugal (PPL3-Altered) julesvernex2.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Original Commons image licence and location pending confirmation",
-      "frCaption": "",
-      "enCaption": ""
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Carrasqueira_palafitic_pier,_Comporta,_Portugal_(PPL3-Altered)_julesvernex2.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Carrasqueira_palafitic_pier%2C_Comporta%2C_Portugal_%28PPL3-Altered%29_julesvernex2.jpg/1920px-Carrasqueira_palafitic_pier%2C_Comporta%2C_Portugal_%28PPL3-Altered%29_julesvernex2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Jules Verne Times Two",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "frCaption": "Carrasqueira · jetées des pêcheurs sur pilotis",
+      "enCaption": "Carrasqueira · traditional stilted fishing piers",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/destination/scene-5.webp",
+      "sha256": "77fc2d17f7d8c5930af73d18e22ba0ca24da5a8b503ee0d14f7fbf3c1881b17d",
+      "bytes": 290200,
+      "originalSize": [
+        1920,
+        1315
+      ],
+      "outputSize": [
+        1750,
+        1199
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "scene-6",
       "place": "Palafitic Pier At Carrasqueira (208223507).jpeg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Original Commons image licence and location pending confirmation",
-      "frCaption": "",
-      "enCaption": ""
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Palafitic_Pier_At_Carrasqueira_(208223507).jpeg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Palafitic_Pier_At_Carrasqueira_%28208223507%29.jpeg/1920px-Palafitic_Pier_At_Carrasqueira_%28208223507%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Luís Ascenso",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "frCaption": "Carrasqueira · pontons en bois sur l’estuaire",
+      "enCaption": "Carrasqueira · timber platforms over the estuary",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/destination/scene-6.webp",
+      "sha256": "dffbf73ea6d17b1dbc057d89a2206a0e01abae66b62fcf2a5079c5354b21218f",
+      "bytes": 200450,
+      "originalSize": [
+        1920,
+        1282
+      ],
+      "outputSize": [
+        1750,
+        1168
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "scene-7",
       "place": "Tróia beach.JPG",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Original Commons image licence and location pending confirmation",
-      "frCaption": "",
-      "enCaption": ""
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tr%C3%B3ia_beach.JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Tr%C3%B3ia_beach.JPG/1920px-Tr%C3%B3ia_beach.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Husond",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "frCaption": "Tróia · péninsule de sable vers le Sado",
+      "enCaption": "Tróia · peninsula beach by the Sado",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/destination/scene-7.webp",
+      "sha256": "00b994f3df51b76c1d8433693bb8e88dfd702e4d36a2d97c22d292d6f0382681",
+      "bytes": 276860,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "scene-8",
       "place": "Foz do rio Sado.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Original Commons image licence and location pending confirmation",
-      "frCaption": "",
-      "enCaption": ""
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Foz_do_rio_Sado.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Foz_do_rio_Sado.jpg/1920px-Foz_do_rio_Sado.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Filipe Rocha,user:sacavem (pt) http://pt.wikipedia.org/wiki/Usu%C3%A1rio:Sacavem (pt:usuário:sacavem)",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "frCaption": "Estuaire du Sado · eaux et zones naturelles",
+      "enCaption": "Sado estuary · river mouth and protected wetlands",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/destination/scene-8.webp",
+      "sha256": "b67de3c3f22b7213f559d4902edeeaa0e59034c56c61aed005a470082ab8380a",
+      "bytes": 236348,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     },
     {
       "key": "scene-9",
       "place": "Comporta2.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Original Commons image licence and location pending confirmation",
-      "frCaption": "",
-      "enCaption": ""
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Comporta2.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Comporta2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Bunks",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "frCaption": "Comporta · paysage côtier du village",
+      "enCaption": "Comporta · local coastal landscape",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/comporta-premium/destination/scene-9.webp",
+      "sha256": "3833eca11fe04466b841546d53e9b6a42d2b11fae6595aa021c12e18e3f2b121",
+      "bytes": 94630,
+      "originalSize": [
+        1024,
+        768
+      ],
+      "outputSize": [
+        1024,
+        768
+      ],
+      "imageTransformation": "Orientation corrected and resized to WebP preserving content and aspect ratio"
     }
   ],
-  "publicationBlockedReason": "Comporta original images and private Preview remain to be validated. Strict noindex.",
-  "photoRightsBasis": "Owner states project-wide photo permission; official photographer licences unverified; retain Wikimedia Commons licence at asset level."
+  "publicationBlockedReason": "21 provenance-checked Comporta photos committed for internal noindex preview; independent browser visual QA and supplier licensing still required.",
+  "photoRightsBasis": "Hotel assets approved by operator statement; Commons attribution and open licences retained per image."
 }
