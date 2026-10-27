@@ -1,6 +1,6 @@
 # Ibiza — 21 photographies à contrôler
 
-**Candidats récupérés : 21/21 · Validés visuellement : 0/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 18/21 · Validés visuellement : 0/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Ibiza](ibiza.jpg)
 
@@ -13,13 +13,13 @@
 | 5 | Nobu Hotel Ibiza Bay — view-2 | [Source](https://www.nobuhotelibizabay.com/) ·     | Candidate; **Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.** |
 | 6 | Nobu Hotel Ibiza Bay — view-3 | [Source](https://www.nobuhotelibizabay.com/) ·     | Candidate; **Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.** |
 | 7 | 7Pines Resort Ibiza — view-1 | [Source](https://7pines-ibiza.com/en/resort) ·     | Candidate; **Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.** |
-| 8 | 7Pines Resort Ibiza — view-2 | [Source](https://7pines-ibiza.com/en/dining) ·     | Candidate; **Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.** |
+| 8 | 7Pines Resort Ibiza — view-2 | [Source](https://7pines-ibiza.com/en/dining) · | Manquante; **Image was the 7Pines restaurant terrace; the view-2 intent is an authentic hotel guest suite.** |
 | 9 | 7Pines Resort Ibiza — view-3 | [Source](https://7pines-ibiza.com/en/resort) · A waiter carries a tray on a terrace at 7Pines Resort Ibiza overlooking the Mediterranean Sea and Es Vedrà.    | Candidate; **Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.** |
 | 10 | The Standard, Ibiza — view-1 | [Source](https://www.cntraveller.com/hotels/the-standard-ibiza-review) · Actual rooftop at The Standard Ibiza, source CN Traveller property review| Candidate; **Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.** |
 | 11 | The Standard, Ibiza — view-2 | [Source](https://www.cntraveller.com/hotels/the-standard-ibiza-review) · Actual guest suite at The Standard Ibiza, source hotel review| Candidate; **Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.** |
-| 12 | The Standard, Ibiza — view-3 | [Source](https://www.cntraveller.com/hotels/the-standard-ibiza-review) · Jara restaurant at The Standard Ibiza, photographed for hotel review| Candidate; **Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.** |
+| 12 | The Standard, Ibiza — view-3 | [Source](https://www.cntraveller.com/hotels/the-standard-ibiza-review) · | Manquante; **The old Jara crop mostly showed curtains and a lamp, not the distinctive restaurant; replacing with a wider properly sourced room.** |
 | 13 | Dalt Vila Eivissa ancienne citadelle — scene-1 | [Source](https://commons.wikimedia.org/wiki/File:Eivissa_-_Dalt_Vila_from_Airplane.jpg) · Dalt Vila and cathedral photographed from a plane, 2024 by UnFUG-Fabi| Candidate; **Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.** |
-| 14 | Port et Marina Botafoch — scene-2 | [Source](https://commons.wikimedia.org/wiki/File:Ibiza_Port.jpg) · Ibiza city marina port panorama from shore, 2022 by Josi; not a claim of an exact Botafoch quay| Candidate; **Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.** |
+| 14 | Port et Marina Botafoch — scene-2 | [Source](https://commons.wikimedia.org/wiki/File:Ibiza_Port.jpg) · | Manquante; **The old Ibiza port photo is hazy and low-contrast, fails premium sunny marina art direction.** |
 | 15 | Baie de Talamanca — scene-3 | [Source](https://commons.wikimedia.org/wiki/File:Platja_de_Talamanca_-_Playa_de_Talamanca.jpg) · True Talamanca Beach bay, Ibiza, not a resort pool| Candidate; **Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.** |
 | 16 | Cala Xarraca, crique du nord — scene-4 | [Source](https://commons.wikimedia.org/wiki/File:Cala_xarraca.JPG) · File:Cala xarraca.JPG| Candidate; **Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.** |
 | 17 | Vue Es Vedrà depuis falaises occidentales — scene-5 | [Source](https://commons.wikimedia.org/wiki/File:Es_Vedrà_from_a_cave,_Ibiza.jpg) · Es Vedra from coast cave, CC0, 2023 by Gerda Arendt| Candidate; **Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.** |
