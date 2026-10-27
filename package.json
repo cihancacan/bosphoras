@@ -10,7 +10,8 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "seo:check": "node -r ./scripts/register-ts.cjs scripts/check-seo.cjs",
-    "seo:submit": "node scripts/submit-indexnow.mjs"
+    "seo:submit": "node scripts/submit-indexnow.mjs",
+    "partners:check": "node -r ./scripts/register-ts.cjs --test scripts/check-hotel-partners.cjs"
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.14.6",

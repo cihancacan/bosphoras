@@ -1,3 +1,4 @@
+async function main() {
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
@@ -36,7 +37,14 @@ for (const [source, destination] of redirectMap) {
   assert(!redirectMap.has(destination), `Redirect chain: ${source}`);
   assert(known.has(destination), `Unknown redirect destination: ${destination}`);
 }
-const entries = sitemap();
+// The sitemap also includes published property routes, which are dynamic pages.
+const { fetchPublishedProperties } = require('../lib/propertyStore');
+const { getPropertyPath } = require('../data/propertyDesk');
+const { locales } = require('../lib/i18n');
+for (const property of await fetchPublishedProperties()) {
+  for (const locale of locales) known.add(normalize(getCanonicalUrl(locale, getPropertyPath(locale, property))));
+}
+const entries = await sitemap();
 assert.equal(entries.length, new Set(entries.map((entry) => entry.url)).size, 'Duplicate sitemap URLs');
 for (const entry of entries) {
   assert.equal(new URL(entry.url).origin, siteUrl);
@@ -58,3 +66,6 @@ assert(!JSON.stringify(serviceSchema({ name: 'Legal coordination', description: 
 assert(!websiteSchema().potentialAction, 'Nonexistent public search route');
 assert(!fs.readFileSync('app/layout.tsx', 'utf8').includes('bosphoras-transfer-back-lock'), 'Back navigation trap reintroduced');
 console.log(`SEO checks passed: ${entries.length} sitemap URLs, ${alternates} language links, ${redirects.length} exact redirects.`);
+
+}
+main().catch(error => { console.error(error); process.exitCode = 1; });

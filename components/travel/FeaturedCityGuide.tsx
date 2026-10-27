@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { HotelPartnerBooking } from '@/components/travel/HotelPartnerBooking';
+import { hotelPartnerKey } from '@/lib/travel/hotelPartners';
 import type { BodrumHotelEditorial } from '@/data/travel/bodrumPremiumEditorial';
 import { alpineHotelEditorialByCity,alpineAreaVisualsByCity,alpineAvailablePhotoPathsByCity } from '@/data/travel/alpinePremiumEditorial';
 import { stMoritzDraftFaq } from '@/data/travel/stMoritzDraftFaq';
@@ -246,6 +248,7 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
           className="mt-auto pt-8 text-sm font-semibold text-[#855f2e] underline underline-offset-4">
           {fr?'Consulter le site officiel':'Visit the official hotel website'} ↗
         </a>
+        <HotelPartnerBooking hotelKey={hotelPartnerKey(guide.slug, hotel.officialUrl)} locale={locale} />
       </article>)}
     </div>
     <p className="mt-7 text-sm leading-7 text-[#667078]">{fr
@@ -268,8 +271,8 @@ function Advice({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang}) {
           <span aria-hidden="true" className="font-semibold text-[#947048]">◆</span><span>{item}</span>
         </li>)}</ul>
         <p className="mt-7 border-t border-[#e7ddd0] pt-5 text-sm leading-7 text-[#596a72]">{fr
-          ? 'Les liens des établissements mènent vers leurs informations officielles. Les réservations Bosphoras seront activées uniquement après validation du fournisseur et de la disponibilité réelle.'
-          : 'Hotel links lead to official property information. Bosphoras booking will only be enabled after provider approval and verified real-time inventory.'}</p>
+          ? 'Les liens des établissements mènent vers leurs informations officielles. Les liens de réservation partenaires sont proposés uniquement après vérification. Le fournisseur gère la réservation et son SAV.'
+          : 'Hotel links lead to official property information. Partner booking links are offered only after verification. The provider handles the booking and its customer service.'}</p>
       </div>
     </div>
   </section>;

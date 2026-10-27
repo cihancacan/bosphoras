@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { HotelPartnerBooking } from '@/components/travel/HotelPartnerBooking';
+import { hotelPartnerKey } from '@/lib/travel/hotelPartners';
 import { hotelHeroPhoto } from '@/data/travel/hotelPhotography';
 
 /**
@@ -67,6 +69,7 @@ export function EditorialHotelCard({ hotel, index, locale }: EditorialHotelCardP
           {fr ? 'Voir le site officiel de l’hôtel' : 'Visit the official hotel website'}
           <span aria-hidden="true"> ↗</span>
         </a>
+        <HotelPartnerBooking hotelKey={hotelPartnerKey('istanbul', hotel.id)} locale={locale} />
       </div>
     </article>
   );

@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { HotelPartnerBooking } from '@/components/travel/HotelPartnerBooking';
+import { hotelPartnerKey } from '@/lib/travel/hotelPartners';
 import Link from 'next/link';
 import { istanbulHotels } from '@/data/travel/istanbulFlagship';
 
@@ -95,12 +97,13 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#956f3c]">Bosphoras Luxury Stays</p>
             <h2 className="mt-4 font-serif text-2xl">{fr ? 'Vérification officielle' : 'Official information'}</h2>
             <p className="mt-4 text-sm leading-7 text-[#52616c]">
-              {fr ? 'Cette fiche est une sélection éditoriale indépendante. L’inventaire de réservation et les tarifs seront ajoutés après validation du fournisseur.' : 'This is an independent editorial profile. Booking inventory and rates will be added only after supplier verification.'}
+              {fr ? 'Cette fiche est une sélection éditoriale indépendante. Les éventuels liens de réservation renvoient vers des partenaires vérifiés.' : 'This is an independent editorial profile. Any booking links lead to verified partners.'}
             </p>
             <a href={hotel.officialUrl} target="_blank" rel="noopener noreferrer"
               className="mt-7 inline-flex bg-[#142d39] px-5 py-4 text-sm font-semibold text-white hover:bg-[#285063]">
               {fr ? 'Consulter le site officiel' : 'Visit official hotel website'} ↗
             </a>
+            <HotelPartnerBooking hotelKey={hotelPartnerKey('istanbul', hotel.id)} locale={locale} />
           </aside>
         </div>
 
