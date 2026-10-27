@@ -7,3 +7,4 @@ const photos:Record<string,FeaturedCityPhoto>={};
 for(const x of media.destinationScenes as Candidate[])if(approvedTurksAndCaicosPhoto(x)&&x.localPath&&x.sourcePage)photos[x.key]={src:x.localPath,fr:x.frCaption!,en:x.enCaption!,author:x.credit||'Original publisher',license:x.license||'Rights to verify',licenseUrl:x.licenseUrl||x.sourcePage,sourcePage:x.sourcePage};
 const g=turksAndCaicosDraftGuide;
 export const turksAndCaicosGuide:FeaturedCityGuideData={...g,areas:g.areas.map(x=>({...x})),experiences:g.experiences.map(x=>({...x})),hotels:g.hotels.map(x=>({...x})),checksFr:[...g.checksFr],checksEn:[...g.checksEn],photos};
+// The photo allowlist is intentionally separate from public-commercial/SEO approval.
