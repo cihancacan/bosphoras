@@ -4,6 +4,7 @@ const React = require('react');
 const { renderToStaticMarkup } = require('react-dom/server');
 const { hotelProviders, hotelPartnerLinks, supplierResponsibilities, hotelPartnerKey, isVerifiedHotelLink, getHotelPartnerLinks } = require('../lib/travel/hotelPartners');
 const { HotelPartnerBooking } = require('../components/travel/HotelPartnerBooking');
+const { isHotelSearchPreview } = require('../lib/travel/hotelSearchPreview');
 
 // Reserved .invalid domains: test fixtures only; never rendered by application config.
 const now = Date.parse('2026-10-27T12:00:00Z');
@@ -69,6 +70,24 @@ test('checked-in configuration has no invented or incomplete active links', () =
   // Lot 1: account-specific evidence is not available yet.
   assert(hotelProviders.every(item => item.status === 'pending'));
   assert.equal(hotelPartnerLinks.length, 0);
+});
+
+test('white-label links require the same agreement, supplier and tracking evidence as redirects', () => {
+  const hosted = { ...provider, mode: 'supplier-hosted' };
+  assert.equal(isVerifiedHotelLink(link, hosted, now), true);
+  assert.equal(isVerifiedHotelLink({ ...link, attributionEvidence: '' }, hosted, now), false);
+  assert.equal(isVerifiedHotelLink(link, { ...hosted, merchantOfRecord: 'bosphoras' }, now), false);
+  assert.equal(isVerifiedHotelLink(link, { ...hosted, responsibilities: { ...hosted.responsibilities, customerSupport: false } }, now), false);
+});
+
+test('search preparation is confined to local development and the approved Preview branch', () => {
+  const branch = 'feature/luxury-travel-seo-destinations-20261012';
+  assert.equal(isHotelSearchPreview({ VERCEL_ENV: 'preview', VERCEL_GIT_COMMIT_REF: branch }), true);
+  assert.equal(isHotelSearchPreview({ NODE_ENV: 'development' }), true);
+  for (const env of [{}, { NODE_ENV: 'production' }, { VERCEL_ENV: 'production', VERCEL_GIT_COMMIT_REF: branch },
+    { VERCEL_ENV: 'preview', VERCEL_GIT_COMMIT_REF: 'main' }, { VERCEL_ENV: 'preview' }]) {
+    assert.equal(isHotelSearchPreview(env), false);
+  }
 });
 
 test('FR/EN pages explain referral role without an unverified CTA, price or checkout', () => {

@@ -6,7 +6,7 @@ export type HotelProvider = {
   id: ProviderId;
   name: string;
   status: 'pending' | 'approved' | 'suspended';
-  mode: 'tracked-redirect';
+  mode: 'tracked-redirect' | 'supplier-hosted';
   merchantOfRecord: 'supplier';
   /** Reference to the applicable account contract, not merely a marketing page. */
   agreementReference: string;
@@ -24,7 +24,7 @@ const pending = (id: ProviderId, name: string): HotelProvider => ({
 // No account-specific agreement, deep link or attribution has yet been verified.
 export const hotelProviders: readonly HotelProvider[] = [
   pending('wink', 'Wink'),
-  pending('nuitee-connect', 'Nuitée Connect'),
+  { ...pending('nuitee-connect', 'Nuitée Connect'), mode: 'supplier-hosted' },
   pending('expedia-creator', 'Expedia'),
   pending('travelpayouts', 'Travelpayouts'),
   pending('ratehawk', 'RateHawk'),
@@ -69,7 +69,7 @@ function httpsUrl(value: string, hosts?: readonly string[]): boolean {
 
 export function isVerifiedHotelLink(link: HotelPartnerLink, provider: HotelProvider | undefined, now = Date.now()): boolean {
   if (!provider || provider.id !== link.providerId || provider.status !== 'approved' ||
-      provider.mode !== 'tracked-redirect' || provider.merchantOfRecord !== 'supplier' ||
+      !['tracked-redirect', 'supplier-hosted'].includes(provider.mode) || provider.merchantOfRecord !== 'supplier' ||
       !provider.agreementReference.trim() || !supplierResponsibilities.every(key => provider.responsibilities[key] === true)) return false;
   const verified = Date.parse(link.verifiedAt);
   const review = Date.parse(link.reviewBy);

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { isHotelSearchPreview } from '@/lib/travel/hotelSearchPreview';
 import { travelEditorial } from '@/data/travel/editorial';
 import { IstanbulFlagship } from '@/components/travel/IstanbulFlagship';
 import { FeaturedCityGuide } from '@/components/travel/FeaturedCityGuide';
@@ -227,7 +228,7 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     robots: { index: ready, follow: true, 'max-image-preview': 'large' },
   };
 }
-function Header({ locale, slug, limitedLocales = false }: { locale: TravelLocale; slug: string; limitedLocales?: boolean }) {
+export function Header({ locale, slug, limitedLocales = false }: { locale: TravelLocale; slug: string; limitedLocales?: boolean }) {
   const t = travelText(locale);
   return <header className="bg-[#0d1a23] text-[#faf6e9] border-b border-[#c5a56a]/30">
     <div className="mx-auto max-w-7xl px-5 py-5 flex flex-wrap gap-5 items-center justify-between">
@@ -235,6 +236,7 @@ function Header({ locale, slug, limitedLocales = false }: { locale: TravelLocale
         BOSPHORAS <span className="text-[#cdb37b]">LUXURY STAYS</span>
       </Link>
       <nav aria-label="Travel primary navigation" className="flex gap-4 sm:gap-6 text-xs sm:text-sm flex-wrap items-center">
+        {(locale === 'fr' || locale === 'en') && isHotelSearchPreview() && <Link href={travelHref(locale,'search')} className="text-[#e7c78a]">{locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel'}</Link>}
         <Link href={travelHref(locale,'destinations')} className="hover:text-[#e7c78a]">{t.destinations}</Link>
         <Link href={travelHref(locale,'last-minute')} className="hover:text-[#e7c78a]">{t.lastMinute}</Link>
         <Link href={travelHref(locale,'private-collection')} className="hover:text-[#e7c78a]">{t.privateCollection}</Link>
@@ -248,7 +250,7 @@ function Header({ locale, slug, limitedLocales = false }: { locale: TravelLocale
     </nav>
   </header>;
 }
-function Footer({ locale }: { locale: TravelLocale }) {
+export function Footer({ locale }: { locale: TravelLocale }) {
   const t = travelText(locale);
   return <footer className="bg-[#0d1a23] text-[#eee5d8] mt-20">
     <div className="mx-auto max-w-7xl px-5 py-12 grid gap-8 md:grid-cols-3 text-sm">
