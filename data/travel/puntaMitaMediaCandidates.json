@@ -1,0 +1,601 @@
+{
+  "destination": "punta-mita",
+  "hotels": [
+    {
+      "key": "view-1",
+      "sourcePage": "https://luxuriavacations.com/destinations/mexico/pacific-coast-of-mexico/riviera-nayarit/four-seasons-punta-mita/rooms/four-seasons-punta-mita-oceanfront-casita",
+      "downloadUrl": "https://d20kc7ig5255k8.cloudfront.net/Rooms/Pictures/oceanfront-casita-64fe2e1529924.jpg",
+      "credit": "Four Seasons Resort Punta Mita · original photographer and commercial reproduction terms not independently verified",
+      "license": "Owner-only private Preview candidate; no public-commercial licence inferred",
+      "licenseUrl": "https://luxuriavacations.com/destinations/mexico/pacific-coast-of-mexico/riviera-nayarit/four-seasons-punta-mita/rooms/four-seasons-punta-mita-oceanfront-casita",
+      "rightsEvidenceType": "publisher_labelled_property_image",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Four Seasons · Oceanfront Casita au-dessus du Pacifique",
+      "enCaption": "Four Seasons · Oceanfront Casita and Pacific view",
+      "localPath": "/images/travel/punta-mita-premium/four-seasons/view-1.webp",
+      "sha256": "4f98541b325f7faedd723768752bf18412dfb2bdaea724ad2e667a5b10ccc56f",
+      "bytes": 92888,
+      "originalSize": [
+        1500,
+        1000
+      ],
+      "outputSize": [
+        1500,
+        1000
+      ],
+      "propertyKey": "four-seasons",
+      "property": "Four Seasons Resort Punta Mita"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://www.the-family-project.com/reiseziele/mittelamerika/mexiko/four-seasons-punta-mita",
+      "downloadUrl": "https://www.the-family-project.com/hs-fs/hubfs/Website/lateinamerika/lateinamerika-fertig/four-seasons-resort-punta-mita/1-four-seasons-resort-punta-mita-mexiko-mittelamerika-the-family-project-luxus-familie-kinder-reisen.webp?height=800&name=1-four-seasons-resort-punta-mita-mexiko-mittelamerika-the-family-project-luxus-familie-kinder-reisen.webp&width=1200",
+      "credit": "Four Seasons Resort Punta Mita · original photographer and commercial reproduction terms not independently verified",
+      "license": "Owner-only private Preview candidate; no public-commercial licence inferred",
+      "licenseUrl": "https://www.the-family-project.com/reiseziele/mittelamerika/mexiko/four-seasons-punta-mita",
+      "rightsEvidenceType": "publisher_labelled_property_image",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Four Seasons · piscines et plage vues depuis le ciel",
+      "enCaption": "Four Seasons · resort pools and beach aerial",
+      "localPath": "/images/travel/punta-mita-premium/four-seasons/view-2.webp",
+      "sha256": "ecf7d5e78015f4be023eedbccc728618be0a584badc9c7f344bce067575d7077",
+      "bytes": 296192,
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ],
+      "propertyKey": "four-seasons",
+      "property": "Four Seasons Resort Punta Mita"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://gearminded.com/four-seasons-punta-mita-aerea/",
+      "downloadUrl": "https://gearminded.com/wp-content/uploads/2016/07/Four-Seasons-Punta-Mita-Aerea-1170x790.jpg",
+      "credit": "Four Seasons Resort Punta Mita · original photographer and commercial reproduction terms not independently verified",
+      "license": "Owner-only private Preview candidate; no public-commercial licence inferred",
+      "licenseUrl": "https://gearminded.com/four-seasons-punta-mita-aerea/",
+      "rightsEvidenceType": "publisher_labelled_property_image",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Four Seasons · géographie de la péninsule privée",
+      "enCaption": "Four Seasons · ocean-side resort peninsula",
+      "localPath": "/images/travel/punta-mita-premium/four-seasons/view-3.webp",
+      "sha256": "748a656dcc24f9c124542e62f2bdbbef34e5a07eb445530c284307aa5ac9a7ef",
+      "bytes": 186762,
+      "originalSize": [
+        1170,
+        790
+      ],
+      "outputSize": [
+        1170,
+        790
+      ],
+      "propertyKey": "four-seasons",
+      "property": "Four Seasons Resort Punta Mita"
+    },
+    {
+      "key": "view-1",
+      "sourcePage": "https://www.marriott.com/en-us/hotels/pvrxr-the-st-regis-punta-mita-resort/rooms/villas/",
+      "downloadUrl": "https://cache.marriott.com/is/image/marriotts7prod/xr-pvrxr-villa-living-rm-41570-02318%3AClassic-Hor?fit=constrain&wid=1300",
+      "credit": "The St. Regis Punta Mita Resort · original photographer and commercial reproduction terms not independently verified",
+      "license": "Owner-only private Preview candidate; no public-commercial licence inferred",
+      "licenseUrl": "https://www.marriott.com/en-us/hotels/pvrxr-the-st-regis-punta-mita-resort/rooms/villas/",
+      "rightsEvidenceType": "publisher_labelled_property_image",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "St. Regis · salon de villa et accès piscine",
+      "enCaption": "St. Regis · named villa living room and pool",
+      "localPath": "/images/travel/punta-mita-premium/st-regis/view-1.webp",
+      "sha256": "1aa7d8a59cdc41a51172c2bc25ce5e0b8fc692666aabb876332ccfb0beb231c2",
+      "bytes": 161788,
+      "originalSize": [
+        1300,
+        867
+      ],
+      "outputSize": [
+        1300,
+        867
+      ],
+      "propertyKey": "st-regis",
+      "property": "The St. Regis Punta Mita Resort"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://www.hotel-online.com/news/the-iconic-st-regis-punta-mita-raises-completes-first-phase-of-property-wide-renovation/",
+      "downloadUrl": "https://hotelonline-assets1.nyc3.digitaloceanspaces.com/wordpress/2023/02/St-Regis-Punta-Mita-renovated-suite-02282023.jpg",
+      "credit": "The St. Regis Punta Mita Resort · original photographer and commercial reproduction terms not independently verified",
+      "license": "Owner-only private Preview candidate; no public-commercial licence inferred",
+      "licenseUrl": "https://www.hotel-online.com/news/the-iconic-st-regis-punta-mita-raises-completes-first-phase-of-property-wide-renovation/",
+      "rightsEvidenceType": "publisher_labelled_property_image",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "St. Regis · suite rénovée tournée vers l’océan",
+      "enCaption": "St. Regis · renovated Pacific suite",
+      "localPath": "/images/travel/punta-mita-premium/st-regis/view-2.webp",
+      "sha256": "d8ffdf63a0a6bb19044102ccc4a56faca33058413d4667f4c1cfb6e08d0bb20b",
+      "bytes": 82206,
+      "originalSize": [
+        962,
+        641
+      ],
+      "outputSize": [
+        962,
+        641
+      ],
+      "propertyKey": "st-regis",
+      "property": "The St. Regis Punta Mita Resort"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://www.luxurylink.com/5star/hotels/punta-de-mita-mexico/st-regis-punta-mita-resort",
+      "downloadUrl": "https://www.luxurylink.com/images/sho_58517053/3042_529-1280/image-3042_529.jpg?filtered=1",
+      "credit": "The St. Regis Punta Mita Resort · original photographer and commercial reproduction terms not independently verified",
+      "license": "Owner-only private Preview candidate; no public-commercial licence inferred",
+      "licenseUrl": "https://www.luxurylink.com/5star/hotels/punta-de-mita-mexico/st-regis-punta-mita-resort",
+      "rightsEvidenceType": "publisher_labelled_property_image",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "St. Regis · piscine et jardin tropical de villa",
+      "enCaption": "St. Regis · villa garden and private pool",
+      "localPath": "/images/travel/punta-mita-premium/st-regis/view-3.webp",
+      "sha256": "389c307e9990a4addd817778bcd4de600978f158e29ec6035f31ee2a5b93fea9",
+      "bytes": 284558,
+      "originalSize": [
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "propertyKey": "st-regis",
+      "property": "The St. Regis Punta Mita Resort"
+    },
+    {
+      "key": "view-1",
+      "sourcePage": "https://www.hilton.com/en/hotels/pvrpmci-conrad-punta-de-mita/",
+      "downloadUrl": "https://assets.hiltonstatic.com/hilton-asset-cache/image/upload/c_fill%2Cw_1920%2Ch_1080%2Cq_70%2Cf_auto%2Cg_auto/Imagery/Property%20Photography/Conrad/P/PVRPMCI/PVRPMCI_Aereal_Areas2.jpg",
+      "credit": "Conrad Punta de Mita · original photographer and commercial reproduction terms not independently verified",
+      "license": "Owner-only private Preview candidate; no public-commercial licence inferred",
+      "licenseUrl": "https://www.hilton.com/en/hotels/pvrpmci-conrad-punta-de-mita/",
+      "rightsEvidenceType": "publisher_labelled_property_image",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Conrad · architecture, piscines et plage aériennes",
+      "enCaption": "Conrad · beachfront hotel and pool aerial",
+      "localPath": "/images/travel/punta-mita-premium/conrad/view-1.webp",
+      "sha256": "1ab035ae87e1b344a24da995929f4f0156d36e7c27fb2c39a577d2088c4ef737",
+      "bytes": 360212,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1650,
+        928
+      ],
+      "propertyKey": "conrad",
+      "property": "Conrad Punta de Mita"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://www.hilton.com/en/hotels/pvrpmci-conrad-punta-de-mita/rooms/",
+      "downloadUrl": "https://www.hilton.com/im/en/PVRPMCI/14902933/pvrpmci-king-room-view.jpg?ch=2872&cw=4800&gravity=NorthWest&impolicy=crop&rh=484&rw=807&xposition=0&yposition=163",
+      "credit": "Conrad Punta de Mita · original photographer and commercial reproduction terms not independently verified",
+      "license": "Owner-only private Preview candidate; no public-commercial licence inferred",
+      "licenseUrl": "https://www.hilton.com/en/hotels/pvrpmci-conrad-punta-de-mita/rooms/",
+      "rightsEvidenceType": "publisher_labelled_property_image",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Conrad · véritable chambre vue mer",
+      "enCaption": "Conrad · hotel king ocean-view room",
+      "localPath": "/images/travel/punta-mita-premium/conrad/view-2.webp",
+      "sha256": "27320c148f1246c98cb93a818f8459a6f306e1f2212ffab5234e41069f0f0568",
+      "bytes": 31326,
+      "originalSize": [
+        807,
+        484
+      ],
+      "outputSize": [
+        807,
+        484
+      ],
+      "propertyKey": "conrad",
+      "property": "Conrad Punta de Mita"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://www.kiwicollection.com/hotel-detail/conrad-punta-de-mita",
+      "downloadUrl": "https://cdn.kiwicollection.com/media/room_images/PR241023/xl/241023-06-ocean-front-suite-one-king-bed.jpg",
+      "credit": "Conrad Punta de Mita · original photographer and commercial reproduction terms not independently verified",
+      "license": "Owner-only private Preview candidate; no public-commercial licence inferred",
+      "licenseUrl": "https://www.kiwicollection.com/hotel-detail/conrad-punta-de-mita",
+      "rightsEvidenceType": "publisher_labelled_property_image",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Conrad · suite avec petit bassin privé",
+      "enCaption": "Conrad · plunge-pool suite",
+      "localPath": "/images/travel/punta-mita-premium/conrad/view-3.webp",
+      "sha256": "8ca50a3e7adecbd9e3964072fb14adec055b59918a6c4d5a62d6aaaff773a875",
+      "bytes": 123736,
+      "originalSize": [
+        1024,
+        576
+      ],
+      "outputSize": [
+        1024,
+        576
+      ],
+      "propertyKey": "conrad",
+      "property": "Conrad Punta de Mita"
+    },
+    {
+      "key": "view-1",
+      "sourcePage": "https://auberge.com/susurros/stay/oceanfront-studio/",
+      "downloadUrl": "https://dreffui1gbt6t.cloudfront.net/images/sdc/oceanfrontcliffsidestudio-listing-SDC_Accommodations_Cliffside_Studio_2026_1.jpg",
+      "credit": "Susurros del Corazón, Auberge Collection · original photographer and commercial reproduction terms not independently verified",
+      "license": "Owner-only private Preview candidate; no public-commercial licence inferred",
+      "licenseUrl": "https://auberge.com/susurros/stay/oceanfront-studio/",
+      "rightsEvidenceType": "publisher_labelled_property_image",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Susurros · vraie chambre Oceanfront Cliffside Studio",
+      "enCaption": "Susurros · oceanfront cliffside studio",
+      "localPath": "/images/travel/punta-mita-premium/susurros/view-1.webp",
+      "sha256": "94bf2286eb3916d9152b71be48750ac6469ea262c298a3c939e2ec14aa66620a",
+      "bytes": 67200,
+      "originalSize": [
+        944,
+        628
+      ],
+      "outputSize": [
+        944,
+        628
+      ],
+      "propertyKey": "susurros",
+      "property": "Susurros del Corazón, Auberge Collection"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://auberge.com/susurros/galleries/resort/",
+      "downloadUrl": "https://dreffui1gbt6t.cloudfront.net/images/sdc/SDC_Galleries_Resort_021524_Asset-3.jpg",
+      "credit": "Susurros del Corazón, Auberge Collection · original photographer and commercial reproduction terms not independently verified",
+      "license": "Owner-only private Preview candidate; no public-commercial licence inferred",
+      "licenseUrl": "https://auberge.com/susurros/galleries/resort/",
+      "rightsEvidenceType": "publisher_labelled_property_image",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Susurros · terrasse du resort et bassin à débordement",
+      "enCaption": "Susurros · beach-facing terrace and pool",
+      "localPath": "/images/travel/punta-mita-premium/susurros/view-2.webp",
+      "sha256": "7bc25f40a6de7dfe0632ecec21b79280c94093b7a85393ef1ba8f6d6745a0e54",
+      "bytes": 166376,
+      "originalSize": [
+        2000,
+        1125
+      ],
+      "outputSize": [
+        1650,
+        928
+      ],
+      "propertyKey": "susurros",
+      "property": "Susurros del Corazón, Auberge Collection"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://auberge.com/susurros/stay/garden-suite-plunge-pool/",
+      "downloadUrl": "https://dreffui1gbt6t.cloudfront.net/images/sdc/sdc-stay-gardensuiteplungepool-listing-22-768x511.jpg",
+      "credit": "Susurros del Corazón, Auberge Collection · original photographer and commercial reproduction terms not independently verified",
+      "license": "Owner-only private Preview candidate; no public-commercial licence inferred",
+      "licenseUrl": "https://auberge.com/susurros/stay/garden-suite-plunge-pool/",
+      "rightsEvidenceType": "publisher_labelled_property_image",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Susurros · vraie Garden Suite à bassin privé",
+      "enCaption": "Susurros · named garden suite with plunge pool",
+      "localPath": "/images/travel/punta-mita-premium/susurros/view-3.webp",
+      "sha256": "1025cf5e1d845ecddefe12e59b82196bb768b24b25ad5ca71552b8b873ba26ec",
+      "bytes": 77166,
+      "originalSize": [
+        768,
+        511
+      ],
+      "outputSize": [
+        768,
+        511
+      ],
+      "propertyKey": "susurros",
+      "property": "Susurros del Corazón, Auberge Collection"
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Punta_Mita,_Nayarit_-_panoramio.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Punta_Mita%2C_Nayarit_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Lynx Burgos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "rightsEvidenceType": "wikimedia_commons_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Punta Mita · côte de Nayarit",
+      "enCaption": "Punta Mita · Nayarit coastline",
+      "localPath": "/images/travel/punta-mita-premium/destination/scene-1.webp",
+      "sha256": "4b5b30de310a6de4e7a0c72387375084798a44ce3687d068a7ce9ba785d89347",
+      "bytes": 141794,
+      "originalSize": [
+        1600,
+        1200
+      ],
+      "outputSize": [
+        1533,
+        1150
+      ],
+      "place": "Punta Mita / Riviera Nayarit, Mexico",
+      "commonsFile": "Punta Mita, Nayarit - panoramio.jpg"
+    },
+    {
+      "key": "scene-2",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Anclote,_Punta_de_Mita_-_panoramio.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Anclote%2C_Punta_de_Mita_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Lynx Burgos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "rightsEvidenceType": "wikimedia_commons_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "El Anclote · plage du village",
+      "enCaption": "El Anclote · Punta de Mita village beach",
+      "localPath": "/images/travel/punta-mita-premium/destination/scene-2.webp",
+      "sha256": "609a93f705320178ef0049434780d96e796eb9a070d2b34b4f101ad6afff8d2c",
+      "bytes": 169172,
+      "originalSize": [
+        1600,
+        1200
+      ],
+      "outputSize": [
+        1533,
+        1150
+      ],
+      "place": "Punta Mita / Riviera Nayarit, Mexico",
+      "commonsFile": "Anclote, Punta de Mita - panoramio.jpg"
+    },
+    {
+      "key": "scene-3",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Atardecer_en_Punta_de_Mita,_Nayarit.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Atardecer_en_Punta_de_Mita%2C_Nayarit.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "LoreGcano",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_commons_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Coucher de soleil à Punta de Mita",
+      "enCaption": "Sunset at Punta de Mita",
+      "localPath": "/images/travel/punta-mita-premium/destination/scene-3.webp",
+      "sha256": "afb0169af682f477b11f56d42a940ae06b9c72d9c02c4beaa683e1ae63256848",
+      "bytes": 65872,
+      "originalSize": [
+        1280,
+        960
+      ],
+      "outputSize": [
+        1280,
+        960
+      ],
+      "place": "Punta Mita / Riviera Nayarit, Mexico",
+      "commonsFile": "Atardecer en Punta de Mita, Nayarit.jpg"
+    },
+    {
+      "key": "scene-4",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Club_de_golf,_Punta_Mita,_Nayarit_-_panoramio.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Club_de_golf%2C_Punta_Mita%2C_Nayarit_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Lynx Burgos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "rightsEvidenceType": "wikimedia_commons_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Punta Mita · parcours sur la péninsule",
+      "enCaption": "Punta Mita peninsula golf course",
+      "localPath": "/images/travel/punta-mita-premium/destination/scene-4.webp",
+      "sha256": "ffd5316b1a29f92909adbf151ddbd1c2e362f195c8b0cd440ba9f8cc57b08220",
+      "bytes": 207754,
+      "originalSize": [
+        1600,
+        1200
+      ],
+      "outputSize": [
+        1533,
+        1150
+      ],
+      "place": "Punta Mita / Riviera Nayarit, Mexico",
+      "commonsFile": "Club de golf, Punta Mita, Nayarit - panoramio.jpg"
+    },
+    {
+      "key": "scene-5",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Islas_Marietas.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Islas_Marietas.jpg/1920px-Islas_Marietas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Arbmosut",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_commons_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Islas Marietas · archipel protégé",
+      "enCaption": "Protected Marietas Islands",
+      "localPath": "/images/travel/punta-mita-premium/destination/scene-5.webp",
+      "sha256": "56ebd7a3179e85040afa2ed5769b221fdea2a1c099422f2dcaf89f29d3d2f40a",
+      "bytes": 289968,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1533,
+        1150
+      ],
+      "place": "Punta Mita / Riviera Nayarit, Mexico",
+      "commonsFile": "Islas Marietas.jpg"
+    },
+    {
+      "key": "scene-6",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Malec%C3%B3n_de_Punta_de_Mita_-_panoramio.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Malec%C3%B3n_de_Punta_de_Mita_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Lynx Burgos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "rightsEvidenceType": "wikimedia_commons_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Front de mer et promenade de Punta de Mita",
+      "enCaption": "Punta de Mita waterfront",
+      "localPath": "/images/travel/punta-mita-premium/destination/scene-6.webp",
+      "sha256": "af36c782f387ddaf43ff2f2f2e79168011defea9c39f91973065106080c9877f",
+      "bytes": 99764,
+      "originalSize": [
+        1600,
+        1200
+      ],
+      "outputSize": [
+        1533,
+        1150
+      ],
+      "place": "Punta Mita / Riviera Nayarit, Mexico",
+      "commonsFile": "Malecón de Punta de Mita - panoramio.jpg"
+    },
+    {
+      "key": "scene-7",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Blue_Footed_Booby_Marietas_Island_Puerto_Vallarta_(20241371835).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Blue_Footed_Booby_Marietas_Island_Puerto_Vallarta_%2820241371835%29.jpg/1920px-Blue_Footed_Booby_Marietas_Island_Puerto_Vallarta_%2820241371835%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "terri_bateman",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "rightsEvidenceType": "wikimedia_commons_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Marietas · fou à pieds bleus sur les îles protégées",
+      "enCaption": "Marietas · blue-footed booby on protected islands",
+      "localPath": "/images/travel/punta-mita-premium/destination/scene-7.webp",
+      "sha256": "fb3e95fa17e832f64b13424a3dc9c9acda34318c7213b2d3e061ac8a2c868c73",
+      "bytes": 366086,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1650,
+        1100
+      ],
+      "place": "Punta Mita / Riviera Nayarit, Mexico",
+      "commonsFile": "Blue Footed Booby Marietas Island Puerto Vallarta (20241371835).jpg"
+    },
+    {
+      "key": "scene-8",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Punta_Mita,_Nayarit_-_panoramio_(1).jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Punta_Mita%2C_Nayarit_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Lynx Burgos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "rightsEvidenceType": "wikimedia_commons_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Vue de côte à Punta Mita",
+      "enCaption": "A different Punta Mita coastal scene",
+      "localPath": "/images/travel/punta-mita-premium/destination/scene-8.webp",
+      "sha256": "81fb2538b42449b6dda3e0011192e722460f0f3b4b6608bdfe955c2ee60ef8f1",
+      "bytes": 147220,
+      "originalSize": [
+        1600,
+        1200
+      ],
+      "outputSize": [
+        1533,
+        1150
+      ],
+      "place": "Punta Mita / Riviera Nayarit, Mexico",
+      "commonsFile": "Punta Mita, Nayarit - panoramio (1).jpg"
+    },
+    {
+      "key": "scene-9",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Playa_del_St._Regis_-_panoramio.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Playa_del_St._Regis_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Lynx Burgos",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "rightsEvidenceType": "wikimedia_commons_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await actual human contact-sheet review",
+      "frCaption": "Plage du secteur St. Regis à Punta Mita",
+      "enCaption": "Coast by St. Regis on Punta Mita peninsula",
+      "localPath": "/images/travel/punta-mita-premium/destination/scene-9.webp",
+      "sha256": "eb8676590855298bdd2b8bd323e72672afb761e9d9515c93b0416a967a14c532",
+      "bytes": 92060,
+      "originalSize": [
+        1600,
+        1200
+      ],
+      "outputSize": [
+        1533,
+        1150
+      ],
+      "place": "Punta Mita / Riviera Nayarit, Mexico",
+      "commonsFile": "Playa del St. Regis - panoramio.jpg"
+    }
+  ],
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "publicationBlockedReason": "Public-commercial photo permission not demonstrated for hotel images; human review and licensing required.",
+  "rightsBasis": "Hotel images from named hospitality publishers; Commons landscape metadata checked per file."
+}
