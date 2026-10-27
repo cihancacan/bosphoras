@@ -154,7 +154,12 @@ def main():
  pages={k:get_images(u) for k,u in SITES.items()}
  used=set();hotel=[]
  for key,name,pattern,captions in HOTELS:
-  pool=pages[key]
+  related= {'sol':['sol','accommodation','architecture','wonders'], 'carioca':['carioca','accommodation'], 'club':['club','accommodation'], 'bungalow':['bungalow','accommodation','architecture']}[key]
+  pool=[];seen_files=set()
+  for pagename in related:
+   for img in pages[pagename]:
+    if img['file'] not in seen_files:
+     pool.append(img);seen_files.add(img['file'])
   hotel+=choose(pool,pattern,used,3,name,captions,'view',key)
  scenes=[]
  for i,(pageset,pattern,fr,en) in enumerate(SCENES,1):
