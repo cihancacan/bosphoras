@@ -16,7 +16,7 @@ S=requests.Session()
 S.headers.update({'User-Agent':'Mozilla/5.0 (compatible; BosphorasTravel/1.0; editorial private image QA)', 'Accept':'image/webp,image/jpeg,image/png,*/*'})
 SITES={
  'sol':'https://careyes.net/iconic-villas',
- 'carioca':'https://careyes.net/villas',
+ 'carioca':'https://careyes.net/villa-casita-carioca',
  'club':'https://careyes.net/el-careyes-club-and-residences',
  'bungalow':'https://careyes.net/playa-rosa-bungalows',
  'beaches':'https://careyes.com/beaches',
