@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 6,
-  "downloadedDestinationCandidates": 1,
+  "downloadedDestinationCandidates": 4,
   "hotels": [
     {
       "key": "view-1",
@@ -240,30 +240,81 @@
       "placeLabel": "Dalt Vila Eivissa ancienne citadelle",
       "searchQuery": "Ibiza Dalt Vila old town aerial daylight",
       "slotIntent": "Dalt Vila Eivissa ancienne citadelle",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Eivissa_-_Dalt_Vila_from_Airplane.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Eivissa_-_Dalt_Vila_from_Airplane.jpg",
+      "candidateContext": "Dalt Vila and cathedral photographed from a plane, 2024 by UnFUG-Fabi",
+      "credit": "Geolocated Wikimedia source: https://commons.wikimedia.org/wiki/File:Eivissa_-_Dalt_Vila_from_Airplane.jpg",
+      "license": "Creative Commons licence: check file and attribution",
+      "sha256": "416d7ac17d44c999bbef8cfaa6122c74e198fd5257d52724b3445fe74fb3bcf1",
+      "dhash": "1100110110101100011101101101010111001011000001100010011111001100",
+      "bytes": 469538,
+      "originalSize": [
+        2539,
+        1428
+      ],
+      "outputSize": [
+        1800,
+        1012
+      ]
     },
     {
       "key": "scene-2",
       "placeLabel": "Port et Marina Botafoch",
       "searchQuery": "Ibiza Marina Botafoch yachts promenade",
       "slotIntent": "Port et Marina Botafoch",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ibiza_Port.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Ibiza_Port.jpg",
+      "candidateContext": "Ibiza city marina port panorama from shore, 2022 by Josi; not a claim of an exact Botafoch quay",
+      "credit": "Geolocated Wikimedia source: https://commons.wikimedia.org/wiki/File:Ibiza_Port.jpg",
+      "license": "Creative Commons licence: check file and attribution",
+      "sha256": "ab1de941474604c589026cec55086d79fee1832881290b7b3ea876f1a70c1f6d",
+      "dhash": "0000001100000011000000001000111100001111100000010000000100000010",
+      "bytes": 157572,
+      "originalSize": [
+        4608,
+        2272
+      ],
+      "outputSize": [
+        1800,
+        888
+      ]
     },
     {
       "key": "scene-3",
       "placeLabel": "Baie de Talamanca",
       "searchQuery": "Talamanca Bay beach Ibiza sunny",
       "slotIntent": "Baie de Talamanca",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/destination/scene-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Platja_de_Talamanca_-_Playa_de_Talamanca.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Platja_de_Talamanca_-_Playa_de_Talamanca.jpg",
+      "candidateContext": "True Talamanca Beach bay, Ibiza, not a resort pool",
+      "credit": "Geolocated Wikimedia source: https://commons.wikimedia.org/wiki/File:Platja_de_Talamanca_-_Playa_de_Talamanca.jpg",
+      "license": "Creative Commons licence: check file and attribution",
+      "sha256": "f03872adf83786e57da659fe13f5c153fff43c6e2a67a5c32e09ae988c092997",
+      "dhash": "1111000011110000110000100110011011110010110011101111110011111000",
+      "bytes": 308748,
+      "originalSize": [
+        4032,
+        2268
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ]
     },
     {
       "key": "scene-4",
