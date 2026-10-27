@@ -337,7 +337,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           : city.slug==='maldives' ? <div className="absolute inset-0 bg-gradient-to-r from-[#082f3a]/77 via-[#10455a]/23 to-transparent"/>
           : city.slug==='los-cabos' ? <div className="absolute inset-0 bg-gradient-to-r from-[#102b3a]/77 via-[#3f534e]/25 to-transparent"/>
           : city.slug==='saint-barthelemy' ? <div className="absolute inset-0 bg-gradient-to-r from-[#122e3f]/76 via-[#1d4a59]/25 to-transparent"/>
-          : city.slug==='porto-cervo' ? <div className="absolute inset-0 bg-gradient-to-r from-[#0d3039]/75 via-[#1b6861]/27 to-transparent"/> : city.slug==='mykonos' ? <div className="absolute inset-0 bg-gradient-to-r from-[#092b36]/72 via-[#103a49]/30 to-[#092b36]/10"/> : <div className="absolute inset-0 bg-gradient-to-r from-[#081d28]/95 via-[#081d28]/75 to-[#081d28]/25"/>}
+          : city.slug==='porto-cervo' ? <div className="absolute inset-0 bg-gradient-to-r from-[#0d3039]/75 via-[#1b6861]/27 to-transparent"/> : city.slug==='mykonos' ? <div className="absolute inset-0 bg-gradient-to-r from-[#092b36]/72 via-[#103a49]/30 to-[#092b36]/10"/> : city.slug==='new-york' ? <div className="absolute inset-0 bg-gradient-to-r from-[#0a1c28]/76 via-[#102733]/36 to-transparent"/> : <div className="absolute inset-0 bg-gradient-to-r from-[#081d28]/95 via-[#081d28]/75 to-[#081d28]/25"/>}
       </div>
       <div className="relative mx-auto max-w-7xl px-5 pb-28 pt-16 sm:pb-40 sm:pt-28">
         <div className={(city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez'||city.slug === 'bali'||city.slug === 'phuket'||city.slug === 'koh-samui'||city.slug === 'maldives'||city.slug === 'los-cabos'||city.slug === 'saint-barthelemy'||city.slug === 'porto-cervo'||city.slug==='mykonos') ? 'max-w-[900px] rounded-2xl border border-white/10 bg-[#091c24]/65 px-5 py-7 shadow-2xl backdrop-blur-[3px] sm:px-10 sm:py-9' : ''}>
@@ -377,6 +377,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
     <nav className="sticky top-0 z-20 border-b border-[#e0d7c8] bg-[#faf7f0]/95 px-5 backdrop-blur" aria-label={fr?'Naviguer dans le guide':'Guide sections'}>
       <div className="mx-auto flex max-w-7xl gap-6 overflow-x-auto py-4 text-xs sm:text-sm">
         <a href={hotelPage?'#selection':'#quartiers'} className="shrink-0 hover:text-[#9e794a]">{hotelPage?(fr?'Les hôtels':'Hotels'):(city.slug==='porto-cervo'?(fr?'Les secteurs':'Areas'):city.slug==='saint-barthelemy'?(fr?'Les lieux':'Places'):city.slug==='los-cabos'?(fr?'Les secteurs':'Areas'):city.slug==='maldives'?(fr?'Les atolls':'Atolls'):(fr?'Les quartiers':'Areas'))}</a>
+        {city.slug==='new-york' && <a href="#panoramas-new-york" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
         <a href="#experience" className="shrink-0 hover:text-[#9e794a]">{fr?'L’expérience':'Experiences'}</a>
         <a href="#conseils" className="shrink-0 hover:text-[#9e794a]">{fr?'Les conseils':'Advice'}</a>
       </div>
@@ -394,12 +395,44 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         {city.areas.map((area,i)=><article key={area.name} className="flex flex-col border border-[#e6ddce] bg-white p-7">
           <p className="font-serif text-3xl text-[#b18f59]">{String(i+1).padStart(2,'0')}</p>
           <h3 className="mt-5 font-serif text-2xl">{fr?area.name:area.enName}</h3>
-          {(city.slug==='istanbul'||city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo'||city.slug==='mustique'||city.slug==='courchevel-1850'||isAlpineCity(city.slug)||city.slug==='monaco'||city.slug==='saint-jean-cap-ferrat'||city.slug==='cap-dantibes'||city.slug==='lake-como'||city.slug==='capri'||city.slug==='positano'||city.slug==='ravello'||city.slug==='mykonos'||city.slug==='antiparos'||city.slug==='ibiza'||city.slug==='formentera'||city.slug==='deia'||city.slug==='port-andratx'||city.slug==='comporta'||city.slug==='melides'||city.slug==='tivat'||city.slug==='the-hamptons'||city.slug==='palm-beach'||city.slug==='nantucket'||city.slug==='harbour-island'||city.slug==='turks-and-caicos'||city.slug==='canouan'||city.slug==='necker-island'||city.slug==='north-island-seychelles'||city.slug==='pamalican-island'||city.slug==='laucala-island'||city.slug==='jumby-bay'||city.slug==='okavango-delta'||city.slug==='punta-mita'||city.slug==='costa-careyes') && <DestinationAreaPhoto city={city.slug} index={i} locale={locale}/>}
+          {(city.slug==='new-york'||city.slug==='istanbul'||city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo'||city.slug==='mustique'||city.slug==='courchevel-1850'||isAlpineCity(city.slug)||city.slug==='monaco'||city.slug==='saint-jean-cap-ferrat'||city.slug==='cap-dantibes'||city.slug==='lake-como'||city.slug==='capri'||city.slug==='positano'||city.slug==='ravello'||city.slug==='mykonos'||city.slug==='antiparos'||city.slug==='ibiza'||city.slug==='formentera'||city.slug==='deia'||city.slug==='port-andratx'||city.slug==='comporta'||city.slug==='melides'||city.slug==='tivat'||city.slug==='the-hamptons'||city.slug==='palm-beach'||city.slug==='nantucket'||city.slug==='harbour-island'||city.slug==='turks-and-caicos'||city.slug==='canouan'||city.slug==='necker-island'||city.slug==='north-island-seychelles'||city.slug==='pamalican-island'||city.slug==='laucala-island'||city.slug==='jumby-bay'||city.slug==='okavango-delta'||city.slug==='punta-mita'||city.slug==='costa-careyes') && <DestinationAreaPhoto city={city.slug} index={i} locale={locale}/>}
           <p className="mt-5 text-sm leading-7 text-[#4c606b]">{fr?area.fr:area.en}</p>
           <p className="mt-auto border-t border-[#e7dfd2] pt-5 text-sm leading-7 text-[#786145]">{fr?area.frWatch:area.enWatch}</p>
         </article>)}
       </div>
     </section>
+    {city.slug==='new-york' && <section id="panoramas-new-york" className="scroll-mt-24 bg-[#ede7dc] py-16 sm:py-24">
+      <div className="mx-auto max-w-7xl px-5">
+        <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#8d6a42]">
+          {fr?'New York · paysages et grands espaces':'New York · landscapes and open horizons'}
+        </p>
+        <h2 className="mt-4 max-w-4xl font-serif text-3xl leading-tight sm:text-5xl">
+          {fr?'Au-delà des palaces, la ville qui vous fera revenir.':'Beyond the hotels, the city you will want to return to.'}
+        </h2>
+        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4d6069]">
+          {fr
+            ?'Avant les rendez-vous et les lumières de Broadway, il y a le silence des allées de Central Park. Puis le fleuve, les quais et le panorama des gratte-ciel : New York se découvre aussi en prenant le temps de regarder.'
+            :'Before meetings and Broadway lights, there are the quiet paths of Central Park. Then the riverfront, piers and the Manhattan skyline: discovering New York also means finding time to take it all in.'}
+        </p>
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          {([
+            {key:'scene-6',titleFr:'Central Park · une parenthèse de nature',titleEn:'Central Park · a natural pause',
+              detailFr:'Un paysage d’eau, d’arbres et de gratte-ciel, pour imaginer un matin différent au cœur de Manhattan.',
+              detailEn:'Water, trees and distant towers suggest a gentler Manhattan morning.'},
+            {key:'scene-8',titleFr:'Lower Manhattan · le spectacle des quais',titleEn:'Lower Manhattan · the waterfront skyline',
+              detailFr:'Au bord de l’Hudson, New York se révèle par ses perspectives monumentales et l’énergie de ses rives.',
+              detailEn:'Along the Hudson, the city reveals its monumental skyline and waterfront energy.'}
+          ] as const).map(view=>{
+            const landscape=city.photos[view.key];
+            return landscape && confirmedNewYorkPreviewAssets.has(landscape.src) && <article key={view.key} className="bg-white p-4 shadow-sm sm:p-5">
+              <CityPhoto photo={landscape} locale={locale}/>
+              <h3 className="mt-5 font-serif text-2xl text-[#19323e]">{fr?view.titleFr:view.titleEn}</h3>
+              <p className="mt-3 text-sm leading-7 text-[#51646c]">{fr?view.detailFr:view.detailEn}</p>
+            </article>;
+          })}
+        </div>
+      </div>
+    </section>}
     {city.slug==='koh-samui' && <section id="explorer-koh-samui" className="bg-[#f1ece2] py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs uppercase tracking-[.2em] text-[#9a744a]">{fr?'Plus loin que votre villa':'Beyond your villa'}</p>
