@@ -1,0 +1,613 @@
+{
+  "destination": "jumby-bay",
+  "hotels": [
+    {
+      "key": "view-1",
+      "sourcePage": "https://jumbybayantigua.com/rooms-and-suites/jumby-bay-garden-cottage/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/rooms/jumby-bay-garden-cottage/garden-cottage-outdoor-bath-jumby-bay-island-w1440.webp",
+      "sourceFilename": "garden-cottage-outdoor-bath-jumby-bay-island-w1440.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/rooms-and-suites/jumby-bay-garden-cottage/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Garden Cottage · baignoire ouverte sur la végétation",
+      "enCaption": "Garden Cottage · tropical outdoor bathroom",
+      "localPath": "/images/travel/jumby-bay-premium/garden/view-1.webp",
+      "sha256": "ca5578008f224545c289eae10975e527d2d846050f27c2ffe2215c671163faf2",
+      "bytes": 77822,
+      "originalSize": [
+        1440,
+        960
+      ],
+      "outputSize": [
+        1440,
+        960
+      ],
+      "propertyKey": "garden",
+      "property": "Jumby Bay Garden Cottage"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://jumbybayantigua.com/rooms-and-suites/jumby-bay-garden-cottage/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/rooms/jumby-bay-garden-cottage/garden-cottage-king-bed-jumby-bay-island-w1440.webp",
+      "sourceFilename": "garden-cottage-king-bed-jumby-bay-island-w1440.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/rooms-and-suites/jumby-bay-garden-cottage/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Garden Cottage · vraie chambre du cottage",
+      "enCaption": "Garden Cottage · original king bedroom",
+      "localPath": "/images/travel/jumby-bay-premium/garden/view-2.webp",
+      "sha256": "a4a51724004f2afe3d1cc5f589f4881cd90bcfda8005dc3af156649f16e1e238",
+      "bytes": 68728,
+      "originalSize": [
+        1440,
+        960
+      ],
+      "outputSize": [
+        1440,
+        960
+      ],
+      "propertyKey": "garden",
+      "property": "Jumby Bay Garden Cottage"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://jumbybayantigua.com/rooms-and-suites/jumby-bay-garden-cottage/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/rooms/jumby-bay-garden-cottage/garden-cottage-king-bed-bedroom-jumby-bay-island-w960.webp",
+      "sourceFilename": "garden-cottage-king-bed-bedroom-jumby-bay-island-w960.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/rooms-and-suites/jumby-bay-garden-cottage/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Garden Cottage · chambre et terrasse",
+      "enCaption": "Garden Cottage · room and terrace",
+      "localPath": "/images/travel/jumby-bay-premium/garden/view-3.webp",
+      "sha256": "62835cbbc6e44c86e712ef8a7219ad4d17608b237e9b8860885323878c201781",
+      "bytes": 64870,
+      "originalSize": [
+        960,
+        640
+      ],
+      "outputSize": [
+        960,
+        640
+      ],
+      "propertyKey": "garden",
+      "property": "Jumby Bay Garden Cottage"
+    },
+    {
+      "key": "view-1",
+      "sourcePage": "https://jumbybayantigua.com/rooms-and-suites/jumby-bay-pool-cottage/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/rooms/jumby-bay-pool-cottage/pool-cottage-terrace-plunge-pool-ocean-view-jumby-bay-island.webp",
+      "sourceFilename": "pool-cottage-terrace-plunge-pool-ocean-view-jumby-bay-island.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/rooms-and-suites/jumby-bay-pool-cottage/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Pool Cottage · terrasse avec piscine privée",
+      "enCaption": "Pool Cottage · pool and ocean-view deck",
+      "localPath": "/images/travel/jumby-bay-premium/pool/view-1.webp",
+      "sha256": "28191cfe116480ce7359622f3a6db14b4323ab9d3c0799ffa21c3e5173c9039e",
+      "bytes": 113424,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "propertyKey": "pool",
+      "property": "Jumby Bay Pool Cottage"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://jumbybayantigua.com/rooms-and-suites/jumby-bay-pool-cottage/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/rooms/jumby-bay-pool-cottage/pool-cottage-bedroom-king-bed-jumby-bay-island.webp",
+      "sourceFilename": "pool-cottage-bedroom-king-bed-jumby-bay-island.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/rooms-and-suites/jumby-bay-pool-cottage/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Pool Cottage · chambre principale",
+      "enCaption": "Pool Cottage · real primary bedroom",
+      "localPath": "/images/travel/jumby-bay-premium/pool/view-2.webp",
+      "sha256": "99ff5d5554c38ab6aebbe63b38e9c43011c470e3fc925705f36533deb47aae14",
+      "bytes": 207170,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "propertyKey": "pool",
+      "property": "Jumby Bay Pool Cottage"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://jumbybayantigua.com/rooms-and-suites/jumby-bay-pool-cottage/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/rooms/jumby-bay-pool-cottage/pool-cottage-living-dining-area-jumby-bay-island.webp",
+      "sourceFilename": "pool-cottage-living-dining-area-jumby-bay-island.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/rooms-and-suites/jumby-bay-pool-cottage/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Pool Cottage · salon et espace repas",
+      "enCaption": "Pool Cottage · living and dining room",
+      "localPath": "/images/travel/jumby-bay-premium/pool/view-3.webp",
+      "sha256": "026e2d405a9c3cfaf0d4fd442e57e7b840736838d0ff482abdeef36591d25f8f",
+      "bytes": 146540,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "propertyKey": "pool",
+      "property": "Jumby Bay Pool Cottage"
+    },
+    {
+      "key": "view-1",
+      "sourcePage": "https://jumbybayantigua.com/rooms-and-suites/jabberwocky-room/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/rooms/room-jabberwocky/jabberwocky-room-living-area-jumby-bay-island-w1440.webp",
+      "sourceFilename": "jabberwocky-room-living-area-jumby-bay-island-w1440.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/rooms-and-suites/jabberwocky-room/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Jabberwocky · grand salon de la villa",
+      "enCaption": "Jabberwocky · genuine villa living room",
+      "localPath": "/images/travel/jumby-bay-premium/jabberwocky/view-1.webp",
+      "sha256": "9f87fbdb8ea85dbc295be0bc6565909af8038824514ce121f5187a065d40c05c",
+      "bytes": 53740,
+      "originalSize": [
+        1440,
+        950
+      ],
+      "outputSize": [
+        1440,
+        950
+      ],
+      "propertyKey": "jabberwocky",
+      "property": "Jabberwocky — Jumby Bay Villa"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://jumbybayantigua.com/rooms-and-suites/jabberwocky-room/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/rooms/room-jabberwocky/jabberwocky-room-pool-terrace-jumby-bay-island-w1440.webp",
+      "sourceFilename": "jabberwocky-room-pool-terrace-jumby-bay-island-w1440.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/rooms-and-suites/jabberwocky-room/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Jabberwocky · terrasse extérieure",
+      "enCaption": "Jabberwocky · villa terrace",
+      "localPath": "/images/travel/jumby-bay-premium/jabberwocky/view-2.webp",
+      "sha256": "dac79b5ef517448dae2ef5ea26d1a5aef5e94195f2ebf82944f6cb5c788cf335",
+      "bytes": 105412,
+      "originalSize": [
+        1440,
+        950
+      ],
+      "outputSize": [
+        1440,
+        950
+      ],
+      "propertyKey": "jabberwocky",
+      "property": "Jabberwocky — Jumby Bay Villa"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://jumbybayantigua.com/rooms-and-suites/jabberwocky-room/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/rooms/jabberwocky-room/jabberwocky-room-king-bed-terrace-ocean-view-jumby-bay-island-w960.webp",
+      "sourceFilename": "jabberwocky-room-king-bed-terrace-ocean-view-jumby-bay-island-w960.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/rooms-and-suites/jabberwocky-room/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Jabberwocky · chambre et vue depuis la terrasse",
+      "enCaption": "Jabberwocky · named bedroom and terrace",
+      "localPath": "/images/travel/jumby-bay-premium/jabberwocky/view-3.webp",
+      "sha256": "064e6ab39b7743e2ddcf26bf3f09ae694689fc4976b6ba5a385153395f65c2f2",
+      "bytes": 51830,
+      "originalSize": [
+        960,
+        720
+      ],
+      "outputSize": [
+        960,
+        720
+      ],
+      "propertyKey": "jabberwocky",
+      "property": "Jabberwocky — Jumby Bay Villa"
+    },
+    {
+      "key": "view-1",
+      "sourcePage": "https://jumbybayantigua.com/rooms-and-suites/calabash/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/rooms/calabash/calabash-pool-ocean-view-palm-trees-jumby-bay-island.webp",
+      "sourceFilename": "calabash-pool-ocean-view-palm-trees-jumby-bay-island.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/rooms-and-suites/calabash/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Calabash · piscine de la résidence privée",
+      "enCaption": "Calabash · estate infinity pool",
+      "localPath": "/images/travel/jumby-bay-premium/calabash/view-1.webp",
+      "sha256": "3a4fa2c8c2ec734ff2fa6f719967a57158484563f3338d6e8e6dc1276c33f2b3",
+      "bytes": 212676,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1700,
+        956
+      ],
+      "propertyKey": "calabash",
+      "property": "Calabash — Jumby Bay Private Estate"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://jumbybayantigua.com/rooms-and-suites/calabash/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/rooms/calabash/calabash-outdoor-dining-terrace-waterfront-jumby-bay-island.webp",
+      "sourceFilename": "calabash-outdoor-dining-terrace-waterfront-jumby-bay-island.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/rooms-and-suites/calabash/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Calabash · espace de repas face à la plage",
+      "enCaption": "Calabash · seafront private dining terrace",
+      "localPath": "/images/travel/jumby-bay-premium/calabash/view-2.webp",
+      "sha256": "a5089959650bf8413abea79a2b747696321ca0a6de05bf6407b9ef2c50e6960f",
+      "bytes": 170702,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "propertyKey": "calabash",
+      "property": "Calabash — Jumby Bay Private Estate"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://jumbybayantigua.com/rooms-and-suites/calabash/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/rooms/calabash/calabash-guest-room-canopied-bed-ocean-view-jumby-bay-island.webp",
+      "sourceFilename": "calabash-guest-room-canopied-bed-ocean-view-jumby-bay-island.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/rooms-and-suites/calabash/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Calabash · chambre identifiée dans la résidence",
+      "enCaption": "Calabash · actual private estate bedroom",
+      "localPath": "/images/travel/jumby-bay-premium/calabash/view-3.webp",
+      "sha256": "160d3d4103e81124a72e2be125c448dea3872191127adcb2f5674170bb754898",
+      "bytes": 158322,
+      "originalSize": [
+        1920,
+        1279
+      ],
+      "outputSize": [
+        1700,
+        1132
+      ],
+      "propertyKey": "calabash",
+      "property": "Calabash — Jumby Bay Private Estate"
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "sourcePage": "https://jumbybayantigua.com/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/resort/aerial-beachfront-resort-view-jumby-bay-island.webp",
+      "sourceFilename": "aerial-beachfront-resort-view-jumby-bay-island.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Jumby Bay Island · plage et île vues du ciel",
+      "enCaption": "Jumby Bay Island · aerial beachfront resort",
+      "localPath": "/images/travel/jumby-bay-premium/destination/scene-1.webp",
+      "sha256": "22be339aad757c35dd6e0420fd23216d6c89228375c2bd861c022115c1fb31a0",
+      "bytes": 215812,
+      "originalSize": [
+        1920,
+        1079
+      ],
+      "outputSize": [
+        1700,
+        955
+      ],
+      "place": "Jumby Bay Island, Antigua and Barbuda"
+    },
+    {
+      "key": "scene-2",
+      "sourcePage": "https://jumbybayantigua.com/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/resort/beachfront-lounge-area-jumby-bay-island.webp",
+      "sourceFilename": "beachfront-lounge-area-jumby-bay-island.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Plage privée, palmiers et transats",
+      "enCaption": "Private island beach with loungers and palms",
+      "localPath": "/images/travel/jumby-bay-premium/destination/scene-2.webp",
+      "sha256": "3d6a665d2a5812955e50dd24fe9c79a6ece28997efc1aa23d053ed5f40fcd381",
+      "bytes": 126286,
+      "originalSize": [
+        1000,
+        667
+      ],
+      "outputSize": [
+        1000,
+        667
+      ],
+      "place": "Jumby Bay Island, Antigua and Barbuda"
+    },
+    {
+      "key": "scene-3",
+      "sourcePage": "https://jumbybayantigua.com/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/resort/pool-terrace-with-sea-view-jumby-bay-island.webp",
+      "sourceFilename": "pool-terrace-with-sea-view-jumby-bay-island.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Piscine et mer des Caraïbes",
+      "enCaption": "Caribbean sea beyond island pool terrace",
+      "localPath": "/images/travel/jumby-bay-premium/destination/scene-3.webp",
+      "sha256": "9f093f93b203f9715131f02cf614c06354bc18b8e69e3c4b72673f253e9be2fa",
+      "bytes": 106684,
+      "originalSize": [
+        1000,
+        667
+      ],
+      "outputSize": [
+        1000,
+        667
+      ],
+      "place": "Jumby Bay Island, Antigua and Barbuda"
+    },
+    {
+      "key": "scene-4",
+      "sourcePage": "https://jumbybayantigua.com/rooms-and-suites/jumby-bay-garden-cottage/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/resort/twilight-resort-pool-and-pavilions-jumby-bay-island.webp",
+      "sourceFilename": "twilight-resort-pool-and-pavilions-jumby-bay-island.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/rooms-and-suites/jumby-bay-garden-cottage/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Jumby Bay · pavillons au crépuscule",
+      "enCaption": "Island pavilions and pool at twilight",
+      "localPath": "/images/travel/jumby-bay-premium/destination/scene-4.webp",
+      "sha256": "6ba114a8ec417b28264ef4179b8b8ccbb597c07ab6e859a39d2adafbc6b77b0d",
+      "bytes": 146294,
+      "originalSize": [
+        1000,
+        667
+      ],
+      "outputSize": [
+        1000,
+        667
+      ],
+      "place": "Jumby Bay Island, Antigua and Barbuda"
+    },
+    {
+      "key": "scene-5",
+      "sourcePage": "https://jumbybayantigua.com/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/resort/private-villa-pools-and-terraces-jumby-bay-island-w1440.webp",
+      "sourceFilename": "private-villa-pools-and-terraces-jumby-bay-island-w1440.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Villas et paysages aériens du domaine",
+      "enCaption": "Aerial private villa and island landscape",
+      "localPath": "/images/travel/jumby-bay-premium/destination/scene-5.webp",
+      "sha256": "80d37f32465df17ddae046ce34b8f75144d3003f8b9f54d3d76af40852f12666",
+      "bytes": 162918,
+      "originalSize": [
+        1440,
+        949
+      ],
+      "outputSize": [
+        1440,
+        949
+      ],
+      "place": "Jumby Bay Island, Antigua and Barbuda"
+    },
+    {
+      "key": "scene-6",
+      "sourcePage": "https://jumbybayantigua.com/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/restaurants-and-bars/the-veranda/beachfront-open-air-dining-terrace-jumby-bay-island.webp",
+      "sourceFilename": "beachfront-open-air-dining-terrace-jumby-bay-island.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Restaurant de plage à ciel ouvert",
+      "enCaption": "Beachfront island restaurant setting",
+      "localPath": "/images/travel/jumby-bay-premium/destination/scene-6.webp",
+      "sha256": "1f64cb4aca993492c623ce85d054e47c714fc413308068bd0ff3816a93276e1a",
+      "bytes": 112028,
+      "originalSize": [
+        1000,
+        667
+      ],
+      "outputSize": [
+        1000,
+        667
+      ],
+      "place": "Jumby Bay Island, Antigua and Barbuda"
+    },
+    {
+      "key": "scene-7",
+      "sourcePage": "https://jumbybayantigua.com/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/restaurants-and-bars/the-veranda-bar/oceanview-terrace-cocktail-jumby-bay-island.webp",
+      "sourceFilename": "oceanview-terrace-cocktail-jumby-bay-island.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Terrasse et panorama marin du resort",
+      "enCaption": "Island lounge above the Caribbean",
+      "localPath": "/images/travel/jumby-bay-premium/destination/scene-7.webp",
+      "sha256": "751c37ea7d9cfe376e9a30be11da6d752b27b840ab43180ca0869ca61b0066a1",
+      "bytes": 201648,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1700,
+        1133
+      ],
+      "place": "Jumby Bay Island, Antigua and Barbuda"
+    },
+    {
+      "key": "scene-8",
+      "sourcePage": "https://jumbybayantigua.com/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/resort/tropical-courtyard-entrance-jumby-bay-island-w1440.webp",
+      "sourceFilename": "tropical-courtyard-entrance-jumby-bay-island-w1440.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Allées tropicales et jardins",
+      "enCaption": "Tropical courtyard and garden pathway",
+      "localPath": "/images/travel/jumby-bay-premium/destination/scene-8.webp",
+      "sha256": "c8bd61a5afdbc6a4bea9025d7d1471cb459fe1b59c7d6be029f083beb7dbe301",
+      "bytes": 90056,
+      "originalSize": [
+        1440,
+        948
+      ],
+      "outputSize": [
+        1440,
+        948
+      ],
+      "place": "Jumby Bay Island, Antigua and Barbuda"
+    },
+    {
+      "key": "scene-9",
+      "sourcePage": "https://jumbybayantigua.com/",
+      "downloadUrl": "https://cdn.bookresortsmedia.com/sites/jumby-bay-island/resort/private-pool-terrace-sea-view-jumby-bay-island.webp",
+      "sourceFilename": "private-pool-terrace-sea-view-jumby-bay-island.webp",
+      "credit": "Jumby Bay Island · partner-distributed resort photo, individual photographer not identified",
+      "license": "Owner-attested use for private Preview only; origin and commercial rights need independent audit",
+      "licenseUrl": "https://jumbybayantigua.com/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await owner contact-sheet review and independent creator-rights clearance",
+      "frCaption": "Côte de Jumby Bay depuis une terrasse",
+      "enCaption": "Jumby Bay coast viewed from resort terrace",
+      "localPath": "/images/travel/jumby-bay-premium/destination/scene-9.webp",
+      "sha256": "af3a1a212c9bde1492d3fb3dfb36e8e9c70f52eb74f24f47f55d8df0f49ee16b",
+      "bytes": 148834,
+      "originalSize": [
+        1000,
+        667
+      ],
+      "outputSize": [
+        1000,
+        667
+      ],
+      "place": "Jumby Bay Island, Antigua and Barbuda"
+    }
+  ],
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "publicationBlockedReason": "21 named partner-distributed images collected; visual/photographer-rights audit required",
+  "photoRightsBasis": "Images supplied on named Jumby Bay distributor property pages, not official Oetker first-party image host"
+}
