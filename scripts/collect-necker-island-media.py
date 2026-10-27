@@ -18,7 +18,7 @@ GROUPS=[
 ('great','The Great House','/necker-island/rooms-and-suites/the-great-house/',
  [('master-suite','necker-island-the-great-house-master-suite-lr.jpg','Master Suite · chambre et terrasse panoramique','The Great House · Master Suite'),
   ('moon-room','necker-island-the-great-house-moon-room-10.jpg','Great House · chambre Moon et décor singulier','Great House · Moon Room accommodation'),
-  ('bunkroom','necker-island-the-great-house-bunkroom-lr.jpg','Great House · bunkroom pour les enfants','Great House · family children's bunkroom')]),
+  ('bunkroom','necker-island-the-great-house-bunkroom-lr.jpg','Great House · bunkroom pour les enfants','Great House · family bunkroom for children')]),
 ('hi','Bali Hi Complex','/necker-island/rooms-and-suites/bali-hi/',
  [('bali-hi','necker-island-bali-hi-5.jpg','Bali Hi · maison balinaise face à l'océan','Bali Hi · ocean-facing Balinese house'),
   ('bali-cliff','necker-island-bali-cliff-lower-terrace-4.jpg','Bali Cliff · terrasse proche des falaises','Bali Cliff · lower clifftop terrace'),
