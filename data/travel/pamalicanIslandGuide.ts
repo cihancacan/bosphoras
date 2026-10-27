@@ -16,3 +16,5 @@ export const pamalicanIslandGuide:FeaturedCityGuideData={...g,areas:g.areas.map(
 // Route validation includes both Necker room-guide and four accommodation galleries.
 
 // Quality gate: eleven real resort villas, honest family and buyout arrangements, 21 North Island images.
+
+// Pamalican's owner-only preview checks four genuine Amanpulo room categories and 21 unique local WebPs.
