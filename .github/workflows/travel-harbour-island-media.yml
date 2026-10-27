@@ -1,0 +1,62 @@
+name: Travel Harbour Island — 21 official hotel and Commons WebPs (GitHub only)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - scripts/collect-harbour-island-media.py
+      - .github/workflows/travel-harbour-island-media.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: travel-harbour-island-photo-collection
+  cancel-in-progress: false
+jobs:
+  photos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - name: Fetch real official-hotel and Commons photos
+        run: python -u scripts/collect-harbour-island-media.py
+      - name: Require 21 different image files and 88 untouched destinations
+        run: |
+          node scripts/check-harbour-island-draft.mjs
+          node scripts/check-travel-catalogue.mjs
+      - name: Store in GitHub without deploying on Vercel
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- public/images/travel/harbour-island-premium data/travel/harbourIslandMediaCandidates.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): Harbour Island 21 provenance-checked WebP photos [skip ci]'
+            for i in 1 2 3 4 5; do
+              git fetch origin feature/luxury-travel-seo-destinations-20261012
+              git rebase origin/feature/luxury-travel-seo-destinations-20261012
+              if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then exit 0; fi
+              sleep 2
+            done
+            exit 1
+          fi
+
+# One photo batch; leave Vercel Preview unreleased until ten destinations pass.
+
+# Start one manual-quality gated Harbour Island 21-photo collection; no production promotion.
+
+# Trigger photo collection once with no Vercel Preview promotion.
+
+# Begin Harbour Island-only 21-photo import; no manual Vercel Preview.
+
+# Execute Harbour Island 21-photo collection once; Vercel Preview release remains deferred.
+
+# Retry image collection with case-normalized Bridgehampton editorial validation.
+
+# Collect the Harbour Island 21-photo pack into GitHub without a Vercel Preview build.
+
+# Re-run after checking the Harbour Island catalogue slug assertions.
+
+# Trigger Harbour Island's GitHub-only 21-image QA without a Vercel Preview release.
