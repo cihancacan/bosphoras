@@ -24,6 +24,7 @@ import { tivatGuide } from './tivatGuide';
 import { theHamptonsGuide } from './theHamptonsGuide';
 import { palmBeachGuide } from './palmBeachGuide';
 import { nantucketGuide } from './nantucketGuide';
+import { harbourIslandGuide } from './harbourIslandGuide';
 import { stMoritzGuide } from './stMoritzGuide';
 import { aspenGuide } from './aspenGuide';
 import { nisekoGuide } from './nisekoGuide';
@@ -35,7 +36,7 @@ import { losCabosGuide } from './losCabosGuide';
 import { maldivesGuide } from './maldivesGuide';
 import { kohSamuiGuide } from './kohSamuiGuide';
 /** Curated Travel destination guides. Editorial selections only: no supplier inventory, booking, rates or claim of first-hand inspection. */
-export type FeaturedCitySlug = 'bodrum' | 'antalya' | 'dubai' | 'paris' | 'saint-tropez' | 'bali' | 'phuket' | 'koh-samui' | 'maldives' | 'los-cabos' | 'saint-barthelemy' | 'porto-cervo' | 'mustique' | 'courchevel-1850' | 'st-moritz' | 'aspen' | 'niseko' | 'megeve' | 'jackson-hole' | 'big-sky' | 'val-disere' | 'verbier' | 'gstaad' | 'zermatt' | 'monaco' | 'saint-jean-cap-ferrat' | 'cap-dantibes' | 'lake-como' | 'capri' | 'positano' | 'ravello' | 'mykonos' | 'antiparos' | 'ibiza' | 'formentera' | 'deia' | 'port-andratx' | 'comporta' | 'melides' | 'tivat' | 'the-hamptons' | 'palm-beach' | 'nantucket';
+export type FeaturedCitySlug = 'bodrum' | 'antalya' | 'dubai' | 'paris' | 'saint-tropez' | 'bali' | 'phuket' | 'koh-samui' | 'maldives' | 'los-cabos' | 'saint-barthelemy' | 'porto-cervo' | 'mustique' | 'courchevel-1850' | 'st-moritz' | 'aspen' | 'niseko' | 'megeve' | 'jackson-hole' | 'big-sky' | 'val-disere' | 'verbier' | 'gstaad' | 'zermatt' | 'monaco' | 'saint-jean-cap-ferrat' | 'cap-dantibes' | 'lake-como' | 'capri' | 'positano' | 'ravello' | 'mykonos' | 'antiparos' | 'ibiza' | 'formentera' | 'deia' | 'port-andratx' | 'comporta' | 'melides' | 'tivat' | 'the-hamptons' | 'palm-beach' | 'nantucket' | 'harbour-island';
 export type FeaturedCityPhoto = {src:string;fr:string;en:string;author:string;license:string;licenseUrl:string;sourcePage:string};
 export type FeaturedCityArea = {name:string;enName:string;fr:string;en:string;frWatch:string;enWatch:string};
 export type FeaturedCityExperience = {frTitle:string;enTitle:string;fr:string;en:string};
@@ -1272,7 +1273,8 @@ niseko: nisekoGuide,
 'tivat': tivatGuide,
  'the-hamptons': theHamptonsGuide,
 'palm-beach': palmBeachGuide,
-'nantucket': nantucketGuide
+'nantucket': nantucketGuide,
+'harbour-island': harbourIslandGuide
 };
 export function featuredCityGuide(slug:string | undefined):FeaturedCityGuideData | undefined {
  if (!slug || !(slug in featuredCityGuides)) return undefined;
