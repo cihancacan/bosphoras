@@ -148,7 +148,7 @@ def contact(items):
   photo=Image.open(ROOT/'public'/p['localPath'].lstrip('/')).convert('RGB')
   photo.thumbnail((322,208),Image.Resampling.LANCZOS)
   tile=Image.new('RGB',(322,208),'white');tile.paste(photo,((322-photo.width)//2,(208-photo.height)//2));im.paste(tile,(x,y))
-  d.text((x,y+213),p.get('propertyKey','delta')+'/'+p['key'],fill='#193d31')
+  d.text((x,y+213),(p.get('propertyKey') or 'destination')+'/'+p['key'],fill='#193d31')
  im.save(CONTACT,quality=84)
 def main():
  pages={k:get_images(u) for k,u in SITES.items()}
