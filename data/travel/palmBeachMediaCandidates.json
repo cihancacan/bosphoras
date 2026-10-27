@@ -1,0 +1,247 @@
+{
+  "destination": "palm-beach",
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "hotels": [
+    {
+      "key": "view-1",
+      "propertyKey": "breakers",
+      "property": "The Breakers Palm Beach",
+      "sourcePage": "https://www.thebreakers.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting photo verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "breakers",
+      "property": "The Breakers Palm Beach",
+      "sourcePage": "https://www.thebreakers.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting photo verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "breakers",
+      "property": "The Breakers Palm Beach",
+      "sourcePage": "https://www.thebreakers.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting photo verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "brazilian",
+      "property": "The Brazilian Court Hotel",
+      "sourcePage": "https://www.thebraziliancourt.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting photo verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "brazilian",
+      "property": "The Brazilian Court Hotel",
+      "sourcePage": "https://www.thebraziliancourt.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting photo verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "brazilian",
+      "property": "The Brazilian Court Hotel",
+      "sourcePage": "https://www.thebraziliancourt.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting photo verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "colony",
+      "property": "The Colony Hotel Palm Beach",
+      "sourcePage": "https://thecolonypalmbeach.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting photo verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "colony",
+      "property": "The Colony Hotel Palm Beach",
+      "sourcePage": "https://thecolonypalmbeach.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting photo verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "colony",
+      "property": "The Colony Hotel Palm Beach",
+      "sourcePage": "https://thecolonypalmbeach.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting photo verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "palmhouse",
+      "property": "Palm House Palm Beach",
+      "sourcePage": "https://www.palmhouse.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting photo verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "palmhouse",
+      "property": "Palm House Palm Beach",
+      "sourcePage": "https://www.palmhouse.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting photo verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "palmhouse",
+      "property": "Palm House Palm Beach",
+      "sourcePage": "https://www.palmhouse.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting photo verification",
+      "frCaption": "",
+      "enCaption": ""
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "place": "Worth Avenue Clock Tower Palm Beach Florida.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons and licence check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-2",
+      "place": "Worth Avenue.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons and licence check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-3",
+      "place": "Breakers CIMG0089.JPG",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons and licence check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-4",
+      "place": "Whitehall (Henry M. Flagler House) in Palm Beach, Florida.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons and licence check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-5",
+      "place": "Bethesda-by-the-SeaPalmBeachFL.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons and licence check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-6",
+      "place": "Atlantic Ocean and Palm Beach Inlet, West Palm Beach, Florida - panoramio.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons and licence check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-7",
+      "place": "Worth Avenue in Palm Beach Florida arcade near Via Mizner.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons and licence check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-8",
+      "place": "Lake Worth and Palm Beach Inlet, West Palm Beach, Florida - panoramio.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons and licence check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-9",
+      "place": "Worth Avenue in Palm Beach Florida with Chrysler and Bentley.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons and licence check pending",
+      "frCaption": "",
+      "enCaption": ""
+    }
+  ],
+  "publicationBlockedReason": "21 authentic images and internal QA required before any preview or indexing",
+  "photoRightsBasis": "Project operator attests permission to use hotel photography; original photographer rights not independently inspected. Commons license and credit recorded per image."
+}
