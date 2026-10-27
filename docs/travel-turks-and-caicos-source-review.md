@@ -32,3 +32,7 @@ Once images exist and are reviewed, create `turksAndCaicosMediaCandidates.json`,
 - No production edits or indexation. `approvedDestinationSlugs` remains empty and no Wink room prices or availability are asserted.
 - No Vercel build for an individual destination. Ordinary branch work commits tagged `[skip ci]`; only one `[travel-batch-ready]` commit after all ten guides and assets pass QA, then inspect 20 FR/EN pages behind Vercel authentication.
 - The existing release at SHA `766126c74287771ad15318b140fecc702e9c5d31` remains untouched.
+
+## Preview de contrôle spécifique — 27 octobre 2026
+
+Turks and Caicos : 12 photographies hôtelières et 9 paysages WebP locaux dans GitHub, galeries et FAQ FR/EN raccordées ; contrôle TypeScript et 88 destinations validés dans GitHub Actions (`40540617467`). Vérification visuelle effectuée sur deux planches-contact. Les lieux photographiés ont des légendes précises et la photo de signalétique de Long Bay n'est pas présentée comme un panorama isolé. Cette version est destinée au contrôle privé du propriétaire. La déclaration du porteur de projet relative aux droits des hôtels ne remplace pas l'audit des licences de photographes ; `approvedForCommercialPublication` reste `false`. Aucun changement de publication de production ou d'indexation.
