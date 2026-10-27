@@ -33,3 +33,8 @@ Four real stays (Sol de Oriente, Casita Carioca, El Careyes Club & Residences, P
 - Existing 88 unique slugs preserved; Careyes 4 genuine accommodation collections not fabricated hotel brands.
 - This is a user-requested Vercel **Preview** only. Public-commercial photography rights and indexing remain BLOCKED, no source-contract bookings or API rates.
 - Publish Preview by deliberately including the existing Vercel build marker `[travel-batch-ready]`, once, now that ten destinations are complete.
+
+## Final SEO micro-QA 28 October 2026
+- Careyes venue metadata now accurately distinguishes villas, residences, casitas and beach bungalows from conventional chain hotels in FR and EN, without changing legacy routes.
+- GitHub QA run 40591971566 passed all checks, including TypeScript and 88-slug catalogue preservation.
+- Preview-only image commercial rights restrictions and noindex untouched.
