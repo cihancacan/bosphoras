@@ -51,7 +51,32 @@ SCENES={
  "scene-9":("Sant Joan de Labritja Ibiza town church",("sant joan","ibiza"))
 }
 # Candidate source URLs can be added only when their named property/place identity is checked.
-EXACT_HOTEL={}
+EXACT_HOTEL={
+ "six-senses-ibiza/view-1":[
+  ("https://media.sixsenses.com/B60H3R33/at/3mr4fqhv5t73vwbk3mtf53/Swimming_Pool_aerial.jpg?fit=crop&height=1100&width=1750",
+   "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
+   "Official Six Senses Ibiza gallery, aerial view of the resort pool and cliffside Cala Xarraca setting")],
+ "six-senses-ibiza/view-2":[
+  ("https://media.sixsenses.com/B60H3R33/at/4n5vtj254bw57skgsxwt46m/6_Five_Bedroom_Mansion_master_bedroom_sunset_view.jpg?fit=crop&height=1100&width=1750",
+   "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
+   "Actual bedroom in Five Bedroom Mansion at Six Senses Ibiza, dusk sea-view; do not call it a standard guestroom")],
+ "six-senses-ibiza/view-3":[
+  ("https://media.sixsenses.com/B60H3R33/at/bkq623mr7bmwbwtwb87vx3x/Swimming_Pool_aerial.jpg?fit=crop&height=1100&width=1750",
+   "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
+   "Different official aerial photo of Six Senses Ibiza swimming pool and sea cliff terraces")],
+ "the-standard-ibiza/view-1":[
+  ("https://duvx7h32ggrur.cloudfront.net/attachments/47aba2f118b88a9763eca8afcc54d533a924092b/store/optimize_v1/1600/85/jpeg/7082549f233a26443d1930495de8998d4cea865361708c53ca5f04ff4ff2/the-standard-ibiza-hotel-my-ibiza-13-1-.jpg",
+   "https://www.standardhotels.com/ibiza/properties/ibiza",
+   "Official The Standard Ibiza rooftop/venue photograph, Eivissa Old Town property rather than the beach")],
+ "the-standard-ibiza/view-2":[
+  ("https://duvx7h32ggrur.cloudfront.net/attachments/d3e4291a7b006283f44866547a8982dd9596f33c/store/optimize_v1/1600/85/jpeg/953984affafd6475d1a655ea807c34621c0f9f4f068518397c6a4a97896b/220426_majao_rooms_webres-64.jpg",
+   "https://www.standardhotels.com/ibiza/properties/ibiza",
+   "Official The Standard Ibiza Standard King room with bed, accurately named accommodation type")],
+ "the-standard-ibiza/view-3":[
+  ("https://duvx7h32ggrur.cloudfront.net/attachments/874efd8f5723101de7026fc9748c6db9e3fb5cda/store/optimize_v1/1600/85/jpeg/50516d61bc24e186638733ec5a7e92dfa15110b93d59cec808bb7b533ec0/jara-restaurant-interior-the-standard-ibiza-old-town.jpg",
+   "https://www.standardhotels.com/ibiza/properties/ibiza",
+   "Authentic Jara restaurant interior at The Standard Ibiza, not a room or private beach")]
+}
 # Exact verified place identity; Commons originals built from canonical filename,
 # attribution/licence remain to be read from individual Commons source before QA.
 EXACT_SCENE={
@@ -175,7 +200,7 @@ def main():
    for page in HOTELS[key]:found.extend(site_images(page))
    cache[key]=found
    print("IBIZA_SITE",key,len(found),flush=True)
-  linked=[(100,url,page,ctx,"Named property source: "+page,"Licence pending specific photographer review") for url,page,ctx in EXACT_HOTEL.get(key+"/"+row["key"],[])]
+  linked=[(240,url,page,ctx,"Named hotel gallery; original photographer/source: "+page,"Commercial licence requires verified operator/photographer rights") for url,page,ctx in EXACT_HOTEL.get(key+"/"+row["key"],[])]
   capture(row,linked+cache[key],urls,shas,hashes)
  for row in m["destinationScenes"]:
   if row.get("localPath"):continue
