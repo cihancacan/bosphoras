@@ -3,7 +3,7 @@ export const deiaDraftFaq = {
   "fr": [
     {
       "q": "Quel hôtel de Deià est le mieux adapté à une famille ?",
-      "a": "Belmond La Residencia dispose de plusieurs catégories de chambres, suites et d'une villa, mais la capacité exacte et les conditions de couchage doivent être vérifiées. Hotel d'es Puig propose aussi des appartements. Sa Pedrissa est réservé aux adultes et ne convient pas aux jeunes enfants."
+      "a": "Belmond La Residencia dispose de plusieurs catégories de chambres, suites et d'une villa, mais la capacité exacte et les conditions de couchage doivent être vérifiées. Es Molí possède également de grands jardins et diverses catégories de chambres, sous réserve des conditions pour enfants. Sa Pedrissa et Hoposa Costa d’Or sont réservés aux adultes et ne conviennent pas aux jeunes enfants."
     },
     {
       "q": "Cala Deià est-elle une plage de sable accessible en poussette ?",
@@ -33,7 +33,7 @@ export const deiaDraftFaq = {
   "en": [
     {
       "q": "Which Deià hotel should families consider ?",
-      "a": "Belmond La Residencia offers varied room categories, suites and a villa, but actual sleeping capacity and child arrangements must be confirmed. Hotel d'es Puig also advertises apartments. Sa Pedrissa is adults-only and therefore inappropriate for holidays with young children."
+      "a": "Belmond La Residencia offers varied room categories, suites and a villa, but actual sleeping capacity and child arrangements must be confirmed. Es Molí also has spacious grounds and varied room categories, subject to child and bedding policies. Sa Pedrissa and Hoposa Costa d’Or are adults-only, not suitable for younger children."
     },
     {
       "q": "Is Cala Deià a sandy beach suitable for pushchairs?",
