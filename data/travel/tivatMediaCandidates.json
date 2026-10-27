@@ -1,247 +1,625 @@
 {
   "destination": "tivat",
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
       "propertyKey": "quince",
       "property": "The Quince Porto Montenegro",
       "sourcePage": "https://www.thequince.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Images not collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://portomontenegro.com/wp-content/uploads/2026/07/hotel-regent-porto-montenegro.jpg",
+      "frCaption": "The Quince · hôtel historique de la marina, photographié avant changement d'enseigne",
+      "enCaption": "The Quince · historic marina hotel photographed before its rebranding",
+      "credit": "The Quince Porto Montenegro · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.thequince.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/tivat-premium/quince/view-1.webp",
+      "sha256": "f9788299538b47a270655b95dd26e34fe99619d2246eb80a342c14b3f3d095c2",
+      "bytes": 528862,
+      "originalSize": [
+        2560,
+        1706
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "quince",
       "property": "The Quince Porto Montenegro",
       "sourcePage": "https://www.thequince.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Images not collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://portomontenegro.com/wp-content/uploads/2026/06/hotel-regent.jpg",
+      "frCaption": "The Quince · façade de l'ancien Regent sur les pontons",
+      "enCaption": "The Quince · former Regent building on the marina",
+      "credit": "The Quince Porto Montenegro · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.thequince.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/tivat-premium/quince/view-2.webp",
+      "sha256": "3a463d0fda741499cffaf9aa04ad06dbf3a41ec35a47f9f96936676ecadcea6e",
+      "bytes": 328924,
+      "originalSize": [
+        2560,
+        1708
+      ],
+      "outputSize": [
+        1750,
+        1168
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "quince",
       "property": "The Quince Porto Montenegro",
       "sourcePage": "https://www.thequince.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Images not collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://portomontenegro.com/wp-content/uploads/2026/01/porto-montenegro-hotel-regent.jpg",
+      "frCaption": "The Quince · panorama de l'ancien complexe Regent",
+      "enCaption": "The Quince · former Regent property panorama",
+      "credit": "The Quince Porto Montenegro · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.thequince.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/tivat-premium/quince/view-3.webp",
+      "sha256": "58cab63b016dc498b2207a6e2d99297ab328db91cdcf494169b08f261d352650",
+      "bytes": 135944,
+      "originalSize": [
+        906,
+        510
+      ],
+      "outputSize": [
+        906,
+        510
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "siro",
       "property": "SIRO Porto Montenegro",
       "sourcePage": "https://www.sirohotels.com/montenegro/porto-montenegro",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Images not collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://portomontenegro.com/wp-content/uploads/2026/06/hotel-siro.jpg",
+      "frCaption": "SIRO · façade et architecture du quartier Boka Place",
+      "enCaption": "SIRO · Boka Place hotel architecture",
+      "credit": "SIRO Porto Montenegro · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.sirohotels.com/montenegro/porto-montenegro",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/tivat-premium/siro/view-1.webp",
+      "sha256": "f72e177018011d9d752f7587aae161476721099bde67fd00e11c7859e2688edf",
+      "bytes": 360374,
+      "originalSize": [
+        2560,
+        1708
+      ],
+      "outputSize": [
+        1750,
+        1168
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "siro",
       "property": "SIRO Porto Montenegro",
       "sourcePage": "https://www.sirohotels.com/montenegro/porto-montenegro",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Images not collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://portomontenegro.com/wp-content/uploads/2026/06/siro-2.jpg",
+      "frCaption": "SIRO · complexe hôtelier et environnement sportif",
+      "enCaption": "SIRO · active-lifestyle hotel and setting",
+      "credit": "SIRO Porto Montenegro · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.sirohotels.com/montenegro/porto-montenegro",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/tivat-premium/siro/view-2.webp",
+      "sha256": "2b973787508bec602f48372d6878ab151e2ca99c7d73bbf1e748092f5f0b9735",
+      "bytes": 101402,
+      "originalSize": [
+        2048,
+        1365
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "siro",
       "property": "SIRO Porto Montenegro",
       "sourcePage": "https://www.sirohotels.com/montenegro/porto-montenegro",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Images not collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://portomontenegro.com/wp-content/uploads/2025/01/siro-destination-fitness.webp",
+      "frCaption": "SIRO · activité sportive et bien-être sur le site officiel de la marina",
+      "enCaption": "SIRO · destination fitness programme photographed by marina operator",
+      "credit": "SIRO Porto Montenegro · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.sirohotels.com/montenegro/porto-montenegro",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/tivat-premium/siro/view-3.webp",
+      "sha256": "67cdcc100d0e8b43a9b3f5a293f178e715418a50c3003d6575c09dba727e6678",
+      "bytes": 54640,
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "chedi",
       "property": "The Chedi Luštica Bay",
       "sourcePage": "https://www.chedilusticabay.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Images not collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://d1tfdfyb9rvaxg.cloudfront.net/chedilusticabay.com-1070583806/cms/cache/v2/64afc7d4c5820.jpg/1920x1080/fit/80/8a0e6122621764bdd3b6819e6a3b3eac.jpg",
+      "frCaption": "The Chedi · marina de Luštica Bay distincte de Tivat centre",
+      "enCaption": "The Chedi · its separate Luštica Bay marina",
+      "credit": "The Chedi Luštica Bay · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.chedilusticabay.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/tivat-premium/chedi/view-1.webp",
+      "sha256": "15f629e68d690a179542ddbb51e352e9cbf0309b46f3aa0506a57ce21f8d7b88",
+      "bytes": 461620,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1750,
+        984
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "chedi",
       "property": "The Chedi Luštica Bay",
       "sourcePage": "https://www.chedilusticabay.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Images not collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://d1tfdfyb9rvaxg.cloudfront.net/chedilusticabay.com-1070583806/cms/cache/v2/686b6c9ef2d20.jpg/1920x1080/fit/80/9d43a69201dc33eb011ebc2ab875befc.jpg",
+      "frCaption": "The Chedi · espace piscine et séjour de bord de mer",
+      "enCaption": "The Chedi · seafront resort and pool scene",
+      "credit": "The Chedi Luštica Bay · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.chedilusticabay.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/tivat-premium/chedi/view-2.webp",
+      "sha256": "171b66859679e36e587a5f439221b35ca5eb9a2b9f536419ed0a05b0c5ce7ed4",
+      "bytes": 242656,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1750,
+        984
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "chedi",
       "property": "The Chedi Luštica Bay",
       "sourcePage": "https://www.chedilusticabay.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Images not collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://d1tfdfyb9rvaxg.cloudfront.net/chedilusticabay.com-1070583806/cms/cache/v2/64afc7d4c5820.jpg/1920x1080/fit/80/0c3127a2a13030629e19eae4a9b21e13.webp",
+      "frCaption": "The Chedi · paysage côtier depuis la propriété",
+      "enCaption": "The Chedi · coastal setting of the resort",
+      "credit": "The Chedi Luštica Bay · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.chedilusticabay.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/tivat-premium/chedi/view-3.webp",
+      "sha256": "af4062f53ac47d3f428b73e9ca99bba56abae845f0723b74ee1e079dc7dd8adf",
+      "bytes": 447808,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1750,
+        984
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "laroche",
       "property": "La Roche Boutique Hotel",
       "sourcePage": "https://larochehotel.me/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Images not collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://larochehotel.me/wp-content/uploads/2022/08/Glavna.jpg",
+      "frCaption": "La Roche · hôtel boutique sur le front de mer de Tivat",
+      "enCaption": "La Roche · Tivat waterfront boutique hotel",
+      "credit": "La Roche Boutique Hotel · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://larochehotel.me/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/tivat-premium/laroche/view-1.webp",
+      "sha256": "b64fc9416b81254eef8d1c63089b99921585903bceec1c940f157204e9728aa9",
+      "bytes": 121894,
+      "originalSize": [
+        4256,
+        2832
+      ],
+      "outputSize": [
+        1750,
+        1164
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "laroche",
       "property": "La Roche Boutique Hotel",
       "sourcePage": "https://larochehotel.me/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Images not collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://larochehotel.me/wp-content/uploads/2023/08/Glavna.jpg",
+      "frCaption": "La Roche · cadre et espaces du petit hôtel",
+      "enCaption": "La Roche · boutique property atmosphere",
+      "credit": "La Roche Boutique Hotel · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://larochehotel.me/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/tivat-premium/laroche/view-2.webp",
+      "sha256": "41aa97dbfadb9a50dbe794bc57d56223985291eb88c17d1f751dd66af93abe6f",
+      "bytes": 210562,
+      "originalSize": [
+        2048,
+        1365
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "laroche",
       "property": "La Roche Boutique Hotel",
       "sourcePage": "https://larochehotel.me/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Images not collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://larochehotel.me/wp-content/uploads/2022/08/5.jpg",
+      "frCaption": "La Roche · espaces officiels de l'établissement",
+      "enCaption": "La Roche · official boutique hotel facilities",
+      "credit": "La Roche Boutique Hotel · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://larochehotel.me/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/tivat-premium/laroche/view-3.webp",
+      "sha256": "6961731dfd4b9d432d890470ac796fac577a6021669c0b6239ca78c167e458c9",
+      "bytes": 198308,
+      "originalSize": [
+        2048,
+        1365
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     }
   ],
   "destinationScenes": [
     {
       "key": "scene-1",
       "place": "Porto Montenegro 03.JPG",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Landscape source requires validation",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Porto Montenegro · pontons de yachts dans la baie",
+      "enCaption": "Porto Montenegro · yachts and marina berths",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Porto_Montenegro_03.JPG/1920px-Porto_Montenegro_03.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Porto_Montenegro_03.JPG",
+      "credit": "Stolbovsky",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/tivat-premium/destination/scene-1.webp",
+      "sha256": "b8535cde44facb6481790878ab2ab6f8529d63625a803361d753fe2e4b438151",
+      "bytes": 263258,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-2",
       "place": "Tivat - Marina Porto Montenegro - panoramio.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Landscape source requires validation",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Tivat · promenade et bateaux de la marina",
+      "enCaption": "Tivat · marina promenade and moored yachts",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Tivat_-_Marina_Porto_Montenegro_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tivat_-_Marina_Porto_Montenegro_-_panoramio.jpg",
+      "credit": "Zoran Kurelić Rabko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "localPath": "/images/travel/tivat-premium/destination/scene-2.webp",
+      "sha256": "3feacc19d420ef69e53fa7f65f1c9c4762f4ea216fcd8a104b34fb2502ddc876",
+      "bytes": 211230,
+      "originalSize": [
+        1600,
+        1201
+      ],
+      "outputSize": [
+        1600,
+        1201
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-3",
       "place": "Tivat, Montenegro, Boko Kotor Bay and Porto Montenegro at sunset.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Landscape source requires validation",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Boka Bay · Tivat et Porto Montenegro au coucher du soleil",
+      "enCaption": "Boka Bay · Tivat and Porto Montenegro at sunset",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Tivat%2C_Montenegro%2C_Boko_Kotor_Bay_and_Porto_Montenegro_at_sunset.jpg/1920px-Tivat%2C_Montenegro%2C_Boko_Kotor_Bay_and_Porto_Montenegro_at_sunset.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tivat,_Montenegro,_Boko_Kotor_Bay_and_Porto_Montenegro_at_sunset.jpg",
+      "credit": "Корнет Кларнет",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/tivat-premium/destination/scene-3.webp",
+      "sha256": "8730c575bc12c86e15c45baa909b4da66a436ee658bbfcce3e3e67d95c2bbf97",
+      "bytes": 359782,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-4",
       "place": "Gornja Lastva.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Landscape source requires validation",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Gornja Lastva · hameau de pierre sur les hauteurs de Tivat",
+      "enCaption": "Gornja Lastva · stone hillside village",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Gornja_Lastva.jpg/1920px-Gornja_Lastva.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Gornja_Lastva.jpg",
+      "credit": "Master Sun Tzu",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/tivat-premium/destination/scene-4.webp",
+      "sha256": "1eb2c4437d9c72915cd67b8004d601c4d3fdae0d7dec79633832100f59b1f3a7",
+      "bytes": 357962,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-5",
       "place": "Sunset over the Bay of Kotor seen from Gornja Lastva 1.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Landscape source requires validation",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Gornja Lastva · panorama sur la baie à l'heure dorée",
+      "enCaption": "Gornja Lastva · sunset panorama of Boka Bay",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Sunset_over_the_Bay_of_Kotor_seen_from_Gornja_Lastva_1.jpg/1920px-Sunset_over_the_Bay_of_Kotor_seen_from_Gornja_Lastva_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sunset_over_the_Bay_of_Kotor_seen_from_Gornja_Lastva_1.jpg",
+      "credit": "Alexkom000",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "localPath": "/images/travel/tivat-premium/destination/scene-5.webp",
+      "sha256": "ff785d419737e697797297269f1bf6004867394dfb33884a7f1d4f2c40ecae67",
+      "bytes": 211224,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-6",
       "place": "Special Nature Reserve \"Solila\", Montenegro 21.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Landscape source requires validation",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Solila · milieu humide protégé près de Tivat",
+      "enCaption": "Solila · protected wetland reserve near Tivat",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Special_Nature_Reserve_%22Solila%22%2C_Montenegro_21.jpg/1920px-Special_Nature_Reserve_%22Solila%22%2C_Montenegro_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Special_Nature_Reserve_%22Solila%22,_Montenegro_21.jpg",
+      "credit": "Milica Buha",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/tivat-premium/destination/scene-6.webp",
+      "sha256": "495e5394ab8f4e0200a9cfe76fa01f9fbffe1f714321d0e2f6fbbf656d912334",
+      "bytes": 411610,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-7",
       "place": "Special Nature Reserve \"Solila\", Montenegro 07.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Landscape source requires validation",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Solila · zones naturelles et observation des oiseaux",
+      "enCaption": "Solila · wetland habitat and birdwatching",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Special_Nature_Reserve_%22Solila%22%2C_Montenegro_07.jpg/1920px-Special_Nature_Reserve_%22Solila%22%2C_Montenegro_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Special_Nature_Reserve_%22Solila%22,_Montenegro_07.jpg",
+      "credit": "Milica Buha",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/tivat-premium/destination/scene-7.webp",
+      "sha256": "09503ffead8626886ffc7e835fe9ac1a960669bfc9d66e5c8c0006f4817beeb8",
+      "bytes": 434904,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-8",
       "place": "Porto Montenegro 05.JPG",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Landscape source requires validation",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Porto Montenegro · autre perspective sur la marina",
+      "enCaption": "Porto Montenegro · different view of the marina",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Porto_Montenegro_05.JPG/1920px-Porto_Montenegro_05.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Porto_Montenegro_05.JPG",
+      "credit": "Stolbovsky",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/tivat-premium/destination/scene-8.webp",
+      "sha256": "be9e30a742cbdb143b2636396ac49675e8d8e55708fcfb97e56ad7d15a5ef546",
+      "bytes": 327262,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-9",
       "place": "Tivat - Marina Porto Montenegro - panoramio (2).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Landscape source requires validation",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Tivat · waterfront et marina de plaisance",
+      "enCaption": "Tivat · waterfront marina scene",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Tivat_-_Marina_Porto_Montenegro_-_panoramio_%282%29.jpg/1920px-Tivat_-_Marina_Porto_Montenegro_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tivat_-_Marina_Porto_Montenegro_-_panoramio_(2).jpg",
+      "credit": "Zoran Kurelić Rabko",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "localPath": "/images/travel/tivat-premium/destination/scene-9.webp",
+      "sha256": "096c3996a1d7e04bbc750b93e47e9e3505a2cdf832fafe16271910d4ff9228a7",
+      "bytes": 185424,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     }
   ],
-  "publicationBlockedReason": "No images published until source+noindex QA",
-  "photoRightsBasis": "Hotel photo use attested by project operator; original photographer rights unverified. Commons metadata per photograph."
+  "publicationBlockedReason": "21 local photos passed automated source and uniqueness QA; final independent Preview display and hotel licensing signoff still pending",
+  "photoRightsBasis": "Commercial hotel photo use stated by operator but photographer agreements not audited; Commons license and credit stored per photo"
 }
