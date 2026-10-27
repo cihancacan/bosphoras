@@ -16,7 +16,7 @@ HOTELS=[
 ('https://img.belmond.com/f_auto/t_1600_ar_4_5/photos/lrs/lrs-din-restaurant-el-olivo08.jpg','La Residencia · terrasse du restaurant El Olivo','La Residencia · El Olivo restaurant terrace'),
 ('https://img.belmond.com/f_auto/t_1600_ar_4_5/photos/lrs/lrs-acc-ssv-villa-robert-graves40.jpg','La Residencia · Villa Robert Graves, catégorie distincte','La Residencia · Villa Robert Graves, a distinct category')]),
 ('es-moli','Hotel Es Molí','https://esmoli.com/en/',[
-('https://esmoli.com/hubfs/EM_0119.jpg','Es Molí · bâtiment ancien et paysage majorquin','Es Molí · historic hotel and Mallorcan setting'),
+('https://esmoli.com/hubfs/EM_0119.jpg','Es Molí · terrasse et transats face aux collines','Es Molí · sun loungers overlooking the hillside'),
 ('https://esmoli.com/hubfs/room-1.png','Es Molí · chambre présentée par l’hôtel','Es Molí · room imagery on the official website'),
 ('https://esmoli.com/hubfs/EM_0026.jpg','Es Molí · piscine et panorama','Es Molí · swimming pool and landscape')]),
 ('sa-pedrissa','Sa Pedrissa','https://www.sapedrissa.com/en/rooms',[
@@ -26,17 +26,17 @@ HOTELS=[
 ('costa-dor','Hoposa Costa d’Or','https://www.hoposa.es/hotels/costa-dor',[
 ('https://www.hoposa.es/images/hoposa/hoteles/costador/slider/gallery/costa_5.jpg','Hoposa Costa d’Or · maison majorquine sur les hauteurs','Hoposa Costa d’Or · hillside Mallorcan building'),
 ('https://www.hoposa.es/images/hoposa/hoteles/costador/slider/gallery/costa_room.jpg','Hoposa Costa d’Or · chambre de l’hôtel','Hoposa Costa d’Or · official room photography'),
-('https://www.hoposa.es/images/hoposa/hoteles/costador/slider/gallery/costa_1.jpg','Hoposa Costa d’Or · piscine panoramique','Hoposa Costa d’Or · panoramic swimming pool')])
+('https://www.hoposa.es/images/hoposa/hoteles/costador/slider/gallery/costa_1.jpg','Hoposa Costa d’Or · terrasse sur la côte et les montagnes','Hoposa Costa d’Or · terrace with coastal mountain views')])
 ]
 COMMONS=[
 ('scene-1',"Deià, Serra de Tramuntana, Mallorca - Flickr - pom'..jpg","Deià · panorama des maisons dans la Serra de Tramuntana","Deià · village panorama in the Tramuntana mountains"),
-('scene-2','Deia Mallorca 002.JPG',"Deià · maisons de pierre et ruelles anciennes","Deià · stone houses and old lanes"),
+('scene-2','Deià, Mallorca (13333996953).jpg',"Deià · ruelle de pierre fleurie dans le village","Deià · flower-lined stone village lane"),
 ('scene-3','Cala de Deya, Mallorca (13334053713).jpg',"Cala Deià · crique rocheuse sur la côte majorquine","Cala Deià · rocky cove on Mallorca's coast"),
-('scene-4','Son Marroig 011.JPG',"Son Marroig · domaine historique et terrasse panoramique","Son Marroig · historic estate and lookout"),
+('scene-4','Son Marroig 011.JPG',"Son Marroig · édifice historique du domaine","Son Marroig · historic stone estate building"),
 ('scene-5','Foradada sunset marroig 1.JPG',"Sa Foradada · pointe rocheuse à la lumière du soir","Sa Foradada · headland at sunset"),
-('scene-6','Deia-Llucalcari.jpg',"Llucalcari · sentiers et paysages de montagne","Llucalcari · footpaths and mountain scenery"),
+('scene-6','Deia-Llucalcari.jpg',"Llucalcari · rochers et criques sauvages du littoral","Llucalcari · rocks and small coves along the wild coast"),
 ('scene-7','Església de Deià.JPG',"Deià · église du village au-dessus des maisons","Deià · village church above the houses"),
-('scene-8','Deia Mallorca 006.JPG',"Deià · terrasses et habitations traditionnelles","Deià · terraced traditional houses"),
+('scene-8','Deià, Mallorca (13333982693).jpg',"Deià · maisons et jardins sur les versants de la Tramuntana","Deià · houses and gardens on Tramuntana slopes"),
 ('scene-9','Deià. Cingles de Son Rutlan i Talaia Vella.jpg',"Deià · falaises de la Serra de Tramuntana","Deià · Tramuntana mountain cliffs")
 ]
 def commons(title):
