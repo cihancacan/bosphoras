@@ -52,3 +52,5 @@ jobs:
 # Begin The Hamptons-only 21-photo import; no manual Vercel Preview.
 
 # Execute The Hamptons 21-photo collection once; Vercel Preview release remains deferred.
+
+# Retry image collection with case-normalized Bridgehampton editorial validation.
