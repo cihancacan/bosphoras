@@ -1,0 +1,31 @@
+name: Travel Costa Careyes - inspect 21 image contact sheet
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: [.github/workflows/travel-costa-careyes-visual-review.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'Pillow>=10,<12'
+      - name: Transient private preview of photographic QA contact sheet
+        run: |
+          python - <<'PY'
+          import base64,io
+          from PIL import Image
+          im=Image.open('docs/travel-costa-careyes-contact-sheet.jpg').convert('RGB')
+          im.thumbnail((1160,1460),Image.Resampling.LANCZOS)
+          out=io.BytesIO()
+          im.save(out,format='JPEG',quality=58,optimize=True)
+          print('COSTA_CAREYES_SHEET_START')
+          print(base64.b64encode(out.getvalue()).decode())
+          print('COSTA_CAREYES_SHEET_END')
+          print('Dimensions:',im.size,'Bytes:',len(out.getvalue()))
+          PY
