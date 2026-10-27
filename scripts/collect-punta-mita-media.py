@@ -42,16 +42,44 @@ HOTELS=[
 ]
 # These specific Commons files have been identified as Punta Mita / neighbouring Marietas scenes.
 SCENES=[
-('Punta Mita, Nayarit - panoramio.jpg','Punta Mita · côte de Nayarit','Punta Mita · Nayarit coastline'),
-('Anclote, Punta de Mita - panoramio.jpg','El Anclote · plage du village','El Anclote · Punta de Mita village beach'),
-('Atardecer en Punta de Mita, Nayarit.jpg','Coucher de soleil à Punta de Mita','Sunset at Punta de Mita'),
-('Club de golf, Punta Mita, Nayarit - panoramio.jpg','Punta Mita · parcours sur la péninsule','Punta Mita peninsula golf course'),
-('Islas Marietas.jpg','Islas Marietas · archipel protégé','Protected Marietas Islands'),
-('Malecón de Punta de Mita - panoramio.jpg','Front de mer et promenade de Punta de Mita','Punta de Mita waterfront'),
-('Blue Footed Booby Marietas Island Puerto Vallarta (20241371835).jpg','Marietas · fou à pieds bleus sur les îles protégées','Marietas · blue-footed booby on protected islands'),
-('Punta Mita, Nayarit - panoramio (1).jpg','Vue de côte à Punta Mita','A different Punta Mita coastal scene'),
-('Playa del St. Regis - panoramio.jpg','Plage du secteur St. Regis à Punta Mita','Coast by St. Regis on Punta Mita peninsula')
-]
+# Exact on-location original publisher photos: for private preview ONLY, NOT commercially licensed.
+{'url':'https://media.admagazine.com/photos/618a6fbc938f88774ad54464/master/w_1600%2Cc_limit/54823.jpg',
+ 'source':'https://www.admagazine.com/lugares/secreto-riviera-nayarit-20180523-4217-articulos',
+ 'fallback':'Punta Mita, Nayarit - panoramio.jpg',
+ 'fr':'Punta Mita · vue aérienne du littoral, villas et mer turquoise',
+ 'en':'Punta Mita · aerial luxury coastline and turquoise sea','author':'Architectural Digest · publisher; individual creator rights pending'},
+{'url':'https://villaexperience.com/wp-content/uploads/2020/10/punta-de-mita-2-2-1024x576.jpg',
+ 'source':'https://villaexperience.com/el-anclote-punta-mita/','fallback':'Anclote, Punta de Mita - panoramio.jpg',
+ 'fr':'El Anclote · village, plage et petits bateaux vus du ciel','en':'El Anclote · village, beach and coastal fishing boats',
+ 'author':'Villa Experience · publisher; photographer terms pending'},
+{'file':'Atardecer en Punta de Mita, Nayarit.jpg','fr':'Coucher de soleil rose à Punta de Mita','en':'Coral sunset on Punta de Mita coast'},
+{'url':'https://assets.rbl.ms/30513180/origin.jpg',
+ 'source':'https://fortworth.culturemap.com/11-05-15-mexico-four-seasons-resort-punta-mita/',
+ 'fallback':'Club de golf, Punta Mita, Nayarit - panoramio.jpg',
+ 'fr':'Parcours Pacífico · le green naturel Tail of the Whale',
+ 'en':'Pacifico golf · the natural Tail of the Whale island green',
+ 'author':'CultureMap · original golf editorial publisher; photographer rights pending'},
+{'file':'Islas Marietas.jpg','fr':'Islas Marietas · rochers et écosystèmes protégés','en':'Marietas Islands · protected rocky islets'},
+{'url':'https://realestateclemus.us/wp-content/grand-media/image/destiladeras-riviera-nayarit.jpg',
+ 'source':'https://realestateclemus.us/banderas-bay-destination/',
+ 'fallback':'Malecón de Punta de Mita - panoramio.jpg',
+ 'fr':'Destiladeras · forêt et côte du Pacifique','en':'Destiladeras · lush forest and Pacific shoreline',
+ 'author':'Real Estate Clemus · publisher; image creator rights pending'},
+{'file':'Blue Footed Booby Marietas Island Puerto Vallarta (20241371835).jpg',
+ 'fr':'Marietas · fou à pieds bleus dans l’archipel protégé',
+ 'en':'Marietas · blue-footed booby on a protected island'},
+{'url':'https://www.bespokeblackbook.com/wp-content/uploads/2018/09/aerial-view-St-Regis.jpg',
+ 'source':'https://www.bespokeblackbook.com/st-regis-punta-mita/',
+ 'fallback':'Punta Mita, Nayarit - panoramio (1).jpg',
+ 'fr':'Punta Mita · longue plage et péninsule verdoyante en soirée',
+ 'en':'Punta Mita · pale-sand beach and lush headland at sunset',
+ 'author':'Bespoke Black Book · resort publisher, creator rights pending'},
+{'url':'https://marivalarmony.com/storage/cdn/images/gallery/destiladeras%20sayulita.jpg',
+ 'source':'https://marivalarmony.com/blog/riviera-nayarit-best-beaches',
+ 'fallback':'Playa del St. Regis - panoramio.jpg',
+ 'fr':'Destiladeras · sable clair, palmiers et plage sauvage',
+ 'en':'Destiladeras · natural beach and coastal palms',
+ 'author':'Marival Armony · hospitality publisher; photographer rights pending'}
 def request(url):
  error=None
  for i in range(4):
@@ -110,11 +138,27 @@ def main():
    'Owner-only private Preview candidate; no public-commercial licence inferred',src,
    'publisher_labelled_property_image',{'propertyKey':k,'property':name}))
   print('HOTEL',k,counts[k],hotels[-1]['bytes'],flush=True)
- for i,(filename,fr,en) in enumerate(SCENES,1):
-  m=commons(filename)
-  scenes.append(build('scene-'+str(i),'destination',m['url'],m['sourcePage'],fr,en,
-   m['credit'],m['license'],m['licenseUrl'],'wikimedia_commons_verified',{'place':'Punta Mita / Riviera Nayarit, Mexico','commonsFile':filename}))
-  print('SCENE',i,scenes[-1]['bytes'],m['license'],flush=True)
+ for i,scene in enumerate(SCENES,1):
+  fr,en=scene['fr'],scene['en']
+  if 'file' in scene:
+   filename=scene['file'];m=commons(filename)
+   obj=build('scene-'+str(i),'destination',m['url'],m['sourcePage'],fr,en,
+    m['credit'],m['license'],m['licenseUrl'],'wikimedia_commons_verified',
+    {'place':'Punta Mita / Riviera Nayarit, Mexico','commonsFile':filename})
+  else:
+   try:
+    obj=build('scene-'+str(i),'destination',scene['url'],scene['source'],fr,en,
+     scene['author'],'Restricted owner Preview only; publisher copyright not independently cleared',
+     scene['source'],'private_preview_publisher_location',
+     {'place':'Punta Mita / Riviera Nayarit, Mexico'})
+   except Exception as exc:
+    print('PUBLISHER SCENE FAILED; using Commons fallback',i,str(exc),flush=True)
+    filename=scene['fallback'];m=commons(filename)
+    obj=build('scene-'+str(i),'destination',m['url'],m['sourcePage'],fr,en,
+     m['credit'],m['license'],m['licenseUrl'],'wikimedia_commons_verified',
+     {'place':'Punta Mita / Riviera Nayarit, Mexico','commonsFile':filename,'visualQaWarning':'Publisher preferred photo unavailable; check whether fallback illustrates caption accurately'})
+  scenes.append(obj)
+  print('SCENE',i,obj['bytes'],obj['license'],flush=True)
  all_=hotels+scenes
  if len(hotels)!=12 or len(scenes)!=9 or len(set(p['sha256'] for p in all_))!=21:raise RuntimeError('Need 21 unique assets')
  # Very similar/duplicate crops must be reviewed rather than silently reused.
