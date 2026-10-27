@@ -1,247 +1,625 @@
 {
   "destination": "the-hamptons",
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
       "propertyKey": "topping",
       "property": "Topping Rose House",
       "sourcePage": "https://www.toppingrosehouse.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo awaiting source provenance and visual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://res.cloudinary.com/traveltripperweb/image/upload/c_fit,f_auto,h_1200,q_auto,w_1200/v1638911916/urchugkglpb4xeyynlxp.jpg",
+      "frCaption": "Topping Rose House · domaine historique de Bridgehampton",
+      "enCaption": "Topping Rose House · historic Bridgehampton estate",
+      "credit": "Topping Rose House · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.toppingrosehouse.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/the-hamptons-premium/topping/view-1.webp",
+      "sha256": "06d01ca64767931aca7ccfc92a6514d8396212005fead73efd68608d7cbac559",
+      "bytes": 85330,
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "topping",
       "property": "Topping Rose House",
       "sourcePage": "https://www.toppingrosehouse.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo awaiting source provenance and visual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://res.cloudinary.com/traveltripperweb/image/upload/c_crop,h_3000,w_2000,x_0,y_0/c_fit,f_auto,h_1200,q_auto,w_1200/v1668971980/qyyluxclibmg4iin8c0n.jpg",
+      "frCaption": "Topping Rose House · espace hôtelier photographié officiellement",
+      "enCaption": "Topping Rose House · official property interior",
+      "credit": "Topping Rose House · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.toppingrosehouse.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/the-hamptons-premium/topping/view-2.webp",
+      "sha256": "e51905360550f27376c1be67e771dc90cb86bf57d274e8c93e9af2c9156f46bb",
+      "bytes": 48030,
+      "originalSize": [
+        800,
+        1200
+      ],
+      "outputSize": [
+        800,
+        1200
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "topping",
       "property": "Topping Rose House",
       "sourcePage": "https://www.toppingrosehouse.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo awaiting source provenance and visual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://res.cloudinary.com/traveltripperweb/image/upload/c_fit,f_auto,h_1200,q_auto,w_1200/v1672601543/cvgebh8plhordvxlfxyu.jpg",
+      "frCaption": "Topping Rose House · univers du restaurant Jean-Georges",
+      "enCaption": "Topping Rose House · Jean-Georges dining atmosphere",
+      "credit": "Topping Rose House · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.toppingrosehouse.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/the-hamptons-premium/topping/view-3.webp",
+      "sha256": "19d7a9faf4ddef4adc1f095fd1c9e9b0006d2daf37298237f504d5076c8e9156",
+      "bytes": 71846,
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "maidstone",
       "property": "The Maidstone",
       "sourcePage": "https://themaidstone.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo awaiting source provenance and visual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://themaidstone.com/wp-content/uploads/2-1920x1040.jpg",
+      "frCaption": "The Maidstone · décor de la maison d'East Hampton",
+      "enCaption": "The Maidstone · historic East Hampton boutique setting",
+      "credit": "The Maidstone · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://themaidstone.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/the-hamptons-premium/maidstone/view-1.webp",
+      "sha256": "a19679c58703cda840c52cc5e9312c74550e85e19bc5e16572d0e10de3dc352a",
+      "bytes": 70718,
+      "originalSize": [
+        1920,
+        1040
+      ],
+      "outputSize": [
+        1750,
+        948
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "maidstone",
       "property": "The Maidstone",
       "sourcePage": "https://themaidstone.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo awaiting source provenance and visual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://themaidstone.com/wp-content/uploads/4-1920x1040.jpg",
+      "frCaption": "The Maidstone · espaces et décoration contemporaine",
+      "enCaption": "The Maidstone · design-led guest spaces",
+      "credit": "The Maidstone · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://themaidstone.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/the-hamptons-premium/maidstone/view-2.webp",
+      "sha256": "a877285ec53eeda2318ff3544cc321ee29d0f61345961b9308edfdf11e9e558a",
+      "bytes": 88882,
+      "originalSize": [
+        1920,
+        1040
+      ],
+      "outputSize": [
+        1750,
+        948
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "maidstone",
       "property": "The Maidstone",
       "sourcePage": "https://themaidstone.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo awaiting source provenance and visual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://themaidstone.com/wp-content/uploads/6-1920x1040.jpg",
+      "frCaption": "The Maidstone · architecture et ambiance de l’hôtel",
+      "enCaption": "The Maidstone · official hotel photography",
+      "credit": "The Maidstone · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://themaidstone.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/the-hamptons-premium/maidstone/view-3.webp",
+      "sha256": "8b9e1a9901029023f198da06630fc73549fca232867e93d39cf1065ca94c74e2",
+      "bytes": 453328,
+      "originalSize": [
+        1920,
+        1040
+      ],
+      "outputSize": [
+        1750,
+        948
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "marram",
       "property": "Marram Montauk",
       "sourcePage": "https://www.marrammontauk.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo awaiting source provenance and visual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://cdn.prod.website-files.com/6797f4499bd87c64958bea80/6797f591c86a6612011de6fb_courtyard_img.jpg",
+      "frCaption": "Marram · hébergements en cour intérieure entre les dunes",
+      "enCaption": "Marram · courtyard accommodation among dunes",
+      "credit": "Marram Montauk · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.marrammontauk.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/the-hamptons-premium/marram/view-1.webp",
+      "sha256": "9c005cc599e1e7fe730becb3dfcd8a6ae0201183b627d142f7c4db2021303639",
+      "bytes": 83520,
+      "originalSize": [
+        1612,
+        1090
+      ],
+      "outputSize": [
+        1612,
+        1090
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "marram",
       "property": "Marram Montauk",
       "sourcePage": "https://www.marrammontauk.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo awaiting source provenance and visual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://cdn.prod.website-files.com/6797f4499bd87c64958bea80/6797f58a7ac76d4ff1576dd1_oceanview_img.jpg",
+      "frCaption": "Marram · chambre vue océan, catégorie spécifique",
+      "enCaption": "Marram · ocean-view accommodation category",
+      "credit": "Marram Montauk · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.marrammontauk.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/the-hamptons-premium/marram/view-2.webp",
+      "sha256": "a77c3c82299b0c75866553eeecdcb706010f5017914b4663997addefe32c4e1e",
+      "bytes": 101356,
+      "originalSize": [
+        1612,
+        1090
+      ],
+      "outputSize": [
+        1612,
+        1090
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "marram",
       "property": "Marram Montauk",
       "sourcePage": "https://www.marrammontauk.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo awaiting source provenance and visual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://cdn.prod.website-files.com/6797f4499bd87c64958bea80/6797f58391174a0d1bf5a56b_beachfront_img.jpg",
+      "frCaption": "Marram · façade face à l’Atlantique",
+      "enCaption": "Marram · official oceanfront view",
+      "credit": "Marram Montauk · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.marrammontauk.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/the-hamptons-premium/marram/view-3.webp",
+      "sha256": "f241dca804060a2b9f7bc6a7f870a7ee776b5e4b8e523a6a8e6d37d3f9ecae7c",
+      "bytes": 139858,
+      "originalSize": [
+        1612,
+        1090
+      ],
+      "outputSize": [
+        1612,
+        1090
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "gurneys",
       "property": "Gurney’s Montauk Resort & Seawater Spa",
       "sourcePage": "https://www.gurneysresorts.com/montauk",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo awaiting source provenance and visual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.gurneysresorts.com/sites/default/files/styles/1360x544_1x/public/2026-07/DJI_0305.jpg.webp?h=26c3f599&itok=EdONtiGf",
+      "frCaption": "Gurney's · plage privée du resort de Montauk",
+      "enCaption": "Gurney's · aerial view of the resort's guest-only beach",
+      "credit": "Gurney’s Montauk Resort & Seawater Spa · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.gurneysresorts.com/montauk",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/the-hamptons-premium/gurneys/view-1.webp",
+      "sha256": "adf6954bf0a9e446e57d7baaa609b1c2d1110db0eb6838d3a90ddab4303f56fb",
+      "bytes": 96706,
+      "originalSize": [
+        1360,
+        544
+      ],
+      "outputSize": [
+        1360,
+        544
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "gurneys",
       "property": "Gurney’s Montauk Resort & Seawater Spa",
       "sourcePage": "https://www.gurneysresorts.com/montauk",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo awaiting source provenance and visual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.gurneysresorts.com/sites/default/files/styles/1360x544_1x/public/2026-07/image-2.jpg.webp?h=920929c4&itok=8fwZraXU",
+      "frCaption": "Gurney's · piscine intérieure en eau salée",
+      "enCaption": "Gurney's · indoor saltwater pool",
+      "credit": "Gurney’s Montauk Resort & Seawater Spa · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.gurneysresorts.com/montauk",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/the-hamptons-premium/gurneys/view-2.webp",
+      "sha256": "a8bebf4dfe963e7fe1f612c578117a60fe9927c7bd6c4e9a1c848d833d81273f",
+      "bytes": 88890,
+      "originalSize": [
+        1360,
+        544
+      ],
+      "outputSize": [
+        1360,
+        544
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "gurneys",
       "property": "Gurney’s Montauk Resort & Seawater Spa",
       "sourcePage": "https://www.gurneysresorts.com/montauk",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo awaiting source provenance and visual review",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.gurneysresorts.com/sites/default/files/styles/1360x544_1x/public/2026-07/image-1.jpg.webp?h=920929c4&itok=NzVBBzaR",
+      "frCaption": "Gurney's · cottages sur le littoral atlantique",
+      "enCaption": "Gurney's · oceanfront resort cottages",
+      "credit": "Gurney’s Montauk Resort & Seawater Spa · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.gurneysresorts.com/montauk",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/the-hamptons-premium/gurneys/view-3.webp",
+      "sha256": "1e54688307b65583fbebbeea260d6733f7744e8d621b4edf9a348c6e9b716aa9",
+      "bytes": 111262,
+      "originalSize": [
+        1360,
+        544
+      ],
+      "outputSize": [
+        1360,
+        544
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     }
   ],
   "destinationScenes": [
     {
       "key": "scene-1",
       "place": "Montauk Point Lighthouse 2018 (02).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Geographic and Commons licensing check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Montauk Point · phare emblématique à l'extrémité de Long Island",
+      "enCaption": "Montauk Point · iconic lighthouse at Long Island's eastern tip",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Montauk_Point_Lighthouse_2018_%2802%29.jpg/1920px-Montauk_Point_Lighthouse_2018_%2802%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Montauk_Point_Lighthouse_2018_(02).jpg",
+      "credit": "NearEMPTiness",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/the-hamptons-premium/destination/scene-1.webp",
+      "sha256": "8be617fcfd20b9a57d52031e07381f4c9b661ef37d7f7f570dbe500ab85bf130",
+      "bytes": 203018,
+      "originalSize": [
+        1920,
+        1278
+      ],
+      "outputSize": [
+        1750,
+        1165
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-2",
       "place": "Main Beach, East Hampton, NY.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Geographic and Commons licensing check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "East Hampton · Main Beach et dunes de sable",
+      "enCaption": "East Hampton · Main Beach and Atlantic sand",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Main_Beach%2C_East_Hampton%2C_NY.jpg/1920px-Main_Beach%2C_East_Hampton%2C_NY.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Main_Beach,_East_Hampton,_NY.jpg",
+      "credit": "Quintin Soloviev",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "localPath": "/images/travel/the-hamptons-premium/destination/scene-2.webp",
+      "sha256": "5ddc33ed69fac7e0fa7f2b430377df6fc312a1f3c07d5d637e8d7e2e580f6640",
+      "bytes": 659988,
+      "originalSize": [
+        1920,
+        1234
+      ],
+      "outputSize": [
+        1750,
+        1125
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-3",
       "place": "Sag Harbor village aerial view skyline.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Geographic and Commons licensing check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Sag Harbor · ancien port et village maritime",
+      "enCaption": "Sag Harbor · historic maritime village",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Sag_Harbor_village_aerial_view_skyline.jpg/1920px-Sag_Harbor_village_aerial_view_skyline.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sag_Harbor_village_aerial_view_skyline.jpg",
+      "credit": "Quintin Soloviev",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "localPath": "/images/travel/the-hamptons-premium/destination/scene-3.webp",
+      "sha256": "b6a9b959fe83507e295a440854e51cabe2b86150e22dd4118a7d254ed665b99b",
+      "bytes": 619074,
+      "originalSize": [
+        1920,
+        1279
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-4",
       "place": "Cooper's Beach Southampton.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Geographic and Commons licensing check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Southampton · plage de Coopers Beach",
+      "enCaption": "Southampton · Coopers Beach Atlantic shoreline",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Cooper%27s_Beach_Southampton.jpg/1920px-Cooper%27s_Beach_Southampton.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cooper%27s_Beach_Southampton.jpg",
+      "credit": "Peetlesnumber1",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/the-hamptons-premium/destination/scene-4.webp",
+      "sha256": "698f19e25d3f8055d474420b3c26857ec2a3f1ba307abd88fc3f3591f4cb2d22",
+      "bytes": 188976,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-5",
       "place": "Dunes at Amagansett National Wildlife Refuge. (11672014663).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Geographic and Commons licensing check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Amagansett · dunes et végétation protégée",
+      "enCaption": "Amagansett · protected dune vegetation",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Dunes_at_Amagansett_National_Wildlife_Refuge._%2811672014663%29.jpg/1920px-Dunes_at_Amagansett_National_Wildlife_Refuge._%2811672014663%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dunes_at_Amagansett_National_Wildlife_Refuge._(11672014663).jpg",
+      "credit": "U. S. Fish and Wildlife Service - Northeast Region",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Dunes_at_Amagansett_National_Wildlife_Refuge._(11672014663).jpg",
+      "localPath": "/images/travel/the-hamptons-premium/destination/scene-5.webp",
+      "sha256": "6f7235c905a6e837563b9cea5ae45b48f1670cb34e777de9cfca7d7f3452d4e3",
+      "bytes": 315376,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-6",
       "place": "Montauk Beach Long Island New York by Don Ramey Logan.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Geographic and Commons licensing check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Montauk · plage ouverte sur l'océan Atlantique",
+      "enCaption": "Montauk · wide Atlantic beach",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Montauk_Beach_Long_Island_New_York_by_Don_Ramey_Logan.jpg/1920px-Montauk_Beach_Long_Island_New_York_by_Don_Ramey_Logan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Montauk_Beach_Long_Island_New_York_by_Don_Ramey_Logan.jpg",
+      "credit": "Don Ramey Logan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "localPath": "/images/travel/the-hamptons-premium/destination/scene-6.webp",
+      "sha256": "5fb0a91e5f5171d9de2e62ebc708cc86f3d7fbc14acab4863c283051e51a0f50",
+      "bytes": 234600,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1750,
+        984
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-7",
       "place": "The Warmth of a Montauk Sunrise.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Geographic and Commons licensing check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Montauk · lever de soleil sur la côte",
+      "enCaption": "Montauk · morning light across the shoreline",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/The_Warmth_of_a_Montauk_Sunrise.jpg/1920px-The_Warmth_of_a_Montauk_Sunrise.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Warmth_of_a_Montauk_Sunrise.jpg",
+      "credit": "SavidgeMichael",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "localPath": "/images/travel/the-hamptons-premium/destination/scene-7.webp",
+      "sha256": "e3bbc7a60303c22de0731f32b3f8c5da3bf8939d5a87c94d11120939d651685f",
+      "bytes": 112490,
+      "originalSize": [
+        1920,
+        1038
+      ],
+      "outputSize": [
+        1750,
+        946
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-8",
       "place": "To the beach, Hither Hills State Park, NY.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Geographic and Commons licensing check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Hither Hills · chemin d'accès à l'Atlantique",
+      "enCaption": "Hither Hills · path towards the ocean beach",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/To_the_beach%2C_Hither_Hills_State_Park%2C_NY.jpg/1920px-To_the_beach%2C_Hither_Hills_State_Park%2C_NY.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:To_the_beach,_Hither_Hills_State_Park,_NY.jpg",
+      "credit": "Webberalan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/the-hamptons-premium/destination/scene-8.webp",
+      "sha256": "cd27399f59d89b6f4bc2ffcc98303d97ad2644d13b206e0523ad43b08a623218",
+      "bytes": 605202,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-9",
       "place": "Sag Harbor, New York in 2025.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Geographic and Commons licensing check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Sag Harbor · maisons et patrimoine portuaire",
+      "enCaption": "Sag Harbor · harbour town and waterfront heritage",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Sag_Harbor%2C_New_York_in_2025.jpg/1920px-Sag_Harbor%2C_New_York_in_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sag_Harbor,_New_York_in_2025.jpg",
+      "credit": "Hayden Soloviev",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "localPath": "/images/travel/the-hamptons-premium/destination/scene-9.webp",
+      "sha256": "2cd5938f9e86567c87477c1e4adec6feaaf6d01748a17862a1f70bd8835b9fba",
+      "bytes": 669092,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     }
   ],
-  "publicationBlockedReason": "No public use before 21 source-verified local photo files and private Preview QC",
-  "photoRightsBasis": "Operator-attested right for property photographs; Commons licence information must be preserved; original author releases not independently checked."
+  "publicationBlockedReason": "21 local photos passed automated source and uniqueness QA; final independent Preview display and hotel licensing signoff still pending",
+  "photoRightsBasis": "Commercial hotel photo use stated by operator but photographer agreements not audited; Commons license and credit stored per photo"
 }
