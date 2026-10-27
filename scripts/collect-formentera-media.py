@@ -36,7 +36,7 @@ HOTELS=[
 ]
 COMMONS=[
  ("scene-1","Formentera - Platja De Ses Illetes - panoramio.jpg","Ses Illetes · banc de sable dans l'aire protégée","Ses Illetes · beach in the protected reserve"),
- ("scene-2","Platja d'es Pujols.jpg","Plage d'Es Pujols · rivage du village","Es Pujols · village beach"),
+ ("scene-2","Platja d'es Pujols.jpg","Plage d'Es Pujols · rivage du village","Es Pujols · beachfront promenade on Formentera"),
  ("scene-3","Playa d´Es Copinar (Zona de Migjorn) (2).JPG","Plage de Migjorn · littoral sud de Formentera","Migjorn Beach · Formentera's southern coast"),
  ("scene-4","Els Arenals, Formentera.jpg","Es Arenals · plage de Migjorn oriental","Es Arenals · eastern Migjorn beach"),
  ("scene-5","Sunset with sailboats, Cala Saona, Formentera.jpg","Cala Saona · lumière de fin de journée sur la crique","Cala Saona · evening light over the cove"),
