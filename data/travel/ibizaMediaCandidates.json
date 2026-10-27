@@ -2,7 +2,7 @@
   "destination": "ibiza",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 9,
+  "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
   "hotels": [
     {
@@ -252,34 +252,82 @@
       "key": "view-1",
       "property": "The Standard, Ibiza",
       "propertyKey": "the-standard-ibiza",
-      "sourcePage": "https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza",
+      "sourcePage": "https://www.cntraveller.com/hotels/the-standard-ibiza-review",
       "slotIntent": "recognisable property exterior or coast setting",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/the-standard-ibiza/view-1.webp",
+      "downloadUrl": "https://media.cntraveller.com/photos/626bcbc7bc5f4696fd3c936f/16:9/w_2560,c_limit/the%20standard%20ibiza-apr22-pr3.jpeg",
+      "candidateContext": "Actual rooftop at The Standard Ibiza, source CN Traveller property review",
+      "credit": "Named hotel gallery; original photographer/source: https://www.cntraveller.com/hotels/the-standard-ibiza-review",
+      "license": "Commercial licence requires verified operator/photographer rights",
+      "sha256": "5fe4f94f18ce7a3b7aec15afacdc0b01de8a22c77b96b733ab6d79ea0a120213",
+      "dhash": "0000000100000011000101100110001001100101111011011000111111000111",
+      "bytes": 251726,
+      "originalSize": [
+        2560,
+        1440
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ]
     },
     {
       "key": "view-2",
       "property": "The Standard, Ibiza",
       "propertyKey": "the-standard-ibiza",
-      "sourcePage": "https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza",
+      "sourcePage": "https://www.cntraveller.com/hotels/the-standard-ibiza-review",
       "slotIntent": "real guestroom or suite interior",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/the-standard-ibiza/view-2.webp",
+      "downloadUrl": "https://media.cntraveller.com/photos/626bcba607f3ba05725cd551/16%3A9/w_2560%2Cc_limit/suite-the%2520standard%2520ibiza-apr22-pr2.jpg",
+      "candidateContext": "Actual guest suite at The Standard Ibiza, source hotel review",
+      "credit": "Named hotel gallery; original photographer/source: https://www.cntraveller.com/hotels/the-standard-ibiza-review",
+      "license": "Commercial licence requires verified operator/photographer rights",
+      "sha256": "c642be3b840607621991a1668f28d94c2621620c1b970795c57bf6f507a2ea85",
+      "dhash": "1110001111100111111001111110111110010110100111101001100000111001",
+      "bytes": 111486,
+      "originalSize": [
+        2560,
+        1440
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ]
     },
     {
       "key": "view-3",
       "property": "The Standard, Ibiza",
       "propertyKey": "the-standard-ibiza",
-      "sourcePage": "https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza",
+      "sourcePage": "https://www.cntraveller.com/hotels/the-standard-ibiza-review",
       "slotIntent": "authentic hotel pool/dining/terrace",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/the-standard-ibiza/view-3.webp",
+      "downloadUrl": "https://media.cntraveller.com/photos/626bcb35b25d31f55e79d7ab/16%3A9/w_2560%2Cc_limit/jara-the%2520standard%2520ibiza-apr22-pr2.jpg",
+      "candidateContext": "Jara restaurant at The Standard Ibiza, photographed for hotel review",
+      "credit": "Named hotel gallery; original photographer/source: https://www.cntraveller.com/hotels/the-standard-ibiza-review",
+      "license": "Commercial licence requires verified operator/photographer rights",
+      "sha256": "367dcf56161fcd199702b2fa727275523b87a2b161b682c8304f8f7036f9f24e",
+      "dhash": "0010001100100111000101110001011100100111001011110000001100110011",
+      "bytes": 131340,
+      "originalSize": [
+        2560,
+        1440
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ]
     }
   ],
   "destinationScenes": [
