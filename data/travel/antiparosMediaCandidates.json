@@ -502,9 +502,9 @@
     },
     {
       "key": "scene-8",
-      "placeLabel": "Despotiko beach and turquoise cove facing Antiparos",
-      "searchQuery": "Antiparos Agios Georgios Despotiko",
-      "slotIntent": "Genuine cove on Despotiko, viewed from shore, not false viewpoint on Agios Georgios.",
+      "placeLabel": "Îles de Despotiko et Tsimintiri vues depuis la mer",
+      "searchQuery": "Antiparos Tsimintiri and Despotiko sea landscape",
+      "slotIntent": "Antiparos, Tsimintiri, Despotiko coastal islands in daylight; correct island geography",
       "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,

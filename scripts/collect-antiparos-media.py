@@ -62,20 +62,19 @@ EXACT_HOTEL_URLS={
    "Kastro Antiparos real shaded pergola outdoor dining area beside pool")]
 }
 EXACT_LANDSCAPES={
- "scene-3":[("https://www.fantasytravelofgreece.com/sites/default/files/sifneiko_beach.png",
+ "scene-3":[
+  ("https://www.fantasytravelofgreece.com/sites/default/files/sifneiko_beach.png",
    "https://www.fantasytravelofgreece.com/tours-in-greece/cruise-around-antiparos-and-despotiko",
-   "Authentic Sifneiko coast at golden sunset with a yacht silhouette, no watermarked cafe footer")],
- "scene-8":[("https://www.topgreekislands.gr/sites/default/files/images/spot/despotiko_2.jpg",
-   "https://www.topgreekislands.gr/en/sights/beaches-despotiko",
-   "Genuine cove and beach on Despotiko Island offshore Agios Georgios, Antiparos; do not call it the main Agios Georgios village beach")],
+   "Sifneikos Gialos sunset by Antiparos coastline, no café branding"),
+  ("https://www.fantasytravelofgreece.com/sites/default/files/styles/gallery-big/public/sifneiko_beach.png?itok=SRnUA5hw",
+   "https://www.fantasytravelofgreece.com/tours-in-greece/cruise-around-antiparos-and-despotiko",
+   "Sifneiko beach sunset photographed from Antiparos western shore")],
+
  "scene-1":[
   ("https://s3-eu-west-1.amazonaws.com/welcome.mobile.production/uploads/welcome_experience/image/1598/traveler_page_header_antiparos__2_.jpg",
    "https://traveler.welcomepickups.com/en/paros/sightseeing_rides/antiparos-ride-cave-town-castle-experience",
    "Real aerial photograph of Antiparos Chora and port with boats and clear turquoise water")],
- "scene-3":[
-  ("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/89/7c/0d/amazing-sunset-sifneiko.jpg?h=-1&s=1&w=1200",
-   "https://www.tripadvisor.ch/Restaurant_Review-g3569526-d12334953-Reviews-Sifneiko_Cafe-Antiparos_Town_Antiparos_Cyclades_South_Aegean.html",
-   "Sifneikos Gialos sunset viewed from Sifneiko Café's sea-facing terrace")],
+
  "scene-4":[
   ("https://images.squarespace-cdn.com/content/v1/6489d831dc9a515d83f5e390/7c60a337-8a66-411e-9736-7e6b946cb2c6/Livadia-Beach_Strand.jpg",
    "https://www.greekislandhopping.de/blog/antiparos-straende",
@@ -97,13 +96,12 @@ EXACT_LANDSCAPES={
 # Fallback photographic file titles validated as locations on Wikimedia Commons.
 # These originals are unapproved until a separate visual and licensing review.
 EXACT_SCENES={
- "scene-7":[("Antiparos Cave 247279.jpg","Actual cave interior photographed by Zde June 2024, CC BY-SA 4.0")],
-
-"scene-2":[("Antiparos, Kastro, 247356.jpg","Antiparos village near the historic Kastro, Zde 2024")],
-"scene-7":[("Antiparos Cave.jpg","Real cave interior from 2015 by Kondephy, geolocated Antiparos"),("Antiparos-cave.jpg","Genuine Greek Antiparos cave, Dimorsitanos 2009")],
-"scene-8":[("Despotiko.jpg","View from Agios Georgios towards island of Despotiko, Wicki2009")],
-"scene-1":[("Antiparos.jpg","Authentic Antiparos village or harbour, requires visual geographical QA")],
-"scene-6":[]
+ "scene-2":[("Antiparos, Kastro, 247356.jpg","Whitewashed historic Kastro village on Antiparos, photographed 2024 by Zde")],
+ "scene-3":[("Sunset Over Sifnos IV.jpg","Sunset seen from Antiparos toward Sifnos, recorded in Antiparos images, source to verify visual quality")],
+ "scene-7":[("Antiparos Cave 247279.jpg","Documented actual Antiparos cave photograph, 2024, Zde, CC BY-SA 4.0"),("Antiparos Cave 247288.jpg","Alternative cave photograph by Zde in warm light, CC BY-SA 4.0")],
+ "scene-8":[("Antiparos, Tsimintiri and Despotiko, 247863.jpg","Actual Tsimintiri with Antiparos behind, Despotiko to the right; 2024, Zde, CC BY-SA 4.0"),("Despotikó Antíparos Páros Náxos aerial.jpg","Genuine island panorama of Despotiko and Antiparos, by kallerna, 2025")],
+ "scene-1":[("Antiparos.jpg","Historic image of Antiparos town or harbour, visual identity to verify")],
+ "scene-6":[]
 }
 EXACT_SCENE_URLS={}
 def commons_original(filename):
