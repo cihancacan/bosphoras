@@ -1,0 +1,42 @@
+name: Travel Okavango Delta - source-labelled media review
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - scripts/collect-okavango-delta-media.py
+      - .github/workflows/travel-okavango-delta-media.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: travel-okavango-delta-photos
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - name: Download 12 specifically identified lodge photos and 9 Commons scenes
+        run: python -u scripts/collect-okavango-delta-media.py
+      - name: Protect the complete 88-destination catalogue
+        run: node scripts/check-travel-catalogue.mjs
+      - name: Commit source manifest, WebP images and review sheet
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- public/images/travel/okavango-delta-premium data/travel/okavangoDeltaMediaCandidates.json docs/travel-okavango-delta-contact-sheet.jpg
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): collect 21 Okavango candidates for rights and visual review [skip ci]'
+            for i in 1 2 3 4 5; do
+              git fetch origin feature/luxury-travel-seo-destinations-20261012
+              git rebase origin/feature/luxury-travel-seo-destinations-20261012
+              if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then exit 0; fi
+              sleep 3
+            done
+            exit 1
+          fi
