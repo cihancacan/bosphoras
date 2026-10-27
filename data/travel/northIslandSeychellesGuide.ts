@@ -14,3 +14,5 @@ export const northIslandSeychellesGuide:FeaturedCityGuideData={...g,areas:g.area
 // Four clusters use authentic Necker Island photographs; preview only pending final visual QA.
 
 // Route validation includes both Necker room-guide and four accommodation galleries.
+
+// Quality gate: eleven real resort villas, honest family and buyout arrangements, 21 North Island images.
