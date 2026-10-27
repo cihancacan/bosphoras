@@ -136,6 +136,8 @@ def hotel_photos(item):
     score= 3*any(x in low for x in ['suite','room','hotel','lobby','bedroom','bed','pool','spa','interior','facade','terrace'])
     score+= 2*any(x in low for x in ['aman','fifth','greenwich','lowell'])
     score+= 2 if page==pages[0] else 0
+    if key=='aman' and any(q in low for q in ['three-bedroom home','three_bedroom_home','penthouse','residence','home-with','home%2c']):score-=35
+    if key=='aman' and any(q in low for q in ['grand suite','corner suite','premier suite','deluxe suite','suite-bedroom','hotel-room']):score+=9
     if key=='lowell' and any(q in low for q in ['suite','room','terrace','lowell','lw146','lw189']):score+=4
     score-= 2 if any(x in low for x in ['food','drink','cocktail','restaurant','chef','map','amenities-icon']) else 0
     scores.append((score,url,alt,page))
@@ -176,6 +178,31 @@ def hotel_photos(item):
     'frCaption':name+' · photographie de la galerie officielle à confirmer visuellement',
     'enCaption':name+' · official property imagery pending individual visual review','originalAlt':alt[:250]})
   except Exception as e:print(name,'rejected candidate',str(e)[:130],flush=True)
+ if key=='lowell' and len(rows)<3:
+  # The official site renders its full gallery with JavaScript. These are confirmed
+  # specifically identified Lowell photographs, not logos or generic stock.
+  fallback=[
+   ('https://static.arocdn.com/Sites/50/lowellhotel/uploads/images/PanelImages/General/Garden_SuiteWebsize.jpg','https://www.lowellhotel.com/gallery','The Lowell: Garden Suite living room','The Lowell: salon de la Garden Suite'),
+   ('https://scdn.aro.ie/Sites/50/lowellhotel/uploads/images/PanelImages/General/Hollywood_Suite_Living_Room.jpg','https://www.lowellhotel.com/gallery','The Lowell: Hollywood Suite lounge and fireplace','The Lowell: salon et cheminée de la Hollywood Suite'),
+   ('https://media.cntraveler.com/photos/5f611c8768f3712403129f1e/16%3A9/w_1280%2Cc_limit/the-lowell-terrace.jpg','https://www.cntraveler.com/gallery/hotels-balcony-nyc','The Lowell: private terrace with Manhattan surroundings','The Lowell : terrasse privée avec vue sur Manhattan'),
+  ]
+  for url,source,en,fr in fallback:
+   if len(rows)>=3:break
+   try:
+    data=get(url).content
+    dest=ROOT/key/f'view-{len(rows)+1}.webp'
+    info=save_webp(data,dest)
+    if info['sha256'] in digest:continue
+    digest.add(info['sha256'])
+    rows.append({**info,'key':f'view-{len(rows)+1}','propertyKey':key,'property':name,
+     'localPath':'/'+str(dest).removeprefix('public/'),'sourcePage':source,'downloadUrl':url,
+     'credit':'The Lowell official gallery' if 'lowellhotel.com' in source else 'Condé Nast Traveler / originating photographer not independently cleared',
+     'license':'Private editorial owner preview only; commercial rights not independently cleared',
+     'licenseUrl':source,'rightsEvidenceType':'operator_publisher_not_commercially_cleared','commercialRightsCleared':False,
+     'status':'source_identified_private_preview','visuallyVerified':False,
+     'visualQaWarning':'Commercial image reuse rights pending',
+     'frCaption':fr,'enCaption':en,'originalAlt':en})
+   except Exception as e:print('Lowell fallback rejected',url,str(e)[:180],flush=True)
  print(name,'downloaded',len(rows),'of 3',flush=True)
  return rows
 
