@@ -19,11 +19,21 @@ for(const x of a){
 for(const k of ['four-seasons','st-regis','conrad','susurros'])
  assert.equal(m.hotels.filter(x=>x.propertyKey===k).length,3);
 for(const h of m.hotels)assert.equal(h.commercialRightsCleared,false);
+let commonsScenes=0,privatePublisherScenes=0;
 for(const s of m.destinationScenes){
- assert.equal(s.commercialRightsCleared,true);
- assert(/CC BY|CC0|Public domain/i.test(s.license));
  assert(s.licenseUrl.startsWith('https://'));
+ if(s.commercialRightsCleared===true){
+  assert(/CC BY|CC0|Public domain/i.test(s.license));
+  assert.equal(s.rightsEvidenceType,'wikimedia_commons_verified');
+  commonsScenes++;
+ }else{
+  assert.equal(s.rightsEvidenceType,'private_preview_publisher_location');
+  assert(s.license.includes('publisher copyright'));
+  privatePublisherScenes++;
+ }
 }
+assert(commonsScenes>=3,'at least three Commons landscapes');
+assert(privatePublisherScenes<=6,'no unreviewed extra publisher assets');
 assert(existsSync('docs/travel-punta-mita-contact-sheet.jpg'));
 const catalogue=read('data/travel/destinations.ts');
 const slugs=[...catalogue.matchAll(/slug:\s*["']([^"']+)["']/g)].map(x=>x[1]);
