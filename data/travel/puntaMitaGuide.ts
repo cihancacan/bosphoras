@@ -2,7 +2,7 @@ import type {FeaturedCityGuideData,FeaturedCityPhoto} from './featuredCityGuides
 import {puntaMitaDraftGuide} from './puntaMitaDraftGuide';
 import media from './puntaMitaMediaCandidates.json';
 type Candidate={
- key:string;status:string;visuallyVerified?:boolean;visualQaWarning?:string;localPath?:string;sourcePage?:string;
+ key:string;status:string;localPath?:string;sourcePage?:string;
  credit?:string;license?:string;licenseUrl?:string;frCaption?:string;enCaption?:string;
  sha256?:string;bytes?:number;visuallyVerified?:boolean;visualQaWarning?:string
 };
