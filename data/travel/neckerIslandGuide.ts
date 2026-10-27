@@ -12,3 +12,5 @@ export const neckerIslandGuide:FeaturedCityGuideData={...g,areas:g.areas.map(x=>
 // NeckerIsland visual preview QA: four named addresses, source-vetted local photos and editorial noindex.
 
 // Four clusters use authentic Necker Island photographs; preview only pending final visual QA.
+
+// Route validation includes both Necker room-guide and four accommodation galleries.
