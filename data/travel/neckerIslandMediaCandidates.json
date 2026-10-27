@@ -10,11 +10,11 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/rooms-and-suites/the-great-house/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
-      "frCaption": "Master Suite · chambre et terrasse panoramique",
-      "enCaption": "The Great House · Master Suite",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Great House · Master Suite, étage supérieur",
+      "enCaption": "Great House · Master Suite, upper floor",
       "localPath": "/images/travel/necker-island-premium/great/view-1.webp",
       "sha256": "58d96318bb0bccf4f68d258025f60db134bb0fa42c86c5be8d46bc35953e5e97",
       "bytes": 333234,
@@ -28,7 +28,8 @@
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
       "propertyKey": "great",
-      "property": "The Great House"
+      "property": "The Great House",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "view-2",
@@ -39,11 +40,11 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/rooms-and-suites/the-great-house/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
-      "frCaption": "Great House · chambre Moon et décor singulier",
-      "enCaption": "Great House · Moon Room accommodation",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Great House · chambre Moon avec vue",
+      "enCaption": "Great House · Moon Room with sea view",
       "localPath": "/images/travel/necker-island-premium/great/view-2.webp",
       "sha256": "609b63c4c4b98eb8ea63c53124293b48543e02ef776fc04b3d0dc952e3c6028f",
       "bytes": 279178,
@@ -57,7 +58,8 @@
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
       "propertyKey": "great",
-      "property": "The Great House"
+      "property": "The Great House",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "view-3",
@@ -68,11 +70,11 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/rooms-and-suites/the-great-house/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
-      "frCaption": "Great House · bunkroom pour les enfants",
-      "enCaption": "Great House · family bunkroom for children",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Great House · chambre d'enfants bunkroom",
+      "enCaption": "Great House · children's bunkroom",
       "localPath": "/images/travel/necker-island-premium/great/view-3.webp",
       "sha256": "54cd23e236153a9d34276a73d2d61df5188875401675c41dae0663fb2f81bcdc",
       "bytes": 248268,
@@ -86,7 +88,8 @@
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
       "propertyKey": "great",
-      "property": "The Great House"
+      "property": "The Great House",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "view-1",
@@ -97,11 +100,11 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/rooms-and-suites/bali-hi/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
-      "frCaption": "Bali Hi · maison balinaise face à l’océan",
-      "enCaption": "Bali Hi · ocean-facing Balinese house",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Bali Hi · suite et vue sur l'océan",
+      "enCaption": "Bali Hi · ocean-view suite",
       "localPath": "/images/travel/necker-island-premium/hi/view-1.webp",
       "sha256": "94dc6260425e2f0ca18234252e1a8b883fe1836f4964913267e4121165b7a992",
       "bytes": 181078,
@@ -115,7 +118,8 @@
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
       "propertyKey": "hi",
-      "property": "Bali Hi Complex"
+      "property": "Bali Hi Complex",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "view-2",
@@ -126,11 +130,11 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/rooms-and-suites/bali-hi/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
-      "frCaption": "Bali Cliff · terrasse proche des falaises",
-      "enCaption": "Bali Cliff · lower clifftop terrace",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Bali Cliff · terrasse face à la mer",
+      "enCaption": "Bali Cliff · sea-facing terrace",
       "localPath": "/images/travel/necker-island-premium/hi/view-2.webp",
       "sha256": "05848d8a77b95f97e6f6da080a28f41912227566ddd95664596467627042ee00",
       "bytes": 364562,
@@ -144,7 +148,8 @@
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
       "propertyKey": "hi",
-      "property": "Bali Hi Complex"
+      "property": "Bali Hi Complex",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "view-3",
@@ -155,11 +160,11 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/rooms-and-suites/bali-hi/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
-      "frCaption": "Bali Beach · intérieur et vue sur Flamingo Beach",
-      "enCaption": "Bali Beach · individual accommodation",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Bali Beach · pavillon et panorama côtier",
+      "enCaption": "Bali Beach · coastal pavilion room",
       "localPath": "/images/travel/necker-island-premium/hi/view-3.webp",
       "sha256": "02e940de29a15dff66cdd20cd0e2aeb14035df239aedcbf50304c46cfa049b38",
       "bytes": 279788,
@@ -173,7 +178,8 @@
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
       "propertyKey": "hi",
-      "property": "Bali Hi Complex"
+      "property": "Bali Hi Complex",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "view-1",
@@ -184,11 +190,11 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/rooms-and-suites/bali-lo/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
-      "frCaption": "Bali Lo · maison principale du complexe",
-      "enCaption": "Bali Lo · main Balinese residence",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Bali Lo · chambre et boiseries balinaises",
+      "enCaption": "Bali Lo · Balinese interior",
       "localPath": "/images/travel/necker-island-premium/lo/view-1.webp",
       "sha256": "2e39819482a4cf1023de756fde9ef314d9eb14d40b5ced6966fcc5dd11ddb2a5",
       "bytes": 232686,
@@ -202,7 +208,8 @@
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
       "propertyKey": "lo",
-      "property": "Bali Lo Complex"
+      "property": "Bali Lo Complex",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "view-2",
@@ -213,11 +220,11 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/rooms-and-suites/bali-lo/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
-      "frCaption": "Bali Buah · chambre et balcon distincts",
-      "enCaption": "Bali Buah · private house and balcony",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Bali Buah · lit et décoration propre à la maison",
+      "enCaption": "Bali Buah · distinct bedroom style",
       "localPath": "/images/travel/necker-island-premium/lo/view-2.webp",
       "sha256": "82f9e159b487d178f46dde613fcc94584607c95a13fc4f4be91f278ac3e9804b",
       "bytes": 241522,
@@ -231,7 +238,8 @@
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
       "propertyKey": "lo",
-      "property": "Bali Lo Complex"
+      "property": "Bali Lo Complex",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "view-3",
@@ -242,11 +250,11 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/rooms-and-suites/bali-lo/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
-      "frCaption": "Bali Kukila · chambre balinaise et terrasse",
-      "enCaption": "Bali Kukila · Balinese room and terrace",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Bali Kukila · chambre du pavillon indépendant",
+      "enCaption": "Bali Kukila · house bedroom",
       "localPath": "/images/travel/necker-island-premium/lo/view-3.webp",
       "sha256": "d74aa5d25264ab2000f6afcdac61b04ef474bc6f9a40f4a4a210109dafcb058a",
       "bytes": 226556,
@@ -260,7 +268,8 @@
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
       "propertyKey": "lo",
-      "property": "Bali Lo Complex"
+      "property": "Bali Lo Complex",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "view-1",
@@ -271,11 +280,11 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/rooms-and-suites/temple-house/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
-      "frCaption": "Temple Master · chambre et terrasse panoramique",
-      "enCaption": "Temple Master · accommodation and terrace",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Temple Master · logement du secteur Temple",
+      "enCaption": "Temple Master · Temple accommodation",
       "localPath": "/images/travel/necker-island-premium/temple/view-1.webp",
       "sha256": "ba3b3729c1c566055e0df4b24713c5ad89b1ba9d32381b9d4b489fa61e7fe33d",
       "bytes": 160626,
@@ -289,7 +298,8 @@
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
       "propertyKey": "temple",
-      "property": "Temple House"
+      "property": "Temple House",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "view-2",
@@ -300,11 +310,11 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/rooms-and-suites/temple-house/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
-      "frCaption": "Temple Sunrise · chambre orientée vers l’aube",
-      "enCaption": "Temple Sunrise · east-facing accommodation",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Temple Sunrise · chambre face au soleil levant",
+      "enCaption": "Temple Sunrise · sunrise-facing bedroom",
       "localPath": "/images/travel/necker-island-premium/temple/view-2.webp",
       "sha256": "3da9df86bfecfeb0afe3380a2caa5c8298065ef806c8649a81d0e60d516a489d",
       "bytes": 137050,
@@ -318,7 +328,8 @@
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
       "propertyKey": "temple",
-      "property": "Temple House"
+      "property": "Temple House",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "view-3",
@@ -329,11 +340,11 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/rooms-and-suites/temple-house/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
-      "frCaption": "Temple Lo · chambre de Temple House",
-      "enCaption": "Temple Lo · one of the Temple House rooms",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "frCaption": "Temple Lo · chambre du complexe Temple",
+      "enCaption": "Temple Lo · guestroom of Temple House",
       "localPath": "/images/travel/necker-island-premium/temple/view-3.webp",
       "sha256": "bf97f79a9bc84c24bcf567a2cebcdcfad0c3665560dcc1d31197d7d6149a7b2d",
       "bytes": 239390,
@@ -347,7 +358,8 @@
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
       "propertyKey": "temple",
-      "property": "Temple House"
+      "property": "Temple House",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     }
   ],
   "destinationScenes": [
@@ -360,9 +372,9 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/the-island/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "L’île Necker vue du ciel · North Sound",
       "enCaption": "Necker Island aerial · North Sound",
       "localPath": "/images/travel/necker-island-premium/destination/scene-1.webp",
@@ -377,7 +389,8 @@
         1133
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
-      "place": "Necker Island, British Virgin Islands"
+      "place": "Necker Island, British Virgin Islands",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "scene-2",
@@ -388,9 +401,9 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/the-island/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Main Beach et Crocodile Pavilion · vue aérienne",
       "enCaption": "Main Beach and Crocodile Pavilion from above",
       "localPath": "/images/travel/necker-island-premium/destination/scene-2.webp",
@@ -405,7 +418,8 @@
         1133
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
-      "place": "Necker Island, British Virgin Islands"
+      "place": "Necker Island, British Virgin Islands",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "scene-3",
@@ -416,9 +430,9 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/the-island/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Sports nautiques à Necker · voile sur mer turquoise",
       "enCaption": "Necker Island · kitesurf over turquoise sea",
       "localPath": "/images/travel/necker-island-premium/destination/scene-3.webp",
@@ -433,7 +447,8 @@
         1133
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
-      "place": "Necker Island, British Virgin Islands"
+      "place": "Necker Island, British Virgin Islands",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "scene-4",
@@ -444,9 +459,9 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/the-island/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Ambiance côtière et plage de Necker",
       "enCaption": "Necker Island · beachfront bar setting",
       "localPath": "/images/travel/necker-island-premium/destination/scene-4.webp",
@@ -461,7 +476,8 @@
         683
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
-      "place": "Necker Island, British Virgin Islands"
+      "place": "Necker Island, British Virgin Islands",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "scene-5",
@@ -472,9 +488,9 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/the-island/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Palm Beach · repas à ciel ouvert",
       "enCaption": "Palm Beach · open-air island dining",
       "localPath": "/images/travel/necker-island-premium/destination/scene-5.webp",
@@ -489,7 +505,8 @@
         1134
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
-      "place": "Necker Island, British Virgin Islands"
+      "place": "Necker Island, British Virgin Islands",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "scene-6",
@@ -500,9 +517,9 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/the-island/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Great House et Bali Hi vus du ciel",
       "enCaption": "The Great House and Bali Hi complex aerial",
       "localPath": "/images/travel/necker-island-premium/destination/scene-6.webp",
@@ -517,7 +534,8 @@
         1133
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
-      "place": "Necker Island, British Virgin Islands"
+      "place": "Necker Island, British Virgin Islands",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "scene-7",
@@ -528,9 +546,9 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/the-island/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Piscine de la Great House dans le paysage",
       "enCaption": "Great House pool above the sea",
       "localPath": "/images/travel/necker-island-premium/destination/scene-7.webp",
@@ -545,7 +563,8 @@
         683
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
-      "place": "Necker Island, British Virgin Islands"
+      "place": "Necker Island, British Virgin Islands",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "scene-8",
@@ -556,9 +575,9 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/the-island/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Activités sur l’eau près de Necker",
       "enCaption": "Watersports off Necker Island",
       "localPath": "/images/travel/necker-island-premium/destination/scene-8.webp",
@@ -573,7 +592,8 @@
         683
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
-      "place": "Necker Island, British Virgin Islands"
+      "place": "Necker Island, British Virgin Islands",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     },
     {
       "key": "scene-9",
@@ -584,9 +604,9 @@
       "licenseUrl": "https://www.virginlimitededition.com/necker-island/the-island/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await genuine-image contact-sheet inspection and independent copyright audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Turtle Beach · table au bord de l’eau",
       "enCaption": "Turtle Beach · intimate shoreline dining",
       "localPath": "/images/travel/necker-island-premium/destination/scene-9.webp",
@@ -601,13 +621,15 @@
         1134
       ],
       "imageTransformation": "Original Virgin Limited Edition image, EXIF correction, aspect-preserving WebP encoding",
-      "place": "Necker Island, British Virgin Islands"
+      "place": "Necker Island, British Virgin Islands",
+      "visualReviewBasis": "Original Virgin Limited Edition photos visually checked in two contact sheets on 27 Oct 2026; site operator self-attests use, independent photographer licence audit pending; restricted owner Preview only."
     }
   ],
   "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
-  "publicationBlockedReason": "21 original publisher photos collected but copyright and visual QA must be performed separately",
-  "photoRightsBasis": "Virgin Limited Edition publisher-controlled images, site-operator permission attested; independent original-photographer licence audit outstanding"
+  "publicationBlockedReason": "Restricted preview approved after visual inspection; independent original-photographer commercial-rights audit pending.",
+  "photoRightsBasis": "Virgin Limited Edition publisher-controlled images, site-operator permission attested; independent original-photographer licence audit outstanding",
+  "previewVisualQaAt": "2026-10-27"
 }
