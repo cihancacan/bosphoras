@@ -90,7 +90,7 @@ def commons(file):
  author=BeautifulSoup(meta.get('Artist',{}).get('value','Unknown photographer'),'html.parser').get_text(' ',strip=True)
  if len(author)>180:author=author[:180]
  return {'url':info.get('thumburl') or info['url'],'sourcePage':info['descriptionurl'],
-         'credit':author,'license':lic,'licenseUrl':meta.get('LicenseUrl',{}).get('value','https://commons.wikimedia.org/'),
+         'credit':author,'license':lic,'licenseUrl':meta.get('LicenseUrl',{}).get('value','https://commons.wikimedia.org/').replace('http://','https://',1),
          'rightsEvidenceType':'wikimedia_commons_licence_verified','commercialRightsCleared':True}
 def save(key,section,url,fr,en,sourcePage,credit,license_,licenseUrl,rightsEvidenceType,commercialRightsCleared,extra={}):
  raw=get(url).content
