@@ -80,6 +80,7 @@ SCENES=[
  'fr':'Destiladeras · sable clair, palmiers et plage sauvage',
  'en':'Destiladeras · natural beach and coastal palms',
  'author':'Marival Armony · hospitality publisher; photographer rights pending'}
+]
 def request(url):
  error=None
  for i in range(4):
