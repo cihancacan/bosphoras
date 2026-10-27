@@ -56,3 +56,5 @@ jobs:
 # Retry image collection with case-normalized Bridgehampton editorial validation.
 
 # Collect the Palm Beach 21-photo pack into GitHub without a Vercel Preview build.
+
+# Re-run after checking the Palm Beach catalogue slug assertions.
