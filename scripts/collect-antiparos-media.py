@@ -98,12 +98,18 @@ EXACT_LANDSCAPES={
 EXACT_SCENES={
  "scene-2":[("Antiparos, Kastro, 247356.jpg","Whitewashed historic Kastro village on Antiparos, photographed 2024 by Zde")],
  "scene-3":[("Sunset Over Sifnos IV.jpg","Sunset seen from Antiparos toward Sifnos, recorded in Antiparos images, source to verify visual quality")],
- "scene-7":[("Antiparos Cave 247279.jpg","Documented actual Antiparos cave photograph, 2024, Zde, CC BY-SA 4.0"),("Antiparos Cave 247288.jpg","Alternative cave photograph by Zde in warm light, CC BY-SA 4.0")],
- "scene-8":[("Antiparos, Tsimintiri and Despotiko, 247863.jpg","Actual Tsimintiri with Antiparos behind, Despotiko to the right; 2024, Zde, CC BY-SA 4.0"),("Despotikó Antíparos Páros Náxos aerial.jpg","Genuine island panorama of Despotiko and Antiparos, by kallerna, 2025")],
+ "scene-7":[("Antiparos Cave 247288.jpg","Documented wider limestone cave chamber and mineral formations at Antiparos, Zde, CC BY-SA 4.0"),("Antiparos Cave 247278.jpg","Alternative 2024 natural cave interior photograph by Zde, CC BY-SA 4.0")],
+ "scene-8":[("Despotikó Antíparos Páros Náxos aerial.jpg","True island panorama by kallerna 2025"),("Antiparos, Tsimintiri and Despotiko, 247863.jpg","Documentary island coastline by Zde, CC BY-SA 4.0")],
  "scene-1":[("Antiparos.jpg","Historic image of Antiparos town or harbour, visual identity to verify")],
  "scene-6":[]
 }
-EXACT_SCENE_URLS={}
+EXACT_SCENE_URLS={
+ "scene-8":[(
+  "https://cdn.sanity.io/images/dzx23dp4/production/23781956acbdb0c4fa3c125ebc6286416ab29721-2000x1125.jpg?rect=0,0,1688,1125&w=1920&h=1280&fit=max&auto=format",
+  "https://www.sight2sight.com/de/c/despotiko/c/private-touren-despotiko",
+  "Real turquoise shallow bay off Despotiko with small boats and rocky island shoreline, exact island tour operator photo; independent photographer permissions still subject to attestation"
+ )]
+}
 def commons_original(filename):
  from urllib.parse import quote
  canon=filename.replace(" ","_")
