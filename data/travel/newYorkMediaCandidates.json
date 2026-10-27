@@ -2,7 +2,7 @@
   "destination": "new-york",
   "scope": "owner-only private Preview; do not index",
   "note": "Real operator-published hotel pictures; not proof of photo reuse licence nor property/room visual QA. Commons images carry CC attribution/share-alike as listed.",
-  "hotelCount": 10,
+  "hotelCount": 9,
   "cityCount": 9,
   "hotels": [
     {
@@ -130,8 +130,8 @@
         1600,
         1067
       ],
-      "bytes": 210104,
-      "sha256": "457771ee028fe2e3530a4807e09fec37b7c39f41523d846c010ebe5fb630d9dc",
+      "bytes": 204432,
+      "sha256": "06b173bd840009fc977a29ae5e6e3d4e93cf92bfebfa6a6d8abe7292be93ed30",
       "key": "view-2",
       "propertyKey": "fifth",
       "property": "The Fifth Avenue Hotel",
@@ -159,8 +159,8 @@
         1600,
         1067
       ],
-      "bytes": 181384,
-      "sha256": "fb2a3559cd18f352143f5a3cad147cd9065a4cd21aa7c446ae7c11e0184cd482",
+      "bytes": 172128,
+      "sha256": "a85e68e799d075b8a20bffc6b9a40a1d20cd72246a493162aa467c4bb2ab82d8",
       "key": "view-3",
       "propertyKey": "fifth",
       "property": "The Fifth Avenue Hotel",
@@ -265,35 +265,6 @@
       "frCaption": "The Greenwich Hotel · photographie de la galerie officielle à confirmer visuellement",
       "enCaption": "The Greenwich Hotel · official property imagery pending individual visual review",
       "originalAlt": "Looking through a doorway at the front desk inside the Shibui Spa"
-    },
-    {
-      "originalSize": [
-        867,
-        885
-      ],
-      "outputSize": [
-        867,
-        885
-      ],
-      "bytes": 20892,
-      "sha256": "74fc9fb9ecff842e25074ed526d89080fd9558f7126a619a05a427c4ab3f99f5",
-      "key": "view-1",
-      "propertyKey": "lowell",
-      "property": "The Lowell",
-      "localPath": "/images/travel/new-york-premium/lowell/view-1.webp",
-      "sourcePage": "https://www.lowellhotel.com/",
-      "downloadUrl": "https://www.lowellhotel.com/uploads/images/originalimages/WBA_2026_Black-on-White.png",
-      "credit": "The Lowell — publisher-owned photography, creator licence unverified",
-      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
-      "licenseUrl": "https://www.lowellhotel.com/",
-      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
-      "commercialRightsCleared": false,
-      "status": "source_identified_private_preview",
-      "visuallyVerified": false,
-      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
-      "frCaption": "The Lowell · photographie de la galerie officielle à confirmer visuellement",
-      "enCaption": "The Lowell · official property imagery pending individual visual review",
-      "originalAlt": ""
     }
   ],
   "destinationScenes": [
