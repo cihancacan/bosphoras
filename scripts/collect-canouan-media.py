@@ -55,6 +55,7 @@ def photos(key,page):
    urls=re.findall(r'https://media\.fastly\.sohohousedigital\.com/[^\s]+(?=\s+\d+w)', im.get('data-srcset',''))
    urls.sort(key=lambda u:max([int(v) for v in re.findall(r'w_(\d+)',u)] or [0]),reverse=True)
    src=urls[0] if urls else ''
+   if src:src=re.sub(r'w_\d+', 'w_1600',src,count=1)
    if not src or not 'Canouan' in alt:continue
    out.append((src,alt))
  else:
@@ -78,7 +79,7 @@ def download_hotels():
  images=[]
  for key,name,page in HOTELS:
   found=photos(key,page);print('SOURCE',key,len(found),flush=True)
-  if key=='soho':found.sort(key=lambda x:(0 if 'jetty' in x[1].lower() else 1 if 'bedroom' in x[1].lower() else 2 if 'dining' in x[1].lower() else 3))
+  if key=='soho':found.sort(key=lambda x:(0 if 'jetty' in x[1].lower() else 1 if 'bedroom interior' in x[1].lower() else 2 if 'dining area at sunset' in x[1].lower() else 3))
   if key in ('bigblue','silverturtle'):found.sort(key=lambda x:(0 if 'pool' in x[1].lower() else 1 if 'bedroom' in x[1].lower() else 2 if 'villa' in x[1].lower() else 3))
   if key=='mandarin':found.sort(key=lambda x:(0 if x[1]=='Mandarin Oriental, Canouan' else 1))
   seen=set();num=0
