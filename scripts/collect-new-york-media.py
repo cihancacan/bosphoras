@@ -40,9 +40,12 @@ HOTELS=[
   'https://www.thegreenwichhotel.com/accommodations/'],{'thegreenwichhotel.com','www.thegreenwichhotel.com'}),
  ('lowell','The Lowell',[
   'https://www.lowellhotel.com/rooms-and-suites',
-  'https://www.lowellhotel.com/specialty-suites/124-6/',
+  'https://www.lowellhotel.com/rooms-and-suites/garden-suite/53-11/',
+  'https://www.lowellhotel.com/rooms-and-suites/manhattan-suite/53-10/',
+  'https://www.lhw.com/hotel/The-Lowell-New-York-NY/rooms',
+  'https://www.lhw.com/hotel/The-Lowell-New-York-NY',
   'https://www.lowellhotel.com/',
-  'https://www.lowellhotel.com/specialty-suites'],{'lowellhotel.com','www.lowellhotel.com'})
+  'https://www.lowellhotel.com/specialty-suites'],{'lowellhotel.com','www.lowellhotel.com','lhw.com','www.lhw.com','static-new.lhw.com'})
 ]
 def get(url,timeout=25):
  err=None
@@ -133,6 +136,7 @@ def hotel_photos(item):
     score= 3*any(x in low for x in ['suite','room','hotel','lobby','bedroom','bed','pool','spa','interior','facade','terrace'])
     score+= 2*any(x in low for x in ['aman','fifth','greenwich','lowell'])
     score+= 2 if page==pages[0] else 0
+    if key=='lowell' and any(q in low for q in ['suite','room','terrace','lowell','lw146','lw189']):score+=4
     score-= 2 if any(x in low for x in ['food','drink','cocktail','restaurant','chef','map','amenities-icon']) else 0
     scores.append((score,url,alt,page))
     n+=1
@@ -150,7 +154,7 @@ def hotel_photos(item):
    raw=get(url,35).content
    picture=Image.open(io.BytesIO(raw))
    if picture.width<700 or picture.height<460:continue
-   if any(t in url.lower() for t in ['audioeye','conde_nast','award','trust','badge','hotel.jpg','hotel.png']):continue
+   if any(t in url.lower() for t in ['audioeye','conde_nast','award','trust','badge','hotel.jpg','hotel.png','leading_hotels','wba_','michelin','logo']):continue
    gray=picture.convert('L').resize((9,8),Image.Resampling.LANCZOS)
    bits=0
    pix=list(gray.getdata())
