@@ -52,7 +52,9 @@ def photos(key,page):
  elif key=='soho':
   for im in soup.find_all('img'):
    alt=(im.get('alt') or '').strip()
-   src=im.get('data-srcset','').split(',')[-1].strip().split(' ')[0]
+   urls=re.findall(r'https://media\.fastly\.sohohousedigital\.com/[^\s]+(?=\s+\d+w)', im.get('data-srcset',''))
+   urls.sort(key=lambda u:max([int(v) for v in re.findall(r'w_(\d+)',u)] or [0]),reverse=True)
+   src=urls[0] if urls else ''
    if not src or not 'Canouan' in alt:continue
    out.append((src,alt))
  else:
