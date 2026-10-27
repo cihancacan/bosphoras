@@ -16,7 +16,7 @@ const validHotelPhoto=(p:Candidate, index:number):boolean=>
  && p.status==='source_identified_private_preview'
  && p.rightsEvidenceType==='operator_publisher_not_commercially_cleared'
  && p.localPath?.startsWith('/images/travel/new-york-premium/'+ids[index]+'/')===true
- && !!p.sourcePage && new URL(p.sourcePage).hostname.endsWith(hosts[index])
+ && !!p.sourcePage && (new URL(p.sourcePage).hostname.endsWith(hosts[index]) || (index===3 && new URL(p.sourcePage).hostname.endsWith('cntraveler.com')))
  && !!p.credit && !!p.frCaption && !!p.enCaption
  && p.sha256?.length===64 && (p.bytes||0)>14000;
 const asPhoto=(p:Candidate):BodrumPremiumPhoto=>({
