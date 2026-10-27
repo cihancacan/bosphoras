@@ -40,3 +40,5 @@ jobs:
             done
             exit 1
           fi
+
+# Launch the reviewed Canouan 12-property plus 9-island-photo source collector (October 27, 2026).
