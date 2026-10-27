@@ -2,5 +2,14 @@
   "hotels": 12,
   "scenes": 9,
   "missing": [],
-  "diagnostics": []
+  "diagnostics": [
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Antiparos_Cave_247288.jpg",
+      "error": "429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wik"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Antiparos_Cave_247278.jpg",
+      "error": "429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wik"
+    }
+  ]
 }

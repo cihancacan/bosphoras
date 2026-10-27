@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 7,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
@@ -507,28 +507,60 @@
       "placeLabel": "Grotte d'Antiparos",
       "searchQuery": "Antiparos Cave Greece",
       "slotIntent": "Grotte d'Antiparos",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Previous cave crop shows only a close-up rock, not a distinctive cave scene; replace with wide natural cave interior.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Antiparos_Cave_247279.jpg",
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Antiparos_cave.JPG",
       "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Antiparos_Cave_247279.jpg",
       "rejectedOriginalSha256": "fe650fab516540f9e44c39998691322445b8e4e5fd6a9256858fee825a108646",
-      "rejectedCandidateContext": "Documented actual Antiparos cave photograph, 2024, Zde, CC BY-SA 4.0"
+      "rejectedCandidateContext": "Documented actual Antiparos cave photograph, 2024, Zde, CC BY-SA 4.0",
+      "localPath": "/images/travel/antiparos-premium/destination/scene-7.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Antiparos_cave.JPG/1920px-Antiparos_cave.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Antiparos cave.JPG",
+      "credit": "Vitum · Public domain",
+      "license": "Public domain",
+      "sha256": "6701b90b0ee09a0da8582df6dd27e6b3d7d7f0bd471f6136d73126065314b05e",
+      "dhash": "0011001100011110000111110000111100001111001010111001101110011011",
+      "bytes": 574972,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-8",
       "placeLabel": "Îles de Despotiko et Tsimintiri vues depuis la mer",
       "searchQuery": "Antiparos Tsimintiri and Despotiko sea landscape",
       "slotIntent": "Antiparos, Tsimintiri, Despotiko coastal islands in daylight; correct island geography",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Previous geographic island photo is bland blue/grey with no turquoise bay, unacceptable luxury art direction.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Antiparos,_Tsimintiri_and_Despotiko,_247863.jpg",
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "sourcePage": "https://www.sight2sight.com/de/c/despotiko/c/private-touren-despotiko",
       "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Antiparos%2C_Tsimintiri_and_Despotiko%2C_247863.jpg",
       "rejectedOriginalSha256": "1f8e509601897e1ff6a124c271eb5be54eb64055d1074ef92a7cbb195cd9d799",
-      "rejectedCandidateContext": "Actual Tsimintiri with Antiparos behind, Despotiko to the right; 2024, Zde, CC BY-SA 4.0"
+      "rejectedCandidateContext": "Actual Tsimintiri with Antiparos behind, Despotiko to the right; 2024, Zde, CC BY-SA 4.0",
+      "localPath": "/images/travel/antiparos-premium/destination/scene-8.webp",
+      "downloadUrl": "https://cdn.sanity.io/images/dzx23dp4/production/23781956acbdb0c4fa3c125ebc6286416ab29721-2000x1125.jpg?rect=0,0,1688,1125&w=1920&h=1280&fit=max&auto=format",
+      "candidateContext": "Real turquoise shallow bay off Despotiko with small boats and rocky island shoreline, exact island tour operator photo; independent photographer permissions still subject to attestation",
+      "credit": "Source photographer at https://www.sight2sight.com/de/c/despotiko/c/private-touren-despotiko",
+      "license": "Publisher/photographer permission required",
+      "sha256": "214f07fe49366161ca64df3c6559e534b1f6e9a53efd9c9a2c543abd9dd7d189",
+      "dhash": "0000010011010100001001111001000111000101011001001011000011110000",
+      "bytes": 351352,
+      "originalSize": [
+        1688,
+        1125
+      ],
+      "outputSize": [
+        1688,
+        1125
+      ]
     },
     {
       "key": "scene-9",
