@@ -34,7 +34,7 @@ SCENES=[
  ('scene-2','main','Aerial view of a solitary figure on a pristine white sand beach','Pamalican · plage de sable blanc vue du ciel','Pamalican · aerial white-sand beach'),
  ('scene-3','main','Tall palm tree rising above coastal vegetation','Palmiers et littoral de l’île au soir','Pamalican palms near sunset'),
  ('scene-4','main','Aerial view of Aman Spa nestled amongst tropical vegetation','Aman Spa · pavillons entourés de jungle','Aman Spa within tropical greenery'),
- ('scene-5','main',"Amanpulo's beachfront resort nestled between dense tropical forest","Rivage de Pamalican entre forêt et lagon','Amanpulo forest meets the island lagoon'),
+ ('scene-5','main',"Amanpulo's beachfront resort nestled between dense tropical forest",'Rivage de Pamalican entre forêt et lagon','Amanpulo forest meets the island lagoon'),
  ('scene-6','main','Aerial view of the floating Kawayan Bar','Kawayan Bar · restaurant flottant et lagon','Kawayan floating bar in the lagoon'),
  ('scene-7','main','Rocky islet with turquoise waters at Amanpulo','Petit îlot rocheux et eau cristalline','Rocky islet in Amanpulo waters'),
  ('scene-8','main','A wooden pavilion structure surrounded by dense tropical forest','Pavillon et paysage tropical de Pamalican','Island pavilion surrounded by nature'),
