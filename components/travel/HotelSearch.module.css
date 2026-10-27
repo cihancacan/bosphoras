@@ -2,6 +2,8 @@
   --ink:#172b2c;
   --gold:#cbb384;
   --cream:#f7f5ef;
+  --search-font:"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family:var(--search-font);
   background:var(--cream);
   color:var(--ink);
   min-height:100vh;
@@ -41,27 +43,19 @@
   color:#fff;
   text-decoration:none;
 }
-.monogram {
-  font-family:var(--font-display);
-  font-size:35px;
-  border:1px solid #dbc79780;
-  width:45px;
-  height:49px;
-  text-align:center;
-  line-height:47px;
-  color:#e3cea0;
-}
 .brandName {
-  font-size:15px;
-  letter-spacing:.25em;
-  font-weight:600;
+  font-size:18px;
+  letter-spacing:.22em;
+  font-weight:500;
+  line-height:1.2;
 }
 .brandName small {
   display:block;
   font-size:8px;
-  letter-spacing:.35em;
+  font-weight:400;
+  letter-spacing:.32em;
   color:#e3cea0;
-  margin-top:5px;
+  margin-top:7px;
 }
 .headerNav {
   display:flex;
@@ -146,15 +140,16 @@
   color:#e3cea0;
 }
 .heroContent h1 {
-  font-family:var(--font-display);
-  font-size:clamp(52px,5.8vw,82px);
-  font-weight:400;
-  line-height:1.06;
-  letter-spacing:-.035em;
+  font-family:var(--search-font);
+  font-size:clamp(46px,5.2vw,72px);
+  font-weight:300;
+  line-height:1.09;
+  letter-spacing:-.045em;
   margin:23px 0;
 }
 .heroContent h1 em {
-  font-weight:400;
+  font-style:normal;
+  font-weight:300;
   color:#e8d9b9;
 }
 .heroSubtitle {
@@ -470,10 +465,10 @@
   gap:20px;
 }
 .sectionHeading h2 {
-  font-family:var(--font-display);
-  font-size:43px;
+  font-family:var(--search-font);
+  font-size:36px;
   font-weight:400;
-  letter-spacing:-.025em;
+  letter-spacing:-.035em;
   line-height:1.2;
   margin-top:13px;
 }
@@ -610,8 +605,8 @@
   margin:0 0 5px;
 }
 .cardDetails h3 {
-  font-family:var(--font-display);
-  font-size:26px;
+  font-family:var(--search-font);
+  font-size:23px;
   line-height:1.2;
   font-weight:400;
   margin:0;
@@ -644,7 +639,7 @@
   justify-content:space-between;
 }
 .typographicCard>span {
-  font-family:var(--font-display);
+  font-family:var(--search-font);
   font-size:37px;
   align-self:center;
   max-width:80%;
@@ -695,7 +690,7 @@
   margin:auto;
 }
 .emptyState h3 {
-  font-family:var(--font-display);
+  font-family:var(--search-font);
   font-size:30px;
   font-weight:400;
   margin:15px 0;
@@ -719,9 +714,10 @@
   align-items:flex-start;
 }
 .transparency h2 {
-  font-family:var(--font-display);
-  font-size:33px;
-  line-height:1.18;
+  font-family:var(--search-font);
+  font-size:29px;
+  letter-spacing:-.025em;
+  line-height:1.25;
   font-weight:400;
   max-width:430px;
   margin:13px 0 0;
@@ -800,7 +796,7 @@
     font-size:8px;
   }
   .heroContent h1 {
-    font-size:65px;
+    font-size:56px;
   }
   .hero {
     height:650px;
@@ -811,21 +807,15 @@
     padding:19px 22px;
     gap:10px;
   }
-  .monogram {
-    width:31px;
-    height:37px;
-    font-size:28px;
-    line-height:35px;
-  }
   .brand {
     gap:9px;
   }
   .brandName {
-    font-size:11px;
-    letter-spacing:.2em;
+    font-size:16px;
+    letter-spacing:.18em;
   }
   .brandName small {
-    font-size:6px;
+    font-size:7px;
   }
   .headerNav,.previewTag {
     display:none;
@@ -844,7 +834,7 @@
     padding:142px 24px 0;
   }
   .heroContent h1 {
-    font-size:51px;
+    font-size:43px;
     margin:21px 0;
   }
   .heroSubtitle {
@@ -960,7 +950,7 @@
     font-size:7px;
   }
   .sectionHeading h2 {
-    font-size:32px;
+    font-size:28px;
     margin-top:11px;
     max-width:230px;
   }
@@ -1059,7 +1049,7 @@
     gap:22px;
   }
   .transparency h2 {
-    font-size:29px;
+    font-size:26px;
   }
   .transparency p:not(.eyebrow) {
     font-size:10px;

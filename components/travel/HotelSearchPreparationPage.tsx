@@ -21,7 +21,7 @@ export function HotelSearchPreparationPage({ locale }: { locale: 'fr' | 'en' }) 
   const fr = locale === 'fr';
   return <div lang={locale} className={s.page}>
     <header className={s.header}>
-      <Link href={travelHref(locale)} className={s.brand} aria-label="Bosphoras Luxury Stays"><span className={s.monogram} aria-hidden="true">B</span><span className={s.brandName}>BOSPHORAS<small>LUXURY STAYS</small></span></Link>
+      <Link href={travelHref(locale)} className={s.brand} aria-label="Bosphoras Luxury Stays"><span className={s.brandName}>BOSPHORAS<small>LUXURY STAYS</small></span></Link>
       <nav className={s.headerNav} aria-label={fr ? 'Navigation principale' : 'Main navigation'}><a href="#destinations">{fr ? 'Nos destinations' : 'Our destinations'}</a><Link href={travelHref(locale,'hotels')}>{fr ? 'Nos adresses' : 'Our places'}</Link><a href="#booking-role">{fr ? 'Comment réserver' : 'How to book'}</a></nav>
       <div className={s.headerRight}><span className={s.previewTag}>{fr ? 'Aperçu privé' : 'Private preview'}</span><nav className={s.languages} aria-label={fr ? 'Langue' : 'Language'}>{(['fr','en'] as const).map(code=><Link key={code} href={travelHref(code,'search')} hrefLang={code} lang={code} aria-current={locale===code?'page':undefined}>{code.toUpperCase()}</Link>)}</nav></div>
     </header>
