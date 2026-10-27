@@ -29,3 +29,5 @@ jobs:
           print('PUNTA_MITA_SHEET_END')
           print('Dimensions:',im.size,'Bytes:',len(out.getvalue()))
           PY
+
+# Review refreshed geographically-accurate source scenes after quality replacement.
