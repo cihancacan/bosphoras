@@ -15,3 +15,9 @@ Four distinct operating lodges, no fake independently branded sub-properties. Fr
 **Photographs not yet cleared:** 12 individually identified lodge images (three per property) plus 9 geographically accurate delta scenes, local WebP with provenance, photographer / commercial rights, visual non-duplication QA. Do not mark complete, do not wire guide into live page, and do not launch a Vercel preview until this is accomplished and a batch deploy is due. Existing 88-slug catalogue remains unchanged.
 ## Completion checklist
 [ ] 12 correct licensed lodge photos, [ ] 9 licensed delta scenes, [ ] visual QA / no duplicates, [ ] source manifest, [ ] editorial integration, [ ] venue cards and FAQ wired, [ ] TypeScript/build test, [ ] canonical/hreflang/noindex, [ ] Preview as part of the 10-destination lot.
+## Imported into feature branch
+- 21 distinct, source-labelled local WebP images (12 correctly named lodges, nine Commons landscapes); SHA and simple image difference comparison checked in GitHub Actions run 40580689131.
+- Contact sheet: `docs/travel-okavango-delta-contact-sheet.jpg`; visual human sign-off still pending.
+- Wikimedia landscape licenses retained individually in manifest, including creator and license link.
+- 12 lodge-source images are NOT cleared for commercial/public publication; this is an owner-only nonindexed preview pipeline, not an asserted operator permission.
+- Guide wired for FR/EN destination and hotel editorial routes with FAQ, sources, no live inventory, no indexable production routes.
