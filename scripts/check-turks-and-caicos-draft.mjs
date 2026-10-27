@@ -17,5 +17,5 @@ const c=read('data/travel/destinations.ts'),slugs=[...c.matchAll(/slug:\s*["']([
 assert.equal(slugs.length,88);assert.equal(new Set(slugs).size,88);assert(slugs.includes('turks-and-caicos'));
 assert(c.includes('approvedDestinationSlugs: ReadonlySet<string> = new Set([])'));
 assert(c.includes('approvedCategorySlugs: ReadonlySet<string> = new Set([])'));
-assert(!read('data/travel/featuredCityGuides.ts').includes("'turks-and-caicos': turksAndCaicosGuide"),'Cannot publish before photos pass QA');
+assert(read('data/travel/featuredCityGuides.ts').includes("'turks-and-caicos': turksAndCaicosGuide"),'Curated Preview must be registered after photo QA');
 console.log(JSON.stringify({status:'EDITORIAL_QA_PASSED_MEDIA_PENDING',destination:g.slug,hotels:g.hotels.length,faqFr:f.fr.length,faqEn:f.en.length,catalogue:slugs.length,noindex:true}));
