@@ -97,7 +97,7 @@ import { travelHref, travelLocaleCodes, travelKeywordTitles, travelText } from '
 import type { TravelLocale } from '@/lib/travel/i18n';
 
 const ORIGIN = 'https://www.bosphoras.com';
-const activeDestinations = ['istanbul','bodrum','antalya','paris','saint-tropez','dubai','bali','phuket','koh-samui','maldives','los-cabos','saint-barthelemy','porto-cervo','mustique','courchevel-1850','st-moritz','aspen','niseko','megeve','jackson-hole','big-sky','val-disere','verbier','costa-careyes'];
+const activeDestinations = ['istanbul','bodrum','antalya','paris','saint-tropez','dubai','new-york','bali','phuket','koh-samui','maldives','los-cabos','saint-barthelemy','porto-cervo','mustique','courchevel-1850','st-moritz','aspen','niseko','megeve','jackson-hole','big-sky','val-disere','verbier','costa-careyes'];
 const categoryLead: Record<TravelCategory, { keyword: string; checks: string[] }> = {
   hotels: { keyword: 'best hotels · 5 star hotels · luxury resorts · boutique hotels', checks: ['Room category, view and location', 'What is included in the final rate', 'Cancellation conditions and booking provider'] },
   villas: { keyword: 'luxury villas · private pool villas · beachfront villas', checks: ['Pool privacy, bedrooms and access', 'Included housekeeping and staff', 'Deposit, service fees and cancellation'] },
