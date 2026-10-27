@@ -1,27 +1,6 @@
 {
   "hotels": 12,
-  "scenes": 6,
-  "missing": [
-    "destination/scene-3",
-    "destination/scene-7",
-    "destination/scene-8"
-  ],
-  "diagnostics": [
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Antiparos_Cave.jpg",
-      "error": "429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wik"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Antiparos-cave.jpg",
-      "error": "429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wik"
-    },
-    {
-      "url": "https://www.topgreekislands.gr/sites/default/files/images/spot/despotiko_2.jpg",
-      "error": "404 Client Error: Not Found for url: https://www.topgreekislands.gr/el/sites/default/files/images/spot/despotiko_2.jpg"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Despotiko.jpg",
-      "error": "429 Client Error: Too many requests. Please contact noc@wikimedia.org for further information (0068e25) for url: https://upload.wikimedia.org/wik"
-    }
-  ]
+  "scenes": 9,
+  "missing": [],
+  "diagnostics": []
 }
