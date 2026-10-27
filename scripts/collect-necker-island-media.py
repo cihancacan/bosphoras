@@ -64,6 +64,8 @@ def matched(all_,slug):
  if len(exact)!=1:raise RuntimeError('Missing/ambiguous original photo '+slug+': '+str(exact))
  return exact[0]
 def make(key,url,page,fr,en,path,propKey=None,prop=None):
+ # Use the original publisher asset, not a small width=700 thumbnail derivative.
+ url=url.split('?')[0]
  photo=save(url,path)
  obj=dict(key=key,sourcePage=page,downloadUrl=url,credit='Virgin Limited Edition · original property publisher (photographer not individually identified)',license='Owner-attested use of Virgin Limited Edition property imagery; original photographer licence must be independently verified',licenseUrl=page,rightsEvidenceType='operator_self_attestation',status='candidate_needs_visual_review',visuallyVerified=False,commercialRightsCleared=False,visualQaWarning='Await genuine-image contact-sheet inspection and independent copyright audit',frCaption=fr,enCaption=en,**photo)
  if propKey:obj.update(propertyKey=propKey,property=prop)
