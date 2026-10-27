@@ -1,10 +1,10 @@
-# Zermatt GitHub QA — 2026-10-27T21:25:01Z
+# Zermatt GitHub QA — 2026-10-27T21:52:47Z
 
-Source commit: 58a4a18df7c4e2fbceb631023c375ba1d6705136
+Source commit: 8c50025e69729cd970bad26f83ccfeb75960b3d3
 
 | Check | Result |
 | --- | --- |
-| TypeScript | success |
+| TypeScript | failure |
 | Zermatt editorial / images | success |
 | Existing alpine guides | success |
 
