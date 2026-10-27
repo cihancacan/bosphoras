@@ -67,3 +67,15 @@
 - New York is guide #56, with French `/travel/destinations/new-york` and English `/en/travel/destinations/new-york`; their Preview, not production, is ready for human inspection.
 - Public commercial photo release is still blocked. Source publisher rights and photographic visual approval must be evaluated before removing `noindex`.
 - No real-time inventory or referral supplier agreement claimed; preserve partner-handled service after sale.
+
+
+## New York photo visibility correction — 28 October 2026
+- Root cause: `FeaturedCityGuide.tsx` mapped `newYorkAreaVisuals`, but the JSX area-card eligibility gate omitted `city.slug==='new-york'`; all five neighbourhood cards silently rendered without their image component.
+- Fixed that visibility condition. Manhattan landscape scenes are now allocated without repeated uses:
+  - Hero: `scene-1`, New York skyline at dusk.
+  - Five neighbourhoods: `scene-2` Central Park, `scene-3` Flatiron/NoMad, `scene-5` Tribeca, `scene-9` Upper East Side, `scene-4` Brooklyn waterfront.
+  - Dedicated landscape essay: `scene-6` Central Park nature and `scene-8` Lower Manhattan skyline; responsive two-column FR/EN story, image credits in captions.
+  - Experience: `scene-7` Top of the Rock skyline, instead of reusing the Brooklyn waterfront image.
+- Lightened New York hero gradient so the panorama reads better; new navigation anchor `#panoramas-new-york`.
+- Regression guard `scripts/check-new-york-destination-final.mjs` now validates district render gate, two extra landscapes, nine distinct photo slots and unique original image files.
+- Preserve 88 destination slugs, the other 55 premium guides, noindex, property galleries and hotel rights restrictions. No production promotion.
