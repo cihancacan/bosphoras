@@ -11,9 +11,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Beachfront Villa · chambre principale officielle",
       "enCaption": "Beachfront Villa · actual master bedroom",
       "localPath": "/images/travel/north-island-seychelles-premium/beachfront/view-1.webp",
@@ -29,7 +29,8 @@
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
       "propertyKey": "beachfront",
-      "property": "North Island — Beachfront Villa"
+      "property": "North Island — Beachfront Villa",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "view-2",
@@ -41,9 +42,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Beachfront Villa · sala et bassin privatif",
       "enCaption": "Beachfront Villa · outdoor sala and private plunge pool",
       "localPath": "/images/travel/north-island-seychelles-premium/beachfront/view-2.webp",
@@ -59,7 +60,8 @@
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
       "propertyKey": "beachfront",
-      "property": "North Island — Beachfront Villa"
+      "property": "North Island — Beachfront Villa",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "view-3",
@@ -71,9 +73,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "East Beach · Beachfront Villa intégrée à la végétation",
       "enCaption": "East Beach · a beachfront villa surrounded by greenery",
       "localPath": "/images/travel/north-island-seychelles-premium/beachfront/view-3.webp",
@@ -89,7 +91,8 @@
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
       "propertyKey": "beachfront",
-      "property": "North Island — Beachfront Villa"
+      "property": "North Island — Beachfront Villa",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "view-1",
@@ -101,9 +104,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Même catégorie Beachfront Villa · étude adaptée aux enfants",
       "enCaption": "Same Beachfront Villa category · child-friendly study layout",
       "localPath": "/images/travel/north-island-seychelles-premium/family/view-1.webp",
@@ -119,7 +122,8 @@
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
       "propertyKey": "family",
-      "property": "North Island — Beachfront Villa, séjour familial"
+      "property": "North Island — Beachfront Villa, séjour familial",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "view-2",
@@ -131,9 +135,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Beachfront Villa · salon adapté aux familles",
       "enCaption": "Beachfront Villa · family living area",
       "localPath": "/images/travel/north-island-seychelles-premium/family/view-2.webp",
@@ -149,7 +153,8 @@
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
       "propertyKey": "family",
-      "property": "North Island — Beachfront Villa, séjour familial"
+      "property": "North Island — Beachfront Villa, séjour familial",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "view-3",
@@ -161,9 +166,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Beachfront Villa · terrasse et jardin privatif",
       "enCaption": "Beachfront Villa · secluded garden terrace",
       "localPath": "/images/travel/north-island-seychelles-premium/family/view-3.webp",
@@ -179,7 +184,8 @@
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
       "propertyKey": "family",
-      "property": "North Island — Beachfront Villa, séjour familial"
+      "property": "North Island — Beachfront Villa, séjour familial",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "view-1",
@@ -191,9 +197,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Villa North unique · résidence près du granite",
       "enCaption": "The unique Villa North residence near granite slopes",
       "localPath": "/images/travel/north-island-seychelles-premium/north/view-1.webp",
@@ -209,7 +215,8 @@
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
       "propertyKey": "north",
-      "property": "North Island — Villa North"
+      "property": "North Island — Villa North",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "view-2",
@@ -221,9 +228,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Villa North · véritable chambre de la villa 11",
       "enCaption": "Villa North · original bedroom in Villa 11",
       "localPath": "/images/travel/north-island-seychelles-premium/north/view-2.webp",
@@ -239,7 +246,8 @@
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
       "propertyKey": "north",
-      "property": "North Island — Villa North"
+      "property": "North Island — Villa North",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "view-3",
@@ -251,9 +259,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Villa North · terrasse privée et foyer extérieur",
       "enCaption": "Villa North · private deck and firepit",
       "localPath": "/images/travel/north-island-seychelles-premium/north/view-3.webp",
@@ -269,7 +277,8 @@
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
       "propertyKey": "north",
-      "property": "North Island — Villa North"
+      "property": "North Island — Villa North",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "view-1",
@@ -281,9 +290,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Privatisation · North Island au complet vue du ciel",
       "enCaption": "Whole-island buyout · North Island aerial",
       "localPath": "/images/travel/north-island-seychelles-premium/exclusive/view-1.webp",
@@ -299,7 +308,8 @@
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
       "propertyKey": "exclusive",
-      "property": "North Island — Exclusively Yours"
+      "property": "North Island — Exclusively Yours",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "view-2",
@@ -311,9 +321,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Privatisation · l’île et ses plages depuis le ciel",
       "enCaption": "Full-island setting · reef and island aerial",
       "localPath": "/images/travel/north-island-seychelles-premium/exclusive/view-2.webp",
@@ -329,7 +339,8 @@
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
       "propertyKey": "exclusive",
-      "property": "North Island — Exclusively Yours"
+      "property": "North Island — Exclusively Yours",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "view-3",
@@ -341,9 +352,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "L’île privée · perspective de Honeymoon Beach",
       "enCaption": "Entire North Island · Honeymoon Beach perspective",
       "localPath": "/images/travel/north-island-seychelles-premium/exclusive/view-3.webp",
@@ -359,7 +370,8 @@
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
       "propertyKey": "exclusive",
-      "property": "North Island — Exclusively Yours"
+      "property": "North Island — Exclusively Yours",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     }
   ],
   "destinationScenes": [
@@ -373,9 +385,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "East Beach et ses villas discrètes",
       "enCaption": "East Beach and its discreet private villas",
       "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-1.webp",
@@ -390,7 +402,8 @@
         1166
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
-      "place": "North Island, Seychelles"
+      "place": "North Island, Seychelles",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "scene-2",
@@ -402,9 +415,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "West Beach · balade à pied sur le sable",
       "enCaption": "West Beach · an island shoreline walk",
       "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-2.webp",
@@ -419,7 +432,8 @@
         1200
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
-      "place": "North Island, Seychelles"
+      "place": "North Island, Seychelles",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "scene-3",
@@ -431,9 +445,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Rencontre encadrée avec une tortue géante d’Aldabra",
       "enCaption": "North Island · family observing an Aldabra giant tortoise",
       "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-3.webp",
@@ -448,7 +462,8 @@
         1166
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
-      "place": "North Island, Seychelles"
+      "place": "North Island, Seychelles",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "scene-4",
@@ -460,9 +475,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Conservation · tortue marine et plage protégée",
       "enCaption": "Sea-turtle conservation on North Island beach",
       "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-4.webp",
@@ -477,7 +492,8 @@
         1062
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
-      "place": "North Island, Seychelles"
+      "place": "North Island, Seychelles",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "scene-5",
@@ -489,9 +505,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "West Beach Bar · paysage et table en bord de mer",
       "enCaption": "West Beach Bar · coastal dining landscape",
       "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-5.webp",
@@ -506,7 +522,8 @@
         1200
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
-      "place": "North Island, Seychelles"
+      "place": "North Island, Seychelles",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "scene-6",
@@ -518,9 +535,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "West Beach · balancelle près de l’océan",
       "enCaption": "West Beach · seaside swing",
       "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-6.webp",
@@ -535,7 +552,8 @@
         1200
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
-      "place": "North Island, Seychelles"
+      "place": "North Island, Seychelles",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "scene-7",
@@ -547,9 +565,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Sentiers de la forêt tropicale et conservation",
       "enCaption": "North Island · tropical forest and habitat restoration",
       "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-7.webp",
@@ -564,7 +582,8 @@
         1166
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
-      "place": "North Island, Seychelles"
+      "place": "North Island, Seychelles",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "scene-8",
@@ -576,9 +595,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "West Beach · plage, végétation et bar",
       "enCaption": "West Beach · palms, beach and lounge",
       "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-8.webp",
@@ -593,7 +612,8 @@
         1166
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
-      "place": "North Island, Seychelles"
+      "place": "North Island, Seychelles",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     },
     {
       "key": "scene-9",
@@ -605,9 +625,9 @@
       "licenseUrl": "https://north-island.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Conservation · oiseau Seychelles white-eye",
       "enCaption": "North Island · Seychelles white-eye bird",
       "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-9.webp",
@@ -622,13 +642,15 @@
         1200
       ],
       "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
-      "place": "North Island, Seychelles"
+      "place": "North Island, Seychelles",
+      "visualReviewBasis": "Two contact sheets inspected on 27 October 2026, matching publisher-labelled Beachfront Villas, Villa North, whole-island aerials and North Island conservation. Operator self-attests photo permission; independent photographer-level license not audited."
     }
   ],
   "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
-  "publicationBlockedReason": "Image download alone is not visual review or original photographer licence clearance",
-  "photoRightsBasis": "North Island resort’s actual original publisher URLs; separate original-photographer clearance pending"
+  "publicationBlockedReason": "Restricted preview visual QA done. Independently verified original photographer commercial licences are still required for public release.",
+  "photoRightsBasis": "North Island resort’s actual original publisher URLs; separate original-photographer clearance pending",
+  "previewVisualQaAt": "2026-10-27"
 }
