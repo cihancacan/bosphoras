@@ -60,3 +60,5 @@ jobs:
 # Re-run after checking the Harbour Island catalogue slug assertions.
 
 # Trigger Harbour Island's GitHub-only 21-image QA without a Vercel Preview release.
+
+# Final tenth-destination import; no production release.
