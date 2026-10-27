@@ -40,3 +40,5 @@ jobs:
             done
             exit 1
           fi
+
+# Run source-verified 21/21 Jumby Bay gallery importer after isolated collector dry-run succeeded.
