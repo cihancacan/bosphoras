@@ -75,13 +75,13 @@ def hotel_candidates(key,name,pages,keywords):
  if key=='shoreclub':
   # Shore Club site blocks automated requests. These are genuine, identified Shore Club photos
   # published by travel-property partners; preserve each original publisher and URL.
-  imgs=[
+  partner_images=[
    ('https://www.fivestaralliance.com/files/fivestaralliance.com/field/image/nodes/2019/45781/Shore%20Club%20Turks%20Caicos.jpg','https://www.fivestaralliance.com/luxury-hotels/providenciales/the-shore-club-turks-and-caicos','The Shore Club · panorama aérien de l’hôtel sur Long Bay','The Shore Club · aerial Long Bay resort and beach','Five Star Alliance'),
    ('https://cms.inspirato.com/ImageGen.ashx?image=%2Fmedia%2F9455000%2Fthe-shore-club-long-bay-beach-9277.jpg&width=1081.5','https://www.inspirato.com/destinations/turks-caicos/properties/the-shore-club/','The Shore Club · galerie extérieure avec vue sur la plage','The Shore Club · beachfront architecture and terrace','Inspirato'),
    ('https://ak-d.tripcdn.com/images/0224h12000k7f4yvl6530_R_960_660_R5_D.jpg','https://ca.trip.com/hotels/providenciales-hotel-detail-9544030/the-shore-club-turks-and-caicos/','The Shore Club · piscine et végétation devant Long Bay','The Shore Club · actual beachfront pool and landscape','Trip.com'),
   ]
   selected=[]
-  for i,(url,page,fr,en,publisher) in enumerate(imgs,1):
+  for i,(url,page,fr,en,publisher) in enumerate(partner_images,1):
    meta=save(url,OUT/key/f'view-{i}.webp')
    selected.append(dict(key=f'view-{i}',propertyKey=key,property=name,sourcePage=page,downloadUrl=url,credit=f'{publisher} · property photograph of The Shore Club (individual photographer not identified)',license='Bosphoras operator-attested photo use; original photographer and publisher distribution rights require review',licenseUrl=page,rightsEvidenceType='operator_self_attestation_partner_publisher',status='candidate_needs_visual_review',visuallyVerified=False,commercialRightsCleared=True,visualQaWarning='Partner-published authentic property photo; final licence and visual review pending',frCaption=fr,enCaption=en,sourceAlt=fr,**meta))
    print('HOTEL_PARTNER',key,i,publisher,flush=True)
