@@ -158,3 +158,5 @@ def main():
  sheet(all_)
  print('OKAVANGO_21_IMAGE_CANDIDATES_GENERATED',flush=True)
 if __name__=='__main__':main()
+
+# Trigger source-asset import in the dedicated GitHub Actions workflow (no production deploy).
