@@ -2,8 +2,8 @@
   "destination": "ibiza",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 9,
+  "downloadedHotelCandidates": 10,
+  "downloadedDestinationCandidates": 8,
   "hotels": [
     {
       "key": "view-1",
@@ -200,26 +200,12 @@
       "propertyKey": "7pines-resort-ibiza",
       "sourcePage": "https://7pines-ibiza.com/en/dining",
       "slotIntent": "real guestroom or suite interior",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
-      "localPath": "/images/travel/ibiza-premium/7pines-resort-ibiza/view-2.webp",
-      "downloadUrl": "https://7pines-ibiza.com/media/dining-seaview-outdoorseating-3459.webp",
-      "candidateContext": "    ",
-      "credit": "Hotel website; photographer to be checked",
-      "license": "Commercial reuse rights not independently reviewed",
-      "sha256": "c46020c9cdc64a8739ccaab874c1250af43b7ed39dc0bfd4cf72db0407980bbd",
-      "dhash": "1100011000110001001100000100000000011000110010000101101001011011",
-      "bytes": 187672,
-      "originalSize": [
-        8062,
-        5377
-      ],
-      "outputSize": [
-        1799,
-        1200
-      ]
+      "visualQaWarning": "Image was the 7Pines restaurant terrace; the view-2 intent is an authentic hotel guest suite.",
+      "rejectedSource": "https://7pines-ibiza.com/media/dining-seaview-outdoorseating-3459.webp",
+      "rejectedOriginalSha256": "c46020c9cdc64a8739ccaab874c1250af43b7ed39dc0bfd4cf72db0407980bbd"
     },
     {
       "key": "view-3",
@@ -308,26 +294,12 @@
       "propertyKey": "the-standard-ibiza",
       "sourcePage": "https://www.cntraveller.com/hotels/the-standard-ibiza-review",
       "slotIntent": "authentic hotel pool/dining/terrace",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
-      "localPath": "/images/travel/ibiza-premium/the-standard-ibiza/view-3.webp",
-      "downloadUrl": "https://media.cntraveller.com/photos/626bcb35b25d31f55e79d7ab/16%3A9/w_2560%2Cc_limit/jara-the%2520standard%2520ibiza-apr22-pr2.jpg",
-      "candidateContext": "Jara restaurant at The Standard Ibiza, photographed for hotel review",
-      "credit": "Named hotel gallery; original photographer/source: https://www.cntraveller.com/hotels/the-standard-ibiza-review",
-      "license": "Commercial licence requires verified operator/photographer rights",
-      "sha256": "367dcf56161fcd199702b2fa727275523b87a2b161b682c8304f8f7036f9f24e",
-      "dhash": "0010001100100111000101110001011100100111001011110000001100110011",
-      "bytes": 131340,
-      "originalSize": [
-        2560,
-        1440
-      ],
-      "outputSize": [
-        1800,
-        1013
-      ]
+      "visualQaWarning": "The old Jara crop mostly showed curtains and a lamp, not the distinctive restaurant; replacing with a wider properly sourced room.",
+      "rejectedSource": "https://media.cntraveller.com/photos/626bcb35b25d31f55e79d7ab/16%3A9/w_2560%2Cc_limit/jara-the%2520standard%2520ibiza-apr22-pr2.jpg",
+      "rejectedOriginalSha256": "367dcf56161fcd199702b2fa727275523b87a2b161b682c8304f8f7036f9f24e"
     }
   ],
   "destinationScenes": [
@@ -363,27 +335,13 @@
       "placeLabel": "Port et Marina Botafoch",
       "searchQuery": "Ibiza Marina Botafoch yachts promenade",
       "slotIntent": "Port et Marina Botafoch",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
-      "localPath": "/images/travel/ibiza-premium/destination/scene-2.webp",
+      "visualQaWarning": "The old Ibiza port photo is hazy and low-contrast, fails premium sunny marina art direction.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Ibiza_Port.jpg",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Ibiza_Port.jpg",
-      "candidateContext": "Ibiza city marina port panorama from shore, 2022 by Josi; not a claim of an exact Botafoch quay",
-      "credit": "Geolocated Wikimedia source: https://commons.wikimedia.org/wiki/File:Ibiza_Port.jpg",
-      "license": "Creative Commons licence: check file and attribution",
-      "sha256": "ab1de941474604c589026cec55086d79fee1832881290b7b3ea876f1a70c1f6d",
-      "dhash": "0000001100000011000000001000111100001111100000010000000100000010",
-      "bytes": 157572,
-      "originalSize": [
-        4608,
-        2272
-      ],
-      "outputSize": [
-        1800,
-        888
-      ]
+      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Ibiza_Port.jpg",
+      "rejectedOriginalSha256": "ab1de941474604c589026cec55086d79fee1832881290b7b3ea876f1a70c1f6d"
     },
     {
       "key": "scene-3",

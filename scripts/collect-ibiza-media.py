@@ -52,6 +52,10 @@ SCENES={
 }
 # Candidate source URLs can be added only when their named property/place identity is checked.
 EXACT_HOTEL={
+ "7pines-resort-ibiza/view-2":[
+  ("https://assets.hyatt.com/content/dam/hyatt/hyattdam/images/2021/04/26/1344/IBZDH-P0061-Laguna-Suite-Sea-View-Bedroom.jpg/IBZDH-P0061-Laguna-Suite-Sea-View-Bedroom.16x9.jpg?imwidth=2560",
+   "https://www.hyatt.com/destination-by-hyatt/en-US/ibzdh-7-pines-resort-ibiza/rooms",
+   "Real Laguna Suite Sea View bedroom at 7Pines Ibiza, turquoise throw and ivory bed")],
  "six-senses-ibiza/view-1":[
   ("https://media.sixsenses.com/B60H3R33/at/3mr4fqhv5t73vwbk3mtf53/Swimming_Pool_aerial.jpg?fit=crop&height=1100&width=1750",
    "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
@@ -73,6 +77,9 @@ EXACT_HOTEL={
  ("https://media.cntraveller.com/photos/626bcba607f3ba05725cd551/16:9/w_2560,c_limit/suite-the%20standard%20ibiza-apr22-pr2.jpg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Actual Standard Ibiza hotel guest suite"),
  ("https://media.cntraveller.com/photos/626bcba607f3ba05725cd551/master/w_1600,c_limit/suite-the%20standard%20ibiza-apr22-pr2.jpg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Actual guest suite from Standard Ibiza")],
  "the-standard-ibiza/view-3":[
+ ("https://media.yatzer.com/39_p_jara_restaurant_the_standard_ibiza_photography_standard_hotels_yatzer-1-1400x934.jpg",
+   "https://www.yatzer.com/the-standard-ibiza",
+   "Bright real Jara restaurant and garden-style furniture photographed at The Standard Ibiza by the hotel's media team"),
  ("https://media.cntraveller.com/photos/626bcb35b25d31f55e79d7ab/16%3A9/w_2560%2Cc_limit/jara-the%2520standard%2520ibiza-apr22-pr2.jpg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Jara restaurant at The Standard Ibiza, photographed for hotel review"),
  ("https://media.cntraveller.com/photos/626bcb35b25d31f55e79d7ab/16:9/w_2560,c_limit/jara-the%20standard%20ibiza-apr22-pr2.jpg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Actual Jara restaurant interior, The Standard Ibiza"),
  ("https://media.cntraveller.com/photos/626bcb35b25d31f55e79d7ab/master/w_1600,c_limit/jara-the%20standard%20ibiza-apr22-pr2.jpg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Jara restaurant, actual The Standard Ibiza")],
@@ -80,6 +87,13 @@ EXACT_HOTEL={
 }
 # Exact verified place identity; Commons originals built from canonical filename,
 # attribution/licence remain to be read from individual Commons source before QA.
+# Optional brighter marina exact source, subject checked against public Ibiza charter webpage.
+EXACT_MARINA={
+ "scene-2":[
+ ("https://static.wixstatic.com/media/652426_a059a541ea0442f6a1c541570e37826f~mv2.jpg",
+  "https://www.ibizatopcharter.com/",
+  "Ibiza harbour with yachts and Eivissa old town behind, exact marina harbour image; independently verify harbour location")]
+}
 EXACT_SCENE={
  "scene-1":[("COMMONS:Eivissa - Dalt Vila from Airplane.jpg","https://commons.wikimedia.org/wiki/File:Eivissa_-_Dalt_Vila_from_Airplane.jpg","Dalt Vila and cathedral photographed from a plane, 2024 by UnFUG-Fabi")],
  "scene-2":[("COMMONS:Ibiza Port.jpg","https://commons.wikimedia.org/wiki/File:Ibiza_Port.jpg","Ibiza city marina port panorama from shore, 2022 by Josi; not a claim of an exact Botafoch quay")],
@@ -209,7 +223,9 @@ def main():
   linked=[(180,commons_original(url.split(":",1)[1]) if url.startswith("COMMONS:") else url,
     page,ctx,"Geolocated Wikimedia source: "+page,"Creative Commons licence: check file and attribution")
     for url,page,ctx in EXACT_SCENE.get(row["key"],[])]
-  capture(row,linked+commons(query,tokens),urls,shas,hashes)
+  extra=[(250,url,page,ctx,"Publisher: "+page,"Publisher commercial photo rights require individual verification")
+       for url,page,ctx in EXACT_MARINA.get(row["key"],[])]
+  capture(row,extra+linked+commons(query,tokens),urls,shas,hashes)
  m["downloadedHotelCandidates"]=sum(bool(x.get("localPath")) for x in m["hotels"])
  m["downloadedDestinationCandidates"]=sum(bool(x.get("localPath")) for x in m["destinationScenes"])
  m["visuallyVerified"]=False;m["approvedForCommercialPublication"]=False
