@@ -1,0 +1,655 @@
+{
+  "destination": "laucala-island",
+  "hotels": [
+    {
+      "key": "view-1",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/de1455b5-384e-4270-ef56-92ecbaca7f00/public?w=1600&q=83",
+      "originalMediaId": "de1455b5-384e-4270-ef56-92ecbaca7f00",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Plantation et piscines · vue générale du resort — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "LAUCALA island · villa pool and tropical landscaping — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/plantation/view-1.webp",
+      "sha256": "ed9d0a6670084951af22178765b5a1c1be3abe477717724b8e638f4ec635c278",
+      "bytes": 193764,
+      "originalSize": [
+        1151,
+        768
+      ],
+      "outputSize": [
+        1151,
+        768
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "propertyKey": "plantation",
+      "property": "LAUCALA — Plantation Residences"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/afbe79dc-94ec-4773-f30a-e28b2ad04b00/public?w=1600&q=83",
+      "originalMediaId": "afbe79dc-94ec-4773-f30a-e28b2ad04b00",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Pavillons de plage et jardins · image d’ambiance — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "LAUCALA beachside pavilion setting — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/plantation/view-2.webp",
+      "sha256": "e5e79311cf4aeda3e555b3dec7b9ab04d0b6ff4e67ee0a98b44261fd29fc645d",
+      "bytes": 152100,
+      "originalSize": [
+        1152,
+        768
+      ],
+      "outputSize": [
+        1152,
+        768
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "propertyKey": "plantation",
+      "property": "LAUCALA — Plantation Residences"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/09b123bb-a41b-4841-5fdd-3ed672a4b100/public?w=1600&q=83",
+      "originalMediaId": "09b123bb-a41b-4841-5fdd-3ed672a4b100",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Plage plantée de cocotiers · vue de l’île — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "LAUCALA island · palms near the beach — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/plantation/view-3.webp",
+      "sha256": "360c20cb9d56f1e5a3fc621e5249cdd83f99b619a9c79d996e27a7b2c119ceb8",
+      "bytes": 237590,
+      "originalSize": [
+        1366,
+        767
+      ],
+      "outputSize": [
+        1366,
+        767
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "propertyKey": "plantation",
+      "property": "LAUCALA — Plantation Residences"
+    },
+    {
+      "key": "view-1",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/f4805041-db69-411e-61c3-6b04afcbe300/public?w=1600&q=83",
+      "originalMediaId": "f4805041-db69-411e-61c3-6b04afcbe300",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Villa et piscine tropicale · décor de l’île — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "LAUCALA island · villa pool in tropical gardens — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/seagrass/view-1.webp",
+      "sha256": "e0a14ca607ba9cb9fda884adadf0158617b35e3516275692d3d030bee26f14da",
+      "bytes": 297448,
+      "originalSize": [
+        1366,
+        767
+      ],
+      "outputSize": [
+        1366,
+        767
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "propertyKey": "seagrass",
+      "property": "LAUCALA — Seagrass Residences"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/2f83888b-25b3-49f2-03f0-5c6fcaaab800/public?w=1600&q=83",
+      "originalMediaId": "2f83888b-25b3-49f2-03f0-5c6fcaaab800",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Pavillon et bois exotique · vue illustrative — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "LAUCALA island · timber pavilion setting — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/seagrass/view-2.webp",
+      "sha256": "168db73076832291a0d61b60a39d7cf03f5c1b52ac9fa69492e9878023d7a51e",
+      "bytes": 49390,
+      "originalSize": [
+        1152,
+        768
+      ],
+      "outputSize": [
+        1152,
+        768
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "propertyKey": "seagrass",
+      "property": "LAUCALA — Seagrass Residences"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/1548a20c-a4b5-4e2c-1e95-1cce3313d500/public?w=1600&q=83",
+      "originalMediaId": "1548a20c-a4b5-4e2c-1e95-1cce3313d500",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Piscine privée et verdure · vue illustrative — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "LAUCALA island · private pool and greenery — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/seagrass/view-3.webp",
+      "sha256": "7b1da8bd35f73cc5e994587b2d3015839a260cba205cbe241e5195ec7b5cd596",
+      "bytes": 295272,
+      "originalSize": [
+        1152,
+        768
+      ],
+      "outputSize": [
+        1152,
+        768
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "propertyKey": "seagrass",
+      "property": "LAUCALA — Seagrass Residences"
+    },
+    {
+      "key": "view-1",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/5bd7d744-a21d-4b0f-9809-12abb635e100/public?w=1600&q=83",
+      "originalMediaId": "5bd7d744-a21d-4b0f-9809-12abb635e100",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Piscine et vue au soleil couchant · LAUCALA — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "LAUCALA pool and sunset, representative island setting — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/plateau/view-1.webp",
+      "sha256": "6315282da3649a79bce607fa61456d380afe4d487364839e6251c4a16ede0e83",
+      "bytes": 31154,
+      "originalSize": [
+        512,
+        768
+      ],
+      "outputSize": [
+        512,
+        768
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "propertyKey": "plateau",
+      "property": "LAUCALA — Plateau Residences"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/389b837e-7223-466c-2ef5-832a38a61100/public?w=1600&q=83",
+      "originalMediaId": "389b837e-7223-466c-2ef5-832a38a61100",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Jungle dense · paysage du domaine — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "LAUCALA tropical forest landscape — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/plateau/view-2.webp",
+      "sha256": "979293dadb824788aa7a9ffc5447142e8d25ed14bfe7ad9c4d83efe97597a704",
+      "bytes": 255258,
+      "originalSize": [
+        1151,
+        768
+      ],
+      "outputSize": [
+        1151,
+        768
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "propertyKey": "plateau",
+      "property": "LAUCALA — Plateau Residences"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/e42e03e3-ce3d-46d5-0da1-086be3aa3600/public?w=1600&q=83",
+      "originalMediaId": "e42e03e3-ce3d-46d5-0da1-086be3aa3600",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Villa et bassin dans la forêt · image illustrative — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "LAUCALA island · jungle villa swimming pool — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/plateau/view-3.webp",
+      "sha256": "c240bdf92291dff8227445673f964c4c2d67c30cceda749160925d2120728da9",
+      "bytes": 188704,
+      "originalSize": [
+        1151,
+        768
+      ],
+      "outputSize": [
+        1151,
+        768
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "propertyKey": "plateau",
+      "property": "LAUCALA — Plateau Residences"
+    },
+    {
+      "key": "view-1",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/751c88de-d46e-4119-4edb-21ef3bf9b700/public?w=1600&q=83",
+      "originalMediaId": "751c88de-d46e-4119-4edb-21ef3bf9b700",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Pavillons sur pilotis de Laucala · résidence sur l’eau — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "LAUCALA genuine overwater pavilions — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/wai/view-1.webp",
+      "sha256": "dbe705745f63ae05b32661b97e4d2c67b9d10edfc8d9e4d877158d736b6a3aa0",
+      "bytes": 276634,
+      "originalSize": [
+        1366,
+        767
+      ],
+      "outputSize": [
+        1366,
+        767
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "propertyKey": "wai",
+      "property": "LAUCALA — Wai Overwater Residence"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/5f57bc42-4c9d-42be-1354-1e7b58061e00/public?w=1600&q=83",
+      "originalMediaId": "5f57bc42-4c9d-42be-1354-1e7b58061e00",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Villas au-dessus du lagon · vue différente — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "LAUCALA overwater architecture and lagoon — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/wai/view-2.webp",
+      "sha256": "1615d82d75b6145ed8a252d1541c6b61a35be2980b581170288deb0c40c59dca",
+      "bytes": 128946,
+      "originalSize": [
+        1152,
+        768
+      ],
+      "outputSize": [
+        1152,
+        768
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "propertyKey": "wai",
+      "property": "LAUCALA — Wai Overwater Residence"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/c367852f-4313-454b-f886-f9b85d2d9100/public?w=1600&q=83",
+      "originalMediaId": "c367852f-4313-454b-f886-f9b85d2d9100",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Côte et récif autour du domaine · vue générale — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "LAUCALA island coast and reef, not a confirmed room-specific view — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/wai/view-3.webp",
+      "sha256": "e4da7fefce16cf67f5b653734fd61d46ef7dbe19b465aca064d30539de565496",
+      "bytes": 93888,
+      "originalSize": [
+        1151,
+        768
+      ],
+      "outputSize": [
+        1151,
+        768
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "propertyKey": "wai",
+      "property": "LAUCALA — Wai Overwater Residence"
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/0f12981c-2be7-480c-15d2-5a82697efc00/public?w=1600&q=83",
+      "originalMediaId": "0f12981c-2be7-480c-15d2-5a82697efc00",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Côte turquoise et palmiers de Laucala — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "Laucala island · aerial turquoise coast and palm canopy — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/destination/scene-1.webp",
+      "sha256": "41df3cc0e5d07fc33362a836cae0fe7d4846b75b08c0aa7e6e33f923d7e1a05b",
+      "bytes": 199742,
+      "originalSize": [
+        1366,
+        767
+      ],
+      "outputSize": [
+        1366,
+        767
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "place": "LAUCALA Island, Fiji"
+    },
+    {
+      "key": "scene-2",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/0497c365-d27f-49c4-e582-13546b154e00/public?w=1600&q=83",
+      "originalMediaId": "0497c365-d27f-49c4-e582-13546b154e00",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Littoral et horizon fidjien — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "LAUCALA coastal horizon — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/destination/scene-2.webp",
+      "sha256": "b4bf1bae8926616e9a7d5bf5d5d975481021aa9d04fa730e1af17b745f85675b",
+      "bytes": 126586,
+      "originalSize": [
+        1152,
+        768
+      ],
+      "outputSize": [
+        1152,
+        768
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "place": "LAUCALA Island, Fiji"
+    },
+    {
+      "key": "scene-3",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/e835072f-0b1d-49ac-27dd-d597cd037600/public?w=1600&q=83",
+      "originalMediaId": "e835072f-0b1d-49ac-27dd-d597cd037600",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Baie et récif de Laucala — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "Laucala bay and reefs — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/destination/scene-3.webp",
+      "sha256": "9dbe8f4737228c41b2d0f16f11d7aad2ade2156eedb62a4b15b18d82dff9ebc6",
+      "bytes": 168330,
+      "originalSize": [
+        1152,
+        768
+      ],
+      "outputSize": [
+        1152,
+        768
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "place": "LAUCALA Island, Fiji"
+    },
+    {
+      "key": "scene-4",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/8ab32a42-51ac-47bb-9892-61533262fd00/public?w=1600&q=83",
+      "originalMediaId": "8ab32a42-51ac-47bb-9892-61533262fd00",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Palmiers et rivage tropical — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "Palm-fringed island shore — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/destination/scene-4.webp",
+      "sha256": "39facc0937c6dcc7f4c6b868eb2886c8c43f3f4475a06c2d257969992e4c739b",
+      "bytes": 70394,
+      "originalSize": [
+        1152,
+        768
+      ],
+      "outputSize": [
+        1152,
+        768
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "place": "LAUCALA Island, Fiji"
+    },
+    {
+      "key": "scene-5",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/adae7428-605d-4d36-c107-27272380f200/public?w=1600&q=83",
+      "originalMediaId": "adae7428-605d-4d36-c107-27272380f200",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Mer turquoise et végétation tropicale — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "Island turquoise sea and jungle — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/destination/scene-5.webp",
+      "sha256": "348f83bcad5aa932eedfb52fe9561cb3f6cf9eeaaa19fbdc1c59b5f980477ae3",
+      "bytes": 265686,
+      "originalSize": [
+        1366,
+        767
+      ],
+      "outputSize": [
+        1366,
+        767
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "place": "LAUCALA Island, Fiji"
+    },
+    {
+      "key": "scene-6",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/cd26b70a-ec1e-499f-9ccc-1345a3b1e900/public?w=1600&q=83",
+      "originalMediaId": "cd26b70a-ec1e-499f-9ccc-1345a3b1e900",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Littoral boisé et mer calme — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "Wooded tropical shoreline — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/destination/scene-6.webp",
+      "sha256": "8892143b82949d6ba84a5240d185c6b8fea420b1c5cef554869ce1301c20c548",
+      "bytes": 304428,
+      "originalSize": [
+        1366,
+        767
+      ],
+      "outputSize": [
+        1366,
+        767
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "place": "LAUCALA Island, Fiji"
+    },
+    {
+      "key": "scene-7",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/4ec7adbb-c512-432d-70e7-204b24dbde00/public?w=1600&q=83",
+      "originalMediaId": "4ec7adbb-c512-432d-70e7-204b24dbde00",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Forêt et crêtes verdoyantes — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "Laucala lush hills and forest — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/destination/scene-7.webp",
+      "sha256": "6db1aac05e26c77357e49dc3c64bde73e0b25697d9729a866d22b413a39a610b",
+      "bytes": 128716,
+      "originalSize": [
+        1151,
+        768
+      ],
+      "outputSize": [
+        1151,
+        768
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "place": "LAUCALA Island, Fiji"
+    },
+    {
+      "key": "scene-8",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/c7e4e0af-ab7b-448c-e48c-7e854047f900/public?w=1600&q=83",
+      "originalMediaId": "c7e4e0af-ab7b-448c-e48c-7e854047f900",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Plage de sable et cocotiers — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "Laucala palms and white-sand beach — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/destination/scene-8.webp",
+      "sha256": "db972d6fe29dd3de5725cf2ad5655d03dc82570eaa75dd41ac5137dcbd44279c",
+      "bytes": 53538,
+      "originalSize": [
+        512,
+        768
+      ],
+      "outputSize": [
+        512,
+        768
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "place": "LAUCALA Island, Fiji"
+    },
+    {
+      "key": "scene-9",
+      "sourcePage": "https://www.laucala.com/",
+      "downloadUrl": "https://imagedelivery.net/qO43xOenpVK1usAjenxJTA/71b31a15-dbcd-41a3-2e30-66a4b8718b00/public?w=1600&q=83",
+      "originalMediaId": "71b31a15-dbcd-41a3-2e30-66a4b8718b00",
+      "sourceAlt": "Banner image / LAUCALA original publisher (most source files have no specific room identification)",
+      "credit": "LAUCALA · official private-island publisher; original photographer unidentified",
+      "license": "Operator-attested source use for private owner preview only; original photographer rights need separate clearance",
+      "licenseUrl": "https://www.laucala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "frCaption": "Plage naturelle du domaine — photo officielle indicative, résidence exacte non identifiée",
+      "enCaption": "Laucala island natural sandy beach — official illustrative image, exact residence unverified",
+      "localPath": "/images/travel/laucala-island-premium/destination/scene-9.webp",
+      "sha256": "fe8433d3db39db8de0d1c3a8faa6a94912f4d44ccd1f1e69d34e120f6c93a135",
+      "bytes": 254414,
+      "originalSize": [
+        1366,
+        767
+      ],
+      "outputSize": [
+        1366,
+        767
+      ],
+      "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
+      "place": "LAUCALA Island, Fiji"
+    }
+  ],
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "publicationBlockedReason": "Source photos are authentic LAUCALA island images, but specific historical villa identity is not generally attested, and original photographer-level publication rights remain open",
+  "photoRightsBasis": "Original current resort website Cloudflare CDN imagery, publisher-attributed but not individually credited"
+}
