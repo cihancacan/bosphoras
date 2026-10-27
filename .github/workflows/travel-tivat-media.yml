@@ -48,3 +48,5 @@ jobs:
 # Start one manual-quality gated Tivat 21-photo collection; no production promotion.
 
 # Trigger photo collection once with no Vercel Preview promotion.
+
+# Begin Tivat-only 21-photo import; no manual Vercel Preview.
