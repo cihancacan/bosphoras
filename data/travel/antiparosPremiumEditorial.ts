@@ -4,7 +4,7 @@ import {approvedAntiparosPhoto} from './antiparosGuide';
 import media from './antiparosMediaCandidates.json';
 type Candidate={key:string;propertyKey?:string;status:string;localPath?:string;sourcePage?:string;credit?:string;frCaption?:string;enCaption?:string;visuallyVerified?:boolean;commercialRightsCleared?:boolean;visualQaWarning?:string};
 const photo=(x:Candidate):BodrumPremiumPhoto=>({src:x.localPath!,fr:x.frCaption!,en:x.enCaption!,sourcePage:x.sourcePage!,credit:x.credit||'Original photographer'});
-const keys=["kalesma","santa-marina","cavo-tagoo","antiparos-blu"];
+const keys=["the-rooster","the-beach-house","soros-beach","kastro-boutique"];
 export const antiparosHotelEditorial:Record<string,BodrumHotelEditorial>=Object.fromEntries(antiparosDraftGuide.hotels.map((h,i)=>[h.name,{
  photos:(media.hotels as Candidate[]).filter(x=>x.propertyKey===keys[i]&&approvedAntiparosPhoto(x)).map(photo),
  credit:h.name+' · sourced property photos',sourcePage:h.officialUrl,frBest:h.frWatch,enBest:h.enWatch,frStory:h.fr+' '+h.frWatch,enStory:h.en+' '+h.enWatch}]));
