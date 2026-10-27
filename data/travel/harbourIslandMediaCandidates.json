@@ -1,0 +1,247 @@
+{
+  "destination": "harbour-island",
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "hotels": [
+    {
+      "key": "view-1",
+      "propertyKey": "dunmore",
+      "property": "The Dunmore",
+      "sourcePage": "https://www.dunmorebeach.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Source candidate not audited for commercial publication",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "dunmore",
+      "property": "The Dunmore",
+      "sourcePage": "https://www.dunmorebeach.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Source candidate not audited for commercial publication",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "dunmore",
+      "property": "The Dunmore",
+      "sourcePage": "https://www.dunmorebeach.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Source candidate not audited for commercial publication",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "coral",
+      "property": "Coral Sands Inn & Cottages",
+      "sourcePage": "https://www.coralsands.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Source candidate not audited for commercial publication",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "coral",
+      "property": "Coral Sands Inn & Cottages",
+      "sourcePage": "https://www.coralsands.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Source candidate not audited for commercial publication",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "coral",
+      "property": "Coral Sands Inn & Cottages",
+      "sourcePage": "https://www.coralsands.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Source candidate not audited for commercial publication",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "pinksands",
+      "property": "Pink Sands Resort",
+      "sourcePage": "https://pinksandsresort.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Source candidate not audited for commercial publication",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "pinksands",
+      "property": "Pink Sands Resort",
+      "sourcePage": "https://pinksandsresort.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Source candidate not audited for commercial publication",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "pinksands",
+      "property": "Pink Sands Resort",
+      "sourcePage": "https://pinksandsresort.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Source candidate not audited for commercial publication",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "landing",
+      "property": "The Landing",
+      "sourcePage": "https://harbourislandlanding.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Source candidate not audited for commercial publication",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "landing",
+      "property": "The Landing",
+      "sourcePage": "https://harbourislandlanding.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Source candidate not audited for commercial publication",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "landing",
+      "property": "The Landing",
+      "sourcePage": "https://harbourislandlanding.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Source candidate not audited for commercial publication",
+      "frCaption": "",
+      "enCaption": ""
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "place": "Pink Sands Beach, Harbour Island, Bahamas (5279465868).jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Archive/geographic provenance and licence require verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-2",
+      "place": "Bahamas 1989 (336) Eleuthera Dunmore Town, Harbour Island (24237453931).jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Archive/geographic provenance and licence require verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-3",
+      "place": "Pink Sands Beach, Harbour Island (4236832563).jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Archive/geographic provenance and licence require verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-4",
+      "place": "Bahamas 1989 (342) Eleuthera Harbour Island (24320422055).jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Archive/geographic provenance and licence require verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-5",
+      "place": "Sunrise at Pink Sands, Harbour Island (4236832127).jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Archive/geographic provenance and licence require verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-6",
+      "place": "Bahamas 1989 (339) Eleuthera Dunmore Town, Harbour Island (24293986816).jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Archive/geographic provenance and licence require verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-7",
+      "place": "Pink Sands Beach - panoramio.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Archive/geographic provenance and licence require verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-8",
+      "place": "Bahamas 1989 (343) Eleuthera Harbour Island (24211710172).jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Archive/geographic provenance and licence require verification",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-9",
+      "place": "Stunning Scene At Harbour Island Eleuthera Bahamas Imran (55954984).jpeg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Archive/geographic provenance and licence require verification",
+      "frCaption": "",
+      "enCaption": ""
+    }
+  ],
+  "publicationBlockedReason": "21 original sourced photos and preview visual/rights checks required",
+  "photoRightsBasis": "Hotel photography attested by operator, original photographer contracts not inspected; Commons author and licences retained."
+}
