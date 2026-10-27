@@ -40,6 +40,7 @@ HOTELS=[
   'https://www.thegreenwichhotel.com/accommodations/'],{'thegreenwichhotel.com','www.thegreenwichhotel.com'}),
  ('lowell','The Lowell',[
   'https://www.lowellhotel.com/rooms-and-suites',
+  'https://www.lowellhotel.com/specialty-suites/124-6/',
   'https://www.lowellhotel.com/',
   'https://www.lowellhotel.com/specialty-suites'],{'lowellhotel.com','www.lowellhotel.com'})
 ]
@@ -81,7 +82,7 @@ def commons_photo(item):
  raw=get(url,40).content
  path=ROOT/'destination'/f'{key}.webp'
  details=save_webp(raw,path)
- return {**details,'key':key,'localPath':'/'+str(path),'sourcePage':page,'downloadUrl':url,
+ return {**details,'key':key,'localPath':'/'+str(path).removeprefix('public/'),'sourcePage':page,'downloadUrl':url,
    'author':author,'credit':author,'commonsArtistMetadata':credited[:350],
    'license':lic,'licenseUrl':'https://creativecommons.org/licenses/by-sa/4.0/' if 'BY-SA' in lic.upper() else 'https://creativecommons.org/licenses/by/4.0/',
    'status':'source_identified_private_preview','visuallyVerified':False,'commercialRightsCleared':True,
@@ -109,9 +110,9 @@ def image_candidates(page,soup):
   url=url.replace('\\u0026','&').replace('&amp;','&').replace('\\/','/')
   # Avoid external trackers, logos, thumbnails and data placeholders.
   low=url.lower()
-  if any(word in low for word in ['logo','icon','favicon','sprite','sprite','pixel','tracking','flag.','avatar','badge','cookie','loader','placeholder','button']):continue
+  if any(word in low for word in ['logo','icon','favicon','sprite','pixel','tracking','flag.','avatar','badge','cookie','loader','placeholder','button','audioeye','conde_nast','award','forbes','travel-leisure','press-','trust','google','rating','preferred','unforgettable','_logo','seal','qr-code','2026-']):continue
   if not (any(x in low for x in ['jpg','jpeg','png','webp','image','photo','upload','cdn','media','assets'])):continue
-  ident=url.split('?')[0]
+  ident=re.sub(r'-\\d+x\\d+(?=\\.)','',re.sub(r'/styles/[^/]+/public/','/public/',url.split('?')[0],flags=re.I),flags=re.I)
   if ident in distinct:continue
   distinct.add(ident)
   yield (url,caption)
@@ -138,25 +139,33 @@ def hotel_photos(item):
    print(name,'candidate URLs',n,'from',page,flush=True)
   except Exception as e:print(name,'page skipped',page,str(e)[:160],flush=True)
  scores.sort(key=lambda x:-x[0])
- rows=[];used=set();digest=set()
+ print(name,'top candidates:',[(a, u.split('/')[-1][:75]) for a,u,_,_ in scores[:14]],flush=True)
+ rows=[];used=set();digest=set();fingerprints=[]
  for score,url,alt,page in scores:
   if len(rows)>=3:break
-  clean=url.split('?')[0]
+  clean=re.sub(r'-\\d+x\\d+(?=\\.)','',re.sub(r'/styles/[^/]+/public/','/public/',url.split('?')[0],flags=re.I),flags=re.I)
   if clean in used:continue
   used.add(clean)
   try:
    raw=get(url,35).content
    picture=Image.open(io.BytesIO(raw))
    if picture.width<700 or picture.height<460:continue
+   if any(t in url.lower() for t in ['audioeye','conde_nast','award','trust','badge','hotel.jpg','hotel.png']):continue
+   gray=picture.convert('L').resize((9,8),Image.Resampling.LANCZOS)
+   bits=0
+   pix=list(gray.getdata())
+   for yy in range(8):
+    for xx in range(8):bits=(bits<<1)|int(pix[yy*9+xx]>pix[yy*9+xx+1])
+   if any((bits^old).bit_count()<12 for old in fingerprints):continue
    # Pillow pixel estimate avoids empty placeholder and monochrome assets.
    picture.thumbnail((130,130))
    if sum(ImageStat.Stat(picture.convert('RGB')).stddev)/3 < 12:continue
    candidate=ROOT/key/f'view-{len(rows)+1}.webp'
    info=save_webp(raw,candidate)
    if info['sha256'] in digest:continue
-   digest.add(info['sha256'])
+   digest.add(info['sha256']);fingerprints.append(bits)
    rows.append({**info,'key':f'view-{len(rows)+1}','propertyKey':key,'property':name,
-    'localPath':'/'+str(candidate),'sourcePage':page,'downloadUrl':url,'credit':name+' — publisher-owned photography, creator licence unverified',
+    'localPath':'/'+str(candidate).removeprefix('public/'),'sourcePage':page,'downloadUrl':url,'credit':name+' — publisher-owned photography, creator licence unverified',
     'license':'Operator website photograph. Private preview only; commercial reuse rights not independently cleared.',
     'licenseUrl':page,'rightsEvidenceType':'operator_publisher_not_commercially_cleared','commercialRightsCleared':False,
     'status':'source_identified_private_preview','visuallyVerified':False,'visualQaWarning':'Individual human photo/room identity and publication rights review outstanding',
