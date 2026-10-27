@@ -16,17 +16,17 @@ HOTELS=[
 ('https://img.belmond.com/f_auto/t_1600_ar_4_5/photos/lrs/lrs-din-restaurant-el-olivo08.jpg','La Residencia · terrasse du restaurant El Olivo','La Residencia · El Olivo restaurant terrace'),
 ('https://img.belmond.com/f_auto/t_1600_ar_4_5/photos/lrs/lrs-acc-ssv-villa-robert-graves40.jpg','La Residencia · Villa Robert Graves, catégorie distincte','La Residencia · Villa Robert Graves, a distinct category')]),
 ('es-moli','Hotel Es Molí','https://esmoli.com/en/',[
-('https://esmoli.com/hubfs/hotel-preview.png','Es Molí · bâtiment ancien et paysage majorquin','Es Molí · historic hotel and Mallorcan setting'),
+('https://esmoli.com/hubfs/EM_0119.jpg','Es Molí · bâtiment ancien et paysage majorquin','Es Molí · historic hotel and Mallorcan setting'),
 ('https://esmoli.com/hubfs/room-1.png','Es Molí · chambre présentée par l’hôtel','Es Molí · room imagery on the official website'),
 ('https://esmoli.com/hubfs/EM_0026.jpg','Es Molí · piscine et panorama','Es Molí · swimming pool and landscape')]),
 ('sa-pedrissa','Sa Pedrissa','https://www.sapedrissa.com/en/rooms',[
 ('https://www.sapedrissa.com/idb/79097/new_DVM_1-1280x720.jpg','Sa Pedrissa · chambre Double Sea View','Sa Pedrissa · Double Sea View room'),
 ('https://www.sapedrissa.com/idb/79097/new_JS_2-1280x720.jpg','Sa Pedrissa · Junior Suite de la maison','Sa Pedrissa · official Junior Suite interior'),
 ('https://www.sapedrissa.com/idb/79097/tower_suite1-1280x720.jpg','Sa Pedrissa · Tower Suite, catégorie à part','Sa Pedrissa · distinct Tower Suite category')]),
-('des-puig',"Hotel d'es Puig",'https://hoteldespuig.com/en/',[
-("https://hoteldespuig.com/en/wp-content/uploads/sites/2/Habitaciones-del-Hotel-D%C2%B4es-Puig-en-Mallorca-habitacion-junior-Suite.webp","Hotel d'es Puig · Junior Suite officielle","Hotel d'es Puig · official junior suite"),
-("https://hoteldespuig.com/en/wp-content/uploads/sites/2/Apartamentos-del-Hotel-D%C2%B4es-Puig-en-Mallorca.webp","Hotel d'es Puig · appartement distinct des chambres","Hotel d'es Puig · apartment, separate from rooms"),
-("https://hoteldespuig.com/en/wp-content/uploads/sites/2/Desayuno-gourmet-en-Hotel-D%C2%B4es-Puig.webp","Hotel d'es Puig · espace petit-déjeuner","Hotel d'es Puig · breakfast offering")])
+('costa-dor','Hoposa Costa d’Or','https://www.hoposa.es/hotels/costa-dor',[
+('https://www.hoposa.es/images/hoposa/hoteles/costador/slider/gallery/costa_5.jpg','Hoposa Costa d’Or · maison majorquine sur les hauteurs','Hoposa Costa d’Or · hillside Mallorcan building'),
+('https://www.hoposa.es/images/hoposa/hoteles/costador/slider/gallery/costa_room.jpg','Hoposa Costa d’Or · chambre de l’hôtel','Hoposa Costa d’Or · official room photography'),
+('https://www.hoposa.es/images/hoposa/hoteles/costador/adults-only-3.jpg','Hoposa Costa d’Or · piscine panoramique','Hoposa Costa d’Or · panoramic swimming pool')])
 ]
 COMMONS=[
 ('scene-1',"Deià, Serra de Tramuntana, Mallorca - Flickr - pom'..jpg","Deià · panorama des maisons dans la Serra de Tramuntana","Deià · village panorama in the Tramuntana mountains"),
