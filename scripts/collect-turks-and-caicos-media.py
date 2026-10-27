@@ -119,3 +119,5 @@ def main():
  MAN.write_text(json.dumps(m,ensure_ascii=False,indent=2)+'\n')
  print('TURKS_CAICOS_IMPORT_REPORT',json.dumps({'hotelPhotos':len(hotels),'landscapes':len(scenes),'duplicateHashes':dupes}),flush=True)
 if __name__=='__main__':main()
+
+# Start the source-only photo import on the dedicated feature branch; do not deploy to Vercel.
