@@ -1,247 +1,625 @@
 {
   "destination": "melides",
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
       "propertyKey": "vermelho",
       "property": "Vermelho Melides",
       "sourcePage": "https://www.vermelhohotel.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Not collected or approved yet",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://cdn.prod.website-files.com/67aa3bc9b78fad4aea29b693/67c8dbc8808cd62f0c182906_67aa5b27db83855491f76a13_hp-image%20(1).webp",
+      "frCaption": "Vermelho · façade et entrée imaginées par Christian Louboutin",
+      "enCaption": "Vermelho · artistic entrance to the boutique hotel",
+      "credit": "Vermelho Melides · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.vermelhohotel.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/melides-premium/vermelho/view-1.webp",
+      "sha256": "eb741c55aec765896ec692b803ecbfc66f7f67ad950b23bbd3d4485db6f06eeb",
+      "bytes": 63196,
+      "originalSize": [
+        1440,
+        850
+      ],
+      "outputSize": [
+        1440,
+        850
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "vermelho",
       "property": "Vermelho Melides",
       "sourcePage": "https://www.vermelhohotel.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Not collected or approved yet",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://cdn.prod.website-files.com/67aa3bc9b78fad4aea29b693/67f5381b837d9166c7d235d4_Home%20-%20Slide%206.jpg",
+      "frCaption": "Vermelho · chambre aux finitions artisanales",
+      "enCaption": "Vermelho · distinct individually decorated guestroom",
+      "credit": "Vermelho Melides · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.vermelhohotel.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/melides-premium/vermelho/view-2.webp",
+      "sha256": "923b5beafccbda6924d6a0c7449eab0b24b0096ae38862a6a0d58e05da17d55d",
+      "bytes": 101542,
+      "originalSize": [
+        1113,
+        678
+      ],
+      "outputSize": [
+        1113,
+        678
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "vermelho",
       "property": "Vermelho Melides",
       "sourcePage": "https://www.vermelhohotel.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Not collected or approved yet",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://cdn.prod.website-files.com/67aa3bc9b78fad4aea29b693/67f535155197c2d7bc164648_Wellness.jpg",
+      "frCaption": "Vermelho · espace de bien-être de l’hôtel",
+      "enCaption": "Vermelho · intimate hotel wellness room",
+      "credit": "Vermelho Melides · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.vermelhohotel.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/melides-premium/vermelho/view-3.webp",
+      "sha256": "815e0695e893bb39235976268c20898e146f64fcd2e2550ca5899094a32abd59",
+      "bytes": 28520,
+      "originalSize": [
+        988,
+        750
+      ],
+      "outputSize": [
+        988,
+        750
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "pateos",
       "property": "Pa.te.os",
       "sourcePage": "https://pateos.pt/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Not collected or approved yet",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://pateos.pt/wp-content/uploads/2025/09/pateos-portugal-architecture-alentejo-e1760456637785.jpg",
+      "frCaption": "Pa.te.os · architecture contemporaine d'Aires Mateus",
+      "enCaption": "Pa.te.os · Aires Mateus contemporary architecture",
+      "credit": "Pa.te.os · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://pateos.pt/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/melides-premium/pateos/view-1.webp",
+      "sha256": "8d534930953fe8d32c9d5d8f1b8b180dbce9c8f70af0a95b41f70b305d1c7a73",
+      "bytes": 377056,
+      "originalSize": [
+        2500,
+        1413
+      ],
+      "outputSize": [
+        1750,
+        989
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "pateos",
       "property": "Pa.te.os",
       "sourcePage": "https://pateos.pt/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Not collected or approved yet",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://pateos.pt/wp-content/uploads/2025/09/pateos-portugal-living-room.jpg",
+      "frCaption": "Pa.te.os · salon et patios des maisons",
+      "enCaption": "Pa.te.os · design-led house living area",
+      "credit": "Pa.te.os · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://pateos.pt/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/melides-premium/pateos/view-2.webp",
+      "sha256": "5c73ce6f2bea691c7629e8930f0614190de823acd2ac6eb9efd8a90015d97d03",
+      "bytes": 126660,
+      "originalSize": [
+        2500,
+        1933
+      ],
+      "outputSize": [
+        1617,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "pateos",
       "property": "Pa.te.os",
       "sourcePage": "https://pateos.pt/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Not collected or approved yet",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://pateos.pt/wp-content/uploads/2025/09/pateos-portugal-pool-view.jpg",
+      "frCaption": "Pa.te.os · piscine sur le paysage alentejan",
+      "enCaption": "Pa.te.os · pool overlooking Alentejo landscapes",
+      "credit": "Pa.te.os · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://pateos.pt/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/melides-premium/pateos/view-3.webp",
+      "sha256": "cba4d009c0eeff5515febb3ca64cb7e61526fca394ac71a6babfe13f3bdf4a46",
+      "bytes": 341716,
+      "originalSize": [
+        2500,
+        1083
+      ],
+      "outputSize": [
+        1750,
+        758
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "amala",
       "property": "Quinta Amala",
       "sourcePage": "https://quintaamala.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Not collected or approved yet",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://quintaamala.com/wp-content/uploads/2025/09/img_1_rooms.jpg",
+      "frCaption": "Quinta Amala · chambre cabana aux matériaux naturels",
+      "enCaption": "Quinta Amala · natural-material cabana guestroom",
+      "credit": "Quinta Amala · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://quintaamala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/melides-premium/amala/view-1.webp",
+      "sha256": "881cdaa68a3ecc713a7217d11cedb1821010628cafad83c2479e8418a239616a",
+      "bytes": 78598,
+      "originalSize": [
+        938,
+        1208
+      ],
+      "outputSize": [
+        938,
+        1208
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "amala",
       "property": "Quinta Amala",
       "sourcePage": "https://quintaamala.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Not collected or approved yet",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://quintaamala.com/wp-content/uploads/2025/10/img_3_home.jpg",
+      "frCaption": "Quinta Amala · terrasse et architecture du refuge",
+      "enCaption": "Quinta Amala · retreat terrace and wooden architecture",
+      "credit": "Quinta Amala · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://quintaamala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/melides-premium/amala/view-2.webp",
+      "sha256": "e98e154a93a0f38dcb2048abccbc9e06c9d96384c30d0e6dd943d2365fb33e7d",
+      "bytes": 73478,
+      "originalSize": [
+        1280,
+        1920
+      ],
+      "outputSize": [
+        833,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "amala",
       "property": "Quinta Amala",
       "sourcePage": "https://quintaamala.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Not collected or approved yet",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://quintaamala.com/wp-content/uploads/2026/05/header_resto-2.jpg",
+      "frCaption": "Quinta Amala · table et cuisine de saison",
+      "enCaption": "Quinta Amala · seasonal restaurant atmosphere",
+      "credit": "Quinta Amala · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://quintaamala.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/melides-premium/amala/view-3.webp",
+      "sha256": "6021b6c6015f8c31d72879a72403dd7b076203c64d6d57dfd8e5e96058febcf7",
+      "bytes": 186364,
+      "originalSize": [
+        1440,
+        960
+      ],
+      "outputSize": [
+        1440,
+        960
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "casavadia",
       "property": "CASAVADIA Melides",
       "sourcePage": "https://casavadia.pt/en/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Not collected or approved yet",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://casavadia.pt/wp-content/uploads/2024/02/8D0A9067-min.jpg",
+      "frCaption": "CASAVADIA · maison privée et décor rural",
+      "enCaption": "CASAVADIA · private countryside cottage",
+      "credit": "CASAVADIA Melides · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://casavadia.pt/en/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/melides-premium/casavadia/view-1.webp",
+      "sha256": "42ae8488bc1e35f4b53b165dd78f3c88c9f07a6a33c82cbf6b3451cde8455a34",
+      "bytes": 287120,
+      "originalSize": [
+        2048,
+        1365
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "casavadia",
       "property": "CASAVADIA Melides",
       "sourcePage": "https://casavadia.pt/en/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Not collected or approved yet",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://casavadia.pt/wp-content/uploads/2024/02/8D0A9409-min.jpg",
+      "frCaption": "CASAVADIA · espace privatif de l’une des maisons",
+      "enCaption": "CASAVADIA · a distinct private house space",
+      "credit": "CASAVADIA Melides · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://casavadia.pt/en/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/melides-premium/casavadia/view-2.webp",
+      "sha256": "d31b5d4775bd4ce2dd03cd340108060b30d53f89a3aacd6ac20cebcb6a6b74e3",
+      "bytes": 406922,
+      "originalSize": [
+        2048,
+        1365
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "casavadia",
       "property": "CASAVADIA Melides",
       "sourcePage": "https://casavadia.pt/en/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Not collected or approved yet",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://casavadia.pt/wp-content/uploads/2024/02/8D0A9474-min.jpg",
+      "frCaption": "CASAVADIA · jardin et atmosphère indépendante",
+      "enCaption": "CASAVADIA · quiet self-contained countryside stay",
+      "credit": "CASAVADIA Melides · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://casavadia.pt/en/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/melides-premium/casavadia/view-3.webp",
+      "sha256": "51df46c9a2bd75710ba355e39bfed392b0ee950090c761b0a639772811bfa647",
+      "bytes": 555528,
+      "originalSize": [
+        2048,
+        1365
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     }
   ],
   "destinationScenes": [
     {
       "key": "scene-1",
       "place": "Lagoa e praia de Melides.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo attribution and geolocation not yet approved",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Melides · lagune et grande plage de l'Atlantique",
+      "enCaption": "Melides · lagoon beside the Atlantic beach",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Lagoa_e_praia_de_Melides.jpg/1920px-Lagoa_e_praia_de_Melides.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lagoa_e_praia_de_Melides.jpg",
+      "credit": "Epinheiro",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "localPath": "/images/travel/melides-premium/destination/scene-1.webp",
+      "sha256": "6fdcca615b3f37ed5ea201d0698e9e0f1abef4462d7f1c0d960e04fa6caba573",
+      "bytes": 325392,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-2",
       "place": "Praia de Melides.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo attribution and geolocation not yet approved",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Praia de Melides · rivage sableux et végétation",
+      "enCaption": "Praia de Melides · sand and coastal vegetation",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Praia_de_Melides.jpg/1920px-Praia_de_Melides.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Praia_de_Melides.jpg",
+      "credit": "Epinheiro",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "localPath": "/images/travel/melides-premium/destination/scene-2.webp",
+      "sha256": "f203eb43f993658f9ba23d852ac994fd9b63a7ef536b1d6572a87743139bcaea",
+      "bytes": 340264,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-3",
       "place": "Lagoa de Melides - Portugal (14321192773).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo attribution and geolocation not yet approved",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Lagoa de Melides · zone humide naturelle",
+      "enCaption": "Melides lagoon · protected wetland",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Lagoa_de_Melides_-_Portugal_%2814321192773%29.jpg/1920px-Lagoa_de_Melides_-_Portugal_%2814321192773%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lagoa_de_Melides_-_Portugal_(14321192773).jpg",
+      "credit": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "localPath": "/images/travel/melides-premium/destination/scene-3.webp",
+      "sha256": "5146778538607b470effb8fa82eaa3f38b7990204304b2b1a646a6feacc3e7a8",
+      "bytes": 509634,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-4",
       "place": "Lagoa de Melides - Portugal (14382255371).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo attribution and geolocation not yet approved",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Lagoa de Melides · paysages changeants de l'eau",
+      "enCaption": "Melides lagoon · changing natural waters",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Lagoa_de_Melides_-_Portugal_%2814382255371%29.jpg/1920px-Lagoa_de_Melides_-_Portugal_%2814382255371%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lagoa_de_Melides_-_Portugal_(14382255371).jpg",
+      "credit": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "localPath": "/images/travel/melides-premium/destination/scene-4.webp",
+      "sha256": "6bc59077efe1eb3ba48931a70713b72d2aa5aa8813d79f5ef496dbcec5fa8244",
+      "bytes": 553800,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-5",
       "place": "Praia da Lagoa de Melides - Portugal (14385597635).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo attribution and geolocation not yet approved",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Praia da Lagoa · rencontre des dunes et de la mer",
+      "enCaption": "Lagoon beach · dunes meeting the ocean",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Praia_da_Lagoa_de_Melides_-_Portugal_%2814385597635%29.jpg/1920px-Praia_da_Lagoa_de_Melides_-_Portugal_%2814385597635%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Praia_da_Lagoa_de_Melides_-_Portugal_(14385597635).jpg",
+      "credit": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "localPath": "/images/travel/melides-premium/destination/scene-5.webp",
+      "sha256": "db1258a0356e9aac8b25021c645f1cbe2349f8159d9df6dd3dc2a86a8ea530de",
+      "bytes": 610694,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-6",
       "place": "Plage de Galé - Melides - panoramio.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo attribution and geolocation not yet approved",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Praia da Galé · côte rocheuse et sable du secteur",
+      "enCaption": "Galé beach · Melides rocky coastline",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Plage_de_Gal%C3%A9_-_Melides_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Plage_de_Gal%C3%A9_-_Melides_-_panoramio.jpg",
+      "credit": "Cossel",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "localPath": "/images/travel/melides-premium/destination/scene-6.webp",
+      "sha256": "205b299be668134dc661e28eeeae3760b5949a91b1185224a34a1644109bf0be",
+      "bytes": 180440,
+      "originalSize": [
+        1280,
+        884
+      ],
+      "outputSize": [
+        1280,
+        884
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-7",
       "place": "Sunset @ Melides (4471638694).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo attribution and geolocation not yet approved",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Melides · lumière de fin de journée sur la côte",
+      "enCaption": "Melides · evening light by the coast",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Sunset_%40_Melides_%284471638694%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sunset_@_Melides_(4471638694).jpg",
+      "credit": "Tiago Lima from Lisboa, Portugal",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "localPath": "/images/travel/melides-premium/destination/scene-7.webp",
+      "sha256": "3608a51e0b2ef9a9f9b39e400b26f37326ea749ef5dd23a7a41d817434dc37a5",
+      "bytes": 72576,
+      "originalSize": [
+        1280,
+        802
+      ],
+      "outputSize": [
+        1280,
+        802
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-8",
-      "place": "Melides, Portugal (Unsplash).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo attribution and geolocation not yet approved",
-      "frCaption": "",
-      "enCaption": ""
+      "place": "Lagoa de Melides - Portugal (14199168777).jpg",
+      "frCaption": "Lagoa de Melides · panorama naturel et végétation riveraine",
+      "enCaption": "Melides lagoon · natural shoreline and vegetation",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Lagoa_de_Melides_-_Portugal_%2814199168777%29.jpg/1920px-Lagoa_de_Melides_-_Portugal_%2814199168777%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lagoa_de_Melides_-_Portugal_(14199168777).jpg",
+      "credit": "Vitor Oliveira from Torres Vedras, PORTUGAL",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "localPath": "/images/travel/melides-premium/destination/scene-8.webp",
+      "sha256": "f71c5f2e95806f5afc348421996f7c383e9ead883c900e3daf15c7b1e64d4cd3",
+      "bytes": 654174,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-9",
-      "place": "Santo Andre lagoon ecosystem in Portugal.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo attribution and geolocation not yet approved",
-      "frCaption": "",
-      "enCaption": ""
+      "place": "Lagoa de Santo André em Vila Nova de Santo André.jpg",
+      "frCaption": "Lagoa de Santo André · réserve littorale au sud de Melides",
+      "enCaption": "Santo André lagoon · protected habitat south of Melides",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Lagoa_de_Santo_Andr%C3%A9_em_Vila_Nova_de_Santo_Andr%C3%A9.jpg/1920px-Lagoa_de_Santo_Andr%C3%A9_em_Vila_Nova_de_Santo_Andr%C3%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lagoa_de_Santo_Andr%C3%A9_em_Vila_Nova_de_Santo_Andr%C3%A9.jpg",
+      "credit": "Duartemiguel12",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/melides-premium/destination/scene-9.webp",
+      "sha256": "6a12238691a1ffbf5a037f2e024036f82e53a59d38af0f9ad0c502f2f81c8b44",
+      "bytes": 553170,
+      "originalSize": [
+        1920,
+        1272
+      ],
+      "outputSize": [
+        1750,
+        1159
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     }
   ],
-  "publicationBlockedReason": "Authentic 21 image pack not yet committed; only internal non-indexed editorial permitted",
-  "photoRightsBasis": "Operator-attested usage for official hotel originals; independently verified Commons licences required for landscapes."
+  "publicationBlockedReason": "21 local photos passed automated source and uniqueness QA; final independent Preview display and hotel licensing signoff still pending",
+  "photoRightsBasis": "Commercial hotel photo use stated by operator but photographer agreements not audited; Commons license and credit stored per photo"
 }
