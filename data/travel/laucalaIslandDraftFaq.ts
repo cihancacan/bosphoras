@@ -1,4 +1,4 @@
-/** Seven grounded French and English FAQs for Laucala Island. */
+/** Seven French and English factual LAUCALA FAQs; reopening 1 October 2027 subject to reconfirmation. */
 export const laucalaIslandDraftFaq = {
   "fr": [
     {
@@ -26,8 +26,8 @@ export const laucalaIslandDraftFaq = {
       "a": "Le site actuel présente repas, boissons et de nombreuses expériences sur place dans une formule généreuse. Les soins particuliers, sorties motorisées et activités privatives peuvent être soumis à réservation ou supplément ; demander les inclusions par écrit."
     },
     {
-      "q": "Bosphoras peut-il réserver immédiatement une villa à Laucala ?",
-      "a": "Ce guide est une sélection éditoriale privée. Il ne présente aucune disponibilité API confirmée, tarif contractuel ni accord de distribution entre Bosphoras et LAUCALA. Une réservation nécessite la confirmation d’un fournisseur autorisé."
+      "q": "LAUCALA est-elle ouverte actuellement, et peut-on la réserver ?",
+      "a": "Non, LAUCALA est fermée pour rénovation en octobre 2026. La marque a annoncé une réouverture le 1er octobre 2027. Les dates, catégories de résidences et tarifs nécessitent une confirmation directe ; Bosphoras ne revendique aucun inventaire ou accord fournisseur permettant une réservation immédiate."
     }
   ],
   "en": [
@@ -56,8 +56,8 @@ export const laucalaIslandDraftFaq = {
       "a": "LAUCALA promotes a generous inclusive approach to meals, refreshments and many on-island experiences, but special treatments, bespoke trips and some services may require separate booking or payment."
     },
     {
-      "q": "Can Bosphoras instantly book a Laucala residence?",
-      "a": "This private editorial guide does not represent verified live API stock, contracted rates or a confirmed Bosphoras distribution relationship. Any booking requires individual supplier confirmation."
+      "q": "Is LAUCALA Island open, and can I book now?",
+      "a": "No. LAUCALA is closed for renovations in October 2026. The resort has announced reopening on 1 October 2027. Confirm actual operating dates, categories and rates directly; this Bosphoras editorial page asserts no live contracted inventory or immediate booking."
     }
   ]
 } as const;
