@@ -50,3 +50,5 @@ jobs:
 # Trigger photo collection once with no Vercel Preview promotion.
 
 # Begin The Hamptons-only 21-photo import; no manual Vercel Preview.
+
+# Execute The Hamptons 21-photo collection once; Vercel Preview release remains deferred.
