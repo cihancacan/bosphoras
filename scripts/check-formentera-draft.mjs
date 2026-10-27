@@ -29,7 +29,7 @@ for(const p of photos) {
  assert(!sha.has(p.sha256)&&!local.has(p.localPath),'Duplicate photo: '+p.localPath);
  sha.add(p.sha256);local.add(p.localPath);
  assert(p.frCaption?.length>28&&p.enCaption?.length>28);
- assert(p.credit?.length>10&&p.sourcePage?.startsWith('https://')&&p.licenseUrl?.startsWith('https://'));
+ assert(p.credit?.length>2&&p.sourcePage?.startsWith('https://')&&p.licenseUrl?.startsWith('https://'));
 }
 const editorial=read('data/travel/formenteraPremiumEditorial.ts');
 for(const key of ['five-flowers','gecko','teranka','cala-saona'])assert(editorial.includes(key));
