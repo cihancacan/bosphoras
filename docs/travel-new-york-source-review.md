@@ -59,3 +59,11 @@
 - [ ] New York `FeaturedCityGuideData` integration / registry update 55→56
 - [ ] Typecheck, catalogue regression, New York visual checks and noindex tests
 - [ ] Single intentional READY Preview and **verified** FR/EN HTTP 200, screenshots and mobile QA
+
+
+## Verified GitHub-only pre-release QA
+- GitHub Actions run 40601095663: **SUCCESS** — TypeScript, 88-destination catalogue, earlier premium destination regressions, old Istanbul flagship and all 21 New York source media.
+- Collector run 40600883749: **SUCCESS** — 9 attributed New York Commons city views + 12 sourced distinct property images (3 each).
+- New York is guide #56, with French `/travel/destinations/new-york` and English `/en/travel/destinations/new-york`; their Preview, not production, is ready for human inspection.
+- Public commercial photo release is still blocked. Source publisher rights and photographic visual approval must be evaluated before removing `noindex`.
+- No real-time inventory or referral supplier agreement claimed; preserve partner-handled service after sale.
