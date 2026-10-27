@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 9,
-  "downloadedDestinationCandidates": 7,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
@@ -477,20 +477,54 @@
       "placeLabel": "Salines et dunes du sud",
       "searchQuery": "Ses Salines Ibiza protected coast",
       "slotIntent": "Salines et dunes du sud",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/destination/scene-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ibiza_Ses_Salines_asv2023-04_img1.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ibiza_Ses_Salines_asv2023-04_img1.jpg",
+      "candidateContext": "Ses Salines saltpans, A.Savin, Free Art License; require FAL compliance",
+      "credit": "Geolocated Wikimedia source: https://commons.wikimedia.org/wiki/File:Ibiza_Ses_Salines_asv2023-04_img1.jpg",
+      "license": "Creative Commons licence: check file and attribution",
+      "sha256": "1d7e7f57df369b09c00be39f2e5bb637fad992773eef4ce0497a2fe2f5364544",
+      "dhash": "1111010100111000000110110011111101100011010010111111100011110111",
+      "bytes": 152890,
+      "originalSize": [
+        7816,
+        4397
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ]
     },
     {
       "key": "scene-9",
       "placeLabel": "Village de Sant Joan",
       "searchQuery": "Sant Joan de Labritja Ibiza village",
       "slotIntent": "Village de Sant Joan",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/destination/scene-9.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Parish_Church_Sant_Joan_de_Labritja_31_May_2012.JPG",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Parish_Church_Sant_Joan_de_Labritja_31_May_2012.JPG",
+      "candidateContext": "Sant Joan de Labritja town historic church (not Cala Xarraca)",
+      "credit": "Geolocated Wikimedia source: https://commons.wikimedia.org/wiki/File:Parish_Church_Sant_Joan_de_Labritja_31_May_2012.JPG",
+      "license": "Creative Commons licence: check file and attribution",
+      "sha256": "fedc9ddd7487d945e957c4842a2119df8173b4953dc87fe6ae309af29dec066f",
+      "dhash": "0111111100011111010011110110101110100001100101101001001010100011",
+      "bytes": 148526,
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     }
   ],
   "publicationBlockedReason": "Need 21 unique genuine images (12 hotels + 9 Ibiza locales), each visually verified, source and commercial rights established, batch Preview not yet deployed."

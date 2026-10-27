@@ -1,30 +1,12 @@
 {
   "hotels": 9,
-  "scenes": 7,
+  "scenes": 9,
   "missing": [
     "the-standard-ibiza/view-1",
     "the-standard-ibiza/view-2",
-    "the-standard-ibiza/view-3",
-    "destination/scene-8",
-    "destination/scene-9"
+    "the-standard-ibiza/view-3"
   ],
   "diagnostics": [
-    {
-      "url": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
-      "error": "403 Client Error: Forbidden for url: https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/"
-    },
-    {
-      "url": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/",
-      "error": "403 Client Error: Forbidden for url: https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/"
-    },
-    {
-      "url": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/accommodation/",
-      "error": "403 Client Error: Forbidden for url: https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/accommodation/"
-    },
-    {
-      "url": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/dining/",
-      "error": "403 Client Error: Forbidden for url: https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/dining/"
-    },
     {
       "url": "https://www.standardhotels.com/ibiza/properties/ibiza",
       "error": "403 Client Error: Forbidden for url: https://www.standardhotels.com/ibiza/properties/ibiza"
@@ -56,14 +38,6 @@
     {
       "url": "https://duvx7h32ggrur.cloudfront.net/attachments/874efd8f5723101de7026fc9748c6db9e3fb5cda/store/optimize_v1/1600/85/jpeg/50516d61bc24e186638733ec5a7e92dfa15110b93d59cec808bb7b533ec",
       "error": "403 Client Error: Forbidden for url: https://duvx7h32ggrur.cloudfront.net/attachments/874efd8f5723101de7026fc9748c6db9e3fb5cda/store/optimize_v1/1600/85/jpeg/50"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ibiza_Ses_Salines_asv2023-04_img1.jpg",
-      "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/1/17/Ibiza_Ses_Salines_asv2023-04_img1.jpg"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Parish_Church_Sant_Joan_de_Labritja_31_May_2012.JPG",
-      "error": "429 Client Error: Too many requests (f061ab2) for url: https://upload.wikimedia.org/wikipedia/commons/1/13/Parish_Church_Sant_Joan_de_Labritja_31_May_2012.JPG"
     }
   ]
 }
