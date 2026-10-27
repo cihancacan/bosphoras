@@ -8,3 +8,6 @@ for(const x of media.destinationScenes as Candidate[])if(approvedLaucalaIslandPh
 const g=laucalaIslandDraftGuide;
 export const laucalaIslandGuide:FeaturedCityGuideData={...g,areas:g.areas.map(x=>({...x})),experiences:g.experiences.map(x=>({...x})),hotels:g.hotels.map(x=>({...x})),checksFr:[...g.checksFr],checksEn:[...g.checksEn],photos};
 // All photography is representative LAUCALA resort imagery only; not a confirmed exact historic villa.
+
+// Laucala owner-preview QA: 21 unique original-site files, representative visual captions,
+// 24-villa current portfolio, October 2027 reopening and 88 unchanged destination slugs.
