@@ -1,0 +1,55 @@
+name: Travel Ibiza - source original photo candidates (GitHub only)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - scripts/collect-ibiza-media.py
+      - .github/workflows/travel-ibiza-media.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: travel-ibiza-photos
+  cancel-in-progress: false
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -m py_compile scripts/collect-ibiza-media.py
+      - name: Download and credit original candidates, no visual auto-approval
+        run: python -u scripts/collect-ibiza-media.py
+      - name: Verify nobody approved unreviewed images
+        run: |
+          python - <<'PY'
+          import json
+          d=json.load(open('data/travel/ibizaMediaCandidates.json'))
+          assert len(d['hotels'])==12 and len(d['destinationScenes'])==9
+          assert not d['visuallyVerified'] and not d['approvedForCommercialPublication']
+          assert all(not x['visuallyVerified'] and not x['commercialRightsCleared'] for x in d['hotels']+d['destinationScenes'])
+          PY
+      - name: Persist image candidates to GitHub only (no Vercel build)
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- public/images/travel/ibiza-premium data/travel/ibizaMediaCandidates.json docs/travel-ibiza-download-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): Ibiza genuine candidate originals for independent QA [skip ci]'
+            for attempt in 1 2 3 4 5; do
+              git fetch origin feature/luxury-travel-seo-destinations-20261012
+              git rebase origin/feature/luxury-travel-seo-destinations-20261012
+              if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then
+                echo "Ibiza image candidates safely committed"
+                exit 0
+              fi
+              echo "Concurrent update, retry ${attempt}/5"
+              sleep 2
+            done
+            echo "Could not save Ibiza originals" >&2
+            exit 1
+          fi

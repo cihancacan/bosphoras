@@ -1,0 +1,26 @@
+name: Travel Ibiza - bilingual editorial and TypeScript QA (GitHub only)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - 'data/travel/ibiza*'
+      - 'data/travel/featuredCityGuides.ts'
+      - 'components/travel/TravelPages.tsx'
+      - 'components/travel/FeaturedCityGuide.tsx'
+      - 'scripts/check-ibiza-draft.mjs'
+      - '.github/workflows/travel-ibiza-qa.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '20',cache: npm}
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm run typecheck
+      - run: node scripts/check-ibiza-draft.mjs
+      - run: node scripts/check-travel-catalogue.mjs
