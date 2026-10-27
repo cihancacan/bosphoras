@@ -40,3 +40,5 @@ jobs:
             done
             exit 1
           fi
+
+# Trigger importer after successful local validation: 21 distinct official Aman WebP photographs.
