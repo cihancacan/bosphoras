@@ -1,0 +1,247 @@
+{
+  "destination": "port-andratx",
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "hotels": [
+    {
+      "key": "view-1",
+      "propertyKey": "monport",
+      "property": "Mon Port Hotel & Spa",
+      "sourcePage": "https://www.hotelmonport.com/en",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting source photo collection and manual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "monport",
+      "property": "Mon Port Hotel & Spa",
+      "sourcePage": "https://www.hotelmonport.com/en",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting source photo collection and manual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "monport",
+      "property": "Mon Port Hotel & Spa",
+      "sourcePage": "https://www.hotelmonport.com/en",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting source photo collection and manual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "pergola",
+      "property": "La Pérgola Aparthotel",
+      "sourcePage": "https://www.hotelpergolamallorca.com/en",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting source photo collection and manual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "pergola",
+      "property": "La Pérgola Aparthotel",
+      "sourcePage": "https://www.hotelpergolamallorca.com/en",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting source photo collection and manual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "pergola",
+      "property": "La Pérgola Aparthotel",
+      "sourcePage": "https://www.hotelpergolamallorca.com/en",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting source photo collection and manual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "zafiro",
+      "property": "Zafiro Palace Andratx",
+      "sourcePage": "https://www.zafirohotels.com/en/zafiro-palace-andratx/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting source photo collection and manual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "zafiro",
+      "property": "Zafiro Palace Andratx",
+      "sourcePage": "https://www.zafirohotels.com/en/zafiro-palace-andratx/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting source photo collection and manual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "zafiro",
+      "property": "Zafiro Palace Andratx",
+      "sourcePage": "https://www.zafirohotels.com/en/zafiro-palace-andratx/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting source photo collection and manual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "campdemar",
+      "property": "THE CAMP DE MAR Hotel & Resort",
+      "sourcePage": "https://www.hotel-campdemar.com/en/home",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting source photo collection and manual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "campdemar",
+      "property": "THE CAMP DE MAR Hotel & Resort",
+      "sourcePage": "https://www.hotel-campdemar.com/en/home",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting source photo collection and manual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "campdemar",
+      "property": "THE CAMP DE MAR Hotel & Resort",
+      "sourcePage": "https://www.hotel-campdemar.com/en/home",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting source photo collection and manual review",
+      "frCaption": "",
+      "enCaption": ""
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "place": "Andratx Mallorca.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting geographic and rights photo review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-2",
+      "place": "Port d'Andratx (Mallorca, Spain), Harbour -- 2009 -- 1540.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting geographic and rights photo review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-3",
+      "place": "Embarcaciones Puerto-Andratx-Mallorca-rafax.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting geographic and rights photo review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-4",
+      "place": "Cala d'Egos ,Puerto de Andratx.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting geographic and rights photo review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-5",
+      "place": "Andratx, Balearic Islands, Spain - panoramio - georama (6).jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting geographic and rights photo review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-6",
+      "place": "Camp de Mar Mallorca 2013.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting geographic and rights photo review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-7",
+      "place": "Mallorca - Dragonera.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting geographic and rights photo review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-8",
+      "place": "Sant Elm Pantaleu.JPG",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting geographic and rights photo review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-9",
+      "place": "Cala Egos 09.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Awaiting geographic and rights photo review",
+      "frCaption": "",
+      "enCaption": ""
+    }
+  ],
+  "publicationBlockedReason": "21 genuine photograph files pending source validation; never index or deploy until photo and QA succeed",
+  "photoRightsBasis": "Operator confirms project-wide permission; individual photographer agreements not independently inspected; Commons licences must be retained."
+}
