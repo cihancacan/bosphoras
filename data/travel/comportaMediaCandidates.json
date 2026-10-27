@@ -1,0 +1,247 @@
+{
+  "destination": "comporta",
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "hotels": [
+    {
+      "key": "view-1",
+      "propertyKey": "sublime",
+      "property": "Sublime Comporta",
+      "sourcePage": "https://www.sublimehotels.pt/en/stay/sublime-comporta/the-resort/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Image not collected or manually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "sublime",
+      "property": "Sublime Comporta",
+      "sourcePage": "https://www.sublimehotels.pt/en/stay/sublime-comporta/the-resort/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Image not collected or manually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "sublime",
+      "property": "Sublime Comporta",
+      "sourcePage": "https://www.sublimehotels.pt/en/stay/sublime-comporta/the-resort/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Image not collected or manually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "quinta",
+      "property": "Quinta da Comporta – Wellness Boutique Resort",
+      "sourcePage": "https://www.quintadacomporta.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Image not collected or manually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "quinta",
+      "property": "Quinta da Comporta – Wellness Boutique Resort",
+      "sourcePage": "https://www.quintadacomporta.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Image not collected or manually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "quinta",
+      "property": "Quinta da Comporta – Wellness Boutique Resort",
+      "sourcePage": "https://www.quintadacomporta.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Image not collected or manually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "spatia",
+      "property": "Spatia Comporta",
+      "sourcePage": "https://www.spatiacomporta.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Image not collected or manually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "spatia",
+      "property": "Spatia Comporta",
+      "sourcePage": "https://www.spatiacomporta.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Image not collected or manually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "spatia",
+      "property": "Spatia Comporta",
+      "sourcePage": "https://www.spatiacomporta.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Image not collected or manually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "almalusa",
+      "property": "AlmaLusa Comporta",
+      "sourcePage": "https://www.almalusahotels.com/comporta/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Image not collected or manually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "almalusa",
+      "property": "AlmaLusa Comporta",
+      "sourcePage": "https://www.almalusahotels.com/comporta/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Image not collected or manually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "almalusa",
+      "property": "AlmaLusa Comporta",
+      "sourcePage": "https://www.almalusahotels.com/comporta/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Image not collected or manually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "place": "Comporta Beach in May - panoramio.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Original Commons image licence and location pending confirmation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-2",
+      "place": "Praia da Comporta.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Original Commons image licence and location pending confirmation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-3",
+      "place": "Praia do Pego, Comporta.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Original Commons image licence and location pending confirmation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-4",
+      "place": "Litoral entre a Praia do Carvalhal e a Praia dos Brejos - Portugal (48800641158).jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Original Commons image licence and location pending confirmation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-5",
+      "place": "Carrasqueira palafitic pier, Comporta, Portugal (PPL3-Altered) julesvernex2.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Original Commons image licence and location pending confirmation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-6",
+      "place": "Palafitic Pier At Carrasqueira (208223507).jpeg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Original Commons image licence and location pending confirmation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-7",
+      "place": "Tróia beach.JPG",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Original Commons image licence and location pending confirmation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-8",
+      "place": "Foz do rio Sado.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Original Commons image licence and location pending confirmation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-9",
+      "place": "Comporta2.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Original Commons image licence and location pending confirmation",
+      "frCaption": "",
+      "enCaption": ""
+    }
+  ],
+  "publicationBlockedReason": "Comporta original images and private Preview remain to be validated. Strict noindex.",
+  "photoRightsBasis": "Owner states project-wide photo permission; official photographer licences unverified; retain Wikimedia Commons licence at asset level."
+}
