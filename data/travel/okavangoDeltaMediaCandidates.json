@@ -1,0 +1,592 @@
+{
+  "destination": "okavango-delta",
+  "hotels": [
+    {
+      "key": "view-1",
+      "sourcePage": "https://www.wildernessdestinations.com/africa/botswana/okavango-delta/mombo-camp",
+      "downloadUrl": "https://www.wildernessdestinations.com/media/fyylufgu/walk-into-the-ultimate-luxury-camp-wilderness-mombo.webp?rmode=crop",
+      "credit": "Wilderness Mombo · hospitality publisher photo; individual creator permission unverified",
+      "license": "Source-distributed for private owner review; reproduction licence NOT demonstrated",
+      "licenseUrl": "https://www.wildernessdestinations.com/africa/botswana/okavango-delta/mombo-camp",
+      "rightsEvidenceType": "third_party_hospitality_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Mombo · camp et arrivée au crépuscule",
+      "enCaption": "Wilderness Mombo · lodge at dusk",
+      "localPath": "/images/travel/okavango-delta-premium/mombo/view-1.webp",
+      "sha256": "4847a5a7b0835b7dbe16e69633e2e40e7213ec2ddf50ef61322b86c4c728869c",
+      "bytes": 399820,
+      "originalSize": [
+        3840,
+        2560
+      ],
+      "outputSize": [
+        1650,
+        1100
+      ],
+      "propertyKey": "mombo",
+      "property": "Wilderness Mombo"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://www.wildernessdestinations.com/journal/your-guide-to-africa/a-safari-for-the-senses-through-immersive-architecture",
+      "downloadUrl": "https://www.wildernessdestinations.com/media/altowvrl/mombo-accommodation-camp-aerial-view.jpg?rmode=crop",
+      "credit": "Wilderness Mombo · hospitality publisher photo; individual creator permission unverified",
+      "license": "Source-distributed for private owner review; reproduction licence NOT demonstrated",
+      "licenseUrl": "https://www.wildernessdestinations.com/journal/your-guide-to-africa/a-safari-for-the-senses-through-immersive-architecture",
+      "rightsEvidenceType": "third_party_hospitality_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Mombo · architecture des suites depuis les airs",
+      "enCaption": "Wilderness Mombo · aerial architecture",
+      "localPath": "/images/travel/okavango-delta-premium/mombo/view-2.webp",
+      "sha256": "3309a32d1605bb49bc95eea927cc841990d5def1710e48b80946dd05f44cd711",
+      "bytes": 296226,
+      "originalSize": [
+        1136,
+        757
+      ],
+      "outputSize": [
+        1136,
+        757
+      ],
+      "propertyKey": "mombo",
+      "property": "Wilderness Mombo"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://www.wildernessdestinations.com/journal/our-collective/spotlight-on-mombo-the-mother-of-all-camps",
+      "downloadUrl": "https://www.wildernessdestinations.com/media/il0dzvix/private-plunge-pool-at-mombo.jpg?rmode=crop",
+      "credit": "Wilderness Mombo · hospitality publisher photo; individual creator permission unverified",
+      "license": "Source-distributed for private owner review; reproduction licence NOT demonstrated",
+      "licenseUrl": "https://www.wildernessdestinations.com/journal/our-collective/spotlight-on-mombo-the-mother-of-all-camps",
+      "rightsEvidenceType": "third_party_hospitality_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Mombo · terrasse et bassin privé face à la savane",
+      "enCaption": "Wilderness Mombo · private plunge pool and deck",
+      "localPath": "/images/travel/okavango-delta-premium/mombo/view-3.webp",
+      "sha256": "b7a4754b32066bb264ff5acf757b107dfd296f44d1a4d6203a1a2a62e28d2197",
+      "bytes": 306414,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1650,
+        1100
+      ],
+      "propertyKey": "mombo",
+      "property": "Wilderness Mombo"
+    },
+    {
+      "key": "view-1",
+      "sourcePage": "https://www.luxurysafaricamps.com/camps/jao-camp",
+      "downloadUrl": "https://images.luxurysafaricamps.com/assets/81891455983dd35b1b46ef14ecc26ffc/Jao-Camp-LuxurySafariCamps-4.jpg",
+      "credit": "Jao Camp — Jao Reserve · hospitality publisher photo; individual creator permission unverified",
+      "license": "Source-distributed for private owner review; reproduction licence NOT demonstrated",
+      "licenseUrl": "https://www.luxurysafaricamps.com/camps/jao-camp",
+      "rightsEvidenceType": "third_party_hospitality_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Jao Camp · véritable suite aux volumes sculpturaux",
+      "enCaption": "Jao Camp · architecturally sculpted suite",
+      "localPath": "/images/travel/okavango-delta-premium/jao/view-1.webp",
+      "sha256": "35ee86e52e2a21ddfae04a2c74f0c9397e744b4a952ae3ed0cd1602a8e12878d",
+      "bytes": 267786,
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ],
+      "propertyKey": "jao",
+      "property": "Jao Camp — Jao Reserve"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://www.refinedroutes.travel/lodges/wilderness-jao",
+      "downloadUrl": "https://cdn.prod.website-files.com/6878d4c2568cd8bdd108bf2c/68cbfc91873c3bfba5071614_Jao%2006-19%20-102e.jpg",
+      "credit": "Jao Camp — Jao Reserve · hospitality publisher photo; individual creator permission unverified",
+      "license": "Source-distributed for private owner review; reproduction licence NOT demonstrated",
+      "licenseUrl": "https://www.refinedroutes.travel/lodges/wilderness-jao",
+      "rightsEvidenceType": "third_party_hospitality_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Jao Camp · chambre et terrasse de suite",
+      "enCaption": "Jao Camp · suite bedroom and deck",
+      "localPath": "/images/travel/okavango-delta-premium/jao/view-2.webp",
+      "sha256": "57a2ff6acc9e5f3772effd1167e78cf58a9cbc874b4fff260fb5942fed7b93ad",
+      "bytes": 296512,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1650,
+        1100
+      ],
+      "propertyKey": "jao",
+      "property": "Jao Camp — Jao Reserve"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://www.secretsviptravel.com/wilderness-jao-camp/",
+      "downloadUrl": "https://b-cdn.springnest.com/media/img/xc/jao_06-19_-6e56a5ed3.jpg?width=1600",
+      "credit": "Jao Camp — Jao Reserve · hospitality publisher photo; individual creator permission unverified",
+      "license": "Source-distributed for private owner review; reproduction licence NOT demonstrated",
+      "licenseUrl": "https://www.secretsviptravel.com/wilderness-jao-camp/",
+      "rightsEvidenceType": "third_party_hospitality_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Jao Camp · salon et feu central",
+      "enCaption": "Jao Camp · lounge and sculptural fireplace",
+      "localPath": "/images/travel/okavango-delta-premium/jao/view-3.webp",
+      "sha256": "b38fa9a77f2e78609c277192390a2cca2b219eee4a60bfc099707852bb4e481e",
+      "bytes": 353246,
+      "originalSize": [
+        1600,
+        1067
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "propertyKey": "jao",
+      "property": "Jao Camp — Jao Reserve"
+    },
+    {
+      "key": "view-1",
+      "sourcePage": "https://yourperfectafrica.com/game-lodges/andbeyond-sandibe-okavango-safari-lodge/",
+      "downloadUrl": "https://yourperfectafrica.com/content/uploads/2021/05/sandibe-okavango-safari-lodge-101.jpg",
+      "credit": "&Beyond Sandibe Okavango Safari Lodge · hospitality publisher photo; individual creator permission unverified",
+      "license": "Source-distributed for private owner review; reproduction licence NOT demonstrated",
+      "licenseUrl": "https://yourperfectafrica.com/game-lodges/andbeyond-sandibe-okavango-safari-lodge/",
+      "rightsEvidenceType": "third_party_hospitality_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Sandibe · véritable suite ouvrant sur la forêt",
+      "enCaption": "Sandibe · suite opening to the woodland",
+      "localPath": "/images/travel/okavango-delta-premium/sandibe/view-1.webp",
+      "sha256": "3762662d6704de5bffa89de7646e90dd9d8cb42d6c7717f5655929adc6c44a4d",
+      "bytes": 146432,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1650,
+        928
+      ],
+      "propertyKey": "sandibe",
+      "property": "&Beyond Sandibe Okavango Safari Lodge"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://divisare.com/projects/330081-michaelis-boyd-associates-sandibe-safari-lodge",
+      "downloadUrl": "https://images.divisare.com/images/c_limit%2Cf_auto%2Ch_2000%2Cq_auto%2Cw_3000/v1478686238/qp5x2m4ewgstwekxvqfk/michaelis-boyd-associates-sandibe-safari-lodge.png",
+      "credit": "&Beyond Sandibe Okavango Safari Lodge · hospitality publisher photo; individual creator permission unverified",
+      "license": "Source-distributed for private owner review; reproduction licence NOT demonstrated",
+      "licenseUrl": "https://divisare.com/projects/330081-michaelis-boyd-associates-sandibe-safari-lodge",
+      "rightsEvidenceType": "third_party_hospitality_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Sandibe · architecture extérieure inspirée du pangolin",
+      "enCaption": "Sandibe · pangolin-inspired timber architecture",
+      "localPath": "/images/travel/okavango-delta-premium/sandibe/view-2.webp",
+      "sha256": "e8e9f709982bf022963731545019697792b105338a4a1eaf84cbb5e898cfce62",
+      "bytes": 195264,
+      "originalSize": [
+        1870,
+        1246
+      ],
+      "outputSize": [
+        1650,
+        1099
+      ],
+      "propertyKey": "sandibe",
+      "property": "&Beyond Sandibe Okavango Safari Lodge"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://www.safari.com/lodges/sandibe-okavango-safari-lodge",
+      "downloadUrl": "https://cdn.prod.website-files.com/636e23f049cf12406b2feccd/67577ab32cbff4dd852d7ffe_63b63c4c69175226f74b352a_sandibe121.webp",
+      "credit": "&Beyond Sandibe Okavango Safari Lodge · hospitality publisher photo; individual creator permission unverified",
+      "license": "Source-distributed for private owner review; reproduction licence NOT demonstrated",
+      "licenseUrl": "https://www.safari.com/lodges/sandibe-okavango-safari-lodge",
+      "rightsEvidenceType": "third_party_hospitality_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Sandibe · chambre contemporaine",
+      "enCaption": "Sandibe · contemporary guest bedroom",
+      "localPath": "/images/travel/okavango-delta-premium/sandibe/view-3.webp",
+      "sha256": "9ff4baeeb5ec60de448b1fce730b291dab1e616a7e3383eb39a90f038349494f",
+      "bytes": 116236,
+      "originalSize": [
+        1600,
+        900
+      ],
+      "outputSize": [
+        1600,
+        900
+      ],
+      "propertyKey": "sandibe",
+      "property": "&Beyond Sandibe Okavango Safari Lodge"
+    },
+    {
+      "key": "view-1",
+      "sourcePage": "https://okavangodelta.com/camps/eagle-island-lodge/",
+      "downloadUrl": "https://silverless-media-okavangode.s3.eu-west-2.amazonaws.com/wp-content/uploads/2019/10/20142624/Belmond-Eagle-Island-Lodge_Bedroom-view-scaled.jpg",
+      "credit": "Belmond Eagle Island Lodge · hospitality publisher photo; individual creator permission unverified",
+      "license": "Source-distributed for private owner review; reproduction licence NOT demonstrated",
+      "licenseUrl": "https://okavangodelta.com/camps/eagle-island-lodge/",
+      "rightsEvidenceType": "third_party_hospitality_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Eagle Island · chambre sur la plaine inondable",
+      "enCaption": "Eagle Island · bedroom opening over floodplains",
+      "localPath": "/images/travel/okavango-delta-premium/eagle/view-1.webp",
+      "sha256": "9d194ca5e0ecc48254d0142e7cab02de53ecaf4ffcd6e938b946ace863579c97",
+      "bytes": 145650,
+      "originalSize": [
+        2560,
+        1708
+      ],
+      "outputSize": [
+        1650,
+        1101
+      ],
+      "propertyKey": "eagle",
+      "property": "Belmond Eagle Island Lodge"
+    },
+    {
+      "key": "view-2",
+      "sourcePage": "https://www.yatzer.com/belmond-eagle-island-lodge-botswana",
+      "downloadUrl": "https://media.yatzer.com/p6_belmond_eagle_island_lodge_the_gallery_hba_yatzer.jpg",
+      "credit": "Belmond Eagle Island Lodge · hospitality publisher photo; individual creator permission unverified",
+      "license": "Source-distributed for private owner review; reproduction licence NOT demonstrated",
+      "licenseUrl": "https://www.yatzer.com/belmond-eagle-island-lodge-botswana",
+      "rightsEvidenceType": "third_party_hospitality_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Eagle Island · terrasse et dîner face au delta",
+      "enCaption": "Eagle Island · shaded waterside dining deck",
+      "localPath": "/images/travel/okavango-delta-premium/eagle/view-2.webp",
+      "sha256": "d7c1b31d287674c2c97eb417471b6e6fffe35c4e4b546a1471f139b288c60e37",
+      "bytes": 290962,
+      "originalSize": [
+        2560,
+        1708
+      ],
+      "outputSize": [
+        1650,
+        1101
+      ],
+      "propertyKey": "eagle",
+      "property": "Belmond Eagle Island Lodge"
+    },
+    {
+      "key": "view-3",
+      "sourcePage": "https://www.novareisen.de/luxusreisen/reiseziele/afrika/botswana/okavango-delta-belmond-eagle-island-lodge",
+      "downloadUrl": "https://www.novareisen.de/upload/mediapool/Destinationen/Belmond_Eagle_Island_Lodge_Botswana/afrika-botswana-okavango-delta-eagle-island-camp-private-suite-pool-2.jpg",
+      "credit": "Belmond Eagle Island Lodge · hospitality publisher photo; individual creator permission unverified",
+      "license": "Source-distributed for private owner review; reproduction licence NOT demonstrated",
+      "licenseUrl": "https://www.novareisen.de/luxusreisen/reiseziele/afrika/botswana/okavango-delta-belmond-eagle-island-lodge",
+      "rightsEvidenceType": "third_party_hospitality_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Eagle Island · bassin privé sur le marais",
+      "enCaption": "Eagle Island · secluded suite plunge pool",
+      "localPath": "/images/travel/okavango-delta-premium/eagle/view-3.webp",
+      "sha256": "b68d32481c117f3caf1fa60e8e71cec1b89ca7c7ad7ac2df941f3f867d006a99",
+      "bytes": 206170,
+      "originalSize": [
+        1500,
+        768
+      ],
+      "outputSize": [
+        1500,
+        768
+      ],
+      "propertyKey": "eagle",
+      "property": "Belmond Eagle Island Lodge"
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_delta_del_Okavango,_Botsuana,_2018-08-01,_DD_23.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Vista_a%C3%A9rea_del_delta_del_Okavango%2C_Botsuana%2C_2018-08-01%2C_DD_23.jpg/1920px-Vista_a%C3%A9rea_del_delta_del_Okavango%2C_Botsuana%2C_2018-08-01%2C_DD_23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_commons_licence_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Chenaux et mokoros du delta vus du ciel",
+      "enCaption": "Aerial channels and mokoros",
+      "localPath": "/images/travel/okavango-delta-premium/destination/scene-1.webp",
+      "sha256": "c877fa8ae4e368710ec15c65b58a47e6381430388fd9cabce2da61c0b814630c",
+      "bytes": 383340,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1650,
+        1100
+      ],
+      "place": "Okavango Delta, Botswana"
+    },
+    {
+      "key": "scene-2",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Okavango_Delta.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Okavango_Delta.jpg/1920px-Okavango_Delta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "DoctorJoeE",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_commons_licence_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "L'immensité des zones humides vues du ciel",
+      "enCaption": "Aerial view of the great wetlands",
+      "localPath": "/images/travel/okavango-delta-premium/destination/scene-2.webp",
+      "sha256": "7c7c7159d6bc933ce6cc5bd4360e93ca1f7d3f48e7129d1bfd07557d7224319d",
+      "bytes": 261148,
+      "originalSize": [
+        1920,
+        1275
+      ],
+      "outputSize": [
+        1650,
+        1096
+      ],
+      "place": "Okavango Delta, Botswana"
+    },
+    {
+      "key": "scene-3",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mokoro_In_the_Kavango_Delta_Botswana.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Mokoro_In_the_Kavango_Delta_Botswana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Ilka Nghinamupika",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_commons_licence_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Navigation traditionnelle en mokoro",
+      "enCaption": "Traditional mokoro excursion",
+      "localPath": "/images/travel/okavango-delta-premium/destination/scene-3.webp",
+      "sha256": "3a913ce55fe79541a9b7cf235bf3d4ae95ed7fbdce23ccb0660808ba3752c97c",
+      "bytes": 268224,
+      "originalSize": [
+        1024,
+        768
+      ],
+      "outputSize": [
+        1024,
+        768
+      ],
+      "place": "Okavango Delta, Botswana"
+    },
+    {
+      "key": "scene-4",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Okavangodelta_Xakanaxa.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Okavangodelta_Xakanaxa.jpg/1920px-Okavangodelta_Xakanaxa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Hp.Baumeler",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_commons_licence_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Les paysages naturels de Xakanaxa",
+      "enCaption": "Xakanaxa wetland landscape",
+      "localPath": "/images/travel/okavango-delta-premium/destination/scene-4.webp",
+      "sha256": "1c54e7ed998a69f440ad0a153ba46c82fdddd126c5952fc1a7179082f0af006d",
+      "bytes": 398004,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1533,
+        1150
+      ],
+      "place": "Okavango Delta, Botswana"
+    },
+    {
+      "key": "scene-5",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dusk_over_Okavango.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Dusk_over_Okavango.jpg/1920px-Dusk_over_Okavango.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Rob Oo",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "rightsEvidenceType": "wikimedia_commons_licence_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Lumières du soir sur le delta",
+      "enCaption": "Dusk in the Okavango Delta",
+      "localPath": "/images/travel/okavango-delta-premium/destination/scene-5.webp",
+      "sha256": "d52a0173ca2d3b9b1e34374297ceb0c13afb710cc9b53f335a2f00347ea02cff",
+      "bytes": 235420,
+      "originalSize": [
+        1920,
+        1279
+      ],
+      "outputSize": [
+        1650,
+        1099
+      ],
+      "place": "Okavango Delta, Botswana"
+    },
+    {
+      "key": "scene-6",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Leopard-tree-okavango-delta-april-2025.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Leopard-tree-okavango-delta-april-2025.jpg/1920px-Leopard-tree-okavango-delta-april-2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Richardk85",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "rightsEvidenceType": "wikimedia_commons_licence_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Léopard observé dans la région du delta",
+      "enCaption": "Leopard in Okavango Delta habitat",
+      "localPath": "/images/travel/okavango-delta-premium/destination/scene-6.webp",
+      "sha256": "d333f3e805524874eda6bcae0030273fa7fc454ed0f067d9a2f325928ebf908e",
+      "bytes": 365268,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1650,
+        1100
+      ],
+      "place": "Okavango Delta, Botswana"
+    },
+    {
+      "key": "scene-7",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Okavango-delta-sunrise-april-2025.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Okavango-delta-sunrise-april-2025.jpg/1920px-Okavango-delta-sunrise-april-2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Richardk85",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "rightsEvidenceType": "wikimedia_commons_licence_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Lever du soleil dans le delta",
+      "enCaption": "Sunrise over the Delta",
+      "localPath": "/images/travel/okavango-delta-premium/destination/scene-7.webp",
+      "sha256": "8d127a391c9a13493dcff3b2da90cff3cd94e4d91e923dd3effc10440acff789",
+      "bytes": 139594,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1650,
+        1100
+      ],
+      "place": "Okavango Delta, Botswana"
+    },
+    {
+      "key": "scene-8",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_del_delta_del_Okavango,_Botsuana,_2018-08-01,_DD_32.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Vista_a%C3%A9rea_del_delta_del_Okavango%2C_Botsuana%2C_2018-08-01%2C_DD_32.jpg/1920px-Vista_a%C3%A9rea_del_delta_del_Okavango%2C_Botsuana%2C_2018-08-01%2C_DD_32.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Diego Delso",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_commons_licence_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "La mosaïque de lagunes vue du ciel",
+      "enCaption": "Delta lagoons seen from above",
+      "localPath": "/images/travel/okavango-delta-premium/destination/scene-8.webp",
+      "sha256": "9f3db8d1d760df3fe0cdd059824db456576e9a5bcf6e12380a378891fd584a4c",
+      "bytes": 236418,
+      "originalSize": [
+        1920,
+        1067
+      ],
+      "outputSize": [
+        1650,
+        917
+      ],
+      "place": "Okavango Delta, Botswana"
+    },
+    {
+      "key": "scene-9",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sun_setting_after_landing_from_a_boat_cruise_in_the_Okavango_Delta.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Sun_setting_after_landing_from_a_boat_cruise_in_the_Okavango_Delta.jpg/1920px-Sun_setting_after_landing_from_a_boat_cruise_in_the_Okavango_Delta.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Eric Kilby",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_commons_licence_verified",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Await human contact-sheet visual verification",
+      "frCaption": "Après une sortie en bateau sur les eaux du delta",
+      "enCaption": "Sunset after a Delta boat excursion",
+      "localPath": "/images/travel/okavango-delta-premium/destination/scene-9.webp",
+      "sha256": "32e8b79db4a4dd72be020daa164fa9eeec20fde7ae6cf8a48164fbdc0777711a",
+      "bytes": 163672,
+      "originalSize": [
+        1920,
+        1285
+      ],
+      "outputSize": [
+        1650,
+        1104
+      ],
+      "place": "Okavango Delta, Botswana"
+    }
+  ],
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "publicationBlockedReason": "Operator/distributor photography may not be commercially reproduced without creator permission; contact-sheet review still required.",
+  "sourceReview": "Nine Wikimedia Commons photos require attribution and carry their licence; 12 actual lodge images are third-party hosted and NOT rights-cleared."
+}
