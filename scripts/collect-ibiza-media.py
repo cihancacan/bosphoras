@@ -76,18 +76,7 @@ EXACT_HOTEL={
  ("https://media.cntraveller.com/photos/626bcb35b25d31f55e79d7ab/16%3A9/w_2560%2Cc_limit/jara-the%2520standard%2520ibiza-apr22-pr2.jpg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Jara restaurant at The Standard Ibiza, photographed for hotel review"),
  ("https://media.cntraveller.com/photos/626bcb35b25d31f55e79d7ab/16:9/w_2560,c_limit/jara-the%20standard%20ibiza-apr22-pr2.jpg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Actual Jara restaurant interior, The Standard Ibiza"),
  ("https://media.cntraveller.com/photos/626bcb35b25d31f55e79d7ab/master/w_1600,c_limit/jara-the%20standard%20ibiza-apr22-pr2.jpg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Jara restaurant, actual The Standard Ibiza")],
- "the-standard-ibiza/view-1":[
-  ("https://duvx7h32ggrur.cloudfront.net/attachments/47aba2f118b88a9763eca8afcc54d533a924092b/store/optimize_v1/1600/85/jpeg/7082549f233a26443d1930495de8998d4cea865361708c53ca5f04ff4ff2/the-standard-ibiza-hotel-my-ibiza-13-1-.jpg",
-   "https://www.standardhotels.com/ibiza/properties/ibiza",
-   "Official The Standard Ibiza rooftop/venue photograph, Eivissa Old Town property rather than the beach")],
- "the-standard-ibiza/view-2":[
-  ("https://duvx7h32ggrur.cloudfront.net/attachments/d3e4291a7b006283f44866547a8982dd9596f33c/store/optimize_v1/1600/85/jpeg/953984affafd6475d1a655ea807c34621c0f9f4f068518397c6a4a97896b/220426_majao_rooms_webres-64.jpg",
-   "https://www.standardhotels.com/ibiza/properties/ibiza",
-   "Official The Standard Ibiza Standard King room with bed, accurately named accommodation type")],
- "the-standard-ibiza/view-3":[
-  ("https://duvx7h32ggrur.cloudfront.net/attachments/874efd8f5723101de7026fc9748c6db9e3fb5cda/store/optimize_v1/1600/85/jpeg/50516d61bc24e186638733ec5a7e92dfa15110b93d59cec808bb7b533ec0/jara-restaurant-interior-the-standard-ibiza-old-town.jpg",
-   "https://www.standardhotels.com/ibiza/properties/ibiza",
-   "Authentic Jara restaurant interior at The Standard Ibiza, not a room or private beach")]
+
 }
 # Exact verified place identity; Commons originals built from canonical filename,
 # attribution/licence remain to be read from individual Commons source before QA.
