@@ -12,7 +12,7 @@ assert.equal(g.areas.length,5);assert.equal(g.experiences.length,5);
 assert(g.editorialFr.length>1500&&g.editorialEn.length>1500,'thin editorial');
 for(const h of g.hotels)assert(h.fr.length>460&&h.en.length>460&&h.frWatch.length>55&&h.enWatch.length>55&&h.officialUrl.startsWith('https://'),h.name);
 for(const lang of ['fr','en']){assert.equal(f[lang].length,7);assert(f[lang].every(x=>x.q.length>26&&x.a.length>130));}
-assert(g.hotels.find(x=>x.name==='Topping Rose House').enWatch.includes('inland'),'Bridgehampton location caution missing');
+assert(g.hotels.find(x=>x.name==='Topping Rose House').enWatch.toLowerCase().includes('inland'),'Bridgehampton location caution missing');
 assert(g.hotels.find(x=>x.name==='Gurney’s Montauk Resort & Seawater Spa').enWatch.includes('18+'),'Gurney BathHouse age restriction missing');
 assert(g.hotels.find(x=>x.name==='Marram Montauk').enWatch.includes('96'),'Marram rooms distinction missing');
 assert.equal(m.hotels.length,12);assert.equal(m.destinationScenes.length,9);
