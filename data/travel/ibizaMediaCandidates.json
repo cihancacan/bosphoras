@@ -1,6 +1,6 @@
 {
   "destination": "ibiza",
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
@@ -12,9 +12,9 @@
       "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
       "slotIntent": "recognisable property exterior or coast setting",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/six-senses-ibiza/view-1.webp",
       "downloadUrl": "https://media.sixsenses.com/B60H3R33/at/3mr4fqhv5t73vwbk3mtf53/Swimming_Pool_aerial.jpg?fit=crop&height=1100&width=1750",
       "candidateContext": "Official Six Senses Ibiza gallery, aerial view of the resort pool and cliffside Cala Xarraca setting",
@@ -30,7 +30,15 @@
       "outputSize": [
         1750,
         1100
-      ]
+      ],
+      "frCaption": "Vue aérienne de Six Senses Ibiza, piscine extérieure au bord des falaises de Cala Xarraca.",
+      "enCaption": "Aerial view of Six Senses Ibiza's main pool overlooking Cala Xarraca's rocky coast.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/"
     },
     {
       "key": "view-2",
@@ -39,9 +47,9 @@
       "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
       "slotIntent": "real guestroom or suite interior",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/six-senses-ibiza/view-2.webp",
       "downloadUrl": "https://media.sixsenses.com/B60H3R33/at/4n5vtj254bw57skgsxwt46m/6_Five_Bedroom_Mansion_master_bedroom_sunset_view.jpg?fit=crop&height=1100&width=1750",
       "candidateContext": "Actual bedroom in Five Bedroom Mansion at Six Senses Ibiza, dusk sea-view; do not call it a standard guestroom",
@@ -57,7 +65,15 @@
       "outputSize": [
         1750,
         1100
-      ]
+      ],
+      "frCaption": "Suite avec terrasse ouverte sur la mer au Six Senses Ibiza, lumière douce du coucher de soleil.",
+      "enCaption": "Sunset suite and terrace at Six Senses Ibiza, overlooking the open sea.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/"
     },
     {
       "key": "view-3",
@@ -66,9 +82,9 @@
       "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
       "slotIntent": "authentic hotel pool/dining/terrace",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/six-senses-ibiza/view-3.webp",
       "downloadUrl": "https://media.sixsenses.com/B60H3R33/at/bkq623mr7bmwbwtwb87vx3x/Swimming_Pool_aerial.jpg?fit=crop&height=1100&width=1750",
       "candidateContext": "Different official aerial photo of Six Senses Ibiza swimming pool and sea cliff terraces",
@@ -84,7 +100,15 @@
       "outputSize": [
         1750,
         1100
-      ]
+      ],
+      "frCaption": "Piscine turquoise du Six Senses Ibiza vue du ciel avec un nageur et des transats.",
+      "enCaption": "Overhead view of Six Senses Ibiza's turquoise main pool, swimmer and terrace loungers.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/"
     },
     {
       "key": "view-1",
@@ -93,9 +117,9 @@
       "sourcePage": "https://www.nobuhotelibizabay.com/",
       "slotIntent": "recognisable property exterior or coast setting",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/nobu-ibiza-bay/view-1.webp",
       "downloadUrl": "https://image-tc.galaxy.tf/wijpeg-dnkce3n1h9r6m52hldavcozzm/deluxe-junior-suite-sea-view-terrace-1.jpg",
       "candidateContext": "    ",
@@ -111,7 +135,15 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Terrasse privée avec lit de repos ouverte sur la baie de Talamanca au Nobu Ibiza Bay.",
+      "enCaption": "Private sea-facing daybed terrace at Nobu Hotel Ibiza Bay overlooking Talamanca.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://www.nobuhotelibizabay.com/"
     },
     {
       "key": "view-2",
@@ -120,9 +152,9 @@
       "sourcePage": "https://www.nobuhotelibizabay.com/",
       "slotIntent": "real guestroom or suite interior",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/nobu-ibiza-bay/view-2.webp",
       "downloadUrl": "https://image-tc.galaxy.tf/wijpeg-1o2afh3r7e9h8qe9v6dp8b86/deluxe-junior-suite-sea-view-1920x1280.jpg?width=2000",
       "candidateContext": "    ",
@@ -138,7 +170,15 @@
       "outputSize": [
         1800,
         1200
-      ]
+      ],
+      "frCaption": "Suite du Nobu Hotel Ibiza Bay décorée en blanc et bleu, avec salon et ouverture vers la mer.",
+      "enCaption": "White-and-blue guest suite and seating area at Nobu Hotel Ibiza Bay with sea-facing doors.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://www.nobuhotelibizabay.com/"
     },
     {
       "key": "view-3",
@@ -147,9 +187,9 @@
       "sourcePage": "https://www.nobuhotelibizabay.com/",
       "slotIntent": "authentic hotel pool/dining/terrace",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/nobu-ibiza-bay/view-3.webp",
       "downloadUrl": "https://image-tc.galaxy.tf/wijpeg-7i4q5xau55h8kve0me8nmr7zv/nobu-ibiza-bay-adult-pool.jpg",
       "candidateContext": "    ",
@@ -165,7 +205,15 @@
       "outputSize": [
         1589,
         1200
-      ]
+      ],
+      "frCaption": "Piscine du Nobu Hotel Ibiza Bay bordée de parasols blancs et de transats face à la baie.",
+      "enCaption": "Nobu Hotel Ibiza Bay swimming pool, white parasols and beachfront loungers.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://www.nobuhotelibizabay.com/"
     },
     {
       "key": "view-1",
@@ -174,9 +222,9 @@
       "sourcePage": "https://7pines-ibiza.com/en/resort",
       "slotIntent": "recognisable property exterior or coast setting",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/7pines-resort-ibiza/view-1.webp",
       "downloadUrl": "https://7pines-ibiza.com/media/resort-ibiza-clifftop-luxury-2952.webp",
       "candidateContext": "    ",
@@ -192,7 +240,15 @@
       "outputSize": [
         1800,
         1013
-      ]
+      ],
+      "frCaption": "7Pines Resort Ibiza vu du ciel, ses villas blanches au sommet des falaises de l'ouest.",
+      "enCaption": "Aerial overview of white 7Pines Resort Ibiza villas on the island's western cliffs.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://7pines-ibiza.com/en/resort"
     },
     {
       "key": "view-2",
@@ -201,9 +257,9 @@
       "sourcePage": "https://www.hyatt.com/destination-by-hyatt/en-US/ibzdh-7-pines-resort-ibiza/rooms",
       "slotIntent": "real guestroom or suite interior",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "rejectedSource": "https://7pines-ibiza.com/media/dining-seaview-outdoorseating-3459.webp",
       "rejectedOriginalSha256": "c46020c9cdc64a8739ccaab874c1250af43b7ed39dc0bfd4cf72db0407980bbd",
       "localPath": "/images/travel/ibiza-premium/7pines-resort-ibiza/view-2.webp",
@@ -221,7 +277,15 @@
       "outputSize": [
         1800,
         1013
-      ]
+      ],
+      "frCaption": "Chambre Laguna Suite Sea View du 7Pines Resort Ibiza aux tons turquoise, vue de mer derrière les rideaux.",
+      "enCaption": "Laguna Suite Sea View guestroom at 7Pines Resort Ibiza, with turquoise bedding and distant sea outlook.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://www.hyatt.com/destination-by-hyatt/en-US/ibzdh-7-pines-resort-ibiza/rooms"
     },
     {
       "key": "view-3",
@@ -230,9 +294,9 @@
       "sourcePage": "https://7pines-ibiza.com/en/resort",
       "slotIntent": "authentic hotel pool/dining/terrace",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/7pines-resort-ibiza/view-3.webp",
       "downloadUrl": "https://7pines-ibiza.com/media/waiter-sea-island-umbrella-7394_hd.webp",
       "candidateContext": "A waiter carries a tray on a terrace at 7Pines Resort Ibiza overlooking the Mediterranean Sea and Es Vedrà.    ",
@@ -248,7 +312,15 @@
       "outputSize": [
         1800,
         1013
-      ]
+      ],
+      "frCaption": "Service sur la terrasse du 7Pines Resort Ibiza avec vue sur Es Vedrà et la mer.",
+      "enCaption": "A waiter serving on a 7Pines Resort Ibiza terrace overlooking Es Vedrà and the sea.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://7pines-ibiza.com/en/resort"
     },
     {
       "key": "view-1",
@@ -257,9 +329,9 @@
       "sourcePage": "https://www.cntraveller.com/hotels/the-standard-ibiza-review",
       "slotIntent": "recognisable property exterior or coast setting",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/the-standard-ibiza/view-1.webp",
       "downloadUrl": "https://media.cntraveller.com/photos/626bcbc7bc5f4696fd3c936f/16:9/w_2560,c_limit/the%20standard%20ibiza-apr22-pr3.jpeg",
       "candidateContext": "Actual rooftop at The Standard Ibiza, source CN Traveller property review",
@@ -275,7 +347,15 @@
       "outputSize": [
         1800,
         1013
-      ]
+      ],
+      "frCaption": "Rooftop de The Standard Ibiza, grands parasols blancs et panorama sur les édifices de Dalt Vila.",
+      "enCaption": "The Standard Ibiza rooftop with white parasols and views of Dalt Vila's historic buildings.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://www.cntraveller.com/hotels/the-standard-ibiza-review"
     },
     {
       "key": "view-2",
@@ -284,9 +364,9 @@
       "sourcePage": "https://www.cntraveller.com/hotels/the-standard-ibiza-review",
       "slotIntent": "real guestroom or suite interior",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/the-standard-ibiza/view-2.webp",
       "downloadUrl": "https://media.cntraveller.com/photos/626bcba607f3ba05725cd551/16%3A9/w_2560%2Cc_limit/suite-the%2520standard%2520ibiza-apr22-pr2.jpg",
       "candidateContext": "Actual guest suite at The Standard Ibiza, source hotel review",
@@ -302,7 +382,15 @@
       "outputSize": [
         1800,
         1013
-      ]
+      ],
+      "frCaption": "Salle de bains contemporaine d'une suite au The Standard Ibiza, avec baignoire indépendante.",
+      "enCaption": "Contemporary suite bathroom at The Standard Ibiza, featuring a freestanding bathtub.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://www.cntraveller.com/hotels/the-standard-ibiza-review"
     },
     {
       "key": "view-3",
@@ -311,9 +399,9 @@
       "sourcePage": "https://www.yatzer.com/the-standard-ibiza",
       "slotIntent": "authentic hotel pool/dining/terrace",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "rejectedSource": "https://media.cntraveller.com/photos/626bcb35b25d31f55e79d7ab/16%3A9/w_2560%2Cc_limit/jara-the%2520standard%2520ibiza-apr22-pr2.jpg",
       "rejectedOriginalSha256": "367dcf56161fcd199702b2fa727275523b87a2b161b682c8304f8f7036f9f24e",
       "localPath": "/images/travel/ibiza-premium/the-standard-ibiza/view-3.webp",
@@ -331,7 +419,15 @@
       "outputSize": [
         1400,
         934
-      ]
+      ],
+      "frCaption": "Salle lumineuse du restaurant Jara au The Standard Ibiza, tables et végétation luxuriante.",
+      "enCaption": "Bright Jara restaurant at The Standard Ibiza, with tables, sculptural ceilings and abundant greenery.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://www.yatzer.com/the-standard-ibiza"
     }
   ],
   "destinationScenes": [
@@ -341,15 +437,15 @@
       "searchQuery": "Ibiza Dalt Vila old town aerial daylight",
       "slotIntent": "Dalt Vila Eivissa ancienne citadelle",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/destination/scene-1.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Eivissa_-_Dalt_Vila_from_Airplane.jpg",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Eivissa_-_Dalt_Vila_from_Airplane.jpg",
       "candidateContext": "Dalt Vila and cathedral photographed from a plane, 2024 by UnFUG-Fabi",
-      "credit": "Geolocated Wikimedia source: https://commons.wikimedia.org/wiki/File:Eivissa_-_Dalt_Vila_from_Airplane.jpg",
-      "license": "Creative Commons licence: check file and attribution",
+      "credit": "UnFUG-Fabi · Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
       "sha256": "416d7ac17d44c999bbef8cfaa6122c74e198fd5257d52724b3445fe74fb3bcf1",
       "dhash": "1100110110101100011101101101010111001011000001100010011111001100",
       "bytes": 469538,
@@ -360,7 +456,15 @@
       "outputSize": [
         1800,
         1012
-      ]
+      ],
+      "frCaption": "Dalt Vila et la cathédrale d'Eivissa vues en surplomb depuis un avion.",
+      "enCaption": "Aerial view of Ibiza Town's fortified Dalt Vila and cathedral.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "source_creative_commons_with_operator_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
     },
     {
       "key": "scene-2",
@@ -368,9 +472,9 @@
       "searchQuery": "Ibiza Marina Botafoch yachts promenade",
       "slotIntent": "Port et Marina Botafoch",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "sourcePage": "https://www.ibizatopcharter.com/",
       "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Ibiza_Port.jpg",
       "rejectedOriginalSha256": "ab1de941474604c589026cec55086d79fee1832881290b7b3ea876f1a70c1f6d",
@@ -389,7 +493,15 @@
       "outputSize": [
         1800,
         950
-      ]
+      ],
+      "frCaption": "Superyachts dans le port d'Eivissa avec les murailles de Dalt Vila à l'arrière-plan.",
+      "enCaption": "Luxury yachts in Ibiza Town's harbour with historic Dalt Vila above the marina.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://www.ibizatopcharter.com/"
     },
     {
       "key": "scene-3",
@@ -397,9 +509,9 @@
       "searchQuery": "Talamanca Bay beach Ibiza sunny",
       "slotIntent": "Baie de Talamanca",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/destination/scene-3.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Platja_de_Talamanca_-_Playa_de_Talamanca.jpg",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Platja_de_Talamanca_-_Playa_de_Talamanca.jpg",
@@ -416,7 +528,15 @@
       "outputSize": [
         1800,
         1013
-      ]
+      ],
+      "frCaption": "Baie de Talamanca et plage de sable vues depuis le bord de mer à Ibiza.",
+      "enCaption": "Talamanca Bay and its sandy shoreline in Ibiza, seen from the water's edge.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Platja_de_Talamanca_-_Playa_de_Talamanca.jpg"
     },
     {
       "key": "scene-4",
@@ -424,14 +544,14 @@
       "searchQuery": "Cala Xarraca Ibiza north cove",
       "slotIntent": "Cala Xarraca, crique du nord",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/destination/scene-4.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Cala_xarraca.JPG",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Cala_xarraca.JPG/1920px-Cala_xarraca.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "candidateContext": "File:Cala xarraca.JPG",
-      "credit": "Jjuanii · CC BY-SA 3.0",
+      "credit": "Wikimedia Commons · source photographer",
       "license": "CC BY-SA 3.0",
       "sha256": "ea34e49e1cc3f0b41728b9fca63ed93c189f70c758c75774c16ffb7446d8f93b",
       "dhash": "0000110100001111000011000000010100110001000010010000010101100100",
@@ -443,7 +563,15 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Eaux turquoise de Cala Xarraca sur la côte rocheuse du nord d'Ibiza.",
+      "enCaption": "Bright turquoise water and rocky shoreline at Cala Xarraca in northern Ibiza.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "source_creative_commons_with_operator_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
     },
     {
       "key": "scene-5",
@@ -451,15 +579,15 @@
       "searchQuery": "Ibiza Es Vedra west cliffs",
       "slotIntent": "Vue Es Vedrà depuis falaises occidentales",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/destination/scene-5.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Es_Vedrà_from_a_cave,_Ibiza.jpg",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Es_Vedr%C3%A0_from_a_cave%2C_Ibiza.jpg",
       "candidateContext": "Es Vedra from coast cave, CC0, 2023 by Gerda Arendt",
-      "credit": "Geolocated Wikimedia source: https://commons.wikimedia.org/wiki/File:Es_Vedrà_from_a_cave,_Ibiza.jpg",
-      "license": "Creative Commons licence: check file and attribution",
+      "credit": "Gerda Arendt · Wikimedia Commons",
+      "license": "CC0",
       "sha256": "1c94feaba80aac28fa289a72f0ef1dc1f14b508e6cd8bad28f0d9383db0dfba8",
       "dhash": "0010111100111011001110110111011101111011011111111111100101010110",
       "bytes": 328430,
@@ -470,7 +598,15 @@
       "outputSize": [
         1561,
         1200
-      ]
+      ],
+      "frCaption": "Silhouette d'Es Vedrà dans la lumière du soir depuis une ouverture rocheuse sur la côte ouest.",
+      "enCaption": "The silhouette of Es Vedrà framed by a rocky coastal opening in the evening light.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "source_creative_commons_with_operator_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
     },
     {
       "key": "scene-6",
@@ -478,9 +614,9 @@
       "searchQuery": "Cala Codolar Ibiza beach sunny",
       "slotIntent": "Cala Codolar",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/destination/scene-6.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Balearen,_Ibiza-Westküste,_Wanderung_Cala_Codola_geologische_Verwerfungen_-_panoramio.jpg",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Balearen%2C_Ibiza-Westk%C3%BCste%2C_Wanderung_Cala_Codola_geologische_Verwerfungen_-_panoramio.jpg",
@@ -497,7 +633,15 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Falaises stratifiées près de Cala Codolar sur le littoral occidental d'Ibiza.",
+      "enCaption": "Layered geological cliffs on Ibiza's west coast near Cala Codolar, rather than the sandy beach itself.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Balearen,_Ibiza-Westküste,_Wanderung_Cala_Codola_geologische_Verwerfungen_-_panoramio.jpg"
     },
     {
       "key": "scene-7",
@@ -505,15 +649,15 @@
       "searchQuery": "Cala Conta Ibiza turquoise water",
       "slotIntent": "Cala Conta eaux turquoise",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/destination/scene-7.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Cala_Conta_Ibiza_17_May_2011_(2).JPG",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Cala_Conta_Ibiza_17_May_2011_(2).JPG",
       "candidateContext": "Cala Conta actual beach turquoise water, photographer Stavros1, CC BY 3.0",
-      "credit": "Geolocated Wikimedia source: https://commons.wikimedia.org/wiki/File:Cala_Conta_Ibiza_17_May_2011_(2).JPG",
-      "license": "Creative Commons licence: check file and attribution",
+      "credit": "Stavros1 · Wikimedia Commons",
+      "license": "CC BY 3.0",
       "sha256": "f901b4a6ac52caae4d8980e873f61d6631a80a3c4e4bdbe426531af01ec619e9",
       "dhash": "0001111100011111001111010011100110111110001111111001111111010111",
       "bytes": 193154,
@@ -524,7 +668,15 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Plage de Cala Conta et mer transparente, avec promontoire rocheux en arrière-plan.",
+      "enCaption": "Cala Conta beach with clear turquoise shallows and a rocky headland in the distance.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "source_creative_commons_with_operator_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
     },
     {
       "key": "scene-8",
@@ -532,15 +684,15 @@
       "searchQuery": "Ses Salines Ibiza protected coast",
       "slotIntent": "Salines et dunes du sud",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/destination/scene-8.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Ibiza_Ses_Salines_asv2023-04_img1.jpg",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ibiza_Ses_Salines_asv2023-04_img1.jpg",
       "candidateContext": "Ses Salines saltpans, A.Savin, Free Art License; require FAL compliance",
-      "credit": "Geolocated Wikimedia source: https://commons.wikimedia.org/wiki/File:Ibiza_Ses_Salines_asv2023-04_img1.jpg",
-      "license": "Creative Commons licence: check file and attribution",
+      "credit": "A.Savin · Wikimedia Commons",
+      "license": "Free Art License",
       "sha256": "1d7e7f57df369b09c00be39f2e5bb637fad992773eef4ce0497a2fe2f5364544",
       "dhash": "1111010100111000000110110011111101100011010010111111100011110111",
       "bytes": 152890,
@@ -551,7 +703,15 @@
       "outputSize": [
         1800,
         1013
-      ]
+      ],
+      "frCaption": "Bassins salants de Ses Salines dans le parc naturel au sud d'Ibiza.",
+      "enCaption": "Salt evaporation ponds of Ses Salines Natural Park on southern Ibiza.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "source_creative_commons_with_operator_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://artlibre.org/licence/lal/en/"
     },
     {
       "key": "scene-9",
@@ -559,9 +719,9 @@
       "searchQuery": "Sant Joan de Labritja Ibiza village",
       "slotIntent": "Village de Sant Joan",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "localPath": "/images/travel/ibiza-premium/destination/scene-9.webp",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Parish_Church_Sant_Joan_de_Labritja_31_May_2012.JPG",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/13/Parish_Church_Sant_Joan_de_Labritja_31_May_2012.JPG",
@@ -578,8 +738,18 @@
       "outputSize": [
         1600,
         1200
-      ]
+      ],
+      "frCaption": "Église blanche du village de Sant Joan de Labritja et son clocher traditionnel.",
+      "enCaption": "Whitewashed parish church and bell tower in the village of Sant Joan de Labritja.",
+      "visualReviewedAt": "2026-10-27",
+      "visualReviewBasis": "All 21 images inspected side-by-side in complete Ibiza contact sheet; Six Senses and The Standard photos inspected at full resolution, improved room/Jara/marina sources individually visually checked. Geography and distinctions matched with original source, captions describe visible contents.",
+      "ownerRightsAuthorization": "Bosphoras operator stated on 19 October 2026 that it has project-wide permission for all travel/hotel photographs; this remains a user attestation, not a third-party contract independently reviewed.",
+      "rightsEvidenceType": "operator_self_attestation",
+      "originalTransformation": "Converted to smaller WebP for the site, no changes to photographed subject.",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Parish_Church_Sant_Joan_de_Labritja_31_May_2012.JPG"
     }
   ],
-  "publicationBlockedReason": "Need 21 unique genuine images (12 hotels + 9 Ibiza locales), each visually verified, source and commercial rights established, batch Preview not yet deployed."
+  "publicationBlockedReason": "21/21 source-linked photographs visually reviewed and attributed; noindex maintained. No production publication before new 10-destination Preview and authorised hotel/Wink inventory review.",
+  "photoRightsBasis": "Project operator attested permission to publish all photos; Commons attribution and source licences recorded when verified. Signed source-specific third-party licence documents not independently reviewed.",
+  "editorialPhotoQaAt": "2026-10-27"
 }
