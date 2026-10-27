@@ -1,0 +1,634 @@
+{
+  "destination": "north-island-seychelles",
+  "hotels": [
+    {
+      "key": "view-1",
+      "originalMediaSlug": "north-island-beachfront-villa-bedroom-1-2",
+      "sourcePage": "https://north-island.com/accommodation/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/03/North-Island-Beachfront-Villa-Bedroom-1-1.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "Beachfront Villa · chambre principale officielle",
+      "enCaption": "Beachfront Villa · actual master bedroom",
+      "localPath": "/images/travel/north-island-seychelles-premium/beachfront/view-1.webp",
+      "sha256": "c5bfde969f8aeddf0d373d125183848b308d87591cf99e362087132f13ca1f9f",
+      "bytes": 351494,
+      "originalSize": [
+        2300,
+        1534
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "propertyKey": "beachfront",
+      "property": "North Island — Beachfront Villa"
+    },
+    {
+      "key": "view-2",
+      "originalMediaSlug": "north-island-beachfront-villa-sala-and-pool",
+      "sourcePage": "https://north-island.com/accommodation/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/03/North-Island-Beachfront-Villa-Sala-and-pool.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "Beachfront Villa · sala et bassin privatif",
+      "enCaption": "Beachfront Villa · outdoor sala and private plunge pool",
+      "localPath": "/images/travel/north-island-seychelles-premium/beachfront/view-2.webp",
+      "sha256": "2c88d320acf7430328ff27da0f83e81cf792de021713312f4cf4da380324e16c",
+      "bytes": 557262,
+      "originalSize": [
+        2400,
+        1600
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "propertyKey": "beachfront",
+      "property": "North Island — Beachfront Villa"
+    },
+    {
+      "key": "view-3",
+      "originalMediaSlug": "north-island-beachfront-villa-aerial-1",
+      "sourcePage": "https://north-island.com/accommodation/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/03/North-Island-Beachfront-Villa-Aerial-1-scaled.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "East Beach · Beachfront Villa intégrée à la végétation",
+      "enCaption": "East Beach · a beachfront villa surrounded by greenery",
+      "localPath": "/images/travel/north-island-seychelles-premium/beachfront/view-3.webp",
+      "sha256": "45ab206d1605a284766eacd4aa02be7c17f47d434bf1b9ad613ddf886c6dcc44",
+      "bytes": 530812,
+      "originalSize": [
+        2560,
+        1754
+      ],
+      "outputSize": [
+        1750,
+        1199
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "propertyKey": "beachfront",
+      "property": "North Island — Beachfront Villa"
+    },
+    {
+      "key": "view-1",
+      "originalMediaSlug": "north-island-beachfront-villa-childrens-room-layout",
+      "sourcePage": "https://north-island.com/accommodation/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/03/North-Island-Beachfront-Villa-childrens-room-layout.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "Même catégorie Beachfront Villa · étude adaptée aux enfants",
+      "enCaption": "Same Beachfront Villa category · child-friendly study layout",
+      "localPath": "/images/travel/north-island-seychelles-premium/family/view-1.webp",
+      "sha256": "c196c60246a75a0d18eda7fb282fff692ce773594be31b04521efcf0dedcf4ac",
+      "bytes": 410950,
+      "originalSize": [
+        2300,
+        1533
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "propertyKey": "family",
+      "property": "North Island — Beachfront Villa, séjour familial"
+    },
+    {
+      "key": "view-2",
+      "originalMediaSlug": "north-island-beachfront-villa-living-room-1",
+      "sourcePage": "https://north-island.com/accommodation/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/03/North-Island-Beachfront-Villa-Living-Room-1.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "Beachfront Villa · salon adapté aux familles",
+      "enCaption": "Beachfront Villa · family living area",
+      "localPath": "/images/travel/north-island-seychelles-premium/family/view-2.webp",
+      "sha256": "d98fd6f48988be2915c7f478c50880f1edd3a66e10e0186b27dafe7ea524842c",
+      "bytes": 502064,
+      "originalSize": [
+        2300,
+        1533
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "propertyKey": "family",
+      "property": "North Island — Beachfront Villa, séjour familial"
+    },
+    {
+      "key": "view-3",
+      "originalMediaSlug": "north-island-beachfront-villa-garden-1",
+      "sourcePage": "https://north-island.com/accommodation/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/03/North-Island-Beachfront-Villa-Garden-1.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "Beachfront Villa · terrasse et jardin privatif",
+      "enCaption": "Beachfront Villa · secluded garden terrace",
+      "localPath": "/images/travel/north-island-seychelles-premium/family/view-3.webp",
+      "sha256": "095357b8b76ac7e35b85d1f3ec90ade026a58bc90cf5109a93c99977559bfe81",
+      "bytes": 599706,
+      "originalSize": [
+        2300,
+        1533
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "propertyKey": "family",
+      "property": "North Island — Beachfront Villa, séjour familial"
+    },
+    {
+      "key": "view-1",
+      "originalMediaSlug": "north-island-villa-north-aerial",
+      "sourcePage": "https://north-island.com/accommodation/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/03/North-Island-Villa-North-aerial.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "Villa North unique · résidence près du granite",
+      "enCaption": "The unique Villa North residence near granite slopes",
+      "localPath": "/images/travel/north-island-seychelles-premium/north/view-1.webp",
+      "sha256": "1f428dcd80c82a7b4b1364a5e06292219dca6d3e28e255868e7a2a498c208806",
+      "bytes": 467422,
+      "originalSize": [
+        2048,
+        1365
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "propertyKey": "north",
+      "property": "North Island — Villa North"
+    },
+    {
+      "key": "view-2",
+      "originalMediaSlug": "16-villa-north-villa-11-bedroom",
+      "sourcePage": "https://north-island.com/accommodation/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/03/16-Villa-North-Villa-11-Bedroom.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "Villa North · véritable chambre de la villa 11",
+      "enCaption": "Villa North · original bedroom in Villa 11",
+      "localPath": "/images/travel/north-island-seychelles-premium/north/view-2.webp",
+      "sha256": "45468d7f2e878cbd3ce7221a97642b3c733ab9bef36781293e7d99e151e685df",
+      "bytes": 404664,
+      "originalSize": [
+        1966,
+        1311
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "propertyKey": "north",
+      "property": "North Island — Villa North"
+    },
+    {
+      "key": "view-3",
+      "originalMediaSlug": "villa-north-terrace-fire-pit",
+      "sourcePage": "https://north-island.com/accommodation/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/03/Villa-North-Terrace-Fire-Pit.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "Villa North · terrasse privée et foyer extérieur",
+      "enCaption": "Villa North · private deck and firepit",
+      "localPath": "/images/travel/north-island-seychelles-premium/north/view-3.webp",
+      "sha256": "f817898f49546b85fa7f7985385322a32c77719fdb4e9fa30b37913bd1e39e5a",
+      "bytes": 484090,
+      "originalSize": [
+        2300,
+        1533
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "propertyKey": "north",
+      "property": "North Island — Villa North"
+    },
+    {
+      "key": "view-1",
+      "originalMediaSlug": "north-island-island-aerial",
+      "sourcePage": "https://north-island.com/accommodation/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/01/North-Island-Island-aerial.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "Privatisation · North Island au complet vue du ciel",
+      "enCaption": "Whole-island buyout · North Island aerial",
+      "localPath": "/images/travel/north-island-seychelles-premium/exclusive/view-1.webp",
+      "sha256": "9382d46e427271ee715659abae14fbd9bb8f592d6b1c2c4fc1737b9f329243f1",
+      "bytes": 394342,
+      "originalSize": [
+        2300,
+        1534
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "propertyKey": "exclusive",
+      "property": "North Island — Exclusively Yours"
+    },
+    {
+      "key": "view-2",
+      "originalMediaSlug": "north-island-aerial-of-the-island",
+      "sourcePage": "https://north-island.com/accommodation/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/03/North-Island-Aerial-of-the-Island.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "Privatisation · l’île et ses plages depuis le ciel",
+      "enCaption": "Full-island setting · reef and island aerial",
+      "localPath": "/images/travel/north-island-seychelles-premium/exclusive/view-2.webp",
+      "sha256": "64d629681b27b5575ecd171ba32a02b33184562d942a67bbc38a2e8e2c55fa04",
+      "bytes": 151366,
+      "originalSize": [
+        2048,
+        860
+      ],
+      "outputSize": [
+        1750,
+        735
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "propertyKey": "exclusive",
+      "property": "North Island — Exclusively Yours"
+    },
+    {
+      "key": "view-3",
+      "originalMediaSlug": "north-island-aerial-of-honeymoonbeach",
+      "sourcePage": "https://north-island.com/accommodation/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/03/North-Island-aerial-of-honeymoonbeach.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "L’île privée · perspective de Honeymoon Beach",
+      "enCaption": "Entire North Island · Honeymoon Beach perspective",
+      "localPath": "/images/travel/north-island-seychelles-premium/exclusive/view-3.webp",
+      "sha256": "586b87ae4aeab4726447f3eaf017855e7951a6e9417c43d8f69e2cd5e6f35712",
+      "bytes": 564888,
+      "originalSize": [
+        2048,
+        1365
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "propertyKey": "exclusive",
+      "property": "North Island — Exclusively Yours"
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "originalMediaSlug": "north-island-conservation-view-of-east-beach",
+      "sourcePage": "https://north-island.com/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/04/North-Island-Conservation-view-of-East-Beach.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "East Beach et ses villas discrètes",
+      "enCaption": "East Beach and its discreet private villas",
+      "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-1.webp",
+      "sha256": "9908f2557b993c0fec235939ae0cb70acbd0264bc3155bfefd64a0ad949b4598",
+      "bytes": 427392,
+      "originalSize": [
+        2300,
+        1533
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "place": "North Island, Seychelles"
+    },
+    {
+      "key": "scene-2",
+      "originalMediaSlug": "north-island-experience-the-island-walking-on-west-beach",
+      "sourcePage": "https://north-island.com/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/03/North-Island-Experience-the-Island-Walking-on-West-Beach.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "West Beach · balade à pied sur le sable",
+      "enCaption": "West Beach · an island shoreline walk",
+      "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-2.webp",
+      "sha256": "8bfd1f00e57c8879fb094dcb3243516304022ad82284e1e542f1b1e8e0245fdf",
+      "bytes": 47150,
+      "originalSize": [
+        1534,
+        2300
+      ],
+      "outputSize": [
+        800,
+        1200
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "place": "North Island, Seychelles"
+    },
+    {
+      "key": "scene-3",
+      "originalMediaSlug": "north-island-conservation-family-with-aldabra-giant-tortoise",
+      "sourcePage": "https://north-island.com/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/04/North-Island-Conservation-family-with-Aldabra-Giant-Tortoise.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "Rencontre encadrée avec une tortue géante d’Aldabra",
+      "enCaption": "North Island · family observing an Aldabra giant tortoise",
+      "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-3.webp",
+      "sha256": "134b9748be35324ea5f309fad6483081aeafc21366dc6d13c516ccf8f9205835",
+      "bytes": 384298,
+      "originalSize": [
+        2000,
+        1333
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "place": "North Island, Seychelles"
+    },
+    {
+      "key": "scene-4",
+      "originalMediaSlug": "north-island-conservation-turtle-on-beach",
+      "sourcePage": "https://north-island.com/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/04/North-Island-Conservation-turtle-on-beach.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "Conservation · tortue marine et plage protégée",
+      "enCaption": "Sea-turtle conservation on North Island beach",
+      "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-4.webp",
+      "sha256": "4ca58cf1641c8e42380a21e037322d3972d9c8be25f6c3c99fe5cf831f9692e8",
+      "bytes": 108824,
+      "originalSize": [
+        2400,
+        1456
+      ],
+      "outputSize": [
+        1750,
+        1062
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "place": "North Island, Seychelles"
+    },
+    {
+      "key": "scene-5",
+      "originalMediaSlug": "north-island-dining-and-cuisine-west-beach-bar-aerial",
+      "sourcePage": "https://north-island.com/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/04/North-Island-Dining-and-Cuisine-West-Beach-Bar-aerial.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "West Beach Bar · paysage et table en bord de mer",
+      "enCaption": "West Beach Bar · coastal dining landscape",
+      "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-5.webp",
+      "sha256": "9f473870c6ea86c193d101023b639fa17b4a3c7fa86e5097886f476d6d02f49e",
+      "bytes": 474908,
+      "originalSize": [
+        2300,
+        1658
+      ],
+      "outputSize": [
+        1665,
+        1200
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "place": "North Island, Seychelles"
+    },
+    {
+      "key": "scene-6",
+      "originalMediaSlug": "north-island-experience-the-island-west-beach-swing",
+      "sourcePage": "https://north-island.com/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/03/North-Island-Experience-the-Island-West-beach-Swing.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "West Beach · balancelle près de l’océan",
+      "enCaption": "West Beach · seaside swing",
+      "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-6.webp",
+      "sha256": "bb69e040eccc565545684d211597507f0c0faea32616e77eaf44909080e176e5",
+      "bytes": 164384,
+      "originalSize": [
+        1534,
+        2300
+      ],
+      "outputSize": [
+        800,
+        1200
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "place": "North Island, Seychelles"
+    },
+    {
+      "key": "scene-7",
+      "originalMediaSlug": "north-island-forest-image",
+      "sourcePage": "https://north-island.com/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/05/North-Island-Forest-Image.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "Sentiers de la forêt tropicale et conservation",
+      "enCaption": "North Island · tropical forest and habitat restoration",
+      "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-7.webp",
+      "sha256": "484816f09f5dc19809ad7904c20e549447406ad75c25d60521fcf1b939f11d25",
+      "bytes": 726158,
+      "originalSize": [
+        2300,
+        1533
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "place": "North Island, Seychelles"
+    },
+    {
+      "key": "scene-8",
+      "originalMediaSlug": "north-island-dining-and-cuisine-west-beach-bar-beach",
+      "sourcePage": "https://north-island.com/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/04/North-Island-Dining-and-Cuisine-West-Beach-Bar-beach.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "West Beach · plage, végétation et bar",
+      "enCaption": "West Beach · palms, beach and lounge",
+      "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-8.webp",
+      "sha256": "96b94547f5bf136101a243084d4345d3509989f19dc67da18b09ae6fb14eea38",
+      "bytes": 512348,
+      "originalSize": [
+        2300,
+        1533
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "place": "North Island, Seychelles"
+    },
+    {
+      "key": "scene-9",
+      "originalMediaSlug": "north-island-conservation-seychelles-white-eye",
+      "sourcePage": "https://north-island.com/",
+      "downloadUrl": "https://north-island.com/wp-content/uploads/2025/04/North-Island-Conservation-Seychelles-White-Eye.jpg",
+      "credit": "North Island Seychelles official resort publisher · photographer uncredited",
+      "license": "Operator-attested permission; independent photographer commercial-licence audit outstanding",
+      "licenseUrl": "https://north-island.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Await actual visual contact sheet and individual photographer-rights audit",
+      "frCaption": "Conservation · oiseau Seychelles white-eye",
+      "enCaption": "North Island · Seychelles white-eye bird",
+      "localPath": "/images/travel/north-island-seychelles-premium/destination/scene-9.webp",
+      "sha256": "fcf1d139e253420d127b00816cb8e52344cdb4934c3a1e0083ab8c51110e0aa4",
+      "bytes": 68924,
+      "originalSize": [
+        2000,
+        1502
+      ],
+      "outputSize": [
+        1598,
+        1200
+      ],
+      "imageTransformation": "Publisher original; EXIF orientation and aspect-preserving WebP export",
+      "place": "North Island, Seychelles"
+    }
+  ],
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "publicationBlockedReason": "Image download alone is not visual review or original photographer licence clearance",
+  "photoRightsBasis": "North Island resort’s actual original publisher URLs; separate original-photographer clearance pending"
+}
