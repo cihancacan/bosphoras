@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 8,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
@@ -507,14 +507,30 @@
       "placeLabel": "Grotte d'Antiparos",
       "searchQuery": "Antiparos Cave Greece",
       "slotIntent": "Grotte d'Antiparos",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "2024 cave close-up does not show cave scale; select grand chamber with stairs and warm lighting.",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Antiparos_cave.JPG",
+      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "sourcePage": "https://www.archetype.gr/blog/arthro/meleti-axiopiisis-spilaiou",
       "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Antiparos_cave.JPG/1920px-Antiparos_cave.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rejectedOriginalSha256": "6701b90b0ee09a0da8582df6dd27e6b3d7d7f0bd471f6136d73126065314b05e",
-      "rejectedCandidateContext": "File:Antiparos cave.JPG"
+      "rejectedCandidateContext": "File:Antiparos cave.JPG",
+      "localPath": "/images/travel/antiparos-premium/destination/scene-7.webp",
+      "downloadUrl": "https://www.archetype.gr/uploads/blog-articles/158.jpg",
+      "candidateContext": "Genuine grand Antiparos cave interior, warm lighting and visitor stairway with mineral formations",
+      "credit": "Source photographer at https://www.archetype.gr/blog/arthro/meleti-axiopiisis-spilaiou",
+      "license": "Publisher/photographer permission required",
+      "sha256": "c703982e1f97f4b310f4aa506494385b8b602b1e8a71961efc2c16ee8f3950e6",
+      "dhash": "0010001100100011101111100011001101110011110010011100100101001001",
+      "bytes": 491642,
+      "originalSize": [
+        2000,
+        1331
+      ],
+      "outputSize": [
+        1750,
+        1165
+      ]
     },
     {
       "key": "scene-8",
