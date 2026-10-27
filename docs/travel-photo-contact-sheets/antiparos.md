@@ -1,6 +1,6 @@
 # Antiparos — 21 photographies à contrôler
 
-**Candidats récupérés : 19/21 · Validés visuellement : 0/21**. Aucune validation ne résulte du seul téléchargement.
+**Candidats récupérés : 20/21 · Validés visuellement : 0/21**. Aucune validation ne résulte du seul téléchargement.
 
 ![Planche de contrôle Antiparos](antiparos.jpg)
 
@@ -24,6 +24,6 @@
 | 16 | Plage de Livadi — scene-4 | [Source](https://www.greekislandhopping.de/blog/antiparos-straende) · Livadia beach on Antiparos with west-coast dunes and natural wide sandy cove, not Livadia on Paros| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
 | 17 | Baie d'Apantima — scene-5 | [Source](https://www.thethinkingtraveller.com/greece/antiparos/villas/lexie) · True Apantima Antiparos coastal hillside and shallow bay with traditional windmill| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
 | 18 | Plage de Soros — scene-6 | [Source](https://www.thethinkingtraveller.com/greece/antiparos/villas/yvoni) · Actual Soros sandy beach and clear sea with hilly background; source path specifically identifies Soros| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
-| 19 | Grotte d'Antiparos — scene-7 | [Source](https://commons.wikimedia.org/wiki/File:Antiparos_Cave_247279.jpg) · | Manquante; **Previous cave crop shows only a close-up rock, not a distinctive cave scene; replace with wide natural cave interior.** |
-| 20 | Îles de Despotiko et Tsimintiri vues depuis la mer — scene-8 | [Source](https://commons.wikimedia.org/wiki/File:Antiparos,_Tsimintiri_and_Despotiko,_247863.jpg) · | Manquante; **Previous geographic island photo is bland blue/grey with no turquoise bay, unacceptable luxury art direction.** |
+| 19 | Grotte d'Antiparos — scene-7 | [Source](https://commons.wikimedia.org/wiki/File:Antiparos_cave.JPG) · | Manquante; **2024 cave close-up does not show cave scale; select grand chamber with stairs and warm lighting.** |
+| 20 | Îles de Despotiko et Tsimintiri vues depuis la mer — scene-8 | [Source](https://www.sight2sight.com/de/c/despotiko/c/private-touren-despotiko) · Real turquoise shallow bay off Despotiko with small boats and rocky island shoreline, exact island tour operator photo; | Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |
 | 21 | Port et traversée Pounta — scene-9 | [Source](https://www.bonatsahouse.com/lifestyle/antiparos-travel-tips) · Original Antiparos ferry quay photograph showing passenger and vehicle boats by island waterfront| Candidate; **New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.** |

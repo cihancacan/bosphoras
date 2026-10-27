@@ -21,5 +21,5 @@ Les photographies récemment remplacées restent rouges tant qu'elles n'ont pas 
 - [Positano](positano.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](positano.jpg)
 - [Ravello](ravello.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](ravello.jpg)
 - [Mykonos](mykonos.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](mykonos.jpg)
-- [Antiparos](antiparos.md) — 19/21 fichiers candidats, 21 alertes ; [ouvrir l'image seule](antiparos.jpg)
+- [Antiparos](antiparos.md) — 20/21 fichiers candidats, 21 alertes ; [ouvrir l'image seule](antiparos.jpg)
 - [Ibiza](ibiza.md) — 21/21 fichiers candidats, 0 alertes ; [ouvrir l'image seule](ibiza.jpg)
