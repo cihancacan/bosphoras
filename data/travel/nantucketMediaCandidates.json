@@ -1,0 +1,247 @@
+{
+  "destination": "nantucket",
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "hotels": [
+    {
+      "key": "view-1",
+      "propertyKey": "elephant",
+      "property": "White Elephant Nantucket",
+      "sourcePage": "https://www.whiteelephantnantucket.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Asset not collected or visually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "elephant",
+      "property": "White Elephant Nantucket",
+      "sourcePage": "https://www.whiteelephantnantucket.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Asset not collected or visually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "elephant",
+      "property": "White Elephant Nantucket",
+      "sourcePage": "https://www.whiteelephantnantucket.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Asset not collected or visually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "wauwinet",
+      "property": "The Wauwinet",
+      "sourcePage": "https://www.wauwinet.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Asset not collected or visually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "wauwinet",
+      "property": "The Wauwinet",
+      "sourcePage": "https://www.wauwinet.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Asset not collected or visually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "wauwinet",
+      "property": "The Wauwinet",
+      "sourcePage": "https://www.wauwinet.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Asset not collected or visually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "greydon",
+      "property": "Greydon House",
+      "sourcePage": "https://greydonhouse.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Asset not collected or visually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "greydon",
+      "property": "Greydon House",
+      "sourcePage": "https://greydonhouse.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Asset not collected or visually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "greydon",
+      "property": "Greydon House",
+      "sourcePage": "https://greydonhouse.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Asset not collected or visually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "nantuckethotel",
+      "property": "The Nantucket Hotel & Resort",
+      "sourcePage": "https://www.thenantuckethotel.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Asset not collected or visually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "nantuckethotel",
+      "property": "The Nantucket Hotel & Resort",
+      "sourcePage": "https://www.thenantuckethotel.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Asset not collected or visually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "nantuckethotel",
+      "property": "The Nantucket Hotel & Resort",
+      "sourcePage": "https://www.thenantuckethotel.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Asset not collected or visually reviewed",
+      "frCaption": "",
+      "enCaption": ""
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "place": "Brant Point Lighthouse, Nantucket, MA.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons image and licence not yet downloaded",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-2",
+      "place": "2015 Nantucket MA Main Street view.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons image and licence not yet downloaded",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-3",
+      "place": "Sankaty Head Lighthouse by Don Ramey Logan.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons image and licence not yet downloaded",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-4",
+      "place": "Great Point Light, Nantucket.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons image and licence not yet downloaded",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-5",
+      "place": "20180524 - 08 - Nantucket, MA panorama (Surfside Beach).jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons image and licence not yet downloaded",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-6",
+      "place": "Nantucket Whaling Museum exterior.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons image and licence not yet downloaded",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-7",
+      "place": "20180524 - 16 - Nantucket, MA - \"The Look\".jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons image and licence not yet downloaded",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-8",
+      "place": "20180524 - 12 - Nantucket, MA (Surfside Beach).jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons image and licence not yet downloaded",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-9",
+      "place": "20180524 - 14 - Nantucket, MA - \"Convenience Shopping\".jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Commons image and licence not yet downloaded",
+      "frCaption": "",
+      "enCaption": ""
+    }
+  ],
+  "publicationBlockedReason": "21 sourced images and internal Preview QA required; no external publication",
+  "photoRightsBasis": "Hotel photographs authorised per project operator statement only; original photographer documents not independently checked. Commons licences/credits per photo."
+}
