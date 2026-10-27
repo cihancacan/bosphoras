@@ -58,3 +58,5 @@ jobs:
 # Collect the Nantucket 21-photo pack into GitHub without a Vercel Preview build.
 
 # Re-run after checking the Nantucket catalogue slug assertions.
+
+# Trigger Nantucket's GitHub-only 21-image QA without a Vercel Preview release.
