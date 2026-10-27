@@ -15,8 +15,8 @@ S=requests.Session()
 S.headers.update({'User-Agent':'BosphorasLuxuryStays/1.0 (private-owner photo QA; https://bosphoras.com/contact)', 'Accept':'image/avif,image/webp,image/jpeg,image/png,*/*'})
 # Media from hotel or property-specific publisher URL, NOT independently licensed
 HOTELS=[
-('four-seasons','Four Seasons Resort Punta Mita','Four Seasons · suite avec terrasse et bassin sur le Pacifique','Four Seasons · Pacific-view suite and plunge pool',
-'https://www.fourseasons.com/puntamita/accommodations/','https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-0%2C3750-3060%2C0000-1721%2C2500/publish/content/dam/fourseasons/images/web/PUN/PUN_673_original.jpg'),
+('four-seasons','Four Seasons Resort Punta Mita','Four Seasons · Oceanfront Casita au-dessus du Pacifique','Four Seasons · Oceanfront Casita and Pacific view',
+'https://luxuriavacations.com/destinations/mexico/pacific-coast-of-mexico/riviera-nayarit/four-seasons-punta-mita/rooms/four-seasons-punta-mita-oceanfront-casita','https://d20kc7ig5255k8.cloudfront.net/Rooms/Pictures/oceanfront-casita-64fe2e1529924.jpg'),
 ('four-seasons','Four Seasons Resort Punta Mita','Four Seasons · piscines et plage vues depuis le ciel','Four Seasons · resort pools and beach aerial',
 'https://www.the-family-project.com/reiseziele/mittelamerika/mexiko/four-seasons-punta-mita','https://www.the-family-project.com/hs-fs/hubfs/Website/lateinamerika/lateinamerika-fertig/four-seasons-resort-punta-mita/1-four-seasons-resort-punta-mita-mexiko-mittelamerika-the-family-project-luxus-familie-kinder-reisen.webp?height=800&name=1-four-seasons-resort-punta-mita-mexiko-mittelamerika-the-family-project-luxus-familie-kinder-reisen.webp&width=1200'),
 ('four-seasons','Four Seasons Resort Punta Mita','Four Seasons · géographie de la péninsule privée','Four Seasons · ocean-side resort peninsula',
