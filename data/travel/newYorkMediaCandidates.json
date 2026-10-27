@@ -1,0 +1,611 @@
+{
+  "destination": "new-york",
+  "scope": "owner-only private Preview; do not index",
+  "note": "Real operator-published hotel pictures; not proof of photo reuse licence nor property/room visual QA. Commons images carry CC attribution/share-alike as listed.",
+  "hotelCount": 12,
+  "cityCount": 9,
+  "hotels": [
+    {
+      "originalSize": [
+        906,
+        1192
+      ],
+      "outputSize": [
+        906,
+        1192
+      ],
+      "bytes": 82074,
+      "sha256": "6996c9c14255453c78f122084a47eec3d0876590a68b7c6f3f7cbfdb52f91d47",
+      "key": "view-1",
+      "propertyKey": "aman",
+      "property": "Aman New York",
+      "localPath": "/public/images/travel/new-york-premium/aman/view-1.webp",
+      "sourcePage": "https://www.aman.com/hotels/aman-new-york/gallery",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/masonry_extra_large_2x/public/2026-09/Aman-New-York--USA---Accommodation--Three-Bedroom-Home-with-Pool--1-.webp?itok=uM5x6eJi",
+      "credit": "Aman New York — publisher-owned photography, creator licence unverified",
+      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
+      "licenseUrl": "https://www.aman.com/hotels/aman-new-york/gallery",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
+      "frCaption": "Aman New York · photographie de la galerie officielle à confirmer visuellement",
+      "enCaption": "Aman New York · official property imagery pending individual visual review",
+      "originalAlt": ""
+    },
+    {
+      "originalSize": [
+        774,
+        1018
+      ],
+      "outputSize": [
+        774,
+        1018
+      ],
+      "bytes": 78238,
+      "sha256": "6e2c83eefb4940cd2f9d7a2a5f195f8b2006d68da85392c175dcda744ab0ee17",
+      "key": "view-2",
+      "propertyKey": "aman",
+      "property": "Aman New York",
+      "localPath": "/public/images/travel/new-york-premium/aman/view-2.webp",
+      "sourcePage": "https://www.aman.com/hotels/aman-new-york/gallery",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/masonry_large_2x/public/2026-09/Aman-New-York--USA---Accommodation--Three-Bedroom-Home-with-Pool--1-.webp?itok=mJbizNgs",
+      "credit": "Aman New York — publisher-owned photography, creator licence unverified",
+      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
+      "licenseUrl": "https://www.aman.com/hotels/aman-new-york/gallery",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
+      "frCaption": "Aman New York · photographie de la galerie officielle à confirmer visuellement",
+      "enCaption": "Aman New York · official property imagery pending individual visual review",
+      "originalAlt": ""
+    },
+    {
+      "originalSize": [
+        936,
+        1232
+      ],
+      "outputSize": [
+        936,
+        1232
+      ],
+      "bytes": 106586,
+      "sha256": "8667eeb2c49ce693fb61b1275bfa5c2c409d95e2f7bd517a39d487568519ba72",
+      "key": "view-3",
+      "propertyKey": "aman",
+      "property": "Aman New York",
+      "localPath": "/public/images/travel/new-york-premium/aman/view-3.webp",
+      "sourcePage": "https://www.aman.com/hotels/aman-new-york/gallery",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/masonry_medium_2x/public/2026-09/Aman-New-York--USA---Accommodation--Three-Bedroom-Home-with-Pool--1-.webp?itok=aQfgFw0S",
+      "credit": "Aman New York — publisher-owned photography, creator licence unverified",
+      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
+      "licenseUrl": "https://www.aman.com/hotels/aman-new-york/gallery",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
+      "frCaption": "Aman New York · photographie de la galerie officielle à confirmer visuellement",
+      "enCaption": "Aman New York · official property imagery pending individual visual review",
+      "originalAlt": ""
+    },
+    {
+      "originalSize": [
+        1920,
+        1438
+      ],
+      "outputSize": [
+        1800,
+        1348
+      ],
+      "bytes": 208154,
+      "sha256": "74266c5200519754856826e61e7268d47cadd580050b56b7fcc3a3f84dc5e3d0",
+      "key": "view-1",
+      "propertyKey": "fifth",
+      "property": "The Fifth Avenue Hotel",
+      "localPath": "/public/images/travel/new-york-premium/fifth/view-1.webp",
+      "sourcePage": "https://www.thefifthavenuehotel.com/accommodations/rooms/",
+      "downloadUrl": "https://www.thefifthavenuehotel.com/wp-content/uploads/2026/02/19094907/5thAveHotel_Shoot1_-80-scaled-1.webp",
+      "credit": "The Fifth Avenue Hotel — publisher-owned photography, creator licence unverified",
+      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
+      "licenseUrl": "https://www.thefifthavenuehotel.com/accommodations/rooms/",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
+      "frCaption": "The Fifth Avenue Hotel · photographie de la galerie officielle à confirmer visuellement",
+      "enCaption": "The Fifth Avenue Hotel · official property imagery pending individual visual review",
+      "originalAlt": "Tastefully organized bedroom with bed, sofa, and table near the window for an inviting ambiance."
+    },
+    {
+      "originalSize": [
+        1600,
+        1067
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 210104,
+      "sha256": "457771ee028fe2e3530a4807e09fec37b7c39f41523d846c010ebe5fb630d9dc",
+      "key": "view-2",
+      "propertyKey": "fifth",
+      "property": "The Fifth Avenue Hotel",
+      "localPath": "/public/images/travel/new-york-premium/fifth/view-2.webp",
+      "sourcePage": "https://www.thefifthavenuehotel.com/accommodations/rooms/",
+      "downloadUrl": "https://www.thefifthavenuehotel.com/wp-content/uploads/2023/08/16220940/The-City-King.jpg",
+      "credit": "The Fifth Avenue Hotel — publisher-owned photography, creator licence unverified",
+      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
+      "licenseUrl": "https://www.thefifthavenuehotel.com/accommodations/rooms/",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
+      "frCaption": "The Fifth Avenue Hotel · photographie de la galerie officielle à confirmer visuellement",
+      "enCaption": "The Fifth Avenue Hotel · official property imagery pending individual visual review",
+      "originalAlt": "Tidily arranged bedroom with pristine bed, sofa with table by window, illuminated by warm golden light."
+    },
+    {
+      "originalSize": [
+        1600,
+        1067
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 181384,
+      "sha256": "fb2a3559cd18f352143f5a3cad147cd9065a4cd21aa7c446ae7c11e0184cd482",
+      "key": "view-3",
+      "propertyKey": "fifth",
+      "property": "The Fifth Avenue Hotel",
+      "localPath": "/public/images/travel/new-york-premium/fifth/view-3.webp",
+      "sourcePage": "https://www.thefifthavenuehotel.com/accommodations/rooms/",
+      "downloadUrl": "https://www.thefifthavenuehotel.com/wp-content/uploads/2023/08/16205210/The-NoMad-King.jpg",
+      "credit": "The Fifth Avenue Hotel — publisher-owned photography, creator licence unverified",
+      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
+      "licenseUrl": "https://www.thefifthavenuehotel.com/accommodations/rooms/",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
+      "frCaption": "The Fifth Avenue Hotel · photographie de la galerie officielle à confirmer visuellement",
+      "enCaption": "The Fifth Avenue Hotel · official property imagery pending individual visual review",
+      "originalAlt": "Tidily arranged bedroom with pristine bed, sofa with a table by the window, illuminated by warm golden light."
+    },
+    {
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ],
+      "bytes": 103808,
+      "sha256": "186bb0be596bf1cbdab9b5f3b899a59d62868eb50ba1f0dd1c14e4f8d248778e",
+      "key": "view-1",
+      "propertyKey": "greenwich",
+      "property": "The Greenwich Hotel",
+      "localPath": "/public/images/travel/new-york-premium/greenwich/view-1.webp",
+      "sourcePage": "https://www.thegreenwichhotel.com/",
+      "downloadUrl": "https://www.thegreenwichhotel.com/wp-content/uploads/Arrival-First-Impressions_v3a_1.jpg",
+      "credit": "The Greenwich Hotel — publisher-owned photography, creator licence unverified",
+      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
+      "licenseUrl": "https://www.thegreenwichhotel.com/",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
+      "frCaption": "The Greenwich Hotel · photographie de la galerie officielle à confirmer visuellement",
+      "enCaption": "The Greenwich Hotel · official property imagery pending individual visual review",
+      "originalAlt": "https://www.thegreenwichhotel.com/wp-content/uploads/Arrival-First-Impressions_v3a_1.jpg"
+    },
+    {
+      "originalSize": [
+        1024,
+        576
+      ],
+      "outputSize": [
+        1024,
+        576
+      ],
+      "bytes": 46894,
+      "sha256": "0fc08be509c7f7ac7904bb6328c8a71f0295fc11a616db4075549fd47d0821cf",
+      "key": "view-2",
+      "propertyKey": "greenwich",
+      "property": "The Greenwich Hotel",
+      "localPath": "/public/images/travel/new-york-premium/greenwich/view-2.webp",
+      "sourcePage": "https://www.thegreenwichhotel.com/",
+      "downloadUrl": "https://www.thegreenwichhotel.com/wp-content/uploads/Arrival-First-Impressions_v3a_1-1024x576.jpg",
+      "credit": "The Greenwich Hotel — publisher-owned photography, creator licence unverified",
+      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
+      "licenseUrl": "https://www.thegreenwichhotel.com/",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
+      "frCaption": "The Greenwich Hotel · photographie de la galerie officielle à confirmer visuellement",
+      "enCaption": "The Greenwich Hotel · official property imagery pending individual visual review",
+      "originalAlt": "official property gallery"
+    },
+    {
+      "originalSize": [
+        1536,
+        864
+      ],
+      "outputSize": [
+        1536,
+        864
+      ],
+      "bytes": 81706,
+      "sha256": "60920b4302ff4ef44da8a0ffadcfe71561806b116f509bed931860df0de76113",
+      "key": "view-3",
+      "propertyKey": "greenwich",
+      "property": "The Greenwich Hotel",
+      "localPath": "/public/images/travel/new-york-premium/greenwich/view-3.webp",
+      "sourcePage": "https://www.thegreenwichhotel.com/",
+      "downloadUrl": "https://www.thegreenwichhotel.com/wp-content/uploads/Arrival-First-Impressions_v3a_1-1536x864.jpg",
+      "credit": "The Greenwich Hotel — publisher-owned photography, creator licence unverified",
+      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
+      "licenseUrl": "https://www.thegreenwichhotel.com/",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
+      "frCaption": "The Greenwich Hotel · photographie de la galerie officielle à confirmer visuellement",
+      "enCaption": "The Greenwich Hotel · official property imagery pending individual visual review",
+      "originalAlt": "official property gallery"
+    },
+    {
+      "originalSize": [
+        1263,
+        675
+      ],
+      "outputSize": [
+        1263,
+        675
+      ],
+      "bytes": 17534,
+      "sha256": "4aa392e29fc14aadf92d170522319d1a34e81f83aff85acaea3a91565bae9ded",
+      "key": "view-1",
+      "propertyKey": "lowell",
+      "property": "The Lowell",
+      "localPath": "/public/images/travel/new-york-premium/lowell/view-1.webp",
+      "sourcePage": "https://www.lowellhotel.com/rooms-and-suites",
+      "downloadUrl": "https://www.lowellhotel.com/assets/images/AudioEye-Trusted-Horizontal.png",
+      "credit": "The Lowell — publisher-owned photography, creator licence unverified",
+      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
+      "licenseUrl": "https://www.lowellhotel.com/rooms-and-suites",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
+      "frCaption": "The Lowell · photographie de la galerie officielle à confirmer visuellement",
+      "enCaption": "The Lowell · official property imagery pending individual visual review",
+      "originalAlt": "AudioEye Trusted"
+    },
+    {
+      "originalSize": [
+        800,
+        500
+      ],
+      "outputSize": [
+        800,
+        500
+      ],
+      "bytes": 69334,
+      "sha256": "f7aff24b5c694e7fb9abc44f6221dd6c373678f19527ab8d5bcb04a3d1a263f0",
+      "key": "view-2",
+      "propertyKey": "lowell",
+      "property": "The Lowell",
+      "localPath": "/public/images/travel/new-york-premium/lowell/view-2.webp",
+      "sourcePage": "https://www.lowellhotel.com/rooms-and-suites",
+      "downloadUrl": "https://www.lowellhotel.com/Assets/Images/hotel.jpg",
+      "credit": "The Lowell — publisher-owned photography, creator licence unverified",
+      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
+      "licenseUrl": "https://www.lowellhotel.com/rooms-and-suites",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
+      "frCaption": "The Lowell · photographie de la galerie officielle à confirmer visuellement",
+      "enCaption": "The Lowell · official property imagery pending individual visual review",
+      "originalAlt": "official property gallery"
+    },
+    {
+      "originalSize": [
+        2550,
+        2550
+      ],
+      "outputSize": [
+        1400,
+        1400
+      ],
+      "bytes": 45854,
+      "sha256": "0bd48ecc0a1829dcdc1526c4b16bd4f527b99cbb681db5a841270c5aa23f8bc0",
+      "key": "view-3",
+      "propertyKey": "lowell",
+      "property": "The Lowell",
+      "localPath": "/public/images/travel/new-york-premium/lowell/view-3.webp",
+      "sourcePage": "https://www.lowellhotel.com/",
+      "downloadUrl": "https://www.lowellhotel.com/uploads/images/originalimages/2026_CONDE_NAST_TRAVELER.png",
+      "credit": "The Lowell — publisher-owned photography, creator licence unverified",
+      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
+      "licenseUrl": "https://www.lowellhotel.com/",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
+      "frCaption": "The Lowell · photographie de la galerie officielle à confirmer visuellement",
+      "enCaption": "The Lowell · official property imagery pending individual visual review",
+      "originalAlt": ""
+    }
+  ],
+  "destinationScenes": [
+    {
+      "originalSize": [
+        1920,
+        928
+      ],
+      "outputSize": [
+        1800,
+        870
+      ],
+      "bytes": 409436,
+      "sha256": "834a45030964447b0cfb75836bcb83b7a63fd1c1bf69750ef6ee9ae565d687df",
+      "key": "scene-1",
+      "localPath": "/public/images/travel/new-york-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_New_York_City_Skyline_at_Dusk.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/The_New_York_City_Skyline_at_Dusk.jpg/1920px-The_New_York_City_Skyline_at_Dusk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Bruce Emmerling",
+      "credit": "Bruce Emmerling",
+      "commonsArtistMetadata": "Bruce Emmerling",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "frCaption": "Skyline de Midtown à l’heure bleue",
+      "enCaption": "Midtown Manhattan skyline at blue hour",
+      "transformations": "EXIF orientation, 1800x1400 maximum, WebP 83"
+    },
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ],
+      "bytes": 370746,
+      "sha256": "bc5447d94e7190915a13a682c7bde5fdcc6018af5fb54a08e765f95d3d2c7061",
+      "key": "scene-2",
+      "localPath": "/public/images/travel/new-york-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Lake_and_Central_Park_West_skyline,_Central_Park,_Manhattan,_New_York.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/The_Lake_and_Central_Park_West_skyline%2C_Central_Park%2C_Manhattan%2C_New_York.jpg/1920px-The_Lake_and_Central_Park_West_skyline%2C_Central_Park%2C_Manhattan%2C_New_York.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Christian David",
+      "credit": "Christian David",
+      "commonsArtistMetadata": "Christian David",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "frCaption": "Le lac et les façades de Central Park West",
+      "enCaption": "Central Park lake and Upper West Side skyline",
+      "transformations": "EXIF orientation, 1800x1400 maximum, WebP 83"
+    },
+    {
+      "originalSize": [
+        1920,
+        2880
+      ],
+      "outputSize": [
+        933,
+        1400
+      ],
+      "bytes": 177108,
+      "sha256": "13db9bdc7a63e8d602e7d7a1cfdaeb01529fdacfe1c9714222d208406193c032",
+      "key": "scene-3",
+      "localPath": "/public/images/travel/new-york-premium/destination/scene-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Flatiron_Building,_Fifth_Avenue,_Manhattan,_New_York.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Flatiron_Building%2C_Fifth_Avenue%2C_Manhattan%2C_New_York.jpg/1920px-Flatiron_Building%2C_Fifth_Avenue%2C_Manhattan%2C_New_York.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Christian David",
+      "credit": "Christian David",
+      "commonsArtistMetadata": "Christian David",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "frCaption": "Flatiron Building et horloge de Fifth Avenue",
+      "enCaption": "Flatiron Building and Fifth Avenue clock",
+      "transformations": "EXIF orientation, 1800x1400 maximum, WebP 83"
+    },
+    {
+      "originalSize": [
+        1920,
+        863
+      ],
+      "outputSize": [
+        1800,
+        809
+      ],
+      "bytes": 273672,
+      "sha256": "7eb383a25eb61f754cc40dab8dea5cc1ed01bbf10b6f72700dcd0589194a687c",
+      "key": "scene-4",
+      "localPath": "/public/images/travel/new-york-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lower_Manhattan_Skyline_June_2025.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Lower_Manhattan_Skyline_June_2025.jpg/1920px-Lower_Manhattan_Skyline_June_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Kidfly182",
+      "credit": "Kidfly182",
+      "commonsArtistMetadata": "Kidfly182",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "frCaption": "Les tours de Lower Manhattan vues de Brooklyn",
+      "enCaption": "Lower Manhattan skyline from Brooklyn Bridge Park",
+      "transformations": "EXIF orientation, 1800x1400 maximum, WebP 83"
+    },
+    {
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ],
+      "bytes": 422428,
+      "sha256": "ea90343ad267b67edc499791597f804e41fb4c2b7e52848deff2959f8b27e0a7",
+      "key": "scene-5",
+      "localPath": "/public/images/travel/new-york-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tribeca_Manhattan_July_2026_24.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Tribeca_Manhattan_July_2026_24.jpg/1920px-Tribeca_Manhattan_July_2026_24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Kidfly182",
+      "credit": "Kidfly182",
+      "commonsArtistMetadata": "Kidfly182",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "frCaption": "Les rues de Tribeca, Manhattan",
+      "enCaption": "Tribeca streets, Manhattan",
+      "transformations": "EXIF orientation, 1800x1400 maximum, WebP 83"
+    },
+    {
+      "originalSize": [
+        1920,
+        1387
+      ],
+      "outputSize": [
+        1800,
+        1300
+      ],
+      "bytes": 535882,
+      "sha256": "91c4800253d7cb4b1e6811478669017d5c360c5823a9674e58dc29be9e3cd1e1",
+      "key": "scene-6",
+      "localPath": "/public/images/travel/new-york-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Lake_and_skyline_20261002.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/The_Lake_and_skyline_20261002.jpg/1920px-The_Lake_and_skyline_20261002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "VynedJ",
+      "credit": "VynedJ",
+      "commonsArtistMetadata": "VynedJ",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "frCaption": "Le lac de Central Park en automne",
+      "enCaption": "Central Park lake in autumn",
+      "transformations": "EXIF orientation, 1800x1400 maximum, WebP 83"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1800,
+        1350
+      ],
+      "bytes": 508628,
+      "sha256": "cee9d794a70f1a91c3c87b314bec4e6e4e4ed91a3d0036f38fb5f515ccbdc476",
+      "key": "scene-7",
+      "localPath": "/public/images/travel/new-york-premium/destination/scene-7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:New_York_skyline_from_Top_of_the_Rock.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/New_York_skyline_from_Top_of_the_Rock.jpg/1920px-New_York_skyline_from_Top_of_the_Rock.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Hugo Maestá",
+      "credit": "Hugo Maestá",
+      "commonsArtistMetadata": "Hugo Maestá",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "frCaption": "Les gratte-ciel de Manhattan vus du Top of the Rock",
+      "enCaption": "Manhattan skyline from Top of the Rock",
+      "transformations": "EXIF orientation, 1800x1400 maximum, WebP 83"
+    },
+    {
+      "originalSize": [
+        1920,
+        863
+      ],
+      "outputSize": [
+        1800,
+        809
+      ],
+      "bytes": 120224,
+      "sha256": "da6887e48c1a997e9313c7c4e944dcb35be27afe150fc1779a3964a9896be31e",
+      "key": "scene-8",
+      "localPath": "/public/images/travel/new-york-premium/destination/scene-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lower_Manhattan_Skyline_2024.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Lower_Manhattan_Skyline_2024.jpg/1920px-Lower_Manhattan_Skyline_2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "author": "Kidfly182",
+      "credit": "Kidfly182",
+      "commonsArtistMetadata": "Kidfly182",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "frCaption": "Lower Manhattan et l’Hudson depuis Pier 57",
+      "enCaption": "Lower Manhattan from Pier 57",
+      "transformations": "EXIF orientation, 1800x1400 maximum, WebP 83"
+    },
+    {
+      "originalSize": [
+        1080,
+        1350
+      ],
+      "outputSize": [
+        1080,
+        1350
+      ],
+      "bytes": 545094,
+      "sha256": "7e7ccc8dc76e7757b4bdb001846552b8c5422d02565703c2dc8057964cf7e60f",
+      "key": "scene-9",
+      "localPath": "/public/images/travel/new-york-premium/destination/scene-9.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Upper_East_Side_August_2026.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Upper_East_Side_August_2026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "author": "Kidfly182",
+      "credit": "Kidfly182",
+      "commonsArtistMetadata": "Kidfly182",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "frCaption": "L’Upper East Side, une rue résidentielle new-yorkaise",
+      "enCaption": "Residential street on the Upper East Side",
+      "transformations": "EXIF orientation, 1800x1400 maximum, WebP 83"
+    }
+  ]
+}
