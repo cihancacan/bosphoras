@@ -3,7 +3,7 @@
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
   "downloadedHotelCandidates": 12,
-  "downloadedDestinationCandidates": 9,
+  "downloadedDestinationCandidates": 8,
   "hotels": [
     {
       "key": "view-1",
@@ -507,30 +507,14 @@
       "placeLabel": "Grotte d'Antiparos",
       "searchQuery": "Antiparos Cave Greece",
       "slotIntent": "Grotte d'Antiparos",
-      "status": "candidate_needs_visual_review",
+      "status": "missing",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "New source candidate only: inspect actual photograph, property/geolocation, aesthetic quality and rights before approval.",
+      "visualQaWarning": "2024 cave close-up does not show cave scale; select grand chamber with stairs and warm lighting.",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Antiparos_cave.JPG",
-      "rejectedSource": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Antiparos_Cave_247279.jpg",
-      "rejectedOriginalSha256": "fe650fab516540f9e44c39998691322445b8e4e5fd6a9256858fee825a108646",
-      "rejectedCandidateContext": "Documented actual Antiparos cave photograph, 2024, Zde, CC BY-SA 4.0",
-      "localPath": "/images/travel/antiparos-premium/destination/scene-7.webp",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Antiparos_cave.JPG/1920px-Antiparos_cave.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "candidateContext": "File:Antiparos cave.JPG",
-      "credit": "Vitum · Public domain",
-      "license": "Public domain",
-      "sha256": "6701b90b0ee09a0da8582df6dd27e6b3d7d7f0bd471f6136d73126065314b05e",
-      "dhash": "0011001100011110000111110000111100001111001010111001101110011011",
-      "bytes": 574972,
-      "originalSize": [
-        1920,
-        1440
-      ],
-      "outputSize": [
-        1600,
-        1200
-      ]
+      "rejectedSource": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Antiparos_cave.JPG/1920px-Antiparos_cave.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "rejectedOriginalSha256": "6701b90b0ee09a0da8582df6dd27e6b3d7d7f0bd471f6136d73126065314b05e",
+      "rejectedCandidateContext": "File:Antiparos cave.JPG"
     },
     {
       "key": "scene-8",

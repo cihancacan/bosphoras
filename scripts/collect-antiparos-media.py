@@ -104,6 +104,11 @@ EXACT_SCENES={
  "scene-6":[]
 }
 EXACT_SCENE_URLS={
+ "scene-7":[(
+  "https://www.archetype.gr/uploads/blog-articles/158.jpg",
+  "https://www.archetype.gr/blog/arthro/meleti-axiopiisis-spilaiou",
+  "Genuine grand Antiparos cave interior, warm lighting and visitor stairway with mineral formations"
+ )],
  "scene-8":[(
   "https://cdn.sanity.io/images/dzx23dp4/production/23781956acbdb0c4fa3c125ebc6286416ab29721-2000x1125.jpg?rect=0,0,1688,1125&w=1920&h=1280&fit=max&auto=format",
   "https://www.sight2sight.com/de/c/despotiko/c/private-touren-despotiko",
@@ -199,7 +204,7 @@ def capture(item,opts,seenURLs,seenHashes,seenDHash):
 def main():
  m=json.loads(DOC.read_text(encoding="utf8"));items=m["hotels"]+m["destinationScenes"]
  seenURLs={u.split("?")[0] for x in items for u in (x.get("downloadUrl"),x.get("rejectedSource")) if isinstance(u,str) and u.startswith("https://")}
- seenHashes={x["sha256"] for x in items if x.get("sha256")}
+ seenHashes={v for x in items for v in (x.get("sha256"),x.get("rejectedOriginalSha256")) if v}
  seenDHash=[x["dhash"] for x in items if x.get("dhash")]
  siteCache={}
  for item in m["hotels"]:
