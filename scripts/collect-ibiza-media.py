@@ -65,6 +65,18 @@ EXACT_HOTEL={
    "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
    "Different official aerial photo of Six Senses Ibiza swimming pool and sea cliff terraces")],
  "the-standard-ibiza/view-1":[
+ ("https://media.cntraveller.com/photos/626bcbc7bc5f4696fd3c936f/16:9/w_2560,c_limit/the%20standard%20ibiza-apr22-pr3.jpeg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Actual rooftop at The Standard Ibiza, source CN Traveller property review"),
+ ("https://media.cntraveller.com/photos/626bcbc7bc5f4696fd3c936f/16%3A9/w_2560%2Cc_limit/the%2520standard%2520ibiza-apr22-pr3.jpeg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Actual rooftop at The Standard Ibiza, original source image"),
+ ("https://media.cntraveller.com/photos/626bcbc7bc5f4696fd3c936f/master/w_1600,c_limit/the%20standard%20ibiza-apr22-pr3.jpeg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","The Standard Ibiza rooftop and city venue photographed for hotel review")],
+ "the-standard-ibiza/view-2":[
+ ("https://media.cntraveller.com/photos/626bcba607f3ba05725cd551/16%3A9/w_2560%2Cc_limit/suite-the%2520standard%2520ibiza-apr22-pr2.jpg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Actual guest suite at The Standard Ibiza, source hotel review"),
+ ("https://media.cntraveller.com/photos/626bcba607f3ba05725cd551/16:9/w_2560,c_limit/suite-the%20standard%20ibiza-apr22-pr2.jpg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Actual Standard Ibiza hotel guest suite"),
+ ("https://media.cntraveller.com/photos/626bcba607f3ba05725cd551/master/w_1600,c_limit/suite-the%20standard%20ibiza-apr22-pr2.jpg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Actual guest suite from Standard Ibiza")],
+ "the-standard-ibiza/view-3":[
+ ("https://media.cntraveller.com/photos/626bcb35b25d31f55e79d7ab/16%3A9/w_2560%2Cc_limit/jara-the%2520standard%2520ibiza-apr22-pr2.jpg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Jara restaurant at The Standard Ibiza, photographed for hotel review"),
+ ("https://media.cntraveller.com/photos/626bcb35b25d31f55e79d7ab/16:9/w_2560,c_limit/jara-the%20standard%20ibiza-apr22-pr2.jpg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Actual Jara restaurant interior, The Standard Ibiza"),
+ ("https://media.cntraveller.com/photos/626bcb35b25d31f55e79d7ab/master/w_1600,c_limit/jara-the%20standard%20ibiza-apr22-pr2.jpg","https://www.cntraveller.com/hotels/the-standard-ibiza-review","Jara restaurant, actual The Standard Ibiza")],
+ "the-standard-ibiza/view-1":[
   ("https://duvx7h32ggrur.cloudfront.net/attachments/47aba2f118b88a9763eca8afcc54d533a924092b/store/optimize_v1/1600/85/jpeg/7082549f233a26443d1930495de8998d4cea865361708c53ca5f04ff4ff2/the-standard-ibiza-hotel-my-ibiza-13-1-.jpg",
    "https://www.standardhotels.com/ibiza/properties/ibiza",
    "Official The Standard Ibiza rooftop/venue photograph, Eivissa Old Town property rather than the beach")],
