@@ -40,3 +40,5 @@ jobs:
             done
             exit 1
           fi
+
+# Run the source-only Necker Island collector after original-image resolution has been verified.
