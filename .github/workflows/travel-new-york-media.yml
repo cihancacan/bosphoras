@@ -50,3 +50,5 @@ jobs:
           name: travel-new-york-media-report
           path: data/travel/newYorkMediaCandidates.json
           if-no-files-found: ignore
+
+# Run source-media workflow once; intentionally no [travel-batch-ready] Vercel marker.
