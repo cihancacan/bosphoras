@@ -1,0 +1,52 @@
+name: Travel Formentera — 21 source-linked photos to GitHub (no Vercel build)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - .github/workflows/travel-formentera-media.yml
+      - scripts/collect-formentera-media.py
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: travel-formentera-photos
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install image dependencies
+        run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12'
+      - name: Collect authentic hotel and location photos
+        run: python -u scripts/collect-formentera-media.py
+      - name: Validate 88 catalog items and 21 distinct signed photographs
+        run: |
+          node scripts/check-formentera-draft.mjs
+          node scripts/check-travel-catalogue.mjs
+      - name: Commit photos and audited source provenance, not a Preview build
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- public/images/travel/formentera-premium data/travel/formenteraMediaCandidates.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): Formentera 21 unique hotel and landscape WebPs [skip ci]'
+            for attempt in 1 2 3 4 5; do
+              git fetch origin feature/luxury-travel-seo-destinations-20261012
+              git rebase origin/feature/luxury-travel-seo-destinations-20261012
+              if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then
+                echo 'Formentera originals committed without Vercel build'
+                exit 0
+              fi
+              echo "Concurrent update, retry $attempt"
+              sleep 2
+            done
+            exit 1
+          fi
