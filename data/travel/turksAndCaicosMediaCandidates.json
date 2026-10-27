@@ -1,0 +1,627 @@
+{
+  "destination": "turks-and-caicos",
+  "hotels": [
+    {
+      "key": "view-1",
+      "propertyKey": "amanyara",
+      "property": "Amanyara",
+      "sourcePage": "https://www.aman.com/resorts/amanyara/gallery",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/full_size_extra_large/public/2021-12/Amanyara%2C%20Vila%2033%20-%20The%20Artist%27s%20Villa.webp?itok=pX1vt9yM",
+      "credit": "Amanyara · official property publisher (photographer not independently identified)",
+      "license": "Bosphoras operator-attested permission; photographer-level licence requires independent verification",
+      "licenseUrl": "https://www.aman.com/resorts/amanyara/gallery",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Individual visual/photo rights review pending",
+      "frCaption": "Amanyara · visuel de la galerie officielle, catégorie à confirmer",
+      "enCaption": "Amanyara · original property image, category to confirm",
+      "sourceAlt": "",
+      "localPath": "/images/travel/turks-and-caicos-premium/amanyara/view-1.webp",
+      "sha256": "8d4d0408cb19c2ac042777c5ef70f22c041a9459fd8f2ddae1fcd8fb255a11a3",
+      "bytes": 165492,
+      "originalSize": [
+        1440,
+        890
+      ],
+      "outputSize": [
+        1440,
+        890
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "amanyara",
+      "property": "Amanyara",
+      "sourcePage": "https://www.aman.com/resorts/amanyara/gallery",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/full_size_extra_large/public/2024-05/amanyara_turks_caicos_-_accommodation_villa_33.webp?itok=DU9UPLJ8",
+      "credit": "Amanyara · official property publisher (photographer not independently identified)",
+      "license": "Bosphoras operator-attested permission; photographer-level licence requires independent verification",
+      "licenseUrl": "https://www.aman.com/resorts/amanyara/gallery",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Individual visual/photo rights review pending",
+      "frCaption": "Amanyara · visuel de la galerie officielle, catégorie à confirmer",
+      "enCaption": "Amanyara · original property image, category to confirm",
+      "sourceAlt": "",
+      "localPath": "/images/travel/turks-and-caicos-premium/amanyara/view-2.webp",
+      "sha256": "656c490949f8f5e86b388b90ae5d9c51d58ac0ef7f81a38bbfb0fd21874d0b48",
+      "bytes": 61808,
+      "originalSize": [
+        1440,
+        890
+      ],
+      "outputSize": [
+        1440,
+        890
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "amanyara",
+      "property": "Amanyara",
+      "sourcePage": "https://www.aman.com/resorts/amanyara/gallery",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/full_size_extra_large/public/2024-08/amanyara_turks_caicos_-_exterior_beach.webp?itok=4UvOdMYy",
+      "credit": "Amanyara · official property publisher (photographer not independently identified)",
+      "license": "Bosphoras operator-attested permission; photographer-level licence requires independent verification",
+      "licenseUrl": "https://www.aman.com/resorts/amanyara/gallery",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Individual visual/photo rights review pending",
+      "frCaption": "Amanyara · visuel de la galerie officielle, catégorie à confirmer",
+      "enCaption": "Amanyara · original property image, category to confirm",
+      "sourceAlt": "",
+      "localPath": "/images/travel/turks-and-caicos-premium/amanyara/view-3.webp",
+      "sha256": "0278a52f6d0a72c3485e8061edd8c74d9186d7229e14629cf570fb0351f77ab8",
+      "bytes": 184008,
+      "originalSize": [
+        1440,
+        890
+      ],
+      "outputSize": [
+        1440,
+        890
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "como",
+      "property": "COMO Parrot Cay",
+      "sourcePage": "https://www.comohotels.com/turks-and-caicos/como-parrot-cay",
+      "downloadUrl": "https://de87ve0y4m3tc.cloudfront.net/comohotels.com-2459770069/cms/cache/v2/631eb755dd989.jpg/1920x1080/fit;c:0,1092,3024,2793;fp:67,52/80/68e9d39b4fbbd84af9ecd33f6efc921d.jpg",
+      "credit": "COMO Parrot Cay · official property publisher (photographer not independently identified)",
+      "license": "Bosphoras operator-attested permission; photographer-level licence requires independent verification",
+      "licenseUrl": "https://www.comohotels.com/turks-and-caicos/como-parrot-cay",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Individual visual/photo rights review pending",
+      "frCaption": "COMO Parrot Cay · visuel de la galerie officielle, catégorie à confirmer",
+      "enCaption": "COMO Parrot Cay · original property image, category to confirm",
+      "sourceAlt": "A Beach With Houses And Trees",
+      "localPath": "/images/travel/turks-and-caicos-premium/como/view-1.webp",
+      "sha256": "7e29ebc54bfa5cab824df2481b5db5d6418abd871cf9d0cb93363be18eb1700c",
+      "bytes": 282898,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1450,
+        816
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "como",
+      "property": "COMO Parrot Cay",
+      "sourcePage": "https://www.comohotels.com/turks-and-caicos/como-parrot-cay",
+      "downloadUrl": "https://de87ve0y4m3tc.cloudfront.net/comohotels.com-2459770069/cms/cache/v2/631eb771aaf57.jpg/1772x1180/fit/80/5c30ed5105cecff79012bccb827162df.jpg",
+      "credit": "COMO Parrot Cay · official property publisher (photographer not independently identified)",
+      "license": "Bosphoras operator-attested permission; photographer-level licence requires independent verification",
+      "licenseUrl": "https://www.comohotels.com/turks-and-caicos/como-parrot-cay",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Individual visual/photo rights review pending",
+      "frCaption": "COMO Parrot Cay · visuel de la galerie officielle, catégorie à confirmer",
+      "enCaption": "COMO Parrot Cay · original property image, category to confirm",
+      "sourceAlt": "A Beach With Houses And Trees",
+      "localPath": "/images/travel/turks-and-caicos-premium/como/view-2.webp",
+      "sha256": "9f046e052023cc76ab41754016e1cadad234de4493c49606dee3bfafa301051c",
+      "bytes": 128246,
+      "originalSize": [
+        1772,
+        1180
+      ],
+      "outputSize": [
+        1450,
+        966
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "como",
+      "property": "COMO Parrot Cay",
+      "sourcePage": "https://www.comohotels.com/turks-and-caicos/como-parrot-cay",
+      "downloadUrl": "https://de87ve0y4m3tc.cloudfront.net/comohotels.com-2459770069/cms/cache/v2/631eb77515248.jpg/1772x1180/fit/80/3360b62d8a037d6dcaea571939dd9014.jpg",
+      "credit": "COMO Parrot Cay · official property publisher (photographer not independently identified)",
+      "license": "Bosphoras operator-attested permission; photographer-level licence requires independent verification",
+      "licenseUrl": "https://www.comohotels.com/turks-and-caicos/como-parrot-cay",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Individual visual/photo rights review pending",
+      "frCaption": "COMO Parrot Cay · visuel de la galerie officielle, catégorie à confirmer",
+      "enCaption": "COMO Parrot Cay · original property image, category to confirm",
+      "sourceAlt": "A Building On A Beach",
+      "localPath": "/images/travel/turks-and-caicos-premium/como/view-3.webp",
+      "sha256": "582ee99ec19b608c23186f53b5212ce19b5c2120848a12b312dd32c7b95b2325",
+      "bytes": 259768,
+      "originalSize": [
+        1772,
+        1180
+      ],
+      "outputSize": [
+        1450,
+        966
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "shoreclub",
+      "property": "The Shore Club",
+      "sourcePage": "https://www.fivestaralliance.com/luxury-hotels/providenciales/the-shore-club-turks-and-caicos",
+      "downloadUrl": "https://www.fivestaralliance.com/files/fivestaralliance.com/field/image/nodes/2019/45781/Shore%20Club%20Turks%20Caicos.jpg",
+      "credit": "Five Star Alliance · property photograph of The Shore Club (individual photographer not identified)",
+      "license": "Bosphoras operator-attested photo use; original photographer and publisher distribution rights require review",
+      "licenseUrl": "https://www.fivestaralliance.com/luxury-hotels/providenciales/the-shore-club-turks-and-caicos",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Partner-published authentic property photo; final licence and visual review pending",
+      "frCaption": "The Shore Club · panorama aérien de l’hôtel sur Long Bay",
+      "enCaption": "The Shore Club · aerial Long Bay resort and beach",
+      "sourceAlt": "The Shore Club · panorama aérien de l’hôtel sur Long Bay",
+      "localPath": "/images/travel/turks-and-caicos-premium/shoreclub/view-1.webp",
+      "sha256": "5b3eee62212d9dae97a0bae0bc6bbfe398b9193cde9e982ec0a653fc48536a38",
+      "bytes": 227916,
+      "originalSize": [
+        3095,
+        2506
+      ],
+      "outputSize": [
+        1297,
+        1050
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "shoreclub",
+      "property": "The Shore Club",
+      "sourcePage": "https://www.inspirato.com/destinations/turks-caicos/properties/the-shore-club/",
+      "downloadUrl": "https://cms.inspirato.com/ImageGen.ashx?image=%2Fmedia%2F9455000%2Fthe-shore-club-long-bay-beach-9277.jpg&width=1081.5",
+      "credit": "Inspirato · property photograph of The Shore Club (individual photographer not identified)",
+      "license": "Bosphoras operator-attested photo use; original photographer and publisher distribution rights require review",
+      "licenseUrl": "https://www.inspirato.com/destinations/turks-caicos/properties/the-shore-club/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Partner-published authentic property photo; final licence and visual review pending",
+      "frCaption": "The Shore Club · galerie extérieure avec vue sur la plage",
+      "enCaption": "The Shore Club · beachfront architecture and terrace",
+      "sourceAlt": "The Shore Club · galerie extérieure avec vue sur la plage",
+      "localPath": "/images/travel/turks-and-caicos-premium/shoreclub/view-2.webp",
+      "sha256": "798bf3246f9a10f26de85d728749e316063184418a104a215128d3caec1cdbba",
+      "bytes": 185160,
+      "originalSize": [
+        2560,
+        1440
+      ],
+      "outputSize": [
+        1450,
+        816
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "shoreclub",
+      "property": "The Shore Club",
+      "sourcePage": "https://ca.trip.com/hotels/providenciales-hotel-detail-9544030/the-shore-club-turks-and-caicos/",
+      "downloadUrl": "https://ak-d.tripcdn.com/images/0224h12000k7f4yvl6530_R_960_660_R5_D.jpg",
+      "credit": "Trip.com · property photograph of The Shore Club (individual photographer not identified)",
+      "license": "Bosphoras operator-attested photo use; original photographer and publisher distribution rights require review",
+      "licenseUrl": "https://ca.trip.com/hotels/providenciales-hotel-detail-9544030/the-shore-club-turks-and-caicos/",
+      "rightsEvidenceType": "operator_self_attestation_partner_publisher",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Partner-published authentic property photo; final licence and visual review pending",
+      "frCaption": "The Shore Club · piscine et végétation devant Long Bay",
+      "enCaption": "The Shore Club · actual beachfront pool and landscape",
+      "sourceAlt": "The Shore Club · piscine et végétation devant Long Bay",
+      "localPath": "/images/travel/turks-and-caicos-premium/shoreclub/view-3.webp",
+      "sha256": "db303b9e4eceffcbc12b08ebcf92f836334f25998a488eb58a5d330b8556b036",
+      "bytes": 132006,
+      "originalSize": [
+        960,
+        660
+      ],
+      "outputSize": [
+        960,
+        660
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "wymara",
+      "property": "Wymara Resort + Villas",
+      "sourcePage": "https://www.wymara.com/gallery",
+      "downloadUrl": "https://irp.cdn-website.com/1ce73612/dms3rep/multi/opt/1401+Oceanview+Studio+Bedroom_0001+TV+copy-1920w.jpg?jxl&v=jxl",
+      "credit": "Wymara Resort + Villas · official property publisher (photographer not independently identified)",
+      "license": "Bosphoras operator-attested permission; photographer-level licence requires independent verification",
+      "licenseUrl": "https://www.wymara.com/gallery",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Individual visual/photo rights review pending",
+      "frCaption": "Wymara Resort + Villas · visuel de la galerie officielle, catégorie à confirmer",
+      "enCaption": "Wymara Resort + Villas · original property image, category to confirm",
+      "sourceAlt": "Wymara Resort + Villas, Grace Bay, Turks and Caicos",
+      "localPath": "/images/travel/turks-and-caicos-premium/wymara/view-1.webp",
+      "sha256": "8931ee555aad8c55b91fff867930a4aa98645a2be4c690d8fec18af9fb0acd88",
+      "bytes": 64314,
+      "originalSize": [
+        1920,
+        1314
+      ],
+      "outputSize": [
+        1450,
+        992
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "wymara",
+      "property": "Wymara Resort + Villas",
+      "sourcePage": "https://www.wymara.com/gallery",
+      "downloadUrl": "https://irp.cdn-website.com/1ce73612/dms3rep/multi/opt/1503+%28aka+1508%29+One+Bedroom+Penthouse+Suite+Dining+Area_0001+v1+copy-1920w.jpg?jxl&v=jxl",
+      "credit": "Wymara Resort + Villas · official property publisher (photographer not independently identified)",
+      "license": "Bosphoras operator-attested permission; photographer-level licence requires independent verification",
+      "licenseUrl": "https://www.wymara.com/gallery",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Individual visual/photo rights review pending",
+      "frCaption": "Wymara Resort + Villas · visuel de la galerie officielle, catégorie à confirmer",
+      "enCaption": "Wymara Resort + Villas · original property image, category to confirm",
+      "sourceAlt": "Wymara Resort + Villas, Grace Bay, Turks and Caicos",
+      "localPath": "/images/travel/turks-and-caicos-premium/wymara/view-2.webp",
+      "sha256": "d92faefd6c30499d3f011d831253dcdf289543296ebca4b4cce74ca3cb0160f1",
+      "bytes": 78592,
+      "originalSize": [
+        1920,
+        1066
+      ],
+      "outputSize": [
+        1450,
+        805
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "wymara",
+      "property": "Wymara Resort + Villas",
+      "sourcePage": "https://www.wymara.com/gallery",
+      "downloadUrl": "https://irp.cdn-website.com/1ce73612/dms3rep/multi/opt/1503+%28aka+1508%29+One+Bedroom+Penthouse+Suite+Lounge_0001+v2+copy-1920w.jpg?jxl&v=jxl",
+      "credit": "Wymara Resort + Villas · official property publisher (photographer not independently identified)",
+      "license": "Bosphoras operator-attested permission; photographer-level licence requires independent verification",
+      "licenseUrl": "https://www.wymara.com/gallery",
+      "rightsEvidenceType": "operator_self_attestation",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Individual visual/photo rights review pending",
+      "frCaption": "Wymara Resort + Villas · visuel de la galerie officielle, catégorie à confirmer",
+      "enCaption": "Wymara Resort + Villas · original property image, category to confirm",
+      "sourceAlt": "Wymara Resort + Villas, Grace Bay, Turks and Caicos",
+      "localPath": "/images/travel/turks-and-caicos-premium/wymara/view-3.webp",
+      "sha256": "a6249dde51b52277922c2fee522a41412fcf416668b31b586d7a1a6d1060a0c0",
+      "bytes": 87708,
+      "originalSize": [
+        1920,
+        1057
+      ],
+      "outputSize": [
+        1450,
+        798
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "place": "Grace Bay Beach Facing North.jpg",
+      "frCaption": "Grace Bay · sable blanc et eau turquoise",
+      "enCaption": "Grace Bay · white sand and turquoise sea",
+      "rightsEvidenceType": "wikimedia_commons_open_licence",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Visual review and attribution compliance pending",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Grace_Bay_Beach_Facing_North.jpg/1920px-Grace_Bay_Beach_Facing_North.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Grace_Bay_Beach_Facing_North.jpg",
+      "credit": "Coolcaesar",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "localPath": "/images/travel/turks-and-caicos-premium/destination/scene-1.webp",
+      "sha256": "c7f370bbd0a7a27574cda12ad4b10bdc3e65ed931f64f39e09c714e2e128007e",
+      "bytes": 91170,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1450,
+        967
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "scene-2",
+      "place": "Long Bay Beach, Turks and Caicos Islands (Unsplash).jpg",
+      "frCaption": "Long Bay · lagon turquoise sur Providenciales",
+      "enCaption": "Long Bay · shallow turquoise shore",
+      "rightsEvidenceType": "wikimedia_commons_open_licence",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Visual review and attribution compliance pending",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Long_Bay_Beach%2C_Turks_and_Caicos_Islands_%28Unsplash%29.jpg/1920px-Long_Bay_Beach%2C_Turks_and_Caicos_Islands_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Long_Bay_Beach,_Turks_and_Caicos_Islands_(Unsplash).jpg",
+      "credit": "Deanna Ritchie deannaritchie",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "localPath": "/images/travel/turks-and-caicos-premium/destination/scene-2.webp",
+      "sha256": "e4e6950dc217cc5ef6c433d3bd983be366d68dad9bd5d9e1b6893c8affb9a4d1",
+      "bytes": 260914,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1450,
+        967
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "scene-3",
+      "place": "Chalk Sound - Providenciales.jpg",
+      "frCaption": "Chalk Sound · lagon naturel (photo d’archives de 2009)",
+      "enCaption": "Chalk Sound · natural lagoon (2009 archival photograph)",
+      "rightsEvidenceType": "wikimedia_commons_open_licence",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Visual review and attribution compliance pending",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Chalk_Sound_-_Providenciales.jpg/1920px-Chalk_Sound_-_Providenciales.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chalk_Sound_-_Providenciales.jpg",
+      "credit": "Simone Costa",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Chalk_Sound_-_Providenciales.jpg",
+      "localPath": "/images/travel/turks-and-caicos-premium/destination/scene-3.webp",
+      "sha256": "975116ee2706f2c705106cceb45d7a85cdff77625e6ce9a3358b7438fc70fb7e",
+      "bytes": 229788,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1400,
+        1050
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "scene-4",
+      "place": "Turtle Cove Providenciales Beach.jpg",
+      "frCaption": "Turtle Cove · littoral près de la marina",
+      "enCaption": "Turtle Cove · shoreline near the marina",
+      "rightsEvidenceType": "wikimedia_commons_open_licence",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Visual review and attribution compliance pending",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Turtle_Cove_Providenciales_Beach.jpg/1920px-Turtle_Cove_Providenciales_Beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Turtle_Cove_Providenciales_Beach.jpg",
+      "credit": "Tim Sackton",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "localPath": "/images/travel/turks-and-caicos-premium/destination/scene-4.webp",
+      "sha256": "257a6f4aa0e0becb628a7f7024266a5c3020485a28594f780d46b593c05531ca",
+      "bytes": 286704,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1450,
+        967
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "scene-5",
+      "place": "Quiet Beach - panoramio.jpg",
+      "frCaption": "Providenciales · plage paisible (secteur exact à vérifier)",
+      "enCaption": "Providenciales · tranquil beach (exact sector unverified)",
+      "rightsEvidenceType": "wikimedia_commons_open_licence",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Visual review and attribution compliance pending",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Quiet_Beach_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Quiet_Beach_-_panoramio.jpg",
+      "credit": "pomarius",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "localPath": "/images/travel/turks-and-caicos-premium/destination/scene-5.webp",
+      "sha256": "2ef049c97b5f558eb5b08e55c25f58cf35c3c53771c9a8ef62914e7413ebef4b",
+      "bytes": 83600,
+      "originalSize": [
+        1600,
+        1200
+      ],
+      "outputSize": [
+        1400,
+        1050
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "scene-6",
+      "place": "Turquoise Water to the Horizon.jpg",
+      "frCaption": "Providenciales · horizon turquoise",
+      "enCaption": "Providenciales · clear blue horizon",
+      "rightsEvidenceType": "wikimedia_commons_open_licence",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Visual review and attribution compliance pending",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Turquoise_Water_to_the_Horizon.jpg/1920px-Turquoise_Water_to_the_Horizon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Turquoise_Water_to_the_Horizon.jpg",
+      "credit": "Coolcaesar",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "localPath": "/images/travel/turks-and-caicos-premium/destination/scene-6.webp",
+      "sha256": "6f9cdf40fc330bdd6a36baf0cd39038e44d1b96cf86b288e25b1e1797aac1d44",
+      "bytes": 206312,
+      "originalSize": [
+        1920,
+        1249
+      ],
+      "outputSize": [
+        1450,
+        943
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "scene-7",
+      "place": "Sunset in the Amanyara Resort.jpg",
+      "frCaption": "Northwest Point · lumière du soir près d’Amanyara",
+      "enCaption": "Northwest Point · evening light near Amanyara",
+      "rightsEvidenceType": "wikimedia_commons_open_licence",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Visual review and attribution compliance pending",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Sunset_in_the_Amanyara_Resort.jpg/1920px-Sunset_in_the_Amanyara_Resort.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sunset_in_the_Amanyara_Resort.jpg",
+      "credit": "Alessandra Brunhildmedia",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/turks-and-caicos-premium/destination/scene-7.webp",
+      "sha256": "a2fbb817b4712b873896ff62bc8fa5ae91ca71bbd5872408d3e62eeff5b4ef9e",
+      "bytes": 54388,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1450,
+        967
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "scene-8",
+      "place": "Grace bay, Turks and Caicos (44250116614).jpg",
+      "frCaption": "Grace Bay · seconde perspective de la plage",
+      "enCaption": "Grace Bay · an alternative perspective on the beach",
+      "rightsEvidenceType": "wikimedia_commons_open_licence",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Visual review and attribution compliance pending",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Grace_bay%2C_Turks_and_Caicos_%2844250116614%29.jpg/1920px-Grace_bay%2C_Turks_and_Caicos_%2844250116614%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Grace_bay,_Turks_and_Caicos_(44250116614).jpg",
+      "credit": "VV Nincic from Toronto, Canada",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "localPath": "/images/travel/turks-and-caicos-premium/destination/scene-8.webp",
+      "sha256": "b789b510a211c81730ea030873fac847d137e4aa60b45248c84d797d192e5a79",
+      "bytes": 73804,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1450,
+        967
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    },
+    {
+      "key": "scene-9",
+      "place": "Ocean Club Sunset - panoramio.jpg",
+      "frCaption": "Providenciales · atmosphère au coucher du soleil",
+      "enCaption": "Providenciales · atmospheric island sunset",
+      "rightsEvidenceType": "wikimedia_commons_open_licence",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": false,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "Visual review and attribution compliance pending",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Ocean_Club_Sunset_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ocean_Club_Sunset_-_panoramio.jpg",
+      "credit": "pomarius",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "localPath": "/images/travel/turks-and-caicos-premium/destination/scene-9.webp",
+      "sha256": "49564b85176640b48c41e0b97a0179efba887fa25113763da8b0b44ac0f12ef3",
+      "bytes": 24542,
+      "originalSize": [
+        1632,
+        1224
+      ],
+      "outputSize": [
+        1400,
+        1050
+      ],
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+    }
+  ],
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "publicationBlockedReason": "Image provenance downloaded but independent display review and photo-rights clearance still pending; noindex",
+  "photoRightsBasis": "Hotel sources are publisher-controlled; general operator permission attested, not independent original photographer release. Wikimedia Commons captions and licences preserved.",
+  "downloadIssues": [],
+  "duplicatesFound": 0
+}
