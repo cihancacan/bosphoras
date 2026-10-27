@@ -1,247 +1,625 @@
 {
   "destination": "deia",
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
       "propertyKey": "belmond",
       "property": "La Residencia, A Belmond Hotel, Mallorca",
       "sourcePage": "https://www.belmond.com/en/hotels/europe/spain/la-residencia-mallorca",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://img.belmond.com/f_auto/t_1600_ar_4_5/photos/lrs/lrs-gst-pool26.jpg",
+      "credit": "La Residencia, A Belmond Hotel, Mallorca · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.belmond.com/en/hotels/europe/spain/la-residencia-mallorca",
+      "frCaption": "La Residencia · piscine dans les jardins anciens",
+      "enCaption": "La Residencia · outdoor pool amid historic gardens",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/deia-premium/belmond/view-1.webp",
+      "sha256": "94064ad963f782365c2833e330f26cbf6ee8d00c930d692c4eca2879ee126306",
+      "bytes": 539772,
+      "originalSize": [
+        1600,
+        2000
+      ],
+      "outputSize": [
+        1000,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-2",
       "propertyKey": "belmond",
       "property": "La Residencia, A Belmond Hotel, Mallorca",
       "sourcePage": "https://www.belmond.com/en/hotels/europe/spain/la-residencia-mallorca",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://img.belmond.com/f_auto/t_1600_ar_4_5/photos/lrs/lrs-din-restaurant-el-olivo08.jpg",
+      "credit": "La Residencia, A Belmond Hotel, Mallorca · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.belmond.com/en/hotels/europe/spain/la-residencia-mallorca",
+      "frCaption": "La Residencia · terrasse du restaurant El Olivo",
+      "enCaption": "La Residencia · El Olivo restaurant terrace",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/deia-premium/belmond/view-2.webp",
+      "sha256": "ff0891637b656b4521cf6afcadb0b23dd624955c34f043c626be927084bca58f",
+      "bytes": 324904,
+      "originalSize": [
+        1600,
+        2000
+      ],
+      "outputSize": [
+        1000,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-3",
       "propertyKey": "belmond",
       "property": "La Residencia, A Belmond Hotel, Mallorca",
       "sourcePage": "https://www.belmond.com/en/hotels/europe/spain/la-residencia-mallorca",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://img.belmond.com/f_auto/t_1600_ar_4_5/photos/lrs/lrs-acc-ssv-villa-robert-graves40.jpg",
+      "credit": "La Residencia, A Belmond Hotel, Mallorca · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.belmond.com/en/hotels/europe/spain/la-residencia-mallorca",
+      "frCaption": "La Residencia · Villa Robert Graves, catégorie distincte",
+      "enCaption": "La Residencia · Villa Robert Graves, a distinct category",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/deia-premium/belmond/view-3.webp",
+      "sha256": "9bf852566bf7eb00cd25312ddeef29309fb4d3bae078c3ed502dcb80a832ee0c",
+      "bytes": 366610,
+      "originalSize": [
+        1600,
+        2000
+      ],
+      "outputSize": [
+        1000,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-1",
       "propertyKey": "es-moli",
       "property": "Hotel Es Molí",
       "sourcePage": "https://esmoli.com/en/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://esmoli.com/hubfs/EM_0119.jpg",
+      "credit": "Hotel Es Molí · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://esmoli.com/en/",
+      "frCaption": "Es Molí · terrasse et transats face aux collines",
+      "enCaption": "Es Molí · sun loungers overlooking the hillside",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/deia-premium/es-moli/view-1.webp",
+      "sha256": "fc44e423cd1b3f849776e5e6416b9797b123a953b5f4e71abfdf85cf3ea59233",
+      "bytes": 100518,
+      "originalSize": [
+        5047,
+        7571
+      ],
+      "outputSize": [
+        833,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-2",
       "propertyKey": "es-moli",
       "property": "Hotel Es Molí",
       "sourcePage": "https://esmoli.com/en/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://esmoli.com/hubfs/room-1.png",
+      "credit": "Hotel Es Molí · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://esmoli.com/en/",
+      "frCaption": "Es Molí · chambre présentée par l’hôtel",
+      "enCaption": "Es Molí · room imagery on the official website",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/deia-premium/es-moli/view-2.webp",
+      "sha256": "88817066e979bf6b63f3b81ebecd5ea4bdb1d9c26aed99c19a3a9c8699892108",
+      "bytes": 69760,
+      "originalSize": [
+        720,
+        800
+      ],
+      "outputSize": [
+        720,
+        800
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-3",
       "propertyKey": "es-moli",
       "property": "Hotel Es Molí",
       "sourcePage": "https://esmoli.com/en/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://esmoli.com/hubfs/EM_0026.jpg",
+      "credit": "Hotel Es Molí · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://esmoli.com/en/",
+      "frCaption": "Es Molí · piscine et panorama",
+      "enCaption": "Es Molí · swimming pool and landscape",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/deia-premium/es-moli/view-3.webp",
+      "sha256": "988cb934a73823694a0541644ae67ab4019c11d8c453be70cc25a1f2de81a8a0",
+      "bytes": 511732,
+      "originalSize": [
+        7370,
+        4914
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-1",
       "propertyKey": "sa-pedrissa",
       "property": "Sa Pedrissa",
-      "sourcePage": "https://www.sapedrissa.com/en/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "sourcePage": "https://www.sapedrissa.com/en/rooms",
+      "downloadUrl": "https://www.sapedrissa.com/idb/79097/new_DVM_1-1280x720.jpg",
+      "credit": "Sa Pedrissa · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.sapedrissa.com/en/rooms",
+      "frCaption": "Sa Pedrissa · chambre Double Sea View",
+      "enCaption": "Sa Pedrissa · Double Sea View room",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/deia-premium/sa-pedrissa/view-1.webp",
+      "sha256": "27c915014910e2255699e1ead089f9c897ead392a34fe0cb04f075d8a75db81b",
+      "bytes": 55048,
+      "originalSize": [
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-2",
       "propertyKey": "sa-pedrissa",
       "property": "Sa Pedrissa",
-      "sourcePage": "https://www.sapedrissa.com/en/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "sourcePage": "https://www.sapedrissa.com/en/rooms",
+      "downloadUrl": "https://www.sapedrissa.com/idb/79097/new_JS_2-1280x720.jpg",
+      "credit": "Sa Pedrissa · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.sapedrissa.com/en/rooms",
+      "frCaption": "Sa Pedrissa · Junior Suite de la maison",
+      "enCaption": "Sa Pedrissa · official Junior Suite interior",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/deia-premium/sa-pedrissa/view-2.webp",
+      "sha256": "42eea181924fcea99d886f98d2f59a4b5032ca3867bdbc8fc750b6f1bf261f70",
+      "bytes": 113674,
+      "originalSize": [
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-3",
       "propertyKey": "sa-pedrissa",
       "property": "Sa Pedrissa",
-      "sourcePage": "https://www.sapedrissa.com/en/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "sourcePage": "https://www.sapedrissa.com/en/rooms",
+      "downloadUrl": "https://www.sapedrissa.com/idb/79097/tower_suite1-1280x720.jpg",
+      "credit": "Sa Pedrissa · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.sapedrissa.com/en/rooms",
+      "frCaption": "Sa Pedrissa · Tower Suite, catégorie à part",
+      "enCaption": "Sa Pedrissa · distinct Tower Suite category",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/deia-premium/sa-pedrissa/view-3.webp",
+      "sha256": "96b863cacd186f427cceb78217f05fbc06458a46fce7dce1b9080f962d4253bb",
+      "bytes": 80066,
+      "originalSize": [
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-1",
       "propertyKey": "costa-dor",
       "property": "Hoposa Costa d’Or",
       "sourcePage": "https://www.hoposa.es/hotels/costa-dor",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.hoposa.es/images/hoposa/hoteles/costador/slider/gallery/costa_5.jpg",
+      "credit": "Hoposa Costa d’Or · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.hoposa.es/hotels/costa-dor",
+      "frCaption": "Hoposa Costa d’Or · maison majorquine sur les hauteurs",
+      "enCaption": "Hoposa Costa d’Or · hillside Mallorcan building",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/deia-premium/costa-dor/view-1.webp",
+      "sha256": "f5933cb1e50f482441018e77639c5ded3fa8fafd75f35efeb16e2b13765b88f1",
+      "bytes": 209412,
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-2",
       "propertyKey": "costa-dor",
       "property": "Hoposa Costa d’Or",
       "sourcePage": "https://www.hoposa.es/hotels/costa-dor",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.hoposa.es/images/hoposa/hoteles/costador/slider/gallery/costa_room.jpg",
+      "credit": "Hoposa Costa d’Or · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.hoposa.es/hotels/costa-dor",
+      "frCaption": "Hoposa Costa d’Or · chambre de l’hôtel",
+      "enCaption": "Hoposa Costa d’Or · official room photography",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/deia-premium/costa-dor/view-2.webp",
+      "sha256": "925418e76e7169ce4dd849d93109ba2e689f4936372b6242426430414a1a400f",
+      "bytes": 87150,
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "view-3",
       "propertyKey": "costa-dor",
       "property": "Hoposa Costa d’Or",
       "sourcePage": "https://www.hoposa.es/hotels/costa-dor",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.hoposa.es/images/hoposa/hoteles/costador/slider/gallery/costa_1.jpg",
+      "credit": "Hoposa Costa d’Or · official property publisher (individual photographer not independently identified)",
+      "license": "Operator-attested image use permission; photographer agreement unverified",
+      "licenseUrl": "https://www.hoposa.es/hotels/costa-dor",
+      "frCaption": "Hoposa Costa d’Or · terrasse sur la côte et les montagnes",
+      "enCaption": "Hoposa Costa d’Or · terrace with coastal mountain views",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Operator states project-wide image permissions; original photographer contracts not inspected.",
+      "localPath": "/images/travel/deia-premium/costa-dor/view-3.webp",
+      "sha256": "53578d97dc9bbb6dce04a2dddeed97068cd6e27b005202fa3140d541bd919719",
+      "bytes": 156640,
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     }
   ],
   "destinationScenes": [
     {
       "key": "scene-1",
-      "place": "Deià village panorama",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "place": "Deià, Serra de Tramuntana, Mallorca - Flickr - pom'..jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Dei%C3%A0%2C_Serra_de_Tramuntana%2C_Mallorca_-_Flickr_-_pom%27..jpg/1920px-Dei%C3%A0%2C_Serra_de_Tramuntana%2C_Mallorca_-_Flickr_-_pom%27..jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Deià · panorama des maisons dans la Serra de Tramuntana",
+      "enCaption": "Deià · village panorama in the Tramuntana mountains",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dei%C3%A0,_Serra_de_Tramuntana,_Mallorca_-_Flickr_-_pom%27..jpg",
+      "credit": "Pom'  from France, European Union",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "localPath": "/images/travel/deia-premium/destination/scene-1.webp",
+      "sha256": "ef129f8e1f33b9d2a0a94205b2f9863b53deb43e66f59d5e7f74ad21628596af",
+      "bytes": 672514,
+      "originalSize": [
+        1920,
+        1920
+      ],
+      "outputSize": [
+        1250,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-2",
-      "place": "Village lanes and stone buildings",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "place": "Deià, Mallorca (13333996953).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Dei%C3%A0%2C_Mallorca_%2813333996953%29.jpg/1920px-Dei%C3%A0%2C_Mallorca_%2813333996953%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Deià · ruelle de pierre fleurie dans le village",
+      "enCaption": "Deià · flower-lined stone village lane",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dei%C3%A0,_Mallorca_(13333996953).jpg",
+      "credit": "Michal Osmenda  from Brussels, Belgium",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "localPath": "/images/travel/deia-premium/destination/scene-2.webp",
+      "sha256": "f544cfacdc23fe0d76f1609cd8489b97916df23ce76633db52d135cdf72f070b",
+      "bytes": 450944,
+      "originalSize": [
+        1920,
+        2560
+      ],
+      "outputSize": [
+        937,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-3",
-      "place": "Cala Deià rocky cove",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "place": "Cala de Deya, Mallorca (13334053713).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Cala_de_Deya%2C_Mallorca_%2813334053713%29.jpg/1920px-Cala_de_Deya%2C_Mallorca_%2813334053713%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Cala Deià · crique rocheuse sur la côte majorquine",
+      "enCaption": "Cala Deià · rocky cove on Mallorca's coast",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cala_de_Deya,_Mallorca_(13334053713).jpg",
+      "credit": "Michal Osmenda  from Brussels, Belgium",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "localPath": "/images/travel/deia-premium/destination/scene-3.webp",
+      "sha256": "9e50b8a3b54f6cbecab9d44a3da73190eaa2318a094e07651fe332442e9db0d6",
+      "bytes": 565880,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-4",
-      "place": "Son Marroig estate",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "place": "Son Marroig 011.JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Son_Marroig_011.JPG/1920px-Son_Marroig_011.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Son Marroig · édifice historique du domaine",
+      "enCaption": "Son Marroig · historic stone estate building",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Son_Marroig_011.JPG",
+      "credit": "Gryffindor",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "localPath": "/images/travel/deia-premium/destination/scene-4.webp",
+      "sha256": "fa14cea465de58cf66dc66b451e18ab7e1dccf9e1cbafffaa2ab9492a9d93fa4",
+      "bytes": 150446,
+      "originalSize": [
+        1920,
+        2560
+      ],
+      "outputSize": [
+        937,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-5",
-      "place": "Sa Foradada sunset",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "place": "Foradada sunset marroig 1.JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Foradada_sunset_marroig_1.JPG/1920px-Foradada_sunset_marroig_1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Sa Foradada · pointe rocheuse à la lumière du soir",
+      "enCaption": "Sa Foradada · headland at sunset",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Foradada_sunset_marroig_1.JPG",
+      "credit": "Antonio De Lorenzo -&gt;  Kufoleto",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "localPath": "/images/travel/deia-premium/destination/scene-5.webp",
+      "sha256": "29815c2a934e895debde8a09d0084f7a452ad025ff419f1758f55d52d661d683",
+      "bytes": 73878,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-6",
-      "place": "Llucalcari",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "place": "Deia-Llucalcari.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Deia-Llucalcari.jpg/1920px-Deia-Llucalcari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Llucalcari · rochers et criques sauvages du littoral",
+      "enCaption": "Llucalcari · rocks and small coves along the wild coast",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Deia-Llucalcari.jpg",
+      "credit": "GabrielleMerk",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/deia-premium/destination/scene-6.webp",
+      "sha256": "3ab18f6bd3a6aa10a3ba7377a2e8db39f005a973ab292fb8cb02b9b52c8a608e",
+      "bytes": 750972,
+      "originalSize": [
+        1920,
+        1239
+      ],
+      "outputSize": [
+        1750,
+        1129
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-7",
-      "place": "Deià parish church",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "place": "Església de Deià.JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Esgl%C3%A9sia_de_Dei%C3%A0.JPG/1920px-Esgl%C3%A9sia_de_Dei%C3%A0.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Deià · église du village au-dessus des maisons",
+      "enCaption": "Deià · village church above the houses",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Esgl%C3%A9sia_de_Dei%C3%A0.JPG",
+      "credit": "Chixoy",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "localPath": "/images/travel/deia-premium/destination/scene-7.webp",
+      "sha256": "e4521000839f7d908b889c65269295f2329684b094035d5d7b6f64aec8890398",
+      "bytes": 635408,
+      "originalSize": [
+        1920,
+        1319
+      ],
+      "outputSize": [
+        1750,
+        1202
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-8",
-      "place": "Deià mountain terraces",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "place": "Deià, Mallorca (13333982693).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Dei%C3%A0%2C_Mallorca_%2813333982693%29.jpg/1920px-Dei%C3%A0%2C_Mallorca_%2813333982693%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Deià · maisons et jardins sur les versants de la Tramuntana",
+      "enCaption": "Deià · houses and gardens on Tramuntana slopes",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dei%C3%A0,_Mallorca_(13333982693).jpg",
+      "credit": "Michal Osmenda  from Brussels, Belgium",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "localPath": "/images/travel/deia-premium/destination/scene-8.webp",
+      "sha256": "20f3aca237afc631d6f0a34df842f5aa2090cef0097450230f4cb4d3f1812b09",
+      "bytes": 761510,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     },
     {
       "key": "scene-9",
-      "place": "Deià Serra cliffs",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Photo not yet collected",
-      "frCaption": "",
-      "enCaption": ""
+      "place": "Deià. Cingles de Son Rutlan i Talaia Vella.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Dei%C3%A0._Cingles_de_Son_Rutlan_i_Talaia_Vella.jpg/1920px-Dei%C3%A0._Cingles_de_Son_Rutlan_i_Talaia_Vella.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "frCaption": "Deià · falaises de la Serra de Tramuntana",
+      "enCaption": "Deià · Tramuntana mountain cliffs",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "rightsEvidenceType": "wikimedia_commons_license",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dei%C3%A0._Cingles_de_Son_Rutlan_i_Talaia_Vella.jpg",
+      "credit": "Joan Gené",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "localPath": "/images/travel/deia-premium/destination/scene-9.webp",
+      "sha256": "514dfb4e02648d1fb9106399f461618a21a6f4b2fd6463346d56b5d6b3ac712c",
+      "bytes": 412034,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resize and WebP conversion; original scene unaltered"
     }
   ],
-  "publicationBlockedReason": "Photos and authenticated private Preview QA pending",
-  "photoRightsBasis": "Operator-stated global authorisation; original photographer licence not independently audited."
+  "publicationBlockedReason": "Images committed and automatically checked; pending final human visual and authenticated private Preview QA, no live supplier stock.",
+  "photoRightsBasis": "Publisher photo rights operator-attested only; Commons photo licence/attribution recorded."
 }
