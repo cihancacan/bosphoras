@@ -13,9 +13,9 @@
       "licenseUrl": "https://careyes.net/iconic-villas",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Sol de Oriente : piscine circulaire suspendue au Pacifique",
       "enCaption": "Sol de Oriente: circular panoramic Pacific pool",
       "originalFile": "00-4-sol-de-oriente-luxury-villa-careyes-mexico-0786.jpg",
@@ -29,7 +29,8 @@
       ],
       "sha256": "397ee8559f2155df54c007ec7a814de2ec3337e9a91ac487543559250ea94a6e",
       "bytes": 259464,
-      "property": "Sol de Oriente — Iconic Villa"
+      "property": "Sol de Oriente — Iconic Villa",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "view-2",
@@ -43,9 +44,9 @@
       "licenseUrl": "https://careyes.net/accommodations",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Sol de Oriente : palapa sculpturale et terrasse",
       "enCaption": "Sol de Oriente: sculptural palapa and terrace",
       "originalFile": "00-2-sol-de-oriente-careyes-mexico-pacific-coast-careyitos.jpg",
@@ -59,7 +60,8 @@
       ],
       "sha256": "aa3a86aa9ac62518b84bb218c55e1658554cc61bf9448b3c03e608a2663145b4",
       "bytes": 146092,
-      "property": "Sol de Oriente — Iconic Villa"
+      "property": "Sol de Oriente — Iconic Villa",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "view-3",
@@ -73,9 +75,9 @@
       "licenseUrl": "https://careyes.com/architecture",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Sol de Oriente : architecture et panorama de Careyitos",
       "enCaption": "Sol de Oriente: landmark villa over Careyitos",
       "originalFile": "d-sol-de-oriente-luxury-villa-careyes-mexico-7982-terrace-sunbeds.jpg",
@@ -89,7 +91,8 @@
       ],
       "sha256": "fa783577326df62ff45d998927912680f5aafc55e1e6d1beaac488efe72242b6",
       "bytes": 110924,
-      "property": "Sol de Oriente — Iconic Villa"
+      "property": "Sol de Oriente — Iconic Villa",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "view-1",
@@ -103,9 +106,9 @@
       "licenseUrl": "https://careyes.net/villa-casita-carioca",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Casita Carioca : villa côtière colorée",
       "enCaption": "Casita Carioca: colourful oceanfront villa",
       "originalFile": "00-1-careyes-mexico-properties-villas-casita-carioca-_c_karlacifuentes-5348.jpg",
@@ -119,7 +122,8 @@
       ],
       "sha256": "c3cea9281bd16bb4c8d0202c99087c9abebdbf2f502f3c3eaeff4cb04a743df3",
       "bytes": 274472,
-      "property": "Casita Carioca — Signature Villa"
+      "property": "Casita Carioca — Signature Villa",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "view-2",
@@ -133,9 +137,9 @@
       "licenseUrl": "https://careyes.net/villa-casita-carioca",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Casita Carioca : piscine à débordement et terrasse",
       "enCaption": "Casita Carioca: infinity pool and terrace",
       "originalFile": "00-3-careyes-mexico-properties-villas-casita-carioca-drone-_c_karlacifuentes-0484.jpg",
@@ -149,7 +153,8 @@
       ],
       "sha256": "4cd66a6df19fce4521736cf0c7952445588a524374e775c354b322bd3e1c3710",
       "bytes": 229344,
-      "property": "Casita Carioca — Signature Villa"
+      "property": "Casita Carioca — Signature Villa",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "view-3",
@@ -163,9 +168,9 @@
       "licenseUrl": "https://careyes.net/villa-casita-carioca",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Casita Carioca : vie intérieure et vue sur la mer",
       "enCaption": "Casita Carioca: interior living and sea views",
       "originalFile": "02-4-careyes-mexico-properties-villas-casita-carioca-terrace-lounge-ocean-view-4273.jpg",
@@ -179,7 +184,8 @@
       ],
       "sha256": "b535f603f701ae7c6b9549b5ebe1035801fc5c0664ee99bf3c3cea3c86e2d9d9",
       "bytes": 102454,
-      "property": "Casita Carioca — Signature Villa"
+      "property": "Casita Carioca — Signature Villa",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "view-1",
@@ -193,9 +199,9 @@
       "licenseUrl": "https://careyes.net/el-careyes-club-and-residences",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "El Careyes Club : piscine à débordement face au Pacifique",
       "enCaption": "El Careyes Club: oceanfront infinity pool",
       "originalFile": "00-1-careyes-mexico-properties-el-careyes-club-and-residences-general-0444.jpg",
@@ -209,7 +215,8 @@
       ],
       "sha256": "f1dba2b1d728926e1b9c2974c208a97874b6539e4fbea1b97f7ea94f637b5a2a",
       "bytes": 208726,
-      "property": "El Careyes Club & Residences"
+      "property": "El Careyes Club & Residences",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "view-2",
@@ -223,9 +230,9 @@
       "licenseUrl": "https://careyes.net/el-careyes-club-and-residences",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "El Careyes Club : architecture des résidences privées",
       "enCaption": "El Careyes Club: private residence architecture",
       "originalFile": "03-2-careyes-mexico-properties-el-careyes-club-and-residences-general-pools-0326.jpg",
@@ -239,7 +246,8 @@
       ],
       "sha256": "3bb32afb7510b01d15ed27d4cea5eb2b90e90abe8409a942a8a237256c627e13",
       "bytes": 136966,
-      "property": "El Careyes Club & Residences"
+      "property": "El Careyes Club & Residences",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "view-3",
@@ -253,9 +261,9 @@
       "licenseUrl": "https://careyes.net/el-careyes-club-and-residences",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "El Careyes Club : espaces de détente et plage",
       "enCaption": "El Careyes Club: relaxing spaces and beach",
       "originalFile": "03-2-careyes-club-and-residences-general-lounge-pool-0365.jpg",
@@ -269,7 +277,8 @@
       ],
       "sha256": "11cbfa8d6513237d0f09d95f3e51f6c4015defb63cf32d1c08e9f240036053a9",
       "bytes": 114382,
-      "property": "El Careyes Club & Residences"
+      "property": "El Careyes Club & Residences",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "view-1",
@@ -283,9 +292,9 @@
       "licenseUrl": "https://careyes.net/playa-rosa-bungalows",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Playa Rosa : authentiques bungalows roses à toit de palapa",
       "enCaption": "Playa Rosa: authentic thatched beachfront bungalows",
       "originalFile": "g-4-careyes-mexico-bungalows-playa-rosa-0612.jpg",
@@ -299,7 +308,8 @@
       ],
       "sha256": "94576de805d70745b34752563e89dab6a442bf10e6e9b1b3b31967628009e640",
       "bytes": 216250,
-      "property": "Playa Rosa Bungalows"
+      "property": "Playa Rosa Bungalows",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "view-2",
@@ -313,9 +323,9 @@
       "licenseUrl": "https://careyes.net/playa-rosa-bungalows",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Playa Rosa : bungalow tropical coloré et terrasse",
       "enCaption": "Playa Rosa: colourful tropical bungalow and terrace",
       "originalFile": "g-6-careyes-mexico-bungalows-playa-rosa-drone-view-0008.jpg",
@@ -329,7 +339,8 @@
       ],
       "sha256": "e8cfddb88ee22488b9291e52755197530f95cb3a4d0b7a6cfa821d879ce736b4",
       "bytes": 326580,
-      "property": "Playa Rosa Bungalows"
+      "property": "Playa Rosa Bungalows",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "view-3",
@@ -343,9 +354,9 @@
       "licenseUrl": "https://careyes.net/playa-rosa-bungalows",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Playa Rosa : chambres et ambiance de bord de mer",
       "enCaption": "Playa Rosa: distinctive beach bungalow interiors",
       "originalFile": "g-1-careyes-mexico-bungalows-playa-rosa-0576.jpg",
@@ -359,7 +370,8 @@
       ],
       "sha256": "efb9aac47e5bb1742fd9238652f0fe444af178c978556dd3174b51b07306d254",
       "bytes": 276864,
-      "property": "Playa Rosa Bungalows"
+      "property": "Playa Rosa Bungalows",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     }
   ],
   "destinationScenes": [
@@ -375,9 +387,9 @@
       "licenseUrl": "https://careyes.net/accommodations",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "La côte découpée de Costa Careyes vue du ciel",
       "enCaption": "The dramatic Costa Careyes shoreline",
       "originalFile": "00-coastline-careyes-mexico-properties-casitas-de-las-flores-0233.jpg",
@@ -391,7 +403,8 @@
       ],
       "sha256": "a232d3b98b7695dfe056723f9c82eec1e845857e885332152a84ad38d52b9a3f",
       "bytes": 213562,
-      "place": "Costa Careyes, Jalisco, México"
+      "place": "Costa Careyes, Jalisco, México",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "scene-2",
@@ -405,9 +418,9 @@
       "licenseUrl": "https://careyes.com/beaches",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Playa Rosa et son rivage abrité",
       "enCaption": "Playa Rosa and its coastal bay",
       "originalFile": "playa-rosa-beach-careyes-mexico-0232.jpg",
@@ -421,7 +434,8 @@
       ],
       "sha256": "4e08edf5d80be0c38de29206f75ff2662d14d853ca8e667e49d10e4e45a481d7",
       "bytes": 248408,
-      "place": "Costa Careyes, Jalisco, México"
+      "place": "Costa Careyes, Jalisco, México",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "scene-3",
@@ -435,9 +449,9 @@
       "licenseUrl": "https://careyes.net/accommodations",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Casitas de las Flores et leurs façades colorées",
       "enCaption": "The colourful Casitas de las Flores",
       "originalFile": "00-careyes-mexico-properties-casitas-de-las-flores-0421.jpg",
@@ -451,7 +465,8 @@
       ],
       "sha256": "9667ba207deb92c6393709a7ead80701ee00b6e637c30c962db6b008ea4c68e3",
       "bytes": 187674,
-      "place": "Costa Careyes, Jalisco, México"
+      "place": "Costa Careyes, Jalisco, México",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "scene-4",
@@ -465,9 +480,9 @@
       "licenseUrl": "https://careyes.com/beaches",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Careyitos : villas et petites criques du Pacifique",
       "enCaption": "Careyitos: iconic villas and Pacific coves",
       "originalFile": "careyes-mexico-beaches-playas-careyitos-0588.jpg",
@@ -481,7 +496,8 @@
       ],
       "sha256": "3da13088cdb33999222681b6c031146fd621d7640483573c48e7978b18b68578",
       "bytes": 176290,
-      "place": "Costa Careyes, Jalisco, México"
+      "place": "Costa Careyes, Jalisco, México",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "scene-5",
@@ -495,9 +511,9 @@
       "licenseUrl": "https://careyes.com/beaches",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Playa Teopa : dunes, rivage naturel et sanctuaire",
       "enCaption": "Playa Teopa: natural beach and conservation",
       "originalFile": "playa-teopa-careyes-mexico-0968.jpg",
@@ -511,7 +527,8 @@
       ],
       "sha256": "44145f67c309bb6ba6dbca188918d27d6963a1d7982188919d8d98b0f57329fd",
       "bytes": 125786,
-      "place": "Costa Careyes, Jalisco, México"
+      "place": "Costa Careyes, Jalisco, México",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "scene-6",
@@ -525,9 +542,9 @@
       "licenseUrl": "https://careyes.com/careyes-wonders",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Copa del Sol : sculpture monumentale dans le paysage",
       "enCaption": "Copa del Sol: monumental landscape sculpture",
       "originalFile": "careyes-wonders-copa-del-sol-0924-edited-opt2.jpg",
@@ -541,7 +558,8 @@
       ],
       "sha256": "bf325a0e3a474959358e0992b87aac7a4dcfb98546218da29a7cca9ea556a783",
       "bytes": 220064,
-      "place": "Costa Careyes, Jalisco, México"
+      "place": "Costa Careyes, Jalisco, México",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "scene-7",
@@ -555,9 +573,9 @@
       "licenseUrl": "https://careyes.com/activities",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Careyes : polo ou promenade à cheval au bord du Pacifique",
       "enCaption": "Careyes: polo or horseback adventures",
       "originalFile": "careyes-mexico-land-activities-horsebackriding-1531.jpg",
@@ -571,7 +589,8 @@
       ],
       "sha256": "1179644dcab4a54f3914fd07f8ad7abeb06e470cc7555af394a2830705943379",
       "bytes": 84602,
-      "place": "Costa Careyes, Jalisco, México"
+      "place": "Costa Careyes, Jalisco, México",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "scene-8",
@@ -585,9 +604,9 @@
       "licenseUrl": "https://careyes.com/activities",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Excursion maritime entre les criques de Careyes",
       "enCaption": "Careyes: a coastal excursion and offshore waters",
       "originalFile": "careyes-coastal-tour-boat-trip-0109.jpg",
@@ -601,7 +620,8 @@
       ],
       "sha256": "64967699437a1820e1b02a9cf8639fc8a9cde3f8cac97b7124f7fac0b5a0f852",
       "bytes": 292346,
-      "place": "Costa Careyes, Jalisco, México"
+      "place": "Costa Careyes, Jalisco, México",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     },
     {
       "key": "scene-9",
@@ -615,9 +635,9 @@
       "licenseUrl": "https://careyes.net/accommodations",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
-      "status": "visually_awaiting_review",
-      "visuallyVerified": false,
-      "visualQaWarning": "Photo contact sheet must be inspected",
+      "status": "visually_reviewed_private_preview",
+      "visuallyVerified": true,
+      "visualQaWarning": "",
       "frCaption": "Costa Careyes : l'architecture rencontre le littoral sauvage",
       "enCaption": "Costa Careyes: architecture and wild Pacific coastline",
       "originalFile": "careyes-mexico-coastline-careyitos-_c_-karla-cifuentes-0433.jpg",
@@ -631,13 +651,15 @@
       ],
       "sha256": "b58599e782edbaacda36627232a89bfdee6da5e55309850327594ef589c2daf5",
       "bytes": 233736,
-      "place": "Costa Careyes, Jalisco, México"
+      "place": "Costa Careyes, Jalisco, México",
+      "visualReviewBasis": "2026-10-28 manual 21-frame sheet inspection, Careyes property identity, location and distinct photographic composition; no public-commercial reproduction licence inferred."
     }
   ],
   "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
-  "publicationBlockedReason": "Operator photos are not independently licensed for public commercial reproduction. Restricted nonindexable owner Preview only.",
-  "provenanceNote": "Source pages, filenames, image hashes and source attribution tracked. Careyes is a private villa/club community, not four distinct hotels."
+  "publicationBlockedReason": "Careyes / Showit operator-photographer assets require separate commercial distribution rights; this is nonindexed owner-only Preview.",
+  "provenanceNote": "Source pages, filenames, image hashes and source attribution tracked. Careyes is a private villa/club community, not four distinct hotels.",
+  "visualReviewEvidence": "docs/travel-costa-careyes-contact-sheet.jpg reviewed via GitHub Actions 40590978432; 12 accommodation views, nine separate Careyes coastline/activity images"
 }

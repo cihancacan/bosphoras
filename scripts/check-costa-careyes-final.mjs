@@ -35,7 +35,7 @@ assert(file('components/travel/FeaturedCityGuide.tsx').includes('confirmedCostaC
 assert(file('components/travel/FeaturedCityGuide.tsx').includes('costaCareyesDraftFaq'));
 assert(file('components/travel/TravelPages.tsx').includes('isCostaCareyes'));
 assert(file('components/travel/TravelPages.tsx').includes('costaCareyesDraftFaq'));
-assert(file('data/travel/costaCareyesDraftGuide.ts').includes('does not have a conventional hotel'));
+assert(file('data/travel/costaCareyesDraftGuide.ts').includes('no conventional hotel'));
 for(const title of ['Sol de Oriente','Casita Carioca','El Careyes Club & Residences','Playa Rosa Bungalows'])
  assert(file('data/travel/costaCareyesDraftGuide.ts').includes(title));
 const faq=file('data/travel/costaCareyesDraftFaq.ts');
