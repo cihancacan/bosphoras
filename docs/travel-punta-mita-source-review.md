@@ -19,3 +19,8 @@
 3. 5 areas, 5 experiences, 14 FR/EN FAQs, grounded category differences; no automatic plunge pool, golf membership or family room availability.
 4. Restricted preview only, noindex and unchanged original 88 destination slugs.
 5. Target 12 distinctly labelled room/hotel candidate images plus 9 properly credited accurate Nayarit geographical scenes. Commercial photographer/publication rights for publisher hotel photos not presumed.
+## GitHub import and Preview integration
+- Imported 12 named property images in unique local WebPs; 9 Commons landscapes, all licence/author/page fields in manifest.
+- Four correctly differentiated real resorts, five geographic areas, 14 FR/EN FAQs. Private gated peninsula differs from public coastline.
+- Publisher photos are for restricted nonindexed owner Preview only, no independently verified commercial permission; `approvedForCommercialPublication=false` remains.
+- UI article, FAQ, gallery and schema integrations are deliberately nonindexed; catalogue remains 88.
