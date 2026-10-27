@@ -19,3 +19,7 @@
 ## Release policy
 
 Branch: `feature/luxury-travel-seo-destinations-20261012`. Preserve 88 catalogue destinations. All routine work marked [skip ci], one owner Preview after QA only. No production promotion, no Wink live inventory claims.
+
+## Owner Preview gate — 27 October 2026
+
+Necker Island destination 3/10 completed as a private reviewer build. Verified genuine accommodation clusters: The Great House, Bali Hi, Bali Lo and Temple House, not four independent hotels. Exactly 12 original Virgin Limited Edition cluster photographs and 9 genuine island images saved as 21 individually distinct WebPs and visually reviewed on two contact sheets. French and English guides, 14 FAQ responses, location galleries and noindex preserved. GitHub Actions run 40556023482: 17 steps succeeded, including typecheck and physical-image QA. Preserve source attribution and continue to withhold public-commercial photo release until independent photographer licence verification. The publication of this Preview is explicitly for page review only and does not promote production or activate pricing/reservations.
