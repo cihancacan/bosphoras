@@ -12,9 +12,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Plantation et piscines · vue générale du resort — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "LAUCALA island · villa pool and tropical landscaping — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/plantation/view-1.webp",
@@ -30,7 +30,8 @@
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
       "propertyKey": "plantation",
-      "property": "LAUCALA — Plantation Residences"
+      "property": "LAUCALA — Plantation Residences",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "view-2",
@@ -43,9 +44,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Pavillons de plage et jardins · image d’ambiance — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "LAUCALA beachside pavilion setting — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/plantation/view-2.webp",
@@ -61,7 +62,8 @@
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
       "propertyKey": "plantation",
-      "property": "LAUCALA — Plantation Residences"
+      "property": "LAUCALA — Plantation Residences",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "view-3",
@@ -74,9 +76,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Plage plantée de cocotiers · vue de l’île — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "LAUCALA island · palms near the beach — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/plantation/view-3.webp",
@@ -92,7 +94,8 @@
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
       "propertyKey": "plantation",
-      "property": "LAUCALA — Plantation Residences"
+      "property": "LAUCALA — Plantation Residences",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "view-1",
@@ -105,9 +108,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Villa et piscine tropicale · décor de l’île — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "LAUCALA island · villa pool in tropical gardens — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/seagrass/view-1.webp",
@@ -123,7 +126,8 @@
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
       "propertyKey": "seagrass",
-      "property": "LAUCALA — Seagrass Residences"
+      "property": "LAUCALA — Seagrass Residences",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "view-2",
@@ -136,9 +140,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Pavillon et bois exotique · vue illustrative — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "LAUCALA island · timber pavilion setting — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/seagrass/view-2.webp",
@@ -154,7 +158,8 @@
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
       "propertyKey": "seagrass",
-      "property": "LAUCALA — Seagrass Residences"
+      "property": "LAUCALA — Seagrass Residences",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "view-3",
@@ -167,9 +172,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Piscine privée et verdure · vue illustrative — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "LAUCALA island · private pool and greenery — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/seagrass/view-3.webp",
@@ -185,7 +190,8 @@
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
       "propertyKey": "seagrass",
-      "property": "LAUCALA — Seagrass Residences"
+      "property": "LAUCALA — Seagrass Residences",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "view-1",
@@ -198,9 +204,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Piscine et vue au soleil couchant · LAUCALA — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "LAUCALA pool and sunset, representative island setting — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/plateau/view-1.webp",
@@ -216,7 +222,8 @@
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
       "propertyKey": "plateau",
-      "property": "LAUCALA — Plateau Residences"
+      "property": "LAUCALA — Plateau Residences",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "view-2",
@@ -229,9 +236,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Jungle dense · paysage du domaine — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "LAUCALA tropical forest landscape — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/plateau/view-2.webp",
@@ -247,7 +254,8 @@
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
       "propertyKey": "plateau",
-      "property": "LAUCALA — Plateau Residences"
+      "property": "LAUCALA — Plateau Residences",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "view-3",
@@ -260,9 +268,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Villa et bassin dans la forêt · image illustrative — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "LAUCALA island · jungle villa swimming pool — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/plateau/view-3.webp",
@@ -278,7 +286,8 @@
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
       "propertyKey": "plateau",
-      "property": "LAUCALA — Plateau Residences"
+      "property": "LAUCALA — Plateau Residences",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "view-1",
@@ -291,9 +300,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Pavillons sur pilotis de Laucala · résidence sur l’eau — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "LAUCALA genuine overwater pavilions — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/wai/view-1.webp",
@@ -309,7 +318,8 @@
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
       "propertyKey": "wai",
-      "property": "LAUCALA — Wai Overwater Residence"
+      "property": "LAUCALA — Wai Overwater Residence",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "view-2",
@@ -322,9 +332,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Villas au-dessus du lagon · vue différente — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "LAUCALA overwater architecture and lagoon — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/wai/view-2.webp",
@@ -340,7 +350,8 @@
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
       "propertyKey": "wai",
-      "property": "LAUCALA — Wai Overwater Residence"
+      "property": "LAUCALA — Wai Overwater Residence",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "view-3",
@@ -353,9 +364,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Côte et récif autour du domaine · vue générale — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "LAUCALA island coast and reef, not a confirmed room-specific view — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/wai/view-3.webp",
@@ -371,7 +382,8 @@
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
       "propertyKey": "wai",
-      "property": "LAUCALA — Wai Overwater Residence"
+      "property": "LAUCALA — Wai Overwater Residence",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     }
   ],
   "destinationScenes": [
@@ -386,9 +398,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Côte turquoise et palmiers de Laucala — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "Laucala island · aerial turquoise coast and palm canopy — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/destination/scene-1.webp",
@@ -403,7 +415,8 @@
         767
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
-      "place": "LAUCALA Island, Fiji"
+      "place": "LAUCALA Island, Fiji",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "scene-2",
@@ -416,9 +429,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Littoral et horizon fidjien — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "LAUCALA coastal horizon — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/destination/scene-2.webp",
@@ -433,7 +446,8 @@
         768
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
-      "place": "LAUCALA Island, Fiji"
+      "place": "LAUCALA Island, Fiji",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "scene-3",
@@ -446,9 +460,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Baie et récif de Laucala — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "Laucala bay and reefs — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/destination/scene-3.webp",
@@ -463,7 +477,8 @@
         768
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
-      "place": "LAUCALA Island, Fiji"
+      "place": "LAUCALA Island, Fiji",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "scene-4",
@@ -476,9 +491,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Palmiers et rivage tropical — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "Palm-fringed island shore — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/destination/scene-4.webp",
@@ -493,7 +508,8 @@
         768
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
-      "place": "LAUCALA Island, Fiji"
+      "place": "LAUCALA Island, Fiji",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "scene-5",
@@ -506,9 +522,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Mer turquoise et végétation tropicale — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "Island turquoise sea and jungle — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/destination/scene-5.webp",
@@ -523,7 +539,8 @@
         767
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
-      "place": "LAUCALA Island, Fiji"
+      "place": "LAUCALA Island, Fiji",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "scene-6",
@@ -536,9 +553,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Littoral boisé et mer calme — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "Wooded tropical shoreline — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/destination/scene-6.webp",
@@ -553,7 +570,8 @@
         767
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
-      "place": "LAUCALA Island, Fiji"
+      "place": "LAUCALA Island, Fiji",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "scene-7",
@@ -566,9 +584,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Forêt et crêtes verdoyantes — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "Laucala lush hills and forest — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/destination/scene-7.webp",
@@ -583,7 +601,8 @@
         768
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
-      "place": "LAUCALA Island, Fiji"
+      "place": "LAUCALA Island, Fiji",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "scene-8",
@@ -596,9 +615,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Plage de sable et cocotiers — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "Laucala palms and white-sand beach — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/destination/scene-8.webp",
@@ -613,7 +632,8 @@
         768
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
-      "place": "LAUCALA Island, Fiji"
+      "place": "LAUCALA Island, Fiji",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     },
     {
       "key": "scene-9",
@@ -626,9 +646,9 @@
       "licenseUrl": "https://www.laucala.com/",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Official resort scene verified in selection contact sheet; no exact residence identification; public-commercial rights outstanding",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
       "frCaption": "Plage naturelle du domaine — photo officielle indicative, résidence exacte non identifiée",
       "enCaption": "Laucala island natural sandy beach — official illustrative image, exact residence unverified",
       "localPath": "/images/travel/laucala-island-premium/destination/scene-9.webp",
@@ -643,13 +663,15 @@
         767
       ],
       "imageTransformation": "Original LAUCALA Cloudflare publisher image, converted to unique local WebP",
-      "place": "LAUCALA Island, Fiji"
+      "place": "LAUCALA Island, Fiji",
+      "visualReviewBasis": "Visual contact sheets of 35 actual current LAUCALA owner-site images inspected on 27 Oct 2026. Chosen original images depict island, beaches, bures or lagoon. Their assignment to historical style cards is *illustrative*, not independently authenticated for an exact villa. Operator attests permission for restricted owner review only. Independent creator rights not verified."
     }
   ],
   "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
-  "publicationBlockedReason": "Source photos are authentic LAUCALA island images, but specific historical villa identity is not generally attested, and original photographer-level publication rights remain open",
-  "photoRightsBasis": "Original current resort website Cloudflare CDN imagery, publisher-attributed but not individually credited"
+  "publicationBlockedReason": "Owner private Preview images visually checked as genuine LAUCALA website imagery; precise historic room identification and original photographer commercial publication rights remain unverified.",
+  "photoRightsBasis": "Original current resort website Cloudflare CDN imagery, publisher-attributed but not individually credited",
+  "previewVisualQaAt": "2026-10-27"
 }
