@@ -8,3 +8,5 @@ for(const x of media.destinationScenes as Candidate[])if(approvedJumbyBayPhoto(x
 const g=jumbyBayDraftGuide;
 export const jumbyBayGuide:FeaturedCityGuideData={...g,areas:g.areas.map(x=>({...x})),experiences:g.experiences.map(x=>({...x})),hotels:g.hotels.map(x=>({...x})),checksFr:[...g.checksFr],checksEn:[...g.checksEn],photos};
 // Private owner Preview photographs; independent photographer commercial publication rights remain gated.
+
+// Jumby Bay QA: 21 physical photos and 4 accommodation categories, 88 slugs intact.
