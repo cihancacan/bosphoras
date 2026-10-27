@@ -341,59 +341,57 @@
   "destinationScenes": [
     {
       "key": "scene-1",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Punta_Mita,_Nayarit_-_panoramio.jpg",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/57/Punta_Mita%2C_Nayarit_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "credit": "Lynx Burgos",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "rightsEvidenceType": "wikimedia_commons_verified",
+      "sourcePage": "https://www.admagazine.com/lugares/secreto-riviera-nayarit-20180523-4217-articulos",
+      "downloadUrl": "https://media.admagazine.com/photos/618a6fbc938f88774ad54464/master/w_1600%2Cc_limit/54823.jpg",
+      "credit": "Architectural Digest · publisher; individual creator rights pending",
+      "license": "Restricted owner Preview only; publisher copyright not independently cleared",
+      "licenseUrl": "https://www.admagazine.com/lugares/secreto-riviera-nayarit-20180523-4217-articulos",
+      "rightsEvidenceType": "private_preview_publisher_location",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": true,
+      "commercialRightsCleared": false,
       "visualQaWarning": "Await actual human contact-sheet review",
-      "frCaption": "Punta Mita · côte de Nayarit",
-      "enCaption": "Punta Mita · Nayarit coastline",
+      "frCaption": "Punta Mita · vue aérienne du littoral, villas et mer turquoise",
+      "enCaption": "Punta Mita · aerial luxury coastline and turquoise sea",
       "localPath": "/images/travel/punta-mita-premium/destination/scene-1.webp",
-      "sha256": "4b5b30de310a6de4e7a0c72387375084798a44ce3687d068a7ce9ba785d89347",
-      "bytes": 141794,
+      "sha256": "20cb2b63907b8efa6cc2dc89dc9db820766d5b38ea7e0bd2318d9f63fc26cb42",
+      "bytes": 509294,
       "originalSize": [
         1600,
-        1200
+        1132
       ],
       "outputSize": [
-        1533,
-        1150
+        1600,
+        1132
       ],
-      "place": "Punta Mita / Riviera Nayarit, Mexico",
-      "commonsFile": "Punta Mita, Nayarit - panoramio.jpg"
+      "place": "Punta Mita / Riviera Nayarit, Mexico"
     },
     {
       "key": "scene-2",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Anclote,_Punta_de_Mita_-_panoramio.jpg",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Anclote%2C_Punta_de_Mita_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "credit": "Lynx Burgos",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "rightsEvidenceType": "wikimedia_commons_verified",
+      "sourcePage": "https://villaexperience.com/el-anclote-punta-mita/",
+      "downloadUrl": "https://villaexperience.com/wp-content/uploads/2020/10/punta-de-mita-2-2-1024x576.jpg",
+      "credit": "Villa Experience · publisher; photographer terms pending",
+      "license": "Restricted owner Preview only; publisher copyright not independently cleared",
+      "licenseUrl": "https://villaexperience.com/el-anclote-punta-mita/",
+      "rightsEvidenceType": "private_preview_publisher_location",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": true,
+      "commercialRightsCleared": false,
       "visualQaWarning": "Await actual human contact-sheet review",
-      "frCaption": "El Anclote · plage du village",
-      "enCaption": "El Anclote · Punta de Mita village beach",
+      "frCaption": "El Anclote · village, plage et petits bateaux vus du ciel",
+      "enCaption": "El Anclote · village, beach and coastal fishing boats",
       "localPath": "/images/travel/punta-mita-premium/destination/scene-2.webp",
-      "sha256": "609a93f705320178ef0049434780d96e796eb9a070d2b34b4f101ad6afff8d2c",
-      "bytes": 169172,
+      "sha256": "e23dced5fa03fdffcaac7305627ecdf426e1ba47b6373b13e102feab056e9b01",
+      "bytes": 79260,
       "originalSize": [
-        1600,
-        1200
+        1024,
+        576
       ],
       "outputSize": [
-        1533,
-        1150
+        1024,
+        576
       ],
-      "place": "Punta Mita / Riviera Nayarit, Mexico",
-      "commonsFile": "Anclote, Punta de Mita - panoramio.jpg"
+      "place": "Punta Mita / Riviera Nayarit, Mexico"
     },
     {
       "key": "scene-3",
@@ -407,8 +405,8 @@
       "visuallyVerified": false,
       "commercialRightsCleared": true,
       "visualQaWarning": "Await actual human contact-sheet review",
-      "frCaption": "Coucher de soleil à Punta de Mita",
-      "enCaption": "Sunset at Punta de Mita",
+      "frCaption": "Coucher de soleil rose à Punta de Mita",
+      "enCaption": "Coral sunset on Punta de Mita coast",
       "localPath": "/images/travel/punta-mita-premium/destination/scene-3.webp",
       "sha256": "afb0169af682f477b11f56d42a940ae06b9c72d9c02c4beaa683e1ae63256848",
       "bytes": 65872,
@@ -425,31 +423,30 @@
     },
     {
       "key": "scene-4",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Club_de_golf,_Punta_Mita,_Nayarit_-_panoramio.jpg",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Club_de_golf%2C_Punta_Mita%2C_Nayarit_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "credit": "Lynx Burgos",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "rightsEvidenceType": "wikimedia_commons_verified",
+      "sourcePage": "https://fortworth.culturemap.com/11-05-15-mexico-four-seasons-resort-punta-mita/",
+      "downloadUrl": "https://assets.rbl.ms/30513180/origin.jpg",
+      "credit": "CultureMap · original golf editorial publisher; photographer rights pending",
+      "license": "Restricted owner Preview only; publisher copyright not independently cleared",
+      "licenseUrl": "https://fortworth.culturemap.com/11-05-15-mexico-four-seasons-resort-punta-mita/",
+      "rightsEvidenceType": "private_preview_publisher_location",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": true,
+      "commercialRightsCleared": false,
       "visualQaWarning": "Await actual human contact-sheet review",
-      "frCaption": "Punta Mita · parcours sur la péninsule",
-      "enCaption": "Punta Mita peninsula golf course",
+      "frCaption": "Parcours Pacífico · le green naturel Tail of the Whale",
+      "enCaption": "Pacifico golf · the natural Tail of the Whale island green",
       "localPath": "/images/travel/punta-mita-premium/destination/scene-4.webp",
-      "sha256": "ffd5316b1a29f92909adbf151ddbd1c2e362f195c8b0cd440ba9f8cc57b08220",
-      "bytes": 207754,
+      "sha256": "1417b4c614d35efc79bb9e0b2fbcb1fcec489f10933619af2ba564ec3914d1bc",
+      "bytes": 285706,
       "originalSize": [
-        1600,
-        1200
+        1280,
+        960
       ],
       "outputSize": [
-        1533,
-        1150
+        1280,
+        960
       ],
-      "place": "Punta Mita / Riviera Nayarit, Mexico",
-      "commonsFile": "Club de golf, Punta Mita, Nayarit - panoramio.jpg"
+      "place": "Punta Mita / Riviera Nayarit, Mexico"
     },
     {
       "key": "scene-5",
@@ -463,8 +460,8 @@
       "visuallyVerified": false,
       "commercialRightsCleared": true,
       "visualQaWarning": "Await actual human contact-sheet review",
-      "frCaption": "Islas Marietas · archipel protégé",
-      "enCaption": "Protected Marietas Islands",
+      "frCaption": "Islas Marietas · rochers et écosystèmes protégés",
+      "enCaption": "Marietas Islands · protected rocky islets",
       "localPath": "/images/travel/punta-mita-premium/destination/scene-5.webp",
       "sha256": "56ebd7a3179e85040afa2ed5769b221fdea2a1c099422f2dcaf89f29d3d2f40a",
       "bytes": 289968,
@@ -481,31 +478,30 @@
     },
     {
       "key": "scene-6",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Malec%C3%B3n_de_Punta_de_Mita_-_panoramio.jpg",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/52/Malec%C3%B3n_de_Punta_de_Mita_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "credit": "Lynx Burgos",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "rightsEvidenceType": "wikimedia_commons_verified",
+      "sourcePage": "https://realestateclemus.us/banderas-bay-destination/",
+      "downloadUrl": "https://realestateclemus.us/wp-content/grand-media/image/destiladeras-riviera-nayarit.jpg",
+      "credit": "Real Estate Clemus · publisher; image creator rights pending",
+      "license": "Restricted owner Preview only; publisher copyright not independently cleared",
+      "licenseUrl": "https://realestateclemus.us/banderas-bay-destination/",
+      "rightsEvidenceType": "private_preview_publisher_location",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": true,
+      "commercialRightsCleared": false,
       "visualQaWarning": "Await actual human contact-sheet review",
-      "frCaption": "Front de mer et promenade de Punta de Mita",
-      "enCaption": "Punta de Mita waterfront",
+      "frCaption": "Destiladeras · forêt et côte du Pacifique",
+      "enCaption": "Destiladeras · lush forest and Pacific shoreline",
       "localPath": "/images/travel/punta-mita-premium/destination/scene-6.webp",
-      "sha256": "af36c782f387ddaf43ff2f2f2e79168011defea9c39f91973065106080c9877f",
-      "bytes": 99764,
+      "sha256": "79e91f4db8deceb8e400187e6bae16be98d2428af3771ecfb2cbc6542138f2c4",
+      "bytes": 76522,
       "originalSize": [
-        1600,
-        1200
+        975,
+        532
       ],
       "outputSize": [
-        1533,
-        1150
+        975,
+        532
       ],
-      "place": "Punta Mita / Riviera Nayarit, Mexico",
-      "commonsFile": "Malecón de Punta de Mita - panoramio.jpg"
+      "place": "Punta Mita / Riviera Nayarit, Mexico"
     },
     {
       "key": "scene-7",
@@ -519,8 +515,8 @@
       "visuallyVerified": false,
       "commercialRightsCleared": true,
       "visualQaWarning": "Await actual human contact-sheet review",
-      "frCaption": "Marietas · fou à pieds bleus sur les îles protégées",
-      "enCaption": "Marietas · blue-footed booby on protected islands",
+      "frCaption": "Marietas · fou à pieds bleus dans l’archipel protégé",
+      "enCaption": "Marietas · blue-footed booby on a protected island",
       "localPath": "/images/travel/punta-mita-premium/destination/scene-7.webp",
       "sha256": "fb3e95fa17e832f64b13424a3dc9c9acda34318c7213b2d3e061ac8a2c868c73",
       "bytes": 366086,
@@ -537,59 +533,57 @@
     },
     {
       "key": "scene-8",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Punta_Mita,_Nayarit_-_panoramio_(1).jpg",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Punta_Mita%2C_Nayarit_-_panoramio_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "credit": "Lynx Burgos",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "rightsEvidenceType": "wikimedia_commons_verified",
+      "sourcePage": "https://www.bespokeblackbook.com/st-regis-punta-mita/",
+      "downloadUrl": "https://www.bespokeblackbook.com/wp-content/uploads/2018/09/aerial-view-St-Regis.jpg",
+      "credit": "Bespoke Black Book · resort publisher, creator rights pending",
+      "license": "Restricted owner Preview only; publisher copyright not independently cleared",
+      "licenseUrl": "https://www.bespokeblackbook.com/st-regis-punta-mita/",
+      "rightsEvidenceType": "private_preview_publisher_location",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": true,
+      "commercialRightsCleared": false,
       "visualQaWarning": "Await actual human contact-sheet review",
-      "frCaption": "Vue de côte à Punta Mita",
-      "enCaption": "A different Punta Mita coastal scene",
+      "frCaption": "Punta Mita · longue plage et péninsule verdoyante en soirée",
+      "enCaption": "Punta Mita · pale-sand beach and lush headland at sunset",
       "localPath": "/images/travel/punta-mita-premium/destination/scene-8.webp",
-      "sha256": "81fb2538b42449b6dda3e0011192e722460f0f3b4b6608bdfe955c2ee60ef8f1",
-      "bytes": 147220,
+      "sha256": "99d6a73706a609bd4a3f35556869f958ca73d0723d0cf7ba6060892c08a0c215",
+      "bytes": 189828,
       "originalSize": [
-        1600,
-        1200
+        1440,
+        810
       ],
       "outputSize": [
-        1533,
-        1150
+        1440,
+        810
       ],
-      "place": "Punta Mita / Riviera Nayarit, Mexico",
-      "commonsFile": "Punta Mita, Nayarit - panoramio (1).jpg"
+      "place": "Punta Mita / Riviera Nayarit, Mexico"
     },
     {
       "key": "scene-9",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Playa_del_St._Regis_-_panoramio.jpg",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Playa_del_St._Regis_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "credit": "Lynx Burgos",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "rightsEvidenceType": "wikimedia_commons_verified",
+      "sourcePage": "https://marivalarmony.com/blog/riviera-nayarit-best-beaches",
+      "downloadUrl": "https://marivalarmony.com/storage/cdn/images/gallery/destiladeras%20sayulita.jpg",
+      "credit": "Marival Armony · hospitality publisher; photographer rights pending",
+      "license": "Restricted owner Preview only; publisher copyright not independently cleared",
+      "licenseUrl": "https://marivalarmony.com/blog/riviera-nayarit-best-beaches",
+      "rightsEvidenceType": "private_preview_publisher_location",
       "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
-      "commercialRightsCleared": true,
+      "commercialRightsCleared": false,
       "visualQaWarning": "Await actual human contact-sheet review",
-      "frCaption": "Plage du secteur St. Regis à Punta Mita",
-      "enCaption": "Coast by St. Regis on Punta Mita peninsula",
+      "frCaption": "Destiladeras · sable clair, palmiers et plage sauvage",
+      "enCaption": "Destiladeras · natural beach and coastal palms",
       "localPath": "/images/travel/punta-mita-premium/destination/scene-9.webp",
-      "sha256": "eb8676590855298bdd2b8bd323e72672afb761e9d9515c93b0416a967a14c532",
-      "bytes": 92060,
+      "sha256": "1b5819880f208565c93e4c957b6060ce514b68c9473cf97276f2c8b97f95a73f",
+      "bytes": 115734,
       "originalSize": [
-        1600,
-        1200
+        920,
+        563
       ],
       "outputSize": [
-        1533,
-        1150
+        920,
+        563
       ],
-      "place": "Punta Mita / Riviera Nayarit, Mexico",
-      "commonsFile": "Playa del St. Regis - panoramio.jpg"
+      "place": "Punta Mita / Riviera Nayarit, Mexico"
     }
   ],
   "downloadedHotelCandidates": 12,
