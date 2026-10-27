@@ -7,90 +7,90 @@
   "hotels": [
     {
       "originalSize": [
-        1394,
-        1394
+        1440,
+        890
       ],
       "outputSize": [
-        1394,
-        1394
+        1440,
+        890
       ],
-      "bytes": 89356,
-      "sha256": "1c52e65de6dec385613589ca7d5af7db03587d363fef65aa726d12d4932b5662",
+      "bytes": 103636,
+      "sha256": "454accdeb2ba46fc70d00e6f9990428ac35fc98c77699af178390ccbab77b48d",
       "key": "view-1",
       "propertyKey": "aman",
       "property": "Aman New York",
       "localPath": "/images/travel/new-york-premium/aman/view-1.webp",
-      "sourcePage": "https://www.aman.com/hotels/aman-new-york/accommodation/rooms-suites",
-      "downloadUrl": "https://www.aman.com/sites/default/files/styles/listing_teaser_extra_large_2x/public/2023-08/aman_new_york_usa_-_three-bedroom_home.webp?itok=QFOoAefJ",
-      "credit": "Aman New York — publisher-owned photography, creator licence unverified",
-      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
-      "licenseUrl": "https://www.aman.com/hotels/aman-new-york/accommodation/rooms-suites",
+      "sourcePage": "https://www.aman.com/hotels/aman-new-york/accommodation/suite/premier-suite-56th-street",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/full_size_extra_large/public/2023-04/Premier56Suite_Aman%20New%20York.jpg?itok=3IVKY0kx",
+      "credit": "Aman New York official hotel suite photograph · creator rights unverified",
+      "license": "Private editorial preview only; no independent commercial republication licence.",
+      "licenseUrl": "https://www.aman.com/hotels/aman-new-york/accommodation/suite/premier-suite-56th-street",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
       "status": "source_identified_private_preview",
       "visuallyVerified": false,
-      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
-      "frCaption": "Aman New York · photographie de la galerie officielle à confirmer visuellement",
-      "enCaption": "Aman New York · official property imagery pending individual visual review",
-      "originalAlt": ""
+      "visualQaWarning": "Commercial photo rights pending",
+      "frCaption": "La Premier Suite 56th Street à Aman New York",
+      "enCaption": "Premier Suite 56th Street at Aman New York",
+      "originalAlt": "Premier Suite 56th Street at Aman New York"
     },
     {
       "originalSize": [
-        1394,
-        1394
+        1440,
+        890
       ],
       "outputSize": [
-        1394,
-        1394
+        1440,
+        890
       ],
-      "bytes": 89082,
-      "sha256": "99d2a15cfd67b81b4fa1ec19992ab1b1454a739fe2197d842a979106f871c68e",
+      "bytes": 111304,
+      "sha256": "5c8f02ff7219bd2c88131bf91894a918a62998de344090e4c289fb020095cf3b",
       "key": "view-2",
       "propertyKey": "aman",
       "property": "Aman New York",
       "localPath": "/images/travel/new-york-premium/aman/view-2.webp",
-      "sourcePage": "https://www.aman.com/hotels/aman-new-york/accommodation/rooms-suites",
-      "downloadUrl": "https://www.aman.com/sites/default/files/styles/listing_teaser_extra_large_2x/public/2023-09/aman_new_york_usa_-_homes_three_bedroom_dining_area.webp?itok=F0Oq4L9z",
-      "credit": "Aman New York — publisher-owned photography, creator licence unverified",
-      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
-      "licenseUrl": "https://www.aman.com/hotels/aman-new-york/accommodation/rooms-suites",
+      "sourcePage": "https://www.aman.com/hotels/aman-new-york/accommodation/signature-suite/aman-suite",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/full_size_extra_large/public/2022-12/Aman%20New%20York%2C%20USA%20-%20Aman%20Suite%202_0.jpg?itok=HL2jowpX",
+      "credit": "Aman New York official hotel suite photograph · creator rights unverified",
+      "license": "Private editorial preview only; no independent commercial republication licence.",
+      "licenseUrl": "https://www.aman.com/hotels/aman-new-york/accommodation/signature-suite/aman-suite",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
       "status": "source_identified_private_preview",
       "visuallyVerified": false,
-      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
-      "frCaption": "Aman New York · photographie de la galerie officielle à confirmer visuellement",
-      "enCaption": "Aman New York · official property imagery pending individual visual review",
-      "originalAlt": ""
+      "visualQaWarning": "Commercial photo rights pending",
+      "frCaption": "Chambre avec cheminée d’une suite signature Aman",
+      "enCaption": "Aman signature suite bedroom and fireplace",
+      "originalAlt": "Aman signature suite bedroom and fireplace"
     },
     {
       "originalSize": [
-        1394,
-        1394
+        1600,
+        988
       ],
       "outputSize": [
-        1394,
-        1394
+        1600,
+        988
       ],
-      "bytes": 85260,
-      "sha256": "d535ae5fddca9850015e23257fa891921ec318564f071cd82ebb2642ddb495c8",
+      "bytes": 139660,
+      "sha256": "df5d3ad2ca1032574ca553fb948142adb3a3d1bf1c53f9e0fd9004a6a5a2a943",
       "key": "view-3",
       "propertyKey": "aman",
       "property": "Aman New York",
       "localPath": "/images/travel/new-york-premium/aman/view-3.webp",
-      "sourcePage": "https://www.aman.com/hotels/aman-new-york/accommodation/rooms-suites",
-      "downloadUrl": "https://www.aman.com/sites/default/files/styles/listing_teaser_extra_large_2x/public/2023-09/aman_new_york_usa_-_home_three-bedroom_living.webp?itok=VWkJfKZg",
-      "credit": "Aman New York — publisher-owned photography, creator licence unverified",
-      "license": "Operator website photograph. Private preview only; commercial reuse rights not independently cleared.",
-      "licenseUrl": "https://www.aman.com/hotels/aman-new-york/accommodation/rooms-suites",
+      "sourcePage": "https://www.aman.com/hotels/aman-new-york/exclusives/signature-suite-stay",
+      "downloadUrl": "https://www.aman.com/sites/default/files/2023-04/Aman%20New%20York%2C%20USA%20-%20Accommodation%2C%20Premier%20Suite%2056%20Street%20-%20Master%20Bedroom_0.jpg",
+      "credit": "Aman New York official hotel suite photograph · creator rights unverified",
+      "license": "Private editorial preview only; no independent commercial republication licence.",
+      "licenseUrl": "https://www.aman.com/hotels/aman-new-york/exclusives/signature-suite-stay",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
       "status": "source_identified_private_preview",
       "visuallyVerified": false,
-      "visualQaWarning": "Individual human photo/room identity and publication rights review outstanding",
-      "frCaption": "Aman New York · photographie de la galerie officielle à confirmer visuellement",
-      "enCaption": "Aman New York · official property imagery pending individual visual review",
-      "originalAlt": ""
+      "visualQaWarning": "Commercial photo rights pending",
+      "frCaption": "La Premier Suite Aman New York, décor épuré",
+      "enCaption": "Aman New York Premier Suite residential style",
+      "originalAlt": "Aman New York Premier Suite residential style"
     },
     {
       "originalSize": [
