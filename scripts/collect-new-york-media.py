@@ -178,6 +178,31 @@ def hotel_photos(item):
     'frCaption':name+' · photographie de la galerie officielle à confirmer visuellement',
     'enCaption':name+' · official property imagery pending individual visual review','originalAlt':alt[:250]})
   except Exception as e:print(name,'rejected candidate',str(e)[:130],flush=True)
+ if key=='aman':
+  # Aman Homes are NOT hotel Suites. Only use specifically named official hotel
+  # suites; three distinct known Aman publisher photos, private owner review.
+  exact=[
+   ('https://www.aman.com/sites/default/files/styles/full_size_extra_large/public/2023-04/Premier56Suite_Aman%20New%20York.jpg?itok=3IVKY0kx','https://www.aman.com/hotels/aman-new-york/accommodation/suite/premier-suite-56th-street','Premier Suite 56th Street at Aman New York','La Premier Suite 56th Street à Aman New York'),
+   ('https://www.aman.com/sites/default/files/styles/full_size_extra_large/public/2022-12/Aman%20New%20York%2C%20USA%20-%20Aman%20Suite%202_0.jpg?itok=HL2jowpX','https://www.aman.com/hotels/aman-new-york/accommodation/signature-suite/aman-suite','Aman signature suite bedroom and fireplace','Chambre avec cheminée d’une suite signature Aman'),
+   ('https://www.aman.com/sites/default/files/2023-04/Aman%20New%20York%2C%20USA%20-%20Accommodation%2C%20Premier%20Suite%2056%20Street%20-%20Master%20Bedroom_0.jpg','https://www.aman.com/hotels/aman-new-york/exclusives/signature-suite-stay','Aman New York Premier Suite residential style','La Premier Suite Aman New York, décor épuré')
+  ]
+  corrected=[]
+  for url,source,en,fr in exact:
+   try:
+    data=get(url).content
+    dest=ROOT/key/f'view-{len(corrected)+1}.webp'
+    meta=save_webp(data,dest)
+    corrected.append({**meta,'key':f'view-{len(corrected)+1}','propertyKey':key,'property':name,
+     'localPath':'/'+str(dest).removeprefix('public/'),'sourcePage':source,'downloadUrl':url,
+     'credit':'Aman New York official hotel suite photograph · creator rights unverified',
+     'license':'Private editorial preview only; no independent commercial republication licence.',
+     'licenseUrl':source,'rightsEvidenceType':'operator_publisher_not_commercially_cleared','commercialRightsCleared':False,
+     'status':'source_identified_private_preview','visuallyVerified':False,
+     'visualQaWarning':'Commercial photo rights pending',
+     'frCaption':fr,'enCaption':en,'originalAlt':en})
+   except Exception as e:print('Aman genuine suite image unavailable',str(e)[:200],flush=True)
+  # Reject residence imagery entirely if the actual hotel Suite photos are incomplete.
+  rows=corrected
  if key=='lowell' and len(rows)<3:
   # The official site renders its full gallery with JavaScript. These are confirmed
   # specifically identified Lowell photographs, not logos or generic stock.
