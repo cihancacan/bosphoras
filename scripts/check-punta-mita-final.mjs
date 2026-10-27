@@ -5,6 +5,8 @@ const m=JSON.parse(read('data/travel/puntaMitaMediaCandidates.json'));
 assert.equal(m.destination,'punta-mita');
 assert.equal(m.hotels.length,12);assert.equal(m.destinationScenes.length,9);
 assert.equal(m.approvedForCommercialPublication,false);
+assert.equal(m.visuallyVerified,true);
+assert(m.visualReviewEvidence.includes('40586367151'));
 const a=[...m.hotels,...m.destinationScenes];
 assert.equal(new Set(a.map(x=>x.sha256)).size,21);
 assert.equal(new Set(a.map(x=>x.localPath)).size,21);
@@ -13,6 +15,9 @@ for(const x of a){
  assert(x.sourcePage.startsWith('https://'));assert(x.downloadUrl.startsWith('https://'));
  assert(x.bytes>13000);assert(x.sha256.length===64);
  assert(x.frCaption&&x.enCaption&&x.credit);
+ assert.equal(x.status,'visually_reviewed_private_preview');
+ assert.equal(x.visuallyVerified,true);
+ assert(!x.visualQaWarning);
  assert(existsSync('public'+x.localPath),'missing image '+x.localPath);
  assert(statSync('public'+x.localPath).size>13000);
 }
@@ -40,6 +45,7 @@ const slugs=[...catalogue.matchAll(/slug:\s*["']([^"']+)["']/g)].map(x=>x[1]);
 assert.equal(slugs.length,88);assert.equal(new Set(slugs).size,88);assert(slugs.includes('punta-mita'));
 assert(catalogue.includes('approvedDestinationSlugs: ReadonlySet<string> = new Set([])'));
 assert(read('data/travel/featuredCityGuides.ts').includes("'punta-mita': puntaMitaGuide"));
+assert(read('data/travel/puntaMitaGuide.ts').includes("p.status==='visually_reviewed_private_preview'"));
 assert(read('components/travel/FeaturedCityGuide.tsx').includes('puntaMitaDraftFaq'));
 assert(read('components/travel/TravelPages.tsx').includes('isPuntaMita'));
 assert(read('components/travel/TravelPages.tsx').includes('confirmedPuntaMitaPreviewAssets'));

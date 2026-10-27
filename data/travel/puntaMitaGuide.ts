@@ -2,12 +2,12 @@ import type {FeaturedCityGuideData,FeaturedCityPhoto} from './featuredCityGuides
 import {puntaMitaDraftGuide} from './puntaMitaDraftGuide';
 import media from './puntaMitaMediaCandidates.json';
 type Candidate={
- key:string;status:string;localPath?:string;sourcePage?:string;
+ key:string;status:string;visuallyVerified?:boolean;visualQaWarning?:string;localPath?:string;sourcePage?:string;
  credit?:string;license?:string;licenseUrl?:string;frCaption?:string;enCaption?:string;
  sha256?:string;bytes?:number;visuallyVerified?:boolean;visualQaWarning?:string
 };
 export const approvedPuntaMitaPreviewPhoto=(p:Candidate):boolean=>
- p.status==='candidate_needs_visual_review' &&
+ p.status==='visually_reviewed_private_preview' && p.visuallyVerified===true && !p.visualQaWarning &&
  p.localPath?.startsWith('/images/travel/punta-mita-premium/')===true &&
  p.sourcePage?.startsWith('https://')===true &&
  !!p.frCaption && !!p.enCaption && !!p.credit && !!p.sha256 && p.sha256.length===64 && (p.bytes||0)>=13000;
