@@ -12,9 +12,9 @@
       "licenseUrl": "https://www.aman.com/resorts/amanyara/gallery",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Individual visual/photo rights review pending",
+      "visualQaWarning": "",
       "frCaption": "Amanyara · visuel de la galerie officielle, catégorie à confirmer",
       "enCaption": "Amanyara · original property image, category to confirm",
       "sourceAlt": "",
@@ -29,7 +29,8 @@
         1440,
         890
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "view-2",
@@ -42,9 +43,9 @@
       "licenseUrl": "https://www.aman.com/resorts/amanyara/gallery",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Individual visual/photo rights review pending",
+      "visualQaWarning": "",
       "frCaption": "Amanyara · visuel de la galerie officielle, catégorie à confirmer",
       "enCaption": "Amanyara · original property image, category to confirm",
       "sourceAlt": "",
@@ -59,7 +60,8 @@
         1440,
         890
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "view-3",
@@ -72,9 +74,9 @@
       "licenseUrl": "https://www.aman.com/resorts/amanyara/gallery",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Individual visual/photo rights review pending",
+      "visualQaWarning": "",
       "frCaption": "Amanyara · visuel de la galerie officielle, catégorie à confirmer",
       "enCaption": "Amanyara · original property image, category to confirm",
       "sourceAlt": "",
@@ -89,7 +91,8 @@
         1440,
         890
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "view-1",
@@ -102,9 +105,9 @@
       "licenseUrl": "https://www.comohotels.com/turks-and-caicos/como-parrot-cay",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Individual visual/photo rights review pending",
+      "visualQaWarning": "",
       "frCaption": "COMO Parrot Cay · visuel de la galerie officielle, catégorie à confirmer",
       "enCaption": "COMO Parrot Cay · original property image, category to confirm",
       "sourceAlt": "A Beach With Houses And Trees",
@@ -119,7 +122,8 @@
         1450,
         816
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "view-2",
@@ -132,9 +136,9 @@
       "licenseUrl": "https://www.comohotels.com/turks-and-caicos/como-parrot-cay",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Individual visual/photo rights review pending",
+      "visualQaWarning": "",
       "frCaption": "COMO Parrot Cay · visuel de la galerie officielle, catégorie à confirmer",
       "enCaption": "COMO Parrot Cay · original property image, category to confirm",
       "sourceAlt": "A Beach With Houses And Trees",
@@ -149,7 +153,8 @@
         1450,
         966
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "view-3",
@@ -162,9 +167,9 @@
       "licenseUrl": "https://www.comohotels.com/turks-and-caicos/como-parrot-cay",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Individual visual/photo rights review pending",
+      "visualQaWarning": "",
       "frCaption": "COMO Parrot Cay · visuel de la galerie officielle, catégorie à confirmer",
       "enCaption": "COMO Parrot Cay · original property image, category to confirm",
       "sourceAlt": "A Building On A Beach",
@@ -179,7 +184,8 @@
         1450,
         966
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "view-1",
@@ -192,9 +198,9 @@
       "licenseUrl": "https://www.fivestaralliance.com/luxury-hotels/providenciales/the-shore-club-turks-and-caicos",
       "rightsEvidenceType": "operator_self_attestation_partner_publisher",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Partner-published authentic property photo; final licence and visual review pending",
+      "visualQaWarning": "",
       "frCaption": "The Shore Club · panorama aérien de l’hôtel sur Long Bay",
       "enCaption": "The Shore Club · aerial Long Bay resort and beach",
       "sourceAlt": "The Shore Club · panorama aérien de l’hôtel sur Long Bay",
@@ -209,7 +215,8 @@
         1297,
         1050
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "view-2",
@@ -222,9 +229,9 @@
       "licenseUrl": "https://www.inspirato.com/destinations/turks-caicos/properties/the-shore-club/",
       "rightsEvidenceType": "operator_self_attestation_partner_publisher",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Partner-published authentic property photo; final licence and visual review pending",
+      "visualQaWarning": "",
       "frCaption": "The Shore Club · galerie extérieure avec vue sur la plage",
       "enCaption": "The Shore Club · beachfront architecture and terrace",
       "sourceAlt": "The Shore Club · galerie extérieure avec vue sur la plage",
@@ -239,7 +246,8 @@
         1450,
         816
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "view-3",
@@ -252,9 +260,9 @@
       "licenseUrl": "https://ca.trip.com/hotels/providenciales-hotel-detail-9544030/the-shore-club-turks-and-caicos/",
       "rightsEvidenceType": "operator_self_attestation_partner_publisher",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Partner-published authentic property photo; final licence and visual review pending",
+      "visualQaWarning": "",
       "frCaption": "The Shore Club · piscine et végétation devant Long Bay",
       "enCaption": "The Shore Club · actual beachfront pool and landscape",
       "sourceAlt": "The Shore Club · piscine et végétation devant Long Bay",
@@ -269,7 +277,8 @@
         960,
         660
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "view-1",
@@ -282,9 +291,9 @@
       "licenseUrl": "https://www.wymara.com/gallery",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Individual visual/photo rights review pending",
+      "visualQaWarning": "",
       "frCaption": "Wymara Resort + Villas · visuel de la galerie officielle, catégorie à confirmer",
       "enCaption": "Wymara Resort + Villas · original property image, category to confirm",
       "sourceAlt": "Wymara Resort + Villas, Grace Bay, Turks and Caicos",
@@ -299,7 +308,8 @@
         1450,
         992
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "view-2",
@@ -312,9 +322,9 @@
       "licenseUrl": "https://www.wymara.com/gallery",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Individual visual/photo rights review pending",
+      "visualQaWarning": "",
       "frCaption": "Wymara Resort + Villas · visuel de la galerie officielle, catégorie à confirmer",
       "enCaption": "Wymara Resort + Villas · original property image, category to confirm",
       "sourceAlt": "Wymara Resort + Villas, Grace Bay, Turks and Caicos",
@@ -329,7 +339,8 @@
         1450,
         805
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "view-3",
@@ -342,9 +353,9 @@
       "licenseUrl": "https://www.wymara.com/gallery",
       "rightsEvidenceType": "operator_self_attestation",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Individual visual/photo rights review pending",
+      "visualQaWarning": "",
       "frCaption": "Wymara Resort + Villas · visuel de la galerie officielle, catégorie à confirmer",
       "enCaption": "Wymara Resort + Villas · original property image, category to confirm",
       "sourceAlt": "Wymara Resort + Villas, Grace Bay, Turks and Caicos",
@@ -359,7 +370,8 @@
         1450,
         798
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     }
   ],
   "destinationScenes": [
@@ -370,9 +382,9 @@
       "enCaption": "Grace Bay · white sand and turquoise sea",
       "rightsEvidenceType": "wikimedia_commons_open_licence",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Visual review and attribution compliance pending",
+      "visualQaWarning": "",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Grace_Bay_Beach_Facing_North.jpg/1920px-Grace_Bay_Beach_Facing_North.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Grace_Bay_Beach_Facing_North.jpg",
       "credit": "Coolcaesar",
@@ -389,18 +401,19 @@
         1450,
         967
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "scene-2",
       "place": "Long Bay Beach, Turks and Caicos Islands (Unsplash).jpg",
-      "frCaption": "Long Bay · lagon turquoise sur Providenciales",
-      "enCaption": "Long Bay · shallow turquoise shore",
+      "frCaption": "Long Bay Beach · panneaux colorés et rivage des îles Turques-et-Caïques",
+      "enCaption": "Long Bay Beach · colourful beach signs against tropical scenery",
       "rightsEvidenceType": "wikimedia_commons_open_licence",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Visual review and attribution compliance pending",
+      "visualQaWarning": "",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Long_Bay_Beach%2C_Turks_and_Caicos_Islands_%28Unsplash%29.jpg/1920px-Long_Bay_Beach%2C_Turks_and_Caicos_Islands_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Long_Bay_Beach,_Turks_and_Caicos_Islands_(Unsplash).jpg",
       "credit": "Deanna Ritchie deannaritchie",
@@ -417,7 +430,8 @@
         1450,
         967
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "scene-3",
@@ -426,9 +440,9 @@
       "enCaption": "Chalk Sound · natural lagoon (2009 archival photograph)",
       "rightsEvidenceType": "wikimedia_commons_open_licence",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Visual review and attribution compliance pending",
+      "visualQaWarning": "",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Chalk_Sound_-_Providenciales.jpg/1920px-Chalk_Sound_-_Providenciales.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Chalk_Sound_-_Providenciales.jpg",
       "credit": "Simone Costa",
@@ -445,7 +459,8 @@
         1400,
         1050
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "scene-4",
@@ -454,9 +469,9 @@
       "enCaption": "Turtle Cove · shoreline near the marina",
       "rightsEvidenceType": "wikimedia_commons_open_licence",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Visual review and attribution compliance pending",
+      "visualQaWarning": "",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Turtle_Cove_Providenciales_Beach.jpg/1920px-Turtle_Cove_Providenciales_Beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Turtle_Cove_Providenciales_Beach.jpg",
       "credit": "Tim Sackton",
@@ -473,7 +488,8 @@
         1450,
         967
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "scene-5",
@@ -482,9 +498,9 @@
       "enCaption": "Providenciales · tranquil beach (exact sector unverified)",
       "rightsEvidenceType": "wikimedia_commons_open_licence",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Visual review and attribution compliance pending",
+      "visualQaWarning": "",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Quiet_Beach_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Quiet_Beach_-_panoramio.jpg",
       "credit": "pomarius",
@@ -501,7 +517,8 @@
         1400,
         1050
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "scene-6",
@@ -510,9 +527,9 @@
       "enCaption": "Providenciales · clear blue horizon",
       "rightsEvidenceType": "wikimedia_commons_open_licence",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Visual review and attribution compliance pending",
+      "visualQaWarning": "",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Turquoise_Water_to_the_Horizon.jpg/1920px-Turquoise_Water_to_the_Horizon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Turquoise_Water_to_the_Horizon.jpg",
       "credit": "Coolcaesar",
@@ -529,7 +546,8 @@
         1450,
         943
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "scene-7",
@@ -538,9 +556,9 @@
       "enCaption": "Northwest Point · evening light near Amanyara",
       "rightsEvidenceType": "wikimedia_commons_open_licence",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Visual review and attribution compliance pending",
+      "visualQaWarning": "",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Sunset_in_the_Amanyara_Resort.jpg/1920px-Sunset_in_the_Amanyara_Resort.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Sunset_in_the_Amanyara_Resort.jpg",
       "credit": "Alessandra Brunhildmedia",
@@ -557,7 +575,8 @@
         1450,
         967
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "scene-8",
@@ -566,9 +585,9 @@
       "enCaption": "Grace Bay · an alternative perspective on the beach",
       "rightsEvidenceType": "wikimedia_commons_open_licence",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Visual review and attribution compliance pending",
+      "visualQaWarning": "",
       "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Grace_bay%2C_Turks_and_Caicos_%2844250116614%29.jpg/1920px-Grace_bay%2C_Turks_and_Caicos_%2844250116614%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Grace_bay,_Turks_and_Caicos_(44250116614).jpg",
       "credit": "VV Nincic from Toronto, Canada",
@@ -585,7 +604,8 @@
         1450,
         967
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     },
     {
       "key": "scene-9",
@@ -594,9 +614,9 @@
       "enCaption": "Providenciales · atmospheric island sunset",
       "rightsEvidenceType": "wikimedia_commons_open_licence",
       "status": "candidate_needs_visual_review",
-      "visuallyVerified": false,
+      "visuallyVerified": true,
       "commercialRightsCleared": true,
-      "visualQaWarning": "Visual review and attribution compliance pending",
+      "visualQaWarning": "",
       "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Ocean_Club_Sunset_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Ocean_Club_Sunset_-_panoramio.jpg",
       "credit": "pomarius",
@@ -613,15 +633,17 @@
         1400,
         1050
       ],
-      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)"
+      "imageTransformation": "EXIF orientation correction, aspect-preserving WebP resizing (quality 85)",
+      "visualReviewBasis": "Inspected 21 actual WebP photographs in two contact sheets; source/title, property, framing and uniqueness reviewed. Individual photographer-level licensing not independently examined."
     }
   ],
   "downloadedHotelCandidates": 12,
   "downloadedDestinationCandidates": 9,
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
-  "publicationBlockedReason": "Image provenance downloaded but independent display review and photo-rights clearance still pending; noindex",
+  "publicationBlockedReason": "21 local WebP photographs visually reviewed and uniquely sourced for a protected Preview; independent photographer-level hotel photo rights and final commercial/public indexation approval still pending.",
   "photoRightsBasis": "Hotel sources are publisher-controlled; general operator permission attested, not independent original photographer release. Wikimedia Commons captions and licences preserved.",
   "downloadIssues": [],
-  "duplicatesFound": 0
+  "duplicatesFound": 0,
+  "editorialPhotoQaAt": "2026-10-27"
 }

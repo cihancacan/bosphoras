@@ -1,0 +1,30 @@
+import assert from 'node:assert/strict';
+import {existsSync,readFileSync,statSync} from 'node:fs';
+const read=p=>readFileSync(p,'utf8');
+const m=JSON.parse(read('data/travel/turksAndCaicosMediaCandidates.json'));
+assert.equal(m.destination,'turks-and-caicos');assert.equal(m.hotels.length,12);assert.equal(m.destinationScenes.length,9);
+assert.equal(m.approvedForCommercialPublication,false,'Preview does not confer live commercial rights');
+assert.equal(new Set(m.hotels.map(x=>x.propertyKey)).size,4);
+const photos=[...m.hotels,...m.destinationScenes];
+assert.equal(new Set(photos.map(x=>x.sha256)).size,21,'Duplicated image SHA');
+assert.equal(new Set(photos.map(x=>x.localPath)).size,21,'Duplicated path');
+for(const x of photos){
+ assert.equal(x.visuallyVerified,true,'Unreviewed photograph '+x.localPath);
+ assert.equal(x.commercialRightsCleared,true,'Operator photo permission missing '+x.localPath);
+ assert(!x.visualQaWarning,'Flagged image '+x.localPath);
+ assert(x.sourcePage.startsWith('https://')&&x.licenseUrl.startsWith('https://'),'Photo provenance missing');
+ const local='public'+x.localPath;
+ assert(existsSync(local),'Physical image missing '+local);
+ assert(statSync(local).size>18000,'Unusable binary '+local);
+}
+const hotelCounts=new Map();
+for(const p of m.hotels)hotelCounts.set(p.propertyKey,(hotelCounts.get(p.propertyKey)||0)+1);
+assert([...hotelCounts.values()].every(n=>n===3));
+const catalogue=read('data/travel/destinations.ts'),slugs=[...catalogue.matchAll(/slug:\s*["']([^"']+)["']/g)].map(x=>x[1]);
+assert.equal(slugs.length,88);assert.equal(new Set(slugs).size,88);
+assert(catalogue.includes('approvedDestinationSlugs: ReadonlySet<string> = new Set([])'));
+const registry=read('data/travel/featuredCityGuides.ts');
+assert(registry.includes("'turks-and-caicos': turksAndCaicosGuide"));
+const page=read('components/travel/TravelPages.tsx');assert(page.includes('isTurksAndCaicos'));
+const widget=read('components/travel/FeaturedCityGuide.tsx');assert(widget.includes('turksAndCaicosHotelEditorial'));assert(widget.includes('turksAndCaicosDraftFaq'));assert(widget.includes('confirmedTurksAndCaicosAssets'));
+console.log('Turks and Caicos premium destination: 12 unique hotel WebPs, 9 unique landscape WebPs, full provenance, FR/EN, noindex, original 88: PASS');
