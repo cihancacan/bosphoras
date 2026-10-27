@@ -12,7 +12,7 @@ MAN=ROOT/'data/travel/canouanMediaCandidates.json'
 S=requests.Session()
 S.headers.update({'User-Agent':'Mozilla/5.0 (compatible; BosphorasLuxuryStaysEditorialResearch/1.0)'})
 HOTELS=[
- ('mandarin','Mandarin Oriental, Canouan','https://www.mandarinoriental.com/en/canouan/caribbean/stay'),
+ ('mandarin','Mandarin Oriental, Canouan','https://www.mandarinoriental.com/en/canouan/caribbean'),
  ('soho','Soho Beach House Canouan','https://www.sohohouse.com/houses/soho-beach-house-canouan'),
  ('bigblue','Canouan Estate — Big Blue Ocean','https://canouan.com/villas/big-blue-ocean'),
  ('silverturtle','Canouan Estate — Silver Turtle','https://canouan.com/villas/silver-turtle')
@@ -58,15 +58,17 @@ def photos(key,page):
    if not src or not 'Canouan' in alt:continue
    out.append((src,alt))
  else:
-  # The Mandarin website provides one semantic HTML hotel image and embedded high-res
-  # Mandarin-hosted property images in server-rendered page JSON.
-  for im in soup.find_all('img'):
-   alt=(im.get('alt') or '').strip()
-   if ('canouan' in alt.lower()) and re.search(r'\.(?:jpg|jpeg|webp|png)(?:\?|$)',im.get('src',''),re.I):
-    out.append((im['src'],alt))
-  txt=html.unescape(str(soup))
-  for u in re.findall(r'https://media\.ffycdn\.net/eu/mandarin-oriental-hotel-group/[\w-]+\.(?:jpg|jpeg|png|webp)',txt,re.I):
-   if (u,'Mandarin Oriental Canouan, page-embedded image') not in out:out.append((u,'Mandarin Oriental Canouan, page-embedded hotel photo to verify'))
+  # Mandarin's real hotel photos are lazy-loaded from picture[v-lazyload].
+  # Do not use the global navigation image or free-floating JSON media IDs:
+  # those may depict fans, buildings in other countries or unrelated hotels.
+  scenes=['Aerial view of Godahl Beach.','Person relaxing on a beach lounger with a tropical cocktail overlooking turquoise waters.','A couple sharing a candid moment over cocktails at Tides Bar, Mandarin Oriental, Canouan.']
+  for description in scenes:
+   im=next((im for im in soup.find_all('img') if (im.get('alt') or '').strip()==description),None)
+   if im is None:raise RuntimeError('Mandarin true photo missing '+description)
+   parent=str(im.parent)
+   match=re.search(r"src: '([^']+)'",parent)
+   if not match or not match.group(1).startswith('https://media.ffycdn.net/'):raise RuntimeError('Mandarin picture URL unavailable')
+   out.append((match.group(1),description))
  unique=[];seen=set()
  for u,alt in out:
   if u.split('?')[0] in seen:continue
