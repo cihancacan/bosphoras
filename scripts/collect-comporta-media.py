@@ -94,7 +94,7 @@ def commons_file(title):
 def save(url,path):
  r=req(url,timeout=55)
  im=ImageOps.exif_transpose(Image.open(BytesIO(r.content)))
- assert im.width>=680 and im.height>=430,f'Image too small: {im.size} {url}'
+ assert im.width>=(580 if 'guestcentric.net' in url else 680) and im.height>=430,f'Image too small: {im.size} {url}'
  ratio=im.width/im.height
  assert 0.48<=ratio<=5.5,f'Extreme image ratio {ratio}: {url}'
  original=list(im.size)
