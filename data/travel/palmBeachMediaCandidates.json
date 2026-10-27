@@ -1,247 +1,625 @@
 {
   "destination": "palm-beach",
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
       "propertyKey": "breakers",
       "property": "The Breakers Palm Beach",
       "sourcePage": "https://www.thebreakers.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting photo verification",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://storage.googleapis.com/wwwstatic.thebreakers.com/filer_public/7c/78/7c783646-2e2d-4609-ba6c-bb439da943e1/home_resort_2024.jpg",
+      "frCaption": "The Breakers · façade Renaissance et jardins du palace",
+      "enCaption": "The Breakers · historic Renaissance resort and gardens",
+      "credit": "The Breakers Palm Beach · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.thebreakers.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/palm-beach-premium/breakers/view-1.webp",
+      "sha256": "1e909a16903278e102149594d4c37f6abb032ae854709faa50e2653493e3a46a",
+      "bytes": 419848,
+      "originalSize": [
+        1700,
+        700
+      ],
+      "outputSize": [
+        1700,
+        700
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "breakers",
       "property": "The Breakers Palm Beach",
       "sourcePage": "https://www.thebreakers.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting photo verification",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://storage.googleapis.com/wwwstatic.thebreakers.com/filer_public/b6/03/b6032589-8e20-4082-a200-f1f93235ae0e/the_breakers_home_dining2.jpg",
+      "frCaption": "The Breakers · restauration au bord des piscines",
+      "enCaption": "The Breakers · poolside dining at the resort",
+      "credit": "The Breakers Palm Beach · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.thebreakers.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/palm-beach-premium/breakers/view-2.webp",
+      "sha256": "77150d23ea0c19758b51959ca71bb911705602d9155ccc831c22d863b46c1375",
+      "bytes": 86852,
+      "originalSize": [
+        960,
+        500
+      ],
+      "outputSize": [
+        960,
+        500
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "breakers",
       "property": "The Breakers Palm Beach",
       "sourcePage": "https://www.thebreakers.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting photo verification",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://storage.googleapis.com/wwwstatic.thebreakers.com/filer_public/52/a5/52a5bd72-9697-41e2-8bcd-3b2236468afb/flaglerclub_home24.jpg",
+      "frCaption": "The Breakers · suite et hébergement Flagler Club",
+      "enCaption": "The Breakers · Flagler Club suite category",
+      "credit": "The Breakers Palm Beach · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.thebreakers.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/palm-beach-premium/breakers/view-3.webp",
+      "sha256": "1585017c20098cd686a02d21f6ec82b05075d75376d7757232451164ac65f885",
+      "bytes": 60454,
+      "originalSize": [
+        960,
+        500
+      ],
+      "outputSize": [
+        960,
+        500
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "brazilian",
       "property": "The Brazilian Court Hotel",
       "sourcePage": "https://www.thebraziliancourt.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting photo verification",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://image-tc.galaxy.tf/wijpeg-1py5muklyjdfr4qu9jn10e46m/braziliancourt-55-optimized.jpg?rotate=0&crop=0%2C828%2C1200%2C902&width=1920",
+      "frCaption": "Brazilian Court · cour intérieure et fontaine historique",
+      "enCaption": "Brazilian Court · historic hotel fountain and courtyard",
+      "credit": "The Brazilian Court Hotel · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.thebraziliancourt.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/palm-beach-premium/brazilian/view-1.webp",
+      "sha256": "58a776d63cb4e09e00fa93b53f77b480bea83c14ad9d0ba34d1a95fe93553b82",
+      "bytes": 244918,
+      "originalSize": [
+        1200,
+        902
+      ],
+      "outputSize": [
+        1200,
+        902
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "brazilian",
       "property": "The Brazilian Court Hotel",
       "sourcePage": "https://www.thebraziliancourt.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting photo verification",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://image-tc.galaxy.tf/wijpeg-e24g21mdm0at9qtmqgqrjeq9t/web-brazilianct-kingbed-a_standard.jpg?crop=0%2C3%2C1920%2C1440&width=1000",
+      "frCaption": "Brazilian Court · chambre au mobilier raffiné",
+      "enCaption": "Brazilian Court · luxury guestroom interior",
+      "credit": "The Brazilian Court Hotel · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.thebraziliancourt.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/palm-beach-premium/brazilian/view-2.webp",
+      "sha256": "aff10794fa5b17d9558d968fcfa324444eeb243f4d6599fb299b8f66d0edd8c1",
+      "bytes": 89178,
+      "originalSize": [
+        1000,
+        750
+      ],
+      "outputSize": [
+        1000,
+        750
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "brazilian",
       "property": "The Brazilian Court Hotel",
       "sourcePage": "https://www.thebraziliancourt.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting photo verification",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://image-tc.galaxy.tf/wijpeg-bjcgk7yr1udwvl31lpo96555q/web-brazilianct-livingrm-a_standard.jpg?crop=23%2C0%2C1875%2C1406&width=1000",
+      "frCaption": "Brazilian Court · salon d'une suite distincte",
+      "enCaption": "Brazilian Court · separate suite living-room category",
+      "credit": "The Brazilian Court Hotel · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.thebraziliancourt.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/palm-beach-premium/brazilian/view-3.webp",
+      "sha256": "09a6c56c4ebf8551c12ae46fa649438763d5e9097ef4c1b2777bb1eece23fe10",
+      "bytes": 101958,
+      "originalSize": [
+        1000,
+        750
+      ],
+      "outputSize": [
+        1000,
+        750
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "colony",
       "property": "The Colony Hotel Palm Beach",
       "sourcePage": "https://thecolonypalmbeach.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting photo verification",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://thecolonypalmbeach.com/wp-content/uploads/2023/11/two-girls-in-hotel-hallway.jpg",
+      "frCaption": "The Colony · couloirs décorés du boutique-hôtel",
+      "enCaption": "The Colony · playful boutique hotel interiors",
+      "credit": "The Colony Hotel Palm Beach · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://thecolonypalmbeach.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/palm-beach-premium/colony/view-1.webp",
+      "sha256": "fe7c24994e109e445250ec573701b646f7f5353e755bd168a47f03b44c4a291d",
+      "bytes": 160160,
+      "originalSize": [
+        800,
+        981
+      ],
+      "outputSize": [
+        800,
+        981
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "colony",
       "property": "The Colony Hotel Palm Beach",
       "sourcePage": "https://thecolonypalmbeach.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting photo verification",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://thecolonypalmbeach.com/wp-content/uploads/2023/04/the-colony-rooms-and-suites-home.jpg",
+      "frCaption": "The Colony · chambre et couleurs typiques de Palm Beach",
+      "enCaption": "The Colony · guestroom with signature Palm Beach decor",
+      "credit": "The Colony Hotel Palm Beach · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://thecolonypalmbeach.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/palm-beach-premium/colony/view-2.webp",
+      "sha256": "41de1ac25e63af4a8ff014ad995ef48f828760f37b60ce9f0ad151b11b6866c4",
+      "bytes": 89876,
+      "originalSize": [
+        800,
+        544
+      ],
+      "outputSize": [
+        800,
+        544
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "colony",
       "property": "The Colony Hotel Palm Beach",
       "sourcePage": "https://thecolonypalmbeach.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting photo verification",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://thecolonypalmbeach.com/wp-content/uploads/2023/07/The-Colony_Swiftys-010-1-1-1024x681.jpg",
+      "frCaption": "The Colony · terrasse de Swifty’s près de la piscine",
+      "enCaption": "The Colony · poolside Swifty's restaurant",
+      "credit": "The Colony Hotel Palm Beach · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://thecolonypalmbeach.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/palm-beach-premium/colony/view-3.webp",
+      "sha256": "db15a51643111c9e6b5f7b5116b8ab0a643f1b82b06ea13c7d86d9445f537c47",
+      "bytes": 216296,
+      "originalSize": [
+        1024,
+        681
+      ],
+      "outputSize": [
+        1024,
+        681
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "palmhouse",
       "property": "Palm House Palm Beach",
       "sourcePage": "https://www.palmhouse.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting photo verification",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://cdn.sanity.io/images/oziyixg0/production/6d3e492baef138d68da0382b64701844bec9ac07-1920x1536.jpg?auto=format&fit=max&q=85&w=1450",
+      "frCaption": "Palm House · espace design et atmosphère tropicale",
+      "enCaption": "Palm House · design-led hotel atmosphere",
+      "credit": "Palm House Palm Beach · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.palmhouse.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/palm-beach-premium/palmhouse/view-1.webp",
+      "sha256": "6e88345666c333451b6bb01dcdbd3ed7bb4477bf555d09e02f4c5f5bcaad6ea9",
+      "bytes": 268734,
+      "originalSize": [
+        1450,
+        1160
+      ],
+      "outputSize": [
+        1450,
+        1160
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "palmhouse",
       "property": "Palm House Palm Beach",
       "sourcePage": "https://www.palmhouse.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting photo verification",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://cdn.sanity.io/images/oziyixg0/production/204c6a3d2df585a11b37a974d60a6aff7e271f85-1920x1429.jpg?auto=format&fit=max&q=85&w=1450",
+      "frCaption": "Palm House · architecture et décoration colorée",
+      "enCaption": "Palm House · colourful hotel architecture and interior",
+      "credit": "Palm House Palm Beach · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.palmhouse.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/palm-beach-premium/palmhouse/view-2.webp",
+      "sha256": "b319ddf97955dddce3507e7f0abd03e266e466f6bac348fbebfe8068c897c637",
+      "bytes": 259404,
+      "originalSize": [
+        1450,
+        1079
+      ],
+      "outputSize": [
+        1450,
+        1079
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "palmhouse",
       "property": "Palm House Palm Beach",
       "sourcePage": "https://www.palmhouse.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Awaiting photo verification",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://cdn.sanity.io/images/oziyixg0/production/3d41b2a5cb79dee164229a92e052675889b5bc87-1920x1281.jpg?auto=format&fit=max&q=85&w=1450",
+      "frCaption": "Palm House · espaces de vie de l’hôtel",
+      "enCaption": "Palm House · hotel guest spaces",
+      "credit": "Palm House Palm Beach · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.palmhouse.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/palm-beach-premium/palmhouse/view-3.webp",
+      "sha256": "f081d655ad3954f3cf184272c5a9508c6bac364f06c1ab2a931a8acbcff4e698",
+      "bytes": 161808,
+      "originalSize": [
+        1450,
+        967
+      ],
+      "outputSize": [
+        1450,
+        967
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     }
   ],
   "destinationScenes": [
     {
       "key": "scene-1",
       "place": "Worth Avenue Clock Tower Palm Beach Florida.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons and licence check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Worth Avenue · tour de l'horloge face à l'Atlantique",
+      "enCaption": "Worth Avenue · landmark clock tower at the ocean",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Worth_Avenue_Clock_Tower_Palm_Beach_Florida.jpg/1920px-Worth_Avenue_Clock_Tower_Palm_Beach_Florida.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Worth_Avenue_Clock_Tower_Palm_Beach_Florida.jpg",
+      "credit": "User:MVASCO",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "localPath": "/images/travel/palm-beach-premium/destination/scene-1.webp",
+      "sha256": "0daca64deea89723687af0504e5a54331ffee5f6c72c544728703adcfc1f869d",
+      "bytes": 321908,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-2",
       "place": "Worth Avenue.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons and licence check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Worth Avenue · boulevard historique de Palm Beach",
+      "enCaption": "Worth Avenue · iconic Palm Beach shopping street",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Worth_Avenue.jpg/1920px-Worth_Avenue.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Worth_Avenue.jpg",
+      "credit": "Andyxox",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Worth_Avenue.jpg",
+      "localPath": "/images/travel/palm-beach-premium/destination/scene-2.webp",
+      "sha256": "5391bf16d3de274a3dc20e87dd6552890357f48f2d5a6ea2a5184c908dfff495",
+      "bytes": 190844,
+      "originalSize": [
+        1920,
+        1279
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-3",
       "place": "Breakers CIMG0089.JPG",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons and licence check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "The Breakers · monument de l'architecture de Palm Beach",
+      "enCaption": "The Breakers · historic Palm Beach architecture",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/d/da/Breakers_CIMG0089.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Breakers_CIMG0089.JPG",
+      "credit": "Nick22aku at English Wikipedia",
+      "license": "CC BY 2.5",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+      "localPath": "/images/travel/palm-beach-premium/destination/scene-3.webp",
+      "sha256": "2cc12c883ade275674b9aa98048de46bab0d3f99980d41e09bab429e7a40ca85",
+      "bytes": 292160,
+      "originalSize": [
+        1600,
+        1200
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-4",
       "place": "Whitehall (Henry M. Flagler House) in Palm Beach, Florida.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons and licence check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Whitehall · maison historique du musée Henry Flagler",
+      "enCaption": "Whitehall · Henry Flagler's historic mansion",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Whitehall_%28Henry_M._Flagler_House%29_in_Palm_Beach%2C_Florida.jpg/1920px-Whitehall_%28Henry_M._Flagler_House%29_in_Palm_Beach%2C_Florida.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Whitehall_(Henry_M._Flagler_House)_in_Palm_Beach,_Florida.jpg",
+      "credit": "Dpalma01",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/palm-beach-premium/destination/scene-4.webp",
+      "sha256": "db1b08064c5018875f3b108a7981e72b23dbe50a3a0e8e0986aab510f254809a",
+      "bytes": 545548,
+      "originalSize": [
+        1920,
+        1446
+      ],
+      "outputSize": [
+        1660,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-5",
       "place": "Bethesda-by-the-SeaPalmBeachFL.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons and licence check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Bethesda-by-the-Sea · architecture et jardins historiques",
+      "enCaption": "Bethesda-by-the-Sea · landmark architecture and gardens",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Bethesda-by-the-SeaPalmBeachFL.jpg/1920px-Bethesda-by-the-SeaPalmBeachFL.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bethesda-by-the-SeaPalmBeachFL.jpg",
+      "credit": "Jack Boucher",
+      "license": "Public domain",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Bethesda-by-the-SeaPalmBeachFL.jpg",
+      "localPath": "/images/travel/palm-beach-premium/destination/scene-5.webp",
+      "sha256": "910000cda9de92a834a697a0a9f4a9e6118da5cecbaed4d7a110d7999eb0cb37",
+      "bytes": 647000,
+      "originalSize": [
+        1920,
+        1346
+      ],
+      "outputSize": [
+        1750,
+        1227
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-6",
       "place": "Atlantic Ocean and Palm Beach Inlet, West Palm Beach, Florida - panoramio.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons and licence check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Palm Beach Inlet · chenal et Atlantique au nord de l'île",
+      "enCaption": "Palm Beach Inlet · Atlantic coast and northern inlet",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Atlantic_Ocean_and_Palm_Beach_Inlet%2C_West_Palm_Beach%2C_Florida_-_panoramio.jpg/1920px-Atlantic_Ocean_and_Palm_Beach_Inlet%2C_West_Palm_Beach%2C_Florida_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Atlantic_Ocean_and_Palm_Beach_Inlet,_West_Palm_Beach,_Florida_-_panoramio.jpg",
+      "credit": "David Broad",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "localPath": "/images/travel/palm-beach-premium/destination/scene-6.webp",
+      "sha256": "b8db6ce143d700840165cbf7ea6e6629366cb9b2a8bec6027539391857c674a4",
+      "bytes": 574704,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-7",
       "place": "Worth Avenue in Palm Beach Florida arcade near Via Mizner.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons and licence check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Via Mizner · arcade méditerranéenne à Worth Avenue",
+      "enCaption": "Via Mizner · Mediterranean-style shopping arcade",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Worth_Avenue_in_Palm_Beach_Florida_arcade_near_Via_Mizner.jpg/1920px-Worth_Avenue_in_Palm_Beach_Florida_arcade_near_Via_Mizner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Worth_Avenue_in_Palm_Beach_Florida_arcade_near_Via_Mizner.jpg",
+      "credit": "CZmarlin — Christopher Ziemnowicz — a photo credit is required if this image is used anywhere other than Wikipedia.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/palm-beach-premium/destination/scene-7.webp",
+      "sha256": "2056e9ac68760f81bbfa7234f346ae450de16c8ed997b816ef3f038933fd909d",
+      "bytes": 260122,
+      "originalSize": [
+        1920,
+        2560
+      ],
+      "outputSize": [
+        937,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-8",
       "place": "Lake Worth and Palm Beach Inlet, West Palm Beach, Florida - panoramio.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons and licence check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Lake Worth · lagune et entrée nord de Palm Beach",
+      "enCaption": "Lake Worth · lagoon and northern Palm Beach inlet",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Lake_Worth_and_Palm_Beach_Inlet%2C_West_Palm_Beach%2C_Florida_-_panoramio.jpg/1920px-Lake_Worth_and_Palm_Beach_Inlet%2C_West_Palm_Beach%2C_Florida_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lake_Worth_and_Palm_Beach_Inlet,_West_Palm_Beach,_Florida_-_panoramio.jpg",
+      "credit": "David Broad",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "localPath": "/images/travel/palm-beach-premium/destination/scene-8.webp",
+      "sha256": "050b02563b96e6334222065566275843a5d17586f1271fbd74312094bc205892",
+      "bytes": 309318,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-9",
       "place": "Worth Avenue in Palm Beach Florida with Chrysler and Bentley.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons and licence check pending",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Worth Avenue · architecture et automobiles sur le boulevard",
+      "enCaption": "Worth Avenue · historic street architecture and automobiles",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Worth_Avenue_in_Palm_Beach_Florida_with_Chrysler_and_Bentley.jpg/1920px-Worth_Avenue_in_Palm_Beach_Florida_with_Chrysler_and_Bentley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Worth_Avenue_in_Palm_Beach_Florida_with_Chrysler_and_Bentley.jpg",
+      "credit": "CZmarlin — Christopher Ziemnowicz — a photo credit is required if this image is used anywhere other than Wikipedia.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/palm-beach-premium/destination/scene-9.webp",
+      "sha256": "48a09862be3a0858413b109f94a147fd39278ed97528bbec2a6a889f74f8ebcd",
+      "bytes": 422450,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     }
   ],
-  "publicationBlockedReason": "21 authentic images and internal QA required before any preview or indexing",
-  "photoRightsBasis": "Project operator attests permission to use hotel photography; original photographer rights not independently inspected. Commons license and credit recorded per image."
+  "publicationBlockedReason": "21 local photos passed automated source and uniqueness QA; final independent Preview display and hotel licensing signoff still pending",
+  "photoRightsBasis": "Commercial hotel photo use stated by operator but photographer agreements not audited; Commons license and credit stored per photo"
 }
