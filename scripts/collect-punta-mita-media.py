@@ -48,7 +48,7 @@ SCENES=[
 ('Club de golf, Punta Mita, Nayarit - panoramio.jpg','Punta Mita · parcours sur la péninsule','Punta Mita peninsula golf course'),
 ('Islas Marietas.jpg','Islas Marietas · archipel protégé','Protected Marietas Islands'),
 ('Malecón de Punta de Mita - panoramio.jpg','Front de mer et promenade de Punta de Mita','Punta de Mita waterfront'),
-('Las islas Marietas desde un barco (1).jpg','Marietas · îlots volcaniques vus en bateau','Marietas Islands seen from a boat'),
+('Blue Footed Booby Marietas Island Puerto Vallarta (20241371835).jpg','Marietas · fou à pieds bleus sur les îles protégées','Marietas · blue-footed booby on protected islands'),
 ('Punta Mita, Nayarit - panoramio (1).jpg','Vue de côte à Punta Mita','A different Punta Mita coastal scene'),
 ('Playa del St. Regis - panoramio.jpg','Plage du secteur St. Regis à Punta Mita','Coast by St. Regis on Punta Mita peninsula')
 ]
