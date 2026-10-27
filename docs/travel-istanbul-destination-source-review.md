@@ -23,3 +23,11 @@
 - [ ] TypeScript and catalogue regression checks
 - [ ] Source and photography rights recorded; public indexing blocked
 - [ ] READY Vercel Preview + 200 status for FR/EN destination and unchanged Istanbul flagship hotel page
+
+## Preview readiness — 28 October 2026
+- `istanbul` registered as the 55th FeaturedCityGuide; all 88 original catalogue slugs preserved.
+- Nine independently identified hotel records reused from `istanbulFlagship.ts`, with original local image sets from `hotelPhotography.ts` and five city areas from `istanbulCityScenes.ts`.
+- The independent nine-hotel flagship at `/travel/hotels/istanbul` is preserved and must remain the hotel listing page.
+- TypeScript and prior regression suite passed after integration (GitHub Actions run 40596099493); dedicated new 55th-guide check added to editorial QA workflow.
+- CC-labelled city hero assets explicitly filtered for Article structured data. Other publisher photos remain private-preview candidates; public commercial rights and indexation unapproved.
+- User explicitly requests one Vercel Preview after each destination, so this build is deliberately labelled `[travel-batch-ready]`, with production unchanged.
