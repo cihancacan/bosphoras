@@ -7,7 +7,7 @@ const obj=(p,name)=>{const s=read(p),m='export const '+name+' = ',i=s.indexOf(m)
 const g=obj('data/travel/palmBeachDraftGuide.ts','palmBeachDraftGuide');
 const f=obj('data/travel/palmBeachDraftFaq.ts','palmBeachDraftFaq');
 const m=JSON.parse(read('data/travel/palmBeachMediaCandidates.json'));
-assert.equal(g.slug,'the-hamptons');assert.equal(g.hotels.length,4);assert.equal(new Set(g.hotels.map(x=>x.name)).size,4);
+assert.equal(g.slug,'palm-beach');assert.equal(g.hotels.length,4);assert.equal(new Set(g.hotels.map(x=>x.name)).size,4);
 assert.equal(g.areas.length,5);assert.equal(g.experiences.length,5);
 assert(g.editorialFr.length>1500&&g.editorialEn.length>1500,'thin editorial');
 for(const h of g.hotels)assert(h.fr.length>460&&h.en.length>460&&h.frWatch.length>55&&h.enWatch.length>55&&h.officialUrl.startsWith('https://'),h.name);
@@ -28,11 +28,11 @@ for(const x of all){
 }
 const ed=read('data/travel/palmBeachPremiumEditorial.ts');
 for(const id of ['breakers','brazilian','colony','palmhouse'])assert(ed.includes(id),'missing '+id);
-assert(read('data/travel/featuredCityGuides.ts').includes("'the-hamptons': palmBeachGuide"));
+assert(read('data/travel/featuredCityGuides.ts').includes("'palm-beach': palmBeachGuide"));
 assert(read('components/travel/FeaturedCityGuide.tsx').includes('confirmedPalmBeachAssets'));
 assert(read('components/travel/TravelPages.tsx').includes('isPalmBeach'));
 const dest=read('data/travel/destinations.ts');
 assert(dest.includes('approvedDestinationSlugs: ReadonlySet<string> = new Set([])'));
 const slugs=[...dest.matchAll(/slug:\s*["']([^"']+)["']/g)].map(x=>x[1]);
-assert(slugs.length===88&&new Set(slugs).size===88&&slugs.includes('the-hamptons'));
+assert(slugs.length===88&&new Set(slugs).size===88&&slugs.includes('palm-beach'));
 console.log(JSON.stringify({status:'PALM_BEACH_INTERNAL_DRAFT_QA_PASSED',hotels:4,areas:5,experiences:5,faqEach:7,images:21,catalogue:88,index:false}));
