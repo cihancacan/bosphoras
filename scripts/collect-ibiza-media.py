@@ -18,7 +18,8 @@ S.headers.update({"User-Agent":"BosphorasLuxuryStays/2.0 (original photo source 
  "Accept":"text/html,image/jpeg,image/png,image/webp,application/json,*/*;q=.7"})
 HOTELS={
  "six-senses-ibiza":[
-  "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/",
+  "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
+  "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/", 
   "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/accommodation/",
   "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/dining/"],
  "nobu-ibiza-bay":[
@@ -32,7 +33,9 @@ HOTELS={
   "https://7pines-ibiza.com/en/dining",
   "https://7pines-ibiza.com/en/gallery"],
  "the-standard-ibiza":[
-  "https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza",
+  "https://www.standardhotels.com/ibiza/properties/ibiza",
+  "https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza/gallery",
+  "https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza", 
   "https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza/rooms",
   "https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza/dining"]
 }
@@ -49,7 +52,18 @@ SCENES={
 }
 # Candidate source URLs can be added only when their named property/place identity is checked.
 EXACT_HOTEL={}
-EXACT_SCENE={}
+# Exact verified place identity; Commons originals built from canonical filename,
+# attribution/licence remain to be read from individual Commons source before QA.
+EXACT_SCENE={
+ "scene-1":[("COMMONS:Eivissa - Dalt Vila from Airplane.jpg","https://commons.wikimedia.org/wiki/File:Eivissa_-_Dalt_Vila_from_Airplane.jpg","Dalt Vila and cathedral photographed from a plane, 2024 by UnFUG-Fabi")],
+ "scene-2":[("COMMONS:Ibiza Port.jpg","https://commons.wikimedia.org/wiki/File:Ibiza_Port.jpg","Ibiza city marina port panorama from shore, 2022 by Josi; not a claim of an exact Botafoch quay")],
+ "scene-3":[("COMMONS:Platja de Talamanca - Playa de Talamanca.jpg","https://commons.wikimedia.org/wiki/File:Platja_de_Talamanca_-_Playa_de_Talamanca.jpg","True Talamanca Beach bay, Ibiza, not a resort pool")],
+ "scene-5":[("COMMONS:Es Vedrà from a cave, Ibiza.jpg","https://commons.wikimedia.org/wiki/File:Es_Vedrà_from_a_cave,_Ibiza.jpg","Es Vedra from coast cave, CC0, 2023 by Gerda Arendt")],
+ "scene-6":[("COMMONS:Balearen, Ibiza-Westküste, Wanderung Cala Codola geologische Verwerfungen - panoramio.jpg","https://commons.wikimedia.org/wiki/File:Balearen,_Ibiza-Westküste,_Wanderung_Cala_Codola_geologische_Verwerfungen_-_panoramio.jpg","West Ibiza coastline near Cala Codolar, geology and coves, NOT necessarily the beach itself")],
+ "scene-7":[("COMMONS:Cala Conta Ibiza 17 May 2011 (2).JPG","https://commons.wikimedia.org/wiki/File:Cala_Conta_Ibiza_17_May_2011_(2).JPG","Cala Conta actual beach turquoise water, photographer Stavros1, CC BY 3.0")],
+ "scene-8":[("COMMONS:Ibiza Ses Salines asv2023-04 img1.jpg","https://commons.wikimedia.org/wiki/File:Ibiza_Ses_Salines_asv2023-04_img1.jpg","Ses Salines saltpans, A.Savin, Free Art License; require FAL compliance")],
+ "scene-9":[("COMMONS:Parish Church Sant Joan de Labritja 31 May 2012.JPG","https://commons.wikimedia.org/wiki/File:Parish_Church_Sant_Joan_de_Labritja_31_May_2012.JPG","Sant Joan de Labritja town historic church (not Cala Xarraca)")]
+}
 diagnostics=[]
 def fetch(url,params=None):
  try:
@@ -110,6 +124,11 @@ def commons(query,tokens):
   source="https://commons.wikimedia.org/wiki/"+title.replace(" ","_")
   out.append((27+sum(x in lower for x in tokens)*5,url,source,title,(artist or "Commons contributor")+" · "+lic,lic))
  return sorted(out,key=lambda x:-x[0])
+def commons_original(filename):
+ from urllib.parse import quote
+ normalized=filename.replace(" ","_")
+ digest=hashlib.md5(normalized.encode("utf-8")).hexdigest()
+ return "https://upload.wikimedia.org/wikipedia/commons/"+digest[0]+"/"+digest[:2]+"/"+quote(normalized,safe="()")
 def dhash(im):
  pix=list(im.convert("L").resize((9,8),Image.Resampling.LANCZOS).getdata())
  return "".join("1" if pix[y*9+x]>pix[y*9+x+1] else "0" for y in range(8) for x in range(8))
@@ -161,7 +180,9 @@ def main():
  for row in m["destinationScenes"]:
   if row.get("localPath"):continue
   query,tokens=SCENES[row["key"]]
-  linked=[(110,url,page,ctx,"Geolocated source: "+page,"Licence pending verification") for url,page,ctx in EXACT_SCENE.get(row["key"],[])]
+  linked=[(180,commons_original(url.split(":",1)[1]) if url.startswith("COMMONS:") else url,
+    page,ctx,"Geolocated Wikimedia source: "+page,"Creative Commons licence: check file and attribution")
+    for url,page,ctx in EXACT_SCENE.get(row["key"],[])]
   capture(row,linked+commons(query,tokens),urls,shas,hashes)
  m["downloadedHotelCandidates"]=sum(bool(x.get("localPath")) for x in m["hotels"])
  m["downloadedDestinationCandidates"]=sum(bool(x.get("localPath")) for x in m["destinationScenes"])
