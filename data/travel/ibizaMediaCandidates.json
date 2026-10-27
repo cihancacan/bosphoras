@@ -2,8 +2,8 @@
   "destination": "ibiza",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 6,
+  "downloadedDestinationCandidates": 1,
   "hotels": [
     {
       "key": "view-1",
@@ -44,10 +44,26 @@
       "propertyKey": "nobu-ibiza-bay",
       "sourcePage": "https://www.nobuhotelibizabay.com/",
       "slotIntent": "recognisable property exterior or coast setting",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/nobu-ibiza-bay/view-1.webp",
+      "downloadUrl": "https://image-tc.galaxy.tf/wijpeg-dnkce3n1h9r6m52hldavcozzm/deluxe-junior-suite-sea-view-terrace-1.jpg",
+      "candidateContext": "    ",
+      "credit": "Hotel website; photographer to be checked",
+      "license": "Commercial reuse rights not independently reviewed",
+      "sha256": "83137dfed3c36bb6f86be04660707d8d4086082227b9b2bca8c9fde10df58a7a",
+      "dhash": "0000011000100110001001100111001000010010010011010000100100101101",
+      "bytes": 144824,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "view-2",
@@ -55,10 +71,26 @@
       "propertyKey": "nobu-ibiza-bay",
       "sourcePage": "https://www.nobuhotelibizabay.com/",
       "slotIntent": "real guestroom or suite interior",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/nobu-ibiza-bay/view-2.webp",
+      "downloadUrl": "https://image-tc.galaxy.tf/wijpeg-1o2afh3r7e9h8qe9v6dp8b86/deluxe-junior-suite-sea-view-1920x1280.jpg?width=2000",
+      "candidateContext": "    ",
+      "credit": "Hotel website; photographer to be checked",
+      "license": "Commercial reuse rights not independently reviewed",
+      "sha256": "f85aa8c219f25cf933f94b1523fa772266d5510244c527b9d84abb43e67760e6",
+      "dhash": "1110001101101011011010110110011001101101010100100011001001001010",
+      "bytes": 333890,
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ]
     },
     {
       "key": "view-3",
@@ -66,10 +98,26 @@
       "propertyKey": "nobu-ibiza-bay",
       "sourcePage": "https://www.nobuhotelibizabay.com/",
       "slotIntent": "authentic hotel pool/dining/terrace",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/nobu-ibiza-bay/view-3.webp",
+      "downloadUrl": "https://image-tc.galaxy.tf/wijpeg-7i4q5xau55h8kve0me8nmr7zv/nobu-ibiza-bay-adult-pool.jpg",
+      "candidateContext": "    ",
+      "credit": "Hotel website; photographer to be checked",
+      "license": "Commercial reuse rights not independently reviewed",
+      "sha256": "aa414fdeceb8ba22ded26c2fc87cac9c55e243b0b8bf78ac06eefbbc525f4840",
+      "dhash": "0101111101101011011011001111110101101101110110101001010101101101",
+      "bytes": 198456,
+      "originalSize": [
+        2000,
+        1510
+      ],
+      "outputSize": [
+        1589,
+        1200
+      ]
     },
     {
       "key": "view-1",
@@ -77,21 +125,53 @@
       "propertyKey": "7pines-resort-ibiza",
       "sourcePage": "https://7pines-ibiza.com/en/resort",
       "slotIntent": "recognisable property exterior or coast setting",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/7pines-resort-ibiza/view-1.webp",
+      "downloadUrl": "https://7pines-ibiza.com/media/resort-ibiza-clifftop-luxury-2952.webp",
+      "candidateContext": "    ",
+      "credit": "Hotel website; photographer to be checked",
+      "license": "Commercial reuse rights not independently reviewed",
+      "sha256": "7c7cc0c889f81db18550fb834b7cbaa209fe1843fc522c264072980caac94f45",
+      "dhash": "1110111111010111001101111000010100001001111011011111110011110010",
+      "bytes": 252980,
+      "originalSize": [
+        2560,
+        1440
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ]
     },
     {
       "key": "view-2",
       "property": "7Pines Resort Ibiza",
       "propertyKey": "7pines-resort-ibiza",
-      "sourcePage": "https://7pines-ibiza.com/en/resort",
+      "sourcePage": "https://7pines-ibiza.com/en/dining",
       "slotIntent": "real guestroom or suite interior",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/7pines-resort-ibiza/view-2.webp",
+      "downloadUrl": "https://7pines-ibiza.com/media/dining-seaview-outdoorseating-3459.webp",
+      "candidateContext": "    ",
+      "credit": "Hotel website; photographer to be checked",
+      "license": "Commercial reuse rights not independently reviewed",
+      "sha256": "c46020c9cdc64a8739ccaab874c1250af43b7ed39dc0bfd4cf72db0407980bbd",
+      "dhash": "1100011000110001001100000100000000011000110010000101101001011011",
+      "bytes": 187672,
+      "originalSize": [
+        8062,
+        5377
+      ],
+      "outputSize": [
+        1799,
+        1200
+      ]
     },
     {
       "key": "view-3",
@@ -99,10 +179,26 @@
       "propertyKey": "7pines-resort-ibiza",
       "sourcePage": "https://7pines-ibiza.com/en/resort",
       "slotIntent": "authentic hotel pool/dining/terrace",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/7pines-resort-ibiza/view-3.webp",
+      "downloadUrl": "https://7pines-ibiza.com/media/waiter-sea-island-umbrella-7394_hd.webp",
+      "candidateContext": "A waiter carries a tray on a terrace at 7Pines Resort Ibiza overlooking the Mediterranean Sea and Es Vedrà.    ",
+      "credit": "Hotel website; photographer to be checked",
+      "license": "Commercial reuse rights not independently reviewed",
+      "sha256": "76322aa75f33a88ae9cc9ef814a4160caeb519f3384a59f33d2e6375cb1f071f",
+      "dhash": "0010001000101011001100110010110100100100100001000010010000011011",
+      "bytes": 96056,
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1800,
+        1013
+      ]
     },
     {
       "key": "view-1",
@@ -174,10 +270,27 @@
       "placeLabel": "Cala Xarraca, crique du nord",
       "searchQuery": "Cala Xarraca Ibiza north cove",
       "slotIntent": "Cala Xarraca, crique du nord",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cala_xarraca.JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Cala_xarraca.JPG/1920px-Cala_xarraca.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "candidateContext": "File:Cala xarraca.JPG",
+      "credit": "Jjuanii · CC BY-SA 3.0",
+      "license": "CC BY-SA 3.0",
+      "sha256": "ea34e49e1cc3f0b41728b9fca63ed93c189f70c758c75774c16ffb7446d8f93b",
+      "dhash": "0000110100001111000011000000010100110001000010010000010101100100",
+      "bytes": 586832,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-5",

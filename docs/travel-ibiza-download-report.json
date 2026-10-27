@@ -1,0 +1,62 @@
+{
+  "hotels": 6,
+  "scenes": 1,
+  "missing": [
+    "six-senses-ibiza/view-1",
+    "six-senses-ibiza/view-2",
+    "six-senses-ibiza/view-3",
+    "the-standard-ibiza/view-1",
+    "the-standard-ibiza/view-2",
+    "the-standard-ibiza/view-3",
+    "destination/scene-1",
+    "destination/scene-2",
+    "destination/scene-3",
+    "destination/scene-5",
+    "destination/scene-6",
+    "destination/scene-7",
+    "destination/scene-8",
+    "destination/scene-9"
+  ],
+  "diagnostics": [
+    {
+      "url": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/",
+      "error": "403 Client Error: Forbidden for url: https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/"
+    },
+    {
+      "url": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/accommodation/",
+      "error": "403 Client Error: Forbidden for url: https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/accommodation/"
+    },
+    {
+      "url": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/dining/",
+      "error": "403 Client Error: Forbidden for url: https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/dining/"
+    },
+    {
+      "url": "https://www.nobuhotelibizabay.com/rooms-suites",
+      "error": "404 Client Error: Not Found for url: https://www.nobuhotelibizabay.com/rooms-suites"
+    },
+    {
+      "url": "https://www.nobuhotelibizabay.com/restaurants-and-bars",
+      "error": "404 Client Error: Not Found for url: https://www.nobuhotelibizabay.com/restaurants-and-bars"
+    },
+    {
+      "url": "https://7pines-ibiza.com/en/suites",
+      "error": "404 Client Error: Not Found for url: https://7pines-ibiza.com/en/suites"
+    },
+    {
+      "url": "https://7pines-ibiza.com/en/gallery",
+      "error": "404 Client Error: Not Found for url: https://7pines-ibiza.com/en/gallery"
+    },
+    {
+      "url": "https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza",
+      "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza"
+    },
+    {
+      "url": "https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza/rooms",
+      "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza/rooms"
+    },
+    {
+      "url": "https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza/dining",
+      "error": "403 Client Error: Forbidden for url: https://www.hyatt.com/the-standard/en-US/ibzsi-the-standard-ibiza/dining"
+    }
+  ]
+}
