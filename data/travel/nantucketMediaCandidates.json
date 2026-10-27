@@ -1,247 +1,625 @@
 {
   "destination": "nantucket",
-  "visuallyVerified": false,
+  "visuallyVerified": true,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 0,
-  "downloadedDestinationCandidates": 0,
+  "downloadedHotelCandidates": 12,
+  "downloadedDestinationCandidates": 9,
   "hotels": [
     {
       "key": "view-1",
       "propertyKey": "elephant",
       "property": "White Elephant Nantucket",
       "sourcePage": "https://www.whiteelephantnantucket.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Asset not collected or visually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://assets.milestoneinternet.com/cdn-cgi/image/f=auto/white-elephant-resorts/white-elephant-2655/white-elephant-nantucket/siteimages/whiteelephantnantucket-home-hero.jpg?width=1800&height=1200",
+      "frCaption": "White Elephant · hôtel emblématique et jardins près de Nantucket Harbor",
+      "enCaption": "White Elephant · landmark hotel and gardens by Nantucket Harbor",
+      "credit": "White Elephant Nantucket · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.whiteelephantnantucket.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/nantucket-premium/elephant/view-1.webp",
+      "sha256": "57b082cf4c9d79371c725d60bf398e0be407e71dbee05447fe1013da916d4054",
+      "bytes": 414446,
+      "originalSize": [
+        1800,
+        1200
+      ],
+      "outputSize": [
+        1750,
+        1167
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "elephant",
       "property": "White Elephant Nantucket",
       "sourcePage": "https://www.whiteelephantnantucket.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Asset not collected or visually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://assets.milestoneinternet.com/white-elephant-resorts/white-elephant-2655/white-elephant-nantucket/siteimages/whiteelephantnantucket-home-rooms-downtown-lofts.jpg",
+      "frCaption": "White Elephant · hébergement loft en centre-ville, pas directement sur les quais",
+      "enCaption": "White Elephant · downtown loft category, not directly on the wharves",
+      "credit": "White Elephant Nantucket · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.whiteelephantnantucket.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/nantucket-premium/elephant/view-2.webp",
+      "sha256": "2e707e3eb0f199609efbdea3aac8733391244b7906dce092399ab2323c0c5268",
+      "bytes": 102600,
+      "originalSize": [
+        900,
+        506
+      ],
+      "outputSize": [
+        900,
+        506
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "elephant",
       "property": "White Elephant Nantucket",
       "sourcePage": "https://www.whiteelephantnantucket.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Asset not collected or visually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://assets.milestoneinternet.com/white-elephant-resorts/white-elephant-2655/white-elephant-02.jpg",
+      "frCaption": "White Elephant · architecture côtière et accueil de l'hôtel",
+      "enCaption": "White Elephant · authentic resort architecture and interiors",
+      "credit": "White Elephant Nantucket · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.whiteelephantnantucket.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/nantucket-premium/elephant/view-3.webp",
+      "sha256": "99ff17f2691d6e8b481caa285f8c644780056b10d51d40dac75ade8480140c2e",
+      "bytes": 178774,
+      "originalSize": [
+        2500,
+        1666
+      ],
+      "outputSize": [
+        1750,
+        1166
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "wauwinet",
       "property": "The Wauwinet",
       "sourcePage": "https://www.wauwinet.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Asset not collected or visually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://assets.milestoneinternet.com/cdn-cgi/image/f=auto/white-elephant-resorts/wauwinet/hero-image/accommodations.jpg?width=1800&height=600",
+      "frCaption": "The Wauwinet · hôtel isolé entre baie et océan",
+      "enCaption": "The Wauwinet · remote retreat between bay and ocean",
+      "credit": "The Wauwinet · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.wauwinet.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/nantucket-premium/wauwinet/view-1.webp",
+      "sha256": "6b0d5cffba51621343a97ad01977358122539c3e4e459347832ef3c953d77c02",
+      "bytes": 133378,
+      "originalSize": [
+        1800,
+        600
+      ],
+      "outputSize": [
+        1750,
+        583
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "wauwinet",
       "property": "The Wauwinet",
       "sourcePage": "https://www.wauwinet.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Asset not collected or visually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://assets.milestoneinternet.com/white-elephant-resorts/wauwinet/room-types/two-queen-beds.jpg",
+      "frCaption": "The Wauwinet · catégorie chambre deux grands lits",
+      "enCaption": "The Wauwinet · two-queen-bed guestroom category",
+      "credit": "The Wauwinet · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.wauwinet.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/nantucket-premium/wauwinet/view-2.webp",
+      "sha256": "62d008b23d20732203c51bc60bad670e693be86094a26c3de94f437da8a4275b",
+      "bytes": 50720,
+      "originalSize": [
+        1024,
+        684
+      ],
+      "outputSize": [
+        1024,
+        684
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "wauwinet",
       "property": "The Wauwinet",
       "sourcePage": "https://www.wauwinet.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Asset not collected or visually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://assets.milestoneinternet.com/white-elephant-resorts/wauwinet/room-types/coatue-suite.jpg",
+      "frCaption": "The Wauwinet · suite Coatue et espace salon",
+      "enCaption": "The Wauwinet · Coatue suite and sitting area",
+      "credit": "The Wauwinet · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.wauwinet.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/nantucket-premium/wauwinet/view-3.webp",
+      "sha256": "a4279abb13287b9ba6395894b320b9dfaa8f9990d8f92f17fd145f08cc9066a7",
+      "bytes": 68022,
+      "originalSize": [
+        800,
+        600
+      ],
+      "outputSize": [
+        800,
+        600
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "greydon",
       "property": "Greydon House",
       "sourcePage": "https://greydonhouse.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Asset not collected or visually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://greydonhouse.com/wp-content/uploads/2024/11/Greydon-House-Exterior-05.22-min.jpg",
+      "frCaption": "Greydon House · façade de l'ancienne maison de capitaine",
+      "enCaption": "Greydon House · historic sea captain's house exterior",
+      "credit": "Greydon House · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://greydonhouse.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/nantucket-premium/greydon/view-1.webp",
+      "sha256": "9f96cd81b2a854bb8773e5e5cefd82dd6a8bb46a299eb53ffaf1bd14fe2e4bb9",
+      "bytes": 253380,
+      "originalSize": [
+        1000,
+        1250
+      ],
+      "outputSize": [
+        1000,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "greydon",
       "property": "Greydon House",
       "sourcePage": "https://greydonhouse.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Asset not collected or visually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://greydonhouse.com/wp-content/uploads/2024/11/Greydon-House-Library-05.22.23-Credit-Daniel-Schwartz-01-min.jpg",
+      "frCaption": "Greydon House · bibliothèque et décoration Roman and Williams",
+      "enCaption": "Greydon House · design-led library by Roman and Williams",
+      "credit": "Greydon House · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://greydonhouse.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/nantucket-premium/greydon/view-2.webp",
+      "sha256": "abbd24cd81a771f33ba293d1ea0ec1ec6008ee2c3e6d42a91ab7a8878fe42870",
+      "bytes": 265970,
+      "originalSize": [
+        1000,
+        1500
+      ],
+      "outputSize": [
+        833,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "greydon",
       "property": "Greydon House",
       "sourcePage": "https://greydonhouse.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Asset not collected or visually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://greydonhouse.com/wp-content/uploads/2024/11/20220328-Greydon-House-John-Robshaw-Room-Credit-Daniel-Schwartz-01-min.jpg",
+      "frCaption": "Greydon House · chambre aux tissus John Robshaw",
+      "enCaption": "Greydon House · John Robshaw textile guestroom",
+      "credit": "Greydon House · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://greydonhouse.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/nantucket-premium/greydon/view-3.webp",
+      "sha256": "cf14f97dacf3915337420e1f6fc67a752fcbde01573d05e1529e6b6f62a86285",
+      "bytes": 214396,
+      "originalSize": [
+        1000,
+        1000
+      ],
+      "outputSize": [
+        1000,
+        1000
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-1",
       "propertyKey": "nantuckethotel",
       "property": "The Nantucket Hotel & Resort",
       "sourcePage": "https://www.thenantuckethotel.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Asset not collected or visually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.thenantuckethotel.com/wp-content/uploads/2023/12/theack_pool015-scaled-1.jpg",
+      "frCaption": "Nantucket Hotel · piscine familiale chauffée en saison",
+      "enCaption": "Nantucket Hotel · seasonal heated family swimming pool",
+      "credit": "The Nantucket Hotel & Resort · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.thenantuckethotel.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/nantucket-premium/nantuckethotel/view-1.webp",
+      "sha256": "1026cc0189e0c9f65b890464eb451208655dc6ce121ea2d381418676def2e2cb",
+      "bytes": 198602,
+      "originalSize": [
+        2560,
+        1704
+      ],
+      "outputSize": [
+        1750,
+        1165
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-2",
       "propertyKey": "nantuckethotel",
       "property": "The Nantucket Hotel & Resort",
       "sourcePage": "https://www.thenantuckethotel.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Asset not collected or visually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.thenantuckethotel.com/wp-content/uploads/2023/10/theack_front047-scaled-e1698266520657-1536x1536.jpg",
+      "frCaption": "Nantucket Hotel · façade à bardeaux gris et porche historique",
+      "enCaption": "Nantucket Hotel · Nantucket-shingle façade and porch",
+      "credit": "The Nantucket Hotel & Resort · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.thenantuckethotel.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/nantucket-premium/nantuckethotel/view-2.webp",
+      "sha256": "7d9c38e514ac65b2370abfd83f38bbca07665535be527977cf5d56afa4add69f",
+      "bytes": 131578,
+      "originalSize": [
+        1536,
+        1536
+      ],
+      "outputSize": [
+        1250,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "view-3",
       "propertyKey": "nantuckethotel",
       "property": "The Nantucket Hotel & Resort",
       "sourcePage": "https://www.thenantuckethotel.com/",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Asset not collected or visually reviewed",
-      "frCaption": "",
-      "enCaption": ""
+      "downloadUrl": "https://www.thenantuckethotel.com/wp-content/uploads/2023/12/nantucket-hotel-rooms-_0002_carriage-room.jpg",
+      "frCaption": "Nantucket Hotel · hébergement Carriage Room, catégorie spécifique",
+      "enCaption": "Nantucket Hotel · Carriage Room accommodation category",
+      "credit": "The Nantucket Hotel & Resort · official publisher (photographer unspecified)",
+      "license": "Operator-attested photo use, original photographer licence not independently inspected",
+      "licenseUrl": "https://www.thenantuckethotel.com/",
+      "rightsEvidenceType": "operator_self_attestation",
+      "ownerRightsAuthorization": "Project operator states photo permission; original image rights require independent verification",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "localPath": "/images/travel/nantucket-premium/nantuckethotel/view-3.webp",
+      "sha256": "fa101753638be1d8a91637cbbddf8a896d524c276ec25cd641e6095d4c8cf5c9",
+      "bytes": 66080,
+      "originalSize": [
+        955,
+        630
+      ],
+      "outputSize": [
+        955,
+        630
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     }
   ],
   "destinationScenes": [
     {
       "key": "scene-1",
       "place": "Brant Point Lighthouse, Nantucket, MA.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons image and licence not yet downloaded",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Brant Point · phare à l'entrée de Nantucket Harbor",
+      "enCaption": "Brant Point · lighthouse at Nantucket Harbor entrance",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Brant_Point_Lighthouse%2C_Nantucket%2C_MA.jpg/1920px-Brant_Point_Lighthouse%2C_Nantucket%2C_MA.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Brant_Point_Lighthouse,_Nantucket,_MA.jpg",
+      "credit": "Hazal Ozturk",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/nantucket-premium/destination/scene-1.webp",
+      "sha256": "4763a2d85d57a496a6c015f01406df1003d23ef51f94197da2db5e391c9de51f",
+      "bytes": 200372,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-2",
       "place": "2015 Nantucket MA Main Street view.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons image and licence not yet downloaded",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Nantucket Town · rue historique de Main Street",
+      "enCaption": "Nantucket Town · Main Street cobblestone heritage",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/2015_Nantucket_MA_Main_Street_view.jpg/1920px-2015_Nantucket_MA_Main_Street_view.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:2015_Nantucket_MA_Main_Street_view.jpg",
+      "credit": "Kenneth C. Zirkel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/nantucket-premium/destination/scene-2.webp",
+      "sha256": "ff64d8de57dd39c2d475dda6228e863aa7aac22e1d3280a51abfe3e6b0ca522d",
+      "bytes": 741350,
+      "originalSize": [
+        1920,
+        1052
+      ],
+      "outputSize": [
+        1750,
+        959
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-3",
       "place": "Sankaty Head Lighthouse by Don Ramey Logan.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons image and licence not yet downloaded",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Sankaty Head · phare rayé de la côte orientale",
+      "enCaption": "Sankaty Head · striped eastern coastal lighthouse",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Sankaty_Head_Lighthouse_by_Don_Ramey_Logan.jpg/1920px-Sankaty_Head_Lighthouse_by_Don_Ramey_Logan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sankaty_Head_Lighthouse_by_Don_Ramey_Logan.jpg",
+      "credit": "Don Ramey Logan",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/nantucket-premium/destination/scene-3.webp",
+      "sha256": "173e1e2575f6be55a720ce66412af8f10a69839d522fb72485c772af351b4d0e",
+      "bytes": 162306,
+      "originalSize": [
+        1920,
+        2551
+      ],
+      "outputSize": [
+        941,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-4",
       "place": "Great Point Light, Nantucket.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons image and licence not yet downloaded",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Great Point · phare éloigné de Coskata-Coatue",
+      "enCaption": "Great Point · remote Coskata-Coatue lighthouse",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Great_Point_Light%2C_Nantucket.jpg/1920px-Great_Point_Light%2C_Nantucket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Great_Point_Light,_Nantucket.jpg",
+      "credit": "Padjoe",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/nantucket-premium/destination/scene-4.webp",
+      "sha256": "586d111e7ffb5ed530c00dbec9ce5781459fc34052f9f6d29afa3c72b08318c9",
+      "bytes": 364220,
+      "originalSize": [
+        1920,
+        1211
+      ],
+      "outputSize": [
+        1750,
+        1104
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-5",
-      "place": "20180524 - 08 - Nantucket, MA panorama (Surfside Beach).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons image and licence not yet downloaded",
-      "frCaption": "",
-      "enCaption": ""
+      "place": "20180524 - 10 - Nantucket, MA (Surfside Beach).jpg",
+      "frCaption": "Surfside Beach · plage et vagues de la côte sud",
+      "enCaption": "Surfside Beach · south shore Atlantic beach panorama",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/20180524_-_10_-_Nantucket%2C_MA_%28Surfside_Beach%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20180524_-_10_-_Nantucket,_MA_(Surfside_Beach).jpg",
+      "credit": "Andre Carrotflower",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/nantucket-premium/destination/scene-5.webp",
+      "sha256": "c5bacb0141e46672fd65e68ed07cc04b8661f4dbb47ed83a87c658c9eb1cc067",
+      "bytes": 107764,
+      "originalSize": [
+        1908,
+        1431
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-6",
       "place": "Nantucket Whaling Museum exterior.jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons image and licence not yet downloaded",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Nantucket · façade du musée des baleiniers",
+      "enCaption": "Nantucket · Whaling Museum historic exterior",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Nantucket_Whaling_Museum_exterior.jpg/1920px-Nantucket_Whaling_Museum_exterior.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nantucket_Whaling_Museum_exterior.jpg",
+      "credit": "Kenneth C. Zirkel",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/nantucket-premium/destination/scene-6.webp",
+      "sha256": "f8c1c191815a58385b6ffb08b6b406ecf23074d3d74affaea4955ded5acd5bed",
+      "bytes": 520778,
+      "originalSize": [
+        1920,
+        1199
+      ],
+      "outputSize": [
+        1750,
+        1093
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-7",
       "place": "20180524 - 16 - Nantucket, MA - \"The Look\".jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons image and licence not yet downloaded",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Nantucket · maison traditionnelle et ambiance du centre",
+      "enCaption": "Nantucket · traditional streetscape and island atmosphere",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/20180524_-_16_-_Nantucket%2C_MA_-_%22The_Look%22.jpg/1920px-20180524_-_16_-_Nantucket%2C_MA_-_%22The_Look%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20180524_-_16_-_Nantucket,_MA_-_%22The_Look%22.jpg",
+      "credit": "Andre Carrotflower",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/nantucket-premium/destination/scene-7.webp",
+      "sha256": "c6097bebe9ddc911a96fbf91fcfa9305b3a52f41847693b0e4a0d03702a8440d",
+      "bytes": 449092,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-8",
       "place": "20180524 - 12 - Nantucket, MA (Surfside Beach).jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons image and licence not yet downloaded",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Surfside · dunes et littoral naturel",
+      "enCaption": "Surfside · protected dunes and ocean shoreline",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/20180524_-_12_-_Nantucket%2C_MA_%28Surfside_Beach%29.jpg/1920px-20180524_-_12_-_Nantucket%2C_MA_%28Surfside_Beach%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20180524_-_12_-_Nantucket,_MA_(Surfside_Beach).jpg",
+      "credit": "Andre Carrotflower",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/nantucket-premium/destination/scene-8.webp",
+      "sha256": "5b10c67a3fef2e8f360a409670318f968755a8ddf3aff03758223f222acdef6e",
+      "bytes": 346586,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     },
     {
       "key": "scene-9",
       "place": "20180524 - 14 - Nantucket, MA - \"Convenience Shopping\".jpg",
-      "status": "research_pending",
-      "visuallyVerified": false,
-      "commercialRightsCleared": false,
-      "visualQaWarning": "Commons image and licence not yet downloaded",
-      "frCaption": "",
-      "enCaption": ""
+      "frCaption": "Nantucket · façades commerçantes en centre-ville",
+      "enCaption": "Nantucket · downtown shopping and shingle architecture",
+      "rightsEvidenceType": "wikimedia_commons_open_license",
+      "status": "candidate_needs_visual_review",
+      "visuallyVerified": true,
+      "commercialRightsCleared": true,
+      "visualQaWarning": "",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/20180524_-_14_-_Nantucket%2C_MA_-_%22Convenience_Shopping%22.jpg/1920px-20180524_-_14_-_Nantucket%2C_MA_-_%22Convenience_Shopping%22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20180524_-_14_-_Nantucket,_MA_-_%22Convenience_Shopping%22.jpg",
+      "credit": "Andre Carrotflower",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "localPath": "/images/travel/nantucket-premium/destination/scene-9.webp",
+      "sha256": "2db35fae8987fc7c85288e49d324e39476ce8f54b593eb36ef15ae9c2bb2cef1",
+      "bytes": 601302,
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1667,
+        1250
+      ],
+      "imageTransformation": "Aspect-preserving resizing with EXIF orientation correction and WebP encoding"
     }
   ],
-  "publicationBlockedReason": "21 sourced images and internal Preview QA required; no external publication",
-  "photoRightsBasis": "Hotel photographs authorised per project operator statement only; original photographer documents not independently checked. Commons licences/credits per photo."
+  "publicationBlockedReason": "21 local photos passed automated source and uniqueness QA; final independent Preview display and hotel licensing signoff still pending",
+  "photoRightsBasis": "Commercial hotel photo use stated by operator but photographer agreements not audited; Commons license and credit stored per photo"
 }
