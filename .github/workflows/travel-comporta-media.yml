@@ -19,7 +19,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: '3.11'}
-      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12'
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
       - name: Fetch real official-hotel and Commons photos
         run: python -u scripts/collect-comporta-media.py
       - name: Require 21 different image files and 88 untouched destinations
