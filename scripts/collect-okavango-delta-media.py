@@ -115,7 +115,7 @@ def sheet(photos):
  draw.text((15,39),'4 real lodges x 3 views + 9 Delta scenes. Photographer permission not confirmed for lodge assets.',fill='#374c45')
  for i,p in enumerate(photos):
   x=15+(i%4)*336;y=75+(i//4)*252
-  a=Image.open(ROOT/'public'+p['localPath']);a.thumbnail((thumbw,thumbh))
+  a=Image.open(ROOT/'public'/p['localPath'].lstrip('/'));a.thumbnail((thumbw,thumbh))
   tile=Image.new('RGB',(thumbw,thumbh),'white');tile.paste(a,((thumbw-a.width)//2,(thumbh-a.height)//2))
   out.paste(tile,(x,y))
   text=(p.get('propertyKey','delta')+'/'+p['key'])[:43]
@@ -141,7 +141,7 @@ def main():
  # pHash-like cross-check prevents near-duplicates; raises instead of introducing repetitions.
  fingerprints=[]
  for p in all_:
-  g=Image.open(ROOT/'public'+p['localPath']).convert('L').resize((12,12))
+  g=Image.open(ROOT/'public'/p['localPath'].lstrip('/')).convert('L').resize((12,12))
   avg=sum(g.getdata())/144
   bits=[int(q>avg) for q in g.getdata()]
   fingerprints.append(bits)
