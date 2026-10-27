@@ -1,0 +1,247 @@
+{
+  "destination": "tivat",
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "hotels": [
+    {
+      "key": "view-1",
+      "propertyKey": "quince",
+      "property": "The Quince Porto Montenegro",
+      "sourcePage": "https://www.thequince.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Images not collected",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "quince",
+      "property": "The Quince Porto Montenegro",
+      "sourcePage": "https://www.thequince.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Images not collected",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "quince",
+      "property": "The Quince Porto Montenegro",
+      "sourcePage": "https://www.thequince.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Images not collected",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "siro",
+      "property": "SIRO Porto Montenegro",
+      "sourcePage": "https://www.sirohotels.com/montenegro/porto-montenegro",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Images not collected",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "siro",
+      "property": "SIRO Porto Montenegro",
+      "sourcePage": "https://www.sirohotels.com/montenegro/porto-montenegro",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Images not collected",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "siro",
+      "property": "SIRO Porto Montenegro",
+      "sourcePage": "https://www.sirohotels.com/montenegro/porto-montenegro",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Images not collected",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "chedi",
+      "property": "The Chedi Luštica Bay",
+      "sourcePage": "https://www.chedilusticabay.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Images not collected",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "chedi",
+      "property": "The Chedi Luštica Bay",
+      "sourcePage": "https://www.chedilusticabay.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Images not collected",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "chedi",
+      "property": "The Chedi Luštica Bay",
+      "sourcePage": "https://www.chedilusticabay.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Images not collected",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "laroche",
+      "property": "La Roche Boutique Hotel",
+      "sourcePage": "https://larochehotel.me/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Images not collected",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "laroche",
+      "property": "La Roche Boutique Hotel",
+      "sourcePage": "https://larochehotel.me/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Images not collected",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "laroche",
+      "property": "La Roche Boutique Hotel",
+      "sourcePage": "https://larochehotel.me/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Images not collected",
+      "frCaption": "",
+      "enCaption": ""
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "place": "Porto Montenegro 03.JPG",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Landscape source requires validation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-2",
+      "place": "Tivat - Marina Porto Montenegro - panoramio.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Landscape source requires validation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-3",
+      "place": "Tivat, Montenegro, Boko Kotor Bay and Porto Montenegro at sunset.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Landscape source requires validation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-4",
+      "place": "Gornja Lastva.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Landscape source requires validation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-5",
+      "place": "Sunset over the Bay of Kotor seen from Gornja Lastva 1.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Landscape source requires validation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-6",
+      "place": "Special Nature Reserve \"Solila\", Montenegro 21.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Landscape source requires validation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-7",
+      "place": "Special Nature Reserve \"Solila\", Montenegro 07.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Landscape source requires validation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-8",
+      "place": "Porto Montenegro 05.JPG",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Landscape source requires validation",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-9",
+      "place": "Tivat - Marina Porto Montenegro - panoramio (2).jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Landscape source requires validation",
+      "frCaption": "",
+      "enCaption": ""
+    }
+  ],
+  "publicationBlockedReason": "No images published until source+noindex QA",
+  "photoRightsBasis": "Hotel photo use attested by project operator; original photographer rights unverified. Commons metadata per photograph."
+}
