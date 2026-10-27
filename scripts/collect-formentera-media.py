@@ -20,7 +20,7 @@ HOTELS=[
  ("five-flowers","Five Flowers Hotel Formentera Meliá Collection","https://fiveflowershotel.com/en/gallery/",[
   ("https://fiveflowershotel.com/backoffice/images/429-dscf9355copiabaja.jpg","Five Flowers · architecture et espaces de l'hôtel","Five Flowers · hotel architecture and shared spaces"),
   ("https://fiveflowershotel.com/backoffice/images/206-ff32.jpg","Five Flowers · espaces de vie et décoration","Five Flowers · design-led hotel interiors"),
-  ("https://fiveflowershotel.com/backoffice/images/143-dsf5030fiveflowersformenterafiltrojacuzzibaja.jpg","Five Flowers · installation de baignade de l'hôtel","Five Flowers · hotel bathing facilities")]),
+  ("https://fiveflowershotel.com/backoffice/images/460-dscf8196-copiabaja.jpg","Five Flowers · chambre claire et décoration contemporaine","Five Flowers · light-filled guest room and contemporary design")]),
  ("gecko","Gecko Hotel & Beach Club","https://geckobeachclub.com/en/gallery/",[
   ("https://geckobeachclub.com/wp-content/uploads/2023/11/DJI_0137-EditarIII-2-1-scaled.jpg","Gecko · vue aérienne du domaine en bord de Migjorn","Gecko · aerial view of the property on Migjorn"),
   ("https://geckobeachclub.com/wp-content/uploads/2024/12/Gecko-Double-2-scaled.jpg","Gecko · chambre Double présentée par l'hôtel","Gecko · hotel-published Gecko Double room"),
@@ -37,12 +37,12 @@ HOTELS=[
 COMMONS=[
  ("scene-1","Formentera - Platja De Ses Illetes - panoramio.jpg","Ses Illetes · banc de sable dans l'aire protégée","Ses Illetes · beach in the protected reserve"),
  ("scene-2","Platja d'es Pujols.jpg","Plage d'Es Pujols · rivage du village","Es Pujols · beachfront promenade on Formentera"),
- ("scene-3","Playa d´Es Copinar (Zona de Migjorn) (2).JPG","Plage de Migjorn · littoral sud de Formentera","Migjorn Beach · Formentera's southern coast"),
+ ("scene-3","Formentera - panoramio (15).jpg","Plage de Migjorn · littoral sud de Formentera","Migjorn Beach · Formentera's southern coast"),
  ("scene-4","Els Arenals, Formentera.jpg","Es Arenals · plage de Migjorn oriental","Es Arenals · eastern Migjorn beach"),
  ("scene-5","Sunset with sailboats, Cala Saona, Formentera.jpg","Cala Saona · lumière de fin de journée sur la crique","Cala Saona · evening light over the cove"),
  ("scene-6","Exterior Far de la Mola 2020.jpg","Far de la Mola · phare sur les hauteurs de l'île","Far de la Mola · lighthouse on the eastern plateau"),
  ("scene-7","Formentera Es Caló de Sant Agustí.jpg","Es Caló de Sant Agustí · petit port de pêche","Es Caló de Sant Agustí · small fishing harbour"),
- ("scene-8","Port Savina, Formentera - panoramio.jpg","La Savina · port d'arrivée de Formentera","La Savina · Formentera's arrival harbour"),
+ ("scene-8","LaSavina2004.jpg","La Savina · pontons et embarcations du port d'arrivée","La Savina · boats and berths at Formentera's ferry harbour"),
  ("scene-9","Cap de Barbaria lighthouse.jpg","Cap de Barbaria · phare et paysage du sud-ouest","Cap de Barbaria · lighthouse and south-western landscape")
 ]
 def get(url):
