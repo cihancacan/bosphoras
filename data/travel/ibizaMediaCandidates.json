@@ -2,41 +2,89 @@
   "destination": "ibiza",
   "visuallyVerified": false,
   "approvedForCommercialPublication": false,
-  "downloadedHotelCandidates": 6,
-  "downloadedDestinationCandidates": 4,
+  "downloadedHotelCandidates": 9,
+  "downloadedDestinationCandidates": 7,
   "hotels": [
     {
       "key": "view-1",
       "property": "Six Senses Ibiza",
       "propertyKey": "six-senses-ibiza",
-      "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/",
+      "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
       "slotIntent": "recognisable property exterior or coast setting",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/six-senses-ibiza/view-1.webp",
+      "downloadUrl": "https://media.sixsenses.com/B60H3R33/at/3mr4fqhv5t73vwbk3mtf53/Swimming_Pool_aerial.jpg?fit=crop&height=1100&width=1750",
+      "candidateContext": "Official Six Senses Ibiza gallery, aerial view of the resort pool and cliffside Cala Xarraca setting",
+      "credit": "Named hotel gallery; original photographer/source: https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
+      "license": "Commercial licence requires verified operator/photographer rights",
+      "sha256": "6a2ac485f296394065f5dc1d110af5a83a2ed50a3f42e012280a88604becc297",
+      "dhash": "1100111101010011000101110011011100110111001101111001011100101111",
+      "bytes": 587706,
+      "originalSize": [
+        1750,
+        1100
+      ],
+      "outputSize": [
+        1750,
+        1100
+      ]
     },
     {
       "key": "view-2",
       "property": "Six Senses Ibiza",
       "propertyKey": "six-senses-ibiza",
-      "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/",
+      "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
       "slotIntent": "real guestroom or suite interior",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/six-senses-ibiza/view-2.webp",
+      "downloadUrl": "https://media.sixsenses.com/B60H3R33/at/4n5vtj254bw57skgsxwt46m/6_Five_Bedroom_Mansion_master_bedroom_sunset_view.jpg?fit=crop&height=1100&width=1750",
+      "candidateContext": "Actual bedroom in Five Bedroom Mansion at Six Senses Ibiza, dusk sea-view; do not call it a standard guestroom",
+      "credit": "Named hotel gallery; original photographer/source: https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
+      "license": "Commercial licence requires verified operator/photographer rights",
+      "sha256": "5c91566effd3fb1619f2b651e0f59b1c81690baf894ade83aad5486389b0d289",
+      "dhash": "0001111110011111100111011001111100011111000110110001101101011100",
+      "bytes": 233986,
+      "originalSize": [
+        1750,
+        1100
+      ],
+      "outputSize": [
+        1750,
+        1100
+      ]
     },
     {
       "key": "view-3",
       "property": "Six Senses Ibiza",
       "propertyKey": "six-senses-ibiza",
-      "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/",
+      "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
       "slotIntent": "authentic hotel pool/dining/terrace",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/six-senses-ibiza/view-3.webp",
+      "downloadUrl": "https://media.sixsenses.com/B60H3R33/at/bkq623mr7bmwbwtwb87vx3x/Swimming_Pool_aerial.jpg?fit=crop&height=1100&width=1750",
+      "candidateContext": "Different official aerial photo of Six Senses Ibiza swimming pool and sea cliff terraces",
+      "credit": "Named hotel gallery; original photographer/source: https://www.sixsenses.com/en/hotels-resorts/europe/spain/ibiza/gallery/",
+      "license": "Commercial licence requires verified operator/photographer rights",
+      "sha256": "5db4a853c8c58710525a2898d2b82bef8dfa9c3e0f30dca3e9023800000f7c95",
+      "dhash": "1001101111011011111100111111001101101011010011100110011000100111",
+      "bytes": 499742,
+      "originalSize": [
+        1750,
+        1100
+      ],
+      "outputSize": [
+        1750,
+        1100
+      ]
     },
     {
       "key": "view-1",
@@ -348,30 +396,81 @@
       "placeLabel": "Vue Es Vedrà depuis falaises occidentales",
       "searchQuery": "Ibiza Es Vedra west cliffs",
       "slotIntent": "Vue Es Vedrà depuis falaises occidentales",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Es_Vedrà_from_a_cave,_Ibiza.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Es_Vedr%C3%A0_from_a_cave%2C_Ibiza.jpg",
+      "candidateContext": "Es Vedra from coast cave, CC0, 2023 by Gerda Arendt",
+      "credit": "Geolocated Wikimedia source: https://commons.wikimedia.org/wiki/File:Es_Vedrà_from_a_cave,_Ibiza.jpg",
+      "license": "Creative Commons licence: check file and attribution",
+      "sha256": "1c94feaba80aac28fa289a72f0ef1dc1f14b508e6cd8bad28f0d9383db0dfba8",
+      "dhash": "0010111100111011001110110111011101111011011111111111100101010110",
+      "bytes": 328430,
+      "originalSize": [
+        3677,
+        2827
+      ],
+      "outputSize": [
+        1561,
+        1200
+      ]
     },
     {
       "key": "scene-6",
       "placeLabel": "Cala Codolar",
       "searchQuery": "Cala Codolar Ibiza beach sunny",
       "slotIntent": "Cala Codolar",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Balearen,_Ibiza-Westküste,_Wanderung_Cala_Codola_geologische_Verwerfungen_-_panoramio.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Balearen%2C_Ibiza-Westk%C3%BCste%2C_Wanderung_Cala_Codola_geologische_Verwerfungen_-_panoramio.jpg",
+      "candidateContext": "West Ibiza coastline near Cala Codolar, geology and coves, NOT necessarily the beach itself",
+      "credit": "Geolocated Wikimedia source: https://commons.wikimedia.org/wiki/File:Balearen,_Ibiza-Westküste,_Wanderung_Cala_Codola_geologische_Verwerfungen_-_panoramio.jpg",
+      "license": "Creative Commons licence: check file and attribution",
+      "sha256": "6de5bee9d036ebafcf8ae23690011afe00201a18223d27dc30fd645478bd2a5a",
+      "dhash": "1001101010110101110011010110110101000100011010000010001111001101",
+      "bytes": 541260,
+      "originalSize": [
+        3648,
+        2736
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-7",
       "placeLabel": "Cala Conta eaux turquoise",
       "searchQuery": "Cala Conta Ibiza turquoise water",
       "slotIntent": "Cala Conta eaux turquoise",
-      "status": "missing",
+      "status": "candidate_needs_visual_review",
       "visuallyVerified": false,
       "commercialRightsCleared": false,
-      "visualQaWarning": "No locally sourced, individually reviewed or licensed image. Must not display."
+      "visualQaWarning": "Downloaded source candidate only: real hotel/scene, premium visual, commercial licence and attribution must be checked.",
+      "localPath": "/images/travel/ibiza-premium/destination/scene-7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cala_Conta_Ibiza_17_May_2011_(2).JPG",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Cala_Conta_Ibiza_17_May_2011_(2).JPG",
+      "candidateContext": "Cala Conta actual beach turquoise water, photographer Stavros1, CC BY 3.0",
+      "credit": "Geolocated Wikimedia source: https://commons.wikimedia.org/wiki/File:Cala_Conta_Ibiza_17_May_2011_(2).JPG",
+      "license": "Creative Commons licence: check file and attribution",
+      "sha256": "f901b4a6ac52caae4d8980e873f61d6631a80a3c4e4bdbe426531af01ec619e9",
+      "dhash": "0001111100011111001111010011100110111110001111111001111111010111",
+      "bytes": 193154,
+      "originalSize": [
+        4000,
+        3000
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ]
     },
     {
       "key": "scene-8",
