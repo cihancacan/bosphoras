@@ -1,0 +1,247 @@
+{
+  "destination": "the-hamptons",
+  "visuallyVerified": false,
+  "approvedForCommercialPublication": false,
+  "downloadedHotelCandidates": 0,
+  "downloadedDestinationCandidates": 0,
+  "hotels": [
+    {
+      "key": "view-1",
+      "propertyKey": "topping",
+      "property": "Topping Rose House",
+      "sourcePage": "https://www.toppingrosehouse.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo awaiting source provenance and visual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "topping",
+      "property": "Topping Rose House",
+      "sourcePage": "https://www.toppingrosehouse.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo awaiting source provenance and visual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "topping",
+      "property": "Topping Rose House",
+      "sourcePage": "https://www.toppingrosehouse.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo awaiting source provenance and visual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "maidstone",
+      "property": "The Maidstone",
+      "sourcePage": "https://themaidstone.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo awaiting source provenance and visual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "maidstone",
+      "property": "The Maidstone",
+      "sourcePage": "https://themaidstone.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo awaiting source provenance and visual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "maidstone",
+      "property": "The Maidstone",
+      "sourcePage": "https://themaidstone.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo awaiting source provenance and visual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "marram",
+      "property": "Marram Montauk",
+      "sourcePage": "https://www.marrammontauk.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo awaiting source provenance and visual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "marram",
+      "property": "Marram Montauk",
+      "sourcePage": "https://www.marrammontauk.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo awaiting source provenance and visual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "marram",
+      "property": "Marram Montauk",
+      "sourcePage": "https://www.marrammontauk.com/",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo awaiting source provenance and visual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "gurneys",
+      "property": "Gurney’s Montauk Resort & Seawater Spa",
+      "sourcePage": "https://www.gurneysresorts.com/montauk",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo awaiting source provenance and visual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "gurneys",
+      "property": "Gurney’s Montauk Resort & Seawater Spa",
+      "sourcePage": "https://www.gurneysresorts.com/montauk",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo awaiting source provenance and visual review",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "gurneys",
+      "property": "Gurney’s Montauk Resort & Seawater Spa",
+      "sourcePage": "https://www.gurneysresorts.com/montauk",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Photo awaiting source provenance and visual review",
+      "frCaption": "",
+      "enCaption": ""
+    }
+  ],
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "place": "Montauk Point Lighthouse 2018 (02).jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Geographic and Commons licensing check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-2",
+      "place": "Main Beach, East Hampton, NY.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Geographic and Commons licensing check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-3",
+      "place": "Sag Harbor village aerial view skyline.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Geographic and Commons licensing check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-4",
+      "place": "Cooper's Beach Southampton.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Geographic and Commons licensing check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-5",
+      "place": "Dunes at Amagansett National Wildlife Refuge. (11672014663).jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Geographic and Commons licensing check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-6",
+      "place": "Montauk Beach Long Island New York by Don Ramey Logan.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Geographic and Commons licensing check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-7",
+      "place": "The Warmth of a Montauk Sunrise.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Geographic and Commons licensing check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-8",
+      "place": "To the beach, Hither Hills State Park, NY.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Geographic and Commons licensing check pending",
+      "frCaption": "",
+      "enCaption": ""
+    },
+    {
+      "key": "scene-9",
+      "place": "Sag Harbor, New York in 2025.jpg",
+      "status": "research_pending",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "visualQaWarning": "Geographic and Commons licensing check pending",
+      "frCaption": "",
+      "enCaption": ""
+    }
+  ],
+  "publicationBlockedReason": "No public use before 21 source-verified local photo files and private Preview QC",
+  "photoRightsBasis": "Operator-attested right for property photographs; Commons licence information must be preserved; original author releases not independently checked."
+}
