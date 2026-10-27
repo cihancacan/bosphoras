@@ -3,8 +3,8 @@
  * This draft is not a bookable offer; all dates, room terms and availability require partner verification. */
 import type { FeaturedCityGuideData } from './featuredCityGuides';
 
-export const newYorkDraftGuide: Omit<FeaturedCityGuideData, 'photos'> = {
- slug: 'new-york' as FeaturedCityGuideData['slug'], name: 'New York', country: 'États-Unis',
+export const newYorkDraftGuide: Omit<FeaturedCityGuideData, 'slug' | 'photos'> & { slug: 'new-york' } = {
+ slug: 'new-york', name: 'New York', country: 'États-Unis',
  hero: 'scene-1', secondary: 'scene-4',
  eyebrowFr: 'New York · suites confidentielles et quartiers singuliers',
  eyebrowEn: 'New York · private suites and distinctive neighbourhoods',
