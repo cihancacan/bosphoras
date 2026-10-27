@@ -47,7 +47,7 @@ def page(key):
  if key not in CACHE:CACHE[key]=BeautifulSoup(get(urljoin(SITE,PAGES[key])).text,'html.parser')
  return CACHE[key]
 def source_by_alt(pagekey,needle):
- candidates=[x for x in page(pagekey).find_all('img') if needle.lower() in (x.get('alt') or '').lower()]
+ candidates=[x for x in page(pagekey).find_all('img') if needle.lower() in (x.get('alt') or '').lower() and (x.get('src') or '').startswith('/sites/default/files/')]
  if len(candidates)!=1:raise RuntimeError('Ambiguous/missing Aman photo '+pagekey+' '+needle+': '+str(len(candidates)))
  im=candidates[0];pic=im.find_parent('picture')
  urls=[]
