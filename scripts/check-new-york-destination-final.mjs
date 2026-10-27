@@ -49,6 +49,20 @@ for(const hotel of ['aman','fifth','greenwich','lowell']){
 }
 const ui=read('components/travel/FeaturedCityGuide.tsx');
 for(const code of ['newYorkHotelEditorial','newYorkAreaVisuals','confirmedNewYorkPreviewAssets','newYorkDraftFaq'])assert(ui.includes(code));
+assert(ui.includes("(city.slug==='new-york'||city.slug==='istanbul'||city.slug==='bodrum'"),
+ 'New York must be explicitly included in the destination-area photo render condition');
+assert(ui.includes('id="panoramas-new-york"'),'Dedicated New York landscape gallery missing');
+assert(ui.includes("key:'scene-6'") && ui.includes("key:'scene-8'"),
+ 'New York second landscape photo essay must expose both sourced city scenes');
+assert(ui.includes("city.slug==='new-york' ? <div className="),
+ 'New York hero overlay must not obscure skyline');
+const draft=read('data/travel/newYorkDraftGuide.ts');
+assert(draft.includes("hero: 'scene-1', secondary: 'scene-7'"),'New York hero and experience photo must not repeat a district image');
+const sceneKeys=['scene-1','scene-7','scene-2','scene-3','scene-5','scene-9','scene-4','scene-6','scene-8'];
+assert.equal(new Set(sceneKeys).size,9,'All nine New York landscape photos must have distinct positions');
+for(const key of sceneKeys) assert(data.destinationScenes.some(p=>p.key===key),'Landscape photo absent from local source manifest: '+key);
+const manifestPhotos=new Set(data.destinationScenes.map(p=>p.localPath));
+assert.equal(manifestPhotos.size,9,'No duplicate New York location WebP paths');
 const travel=read('components/travel/TravelPages.tsx');
 for(const code of ['isNewYorkDestination','newYorkDraftFaq','newYorkSchemaSafePhotos','New York : 4 hôtels de luxe','New York: 4 Luxury Hotels','robots: { index: ready'])assert(travel.includes(code),code);
 const city=read('data/travel/newYorkGuide.ts');
