@@ -2,17 +2,17 @@ import type {FeaturedCityGuideData, FeaturedCityPhoto} from './featuredCityGuide
 import {okavangoDeltaDraftGuide} from './okavangoDeltaDraftGuide';
 import media from './okavangoDeltaMediaCandidates.json';
 type Candidate={
- key:string;status:string;localPath?:string;sourcePage?:string;
+ key:string;status:string;visuallyVerified?:boolean;visualQaWarning?:string;localPath?:string;sourcePage?:string;
  credit?:string;license?:string;licenseUrl?:string;frCaption?:string;enCaption?:string;
  sha256?:string;bytes?:number;propertyKey?:string;rightsEvidenceType?:string;
 };
 const isPreviewPhoto=(p:Candidate):boolean=>
- p.status==='candidate_needs_visual_review' &&
+ p.status==='visually_reviewed_private_preview' && p.visuallyVerified===true && !p.visualQaWarning &&
  Boolean(p.localPath?.startsWith('/images/travel/okavango-delta-premium/')) &&
  Boolean(p.sourcePage?.startsWith('https://')) &&
  Boolean(p.frCaption&&p.enCaption&&p.sha256?.length===64&&(p.bytes||0)>=16000);
-// REVIEW GATE: The private Preview can show sourced candidate photographs without
-// representing a photographer's commercial licence or final image-by-image approval.
+// REVIEW GATE: The private Preview shows source-labelled photographs inspected on
+// a contact sheet; this is NOT an independent creator's commercial licence.
 // This does NOT permit production/public-commercial publication.
 export const previewOkavangoDeltaPhoto=isPreviewPhoto;
 const photos:Record<string,FeaturedCityPhoto>={};

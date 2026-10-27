@@ -9,7 +9,8 @@ assert.equal(m.approvedForCommercialPublication,false);
 const all=[...m.hotels,...m.destinationScenes];
 assert.equal(new Set(all.map(x=>x.sha256)).size,21,'21 exact hashes');
 assert.equal(new Set(all.map(x=>x.localPath)).size,21,'21 unique paths');
-assert.equal(m.visuallyVerified,false,'Contact-sheet human approval gate must not be silently overridden');
+assert.equal(m.visuallyVerified,true,'21-image contact-sheet inspection must be recorded');
+assert(m.visualReviewEvidence?.includes('contact-sheet.jpg'));
 for(const p of all){
  assert(p.localPath.startsWith('/images/travel/okavango-delta-premium/'));
  assert(p.sourcePage.startsWith('https://'));
@@ -18,7 +19,10 @@ for(const p of all){
  assert(p.sha256.length===64);
  assert(existsSync('public'+p.localPath),p.localPath+' missing');
  assert(statSync('public'+p.localPath).size>16000);
- assert.equal(p.status,'candidate_needs_visual_review');
+ assert.equal(p.status,'visually_reviewed_private_preview');
+ assert.equal(p.visuallyVerified,true,'image must be inspected');
+ assert(!p.visualQaWarning,'failed visual warning');
+ assert(p.visualReviewBasis?.includes('2026-10-27'));
 }
 for(const key of ['mombo','jao','sandibe','eagle'])
  assert.equal(m.hotels.filter(p=>p.propertyKey===key).length,3,'three images per real lodge');
@@ -34,6 +38,8 @@ const slugs=[...catalogue.matchAll(/slug:\s*["']([^"']+)["']/g)].map(x=>x[1]);
 assert.equal(slugs.length,88);assert.equal(new Set(slugs).size,88);assert(slugs.includes('okavango-delta'));
 assert(catalogue.includes('approvedDestinationSlugs: ReadonlySet<string> = new Set([])'));
 const register=r('data/travel/featuredCityGuides.ts');assert(register.includes("'okavango-delta': okavangoDeltaGuide"));
+const gate=r('data/travel/okavangoDeltaGuide.ts');
+assert(gate.includes("p.visuallyVerified===true")&&gate.includes("p.status==='visually_reviewed_private_preview'"));
 const featured=r('components/travel/FeaturedCityGuide.tsx');assert(featured.includes('confirmedOkavangoDeltaPreviewAssets')&&featured.includes('okavangoDeltaDraftFaq'));
 const route=r('components/travel/TravelPages.tsx');assert(route.includes('isOkavangoDelta')&&route.includes('okavangoDeltaDraftFaq'));
 const faq=r('data/travel/okavangoDeltaDraftFaq.ts');assert(faq.includes('mokoro')&&faq.includes('Mombo'));
