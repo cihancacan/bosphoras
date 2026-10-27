@@ -25,3 +25,11 @@ Four real stays (Sol de Oriente, Casita Carioca, El Careyes Club & Residences, P
 - Run 40590978432, source asset manifest records URL, nominal photographer publisher, SHA-256, dimensions and captions.
 - Images remain **NOT commercially licensed**, do not promote to indexed public site without creator consent. Editorial Preview only.
 - No conventional hotels invented. 88 existing catalogue destinations preserved. Build and FR/EN route validation pending.
+
+## Final batch validation — 28 Oct 2026
+- 10/10 editorial destinations in current batch: Turks and Caicos, Canouan, Necker Island, North Island Seychelles, Pamalican Island, Laucala Island, Jumby Bay, Okavango Delta, Punta Mita, Costa Careyes.
+- Final Costa Careyes source photo contact-sheet: 21 images inspected (run 40590978432), 12 from four correct property groups + nine coast/heritage/activity frames.
+- TypeScript and all existing destination regression checks passed in GitHub Actions run 40591300738.
+- Existing 88 unique slugs preserved; Careyes 4 genuine accommodation collections not fabricated hotel brands.
+- This is a user-requested Vercel **Preview** only. Public-commercial photography rights and indexing remain BLOCKED, no source-contract bookings or API rates.
+- Publish Preview by deliberately including the existing Vercel build marker `[travel-batch-ready]`, once, now that ten destinations are complete.
