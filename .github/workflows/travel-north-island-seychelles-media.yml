@@ -42,3 +42,5 @@ jobs:
           fi
 
 # Start verified official North Island image download after isolated collector dry-run (21/21 unique files).
+
+# Trigger original-publisher image ingestion after successful 21/21 source dry-run.
