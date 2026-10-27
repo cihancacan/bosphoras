@@ -23,7 +23,7 @@ HOTELS=[
 'https://gearminded.com/four-seasons-punta-mita-aerea/','https://gearminded.com/wp-content/uploads/2016/07/Four-Seasons-Punta-Mita-Aerea-1170x790.jpg'),
 ('st-regis','The St. Regis Punta Mita Resort','St. Regis · salon de villa et accès piscine','St. Regis · named villa living room and pool',
 'https://www.marriott.com/en-us/hotels/pvrxr-the-st-regis-punta-mita-resort/rooms/villas/','https://cache.marriott.com/is/image/marriotts7prod/xr-pvrxr-villa-living-rm-41570-02318%3AClassic-Hor?fit=constrain&wid=1300'),
-('st-regis','The St. Regis Punta Mita Resort','St. Regis · suite rénovée tournée vers l'océan','St. Regis · renovated Pacific suite',
+('st-regis','The St. Regis Punta Mita Resort','St. Regis · suite rénovée tournée vers l’océan','St. Regis · renovated Pacific suite',
 'https://www.hotel-online.com/news/the-iconic-st-regis-punta-mita-raises-completes-first-phase-of-property-wide-renovation/','https://hotelonline-assets1.nyc3.digitaloceanspaces.com/wordpress/2023/02/St-Regis-Punta-Mita-renovated-suite-02282023.jpg'),
 ('st-regis','The St. Regis Punta Mita Resort','St. Regis · piscine et jardin tropical de villa','St. Regis · villa garden and private pool',
 'https://www.luxurylink.com/5star/hotels/punta-de-mita-mexico/st-regis-punta-mita-resort','https://www.luxurylink.com/images/sho_58517053/3042_529-1280/image-3042_529.jpg?filtered=1'),
