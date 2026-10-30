@@ -111,7 +111,8 @@ def selection(items,number,prefix,propertyKey=None):
   urlclean=urllib.parse.urlparse(url).path.lower()
   urlclean=re.sub(r'-\d{2,4}x\d{2,4}(?=\.)','',urlclean)
   # A .jpg and .webp derivative of the same original are ONE photograph.
-  urlclean=re.sub(r'\.(?:webp|jpe?g|png)
+  urlclean=re.sub(r'\.(?:webp|jpe?g|png)$','',urlclean)
+  if urlclean in used:continue
   used.add(urlclean)
   try:
    key=('view-'+str(len(out)+1)) if propertyKey else ('scene-'+str(len(out)+1))
