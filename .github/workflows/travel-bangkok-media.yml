@@ -1,0 +1,46 @@
+name: Travel Bangkok — 21 source photo candidates (private QA only)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - 'scripts/collect-bangkok-media.py'
+      - '.github/workflows/travel-bangkok-media.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: travel-bangkok-media-candidates
+  cancel-in-progress: false
+jobs:
+  acquire:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -m py_compile scripts/collect-bangkok-media.py
+      - run: python -u scripts/collect-bangkok-media.py
+      - name: Save original sources, picture fingerprints and private contact sheet
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- data/travel/bangkokMediaCandidates.json docs/travel-bangkok-acquisition-report.json docs/travel-bangkok-contact-sheet.jpg
+          if [ -d public/images/travel/bangkok-premium ]; then
+            git add -A -- public/images/travel/bangkok-premium
+          fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): private Bangkok source candidates and photo evidence [skip ci]'
+            for i in 1 2 3 4 5; do
+              git fetch origin feature/luxury-travel-seo-destinations-20261012
+              git rebase origin/feature/luxury-travel-seo-destinations-20261012
+              if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then exit 0; fi
+              sleep 3
+            done
+            exit 1
+          fi
