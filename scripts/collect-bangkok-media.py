@@ -59,7 +59,7 @@ def save(url,path):
  path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(raw)
  return {'originalSize':original,'outputSize':list(im.size),'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'pixelFingerprint':fingerprint}
 EXACT_SCENES={
- 'scene-1':'Bangkok along the Chao Phraya and Wat Arun (15068293155).jpg',
+ 'scene-1':'View of Wat Arun.jpg',
  'scene-2':'Wat Arun across Chao Phraya River.jpg',
  'scene-4':'Bangkok charoen krung road IMG 6782.JPG',
  'scene-6':'Lumphini Park Bangkok, as seen from BTS (2026) - IMG 02.jpg',
@@ -145,11 +145,35 @@ def hotel(h):
  found=[]
  for page in pages:found+=harvest(page)
  # Include only original URLs from official publisher pages; do not substitute booking/stock images.
- seen=set();out=[];errors=[]
- for u,alt,page in sorted(found,key=score,reverse=True):
+ seen=set();seen_originals=set();out=[];errors=[]
+ # Property-specific visual categories prevent logo selection and repeated crops of one image.
+ if key=='mandarin-oriental':
+  print('MO_GALLERY_DESCRIPTIVE_OPTIONS',[(a[:70],u[:80]) for u,a,_ in found if a and ('bangkok' in a.lower() or 'lobby' in a.lower() or 'pool' in a.lower() or 'suite' in a.lower())][:20],flush=True)
+  found=[p for p in found if p[1] and re.search(r'exterior|lobby|author.s suite|river wing|chao phraya suite|deluxe premier|pool experience|the oriental spa',p[1],re.I)]
+ groups={
+   'mandarin-oriental': [('exterior',),('lobby',),('suite','room')],
+   'capella':[('pool','garden','hotel'),('villa','suite'),('room','riverfront')],
+   'the-siam':[('view',),('pool',),('bed','room')],
+   'aman-nai-lert':[('exterior',),('pool','wellness','spa'),('suite','room','lobby')]
+ }.get(key,[])
+ ranked=sorted(found,key=score,reverse=True)
+ ordered=[]
+ for terms in groups:
+  hits=[p for p in ranked if any(word in (p[0]+' '+p[1]).lower() for word in terms)]
+  for p in hits:
+   if p not in ordered:
+    ordered.append(p)
+    break
+ for p in ranked:
+  if p not in ordered:ordered.append(p)
+ for u,alt,page in ordered:
   if len(out)==3:break
   if u in seen or score((u,alt,page))<3:continue
   seen.add(u)
+  # CDN image styles of one Aman photograph are not three distinct photographs.
+  canonical=re.sub(r'/styles/[^/]+/public/','/public/',urllib.parse.urlsplit(u).path,re.I)
+  if canonical in seen_originals:continue
+  seen_originals.add(canonical)
   idx='view-'+str(len(out)+1);path=ROOT/key/(idx+'.webp')
   try:
    props=save(u,path)
