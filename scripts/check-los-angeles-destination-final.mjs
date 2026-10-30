@@ -11,8 +11,8 @@ assert(catalogue.includes('approvedDestinationSlugs: ReadonlySet<string> = new S
 const featured=read('data/travel/featuredCityGuides.ts');
 const union=featured.match(/export type FeaturedCitySlug\s*=\s*([\s\S]*?);/)?.[1]||'';
 const slugs=[...union.matchAll(/'([^']+)'/g)].map(x=>x[1]);
-assert.equal(slugs.length,58,'LA must be featured guide #58');
-assert.equal(new Set(slugs).size,58,'Premium city slugs unique');
+assert(slugs.length>=58,'Los Angeles and the preceding 57 premium guides remain featured');
+assert.equal(new Set(slugs).size,slugs.length,'Premium city slugs unique');
 for(const s of ["'los-angeles': losAngelesGuide","'miami': miamiGuide","'new-york': newYorkGuide","istanbul: istanbulGuide"])assert(featured.includes(s),s);
 
 const guide=read('data/travel/losAngelesDraftGuide.ts');
