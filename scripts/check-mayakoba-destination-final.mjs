@@ -12,7 +12,7 @@ const union=registry.match(/export type FeaturedCitySlug\s*=\s*([\s\S]*?);/)?.[1
 const featured=[...union.matchAll(/'([^']+)'/g)].map(x=>x[1]);
 assert.equal(featured.length,59,'Mayakoba is premium #59');
 assert.equal(new Set(featured).size,59);
-for(const term of ['mayakoba: mayakobaGuide',"'los-angeles': losAngelesGuide","'miami': miamiGuide","'new-york': newYorkGuide",'istanbul: istanbulGuide'])assert(registry.includes(term),'Feature not preserved '+term);
+for(const term of ["'mayakoba': mayakobaGuide","'los-angeles': losAngelesGuide","'miami': miamiGuide","'new-york': newYorkGuide",'istanbul: istanbulGuide'])assert(registry.includes(term),'Feature not preserved '+term);
 const guide=read('data/travel/mayakobaDraftGuide.ts');
 for(const name of ['Rosewood Mayakoba','Banyan Tree Mayakoba','Fairmont Mayakoba','Alila Mayakoba'])assert(guide.includes('"name": "'+name+'"'),name);
 assert(guide.includes('"secondary": "scene-7"')&&guide.includes('"hero": "scene-1"'));
