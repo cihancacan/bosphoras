@@ -1,4 +1,8 @@
-/** Miami flagship editorial: curated bilingual owner Preview, no rates, rooms or booking contract implied. Sources: docs/travel-miami-source-review.md */
+/** Miami #57 flagship editorial: FR/EN owner-only noindex Preview.
+ * Nine CC landscape assets and twelve separate hotel photo entries have source ledgers.
+ * Hotel photographer commercial-reuse permissions are not independently cleared.
+ * No live rates, reserved rooms, booking relationship or after-sales contract implied.
+ * Sources and gates: docs/travel-miami-source-review.md. */
 import type {FeaturedCityGuideData} from './featuredCityGuides';
 export const miamiDraftGuide: Omit<FeaturedCityGuideData,'photos'> = {
   "slug": "miami",
