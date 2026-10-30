@@ -26,12 +26,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Krabi, Railay West Beach (6218118271).jpg",
-      "frCaption": "Railay West et ses falaises calcaires",
-      "enCaption": "Railay West limestone cliffs",
-      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP"
+      "frCaption": "Railay West, falaise calcaire et plage de sable clair",
+      "enCaption": "Railay West, limestone cliff and pale sand",
+      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP",
+      "visualReviewNote": "Identité géographique et composition inspectées sur la planche, licence Commons vérifiée; conversion WebP et redimensionnement à mentionner."
     },
     {
       "originalSize": [
@@ -54,12 +55,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Krabi, Phra Nang Beach (6218172753).jpg",
-      "frCaption": "La plage de Phra Nang, Railay",
-      "enCaption": "Phra Nang beach on Railay",
-      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP"
+      "frCaption": "Phra Nang, rocher karstique et plage de Railay",
+      "enCaption": "Phra Nang limestone formation and beach",
+      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP",
+      "visualReviewNote": "Identité géographique et composition inspectées sur la planche, licence Commons vérifiée; conversion WebP et redimensionnement à mentionner."
     },
     {
       "originalSize": [
@@ -82,12 +84,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Tubkaek Beach SF0001.jpg",
-      "frCaption": "Tubkaek Beach sur la côte de Nong Thale",
-      "enCaption": "Tubkaek Beach on the Nong Thale coast",
-      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP"
+      "frCaption": "Tubkaek Beach, rivage calme et silhouettes d'îles",
+      "enCaption": "Tubkaek Beach, quiet shoreline and islands",
+      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP",
+      "visualReviewNote": "Identité géographique et composition inspectées sur la planche, licence Commons vérifiée; conversion WebP et redimensionnement à mentionner."
     },
     {
       "originalSize": [
@@ -113,9 +116,10 @@
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
       "originalAlt": "Beach at Koh Kwang (4463354227).jpg",
-      "frCaption": "Koh Kwang, sur la côte de Klong Muang",
-      "enCaption": "Koh Kwang beach on the Klong Muang coast",
-      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP"
+      "frCaption": "Koh Kwang, littoral de Klong Muang par temps couvert : photographie écartée du guide premium",
+      "enCaption": "Koh Kwang coastline under overcast skies; rejected for premium display",
+      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP",
+      "visualReviewNote": "VUE NON APPROUVÉE : littoral sombre et peu lisible; remplacer par une meilleure photo précisément localisée."
     },
     {
       "originalSize": [
@@ -138,12 +142,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Ao Nang beach panorama 3.jpg",
-      "frCaption": "Ao Nang et sa baie sur la côte de Krabi",
-      "enCaption": "Ao Nang beach and limestone bay",
-      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP"
+      "frCaption": "Ao Nang, grande baie de sable bordée de falaises",
+      "enCaption": "Ao Nang's broad sandy bay and limestone backdrop",
+      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP",
+      "visualReviewNote": "Identité géographique et composition inspectées sur la planche, licence Commons vérifiée; conversion WebP et redimensionnement à mentionner."
     },
     {
       "originalSize": [
@@ -166,12 +171,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Limestone karst cliff and longtail boats at Railay West Beach Krabi.jpg",
-      "frCaption": "Long-tail boats et falaises de Railay West",
-      "enCaption": "Long-tail boats and cliffs at Railay West",
-      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP"
+      "frCaption": "Railay West, falaises et bateaux long-tail",
+      "enCaption": "Railay West limestone cliffs and long-tail boats",
+      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP",
+      "visualReviewNote": "Identité géographique et composition inspectées sur la planche, licence Commons vérifiée; conversion WebP et redimensionnement à mentionner."
     },
     {
       "originalSize": [
@@ -194,12 +200,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "1.Ko Hong Island - Andaman Sea - Krabi Province, Thailand.jpg",
-      "frCaption": "Ko Hong et la mer d’Andaman",
-      "enCaption": "Ko Hong in the Andaman Sea",
-      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP"
+      "frCaption": "Îles Hong, bateau traditionnel devant le relief karstique",
+      "enCaption": "Hong Islands: traditional boat before limestone islands",
+      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP",
+      "visualReviewNote": "Identité géographique et composition inspectées sur la planche, licence Commons vérifiée; conversion WebP et redimensionnement à mentionner."
     },
     {
       "originalSize": [
@@ -222,12 +229,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Phra Nang beach 40.jpg",
-      "frCaption": "Le relief de Phra Nang Beach",
-      "enCaption": "Phra Nang beach landscape",
-      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP"
+      "frCaption": "Phra Nang, falaise monumentale au-dessus de la baie",
+      "enCaption": "Phra Nang limestone cliffs above the bay",
+      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP",
+      "visualReviewNote": "Identité géographique et composition inspectées sur la planche, licence Commons vérifiée; conversion WebP et redimensionnement à mentionner."
     },
     {
       "originalSize": [
@@ -250,12 +258,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Koh Poda 1.jpg",
-      "frCaption": "Koh Poda et les îlots de Krabi",
-      "enCaption": "Koh Poda island and Krabi coastline",
-      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP"
+      "frCaption": "Koh Poda, bateaux long-tail et îlot rocheux",
+      "enCaption": "Koh Poda, long-tail boats and limestone islet",
+      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP",
+      "visualReviewNote": "Identité géographique et composition inspectées sur la planche, licence Commons vérifiée; conversion WebP et redimensionnement à mentionner."
     }
   ],
   "hotels": [
@@ -282,11 +291,12 @@
       "licenseUrl": "https://www.rayavadee.com/en/room-pool-pavillion.php",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Pool Pavilion outdoor architecture with private pool",
-      "frCaption": "Rayavadee · photographie officielle à examiner",
-      "enCaption": "Rayavadee · official publisher photograph pending individual review"
+      "frCaption": "Rayavadee · Pool Pavilion, piscine et jardin de la catégorie",
+      "enCaption": "Rayavadee · pool and garden at a Pool Pavilion",
+      "visualReviewNote": "Source hôtel officielle et propriété exacte reconnues sur planche; aperçu privé seulement, droits commerciaux NON vérifiés; ne pas publier en production."
     },
     {
       "originalSize": [
@@ -311,11 +321,12 @@
       "licenseUrl": "https://www.rayavadee.com/zh/room-spa-pavillion.php",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Spa Pavilion room interior",
-      "frCaption": "Rayavadee · photographie officielle à examiner",
-      "enCaption": "Rayavadee · official publisher photograph pending individual review"
+      "frCaption": "Rayavadee · salon d'un Spa Pavilion, catégorie précise",
+      "enCaption": "Rayavadee · living room in a Spa Pavilion",
+      "visualReviewNote": "Source hôtel officielle et propriété exacte reconnues sur planche; aperçu privé seulement, droits commerciaux NON vérifiés; ne pas publier en production."
     },
     {
       "originalSize": [
@@ -340,11 +351,12 @@
       "licenseUrl": "https://www.rayavadee.com/en/room-terrace-pavillion.php",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Terrace Pavilion bedroom interior",
-      "frCaption": "Rayavadee · photographie officielle à examiner",
-      "enCaption": "Rayavadee · official publisher photograph pending individual review"
+      "frCaption": "Rayavadee · chambre d'un Terrace Pavilion",
+      "enCaption": "Rayavadee · bedroom in a Terrace Pavilion",
+      "visualReviewNote": "Source hôtel officielle et propriété exacte reconnues sur planche; aperçu privé seulement, droits commerciaux NON vérifiés; ne pas publier en production."
     },
     {
       "originalSize": [
@@ -369,11 +381,12 @@
       "licenseUrl": "https://www.ritzcarlton.com/en/hotels/kbvrz-phulay-bay-a-ritz-carlton-reserve/photos/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "hotel official gallery hero",
-      "frCaption": "Phulay Bay, a Ritz-Carlton Reserve · photographie officielle à examiner",
-      "enCaption": "Phulay Bay, a Ritz-Carlton Reserve · official publisher photograph pending individual review"
+      "frCaption": "Phulay Bay · bassin panoramique du domaine et îles à l'horizon",
+      "enCaption": "Phulay Bay · panoramic resort pool and island horizon",
+      "visualReviewNote": "Source hôtel officielle et propriété exacte reconnues sur planche; aperçu privé seulement, droits commerciaux NON vérifiés; ne pas publier en production."
     },
     {
       "originalSize": [
@@ -398,11 +411,12 @@
       "licenseUrl": "https://www.ritzcarlton.com/en/hotels/kbvrz-phulay-bay-a-ritz-carlton-reserve/photos/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "",
-      "frCaption": "Phulay Bay, a Ritz-Carlton Reserve · photographie officielle à examiner",
-      "enCaption": "Phulay Bay, a Ritz-Carlton Reserve · official publisher photograph pending individual review"
+      "frCaption": "Phulay Bay · intérieur d'une villa avec lit et alcôve",
+      "enCaption": "Phulay Bay · villa bedroom and alcove",
+      "visualReviewNote": "Source hôtel officielle et propriété exacte reconnues sur planche; aperçu privé seulement, droits commerciaux NON vérifiés; ne pas publier en production."
     },
     {
       "originalSize": [
@@ -427,11 +441,12 @@
       "licenseUrl": "https://www.ritzcarlton.com/en/hotels/kbvrz-phulay-bay-a-ritz-carlton-reserve/photos/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "",
-      "frCaption": "Phulay Bay, a Ritz-Carlton Reserve · photographie officielle à examiner",
-      "enCaption": "Phulay Bay, a Ritz-Carlton Reserve · official publisher photograph pending individual review"
+      "frCaption": "Phulay Bay · espace d'une villa ouvert vers la mer",
+      "enCaption": "Phulay Bay · villa space facing the sea",
+      "visualReviewNote": "Source hôtel officielle et propriété exacte reconnues sur planche; aperçu privé seulement, droits commerciaux NON vérifiés; ne pas publier en production."
     },
     {
       "originalSize": [
@@ -456,11 +471,12 @@
       "licenseUrl": "https://www.banyantree.com/thailand/krabi/gallery",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Hotel",
-      "frCaption": "Banyan Tree Krabi · photographie officielle à examiner",
-      "enCaption": "Banyan Tree Krabi · official publisher photograph pending individual review"
+      "frCaption": "Banyan Tree Krabi · vue d'ensemble du domaine sur Tubkaek",
+      "enCaption": "Banyan Tree Krabi · resort grounds on Tubkaek",
+      "visualReviewNote": "Source hôtel officielle et propriété exacte reconnues sur planche; aperçu privé seulement, droits commerciaux NON vérifiés; ne pas publier en production."
     },
     {
       "originalSize": [
@@ -485,11 +501,12 @@
       "licenseUrl": "https://www.banyantree.com/thailand/krabi/gallery",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Beachfront Pool Villa",
-      "frCaption": "Banyan Tree Krabi · photographie officielle à examiner",
-      "enCaption": "Banyan Tree Krabi · official publisher photograph pending individual review"
+      "frCaption": "Banyan Tree Krabi · villa avec bassin privé, catégorie précise",
+      "enCaption": "Banyan Tree Krabi · private-pool villa",
+      "visualReviewNote": "Source hôtel officielle et propriété exacte reconnues sur planche; aperçu privé seulement, droits commerciaux NON vérifiés; ne pas publier en production."
     },
     {
       "originalSize": [
@@ -514,11 +531,12 @@
       "licenseUrl": "https://www.banyantree.com/thailand/krabi/gallery",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Banyan Tree Spa Krabi",
-      "frCaption": "Banyan Tree Krabi · photographie officielle à examiner",
-      "enCaption": "Banyan Tree Krabi · official publisher photograph pending individual review"
+      "frCaption": "Banyan Tree Krabi · réception du spa",
+      "enCaption": "Banyan Tree Krabi · spa reception",
+      "visualReviewNote": "Source hôtel officielle et propriété exacte reconnues sur planche; aperçu privé seulement, droits commerciaux NON vérifiés; ne pas publier en production."
     },
     {
       "originalSize": [
@@ -543,11 +561,12 @@
       "licenseUrl": "https://www.tubkaakresort.com/gallery/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "publisher embedded image",
-      "frCaption": "The Tubkaak Krabi Boutique Resort · photographie officielle à examiner",
-      "enCaption": "The Tubkaak Krabi Boutique Resort · official publisher photograph pending individual review"
+      "frCaption": "The Tubkaak · dîner sur la plage face aux îles",
+      "enCaption": "The Tubkaak · beachside dining facing the islands",
+      "visualReviewNote": "Source hôtel officielle et propriété exacte reconnues sur planche; aperçu privé seulement, droits commerciaux NON vérifiés; ne pas publier en production."
     },
     {
       "originalSize": [
@@ -572,11 +591,12 @@
       "licenseUrl": "https://www.tubkaakresort.com/gallery/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "publisher embedded image",
-      "frCaption": "The Tubkaak Krabi Boutique Resort · photographie officielle à examiner",
-      "enCaption": "The Tubkaak Krabi Boutique Resort · official publisher photograph pending individual review"
+      "frCaption": "The Tubkaak · piscine et jardin d'une villa précise",
+      "enCaption": "The Tubkaak · pool and garden at a specific villa",
+      "visualReviewNote": "Source hôtel officielle et propriété exacte reconnues sur planche; aperçu privé seulement, droits commerciaux NON vérifiés; ne pas publier en production."
     },
     {
       "originalSize": [
@@ -601,12 +621,15 @@
       "licenseUrl": "https://www.tubkaakresort.com/gallery/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "publisher embedded image",
-      "frCaption": "The Tubkaak Krabi Boutique Resort · photographie officielle à examiner",
-      "enCaption": "The Tubkaak Krabi Boutique Resort · official publisher photograph pending individual review"
+      "frCaption": "The Tubkaak · table au bord de l'eau et panorama côtier",
+      "enCaption": "The Tubkaak · waterfront dining and coastal panorama",
+      "visualReviewNote": "Source hôtel officielle et propriété exacte reconnues sur planche; aperçu privé seulement, droits commerciaux NON vérifiés; ne pas publier en production."
     }
   ],
-  "visualQA": "PENDING_MANUAL_REVIEW_NO_IMAGES_APPROVED"
+  "visualQA": "INTERNAL_20_OF_21_APPROVED_KLONG_MUANG_REPLACEMENT_REQUIRED",
+  "internalReviewedPhotoCount": 20,
+  "publicUseApproved": false
 }
