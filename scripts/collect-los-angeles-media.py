@@ -20,7 +20,7 @@ SCENES=[
 ('scene-5',['Santa Monica California beach pier aerial','Santa Monica Pier beach California'],'Santa Monica Pacific beachfront','La plage de Santa Monica côté Pacifique',['santa monica']),
 ('scene-6',['Griffith Park Los Angeles trails hiking hills','Griffith Observatory Hollywood sign Los Angeles'],'Griffith Park and the Hollywood Hills','Griffith Park et les collines de Hollywood',['griffith','hollywood hills']),
 ('scene-7',['Downtown Los Angeles skyline night','Los Angeles downtown skyline twilight'],'Downtown Los Angeles skyline after dark','Skyline de Downtown Los Angeles à la tombée du jour',['downtown los angeles','los angeles skyline','la skyline']),
-('scene-8',['Malibu California coastline beach Pacific','Malibu coastline California seashore'],'Malibu's Pacific coast and open beach','La côte Pacifique de Malibu',['malibu']),
+('scene-8',['Malibu California coastline beach Pacific','Malibu coastline California seashore'],'Malibu’s Pacific coast and open beach','La côte Pacifique de Malibu',['malibu']),
 ('scene-9',['Venice canals Los Angeles California','Venice Beach canals Los Angeles'],'The Venice Canals in Los Angeles','Les canaux de Venice à Los Angeles',['venice canals','venice california','venice canal'])
 ]
 HOTELS=[
