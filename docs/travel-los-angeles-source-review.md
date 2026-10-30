@@ -33,3 +33,12 @@ Hotel images are collected from the named hotel's own pages. Three genuinely dis
 - `TravelPages.tsx`: FR/EN metadata, schema-safe photographic rights guard, ItemList/Article/FAQ JSON-LD, featured navigation.
 - QA script `scripts/check-los-angeles-destination-final.mjs` targets nine unique legitimate city photos, 12 hotel photos (3 each), 58 premium guides, 88 unchanged geographical slugs, source-hash integrity, 16 FAQs, mobile-friendly shared design and safe indexing policy.
 - Preview targets: `/travel/destinations/los-angeles` and `/en/travel/destinations/los-angeles`; hotel variant also available. Verify GitHub Actions success then trigger a single Vercel Preview release commit `[travel-batch-ready]`.
+
+## 30 October 2026 — pre-release QA, all 21 images and page checks passed
+
+- Los Angeles is featured premium destination **#58**. Original 88 geographical slugs, Miami #57, New York #56 and Istanbul unchanged.
+- Nine real local Wikimedia landscapes with per-file credit, license, image URL and hash; 12 property photos from four correctly named hotels, three per hotel. All are local WebP with bilingual captions and explicit property identifiers.
+- Initial collector found eight landscapes and six hotel photos. Incremental [GitHub Actions run 41058661449](https://github.com/cihancacan/bosphoras/actions/runs/41058661449) obtained the missing CC-licensed Malibu panorama and six independently attributable Hotel Bel-Air / Beverly Hills Hotel photos, and removed an accidental resized Shutters duplicate.
+- Final [GitHub Actions run 41058845442](https://github.com/cihancacan/bosphoras/actions/runs/41058845442): **SUCCESS** on TypeScript, catalogue, Miami and New York regressions, all other retained destination tests, and `scripts/check-los-angeles-destination-final.mjs` covering 58 featured guides and 21 individual photo files.
+- Rights reminder: Dorchester, MICHELIN Guide, Town & Country, Arcadia and other hotel publisher images are strictly owner-only Preview, **not commercially licensed** by this evidence.
+- Trigger one intentional owner-only Vercel Preview build with `[travel-batch-ready]`; keep production `main`, actual payment systems, live indexing and all other site functions untouched.
