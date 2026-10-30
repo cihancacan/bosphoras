@@ -51,3 +51,19 @@ Pour chacun des 21 fichiers WebP : URL originale, page source, hôtel/lieu exact
 Après approbation, intégrer le guide dans le composant mutualisé et le registre, garder `approvedDestinationSlugs` vide et `noindex` ; exécuter TypeScript, catalogue 88, unicité/QA photographique, FR/EN, structured data, SSR et responsive. Ne demander **qu'une Preview Vercel coordonnée au terme du lot**, via le marqueur existant `[travel-batch-ready]` et jamais depuis ces commits de brouillon.
 
 **Statut actuel : contenu éditorial initial rédigé, vérification iconographique NON commencée. Destination NON terminée. Production non modifiée.**
+
+
+## Mise à jour de reprise — 30 octobre 2026, intégration technique
+
+Cette section remplace les indications de brouillon « pas encore intégré » ci-dessus.
+
+- **Krabi #61 est désormais intégrée sur la branche interne** dans `featuredCityGuides.ts`, `FeaturedCityGuide.tsx` et `TravelPages.tsx`. Les 88 slugs historiques sont maintenus. Routes prévues : `/travel/destinations/krabi`, `/en/travel/destinations/krabi`, `/travel/hotels/krabi` et `/en/travel/hotels/krabi`.
+- **Guide bilingue** avec cinq secteurs, cinq expériences, quatre vraies maisons de luxe et huit FAQ FR/EN ; métadonnées, liens canoniques FR/EN, FAQ JSON-LD et filtres image communs.
+- **21 photographies collectées**, dont neuf paysages Wikimedia Commons avec licence et 12 photos provenant des galeries officielles des quatre hôtels. Les 12 photos d’hôtels sont **uniquement pour revue privée**, avec droits commerciaux distincts non acquis. L’indexation reste interdite ; aucun inventaire ou tarif n’a été activé.
+- **20/21 images contrôlées visuellement à ce stade**. Le paysage `scene-4` (Koh Kwang / Klong Muang) a été rejeté comme trop terne et reste techniquement masqué. Ne pas déclarer cette destination complète avant remplacement effectif.
+- Une **planche de neuf alternatives exactes** est sauvegardée dans `docs/travel-krabi-klong-muang-contact-sheet.jpg`. Le visuel retenu est `Beach at Koh Kwang (4464119684).jpg`, © Caitriana Nicholson, **CC BY-SA 2.0**, véritable côte de Klong Muang, palmiers et mer. Le workflow GitHub `travel-krabi-final-photo.yml` a été soumis pour remplacer uniquement `scene-4.webp` sans toucher aux 20 autres photos. **La soumission n’est pas une preuve que le workflow a terminé.**
+- Le test `scripts/check-krabi-draft.cjs` vérifie les 61 guides, les 88 slugs, la provenance et les hachages des 21 images, la structure bilingue, le refus de la scène non validée, les licences et la conservation du `noindex`. L’exécution GitHub Actions est sollicitée, mais une exécution en file d’attente n’est pas une réussite.
+- La mise en page conserve le thème luxe existant, ajoute un hero texturé contrasté, deux vues paysagères et leurs crédits CC, sans créer un nouveau framework.
+- **Aucun nouveau déploiement Vercel de Krabi autorisé avant le prochain lot complet** ; les tentatives de déploiement ordinaires de la branche apparaissent CANCELED comme prévu. Production `main`, CRM, immobilier, transferts et API hôtelières inchangés.
+
+**Porte de sortie :** attendre le commit de remplacement réellement écrit, contrôler 21/21 images et la conclusion **SUCCESS** du workflow TypeScript. Seulement après, qualifier **Krabi terminée sur la branche interne**, sans confondre avec une mise en ligne Preview ou production.
