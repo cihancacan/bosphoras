@@ -2,9 +2,65 @@
   "destination": "bangkok",
   "scope": "protected_owner_preview_only",
   "rightsNotice": "No hotel publisher photo may be redistributed commercially without separate authorisation.",
-  "cityCount": 4,
+  "cityCount": 8,
   "hotelCount": 9,
   "destinationScenes": [
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "bytes": 451662,
+      "sha256": "ae2c8d5675f2281ead972dcd2e3384d4a721e4d29b34fbc510ed2f813f2b9d3c",
+      "pixelFingerprint": "a463cbde0b9f6befddeff295ff7b6dfc2a941d49b1dd6d1791684d306ac76a0f",
+      "key": "scene-1",
+      "localPath": "/images/travel/bangkok-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bangkok_along_the_Chao_Phraya_and_Wat_Arun_(15068293155).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Bangkok_along_the_Chao_Phraya_and_Wat_Arun_%2815068293155%29.jpg/1920px-Bangkok_along_the_Chao_Phraya_and_Wat_Arun_%2815068293155%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Clay Gilliland",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Bangkok along the Chao Phraya and Wat Arun (15068293155).jpg",
+      "frCaption": "Wat Arun et le Chao Phraya au coucher du soleil",
+      "enCaption": "Wat Arun and Chao Phraya at sunset",
+      "searchIntent": "Bangkok Chao Phraya river Wat Arun night panorama"
+    },
+    {
+      "originalSize": [
+        1920,
+        1278
+      ],
+      "outputSize": [
+        1600,
+        1065
+      ],
+      "bytes": 186616,
+      "sha256": "f3944479db10c5d9d78732bbbc40de38d26868901499d879d16008f27a673fd2",
+      "pixelFingerprint": "0b2a9eaa7e4bee7c700d20f2a8b7159e424f186f1feee2abda31ea134a1f56af",
+      "key": "scene-2",
+      "localPath": "/images/travel/bangkok-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wat_Arun_across_Chao_Phraya_River.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Wat_Arun_across_Chao_Phraya_River.jpg/1920px-Wat_Arun_across_Chao_Phraya_River.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Preecha.MJ",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Wat Arun across Chao Phraya River.jpg",
+      "frCaption": "Wat Arun et ses prangs depuis le fleuve",
+      "enCaption": "Wat Arun and its spires seen from the river",
+      "searchIntent": "Bangkok Wat Arun temple sunrise"
+    },
     {
       "originalSize": [
         1920,
@@ -36,6 +92,34 @@
     {
       "originalSize": [
         1920,
+        1394
+      ],
+      "outputSize": [
+        1600,
+        1162
+      ],
+      "bytes": 293472,
+      "sha256": "172271e1e80e9d2877ba685eaa52808fcc47b1cd6ba08dd45f8af324f477f071",
+      "pixelFingerprint": "8c3148336133feb91137ce3fb5fe70aa1dd778addc8a9edc9afeef5f12d81275",
+      "key": "scene-4",
+      "localPath": "/images/travel/bangkok-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bangkok_charoen_krung_road_IMG_6782.JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Bangkok_charoen_krung_road_IMG_6782.JPG/1920px-Bangkok_charoen_krung_road_IMG_6782.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Bjoertvedt",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Bangkok charoen krung road IMG 6782.JPG",
+      "frCaption": "Charoen Krung et la ville ancienne",
+      "enCaption": "Charoen Krung and Bangkok old town",
+      "searchIntent": "Charoen Krung Bangkok old town street"
+    },
+    {
+      "originalSize": [
+        1920,
         1279
       ],
       "outputSize": [
@@ -60,6 +144,34 @@
       "frCaption": "Dusit et son architecture historique",
       "enCaption": "Dusit and its historic architecture",
       "searchIntent": "Bangkok Dusit Ananta Samakhom Throne Hall"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "bytes": 490864,
+      "sha256": "efe385bf192ce8d87a4720730f0a5aa9f2c72fd70fa656830767ccec20a276b8",
+      "pixelFingerprint": "36828b803b75d3a3bb6908265b28adc6e9e81261a5e194e986de80addfb0dc5d",
+      "key": "scene-6",
+      "localPath": "/images/travel/bangkok-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lumphini_Park_Bangkok,_as_seen_from_BTS_(2026)_-_IMG_02.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Lumphini_Park_Bangkok%2C_as_seen_from_BTS_%282026%29_-_IMG_02.jpg/1920px-Lumphini_Park_Bangkok%2C_as_seen_from_BTS_%282026%29_-_IMG_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Chainwit.",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Lumphini Park Bangkok, as seen from BTS (2026) - IMG 02.jpg",
+      "frCaption": "Les arbres de Lumphini devant les tours centrales",
+      "enCaption": "Lumphini trees beside the central skyline",
+      "searchIntent": "Bangkok Lumpini Park skyscrapers skyline"
     },
     {
       "originalSize": [
