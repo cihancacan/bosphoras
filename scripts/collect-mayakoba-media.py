@@ -19,8 +19,8 @@ DEST_PAGES=[
 ]
 HOTELS={
  'rosewood':('Rosewood Mayakoba','https://mayakoba.com/hotels-overview/rosewood-mayakoba/'),
- 'banyan-tree':('Banyan Tree Mayakoba','https://mayakoba.com/hotels-overview/banyan-tree-mayakoba/'),
- 'fairmont':('Fairmont Mayakoba','https://mayakoba.com/hotels-overview/fairmont-mayakoba/'),
+ 'banyan-tree':('Banyan Tree Mayakoba','https://www.banyantree.com/mexico/mayakoba'),
+ 'fairmont':('Fairmont Mayakoba','https://www.fairmont-mayakoba.com/'),
  'alila':('Alila Mayakoba','https://mayakoba.com/hotels-overview/alila-mayakoba/')
 }
 SCENES=[
@@ -79,6 +79,7 @@ def score(item,hotel=None):
  if hotel:
   s+=10 if any(w in low for w in hotel.replace('-',' ').split()) else 0
   if 'hotel gallery' in low:s+=30
+  if propertyKey in ('banyan-tree','fairmont') and 'mayakoba' in low:s+=8
   if 'resort features' in low:s+=8
   if 'hotel banner' in low:s+=12
  else:
@@ -108,7 +109,54 @@ def selection(items,number,prefix,propertyKey=None):
   if len(out)>=number:break
   if score((url,alt,page,kind),propertyKey)<3:continue
   urlclean=urllib.parse.urlparse(url).path.lower()
-  urlclean=re.sub(r'-\d{3,4}x\d{3,4}(?=\.)','',urlclean)
+  urlclean=re.sub(r'-\d{2,4}x\d{2,4}(?=\.)','',urlclean)
+  # A .jpg and .webp derivative of the same original are ONE photograph.
+  urlclean=re.sub(r'\.(?:webp|jpe?g|png)
+  used.add(urlclean)
+  try:
+   key=('view-'+str(len(out)+1)) if propertyKey else ('scene-'+str(len(out)+1))
+   path=BASE/prefix/(key+'.webp')
+   props=save(url,path)
+   if props['sha256'] in hashes or props['pixelFingerprint'] in hashes:continue
+   hashes.add(props['sha256']);hashes.add(props['pixelFingerprint'])
+   d={**props,'key':key,'localPath':'/'+str(path).removeprefix('public/'),
+       'sourcePage':page,'downloadUrl':url,
+       'credit':'Mayakoba official destination / hotel media (photographer rights not independently verified)',
+       'license':'Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.',
+       'licenseUrl':page,'commercialRightsCleared':False,
+       'status':'source_identified_private_preview','visuallyVerified':False,
+       'originalAlt':alt}
+   if propertyKey:
+    title,_=HOTELS[propertyKey];d.update(propertyKey=propertyKey,property=title,
+       rightsEvidenceType='official_hotel_destination_publisher_not_commercially_cleared',
+       frCaption=title+' · photographie officielle du resort (détail à confirmer)',
+       enCaption=title+' · property-publisher photo (detail pending review)')
+   else:
+    k,fr,en=SCENES[len(out)]
+    d.update(rightsEvidenceType='official_destination_publisher_not_commercially_cleared',
+      frCaption=fr,enCaption=en)
+   out.append(d)
+   print('ACQUIRED',prefix,key,props['bytes'],'alt',alt[:72],flush=True)
+  except Exception as e:print('REJECT',prefix,str(e)[:100],url[:110],flush=True)
+ return out
+def main():
+ allv=[]
+ for page in DEST_PAGES:allv.extend(photos(page))
+ dest=selection(allv,9,'destination')
+ hotels=[]
+ for key,(name,page) in HOTELS.items():
+  choices=photos(page)
+  got=selection(choices,3,key,key)
+  print('HOTEL',key,len(got),'of 3',flush=True)
+  hotels.extend(got)
+ out=dict(destination='mayakoba',scope='private_owner_noindex_preview',
+  rightsNotice='No destination or hotel publisher photo has independently cleared commercial use rights.',
+  cityCount=len(dest),hotelCount=len(hotels),destinationScenes=dest,hotels=hotels)
+ MANIFEST.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ print('MAYAKOBA IMAGES',len(dest),len(hotels),flush=True)
+ if len(dest)<9 or len(hotels)<12:raise SystemExit('Private media incomplete; do not deploy as finalized')
+if __name__=='__main__':main()
+,'',urlclean)
   if urlclean in used:continue
   used.add(urlclean)
   try:
