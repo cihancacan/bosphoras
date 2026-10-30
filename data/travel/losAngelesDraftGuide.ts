@@ -1,4 +1,9 @@
-/** Los Angeles #58 curated FR/EN editorial for owner Preview only. No direct booking, guaranteed views or room inventory. */
+/** Los Angeles #58 — complete FR/EN premium editorial for private owner Preview only.
+ * Nine genuine source-audited Commons landscapes and twelve named hotel gallery
+ * photographs reside in losAngelesMediaCandidates.json, with rights distinctions.
+ * No direct bookings, room inventory, rates, guaranteed views or after-sales claimed.
+ * Original 88 geographical destinations, 57 previous premium guides and noindex kept.
+ */
 import type {FeaturedCityGuideData} from './featuredCityGuides';
 export const losAngelesDraftGuide: Omit<FeaturedCityGuideData,'photos'> = {
   "slug": "los-angeles",
