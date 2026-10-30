@@ -1,0 +1,39 @@
+name: Krabi — Klong Muang image choices (no Vercel)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - '.github/workflows/travel-krabi-klong-visual-research.yml'
+      - 'scripts/research-krabi-klong-muang.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: travel-krabi-klong-research
+  cancel-in-progress: false
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12'
+      - run: python -u scripts/research-krabi-klong-muang.py
+      - name: Save source comparison without changing real travel photos
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/travel-krabi-klong-muang-contact-sheet.jpg docs/travel-krabi-klong-muang-research.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'docs(travel): visually compare Klong Muang Creative Commons sources [skip ci]'
+            for i in 1 2 3 4 5; do
+              git fetch origin feature/luxury-travel-seo-destinations-20261012
+              git rebase origin/feature/luxury-travel-seo-destinations-20261012
+              if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then exit 0; fi
+              sleep 2
+            done
+            exit 1
+          fi
