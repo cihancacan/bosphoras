@@ -42,6 +42,7 @@ jobs:
       - run: node scripts/check-istanbul-destination-final.mjs
       - run: node scripts/check-new-york-destination-final.mjs
       - run: node scripts/check-miami-destination-final.mjs
+      - run: node scripts/check-los-angeles-destination-final.mjs
       - run: node scripts/check-next-alpine-drafts.mjs
       - run: node scripts/check-third-alpine-drafts.mjs
       - run: node scripts/check-mountain-ten-batch-drafts.mjs
