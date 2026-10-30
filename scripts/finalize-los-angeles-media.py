@@ -2,7 +2,7 @@
 """Incremental Los Angeles #58 photo gate: add Malibu CC panorama, 3 Bel-Air,
 3 Beverly Hills, replace the accidental resized Shutters image duplicate.
 Only source-identified photos, all hotel publisher rights explicitly UNVERIFIED.
-Never re-run or overwrite existing eight landscape / sunset-tower images.
+Preserve all previous city and property photos, only add missing images.
 """
 import requests, io, re, hashlib, pathlib, json
 from PIL import Image,ImageOps,ImageStat
