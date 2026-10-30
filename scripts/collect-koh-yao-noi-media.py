@@ -96,7 +96,21 @@ def score(p):
   if token in v:s+=3
  return s
 def hotel(group):
- key,name,url=group;pool=extract(url)
+ key,name,url=group
+ if key=='six-senses':
+  # Three exact image identities from the Six Senses official Yao Noi gallery (media.sixsenses.com).
+  pool=[
+   ('https://media.sixsenses.com/B60H3R33/at/bfqgnx5ksxm76hj9rk6b3r6/The_View_Bedroom.jpg?fit=crop&height=900&width=1440','The View official villa bedroom',url),
+   ('https://media.sixsenses.com/B60H3R33/at/jptqs2jq8sq2w3mqxjmqm5z/4_The_View_Phang_Nga_Bay.jpg?fit=crop&height=900&width=1440','The View private villa panorama',url),
+   ('https://media.sixsenses.com/B60H3R33/at/37xpx73j563c4fzhwq6bjc5/yao-noi-thailand_The_View_Lazy_Trampoline_Net.jpg?fit=crop&height=900&width=1440','The View outdoor hammock over bay',url)
+  ]
+ elif key=='treehouse':
+  pool=[
+   ('https://www.treehouse-villas.com/wp-content/uploads/2025/11/06-TreeHouse-Villas_Hero-shot.jpg','Official TreeHouse Villas architecture in canopy',url),
+   ('https://www.treehouse-villas.com/wp-content/uploads/2025/01/TreeHouse-Villas_Landscape-5.jpg','TreeHouse Villas authentic island resort landscape',url),
+   ('https://www.treehouse-villas.com/wp-content/uploads/2025/01/TreeHouse-Villa-11.jpg','TreeHouse Villa room interior',url)
+  ]
+ else:pool=extract(url)
  if key=='nine-hornbills':pool+=extract('https://koyao.com/9hornbills')
  if key=='treehouse':pool+=extract('https://www.treehouse-villas.com/koh-yao/rooms-and-villas/')
  if key=='cape-kudu':pool+=extract('https://www.capekuduhotel.com/accommodation/')
