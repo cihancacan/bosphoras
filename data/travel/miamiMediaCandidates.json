@@ -3,7 +3,7 @@
   "scope": "owner_noindex_preview",
   "note": "Hotel publisher reuse rights unverified; review each photo, no production indexing",
   "cityCount": 9,
-  "hotelCount": 11,
+  "hotelCount": 12,
   "destinationScenes": [
     {
       "originalSize": [
@@ -548,6 +548,34 @@
       "frCaption": "Four Seasons Hotel at The Surf Club – piscine et cabanes",
       "enCaption": "Four Seasons Hotel at The Surf Club – poolside retreat",
       "originalAlt": "Four Seasons Hotel at The Surf Club – poolside retreat"
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "surf-club",
+      "property": "Four Seasons Hotel at The Surf Club",
+      "localPath": "/images/travel/miami-premium/surf-club/view-3.webp",
+      "originalSize": [
+        1024,
+        576
+      ],
+      "outputSize": [
+        1024,
+        576
+      ],
+      "bytes": 51124,
+      "sha256": "5e2cb7d41a145cb4d13c674d1f823f74937a65ad1b197e068a18e21867f05f5f",
+      "sourcePage": "https://www.fivestaralliance.com/gallery/four-seasons-hotel-at-the-surf-club",
+      "downloadUrl": "https://five-star-alliance.s3.amazonaws.com/styles/juicebox_large/public/field/image/nodes/2018/46388/0_guest-room-with-views-G.jpg?itok=PH7xGa08",
+      "credit": "Four Seasons Hotel at The Surf Club – Five Star Alliance named hotel photo; creator rights unverified",
+      "license": "Publisher photo; private owner Preview only. Commercial republication rights not independently granted.",
+      "licenseUrl": "https://www.fivestaralliance.com/gallery/four-seasons-hotel-at-the-surf-club",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "Four Seasons Hotel at The Surf Club – chambre et vue (catégorie à confirmer)",
+      "enCaption": "Four Seasons Hotel at The Surf Club – guest room with views (category to confirm)",
+      "originalAlt": "Guest Room at Four Seasons Hotel at The Surf Club, Surfside, FL"
     }
   ]
 }
