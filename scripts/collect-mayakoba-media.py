@@ -79,7 +79,7 @@ def score(item,hotel=None):
  if hotel:
   s+=10 if any(w in low for w in hotel.replace('-',' ').split()) else 0
   if 'hotel gallery' in low:s+=30
-  if propertyKey in ('banyan-tree','fairmont') and 'mayakoba' in low:s+=8
+  if hotel in ('banyan-tree','fairmont') and 'mayakoba' in low:s+=8
   if 'resort features' in low:s+=8
   if 'hotel banner' in low:s+=12
  else:
