@@ -17,7 +17,7 @@ assert len(data['hotels'])==11
 assert sorted({x['propertyKey'] for x in data['hotels']})==['edition','faena','setai','surf-club']
 assert len([x for x in data['hotels'] if x['propertyKey']=='surf-club'])==2
 assert not DEST.exists()
-r=requests.get(URL,headers={'User-Agent':'Mozilla/5.0 (Bosphoras editorial owner preview)'},timeout=32)
+r=requests.get(URL,headers={'User-Agent':'Mozilla/5.0 (Bosphoras editorial owner preview)'},timeout=38)
 r.raise_for_status()
 im=Image.open(io.BytesIO(r.content))
 im=ImageOps.exif_transpose(im).convert('RGB')
