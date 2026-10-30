@@ -38,7 +38,7 @@ change('landscape nav','{city.slug===\'bangkok\' && <a href="#panoramas-bangkok"
 change('attribution hero',
  '{city.slug===\'bangkok\' && hero && <p className="mt-4 text-xs leading-6 text-[#f3dfb9]">',
  '''{city.slug==='chiang-mai' && hero && <p className="mt-4 text-xs leading-6 text-[#f3dfb9]">{fr?'Photo : ':'Photograph: '}<a href={hero.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.author}</a>{' · '}<a href={hero.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.license}</a>{' · '}{fr?'WebP redimensionnée':'Resized WebP'}</p>}
-        {city.slug==='bangkok' && hero && <p className="mt-4 text-xs leading-6 text-[#f3dfb9]'>''')
+        {city.slug==='bangkok' && hero && <p className="mt-4 text-xs leading-6 text-[#f3dfb9]">''')
 panel="""    {city.slug==='chiang-mai' && <section id="panoramas-chiang-mai" className="scroll-mt-24 bg-[#e5ece8] py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#8e7045]">{fr?'Chiang Mai · temples et paysages du Nord':'Chiang Mai · northern landscapes and temples'}</p>
