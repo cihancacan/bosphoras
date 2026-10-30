@@ -15,3 +15,7 @@ Bangkok added as the 63rd complete original bilingual luxury travel editorial de
 - `/en/travel/hotels/bangkok`
 
 **Verification:** GitHub editorial CI https://github.com/cihancacan/bosphoras/actions/runs/41111032387 ; Vercel build and route validation must be checked after deploy. This is a single deliberately requested Preview, never production.
+
+## Second build — JSX syntax fixed
+
+The previous Preview build was unsuccessful due to one incorrect quotation mark in a Krabi photo attribution JSX element shared by all guides. That error is corrected in commit `91644a9eda6b9eb215d2385fe095fa6e9bec91b4`. The new Bangkok hero uses the genuinely photographed Wat Arun panorama, with the Bangkok skyline secondary; no production deployment is permitted. The GitHub full regression was restarted at https://github.com/cihancacan/bosphoras/actions/runs/41111973638. Any build/CI errors must be corrected before describing the Preview as READY.
