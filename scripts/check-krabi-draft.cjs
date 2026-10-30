@@ -6,12 +6,12 @@ const {krabiDraftGuide:guide}=require('../data/travel/krabiDraftGuide.ts');
 const {krabiDraftFaq:faq}=require('../data/travel/krabiDraftFaq.ts');
 const registry=fs.readFileSync('data/travel/featuredCityGuides.ts','utf8');
 const catalogue=fs.readFileSync('data/travel/destinations.ts','utf8');
-const slugs=[...catalogue.matchAll(/slug:\\s*["']([^"']+)["']/g)].map(x=>x[1]);
+const slugs=[...catalogue.matchAll(/slug:\s*["']([^"']+)["']/g)].map(x=>x[1]);
 assert.equal(slugs.length,88);assert.equal(new Set(slugs).size,88);
 assert(slugs.includes('krabi'),'Krabi missing from preserved 88 geography');
 assert(!registry.includes("'krabi'"),'Do not register or publish Krabi before full photo QA');
 assert(registry.includes("'san-miguel-de-allende'"),'Retain premium #60');
-assert.match(catalogue,/approvedDestinationSlugs[^;]*new Set\\(\\[\\]\\)/);
+assert.match(catalogue,/approvedDestinationSlugs[^;]*new Set\(\[\]\)/);
 assert.equal(guide.slug,'krabi');assert.equal(guide.areas.length,5);assert.equal(guide.experiences.length,5);
 assert.equal(guide.hotels.length,4);assert.deepEqual(guide.hotels.map(x=>x.name),[
  'Rayavadee','Phulay Bay, a Ritz-Carlton Reserve','Banyan Tree Krabi','The Tubkaak Krabi Boutique Resort'
@@ -55,8 +55,8 @@ for(const p of [...m.destinationScenes,...m.hotels]){
   assert(guide.hotels.some(h=>h.name===p.property));
  }else{
   assert.equal(p.rightsEvidenceType,'wikimedia_license_metadata');
-  assert.match(p.sourcePage,/^https:\/\/commons\\.wikimedia\\.org\/wiki\/File:/);
-  assert.match(p.license,/^(CC BY(?:-SA)? [234]\\.0|CC0|Public domain)/i);
+  assert.match(p.sourcePage,/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/);
+  assert.match(p.license,/^(CC BY(?:-SA)? [234]\.0|CC0|Public domain)/i);
  }
 }
 console.log('KRABI_DRAFT_PASSED: 88 geographic slugs retained, 60 live editorial guides retained; candidates '+m.cityCount+'/9 landscape + '+m.hotelCount+'/12 hotel, visual QA pending.');
