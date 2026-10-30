@@ -1,0 +1,37 @@
+name: Travel Mayakoba — distinct Banyan gallery and source-hash integrity
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: [scripts/finalize-mayakoba-banyan.py, .github/workflows/travel-mayakoba-banyan-final.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: travel-mayakoba-banyan-final
+  cancel-in-progress: false
+jobs:
+  finalize-banyan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12'
+      - run: python -u scripts/finalize-mayakoba-banyan.py
+      - name: Save only the corrected photo and attribution manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- public/images/travel/mayakoba-premium/banyan-tree/view-2.webp data/travel/mayakobaMediaCandidates.json
+          git commit -m 'assets(travel): 21 unique source-identified Mayakoba photos, no duplicate Banyan aerial [skip ci]'
+          for i in 1 2 3 4 5; do
+            git fetch origin feature/luxury-travel-seo-destinations-20261012
+            git rebase origin/feature/luxury-travel-seo-destinations-20261012
+            if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then exit 0; fi
+            sleep 3
+          done
+          exit 1
