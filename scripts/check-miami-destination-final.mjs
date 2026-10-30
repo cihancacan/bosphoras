@@ -11,8 +11,8 @@ assert(catalogue.includes('approvedDestinationSlugs: ReadonlySet<string> = new S
 const regs=read('data/travel/featuredCityGuides.ts');
 const union=regs.match(/export type FeaturedCitySlug\s*=\s*([\s\S]*?);/)?.[1]||'';
 const featured=[...union.matchAll(/'([^']+)'/g)].map(x=>x[1]);
-assert.equal(featured.length,57,'Miami is the 57th premium editorial destination');
-assert.equal(new Set(featured).size,57);
+assert(featured.length>=57,'Miami and the preceding premium destinations remain registered');
+assert.equal(new Set(featured).size,featured.length,'All premium featured slugs remain unique');
 assert(regs.includes("'miami': miamiGuide")||regs.includes("miami: miamiGuide"),'Missing Miami featured registry');
 assert(regs.includes("'new-york': newYorkGuide"),'New York must remain featured');
 assert(regs.includes('istanbul: istanbulGuide'),'Istanbul must remain featured');
@@ -70,4 +70,4 @@ for(const str of ['isMiamiDestination','miamiDraftFaq','miamiSchemaSafePhotos','
                   'Miami: 4 Luxury Hotels','robots: { index: ready'])
  assert(travel.includes(str),'SEO/JSON-LD/noindex missing '+str);
 assert(!read('data/travel/miamiPremiumEditorial.ts').includes('commercialRightsCleared===true'),'Hotel images cannot falsely assert public licensing');
-console.log('MIAMI_PASSED: 57 curated guides, 88 geographic slugs preserved, 9 unique CC Miami landscapes, 12 source-labelled hotel photos, 8+8 FR/EN FAQs, image provenance/rights gates, metadata and noindex.');
+console.log('MIAMI_PASSED: original Miami and newer curated guides, 88 geographic slugs preserved, 9 unique CC Miami landscapes, 12 source-labelled hotel photos, 8+8 FR/EN FAQs, image provenance/rights gates, metadata and noindex.');
