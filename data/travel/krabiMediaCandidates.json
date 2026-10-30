@@ -3,7 +3,7 @@
   "scope": "protected_private_review_only",
   "rightsNotice": "Official hotel images have no commercial publication licence. Wikimedia reuse must retain author/licence/attribution and any share-alike obligations.",
   "cityCount": 9,
-  "hotelCount": 11,
+  "hotelCount": 12,
   "destinationScenes": [
     {
       "originalSize": [
@@ -261,59 +261,88 @@
   "hotels": [
     {
       "originalSize": [
-        2917,
-        2917
+        932,
+        623
       ],
       "outputSize": [
-        1200,
-        1200
+        932,
+        623
       ],
-      "bytes": 58344,
-      "sha256": "35aebc4f21347af62c14ef122b3171679e4abb68eb57b291636f2b88f583085b",
-      "pixelFingerprint": "3d4b7be5ce1fe15567d47a196aeca6ad0aa204ce704f3fa9abae37359f3e46fb",
+      "bytes": 192672,
+      "sha256": "4135d75d36404289634db39b961221f52869e9e5ccaee61d0ee2bb19392bb2c0",
+      "pixelFingerprint": "236da267f9fc21f0fcce4bd38e052f1700cd55c73f01506d8afa848f4cf86fc1",
       "key": "view-1",
       "propertyKey": "rayavadee",
       "property": "Rayavadee",
       "localPath": "/images/travel/krabi-premium/rayavadee/view-1.webp",
-      "sourcePage": "https://www.rayavadee.com/en/",
-      "downloadUrl": "https://www.rayavadee.com/en/images/lhw.png",
+      "sourcePage": "https://www.rayavadee.com/en/room-pool-pavillion.php",
+      "downloadUrl": "https://rayavadee.com/en/images/accommodation/pool-pavillion/pic1.jpg",
       "credit": "Rayavadee official photo publisher; photographer not identified",
       "license": "Official publisher photo. Commercial republication rights NOT independently cleared.",
-      "licenseUrl": "https://www.rayavadee.com/en/",
+      "licenseUrl": "https://www.rayavadee.com/en/room-pool-pavillion.php",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "",
+      "originalAlt": "Pool Pavilion outdoor architecture with private pool",
       "frCaption": "Rayavadee · photographie officielle à examiner",
       "enCaption": "Rayavadee · official publisher photograph pending individual review"
     },
     {
       "originalSize": [
-        3000,
-        3750
+        932,
+        623
       ],
       "outputSize": [
-        960,
-        1200
+        932,
+        623
       ],
-      "bytes": 82568,
-      "sha256": "42469c4b74b608dcb1f4f72f97f491fec100b1d11a14633acb2faefb0bfb0a14",
-      "pixelFingerprint": "ea8d00097487cd34b80a0fbc1f164613e24b0117fe5f88f22d9c0e5efbe314f0",
+      "bytes": 92666,
+      "sha256": "dd1a1f6e94f2fc7f7e67e66c0e0325b9135880454e0d1aa6fa97a3f98fa96f5a",
+      "pixelFingerprint": "374c114cfa3653a0c3eab024397a4eaf77b9c29627c2fa5f6e668262a74b90df",
       "key": "view-2",
       "propertyKey": "rayavadee",
       "property": "Rayavadee",
       "localPath": "/images/travel/krabi-premium/rayavadee/view-2.webp",
-      "sourcePage": "https://www.rayavadee.com/en/",
-      "downloadUrl": "https://www.rayavadee.com/en/pdf/RYD-Email-System-Improvements.png",
+      "sourcePage": "https://www.rayavadee.com/zh/room-spa-pavillion.php",
+      "downloadUrl": "https://www.rayavadee.com/zh/images/accommodation/spa-pavillion/pic2.jpg",
       "credit": "Rayavadee official photo publisher; photographer not identified",
       "license": "Official publisher photo. Commercial republication rights NOT independently cleared.",
-      "licenseUrl": "https://www.rayavadee.com/en/",
+      "licenseUrl": "https://www.rayavadee.com/zh/room-spa-pavillion.php",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "",
+      "originalAlt": "Spa Pavilion room interior",
+      "frCaption": "Rayavadee · photographie officielle à examiner",
+      "enCaption": "Rayavadee · official publisher photograph pending individual review"
+    },
+    {
+      "originalSize": [
+        932,
+        623
+      ],
+      "outputSize": [
+        932,
+        623
+      ],
+      "bytes": 60288,
+      "sha256": "250c92d8b6bf41d2b79d489ec92c08f4d428cefbaa8062f94bcdcf42e34c4d57",
+      "pixelFingerprint": "0b63963f9dbdfaca988446fade2813383fd61003d5d1756244739bfef1eeaf87",
+      "key": "view-3",
+      "propertyKey": "rayavadee",
+      "property": "Rayavadee",
+      "localPath": "/images/travel/krabi-premium/rayavadee/view-3.webp",
+      "sourcePage": "https://www.rayavadee.com/en/room-terrace-pavillion.php",
+      "downloadUrl": "https://www.rayavadee.com/en/images/accommodation/terrace-pavillion/pic4.jpg",
+      "credit": "Rayavadee official photo publisher; photographer not identified",
+      "license": "Official publisher photo. Commercial republication rights NOT independently cleared.",
+      "licenseUrl": "https://www.rayavadee.com/en/room-terrace-pavillion.php",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Terrace Pavilion bedroom interior",
       "frCaption": "Rayavadee · photographie officielle à examiner",
       "enCaption": "Rayavadee · official publisher photograph pending individual review"
     },
