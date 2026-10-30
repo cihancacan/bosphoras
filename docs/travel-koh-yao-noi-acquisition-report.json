@@ -1,11 +1,11 @@
 {
   "scenes": 9,
-  "hotels": 9,
+  "hotels": 12,
   "hotelStats": [
     {
       "property": "Six Senses Yao Noi",
-      "candidates": 0,
-      "downloaded": 0,
+      "candidates": 3,
+      "downloaded": 3,
       "errors": []
     },
     {
@@ -24,11 +24,9 @@
     },
     {
       "property": "TreeHouse Villas Koh Yao",
-      "candidates": 124,
+      "candidates": 127,
       "downloaded": 3,
       "errors": [
-        "too small",
-        "too small",
         "too small",
         "too small",
         "too small",

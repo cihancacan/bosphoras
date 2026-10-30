@@ -3,7 +3,7 @@
   "scope": "protected_owner_preview_only",
   "rightsNotice": "Hotel images have no independent commercial redistribution authorisation.",
   "cityCount": 9,
-  "hotelCount": 9,
+  "hotelCount": 12,
   "destinationScenes": [
     {
       "originalSize": [
@@ -252,6 +252,93 @@
   "hotels": [
     {
       "originalSize": [
+        1440,
+        900
+      ],
+      "outputSize": [
+        1440,
+        900
+      ],
+      "bytes": 133036,
+      "sha256": "ec1386f4d4b5cb0a52db2ba6e4c1ce9eec1c8e8b446adb727013cc264cbcf58c",
+      "pixelFingerprint": "c84c7a78625cc465a84f8144468feefe4e5c3e40407c97d0b970516d6d744ccd",
+      "key": "view-1",
+      "propertyKey": "six-senses",
+      "property": "Six Senses Yao Noi",
+      "localPath": "/images/travel/koh-yao-noi-premium/six-senses/view-1.webp",
+      "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/yao-noi/",
+      "downloadUrl": "https://media.sixsenses.com/B60H3R33/at/bfqgnx5ksxm76hj9rk6b3r6/The_View_Bedroom.jpg?fit=crop&height=900&width=1440",
+      "credit": "Six Senses Yao Noi official publisher; photographer rights not independently verified",
+      "license": "Publisher image, no independent commercial republication rights.",
+      "licenseUrl": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/yao-noi/",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "The View official villa bedroom",
+      "frCaption": "Six Senses Yao Noi · vue officielle à identifier précisément",
+      "enCaption": "Six Senses Yao Noi · official property view pending manual review"
+    },
+    {
+      "originalSize": [
+        1440,
+        900
+      ],
+      "outputSize": [
+        1440,
+        900
+      ],
+      "bytes": 121850,
+      "sha256": "d3c05ecf18d71d698cc6aadb8d3f3070fd0023b63f2959c55df47e33b148fc4a",
+      "pixelFingerprint": "df16b216fd3f014017d8b416d97675db170315c3c9b959900fd669899bcc239e",
+      "key": "view-2",
+      "propertyKey": "six-senses",
+      "property": "Six Senses Yao Noi",
+      "localPath": "/images/travel/koh-yao-noi-premium/six-senses/view-2.webp",
+      "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/yao-noi/",
+      "downloadUrl": "https://media.sixsenses.com/B60H3R33/at/jptqs2jq8sq2w3mqxjmqm5z/4_The_View_Phang_Nga_Bay.jpg?fit=crop&height=900&width=1440",
+      "credit": "Six Senses Yao Noi official publisher; photographer rights not independently verified",
+      "license": "Publisher image, no independent commercial republication rights.",
+      "licenseUrl": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/yao-noi/",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "The View private villa panorama",
+      "frCaption": "Six Senses Yao Noi · vue officielle à identifier précisément",
+      "enCaption": "Six Senses Yao Noi · official property view pending manual review"
+    },
+    {
+      "originalSize": [
+        1440,
+        900
+      ],
+      "outputSize": [
+        1440,
+        900
+      ],
+      "bytes": 121130,
+      "sha256": "bae65e10bb868ea52532a22783dad5690e049ff1e62b9518b47ada6f98c64df4",
+      "pixelFingerprint": "f0a78bb6f1573087244524c6fdf51a00dd3a0f2355e4fe1119d5077a98b1f4e3",
+      "key": "view-3",
+      "propertyKey": "six-senses",
+      "property": "Six Senses Yao Noi",
+      "localPath": "/images/travel/koh-yao-noi-premium/six-senses/view-3.webp",
+      "sourcePage": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/yao-noi/",
+      "downloadUrl": "https://media.sixsenses.com/B60H3R33/at/37xpx73j563c4fzhwq6bjc5/yao-noi-thailand_The_View_Lazy_Trampoline_Net.jpg?fit=crop&height=900&width=1440",
+      "credit": "Six Senses Yao Noi official publisher; photographer rights not independently verified",
+      "license": "Publisher image, no independent commercial republication rights.",
+      "licenseUrl": "https://www.sixsenses.com/en/hotels-resorts/asia-the-pacific/thailand/yao-noi/",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "The View outdoor hammock over bay",
+      "frCaption": "Six Senses Yao Noi · vue officielle à identifier précisément",
+      "enCaption": "Six Senses Yao Noi · official property view pending manual review"
+    },
+    {
+      "originalSize": [
         1740,
         880
       ],
@@ -339,22 +426,22 @@
     },
     {
       "originalSize": [
-        1080,
-        1080
+        2016,
+        1134
       ],
       "outputSize": [
-        1080,
-        1080
+        1600,
+        900
       ],
-      "bytes": 19562,
-      "sha256": "1513ea48d64cdfbb2477ee715a70078b55f81ee4ea4cd05c1994ee11ec6b335a",
-      "pixelFingerprint": "c7b1908efa7fa2fe6766daee497e4025d328b8ccad4c01907313ba907fe691df",
+      "bytes": 346064,
+      "sha256": "558b4684a5aee015238f8dbaaaac32931d509a73e397e2916fe098d8ccbb4b79",
+      "pixelFingerprint": "e10e1c924c501a610e24bb04519671299dfa37ec4227282d813f75ef00659e8f",
       "key": "view-1",
       "propertyKey": "treehouse",
       "property": "TreeHouse Villas Koh Yao",
       "localPath": "/images/travel/koh-yao-noi-premium/treehouse/view-1.webp",
       "sourcePage": "https://www.treehouse-villas.com/",
-      "downloadUrl": "https://www.treehouse-villas.com/wp-content/uploads/2021/12/Green-Hotel.png",
+      "downloadUrl": "https://www.treehouse-villas.com/wp-content/uploads/2025/01/TreeHouse-Villas_Landscape-5.jpg",
       "credit": "TreeHouse Villas Koh Yao official publisher; photographer rights not independently verified",
       "license": "Publisher image, no independent commercial republication rights.",
       "licenseUrl": "https://www.treehouse-villas.com/",
@@ -362,36 +449,7 @@
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "",
-      "frCaption": "TreeHouse Villas Koh Yao · vue officielle à identifier précisément",
-      "enCaption": "TreeHouse Villas Koh Yao · official property view pending manual review"
-    },
-    {
-      "originalSize": [
-        1024,
-        1024
-      ],
-      "outputSize": [
-        1024,
-        1024
-      ],
-      "bytes": 29760,
-      "sha256": "1492dc33d71de09b96f1c0f9c75c8af2ba64b4f2927b7e347114293ad303ae7e",
-      "pixelFingerprint": "b977e0e263d7a90462225318bc0778253adaead24a20c67d5b10ea0b57e83876",
-      "key": "view-2",
-      "propertyKey": "treehouse",
-      "property": "TreeHouse Villas Koh Yao",
-      "localPath": "/images/travel/koh-yao-noi-premium/treehouse/view-2.webp",
-      "sourcePage": "https://www.treehouse-villas.com/",
-      "downloadUrl": "https://www.treehouse-villas.com/wp-content/uploads/2021/12/Green-Hotel-1024x1024.png",
-      "credit": "TreeHouse Villas Koh Yao official publisher; photographer rights not independently verified",
-      "license": "Publisher image, no independent commercial republication rights.",
-      "licenseUrl": "https://www.treehouse-villas.com/",
-      "commercialRightsCleared": false,
-      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "embedded publisher photograph",
+      "originalAlt": "TreeHouse Villas authentic island resort landscape",
       "frCaption": "TreeHouse Villas Koh Yao · vue officielle à identifier précisément",
       "enCaption": "TreeHouse Villas Koh Yao · official property view pending manual review"
     },
@@ -407,10 +465,10 @@
       "bytes": 209504,
       "sha256": "e1da7c71f76f898ffc5fd13fee75848739e8dcbb083424c3ca879fa30095397b",
       "pixelFingerprint": "d44defc16526d51f5c3f07bc3d01c6b39e8e43b0c20b2160f9dbd8d26e672a35",
-      "key": "view-3",
+      "key": "view-2",
       "propertyKey": "treehouse",
       "property": "TreeHouse Villas Koh Yao",
-      "localPath": "/images/travel/koh-yao-noi-premium/treehouse/view-3.webp",
+      "localPath": "/images/travel/koh-yao-noi-premium/treehouse/view-2.webp",
       "sourcePage": "https://www.treehouse-villas.com/",
       "downloadUrl": "https://www.treehouse-villas.com/wp-content/uploads/2025/01/TreeHouse-Villa-11.jpg",
       "credit": "TreeHouse Villas Koh Yao official publisher; photographer rights not independently verified",
@@ -420,7 +478,36 @@
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "Home 3",
+      "originalAlt": "TreeHouse Villa room interior",
+      "frCaption": "TreeHouse Villas Koh Yao · vue officielle à identifier précisément",
+      "enCaption": "TreeHouse Villas Koh Yao · official property view pending manual review"
+    },
+    {
+      "originalSize": [
+        1080,
+        1080
+      ],
+      "outputSize": [
+        1080,
+        1080
+      ],
+      "bytes": 33292,
+      "sha256": "4922198b9c2ce6c34817ff3b48fc835802af095f3318f34e5466d956c2316e09",
+      "pixelFingerprint": "b5ff20f69fe1a41a9052372454dd1fd1cf4b1e1c63e277f21f4deaa91395ca42",
+      "key": "view-3",
+      "propertyKey": "treehouse",
+      "property": "TreeHouse Villas Koh Yao",
+      "localPath": "/images/travel/koh-yao-noi-premium/treehouse/view-3.webp",
+      "sourcePage": "https://www.treehouse-villas.com/koh-yao/rooms-and-villas/",
+      "downloadUrl": "https://www.treehouse-villas.com/wp-content/uploads/2021/12/Green-Hotel.png",
+      "credit": "TreeHouse Villas Koh Yao official publisher; photographer rights not independently verified",
+      "license": "Publisher image, no independent commercial republication rights.",
+      "licenseUrl": "https://www.treehouse-villas.com/koh-yao/rooms-and-villas/",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
       "frCaption": "TreeHouse Villas Koh Yao · vue officielle à identifier précisément",
       "enCaption": "TreeHouse Villas Koh Yao · official property view pending manual review"
     },
