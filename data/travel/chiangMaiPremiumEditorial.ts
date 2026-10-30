@@ -46,3 +46,5 @@ export const chiangMaiSchemaSafePhotos=new Set(
 export const chiangMaiPhotoLicenses:Record<string,{name:string;url:string}>=Object.fromEntries(
  manifest.destinationScenes.filter(approvedChiangMaiScene).map(p=>[p.localPath,{name:p.license,url:p.licenseUrl}])
 );
+
+// Independent visual review completed: 9 Creative Commons local scenes and 12 authentic hotel publisher photographs; no public image-rights grant.
