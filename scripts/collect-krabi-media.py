@@ -147,6 +147,24 @@ def hotel_entries(group):
    print("SAVED",slug,key,props["bytes"],alt[:70],flush=True)
   except Exception as e:errors.append(str(e)[:130])
  return unique,{"property":name,"found":len(candidates),"downloaded":len(unique),"errors":errors[:6]}
+def make_contact_sheet(items):
+ """Private-research overview; it is NOT a human visual approval."""
+ from PIL import ImageDraw
+ cols=3;cell_w=400;cell_h=285;rows=(len(items)+cols-1)//cols
+ if not rows:return
+ out=Image.new("RGB",(cols*cell_w,rows*cell_h),(247,245,240))
+ draw=ImageDraw.Draw(out)
+ for idx,p in enumerate(items):
+  f=pathlib.Path("public"+p["localPath"])
+  if not f.exists():continue
+  frame=Image.open(f).convert("RGB");frame.thumbnail((384,230),Image.Resampling.LANCZOS)
+  x=(idx%cols)*cell_w+8;y=(idx//cols)*cell_h+4
+  out.paste(frame,(x,y))
+  draw.text((x,y+234),str(idx+1)+" "+p.get("property", "Krabi")+" | "+p.get("key",""),fill=(30,35,35))
+  draw.text((x,y+251),p.get("sourcePage","")[:45],fill=(80,90,90))
+ target=pathlib.Path("docs/travel-krabi-contact-sheet.jpg")
+ out.save(target,"JPEG",quality=79)
+
 def main():
  scene=[];errors=[]
  for row in COMMONS:
@@ -160,6 +178,7 @@ def main():
   pics,report=hotel_entries(h)
   hotels.extend(pics);results.append(report)
  candidates=scene+hotels
+ make_contact_sheet(candidates)
  manifest={"destination":"krabi","scope":"protected_private_review_only","rightsNotice":"Official hotel images have no commercial publication licence. Wikimedia reuse must retain author/licence/attribution and any share-alike obligations.",
   "cityCount":len(scene),"hotelCount":len(hotels),"destinationScenes":scene,"hotels":hotels,
   "visualQA":"PENDING_MANUAL_REVIEW_NO_IMAGES_APPROVED"}
