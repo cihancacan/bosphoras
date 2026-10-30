@@ -3,7 +3,7 @@
   "scope": "owner_noindex_preview",
   "note": "Hotel publisher reuse rights unverified; review each photo, no production indexing",
   "cityCount": 9,
-  "hotelCount": 4,
+  "hotelCount": 11,
   "destinationScenes": [
     {
       "originalSize": [
@@ -243,6 +243,90 @@
   "hotels": [
     {
       "originalSize": [
+        1707,
+        1707
+      ],
+      "outputSize": [
+        1450,
+        1450
+      ],
+      "bytes": 470504,
+      "sha256": "d101d2d9ec688c0323a30c0cfd626f9123a21b85bf3270a8b382d8460a1b6a11",
+      "key": "view-1",
+      "propertyKey": "setai",
+      "property": "The Setai, Miami Beach",
+      "localPath": "/images/travel/miami-premium/setai/view-1.webp",
+      "sourcePage": "https://guide.michelin.com/us/en/article/travel/all-the-michelin-key-hotels-in-miami-best-hotels",
+      "downloadUrl": "https://static.prod.r53.tablethotels.com/media/ecs/global/michelin-articles/FloridaKeys/Setai.jpg",
+      "credit": "The Setai, Miami Beach – source-identified hotel photograph; creator rights not independently verified",
+      "license": "Publisher photograph, private owner Preview only; no independent commercial republication licence",
+      "licenseUrl": "https://guide.michelin.com/us/en/article/travel/all-the-michelin-key-hotels-in-miami-best-hotels",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "The Setai Miami Beach – piscines au cœur de l’hôtel",
+      "enCaption": "The Setai Miami Beach – poolside hotel setting",
+      "originalAlt": "The Setai Miami Beach – poolside hotel setting"
+    },
+    {
+      "originalSize": [
+        1024,
+        768
+      ],
+      "outputSize": [
+        1024,
+        768
+      ],
+      "bytes": 72122,
+      "sha256": "3f79119bf49af45730c480c9795077507f8e6c7150d2e4a25aac4acf6e83a180",
+      "key": "view-2",
+      "propertyKey": "setai",
+      "property": "The Setai, Miami Beach",
+      "localPath": "/images/travel/miami-premium/setai/view-2.webp",
+      "sourcePage": "https://www.cntraveler.com/stories/2014-05-25/miami-beach-florida-weekend-getaway",
+      "downloadUrl": "https://media.cntraveler.com/photos/53daa669dcd5888e145c2b9a/master/w_1600%2Cc_limit/miami-setai-ocean-suites.jpg",
+      "credit": "The Setai, Miami Beach – source-identified hotel photograph; creator rights not independently verified",
+      "license": "Publisher photograph, private owner Preview only; no independent commercial republication licence",
+      "licenseUrl": "https://www.cntraveler.com/stories/2014-05-25/miami-beach-florida-weekend-getaway",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "The Setai Miami Beach – intérieur d’une suite vue océan",
+      "enCaption": "The Setai Miami Beach – ocean-view suite interior",
+      "originalAlt": "The Setai Miami Beach – ocean-view suite interior"
+    },
+    {
+      "originalSize": [
+        1440,
+        900
+      ],
+      "outputSize": [
+        1440,
+        900
+      ],
+      "bytes": 214578,
+      "sha256": "dd6fddb0f83ab20dc5aaf517ab33c21634e97a62cdfc7bd9f89d7cfa81a2b608",
+      "key": "view-3",
+      "propertyKey": "setai",
+      "property": "The Setai, Miami Beach",
+      "localPath": "/images/travel/miami-premium/setai/view-3.webp",
+      "sourcePage": "https://www.miamiandbeaches.com/l/hotels/the-setai/3548",
+      "downloadUrl": "https://assets.simpleviewinc.com/simpleview/image/upload/c_fit%2Cw_1440%2Ch_900/crm/miamifl/The-Setai5-1440x9000-49b198955056a36_49b199ec-5056-a36a-0b15aef8669a5e09.jpg",
+      "credit": "The Setai, Miami Beach – source-identified hotel photograph; creator rights not independently verified",
+      "license": "Publisher photograph, private owner Preview only; no independent commercial republication licence",
+      "licenseUrl": "https://www.miamiandbeaches.com/l/hotels/the-setai/3548",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "The Setai Miami Beach – lobby de l’immeuble Art déco",
+      "enCaption": "The Setai Miami Beach – Art Deco lobby",
+      "originalAlt": "The Setai Miami Beach – Art Deco lobby"
+    },
+    {
+      "originalSize": [
         1800,
         800
       ],
@@ -327,31 +411,143 @@
     },
     {
       "originalSize": [
-        1280,
-        547
+        1870,
+        1201
       ],
       "outputSize": [
-        1280,
-        547
+        1800,
+        1156
       ],
-      "bytes": 85622,
-      "sha256": "cb50dc9dc17c87f4910f52516434c1755985e43bd9ddf2fc5553f269f2e53c2d",
+      "bytes": 214166,
+      "sha256": "ffee8ee5ee85518afc3ca4488f80447201b1077695dec3dfc284ce3a4807f8d8",
       "key": "view-1",
       "propertyKey": "edition",
       "property": "The Miami Beach EDITION",
       "localPath": "/images/travel/miami-premium/edition/view-1.webp",
-      "sourcePage": "https://www.editionhotels.com/miami-beach/gallery/",
-      "downloadUrl": "https://www.editionhotels.com/wp-content/uploads/2020/03/Miami-Beach-Destinatino-e1582756335578.jpg",
-      "credit": "The Miami Beach EDITION — original hotel publisher (creator licence unverified)",
-      "license": "Hotel or local tourism bureau publisher media; private owner preview only, commercial rights not independently cleared.",
-      "licenseUrl": "https://www.editionhotels.com/miami-beach/gallery/",
-      "status": "source_identified_private_preview",
-      "commercialRightsCleared": false,
+      "sourcePage": "https://www.editionhotels.com/miami-beach/rooms-and-suites/premiere-bungalow-ocean-view-suite/",
+      "downloadUrl": "https://www.editionhotels.com/wp-content/uploads/2016/06/Premier-Bungalow-Oceanfront-Suite-Day-1870x1400-e1472069401986.jpg",
+      "credit": "The Miami Beach EDITION – source-identified hotel photograph; creator rights not independently verified",
+      "license": "Publisher photograph, private owner Preview only; no independent commercial republication licence",
+      "licenseUrl": "https://www.editionhotels.com/miami-beach/rooms-and-suites/premiere-bungalow-ocean-view-suite/",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
       "visuallyVerified": false,
-      "frCaption": "The Miami Beach EDITION · photographie de l’établissement (vérification visuelle requise)",
-      "enCaption": "The Miami Beach EDITION · property publisher photograph (visual approval pending)",
-      "originalAlt": "North America "
+      "frCaption": "The Miami Beach EDITION – terrasse d’un bungalow avec bassin privé",
+      "enCaption": "The Miami Beach EDITION – premier ocean-view bungalow balcony and private plunge pool",
+      "originalAlt": "The Miami Beach EDITION – premier ocean-view bungalow balcony and private plunge pool"
+    },
+    {
+      "originalSize": [
+        1870,
+        1210
+      ],
+      "outputSize": [
+        1800,
+        1165
+      ],
+      "bytes": 157702,
+      "sha256": "599c5b4755a2a01eeb81f21673ea9b4f48acf46010535adc3ca98c17ca9843f7",
+      "key": "view-2",
+      "propertyKey": "edition",
+      "property": "The Miami Beach EDITION",
+      "localPath": "/images/travel/miami-premium/edition/view-2.webp",
+      "sourcePage": "https://www.editionhotels.com/miami-beach/rooms-and-suites/bungalow-oceanview/",
+      "downloadUrl": "https://www.editionhotels.com/wp-content/uploads/2016/06/Bungalow-Oceanfront-King-1870x1400-e1472067561731.jpg",
+      "credit": "The Miami Beach EDITION – source-identified hotel photograph; creator rights not independently verified",
+      "license": "Publisher photograph, private owner Preview only; no independent commercial republication licence",
+      "licenseUrl": "https://www.editionhotels.com/miami-beach/rooms-and-suites/bungalow-oceanview/",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "The Miami Beach EDITION – bungalow face à l’océan",
+      "enCaption": "The Miami Beach EDITION – oceanfront bungalow interior",
+      "originalAlt": "The Miami Beach EDITION – oceanfront bungalow interior"
+    },
+    {
+      "originalSize": [
+        1280,
+        960
+      ],
+      "outputSize": [
+        1280,
+        960
+      ],
+      "bytes": 319628,
+      "sha256": "3c6298cbcccbad605f05a099cb5c56bc4f38f14dab5bdc9b1e9d64b72009d7bd",
+      "key": "view-3",
+      "propertyKey": "edition",
+      "property": "The Miami Beach EDITION",
+      "localPath": "/images/travel/miami-premium/edition/view-3.webp",
+      "sourcePage": "https://www.cntraveller.com/gallery/best-hotels-miami",
+      "downloadUrl": "https://media.cntraveller.com/photos/669f89a2be8009057012761a/4%3A3/w_1280%2Cc_limit/Pool2-MiamiBeachEdition-Florida-CRHotel.jpg",
+      "credit": "The Miami Beach EDITION – source-identified hotel photograph; creator rights not independently verified",
+      "license": "Publisher photograph, private owner Preview only; no independent commercial republication licence",
+      "licenseUrl": "https://www.cntraveller.com/gallery/best-hotels-miami",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "The Miami Beach EDITION – piscine de l’hôtel",
+      "enCaption": "The Miami Beach EDITION – hotel swimming pool",
+      "originalAlt": "The Miami Beach EDITION – hotel swimming pool"
+    },
+    {
+      "originalSize": [
+        1280,
+        960
+      ],
+      "outputSize": [
+        1280,
+        960
+      ],
+      "bytes": 223770,
+      "sha256": "a775869ea28b0379861ef67959212e41369de3d8cf07a9afe99af3ee91aeac92",
+      "key": "view-1",
+      "propertyKey": "surf-club",
+      "property": "Four Seasons Hotel at The Surf Club",
+      "localPath": "/images/travel/miami-premium/surf-club/view-1.webp",
+      "sourcePage": "https://www.cntraveller.com/gallery/best-hotels-miami",
+      "downloadUrl": "https://media.cntraveller.com/photos/657045612ab89eb336b95ac3/4%3A3/w_1280%2Cc_limit/17024_press_surfclub_3-12-17_02-copy.jpg",
+      "credit": "Four Seasons Hotel at The Surf Club – source-identified hotel photograph; creator rights not independently verified",
+      "license": "Publisher photograph, private owner Preview only; no independent commercial republication licence",
+      "licenseUrl": "https://www.cntraveller.com/gallery/best-hotels-miami",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "Four Seasons Hotel at The Surf Club – piscine à l’ombre et architecture historique",
+      "enCaption": "Four Seasons Hotel at The Surf Club – shaded pool and historic architecture",
+      "originalAlt": "Four Seasons Hotel at The Surf Club – shaded pool and historic architecture"
+    },
+    {
+      "originalSize": [
+        2000,
+        2000
+      ],
+      "outputSize": [
+        1450,
+        1450
+      ],
+      "bytes": 535730,
+      "sha256": "112cb6a77535340f7cea1c4121305942bd6154d6f5c450f9bf7656a6a929e0e4",
+      "key": "view-2",
+      "propertyKey": "surf-club",
+      "property": "Four Seasons Hotel at The Surf Club",
+      "localPath": "/images/travel/miami-premium/surf-club/view-2.webp",
+      "sourcePage": "https://www.postcard.inc/places/four-seasons-hotel-at-the-surf-club-surfside-florida-surfside",
+      "downloadUrl": "https://photos.hotelbeds.com/giata/original/68/681685/681685a_hb_a_006.jpg",
+      "credit": "Four Seasons Hotel at The Surf Club – source-identified hotel photograph; creator rights not independently verified",
+      "license": "Publisher photograph, private owner Preview only; no independent commercial republication licence",
+      "licenseUrl": "https://www.postcard.inc/places/four-seasons-hotel-at-the-surf-club-surfside-florida-surfside",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "Four Seasons Hotel at The Surf Club – piscine et cabanes",
+      "enCaption": "Four Seasons Hotel at The Surf Club – poolside retreat",
+      "originalAlt": "Four Seasons Hotel at The Surf Club – poolside retreat"
     }
   ]
 }
