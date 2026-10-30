@@ -26,7 +26,8 @@ CITY=[
 HOTELS=[
  ('mandarin-oriental','Mandarin Oriental, Bangkok',[
  'https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/gallery',
- 'https://www.mandarinoriental.com/en/bangkok/chao-phraya-river']),
+ 'https://www.mandarinoriental.com/en/bangkok/chao-phraya-river',
+ 'https://press.mandarinoriental.com/gallery/?lang=eng']),
  ('capella','Capella Bangkok',[
  'https://capellahotels.com/en/capella-bangkok',
  'https://capellahotels.com/en/capella-bangkok/accommodation']),
@@ -57,10 +58,20 @@ def save(url,path):
  if len(raw)<17000:raise ValueError('invalid output size')
  path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(raw)
  return {'originalSize':original,'outputSize':list(im.size),'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),'pixelFingerprint':fingerprint}
+EXACT_SCENES={
+ 'scene-1':'Bangkok along the Chao Phraya and Wat Arun (15068293155).jpg',
+ 'scene-2':'Wat Arun across Chao Phraya River.jpg',
+ 'scene-4':'Bangkok charoen krung road IMG 6782.JPG',
+ 'scene-6':'Lumphini Park Bangkok, as seen from BTS (2026) - IMG 02.jpg',
+ 'scene-9':'Bangkok skyline view from Mahanakhon Tower.jpg'
+}
 def commons(q):
  key,query,fr,en=q
  args={'action':'query','generator':'search','gsrsearch':'filetype:bitmap '+query,
  'gsrnamespace':6,'gsrlimit':22,'prop':'imageinfo','iiprop':'url|extmetadata|size','iiurlwidth':1600,'format':'json'}
+ if key in EXACT_SCENES:
+  args={'action':'query','prop':'imageinfo','format':'json','iiprop':'url|extmetadata|size',
+       'iiurlwidth':1600,'titles':'File:'+EXACT_SCENES[key]}
  data=req('https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode(args)).json()
  pages=list(data.get('query',{}).get('pages',{}).values())
  pages.sort(key=lambda p:p.get('index',999))
@@ -92,6 +103,10 @@ def harvest(page):
  try:r=req(page)
  except Exception as e:print('HOTEL_PAGE_FAILURE',page,str(e)[:130],flush=True);return []
  soup=BeautifulSoup(r.text,'html.parser');seen=set();result=[]
+ if 'mandarinoriental.com' in page:
+  assets=[(n.get('src') or n.get('data-src') or n.get('srcset') or '')[:250] for n in soup.find_all(['img','source'])]
+  urls=re.findall(r'https?://[^"\\\\\s<>]+?\\.(?:jpg|jpeg|webp|png)(?:\\?[^"\\\\\s<>]*)?',r.text,re.I)
+  print('DEBUG_MANDARIN_PAGE',page,'imgCount',len(assets),'firstNodes',assets[:6],'firstUrlFiles',urls[:8],flush=True)
  def add(raw,alt):
   if not raw or raw.startswith('data:'):return
   raw=str(raw).replace('\\/','/')
