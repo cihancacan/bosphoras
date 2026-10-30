@@ -1,0 +1,44 @@
+name: Travel Mayakoba — accurate 2026 hotels and private image source collection
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: [scripts/collect-mayakoba-media.py, .github/workflows/travel-mayakoba-media.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: travel-mayakoba-photo-acquisition
+  cancel-in-progress: false
+jobs:
+  media-source-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -m py_compile scripts/collect-mayakoba-media.py
+      - run: python -u scripts/collect-mayakoba-media.py
+      - name: Store private source report and image assets without building on Vercel
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- data/travel/mayakobaMediaCandidates.json
+          if [ -d public/images/travel/mayakoba-premium ]; then
+            git add -A -- public/images/travel/mayakoba-premium
+          fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): Mayakoba attributed local owner preview image candidates [skip ci]'
+            for i in 1 2 3 4 5; do
+              git fetch origin feature/luxury-travel-seo-destinations-20261012
+              git rebase origin/feature/luxury-travel-seo-destinations-20261012
+              if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then exit 0; fi
+              sleep 2
+            done
+            exit 1
+          fi
