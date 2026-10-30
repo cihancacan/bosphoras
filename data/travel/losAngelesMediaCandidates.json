@@ -2,8 +2,8 @@
   "destination": "los-angeles",
   "scope": "private_owner_noindex_preview",
   "note": "Publisher photos do not have independently cleared commercial reuse rights",
-  "cityCount": 8,
-  "hotelCount": 6,
+  "cityCount": 9,
+  "hotelCount": 12,
   "destinationScenes": [
     {
       "originalSize": [
@@ -212,6 +212,32 @@
       "frCaption": "Les canaux de Venice à Los Angeles",
       "enCaption": "The Venice Canals in Los Angeles",
       "commonsTitle": "File:Houses on Grand Canal, Venice Canal Historic District, Venice, California.JPG"
+    },
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ],
+      "bytes": 276040,
+      "sha256": "67d9d5ffbbcdec487c10c243e90e319b38b4595fc95606c4b7b00bdd290cb6b1",
+      "key": "scene-8",
+      "localPath": "/images/travel/los-angeles-premium/destination/scene-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Malibu_beach_and_pier_2012_05.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Malibu_beach_and_pier_2012_05.jpg/1920px-Malibu_beach_and_pier_2012_05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Photograph by Mike Peel (www.mikepeel.net).",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "status": "source_identified_private_preview",
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "frCaption": "Malibu, la plage et son embarcadère face au Pacifique",
+      "enCaption": "Malibu beach and pier on the Pacific coast",
+      "commonsTitle": "File:Malibu beach and pier 2012 05.jpg"
     }
   ],
   "hotels": [
@@ -329,31 +355,31 @@
     },
     {
       "originalSize": [
-        1000,
-        667
+        1024,
+        637
       ],
       "outputSize": [
-        1000,
-        667
+        1024,
+        637
       ],
-      "bytes": 83698,
-      "sha256": "9404a4e0ffee407399d2ac93bc8deb2131238615dac203cb4312c6763e8a0a82",
+      "bytes": 60730,
+      "sha256": "0ce4f440679b5a703a3ff14c5a7ce78132d759b857372faa29f296329bf5e385",
       "key": "view-2",
       "propertyKey": "shutters",
       "property": "Shutters on the Beach",
       "localPath": "/images/travel/los-angeles-premium/shutters/view-2.webp",
       "sourcePage": "https://www.shuttersonthebeach.com/accommodations/",
-      "downloadUrl": "https://s3.amazonaws.com/uploads.edwardthomasco.com/uploads/sites/3/2025/02/10111056/Santa-Monica-Suite-Bedroom-1000x667.jpg",
-      "credit": "Shutters on the Beach - official publisher photograph (creator licence not independently cleared)",
-      "license": "Publisher photo; private owner Preview only, no independent commercial republication licence",
+      "downloadUrl": "https://s3.amazonaws.com/uploads.edwardthomasco.com/uploads/sites/3/2025/02/11105040/Shutters_PacificSuites_745_Bedroom-0041-Edit_v5-1024x637.jpg",
+      "credit": "Shutters on the Beach — named publisher photo, creator reuse permission unverified",
+      "license": "Publisher image, private owner Preview ONLY. No independent commercial republication permission.",
       "licenseUrl": "https://www.shuttersonthebeach.com/accommodations/",
-      "status": "source_identified_private_preview",
       "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
       "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
       "visuallyVerified": false,
-      "frCaption": "Shutters on the Beach - photographie officielle, identification de la chambre à confirmer",
-      "enCaption": "Shutters on the Beach - official hotel photograph; individual room identity pending review",
-      "originalAlt": "Cozy bedroom with blue tones, wooden bed, soft lighting, and coastal decor for a relaxing vibe."
+      "frCaption": "Chambre de la Pacific View Suite à Shutters on the Beach",
+      "enCaption": "Pacific View Suite bedroom at Shutters on the Beach",
+      "originalAlt": "Pacific View Suite bedroom at Shutters on the Beach"
     },
     {
       "originalSize": [
@@ -382,6 +408,174 @@
       "frCaption": "Shutters on the Beach - photographie officielle, identification de la chambre à confirmer",
       "enCaption": "Shutters on the Beach - official hotel photograph; individual room identity pending review",
       "originalAlt": "A serene bedroom with a bamboo bed, blue accents, and a private balcony with lush greenery."
+    },
+    {
+      "originalSize": [
+        2560,
+        1464
+      ],
+      "outputSize": [
+        1800,
+        1029
+      ],
+      "bytes": 451380,
+      "sha256": "1c5ca23553ce200c70856dc4a9cf6d533385c2d92744f54e4e8976f3642ae2d1",
+      "key": "view-1",
+      "propertyKey": "bel-air",
+      "property": "Hotel Bel-Air",
+      "localPath": "/images/travel/los-angeles-premium/bel-air/view-1.webp",
+      "sourcePage": "https://www.dorchestercollection.com/los-angeles/hotel-bel-air/rooms-suites/presidential-suite",
+      "downloadUrl": "https://www.dorchestercollection.com/media/gwwhwhxl/hba_presidential_suite_pool_l_0904_master_v1-16x7_hr.jpg?height=1464&rmode=crop&width=2560",
+      "credit": "Hotel Bel-Air — named publisher photo, creator reuse permission unverified",
+      "license": "Publisher image, private owner Preview ONLY. No independent commercial republication permission.",
+      "licenseUrl": "https://www.dorchestercollection.com/los-angeles/hotel-bel-air/rooms-suites/presidential-suite",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "Piscine privée de la Presidential Suite à Hotel Bel-Air",
+      "enCaption": "Presidential Suite private pool at Hotel Bel-Air",
+      "originalAlt": "Presidential Suite private pool at Hotel Bel-Air"
+    },
+    {
+      "originalSize": [
+        1920,
+        1441
+      ],
+      "outputSize": [
+        1800,
+        1351
+      ],
+      "bytes": 596052,
+      "sha256": "083fc003358fd525c00044bb78766b691476980959b7bf86cc866f3b6cc46550",
+      "key": "view-2",
+      "propertyKey": "bel-air",
+      "property": "Hotel Bel-Air",
+      "localPath": "/images/travel/los-angeles-premium/bel-air/view-2.webp",
+      "sourcePage": "https://www.dorchestercollection.com/los-angeles/hotel-bel-air/rooms-suites/grace-kelly-suite",
+      "downloadUrl": "https://www.dorchestercollection.com/media/szufzpva/hba_grace_kelly_suite_174_042_v2_rgb_hr.jpg",
+      "credit": "Hotel Bel-Air — named publisher photo, creator reuse permission unverified",
+      "license": "Publisher image, private owner Preview ONLY. No independent commercial republication permission.",
+      "licenseUrl": "https://www.dorchestercollection.com/los-angeles/hotel-bel-air/rooms-suites/grace-kelly-suite",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "Terrasse privée de la Grace Kelly Suite à Hotel Bel-Air",
+      "enCaption": "Grace Kelly Suite private terrace at Hotel Bel-Air",
+      "originalAlt": "Grace Kelly Suite private terrace at Hotel Bel-Air"
+    },
+    {
+      "originalSize": [
+        2560,
+        1464
+      ],
+      "outputSize": [
+        1800,
+        1029
+      ],
+      "bytes": 383642,
+      "sha256": "8ad8fbac5576ee8c41f3e07f8de0078eb36f1c78bb2d1ab11f6d5f1f174a759d",
+      "key": "view-3",
+      "propertyKey": "bel-air",
+      "property": "Hotel Bel-Air",
+      "localPath": "/images/travel/los-angeles-premium/bel-air/view-3.webp",
+      "sourcePage": "https://www.dorchestercollection.com/los-angeles/hotel-bel-air/rooms-suites/stone-canyon-suite",
+      "downloadUrl": "https://www.dorchestercollection.com/media/exvd4c02/stone-canyon-suite-3.jpg?height=1464&rmode=crop&width=2560",
+      "credit": "Hotel Bel-Air — named publisher photo, creator reuse permission unverified",
+      "license": "Publisher image, private owner Preview ONLY. No independent commercial republication permission.",
+      "licenseUrl": "https://www.dorchestercollection.com/los-angeles/hotel-bel-air/rooms-suites/stone-canyon-suite",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "Petit bassin de la Stone Canyon Suite à Hotel Bel-Air",
+      "enCaption": "Stone Canyon Suite plunge pool at Hotel Bel-Air",
+      "originalAlt": "Stone Canyon Suite plunge pool at Hotel Bel-Air"
+    },
+    {
+      "originalSize": [
+        1072,
+        1072
+      ],
+      "outputSize": [
+        1072,
+        1072
+      ],
+      "bytes": 177386,
+      "sha256": "b783929553d8647af740d1faadeabb914c1bbf178cd645f4d7405f0e18fb820e",
+      "key": "view-1",
+      "propertyKey": "beverly-hills",
+      "property": "The Beverly Hills Hotel",
+      "localPath": "/images/travel/los-angeles-premium/beverly-hills/view-1.webp",
+      "sourcePage": "https://guide.michelin.com/en/hotels-stays/los-angeles-area/the-beverly-hills-hotel-5896",
+      "downloadUrl": "https://static.prod.r53.tablethotels.com/media/hotels/slideshow_images_staged/large/1346717.jpg",
+      "credit": "The Beverly Hills Hotel — named publisher photo, creator reuse permission unverified",
+      "license": "Publisher image, private owner Preview ONLY. No independent commercial republication permission.",
+      "licenseUrl": "https://guide.michelin.com/en/hotels-stays/los-angeles-area/the-beverly-hills-hotel-5896",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "Piscine et cabanes emblématiques du Beverly Hills Hotel",
+      "enCaption": "The Beverly Hills Hotel iconic pool and cabanas",
+      "originalAlt": "The Beverly Hills Hotel iconic pool and cabanas"
+    },
+    {
+      "originalSize": [
+        1200,
+        675
+      ],
+      "outputSize": [
+        1200,
+        675
+      ],
+      "bytes": 177908,
+      "sha256": "5062fd7cdb10c4ca2a9b17743c22e65922f1fbc3a98e4bf2c86d359b2da195b9",
+      "key": "view-2",
+      "propertyKey": "beverly-hills",
+      "property": "The Beverly Hills Hotel",
+      "localPath": "/images/travel/los-angeles-premium/beverly-hills/view-2.webp",
+      "sourcePage": "https://www.townandcountrymag.com/leisure/travel-guide/a30795376/beverly-hills-hotel-bungalows/",
+      "downloadUrl": "https://hips.hearstapps.com/hmg-prod/images/bungalow-5-patio-1581014249.jpg?crop=1xw%3A0.7499566974595843xh%3Bcenter%2Ctop&resize=1200%3A%2A",
+      "credit": "The Beverly Hills Hotel — named publisher photo, creator reuse permission unverified",
+      "license": "Publisher image, private owner Preview ONLY. No independent commercial republication permission.",
+      "licenseUrl": "https://www.townandcountrymag.com/leisure/travel-guide/a30795376/beverly-hills-hotel-bungalows/",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "Patio avec bassin du Bungalow 5 au Beverly Hills Hotel",
+      "enCaption": "The Beverly Hills Hotel Bungalow 5 patio and plunge pool",
+      "originalAlt": "The Beverly Hills Hotel Bungalow 5 patio and plunge pool"
+    },
+    {
+      "originalSize": [
+        6856,
+        4451
+      ],
+      "outputSize": [
+        1800,
+        1169
+      ],
+      "bytes": 291398,
+      "sha256": "c1d72cc7fc3f3d6daf6055e0019e174f3391c5a132e17ada2bef693d98b7c4c1",
+      "key": "view-3",
+      "propertyKey": "beverly-hills",
+      "property": "The Beverly Hills Hotel",
+      "localPath": "/images/travel/los-angeles-premium/beverly-hills/view-3.webp",
+      "sourcePage": "https://www.thearcadiaonline.com/magazine-exclusive-the-beverly-hills-hotel/",
+      "downloadUrl": "https://arcadia-media.nyc3.digitaloceanspaces.com/2016/09/Red_Carpet-Entrance.jpg",
+      "credit": "The Beverly Hills Hotel — named publisher photo, creator reuse permission unverified",
+      "license": "Publisher image, private owner Preview ONLY. No independent commercial republication permission.",
+      "licenseUrl": "https://www.thearcadiaonline.com/magazine-exclusive-the-beverly-hills-hotel/",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "Entrée et tapis rouge du Beverly Hills Hotel",
+      "enCaption": "The Beverly Hills Hotel red carpet entrance",
+      "originalAlt": "The Beverly Hills Hotel red carpet entrance"
     }
   ]
 }
