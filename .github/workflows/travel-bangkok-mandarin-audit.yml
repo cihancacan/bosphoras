@@ -1,0 +1,31 @@
+name: Bangkok Mandarin Oriental exact photo audit
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: ['scripts/research-bangkok-mandarin-photos.py','.github/workflows/travel-bangkok-mandarin-audit.yml']
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -u scripts/research-bangkok-mandarin-photos.py
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/travel-bangkok-mandarin-candidates.jpg docs/travel-bangkok-mandarin-candidates.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'docs(travel): Mandarin actual images contact sheet from official gallery [skip ci]'
+          for i in 1 2 3 4 5; do
+            git fetch origin feature/luxury-travel-seo-destinations-20261012
+            git rebase origin/feature/luxury-travel-seo-destinations-20261012
+            if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then exit 0; fi
+            sleep 2
+          done
+          exit 1
