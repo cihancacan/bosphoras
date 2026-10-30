@@ -1,0 +1,35 @@
+name: Chiang Mai — exact 21 photo source recovery
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: ['scripts/finalize-chiang-mai-sources.py','.github/workflows/travel-chiang-mai-final-media.yml']
+  workflow_dispatch:
+permissions: {contents: write}
+concurrency:
+  group: travel-chiang-mai-final-media
+  cancel-in-progress: false
+jobs:
+  complete-source-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 16
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -u scripts/finalize-chiang-mai-sources.py
+      - run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- public/images/travel/chiang-mai-premium data/travel/chiangMaiMediaCandidates.json docs/travel-chiang-mai-contact-sheet.jpg docs/travel-chiang-mai-acquisition-report.json
+          git diff --cached --quiet && exit 0
+          git commit -m 'assets(travel): replace weak Chiang Mai sources with 21 original identified photographs [skip ci]'
+          for i in 1 2 3 4 5; do
+            git fetch origin feature/luxury-travel-seo-destinations-20261012
+            git rebase origin/feature/luxury-travel-seo-destinations-20261012
+            if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then exit 0; fi
+            sleep 2
+          done
+          exit 1
