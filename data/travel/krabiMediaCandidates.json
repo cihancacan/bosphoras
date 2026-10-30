@@ -94,32 +94,32 @@
     },
     {
       "originalSize": [
-        1600,
-        1200
+        960,
+        720
       ],
       "outputSize": [
-        1600,
-        1200
+        960,
+        720
       ],
-      "bytes": 334662,
-      "sha256": "6c8130dde2a3c99800aaa0562986ee5f6b7394d9b25836a260123c1fbae38e41",
-      "pixelFingerprint": "75aa8d740f17957d7fa96062998a49be1bca87a55d20c4134970c3a33b735042",
+      "bytes": 269294,
+      "sha256": "4b911b89b20c4f14a6d4b4743c3ceb20e2534a6c15d74094f0472f060e5c1973",
+      "pixelFingerprint": "23c9be6123694486f437e929219f511cfbf8a1c15a886068c43fcad03b6377c0",
       "key": "scene-4",
       "localPath": "/images/travel/krabi-premium/destination/scene-4.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Beach_at_Koh_Kwang_(4463354227).jpg",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/Beach_at_Koh_Kwang_%284463354227%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Beach_at_Koh_Kwang_(4464119684).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Beach_at_Koh_Kwang_%284464119684%29.jpg/960px-Beach_at_Koh_Kwang_%284464119684%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "credit": "Caitriana Nicholson from 北京 ~ Beijing, 中国 ~ China",
       "license": "CC BY-SA 2.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "Beach at Koh Kwang (4463354227).jpg",
-      "frCaption": "Koh Kwang, littoral de Klong Muang par temps couvert : photographie écartée du guide premium",
-      "enCaption": "Koh Kwang coastline under overcast skies; rejected for premium display",
-      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP",
-      "visualReviewNote": "VUE NON APPROUVÉE : littoral sombre et peu lisible; remplacer par une meilleure photo précisément localisée."
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
+      "originalAlt": "Beach at Koh Kwang (4464119684).jpg",
+      "frCaption": "Koh Kwang · palmiers et côte de Klong Muang face à la mer d’Andaman",
+      "enCaption": "Koh Kwang · palms on Klong Muang's Andaman coastline",
+      "croppedOrResized": "Resized to maximum 1600 x 1200 and converted to WebP",
+      "visualReviewNote": "Retenue après comparaison visuelle manuelle de neuf photos Klong Muang : palmiers et mer identifiables ; CC BY-SA 2.0, auteur crédité, WebP redimensionnée"
     },
     {
       "originalSize": [
@@ -629,7 +629,7 @@
       "visualReviewNote": "Source hôtel officielle et propriété exacte reconnues sur planche; aperçu privé seulement, droits commerciaux NON vérifiés; ne pas publier en production."
     }
   ],
-  "visualQA": "INTERNAL_20_OF_21_APPROVED_KLONG_MUANG_REPLACEMENT_REQUIRED",
-  "internalReviewedPhotoCount": 20,
+  "visualQA": "INTERNAL_21_OF_21_PHOTO_REVIEW_PASSED_NOT_PUBLIC_LICENSED",
+  "internalReviewedPhotoCount": 21,
   "publicUseApproved": false
 }

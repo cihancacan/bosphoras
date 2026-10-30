@@ -43,6 +43,8 @@
     }
   ],
   "errors": [],
-  "allImagesVisuallyApproved": false,
-  "publicUseApproved": false
+  "allImagesVisuallyApproved": true,
+  "publicUseApproved": false,
+  "independentCommercialHotelPhotoRights": false,
+  "finalPhotoReview": "21/21 source and visual QA; official hotel source photos remain limited to protected preview"
 }
