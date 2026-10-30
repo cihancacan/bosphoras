@@ -1,0 +1,42 @@
+name: Travel Los Angeles — final hotel photographs and Malibu
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: [scripts/finalize-los-angeles-media.py, .github/workflows/travel-los-angeles-final.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: travel-los-angeles-final
+  cancel-in-progress: false
+jobs:
+  finish-images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12'
+      - name: Add validated Getty/Malibu and each separately sourced hotel image
+        run: python -u scripts/finalize-los-angeles-media.py
+      - run: node scripts/check-travel-catalogue.mjs
+      - name: Commit only reviewed Los Angeles image files to feature branch
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- public/images/travel/los-angeles-premium data/travel/losAngelesMediaCandidates.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): Los Angeles individual hotel photos and Malibu source manifesto [skip ci]'
+            for i in 1 2 3 4 5; do
+              git fetch origin feature/luxury-travel-seo-destinations-20261012
+              git rebase origin/feature/luxury-travel-seo-destinations-20261012
+              if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then exit 0; fi
+              sleep 3
+            done
+            exit 1
+          fi
