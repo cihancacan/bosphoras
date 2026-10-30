@@ -18,8 +18,8 @@ export const chiangMaiDraftFaq = {
       "a": "Non selon sa politique publiée : Raya Heritage indique accueillir les enfants à partir de six ans. Pour une famille avec de jeunes enfants, comparer 137 Pillars, Anantara ou Four Seasons selon la configuration et les conditions propres aux chambres."
     },
     {
-      "q": "Quelle suite de Raya Heritage possède une vraie piscine privée ?",
-      "a": "La Kraam Pool Suite propose un bassin de 3 × 7 mètres et une terrasse. Les suites Rin Terrace et Huen Bon sont des catégories différentes ; elles ne doivent pas être présentées comme identiques ni garanties avec piscine privée."
+      "q": "Quels hôtels de Chiang Mai proposent une véritable suite avec piscine privée ?",
+      "a": "Chez 137 Pillars House, la Louis Leonowens Suite comprend une piscine privée. À Anantara, la Lanna Pool Suite dispose d'un bassin chauffé ; à Raya Heritage, la Kraam Pool Suite possède un bassin de 3 × 7 m. Four Seasons propose aussi des villas à piscine selon la catégorie. Cette caractéristique ne s'applique pas aux autres chambres."
     },
     {
       "q": "Quand éviter Chiang Mai à cause des fumées et particules fines ?",
@@ -52,8 +52,8 @@ export const chiangMaiDraftFaq = {
       "a": "The hotel's published rules say children must be aged six or older. Families with younger children should compare suitable categories at 137 Pillars House, Anantara or Four Seasons and confirm each operator's actual occupancy requirements."
     },
     {
-      "q": "Which Raya Heritage category has an actual private pool?",
-      "a": "The Kraam Pool Suite includes a 3 by 7 metre private pool and terrace. Rin Terrace and Huen Bon suites are distinct categories and must not be assumed to have private pools."
+      "q": "Which Chiang Mai hotels genuinely offer private-pool suites or villas?",
+      "a": "At 137 Pillars House the Louis Leonowens Suite has a private pool. Anantara's Lanna Pool Suite has a heated plunge pool, while Raya Heritage's Kraam Pool Suite offers a 3 by 7 metre pool. Four Seasons also has selected pool villas. None of these details should be applied to every room."
     },
     {
       "q": "When is Chiang Mai's seasonal smoke and PM2.5 most concerning?",
