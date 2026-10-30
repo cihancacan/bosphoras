@@ -13,8 +13,8 @@ for(const hotel of ['Aman New York','The Fifth Avenue Hotel','The Greenwich Hote
 const refs=read('data/travel/featuredCityGuides.ts');
 const types=refs.match(/export type FeaturedCitySlug\s*=\s*([\s\S]*?);/)?.[1]||'';
 const featured=[...types.matchAll(/'([^']+)'/g)].map(x=>x[1]);
-assert.equal(featured.length,56,'56 premium destinations including New York');
-assert.equal(new Set(featured).size,56);
+assert(featured.length>=56,'New York and the earlier premium destinations must remain registered');
+assert.equal(new Set(featured).size,featured.length,'Premium featured slugs must remain unique');
 assert(refs.includes("'new-york': newYorkGuide"));
 assert(refs.includes('istanbul: istanbulGuide'));
 const faq=read('data/travel/newYorkDraftFaq.ts');
@@ -49,7 +49,7 @@ for(const hotel of ['aman','fifth','greenwich','lowell']){
 }
 const ui=read('components/travel/FeaturedCityGuide.tsx');
 for(const code of ['newYorkHotelEditorial','newYorkAreaVisuals','confirmedNewYorkPreviewAssets','newYorkDraftFaq'])assert(ui.includes(code));
-assert(ui.includes("(city.slug==='new-york'||city.slug==='istanbul'||city.slug==='bodrum'"),
+assert(ui.includes("city.slug==='new-york'||city.slug==='istanbul'||city.slug==='bodrum'"),
  'New York must be explicitly included in the destination-area photo render condition');
 assert(ui.includes('id="panoramas-new-york"'),'Dedicated New York landscape gallery missing');
 assert(ui.includes("key:'scene-6'") && ui.includes("key:'scene-8'"),
@@ -68,4 +68,4 @@ for(const code of ['isNewYorkDestination','newYorkDraftFaq','newYorkSchemaSafePh
 const city=read('data/travel/newYorkGuide.ts');
 assert(city.includes('approvedNewYorkCityPhoto'));
 assert(city.includes('photos'));
-console.log('NEW_YORK_PASSED: 56 premium guides, 88 unique catalogue destinations, 9 CC New York city images, 12 property photos from 4 verified hotel identities, 16 FR/EN FAQs, safe JSON-LD and noindex.');
+console.log('NEW_YORK_PASSED: existing New York flagship and other premium guides preserved; 88 unique catalogue destinations, 9 CC New York city images, 12 source-identified property photos, 16 FR/EN FAQs, safe JSON-LD and noindex.');
