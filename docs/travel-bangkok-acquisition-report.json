@@ -1,6 +1,6 @@
 {
-  "cityCount": 9,
-  "hotelCount": 12,
+  "cityCount": 8,
+  "hotelCount": 9,
   "expected": [
     9,
     12
@@ -8,8 +8,8 @@
   "hotels": [
     {
       "property": "Mandarin Oriental, Bangkok",
-      "found": 275,
-      "downloaded": 3,
+      "found": 0,
+      "downloaded": 0,
       "errors": []
     },
     {
@@ -23,7 +23,6 @@
       "found": 221,
       "downloaded": 3,
       "errors": [
-        "undersized media [768, 512]",
         "undersized media [768, 512]"
       ]
     },
@@ -32,11 +31,18 @@
       "found": 600,
       "downloaded": 3,
       "errors": [
-        "undersized media [774, 774]"
+        "undersized media [431, 567]",
+        "undersized media [431, 567]",
+        "undersized media [431, 266]"
       ]
     }
   ],
-  "errors": [],
+  "errors": [
+    {
+      "key": "scene-5",
+      "reason": "no licensed source for Bangkok Dusit Ananta Samakhom Throne Hall; []"
+    }
+  ],
   "visuallyApproved": false,
   "commercialHotelPhotoRights": false
 }

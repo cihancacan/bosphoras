@@ -2,33 +2,33 @@
   "destination": "bangkok",
   "scope": "protected_owner_preview_only",
   "rightsNotice": "No hotel publisher photo may be redistributed commercially without separate authorisation.",
-  "cityCount": 9,
-  "hotelCount": 12,
+  "cityCount": 8,
+  "hotelCount": 9,
   "destinationScenes": [
     {
       "originalSize": [
         1920,
-        1440
+        1213
       ],
       "outputSize": [
         1600,
-        1200
+        1011
       ],
-      "bytes": 451662,
-      "sha256": "ae2c8d5675f2281ead972dcd2e3384d4a721e4d29b34fbc510ed2f813f2b9d3c",
-      "pixelFingerprint": "a463cbde0b9f6befddeff295ff7b6dfc2a941d49b1dd6d1791684d306ac76a0f",
+      "bytes": 191322,
+      "sha256": "b19e0f3b97474c63acdcb58faedd3dee96e295cd7766061631f49d7a8f755e8c",
+      "pixelFingerprint": "5f75ab57de2de885b3c6e6ca34582bc2db2f020df0b5e634163c8d422bc16502",
       "key": "scene-1",
       "localPath": "/images/travel/bangkok-premium/destination/scene-1.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bangkok_along_the_Chao_Phraya_and_Wat_Arun_(15068293155).jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Bangkok_along_the_Chao_Phraya_and_Wat_Arun_%2815068293155%29.jpg/1920px-Bangkok_along_the_Chao_Phraya_and_Wat_Arun_%2815068293155%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "credit": "Clay Gilliland",
-      "license": "CC BY-SA 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:View_of_Wat_Arun.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/View_of_Wat_Arun.jpg/1920px-View_of_Wat_Arun.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "Bangkok along the Chao Phraya and Wat Arun (15068293155).jpg",
+      "originalAlt": "View of Wat Arun.jpg",
       "frCaption": "Wat Arun et le Chao Phraya au coucher du soleil",
       "enCaption": "Wat Arun and Chao Phraya at sunset",
       "searchIntent": "Bangkok Chao Phraya river Wat Arun night panorama"
@@ -116,34 +116,6 @@
       "frCaption": "Charoen Krung et la ville ancienne",
       "enCaption": "Charoen Krung and Bangkok old town",
       "searchIntent": "Charoen Krung Bangkok old town street"
-    },
-    {
-      "originalSize": [
-        1920,
-        1279
-      ],
-      "outputSize": [
-        1600,
-        1066
-      ],
-      "bytes": 413496,
-      "sha256": "4417faba12308b44949b78a45a7c8ecf06d7a09adbb15d6dfbfa95cd87753627",
-      "pixelFingerprint": "3f515fde275b305fdfa300367bc6e4e26dd78b2471bf9899babd4f14b0c2002c",
-      "key": "scene-5",
-      "localPath": "/images/travel/bangkok-premium/destination/scene-5.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bangkok_The_Ananta_Samakhom_Throne_Hall_1.jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Bangkok_The_Ananta_Samakhom_Throne_Hall_1.jpg/1920px-Bangkok_The_Ananta_Samakhom_Throne_Hall_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "credit": "Mr.Peerapong Prasutr",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "rightsEvidenceType": "wikimedia_license_metadata",
-      "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "Bangkok The Ananta Samakhom Throne Hall 1.jpg",
-      "frCaption": "Dusit et son architecture historique",
-      "enCaption": "Dusit and its historic architecture",
-      "searchIntent": "Bangkok Dusit Ananta Samakhom Throne Hall"
     },
     {
       "originalSize": [
@@ -261,93 +233,6 @@
   "hotels": [
     {
       "originalSize": [
-        937,
-        1406
-      ],
-      "outputSize": [
-        800,
-        1200
-      ],
-      "bytes": 227470,
-      "sha256": "61f361d6ac82bc7835d65bd217538bc60050e5fa85e829f5310c2238345f63e9",
-      "pixelFingerprint": "a6fa5eeb8f22df0f88188db9213cf609d3f9212f7474206bd1668421c6140afb",
-      "key": "view-1",
-      "propertyKey": "mandarin-oriental",
-      "property": "Mandarin Oriental, Bangkok",
-      "localPath": "/images/travel/bangkok-premium/mandarin-oriental/view-1.webp",
-      "sourcePage": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/gallery",
-      "downloadUrl": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/vk6FpY1PsMaj16VQHQXm.jpg",
-      "credit": "Mandarin Oriental, Bangkok official publisher; photographer not separately identified",
-      "license": "Official publisher image; independent commercial republication rights not verified.",
-      "licenseUrl": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/gallery",
-      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
-      "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "",
-      "frCaption": "Mandarin Oriental, Bangkok · photographie officielle à contrôler",
-      "enCaption": "Mandarin Oriental, Bangkok · official property photograph for individual review"
-    },
-    {
-      "originalSize": [
-        2500,
-        1406
-      ],
-      "outputSize": [
-        1600,
-        900
-      ],
-      "bytes": 240214,
-      "sha256": "5841c463e12b12749d0c6edf790c241186f69d7e182c849880b67f52a2ebe30f",
-      "pixelFingerprint": "604d7a5cef46defef6fe202ce6f78eb94857412f25d4c5c4fae034dec20c22f5",
-      "key": "view-2",
-      "propertyKey": "mandarin-oriental",
-      "property": "Mandarin Oriental, Bangkok",
-      "localPath": "/images/travel/bangkok-premium/mandarin-oriental/view-2.webp",
-      "sourcePage": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/gallery",
-      "downloadUrl": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/c5J14DArckarxy6cZgqM.jpg",
-      "credit": "Mandarin Oriental, Bangkok official publisher; photographer not separately identified",
-      "license": "Official publisher image; independent commercial republication rights not verified.",
-      "licenseUrl": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/gallery",
-      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
-      "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "",
-      "frCaption": "Mandarin Oriental, Bangkok · photographie officielle à contrôler",
-      "enCaption": "Mandarin Oriental, Bangkok · official property photograph for individual review"
-    },
-    {
-      "originalSize": [
-        2000,
-        1128
-      ],
-      "outputSize": [
-        1600,
-        902
-      ],
-      "bytes": 183696,
-      "sha256": "0d7b7c11f231a082b908e342d3afcc2e65b3e0fa1f4ff68965039470aedc4790",
-      "pixelFingerprint": "3e34938218924f8f14d14030395c7a1a930aad1d5e486f1f608ac262cd844d3d",
-      "key": "view-3",
-      "propertyKey": "mandarin-oriental",
-      "property": "Mandarin Oriental, Bangkok",
-      "localPath": "/images/travel/bangkok-premium/mandarin-oriental/view-3.webp",
-      "sourcePage": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/gallery",
-      "downloadUrl": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/MHZoeVCBctQ7CntVRZ2z.png",
-      "credit": "Mandarin Oriental, Bangkok official publisher; photographer not separately identified",
-      "license": "Official publisher image; independent commercial republication rights not verified.",
-      "licenseUrl": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/gallery",
-      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
-      "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "embedded official image",
-      "frCaption": "Mandarin Oriental, Bangkok · photographie officielle à contrôler",
-      "enCaption": "Mandarin Oriental, Bangkok · official property photograph for individual review"
-    },
-    {
-      "originalSize": [
         1296,
         723
       ],
@@ -384,23 +269,23 @@
         1296,
         723
       ],
-      "bytes": 83804,
-      "sha256": "f17a57f633638db70ccfb98096e0ff5d9310627b9c85fad8a5ad0eef62c84f3a",
-      "pixelFingerprint": "c6b9130a1e1e5303906de4f1e9a0e66bb7f738d7bda53a8e27b31bdba075eb9f",
+      "bytes": 121212,
+      "sha256": "0ee4fc2ba270eda360ef58a7659d6a9a4c26f3bc8a5bf22c68c4bd77157a7838",
+      "pixelFingerprint": "ab4d85eec0e559591fa1b1b8526517676b709673e99556675c8dcb49de69df98",
       "key": "view-2",
       "propertyKey": "capella",
       "property": "Capella Bangkok",
       "localPath": "/images/travel/bangkok-premium/capella/view-2.webp",
-      "sourcePage": "https://capellahotels.com/en/capella-bangkok",
-      "downloadUrl": "https://capellahotels.com/assets/img/site_images/bangkok/Capell-Bangkok-Riverfront-01.jpg",
+      "sourcePage": "https://capellahotels.com/en/capella-bangkok/accommodation",
+      "downloadUrl": "https://capellahotels.com/assets/img/site_images/bangkok/Capella-Bangkok-River-Suite.jpg",
       "credit": "Capella Bangkok official publisher; photographer not separately identified",
       "license": "Official publisher image; independent commercial republication rights not verified.",
-      "licenseUrl": "https://capellahotels.com/en/capella-bangkok",
+      "licenseUrl": "https://capellahotels.com/en/capella-bangkok/accommodation",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "ROOMS",
+      "originalAlt": "View from the River Suite at Capella Bangkok",
       "frCaption": "Capella Bangkok · photographie officielle à contrôler",
       "enCaption": "Capella Bangkok · official property photograph for individual review"
     },
@@ -413,23 +298,23 @@
         1296,
         723
       ],
-      "bytes": 106670,
-      "sha256": "22b9b2732b26d71f91bdffd1f4336d43da48aa7ef538e8226e92be741a7851f3",
-      "pixelFingerprint": "c1f86e4c194d37df49953191f71e96f2aee0a66e74a7091ec0915b33441af109",
+      "bytes": 83804,
+      "sha256": "f17a57f633638db70ccfb98096e0ff5d9310627b9c85fad8a5ad0eef62c84f3a",
+      "pixelFingerprint": "c6b9130a1e1e5303906de4f1e9a0e66bb7f738d7bda53a8e27b31bdba075eb9f",
       "key": "view-3",
       "propertyKey": "capella",
       "property": "Capella Bangkok",
       "localPath": "/images/travel/bangkok-premium/capella/view-3.webp",
-      "sourcePage": "https://capellahotels.com/en/capella-bangkok/accommodation",
-      "downloadUrl": "https://capellahotels.com/assets/img/site_images/bangkok/Capella-Bangkok-Riverfront-Premier.jpg",
+      "sourcePage": "https://capellahotels.com/en/capella-bangkok",
+      "downloadUrl": "https://capellahotels.com/assets/img/site_images/bangkok/Capell-Bangkok-Riverfront-01.jpg",
       "credit": "Capella Bangkok official publisher; photographer not separately identified",
       "license": "Official publisher image; independent commercial republication rights not verified.",
-      "licenseUrl": "https://capellahotels.com/en/capella-bangkok/accommodation",
+      "licenseUrl": "https://capellahotels.com/en/capella-bangkok",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "Interior décor of the Riverfront Premier room at Capella Bangkok",
+      "originalAlt": "ROOMS",
       "frCaption": "Capella Bangkok · photographie officielle à contrôler",
       "enCaption": "Capella Bangkok · official property photograph for individual review"
     },
@@ -471,15 +356,15 @@
         1280,
         853
       ],
-      "bytes": 208634,
-      "sha256": "af6e7b79e5ecced95882a01ab62392f1f468746a39ccff38af57f3383a206da3",
-      "pixelFingerprint": "c0cfb060a410321d1aece3874814e6f7b866cddd32287cc2bc98ab5ef4e57d2e",
+      "bytes": 120430,
+      "sha256": "6c7d8f59c11bfb43fc7c2b27dc611d1f9a37b3b083201fc2a83bb173d334cd53",
+      "pixelFingerprint": "710a78926de510bed31b118bbcd68db851ec5e9c12c73daba8cce3b03632926a",
       "key": "view-2",
       "propertyKey": "the-siam",
       "property": "The Siam Bangkok",
       "localPath": "/images/travel/bangkok-premium/the-siam/view-2.webp",
       "sourcePage": "https://www.thesiamhotel.com/riverside-pool-villa/",
-      "downloadUrl": "https://www.thesiamhotel.com/wp-content/uploads/2024/09/TheSiam_CourtyardPV_Pool.jpg",
+      "downloadUrl": "https://www.thesiamhotel.com/wp-content/uploads/2024/09/TheSiam_RiverPV_Bed2.jpg",
       "credit": "The Siam Bangkok official publisher; photographer not separately identified",
       "license": "Official publisher image; independent commercial republication rights not verified.",
       "licenseUrl": "https://www.thesiamhotel.com/riverside-pool-villa/",
@@ -500,15 +385,15 @@
         1280,
         853
       ],
-      "bytes": 120430,
-      "sha256": "6c7d8f59c11bfb43fc7c2b27dc611d1f9a37b3b083201fc2a83bb173d334cd53",
-      "pixelFingerprint": "710a78926de510bed31b118bbcd68db851ec5e9c12c73daba8cce3b03632926a",
+      "bytes": 208634,
+      "sha256": "af6e7b79e5ecced95882a01ab62392f1f468746a39ccff38af57f3383a206da3",
+      "pixelFingerprint": "c0cfb060a410321d1aece3874814e6f7b866cddd32287cc2bc98ab5ef4e57d2e",
       "key": "view-3",
       "propertyKey": "the-siam",
       "property": "The Siam Bangkok",
       "localPath": "/images/travel/bangkok-premium/the-siam/view-3.webp",
       "sourcePage": "https://www.thesiamhotel.com/riverside-pool-villa/",
-      "downloadUrl": "https://www.thesiamhotel.com/wp-content/uploads/2024/09/TheSiam_RiverPV_Bed2.jpg",
+      "downloadUrl": "https://www.thesiamhotel.com/wp-content/uploads/2024/09/TheSiam_CourtyardPV_Pool.jpg",
       "credit": "The Siam Bangkok official publisher; photographer not separately identified",
       "license": "Official publisher image; independent commercial republication rights not verified.",
       "licenseUrl": "https://www.thesiamhotel.com/riverside-pool-villa/",
@@ -551,22 +436,22 @@
     },
     {
       "originalSize": [
-        936,
-        936
+        900,
+        900
       ],
       "outputSize": [
-        936,
-        936
+        900,
+        900
       ],
-      "bytes": 112402,
-      "sha256": "55081b747032e54fc2c56cab7ff07d4bfc699bb79346486d684109e7f6059e9f",
-      "pixelFingerprint": "802fd6c0231683cec9772eba0269ff4194f3e7a96cc9068431232fe059c9f22a",
+      "bytes": 160212,
+      "sha256": "ee4563e00d6128c649c126d78351e4a4afc14c1f8b157778588a5ea8aad6fe81",
+      "pixelFingerprint": "4b5fcce5451c81c42af420793db96f548c3a57d6f27299886d09ffe951ffff93",
       "key": "view-2",
       "propertyKey": "aman-nai-lert",
       "property": "Aman Nai Lert Bangkok",
       "localPath": "/images/travel/bangkok-premium/aman-nai-lert/view-2.webp",
       "sourcePage": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
-      "downloadUrl": "https://www.aman.com/sites/default/files/styles/masonry_medium_2x/public/2025-04/aman_nai_lert_bangkok_hotel_exterior_03524_900x900.webp?itok=zlovkykp",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/full_size_browser%402x/public/2025-04/aman_nai_lert_bangkok_hotel_exterior_03524_900x900.jpg?itok=0PAWDfy2",
       "credit": "Aman Nai Lert Bangkok official publisher; photographer not separately identified",
       "license": "Official publisher image; independent commercial republication rights not verified.",
       "licenseUrl": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
@@ -574,28 +459,28 @@
       "commercialRightsCleared": false,
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "",
+      "originalAlt": "embedded official image",
       "frCaption": "Aman Nai Lert Bangkok · photographie officielle à contrôler",
       "enCaption": "Aman Nai Lert Bangkok · official property photograph for individual review"
     },
     {
       "originalSize": [
-        862,
-        862
+        906,
+        1192
       ],
       "outputSize": [
-        862,
-        862
+        906,
+        1192
       ],
-      "bytes": 116220,
-      "sha256": "4e27924502e7b192875bd5a35b4b464ea072e40b2ed779f95857b2918ee100fd",
-      "pixelFingerprint": "e7c49ef44b694533eba3325f7813b25ff3232a2e1f009c283dc4dca303d52095",
+      "bytes": 260676,
+      "sha256": "6dbae856d1cfc070c10476bd2d399fe8782b2edab072176bf0dedc786382dcdc",
+      "pixelFingerprint": "c80d9b918bb461837908054a947d11065cf8ef7d36650c81001c1fa0a994b3fe",
       "key": "view-3",
       "propertyKey": "aman-nai-lert",
       "property": "Aman Nai Lert Bangkok",
       "localPath": "/images/travel/bangkok-premium/aman-nai-lert/view-3.webp",
       "sourcePage": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
-      "downloadUrl": "https://www.aman.com/sites/default/files/styles/masonry_small_2x/public/2025-04/aman_nai_lert_bangkok_hotel_exterior_03524_900x900.webp?itok=a7MqxwLZ",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/masonry_extra_large_2x/public/2025-05/aman_nai_lert_bangkok_thailand_-_property_exterior.webp?itok=HJI7H-2b",
       "credit": "Aman Nai Lert Bangkok official publisher; photographer not separately identified",
       "license": "Official publisher image; independent commercial republication rights not verified.",
       "licenseUrl": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
