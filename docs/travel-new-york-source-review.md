@@ -79,3 +79,10 @@
 - Lightened New York hero gradient so the panorama reads better; new navigation anchor `#panoramas-new-york`.
 - Regression guard `scripts/check-new-york-destination-final.mjs` now validates district render gate, two extra landscapes, nine distinct photo slots and unique original image files.
 - Preserve 88 destination slugs, the other 55 premium guides, noindex, property galleries and hotel rights restrictions. No production promotion.
+
+## Hero legibility fix — 30 October 2026
+- Owner review found the New York landscape-rich home hero unreadable because New York was omitted from the premium background-panel, headline-shadow and introduction-shadow predicates.
+- Added `new-york` to all three shared predicates in `components/travel/FeaturedCityGuide.tsx`: a translucent `bg-[#091c24]/65` backdrop-blurred card; white title with `0 3px 14px` shadow; and bright introductory copy with `0 2px 8px` shadow.
+- Added a dedicated eyebrow text shadow for New York and a slightly stronger left-side gradient, preserving the uncovered skyline on the right.
+- Changes automatically apply to FR and EN, and to both destination and hotel-guide variants; other cities unchanged.
+- GitHub Actions run `41049347975` passed TypeScript, full catalogue integrity and New York travel QA. Production untouched. Private Preview remains noindex.
