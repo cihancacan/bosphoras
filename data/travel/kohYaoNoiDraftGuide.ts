@@ -1,6 +1,6 @@
 /** Koh Yao Noi #62 · independent editorial FR/EN, 30 October 2026. Not commercial hotel inventory. */
 import type {FeaturedCityGuideData} from './featuredCityGuides';
-export const kohYaoNoiDraftGuide: Omit<FeaturedCityGuideData,'photos'> = {
+export const kohYaoNoiDraftGuide: Omit<FeaturedCityGuideData,'photos'|'slug'> & {slug:'koh-yao-noi'} = {
   "slug": "koh-yao-noi",
   "name": "Koh Yao Noi",
   "country": "Thaïlande",
