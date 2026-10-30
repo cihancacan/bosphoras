@@ -26,10 +26,10 @@ QUESTIONS=[
  ('scene-9','South Pointe Park Miami Beach ocean','South Pointe Park and Miami Beach shoreline','South Pointe Park et le rivage de Miami Beach')
 ]
 HOTELS=[
- ('setai','The Setai, Miami Beach',['https://www.thesetaihotel.com/','https://www.thesetaihotel.com/rooms-and-suites'],['thesetaihotel.com']),
+ ('setai','The Setai, Miami Beach',['https://www.miamiandbeaches.com/l/hotels/the-setai/3548','https://www.thesetaihotel.com/'],['thesetaihotel.com','miamiandbeaches.com']),
  ('faena','Faena Hotel Miami Beach',['https://www.faena.com/miami-beach/accommodations','https://www.faena.com/miami-beach'],['faena.com']),
- ('edition','The Miami Beach EDITION',['https://www.editionhotels.com/miami-beach/rooms-and-suites/','https://www.editionhotels.com/miami-beach/'],['editionhotels.com']),
- ('surf-club','Four Seasons Hotel at The Surf Club',['https://www.fourseasons.com/surfside/accommodations/','https://www.fourseasons.com/surfside/'],['fourseasons.com'])
+ ('edition','The Miami Beach EDITION',['https://www.miamiandbeaches.com/l/hotels/the-miami-beach-edition/5433','https://www.editionhotels.com/miami-beach/gallery/'],['editionhotels.com','miamiandbeaches.com']),
+ ('surf-club','Four Seasons Hotel at The Surf Club',['https://www.miamiandbeaches.com/l/hotels/four-seasons-hotel-at-the-surf-club/6396','https://www.fourseasons.com/surfside/'],['fourseasons.com','miamiandbeaches.com'])
 ]
 def get(url,timeout=28):
  for attempt in range(3):
@@ -55,14 +55,25 @@ def store(raw,path):
  if len(raw2)<16000:raise ValueError('too small webp')
  return dict(originalSize=dims,outputSize=list(im.size),bytes=len(raw2),sha256=hashlib.sha256(raw2).hexdigest())
 def commons_candidates(q):
- params=dict(action='query',generator='search',gsrsearch=q,gsrnamespace='6',gsrlimit='20',prop='imageinfo',iiprop='url|extmetadata|size|mime',iiurlwidth='1600',format='json',formatversion='2')
+ params=dict(action='query',prop='imageinfo',iiprop='url|extmetadata|size|mime',iiurlwidth='1600',format='json',formatversion='2')
+ if q.startswith('File:'):params.update(titles=q)
+ else:params.update(generator='search',gsrsearch=q,gsrnamespace='6',gsrlimit='20')
  j=get(API+'?'+urllib.parse.urlencode(params)).json()
  pages=j.get('query',{}).get('pages',[])
  return [p for p in pages if p.get('imageinfo')]
+PREFERRED={
+ 'scene-1':'File:Miami Beach - along the beach.jpg',
+ 'scene-3':'File:MIami Beach.jpg',
+ 'scene-4':'File:Surfside beach in 2026.jpg',
+ 'scene-5':'File:Brickell neighborhood skyline (60062p).jpg',
+ 'scene-7':'File:Miami Skyline from Brickell Key - panoramio.jpg',
+ 'scene-8':'File:Design District Miami.jpg',
+ 'scene-9':'File:Miami Beach from South Pointe Park Pier.jpeg'
+}
 def city():
  rows=[];used=set()
  for key,q,en,fr in QUESTIONS:
-  search=[q]
+  search=([PREFERRED[key]] if key in PREFERRED else [])+[q]
   if key=='scene-4':search+=['Surfside beach Florida Miami','Surfside Florida coast']
   if key=='scene-8':search+=['Miami Design District buildings','Miami Florida design district']
   if key=='scene-6':search+=['Wynwood Walls Miami','Wynwood Miami mural']
@@ -101,7 +112,7 @@ def city():
      used.add(title);break
     except Exception as e:print('Reject Commons',title,str(e)[:150],flush=True)
    if item:break
-  if item:rows.append(item);print('City',key,item['commonsTitle'],metadata['bytes'],flush=True)
+  if item:rows.append(item);print('City',key,item['commonsTitle'],item['bytes'],flush=True)
   else:print('CITY IMAGE MISSING',key,flush=True)
  return rows
 def image_sources(page,soup):
@@ -141,6 +152,11 @@ def hotels():
      score+=5*any(s in low for s in ('ocean','pool','terrace','beach','surf','faena','setai','edition','four-seasons'))
      score+=2 if page==pages[0] else 0
      score-=8*any(s in low for s in ('portrait','food','cocktail','dish','wine','team','face','headshot','chef'))
+     # Non-hotel cross-brand images on tourism pages must not enter this hotel's gallery.
+     if 'miamiandbeaches.com' in host and key=='setai' and not any(x in low for x in ('setai','jaya','art deco suites','ocean front suite')):continue
+     if 'miamiandbeaches.com' in host and key=='surf-club' and not any(x in low for x in ('surf club','four seasons','lido','oceanfront room','conservatory','champagne bar','peacock alley')):continue
+     if 'miamiandbeaches.com' in host and key=='edition' and not any(x in low for x in ('edition','bungalow')):continue
+     score+=10 if any(x in alt.lower() for x in ('setai','surf club','faena','miami beach edition')) else 0
      candidates.append((score,url,alt,page))
     print(name,'candidate page',page,'=',len(candidates),flush=True)
    except Exception as e:print(name,'website inaccessible',str(e)[:160],flush=True)
@@ -150,6 +166,10 @@ def hotels():
    if len(saved)>=3:break
    if score<0:continue
    canonical=urllib.parse.urlsplit(url).path.lower()
+   # EDITION group homepage features other continents/hotels; never show those as Miami.
+   if key=='edition' and any(k in canonical for k in ('europe','sanya','north-america','destinationo','asia-pacific','logo')):continue
+   if key=='edition' and not any(k in canonical for k in ('miami','mb_','miabeach','miaeb','edition')):continue
+   canonical=re.sub(r'/styles/[^/]+/public/','/public/',canonical)
    if canonical in used:continue
    used.add(canonical)
    try:
@@ -161,7 +181,7 @@ def hotels():
     saved.append({**meta,'key':'view-'+str(len(saved)+1),'propertyKey':key,'property':name,
        'localPath':'/'+str(path).removeprefix('public/'),'sourcePage':page,
        'downloadUrl':url,'credit':name+' — original hotel publisher (creator licence unverified)',
-       'license':'Hotel publisher media; private owner preview only, rights not independently cleared.',
+       'license':'Hotel or local tourism bureau publisher media; private owner preview only, commercial rights not independently cleared.',
        'licenseUrl':page,'status':'source_identified_private_preview',
        'commercialRightsCleared':False,'rightsEvidenceType':'operator_publisher_not_commercially_cleared',
        'visuallyVerified':False,'frCaption':name+' · photographie de l’établissement (vérification visuelle requise)',
