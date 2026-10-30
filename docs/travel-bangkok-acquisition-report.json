@@ -1,6 +1,6 @@
 {
-  "cityCount": 8,
-  "hotelCount": 9,
+  "cityCount": 9,
+  "hotelCount": 12,
   "expected": [
     9,
     12
@@ -8,8 +8,8 @@
   "hotels": [
     {
       "property": "Mandarin Oriental, Bangkok",
-      "found": 0,
-      "downloaded": 0,
+      "found": 275,
+      "downloaded": 3,
       "errors": []
     },
     {
@@ -36,12 +36,7 @@
       ]
     }
   ],
-  "errors": [
-    {
-      "key": "scene-9",
-      "reason": "no licensed source for Bangkok skyline King Power Mahanakhon skyscraper; ['undersized media [1920, 453]']"
-    }
-  ],
+  "errors": [],
   "visuallyApproved": false,
   "commercialHotelPhotoRights": false
 }

@@ -2,8 +2,8 @@
   "destination": "bangkok",
   "scope": "protected_owner_preview_only",
   "rightsNotice": "No hotel publisher photo may be redistributed commercially without separate authorisation.",
-  "cityCount": 8,
-  "hotelCount": 9,
+  "cityCount": 9,
+  "hotelCount": 12,
   "destinationScenes": [
     {
       "originalSize": [
@@ -228,9 +228,124 @@
       "frCaption": "La vie fluviale et les bateaux de Bangkok",
       "enCaption": "Working boats on the Chao Phraya",
       "searchIntent": "Bangkok long tail boat Chao Phraya river"
+    },
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 355552,
+      "sha256": "df42a1542e7618014f19a009634bc1c553e45ed5115f4c6f4b6226472b3e481e",
+      "pixelFingerprint": "9b81f141ddafe90bf1c619c8336626bb854237d13886f897202aacffa6bfb81c",
+      "key": "scene-9",
+      "localPath": "/images/travel/bangkok-premium/destination/scene-9.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Skyscrapers_of_Bangkok_during_a_sunset_from_Mahanakhon_terrace.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Skyscrapers_of_Bangkok_during_a_sunset_from_Mahanakhon_terrace.jpg/1920px-Skyscrapers_of_Bangkok_during_a_sunset_from_Mahanakhon_terrace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "iMahesh",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Skyscrapers of Bangkok during a sunset from Mahanakhon terrace.jpg",
+      "frCaption": "La silhouette des tours de Bangkok",
+      "enCaption": "Bangkok contemporary skyline",
+      "searchIntent": "Bangkok skyline King Power Mahanakhon skyscraper"
     }
   ],
   "hotels": [
+    {
+      "originalSize": [
+        937,
+        1406
+      ],
+      "outputSize": [
+        800,
+        1200
+      ],
+      "bytes": 227470,
+      "sha256": "61f361d6ac82bc7835d65bd217538bc60050e5fa85e829f5310c2238345f63e9",
+      "pixelFingerprint": "a6fa5eeb8f22df0f88188db9213cf609d3f9212f7474206bd1668421c6140afb",
+      "key": "view-1",
+      "propertyKey": "mandarin-oriental",
+      "property": "Mandarin Oriental, Bangkok",
+      "localPath": "/images/travel/bangkok-premium/mandarin-oriental/view-1.webp",
+      "sourcePage": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/gallery",
+      "downloadUrl": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/vk6FpY1PsMaj16VQHQXm.jpg",
+      "credit": "Mandarin Oriental, Bangkok official publisher; photographer not separately identified",
+      "license": "Official publisher image; independent commercial republication rights not verified.",
+      "licenseUrl": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/gallery",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
+      "frCaption": "Mandarin Oriental, Bangkok · photographie officielle à contrôler",
+      "enCaption": "Mandarin Oriental, Bangkok · official property photograph for individual review"
+    },
+    {
+      "originalSize": [
+        2500,
+        1406
+      ],
+      "outputSize": [
+        1600,
+        900
+      ],
+      "bytes": 240214,
+      "sha256": "5841c463e12b12749d0c6edf790c241186f69d7e182c849880b67f52a2ebe30f",
+      "pixelFingerprint": "604d7a5cef46defef6fe202ce6f78eb94857412f25d4c5c4fae034dec20c22f5",
+      "key": "view-2",
+      "propertyKey": "mandarin-oriental",
+      "property": "Mandarin Oriental, Bangkok",
+      "localPath": "/images/travel/bangkok-premium/mandarin-oriental/view-2.webp",
+      "sourcePage": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/gallery",
+      "downloadUrl": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/c5J14DArckarxy6cZgqM.jpg",
+      "credit": "Mandarin Oriental, Bangkok official publisher; photographer not separately identified",
+      "license": "Official publisher image; independent commercial republication rights not verified.",
+      "licenseUrl": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/gallery",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
+      "frCaption": "Mandarin Oriental, Bangkok · photographie officielle à contrôler",
+      "enCaption": "Mandarin Oriental, Bangkok · official property photograph for individual review"
+    },
+    {
+      "originalSize": [
+        2000,
+        1128
+      ],
+      "outputSize": [
+        1600,
+        902
+      ],
+      "bytes": 183696,
+      "sha256": "0d7b7c11f231a082b908e342d3afcc2e65b3e0fa1f4ff68965039470aedc4790",
+      "pixelFingerprint": "3e34938218924f8f14d14030395c7a1a930aad1d5e486f1f608ac262cd844d3d",
+      "key": "view-3",
+      "propertyKey": "mandarin-oriental",
+      "property": "Mandarin Oriental, Bangkok",
+      "localPath": "/images/travel/bangkok-premium/mandarin-oriental/view-3.webp",
+      "sourcePage": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/gallery",
+      "downloadUrl": "https://media.ffycdn.net/eu/mandarin-oriental-hotel-group/MHZoeVCBctQ7CntVRZ2z.png",
+      "credit": "Mandarin Oriental, Bangkok official publisher; photographer not separately identified",
+      "license": "Official publisher image; independent commercial republication rights not verified.",
+      "licenseUrl": "https://www.mandarinoriental.com/en/bangkok/chao-phraya-river/gallery",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "embedded official image",
+      "frCaption": "Mandarin Oriental, Bangkok · photographie officielle à contrôler",
+      "enCaption": "Mandarin Oriental, Bangkok · official property photograph for individual review"
+    },
     {
       "originalSize": [
         1296,
