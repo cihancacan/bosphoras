@@ -484,30 +484,30 @@
     },
     {
       "originalSize": [
-        1080,
-        1080
+        3912,
+        2201
       ],
       "outputSize": [
-        1080,
-        1080
+        1600,
+        900
       ],
-      "bytes": 33292,
-      "sha256": "4922198b9c2ce6c34817ff3b48fc835802af095f3318f34e5466d956c2316e09",
-      "pixelFingerprint": "b5ff20f69fe1a41a9052372454dd1fd1cf4b1e1c63e277f21f4deaa91395ca42",
+      "bytes": 453536,
+      "sha256": "d3a7a6f84c7654c4c62180909ecb24edd58282ecf4b982170c350860d4d4bcba",
+      "pixelFingerprint": "27e4d7c5b4cb6bd0baf59d7a937df45503e4a51c4ffceab46847fb47b8b930ff",
       "key": "view-3",
       "propertyKey": "treehouse",
       "property": "TreeHouse Villas Koh Yao",
       "localPath": "/images/travel/koh-yao-noi-premium/treehouse/view-3.webp",
-      "sourcePage": "https://www.treehouse-villas.com/koh-yao/rooms-and-villas/",
-      "downloadUrl": "https://www.treehouse-villas.com/wp-content/uploads/2021/12/Green-Hotel.png",
+      "sourcePage": "https://www.treehouse-villas.com/",
+      "downloadUrl": "https://www.treehouse-villas.com/wp-content/uploads/2025/11/06-TreeHouse-Villas_Hero-shot.jpg",
       "credit": "TreeHouse Villas Koh Yao official publisher; photographer rights not independently verified",
       "license": "Publisher image, no independent commercial republication rights.",
-      "licenseUrl": "https://www.treehouse-villas.com/koh-yao/rooms-and-villas/",
+      "licenseUrl": "https://www.treehouse-villas.com/",
       "commercialRightsCleared": false,
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "",
+      "originalAlt": "Official TreeHouse Villas architecture in canopy",
       "frCaption": "TreeHouse Villas Koh Yao · vue officielle à identifier précisément",
       "enCaption": "TreeHouse Villas Koh Yao · official property view pending manual review"
     },
