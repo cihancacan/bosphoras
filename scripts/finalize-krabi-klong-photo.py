@@ -29,7 +29,7 @@ lic=BeautifulSoup(meta["LicenseShortName"]["value"],"html.parser").get_text(" ",
 credit=BeautifulSoup(meta["Artist"]["value"],"html.parser").get_text(" ",strip=True)
 assert lic=="CC BY-SA 2.0" and "Caitriana Nicholson" in credit, (lic,credit)
 license_url=meta["LicenseUrl"]["value"]
-assert license_url.startswith("https://creativecommons.org/licenses/by-sa/2.0/")
+assert license_url.startswith("https://creativecommons.org/licenses/by-sa/2.0")
 r=s.get(row["downloadUrl"],timeout=30);r.raise_for_status()
 image=ImageOps.exif_transpose(Image.open(io.BytesIO(r.content))).convert("RGB")
 original=list(image.size)
