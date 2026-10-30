@@ -10,8 +10,8 @@ assert(catalogue.includes('approvedDestinationSlugs: ReadonlySet<string> = new S
 const registry=read('data/travel/featuredCityGuides.ts');
 const union=registry.match(/export type FeaturedCitySlug\s*=\s*([\s\S]*?);/)?.[1]||'';
 const featured=[...union.matchAll(/'([^']+)'/g)].map(x=>x[1]);
-assert.equal(featured.length,59,'Mayakoba is premium #59');
-assert.equal(new Set(featured).size,59);
+assert(featured.length>=59,'Retain Mayakoba and all preceding premium guides');
+assert.equal(new Set(featured).size,featured.length);
 for(const term of ["'mayakoba': mayakobaGuide","'los-angeles': losAngelesGuide","'miami': miamiGuide","'new-york': newYorkGuide",'istanbul: istanbulGuide'])assert(registry.includes(term),'Feature not preserved '+term);
 const guide=read('data/travel/mayakobaDraftGuide.ts');
 for(const name of ['Rosewood Mayakoba','Banyan Tree Mayakoba','Fairmont Mayakoba','Alila Mayakoba'])assert(guide.includes('"name": "'+name+'"'),name);
