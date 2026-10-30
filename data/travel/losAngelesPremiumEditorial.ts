@@ -11,14 +11,17 @@ const validHotel=(p:LACandidate,i:number):boolean=>{
  if(!p.sourcePage)return false;
  const host=new URL(p.sourcePage).hostname;
  const urlPath=new URL(p.sourcePage).pathname.toLowerCase();
- const sourceHotel=hosts[i]==='dorchestercollection.com'
-  ? (i===0?urlPath.includes('/hotel-bel-air'):urlPath.includes('/the-beverly-hills-hotel'))
-  : host.endsWith(hosts[i]);
+ const hostAllowed=host.endsWith(hosts[i])||
+  (i===0 && ['tatlerasia.com','visasignaturehotels.com'].some(x=>host.endsWith(x)))||
+  (i===1 && ['guide.michelin.com','townandcountrymag.com','thearcadiaonline.com'].some(x=>host.endsWith(x)));
+ const sourceHotel=i===0 ? (urlPath.includes('hotel-bel-air') || urlPath.includes('/hotel-bel-air/'))
+  :i===1 ? (urlPath.includes('beverly-hills-hotel') || urlPath.includes('the-beverly-hills'))
+  :host.endsWith(hosts[i]);
  return p.propertyKey===ids[i] && p.status==='source_identified_private_preview'
  && p.rightsEvidenceType==='operator_publisher_not_commercially_cleared'
  && p.commercialRightsCleared!==true
  && p.localPath?.startsWith('/images/travel/los-angeles-premium/'+ids[i]+'/')===true
- && host.endsWith(hosts[i]) && sourceHotel
+ && hostAllowed && sourceHotel
  && !!p.credit && !!p.frCaption && !!p.enCaption && p.sha256?.length===64&&(p.bytes||0)>18000;
 };
 const asPhoto=(p:LACandidate):BodrumPremiumPhoto=>({
