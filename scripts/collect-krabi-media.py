@@ -19,12 +19,12 @@ COMMONS = [
  ("scene-1", "Krabi, Railay West Beach (6218118271).jpg", "Railay West et ses falaises calcaires", "Railay West limestone cliffs"),
  ("scene-2", "Krabi, Phra Nang Beach (6218172753).jpg", "La plage de Phra Nang, Railay", "Phra Nang beach on Railay"),
  ("scene-3", "Tubkaek Beach SF0001.jpg", "Tubkaek Beach sur la côte de Nong Thale", "Tubkaek Beach on the Nong Thale coast"),
- ("scene-4", "Klong Muang Beach SF0005.jpg", "Klong Muang Beach, Krabi", "Klong Muang Beach, Krabi"),
- ("scene-5", "Ao Nang Krabi 2023.jpg", "Les bateaux traditionnels d'Ao Nang", "Traditional boats on Ao Nang beach"),
+ ("scene-4", "Beach at Koh Kwang (4463354227).jpg", "Koh Kwang, sur la côte de Klong Muang", "Koh Kwang beach on the Klong Muang coast"),
+ ("scene-5", "Ao Nang beach panorama 3.jpg", "Ao Nang et sa baie sur la côte de Krabi", "Ao Nang beach and limestone bay"),
  ("scene-6", "Limestone karst cliff and longtail boats at Railay West Beach Krabi.jpg", "Long-tail boats et falaises de Railay West", "Long-tail boats and cliffs at Railay West"),
  ("scene-7", "1.Ko Hong Island - Andaman Sea - Krabi Province, Thailand.jpg", "Ko Hong et la mer d’Andaman", "Ko Hong in the Andaman Sea"),
  ("scene-8", "Phra Nang beach 40.jpg", "Le relief de Phra Nang Beach", "Phra Nang beach landscape"),
- ("scene-9", "Klong Muang Beach SF0004.jpg", "La côte de Klong Muang", "Klong Muang coastline"),
+ ("scene-9", "Koh Poda 1.jpg", "Koh Poda et les îlots de Krabi", "Koh Poda island and Krabi coastline"),
 ]
 HOTELS = [
  ("rayavadee","Rayavadee", ["https://www.rayavadee.com/en/","https://www.rayavadee.com/en/gallery.php"]),
@@ -131,7 +131,24 @@ def hotel_entries(group):
  else:
   for page in pages:candidates.extend(extract_candidates(page))
  seen=set();unique=[];errors=[]
- for url,alt,source in sorted(candidates,key=score,reverse=True):
+ ranked=sorted(candidates,key=score,reverse=True)
+ # Interleave diverse property facilities, instead of three photographs of the same suite.
+ if slug=="banyan-tree":
+  categories=[("lobby","resort","our sanctuary"),("pool suite","pool villa","bedroom","suite"),("spa","saffron","restaurant","naga")]
+ elif slug=="tubkaak":
+  categories=[("beach","overview","lobby","exterior"),("garden-room","ocean-view-pool-villa","seaview","haven-suite"),("arundina","di-mare","spa","restaurant")]
+ else:categories=[]
+ ordered=[]
+ if categories:
+  buckets=[]
+  for terms in categories:
+   buckets.append([v for v in ranked if any(t in (v[0]+" "+v[1]).lower() for t in terms)])
+  for j in range(max([len(v) for v in buckets]+[0])):
+   for bucket in buckets:
+    if j<len(bucket) and bucket[j] not in ordered:ordered.append(bucket[j])
+ for v in ranked:
+  if v not in ordered:ordered.append(v)
+ for url,alt,source in ordered:
   if score((url,alt,source))<3 or url in seen:continue
   seen.add(url)
   if len(unique)>=3:break
