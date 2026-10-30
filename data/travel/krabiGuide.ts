@@ -43,3 +43,5 @@ for (const p of manifest.destinationScenes) {
 }
 
 export const krabiGuide: FeaturedCityGuideData = { ...krabiDraftGuide, photos };
+
+// Krabi FAQ discriminant deduplicated; rerun TypeScript and catalogue regression.
