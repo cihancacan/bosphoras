@@ -180,5 +180,5 @@ def main():
  OUT.write_text(json.dumps(out,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
  print('LA PHOTO SUMMARY',len(city),len(hotels),flush=True)
  if len(city)<9 or len(hotels)<12:raise SystemExit('Los Angeles image QA pending: keep private; no Vercel trigger')
-# Collector runs through GitHub Actions; commit media results only to feature branch.
+# Run source-audited LA media collection now; keep noindex private until rights and photo checks.
 if __name__=='__main__':main()
