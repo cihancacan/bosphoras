@@ -16,8 +16,10 @@ export function approvedBangkokScene(p:BangkokScene):boolean{
 }
 export function approvedBangkokHotelImage(p:BangkokHotelImage,key:string,property:string):boolean{
  return p.propertyKey===key && p.property===property
- && p.rightsEvidenceType==='hotel_official_publisher_not_licensed'
- && p.commercialRightsCleared===false
+ && ((p.rightsEvidenceType==='hotel_official_publisher_not_licensed' && p.commercialRightsCleared===false)
+   || (p.rightsEvidenceType==='wikimedia_license_metadata' && p.commercialRightsCleared===true
+    && /^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(p.sourcePage)
+    && /^(CC BY(?:-SA)? [234]\.0|CC0|Public domain)/i.test(p.license)))
  && p.visuallyVerified===true && p.status==='source_identified_private_preview'
  && p.localPath.startsWith('/images/travel/bangkok-premium/'+key+'/')
  && p.sourcePage.startsWith('https://')
