@@ -134,6 +134,49 @@ def image_sources(page,soup):
    if isinstance(data,dict) and isinstance(data.get('image'),str):urls.append((urllib.parse.urljoin(page,data['image']),'Official hotel image'))
   except:pass
  return urls
+
+CURATED={
+ 'setai':[
+  ('https://static.prod.r53.tablethotels.com/media/ecs/global/michelin-articles/FloridaKeys/Setai.jpg',
+   'https://guide.michelin.com/us/en/article/travel/all-the-michelin-key-hotels-in-miami-best-hotels',
+   'The Setai Miami Beach – poolside hotel setting','The Setai Miami Beach – piscines au cœur de l’hôtel'),
+  ('https://media.cntraveler.com/photos/53daa669dcd5888e145c2b9a/master/w_1600%2Cc_limit/miami-setai-ocean-suites.jpg',
+   'https://www.cntraveler.com/stories/2014-05-25/miami-beach-florida-weekend-getaway',
+   'The Setai Miami Beach – ocean-view suite interior','The Setai Miami Beach – intérieur d’une suite vue océan'),
+  ('https://assets.simpleviewinc.com/simpleview/image/upload/c_fit%2Cw_1440%2Ch_900/crm/miamifl/The-Setai5-1440x9000-49b198955056a36_49b199ec-5056-a36a-0b15aef8669a5e09.jpg',
+   'https://www.miamiandbeaches.com/l/hotels/the-setai/3548',
+   'The Setai Miami Beach – Art Deco lobby','The Setai Miami Beach – lobby de l’immeuble Art déco'),
+  ('https://www.turontravel.com/cp/uploads/09.32.18-aea1cce39fb6923402d594cadd7ae7f4.jpeg',
+   'https://www.turontravel.com/hotel/art-basel-miami-beach-2024-abmb24/the-setai-south-beach/',
+   'The Setai Miami Beach – courtyard and hotel atmosphere','The Setai Miami Beach – cour et atmosphère de l’hôtel')
+ ],
+ 'edition':[
+  ('https://www.editionhotels.com/wp-content/uploads/2016/06/Premier-Bungalow-Oceanfront-Suite-Day-1870x1400-e1472069401986.jpg',
+   'https://www.editionhotels.com/miami-beach/rooms-and-suites/premiere-bungalow-ocean-view-suite/',
+   'The Miami Beach EDITION – premier ocean-view bungalow balcony and private plunge pool','The Miami Beach EDITION – terrasse d’un bungalow avec bassin privé'),
+  ('https://www.editionhotels.com/wp-content/uploads/2016/06/Bungalow-Oceanfront-King-1870x1400-e1472067561731.jpg',
+   'https://www.editionhotels.com/miami-beach/rooms-and-suites/bungalow-oceanview/',
+   'The Miami Beach EDITION – oceanfront bungalow interior','The Miami Beach EDITION – bungalow face à l’océan'),
+  ('https://media.cntraveller.com/photos/669f89a2be8009057012761a/4%3A3/w_1280%2Cc_limit/Pool2-MiamiBeachEdition-Florida-CRHotel.jpg',
+   'https://www.cntraveller.com/gallery/best-hotels-miami',
+   'The Miami Beach EDITION – hotel swimming pool','The Miami Beach EDITION – piscine de l’hôtel')
+ ],
+ 'surf-club':[
+  ('https://www.fourseasons.com/content/dam/fourseasons/images/web/MFL/MFL_1371_aspect16x9.jpg',
+   'https://press.fourseasons.com/surfside/hotel-news/2024/worlds-50-best-hotels/',
+   'Four Seasons Hotel at The Surf Club – Surfside oceanfront pool and beach','Four Seasons Hotel at The Surf Club – piscine et rivage de Surfside'),
+  ('https://www.fourseasons.com/alt/img-opt/~70.1530.0%2C0000-0%2C0000-1600%2C0000-900%2C0000/publish/content/dam/fourseasons/images/web/MFL/MFL_426_aspect16x9.jpg',
+   'https://www.fourseasons.com/surfside/accommodations/residential-suites/ocean-front-one-bedroom-suite/',
+   'Four Seasons Hotel at The Surf Club – oceanfront residential suite','Four Seasons Hotel at The Surf Club – suite résidentielle vue océan'),
+  ('https://media.cntraveller.com/photos/657045612ab89eb336b95ac3/4%3A3/w_1280%2Cc_limit/17024_press_surfclub_3-12-17_02-copy.jpg',
+   'https://www.cntraveller.com/gallery/best-hotels-miami',
+   'Four Seasons Hotel at The Surf Club – shaded pool and historic architecture','Four Seasons Hotel at The Surf Club – piscine à l’ombre et architecture historique'),
+  ('https://photos.hotelbeds.com/giata/original/68/681685/681685a_hb_a_006.jpg',
+   'https://www.postcard.inc/places/four-seasons-hotel-at-the-surf-club-surfside-florida-surfside',
+   'Four Seasons Hotel at The Surf Club – poolside retreat','Four Seasons Hotel at The Surf Club – piscine et cabanes')
+ ]
+}
+
 def hotels():
  rows=[]
  for key,name,pages,allow in HOTELS:
@@ -187,6 +230,36 @@ def hotels():
        'visuallyVerified':False,'frCaption':name+' · photographie de l’établissement (vérification visuelle requise)',
        'enCaption':name+' · property publisher photograph (visual approval pending)','originalAlt':alt[:200]})
    except Exception as e:print('Hotel photo reject',name,str(e)[:110],flush=True)
+  # Curated images have hotel-specific named sources; unlike generic gallery scraping,
+  # photos from the EDITION group may not represent other cities or hotels.
+  curated=CURATED.get(key,[])
+  if curated:
+   selected=[];source_urls=set();hashes=set()
+   for url,source,en,fr in curated:
+    if len(selected)>=3:break
+    if url in source_urls:continue
+    source_urls.add(url)
+    try:
+     dest=ROOT/key/('view-'+str(len(selected)+1)+'.webp')
+     meta=store(get(url,24).content,dest)
+     if meta['sha256'] in hashes:continue
+     hashes.add(meta['sha256'])
+     selected.append({**meta,'key':'view-'+str(len(selected)+1),
+      'propertyKey':key,'property':name,'localPath':'/'+str(dest).removeprefix('public/'),
+      'sourcePage':source,'downloadUrl':url,
+      'credit':name+' – source-identified hotel photograph; creator rights not independently verified',
+      'license':'Publisher photograph, private owner Preview only; no independent commercial republication licence',
+      'licenseUrl':source,'rightsEvidenceType':'operator_publisher_not_commercially_cleared',
+      'commercialRightsCleared':False,'status':'source_identified_private_preview',
+      'visuallyVerified':False,'frCaption':fr,'enCaption':en,'originalAlt':en})
+     print('CURATED',key,en,meta['bytes'],flush=True)
+    except Exception as e:print('CURATED IMAGE REJECTED',key,source,str(e)[:180],flush=True)
+   if len(selected)>=3:
+    saved=selected
+   elif key in ('setai','surf-club') or len(saved)<3:
+    # These sources are too few: visible page may show only validated photos.
+    saved=selected if len(selected)>len(saved) else saved
+   print('CURATED HOTEL',name,len(selected),'of 3',flush=True)
   print('HOTEL',name,'acquired',len(saved),'of 3',flush=True)
   rows.extend(saved)
  return rows
