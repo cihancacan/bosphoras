@@ -30,3 +30,16 @@ Editorial promises must remain precise: Bangkok traffic is variable; public rive
 **Source publisher ≠ commercial republication licence.** Every hotel photo remains `commercialRightsCleared: false`, and every pending image `visuallyVerified: false`. No public production, indexing or structured hotel photo publishing before a separate photo-rights clearance. Wikimedia may be reused only with proper applicable licences, attribution and modifications disclosure. Never copy unsourced stock or synthetic image into the real hotel galleries.
 
 **Completion gate:** inspect contact sheet, remove logos/irrelevant scenes, confirm 9+12 source files and 21 nonduplicate image identities, caption each in FR/EN, integrate into 62 existing pages without touching current `main`, add noindex/SEO/FAQ checks, pass GitHub TypeScript regression, then deploy ONE Preview for Bangkok; copy exact Vercel URL only after READY and inspect routes if authentication allows.
+
+
+## État d'intégration et médias — 30 octobre 2026
+
+**Bangkok est désormais le guide premium #63 dans le dépôt**. Les composants existants et le registre ont été enrichis sans suppression de destination ou altération de `main` : `data/travel/featuredCityGuides.ts`, `data/travel/bangkokGuide.ts`, `data/travel/bangkokPremiumEditorial.ts`, `components/travel/TravelPages.tsx`, `components/travel/FeaturedCityGuide.tsx`.
+
+**Vérification photographique : 21/21 images authentiques** sous `public/images/travel/bangkok-premium/`. Neuf paysages de Bangkok sur Wikimedia Commons avec licence identifiée. Trois images authentiques et anciennes du Mandarin Oriental proviennent également de Commons (Authors’ Wing, hall, chambre ancienne) avec licence d'attribution, **uniquement utilisées comme archives** : aucune ne promet l'état actuel d'une chambre réservable. Les neuf photos des trois autres hôtels (Capella, The Siam et Aman Nai Lert) viennent de leurs sites officiels ; leurs **droits de republication commerciale publique restent NON confirmés**. Les logos Mandarin et les photographies Aman en doublon ont été exclus. Les 21 URLs, licences, auteurs, empreintes SHA-256 et légendes FR/EN sont dans `data/travel/bangkokMediaCandidates.json` et `docs/travel-bangkok-contact-sheet.jpg`.
+
+**Sécurité SEO :** la Preview reste privée/protégée et `noindex`. Les photos sous droits hôteliers non vérifiés ne sont pas utilisées dans les objets JSON-LD publics. Les quatre établissements ne sont pas présentés comme ayant une disponibilité API, un tarif garanti ou un SAV fourni par Bosphoras.
+
+**Contrôles :** `scripts/check-bangkok-final.cjs` vérifie les 88 destinations du catalogue, les 63 guides existants, les 21 binaires uniques, 4 galeries, 5 quartiers, 16 FAQ et le `noindex`. GitHub Actions: https://github.com/cihancacan/bosphoras/actions/runs/41111032387. **Ne déclarer les tests achevés qu'après résultat SUCCESS.**
+
+**Routes Preview à valider :** `/travel/destinations/bangkok`, `/en/travel/destinations/bangkok`, `/travel/hotels/bangkok`, `/en/travel/hotels/bangkok`. Déployer dans Vercel uniquement après succès du contrôle, et ne pas toucher à la production.
