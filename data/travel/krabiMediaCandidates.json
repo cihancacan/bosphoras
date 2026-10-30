@@ -91,58 +91,58 @@
     },
     {
       "originalSize": [
-        1920,
-        1080
-      ],
-      "outputSize": [
         1600,
-        900
-      ],
-      "bytes": 98512,
-      "sha256": "d5b7698714f0dc468d132e8aaf675911314d293bd79af37a8c2ed189e2e5a31b",
-      "pixelFingerprint": "d84c34386720cde678ba33667252c70af1fab6076748a4091cf7ed16bed6cac3",
-      "key": "scene-4",
-      "localPath": "/images/travel/krabi-premium/destination/scene-4.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Klong_Muang_Beach_SF0005.jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Klong_Muang_Beach_SF0005.jpg/1920px-Klong_Muang_Beach_SF0005.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "credit": "Stefan Fussan",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
-      "rightsEvidenceType": "wikimedia_license_metadata",
-      "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "Klong Muang Beach SF0005.jpg",
-      "frCaption": "Klong Muang Beach, Krabi",
-      "enCaption": "Klong Muang Beach, Krabi",
-      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP"
-    },
-    {
-      "originalSize": [
-        1920,
-        1440
+        1200
       ],
       "outputSize": [
         1600,
         1200
       ],
-      "bytes": 351666,
-      "sha256": "707004b94ee76750c0fc94e3df3dfadcdbaa4eca477f90507cff1d4de4bb185f",
-      "pixelFingerprint": "296afadfdfd480db40a6ceb24dc3af2d3deca7fe3bdd53cf96b8ed5711227f70",
-      "key": "scene-5",
-      "localPath": "/images/travel/krabi-premium/destination/scene-5.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ao_Nang_Krabi_2023.jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Ao_Nang_Krabi_2023.jpg/1920px-Ao_Nang_Krabi_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "credit": "Goooner9",
-      "license": "CC BY 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "bytes": 334662,
+      "sha256": "6c8130dde2a3c99800aaa0562986ee5f6b7394d9b25836a260123c1fbae38e41",
+      "pixelFingerprint": "75aa8d740f17957d7fa96062998a49be1bca87a55d20c4134970c3a33b735042",
+      "key": "scene-4",
+      "localPath": "/images/travel/krabi-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Beach_at_Koh_Kwang_(4463354227).jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/5/59/Beach_at_Koh_Kwang_%284463354227%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Caitriana Nicholson from 北京 ~ Beijing, 中国 ~ China",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "Ao Nang Krabi 2023.jpg",
-      "frCaption": "Les bateaux traditionnels d'Ao Nang",
-      "enCaption": "Traditional boats on Ao Nang beach",
+      "originalAlt": "Beach at Koh Kwang (4463354227).jpg",
+      "frCaption": "Koh Kwang, sur la côte de Klong Muang",
+      "enCaption": "Koh Kwang beach on the Klong Muang coast",
+      "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP"
+    },
+    {
+      "originalSize": [
+        1920,
+        889
+      ],
+      "outputSize": [
+        1600,
+        741
+      ],
+      "bytes": 281768,
+      "sha256": "2af3b3567ee95a1a38ea772d720f84b7459b726ef3b83145f9d58a65ca8fd219",
+      "pixelFingerprint": "585ae29ab1dad95c725376ce851857e2bad3f96f140b0b8d63366b30fa4fcff6",
+      "key": "scene-5",
+      "localPath": "/images/travel/krabi-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ao_Nang_beach_panorama_3.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Ao_Nang_beach_panorama_3.jpg/1920px-Ao_Nang_beach_panorama_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "kallerna",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Ao Nang beach panorama 3.jpg",
+      "frCaption": "Ao Nang et sa baie sur la côte de Krabi",
+      "enCaption": "Ao Nang beach and limestone bay",
       "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP"
     },
     {
@@ -232,29 +232,29 @@
     {
       "originalSize": [
         1920,
-        1080
+        1269
       ],
       "outputSize": [
         1600,
-        900
+        1058
       ],
-      "bytes": 149580,
-      "sha256": "26c913b19061103ecd722e1a53fd91c3982bf54155e77ee28fa07ea903a189eb",
-      "pixelFingerprint": "9568bff3d3c40df0e10b6fd4b32727ee82138e7b948bff80922a973a3b26b926",
+      "bytes": 284030,
+      "sha256": "c35d4cfdfa09c1804c6a737f0b5d77284e5e704e63ab85059da24d80c6febb2b",
+      "pixelFingerprint": "6c565f7367ae4f43d8e8138d7ff487f15264d29db542f1148b5aeb9ae6e757f0",
       "key": "scene-9",
       "localPath": "/images/travel/krabi-premium/destination/scene-9.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Klong_Muang_Beach_SF0004.jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Klong_Muang_Beach_SF0004.jpg/1920px-Klong_Muang_Beach_SF0004.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "credit": "Stefan Fussan",
-      "license": "CC BY-SA 4.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Koh_Poda_1.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Koh_Poda_1.jpg/1920px-Koh_Poda_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "kallerna",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "Klong Muang Beach SF0004.jpg",
-      "frCaption": "La côte de Klong Muang",
-      "enCaption": "Klong Muang coastline",
+      "originalAlt": "Koh Poda 1.jpg",
+      "frCaption": "Koh Poda et les îlots de Krabi",
+      "enCaption": "Koh Poda island and Krabi coastline",
       "croppedOrResized": "Resized to maximum 1600 x 1200; converted to WebP"
     }
   ],
@@ -435,6 +435,35 @@
     },
     {
       "originalSize": [
+        2000,
+        1332
+      ],
+      "outputSize": [
+        1600,
+        1066
+      ],
+      "bytes": 586536,
+      "sha256": "8d3ea4bb1c31ef580dd7140239da076e5512ef03d24a7d2dd510aea1cf105a9c",
+      "pixelFingerprint": "2819d4b1be7d29d99c902859b30c656791df5779cdff6f018dfdc2ca0dd799ac",
+      "key": "view-1",
+      "propertyKey": "banyan-tree",
+      "property": "Banyan Tree Krabi",
+      "localPath": "/images/travel/krabi-premium/banyan-tree/view-1.webp",
+      "sourcePage": "https://www.banyantree.com/thailand/krabi/gallery",
+      "downloadUrl": "https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2022-01%2FResort%20View.png&w=3840&q=75",
+      "credit": "Banyan Tree Krabi official photo publisher; photographer not identified",
+      "license": "Official publisher photo. Commercial republication rights NOT independently cleared.",
+      "licenseUrl": "https://www.banyantree.com/thailand/krabi/gallery",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Hotel",
+      "frCaption": "Banyan Tree Krabi · photographie officielle à examiner",
+      "enCaption": "Banyan Tree Krabi · official publisher photograph pending individual review"
+    },
+    {
+      "originalSize": [
         2500,
         1675
       ],
@@ -445,10 +474,10 @@
       "bytes": 448654,
       "sha256": "8d60b08adc0c8ce833d8299b8d6959ddf35fcd0bd81bde41a928ff49da54bfe9",
       "pixelFingerprint": "d28775a91527676d848eca7ee4b2ae9442a1ff4c1ff3a21e38d4a2fed1425294",
-      "key": "view-1",
+      "key": "view-2",
       "propertyKey": "banyan-tree",
       "property": "Banyan Tree Krabi",
-      "localPath": "/images/travel/krabi-premium/banyan-tree/view-1.webp",
+      "localPath": "/images/travel/krabi-premium/banyan-tree/view-2.webp",
       "sourcePage": "https://www.banyantree.com/thailand/krabi/gallery",
       "downloadUrl": "https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2021-12%2FBeachfront%20Pool%20Villa%201.jpg&w=3840&q=75",
       "credit": "Banyan Tree Krabi official photo publisher; photographer not identified",
@@ -471,44 +500,15 @@
         1600,
         1067
       ],
-      "bytes": 186308,
-      "sha256": "23ed916511135cace5bb0f018817b639f7200edd33ce024692fe027904095b00",
-      "pixelFingerprint": "54a73252548b4389353cfe493c4e6428040216cd03e947d05b7890a13e017034",
-      "key": "view-2",
-      "propertyKey": "banyan-tree",
-      "property": "Banyan Tree Krabi",
-      "localPath": "/images/travel/krabi-premium/banyan-tree/view-2.webp",
-      "sourcePage": "https://www.banyantree.com/thailand/krabi/gallery",
-      "downloadUrl": "https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2021-12%2FBeachfront%20Pool%20Villa%205-LAPTOP-H2PUNL0G.jpg&w=3840&q=75",
-      "credit": "Banyan Tree Krabi official photo publisher; photographer not identified",
-      "license": "Official publisher photo. Commercial republication rights NOT independently cleared.",
-      "licenseUrl": "https://www.banyantree.com/thailand/krabi/gallery",
-      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
-      "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "Beachfront Pool Villa",
-      "frCaption": "Banyan Tree Krabi · photographie officielle à examiner",
-      "enCaption": "Banyan Tree Krabi · official publisher photograph pending individual review"
-    },
-    {
-      "originalSize": [
-        2000,
-        1334
-      ],
-      "outputSize": [
-        1600,
-        1067
-      ],
-      "bytes": 181750,
-      "sha256": "b60e37e3d9fa68db1160ac4055813cbb8b97adb221ed1f1842dc863ee1be97e8",
-      "pixelFingerprint": "206489f95ed7c3d85bd42b8f8a6c1751843f8fe8c04d57ccd1b2a930832a5cf0",
+      "bytes": 224338,
+      "sha256": "9037461e4085df5e01c8573206a05f51a6d15b68a4fb759468115977a0f346ba",
+      "pixelFingerprint": "527b0f87e919e41108097e9f9ec32702a905659f234f1778f38065a17a99541d",
       "key": "view-3",
       "propertyKey": "banyan-tree",
       "property": "Banyan Tree Krabi",
       "localPath": "/images/travel/krabi-premium/banyan-tree/view-3.webp",
       "sourcePage": "https://www.banyantree.com/thailand/krabi/gallery",
-      "downloadUrl": "https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2021-12%2FTwo%20Bedroom%20Beachfront%20Pool%20Villa19.jpg&w=3840&q=75",
+      "downloadUrl": "https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2021-12%2FSpa%20Receiption.jpg&w=3840&q=75",
       "credit": "Banyan Tree Krabi official photo publisher; photographer not identified",
       "license": "Official publisher photo. Commercial republication rights NOT independently cleared.",
       "licenseUrl": "https://www.banyantree.com/thailand/krabi/gallery",
@@ -516,9 +516,38 @@
       "commercialRightsCleared": false,
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "Two Bedroom Beachfront Pool Villa",
+      "originalAlt": "Banyan Tree Spa Krabi",
       "frCaption": "Banyan Tree Krabi · photographie officielle à examiner",
       "enCaption": "Banyan Tree Krabi · official publisher photograph pending individual review"
+    },
+    {
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ],
+      "bytes": 110168,
+      "sha256": "93826c639441703312ec7e6a6f341d41615947fef7e855a70fba16f3d9466d77",
+      "pixelFingerprint": "f013ea1556a0a81e2842deae3d5a99077885c11b539dfd8630d2e88664d3e5fc",
+      "key": "view-1",
+      "propertyKey": "tubkaak",
+      "property": "The Tubkaak Krabi Boutique Resort",
+      "localPath": "/images/travel/krabi-premium/tubkaak/view-1.webp",
+      "sourcePage": "https://www.tubkaakresort.com/gallery/",
+      "downloadUrl": "https://www.tubkaakresort.com/wp-content/uploads/2019/07/beach01.jpg",
+      "credit": "The Tubkaak Krabi Boutique Resort official photo publisher; photographer not identified",
+      "license": "Official publisher photo. Commercial republication rights NOT independently cleared.",
+      "licenseUrl": "https://www.tubkaakresort.com/gallery/",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "publisher embedded image",
+      "frCaption": "The Tubkaak Krabi Boutique Resort · photographie officielle à examiner",
+      "enCaption": "The Tubkaak Krabi Boutique Resort · official publisher photograph pending individual review"
     },
     {
       "originalSize": [
@@ -532,10 +561,10 @@
       "bytes": 303680,
       "sha256": "c8c77c18c9e30296c9573f50b978ff2444bc25622151ca7eab87474e4ad47790",
       "pixelFingerprint": "12f3bd0a85cf93da2c032c690c936812ea37970ce1a3097a374960642c147771",
-      "key": "view-1",
+      "key": "view-2",
       "propertyKey": "tubkaak",
       "property": "The Tubkaak Krabi Boutique Resort",
-      "localPath": "/images/travel/krabi-premium/tubkaak/view-1.webp",
+      "localPath": "/images/travel/krabi-premium/tubkaak/view-2.webp",
       "sourcePage": "https://www.tubkaakresort.com/gallery/",
       "downloadUrl": "https://www.tubkaakresort.com/wp-content/uploads/2019/07/ocean-view-pool-villa01.jpg",
       "credit": "The Tubkaak Krabi Boutique Resort official photo publisher; photographer not identified",
@@ -558,44 +587,15 @@
         1200,
         800
       ],
-      "bytes": 209792,
-      "sha256": "d49d64fe3b6b26b6ad587df193b6469efe7fd97a140830c91063c66a321d0f0d",
-      "pixelFingerprint": "72007f4d1292db8288229e8f8daf580b32e8ec8ecba14079a4df74befe20176f",
-      "key": "view-2",
-      "propertyKey": "tubkaak",
-      "property": "The Tubkaak Krabi Boutique Resort",
-      "localPath": "/images/travel/krabi-premium/tubkaak/view-2.webp",
-      "sourcePage": "https://www.tubkaakresort.com/gallery/",
-      "downloadUrl": "https://www.tubkaakresort.com/wp-content/uploads/2019/07/ocean-view-pool-villa02.jpg",
-      "credit": "The Tubkaak Krabi Boutique Resort official photo publisher; photographer not identified",
-      "license": "Official publisher photo. Commercial republication rights NOT independently cleared.",
-      "licenseUrl": "https://www.tubkaakresort.com/gallery/",
-      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
-      "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "publisher embedded image",
-      "frCaption": "The Tubkaak Krabi Boutique Resort · photographie officielle à examiner",
-      "enCaption": "The Tubkaak Krabi Boutique Resort · official publisher photograph pending individual review"
-    },
-    {
-      "originalSize": [
-        1200,
-        800
-      ],
-      "outputSize": [
-        1200,
-        800
-      ],
-      "bytes": 192022,
-      "sha256": "d0471446f8001559879bd2b709e11aa5bf15f168ad988f0322bf351b3d621936",
-      "pixelFingerprint": "38ae926f0cace688a17c75b148faee65610026053a9875f8eb35f47741418405",
+      "bytes": 189666,
+      "sha256": "bb9495028935cd132d336386eabba6c3dd61410ddf423f16df52a8beb2a12275",
+      "pixelFingerprint": "d4df6f7442675eb7bca234ea4107ffb352ffe04165580e042df9fc0211849029",
       "key": "view-3",
       "propertyKey": "tubkaak",
       "property": "The Tubkaak Krabi Boutique Resort",
       "localPath": "/images/travel/krabi-premium/tubkaak/view-3.webp",
       "sourcePage": "https://www.tubkaakresort.com/gallery/",
-      "downloadUrl": "https://www.tubkaakresort.com/wp-content/uploads/2019/07/ocean-view-pool-villa06.jpg",
+      "downloadUrl": "https://www.tubkaakresort.com/wp-content/uploads/2019/11/View-from-The-Arundina-restaurant-1-1200x800.jpg",
       "credit": "The Tubkaak Krabi Boutique Resort official photo publisher; photographer not identified",
       "license": "Official publisher photo. Commercial republication rights NOT independently cleared.",
       "licenseUrl": "https://www.tubkaakresort.com/gallery/",
