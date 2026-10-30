@@ -4,7 +4,7 @@ import {mayakobaDraftGuide} from './mayakobaDraftGuide';
 import {approvedMayakobaOwnerPhoto,type MayakobaCandidate} from './mayakobaGuide';
 import manifest from './mayakobaMediaCandidates.json';
 const ids=['rosewood','banyan-tree','fairmont','alila'] as const;
-const pages=ids.map(id=>'https://mayakoba.com/hotels-overview/'+id+'-mayakoba/');
+const pages=['https://mayakoba.com/hotels-overview/rosewood-mayakoba/','https://www.banyantree.com/mexico/mayakoba','https://www.fairmont-mayakoba.com/','https://mayakoba.com/hotels-overview/alila-mayakoba/'];
 const valid=(p:MayakobaCandidate,i:number):boolean=>
  p.propertyKey===ids[i] && p.status==='source_identified_private_preview'
  && p.rightsEvidenceType==='official_hotel_destination_publisher_not_commercially_cleared'
