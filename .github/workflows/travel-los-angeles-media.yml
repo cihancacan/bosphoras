@@ -1,0 +1,48 @@
+name: Travel Los Angeles — authentic city landscapes and hotel media
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: [scripts/collect-los-angeles-media.py, .github/workflows/travel-los-angeles-media.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: travel-los-angeles-media
+  cancel-in-progress: false
+jobs:
+  acquire-and-store:
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -u scripts/collect-los-angeles-media.py
+      - run: node scripts/check-travel-catalogue.mjs
+      - name: Commit source manifest and locally stored real WebPs even when partial
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- public/images/travel/los-angeles-premium data/travel/losAngelesMediaCandidates.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): Los Angeles source-labelled landscape and hotel image review [skip ci]'
+            for i in 1 2 3 4 5; do
+              git fetch origin feature/luxury-travel-seo-destinations-20261012
+              git rebase origin/feature/luxury-travel-seo-destinations-20261012
+              if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then exit 0; fi
+              sleep 3
+            done
+            exit 1
+          fi
+      - name: Preserve incomplete source audit report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: travel-los-angeles-media
+          path: data/travel/losAngelesMediaCandidates.json
+          if-no-files-found: ignore
