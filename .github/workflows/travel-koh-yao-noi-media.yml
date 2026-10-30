@@ -1,0 +1,46 @@
+name: Travel Koh Yao Noi — sourced island and hotel media, private QA only
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - 'scripts/collect-koh-yao-noi-media.py'
+      - '.github/workflows/travel-koh-yao-noi-media.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: travel-koh-yao-noi-source-acquisition
+  cancel-in-progress: false
+jobs:
+  source-candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12' 'beautifulsoup4>=4.12,<5'
+      - run: python -m py_compile scripts/collect-koh-yao-noi-media.py
+      - run: python -u scripts/collect-koh-yao-noi-media.py
+      - name: Commit candidate WebPs, source manifest and visual sheet without Preview
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- data/travel/kohYaoNoiMediaCandidates.json docs/travel-koh-yao-noi-acquisition-report.json docs/travel-koh-yao-noi-contact-sheet.jpg
+          if [ -d public/images/travel/koh-yao-noi-premium ]; then
+            git add -A -- public/images/travel/koh-yao-noi-premium
+          fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): Koh Yao Noi island and hotel candidates with full provenance [skip ci]'
+            for attempt in 1 2 3 4 5; do
+              git fetch origin feature/luxury-travel-seo-destinations-20261012
+              git rebase origin/feature/luxury-travel-seo-destinations-20261012
+              if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then exit 0; fi
+              sleep 2
+            done
+            exit 1
+          fi
