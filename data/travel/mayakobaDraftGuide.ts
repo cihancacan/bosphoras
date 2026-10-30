@@ -1,4 +1,4 @@
-/** Mayakoba #59 luxury editorial, completed in French and English. Four verified 2026 hotel brands; former Andaz reopened as Alila 12 February 2026. The 9 distinct source-labelled destination images and 12 individual verified hotel photos remain owner-only until commercial permissions. All previous 58 guides retained, original 88 geographical destinations unchanged, no live inventory or booking/sales promise. */
+/** Mayakoba #59 luxury editorial, completed in French and English. Four verified current hotel brands; former Andaz reopened as Alila on 12 February 2026. The 9 distinct source-labelled destination images and 12 individual verified hotel photos remain owner-only until commercial permissions. All previous 58 guides retained, original 88 geographical destinations unchanged, no live inventory or booking/sales promise. */
 import type {FeaturedCityGuideData} from './featuredCityGuides';
 export const mayakobaDraftGuide: Omit<FeaturedCityGuideData,'photos'> = {
   "slug": "mayakoba",
