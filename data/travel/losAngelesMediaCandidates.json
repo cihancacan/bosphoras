@@ -1,9 +1,387 @@
 {
   "destination": "los-angeles",
   "scope": "private_owner_noindex_preview",
-  "note": "Photo import still pending; no unverified assets may render.",
-  "cityCount": 0,
-  "hotelCount": 0,
-  "destinationScenes": [],
-  "hotels": []
+  "note": "Publisher photos do not have independently cleared commercial reuse rights",
+  "cityCount": 8,
+  "hotelCount": 6,
+  "destinationScenes": [
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1800,
+        1200
+      ],
+      "bytes": 29464,
+      "sha256": "7c126d2a44ebb88ad3fade08bfe295f261cd5bcaede396d2490c2dd258cd8350",
+      "key": "scene-1",
+      "localPath": "/images/travel/los-angeles-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Griffith_Observatory_skyline_at_sunset._(Unsplash).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Griffith_Observatory_skyline_at_sunset._%28Unsplash%29.jpg/1920px-Griffith_Observatory_skyline_at_sunset._%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Kasper Bertelsen kasperbertelsen",
+      "license": "CC0",
+      "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "status": "source_identified_private_preview",
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "frCaption": "Griffith Observatory au-dessus de Los Angeles",
+      "enCaption": "Griffith Observatory above the Los Angeles basin",
+      "commonsTitle": "File:Griffith Observatory skyline at sunset. (Unsplash).jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1307
+      ],
+      "outputSize": [
+        1800,
+        1225
+      ],
+      "bytes": 230190,
+      "sha256": "b70c06bcf81d06d3861ec89472ed9214aa02a829f429f56fa25efefaf32cbdc1",
+      "key": "scene-2",
+      "localPath": "/images/travel/los-angeles-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:GETTY_MUSEUM,_PACIFIC_PALISADES,_LOS_ANGELES.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/GETTY_MUSEUM%2C_PACIFIC_PALISADES%2C_LOS_ANGELES.jpg/1920px-GETTY_MUSEUM%2C_PACIFIC_PALISADES%2C_LOS_ANGELES.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "JERRYE AND ROY KLOTZ MD",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "status": "source_identified_private_preview",
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "frCaption": "Le Getty Center sur les collines de Los Angeles",
+      "enCaption": "The Getty Center and hills of Los Angeles",
+      "commonsTitle": "File:GETTY MUSEUM, PACIFIC PALISADES, LOS ANGELES.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1800,
+        1350
+      ],
+      "bytes": 236492,
+      "sha256": "53385244d2bd2a80920987be3732a1b17f286d2b896810b8747d0d28e5b35662",
+      "key": "scene-3",
+      "localPath": "/images/travel/los-angeles-premium/destination/scene-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Beverly_Hills11.JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Beverly_Hills11.JPG/1920px-Beverly_Hills11.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Adrian104",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/licenses/",
+      "status": "source_identified_private_preview",
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "frCaption": "Les palmiers de Beverly Hills",
+      "enCaption": "Palm-lined Beverly Hills streets",
+      "commonsTitle": "File:Beverly Hills11.JPG"
+    },
+    {
+      "originalSize": [
+        1500,
+        1000
+      ],
+      "outputSize": [
+        1500,
+        1000
+      ],
+      "bytes": 165374,
+      "sha256": "f95540ecc956c8c13c73c8a9653b4b9074395fda704aae1d5bbde18cc2bdc380",
+      "key": "scene-4",
+      "localPath": "/images/travel/los-angeles-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:View_from_the_original_Spago_(2075842155).jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/8/8e/View_from_the_original_Spago_%282075842155%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Alan Light",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "status": "source_identified_private_preview",
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "frCaption": "Sunset Boulevard à West Hollywood",
+      "enCaption": "Sunset Boulevard and the West Hollywood atmosphere",
+      "commonsTitle": "File:View from the original Spago (2075842155).jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        849
+      ],
+      "outputSize": [
+        1800,
+        796
+      ],
+      "bytes": 205316,
+      "sha256": "f3dd783e567ed45870176da75e2b0168bd3ac05ea46a4325ff6a30ef4d5dbc1b",
+      "key": "scene-5",
+      "localPath": "/images/travel/los-angeles-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Aerial_Photo_of_Santa_Monica_Pier.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Aerial_Photo_of_Santa_Monica_Pier.jpg/1920px-Aerial_Photo_of_Santa_Monica_Pier.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Jelson25",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/licenses/",
+      "status": "source_identified_private_preview",
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "frCaption": "La plage de Santa Monica côté Pacifique",
+      "enCaption": "Santa Monica Pacific beachfront",
+      "commonsTitle": "File:Aerial Photo of Santa Monica Pier.jpg"
+    },
+    {
+      "originalSize": [
+        1624,
+        1080
+      ],
+      "outputSize": [
+        1624,
+        1080
+      ],
+      "bytes": 55576,
+      "sha256": "4352c5f67fc854317bc9f5d5b197a698c89bb2054345d39bf15d3b49e5cbfa7e",
+      "key": "scene-6",
+      "localPath": "/images/travel/los-angeles-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Griffith_Oberservatory_dome_with_Hollywood_Sign_2006.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Griffith_Oberservatory_dome_with_Hollywood_Sign_2006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "No machine-readable author provided. Mike Dillon assumed (based on copyright claims).",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "status": "source_identified_private_preview",
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "frCaption": "Griffith Park et les collines de Hollywood",
+      "enCaption": "Griffith Park and the Hollywood Hills",
+      "commonsTitle": "File:Griffith Oberservatory dome with Hollywood Sign 2006.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1800,
+        1350
+      ],
+      "bytes": 179062,
+      "sha256": "eabbdf4243918d41375d7e92e54d0b0302e8d34c3dcf34f123035634ff5c606c",
+      "key": "scene-7",
+      "localPath": "/images/travel/los-angeles-premium/destination/scene-7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Los_Angeles_skyline_at_night.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Los_Angeles_skyline_at_night.jpg/1920px-Los_Angeles_skyline_at_night.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Marisa DeMeglio from NYC, USA",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "status": "source_identified_private_preview",
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "frCaption": "Skyline de Downtown Los Angeles à la tombée du jour",
+      "enCaption": "Downtown Los Angeles skyline after dark",
+      "commonsTitle": "File:Los Angeles skyline at night.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1800,
+        1350
+      ],
+      "bytes": 592090,
+      "sha256": "e66842e3cafe768bd151f9892823c9c9ffeb45c007a3beea4555ceac5e3f5f19",
+      "key": "scene-9",
+      "localPath": "/images/travel/los-angeles-premium/destination/scene-9.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Houses_on_Grand_Canal,_Venice_Canal_Historic_District,_Venice,_California.JPG",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Houses_on_Grand_Canal%2C_Venice_Canal_Historic_District%2C_Venice%2C_California.JPG/1920px-Houses_on_Grand_Canal%2C_Venice_Canal_Historic_District%2C_Venice%2C_California.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Los Angeles",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "status": "source_identified_private_preview",
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "frCaption": "Les canaux de Venice à Los Angeles",
+      "enCaption": "The Venice Canals in Los Angeles",
+      "commonsTitle": "File:Houses on Grand Canal, Venice Canal Historic District, Venice, California.JPG"
+    }
+  ],
+  "hotels": [
+    {
+      "originalSize": [
+        750,
+        511
+      ],
+      "outputSize": [
+        750,
+        511
+      ],
+      "bytes": 33590,
+      "sha256": "0897afa9c5dcef108d2e23c9a6004b5daab6242fcfa589de1a237c53eee0bb7d",
+      "key": "view-1",
+      "propertyKey": "sunset-tower",
+      "property": "Sunset Tower Hotel",
+      "localPath": "/images/travel/los-angeles-premium/sunset-tower/view-1.webp",
+      "sourcePage": "https://www.sunsettowerhotel.com/rooms-suites",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/59026304197aea3c312133a4/1683227410832-TMXFK80CHPCX347HR6PR/sunset-tower-hotel-deluxe-queen-suite.jpg",
+      "credit": "Sunset Tower Hotel - official publisher photograph (creator licence not independently cleared)",
+      "license": "Publisher photo; private owner Preview only, no independent commercial republication licence",
+      "licenseUrl": "https://www.sunsettowerhotel.com/rooms-suites",
+      "status": "source_identified_private_preview",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "frCaption": "Sunset Tower Hotel - photographie officielle, identification de la chambre à confirmer",
+      "enCaption": "Sunset Tower Hotel - official hotel photograph; individual room identity pending review",
+      "originalAlt": "sunset-tower-hotel-deluxe-queen-suite.jpg"
+    },
+    {
+      "originalSize": [
+        766,
+        522
+      ],
+      "outputSize": [
+        766,
+        522
+      ],
+      "bytes": 89690,
+      "sha256": "872e05f52c1d063948392ac3de83921050b7d1bc6a2aeacb109eb820e909236d",
+      "key": "view-2",
+      "propertyKey": "sunset-tower",
+      "property": "Sunset Tower Hotel",
+      "localPath": "/images/travel/los-angeles-premium/sunset-tower/view-2.webp",
+      "sourcePage": "https://www.sunsettowerhotel.com/rooms-suites",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/59026304197aea3c312133a4/1683227409962-9QELKFZ7ZCBDDAQUD3HS/sunset-tower-hotel-donald-robertson-bathroom-wallpaper.jpg",
+      "credit": "Sunset Tower Hotel - official publisher photograph (creator licence not independently cleared)",
+      "license": "Publisher photo; private owner Preview only, no independent commercial republication licence",
+      "licenseUrl": "https://www.sunsettowerhotel.com/rooms-suites",
+      "status": "source_identified_private_preview",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "frCaption": "Sunset Tower Hotel - photographie officielle, identification de la chambre à confirmer",
+      "enCaption": "Sunset Tower Hotel - official hotel photograph; individual room identity pending review",
+      "originalAlt": "sunset-tower-hotel-donald-robertson-bathroom-wallpaper.jpg"
+    },
+    {
+      "originalSize": [
+        766,
+        522
+      ],
+      "outputSize": [
+        766,
+        522
+      ],
+      "bytes": 27014,
+      "sha256": "15c8bb885a427a0cbb10158669014b004972134b6ff7d446c083d1418ed5c8f6",
+      "key": "view-3",
+      "propertyKey": "sunset-tower",
+      "property": "Sunset Tower Hotel",
+      "localPath": "/images/travel/los-angeles-premium/sunset-tower/view-3.webp",
+      "sourcePage": "https://www.sunsettowerhotel.com/rooms-suites",
+      "downloadUrl": "https://images.squarespace-cdn.com/content/v1/59026304197aea3c312133a4/1683172439905-ELALWBA2QMBECL4ICTCZ/sunset-tower-hotel-deluxe-king-room-2.jpg",
+      "credit": "Sunset Tower Hotel - official publisher photograph (creator licence not independently cleared)",
+      "license": "Publisher photo; private owner Preview only, no independent commercial republication licence",
+      "licenseUrl": "https://www.sunsettowerhotel.com/rooms-suites",
+      "status": "source_identified_private_preview",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "frCaption": "Sunset Tower Hotel - photographie officielle, identification de la chambre à confirmer",
+      "enCaption": "Sunset Tower Hotel - official hotel photograph; individual room identity pending review",
+      "originalAlt": "sunset-tower-hotel-deluxe-king-room-2.jpg"
+    },
+    {
+      "originalSize": [
+        1500,
+        1000
+      ],
+      "outputSize": [
+        1500,
+        1000
+      ],
+      "bytes": 178470,
+      "sha256": "59491f68e7e4a9a9a23c30b84ee2bcee83c0457ead9ce27baf0b0ca97983af23",
+      "key": "view-1",
+      "propertyKey": "shutters",
+      "property": "Shutters on the Beach",
+      "localPath": "/images/travel/los-angeles-premium/shutters/view-1.webp",
+      "sourcePage": "https://www.shuttersonthebeach.com/accommodations/",
+      "downloadUrl": "https://s3.amazonaws.com/uploads.edwardthomasco.com/uploads/sites/3/2025/02/10111056/Santa-Monica-Suite-Bedroom-1500x1000.jpg",
+      "credit": "Shutters on the Beach - official publisher photograph (creator licence not independently cleared)",
+      "license": "Publisher photo; private owner Preview only, no independent commercial republication licence",
+      "licenseUrl": "https://www.shuttersonthebeach.com/accommodations/",
+      "status": "source_identified_private_preview",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "frCaption": "Shutters on the Beach - photographie officielle, identification de la chambre à confirmer",
+      "enCaption": "Shutters on the Beach - official hotel photograph; individual room identity pending review",
+      "originalAlt": "Cozy bedroom with blue tones, wooden bed, soft lighting, and coastal decor for a relaxing vibe."
+    },
+    {
+      "originalSize": [
+        1000,
+        667
+      ],
+      "outputSize": [
+        1000,
+        667
+      ],
+      "bytes": 83698,
+      "sha256": "9404a4e0ffee407399d2ac93bc8deb2131238615dac203cb4312c6763e8a0a82",
+      "key": "view-2",
+      "propertyKey": "shutters",
+      "property": "Shutters on the Beach",
+      "localPath": "/images/travel/los-angeles-premium/shutters/view-2.webp",
+      "sourcePage": "https://www.shuttersonthebeach.com/accommodations/",
+      "downloadUrl": "https://s3.amazonaws.com/uploads.edwardthomasco.com/uploads/sites/3/2025/02/10111056/Santa-Monica-Suite-Bedroom-1000x667.jpg",
+      "credit": "Shutters on the Beach - official publisher photograph (creator licence not independently cleared)",
+      "license": "Publisher photo; private owner Preview only, no independent commercial republication licence",
+      "licenseUrl": "https://www.shuttersonthebeach.com/accommodations/",
+      "status": "source_identified_private_preview",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "frCaption": "Shutters on the Beach - photographie officielle, identification de la chambre à confirmer",
+      "enCaption": "Shutters on the Beach - official hotel photograph; individual room identity pending review",
+      "originalAlt": "Cozy bedroom with blue tones, wooden bed, soft lighting, and coastal decor for a relaxing vibe."
+    },
+    {
+      "originalSize": [
+        1500,
+        1000
+      ],
+      "outputSize": [
+        1500,
+        1000
+      ],
+      "bytes": 149570,
+      "sha256": "ef66e380ca757b4da20375e8e1b4a1dea7ffb193578bbb3ae153c90950c243e1",
+      "key": "view-3",
+      "propertyKey": "shutters",
+      "property": "Shutters on the Beach",
+      "localPath": "/images/travel/los-angeles-premium/shutters/view-3.webp",
+      "sourcePage": "https://www.shuttersonthebeach.com/accommodations/",
+      "downloadUrl": "https://s3.amazonaws.com/uploads.edwardthomasco.com/uploads/sites/3/2025/02/10111047/Shutters_103-0051-tree-view-1500x1000.jpg",
+      "credit": "Shutters on the Beach - official publisher photograph (creator licence not independently cleared)",
+      "license": "Publisher photo; private owner Preview only, no independent commercial republication licence",
+      "licenseUrl": "https://www.shuttersonthebeach.com/accommodations/",
+      "status": "source_identified_private_preview",
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "frCaption": "Shutters on the Beach - photographie officielle, identification de la chambre à confirmer",
+      "enCaption": "Shutters on the Beach - official hotel photograph; individual room identity pending review",
+      "originalAlt": "A serene bedroom with a bamboo bed, blue accents, and a private balcony with lush greenery."
+    }
+  ]
 }
