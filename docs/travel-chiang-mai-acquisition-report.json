@@ -1,6 +1,6 @@
 {
-  "cityCount": 7,
-  "hotelCount": 6,
+  "cityCount": 9,
+  "hotelCount": 12,
   "hotelReports": [
     {
       "property": "137 Pillars House Chiang Mai",
@@ -33,16 +33,8 @@
       "errors": []
     }
   ],
-  "errors": [
-    {
-      "key": "scene-2",
-      "error": "No licensed image for Chiang Mai Wat Chedi Luang temple ruins: []"
-    },
-    {
-      "key": "scene-7",
-      "error": "No licensed image for Mae Rim Chiang Mai rice field: []"
-    }
-  ],
+  "errors": [],
   "allImagesVisuallyApproved": false,
-  "commercialHotelRights": false
+  "commercialHotelRights": false,
+  "sourceRescue": "Six CC landscapes from named Commons files and three official press photos per missing hotel; visual QA pending"
 }

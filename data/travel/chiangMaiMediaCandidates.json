@@ -2,64 +2,92 @@
   "destination": "chiang-mai",
   "scope": "owner_protected_preview_only",
   "rightsNotice": "Hotel publisher photos cannot be commercially republished without independently verified authorization.",
-  "cityCount": 7,
-  "hotelCount": 6,
+  "cityCount": 9,
+  "hotelCount": 12,
   "destinationScenes": [
     {
       "originalSize": [
-        1080,
-        720
+        1920,
+        1275
       ],
       "outputSize": [
-        1080,
-        720
+        1600,
+        1063
       ],
-      "bytes": 59060,
-      "sha256": "543893a99b65176f9c8f6f5f5c331f455c3b68e203ebb12712bd52a5e59a7047",
-      "pixelFingerprint": "171de6d11a94dcf2b79830c3cf55dba7cb12f4527f2cef170f9f7f703d6307c0",
+      "bytes": 307836,
+      "sha256": "9ca131186771edf84fc5a69c220262e063f94ff4ad51b076492345378bfcea05",
+      "pixelFingerprint": "7e8075d73333c9533c957c317286c502154657cef292973cf71d8481d352f5af",
       "key": "scene-1",
       "localPath": "/images/travel/chiang-mai-premium/destination/scene-1.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Prathat-offering.jpg",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Prathat-offering.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "credit": "Steve Evans",
-      "license": "CC BY 2.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
-      "rightsEvidenceType": "wikimedia_license_metadata",
-      "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Doi Suthep · temple doré sur les montagnes",
-      "enCaption": "Doi Suthep golden mountain temple",
-      "originalAlt": "Prathat-offering.jpg",
-      "searchIntent": "Wat Phra That Doi Suthep Chiang Mai temple panorama"
-    },
-    {
-      "originalSize": [
-        1920,
-        2900
-      ],
-      "outputSize": [
-        794,
-        1200
-      ],
-      "bytes": 144574,
-      "sha256": "3d1c2c591f27b87825384dbef6df7a71cdc004c2ffc93790bfd4b1df82e3c04d",
-      "pixelFingerprint": "b13040bffb9097e601a409254ace08c45c2e4e5d5e5bb3fb8da95167714161c7",
-      "key": "scene-3",
-      "localPath": "/images/travel/chiang-mai-premium/destination/scene-3.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:20171105_Golden_elephant_statue_of_the_Wat_Phra_Singh_temple,_Chiang_Mai,_Thailand_9843_DxO.jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/20171105_Golden_elephant_statue_of_the_Wat_Phra_Singh_temple%2C_Chiang_Mai%2C_Thailand_9843_DxO.jpg/1920px-20171105_Golden_elephant_statue_of_the_Wat_Phra_Singh_temple%2C_Chiang_Mai%2C_Thailand_9843_DxO.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "credit": "Jakub Hałun",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dusk_Falling_on_the_Stupa_of_Mount_Suthep.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Dusk_Falling_on_the_Stupa_of_Mount_Suthep.jpg/1920px-Dusk_Falling_on_the_Stupa_of_Mount_Suthep.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Kitpoo1976",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Wat Phra Singh et l'architecture Lanna",
-      "enCaption": "Wat Phra Singh and Lanna architecture",
-      "originalAlt": "20171105 Golden elephant statue of the Wat Phra Singh temple, Chiang Mai, Thailand 9843 DxO.jpg",
-      "searchIntent": "Chiang Mai Wat Phra Singh golden temple"
+      "frCaption": "Doi Suthep · pagode dorée dans la lumière du soir",
+      "enCaption": "Doi Suthep's golden stupa in the evening light",
+      "originalAlt": "Dusk Falling on the Stupa of Mount Suthep.jpg",
+      "visualReviewNote": "Sourced as exact Wikimedia File identity, awaiting updated contact-sheet review."
+    },
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 316372,
+      "sha256": "193ce304ca1fd50919e729041ab77cb2cecad615edb58fd45851801b5a68c436",
+      "pixelFingerprint": "8be53d02db4e2682803e909443038da9aa183eac425973d751c299d075dec024",
+      "key": "scene-2",
+      "localPath": "/images/travel/chiang-mai-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wat_Chedi_Luang,_Stupa,_Chiang_Mai,_Thailand.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Wat_Chedi_Luang%2C_Stupa%2C_Chiang_Mai%2C_Thailand.jpg/1920px-Wat_Chedi_Luang%2C_Stupa%2C_Chiang_Mai%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Wat Chedi Luang · grand stupa historique de la vieille ville",
+      "enCaption": "Historic Wat Chedi Luang stupa in the Old City",
+      "originalAlt": "Wat Chedi Luang, Stupa, Chiang Mai, Thailand.jpg",
+      "visualReviewNote": "Sourced as exact Wikimedia File identity, awaiting updated contact-sheet review."
+    },
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 218008,
+      "sha256": "4ad317d89419dba21d2fb4e465575a3c5be3c24375e46d543676105b04451f36",
+      "pixelFingerprint": "ac424d6e05e1fc7108817dfeb3c615b6a5bc11125eaaac85777130437a81c36c",
+      "key": "scene-3",
+      "localPath": "/images/travel/chiang-mai-premium/destination/scene-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wat_Phra_Singh,_Chiang_Mai.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Wat_Phra_Singh%2C_Chiang_Mai.jpg/1920px-Wat_Phra_Singh%2C_Chiang_Mai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Chalerm-a",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Wat Phra Singh · architecture sacrée de l'ancienne capitale Lanna",
+      "enCaption": "Wat Phra Singh temple in historic Chiang Mai",
+      "originalAlt": "Wat Phra Singh, Chiang Mai.jpg",
+      "visualReviewNote": "Sourced as exact Wikimedia File identity, awaiting updated contact-sheet review."
     },
     {
       "originalSize": [
@@ -92,58 +120,86 @@
     {
       "originalSize": [
         1920,
-        1440
+        1272
       ],
       "outputSize": [
         1600,
-        1200
+        1060
       ],
-      "bytes": 705628,
-      "sha256": "8561e3dbb3d16c3ecd417a870a45244aca450b56bcc3281244ffaaa17c85be58",
-      "pixelFingerprint": "b737f5411ecee160f82da56a1f0705d896c0500abc7f60fe675c1957f9f2a80a",
+      "bytes": 388650,
+      "sha256": "31f6652c18c94f32672dbdd8a95a23453c2d13bec4c4dc92a9c3ba1c76710ebe",
+      "pixelFingerprint": "bae9104e32e8da2aa35b88ae1fffd21c99d4f1855810432de6d160645a073952",
       "key": "scene-5",
       "localPath": "/images/travel/chiang-mai-premium/destination/scene-5.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wat_Ket,_Mueang_Chiang_Mai_District,_Chiang_Mai_50000,_Thailand_-_panoramio_(2).jpg",
-      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Wat_Ket%2C_Mueang_Chiang_Mai_District%2C_Chiang_Mai_50000%2C_Thailand_-_panoramio_%282%29.jpg/1920px-Wat_Ket%2C_Mueang_Chiang_Mai_District%2C_Chiang_Mai_50000%2C_Thailand_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "credit": "mohigan",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "rightsEvidenceType": "wikimedia_license_metadata",
-      "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Wat Gate et les bords du Ping",
-      "enCaption": "Wat Gate along the Ping River",
-      "originalAlt": "Wat Ket, Mueang Chiang Mai District, Chiang Mai 50000, Thailand - panoramio (2).jpg",
-      "searchIntent": "Wat Ket Chiang Mai Ping River"
-    },
-    {
-      "originalSize": [
-        1024,
-        683
-      ],
-      "outputSize": [
-        1024,
-        683
-      ],
-      "bytes": 52808,
-      "sha256": "caec21434f0a2bdafec5e374d663b76efaed1ba02cf42ba0a6c079311da9e847",
-      "pixelFingerprint": "6783747705dacc859fcc8cb1f8986c4dd0dd2cb529b0ebf6630a4b8f5be786e3",
-      "key": "scene-6",
-      "localPath": "/images/travel/chiang-mai-premium/destination/scene-6.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:LoyKrathong2014.jpg",
-      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/LoyKrathong2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
-      "credit": "Jonathan144",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Watket.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Watket.jpg/1920px-Watket.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Vichitsilp",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Les ponts et la rivière Ping en ville",
-      "enCaption": "Bridges over the Ping River in central Chiang Mai",
-      "originalAlt": "LoyKrathong2014.jpg",
-      "searchIntent": "Chiang Mai Mae Ping River bridge"
+      "frCaption": "Wat Ket Karam · temple historique du quartier Wat Gate",
+      "enCaption": "Wat Ket Karam temple in Chiang Mai's Wat Gate district",
+      "originalAlt": "Watket.jpg",
+      "visualReviewNote": "Sourced as exact Wikimedia File identity, awaiting updated contact-sheet review."
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "bytes": 224738,
+      "sha256": "a79abda4436cb936a163696792a47de2d7758741653e6bf727fb9360e18a04e4",
+      "pixelFingerprint": "067e59fd036937618fa12aff43f671c20f784aa06c98948f16a05ac91315a368",
+      "key": "scene-6",
+      "localPath": "/images/travel/chiang-mai-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ping_River_in_Chiang_Mai_1.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Ping_River_in_Chiang_Mai_1.jpg/1920px-Ping_River_in_Chiang_Mai_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Rivière Ping, vue depuis le pont Chansom Memorial",
+      "enCaption": "Ping River from Chansom Memorial Bridge",
+      "originalAlt": "Ping River in Chiang Mai 1.jpg",
+      "visualReviewNote": "Sourced as exact Wikimedia File identity, awaiting updated contact-sheet review."
+    },
+    {
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1600,
+        900
+      ],
+      "bytes": 376100,
+      "sha256": "a4d4ecbd84548fb766d92d961ff43532ec9f78fc0560c6309138a672a9c0746a",
+      "pixelFingerprint": "7e8f6656573e4478039c006e5ed4ad4f32ffd57b3551d4b2cc0dd5fa31aa1dd2",
+      "key": "scene-7",
+      "localPath": "/images/travel/chiang-mai-premium/destination/scene-7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Thai_-_rizi%C3%A8re.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Thai_-_rizi%C3%A8re.jpg/1920px-Thai_-_rizi%C3%A8re.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "PA",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Rizières photographiées dans la région de Chiang Mai, pas une promesse de vue depuis l'hôtel",
+      "enCaption": "Rice fields photographed near Chiang Mai, not a guaranteed hotel view",
+      "originalAlt": "Thai - rizière.jpg",
+      "visualReviewNote": "Sourced as exact Wikimedia File identity, awaiting updated contact-sheet review."
     },
     {
       "originalSize": [
@@ -292,6 +348,186 @@
     },
     {
       "originalSize": [
+        2424,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        845
+      ],
+      "bytes": 428228,
+      "sha256": "ba48c28c449c3b3f2b9bb2134d15e3d4090c94dc0d1a721ac42b71303ceb2b4c",
+      "pixelFingerprint": "cab60f621b0a5da63c7821447f9d785dc47c40fad4da45789a58874b672503f1",
+      "key": "view-1",
+      "propertyKey": "four-seasons",
+      "property": "Four Seasons Resort Chiang Mai",
+      "localPath": "/images/travel/chiang-mai-premium/four-seasons/view-1.webp",
+      "sourcePage": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/",
+      "downloadUrl": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/CHI_758.jpg",
+      "credit": "Four Seasons Resort Chiang Mai official publisher; photographer licence not independently verified",
+      "license": "Official hotel press media; commercial republication rights not independently confirmed.",
+      "licenseUrl": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Four Seasons Chiang Mai press photograph CHI 758",
+      "frCaption": "Four Seasons Resort Chiang Mai · média officiel à vérifier individuellement",
+      "enCaption": "Four Seasons Resort Chiang Mai · official publisher image pending individual visual check",
+      "visualReviewNote": "Publisher identity confirmed from official media library; individual photo content requires manual review."
+    },
+    {
+      "originalSize": [
+        2444,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        838
+      ],
+      "bytes": 500232,
+      "sha256": "34c1f8fe312c1419602ea4b15d1e6360ac82115fa6eee0792b548260bbf4fa36",
+      "pixelFingerprint": "37324788359c173284456196324901f706c8a4d14b77da73b45fe9ace6743b75",
+      "key": "view-2",
+      "propertyKey": "four-seasons",
+      "property": "Four Seasons Resort Chiang Mai",
+      "localPath": "/images/travel/chiang-mai-premium/four-seasons/view-2.webp",
+      "sourcePage": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/",
+      "downloadUrl": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/CHI_1402.jpg",
+      "credit": "Four Seasons Resort Chiang Mai official publisher; photographer licence not independently verified",
+      "license": "Official hotel press media; commercial republication rights not independently confirmed.",
+      "licenseUrl": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Four Seasons Chiang Mai press photograph CHI 1402",
+      "frCaption": "Four Seasons Resort Chiang Mai · média officiel à vérifier individuellement",
+      "enCaption": "Four Seasons Resort Chiang Mai · official publisher image pending individual visual check",
+      "visualReviewNote": "Publisher identity confirmed from official media library; individual photo content requires manual review."
+    },
+    {
+      "originalSize": [
+        1919,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 217680,
+      "sha256": "9f2b6ece9340d28234b31183745a09e82a59b7aaf2b0236945eb5a03e7dff8a1",
+      "pixelFingerprint": "f82ec8fcf82c95620b9055a873d445b05939c0d60cb728d659e8949be0bf1b2d",
+      "key": "view-3",
+      "propertyKey": "four-seasons",
+      "property": "Four Seasons Resort Chiang Mai",
+      "localPath": "/images/travel/chiang-mai-premium/four-seasons/view-3.webp",
+      "sourcePage": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/",
+      "downloadUrl": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/CHI_1555.jpg",
+      "credit": "Four Seasons Resort Chiang Mai official publisher; photographer licence not independently verified",
+      "license": "Official hotel press media; commercial republication rights not independently confirmed.",
+      "licenseUrl": "https://www.fourseasonsthailand.com/press-kit/fs-chiang-mai/",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Four Seasons Chiang Mai press photograph CHI 1555",
+      "frCaption": "Four Seasons Resort Chiang Mai · média officiel à vérifier individuellement",
+      "enCaption": "Four Seasons Resort Chiang Mai · official publisher image pending individual visual check",
+      "visualReviewNote": "Publisher identity confirmed from official media library; individual photo content requires manual review."
+    },
+    {
+      "originalSize": [
+        4344,
+        2896
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 349246,
+      "sha256": "cb9349e4f897c9703bf51db35371ad8b9bb4624fbf89e27704f10ebaeecb361a",
+      "pixelFingerprint": "a0b3559db1dcd1e714e57d596e15e693ad85f048f70e6710a147d736346a1d2e",
+      "key": "view-1",
+      "propertyKey": "pillars",
+      "property": "137 Pillars House Chiang Mai",
+      "localPath": "/images/travel/chiang-mai-premium/pillars/view-1.webp",
+      "sourcePage": "https://137pillarshotels.com/en/media/images/",
+      "downloadUrl": "https://137pillarshotels.com/media/assets/facilities/01_The_HouseM.jpg",
+      "credit": "137 Pillars House Chiang Mai official publisher; photographer licence not independently verified",
+      "license": "Official hotel press media; commercial republication rights not independently confirmed.",
+      "licenseUrl": "https://137pillarshotels.com/en/media/images/",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Historic 137 Pillars House timber residence",
+      "frCaption": "137 Pillars House Chiang Mai · média officiel à vérifier individuellement",
+      "enCaption": "137 Pillars House Chiang Mai · official publisher image pending individual visual check",
+      "visualReviewNote": "Publisher identity confirmed from official media library; individual photo content requires manual review."
+    },
+    {
+      "originalSize": [
+        4325,
+        2884
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 331528,
+      "sha256": "682dc8476b6845fa1a394f513301dbcd6fa35894855a65056f5ad1b36e089ee3",
+      "pixelFingerprint": "4c28cd44aa9db41267f18bcabee5c915d0528d2178735c04602810c339a84821",
+      "key": "view-2",
+      "propertyKey": "pillars",
+      "property": "137 Pillars House Chiang Mai",
+      "localPath": "/images/travel/chiang-mai-premium/pillars/view-2.webp",
+      "sourcePage": "https://137pillarshotels.com/en/media/images/",
+      "downloadUrl": "https://137pillarshotels.com/media/assets/facilities/02_Lobby1M.jpg",
+      "credit": "137 Pillars House Chiang Mai official publisher; photographer licence not independently verified",
+      "license": "Official hotel press media; commercial republication rights not independently confirmed.",
+      "licenseUrl": "https://137pillarshotels.com/en/media/images/",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Lobby at 137 Pillars House Chiang Mai",
+      "frCaption": "137 Pillars House Chiang Mai · média officiel à vérifier individuellement",
+      "enCaption": "137 Pillars House Chiang Mai · official publisher image pending individual visual check",
+      "visualReviewNote": "Publisher identity confirmed from official media library; individual photo content requires manual review."
+    },
+    {
+      "originalSize": [
+        4331,
+        2887
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 187254,
+      "sha256": "4307e497a760f6a289130e81123268ef28357f814856045502525feb4183e2af",
+      "pixelFingerprint": "ca23d7d2979a716e4abd07c1876962f81870f4fbfd5f88ccf2443235348b043b",
+      "key": "view-3",
+      "propertyKey": "pillars",
+      "property": "137 Pillars House Chiang Mai",
+      "localPath": "/images/travel/chiang-mai-premium/pillars/view-3.webp",
+      "sourcePage": "https://137pillarshotels.com/en/media/images/",
+      "downloadUrl": "https://137pillarshotels.com/media/assets/suites/09_Louis_Leonowens_Pool_Suites-BedM.jpg",
+      "credit": "137 Pillars House Chiang Mai official publisher; photographer licence not independently verified",
+      "license": "Official hotel press media; commercial republication rights not independently confirmed.",
+      "licenseUrl": "https://137pillarshotels.com/en/media/images/",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Louis Leonowens Pool Suite bedroom",
+      "frCaption": "137 Pillars House Chiang Mai · média officiel à vérifier individuellement",
+      "enCaption": "137 Pillars House Chiang Mai · official publisher image pending individual visual check",
+      "visualReviewNote": "Publisher identity confirmed from official media library; individual photo content requires manual review."
+    },
+    {
+      "originalSize": [
         1280,
         720
       ],
@@ -378,6 +614,6 @@
       "enCaption": "Raya Heritage · official publisher photo pending visual check"
     }
   ],
-  "visualQA": "PENDING_INDIVIDUAL_PHOTO_REVIEW",
+  "visualQA": "PENDING_FINAL_21_IMAGE_VISUAL_REVIEW",
   "publicUseApproved": false
 }
