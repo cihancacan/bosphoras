@@ -48,3 +48,5 @@ export const bangkokSchemaSafePhotos=new Set(
 export const bangkokPhotoLicenses:Record<string,{name:string;url:string}>=Object.fromEntries(
  manifest.destinationScenes.filter(approvedBangkokScene).map(p=>[p.localPath,{name:p.license,url:p.licenseUrl}])
 );
+
+// Bangkok 9 city photographs CC-licensed; 3 Mandarin historic CC; other publisher photos only in protected owner noindex Preview.
