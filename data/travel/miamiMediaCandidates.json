@@ -1,0 +1,335 @@
+{
+  "destination": "miami",
+  "scope": "owner_noindex_preview",
+  "note": "Hotel publisher reuse rights unverified; review each photo, no production indexing",
+  "cityCount": 6,
+  "hotelCount": 6,
+  "destinationScenes": [
+    {
+      "originalSize": [
+        1000,
+        589
+      ],
+      "outputSize": [
+        1000,
+        589
+      ],
+      "bytes": 142524,
+      "sha256": "a74e867234a12ba584524a0e4275fb228793907070d6fd4de10d40ad9b546187",
+      "key": "scene-1",
+      "localPath": "/images/travel/miami-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Miamimetroarea.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Miamimetroarea.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Miamiboyz ( talk )",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/licenses/",
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "Vue aérienne de Miami Beach et de la côte atlantique",
+      "enCaption": "Aerial view of Miami Beach and its Atlantic coastline",
+      "commonsTitle": "File:Miamimetroarea.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1275
+      ],
+      "outputSize": [
+        1800,
+        1195
+      ],
+      "bytes": 347608,
+      "sha256": "415a4d64de669f2c05a878416d2f112607b82fa06ce1c079fb76de764e377945",
+      "key": "scene-2",
+      "localPath": "/images/travel/miami-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ocean_Drive_-_Art_Deco_buildings_in_Miami_(5410502514).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Ocean_Drive_-_Art_Deco_buildings_in_Miami_%285410502514%29.jpg/1920px-Ocean_Drive_-_Art_Deco_buildings_in_Miami_%285410502514%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Jorge Láscar from Australia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "Architecture Art déco de South Beach",
+      "enCaption": "Art Deco streets in South Beach",
+      "commonsTitle": "File:Ocean Drive - Art Deco buildings in Miami (5410502514).jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1800,
+        1350
+      ],
+      "bytes": 526560,
+      "sha256": "72968e29f859e370bcd81528c73095956d2d2b5b28aeb8c329bb7b757bdbc6bf",
+      "key": "scene-4",
+      "localPath": "/images/travel/miami-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Surfside,_FL,_USA_-_panoramio.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Surfside%2C_FL%2C_USA_-_panoramio.jpg/1920px-Surfside%2C_FL%2C_USA_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Gervacio Rosales",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "Littoral paisible de Surfside",
+      "enCaption": "Quiet Surfside coastline near Miami Beach",
+      "commonsTitle": "File:Surfside, FL, USA - panoramio.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1800,
+        1350
+      ],
+      "bytes": 269332,
+      "sha256": "f287ad374f5e43d70060f0df4afa530f00056bac72b6e446f2e3e6d6bdf40c60",
+      "key": "scene-6",
+      "localPath": "/images/travel/miami-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:April_7,_2015_-_Wynwood_Miami_-_02.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/April_7%2C_2015_-_Wynwood_Miami_-_02.jpg/1920px-April_7%2C_2015_-_Wynwood_Miami_-_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "osseous",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "Street art dans le quartier de Wynwood",
+      "enCaption": "Wynwood street art, Miami",
+      "commonsTitle": "File:April 7, 2015 - Wynwood Miami - 02.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1800,
+        1350
+      ],
+      "bytes": 385216,
+      "sha256": "47b27bfd3552d6894a40a86723ae0a582185ffa32c2ca82df502633a4434d74c",
+      "key": "scene-7",
+      "localPath": "/images/travel/miami-premium/destination/scene-7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Biscayne_Bay_south.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Biscayne_Bay_south.jpg/1920px-Biscayne_Bay_south.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "No machine-readable author provided. Averette assumed (based on copyright claims).",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "Skyline de Miami depuis la baie",
+      "enCaption": "Miami skyline across Biscayne Bay",
+      "commonsTitle": "File:Biscayne Bay south.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        2647
+      ],
+      "outputSize": [
+        1052,
+        1450
+      ],
+      "bytes": 101088,
+      "sha256": "7b1968952180dc33725a843e7ae2a9c44463749c2ad654477a891bbead5ae337",
+      "key": "scene-8",
+      "localPath": "/images/travel/miami-premium/destination/scene-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:1630_EUCLID_AVENUE_(MIAMI_DESIGN_PRESERVATION_LEAGUE),_EAST_ELEVATION_-_Miami_Beach_Art_Deco_Historic_District,_Miami,_Miami-Dade_County,_FL_HABS_FLA,13-MIAM,5-15.tif",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/1630_EUCLID_AVENUE_%28MIAMI_DESIGN_PRESERVATION_LEAGUE%29%2C_EAST_ELEVATION_-_Miami_Beach_Art_Deco_Historic_District%2C_Miami%2C_Miami-Dade_County%2C_FL_HABS_FLA%2C13-MIAM%2C5-15.tif/lossy-page1-1920px-thumbnail.tif.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Smalling, Walter Jr. Related names: Kasparek, Kate, transmitter",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/licenses/",
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_cc_attribution",
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "frCaption": "L’architecture du Miami Design District",
+      "enCaption": "Architecture of the Miami Design District",
+      "commonsTitle": "File:1630 EUCLID AVENUE (MIAMI DESIGN PRESERVATION LEAGUE), EAST ELEVATION - Miami Beach Art Deco Historic District, Miami, Miami-Dade County, FL HABS FLA,13-MIAM,5-15.tif"
+    }
+  ],
+  "hotels": [
+    {
+      "originalSize": [
+        1800,
+        800
+      ],
+      "outputSize": [
+        1800,
+        800
+      ],
+      "bytes": 143852,
+      "sha256": "11bcfd68698f863d03ef08b4973f210b6e1046c15e5365ab4691ba453b178797",
+      "key": "view-1",
+      "propertyKey": "faena",
+      "property": "Faena Hotel Miami Beach",
+      "localPath": "/images/travel/miami-premium/faena/view-1.webp",
+      "sourcePage": "https://www.faena.com/miami-beach/accommodations",
+      "downloadUrl": "https://www.faena.com/sites/default/files/styles/room_card_d/public/2025-11/Penthouse%20Living%20Room%206912x3980_0.jpg?h=c3c83b34&itok=Knde4d0Y",
+      "credit": "Faena Hotel Miami Beach — original hotel publisher (creator licence unverified)",
+      "license": "Hotel publisher media; private owner preview only, rights not independently cleared.",
+      "licenseUrl": "https://www.faena.com/miami-beach/accommodations",
+      "status": "source_identified_private_preview",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "visuallyVerified": false,
+      "frCaption": "Faena Hotel Miami Beach · photographie de l’établissement (vérification visuelle requise)",
+      "enCaption": "Faena Hotel Miami Beach · property publisher photograph (visual approval pending)",
+      "originalAlt": " "
+    },
+    {
+      "originalSize": [
+        1200,
+        900
+      ],
+      "outputSize": [
+        1200,
+        900
+      ],
+      "bytes": 105828,
+      "sha256": "407836d5c9d4f06416c2bbf3d779973b770fdcb00e99dbba5a38a44a5b7dbacb",
+      "key": "view-2",
+      "propertyKey": "faena",
+      "property": "Faena Hotel Miami Beach",
+      "localPath": "/images/travel/miami-premium/faena/view-2.webp",
+      "sourcePage": "https://www.faena.com/miami-beach/accommodations",
+      "downloadUrl": "https://www.faena.com/sites/default/files/styles/room_card_t/public/2025-11/Penthouse%20Living%20Room%206912x3980_0.jpg?h=c3c83b34&itok=NgJbk_Do",
+      "credit": "Faena Hotel Miami Beach — original hotel publisher (creator licence unverified)",
+      "license": "Hotel publisher media; private owner preview only, rights not independently cleared.",
+      "licenseUrl": "https://www.faena.com/miami-beach/accommodations",
+      "status": "source_identified_private_preview",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "visuallyVerified": false,
+      "frCaption": "Faena Hotel Miami Beach · photographie de l’établissement (vérification visuelle requise)",
+      "enCaption": "Faena Hotel Miami Beach · property publisher photograph (visual approval pending)",
+      "originalAlt": " "
+    },
+    {
+      "originalSize": [
+        800,
+        525
+      ],
+      "outputSize": [
+        800,
+        525
+      ],
+      "bytes": 53912,
+      "sha256": "a6002cdbade22b69932f70e501e56c35ac8b9f29b3158e0677b5a447bd772cff",
+      "key": "view-3",
+      "propertyKey": "faena",
+      "property": "Faena Hotel Miami Beach",
+      "localPath": "/images/travel/miami-premium/faena/view-3.webp",
+      "sourcePage": "https://www.faena.com/miami-beach/accommodations",
+      "downloadUrl": "https://www.faena.com/sites/default/files/styles/room_card_m/public/2025-11/Penthouse%20Living%20Room%206912x3980_0.jpg?h=c3c83b34&itok=jHUjxoHf",
+      "credit": "Faena Hotel Miami Beach — original hotel publisher (creator licence unverified)",
+      "license": "Hotel publisher media; private owner preview only, rights not independently cleared.",
+      "licenseUrl": "https://www.faena.com/miami-beach/accommodations",
+      "status": "source_identified_private_preview",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "visuallyVerified": false,
+      "frCaption": "Faena Hotel Miami Beach · photographie de l’établissement (vérification visuelle requise)",
+      "enCaption": "Faena Hotel Miami Beach · property publisher photograph (visual approval pending)",
+      "originalAlt": " "
+    },
+    {
+      "originalSize": [
+        1280,
+        547
+      ],
+      "outputSize": [
+        1280,
+        547
+      ],
+      "bytes": 85622,
+      "sha256": "cb50dc9dc17c87f4910f52516434c1755985e43bd9ddf2fc5553f269f2e53c2d",
+      "key": "view-1",
+      "propertyKey": "edition",
+      "property": "The Miami Beach EDITION",
+      "localPath": "/images/travel/miami-premium/edition/view-1.webp",
+      "sourcePage": "https://www.editionhotels.com/miami-beach/rooms-and-suites/",
+      "downloadUrl": "https://www.editionhotels.com/wp-content/uploads/2020/03/Miami-Beach-Destinatino-e1582756335578.jpg",
+      "credit": "The Miami Beach EDITION — original hotel publisher (creator licence unverified)",
+      "license": "Hotel publisher media; private owner preview only, rights not independently cleared.",
+      "licenseUrl": "https://www.editionhotels.com/miami-beach/rooms-and-suites/",
+      "status": "source_identified_private_preview",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "visuallyVerified": false,
+      "frCaption": "The Miami Beach EDITION · photographie de l’établissement (vérification visuelle requise)",
+      "enCaption": "The Miami Beach EDITION · property publisher photograph (visual approval pending)",
+      "originalAlt": "North America "
+    },
+    {
+      "originalSize": [
+        1976,
+        1441
+      ],
+      "outputSize": [
+        1800,
+        1313
+      ],
+      "bytes": 325104,
+      "sha256": "b829513dd0dca438798bebe65f731f21637bd805817de51cdf314f988759793b",
+      "key": "view-2",
+      "propertyKey": "edition",
+      "property": "The Miami Beach EDITION",
+      "localPath": "/images/travel/miami-premium/edition/view-2.webp",
+      "sourcePage": "https://www.editionhotels.com/miami-beach/rooms-and-suites/",
+      "downloadUrl": "https://www.editionhotels.com/wp-content/uploads/2020/03/Europe.jpg",
+      "credit": "The Miami Beach EDITION — original hotel publisher (creator licence unverified)",
+      "license": "Hotel publisher media; private owner preview only, rights not independently cleared.",
+      "licenseUrl": "https://www.editionhotels.com/miami-beach/rooms-and-suites/",
+      "status": "source_identified_private_preview",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "visuallyVerified": false,
+      "frCaption": "The Miami Beach EDITION · photographie de l’établissement (vérification visuelle requise)",
+      "enCaption": "The Miami Beach EDITION · property publisher photograph (visual approval pending)",
+      "originalAlt": "Europe "
+    },
+    {
+      "originalSize": [
+        1440,
+        960
+      ],
+      "outputSize": [
+        1440,
+        960
+      ],
+      "bytes": 150828,
+      "sha256": "5507c79ec7af9644e905e13c5c34659ca8aa681a1910dd10cb15a624ec173bb3",
+      "key": "view-3",
+      "propertyKey": "edition",
+      "property": "The Miami Beach EDITION",
+      "localPath": "/images/travel/miami-premium/edition/view-3.webp",
+      "sourcePage": "https://www.editionhotels.com/miami-beach/rooms-and-suites/",
+      "downloadUrl": "https://www.editionhotels.com/wp-content/uploads/2018/11/EDT_Sanya2_56_RGB_V2-e1486880580445.jpg",
+      "credit": "The Miami Beach EDITION — original hotel publisher (creator licence unverified)",
+      "license": "Hotel publisher media; private owner preview only, rights not independently cleared.",
+      "licenseUrl": "https://www.editionhotels.com/miami-beach/rooms-and-suites/",
+      "status": "source_identified_private_preview",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "operator_publisher_not_commercially_cleared",
+      "visuallyVerified": false,
+      "frCaption": "The Miami Beach EDITION · photographie de l’établissement (vérification visuelle requise)",
+      "enCaption": "The Miami Beach EDITION · property publisher photograph (visual approval pending)",
+      "originalAlt": "Asia Pacific "
+    }
+  ]
+}
