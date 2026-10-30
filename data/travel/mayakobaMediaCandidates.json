@@ -368,32 +368,32 @@
     },
     {
       "originalSize": [
-        3000,
-        1688
+        1920,
+        1080
       ],
       "outputSize": [
         1800,
         1013
       ],
-      "bytes": 490078,
-      "sha256": "986bb1c01a2f38355337852f4b4db07d720b38d9339be841a54ec5b141c80d7b",
-      "pixelFingerprint": "9cea0f50189359a0cdfd8f170e9e9a84adcdf440da39c2fcaa03b3efd97fe0eb",
+      "bytes": 520706,
+      "sha256": "58668393c421cb478718b202c5aef8ab8e8e3d26206c11274e9013591843b102",
+      "pixelFingerprint": "082d170e39ce4f103f0cdef1cf7c4654e4758566134864fd900a42eac391d1c9",
       "key": "view-2",
       "localPath": "/images/travel/mayakoba-premium/banyan-tree/view-2.webp",
       "sourcePage": "https://www.banyantree.com/mexico/mayakoba",
-      "downloadUrl": "https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2024-05%2FBTMXMY_AERIALVIEWLAGOON%20(1).jpg&w=3840&q=65",
-      "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
+      "downloadUrl": "https://www.banyantree.com/assets/2021-10/Sands-and-Beachfront-Pool-Suites_Aerial-View.jpg",
+      "credit": "Banyan Tree Mayakoba — official property beachfront pool suites (creator rights not independently verified)",
       "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
       "licenseUrl": "https://www.banyantree.com/mexico/mayakoba",
       "commercialRightsCleared": false,
       "status": "source_identified_private_preview",
       "visuallyVerified": false,
-      "originalAlt": "AERIAL VIEW LAGOON MAYAKOBA",
+      "originalAlt": "Banyan Tree Mayakoba beachfront pool suites aerial property photo",
       "propertyKey": "banyan-tree",
       "property": "Banyan Tree Mayakoba",
       "rightsEvidenceType": "official_hotel_destination_publisher_not_commercially_cleared",
-      "frCaption": "Banyan Tree Mayakoba · photographie officielle du resort (détail à confirmer)",
-      "enCaption": "Banyan Tree Mayakoba · property-publisher photo (detail pending review)"
+      "frCaption": "Banyan Tree Mayakoba · suites avec piscine près de la plage",
+      "enCaption": "Banyan Tree Mayakoba · beachfront pool suites"
     },
     {
       "originalSize": [
