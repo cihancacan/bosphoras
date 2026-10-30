@@ -1,0 +1,55 @@
+{
+  "sceneFound": 9,
+  "hotelsFound": 11,
+  "expected": [
+    9,
+    12
+  ],
+  "hotelReports": [
+    {
+      "property": "Rayavadee",
+      "found": 46,
+      "downloaded": 2,
+      "errors": [
+        "photo too small",
+        "photo too small",
+        "photo too small",
+        "photo too small",
+        "photo too small",
+        "photo too small"
+      ]
+    },
+    {
+      "property": "Phulay Bay, a Ritz-Carlton Reserve",
+      "found": 51,
+      "downloaded": 3,
+      "errors": [
+        "photo too small",
+        "photo too small",
+        "photo too small",
+        "photo too small",
+        "photo too small",
+        "photo too small"
+      ]
+    },
+    {
+      "property": "Banyan Tree Krabi",
+      "found": 61,
+      "downloaded": 3,
+      "errors": []
+    },
+    {
+      "property": "The Tubkaak Krabi Boutique Resort",
+      "found": 185,
+      "downloaded": 3,
+      "errors": [
+        "photo too small",
+        "photo too small",
+        "photo too small"
+      ]
+    }
+  ],
+  "errors": [],
+  "allImagesVisuallyApproved": false,
+  "publicUseApproved": false
+}
