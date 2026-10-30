@@ -1,0 +1,38 @@
+name: Travel Miami — final named Surf Club hotel image
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: [scripts/finalize-miami-surf-club.py, .github/workflows/travel-miami-surf-club-final.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: travel-miami-surf-club-final
+  cancel-in-progress: false
+jobs:
+  source-and-commit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m pip install 'requests>=2.31,<3' 'Pillow>=10,<12'
+      - run: python -u scripts/finalize-miami-surf-club.py
+      - run: node scripts/check-travel-catalogue.mjs
+      - name: Push only validated Miami photo and rights manifest without Vercel build
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- public/images/travel/miami-premium/surf-club/view-3.webp data/travel/miamiMediaCandidates.json
+          git commit -m 'assets(travel): Surf Club guest-room photo verified; Miami 21/21 source entries [skip ci]'
+          for i in 1 2 3 4 5; do
+            git fetch origin feature/luxury-travel-seo-destinations-20261012
+            git rebase origin/feature/luxury-travel-seo-destinations-20261012
+            if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then exit 0; fi
+            sleep 2
+          done
+          exit 1
