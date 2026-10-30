@@ -62,7 +62,7 @@ def commons_entry(t):
  info=pages[0]["imageinfo"][0];meta=info.get("extmetadata",{})
  lic=clean_html(meta.get("LicenseShortName",{}).get("value",""))
  author=clean_html(meta.get("Artist",{}).get("value",""))
- if not re.match(r"^(CC BY(?:-SA)? [234]\\.0|CC0|Public domain)",lic,re.I):
+ if not re.match(r"^(CC BY(?:-SA)? [234]\.0|CC0|Public domain)",lic,re.I):
   raise ValueError("Unsupported licence "+title+" "+lic)
  licence_url=meta.get("LicenseUrl",{}).get("value","") or "https://creativecommons.org/licenses/"
  u=info.get("thumburl") or info["url"]
@@ -86,7 +86,7 @@ def extract_candidates(url):
   uri=urllib.parse.urljoin(url,html.unescape(raw).replace("\\u002F","/"))
   uri=uri.replace("&amp;","&")
   p=urllib.parse.urlsplit(uri)
-  if p.scheme!="https" or not re.search(r"\\.(jpe?g|webp|png)(?:$|[?&#])",uri,re.I):return
+  if p.scheme!="https" or not re.search(r"\.(jpe?g|webp|png)(?:$|[?&#])",uri,re.I):return
   domain=p.netloc.lower()
   ok=("rayavadee" in domain or "ritzcarlton" in domain or "marriott" in domain or "banyantree" in domain
       or "tubkaak" in domain or domain in ("images.unsplash.com","cf.bstatic.com"))
@@ -104,7 +104,7 @@ def extract_candidates(url):
     if variants:add(variants[-1],alt)
    else:add(v,alt)
  for meta in soup.select('meta[property="og:image"],meta[name="twitter:image"]'): add(meta.get("content"),"hotel official gallery hero")
- for hit in re.findall(r'https?:\\?/\\?/[^"\\\\\s<>]+?\\.(?:jpg|jpeg|webp|png)(?:\\?[^"\\\\<>]*)?',body,re.I)[:180]:
+ for hit in re.findall(r'https?://[^"\s<>]+?\.(?:jpg|jpeg|webp|png)(?:\?[^"\s<>]*)?',body,re.I)[:180]:
   add(hit.replace("\\/","/"),"publisher embedded image")
  print("PAGE",url,"CANDIDATES",len(found),flush=True)
  return [(u,a,url) for u,a in found]
@@ -116,7 +116,7 @@ def score(entry):
  for word,points in (("pool",6),("villa",7),("suite",7),("pavilion",7),("resort",6),("beach",6),("hotel",4),
  ("spa",5),("restaurant",4),("lobby",4),("exterior",5),("view",3),("rayavadee",3),("krabi",3)):
   if word in txt:v+=points
- if re.search(r"w=([1-9]\\d{2,})",txt):v+=1
+ if re.search(r"w=([1-9]\d{2,})",txt):v+=1
  return v
 def hotel_entries(group):
  slug,name,pages=group
@@ -164,9 +164,9 @@ def main():
   "cityCount":len(scene),"hotelCount":len(hotels),"destinationScenes":scene,"hotels":hotels,
   "visualQA":"PENDING_MANUAL_REVIEW_NO_IMAGES_APPROVED"}
  MANIFEST.parent.mkdir(parents=True,exist_ok=True)
- MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+ MANIFEST.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
  REPORT.parent.mkdir(parents=True,exist_ok=True)
- REPORT.write_text(json.dumps({"sceneFound":len(scene),"hotelsFound":len(hotels),"expected":[9,12],"hotelReports":results,"errors":errors,"allImagesVisuallyApproved":False,"publicUseApproved":False},ensure_ascii=False,indent=2)+"\\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"sceneFound":len(scene),"hotelsFound":len(hotels),"expected":[9,12],"hotelReports":results,"errors":errors,"allImagesVisuallyApproved":False,"publicUseApproved":False},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
  print("KRABI_MEDIA_RESULT",len(scene),len(hotels),"of expected 9+12",flush=True)
  if len(scene)<9 or len(hotels)<12:print("INCOMPLETE_CANDIDATES: destination is not ready for registration",flush=True)
 if __name__=="__main__":main()
