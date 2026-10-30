@@ -2,8 +2,8 @@
   "destination": "bangkok",
   "scope": "protected_owner_preview_only",
   "rightsNotice": "No hotel publisher photo may be redistributed commercially without separate authorisation.",
-  "cityCount": 8,
-  "hotelCount": 9,
+  "cityCount": 9,
+  "hotelCount": 12,
   "destinationScenes": [
     {
       "originalSize": [
@@ -116,6 +116,34 @@
       "frCaption": "Charoen Krung et la ville ancienne",
       "enCaption": "Charoen Krung and Bangkok old town",
       "searchIntent": "Charoen Krung Bangkok old town street"
+    },
+    {
+      "key": "scene-5",
+      "localPath": "/images/travel/bangkok-premium/destination/scene-5.webp",
+      "frCaption": "Dusit · le bâtiment historique de l’Ananta Samakhom Throne Hall",
+      "enCaption": "Dusit · historic Ananta Samakhom Throne Hall",
+      "originalSize": [
+        1920,
+        1279
+      ],
+      "outputSize": [
+        1600,
+        1066
+      ],
+      "bytes": 426752,
+      "sha256": "0a9ff0da7b9cc4ee8857d3e10f7220cab58fc3ebc6dea7dd624547d3e66b9178",
+      "pixelFingerprint": "3f515fde275b305fdfa300367bc6e4e26dd78b2471bf9899babd4f14b0c2002c",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bangkok_The_Ananta_Samakhom_Throne_Hall_1.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Bangkok_The_Ananta_Samakhom_Throne_Hall_1.jpg/1920px-Bangkok_The_Ananta_Samakhom_Throne_Hall_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Mr.Peerapong Prasutr",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Bangkok The Ananta Samakhom Throne Hall 1.jpg",
+      "croppedOrResized": "WebP conversion and resize to 1600 x 1200 maximum"
     },
     {
       "originalSize": [
@@ -233,6 +261,93 @@
   "hotels": [
     {
       "originalSize": [
+        906,
+        906
+      ],
+      "outputSize": [
+        906,
+        906
+      ],
+      "bytes": 107486,
+      "sha256": "e13626ea88aa1d3d55c2de4b1fdc8ae5312bd923fd375c926784f87565f6be72",
+      "pixelFingerprint": "73b7d80bc341883c92e9e1fa6686c342e5af03c76c4fc14ded7144ee30f9aff5",
+      "key": "view-1",
+      "propertyKey": "aman-nai-lert",
+      "property": "Aman Nai Lert Bangkok",
+      "localPath": "/images/travel/bangkok-premium/aman-nai-lert/view-1.webp",
+      "sourcePage": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/masonry_extra_large_2x/public/2025-04/aman_nai_lert_bangkok_hotel_exterior_03524_900x900.webp?itok=DwRNGKEN",
+      "credit": "Aman Nai Lert Bangkok official publisher; photographer not separately identified",
+      "license": "Official publisher image; independent commercial republication rights not verified.",
+      "licenseUrl": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
+      "frCaption": "Aman Nai Lert Bangkok · photographie officielle à contrôler",
+      "enCaption": "Aman Nai Lert Bangkok · official property photograph for individual review"
+    },
+    {
+      "originalSize": [
+        900,
+        900
+      ],
+      "outputSize": [
+        900,
+        900
+      ],
+      "bytes": 160212,
+      "sha256": "ee4563e00d6128c649c126d78351e4a4afc14c1f8b157778588a5ea8aad6fe81",
+      "pixelFingerprint": "4b5fcce5451c81c42af420793db96f548c3a57d6f27299886d09ffe951ffff93",
+      "key": "view-2",
+      "propertyKey": "aman-nai-lert",
+      "property": "Aman Nai Lert Bangkok",
+      "localPath": "/images/travel/bangkok-premium/aman-nai-lert/view-2.webp",
+      "sourcePage": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/full_size_browser%402x/public/2025-04/aman_nai_lert_bangkok_hotel_exterior_03524_900x900.jpg?itok=0PAWDfy2",
+      "credit": "Aman Nai Lert Bangkok official publisher; photographer not separately identified",
+      "license": "Official publisher image; independent commercial republication rights not verified.",
+      "licenseUrl": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "embedded official image",
+      "frCaption": "Aman Nai Lert Bangkok · photographie officielle à contrôler",
+      "enCaption": "Aman Nai Lert Bangkok · official property photograph for individual review"
+    },
+    {
+      "originalSize": [
+        906,
+        1192
+      ],
+      "outputSize": [
+        906,
+        1192
+      ],
+      "bytes": 260676,
+      "sha256": "6dbae856d1cfc070c10476bd2d399fe8782b2edab072176bf0dedc786382dcdc",
+      "pixelFingerprint": "c80d9b918bb461837908054a947d11065cf8ef7d36650c81001c1fa0a994b3fe",
+      "key": "view-3",
+      "propertyKey": "aman-nai-lert",
+      "property": "Aman Nai Lert Bangkok",
+      "localPath": "/images/travel/bangkok-premium/aman-nai-lert/view-3.webp",
+      "sourcePage": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/masonry_extra_large_2x/public/2025-05/aman_nai_lert_bangkok_thailand_-_property_exterior.webp?itok=HJI7H-2b",
+      "credit": "Aman Nai Lert Bangkok official publisher; photographer not separately identified",
+      "license": "Official publisher image; independent commercial republication rights not verified.",
+      "licenseUrl": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
+      "frCaption": "Aman Nai Lert Bangkok · photographie officielle à contrôler",
+      "enCaption": "Aman Nai Lert Bangkok · official property photograph for individual review"
+    },
+    {
+      "originalSize": [
         1296,
         723
       ],
@@ -317,6 +432,99 @@
       "originalAlt": "ROOMS",
       "frCaption": "Capella Bangkok · photographie officielle à contrôler",
       "enCaption": "Capella Bangkok · official property photograph for individual review"
+    },
+    {
+      "key": "view-1",
+      "propertyKey": "mandarin-oriental",
+      "property": "Mandarin Oriental, Bangkok",
+      "localPath": "/images/travel/bangkok-premium/mandarin-oriental/view-1.webp",
+      "frCaption": "Mandarin Oriental Bangkok · l’Authors’ Wing historique, vue de 2022",
+      "enCaption": "Mandarin Oriental Bangkok · historic Authors’ Wing photographed in 2022",
+      "visualReviewNote": "Source Commons with attribution, historic genuine property photography; no promise about current room class or hotel facilities.",
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "bytes": 336454,
+      "sha256": "a4d5d9b9d7bfa8d9d0a263e3b67e825592245ecf247adc9de8b9490730ee0527",
+      "pixelFingerprint": "11c84dbef24f594478be3b9fc6b753282b06a26438256559f661be71d6a44036",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mandarin_Oriental_Bangkok_Authors_Wing_-_01.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Mandarin_Oriental_Bangkok_Authors_Wing_-_01.jpg/1920px-Mandarin_Oriental_Bangkok_Authors_Wing_-_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Chainwit.",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Mandarin Oriental Bangkok Authors Wing - 01.jpg",
+      "croppedOrResized": "WebP conversion and resize to 1600 x 1200 maximum"
+    },
+    {
+      "key": "view-2",
+      "propertyKey": "mandarin-oriental",
+      "property": "Mandarin Oriental, Bangkok",
+      "localPath": "/images/travel/bangkok-premium/mandarin-oriental/view-2.webp",
+      "frCaption": "Mandarin Oriental Bangkok · salon du hall photographié historiquement",
+      "enCaption": "Mandarin Oriental Bangkok · archival hotel lobby view",
+      "visualReviewNote": "Source Commons with attribution, historic genuine property photography; no promise about current room class or hotel facilities.",
+      "originalSize": [
+        1200,
+        1600
+      ],
+      "outputSize": [
+        900,
+        1200
+      ],
+      "bytes": 278124,
+      "sha256": "1c5692209f06997562e551601a7a1426a5f7fe04e82c85ea079c1e14a876378e",
+      "pixelFingerprint": "c4baaa8f26cddbfec494e3bef8e91c7232476800129ce0d17603195ddec2d3d4",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Oriental_Hotel_Bangkok_Lobby.JPG",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Oriental_Hotel_Bangkok_Lobby.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Ralf Jäckle, (Benutzer:ralfja) / Ralfja at German Wikipedia",
+      "license": "CC BY-SA 2.0 de",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Oriental Hotel Bangkok Lobby.JPG",
+      "croppedOrResized": "WebP conversion and resize to 1600 x 1200 maximum"
+    },
+    {
+      "key": "view-3",
+      "propertyKey": "mandarin-oriental",
+      "property": "Mandarin Oriental, Bangkok",
+      "localPath": "/images/travel/bangkok-premium/mandarin-oriental/view-3.webp",
+      "frCaption": "Mandarin Oriental Bangkok · chambre d’archive, non représentative des catégories actuelles",
+      "enCaption": "Mandarin Oriental Bangkok · archival room, not a current bookable room representation",
+      "visualReviewNote": "Source Commons with attribution, historic genuine property photography; no promise about current room class or hotel facilities.",
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "bytes": 259134,
+      "sha256": "15c40f398979d76bab1176e0850b9dfdab508a565465a3a9f4ec73b6ed4bacc6",
+      "pixelFingerprint": "7e7b3a063a8ffc7061f8ae368c5ad468bcc6b2c461f31a2fc284e052887cbe1c",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Another_shot_of_the_room_at_The_Oriental_Hotel,_Bangkok.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Another_shot_of_the_room_at_The_Oriental_Hotel%2C_Bangkok.jpg/1920px-Another_shot_of_the_room_at_The_Oriental_Hotel%2C_Bangkok.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Flickr user: Casper Moller London https://www.flickr.com/people/caspermoller/",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Another shot of the room at The Oriental Hotel, Bangkok.jpg",
+      "croppedOrResized": "WebP conversion and resize to 1600 x 1200 maximum"
     },
     {
       "originalSize": [
@@ -404,95 +612,8 @@
       "originalAlt": "Riverside Pool Villa at The Siam",
       "frCaption": "The Siam Bangkok · photographie officielle à contrôler",
       "enCaption": "The Siam Bangkok · official property photograph for individual review"
-    },
-    {
-      "originalSize": [
-        906,
-        906
-      ],
-      "outputSize": [
-        906,
-        906
-      ],
-      "bytes": 107486,
-      "sha256": "e13626ea88aa1d3d55c2de4b1fdc8ae5312bd923fd375c926784f87565f6be72",
-      "pixelFingerprint": "73b7d80bc341883c92e9e1fa6686c342e5af03c76c4fc14ded7144ee30f9aff5",
-      "key": "view-1",
-      "propertyKey": "aman-nai-lert",
-      "property": "Aman Nai Lert Bangkok",
-      "localPath": "/images/travel/bangkok-premium/aman-nai-lert/view-1.webp",
-      "sourcePage": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
-      "downloadUrl": "https://www.aman.com/sites/default/files/styles/masonry_extra_large_2x/public/2025-04/aman_nai_lert_bangkok_hotel_exterior_03524_900x900.webp?itok=DwRNGKEN",
-      "credit": "Aman Nai Lert Bangkok official publisher; photographer not separately identified",
-      "license": "Official publisher image; independent commercial republication rights not verified.",
-      "licenseUrl": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
-      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
-      "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "",
-      "frCaption": "Aman Nai Lert Bangkok · photographie officielle à contrôler",
-      "enCaption": "Aman Nai Lert Bangkok · official property photograph for individual review"
-    },
-    {
-      "originalSize": [
-        900,
-        900
-      ],
-      "outputSize": [
-        900,
-        900
-      ],
-      "bytes": 160212,
-      "sha256": "ee4563e00d6128c649c126d78351e4a4afc14c1f8b157778588a5ea8aad6fe81",
-      "pixelFingerprint": "4b5fcce5451c81c42af420793db96f548c3a57d6f27299886d09ffe951ffff93",
-      "key": "view-2",
-      "propertyKey": "aman-nai-lert",
-      "property": "Aman Nai Lert Bangkok",
-      "localPath": "/images/travel/bangkok-premium/aman-nai-lert/view-2.webp",
-      "sourcePage": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
-      "downloadUrl": "https://www.aman.com/sites/default/files/styles/full_size_browser%402x/public/2025-04/aman_nai_lert_bangkok_hotel_exterior_03524_900x900.jpg?itok=0PAWDfy2",
-      "credit": "Aman Nai Lert Bangkok official publisher; photographer not separately identified",
-      "license": "Official publisher image; independent commercial republication rights not verified.",
-      "licenseUrl": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
-      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
-      "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "embedded official image",
-      "frCaption": "Aman Nai Lert Bangkok · photographie officielle à contrôler",
-      "enCaption": "Aman Nai Lert Bangkok · official property photograph for individual review"
-    },
-    {
-      "originalSize": [
-        906,
-        1192
-      ],
-      "outputSize": [
-        906,
-        1192
-      ],
-      "bytes": 260676,
-      "sha256": "6dbae856d1cfc070c10476bd2d399fe8782b2edab072176bf0dedc786382dcdc",
-      "pixelFingerprint": "c80d9b918bb461837908054a947d11065cf8ef7d36650c81001c1fa0a994b3fe",
-      "key": "view-3",
-      "propertyKey": "aman-nai-lert",
-      "property": "Aman Nai Lert Bangkok",
-      "localPath": "/images/travel/bangkok-premium/aman-nai-lert/view-3.webp",
-      "sourcePage": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
-      "downloadUrl": "https://www.aman.com/sites/default/files/styles/masonry_extra_large_2x/public/2025-05/aman_nai_lert_bangkok_thailand_-_property_exterior.webp?itok=HJI7H-2b",
-      "credit": "Aman Nai Lert Bangkok official publisher; photographer not separately identified",
-      "license": "Official publisher image; independent commercial republication rights not verified.",
-      "licenseUrl": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
-      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
-      "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "",
-      "frCaption": "Aman Nai Lert Bangkok · photographie officielle à contrôler",
-      "enCaption": "Aman Nai Lert Bangkok · official property photograph for individual review"
     }
   ],
-  "visualQA": "PENDING_INDIVIDUAL_PHOTO_IDENTITY_REVIEW",
+  "visualQA": "PENDING_FINAL_INDIVIDUAL_VISUAL_REVIEW",
   "publicUseApproved": false
 }

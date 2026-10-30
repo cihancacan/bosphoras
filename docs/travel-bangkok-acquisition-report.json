@@ -1,6 +1,6 @@
 {
-  "cityCount": 8,
-  "hotelCount": 9,
+  "cityCount": 9,
+  "hotelCount": 12,
   "expected": [
     9,
     12
@@ -37,12 +37,8 @@
       ]
     }
   ],
-  "errors": [
-    {
-      "key": "scene-5",
-      "reason": "no licensed source for Bangkok Dusit Ananta Samakhom Throne Hall; []"
-    }
-  ],
+  "errors": [],
   "visuallyApproved": false,
-  "commercialHotelPhotoRights": false
+  "commercialHotelPhotoRights": false,
+  "mandarinSourceNotice": "Three authentic archival Mandarin Oriental Bangkok CC images with author and licence; not present-day room category evidence."
 }
