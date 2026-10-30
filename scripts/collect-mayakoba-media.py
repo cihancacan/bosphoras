@@ -59,10 +59,13 @@ def photos(page):
    if u:
     u=urllib.parse.urljoin(page,u)
     if u not in seen:seen.add(u);result.append((u,'Official Mayakoba page visual',page,'meta'))
- # Some wordpress pages lazily include image URLs in inline CSS or JSON.
- for u in re.findall(r'https?:(?:\\?/\\?/|//)[^"\\'\\s<>]+?\\.(?:jpg|jpeg|png|webp)(?:\\?[^"\\'\\s<>]+)?',response.text)[:100]:
-  url=u.replace('\\\\/','/').replace('\\/','/')
-  if url.startswith('https://') and url not in seen:seen.add(url);result.append((url,'Mayakoba photo',page,'embedded'))
+ # WordPress pages embed additional scenic image URLs as style attributes.
+ for tag in soup.find_all(style=True):
+  css=tag.get('style','')
+  for match in re.findall(r'url\(["\']?(https?://[^)"\']+)["\']?\)',css):
+   url=match.strip()
+   if url.startswith('https://') and url not in seen:
+    seen.add(url);result.append((url,'Mayakoba editorial background',page,'embedded'))
  print('PAGE',page,'candidates',len(result),flush=True)
  return result
 def score(item,hotel=None):
