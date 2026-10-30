@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Mayakoba 2026 #59 official destination / hotel images, owner-only noindex preview.
 Every image has a Mayakoba official source page, verified file and hotel identity.
-NO claim of commercial licence and NO image publication authorisation.
+NO claim of commercial licence and NO image publication authorisation; source-run enabled.
 """
 import requests,bs4,pathlib,json,io,re,hashlib,time,urllib.parse
 from PIL import Image,ImageOps,ImageStat
