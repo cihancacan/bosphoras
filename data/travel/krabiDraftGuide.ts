@@ -2,7 +2,8 @@
  * Not imported into the active premium guide registry until 21 independently verified photos pass QA.
  * No rates, inventory, booking partnership or rights to commercial photographs claimed.
  */
-export const krabiDraftGuide = {
+import type {FeaturedCityGuideData} from './featuredCityGuides';
+export const krabiDraftGuide: Omit<FeaturedCityGuideData, 'photos'> = {
   "slug": "krabi",
   "name": "Krabi",
   "country": "Thaïlande",
@@ -150,4 +151,4 @@ export const krabiDraftGuide = {
     "For families, check bedding, maximum occupancy, childcare and private-pool safety.",
     "This is an editorial Bosphoras selection, not live rates, hotel booking or after-sales service."
   ]
-} as const;
+};
