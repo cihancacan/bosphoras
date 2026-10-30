@@ -1,0 +1,38 @@
+name: Travel Bangkok — integrate existing components (no Vercel)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - 'scripts/integrate-bangkok-pages.py'
+      - '.github/workflows/travel-bangkok-integration.yml'
+  workflow_dispatch:
+permissions: {contents: write}
+concurrency:
+  group: travel-bangkok-component-write
+  cancel-in-progress: false
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m py_compile scripts/integrate-bangkok-pages.py
+      - run: python scripts/integrate-bangkok-pages.py
+      - name: Commit exactly two shared Travel components
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- components/travel/FeaturedCityGuide.tsx components/travel/TravelPages.tsx
+          git diff --cached --quiet && exit 0
+          git commit -m 'feat(travel): integrate Bangkok premium guide, image galleries and SEO FR EN [skip ci]'
+          for i in 1 2 3 4 5; do
+            git fetch origin feature/luxury-travel-seo-destinations-20261012
+            git rebase origin/feature/luxury-travel-seo-destinations-20261012
+            if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then exit 0; fi
+            sleep 2
+          done
+          exit 1
