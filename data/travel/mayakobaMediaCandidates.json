@@ -3,7 +3,7 @@
   "scope": "private_owner_noindex_preview",
   "rightsNotice": "No destination or hotel publisher photo has independently cleared commercial use rights.",
   "cityCount": 9,
-  "hotelCount": 6,
+  "hotelCount": 12,
   "destinationScenes": [
     {
       "originalSize": [
@@ -252,6 +252,93 @@
   "hotels": [
     {
       "originalSize": [
+        1800,
+        900
+      ],
+      "outputSize": [
+        1800,
+        900
+      ],
+      "bytes": 575874,
+      "sha256": "d9a290dc2e988d8dda7a2d686c555cd84b938c38e28b1be88d3f2075fed740dc",
+      "pixelFingerprint": "934dfdd5dcbeeae0bfbaba40403ccae7a471c340d0da63c98435a1600941d038",
+      "key": "view-1",
+      "localPath": "/images/travel/mayakoba-premium/rosewood/view-1.webp",
+      "sourcePage": "https://mayakoba.com/hotels-overview/rosewood-mayakoba/",
+      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2019/10/rosewood_carousel-04.jpg",
+      "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
+      "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
+      "licenseUrl": "https://mayakoba.com/hotels-overview/rosewood-mayakoba/",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "originalAlt": "Hotel gallery",
+      "propertyKey": "rosewood",
+      "property": "Rosewood Mayakoba",
+      "rightsEvidenceType": "official_hotel_destination_publisher_not_commercially_cleared",
+      "frCaption": "Rosewood Mayakoba · photographie officielle du resort (détail à confirmer)",
+      "enCaption": "Rosewood Mayakoba · property-publisher photo (detail pending review)"
+    },
+    {
+      "originalSize": [
+        1800,
+        900
+      ],
+      "outputSize": [
+        1800,
+        900
+      ],
+      "bytes": 310406,
+      "sha256": "9ff82188363d6fb35a3a351e9b63c3317601962db46fc058a38eaac5dd6b96b1",
+      "pixelFingerprint": "d8631799dfd5bbbada705ed5d338dfe1ffd5d7fa9407616947c3f03d070978dc",
+      "key": "view-2",
+      "localPath": "/images/travel/mayakoba-premium/rosewood/view-2.webp",
+      "sourcePage": "https://mayakoba.com/hotels-overview/rosewood-mayakoba/",
+      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2019/08/rosewood_carousel-01.jpg",
+      "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
+      "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
+      "licenseUrl": "https://mayakoba.com/hotels-overview/rosewood-mayakoba/",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "originalAlt": "Hotel gallery",
+      "propertyKey": "rosewood",
+      "property": "Rosewood Mayakoba",
+      "rightsEvidenceType": "official_hotel_destination_publisher_not_commercially_cleared",
+      "frCaption": "Rosewood Mayakoba · photographie officielle du resort (détail à confirmer)",
+      "enCaption": "Rosewood Mayakoba · property-publisher photo (detail pending review)"
+    },
+    {
+      "originalSize": [
+        1800,
+        900
+      ],
+      "outputSize": [
+        1800,
+        900
+      ],
+      "bytes": 241412,
+      "sha256": "b080f155dd52b76e3a95d4dfd1b8a9114bafbaea42dc67011cc29137b139bd42",
+      "pixelFingerprint": "56c065d8404241cbf6c0dc9c13b231f03385dac498ff806a56b68f9c1e62413f",
+      "key": "view-3",
+      "localPath": "/images/travel/mayakoba-premium/rosewood/view-3.webp",
+      "sourcePage": "https://mayakoba.com/hotels-overview/rosewood-mayakoba/",
+      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2019/10/rosewood_carousel-02.jpg",
+      "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
+      "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
+      "licenseUrl": "https://mayakoba.com/hotels-overview/rosewood-mayakoba/",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "originalAlt": "Hotel gallery",
+      "propertyKey": "rosewood",
+      "property": "Rosewood Mayakoba",
+      "rightsEvidenceType": "official_hotel_destination_publisher_not_commercially_cleared",
+      "frCaption": "Rosewood Mayakoba · photographie officielle du resort (détail à confirmer)",
+      "enCaption": "Rosewood Mayakoba · property-publisher photo (detail pending review)"
+    },
+    {
+      "originalSize": [
         3000,
         1688
       ],
@@ -368,20 +455,49 @@
     },
     {
       "originalSize": [
-        2560,
-        1708
+        2200,
+        1499
       ],
       "outputSize": [
         1800,
-        1201
+        1226
       ],
-      "bytes": 187764,
-      "sha256": "a53eadbd01e18af57a73a4530d9ea9adcaab37f26c5d431bafa10ee9c32212b9",
-      "pixelFingerprint": "6094d235d72f4ff7154c4c729cb96644ba95e2ee3e7d6fc29ba7f93fb0a167e4",
+      "bytes": 281472,
+      "sha256": "0bc5216ce73215cde153faed20ebbbefdd1969459f9bcda295b4bf555f15d5b0",
+      "pixelFingerprint": "0ca595104f73bd0392597bc4176db8d1107747ffc8fd0e6a88e833d6c876435d",
       "key": "view-2",
       "localPath": "/images/travel/mayakoba-premium/fairmont/view-2.webp",
       "sourcePage": "https://www.fairmont-mayakoba.com/",
-      "downloadUrl": "https://www.fairmont-mayakoba.com/content/uploads/2026/01/Family1-scaled.jpg",
+      "downloadUrl": "https://www.fairmont-mayakoba.com/content/uploads/2023/06/3869_230226_Fairmont.jpg",
+      "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
+      "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
+      "licenseUrl": "https://www.fairmont-mayakoba.com/",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "originalAlt": "Fairmont Mayakoba's El Camaleon Presidential Suite spacious living and dining areas",
+      "propertyKey": "fairmont",
+      "property": "Fairmont Mayakoba",
+      "rightsEvidenceType": "official_hotel_destination_publisher_not_commercially_cleared",
+      "frCaption": "Fairmont Mayakoba · photographie officielle du resort (détail à confirmer)",
+      "enCaption": "Fairmont Mayakoba · property-publisher photo (detail pending review)"
+    },
+    {
+      "originalSize": [
+        1920,
+        1920
+      ],
+      "outputSize": [
+        1400,
+        1400
+      ],
+      "bytes": 311218,
+      "sha256": "9a1175856102b4a1f0e6acebff0fade8c360493b097a9301c4d02af0adc81a3b",
+      "pixelFingerprint": "87f73b0f519fd165eaaafc557cd76c18b8ff6b293104e54d669feb80a7e601c0",
+      "key": "view-3",
+      "localPath": "/images/travel/mayakoba-premium/fairmont/view-3.webp",
+      "sourcePage": "https://www.fairmont-mayakoba.com/",
+      "downloadUrl": "https://www.fairmont-mayakoba.com/content/uploads/2022/03/4470_230227_Fairmont-scaled-e1756229559560.jpg",
       "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
       "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
       "licenseUrl": "https://www.fairmont-mayakoba.com/",
@@ -397,32 +513,90 @@
     },
     {
       "originalSize": [
-        2560,
-        1707
+        2300,
+        1190
       ],
       "outputSize": [
         1800,
-        1200
+        931
       ],
-      "bytes": 516454,
-      "sha256": "e50c2ac8885a351cbdb3ad97d971241f3744b705858f6ce29a2b0b40541594e9",
-      "pixelFingerprint": "7b64148a45a1b42f898979d53a03e0628b5df3157c56378013bdf1e0f1bbf7cf",
-      "key": "view-3",
-      "localPath": "/images/travel/mayakoba-premium/fairmont/view-3.webp",
-      "sourcePage": "https://www.fairmont-mayakoba.com/",
-      "downloadUrl": "https://www.fairmont-mayakoba.com/content/uploads/2026/03/FairmontSpa10-scaled.jpg",
+      "bytes": 558070,
+      "sha256": "e06e66448a903802ab61b94a47416e8eae1249911fcc162b26b0f3213a8e5249",
+      "pixelFingerprint": "00f0f819ffd12a9c1b72311f767eb50e6bbcf47f6cc79091ed43fe49059de15f",
+      "key": "view-1",
+      "localPath": "/images/travel/mayakoba-premium/alila/view-1.webp",
+      "sourcePage": "https://mayakoba.com/hotels-overview/alila-mayakoba/",
+      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2026/01/CUNAM-R0021-Casa-Amate-Entry.16x9.webp",
       "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
       "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
-      "licenseUrl": "https://www.fairmont-mayakoba.com/",
+      "licenseUrl": "https://mayakoba.com/hotels-overview/alila-mayakoba/",
       "commercialRightsCleared": false,
       "status": "source_identified_private_preview",
       "visuallyVerified": false,
-      "originalAlt": "20th anniversary spa treatments",
-      "propertyKey": "fairmont",
-      "property": "Fairmont Mayakoba",
+      "originalAlt": "Hotel gallery",
+      "propertyKey": "alila",
+      "property": "Alila Mayakoba",
       "rightsEvidenceType": "official_hotel_destination_publisher_not_commercially_cleared",
-      "frCaption": "Fairmont Mayakoba · photographie officielle du resort (détail à confirmer)",
-      "enCaption": "Fairmont Mayakoba · property-publisher photo (detail pending review)"
+      "frCaption": "Alila Mayakoba · photographie officielle du resort (détail à confirmer)",
+      "enCaption": "Alila Mayakoba · property-publisher photo (detail pending review)"
+    },
+    {
+      "originalSize": [
+        2300,
+        1190
+      ],
+      "outputSize": [
+        1800,
+        931
+      ],
+      "bytes": 515486,
+      "sha256": "d4a8eb96a09b15cd3972b66153de911ff23a6ca09ebb64e79c3d3605394d69c8",
+      "pixelFingerprint": "b681a3467a880fa2d6d5e78ac0e5ff197b4a0a1abc5cd1fca94e6e9f88795991",
+      "key": "view-2",
+      "localPath": "/images/travel/mayakoba-premium/alila/view-2.webp",
+      "sourcePage": "https://mayakoba.com/hotels-overview/alila-mayakoba/",
+      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2026/01/CUNAM-R0022-Casa-Amate-Lounge.4x3.webp",
+      "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
+      "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
+      "licenseUrl": "https://mayakoba.com/hotels-overview/alila-mayakoba/",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "originalAlt": "Hotel gallery",
+      "propertyKey": "alila",
+      "property": "Alila Mayakoba",
+      "rightsEvidenceType": "official_hotel_destination_publisher_not_commercially_cleared",
+      "frCaption": "Alila Mayakoba · photographie officielle du resort (détail à confirmer)",
+      "enCaption": "Alila Mayakoba · property-publisher photo (detail pending review)"
+    },
+    {
+      "originalSize": [
+        2300,
+        1190
+      ],
+      "outputSize": [
+        1800,
+        931
+      ],
+      "bytes": 557798,
+      "sha256": "0a32060c65230aa98d9a4cb2d1535350cf6ae76786976b1c2226a4e9307ce07d",
+      "pixelFingerprint": "6cbb0a46b19f8d37d56b51c87047a7e0065310e26dd178830cf5f36854a44021",
+      "key": "view-3",
+      "localPath": "/images/travel/mayakoba-premium/alila/view-3.webp",
+      "sourcePage": "https://mayakoba.com/hotels-overview/alila-mayakoba/",
+      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2026/01/CUNAM-R0025-Chefs-Atelier.16x9.webp",
+      "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
+      "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
+      "licenseUrl": "https://mayakoba.com/hotels-overview/alila-mayakoba/",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "originalAlt": "Hotel gallery",
+      "propertyKey": "alila",
+      "property": "Alila Mayakoba",
+      "rightsEvidenceType": "official_hotel_destination_publisher_not_commercially_cleared",
+      "frCaption": "Alila Mayakoba · photographie officielle du resort (détail à confirmer)",
+      "enCaption": "Alila Mayakoba · property-publisher photo (detail pending review)"
     }
   ]
 }
