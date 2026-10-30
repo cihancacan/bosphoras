@@ -13,7 +13,12 @@ const validHotel=(p:MiamiCandidate,i:number):boolean=>
  && p.rightsEvidenceType==='operator_publisher_not_commercially_cleared'
  && p.commercialRightsCleared!==true
  && p.localPath?.startsWith('/images/travel/miami-premium/'+ids[i]+'/')===true
- && !!p.sourcePage && (new URL(p.sourcePage).hostname.endsWith(hosts[i]) || new URL(p.sourcePage).hostname.endsWith('miamiandbeaches.com'))
+ && !!p.sourcePage && (
+     new URL(p.sourcePage).hostname.endsWith(hosts[i])
+     || ['miamiandbeaches.com','guide.michelin.com','cntraveler.com',
+         'cntraveller.com','turontravel.com','postcard.inc','hgtv.com',
+         'fourseasons.com','press.fourseasons.com'].some(h=>new URL(p.sourcePage!).hostname.endsWith(h))
+   )
  && !!p.credit && !!p.frCaption && !!p.enCaption
  && p.sha256?.length===64 && (p.bytes||0)>16000;
 
