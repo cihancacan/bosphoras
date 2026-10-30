@@ -121,7 +121,15 @@ def score(entry):
 def hotel_entries(group):
  slug,name,pages=group
  candidates=[]
- for page in pages:candidates.extend(extract_candidates(page))
+ if slug=="rayavadee":
+  # Exact image URLs reviewed at the actual Rayavadee publisher pages, not logos or PDF diagrams.
+  candidates=[
+   ("https://rayavadee.com/en/images/accommodation/pool-pavillion/pic1.jpg","Pool Pavilion outdoor architecture with private pool","https://www.rayavadee.com/en/room-pool-pavillion.php"),
+   ("https://www.rayavadee.com/en/images/accommodation/terrace-pavillion/pic4.jpg","Terrace Pavilion bedroom interior","https://www.rayavadee.com/en/room-terrace-pavillion.php"),
+   ("https://www.rayavadee.com/zh/images/accommodation/spa-pavillion/pic2.jpg","Spa Pavilion room interior","https://www.rayavadee.com/zh/room-spa-pavillion.php")
+  ]
+ else:
+  for page in pages:candidates.extend(extract_candidates(page))
  seen=set();unique=[];errors=[]
  for url,alt,source in sorted(candidates,key=score,reverse=True):
   if score((url,alt,source))<3 or url in seen:continue
