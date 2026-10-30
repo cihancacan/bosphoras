@@ -13,7 +13,7 @@ const manifest=require('../data/travel/krabiMediaCandidates.json');
 assert.equal(travelDestinations.length,88,'Never modify original geographic catalogue');
 assert.equal(new Set(travelDestinations.map(p=>p.slug)).size,88);
 assert(travelDestinations.some(p=>p.slug==='krabi'),'Krabi must exist in the original catalogue');
-assert.equal(Object.keys(featuredCityGuides).length,61);
+assert(Object.keys(featuredCityGuides).length>=61,'Preserve Krabi and allow future premium guides');
 assert.equal(approvedDestinationSlugs.size,0,'Unlicensed material must never become publicly indexable');
 assert.deepEqual(featuredCityGuides.krabi.slug,'krabi');
 for(const slug of ['san-miguel-de-allende','mayakoba','los-angeles','miami','new-york','istanbul','monaco','gstaad'])assert(featuredCityGuides[slug],'Historical guide lost: '+slug);
