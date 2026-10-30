@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Replace duplicate proxy Banyan aerial with distinct official beachfront suite photo.
-Keep 9 original Mayakoba landscape images and all other hotels untouched.
+Keep 9 original Mayakoba landscape images and all other hotels untouched; finalize now.
 Owner-only noindex, commercial rights NOT cleared.
 """
 import json,pathlib,requests,hashlib,io
