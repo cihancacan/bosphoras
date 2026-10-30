@@ -28,3 +28,11 @@ Previous New York #56, Istanbul #55 and all 88 original geographical catalog slu
 - Bilingual guide: `/travel/destinations/miami` and `/en/travel/destinations/miami`; hotels variant has the same curated properties, gallery and noindex safeguards.
 - Automated QA `scripts/check-miami-destination-final.mjs` checks 57 premium guides, 88 original slugs, all 21 unique local WebP/rights records, exact 3 per hotel and 16 bilingual FAQs. GitHub-only workflow runs TypeScript and regression scripts.
 - One final Vercel Preview using release marker `[travel-batch-ready]` after passing CI only. Protected preview cannot be assumed independently browser-verified; production stays intact.
+
+## 30 October 2026 — private owner Preview ready to deploy
+- Featured-city guide **#57** is integrated; original catalogue **88/88** preserved. No changes to production `main`.
+- Final collector run `41053086267` recovered nine locally stored Wikimedia CC photographs and 11 sourced hotel photos. Incremental Surf Club image run `41055569099` added the 12th hotel image from the Four Seasons Surf Club-specific Five Star Alliance gallery, without overwriting other files.
+- Final metadata: **nine** distinct landscape photographs and **12** original locally held property photographs, exactly three images for each of four properties. All 21 source URLs and hashes are recorded. Hotel image creator reuse rights and manual visual review remain pending; never reclassify these as commercial rights cleared.
+- The destination and hotel-page layouts have a legible oceanfront hero, five area images, two additional photo-essay landscapes, editorial hotel galleries, practical booking notes, and eight FAQs in each language.
+- Typecheck and **all** editorial regressions passed in [GitHub Actions #41056078735](https://github.com/cihancacan/bosphoras/actions/runs/41056078735), including Miami-specific 21-image check, New York, Istanbul and 88 destination catalogue test.
+- This commit triggers the intentional single Vercel Preview build for private owner review. Website indexing and production promotion **not** approved.
