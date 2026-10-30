@@ -9,7 +9,7 @@ const {sanMiguelHotelEditorial:hotels,sanMiguelAreaVisuals:areas,confirmedSanMig
 const {sanMiguelDeAllendeDraftFaq:faq}=require('../data/travel/sanMiguelDeAllendeDraftFaq.ts');
 const m=require('../data/travel/sanMiguelDeAllendeMediaCandidates.json');
 assert.equal(travelDestinations.length,88);assert.equal(new Set(travelDestinations.map(x=>x.slug)).size,88);
-assert.equal(Object.keys(featuredCityGuides).length,60);assert.equal(approvedDestinationSlugs.size,0);
+assert(Object.keys(featuredCityGuides).length>=60,'Keep San Miguel and all previous guides when later destinations are added');assert.equal(approvedDestinationSlugs.size,0);
 assert.equal(g.slug,'san-miguel-de-allende');assert.equal(g.hotels.length,4);assert.equal(g.areas.length,5);assert.equal(g.experiences.length,5);
 assert.deepEqual(g.hotels.map(x=>x.name),['Rosewood San Miguel de Allende','Casa de Sierra Nevada, A Belmond Hotel','Hotel Matilda','Live Aqua San Miguel de Allende']);
 assert.equal(Object.keys(g.photos).length,9);assert.equal(m.hotels.length,12);assert.equal(areas.length,5);
