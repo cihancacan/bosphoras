@@ -22,3 +22,14 @@
 The destination is **NOT complete** until the actual media manifest contains 9 distinct island scenes plus 12 verified hotel images, area association and captions are checked, the guide is added to existing registry/pages, 16 bilingual FAQs appear, noindex/structured data gates work and GitHub QA is green. Do not assert public image rights or live bookable inventory; do not deploy this draft independently.
 
 The current staging Preview from earlier destinations does not include this pending #62 guide, until the release marker is applied to an integrated/verified commit. The last 88-destination catalogue remains intact.
+
+
+## Réalisation du 30 octobre 2026
+
+Le guide premium **Koh Yao Noi #62 est désormais intégré sur la branche Travel** : registre `featuredCityGuides.ts`, guide `kohYaoNoiGuide.ts`, éditorial visuel `kohYaoNoiPremiumEditorial.ts`, composants mutualisés `FeaturedCityGuide.tsx` et `TravelPages.tsx`. Le catalogue géographique de **88 destinations** et les **61 pages premium antérieures**, y compris Krabi, sont conservés.
+
+**Images effectivement collectées et comparées visuellement :** 9 paysages de Koh Yao Noi sur Wikimedia Commons avec leurs licences et 12 photos de quatre hôtels réels depuis leurs médias officiels. Les logos de certification TreeHouse ont été remplacés par de vraies photos de villas. `data/travel/kohYaoNoiMediaCandidates.json` conserve URLs, crédits, licences, dimensions, SHA-256, empreinte visuelle et légendes FR/EN. Statut : `INTERNAL_21_OF_21_SOURCE_AND_VISUAL_REVIEW_PASSED_NOT_PUBLIC_LICENSED`. Les photos d'hôtels restent **non autorisées à une republication commerciale publique indépendante** ; uniquement Preview propriétaire protégée et `noindex`. Les données structurées doivent exclure ces photos non licenciées.
+
+Le contrôle `scripts/check-koh-yao-noi-final.cjs` valide les 62 guides, les 88 destinations originales, les 21 fichiers binaires, l'absence de doublons, les 16 FAQ, les 4 galeries, les 5 secteurs et les filtres de licences. GitHub Actions : https://github.com/cihancacan/bosphoras/actions/runs/41106897915 ; le résultat ne doit pas être présumé avant sa conclusion effective.
+
+**Routes à inspecter après une Preview Vercel READY :** `/travel/destinations/koh-yao-noi`, `/en/travel/destinations/koh-yao-noi`, `/travel/hotels/koh-yao-noi`, `/en/travel/hotels/koh-yao-noi`. Pas de modification de production.
