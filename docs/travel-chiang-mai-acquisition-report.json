@@ -1,0 +1,48 @@
+{
+  "cityCount": 7,
+  "hotelCount": 6,
+  "hotelReports": [
+    {
+      "property": "137 Pillars House Chiang Mai",
+      "candidates": 0,
+      "downloaded": 0,
+      "errors": []
+    },
+    {
+      "property": "Anantara Chiang Mai Resort",
+      "candidates": 268,
+      "downloaded": 3,
+      "errors": [
+        "404 Client Error: Not Found for url: https://www.anantara.com/en/chiang-mai/w_1045/media/minor/anantara/images/anantara-chiang-mai"
+      ]
+    },
+    {
+      "property": "Raya Heritage",
+      "candidates": 38,
+      "downloaded": 3,
+      "errors": [
+        "small picture [770, 660]",
+        "small picture [770, 660]",
+        "small picture [770, 660]"
+      ]
+    },
+    {
+      "property": "Four Seasons Resort Chiang Mai",
+      "candidates": 0,
+      "downloaded": 0,
+      "errors": []
+    }
+  ],
+  "errors": [
+    {
+      "key": "scene-2",
+      "error": "No licensed image for Chiang Mai Wat Chedi Luang temple ruins: []"
+    },
+    {
+      "key": "scene-7",
+      "error": "No licensed image for Mae Rim Chiang Mai rice field: []"
+    }
+  ],
+  "allImagesVisuallyApproved": false,
+  "commercialHotelRights": false
+}

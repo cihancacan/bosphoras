@@ -1,0 +1,383 @@
+{
+  "destination": "chiang-mai",
+  "scope": "owner_protected_preview_only",
+  "rightsNotice": "Hotel publisher photos cannot be commercially republished without independently verified authorization.",
+  "cityCount": 7,
+  "hotelCount": 6,
+  "destinationScenes": [
+    {
+      "originalSize": [
+        1080,
+        720
+      ],
+      "outputSize": [
+        1080,
+        720
+      ],
+      "bytes": 59060,
+      "sha256": "543893a99b65176f9c8f6f5f5c331f455c3b68e203ebb12712bd52a5e59a7047",
+      "pixelFingerprint": "171de6d11a94dcf2b79830c3cf55dba7cb12f4527f2cef170f9f7f703d6307c0",
+      "key": "scene-1",
+      "localPath": "/images/travel/chiang-mai-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Prathat-offering.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/63/Prathat-offering.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Steve Evans",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Doi Suthep · temple doré sur les montagnes",
+      "enCaption": "Doi Suthep golden mountain temple",
+      "originalAlt": "Prathat-offering.jpg",
+      "searchIntent": "Wat Phra That Doi Suthep Chiang Mai temple panorama"
+    },
+    {
+      "originalSize": [
+        1920,
+        2900
+      ],
+      "outputSize": [
+        794,
+        1200
+      ],
+      "bytes": 144574,
+      "sha256": "3d1c2c591f27b87825384dbef6df7a71cdc004c2ffc93790bfd4b1df82e3c04d",
+      "pixelFingerprint": "b13040bffb9097e601a409254ace08c45c2e4e5d5e5bb3fb8da95167714161c7",
+      "key": "scene-3",
+      "localPath": "/images/travel/chiang-mai-premium/destination/scene-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:20171105_Golden_elephant_statue_of_the_Wat_Phra_Singh_temple,_Chiang_Mai,_Thailand_9843_DxO.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/20171105_Golden_elephant_statue_of_the_Wat_Phra_Singh_temple%2C_Chiang_Mai%2C_Thailand_9843_DxO.jpg/1920px-20171105_Golden_elephant_statue_of_the_Wat_Phra_Singh_temple%2C_Chiang_Mai%2C_Thailand_9843_DxO.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Jakub Hałun",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Wat Phra Singh et l'architecture Lanna",
+      "enCaption": "Wat Phra Singh and Lanna architecture",
+      "originalAlt": "20171105 Golden elephant statue of the Wat Phra Singh temple, Chiang Mai, Thailand 9843 DxO.jpg",
+      "searchIntent": "Chiang Mai Wat Phra Singh golden temple"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "bytes": 420028,
+      "sha256": "8b141c6a0389edca2ef022a17970382b8a1851bc608f65e0ce06461a653578b0",
+      "pixelFingerprint": "cef219b92afd7349c3ec1b416b5af50299d680b273b45614c10dc53bd24b2c94",
+      "key": "scene-4",
+      "localPath": "/images/travel/chiang-mai-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tha_Phae_Gate_on_the_old_city_walls_(14737657804).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Tha_Phae_Gate_on_the_old_city_walls_%2814737657804%29.jpg/1920px-Tha_Phae_Gate_on_the_old_city_walls_%2814737657804%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "shankar s. from Dubai, united arab emirates",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Les douves de la vieille ville et Tha Phae Gate",
+      "enCaption": "Chiang Mai Old City moat and Tha Phae Gate",
+      "originalAlt": "Tha Phae Gate on the old city walls (14737657804).jpg",
+      "searchIntent": "Chiang Mai Old City moat Tha Phae Gate"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "bytes": 705628,
+      "sha256": "8561e3dbb3d16c3ecd417a870a45244aca450b56bcc3281244ffaaa17c85be58",
+      "pixelFingerprint": "b737f5411ecee160f82da56a1f0705d896c0500abc7f60fe675c1957f9f2a80a",
+      "key": "scene-5",
+      "localPath": "/images/travel/chiang-mai-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wat_Ket,_Mueang_Chiang_Mai_District,_Chiang_Mai_50000,_Thailand_-_panoramio_(2).jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Wat_Ket%2C_Mueang_Chiang_Mai_District%2C_Chiang_Mai_50000%2C_Thailand_-_panoramio_%282%29.jpg/1920px-Wat_Ket%2C_Mueang_Chiang_Mai_District%2C_Chiang_Mai_50000%2C_Thailand_-_panoramio_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "mohigan",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Wat Gate et les bords du Ping",
+      "enCaption": "Wat Gate along the Ping River",
+      "originalAlt": "Wat Ket, Mueang Chiang Mai District, Chiang Mai 50000, Thailand - panoramio (2).jpg",
+      "searchIntent": "Wat Ket Chiang Mai Ping River"
+    },
+    {
+      "originalSize": [
+        1024,
+        683
+      ],
+      "outputSize": [
+        1024,
+        683
+      ],
+      "bytes": 52808,
+      "sha256": "caec21434f0a2bdafec5e374d663b76efaed1ba02cf42ba0a6c079311da9e847",
+      "pixelFingerprint": "6783747705dacc859fcc8cb1f8986c4dd0dd2cb529b0ebf6630a4b8f5be786e3",
+      "key": "scene-6",
+      "localPath": "/images/travel/chiang-mai-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:LoyKrathong2014.jpg",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/LoyKrathong2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Jonathan144",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Les ponts et la rivière Ping en ville",
+      "enCaption": "Bridges over the Ping River in central Chiang Mai",
+      "originalAlt": "LoyKrathong2014.jpg",
+      "searchIntent": "Chiang Mai Mae Ping River bridge"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "bytes": 477844,
+      "sha256": "89ad60169971d877ce72df03b0fa68e5d514cf2ff8afe2a2baf010e473164fc3",
+      "pixelFingerprint": "c7e626f428af5002c8f119af3cebe5f17d1800f6b3fe962d0b365efad83918c3",
+      "key": "scene-8",
+      "localPath": "/images/travel/chiang-mai-premium/destination/scene-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:View_of_Mae_Sa_Valley,_Chiang_Mai,_Thailand.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/View_of_Mae_Sa_Valley%2C_Chiang_Mai%2C_Thailand.jpg/1920px-View_of_Mae_Sa_Valley%2C_Chiang_Mai%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "VN.NguyenDucDuy",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Les montagnes et forêts de Mae Rim",
+      "enCaption": "Mountains and forests near Mae Rim",
+      "originalAlt": "View of Mae Sa Valley, Chiang Mai, Thailand.jpg",
+      "searchIntent": "Mae Rim Chiang Mai mountain forest"
+    },
+    {
+      "originalSize": [
+        1920,
+        1285
+      ],
+      "outputSize": [
+        1600,
+        1071
+      ],
+      "bytes": 272662,
+      "sha256": "36db2d70f2f156691d931cba642bf039ef8fce6c0c02a4fe6def2537a287d28e",
+      "pixelFingerprint": "486ab6bdd9ff65f1a23f38cb0f4c75287c1d9b46b9757e89f747367c234e238b",
+      "key": "scene-9",
+      "localPath": "/images/travel/chiang-mai-premium/destination/scene-9.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Night_Market_Chiang_Mai.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Night_Market_Chiang_Mai.jpg/1920px-Night_Market_Chiang_Mai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Adbar",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Les lumières de Chiang Mai au marché du soir",
+      "enCaption": "Chiang Mai evening market lights",
+      "originalAlt": "Night Market Chiang Mai.jpg",
+      "searchIntent": "Chiang Mai night market street"
+    }
+  ],
+  "hotels": [
+    {
+      "originalSize": [
+        880,
+        620
+      ],
+      "outputSize": [
+        880,
+        620
+      ],
+      "bytes": 78006,
+      "sha256": "f22d4c5e2dac96280ae4eb2020bcd636ad10864b706764b28d83501958e81a8d",
+      "pixelFingerprint": "469610b632a4a8554d5ee58721f3a3f4e305d716682ed5ae1a3569543b9ddc72",
+      "key": "view-1",
+      "propertyKey": "anantara",
+      "property": "Anantara Chiang Mai Resort",
+      "localPath": "/images/travel/chiang-mai-premium/anantara/view-1.webp",
+      "sourcePage": "https://www.anantara.com/en/chiang-mai/rooms",
+      "downloadUrl": "https://assets.anantara.com/image/upload/q_auto,f_auto,c_limit,w_1045/media/minor/anantara/images/anantara-chiang-mai-resort/accommodation/detail-page/kasara-garden-terrace-suite/anantara_chiang_mai_resort_guest_room_kasara_garden_terrace_suite_880x620.jpg",
+      "credit": "Anantara Chiang Mai Resort official publisher; photographer not independently identified",
+      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "licenseUrl": "https://www.anantara.com/en/chiang-mai/rooms",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
+      "frCaption": "Anantara Chiang Mai Resort · photographie officielle à vérifier",
+      "enCaption": "Anantara Chiang Mai Resort · official publisher photo pending visual check"
+    },
+    {
+      "originalSize": [
+        880,
+        620
+      ],
+      "outputSize": [
+        880,
+        620
+      ],
+      "bytes": 100434,
+      "sha256": "2121603b34d08793bf83efb7ebbf652307f77f94adb9d506c3685c61bd082a15",
+      "pixelFingerprint": "956e95098c410f22f0b1e241b42202dd7b960cf8a5f154f31bce873467b7d7d8",
+      "key": "view-2",
+      "propertyKey": "anantara",
+      "property": "Anantara Chiang Mai Resort",
+      "localPath": "/images/travel/chiang-mai-premium/anantara/view-2.webp",
+      "sourcePage": "https://www.anantara.com/en/chiang-mai",
+      "downloadUrl": "https://assets.anantara.com/image/upload/q_auto,f_auto/media/minor/anantara/images/anantara-chiang-mai-resort/accommodation/detail-page/kasara-pool-suite/teaser-gallery-image/anantara_chiangmai_guest_room_kasara_pool_suite_bed_room_880x620_1.jpg",
+      "credit": "Anantara Chiang Mai Resort official publisher; photographer not independently identified",
+      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "licenseUrl": "https://www.anantara.com/en/chiang-mai",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
+      "frCaption": "Anantara Chiang Mai Resort · photographie officielle à vérifier",
+      "enCaption": "Anantara Chiang Mai Resort · official publisher photo pending visual check"
+    },
+    {
+      "originalSize": [
+        880,
+        620
+      ],
+      "outputSize": [
+        880,
+        620
+      ],
+      "bytes": 67110,
+      "sha256": "f5fb6af990eb56283aba0650d39498e09da0eb7b88ecba2e82ad32ea8352bcbc",
+      "pixelFingerprint": "91e20e6886f2f45095109fcd328fdb52b23cfd80782049b0a232a0a1bde810c1",
+      "key": "view-3",
+      "propertyKey": "anantara",
+      "property": "Anantara Chiang Mai Resort",
+      "localPath": "/images/travel/chiang-mai-premium/anantara/view-3.webp",
+      "sourcePage": "https://www.anantara.com/en/chiang-mai/rooms",
+      "downloadUrl": "https://assets.anantara.com/image/upload/q_auto,f_auto,c_limit,w_1045/media/minor/anantara/images/anantara-chiang-mai-resort/accommodation/detail-page/kasara-garden-terrace-suite/anantara_chiang_mai_resort_guest_room_kasara_garden_terrace_suite_bedroom_880x620.jpg",
+      "credit": "Anantara Chiang Mai Resort official publisher; photographer not independently identified",
+      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "licenseUrl": "https://www.anantara.com/en/chiang-mai/rooms",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
+      "frCaption": "Anantara Chiang Mai Resort · photographie officielle à vérifier",
+      "enCaption": "Anantara Chiang Mai Resort · official publisher photo pending visual check"
+    },
+    {
+      "originalSize": [
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "bytes": 243038,
+      "sha256": "efcff9ef7fd77425f0a732a88098633a3cd4ee21bf192f4af6bf63268a38d073",
+      "pixelFingerprint": "33ddfc96b68753f486b3c3661bf39fd09d5813caaaa7cd3ad9fc9da7ebf99fba",
+      "key": "view-1",
+      "propertyKey": "raya",
+      "property": "Raya Heritage",
+      "localPath": "/images/travel/chiang-mai-premium/raya/view-1.webp",
+      "sourcePage": "https://www.rayaheritage.com/en/kramm-pool-suite.php",
+      "downloadUrl": "https://www.rayaheritage.com/en/rooms/kramm-pool-suite/1.jpg",
+      "credit": "Raya Heritage official publisher; photographer not independently identified",
+      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "licenseUrl": "https://www.rayaheritage.com/en/kramm-pool-suite.php",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
+      "frCaption": "Raya Heritage · photographie officielle à vérifier",
+      "enCaption": "Raya Heritage · official publisher photo pending visual check"
+    },
+    {
+      "originalSize": [
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "bytes": 133712,
+      "sha256": "52df0d82a8bd3992db82fde95fe3a4281f4d06c47829f374fbd6d2b8fff8b4a0",
+      "pixelFingerprint": "e9bd5ffb65cccbae2b573257d435f0270912509e17679abfa9d537005a4b8817",
+      "key": "view-2",
+      "propertyKey": "raya",
+      "property": "Raya Heritage",
+      "localPath": "/images/travel/chiang-mai-premium/raya/view-2.webp",
+      "sourcePage": "https://www.rayaheritage.com/en/kramm-pool-suite.php",
+      "downloadUrl": "https://www.rayaheritage.com/en/rooms/kramm-pool-suite/2.jpg",
+      "credit": "Raya Heritage official publisher; photographer not independently identified",
+      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "licenseUrl": "https://www.rayaheritage.com/en/kramm-pool-suite.php",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
+      "frCaption": "Raya Heritage · photographie officielle à vérifier",
+      "enCaption": "Raya Heritage · official publisher photo pending visual check"
+    },
+    {
+      "originalSize": [
+        1280,
+        720
+      ],
+      "outputSize": [
+        1280,
+        720
+      ],
+      "bytes": 160318,
+      "sha256": "be827cbec10e3e8722b3b5da3e8b4680e934067ab0a158a2fc49a9775507758d",
+      "pixelFingerprint": "536622a9f7032e78a2de83dcb07b2a3f3bfbd3b6a076b7349e096d1bdc5740b6",
+      "key": "view-3",
+      "propertyKey": "raya",
+      "property": "Raya Heritage",
+      "localPath": "/images/travel/chiang-mai-premium/raya/view-3.webp",
+      "sourcePage": "https://www.rayaheritage.com/en/kramm-pool-suite.php",
+      "downloadUrl": "https://www.rayaheritage.com/en/rooms/kramm-pool-suite/3.jpg",
+      "credit": "Raya Heritage official publisher; photographer not independently identified",
+      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "licenseUrl": "https://www.rayaheritage.com/en/kramm-pool-suite.php",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
+      "frCaption": "Raya Heritage · photographie officielle à vérifier",
+      "enCaption": "Raya Heritage · official publisher photo pending visual check"
+    }
+  ],
+  "visualQA": "PENDING_INDIVIDUAL_PHOTO_REVIEW",
+  "publicUseApproved": false
+}
