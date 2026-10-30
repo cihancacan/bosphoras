@@ -90,7 +90,7 @@ def extract(page):
  return out
 def score(p):
  u,alt,_=p;v=(u+' '+alt).lower()
- if any(x in v for x in ('favicon','logo','icon','avatar','badge','svg','map','award','seal','qr','placeholder','celebrity')):return -500
+ if any(x in v for x in ('favicon','logo','icon','avatar','badge','svg','map','award','seal','qr','placeholder','celebrity','green-hotel','green hotel','certificate')):return -500
  s=3
  for token in ('villa','pool','resort','aerial','sea','bay','beach','restaurant','spa','hotel','treehouse','tent','hornbill','suite','room','view','gallery'):
   if token in v:s+=3
@@ -111,6 +111,7 @@ def hotel(group):
    ('https://www.treehouse-villas.com/wp-content/uploads/2025/01/TreeHouse-Villa-11.jpg','TreeHouse Villa room interior',url)
   ]
  else:pool=extract(url)
+ if key=='treehouse':pool+=extract('https://www.treehouse-villas.com/')
  if key=='nine-hornbills':pool+=extract('https://koyao.com/9hornbills')
  if key=='treehouse':pool+=extract('https://www.treehouse-villas.com/koh-yao/rooms-and-villas/')
  if key=='cape-kudu':pool+=extract('https://www.capekuduhotel.com/accommodation/')
@@ -119,7 +120,7 @@ def hotel(group):
   if len(pictures)>=3:break
   if u in seen or score((u,alt,page))<3:continue
   seen.add(u)
-  if re.search(r'/favicon|/logo|social-icon',u,re.I):continue
+  if re.search(r'/favicon|/logo|social-icon|green-hotel|certificate',u,re.I):continue
   namekey='view-'+str(len(pictures)+1);f=B/key/(namekey+'.webp')
   try:
    meta=save(u,f)
