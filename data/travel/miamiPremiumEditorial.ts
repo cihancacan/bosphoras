@@ -17,7 +17,7 @@ const validHotel=(p:MiamiCandidate,i:number):boolean=>
      new URL(p.sourcePage).hostname.endsWith(hosts[i])
      || ['miamiandbeaches.com','guide.michelin.com','cntraveler.com',
          'cntraveller.com','turontravel.com','postcard.inc','hgtv.com',
-         'fourseasons.com','press.fourseasons.com'].some(h=>new URL(p.sourcePage!).hostname.endsWith(h))
+         'fourseasons.com','press.fourseasons.com','fivestaralliance.com'].some(h=>new URL(p.sourcePage!).hostname.endsWith(h))
    )
  && !!p.credit && !!p.frCaption && !!p.enCaption
  && p.sha256?.length===64 && (p.bytes||0)>16000;
