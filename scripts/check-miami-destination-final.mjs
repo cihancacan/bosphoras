@@ -19,7 +19,7 @@ assert(regs.includes('istanbul: istanbulGuide'),'Istanbul must remain featured')
 
 const draft=read('data/travel/miamiDraftGuide.ts');
 for(const name of ['The Setai, Miami Beach','Faena Hotel Miami Beach','The Miami Beach EDITION','Four Seasons Hotel at The Surf Club'])assert(draft.includes(name),'Hotel missing: '+name);
-assert(draft.includes('secondary: "scene-7"'),'Miami experience skyline image should differ from hero');
+assert(draft.includes('"hero": "scene-1"') && draft.includes('"secondary": "scene-7"'),'Miami experience skyline image should differ from hero');
 for(const key of ['South Beach','Mid-Beach','Surfside','Brickell','Wynwood'])assert(draft.includes(key),'City area missing: '+key);
 const faq=read('data/travel/miamiDraftFaq.ts');
 assert.equal((faq.match(/"q":/g)||[]).length,16,'8 authentic FR/EN FAQ questions required');
