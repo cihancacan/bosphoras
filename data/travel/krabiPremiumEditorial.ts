@@ -31,6 +31,7 @@ export const krabiHotelEditorial: Record<string, BodrumHotelEditorial> = Object.
 );
 // Index follows the original five actual Krabi sectors. No photograph of Hong is called Nong Thale.
 // A Hong photo illustrates the offshore islands visible from Tubkaek.
+// Photos rejected in the individual visual review remain absent from the relevant sector and all published schema.
 export const krabiAreaVisuals: (BodrumPremiumPhoto | null)[] = [
   'scene-6', 'scene-3', 'scene-7', 'scene-4', 'scene-5'
 ].map(key => {
