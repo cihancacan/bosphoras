@@ -41,20 +41,20 @@
         1800,
         900
       ],
-      "bytes": 355302,
-      "sha256": "7681ba305ae93ed7ed2a65d27443b878e0acfc4bff4009088cad9c96da056dbf",
-      "pixelFingerprint": "b0c0a6928d420917325eb67f7f4dd36cf896a7492f36d07c1b367c29d37d4a44",
+      "bytes": 277388,
+      "sha256": "cfa9a278b3c645b88b0ab7ac2724e3faed9537c19ac7ccde42f5ca7586607113",
+      "pixelFingerprint": "3af19b20314b5fe35a28d91542fe6f11f4d0f7e9a659854833e4fbbeed1933ab",
       "key": "scene-2",
       "localPath": "/images/travel/mayakoba-premium/destination/scene-2.webp",
       "sourcePage": "https://mayakoba.com/location/",
-      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2025/03/RGB_DJI_20241214130554_0567_D_RT.jpg",
+      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2025/03/RGB_DJI_20241215170710_0623_D_RT-1.webp",
       "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
       "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
       "licenseUrl": "https://mayakoba.com/location/",
       "commercialRightsCleared": false,
       "status": "source_identified_private_preview",
       "visuallyVerified": false,
-      "originalAlt": "default",
+      "originalAlt": "",
       "rightsEvidenceType": "official_destination_publisher_not_commercially_cleared",
       "frCaption": "Canaux et lumière au cœur de Mayakoba",
       "enCaption": "Mayakoba waterways and nature"
@@ -68,13 +68,13 @@
         1800,
         900
       ],
-      "bytes": 277388,
-      "sha256": "cfa9a278b3c645b88b0ab7ac2724e3faed9537c19ac7ccde42f5ca7586607113",
-      "pixelFingerprint": "3af19b20314b5fe35a28d91542fe6f11f4d0f7e9a659854833e4fbbeed1933ab",
+      "bytes": 211100,
+      "sha256": "dee2985744751f74620d63cb91040e4936205078957473ddbb23e1a60957d1f3",
+      "pixelFingerprint": "99883c84e5b9bee4c1f26b696db3a469a0d80a2c458bac2c96911e2a4ba783b3",
       "key": "scene-3",
       "localPath": "/images/travel/mayakoba-premium/destination/scene-3.webp",
       "sourcePage": "https://mayakoba.com/location/",
-      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2025/03/RGB_DJI_20241215170710_0623_D_RT-1.webp",
+      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2024/11/BASNCHRIS_ACTIVITIES_8104_V3.webp",
       "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
       "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
       "licenseUrl": "https://mayakoba.com/location/",
@@ -95,92 +95,11 @@
         1800,
         900
       ],
-      "bytes": 311478,
-      "sha256": "c0a1626866dce270d2de46fb2f93788fabf4bdf7e8c696fdcacfd7babf373989",
-      "pixelFingerprint": "dee2d756cae42d82db77caea46ac6dda1846255a7271578203d749200de437c2",
-      "key": "scene-4",
-      "localPath": "/images/travel/mayakoba-premium/destination/scene-4.webp",
-      "sourcePage": "https://mayakoba.com/location/",
-      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2025/03/RGB_DJI_20241215170710_0623_D_RT-1.jpg",
-      "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
-      "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
-      "licenseUrl": "https://mayakoba.com/location/",
-      "commercialRightsCleared": false,
-      "status": "source_identified_private_preview",
-      "visuallyVerified": false,
-      "originalAlt": "default",
-      "rightsEvidenceType": "official_destination_publisher_not_commercially_cleared",
-      "frCaption": "La mangrove au rythme des saisons",
-      "enCaption": "Mayakoba living mangroves"
-    },
-    {
-      "originalSize": [
-        1800,
-        900
-      ],
-      "outputSize": [
-        1800,
-        900
-      ],
-      "bytes": 211100,
-      "sha256": "dee2985744751f74620d63cb91040e4936205078957473ddbb23e1a60957d1f3",
-      "pixelFingerprint": "99883c84e5b9bee4c1f26b696db3a469a0d80a2c458bac2c96911e2a4ba783b3",
-      "key": "scene-5",
-      "localPath": "/images/travel/mayakoba-premium/destination/scene-5.webp",
-      "sourcePage": "https://mayakoba.com/location/",
-      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2024/11/BASNCHRIS_ACTIVITIES_8104_V3.webp",
-      "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
-      "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
-      "licenseUrl": "https://mayakoba.com/location/",
-      "commercialRightsCleared": false,
-      "status": "source_identified_private_preview",
-      "visuallyVerified": false,
-      "originalAlt": "",
-      "rightsEvidenceType": "official_destination_publisher_not_commercially_cleared",
-      "frCaption": "La végétation tropicale et ses sentiers",
-      "enCaption": "Mayakoba tropical nature"
-    },
-    {
-      "originalSize": [
-        1800,
-        900
-      ],
-      "outputSize": [
-        1800,
-        900
-      ],
-      "bytes": 238408,
-      "sha256": "399f143bfcac132cc1af4bebcb738308cb5bece20b3028d7a1795bce057bb769",
-      "pixelFingerprint": "d7cbb965e907c850eca476cddab4deef116c3288283161a8b0319278d91d1816",
-      "key": "scene-6",
-      "localPath": "/images/travel/mayakoba-premium/destination/scene-6.webp",
-      "sourcePage": "https://mayakoba.com/location/",
-      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2024/11/BASNCHRIS_ACTIVITIES_8104_V3.jpg",
-      "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
-      "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
-      "licenseUrl": "https://mayakoba.com/location/",
-      "commercialRightsCleared": false,
-      "status": "source_identified_private_preview",
-      "visuallyVerified": false,
-      "originalAlt": "eco boat cruises slowly through calm canal waters",
-      "rightsEvidenceType": "official_destination_publisher_not_commercially_cleared",
-      "frCaption": "Vie locale et paysages du domaine",
-      "enCaption": "Mayakoba landscape and resort life"
-    },
-    {
-      "originalSize": [
-        1800,
-        900
-      ],
-      "outputSize": [
-        1800,
-        900
-      ],
       "bytes": 151502,
       "sha256": "4c2a07f624880e4562f30593ec4411a13c9386b4ed3b05e9103aed3d36b9bcc0",
       "pixelFingerprint": "b6d851b7bea69f99443228fb5bae9bbadbe9961d772e1490a7107beae473c721",
-      "key": "scene-7",
-      "localPath": "/images/travel/mayakoba-premium/destination/scene-7.webp",
+      "key": "scene-4",
+      "localPath": "/images/travel/mayakoba-premium/destination/scene-4.webp",
       "sourcePage": "https://mayakoba.com/location/",
       "downloadUrl": "https://mayakoba.com/wp-content/uploads/2024/11/BASNCHRIS_BANYAN-TREE_3937_V2.webp",
       "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
@@ -191,35 +110,8 @@
       "visuallyVerified": false,
       "originalAlt": "",
       "rightsEvidenceType": "official_destination_publisher_not_commercially_cleared",
-      "frCaption": "Mayakoba, une autre lumière",
-      "enCaption": "Mayakoba landscape in a different light"
-    },
-    {
-      "originalSize": [
-        1800,
-        900
-      ],
-      "outputSize": [
-        1800,
-        900
-      ],
-      "bytes": 176888,
-      "sha256": "94fa1b6d1e79126421eba598bc86e6f8d1205b7423037621ec53249cedcd30ae",
-      "pixelFingerprint": "6a7ba941bf78cc07098ddb6946c5721de5f7c0e78135118675fa5f5806bae8b1",
-      "key": "scene-8",
-      "localPath": "/images/travel/mayakoba-premium/destination/scene-8.webp",
-      "sourcePage": "https://mayakoba.com/location/",
-      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2024/11/BASNCHRIS_BANYAN-TREE_3937_V2.jpg",
-      "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
-      "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
-      "licenseUrl": "https://mayakoba.com/location/",
-      "commercialRightsCleared": false,
-      "status": "source_identified_private_preview",
-      "visuallyVerified": false,
-      "originalAlt": "wood-clad hotel suite with large window walls that open to terrace",
-      "rightsEvidenceType": "official_destination_publisher_not_commercially_cleared",
-      "frCaption": "Le monde de la lagune et des villas",
-      "enCaption": "Resort villas and tranquil waters"
+      "frCaption": "La mangrove au rythme des saisons",
+      "enCaption": "Mayakoba living mangroves"
     },
     {
       "originalSize": [
@@ -233,10 +125,118 @@
       "bytes": 406138,
       "sha256": "f32bfb69d42aca25ba7a8360d931c507c26c4378478dfa792ba52ada02ca6b19",
       "pixelFingerprint": "e3d83ba4586415bb1f78799918541c957cd081affbe5b96adec22443e4edc8e4",
+      "key": "scene-5",
+      "localPath": "/images/travel/mayakoba-premium/destination/scene-5.webp",
+      "sourcePage": "https://mayakoba.com/experiences/",
+      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2026/09/PERSONALIZED-EXCURSIONS.webp",
+      "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
+      "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
+      "licenseUrl": "https://mayakoba.com/experiences/",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "originalAlt": "",
+      "rightsEvidenceType": "official_destination_publisher_not_commercially_cleared",
+      "frCaption": "La végétation tropicale et ses sentiers",
+      "enCaption": "Mayakoba tropical nature"
+    },
+    {
+      "originalSize": [
+        1800,
+        800
+      ],
+      "outputSize": [
+        1800,
+        800
+      ],
+      "bytes": 263278,
+      "sha256": "4fa62fa23a9359a2a59eab34a1b07275833707f23709670d4dbd6beaa4729879",
+      "pixelFingerprint": "54bc2b52d437839bf785beef6786038dc3249ce75d6c84827e853761c399bb3b",
+      "key": "scene-6",
+      "localPath": "/images/travel/mayakoba-premium/destination/scene-6.webp",
+      "sourcePage": "https://mayakoba.com/experiences/",
+      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2026/09/THE-MAYAKOBA-ESCAPE.webp",
+      "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
+      "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
+      "licenseUrl": "https://mayakoba.com/experiences/",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "originalAlt": "",
+      "rightsEvidenceType": "official_destination_publisher_not_commercially_cleared",
+      "frCaption": "Vie locale et paysages du domaine",
+      "enCaption": "Mayakoba landscape and resort life"
+    },
+    {
+      "originalSize": [
+        1800,
+        800
+      ],
+      "outputSize": [
+        1800,
+        800
+      ],
+      "bytes": 210224,
+      "sha256": "f6b64e682a639d3a2da2058a2296395ffb8eac9333e4572e327e58ec586bc42b",
+      "pixelFingerprint": "647ebc9a81ea8f56ad6552bfcefeed8dfcb0276d05783bfbd564bc710a961395",
+      "key": "scene-7",
+      "localPath": "/images/travel/mayakoba-premium/destination/scene-7.webp",
+      "sourcePage": "https://mayakoba.com/experiences/",
+      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2026/09/PERFECT-TIMING.webp",
+      "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
+      "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
+      "licenseUrl": "https://mayakoba.com/experiences/",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "originalAlt": "",
+      "rightsEvidenceType": "official_destination_publisher_not_commercially_cleared",
+      "frCaption": "Mayakoba, une autre lumière",
+      "enCaption": "Mayakoba landscape in a different light"
+    },
+    {
+      "originalSize": [
+        1800,
+        800
+      ],
+      "outputSize": [
+        1800,
+        800
+      ],
+      "bytes": 51520,
+      "sha256": "74693d71507e35aaedcdcaa3e5edb30b827d805dbb23aa9bf9884df1e66f5848",
+      "pixelFingerprint": "eaa4e981d8b8fd923188bcea8ffbdebcc818070184bb77db9c64419b4fe99bf7",
+      "key": "scene-8",
+      "localPath": "/images/travel/mayakoba-premium/destination/scene-8.webp",
+      "sourcePage": "https://mayakoba.com/experiences/",
+      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2026/09/A-DAY-AT-THE-SEA.webp",
+      "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
+      "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
+      "licenseUrl": "https://mayakoba.com/experiences/",
+      "commercialRightsCleared": false,
+      "status": "source_identified_private_preview",
+      "visuallyVerified": false,
+      "originalAlt": "",
+      "rightsEvidenceType": "official_destination_publisher_not_commercially_cleared",
+      "frCaption": "Le monde de la lagune et des villas",
+      "enCaption": "Resort villas and tranquil waters"
+    },
+    {
+      "originalSize": [
+        1800,
+        800
+      ],
+      "outputSize": [
+        1800,
+        800
+      ],
+      "bytes": 140816,
+      "sha256": "75818bee6b469499eeded5af61ae8ce8369102c6d3fe4716851cd6e12f9cb9ab",
+      "pixelFingerprint": "ae808ece9d7917b3e33dfd740df5c305a1244c1ef8e886fc061f3abc6e04e704",
       "key": "scene-9",
       "localPath": "/images/travel/mayakoba-premium/destination/scene-9.webp",
       "sourcePage": "https://mayakoba.com/experiences/",
-      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2026/09/PERSONALIZED-EXCURSIONS.webp",
+      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2026/09/SUNSET.webp",
       "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
       "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
       "licenseUrl": "https://mayakoba.com/experiences/",
@@ -252,177 +252,177 @@
   "hotels": [
     {
       "originalSize": [
-        1800,
-        900
+        3000,
+        1688
       ],
       "outputSize": [
         1800,
-        900
+        1013
       ],
-      "bytes": 575874,
-      "sha256": "d9a290dc2e988d8dda7a2d686c555cd84b938c38e28b1be88d3f2075fed740dc",
-      "pixelFingerprint": "934dfdd5dcbeeae0bfbaba40403ccae7a471c340d0da63c98435a1600941d038",
+      "bytes": 525942,
+      "sha256": "1a67e88b4141250870d5ce34677798e05e3ec4a0b8270fa484c22d7b3413173a",
+      "pixelFingerprint": "79b62a983a826d6c9b3b1692f3fc06d67088138a21ef760473818dc730c9f7fd",
       "key": "view-1",
-      "localPath": "/images/travel/mayakoba-premium/rosewood/view-1.webp",
-      "sourcePage": "https://mayakoba.com/hotels-overview/rosewood-mayakoba/",
-      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2019/10/rosewood_carousel-04.jpg",
+      "localPath": "/images/travel/mayakoba-premium/banyan-tree/view-1.webp",
+      "sourcePage": "https://www.banyantree.com/mexico/mayakoba",
+      "downloadUrl": "https://www.banyantree.com/assets/2024-05/BTMXMY_AERIALVIEWLAGOON (1).jpg",
       "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
       "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
-      "licenseUrl": "https://mayakoba.com/hotels-overview/rosewood-mayakoba/",
+      "licenseUrl": "https://www.banyantree.com/mexico/mayakoba",
       "commercialRightsCleared": false,
       "status": "source_identified_private_preview",
       "visuallyVerified": false,
-      "originalAlt": "Hotel gallery",
-      "propertyKey": "rosewood",
-      "property": "Rosewood Mayakoba",
+      "originalAlt": "AERIAL VIEW LAGOON MAYAKOBA",
+      "propertyKey": "banyan-tree",
+      "property": "Banyan Tree Mayakoba",
       "rightsEvidenceType": "official_hotel_destination_publisher_not_commercially_cleared",
-      "frCaption": "Rosewood Mayakoba · photographie officielle du resort (détail à confirmer)",
-      "enCaption": "Rosewood Mayakoba · property-publisher photo (detail pending review)"
+      "frCaption": "Banyan Tree Mayakoba · photographie officielle du resort (détail à confirmer)",
+      "enCaption": "Banyan Tree Mayakoba · property-publisher photo (detail pending review)"
     },
     {
       "originalSize": [
-        1800,
-        900
+        3000,
+        1688
       ],
       "outputSize": [
         1800,
-        900
+        1013
       ],
-      "bytes": 310406,
-      "sha256": "9ff82188363d6fb35a3a351e9b63c3317601962db46fc058a38eaac5dd6b96b1",
-      "pixelFingerprint": "d8631799dfd5bbbada705ed5d338dfe1ffd5d7fa9407616947c3f03d070978dc",
+      "bytes": 490078,
+      "sha256": "986bb1c01a2f38355337852f4b4db07d720b38d9339be841a54ec5b141c80d7b",
+      "pixelFingerprint": "9cea0f50189359a0cdfd8f170e9e9a84adcdf440da39c2fcaa03b3efd97fe0eb",
       "key": "view-2",
-      "localPath": "/images/travel/mayakoba-premium/rosewood/view-2.webp",
-      "sourcePage": "https://mayakoba.com/hotels-overview/rosewood-mayakoba/",
-      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2019/08/rosewood_carousel-01.jpg",
+      "localPath": "/images/travel/mayakoba-premium/banyan-tree/view-2.webp",
+      "sourcePage": "https://www.banyantree.com/mexico/mayakoba",
+      "downloadUrl": "https://www.banyantree.com/_next/image?url=https%3A%2F%2Fwww.banyantree.com%2Fassets%2F2024-05%2FBTMXMY_AERIALVIEWLAGOON%20(1).jpg&w=3840&q=65",
       "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
       "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
-      "licenseUrl": "https://mayakoba.com/hotels-overview/rosewood-mayakoba/",
+      "licenseUrl": "https://www.banyantree.com/mexico/mayakoba",
       "commercialRightsCleared": false,
       "status": "source_identified_private_preview",
       "visuallyVerified": false,
-      "originalAlt": "Hotel gallery",
-      "propertyKey": "rosewood",
-      "property": "Rosewood Mayakoba",
+      "originalAlt": "AERIAL VIEW LAGOON MAYAKOBA",
+      "propertyKey": "banyan-tree",
+      "property": "Banyan Tree Mayakoba",
       "rightsEvidenceType": "official_hotel_destination_publisher_not_commercially_cleared",
-      "frCaption": "Rosewood Mayakoba · photographie officielle du resort (détail à confirmer)",
-      "enCaption": "Rosewood Mayakoba · property-publisher photo (detail pending review)"
+      "frCaption": "Banyan Tree Mayakoba · photographie officielle du resort (détail à confirmer)",
+      "enCaption": "Banyan Tree Mayakoba · property-publisher photo (detail pending review)"
     },
     {
       "originalSize": [
-        1800,
-        900
+        4088,
+        2727
       ],
       "outputSize": [
         1800,
-        900
+        1201
       ],
-      "bytes": 241412,
-      "sha256": "b080f155dd52b76e3a95d4dfd1b8a9114bafbaea42dc67011cc29137b139bd42",
-      "pixelFingerprint": "56c065d8404241cbf6c0dc9c13b231f03385dac498ff806a56b68f9c1e62413f",
+      "bytes": 245364,
+      "sha256": "e530fa6e3ec96e486f88d08193b1507ec63c76a75adf5f71103cccf7a665e580",
+      "pixelFingerprint": "0bbbf9848b92f90e121d64208d7211310a0d344cdab40150e8005b9913f6e3d9",
       "key": "view-3",
-      "localPath": "/images/travel/mayakoba-premium/rosewood/view-3.webp",
-      "sourcePage": "https://mayakoba.com/hotels-overview/rosewood-mayakoba/",
-      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2019/10/rosewood_carousel-02.jpg",
+      "localPath": "/images/travel/mayakoba-premium/banyan-tree/view-3.webp",
+      "sourcePage": "https://www.banyantree.com/mexico/mayakoba",
+      "downloadUrl": "https://www.banyantree.com/assets/2025-01/BTMXMY_TWO_BEDROOM_FAMILY_RESIDENCE_KITCHEN_0.jpg",
       "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
       "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
-      "licenseUrl": "https://mayakoba.com/hotels-overview/rosewood-mayakoba/",
+      "licenseUrl": "https://www.banyantree.com/mexico/mayakoba",
       "commercialRightsCleared": false,
       "status": "source_identified_private_preview",
       "visuallyVerified": false,
-      "originalAlt": "Hotel gallery",
-      "propertyKey": "rosewood",
-      "property": "Rosewood Mayakoba",
+      "originalAlt": "Stylish dining table set for six, overlooking lush greenery through large windows at Banyan Tree Mayakoba Two Bedroom Family Residence.",
+      "propertyKey": "banyan-tree",
+      "property": "Banyan Tree Mayakoba",
       "rightsEvidenceType": "official_hotel_destination_publisher_not_commercially_cleared",
-      "frCaption": "Rosewood Mayakoba · photographie officielle du resort (détail à confirmer)",
-      "enCaption": "Rosewood Mayakoba · property-publisher photo (detail pending review)"
+      "frCaption": "Banyan Tree Mayakoba · photographie officielle du resort (détail à confirmer)",
+      "enCaption": "Banyan Tree Mayakoba · property-publisher photo (detail pending review)"
     },
     {
       "originalSize": [
-        2300,
-        1190
+        2560,
+        1703
       ],
       "outputSize": [
         1800,
-        931
+        1197
       ],
-      "bytes": 558070,
-      "sha256": "e06e66448a903802ab61b94a47416e8eae1249911fcc162b26b0f3213a8e5249",
-      "pixelFingerprint": "00f0f819ffd12a9c1b72311f767eb50e6bbcf47f6cc79091ed43fe49059de15f",
+      "bytes": 159306,
+      "sha256": "53272ffe8156525b40f7c78be46d3c17135bbe8a1854b6f8758838905132e77c",
+      "pixelFingerprint": "65436103d68b8489485ff4f71a8cf0cd22bace884eb2d94b893590a689728645",
       "key": "view-1",
-      "localPath": "/images/travel/mayakoba-premium/alila/view-1.webp",
-      "sourcePage": "https://mayakoba.com/hotels-overview/alila-mayakoba/",
-      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2026/01/CUNAM-R0021-Casa-Amate-Entry.16x9.webp",
+      "localPath": "/images/travel/mayakoba-premium/fairmont/view-1.webp",
+      "sourcePage": "https://www.fairmont-mayakoba.com/",
+      "downloadUrl": "https://www.fairmont-mayakoba.com/content/uploads/2026/03/Fairmont-Mayakoba-x-Base-feb-2026-116-scaled.jpg",
       "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
       "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
-      "licenseUrl": "https://mayakoba.com/hotels-overview/alila-mayakoba/",
+      "licenseUrl": "https://www.fairmont-mayakoba.com/",
       "commercialRightsCleared": false,
       "status": "source_identified_private_preview",
       "visuallyVerified": false,
-      "originalAlt": "Hotel gallery",
-      "propertyKey": "alila",
-      "property": "Alila Mayakoba",
+      "originalAlt": "Luxury resort Riviera Maya, Riviera Maya luxury hotel, beachfront resort Mexico, 5-star resort Riviera Maya, Playa del Carmen luxury resort, Mexico luxury vacation, Caribbean beach resort Mexico, all inclusive luxury resort Mexico, Fairmont Mayakoba resort, Fairmont Mayakoba Riviera Maya, luxury resort Playa del Carmen Mexico, Mayakoba luxury resort, Quintana Roo luxury resort, Yucatán Peninsula luxury travel, Cancun and Riviera Maya luxury resorts, Riviera Maya beachfront hotels, Playa del Carmen five star hotel, Caribbean coast Mexico resort, Mexico tropical luxury getaway, Riviera Maya oceanfront resort, best luxury resorts in Riviera Maya, exclusive resorts Playa del Carmen, luxury stays Quintana Roo, premium resorts Riviera Maya Mexico, high end resorts Mexico Caribbean.",
+      "propertyKey": "fairmont",
+      "property": "Fairmont Mayakoba",
       "rightsEvidenceType": "official_hotel_destination_publisher_not_commercially_cleared",
-      "frCaption": "Alila Mayakoba · photographie officielle du resort (détail à confirmer)",
-      "enCaption": "Alila Mayakoba · property-publisher photo (detail pending review)"
+      "frCaption": "Fairmont Mayakoba · photographie officielle du resort (détail à confirmer)",
+      "enCaption": "Fairmont Mayakoba · property-publisher photo (detail pending review)"
     },
     {
       "originalSize": [
-        2300,
-        1190
+        2560,
+        1708
       ],
       "outputSize": [
         1800,
-        931
+        1201
       ],
-      "bytes": 515486,
-      "sha256": "d4a8eb96a09b15cd3972b66153de911ff23a6ca09ebb64e79c3d3605394d69c8",
-      "pixelFingerprint": "b681a3467a880fa2d6d5e78ac0e5ff197b4a0a1abc5cd1fca94e6e9f88795991",
+      "bytes": 187764,
+      "sha256": "a53eadbd01e18af57a73a4530d9ea9adcaab37f26c5d431bafa10ee9c32212b9",
+      "pixelFingerprint": "6094d235d72f4ff7154c4c729cb96644ba95e2ee3e7d6fc29ba7f93fb0a167e4",
       "key": "view-2",
-      "localPath": "/images/travel/mayakoba-premium/alila/view-2.webp",
-      "sourcePage": "https://mayakoba.com/hotels-overview/alila-mayakoba/",
-      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2026/01/CUNAM-R0022-Casa-Amate-Lounge.4x3.webp",
+      "localPath": "/images/travel/mayakoba-premium/fairmont/view-2.webp",
+      "sourcePage": "https://www.fairmont-mayakoba.com/",
+      "downloadUrl": "https://www.fairmont-mayakoba.com/content/uploads/2026/01/Family1-scaled.jpg",
       "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
       "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
-      "licenseUrl": "https://mayakoba.com/hotels-overview/alila-mayakoba/",
+      "licenseUrl": "https://www.fairmont-mayakoba.com/",
       "commercialRightsCleared": false,
       "status": "source_identified_private_preview",
       "visuallyVerified": false,
-      "originalAlt": "Hotel gallery",
-      "propertyKey": "alila",
-      "property": "Alila Mayakoba",
+      "originalAlt": "",
+      "propertyKey": "fairmont",
+      "property": "Fairmont Mayakoba",
       "rightsEvidenceType": "official_hotel_destination_publisher_not_commercially_cleared",
-      "frCaption": "Alila Mayakoba · photographie officielle du resort (détail à confirmer)",
-      "enCaption": "Alila Mayakoba · property-publisher photo (detail pending review)"
+      "frCaption": "Fairmont Mayakoba · photographie officielle du resort (détail à confirmer)",
+      "enCaption": "Fairmont Mayakoba · property-publisher photo (detail pending review)"
     },
     {
       "originalSize": [
-        2300,
-        1190
+        2560,
+        1707
       ],
       "outputSize": [
         1800,
-        931
+        1200
       ],
-      "bytes": 557798,
-      "sha256": "0a32060c65230aa98d9a4cb2d1535350cf6ae76786976b1c2226a4e9307ce07d",
-      "pixelFingerprint": "6cbb0a46b19f8d37d56b51c87047a7e0065310e26dd178830cf5f36854a44021",
+      "bytes": 516454,
+      "sha256": "e50c2ac8885a351cbdb3ad97d971241f3744b705858f6ce29a2b0b40541594e9",
+      "pixelFingerprint": "7b64148a45a1b42f898979d53a03e0628b5df3157c56378013bdf1e0f1bbf7cf",
       "key": "view-3",
-      "localPath": "/images/travel/mayakoba-premium/alila/view-3.webp",
-      "sourcePage": "https://mayakoba.com/hotels-overview/alila-mayakoba/",
-      "downloadUrl": "https://mayakoba.com/wp-content/uploads/2026/01/CUNAM-R0025-Chefs-Atelier.16x9.webp",
+      "localPath": "/images/travel/mayakoba-premium/fairmont/view-3.webp",
+      "sourcePage": "https://www.fairmont-mayakoba.com/",
+      "downloadUrl": "https://www.fairmont-mayakoba.com/content/uploads/2026/03/FairmontSpa10-scaled.jpg",
       "credit": "Mayakoba official destination / hotel media (photographer rights not independently verified)",
       "license": "Publisher photograph; PRIVATE owner Preview only. Commercial republication rights NOT cleared.",
-      "licenseUrl": "https://mayakoba.com/hotels-overview/alila-mayakoba/",
+      "licenseUrl": "https://www.fairmont-mayakoba.com/",
       "commercialRightsCleared": false,
       "status": "source_identified_private_preview",
       "visuallyVerified": false,
-      "originalAlt": "Hotel gallery",
-      "propertyKey": "alila",
-      "property": "Alila Mayakoba",
+      "originalAlt": "20th anniversary spa treatments",
+      "propertyKey": "fairmont",
+      "property": "Fairmont Mayakoba",
       "rightsEvidenceType": "official_hotel_destination_publisher_not_commercially_cleared",
-      "frCaption": "Alila Mayakoba · photographie officielle du resort (détail à confirmer)",
-      "enCaption": "Alila Mayakoba · property-publisher photo (detail pending review)"
+      "frCaption": "Fairmont Mayakoba · photographie officielle du resort (détail à confirmer)",
+      "enCaption": "Fairmont Mayakoba · property-publisher photo (detail pending review)"
     }
   ]
 }
