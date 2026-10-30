@@ -11,7 +11,7 @@ const {travelDestinations,approvedDestinationSlugs}=require('../data/travel/dest
 const m=require('../data/travel/bangkokMediaCandidates.json');
 assert.equal(travelDestinations.length,88);
 assert.equal(new Set(travelDestinations.map(x=>x.slug)).size,88);
-assert.equal(Object.keys(featuredCityGuides).length,63);
+assert(Object.keys(featuredCityGuides).length>=63,'Keep Bangkok and preceding guides while adding Chiang Mai');
 assert.equal(approvedDestinationSlugs.size,0,'No public index or distribution until licensed');
 for(const slug of ['bangkok','krabi','koh-yao-noi','san-miguel-de-allende','mayakoba','los-angeles','miami','new-york','istanbul','monaco','gstaad']){
  assert(featuredCityGuides[slug],slug+' missing');
