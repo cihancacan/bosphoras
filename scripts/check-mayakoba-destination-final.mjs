@@ -24,16 +24,22 @@ const manifest=JSON.parse(read('data/travel/mayakobaMediaCandidates.json'));
 assert.equal(manifest.destination,'mayakoba');
 assert.equal(manifest.destinationScenes.length,9,'Nine distinct authentic Mayakoba destination photos');
 assert.equal(manifest.hotels.length,12,'Three operator-attributed photo per hotel');
-const files=new Set(),sha=new Set(),pixels=new Set();
+const files=new Set(),sha=new Set(),pixels=new Set(),sourceOriginals=new Set();
 for(const p of [...manifest.destinationScenes,...manifest.hotels]){
  assert(p.localPath?.startsWith('/images/travel/mayakoba-premium/'));
- assert(p.sourcePage?.startsWith('https://mayakoba.com/'),'Mayakoba official source page only');
+ assert(p.sourcePage?.startsWith('https://mayakoba.com/') || p.sourcePage?.startsWith('https://www.banyantree.com/mexico/mayakoba') || p.sourcePage?.startsWith('https://www.fairmont-mayakoba.com/'),'Named hotel official source page only');
  assert(p.downloadUrl?.startsWith('https://'));
  assert(p.sha256?.length===64&&(p.bytes||0)>18000);
  assert(p.credit&&p.frCaption&&p.enCaption);
  assert.equal(p.commercialRightsCleared,false,'Mayakoba publisher images have no independent commercial-use licence');
  assert(p.license?.includes('NOT cleared')||p.license?.includes('NOT')||p.license?.includes('not'),'Rights status missing');
  assert(!files.has(p.localPath),'Repeated file path');files.add(p.localPath);
+ const url=new URL(p.downloadUrl);
+ if(url.hostname==='mayakoba.com'||url.hostname==='www.mayakoba.com'){
+  const canonical=url.pathname.toLowerCase().replace(/-\d{2,4}x\d{2,4}(?=\.)/,'').replace(/\.(?:webp|jpe?g|png)$/,'');
+  assert(!sourceOriginals.has(canonical),'Same original publisher photo repeated in different formats: '+canonical);
+  sourceOriginals.add(canonical);
+ }
  assert(!sha.has(p.sha256),'Identical photo file SHA reused');sha.add(p.sha256);
  assert(!pixels.has(p.pixelFingerprint),'Identical resized photo pixels reused');pixels.add(p.pixelFingerprint);
  assert(existsSync('public'+p.localPath),'Image WebP missing '+p.localPath);
@@ -45,7 +51,10 @@ for(const id of ['rosewood','banyan-tree','fairmont','alila']){
  const p=manifest.hotels.filter(x=>x.propertyKey===id);
  assert.equal(p.length,3,'Three named property images missing '+id);
  for(const item of p){
-  assert(item.sourcePage.startsWith('https://mayakoba.com/hotels-overview/'+id+'-mayakoba/'),'Hotel imagery cannot be swapped');
+  const expected=id==='banyan-tree'?'https://www.banyantree.com/mexico/mayakoba'
+   :id==='fairmont'?'https://www.fairmont-mayakoba.com/'
+   :'https://mayakoba.com/hotels-overview/'+id+'-mayakoba/';
+  assert(item.sourcePage.startsWith(expected),'Hotel imagery cannot be swapped for '+id);
   assert.equal(item.rightsEvidenceType,'official_hotel_destination_publisher_not_commercially_cleared');
  }
 }
