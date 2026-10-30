@@ -12,7 +12,7 @@ const manifest=require('../data/travel/kohYaoNoiMediaCandidates.json');
 
 assert.equal(travelDestinations.length,88,'Preserve all 88 geographic destinations');
 assert.equal(new Set(travelDestinations.map(x=>x.slug)).size,88);
-assert.equal(Object.keys(featuredCityGuides).length,62,'Exactly 62 editorial guides after Koh Yao Noi');
+assert(Object.keys(featuredCityGuides).length>=62,'Preserve Koh Yao Noi when later destination guides are added');
 assert.equal(approvedDestinationSlugs.size,0,'All Travel preview pages must remain noindex');
 assert(featuredCityGuides.krabi,'Krabi #61 missing');
 assert.equal(featuredCityGuides['koh-yao-noi'].slug,'koh-yao-noi');
