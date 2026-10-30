@@ -1,0 +1,63 @@
+{
+  "cityCount": 4,
+  "hotelCount": 9,
+  "expected": [
+    9,
+    12
+  ],
+  "hotels": [
+    {
+      "property": "Mandarin Oriental, Bangkok",
+      "found": 0,
+      "downloaded": 0,
+      "errors": []
+    },
+    {
+      "property": "Capella Bangkok",
+      "found": 35,
+      "downloaded": 3,
+      "errors": []
+    },
+    {
+      "property": "The Siam Bangkok",
+      "found": 221,
+      "downloaded": 3,
+      "errors": [
+        "undersized media [768, 512]",
+        "undersized media [768, 512]"
+      ]
+    },
+    {
+      "property": "Aman Nai Lert Bangkok",
+      "found": 600,
+      "downloaded": 3,
+      "errors": [
+        "undersized media [774, 774]"
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "key": "scene-1",
+      "reason": "no licensed source for Bangkok Chao Phraya river Wat Arun night panorama; []"
+    },
+    {
+      "key": "scene-2",
+      "reason": "no licensed source for Bangkok Wat Arun temple sunrise; []"
+    },
+    {
+      "key": "scene-4",
+      "reason": "no licensed source for Charoen Krung Bangkok old town street; []"
+    },
+    {
+      "key": "scene-6",
+      "reason": "no licensed source for Bangkok Lumpini Park skyscrapers skyline; []"
+    },
+    {
+      "key": "scene-9",
+      "reason": "no licensed source for Bangkok skyline King Power Mahanakhon skyscraper; []"
+    }
+  ],
+  "visuallyApproved": false,
+  "commercialHotelPhotoRights": false
+}
