@@ -67,3 +67,11 @@ Cette section remplace les indications de brouillon « pas encore intégré » c
 - **Aucun nouveau déploiement Vercel de Krabi autorisé avant le prochain lot complet** ; les tentatives de déploiement ordinaires de la branche apparaissent CANCELED comme prévu. Production `main`, CRM, immobilier, transferts et API hôtelières inchangés.
 
 **Porte de sortie :** attendre le commit de remplacement réellement écrit, contrôler 21/21 images et la conclusion **SUCCESS** du workflow TypeScript. Seulement après, qualifier **Krabi terminée sur la branche interne**, sans confondre avec une mise en ligne Preview ou production.
+
+### État photographique final — 30 octobre 2026
+
+Le remplacement est **effectivement livré dans la branche**, commit `d09542f6aef1829a7be838d85ae56331046a799e` :
+- `scene-4.webp` représente maintenant **Koh Kwang / Klong Muang**, palmiers au bord de la mer d’Andaman, œuvre de **Caitriana Nicholson**, Creative Commons **CC BY-SA 2.0**. La conversion en WebP, le lien de licence, le crédit auteur, les dimensions et les empreintes SHA-256 sont conservés dans le manifeste.
+- **21/21 photographies avec identité et contrôle visuel interne** : neuf paysages de Krabi et 12 photos distinctes des quatre hôtels. Chaque photo d’hôtel reste `commercialRightsCleared: false` : ces images sont autorisées uniquement dans notre environnement protégé de revue, et ne constituent pas une licence de publication commerciale indépendante.
+- Le statut du manifeste est désormais `INTERNAL_21_OF_21_PHOTO_REVIEW_PASSED_NOT_PUBLIC_LICENSED`. Cela complète la **revue photographique**, mais ne prouve pas la compilation TypeScript ou le rendu HTTP du déploiement.
+- Test final GitHub Actions : https://github.com/cihancacan/bosphoras/actions/runs/41102342868 ; **vérifier la conclusion SUCCESS avant de déclarer la QA technique complète**. La suite n'implique aucun déploiement Preview autonome et aucune modification de la production.
