@@ -1,0 +1,517 @@
+{
+  "destination": "koh-yao-noi",
+  "scope": "protected_owner_preview_only",
+  "rightsNotice": "Hotel images have no independent commercial redistribution authorisation.",
+  "cityCount": 9,
+  "hotelCount": 9,
+  "destinationScenes": [
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 110392,
+      "sha256": "eb03b39c3cbc659834748cf9f54ee05a3408b75c7b6bf08ef1833ae8c596a9bd",
+      "pixelFingerprint": "86389aa95587b839e478388ab584aab13ade3a4d9069b6309020625d70adcd2f",
+      "key": "scene-1",
+      "localPath": "/images/travel/koh-yao-noi-premium/destination/scene-1.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Koh_Yao_Noi%2C_Limestone_formations_in_Phang_Nga_Bay%2C_Thailand.jpg/1920px-Koh_Yao_Noi%2C_Limestone_formations_in_Phang_Nga_Bay%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Koh_Yao_Noi,_Limestone_formations_in_Phang_Nga_Bay,_Thailand.jpg",
+      "credit": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Koh Yao Noi · les îlots calcaires de la baie",
+      "enCaption": "Koh Yao Noi · limestone islands of Phang Nga Bay",
+      "originalAlt": "Koh Yao Noi, Limestone formations in Phang Nga Bay, Thailand.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 659102,
+      "sha256": "eb04f27c8b3ee3fc9943662dec10b7fccdc95b1f77e1e02ed2a43d2cdbbe2dd1",
+      "pixelFingerprint": "6bc64cb6b07d38cb94faf29170095e34a26de36f1bcb5317ca042fc1385aec74",
+      "key": "scene-2",
+      "localPath": "/images/travel/koh-yao-noi-premium/destination/scene-2.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Koh_Yao_Noi%2C_Palm_on_the_beach%2C_Phang_Nga_Bay%2C_Thailand.jpg/1920px-Koh_Yao_Noi%2C_Palm_on_the_beach%2C_Phang_Nga_Bay%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Koh_Yao_Noi,_Palm_on_the_beach,_Phang_Nga_Bay,_Thailand.jpg",
+      "credit": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Koh Yao Noi · palmier et sable de la baie",
+      "enCaption": "Koh Yao Noi · shoreline palm and sand",
+      "originalAlt": "Koh Yao Noi, Palm on the beach, Phang Nga Bay, Thailand.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 268062,
+      "sha256": "6f2625151e820b9a4e979295163fec0fd787ed3461239aaa162262088f475829",
+      "pixelFingerprint": "2bbc801fd6e24843a4497abedee01cd2bd111fdbe33179108a04f918a23d0fb2",
+      "key": "scene-3",
+      "localPath": "/images/travel/koh-yao-noi-premium/destination/scene-3.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Sunrise_on_the_beach%2C_Koh_Yao_Noi_%28island%29%2C_Phang_Nga_Bay%2C_Thailand.jpg/1920px-Sunrise_on_the_beach%2C_Koh_Yao_Noi_%28island%29%2C_Phang_Nga_Bay%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sunrise_on_the_beach,_Koh_Yao_Noi_(island),_Phang_Nga_Bay,_Thailand.jpg",
+      "credit": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "L'aube se lève sur les îlots de la baie",
+      "enCaption": "Sunrise over the limestone islands",
+      "originalAlt": "Sunrise on the beach, Koh Yao Noi (island), Phang Nga Bay, Thailand.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "bytes": 219788,
+      "sha256": "0c766a056ba14750b8a0fb0517d2e43b8b3b04814c8009d395666c44941f99bf",
+      "pixelFingerprint": "0bb126d2d5008d3ce8a8128b25ab41beee7861d30f3a79189b8989930d8cf8f6",
+      "key": "scene-4",
+      "localPath": "/images/travel/koh-yao-noi-premium/destination/scene-4.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Koyao_Island_Resort_Beach_-_panoramio.jpg/1920px-Koyao_Island_Resort_Beach_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Koyao_Island_Resort_Beach_-_panoramio.jpg",
+      "credit": "Jaakko H.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "La plage de Koyao Island Resort",
+      "enCaption": "Koyao Island Resort beach",
+      "originalAlt": "Koyao Island Resort Beach - panoramio.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "bytes": 299154,
+      "sha256": "497de8f29fa52603010c7b08756c1ceaad618d5b80ead321fb536ba6c32e7e36",
+      "pixelFingerprint": "0f05186633ef7872711de393f6ae0479ba7fca7478bb54141236cf7b9fd43ce8",
+      "key": "scene-5",
+      "localPath": "/images/travel/koh-yao-noi-premium/destination/scene-5.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Pier_in_the_NE_corner_of_Yao_Noi_-_panoramio.jpg/1920px-Pier_in_the_NE_corner_of_Yao_Noi_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pier_in_the_NE_corner_of_Yao_Noi_-_panoramio.jpg",
+      "credit": "Jaakko H.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "L'embarcadère du nord-est de l'île",
+      "enCaption": "The northeastern island pier",
+      "originalAlt": "Pier in the NE corner of Yao Noi - panoramio.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        2880
+      ],
+      "outputSize": [
+        800,
+        1200
+      ],
+      "bytes": 192360,
+      "sha256": "7067cb10d86de90f49309c90f5342926b83be3c691fed7408dcb1f92ee1082c3",
+      "pixelFingerprint": "df825e4c312a20468f814823f365f57f6e66334a2e928957673011f01eaa3958",
+      "key": "scene-6",
+      "localPath": "/images/travel/koh-yao-noi-premium/destination/scene-6.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Palms_in_Koh_Yao_Noi%2C_Phang_Nga_Bay%2C_Thailand.jpg/1920px-Palms_in_Koh_Yao_Noi%2C_Phang_Nga_Bay%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Palms_in_Koh_Yao_Noi,_Phang_Nga_Bay,_Thailand.jpg",
+      "credit": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "La végétation littorale de Koh Yao Noi",
+      "enCaption": "The coastal palms of Koh Yao Noi",
+      "originalAlt": "Palms in Koh Yao Noi, Phang Nga Bay, Thailand.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "bytes": 553148,
+      "sha256": "9970a4620c281b22db338e45f5790eaa07f5e614d4a684144e9d56b98580fbaf",
+      "pixelFingerprint": "4ff0c04c9b6ae9b4256ae6c318cc1ced1c39ead4c91cf84c751a5fcd30fc52ea",
+      "key": "scene-7",
+      "localPath": "/images/travel/koh-yao-noi-premium/destination/scene-7.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Koyao_Island_Resort_from_the_beachfront_-_panoramio.jpg/1920px-Koyao_Island_Resort_from_the_beachfront_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Koyao_Island_Resort_from_the_beachfront_-_panoramio.jpg",
+      "credit": "Jaakko H.",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "La côte habitée et la mer à Koyao Island Resort",
+      "enCaption": "Island life and waterfront near Koyao Island Resort",
+      "originalAlt": "Koyao Island Resort from the beachfront - panoramio.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 319336,
+      "sha256": "21e83aa102a093a2926e710250a40aa171cba25726121e0372f907baaddeaf9f",
+      "pixelFingerprint": "bcdf1b3df85b7a387e3ee063cd8cdc05df897914144894f65357b39468d1b49f",
+      "key": "scene-8",
+      "localPath": "/images/travel/koh-yao-noi-premium/destination/scene-8.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Sunrise_2%2C_Koh_Yao_Noi_%28island%29%2C_Phang_Nga_Bay%2C_Thailand.jpg/1920px-Sunrise_2%2C_Koh_Yao_Noi_%28island%29%2C_Phang_Nga_Bay%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sunrise_2,_Koh_Yao_Noi_(island),_Phang_Nga_Bay,_Thailand.jpg",
+      "credit": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Une seconde lumière d'aube sur Phang Nga Bay",
+      "enCaption": "Another dawn over Phang Nga Bay",
+      "originalAlt": "Sunrise 2, Koh Yao Noi (island), Phang Nga Bay, Thailand.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 265558,
+      "sha256": "b39c6e0d3a66997e24c114cd4d0599714bfb5fa1b756323aa96c3d2d19d13b19",
+      "pixelFingerprint": "882bd51058b8e0695174bac2213b21360dd6fa5a08bf8f5e62195ae3e3b1d839",
+      "key": "scene-9",
+      "localPath": "/images/travel/koh-yao-noi-premium/destination/scene-9.webp",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Koh_Yao_Noi%2C_Limestone_formations_of_Phang_Nga_Bay%2C_Thailand.jpg/1920px-Koh_Yao_Noi%2C_Limestone_formations_of_Phang_Nga_Bay%2C_Thailand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Koh_Yao_Noi,_Limestone_formations_of_Phang_Nga_Bay,_Thailand.jpg",
+      "credit": "Vyacheslav Argenberg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "commercialRightsCleared": true,
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Koh Yao Noi · autres reliefs de la baie",
+      "enCaption": "Koh Yao Noi · another view of the limestone bay",
+      "originalAlt": "Koh Yao Noi, Limestone formations of Phang Nga Bay, Thailand.jpg"
+    }
+  ],
+  "hotels": [
+    {
+      "originalSize": [
+        1740,
+        880
+      ],
+      "outputSize": [
+        1600,
+        809
+      ],
+      "bytes": 168110,
+      "sha256": "0772c2f75eb75815a8344a35f7906c86c37b89b85394b2c8344cf76b4c0416f0",
+      "pixelFingerprint": "cbf8f4af500d176eac22a23b3afe398ca0ee1651d20e5dea2433b1d01a3febe9",
+      "key": "view-1",
+      "propertyKey": "cape-kudu",
+      "property": "Cape Kudu Hotel",
+      "localPath": "/images/travel/koh-yao-noi-premium/cape-kudu/view-1.webp",
+      "sourcePage": "https://www.capekuduhotel.com/",
+      "downloadUrl": "https://www.capekuduhotel.com/images/home2/accom/deluxe-seaview2.jpg",
+      "credit": "Cape Kudu Hotel official publisher; photographer rights not independently verified",
+      "license": "Publisher image, no independent commercial republication rights.",
+      "licenseUrl": "https://www.capekuduhotel.com/",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
+      "frCaption": "Cape Kudu Hotel · vue officielle à identifier précisément",
+      "enCaption": "Cape Kudu Hotel · official property view pending manual review"
+    },
+    {
+      "originalSize": [
+        1740,
+        880
+      ],
+      "outputSize": [
+        1600,
+        809
+      ],
+      "bytes": 192938,
+      "sha256": "d9076c8512974dd96886affd4ef64acba9325aa62a5530a3c034a5ef951f02a1",
+      "pixelFingerprint": "a8ed69ef3dfb4d3de9851b908c1e63e88485e7e23c9219706748a73acd3f4fec",
+      "key": "view-2",
+      "propertyKey": "cape-kudu",
+      "property": "Cape Kudu Hotel",
+      "localPath": "/images/travel/koh-yao-noi-premium/cape-kudu/view-2.webp",
+      "sourcePage": "https://www.capekuduhotel.com/",
+      "downloadUrl": "https://www.capekuduhotel.com/images/home2/accom/pool-villa.jpg",
+      "credit": "Cape Kudu Hotel official publisher; photographer rights not independently verified",
+      "license": "Publisher image, no independent commercial republication rights.",
+      "licenseUrl": "https://www.capekuduhotel.com/",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
+      "frCaption": "Cape Kudu Hotel · vue officielle à identifier précisément",
+      "enCaption": "Cape Kudu Hotel · official property view pending manual review"
+    },
+    {
+      "originalSize": [
+        1024,
+        576
+      ],
+      "outputSize": [
+        1024,
+        576
+      ],
+      "bytes": 204478,
+      "sha256": "fa8379c8b5238a653dad83a7e36fcdd8b1dc11ddda45f90f525c535a73ca90a8",
+      "pixelFingerprint": "5e889406a477ce8b29885c748342c7e587801c41f022eb038561d9aa2d0d6913",
+      "key": "view-3",
+      "propertyKey": "cape-kudu",
+      "property": "Cape Kudu Hotel",
+      "localPath": "/images/travel/koh-yao-noi-premium/cape-kudu/view-3.webp",
+      "sourcePage": "https://www.capekuduhotel.com/",
+      "downloadUrl": "https://www.capekuduhotel.com/images/ogimage/pools.jpg",
+      "credit": "Cape Kudu Hotel official publisher; photographer rights not independently verified",
+      "license": "Publisher image, no independent commercial republication rights.",
+      "licenseUrl": "https://www.capekuduhotel.com/",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "official publisher hero",
+      "frCaption": "Cape Kudu Hotel · vue officielle à identifier précisément",
+      "enCaption": "Cape Kudu Hotel · official property view pending manual review"
+    },
+    {
+      "originalSize": [
+        1080,
+        1080
+      ],
+      "outputSize": [
+        1080,
+        1080
+      ],
+      "bytes": 19562,
+      "sha256": "1513ea48d64cdfbb2477ee715a70078b55f81ee4ea4cd05c1994ee11ec6b335a",
+      "pixelFingerprint": "c7b1908efa7fa2fe6766daee497e4025d328b8ccad4c01907313ba907fe691df",
+      "key": "view-1",
+      "propertyKey": "treehouse",
+      "property": "TreeHouse Villas Koh Yao",
+      "localPath": "/images/travel/koh-yao-noi-premium/treehouse/view-1.webp",
+      "sourcePage": "https://www.treehouse-villas.com/",
+      "downloadUrl": "https://www.treehouse-villas.com/wp-content/uploads/2021/12/Green-Hotel.png",
+      "credit": "TreeHouse Villas Koh Yao official publisher; photographer rights not independently verified",
+      "license": "Publisher image, no independent commercial republication rights.",
+      "licenseUrl": "https://www.treehouse-villas.com/",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
+      "frCaption": "TreeHouse Villas Koh Yao · vue officielle à identifier précisément",
+      "enCaption": "TreeHouse Villas Koh Yao · official property view pending manual review"
+    },
+    {
+      "originalSize": [
+        1024,
+        1024
+      ],
+      "outputSize": [
+        1024,
+        1024
+      ],
+      "bytes": 29760,
+      "sha256": "1492dc33d71de09b96f1c0f9c75c8af2ba64b4f2927b7e347114293ad303ae7e",
+      "pixelFingerprint": "b977e0e263d7a90462225318bc0778253adaead24a20c67d5b10ea0b57e83876",
+      "key": "view-2",
+      "propertyKey": "treehouse",
+      "property": "TreeHouse Villas Koh Yao",
+      "localPath": "/images/travel/koh-yao-noi-premium/treehouse/view-2.webp",
+      "sourcePage": "https://www.treehouse-villas.com/",
+      "downloadUrl": "https://www.treehouse-villas.com/wp-content/uploads/2021/12/Green-Hotel-1024x1024.png",
+      "credit": "TreeHouse Villas Koh Yao official publisher; photographer rights not independently verified",
+      "license": "Publisher image, no independent commercial republication rights.",
+      "licenseUrl": "https://www.treehouse-villas.com/",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "embedded publisher photograph",
+      "frCaption": "TreeHouse Villas Koh Yao · vue officielle à identifier précisément",
+      "enCaption": "TreeHouse Villas Koh Yao · official property view pending manual review"
+    },
+    {
+      "originalSize": [
+        1752,
+        1168
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 209504,
+      "sha256": "e1da7c71f76f898ffc5fd13fee75848739e8dcbb083424c3ca879fa30095397b",
+      "pixelFingerprint": "d44defc16526d51f5c3f07bc3d01c6b39e8e43b0c20b2160f9dbd8d26e672a35",
+      "key": "view-3",
+      "propertyKey": "treehouse",
+      "property": "TreeHouse Villas Koh Yao",
+      "localPath": "/images/travel/koh-yao-noi-premium/treehouse/view-3.webp",
+      "sourcePage": "https://www.treehouse-villas.com/",
+      "downloadUrl": "https://www.treehouse-villas.com/wp-content/uploads/2025/01/TreeHouse-Villa-11.jpg",
+      "credit": "TreeHouse Villas Koh Yao official publisher; photographer rights not independently verified",
+      "license": "Publisher image, no independent commercial republication rights.",
+      "licenseUrl": "https://www.treehouse-villas.com/",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Home 3",
+      "frCaption": "TreeHouse Villas Koh Yao · vue officielle à identifier précisément",
+      "enCaption": "TreeHouse Villas Koh Yao · official property view pending manual review"
+    },
+    {
+      "originalSize": [
+        1200,
+        800
+      ],
+      "outputSize": [
+        1200,
+        800
+      ],
+      "bytes": 60460,
+      "sha256": "47319c2658c5fdf688f12ab4b381d57632aaf2bd9ca2156c6d00276f6b30686c",
+      "pixelFingerprint": "8931c64b20dfd59a75c308622da05cf2b49421e113bd67997a632319385e274b",
+      "key": "view-1",
+      "propertyKey": "nine-hornbills",
+      "property": "9 Hornbills Tented Camp",
+      "localPath": "/images/travel/koh-yao-noi-premium/nine-hornbills/view-1.webp",
+      "sourcePage": "https://9hornbills.com/",
+      "downloadUrl": "https://9hornbills.com/assets/image-cache/9HB_Pool_View.550b7136.jpg",
+      "credit": "9 Hornbills Tented Camp official publisher; photographer rights not independently verified",
+      "license": "Publisher image, no independent commercial republication rights.",
+      "licenseUrl": "https://9hornbills.com/",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "embedded publisher photograph",
+      "frCaption": "9 Hornbills Tented Camp · vue officielle à identifier précisément",
+      "enCaption": "9 Hornbills Tented Camp · official property view pending manual review"
+    },
+    {
+      "originalSize": [
+        1200,
+        674
+      ],
+      "outputSize": [
+        1200,
+        674
+      ],
+      "bytes": 102746,
+      "sha256": "f97a7db84def3155032bd22024ac70e71336aa247a228528fbee1b23cbeee72a",
+      "pixelFingerprint": "029b7dc30c6b2a34e16c431699e1e006d69bba8cdad822afa2dbfc92e8ee14cb",
+      "key": "view-2",
+      "propertyKey": "nine-hornbills",
+      "property": "9 Hornbills Tented Camp",
+      "localPath": "/images/travel/koh-yao-noi-premium/nine-hornbills/view-2.webp",
+      "sourcePage": "https://9hornbills.com/",
+      "downloadUrl": "https://9hornbills.com/assets/image-cache/9hornbills/media/images/gallery/New/9hornbillsdrone4.550b7136.jpg",
+      "credit": "9 Hornbills Tented Camp official publisher; photographer rights not independently verified",
+      "license": "Publisher image, no independent commercial republication rights.",
+      "licenseUrl": "https://9hornbills.com/",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "embedded publisher photograph",
+      "frCaption": "9 Hornbills Tented Camp · vue officielle à identifier précisément",
+      "enCaption": "9 Hornbills Tented Camp · official property view pending manual review"
+    },
+    {
+      "originalSize": [
+        1200,
+        1800
+      ],
+      "outputSize": [
+        800,
+        1200
+      ],
+      "bytes": 97320,
+      "sha256": "ccf3803f20f81cfd5172e6b277b7749692bc4fa0a7988a42fc64eab76112cbe5",
+      "pixelFingerprint": "c76b82a7bd21a1d0aaec213bc3324673128185ae912df0d8871ea61acaecb8f3",
+      "key": "view-3",
+      "propertyKey": "nine-hornbills",
+      "property": "9 Hornbills Tented Camp",
+      "localPath": "/images/travel/koh-yao-noi-premium/nine-hornbills/view-3.webp",
+      "sourcePage": "https://9hornbills.com/",
+      "downloadUrl": "https://9hornbills.com/assets/image-cache/9hornbills/media/images/gallery/New/9hornbills84.550b7136.jpg",
+      "credit": "9 Hornbills Tented Camp official publisher; photographer rights not independently verified",
+      "license": "Publisher image, no independent commercial republication rights.",
+      "licenseUrl": "https://9hornbills.com/",
+      "commercialRightsCleared": false,
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "embedded publisher photograph",
+      "frCaption": "9 Hornbills Tented Camp · vue officielle à identifier précisément",
+      "enCaption": "9 Hornbills Tented Camp · official property view pending manual review"
+    }
+  ],
+  "visualQA": "PENDING_INDIVIDUAL_MANUAL_REVIEW",
+  "publicUseApproved": false
+}

@@ -1,0 +1,56 @@
+{
+  "scenes": 9,
+  "hotels": 9,
+  "hotelStats": [
+    {
+      "property": "Six Senses Yao Noi",
+      "candidates": 0,
+      "downloaded": 0,
+      "errors": []
+    },
+    {
+      "property": "Cape Kudu Hotel",
+      "candidates": 137,
+      "downloaded": 3,
+      "errors": [
+        "too small",
+        "too small",
+        "too small",
+        "too small",
+        "too small",
+        "too small",
+        "too small"
+      ]
+    },
+    {
+      "property": "TreeHouse Villas Koh Yao",
+      "candidates": 124,
+      "downloaded": 3,
+      "errors": [
+        "too small",
+        "too small",
+        "too small",
+        "too small",
+        "too small",
+        "too small",
+        "too small"
+      ]
+    },
+    {
+      "property": "9 Hornbills Tented Camp",
+      "candidates": 53,
+      "downloaded": 3,
+      "errors": [
+        "too small",
+        "too small",
+        "too small",
+        "too small",
+        "too small",
+        "too small",
+        "too small"
+      ]
+    }
+  ],
+  "errors": [],
+  "visualReviewApproved": false
+}
