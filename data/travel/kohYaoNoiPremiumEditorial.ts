@@ -46,3 +46,5 @@ export const kohYaoNoiSchemaSafePhotos=new Set(
 export const kohYaoNoiPhotoLicenses:Record<string,{name:string;url:string}>=Object.fromEntries(
  manifest.destinationScenes.filter(approvedKohYaoNoiScene).map(p=>[p.localPath,{name:p.license,url:p.licenseUrl}])
 );
+
+// Completed private 21/21 photo inspection; never confer commercial rights on hotel images.
