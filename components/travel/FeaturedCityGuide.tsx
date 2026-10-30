@@ -402,6 +402,12 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         </p>}
         <p className={(city.slug === 'krabi'||city.slug === 'mayakoba'||city.slug === 'los-angeles'||city.slug === 'miami'||city.slug === 'new-york'||city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez'||city.slug === 'bali'||city.slug === 'phuket'||city.slug === 'koh-samui'||city.slug === 'maldives'||city.slug === 'los-cabos'||city.slug === 'saint-barthelemy'||city.slug === 'porto-cervo'||city.slug==='mykonos') ? 'mt-8 max-w-3xl text-lg leading-8 text-white [text-shadow:0_2px_8px_rgba(0,0,0,0.65)]' : 'mt-8 max-w-3xl text-lg leading-8 text-[#e4e8e5]'}>
           {hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}</p>
+        {city.slug==='krabi' && hero && <p className="mt-4 text-xs leading-6 text-[#f3dfb9]">
+          {fr?'Image : ':'Photograph: '}
+          <a href={hero.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.author}</a>
+          {' · '}<a href={hero.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.license}</a>
+          {' · '}{fr?'WebP redimensionnée':'Resized WebP'}
+        </p>}
         </div>
         <div className="mt-10 flex flex-wrap gap-3">
           <a href={hotelPage?'#selection':'#quartiers'} className="bg-[#d9b77b] px-6 py-4 text-sm font-semibold text-[#142734] hover:bg-[#f0d39d]">
@@ -420,6 +426,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
     <nav className="sticky top-0 z-20 border-b border-[#e0d7c8] bg-[#faf7f0]/95 px-5 backdrop-blur" aria-label={fr?'Naviguer dans le guide':'Guide sections'}>
       <div className="mx-auto flex max-w-7xl gap-6 overflow-x-auto py-4 text-xs sm:text-sm">
         <a href={hotelPage?'#selection':'#quartiers'} className="shrink-0 hover:text-[#9e794a]">{hotelPage?(fr?'Les hôtels':'Hotels'):(city.slug==='porto-cervo'?(fr?'Les secteurs':'Areas'):city.slug==='saint-barthelemy'?(fr?'Les lieux':'Places'):city.slug==='los-cabos'?(fr?'Les secteurs':'Areas'):city.slug==='maldives'?(fr?'Les atolls':'Atolls'):(fr?'Les quartiers':'Areas'))}</a>
+        {city.slug==='krabi' && <a href="#panoramas-krabi" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
         {city.slug==='san-miguel-de-allende' && <a href="#panoramas-san-miguel-de-allende" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
         {city.slug==='mayakoba' && <a href="#panoramas-mayakoba" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
         {city.slug==='los-angeles' && <a href="#panoramas-los-angeles" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
@@ -442,7 +449,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         {city.areas.map((area,i)=><article key={area.name} className="flex flex-col border border-[#e6ddce] bg-white p-7">
           <p className="font-serif text-3xl text-[#b18f59]">{String(i+1).padStart(2,'0')}</p>
           <h3 className="mt-5 font-serif text-2xl">{fr?area.name:area.enName}</h3>
-          {(city.slug==='krabi'||city.slug==='san-miguel-de-allende'||city.slug==='krabi'||city.slug==='mayakoba'||city.slug==='los-angeles'||city.slug==='miami'||city.slug==='new-york'||city.slug==='istanbul'||city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo'||city.slug==='mustique'||city.slug==='courchevel-1850'||isAlpineCity(city.slug)||city.slug==='monaco'||city.slug==='saint-jean-cap-ferrat'||city.slug==='cap-dantibes'||city.slug==='lake-como'||city.slug==='capri'||city.slug==='positano'||city.slug==='ravello'||city.slug==='mykonos'||city.slug==='antiparos'||city.slug==='ibiza'||city.slug==='formentera'||city.slug==='deia'||city.slug==='port-andratx'||city.slug==='comporta'||city.slug==='melides'||city.slug==='tivat'||city.slug==='the-hamptons'||city.slug==='palm-beach'||city.slug==='nantucket'||city.slug==='harbour-island'||city.slug==='turks-and-caicos'||city.slug==='canouan'||city.slug==='necker-island'||city.slug==='north-island-seychelles'||city.slug==='pamalican-island'||city.slug==='laucala-island'||city.slug==='jumby-bay'||city.slug==='okavango-delta'||city.slug==='punta-mita'||city.slug==='costa-careyes') && <DestinationAreaPhoto city={city.slug} index={i} locale={locale}/>}
+          {(city.slug==='krabi'||city.slug==='san-miguel-de-allende'||city.slug==='mayakoba'||city.slug==='los-angeles'||city.slug==='miami'||city.slug==='new-york'||city.slug==='istanbul'||city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo'||city.slug==='mustique'||city.slug==='courchevel-1850'||isAlpineCity(city.slug)||city.slug==='monaco'||city.slug==='saint-jean-cap-ferrat'||city.slug==='cap-dantibes'||city.slug==='lake-como'||city.slug==='capri'||city.slug==='positano'||city.slug==='ravello'||city.slug==='mykonos'||city.slug==='antiparos'||city.slug==='ibiza'||city.slug==='formentera'||city.slug==='deia'||city.slug==='port-andratx'||city.slug==='comporta'||city.slug==='melides'||city.slug==='tivat'||city.slug==='the-hamptons'||city.slug==='palm-beach'||city.slug==='nantucket'||city.slug==='harbour-island'||city.slug==='turks-and-caicos'||city.slug==='canouan'||city.slug==='necker-island'||city.slug==='north-island-seychelles'||city.slug==='pamalican-island'||city.slug==='laucala-island'||city.slug==='jumby-bay'||city.slug==='okavango-delta'||city.slug==='punta-mita'||city.slug==='costa-careyes') && <DestinationAreaPhoto city={city.slug} index={i} locale={locale}/>}
           <p className="mt-5 text-sm leading-7 text-[#4c606b]">{fr?area.fr:area.en}</p>
           <p className="mt-auto border-t border-[#e7dfd2] pt-5 text-sm leading-7 text-[#786145]">{fr?area.frWatch:area.enWatch}</p>
         </article>)}
@@ -466,6 +473,26 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           ] as const).map(view=>{
             const photo=city.photos[view.key];
             return photo && confirmedSanMiguelAssets.has(photo.src) &&
+              <article key={view.key} className="bg-white p-4 shadow-sm sm:p-5">
+                <CityPhoto photo={photo} locale={locale}/>
+                <h3 className="mt-5 font-serif text-2xl text-[#19323e]">{fr?view.frTitle:view.enTitle}</h3>
+              </article>;
+          })}
+        </div>
+      </div>
+    </section>}
+    {city.slug==='krabi' && <section id="panoramas-krabi" className="scroll-mt-24 bg-[#e5ece8] py-16 sm:py-24">
+      <div className="mx-auto max-w-7xl">
+        <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#8e7045]">{fr?'Krabi · le relief et les îles':'Krabi · limestone and the islands'}</p>
+        <h2 className="mt-4 max-w-4xl font-serif text-3xl leading-tight sm:text-5xl">{fr?'L’Andaman, entre falaises et îlots de pierre.':'The Andaman Sea, between cliffs and limestone islets.'}</h2>
+        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Deux horizons distincts : le sable blanc de Phra Nang et les bateaux devant l’îlot rocheux de Koh Poda. Ces vues ne sont pas les perspectives promises depuis chaque chambre d’hôtel.':'Two separate horizons: Phra Nang’s white sand and long-tail boats in front of Koh Poda’s limestone islet. Neither view can be promised from every hotel room.'}</p>
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
+          {([
+            {key:'scene-8',frTitle:'Phra Nang · la falaise et la plage',enTitle:'Phra Nang · cliffs and sandy beach'},
+            {key:'scene-9',frTitle:'Koh Poda · les îlots et les bateaux',enTitle:'Koh Poda · islands and boats'}
+          ] as const).map(view=>{
+            const photo=city.photos[view.key];
+            return photo && confirmedKrabiAssets.has(photo.src) &&
               <article key={view.key} className="bg-white p-4 shadow-sm sm:p-5">
                 <CityPhoto photo={photo} locale={locale}/>
                 <h3 className="mt-5 font-serif text-2xl text-[#19323e]">{fr?view.frTitle:view.enTitle}</h3>
