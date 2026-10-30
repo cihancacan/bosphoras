@@ -1,0 +1,36 @@
+name: Travel Chiang Mai — integrate shared pages
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths: ['scripts/integrate-chiang-mai-pages.py','.github/workflows/travel-chiang-mai-integration.yml']
+  workflow_dispatch:
+permissions: {contents: write}
+concurrency:
+  group: travel-chiang-mai-components
+  cancel-in-progress: false
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - run: python -m py_compile scripts/integrate-chiang-mai-pages.py
+      - run: python scripts/integrate-chiang-mai-pages.py
+      - name: Commit two shared travel files only, no Vercel
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- components/travel/FeaturedCityGuide.tsx components/travel/TravelPages.tsx
+          git diff --cached --quiet && exit 0
+          git commit -m 'feat(travel): Chiang Mai #64 hero, hotels, panorama and SEO/FAQ shared UI [skip ci]'
+          for i in 1 2 3 4 5; do
+            git fetch origin feature/luxury-travel-seo-destinations-20261012
+            git rebase origin/feature/luxury-travel-seo-destinations-20261012
+            if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then exit 0; fi
+            sleep 2
+          done
+          exit 1
