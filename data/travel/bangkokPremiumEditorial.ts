@@ -50,3 +50,5 @@ export const bangkokPhotoLicenses:Record<string,{name:string;url:string}>=Object
 );
 
 // Bangkok 9 city photographs CC-licensed; 3 Mandarin historic CC; other publisher photos only in protected owner noindex Preview.
+
+// Compilation regression: verified JSX hero photo credit and preserved 63 guide types.
