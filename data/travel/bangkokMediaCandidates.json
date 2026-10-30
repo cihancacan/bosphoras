@@ -290,32 +290,32 @@
     },
     {
       "originalSize": [
-        900,
-        900
+        906,
+        906
       ],
       "outputSize": [
-        900,
-        900
+        906,
+        906
       ],
-      "bytes": 160212,
-      "sha256": "ee4563e00d6128c649c126d78351e4a4afc14c1f8b157778588a5ea8aad6fe81",
-      "pixelFingerprint": "4b5fcce5451c81c42af420793db96f548c3a57d6f27299886d09ffe951ffff93",
+      "bytes": 134574,
+      "sha256": "ce2a062391f2e23772c6c8e725a38ca260e8f4e42d800bb63bdf967f0c2aef5d",
+      "pixelFingerprint": "88d181919849afc22d900c956b94f59f201efc313b8e59087204fc96034e2d53",
       "key": "view-2",
       "propertyKey": "aman-nai-lert",
       "property": "Aman Nai Lert Bangkok",
       "localPath": "/images/travel/bangkok-premium/aman-nai-lert/view-2.webp",
       "sourcePage": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
-      "downloadUrl": "https://www.aman.com/sites/default/files/styles/full_size_browser%402x/public/2025-04/aman_nai_lert_bangkok_hotel_exterior_03524_900x900.jpg?itok=0PAWDfy2",
-      "credit": "Aman Nai Lert Bangkok official publisher; photographer not separately identified",
-      "license": "Official publisher image; independent commercial republication rights not verified.",
+      "downloadUrl": "https://www.aman.com/sites/default/files/styles/masonry_extra_large_2x/public/2025-04/aman_nai_lert_bangkok_swimming_pool_01165_copy_900x900.webp?itok=ju7VAUCj",
+      "credit": "Aman Nai Lert Bangkok official publisher, photographer not separately identified",
+      "license": "Official property publisher, independent commercial republication licence not established.",
       "licenseUrl": "https://www.aman.com/hotels/aman-nai-lert-bangkok/gallery",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "embedded official image",
-      "frCaption": "Aman Nai Lert Bangkok · photographie officielle à contrôler",
-      "enCaption": "Aman Nai Lert Bangkok · official property photograph for individual review"
+      "originalAlt": "2025-04/aman_nai_lert_bangkok_swimming_pool_01165_copy_900x900.webp",
+      "frCaption": "Aman Nai Lert Bangkok · espace piscine ou bien-être réellement photographié",
+      "enCaption": "Aman Nai Lert Bangkok · authentic property pool or wellness space"
     },
     {
       "originalSize": [
