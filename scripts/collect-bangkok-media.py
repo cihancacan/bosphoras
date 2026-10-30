@@ -63,7 +63,7 @@ EXACT_SCENES={
  'scene-2':'Wat Arun across Chao Phraya River.jpg',
  'scene-4':'Bangkok charoen krung road IMG 6782.JPG',
  'scene-6':'Lumphini Park Bangkok, as seen from BTS (2026) - IMG 02.jpg',
- 'scene-9':'Bangkok skyline view from Mahanakhon Tower.jpg'
+ 'scene-9':'Skyscrapers of Bangkok during a sunset from Mahanakhon terrace.jpg'
 }
 def commons(q):
  key,query,fr,en=q
@@ -115,7 +115,7 @@ def harvest(page):
   p=urllib.parse.urlsplit(u);dom=p.netloc.lower()
   if p.scheme!='https' or not re.search(r'\.(jpe?g|png|webp)(?:$|[?&#])',u,re.I):return
   # Only actual property publishers and asset hosts that are used by property sites.
-  allowed=['mandarinoriental.com','mohg.com','capellahotels.com','capellahotelscdn.com','thesiamhotel.com','aman.com','amanresorts.com','cloudinary.com','scene7.com','contentstack.io','imgix.net','images.ctfassets.net','webflow.com','cdn.sanity.io','canto.global','assets.aman.com','hyatt.com']
+  allowed=['mandarinoriental.com','mohg.com','capellahotels.com','capellahotelscdn.com','thesiamhotel.com','aman.com','amanresorts.com','cloudinary.com','scene7.com','contentstack.io','imgix.net','images.ctfassets.net','webflow.com','cdn.sanity.io','canto.global','assets.aman.com','hyatt.com','ffycdn.net']
   if not any(dom==a or dom.endswith('.'+a) for a in allowed):return
   if any(bad in u.lower() for bad in ('logo','icon','awards','badge','qr-code','flag-','favicon','placeholder','certificate','map-','social','instagram-avatar')):return
   if u in seen:return
