@@ -7,7 +7,7 @@ export const sumbaDraftFaq = {
     },
     {
       "q": "Quels sont les quatre hôtels sélectionnés sur Sumba ?",
-      "a": "NIHI Sumba à Nihiwatu pour les villas et l'aventure, Cap Karoso à Kodi pour le design et l'agriculture, The Sanubari à Lamboya pour les villas à piscine sur Kerewe, et Lelewatu Resort à Wanokaka pour les panoramas de falaise."
+      "a": "NIHI Sumba à Nihiwatu pour les villas et l'aventure, Cap Karoso à Kodi pour le design et l'agriculture, The Sanubari à Lamboya pour les villas à piscine sur Kerewe, et Alamayah pour ses six suites et son spa au même secteur."
     },
     {
       "q": "Quel aéroport choisir pour NIHI, Cap Karoso ou The Sanubari ?",
@@ -41,7 +41,7 @@ export const sumbaDraftFaq = {
     },
     {
       "q": "Which four Sumba luxury hotels does Bosphoras feature?",
-      "a": "NIHI Sumba at Nihiwatu for private estates and adventure, Cap Karoso in Kodi for design and farm culture, The Sanubari at Lamboya for Kerewe beachfront pool villas, and Lelewatu in Wanokaka for dramatic cliffside views."
+      "a": "NIHI Sumba at Nihiwatu for private estates and adventure, Cap Karoso in Kodi for design and farm culture, The Sanubari at Lamboya for Kerewe beachfront pool villas, and six-suite wellness sanctuary Alamayah near Kerewe."
     },
     {
       "q": "Which airport should I use for NIHI, Cap Karoso or The Sanubari?",
