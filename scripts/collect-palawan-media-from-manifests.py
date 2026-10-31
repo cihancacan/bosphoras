@@ -24,7 +24,7 @@ for index,p in enumerate(scenes+hotels,1):
  if index<=9:
   assert p['sourcePage'].startswith('https://commons.wikimedia.org/wiki/File:')
   assert p['commercialRightsCleared'] is True
-  assert re.match(r'^(CC BY(?:-SA)? [234]\\.0|CC0|Public domain)',p['license'],re.I)
+  assert re.match(r'^(CC BY(?:-SA)? [234]\.0|CC0|Public domain)',p['license'],re.I)
  else:
   assert p['commercialRightsCleared'] is False
   assert p['property'] in {'El Nido Resorts Lagen Island','El Nido Resorts Pangulasian Island','Cauayan Boutique Private Island','Discovery Coron'}
@@ -65,7 +65,7 @@ manifest={'destination':'palawan','scope':'private_owner_preview_only',
  'cityCount':9,'hotelCount':12,'destinationScenes':allphotos[:9], 'hotels':allphotos[9:],
  'visualQA':'PENDING_MANUAL_21_PHOTO_IDENTITY_REVIEW','publicUseApproved':False,'internalReviewedPhotoCount':0}
 out=R/'data/travel/palawanMediaCandidates.json'
-out.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\\n')
+out.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
 cols=4;rows=6;w=320;h=242
 board=Image.new('RGB',(cols*w,rows*h),'white')
 d=ImageDraw.Draw(board)
