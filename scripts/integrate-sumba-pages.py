@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Sumba #64 — conservative integration into established shared Travel pages.
+"""Sumba #65 — conservative integration into established shared Travel pages.
 Change exactly two component files on the feature branch; no production side effects.
 This script intentionally fails when a known anchor changes instead of attempting global substitutions.
 """
@@ -14,17 +14,17 @@ def change(key,a,b):
  print('COMPONENT',key,count)
 change('import FAQ','import {chiangMaiDraftFaq}',
  "import {sumbaDraftFaq} from '@/data/travel/sumbaDraftFaq';\nimport {sumbaHotelEditorial,sumbaAreaVisuals,confirmedSumbaAssets,sumbaPhotoLicenses} from '@/data/travel/sumbaPremiumEditorial';\nimport {chiangMaiDraftFaq}")
-change('hotel registry','={'chiang-mai':chiangMaiHotelEditorial',
- "={'sumba':sumbaHotelEditorial,bangkok:chiangMaiHotelEditorial")
-change('hotel assets',"const photos=city==='bangkok' ?",
- "const photos=city==='sumba' ? entry.photos.filter(photo=>confirmedSumbaAssets.has(photo.src)) : city==='bangkok' ?")
-change('area scenes',"const photo=city==='bangkok' ?",
- "const photo=city==='sumba' ? sumbaAreaVisuals[index] : city==='bangkok' ?")
-change('area rights',"if(!photo || ((city==='bangkok'",
- "if(!photo || ((city==='sumba' && !confirmedSumbaAssets.has(photo.src)) || (city==='bangkok'")
-change('area photo attribution',"{city==='bangkok' && chiangMaiPhotoLicenses",
+change('hotel registry',"={'chiang-mai':chiangMaiHotelEditorial",
+ "={'sumba':sumbaHotelEditorial,'chiang-mai':chiangMaiHotelEditorial")
+change('hotel assets',"const photos=city==='chiang-mai' ?",
+ "const photos=city==='sumba' ? entry.photos.filter(photo=>confirmedSumbaAssets.has(photo.src)) : city==='chiang-mai' ?")
+change('area scenes',"const photo=city==='chiang-mai' ?",
+ "const photo=city==='sumba' ? sumbaAreaVisuals[index] : city==='chiang-mai' ?")
+change('area rights',"if(!photo || ((city==='chiang-mai'",
+ "if(!photo || ((city==='sumba' && !confirmedSumbaAssets.has(photo.src)) || (city==='chiang-mai'")
+change('area photo attribution',"{city==='chiang-mai' && chiangMaiPhotoLicenses",
  """{city==='sumba' && sumbaPhotoLicenses[photo.src] && <> · <a href={sumbaPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{sumbaPhotoLicenses[photo.src].name}</a></>}
-      {city==='bangkok' && chiangMaiPhotoLicenses""")
+      {city==='chiang-mai' && chiangMaiPhotoLicenses""")
 change('destination asset set',"const destinationAssets=city.slug==='chiang-mai'?",
  "const destinationAssets=city.slug==='sumba'?confirmedSumbaAssets:city.slug==='chiang-mai'?")
 change('hero contrast',"""city.slug==='chiang-mai' ? <div className="absolute inset-0 bg-gradient""",
@@ -74,8 +74,8 @@ def ch(key,a,b):
  s=s.replace(a,b);print('PAGES',key,n)
 ch('imports','import {chiangMaiDraftFaq}',
    "import {sumbaDraftFaq} from '@/data/travel/sumbaDraftFaq';\nimport {sumbaSchemaSafePhotos} from '@/data/travel/sumbaPremiumEditorial';\nimport {chiangMaiDraftFaq}")
-ch('active slug',"'krabi','koh-yao-noi' ,'chiang-mai','bali'",
-   "'krabi','koh-yao-noi' ,'chiang-mai','sumba','bali'")
+ch('active slug',"'bangkok','chiang-mai','bali'",
+   "'bangkok','chiang-mai','sumba','bali'")
 ch('hotel metadata',"featureGuide.slug==='chiang-mai' ? (locale==='fr'?'Hôtels",
    "featureGuide.slug==='sumba' ? (locale==='fr'?'Hôtels de luxe à Sumba : quatre domaines entre falaises et plages':'Sumba Luxury Hotels: Four Distinct Island Retreats') : featureGuide.slug==='chiang-mai' ? (locale==='fr'?'Hôtels")
 ch('city metadata',"featureGuide.slug==='chiang-mai' ? (locale==='fr'?'Chiang Mai",
