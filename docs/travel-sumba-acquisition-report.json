@@ -1,0 +1,36 @@
+{
+  "cityCount": 9,
+  "hotelCount": 9,
+  "hotelReports": [
+    {
+      "property": "NIHI Sumba",
+      "candidates": 338,
+      "downloaded": 3,
+      "errors": []
+    },
+    {
+      "property": "Cap Karoso",
+      "candidates": 362,
+      "downloaded": 3,
+      "errors": [
+        "small picture [768, 1024]",
+        "small picture [225, 300]"
+      ]
+    },
+    {
+      "property": "The Sanubari",
+      "candidates": 128,
+      "downloaded": 3,
+      "errors": []
+    },
+    {
+      "property": "Lelewatu Resort Sumba",
+      "candidates": 0,
+      "downloaded": 0,
+      "errors": []
+    }
+  ],
+  "errors": [],
+  "allImagesVisuallyApproved": false,
+  "commercialHotelRights": false
+}

@@ -1,0 +1,526 @@
+{
+  "destination": "sumba",
+  "scope": "owner_protected_preview_only",
+  "rightsNotice": "Hotel publisher photos cannot be commercially republished without independently verified authorization.",
+  "cityCount": 9,
+  "hotelCount": 9,
+  "destinationScenes": [
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 351294,
+      "sha256": "522bcddb6e28860aeb4752069ed1cd2f3bbdfec57ab1e4aa950c82aee0deab73",
+      "pixelFingerprint": "74e4da3029196fecd86d68d4be5ac0954eed5dddbef10036d676a860ce240f23",
+      "key": "scene-1",
+      "localPath": "/images/travel/sumba-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Danau_Weekuri,_Sumba_Barat_Daya.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Danau_Weekuri%2C_Sumba_Barat_Daya.jpg/1920px-Danau_Weekuri%2C_Sumba_Barat_Daya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Zahrasrtn",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Weekuri · lagon salin turquoise",
+      "enCaption": "Weekuri · turquoise saline lagoon",
+      "originalAlt": "Danau Weekuri, Sumba Barat Daya.jpg",
+      "searchIntent": "Danau Weekuri, Sumba Barat Daya.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 443336,
+      "sha256": "03196a6d816b8f06701d88383ceb820fabd11891c9c2ce79edb18640bab733f7",
+      "pixelFingerprint": "88e7c3c22c7a4d589cf062faffe329456fba1ecdac5f9060c1348b6585ed8640",
+      "key": "scene-2",
+      "localPath": "/images/travel/sumba-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kampung_Adat_Ratenggaro_-_Sumba_Barat_Daya.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Kampung_Adat_Ratenggaro_-_Sumba_Barat_Daya.jpg/1920px-Kampung_Adat_Ratenggaro_-_Sumba_Barat_Daya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Allwyn Wawyn",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Ratenggaro · maisons à hauts toits",
+      "enCaption": "Ratenggaro · high-roofed traditional houses",
+      "originalAlt": "Kampung Adat Ratenggaro - Sumba Barat Daya.jpg",
+      "searchIntent": "Kampung Adat Ratenggaro - Sumba Barat Daya.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 384002,
+      "sha256": "8818ddbc86d5151d864039dff6920f81bbb67a9f73070447d35da1be1133c4af",
+      "pixelFingerprint": "974b559d2a9868042290907ba00729826d462d1e02d28df6a9795324f999215d",
+      "key": "scene-3",
+      "localPath": "/images/travel/sumba-premium/destination/scene-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bukit_Wairinding-Sumba_Timur.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Bukit_Wairinding-Sumba_Timur.jpg/1920px-Bukit_Wairinding-Sumba_Timur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Djakartacaver",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Wairinding · collines de Sumba orientale",
+      "enCaption": "Wairinding · East Sumba hills",
+      "originalAlt": "Bukit Wairinding-Sumba Timur.jpg",
+      "searchIntent": "Bukit Wairinding-Sumba Timur.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1600,
+        900
+      ],
+      "bytes": 75204,
+      "sha256": "2f0fb71ec9696a55e6d03c82606d2d5d8312b5fe4ff7bdf12d21b47464bc8f21",
+      "pixelFingerprint": "a09e48f2bcb760fdd6aec991a8b357757491dd9c83a8df661d6bb5d38876490f",
+      "key": "scene-4",
+      "localPath": "/images/travel/sumba-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pantai_Walakiri,_Sumba_Timur,_Nusa_Tenggara_Timur_20170610.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Pantai_Walakiri%2C_Sumba_Timur%2C_Nusa_Tenggara_Timur_20170610.jpg/1920px-Pantai_Walakiri%2C_Sumba_Timur%2C_Nusa_Tenggara_Timur_20170610.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Supomo Hanasti",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Walakiri · arbres et rivage",
+      "enCaption": "Walakiri · coastal trees and shallows",
+      "originalAlt": "Pantai Walakiri, Sumba Timur, Nusa Tenggara Timur 20170610.jpg",
+      "searchIntent": "Pantai Walakiri, Sumba Timur, Nusa Tenggara Timur 20170610.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 354716,
+      "sha256": "54d9d576c8fe8bdac4437923c12513af1a780f199b6141f0a0fc92b2513aa133",
+      "pixelFingerprint": "d7472aa334b5b2390dacaa39541e82f4fb2c1144753108ccac44edb443a74677",
+      "key": "scene-5",
+      "localPath": "/images/travel/sumba-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Air_Terjun_Lapopu,_Sumba_Barat.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Air_Terjun_Lapopu%2C_Sumba_Barat.jpg/1920px-Air_Terjun_Lapopu%2C_Sumba_Barat.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Zahrasrtn",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Lapopu · cascade de Sumba occidentale",
+      "enCaption": "Lapopu · West Sumba forest waterfall",
+      "originalAlt": "Air Terjun Lapopu, Sumba Barat.jpg",
+      "searchIntent": "Air Terjun Lapopu, Sumba Barat.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "bytes": 918602,
+      "sha256": "2344a920c60ad6aab8d0fd9c75357d066c7a279c2726563cf8f7837482475f05",
+      "pixelFingerprint": "6433151c9f64fc6869a9182e6fb96ca3a0da853da1af4beccdb44273e8478314",
+      "key": "scene-6",
+      "localPath": "/images/travel/sumba-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tanggedu_Waterfall.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Tanggedu_Waterfall.jpg/1920px-Tanggedu_Waterfall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Herry Wibowo81",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Tanggedu · cascades orientales",
+      "enCaption": "Tanggedu · East Sumba waterfall",
+      "originalAlt": "Tanggedu Waterfall.jpg",
+      "searchIntent": "Tanggedu Waterfall.jpg"
+    },
+    {
+      "originalSize": [
+        1920,
+        1440
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "bytes": 156156,
+      "sha256": "ea69cbdeb2e06d1cb594ef33cc9e5ab00ba985311b419aeed18e900f690f005d",
+      "pixelFingerprint": "65992d3b361136614e87ed454dad7db9ddba6c0962eb943f3f2b92eaa177a70c",
+      "key": "scene-7",
+      "localPath": "/images/travel/sumba-premium/destination/scene-7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ratenggaro_Beach.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Ratenggaro_Beach.jpg/1920px-Ratenggaro_Beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "monica renata",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Ratenggaro · plage du sud-ouest",
+      "enCaption": "Ratenggaro · southwestern beach",
+      "originalAlt": "Ratenggaro Beach.jpg",
+      "searchIntent": "Ratenggaro Beach.jpg"
+    },
+    {
+      "originalSize": [
+        1600,
+        1200
+      ],
+      "outputSize": [
+        1600,
+        1200
+      ],
+      "bytes": 260756,
+      "sha256": "a88b5e021485c10d2d1386a286212e5e673505390bf383d1208de90b98881b9f",
+      "pixelFingerprint": "12d3ad95b14f8956229fe25a54a8644e364c89429cb3f25f87bc6059f1935c2d",
+      "key": "scene-8",
+      "localPath": "/images/travel/sumba-premium/destination/scene-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:KodiEastcoastSumba.JPG",
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/KodiEastcoastSumba.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Wybe",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Kodi · littoral sauvage",
+      "enCaption": "Kodi · dramatic wild coastline",
+      "originalAlt": "KodiEastcoastSumba.JPG",
+      "searchIntent": "KodiEastcoastSumba.JPG"
+    },
+    {
+      "originalSize": [
+        1920,
+        1280
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 39250,
+      "sha256": "42d771c112fc502540646b78b633e73e4ab46bb737df398060dd816da0a8a849",
+      "pixelFingerprint": "8a1227e93b470a3b94acb1031fdda493faac2da149ee0a78c1abe6c1fa2a4864",
+      "key": "scene-9",
+      "localPath": "/images/travel/sumba-premium/destination/scene-9.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Magnificent_Sunset_from_Sumba_Island.jpg",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/The_Magnificent_Sunset_from_Sumba_Island.jpg/1920px-The_Magnificent_Sunset_from_Sumba_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Nickoasmara",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "rightsEvidenceType": "wikimedia_license_metadata",
+      "commercialRightsCleared": true,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Sumba · ciel du couchant",
+      "enCaption": "Sumba · golden island sunset",
+      "originalAlt": "The Magnificent Sunset from Sumba Island.jpg",
+      "searchIntent": "The Magnificent Sunset from Sumba Island.jpg"
+    }
+  ],
+  "hotels": [
+    {
+      "originalSize": [
+        1024,
+        683
+      ],
+      "outputSize": [
+        1024,
+        683
+      ],
+      "bytes": 219634,
+      "sha256": "91716667af754e355af83122489e231c0193c1669412afc93891dd9be6763375",
+      "pixelFingerprint": "0a17e6617f9d152dea605b471ae4d7110662d974c37c916f7fe6416120840d3d",
+      "key": "view-1",
+      "propertyKey": "nihi",
+      "property": "NIHI Sumba",
+      "localPath": "/images/travel/sumba-premium/nihi/view-1.webp",
+      "sourcePage": "https://nihi.com/sumba/villas/",
+      "downloadUrl": "https://nihi.com/sumba/wp-content/webp-express/webp-images/uploads/sites/2/2025/10/putri-lantoro-nihi-sumba-1-1024x683.jpg.webp",
+      "credit": "NIHI Sumba official publisher; photographer not independently identified",
+      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "licenseUrl": "https://nihi.com/sumba/villas/",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Aerial view of Putri Lantoro Villa at NIHI Sumba, featuring thatched-roof twin-bedroom suites, shaded lounge decks, and a spacious private swimming pool with a guest enjoying a swim, all set against tropical gardens and ocean-facing terraces.",
+      "frCaption": "NIHI Sumba · photographie officielle à vérifier",
+      "enCaption": "NIHI Sumba · official publisher photo pending visual check"
+    },
+    {
+      "originalSize": [
+        1800,
+        1200
+      ],
+      "outputSize": [
+        1600,
+        1067
+      ],
+      "bytes": 679670,
+      "sha256": "600c71eec41723694507d6c2be238e2da68d50f796512d3c3b6a600ba1c1f3e4",
+      "pixelFingerprint": "4d2a7273545e78e69c3b64e0c184f1cc46f62860fa199bdb46c6c8c6be6b5850",
+      "key": "view-2",
+      "propertyKey": "nihi",
+      "property": "NIHI Sumba",
+      "localPath": "/images/travel/sumba-premium/nihi/view-2.webp",
+      "sourcePage": "https://nihi.com/sumba/villas/",
+      "downloadUrl": "https://nihi.com/sumba/wp-content/webp-express/webp-images/uploads/sites/2/2025/10/putri-lantoro-nihi-sumba-1.jpg.webp",
+      "credit": "NIHI Sumba official publisher; photographer not independently identified",
+      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "licenseUrl": "https://nihi.com/sumba/villas/",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Aerial view of Putri Lantoro Villa at NIHI Sumba, featuring thatched-roof twin-bedroom suites, shaded lounge decks, and a spacious private swimming pool with a guest enjoying a swim, all set against tropical gardens and ocean-facing terraces.",
+      "frCaption": "NIHI Sumba · photographie officielle à vérifier",
+      "enCaption": "NIHI Sumba · official publisher photo pending visual check"
+    },
+    {
+      "originalSize": [
+        1024,
+        683
+      ],
+      "outputSize": [
+        1024,
+        683
+      ],
+      "bytes": 161588,
+      "sha256": "fa9a29fa2eb22207dccd5d67710f660efb8a771e94d1c2a65e2689d590ccd616",
+      "pixelFingerprint": "c156ca55d12303457a0d2b6a49f0ea8a5614ea69927723563b9c83619c6233f3",
+      "key": "view-3",
+      "propertyKey": "nihi",
+      "property": "NIHI Sumba",
+      "localPath": "/images/travel/sumba-premium/nihi/view-3.webp",
+      "sourcePage": "https://nihi.com/sumba/villas/",
+      "downloadUrl": "https://nihi.com/sumba/wp-content/webp-express/webp-images/uploads/sites/2/2025/10/mandaka-surf-nihi-sumba-1-1024x683.jpg.webp",
+      "credit": "NIHI Sumba official publisher; photographer not independently identified",
+      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "licenseUrl": "https://nihi.com/sumba/villas/",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Mandaka Surf Villa at NIHI Sumba, showcasing a private plunge pool with direct access to the boathouse, framed by tropical greenery. A shaded bale with comfortable seating offers ocean views, while vibrant white flowers and lush plants surround the serene outdoor space, providing an idyllic hideaway under the trees.",
+      "frCaption": "NIHI Sumba · photographie officielle à vérifier",
+      "enCaption": "NIHI Sumba · official publisher photo pending visual check"
+    },
+    {
+      "originalSize": [
+        2560,
+        1704
+      ],
+      "outputSize": [
+        1600,
+        1065
+      ],
+      "bytes": 209692,
+      "sha256": "f20810cce02ac0d150ed7e168896430a2273239468e1220f8c32264c132b64e1",
+      "pixelFingerprint": "5b5dbd023d606a933a8b21651278d3e5d814daa5cb7c9b2c16bdf0c482bc0a26",
+      "key": "view-1",
+      "propertyKey": "cap-karoso",
+      "property": "Cap Karoso",
+      "localPath": "/images/travel/sumba-premium/cap-karoso/view-1.webp",
+      "sourcePage": "https://capkaroso.com/en/rooms-and-villas/studios/",
+      "downloadUrl": "https://capkaroso.com/wp-content/uploads/2023/11/Studio-room-Sumba-resort-Cap-Karoso-scaled.jpg",
+      "credit": "Cap Karoso official publisher; photographer not independently identified",
+      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "licenseUrl": "https://capkaroso.com/en/rooms-and-villas/studios/",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
+      "frCaption": "Cap Karoso · photographie officielle à vérifier",
+      "enCaption": "Cap Karoso · official publisher photo pending visual check"
+    },
+    {
+      "originalSize": [
+        1920,
+        2560
+      ],
+      "outputSize": [
+        900,
+        1200
+      ],
+      "bytes": 101926,
+      "sha256": "a61dc4b1e4c377658d0276ac7697bdce6d5178b017505b672c773bb56fbddc5a",
+      "pixelFingerprint": "e730a3a6a9d04744ae19e03e3843f531577473c7496e2b57257079cc14aa588e",
+      "key": "view-2",
+      "propertyKey": "cap-karoso",
+      "property": "Cap Karoso",
+      "localPath": "/images/travel/sumba-premium/cap-karoso/view-2.webp",
+      "sourcePage": "https://capkaroso.com/en/",
+      "downloadUrl": "https://capkaroso.com/wp-content/uploads/2024/09/Cap-Karoso-Sumba-Beach-Suite-view-scaled.jpg",
+      "credit": "Cap Karoso official publisher; photographer not independently identified",
+      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "licenseUrl": "https://capkaroso.com/en/",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "",
+      "frCaption": "Cap Karoso · photographie officielle à vérifier",
+      "enCaption": "Cap Karoso · official publisher photo pending visual check"
+    },
+    {
+      "originalSize": [
+        1152,
+        1536
+      ],
+      "outputSize": [
+        900,
+        1200
+      ],
+      "bytes": 92344,
+      "sha256": "0d146732e8990b82de74dbdf85f2337da776c59ae3c0b5dc6bb701e5c0f33d84",
+      "pixelFingerprint": "400fba1e791edbb554a72d7415ff8b06583137363dcae0947080069b8e858b90",
+      "key": "view-3",
+      "propertyKey": "cap-karoso",
+      "property": "Cap Karoso",
+      "localPath": "/images/travel/sumba-premium/cap-karoso/view-3.webp",
+      "sourcePage": "https://capkaroso.com/en/",
+      "downloadUrl": "https://capkaroso.com/wp-content/uploads/2024/09/Cap-Karoso-Sumba-Beach-Suite-view-1152x1536.jpg",
+      "credit": "Cap Karoso official publisher; photographer not independently identified",
+      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "licenseUrl": "https://capkaroso.com/en/",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "publisher embedded photograph",
+      "frCaption": "Cap Karoso · photographie officielle à vérifier",
+      "enCaption": "Cap Karoso · official publisher photo pending visual check"
+    },
+    {
+      "originalSize": [
+        1006,
+        1514
+      ],
+      "outputSize": [
+        797,
+        1200
+      ],
+      "bytes": 59626,
+      "sha256": "565f2efea387ecc1c823b99a27782831d720796ae5bddd193d55b382d0bb66f8",
+      "pixelFingerprint": "ca600d5fb4e894d607986c7bfa6fb636e4b21b4bd9bd489fd13868c3475a16e6",
+      "key": "view-1",
+      "propertyKey": "sanubari",
+      "property": "The Sanubari",
+      "localPath": "/images/travel/sumba-premium/sanubari/view-1.webp",
+      "sourcePage": "https://www.thesanubari.com/stay",
+      "downloadUrl": "https://cdn.prod.website-files.com/61a5e605e33fbc60196d8d64/697886d07816572a34b32fa7_66166d4d94d0117910017c21_Screen%20Shot%202024-04-10%20at%2017.41.30%20(1).png",
+      "credit": "The Sanubari official publisher; photographer not independently identified",
+      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "licenseUrl": "https://www.thesanubari.com/stay",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "The Sanubari Garden Villa Resort View 6",
+      "frCaption": "The Sanubari · photographie officielle à vérifier",
+      "enCaption": "The Sanubari · official publisher photo pending visual check"
+    },
+    {
+      "originalSize": [
+        1667,
+        2500
+      ],
+      "outputSize": [
+        800,
+        1200
+      ],
+      "bytes": 173684,
+      "sha256": "42b2eb60c0bc2ae105cb5e3337f27ae5779e2f8c6e80128541d192bfad988828",
+      "pixelFingerprint": "f9e3a3ec8ee0d08423e9c2541fe13f765154a9ec153a665539d22cd6d8423e92",
+      "key": "view-2",
+      "propertyKey": "sanubari",
+      "property": "The Sanubari",
+      "localPath": "/images/travel/sumba-premium/sanubari/view-2.webp",
+      "sourcePage": "https://www.thesanubari.com/stay",
+      "downloadUrl": "https://cdn.prod.website-files.com/61a5e605e33fbc60196d8d64/62e9ead3ba10f55272f179a2_the-sanubari-studio-villa-2.jpg",
+      "credit": "The Sanubari official publisher; photographer not independently identified",
+      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "licenseUrl": "https://www.thesanubari.com/stay",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "The Sanubari Beachfront Studio Villa Resort View 1",
+      "frCaption": "The Sanubari · photographie officielle à vérifier",
+      "enCaption": "The Sanubari · official publisher photo pending visual check"
+    },
+    {
+      "originalSize": [
+        2400,
+        3600
+      ],
+      "outputSize": [
+        800,
+        1200
+      ],
+      "bytes": 143248,
+      "sha256": "d2d58270c66d4f704a9cd10b6bc4347fcf450830a1ac023f09b28841e94fc8a9",
+      "pixelFingerprint": "5ff7eca5d6dd6ff22481ec2fbe40c32d4b1cd1e08ab2a4448ffcfce7dbe40c4e",
+      "key": "view-3",
+      "propertyKey": "sanubari",
+      "property": "The Sanubari",
+      "localPath": "/images/travel/sumba-premium/sanubari/view-3.webp",
+      "sourcePage": "https://www.thesanubari.com/stay",
+      "downloadUrl": "https://cdn.prod.website-files.com/61a5e605e33fbc60196d8d64/68e485aa1623dd897b6f32c0_67cbcfb26e6df1b12e2e984d_DSCF6636%20(1).jpg",
+      "credit": "The Sanubari official publisher; photographer not independently identified",
+      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "licenseUrl": "https://www.thesanubari.com/stay",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "originalAlt": "Beachfront Studio Pool Villa at The Sanubari, featuring a serene private pool and direct access to a white sand beach in Indonesia.",
+      "frCaption": "The Sanubari · photographie officielle à vérifier",
+      "enCaption": "The Sanubari · official publisher photo pending visual check"
+    }
+  ],
+  "visualQA": "PENDING_INDIVIDUAL_PHOTO_REVIEW",
+  "publicUseApproved": false
+}
