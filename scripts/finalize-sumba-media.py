@@ -12,7 +12,15 @@ D=json.loads(M.read_text())
 assert D['destination']=='sumba' and len(D['destinationScenes'])==9
 BASE=pathlib.Path('public/images/travel/sumba-premium')
 def get(u):
- r=S.get(u,timeout=30);r.raise_for_status()
+ try:
+  r=S.get(u,timeout=30,headers={'Referer':'https://www.lelewatu.com/' if 'lelewatu.com' in u else 'https://nihi.com/sumba/'})
+  r.raise_for_status()
+ except requests.exceptions.HTTPError as e:
+  if 'lelewatu.com' not in u:raise
+  alternative=u.replace('https://lelewatu.com/','https://www.lelewatu.com/')
+  print('RETRY_OFFICIAL_WWW',u[:120],flush=True)
+  r=S.get(alternative,timeout=30,headers={'Referer':'https://www.lelewatu.com/'})
+  r.raise_for_status()
  if 'html' in r.headers.get('Content-Type','').lower():raise ValueError('HTML image')
  im=ImageOps.exif_transpose(Image.open(io.BytesIO(r.content))).convert('RGB')
  if im.width<820 or im.height<470:raise ValueError('small source image '+str(im.size))
@@ -82,11 +90,11 @@ select_unique('cap-karoso','Cap Karoso',3,'https://capkaroso.com/en/',
  'Cap Karoso · different genuine resort view from the official website')
 # Exact 3 original Lelewatu property photographs, types are validated on official room index.
 LELE=[
- ('https://lelewatu.com/storage/app/uploads/public/65a/e13/d25/65ae13d25b069011686014.jpg','One Bedroom Pool Villa Ocean View',
+ ('https://lelewatu.com/storage/app/uploads/public/68e/f66/12e/68ef6612e76db221414483.jpeg','One Bedroom Pool Villa Ocean View',
  'Lelewatu · villa une chambre avec bassin et vue océan','Lelewatu · one-bedroom ocean-view pool villa'),
- ('https://lelewatu.com/storage/app/uploads/public/65a/e12/459/65ae12459aef4223775144.jpg','Hanging One Bedroom Pool Villa Ocean View',
+ ('https://lelewatu.com/storage/app/uploads/public/68c/254/9f7/68c2549f7e0a3051604551.webp','Hanging One Bedroom Pool Villa Ocean View',
  'Lelewatu · villa suspendue une chambre et bassin privé','Lelewatu · hanging one-bedroom private-pool villa'),
- ('https://lelewatu.com/storage/app/uploads/public/65a/e17/5f1/65ae175f1fb18658954527.jpg','Hanging Two Bedroom Pool Villa Ocean View',
+ ('https://lelewatu.com/storage/app/uploads/public/68c/253/e36/68c253e363669088331203.webp','Hanging Two Bedroom Pool Villa Ocean View',
  'Lelewatu · villa suspendue deux chambres et piscine','Lelewatu · hanging two-bedroom pool villa')
 ]
 for i,(u,alt,fr,en) in enumerate(LELE,1):
