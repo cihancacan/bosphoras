@@ -88,27 +88,31 @@ select_unique('cap-karoso','Cap Karoso',3,'https://capkaroso.com/en/',
  lambda t:25*int('pool' in t)+20*int('karoso' in t)+14*int('beach' in t)+12*int('resort' in t)+8*int('villa' in t),
  'Cap Karoso · autre vue authentique du domaine, sélectionnée sur le site officiel',
  'Cap Karoso · different genuine resort view from the official website')
-# Exact 3 original Lelewatu property photographs, types are validated on official room index.
-LELE=[
- ('https://lelewatu.com/storage/app/uploads/public/68e/f66/12e/68ef6612e76db221414483.jpeg','One Bedroom Pool Villa Ocean View',
- 'Lelewatu · villa une chambre avec bassin et vue océan','Lelewatu · one-bedroom ocean-view pool villa'),
- ('https://lelewatu.com/storage/app/uploads/public/68c/254/9f7/68c2549f7e0a3051604551.webp','Hanging One Bedroom Pool Villa Ocean View',
- 'Lelewatu · villa suspendue une chambre et bassin privé','Lelewatu · hanging one-bedroom private-pool villa'),
- ('https://lelewatu.com/storage/app/uploads/public/68c/253/e36/68c253e363669088331203.webp','Hanging Two Bedroom Pool Villa Ocean View',
- 'Lelewatu · villa suspendue deux chambres et piscine','Lelewatu · hanging two-bedroom pool villa')
+# The original Lelewatu media origin consistently returned HTTP 404 from two hosts.
+# A real, fully verifiable six-suite retreat in Lamboya is used instead: Alamayah.
+# These are property-publisher photos; commercial rights remain NOT cleared.
+unique_originals=[]
+categories=[
+ ('https://alamayah.com/',lambda t:30*int('alamayah' in t)+20*int('exterior' in t)+15*int('retreat' in t)+10*int('palm' in t),
+  "Alamayah · architecture du petit retreat et cocotiers","Alamayah · boutique retreat architecture among coconut palms"),
+ ('https://alamayah.com/',lambda t:35*int('suite' in t)+25*int('bedroom' in t)+18*int('room' in t)+12*int('interior' in t),
+  "Alamayah · véritable suite de l’hôtel","Alamayah · a genuine resort guest suite"),
+ ('https://alamayah.com/pages/wellbeing',lambda t:35*int('pool' in t)+24*int('spa' in t)+20*int('yoga' in t)+18*int('wellness' in t)+10*int('bath' in t),
+  "Alamayah · espace bien-être ou piscine du retreat","Alamayah · wellness or pool area of the resort")
 ]
-for i,(u,alt,fr,en) in enumerate(LELE,1):
- b,props=get(u)
- p=record('lelewatu','Lelewatu Resort Sumba',i,u,'https://lelewatu.com/room',alt,fr,en,props)
- install(p,b);print('LELEWATU_ORIGINAL',i,len(b),flush=True)
-D['hotels'].sort(key=lambda p:(['nihi','cap-karoso','sanubari','lelewatu'].index(p['propertyKey']),p['key']))
+for i,(site,rank,fr,en) in enumerate(categories,1):
+ select_unique('alamayah','Alamayah Boutique Retreat',i,site,unique_originals,rank,fr,en)
+ p=next(v for v in D['hotels'] if v['propertyKey']=='alamayah' and v['key']==f'view-{i}')
+ normalized=re.sub(r'-\\d+x\\d+(?=\\.(?:jpg|png|webp))','',urllib.parse.urlsplit(p['downloadUrl']).path,re.I)
+ unique_originals.append(normalized.lower())
+D['hotels'].sort(key=lambda p:(['nihi','cap-karoso','sanubari','alamayah'].index(p['propertyKey']),p['key']))
 finger=[p['pixelFingerprint'] for p in D['destinationScenes']+D['hotels']]
 assert len(D['destinationScenes'])==9 and len(D['hotels'])==12
 assert len(set(finger))==21,'duplicate image fingerprint'
 D['hotelCount']=12;D['cityCount']=9;D['visualQA']='PENDING_INDIVIDUAL_PHOTO_REVIEW';D['publicUseApproved']=False
 M.write_text(json.dumps(D,ensure_ascii=False,indent=2)+'\n')
 rp=pathlib.Path('docs/travel-sumba-acquisition-report.json');rr=json.loads(rp.read_text())
-rr['cityCount']=9;rr['hotelCount']=12;rr['hotelReports']=[{'property':name,'downloaded':3} for name in ['NIHI Sumba','Cap Karoso','The Sanubari','Lelewatu Resort Sumba']]
+rr['cityCount']=9;rr['hotelCount']=12;rr['hotelReports']=[{'property':name,'downloaded':3} for name in ['NIHI Sumba','Cap Karoso','The Sanubari','Alamayah Boutique Retreat']]
 rp.write_text(json.dumps(rr,ensure_ascii=False,indent=2)+'\n')
 ims=D['destinationScenes']+D['hotels'];W,H=440,304;cols=3
 out=Image.new('RGB',(W*cols,H*((len(ims)+2)//cols)),'#f5f2eb');draw=ImageDraw.Draw(out)
