@@ -33,10 +33,10 @@ change('all compact slug checks',"city.slug==='chiang-mai'||","city.slug==='sumb
 change('all spaced slug checks',"city.slug === 'chiang-mai'||","city.slug === 'sumba'||city.slug === 'chiang-mai'||")
 change('FAQ selection',"(city.slug==='chiang-mai'?chiangMaiDraftFaq",
  "(city.slug==='sumba'?sumbaDraftFaq:city.slug==='chiang-mai'?chiangMaiDraftFaq")
-change('landscape nav','{city.slug===\'bangkok\' && <a href="#panoramas-chiang-mai"',
- '{city.slug===\'sumba\' && <a href="#panoramas-sumba" className="shrink-0 hover:text-[#9e794a]">{fr?\'Panoramas\':\'Landscapes\'}</a>}\n        {city.slug===\'bangkok\' && <a href="#panoramas-chiang-mai"')
+change('landscape nav','{city.slug===\'chiang-mai\' && <a href="#panoramas-chiang-mai"',
+ '{city.slug===\'sumba\' && <a href="#panoramas-sumba" className="shrink-0 hover:text-[#9e794a]">{fr?\'Panoramas\':\'Landscapes\'}</a>}\n        {city.slug===\'chiang-mai\' && <a href="#panoramas-chiang-mai"')
 change('attribution hero',
- '{city.slug===\'bangkok\' && hero && <p className="mt-4 text-xs leading-6 text-[#f3dfb9]">',
+ '{city.slug===\'chiang-mai\' && hero && <p className="mt-4 text-xs leading-6 text-[#f3dfb9]">',
  '''{city.slug==='sumba' && hero && <p className="mt-4 text-xs leading-6 text-[#f3dfb9]">{fr?'Photo : ':'Photograph: '}<a href={hero.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.author}</a>{' · '}<a href={hero.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.license}</a>{' · '}{fr?'WebP redimensionnée':'Resized WebP'}</p>}
         {city.slug==='chiang-mai' && hero && <p className="mt-4 text-xs leading-6 text-[#f3dfb9]">''')
 panel="""    {city.slug==='sumba' && <section id="panoramas-sumba" className="scroll-mt-24 bg-[#e5ece8] py-16 sm:py-24">
@@ -58,8 +58,8 @@ panel="""    {city.slug==='sumba' && <section id="panoramas-sumba" className="sc
     </section>}
 """
 change('dedicated landscape panel',
- '    {city.slug===\'bangkok\' && <section id="panoramas-chiang-mai"',
- panel+'    {city.slug===\'bangkok\' && <section id="panoramas-chiang-mai"')
+ '    {city.slug===\'chiang-mai\' && <section id="panoramas-chiang-mai"',
+ panel+'    {city.slug===\'chiang-mai\' && <section id="panoramas-chiang-mai"')
 # The original Chiang Mai script introduced a malformed quoted className on another branch;
 # refuse to commit if it reappears.
 assert """className="mt-4 text-xs leading-6 text-[#f3dfb9]'>""" not in s
