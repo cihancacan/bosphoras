@@ -11,7 +11,7 @@ root=R/'public/images/travel/palawan-premium'
 scenes=json.loads((R/'data/travel/palawanRemoteScenes.json').read_text())
 hotels=json.loads((R/'data/travel/palawanRemoteHotels.json').read_text())
 assert len(scenes)==9 and len(hotels)==12
-allowed={'thumb.wikimedia.org','upload.wikimedia.org','cdn.sanity.io','r.profitroom.com','www.discovery.s14-host.com','discovery.s14-host.com'}
+allowed={'thumb.wikimedia.org','upload.wikimedia.org','cdn.sanity.io','r.profitroom.pl','www.discovery.s14-host.com','discovery.s14-host.com'}
 session=requests.Session()
 session.headers['User-Agent']='BosphorasLuxuryStaysEditorial/1.0 (private photo source verification)'
 allphotos=[]
