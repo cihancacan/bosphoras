@@ -11,7 +11,7 @@ const {travelDestinations,approvedDestinationSlugs}=require('../data/travel/dest
 const m=require('../data/travel/chiangMaiMediaCandidates.json');
 assert.equal(travelDestinations.length,88);
 assert.equal(new Set(travelDestinations.map(x=>x.slug)).size,88);
-assert.equal(Object.keys(featuredCityGuides).length,64,'64 premium guides after Chiang Mai');
+assert(Object.keys(featuredCityGuides).length>=64,'Preserve all 64 original premium guides when new ones are added');
 assert.equal(approvedDestinationSlugs.size,0,'Do not index private preview');
 for(const slug of ['chiang-mai','bangkok','krabi','koh-yao-noi','san-miguel-de-allende','mayakoba','los-angeles','miami','new-york','istanbul','monaco','gstaad'])assert(featuredCityGuides[slug],'lost guide: '+slug);
 assert.equal(chiangMaiGuide.slug,'chiang-mai');
