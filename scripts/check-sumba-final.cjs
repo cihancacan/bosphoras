@@ -11,7 +11,7 @@ const {travelDestinations,approvedDestinationSlugs}=require('../data/travel/dest
 const m=require('../data/travel/sumbaMediaCandidates.json');
 assert.equal(travelDestinations.length,88);
 assert.equal(new Set(travelDestinations.map(x=>x.slug)).size,88);
-assert.equal(Object.keys(featuredCityGuides).length,64,'65 premium guides after Sumba');
+assert.equal(Object.keys(featuredCityGuides).length,65,'65 premium guides after Sumba');
 assert.equal(approvedDestinationSlugs.size,0,'Do not index private preview');
 for(const slug of ['sumba','chiang-mai','bangkok','krabi','koh-yao-noi','san-miguel-de-allende','mayakoba','los-angeles','miami','new-york','istanbul','monaco','gstaad'])assert(featuredCityGuides[slug],'lost guide: '+slug);
 assert.equal(sumbaGuide.slug,'sumba');
