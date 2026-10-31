@@ -25,3 +25,5 @@
 **Not done by this report**: public rights acquisition, physical image upload to GitHub, full 21-photo visual approval, production release, supplier booking API or after-sales contract.
 
 Vercel `READY` is not the same as four HTTP 200 route checks; run authenticated route checks before marking the preview route QA completed.
+
+Preview release checkpoint: precisely one CI-gated owner Preview requested after the verified Palawan 66 integration. All public/licensing blockers remain in force; do not promote or index. The previous direct Vercel git deployment was canceled because its source commit had `[skip ci]`.
