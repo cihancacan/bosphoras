@@ -49,6 +49,7 @@ jobs:
       - run: node -r ./scripts/register-ts.cjs scripts/check-koh-yao-noi-final.cjs
       - run: node -r ./scripts/register-ts.cjs scripts/check-bangkok-final.cjs
       - run: node -r ./scripts/register-ts.cjs scripts/check-chiang-mai-final.cjs
+      - run: node -r ./scripts/register-ts.cjs scripts/check-sumba-final.cjs
       - run: node scripts/check-next-alpine-drafts.mjs
       - run: node scripts/check-third-alpine-drafts.mjs
       - run: node scripts/check-mountain-ten-batch-drafts.mjs
