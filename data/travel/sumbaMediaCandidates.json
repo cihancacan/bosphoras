@@ -3,7 +3,7 @@
   "scope": "owner_protected_preview_only",
   "rightsNotice": "Hotel publisher photos cannot be commercially republished without independently verified authorization.",
   "cityCount": 9,
-  "hotelCount": 9,
+  "hotelCount": 12,
   "destinationScenes": [
     {
       "originalSize": [
@@ -290,32 +290,32 @@
     },
     {
       "originalSize": [
-        1800,
-        1200
+        1024,
+        683
       ],
       "outputSize": [
-        1600,
-        1067
+        1024,
+        683
       ],
-      "bytes": 679670,
-      "sha256": "600c71eec41723694507d6c2be238e2da68d50f796512d3c3b6a600ba1c1f3e4",
-      "pixelFingerprint": "4d2a7273545e78e69c3b64e0c184f1cc46f62860fa199bdb46c6c8c6be6b5850",
+      "bytes": 173722,
+      "sha256": "ee1830d72b2db3258fa5cd647f110b8f1cb7d0851aea9c64d127bee1863e011e",
+      "pixelFingerprint": "2d04ec0941e042f05e2f85de163e242cbb887ab031e76bb445bf4ec68fbdddf7",
       "key": "view-2",
       "propertyKey": "nihi",
       "property": "NIHI Sumba",
       "localPath": "/images/travel/sumba-premium/nihi/view-2.webp",
       "sourcePage": "https://nihi.com/sumba/villas/",
-      "downloadUrl": "https://nihi.com/sumba/wp-content/webp-express/webp-images/uploads/sites/2/2025/10/putri-lantoro-nihi-sumba-1.jpg.webp",
-      "credit": "NIHI Sumba official publisher; photographer not independently identified",
-      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "downloadUrl": "https://nihi.com/sumba/wp-content/webp-express/webp-images/uploads/sites/2/2025/10/marangga-occys-nihi-sumba-1-1024x683.jpg.webp",
+      "originalAlt": "Aerial view of Marangga Occy’s Villa at NIHI Sumba, showcasing the villa’s private plunge pool, outdoor dining area, and lush tropical gardens leading directly to the secluded white-sand Nihiwatu Beach and turquoise sea.",
+      "credit": "NIHI Sumba official property publisher; photographer not independently identified",
+      "license": "Official property publisher — separate commercial republication permission not established.",
       "licenseUrl": "https://nihi.com/sumba/villas/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "Aerial view of Putri Lantoro Villa at NIHI Sumba, featuring thatched-roof twin-bedroom suites, shaded lounge decks, and a spacious private swimming pool with a guest enjoying a swim, all set against tropical gardens and ocean-facing terraces.",
-      "frCaption": "NIHI Sumba · photographie officielle à vérifier",
-      "enCaption": "NIHI Sumba · official publisher photo pending visual check"
+      "frCaption": "NIHI Sumba · autre villa authentique, différente de Putri Lantoro",
+      "enCaption": "NIHI Sumba · a different authentic villa, not another crop of Putri Lantoro"
     },
     {
       "originalSize": [
@@ -406,32 +406,32 @@
     },
     {
       "originalSize": [
-        1152,
-        1536
+        1280,
+        1920
       ],
       "outputSize": [
-        900,
+        800,
         1200
       ],
-      "bytes": 92344,
-      "sha256": "0d146732e8990b82de74dbdf85f2337da776c59ae3c0b5dc6bb701e5c0f33d84",
-      "pixelFingerprint": "400fba1e791edbb554a72d7415ff8b06583137363dcae0947080069b8e858b90",
+      "bytes": 84256,
+      "sha256": "604150d165962c89655c1bffdf05c875f5857b0bd76febca887b10bac5065298",
+      "pixelFingerprint": "8252f3dbeefcea259b4bf256256f509f2be80d78ae60e2fef175bd52d392fb95",
       "key": "view-3",
       "propertyKey": "cap-karoso",
       "property": "Cap Karoso",
       "localPath": "/images/travel/sumba-premium/cap-karoso/view-3.webp",
       "sourcePage": "https://capkaroso.com/en/",
-      "downloadUrl": "https://capkaroso.com/wp-content/uploads/2024/09/Cap-Karoso-Sumba-Beach-Suite-view-1152x1536.jpg",
-      "credit": "Cap Karoso official publisher; photographer not independently identified",
-      "license": "Official hotel photo; no independent commercial redistribution rights.",
+      "downloadUrl": "https://capkaroso.com/wp-content/uploads/2021/08/CapKaroso-VillaNdara-exterior-pool-sunset.jpeg",
+      "originalAlt": "Exterior of VillaN'dara with pool at sunset",
+      "credit": "Cap Karoso official property publisher; photographer not independently identified",
+      "license": "Official property publisher — separate commercial republication permission not established.",
       "licenseUrl": "https://capkaroso.com/en/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
       "visuallyVerified": false,
       "status": "source_identified_pending_individual_visual_review",
-      "originalAlt": "publisher embedded photograph",
-      "frCaption": "Cap Karoso · photographie officielle à vérifier",
-      "enCaption": "Cap Karoso · official publisher photo pending visual check"
+      "frCaption": "Cap Karoso · autre vue authentique du domaine, sélectionnée sur le site officiel",
+      "enCaption": "Cap Karoso · different genuine resort view from the official website"
     },
     {
       "originalSize": [
@@ -519,6 +519,93 @@
       "originalAlt": "Beachfront Studio Pool Villa at The Sanubari, featuring a serene private pool and direct access to a white sand beach in Indonesia.",
       "frCaption": "The Sanubari · photographie officielle à vérifier",
       "enCaption": "The Sanubari · official publisher photo pending visual check"
+    },
+    {
+      "originalSize": [
+        1920,
+        1080
+      ],
+      "outputSize": [
+        1600,
+        900
+      ],
+      "bytes": 25732,
+      "sha256": "af0f85348a970632256df01b8afb972d9971716679f73c37d767568f51455f4e",
+      "pixelFingerprint": "a579bfac3838cebc7e319b25d520c6bc736d20ab0b7720b4c11a2c6368fadf0e",
+      "key": "view-1",
+      "propertyKey": "alamayah",
+      "property": "Alamayah Boutique Retreat",
+      "localPath": "/images/travel/sumba-premium/alamayah/view-1.webp",
+      "sourcePage": "https://alamayah.com/",
+      "downloadUrl": "https://alamayah.com/cdn/shop/files/preview_images/6bcf840b059c43a7a094adbdce890d04.thumbnail.0000000000_2048x.jpg?v=1703059267",
+      "originalAlt": "",
+      "credit": "Alamayah Boutique Retreat official property publisher; photographer not independently identified",
+      "license": "Official property publisher — separate commercial republication permission not established.",
+      "licenseUrl": "https://alamayah.com/",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Alamayah · architecture du petit retreat et cocotiers",
+      "enCaption": "Alamayah · boutique retreat architecture among coconut palms"
+    },
+    {
+      "originalSize": [
+        2000,
+        1333
+      ],
+      "outputSize": [
+        1600,
+        1066
+      ],
+      "bytes": 301330,
+      "sha256": "a24af2742d193b99908079a4620e5a68c0d40b3a67594ef0ee860fb4f46dd713",
+      "pixelFingerprint": "40b89897dc23bc4047b29fcbf96a1b86b7e61a520b63e5d8e82f54e1529d3be5",
+      "key": "view-2",
+      "propertyKey": "alamayah",
+      "property": "Alamayah Boutique Retreat",
+      "localPath": "/images/travel/sumba-premium/alamayah/view-2.webp",
+      "sourcePage": "https://alamayah.com/",
+      "downloadUrl": "https://alamayah.com/cdn/shop/files/alamayah-welcome-slideshow-06.jpg?v=1703572799&width=2000",
+      "originalAlt": "",
+      "credit": "Alamayah Boutique Retreat official property publisher; photographer not independently identified",
+      "license": "Official property publisher — separate commercial republication permission not established.",
+      "licenseUrl": "https://alamayah.com/",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Alamayah · véritable suite de l’hôtel",
+      "enCaption": "Alamayah · a genuine resort guest suite"
+    },
+    {
+      "originalSize": [
+        1999,
+        3000
+      ],
+      "outputSize": [
+        800,
+        1200
+      ],
+      "bytes": 162074,
+      "sha256": "289ae1b1609b9925de39e307853c52992f62adc21125903a4d42ca415e4a7ffc",
+      "pixelFingerprint": "48f3cfe1e56a9ba96109b67f2940112d84740ea49727375351aa87e470091a46",
+      "key": "view-3",
+      "propertyKey": "alamayah",
+      "property": "Alamayah Boutique Retreat",
+      "localPath": "/images/travel/sumba-premium/alamayah/view-3.webp",
+      "sourcePage": "https://alamayah.com/pages/wellbeing",
+      "downloadUrl": "https://alamayah.com/cdn/shop/files/alamayah-spa-facilities-steam.jpg?v=1731303845&width=2000",
+      "originalAlt": "",
+      "credit": "Alamayah Boutique Retreat official property publisher; photographer not independently identified",
+      "license": "Official property publisher — separate commercial republication permission not established.",
+      "licenseUrl": "https://alamayah.com/pages/wellbeing",
+      "rightsEvidenceType": "hotel_official_publisher_not_licensed",
+      "commercialRightsCleared": false,
+      "visuallyVerified": false,
+      "status": "source_identified_pending_individual_visual_review",
+      "frCaption": "Alamayah · espace bien-être ou piscine du retreat",
+      "enCaption": "Alamayah · wellness or pool area of the resort"
     }
   ],
   "visualQA": "PENDING_INDIVIDUAL_PHOTO_REVIEW",
