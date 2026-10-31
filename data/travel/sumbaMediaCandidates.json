@@ -26,12 +26,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Weekuri · lagon salin turquoise",
-      "enCaption": "Weekuri · turquoise saline lagoon",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
+      "frCaption": "Lagon de Weekuri, bassin salin naturel du sud-ouest de Sumba",
+      "enCaption": "Weekuri Lagoon, natural saltwater basin in Southwest Sumba",
       "originalAlt": "Danau Weekuri, Sumba Barat Daya.jpg",
-      "searchIntent": "Danau Weekuri, Sumba Barat Daya.jpg"
+      "searchIntent": "Danau Weekuri, Sumba Barat Daya.jpg",
+      "visualReviewNote": "Authentique photo géographique de Sumba contrôlée sur la planche 21 vues, attribution et licence Commons vérifiées, redimensionnement WebP déclaré."
     },
     {
       "originalSize": [
@@ -54,12 +55,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Ratenggaro · maisons à hauts toits",
-      "enCaption": "Ratenggaro · high-roofed traditional houses",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
+      "frCaption": "Ratenggaro : maisons traditionnelles à hauts toits et sépultures",
+      "enCaption": "Ratenggaro traditional towering-roof houses and ancestral stones",
       "originalAlt": "Kampung Adat Ratenggaro - Sumba Barat Daya.jpg",
-      "searchIntent": "Kampung Adat Ratenggaro - Sumba Barat Daya.jpg"
+      "searchIntent": "Kampung Adat Ratenggaro - Sumba Barat Daya.jpg",
+      "visualReviewNote": "Authentique photo géographique de Sumba contrôlée sur la planche 21 vues, attribution et licence Commons vérifiées, redimensionnement WebP déclaré."
     },
     {
       "originalSize": [
@@ -82,12 +84,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Wairinding · collines de Sumba orientale",
-      "enCaption": "Wairinding · East Sumba hills",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
+      "frCaption": "Wairinding : collines dorées de Sumba orientale en saison sèche",
+      "enCaption": "Wairinding's dry-season golden hills in East Sumba",
       "originalAlt": "Bukit Wairinding-Sumba Timur.jpg",
-      "searchIntent": "Bukit Wairinding-Sumba Timur.jpg"
+      "searchIntent": "Bukit Wairinding-Sumba Timur.jpg",
+      "visualReviewNote": "Authentique photo géographique de Sumba contrôlée sur la planche 21 vues, attribution et licence Commons vérifiées, redimensionnement WebP déclaré."
     },
     {
       "originalSize": [
@@ -110,12 +113,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Walakiri · arbres et rivage",
-      "enCaption": "Walakiri · coastal trees and shallows",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
+      "frCaption": "Walakiri : arbres côtiers et reflets au coucher de soleil",
+      "enCaption": "Walakiri's coastal trees and sunset reflections",
       "originalAlt": "Pantai Walakiri, Sumba Timur, Nusa Tenggara Timur 20170610.jpg",
-      "searchIntent": "Pantai Walakiri, Sumba Timur, Nusa Tenggara Timur 20170610.jpg"
+      "searchIntent": "Pantai Walakiri, Sumba Timur, Nusa Tenggara Timur 20170610.jpg",
+      "visualReviewNote": "Authentique photo géographique de Sumba contrôlée sur la planche 21 vues, attribution et licence Commons vérifiées, redimensionnement WebP déclaré."
     },
     {
       "originalSize": [
@@ -138,12 +142,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Lapopu · cascade de Sumba occidentale",
-      "enCaption": "Lapopu · West Sumba forest waterfall",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
+      "frCaption": "Chute de Lapopu dans la forêt de l'ouest de Sumba",
+      "enCaption": "Lapopu Waterfall in West Sumba's green forest",
       "originalAlt": "Air Terjun Lapopu, Sumba Barat.jpg",
-      "searchIntent": "Air Terjun Lapopu, Sumba Barat.jpg"
+      "searchIntent": "Air Terjun Lapopu, Sumba Barat.jpg",
+      "visualReviewNote": "Authentique photo géographique de Sumba contrôlée sur la planche 21 vues, attribution et licence Commons vérifiées, redimensionnement WebP déclaré."
     },
     {
       "originalSize": [
@@ -166,12 +171,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Tanggedu · cascades orientales",
-      "enCaption": "Tanggedu · East Sumba waterfall",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
+      "frCaption": "Cascades de Tanggedu : roche et bassin de Sumba orientale",
+      "enCaption": "Tanggedu Waterfall and rock pool in East Sumba",
       "originalAlt": "Tanggedu Waterfall.jpg",
-      "searchIntent": "Tanggedu Waterfall.jpg"
+      "searchIntent": "Tanggedu Waterfall.jpg",
+      "visualReviewNote": "Authentique photo géographique de Sumba contrôlée sur la planche 21 vues, attribution et licence Commons vérifiées, redimensionnement WebP déclaré."
     },
     {
       "originalSize": [
@@ -194,12 +200,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Ratenggaro · plage du sud-ouest",
-      "enCaption": "Ratenggaro · southwestern beach",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
+      "frCaption": "Plage de Ratenggaro et méandres du littoral",
+      "enCaption": "Ratenggaro Beach and coastal tidal channels",
       "originalAlt": "Ratenggaro Beach.jpg",
-      "searchIntent": "Ratenggaro Beach.jpg"
+      "searchIntent": "Ratenggaro Beach.jpg",
+      "visualReviewNote": "Authentique photo géographique de Sumba contrôlée sur la planche 21 vues, attribution et licence Commons vérifiées, redimensionnement WebP déclaré."
     },
     {
       "originalSize": [
@@ -222,12 +229,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Kodi · littoral sauvage",
-      "enCaption": "Kodi · dramatic wild coastline",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
+      "frCaption": "Côte de Kodi et bateaux de pêche, photographie d'archive",
+      "enCaption": "Kodi coastline and fishing boats, archival photograph",
       "originalAlt": "KodiEastcoastSumba.JPG",
-      "searchIntent": "KodiEastcoastSumba.JPG"
+      "searchIntent": "KodiEastcoastSumba.JPG",
+      "visualReviewNote": "Authentique photo géographique de Sumba contrôlée sur la planche 21 vues, attribution et licence Commons vérifiées, redimensionnement WebP déclaré."
     },
     {
       "originalSize": [
@@ -250,12 +258,13 @@
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
       "rightsEvidenceType": "wikimedia_license_metadata",
       "commercialRightsCleared": true,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Sumba · ciel du couchant",
-      "enCaption": "Sumba · golden island sunset",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
+      "frCaption": "Sumba : silhouettes humaines photographiées au couchant",
+      "enCaption": "Sumba silhouettes photographed at sunset",
       "originalAlt": "The Magnificent Sunset from Sumba Island.jpg",
-      "searchIntent": "The Magnificent Sunset from Sumba Island.jpg"
+      "searchIntent": "The Magnificent Sunset from Sumba Island.jpg",
+      "visualReviewNote": "Authentique photo géographique de Sumba contrôlée sur la planche 21 vues, attribution et licence Commons vérifiées, redimensionnement WebP déclaré."
     }
   ],
   "hotels": [
@@ -282,11 +291,12 @@
       "licenseUrl": "https://nihi.com/sumba/villas/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Aerial view of Putri Lantoro Villa at NIHI Sumba, featuring thatched-roof twin-bedroom suites, shaded lounge decks, and a spacious private swimming pool with a guest enjoying a swim, all set against tropical gardens and ocean-facing terraces.",
-      "frCaption": "NIHI Sumba · photographie officielle à vérifier",
-      "enCaption": "NIHI Sumba · official publisher photo pending visual check"
+      "frCaption": "NIHI Sumba · villa Putri Lantoro vue d'en haut et sa piscine",
+      "enCaption": "NIHI Sumba · aerial view of Putri Lantoro villa and pool",
+      "visualReviewNote": "Véritable photographie de l'établissement exact vérifiée visuellement, le droit de republication commerciale n'est PAS indépendantement accordé."
     },
     {
       "originalSize": [
@@ -312,10 +322,11 @@
       "licenseUrl": "https://nihi.com/sumba/villas/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "NIHI Sumba · autre villa authentique, différente de Putri Lantoro",
-      "enCaption": "NIHI Sumba · a different authentic villa, not another crop of Putri Lantoro"
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
+      "frCaption": "NIHI Sumba · villa Marangga Occy's et paysage côtier",
+      "enCaption": "NIHI Sumba · Marangga Occy's villa along the coast",
+      "visualReviewNote": "Véritable photographie de l'établissement exact vérifiée visuellement, le droit de republication commerciale n'est PAS indépendantement accordé."
     },
     {
       "originalSize": [
@@ -340,11 +351,12 @@
       "licenseUrl": "https://nihi.com/sumba/villas/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Mandaka Surf Villa at NIHI Sumba, showcasing a private plunge pool with direct access to the boathouse, framed by tropical greenery. A shaded bale with comfortable seating offers ocean views, while vibrant white flowers and lush plants surround the serene outdoor space, providing an idyllic hideaway under the trees.",
-      "frCaption": "NIHI Sumba · photographie officielle à vérifier",
-      "enCaption": "NIHI Sumba · official publisher photo pending visual check"
+      "frCaption": "NIHI Sumba · terrasse et bassin de la villa Mandaka Surf",
+      "enCaption": "NIHI Sumba · Mandaka Surf villa private pool and terrace",
+      "visualReviewNote": "Véritable photographie de l'établissement exact vérifiée visuellement, le droit de republication commerciale n'est PAS indépendantement accordé."
     },
     {
       "originalSize": [
@@ -369,11 +381,12 @@
       "licenseUrl": "https://capkaroso.com/en/rooms-and-villas/studios/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "",
-      "frCaption": "Cap Karoso · photographie officielle à vérifier",
-      "enCaption": "Cap Karoso · official publisher photo pending visual check"
+      "frCaption": "Cap Karoso · architecture et matières d'un Studio officiel",
+      "enCaption": "Cap Karoso · authentic Studio room and material details",
+      "visualReviewNote": "Véritable photographie de l'établissement exact vérifiée visuellement, le droit de republication commerciale n'est PAS indépendantement accordé."
     },
     {
       "originalSize": [
@@ -398,11 +411,12 @@
       "licenseUrl": "https://capkaroso.com/en/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "",
-      "frCaption": "Cap Karoso · photographie officielle à vérifier",
-      "enCaption": "Cap Karoso · official publisher photo pending visual check"
+      "frCaption": "Cap Karoso · chambre de Beach Suite avec bois et tissus",
+      "enCaption": "Cap Karoso · Beach Suite interior with local textures",
+      "visualReviewNote": "Véritable photographie de l'établissement exact vérifiée visuellement, le droit de republication commerciale n'est PAS indépendantement accordé."
     },
     {
       "originalSize": [
@@ -428,10 +442,11 @@
       "licenseUrl": "https://capkaroso.com/en/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Cap Karoso · autre vue authentique du domaine, sélectionnée sur le site officiel",
-      "enCaption": "Cap Karoso · different genuine resort view from the official website"
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
+      "frCaption": "Cap Karoso · villa N'Dara et bassin en façade au crépuscule",
+      "enCaption": "Cap Karoso · Villa N'Dara exterior and pool at dusk",
+      "visualReviewNote": "Véritable photographie de l'établissement exact vérifiée visuellement, le droit de republication commerciale n'est PAS indépendantement accordé."
     },
     {
       "originalSize": [
@@ -456,11 +471,12 @@
       "licenseUrl": "https://www.thesanubari.com/stay",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "The Sanubari Garden Villa Resort View 6",
-      "frCaption": "The Sanubari · photographie officielle à vérifier",
-      "enCaption": "The Sanubari · official publisher photo pending visual check"
+      "frCaption": "The Sanubari · lit et artisanat de la Garden Pool Villa",
+      "enCaption": "The Sanubari · Garden Pool Villa bedroom and local craft",
+      "visualReviewNote": "Véritable photographie de l'établissement exact vérifiée visuellement, le droit de republication commerciale n'est PAS indépendantement accordé."
     },
     {
       "originalSize": [
@@ -485,11 +501,12 @@
       "licenseUrl": "https://www.thesanubari.com/stay",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "The Sanubari Beachfront Studio Villa Resort View 1",
-      "frCaption": "The Sanubari · photographie officielle à vérifier",
-      "enCaption": "The Sanubari · official publisher photo pending visual check"
+      "frCaption": "The Sanubari · structure de villa et végétation côtière",
+      "enCaption": "The Sanubari · pool-villa design amid coastal greenery",
+      "visualReviewNote": "Véritable photographie de l'établissement exact vérifiée visuellement, le droit de republication commerciale n'est PAS indépendantement accordé."
     },
     {
       "originalSize": [
@@ -514,11 +531,12 @@
       "licenseUrl": "https://www.thesanubari.com/stay",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
       "originalAlt": "Beachfront Studio Pool Villa at The Sanubari, featuring a serene private pool and direct access to a white sand beach in Indonesia.",
-      "frCaption": "The Sanubari · photographie officielle à vérifier",
-      "enCaption": "The Sanubari · official publisher photo pending visual check"
+      "frCaption": "The Sanubari · piscine d'une villa face à la plage de Kerewe",
+      "enCaption": "The Sanubari · beachfront villa pool overlooking Kerewe",
+      "visualReviewNote": "Véritable photographie de l'établissement exact vérifiée visuellement, le droit de republication commerciale n'est PAS indépendantement accordé."
     },
     {
       "originalSize": [
@@ -544,10 +562,11 @@
       "licenseUrl": "https://alamayah.com/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Alamayah · architecture du petit retreat et cocotiers",
-      "enCaption": "Alamayah · boutique retreat architecture among coconut palms"
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
+      "frCaption": "Alamayah · expérience équestre au coucher du soleil, pas l'architecture de l'hôtel",
+      "enCaption": "Alamayah · resort horse experience at dusk, not a hotel building photograph",
+      "visualReviewNote": "Photo d'expérience à cheval publiée sur le site officiel de l'établissement, NON photo de son bâtiment."
     },
     {
       "originalSize": [
@@ -573,10 +592,11 @@
       "licenseUrl": "https://alamayah.com/",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Alamayah · véritable suite de l’hôtel",
-      "enCaption": "Alamayah · a genuine resort guest suite"
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
+      "frCaption": "Alamayah · véritable suite de l'établissement, vue à travers les palmiers",
+      "enCaption": "Alamayah · genuine hotel suite looking through coconut palms",
+      "visualReviewNote": "Véritable photographie de l'établissement exact vérifiée visuellement, le droit de republication commerciale n'est PAS indépendantement accordé."
     },
     {
       "originalSize": [
@@ -602,12 +622,14 @@
       "licenseUrl": "https://alamayah.com/pages/wellbeing",
       "rightsEvidenceType": "hotel_official_publisher_not_licensed",
       "commercialRightsCleared": false,
-      "visuallyVerified": false,
-      "status": "source_identified_pending_individual_visual_review",
-      "frCaption": "Alamayah · espace bien-être ou piscine du retreat",
-      "enCaption": "Alamayah · wellness or pool area of the resort"
+      "visuallyVerified": true,
+      "status": "source_identified_private_preview",
+      "frCaption": "Alamayah · douche et installations de bien-être de l'hôtel",
+      "enCaption": "Alamayah · authentic shower and wellness facilities",
+      "visualReviewNote": "Véritable photographie de l'établissement exact vérifiée visuellement, le droit de republication commerciale n'est PAS indépendantement accordé."
     }
   ],
-  "visualQA": "PENDING_INDIVIDUAL_PHOTO_REVIEW",
-  "publicUseApproved": false
+  "visualQA": "INTERNAL_21_OF_21_PHOTO_IDENTITY_VERIFIED_PRIVATE_NOT_PUBLIC_LICENSED",
+  "publicUseApproved": false,
+  "internalReviewedPhotoCount": 21
 }
