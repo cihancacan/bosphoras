@@ -8,7 +8,7 @@ const {travelDestinations,approvedDestinationSlugs}=require('../data/travel/dest
 const {featuredCityGuides}=require('../data/travel/featuredCityGuides.ts');
 const m=require('../data/travel/tokyoMediaCandidates.json');const all=[...m.destinationScenes,...m.hotels];
 assert.equal(travelDestinations.length,88);assert.equal(new Set(travelDestinations.map(x=>x.slug)).size,88);
-assert.equal(Object.keys(featuredCityGuides).length,67);assert.equal(approvedDestinationSlugs.size,0);
+assert(Object.keys(featuredCityGuides).length>=67,'Do not lose existing Tokyo and 66 prior premium guides');assert.equal(approvedDestinationSlugs.size,0);
 assert.equal(g.slug,'tokyo');assert(g.editorialFr.length>3500&&g.editorialEn.length>3500);
 assert.equal(g.hotels.length,4);assert.equal(g.areas.length,5);assert.equal(g.experiences.length,5);
 assert.deepEqual(g.hotels.map(x=>x.name),['Aman Tokyo','Bvlgari Hotel Tokyo','Park Hyatt Tokyo','1 Hotel Tokyo']);
