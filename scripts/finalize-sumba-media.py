@@ -103,7 +103,7 @@ categories=[
 for i,(site,rank,fr,en) in enumerate(categories,1):
  select_unique('alamayah','Alamayah Boutique Retreat',i,site,unique_originals,rank,fr,en)
  p=next(v for v in D['hotels'] if v['propertyKey']=='alamayah' and v['key']==f'view-{i}')
- normalized=re.sub(r'-\\d+x\\d+(?=\\.(?:jpg|png|webp))','',urllib.parse.urlsplit(p['downloadUrl']).path,re.I)
+ normalized=re.sub(r'-\d+x\d+(?=\.(?:jpg|png|webp))','',urllib.parse.urlsplit(p['downloadUrl']).path,re.I)
  unique_originals.append(normalized.lower())
 D['hotels'].sort(key=lambda p:(['nihi','cap-karoso','sanubari','alamayah'].index(p['propertyKey']),p['key']))
 finger=[p['pixelFingerprint'] for p in D['destinationScenes']+D['hotels']]
@@ -123,3 +123,5 @@ for k,p in enumerate(ims):
  draw.text((x,y+263),p['sourcePage'][:52],fill='#596b73')
 out.save('docs/travel-sumba-contact-sheet.jpg','JPEG',quality=81)
 print('SUMBA_21_READY_FOR_PRIVATE_VISUAL_REVIEW')
+
+# Hotel identities and photographic permissions are kept separate; Sumba remains private noindex.
