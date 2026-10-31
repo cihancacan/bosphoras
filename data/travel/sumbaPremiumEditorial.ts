@@ -2,18 +2,18 @@ import type {BodrumHotelEditorial,BodrumPremiumPhoto} from './bodrumPremiumEdito
 import {sumbaDraftGuide} from './sumbaDraftGuide';
 import {approvedSumbaScene,approvedSumbaHotelImage,type SumbaScene,type SumbaHotelImage} from './sumbaGuide';
 import manifest from './sumbaMediaCandidates.json';
-const ids=['nihi','cap-karoso','sanubari','lelewatu'] as const;
+const ids=['nihi','cap-karoso','sanubari','alamayah'] as const;
 const frBest=[
  "Pour le domaine de villas emblématique de Nihiwatu, le surf, les chevaux et les expériences privées.",
  "Pour le design, la ferme, les résidences de créateurs et la plage de Karoso.",
  "Pour les villas à piscine plus épurées sur la longue plage de Kerewe.",
- "Pour les panoramas de falaise, la forêt et les villas suspendues de Wanokaka."
+ "Pour un retreat wellness intime de six suites à Patiala Bawa, près de Kerewe."
 ];
 const enBest=[
  "For Nihiwatu’s landmark villa estate, riding, surfing and curated adventures.",
  "For Karoso Beach design, a productive farm and visiting creative residencies.",
  "For understated private-pool villas on the long shores of Kerewe.",
- "For Wanokaka’s cliff panoramas, forest sanctuary and hanging villas."
+ "For six intimate suites near Kerewe, mindful wellness, yoga and Sumbanese encounters."
 ];
 const toPhoto=(p:SumbaScene|SumbaHotelImage):BodrumPremiumPhoto=>({
  src:p.localPath,fr:p.frCaption,en:p.enCaption,credit:p.credit,sourcePage:p.sourcePage
