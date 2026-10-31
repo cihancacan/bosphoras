@@ -47,3 +47,5 @@ export const sumbaPhotoLicenses:Record<string,{name:string;url:string}>=Object.f
 );
 
 // Hotel publisher photos must remain owner-protected, no public republication licence is implied.
+
+// Source-reviewed Sumba photography: exactly 9 local Commons scenes plus 12 official hotel pictures in private noindex Preview.
