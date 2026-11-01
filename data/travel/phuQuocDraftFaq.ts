@@ -19,7 +19,7 @@ export const phuQuocDraftFaq = {
     },
     {
       "q": "La Veranda Resort dispose-t-elle d'une piscine privée par chambre ?",
-      "a": "Non, l’hôtel MGallery possède une piscine de resort commune. La Veranda est un établissement-boutique de 74 chambres et suites au style indochinois près de Duong Dong Beach ; les vues et configurations varient selon la catégorie."
+      "a": "Non, l’hôtel MGallery possède une piscine de resort commune. La Veranda est un établissement-boutique de 73 chambres et suites au style indochinois près de Duong Dong Beach ; les vues et configurations varient selon la catégorie."
     },
     {
       "q": "Quelle est la meilleure période pour visiter Phu Quoc ?",
@@ -53,7 +53,7 @@ export const phuQuocDraftFaq = {
     },
     {
       "q": "Does each La Veranda Resort Phu Quoc room have its own pool?",
-      "a": "No. La Veranda Resort Phu Quoc – MGallery is an intimate 74-room and suite boutique retreat with a shared hotel pool and tropical gardens. Room outlooks and proximity to the shoreline vary by named category."
+      "a": "No. La Veranda Resort Phu Quoc – MGallery is an intimate 73-room and suite boutique retreat with a shared hotel pool and tropical gardens. Room outlooks and proximity to the shoreline vary by named category."
     },
     {
       "q": "When is the usual dry season on Phu Quoc?",
