@@ -522,7 +522,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
     </section>}
     {city.slug==='vinh-hy-bay' && <section id="panoramas-vinh-hy-bay" className="scroll-mt-24 bg-[#dcece8] py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-5">
-        <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#82694a]">{fr?'Vietnam · côte du parc de Núi Chúa':'Vietnam · Nui Chua's wild coastline'}</p>
+        <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#82694a]">{fr?'Vietnam · côte du parc de Núi Chúa':"Vietnam · Nui Chua's wild coastline"}</p>
         <h2 className="mt-4 max-w-4xl font-serif text-3xl leading-tight sm:text-5xl">{fr?'Vĩnh Hy : la baie, les reliefs et Hang Rái.':'Vinh Hy: the bay, wild headlands and Hang Rai.'}</h2>
         <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Des lieux photographiés séparément et attribués. Ils ne constituent pas des vues garanties depuis un hôtel : Amanoi, Bình Tiên et le village sont trois façons distinctes de vivre cette côte.':'Individually sourced and credited landscape photographs, never promises of a room view. Amanoi, Binh Tien and the fishing village offer genuinely different stays.'}</p>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
