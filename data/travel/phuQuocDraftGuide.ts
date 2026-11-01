@@ -48,8 +48,8 @@ export const phuQuocDraftGuide: Omit<FeaturedCityGuideData,'photos'|'slug'> & {s
       "name": "La Veranda Resort Phu Quoc — MGallery Collection",
       "officialUrl": "https://mgallery.accor.com/en/hotels/6479.html",
       "area": "Duong Dong Beach / Tran Hung Dao",
-      "fr": "Refuge balnéaire intimiste de 74 chambres à l'esprit de demeure indochinoise.",
-      "en": "74-room heritage-inspired boutique resort, tropical gardens and beach.",
+      "fr": "Refuge balnéaire intimiste de 73 chambres à l'esprit de demeure indochinoise.",
+      "en": "73-room heritage-inspired boutique resort, tropical gardens and beach.",
       "frWatch": "Piscine commune ; confirmer la vue de la chambre et la proximité réelle de la plage.",
       "enWatch": "Shared hotel pool; confirm the exact room aspect and walk to the beach."
     }
