@@ -170,7 +170,11 @@
       "visuallyVerified": true,
       "previewVisualApproved": true,
       "visualReviewDate": "2026-11-01",
-      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page"
+      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page",
+      "sourceWidth": 460,
+      "sourceHeight": 284,
+      "imageSizeReview": "LOW_RESOLUTION_PRIVATE_PREVIEW_ONLY",
+      "publicUseApproved": false
     },
     {
       "key": "amanoi-2",
@@ -192,7 +196,11 @@
       "visuallyVerified": true,
       "previewVisualApproved": true,
       "visualReviewDate": "2026-11-01",
-      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page"
+      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page",
+      "sourceWidth": 460,
+      "sourceHeight": 460,
+      "imageSizeReview": "LOW_RESOLUTION_PRIVATE_PREVIEW_ONLY",
+      "publicUseApproved": false
     },
     {
       "key": "amanoi-3",
@@ -214,7 +222,11 @@
       "visuallyVerified": true,
       "previewVisualApproved": true,
       "visualReviewDate": "2026-11-01",
-      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page"
+      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page",
+      "sourceWidth": 460,
+      "sourceHeight": 460,
+      "imageSizeReview": "LOW_RESOLUTION_PRIVATE_PREVIEW_ONLY",
+      "publicUseApproved": false
     },
     {
       "key": "swiss-1",
@@ -238,7 +250,9 @@
       "visuallyVerified": true,
       "previewVisualApproved": true,
       "visualReviewDate": "2026-11-01",
-      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page"
+      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page",
+      "imageSizeReview": "PRESENTATION_SIZE_ACCEPTABLE_FOR_PREVIEW",
+      "publicUseApproved": false
     },
     {
       "key": "swiss-2",
@@ -262,7 +276,9 @@
       "visuallyVerified": true,
       "previewVisualApproved": true,
       "visualReviewDate": "2026-11-01",
-      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page"
+      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page",
+      "imageSizeReview": "PRESENTATION_SIZE_ACCEPTABLE_FOR_PREVIEW",
+      "publicUseApproved": false
     },
     {
       "key": "swiss-3",
@@ -284,7 +300,11 @@
       "visuallyVerified": true,
       "previewVisualApproved": true,
       "visualReviewDate": "2026-11-01",
-      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page"
+      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page",
+      "sourceWidth": 1612,
+      "sourceHeight": 1074,
+      "imageSizeReview": "PRESENTATION_SIZE_ACCEPTABLE_FOR_PREVIEW",
+      "publicUseApproved": false
     },
     {
       "key": "casa-1",
@@ -310,7 +330,9 @@
       "visuallyVerified": true,
       "previewVisualApproved": true,
       "visualReviewDate": "2026-11-01",
-      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page"
+      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page",
+      "imageSizeReview": "PRESENTATION_SIZE_ACCEPTABLE_FOR_PREVIEW",
+      "publicUseApproved": false
     },
     {
       "key": "casa-2",
@@ -332,7 +354,11 @@
       "visuallyVerified": true,
       "previewVisualApproved": true,
       "visualReviewDate": "2026-11-01",
-      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page"
+      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page",
+      "sourceWidth": 850,
+      "sourceHeight": 482,
+      "imageSizeReview": "PRESENTATION_SIZE_ACCEPTABLE_FOR_PREVIEW",
+      "publicUseApproved": false
     },
     {
       "key": "casa-3",
@@ -354,7 +380,11 @@
       "visuallyVerified": true,
       "previewVisualApproved": true,
       "visualReviewDate": "2026-11-01",
-      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page"
+      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page",
+      "sourceWidth": 850,
+      "sourceHeight": 482,
+      "imageSizeReview": "PRESENTATION_SIZE_ACCEPTABLE_FOR_PREVIEW",
+      "publicUseApproved": false
     },
     {
       "key": "vinhhy-1",
@@ -376,7 +406,11 @@
       "visuallyVerified": true,
       "previewVisualApproved": true,
       "visualReviewDate": "2026-11-01",
-      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page"
+      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page",
+      "sourceWidth": 600,
+      "sourceHeight": 350,
+      "imageSizeReview": "LOW_RESOLUTION_PRIVATE_PREVIEW_ONLY",
+      "publicUseApproved": false
     },
     {
       "key": "vinhhy-2",
@@ -398,7 +432,11 @@
       "visuallyVerified": true,
       "previewVisualApproved": true,
       "visualReviewDate": "2026-11-01",
-      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page"
+      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page",
+      "sourceWidth": 400,
+      "sourceHeight": 300,
+      "imageSizeReview": "LOW_RESOLUTION_PRIVATE_PREVIEW_ONLY",
+      "publicUseApproved": false
     },
     {
       "key": "vinhhy-3",
@@ -422,7 +460,9 @@
       "visuallyVerified": true,
       "previewVisualApproved": true,
       "visualReviewDate": "2026-11-01",
-      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page"
+      "visualIdentityEvidence": "Actual photograph inspected in a labelled visual contact sheet; subject agrees with the named property and its source page",
+      "imageSizeReview": "LOW_RESOLUTION_PRIVATE_PREVIEW_ONLY",
+      "publicUseApproved": false
     }
   ],
   "visualQA": "HOTEL_GALLERIES_12_OF_12_VISUALLY_REVIEWED__DESTINATION_SCENES_NOT_YET_MANUALLY_APPROVED",
