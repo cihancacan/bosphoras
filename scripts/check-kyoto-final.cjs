@@ -8,7 +8,7 @@ const {featuredCityGuides}=require('../data/travel/featuredCityGuides.ts');
 const {travelDestinations,approvedDestinationSlugs}=require('../data/travel/destinations.ts');
 const m=require('../data/travel/kyotoMediaCandidates.json');const all=[...m.destinationScenes,...m.hotels];
 assert.equal(travelDestinations.length,88);assert.equal(new Set(travelDestinations.map(x=>x.slug)).size,88);
-assert.equal(Object.keys(featuredCityGuides).length,68);assert.equal(approvedDestinationSlugs.size,0);
+assert(Object.keys(featuredCityGuides).length>=68,'Keep Kyoto and all 67 earlier luxury guides');assert.equal(approvedDestinationSlugs.size,0);
 assert.equal(g.slug,'kyoto');assert(g.editorialFr.length>4200&&g.editorialEn.length>4200);
 assert.equal(g.hotels.length,4);assert.equal(g.areas.length,5);assert.equal(g.experiences.length,5);
 assert.deepEqual(g.hotels.map(x=>x.name),['Aman Kyoto','Park Hyatt Kyoto','The Ritz-Carlton, Kyoto','Four Seasons Hotel Kyoto']);
