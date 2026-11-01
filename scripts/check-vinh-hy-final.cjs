@@ -42,5 +42,5 @@ assert(m.hotels.find(p=>p.key==='casa-1').publicPreviewUrl.includes('khach-san-c
 assert(m.hotels.find(p=>p.key==='casa-1').sourcePage.startsWith('https://phetravel.com/'),'Correct third-party photo attribution');
 assert(m.hotels.find(p=>p.key==='casa-1').rightsEvidenceType==='third_party_publisher_not_licensed');
 assert(m.hotels.find(p=>p.key==='swiss-1').publicPreviewUrl.includes('01-GARDEN-VILLA.'),'Swiss-1 should depict real villa instead of generic beach');
-assert(m.hotels.find(p=>p.key==='vinhhy-3').publicPreviewUrl.includes('DELUXE-ROOM-331-5'),'No boat excursion in Vinh Hy hotel's gallery');
+assert(m.hotels.find(p=>p.key==='vinhhy-3').publicPreviewUrl.includes('DELUXE-ROOM-331-5'),"No boat excursion in Vinh Hy hotel gallery");
 console.log('BOSPHORAS_IMAGE_QA_STRICT_SUCCESS: 12 real hotel photographs manually reviewed, correct Casa Maya and property identities; four off-topic items replaced.');
