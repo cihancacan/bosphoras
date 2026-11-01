@@ -23,3 +23,24 @@ for(const s of ['vinh-hy-bay','hakone','kyoto','tokyo','palawan','sumba','istanb
 const c=fs.readFileSync('components/travel/FeaturedCityGuide.tsx','utf8'),r=fs.readFileSync('components/travel/TravelPages.tsx','utf8');
 assert(c.includes('panoramas-vinh-hy-bay'));assert(r.includes('isVinhHyBayGuide?vinhHyBayDraftFaq'));assert(r.includes('vinhHyBaySchemaSafePhotos'));assert(r.includes('robots: { index: ready'));
 console.log('VINH_HY_70_QA_SUCCESS: 70 premium editorials, 88 slugs, four honest lodging tiers, 21 images, 16 FAQs, noindex.');
+
+// Strict photo release gate: genuine hotel imagery only; no promo icon, generic landscape, or boat tour in hotel gallery.
+const permittedSubjects=new Set(['hotel-exterior-and-pool','hotel-villa-interior','hotel-guest-room','hotel-pool-residence','hotel-pool-villa','hotel-wellness','hotel-property-facility']);
+assert.equal(m.internalReviewedPhotoCount,12,'All 12 hotel photos must receive actual contact-sheet identity review');
+assert.equal(m.publicUseApproved,false,'Preview image review must NOT imply publisher rights');
+for(const p of m.hotels){
+ assert.equal(p.visuallyVerified,true,p.key+' visually unreviewed');
+ assert.equal(p.previewVisualApproved,true,p.key+' not accepted for private preview');
+ assert(permittedSubjects.has(p.subjectClass),'Non-hotel subject: '+p.key+':'+p.subjectClass);
+ assert(p.reviewNote.length>24,'Missing evidence of manual visual review '+p.key);
+ assert.equal(p.visualReviewDate,'2026-11-01');
+ assert.equal(p.commercialRightsCleared,false,'No hotel commercial photo rights established');
+ assert(!/trang-chu-163\.jpg|dich-vu-tau-day-kinh-tham-quan-vinh-ngam-san-ho/i.test(p.publicPreviewUrl),'Generic clipart or tourist boat group incorrectly classified as hotel');
+ assert(!/tour group|travel banner|glob[e]?|suitcase|poster|mockup|stock illustration/i.test(p.enCaption),'Generic imagery as hotel photograph');
+}
+assert(m.hotels.find(p=>p.key==='casa-1').publicPreviewUrl.includes('khach-san-casa-maya-ninh-thuan-be-boi'),'Casa Maya must show identifiable facade/pool not travel icon');
+assert(m.hotels.find(p=>p.key==='casa-1').sourcePage.startsWith('https://phetravel.com/'),'Correct third-party photo attribution');
+assert(m.hotels.find(p=>p.key==='casa-1').rightsEvidenceType==='third_party_publisher_not_licensed');
+assert(m.hotels.find(p=>p.key==='swiss-1').publicPreviewUrl.includes('01-GARDEN-VILLA.'),'Swiss-1 should depict real villa instead of generic beach');
+assert(m.hotels.find(p=>p.key==='vinhhy-3').publicPreviewUrl.includes('DELUXE-ROOM-331-5'),'No boat excursion in Vinh Hy hotel's gallery');
+console.log('BOSPHORAS_IMAGE_QA_STRICT_SUCCESS: 12 real hotel photographs manually reviewed, correct Casa Maya and property identities; four off-topic items replaced.');
