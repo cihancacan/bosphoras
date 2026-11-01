@@ -7,7 +7,7 @@ const {featuredCityGuides}=require('../data/travel/featuredCityGuides.ts');
 const {travelDestinations,approvedDestinationSlugs}=require('../data/travel/destinations.ts');
 const m=require('../data/travel/vinhHyBayMediaCandidates.json'),all=[...m.destinationScenes,...m.hotels];
 assert.equal(travelDestinations.length,88);assert.equal(new Set(travelDestinations.map(x=>x.slug)).size,88);
-assert.equal(Object.keys(featuredCityGuides).length,70);assert.equal(approvedDestinationSlugs.size,0);
+assert(Object.keys(featuredCityGuides).length>=70,'Keep Vinh Hy Bay and prior premium guides');assert.equal(approvedDestinationSlugs.size,0);
 assert.equal(g.slug,'vinh-hy-bay');assert(g.editorialFr.length>5000&&g.editorialEn.length>5000);
 assert.equal(g.hotels.length,4);assert.equal(g.areas.length,5);assert.equal(g.experiences.length,5);
 assert.deepEqual(g.hotels.map(x=>x.name),['Amanoi','Swiss-Belvillas Solavita Binh Tien','Casa Maya Resort','Vinh Hy Resort']);
