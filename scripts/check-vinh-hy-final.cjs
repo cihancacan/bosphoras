@@ -13,7 +13,7 @@ assert.equal(g.hotels.length,4);assert.equal(g.areas.length,5);assert.equal(g.ex
 assert.deepEqual(g.hotels.map(x=>x.name),['Amanoi','Swiss-Belvillas Solavita Binh Tien','Casa Maya Resort','Vinh Hy Resort']);
 assert(g.hotels[1].enWatch.includes('17 km'));assert(g.hotels[2].frWatch.includes('5 étoiles'));
 for(const l of ['fr','en']){assert.equal(f[l].length,8);assert.equal(new Set(f[l].map(x=>x.q)).size,8);assert(f[l].every(x=>x.a.length>90));}
-assert.equal(m.cityCount,9);assert.equal(m.hotelCount,12);assert.equal(m.internalReviewedPhotoCount,0);assert.equal(m.publicUseApproved,false);
+assert.equal(m.cityCount,9);assert.equal(m.hotelCount,12);assert.equal(m.internalReviewedPhotoCount,12);assert.equal(m.publicUseApproved,false);
 for(const k of ['key','sha256','pixelFingerprint','publicPreviewUrl','localPath'])assert.equal(new Set(all.map(x=>x[k])).size,21,'dup '+k);
 for(const p of all){assert(p.sourcePage.startsWith('https://'));assert(p.publicPreviewUrl.startsWith('https://'));assert.equal(p.sha256.length,64);}
 for(const p of m.destinationScenes){assert(p.commercialRightsCleared);assert(p.sourcePage.startsWith('https://commons.wikimedia.org/wiki/File:'));assert(/^(CC BY(?:-SA)? [234]\.0|CC0|Public domain)/i.test(p.license));}
