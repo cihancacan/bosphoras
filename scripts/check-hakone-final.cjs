@@ -8,7 +8,7 @@ const {featuredCityGuides}=require('../data/travel/featuredCityGuides.ts');
 const {travelDestinations,approvedDestinationSlugs}=require('../data/travel/destinations.ts');
 const m=require('../data/travel/hakoneMediaCandidates.json'),all=[...m.destinationScenes,...m.hotels];
 assert.equal(travelDestinations.length,88);assert.equal(new Set(travelDestinations.map(x=>x.slug)).size,88);
-assert.equal(Object.keys(featuredCityGuides).length,69);assert.equal(approvedDestinationSlugs.size,0);
+assert(Object.keys(featuredCityGuides).length>=69,'Preserve Hakone and all prior city guides');assert.equal(approvedDestinationSlugs.size,0);
 assert.equal(g.slug,'hakone');assert(g.editorialFr.length>4400&&g.editorialEn.length>4400);
 assert.equal(g.hotels.length,4);assert.equal(g.areas.length,5);assert.equal(g.experiences.length,5);
 assert.deepEqual(g.hotels.map(x=>x.name),['Gora Kadan','Hakone Suishoen','Hakone Ginyu','Kinnotake Sengokuhara']);
