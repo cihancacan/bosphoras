@@ -1,0 +1,459 @@
+{
+  "destination": "udaipur",
+  "format": "WEBP",
+  "quality": 76,
+  "maxDimensions": [
+    1280,
+    850
+  ],
+  "totalPhotos": 21,
+  "landscapes": 9,
+  "propertyPhotos": 12,
+  "publicUseApproved": false,
+  "rightsNotice": "Private owner Preview only. Commercial hotel-photo republication rights have not been independently established.",
+  "totalOriginalBytes": 5079728,
+  "totalWebpBytes": 2395170,
+  "photos": [
+    {
+      "key": "scene-1",
+      "localPath": "/images/travel/udaipur-premium/destination/scene-1.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        853
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 346246,
+      "webpBytes": 189190,
+      "webpSha256": "597ef6f559f31c555c53f6617f0203e8c704a3200eb94352ce810a27325d8250",
+      "reviewedOriginalSha256": "3b69ebc23ab87801e5fc5cf1964148fa30c0a9d2f18b212a051c1a3655231d9f",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-2",
+      "localPath": "/images/travel/udaipur-premium/destination/scene-2.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        960
+      ],
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "originalBytes": 425353,
+      "webpBytes": 199446,
+      "webpSha256": "2c5fae9ae676598d79ce09e6ca78601cd1a6e46f775ad3d9c4aef4f1424b6593",
+      "reviewedOriginalSha256": "60e7a1304b840196a6cb1466a45ea8c8cdfdd721e35c7fc1bd7b6ca9d20b5041",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-3",
+      "localPath": "/images/travel/udaipur-premium/destination/scene-3.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        851
+      ],
+      "webpPixels": [
+        1278,
+        850
+      ],
+      "originalBytes": 237583,
+      "webpBytes": 112586,
+      "webpSha256": "065cb300013f0346d30a29871be472c5d14bb8afb2ef0e1f47d666dd9b31b89b",
+      "reviewedOriginalSha256": "233aafcf0635c19626692a8358f75cbc50cc15c6adb0170dd6f545c995bf1df7",
+      "originalShaMatched": false,
+      "originalPixelsMatched": false,
+      "visualDhashDistance": 2,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-4",
+      "localPath": "/images/travel/udaipur-premium/destination/scene-4.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        853
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 293591,
+      "webpBytes": 148738,
+      "webpSha256": "4d3be227ed6a93716cab078677d194543d9b9cd55dc698d334843e363ab0a702",
+      "reviewedOriginalSha256": "3662bb8b9633c678f64c60ef6d42ab67d6dfa7235157e9fd4eb31cd5b736a767",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 1,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-5",
+      "localPath": "/images/travel/udaipur-premium/destination/scene-5.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        853
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 226806,
+      "webpBytes": 105914,
+      "webpSha256": "12c96152f46a1f869f08da9d1470cfa9a93550b1d6c65dbf1803a2eecc39d432",
+      "reviewedOriginalSha256": "9768d485dcdd3f942ade84e8776f1cac5784bf7b645c2224cebdaa7f94e457f3",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 2,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-6",
+      "localPath": "/images/travel/udaipur-premium/destination/scene-6.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        853
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 268265,
+      "webpBytes": 130526,
+      "webpSha256": "49ee76a1df1fd0a5472e246d1a5005c29c008a23f6f2f6c08f864bd87dfa78fd",
+      "reviewedOriginalSha256": "bd1d903c6f4116cf60f0ebe4e6b0c619318b428ea50df6b3a0895b61fcc82608",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 1,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-7",
+      "localPath": "/images/travel/udaipur-premium/destination/scene-7.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        853
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 287203,
+      "webpBytes": 139300,
+      "webpSha256": "4fa68e0508e6b829bc8c0522a71e0593179398432c5d9f88a960ab8e4c0782f7",
+      "reviewedOriginalSha256": "89ae2468d475baea42464f949e1de0d564705759e85c8b7b7683b3639a4ddd53",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-8",
+      "localPath": "/images/travel/udaipur-premium/destination/scene-8.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        853
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 311886,
+      "webpBytes": 159462,
+      "webpSha256": "0727bf0bc65a03df77e12ad09e1942bfd3885d87d1132334d17e404ea01ffa38",
+      "reviewedOriginalSha256": "9da4ea77114ee1d24732d0d26d7139ac97fd0f5b59d8e0d42551b9d2e0b3f77f",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 1,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-9",
+      "localPath": "/images/travel/udaipur-premium/destination/scene-9.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        743
+      ],
+      "webpPixels": [
+        1280,
+        743
+      ],
+      "originalBytes": 216662,
+      "webpBytes": 102510,
+      "webpSha256": "8893b9e96587e6ba0734c8e26fe375483edd36e44f5333fac89cda59f3910afb",
+      "reviewedOriginalSha256": "18c698d368ad438b8810ab86effbd566bf6cd10bb2935ad157f4f270aa2cf1f8",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 2,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "taj-1",
+      "localPath": "/images/travel/udaipur-premium/taj/taj-1.webp",
+      "property": "Taj Lake Palace, Udaipur",
+      "originalPixels": [
+        1280,
+        664
+      ],
+      "webpPixels": [
+        1280,
+        664
+      ],
+      "originalBytes": 165342,
+      "webpBytes": 89194,
+      "webpSha256": "7f15f1ddbc99f0e000d8936c04b4e85cf519143eee91f13d4ee17b30d97d9783",
+      "reviewedOriginalSha256": "304093ac3e8f9e2dcafc068142d046caedb6f26ecc5293fdd5165c2c8a1f6a49",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "taj-2",
+      "localPath": "/images/travel/udaipur-premium/taj/taj-2.webp",
+      "property": "Taj Lake Palace, Udaipur",
+      "originalPixels": [
+        1280,
+        853
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 230420,
+      "webpBytes": 99766,
+      "webpSha256": "fc0d6fda898a412809f1333be13d48486019882d50e5e987da9b78d1b90df870",
+      "reviewedOriginalSha256": "80052b6d81294b0f048138a379226be9b42f96c0328d02c6ecd7e3740e08f829",
+      "originalShaMatched": false,
+      "originalPixelsMatched": false,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "taj-3",
+      "localPath": "/images/travel/udaipur-premium/taj/taj-3.webp",
+      "property": "Taj Lake Palace, Udaipur",
+      "originalPixels": [
+        1280,
+        793
+      ],
+      "webpPixels": [
+        1280,
+        793
+      ],
+      "originalBytes": 229905,
+      "webpBytes": 114612,
+      "webpSha256": "aefe816ef0746ffd972724edb5b96d5418f87e27811ab12ee448b8173fc640c1",
+      "reviewedOriginalSha256": "5841bf807764804792947de7234ba50ac4e376a4ffb03784349befd89d30053a",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 1,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "oberoi-1",
+      "localPath": "/images/travel/udaipur-premium/oberoi/oberoi-1.webp",
+      "property": "The Oberoi Udaivilas, Udaipur",
+      "originalPixels": [
+        1640,
+        1292
+      ],
+      "webpPixels": [
+        1079,
+        850
+      ],
+      "originalBytes": 217806,
+      "webpBytes": 65974,
+      "webpSha256": "8c1cfa0504cc4e461a24b438bcd28dfe219b6fd4a2bbb42dc9422994538d2af8",
+      "reviewedOriginalSha256": "7e2b17ab5b1c69e90ddfa73c0b685b88fe649a2cd6d8845033cfa441cd3ceeb6",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "oberoi-2",
+      "localPath": "/images/travel/udaipur-premium/oberoi/oberoi-2.webp",
+      "property": "The Oberoi Udaivilas, Udaipur",
+      "originalPixels": [
+        1640,
+        1292
+      ],
+      "webpPixels": [
+        1079,
+        850
+      ],
+      "originalBytes": 284540,
+      "webpBytes": 108520,
+      "webpSha256": "a44cd6153530f0cd43cb4ad87b508d7a40a7011737e6ce4f0585f934ebc078ef",
+      "reviewedOriginalSha256": "83be450cee627bdd1875581bcc1f5ed2dad8ce05b5498e12a215ee7fb9c9edc4",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "oberoi-3",
+      "localPath": "/images/travel/udaipur-premium/oberoi/oberoi-3.webp",
+      "property": "The Oberoi Udaivilas, Udaipur",
+      "originalPixels": [
+        1640,
+        1292
+      ],
+      "webpPixels": [
+        1079,
+        850
+      ],
+      "originalBytes": 432966,
+      "webpBytes": 172778,
+      "webpSha256": "63a26a436617fa487c42c2702fb0e40b23a81d699fa7942286ddee95bce233cc",
+      "reviewedOriginalSha256": "0c54d0f4bd513935b4c4bc434c13aa7183e2e37b6217e72174debefd57925b8b",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 1,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "leela-1",
+      "localPath": "/images/travel/udaipur-premium/leela/leela-1.webp",
+      "property": "The Leela Palace Udaipur",
+      "originalPixels": [
+        1024,
+        450
+      ],
+      "webpPixels": [
+        1024,
+        450
+      ],
+      "originalBytes": 61816,
+      "webpBytes": 41960,
+      "webpSha256": "fd113fb1dd47673a3c57ebad9a5d07f621fa60a381b747669d2db31e57252724",
+      "reviewedOriginalSha256": "fda805e7eecd74178fc9fc359de45fb898c9d816117ec8ac7c828441bb52089e",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 1,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "leela-2",
+      "localPath": "/images/travel/udaipur-premium/leela/leela-2.webp",
+      "property": "The Leela Palace Udaipur",
+      "originalPixels": [
+        850,
+        530
+      ],
+      "webpPixels": [
+        850,
+        530
+      ],
+      "originalBytes": 128084,
+      "webpBytes": 112514,
+      "webpSha256": "0fc57709eb414a66dbd7104d28ac5940680b419384aad340a65f43207128a996",
+      "reviewedOriginalSha256": "ae55e9aa9a53cc77d69a50ea1f26cb685366228acede2b85992ebf18ea906831",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "leela-3",
+      "localPath": "/images/travel/udaipur-premium/leela/leela-3.webp",
+      "property": "The Leela Palace Udaipur",
+      "originalPixels": [
+        850,
+        530
+      ],
+      "webpPixels": [
+        850,
+        530
+      ],
+      "originalBytes": 80696,
+      "webpBytes": 50378,
+      "webpSha256": "657c81561a10a4a54380713f26f75c3f52f99f59d524239e422ca6d85fca7528",
+      "reviewedOriginalSha256": "9228e171953b628d33ffa52af9b3c4f07ca9c540e1d735cb8fc201293b8f66bd",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "raffles-1",
+      "localPath": "/images/travel/udaipur-premium/raffles/raffles-1.webp",
+      "property": "Raffles Udaipur",
+      "originalPixels": [
+        1600,
+        1068
+      ],
+      "webpPixels": [
+        1273,
+        850
+      ],
+      "originalBytes": 268800,
+      "webpBytes": 110588,
+      "webpSha256": "0e087a392069ad90aeeb6c165e14e1ab8fd5449ec5aa210d776a71c881068dcf",
+      "reviewedOriginalSha256": "3f351902deb5f445891e09ec0ada8fe22cbf3334961d1084c8acfd6ae7195b35",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 4,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "raffles-2",
+      "localPath": "/images/travel/udaipur-premium/raffles/raffles-2.webp",
+      "property": "Raffles Udaipur",
+      "originalPixels": [
+        1600,
+        649
+      ],
+      "webpPixels": [
+        1280,
+        519
+      ],
+      "originalBytes": 152980,
+      "webpBytes": 61272,
+      "webpSha256": "c4104cfbc989e4ec601f05d342992ef6a62a9d95573760b113787adf3b118241",
+      "reviewedOriginalSha256": "d4febdd39a074712316b48d582c3cb4f583bf1daee0ba1709d6ee3b17e020dfc",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "raffles-3",
+      "localPath": "/images/travel/udaipur-premium/raffles/raffles-3.webp",
+      "property": "Raffles Udaipur",
+      "originalPixels": [
+        1600,
+        1068
+      ],
+      "webpPixels": [
+        1273,
+        850
+      ],
+      "originalBytes": 212778,
+      "webpBytes": 79942,
+      "webpSha256": "18a2d812b6b9bf84a1ee2085672d1abc4020cecfa707ecd3f6160187ebe3ca20",
+      "reviewedOriginalSha256": "736adc409f547d8e9bcd75da0642cebf1ec64f4294c711e6b94cf6a12523aa4c",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    }
+  ]
+}
