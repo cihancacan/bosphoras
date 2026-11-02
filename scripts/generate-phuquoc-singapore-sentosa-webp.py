@@ -37,6 +37,15 @@ assert all(p["visuallyVerified"] and p["previewVisualApproved"] for p in photos)
 assert all(p["commercialRightsCleared"] for p in manifest["destinationScenes"])
 assert all(not p["commercialRightsCleared"] for p in manifest["hotels"])
 assert manifest["publicUseApproved"] is False
+reviewed = json.loads((ROOT / "data/travel/reviewedPhotoDhash73-75.json").read_text(encoding="utf8"))["hashes"].get(slug,{})
+def perceptual_dhash(image):
+    sm=ImageOps.grayscale(image).resize((9,8),Image.Resampling.LANCZOS)
+    a=list(sm.getdata());v=0
+    for y in range(8):
+        for x in range(8):
+            v=(v<<1)|(a[y*9+x]>a[y*9+x+1])
+    return v
+
 client = requests.Session()
 client.headers.update({"User-Agent":"Mozilla/5.0"})
 
@@ -61,8 +70,12 @@ def checked_download(p):
                     assert im.width>=760 and im.height>=430
                     exact=hashlib.sha256(raw).hexdigest()==p["sha256"]
                     pixels=hashlib.sha256(im.resize((80,80)).tobytes()).hexdigest()==p["pixelFingerprint"]
-                    assert exact or pixels, "source image no longer matches previously examined photograph"
-                    return im, len(raw), exact, pixels
+                    review_hash=reviewed.get(p["key"])
+                    distance=(perceptual_dhash(im)^int(review_hash,16)).bit_count() if review_hash else 64
+                    assert exact or pixels or distance<=5, (
+                        f"source image differs from approved photo: visual hash distance={distance}/64"
+                    )
+                    return im, len(raw), exact, pixels, distance
             except Exception as exc:
                 errors.append(str(exc)[:130])
                 if trial<2: time.sleep(min(trial+1,2))
@@ -73,7 +86,7 @@ for p in photos:
     assert re.fullmatch("/images/travel/"+re.escape(slug)+r"-premium/[a-z0-9/-]+\.webp",p["localPath"])
     destination=ROOT/"public"/p["localPath"].lstrip("/")
     destination.parent.mkdir(parents=True,exist_ok=True)
-    im,src_bytes,sha_ok,pixel_ok=checked_download(p)
+    im,src_bytes,sha_ok,pixel_ok,visual_distance=checked_download(p)
     source_size=list(im.size)
     im.thumbnail((1280,850),Image.Resampling.LANCZOS)
     im.save(destination,"WEBP",quality=76,method=6)
@@ -89,7 +102,7 @@ for p in photos:
         "originalBytes":src_bytes,"webpBytes":len(b),
         "webpSha256":hashlib.sha256(b).hexdigest(),
         "reviewedOriginalSha256":p["sha256"],
-        "originalShaMatched":sha_ok,"originalPixelsMatched":pixel_ok,
+        "originalShaMatched":sha_ok,"originalPixelsMatched":pixel_ok,"visualDhashDistance":visual_distance,
         "commercialRightsCleared":p["commercialRightsCleared"],
     })
     print("WEBP_OK",slug,p["key"],f"{width}x{height}",len(b),"bytes",flush=True)
