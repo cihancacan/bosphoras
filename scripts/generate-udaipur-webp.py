@@ -33,11 +33,7 @@ assert all(not p["commercialRightsCleared"] for p in manifest["hotels"])
 assert not manifest["publicUseApproved"]
 
 session = requests.Session()
-session.headers.update({
-    "User-Agent": "BosphorasLuxuryStays/1.0 (image preservation, source credited)",
-    "Referer": "https://commons.wikimedia.org/",
-    "Accept": "image/avif,image/webp,image/apng,image/*,*/*;q=0.8",
-})
+session.headers.update({"User-Agent": "Mozilla/5.0"})
 
 def candidate_urls(item):
     urls = [item["publicPreviewUrl"]]
