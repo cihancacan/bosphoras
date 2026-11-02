@@ -540,6 +540,32 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         </div>
       </div>
     </section>}
+    {city.slug==='sentosa' && <section id="panoramas-sentosa" className="scroll-mt-24 bg-[#e5ece9] py-16 sm:py-24">
+      <div className="mx-auto max-w-7xl px-5">
+        <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Sentosa · trois plages et deux histoires':'Sentosa · beaches, woods and heritage'}</p>
+        <h2 className="mt-4 max-w-4xl font-serif text-3xl leading-tight sm:text-5xl">{fr?'Palawan, Siloso, Fort Siloso et la marina.':'Palawan, Siloso, Fort Siloso and the marina.'}</h2>
+        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Neuf vues photographiées sur l’île, sourcées et attribuées. Ces paysages ne sont pas des vues promises depuis les chambres ou villas des hôtels.':'Nine authentic photographs of the island, sourced and attributed. These landscapes do not guarantee the view from a particular hotel room or villa.'}</p>
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {([
+            {key:'scene-1',frTitle:'Palawan Beach',enTitle:'Palawan Beach'},
+            {key:'scene-2',frTitle:'Siloso Beach',enTitle:'Siloso Beach'},
+            {key:'scene-4',frTitle:'Sentosa Cove',enTitle:'Sentosa Cove'},
+            {key:'scene-5',frTitle:'Fort Siloso',enTitle:'Fort Siloso'},
+            {key:'scene-6',frTitle:'Les eaux de Palawan',enTitle:'Palawan shoreline'},
+            {key:'scene-7',frTitle:'Siloso et ses palmiers',enTitle:'Siloso shoreline'},
+            {key:'scene-8',frTitle:'Vues sur le détroit',enTitle:'Coastal viewpoint'},
+            {key:'scene-9',frTitle:'Palawan en lumière du jour',enTitle:'Palawan in daylight'},
+            {key:'scene-3',frTitle:'Le littoral de Tanjong',enTitle:'Tanjong coastal area'}
+          ] as const).map(entry=>{
+            const photo=city.photos[entry.key];
+            return photo && confirmedSentosaPreviewAssets.has(photo.src) && <article key={entry.key} className="bg-white p-4 shadow-sm sm:p-5">
+              <CityPhoto photo={photo} locale={locale}/>
+              <h3 className="mt-5 font-serif text-xl text-[#19323e]">{fr?entry.frTitle:entry.enTitle}</h3>
+            </article>;
+          })}
+        </div>
+      </div>
+    </section>}
     {city.slug==='singapore' && <section id="panoramas-singapore" className="scroll-mt-24 bg-[#e6ebe8] py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Singapour · skyline, jardins et héritage':'Singapore · skyline, gardens and heritage'}</p>
