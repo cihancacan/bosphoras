@@ -99,11 +99,7 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
             <p className="mt-4 text-sm leading-7 text-[#52616c]">
               {fr ? 'Cette fiche est une sélection éditoriale indépendante. Les éventuels liens de réservation renvoient vers des partenaires vérifiés.' : 'This is an independent editorial profile. Any booking links lead to verified partners.'}
             </p>
-            <a href={hotel.officialUrl} target="_blank" rel="noopener noreferrer"
-              className="mt-7 inline-flex bg-[#142d39] px-5 py-4 text-sm font-semibold text-white hover:bg-[#285063]">
-              {fr ? 'Consulter le site officiel' : 'Visit official hotel website'} ↗
-            </a>
-            <HotelPartnerBooking hotelKey={hotelPartnerKey('istanbul', hotel.id)} locale={locale} />
+            <HotelPartnerBooking hotelKey={hotelPartnerKey('istanbul', hotel.id)} locale={locale} officialUrl={hotel.officialUrl} hotelName={hotel.name} />
           </aside>
         </div>
 

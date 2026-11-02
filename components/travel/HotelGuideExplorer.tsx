@@ -24,7 +24,7 @@ const cities = new Set(['istanbul','paris','dubai','new-york','miami','los-angel
 const slides = ['istanbul','maldives','courchevel-1850'];
 const featured = ['maldives','paris','bali','istanbul','courchevel-1850','saint-tropez','dubai'];
 
-export function HotelGuideExplorer({ locale, destinations }: { locale: 'fr' | 'en'; destinations: Destination[] }) {
+export function HotelGuideExplorer({ locale, destinations, bookingDestinations, bookingReady, worldwideUrl }: { locale: 'fr' | 'en'; destinations: Destination[]; bookingDestinations: {key:string;name:string}[]; bookingReady:boolean; worldwideUrl:string|null }) {
   const fr = locale === 'fr';
   const id = useId();
   const results = useRef<HTMLElement>(null);
@@ -35,8 +35,12 @@ export function HotelGuideExplorer({ locale, destinations }: { locale: 'fr' | 'e
   const [open, setOpen] = useState<'dates' | 'guests' | null>(null);
   const [arrival, setArrival] = useState('');
   const [departure, setDeparture] = useState('');
-  const [adults, setAdults] = useState(2);
-  const [rooms, setRooms] = useState(1);
+  const [party, setParty] = useState([2]);
+  const adults = party.reduce((total, count) => total + count, 0);
+  const rooms = party.length;
+  const [bookingError, setBookingError] = useState('');
+  const [busy, setBusy] = useState(false);
+  const today = new Date().toLocaleDateString('en-CA');
   const [saved, setSaved] = useState<string[]>([]);
   const [limit, setLimit] = useState(6);
   const [submitted, setSubmitted] = useState(false);
@@ -46,9 +50,28 @@ export function HotelGuideExplorer({ locale, destinations }: { locale: 'fr' | 'e
     .sort((a,b) => (featured.indexOf(a.slug) < 0 ? 100 : featured.indexOf(a.slug)) - (featured.indexOf(b.slug) < 0 ? 100 : featured.indexOf(b.slug)));
   const shortDate = (value: string) => value ? new Date(`${value}T12:00:00`).toLocaleDateString(fr ? 'fr-FR' : 'en-GB', { day: 'numeric', month: 'short' }) : '';
   const dateLabel = arrival ? `${shortDate(arrival)}${departure ? ` — ${shortDate(departure)}` : ''}` : (fr ? 'Choisir mes dates' : 'Choose dates');
-  const explore = (event: React.FormEvent) => {
-    event.preventDefault(); setSubmitted(true); setOpen(null);
+  const exploreGuides = () => {
+    setSubmitted(true); setOpen(null);
     results.current?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+  };
+  const searchHotels = async (event: React.FormEvent) => {
+    event.preventDefault();
+    if (busy) return;
+    setBookingError('');
+    const selected = bookingDestinations.find(d => normalize(d.name) === normalize(query.trim()) || d.key === query.trim());
+    if (!selected) { setBookingError(fr ? 'Choisissez une destination proposée. Vous pouvez aussi explorer nos guides ci-dessous.' : 'Choose one of the suggested destinations, or explore our guides below.'); return; }
+    if (!arrival || !departure || arrival < today || departure <= arrival) { setBookingError(fr ? 'Choisissez des dates de séjour valides.' : 'Choose valid stay dates.'); setOpen('dates'); return; }
+    setBusy(true);
+    try {
+      const response = await fetch('/api/travel/booking/search', { method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({destinationKey:selected.key,checkin:arrival,checkout:departure,locale,rooms:party.map(count=>({adults:count,children:[]}))}) });
+      const result = await response.json();
+      if (!response.ok || typeof result.url !== 'string') {
+        setBookingError(response.status===503 ? (fr ? 'Les réservations ne sont pas encore ouvertes. Nos guides restent disponibles.' : 'Bookings are not open yet. You can still explore our guides.') : (fr ? 'Vérifiez votre destination, vos dates et vos voyageurs.' : 'Check your destination, dates and guests.'));
+        return;
+      }
+      window.location.assign(result.url);
+    } catch { setBookingError(fr ? 'La recherche est momentanément indisponible. Réessayez dans un instant.' : 'Search is temporarily unavailable. Please try again shortly.'); }
+    finally { setBusy(false); }
   };
   const changeMood = (value: Mood) => { setMood(value); setLimit(6); };
   return <>
@@ -65,20 +88,22 @@ export function HotelGuideExplorer({ locale, destinations }: { locale: 'fr' | 'e
 
     <div className={s.searchWrap}>
       <div className={s.searchCard}>
-        <div className={s.searchTopline}><span><span className={s.goldDot}/>{fr ? 'VOTRE SÉJOUR, SELON VOS ENVIES' : 'YOUR STAY, YOUR WAY'}</span><span className={s.editorialLabel}>{fr ? 'Sélection éditoriale' : 'Editorial collection'}</span></div>
-        <form onSubmit={explore} className={s.searchForm}>
-          <div className={s.destinationField}><MapPin size={21} strokeWidth={1.5}/><div><label htmlFor={`${id}-destination`}>{fr ? 'DESTINATION' : 'DESTINATION'}</label><input ref={destinationInput} id={`${id}-destination`} type="search" autoComplete="off" value={query} onChange={e=>{setQuery(e.target.value);setLimit(6);setSubmitted(false);}} placeholder={fr ? 'Une ville, une île, une envie…' : 'A city, an island, an escape…'} /></div></div>
+        <div className={s.searchTopline}><span><span className={s.goldDot}/>{fr ? 'VOTRE SÉJOUR, SELON VOS ENVIES' : 'YOUR STAY, YOUR WAY'}</span><span className={s.editorialLabel}>{fr ? 'Réservation avec Nuitée' : 'Booking with Nuitée'}</span></div>
+        <form onSubmit={searchHotels} className={s.searchForm}>
+          <div className={s.destinationField}><MapPin size={21} strokeWidth={1.5}/><div><label htmlFor={`${id}-destination`}>{fr ? 'DESTINATION' : 'DESTINATION'}</label><input list={`${id}-booking-destinations`} ref={destinationInput} id={`${id}-destination`} type="search" autoComplete="off" value={query} onChange={e=>{setQuery(e.target.value);setLimit(6);setSubmitted(false);}} placeholder={fr ? 'Une ville, une île, une envie…' : 'A city, an island, an escape…'} /><datalist id={`${id}-booking-destinations`}>{bookingDestinations.map(d=><option key={d.key} value={d.name}/>)}</datalist></div></div>
           <div className={s.fieldWrap}>
             <button type="button" className={s.fieldButton} aria-expanded={open === 'dates'} aria-controls={`${id}-dates`} onClick={()=>setOpen(open === 'dates' ? null : 'dates')}><CalendarDays size={21} strokeWidth={1.5}/><span><small>{fr ? 'ARRIVÉE — DÉPART' : 'CHECK-IN — CHECK-OUT'}</small><strong>{dateLabel}</strong></span><ChevronDown size={14}/></button>
-            {open === 'dates' && <div className={s.popover} id={`${id}-dates`} onKeyDown={e=>{if(e.key==='Escape')setOpen(null);}}><div className={s.popoverHeading}><strong>{fr ? 'Vos dates de séjour' : 'Your stay dates'}</strong><button type="button" aria-label={fr ? 'Fermer les dates' : 'Close dates'} onClick={()=>setOpen(null)}><X size={17}/></button></div><label>{fr ? 'Arrivée' : 'Check-in'}<input type="date" value={arrival} required={Boolean(departure)} onInput={e=>{setArrival(e.currentTarget.value);if(departure && e.currentTarget.value>=departure)setDeparture('');}} onChange={e=>{setArrival(e.target.value);if(departure && e.target.value>=departure)setDeparture('');}} /></label><label>{fr ? 'Départ' : 'Check-out'}<input type="date" min={arrival ? new Date(new Date(`${arrival}T12:00:00`).getTime()+86400000).toISOString().slice(0,10) : undefined} value={departure} required={Boolean(arrival)} onInput={e=>setDeparture(e.currentTarget.value)} onChange={e=>setDeparture(e.target.value)} /></label><p>{fr ? 'Ces dates préparent votre recherche. Aucune disponibilité n’est encore vérifiée.' : 'These dates prepare your search. Availability has not been checked.'}</p><button type="button" className={s.applyButton} onClick={()=>setOpen(null)}>{fr ? 'Appliquer' : 'Apply'}<Check size={16}/></button></div>}
+            {open === 'dates' && <div className={s.popover} id={`${id}-dates`} onKeyDown={e=>{if(e.key==='Escape')setOpen(null);}}><div className={s.popoverHeading}><strong>{fr ? 'Vos dates de séjour' : 'Your stay dates'}</strong><button type="button" aria-label={fr ? 'Fermer les dates' : 'Close dates'} onClick={()=>setOpen(null)}><X size={17}/></button></div><label>{fr ? 'Arrivée' : 'Check-in'}<input type="date" min={today} value={arrival} required={Boolean(departure)} onInput={e=>{setArrival(e.currentTarget.value);if(departure && e.currentTarget.value>=departure)setDeparture('');}} onChange={e=>{setArrival(e.target.value);if(departure && e.target.value>=departure)setDeparture('');}} /></label><label>{fr ? 'Départ' : 'Check-out'}<input type="date" min={arrival ? new Date(new Date(`${arrival}T12:00:00`).getTime()+86400000).toISOString().slice(0,10) : undefined} value={departure} required={Boolean(arrival)} onInput={e=>setDeparture(e.currentTarget.value)} onChange={e=>setDeparture(e.target.value)} /></label><p>{fr ? 'Les tarifs et disponibilités seront vérifiés par Nuitée.' : 'Nuitée will check rates and availability.'}</p><button type="button" className={s.applyButton} onClick={()=>setOpen(null)}>{fr ? 'Appliquer' : 'Apply'}<Check size={16}/></button></div>}
           </div>
           <div className={s.fieldWrap}>
             <button type="button" className={s.fieldButton} aria-expanded={open === 'guests'} aria-controls={`${id}-guests`} onClick={()=>setOpen(open === 'guests' ? null : 'guests')}><Users size={21} strokeWidth={1.5}/><span><small>{fr ? 'VOYAGEURS' : 'GUESTS'}</small><strong>{adults} {fr ? 'adultes' : 'adults'} · {rooms} {fr ? (rooms>1?'chambres':'chambre') : (rooms>1?'rooms':'room')}</strong></span><ChevronDown size={14}/></button>
-            {open === 'guests' && <div className={s.popover} id={`${id}-guests`} onKeyDown={e=>{if(e.key==='Escape')setOpen(null);}}><div className={s.popoverHeading}><strong>{fr ? 'Qui vous accompagne ?' : 'Who is coming?'}</strong><button type="button" aria-label={fr ? 'Fermer les voyageurs' : 'Close guests'} onClick={()=>setOpen(null)}><X size={17}/></button></div>{[{label:fr?'Adultes':'Adults',value:adults,min:1,max:12,set:setAdults},{label:fr?'Chambres':'Rooms',value:rooms,min:1,max:6,set:setRooms}].map(counter=><div className={s.counter} key={counter.label}><span>{counter.label}</span><div><button type="button" disabled={counter.value===counter.min} aria-label={`${fr?'Diminuer':'Decrease'} ${counter.label}`} onClick={()=>counter.set(counter.value-1)}><Minus size={15}/></button><output aria-live="polite">{counter.value}</output><button type="button" disabled={counter.value===counter.max} aria-label={`${fr?'Augmenter':'Increase'} ${counter.label}`} onClick={()=>counter.set(counter.value+1)}><Plus size={15}/></button></div></div>)}<button type="button" className={s.applyButton} onClick={()=>setOpen(null)}>{fr ? 'Appliquer' : 'Apply'}<Check size={16}/></button></div>}
+            {open === 'guests' && <div className={s.popover} id={`${id}-guests`} onKeyDown={e=>{if(e.key==='Escape')setOpen(null);}}><div className={s.popoverHeading}><strong>{fr ? 'Qui vous accompagne ?' : 'Who is coming?'}</strong><button type="button" aria-label={fr ? 'Fermer les voyageurs' : 'Close guests'} onClick={()=>setOpen(null)}><X size={17}/></button></div>{party.map((count,index)=><div className={s.counter} key={index}><span>{fr?'Chambre':'Room'} {index+1}<small className={s.roomHint}>{fr?'Adultes':'Adults'}</small></span><div><button type="button" disabled={count===1} aria-label={`${fr?'Diminuer les adultes chambre':'Decrease adults room'} ${index+1}`} onClick={()=>setParty(current=>current.map((value,i)=>i===index?value-1:value))}><Minus size={15}/></button><output aria-live="polite">{count}</output><button type="button" disabled={adults>=12} aria-label={`${fr?'Augmenter les adultes chambre':'Increase adults room'} ${index+1}`} onClick={()=>setParty(current=>current.map((value,i)=>i===index?value+1:value))}><Plus size={15}/></button>{index>0&&<button type="button" aria-label={`${fr?'Retirer la chambre':'Remove room'} ${index+1}`} onClick={()=>setParty(current=>current.filter((_,i)=>i!==index))}><X size={14}/></button>}</div></div>)}<button type="button" className={s.addRoom} disabled={rooms>=6||adults>=12} onClick={()=>setParty(current=>[...current,1])}><Plus size={15}/>{fr?'Ajouter une chambre':'Add a room'}</button><button type="button" className={s.applyButton} onClick={()=>setOpen(null)}>{fr ? 'Appliquer' : 'Apply'}<Check size={16}/></button></div>}
           </div>
-          <button type="submit" className={s.searchButton}><Search size={19}/>{fr ? 'Explorer' : 'Explore'}<ArrowRight size={19}/></button>
+          <button type="submit" disabled={busy} className={s.searchButton}><Search size={19}/>{busy ? (fr?'Recherche…':'Searching…') : (fr?'Rechercher':'Search')}<ArrowRight size={19}/></button>
         </form>
-        <div className={s.searchBottom}><div>{fr ? 'Envies du moment :' : 'Find your inspiration:'}{['Istanbul','Paris','Bali','Maldives'].map(name=><button type="button" key={name} onClick={()=>{setQuery(name);setMood('all');setLimit(6);destinationInput.current?.focus();}}>{name}</button>)}</div><p>{fr ? 'Tarifs et réservations bientôt disponibles' : 'Rates and booking coming soon'}</p></div>
+        {bookingError && <p role="alert" className={s.searchError}>{bookingError}</p>}
+        {worldwideUrl && <p className={s.worldwideSearch}><a href={worldwideUrl} rel="sponsored noopener noreferrer" target="_blank">{fr?'Toutes les destinations dans le moteur Nuitée':'All destinations in the Nuitée engine'} ↗</a><span>{fr?'Bosphoras peut percevoir une commission.':'Bosphoras may earn a commission.'}</span></p>}
+        <div className={s.searchBottom}><div>{fr ? 'Envies du moment :' : 'Find your inspiration:'}{['Istanbul','Paris','Bali','Maldives'].map(name=><button type="button" key={name} onClick={()=>{setQuery(name);setMood('all');setLimit(6);destinationInput.current?.focus();}}>{name}</button>)}</div><div className={s.searchActions}><button type="button" onClick={exploreGuides}>{fr?'Explorer nos guides':'Explore our guides'}<ArrowRight size={13}/></button><p>{bookingReady ? (fr?'Réservation et assistance : Nuitée':'Booking and support: Nuitée') : (fr?'Réservations en cours d’ouverture':'Booking opening soon')}</p></div></div>
       </div>
     </div>
 

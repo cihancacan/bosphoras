@@ -59,17 +59,7 @@ export function EditorialHotelCard({ hotel, index, locale }: EditorialHotelCardP
         <Link href={fr ? '/travel/hotels/istanbul/' + hotel.id : '/en/travel/hotels/istanbul/' + hotel.id} className="mt-7 inline-flex w-fit bg-[#142d39] px-5 py-3 text-sm font-semibold text-[#f9f4e7] hover:bg-[#285063] focus-visible:outline-2 focus-visible:outline-offset-4">
           {fr ? 'Découvrir la fiche de cet hôtel' : 'Explore this hotel profile'} →
         </Link>
-        <a
-          href={hotel.officialUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-7 w-fit underline underline-offset-4 text-[#8d6836] hover:text-[#162d39] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#8d6836] font-semibold text-sm"
-          aria-label={fr ? `Informations officielles sur ${hotel.name} (nouvel onglet)` : `Official information about ${hotel.name} (opens in a new tab)`}
-        >
-          {fr ? 'Voir le site officiel de l’hôtel' : 'Visit the official hotel website'}
-          <span aria-hidden="true"> ↗</span>
-        </a>
-        <HotelPartnerBooking hotelKey={hotelPartnerKey('istanbul', hotel.id)} locale={locale} />
+        <HotelPartnerBooking hotelKey={hotelPartnerKey('istanbul', hotel.id)} locale={locale} officialUrl={hotel.officialUrl} hotelName={hotel.name} />
       </div>
     </article>
   );

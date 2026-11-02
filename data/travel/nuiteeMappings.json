@@ -1,0 +1,144 @@
+{
+  "destinations": [
+    {
+      "key": "istanbul",
+      "placeId": "ChIJawhoAASnyhQR0LABvJj-zOE",
+      "displayName": "Istanbul",
+      "matchEvidence": "Supplier autocomplete and listing checked 2026-10-30: Istanbul, Türkiye"
+    },
+    {
+      "key": "paris",
+      "placeId": "ChIJD7fiBh9u5kcRYJSMaMOCCwQ",
+      "displayName": "Paris",
+      "matchEvidence": "Supplier autocomplete Paris, France and named listing checked 2026-11-02"
+    },
+    {
+      "key": "bali",
+      "placeId": "ChIJoQ8Q6NNB0S0RkOYkS7EPkSQ",
+      "displayName": "Bali",
+      "matchEvidence": "Supplier autocomplete Bali, Indonésie and named listing checked 2026-11-02"
+    },
+    {
+      "key": "maldives",
+      "placeId": "ChIJvXv7qr-ZtSQRiWKVgeEJRUE",
+      "displayName": "Maldives",
+      "matchEvidence": "Supplier country autocomplete Maldives and named listing checked 2026-11-02"
+    },
+    {
+      "key": "dubai",
+      "placeId": "ChIJRcbZaklDXz4RYlEphFBu5r0",
+      "displayName": "Dubai",
+      "matchEvidence": "Supplier autocomplete Dubaï, Émirats arabes unis and named listing checked 2026-11-02"
+    }
+  ],
+  "hotels": [
+    {
+      "destination": "istanbul",
+      "editorialKeys": [
+        "istanbul:peninsula",
+        "istanbul:https://www.peninsula.com/en/istanbul/5-star-luxury-hotel-bosphorus"
+      ],
+      "hotelId": "lp6558f17c",
+      "name": "The Peninsula Istanbul",
+      "address": "Karakoy, Kemankes Karamustafapasa Mah., Kemankes Caddesi N 34, Beyoglu, Istanbul, TR",
+      "matchEvidence": "Supplier title and address verified 2026-11-02: The Peninsula Istanbul; Karakoy, Kemankes Karamustafapasa Mah., Kemankes Caddesi N 34, Beyoglu, Istanbul, TR. Editorial identity: data/travel/istanbulFlagship.ts:peninsula",
+      "deepLinkEvidence": "Supplier direct hotel page title and address verified 2026-11-02"
+    },
+    {
+      "destination": "istanbul",
+      "editorialKeys": [
+        "istanbul:ciragan",
+        "istanbul:https://www.kempinski.com/en/ciragan-palace/overview/hotel-information/our-hotel"
+      ],
+      "hotelId": "lp85821",
+      "name": "Çırağan Palace Kempinski Istanbul",
+      "address": "Çırağan Caddesi 32, Istanbul",
+      "matchEvidence": "Supplier title and address verified 2026-11-02: Çırağan Palace Kempinski Istanbul; Çırağan Caddesi 32, Istanbul. Editorial identity: data/travel/istanbulFlagship.ts:ciragan",
+      "deepLinkEvidence": "Supplier direct page title and Çırağan Caddesi address checked 2026-11-02"
+    },
+    {
+      "destination": "istanbul",
+      "editorialKeys": [
+        "istanbul:four-seasons-bosphorus",
+        "istanbul:https://www.fourseasons.com/bosphorus/"
+      ],
+      "hotelId": "lp547d3",
+      "name": "Four Seasons Hotel Istanbul at the Bosphorus",
+      "address": "Ciragan Cad. No:28, Besiktas, Istanbul",
+      "matchEvidence": "Supplier title and address verified 2026-11-02: Four Seasons Hotel Istanbul at the Bosphorus; Ciragan Cad. No:28, Besiktas, Istanbul. Editorial identity: data/travel/istanbulFlagship.ts:four-seasons-bosphorus",
+      "deepLinkEvidence": "Supplier direct hotel page title and Bosphorus location checked 2026-11-02"
+    },
+    {
+      "destination": "istanbul",
+      "editorialKeys": [
+        "istanbul:mandarin-oriental",
+        "istanbul:https://www.mandarinoriental.com/en/istanbul/bosphorus"
+      ],
+      "hotelId": "lp6556e28f",
+      "name": "Mandarin Oriental Bosphorus, Istanbul",
+      "address": "Kurucesme Mah. Muallim Naci Caddesi No:62 Besiktas, Istanbul",
+      "matchEvidence": "Supplier title and address verified 2026-11-02: Mandarin Oriental Bosphorus, Istanbul; Kurucesme Mah. Muallim Naci Caddesi No:62 Besiktas, Istanbul. Editorial identity: data/travel/istanbulFlagship.ts:mandarin-oriental",
+      "deepLinkEvidence": "Supplier direct hotel page title and Kurucesme address checked 2026-11-02"
+    },
+    {
+      "destination": "istanbul",
+      "editorialKeys": [
+        "istanbul:four-seasons-sultanahmet",
+        "istanbul:https://www.fourseasons.com/istanbul/"
+      ],
+      "hotelId": "lp1e09b",
+      "name": "Four Seasons Hotel Istanbul at Sultanahmet",
+      "address": "Tevkifhane Sok., No:1, Sultanahmet, Istanbul",
+      "matchEvidence": "Supplier title and address verified 2026-11-02: Four Seasons Hotel Istanbul at Sultanahmet; Tevkifhane Sok., No:1, Sultanahmet, Istanbul. Editorial identity: data/travel/istanbulFlagship.ts:four-seasons-sultanahmet",
+      "deepLinkEvidence": "Supplier direct hotel title and Sultanahmet address checked 2026-11-02"
+    },
+    {
+      "destination": "istanbul",
+      "editorialKeys": [
+        "istanbul:shangri-la",
+        "istanbul:https://www.shangri-la.com/istanbul/shangrila/"
+      ],
+      "hotelId": "lp69fa3",
+      "name": "Shangri-La Bosphorus, Istanbul",
+      "address": "Sinan Pasa Mah. Hayrettin Iskelesi Sok. No:1 Besiktas, Istanbul",
+      "matchEvidence": "Supplier title and address verified 2026-11-02: Shangri-La Bosphorus, Istanbul; Sinan Pasa Mah. Hayrettin Iskelesi Sok. No:1 Besiktas, Istanbul. Editorial identity: data/travel/istanbulFlagship.ts:shangri-la",
+      "deepLinkEvidence": "Supplier direct hotel page title and Besiktas address checked 2026-11-02"
+    },
+    {
+      "destination": "istanbul",
+      "editorialKeys": [
+        "istanbul:raffles",
+        "istanbul:https://www.raffles.com/istanbul/"
+      ],
+      "hotelId": "lp71a80",
+      "name": "Raffles Istanbul",
+      "address": "Zorlu Center Besiktas, Istanbul",
+      "matchEvidence": "Supplier title and address verified 2026-11-02: Raffles Istanbul; Zorlu Center Besiktas, Istanbul. Editorial identity: data/travel/istanbulFlagship.ts:raffles",
+      "deepLinkEvidence": "Supplier direct hotel page title and Zorlu Center address checked 2026-11-02"
+    },
+    {
+      "destination": "istanbul",
+      "editorialKeys": [
+        "istanbul:st-regis",
+        "istanbul:https://www.marriott.com/en-us/hotels/istxr-the-st-regis-istanbul/overview/"
+      ],
+      "hotelId": "lp791b8",
+      "name": "The St. Regis Istanbul",
+      "address": "Mim Kemal Oke Caddesi No:35 Nisantasi, Istanbul",
+      "matchEvidence": "Supplier title and address verified 2026-11-02: The St. Regis Istanbul; Mim Kemal Oke Caddesi No:35 Nisantasi, Istanbul. Editorial identity: data/travel/istanbulFlagship.ts:st-regis",
+      "deepLinkEvidence": "Supplier direct page title and Nisantasi address checked 2026-11-02"
+    },
+    {
+      "destination": "istanbul",
+      "editorialKeys": [
+        "istanbul:ritz-carlton",
+        "istanbul:https://www.ritzcarlton.com/en/hotels/istrz-the-ritz-carlton-istanbul/overview/"
+      ],
+      "hotelId": "lp2f170",
+      "name": "The Ritz-Carlton, Istanbul",
+      "address": "Suzer Plaza, Askerocagi Caddesi, No:6, Elmadag/Sisli, Istanbul",
+      "matchEvidence": "Supplier title and address verified 2026-11-02: The Ritz-Carlton, Istanbul; Suzer Plaza, Askerocagi Caddesi, No:6, Elmadag/Sisli, Istanbul. Editorial identity: data/travel/istanbulFlagship.ts:ritz-carlton",
+      "deepLinkEvidence": "Supplier direct page title and Suzer Plaza address checked 2026-11-02; exact-name entry selected from two same-address suggestions"
+    }
+  ]
+}

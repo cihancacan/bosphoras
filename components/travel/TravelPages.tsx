@@ -34,7 +34,7 @@ import {sanMiguelDeAllendeDraftFaq} from '@/data/travel/sanMiguelDeAllendeDraftF
 import {sanMiguelSchemaSafePhotos} from '@/data/travel/sanMiguelDeAllendePremiumEditorial';
 import Link from 'next/link';
 import Image from 'next/image';
-import { isHotelSearchPreview } from '@/lib/travel/hotelSearchPreview';
+import { isHotelSearchAvailable } from '@/lib/travel/hotelSearchPreview';
 import { travelEditorial } from '@/data/travel/editorial';
 import { IstanbulFlagship } from '@/components/travel/IstanbulFlagship';
 import { FeaturedCityGuide } from '@/components/travel/FeaturedCityGuide';
@@ -282,7 +282,7 @@ export function Header({ locale, slug, limitedLocales = false }: { locale: Trave
         BOSPHORAS <span className="text-[#cdb37b]">LUXURY STAYS</span>
       </Link>
       <nav aria-label="Travel primary navigation" className="flex gap-4 sm:gap-6 text-xs sm:text-sm flex-wrap items-center">
-        {(locale === 'fr' || locale === 'en') && isHotelSearchPreview() && <Link href={travelHref(locale,'search')} className="text-[#e7c78a]">{locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel'}</Link>}
+        {(locale === 'fr' || locale === 'en') && isHotelSearchAvailable() && <Link href={travelHref(locale,'search')} className="text-[#e7c78a]">{locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel'}</Link>}
         <Link href={travelHref(locale,'destinations')} className="hover:text-[#e7c78a]">{t.destinations}</Link>
         <Link href={travelHref(locale,'last-minute')} className="hover:text-[#e7c78a]">{t.lastMinute}</Link>
         <Link href={travelHref(locale,'private-collection')} className="hover:text-[#e7c78a]">{t.privateCollection}</Link>

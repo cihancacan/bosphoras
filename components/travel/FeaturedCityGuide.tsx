@@ -323,11 +323,7 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
         <p className="mt-6 border-l-2 border-[#b18c55] pl-4 text-sm leading-7 text-[#53636c]">
           <strong>{fr?'Avant de réserver : ':'Before booking: '}</strong>{fr?hotel.frWatch:hotel.enWatch}
         </p>
-        <a href={hotel.officialUrl} rel="noopener noreferrer" target="_blank"
-          className="mt-auto pt-8 text-sm font-semibold text-[#855f2e] underline underline-offset-4">
-          {fr?'Consulter le site officiel':'Visit the official hotel website'} ↗
-        </a>
-        <HotelPartnerBooking hotelKey={hotelPartnerKey(guide.slug, hotel.officialUrl)} locale={locale} />
+        <HotelPartnerBooking hotelKey={hotelPartnerKey(guide.slug, hotel.officialUrl)} locale={locale} officialUrl={hotel.officialUrl} hotelName={hotel.name} />
       </article>)}
     </div>
     <p className="mt-7 text-sm leading-7 text-[#667078]">{fr

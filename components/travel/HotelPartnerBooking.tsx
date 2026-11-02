@@ -1,10 +1,13 @@
 import { getHotelPartnerLinks, hotelProviders } from '@/lib/travel/hotelPartners';
-import { isHotelSearchPreview } from '@/lib/travel/hotelSearchPreview';
+import Link from 'next/link';
+import { travelHref } from '@/lib/travel/i18n';
+import { getNuiteeHotelLinks, isNuiteeBookingLive } from '@/lib/travel/nuiteeLaunch';
 
 /** Referral only: no price, availability, checkout, guest form or booking API. */
-export function HotelPartnerBooking({ hotelKey, locale }: { hotelKey: string; locale: 'fr' | 'en' }) {
+export function HotelPartnerBooking({ hotelKey, locale, officialUrl, hotelName }: { hotelKey: string; locale: 'fr' | 'en'; officialUrl?: string; hotelName?: string }) {
   const fr = locale === 'fr';
-  const links = getHotelPartnerLinks(hotelKey);
+  const links = [...getNuiteeHotelLinks(hotelKey, locale), ...getHotelPartnerLinks(hotelKey)];
+  const bookingLive = isNuiteeBookingLive();
   return <section className="mt-7 border-t border-[#e0d4c2] pt-6" aria-label={fr ? 'Réservation auprès d’un partenaire' : 'Book with a partner'}>
     <h3 className="font-serif text-xl">{fr ? 'Réserver auprès d’un partenaire' : 'Book with a partner'}</h3>
     {links.length > 0 ? <>
@@ -15,13 +18,13 @@ export function HotelPartnerBooking({ hotelKey, locale }: { hotelKey: string; lo
         <a href={link.url} target="_blank" rel="sponsored noopener noreferrer"
           className="inline-flex bg-[#142d39] px-5 py-3 text-sm font-semibold text-white hover:bg-[#285063] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">
           {hotelProviders.find(provider => provider.id === link.providerId)?.mode === 'supplier-hosted'
-            ? (fr ? 'Réserver avec Bosphoras' : 'Book with Bosphoras')
+            ? (fr ? 'Voir les tarifs et réserver' : 'Check rates and book')
             : (fr ? `Voir les offres sur ${link.bookingBrand}` : `View offers on ${link.bookingBrand}`)} ↗
           <span className="sr-only">{fr ? ' (nouvel onglet)' : ' (opens in a new tab)'}</span>
         </a>
         <p className="mt-2 text-xs leading-6 text-[#52616c]">
           {fr ? `Réservation et assistance : ${link.sellerLegalName}. ` : `Booking and support: ${link.sellerLegalName}. `}
-          <a href={link.termsUrl} target="_blank" rel="noopener noreferrer" className="underline">{fr ? 'Conditions du partenaire' : 'Partner terms'} ↗</a>
+          <a href={link.termsUrl} target="_blank" rel="noopener noreferrer" className="underline">{fr ? 'Conditions dans le moteur du partenaire' : 'Terms in the partner booking engine'} ↗</a>
           {' · '}<a href={link.supportUrl} target="_blank" rel="noopener noreferrer" className="underline">{fr ? 'SAV du partenaire' : 'Partner support'} ↗</a>
         </p>
       </li>)}</ul>
@@ -31,14 +34,9 @@ export function HotelPartnerBooking({ hotelKey, locale }: { hotelKey: string; lo
     </> : <p className="mt-3 text-sm leading-7 text-[#52616c]">{fr
       ? 'Aucun lien de réservation partenaire vérifié n’est disponible pour cet hôtel pour le moment. Le site officiel reste consultable.'
       : 'No verified partner booking link is currently available for this hotel. You can still visit its official website.'}</p>}
-    {links.length === 0 && isHotelSearchPreview() && <div className="mt-4 rounded-lg border border-[#e0d4c2] bg-[#faf7f1] p-4">
-      <p className="text-xs font-semibold text-[#52616c]">{fr ? 'Aperçu des options à venir · réservations désactivées' : 'Upcoming options preview · bookings disabled'}</p>
-      <div className="mt-3 flex flex-wrap gap-3">
-        <button type="button" disabled className="rounded border border-[#142d39]/30 bg-[#142d39]/10 px-4 py-3 text-sm text-[#52616c]">{fr ? 'Réserver avec Bosphoras' : 'Book with Bosphoras'}</button>
-        <button type="button" disabled className="rounded border border-[#142d39]/30 px-4 py-3 text-sm text-[#52616c]">{fr ? 'Voir sur Expedia' : 'View on Expedia'}</button>
-      </div>
-      <p className="mt-3 text-xs leading-6 text-[#52616c]">{fr ? 'Parcours Bosphoras prévu avec Nuitée. Chaque option sera proposée après validation du fournisseur et du lien de cet hôtel.' : 'Bosphoras booking is planned with Nuitée. Each option will be offered after the supplier and this hotel’s link are verified.'}</p>
-    </div>}
+    {links.length===0 && bookingLive && <Link href={travelHref(locale,'search')} className="mt-4 inline-flex bg-[#142d39] px-5 py-3 text-sm font-semibold text-white hover:bg-[#285063]">{fr?'Rechercher d’autres hôtels':'Search other hotels'} →</Link>}
+    {officialUrl && <p className="mt-4 text-xs text-[#52616c]"><a href={officialUrl} target="_blank" rel="noopener noreferrer" aria-label={fr ? `Informations officielles${hotelName ? ` sur ${hotelName}` : ""} (nouvel onglet)` : `Official information${hotelName ? ` about ${hotelName}` : ""} (opens in a new tab)`} className="underline underline-offset-4">{fr?'Informations sur le site officiel de l’hôtel':'Information on the hotel’s official website'} ↗</a></p>}
+
     <p className="mt-3 text-xs leading-6 text-[#52616c]">{fr
       ? 'Bosphoras est un guide et un apporteur d’affaires. Bosphoras ne vend pas les séjours, n’encaisse pas leur paiement et n’assure pas leur SAV.'
       : 'Bosphoras is a guide and referral service. Bosphoras does not sell stays, collect their payment or provide after-sales support for them.'}</p>

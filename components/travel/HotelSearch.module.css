@@ -1078,3 +1078,12 @@
     scroll-behavior:auto;
   }
 }
+
+.roomHint { display:block; margin-top:4px; font-size:10px; font-weight:400; color:#65716c; }
+.addRoom { display:flex; align-items:center; gap:7px; margin:14px 0 20px; color:var(--ink); font-size:12px; }
+.searchError { margin:16px 24px 0; color:#893d2f; font-size:13px; line-height:1.7; }
+.searchActions { display:flex; flex-wrap:wrap; align-items:center; justify-content:flex-end; gap:12px; }
+.searchActions > button { display:inline-flex; align-items:center; gap:7px; font-size:11px; }
+.worldwideSearch { display:flex; flex-wrap:wrap; gap:10px; margin:15px 24px 0; font-size:11px; line-height:1.8; }
+.worldwideSearch a { text-decoration:underline; text-underline-offset:3px; }
+.worldwideSearch span { color:#68736d; }

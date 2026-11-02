@@ -27,7 +27,7 @@ export type NuiteeSearchConnection = {
   destinations: readonly { key: string; placeId: string; displayName: string; matchEvidence: string }[];
 };
 
-// LAS-3651 remains in triage. No commercial handoff is configured or exposed.
+// Standalone calls have no default account. Runtime launch supplies a qualified connection.
 export const nuiteeSearchConnection: NuiteeSearchConnection | null = null;
 
 type Handoff = { status: 'blocked'; reason: 'qualification' | 'destination' | 'dates' | 'occupancy' | 'locale' }
