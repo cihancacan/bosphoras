@@ -2,7 +2,10 @@ import { hotelProviders, supplierResponsibilities, type HotelProvider } from './
 
 /** Search context only: never accept names, emails, payment data or checkout tokens. */
 export type NuiteeSearchRequest = {
-  destinationKey: string;
+  destinationKey?: string;
+  /** Place returned by the official search widget; resolved by the supplier. */
+  placeId?: string;
+  displayName?: string;
   checkin: string;
   checkout: string;
   locale: 'fr' | 'en';
@@ -70,8 +73,12 @@ export function getNuiteeSearchHandoff(
       !Number.isFinite(verified) || !Number.isFinite(review) || verified > now || review <= now || review <= verified) return blocked;
 
   const matches = connection.destinations.filter(item => item.key === request.destinationKey);
-  if (matches.length !== 1 || !matches[0].matchEvidence.trim() || !matches[0].displayName.trim() ||
-      !/^[a-zA-Z0-9_-]+$/.test(matches[0].placeId)) {
+  const destination = request.destinationKey
+    ? (matches.length === 1 && matches[0].matchEvidence.trim() ? matches[0] : null)
+    : { placeId: request.placeId, displayName: request.displayName };
+  if (!destination || typeof destination.placeId !== 'string' || !/^[a-zA-Z0-9_-]{1,255}$/.test(destination.placeId) ||
+      typeof destination.displayName !== 'string' || !destination.displayName.trim() || destination.displayName.length > 200 ||
+      /[\u0000-\u001f\u007f]/.test(destination.displayName) || (request.destinationKey && (request.placeId || request.displayName))) {
     return { status: 'blocked', reason: 'destination' };
   }
   if (!validDay(request.checkin) || !validDay(request.checkout) || request.checkout <= request.checkin ||
@@ -85,9 +92,9 @@ export function getNuiteeSearchHandoff(
 
   // Only the documented listing route and parameters. No arbitrary query passthrough.
   const url = new URL('/hotels', origin);
-  url.searchParams.set('placeId', matches[0].placeId);
+  url.searchParams.set('placeId', destination.placeId);
   // The account's own search form also sends name; without it the search header is blank.
-  url.searchParams.set('name', matches[0].displayName);
+  url.searchParams.set('name', destination.displayName);
   url.searchParams.set('checkin', request.checkin);
   url.searchParams.set('checkout', request.checkout);
   // Keep the account UI's summary parameters consistent with the exact occupancies.

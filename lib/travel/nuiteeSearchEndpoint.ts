@@ -16,9 +16,11 @@ export async function handleNuiteeSearch(request: Request): Promise<Response> {
   } catch { return json({ code: 'INVALID_SEARCH' }, 400); }
   if (!data || typeof data !== 'object' || Array.isArray(data)) return json({ code: 'INVALID_SEARCH' }, 400);
   const input = data as Record<string, unknown>;
-  const fields = ['destinationKey', 'checkin', 'checkout', 'locale', 'rooms'];
+  const fields = ['destinationKey', 'placeId', 'displayName', 'checkin', 'checkout', 'locale', 'rooms'];
   if (Object.keys(input).some(key => !fields.includes(key)) ||
-    !fields.slice(0, 4).every(key => typeof input[key] === 'string') || !Array.isArray(input.rooms) ||
+    !['checkin', 'checkout', 'locale'].every(key => typeof input[key] === 'string') ||
+    (input.destinationKey !== undefined ? typeof input.destinationKey !== 'string' || input.placeId !== undefined || input.displayName !== undefined
+      : typeof input.placeId !== 'string' || typeof input.displayName !== 'string') || !Array.isArray(input.rooms) ||
     input.rooms.some(room => !room || typeof room !== 'object' || Array.isArray(room) ||
       Object.keys(room).some(key => key !== 'adults' && key !== 'children'))) return json({ code: 'INVALID_SEARCH' }, 400);
   const handoff = getNuiteeSearchHandoff(input as unknown as NuiteeSearchRequest, connection, getNuiteeProviders());

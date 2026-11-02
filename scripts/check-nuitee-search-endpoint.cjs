@@ -8,6 +8,9 @@ const request = {destinationKey:'fixture-city',checkin:'2099-01-10',checkout:'20
 const post = body => new Request('https://bosphoras.example.invalid/api/travel/booking/search', {method:'POST',body:JSON.stringify(body)});
 
 test('unactivated account exposes neither a booking URL nor the production search page', async () => {
+  const saved=launch.nuiteeLaunch.productionVerifiedAt;
+  launch.nuiteeLaunch.productionVerifiedAt='';
+  try {
   assert.equal(launch.isNuiteeBookingLive(), false);
   assert.equal(launch.getNuiteeSearchConnection(), null);
   assert.deepEqual(launch.getNuiteeHotelLinks('istanbul:peninsula','fr'), []);
@@ -16,20 +19,24 @@ test('unactivated account exposes neither a booking URL nor the production searc
   assert.equal(response.status, 503);
   assert.equal(response.headers.get('cache-control'), 'no-store');
   assert.deepEqual(await response.json(), {code:'BOOKING_NOT_OPEN'});
+  } finally {launch.nuiteeLaunch.productionVerifiedAt=saved;}
 });
 
 test('private review access remains confined to the approved branch', () => {
+  const saved=launch.nuiteeLaunch.productionVerifiedAt;launch.nuiteeLaunch.productionVerifiedAt='';
+  try {
   assert.equal(isHotelSearchAvailable({VERCEL_ENV:'preview',VERCEL_GIT_COMMIT_REF:'feature/luxury-travel-seo-destinations-20261012'}), true);
   assert.equal(isHotelSearchAvailable({VERCEL_ENV:'preview',VERCEL_GIT_COMMIT_REF:'other'}), false);
+  } finally {launch.nuiteeLaunch.productionVerifiedAt=saved;}
 });
 
-test('launch requires card clarification, attribution and verified production, not merely owner consent', () => {
+test('launch requires supplier payment model, attribution and verified production, not merely owner consent', () => {
   const original = {...launch.nuiteeLaunch};
   const now = Date.parse('2026-11-02T12:00:00Z');
   try {
-    Object.assign(launch.nuiteeLaunch, {productionVerifiedAt:'2026-11-02T11:00:00Z',cardClarificationReference:'fixture-card-confirmation',attributionEvidence:'fixture-dashboard-evidence'});
+    Object.assign(launch.nuiteeLaunch, {productionVerifiedAt:'2026-11-02T11:00:00Z',paymentModelReference:'fixture-supplier-payment-confirmation',attributionEvidence:'fixture-dashboard-evidence'});
     assert.equal(launch.isNuiteeBookingLive(now), true);
-    for (const key of ['cardClarificationReference','attributionEvidence','productionVerifiedAt','ownerApprovalReference']) {
+    for (const key of ['paymentModelReference','attributionEvidence','productionVerifiedAt','ownerApprovalReference']) {
       const value=launch.nuiteeLaunch[key]; launch.nuiteeLaunch[key]='';
       assert.equal(launch.isNuiteeBookingLive(now), false, key); launch.nuiteeLaunch[key]=value;
     }
@@ -43,7 +50,7 @@ test('verified Istanbul mappings resolve both editorial keys to the same exact h
   const original={...launch.nuiteeLaunch};
   const now=Date.parse('2026-11-02T12:00:00Z');
   try {
-    Object.assign(launch.nuiteeLaunch,{productionVerifiedAt:'2026-11-02T11:00:00Z',cardClarificationReference:'fixture-card-confirmation',attributionEvidence:'fixture-dashboard-evidence'});
+    Object.assign(launch.nuiteeLaunch,{productionVerifiedAt:'2026-11-02T11:00:00Z',paymentModelReference:'fixture-payment-confirmation',attributionEvidence:'fixture-dashboard-evidence'});
     assert.equal(mappings.hotels.length,istanbulHotels.length);
     assert.equal(new Set(mappings.hotels.map(h=>h.hotelId)).size,mappings.hotels.length);
     for (const hotel of istanbulHotels) {
@@ -90,5 +97,43 @@ test('HTTP boundary rejects malformed data, destination injection, personal data
     assert.equal(url.searchParams.get('checkin'),request.checkin);
     assert.equal(url.searchParams.get('clientReference'),'fixture_search');
     assert(!url.searchParams.has('offerId'));assert(!url.searchParams.has('email'));
+    const worldwide={...request,destinationKey:undefined,placeId:'ChIJ-fixture-worldwide',displayName:'Ville, Région & pays'};
+    const worldResponse=await handleNuiteeSearch(post(worldwide));
+    assert.equal(worldResponse.status,200);
+    const worldwideUrl=new URL((await worldResponse.json()).url);
+    assert.equal(worldwideUrl.origin,connection.origin);
+    assert.equal(worldwideUrl.searchParams.get('placeId'),worldwide.placeId);
+    assert.equal(worldwideUrl.searchParams.get('name'),worldwide.displayName);
+    const grouped={...worldwide,rooms:[{adults:3,children:[],rooms:2}]};
+    const groupedResponse=await handleNuiteeSearch(post(grouped));
+    assert.equal(groupedResponse.status,400);
+    const allocated={...worldwide,rooms:[{adults:2,children:[]},{adults:1,children:[]}]};
+    const allocatedResponse=await handleNuiteeSearch(post(allocated));
+    assert.equal(allocatedResponse.status,200);
+    const allocatedUrl=new URL((await allocatedResponse.json()).url);
+    assert.equal(allocatedUrl.searchParams.get('rooms'),'2');
+    assert.equal(allocatedUrl.searchParams.get('adults'),'3');
+    assert.deepEqual(JSON.parse(atob(allocatedUrl.searchParams.get('occupancies'))),allocated.rooms);
+    for(const rooms of [[{adults:2,children:[],rooms:3}], [{adults:8,children:[],rooms:7}], [{adults:4,children:[],rooms:2.5}]]) {
+      assert.equal((await handleNuiteeSearch(post({...worldwide,rooms}))).status,400);
+    }
+    for(const invalid of [{...worldwide,placeId:'https://evil.invalid'}, {...worldwide,displayName:'bad\nname'}, {...worldwide,displayName:'x'.repeat(201)}, {...worldwide,destinationKey:'fixture-city'}]) {
+      assert.equal((await handleNuiteeSearch(post(invalid))).status,400);
+    }
   } finally {launch.getNuiteeSearchConnection=originalConnection;launch.getNuiteeProviders=originalProviders;}
+});
+
+test('booking-page prefill accepts only exact mapped hotels or destinations', () => {
+  const now=Date.parse('2026-11-03T00:00:00Z');
+  assert.equal(launch.isNuiteeBookingLive(now),true);
+  const hotel=new URL(launch.getNuiteeReservationStart('fr',{hotel:'lp6558f17c'},now));
+  assert.equal(hotel.origin,launch.nuiteeLaunch.origin);
+  assert.equal(hotel.pathname,'/hotels/lp6558f17c');
+  assert.equal(hotel.searchParams.get('clientReference'),'bosphoras_istanbul_lp6558f17c');
+  const destination=new URL(launch.getNuiteeReservationStart('en',{destination:'paris'},now));
+  assert.equal(destination.pathname,'/hotels');
+  assert.equal(destination.searchParams.get('language'),'en');
+  for(const selection of [{hotel:'lp-unknown'}, {hotel:'https://evil.invalid'}, {destination:'unknown'}, {destination:'../booking'}]) {
+    assert.equal(launch.getNuiteeReservationStart('fr',selection,now),null);
+  }
 });

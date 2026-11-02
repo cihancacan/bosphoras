@@ -1,5 +1,5 @@
-import { HotelSearchPreparationPage, hotelSearchMetadata } from '@/components/travel/HotelSearchPreparationPage';
+import { HotelSearchPreparationPage, hotelSearchMetadata, type HotelSearchParams } from '@/components/travel/HotelSearchPreparationPage';
 
 export const dynamic = 'force-dynamic';
 export const metadata = hotelSearchMetadata('fr');
-export default function Page() { return <HotelSearchPreparationPage locale="fr" />; }
+export default function Page({ searchParams }: { searchParams: HotelSearchParams }) { return <HotelSearchPreparationPage locale="fr" searchParams={searchParams} />; }

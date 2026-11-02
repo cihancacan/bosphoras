@@ -11,10 +11,9 @@ export const nuiteeLaunch = {
   agreementReference: 'LAS-3651: Lina Elkhettar reply, 2026-11-02; Connect terms 2025-09-12',
   mappingPermissionReference: 'LAS-3651: explicit permission for editorial hotel and destination links, 2026-11-02',
   ownerApprovalReference: 'Owner requested real commercial launch, 2026-11-02',
-  // Step 4 is awaiting clarification of the account-card charging mandate.
-  productionVerifiedAt: '',
-  cardClarificationReference: '',
-  attributionEvidence: '',
+  productionVerifiedAt: '2026-11-02T18:20:00Z',
+  paymentModelReference: 'LAS-3651: supplier-hosted Whitelabel MoR and traveler support confirmed; owner completed required card onboarding and requested connection, 2026-11-02. Bosphoras makes no booking/payment API calls.',
+  attributionEvidence: 'Account-owned host verified in Connect and live site. Rome search 2026-11-05/06 through official widget: clientReference=bosphoras_search persists on supplier listing and hotel page, with supplier session/tracking IDs. LAS-3651 confirms the method; no completed sale or payout tested.',
   verifiedAt: '2026-11-02T00:00:00Z',
   reviewBy: '2026-12-02T00:00:00Z',
 };
@@ -25,7 +24,7 @@ export function isNuiteeBookingLive(now = Date.now()): boolean {
   if (origin.protocol !== 'https:' || !bookingHosts.includes(origin.hostname) || origin.pathname !== '/' ||
       origin.search || origin.hash || origin.username || origin.password || (origin.port && origin.port !== '443')) return false;
   const production = Date.parse(nuiteeLaunch.productionVerifiedAt);
-  return Boolean(nuiteeLaunch.cardClarificationReference.trim() && nuiteeLaunch.attributionEvidence.trim() &&
+  return Boolean(nuiteeLaunch.paymentModelReference.trim() && nuiteeLaunch.attributionEvidence.trim() &&
     nuiteeLaunch.ownerApprovalReference.trim() && Number.isFinite(production) && production <= now &&
     Date.parse(nuiteeLaunch.verifiedAt) <= now && Date.parse(nuiteeLaunch.reviewBy) > now);
 }
@@ -49,6 +48,32 @@ export function getNuiteeWorldwideSearch(locale: 'fr' | 'en', now = Date.now()):
   url.searchParams.set('currency', 'EUR');
   url.searchParams.set('clientReference', 'bosphoras_worldwide');
   return url.toString();
+}
+
+/** Only mapped hotel IDs or verified destination keys may prefill the public page. */
+export function getNuiteeReservationStart(locale: 'fr' | 'en', selection: { hotel?: string; destination?: string } = {}, now = Date.now()): string | null {
+  if (!isNuiteeBookingLive(now)) return null;
+  if (selection.hotel) {
+    const hotel = mappings.hotels.find(item => item.hotelId === selection.hotel);
+    if (!hotel) return null;
+    const url = new URL(`/hotels/${hotel.hotelId}`, nuiteeLaunch.origin);
+    url.searchParams.set('language', locale);
+    url.searchParams.set('currency', 'EUR');
+    url.searchParams.set('clientReference', `bosphoras_${hotel.destination}_${hotel.hotelId}`);
+    return url.toString();
+  }
+  if (selection.destination) {
+    const destination = mappings.destinations.find(item => item.key === selection.destination);
+    if (!destination) return null;
+    const url = new URL('/hotels', nuiteeLaunch.origin);
+    url.searchParams.set('placeId', destination.placeId);
+    url.searchParams.set('name', destination.displayName);
+    url.searchParams.set('language', locale);
+    url.searchParams.set('currency', 'EUR');
+    url.searchParams.set('clientReference', 'bosphoras_destinations');
+    return url.toString();
+  }
+  return null;
 }
 
 export function getNuiteeSearchConnection(now = Date.now()): NuiteeSearchConnection | null {

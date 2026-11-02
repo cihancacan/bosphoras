@@ -91,12 +91,15 @@ test('search preparation is confined to local development and the approved Previ
 });
 
 test('FR/EN pages explain referral role without an unverified CTA, price or checkout', () => {
+  const launch=require('../lib/travel/nuiteeLaunch');const original=launch.isNuiteeBookingLive;launch.isNuiteeBookingLive=()=>false;
+  try {
   for (const locale of ['fr', 'en']) {
     const html = renderToStaticMarkup(React.createElement(HotelPartnerBooking, { hotelKey: link.hotelKey, locale }));
     assert(html.includes(locale === 'fr' ? 'Aucun lien de réservation partenaire vérifié' : 'No verified partner booking link'));
     assert(html.includes(locale === 'fr' ? 'n’assure pas leur SAV' : 'after-sales support'));
     assert(!/<a\b|<form\b|<input\b|sponsored|\bprice\b|\bavailability\b/.test(html));
   }
+  } finally {launch.isNuiteeBookingLive=original;}
 });
 
 test('verified handoff keeps issued URL, affiliate disclosure, supplier terms and support', () => {
