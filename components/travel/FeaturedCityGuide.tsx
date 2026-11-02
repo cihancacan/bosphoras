@@ -536,6 +536,32 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         </div>
       </div>
     </section>}
+    {city.slug==='singapore' && <section id="panoramas-singapore" className="scroll-mt-24 bg-[#e6ebe8] py-16 sm:py-24">
+      <div className="mx-auto max-w-7xl px-5">
+        <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Singapour · skyline, jardins et héritage':'Singapore · skyline, gardens and heritage'}</p>
+        <h2 className="mt-4 max-w-4xl font-serif text-3xl leading-tight sm:text-5xl">{fr?'De Marina Bay aux jardins tropicaux et aux quartiers historiques.':'From Marina Bay to tropical gardens and heritage quarters.'}</h2>
+        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Neuf photographies authentiques de Singapour, sourcées et attribuées. Il ne s’agit pas des vues garanties depuis les chambres.':'Nine sourced and credited photographs of real Singapore, not promised views from individual guest rooms.'}</p>
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {([
+            {key:'scene-1',frTitle:'Marina Bay en plein jour',enTitle:'Marina Bay in daylight'},
+            {key:'scene-4',frTitle:'La baie et le quartier civique',enTitle:'The bay and Civic District'},
+            {key:'scene-9',frTitle:'Les Supertrees des jardins',enTitle:'Gardens by the Bay Supertrees'},
+            {key:'scene-3',frTitle:'Cloud Forest',enTitle:'Cloud Forest'},
+            {key:'scene-7',frTitle:'Les maisons de Chinatown',enTitle:'Chinatown shophouses'},
+            {key:'scene-6',frTitle:'Kampong Gelam',enTitle:'Kampong Gelam'},
+            {key:'scene-5',frTitle:'Le jardin botanique',enTitle:'Singapore Botanic Gardens'},
+            {key:'scene-8',frTitle:'La promenade tropicale',enTitle:'Tropical gardens'},
+            {key:'scene-2',frTitle:'La baie illuminée',enTitle:'Marina Bay after dark'}
+          ] as const).map(entry=>{
+            const photo=city.photos[entry.key];
+            return photo && confirmedSingaporePreviewAssets.has(photo.src) && <article key={entry.key} className="bg-white p-4 shadow-sm sm:p-5">
+              <CityPhoto photo={photo} locale={locale}/>
+              <h3 className="mt-5 font-serif text-xl text-[#19323e]">{fr?entry.frTitle:entry.enTitle}</h3>
+            </article>;
+          })}
+        </div>
+      </div>
+    </section>}
     {city.slug==='phu-quoc' && <section id="panoramas-phu-quoc" className="scroll-mt-24 bg-[#e6eee9] py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Phu Quoc · paysages, plages et îlots':'Phu Quoc · beaches, coast and islands'}</p>
