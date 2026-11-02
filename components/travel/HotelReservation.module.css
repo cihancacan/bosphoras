@@ -21,8 +21,8 @@
 .widget{width:100%;min-width:0}
 .widget :global(.search-bar){width:100%!important;max-width:none!important;box-sizing:border-box!important;margin:0!important;box-shadow:none!important;border:0!important;border-radius:6px!important}
 .widget :global(.search-button){display:flex!important;align-items:center!important;min-width:142px!important;flex-shrink:0;padding:12px 18px!important;gap:10px;justify-content:center}
-.widget :global(.search-text){max-width:none!important;overflow:visible!important;white-space:nowrap}
-.widget :global(.search-button svg){position:static!important;transform:none!important;width:16px!important;flex:none!important}
+.widget :global(.search-text){display:block!important;position:static!important;width:auto!important;max-width:none!important;overflow:visible!important;white-space:nowrap;transform:none!important}
+.widget :global(.search-button svg){display:none!important}
 .widgetLoading{display:flex;align-items:center;gap:12px;padding:22px;font-size:14px}
 .widgetLoading:has(+ .widget:not(:empty)){display:none}
 .searchNote{display:flex;align-items:center;gap:8px;color:#e6e8e4;font-size:11px;line-height:1.6;margin:15px 0 0}
