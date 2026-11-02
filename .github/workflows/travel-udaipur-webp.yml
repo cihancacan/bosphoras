@@ -1,0 +1,74 @@
+name: Bosphoras Udaipur #76 — import optimized WebP photos
+on:
+  push:
+    branches:
+      - feature/luxury-travel-seo-destinations-20261012
+    paths:
+      - .github/workflows/travel-udaipur-webp.yml
+      - scripts/generate-udaipur-webp.py
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: travel-udaipur-webp-branch
+  cancel-in-progress: false
+jobs:
+  optimize-udaipur-reviewed-photos:
+    if: github.ref == 'refs/heads/feature/luxury-travel-seo-destinations-20261012'
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install image dependencies
+        run: python -m pip install --disable-pip-version-check 'Pillow>=10,<12' 'requests>=2.31,<3'
+      - name: Download exact 21 already visually reviewed original photos and convert to local WebP
+        run: python -u scripts/generate-udaipur-webp.py
+      - name: Strict WebP/size checks and no-public-rights guarantee
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          from PIL import Image
+          m=json.load(open('data/travel/udaipurMediaCandidates.json'))
+          d=json.load(open('data/travel/udaipurWebpOptimization.json'))
+          assert d['totalPhotos']==21 and d['landscapes']==9 and d['propertyPhotos']==12
+          assert not d['publicUseApproved'] and not m['publicUseApproved']
+          assert len({p['webpSha256'] for p in d['photos']})==21
+          for entry in d['photos']:
+              path=pathlib.Path('public'+entry['localPath'])
+              with Image.open(path) as im:
+                  assert im.format=='WEBP'
+                  assert im.width<=1280 and im.height<=850
+          print('UDAIPUR_WEBP_21_QA_SUCCESS')
+          PY
+      - name: Commit optimized local WebP files and optimization audit
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- public/images/travel/udaipur-premium data/travel/udaipurWebpOptimization.json
+          if ! git diff --cached --quiet; then
+            git commit -m "assets(travel): commit 21 authentic Udaipur optimized local WebP images [skip ci]"
+            for attempt in 1 2 3 4; do
+              git fetch origin feature/luxury-travel-seo-destinations-20261012
+              git rebase origin/feature/luxury-travel-seo-destinations-20261012
+              if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then
+                echo "Udaipur optimized WebP images committed to feature branch"
+                exit 0
+              fi
+              sleep 2
+            done
+            echo "GitHub write failed after 4 attempts" >&2
+            exit 1
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: udaipur-webp-optimization-audit
+          path: data/travel/udaipurWebpOptimization.json
+          if-no-files-found: ignore
