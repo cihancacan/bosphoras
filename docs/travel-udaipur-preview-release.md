@@ -25,3 +25,14 @@ Date: 2 November 2026. Feature branch `feature/luxury-travel-seo-destinations-20
 One single feature-branch Preview build tagged `[travel-batch-ready]`, all intermediate commits tagged `[skip ci]`, no production modifications. Verify deployed Vercel `READY`, actual HTTP 200 for the four routes, correct titles and noindex, and generate **temporary `_vercel_share` links** before reporting complete because Vercel Preview SSO blocks ordinary links.
 
 Next planned destination in the existing catalogue is Jaipur #77, but do not start before Udaipur's deployed QA completes.
+
+
+## Local WebP optimization completed — 2 November 2026
+
+- **21 physical WebP files committed to GitHub**, not merely `.webp` paths or remotely hosted JPEGs.
+- Nine licensed landscape files and exactly three locally optimized real-property photos per four hotels in `public/images/travel/udaipur-premium/`.
+- Original downloaded images total **5,079,728 bytes**; 21 optimized WebP images total **2,395,170 bytes**, **53% smaller overall** at quality 76, maximum 1280 × 850, original color/crop composition preserved. See `data/travel/udaipurWebpOptimization.json` for individual dimensions, SHA-256 and visual similarity proof.
+- Actual sources in `udaipurGuide.ts` and `udaipurPremiumEditorial.ts` now reference **local `/images/travel/udaipur-premium/...webp`** in both the photo galleries and credit/rights registry. `next.config.js` retains `images: { unoptimized: true }`; this is why physically stored WebP files are necessary and why the original external photos were not truly WebP.
+- Automated GitHub Actions image-import workflow `.github/workflows/travel-udaipur-webp.yml` completed successfully, storing real files in the feature branch with a no-build intermediate commit. Photo rights remain private noindex Preview only, commercial hotel permissions not independently confirmed.
+- Latest QA: `npm run typecheck` PASS; `node -r ./scripts/register-ts.cjs scripts/check-udaipur-local-webp.cjs` PASS with 21 physical RIFF/WEBP files and source/hash checks; `scripts/check-udaipur-final.cjs` PASS; `scripts/check-travel-catalogue.mjs` PASS.
+- Trigger a single new Preview deployment now. Validate all four routes return HTTP 200 and all 21 local images return actual Content-Type `image/webp` before declaring complete. Do not touch production.
