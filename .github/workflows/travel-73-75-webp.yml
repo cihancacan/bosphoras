@@ -20,8 +20,6 @@ jobs:
       max-parallel: 1
       matrix:
         include:
-          - slug: phu-quoc
-            stem: phuQuoc
           - slug: sentosa
             stem: sentosa
           - slug: singapore
