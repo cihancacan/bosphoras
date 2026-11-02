@@ -544,6 +544,32 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         </div>
       </div>
     </section>}
+    {city.slug==='udaipur' && <section id="panoramas-udaipur" className="scroll-mt-24 bg-[#e9eee9] py-16 sm:py-24">
+      <div className="mx-auto max-w-7xl px-5">
+        <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Rajasthan · Udaipur et ses lacs':'Rajasthan · Udaipur and the lakes'}</p>
+        <h2 className="mt-4 max-w-4xl font-serif text-3xl leading-tight sm:text-5xl">{fr?'Palais de marbre, ghats de Pichola et reliefs des Aravalli.':'Marble palaces, Pichola ghats and the Aravalli hills.'}</h2>
+        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Neuf photographies authentiques de la destination, sourcées et attribuées : ce ne sont ni des images d’une chambre précise ni des vues garanties.':'Nine sourced, credited photographs of actual Udaipur landmarks, not a guarantee of any specific room outlook.'}</p>
+        <div className="mt-10 grid gap-6 md:grid-cols-3">
+          {([
+            {key:'scene-1',frTitle:'Traversée de Pichola',enTitle:'Crossing Lake Pichola'},
+            {key:'scene-2',frTitle:'City Palace',enTitle:'City Palace'},
+            {key:'scene-3',frTitle:'Rive de Pichola',enTitle:'Lake Pichola shoreline'},
+            {key:'scene-4',frTitle:'Vieille ville sur le lac',enTitle:'Old town on the lake'},
+            {key:'scene-5',frTitle:'Architecture de Mewar',enTitle:'Mewar heritage'},
+            {key:'scene-6',frTitle:'Collines des Aravalli',enTitle:'Aravalli hills'},
+            {key:'scene-7',frTitle:'Balcons du palais',enTitle:'Palace balconies'},
+            {key:'scene-8',frTitle:'Cours et façades',enTitle:'Courtyards and facades'},
+            {key:'scene-9',frTitle:'Panorama d’Udaipur',enTitle:'Udaipur panorama'}
+          ] as const).map(entry=>{
+            const photo=city.photos[entry.key];
+            return photo && confirmedUdaipurPreviewAssets.has(photo.src) && <article key={entry.key} className="bg-white p-4 shadow-sm sm:p-5">
+              <CityPhoto photo={photo} locale={locale}/>
+              <h3 className="mt-5 font-serif text-xl text-[#19323e]">{fr?entry.frTitle:entry.enTitle}</h3>
+            </article>;
+          })}
+        </div>
+      </div>
+    </section>}
     {city.slug==='sentosa' && <section id="panoramas-sentosa" className="scroll-mt-24 bg-[#e5ece9] py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Sentosa · trois plages et deux histoires':'Sentosa · beaches, woods and heritage'}</p>
