@@ -80,8 +80,18 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
     } catch { setError(fr ? 'Veuillez vérifier les voyageurs et les chambres.' : 'Please check your guests and rooms.'); }
   }, [fr, submitSearch]);
 
+  const resetSearch = useCallback(() => {
+    if (initialUrl) { window.location.assign(travelHref(locale, 'search')); return; }
+    setBookingUrl(null);
+    setSummary('');
+    setPending(null);
+    setError('');
+    setLoaded(false);
+    setWidgetReady(false);
+  }, [initialUrl, locale]);
+
   useEffect(() => {
-    if (!sdkReady || !widget.current) return;
+    if (bookingUrl || !sdkReady || !widget.current) return;
     const sdk = (window as Window & { LiteAPI?: SearchSDK }).LiteAPI;
     if (!sdk?.SearchBar) { setError(fr ? 'Le moteur de recherche n’a pas pu être chargé.' : 'The search engine could not load.'); return; }
     widget.current.replaceChildren();
@@ -92,7 +102,7 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
     } catch { setError(fr ? 'Le moteur de recherche n’a pas pu être chargé.' : 'The search engine could not load.'); }
     const element = widget.current;
     return () => { element.replaceChildren(); };
-  }, [sdkReady, fr, locale, origin, search, widgetId]);
+  }, [sdkReady, fr, locale, origin, search, widgetId, bookingUrl]);
 
   useEffect(() => {
     if (bookingUrl && summary) results.current?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
@@ -100,12 +110,11 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
 
   return <>
     <Script src="https://components.liteapi.travel/v1.0/sdk.umd.js" strategy="afterInteractive" onReady={() => setSdkReady(true)} onError={() => setError(fr ? 'Le moteur de recherche n’a pas pu être chargé.' : 'The search engine could not load.')} />
-    <section className={`${s.searchHero} ${bookingUrl ? s.searchHeroCompact : ''}`} aria-labelledby="reservation-title">
-      <div className={s.heroPhoto} aria-hidden="true" />
+    {!bookingUrl && <section className={s.searchHero} aria-labelledby="reservation-title">
+      <div className={s.heroPhotos} aria-hidden="true"><span className={s.heroSlide} /><span className={s.heroSlide} /><span className={s.heroSlide} /><span className={s.heroVeil} /></div>
       <div className={s.heroInner}>
-        <p className={s.eyebrow}>BOSPHORAS LUXURY STAYS</p>
         <h1 id="reservation-title">{fr ? 'Votre prochain séjour commence ici.' : 'Your next stay starts here.'}</h1>
-        {!bookingUrl && <p className={s.heroText}>{fr ? 'Une destination. Vos dates. L’hôtel qu’il vous faut.' : 'One destination. Your dates. The right hotel for you.'}</p>}
+        <p className={s.heroText}>{fr ? 'L’évasion a ses belles adresses. Trouvez la vôtre.' : 'Escape has its finest addresses. Find yours.'}</p>
         <div className={s.searchPanel} aria-label={fr ? 'Rechercher des hôtels' : 'Search hotels'} aria-busy={busy}>
           {!widgetReady && <div className={s.widgetLoading} role="status"><Search size={20} />{fr ? 'Chargement de la recherche…' : 'Loading hotel search…'}</div>}
           <div ref={widget} id={widgetId} className={s.widget} />
@@ -117,23 +126,23 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
             <div className={s.allocationActions}><button type="submit" disabled={!allocated || busy}>{fr ? 'Afficher les hôtels' : 'Show hotels'} <ArrowRight size={16}/></button><button type="button" onClick={() => setPending(null)}>{fr ? 'Modifier la recherche' : 'Edit search'}</button></div>
           </form>}
           {busy && <p className={s.formStatus} role="status">{fr ? 'Recherche de votre séjour…' : 'Searching for your stay…'}</p>}
-          {error && <p className={s.error} role="alert">{error} <a href={engineUrl} target="_blank" rel="sponsored noopener noreferrer">{fr ? 'Ouvrir le moteur Nuitée' : 'Open the Nuitée booking engine'} ↗</a></p>}
-          <noscript><a href={engineUrl} rel="sponsored">{fr ? 'Rechercher et réserver avec Nuitée' : 'Search and book with Nuitée'} →</a></noscript>
+          {error && <p className={s.error} role="alert">{error} <a href={engineUrl} target="_blank" rel="sponsored noopener noreferrer">{fr ? 'Ouvrir la réservation' : 'Open the booking engine'} ↗</a></p>}
+          <noscript><a href={engineUrl} rel="sponsored">{fr ? 'Rechercher et réserver' : 'Search and book'} →</a></noscript>
         </div>
-        <p className={s.searchNote}><LockKeyhole size={13} />{fr ? 'Réservation et paiement sécurisés par Nuitée' : 'Booking and secure payment by Nuitée'}<span>·</span>{fr ? 'Tarifs et disponibilités en temps réel' : 'Live rates and availability'}</p>
+        <p className={s.searchNote}><LockKeyhole size={13} />{fr ? 'Tarifs et disponibilités actualisés · Réservation sécurisée' : 'Live rates and availability · Secure booking'}</p>
       </div>
-    </section>
+    </section>}
 
     {bookingUrl ? <section ref={results} className={s.results} aria-labelledby="hotel-results-title">
-      <div className={s.resultsHeading}><div><p className={s.eyebrow}>{fr ? 'VOTRE RECHERCHE' : 'YOUR SEARCH'}</p><h2 id="hotel-results-title">{summary || (fr ? 'Choisissez votre chambre' : 'Choose your room')}</h2></div><a href={bookingUrl} target="_blank" rel="sponsored noopener noreferrer">{fr ? 'Ouvrir en plein écran' : 'Open full screen'} <ArrowUpRight size={15} /></a></div>
+      <div className={s.resultsHeading}><div><p className={s.eyebrow}>{fr ? 'VOTRE RECHERCHE' : 'YOUR SEARCH'}</p><h1 id="hotel-results-title">{summary || (fr ? 'Choisissez votre chambre' : 'Choose your room')}</h1></div><div className={s.resultsActions}><button type="button" onClick={resetSearch}>{fr ? 'Nouvelle recherche' : 'New search'}</button><a href={bookingUrl} target="_blank" rel="sponsored noopener noreferrer">{fr ? 'Ouvrir en plein écran' : 'Open full screen'} <ArrowUpRight size={15} /></a></div></div>
       {!loaded && <p className={s.loading} role="status">{fr ? 'Chargement des hôtels et des tarifs…' : 'Loading hotels and rates…'}</p>}
-      <iframe key={bookingUrl} className={s.bookingFrame} src={bookingUrl} title={fr ? 'Hôtels, chambres et réservation — moteur officiel Nuitée' : 'Hotels, rooms and booking — official Nuitée engine'} allow="payment" referrerPolicy="strict-origin-when-cross-origin" onLoad={() => setLoaded(true)} />
-      <p className={s.frameNote}>{fr ? 'Vous utilisez le moteur officiel Nuitée. Les conditions et le montant total de votre séjour sont présentés avant paiement. Si votre navigateur bloque le paiement intégré, utilisez « Ouvrir en plein écran ».' : 'You are using the official Nuitée engine. Stay conditions and the total price are shown before payment. If your browser blocks embedded payment, use “Open full screen”.'}</p>
+      <iframe key={bookingUrl} className={s.bookingFrame} src={bookingUrl} title={fr ? 'Hôtels, chambres et réservation — moteur de notre partenaire' : 'Hotels, rooms and booking — partner engine'} allow="payment" referrerPolicy="strict-origin-when-cross-origin" onLoad={() => setLoaded(true)} />
+      <p className={s.frameNote}>{fr ? 'Notre partenaire de réservation présente le prix total et les conditions avant paiement. En cas de difficulté avec le paiement intégré, choisissez « Ouvrir en plein écran ».' : 'Our booking partner displays the full price and terms before payment. If embedded payment is unavailable, select “Open full screen”.'}</p>
     </section> : <>
       <div className={s.benefits}>
         <div><SlidersHorizontal size={22} /><p><strong>{fr ? 'Comparez à votre rythme' : 'Compare at your pace'}</strong><span>{fr ? 'Prix, emplacement, équipements : affinez votre recherche.' : 'Refine your search by price, location and amenities.'}</span></p></div>
         <div><Check size={22} /><p><strong>{fr ? 'Choisissez en toute clarté' : 'Choose with clarity'}</strong><span>{fr ? 'Chambre, repas et conditions d’annulation avant de réserver.' : 'Room, meals and cancellation conditions before booking.'}</span></p></div>
-        <div><Headphones size={22} /><p><strong>{fr ? 'Un spécialiste à vos côtés' : 'Specialist support'}</strong><span>{fr ? 'Nuitée assure le paiement, la confirmation et le SAV du séjour.' : 'Nuitée handles payment, confirmation and stay support.'}</span></p></div>
+        <div><Headphones size={22} /><p><strong>{fr ? 'Un spécialiste à vos côtés' : 'Specialist support'}</strong><span>{fr ? 'Paiement, confirmation et assistance assurés par notre partenaire.' : 'Payments, confirmation and stay support handled by our partner.'}</span></p></div>
       </div>
       <section className={s.inspiration} aria-labelledby="booking-destinations-title"><div className={s.sectionTitle}><div><p className={s.eyebrow}>{fr ? 'OÙ PARTIREZ-VOUS ?' : 'WHERE WILL YOU GO?'}</p><h2 id="booking-destinations-title">{fr ? 'À chaque envie, sa destination.' : 'A destination for every kind of stay.'}</h2></div><a href={engineUrl} target="_blank" rel="sponsored noopener noreferrer">{fr ? 'Toutes les destinations' : 'All destinations'} <ArrowUpRight size={16}/></a></div>
         <div className={s.cityGrid}>{cities.map(city => <a key={city.key} href={`${travelHref(locale, 'search')}?destination=${city.key}`} className={s.city}><Image src={city.image} alt="" fill sizes="(max-width: 640px) 90vw, 32vw" /><span><small>{city.country}</small><strong>{city.name}</strong><span>{fr ? 'Rechercher un hôtel' : 'Find a hotel'} <ArrowRight size={16}/></span></span></a>)}</div>

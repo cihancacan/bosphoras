@@ -10,13 +10,19 @@
 .languages{display:flex;gap:6px;font-size:11px;border-left:1px solid #ffffff38;padding-left:20px}
 .languages a{padding:7px;border-radius:4px}
 .languages a[aria-current=page]{background:#ffffff18}
-.searchHero{position:relative;background:#172b2c;color:white;padding:47px 4% 30px;isolation:isolate}
-.heroPhoto{position:absolute;inset:0;background:linear-gradient(90deg,#102b2bf5,#102b2bd9 50%,#102b2b4d),url('/images/travel/istanbul/four-seasons-bosphorus/four-seasons-bosphorus-01-hero.webp') center 50%/cover;z-index:-1}
-.heroInner{max-width:1320px;margin:auto}
+.searchHero{position:relative;background:#578c96;color:white;padding:70px 4% 66px;isolation:isolate;overflow:hidden;min-height:395px}
+.heroPhotos{position:absolute;inset:0;z-index:-1;overflow:hidden;background:#84aab2}
+.heroSlide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;animation:heroFade 21s infinite ease-in-out}
+.heroSlide:nth-child(1){background-image:url('/images/travel/maldives-premium/destination/lagoon-aerial.webp');opacity:1}
+.heroSlide:nth-child(2){background-image:url('/images/travel/paris-premium/destination/paris-seine-hero.webp');animation-delay:-14s}
+.heroSlide:nth-child(3){background-image:url('/images/travel/bali-premium/destination/bali-uluwatu-ocean-hero.webp');animation-delay:-7s}
+.heroVeil{position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,34,42,.62),rgba(11,34,42,.37) 63%,rgba(11,34,42,.20))}
+.heroInner{max-width:1320px;margin:auto;position:relative;z-index:1}
+@keyframes heroFade{0%,29%{opacity:1}34%,95%{opacity:0}100%{opacity:1}}
 .eyebrow{font-size:10px;letter-spacing:.16em;font-weight:600;margin:0 0 12px}
 .searchHero .eyebrow{color:#d9c89f}
-.searchHero h1{font-size:clamp(27px,3vw,42px);font-weight:500;letter-spacing:-.035em;line-height:1.15;margin:0}
-.heroText{font-size:15px;color:#e0e5e3;margin:14px 0 27px}
+.searchHero h1{font-size:clamp(35px,4vw,59px);font-weight:500;letter-spacing:-.045em;line-height:1.13;margin:0;max-width:850px;text-shadow:0 2px 18px #0b222c65}
+.heroText{font-size:clamp(15px,1.6vw,20px);color:#f7f7f1;margin:18px 0 34px;text-shadow:0 1px 12px #0b222c77}
 .searchPanel{margin-top:25px;background:#fff;border:3px solid #cbb384;border-radius:10px;box-shadow:0 10px 28px #071a2c24;color:#172b2c;position:relative;min-height:70px}
 .widget{width:100%;min-width:0}
 .widget :global(.search-bar){width:100%!important;max-width:none!important;box-sizing:border-box!important;margin:0!important;box-shadow:none!important;border:0!important;border-radius:6px!important}
@@ -42,10 +48,6 @@
 .allocationActions button[type=submit]{background:#172b2c;color:white}
 .allocationActions button[type=submit]:disabled{opacity:.4;cursor:not-allowed}
 .allocationActions button[type=button]{background:transparent;color:#52645d;text-decoration:underline}
-.searchHeroCompact{padding-top:22px;padding-bottom:20px}
-.searchHeroCompact h1{font-size:24px}
-.searchHeroCompact .eyebrow{display:none}
-.searchHeroCompact .searchPanel{margin-top:18px}
 .benefits{max-width:1320px;padding:28px 4%;margin:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:35px;border-bottom:1px solid #dce2df}
 .benefits>div{display:flex;gap:15px;align-items:flex-start}
 .benefits svg{flex-shrink:0;margin-top:3px;color:#667b75;stroke-width:1.5}
@@ -73,8 +75,10 @@
 .results{max-width:1440px;margin:auto;padding:20px 20px 0;scroll-margin-top:12px}
 .resultsHeading{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 6px 16px}
 .resultsHeading .eyebrow{font-size:9px;color:#65716e;margin-bottom:5px}
-.resultsHeading h2{font-size:17px;font-weight:500;margin:0}
-.resultsHeading>a{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:inherit;white-space:nowrap}
+.resultsHeading h1{font-size:19px;font-weight:500;margin:0}
+.resultsActions{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.resultsActions>a,.resultsActions>button{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:inherit;white-space:nowrap}
+.resultsActions>button{border:0;background:none;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:7px 0}
 .bookingFrame{display:block;width:100%;height:850px;height:max(760px,90dvh);border:1px solid #dce2df;border-radius:10px;background:white}
 .loading{margin:0;background:#fff;padding:15px;border:1px solid #dce2df;font-size:13px}
 .frameNote{font-size:11px;color:#65716e;line-height:1.7;padding:10px 6px 20px;margin:0}
@@ -86,5 +90,5 @@
 .footer nav{display:flex;gap:20px}
 .footer a{color:inherit}
 @media(min-width:1450px){.benefits,.inspiration{padding-left:0;padding-right:0}}
-@media(max-width:700px){.header{padding:16px 5%;gap:14px}.brand strong{font-size:17px}.nav{gap:14px;font-size:11px}.nav a[data-secondary]{display:none}.languages{padding-left:9px;gap:0}.searchHero{padding:30px 5% 23px}.heroText{font-size:13px}.searchNote{font-size:10px;flex-wrap:wrap;gap:5px}.searchPanel{min-height:100px}.benefits{grid-template-columns:1fr;padding:25px 5%;gap:18px}.benefits p{font-size:12px}.benefits span{font-size:11px}.inspiration{padding:30px 5%}.sectionTitle{align-items:start;flex-direction:column;gap:14px}.sectionTitle h2{font-size:24px}.cityGrid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:8px}.city{flex:0 0 82%;height:230px;scroll-snap-align:start}.guideAside{margin:0 5% 28px;padding:23px;align-items:start;flex-direction:column}.guideAside h2{font-size:20px}.results{padding:16px 0 0}.resultsHeading{padding:0 5% 14px;align-items:start;flex-direction:column;gap:11px}.resultsHeading h2{font-size:15px}.bookingFrame{border-radius:0;border-left:0;border-right:0;height:950px;height:max(850px,100dvh)}.frameNote{padding:12px 5% 20px}.disclosure{padding:23px 5%}.disclosure>div{grid-template-columns:1fr;gap:12px}.footer{padding:22px 5%;align-items:start;flex-direction:column;gap:15px}.footer nav{flex-wrap:wrap;gap:14px}.searchHeroCompact h1{font-size:23px}}
-@media(prefers-reduced-motion:reduce){.city>img{transition:none}.city:hover>img{transform:none}}
+@media(max-width:700px){.header{padding:16px 5%;gap:14px}.brand strong{font-size:17px}.nav{gap:14px;font-size:11px}.nav a[data-secondary]{display:none}.languages{padding-left:9px;gap:0}.searchHero{padding:54px 5% 52px;min-height:410px}.heroText{font-size:13px}.searchNote{font-size:10px;flex-wrap:wrap;gap:5px}.searchPanel{min-height:100px}.benefits{grid-template-columns:1fr;padding:25px 5%;gap:18px}.benefits p{font-size:12px}.benefits span{font-size:11px}.inspiration{padding:30px 5%}.sectionTitle{align-items:start;flex-direction:column;gap:14px}.sectionTitle h2{font-size:24px}.cityGrid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:8px}.city{flex:0 0 82%;height:230px;scroll-snap-align:start}.guideAside{margin:0 5% 28px;padding:23px;align-items:start;flex-direction:column}.guideAside h2{font-size:20px}.results{padding:16px 0 0}.resultsHeading{padding:0 5% 14px;align-items:start;flex-direction:column;gap:11px}.resultsHeading h1{font-size:17px}.bookingFrame{border-radius:0;border-left:0;border-right:0;height:950px;height:max(850px,100dvh)}.frameNote{padding:12px 5% 20px}.disclosure{padding:23px 5%}.disclosure>div{grid-template-columns:1fr;gap:12px}.footer{padding:22px 5%;align-items:start;flex-direction:column;gap:15px}.footer nav{flex-wrap:wrap;gap:14px}}
+@media(prefers-reduced-motion:reduce){.city>img{transition:none}.city:hover>img{transform:none}.heroSlide{animation:none;opacity:0}.heroSlide:first-child{opacity:1}}
