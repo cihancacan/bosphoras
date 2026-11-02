@@ -1,0 +1,459 @@
+{
+  "destination": "sentosa",
+  "format": "WEBP",
+  "quality": 76,
+  "maxDimensions": [
+    1280,
+    850
+  ],
+  "totalPhotos": 21,
+  "landscapes": 9,
+  "propertyPhotos": 12,
+  "publicUseApproved": false,
+  "rightsNotice": "Hotel commercial photo rights not approved: protected noindex owner Preview only.",
+  "totalOriginalBytes": 6991157,
+  "totalWebpBytes": 2826964,
+  "photos": [
+    {
+      "key": "scene-1",
+      "localPath": "/images/travel/sentosa-premium/destination/scene-1.webp",
+      "property": null,
+      "originalPixels": [
+        1200,
+        900
+      ],
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "originalBytes": 468440,
+      "webpBytes": 147292,
+      "webpSha256": "d317812e95b4186471585c81dfb65f7b897bb0d23749215b79cb0e7f994d063b",
+      "reviewedOriginalSha256": "1a0452e8c1793df11de3fbaf77bbac86c2439ca5f22a3a802a47cdda648e7c59",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-2",
+      "localPath": "/images/travel/sentosa-premium/destination/scene-2.webp",
+      "property": null,
+      "originalPixels": [
+        1200,
+        799
+      ],
+      "webpPixels": [
+        1200,
+        799
+      ],
+      "originalBytes": 1031988,
+      "webpBytes": 78802,
+      "webpSha256": "d2a5545a09fd9dfa8fe1089b4058b17b3a77cb0a7854d1dc7efd2db555244ff3",
+      "reviewedOriginalSha256": "b498f2a669a0ae615275ba780f1a82d09aeda3b91243ef2a4137e57a09502c74",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-3",
+      "localPath": "/images/travel/sentosa-premium/destination/scene-3.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        860
+      ],
+      "webpPixels": [
+        1265,
+        850
+      ],
+      "originalBytes": 285471,
+      "webpBytes": 147334,
+      "webpSha256": "6b4fbc5474557a029be65a02d4456378d4d92fbeaf4ddde4a9a34579c903a755",
+      "reviewedOriginalSha256": "98e6262b2dc738a795b0c9449e4cf35aa02f248166ec88b034f3ed93a8bd2005",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-4",
+      "localPath": "/images/travel/sentosa-premium/destination/scene-4.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        721
+      ],
+      "webpPixels": [
+        1280,
+        721
+      ],
+      "originalBytes": 322877,
+      "webpBytes": 201912,
+      "webpSha256": "e9a5a7b4586e1e688177f7ad6b0dc6e15a5c3ecc962536099f92200232cd7a73",
+      "reviewedOriginalSha256": "9b0bf96fe2b388e40b6a7af5eedd946ea060ea27e2df7b322afac232d99a2188",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-5",
+      "localPath": "/images/travel/sentosa-premium/destination/scene-5.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        1010
+      ],
+      "webpPixels": [
+        1077,
+        850
+      ],
+      "originalBytes": 498556,
+      "webpBytes": 235744,
+      "webpSha256": "f23b6762265ff262bcd7542ce5d01024d0f4b3e5a27526e681cd0d5a7f1b79a7",
+      "reviewedOriginalSha256": "507300105bab6d0d1fa201ae21bca5e2bff4857b94b5f2e26d20e4ed1aa2f6c7",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-6",
+      "localPath": "/images/travel/sentosa-premium/destination/scene-6.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        720
+      ],
+      "webpPixels": [
+        1280,
+        720
+      ],
+      "originalBytes": 308636,
+      "webpBytes": 191644,
+      "webpSha256": "53c85b4071758ebbdf74f9c2f70e0643742a66e2b39110ec46847e740e27e576",
+      "reviewedOriginalSha256": "2901642621dbb3fbc085a12d4254b40b500cacb24b95c2caaee94f9ef6db7cb7",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-7",
+      "localPath": "/images/travel/sentosa-premium/destination/scene-7.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        960
+      ],
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "originalBytes": 309022,
+      "webpBytes": 130486,
+      "webpSha256": "3657e4f2dbb8748732e6a4c5a0eaead87c5c32f9e1720e043e815174e0526357",
+      "reviewedOriginalSha256": "4b57afc417d3372c30249d63f327a1ac75aed1afea4adefd2215f217086307d3",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-8",
+      "localPath": "/images/travel/sentosa-premium/destination/scene-8.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        826
+      ],
+      "webpPixels": [
+        1280,
+        826
+      ],
+      "originalBytes": 285527,
+      "webpBytes": 162632,
+      "webpSha256": "e8c3d530216acd34529ff81b05665b3a3b25fa2f607be5dd14364e1d21088d9b",
+      "reviewedOriginalSha256": "84a60dca87980f36c01a303e20fb774b5b23f29fe5c10aa28154ee2d4706c357",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-9",
+      "localPath": "/images/travel/sentosa-premium/destination/scene-9.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        720
+      ],
+      "webpPixels": [
+        1280,
+        720
+      ],
+      "originalBytes": 293744,
+      "webpBytes": 173126,
+      "webpSha256": "a4a33a30b5f91f3b3141d44370a5c3969798eb59f2afe6abacd466aadfc13793",
+      "reviewedOriginalSha256": "79043c88304019d310218799c58e6eda44a845636560136819e11d7fbc7475f8",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "capella-1",
+      "localPath": "/images/travel/sentosa-premium/capella/capella-1.webp",
+      "property": "Capella Singapore",
+      "originalPixels": [
+        1600,
+        1198
+      ],
+      "webpPixels": [
+        1135,
+        850
+      ],
+      "originalBytes": 321777,
+      "webpBytes": 144968,
+      "webpSha256": "f5adebb7ee412c907d25b8b6d01e951bbff69fefe0154bd3fcdaa38970d683fa",
+      "reviewedOriginalSha256": "b48f71bf72b85a881de38faff6e6b123203d5deae25e9451ea82269093823019",
+      "originalShaMatched": false,
+      "originalPixelsMatched": false,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "capella-2",
+      "localPath": "/images/travel/sentosa-premium/capella/capella-2.webp",
+      "property": "Capella Singapore",
+      "originalPixels": [
+        1600,
+        666
+      ],
+      "webpPixels": [
+        1280,
+        533
+      ],
+      "originalBytes": 178559,
+      "webpBytes": 99734,
+      "webpSha256": "f06d4741d00ab3efe53b1de58dfdde9e6163046d8716233ca31df9f380746bb4",
+      "reviewedOriginalSha256": "2509d361b93d9ff7301330d2d7463c1f26cd12ebe17275c5faf1e049ed26cb88",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "capella-3",
+      "localPath": "/images/travel/sentosa-premium/capella/capella-3.webp",
+      "property": "Capella Singapore",
+      "originalPixels": [
+        1600,
+        666
+      ],
+      "webpPixels": [
+        1280,
+        533
+      ],
+      "originalBytes": 146594,
+      "webpBytes": 68180,
+      "webpSha256": "e840016419b0c8ff40b7a4abf7234a033f62ba5e7bfd6f4b18f542e6c4cd8def",
+      "reviewedOriginalSha256": "60a3a980b5aed2e7630729eab3de4df23b4bf3aa06c6c0d4d65c45bc87e6c15a",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "raffles-1",
+      "localPath": "/images/travel/sentosa-premium/raffles/raffles-1.webp",
+      "property": "Raffles Sentosa Singapore",
+      "originalPixels": [
+        1600,
+        1201
+      ],
+      "webpPixels": [
+        1132,
+        850
+      ],
+      "originalBytes": 282363,
+      "webpBytes": 75734,
+      "webpSha256": "207ded9e871312f3697f42a7a23e1c4eff4d12ba3ca36387faece961f80c99cf",
+      "reviewedOriginalSha256": "6f9b3d597d8833bdfedbb0e1317e08a440988a496d1afea71eaefb19cdf741f9",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "raffles-2",
+      "localPath": "/images/travel/sentosa-premium/raffles/raffles-2.webp",
+      "property": "Raffles Sentosa Singapore",
+      "originalPixels": [
+        1600,
+        1200
+      ],
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "originalBytes": 245103,
+      "webpBytes": 64488,
+      "webpSha256": "bf0e7d8eff458a33f9b4c97a6261d9665622a6e8a0fda6721e6ae3f1ba5d7d34",
+      "reviewedOriginalSha256": "eee2afebdc6a2ad76114a61627ab0e2296ced3276ef503e29f38c8a60527444f",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "raffles-3",
+      "localPath": "/images/travel/sentosa-premium/raffles/raffles-3.webp",
+      "property": "Raffles Sentosa Singapore",
+      "originalPixels": [
+        1600,
+        1201
+      ],
+      "webpPixels": [
+        1132,
+        850
+      ],
+      "originalBytes": 319624,
+      "webpBytes": 106012,
+      "webpSha256": "f85370bf4e458c556c3605179e0f22685a21d7befde64f163c08d36374ecf8fe",
+      "reviewedOriginalSha256": "cab993e218e132532d777a49bd3573692dde039195acdac8af3b1ae8e334add9",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 1,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "barracks-1",
+      "localPath": "/images/travel/sentosa-premium/barracks/barracks-1.webp",
+      "property": "The Barracks Hotel Sentosa",
+      "originalPixels": [
+        1600,
+        1067
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 229090,
+      "webpBytes": 115664,
+      "webpSha256": "3ffc0a12ba6c3d4dae10f99df4af58b50427762c89bb32ab5a2599b3a7927a57",
+      "reviewedOriginalSha256": "ea35209b08b207ac74478c140d3d0a4669225899d1e9cb938cd40fec34cdc90b",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "barracks-2",
+      "localPath": "/images/travel/sentosa-premium/barracks/barracks-2.webp",
+      "property": "The Barracks Hotel Sentosa",
+      "originalPixels": [
+        1600,
+        1067
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 266884,
+      "webpBytes": 134352,
+      "webpSha256": "d39f438f7edc60a3042416c080ed8b7142c78e52e97246793bf6c04e19907522",
+      "reviewedOriginalSha256": "1550e8504758899ade9ab5097abe3c895eaba18322ea5201ec36bf9c7c8bb321",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "barracks-3",
+      "localPath": "/images/travel/sentosa-premium/barracks/barracks-3.webp",
+      "property": "The Barracks Hotel Sentosa",
+      "originalPixels": [
+        1600,
+        1067
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 180530,
+      "webpBytes": 76354,
+      "webpSha256": "fc1d1f9bc7704750b2a9b0dbfb10dc6d957d4720d044bbf1f7046740d436405e",
+      "reviewedOriginalSha256": "3a0c4cab8443fc3ba8934cac78465f6b00d66a325c80b0c3b2f3b05984ad63c6",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "w-1",
+      "localPath": "/images/travel/sentosa-premium/w/w-1.webp",
+      "property": "W Singapore - Sentosa Cove",
+      "originalPixels": [
+        1440,
+        810
+      ],
+      "webpPixels": [
+        1280,
+        720
+      ],
+      "originalBytes": 435300,
+      "webpBytes": 288948,
+      "webpSha256": "509543bf40a6e3b246bf617afd7c4e5fe51d1768f4e1a306ba00a6cbf610b7e9",
+      "reviewedOriginalSha256": "05e12d439b8641eee3cf351cb8a4e99e292f8df477a1e36b2cea188640010b21",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "w-2",
+      "localPath": "/images/travel/sentosa-premium/w/w-2.webp",
+      "property": "W Singapore - Sentosa Cove",
+      "originalPixels": [
+        1840,
+        1035
+      ],
+      "webpPixels": [
+        1280,
+        720
+      ],
+      "originalBytes": 264461,
+      "webpBytes": 109404,
+      "webpSha256": "0618f8b862e7b169af1f7a59a49b2e3cb3dc772d88177810ce6afb188b626bde",
+      "reviewedOriginalSha256": "ffd8dd86d731549e266081cadf363b73dfe0350bfafe8fe19b9b7e12fd85e645",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "w-3",
+      "localPath": "/images/travel/sentosa-premium/w/w-3.webp",
+      "property": "W Singapore - Sentosa Cove",
+      "originalPixels": [
+        1920,
+        1281
+      ],
+      "webpPixels": [
+        1274,
+        850
+      ],
+      "originalBytes": 316611,
+      "webpBytes": 74154,
+      "webpSha256": "8f32990c25f40882ccb4b0d0ebeac9fb995a473541435bd5531de6ffe8c58f09",
+      "reviewedOriginalSha256": "27b828ce219e16bd50d8520b78cc75023b0992ab6432e4b400453eda2487e521",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    }
+  ]
+}
