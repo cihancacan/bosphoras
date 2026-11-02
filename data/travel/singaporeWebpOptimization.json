@@ -1,0 +1,459 @@
+{
+  "destination": "singapore",
+  "format": "WEBP",
+  "quality": 76,
+  "maxDimensions": [
+    1280,
+    850
+  ],
+  "totalPhotos": 21,
+  "landscapes": 9,
+  "propertyPhotos": 12,
+  "publicUseApproved": false,
+  "rightsNotice": "Hotel commercial photo rights not approved: protected noindex owner Preview only.",
+  "totalOriginalBytes": 7170660,
+  "totalWebpBytes": 3384686,
+  "photos": [
+    {
+      "key": "scene-1",
+      "localPath": "/images/travel/singapore-premium/destination/scene-1.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        719
+      ],
+      "webpPixels": [
+        1280,
+        719
+      ],
+      "originalBytes": 256655,
+      "webpBytes": 145876,
+      "webpSha256": "261a24cd414fc82d8a5dd2d90e8795f56d6d0b0fab8d120c204769f932c34b09",
+      "reviewedOriginalSha256": "21f0f0bb60757bf4f00d6049da2ffd6fba95fefe54d07d546f1411ab81745f6a",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 1,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-2",
+      "localPath": "/images/travel/singapore-premium/destination/scene-2.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        853
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 368662,
+      "webpBytes": 189412,
+      "webpSha256": "0505bd3792ab24d700a9f4b3ddd507893282b7f5d4719d9013920441a01bcc02",
+      "reviewedOriginalSha256": "0e4b124325fc96ecb787b7faf2a009c2e709cfc56bf46755840890feac51fc55",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-3",
+      "localPath": "/images/travel/singapore-premium/destination/scene-3.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        477
+      ],
+      "webpPixels": [
+        1280,
+        477
+      ],
+      "originalBytes": 121959,
+      "webpBytes": 56086,
+      "webpSha256": "288882d11cf7b9f4ac19604a372c47f000cda3bc4aac9c5577a5a59de1efe114",
+      "reviewedOriginalSha256": "3613ac99ba829317f2a23233bc5d04f5dd3aa536749b907be3e73d6e0ad69460",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 1,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-4",
+      "localPath": "/images/travel/singapore-premium/destination/scene-4.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        816
+      ],
+      "webpPixels": [
+        1280,
+        816
+      ],
+      "originalBytes": 321928,
+      "webpBytes": 183232,
+      "webpSha256": "9c2b6c7262ac5e3ef92ef3501cfd1823c40ac18daf4d64a4a71d69e58be136d3",
+      "reviewedOriginalSha256": "c161c6d408fe9c9fd100a2324f4fd21ec6b00a3e257a08b7b0765c02ff6ed3cd",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 3,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-5",
+      "localPath": "/images/travel/singapore-premium/destination/scene-5.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        853
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 396142,
+      "webpBytes": 236814,
+      "webpSha256": "3adffdf8a31b88728d6e33e63d4826ebdcdac07e4283415a16f1027c168b4e41",
+      "reviewedOriginalSha256": "be05e2bf92675efd50f812076f82649001c5c361586944cf4469abc79df7890a",
+      "originalShaMatched": false,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-6",
+      "localPath": "/images/travel/singapore-premium/destination/scene-6.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        960
+      ],
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "originalBytes": 216622,
+      "webpBytes": 57976,
+      "webpSha256": "44f58e59e1a10ae1b672cfc07f6089e98addb23b5dcee2e002e6ea976bd76702",
+      "reviewedOriginalSha256": "d26657c8427a7c70f2dbb78ce44013c7901ffc2039f81747399619fff0c7b810",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-7",
+      "localPath": "/images/travel/singapore-premium/destination/scene-7.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        878
+      ],
+      "webpPixels": [
+        1239,
+        850
+      ],
+      "originalBytes": 313834,
+      "webpBytes": 155914,
+      "webpSha256": "fbf4687a8c0d3a099ebc713c927662ed1039f699eee5e13720f17c0991c41c88",
+      "reviewedOriginalSha256": "d0838e0d0f09311193ceae862f5ba6abbe6d86255d98140d8cf7f3132c48e18a",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-8",
+      "localPath": "/images/travel/singapore-premium/destination/scene-8.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        853
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 478595,
+      "webpBytes": 305394,
+      "webpSha256": "a703920da6a2ec2f3ad37a1f92fe2d8615ddf5c873ff1507c238a6ecf1ad8d47",
+      "reviewedOriginalSha256": "cc035d62bc4aa07b3492faa141501f5dba1ed432612747bca253297f78c7aa45",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-9",
+      "localPath": "/images/travel/singapore-premium/destination/scene-9.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        853
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 357984,
+      "webpBytes": 195942,
+      "webpSha256": "1febd855b24f49b2ba471926e6f987be4f8e039f3ae697ea69475f0218d0a92a",
+      "reviewedOriginalSha256": "f76fae06ae3533854d05cc387c69e185d8e9057862b78922a29ced09ff9a235f",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "mbs-1",
+      "localPath": "/images/travel/singapore-premium/mbs/mbs-1.webp",
+      "property": "Marina Bay Sands",
+      "originalPixels": [
+        1140,
+        760
+      ],
+      "webpPixels": [
+        1140,
+        760
+      ],
+      "originalBytes": 175986,
+      "webpBytes": 129830,
+      "webpSha256": "7cce2eefd577b8084fc4f215217ac5fd6005e129597d7979fe19fa91ffe3d1f7",
+      "reviewedOriginalSha256": "80b9b448681f2264563470563894dcd412215711f1c1db53cb2dc409ee314ac7",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 64,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "mbs-2",
+      "localPath": "/images/travel/singapore-premium/mbs/mbs-2.webp",
+      "property": "Marina Bay Sands",
+      "originalPixels": [
+        1200,
+        800
+      ],
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "originalBytes": 249506,
+      "webpBytes": 205732,
+      "webpSha256": "f847f0749fa1e3d7ee08a16c52359f7d3bc2e7bd8045c1b05c40983d724cdaf6",
+      "reviewedOriginalSha256": "dcbb07af9c6c7d43fc3e21809f1ebed7d9915040eb9cb975d0356a66f8386221",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 64,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "mbs-3",
+      "localPath": "/images/travel/singapore-premium/mbs/mbs-3.webp",
+      "property": "Marina Bay Sands",
+      "originalPixels": [
+        1200,
+        799
+      ],
+      "webpPixels": [
+        1200,
+        799
+      ],
+      "originalBytes": 147238,
+      "webpBytes": 112376,
+      "webpSha256": "08a6566ef68a66d2471106ccf6ab1ba10d492178db2c93f20484e70400acb8b2",
+      "reviewedOriginalSha256": "3e3c15ecc8d2d7eba47d8f1621d94ab75f2c451204466d32e6470117bb1b49d0",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 64,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "raffles-1",
+      "localPath": "/images/travel/singapore-premium/raffles/raffles-1.webp",
+      "property": "Raffles Singapore",
+      "originalPixels": [
+        1600,
+        1068
+      ],
+      "webpPixels": [
+        1273,
+        850
+      ],
+      "originalBytes": 293878,
+      "webpBytes": 126604,
+      "webpSha256": "0cd2758e0cef2788dc4b5986c410eded915ae25c32d0a1a7f4ca49dbc229e9a4",
+      "reviewedOriginalSha256": "dfec4359cd9b41f36522e1c63e376a7bd3dfd7c5f1973b95407d8b3443f6ca40",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "raffles-2",
+      "localPath": "/images/travel/singapore-premium/raffles/raffles-2.webp",
+      "property": "Raffles Singapore",
+      "originalPixels": [
+        1600,
+        1068
+      ],
+      "webpPixels": [
+        1273,
+        850
+      ],
+      "originalBytes": 322707,
+      "webpBytes": 143802,
+      "webpSha256": "524e443c280157dc319b8695acc0b14cd3501796861662ec8086c31592fb7fb4",
+      "reviewedOriginalSha256": "00bbb00ebd19e2afc2c8fe223a4d7282d30be0fdb31cee5eb059fb61d0e3a59f",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 2,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "raffles-3",
+      "localPath": "/images/travel/singapore-premium/raffles/raffles-3.webp",
+      "property": "Raffles Singapore",
+      "originalPixels": [
+        1920,
+        1282
+      ],
+      "webpPixels": [
+        1273,
+        850
+      ],
+      "originalBytes": 759197,
+      "webpBytes": 185838,
+      "webpSha256": "aaa32d85c56169260981c149041be13e8d89ff208480903ee7ad019a688e52c5",
+      "reviewedOriginalSha256": "259418d331d53dc99e7eaf196774434c258c9d2a427d16108d75dbd91e244739",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "fullerton-1",
+      "localPath": "/images/travel/singapore-premium/fullerton/fullerton-1.webp",
+      "property": "The Fullerton Bay Hotel Singapore",
+      "originalPixels": [
+        1000,
+        750
+      ],
+      "webpPixels": [
+        1000,
+        750
+      ],
+      "originalBytes": 156331,
+      "webpBytes": 112580,
+      "webpSha256": "e2a1cbf92e73144c69a8574936940c8dc8097c415c000682c8a87e8dd8953c12",
+      "reviewedOriginalSha256": "b81a8c13733fcf30da5d7622a77e5db96f1f1ad8c5524dbfa2efd34138c7f76e",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "fullerton-2",
+      "localPath": "/images/travel/singapore-premium/fullerton/fullerton-2.webp",
+      "property": "The Fullerton Bay Hotel Singapore",
+      "originalPixels": [
+        2000,
+        1231
+      ],
+      "webpPixels": [
+        1280,
+        788
+      ],
+      "originalBytes": 310102,
+      "webpBytes": 88328,
+      "webpSha256": "9ffc117c1405308ac1a3cb798d9a2b25f2736462a9138feeb0573402e8d9863a",
+      "reviewedOriginalSha256": "99d129bbdf66e852935a8901c67af39c1b897886a3a6cf49080b0cfd580c9d02",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "fullerton-3",
+      "localPath": "/images/travel/singapore-premium/fullerton/fullerton-3.webp",
+      "property": "The Fullerton Bay Hotel Singapore",
+      "originalPixels": [
+        1600,
+        800
+      ],
+      "webpPixels": [
+        1280,
+        640
+      ],
+      "originalBytes": 152899,
+      "webpBytes": 78420,
+      "webpSha256": "2d627e52fa73f71380caa1dfacd07dc82d1646ad6d76fcef80a70666e9511e7b",
+      "reviewedOriginalSha256": "2a3bcba20b9828b357e1bdfb112ba596f406795495c07c81573d07cc9d3a1ec5",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "edition-1",
+      "localPath": "/images/travel/singapore-premium/edition/edition-1.webp",
+      "property": "The Singapore EDITION",
+      "originalPixels": [
+        1200,
+        800
+      ],
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "originalBytes": 616337,
+      "webpBytes": 251042,
+      "webpSha256": "ce7f3f54f1b6e9a213f37e5c4681524c4bd6f83c263fa7269036f75f033eda64",
+      "reviewedOriginalSha256": "206bfc95d2d43366eacb252507cca2aa01d64f4058f9feacfb09e1a197d37236",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "edition-2",
+      "localPath": "/images/travel/singapore-premium/edition/edition-2.webp",
+      "property": "The Singapore EDITION",
+      "originalPixels": [
+        1200,
+        800
+      ],
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "originalBytes": 504260,
+      "webpBytes": 161638,
+      "webpSha256": "c6e448fd20e6fcbb1e148611454db2b817ab77f1330dbdc8ca3648f18b212259",
+      "reviewedOriginalSha256": "65df7cd1b27dde0c2ec0bce1f8216f7d51198e889240e41ebcae3922bb38525f",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 0,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "edition-3",
+      "localPath": "/images/travel/singapore-premium/edition/edition-3.webp",
+      "property": "The Singapore EDITION",
+      "originalPixels": [
+        1200,
+        800
+      ],
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "originalBytes": 649838,
+      "webpBytes": 261850,
+      "webpSha256": "9651ba4b96d519df474a660cfde65c1f820599dda6583c4044197a0f50a88c5f",
+      "reviewedOriginalSha256": "2817ca3346708fe421acf5671bdad8ebcb5123a81822e1a828833d45bd688da2",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "visualDhashDistance": 2,
+      "commercialRightsCleared": false
+    }
+  ]
+}
