@@ -1,0 +1,438 @@
+{
+  "destination": "phu-quoc",
+  "format": "WEBP",
+  "quality": 76,
+  "maxDimensions": [
+    1280,
+    850
+  ],
+  "totalPhotos": 21,
+  "landscapes": 9,
+  "propertyPhotos": 12,
+  "publicUseApproved": false,
+  "rightsNotice": "Hotel commercial photo rights not approved: protected noindex owner Preview only.",
+  "totalOriginalBytes": 16708015,
+  "totalWebpBytes": 2686866,
+  "photos": [
+    {
+      "key": "scene-1",
+      "localPath": "/images/travel/phu-quoc-premium/destination/scene-1.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        857
+      ],
+      "webpPixels": [
+        1270,
+        850
+      ],
+      "originalBytes": 127828,
+      "webpBytes": 41474,
+      "webpSha256": "094b0612e7af3eb18b22eae1320fb7382c972f25b8b07abcbc5f36c48321046c",
+      "reviewedOriginalSha256": "2169a7140cad4a970ce78513cc6e4e1f73108ab3967cb3168828df4bdee1d966",
+      "originalShaMatched": false,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-2",
+      "localPath": "/images/travel/phu-quoc-premium/destination/scene-2.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        720
+      ],
+      "webpPixels": [
+        1280,
+        720
+      ],
+      "originalBytes": 205284,
+      "webpBytes": 102536,
+      "webpSha256": "dfc23b249ed382e9c9f3457b0c9f335e8405743d262485682ebbaa3a67137b52",
+      "reviewedOriginalSha256": "7d91d1d2e5090eb9ab611995ff9d0ff93d2df0d3a61181bd636546dfda0b67e4",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-3",
+      "localPath": "/images/travel/phu-quoc-premium/destination/scene-3.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        964
+      ],
+      "webpPixels": [
+        1129,
+        850
+      ],
+      "originalBytes": 287294,
+      "webpBytes": 114530,
+      "webpSha256": "cd4cc6089520184be7892b0621cd0040bb33d115d7b3bc32b70e22220c338db8",
+      "reviewedOriginalSha256": "b6604226b1a1d8e34de99ef2dad3612723ac797cd8446b42dac829c9a1cd37b0",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-4",
+      "localPath": "/images/travel/phu-quoc-premium/destination/scene-4.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        964
+      ],
+      "webpPixels": [
+        1129,
+        850
+      ],
+      "originalBytes": 235178,
+      "webpBytes": 93738,
+      "webpSha256": "c2c268f6d7ccb8f986078c6bfc2ebcceabacf9e6d15d805453f5fe1bac0d7202",
+      "reviewedOriginalSha256": "09e0095d7f44a0d8568c6a2d6e7ddf5994bd1ac3f594196e699c8ea30b8ad0a4",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-5",
+      "localPath": "/images/travel/phu-quoc-premium/destination/scene-5.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        853
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 160472,
+      "webpBytes": 46690,
+      "webpSha256": "d6d531143c51f0e5b868a7faf4916db4707408a09be1f19dd19bc1e33b61886a",
+      "reviewedOriginalSha256": "38dac9bd2c8fe41b6e1439f37f22db558537ff0c3bf9adf737d3131402834fd0",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-6",
+      "localPath": "/images/travel/phu-quoc-premium/destination/scene-6.webp",
+      "property": null,
+      "originalPixels": [
+        800,
+        600
+      ],
+      "webpPixels": [
+        800,
+        600
+      ],
+      "originalBytes": 181443,
+      "webpBytes": 89716,
+      "webpSha256": "6c8365a6777f321b98f1d9f6d26f107401137ea5e6a7c4d9d9abeb385b94b3a6",
+      "reviewedOriginalSha256": "80965a44d460426b6421be8b07affa82568cb6036cde80f74bff3e276f1e8b7d",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-7",
+      "localPath": "/images/travel/phu-quoc-premium/destination/scene-7.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        960
+      ],
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "originalBytes": 287801,
+      "webpBytes": 120786,
+      "webpSha256": "4e14aa8d25e5243ae2ed9546d5c9845e4d499c14b7dfb9644494bb7929f1369b",
+      "reviewedOriginalSha256": "98ea791092d3a61a070971188bb99a362632c93e4bfcff397b0e8cc0cb4ffcc1",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-8",
+      "localPath": "/images/travel/phu-quoc-premium/destination/scene-8.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        854
+      ],
+      "webpPixels": [
+        1274,
+        850
+      ],
+      "originalBytes": 397168,
+      "webpBytes": 238620,
+      "webpSha256": "4e0c44b145fa37e5524126f7ec057587b2a59fa30f7d3b783dd32282d151d246",
+      "reviewedOriginalSha256": "04019a7e9b239ae239ecc3d0aa7609f8288c8219561ed5dada9ad2ffe4a275f7",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "scene-9",
+      "localPath": "/images/travel/phu-quoc-premium/destination/scene-9.webp",
+      "property": null,
+      "originalPixels": [
+        1280,
+        719
+      ],
+      "webpPixels": [
+        1280,
+        719
+      ],
+      "originalBytes": 289052,
+      "webpBytes": 156524,
+      "webpSha256": "2efd88bba9b8988962ad9d583e8de6b7d88ed7f20d5ab7b6f29e0e825c8f2298",
+      "reviewedOriginalSha256": "f231bd2f58d75484399ac266a6d50cb008a90e299729a777583ca94e715d32f3",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": true
+    },
+    {
+      "key": "regent-1",
+      "localPath": "/images/travel/phu-quoc-premium/regent/regent-1.webp",
+      "property": "Regent Phu Quoc",
+      "originalPixels": [
+        9804,
+        6482
+      ],
+      "webpPixels": [
+        1280,
+        846
+      ],
+      "originalBytes": 10241600,
+      "webpBytes": 164346,
+      "webpSha256": "a387d6399826997b94eea8badb73edc55244ff52e4b78e887f9237878a5ed9c0",
+      "reviewedOriginalSha256": "14d52f33ff0718f084790f78306b76f2ce511a8637307ef106c186f021f5f9b3",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "regent-2",
+      "localPath": "/images/travel/phu-quoc-premium/regent/regent-2.webp",
+      "property": "Regent Phu Quoc",
+      "originalPixels": [
+        1920,
+        1280
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 304286,
+      "webpBytes": 105884,
+      "webpSha256": "5a37c794362631a9fe77e83ed11446c9bb0625f113c341e3540e0b88284ac0de",
+      "reviewedOriginalSha256": "6602a3598bfecf06b48e0fadd514e38c4901ab73adea90880f26365aa7aa3484",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "regent-3",
+      "localPath": "/images/travel/phu-quoc-premium/regent/regent-3.webp",
+      "property": "Regent Phu Quoc",
+      "originalPixels": [
+        1920,
+        1440
+      ],
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "originalBytes": 1105132,
+      "webpBytes": 99272,
+      "webpSha256": "039c18c5293aff025488a9326cbf4d6aa97dc976d7d7702e7bcf78984d2ca31e",
+      "reviewedOriginalSha256": "5cdf15392fea2621eb6d8980addab1fdd4a3240cf283f1eaa71cba403ebd967f",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "jw-1",
+      "localPath": "/images/travel/phu-quoc-premium/jw/jw-1.webp",
+      "property": "JW Marriott Phu Quoc Emerald Bay Resort & Spa",
+      "originalPixels": [
+        1920,
+        1280
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 802105,
+      "webpBytes": 195660,
+      "webpSha256": "f8090f1afeecc2cd7bc2a580a7a252df02a12fb5720ccb54cd4ee3b9e808ac4e",
+      "reviewedOriginalSha256": "22079588f5516d229c4db96208fe35faccbcc2b234c7703d99e6ff22b14ad9aa",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "jw-2",
+      "localPath": "/images/travel/phu-quoc-premium/jw/jw-2.webp",
+      "property": "JW Marriott Phu Quoc Emerald Bay Resort & Spa",
+      "originalPixels": [
+        1000,
+        667
+      ],
+      "webpPixels": [
+        1000,
+        667
+      ],
+      "originalBytes": 112710,
+      "webpBytes": 112564,
+      "webpSha256": "f8e2134aef65b64fcfbe011c16c9f3d231bfbbb3ecf80a160e912693e433f53a",
+      "reviewedOriginalSha256": "6643968215dd24b2c57ded36ff944d0bb99062903349ee15fba8be21bb27953d",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "jw-3",
+      "localPath": "/images/travel/phu-quoc-premium/jw/jw-3.webp",
+      "property": "JW Marriott Phu Quoc Emerald Bay Resort & Spa",
+      "originalPixels": [
+        1024,
+        683
+      ],
+      "webpPixels": [
+        1024,
+        683
+      ],
+      "originalBytes": 284172,
+      "webpBytes": 155270,
+      "webpSha256": "bbf1c6c9b89133ed268499765ed82b54363f0a42fc648e7d403b1a1466e01811",
+      "reviewedOriginalSha256": "831ae29d84f002d411baa567f26d5a6f4bcee22aeae9dbd15c1ba47ed8887b36",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "premier-1",
+      "localPath": "/images/travel/phu-quoc-premium/premier/premier-1.webp",
+      "property": "Premier Village Phu Quoc Resort — Managed by Accor",
+      "originalPixels": [
+        1800,
+        968
+      ],
+      "webpPixels": [
+        1280,
+        688
+      ],
+      "originalBytes": 449809,
+      "webpBytes": 91832,
+      "webpSha256": "4a223e0a7fa049a792d4de6cd5941f35fd0b548fb2a5f6dbef0483749f1183f7",
+      "reviewedOriginalSha256": "a04871a29ea669c146db7c1206028619ae228658061793648e7b72d9a2d25e09",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "premier-2",
+      "localPath": "/images/travel/phu-quoc-premium/premier/premier-2.webp",
+      "property": "Premier Village Phu Quoc Resort — Managed by Accor",
+      "originalPixels": [
+        1200,
+        799
+      ],
+      "webpPixels": [
+        1200,
+        799
+      ],
+      "originalBytes": 267058,
+      "webpBytes": 209740,
+      "webpSha256": "02d62cdffd92bace3c0b1b0019e4e8722196bdcd1d0150b7f6e2f61016122e31",
+      "reviewedOriginalSha256": "1c2edbf74e1dfad936ff0bb57eb6186429242a717a7a829a1ca3ca05773cdcff",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "premier-3",
+      "localPath": "/images/travel/phu-quoc-premium/premier/premier-3.webp",
+      "property": "Premier Village Phu Quoc Resort — Managed by Accor",
+      "originalPixels": [
+        1024,
+        683
+      ],
+      "webpPixels": [
+        1024,
+        683
+      ],
+      "originalBytes": 112838,
+      "webpBytes": 79636,
+      "webpSha256": "c3f6a53dd82a21e94ae484f8e7dee095b6b12c851b656aa63d4523b8e6b4adc6",
+      "reviewedOriginalSha256": "583c88ff281503bc40839a670e962cc4c4fb151248d2960447b289e15c8cf190",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "veranda-1",
+      "localPath": "/images/travel/phu-quoc-premium/veranda/veranda-1.webp",
+      "property": "La Veranda Resort Phu Quoc — MGallery Collection",
+      "originalPixels": [
+        1920,
+        1440
+      ],
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "originalBytes": 343026,
+      "webpBytes": 147722,
+      "webpSha256": "a9bd8c401df8cd2782b2f70200336d89f862f51277dd7bb506d54ca5852c9dab",
+      "reviewedOriginalSha256": "b61c95c2ce41aa72dc4ed9a7853e125036d335d9001decd2e6581e5fc7c41107",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "veranda-2",
+      "localPath": "/images/travel/phu-quoc-premium/veranda/veranda-2.webp",
+      "property": "La Veranda Resort Phu Quoc — MGallery Collection",
+      "originalPixels": [
+        1280,
+        853
+      ],
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "originalBytes": 429882,
+      "webpBytes": 275548,
+      "webpSha256": "a741b3ef7a6c64a8827da82705b41c1c4194549da8352841eb3da3c241713487",
+      "reviewedOriginalSha256": "03659db59215efc61a39b2ac1b98b7f6da39a250e1abd623f585099a2a93994b",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "veranda-3",
+      "localPath": "/images/travel/phu-quoc-premium/veranda/veranda-3.webp",
+      "property": "La Veranda Resort Phu Quoc — MGallery Collection",
+      "originalPixels": [
+        1050,
+        748
+      ],
+      "webpPixels": [
+        1050,
+        748
+      ],
+      "originalBytes": 83877,
+      "webpBytes": 44778,
+      "webpSha256": "e88d33bd3a9966c1d11793fcf80cf111758ac7a7f0b7839b875d9baf2b10839a",
+      "reviewedOriginalSha256": "e56301e803a19d0030ff0eb290596308580368b2bcddeedb607586d6604b2696",
+      "originalShaMatched": true,
+      "originalPixelsMatched": true,
+      "commercialRightsCleared": false
+    }
+  ]
+}
