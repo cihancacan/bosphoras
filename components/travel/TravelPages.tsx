@@ -278,8 +278,9 @@ export function Header({ locale, slug, limitedLocales = false }: { locale: Trave
   const t = travelText(locale);
   return <header className="bg-[#0d1a23] text-[#faf6e9] border-b border-[#c5a56a]/30">
     <div className="mx-auto max-w-7xl px-5 py-5 flex flex-wrap gap-5 items-center justify-between">
-      <Link href={travelHref(locale)} className="tracking-[0.20em] text-sm sm:text-base font-semibold uppercase">
-        BOSPHORAS <span className="text-[#cdb37b]">LUXURY STAYS</span>
+      <Link href={travelHref(locale)} aria-label="Bosphoras Luxury Stays" className="group flex shrink-0 flex-col justify-center gap-1 leading-none uppercase">
+        <span className="font-serif text-[1.65rem] font-medium tracking-[0.12em] text-[#faf6e9] sm:text-[1.85rem]">BOSPHORAS</span>
+        <span className="font-sans text-[0.56rem] font-medium tracking-[0.39em] text-[#d4b981] sm:text-[0.59rem]">LUXURY STAYS</span>
       </Link>
       <nav aria-label="Travel primary navigation" className="flex gap-4 sm:gap-6 text-xs sm:text-sm flex-wrap items-center">
         {(locale === 'fr' || locale === 'en') && isHotelSearchAvailable() && <Link href={travelHref(locale,'search')} className="text-[#e7c78a]">{locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel'}</Link>}
