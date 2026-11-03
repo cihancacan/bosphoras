@@ -22,22 +22,51 @@ s.headers.update({'User-Agent':'BosphorasLuxuryStays/1.0 (editorial asset resear
 SUPPORTED=('CC BY-SA','CC BY ','CC0','Public domain')
 meta_cache={}
 
+def load_commons_info():
+    """Batch 20 Commons image-info lookups in ONE request to avoid per-image 429 rate limiting."""
+    lookup={}
+    candidates=[p for p in items if p['type']=='wikimedia']
+    titles='|'.join('File:'+unquote(p['sourcePage'].split('File:',1)[1]).replace('_',' ') for p in candidates)
+    cache_file=ROOT/'data/travel/galleCommonsInfoCache.json'
+    if cache_file.exists():
+        payload=json.loads(cache_file.read_text(encoding='utf-8'))
+    else:
+        last=None
+        for attempt in range(4):
+            try:
+                response=s.get('https://commons.wikimedia.org/w/api.php',
+                    params={'action':'query','titles':titles,'prop':'imageinfo',
+                            'iiprop':'url|sha1|extmetadata','iiurlwidth':1280,'format':'json'},timeout=45)
+                if response.status_code==429:
+                    print('COMMONS_BATCH_RATE_LIMIT',attempt+1,flush=True)
+                    time.sleep(4*(attempt+1))
+                    continue
+                response.raise_for_status()
+                payload=response.json()
+                cache_file.write_text(json.dumps(payload,ensure_ascii=False),encoding='utf-8')
+                break
+            except Exception as exc:
+                last=exc
+                time.sleep(2+attempt*2)
+        else:
+            raise RuntimeError('Commons batch metadata could not be loaded: '+str(last))
+    for entry in payload.get('query',{}).get('pages',{}).values():
+        if entry.get('imageinfo'):
+            lookup[entry['title']]=entry['imageinfo'][0]
+    if len(lookup)!=len(candidates):
+        raise RuntimeError(f'Expected {len(candidates)} valid Commons files; found {len(lookup)}: '+str([p['sourcePage'] for p in candidates if ('File:'+unquote(p['sourcePage'].split('File:',1)[1]).replace('_',' ')) not in lookup]))
+    print('GALLE_COMMONS_BULK_METADATA_OK',len(lookup),flush=True)
+    return lookup
+
+COMMONS_INFO=load_commons_info()
+
 def metadata(item):
     if item['type']!='wikimedia':
         return {}, [item['sourceUrl']]
     title='File:'+unquote(item['sourcePage'].split('File:',1)[1]).replace('_',' ')
-    info=None
-    try:
-        resp=s.get('https://commons.wikimedia.org/w/api.php',
-            params={'action':'query','titles':title,'prop':'imageinfo',
-                    'iiprop':'url|sha1|extmetadata','iiurlwidth':1280,'format':'json'},timeout=35)
-        resp.raise_for_status()
-        page=next(iter(resp.json()['query']['pages'].values()))
-        info=page.get('imageinfo',[None])[0]
-    except Exception as err:
-        print('COMMONS_METADATA_FAILURE',item['key'],str(err)[:160],flush=True)
+    info=COMMONS_INFO.get(title)
     if not info:
-        raise RuntimeError('Cannot verify Commons source metadata: '+item['sourcePage'])
+        raise RuntimeError('Commons item not found: '+title)
     ext=info.get('extmetadata',{})
     lic=ext.get('LicenseShortName',{}).get('value','')
     lic_url=ext.get('LicenseUrl',{}).get('value','').replace('http://','https://',1)
