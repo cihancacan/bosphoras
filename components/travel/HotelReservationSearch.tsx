@@ -113,8 +113,8 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
     {!bookingUrl && <section className={s.searchHero} aria-labelledby="reservation-title">
       <div className={s.heroPhotos} aria-hidden="true"><span className={s.heroSlide} /><span className={s.heroSlide} /><span className={s.heroSlide} /><span className={s.heroVeil} /></div>
       <div className={s.heroInner}>
-        <h1 id="reservation-title">{fr ? 'Votre prochain séjour commence ici.' : 'Your next stay starts here.'}</h1>
-        <p className={s.heroText}>{fr ? 'L’évasion a ses belles adresses. Trouvez la vôtre.' : 'Escape has its finest addresses. Find yours.'}</p>
+        <h1 id="reservation-title">{fr ? 'Des adresses qui valent le voyage.' : 'Hotels worth travelling for.'}</h1>
+        <p className={s.heroText}>{fr ? 'Découvrez des hôtels remarquables, aux quatre coins du monde.' : 'Discover remarkable hotels around the world.'}</p>
         <div className={s.searchPanel} aria-label={fr ? 'Rechercher des hôtels' : 'Search hotels'} aria-busy={busy}>
           {!widgetReady && <div className={s.widgetLoading} role="status"><Search size={20} />{fr ? 'Chargement de la recherche…' : 'Loading hotel search…'}</div>}
           <div ref={widget} id={widgetId} className={s.widget} />

@@ -1,4 +1,4 @@
-.page{min-height:100vh;background:#fbfaf7;color:#172b2c;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif}
+.page{min-height:100vh;background:#fbfaf7;color:#172b2c;font-family:var(--font-sans)}
 .page :is(a,button,input):focus-visible{outline:2px solid #9d7b3e;outline-offset:4px}
 .header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:18px max(4%,calc((100% - 1320px)/2));background:#172b2c;color:#fff}
 .brand{display:block;flex-shrink:0;color:inherit;line-height:1.1;text-decoration:none}
@@ -21,8 +21,8 @@
 @keyframes heroFade{0%,29%{opacity:1}34%,95%{opacity:0}100%{opacity:1}}
 .eyebrow{font-size:10px;letter-spacing:.16em;font-weight:600;margin:0 0 12px}
 .searchHero .eyebrow{color:#d9c89f}
-.searchHero h1{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:clamp(35px,4vw,59px);font-weight:500;letter-spacing:-.035em;line-height:1.13;margin:0;max-width:850px;color:#102d35;text-shadow:0 1px 5px rgba(255,255,255,.26)}
-.heroText{font-size:clamp(16px,1.7vw,21px);color:#203b43;margin:22px 0 40px;max-width:750px;font-weight:450;text-shadow:0 1px 8px rgba(255,255,255,.34)}
+.searchHero h1{font-family:var(--font-sans);font-size:clamp(34px,4vw,56px);font-weight:600;letter-spacing:-.035em;line-height:1.12;margin:0;max-width:880px;color:#102d35;text-shadow:0 1px 5px rgba(255,255,255,.26)}
+.heroText{font-family:var(--font-sans);font-size:clamp(16px,1.55vw,19px);color:#203b43;margin:18px 0 38px;max-width:750px;font-weight:400;line-height:1.55;letter-spacing:0;text-shadow:0 1px 8px rgba(255,255,255,.34)}
 .searchPanel{margin-top:26px;background:rgba(255,255,255,.98);border:1px solid #dbcba8;border-radius:12px;box-shadow:0 16px 44px rgba(25,56,61,.15);color:#172b2c;position:relative;min-height:70px}
 .widget{width:100%;min-width:0}
 .widget :global(.search-bar){width:100%!important;max-width:none!important;box-sizing:border-box!important;margin:0!important;box-shadow:none!important;border:0!important;border-radius:6px!important}
@@ -91,5 +91,5 @@
 .footer a{color:inherit}
 @media(min-width:1450px){.benefits,.inspiration{padding-left:0;padding-right:0}}
 @media(max-width:700px){.header{padding:16px 5%;gap:14px}.brand strong{font-size:17px}.nav{gap:14px;font-size:11px}.nav a[data-secondary]{display:none}.languages{padding-left:9px;gap:0}.searchHero{padding:54px 5% 58px;min-height:450px}.heroText{font-size:13px}.searchNote{font-size:10px;flex-wrap:wrap;gap:5px}.searchPanel{min-height:100px}.benefits{grid-template-columns:1fr;padding:25px 5%;gap:18px}.benefits p{font-size:12px}.benefits span{font-size:11px}.inspiration{padding:30px 5%}.sectionTitle{align-items:start;flex-direction:column;gap:14px}.sectionTitle h2{font-size:24px}.cityGrid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:8px}.city{flex:0 0 82%;height:230px;scroll-snap-align:start}.guideAside{margin:0 5% 28px;padding:23px;align-items:start;flex-direction:column}.guideAside h2{font-size:20px}.results{padding:16px 0 0}.resultsHeading{padding:0 5% 14px;align-items:start;flex-direction:column;gap:11px}.resultsHeading h1{font-size:17px}.bookingFrame{border-radius:0;border-left:0;border-right:0;height:950px;height:max(850px,100dvh)}.frameNote{padding:12px 5% 20px}.disclosure{padding:23px 5%}.disclosure>div{grid-template-columns:1fr;gap:12px}.footer{padding:22px 5%;align-items:start;flex-direction:column;gap:15px}.footer nav{flex-wrap:wrap;gap:14px}}
-@media(max-width:700px){.heroVeil{background:linear-gradient(90deg,rgba(247,250,247,.84),rgba(247,250,247,.49) 75%,rgba(247,250,247,.20))}.heroSlide:nth-child(1){background-position:56% center}.heroSlide:nth-child(2){background-position:56% center}.heroSlide:nth-child(3){background-position:55% center}.searchHero h1{font-size:clamp(42px,10vw,59px);max-width:95%}.searchNote{border-radius:10px}}
+@media(max-width:700px){.heroVeil{background:linear-gradient(90deg,rgba(247,250,247,.84),rgba(247,250,247,.49) 75%,rgba(247,250,247,.20))}.heroSlide:nth-child(1){background-position:56% center}.heroSlide:nth-child(2){background-position:56% center}.heroSlide:nth-child(3){background-position:55% center}.searchHero h1{font-size:clamp(32px,7.8vw,45px);max-width:95%}.searchNote{border-radius:10px}}
 @media(prefers-reduced-motion:reduce){.city>img{transition:none}.city:hover>img{transform:none}.heroSlide{animation:none;opacity:0}.heroSlide:first-child{opacity:1}}
