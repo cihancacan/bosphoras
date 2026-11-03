@@ -350,8 +350,8 @@
       "identitySource": "commons_filename_and_item_metadata",
       "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Umaid_bhawan_palace_Jodhpur.jpg/1280px-Umaid_bhawan_palace_Jodhpur.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
       "sourceSHA256": "ef237a8fc13d0f837d4d9e97ca2e57c1bb0a81bbf3b308685d0730d9c1c685a3",
-      "webpSHA256": "5c283e2aa66d95c916e63c71e5c4fbb640df17fe23c077a3fe8325e9fdd20eba",
-      "webpBytes": 239554,
+      "webpSHA256": "e0a93872cf2ae2606f89ce7d739a9c338dc3bdd3cb5ef6e9a6edb2565c0faa2d",
+      "webpBytes": 223396,
       "sourceBytes": 356872,
       "sourcePixels": [
         1280,
@@ -359,13 +359,13 @@
       ],
       "webpPixels": [
         1280,
-        720
+        663
       ],
       "visuallyVerified": true,
       "previewVisualApproved": true,
       "visualReviewScope": "source attribution and publicly displayed subject matched; owner private preview review required",
-      "pixelFingerprint": "60e96ff1ccc1074eb1f92b9b17f792c2176e9ea75fb7ff5a10880acb1a61a0e1",
-      "dhash": "1f1f3e9f8b9b91c7",
+      "pixelFingerprint": "6ec09a70916ae0df60aa3bf5fc73c2353865be5651f3056cb071324a928bd282",
+      "dhash": "1f1f3e1f8f9b9b85",
       "publicUseApproved": false
     },
     {
