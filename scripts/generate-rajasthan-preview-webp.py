@@ -69,6 +69,11 @@ results=[]
 for item in photos:
     im,raw,url=fetch_image(item)
     before=list(im.size)
+    # Commons Taj garden source carries a smartphone overlay at bottom-left.
+    # The CC BY-SA source remains attributed; this documented crop keeps the
+    # actual Umaid Bhawan subject but removes the camera-brand watermark.
+    if item['key']=='taj-2':
+        im=im.crop((0,0,im.width,im.height-max(38,int(im.height*0.08))))
     im.thumbnail((1280,850),Image.Resampling.LANCZOS)
     data=None
     for q in (78,74,70,66,62,58,54):
