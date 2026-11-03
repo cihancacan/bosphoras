@@ -113,9 +113,9 @@
       "key": "scene-5",
       "kind": "regional-landscape",
       "place": "Kumbhalgarh",
-      "subject": "Kumbhalgarh Fort and gardens",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Kumbhalgarh_Fort.jpg",
-      "credit": "Yashasvee Basotia",
+      "subject": "Kumbhalgarh Fort in the Aravalli hills",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kumbhalgarh_Fort-Kumbhalgarh-Rajasthan-IMG_001.jpg",
+      "credit": "Ridhi Jain",
       "license": "CC BY-SA 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
       "metadataSourceIdentified": true,
@@ -464,6 +464,7 @@
     "Hotel operators' marketing pages establish hotel identity and amenities, NOT permission to republish their copyrighted images.",
     "No production or preview deployment until 21 unique approved local WebP files, exact geolocation and hotel identity checks, attribution and license permissions, brand typography, hero contrast, FR/EN SEO and mobile responsiveness pass.",
     "Do not reuse the same Udaipur or Jaipur photo binaries in the Rajasthan page.",
-    "An official website mention does not assert any partnership, negotiated rates or a customer-support obligation."
+    "An official website mention does not assert any partnership, negotiated rates or a customer-support obligation.",
+    "Rejected the initial Kumbhalgarh photo candidate because its Commons page carried a watermark notice; replaced the lead with an alternative geolocated licensed file, pending visual inspection."
   ]
 }
