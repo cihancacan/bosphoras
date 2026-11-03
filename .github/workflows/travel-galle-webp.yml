@@ -1,0 +1,81 @@
+name: Bosphoras Galle 79 - 21 source-checked private-preview WebPs
+on:
+  push:
+    branches:
+      - feature/luxury-travel-seo-destinations-20261012
+    paths:
+      - .github/workflows/travel-galle-webp.yml
+      - scripts/generate-galle-preview-webp.py
+      - data/travel/galleMediaSources.json
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: galle-79-webp-feature
+  cancel-in-progress: false
+jobs:
+  build-galle-reviewed-source-candidates:
+    if: github.ref == 'refs/heads/feature/luxury-travel-seo-destinations-20261012'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install photo tools
+        run: python -m pip install --disable-pip-version-check 'Pillow>=10,<12' 'requests>=2.31,<3'
+      - name: Convert 21 named original sources to local optimized WebP, capture metadata and hashes
+        run: python -u scripts/generate-galle-preview-webp.py
+      - name: Verify all 21 source distinct images and owner-preview rights
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          from PIL import Image
+          m=json.load(open('data/travel/galleMediaCandidates.json'))
+          assert m['cityCount']==9 and m['hotelCount']==12 and not m['publicUseApproved']
+          images=m['destinationScenes']+m['hotels']
+          assert len(images)==21 and len({p['webpSHA256'] for p in images})==21
+          assert all(p['commercialRightsCleared'] for p in m['destinationScenes'])
+          assert all(not p['previewVisualApproved'] for p in images)
+          assert len({p['sourcePage'] for p in images})==21
+          for p in images:
+            loc=pathlib.Path('public'+p['localPath'])
+            assert loc.is_file(), p['key']
+            assert hashlib.sha256(loc.read_bytes()).hexdigest()==p['webpSHA256']
+            with Image.open(loc) as im:
+              assert im.format=='WEBP' and im.width<=1280 and im.height<=850
+          assert pathlib.Path('public/images/travel/galle-premium/source-review-contact-sheet.webp').is_file()
+          print('GALLE_79_21_REAL_WEBP_CANDIDATES_READY_FOR_VISUAL_QA')
+          PY
+      - name: Commit optimized WebPs, audit and contact sheet to existing feature branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- public/images/travel/galle-premium/ data/travel/galleMediaCandidates.json data/travel/galleWebpOptimization.json
+          if ! git diff --cached --quiet; then
+            git commit -m "assets(travel): Galle 79 21 source-checked WebP photo candidates [skip ci]"
+            for attempt in 1 2 3 4; do
+              git fetch origin feature/luxury-travel-seo-destinations-20261012
+              git rebase origin/feature/luxury-travel-seo-destinations-20261012
+              if git push origin HEAD:feature/luxury-travel-seo-destinations-20261012; then
+                echo "GALLE_79_CANDIDATES_COMMITTED"
+                exit 0
+              fi
+              sleep 3
+            done
+            echo "Galle asset push failed after retries" >&2
+            exit 1
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: galle-79-image-optimization-audit
+          path: |
+            data/travel/galleWebpOptimization.json
+            public/images/travel/galle-premium/source-review-contact-sheet.webp
+          if-no-files-found: ignore
