@@ -348,10 +348,10 @@
       "localPath": "/images/travel/rajasthan-premium/hotels/taj-2.webp",
       "commercialRightsCleared": true,
       "identitySource": "commons_filename_and_item_metadata",
-      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Umaid_bhawan_palace_Jodhpur.jpg/1280px-Umaid_bhawan_palace_Jodhpur.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Umaid_bhawan_palace_Jodhpur.jpg/1280px-Umaid_bhawan_palace_Jodhpur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourceSHA256": "ef237a8fc13d0f837d4d9e97ca2e57c1bb0a81bbf3b308685d0730d9c1c685a3",
-      "webpSHA256": "e0a93872cf2ae2606f89ce7d739a9c338dc3bdd3cb5ef6e9a6edb2565c0faa2d",
-      "webpBytes": 223396,
+      "webpSHA256": "bf975095d77a4a38bb69e7dfd8f7dd29e2025bd61ed3f8d69ecada09791cc6fd",
+      "webpBytes": 211422,
       "sourceBytes": 356872,
       "sourcePixels": [
         1280,
@@ -359,13 +359,13 @@
       ],
       "webpPixels": [
         1280,
-        663
+        627
       ],
       "visuallyVerified": true,
       "previewVisualApproved": true,
       "visualReviewScope": "source attribution and publicly displayed subject matched; owner private preview review required",
-      "pixelFingerprint": "6ec09a70916ae0df60aa3bf5fc73c2353865be5651f3056cb071324a928bd282",
-      "dhash": "1f1f3e1f8f9b9b85",
+      "pixelFingerprint": "bf442926b60afa45ab59f66f2314e34aa5fc34d50fe527e298c93a603a241b34",
+      "dhash": "1f1f3e3f8b8b1b91",
       "publicUseApproved": false
     },
     {
@@ -381,7 +381,7 @@
       "localPath": "/images/travel/rajasthan-premium/hotels/taj-3.webp",
       "commercialRightsCleared": true,
       "identitySource": "commons_filename_and_item_metadata",
-      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Indoor_swimming_pool_at_Umaid_Bhawan_Palace%2C_Jodhpur.jpg/1280px-Indoor_swimming_pool_at_Umaid_Bhawan_Palace%2C_Jodhpur.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Indoor_swimming_pool_at_Umaid_Bhawan_Palace%2C_Jodhpur.jpg/1280px-Indoor_swimming_pool_at_Umaid_Bhawan_Palace%2C_Jodhpur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "sourceSHA256": "2156cbb182f2207b9d68bce4e604022bb2fff9f3d6f821f19b311b47dbd13119",
       "webpSHA256": "b1d043c97d1bd518569b06492dda70a7b1c19dfbf1e699f6de886d4bad0b26ff",
       "webpBytes": 195780,
