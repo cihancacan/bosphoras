@@ -10,7 +10,7 @@
 .languages{display:flex;gap:6px;font-size:11px;border-left:1px solid #ffffff38;padding-left:20px}
 .languages a{padding:7px;border-radius:4px}
 .languages a[aria-current=page]{background:#ffffff18}
-.searchHero{position:relative;background:#d6ebea;color:#142d35;padding:82px 4% 74px;isolation:isolate;overflow:hidden;min-height:455px}
+.searchHero{position:relative;z-index:10;background:#d6ebea;color:#142d35;padding:82px 4% 74px;isolation:isolate;overflow:visible;min-height:455px}
 .heroPhotos{position:absolute;inset:0;z-index:-1;overflow:hidden;background:#d6ebe9}
 .heroSlide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;animation:heroFade 21s infinite ease-in-out}
 .heroSlide:nth-child(1){background-image:url('/images/travel/maldives-premium/destination/overwater-villas.webp');background-position:center 52%;opacity:1}
@@ -23,15 +23,15 @@
 .searchHero .eyebrow{color:#d9c89f}
 .searchHero h1{font-family:var(--font-sans);font-size:clamp(34px,4vw,56px);font-weight:600;letter-spacing:-.035em;line-height:1.12;margin:0;max-width:880px;color:#102d35;text-shadow:0 1px 5px rgba(255,255,255,.26)}
 .heroText{font-family:var(--font-sans);font-size:clamp(16px,1.55vw,19px);color:#203b43;margin:18px 0 38px;max-width:750px;font-weight:400;line-height:1.55;letter-spacing:0;text-shadow:0 1px 8px rgba(255,255,255,.34)}
-.searchPanel{margin-top:26px;background:rgba(255,255,255,.98);border:1px solid #dbcba8;border-radius:12px;box-shadow:0 16px 44px rgba(25,56,61,.15);color:#172b2c;position:relative;min-height:70px}
-.widget{width:100%;min-width:0}
-.widget :global(.search-bar){width:100%!important;max-width:none!important;box-sizing:border-box!important;margin:0!important;box-shadow:none!important;border:0!important;border-radius:6px!important}
+.searchPanel{margin-top:26px;background:rgba(255,255,255,.98);border:1px solid #dbcba8;border-radius:12px;box-shadow:0 16px 44px rgba(25,56,61,.15);color:#172b2c;position:relative;z-index:20;overflow:visible;min-height:70px}
+.widget{position:relative;z-index:21;width:100%;min-width:0;overflow:visible}
+.widget :global(.search-bar){width:100%!important;max-width:none!important;box-sizing:border-box!important;margin:0!important;box-shadow:none!important;border:0!important;border-radius:6px!important;overflow:visible!important}
 .widget :global(.search-button){display:flex!important;align-items:center!important;min-width:142px!important;flex-shrink:0;padding:12px 18px!important;gap:10px;justify-content:center}
 .widget :global(.search-text){display:block!important;position:static!important;width:auto!important;max-width:none!important;overflow:visible!important;white-space:nowrap;transform:none!important}
 .widget :global(.search-button svg){display:none!important}
 .widgetLoading{display:flex;align-items:center;gap:12px;padding:22px;font-size:14px}
 .widgetLoading:has(+ .widget:not(:empty)){display:none}
-.searchNote{display:flex;align-items:center;gap:8px;color:#21414a;background:rgba(255,255,255,.73);border-radius:999px;width:fit-content;max-width:100%;padding:7px 12px;font-size:11px;line-height:1.6;margin:17px 0 0}
+.searchNote{display:flex;align-items:center;gap:8px;color:#21414a;background:rgba(255,255,255,.73);border-radius:999px;width:fit-content;max-width:100%;padding:7px 12px;font-size:11px;line-height:1.6;margin:17px 0 0;position:relative;z-index:1}
 .error{padding:12px 16px;color:#963e25;font-size:13px;line-height:1.7;margin:0}
 .error a{color:inherit;text-decoration:underline}
 .formStatus{margin:0;padding:7px 16px;font-size:12px}
@@ -93,3 +93,23 @@
 @media(max-width:700px){.header{padding:16px 5%;gap:14px}.brand strong{font-size:17px}.nav{gap:14px;font-size:11px}.nav a[data-secondary]{display:none}.languages{padding-left:9px;gap:0}.searchHero{padding:54px 5% 58px;min-height:450px}.heroText{font-size:13px}.searchNote{font-size:10px;flex-wrap:wrap;gap:5px}.searchPanel{min-height:100px}.benefits{grid-template-columns:1fr;padding:25px 5%;gap:18px}.benefits p{font-size:12px}.benefits span{font-size:11px}.inspiration{padding:30px 5%}.sectionTitle{align-items:start;flex-direction:column;gap:14px}.sectionTitle h2{font-size:24px}.cityGrid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:8px}.city{flex:0 0 82%;height:230px;scroll-snap-align:start}.guideAside{margin:0 5% 28px;padding:23px;align-items:start;flex-direction:column}.guideAside h2{font-size:20px}.results{padding:16px 0 0}.resultsHeading{padding:0 5% 14px;align-items:start;flex-direction:column;gap:11px}.resultsHeading h1{font-size:17px}.bookingFrame{border-radius:0;border-left:0;border-right:0;height:950px;height:max(850px,100dvh)}.frameNote{padding:12px 5% 20px}.disclosure{padding:23px 5%}.disclosure>div{grid-template-columns:1fr;gap:12px}.footer{padding:22px 5%;align-items:start;flex-direction:column;gap:15px}.footer nav{flex-wrap:wrap;gap:14px}}
 @media(max-width:700px){.heroVeil{background:linear-gradient(90deg,rgba(247,250,247,.84),rgba(247,250,247,.49) 75%,rgba(247,250,247,.20))}.heroSlide:nth-child(1){background-position:56% center}.heroSlide:nth-child(2){background-position:56% center}.heroSlide:nth-child(3){background-position:55% center}.searchHero h1{font-size:clamp(32px,7.8vw,45px);max-width:95%}.searchNote{border-radius:10px}}
 @media(prefers-reduced-motion:reduce){.city>img{transition:none}.city:hover>img{transform:none}.heroSlide{animation:none;opacity:0}.heroSlide:first-child{opacity:1}}
+
+/* The supplier's autocomplete/calendar popovers must extend beyond the hero. */
+.heroPhotos{pointer-events:none}
+.widget :global(.search-bar) :global([role="listbox"]),
+.widget :global(.search-bar) :global([role="dialog"]){z-index:100!important}
+@media(max-width:1023px){
+  .searchHero{padding-top:58px;padding-bottom:68px}
+  .heroInner{width:100%}
+  .searchPanel{width:100%;max-width:100%}
+  .widget :global(.search-bar){display:flex!important;flex-wrap:wrap!important;align-items:stretch!important;gap:10px!important}
+  .widget :global(.search-button){width:100%!important;min-width:0!important;min-height:48px;justify-content:center!important}
+  .widget :global(input){font-size:16px!important;max-width:100%}
+}
+@media(max-width:700px){
+  .searchHero{padding-bottom:76px}
+  .heroText{font-size:15px;line-height:1.5}
+  .searchPanel{margin-top:23px}
+  .widget :global(.search-bar){flex-direction:column!important}
+  .widget :global(.search-bar) > *{width:100%!important;max-width:100%!important;min-width:0!important}
+}

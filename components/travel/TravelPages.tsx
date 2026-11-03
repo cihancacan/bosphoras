@@ -134,6 +134,7 @@ import type { Metadata } from 'next';
 import { destinationBySlug, travelCategories, travelDestinations, travelRegions, approvedDestinationSlugs, approvedCategorySlugs } from '@/data/travel/destinations';
 import type { TravelCategory, TravelDestination } from '@/data/travel/destinations';
 import { travelHref, travelLocaleCodes, travelKeywordTitles, travelText } from '@/lib/travel/i18n';
+import { TravelMobileMenu } from './TravelMobileMenu';
 import type { TravelLocale } from '@/lib/travel/i18n';
 
 const ORIGIN = 'https://www.bosphoras.com';
@@ -276,22 +277,36 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
 }
 export function Header({ locale, slug, limitedLocales = false }: { locale: TravelLocale; slug: string; limitedLocales?: boolean }) {
   const t = travelText(locale);
-  return <header className="bg-[#0d1a23] text-[#faf6e9] border-b border-[#c5a56a]/30">
-    <div className="mx-auto max-w-7xl px-5 py-5 flex flex-wrap gap-5 items-center justify-between">
-      <Link href={travelHref(locale)} className="tracking-[0.20em] text-sm sm:text-base font-semibold uppercase">
+  const hotelSearch = (locale === 'fr' || locale === 'en') && isHotelSearchAvailable();
+  const mobileLinks = [
+    ...(hotelSearch ? [{ label: locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel', href: travelHref(locale, 'search'), featured: true }] : []),
+    { label: t.destinations, href: travelHref(locale, 'destinations') },
+    { label: t.lastMinute, href: travelHref(locale, 'last-minute') },
+    { label: t.privateCollection, href: travelHref(locale, 'private-collection') },
+  ];
+  const mobileCategories = travelCategories.map(category => ({ label: travelKeywordTitles[category][locale], href: travelHref(locale, category) }));
+  const mobileLanguages = travelLocaleCodes.filter(code => !limitedLocales || code === 'fr' || code === 'en').map(code => ({
+    label: code === 'pt' ? 'PT-BR' : code.toUpperCase(),
+    code,
+    href: travelHref(code, slug),
+  }));
+  return <header className="relative z-50 border-b border-[#c5a56a]/30 bg-[#0d1a23] text-[#faf6e9]">
+    <div className="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-4 lg:py-5">
+      <Link href={travelHref(locale)} className="shrink-0 text-sm font-semibold uppercase tracking-[0.20em] sm:text-base">
         BOSPHORAS <span className="text-[#cdb37b]">LUXURY STAYS</span>
       </Link>
-      <nav aria-label="Travel primary navigation" className="flex gap-4 sm:gap-6 text-xs sm:text-sm flex-wrap items-center">
-        {(locale === 'fr' || locale === 'en') && isHotelSearchAvailable() && <Link href={travelHref(locale,'search')} className="text-[#e7c78a]">{locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel'}</Link>}
+      <nav aria-label="Travel primary navigation" className="hidden items-center gap-4 text-xs lg:flex lg:gap-6 lg:text-sm">
+        {hotelSearch && <Link href={travelHref(locale,'search')} className="text-[#e7c78a]">{locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel'}</Link>}
         <Link href={travelHref(locale,'destinations')} className="hover:text-[#e7c78a]">{t.destinations}</Link>
         <Link href={travelHref(locale,'last-minute')} className="hover:text-[#e7c78a]">{t.lastMinute}</Link>
         <Link href={travelHref(locale,'private-collection')} className="hover:text-[#e7c78a]">{t.privateCollection}</Link>
       </nav>
+      <TravelMobileMenu locale={locale} links={mobileLinks} categories={mobileCategories} languages={mobileLanguages} />
     </div>
-    <nav aria-label="Travel categories" className="mx-auto max-w-7xl px-5 pb-4 flex gap-6 overflow-x-auto whitespace-nowrap text-xs sm:text-sm">
-      {travelCategories.map(category => <Link key={category} className="hover:text-[#e7c78a] shrink-0" href={travelHref(locale,category)}>{travelKeywordTitles[category][locale]}</Link>)}
+    <nav aria-label="Travel categories" className="mx-auto hidden max-w-7xl gap-6 overflow-x-auto whitespace-nowrap px-5 pb-4 text-xs lg:flex lg:text-sm">
+      {travelCategories.map(category => <Link key={category} className="shrink-0 hover:text-[#e7c78a]" href={travelHref(locale,category)}>{travelKeywordTitles[category][locale]}</Link>)}
     </nav>
-    <nav aria-label="Travel language versions" className="mx-auto max-w-7xl px-5 pb-4 flex flex-wrap gap-x-3 gap-y-2 text-xs">
+    <nav aria-label="Travel language versions" className="mx-auto hidden max-w-7xl flex-wrap gap-x-3 gap-y-2 px-5 pb-4 text-xs lg:flex">
       {travelLocaleCodes.filter(code => !limitedLocales || code === 'fr' || code === 'en').map(code => <Link key={code} href={travelHref(code,slug)} className={code === locale ? 'text-[#f0cb8e] underline underline-offset-4' : 'text-[#b6c3c5] hover:text-white'} lang={travelText(code).hreflang} hrefLang={travelText(code).hreflang}>{code === 'pt' ? 'PT-BR' : code.toUpperCase()}</Link>)}
     </nav>
   </header>;
