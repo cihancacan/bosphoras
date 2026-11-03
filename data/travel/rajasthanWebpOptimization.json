@@ -1,0 +1,241 @@
+{
+  "total": 21,
+  "landscapes": 9,
+  "hotelPhotos": 12,
+  "totalOriginalBytes": 5797804,
+  "totalWebPBytes": 3096144,
+  "publicUseApproved": false,
+  "photos": [
+    {
+      "key": "scene-1",
+      "localPath": "/images/travel/rajasthan-premium/destination/scene-1.webp",
+      "sourceSHA256": "e92fab989f07efbab65d29d2315cd04cf092ff482cc4ab3816eeed30686b34d6",
+      "webpSHA256": "76e9ba937d8d6147e5e50745799a05beb39bdd19c0eda3993026f831c060d029",
+      "sourceBytes": 403297,
+      "webpBytes": 194172,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mehrangarh_Fort_and_the_Blue_City_at_dawn,_Jodhpur.jpg",
+      "credit": "Reema Jalihal",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "scene-2",
+      "localPath": "/images/travel/rajasthan-premium/destination/scene-2.webp",
+      "sourceSHA256": "be1607170968db5ccea6c0028704c1e4fa6e49c2f472808440b70f2a8339edf0",
+      "webpSHA256": "26f1e5fe7d35d72bc9bd4fb1d7e069a5491bc2786df9bc58747d7bce9bf87abf",
+      "sourceBytes": 581920,
+      "webpBytes": 85634,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Jaisalmer_fort-_the_golden_City.jpg",
+      "credit": "Jupiterthescholar",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "scene-3",
+      "localPath": "/images/travel/rajasthan-premium/destination/scene-3.webp",
+      "sourceSHA256": "c14d4d013e8bdee14c1caf3698bac0d4794b562a3fa7c18e9a06db6b282755d1",
+      "webpSHA256": "5e672d7680f6645205b89153ca870d1493e61e7d7e25963a748d994a7355a2df",
+      "sourceBytes": 73569,
+      "webpBytes": 21958,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sam_Sand_dunes.jpg",
+      "credit": "Rohanguj2",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "scene-4",
+      "localPath": "/images/travel/rajasthan-premium/destination/scene-4.webp",
+      "sourceSHA256": "ad4a1df8d367d4813f0d96aa61fda0fdc5dae266a2e3237debc71ceb9361df0b",
+      "webpSHA256": "70863b489f5e44eaf6eba2e29d2f395ada157adbd322e687a05e217e7bfc7a49",
+      "sourceBytes": 351946,
+      "webpBytes": 214500,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Padam_Talao.jpg",
+      "credit": "Kushal Kingshuk",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "scene-5",
+      "localPath": "/images/travel/rajasthan-premium/destination/scene-5.webp",
+      "sourceSHA256": "7db2ed4b274307df0e5695010c6d6274850fcf3c2ab8f621db00af636a2778f7",
+      "webpSHA256": "56549846a3b2dd05569301b67b435c1b403dcc600d2ea92a441de29b0d6abc12",
+      "sourceBytes": 375375,
+      "webpBytes": 191956,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kumbhalgarh_Fort-Kumbhalgarh-Rajasthan-IMG_001.jpg",
+      "credit": "Ridhi Jain",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "scene-6",
+      "localPath": "/images/travel/rajasthan-premium/destination/scene-6.webp",
+      "sourceSHA256": "1a10eaade91ddf91977d84b195f91225bc148b63710ba55a47fc16bb294a39c1",
+      "webpSHA256": "c1608b25979e9525511ba22b6c8a620b9f45808c470d759cb8004652e2a96dbe",
+      "sourceBytes": 248649,
+      "webpBytes": 128474,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lake_view_of_City_Palace_(Udaipur),_Rajasthan,_India_ni20-25.jpg",
+      "credit": "G41rn8",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "scene-7",
+      "localPath": "/images/travel/rajasthan-premium/destination/scene-7.webp",
+      "sourceSHA256": "1c154e50bafbfc94256ea7954d69a34ec356d972c03a71e5d1533196b99bf09b",
+      "webpSHA256": "7c3b33eca999a19c9ad6067e2747ef9eebd245745f9ab02ac7520dd74a1df7e7",
+      "sourceBytes": 168097,
+      "webpBytes": 94192,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pushkar_lake_Rajasthan.jpg",
+      "credit": "Nik13d",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "scene-8",
+      "localPath": "/images/travel/rajasthan-premium/destination/scene-8.webp",
+      "sourceSHA256": "0d5b5e9bb8834d664097ebb43d939b842a300fdb0791f5ed33641b8607722e53",
+      "webpSHA256": "dc7caee8a956ebce8a43e0a1c3d582e94c35f2cac6c6b0656d6e30d3ac0348c6",
+      "sourceBytes": 374444,
+      "webpBytes": 256334,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chand_Baori.jpg",
+      "credit": "Krish.bera",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "scene-9",
+      "localPath": "/images/travel/rajasthan-premium/destination/scene-9.webp",
+      "sourceSHA256": "a683fabd4a5958f7cca609486b157d2606cb969739b7e24d58689d3b84909478",
+      "webpSHA256": "3e7255a184a2001d50de61cdce47a4671c7981147ccbf773554803326c2cf6f0",
+      "sourceBytes": 266561,
+      "webpBytes": 121790,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_city_of_blue_-_Jodhpur.jpg",
+      "credit": "Ishadave2204",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "taj-1",
+      "localPath": "/images/travel/rajasthan-premium/hotels/taj-1.webp",
+      "sourceSHA256": "085c22b2a1981c11d5ff04707f879e929d16fc0c0e642711844c09546d9f25ce",
+      "webpSHA256": "44ed2308e9be1ebb0b34392fdac19d6989aa22b29547ec6d097bb742ed9a6360",
+      "sourceBytes": 212998,
+      "webpBytes": 142274,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Umaid_Bhawan_Palace-Exterior.jpg",
+      "credit": "Yash Bhavsar",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "taj-2",
+      "localPath": "/images/travel/rajasthan-premium/hotels/taj-2.webp",
+      "sourceSHA256": "ef237a8fc13d0f837d4d9e97ca2e57c1bb0a81bbf3b308685d0730d9c1c685a3",
+      "webpSHA256": "5c283e2aa66d95c916e63c71e5c4fbb640df17fe23c077a3fe8325e9fdd20eba",
+      "sourceBytes": 356872,
+      "webpBytes": 239554,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Umaid_bhawan_palace_Jodhpur.jpg",
+      "credit": "Savanv10",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "taj-3",
+      "localPath": "/images/travel/rajasthan-premium/hotels/taj-3.webp",
+      "sourceSHA256": "2156cbb182f2207b9d68bce4e604022bb2fff9f3d6f821f19b311b47dbd13119",
+      "webpSHA256": "b1d043c97d1bd518569b06492dda70a7b1c19dfbf1e699f6de886d4bad0b26ff",
+      "sourceBytes": 315661,
+      "webpBytes": 195780,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Indoor_swimming_pool_at_Umaid_Bhawan_Palace,_Jodhpur.jpg",
+      "credit": "Colin Rose",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "key": "sujan-1",
+      "localPath": "/images/travel/rajasthan-premium/hotels/sujan-1.webp",
+      "sourceSHA256": "4ad72488c57f351e19de32f0b454781e38af6f1451d455536153919ee26c3135",
+      "webpSHA256": "71a5b03ae77a3503e38d0289b06c13289e4f76f683881d6dfec7a69e9bfeaebf",
+      "sourceBytes": 337062,
+      "webpBytes": 162248,
+      "sourcePage": "https://www.vogue.in/content/what-makes-sujan-the-serai-a-perfect-mini-moon-spot",
+      "credit": "Vogue India / SUJÁN",
+      "license": "Rights not independently verified; private owner preview only"
+    },
+    {
+      "key": "sujan-2",
+      "localPath": "/images/travel/rajasthan-premium/hotels/sujan-2.webp",
+      "sourceSHA256": "e8545102b13d23a74de33b2637755d85908dbd7be3b88d8f1e87d8caca475fae",
+      "webpSHA256": "43ed15f4acec9bdc12a221fb2328672178f8ad1b3d45b1fdc53df6641cf24e29",
+      "sourceBytes": 304482,
+      "webpBytes": 149340,
+      "sourcePage": "https://www.architecturaldigest.in/story/instagrammable-boutique-hotels-in-india-for-the-upcoming-long-weekend/",
+      "credit": "Architectural Digest India / SUJÁN",
+      "license": "Rights not independently verified; private owner preview only"
+    },
+    {
+      "key": "sujan-3",
+      "localPath": "/images/travel/rajasthan-premium/hotels/sujan-3.webp",
+      "sourceSHA256": "f523958539955dff5566b80c866e531c1e0fb4ca4e2b7d7e56b181425503e5c1",
+      "webpSHA256": "6f76e7abc38d8c261d17341d1f5da89a895abf4b88d156eb5381a6f3894453a1",
+      "sourceBytes": 127858,
+      "webpBytes": 79012,
+      "sourcePage": "https://www.steppestravel.com/us/accommodation/the-serai/",
+      "credit": "Steppes Travel / SUJÁN",
+      "license": "Rights not independently verified; private owner preview only"
+    },
+    {
+      "key": "oberoi-1",
+      "localPath": "/images/travel/rajasthan-premium/hotels/oberoi-1.webp",
+      "sourceSHA256": "15c9f2437635fd8c36b53fb8938c3836c6499275a594946990191bb0bb19425e",
+      "webpSHA256": "a64d423b8182817843a61a696b465e4eec4a33cc832f72f585650799bc7c9406",
+      "sourceBytes": 287503,
+      "webpBytes": 201688,
+      "sourcePage": "https://www.oberoihotels.com/hotels-in-ranthambhore-vanyavilas-resort/gallery/",
+      "credit": "The Oberoi Vanyavilas",
+      "license": "Rights not independently verified; private owner preview only"
+    },
+    {
+      "key": "oberoi-2",
+      "localPath": "/images/travel/rajasthan-premium/hotels/oberoi-2.webp",
+      "sourceSHA256": "03fda9c0adbc07601f90523ff5dfc2f36030c6a73d35a6cc7b902e465d25f2ed",
+      "webpSHA256": "b380d1851312a07e243859b3358f1760736a706d9e65633f6f4b7a68e90f2f1e",
+      "sourceBytes": 38389,
+      "webpBytes": 46030,
+      "sourcePage": "https://www.oberoihotels.com/hotels-in-ranthambhore-vanyavilas-resort/accommodation/luxury-tents/",
+      "credit": "The Oberoi Vanyavilas",
+      "license": "Rights not independently verified; private owner preview only"
+    },
+    {
+      "key": "oberoi-3",
+      "localPath": "/images/travel/rajasthan-premium/hotels/oberoi-3.webp",
+      "sourceSHA256": "eb578722b0328e11fda8b980d023ec49044d35687f312625d67d1be71f0e44c1",
+      "webpSHA256": "406dc793ac541e5bf8cee0d209363ea99812dc9013004f1a4583f0c25dfea526",
+      "sourceBytes": 165770,
+      "webpBytes": 195422,
+      "sourcePage": "https://www.oberoihotels.com/hotels-in-ranthambhore-vanyavilas-resort/accommodation/royal-tent/",
+      "credit": "The Oberoi Vanyavilas",
+      "license": "Rights not independently verified; private owner preview only"
+    },
+    {
+      "key": "sixsenses-1",
+      "localPath": "/images/travel/rajasthan-premium/hotels/sixsenses-1.webp",
+      "sourceSHA256": "cab23c0143664a926de6152a5633612a833ac141dcd669ca60cee7397282fad5",
+      "webpSHA256": "c02917d158313967a265d72e79672685764983d95ebd55179a4576346cc18f90",
+      "sourceBytes": 378739,
+      "webpBytes": 185776,
+      "sourcePage": "https://www.tatlerasia.com/places/six-senses-fort-barwara",
+      "credit": "Tatler Asia / Six Senses",
+      "license": "Rights not independently verified; private owner preview only"
+    },
+    {
+      "key": "sixsenses-2",
+      "localPath": "/images/travel/rajasthan-premium/hotels/sixsenses-2.webp",
+      "sourceSHA256": "1d4d4f6b05dc582d83701719e1b8481f1b2d83f995d4b89505982025962bc7c0",
+      "webpSHA256": "2a4680587c813521f2fdd9a525bf69f52bc9c6c1ab6c13b6583c3c23b22395e3",
+      "sourceBytes": 61374,
+      "webpBytes": 33970,
+      "sourcePage": "https://www.indusbound.com/hotels/six-senses-fort-barwara",
+      "credit": "Indusbound / Six Senses",
+      "license": "Rights not independently verified; private owner preview only"
+    },
+    {
+      "key": "sixsenses-3",
+      "localPath": "/images/travel/rajasthan-premium/hotels/sixsenses-3.webp",
+      "sourceSHA256": "f57b2bd80da16263a9f3480748ad24621e307fb4fd8292b6f9272692abd4f325",
+      "webpSHA256": "a8fff22d32ab72887ded5a6964874464919a9091212d7e9aa8f1bcc24bcbaea0",
+      "sourceBytes": 367238,
+      "webpBytes": 156040,
+      "sourcePage": "https://flospitality.com/sixsensesfortbarwara",
+      "credit": "Flospitality / Six Senses",
+      "license": "Rights not independently verified; private owner preview only"
+    }
+  ]
+}
