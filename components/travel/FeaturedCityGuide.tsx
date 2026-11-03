@@ -548,7 +548,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Rajasthan · du désert aux palais':'Rajasthan · from desert to palaces'}</p>
         <h2 className="mt-4 max-w-4xl font-serif text-3xl leading-tight sm:text-5xl">{fr?'Jodhpur, Jaisalmer, Ranthambore : neuf regards sur un Rajasthan pluriel.':'Jodhpur, Jaisalmer, Ranthambore: nine authentic Rajasthan perspectives.'}</h2>
-        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Neuf photographies de lieux réels, avec leurs sources et crédits. Les vues d'hôtels ne constituent pas une garantie de chambre.':'Nine sourced and credited real locations. Hotel pictures never guarantee an exact room view.'}</p>
+        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?"Neuf photographies de lieux réels, avec leurs sources et crédits. Les vues d’hôtels ne constituent pas une garantie de chambre.":"Nine sourced and credited real locations. Hotel pictures never guarantee an exact room view."}</p>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {([
             {key:'scene-1',frTitle:'Mehrangarh et ville bleue',enTitle:'Mehrangarh and Blue City'},
