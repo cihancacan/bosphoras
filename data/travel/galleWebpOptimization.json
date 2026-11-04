@@ -1,0 +1,220 @@
+{
+  "total": 21,
+  "landscapes": 9,
+  "hotelPhotos": 12,
+  "originalBytes": 15522942,
+  "totalWebPBytes": 2960828,
+  "publicUseApproved": false,
+  "photos": [
+    {
+      "key": "scene-1",
+      "localPath": "/images/travel/galle-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Galle_Fort_Lighthouse.jpg",
+      "sourceSHA256": "f4d083a8b1d9428fcb8b64efdd5a05bc781b7276890c90f577fc4b088721016f",
+      "webpSHA256": "a5dd1fba863a1036673cb83fe623562d02113733dc98eb455dd41c958e70db1e",
+      "webpBytes": 285112,
+      "license": "CC BY-SA 4.0",
+      "credit": "Rovin Shanila"
+    },
+    {
+      "key": "scene-2",
+      "localPath": "/images/travel/galle-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:GALLE_FORT.jpg",
+      "sourceSHA256": "9fec57207bde954e945dd6b1ed064410061e8bb89958fb3a55c3f479cd820ff0",
+      "webpSHA256": "69c6fe901713b04050efddeba7ebaae9ed81b1f957a531363afe74192d1f1256",
+      "webpBytes": 105410,
+      "license": "CC BY-SA 4.0",
+      "credit": "Vimukthi SL"
+    },
+    {
+      "key": "scene-3",
+      "localPath": "/images/travel/galle-premium/destination/scene-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Galle_Fort_wall_and_lighthouse.jpg",
+      "sourceSHA256": "9343fe5abb6dc8c8662a3ae98b1467cd3f18cad6722eda783984f2b6a01183a9",
+      "webpSHA256": "6d969397d635a8d580f01395b9447013772f552720a8a131a60e3617daf4bf6b",
+      "webpBytes": 133922,
+      "license": "CC BY-SA 4.0",
+      "credit": "Jan Kranendonk ( https://www.jankranendonk.nl )"
+    },
+    {
+      "key": "scene-4",
+      "localPath": "/images/travel/galle-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Groote_Kerk_Galle.jpg",
+      "sourceSHA256": "c410f921cde4a4a393f01efa75783a8bed2688848aa5abd91d445da5b401f25d",
+      "webpSHA256": "28a5cdf4218bf9c856b5da6c76554c1e3d95d6cb7cda6ca618145dd4ca4a32b8",
+      "webpBytes": 306242,
+      "license": "CC BY 4.0",
+      "credit": "Philip Nalangan"
+    },
+    {
+      "key": "scene-5",
+      "localPath": "/images/travel/galle-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Galle_Fort.jpg",
+      "sourceSHA256": "b0d61a45ccd0652a8d0849e22a3eaed1496188e156a8610b9c88f4a0cc7b07dc",
+      "webpSHA256": "23aa60d64e1923ef1c58bce49c5e890ad339bde50d6ec2ac8de8fdbfc8e3dd88",
+      "webpBytes": 228936,
+      "license": "CC BY-SA 4.0",
+      "credit": "Rovin Shanila"
+    },
+    {
+      "key": "scene-6",
+      "localPath": "/images/travel/galle-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Unawatuna_beach_sri_lanka.jpg",
+      "sourceSHA256": "d3a76c76dce0c76f783dcb3efe4bb13bb018b2cd91eedb366bbcd698638086a7",
+      "webpSHA256": "c11686507700d6791661639f894edf274fc960a1a0b4fabe68e389641bb368a6",
+      "webpBytes": 66210,
+      "license": "CC BY-SA 4.0",
+      "credit": "Ruchira159"
+    },
+    {
+      "key": "scene-7",
+      "localPath": "/images/travel/galle-premium/destination/scene-7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Koggala.JPG",
+      "sourceSHA256": "d68d562742fdb5c968bcc76838761028bdbb297286f9f634ffb075fbe69c9131",
+      "webpSHA256": "6ecaaea64052f53693090337d68d2306815ce766cb3c021c20c6b3c1b9c9847d",
+      "webpBytes": 68068,
+      "license": "CC BY-SA 3.0",
+      "credit": "Astronomyinertia"
+    },
+    {
+      "key": "scene-8",
+      "localPath": "/images/travel/galle-premium/destination/scene-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Galle_Fort_Light_House.jpg",
+      "sourceSHA256": "5ac4e7dd7381e19019f5e218e2579ccc9600d808a0361ef80f6a5dc2612f435c",
+      "webpSHA256": "2a2777d9e8e1bd446d2f7a01df03e1991d931c43abeadb0cec8afae1d9752514",
+      "webpBytes": 205560,
+      "license": "CC BY-SA 4.0",
+      "credit": "Nipuna Gamage"
+    },
+    {
+      "key": "scene-9",
+      "localPath": "/images/travel/galle-premium/destination/scene-9.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dutch_buildings_in_Galle_Fort_(7567626330).jpg",
+      "sourceSHA256": "f7b91c869718eaecc75d80f9a2ae3f366a54b38d88c764cbcb52ce26fd3ec0c7",
+      "webpSHA256": "c62c1e7bd2cc7ea75e75605dadaa3cd80975e63ba64df1c15a2af5fe6c0cf00e",
+      "webpBytes": 132842,
+      "license": "CC BY 2.0",
+      "credit": "shankar s. from Dubai, united arab emirates"
+    },
+    {
+      "key": "aman-1",
+      "localPath": "/images/travel/galle-premium/hotels/aman-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Amangalla_entrance.jpg",
+      "sourceSHA256": "939dbaae63b858ea2efbd2a5fbf212ef554b86f8706408fedb03d66fd22e04c4",
+      "webpSHA256": "4fdbdee63d1f0b78a8839fb6e0820cb584618a134ecff6759e69a5e1cb19050f",
+      "webpBytes": 197814,
+      "license": "CC BY-SA 4.0",
+      "credit": "Dan arndt"
+    },
+    {
+      "key": "aman-2",
+      "localPath": "/images/travel/galle-premium/hotels/aman-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Amangalla_facade.jpg",
+      "sourceSHA256": "81f5ff6e9cb4f9fe8dc733ab1a8252c3828a9246025326365fbf209c3d4cd7ff",
+      "webpSHA256": "fb329ca73f6752881c53efced0644636e16ee18045e00c66c6b6a87e4333d598",
+      "webpBytes": 157774,
+      "license": "CC BY-SA 4.0",
+      "credit": "Dan arndt"
+    },
+    {
+      "key": "aman-3",
+      "localPath": "/images/travel/galle-premium/hotels/aman-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Interior_View_of_Amangalla_Hotel.jpg",
+      "sourceSHA256": "10ca06efc0f10769e2adee1f42afc078ed3f1e4a8dabb9c43d31f63d1c17e732",
+      "webpSHA256": "7047f2fc1edc67775a0ca440d2b1796188f284da69ac7cedf5bc443ce4eb0637",
+      "webpBytes": 33250,
+      "license": "CC BY 2.0",
+      "credit": "richardmichaelshaw"
+    },
+    {
+      "key": "gfh-1",
+      "localPath": "/images/travel/galle-premium/hotels/gfh-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Galle_Fort_Hotel_(entrance).jpg",
+      "sourceSHA256": "b7233f3c26ebdcb471e66265e2115a30bd9f88ce368bee85bce6e39860e61ab2",
+      "webpSHA256": "c47dcc13576b0a85535126d048e4b2afcad6ee18189e8cc96deea213438f8bda",
+      "webpBytes": 200746,
+      "license": "CC BY-SA 4.0",
+      "credit": "Dan arndt"
+    },
+    {
+      "key": "gfh-2",
+      "localPath": "/images/travel/galle-premium/hotels/gfh-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:GALLE_FORT_HOTEL_AND_GALLERY_GALLE_SRI_LANKA_JAN_2013_(8554502972).jpg",
+      "sourceSHA256": "d9e5bfeae1a4ef97022f135d09a987a3e44a66801a2489778d98d1eb1a54a9f4",
+      "webpSHA256": "148590dd4abf489cea40f1b163f36cd72a0852813dde4185183cca63821e115e",
+      "webpBytes": 173792,
+      "license": "CC BY-SA 2.0",
+      "credit": "calflier001"
+    },
+    {
+      "key": "gfh-3",
+      "localPath": "/images/travel/galle-premium/hotels/gfh-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Fort,_Galle_80000,_Sri_Lanka_-_panoramio_(13).jpg",
+      "sourceSHA256": "fadebec9cb3b59009eb4debc7f1de5680088b62dc662b4f418a0d449459bb8c5",
+      "webpSHA256": "d2fffd40851c1e6be53a9ae48e126774274c9f4413f0714309a8c61174727c3e",
+      "webpBytes": 89320,
+      "license": "CC BY 3.0",
+      "credit": "Daibo Taku"
+    },
+    {
+      "key": "printers-1",
+      "localPath": "/images/travel/galle-premium/hotels/printers-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Galle_(30266662358).jpg",
+      "sourceSHA256": "e9ee5b8bb3d031c6c61464f0605bdc79d2bdb36d4627beb8ef88d02e42a7a43f",
+      "webpSHA256": "333001de711dd559d4e79a25dc5d143d3b75d09d234b66be05cad20156595aef",
+      "webpBytes": 55310,
+      "license": "CC BY 2.0",
+      "credit": "Sergei Gussev"
+    },
+    {
+      "key": "printers-2",
+      "localPath": "/images/travel/galle-premium/hotels/printers-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Galle_(42325685480).jpg",
+      "sourceSHA256": "2a4203c751430f182b1544d8c1911f837c7069b8e3d77f3dd4200562f6c5cbb6",
+      "webpSHA256": "a5107fcc0131ce6d6ce6696b64cb89fa4ae44f0660c45ad5cdcf6c464ab33f0b",
+      "webpBytes": 69350,
+      "license": "CC BY 2.0",
+      "credit": "Sergei Gussev"
+    },
+    {
+      "key": "printers-3",
+      "localPath": "/images/travel/galle-premium/hotels/printers-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Galle_(42325686710).jpg",
+      "sourceSHA256": "c8a4e9f3a5a5a39be1e1b661d1e0380cf99927cb205151ec63292a3ae82a4a81",
+      "webpSHA256": "6ef36e395333954fdc69fc8d60969d29caf109048b1f3035a0d3ef041dc5231c",
+      "webpBytes": 78364,
+      "license": "CC BY 2.0",
+      "credit": "Sergei Gussev"
+    },
+    {
+      "key": "jetwing-1",
+      "localPath": "/images/travel/galle-premium/hotels/jetwing-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Jetwing_Lighthouse_-_panoramio.jpg",
+      "sourceSHA256": "b617292a405f3251a0ef0fbcb1c225ef7dc15e6389fc5147f1db592a92083326",
+      "webpSHA256": "10969e0957bd2691ac3f25c808d24e61972fcc67993c32fb87a44812b92a9f70",
+      "webpBytes": 113866,
+      "license": "CC BY-SA 3.0",
+      "credit": "amiladiman"
+    },
+    {
+      "key": "jetwing-2",
+      "localPath": "/images/travel/galle-premium/hotels/jetwing-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Galle_Sri_Lanka.jpg",
+      "sourceSHA256": "fdbf64dea50be1d0c89aea4592dc84501940554c007e05509395860aae422bae",
+      "webpSHA256": "219e2a7616c3f7359433cc6ef8ab98ead9591c09832b61fec8ba9a2545c93b56",
+      "webpBytes": 89874,
+      "license": "CC BY-SA 4.0",
+      "credit": "Sachinthana Prabhashini Yatamalagala Pathiranage"
+    },
+    {
+      "key": "jetwing-3",
+      "localPath": "/images/travel/galle-premium/hotels/jetwing-3.webp",
+      "sourcePage": "https://planetescape.pl/hotel/sri-lanka-galle-jetwing-lighthouse/",
+      "sourceSHA256": "25395eb4ae67ce9c49a4ebc335b3278ccef7835025e1f28a94e48ccfe113210c",
+      "webpSHA256": "eec5405dd46dde14bacb09d33d348196b2a9c644b8bfea0bde642dc38d86e5a5",
+      "webpBytes": 169066,
+      "license": "Rights not independently verified; private owner preview only",
+      "credit": "Planet Escape / Jetwing Lighthouse"
+    }
+  ]
+}
