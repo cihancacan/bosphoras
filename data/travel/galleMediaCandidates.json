@@ -34,12 +34,14 @@
         1135,
         850
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Aerial Galle Fort bastion and lighthouse from exact Commons source",
       "pixelFingerprint": "1c234dedb11789f9416d8088dec0cf80abc68b19eac49771c2c268c87dc7ff9c",
       "dhash": "b833b796513393c1",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "scene-2",
@@ -72,12 +74,14 @@
         1133,
         850
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Galle Fort coastal ramparts (not a hotel photograph)",
       "pixelFingerprint": "84531fa5204fb457079022570aceded7cc19b2c358dbac1dbd16013215085caa",
       "dhash": "96972f2d3d3fec88",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "scene-3",
@@ -110,12 +114,14 @@
         1280,
         824
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Galle fort wall and lighthouse by sea",
       "pixelFingerprint": "87bea0a9f48e5889b70a24730acae344bd00efeff0629071332b7370c8dfee30",
       "dhash": "0f0f0f8f1d734317",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "scene-4",
@@ -148,12 +154,14 @@
         1206,
         850
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Groote Kerk Dutch-era church in Galle",
       "pixelFingerprint": "6354395143ae6f60176a3651e80e5d4fbb6cbd83e9a9721e7e8e6fb076c5464f",
       "dhash": "6937336c8c0945fc",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "scene-5",
@@ -186,12 +194,14 @@
         1135,
         850
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Distinct aerial panorama of Galle Fort",
       "pixelFingerprint": "06685ab24b08df385bf3e31fd585ac16e334cac95b5c43eb7c42fc9ba625ef58",
       "dhash": "3f7f7dd6dc7c767c",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "scene-6",
@@ -224,12 +234,14 @@
         1280,
         720
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Unawatuna beach and palm (near Galle, not the fort)",
       "pixelFingerprint": "609966c55b21cc56f657d407cc0db93ead45f8e5f8279611010571f34d9f8ca5",
       "dhash": "ecfcfcfcfcf5073e",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "scene-7",
@@ -262,12 +274,14 @@
         1133,
         850
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Cloudy Koggala coastline (south of Galle)",
       "pixelFingerprint": "023e09919abd7fb42d464f66ad61daedd58b4762e4aa68abff6b180e1abdf3b7",
       "dhash": "7fdf03070d0d8612",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "scene-8",
@@ -300,12 +314,14 @@
         1135,
         850
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Galle lighthouse and nearby palms; no guarantee of clear sky",
       "pixelFingerprint": "2d3f9e724a712eebe7a51c27f51df16b75473078d3be40837b4d3fb7dcf9769c",
       "dhash": "13972963b1991c11",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "scene-9",
@@ -338,12 +354,14 @@
         1133,
         850
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Historic Galle Fort street and Dutch-era building",
       "pixelFingerprint": "78e9f64fe0d185164f010bb83907755f5cdac54cf145e5a71753417520d8ad80",
       "dhash": "4389f5626543071f",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     }
   ],
   "hotels": [
@@ -378,12 +396,14 @@
         1275,
         850
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Front entrance of Amangalla Galle; source category Amangalla",
       "pixelFingerprint": "86dacede6fe7f5f142c3f76e586ae4b686dd688eb617e86602eae0bbacf6eb74",
       "dhash": "f261d6cec4d6d6e2",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "aman-2",
@@ -416,12 +436,14 @@
         1275,
         850
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Exterior of the Amangalla historic building; Commons Amangalla",
       "pixelFingerprint": "7759f3d114e853f9476b2f564c7350416c6848fbcd572122577efa7d3b0ed133",
       "dhash": "14b2edccd4d6c6d5",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "aman-3",
@@ -454,12 +476,14 @@
         569,
         850
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Interior in Amangalla; CC BY 2.0 identified",
       "pixelFingerprint": "0e17901ae07dbe362d6b9c9307a5b42098aa330ed263e351a48b15ff5c9aa588",
       "dhash": "82939b3b383c4dce",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "gfh-1",
@@ -492,12 +516,14 @@
         1275,
         850
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Entrance to Galle Fort Hotel, named Commons photograph",
       "pixelFingerprint": "f121c0db3b7893d850cfcad0db1e9c6479902d997ba6335c25d0a17d356c641c",
       "dhash": "984872626226635a",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "gfh-2",
@@ -530,12 +556,14 @@
         1275,
         850
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Hotel/gallery frontage at Galle Fort Hotel, named Commons photo",
       "pixelFingerprint": "479bfa8ff3b84b7c5ed36b8d3f8b177be59448663e406b06607d124ff20719aa",
       "dhash": "eaebc347c747470f",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "gfh-3",
@@ -568,12 +596,14 @@
         1133,
         850
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Historic facade/setting associated with Galle Fort Hotel category; not claimed to be a room",
       "pixelFingerprint": "9e3f61c9ec882e0b7011e65fdf82499f6852f29bf4cab3c1dcfacc98ca53b75a",
       "dhash": "9e7ae7cec7db5bdb",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "printers-1",
@@ -606,12 +636,14 @@
         1280,
         390
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Pedlar Street panoramic view by The Fort Printers; not a hotel-room or amenity picture",
       "pixelFingerprint": "280d3b6006443f43ba31fd717dc8ddec29e116190cf3c20771139a617c4fede4",
       "dhash": "73c2cc606025b4c6",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "printers-2",
@@ -644,12 +676,14 @@
         637,
         850
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Pedlar Street exterior setting close to The Fort Printers; not a room photograph",
       "pixelFingerprint": "f16b8ba59f8a88468b9175418eda740c74f7e089b6c92b8942176025bae89e9d",
       "dhash": "0b1306866dacec4c",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "printers-3",
@@ -682,12 +716,14 @@
         637,
         850
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Historic Fort street around The Fort Printers; not a hotel interior",
       "pixelFingerprint": "e0d7c42eae83d045fb2dc3696509aa2ed1716dbc751b2c5950d821fa40f722d2",
       "dhash": "2b964e4fae0c0c06",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "jetwing-1",
@@ -720,12 +756,14 @@
         1024,
         706
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Jetwing Lighthouse external hotel building and rocky coast",
       "pixelFingerprint": "df2db7e124ff19a6cf97e57a074c4734aab2b3ee991dd0dead7191f9bafde760",
       "dhash": "1047c3d0460414c4",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "jetwing-2",
@@ -758,12 +796,14 @@
         1080,
         809
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Beachfront deck photograph taken at Jetwing Lighthouse; verified source Commons caption",
       "pixelFingerprint": "2dee83075731a606c132ad44c8520fd1865cef89ae537fc79a574947a985847a",
       "dhash": "000257cc2d8d9c40",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     },
     {
       "key": "jetwing-3",
@@ -794,12 +834,14 @@
         1200,
         809
       ],
-      "visuallyVerified": false,
-      "previewVisualApproved": false,
-      "visualReviewScope": "Original image not personally reviewed on contact sheet yet; only named source, metadata and optimized binary verified",
+      "visuallyVerified": true,
+      "previewVisualApproved": true,
+      "visualReviewScope": "Assistant inspected authentic 4 x 6 photo contact sheet and verified named image source and visible subject for protected owner Preview. Jetwing Lighthouse pool and terracotta-roof complex confirmed against hotel references and source page; private protected preview only due unclear third-party public-use rights",
       "pixelFingerprint": "0cd09bf930dce703a8eb0c82a690ab0889f37b1f0d68377d5a447a37a90d11b1",
       "dhash": "3b98c5b34c8f2be2",
-      "publicUseApproved": false
+      "publicUseApproved": false,
+      "visualReviewDate": "2026-11-04",
+      "visualReviewApprover": "assistant_for_private_preview"
     }
   ],
   "cityCount": 9,
@@ -807,6 +849,7 @@
   "publicUseApproved": false,
   "photosVerifiedByBuild": 21,
   "photosVisuallyApprovedByOwner": 0,
-  "rightsNotice": "Commons-licensed photos are attributed. Any third-party hotel marketing photo stays owner-preview-only until rights established; production is forbidden.",
-  "qualityNotice": "No photos are automatically marked as visually reviewed. Source-linked contact sheet review required before displaying hotel galleries."
+  "rightsNotice": "Owner-only noindex Preview. Commons photos require author/source/license credit; cropped derivatives comply with each source license. One hotel image from Planet Escape has unverified public reproduction rights; do not launch publicly until clearance or replacement.",
+  "qualityNotice": "21 distinct optimized local WebPs visually inspected against the 4x6 contact sheet and provenance metadata for private owner Preview. The Fort Printers photos depict the nearby Pedlar Street heritage setting rather than bookable rooms; descriptive captions must say so. Third-party Jetwing image rights are not established for indexed/public use.",
+  "photosVisuallyReviewedForPrivatePreview": 21
 }
