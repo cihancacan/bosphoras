@@ -1,4 +1,4 @@
-name: Bosphoras Galle 79 - 21 source-checked private-preview WebPs
+name: Bosphoras Galle 79 - 21 verified private-preview WebP candidates
 on:
   push:
     branches:
