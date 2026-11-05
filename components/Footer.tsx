@@ -50,6 +50,7 @@ export function Footer({ locale }: FooterProps) {
     { label: locale === 'fr' ? 'Protection des informations confidentielles' : locale === 'en' ? 'Protection of Confidential Information' : locale === 'ru' ? 'Защита конфиденциальной информации' : 'حماية المعلومات السرية', href: linkTo('confidential-info') },
   ];
 
+  const localAreasTitle = locale === 'fr' ? 'Villes d’intervention' : locale === 'en' ? 'Local service areas' : locale === 'ru' ? 'Города обслуживания' : 'مدن خدماتنا';
   const informationTitle = locale === 'fr' ? 'Informations' : locale === 'en' ? 'Information' : locale === 'ru' ? 'Информация' : 'معلومات';
   const legalTitle = locale === 'fr' ? 'Légal' : locale === 'en' ? 'Legal' : locale === 'ru' ? 'Правовая информация' : 'قانوني';
   const membershipLabel = locale === 'fr' ? 'Demande d’adhésion' : locale === 'en' ? 'Membership application' : locale === 'ru' ? 'Заявка на членство' : 'طلب عضوية';
@@ -81,7 +82,7 @@ export function Footer({ locale }: FooterProps) {
             <ul className="space-y-3">{serviceLinks.map((link) => <li key={link.href}><Link href={link.href} className="text-sm text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">{link.label}</Link></li>)}</ul>
           </div>
           <div>
-            <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-[hsl(45,30%,96%)]">{t(locale, 'nav.cities')}</h3>
+            <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-[hsl(45,30%,96%)]">{localAreasTitle}</h3>
             <ul className="space-y-3">{cityLinks.map((link) => <li key={link.href}><Link href={link.href} className="text-sm text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">{link.label}</Link></li>)}</ul>
             <h3 className="mb-5 mt-10 text-xs font-semibold uppercase tracking-[0.25em] text-[hsl(45,30%,96%)]">{informationTitle}</h3>
             <ul className="space-y-3">{informationLinks.map((link) => <li key={link.href}><Link href={link.href} className="text-sm text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">{link.label}</Link></li>)}</ul>

@@ -15,7 +15,7 @@ import dynamic from 'next/dynamic';
 const SearchOverlay = dynamic(() => import('@/components/SearchOverlay').then((module) => module.SearchOverlay));
 
 interface HeaderProps { locale: Locale; currentPath?: string; localizedPaths?: Partial<Record<Locale, string>>; }
-type MenuItem = { label: string; href: string; description?: string; tone?: 'property' | 'transfer' };
+type MenuItem = { label: string; href: string; description?: string; tone?: 'property' | 'transfer' | 'hotel' };
 type MenuGroup = { label: string; href: string; items: MenuItem[] };
 
 const corporateRelocationPaths: Record<Locale, string> = {
@@ -58,7 +58,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
 
   const labels = {
     services: locale === 'fr' ? 'Services' : locale === 'en' ? 'Services' : locale === 'ru' ? 'Услуги' : 'الخدمات',
-    destinations: locale === 'fr' ? 'Destinations' : locale === 'en' ? 'Destinations' : locale === 'ru' ? 'Направления' : 'الوجهات',
+    destinations: locale === 'fr' ? 'Hôtels & Séjours' : locale === 'en' ? 'Hotels & Stays' : locale === 'ru' ? 'Отели и отдых' : 'الفنادق والإقامات',
     property: locale === 'fr' ? 'Immobilier' : locale === 'en' ? 'Property' : locale === 'ru' ? 'Недвижимость' : 'العقار',
     privateAccess: 'Private Access',
     information: locale === 'fr' ? 'Informations' : locale === 'en' ? 'Information' : locale === 'ru' ? 'Информация' : 'معلومات',
@@ -67,6 +67,9 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
   const compactAssessmentLabel = locale === 'fr' ? 'Diagnostic' : locale === 'en' ? 'Assessment' : locale === 'ru' ? 'Консультация' : 'تقييم';
   const mobilityLink = locale === 'fr' ? '/transfert-aeroport-istanbul' : locale === 'en' ? '/en/istanbul-airport-transfer' : locale === 'ru' ? '/ru/transfer-aeroport-stambul' : '/ar/istanbul-airport-transfer';
   const peninsulaLink = locale === 'fr' ? '/peninsula-istanbul' : `/${locale}/peninsula-istanbul`;
+  const travelHomeHref = locale === 'fr' ? '/travel' : `/${locale}/travel`;
+  const hotelSearchHref = locale === 'fr' ? '/travel/search' : '/en/travel/search';
+  const travelDestinationsHref = locale === 'fr' ? '/travel/destinations' : `/${locale}/travel/destinations`;
   const corporateRelocationLink = corporateRelocationPaths[locale];
   const propertyTurkeyLink = getLocalePath(locale, propertyHubPaths[locale]);
   const propertyInvestmentLink = getLocalePath(locale, globalPropertyHubPaths[locale]);
@@ -95,10 +98,24 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
         description: locale === 'fr' ? 'Opportunités sélectionnées hors de Turquie, programmes neufs et plans de paiement promoteurs.' : locale === 'en' ? 'Selected opportunities outside Turkey, new developments and developer payment plans.' : locale === 'ru' ? 'Отобранные возможности за пределами Турции, новостройки и планы оплаты от застройщиков.' : 'فرص مختارة خارج تركيا، مشاريع جديدة وخطط دفع من المطورين.',
       },
     ]},
-    { label: labels.destinations, href: linkTo('istanbul'), items: [
-      { label: locale === 'ru' ? 'Стамбул' : locale === 'ar' ? 'إسطنبول' : 'Istanbul', href: linkTo('istanbul') },
-      { label: locale === 'ru' ? 'Бодрум' : locale === 'ar' ? 'بودروم' : 'Bodrum', href: linkTo('bodrum') },
-      { label: locale === 'ru' ? 'Анталья' : locale === 'ar' ? 'أنطاليا' : 'Antalya', href: linkTo('antalya') },
+    { label: labels.destinations, href: travelHomeHref, items: [
+      {
+        label: locale === 'fr' ? 'Rechercher un hôtel' : locale === 'en' ? 'Find a hotel' : locale === 'ru' ? 'Найти отель' : 'البحث عن فندق',
+        href: hotelSearchHref,
+        tone: 'hotel',
+        description: locale === 'fr' ? 'Disponibilités en temps réel et réservation auprès de notre partenaire.'
+          : locale === 'en' ? 'Live availability and booking through our partner.'
+          : locale === 'ru' ? 'Поиск и бронирование у партнёра — интерфейс на английском.'
+          : 'البحث والحجز عبر شريكنا — الواجهة باللغة الإنجليزية.',
+      },
+      {
+        label: locale === 'fr' ? 'Explorer les destinations' : locale === 'en' ? 'Explore destinations' : locale === 'ru' ? 'Исследовать направления' : 'استكشف الوجهات',
+        href: travelDestinationsHref,
+        description: locale === 'fr' ? 'Découvrez nos destinations, hôtels sélectionnés et guides locaux.'
+          : locale === 'en' ? 'Discover our destinations, curated hotels and local guides.'
+          : locale === 'ru' ? 'Направления, отобранные отели и местные гиды.'
+          : 'اكتشف وجهاتنا وفنادقنا المختارة وأدلتنا المحلية.',
+      },
     ]},
     { label: labels.privateAccess, href: linkTo('private-club'), items: [
       { label: locale === 'fr' ? 'Cercle prive' : locale === 'en' ? 'Private Access Club' : locale === 'ru' ? 'Частный клуб' : 'النادي الخاص', href: linkTo('private-club') },
@@ -145,9 +162,9 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
                     <Link
                       key={item.href}
                       href={item.href}
-                      className={`mb-1 block px-4 py-3.5 transition last:mb-0 ${item.tone === 'property' ? 'border-l-2 border-[#4f8d78] bg-[#4f8d78]/10 hover:bg-[#4f8d78]/18' : item.tone === 'transfer' ? 'border-l-2 border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)]/[0.07] hover:bg-[hsl(42,65%,52%)]/[0.12]' : 'border-b border-white/5 hover:bg-white/[0.04]'}`}
+                      className={`mb-1 block px-4 py-3.5 transition last:mb-0 ${item.tone === 'property' ? 'border-l-2 border-[#4f8d78] bg-[#4f8d78]/10 hover:bg-[#4f8d78]/18' : item.tone === 'transfer' ? 'border-l-2 border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)]/[0.07] hover:bg-[hsl(42,65%,52%)]/[0.12]' : item.tone === 'hotel' ? 'border-l-2 border-[#cdb37b] bg-[#cdb37b]/[0.10] hover:bg-[#cdb37b]/[0.17]' : 'border-b border-white/5 hover:bg-white/[0.04]'}`}
                     >
-                      <span className={`block text-[0.76rem] font-semibold uppercase tracking-[0.12em] ${item.tone === 'property' ? 'text-[#a9d5c5]' : item.tone === 'transfer' ? 'text-[hsl(42,65%,63%)]' : 'text-[hsl(45,30%,96%)]'}`}>{item.label}</span>
+                      <span className={`block text-[0.76rem] font-semibold uppercase tracking-[0.12em] ${item.tone === 'property' ? 'text-[#a9d5c5]' : item.tone === 'transfer' || item.tone === 'hotel' ? 'text-[hsl(42,65%,63%)]' : 'text-[hsl(45,30%,96%)]'}`}>{item.label}</span>
                       {item.description && <span className="mt-1.5 block text-[0.79rem] font-medium leading-5 text-[hsl(220,12%,76%)]">{item.description}</span>}
                     </Link>
                   ))}
@@ -169,12 +186,14 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
                 {group.label}<span className="text-[hsl(42,65%,45%)]">▾</span>
               </button>
               {openGroup === group.label && <div className="mt-2 space-y-1 pl-2">
-                <Link href={group.href} onClick={() => setMenuOpen(false)} className="block py-2 text-xs font-semibold uppercase tracking-[0.12em] text-[hsl(42,65%,52%)]">{locale === 'fr' ? 'Voir tout' : locale === 'en' ? 'View all' : locale === 'ru' ? 'Смотреть всё' : 'عرض الكل'}</Link>
+                <Link href={group.href} onClick={() => setMenuOpen(false)} className="block py-2 text-xs font-semibold uppercase tracking-[0.12em] text-[hsl(42,65%,52%)]">{group.href === travelHomeHref
+                    ? locale === 'fr' ? 'Découvrir Luxury Stays' : locale === 'en' ? 'Discover Luxury Stays' : locale === 'ru' ? 'Открыть Luxury Stays' : 'اكتشف Luxury Stays'
+                    : locale === 'fr' ? 'Voir tout' : locale === 'en' ? 'View all' : locale === 'ru' ? 'Смотреть всё' : 'عرض الكل'}</Link>
                 {group.items.map((item) => <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setMenuOpen(false)}
-                  className={`block border-l-2 px-3 py-2.5 text-sm ${item.tone === 'property' ? 'border-[#4f8d78] bg-[#4f8d78]/10 font-semibold text-[#b9dfd1]' : item.tone === 'transfer' ? 'border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)]/[0.06] font-semibold text-[hsl(42,65%,67%)]' : 'border-transparent text-[hsl(220,10%,68%)]'}`}
+                  className={`block border-l-2 px-3 py-2.5 text-sm ${item.tone === 'property' ? 'border-[#4f8d78] bg-[#4f8d78]/10 font-semibold text-[#b9dfd1]' : item.tone === 'transfer' || item.tone === 'hotel' ? 'border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)]/[0.06] font-semibold text-[hsl(42,65%,67%)]' : 'border-transparent text-[hsl(220,10%,68%)]'}`}
                 >{item.label}</Link>)}
               </div>}
             </div>)}
