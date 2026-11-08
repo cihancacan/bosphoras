@@ -8,14 +8,10 @@ import { ArrowRight, ArrowUpRight, Check, Headphones, LockKeyhole, Search, Slide
 import { travelHref } from '@/lib/travel/i18n';
 import { readWidgetOccupancy, completeRoomAllocation, type RoomAllocation, type SearchRoom } from '@/lib/travel/nuiteeWidgetOccupancy';
 import s from './HotelReservation.module.css';
-import { HotelSmartSearch } from './HotelSmartSearch';
-import type { SmartHotelSuggestion } from '@/lib/travel/smartHotelSearch';
+import { findVerifiedHotelForPlace } from '@/lib/travel/verifiedHotelMatch';
 
 type SearchPayload = {
   place?: { place_id?: string; description?: string };
-  hotelId?: string;
-  displayName?: string;
-  destinationKey?: string;
   checkin?: string; checkout?: string;
   occupancies?: string;
   rooms?: number;
@@ -39,9 +35,6 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
   const results = useRef<HTMLElement>(null);
   const submitting = useRef(false);
   const [sdkReady, setSdkReady] = useState(false);
-  const [worldwideMode, setWorldwideMode] = useState(false);
-  const [supplierSlow, setSupplierSlow] = useState(false);
-  const searchStartedAt = useRef<number | null>(null);
   const [widgetReady, setWidgetReady] = useState(false);
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
@@ -57,42 +50,29 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
   const submitSearch = useCallback(async (data: SearchPayload, rooms: SearchRoom[]) => {
     if (submitting.current) return;
     setError('');
-    if ((!data.hotelId && !data.destinationKey && (!data.place?.place_id || !data.place.description)) || !data.checkin || !data.checkout) {
+    if (!data.place?.place_id || !data.place.description || !data.checkin || !data.checkout) {
       setError(fr ? 'Choisissez une destination proposée et vos dates.' : 'Choose a suggested destination and your dates.'); return;
     }
     submitting.current = true; setBusy(true);
+    const hotel = findVerifiedHotelForPlace(data.place.description);
     const controller = new AbortController();
     const timeout = window.setTimeout(() => controller.abort(), 10000);
     try {
-      const location = data.hotelId ? { hotelId: data.hotelId }
-        : data.destinationKey ? { destinationKey: data.destinationKey }
-        : { placeId: data.place?.place_id, displayName: data.place?.description };
       const response = await fetch('/api/travel/booking/search', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        signal: controller.signal,
-        body: JSON.stringify({ ...location, checkin: data.checkin, checkout: data.checkout, rooms, locale }),
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: controller.signal,
+        body: JSON.stringify({ ...(hotel
+          ? { hotelId: hotel.hotelId }
+          : { placeId: data.place.place_id, displayName: data.place.description }),
+          checkin: data.checkin, checkout: data.checkout, rooms, locale }),
       });
       const body = await response.json();
       if (!response.ok || typeof body.url !== 'string' || new URL(body.url).origin !== origin) throw new Error('invalid search');
-      setLoaded(false); setSupplierSlow(false); searchStartedAt.current = performance.now();
-      setBookingUrl(body.url); setPending(null);
-      const date = (day: string) => new Date(day + 'T12:00:00').toLocaleDateString(fr ? 'fr-FR' : 'en-GB', { day: 'numeric', month: 'short' });
-      setSummary((data.displayName || data.place?.description || '') + ' · ' + date(data.checkin) + ' – ' + date(data.checkout));
-    } catch (error) { setError(error instanceof Error && error.name === 'AbortError'
-      ? fr ? 'Le serveur prend trop de temps. Réessayez ou ouvrez la réservation chez Nuitée.' : 'The server is taking too long. Try again or open Nuitee directly.'
-      : fr ? 'La recherche n’a pas abouti. Réessayez ou ouvrez le moteur en plein écran.' : 'Search could not complete. Try again or open the full-screen booking engine.'); }
+      setLoaded(false); setBookingUrl(body.url); setPending(null);
+      const date = (day: string) => new Date(`${day}T12:00:00`).toLocaleDateString(fr ? 'fr-FR' : 'en-GB', { day: 'numeric', month: 'short' });
+      setSummary(`${hotel?.name || data.place.description} · ${date(data.checkin)} – ${date(data.checkout)}`);
+    } catch { setError(fr ? 'La recherche n’a pas abouti. Réessayez ou ouvrez le moteur en plein écran.' : 'Search could not complete. Try again or open the full-screen booking engine.'); }
     finally { window.clearTimeout(timeout); submitting.current = false; setBusy(false); }
   }, [fr, locale, origin]);
-
-  const smartSearch = useCallback((data: { selection: SmartHotelSuggestion; checkin: string; checkout: string; rooms: SearchRoom[] }) => {
-    const payload: SearchPayload = {
-      checkin: data.checkin,
-      checkout: data.checkout,
-      displayName: data.selection.label,
-      ...(data.selection.kind === 'hotel' ? { hotelId: data.selection.id } : { destinationKey: data.selection.id }),
-    };
-    void submitSearch(payload, data.rooms);
-  }, [submitSearch]);
 
   const search = useCallback((data: SearchPayload) => {
     if (submitting.current) return;
@@ -115,12 +95,10 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
     setError('');
     setLoaded(false);
     setWidgetReady(false);
-    setSupplierSlow(false);
-    searchStartedAt.current = null;
   }, [initialUrl, locale]);
 
   useEffect(() => {
-    if (bookingUrl || !worldwideMode || !sdkReady || !widget.current) return;
+    if (bookingUrl || !sdkReady || !widget.current) return;
     const sdk = (window as Window & { LiteAPI?: SearchSDK }).LiteAPI;
     if (!sdk?.SearchBar) { setError(fr ? 'Le moteur de recherche n’a pas pu être chargé.' : 'The search engine could not load.'); return; }
     widget.current.replaceChildren();
@@ -131,31 +109,22 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
     } catch { setError(fr ? 'Le moteur de recherche n’a pas pu être chargé.' : 'The search engine could not load.'); }
     const element = widget.current;
     return () => { element.replaceChildren(); };
-  }, [sdkReady, fr, locale, origin, search, widgetId, bookingUrl, worldwideMode]);
+  }, [sdkReady, fr, locale, origin, search, widgetId, bookingUrl]);
 
   useEffect(() => {
     if (bookingUrl && summary) results.current?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
   }, [bookingUrl, summary]);
 
-  useEffect(() => {
-    if (!bookingUrl || loaded) return;
-    const timeout = window.setTimeout(() => setSupplierSlow(true), 9000);
-    return () => window.clearTimeout(timeout);
-  }, [bookingUrl, loaded]);
-
   return <>
-    {worldwideMode && <Script src="https://components.liteapi.travel/v1.0/sdk.umd.js" strategy="afterInteractive" onReady={() => setSdkReady(true)} onError={() => setError(fr ? 'Le moteur de recherche n’a pas pu être chargé.' : 'The search engine could not load.')} />}
+    <Script src="https://components.liteapi.travel/v1.0/sdk.umd.js" strategy="afterInteractive" onReady={() => setSdkReady(true)} onError={() => setError(fr ? 'Le moteur de recherche n’a pas pu être chargé.' : 'The search engine could not load.')} />
     {!bookingUrl && <section className={s.searchHero} aria-labelledby="reservation-title">
       <div className={s.heroPhotos} aria-hidden="true"><span className={s.heroSlide} /><span className={s.heroSlide} /><span className={s.heroSlide} /><span className={s.heroVeil} /></div>
       <div className={s.heroInner}>
         <h1 id="reservation-title">{fr ? 'Des adresses qui valent le voyage.' : 'Hotels worth travelling for.'}</h1>
         <p className={s.heroText}>{fr ? 'Découvrez des hôtels remarquables, aux quatre coins du monde.' : 'Discover remarkable hotels around the world.'}</p>
         <div className={s.searchPanel} aria-label={fr ? 'Rechercher des hôtels' : 'Search hotels'} aria-busy={busy}>
-          {!worldwideMode ? <HotelSmartSearch locale={locale} busy={busy} onSearch={smartSearch} onWorldwide={() => { setError(''); setWorldwideMode(true); }} /> : <>
-            <div className={s.worldwideTop}><div><strong>{fr ? 'Catalogue mondial' : 'Worldwide catalogue'}</strong><p>{fr ? 'Recherchez d’autres villes et hôtels avec le moteur officiel Nuitée.' : 'Find other cities and hotels with the official Nuitee search.'}</p></div><button type="button" onClick={() => { setWorldwideMode(false); setWidgetReady(false); setSdkReady(false); }}>{fr ? 'Retour à la recherche rapide' : 'Back to quick search'}</button></div>
-            {!widgetReady && <div className={s.widgetLoading} role="status"><Search size={20} />{fr ? 'Chargement du catalogue mondial…' : 'Loading worldwide catalogue…'}</div>}
-            <div ref={widget} id={widgetId} className={s.widget} />
-          </>}
+          {!widgetReady && <div className={s.widgetLoading} role="status"><Search size={20} />{fr ? 'Chargement de la recherche…' : 'Loading hotel search…'}</div>}
+          <div ref={widget} id={widgetId} className={s.widget} />
           {pending && <form className={s.allocation} onSubmit={event => { event.preventDefault(); if (allocated) void submitSearch(pending.data, allocated); }} aria-labelledby={`${widgetId}-allocation-title`}>
             <h2 id={`${widgetId}-allocation-title`}>{fr ? 'Qui séjourne dans chaque chambre ?' : 'Who is staying in each room?'}</h2>
             <p>{fr ? `${pending.plan.adults} adultes à répartir dans ${pending.plan.roomCount} chambres. Précisez la répartition pour rechercher les bons tarifs.` : `Assign ${pending.plan.adults} adults to ${pending.plan.roomCount} rooms to search the right rates.`}</p>
@@ -173,8 +142,8 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
 
     {bookingUrl ? <section ref={results} className={s.results} aria-labelledby="hotel-results-title">
       <div className={s.resultsHeading}><div><p className={s.eyebrow}>{fr ? 'VOTRE RECHERCHE' : 'YOUR SEARCH'}</p><h1 id="hotel-results-title">{summary || (fr ? 'Choisissez votre chambre' : 'Choose your room')}</h1></div><div className={s.resultsActions}><button type="button" onClick={resetSearch}>{fr ? 'Nouvelle recherche' : 'New search'}</button><a href={bookingUrl} target="_blank" rel="sponsored noopener noreferrer">{fr ? 'Ouvrir en plein écran' : 'Open full screen'} <ArrowUpRight size={15} /></a></div></div>
-      {!loaded && <div className={s.smartLoading} role="status"><span className={s.smartLoadingIcon}><Search size={20}/></span><div><strong>{fr ? 'Nuitée recherche vos disponibilités…' : 'Nuitee is loading your availability…'}</strong><p>{supplierSlow ? fr ? 'Le partenaire répond lentement. Vous pouvez aussi ouvrir la réservation en plein écran.' : 'The partner is taking longer than expected. You can also open booking full-screen.' : fr ? 'Le moteur du partenaire prépare les tarifs et les chambres.' : 'The booking partner is preparing rates and rooms.'}</p></div></div>}
-      <iframe key={bookingUrl} className={s.bookingFrame} src={bookingUrl} title={fr ? 'Hôtels, chambres et réservation — moteur de notre partenaire' : 'Hotels, rooms and booking — partner engine'} allow="payment" referrerPolicy="strict-origin-when-cross-origin" onLoad={() => { setLoaded(true); searchStartedAt.current = null; }} />
+      {!loaded && <p className={s.loading} role="status">{fr ? 'Chargement des hôtels et des tarifs…' : 'Loading hotels and rates…'}</p>}
+      <iframe key={bookingUrl} className={s.bookingFrame} src={bookingUrl} title={fr ? 'Hôtels, chambres et réservation — moteur de notre partenaire' : 'Hotels, rooms and booking — partner engine'} allow="payment" referrerPolicy="strict-origin-when-cross-origin" onLoad={() => setLoaded(true)} />
       <p className={s.frameNote}>{fr ? 'Notre partenaire de réservation présente le prix total et les conditions avant paiement. En cas de difficulté avec le paiement intégré, choisissez « Ouvrir en plein écran ».' : 'Our booking partner displays the full price and terms before payment. If embedded payment is unavailable, select “Open full screen”.'}</p>
     </section> : <>
       <div className={s.benefits}>

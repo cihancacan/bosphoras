@@ -125,15 +125,16 @@ test('exact verified hotel deep links bypass city listings but preserve dates an
   blocked(handoff(input, {...config, hotels: [{...hotel, matchEvidence:''}]}));
 });
 
-test('intelligent suggestions prefer matching hotels and never infer an unverified exact property', () => {
-  const {smartHotelSuggestions, findExactVerifiedHotel, isVerifiedSmartSelection} = require('../lib/travel/smartHotelSearch');
-  const first = smartHotelSuggestions('Peninsula Istanbul')[0];
-  assert.equal(first.kind,'hotel');
-  assert.equal(first.id,'lp6558f17c');
-  assert.equal(smartHotelSuggestions('ciragan')[0].id,'lp85821');
-  assert(smartHotelSuggestions('Istanbul').some(x => x.kind==='destination' && x.id==='istanbul'));
-  assert.equal(findExactVerifiedHotel('The Peninsula Istanbul').id,'lp6558f17c');
-  assert.equal(findExactVerifiedHotel('Hotel that exists only on another supplier'),undefined);
-  assert.equal(smartHotelSuggestions('This random hotel exists globally').length,0);
-  assert.equal(isVerifiedSmartSelection({kind:'hotel',id:'lp6558f17c',label:'Wrong name',detail:''}),false);
+test('existing Nuitee widget keeps all hotels and deep links only an exact verified place', () => {
+  const { findVerifiedHotelForPlace } = require('../lib/travel/verifiedHotelMatch');
+  assert.equal(findVerifiedHotelForPlace('The Peninsula Istanbul, Karakoy, Türkiye').hotelId,'lp6558f17c');
+  assert.equal(findVerifiedHotelForPlace('Çırağan Palace Kempinski Istanbul, Istanbul').hotelId,'lp85821');
+  assert.equal(findVerifiedHotelForPlace('Mandarin Oriental Bosphorus, Istanbul, Türkiye').hotelId,'lp6556e28f');
+  assert.equal(findVerifiedHotelForPlace('Four Seasons Hotel Istanbul at Sultanahmet, Istanbul').hotelId,'lp1e09b');
+  assert.equal(findVerifiedHotelForPlace('Four Seasons Hotel Istanbul at the Bosphorus, Istanbul').hotelId,'lp547d3');
+  assert.equal(findVerifiedHotelForPlace('Istanbul, Türkiye'),null);
+  assert.equal(findVerifiedHotelForPlace('Raffles Istanbul Airport, Türkiye'),null);
+  assert.equal(findVerifiedHotelForPlace('The Peninsula Istanbul Spa, Türkiye'),null);
+  assert.equal(findVerifiedHotelForPlace('A Hotel Not Yet Mapped by Bosphoras, Paris'),null);
+  assert.equal(findVerifiedHotelForPlace(''),null);
 });
