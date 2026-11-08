@@ -159,7 +159,7 @@ if any(not x['commercialRightsCleared'] for x in out[:9]):
     raise RuntimeError('All 9 landscape images require explicit Commons license metadata')
 total=sum(x['webpBytes'] for x in out)
 assert total<6500000
-media={'destination':'jaipur','destinationNumber':79,'scope':'private_owner_noindex_preview',
+media={'destination':'jaipur','destinationNumber':77,'scope':'private_owner_noindex_preview',
   'destinationScenes':out[:9],'hotels':out[9:],
   'cityCount':9,'hotelCount':12,'publicUseApproved':False,
   'photosVerifiedByBuild':21,'photosVisuallyApprovedByOwner':0,
