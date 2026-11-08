@@ -1,0 +1,39 @@
+name: Jaipur 77 private Preview acceptance (no Vercel build)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - '.github/workflows/travel-jaipur-final-qa.yml'
+      - 'scripts/check-jaipur-final.mjs'
+      - 'scripts/check-jaipur-photo-gates.mjs'
+      - 'data/travel/jaipurGuide.ts'
+      - 'data/travel/jaipurPremiumEditorial.ts'
+      - 'data/travel/jaipurMediaCandidates.json'
+      - 'data/travel/jaipurPhotoProductionPlan.json'
+      - 'components/travel/FeaturedCityGuide.tsx'
+      - 'components/travel/TravelPages.tsx'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: jaipur-77-final-qa
+  cancel-in-progress: true
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: TypeScript
+        run: npm run typecheck
+      - name: Jaipur original photo rights and 21 local WebP files
+        run: node scripts/check-jaipur-photo-gates.mjs
+      - name: Jaipur editorial, attribution and image rendering QA
+        run: node scripts/check-jaipur-final.mjs
+      - name: Preserve 88 original destinations and noindex
+        run: node scripts/check-travel-catalogue.mjs
