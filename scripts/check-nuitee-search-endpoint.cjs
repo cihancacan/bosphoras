@@ -61,7 +61,7 @@ test('verified Istanbul mappings resolve both editorial keys to the same exact h
         const links=launch.getNuiteeHotelLinks(key,'fr',now);
         assert.equal(links.length,1,key);
         const url=new URL(links[0].url);
-        assert.equal(url.hostname,'cihan-cacan-7d0sw.nuitee.link');
+        assert.equal(url.hostname,'bosphoras.nuitee.link');
         assert.equal(url.pathname,`/hotels/${matches[0].hotelId}`);
         assert.equal(url.searchParams.get('language'),'fr');
         assert.equal(url.searchParams.get('currency'),'EUR');
