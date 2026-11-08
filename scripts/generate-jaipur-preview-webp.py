@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Jaipur #79: fetch 21 named source originals and create owner-preview-only WebPs.
+"""Jaipur #77: fetch 21 named source originals and create owner-preview-only WebPs.
 
 No destination or hotel image is substituted on network failure.
 Copyright is read from Commons image metadata when available and never
