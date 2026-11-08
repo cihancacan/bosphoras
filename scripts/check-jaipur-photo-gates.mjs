@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Jaipur #77 launch blocker. Intentionally fails until 21 distinct, sourced,
- * visually reviewed local WebPs and explicit owner Preview approval exist.
+ * visually reviewed local WebPs and explicit private Preview audit exist.
  *
  * Usage: node scripts/check-jaipur-photo-gates.mjs
  * This check must be green before Jaipur is added to featuredCityGuides.
@@ -33,7 +33,15 @@ for (const slot of slots) {
   if (slot.category === 'landscape') {
     if (!slot.author || !slot.license || !slot.licenseUrl) fail(label + ': creator/license attribution missing');
   } else if (slot.category === 'hotel') {
-    if (!slot.hotel || !slot.rightsPermissionEvidence) fail(label + ': hotel identity or image-use permission missing');
+    if (!slot.hotel || !slot.sourcePage) fail(label + ': hotel identity or exact source missing');
+    // Preview-only images are not allowed to imply public marketing rights.
+    // A Commons photo must have traceable license data; third-party media
+    // requires a strict private-only flag until a separate release approval.
+    if (slot.sourceRightsStatus === 'commons_cc_reuse_with_attribution') {
+      if (!slot.rightsPermissionEvidence || !slot.license || !slot.licenseUrl) fail(label + ': Commons reuse rights evidence missing');
+    } else if (slot.sourceRightsStatus !== 'third_party_private_preview_only_no_public_license' || slot.rightsPermissionEvidence) {
+      fail(label + ': unlicensed hotel marketing asset must stay private and unapproved');
+    }
   }
   const target = slot.localWebpPath || '';
   if (!/^\/images\/travel\/jaipur-premium\/(destination|hotels)\/[a-z0-9-]+\.webp$/.test(target)) {
@@ -57,8 +65,9 @@ for (const slot of slots) {
 }
 if (new Set(images.map(i => i.digest)).size !== images.length) fail('Duplicate WebP image contents');
 if (images.reduce((sum, i) => sum + i.size, 0) > 5000000) fail('21-image WebP pack exceeds 5 MB');
-if (!manifest.previewApproved) fail('Explicit owner Preview approval missing');
+if (!manifest.previewApproved || !manifest.privatePreviewApprovalScope) fail('Restricted private Preview authorization missing');
 if (manifest.productionApproved) fail('Production approval must remain separately gated');
+if (slots.filter(s => s.sourceRightsStatus === 'third_party_private_preview_only_no_public_license').length !== 7) fail('Current seven unlicensed hotel photos must be explicitly tracked');
 if (errors.length) {
   console.error('JAIPUR_77_MEDIA_NOT_READY: ' + errors.length + ' issue(s)');
   for (const message of errors.slice(0, 55)) console.error(' - ' + message);
