@@ -92,6 +92,7 @@ export function getNuiteeSearchConnection(now = Date.now()): NuiteeSearchConnect
     verifiedAt: nuiteeLaunch.verifiedAt,
     reviewBy: nuiteeLaunch.reviewBy,
     destinations: mappings.destinations,
+    hotels: mappings.hotels.map(hotel => ({ hotelId: hotel.hotelId, destination: hotel.destination, name: hotel.name, matchEvidence: hotel.matchEvidence })),
   };
 }
 

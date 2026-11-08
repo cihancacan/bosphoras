@@ -16,11 +16,14 @@ export async function handleNuiteeSearch(request: Request): Promise<Response> {
   } catch { return json({ code: 'INVALID_SEARCH' }, 400); }
   if (!data || typeof data !== 'object' || Array.isArray(data)) return json({ code: 'INVALID_SEARCH' }, 400);
   const input = data as Record<string, unknown>;
-  const fields = ['destinationKey', 'placeId', 'displayName', 'checkin', 'checkout', 'locale', 'rooms'];
+  const fields = ['hotelId', 'destinationKey', 'placeId', 'displayName', 'checkin', 'checkout', 'locale', 'rooms'];
   if (Object.keys(input).some(key => !fields.includes(key)) ||
     !['checkin', 'checkout', 'locale'].every(key => typeof input[key] === 'string') ||
-    (input.destinationKey !== undefined ? typeof input.destinationKey !== 'string' || input.placeId !== undefined || input.displayName !== undefined
-      : typeof input.placeId !== 'string' || typeof input.displayName !== 'string') || !Array.isArray(input.rooms) ||
+    (input.hotelId !== undefined
+      ? typeof input.hotelId !== 'string' || input.destinationKey !== undefined || input.placeId !== undefined || input.displayName !== undefined
+      : input.destinationKey !== undefined
+        ? typeof input.destinationKey !== 'string' || input.placeId !== undefined || input.displayName !== undefined
+        : typeof input.placeId !== 'string' || typeof input.displayName !== 'string') || !Array.isArray(input.rooms) ||
     input.rooms.some(room => !room || typeof room !== 'object' || Array.isArray(room) ||
       Object.keys(room).some(key => key !== 'adults' && key !== 'children'))) return json({ code: 'INVALID_SEARCH' }, 400);
   const handoff = getNuiteeSearchHandoff(input as unknown as NuiteeSearchRequest, connection, getNuiteeProviders());

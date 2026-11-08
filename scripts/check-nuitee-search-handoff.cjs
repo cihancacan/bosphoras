@@ -98,3 +98,42 @@ test('uses listing-only protocol, exact rooms and whitelisted nonpersonal parame
   }
   blocked(handoff({ ...request, locale: 'xx' }));
 });
+
+
+test('exact verified hotel deep links bypass city listings but preserve dates and room ages', () => {
+  const hotel = {hotelId: 'lpfixture123', destination: 'istanbul', name: 'Fixture Grand Hotel', matchEvidence: 'supplier-id-verified'};
+  const config = {...connection, hotels: [hotel]};
+  const input = {...request, destinationKey: undefined, hotelId: hotel.hotelId, rooms: [{adults:2,children:[4]},{adults:1,children:[]}]};
+  const result = handoff(input, config);
+  assert.equal(result.status, 'ready');
+  const url = new URL(result.url);
+  assert.equal(url.pathname, '/hotels/lpfixture123');
+  assert(!url.searchParams.has('placeId'));
+  assert.equal(url.searchParams.get('checkin'), input.checkin);
+  assert.equal(url.searchParams.get('checkout'), input.checkout);
+  assert.deepEqual(JSON.parse(Buffer.from(url.searchParams.get('occupancies'),'base64').toString()), input.rooms);
+  assert.equal(url.searchParams.get('clientReference'), 'fixture_search');
+  for (const invalid of [
+    {...input, hotelId:'lpnot-in-catalogue'},
+    {...input, hotelId:'https://evil.invalid'},
+    {...input, placeId:'other'},
+    {...input, destinationKey:'fixture-city'},
+    {...input, displayName:'Injected'},
+    {...input, checkin:'2026-10-01'},
+  ]) blocked(handoff(invalid,config));
+  blocked(handoff(input, {...config, hotels: []}));
+  blocked(handoff(input, {...config, hotels: [{...hotel, matchEvidence:''}]}));
+});
+
+test('intelligent suggestions prefer matching hotels and never infer an unverified exact property', () => {
+  const {smartHotelSuggestions, findExactVerifiedHotel, isVerifiedSmartSelection} = require('../lib/travel/smartHotelSearch');
+  const first = smartHotelSuggestions('Peninsula Istanbul')[0];
+  assert.equal(first.kind,'hotel');
+  assert.equal(first.id,'lp6558f17c');
+  assert.equal(smartHotelSuggestions('ciragan')[0].id,'lp85821');
+  assert(smartHotelSuggestions('Istanbul').some(x => x.kind==='destination' && x.id==='istanbul'));
+  assert.equal(findExactVerifiedHotel('The Peninsula Istanbul').id,'lp6558f17c');
+  assert.equal(findExactVerifiedHotel('Hotel that exists only on another supplier'),undefined);
+  assert.equal(smartHotelSuggestions('This random hotel exists globally').length,0);
+  assert.equal(isVerifiedSmartSelection({kind:'hotel',id:'lp6558f17c',label:'Wrong name',detail:''}),false);
+});
