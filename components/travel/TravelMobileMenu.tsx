@@ -89,7 +89,7 @@ export function TravelMobileMenu({
           </button>
         </div>
         <nav aria-label={fr ? 'Navigation mobile principale' : 'Mobile primary navigation'} className="px-6 pt-5">
-          {links.map(item => <Link key={item.href} href={item.href} onClick={dismiss} className={item.featured
+          {links.map(item => <Link key={item.href} href={item.href} rel={item.featured ? 'sponsored' : undefined} onClick={dismiss} className={item.featured
             ? 'mb-5 flex min-h-[52px] items-center justify-between bg-[#142c34] px-4 py-3 text-sm font-semibold text-white'
             : 'flex min-h-[54px] items-center justify-between border-b border-[#e8e2d8] text-[15px] font-medium text-[#172b2c]'}>
             {item.label}<ArrowUpRight size={17} strokeWidth={1.5} aria-hidden="true"/>

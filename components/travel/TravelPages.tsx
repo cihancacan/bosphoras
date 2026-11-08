@@ -41,6 +41,7 @@ import {sanMiguelSchemaSafePhotos} from '@/data/travel/sanMiguelDeAllendePremium
 import Link from 'next/link';
 import Image from 'next/image';
 import { isHotelSearchAvailable } from '@/lib/travel/hotelSearchPreview';
+import { getNuiteeWhiteLabelSearchHref } from '@/lib/travel/nuiteeWhiteLabel';
 import { travelEditorial } from '@/data/travel/editorial';
 import { IstanbulFlagship } from '@/components/travel/IstanbulFlagship';
 import { FeaturedCityGuide } from '@/components/travel/FeaturedCityGuide';
@@ -284,8 +285,9 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
 export function Header({ locale, slug, limitedLocales = false }: { locale: TravelLocale; slug: string; limitedLocales?: boolean }) {
   const t = travelText(locale);
   const hotelSearch = (locale === 'fr' || locale === 'en') && isHotelSearchAvailable();
+  const hotelSearchUrl = getNuiteeWhiteLabelSearchHref(locale);
   const mobileLinks = [
-    ...(hotelSearch ? [{ label: locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel', href: travelHref(locale, 'search'), featured: true }] : []),
+    ...(hotelSearch ? [{ label: locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel', href: hotelSearchUrl, featured: true }] : []),
     { label: t.destinations, href: travelHref(locale, 'destinations') },
     { label: t.lastMinute, href: travelHref(locale, 'last-minute') },
     { label: t.privateCollection, href: travelHref(locale, 'private-collection') },
@@ -302,7 +304,7 @@ export function Header({ locale, slug, limitedLocales = false }: { locale: Trave
         BOSPHORAS <span className="text-[#cdb37b]">LUXURY STAYS</span>
       </Link>
       <nav aria-label="Travel primary navigation" className="hidden items-center gap-4 text-xs lg:flex lg:gap-6 lg:text-sm">
-        {hotelSearch && <Link href={travelHref(locale,'search')} className="text-[#e7c78a]">{locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel'}</Link>}
+        {hotelSearch && <Link href={hotelSearchUrl} rel="sponsored" className="text-[#e7c78a]">{locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel'}</Link>}
         <Link href={travelHref(locale,'destinations')} className="hover:text-[#e7c78a]">{t.destinations}</Link>
         <Link href={travelHref(locale,'last-minute')} className="hover:text-[#e7c78a]">{t.lastMinute}</Link>
         <Link href={travelHref(locale,'private-collection')} className="hover:text-[#e7c78a]">{t.privateCollection}</Link>

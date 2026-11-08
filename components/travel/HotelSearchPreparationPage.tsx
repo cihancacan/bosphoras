@@ -5,7 +5,7 @@ import { HotelReservationSearch } from './HotelReservationSearch';
 import { Header as TravelHeader } from './TravelPages';
 import { travelHref } from '@/lib/travel/i18n';
 import { isHotelSearchAvailable } from '@/lib/travel/hotelSearchPreview';
-import { getNuiteeReservationStart, isNuiteeBookingLive, nuiteeLaunch } from '@/lib/travel/nuiteeLaunch';
+import { getNuiteeReservationStart, getNuiteeWorldwideSearch, isNuiteeBookingLive, nuiteeLaunch } from '@/lib/travel/nuiteeLaunch';
 import s from './HotelReservation.module.css';
 
 export function hotelSearchMetadata(locale: 'fr' | 'en'): Metadata {
@@ -27,8 +27,11 @@ export function HotelSearchPreparationPage({ locale, searchParams = {} }: { loca
   const selection = { hotel: typeof searchParams.hotel === 'string' ? searchParams.hotel : undefined, destination: typeof searchParams.destination === 'string' ? searchParams.destination : undefined };
   const initialUrl = getNuiteeReservationStart(locale, selection);
   if ((searchParams.hotel || searchParams.destination) && !initialUrl) notFound();
-  // Verified hotel/destination links should not load a second booking app inside an iframe.
+  // Verified hotel and destination pages still deep-link to their exact supplier URL.
   if (initialUrl) redirect(initialUrl);
+  // Legacy /travel/search links must not mount a second form before the supplier.
+  const worldwideUrl = getNuiteeWorldwideSearch(locale);
+  if (worldwideUrl) redirect(worldwideUrl);
   return <div lang={locale} className={s.page}>
     <TravelHeader locale={locale} slug="search" limitedLocales />
     <main>
