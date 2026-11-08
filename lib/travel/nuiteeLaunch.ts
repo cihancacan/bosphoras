@@ -3,7 +3,7 @@ import { hotelProviders, supplierResponsibilities, getHotelPartnerLinks, type Ho
 import type { NuiteeSearchConnection } from './nuiteeSearchHandoff';
 import { NUITEE_WHITE_LABEL_ORIGIN, getNuiteeWhiteLabelSearchHref } from './nuiteeWhiteLabel';
 
-const bookingHosts = ['cihan-cacan-7d0sw.nuitee.link'];
+const bookingHosts = ['bosphoras.nuitee.link'];
 
 /** Operational evidence only. No API key, card, bank details or traveler data. */
 export const nuiteeLaunch = {
