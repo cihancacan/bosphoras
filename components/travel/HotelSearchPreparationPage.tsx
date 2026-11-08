@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { HotelReservationSearch } from './HotelReservationSearch';
 import { Header as TravelHeader } from './TravelPages';
 import { travelHref } from '@/lib/travel/i18n';
 import { isHotelSearchAvailable } from '@/lib/travel/hotelSearchPreview';
-import { getNuiteeReservationStart, isNuiteeBookingLive, nuiteeLaunch } from '@/lib/travel/nuiteeLaunch';
+import { getNuiteeReservationStart, getNuiteeWorldwideSearch, isNuiteeBookingLive, nuiteeLaunch } from '@/lib/travel/nuiteeLaunch';
 import s from './HotelReservation.module.css';
 
 export function hotelSearchMetadata(locale: 'fr' | 'en'): Metadata {
@@ -27,6 +27,10 @@ export function HotelSearchPreparationPage({ locale, searchParams = {} }: { loca
   const selection = { hotel: typeof searchParams.hotel === 'string' ? searchParams.hotel : undefined, destination: typeof searchParams.destination === 'string' ? searchParams.destination : undefined };
   const initialUrl = getNuiteeReservationStart(locale, selection);
   if ((searchParams.hotel || searchParams.destination) && !initialUrl) notFound();
+  // Preserve existing verified hotel and destination links without the intermediary form.
+  if (initialUrl) redirect(initialUrl);
+  const worldwideUrl = getNuiteeWorldwideSearch(locale);
+  if (worldwideUrl) redirect(worldwideUrl);
   return <div lang={locale} className={s.page}>
     <TravelHeader locale={locale} slug="search" limitedLocales />
     <main>

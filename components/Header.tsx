@@ -11,6 +11,7 @@ import { getEquivalentHighPotentialSlug } from '@/data/highPotentialPages';
 import { longTailTaxRouteGroups } from '@/data/longTailTaxRoutes';
 import { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';
 import { globalPropertyHubPaths, propertyHubPaths } from '@/data/propertyDesk';
+import { getNuiteeWhiteLabelSearchHref } from '@/lib/travel/nuiteeWhiteLabel';
 import dynamic from 'next/dynamic';
 const SearchOverlay = dynamic(() => import('@/components/SearchOverlay').then((module) => module.SearchOverlay));
 
@@ -68,7 +69,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
   const mobilityLink = locale === 'fr' ? '/transfert-aeroport-istanbul' : locale === 'en' ? '/en/istanbul-airport-transfer' : locale === 'ru' ? '/ru/transfer-aeroport-stambul' : '/ar/istanbul-airport-transfer';
   const peninsulaLink = locale === 'fr' ? '/peninsula-istanbul' : `/${locale}/peninsula-istanbul`;
   const travelHomeHref = locale === 'fr' ? '/travel' : `/${locale}/travel`;
-  const hotelSearchHref = locale === 'fr' ? '/travel/search' : '/en/travel/search';
+  const hotelSearchHref = getNuiteeWhiteLabelSearchHref(locale);
   const travelDestinationsHref = locale === 'fr' ? '/travel/destinations' : `/${locale}/travel/destinations`;
   const corporateRelocationLink = corporateRelocationPaths[locale];
   const propertyTurkeyLink = getLocalePath(locale, propertyHubPaths[locale]);
@@ -162,6 +163,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
                     <Link
                       key={item.href}
                       href={item.href}
+                      rel={item.tone === 'hotel' ? 'sponsored' : undefined}
                       className={`mb-1 block px-4 py-3.5 transition last:mb-0 ${item.tone === 'property' ? 'border-l-2 border-[#4f8d78] bg-[#4f8d78]/10 hover:bg-[#4f8d78]/18' : item.tone === 'transfer' ? 'border-l-2 border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)]/[0.07] hover:bg-[hsl(42,65%,52%)]/[0.12]' : item.tone === 'hotel' ? 'border-l-2 border-[#cdb37b] bg-[#cdb37b]/[0.10] hover:bg-[#cdb37b]/[0.17]' : 'border-b border-white/5 hover:bg-white/[0.04]'}`}
                     >
                       <span className={`block text-[0.76rem] font-semibold uppercase tracking-[0.12em] ${item.tone === 'property' ? 'text-[#a9d5c5]' : item.tone === 'transfer' || item.tone === 'hotel' ? 'text-[hsl(42,65%,63%)]' : 'text-[hsl(45,30%,96%)]'}`}>{item.label}</span>
@@ -192,6 +194,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
                 {group.items.map((item) => <Link
                   key={item.href}
                   href={item.href}
+                  rel={item.tone === 'hotel' ? 'sponsored' : undefined}
                   onClick={() => setMenuOpen(false)}
                   className={`block border-l-2 px-3 py-2.5 text-sm ${item.tone === 'property' ? 'border-[#4f8d78] bg-[#4f8d78]/10 font-semibold text-[#b9dfd1]' : item.tone === 'transfer' || item.tone === 'hotel' ? 'border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)]/[0.06] font-semibold text-[hsl(42,65%,67%)]' : 'border-transparent text-[hsl(220,10%,68%)]'}`}
                 >{item.label}</Link>)}

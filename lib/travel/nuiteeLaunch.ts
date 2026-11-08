@@ -1,12 +1,13 @@
 import mappings from '@/data/travel/nuiteeMappings.json';
 import { hotelProviders, supplierResponsibilities, getHotelPartnerLinks, type HotelProvider, type HotelPartnerLink } from './hotelPartners';
 import type { NuiteeSearchConnection } from './nuiteeSearchHandoff';
+import { NUITEE_WHITE_LABEL_ORIGIN, getNuiteeWhiteLabelSearchHref } from './nuiteeWhiteLabel';
 
 const bookingHosts = ['cihan-cacan-7d0sw.nuitee.link'];
 
 /** Operational evidence only. No API key, card, bank details or traveler data. */
 export const nuiteeLaunch = {
-  origin: 'https://cihan-cacan-7d0sw.nuitee.link',
+  origin: NUITEE_WHITE_LABEL_ORIGIN,
   sellerLegalName: 'Nuitée Travel Limited',
   agreementReference: 'LAS-3651: Lina Elkhettar reply, 2026-11-02; Connect terms 2025-09-12',
   mappingPermissionReference: 'LAS-3651: explicit permission for editorial hotel and destination links, 2026-11-02',
@@ -43,11 +44,7 @@ export const nuiteeSearchDestinations = mappings.destinations.map(({ key, displa
 
 export function getNuiteeWorldwideSearch(locale: 'fr' | 'en', now = Date.now()): string | null {
   if (!isNuiteeBookingLive(now)) return null;
-  const url = new URL(nuiteeLaunch.origin);
-  url.searchParams.set('language', locale);
-  url.searchParams.set('currency', 'EUR');
-  url.searchParams.set('clientReference', 'bosphoras_worldwide');
-  return url.toString();
+  return getNuiteeWhiteLabelSearchHref(locale);
 }
 
 /** Only mapped hotel IDs or verified destination keys may prefill the public page. */

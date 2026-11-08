@@ -137,3 +137,25 @@ test('booking-page prefill accepts only exact mapped hotels or destinations', ()
     assert.equal(launch.getNuiteeReservationStart('fr',selection,now),null);
   }
 });
+
+test('production hotel search exits directly to the supplier white-label', () => {
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const read = name => fs.readFileSync(path.join(__dirname, '..', name), 'utf8');
+  const { getNuiteeWhiteLabelSearchHref, NUITEE_WHITE_LABEL_ORIGIN } = require('../lib/travel/nuiteeWhiteLabel');
+  for (const locale of ['fr','en','ru','ar']) {
+    const url = new URL(getNuiteeWhiteLabelSearchHref(locale));
+    assert.equal(url.origin, NUITEE_WHITE_LABEL_ORIGIN);
+    assert.equal(url.pathname, '/');
+    assert.equal(url.searchParams.get('language'),locale==='fr'?'fr':'en');
+    assert.equal(url.searchParams.get('currency'),'EUR');
+    assert.equal(url.searchParams.get('clientReference'),'bosphoras_worldwide');
+  }
+  assert.equal(launch.getNuiteeWorldwideSearch('fr'),getNuiteeWhiteLabelSearchHref('fr'));
+  assert(read('components/Header.tsx').includes('const hotelSearchHref = getNuiteeWhiteLabelSearchHref(locale);'));
+  assert(read('components/travel/TravelPages.tsx').includes('href={hotelSearchUrl}'));
+  assert(read('components/travel/TravelPages.tsx').includes('href: hotelSearchUrl, featured: true'));
+  assert(read('components/travel/HotelSearchPreparationPage.tsx').includes('if (worldwideUrl) redirect(worldwideUrl)'));
+  assert(read('components/Header.tsx').includes("const travelHomeHref = locale === 'fr' ? '/travel'"));
+  assert(read('components/travel/TravelPages.tsx').includes("href={travelHref(locale,'destinations')}"));
+});
