@@ -40,8 +40,8 @@ for(const p of all){
   }
 }
 assert(total<5000000,'Jaipur image pack exceeds 5 MB');
-assert.equal(all.filter(p=>p.commercialRightsCleared).length,14,'Attribution count unexpected');
-assert.equal(media.hotels.filter(p=>!p.commercialRightsCleared).length,7,'Seven third-party hotel photos must remain blocked for public use');
+assert.equal(all.filter(p=>p.commercialRightsCleared).length,13,'Attribution count unexpected');
+assert.equal(media.hotels.filter(p=>!p.commercialRightsCleared).length,8,'Eight third-party hotel photos must remain blocked for public use');
 const cats=new Set(media.hotels.map(p=>p.key.split('-')[0]));
 assert.deepEqual([...cats].sort(),['leela','oberoi','raffles','rambagh']);
 for(const code of cats)assert.equal(media.hotels.filter(p=>p.key.startsWith(code+'-')).length,3);

@@ -37,7 +37,7 @@ if (guideSlugs.includes('jaipur')) {
       'Jaipur image path is not a local asset: ' + photo.key);
     assert(existsSync('public' + photo.localWebpPath), 'Jaipur WebP missing: ' + photo.key);
     if (photo.category === 'hotel') {
-      const licensed = photo.sourceRightsStatus === 'commons_cc_reuse_with_attribution' && photo.rightsPermissionEvidence;
+      const licensed = (photo.sourceRightsStatus === 'commons_cc_reuse_with_attribution' || photo.sourceRightsStatus === 'commons_public_domain_attributed') && photo.rightsPermissionEvidence;
       const strictlyPrivate = photo.sourceRightsStatus === 'third_party_private_preview_only_no_public_license' && !photo.rightsPermissionEvidence;
       assert(licensed || strictlyPrivate, 'Jaipur hotel photo public/private rights not accounted for: ' + photo.key);
     }

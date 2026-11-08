@@ -39,6 +39,8 @@ for (const slot of slots) {
     // requires a strict private-only flag until a separate release approval.
     if (slot.sourceRightsStatus === 'commons_cc_reuse_with_attribution') {
       if (!slot.rightsPermissionEvidence || !slot.license || !slot.licenseUrl) fail(label + ': Commons reuse rights evidence missing');
+    } else if (slot.sourceRightsStatus === 'commons_public_domain_attributed') {
+      if(slot.license !== 'Public domain' || !slot.rightsPermissionEvidence?.startsWith('https://commons.wikimedia.org/wiki/File:')) fail(label + ': Commons public-domain source evidence missing');
     } else if (slot.sourceRightsStatus !== 'third_party_private_preview_only_no_public_license' || slot.rightsPermissionEvidence) {
       fail(label + ': unlicensed hotel marketing asset must stay private and unapproved');
     }
@@ -67,7 +69,7 @@ if (new Set(images.map(i => i.digest)).size !== images.length) fail('Duplicate W
 if (images.reduce((sum, i) => sum + i.size, 0) > 5000000) fail('21-image WebP pack exceeds 5 MB');
 if (!manifest.previewApproved || !manifest.privatePreviewApprovalScope) fail('Restricted private Preview authorization missing');
 if (manifest.productionApproved) fail('Production approval must remain separately gated');
-if (slots.filter(s => s.sourceRightsStatus === 'third_party_private_preview_only_no_public_license').length !== 7) fail('Current seven unlicensed hotel photos must be explicitly tracked');
+if (slots.filter(s => s.sourceRightsStatus === 'third_party_private_preview_only_no_public_license').length !== 8) fail('Current eight unlicensed hotel photos must be explicitly tracked');
 if (errors.length) {
   console.error('JAIPUR_77_MEDIA_NOT_READY: ' + errors.length + ' issue(s)');
   for (const message of errors.slice(0, 55)) console.error(' - ' + message);
