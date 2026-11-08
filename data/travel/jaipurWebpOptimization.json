@@ -2,8 +2,8 @@
   "total": 21,
   "landscapes": 9,
   "hotelPhotos": 12,
-  "originalBytes": 6135890,
-  "totalWebPBytes": 2640864,
+  "originalBytes": 5892232,
+  "totalWebPBytes": 2594042,
   "publicUseApproved": false,
   "photos": [
     {
@@ -119,12 +119,12 @@
     {
       "key": "rambagh-3",
       "localPath": "/images/travel/jaipur-premium/hotels/rambagh-3.webp",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rambagh_Palace_Jaipur_interior,_July_2016.jpg",
-      "sourceSHA256": "04cb77e8751521a85c72e5428929b181553678084a21629d56da1a804fcf552c",
-      "webpSHA256": "5bde68822d17f2c2810e4366cd398c95ee8b073c5a737db4dc553456ab5755b4",
-      "webpBytes": 171614,
-      "license": "CC BY-SA 4.0",
-      "credit": "Sunnya343"
+      "sourcePage": "https://barbaraathanassiadis.com/lifestyle/the-maharani-of-jaipur-india",
+      "sourceSHA256": "338b2b3d321fc8b394630212db70d88db0442b749e7f4d82d07db5977f6f43c8",
+      "webpSHA256": "17494a54493b4015ca5b9e7f56eac274a9b4e4c73bce26acb89380e221d568cf",
+      "webpBytes": 145522,
+      "license": null,
+      "credit": "Rambagh Palace Jaipur"
     },
     {
       "key": "oberoi-1",
@@ -149,10 +149,10 @@
     {
       "key": "oberoi-3",
       "localPath": "/images/travel/jaipur-premium/hotels/oberoi-3.webp",
-      "sourcePage": "https://www.oberoihotels.com/hotels-in-jaipur-rajvilas-resort/events/",
-      "sourceSHA256": "4e24058c04b812eaddcb34b0e721124aa1a75a620d1e59a9dbc4aeafaaf64615",
-      "webpSHA256": "1f536bfc97c71cfab4758397e060cde10ebc0c042e6b807bcaef1ed2f076d16e",
-      "webpBytes": 85656,
+      "sourcePage": "https://www.oberoihotels.com/hotels-in-jaipur-rajvilas-resort/accommodation/premier-room/",
+      "sourceSHA256": "7d620c4dce16f6fab398711e67cca5b8b222a0a96a238ebd59c4e39a568f090e",
+      "webpSHA256": "2c2c058e413880a9937bfa7301bb36589ab221d864921b643f379396f7772d8b",
+      "webpBytes": 64926,
       "license": null,
       "credit": "The Oberoi Rajvilas Jaipur"
     },
