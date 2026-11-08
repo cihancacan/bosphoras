@@ -116,3 +116,11 @@
 
 /* Small-screen image loading: retain the approved original hotel search UI. */
 @media(max-width:700px){.heroSlide:nth-child(2),.heroSlide:nth-child(3){background-image:none!important;animation:none!important}}
+
+/* Direct supplier booking handoff; results are no longer embedded in an iframe. */
+.directBookingHandoff{max-width:800px;margin:12px auto 18px;padding:28px 24px;border:1px solid #d9ded9;background:#f5f7f4;border-radius:10px;text-align:center;color:#19313a}
+.directBookingHandoff strong{display:block;font-size:20px;font-weight:650}
+.directBookingHandoff p{margin:12px auto 18px;max-width:580px;font-size:14px;line-height:1.6;color:#5d7070}
+.directBookingHandoff a{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:12px 24px;border-radius:7px;text-decoration:none;background:#19313a;color:#fff;font-size:13px;font-weight:650}
+.directBookingHandoff a:hover{background:#284e56}
+@media(max-width:700px){.directBookingHandoff{margin:8px 5% 18px;padding:22px 16px}.directBookingHandoff strong{font-size:17px}.directBookingHandoff a{width:100%}}

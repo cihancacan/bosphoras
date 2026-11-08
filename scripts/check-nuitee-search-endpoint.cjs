@@ -137,3 +137,14 @@ test('booking-page prefill accepts only exact mapped hotels or destinations', ()
     assert.equal(launch.getNuiteeReservationStart('fr',selection,now),null);
   }
 });
+
+test('Bosphoras booking result navigation does not embed a second booking application', () => {
+  const fs = require('node:fs');
+  const path = require('node:path');
+  const searchPage = fs.readFileSync(path.join(__dirname, '../components/travel/HotelReservationSearch.tsx'), 'utf8');
+  const preparationPage = fs.readFileSync(path.join(__dirname, '../components/travel/HotelSearchPreparationPage.tsx'), 'utf8');
+  assert(searchPage.includes('window.location.assign(body.url)'), 'search should navigate to qualified supplier URL');
+  assert(searchPage.includes('new URL(body.url).origin !== origin'), 'navigation must remain supplier-origin locked');
+  assert(!searchPage.includes('<iframe'), 'do not reintroduce the slow embedded results');
+  assert(preparationPage.includes('if (initialUrl) redirect(initialUrl)'), 'prefilled supplier links should redirect without hydration');
+});

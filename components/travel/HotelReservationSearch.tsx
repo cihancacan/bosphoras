@@ -32,14 +32,12 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
   const fr = locale === 'fr';
   const widgetId = `booking-search-${useId().replace(/:/g, '')}`;
   const widget = useRef<HTMLDivElement>(null);
-  const results = useRef<HTMLElement>(null);
   const submitting = useRef(false);
   const [sdkReady, setSdkReady] = useState(false);
   const [widgetReady, setWidgetReady] = useState(false);
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);
   const [bookingUrl, setBookingUrl] = useState(initialUrl);
-  const [loaded, setLoaded] = useState(false);
   const [summary, setSummary] = useState('');
   const [pending, setPending] = useState<{ data: SearchPayload; plan: RoomAllocation } | null>(null);
   const [roomAdults, setRoomAdults] = useState<string[]>([]);
@@ -67,9 +65,12 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
       });
       const body = await response.json();
       if (!response.ok || typeof body.url !== 'string' || new URL(body.url).origin !== origin) throw new Error('invalid search');
-      setLoaded(false); setBookingUrl(body.url); setPending(null);
+      // Navigate directly to the supplier-owned booking site; embedding a full
+      // second app in an iframe prolonged the perceived loading experience.
+      setBookingUrl(body.url); setPending(null);
       const date = (day: string) => new Date(`${day}T12:00:00`).toLocaleDateString(fr ? 'fr-FR' : 'en-GB', { day: 'numeric', month: 'short' });
       setSummary(`${hotel?.name || data.place.description} · ${date(data.checkin)} – ${date(data.checkout)}`);
+      window.location.assign(body.url);
     } catch { setError(fr ? 'La recherche n’a pas abouti. Réessayez ou ouvrez le moteur en plein écran.' : 'Search could not complete. Try again or open the full-screen booking engine.'); }
     finally { window.clearTimeout(timeout); submitting.current = false; setBusy(false); }
   }, [fr, locale, origin]);
@@ -93,7 +94,6 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
     setSummary('');
     setPending(null);
     setError('');
-    setLoaded(false);
     setWidgetReady(false);
   }, [initialUrl, locale]);
 
@@ -110,10 +110,6 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
     const element = widget.current;
     return () => { element.replaceChildren(); };
   }, [sdkReady, fr, locale, origin, search, widgetId, bookingUrl]);
-
-  useEffect(() => {
-    if (bookingUrl && summary) results.current?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
-  }, [bookingUrl, summary]);
 
   return <>
     <Script src="https://components.liteapi.travel/v1.0/sdk.umd.js" strategy="afterInteractive" onReady={() => setSdkReady(true)} onError={() => setError(fr ? 'Le moteur de recherche n’a pas pu être chargé.' : 'The search engine could not load.')} />
@@ -140,11 +136,14 @@ export function HotelReservationSearch({ locale, origin, initialUrl }: { locale:
       </div>
     </section>}
 
-    {bookingUrl ? <section ref={results} className={s.results} aria-labelledby="hotel-results-title">
+    {bookingUrl ? <section className={s.results} aria-labelledby="hotel-results-title">
       <div className={s.resultsHeading}><div><p className={s.eyebrow}>{fr ? 'VOTRE RECHERCHE' : 'YOUR SEARCH'}</p><h1 id="hotel-results-title">{summary || (fr ? 'Choisissez votre chambre' : 'Choose your room')}</h1></div><div className={s.resultsActions}><button type="button" onClick={resetSearch}>{fr ? 'Nouvelle recherche' : 'New search'}</button><a href={bookingUrl} target="_blank" rel="sponsored noopener noreferrer">{fr ? 'Ouvrir en plein écran' : 'Open full screen'} <ArrowUpRight size={15} /></a></div></div>
-      {!loaded && <p className={s.loading} role="status">{fr ? 'Chargement des hôtels et des tarifs…' : 'Loading hotels and rates…'}</p>}
-      <iframe key={bookingUrl} className={s.bookingFrame} src={bookingUrl} title={fr ? 'Hôtels, chambres et réservation — moteur de notre partenaire' : 'Hotels, rooms and booking — partner engine'} allow="payment" referrerPolicy="strict-origin-when-cross-origin" onLoad={() => setLoaded(true)} />
-      <p className={s.frameNote}>{fr ? 'Notre partenaire de réservation présente le prix total et les conditions avant paiement. En cas de difficulté avec le paiement intégré, choisissez « Ouvrir en plein écran ».' : 'Our booking partner displays the full price and terms before payment. If embedded payment is unavailable, select “Open full screen”.'}</p>
+      <div className={s.directBookingHandoff} role="status">
+        <strong>{fr ? 'Ouverture des disponibilités chez Nuitée…' : 'Opening availability with Nuitee…'}</strong>
+        <p>{fr ? 'Vous allez accéder directement aux résultats et aux tarifs de notre partenaire de réservation, sans chargement intégré.' : 'You are being taken directly to our booking partner’s hotel results and rates, without the embedded page.'}</p>
+        <a href={bookingUrl} rel="sponsored noopener noreferrer">{fr ? 'Accéder aux résultats maintenant' : 'Open hotel results now'} <ArrowUpRight size={16} /></a>
+      </div>
+      <p className={s.frameNote}>{fr ? 'La réservation, les paiements et le service après-vente sont gérés par Nuitée.' : 'Nuitee handles reservations, payments and after-sales support.'}</p>
     </section> : <>
       <div className={s.benefits}>
         <div><SlidersHorizontal size={22} /><p><strong>{fr ? 'Comparez à votre rythme' : 'Compare at your pace'}</strong><span>{fr ? 'Prix, emplacement, équipements : affinez votre recherche.' : 'Refine your search by price, location and amenities.'}</span></p></div>

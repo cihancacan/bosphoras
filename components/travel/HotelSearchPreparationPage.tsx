@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, redirect } from 'next/navigation';
 import { HotelReservationSearch } from './HotelReservationSearch';
 import { Header as TravelHeader } from './TravelPages';
 import { travelHref } from '@/lib/travel/i18n';
@@ -27,6 +27,8 @@ export function HotelSearchPreparationPage({ locale, searchParams = {} }: { loca
   const selection = { hotel: typeof searchParams.hotel === 'string' ? searchParams.hotel : undefined, destination: typeof searchParams.destination === 'string' ? searchParams.destination : undefined };
   const initialUrl = getNuiteeReservationStart(locale, selection);
   if ((searchParams.hotel || searchParams.destination) && !initialUrl) notFound();
+  // Verified hotel/destination links should not load a second booking app inside an iframe.
+  if (initialUrl) redirect(initialUrl);
   return <div lang={locale} className={s.page}>
     <TravelHeader locale={locale} slug="search" limitedLocales />
     <main>
