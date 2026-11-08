@@ -26,7 +26,7 @@ for (const slug of ['rajasthan', 'galle']) assert(guideSlugs.includes(slug), 'Pr
 if (guideSlugs.includes('jaipur')) {
   const jaipur = JSON.parse(read('data/travel/jaipurPhotoProductionPlan.json'));
   const slots = jaipur.photoSlots || [];
-  assert(jaipur.previewApproved, 'Jaipur integrated without approved private Preview media.');
+  assert(jaipur.previewApproved && !jaipur.productionApproved, 'Jaipur requires private-only Preview media gate.');
   assert.equal(slots.length, 21, 'Jaipur guide needs 9 scenes and 12 hotel photos.');
   assert.equal(slots.filter(p => p.category === 'landscape').length, 9);
   assert.equal(slots.filter(p => p.category === 'hotel').length, 12);
@@ -37,7 +37,9 @@ if (guideSlugs.includes('jaipur')) {
       'Jaipur image path is not a local asset: ' + photo.key);
     assert(existsSync('public' + photo.localWebpPath), 'Jaipur WebP missing: ' + photo.key);
     if (photo.category === 'hotel') {
-      assert(photo.rightsPermissionEvidence, 'Jaipur hotel image permission missing: ' + photo.key);
+      const licensed = photo.sourceRightsStatus === 'commons_cc_reuse_with_attribution' && photo.rightsPermissionEvidence;
+      const strictlyPrivate = photo.sourceRightsStatus === 'third_party_private_preview_only_no_public_license' && !photo.rightsPermissionEvidence;
+      assert(licensed || strictlyPrivate, 'Jaipur hotel photo public/private rights not accounted for: ' + photo.key);
     }
   }
 }
