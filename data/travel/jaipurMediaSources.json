@@ -3,7 +3,7 @@
   "destinationNumber": 77,
   "scope": "private_owner_noindex_preview",
   "publicUseApproved": false,
-  "notes": "Nine geographic Commons works; five hotel Commons works and seven third-party or direct operator sources restricted to private noindex preview. Downloading does not imply a commercial reuse license.",
+  "notes": "Nine Jaipur Commons destination photographs, three Rambagh sources (including private-preview editorial photo), three Oberoi sources (including official room image), three Raffles, three Leela. Exact hotel room photos prioritized; no claimed public commercial rights for third-party media.",
   "destinationScenes": [
     {
       "key": "scene-1",
@@ -124,14 +124,14 @@
     {
       "key": "rambagh-3",
       "hotel": "Rambagh Palace Jaipur",
-      "type": "wikimedia",
-      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rambagh_Palace_Jaipur_interior,_July_2016.jpg",
-      "sourceUrl": null,
-      "frCaption": "Décor intérieur du véritable Rambagh Palace",
-      "enCaption": "Interior architecture of the actual Rambagh Palace",
+      "type": "preview-source",
+      "sourcePage": "https://barbaraathanassiadis.com/lifestyle/the-maharani-of-jaipur-india",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c27b8e3af2096648cbb6cbd/3b9c927f-7063-45d9-9d0b-4a7d90ac61cc/Rambagh%2BPalace%2BBedroom.jpg",
+      "frCaption": "Chambre véritable du Rambagh Palace, boiseries et lits historiques",
+      "enCaption": "Authentic Rambagh Palace guest bedroom with carved wood and twin beds",
       "localPath": "/images/travel/jaipur-premium/hotels/rambagh-3.webp",
-      "previewOnly": false,
-      "commercialRightsCleared": null
+      "previewOnly": true,
+      "commercialRightsCleared": false
     },
     {
       "key": "oberoi-1",
@@ -161,10 +161,10 @@
       "key": "oberoi-3",
       "hotel": "The Oberoi Rajvilas Jaipur",
       "type": "preview-source",
-      "sourcePage": "https://www.oberoihotels.com/hotels-in-jaipur-rajvilas-resort/events/",
-      "sourceUrl": "https://www.oberoihotels.com/-/media/oberoi-hotels/website-images/the-oberoi-rajvilas-jaipur/events/spotlight/banner-1920x562.jpg",
-      "frCaption": "Pavillon éclairé et jardins de l'Oberoi Rajvilas",
-      "enCaption": "Lit pavilion and landscaped garden at The Oberoi Rajvilas",
+      "sourcePage": "https://www.oberoihotels.com/hotels-in-jaipur-rajvilas-resort/accommodation/premier-room/",
+      "sourceUrl": "https://www.oberoihotels.com/-/media/oberoi-hotel/the-oberoi-rajvilas/accommodation_rajvilas/04-premier-room/desktop820x646/premier_room-1.jpg",
+      "frCaption": "Chambre Premier Room à baldaquin de l'Oberoi Rajvilas",
+      "enCaption": "Premier Room four-poster bedroom at The Oberoi Rajvilas",
       "localPath": "/images/travel/jaipur-premium/hotels/oberoi-3.webp",
       "previewOnly": true,
       "commercialRightsCleared": false
