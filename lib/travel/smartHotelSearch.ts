@@ -41,7 +41,7 @@ export function smartHotelSuggestions(query: string, limit = 7): SmartHotelSugge
       return { item, rank };
     })
     .filter(row => row.rank < 99)
-    .sort((a, b) => a.rank - b.rank || (a.item.kind === 'hotel' ? -1 : 1) || a.item.label.localeCompare(b.item.label))
+    .sort((a, b) => a.rank - b.rank || (a.item.kind === b.item.kind ? 0 : a.item.kind === 'hotel' ? -1 : 1) || a.item.label.localeCompare(b.item.label))
     .slice(0, limit)
     .map(row => row.item);
 }

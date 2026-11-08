@@ -104,7 +104,7 @@ export function getNuiteeSearchHandoff(
 
   // Only the documented listing route and parameters. No arbitrary query passthrough.
   const url = new URL(hotel ? '/hotels/' + hotel.hotelId : '/hotels', origin);
-  if (destination) {
+  if (destination && typeof destination.placeId === 'string' && typeof destination.displayName === 'string') {
     url.searchParams.set('placeId', destination.placeId);
     // The account's own search form also sends name; without it the search header is blank.
     url.searchParams.set('name', destination.displayName);
