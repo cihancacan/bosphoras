@@ -14,15 +14,18 @@ export function CareersContent({ initialLanguage }: { initialLanguage: CareerLoc
   const applicationCopy=careerApplicationCopy(language);
   const [reference,setReference] = useState('');
   const statusRef=useRef<HTMLDivElement>(null);
+  const errorRef=useRef<HTMLDivElement>(null);
   useEffect(()=>{
     if(state==='sending'||state==='success'||state==='stored'){
       statusRef.current?.focus({preventScroll:true});
       statusRef.current?.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'center'});
+    }else if(state==='error'){
+      errorRef.current?.focus();
     }
   },[state]);
   const rtl=language==='ar';
   const names=[copy.role1,copy.role2,copy.role3,copy.role4,copy.role5,applicationCopy.travelTitle];
-  const roles=[copy.desk1,copy.desk2,copy.desk3,copy.desk4,applicationCopy.travelDesk];
+  const roles=[copy.desk1,copy.desk2,copy.desk3,copy.desk4,applicationCopy.travelTitle];
 
   async function submit(event:FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -86,7 +89,10 @@ export function CareersContent({ initialLanguage }: { initialLanguage: CareerLoc
           {roles.map((name,i)=><div key={i} className="flex min-h-[104px] items-center justify-between gap-4 border-t border-[#deddd6] py-7">
             <div className="flex items-center gap-5">
               <span className="text-[11px] tracking-[.18em] text-[#9b8057]">0{i+1}</span>
-              <p className="text-base font-medium leading-6">{name}</p>
+              <div>
+                <p className="text-base font-medium leading-6">{name}</p>
+                {i===4&&<p className="mt-2 text-sm leading-6 text-[#56636a]">{applicationCopy.travelDesk}</p>}
+              </div>
             </div>
             <ArrowUpRight size={16} className="shrink-0 text-[#99825e]" aria-hidden="true"/>
           </div>)}
@@ -155,7 +161,7 @@ export function CareersContent({ initialLanguage }: { initialLanguage: CareerLoc
         <button type="submit" disabled={state==='sending'} className="inline-flex min-h-12 w-full items-center justify-center gap-3 bg-[#152e3a] px-6 py-3 text-xs font-semibold uppercase tracking-[.15em] text-white transition hover:bg-[#264553] disabled:opacity-50">
           {state==='sending'?copy.sending:copy.submit}<ArrowRight size={16}/>
         </button>
-        <div aria-live="polite" role="status" className="min-h-6 text-sm leading-6">
+        <div ref={errorRef} tabIndex={-1} aria-live="polite" role="status" className="min-h-6 text-sm leading-6 focus:outline-none">
           {state==='error'&&<p className="text-[#a2443d]">{copy.error}</p>}
         </div>
       </form>}

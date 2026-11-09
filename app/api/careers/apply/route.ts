@@ -101,47 +101,47 @@ export async function POST(request:NextRequest) {
 
     let notificationSent=false,confirmationSent=false;
     try {
-    const mail=emailTransport();
-    if(mail) {
-      const internalText=[
-        'NOUVELLE CANDIDATURE — BOSPHORAS',
-        'Référence : '+applicationId,
-        'Nom : '+full_name,
-        'E-mail : '+email,
-        'Téléphone : '+(phone||'—'),
-        'Langue de réponse : '+locale,
-        'Langues professionnelles : '+spoken_languages,
-        'Service : '+role_area,
-        'Profil : '+(linkedin_url||'—'),
-        'CV : '+(cvName||'Non joint'),
-        '',
-        'Expérience :',experience_summary,'',
-        'Dossier également enregistré dans le CRM Bosphoras.',
-      ].join('\n');
-      const ack=careerAcknowledgements[locale];
-      const bodyHtml=escapeHtml(ack.body).replace(/\n/g,'<br>');
-      const clientHtml='<html dir="'+(locale==='ar'?'rtl':'ltr')+'"><body style="margin:0;padding:24px;background:#f7f7f4;font-family:Arial,sans-serif;color:#1c303a"><main style="max-width:620px;margin:auto;padding:32px;border:1px solid #d9dfdc;background:white"><p style="font-size:19px;letter-spacing:.16em;color:#142e3b">BOSPHORAS</p><div style="height:1px;background:#d3dcd9;margin:24px 0"></div><p style="font-size:15px;line-height:1.9">'+bodyHtml+'</p><p style="margin-top:32px;font-size:12px;color:#697a80">bosphoras.com · Galataport, Istanbul</p></main></body></html>';
-      const jobs=[
-        mail.transport.sendMail({
-          from:mail.from,to:mail.to,replyTo:safeHeader(email),
-          subject:safeHeader('Candidature Bosphoras — '+full_name+' — '+role_area),
-          text:internalText,html:'<pre style="font-family:Arial,sans-serif;white-space:pre-wrap;line-height:1.6">'+escapeHtml(internalText)+'</pre>',
-          attachments:cvBuffer&&cvName&&cvType?[{filename:cvName,content:cvBuffer,contentType:cvType}]:[],
-        }),
-        mail.transport.sendMail({
-          from:mail.from,to:safeHeader(email),replyTo:mail.to,
-          subject:safeHeader(ack.subject),text:ack.body,html:clientHtml,
-        }),
-      ];
-      const outcomes=await Promise.allSettled(jobs);
-      notificationSent=outcomes[0].status==='fulfilled' && (outcomes[0].value.accepted?.length ?? 0)>0;
-      confirmationSent=outcomes[1].status==='fulfilled' && (outcomes[1].value.accepted?.length ?? 0)>0;
-      if(!notificationSent)console.error('[careers] internal email not delivered');
-      if(!confirmationSent)console.error('[careers] acknowledgment not delivered');
-      if(typeof mail.transport.close==='function')mail.transport.close();
-    }else{
-      console.error('[careers] SMTP environment not configured; application securely stored in CRM');
-    }
+      const mail=emailTransport();
+      if(mail) {
+        const internalText=[
+          'NOUVELLE CANDIDATURE — BOSPHORAS',
+          'Référence : '+applicationId,
+          'Nom : '+full_name,
+          'E-mail : '+email,
+          'Téléphone : '+(phone||'—'),
+          'Langue de réponse : '+locale,
+          'Langues professionnelles : '+spoken_languages,
+          'Service : '+role_area,
+          'Profil : '+(linkedin_url||'—'),
+          'CV : '+(cvName||'Non joint'),
+          '',
+          'Expérience :',experience_summary,'',
+          'Dossier également enregistré dans le CRM Bosphoras.',
+        ].join('\n');
+        const ack=careerAcknowledgements[locale];
+        const bodyHtml=escapeHtml(ack.body).replace(/\n/g,'<br>');
+        const clientHtml='<html dir="'+(locale==='ar'?'rtl':'ltr')+'"><body style="margin:0;padding:24px;background:#f7f7f4;font-family:Arial,sans-serif;color:#1c303a"><main style="max-width:620px;margin:auto;padding:32px;border:1px solid #d9dfdc;background:white"><p style="font-size:19px;letter-spacing:.16em;color:#142e3b">BOSPHORAS</p><div style="height:1px;background:#d3dcd9;margin:24px 0"></div><p style="font-size:15px;line-height:1.9">'+bodyHtml+'</p><p style="margin-top:32px;font-size:12px;color:#697a80">bosphoras.com · Galataport, Istanbul</p></main></body></html>';
+        const jobs=[
+          mail.transport.sendMail({
+            from:mail.from,to:mail.to,replyTo:safeHeader(email),
+            subject:safeHeader('Candidature Bosphoras — '+full_name+' — '+role_area),
+            text:internalText,html:'<pre style="font-family:Arial,sans-serif;white-space:pre-wrap;line-height:1.6">'+escapeHtml(internalText)+'</pre>',
+            attachments:cvBuffer&&cvName&&cvType?[{filename:cvName,content:cvBuffer,contentType:cvType}]:[],
+          }),
+          mail.transport.sendMail({
+            from:mail.from,to:safeHeader(email),replyTo:mail.to,
+            subject:safeHeader(ack.subject),text:ack.body,html:clientHtml,
+          }),
+        ];
+        const outcomes=await Promise.allSettled(jobs);
+        notificationSent=outcomes[0].status==='fulfilled' && (outcomes[0].value.accepted?.length ?? 0)>0;
+        confirmationSent=outcomes[1].status==='fulfilled' && (outcomes[1].value.accepted?.length ?? 0)>0;
+        if(!notificationSent)console.error('[careers] internal email not delivered');
+        if(!confirmationSent)console.error('[careers] acknowledgment not delivered');
+        if(typeof mail.transport.close==='function')mail.transport.close();
+      }else{
+        console.error('[careers] SMTP environment not configured; application securely stored in CRM');
+      }
     }catch{
       console.error('[careers] email notifications not confirmed; application remains recorded');
     }
