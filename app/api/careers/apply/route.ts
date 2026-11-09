@@ -14,6 +14,14 @@ const escapeHtml=(v:string)=>v.replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','
 const safeHeader=(value:string)=>value.replace(/[\r\n]/g,' ').trim();
 const readEnv=(...keys:string[])=>keys.map(k=>(process.env[k]||'').trim()).find(Boolean)||'';
 
+type UploadedFile = { name:string; size:number; arrayBuffer:()=>Promise<ArrayBuffer> };
+function isUploadedFile(value:unknown):value is UploadedFile {
+  if(!value || typeof value!=='object')return false;
+  const file=value as Partial<UploadedFile>;
+  return typeof file.name==='string' && file.name.length>0 && typeof file.size==='number'
+    && typeof file.arrayBuffer==='function';
+}
+
 function emailTransport() {
   const user=readEnv('SMTP_USER','OVH_SMTP_USER','EMAIL_USER');
   const pass=readEnv('SMTP_PASS','SMTP_PASSWORD','OVH_SMTP_PASS','EMAIL_PASS','EMAIL_PASSWORD');
@@ -61,7 +69,7 @@ export async function POST(request:NextRequest) {
       return NextResponse.json({ok:false,error:'validation'},{status:400});
 
     const fileValue:unknown=data.get('cv');
-    const file=fileValue && typeof fileValue==='object' && 'arrayBuffer' in fileValue && typeof fileValue.arrayBuffer==='function' && 'name' in fileValue && typeof fileValue.name==='string' && fileValue.name && 'size' in fileValue && typeof fileValue.size==='number' && fileValue.size>0 ? fileValue : null;
+    const file:UploadedFile|null=isUploadedFile(fileValue) && fileValue.size>0 ? fileValue : null;
     let cvBuffer:Buffer|null=null;
     let cvName:string|null=null;
     let cvType:string|null=null;
