@@ -48,7 +48,7 @@ export async function POST(request:NextRequest) {
 
   try {
     const data=await request.formData();
-    if(clean(data.get('website'),200))return NextResponse.json({ok:true,notificationSent:false,confirmationSent:false});
+    if(clean(data.get('website'),200))return NextResponse.json({ok:false,recorded:false,error:'validation'},{status:400});
     const full_name=clean(data.get('full_name'),140);
     const email=clean(data.get('email'),254).toLowerCase();
     const phone=clean(data.get('phone'),50);
@@ -100,6 +100,7 @@ export async function POST(request:NextRequest) {
     }
 
     let notificationSent=false,confirmationSent=false;
+    try {
     const mail=emailTransport();
     if(mail) {
       const internalText=[
@@ -133,15 +134,18 @@ export async function POST(request:NextRequest) {
         }),
       ];
       const outcomes=await Promise.allSettled(jobs);
-      notificationSent=outcomes[0].status==='fulfilled';
-      confirmationSent=outcomes[1].status==='fulfilled';
+      notificationSent=outcomes[0].status==='fulfilled' && (outcomes[0].value.accepted?.length ?? 0)>0;
+      confirmationSent=outcomes[1].status==='fulfilled' && (outcomes[1].value.accepted?.length ?? 0)>0;
       if(!notificationSent)console.error('[careers] internal email not delivered');
       if(!confirmationSent)console.error('[careers] acknowledgment not delivered');
       if(typeof mail.transport.close==='function')mail.transport.close();
     }else{
       console.error('[careers] SMTP environment not configured; application securely stored in CRM');
     }
-    return NextResponse.json({ok:true,notificationSent,confirmationSent},{headers:{'Cache-Control':'no-store'}});
+    }catch{
+      console.error('[careers] email notifications not confirmed; application remains recorded');
+    }
+    return NextResponse.json({ok:true,recorded:true,applicationId,notificationSent,confirmationSent},{headers:{'Cache-Control':'no-store'}});
   }catch(error){
     console.error('[careers] application processing failed',error instanceof Error?error.name:'unknown');
     return NextResponse.json({ok:false,error:'server'},{status:500});
