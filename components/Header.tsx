@@ -128,6 +128,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
       { label: locale === 'fr' ? 'A propos' : locale === 'en' ? 'About' : locale === 'ru' ? 'О нас' : 'من نحن', href: linkTo('about') },
       { label: locale === 'fr' ? 'Conformite & confiance' : locale === 'en' ? 'Compliance & Trust' : locale === 'ru' ? 'Комплаенс и доверие' : 'الامتثال والثقة', href: linkTo('compliance') },
       { label: locale === 'fr' ? 'Partenaires & reseau' : locale === 'en' ? 'Partners & Network' : locale === 'ru' ? 'Партнеры и сеть' : 'الشركاء والشبكة', href: linkTo('partners') },
+      { label: locale === 'fr' ? 'Carrières & recrutement' : locale === 'en' ? 'Careers & recruitment' : locale === 'ru' ? 'Карьера и вакансии' : 'الوظائف والتوظيف', href: (locale === 'fr' ? '/carrieres' : '/' + locale + '/carrieres') },
       { label: locale === 'fr' ? 'Questions frequentes' : locale === 'en' ? 'FAQ' : locale === 'ru' ? 'Вопросы и ответы' : 'أسئلة شائعة', href: linkTo('faq') },
     ]},
   ];

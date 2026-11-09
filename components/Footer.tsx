@@ -38,6 +38,7 @@ export function Footer({ locale }: FooterProps) {
     { label: locale === 'fr' ? 'Cercle privé' : locale === 'en' ? 'Private Access Club' : locale === 'ru' ? 'Частный клуб' : 'النادي الخاص', href: linkTo('private-club') },
     { label: locale === 'fr' ? 'Demande d’adhésion' : locale === 'en' ? 'Membership application' : locale === 'ru' ? 'Заявка на членство' : 'طلب عضوية', href: linkTo('membership-application') },
     { label: locale === 'fr' ? 'Diagnostic privé' : locale === 'en' ? 'Private Assessment' : locale === 'ru' ? 'Частная консультация' : 'تقييم خاص', href: linkTo('private-assessment') },
+    { label: locale === 'fr' ? 'Carrières & recrutement' : locale === 'en' ? 'Careers & recruitment' : locale === 'ru' ? 'Карьера и вакансии' : 'الوظائف والتوظيف', href: (locale === 'fr' ? '/carrieres' : '/' + locale + '/carrieres') },
     { label: locale === 'fr' ? 'Questions fréquentes' : locale === 'en' ? 'FAQ' : locale === 'ru' ? 'Вопросы и ответы' : 'أسئلة شائعة', href: linkTo('faq') },
   ];
 
