@@ -430,7 +430,7 @@ export function ProfessionalCrmPanel({isAdmin,user,profile,contacts,deals,listin
         <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#315d7c]">Contacts · demandes · relances</p>
         <h1 className="mt-2 text-4xl font-semibold tracking-[-0.04em] md:text-5xl">CRM investissement</h1>
       </div>
-      <button onClick={()=>setShowNew(!showNew)} className="inline-flex min-h-[44px] items-center gap-2 bg-[#12304a] px-5 text-xs font-semibold uppercase tracking-[0.1em] text-white"><Plus size={15}/>Nouveau contact</button>
+      <div className="flex flex-wrap gap-2">{isAdmin?<a href="/espace?tab=partners&view=candidates" className="inline-flex min-h-[44px] items-center border border-[#cfd8e3] bg-white px-4 text-sm font-semibold">Candidats</a>:null}<button onClick={()=>setShowNew(!showNew)} className="inline-flex min-h-[44px] items-center gap-2 bg-[#12304a] px-5 text-xs font-semibold uppercase tracking-[0.1em] text-white"><Plus size={15}/>Nouveau contact</button></div>
     </div>
 
     {notice?<div className={`mb-5 flex items-center justify-between border px-4 py-3 text-sm ${notice.type==='success'?'border-[#a8c8b8] bg-[#f1faf5] text-[#245943]':'border-[#e0b5b5] bg-[#fff6f6] text-[#8b4040]'}`}><span>{notice.text}</span><button onClick={()=>setNotice(null)}><X size={15}/></button></div>:null}

@@ -2,6 +2,8 @@
 'use client';
 
 import { FormEvent, useEffect, useMemo, useState } from 'react';
+import dynamic from 'next/dynamic';
+const RecruitmentCandidatesPanel=dynamic(()=>import('@/components/RecruitmentCandidatesPanel').then(module=>module.RecruitmentCandidatesPanel),{loading:()=><p role="status">Chargement des candidatures…</p>});
 import {
   AlertTriangle, BadgeCheck, BriefcaseBusiness, Building2, CalendarClock, CheckCircle2,
   ChevronRight, CircleDollarSign, Clock3, FileLock2, History, Mail, MessageCircle,
@@ -36,7 +38,29 @@ const defaultPermissions={
   can_download_documents:false,
 };
 
-export function PartnerAdminCrmPanel({
+export function PartnerAdminCrmPanel(props:{partners?:any[];partnerUsers?:any[];contacts?:any[];deals?:any[];reload?:()=>void}){
+  const [view,setView]=useState<'partners'|'candidates'>('partners');
+  useEffect(()=>{
+    if(new URLSearchParams(window.location.search).get('view')==='candidates')setView('candidates');
+  },[]);
+  function changeView(next:'partners'|'candidates'){
+    setView(next);
+    const url=new URL(window.location.href);
+    url.searchParams.set('tab','partners');
+    if(next==='candidates')url.searchParams.set('view','candidates');else url.searchParams.delete('view');
+    window.history.replaceState(window.history.state,'',url);
+  }
+  return <section>
+    <nav aria-label="Vue du CRM partenaires" className="mb-6 flex flex-wrap gap-2">
+      <button type="button" onClick={()=>changeView('partners')} aria-pressed={view==='partners'} className={'min-h-[44px] border px-5 py-2 text-sm font-semibold '+(view==='partners'?'border-[#12304a] bg-[#12304a] text-white':'border-[#cfd8e3] bg-white text-[#526272]')}>Partenaires</button>
+      <button type="button" onClick={()=>changeView('candidates')} aria-pressed={view==='candidates'} className={'min-h-[44px] border px-5 py-2 text-sm font-semibold '+(view==='candidates'?'border-[#12304a] bg-[#12304a] text-white':'border-[#cfd8e3] bg-white text-[#526272]')}>Candidats</button>
+    </nav>
+    <div hidden={view!=='partners'}><PartnerAdminDirectory {...props}/></div>
+    {view==='candidates'?<RecruitmentCandidatesPanel/>:null}
+  </section>;
+}
+
+function PartnerAdminDirectory({
   partners=[],partnerUsers=[],contacts=[],deals=[],reload
 }:{partners:any[];partnerUsers:any[];contacts:any[];deals:any[];reload?:()=>void}){
   const supabase=getPortalSupabase();
