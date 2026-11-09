@@ -60,8 +60,8 @@ export async function POST(request:NextRequest) {
       || !consent)
       return NextResponse.json({ok:false,error:'validation'},{status:400});
 
-    const fileValue=data.get('cv');
-    const file=fileValue && typeof fileValue==='object' && typeof fileValue.arrayBuffer==='function' && fileValue.name && fileValue.size>0 ? fileValue : null;
+    const fileValue:unknown=data.get('cv');
+    const file=fileValue && typeof fileValue==='object' && 'arrayBuffer' in fileValue && typeof fileValue.arrayBuffer==='function' && 'name' in fileValue && typeof fileValue.name==='string' && fileValue.name && 'size' in fileValue && typeof fileValue.size==='number' && fileValue.size>0 ? fileValue : null;
     let cvBuffer:Buffer|null=null;
     let cvName:string|null=null;
     let cvType:string|null=null;
