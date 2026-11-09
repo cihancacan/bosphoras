@@ -12,8 +12,8 @@ order by (c.owner_user_id=(select user_id from public.profiles where role='admin
 limit 1;
 grant select on recruitment_qa_fixture to anon;
 set local role anon;
-insert into public.recruitment_applications(id,full_name,email,phone,locale,spoken_languages,role_area,experience_summary,consent)
-select '19f1a382-640a-4ba8-9401-4cd6608aeb91','Bosphoras QA rollback','careers-duplicate-phone-qa@example.invalid',shared_phone,'ar','العربية، Русский','travel-hospitality','Transactional duplicate-phone recruitment verification; rolled back.',true
+insert into public.recruitment_applications(id,full_name,email,phone,locale,spoken_languages,role_area,experience_summary,personal_perspective,consent)
+select '19f1a382-640a-4ba8-9401-4cd6608aeb91','Bosphoras QA rollback','careers-duplicate-phone-qa@example.invalid',shared_phone,'ar','العربية، Русский','travel-hospitality','Transactional duplicate-phone recruitment verification; rolled back.','Une idée pour Bosphoras : un accueil multilingue personnalisé.',true
 from recruitment_qa_fixture;
 insert into public.recruitment_applications(id,full_name,email,locale,spoken_languages,role_area,experience_summary,consent)
 select '19f1a382-640a-4ba8-9401-4cd6608aeb92','Bosphoras QA rollback',existing_email,'ru','Русский, العربية','travel-hospitality','Transactional existing-email recruitment verification; rolled back.',true
@@ -27,6 +27,7 @@ begin
   select * into strict c from public.crm_contacts where id=a.crm_contact_id;
   select * into strict r from public.crm_contact_requests where id=a.crm_request_id;
   if a.phone is distinct from f.shared_phone or c.phone is not null or c.id=f.phone_contact_id
+    or a.personal_perspective is null or position(a.personal_perspective in r.notes)=0
     or position(f.shared_phone in r.notes)=0 or r.owner_user_id<>f.admin_id or r.partner_id is not null then
     raise exception 'Shared phone handling failed';
   end if;

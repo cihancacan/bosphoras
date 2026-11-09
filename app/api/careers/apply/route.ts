@@ -57,6 +57,7 @@ export async function POST(request:NextRequest) {
     const spoken_languages=clean(data.get('spoken_languages'),180);
     const role_area=clean(data.get('role_area'),40);
     const experience_summary=clean(data.get('experience_summary'),2000);
+    const personal_perspective=clean(data.get('personal_perspective'),1500);
     const linkedin_url=clean(data.get('linkedin_url'),400);
     const consent=data.get('consent')==='yes';
     if(full_name.length<2||full_name.length>140
@@ -64,6 +65,7 @@ export async function POST(request:NextRequest) {
       || phone.length>50||spoken_languages.length<2||spoken_languages.length>180
       || !careerAreas.includes(role_area as typeof careerAreas[number])
       || experience_summary.length<30||experience_summary.length>2000
+      || personal_perspective.length>1500
       || linkedin_url.length>400|| (linkedin_url && !/^https:\/\/[^\s]+$/i.test(linkedin_url))
       || !consent)
       return NextResponse.json({ok:false,error:'validation'},{status:400});
@@ -92,7 +94,7 @@ export async function POST(request:NextRequest) {
     const applicationId=randomUUID();
     const {error}=await client.from('recruitment_applications').insert({
       id:applicationId,full_name,email,phone:phone||null,locale,spoken_languages,role_area,
-      experience_summary,linkedin_url:linkedin_url||null,cv_filename:cvName,cv_attached:Boolean(cvBuffer),consent:true,
+      experience_summary,personal_perspective:personal_perspective||null,linkedin_url:linkedin_url||null,cv_filename:cvName,cv_attached:Boolean(cvBuffer),consent:true,
     });
     if(error){
       console.error('[careers] unable to record application',error.code);
@@ -116,6 +118,7 @@ export async function POST(request:NextRequest) {
           'CV : '+(cvName||'Non joint'),
           '',
           'Expérience :',experience_summary,'',
+          ...(personal_perspective?['Votre regard sur Bosphoras :',personal_perspective,'']:[]),
           'Dossier également enregistré dans le CRM Bosphoras.',
         ].join('\n');
         const ack=careerAcknowledgements[locale];

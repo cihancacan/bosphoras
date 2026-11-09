@@ -73,6 +73,32 @@ test('a resolved mail job without an accepted recipient is not reported as confi
   const app=setup({smtp:true,accepted:false});const result=await app.submit();
   assert.equal(result.body.recorded,true);assert.equal(result.body.notificationSent,false);assert.equal(result.body.confirmationSent,false);
 });
+test('personal perspective remains optional and is forwarded to storage and the internal email',async()=>{
+  const empty=setup();await empty.submit();assert.equal(empty.records[0].personal_perspective,null);
+  const app=setup({smtp:true});const perspective='Une idée personnelle : des séjours <sur mesure> et un suivi en arabe.';
+  const result=await app.submit({personal_perspective:perspective});
+  assert.equal(result.body.recorded,true);assert.equal(app.records[0].personal_perspective,perspective);
+  assert(app.emails[0].text.includes(perspective));assert(app.emails[0].html.includes('&lt;sur mesure&gt;'));
+  assert(!app.emails[1].text.includes(perspective));
+  for(const locale of copy.careerLanguages){
+    for(const value of Object.values(copy.careerPerspectiveCopy[locale]))assert(value.length>5);
+  }
+});
+test('personal perspective enforces the 1500-character limit without silent truncation',async()=>{
+  const app=setup();assert.equal((await app.submit({personal_perspective:'a'.repeat(1500)})).body.recorded,true);
+  const invalid=setup();assert.equal((await invalid.submit({personal_perspective:'a'.repeat(1501)})).status,400);
+  assert.equal(invalid.records.length,0);
+});
+test('an uploaded CV is attached only to the Bosphoras recruitment email',async()=>{
+  const app=setup({smtp:true});
+  const cv=new File(['%PDF-1.7\nBosphoras recruitment QA'], 'candidature.pdf', {type:'application/pdf'});
+  const result=await app.submit({cv,personal_perspective:'Une suggestion personnelle pour Bosphoras.'});
+  assert.equal(result.body.recorded,true);assert.equal(app.records[0].cv_attached,true);
+  assert.equal(app.emails[0].attachments[0].filename,'candidature.pdf');
+  assert.equal(app.emails[0].attachments[0].contentType,'application/pdf');
+  assert.equal(app.emails[0].attachments[0].content.toString(),await cv.text());
+  assert.equal(app.emails[1].attachments,undefined);
+});
 
 test('an unexpected SMTP setup failure after storage still confirms the recorded application',async()=>{
   const app=setup({smtp:true,syncMailError:true});const result=await app.submit();

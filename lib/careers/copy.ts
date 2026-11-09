@@ -255,3 +255,56 @@ const applicationTranslations: Record<CareerLocale,string[]> = {
 export function careerApplicationCopy(locale: CareerLocale): ApplicationCopy {
   return Object.fromEntries(applicationKeys.map((key,i)=>[key,applicationTranslations[locale][i]])) as ApplicationCopy;
 }
+
+export const careerPerspectiveCopy: Record<CareerLocale,{label:string;invitation:string;note:string}> = {
+  "fr": {
+    "label": "Votre regard sur Bosphoras",
+    "invitation": "Qu’avez-vous retenu de Bosphoras ? Partagez une idée, une suggestion ou ce que vous aimeriez apporter à notre équipe. Nous souhaitons découvrir votre regard personnel.",
+    "note": "Quelques lignes suffisent. Champ facultatif — 1 500 caractères maximum."
+  },
+  "en": {
+    "label": "Your perspective on Bosphoras",
+    "invitation": "What has stayed with you about Bosphoras? Share an idea, a suggestion or what you would like to bring to our team. We would like to discover your personal perspective.",
+    "note": "A few lines are enough. Optional — up to 1,500 characters."
+  },
+  "ru": {
+    "label": "Ваш взгляд на Bosphoras",
+    "invitation": "Что вам запомнилось в Bosphoras? Поделитесь идеей, предложением или тем, что вы хотели бы привнести в нашу команду. Нам интересен ваш личный взгляд.",
+    "note": "Достаточно нескольких строк. Необязательное поле — до 1 500 символов."
+  },
+  "ar": {
+    "label": "رؤيتكم لـ Bosphoras",
+    "invitation": "ما الذي لفت انتباهكم في Bosphoras؟ شاركونا فكرة أو اقتراحاً أو ما تودون إضافته إلى فريقنا. يهمنا التعرف إلى وجهة نظركم الشخصية.",
+    "note": "تكفي بضعة أسطر. حقل اختياري — بحد أقصى ١٥٠٠ حرف."
+  },
+  "tr": {
+    "label": "Bosphoras’a bakışınız",
+    "invitation": "Bosphoras hakkında aklınızda ne kaldı? Bir fikrinizi, önerinizi veya ekibimize katmak istediklerinizi paylaşın. Kişisel bakış açınızı tanımak isteriz.",
+    "note": "Birkaç satır yeterli. İsteğe bağlı — en fazla 1.500 karakter."
+  },
+  "de": {
+    "label": "Ihr Blick auf Bosphoras",
+    "invitation": "Was ist Ihnen an Bosphoras in Erinnerung geblieben? Teilen Sie eine Idee, einen Vorschlag oder das, was Sie in unser Team einbringen möchten. Wir freuen uns auf Ihre persönliche Sichtweise.",
+    "note": "Ein paar Zeilen genügen. Freiwillig — maximal 1.500 Zeichen."
+  },
+  "es": {
+    "label": "Tu mirada sobre Bosphoras",
+    "invitation": "¿Qué te ha llamado la atención de Bosphoras? Comparte una idea, una sugerencia o lo que te gustaría aportar a nuestro equipo. Nos interesa conocer tu punto de vista personal.",
+    "note": "Bastan unas líneas. Opcional — máximo 1.500 caracteres."
+  },
+  "it": {
+    "label": "Il tuo punto di vista su Bosphoras",
+    "invitation": "Che cosa ti ha colpito di Bosphoras? Condividi un’idea, un suggerimento o ciò che vorresti portare al nostro team. Ci interessa conoscere il tuo punto di vista personale.",
+    "note": "Bastano poche righe. Facoltativo — massimo 1.500 caratteri."
+  },
+  "pt": {
+    "label": "O seu olhar sobre a Bosphoras",
+    "invitation": "O que mais lhe chamou a atenção na Bosphoras? Partilhe uma ideia, uma sugestão ou o que gostaria de trazer à nossa equipa. Queremos conhecer a sua perspetiva pessoal.",
+    "note": "Bastam algumas linhas. Facultativo — máximo de 1 500 caracteres."
+  },
+  "zh": {
+    "label": "您眼中的 Bosphoras",
+    "invitation": "Bosphoras 给您留下了怎样的印象？请分享一个想法、一条建议，或您希望为团队带来的价值。我们期待了解您的独特视角。",
+    "note": "简短几句即可。选填，最多 1,500 个字符。"
+  }
+};

@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import Link from 'next/link';
 import { ArrowRight, ArrowUpRight, Loader2, Globe2, MapPin } from 'lucide-react';
-import { careerAreas, careerApplicationCopy, careerCopy, careerLanguageNames, careerLanguages, type CareerLocale } from '@/lib/careers/copy';
+import { careerAreas, careerPerspectiveCopy, careerApplicationCopy, careerCopy, careerLanguageNames, careerLanguages, type CareerLocale } from '@/lib/careers/copy';
 
 type State = 'idle'|'sending'|'success'|'stored'|'error';
 
@@ -12,6 +12,7 @@ export function CareersContent({ initialLanguage }: { initialLanguage: CareerLoc
   const [state,setState] = useState<State>('idle');
   const copy=careerCopy(language);
   const applicationCopy=careerApplicationCopy(language);
+  const perspectiveCopy=careerPerspectiveCopy[language];
   const [reference,setReference] = useState('');
   const statusRef=useRef<HTMLDivElement>(null);
   const errorRef=useRef<HTMLDivElement>(null);
@@ -148,6 +149,12 @@ export function CareersContent({ initialLanguage }: { initialLanguage: CareerLoc
           <span>{copy.experience} *</span>
           <textarea name="experience_summary" required minLength={30} maxLength={2000} rows={5} className="mt-2 block w-full resize-y rounded-none border border-[#cbd0d1] bg-white px-3 py-3 text-sm leading-6 focus:border-[#a58a5e] focus:outline-none focus:ring-1 focus:ring-[#a58a5e]"/>
         </label>
+        <div className="border-t-2 border-[#c7b28d] bg-[#f8f7f3] p-5 md:p-6">
+          <label htmlFor="personal-perspective" className="block font-serif text-2xl leading-8 text-[#253742]">{perspectiveCopy.label}</label>
+          <p id="personal-perspective-invitation" className="mt-3 text-sm leading-7 text-[#56636a]">{perspectiveCopy.invitation}</p>
+          <textarea id="personal-perspective" name="personal_perspective" maxLength={1500} rows={5} aria-describedby="personal-perspective-invitation personal-perspective-note" className="mt-4 block w-full resize-y rounded-none border border-[#cbd0d1] bg-white px-3 py-3 text-sm leading-6 focus:border-[#a58a5e] focus:outline-none focus:ring-1 focus:ring-[#a58a5e]"/>
+          <p id="personal-perspective-note" className="mt-2 text-xs leading-6 text-[#6d787d]">{perspectiveCopy.note}</p>
+        </div>
         <Field name="linkedin_url" label={copy.profile} type="url" maxLength={400} placeholder="https://"/>
         <label className="block text-sm font-medium text-[#253742]">
           <span>{copy.cv}</span>
