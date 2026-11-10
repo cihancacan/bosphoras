@@ -77,14 +77,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
                   fill sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 390px"
                   className="object-cover" />
               </div>
-              <figcaption className="mt-2 text-[11px] leading-5 text-[#6a7479]">
-                <a target="_blank" rel="noopener noreferrer" href={istanbulCityScenes[d.id].sourcePage}
-                  className="underline underline-offset-2">{istanbulCityScenes[d.id].author}</a>
-                {' · '}
-                <a target="_blank" rel="noopener noreferrer" href={istanbulCityScenes[d.id].licenseUrl}
-                  className="underline underline-offset-2">{istanbulCityScenes[d.id].license}</a>
-                {' · WebP'}
-              </figcaption>
+              
             </figure>
             <p className="text-[#52616a] leading-7">{fr?d.fr:d.en}</p>
             <p className="mt-auto border-t border-[#e5dfd6] pt-4 text-sm font-medium text-[#193344]">{fr?d.frTip:d.enTip}</p>

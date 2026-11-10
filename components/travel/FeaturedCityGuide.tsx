@@ -166,7 +166,7 @@ import baliPhotoManifest from '@/data/travel/baliPremiumImageSources.json';
 import saintTropezPhotoManifest from '@/data/travel/saintTropezPremiumImageSources.json';
 import parisPhotoManifest from '@/data/travel/parisPremiumImageSources.json';
 import dubaiPhotoManifest from '@/data/travel/dubaiPremiumImageSources.json';
-const hotelEditorialByCity:Record<FeaturedCityGuideData['slug'],Record<string,BodrumHotelEditorial>>={'jaipur':jaipurHotelEditorial,'galle':galleHotelEditorial,'rajasthan':rajasthanHotelEditorial,'udaipur':udaipurHotelEditorial,'sentosa':sentosaHotelEditorial,'singapore':singaporeHotelEditorial,'phu-quoc':phuQuocHotelEditorial,'hoi-an':hoiAnHotelEditorial,'da-nang':daNangHotelEditorial,'vinh-hy-bay':vinhHyBayHotelEditorial,'hakone':hakoneHotelEditorial,'kyoto':kyotoHotelEditorial,'tokyo':tokyoHotelEditorial,'palawan':palawanHotelEditorial,'sumba':sumbaHotelEditorial,'chiang-mai':chiangMaiHotelEditorial,bangkok:bangkokHotelEditorial,'koh-yao-noi':kohYaoNoiHotelEditorial,krabi:krabiHotelEditorial,'san-miguel-de-allende':sanMiguelHotelEditorial,mayakoba:mayakobaHotelEditorial,'los-angeles':losAngelesHotelEditorial,miami:miamiHotelEditorial,'new-york':newYorkHotelEditorial,istanbul:istanbulHotelEditorial,bodrum:bodrumHotelEditorial,antalya:antalyaHotelEditorial,dubai:dubaiHotelEditorial,paris:parisHotelEditorial,'saint-tropez':saintTropezHotelEditorial,bali:baliHotelEditorial,phuket:phuketHotelEditorial,'koh-samui':kohSamuiHotelEditorial,maldives:maldivesHotelEditorial,'los-cabos':losCabosHotelEditorial,'saint-barthelemy':saintBarthelemyHotelEditorial,'porto-cervo':portoCervoHotelEditorial, mustique:mustiqueHotelEditorial,'courchevel-1850':courchevel1850HotelEditorial, ...alpineHotelEditorialByCity,monaco:monacoHotelEditorial,'saint-jean-cap-ferrat':capFerratHotelEditorial,'cap-dantibes':capDAntibesHotelEditorial,'lake-como':lakeComoHotelEditorial,capri:capriHotelEditorial,positano:positanoHotelEditorial,ravello:ravelloHotelEditorial,mykonos:mykonosHotelEditorial,antiparos:antiparosHotelEditorial,ibiza:ibizaHotelEditorial,formentera:formenteraHotelEditorial,deia:deiaHotelEditorial,'port-andratx':portAndratxHotelEditorial,comporta:comportaHotelEditorial,melides:melidesHotelEditorial,tivat:tivatHotelEditorial,'the-hamptons':theHamptonsHotelEditorial,'palm-beach':palmBeachHotelEditorial,nantucket:nantucketHotelEditorial,'harbour-island':harbourIslandHotelEditorial,'turks-and-caicos':turksAndCaicosHotelEditorial,canouan:canouanHotelEditorial,'necker-island':neckerIslandHotelEditorial,'north-island-seychelles':northIslandSeychellesHotelEditorial,'pamalican-island':pamalicanIslandHotelEditorial,'laucala-island':laucalaIslandHotelEditorial,'jumby-bay':jumbyBayHotelEditorial,'okavango-delta':okavangoDeltaHotelEditorial,'punta-mita':puntaMitaHotelEditorial,'costa-careyes':costaCareyesHotelEditorial};
+export const hotelEditorialByCity:Record<FeaturedCityGuideData['slug'],Record<string,BodrumHotelEditorial>>={'jaipur':jaipurHotelEditorial,'galle':galleHotelEditorial,'rajasthan':rajasthanHotelEditorial,'udaipur':udaipurHotelEditorial,'sentosa':sentosaHotelEditorial,'singapore':singaporeHotelEditorial,'phu-quoc':phuQuocHotelEditorial,'hoi-an':hoiAnHotelEditorial,'da-nang':daNangHotelEditorial,'vinh-hy-bay':vinhHyBayHotelEditorial,'hakone':hakoneHotelEditorial,'kyoto':kyotoHotelEditorial,'tokyo':tokyoHotelEditorial,'palawan':palawanHotelEditorial,'sumba':sumbaHotelEditorial,'chiang-mai':chiangMaiHotelEditorial,bangkok:bangkokHotelEditorial,'koh-yao-noi':kohYaoNoiHotelEditorial,krabi:krabiHotelEditorial,'san-miguel-de-allende':sanMiguelHotelEditorial,mayakoba:mayakobaHotelEditorial,'los-angeles':losAngelesHotelEditorial,miami:miamiHotelEditorial,'new-york':newYorkHotelEditorial,istanbul:istanbulHotelEditorial,bodrum:bodrumHotelEditorial,antalya:antalyaHotelEditorial,dubai:dubaiHotelEditorial,paris:parisHotelEditorial,'saint-tropez':saintTropezHotelEditorial,bali:baliHotelEditorial,phuket:phuketHotelEditorial,'koh-samui':kohSamuiHotelEditorial,maldives:maldivesHotelEditorial,'los-cabos':losCabosHotelEditorial,'saint-barthelemy':saintBarthelemyHotelEditorial,'porto-cervo':portoCervoHotelEditorial, mustique:mustiqueHotelEditorial,'courchevel-1850':courchevel1850HotelEditorial, ...alpineHotelEditorialByCity,monaco:monacoHotelEditorial,'saint-jean-cap-ferrat':capFerratHotelEditorial,'cap-dantibes':capDAntibesHotelEditorial,'lake-como':lakeComoHotelEditorial,capri:capriHotelEditorial,positano:positanoHotelEditorial,ravello:ravelloHotelEditorial,mykonos:mykonosHotelEditorial,antiparos:antiparosHotelEditorial,ibiza:ibizaHotelEditorial,formentera:formenteraHotelEditorial,deia:deiaHotelEditorial,'port-andratx':portAndratxHotelEditorial,comporta:comportaHotelEditorial,melides:melidesHotelEditorial,tivat:tivatHotelEditorial,'the-hamptons':theHamptonsHotelEditorial,'palm-beach':palmBeachHotelEditorial,nantucket:nantucketHotelEditorial,'harbour-island':harbourIslandHotelEditorial,'turks-and-caicos':turksAndCaicosHotelEditorial,canouan:canouanHotelEditorial,'necker-island':neckerIslandHotelEditorial,'north-island-seychelles':northIslandSeychellesHotelEditorial,'pamalican-island':pamalicanIslandHotelEditorial,'laucala-island':laucalaIslandHotelEditorial,'jumby-bay':jumbyBayHotelEditorial,'okavango-delta':okavangoDeltaHotelEditorial,'punta-mita':puntaMitaHotelEditorial,'costa-careyes':costaCareyesHotelEditorial};
 const confirmedDubaiAssets=new Set(dubaiPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 const confirmedParisAssets=new Set(parisPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
 const confirmedSaintTropezAssets=new Set(saintTropezPhotoManifest.items.filter(photo=>photo.status==='downloaded').map(photo=>photo.localPath));
@@ -185,23 +185,12 @@ const alpineFaqByCity={'st-moritz':stMoritzDraftFaq,aspen:aspenDraftFaq,niseko:n
 type Lang = 'fr' | 'en';
 type Variant = 'destination' | 'hotels';
 
-function Caption({ photo, locale }: {photo:FeaturedCityPhoto;locale:Lang}) {
-  return <figcaption className="mt-3 text-xs leading-5 text-[#66737a]">
-    {locale === 'fr' ? photo.fr : photo.en}
-    {' · '}
-    <a href={photo.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{photo.author}</a>
-    {' · '}
-    <a href={photo.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{photo.license}</a>
-    
-  </figcaption>;
-}
 function CityPhoto({photo,locale,priority=false}: {photo:FeaturedCityPhoto;locale:Lang;priority?:boolean}) {
   return <figure className="min-w-0">
     <div className="relative aspect-[16/10] overflow-hidden bg-[#e0d8c9]">
       <Image src={photo.src} alt={locale === 'fr' ? photo.fr : photo.en} fill priority={priority}
         sizes="(max-width: 1024px) 100vw, 700px" className="object-cover" />
     </div>
-    <Caption photo={photo} locale={locale} />
   </figure>;
 }
 
@@ -224,51 +213,46 @@ function PremiumHotelGallery({hotelName,city,locale,expanded=false}: {hotelName:
           sizes="(max-width: 768px) 50vw, 300px" className="object-cover" />
       </div>)}
     </div>}
-    <figcaption className="mt-3 text-xs leading-5 text-[#68747b]">
-      <span className="block">{locale==='fr'?first.fr:first.en} ·{' '}
-        <a href={first.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{first.credit}</a>
-      </span>
-      {expanded && photos.slice(1,3).map(photo=><span key={photo.src} className="block">
-        {locale==='fr'?photo.fr:photo.en} ·{' '}
-        <a href={photo.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{photo.credit}</a>
-      </span>)}
-    </figcaption>
+
   </figure>;
 }
 
+export function getDestinationAreaPhoto(city:FeaturedCityGuideData['slug'],index:number) {
+  return city==='jaipur' ? jaipurAreaVisuals[index] : city==='galle' ? galleAreaVisuals[index] : city==='rajasthan' ? rajasthanAreaVisuals[index] : city==='udaipur' ? udaipurAreaVisuals[index] : city==='sentosa' ? sentosaAreaVisuals[index] : city==='singapore' ? singaporeAreaVisuals[index] : city==='phu-quoc' ? phuQuocAreaVisuals[index] : city==='hoi-an' ? hoiAnAreaVisuals[index] : city==='da-nang' ? daNangAreaVisuals[index] : city==='vinh-hy-bay' ? vinhHyBayAreaVisuals[index] : city==='hakone' ? hakoneAreaVisuals[index] : city==='kyoto' ? kyotoAreaVisuals[index] : city==='tokyo' ? tokyoAreaVisuals[index] : city==='palawan' ? palawanAreaVisuals[index] : city==='sumba' ? sumbaAreaVisuals[index] : city==='chiang-mai' ? chiangMaiAreaVisuals[index] : city==='bangkok' ? bangkokAreaVisuals[index] : city==='koh-yao-noi' ? kohYaoNoiAreaVisuals[index] : city==='krabi' ? krabiAreaVisuals[index] : city==='san-miguel-de-allende' ? sanMiguelAreaVisuals[index] : city==='mayakoba' ? mayakobaAreaVisuals[index] : city==='los-angeles' ? losAngelesAreaVisuals[index] : city==='miami' ? miamiAreaVisuals[index] : city==='new-york' ? newYorkAreaVisuals[index] : city==='istanbul' ? istanbulAreaVisuals[index] : city==='bodrum' ? bodrumAreaVisuals[index] : city==='antalya' ? antalyaAreaVisuals[index] : city==='dubai' ? dubaiAreaVisuals[index] : city==='paris' ? parisAreaVisuals[index] : city==='saint-tropez' ? saintTropezAreaVisuals[index] : city==='bali' ? baliAreaVisuals[index] : city==='phuket' ? phuketAreaVisuals[index] : city==='koh-samui' ? kohSamuiAreaVisuals[index] : city==='maldives' ? maldivesAreaVisuals[index] : city==='los-cabos' ? losCabosAreaVisuals[index] : city==='saint-barthelemy' ? saintBarthelemyAreaVisuals[index] : city==='courchevel-1850' ? courchevel1850AreaVisuals[index] : city==='mustique' ? mustiqueAreaVisuals[index] : city==='monaco' ? monacoAreaVisuals[index] : city==='saint-jean-cap-ferrat' ? capFerratAreaVisuals[index] : city==='cap-dantibes' ? capDAntibesAreaVisuals[index] : city==='lake-como' ? lakeComoAreaVisuals[index] : city==='capri' ? capriAreaVisuals[index] : city==='positano' ? positanoAreaVisuals[index] : city==='ravello' ? ravelloAreaVisuals[index] : city==='mykonos' ? mykonosAreaVisuals[index] : city==='antiparos' ? antiparosAreaVisuals[index] : city==='ibiza' ? ibizaAreaVisuals[index] : city==='formentera' ? formenteraAreaVisuals[index] : city==='deia' ? deiaAreaVisuals[index] : city==='port-andratx' ? portAndratxAreaVisuals[index] : city==='comporta' ? comportaAreaVisuals[index] : city==='melides' ? melidesAreaVisuals[index] : city==='tivat' ? tivatAreaVisuals[index] : city==='the-hamptons' ? theHamptonsAreaVisuals[index] : city==='palm-beach' ? palmBeachAreaVisuals[index] : city==='nantucket' ? nantucketAreaVisuals[index] : city==='harbour-island' ? harbourIslandAreaVisuals[index] : city==='turks-and-caicos' ? turksAndCaicosAreaVisuals[index] : city==='canouan' ? canouanAreaVisuals[index] : city==='necker-island' ? neckerIslandAreaVisuals[index] : city==='north-island-seychelles' ? northIslandSeychellesAreaVisuals[index] : city==='pamalican-island' ? pamalicanIslandAreaVisuals[index] : city==='laucala-island' ? laucalaIslandAreaVisuals[index] : city==='costa-careyes' ? costaCareyesAreaVisuals[index] : city==='punta-mita' ? puntaMitaAreaVisuals[index] : city==='okavango-delta' ? okavangoDeltaAreaVisuals[index] : city==='jumby-bay' ? jumbyBayAreaVisuals[index] : isAlpineCity(city) ? alpineAreaVisualsByCity[city][index] : portoCervoAreaVisuals[index];
+}
+
+export const areaPhotoLicensesByCity:Record<string,Record<string,{name:string;url:string}>>={
+  'jaipur':jaipurPhotoLicenses,
+  'galle':gallePhotoLicenses,
+  'rajasthan':rajasthanPhotoLicenses,
+  'udaipur':udaipurPhotoLicenses,
+  'sentosa':sentosaPhotoLicenses,
+  'singapore':singaporePhotoLicenses,
+  'phu-quoc':phuQuocPhotoLicenses,
+  'hoi-an':hoiAnPhotoLicenses,
+  'da-nang':daNangPhotoLicenses,
+  'vinh-hy-bay':vinhHyBayPhotoLicenses,
+  'hakone':hakonePhotoLicenses,
+  'kyoto':kyotoPhotoLicenses,
+  'tokyo':tokyoPhotoLicenses,
+  'palawan':palawanPhotoLicenses,
+  'sumba':sumbaPhotoLicenses,
+  'chiang-mai':chiangMaiPhotoLicenses,
+  'bangkok':bangkokPhotoLicenses,
+  'koh-yao-noi':kohYaoNoiPhotoLicenses,
+  'krabi':krabiPhotoLicenses,
+  'san-miguel-de-allende':sanMiguelPhotoLicenses,
+};
+
 function DestinationAreaPhoto({city,index,locale}: {city:FeaturedCityGuideData['slug'];index:number;locale:Lang}) {
-  const photo=city==='jaipur' ? jaipurAreaVisuals[index] : city==='galle' ? galleAreaVisuals[index] : city==='rajasthan' ? rajasthanAreaVisuals[index] : city==='udaipur' ? udaipurAreaVisuals[index] : city==='sentosa' ? sentosaAreaVisuals[index] : city==='singapore' ? singaporeAreaVisuals[index] : city==='phu-quoc' ? phuQuocAreaVisuals[index] : city==='hoi-an' ? hoiAnAreaVisuals[index] : city==='da-nang' ? daNangAreaVisuals[index] : city==='vinh-hy-bay' ? vinhHyBayAreaVisuals[index] : city==='hakone' ? hakoneAreaVisuals[index] : city==='kyoto' ? kyotoAreaVisuals[index] : city==='tokyo' ? tokyoAreaVisuals[index] : city==='palawan' ? palawanAreaVisuals[index] : city==='sumba' ? sumbaAreaVisuals[index] : city==='chiang-mai' ? chiangMaiAreaVisuals[index] : city==='bangkok' ? bangkokAreaVisuals[index] : city==='koh-yao-noi' ? kohYaoNoiAreaVisuals[index] : city==='krabi' ? krabiAreaVisuals[index] : city==='san-miguel-de-allende' ? sanMiguelAreaVisuals[index] : city==='mayakoba' ? mayakobaAreaVisuals[index] : city==='los-angeles' ? losAngelesAreaVisuals[index] : city==='miami' ? miamiAreaVisuals[index] : city==='new-york' ? newYorkAreaVisuals[index] : city==='istanbul' ? istanbulAreaVisuals[index] : city==='bodrum' ? bodrumAreaVisuals[index] : city==='antalya' ? antalyaAreaVisuals[index] : city==='dubai' ? dubaiAreaVisuals[index] : city==='paris' ? parisAreaVisuals[index] : city==='saint-tropez' ? saintTropezAreaVisuals[index] : city==='bali' ? baliAreaVisuals[index] : city==='phuket' ? phuketAreaVisuals[index] : city==='koh-samui' ? kohSamuiAreaVisuals[index] : city==='maldives' ? maldivesAreaVisuals[index] : city==='los-cabos' ? losCabosAreaVisuals[index] : city==='saint-barthelemy' ? saintBarthelemyAreaVisuals[index] : city==='courchevel-1850' ? courchevel1850AreaVisuals[index] : city==='mustique' ? mustiqueAreaVisuals[index] : city==='monaco' ? monacoAreaVisuals[index] : city==='saint-jean-cap-ferrat' ? capFerratAreaVisuals[index] : city==='cap-dantibes' ? capDAntibesAreaVisuals[index] : city==='lake-como' ? lakeComoAreaVisuals[index] : city==='capri' ? capriAreaVisuals[index] : city==='positano' ? positanoAreaVisuals[index] : city==='ravello' ? ravelloAreaVisuals[index] : city==='mykonos' ? mykonosAreaVisuals[index] : city==='antiparos' ? antiparosAreaVisuals[index] : city==='ibiza' ? ibizaAreaVisuals[index] : city==='formentera' ? formenteraAreaVisuals[index] : city==='deia' ? deiaAreaVisuals[index] : city==='port-andratx' ? portAndratxAreaVisuals[index] : city==='comporta' ? comportaAreaVisuals[index] : city==='melides' ? melidesAreaVisuals[index] : city==='tivat' ? tivatAreaVisuals[index] : city==='the-hamptons' ? theHamptonsAreaVisuals[index] : city==='palm-beach' ? palmBeachAreaVisuals[index] : city==='nantucket' ? nantucketAreaVisuals[index] : city==='harbour-island' ? harbourIslandAreaVisuals[index] : city==='turks-and-caicos' ? turksAndCaicosAreaVisuals[index] : city==='canouan' ? canouanAreaVisuals[index] : city==='necker-island' ? neckerIslandAreaVisuals[index] : city==='north-island-seychelles' ? northIslandSeychellesAreaVisuals[index] : city==='pamalican-island' ? pamalicanIslandAreaVisuals[index] : city==='laucala-island' ? laucalaIslandAreaVisuals[index] : city==='costa-careyes' ? costaCareyesAreaVisuals[index] : city==='punta-mita' ? puntaMitaAreaVisuals[index] : city==='okavango-delta' ? okavangoDeltaAreaVisuals[index] : city==='jumby-bay' ? jumbyBayAreaVisuals[index] : isAlpineCity(city) ? alpineAreaVisualsByCity[city][index] : portoCervoAreaVisuals[index];
+  const photo=getDestinationAreaPhoto(city,index);
   if(!photo || ((city==='jaipur' && !confirmedJaipurPreviewAssets.has(photo.src)) || (city==='galle' && !confirmedGallePreviewAssets.has(photo.src)) || (city==='rajasthan' && !confirmedRajasthanPreviewAssets.has(photo.src)) || (city==='udaipur' && !confirmedUdaipurPreviewAssets.has(photo.src)) || (city==='sentosa' && !confirmedSentosaPreviewAssets.has(photo.src)) || (city==='singapore' && !confirmedSingaporePreviewAssets.has(photo.src)) || (city==='phu-quoc' && !confirmedPhuQuocPreviewAssets.has(photo.src)) || (city==='hoi-an' && !confirmedHoiAnPreviewAssets.has(photo.src)) || (city==='da-nang' && !confirmedDaNangPreviewAssets.has(photo.src)) || (city==='vinh-hy-bay' && !confirmedVinhHyBayPreviewAssets.has(photo.src)) || (city==='hakone' && !confirmedHakonePreviewAssets.has(photo.src)) || (city==='kyoto' && !confirmedKyotoPreviewAssets.has(photo.src)) || (city==='tokyo' && !confirmedTokyoPreviewAssets.has(photo.src)) || (city==='palawan' && !confirmedPalawanPreviewAssets.has(photo.src)) || (city==='sumba' && !confirmedSumbaAssets.has(photo.src)) || (city==='chiang-mai' && !confirmedChiangMaiAssets.has(photo.src)) || (city==='bangkok' && !confirmedBangkokAssets.has(photo.src)) || (city==='koh-yao-noi' && !confirmedKohYaoNoiAssets.has(photo.src)) || (city==='krabi' && !confirmedKrabiAssets.has(photo.src)) || (city==='san-miguel-de-allende' && !confirmedSanMiguelAssets.has(photo.src)) || (city==='mayakoba' && !confirmedMayakobaPreviewAssets.has(photo.src)) || (city==='los-angeles' && !confirmedLosAngelesPreviewAssets.has(photo.src)) || (city==='miami' && !confirmedMiamiPreviewAssets.has(photo.src)) || (city==='new-york' && !confirmedNewYorkPreviewAssets.has(photo.src)) || (city==='istanbul' && !confirmedIstanbulPreviewAssets.has(photo.src)) || (city==='koh-samui' && !confirmedKohSamuiAssets.has(photo.src)) || (city==='maldives' && !confirmedMaldivesAssets.has(photo.src)) || (city==='los-cabos' && !confirmedLosCabosAssets.has(photo.src)) || (city==='saint-barthelemy' && !confirmedSaintBarthelemyAssets.has(photo.src)) || (city==='porto-cervo' && !confirmedPortoCervoAssets.has(photo.src)) || (city==='mustique' && !confirmedMustiqueAssets.has(photo.src)) || (city==='courchevel-1850' && !confirmedCourchevelAssets.has(photo.src)) || (city==='monaco' && !confirmedMonacoAssets.has(photo.src)) || (city==='saint-jean-cap-ferrat' && !confirmedCapFerratAssets.has(photo.src)) || (city==='cap-dantibes' && !confirmedCapDAntibesAssets.has(photo.src)) || (city==='lake-como' && !confirmedLakeComoAssets.has(photo.src)) || (city==='capri' && !confirmedCapriAssets.has(photo.src)) || (city==='positano' && !confirmedPositanoAssets.has(photo.src)) || (city==='ravello' && !confirmedRavelloAssets.has(photo.src)) || (city==='mykonos' && !confirmedMykonosAssets.has(photo.src)) || (city==='antiparos' && !confirmedAntiparosAssets.has(photo.src)) || (city==='ibiza' && !confirmedIbizaAssets.has(photo.src)) || (city==='formentera' && !confirmedFormenteraAssets.has(photo.src)) || (city==='deia' && !confirmedDeiaAssets.has(photo.src)) || (city==='port-andratx' && !confirmedPortAndratxAssets.has(photo.src)) || (city==='comporta' && !confirmedComportaAssets.has(photo.src)) || (city==='melides' && !confirmedMelidesAssets.has(photo.src)) || (city==='tivat' && !confirmedTivatAssets.has(photo.src)) || (city==='the-hamptons' && !confirmedTheHamptonsAssets.has(photo.src)) || (city==='palm-beach' && !confirmedPalmBeachAssets.has(photo.src)) || (city==='nantucket' && !confirmedNantucketAssets.has(photo.src)) || (city==='harbour-island' && !confirmedHarbourIslandAssets.has(photo.src)) || (city==='turks-and-caicos' && !confirmedTurksAndCaicosAssets.has(photo.src)) || (city==='canouan' && !confirmedCanouanAssets.has(photo.src)) || (city==='necker-island' && !confirmedNeckerIslandAssets.has(photo.src)) || (city==='north-island-seychelles' && !confirmedNorthIslandSeychellesAssets.has(photo.src)) || (city==='pamalican-island' && !confirmedPamalicanIslandAssets.has(photo.src)) || (city==='laucala-island' && !confirmedLaucalaIslandAssets.has(photo.src)) || (city==='costa-careyes' && !confirmedCostaCareyesPreviewAssets.has(photo.src)) || (city==='punta-mita' && !confirmedPuntaMitaPreviewAssets.has(photo.src)) || (city==='okavango-delta' && !confirmedOkavangoDeltaPreviewAssets.has(photo.src)) || (city==='jumby-bay' && !confirmedJumbyBayAssets.has(photo.src)) || (isAlpineCity(city) && !alpineAvailablePhotoPathsByCity[city].has(photo.src))))return null;
   return <figure className="mt-5">
     <div className="relative aspect-[16/10] overflow-hidden bg-[#e8dfd0]">
       <Image src={photo.src} alt={locale==='fr'?photo.fr:photo.en} fill
         sizes="(max-width: 768px) 100vw, 360px" className="object-cover" />
     </div>
-    <figcaption className="mt-2 text-[11px] leading-5 text-[#66737a]">
-      {locale==='fr'?photo.fr:photo.en} ·{' '}
-      <a href={photo.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{photo.credit}</a>
-      {city==='jaipur' && jaipurPhotoLicenses[photo.src] && <> · <a href={jaipurPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{jaipurPhotoLicenses[photo.src].name}</a></>}
-      {city==='galle' && gallePhotoLicenses[photo.src] && <> · <a href={gallePhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{gallePhotoLicenses[photo.src].name}</a></>}
-      {city==='rajasthan' && rajasthanPhotoLicenses[photo.src] && <> · <a href={rajasthanPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{rajasthanPhotoLicenses[photo.src].name}</a></>}
-      {city==='udaipur' && udaipurPhotoLicenses[photo.src] && <> · <a href={udaipurPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{udaipurPhotoLicenses[photo.src].name}</a></>}
-      {city==='sentosa' && sentosaPhotoLicenses[photo.src] && <> · <a href={sentosaPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{sentosaPhotoLicenses[photo.src].name}</a></>}
-      {city==='singapore' && singaporePhotoLicenses[photo.src] && <> · <a href={singaporePhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{singaporePhotoLicenses[photo.src].name}</a></>}
-      {city==='phu-quoc' && phuQuocPhotoLicenses[photo.src] && <> · <a href={phuQuocPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{phuQuocPhotoLicenses[photo.src].name}</a></>}
-      {city==='hoi-an' && hoiAnPhotoLicenses[photo.src] && <> · <a href={hoiAnPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hoiAnPhotoLicenses[photo.src].name}</a></>}
-      {city==='da-nang' && daNangPhotoLicenses[photo.src] && <> · <a href={daNangPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{daNangPhotoLicenses[photo.src].name}</a></>}
-      {city==='vinh-hy-bay' && vinhHyBayPhotoLicenses[photo.src] && <> · <a href={vinhHyBayPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{vinhHyBayPhotoLicenses[photo.src].name}</a></>}
-      {city==='hakone' && hakonePhotoLicenses[photo.src] && <> · <a href={hakonePhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hakonePhotoLicenses[photo.src].name}</a></>}
-      {city==='kyoto' && kyotoPhotoLicenses[photo.src] && <> · <a href={kyotoPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{kyotoPhotoLicenses[photo.src].name}</a></>}
-      {city==='tokyo' && tokyoPhotoLicenses[photo.src] && <> · <a href={tokyoPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{tokyoPhotoLicenses[photo.src].name}</a></>}
-      {city==='palawan' && palawanPhotoLicenses[photo.src] && <> · <a href={palawanPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{palawanPhotoLicenses[photo.src].name}</a></>}
-      {city==='sumba' && sumbaPhotoLicenses[photo.src] && <> · <a href={sumbaPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{sumbaPhotoLicenses[photo.src].name}</a></>}
-      {city==='chiang-mai' && chiangMaiPhotoLicenses[photo.src] && <> · <a href={chiangMaiPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{chiangMaiPhotoLicenses[photo.src].name}</a></>}
-      {city==='bangkok' && bangkokPhotoLicenses[photo.src] && <> · <a href={bangkokPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{bangkokPhotoLicenses[photo.src].name}</a></>}
-      {city==='koh-yao-noi' && kohYaoNoiPhotoLicenses[photo.src] && <> · <a href={kohYaoNoiPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{kohYaoNoiPhotoLicenses[photo.src].name}</a></>}
-      {city==='krabi' && krabiPhotoLicenses[photo.src] && <> · <a href={krabiPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{krabiPhotoLicenses[photo.src].name}</a></>}
-      {city==='san-miguel-de-allende' && sanMiguelPhotoLicenses[photo.src] && <> · <a href={sanMiguelPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{sanMiguelPhotoLicenses[photo.src].name}</a></>}
-      
-    </figcaption>
+    
   </figure>;
 }
 
@@ -320,17 +304,17 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
           {hotel.area}</p>
         <h3 className="mt-4 font-sans font-normal text-3xl">{hotel.name}</h3>
         {Boolean(hotelEditorialByCity[guide.slug]) && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale} expanded />}
-        <p className="mt-6 leading-8 text-[#475862]">{fr?hotel.fr:hotel.en}</p>
+        <p className="mt-6 max-w-prose text-base leading-8 text-[#475862]">{fr?hotel.fr:hotel.en}</p>
         {Boolean(hotelEditorialByCity[guide.slug]) && hotelEditorialByCity[guide.slug][hotel.name] && <div className="mt-7 border-t border-[#e1e5e5] pt-6">
           <h4 className="font-sans font-normal text-xl">{fr?'Notre lecture de cette adresse':'Our take on this address'}</h4>
-          <p className="mt-4 text-sm leading-8 text-[#51616b]">
+          <p className="mt-4 max-w-prose text-base leading-8 text-[#51616b]">
             {fr?hotelEditorialByCity[guide.slug][hotel.name].frStory:hotelEditorialByCity[guide.slug][hotel.name].enStory}
           </p>
-          <p className="mt-5 text-sm leading-7 font-medium text-[#7d603b]">
+          <p className="mt-5 text-sm leading-7 font-medium text-[#193344]">
             {fr?'À privilégier pour : ':'Best for: '}{fr?hotelEditorialByCity[guide.slug][hotel.name].frBest:hotelEditorialByCity[guide.slug][hotel.name].enBest}
           </p>
         </div>}
-        <p className="mt-6 border-l-2 border-[#b18c55] pl-4 text-sm leading-7 text-[#53636c]">
+        <p className="mt-6 border-t border-[#e1e5e5] pt-5 text-sm leading-7 text-[#53616b]">
           <strong>{fr?'Avant de réserver : ':'Before booking: '}</strong>{fr?hotel.frWatch:hotel.enWatch}
         </p>
         <HotelPartnerBooking hotelKey={hotelPartnerKey(guide.slug, hotel.officialUrl)} locale={locale} />
@@ -420,29 +404,13 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         <h1 className="mt-9 max-w-4xl font-sans font-normal text-4xl leading-[1.12] tracking-[-0.04em] text-[#202629] sm:text-6xl lg:text-7xl">
           {hotelPage?(city.slug==='mykonos'?(fr?'Hôtels de luxe à Mykonos : quatre adresses d’exception':'Luxury hotels in Mykonos: four exceptional island addresses'):city.slug==='courchevel-1850'?(fr?'Courchevel 1850 : quatre palaces d’exception':'Courchevel 1850: four exceptional alpine palaces'):city.slug==='mustique'?(fr?'Mustique : un hôtel et trois villas de luxe':'Mustique: one hotel and three luxury villas'):city.slug==='porto-cervo'?(fr?'Hôtels de luxe à Porto Cervo : nos quatre adresses iconiques':'Luxury hotels in Porto Cervo: four iconic Sardinian stays'):city.slug==='saint-barthelemy'?(fr?'Hôtels de luxe à Saint-Barth : quatre adresses iconiques':'Luxury hotels in St Barth: four iconic island stays'):city.slug==='los-cabos'?(fr?'Hôtels de luxe à Los Cabos : quatre resorts d’exception':'Luxury hotels in Los Cabos: four exceptional resorts'):city.slug==='maldives'?(fr?'Hôtels de luxe aux Maldives : villas et îles privées d’exception':'Luxury hotels in the Maldives: exceptional private islands and villas'):city.slug==='koh-samui'?(fr?'Hôtels de luxe à Koh Samui : notre sélection d’adresses d’exception':'Luxury hotels in Koh Samui: our curated island collection'):(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.'))
             :(fr?city.headingFr:city.headingEn)}</h1>
-        {(city.slug==='istanbul'||city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo'||city.slug==='mustique'||city.slug==='courchevel-1850') && <p className="mt-4 text-xs text-[#53616b]">
-          {city.slug==='bodrum'?(fr?'Paysage : une crique de la péninsule de Bodrum':'Landscape: a Bodrum Peninsula cove')
-            :city.slug==='antalya'?(fr?'Illustration IA inspirée d’Antalya · Vue artistique, non photographique':'AI illustration inspired by Antalya · Artistic view, not a photograph')
-            :city.slug==='dubai'?(fr?'Palm West Beach · plage et skyline dans la lumière dorée':'Palm West Beach · sunny beachfront and golden skyline')
-            :city.slug==='paris'?(fr?'La Seine, le Louvre et le pont des Arts · photographie de Paris':'The Seine, the Louvre and Pont des Arts · genuine Paris photograph')
-            :city.slug==='saint-tropez'?(fr?'Saint-Tropez · village et Vieux-Port vus du ciel':'Saint-Tropez · aerial view of the village and Old Port')
-            :city.slug==='bali'?(fr?'Bali · falaises ensoleillées d’Uluwatu et océan Indien':'Bali · sunlit Uluwatu cliffs and the Indian Ocean')
-            :city.slug==='phuket'?(fr?'Phuket · plage de Kata Noi et eaux turquoise de l’Andaman':'Phuket · Kata Noi beach and turquoise Andaman Sea')
-            :city.slug==='porto-cervo'?(fr?'Porto Cervo · marina et baies de la Costa Smeralda':'Porto Cervo · marina and Emerald Coast coves'):city.slug==='saint-barthelemy'?(fr?'Saint-Barth · port de Gustavia et mer des Caraïbes':'St Barth · Gustavia harbour and Caribbean Sea'):city.slug==='los-cabos'?(fr?'Los Cabos · El Arco et la côte de Baja':'Los Cabos · El Arco on the Baja coast'):city.slug==='maldives'?(fr?'Maldives · lagon corallien de l’océan Indien':'Maldives · Indian Ocean coral lagoon'):(fr?'Koh Samui · rivage tropical du golfe de Thaïlande':'Koh Samui · tropical Gulf of Thailand coast')} ·{' '}
-          {city.slug==='antalya' ? <span>{hero?.author}</span>
-            : hero ? <a href={hero.sourcePage} rel="noopener noreferrer" target="_blank" className="underline underline-offset-2">{hero.author}</a> : null}
-        </p>}
+        
         <p className="mt-8 max-w-3xl text-lg leading-8 text-[#202629]">
           {hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}</p>
-        {city.slug==='sumba' && hero && <p className="mt-4 text-xs leading-6 text-[#53616b]">{fr?'Photo : ':'Photograph: '}<a href={hero.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.author}</a>{' · '}<a href={hero.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.license}</a>{' · '}{fr?'WebP redimensionnée':'Resized WebP'}</p>}
-        {city.slug==='chiang-mai' && hero && <p className="mt-4 text-xs leading-6 text-[#53616b]">{fr?'Photo : ':'Photograph: '}<a href={hero.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.author}</a>{' · '}<a href={hero.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.license}</a>{' · '}{fr?'WebP redimensionnée':'Resized WebP'}</p>}
-        {city.slug==='bangkok' && hero && <p className="mt-4 text-xs leading-6 text-[#53616b]">{fr?'Photo : ':'Photograph: '}<a href={hero.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.author}</a>{' · '}<a href={hero.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.license}</a>{' · '}{fr?'WebP redimensionnée':'Resized WebP'}</p>}
-        {city.slug==='krabi' && hero && <p className="mt-4 text-xs leading-6 text-[#53616b]">
-          {fr?'Image : ':'Photograph: '}
-          <a href={hero.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.author}</a>
-          {' · '}<a href={hero.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.license}</a>
-          {' · '}{fr?'WebP redimensionnée':'Resized WebP'}
-        </p>}
+        
+        
+        
+        
         </div>
         <div className="mt-10 flex flex-wrap gap-3">
           <a href={hotelPage?'#selection':'#quartiers'} className="bg-[#193344] px-6 py-4 text-sm font-medium text-white hover:bg-[#25485e]">

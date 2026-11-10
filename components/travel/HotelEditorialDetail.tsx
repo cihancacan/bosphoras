@@ -61,10 +61,10 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
               onClick={() => setEnlarged(true)} aria-label={fr ? 'Agrandir la photographie' : 'Enlarge photograph'}>
               <EditorialPhoto key={photos[active].src} photo={photos[active]} locale={locale} className="object-cover" priority />
               <span className="absolute bottom-4 right-4 bg-[#193344]/90 px-4 py-2 text-xs font-semibold text-white">
-                {fr ? 'Agrandir' : 'Enlarge'} · {active + 1}/{photos.length}
+                {fr ? 'Agrandir' : 'Enlarge'}
               </span>
             </button>
-            <p className="mt-3 text-sm text-[#586772]">{fr ? photos[active].fr : photos[active].en}</p>
+            
             <div className="mt-5 flex gap-3 overflow-x-auto pb-2" aria-label={fr ? 'Choisir une photographie' : 'Choose a photograph'}>
               {photos.map((photo, index) => (
                 <button type="button" key={photo.src} onClick={() => setActive(index)}
@@ -109,13 +109,7 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
                   fill sizes="(max-width: 1024px) 100vw, 650px"
                   className="object-cover" />
               </div>
-              <figcaption className="mt-3 text-xs leading-5 text-[#66737a]">
-                {fr ? cityScene.fr : cityScene.en} · {fr ? 'Photo' : 'Photo'}{' '}
-                <a href={cityScene.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{cityScene.author}</a>
-                {' · '}
-                <a href={cityScene.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{cityScene.license}</a>
-                {' · '}{fr ? 'Format WebP optimisé' : 'Optimised WebP'}
-              </figcaption>
+              
             </figure>
             <div>
               <p className="text-base leading-8 text-[#475964]">{fr ? localStory.fr : localStory.en}</p>
