@@ -71,7 +71,7 @@ export function HomeHero({ locale }: { locale: Locale }) {
   const assessmentHref = withAssessmentContext(copy.assessmentHref, '/', copy.h1, 'home');
 
   return (
-    <section className="relative overflow-hidden bg-[#071426] pt-20 text-white md:min-h-[82vh] md:pt-32">
+    <section className="relative overflow-hidden bg-[#f5f5f3] pt-20 text-[#202629] md:min-h-[70vh] md:pt-24">
       <picture>
         <source media="(min-width: 768px)" srcSet="/images/hero-istanbul.jpg" />
         <img
@@ -85,21 +85,21 @@ export function HomeHero({ locale }: { locale: Locale }) {
           className="absolute inset-0 h-full w-full object-cover"
         />
       </picture>
-      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(3,8,18,0.82)_0%,rgba(7,20,38,0.62)_44%,rgba(7,20,38,0.22)_76%,rgba(7,20,38,0.10)_100%)]" />
-      <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(3,8,18,0.72)_0%,rgba(3,8,18,0.04)_46%,rgba(3,8,18,0.48)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(245,245,243,0.94)_0%,rgba(245,245,243,0.86)_33%,rgba(245,245,243,0.45)_60%,rgba(245,245,243,0.02)_100%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(25,51,68,0.08)_0%,transparent_44%,rgba(255,255,255,0.06)_100%)]" />
 
-      <div className="container-editorial relative z-10 flex items-center py-12 md:min-h-[calc(82vh-7rem)] md:py-20">
-        <div className="max-w-5xl">
-          <p className="mb-5 text-[0.6rem] font-bold uppercase tracking-[0.34em] text-[#d2a863]">
+      <div className="container-editorial relative z-10 flex items-center py-12 md:min-h-[calc(70vh-6rem)] md:py-20">
+        <div className="max-w-[740px]">
+          <p className="mb-5 text-[0.7rem] font-medium uppercase tracking-[0.28em] text-[#193344]">
             {copy.eyebrow}
           </p>
-          <h1 className="max-w-5xl font-serif text-[2.45rem] leading-[1.01] tracking-[-0.05em] text-[#fffaf0] md:text-6xl lg:text-7xl">
+          <h1 className="max-w-[740px] font-sans text-[2.5rem] font-normal leading-[1.12] tracking-[-0.045em] text-[#202629] md:text-[3.4rem] lg:text-[3.9rem]">
             {copy.h1}
           </h1>
-          <p className="mt-6 max-w-3xl text-base leading-8 text-[#efe4d2] md:text-xl md:leading-9">
+          <p className="mt-6 max-w-3xl text-base leading-7 text-[#202629] md:text-xl md:leading-8">
             {copy.subtitle}
           </p>
-          <p className="mt-5 text-xs font-bold uppercase tracking-[0.18em] text-[#d2a863] md:text-sm">
+          <p className="mt-5 text-xs font-medium tracking-[0.02em] text-[#193344] md:text-sm">
             {copy.pillars}
           </p>
 
@@ -107,21 +107,21 @@ export function HomeHero({ locale }: { locale: Locale }) {
             <Link
               href={assessmentHref}
               data-cta-id="home_hero_adviser"
-              className="inline-flex min-h-[52px] items-center justify-center bg-[#d2a863] px-7 py-4 text-sm font-semibold text-[#101827] transition hover:bg-[#e0bc78] md:px-8"
+              className="inline-flex min-h-[52px] items-center justify-center bg-[#193344] px-7 py-4 text-sm font-medium text-white transition hover:bg-[#25485e] md:px-8"
             >
               {copy.primaryCta}
             </Link>
             <Link
               href={copy.propertyHref}
               data-cta-id="home_hero_property"
-              className="inline-flex min-h-[52px] items-center justify-center border border-white/45 bg-white/[0.06] px-7 py-4 text-sm font-semibold text-[#fffaf0] backdrop-blur-sm transition hover:border-white/70 hover:bg-white/[0.12] md:px-8"
+              className="inline-flex min-h-[52px] items-center justify-center border border-[#202629] bg-white/50 px-7 py-4 text-sm font-medium text-[#202629] transition hover:bg-white/85 md:px-8"
             >
               {copy.secondaryCta}
             </Link>
           </div>
 
-          <p className="mt-5 max-w-3xl text-sm leading-6 text-[#efe4d2]">{copy.reassurance}</p>
-          <blockquote className="mt-7 max-w-3xl border-t border-[#d2a863]/35 pt-5 text-lg font-medium leading-7 tracking-[0.01em] text-white md:text-xl">
+          <p className="mt-5 max-w-3xl text-sm leading-6 text-[#202629]">{copy.reassurance}</p>
+          <blockquote className="mt-7 max-w-3xl border-t border-[#193344]/20 pt-5 text-lg font-normal leading-7 tracking-[-0.01em] text-[#202629] md:text-xl">
             “{copy.quote}”
           </blockquote>
         </div>
