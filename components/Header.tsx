@@ -150,26 +150,26 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
 
   return (
     <>
-      <header className="corporate-editorial-header fixed left-0 right-0 top-0 z-50 border-b border-[#dce3e6] bg-white">
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-[hsl(42,65%,52%)]/40 to-transparent" aria-hidden="true" />
+      <header className="fixed left-0 right-0 top-0 z-50 border-b border-[#e7e8e7] bg-white shadow-[0_2px_12px_rgba(25,51,68,0.04)]">
+        <div className="hidden" aria-hidden="true" />
         <div className="container-editorial flex h-[4.65rem] items-center justify-between gap-4 md:h-[4.85rem]">
-          <Link href={getLocalePath(locale, '/')} className="group flex shrink-0 flex-col leading-none" aria-label="Bosphoras — Accueil"><span className="font-sans text-[1.18rem] font-normal uppercase tracking-[0.18em] text-[hsl(45,30%,96%)] transition-colors duration-300 group-hover:text-[hsl(42,65%,52%)] md:text-[1.24rem]">Bosphoras</span><span className="mt-1 hidden text-[0.5rem] uppercase tracking-[0.22em] text-[hsl(42,65%,45%)] 2xl:block">{locale === 'fr' && 'Bureau Prive · Turquie'}{locale === 'en' && 'Private Office · Turkey'}{locale === 'ru' && 'Частный Офис · Турция'}{locale === 'ar' && 'مكتب خاص · تركيا'}</span></Link>
+          <Link href={getLocalePath(locale, '/')} className="group flex shrink-0 flex-col leading-none" aria-label="Bosphoras — Accueil"><span style={{ fontFamily: "var(--font-bosphoras-logo), sans-serif" }} className="text-[1.125rem] font-normal uppercase tracking-[0.18em] text-[#193344] transition-colors duration-200 group-hover:text-[#202629] sm:text-[1.3rem]">Bosphoras</span><span className="hidden">{locale === 'fr' && 'Bureau Prive · Turquie'}{locale === 'en' && 'Private Office · Turkey'}{locale === 'ru' && 'Частный Офис · Турция'}{locale === 'ar' && 'مكتب خاص · تركيا'}</span></Link>
           <nav className="hidden min-w-0 items-center gap-3 xl:flex 2xl:gap-4" aria-label="Navigation principale">
             {groups.map((group) => (
               <div key={group.label} className="group relative py-6">
-                <Link href={group.href} className="inline-flex items-center gap-1.5 whitespace-nowrap text-[0.69rem] font-semibold uppercase tracking-[0.085em] text-[hsl(220,10%,64%)] transition-colors duration-200 hover:text-[hsl(42,65%,58%)]">
-                  {group.label}<span className="text-[hsl(42,65%,45%)]">▾</span>
+                <Link href={group.href} className="inline-flex items-center gap-1.5 whitespace-nowrap text-[0.86rem] font-normal tracking-[-0.01em] text-[#202629] transition-colors duration-200 hover:text-[#193344]">
+                  {group.label}<span className="text-[#193344]">▾</span>
                 </Link>
-                <div className="invisible absolute left-0 top-full z-50 w-[400px] translate-y-2 border border-[hsl(42,65%,52%)]/25 bg-[hsl(220,45%,8%)] p-3 opacity-0 shadow-[0_28px_80px_rgba(0,0,0,0.32)] transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+                <div className="invisible absolute left-0 top-full z-50 w-[400px] translate-y-2 border border-[#e5e8ea] bg-white p-3 opacity-0 shadow-[0_16px_32px_rgba(25,51,68,0.09)] transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
                   {group.items.map((item) => (
                     <Link
                       key={item.href}
                       href={item.href}
                       rel={item.tone === 'hotel' ? 'sponsored' : undefined}
-                      className={`mb-1 block px-4 py-3.5 transition last:mb-0 ${item.tone === 'property' ? 'border-l-2 border-[#4f8d78] bg-[#4f8d78]/10 hover:bg-[#4f8d78]/18' : item.tone === 'transfer' ? 'border-l-2 border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)]/[0.07] hover:bg-[hsl(42,65%,52%)]/[0.12]' : item.tone === 'hotel' ? 'border-l-2 border-[#cdb37b] bg-[#cdb37b]/[0.10] hover:bg-[#cdb37b]/[0.17]' : 'border-b border-white/5 hover:bg-white/[0.04]'}`}
+                      className="mb-1 block border-b border-[#e8eaeb] px-4 py-3.5 transition last:mb-0 hover:bg-[#f5f5f3]"
                     >
-                      <span className={`block text-[0.76rem] font-semibold uppercase tracking-[0.12em] ${item.tone === 'property' ? 'text-[#a9d5c5]' : item.tone === 'transfer' || item.tone === 'hotel' ? 'text-[hsl(42,65%,63%)]' : 'text-[hsl(45,30%,96%)]'}`}>{item.label}</span>
-                      {item.description && <span className="mt-1.5 block text-[0.79rem] font-medium leading-5 text-[hsl(220,12%,76%)]">{item.description}</span>}
+                      <span className="block text-[0.82rem] font-medium tracking-[-0.01em] text-[#202629]">{item.label}</span>
+                      {item.description && <span className="mt-1.5 block text-[0.79rem] font-medium leading-5 text-[#58636b]">{item.description}</span>}
                     </Link>
                   ))}
                 </div>
@@ -177,20 +177,20 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
             ))}
           </nav>
           <div className="hidden shrink-0 items-center gap-2 xl:flex">
-            <button onClick={() => setSearchOpen(true)} className="inline-flex h-10 w-10 items-center justify-center border border-white/10 text-[hsl(45,30%,96%)] transition-colors duration-200 hover:border-[hsl(42,65%,52%)] hover:text-[hsl(42,65%,52%)]" aria-label={searchLabel}><Search size={15} /></button><Link href="/connexion" className="inline-flex h-10 w-10 items-center justify-center border border-white/10 text-[hsl(220,10%,65%)] transition-colors duration-200 hover:border-[hsl(42,65%,52%)] hover:text-[hsl(42,65%,52%)]" aria-label={locale === 'fr' ? 'Espace partenaire' : locale === 'en' ? 'Partner portal' : locale === 'ru' ? 'Партнёрский кабинет' : 'بوابة الشركاء'} title={locale === 'fr' ? 'Espace partenaire' : locale === 'en' ? 'Partner portal' : locale === 'ru' ? 'Партнёрский кабинет' : 'بوابة الشركاء'}><KeyRound size={16} /></Link>
-            <div className="relative"><button onClick={() => setLangOpen(!langOpen)} className="flex h-10 items-center gap-2 border border-white/10 px-3 text-[0.7rem] font-semibold uppercase tracking-[0.14em] text-[hsl(220,10%,65%)] transition-colors duration-200 hover:border-[hsl(42,65%,52%)] hover:text-[hsl(42,65%,52%)]" aria-expanded={langOpen} aria-haspopup="listbox"><Globe2 size={15} /><span>{locale.toUpperCase()}</span><span className="text-[hsl(42,65%,45%)]">▾</span></button>{langOpen && <div className="absolute right-0 top-full z-50 mt-4 min-w-[150px] border border-[hsl(42,65%,52%)]/25 bg-[hsl(220,45%,8%)] shadow-[0_28px_80px_rgba(0,0,0,0.32)]" role="listbox">{locales.map((loc) => <Link key={loc} href={getLocaleHref(loc)} prefetch={false} onClick={() => { rememberSiteLanguage(loc); setLangOpen(false); }} className={`block px-4 py-3 text-xs uppercase tracking-[0.12em] transition-colors duration-150 hover:bg-white/5 ${loc === locale ? 'font-semibold text-[hsl(42,65%,52%)]' : 'text-[hsl(220,10%,55%)]'}`} role="option" aria-selected={loc === locale} lang={loc}>{localeNames[loc]}</Link>)}</div>}</div>
-            <Link href={linkTo('private-assessment')} data-cta-id="header_assessment" className="whitespace-nowrap border border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)] px-4 py-3 text-[0.68rem] font-bold uppercase tracking-[0.08em] text-[hsl(220,45%,8%)] transition-colors duration-300 hover:bg-[hsl(42,65%,60%)]">{compactAssessmentLabel}</Link>
+            <button onClick={() => setSearchOpen(true)} className="inline-flex h-10 w-10 items-center justify-center border border-[#e3e6e8] text-[#202629] transition-colors duration-200 hover:border-[#193344] hover:text-[#193344]" aria-label={searchLabel}><Search size={15} /></button><Link href="/connexion" className="inline-flex h-10 w-10 items-center justify-center border border-[#e3e6e8] text-[#202629] transition-colors duration-200 hover:border-[#193344] hover:text-[#193344]" aria-label={locale === 'fr' ? 'Espace partenaire' : locale === 'en' ? 'Partner portal' : locale === 'ru' ? 'Партнёрский кабинет' : 'بوابة الشركاء'} title={locale === 'fr' ? 'Espace partenaire' : locale === 'en' ? 'Partner portal' : locale === 'ru' ? 'Партнёрский кабинет' : 'بوابة الشركاء'}><KeyRound size={16} /></Link>
+            <div className="relative"><button onClick={() => setLangOpen(!langOpen)} className="flex h-10 items-center gap-2 border border-[#e3e6e8] px-3 text-xs font-medium text-[#202629] transition-colors duration-200 hover:border-[#193344] hover:text-[#193344]" aria-expanded={langOpen} aria-haspopup="listbox"><Globe2 size={15} /><span>{locale.toUpperCase()}</span><span className="text-[#193344]">▾</span></button>{langOpen && <div className="absolute right-0 top-full z-50 mt-4 min-w-[150px] border border-[#e5e8ea] bg-white shadow-[0_16px_32px_rgba(25,51,68,0.09)]" role="listbox">{locales.map((loc) => <Link key={loc} href={getLocaleHref(loc)} prefetch={false} onClick={() => { rememberSiteLanguage(loc); setLangOpen(false); }} className={`block px-4 py-3 text-xs uppercase tracking-[0.12em] transition-colors duration-150 hover:bg-[#f5f5f3] ${loc === locale ? 'font-semibold text-[#193344]' : 'text-[#53616b]'}`} role="option" aria-selected={loc === locale} lang={loc}>{localeNames[loc]}</Link>)}</div>}</div>
+            <Link href={linkTo('private-assessment')} data-cta-id="header_assessment" className="whitespace-nowrap border border-[#193344] bg-[#193344] px-4 py-3 text-[0.68rem] font-medium tracking-normal text-white transition-colors duration-300 hover:bg-[#25485e]">{compactAssessmentLabel}</Link>
           </div>
-          <div className="flex items-center gap-2 xl:hidden"><Link href="/connexion" className="p-2 text-[hsl(45,30%,96%)]" aria-label={locale === 'fr' ? 'Espace partenaire' : locale === 'en' ? 'Partner portal' : locale === 'ru' ? 'Партнёрский кабинет' : 'بوابة الشركاء'}><KeyRound size={20} /></Link><button className="p-2 text-[hsl(45,30%,96%)]" onClick={() => setSearchOpen(true)} aria-label={searchLabel}><Search size={21} /></button><button className="p-2 text-[hsl(45,30%,96%)]" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'} aria-expanded={menuOpen}>{menuOpen ? <X size={22} /> : <Menu size={22} />}</button></div>
+          <div className="flex items-center gap-2 xl:hidden"><Link href="/connexion" className="p-2 text-[#202629]" aria-label={locale === 'fr' ? 'Espace partenaire' : locale === 'en' ? 'Partner portal' : locale === 'ru' ? 'Партнёрский кабинет' : 'بوابة الشركاء'}><KeyRound size={20} /></Link><button className="p-2 text-[#202629]" onClick={() => setSearchOpen(true)} aria-label={searchLabel}><Search size={21} /></button><button className="p-2 text-[#202629]" onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'} aria-expanded={menuOpen}>{menuOpen ? <X size={22} /> : <Menu size={22} />}</button></div>
         </div>
-        {menuOpen && <div className="max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-[hsl(220,35%,15%)] bg-[hsl(220,45%,8%)] px-5 py-5 xl:hidden">
+        {menuOpen && <div className="max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-[#e7e8e7] bg-white px-5 py-5 xl:hidden">
           <div className="flex flex-col gap-3">
-            {groups.map((group) => <div key={group.label} className="border-b border-white/5 pb-3">
-              <button onClick={() => setOpenGroup(openGroup === group.label ? null : group.label)} className="flex w-full items-center justify-between py-2 text-left text-sm font-semibold uppercase tracking-[0.12em] text-[hsl(220,10%,58%)]">
-                {group.label}<span className="text-[hsl(42,65%,45%)]">▾</span>
+            {groups.map((group) => <div key={group.label} className="border-b border-[#e5e8ea] pb-3">
+              <button onClick={() => setOpenGroup(openGroup === group.label ? null : group.label)} className="flex w-full items-center justify-between py-2 text-left text-sm font-medium text-[#202629]">
+                {group.label}<span className="text-[#193344]">▾</span>
               </button>
               {openGroup === group.label && <div className="mt-2 space-y-1 pl-2">
-                <Link href={group.href} onClick={() => setMenuOpen(false)} className="block py-2 text-xs font-semibold uppercase tracking-[0.12em] text-[hsl(42,65%,52%)]">{group.href === travelHomeHref
+                <Link href={group.href} onClick={() => setMenuOpen(false)} className="block py-2 text-sm font-medium text-[#193344]">{group.href === travelHomeHref
                     ? locale === 'fr' ? 'Découvrir Luxury Stays' : locale === 'en' ? 'Discover Luxury Stays' : locale === 'ru' ? 'Открыть Luxury Stays' : 'اكتشف Luxury Stays'
                     : locale === 'fr' ? 'Voir tout' : locale === 'en' ? 'View all' : locale === 'ru' ? 'Смотреть всё' : 'عرض الكل'}</Link>
                 {group.items.map((item) => <Link
@@ -198,12 +198,12 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
                   href={item.href}
                   rel={item.tone === 'hotel' ? 'sponsored' : undefined}
                   onClick={() => setMenuOpen(false)}
-                  className={`block border-l-2 px-3 py-2.5 text-sm ${item.tone === 'property' ? 'border-[#4f8d78] bg-[#4f8d78]/10 font-semibold text-[#b9dfd1]' : item.tone === 'transfer' || item.tone === 'hotel' ? 'border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)]/[0.06] font-semibold text-[hsl(42,65%,67%)]' : 'border-transparent text-[hsl(220,10%,68%)]'}`}
+                  className="block border-l-2 border-transparent px-3 py-2.5 text-sm text-[#202629] transition hover:border-[#193344] hover:bg-[#f5f5f3]"
                 >{item.label}</Link>)}
               </div>}
             </div>)}
-            <div className="mt-3 flex flex-wrap gap-3 border-t border-[hsl(220,35%,15%)] pt-5">{locales.map((loc) => <Link key={loc} href={getLocaleHref(loc)} prefetch={false} onClick={() => { rememberSiteLanguage(loc); setMenuOpen(false); }} className={`text-xs uppercase tracking-[0.12em] ${loc === locale ? 'font-semibold text-[hsl(42,65%,52%)]' : 'text-[hsl(220,10%,55%)]'}`} lang={loc}>{localeNames[loc]}</Link>)}</div>
-            <Link href={linkTo('private-assessment')} data-cta-id="header_assessment" onClick={() => setMenuOpen(false)} className="mt-3 inline-flex justify-center border border-[hsl(42,65%,52%)] bg-[hsl(42,65%,52%)] px-6 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[hsl(220,45%,8%)]">{t(locale, 'nav.assessment')}</Link>
+            <div className="mt-3 flex flex-wrap gap-3 border-t border-[#e7e8e7] pt-5">{locales.map((loc) => <Link key={loc} href={getLocaleHref(loc)} prefetch={false} onClick={() => { rememberSiteLanguage(loc); setMenuOpen(false); }} className={`text-xs uppercase tracking-[0.12em] ${loc === locale ? 'font-semibold text-[#193344]' : 'text-[#53616b]'}`} lang={loc}>{localeNames[loc]}</Link>)}</div>
+            <Link href={linkTo('private-assessment')} data-cta-id="header_assessment" onClick={() => setMenuOpen(false)} className="mt-3 inline-flex justify-center border border-[#193344] bg-[#193344] px-6 py-4 text-xs font-medium tracking-normal text-white">{t(locale, 'nav.assessment')}</Link>
           </div>
         </div>}
       </header>
