@@ -151,7 +151,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
       <header className="fixed left-0 right-0 top-0 z-50 border-b border-[#e7e8e7] bg-white shadow-[0_2px_12px_rgba(25,51,68,0.04)]">
         <div className="hidden" aria-hidden="true" />
         <div className="container-editorial flex h-[4.65rem] items-center justify-between gap-4 md:h-[4.85rem]">
-          <Link href={getLocalePath(locale, '/')} className="group flex shrink-0 flex-col leading-none" aria-label="Bosphoras — Accueil"><span className="font-sans text-[1.28rem] font-normal uppercase tracking-[0.22em] text-[#193344] transition-colors duration-200 group-hover:text-[#202629] md:text-[1.56rem]">Bosphoras</span><span className="hidden">{locale === 'fr' && 'Bureau Prive · Turquie'}{locale === 'en' && 'Private Office · Turkey'}{locale === 'ru' && 'Частный Офис · Турция'}{locale === 'ar' && 'مكتب خاص · تركيا'}</span></Link>
+          <Link href={getLocalePath(locale, '/')} className="group flex shrink-0 flex-col leading-none" aria-label="Bosphoras — Accueil"><span style={{ fontFamily: "var(--font-bosphoras-logo), sans-serif" }} className="text-[1.32rem] font-normal uppercase tracking-[0.18em] text-[#193344] transition-colors duration-200 group-hover:text-[#202629] md:text-[1.65rem]">Bosphoras</span><span className="hidden">{locale === 'fr' && 'Bureau Prive · Turquie'}{locale === 'en' && 'Private Office · Turkey'}{locale === 'ru' && 'Частный Офис · Турция'}{locale === 'ar' && 'مكتب خاص · تركيا'}</span></Link>
           <nav className="hidden min-w-0 items-center gap-3 xl:flex 2xl:gap-4" aria-label="Navigation principale">
             {groups.map((group) => (
               <div key={group.label} className="group relative py-6">

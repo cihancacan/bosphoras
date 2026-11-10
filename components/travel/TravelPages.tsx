@@ -300,7 +300,7 @@ export function Header({ locale, slug, limitedLocales = false }: { locale: Trave
   }));
   return <header className="relative z-50 border-b border-[#e1e5e5] bg-white text-[#202629]">
     <div className="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-4 lg:py-5">
-      <Link href={travelHref(locale)} className="shrink-0 text-sm font-normal uppercase tracking-[0.18em] text-[#193344] sm:text-base">
+      <Link href={travelHref(locale)} style={{ fontFamily: "var(--font-bosphoras-logo), sans-serif" }} className="shrink-0 text-sm font-normal uppercase tracking-[0.18em] text-[#193344] sm:text-base">
         BOSPHORAS <span className="text-[#53616b]">LUXURY STAYS</span>
       </Link>
       <nav aria-label="Travel primary navigation" className="hidden items-center gap-4 text-xs lg:flex lg:gap-6 lg:text-sm">

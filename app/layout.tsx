@@ -4,7 +4,7 @@ import './transfer-glass.css';
 import './header-menu.css';
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import { Inter } from 'next/font/google';
+import { Inter, Jost } from 'next/font/google';
 import { DocumentLanguage } from '@/components/DocumentLanguage';
 import { getPricingAmount } from '@/data/pricing';
 
@@ -12,6 +12,13 @@ const inter = Inter({
   subsets: ['latin', 'latin-ext', 'cyrillic'],
   display: 'swap',
   variable: '--font-inter',
+});
+
+const brandFont = Jost({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+  variable: '--font-bosphoras-logo',
 });
 
 const defaultDescription =
@@ -59,7 +66,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" className={inter.variable} suppressHydrationWarning>
+    <html lang="fr" className={`${inter.variable} ${brandFont.variable}`} suppressHydrationWarning>
       <body className="bg-white font-sans antialiased text-[#202629]">
         <DocumentLanguage />
         <ConversionTracking />
