@@ -277,12 +277,15 @@ function HotelTeaser({ guide, locale }: {guide:FeaturedCityGuideData;locale:Lang
           <span className="text-xs tracking-[.15em] text-[#193344]">{hotel.area}</span>
           <h3 className="mt-4 font-sans font-normal text-2xl">{hotel.name}</h3>
           {Boolean(hotelEditorialByCity[guide.slug]) && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale}/>}
-          <EditorialProse text={fr?hotel.fr:hotel.en} className="mt-5 text-sm text-[#53636a]" maxChars={245} />
-          {Boolean(hotelEditorialByCity[guide.slug]) && hotelEditorialByCity[guide.slug][hotel.name] && <p className="mt-4 border-t border-[#e1e5e5] pt-4 text-sm leading-7 text-[#53616b]">
-            <strong>{fr?'Pour qui ? ':'Best suited to: '}</strong>
-            {fr?hotelEditorialByCity[guide.slug][hotel.name].frBest:hotelEditorialByCity[guide.slug][hotel.name].enBest}
-          </p>}
+          <p className="mt-4 line-clamp-2 text-sm leading-7 text-[#53636a]">{fr?hotel.fr:hotel.en}</p>
           <div className="mt-auto pt-5"><HotelNuiteeLink hotelKey={hotelPartnerKey(guide.slug, hotel.name)} locale={locale} /></div>
+          <details className="mt-5 border-t border-[#e1e5e5] pt-4">
+            <summary className="cursor-pointer text-sm text-[#193344]">{fr?'En savoir plus sur cette adresse':'Read about this hotel'}</summary>
+            <EditorialProse text={fr?hotel.fr:hotel.en} className="mt-4 text-sm text-[#53636a]" maxChars={245} />
+            {Boolean(hotelEditorialByCity[guide.slug]) && hotelEditorialByCity[guide.slug][hotel.name] && <p className="mt-4 text-sm leading-7 text-[#53616b]">
+              {fr?hotelEditorialByCity[guide.slug][hotel.name].frBest:hotelEditorialByCity[guide.slug][hotel.name].enBest}
+            </p>}
+          </details>
         </article>)}
       </div>
     </div>
@@ -295,15 +298,18 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
     <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl sm:text-5xl">{fr
       ? 'Quatre styles, quatre raisons de choisir.'
       : 'Four distinctive reasons to stay.'}</h2>
-    <EditorialProse text={fr?guide.hotelIntroFr:guide.hotelIntroEn} className="mt-6 max-w-3xl text-base text-[#52616b]" />
-    <div className="mt-9 grid gap-5 md:grid-cols-2">
+    <div className="mt-8 grid gap-5 md:grid-cols-2">
       {guide.hotels.map((hotel)=><article key={hotel.name} className="flex flex-col border border-[#e1e5e5] bg-white p-7 sm:p-9">
         <p className="text-xs uppercase tracking-[.14em] text-[#193344]">
           {hotel.area}</p>
         <h3 className="mt-4 font-sans font-normal text-3xl">{hotel.name}</h3>
         {Boolean(hotelEditorialByCity[guide.slug]) && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale} expanded />}
-        <EditorialProse text={fr?hotel.fr:hotel.en} className="mt-6 text-base text-[#475862]" />
-        {Boolean(hotelEditorialByCity[guide.slug]) && hotelEditorialByCity[guide.slug][hotel.name] && <div className="mt-7 border-t border-[#e1e5e5] pt-6">
+        <p className="mt-5 line-clamp-2 text-sm leading-7 text-[#475862]">{fr?hotel.fr:hotel.en}</p>
+        <HotelPartnerBooking hotelKey={hotelPartnerKey(guide.slug, hotel.name)} locale={locale} />
+        <details className="mt-7 border-t border-[#e1e5e5] pt-5">
+          <summary className="cursor-pointer text-sm font-medium text-[#193344]">{fr?'Découvrir notre analyse de cet hôtel':'Read our hotel review'}</summary>
+          <EditorialProse text={fr?hotel.fr:hotel.en} className="mt-5 text-base text-[#475862]" />
+          {Boolean(hotelEditorialByCity[guide.slug]) && hotelEditorialByCity[guide.slug][hotel.name] && <div className="mt-7 border-t border-[#e1e5e5] pt-6">
           <h4 className="font-sans font-normal text-xl">{fr?'Notre lecture de cette adresse':'Our take on this address'}</h4>
           <EditorialProse
             text={fr?hotelEditorialByCity[guide.slug][hotel.name].frStory:hotelEditorialByCity[guide.slug][hotel.name].enStory}
@@ -317,9 +323,10 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
           <h4 className="text-sm font-medium text-[#193344]">{fr?'Avant de réserver':'Before booking'}</h4>
           <EditorialProse text={fr?hotel.frWatch:hotel.enWatch} className="mt-3 text-sm text-[#53616b]" maxChars={260} />
         </div>
-        <HotelPartnerBooking hotelKey={hotelPartnerKey(guide.slug, hotel.name)} locale={locale} />
+        </details>
       </article>)}
     </div>
+    <EditorialProse text={fr?guide.hotelIntroFr:guide.hotelIntroEn} className="mt-10 max-w-3xl text-base text-[#52616b]" />
   </section>;
 }
 function Advice({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang}) {
@@ -366,20 +373,18 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
   ];
   const featuredSlugs = new Set(selectedDestinations.map(other => other.slug));
   const additionalDestinations = allOtherDestinations.filter(other => !featuredSlugs.has(other.slug));
+  const earlyPreviewPhotos = approvedPhotos.filter(photo => photo.src !== hero?.src).slice(0, 3);
   return <main className="min-h-screen bg-white text-[#202629]">
     {city.slug==='san-miguel-de-allende' ? <section className="bg-[#f5f5f3] text-[#202629]">
       <div className="mx-auto grid max-w-[1600px] lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="flex flex-col justify-center px-6 py-12 sm:px-12 lg:px-14 lg:py-16">
+        <div className="order-2 flex flex-col justify-center px-6 py-8 sm:px-12 lg:order-1 lg:px-14 lg:py-16">
           <p className="max-w-md text-[11px] font-medium uppercase leading-6 tracking-[.15em] text-[#193344]">
             Bosphoras · Luxury Stays<br/>{fr?city.eyebrowFr:city.eyebrowEn}
           </p>
           <h1 className="mt-6 max-w-xl font-sans font-normal text-4xl leading-[1.08] sm:text-5xl xl:text-[56px]">
             {hotelPage?(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.'):(fr?city.headingFr:city.headingEn)}
           </h1>
-          <div className="mt-7 h-px w-14 bg-[#193344]/30"/>
-          <p className="mt-7 max-w-lg text-base leading-8 text-[#52616a]">
-            {hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}
-          </p>
+          <div className="mt-6 h-px w-14 bg-[#193344]/30"/>
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <a href={hotelPage?'#selection':'#quartiers'} className="bg-[#193344] px-5 py-4 text-sm font-medium text-white hover:bg-[#25485e]">
               {hotelPage?(fr?'Comparer les quatre adresses':'Compare four hotels'):(fr?'Découvrir les quartiers':'Discover neighbourhoods')} →
@@ -389,35 +394,36 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             </Link>
           </div>
         </div>
-        <div className="relative aspect-[16/10] overflow-hidden lg:aspect-auto lg:min-h-[600px]">
+        <div className="relative order-1 aspect-[16/10] overflow-hidden lg:order-2 lg:aspect-auto lg:min-h-[600px]">
           {hero && <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="(min-width:1024px) 60vw, 100vw" className="object-cover object-[58%_center]"/>}
         </div>
       </div>
     </section> : (
     <section className="relative isolate overflow-hidden bg-[#f5f5f3] text-[#202629]">
-      <div className="absolute inset-0" aria-hidden="true">
+      {hero && <div className="relative h-[38vh] min-h-[260px] overflow-hidden sm:hidden">
+        <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="100vw" className="object-cover" />
+      </div>}
+      <div className="absolute inset-0 hidden sm:block" aria-hidden="true">
         {hero && (destinationAssets ? destinationAssets.has(hero.src) : true) && <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="100vw" className="object-cover" />}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#f5f5f3]/95 via-[#f5f5f3]/80 to-[#f5f5f3]/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#f5f5f3]/90 via-[#f5f5f3]/45 to-transparent" />
       </div>
-      <div className="relative mx-auto max-w-7xl px-5 pb-28 pt-16 sm:pb-40 sm:pt-28">
-        <div className={(city.slug === 'hoi-an'||city.slug === 'da-nang'||city.slug === 'vinh-hy-bay'||city.slug === 'hakone'||city.slug === 'kyoto'||city.slug === 'tokyo'||city.slug === 'palawan'||city.slug === 'sumba'||city.slug === 'chiang-mai'||city.slug === 'bangkok'||city.slug === 'koh-yao-noi'||city.slug === 'krabi'||city.slug === 'mayakoba'||city.slug === 'los-angeles'||city.slug === 'miami'||city.slug === 'new-york'||city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez'||city.slug === 'bali'||city.slug === 'phuket'||city.slug === 'koh-samui'||city.slug === 'maldives'||city.slug === 'los-cabos'||city.slug === 'saint-barthelemy'||city.slug === 'porto-cervo'||city.slug==='mykonos') ? 'max-w-[900px] bg-[#f5f5f3]/90 px-5 py-7 backdrop-blur-[2px] sm:px-10 sm:py-9' : ''}>
+      <div className="relative mx-auto max-w-7xl px-5 pb-10 pt-8 sm:pb-24 sm:pt-20">
+        <div className={(city.slug === 'hoi-an'||city.slug === 'da-nang'||city.slug === 'vinh-hy-bay'||city.slug === 'hakone'||city.slug === 'kyoto'||city.slug === 'tokyo'||city.slug === 'palawan'||city.slug === 'sumba'||city.slug === 'chiang-mai'||city.slug === 'bangkok'||city.slug === 'koh-yao-noi'||city.slug === 'krabi'||city.slug === 'mayakoba'||city.slug === 'los-angeles'||city.slug === 'miami'||city.slug === 'new-york'||city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez'||city.slug === 'bali'||city.slug === 'phuket'||city.slug === 'koh-samui'||city.slug === 'maldives'||city.slug === 'los-cabos'||city.slug === 'saint-barthelemy'||city.slug === 'porto-cervo'||city.slug==='mykonos') ? 'max-w-[760px] bg-[#f5f5f3]/85 px-0 py-0 sm:px-8 sm:py-7' : ''}>
         <p className="text-xs font-medium uppercase tracking-[.12em] text-[#193344]">Bosphoras · Luxury Stays
           {' / '}{fr?city.eyebrowFr:city.eyebrowEn}</p>
-        <h1 className="mt-9 max-w-4xl font-sans font-normal text-4xl leading-[1.12] tracking-[-0.04em] text-[#202629] sm:text-6xl lg:text-7xl">
+        <h1 className="mt-4 max-w-4xl font-sans font-normal text-4xl leading-[1.12] tracking-[-0.04em] text-[#202629] sm:mt-7 sm:text-6xl lg:text-7xl">
           {hotelPage?(city.slug==='mykonos'?(fr?'Hôtels de luxe à Mykonos : quatre adresses d’exception':'Luxury hotels in Mykonos: four exceptional island addresses'):city.slug==='courchevel-1850'?(fr?'Courchevel 1850 : quatre palaces d’exception':'Courchevel 1850: four exceptional alpine palaces'):city.slug==='mustique'?(fr?'Mustique : un hôtel et trois villas de luxe':'Mustique: one hotel and three luxury villas'):city.slug==='porto-cervo'?(fr?'Hôtels de luxe à Porto Cervo : nos quatre adresses iconiques':'Luxury hotels in Porto Cervo: four iconic Sardinian stays'):city.slug==='saint-barthelemy'?(fr?'Hôtels de luxe à Saint-Barth : quatre adresses iconiques':'Luxury hotels in St Barth: four iconic island stays'):city.slug==='los-cabos'?(fr?'Hôtels de luxe à Los Cabos : quatre resorts d’exception':'Luxury hotels in Los Cabos: four exceptional resorts'):city.slug==='maldives'?(fr?'Hôtels de luxe aux Maldives : villas et îles privées d’exception':'Luxury hotels in the Maldives: exceptional private islands and villas'):city.slug==='koh-samui'?(fr?'Hôtels de luxe à Koh Samui : notre sélection d’adresses d’exception':'Luxury hotels in Koh Samui: our curated island collection'):(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.'))
             :(fr?city.headingFr:city.headingEn)}</h1>
         
-        <EditorialProse
-          text={hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}
-          className="mt-8 max-w-3xl text-base text-[#202629] sm:text-lg"
-          maxChars={280}
-        />
+        <p className="mt-5 max-w-xl text-sm leading-7 text-[#475862] sm:text-base">
+          {fr?'Découvrez les lieux et les adresses qui méritent le voyage.':'Discover the places and addresses worth travelling for.'}
+        </p>
         
         
         
         
         </div>
-        <div className="mt-10 flex flex-wrap gap-3">
+        <div className="mt-6 flex flex-wrap gap-3">
           <a href={hotelPage?'#selection':'#quartiers'} className="bg-[#193344] px-6 py-4 text-sm font-medium text-white hover:bg-[#25485e]">
             {hotelPage?(city.slug==='mustique'?(fr?'Comparer hôtel et villas':'Compare hotel and villas'):(fr?'Comparer les quatre adresses':'Compare four hotels')):(city.slug==='porto-cervo'?(fr?'Découvrir la Costa Smeralda':'Explore the Emerald Coast'):city.slug==='saint-barthelemy'?(fr?'Choisir son paysage':'Choose your setting'):city.slug==='los-cabos'?(fr?'Découvrir la côte':'Explore the coastline'):city.slug==='maldives'?(fr?'Découvrir les atolls':'Explore the atolls'):(fr?'Découvrir les quartiers':'Discover neighbourhoods'))} →
           </a>
@@ -458,6 +464,11 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         <a href="#conseils" className="shrink-0 hover:text-[#193344]">{fr?'Les conseils':'Advice'}</a>
       </div>
     </nav>
+    {earlyPreviewPhotos.length > 0 && <section aria-label={fr?'Images de la destination':'Destination photographs'} className="mx-auto max-w-7xl px-5 pt-8 sm:pt-12">
+      <div className={earlyPreviewPhotos.length > 1 ? 'grid gap-3 sm:grid-cols-2 lg:grid-cols-3' : 'grid gap-3'}>
+        {earlyPreviewPhotos.map((photo,index)=><CityPhoto key={photo.src} photo={photo} locale={locale} priority={index===0}/>)}
+      </div>
+    </section>}
     {hotelPage&&<HotelSelection guide={city} locale={locale}/>}
     <section id={hotelPage?'quartiers':'quartiers'} className="scroll-mt-24 mx-auto max-w-7xl px-5 py-16 sm:py-24">
       <p className="text-xs font-semibold uppercase tracking-[.2em] text-[#193344]">
@@ -466,15 +477,20 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl sm:text-5xl">{fr
         ?city.slug==='porto-cervo'?'Une côte mythique, cinq façons de séjourner.':city.slug==='saint-barthelemy'?'Une île, cinq atmosphères à découvrir.':city.slug==='los-cabos'?'Entre désert et océan, cinq paysages à choisir.':city.slug==='maldives'?'Un archipel, plusieurs façons de vivre le luxe.':'Une ville, plusieurs façons de séjourner.'
         :city.slug==='porto-cervo'?'One legendary coast, five ways to stay.':city.slug==='saint-barthelemy'?'One island, five distinct atmospheres.':city.slug==='los-cabos'?'Five distinctive landscapes between desert and sea.':city.slug==='maldives'?'An archipelago, many ways to experience luxury.':'One destination, very different places to stay.'}</h2>
-      <EditorialProse text={fr?city.editorialFr:city.editorialEn} className="mt-6 max-w-3xl text-base text-[#50616b]" />
-      <div className="mt-10 grid gap-4 md:grid-cols-3">
+      <div className="mt-8 grid gap-4 md:grid-cols-3">
         {city.areas.map((area,i)=><article key={area.name} className="flex flex-col border border-[#e1e5e5] bg-white p-7">
           
-          <h3 className="mt-5 font-sans font-normal text-2xl">{fr?area.name:area.enName}</h3>
           {(city.slug==='jaipur'||city.slug==='galle'||city.slug==='rajasthan'||city.slug==='udaipur'||city.slug==='sentosa'||city.slug==='singapore'||city.slug==='phu-quoc'||city.slug==='hoi-an'||city.slug==='da-nang'||city.slug==='vinh-hy-bay'||city.slug==='hakone'||city.slug==='kyoto'||city.slug==='tokyo'||city.slug==='palawan'||city.slug==='sumba'||city.slug==='chiang-mai'||city.slug==='bangkok'||city.slug==='koh-yao-noi'||city.slug==='krabi'||city.slug==='san-miguel-de-allende'||city.slug==='mayakoba'||city.slug==='los-angeles'||city.slug==='miami'||city.slug==='new-york'||city.slug==='istanbul'||city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo'||city.slug==='mustique'||city.slug==='courchevel-1850'||isAlpineCity(city.slug)||city.slug==='monaco'||city.slug==='saint-jean-cap-ferrat'||city.slug==='cap-dantibes'||city.slug==='lake-como'||city.slug==='capri'||city.slug==='positano'||city.slug==='ravello'||city.slug==='mykonos'||city.slug==='antiparos'||city.slug==='ibiza'||city.slug==='formentera'||city.slug==='deia'||city.slug==='port-andratx'||city.slug==='comporta'||city.slug==='melides'||city.slug==='tivat'||city.slug==='the-hamptons'||city.slug==='palm-beach'||city.slug==='nantucket'||city.slug==='harbour-island'||city.slug==='turks-and-caicos'||city.slug==='canouan'||city.slug==='necker-island'||city.slug==='north-island-seychelles'||city.slug==='pamalican-island'||city.slug==='laucala-island'||city.slug==='jumby-bay'||city.slug==='okavango-delta'||city.slug==='punta-mita'||city.slug==='costa-careyes') && <DestinationAreaPhoto city={city.slug} index={i} locale={locale}/>}
+          <h3 className="mt-5 font-sans font-normal text-2xl">{fr?area.name:area.enName}</h3>
           <EditorialProse text={fr?area.fr:area.en} className="mt-5 text-sm text-[#4c606b]" maxChars={235} />
           <EditorialProse text={fr?area.frWatch:area.enWatch} className="mt-auto border-t border-[#e1e5e5] pt-5 text-sm text-[#53616b]" maxChars={240} />
         </article>)}
+      </div>
+      <div className="mt-12 grid gap-8 border-t border-[#e1e5e5] pt-8 lg:grid-cols-2 lg:gap-14">
+        <EditorialProse text={hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}
+          className="text-base text-[#475862]" />
+        <EditorialProse text={fr?city.editorialFr:city.editorialEn}
+          className="text-base text-[#50616b]" />
       </div>
     </section>
     {city.slug==='san-miguel-de-allende' && <section id="panoramas-san-miguel-de-allende" className="scroll-mt-24 bg-[#f5f5f3] py-16 sm:py-24">
