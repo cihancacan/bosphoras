@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { BrandWordmark } from '@/components/BrandWordmark';
 import type { Locale } from '@/lib/i18n';
 import { t, localeDir } from '@/lib/i18n';
 import { getLocalePath } from '@/lib/routes';
@@ -62,7 +63,7 @@ export function Footer({ locale }: FooterProps) {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           <div>
             <Link href={getLocalePath(locale, '/')} className="group mb-6 inline-flex flex-col leading-none" aria-label="Bosphoras — Accueil">
-              <span className="font-sans text-xl font-normal uppercase tracking-[0.22em] text-[#202629] transition-colors duration-300 group-hover:text-[#193344]">Bosphoras</span>
+              <BrandWordmark />
               <span className="mt-1 text-[0.6rem] uppercase tracking-[0.25em] text-[#193344]">{t(locale, 'footer.tagline')}</span>
             </Link>
             <p className="max-w-xs text-sm leading-relaxed text-[#53616b]">

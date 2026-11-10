@@ -142,6 +142,7 @@ import { destinationBySlug, travelCategories, travelDestinations, travelRegions,
 import type { TravelCategory, TravelDestination } from '@/data/travel/destinations';
 import { travelHref, travelLocaleCodes, travelKeywordTitles, travelText } from '@/lib/travel/i18n';
 import { TravelMobileMenu } from './TravelMobileMenu';
+import { BrandWordmark } from '@/components/BrandWordmark';
 import type { TravelLocale } from '@/lib/travel/i18n';
 
 const ORIGIN = 'https://www.bosphoras.com';
@@ -300,8 +301,8 @@ export function Header({ locale, slug, limitedLocales = false }: { locale: Trave
   }));
   return <header className="relative z-50 border-b border-[#e1e5e5] bg-white text-[#202629]">
     <div className="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-4 lg:py-5">
-      <Link href={travelHref(locale)} className="shrink-0 text-sm font-normal uppercase tracking-[0.18em] text-[#193344] sm:text-base">
-        BOSPHORAS <span className="text-[#53616b]">LUXURY STAYS</span>
+      <Link href={travelHref(locale)} className="inline-flex shrink-0 items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#193344]" aria-label="Bosphoras Luxury Stays">
+        <BrandWordmark variant="travel" />
       </Link>
       <nav aria-label="Travel primary navigation" className="hidden items-center gap-4 text-xs lg:flex lg:gap-6 lg:text-sm">
         {hotelSearch && <Link href={hotelSearchUrl} rel="sponsored" className="text-[#193344]">{locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel'}</Link>}
@@ -323,7 +324,7 @@ export function Footer({ locale }: { locale: TravelLocale }) {
   const t = travelText(locale);
   return <footer className="mt-20 border-t border-[#e1e5e5] bg-[#f5f5f3] text-[#202629]">
     <div className="mx-auto max-w-7xl px-5 py-12 grid gap-8 md:grid-cols-3 text-sm">
-      <section><p className="font-semibold tracking-[0.17em] uppercase">Bosphoras Luxury Stays</p><p className="text-[#193344] mt-3">{t.slogan}</p><p className="text-[#53616b] mt-3">{t.value}</p></section>
+      <section><BrandWordmark variant="travel" /><p className="text-[#193344] mt-3">{t.slogan}</p><p className="text-[#53616b] mt-3">{t.value}</p></section>
       <nav aria-label="Travel collections"><p className="font-semibold mb-3">{t.collections}</p><div className="grid gap-2">{travelCategories.map(category => <Link key={category} href={travelHref(locale,category)}>{travelKeywordTitles[category][locale]}</Link>)}</div></nav>
       <section><p className="font-semibold mb-3">{t.booking}</p><p className="text-[#53616b]">{t.draft}</p><p className="mt-4"><Link className="underline" href="/mentions-legales">Mentions légales</Link> · <Link className="underline" href="/confidentialite">Confidentialité</Link></p></section>
     </div>
