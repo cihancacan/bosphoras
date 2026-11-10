@@ -45,17 +45,17 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
   return (
     <main className="bg-[#ffffff] text-[#202629]">
       <section className="bg-[#193344] text-[#ffffff]">
-        <div className="mx-auto max-w-7xl px-5 py-14 sm:py-20">
+        <div className="mx-auto max-w-7xl px-5 py-8 sm:py-12">
           <Link href={back} className="text-xs uppercase tracking-[0.16em] text-[#e0e9ee] hover:underline">
             ← {fr ? 'Retour au guide des hôtels d’Istanbul' : 'Back to Istanbul hotel guide'}
           </Link>
-          <p className="mt-12 text-xs uppercase tracking-[0.2em] text-[#e0e9ee]">{title} · {hotel.zone}</p>
+          <p className="mt-5 text-xs uppercase tracking-[0.2em] text-[#e0e9ee]">{title} · {hotel.zone}</p>
           <h1 className="mt-5 max-w-5xl font-sans font-normal text-4xl leading-tight sm:text-6xl">{hotel.name}</h1>
-          <EditorialProse text={fr ? hotel.frBest : hotel.enBest} className="mt-7 max-w-3xl text-base text-[#d7e0e0] sm:text-lg" />
+          <p className="mt-4 line-clamp-2 max-w-2xl text-sm leading-7 text-[#d7e0e0] sm:text-base">{fr ? hotel.frBest : hotel.enBest}</p>
         </div>
       </section>
 
-      <div className="mx-auto max-w-7xl px-5 py-12 sm:py-20">
+      <div className="mx-auto max-w-7xl px-5 py-6 sm:py-10">
         {photos.length > 0 ? (
           <section aria-label={fr ? 'Photographies de l’hôtel' : 'Hotel photo gallery'} className="mb-16">
             <button type="button" className="relative block aspect-[16/9] w-full overflow-hidden bg-[#f5f5f3] text-left lg:aspect-[2/1]"
@@ -82,7 +82,10 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
             {fr ? 'Galerie photographique en préparation. La sélection éditoriale reste consultable ci-dessous.' : 'Photo gallery in preparation. The editorial profile remains available below.'}
           </div>
         )}
-        <div className="grid gap-12 lg:grid-cols-[minmax(0,1.6fr)_minmax(270px,1fr)]">
+        <div className="mb-12 max-w-3xl">
+          <HotelPartnerBooking hotelKey={hotelPartnerKey('istanbul', hotel.id)} locale={locale} />
+        </div>
+        <div className="grid gap-12 lg:grid-cols-[minmax(0,1fr)]">
           <article className="max-w-3xl">
             <h2 className="font-sans font-normal text-3xl sm:text-4xl">{fr ? 'Pourquoi cette adresse ?' : 'Why consider this address?'}</h2>
             <EditorialProse text={fr ? hotel.fr : hotel.en} className="mt-6 max-w-2xl text-base text-[#475964] sm:text-lg" />
@@ -91,9 +94,6 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
             <h2 className="mt-12 font-sans font-normal text-2xl">{fr ? 'À vérifier avant la réservation' : 'What to check before booking'}</h2>
             <EditorialProse text={fr ? hotel.frWatch : hotel.enWatch} className="mt-4 text-base text-[#475964]" />
           </article>
-          <aside className="h-fit border border-[#e1e5e5] bg-white p-7">
-            <HotelPartnerBooking hotelKey={hotelPartnerKey('istanbul', hotel.id)} locale={locale} />
-          </aside>
         </div>
 
         <section aria-label={fr ? 'Autour de l’hôtel' : 'Around the hotel'} className="mt-20 border-t border-[#e1e5e5] pt-10">

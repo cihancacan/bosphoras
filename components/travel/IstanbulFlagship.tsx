@@ -22,7 +22,9 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
         <h1 className="font-sans font-normal text-5xl sm:text-6xl lg:text-7xl leading-[1.05] max-w-4xl">
           {fr ? 'Les hôtels de luxe à Istanbul, sans compromis sur le lieu.' : 'Luxury hotels in Istanbul. First, choose the place.'}
         </h1>
-        <EditorialProse text={intro} className="mt-8 max-w-2xl text-base text-[#465159] sm:text-xl" maxChars={265} />
+        <p className="mt-6 max-w-2xl text-sm leading-7 text-[#465159] sm:text-base">
+          {fr?'Découvrez les hôtels et les quartiers qui donnent à Istanbul toute sa personnalité.':'Discover the hotels and neighbourhoods that give Istanbul its character.'}
+        </p>
         <div className="flex flex-wrap gap-3 mt-10">
           <a href="#selection" className="bg-[#193344] hover:bg-[#25485e] text-white px-6 py-4 font-semibold text-sm transition-colors">{fr ? 'Découvrir les neuf adresses' : 'Explore nine notable addresses'} <span aria-hidden="true">↗</span></a>
           <a href="#quartiers" className="border border-[#193344] text-[#193344] hover:bg-white/75 px-6 py-4 text-sm transition-colors">{fr ? 'Choisir son quartier' : 'Choose your neighbourhood'}</a>
@@ -47,6 +49,35 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
       </div>
     </nav>
 
+
+
+    <section id="quartiers" className={anchor + ' bg-[#f5f5f3] py-16 sm:py-24'}>
+      <div className="mx-auto max-w-7xl px-5">
+        <div className="max-w-3xl mb-10">
+          <p className="text-[#193344] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? 'Comprendre Istanbul' : 'Read the city'}</p>
+          <h2 className="font-sans font-normal text-4xl sm:text-5xl">{fr ? 'Où dormir à Istanbul ? Les cinq ambiances à comparer.' : 'Where to stay in Istanbul: five different moods.'}</h2>
+
+        </div>
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+          {istanbulDistricts.map((d)=><article key={d.id} className="bg-[#ffffff] p-7 border border-[#e1e5e5] flex flex-col gap-5">
+            <figure>
+              <div className="relative aspect-[16/10] overflow-hidden bg-[#d8d3c8]">
+                <Image src={istanbulCityScenes[d.id].src} alt={fr ? istanbulCityScenes[d.id].fr : istanbulCityScenes[d.id].en}
+                  fill sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 390px"
+                  className="object-cover" />
+              </div>
+              
+            </figure>
+            <div className="flex items-start justify-between"><span className="text-xs text-[#193344] uppercase tracking-wider">Istanbul · Europe</span></div>
+            <h3 className="font-sans font-normal text-2xl">{d.name}</h3>
+            <EditorialProse text={fr?d.fr:d.en} className="text-sm text-[#52616a] sm:text-base" maxChars={245} />
+            <p className="mt-auto border-t border-[#e5dfd6] pt-4 text-sm font-medium text-[#193344]">{fr?d.frTip:d.enTip}</p>
+          </article>)}
+        </div>
+        <EditorialProse text={fr ? 'Avant de comparer les suites, choisissez votre Istanbul. Une distance courte sur la carte ne garantit ni la même atmosphère ni les mêmes temps de trajet.' : 'Before comparing suites, choose your Istanbul. Short map distances do not always mean the same atmosphere or easy journeys.'} className="mt-8 max-w-3xl text-base text-[#52616a]" />
+      </div>
+    </section>
+
     <section className="mx-auto max-w-7xl px-5 py-16 sm:py-24">
       <div className="grid lg:grid-cols-[1fr,1.15fr] gap-8 lg:gap-20 items-start">
         <div>
@@ -57,32 +88,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
           <EditorialProse text={fr ? 'Un café devant l’eau, des bateaux qui passent, les silhouettes des palais et les coupoles de la vieille ville : les grands hôtels d’Istanbul offrent des façons très différentes de vivre ces instants.' : 'Coffee beside the water, ferries moving between continents, palaces on the shore and the domes of the old city: Istanbul’s finest stays frame those moments in very different ways.'} className="text-base text-[#52616a] sm:text-lg" maxChars={270} />
           <EditorialProse text={fr ? 'À Karaköy, on sort à pied vers les musées et les restaurants. À Çırağan, les jardins et la terrasse deviennent une destination en soi. À Sultanahmet, le privilège consiste à rejoindre les monuments avant la foule. À Nişantaşı, le luxe prend le rythme de la ville contemporaine.' : 'In Karaköy, museums and restaurants are part of the walk. In Çırağan, the terrace and gardens become a destination. In Sultanahmet, the privilege is arriving at historic monuments early. In Nişantaşı, luxury follows a more contemporary urban rhythm.'} className="text-base text-[#52616a] sm:text-lg" maxChars={270} />
           <p className="font-medium text-[#17252d]">{fr ? 'Notre sélection commence toujours par cette différence.' : 'That distinction comes before any hotel shortlist.'}</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="quartiers" className={anchor + ' bg-[#f5f5f3] py-16 sm:py-24'}>
-      <div className="mx-auto max-w-7xl px-5">
-        <div className="max-w-3xl mb-10">
-          <p className="text-[#193344] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? 'Comprendre Istanbul' : 'Read the city'}</p>
-          <h2 className="font-sans font-normal text-4xl sm:text-5xl">{fr ? 'Où dormir à Istanbul ? Les cinq ambiances à comparer.' : 'Where to stay in Istanbul: five different moods.'}</h2>
-          <EditorialProse text={fr ? 'Avant de comparer les suites, choisissez votre Istanbul. Une distance courte sur la carte ne garantit ni la même atmosphère ni les mêmes temps de trajet.' : 'Before comparing suites, choose your Istanbul. Short map distances do not always mean the same atmosphere or easy journeys.'} className="mt-5 text-base text-[#52616a]" />
-        </div>
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
-          {istanbulDistricts.map((d)=><article key={d.id} className="bg-[#ffffff] p-7 border border-[#e1e5e5] flex flex-col gap-5">
-            <div className="flex items-start justify-between"><span className="text-xs text-[#193344] uppercase tracking-wider">Istanbul · Europe</span></div>
-            <h3 className="font-sans font-normal text-2xl">{d.name}</h3>
-            <figure>
-              <div className="relative aspect-[16/10] overflow-hidden bg-[#d8d3c8]">
-                <Image src={istanbulCityScenes[d.id].src} alt={fr ? istanbulCityScenes[d.id].fr : istanbulCityScenes[d.id].en}
-                  fill sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 390px"
-                  className="object-cover" />
-              </div>
-              
-            </figure>
-            <EditorialProse text={fr?d.fr:d.en} className="text-sm text-[#52616a] sm:text-base" maxChars={245} />
-            <p className="mt-auto border-t border-[#e5dfd6] pt-4 text-sm font-medium text-[#193344]">{fr?d.frTip:d.enTip}</p>
-          </article>)}
+          <EditorialProse text={intro} className="mt-5 max-w-2xl text-base text-[#52616a] sm:text-lg" />
         </div>
       </div>
     </section>
