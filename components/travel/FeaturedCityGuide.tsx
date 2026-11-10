@@ -277,16 +277,13 @@ function HotelTeaser({ guide, locale }: {guide:FeaturedCityGuideData;locale:Lang
           <h3 className="mt-4 font-sans font-normal text-2xl">{hotel.name}</h3>
           {Boolean(hotelEditorialByCity[guide.slug]) && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale}/>}
           <p className="mt-4 text-sm leading-7 text-[#53636a]">{fr?hotel.fr:hotel.en}</p>
-          {Boolean(hotelEditorialByCity[guide.slug]) && hotelEditorialByCity[guide.slug][hotel.name] && <p className="mt-4 border-l-2 border-[#193344] pl-3 text-xs leading-6 text-[#5d6a71]">
+          {Boolean(hotelEditorialByCity[guide.slug]) && hotelEditorialByCity[guide.slug][hotel.name] && <p className="mt-4 border-t border-[#e1e5e5] pt-4 text-sm leading-7 text-[#53616b]">
             <strong>{fr?'Pour qui ? ':'Best suited to: '}</strong>
             {fr?hotelEditorialByCity[guide.slug][hotel.name].frBest:hotelEditorialByCity[guide.slug][hotel.name].enBest}
           </p>}
           <div className="mt-auto pt-5"><HotelNuiteeLink hotelKey={hotelPartnerKey(guide.slug, hotel.officialUrl)} locale={locale} /></div>
         </article>)}
       </div>
-      <p className="mt-6 text-sm text-[#667078]">
-        {fr?'Sélection éditoriale indépendante : aucune disponibilité ni relation de distribution n’est revendiquée.':'Independent editorial shortlist: no availability or supplier partnership is claimed.'}
-      </p>
     </div>
   </section>;
 }
@@ -320,9 +317,6 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
         <HotelPartnerBooking hotelKey={hotelPartnerKey(guide.slug, hotel.officialUrl)} locale={locale} />
       </article>)}
     </div>
-    <p className="mt-7 text-sm leading-7 text-[#667078]">{fr
-      ? 'Cette sélection ne constitue pas un classement, une offre tarifaire ou une confirmation de réservation.'
-      : 'This is neither a ranking, a rate offer nor confirmation of booking availability.'}</p>
   </section>;
 }
 function Advice({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang}) {
@@ -388,9 +382,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           {hero && <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="(min-width:1024px) 60vw, 100vw" className="object-cover object-[58%_center]"/>}
         </div>
       </div>
-      <p className="border-t border-[#e1e5e5] px-5 py-4 text-center text-xs text-[#53616b]">
-        {fr?'Guide indépendant · Aucun prix ni disponibilité en direct à ce stade':'Independent guide · No live rates or availability at this stage'}
-      </p>
     </section> : (
     <section className="relative isolate overflow-hidden bg-[#f5f5f3] text-[#202629]">
       <div className="absolute inset-0" aria-hidden="true">
@@ -421,9 +412,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           </Link>
         </div>
       </div>
-      <p className="absolute bottom-0 inset-x-0 bg-[#f5f5f3]/90 px-5 py-4 text-center text-xs text-[#53616b]">
-        {fr?'Guide indépendant · Aucun prix ni disponibilité en direct à ce stade':'Independent guide · No live rates or availability at this stage'}
-      </p>
     </section>
     )}
     <nav className="sticky top-0 z-20 border-b border-[#e1e5e5] bg-white/95 px-5 backdrop-blur" aria-label={fr?'Naviguer dans le guide':'Guide sections'}>

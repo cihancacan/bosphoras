@@ -30,7 +30,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
       <div className="absolute bottom-0 inset-x-0 border-t border-[#e1e5e5] bg-[#f5f5f3]/90">
         <div className="mx-auto max-w-7xl px-5 py-4 flex flex-wrap justify-between gap-3 text-xs tracking-wide text-[#53616b]">
           <span>{fr ? '9 adresses étudiées · 5 quartiers comparés' : '9 researched addresses · 5 areas compared'}</span>
-          <span>{fr ? 'Guide éditorial · Réservations partenaires à venir' : 'Editorial guide · Partner bookings to follow'}</span>
+          <span>{fr ? 'Réservations et assistance via Nuitée' : 'Booking and support through Nuitée'}</span>
         </div>
       </div>
     </section>
@@ -97,7 +97,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
       <div className="space-y-4">
         {istanbulHotels.map((hotel,i)=><EditorialHotelCard key={hotel.id} hotel={hotel} index={i} locale={locale}/>)}
       </div>
-      <p className="text-[#647078] text-sm leading-6 mt-7">{fr ? 'Les neuf fiches incluent des galeries locales et des vues de quartier documentées. Les prix et disponibilités ne seront affichés qu’après validation du partenaire de réservation.' : 'All nine profiles include locally stored hotel galleries and documented neighbourhood photography. Rates and availability will appear only after booking-partner verification.'}</p>
+      <p className="mt-7 max-w-3xl text-sm leading-7 text-[#53616b]">{fr ? 'Retrouvez les disponibilités, les catégories de chambres et les conditions directement dans le moteur de réservation Nuitée.' : 'Check availability, room categories and conditions directly through the Nuitée booking engine.'}</p>
     </section>
 
     <section id="experience" className={anchor + ' bg-[#193344] text-white py-16 sm:py-24'}>

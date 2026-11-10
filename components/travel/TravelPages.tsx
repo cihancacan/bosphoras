@@ -325,7 +325,7 @@ export function Footer({ locale }: { locale: TravelLocale }) {
     <div className="mx-auto max-w-7xl px-5 py-12 grid gap-8 md:grid-cols-3 text-sm">
       <section><p className="font-semibold tracking-[0.17em] uppercase">Bosphoras Luxury Stays</p><p className="text-[#193344] mt-3">{t.slogan}</p><p className="text-[#53616b] mt-3">{t.value}</p></section>
       <nav aria-label="Travel collections"><p className="font-semibold mb-3">{t.collections}</p><div className="grid gap-2">{travelCategories.map(category => <Link key={category} href={travelHref(locale,category)}>{travelKeywordTitles[category][locale]}</Link>)}</div></nav>
-      <section><p className="font-semibold mb-3">{t.booking}</p><p className="text-[#53616b]">{t.draft}</p><p className="mt-4"><Link className="underline" href="/mentions-legales">Mentions légales</Link> · <Link className="underline" href="/confidentialite">Confidentialité</Link></p></section>
+      <section><p className="font-semibold mb-3">{t.booking}</p><p className="text-[#53616b]">{t.draft}</p><p className="mt-4"><Link className="underline" href="/mentions-legales">Mentions légales</Link> · <Link className="underline" href="/confidentialite">Confidentialité</Link> · <Link className="underline" href={locale === 'en' ? '/en/travel/credits' : '/travel/credits'}>{locale === 'en' ? 'Photo credits' : 'Crédits photo'}</Link></p></section>
     </div>
     <p className="border-t border-[#e1e5e5] py-5 px-5 text-center text-xs text-[#53616b]">© Bosphoras · The World, Through Local Eyes</p>
   </footer>;
