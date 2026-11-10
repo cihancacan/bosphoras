@@ -68,7 +68,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
           <p className="text-[#52616a] leading-7 mt-5">{fr ? 'Avant de comparer les suites, choisissez votre Istanbul. Une distance courte sur la carte ne garantit ni la même atmosphère ni les mêmes temps de trajet.' : 'Before comparing suites, choose your Istanbul. Short map distances do not always mean the same atmosphere or easy journeys.'}</p>
         </div>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
-          {istanbulDistricts.map((d,i)=><article key={d.id} className="bg-[#ffffff] p-7 border border-[#e1e5e5] flex flex-col gap-5">
+          {istanbulDistricts.map((d)=><article key={d.id} className="bg-[#ffffff] p-7 border border-[#e1e5e5] flex flex-col gap-5">
             <div className="flex items-start justify-between"><span className="text-xs text-[#193344] uppercase tracking-wider">Istanbul · Europe</span></div>
             <h3 className="font-sans font-normal text-2xl">{d.name}</h3>
             <figure>
