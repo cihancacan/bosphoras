@@ -415,8 +415,8 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           {hotelPage?(city.slug==='mykonos'?(fr?'Hôtels de luxe à Mykonos : quatre adresses d’exception':'Luxury hotels in Mykonos: four exceptional island addresses'):city.slug==='courchevel-1850'?(fr?'Courchevel 1850 : quatre palaces d’exception':'Courchevel 1850: four exceptional alpine palaces'):city.slug==='mustique'?(fr?'Mustique : un hôtel et trois villas de luxe':'Mustique: one hotel and three luxury villas'):city.slug==='porto-cervo'?(fr?'Hôtels de luxe à Porto Cervo : nos quatre adresses iconiques':'Luxury hotels in Porto Cervo: four iconic Sardinian stays'):city.slug==='saint-barthelemy'?(fr?'Hôtels de luxe à Saint-Barth : quatre adresses iconiques':'Luxury hotels in St Barth: four iconic island stays'):city.slug==='los-cabos'?(fr?'Hôtels de luxe à Los Cabos : quatre resorts d’exception':'Luxury hotels in Los Cabos: four exceptional resorts'):city.slug==='maldives'?(fr?'Hôtels de luxe aux Maldives : villas et îles privées d’exception':'Luxury hotels in the Maldives: exceptional private islands and villas'):city.slug==='koh-samui'?(fr?'Hôtels de luxe à Koh Samui : notre sélection d’adresses d’exception':'Luxury hotels in Koh Samui: our curated island collection'):(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.'))
             :(fr?city.headingFr:city.headingEn)}</h1>
         
-        <p className="mt-5 max-w-xl text-sm leading-7 text-[#475862] sm:text-base">
-          {fr?'Découvrez les lieux et les adresses qui méritent le voyage.':'Discover the places and addresses worth travelling for.'}
+        <p className="mt-5 line-clamp-2 max-w-xl text-sm leading-7 text-[#475862] sm:text-base">
+          {hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}
         </p>
         
         

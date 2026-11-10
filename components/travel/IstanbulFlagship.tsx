@@ -16,8 +16,9 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
   return <main id="istanbul-luxury-guide" className="bg-white text-[#202629]">
     <section className="relative isolate min-h-[620px] overflow-hidden bg-[#f5f5f3] text-[#202629]">
       {/* Existing site asset. Original image rights must be checked before production reuse. */}
-      <div aria-hidden="true" className="absolute inset-0 bg-cover bg-center" style={{backgroundImage:"linear-gradient(90deg,rgba(245,245,243,.97) 0%,rgba(245,245,243,.82) 46%,rgba(245,245,243,.12) 100%),url('/images/hero-istanbul.jpg')"}} />
-      <div className="relative mx-auto max-w-7xl px-5 pt-14 pb-24 sm:pt-24 sm:pb-36">
+      <div role="img" aria-label={fr?'Le Bosphore à Istanbul':'The Bosphorus in Istanbul'} className="relative h-[36vh] min-h-[250px] bg-cover bg-center sm:hidden" style={{backgroundImage:"url('/images/hero-istanbul.jpg')"}} />
+      <div aria-hidden="true" className="absolute inset-0 hidden bg-cover bg-center sm:block" style={{backgroundImage:"linear-gradient(90deg,rgba(245,245,243,.93) 0%,rgba(245,245,243,.65) 46%,rgba(245,245,243,.08) 100%),url('/images/hero-istanbul.jpg')"}} />
+      <div className="relative mx-auto max-w-7xl px-5 pt-8 pb-24 sm:pt-24 sm:pb-36">
         <p className="text-xs uppercase tracking-[0.28em] text-[#193344] mb-8">{fr ? 'Bosphoras · Carnet de voyage' : 'Bosphoras · Destination journal'} / Istanbul</p>
         <h1 className="font-sans font-normal text-5xl sm:text-6xl lg:text-7xl leading-[1.05] max-w-4xl">
           {fr ? 'Les hôtels de luxe à Istanbul, sans compromis sur le lieu.' : 'Luxury hotels in Istanbul. First, choose the place.'}
