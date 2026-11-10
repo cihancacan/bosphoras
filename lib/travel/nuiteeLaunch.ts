@@ -1,9 +1,22 @@
 import mappings from '@/data/travel/nuiteeMappings.json';
-import { hotelProviders, supplierResponsibilities, getHotelPartnerLinks, type HotelProvider, type HotelPartnerLink } from './hotelPartners';
+import resolvedHotelMappings from '@/data/travel/nuiteeResolvedMappings.json';
+import { hotelProviders, supplierResponsibilities, getHotelPartnerLinks, hotelPartnerKey, type HotelProvider, type HotelPartnerLink } from './hotelPartners';
 import type { NuiteeSearchConnection } from './nuiteeSearchHandoff';
 import { NUITEE_WHITE_LABEL_ORIGIN, getNuiteeWhiteLabelSearchHref } from './nuiteeWhiteLabel';
 
 const bookingHosts = ['bosphoras.nuitee.link'];
+
+/** Supplier-verified bulk matches, separated from the nine hand-checked Istanbul hotels. */
+type VerifiedHotelIdentity = [destination: string, hotelName: string, supplierHotelId: string];
+const expandedResolvedHotels = (resolvedHotelMappings.hotels as VerifiedHotelIdentity[]).map(([destination, name, hotelId]) => ({
+  destination,
+  name,
+  hotelId,
+  editorialKeys: [hotelPartnerKey(destination, name)],
+  matchEvidence: 'Nuitée WhiteLabel property search checked by name, supplier country and address; includes verified hotel aliases and parent resorts for individual villa profiles (November 2026).',
+  deepLinkEvidence: 'Supplier hotelId returned by Bosphoras Nuitée WhiteLabel hotel search; verified exact-property route /hotels/{hotelId}.',
+}));
+const allHotelMappings = [...mappings.hotels, ...expandedResolvedHotels];
 
 /** Operational evidence only. No API key, card, bank details or traveler data. */
 export const nuiteeLaunch = {
@@ -51,7 +64,7 @@ export function getNuiteeWorldwideSearch(locale: 'fr' | 'en', now = Date.now()):
 export function getNuiteeReservationStart(locale: 'fr' | 'en', selection: { hotel?: string; destination?: string } = {}, now = Date.now()): string | null {
   if (!isNuiteeBookingLive(now)) return null;
   if (selection.hotel) {
-    const hotel = mappings.hotels.find(item => item.hotelId === selection.hotel);
+    const hotel = allHotelMappings.find(item => item.hotelId === selection.hotel);
     if (!hotel) return null;
     const url = new URL(`/hotels/${hotel.hotelId}`, nuiteeLaunch.origin);
     url.searchParams.set('language', locale);
@@ -89,13 +102,14 @@ export function getNuiteeSearchConnection(now = Date.now()): NuiteeSearchConnect
     verifiedAt: nuiteeLaunch.verifiedAt,
     reviewBy: nuiteeLaunch.reviewBy,
     destinations: mappings.destinations,
+    hotels: allHotelMappings.map(hotel => ({ hotelId: hotel.hotelId, destination: hotel.destination, name: hotel.name, matchEvidence: hotel.matchEvidence })),
   };
 }
 
 /** Candidates are not commercial links until account activation and tracking are verified. */
 export function getNuiteeHotelLinks(hotelKey: string, locale: 'fr' | 'en', now = Date.now()): HotelPartnerLink[] {
   if (!isNuiteeBookingLive(now)) return [];
-  const candidates: HotelPartnerLink[] = mappings.hotels.flatMap((hotel: {
+  const candidates: HotelPartnerLink[] = allHotelMappings.filter(item => item.editorialKeys.includes(hotelKey) || hotelPartnerKey(item.destination, item.name) === hotelKey).flatMap((hotel: {
     destination: string; editorialKeys: string[]; hotelId: string; name: string;
     matchEvidence: string; deepLinkEvidence: string;
   }) => {

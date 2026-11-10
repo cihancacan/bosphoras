@@ -98,3 +98,43 @@ test('uses listing-only protocol, exact rooms and whitelisted nonpersonal parame
   }
   blocked(handoff({ ...request, locale: 'xx' }));
 });
+
+
+test('exact verified hotel deep links bypass city listings but preserve dates and room ages', () => {
+  const hotel = {hotelId: 'lpfixture123', destination: 'istanbul', name: 'Fixture Grand Hotel', matchEvidence: 'supplier-id-verified'};
+  const config = {...connection, hotels: [hotel]};
+  const input = {...request, destinationKey: undefined, hotelId: hotel.hotelId, rooms: [{adults:2,children:[4]},{adults:1,children:[]}]};
+  const result = handoff(input, config);
+  assert.equal(result.status, 'ready');
+  const url = new URL(result.url);
+  assert.equal(url.pathname, '/hotels/lpfixture123');
+  assert(!url.searchParams.has('placeId'));
+  assert.equal(url.searchParams.get('checkin'), input.checkin);
+  assert.equal(url.searchParams.get('checkout'), input.checkout);
+  assert.deepEqual(JSON.parse(Buffer.from(url.searchParams.get('occupancies'),'base64').toString()), input.rooms);
+  assert.equal(url.searchParams.get('clientReference'), 'fixture_search');
+  for (const invalid of [
+    {...input, hotelId:'lpnot-in-catalogue'},
+    {...input, hotelId:'https://evil.invalid'},
+    {...input, placeId:'other'},
+    {...input, destinationKey:'fixture-city'},
+    {...input, displayName:'Injected'},
+    {...input, checkin:'2026-10-01'},
+  ]) blocked(handoff(invalid,config));
+  blocked(handoff(input, {...config, hotels: []}));
+  blocked(handoff(input, {...config, hotels: [{...hotel, matchEvidence:''}]}));
+});
+
+test('existing Nuitee widget keeps all hotels and deep links only an exact verified place', () => {
+  const { findVerifiedHotelForPlace } = require('../lib/travel/verifiedHotelMatch');
+  assert.equal(findVerifiedHotelForPlace('The Peninsula Istanbul, Karakoy, Türkiye').hotelId,'lp6558f17c');
+  assert.equal(findVerifiedHotelForPlace('Çırağan Palace Kempinski Istanbul, Istanbul').hotelId,'lp85821');
+  assert.equal(findVerifiedHotelForPlace('Mandarin Oriental Bosphorus, Istanbul, Türkiye').hotelId,'lp6556e28f');
+  assert.equal(findVerifiedHotelForPlace('Four Seasons Hotel Istanbul at Sultanahmet, Istanbul').hotelId,'lp1e09b');
+  assert.equal(findVerifiedHotelForPlace('Four Seasons Hotel Istanbul at the Bosphorus, Istanbul').hotelId,'lp547d3');
+  assert.equal(findVerifiedHotelForPlace('Istanbul, Türkiye'),null);
+  assert.equal(findVerifiedHotelForPlace('Raffles Istanbul Airport, Türkiye'),null);
+  assert.equal(findVerifiedHotelForPlace('The Peninsula Istanbul Spa, Türkiye'),null);
+  assert.equal(findVerifiedHotelForPlace('A Hotel Not Yet Mapped by Bosphoras, Paris'),null);
+  assert.equal(findVerifiedHotelForPlace(''),null);
+});

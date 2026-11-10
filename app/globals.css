@@ -4,20 +4,20 @@
 
 @layer base {
   :root {
-    --ivory: 45 30% 96%;
-    --ivory-dark: 42 20% 90%;
-    --navy: 220 45% 12%;
-    --navy-mid: 220 35% 20%;
-    --charcoal: 220 15% 25%;
-    --gold: 42 65% 52%;
-    --gold-light: 42 55% 68%;
-    --gold-dark: 38 70% 38%;
-    --warm-white: 40 50% 98%;
-    --muted-text: 220 10% 55%;
+    --ivory: 60 9% 96%;
+    --ivory-dark: 60 7% 92%;
+    --navy: 204 46% 18%;
+    --navy-mid: 204 40% 24%;
+    --charcoal: 195 13% 14%;
+    --gold: 204 46% 18%;
+    --gold-light: 204 26% 43%;
+    --gold-dark: 204 46% 18%;
+    --warm-white: 0 0% 100%;
+    --muted-text: 195 7% 43%;
 
-    --font-display: 'Cormorant Garamond', 'Cormorant', 'Bodoni 72', Didot, 'Libre Baskerville', Georgia, 'Times New Roman', serif;
-    --font-serif: 'Cormorant Garamond', 'Cormorant', 'Bodoni 72', Didot, 'Libre Baskerville', Georgia, 'Times New Roman', serif;
-    --font-sans: 'Avenir Next', Inter, 'Helvetica Neue', Arial, system-ui, sans-serif;
+    --font-display: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-serif: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
     --background: var(--ivory);
     --foreground: var(--navy);
@@ -30,11 +30,11 @@
     --muted: var(--ivory-dark);
     --muted-foreground: var(--muted-text);
     --accent: var(--gold);
-    --accent-foreground: var(--navy);
-    --border: 42 15% 85%;
-    --input: 42 15% 88%;
+    --accent-foreground: 0 0% 100%;
+    --border: 195 8% 88%;
+    --input: 195 8% 90%;
     --ring: var(--gold);
-    --radius: 0.25rem;
+    --radius: 0.125rem;
   }
 }
 
@@ -84,7 +84,7 @@
   }
 
   .gold-rule {
-    @apply w-12 h-px bg-gradient-to-r from-transparent via-[hsl(42,65%,52%)] to-transparent;
+    @apply w-12 h-px bg-[#193344] opacity-40;
   }
 
   .section-padding {
@@ -107,23 +107,23 @@
   }
 
   .link-gold {
-    @apply text-[hsl(42,65%,45%)] hover:text-[hsl(42,65%,35%)] transition-colors duration-200 underline-offset-4 hover:underline;
+    @apply text-[#193344] hover:text-[#25485e] transition-colors duration-200 underline-offset-4 hover:underline;
   }
 
   .btn-primary {
-    @apply inline-flex items-center gap-2 px-8 py-3.5 bg-[hsl(220,45%,12%)] text-[hsl(45,30%,96%)] text-sm tracking-[0.12em] uppercase font-medium hover:bg-[hsl(220,35%,20%)] transition-all duration-300;
+    @apply inline-flex items-center gap-2 px-8 py-3.5 bg-[#193344] text-white text-sm font-medium tracking-normal hover:bg-[#25485e] transition-colors duration-200;
   }
 
   .btn-outline-gold {
-    @apply inline-flex items-center gap-2 px-8 py-3.5 border border-[hsl(42,65%,52%)] text-[hsl(42,65%,45%)] text-sm tracking-[0.12em] uppercase font-medium hover:bg-[hsl(42,65%,52%)] hover:text-white transition-all duration-300;
+    @apply inline-flex items-center gap-2 border border-[#193344] px-8 py-3.5 text-sm font-medium tracking-normal text-[#193344] hover:bg-[#193344] hover:text-white transition-colors duration-200;
   }
 
   .btn-ghost {
-    @apply inline-flex items-center gap-2 text-sm tracking-[0.1em] uppercase font-medium text-[hsl(220,45%,12%)] hover:text-[hsl(42,65%,45%)] transition-colors duration-200;
+    @apply inline-flex items-center gap-2 text-sm tracking-normal font-medium text-[#193344] hover:text-[#25485e] transition-colors duration-200;
   }
 
   .card-service {
-    @apply p-8 border border-[hsl(42,15%,85%)] hover:border-[hsl(42,65%,52%)] hover:shadow-lg transition-all duration-300 bg-white;
+    @apply p-8 border border-[#e1e5e5] hover:border-[#193344] hover:shadow-sm transition-colors duration-200 bg-white;
   }
 }
 
@@ -186,4 +186,57 @@
 }
 .bosphoras-desk.desk-dark [class*="shadow-"] {
   --tw-shadow-color: rgba(0,0,0,.35);
+}
+
+
+/* Bosphoras 2026 — unified editorial identity, reference visual #2.
+   Scoped to public-facing pages; the Partner Desk keeps its dedicated styles. */
+:root {
+  --bosphoras-navy: #193344;
+  --bosphoras-white: #ffffff;
+  --bosphoras-offwhite: #f5f5f3;
+  --bosphoras-ink: #202629;
+  --bosphoras-font: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
+body:not(:has(.bosphoras-desk)) {
+  background: var(--bosphoras-white);
+  color: var(--bosphoras-ink);
+  font-family: var(--bosphoras-font);
+}
+body:not(:has(.bosphoras-desk)) h1,
+body:not(:has(.bosphoras-desk)) h2,
+body:not(:has(.bosphoras-desk)) h3,
+body:not(:has(.bosphoras-desk)) .heading-display,
+body:not(:has(.bosphoras-desk)) .heading-serif {
+  font-family: var(--bosphoras-font);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.13;
+}
+body:not(:has(.bosphoras-desk)) .btn-primary {
+  background: var(--bosphoras-navy);
+  color: var(--bosphoras-white);
+  border-radius: 2px;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 500;
+}
+body:not(:has(.bosphoras-desk)) .btn-outline-gold {
+  border-color: var(--bosphoras-navy);
+  color: var(--bosphoras-navy);
+  border-radius: 2px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+body:not(:has(.bosphoras-desk)) .btn-ghost {
+  color: var(--bosphoras-navy);
+  letter-spacing: 0;
+  text-transform: none;
+}
+body:not(:has(.bosphoras-desk)) .gold-rule {
+  background: var(--bosphoras-navy);
+  opacity: .45;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }

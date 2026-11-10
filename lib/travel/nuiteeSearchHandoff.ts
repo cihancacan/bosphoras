@@ -3,6 +3,8 @@ import { hotelProviders, supplierResponsibilities, type HotelProvider } from './
 /** Search context only: never accept names, emails, payment data or checkout tokens. */
 export type NuiteeSearchRequest = {
   destinationKey?: string;
+  /** Verified supplier property ID for an exact hotel lookup. */
+  hotelId?: string;
   /** Place returned by the official search widget; resolved by the supplier. */
   placeId?: string;
   displayName?: string;
@@ -28,6 +30,7 @@ export type NuiteeSearchConnection = {
   verifiedAt: string;
   reviewBy: string;
   destinations: readonly { key: string; placeId: string; displayName: string; matchEvidence: string }[];
+  hotels?: readonly { hotelId: string; destination: string; name: string; matchEvidence: string }[];
 };
 
 // Standalone calls have no default account. Runtime launch supplies a qualified connection.
@@ -72,13 +75,22 @@ export function getNuiteeSearchHandoff(
       !/^[a-zA-Z0-9_-]{1,64}$/.test(connection.clientReference) ||
       !Number.isFinite(verified) || !Number.isFinite(review) || verified > now || review <= now || review <= verified) return blocked;
 
+  const hotel = request.hotelId
+    ? connection.hotels?.find(item => item.hotelId === request.hotelId &&
+        /^lp[a-zA-Z0-9]+$/.test(item.hotelId) && Boolean(item.matchEvidence?.trim()))
+    : null;
+  if (request.hotelId && (!hotel || request.destinationKey || request.placeId || request.displayName)) {
+    return { status: 'blocked', reason: 'destination' };
+  }
   const matches = connection.destinations.filter(item => item.key === request.destinationKey);
-  const destination = request.destinationKey
-    ? (matches.length === 1 && matches[0].matchEvidence.trim() ? matches[0] : null)
-    : { placeId: request.placeId, displayName: request.displayName };
-  if (!destination || typeof destination.placeId !== 'string' || !/^[a-zA-Z0-9_-]{1,255}$/.test(destination.placeId) ||
+  const destination = !request.hotelId
+    ? request.destinationKey
+      ? (matches.length === 1 && matches[0].matchEvidence.trim() ? matches[0] : null)
+      : { placeId: request.placeId, displayName: request.displayName }
+    : null;
+  if (!hotel && (!destination || typeof destination.placeId !== 'string' || !/^[a-zA-Z0-9_-]{1,255}$/.test(destination.placeId) ||
       typeof destination.displayName !== 'string' || !destination.displayName.trim() || destination.displayName.length > 200 ||
-      /[\u0000-\u001f\u007f]/.test(destination.displayName) || (request.destinationKey && (request.placeId || request.displayName))) {
+      /[\u0000-\u001f\u007f]/.test(destination.displayName) || (request.destinationKey && (request.placeId || request.displayName)))) {
     return { status: 'blocked', reason: 'destination' };
   }
   if (!validDay(request.checkin) || !validDay(request.checkout) || request.checkout <= request.checkin ||
@@ -91,10 +103,12 @@ export function getNuiteeSearchHandoff(
   if (request.locale !== 'fr' && request.locale !== 'en') return { status: 'blocked', reason: 'locale' };
 
   // Only the documented listing route and parameters. No arbitrary query passthrough.
-  const url = new URL('/hotels', origin);
-  url.searchParams.set('placeId', destination.placeId);
-  // The account's own search form also sends name; without it the search header is blank.
-  url.searchParams.set('name', destination.displayName);
+  const url = new URL(hotel ? '/hotels/' + hotel.hotelId : '/hotels', origin);
+  if (destination && typeof destination.placeId === 'string' && typeof destination.displayName === 'string') {
+    url.searchParams.set('placeId', destination.placeId);
+    // The account's own search form also sends name; without it the search header is blank.
+    url.searchParams.set('name', destination.displayName);
+  }
   url.searchParams.set('checkin', request.checkin);
   url.searchParams.set('checkout', request.checkout);
   // Keep the account UI's summary parameters consistent with the exact occupancies.

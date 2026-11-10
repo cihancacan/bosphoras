@@ -1,0 +1,245 @@
+{
+  "destination": "jaipur",
+  "destinationNumber": 77,
+  "scope": "private_owner_noindex_preview",
+  "publicUseApproved": false,
+  "notes": "Nine Jaipur Commons destination photographs, three Rambagh sources (including private-preview editorial photo), three Oberoi sources (including official room image), three Raffles, three Leela. Exact hotel room photos prioritized; no claimed public commercial rights for third-party media.",
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "type": "wikimedia",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Hawa_Mahal,_Jaipur,_Rajasthan,_India_in_2026.jpg",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-1.webp",
+      "frCaption": "Hawa Mahal frontal facade",
+      "enCaption": "Hawa Mahal frontal facade",
+      "expectedSubject": "Hawa Mahal frontal facade",
+      "hotel": null
+    },
+    {
+      "key": "scene-2",
+      "type": "wikimedia",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Full_image_Amer_fort.jpg",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-2.webp",
+      "frCaption": "Amer Fort panoramic exterior and Maota Lake",
+      "enCaption": "Amer Fort panoramic exterior and Maota Lake",
+      "expectedSubject": "Amer Fort panoramic exterior and Maota Lake",
+      "hotel": null
+    },
+    {
+      "key": "scene-3",
+      "type": "wikimedia",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Jal_Mahal_at_Jaipur_Rajasthan.jpg",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-3.webp",
+      "frCaption": "Jal Mahal and Man Sagar lake",
+      "enCaption": "Jal Mahal and Man Sagar lake",
+      "expectedSubject": "Jal Mahal and Man Sagar lake",
+      "hotel": null
+    },
+    {
+      "key": "scene-4",
+      "type": "wikimedia",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Perspective_view_of_City_palace,_Jaipur.jpg",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-4.webp",
+      "frCaption": "Jaipur City Palace court",
+      "enCaption": "Jaipur City Palace court",
+      "expectedSubject": "Jaipur City Palace court",
+      "hotel": null
+    },
+    {
+      "key": "scene-5",
+      "type": "wikimedia",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Jantar_mantar_jaipur_rajasthan_india.jpg",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-5.webp",
+      "frCaption": "Jantar Mantar astronomical instruments",
+      "enCaption": "Jantar Mantar astronomical instruments",
+      "expectedSubject": "Jantar Mantar astronomical instruments",
+      "hotel": null
+    },
+    {
+      "key": "scene-6",
+      "type": "wikimedia",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:View_from_Nahargarh_Fort,_Jaipur_-_panoramio.jpg",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-6.webp",
+      "frCaption": "View from Nahargarh Fort over Jaipur",
+      "enCaption": "View from Nahargarh Fort over Jaipur",
+      "expectedSubject": "View from Nahargarh Fort over Jaipur",
+      "hotel": null
+    },
+    {
+      "key": "scene-7",
+      "type": "wikimedia",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panna_Meena_Ka_Kund.jpg",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-7.webp",
+      "frCaption": "Panna Meena ka Kund stepwell by Amer",
+      "enCaption": "Panna Meena ka Kund stepwell by Amer",
+      "expectedSubject": "Panna Meena ka Kund stepwell by Amer",
+      "hotel": null
+    },
+    {
+      "key": "scene-8",
+      "type": "wikimedia",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Hawa_Mahal_of_Jaipur,_Rajasthan,_India.jpg",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-8.webp",
+      "frCaption": "Hawa Mahal alternative street-angle view",
+      "enCaption": "Hawa Mahal alternative street-angle view",
+      "expectedSubject": "Hawa Mahal alternative street-angle view",
+      "hotel": null
+    },
+    {
+      "key": "scene-9",
+      "type": "wikimedia",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Amer_Fort-Jaipur.jpg",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-9.webp",
+      "frCaption": "Amer Fort alternate historic facade",
+      "enCaption": "Amer Fort alternate historic facade",
+      "expectedSubject": "Amer Fort alternate historic facade",
+      "hotel": null
+    }
+  ],
+  "hotels": [
+    {
+      "key": "rambagh-1",
+      "hotel": "Rambagh Palace Jaipur",
+      "type": "wikimedia",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rambagh_Palace_view_from_garden,_July_2016.jpg",
+      "sourceUrl": null,
+      "frCaption": "Façade historique vue depuis les jardins",
+      "enCaption": "Historic palace façade viewed from the gardens",
+      "localPath": "/images/travel/jaipur-premium/hotels/rambagh-1.webp",
+      "previewOnly": false,
+      "commercialRightsCleared": null
+    },
+    {
+      "key": "rambagh-2",
+      "hotel": "Rambagh Palace Jaipur",
+      "type": "wikimedia",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rambagh_Palace_hotel_Jaipur_lobby_courtyard.jpg",
+      "sourceUrl": null,
+      "frCaption": "Cour intérieure historique de Rambagh Palace",
+      "enCaption": "Historic hotel lobby courtyard at Rambagh Palace",
+      "localPath": "/images/travel/jaipur-premium/hotels/rambagh-2.webp",
+      "previewOnly": false,
+      "commercialRightsCleared": null
+    },
+    {
+      "key": "rambagh-3",
+      "hotel": "Rambagh Palace Jaipur",
+      "type": "preview-source",
+      "sourcePage": "https://barbaraathanassiadis.com/lifestyle/the-maharani-of-jaipur-india",
+      "sourceUrl": "https://images.squarespace-cdn.com/content/v1/5c27b8e3af2096648cbb6cbd/3b9c927f-7063-45d9-9d0b-4a7d90ac61cc/Rambagh%2BPalace%2BBedroom.jpg",
+      "frCaption": "Chambre véritable du Rambagh Palace, boiseries et lits historiques",
+      "enCaption": "Authentic Rambagh Palace guest bedroom with carved wood and twin beds",
+      "localPath": "/images/travel/jaipur-premium/hotels/rambagh-3.webp",
+      "previewOnly": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "oberoi-1",
+      "hotel": "The Oberoi Rajvilas Jaipur",
+      "type": "wikimedia",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Raj_Vilas,_Rajastan.jpg",
+      "sourceUrl": null,
+      "frCaption": "Architecture des jardins de l'Oberoi Rajvilas",
+      "enCaption": "Architecture of The Oberoi Rajvilas estate",
+      "localPath": "/images/travel/jaipur-premium/hotels/oberoi-1.webp",
+      "previewOnly": false,
+      "commercialRightsCleared": null
+    },
+    {
+      "key": "oberoi-2",
+      "hotel": "The Oberoi Rajvilas Jaipur",
+      "type": "wikimedia",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Raj_Vilas2,_Rajastan.jpg",
+      "sourceUrl": null,
+      "frCaption": "Deuxième perspective sur l'Oberoi Rajvilas",
+      "enCaption": "Another authentic view of The Oberoi Rajvilas",
+      "localPath": "/images/travel/jaipur-premium/hotels/oberoi-2.webp",
+      "previewOnly": false,
+      "commercialRightsCleared": null
+    },
+    {
+      "key": "oberoi-3",
+      "hotel": "The Oberoi Rajvilas Jaipur",
+      "type": "preview-source",
+      "sourcePage": "https://www.oberoihotels.com/hotels-in-jaipur-rajvilas-resort/accommodation/premier-room/",
+      "sourceUrl": "https://www.oberoihotels.com/-/media/oberoi-hotel/the-oberoi-rajvilas/accommodation_rajvilas/04-premier-room/desktop820x646/premier_room-1.jpg",
+      "frCaption": "Chambre Premier Room à baldaquin de l'Oberoi Rajvilas",
+      "enCaption": "Premier Room four-poster bedroom at The Oberoi Rajvilas",
+      "localPath": "/images/travel/jaipur-premium/hotels/oberoi-3.webp",
+      "previewOnly": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "raffles-1",
+      "hotel": "Raffles Jaipur",
+      "type": "preview-source",
+      "sourcePage": "https://www.cntraveler.com/gallery/india-top-hotels",
+      "sourceUrl": "https://media.cntraveler.com/photos/668d65d9c74bdcff7e873968/4%3A3/w_1280%2Cc_limit/Raffles%2520Carousel%25203.jpg",
+      "frCaption": "Cour à colonnades et bassin au Raffles Jaipur",
+      "enCaption": "Carved colonnade and reflective pool at Raffles Jaipur",
+      "localPath": "/images/travel/jaipur-premium/hotels/raffles-1.webp",
+      "previewOnly": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "raffles-2",
+      "hotel": "Raffles Jaipur",
+      "type": "preview-source",
+      "sourcePage": "https://www.raffles.com/jaipur/experiences/A-Journey-Through-Time/",
+      "sourceUrl": "https://m.ahstatic.com/is/image/accorhotels/met_p_a028-35?wid=960",
+      "frCaption": "Espace privé ouvert sur une piscine au Raffles Jaipur",
+      "enCaption": "Poolside private villa space at Raffles Jaipur",
+      "localPath": "/images/travel/jaipur-premium/hotels/raffles-2.webp",
+      "previewOnly": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "raffles-3",
+      "hotel": "Raffles Jaipur",
+      "type": "preview-source",
+      "sourcePage": "https://www.raffles.com/jaipur/gallery/",
+      "sourceUrl": "https://m.ahstatic.com/is/image/accorhotels/aja_p7197-23?wid=1280",
+      "frCaption": "Suite raffinée de Raffles Jaipur",
+      "enCaption": "Raffles Jaipur guest suite with handcrafted details",
+      "localPath": "/images/travel/jaipur-premium/hotels/raffles-3.webp",
+      "previewOnly": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "leela-1",
+      "hotel": "The Leela Palace Jaipur",
+      "type": "preview-source",
+      "sourcePage": "https://www.theleela.com/the-leela-palace-jaipur",
+      "sourceUrl": "https://www.theleela.com/prod/content/assets/2025-05/Intro_1035x600.webp?VersionId=.sJr31TjJ2boA1lQIsiSJL4Y5qo1jQtM",
+      "frCaption": "Façade du Leela Palace Jaipur à la tombée du jour",
+      "enCaption": "The Leela Palace Jaipur grand exterior at dusk",
+      "localPath": "/images/travel/jaipur-premium/hotels/leela-1.webp",
+      "previewOnly": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "leela-2",
+      "hotel": "The Leela Palace Jaipur",
+      "type": "preview-source",
+      "sourcePage": "https://www.theleela.com/the-leela-palace-jaipur/",
+      "sourceUrl": "https://www.theleela.com/prod/content/assets/styles/tl_840_604_webp/public/2024-01/Arevali-pool-view_0.jpg?VersionId=vQLKqRggVlY6U.njz7DQNytZOX4zfsiw&itok=xjgrMZ-V",
+      "frCaption": "Piscine et pavillons du Leela Palace Jaipur",
+      "enCaption": "Pool and landscaped pavilions at The Leela Palace Jaipur",
+      "localPath": "/images/travel/jaipur-premium/hotels/leela-2.webp",
+      "previewOnly": true,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "leela-3",
+      "hotel": "The Leela Palace Jaipur",
+      "type": "preview-source",
+      "sourcePage": "https://www.kiwicollection.com/hotel-detail/the-leela-palace-jaipur",
+      "sourceUrl": "https://cdn.kiwicollection.com/media/room_images/PR240943/xl/240943-maharaja-suite-living-room.jpg",
+      "frCaption": "Salon de la suite Maharaja au Leela Palace Jaipur",
+      "enCaption": "Maharaja Suite living room at The Leela Palace Jaipur",
+      "localPath": "/images/travel/jaipur-premium/hotels/leela-3.webp",
+      "previewOnly": true,
+      "commercialRightsCleared": false
+    }
+  ]
+}

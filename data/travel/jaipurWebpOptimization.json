@@ -1,0 +1,220 @@
+{
+  "total": 21,
+  "landscapes": 9,
+  "hotelPhotos": 12,
+  "originalBytes": 5892232,
+  "totalWebPBytes": 2594042,
+  "publicUseApproved": false,
+  "photos": [
+    {
+      "key": "scene-1",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Hawa_Mahal,_Jaipur,_Rajasthan,_India_in_2026.jpg",
+      "sourceSHA256": "aff724348a266ecd76513648e3df013856b6921be1095d65aa173a45164b4a19",
+      "webpSHA256": "38df07eb7cae56f32149fc2e03ad6df92d20a7229477ff44f2c4c4c69aed0f38",
+      "webpBytes": 259792,
+      "license": "CC BY-SA 4.0",
+      "credit": "Donvikro"
+    },
+    {
+      "key": "scene-2",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Full_image_Amer_fort.jpg",
+      "sourceSHA256": "1f6c63b76bb3c5c87874d1171f4018d97d7df22816f5c78999d84def70695455",
+      "webpSHA256": "e73c39f1757ac18a27b76175f3f17047bbc098815fc09c00dfcdb5eae20131cc",
+      "webpBytes": 126694,
+      "license": "CC BY-SA 4.0",
+      "credit": "Pranay shuklas photography"
+    },
+    {
+      "key": "scene-3",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Jal_Mahal_at_Jaipur_Rajasthan.jpg",
+      "sourceSHA256": "2212a8074ed55781e64e045c5c66ef508b5725dc3c7ea93bbc4720d4bd5b8da4",
+      "webpSHA256": "fc41466e882c64c2acf52fa3dd1669a3d07f1b3645304d90e3306944c771b957",
+      "webpBytes": 90584,
+      "license": "CC0",
+      "credit": "SPD2025"
+    },
+    {
+      "key": "scene-4",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Perspective_view_of_City_palace,_Jaipur.jpg",
+      "sourceSHA256": "a7814d2ac4fabec5d21ad8b8b859415e02198f1503a92ba83fcaf6fa5e9d8588",
+      "webpSHA256": "e5732a12082d152254cba2e8a518763fad1e469edd256fcad418401dcd161a01",
+      "webpBytes": 176378,
+      "license": "CC BY-SA 4.0",
+      "credit": "Mahesh Karnapu"
+    },
+    {
+      "key": "scene-5",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Jantar_mantar_jaipur_rajasthan_india.jpg",
+      "sourceSHA256": "7cf99a7d152b427ac37bad50e3ec3fc9dba6dd9eafe12455d181cb130a11e019",
+      "webpSHA256": "c4ed78240297285349051499503325a7fa2be69f00a0c8dc92609e1f6f0fcda6",
+      "webpBytes": 58284,
+      "license": "CC BY-SA 4.0",
+      "credit": "Laxmilalkumawat"
+    },
+    {
+      "key": "scene-6",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:View_from_Nahargarh_Fort,_Jaipur_-_panoramio.jpg",
+      "sourceSHA256": "8df1bdb9b9001e470c43d48715328d3e0b46b217068678a6565a0d154e27c2d6",
+      "webpSHA256": "c22f6ed8488469e721e92cb4f43eac51f3be04a5af0b9d8efa7ab55a8c9011e4",
+      "webpBytes": 177130,
+      "license": "CC BY-SA 3.0",
+      "credit": "Indrapal Jangid"
+    },
+    {
+      "key": "scene-7",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panna_Meena_Ka_Kund.jpg",
+      "sourceSHA256": "36318ab1ad4f08c4ed0005be75e336f04281b5f649ffc3213e420d0df94ae565",
+      "webpSHA256": "27c0405b59194eaba5e3cad9b32fb54279e638ab6a8f927902fd1bcbda95a48a",
+      "webpBytes": 46588,
+      "license": "CC0",
+      "credit": "Iloveplantsforever"
+    },
+    {
+      "key": "scene-8",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_Hawa_Mahal_of_Jaipur,_Rajasthan,_India.jpg",
+      "sourceSHA256": "6b797ba54f9d09a84241d8f8820197997e14d007ca870c203bdcd35c024342c3",
+      "webpSHA256": "018969f395d8c15bf0c485e6f720bb6664fb3c9ecd24591133be12604a1fe100",
+      "webpBytes": 159012,
+      "license": "CC BY-SA 4.0",
+      "credit": "Mr. Debapriya Hore"
+    },
+    {
+      "key": "scene-9",
+      "localPath": "/images/travel/jaipur-premium/destination/scene-9.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Amer_Fort-Jaipur.jpg",
+      "sourceSHA256": "7f2800ab4707fcea1761eedd4e5fafb04fe45c777a6c4b68e836d2266bb16fa6",
+      "webpSHA256": "dc5771f16565783df4547bbebded26d49d7c93a5cb2335ca5ff53d7ffe6a7373",
+      "webpBytes": 78836,
+      "license": "CC BY-SA 4.0",
+      "credit": "OneuniqueBhakti"
+    },
+    {
+      "key": "rambagh-1",
+      "localPath": "/images/travel/jaipur-premium/hotels/rambagh-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rambagh_Palace_view_from_garden,_July_2016.jpg",
+      "sourceSHA256": "497d67efe8ea754d0d052ae607c28857826ba51294d754f9550ddd5f5341c082",
+      "webpSHA256": "01f2f965c6e273f6dda5666773674ef896788365bee0f53c45a92c1b65fe6185",
+      "webpBytes": 127012,
+      "license": "CC BY-SA 4.0",
+      "credit": "Sunnya343"
+    },
+    {
+      "key": "rambagh-2",
+      "localPath": "/images/travel/jaipur-premium/hotels/rambagh-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rambagh_Palace_hotel_Jaipur_lobby_courtyard.jpg",
+      "sourceSHA256": "13f5454834843248b89efb5f5e141b132fa62b9b9122ed3b3465615a24afaa99",
+      "webpSHA256": "0970690bdc23c251dfd5510e35551b473e39903936d4bb58a928245786fbb2cd",
+      "webpBytes": 188140,
+      "license": "CC BY-SA 4.0",
+      "credit": "Chainwit."
+    },
+    {
+      "key": "rambagh-3",
+      "localPath": "/images/travel/jaipur-premium/hotels/rambagh-3.webp",
+      "sourcePage": "https://barbaraathanassiadis.com/lifestyle/the-maharani-of-jaipur-india",
+      "sourceSHA256": "338b2b3d321fc8b394630212db70d88db0442b749e7f4d82d07db5977f6f43c8",
+      "webpSHA256": "17494a54493b4015ca5b9e7f56eac274a9b4e4c73bce26acb89380e221d568cf",
+      "webpBytes": 145522,
+      "license": null,
+      "credit": "Rambagh Palace Jaipur"
+    },
+    {
+      "key": "oberoi-1",
+      "localPath": "/images/travel/jaipur-premium/hotels/oberoi-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Raj_Vilas,_Rajastan.jpg",
+      "sourceSHA256": "394aa77a23f4b19a5a8d6f36ee0bfb6da42cc057f5e614c0c586b7ab2d16d2d7",
+      "webpSHA256": "8fd2b108919082f041786ef7bce264a03fdff8bbf332379963bde2b999d4f6ee",
+      "webpBytes": 176114,
+      "license": "Public domain",
+      "credit": "Gryffindor"
+    },
+    {
+      "key": "oberoi-2",
+      "localPath": "/images/travel/jaipur-premium/hotels/oberoi-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Raj_Vilas2,_Rajastan.jpg",
+      "sourceSHA256": "e54877d51267b93d07709ed078bf996cd7188a9a73d8541a9487f14c7349197a",
+      "webpSHA256": "6423a21903210dc45ca840e79c2b53d74183e206b63a50c654971a36ad80bfff",
+      "webpBytes": 87944,
+      "license": "Public domain",
+      "credit": "Gryffindor"
+    },
+    {
+      "key": "oberoi-3",
+      "localPath": "/images/travel/jaipur-premium/hotels/oberoi-3.webp",
+      "sourcePage": "https://www.oberoihotels.com/hotels-in-jaipur-rajvilas-resort/accommodation/premier-room/",
+      "sourceSHA256": "7d620c4dce16f6fab398711e67cca5b8b222a0a96a238ebd59c4e39a568f090e",
+      "webpSHA256": "2c2c058e413880a9937bfa7301bb36589ab221d864921b643f379396f7772d8b",
+      "webpBytes": 64926,
+      "license": null,
+      "credit": "The Oberoi Rajvilas Jaipur"
+    },
+    {
+      "key": "raffles-1",
+      "localPath": "/images/travel/jaipur-premium/hotels/raffles-1.webp",
+      "sourcePage": "https://www.cntraveler.com/gallery/india-top-hotels",
+      "sourceSHA256": "da286d4d42291c9bb057c8319eb9f6a53cd4db214287486a2fcd7c33a627ee59",
+      "webpSHA256": "7871ad5ad69cc86947318ae4844125977ee76b9f856d37301380c997d79d8c35",
+      "webpBytes": 158330,
+      "license": null,
+      "credit": "Raffles Jaipur"
+    },
+    {
+      "key": "raffles-2",
+      "localPath": "/images/travel/jaipur-premium/hotels/raffles-2.webp",
+      "sourcePage": "https://www.raffles.com/jaipur/experiences/A-Journey-Through-Time/",
+      "sourceSHA256": "a1eebd804d632fe66507f5254c68dc33e149dc60d1a24681189bd6b8c72c83cd",
+      "webpSHA256": "d56261d4f5d015ca49a247c137bf481b933c5e2561ab28ca534b8b4485bb4c2c",
+      "webpBytes": 61610,
+      "license": null,
+      "credit": "Raffles Jaipur"
+    },
+    {
+      "key": "raffles-3",
+      "localPath": "/images/travel/jaipur-premium/hotels/raffles-3.webp",
+      "sourcePage": "https://www.raffles.com/jaipur/gallery/",
+      "sourceSHA256": "b8acb82d9dfc6245749ea7ba3dbf2c953ddf1cb7fec335d30e4a38f577549e82",
+      "webpSHA256": "a6a95768c1fa20ac1483fe1c927a8ee6852408bed8e2dc827d05bd32de578273",
+      "webpBytes": 112062,
+      "license": null,
+      "credit": "Raffles Jaipur"
+    },
+    {
+      "key": "leela-1",
+      "localPath": "/images/travel/jaipur-premium/hotels/leela-1.webp",
+      "sourcePage": "https://www.theleela.com/the-leela-palace-jaipur",
+      "sourceSHA256": "d2aaaf142eaf97fea6e07b6f76437f76c3821a43f26ea8e3e515383a69038f60",
+      "webpSHA256": "3e6bd62028b38b536b94e2a67f66863eb8a32b41b3288e35ad61755fabc88ab8",
+      "webpBytes": 97612,
+      "license": null,
+      "credit": "The Leela Palace Jaipur"
+    },
+    {
+      "key": "leela-2",
+      "localPath": "/images/travel/jaipur-premium/hotels/leela-2.webp",
+      "sourcePage": "https://www.theleela.com/the-leela-palace-jaipur/",
+      "sourceSHA256": "ec6b1342501211dafb785ab4d95d98aa8ce0fc1862867038f5dbf2a67b106d1f",
+      "webpSHA256": "9fb33365fdceaac2ea038818b344cb65e06714263e7c122a950fc55f28a2be81",
+      "webpBytes": 96180,
+      "license": null,
+      "credit": "The Leela Palace Jaipur"
+    },
+    {
+      "key": "leela-3",
+      "localPath": "/images/travel/jaipur-premium/hotels/leela-3.webp",
+      "sourcePage": "https://www.kiwicollection.com/hotel-detail/the-leela-palace-jaipur",
+      "sourceSHA256": "3ea1b40cf91ab60d4f9e8f1714b98c3d5fffa737328c7c3ca353a6dcb67108a9",
+      "webpSHA256": "fe042c3aa7364a7b6083d4efec530d91df2cd28f4683793ae07caf2de50f7cf2",
+      "webpBytes": 105292,
+      "license": null,
+      "credit": "The Leela Palace Jaipur"
+    }
+  ]
+}

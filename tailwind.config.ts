@@ -16,20 +16,20 @@ const config: Config = {
       },
       colors: {
         ivory: {
-          DEFAULT: 'hsl(45, 30%, 96%)',
-          dark: 'hsl(42, 20%, 90%)',
+          DEFAULT: '#f5f5f3',
+          dark: '#ececea',
         },
         navy: {
-          DEFAULT: 'hsl(220, 45%, 12%)',
-          mid: 'hsl(220, 35%, 20%)',
-          light: 'hsl(220, 25%, 35%)',
+          DEFAULT: '#193344',
+          mid: '#25485e',
+          light: '#496577',
         },
         gold: {
-          DEFAULT: 'hsl(42, 65%, 52%)',
-          light: 'hsl(42, 55%, 68%)',
-          dark: 'hsl(38, 70%, 38%)',
+          DEFAULT: '#193344',
+          light: '#496577',
+          dark: '#193344',
         },
-        charcoal: 'hsl(220, 15%, 25%)',
+        charcoal: '#202629',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -82,7 +82,7 @@ const config: Config = {
       boxShadow: {
         'luxury': '0 4px 32px -8px rgba(0,0,0,0.12)',
         'card': '0 2px 16px -4px rgba(0,0,0,0.08)',
-        'nav': '0 1px 0 0 hsl(42, 15%, 85%)',
+        'nav': '0 1px 0 0 #e1e5e5',
       },
       keyframes: {
         'accordion-down': {

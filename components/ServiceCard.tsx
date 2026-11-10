@@ -33,20 +33,20 @@ export function ServiceCard({ service, locale }: ServiceCardProps) {
   const href = getLocalePath(locale, targetSlug);
 
   return (
-    <article className="card-service">
+    <article className="group card-service">
       <div className="flex items-start gap-5">
-        <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center border border-[hsl(42,65%,52%)]/30 group-hover:border-[hsl(42,65%,52%)] transition-colors duration-300">
+        <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center border border-[#e1e5e5] group-hover:border-[#193344] transition-colors duration-300">
           <Icon
             size={18}
             strokeWidth={1.5}
-            className="text-[hsl(42,65%,45%)] group-hover:text-[hsl(42,65%,38%)] transition-colors duration-300"
+            className="text-[#193344] group-hover:text-[#193344] transition-colors duration-300"
           />
         </div>
         <div className="flex-1 min-w-0">
-          <h3 className="text-[hsl(220,45%,12%)] font-serif text-lg mb-2 leading-snug">
+          <h3 className="text-[#202629] font-sans font-normal text-lg mb-2 leading-snug">
             {service.titles[locale]}
           </h3>
-          <p className="text-[hsl(220,10%,50%)] text-sm leading-relaxed mb-5">
+          <p className="text-[#53616b] text-sm leading-relaxed mb-5">
             {service.descriptions[locale]}
           </p>
           <Link
@@ -55,7 +55,7 @@ export function ServiceCard({ service, locale }: ServiceCardProps) {
             aria-label={`${t(locale, 'common.learn_more')} — ${service.titles[locale]}`}
           >
             {t(locale, 'common.learn_more')}
-            <span className="text-[hsl(42,65%,52%)] ml-1" aria-hidden="true">→</span>
+            <span className="text-[#193344] ml-1" aria-hidden="true">→</span>
           </Link>
         </div>
       </div>

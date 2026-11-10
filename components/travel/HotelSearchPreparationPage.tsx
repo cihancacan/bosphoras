@@ -27,15 +27,16 @@ export function HotelSearchPreparationPage({ locale, searchParams = {} }: { loca
   const selection = { hotel: typeof searchParams.hotel === 'string' ? searchParams.hotel : undefined, destination: typeof searchParams.destination === 'string' ? searchParams.destination : undefined };
   const initialUrl = getNuiteeReservationStart(locale, selection);
   if ((searchParams.hotel || searchParams.destination) && !initialUrl) notFound();
-  // Preserve existing verified hotel and destination links without the intermediary form.
+  // Verified hotel and destination pages still deep-link to their exact supplier URL.
   if (initialUrl) redirect(initialUrl);
+  // Legacy /travel/search links must not mount a second form before the supplier.
   const worldwideUrl = getNuiteeWorldwideSearch(locale);
   if (worldwideUrl) redirect(worldwideUrl);
   return <div lang={locale} className={s.page}>
     <TravelHeader locale={locale} slug="search" limitedLocales />
     <main>
       {live ? <HotelReservationSearch key={`${locale}:${initialUrl || 'search'}`} locale={locale} origin={nuiteeLaunch.origin} initialUrl={initialUrl} /> : <section className={s.disclosure}><h1>{fr ? 'Les réservations sont momentanément indisponibles.' : 'Bookings are temporarily unavailable.'}</h1><Link href={travelHref(locale,'hotels')}>{fr ? 'Explorer nos guides' : 'Explore our guides'}</Link></section>}
-      <section className={s.disclosure} aria-labelledby="booking-role-title"><div><h2 id="booking-role-title">{fr ? 'Une réservation en toute transparence.' : 'Booking with clarity.'}</h2><p>{fr ? 'Le moteur et la réservation sont opérés par Nuitée Travel Limited, qui encaisse le paiement et assure confirmation, modifications, annulations, remboursements et assistance voyageurs. Bosphoras est un apporteur d’affaires et peut percevoir une commission. Les tarifs et conditions du séjour sont présentés par Nuitée avant paiement.' : 'The booking engine is operated by Nuitée Travel Limited, which collects payment and handles confirmation, changes, cancellations, refunds and traveler support. Bosphoras is a referral service and may earn a commission. Nuitée presents stay prices and conditions before payment.'}</p></div></section>
+      <section className={s.disclosure} aria-labelledby="booking-role-title"><div><h2 id="booking-role-title">{fr ? 'Une réservation en toute transparence.' : 'Booking with clarity.'}</h2><p>{fr ? 'Le moteur et la réservation sont opérés par Nuitée Travel Limited, qui encaisse le paiement et assure confirmation, modifications, annulations, remboursements et assistance voyageurs. Les tarifs et conditions du séjour sont présentés par Nuitée avant paiement.' : 'The booking engine is operated by Nuitée Travel Limited, which collects payment and handles confirmation, changes, cancellations, refunds and traveler support. Nuitée presents stay prices and conditions before payment.'}</p></div></section>
     </main>
     <footer className={s.footer}><span>© Bosphoras · Luxury Stays</span><nav aria-label={fr ? 'Informations et assistance' : 'Information and support'}><Link href="/mentions-legales">{fr ? 'Mentions légales' : 'Legal notice'}</Link><Link href="/confidentialite">{fr ? 'Confidentialité' : 'Privacy'}</Link><a href={`${nuiteeLaunch.origin}/help-center`} target="_blank" rel="noopener noreferrer">{fr ? 'Assistance Nuitée' : 'Nuitée support'} ↗</a></nav></footer>
   </div>;

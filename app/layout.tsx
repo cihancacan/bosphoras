@@ -5,8 +5,22 @@ import './header-menu.css';
 import './bosphoras-editorial.css';
 import type { Metadata } from 'next';
 import Script from 'next/script';
+import { Inter, Jost } from 'next/font/google';
 import { DocumentLanguage } from '@/components/DocumentLanguage';
 import { getPricingAmount } from '@/data/pricing';
+
+const inter = Inter({
+  subsets: ['latin', 'latin-ext', 'cyrillic'],
+  display: 'swap',
+  variable: '--font-inter',
+});
+
+const brandFont = Jost({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+  variable: '--font-bosphoras-logo',
+});
 
 const defaultDescription =
   'Bosphoras accompagne investisseurs, entrepreneurs et familles exigeantes en Turquie avec un bureau privé unique : installation, fiscalité, immobilier, santé, conciergerie VIP et accès confidentiel.';
@@ -53,8 +67,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fr" suppressHydrationWarning>
-      <body className="bg-[hsl(45,30%,96%)] font-sans antialiased text-[hsl(220,45%,12%)]">
+    <html lang="fr" className={`${inter.variable} ${brandFont.variable}`} suppressHydrationWarning>
+      <body className="bg-white font-sans antialiased text-[#202629]">
         <DocumentLanguage />
         <ConversionTracking />
         {children}
