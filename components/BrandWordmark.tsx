@@ -15,8 +15,8 @@ export function BrandWordmark({ variant = 'primary' }: { variant?: 'primary' | '
         <>
           <span className="sr-only">Luxury Stays</span>
           <span aria-hidden="true" className="mt-[0.37rem] flex w-full justify-between font-sans text-[0.57rem] font-normal uppercase leading-none text-[#53616b] md:text-[0.65rem]">
-            {Array.from('LUXURYSTAYS').map((letter, index) => (
-              <span key={index}>{letter}</span>
+            {Array.from('LUXURY STAYS').map((letter, index) => (
+              <span key={index}>{letter === ' ' ? '\u00a0' : letter}</span>
             ))}
           </span>
         </>
