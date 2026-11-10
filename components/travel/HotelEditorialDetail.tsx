@@ -113,11 +113,7 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
             </figure>
             <div>
               <p className="text-base leading-8 text-[#475964]">{fr ? localStory.fr : localStory.en}</p>
-              <p className="mt-6 border-l-2 border-[#193344] pl-4 text-sm leading-7 text-[#647078]">
-                {fr
-                  ? 'Vue de quartier à titre illustratif. La photographie ne représente pas la vue depuis la chambre ni un équipement de l’hôtel.'
-                  : 'Area photograph for context only. It does not depict a guaranteed guest-room view or an amenity of the hotel.'}
-              </p>
+
             </div>
           </div>
         </section>
@@ -138,7 +134,7 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
         <div role="dialog" aria-modal="true" aria-label={fr ? 'Photographie agrandie' : 'Enlarged photograph'}
           className="fixed inset-0 z-[100] flex flex-col bg-[#0b161f]/95 p-4 text-white sm:p-8">
           <div className="flex items-center justify-between gap-4">
-            <p className="text-sm">{active+1} / {photos.length} · {fr ? photos[active].fr : photos[active].en}</p>
+            <p className="text-sm">{active + 1} / {photos.length}</p>
             <button autoFocus type="button" onClick={() => setEnlarged(false)}
               className="border border-white/50 px-5 py-3 text-sm">{fr ? 'Fermer' : 'Close'} ✕</button>
           </div>

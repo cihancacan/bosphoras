@@ -483,7 +483,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             return photo && confirmedSanMiguelAssets.has(photo.src) &&
               <article key={view.key} className="bg-white p-4 shadow-sm sm:p-5">
                 <CityPhoto photo={photo} locale={locale}/>
-                <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?view.frTitle:view.enTitle}</h3>
               </article>;
           })}
         </div>
@@ -503,7 +502,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Rajasthan · du désert aux palais':'Rajasthan · from desert to palaces'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Jodhpur, Jaisalmer, Ranthambore : neuf regards sur un Rajasthan pluriel.':'Jodhpur, Jaisalmer, Ranthambore: nine authentic Rajasthan perspectives.'}</h2>
-        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?"Neuf photographies de lieux réels, avec leurs sources et crédits. Les vues d’hôtels ne constituent pas une garantie de chambre.":"Nine sourced and credited real locations. Hotel pictures never guarantee an exact room view."}</p>
+        
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {([
             {key:'scene-1',frTitle:'Mehrangarh et ville bleue',enTitle:'Mehrangarh and Blue City'},
@@ -519,7 +518,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             const photo=city.photos[entry.key];
             return photo && confirmedRajasthanPreviewAssets.has(photo.src) && <article key={entry.key} className="bg-white p-4 shadow-sm sm:p-5">
               <CityPhoto photo={photo} locale={locale}/>
-              <h3 className="mt-5 font-sans font-normal text-xl text-[#19323e]">{fr?entry.frTitle:entry.enTitle}</h3>
             </article>;
           })}
         </div>
@@ -529,7 +527,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Rajasthan · Udaipur et ses lacs':'Rajasthan · Udaipur and the lakes'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Palais de marbre, ghats de Pichola et reliefs des Aravalli.':'Marble palaces, Pichola ghats and the Aravalli hills.'}</h2>
-        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Neuf photographies authentiques de la destination, sourcées et attribuées : ce ne sont ni des images d’une chambre précise ni des vues garanties.':'Nine sourced, credited photographs of actual Udaipur landmarks, not a guarantee of any specific room outlook.'}</p>
+        
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {([
             {key:'scene-1',frTitle:'Traversée de Pichola',enTitle:'Crossing Lake Pichola'},
@@ -545,7 +543,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             const photo=city.photos[entry.key];
             return photo && confirmedUdaipurPreviewAssets.has(photo.src) && <article key={entry.key} className="bg-white p-4 shadow-sm sm:p-5">
               <CityPhoto photo={photo} locale={locale}/>
-              <h3 className="mt-5 font-sans font-normal text-xl text-[#19323e]">{fr?entry.frTitle:entry.enTitle}</h3>
             </article>;
           })}
         </div>
@@ -555,7 +552,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Sentosa · trois plages et deux histoires':'Sentosa · beaches, woods and heritage'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Palawan, Siloso, Fort Siloso et la marina.':'Palawan, Siloso, Fort Siloso and the marina.'}</h2>
-        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Neuf vues photographiées sur l’île, sourcées et attribuées. Ces paysages ne sont pas des vues promises depuis les chambres ou villas des hôtels.':'Nine authentic photographs of the island, sourced and attributed. These landscapes do not guarantee the view from a particular hotel room or villa.'}</p>
+        
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {([
             {key:'scene-1',frTitle:'Palawan Beach',enTitle:'Palawan Beach'},
@@ -571,7 +568,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             const photo=city.photos[entry.key];
             return photo && confirmedSentosaPreviewAssets.has(photo.src) && <article key={entry.key} className="bg-white p-4 shadow-sm sm:p-5">
               <CityPhoto photo={photo} locale={locale}/>
-              <h3 className="mt-5 font-sans font-normal text-xl text-[#19323e]">{fr?entry.frTitle:entry.enTitle}</h3>
             </article>;
           })}
         </div>
@@ -581,7 +577,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Singapour · skyline, jardins et héritage':'Singapore · skyline, gardens and heritage'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'De Marina Bay aux jardins tropicaux et aux quartiers historiques.':'From Marina Bay to tropical gardens and heritage quarters.'}</h2>
-        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Neuf photographies authentiques de Singapour, sourcées et attribuées. Il ne s’agit pas des vues garanties depuis les chambres.':'Nine sourced and credited photographs of real Singapore, not promised views from individual guest rooms.'}</p>
+        
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {([
             {key:'scene-1',frTitle:'Marina Bay en plein jour',enTitle:'Marina Bay in daylight'},
@@ -597,7 +593,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             const photo=city.photos[entry.key];
             return photo && confirmedSingaporePreviewAssets.has(photo.src) && <article key={entry.key} className="bg-white p-4 shadow-sm sm:p-5">
               <CityPhoto photo={photo} locale={locale}/>
-              <h3 className="mt-5 font-sans font-normal text-xl text-[#19323e]">{fr?entry.frTitle:entry.enTitle}</h3>
             </article>;
           })}
         </div>
@@ -607,7 +602,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Phu Quoc · paysages, plages et îlots':'Phu Quoc · beaches, coast and islands'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'L’île authentique, de Sao Beach aux îlots du sud.':'The island itself, from Sao Beach to the southern islets.'}</h2>
-        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Neuf photographies géographiques réelles sont sourcées et attribuées. Aucune ne garantit la vue depuis la catégorie de chambre choisie.':'Nine genuine geographic photographs are sourced and credited. None guarantees the view from an individual hotel room.'}</p>
+        
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {([
             {key:'scene-3',frTitle:'Une plage de Phu Quoc',enTitle:'Phu Quoc beach'},
@@ -623,7 +618,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             const photo=city.photos[entry.key];
             return photo && confirmedPhuQuocPreviewAssets.has(photo.src) && <article key={entry.key} className="bg-white p-4 shadow-sm sm:p-5">
               <CityPhoto photo={photo} locale={locale}/>
-              <h3 className="mt-5 font-sans font-normal text-xl text-[#19323e]">{fr?entry.frTitle:entry.enTitle}</h3>
             </article>;
           })}
         </div>
@@ -633,7 +627,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#886e47]">{fr?'Hội An · ville patrimoniale et rivière':'Hoi An · heritage town and river'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'La rivière Thu Bồn, les façades anciennes et les ateliers.':'The Thu Bon River, centuries-old streets and craft heritage.'}</h2>
-        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Trois paysages photographiés sur place, sourcés et attribués. Ces vues d’Hội An ne sont pas des vues garanties depuis les chambres des hôtels.':'Three authentic images of Hoi An itself, each sourced and credited. They are not guarantees of a hotel room outlook.'}</p>
+        
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {([
             {key:'scene-3',frTitle:'Le fleuve Thu Bồn',enTitle:'Thu Bon River'},
@@ -643,7 +637,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             const photo=city.photos[entry.key];
             return photo && confirmedHoiAnPreviewAssets.has(photo.src) && <article key={entry.key} className="bg-white p-4 shadow-sm sm:p-5">
               <CityPhoto photo={photo} locale={locale}/>
-              <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?entry.frTitle:entry.enTitle}</h3>
             </article>;
           })}
         </div>
@@ -653,7 +646,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#82694a]">{fr?'Da Nang · plages, rivière et montagne':'Da Nang · ocean, river and mountains'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'De My Khe au pont du Dragon et aux Montagnes de Marbre.':'From My Khe to Dragon Bridge and the Marble Mountains.'}</h2>
-        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Trois panoramas authentiques, sourcés et attribués, qui montrent des lieux réels de Da Nang. Les vues photographiées ne sont pas promises depuis toutes les chambres des hôtels.':'Three genuine, independently attributed and reviewed Da Nang scenes. A destination photograph is not a promise of any particular guest-room view.'}</p>
+        
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {([
             {key:'scene-1',frTitle:'My Khe · la plage',enTitle:'My Khe · the shoreline'},
@@ -663,7 +656,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             const pic=city.photos[entry.key];
             return pic && confirmedDaNangPreviewAssets.has(pic.src) && <article key={entry.key} className="bg-white p-4 shadow-sm sm:p-5">
               <CityPhoto photo={pic} locale={locale}/>
-              <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?entry.frTitle:entry.enTitle}</h3>
             </article>;
           })}
         </div>
@@ -683,7 +675,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             const pic=city.photos[v.key];
             return pic && confirmedVinhHyBayPreviewAssets.has(pic.src) && <article key={v.key} className="bg-white p-4 shadow-sm sm:p-5">
               <CityPhoto photo={pic} locale={locale}/>
-              <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?v.frTitle:v.enTitle}</h3>
             </article>;
           })}
         </div>
@@ -693,7 +684,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#193344]">{fr?'Hakone · montagnes, vapeur et lacs':'Hakone · mountain, steam and lakes'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Le lac Ashi, Owakudani et les jardins de Gora.':'Lake Ashi, Owakudani and Gora gardens.'}</h2>
-        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Trois photographies de lieux réels, distincts des chambres des ryokans. Le mont Fuji ne se dévoile qu’avec les conditions météorologiques favorables.':'Three authentic local photographs, not hotel room views. Mount Fuji appears only when visibility and weather permit.'}</p>
+        
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {([
             {key:'scene-1',frTitle:'Lac Ashi · mont Fuji',enTitle:'Lake Ashi · Mount Fuji'},
@@ -703,7 +694,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             const pic=city.photos[v.key];
             return pic && confirmedHakonePreviewAssets.has(pic.src) && <article key={v.key} className="bg-white p-4 shadow-sm sm:p-5">
               <CityPhoto photo={pic} locale={locale}/>
-              <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?v.frTitle:v.enTitle}</h3>
             </article>;
           })}
         </div>
@@ -723,7 +713,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             const pic=city.photos[v.key];
             return pic && confirmedKyotoPreviewAssets.has(pic.src) && <article key={v.key} className="bg-white p-4 shadow-sm sm:p-5">
               <CityPhoto photo={pic} locale={locale}/>
-              <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?v.frTitle:v.enTitle}</h3>
             </article>;
           })}
         </div>
@@ -733,7 +722,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#193344]">{fr?'Tokyo · les visages d’une métropole':'Tokyo · three faces of the capital'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Entre les jardins impériaux et les lumières de Shinjuku.':'From Imperial Palace gardens to Shinjuku lights.'}</h2>
-        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Trois vues authentiques de quartiers différents : Tokyo ne s’apprécie pas depuis une seule fenêtre. Aucune image ne représente une vue garantie depuis chaque suite.':'Three genuine district photographs, not a claim that any hotel suite guarantees these views.'}</p>
+        
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {([
             {key:'scene-1',frTitle:'Otemachi · jardins impériaux',enTitle:'Otemachi · Imperial Palace'},
@@ -743,7 +732,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             const pic=city.photos[v.key];
             return pic && confirmedTokyoPreviewAssets.has(pic.src) && <article key={v.key} className="bg-white p-4 shadow-sm sm:p-5">
               <CityPhoto photo={pic} locale={locale}/>
-              <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?v.frTitle:v.enTitle}</h3>
             </article>;
           })}
         </div>
@@ -764,7 +752,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             return photo && confirmedPalawanPreviewAssets.has(photo.src) &&
               <article key={view.key} className="bg-white p-4 shadow-sm sm:p-5">
                 <CityPhoto photo={photo} locale={locale}/>
-                <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?view.frTitle:view.enTitle}</h3>
               </article>;
           })}
         </div>
@@ -781,7 +768,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
               const pic=city.photos[v.key];
               return pic && confirmedSumbaAssets.has(pic.src) && <article key={v.key} className="bg-white p-4 shadow-sm sm:p-5">
                 <CityPhoto photo={pic} locale={locale}/>
-                <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?v.frTitle:v.enTitle}</h3>
               </article>;
           })}
         </div>
@@ -798,7 +784,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
               const pic=city.photos[v.key];
               return pic && confirmedChiangMaiAssets.has(pic.src) && <article key={v.key} className="bg-white p-4 shadow-sm sm:p-5">
                 <CityPhoto photo={pic} locale={locale}/>
-                <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?v.frTitle:v.enTitle}</h3>
               </article>;
           })}
         </div>
@@ -815,7 +800,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
               const photo=city.photos[v.key];
               return photo && confirmedBangkokAssets.has(photo.src) && <article key={v.key} className="bg-white p-4 shadow-sm sm:p-5">
                 <CityPhoto photo={photo} locale={locale}/>
-                <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?v.frTitle:v.enTitle}</h3>
               </article>;
           })}
         </div>
@@ -831,7 +815,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             const p=city.photos[v.key];
             return p && confirmedKohYaoNoiAssets.has(p.src) && <article key={v.key} className="bg-white p-4 shadow-sm sm:p-5">
               <CityPhoto photo={p} locale={locale}/>
-              <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?v.frTitle:v.enTitle}</h3>
             </article>;
           })}
         </div>
@@ -851,7 +834,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             return photo && confirmedKrabiAssets.has(photo.src) &&
               <article key={view.key} className="bg-white p-4 shadow-sm sm:p-5">
                 <CityPhoto photo={photo} locale={locale}/>
-                <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?view.frTitle:view.enTitle}</h3>
               </article>;
           })}
         </div>
@@ -877,7 +859,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             return photo && confirmedMayakobaPreviewAssets.has(photo.src) &&
               <article key={view.key} className="bg-white p-4 shadow-sm sm:p-5">
                 <CityPhoto photo={photo} locale={locale}/>
-                <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?view.frTitle:view.enTitle}</h3>
               </article>;
           })}
         </div>
@@ -903,7 +884,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             return photo && confirmedLosAngelesPreviewAssets.has(photo.src) &&
               <article key={view.key} className="bg-white p-4 shadow-sm sm:p-5">
                 <CityPhoto photo={photo} locale={locale}/>
-                <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?view.frTitle:view.enTitle}</h3>
               </article>;
           })}
         </div>
@@ -929,7 +909,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             return photo && confirmedMiamiPreviewAssets.has(photo.src) &&
               <article key={view.key} className="bg-white p-4 shadow-sm sm:p-5">
                 <CityPhoto photo={photo} locale={locale}/>
-                <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?view.frTitle:view.enTitle}</h3>
               </article>;
           })}
         </div>
