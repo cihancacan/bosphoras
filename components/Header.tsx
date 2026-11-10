@@ -13,7 +13,6 @@ import { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';
 import { globalPropertyHubPaths, propertyHubPaths } from '@/data/propertyDesk';
 import { getNuiteeWhiteLabelSearchHref } from '@/lib/travel/nuiteeWhiteLabel';
 import dynamic from 'next/dynamic';
-import { BrandWordmark } from '@/components/BrandWordmark';
 const SearchOverlay = dynamic(() => import('@/components/SearchOverlay').then((module) => module.SearchOverlay));
 
 interface HeaderProps { locale: Locale; currentPath?: string; localizedPaths?: Partial<Record<Locale, string>>; }
@@ -152,7 +151,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
       <header className="fixed left-0 right-0 top-0 z-50 border-b border-[#e7e8e7] bg-white shadow-[0_2px_12px_rgba(25,51,68,0.04)]">
         <div className="hidden" aria-hidden="true" />
         <div className="container-editorial flex h-[4.65rem] items-center justify-between gap-4 md:h-[4.85rem]">
-          <Link href={getLocalePath(locale, '/')} className="group flex shrink-0 items-center focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#193344]" aria-label="Bosphoras — Accueil"><BrandWordmark /></Link>
+          <Link href={getLocalePath(locale, '/')} className="group flex shrink-0 flex-col leading-none" aria-label="Bosphoras — Accueil"><span className="font-sans text-[1.28rem] font-normal uppercase tracking-[0.22em] text-[#193344] transition-colors duration-200 group-hover:text-[#202629] md:text-[1.56rem]">Bosphoras</span><span className="hidden">{locale === 'fr' && 'Bureau Prive · Turquie'}{locale === 'en' && 'Private Office · Turkey'}{locale === 'ru' && 'Частный Офис · Турция'}{locale === 'ar' && 'مكتب خاص · تركيا'}</span></Link>
           <nav className="hidden min-w-0 items-center gap-3 xl:flex 2xl:gap-4" aria-label="Navigation principale">
             {groups.map((group) => (
               <div key={group.label} className="group relative py-6">
