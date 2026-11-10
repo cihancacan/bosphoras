@@ -11,7 +11,9 @@
     "typecheck": "tsc --noEmit",
     "seo:check": "node -r ./scripts/register-ts.cjs scripts/check-seo.cjs",
     "seo:submit": "node scripts/submit-indexnow.mjs",
-    "partners:check": "node -r ./scripts/register-ts.cjs --test scripts/check-hotel-partners.cjs"
+    "partners:check": "node -r ./scripts/register-ts.cjs --test scripts/check-hotel-partners.cjs",
+    "nuitee:coverage": "node -r ./scripts/register-ts.cjs scripts/nuitee-map-hotels.cjs",
+    "nuitee:resolve": "node -r ./scripts/register-ts.cjs scripts/nuitee-map-hotels.cjs --lookup"
   },
   "dependencies": {
     "@grpc/grpc-js": "^1.14.6",
