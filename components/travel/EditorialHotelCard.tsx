@@ -30,7 +30,7 @@ type EditorialHotelCardProps = {
   locale: 'fr' | 'en';
 };
 
-export function EditorialHotelCard({ hotel, index, locale }: EditorialHotelCardProps) {
+export function EditorialHotelCard({ hotel, locale }: EditorialHotelCardProps) {
   const fr = locale === 'fr';
   const hero = hotelHeroPhoto(hotel.id);
   return (
