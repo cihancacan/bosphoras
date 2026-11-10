@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { EditorialProse } from '@/components/travel/EditorialProse';
 import { HotelPartnerBooking } from '@/components/travel/HotelPartnerBooking';
 import { hotelPartnerKey } from '@/lib/travel/hotelPartners';
 import { hotelHeroPhoto } from '@/data/travel/hotelPhotography';
@@ -39,17 +40,17 @@ export function EditorialHotelCard({ hotel, locale }: EditorialHotelCardProps) {
         <p className="text-xs tracking-wider uppercase text-[#193344] mb-4">{hotel.zone}</p>
         <h3 className="font-sans font-normal text-2xl sm:text-3xl lg:text-[2rem] leading-tight break-words">{hotel.name}</h3>
         {hero && <HotelCardPicture src={hero.src} alt={fr ? hero.fr : hero.en} hotelName={hotel.name} />}
-        <p className="text-[#55656c] leading-7 mt-5">{fr ? hotel.fr : hotel.en}</p>
+        <EditorialProse text={fr ? hotel.fr : hotel.en} className="mt-5 text-base text-[#55656c]" maxChars={265} />
       </div>
       <div className="min-w-0 bg-[#f5f5f3] px-6 py-6 sm:px-9 sm:py-9 flex flex-col">
         <p className="text-xs tracking-wider uppercase text-[#193344] font-semibold">
           {fr ? 'À privilégier pour' : 'Especially suited to'}
         </p>
-        <p className="leading-7 mt-2 font-medium">{fr ? hotel.frBest : hotel.enBest}</p>
+        <EditorialProse text={fr ? hotel.frBest : hotel.enBest} className="mt-3 text-sm font-medium text-[#435761] sm:text-base" maxChars={260} />
         <p className="text-xs tracking-wider uppercase text-[#193344] font-semibold mt-5">
           {fr ? 'À vérifier avant de réserver' : 'Check before booking'}
         </p>
-        <p className="text-sm leading-6 text-[#55656c] mt-2">{fr ? hotel.frWatch : hotel.enWatch}</p>
+        <EditorialProse text={fr ? hotel.frWatch : hotel.enWatch} className="mt-3 text-sm text-[#55656c]" maxChars={245} />
         <Link href={fr ? '/travel/hotels/istanbul/' + hotel.id : '/en/travel/hotels/istanbul/' + hotel.id} className="mt-7 inline-flex w-fit bg-[#193344] px-5 py-3 text-sm font-medium text-white hover:bg-[#285063] focus-visible:outline-2 focus-visible:outline-offset-4">
           {fr ? 'Découvrir la fiche de cet hôtel' : 'Explore this hotel profile'} →
         </Link>

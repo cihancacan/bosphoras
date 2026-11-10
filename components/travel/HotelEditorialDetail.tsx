@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { EditorialProse } from '@/components/travel/EditorialProse';
 import { HotelPartnerBooking } from '@/components/travel/HotelPartnerBooking';
 import { hotelPartnerKey } from '@/lib/travel/hotelPartners';
 import Link from 'next/link';
@@ -50,7 +51,7 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
           </Link>
           <p className="mt-12 text-xs uppercase tracking-[0.2em] text-[#e0e9ee]">{title} · {hotel.zone}</p>
           <h1 className="mt-5 max-w-5xl font-sans font-normal text-4xl leading-tight sm:text-6xl">{hotel.name}</h1>
-          <p className="mt-7 max-w-3xl text-lg leading-8 text-[#d7e0e0]">{fr ? hotel.frBest : hotel.enBest}</p>
+          <EditorialProse text={fr ? hotel.frBest : hotel.enBest} className="mt-7 max-w-3xl text-base text-[#d7e0e0] sm:text-lg" />
         </div>
       </section>
 
@@ -84,11 +85,11 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
         <div className="grid gap-12 lg:grid-cols-[minmax(0,1.6fr)_minmax(270px,1fr)]">
           <article className="max-w-3xl">
             <h2 className="font-sans font-normal text-3xl sm:text-4xl">{fr ? 'Pourquoi cette adresse ?' : 'Why consider this address?'}</h2>
-            <p className="mt-6 text-lg leading-9 text-[#475964]">{fr ? hotel.fr : hotel.en}</p>
+            <EditorialProse text={fr ? hotel.fr : hotel.en} className="mt-6 max-w-2xl text-base text-[#475964] sm:text-lg" />
             <h2 className="mt-12 font-sans font-normal text-2xl">{fr ? 'L’expérience à privilégier' : 'The experience to prioritise'}</h2>
-            <p className="mt-4 leading-8 text-[#475964]">{fr ? hotel.frBest : hotel.enBest}</p>
+            <EditorialProse text={fr ? hotel.frBest : hotel.enBest} className="mt-4 text-base text-[#475964]" />
             <h2 className="mt-12 font-sans font-normal text-2xl">{fr ? 'À vérifier avant la réservation' : 'What to check before booking'}</h2>
-            <p className="mt-4 leading-8 text-[#475964]">{fr ? hotel.frWatch : hotel.enWatch}</p>
+            <EditorialProse text={fr ? hotel.frWatch : hotel.enWatch} className="mt-4 text-base text-[#475964]" />
           </article>
           <aside className="h-fit border border-[#e1e5e5] bg-white p-7">
             <HotelPartnerBooking hotelKey={hotelPartnerKey('istanbul', hotel.id)} locale={locale} />
@@ -112,7 +113,7 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
               
             </figure>
             <div>
-              <p className="text-base leading-8 text-[#475964]">{fr ? localStory.fr : localStory.en}</p>
+              <EditorialProse text={fr ? localStory.fr : localStory.en} className="text-base text-[#475964]" />
 
             </div>
           </div>

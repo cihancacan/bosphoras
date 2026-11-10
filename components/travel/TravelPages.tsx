@@ -45,6 +45,7 @@ import { getNuiteeWhiteLabelSearchHref } from '@/lib/travel/nuiteeWhiteLabel';
 import { travelEditorial } from '@/data/travel/editorial';
 import { IstanbulFlagship } from '@/components/travel/IstanbulFlagship';
 import { FeaturedCityGuide } from '@/components/travel/FeaturedCityGuide';
+import { EditorialProse } from '@/components/travel/EditorialProse';
 import { featuredCityGuide } from '@/data/travel/featuredCityGuides';
 import { kohSamuiFaq } from '@/data/travel/kohSamuiFaq';
 import { stMoritzDraftFaq } from '@/data/travel/stMoritzDraftFaq';
@@ -521,20 +522,20 @@ function Approach({ locale, destination, category }: { locale: TravelLocale; des
   return <div className="grid md:grid-cols-3 gap-6 mt-10">
     <article className="border-t border-[#b7955d] pt-5">
       <h2 className="font-serif text-2xl mb-3">{lens[0]}</h2>
-      <p className="text-[#465968] leading-7">{t.value}</p>
-      {locale === 'en' && <p className="mt-4 text-[#465968] leading-7">{travelEditorial[destination.slug]?.enIntro || destination.angle}</p>}
-      {locale === 'fr' && travelEditorial[destination.slug] && <p className="mt-4 text-[#465968] leading-7">{travelEditorial[destination.slug].frIntro}</p>}
-      <p className="mt-4 text-[#465968] leading-7">{t.approach}</p>
+      <EditorialProse text={t.value} className="text-base text-[#465968]" />
+      {locale === 'en' && <EditorialProse text={travelEditorial[destination.slug]?.enIntro || destination.angle} className="mt-5 text-base text-[#465968]" />}
+      {locale === 'fr' && travelEditorial[destination.slug] && <EditorialProse text={travelEditorial[destination.slug].frIntro} className="mt-5 text-base text-[#465968]" />}
+      <EditorialProse text={t.approach} className="mt-5 text-base text-[#465968]" />
     </article>
     <article className="border-t border-[#b7955d] pt-5">
       <h2 className="font-serif text-2xl mb-3">{lens[1]}</h2>
       <ul className="list-disc list-inside space-y-3 text-[#465968] leading-7">{checks.map(v=><li key={v}>{v}</li>)}</ul>
-      {locale === 'en' && travelEditorial[destination.slug] && <p className="mt-5 text-[#465968] leading-7">{travelEditorial[destination.slug].enDetail}</p>}
-      {locale === 'fr' && travelEditorial[destination.slug] && <p className="mt-5 text-[#465968] leading-7">{travelEditorial[destination.slug].frDetail}</p>}
+      {locale === 'en' && travelEditorial[destination.slug] && <EditorialProse text={travelEditorial[destination.slug].enDetail} className="mt-5 text-base text-[#465968]" />}
+      {locale === 'fr' && travelEditorial[destination.slug] && <EditorialProse text={travelEditorial[destination.slug].frDetail} className="mt-5 text-base text-[#465968]" />}
     </article>
     <article className="border-t border-[#b7955d] pt-5">
       <h2 className="font-serif text-2xl mb-3">{lens[2]}</h2>
-      <p className="text-[#465968] leading-7">{t.draft}</p>
+      <EditorialProse text={t.draft} className="text-base text-[#465968]" />
       <p className="mt-4 text-[#465968] leading-7">{t.independent} · {t.booking}</p>
     </article>
   </div>;
