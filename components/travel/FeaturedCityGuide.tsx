@@ -281,7 +281,7 @@ function HotelTeaser({ guide, locale }: {guide:FeaturedCityGuideData;locale:Lang
             <strong>{fr?'Pour qui ? ':'Best suited to: '}</strong>
             {fr?hotelEditorialByCity[guide.slug][hotel.name].frBest:hotelEditorialByCity[guide.slug][hotel.name].enBest}
           </p>}
-          <div className="mt-auto pt-5"><HotelNuiteeLink hotelKey={hotelPartnerKey(guide.slug, hotel.officialUrl)} locale={locale} /></div>
+          <div className="mt-auto pt-5"><HotelNuiteeLink hotelKey={hotelPartnerKey(guide.slug, hotel.name)} locale={locale} /></div>
         </article>)}
       </div>
     </div>
@@ -314,7 +314,7 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
         <p className="mt-6 border-t border-[#e1e5e5] pt-5 text-sm leading-7 text-[#53616b]">
           <strong>{fr?'Avant de réserver : ':'Before booking: '}</strong>{fr?hotel.frWatch:hotel.enWatch}
         </p>
-        <HotelPartnerBooking hotelKey={hotelPartnerKey(guide.slug, hotel.officialUrl)} locale={locale} />
+        <HotelPartnerBooking hotelKey={hotelPartnerKey(guide.slug, hotel.name)} locale={locale} />
       </article>)}
     </div>
   </section>;
