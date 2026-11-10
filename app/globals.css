@@ -4,20 +4,20 @@
 
 @layer base {
   :root {
-    --ivory: 45 30% 96%;
-    --ivory-dark: 42 20% 90%;
-    --navy: 220 45% 12%;
-    --navy-mid: 220 35% 20%;
-    --charcoal: 220 15% 25%;
-    --gold: 42 65% 52%;
-    --gold-light: 42 55% 68%;
-    --gold-dark: 38 70% 38%;
-    --warm-white: 40 50% 98%;
-    --muted-text: 220 10% 55%;
+    --ivory: 60 9% 96%;
+    --ivory-dark: 60 7% 92%;
+    --navy: 204 46% 18%;
+    --navy-mid: 204 40% 24%;
+    --charcoal: 195 13% 14%;
+    --gold: 204 46% 18%;
+    --gold-light: 204 26% 43%;
+    --gold-dark: 204 46% 18%;
+    --warm-white: 0 0% 100%;
+    --muted-text: 195 7% 43%;
 
-    --font-display: 'Cormorant Garamond', 'Cormorant', 'Bodoni 72', Didot, 'Libre Baskerville', Georgia, 'Times New Roman', serif;
-    --font-serif: 'Cormorant Garamond', 'Cormorant', 'Bodoni 72', Didot, 'Libre Baskerville', Georgia, 'Times New Roman', serif;
-    --font-sans: 'Avenir Next', Inter, 'Helvetica Neue', Arial, system-ui, sans-serif;
+    --font-display: Inter, 'Helvetica Neue', Arial, system-ui, sans-serif;
+    --font-serif: Inter, 'Helvetica Neue', Arial, system-ui, sans-serif;
+    --font-sans: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
 
     --background: var(--ivory);
     --foreground: var(--navy);
@@ -186,4 +186,57 @@
 }
 .bosphoras-desk.desk-dark [class*="shadow-"] {
   --tw-shadow-color: rgba(0,0,0,.35);
+}
+
+
+/* Bosphoras 2026 — unified editorial identity, reference visual #2.
+   Scoped to public-facing pages; the Partner Desk keeps its dedicated styles. */
+:root {
+  --bosphoras-navy: #193344;
+  --bosphoras-white: #ffffff;
+  --bosphoras-offwhite: #f5f5f3;
+  --bosphoras-ink: #202629;
+  --bosphoras-font: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
+body:not(:has(.bosphoras-desk)) {
+  background: var(--bosphoras-white);
+  color: var(--bosphoras-ink);
+  font-family: var(--bosphoras-font);
+}
+body:not(:has(.bosphoras-desk)) h1,
+body:not(:has(.bosphoras-desk)) h2,
+body:not(:has(.bosphoras-desk)) h3,
+body:not(:has(.bosphoras-desk)) .heading-display,
+body:not(:has(.bosphoras-desk)) .heading-serif {
+  font-family: var(--bosphoras-font);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1.13;
+}
+body:not(:has(.bosphoras-desk)) .btn-primary {
+  background: var(--bosphoras-navy);
+  color: var(--bosphoras-white);
+  border-radius: 2px;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 500;
+}
+body:not(:has(.bosphoras-desk)) .btn-outline-gold {
+  border-color: var(--bosphoras-navy);
+  color: var(--bosphoras-navy);
+  border-radius: 2px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+body:not(:has(.bosphoras-desk)) .btn-ghost {
+  color: var(--bosphoras-navy);
+  letter-spacing: 0;
+  text-transform: none;
+}
+body:not(:has(.bosphoras-desk)) .gold-rule {
+  background: var(--bosphoras-navy);
+  opacity: .45;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
