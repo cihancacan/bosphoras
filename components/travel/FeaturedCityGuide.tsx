@@ -39,6 +39,7 @@ import {krabiHotelEditorial, krabiAreaVisuals, confirmedKrabiAssets, krabiPhotoL
 import {sanMiguelDeAllendeDraftFaq} from '@/data/travel/sanMiguelDeAllendeDraftFaq';
 import {sanMiguelHotelEditorial,sanMiguelAreaVisuals,confirmedSanMiguelAssets,sanMiguelPhotoLicenses} from '@/data/travel/sanMiguelDeAllendePremiumEditorial';
 import Image from 'next/image';
+import { EditorialProse } from '@/components/travel/EditorialProse';
 import { HotelNuiteeLink, HotelPartnerBooking } from '@/components/travel/HotelPartnerBooking';
 import { hotelPartnerKey } from '@/lib/travel/hotelPartners';
 import type { BodrumHotelEditorial } from '@/data/travel/bodrumPremiumEditorial';
@@ -276,7 +277,7 @@ function HotelTeaser({ guide, locale }: {guide:FeaturedCityGuideData;locale:Lang
           <span className="text-xs tracking-[.15em] text-[#193344]">{hotel.area}</span>
           <h3 className="mt-4 font-sans font-normal text-2xl">{hotel.name}</h3>
           {Boolean(hotelEditorialByCity[guide.slug]) && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale}/>}
-          <p className="mt-4 text-sm leading-7 text-[#53636a]">{fr?hotel.fr:hotel.en}</p>
+          <EditorialProse text={fr?hotel.fr:hotel.en} className="mt-5 text-sm text-[#53636a]" maxChars={245} />
           {Boolean(hotelEditorialByCity[guide.slug]) && hotelEditorialByCity[guide.slug][hotel.name] && <p className="mt-4 border-t border-[#e1e5e5] pt-4 text-sm leading-7 text-[#53616b]">
             <strong>{fr?'Pour qui ? ':'Best suited to: '}</strong>
             {fr?hotelEditorialByCity[guide.slug][hotel.name].frBest:hotelEditorialByCity[guide.slug][hotel.name].enBest}
@@ -294,26 +295,28 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
     <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl sm:text-5xl">{fr
       ? 'Quatre styles, quatre raisons de choisir.'
       : 'Four distinctive reasons to stay.'}</h2>
-    <p className="mt-6 max-w-3xl text-base leading-8 text-[#52616b]">{fr?guide.hotelIntroFr:guide.hotelIntroEn}</p>
+    <EditorialProse text={fr?guide.hotelIntroFr:guide.hotelIntroEn} className="mt-6 max-w-3xl text-base text-[#52616b]" />
     <div className="mt-9 grid gap-5 md:grid-cols-2">
       {guide.hotels.map((hotel)=><article key={hotel.name} className="flex flex-col border border-[#e1e5e5] bg-white p-7 sm:p-9">
         <p className="text-xs uppercase tracking-[.14em] text-[#193344]">
           {hotel.area}</p>
         <h3 className="mt-4 font-sans font-normal text-3xl">{hotel.name}</h3>
         {Boolean(hotelEditorialByCity[guide.slug]) && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale} expanded />}
-        <p className="mt-6 max-w-prose text-base leading-8 text-[#475862]">{fr?hotel.fr:hotel.en}</p>
+        <EditorialProse text={fr?hotel.fr:hotel.en} className="mt-6 text-base text-[#475862]" />
         {Boolean(hotelEditorialByCity[guide.slug]) && hotelEditorialByCity[guide.slug][hotel.name] && <div className="mt-7 border-t border-[#e1e5e5] pt-6">
           <h4 className="font-sans font-normal text-xl">{fr?'Notre lecture de cette adresse':'Our take on this address'}</h4>
-          <p className="mt-4 max-w-prose text-base leading-8 text-[#51616b]">
-            {fr?hotelEditorialByCity[guide.slug][hotel.name].frStory:hotelEditorialByCity[guide.slug][hotel.name].enStory}
-          </p>
+          <EditorialProse
+            text={fr?hotelEditorialByCity[guide.slug][hotel.name].frStory:hotelEditorialByCity[guide.slug][hotel.name].enStory}
+            className="mt-4 text-base text-[#51616b]"
+          />
           <p className="mt-5 text-sm leading-7 font-medium text-[#193344]">
             {fr?'À privilégier pour : ':'Best for: '}{fr?hotelEditorialByCity[guide.slug][hotel.name].frBest:hotelEditorialByCity[guide.slug][hotel.name].enBest}
           </p>
         </div>}
-        <p className="mt-6 border-t border-[#e1e5e5] pt-5 text-sm leading-7 text-[#53616b]">
-          <strong>{fr?'Avant de réserver : ':'Before booking: '}</strong>{fr?hotel.frWatch:hotel.enWatch}
-        </p>
+        <div className="mt-7 border-t border-[#e1e5e5] pt-5">
+          <h4 className="text-sm font-medium text-[#193344]">{fr?'Avant de réserver':'Before booking'}</h4>
+          <EditorialProse text={fr?hotel.frWatch:hotel.enWatch} className="mt-3 text-sm text-[#53616b]" maxChars={260} />
+        </div>
         <HotelPartnerBooking hotelKey={hotelPartnerKey(guide.slug, hotel.name)} locale={locale} />
       </article>)}
     </div>
@@ -326,7 +329,7 @@ function Advice({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang}) {
       <div>
         <p className="text-xs uppercase tracking-[.2em] text-[#193344]">{fr?'Avant de partir':'Before you travel'}</p>
         <h2 className="mt-4 font-sans font-normal text-3xl sm:text-4xl">{fr?'Les détails qui changent l’expérience.':'Details that change the experience.'}</h2>
-        <p className="mt-5 leading-8 text-[#52636e]">{fr?guide.editorialFr:guide.editorialEn}</p>
+        <EditorialProse text={fr?guide.editorialFr:guide.editorialEn} className="mt-6 text-base text-[#52636e]" />
       </div>
       <div className="bg-white p-7 sm:p-10">
         <h3 className="font-sans font-normal text-2xl">{fr?'Notre liste de vérification':'Our pre-booking checklist'}</h3>
@@ -334,8 +337,8 @@ function Advice({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang}) {
           <span aria-hidden="true" className="font-semibold text-[#193344]">◆</span><span>{item}</span>
         </li>)}</ul>
         <p className="mt-7 border-t border-[#e1e5e5] pt-5 text-sm leading-7 text-[#596a72]">{fr
-          ? 'Les liens des établissements mènent vers leurs informations officielles. Les liens de réservation partenaires sont proposés uniquement après vérification. Le fournisseur gère la réservation et son SAV.'
-          : 'Hotel links lead to official property information. Partner booking links are offered only after verification. The provider handles the booking and its customer service.'}</p>
+          ? 'Les chambres et les conditions se consultent dans notre espace de réservation Nuitée. Le partenaire assure la confirmation et l’assistance du séjour.'
+          : 'Rooms and booking conditions are available through our Nuitée booking space. The partner handles confirmation and stay support.'}</p>
       </div>
     </div>
   </section>;
@@ -355,6 +358,14 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
     ? requestedSecondary : (approvedPhotos.find(photo=>photo.src!==hero?.src) || hero);
   const hubHref=travelHref(locale,'destinations/'+city.slug);
   const hotelsHref=travelHref(locale,'hotels/'+city.slug);
+  const allOtherDestinations = Object.values(featuredCityGuides).filter(other => other.slug !== city.slug);
+  const sameCountry = allOtherDestinations.filter(other => other.country === city.country).slice(0, 6);
+  const selectedDestinations = [
+    ...sameCountry,
+    ...allOtherDestinations.filter(other => other.country !== city.country).slice(0, 6 - sameCountry.length),
+  ];
+  const featuredSlugs = new Set(selectedDestinations.map(other => other.slug));
+  const additionalDestinations = allOtherDestinations.filter(other => !featuredSlugs.has(other.slug));
   return <main className="min-h-screen bg-white text-[#202629]">
     {city.slug==='san-miguel-de-allende' ? <section className="bg-[#f5f5f3] text-[#202629]">
       <div className="mx-auto grid max-w-[1600px] lg:grid-cols-[0.9fr_1.1fr]">
@@ -396,8 +407,11 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           {hotelPage?(city.slug==='mykonos'?(fr?'Hôtels de luxe à Mykonos : quatre adresses d’exception':'Luxury hotels in Mykonos: four exceptional island addresses'):city.slug==='courchevel-1850'?(fr?'Courchevel 1850 : quatre palaces d’exception':'Courchevel 1850: four exceptional alpine palaces'):city.slug==='mustique'?(fr?'Mustique : un hôtel et trois villas de luxe':'Mustique: one hotel and three luxury villas'):city.slug==='porto-cervo'?(fr?'Hôtels de luxe à Porto Cervo : nos quatre adresses iconiques':'Luxury hotels in Porto Cervo: four iconic Sardinian stays'):city.slug==='saint-barthelemy'?(fr?'Hôtels de luxe à Saint-Barth : quatre adresses iconiques':'Luxury hotels in St Barth: four iconic island stays'):city.slug==='los-cabos'?(fr?'Hôtels de luxe à Los Cabos : quatre resorts d’exception':'Luxury hotels in Los Cabos: four exceptional resorts'):city.slug==='maldives'?(fr?'Hôtels de luxe aux Maldives : villas et îles privées d’exception':'Luxury hotels in the Maldives: exceptional private islands and villas'):city.slug==='koh-samui'?(fr?'Hôtels de luxe à Koh Samui : notre sélection d’adresses d’exception':'Luxury hotels in Koh Samui: our curated island collection'):(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.'))
             :(fr?city.headingFr:city.headingEn)}</h1>
         
-        <p className="mt-8 max-w-3xl text-lg leading-8 text-[#202629]">
-          {hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}</p>
+        <EditorialProse
+          text={hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}
+          className="mt-8 max-w-3xl text-base text-[#202629] sm:text-lg"
+          maxChars={280}
+        />
         
         
         
@@ -452,14 +466,14 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl sm:text-5xl">{fr
         ?city.slug==='porto-cervo'?'Une côte mythique, cinq façons de séjourner.':city.slug==='saint-barthelemy'?'Une île, cinq atmosphères à découvrir.':city.slug==='los-cabos'?'Entre désert et océan, cinq paysages à choisir.':city.slug==='maldives'?'Un archipel, plusieurs façons de vivre le luxe.':'Une ville, plusieurs façons de séjourner.'
         :city.slug==='porto-cervo'?'One legendary coast, five ways to stay.':city.slug==='saint-barthelemy'?'One island, five distinct atmospheres.':city.slug==='los-cabos'?'Five distinctive landscapes between desert and sea.':city.slug==='maldives'?'An archipelago, many ways to experience luxury.':'One destination, very different places to stay.'}</h2>
-      <p className="mt-6 max-w-4xl text-base leading-8 text-[#50616b]">{fr?city.editorialFr:city.editorialEn}</p>
+      <EditorialProse text={fr?city.editorialFr:city.editorialEn} className="mt-6 max-w-3xl text-base text-[#50616b]" />
       <div className="mt-10 grid gap-4 md:grid-cols-3">
         {city.areas.map((area,i)=><article key={area.name} className="flex flex-col border border-[#e1e5e5] bg-white p-7">
           
           <h3 className="mt-5 font-sans font-normal text-2xl">{fr?area.name:area.enName}</h3>
           {(city.slug==='jaipur'||city.slug==='galle'||city.slug==='rajasthan'||city.slug==='udaipur'||city.slug==='sentosa'||city.slug==='singapore'||city.slug==='phu-quoc'||city.slug==='hoi-an'||city.slug==='da-nang'||city.slug==='vinh-hy-bay'||city.slug==='hakone'||city.slug==='kyoto'||city.slug==='tokyo'||city.slug==='palawan'||city.slug==='sumba'||city.slug==='chiang-mai'||city.slug==='bangkok'||city.slug==='koh-yao-noi'||city.slug==='krabi'||city.slug==='san-miguel-de-allende'||city.slug==='mayakoba'||city.slug==='los-angeles'||city.slug==='miami'||city.slug==='new-york'||city.slug==='istanbul'||city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo'||city.slug==='mustique'||city.slug==='courchevel-1850'||isAlpineCity(city.slug)||city.slug==='monaco'||city.slug==='saint-jean-cap-ferrat'||city.slug==='cap-dantibes'||city.slug==='lake-como'||city.slug==='capri'||city.slug==='positano'||city.slug==='ravello'||city.slug==='mykonos'||city.slug==='antiparos'||city.slug==='ibiza'||city.slug==='formentera'||city.slug==='deia'||city.slug==='port-andratx'||city.slug==='comporta'||city.slug==='melides'||city.slug==='tivat'||city.slug==='the-hamptons'||city.slug==='palm-beach'||city.slug==='nantucket'||city.slug==='harbour-island'||city.slug==='turks-and-caicos'||city.slug==='canouan'||city.slug==='necker-island'||city.slug==='north-island-seychelles'||city.slug==='pamalican-island'||city.slug==='laucala-island'||city.slug==='jumby-bay'||city.slug==='okavango-delta'||city.slug==='punta-mita'||city.slug==='costa-careyes') && <DestinationAreaPhoto city={city.slug} index={i} locale={locale}/>}
-          <p className="mt-5 text-sm leading-7 text-[#4c606b]">{fr?area.fr:area.en}</p>
-          <p className="mt-auto border-t border-[#e7dfd2] pt-5 text-sm leading-7 text-[#786145]">{fr?area.frWatch:area.enWatch}</p>
+          <EditorialProse text={fr?area.fr:area.en} className="mt-5 text-sm text-[#4c606b]" maxChars={235} />
+          <EditorialProse text={fr?area.frWatch:area.enWatch} className="mt-auto border-t border-[#e1e5e5] pt-5 text-sm text-[#53616b]" maxChars={240} />
         </article>)}
       </div>
     </section>
@@ -1023,7 +1037,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
               {fr?'L’esprit du lieu':'A sense of place'}</p>
             <h2 className="mt-5 font-sans font-normal text-3xl sm:text-4xl">{fr
               ?'L’expérience avant le catalogue.':'Experience before inventory.'}</h2>
-            <p className="mt-6 text-base leading-8 text-[#d2dcdf]">{fr?city.introFr:city.introEn}</p>
+            <EditorialProse text={fr?city.introFr:city.introEn} className="mt-6 max-w-2xl text-base text-[#d2dcdf]" />
             
           </div>
         </div>
@@ -1031,7 +1045,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           {city.experiences.map((experience)=><article key={experience.frTitle} className="border-t border-[#748d9e] pt-6">
             
             <h3 className="mt-4 font-sans font-normal text-2xl">{fr?experience.frTitle:experience.enTitle}</h3>
-            <p className="mt-4 text-sm leading-7 text-[#ccdbdc]">{fr?experience.fr:experience.en}</p>
+            <EditorialProse text={fr?experience.fr:experience.en} className="mt-4 text-sm text-[#ccdbdc]" maxChars={245} />
           </article>)}
         </div>
       </div>
@@ -1047,28 +1061,45 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="mt-8 grid gap-4 md:grid-cols-2">
         {(city.slug==='jaipur'?jaipurDraftFaq:city.slug==='galle'?galleDraftFaq:city.slug==='rajasthan'?rajasthanDraftFaq:city.slug==='udaipur'?udaipurDraftFaq:city.slug==='sentosa'?sentosaDraftFaq:city.slug==='singapore'?singaporeDraftFaq:city.slug==='phu-quoc'?phuQuocDraftFaq:city.slug==='hoi-an'?hoiAnDraftFaq:city.slug==='da-nang'?daNangDraftFaq:city.slug==='vinh-hy-bay'?vinhHyBayDraftFaq:city.slug==='hakone'?hakoneDraftFaq:city.slug==='kyoto'?kyotoDraftFaq:city.slug==='tokyo'?tokyoDraftFaq:city.slug==='palawan'?palawanDraftFaq:city.slug==='sumba'?sumbaDraftFaq:city.slug==='chiang-mai'?chiangMaiDraftFaq:city.slug==='bangkok'?bangkokDraftFaq:city.slug==='koh-yao-noi'?kohYaoNoiDraftFaq:city.slug==='krabi'?krabiDraftFaq:city.slug==='san-miguel-de-allende'?sanMiguelDeAllendeDraftFaq:city.slug==='mayakoba'?mayakobaDraftFaq:city.slug==='los-angeles'?losAngelesDraftFaq:city.slug==='miami'?miamiDraftFaq:city.slug==='new-york'?newYorkDraftFaq:city.slug==='istanbul'?istanbulDestinationFaq:city.slug==='monaco'?monacoDraftFaq:city.slug==='saint-jean-cap-ferrat'?saintJeanCapFerratDraftFaq:city.slug==='cap-dantibes'?capDAntibesDraftFaq:city.slug==='lake-como'?lakeComoDraftFaq:city.slug==='capri'?capriDraftFaq:city.slug==='positano'?positanoDraftFaq:city.slug==='ravello'?ravelloDraftFaq:city.slug==='mykonos'?mykonosDraftFaq:city.slug==='antiparos'?antiparosDraftFaq:city.slug==='ibiza'?ibizaDraftFaq:city.slug==='formentera'?formenteraDraftFaq:city.slug==='deia'?deiaDraftFaq:city.slug==='port-andratx'?portAndratxDraftFaq:city.slug==='comporta'?comportaDraftFaq:city.slug==='melides'?melidesDraftFaq:city.slug==='tivat'?tivatDraftFaq:city.slug==='the-hamptons'?theHamptonsDraftFaq:city.slug==='palm-beach'?palmBeachDraftFaq:city.slug==='nantucket'?nantucketDraftFaq:city.slug==='harbour-island'?harbourIslandDraftFaq:city.slug==='turks-and-caicos'?turksAndCaicosDraftFaq:city.slug==='canouan'?canouanDraftFaq:city.slug==='necker-island'?neckerIslandDraftFaq:city.slug==='north-island-seychelles'?northIslandSeychellesDraftFaq:city.slug==='pamalican-island'?pamalicanIslandDraftFaq:city.slug==='laucala-island'?laucalaIslandDraftFaq:city.slug==='costa-careyes'?costaCareyesDraftFaq:city.slug==='punta-mita'?puntaMitaDraftFaq:city.slug==='okavango-delta'?okavangoDeltaDraftFaq:city.slug==='jumby-bay'?jumbyBayDraftFaq:isAlpineCity(city.slug)?alpineFaqByCity[city.slug]:city.slug==='courchevel-1850'?courchevel1850Faq:city.slug==='mustique'?mustiqueFaq:city.slug==='porto-cervo'?portoCervoFaq:city.slug==='saint-barthelemy'?saintBarthelemyFaq:city.slug==='los-cabos'?losCabosFaq:city.slug==='maldives'?maldivesFaq:kohSamuiFaq)[locale].map(item=><article key={item.q} className="border border-[#e5dbcb] bg-white p-7">
           <h3 className="font-sans font-normal text-xl text-[#173340]">{item.q}</h3>
-          <p className="mt-4 text-sm leading-7 text-[#54666d]">{item.a}</p>
+          <EditorialProse text={item.a} className="mt-4 text-sm text-[#54666d]" maxChars={250} />
         </article>)}
       </div>
     </section>}
     <Advice guide={city} locale={locale}/>
-    <section className="mx-auto max-w-7xl px-5 py-16">
-      <h2 className="font-sans font-normal text-3xl">{fr?'Continuer votre découverte':'Continue exploring'}</h2>
-      <div className="mt-7 grid gap-3 sm:grid-cols-3">
-        {Object.values(featuredCityGuides).filter(other=>other.slug!==city.slug).map(other=>
-          <Link key={other.slug} href={travelHref(locale,'destinations/'+other.slug)}
-            className="border border-[#e4d8c7] bg-white p-6 hover:border-[#bb9964]">
-            <span className="text-xs uppercase tracking-[.15em] text-[#193344]">Bosphoras · Luxury Stays</span>
-            <span className="mt-3 block font-sans font-normal text-2xl">{other.name}</span>
-            <span className="mt-4 block text-xs text-[#566977]">{fr?'Découvrir la destination':'Explore this destination'} →</span>
-          </Link>)}
-        <Link href={travelHref(locale,'hotels/istanbul')}
-          className="border border-[#e4d8c7] bg-white p-6 hover:border-[#bb9964]">
-          <span className="text-xs uppercase tracking-[.15em] text-[#193344]">Bosphoras · Luxury Stays</span>
-          <span className="mt-3 block font-sans font-normal text-2xl">Istanbul</span>
-          <span className="mt-4 block text-xs text-[#566977]">{fr?'Les hôtels du Bosphore':'Bosphorus hotel guide'} →</span>
+    <section className="mx-auto max-w-7xl px-5 py-16 sm:py-20">
+      <div className="flex flex-wrap items-end justify-between gap-5">
+        <h2 className="font-sans font-normal text-3xl sm:text-4xl">{fr?'Continuer votre découverte':'Continue exploring'}</h2>
+        <Link href={travelHref(locale,'destinations')} className="text-sm text-[#193344] underline underline-offset-4">
+          {fr?'Explorer toutes les destinations':'Explore all destinations'}
         </Link>
       </div>
+      <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {selectedDestinations.map(other =>
+          <Link key={other.slug} href={travelHref(locale,'destinations/'+other.slug)}
+            className="border border-[#e1e5e5] bg-[#f5f5f3] p-6 transition-colors hover:border-[#193344]">
+            <span className="block text-xs text-[#53616b]">{other.country}</span>
+            <span className="mt-2 block font-sans text-xl font-normal text-[#202629]">{other.name}</span>
+          </Link>)}
+      </div>
+      {additionalDestinations.length > 0 && (
+        <details className="mt-8 border-t border-[#e1e5e5]">
+          <summary className="cursor-pointer py-5 text-sm font-medium text-[#193344]">
+            {fr?'Voir les autres destinations':'View the other destinations'} ({additionalDestinations.length})
+          </summary>
+          <nav aria-label={fr?'Autres destinations Bosphoras':'Other Bosphoras destinations'}
+            className="grid gap-x-6 gap-y-4 pb-5 sm:grid-cols-2 lg:grid-cols-4">
+            {additionalDestinations.map(other =>
+              <Link key={other.slug} href={travelHref(locale,'destinations/'+other.slug)}
+                className="text-sm leading-6 text-[#53616b] underline-offset-4 hover:text-[#193344] hover:underline">
+                {other.name}
+              </Link>)}
+          </nav>
+        </details>
+      )}
+      <Link href={travelHref(locale,'hotels/istanbul')}
+        className="mt-7 inline-block text-sm text-[#193344] underline underline-offset-4">
+        {fr?'Découvrir les hôtels du Bosphore':'Explore Bosphorus hotels'}
+      </Link>
     </section>
   </main>;
 }
