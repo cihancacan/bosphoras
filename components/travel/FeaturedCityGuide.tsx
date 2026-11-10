@@ -192,7 +192,7 @@ function Caption({ photo, locale }: {photo:FeaturedCityPhoto;locale:Lang}) {
     <a href={photo.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{photo.author}</a>
     {' · '}
     <a href={photo.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{photo.license}</a>
-    {' · '}{locale === 'fr' ? 'Image optimisée en WebP' : 'Optimised WebP photo'}
+    
   </figcaption>;
 }
 function CityPhoto({photo,locale,priority=false}: {photo:FeaturedCityPhoto;locale:Lang;priority?:boolean}) {
@@ -267,7 +267,7 @@ function DestinationAreaPhoto({city,index,locale}: {city:FeaturedCityGuideData['
       {city==='koh-yao-noi' && kohYaoNoiPhotoLicenses[photo.src] && <> · <a href={kohYaoNoiPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{kohYaoNoiPhotoLicenses[photo.src].name}</a></>}
       {city==='krabi' && krabiPhotoLicenses[photo.src] && <> · <a href={krabiPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{krabiPhotoLicenses[photo.src].name}</a></>}
       {city==='san-miguel-de-allende' && sanMiguelPhotoLicenses[photo.src] && <> · <a href={sanMiguelPhotoLicenses[photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{sanMiguelPhotoLicenses[photo.src].name}</a></>}
-      {' · '}{locale==='fr'?'Photographie documentée du secteur':'Documented local-area photograph'}
+      
     </figcaption>
   </figure>;
 }
@@ -377,24 +377,24 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
   const hubHref=travelHref(locale,'destinations/'+city.slug);
   const hotelsHref=travelHref(locale,'hotels/'+city.slug);
   return <main className="min-h-screen bg-white text-[#202629]">
-    {city.slug==='san-miguel-de-allende' ? <section className="bg-[#f4efe5] text-[#182c38]">
+    {city.slug==='san-miguel-de-allende' ? <section className="bg-[#f5f5f3] text-[#202629]">
       <div className="mx-auto grid max-w-[1600px] lg:grid-cols-[0.9fr_1.1fr]">
         <div className="flex flex-col justify-center px-6 py-12 sm:px-12 lg:px-14 lg:py-16">
-          <p className="max-w-md text-[11px] font-semibold uppercase leading-6 tracking-[.2em] text-[#967548]">
+          <p className="max-w-md text-[11px] font-medium uppercase leading-6 tracking-[.15em] text-[#193344]">
             Bosphoras · Luxury Stays<br/>{fr?city.eyebrowFr:city.eyebrowEn}
           </p>
           <h1 className="mt-6 max-w-xl font-sans font-normal text-4xl leading-[1.08] sm:text-5xl xl:text-[56px]">
             {hotelPage?(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.'):(fr?city.headingFr:city.headingEn)}
           </h1>
-          <div className="mt-7 h-px w-14 bg-[#b69a6b]"/>
+          <div className="mt-7 h-px w-14 bg-[#193344]/30"/>
           <p className="mt-7 max-w-lg text-base leading-8 text-[#52616a]">
             {hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <a href={hotelPage?'#selection':'#quartiers'} className="bg-[#182c38] px-5 py-4 text-sm font-semibold text-white hover:bg-[#294653]">
+            <a href={hotelPage?'#selection':'#quartiers'} className="bg-[#193344] px-5 py-4 text-sm font-medium text-white hover:bg-[#25485e]">
               {hotelPage?(fr?'Comparer les quatre adresses':'Compare four hotels'):(fr?'Découvrir les quartiers':'Discover neighbourhoods')} →
             </a>
-            <Link href={hotelPage?hubHref:hotelsHref} className="border-b border-[#9e8155] py-2 text-sm font-medium">
+            <Link href={hotelPage?hubHref:hotelsHref} className="border-b border-[#193344] py-2 text-sm font-medium text-[#193344]">
               {hotelPage?(fr?'Voir le guide de la ville':'Explore the city guide'):(fr?'Voir les hôtels sélectionnés':'See the selected hotels')}
             </Link>
           </div>
@@ -403,7 +403,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           {hero && <Image src={hero.src} alt={fr?hero.fr:hero.en} fill priority sizes="(min-width:1024px) 60vw, 100vw" className="object-cover object-[58%_center]"/>}
         </div>
       </div>
-      <p className="border-t border-[#ddd3c2] px-5 py-4 text-center text-xs text-[#647078]">
+      <p className="border-t border-[#e1e5e5] px-5 py-4 text-center text-xs text-[#53616b]">
         {fr?'Guide indépendant · Aucun prix ni disponibilité en direct à ce stade':'Independent guide · No live rates or availability at this stage'}
       </p>
     </section> : (
@@ -414,12 +414,12 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       </div>
       <div className="relative mx-auto max-w-7xl px-5 pb-28 pt-16 sm:pb-40 sm:pt-28">
         <div className={(city.slug === 'hoi-an'||city.slug === 'da-nang'||city.slug === 'vinh-hy-bay'||city.slug === 'hakone'||city.slug === 'kyoto'||city.slug === 'tokyo'||city.slug === 'palawan'||city.slug === 'sumba'||city.slug === 'chiang-mai'||city.slug === 'bangkok'||city.slug === 'koh-yao-noi'||city.slug === 'krabi'||city.slug === 'mayakoba'||city.slug === 'los-angeles'||city.slug === 'miami'||city.slug === 'new-york'||city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez'||city.slug === 'bali'||city.slug === 'phuket'||city.slug === 'koh-samui'||city.slug === 'maldives'||city.slug === 'los-cabos'||city.slug === 'saint-barthelemy'||city.slug === 'porto-cervo'||city.slug==='mykonos') ? 'max-w-[900px] bg-[#f5f5f3]/90 px-5 py-7 backdrop-blur-[2px] sm:px-10 sm:py-9' : ''}>
-        <p className={(city.slug==='jaipur'||city.slug==='galle'||city.slug==='rajasthan'||city.slug==='udaipur'||city.slug==='sentosa'||city.slug==='singapore'||city.slug==='phu-quoc'||city.slug==='hoi-an'||city.slug==='da-nang'||city.slug==='vinh-hy-bay'||city.slug==='hakone'||city.slug==='kyoto'||city.slug==='tokyo'||city.slug==='palawan'||city.slug==='sumba'||city.slug==='chiang-mai'||city.slug==='bangkok'||city.slug==='koh-yao-noi'||city.slug==='krabi'||city.slug==='mayakoba'||city.slug==='los-angeles'||city.slug==='miami'||city.slug==='new-york') ? 'text-xs font-medium uppercase tracking-[.12em] text-[#193344]' : 'text-xs font-medium uppercase tracking-[.12em] text-[#193344]'}>Bosphoras · Luxury Stays
+        <p className="text-xs font-medium uppercase tracking-[.12em] text-[#193344]">Bosphoras · Luxury Stays
           {' / '}{fr?city.eyebrowFr:city.eyebrowEn}</p>
-        <h1 className={(city.slug === 'hoi-an'||city.slug === 'da-nang'||city.slug === 'vinh-hy-bay'||city.slug === 'hakone'||city.slug === 'kyoto'||city.slug === 'tokyo'||city.slug === 'palawan'||city.slug === 'sumba'||city.slug === 'chiang-mai'||city.slug === 'bangkok'||city.slug === 'koh-yao-noi'||city.slug === 'krabi'||city.slug === 'mayakoba'||city.slug === 'los-angeles'||city.slug === 'miami'||city.slug === 'new-york'||city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez'||city.slug === 'bali'||city.slug === 'phuket'||city.slug === 'koh-samui'||city.slug === 'maldives'||city.slug === 'los-cabos'||city.slug === 'saint-barthelemy'||city.slug === 'porto-cervo'||city.slug==='mykonos') ? 'mt-9 max-w-4xl font-sans font-normal text-4xl leading-[1.12] tracking-[-0.04em] text-[#202629] sm:text-6xl lg:text-7xl' : 'mt-9 max-w-4xl font-sans font-normal text-4xl leading-[1.12] tracking-[-0.04em] text-[#202629] sm:text-6xl lg:text-7xl'}>
+        <h1 className="mt-9 max-w-4xl font-sans font-normal text-4xl leading-[1.12] tracking-[-0.04em] text-[#202629] sm:text-6xl lg:text-7xl">
           {hotelPage?(city.slug==='mykonos'?(fr?'Hôtels de luxe à Mykonos : quatre adresses d’exception':'Luxury hotels in Mykonos: four exceptional island addresses'):city.slug==='courchevel-1850'?(fr?'Courchevel 1850 : quatre palaces d’exception':'Courchevel 1850: four exceptional alpine palaces'):city.slug==='mustique'?(fr?'Mustique : un hôtel et trois villas de luxe':'Mustique: one hotel and three luxury villas'):city.slug==='porto-cervo'?(fr?'Hôtels de luxe à Porto Cervo : nos quatre adresses iconiques':'Luxury hotels in Porto Cervo: four iconic Sardinian stays'):city.slug==='saint-barthelemy'?(fr?'Hôtels de luxe à Saint-Barth : quatre adresses iconiques':'Luxury hotels in St Barth: four iconic island stays'):city.slug==='los-cabos'?(fr?'Hôtels de luxe à Los Cabos : quatre resorts d’exception':'Luxury hotels in Los Cabos: four exceptional resorts'):city.slug==='maldives'?(fr?'Hôtels de luxe aux Maldives : villas et îles privées d’exception':'Luxury hotels in the Maldives: exceptional private islands and villas'):city.slug==='koh-samui'?(fr?'Hôtels de luxe à Koh Samui : notre sélection d’adresses d’exception':'Luxury hotels in Koh Samui: our curated island collection'):(fr?'Hôtels de luxe à '+city.name+' : choisir la bonne adresse.':'Luxury hotels in '+city.name+': choose the right address.'))
             :(fr?city.headingFr:city.headingEn)}</h1>
-        {(city.slug==='istanbul'||city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo'||city.slug==='mustique'||city.slug==='courchevel-1850') && <p className="mt-4 text-xs text-[#efe0c7]">
+        {(city.slug==='istanbul'||city.slug==='bodrum'||city.slug==='antalya'||city.slug==='dubai'||city.slug==='paris'||city.slug==='saint-tropez'||city.slug==='bali'||city.slug==='phuket'||city.slug==='koh-samui'||city.slug==='maldives'||city.slug==='los-cabos'||city.slug==='saint-barthelemy'||city.slug==='porto-cervo'||city.slug==='mustique'||city.slug==='courchevel-1850') && <p className="mt-4 text-xs text-[#53616b]">
           {city.slug==='bodrum'?(fr?'Paysage : une crique de la péninsule de Bodrum':'Landscape: a Bodrum Peninsula cove')
             :city.slug==='antalya'?(fr?'Illustration IA inspirée d’Antalya · Vue artistique, non photographique':'AI illustration inspired by Antalya · Artistic view, not a photograph')
             :city.slug==='dubai'?(fr?'Palm West Beach · plage et skyline dans la lumière dorée':'Palm West Beach · sunny beachfront and golden skyline')
@@ -431,12 +431,12 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           {city.slug==='antalya' ? <span>{hero?.author}</span>
             : hero ? <a href={hero.sourcePage} rel="noopener noreferrer" target="_blank" className="underline underline-offset-2">{hero.author}</a> : null}
         </p>}
-        <p className={(city.slug === 'hoi-an'||city.slug === 'da-nang'||city.slug === 'vinh-hy-bay'||city.slug === 'hakone'||city.slug === 'kyoto'||city.slug === 'tokyo'||city.slug === 'palawan'||city.slug === 'sumba'||city.slug === 'chiang-mai'||city.slug === 'bangkok'||city.slug === 'koh-yao-noi'||city.slug === 'krabi'||city.slug === 'mayakoba'||city.slug === 'los-angeles'||city.slug === 'miami'||city.slug === 'new-york'||city.slug === 'bodrum'||city.slug === 'antalya'||city.slug === 'dubai'||city.slug === 'paris'||city.slug === 'saint-tropez'||city.slug === 'bali'||city.slug === 'phuket'||city.slug === 'koh-samui'||city.slug === 'maldives'||city.slug === 'los-cabos'||city.slug === 'saint-barthelemy'||city.slug === 'porto-cervo'||city.slug==='mykonos') ? 'mt-8 max-w-3xl text-lg leading-8 text-[#202629]' : 'mt-8 max-w-3xl text-lg leading-8 text-[#202629]'}>
+        <p className="mt-8 max-w-3xl text-lg leading-8 text-[#202629]">
           {hotelPage?(fr?city.hotelIntroFr:city.hotelIntroEn):(fr?city.introFr:city.introEn)}</p>
-        {city.slug==='sumba' && hero && <p className="mt-4 text-xs leading-6 text-[#f3dfb9]">{fr?'Photo : ':'Photograph: '}<a href={hero.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.author}</a>{' · '}<a href={hero.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.license}</a>{' · '}{fr?'WebP redimensionnée':'Resized WebP'}</p>}
-        {city.slug==='chiang-mai' && hero && <p className="mt-4 text-xs leading-6 text-[#f3dfb9]">{fr?'Photo : ':'Photograph: '}<a href={hero.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.author}</a>{' · '}<a href={hero.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.license}</a>{' · '}{fr?'WebP redimensionnée':'Resized WebP'}</p>}
-        {city.slug==='bangkok' && hero && <p className="mt-4 text-xs leading-6 text-[#f3dfb9]">{fr?'Photo : ':'Photograph: '}<a href={hero.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.author}</a>{' · '}<a href={hero.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.license}</a>{' · '}{fr?'WebP redimensionnée':'Resized WebP'}</p>}
-        {city.slug==='krabi' && hero && <p className="mt-4 text-xs leading-6 text-[#f3dfb9]">
+        {city.slug==='sumba' && hero && <p className="mt-4 text-xs leading-6 text-[#53616b]">{fr?'Photo : ':'Photograph: '}<a href={hero.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.author}</a>{' · '}<a href={hero.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.license}</a>{' · '}{fr?'WebP redimensionnée':'Resized WebP'}</p>}
+        {city.slug==='chiang-mai' && hero && <p className="mt-4 text-xs leading-6 text-[#53616b]">{fr?'Photo : ':'Photograph: '}<a href={hero.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.author}</a>{' · '}<a href={hero.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.license}</a>{' · '}{fr?'WebP redimensionnée':'Resized WebP'}</p>}
+        {city.slug==='bangkok' && hero && <p className="mt-4 text-xs leading-6 text-[#53616b]">{fr?'Photo : ':'Photograph: '}<a href={hero.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.author}</a>{' · '}<a href={hero.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.license}</a>{' · '}{fr?'WebP redimensionnée':'Resized WebP'}</p>}
+        {city.slug==='krabi' && hero && <p className="mt-4 text-xs leading-6 text-[#53616b]">
           {fr?'Image : ':'Photograph: '}
           <a href={hero.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.author}</a>
           {' · '}<a href={hero.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{hero.license}</a>
@@ -459,32 +459,32 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
     )}
     <nav className="sticky top-0 z-20 border-b border-[#e1e5e5] bg-white/95 px-5 backdrop-blur" aria-label={fr?'Naviguer dans le guide':'Guide sections'}>
       <div className="mx-auto flex max-w-7xl gap-6 overflow-x-auto py-4 text-xs sm:text-sm">
-        <a href={hotelPage?'#selection':'#quartiers'} className="shrink-0 hover:text-[#9e794a]">{hotelPage?(fr?'Les hôtels':'Hotels'):(city.slug==='porto-cervo'?(fr?'Les secteurs':'Areas'):city.slug==='saint-barthelemy'?(fr?'Les lieux':'Places'):city.slug==='los-cabos'?(fr?'Les secteurs':'Areas'):city.slug==='maldives'?(fr?'Les atolls':'Atolls'):(fr?'Les quartiers':'Areas'))}</a>
-        {city.slug==='galle' && approvedPhotos.length>0 && <a href="#panoramas-galle" className="shrink-0 hover:text-[#9e794a]">{fr?'Vues de Galle':'Galle landscapes'}</a>}
-        {city.slug==='rajasthan' && <a href="#panoramas-rajasthan" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='udaipur' && <a href="#panoramas-udaipur" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='sentosa' && <a href="#panoramas-sentosa" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='singapore' && <a href="#panoramas-singapore" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='phu-quoc' && <a href="#panoramas-phu-quoc" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='hoi-an' && <a href="#panoramas-hoi-an" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='da-nang' && <a href="#panoramas-da-nang" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='vinh-hy-bay' && <a href="#panoramas-vinh-hy-bay" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='hakone' && <a href="#panoramas-hakone" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='kyoto' && <a href="#panoramas-kyoto" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='tokyo' && <a href="#panoramas-tokyo" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='palawan' && <a href="#panoramas-palawan" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='sumba' && <a href="#panoramas-sumba" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='chiang-mai' && <a href="#panoramas-chiang-mai" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='bangkok' && <a href="#panoramas-bangkok" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='koh-yao-noi' && <a href="#panoramas-koh-yao-noi" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='krabi' && <a href="#panoramas-krabi" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='san-miguel-de-allende' && <a href="#panoramas-san-miguel-de-allende" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='mayakoba' && <a href="#panoramas-mayakoba" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='los-angeles' && <a href="#panoramas-los-angeles" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='miami' && <a href="#panoramas-miami" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        {city.slug==='new-york' && <a href="#panoramas-new-york" className="shrink-0 hover:text-[#9e794a]">{fr?'Panoramas':'Landscapes'}</a>}
-        <a href="#experience" className="shrink-0 hover:text-[#9e794a]">{fr?'L’expérience':'Experiences'}</a>
-        <a href="#conseils" className="shrink-0 hover:text-[#9e794a]">{fr?'Les conseils':'Advice'}</a>
+        <a href={hotelPage?'#selection':'#quartiers'} className="shrink-0 hover:text-[#193344]">{hotelPage?(fr?'Les hôtels':'Hotels'):(city.slug==='porto-cervo'?(fr?'Les secteurs':'Areas'):city.slug==='saint-barthelemy'?(fr?'Les lieux':'Places'):city.slug==='los-cabos'?(fr?'Les secteurs':'Areas'):city.slug==='maldives'?(fr?'Les atolls':'Atolls'):(fr?'Les quartiers':'Areas'))}</a>
+        {city.slug==='galle' && approvedPhotos.length>0 && <a href="#panoramas-galle" className="shrink-0 hover:text-[#193344]">{fr?'Vues de Galle':'Galle landscapes'}</a>}
+        {city.slug==='rajasthan' && <a href="#panoramas-rajasthan" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='udaipur' && <a href="#panoramas-udaipur" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='sentosa' && <a href="#panoramas-sentosa" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='singapore' && <a href="#panoramas-singapore" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='phu-quoc' && <a href="#panoramas-phu-quoc" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='hoi-an' && <a href="#panoramas-hoi-an" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='da-nang' && <a href="#panoramas-da-nang" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='vinh-hy-bay' && <a href="#panoramas-vinh-hy-bay" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='hakone' && <a href="#panoramas-hakone" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='kyoto' && <a href="#panoramas-kyoto" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='tokyo' && <a href="#panoramas-tokyo" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='palawan' && <a href="#panoramas-palawan" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='sumba' && <a href="#panoramas-sumba" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='chiang-mai' && <a href="#panoramas-chiang-mai" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='bangkok' && <a href="#panoramas-bangkok" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='koh-yao-noi' && <a href="#panoramas-koh-yao-noi" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='krabi' && <a href="#panoramas-krabi" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='san-miguel-de-allende' && <a href="#panoramas-san-miguel-de-allende" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='mayakoba' && <a href="#panoramas-mayakoba" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='los-angeles' && <a href="#panoramas-los-angeles" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='miami' && <a href="#panoramas-miami" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        {city.slug==='new-york' && <a href="#panoramas-new-york" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
+        <a href="#experience" className="shrink-0 hover:text-[#193344]">{fr?'L’expérience':'Experiences'}</a>
+        <a href="#conseils" className="shrink-0 hover:text-[#193344]">{fr?'Les conseils':'Advice'}</a>
       </div>
     </nav>
     {hotelPage&&<HotelSelection guide={city} locale={locale}/>}
