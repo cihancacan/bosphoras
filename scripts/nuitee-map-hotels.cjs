@@ -19,6 +19,13 @@ const manual=require('../data/travel/nuiteeMappings.json');
 const generated=require('../data/travel/nuiteeResolvedMappings.json');
 const output=path.join(__dirname,'../data/travel/nuiteeResolvedMappings.json');
 const reportFile=path.join(__dirname,'../docs/travel-nuitee-coverage.json');
+const csvFile=path.join(__dirname,'../docs/travel-nuitee-unmapped-hotels.csv');
+const csvCell=value=>'"'+String(value??'').replace(/"/g,'""')+'"';
+function writeMissingCsv(items) {
+  const heading=['destination','hotel_name','city','country','editorial_key','reason'];
+  const rows=items.map(item=>[item.destination,item.name,item.city,item.country,item.editorialKey,item.reason||'not_mapped']);
+  fs.writeFileSync(csvFile,[heading,...rows].map(row=>row.map(csvCell).join(',')).join('\n')+'\n');
+}
 const flags=new Set(process.argv.slice(2));
 const catalogFlag=[...flags].find(x=>x.startsWith('--catalog='));
 const useApi=flags.has('--lookup')||flags.has('--apply');
@@ -60,6 +67,7 @@ const report={
 if(!useApi&&!catalogFlag) {
   report.unresolved=pending.map(({destination,name,city,country,editorialKey})=>
     ({destination,name,city,country,editorialKey,reason:'no_supplier_id'}));
+  writeMissingCsv(report.unresolved);
   fs.writeFileSync(reportFile,JSON.stringify(report,null,2)+'\n');
   console.log('Nuitée coverage: '+report.editorialEntriesWithDirectLink+'/'+hotels.length+
     ' editorial hotel links mapped; '+pending.length+' still need verified supplier IDs.');
@@ -98,8 +106,18 @@ function verifyIdentity(hotel,supplier) {
   if(supplierCountry!==code)return {valid:false,reason:'country_mismatch'};
   const supplierCity=normalize(supplier.city).replace(/ city$/,'');
   const editorialCity=normalize(hotel.city).replace(/ city$/,'');
-  if(!supplierCity||supplierCity!==editorialCity)
-    return {valid:false,reason:'city_requires_review'};
+  const supplierAddress=normalize(supplier.address);
+  const supplierName=normalize(supplier.name);
+  // Islands and resort destinations often have administrative city names
+  // different from the editorial destination. Do not reject a confirmed
+  // destination mention in the address or exact supplier property name.
+  const locationConfirmed=Boolean(editorialCity)&&(
+    supplierCity===editorialCity ||
+    supplierAddress.includes(editorialCity) ||
+    supplierName.includes(editorialCity)
+  );
+  if(!locationConfirmed)
+    return {valid:false,reason:'location_requires_manual_review'};
   return {valid:true};
 }
 (async()=>{
@@ -123,6 +141,16 @@ function verifyIdentity(hotel,supplier) {
         });
         matches=Array.isArray(list)?list:[];
         await sleep(300);
+        // If the resort is administratively outside the marketed destination,
+        // search the same country by the exact property name (never across
+        // unfiltered global inventory) before declaring it missing.
+        if(!matches.some(item=>normalize(item.name)===normalize(hotel.name))) {
+          const countryList=await api('/data/hotels',{
+            countryCode:code,hotelName:hotel.name,limit:35,language:'en'
+          });
+          matches=Array.isArray(countryList)?countryList:[];
+          await sleep(300);
+        }
       }
       const exact=matches.filter(item=>normalize(item.name)===normalize(hotel.name));
       if(exact.length!==1){
@@ -147,7 +175,7 @@ function verifyIdentity(hotel,supplier) {
         continue;
       }
       const evidence='Nuitée supplier '+(catalog?'catalogue export':'Static Hotel Data API')+
-        ': unique exact title, same country and city, supplier street address '+String(candidate.address)+
+        ': unique exact title, same country, geographically compatible location, supplier street address '+String(candidate.address)+
         '; source confirmed '+new Date().toISOString().slice(0,10);
       const mapped={destination:hotel.destination,editorialKeys:[hotel.editorialKey],
         hotelId:candidate.id,name:hotel.name,address:String(candidate.address),
@@ -164,6 +192,7 @@ function verifyIdentity(hotel,supplier) {
   report.newVerifiedCount=newMappings.length;
   report.editorialEntriesWithDirectLink+=newMappings.length;
   report.editorialEntriesMissingDirectLink-=newMappings.length;
+  writeMissingCsv(report.unresolved);
   fs.writeFileSync(reportFile,JSON.stringify(report,null,2)+'\n');
   if(apply&&newMappings.length){
     const merged=[...generated.hotels,...newMappings].sort((a,b)=>
