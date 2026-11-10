@@ -13,7 +13,7 @@ const expandedResolvedHotels = (resolvedHotelMappings.hotels as VerifiedHotelIde
   name,
   hotelId,
   editorialKeys: [hotelPartnerKey(destination, name)],
-  matchEvidence: 'Nuitée WhiteLabel public search by hotel name: unique name and supplier country, with checked property address (10 November 2026).',
+  matchEvidence: 'Nuitée WhiteLabel property search checked by name, supplier country and address; includes verified hotel aliases and parent resorts for individual villa profiles (November 2026).',
   deepLinkEvidence: 'Supplier hotelId returned by Bosphoras Nuitée WhiteLabel hotel search; verified exact-property route /hotels/{hotelId}.',
 }));
 const allHotelMappings = [...mappings.hotels, ...expandedResolvedHotels];
