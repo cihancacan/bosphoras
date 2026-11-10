@@ -58,7 +58,7 @@ export function Footer({ locale }: FooterProps) {
 
   return (
     <footer className="border-t border-[#244558] bg-[#193344]" dir={localeDir[locale]} aria-label="Pied de page">
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-[hsl(205,23%,77%)]/40 to-transparent" aria-hidden="true" />
+      
       <div className="container-editorial py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           <div>

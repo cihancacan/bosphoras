@@ -78,7 +78,7 @@ export default function LocaleHomePage({ params }: PageProps) {
     <>
       <StructuredData data={organizationSchema()} /><StructuredData data={websiteSchema()} /><StructuredData data={faqSchema(conversionCopy[locale].faqs)} />
       <Header locale={locale} currentPath="/" />
-      <main lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className="bg-[#f8f1e7] text-[#101827]">
+      <main lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'} className="bosphoras-home bg-white text-[#202629]">
 <HomeHero locale={locale} />
 <HomeProjectPaths locale={locale} />
 <section className="px-5 py-20 md:px-8 md:py-28"><div className="mx-auto grid max-w-[1500px] gap-14 lg:grid-cols-[0.82fr_1.18fr] lg:gap-24"><div><p className="mb-5 text-xs font-bold uppercase tracking-[0.3em] text-[#8a6728]">{c.faqEyebrow}</p><h2 className="font-serif text-4xl leading-tight tracking-[-0.04em] md:text-6xl">{c.faqTitle}</h2></div><div className="grid gap-px bg-[#d8c7a1]">{conversionCopy[locale].faqs.map((faq) => <article key={faq.question} className="bg-[#f8f1e7] p-8"><h3 className="font-serif text-3xl leading-snug text-[#121826]">{faq.question}</h3><p className="mt-4 text-base leading-8 text-[#3e4857]">{faq.answer}</p></article>)}</div></div></section>
