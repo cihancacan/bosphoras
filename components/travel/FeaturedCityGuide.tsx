@@ -495,7 +495,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
           {approvedPhotos.slice(0,9).map((photo,index)=><CityPhoto key={photo.src} photo={photo} locale={locale} priority={index===0}/>)}
         </div>
-        <p className="mt-8 text-sm leading-7 text-[#5b676d]">{fr?'Images géographiquement identifiées, attribuées et adaptées en WebP. Toutes les photographies restent soumises aux autorisations d’usage.':'Geographically identified, credited WebP images. Image publication remains subject to rights clearance.'}</p>
+        
       </div>
     </section>}
     {city.slug==='rajasthan' && <section id="panoramas-rajasthan" className="scroll-mt-24 bg-[#f5f5f3] py-16 sm:py-24">
@@ -703,7 +703,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#193344]">{fr?'Kyoto · trois paysages, trois rythmes':'Kyoto · three landscapes, three different rhythms'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Les rues de Higashiyama, la rivière et Arashiyama.':'Higashiyama lanes, the river and Arashiyama.'}</h2>
-        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Des lieux authentiques de Kyoto, photographiés séparément, et non la promesse d’une vue depuis chaque chambre des hôtels présentés.':'Authentic scenes across Kyoto, never a guarantee that a selected suite overlooks any particular landmark.'}</p>
+        
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {([
             {key:'scene-1',frTitle:'Higashiyama · Yasaka',enTitle:'Higashiyama · Yasaka'},
@@ -761,7 +761,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#193344]">{fr?'Sumba · des paysages qui se méritent':'Sumba · landscapes worth travelling for'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Entre le lagon turquoise et les collines de l’est.':'Between the turquoise lagoon and the eastern hills.'}</h2>
-        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Les maisons de Ratenggaro et les collines de Wairinding racontent deux visages d’une île immense. Ces photographies ne représentent pas des vues garanties depuis les chambres.':'Ratenggaro’s extraordinary roofs and Wairinding’s hills show two distinct sides of a vast island. These are authentic local photos, not a promise of any specific room view.'}</p>
+        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Les maisons de Ratenggaro et les collines de Wairinding racontent deux visages d’une île immense.':'Ratenggaro’s extraordinary roofs and Wairinding’s hills reveal two distinct sides of a vast island.'}</p>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {([{key:'scene-2',frTitle:'Ratenggaro · architecture vivante',enTitle:'Ratenggaro · living heritage'},
              {key:'scene-3',frTitle:'Wairinding · collines de Sumba',enTitle:'Wairinding · Sumba’s rolling hills'}] as const).map(v=>{
@@ -809,7 +809,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#193344]">{fr?'Koh Yao Noi · îlots et lumière':'Koh Yao Noi · limestone islands and morning light'}</p>
         <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'La baie se dévoile avec la marée.':'The bay revealed as tides change.'}</h2>
-        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Des îlots calcaires sortent de la brume. Ce sont des photographies locales, sans garantie de vue depuis la chambre réservée.':'Limestone islets emerge from the haze. Genuine island photography, not guaranteed room views.'}</p>
+        <p className="mt-6 max-w-3xl text-base leading-8 text-[#4e626b]">{fr?'Des îlots calcaires sortent de la brume au fil des marées.':'Limestone islets emerge from the haze as the tides change.'}</p>
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {([{key:'scene-8',frTitle:'Le matin sur la baie',enTitle:'Dawn on the bay'},{key:'scene-9',frTitle:'Les îles calcaires',enTitle:'Limestone islands'}] as const).map(v=>{
             const p=city.photos[v.key];
@@ -939,7 +939,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             const landscape=city.photos[view.key];
             return landscape && confirmedNewYorkPreviewAssets.has(landscape.src) && <article key={view.key} className="bg-white p-4 shadow-sm sm:p-5">
               <CityPhoto photo={landscape} locale={locale}/>
-              <h3 className="mt-5 font-sans font-normal text-2xl text-[#19323e]">{fr?view.titleFr:view.titleEn}</h3>
               <p className="mt-3 text-sm leading-7 text-[#51646c]">{fr?view.detailFr:view.detailEn}</p>
             </article>;
           })}
@@ -961,7 +960,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             {key:'silver-beach',fr:'La petite Silver Beach',en:'Small-scale Silver Beach',frDetail:'Une crique à découvrir près de Lamai, selon l’affluence et l’état de la mer.',enDetail:'A pretty small cove near Lamai, best checked for crowds and sea conditions.'}
           ] as const).map(item=><article key={item.key} className="bg-white p-4">
             <CityPhoto photo={city.photos[item.key]} locale={locale}/>
-            <h3 className="mt-4 font-sans font-normal text-xl text-[#19323e]">{fr?item.fr:item.en}</h3>
             <p className="mt-3 text-sm leading-6 text-[#546772]">{fr?item.frDetail:item.enDetail}</p>
           </article>)}
         </div>
@@ -974,7 +972,6 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         <div className="mt-9 grid gap-6 sm:grid-cols-2">
           {([{key:'seaplane',frTitle:'L’arrivée en hydravion',enTitle:'The seaplane arrival',frDetail:'Préparer les correspondances et les horaires de vols de jour.',enDetail:'Plan connections and daylight operating windows.'},{key:'manta-reef',frTitle:'Les raies manta',enTitle:'Manta encounters',frDetail:'Une rencontre avec la nature qui dépend de la saison et ne peut être garantie.',enDetail:'Seasonal wildlife sightings can never be guaranteed.'}] as const).map(item=>confirmedMaldivesAssets.has(city.photos[item.key].src) && <article key={item.key} className="bg-white p-5">
             <CityPhoto photo={city.photos[item.key]} locale={locale}/>
-            <h3 className="mt-4 font-sans font-normal text-2xl">{fr?item.frTitle:item.enTitle}</h3>
             <p className="mt-3 text-sm leading-7 text-[#53646c]">{fr?item.frDetail:item.enDetail}</p>
           </article>)}
         </div>
@@ -1027,9 +1024,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
             <h2 className="mt-5 font-sans font-normal text-3xl sm:text-4xl">{fr
               ?'L’expérience avant le catalogue.':'Experience before inventory.'}</h2>
             <p className="mt-6 text-base leading-8 text-[#d2dcdf]">{fr?city.introFr:city.introEn}</p>
-            <p className="mt-5 text-sm leading-7 text-[#bdcccf]">
-              {fr?'Cette vue illustre la destination ; elle ne garantit pas la vue depuis un hôtel.'
-                :'This is a destination photograph, not a promised view from any hotel.'}</p>
+            
           </div>
         </div>
         <div className="mt-14 grid gap-7 md:grid-cols-3">
