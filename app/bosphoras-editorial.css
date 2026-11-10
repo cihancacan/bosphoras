@@ -1,0 +1,497 @@
+/*
+ * BOSPHORAS — Editorial identity, 2026.
+ * Visual direction 02: luminous white, marine blue, unfussy typography.
+ * Intentionally scoped to public editorial pages. CRM, partner desk, booking UI
+ * and metadata/content/assets remain unchanged.
+ */
+:root {
+  --bosphoras-ink: #202629;
+  --bosphoras-navy: #193344;
+  --bosphoras-muted: #566874;
+  --bosphoras-paper: #ffffff;
+  --bosphoras-wash: #f5f6f5;
+  --bosphoras-rule: #dce3e6;
+}
+
+.bosphoras-editorial,
+.bosphoras-home {
+  background: var(--bosphoras-paper);
+  color: var(--bosphoras-ink);
+  font-family: "Avenir Next", "Helvetica Neue", Arial, system-ui, sans-serif;
+}
+.bosphoras-editorial .font-serif,
+.bosphoras-home .font-serif {
+  font-family: "Iowan Old Style", Baskerville, "Palatino Linotype", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -.022em;
+}
+.bosphoras-editorial h1,
+.bosphoras-editorial h2,
+.bosphoras-editorial h3,
+.bosphoras-home h1,
+.bosphoras-home h2,
+.bosphoras-home h3 {
+  text-wrap: balance;
+}
+.bosphoras-editorial article,
+.bosphoras-home article {
+  border-radius: 0;
+  box-shadow: none !important;
+}
+.bosphoras-editorial a,
+.bosphoras-home a {
+  text-underline-offset: 4px;
+}
+.bosphoras-editorial :focus-visible,
+.bosphoras-home :focus-visible {
+  outline: 2px solid var(--bosphoras-navy);
+  outline-offset: 3px;
+}
+
+/* The travel navigation is editorial rather than a dark luxury-brand strip. */
+.bosphoras-editorial .travel-navigation {
+  background: #fff;
+  color: var(--bosphoras-navy);
+  border-color: var(--bosphoras-rule);
+  box-shadow: none;
+}
+.bosphoras-editorial .travel-navigation nav a:hover {
+  color: #456a7f !important;
+}
+.bosphoras-editorial .travel-navigation .travel-wordmark {
+  font-weight: 400;
+  letter-spacing: .14em;
+  line-height: 1.16;
+}
+.bosphoras-editorial .travel-navigation .travel-wordmark span {
+  color: #425d6c;
+  letter-spacing: .37em;
+}
+.bosphoras-editorial .travel-footer {
+  background: #193344;
+  color: #fff;
+  margin-top: 0;
+}
+.bosphoras-editorial .travel-footer p,
+.bosphoras-editorial .travel-footer a { color: #edf0f2; }
+.bosphoras-editorial .travel-footer .footer-brand { font-weight: 400; letter-spacing: .15em; }
+
+/* The directory home follows the approved image-2 composition. */
+.bosphoras-editorial .travel-index-hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--bosphoras-wash);
+  color: var(--bosphoras-navy);
+  border-bottom: 1px solid var(--bosphoras-rule);
+  min-height: 350px;
+}
+.bosphoras-editorial .travel-index-hero > .travel-index-copy {
+  position: relative;
+  z-index: 1;
+  padding-block: clamp(56px,7vw,112px);
+}
+.bosphoras-editorial .travel-index-hero.travel-home-hero {
+  background: #fff;
+}
+@media (min-width: 900px) {
+  .bosphoras-editorial .travel-home-hero > .travel-index-copy {
+    width: 50%;
+    min-height: 590px;
+    margin-left: max(24px, calc((100vw - 1280px) / 2));
+    margin-right: 0;
+    padding: 94px clamp(22px, 4vw, 70px) 88px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .bosphoras-editorial .travel-home-hero .travel-index-photo {
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: 49%;
+  }
+}
+.bosphoras-editorial .travel-index-hero h1 { color: var(--bosphoras-navy); font-weight: 400; letter-spacing: -.03em; line-height: 1.1; }
+.bosphoras-editorial .travel-index-hero p { color: #51636e !important; }
+.bosphoras-editorial .travel-index-hero p:first-child { color: var(--bosphoras-navy) !important; font-weight: 500; letter-spacing: .16em; }
+.bosphoras-editorial .travel-index-photo { position: relative; width: 100%; height: 320px; }
+.bosphoras-editorial .travel-index-photo img { object-fit: cover; }
+.bosphoras-editorial .travel-index-content {
+  background: #fff;
+}
+.bosphoras-editorial .travel-index-content article,
+.bosphoras-editorial .travel-index-content a.group {
+  border-color: var(--bosphoras-rule) !important;
+  box-shadow: none !important;
+}
+.bosphoras-editorial .travel-index-content article:hover,
+.bosphoras-editorial .travel-index-content a.group:hover {
+  border-color: #8fa3af !important;
+}
+
+/* Featured-city hero. Text and existing photograph sit beside one another. */
+.bosphoras-editorial .guide-hero {
+  position: relative;
+  min-height: 580px;
+  background: #fff !important;
+  color: var(--bosphoras-ink) !important;
+  border-bottom: 1px solid var(--bosphoras-rule);
+}
+.bosphoras-editorial .guide-hero > div[aria-hidden="true"] {
+  inset: 0 0 0 auto !important;
+  width: 49%;
+  opacity: 1 !important;
+}
+.bosphoras-editorial .guide-hero > div[aria-hidden="true"] > div.absolute {
+  display: none !important;
+}
+.bosphoras-editorial .guide-hero > .relative {
+  min-height: 580px;
+  max-width: none !important;
+  width: 48%;
+  margin: 0 auto 0 max(24px, calc((100vw - 1280px)/2));
+  padding: 64px clamp(24px, 5vw, 90px) 74px 0 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bosphoras-editorial .guide-hero > .relative > div:first-child {
+  max-width: 100% !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+.bosphoras-editorial .guide-hero h1 {
+  max-width: 720px;
+  color: var(--bosphoras-navy) !important;
+  font-family: "Iowan Old Style", Baskerville, "Palatino Linotype", Georgia, serif;
+  font-size: clamp(34px, 3.4vw, 60px) !important;
+  font-weight: 400;
+  letter-spacing: -.028em;
+  line-height: 1.12 !important;
+  text-shadow: none !important;
+}
+.bosphoras-editorial .guide-hero p { color: #51636e !important; text-shadow: none !important; }
+/* Hero photo source details remain available through the single copyright control. */
+.bosphoras-editorial .guide-hero h1 ~ p.text-xs { display:none !important; }
+.bosphoras-editorial .hero-photo-attribution { right:16px; bottom:66px; }
+.bosphoras-editorial .guide-hero p:first-child {
+  color: var(--bosphoras-navy) !important;
+  letter-spacing: .11em !important;
+}
+.bosphoras-editorial .guide-hero > .relative > .mt-10 { margin-top: 30px; }
+.bosphoras-editorial .guide-hero a[href^="#"] {
+  border: 1px solid var(--bosphoras-navy) !important;
+  background: var(--bosphoras-navy) !important;
+  color: #fff !important;
+  font-weight: 500;
+  border-radius: 0;
+}
+.bosphoras-editorial .guide-hero a[href^="/"] {
+  border: 1px solid var(--bosphoras-navy) !important;
+  background: #fff !important;
+  color: var(--bosphoras-navy) !important;
+  border-radius: 0;
+}
+.bosphoras-editorial .guide-hero > p.absolute {
+  position: static !important;
+  background: var(--bosphoras-wash) !important;
+  color: #536672 !important;
+  border-top: 1px solid var(--bosphoras-rule);
+  font-size: 12px;
+}
+@media (max-width: 899px) {
+  .bosphoras-editorial .guide-hero { padding-top: min(62vw, 390px); }
+  .bosphoras-editorial .guide-hero > div[aria-hidden="true"] {
+    inset: 0 0 auto 0 !important;
+    width: 100%;
+    height: min(62vw, 390px);
+  }
+  .bosphoras-editorial .guide-hero > .relative {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 38px 24px 54px !important;
+  }
+  .bosphoras-editorial .guide-hero h1 { font-size: clamp(32px, 7vw, 50px) !important; }
+}
+.bosphoras-editorial .featured-guide {
+  background: #fff !important;
+  color: var(--bosphoras-ink) !important;
+}
+/* The guide-specific small photographic information is provided as expandable credits. */
+.bosphoras-editorial .featured-guide > section {
+  border-color: var(--bosphoras-rule);
+}
+.bosphoras-editorial .featured-guide > section[class*="bg-[#e"],
+.bosphoras-editorial .featured-guide > section[class*="bg-[#f"] {
+  background: var(--bosphoras-wash) !important;
+}
+.bosphoras-editorial .featured-guide > section article {
+  border-color: var(--bosphoras-rule) !important;
+}
+.bosphoras-editorial .featured-guide [class*="border-l-2"] {
+  border-color: #8ea1aa !important;
+  padding-left: 18px;
+}
+.bosphoras-editorial .featured-guide h2,
+.bosphoras-editorial .featured-guide h3 {
+  color: var(--bosphoras-navy);
+}
+.bosphoras-editorial .featured-guide p[class*="tracking-[.2em]"],
+.bosphoras-editorial .featured-guide p[class*="tracking-[.22em]"] {
+  letter-spacing: .09em !important;
+  font-weight: 500 !important;
+}
+.bosphoras-editorial .featured-guide article p:not(:first-child),
+.bosphoras-editorial .featured-guide section > div > p {
+  line-height: 1.8;
+}
+
+/* Photographic attribution stays accessible, never a verbose caption below each image. */
+.bosphoras-editorial figure {
+  position: relative;
+}
+.bosphoras-editorial .photo-attribution {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 5;
+  max-width: calc(100% - 20px);
+  color: var(--bosphoras-ink);
+  font-family: "Avenir Next", Arial, sans-serif;
+}
+.bosphoras-editorial .photo-attribution > summary {
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  cursor: pointer;
+  background: rgba(255,255,255,.94);
+  color: var(--bosphoras-navy);
+  font-size: 14px;
+  border: 1px solid rgba(25,51,68,.12);
+}
+.bosphoras-editorial .photo-attribution > summary::-webkit-details-marker { display:none; }
+.bosphoras-editorial .photo-attribution[open] > .photo-attribution-body {
+  display: block;
+  margin-top: 6px;
+  padding: 12px;
+  width: min(360px, 70vw);
+  max-height: 180px;
+  overflow-y: auto;
+  background: rgba(255,255,255,.98);
+  color: #33434c;
+  font-size: 12px;
+  line-height: 1.65;
+  border: 1px solid var(--bosphoras-rule);
+}
+.bosphoras-editorial .photo-attribution .block { display: block; margin-top: 3px; }
+.bosphoras-editorial .photo-attribution a {
+  color: #193344;
+  text-decoration: underline;
+}
+.bosphoras-editorial .photo-attribution a:focus-visible { outline-offset: 1px; }
+
+/* City-hotel pages and the Istanbul flagship share the same editorial discipline. */
+.bosphoras-editorial .istanbul-guide-hero {
+  background: #fff !important;
+  color: var(--bosphoras-navy) !important;
+}
+.bosphoras-editorial .istanbul-guide-hero > div[aria-hidden="true"] {
+  inset: 0 0 0 auto !important;
+  width: 49%;
+  opacity: 1 !important;
+  background-size: cover !important;
+  background-position: center !important;
+  /* Same original image, without the artificial gradient. */
+  background-image: url("/images/hero-istanbul.jpg") !important;
+}
+.bosphoras-editorial .istanbul-guide-hero > div.relative {
+  width: 48%;
+  max-width: none !important;
+  margin: 0 auto 0 max(24px, calc((100vw - 1280px)/2));
+  min-height: 590px;
+  padding: 80px clamp(24px,4vw,72px) 90px 0 !important;
+}
+.bosphoras-editorial .istanbul-guide-hero h1 {
+  font-size: clamp(34px,4vw,64px);
+  color: var(--bosphoras-navy);
+  font-weight: 400;
+}
+.bosphoras-editorial .istanbul-guide-hero p { color: #526671 !important; }
+.bosphoras-editorial .istanbul-guide-hero a[href^="#"] {
+  border: 1px solid var(--bosphoras-navy) !important;
+  background: var(--bosphoras-navy) !important;
+  color: #fff !important;
+  border-radius: 0 !important;
+}
+.bosphoras-editorial .istanbul-guide-hero a[href="#quartiers"] {
+  background: #fff !important;
+  color: var(--bosphoras-navy) !important;
+}
+.bosphoras-editorial .istanbul-guide-hero > div.absolute.bottom-0 {
+  position: static !important;
+  border-color: var(--bosphoras-rule) !important;
+  background: var(--bosphoras-wash) !important;
+}
+.bosphoras-editorial .istanbul-guide-hero > div.absolute.bottom-0 span {
+  color: #586c77 !important;
+}
+@media (max-width: 899px) {
+  .bosphoras-editorial .istanbul-guide-hero {
+    padding-top: min(62vw, 390px);
+    min-height: 0;
+  }
+  .bosphoras-editorial .istanbul-guide-hero > div[aria-hidden="true"] {
+    inset: 0 0 auto 0 !important;
+    width: 100%;
+    height: min(62vw, 390px);
+  }
+  .bosphoras-editorial .istanbul-guide-hero > div.relative {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 40px 24px 64px !important;
+  }
+}
+.bosphoras-editorial .hotel-detail-hero {
+  background: #fff !important;
+  color: var(--bosphoras-navy) !important;
+  border-bottom: 1px solid var(--bosphoras-rule);
+}
+.bosphoras-editorial .hotel-detail-hero p,
+.bosphoras-editorial .hotel-detail-hero a { color: #445e6f !important; }
+.bosphoras-editorial .hotel-detail-hero h1 { font-weight:400; }
+.bosphoras-editorial .hotel-detail-hero > div { padding-block: 64px; }
+
+/* Main corporate homepage: the existing Istanbul photo stays unchanged. */
+.bosphoras-home .bosphoras-home-hero {
+  background: #fff !important;
+  color: var(--bosphoras-ink) !important;
+  padding-top: 5rem;
+  min-height: 690px;
+}
+.bosphoras-home .bosphoras-home-hero picture {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 49%;
+  height: 100%;
+}
+.bosphoras-home .bosphoras-home-hero picture img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bosphoras-home .bosphoras-home-hero > div.absolute:not(.container-editorial) { display:none; }
+.bosphoras-home .bosphoras-home-hero .container-editorial {
+  width: 49%;
+  margin: 0 auto 0 max(24px, calc((100vw - 1280px)/2));
+  max-width: none;
+  min-height: 690px;
+  padding: 72px clamp(20px,4vw,72px) 90px 0;
+}
+.bosphoras-home .bosphoras-home-hero .container-editorial > div {
+  max-width: 100%;
+}
+.bosphoras-home .bosphoras-home-hero h1 {
+  color: var(--bosphoras-navy) !important;
+  font-size: clamp(36px,3.7vw,64px);
+  line-height: 1.08;
+  letter-spacing: -.025em;
+  font-weight: 400;
+}
+.bosphoras-home .bosphoras-home-hero p,
+.bosphoras-home .bosphoras-home-hero blockquote {
+  color: #50616c !important;
+  font-weight: 400;
+  letter-spacing: normal;
+}
+.bosphoras-home .bosphoras-home-hero blockquote {
+  border-top-color: var(--bosphoras-rule) !important;
+}
+.bosphoras-home .bosphoras-home-hero a[data-cta-id="home_hero_adviser"] {
+  background: var(--bosphoras-navy) !important;
+  color: #fff !important;
+  border: 1px solid var(--bosphoras-navy);
+}
+.bosphoras-home .bosphoras-home-hero a[data-cta-id="home_hero_property"] {
+  background: #fff !important;
+  color: var(--bosphoras-navy) !important;
+  border: 1px solid var(--bosphoras-navy) !important;
+  backdrop-filter: none;
+}
+@media (max-width: 899px) {
+  .bosphoras-home .bosphoras-home-hero {
+    padding-top: 5rem;
+    min-height: 0;
+  }
+  .bosphoras-home .bosphoras-home-hero picture {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: min(62vw, 390px);
+  }
+  .bosphoras-home .bosphoras-home-hero .container-editorial {
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 42px 24px 64px;
+  }
+}
+
+/* The institutional header is light. Dropdowns retain adequate contrast. */
+.corporate-editorial-header {
+  background: #fff !important;
+  border-bottom: 1px solid var(--bosphoras-rule) !important;
+  box-shadow: none !important;
+}
+.corporate-editorial-header > div:first-child { display:none; }
+.corporate-editorial-header > .container-editorial > a:first-child span:first-child {
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  color: var(--bosphoras-navy) !important;
+  letter-spacing: .16em;
+}
+.corporate-editorial-header > .container-editorial > a:first-child span:last-child { color: #567083 !important; }
+.corporate-editorial-header > .container-editorial > nav > .group > a { color: var(--bosphoras-navy) !important; }
+.corporate-editorial-header > .container-editorial > nav > .group > a span { color: #6e828e !important; }
+.corporate-editorial-header > .container-editorial > div.hidden > button,
+.corporate-editorial-header > .container-editorial > div.hidden > a,
+.corporate-editorial-header > .container-editorial > div.hidden > div > button,
+.corporate-editorial-header > .container-editorial > div.flex > a,
+.corporate-editorial-header > .container-editorial > div.flex > button {
+  color: var(--bosphoras-navy) !important;
+  border-color: var(--bosphoras-rule) !important;
+}
+.corporate-editorial-header a[data-cta-id="header_assessment"] {
+  color: #fff !important;
+  background: var(--bosphoras-navy) !important;
+  border-color: var(--bosphoras-navy) !important;
+  font-weight: 500;
+}
+.corporate-editorial-header [role="listbox"] a { color: #edf1f2 !important; }
+.corporate-editorial-header > div[class*="xl:hidden"] { background: var(--bosphoras-navy) !important; }
+
+.bosphoras-home .home-paths-card {
+  background: #fff !important;
+  border: 1px solid var(--bosphoras-rule) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+.bosphoras-home .home-paths-card:hover { border-color:#829ba9 !important; }
+.bosphoras-home .home-paths-card h3 { margin-top: 4px !important; }
+.bosphoras-home .home-section-wash { background: var(--bosphoras-wash) !important; }
+.bosphoras-home section[class*="bg-[#fffaf0]"] { background:#fff !important; }
+
+@media (prefers-reduced-motion: reduce) {
+  .bosphoras-editorial *,
+  .bosphoras-home * { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}

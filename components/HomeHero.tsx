@@ -71,7 +71,7 @@ export function HomeHero({ locale }: { locale: Locale }) {
   const assessmentHref = withAssessmentContext(copy.assessmentHref, '/', copy.h1, 'home');
 
   return (
-    <section className="relative overflow-hidden bg-[#071426] pt-20 text-white md:min-h-[82vh] md:pt-32">
+    <section className="bosphoras-home-hero relative overflow-hidden bg-white pt-20 text-[#193344]">
       <picture>
         <source media="(min-width: 768px)" srcSet="/images/hero-istanbul.jpg" />
         <img
@@ -90,16 +90,16 @@ export function HomeHero({ locale }: { locale: Locale }) {
 
       <div className="container-editorial relative z-10 flex items-center py-12 md:min-h-[calc(82vh-7rem)] md:py-20">
         <div className="max-w-5xl">
-          <p className="mb-5 text-[0.6rem] font-bold uppercase tracking-[0.34em] text-[#d2a863]">
+          <p className="mb-5 text-[0.6rem] font-medium uppercase tracking-[0.16em] text-[#193344]">
             {copy.eyebrow}
           </p>
-          <h1 className="max-w-5xl font-serif text-[2.45rem] leading-[1.01] tracking-[-0.05em] text-[#fffaf0] md:text-6xl lg:text-7xl">
+          <h1 className="max-w-5xl font-serif text-[2.45rem] leading-[1.09] tracking-[-0.025em] text-[#fffaf0] md:text-6xl lg:text-7xl">
             {copy.h1}
           </h1>
           <p className="mt-6 max-w-3xl text-base leading-8 text-[#efe4d2] md:text-xl md:leading-9">
             {copy.subtitle}
           </p>
-          <p className="mt-5 text-xs font-bold uppercase tracking-[0.18em] text-[#d2a863] md:text-sm">
+          <p className="mt-5 text-xs font-normal tracking-[0.02em] text-[#566874] md:text-sm">
             {copy.pillars}
           </p>
 

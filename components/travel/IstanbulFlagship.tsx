@@ -12,8 +12,8 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
   const intro = fr
     ? 'À Istanbul, le vrai luxe commence par une question simple : souhaitez-vous vivre au bord du Bosphore, découvrir la ville à pied ou retrouver le calme d’une grande suite ? Nous comparons les adresses à partir de l’expérience qu’elles permettent, pas seulement de leur nombre d’étoiles.'
     : 'In Istanbul, the right luxury stay begins with a simple question: do you want life beside the Bosphorus, historic sights on foot or the privacy of a generous suite? Our editorial approach starts with the experience, not the number of stars.';
-  return <main id="istanbul-luxury-guide" className="bg-[#f8f5ee] text-[#17252d]">
-    <section className="relative isolate min-h-[620px] overflow-hidden bg-[#122734] text-[#f8f2e6]">
+  return <main id="istanbul-luxury-guide" className="bg-white text-[#202629]">
+    <section className="istanbul-guide-hero relative isolate min-h-[620px] overflow-hidden bg-white text-[#193344]">
       {/* Existing site asset. Original image rights must be checked before production reuse. */}
       <div aria-hidden="true" className="absolute inset-0 bg-cover bg-center opacity-70" style={{backgroundImage:"linear-gradient(90deg,rgba(6,20,31,.96) 0%,rgba(6,20,31,.80) 46%,rgba(6,20,31,.25) 100%),url('/images/hero-istanbul.jpg')"}} />
       <div className="relative mx-auto max-w-7xl px-5 pt-14 pb-24 sm:pt-24 sm:pb-36">
@@ -35,7 +35,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
       </div>
     </section>
 
-    <nav aria-label={fr ? 'Sections du guide d’Istanbul' : 'Istanbul guide sections'} className="sticky top-0 z-20 bg-[#f8f5ee]/95 backdrop-blur border-b border-[#ddd3c2]">
+    <nav aria-label={fr ? 'Sections du guide d’Istanbul' : 'Istanbul guide sections'} className="sticky top-0 z-20 bg-white/95 backdrop-blur border-b border-[#dce3e6]">
       <div className="mx-auto max-w-7xl px-5 flex gap-7 py-4 text-xs sm:text-sm overflow-x-auto whitespace-nowrap">
         <a className="shrink-0 hover:text-[#926b36]" href="#quartiers">{fr ? 'Les quartiers' : 'Neighbourhoods'}</a>
         <a className="shrink-0 hover:text-[#926b36]" href="#selection">{fr ? 'Les adresses' : 'The addresses'}</a>
@@ -49,7 +49,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
     <section className="mx-auto max-w-7xl px-5 py-16 sm:py-24">
       <div className="grid lg:grid-cols-[1fr,1.15fr] gap-8 lg:gap-20 items-start">
         <div>
-          <p className="text-[#9c784a] text-xs font-semibold tracking-[.22em] uppercase mb-5">{fr ? 'Notre parti pris' : 'Our perspective'}</p>
+          <p className="text-[#526774] text-xs font-semibold tracking-[.22em] uppercase mb-5">{fr ? 'Notre parti pris' : 'Our perspective'}</p>
           <h2 className="font-serif text-4xl sm:text-5xl leading-tight">{fr ? 'Le Bosphore n’est pas seulement une vue. C’est une manière d’habiter la ville.' : 'The Bosphorus is more than a view. It changes how you experience the city.'}</h2>
         </div>
         <div className="space-y-5 text-base sm:text-lg leading-8 text-[#52616a]">
@@ -60,16 +60,16 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
       </div>
     </section>
 
-    <section id="quartiers" className={anchor + ' bg-[#f0ebe1] py-16 sm:py-24'}>
+    <section id="quartiers" className={anchor + ' bg-[#f5f6f5] py-16 sm:py-24'}>
       <div className="mx-auto max-w-7xl px-5">
         <div className="max-w-3xl mb-10">
-          <p className="text-[#9c784a] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? '01 · Comprendre Istanbul' : '01 · Read the city'}</p>
+          <p className="text-[#526774] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? 'Comprendre Istanbul' : 'Read the city'}</p>
           <h2 className="font-serif text-4xl sm:text-5xl">{fr ? 'Où dormir à Istanbul ? Les cinq ambiances à comparer.' : 'Where to stay in Istanbul: five different moods.'}</h2>
           <p className="text-[#52616a] leading-7 mt-5">{fr ? 'Avant de comparer les suites, choisissez votre Istanbul. Une distance courte sur la carte ne garantit ni la même atmosphère ni les mêmes temps de trajet.' : 'Before comparing suites, choose your Istanbul. Short map distances do not always mean the same atmosphere or easy journeys.'}</p>
         </div>
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
-          {istanbulDistricts.map((d,i)=><article key={d.id} className="bg-[#fbfaf6] p-7 border border-[#ded4c5] flex flex-col gap-5">
-            <div className="flex items-start justify-between"><span className="font-serif text-3xl text-[#b39263]">{String(i+1).padStart(2,'0')}</span><span className="text-xs text-[#9c784a] uppercase tracking-wider">Istanbul · Europe</span></div>
+          {istanbulDistricts.map((d,i)=><article key={d.id} className="bg-white p-7 border border-[#dce3e6] flex flex-col gap-5">
+            <p className="text-xs font-normal text-[#526774]">Istanbul · Europe</p>
             <h3 className="font-serif text-2xl">{d.name}</h3>
             <figure>
               <div className="relative aspect-[16/10] overflow-hidden bg-[#d8d3c8]">
@@ -77,14 +77,14 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
                   fill sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 390px"
                   className="object-cover" />
               </div>
-              <figcaption className="mt-2 text-[11px] leading-5 text-[#6a7479]">
+              <details className="photo-attribution"><summary aria-label={fr?'Crédit photographique':'Photo credit'} title={fr?'Crédit photo':'Photo credit'}>©</summary><div className="photo-attribution-body">
                 <a target="_blank" rel="noopener noreferrer" href={istanbulCityScenes[d.id].sourcePage}
                   className="underline underline-offset-2">{istanbulCityScenes[d.id].author}</a>
                 {' · '}
                 <a target="_blank" rel="noopener noreferrer" href={istanbulCityScenes[d.id].licenseUrl}
                   className="underline underline-offset-2">{istanbulCityScenes[d.id].license}</a>
                 {' · WebP'}
-              </figcaption>
+              </div></details>
             </figure>
             <p className="text-[#52616a] leading-7">{fr?d.fr:d.en}</p>
             <p className="mt-auto border-t border-[#e5dfd6] pt-4 text-sm font-medium text-[#8b683e]">{fr?d.frTip:d.enTip}</p>
@@ -96,7 +96,7 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
     <section id="selection" className={anchor + ' mx-auto max-w-7xl px-5 py-16 sm:py-24'}>
       <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10">
         <div className="max-w-3xl">
-          <p className="text-[#9c784a] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? '02 · Les adresses' : '02 · The shortlist'}</p>
+          <p className="text-[#526774] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? 'Les adresses' : 'The shortlist'}</p>
           <h2 className="font-serif text-4xl sm:text-5xl">{fr ? 'Neuf hôtels remarquables. Neuf raisons de les envisager.' : 'Nine remarkable hotels, nine distinct reasons to consider them.'}</h2>
         </div>
         <p className="max-w-sm text-[#637077] text-sm leading-6">{fr ? 'Sélection éditoriale fondée sur les informations des établissements. Ce n’est ni un classement ni une liste d’offres réservables sur Bosphoras.' : 'An editorial shortlist grounded in the operators’ own information, not a ranking or a list of hotels already bookable with Bosphoras.'}</p>
@@ -109,11 +109,11 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
 
     <section id="experience" className={anchor + ' bg-[#142d39] text-[#f8f2e6] py-16 sm:py-24'}>
       <div className="mx-auto max-w-7xl px-5">
-        <p className="text-[#d2b786] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr?'03 · Composer son séjour':'03 · Shape your stay'}</p>
+        <p className="text-[#dce6eb] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr?'Composer son séjour':'Shape your stay'}</p>
         <h2 className="font-serif text-4xl sm:text-5xl max-w-4xl">{fr ? 'Trois façons de vivre Istanbul, sans multiplier les étapes.' : 'Three ways to experience Istanbul, without overplanning.'}</h2>
         <div className="grid md:grid-cols-3 gap-5 mt-11">
           {istanbulJourneys.map((journey,i)=><article key={i} className="border-t border-[#bb9a64] pt-7">
-            <p className="font-serif text-3xl text-[#d2b786]">{String(i+1).padStart(2,'0')}</p>
+            
             <h3 className="font-serif text-2xl mt-4">{fr?journey.frTitle:journey.enTitle}</h3>
             <p className="text-[#c8d5d7] leading-7 mt-4">{fr?journey.fr:journey.en}</p>
           </article>)}
@@ -124,11 +124,11 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
     <section id="conseils" className={anchor + ' mx-auto max-w-7xl px-5 py-16 sm:py-24'}>
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
         <div>
-          <p className="text-[#9c784a] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? '04 · Bien réserver' : '04 · Book thoughtfully'}</p>
+          <p className="text-[#526774] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? 'Bien réserver' : 'Book thoughtfully'}</p>
           <h2 className="font-serif text-4xl sm:text-5xl">{fr ? 'Une vue exceptionnelle se réserve, elle ne se suppose pas.' : 'A remarkable view must be booked, not assumed.'}</h2>
           <p className="mt-6 text-[#55656c] leading-8">{fr ? 'À Istanbul, le mot “Bosphorus” dans le nom d’un hôtel ne décrit pas automatiquement la chambre achetée. Sur plusieurs adresses, les vues ville, cour, jardin et détroit coexistent. La nuance change l’expérience.' : 'In Istanbul, “Bosphorus” in a hotel name does not automatically describe the room you have purchased. City, garden, courtyard and strait views can coexist in the same property. This detail changes the experience.'}</p>
         </div>
-        <div className="bg-[#f0ebe1] p-7 sm:p-10">
+        <div className="bg-[#f5f6f5] p-7 sm:p-10">
           <h3 className="font-serif text-2xl">{fr ? 'La liste à vérifier avant de payer' : 'A practical pre-booking checklist'}</h3>
           <ul className="list-none mt-6 space-y-4 text-[#46565f] leading-7">
             {(fr ? [
@@ -145,22 +145,22 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
               'Children’s policies, connecting rooms and pool safety.',
               'Payment, cancellation, taxes and breakfast inclusions.',
               'Transfers from IST or SAW and realistic journey planning.'
-            ]).map(x=><li key={x} className="flex gap-3"><span aria-hidden="true" className="text-[#9c784a]">◆</span><span>{x}</span></li>)}
+            ]).map(x=><li key={x} className="flex gap-3"><span aria-hidden="true" className="text-[#526774]">◆</span><span>{x}</span></li>)}
           </ul>
         </div>
       </div>
     </section>
 
 
-    <section id="chambres" className={anchor + ' bg-[#f0ebe1] py-16 sm:py-24'}>
+    <section id="chambres" className={anchor + ' bg-[#f5f6f5] py-16 sm:py-24'}>
       <div className="mx-auto max-w-7xl px-5">
-        <p className="text-[#9c784a] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? '05 · Décrypter les catégories' : '05 · Understand room categories'}</p>
+        <p className="text-[#526774] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? 'Décrypter les catégories' : 'Understand room categories'}</p>
         <h2 className="font-serif text-4xl sm:text-5xl max-w-4xl">{fr ? 'Un même palace. Deux chambres. Deux Istanbul.' : 'One landmark hotel. Two rooms. Two different Istanbul experiences.'}</h2>
         <p className="text-[#53636d] leading-8 mt-7 max-w-4xl">{fr
           ? 'Le Peninsula Istanbul illustre parfaitement pourquoi il ne suffit pas de rechercher « hôtel Bosphore » : le nom et l’emplacement de l’établissement ne garantissent pas l’orientation de la chambre. Voici deux catégories décrites sur son site officiel, à titre d’exemple — sans indication de tarif ou de disponibilité.'
           : 'The Peninsula Istanbul shows why searching for a “Bosphorus hotel” is not enough: the hotel name and waterfront address do not guarantee the room’s orientation. Below are two room categories documented on its official website, presented as examples without prices or availability claims.'}</p>
         <div className="grid md:grid-cols-2 gap-5 mt-10">
-          <article className="border border-[#d8cdbc] bg-[#fcfaf5] p-7 sm:p-9">
+          <article className="border border-[#dce3e6] bg-white p-7 sm:p-9">
             <p className="text-[#956f3e] text-xs font-semibold uppercase tracking-[.17em]">{fr ? 'Choix 1 · Le quartier en perspective' : 'Option 1 · Neighbourhood outlook'}</p>
             <h3 className="font-serif text-3xl mt-4">Grand Deluxe Room</h3>
             <p className="mt-4 text-[#425663] leading-7">{fr ? '57 à 80 m² selon le bâtiment et la chambre. La catégorie indiquée sur le site officiel est « City View » : elle regarde le quartier de Karaköy, et non le Bosphore.' : '57–80 m² depending on the building and room. The official category is described as “City View”, overlooking Karaköy rather than the Bosphorus.'}</p>
@@ -179,9 +179,9 @@ export function IstanbulFlagship({ locale }: { locale: Language }) {
       </div>
     </section>
 
-    <section id="questions" className={anchor + ' bg-[#f0ebe1] py-16 sm:py-24'}>
+    <section id="questions" className={anchor + ' bg-[#f5f6f5] py-16 sm:py-24'}>
       <div className="mx-auto max-w-5xl px-5">
-        <p className="text-[#9c784a] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? '06 · Questions utiles' : '06 · Helpful answers'}</p>
+        <p className="text-[#526774] text-xs font-semibold tracking-[.22em] uppercase mb-4">{fr ? 'Questions utiles' : 'Helpful answers'}</p>
         <h2 className="font-serif text-4xl sm:text-5xl mb-10">{fr ? 'Avant de choisir votre hôtel à Istanbul' : 'Before choosing your Istanbul hotel'}</h2>
         <div className="divide-y divide-[#d7cbbc] border-y border-[#d7cbbc]">
           {istanbulFaqs.map((faq,i)=><details key={i} className="group py-6">

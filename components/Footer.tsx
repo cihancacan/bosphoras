@@ -57,14 +57,14 @@ export function Footer({ locale }: FooterProps) {
   const membershipLabel = locale === 'fr' ? 'Demande d’adhésion' : locale === 'en' ? 'Membership application' : locale === 'ru' ? 'Заявка на членство' : 'طلب عضوية';
 
   return (
-    <footer className="border-t border-[hsl(220,35%,15%)] bg-[hsl(220,45%,8%)]" dir={localeDir[locale]} aria-label="Pied de page">
-      <div className="h-px w-full bg-gradient-to-r from-transparent via-[hsl(42,65%,52%)]/40 to-transparent" aria-hidden="true" />
+    <footer className="border-t border-[#244558] bg-[#193344]" dir={localeDir[locale]} aria-label="Pied de page">
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-[hsl(205,23%,77%)]/40 to-transparent" aria-hidden="true" />
       <div className="container-editorial py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           <div>
             <Link href={getLocalePath(locale, '/')} className="group mb-6 inline-flex flex-col leading-none" aria-label="Bosphoras — Accueil">
-              <span className="font-serif text-xl font-semibold uppercase tracking-[0.15em] text-[hsl(45,30%,96%)] transition-colors duration-300 group-hover:text-[hsl(42,65%,52%)]">Bosphoras</span>
-              <span className="mt-1 text-[0.6rem] uppercase tracking-[0.25em] text-[hsl(42,65%,45%)]">{t(locale, 'footer.tagline')}</span>
+              <span className="font-serif text-xl font-semibold uppercase tracking-[0.15em] text-[hsl(45,30%,96%)] transition-colors duration-300 group-hover:text-[hsl(205,23%,77%)]">Bosphoras</span>
+              <span className="mt-1 text-[0.6rem] uppercase tracking-[0.25em] text-[hsl(205,23%,77%)]">{t(locale, 'footer.tagline')}</span>
             </Link>
             <p className="max-w-xs text-sm leading-relaxed text-[hsl(220,10%,55%)]">
               {locale === 'fr' && 'Bureau privé pour investisseurs internationaux, familles et entrepreneurs en Turquie.'}
@@ -73,25 +73,25 @@ export function Footer({ locale }: FooterProps) {
               {locale === 'ar' && 'مكتب خاص للمستثمرين الدوليين والعائلات ورجال الأعمال في تركيا.'}
             </p>
             <div className="mt-7 space-y-2 text-sm text-[hsl(220,10%,55%)]">
-              <p><a href="tel:+905467699996" className="transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">+90 546 769 99 96</a></p>
-              <p><a href="https://wa.me/905467699996" target="_blank" rel="noreferrer" className="transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">WhatsApp @bosphoras</a></p>
-              <p><a href="mailto:contact@bosphoras.com" className="transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">contact@bosphoras.com</a></p>
+              <p><a href="tel:+905467699996" className="transition-colors duration-200 hover:text-[hsl(205,23%,77%)]">+90 546 769 99 96</a></p>
+              <p><a href="https://wa.me/905467699996" target="_blank" rel="noreferrer" className="transition-colors duration-200 hover:text-[hsl(205,23%,77%)]">WhatsApp @bosphoras</a></p>
+              <p><a href="mailto:contact@bosphoras.com" className="transition-colors duration-200 hover:text-[hsl(205,23%,77%)]">contact@bosphoras.com</a></p>
             </div>
           </div>
           <div>
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-[hsl(45,30%,96%)]">{t(locale, 'nav.services')}</h3>
-            <ul className="space-y-3">{serviceLinks.map((link) => <li key={link.href}><Link href={link.href} className="text-sm text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">{link.label}</Link></li>)}</ul>
+            <ul className="space-y-3">{serviceLinks.map((link) => <li key={link.href}><Link href={link.href} className="text-sm text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(205,23%,77%)]">{link.label}</Link></li>)}</ul>
           </div>
           <div>
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-[hsl(45,30%,96%)]">{localAreasTitle}</h3>
-            <ul className="space-y-3">{cityLinks.map((link) => <li key={link.href}><Link href={link.href} className="text-sm text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">{link.label}</Link></li>)}</ul>
+            <ul className="space-y-3">{cityLinks.map((link) => <li key={link.href}><Link href={link.href} className="text-sm text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(205,23%,77%)]">{link.label}</Link></li>)}</ul>
             <h3 className="mb-5 mt-10 text-xs font-semibold uppercase tracking-[0.25em] text-[hsl(45,30%,96%)]">{informationTitle}</h3>
-            <ul className="space-y-3">{informationLinks.map((link) => <li key={link.href}><Link href={link.href} className="text-sm text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">{link.label}</Link></li>)}</ul>
+            <ul className="space-y-3">{informationLinks.map((link) => <li key={link.href}><Link href={link.href} className="text-sm text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(205,23%,77%)]">{link.label}</Link></li>)}</ul>
           </div>
           <div>
             <h3 className="mb-5 text-xs font-semibold uppercase tracking-[0.25em] text-[hsl(45,30%,96%)]">{legalTitle}</h3>
-            <ul className="space-y-3">{legalLinks.map((link) => <li key={link.href}><Link href={link.href} className="text-sm text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(42,65%,52%)]">{link.label}</Link></li>)}</ul>
-            <Link href={linkTo('membership-application')} className="mt-8 inline-flex border border-[hsl(42,65%,52%)] px-5 py-3 text-xs font-bold uppercase tracking-[0.16em] text-[hsl(42,65%,52%)] transition-colors duration-200 hover:bg-[hsl(42,65%,52%)] hover:text-[hsl(220,45%,8%)]">{membershipLabel}</Link>
+            <ul className="space-y-3">{legalLinks.map((link) => <li key={link.href}><Link href={link.href} className="text-sm text-[hsl(220,10%,55%)] transition-colors duration-200 hover:text-[hsl(205,23%,77%)]">{link.label}</Link></li>)}</ul>
+            <Link href={linkTo('membership-application')} className="mt-8 inline-flex border border-[hsl(205,23%,77%)] px-5 py-3 text-xs font-bold uppercase tracking-[0.16em] text-[hsl(205,23%,77%)] transition-colors duration-200 hover:bg-[hsl(205,23%,77%)] hover:text-[hsl(220,45%,8%)]">{membershipLabel}</Link>
           </div>
         </div>
         <FooterGuideLinks locale={locale} />

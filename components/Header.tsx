@@ -150,10 +150,10 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
 
   return (
     <>
-      <header className="fixed left-0 right-0 top-0 z-50 border-b border-[hsl(220,35%,15%)] bg-[hsl(220,45%,8%)] shadow-[0_18px_45px_rgba(0,0,0,0.16)]">
+      <header className="corporate-editorial-header fixed left-0 right-0 top-0 z-50 border-b border-[#dce3e6] bg-white">
         <div className="h-px w-full bg-gradient-to-r from-transparent via-[hsl(42,65%,52%)]/40 to-transparent" aria-hidden="true" />
         <div className="container-editorial flex h-[4.65rem] items-center justify-between gap-4 md:h-[4.85rem]">
-          <Link href={getLocalePath(locale, '/')} className="group flex shrink-0 flex-col leading-none" aria-label="Bosphoras — Accueil"><span className="font-serif text-[1.18rem] font-normal uppercase tracking-[0.18em] text-[hsl(45,30%,96%)] transition-colors duration-300 group-hover:text-[hsl(42,65%,52%)] md:text-[1.24rem]">Bosphoras</span><span className="mt-1 hidden text-[0.5rem] uppercase tracking-[0.22em] text-[hsl(42,65%,45%)] 2xl:block">{locale === 'fr' && 'Bureau Prive · Turquie'}{locale === 'en' && 'Private Office · Turkey'}{locale === 'ru' && 'Частный Офис · Турция'}{locale === 'ar' && 'مكتب خاص · تركيا'}</span></Link>
+          <Link href={getLocalePath(locale, '/')} className="group flex shrink-0 flex-col leading-none" aria-label="Bosphoras — Accueil"><span className="font-sans text-[1.18rem] font-normal uppercase tracking-[0.18em] text-[hsl(45,30%,96%)] transition-colors duration-300 group-hover:text-[hsl(42,65%,52%)] md:text-[1.24rem]">Bosphoras</span><span className="mt-1 hidden text-[0.5rem] uppercase tracking-[0.22em] text-[hsl(42,65%,45%)] 2xl:block">{locale === 'fr' && 'Bureau Prive · Turquie'}{locale === 'en' && 'Private Office · Turkey'}{locale === 'ru' && 'Частный Офис · Турция'}{locale === 'ar' && 'مكتب خاص · تركيا'}</span></Link>
           <nav className="hidden min-w-0 items-center gap-3 xl:flex 2xl:gap-4" aria-label="Navigation principale">
             {groups.map((group) => (
               <div key={group.label} className="group relative py-6">

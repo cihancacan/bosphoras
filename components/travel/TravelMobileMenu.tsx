@@ -67,7 +67,7 @@ export function TravelMobileMenu({
       aria-expanded={open}
       aria-controls={panelId}
       onClick={() => setOpen(true)}
-      className="inline-flex min-h-[44px] items-center gap-2 border border-[#cdb37b]/50 px-3 py-2 text-xs font-semibold tracking-[0.10em] text-[#faf6e9] transition-colors hover:border-[#e8cf9c] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e8cf9c]"
+      className="inline-flex min-h-[44px] items-center gap-2 border border-[#dce3e6] px-3 py-2 text-xs font-semibold tracking-[0.10em] text-[#193344] transition-colors hover:border-[#8fa3af] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#e8cf9c]"
     >
       <span>{fr ? 'MENU' : 'MENU'}</span><Menu size={21} strokeWidth={1.7} aria-hidden="true" />
     </button>
@@ -80,11 +80,11 @@ export function TravelMobileMenu({
         aria-modal="true"
         aria-label={fr ? 'Menu de navigation Bosphoras' : 'Bosphoras navigation menu'}
         onKeyDown={onPanelKeyDown}
-        className="fixed inset-y-0 right-0 z-[90] flex h-[100dvh] w-[min(25rem,92vw)] flex-col overflow-y-auto overscroll-contain bg-[#fbfaf7] text-[#172b2c] shadow-[-18px_0_60px_rgba(0,0,0,.24)]"
+        className="fixed inset-y-0 right-0 z-[90] flex h-[100dvh] w-[min(25rem,92vw)] flex-col overflow-y-auto overscroll-contain bg-white text-[#172b2c] shadow-[-18px_0_60px_rgba(0,0,0,.24)]"
       >
-        <div className="flex items-center justify-between border-b border-[#ded4c2] px-6 py-5">
-          <span className="text-xs font-semibold uppercase tracking-[0.23em] text-[#78643f]">{sectionLabel}</span>
-          <button ref={closeButton} type="button" aria-label={fr ? 'Fermer le menu' : 'Close menu'} onClick={dismiss} className="inline-flex h-11 w-11 items-center justify-center border border-[#ded4c2] text-[#172b2c] hover:bg-[#efeae0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#95743d]">
+        <div className="flex items-center justify-between border-b border-[#dce3e6] px-6 py-5">
+          <span className="text-xs font-semibold uppercase tracking-[0.23em] text-[#526774]">{sectionLabel}</span>
+          <button ref={closeButton} type="button" aria-label={fr ? 'Fermer le menu' : 'Close menu'} onClick={dismiss} className="inline-flex h-11 w-11 items-center justify-center border border-[#dce3e6] text-[#172b2c] hover:bg-[#efeae0] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#95743d]">
             <X size={22} strokeWidth={1.6} aria-hidden="true" />
           </button>
         </div>
@@ -96,17 +96,17 @@ export function TravelMobileMenu({
           </Link>)}
         </nav>
         <nav aria-label={fr ? 'Collections de voyage' : 'Travel collections'} className="px-6 pb-6 pt-8">
-          <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.19em] text-[#94754a]">{fr ? 'Nos collections' : 'Our collections'}</p>
+          <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.19em] text-[#526774]">{fr ? 'Nos collections' : 'Our collections'}</p>
           <div className="grid grid-cols-1 gap-1">
             {categories.map(item => <Link key={item.href} href={item.href} onClick={dismiss} className="flex min-h-[44px] items-center border-b border-[#ece5da] py-2 text-sm text-[#35464a] hover:text-[#946d34]">{item.label}</Link>)}
           </div>
         </nav>
-        <div className="mt-auto border-t border-[#ded4c2] bg-[#f2efe9] px-6 py-6">
-          <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.19em] text-[#94754a]">{fr ? 'Langue' : 'Language'}</p>
+        <div className="mt-auto border-t border-[#dce3e6] bg-[#f5f6f5] px-6 py-6">
+          <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.19em] text-[#526774]">{fr ? 'Langue' : 'Language'}</p>
           <nav aria-label={fr ? 'Choisir la langue' : 'Choose language'} className="flex flex-wrap gap-2">
             {languages.map(item => <Link key={item.code} href={item.href} hrefLang={item.code === 'pt' ? 'pt-BR' : item.code} lang={item.code} onClick={dismiss} aria-current={item.code === locale ? 'page' : undefined} className={item.code === locale
               ? 'inline-flex min-h-[40px] items-center border border-[#172b2c] bg-[#172b2c] px-3 text-xs font-semibold tracking-wider text-white'
-              : 'inline-flex min-h-[40px] items-center border border-[#d4cbbd] bg-white px-3 text-xs tracking-wider text-[#172b2c] hover:border-[#94754a]'}>
+              : 'inline-flex min-h-[40px] items-center border border-[#dce3e6] bg-white px-3 text-xs tracking-wider text-[#172b2c] hover:border-[#94754a]'}>
               {item.label}
             </Link>)}
           </nav>

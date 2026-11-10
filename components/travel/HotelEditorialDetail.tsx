@@ -42,8 +42,8 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
   const back = fr ? '/travel/hotels/istanbul' : '/en/travel/hotels/istanbul';
   const title = fr ? 'Adresse sélectionnée' : 'Editorial selection';
   return (
-    <main className="bg-[#f8f5ee] text-[#17252d]">
-      <section className="bg-[#102b38] text-[#f7f0e3]">
+    <main className="bg-white text-[#202629]">
+      <section className="hotel-detail-hero bg-white text-[#193344]">
         <div className="mx-auto max-w-7xl px-5 py-14 sm:py-20">
           <Link href={back} className="text-xs uppercase tracking-[0.16em] text-[#e8ca90] hover:underline">
             ← {fr ? 'Retour au guide des hôtels d’Istanbul' : 'Back to Istanbul hotel guide'}
@@ -64,10 +64,10 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
               onClick={() => setEnlarged(true)} aria-label={fr ? 'Agrandir la photographie' : 'Enlarge photograph'}>
               <EditorialPhoto key={photos[active].src} photo={photos[active]} locale={locale} className="object-cover" priority />
               <span className="absolute bottom-4 right-4 bg-[#102b38]/90 px-4 py-2 text-xs font-semibold text-white">
-                {fr ? 'Agrandir' : 'Enlarge'} · {active + 1}/{photos.length}
+                {fr ? 'Agrandir' : 'Enlarge'}
               </span>
             </button>
-            <p className="mt-3 text-sm text-[#586772]">{fr ? photos[active].fr : photos[active].en}</p>
+            <p className="sr-only">{fr ? photos[active].fr : photos[active].en}</p>
             <div className="mt-5 flex gap-3 overflow-x-auto pb-2" aria-label={fr ? 'Choisir une photographie' : 'Choose a photograph'}>
               {photos.map((photo, index) => (
                 <button type="button" key={photo.src} onClick={() => setActive(index)}
@@ -93,8 +93,8 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
             <h2 className="mt-12 font-serif text-2xl">{fr ? 'À vérifier avant la réservation' : 'What to check before booking'}</h2>
             <p className="mt-4 leading-8 text-[#475964]">{fr ? hotel.frWatch : hotel.enWatch}</p>
           </article>
-          <aside className="h-fit border border-[#e0d4c2] bg-white p-7">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#956f3c]">Bosphoras Luxury Stays</p>
+          <aside className="h-fit border border-[#dce3e6] bg-white p-7">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#526774]">Bosphoras Luxury Stays</p>
             <h2 className="mt-4 font-serif text-2xl">{fr ? 'Vérification officielle' : 'Official information'}</h2>
             <p className="mt-4 text-sm leading-7 text-[#52616c]">
               {fr ? 'Cette fiche est une sélection éditoriale indépendante. Les éventuels liens de réservation renvoient vers des partenaires vérifiés.' : 'This is an independent editorial profile. Any booking links lead to verified partners.'}
@@ -103,27 +103,27 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
           </aside>
         </div>
 
-        <section aria-label={fr ? 'Autour de l’hôtel' : 'Around the hotel'} className="mt-20 border-t border-[#e0d4c2] pt-10">
+        <section aria-label={fr ? 'Autour de l’hôtel' : 'Around the hotel'} className="mt-20 border-t border-[#dce3e6] pt-10">
           <div className="mb-8 max-w-3xl">
-            <p className="text-xs font-semibold uppercase tracking-[.2em] text-[#9c784a]">
+            <p className="text-xs font-semibold uppercase tracking-[.2em] text-[#526774]">
               {fr ? 'L’expérience de quartier' : 'The neighbourhood experience'}
             </p>
             <h2 className="mt-4 font-serif text-3xl sm:text-4xl">{fr ? localStory.frTitle : localStory.enTitle}</h2>
           </div>
           <div className="grid items-center gap-7 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] lg:gap-12">
-            <figure className="min-w-0">
+            <figure className="relative min-w-0">
               <div className="relative aspect-[16/10] overflow-hidden bg-[#d8d3ca]">
                 <Image src={cityScene.src} alt={fr ? cityScene.fr : cityScene.en}
                   fill sizes="(max-width: 1024px) 100vw, 650px"
                   className="object-cover" />
               </div>
-              <figcaption className="mt-3 text-xs leading-5 text-[#66737a]">
+              <details className="photo-attribution"><summary aria-label={fr?'Crédit photographique':'Photo credit'} title={fr?'Crédit photo':'Photo credit'}>©</summary><div className="photo-attribution-body">
                 {fr ? cityScene.fr : cityScene.en} · {fr ? 'Photo' : 'Photo'}{' '}
                 <a href={cityScene.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{cityScene.author}</a>
                 {' · '}
                 <a href={cityScene.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{cityScene.license}</a>
                 {' · '}{fr ? 'Format WebP optimisé' : 'Optimised WebP'}
-              </figcaption>
+              </div></details>
             </figure>
             <div>
               <p className="text-base leading-8 text-[#475964]">{fr ? localStory.fr : localStory.en}</p>
@@ -135,12 +135,12 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
             </div>
           </div>
         </section>
-        <section className="mt-20 border-t border-[#e0d4c2] pt-10">
+        <section className="mt-20 border-t border-[#dce3e6] pt-10">
           <h2 className="font-serif text-3xl">{fr ? 'Autres adresses à découvrir' : 'Other addresses to explore'}</h2>
           <div className="mt-7 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {istanbulHotels.filter((item) => item.id !== hotel.id).slice(0,6).map((item) => (
               <Link key={item.id} href={(fr ? '/travel' : '/en/travel') + '/hotels/istanbul/' + item.id}
-                className="border border-[#e4d8c9] bg-white p-5 hover:border-[#ad8c57]">
+                className="border border-[#dce3e6] bg-white p-5 hover:border-[#ad8c57]">
                 <span className="text-xs text-[#946e3d]">{item.zone}</span>
                 <span className="mt-2 block font-serif text-xl">{item.name}</span>
               </Link>

@@ -24,11 +24,11 @@ import {
 } from '@/data/propertyDesk';
 
 const primaryButton =
-  'inline-flex min-h-[48px] items-center justify-center gap-3 bg-[#d2a863] px-6 py-4 text-sm font-semibold text-[#101827] transition hover:bg-[#e0bc78] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#8a6728]';
+  'inline-flex min-h-[48px] items-center justify-center gap-3 bg-[#193344] px-6 py-4 text-sm font-semibold text-white transition hover:bg-[#2a5267] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#8a6728]';
 const darkButton =
-  'inline-flex min-h-[48px] items-center justify-center gap-3 bg-[#121826] px-6 py-4 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#263246]';
+  'inline-flex min-h-[48px] items-center justify-center gap-3 bg-[#193344] px-6 py-4 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#263246]';
 const textLink =
-  'inline-flex min-h-[44px] items-center gap-2 text-sm font-semibold text-[#795a22] underline decoration-[#d8c7a1] underline-offset-4 transition hover:text-[#8a6728]';
+  'inline-flex min-h-[44px] items-center gap-2 text-sm font-semibold text-[#193344] underline decoration-[#d8c7a1] underline-offset-4 transition hover:text-[#193344]';
 
 type SalesCopy = {
   pathsEyebrow: string;
@@ -301,9 +301,9 @@ export async function HomeProjectPaths({ locale }: { locale: Locale }) {
     <>
       <section id="votre-projet" className="scroll-mt-24 px-5 py-16 md:px-8 md:py-24">
         <div className="mx-auto max-w-[1320px]">
-          <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#8a6728]">{c.pathsEyebrow}</p>
+          <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#193344]">{c.pathsEyebrow}</p>
           <div className="mt-4 grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
-            <h2 className="max-w-3xl font-serif text-4xl leading-tight tracking-[-0.04em] text-[#121826] md:text-6xl">{c.pathsTitle}</h2>
+            <h2 className="max-w-3xl font-serif text-4xl leading-tight tracking-[-0.04em] text-[#193344] md:text-6xl">{c.pathsTitle}</h2>
             <p className="max-w-2xl text-base leading-8 text-[#46505f] lg:justify-self-end">{c.pathsIntro}</p>
           </div>
 
@@ -312,14 +312,12 @@ export async function HomeProjectPaths({ locale }: { locale: Locale }) {
               <Link
                 key={title}
                 href={href}
-                className="group flex min-h-[330px] flex-col border border-[#d8c7a1] bg-[#fffaf0] p-7 transition duration-300 hover:-translate-y-1 hover:border-[#8a6728] hover:shadow-[0_24px_70px_rgba(16,24,39,0.10)] md:p-9"
+                className="home-paths-card group flex min-h-[300px] flex-col border border-[#dce3e6] bg-white p-7 transition duration-300 hover:border-[#8fa3af] md:p-9"
               >
-                <div className="flex h-12 w-12 items-center justify-center border border-[#d8c7a1] bg-white text-[#8a6728]">
-                  <Icon aria-hidden="true" className="h-6 w-6" strokeWidth={1.4} />
-                </div>
-                <h3 className="mt-8 font-serif text-3xl leading-tight text-[#121826]">{title}</h3>
+                
+                <h3 className="font-serif text-3xl leading-tight text-[#193344]">{title}</h3>
                 <p className="mt-4 text-base leading-8 text-[#46505f]">{text}</p>
-                <span className="mt-auto inline-flex items-center gap-2 pt-8 text-sm font-semibold text-[#795a22]">
+                <span className="mt-auto inline-flex items-center gap-2 pt-8 text-sm font-semibold text-[#193344]">
                   {cta}<ArrowRight aria-hidden="true" size={16} className="transition group-hover:translate-x-1 rtl:rotate-180" />
                 </span>
               </Link>
@@ -333,12 +331,12 @@ export async function HomeProjectPaths({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      <section className="border-y border-[#d8c7a1] bg-white px-5 py-16 md:px-8 md:py-24">
+      <section className="border-y border-[#dce3e6] bg-white px-5 py-16 md:px-8 md:py-24">
         <div className="mx-auto max-w-[1320px]">
           <div className="grid gap-7 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#8a6728]">{c.propertyEyebrow}</p>
-              <h2 className="mt-4 max-w-3xl font-serif text-4xl leading-tight tracking-[-0.04em] text-[#121826] md:text-6xl">{c.propertySectionTitle}</h2>
+              <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#193344]">{c.propertyEyebrow}</p>
+              <h2 className="mt-4 max-w-3xl font-serif text-4xl leading-tight tracking-[-0.04em] text-[#193344] md:text-6xl">{c.propertySectionTitle}</h2>
             </div>
             <p className="max-w-2xl text-base leading-8 text-[#46505f] lg:justify-self-end">{c.propertySectionText}</p>
           </div>
@@ -354,25 +352,25 @@ export async function HomeProjectPaths({ locale }: { locale: Locale }) {
                   <Link
                     key={property.id}
                     href={getPropertyPath(locale, property)}
-                    className="group overflow-hidden border border-[#d8c7a1] bg-[#fffaf0] transition hover:border-[#8a6728] hover:shadow-[0_24px_70px_rgba(16,24,39,0.10)]"
+                    className="group overflow-hidden border border-[#dce3e6] bg-white transition hover:border-[#8fa3af] "
                   >
                     <div className="relative aspect-[4/3] overflow-hidden bg-[#e8dfd0]">
                       {image ? (
                         <img src={image} alt={title} loading="lazy" decoding="async" className="h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]" />
                       ) : (
-                        <div className="flex h-full items-center justify-center text-[#8a6728]"><Building2 className="h-10 w-10" strokeWidth={1.2} /></div>
+                        <div className="flex h-full items-center justify-center text-[#193344]"><Building2 className="h-10 w-10" strokeWidth={1.2} /></div>
                       )}
-                      {badge && <span className="absolute left-4 top-4 bg-[#121826]/92 px-3 py-2 text-[0.66rem] font-bold uppercase tracking-[0.16em] text-[#fffaf0]">{badge}</span>}
+                      {badge && <span className="absolute left-4 top-4 bg-[#193344]/92 px-3 py-2 text-[0.66rem] font-bold uppercase tracking-[0.16em] text-[#fffaf0]">{badge}</span>}
                     </div>
                     <div className="p-6">
-                      <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#8a6728]">{propertyLocationLabel(property)}</p>
-                      <h3 className="mt-3 font-serif text-2xl leading-tight text-[#121826]">{title}</h3>
-                      <div className="mt-5 flex items-end justify-between gap-4 border-t border-[#d8c7a1] pt-5">
+                      <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#193344]">{propertyLocationLabel(property)}</p>
+                      <h3 className="mt-3 font-serif text-2xl leading-tight text-[#193344]">{title}</h3>
+                      <div className="mt-5 flex items-end justify-between gap-4 border-t border-[#dce3e6] pt-5">
                         <div>
-                          <p className="text-lg font-semibold text-[#121826]">{formatPropertyPrice(property, locale)}</p>
+                          <p className="text-lg font-semibold text-[#193344]">{formatPropertyPrice(property, locale)}</p>
                           {entry && <p className="mt-1 text-xs text-[#5d6672]">{entry}</p>}
                         </div>
-                        <ArrowRight className="h-5 w-5 shrink-0 text-[#8a6728] transition group-hover:translate-x-1 rtl:rotate-180" />
+                        <ArrowRight className="h-5 w-5 shrink-0 text-[#193344] transition group-hover:translate-x-1 rtl:rotate-180" />
                       </div>
                     </div>
                   </Link>
@@ -380,19 +378,19 @@ export async function HomeProjectPaths({ locale }: { locale: Locale }) {
               })}
             </div>
           ) : (
-            <div className="mt-10 border border-[#d8c7a1] bg-[#fffaf0] p-7 text-base leading-8 text-[#46505f]">{c.selectionFallback}</div>
+            <div className="mt-10 border border-[#dce3e6] bg-white p-7 text-base leading-8 text-[#46505f]">{c.selectionFallback}</div>
           )}
 
           <Link href={propertyHref} className={darkButton + ' mt-8'}>{c.allProperties}<ArrowRight size={16} aria-hidden="true" /></Link>
 
-          <div className="mt-12 border border-[#23483f] bg-[#0c1b18] p-7 text-white md:p-9">
+          <div className="mt-12 border border-[#193344] bg-[#193344] p-7 text-white md:p-9">
             <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#c9aa7a]">{c.globalEyebrow}</p>
+                <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#dce6eb]">{c.globalEyebrow}</p>
                 <h3 className="mt-4 max-w-3xl font-serif text-3xl leading-tight tracking-[-0.03em] md:text-4xl">{c.globalTitle}</h3>
                 <p className="mt-4 max-w-3xl text-sm leading-7 text-[#c5d0cc] md:text-base">{c.globalText}</p>
               </div>
-              <Link href={globalPropertyHref} className="inline-flex min-h-[48px] items-center justify-center gap-3 border border-[#c9aa7a]/55 px-6 py-4 text-sm font-semibold text-[#f6efe4] transition hover:bg-white/10">
+              <Link href={globalPropertyHref} className="inline-flex min-h-[48px] items-center justify-center gap-3 border border-[#8fa3af]/55 px-6 py-4 text-sm font-semibold text-[#f6efe4] transition hover:bg-white/10">
                 {c.globalCta}<ArrowRight size={16} aria-hidden="true" />
               </Link>
             </div>
@@ -401,18 +399,18 @@ export async function HomeProjectPaths({ locale }: { locale: Locale }) {
       </section>
 
       <section className="px-5 py-16 md:px-8 md:py-24">
-        <div className="mx-auto grid max-w-[1320px] overflow-hidden border border-[#d8c7a1] bg-[#fffaf0] lg:grid-cols-2">
+        <div className="mx-auto grid max-w-[1320px] overflow-hidden border border-[#dce3e6] bg-white lg:grid-cols-2">
           <div className="p-7 md:p-12 lg:p-14">
-            <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#8a6728]">{c.businessEyebrow}</p>
-            <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-0.04em] text-[#121826] md:text-5xl">{c.businessSectionTitle}</h2>
+            <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#193344]">{c.businessEyebrow}</p>
+            <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-0.04em] text-[#193344] md:text-5xl">{c.businessSectionTitle}</h2>
             <p className="mt-6 text-base leading-8 text-[#46505f]">{c.businessSectionText}</p>
             <Link href={businessHref} className={darkButton + ' mt-8'}>{c.businessCta}<ArrowRight size={16} aria-hidden="true" /></Link>
           </div>
-          <div className="bg-[#121826] p-7 text-[#fffaf0] md:p-12 lg:p-14">
+          <div className="bg-[#193344] p-7 text-[#fffaf0] md:p-12 lg:p-14">
             <div className="grid gap-4 sm:grid-cols-2">
               {c.businessSteps.map((step, index) => (
                 <div key={step} className="border border-white/15 bg-white/[0.035] p-5">
-                  <span className="text-xs font-bold tracking-[0.2em] text-[#d2a863]">0{index + 1}</span>
+                  
                   <p className="mt-5 font-serif text-2xl">{step}</p>
                 </div>
               ))}
@@ -421,36 +419,36 @@ export async function HomeProjectPaths({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      <section className="bg-[#ece3d5] px-5 py-16 md:px-8 md:py-24">
+      <section className="bg-[#f5f6f5] px-5 py-16 md:px-8 md:py-24">
         <div className="mx-auto grid max-w-[1320px] gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#8a6728]">{c.relocationEyebrow}</p>
-            <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-0.04em] text-[#121826] md:text-5xl">{c.relocationSectionTitle}</h2>
+            <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#193344]">{c.relocationEyebrow}</p>
+            <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-0.04em] text-[#193344] md:text-5xl">{c.relocationSectionTitle}</h2>
             <p className="mt-6 max-w-2xl text-base leading-8 text-[#46505f]">{c.relocationSectionText}</p>
             <Link href={relocationHref} className={darkButton + ' mt-8'}>{c.relocationCta}<ArrowRight size={16} aria-hidden="true" /></Link>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {c.relocationSteps.map((step) => (
-              <div key={step} className="flex min-h-[120px] items-start gap-4 border border-[#d8c7a1] bg-[#fffaf0] p-6">
-                <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-[#8a6728]" strokeWidth={1.5} />
-                <p className="font-serif text-2xl leading-snug text-[#121826]">{step}</p>
+              <div key={step} className="flex min-h-[120px] items-start gap-4 border border-[#dce3e6] bg-white p-6">
+                <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-[#193344]" strokeWidth={1.5} />
+                <p className="font-serif text-2xl leading-snug text-[#193344]">{step}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-[#071426] px-5 py-20 text-[#fffaf0] md:px-8 md:py-28">
+      <section className="bg-[#193344] px-5 py-20 text-[#fffaf0] md:px-8 md:py-28">
         <div className="mx-auto grid max-w-[1320px] gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#d2a863]">{c.differenceEyebrow}</p>
+            <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#dce6eb]">{c.differenceEyebrow}</p>
             <h2 className="mt-5 max-w-4xl font-serif text-4xl leading-tight tracking-[-0.04em] md:text-6xl">{c.differenceTitle}</h2>
             <p className="mt-7 max-w-3xl text-lg leading-9 text-[#d8cfbf]">{c.differenceText}</p>
           </div>
           <div className="space-y-4 lg:pt-10">
             {c.differencePoints.map((point) => (
-              <div key={point} className="flex gap-4 border-t border-[#d2a863]/25 py-5">
-                <ShieldCheck className="mt-1 h-5 w-5 shrink-0 text-[#d2a863]" strokeWidth={1.4} />
+              <div key={point} className="flex gap-4 border-t border-[#8fa3af]/25 py-5">
+                <ShieldCheck className="mt-1 h-5 w-5 shrink-0 text-[#dce6eb]" strokeWidth={1.4} />
                 <p className="text-base leading-8 text-[#e8e0d2]">{point}</p>
               </div>
             ))}
@@ -459,11 +457,11 @@ export async function HomeProjectPaths({ locale }: { locale: Locale }) {
       </section>
 
       <section className="px-5 py-16 md:px-8 md:py-24">
-        <div className="mx-auto max-w-[1320px] border border-[#d8c7a1] bg-[#fffaf0] p-7 md:p-12 lg:p-14">
+        <div className="mx-auto max-w-[1320px] border border-[#dce3e6] bg-white p-7 md:p-12 lg:p-14">
           <div className="grid gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-center">
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#8a6728]">{c.accessEyebrow}</p>
-              <h2 className="mt-4 max-w-4xl font-serif text-4xl leading-tight tracking-[-0.04em] text-[#121826] md:text-5xl">{c.accessTitle}</h2>
+              <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#193344]">{c.accessEyebrow}</p>
+              <h2 className="mt-4 max-w-4xl font-serif text-4xl leading-tight tracking-[-0.04em] text-[#193344] md:text-5xl">{c.accessTitle}</h2>
               <p className="mt-6 max-w-3xl text-base leading-8 text-[#46505f]">{c.accessText}</p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link href={privateAccessHref} className={darkButton}>{c.accessCta}<ArrowRight size={16} aria-hidden="true" /></Link>
@@ -472,9 +470,9 @@ export async function HomeProjectPaths({ locale }: { locale: Locale }) {
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
               {c.accessPoints.map((point) => (
-                <div key={point} className="flex min-h-[110px] items-center gap-4 border border-[#d8c7a1] bg-white p-5">
-                  <KeyRound className="h-5 w-5 shrink-0 text-[#8a6728]" strokeWidth={1.4} />
-                  <p className="font-serif text-xl leading-snug text-[#121826]">{point}</p>
+                <div key={point} className="flex min-h-[110px] items-center gap-4 border border-[#dce3e6] bg-white p-5">
+                  <KeyRound className="h-5 w-5 shrink-0 text-[#193344]" strokeWidth={1.4} />
+                  <p className="font-serif text-xl leading-snug text-[#193344]">{point}</p>
                 </div>
               ))}
             </div>
@@ -490,9 +488,9 @@ export function HomeFinalContact({ locale }: { locale: Locale }) {
   const assessmentHref = withAssessmentContext(route(locale, 'private-assessment'), '/', c.finalTitle, 'home');
 
   return (
-    <section className="bg-[#121826] px-5 py-16 text-[#fffaf0] md:px-8 md:py-24">
+    <section className="bg-[#193344] px-5 py-16 text-[#fffaf0] md:px-8 md:py-24">
       <div className="mx-auto max-w-5xl text-center">
-        <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#d2a863]">Bosphoras Private Office</p>
+        <p className="text-xs font-bold uppercase tracking-[0.28em] text-[#dce6eb]">Bosphoras Private Office</p>
         <h2 className="mt-4 font-serif text-4xl leading-tight tracking-[-0.04em] md:text-6xl">{c.finalTitle}</h2>
         <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-[#e0d8c9]">{c.finalText}</p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">

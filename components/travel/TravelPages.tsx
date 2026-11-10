@@ -296,32 +296,32 @@ export function Header({ locale, slug, limitedLocales = false }: { locale: Trave
     code,
     href: travelHref(code, slug),
   }));
-  return <header className="relative z-50 border-b border-[#c5a56a]/30 bg-[#0d1a23] text-[#faf6e9]">
+  return <header className="travel-navigation relative z-50 border-b border-[#dce3e6] bg-white text-[#193344]">
     <div className="mx-auto flex max-w-7xl items-center justify-between gap-5 px-5 py-4 lg:py-5">
-      <Link href={travelHref(locale)} className="shrink-0 text-sm font-semibold uppercase tracking-[0.20em] sm:text-base">
-        BOSPHORAS <span className="text-[#cdb37b]">LUXURY STAYS</span>
+      <Link href={travelHref(locale)} className="travel-wordmark shrink-0 font-sans text-sm font-normal uppercase tracking-[0.14em] sm:text-base" aria-label="Bosphoras Luxury Stays">
+        BOSPHORAS <span className="block pt-1 font-normal text-[0.52rem] tracking-[0.37em] text-[#425d6c] sm:text-[0.58rem]">LUXURY STAYS</span>
       </Link>
       <nav aria-label="Travel primary navigation" className="hidden items-center gap-4 text-xs lg:flex lg:gap-6 lg:text-sm">
-        {hotelSearch && <Link href={hotelSearchUrl} rel="sponsored" className="text-[#e7c78a]">{locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel'}</Link>}
-        <Link href={travelHref(locale,'destinations')} className="hover:text-[#e7c78a]">{t.destinations}</Link>
-        <Link href={travelHref(locale,'last-minute')} className="hover:text-[#e7c78a]">{t.lastMinute}</Link>
-        <Link href={travelHref(locale,'private-collection')} className="hover:text-[#e7c78a]">{t.privateCollection}</Link>
+        {hotelSearch && <Link href={hotelSearchUrl} rel="sponsored" className="text-[#193344]">{locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel'}</Link>}
+        <Link href={travelHref(locale,'destinations')} className="hover:text-[#456a7f]">{t.destinations}</Link>
+        <Link href={travelHref(locale,'last-minute')} className="hover:text-[#456a7f]">{t.lastMinute}</Link>
+        <Link href={travelHref(locale,'private-collection')} className="hover:text-[#456a7f]">{t.privateCollection}</Link>
       </nav>
       <TravelMobileMenu locale={locale} links={mobileLinks} categories={mobileCategories} languages={mobileLanguages} />
     </div>
     <nav aria-label="Travel categories" className="mx-auto hidden max-w-7xl gap-6 overflow-x-auto whitespace-nowrap px-5 pb-4 text-xs lg:flex lg:text-sm">
-      {travelCategories.map(category => <Link key={category} className="shrink-0 hover:text-[#e7c78a]" href={travelHref(locale,category)}>{travelKeywordTitles[category][locale]}</Link>)}
+      {travelCategories.map(category => <Link key={category} className="shrink-0 hover:text-[#456a7f]" href={travelHref(locale,category)}>{travelKeywordTitles[category][locale]}</Link>)}
     </nav>
     <nav aria-label="Travel language versions" className="mx-auto hidden max-w-7xl flex-wrap gap-x-3 gap-y-2 px-5 pb-4 text-xs lg:flex">
-      {travelLocaleCodes.filter(code => !limitedLocales || code === 'fr' || code === 'en').map(code => <Link key={code} href={travelHref(code,slug)} className={code === locale ? 'text-[#f0cb8e] underline underline-offset-4' : 'text-[#b6c3c5] hover:text-white'} lang={travelText(code).hreflang} hrefLang={travelText(code).hreflang}>{code === 'pt' ? 'PT-BR' : code.toUpperCase()}</Link>)}
+      {travelLocaleCodes.filter(code => !limitedLocales || code === 'fr' || code === 'en').map(code => <Link key={code} href={travelHref(code,slug)} className={code === locale ? 'text-[#193344] underline underline-offset-4' : 'text-[#4a606f] hover:text-white'} lang={travelText(code).hreflang} hrefLang={travelText(code).hreflang}>{code === 'pt' ? 'PT-BR' : code.toUpperCase()}</Link>)}
     </nav>
   </header>;
 }
 export function Footer({ locale }: { locale: TravelLocale }) {
   const t = travelText(locale);
-  return <footer className="bg-[#0d1a23] text-[#eee5d8] mt-20">
+  return <footer className="travel-footer bg-[#193344] text-white mt-0">
     <div className="mx-auto max-w-7xl px-5 py-12 grid gap-8 md:grid-cols-3 text-sm">
-      <section><p className="font-semibold tracking-[0.17em] uppercase">Bosphoras Luxury Stays</p><p className="text-[#cdb37b] mt-3">{t.slogan}</p><p className="text-[#bac5c8] mt-3">{t.value}</p></section>
+      <section><p className="footer-brand font-normal tracking-[0.17em] uppercase">Bosphoras Luxury Stays</p><p className="text-[#d6e1e5] mt-3">{t.slogan}</p><p className="text-[#bac5c8] mt-3">{t.value}</p></section>
       <nav aria-label="Travel collections"><p className="font-semibold mb-3">{t.collections}</p><div className="grid gap-2">{travelCategories.map(category => <Link key={category} href={travelHref(locale,category)}>{travelKeywordTitles[category][locale]}</Link>)}</div></nav>
       <section><p className="font-semibold mb-3">{t.booking}</p><p className="text-[#bac5c8]">{t.draft}</p><p className="mt-4"><Link className="underline" href="/mentions-legales">Mentions légales</Link> · <Link className="underline" href="/confidentialite">Confidentialité</Link></p><p className="mt-4"><Link className="underline underline-offset-4" href={['fr','en','ru','ar'].includes(locale) ? (locale==='fr'?'/carrieres':'/'+locale+'/carrieres') : '/carrieres?lang='+locale}>{locale==='fr'?'Carrières & recrutement':locale==='en'?'Careers & recruitment':locale==='ru'?'Карьера и вакансии':locale==='ar'?'الوظائف والتوظيف':locale==='tr'?'Kariyer':locale==='de'?'Karriere':locale==='es'?'Trabaja con nosotros':locale==='it'?'Lavora con noi':locale==='pt'?'Carreiras':'加入我们'}</Link></p></section>
     </div>
@@ -332,16 +332,16 @@ function DestCard({ locale, destination, category }: { locale: TravelLocale; des
   const href = category ? travelHref(locale,category + '/' + destination.slug) : travelHref(locale,'destinations/' + destination.slug);
   const city = featuredCityGuide(destination.slug);
   const hero = city?.photos[city.hero];
-  return <Link href={href} className="group overflow-hidden bg-white border border-[#e8e0d1] rounded-sm hover:border-[#b7955d] transition-colors min-h-[150px] flex flex-col justify-between">
+  return <Link href={href} className="group overflow-hidden bg-white border border-[#dce3e6] rounded-sm hover:border-[#829ba9] transition-colors min-h-[150px] flex flex-col justify-between">
     {hero && <div className="relative aspect-[16/9] overflow-hidden bg-[#c8d2d0]">
       <Image src={hero.src} alt={locale === 'fr' ? hero.fr : hero.en} fill
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 430px"
         className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
     </div>}
     <div className="flex flex-1 flex-col justify-between p-5">
-      <div><p className="text-xs uppercase tracking-wider text-[#a17d48]">{destination.country}</p>
+      <div><p className="text-xs uppercase tracking-wider text-[#546c7a]">{destination.country}</p>
         <h3 className="font-serif text-2xl text-[#1d2c39] mt-3">{destination.name}</h3></div>
-      <span className="text-sm text-[#687887] group-hover:text-[#8b6837] mt-4">{travelText(locale).explore} →</span>
+      <span className="text-sm text-[#687887] group-hover:text-[#456a7f] mt-4">{travelText(locale).explore} →</span>
     </div>
   </Link>;
 }
@@ -516,20 +516,20 @@ function Approach({ locale, destination, category }: { locale: TravelLocale; des
     : category && locale === 'en' ? categoryLead[category].checks
     : generalChecksByLocale[locale];
   return <div className="grid md:grid-cols-3 gap-6 mt-10">
-    <article className="border-t border-[#b7955d] pt-5">
+    <article className="border-t border-[#829ba9] pt-5">
       <h2 className="font-serif text-2xl mb-3">{lens[0]}</h2>
       <p className="text-[#465968] leading-7">{t.value}</p>
       {locale === 'en' && <p className="mt-4 text-[#465968] leading-7">{travelEditorial[destination.slug]?.enIntro || destination.angle}</p>}
       {locale === 'fr' && travelEditorial[destination.slug] && <p className="mt-4 text-[#465968] leading-7">{travelEditorial[destination.slug].frIntro}</p>}
       <p className="mt-4 text-[#465968] leading-7">{t.approach}</p>
     </article>
-    <article className="border-t border-[#b7955d] pt-5">
+    <article className="border-t border-[#829ba9] pt-5">
       <h2 className="font-serif text-2xl mb-3">{lens[1]}</h2>
       <ul className="list-disc list-inside space-y-3 text-[#465968] leading-7">{checks.map(v=><li key={v}>{v}</li>)}</ul>
       {locale === 'en' && travelEditorial[destination.slug] && <p className="mt-5 text-[#465968] leading-7">{travelEditorial[destination.slug].enDetail}</p>}
       {locale === 'fr' && travelEditorial[destination.slug] && <p className="mt-5 text-[#465968] leading-7">{travelEditorial[destination.slug].frDetail}</p>}
     </article>
-    <article className="border-t border-[#b7955d] pt-5">
+    <article className="border-t border-[#829ba9] pt-5">
       <h2 className="font-serif text-2xl mb-3">{lens[2]}</h2>
       <p className="text-[#465968] leading-7">{t.draft}</p>
       <p className="mt-4 text-[#465968] leading-7">{t.independent} · {t.booking}</p>
@@ -544,6 +544,8 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
     region, label: travelRegions[region], destinations: travelDestinations.filter(x=>x.region===region)
   })).filter(x=>x.destinations.length);
   const featured = activeDestinations.map(slug=>destinationBySlug.get(slug)).filter((x):x is TravelDestination=>Boolean(x));
+  const homeCity=featuredCityGuide('istanbul');
+  const homeHero=homeCity?.photos[homeCity.hero];
   const category = route.category;
   const destination = route.destination;
   const filtered = category ? travelDestinations.filter(d=>d.categories.includes(category)) : [];
@@ -557,7 +559,7 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
     : 'The World, Through Local Eyes.';
   if (route.kind === 'hotel' && route.hotel) {
     if (locale !== 'fr' && locale !== 'en') notFound();
-    return <div lang={t.hreflang} dir="ltr" className="min-h-screen bg-[#f8f5ee]">
+    return <div lang={t.hreflang} dir="ltr" className="bosphoras-editorial min-h-screen bg-white">
       <Schema locale={locale} route={route}/>
       <Header locale={locale} slug={route.slug} limitedLocales/>
       <HotelEditorialDetail hotel={route.hotel} locale={locale}/>
@@ -565,7 +567,7 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
     </div>;
   }
   if (route.kind === 'keyword' && destination?.slug === 'istanbul' && category === 'hotels' && (locale === 'fr' || locale === 'en')) {
-    return <div lang={t.hreflang} dir="ltr" className="min-h-screen bg-[#f8f5ee]">
+    return <div lang={t.hreflang} dir="ltr" className="bosphoras-editorial min-h-screen bg-white">
       <Schema locale={locale} route={route}/>
       <Header locale={locale} slug={route.slug}/>
       <IstanbulFlagship locale={locale}/>
@@ -575,36 +577,39 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
   const selectedCity = featuredCityGuide(destination?.slug);
   if (selectedCity && (locale === 'fr' || locale === 'en') &&
       (route.kind === 'destination' || (route.kind === 'keyword' && category === 'hotels'))) {
-    return <div lang={t.hreflang} dir="ltr" className="min-h-screen bg-[#f8f5ee]">
+    return <div lang={t.hreflang} dir="ltr" className="bosphoras-editorial min-h-screen bg-white">
       <Schema locale={locale} route={route}/>
       <Header locale={locale} slug={route.slug} limitedLocales/>
       <FeaturedCityGuide city={selectedCity} locale={locale} variant={route.kind === 'destination' ? 'destination' : 'hotels'}/>
       <Footer locale={locale}/>
     </div>;
   }
-  return <div lang={t.hreflang} dir={locale === 'ar' ? 'rtl' : 'ltr'} className="min-h-screen bg-[#f9f7f1] text-[#1c2d39]">
+  return <div lang={t.hreflang} dir={locale === 'ar' ? 'rtl' : 'ltr'} className="bosphoras-editorial min-h-screen bg-white text-[#202629]">
     <Schema locale={locale} route={route}/>
     <Header locale={locale} slug={route.slug}/>
     <main>
-      <section className="bg-[#112632] text-[#f8f4e8] px-5 py-16 sm:py-24">
-        <div className="mx-auto max-w-7xl">
-          <p className="text-xs tracking-[0.24em] uppercase text-[#d5b883] mb-6">BOSPHORAS · LUXURY STAYS</p>
+      <section className={'travel-index-hero px-5 ' + (route.kind==='home'?'travel-home-hero':'')}>
+        <div className="travel-index-copy mx-auto max-w-7xl">
+          <p className="text-xs tracking-[0.24em] uppercase text-[#193344] mb-6">BOSPHORAS · LUXURY STAYS</p>
           <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl leading-tight max-w-5xl">{focus}</h1>
-          <p className="max-w-2xl text-lg leading-8 text-[#c8d5d9] mt-8">{t.tagline}</p>
-          <p className="max-w-3xl text-sm text-[#aebfc6] mt-5">{t.value}</p>
-          {destination && <p className="mt-6 text-sm text-[#e6cc94]">{destination.country} · {travelRegions[destination.region] || destination.region}</p>}
+          <p className="max-w-2xl text-lg leading-8 text-[#526774] mt-8">{t.tagline}</p>
+          <p className="max-w-3xl text-sm text-[#637482] mt-5">{t.value}</p>
+          {destination && <p className="mt-6 text-sm text-[#526774]">{destination.country} · {travelRegions[destination.region] || destination.region}</p>}
         </div>
+        {route.kind==='home' && homeHero && <div className="travel-index-photo">
+          <Image src={homeHero.src} alt={locale==='fr'?homeHero.fr:homeHero.en} fill priority sizes="(min-width:900px) 49vw, 100vw" className="object-cover"/>
+        </div>}
       </section>
-      <div className="mx-auto max-w-7xl px-5 py-12">
+      <div className="travel-index-content mx-auto max-w-7xl px-5 py-12">
         {route.kind !== 'home' && <BreadCrumb locale={locale} items={travelCrumbs(locale, route)}/>}
         {route.kind === 'home' && <>
           <section className="mb-16">
             <h2 className="font-serif text-3xl sm:text-4xl">{t.collections}</h2>
-            <div className="grid md:grid-cols-3 gap-4 mt-8">{travelCategories.map(c=><Link key={c} href={travelHref(locale,c)} className="bg-white border border-[#e3dacb] p-7 hover:border-[#b7955d]">
+            <div className="grid md:grid-cols-3 gap-4 mt-8">{travelCategories.map(c=><Link key={c} href={travelHref(locale,c)} className="bg-white border border-[#dce3e6] p-7 hover:border-[#829ba9]">
               <h3 className="font-serif text-2xl">{travelKeywordTitles[c][locale]}</h3><p className="text-sm text-[#647583] mt-4">{categoryLead[c].keyword}</p>
             </Link>)}</div>
           </section>
-          <section className="mb-16"><div className="flex items-center justify-between flex-wrap gap-4"><h2 className="font-serif text-3xl sm:text-4xl">{t.destinations}</h2><Link className="underline text-[#83633f]" href={travelHref(locale,'destinations')}>{t.all} →</Link></div><DestinationGrid locale={locale} destinations={featured}/></section>
+          <section className="mb-16"><div className="flex items-center justify-between flex-wrap gap-4"><h2 className="font-serif text-3xl sm:text-4xl">{t.destinations}</h2><Link className="underline text-[#193344]" href={travelHref(locale,'destinations')}>{t.all} →</Link></div><DestinationGrid locale={locale} destinations={featured}/></section>
         </>}
         {route.kind === 'directory' && <div className="space-y-16">{regionPairs.map(group=><section key={group.region}><h2 className="font-serif text-3xl">{group.label}</h2><p className="text-sm text-[#5e6e7b] mt-2">{group.destinations.length} destinations</p><DestinationGrid locale={locale} destinations={group.destinations}/></section>)}</div>}
         {route.kind === 'category' && category && <section>
@@ -616,7 +621,7 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
           <section><h2 className="font-serif text-3xl">{t.perspective} · {destination.name}</h2>
           <Approach locale={locale} destination={destination}/>
           <div className="mt-14"><h2 className="font-serif text-3xl">{t.collections}</h2><div className="grid md:grid-cols-3 gap-4 mt-7">
-            {destination.categories.map(c=><Link className="border bg-white border-[#e3dacb] hover:border-[#a88c62] p-6" key={c} href={travelHref(locale,c+'/'+destination.slug)}><h3 className="font-serif text-xl">{heading(locale,c,destination.name)}</h3><p className="text-[#637481] text-xs mt-3">{categoryLead[c].keyword}</p></Link>)}
+            {destination.categories.map(c=><Link className="border bg-white border-[#dce3e6] hover:border-[#829ba9] p-6" key={c} href={travelHref(locale,c+'/'+destination.slug)}><h3 className="font-serif text-xl">{heading(locale,c,destination.name)}</h3><p className="text-[#526774] text-xs mt-3">{categoryLead[c].keyword}</p></Link>)}
           </div></div></section>
         </>}
         {route.kind === 'keyword' && destination && category && <>
@@ -626,7 +631,7 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
           {locale === 'fr' && travelEditorial[destination.slug] && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug].frIntro}</p>}
           {locale === 'en' && travelEditorial[destination.slug] && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug].enDetail}</p>}
           {locale === 'fr' && travelEditorial[destination.slug] && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug].frDetail}</p>}
-          <p className="mt-5 text-sm text-[#7b6342]">{categoryLead[category].keyword}</p></section>
+          <p className="mt-5 text-sm text-[#526774]">{categoryLead[category].keyword}</p></section>
           <Approach locale={locale} destination={destination} category={category}/>
           {/* Genuine destination FAQs are held back until locally researched and editorially reviewed.
               Repeating boilerplate Q&A across hundreds of keyword URLs would reduce page quality. */}
@@ -634,9 +639,9 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
         {(route.kind === 'last-minute'||route.kind === 'private-collection') && <section className="max-w-4xl">
           <h2 className="font-serif text-3xl">{t.draftTitle}</h2><p className="text-[#536679] leading-8 mt-5">{t.draft}</p>
           <p className="text-[#536679] leading-8 mt-4">{t.value}</p>
-          <Link className="inline-block mt-8 border border-[#aa8956] px-5 py-3 hover:bg-white" href={travelHref(locale,'destinations')}>{t.all} →</Link>
+          <Link className="inline-block mt-8 border border-[#829ba9] px-5 py-3 hover:bg-white" href={travelHref(locale,'destinations')}>{t.all} →</Link>
         </section>}
-        {route.kind !== 'directory' && <section className="mt-20 border-t border-[#e2d6c7] pt-10">
+        {route.kind !== 'directory' && <section className="mt-20 border-t border-[#dce3e6] pt-10">
           <h2 className="font-serif text-3xl">{t.explore}</h2>
           <DestinationGrid locale={locale} destinations={featured.filter(d=>d.slug!==destination?.slug).slice(0,6)}/>
         </section>}
