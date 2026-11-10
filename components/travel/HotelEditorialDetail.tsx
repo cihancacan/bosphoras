@@ -51,9 +51,6 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
           <p className="mt-12 text-xs uppercase tracking-[0.2em] text-[#e0e9ee]">{title} · {hotel.zone}</p>
           <h1 className="mt-5 max-w-5xl font-sans font-normal text-4xl leading-tight sm:text-6xl">{hotel.name}</h1>
           <p className="mt-7 max-w-3xl text-lg leading-8 text-[#d7e0e0]">{fr ? hotel.frBest : hotel.enBest}</p>
-          <p className="mt-6 text-sm text-[#d3cbc0]">
-            {fr ? 'Guide indépendant · Pas de prix ni de disponibilité en direct pour le moment' : 'Independent guide · No live rate or availability yet'}
-          </p>
         </div>
       </section>
 
@@ -94,12 +91,7 @@ export function HotelEditorialDetail({ hotel, locale }: { hotel: Hotel; locale: 
             <p className="mt-4 leading-8 text-[#475964]">{fr ? hotel.frWatch : hotel.enWatch}</p>
           </article>
           <aside className="h-fit border border-[#e1e5e5] bg-white p-7">
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#193344]">Bosphoras Luxury Stays</p>
-            <h2 className="mt-4 font-sans font-normal text-2xl">{fr ? 'Vérification officielle' : 'Official information'}</h2>
-            <p className="mt-4 text-sm leading-7 text-[#52616c]">
-              {fr ? 'Cette fiche est une sélection éditoriale indépendante. Les éventuels liens de réservation renvoient vers des partenaires vérifiés.' : 'This is an independent editorial profile. Any booking links lead to verified partners.'}
-            </p>
-            <HotelPartnerBooking hotelKey={hotelPartnerKey('istanbul', hotel.id)} locale={locale} officialUrl={hotel.officialUrl} hotelName={hotel.name} />
+            <HotelPartnerBooking hotelKey={hotelPartnerKey('istanbul', hotel.id)} locale={locale} />
           </aside>
         </div>
 

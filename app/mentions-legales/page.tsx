@@ -78,6 +78,7 @@ const sections = [
       'Le site peut faire référence à des partenaires, professionnels, institutions, hôtels, assureurs, cliniques, avocats, comptables, transporteurs, bureaux ou prestataires tiers.',
       'Sauf mention écrite explicite, ces références ne constituent pas une affiliation officielle, une exclusivité, une garantie, une recommandation réglementée ou une certification.',
       'Chaque professionnel ou prestataire tiers demeure seul responsable de ses conseils, devis, obligations, autorisations, assurances, engagements et conditions contractuelles.',
+      'Les liens vers le moteur de réservation Nuitée peuvent constituer des liens commerciaux. Les prestations et paiements sont gérés par Nuitée Travel Limited, qui peut rémunérer Bosphoras pour une réservation effectuée par son intermédiaire.',
     ],
   },
   {

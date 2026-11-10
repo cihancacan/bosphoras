@@ -482,7 +482,7 @@ function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute })
           itemListOrder: 'https://schema.org/ItemListUnordered',
           numberOfItems: istanbulHotels.length,
           itemListElement: istanbulHotels.map((hotel, index) => ({
-            '@type': 'ListItem', position: index + 1, name: hotel.name, url: hotel.officialUrl
+            '@type': 'ListItem', position: index + 1, name: hotel.name
           }))
         }
       ] : []),

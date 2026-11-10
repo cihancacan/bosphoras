@@ -53,7 +53,7 @@ export function EditorialHotelCard({ hotel, locale }: EditorialHotelCardProps) {
         <Link href={fr ? '/travel/hotels/istanbul/' + hotel.id : '/en/travel/hotels/istanbul/' + hotel.id} className="mt-7 inline-flex w-fit bg-[#193344] px-5 py-3 text-sm font-medium text-white hover:bg-[#285063] focus-visible:outline-2 focus-visible:outline-offset-4">
           {fr ? 'Découvrir la fiche de cet hôtel' : 'Explore this hotel profile'} →
         </Link>
-        <HotelPartnerBooking hotelKey={hotelPartnerKey('istanbul', hotel.id)} locale={locale} officialUrl={hotel.officialUrl} hotelName={hotel.name} />
+        <HotelPartnerBooking hotelKey={hotelPartnerKey('istanbul', hotel.id)} locale={locale} />
       </div>
     </article>
   );

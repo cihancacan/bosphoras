@@ -39,7 +39,7 @@ import {krabiHotelEditorial, krabiAreaVisuals, confirmedKrabiAssets, krabiPhotoL
 import {sanMiguelDeAllendeDraftFaq} from '@/data/travel/sanMiguelDeAllendeDraftFaq';
 import {sanMiguelHotelEditorial,sanMiguelAreaVisuals,confirmedSanMiguelAssets,sanMiguelPhotoLicenses} from '@/data/travel/sanMiguelDeAllendePremiumEditorial';
 import Image from 'next/image';
-import { HotelPartnerBooking } from '@/components/travel/HotelPartnerBooking';
+import { HotelNuiteeLink, HotelPartnerBooking } from '@/components/travel/HotelPartnerBooking';
 import { hotelPartnerKey } from '@/lib/travel/hotelPartners';
 import type { BodrumHotelEditorial } from '@/data/travel/bodrumPremiumEditorial';
 import { alpineHotelEditorialByCity,alpineAreaVisualsByCity,alpineAvailablePhotoPathsByCity } from '@/data/travel/alpinePremiumEditorial';
@@ -297,6 +297,7 @@ function HotelTeaser({ guide, locale }: {guide:FeaturedCityGuideData;locale:Lang
             <strong>{fr?'Pour qui ? ':'Best suited to: '}</strong>
             {fr?hotelEditorialByCity[guide.slug][hotel.name].frBest:hotelEditorialByCity[guide.slug][hotel.name].enBest}
           </p>}
+          <div className="mt-auto pt-5"><HotelNuiteeLink hotelKey={hotelPartnerKey(guide.slug, hotel.officialUrl)} locale={locale} /></div>
         </article>)}
       </div>
       <p className="mt-6 text-sm text-[#667078]">
@@ -332,7 +333,7 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
         <p className="mt-6 border-l-2 border-[#b18c55] pl-4 text-sm leading-7 text-[#53636c]">
           <strong>{fr?'Avant de réserver : ':'Before booking: '}</strong>{fr?hotel.frWatch:hotel.enWatch}
         </p>
-        <HotelPartnerBooking hotelKey={hotelPartnerKey(guide.slug, hotel.officialUrl)} locale={locale} officialUrl={hotel.officialUrl} hotelName={hotel.name} />
+        <HotelPartnerBooking hotelKey={hotelPartnerKey(guide.slug, hotel.officialUrl)} locale={locale} />
       </article>)}
     </div>
     <p className="mt-7 text-sm leading-7 text-[#667078]">{fr
