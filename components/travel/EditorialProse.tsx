@@ -20,11 +20,11 @@ export function splitEditorialParagraphs(text: string, maxChars = 285): string[]
     let start = 0;
     // Only break at sentence punctuation followed by a new sentence. Avoid
     // decimals, St. Regis / Dr. / Mme. and similar proper-name abbreviations.
-    const boundaries = /([.!?…]+[»”"']?)(\s+)(?=[\p{Lu}«“"'\d])/gu;
+    const boundaries = /([.!?…]+[»”"']?)(\s+)(?=[A-ZÀ-ÖØ-ÞĀ-ŽА-ЯЁ0-9«“"'])/g;
     for (const match of block.matchAll(boundaries)) {
       const end = (match.index ?? 0) + match[1].length;
       const lastWord = block.slice(Math.max(0, end - 20), end)
-        .match(/([\p{L}]+)\.$/u)?.[1]?.toLowerCase();
+        .match(/([A-Za-zÀ-žА-Яа-яЁё]+)\.$/)?.[1]?.toLowerCase();
       if (lastWord && ABBREVIATIONS.has(lastWord)) continue;
       const sentence = block.slice(start, end).trim();
       if (sentence) sentences.push(sentence);
