@@ -1,3 +1,894 @@
 {
-  "hotels": []
+  "hotels": [
+    [
+      "new-york",
+      "Aman New York",
+      "lp65573b38"
+    ],
+    [
+      "new-york",
+      "The Fifth Avenue Hotel",
+      "lp656ca399"
+    ],
+    [
+      "miami",
+      "The Setai, Miami Beach",
+      "lp65736e55"
+    ],
+    [
+      "miami",
+      "The Miami Beach EDITION",
+      "lp1bd86"
+    ],
+    [
+      "miami",
+      "Four Seasons Hotel at The Surf Club",
+      "lp99e39"
+    ],
+    [
+      "los-angeles",
+      "The Beverly Hills Hotel",
+      "lp1e498"
+    ],
+    [
+      "los-angeles",
+      "Sunset Tower Hotel",
+      "lp22ae6"
+    ],
+    [
+      "los-angeles",
+      "Shutters on the Beach",
+      "lp20555"
+    ],
+    [
+      "jaipur",
+      "Rambagh Palace, Jaipur",
+      "lp33de1"
+    ],
+    [
+      "jaipur",
+      "The Oberoi Rajvilas, Jaipur",
+      "lp213ea"
+    ],
+    [
+      "jaipur",
+      "Raffles Jaipur",
+      "lp6582e5d3"
+    ],
+    [
+      "jaipur",
+      "The Leela Palace Jaipur",
+      "lpc2244"
+    ],
+    [
+      "galle",
+      "Amangalla",
+      "lpf0c2d"
+    ],
+    [
+      "galle",
+      "Galle Fort Hotel",
+      "lp39370"
+    ],
+    [
+      "galle",
+      "The Fort Printers",
+      "lp81eaa"
+    ],
+    [
+      "rajasthan",
+      "Umaid Bhawan Palace, Jodhpur",
+      "lp655ab1d0"
+    ],
+    [
+      "rajasthan",
+      "SUJÃN The Serai, Jaisalmer",
+      "lp657bce20"
+    ],
+    [
+      "udaipur",
+      "Taj Lake Palace, Udaipur",
+      "lp657a07d5"
+    ],
+    [
+      "udaipur",
+      "The Oberoi Udaivilas, Udaipur",
+      "lp309d5"
+    ],
+    [
+      "udaipur",
+      "The Leela Palace Udaipur",
+      "lp51345"
+    ],
+    [
+      "udaipur",
+      "Raffles Udaipur",
+      "lp65570889"
+    ],
+    [
+      "sentosa",
+      "Capella Singapore",
+      "lp4b708"
+    ],
+    [
+      "sentosa",
+      "Raffles Sentosa Singapore",
+      "lp65865947"
+    ],
+    [
+      "sentosa",
+      "W Singapore - Sentosa Cove",
+      "lp64934"
+    ],
+    [
+      "singapore",
+      "Marina Bay Sands",
+      "lp52e1e"
+    ],
+    [
+      "singapore",
+      "Raffles Singapore",
+      "lp1c5f8"
+    ],
+    [
+      "singapore",
+      "The Fullerton Bay Hotel Singapore",
+      "lp56d46"
+    ],
+    [
+      "singapore",
+      "The Singapore EDITION",
+      "lp656db5ab"
+    ],
+    [
+      "phu-quoc",
+      "Regent Phu Quoc",
+      "lp6556d996"
+    ],
+    [
+      "phu-quoc",
+      "JW Marriott Phu Quoc Emerald Bay Resort & Spa",
+      "lpa0b66"
+    ],
+    [
+      "phu-quoc",
+      "Premier Village Phu Quoc Resort â Managed by Accor",
+      "lpd01c5"
+    ],
+    [
+      "hoi-an",
+      "Anantara Hoi An Resort",
+      "lp3c5bb"
+    ],
+    [
+      "da-nang",
+      "Hyatt Regency Danang Resort and Spa",
+      "lp5fc40"
+    ],
+    [
+      "da-nang",
+      "Naman Retreat",
+      "lp76cb6"
+    ],
+    [
+      "vinh-hy-bay",
+      "Amanoi",
+      "lp233bcb"
+    ],
+    [
+      "vinh-hy-bay",
+      "Swiss-Belvillas Solavita Binh Tien",
+      "lp65873d77"
+    ],
+    [
+      "vinh-hy-bay",
+      "Casa Maya Resort",
+      "lp1e3ba1"
+    ],
+    [
+      "hakone",
+      "Gora Kadan",
+      "lp8a80d"
+    ],
+    [
+      "hakone",
+      "Hakone Suishoen",
+      "lpca7b0"
+    ],
+    [
+      "kyoto",
+      "Aman Kyoto",
+      "lp6554ebe2"
+    ],
+    [
+      "kyoto",
+      "Park Hyatt Kyoto",
+      "lp20e94d"
+    ],
+    [
+      "kyoto",
+      "The Ritz-Carlton, Kyoto",
+      "lp6d6dd"
+    ],
+    [
+      "kyoto",
+      "Four Seasons Hotel Kyoto",
+      "lp94151"
+    ],
+    [
+      "tokyo",
+      "Aman Tokyo",
+      "lpefb0e"
+    ],
+    [
+      "tokyo",
+      "Bvlgari Hotel Tokyo",
+      "lp656c3da0"
+    ],
+    [
+      "tokyo",
+      "Park Hyatt Tokyo",
+      "lp1a871"
+    ],
+    [
+      "tokyo",
+      "1 Hotel Tokyo",
+      "lp6588b4d0"
+    ],
+    [
+      "chiang-mai",
+      "137 Pillars House Chiang Mai",
+      "lp6096f"
+    ],
+    [
+      "chiang-mai",
+      "Anantara Chiang Mai Resort",
+      "lp374c8"
+    ],
+    [
+      "chiang-mai",
+      "Four Seasons Resort Chiang Mai",
+      "lp1b9b6"
+    ],
+    [
+      "bangkok",
+      "Capella Bangkok",
+      "lp65561e38"
+    ],
+    [
+      "bangkok",
+      "The Siam Bangkok",
+      "lp606f5"
+    ],
+    [
+      "koh-yao-noi",
+      "Cape Kudu Hotel",
+      "lp9d8a2"
+    ],
+    [
+      "koh-yao-noi",
+      "9 Hornbills Tented Camp",
+      "lpb7acf"
+    ],
+    [
+      "krabi",
+      "Rayavadee",
+      "lp23236"
+    ],
+    [
+      "krabi",
+      "Phulay Bay, a Ritz-Carlton Reserve",
+      "lp42b3d"
+    ],
+    [
+      "krabi",
+      "Banyan Tree Krabi",
+      "lp65562d36"
+    ],
+    [
+      "san-miguel-de-allende",
+      "Rosewood San Miguel de Allende",
+      "lp57e89"
+    ],
+    [
+      "san-miguel-de-allende",
+      "Casa de Sierra Nevada, A Belmond Hotel",
+      "lp31d65"
+    ],
+    [
+      "san-miguel-de-allende",
+      "Live Aqua San Miguel de Allende",
+      "lpef48c"
+    ],
+    [
+      "mayakoba",
+      "Rosewood Mayakoba",
+      "lp40d93"
+    ],
+    [
+      "mayakoba",
+      "Banyan Tree Mayakoba",
+      "lp442d0"
+    ],
+    [
+      "bodrum",
+      "Mandarin Oriental, Bodrum",
+      "lp7c9da"
+    ],
+    [
+      "bodrum",
+      "The Bodrum EDITION",
+      "lpe7ee1"
+    ],
+    [
+      "bodrum",
+      "Maxx Royal Bodrum",
+      "lp656c5606"
+    ],
+    [
+      "bodrum",
+      "Six Senses Kaplankaya",
+      "lp93982"
+    ],
+    [
+      "antalya",
+      "Regnum Carya",
+      "lp6c266"
+    ],
+    [
+      "antalya",
+      "Cullinan Belek",
+      "lp65577f9b"
+    ],
+    [
+      "antalya",
+      "Maxx Royal Kemer",
+      "lp77b4b"
+    ],
+    [
+      "dubai",
+      "The Lana Â· Dorchester Collection",
+      "lp656d4622"
+    ],
+    [
+      "dubai",
+      "Atlantis The Royal",
+      "lp6556acf7"
+    ],
+    [
+      "dubai",
+      "Jumeirah Al Naseem",
+      "lp9859d"
+    ],
+    [
+      "paris",
+      "Cheval Blanc Paris",
+      "lp6556adc2"
+    ],
+    [
+      "paris",
+      "Four Seasons Hotel George V, Paris",
+      "lp71b40"
+    ],
+    [
+      "paris",
+      "Mandarin Oriental Lutetia, Paris",
+      "lpc1bda"
+    ],
+    [
+      "saint-tropez",
+      "Cheval Blanc St-Tropez",
+      "lp64c06"
+    ],
+    [
+      "saint-tropez",
+      "HÃ´tel Byblos Saint-Tropez",
+      "lp65555c55"
+    ],
+    [
+      "saint-tropez",
+      "Airelles ChÃ¢teau de la MessardiÃ¨re",
+      "lp4679b"
+    ],
+    [
+      "bali",
+      "Bvlgari Resort Bali",
+      "lp3a202"
+    ],
+    [
+      "bali",
+      "Raffles Bali",
+      "lp65562e36"
+    ],
+    [
+      "bali",
+      "The Legian Seminyak, Bali",
+      "lp5157c"
+    ],
+    [
+      "phuket",
+      "Rosewood Phuket",
+      "lpb18c9"
+    ],
+    [
+      "koh-samui",
+      "Four Seasons Resort Koh Samui",
+      "lp3d1ce"
+    ],
+    [
+      "koh-samui",
+      "Six Senses Samui",
+      "lp37a70"
+    ],
+    [
+      "koh-samui",
+      "Banyan Tree Samui",
+      "lp55dd4"
+    ],
+    [
+      "maldives",
+      "Soneva Jani",
+      "lp9218d"
+    ],
+    [
+      "maldives",
+      "Cheval Blanc Randheli",
+      "lp8c162"
+    ],
+    [
+      "maldives",
+      "One&Only Reethi Rah",
+      "lp4ccbf"
+    ],
+    [
+      "maldives",
+      "Four Seasons Resort Maldives at Landaa Giraavaru",
+      "lp657aa4d8"
+    ],
+    [
+      "los-cabos",
+      "One&Only Palmilla",
+      "lp3271f"
+    ],
+    [
+      "los-cabos",
+      "Waldorf Astoria Los Cabos Pedregal",
+      "lp43739"
+    ],
+    [
+      "los-cabos",
+      "Las Ventanas al ParaÃ­so, A Rosewood Resort",
+      "lp56720"
+    ],
+    [
+      "saint-barthelemy",
+      "Eden Rock â St Barths",
+      "lpdd601"
+    ],
+    [
+      "saint-barthelemy",
+      "Rosewood Le Guanahani St. Barth",
+      "lp23071"
+    ],
+    [
+      "porto-cervo",
+      "Hotel Pitrizza",
+      "lp4c5b9"
+    ],
+    [
+      "porto-cervo",
+      "Cervo Hotel, Costa Smeralda Resort",
+      "lp21287"
+    ],
+    [
+      "courchevel-1850",
+      "Cheval Blanc Courchevel",
+      "lp1d9f60"
+    ],
+    [
+      "st-moritz",
+      "Badrutt's Palace Hotel",
+      "lp2ae7a"
+    ],
+    [
+      "st-moritz",
+      "Kulm Hotel St. Moritz",
+      "lp1c1f8"
+    ],
+    [
+      "st-moritz",
+      "Suvretta House",
+      "lp75457"
+    ],
+    [
+      "aspen",
+      "The Little Nell",
+      "lp1f153"
+    ],
+    [
+      "aspen",
+      "Hotel Jerome, Auberge Collection",
+      "lp2a9a8"
+    ],
+    [
+      "aspen",
+      "W Aspen",
+      "lp225527"
+    ],
+    [
+      "niseko",
+      "Park Hyatt Niseko Hanazono",
+      "lp224385"
+    ],
+    [
+      "niseko",
+      "Higashiyama Niseko Village, a Ritz-Carlton Reserve",
+      "lp6555cb92"
+    ],
+    [
+      "niseko",
+      "Setsu Niseko",
+      "lp65577ea3"
+    ],
+    [
+      "niseko",
+      "AYA Niseko",
+      "lp8c4b9"
+    ],
+    [
+      "megeve",
+      "Four Seasons Resort MegÃ¨ve",
+      "lpb1681"
+    ],
+    [
+      "megeve",
+      "Les Fermes de Marie",
+      "lp3e682"
+    ],
+    [
+      "jackson-hole",
+      "Four Seasons Resort Jackson Hole",
+      "lp340ca"
+    ],
+    [
+      "jackson-hole",
+      "Caldera House",
+      "lp35f318"
+    ],
+    [
+      "big-sky",
+      "Montage Big Sky",
+      "lp65571c8b"
+    ],
+    [
+      "big-sky",
+      "One&Only Moonlight Basin",
+      "lp6585ba71"
+    ],
+    [
+      "big-sky",
+      "Lone Mountain Ranch",
+      "lp896e6"
+    ],
+    [
+      "verbier",
+      "W Verbier",
+      "lp69c12"
+    ],
+    [
+      "verbier",
+      "Chalet d'Adrien",
+      "lp84980"
+    ],
+    [
+      "verbier",
+      "Experimental Chalet Verbier",
+      "lp770bf"
+    ],
+    [
+      "gstaad",
+      "Gstaad Palace",
+      "lp52880"
+    ],
+    [
+      "gstaad",
+      "The Alpina Gstaad",
+      "lp64cd7"
+    ],
+    [
+      "gstaad",
+      "Le Grand Bellevue",
+      "lp5412b"
+    ],
+    [
+      "zermatt",
+      "THE OMNIA",
+      "lp1e3ea6"
+    ],
+    [
+      "zermatt",
+      "Mont Cervin Palace",
+      "lp1ab10"
+    ],
+    [
+      "zermatt",
+      "CERVO Mountain Resort",
+      "lp51e2a"
+    ],
+    [
+      "zermatt",
+      "Riffelalp Resort 2222m",
+      "lp81889"
+    ],
+    [
+      "monaco",
+      "HÃ´tel de Paris Monte-Carlo",
+      "lp2271a"
+    ],
+    [
+      "monaco",
+      "HÃ´tel Hermitage Monte-Carlo",
+      "lp22867"
+    ],
+    [
+      "monaco",
+      "Monte-Carlo Bay Hotel & Resort",
+      "lp3d2c9"
+    ],
+    [
+      "saint-jean-cap-ferrat",
+      "Grand-HÃ´tel du Cap-Ferrat, A Four Seasons Hotel",
+      "lp874eb"
+    ],
+    [
+      "cap-dantibes",
+      "HÃ´tel du Cap-Eden-Roc",
+      "lp1901a5"
+    ],
+    [
+      "cap-dantibes",
+      "Cap dâAntibes Beach Hotel",
+      "lp4cae3"
+    ],
+    [
+      "cap-dantibes",
+      "HÃ´tel Belles Rives",
+      "lp323c2"
+    ],
+    [
+      "lake-como",
+      "Grand Hotel Tremezzo",
+      "lp235af"
+    ],
+    [
+      "lake-como",
+      "Passalacqua",
+      "lp656ca0e5"
+    ],
+    [
+      "lake-como",
+      "Il Sereno Lago di Como",
+      "lp9d2e9"
+    ],
+    [
+      "capri",
+      "J.K. Place Capri",
+      "lp656ee443"
+    ],
+    [
+      "capri",
+      "Hotel Punta Tragara",
+      "lp3a640"
+    ],
+    [
+      "capri",
+      "Jumeirah Capri Palace",
+      "lp235f5"
+    ],
+    [
+      "positano",
+      "Le Sirenuse",
+      "lp761a6"
+    ],
+    [
+      "positano",
+      "Hotel Poseidon Positano",
+      "lp34a25"
+    ],
+    [
+      "positano",
+      "Villa TreVille",
+      "lp655ad6d6"
+    ],
+    [
+      "positano",
+      "Il San Pietro di Positano",
+      "lp79bb0"
+    ],
+    [
+      "ravello",
+      "Caruso, A Belmond Hotel, Amalfi Coast",
+      "lpa827f"
+    ],
+    [
+      "ravello",
+      "Palazzo Avino",
+      "lp71b4b"
+    ],
+    [
+      "ravello",
+      "Hotel Villa Cimbrone",
+      "lp6fbd1"
+    ],
+    [
+      "ravello",
+      "Palazzo Confalone",
+      "lp55480"
+    ],
+    [
+      "antiparos",
+      "Soros Beach Antiparos",
+      "lp6566f6bb"
+    ],
+    [
+      "ibiza",
+      "Six Senses Ibiza",
+      "lp65571061"
+    ],
+    [
+      "ibiza",
+      "Nobu Hotel Ibiza Bay",
+      "lpa4054"
+    ],
+    [
+      "ibiza",
+      "The Standard, Ibiza",
+      "lp65578a4b"
+    ],
+    [
+      "formentera",
+      "Gecko Hotel & Beach Club",
+      "lp6555417b"
+    ],
+    [
+      "formentera",
+      "Teranka",
+      "lp6558385d"
+    ],
+    [
+      "formentera",
+      "Hotel Cala Saona & Spa",
+      "lpe5ff5"
+    ],
+    [
+      "deia",
+      "La Residencia, A Belmond Hotel, Mallorca",
+      "lp33b21"
+    ],
+    [
+      "port-andratx",
+      "Mon Port Hotel & Spa",
+      "lp56d21"
+    ],
+    [
+      "port-andratx",
+      "Zafiro Palace Andratx",
+      "lp225d17"
+    ],
+    [
+      "comporta",
+      "Quinta da Comporta â Wellness Boutique Resort",
+      "lp1e3d61"
+    ],
+    [
+      "comporta",
+      "Spatia Comporta",
+      "lp226c07"
+    ],
+    [
+      "comporta",
+      "AlmaLusa Comporta",
+      "lp6558a749"
+    ],
+    [
+      "melides",
+      "Pa.te.os",
+      "lp656f0515"
+    ],
+    [
+      "melides",
+      "CASAVADIA Melides",
+      "lp656a3bf4"
+    ],
+    [
+      "tivat",
+      "SIRO Porto Montenegro",
+      "lp65886965"
+    ],
+    [
+      "the-hamptons",
+      "Topping Rose House",
+      "lp75bd3"
+    ],
+    [
+      "the-hamptons",
+      "Gurneyâs Montauk Resort & Seawater Spa",
+      "lp6c527"
+    ],
+    [
+      "palm-beach",
+      "The Breakers Palm Beach",
+      "lp1b647"
+    ],
+    [
+      "palm-beach",
+      "The Brazilian Court Hotel",
+      "lp2559d"
+    ],
+    [
+      "palm-beach",
+      "The Colony Hotel Palm Beach",
+      "lp53786"
+    ],
+    [
+      "nantucket",
+      "Greydon House",
+      "lp9653d"
+    ],
+    [
+      "nantucket",
+      "The Nantucket Hotel & Resort",
+      "lp655b4b7f"
+    ],
+    [
+      "harbour-island",
+      "Coral Sands Inn & Cottages",
+      "lp2c7d8"
+    ],
+    [
+      "harbour-island",
+      "Pink Sands Resort",
+      "lp2a131"
+    ],
+    [
+      "turks-and-caicos",
+      "Amanyara",
+      "lpf0c2c"
+    ],
+    [
+      "turks-and-caicos",
+      "COMO Parrot Cay",
+      "lp2a789"
+    ],
+    [
+      "turks-and-caicos",
+      "The Shore Club",
+      "lp9313c"
+    ],
+    [
+      "canouan",
+      "Mandarin Oriental, Canouan",
+      "lp5897a"
+    ],
+    [
+      "punta-mita",
+      "Four Seasons Resort Punta Mita",
+      "lp4ff90"
+    ],
+    [
+      "punta-mita",
+      "Conrad Punta de Mita",
+      "lp5c6e0"
+    ],
+    [
+      "punta-mita",
+      "Susurros del CorazÃ³n, Auberge Collection",
+      "lp6557c877"
+    ],
+    [
+      "costa-careyes",
+      "Playa Rosa Bungalows",
+      "lp98f71"
+    ]
+  ]
 }
