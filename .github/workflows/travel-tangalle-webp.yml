@@ -1,4 +1,4 @@
-name: Bosphoras Tantangalle 80 - 21 verified private-preview WebP candidates
+name: Bosphoras Tangalle 80 - 21 verified private-preview WebP candidates
 on:
   push:
     branches:
@@ -40,7 +40,7 @@ jobs:
           assert len(images)==21 and len({p['webpSHA256'] for p in images})==21
           assert all(p['commercialRightsCleared'] for p in m['destinationScenes'])
           assert all(not p['previewVisualApproved'] for p in images)
-          assert len({p['sourcePage'] for p in images})==21
+          assert len({p['sourceResolvedUrl'] or p['sourcePage'] for p in images})==21
           for p in images:
             loc=pathlib.Path('public'+p['localPath'])
             assert loc.is_file(), p['key']
@@ -58,7 +58,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -- public/images/travel/tangalle-premium/ data/travel/tangalleMediaCandidates.json data/travel/tangalleWebpOptimization.json
           if ! git diff --cached --quiet; then
-            git commit -m "assets(travel): Tantangalle 80 21 source-checked WebP photo candidates [skip ci]"
+            git commit -m "assets(travel): Tangalle 80 21 source-checked WebP photo candidates [skip ci]"
             for attempt in 1 2 3 4; do
               git fetch origin feature/luxury-travel-seo-destinations-20261012
               git rebase origin/feature/luxury-travel-seo-destinations-20261012
@@ -68,7 +68,7 @@ jobs:
               fi
               sleep 3
             done
-            echo "Tantangalle asset push failed after retries" >&2
+            echo "Tangalle asset push failed after retries" >&2
             exit 1
           fi
       - uses: actions/upload-artifact@v4
