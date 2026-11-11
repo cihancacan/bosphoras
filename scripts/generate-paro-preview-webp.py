@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Paro #81: fetch 21 named source originals and create owner-preview-only WebPs.
+"""Paro #81: build 21 verified source images; no source substitution on failure.
 
 No destination or hotel image is substituted on network failure.
 Copyright is read from Commons image metadata when available and never
