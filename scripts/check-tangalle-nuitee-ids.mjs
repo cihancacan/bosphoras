@@ -21,6 +21,7 @@ async function list(params) {
  return Array.isArray(body.data)?body.data:[];
 }
 const candidates=[];
+// Only these four Tangalle properties are queried; no account-wide inventory scans.
 for(const hotel of hotels) {
  const found=new Map();
  for(const alias of hotel.aliases){
