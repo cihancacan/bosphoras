@@ -1,0 +1,33 @@
+{
+  "destination": "punakha",
+  "destinationNumber": 82,
+  "checkedDate": "2026-11-11",
+  "source": "Bosphoras-owned Nuitée WhiteLabel /v1/hotels/search-by-name; names, BT country, Punakha city and address checked (not a stock/price promise).",
+  "hotels": [
+    {
+      "name": "Pemako Punakha",
+      "id": "lp656dbea8",
+      "address": "Lhabesa, Punakha, Punakha, 13005, Bhutan",
+      "starsInSupplier": 4
+    },
+    {
+      "name": "Dhensa Resort",
+      "id": "lp96bb0",
+      "address": "Wolakha Punakha 117, Bhutan",
+      "starsInSupplier": 4,
+      "editorialAlias": "Dhensa Boutique Resort"
+    },
+    {
+      "name": "RKPO Green Resort",
+      "id": "lpa1200",
+      "address": "Lobesa, Punakha, 13001, Bhutan",
+      "starsInSupplier": 4
+    },
+    {
+      "name": "Zhingkham Resort",
+      "id": "lpa412e",
+      "address": "View Point of Punakha Dzong, Logodama, Punakha, Bhutan",
+      "starsInSupplier": 3
+    }
+  ]
+}
