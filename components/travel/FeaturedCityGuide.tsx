@@ -445,7 +445,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
         <a href={hotelPage?'#selection':'#quartiers'} className="shrink-0 hover:text-[#193344]">{hotelPage?(fr?'Les hôtels':'Hotels'):(city.slug==='porto-cervo'?(fr?'Les secteurs':'Areas'):city.slug==='saint-barthelemy'?(fr?'Les lieux':'Places'):city.slug==='los-cabos'?(fr?'Les secteurs':'Areas'):city.slug==='maldives'?(fr?'Les atolls':'Atolls'):(fr?'Les quartiers':'Areas'))}</a>
         {city.slug==='galle' && approvedPhotos.length>0 && <a href="#panoramas-galle" className="shrink-0 hover:text-[#193344]">{fr?'Vues de Galle':'Galle landscapes'}</a>}
         {city.slug==='tangalle' && approvedPhotos.length>0 && <a href="#panoramas-tangalle" className="shrink-0 hover:text-[#193344]">{fr?'Vues de Tangalle':'Tangalle landscapes'}</a>}
-        {city.slug==='paro' && approvedPhotos.length>0 && <a href="#panoramas-paro" className="shrink-0 hover:text-[#193344]">{fr?'Vues de Paro':'Paro landscapes'}</a>
+        {city.slug==='paro' && approvedPhotos.length>0 && <a href="#panoramas-paro" className="shrink-0 hover:text-[#193344]">{fr?'Vues de Paro':'Paro landscapes'}</a>}
         {city.slug==='rajasthan' && <a href="#panoramas-rajasthan" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
         {city.slug==='udaipur' && <a href="#panoramas-udaipur" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
         {city.slug==='sentosa' && <a href="#panoramas-sentosa" className="shrink-0 hover:text-[#193344]">{fr?'Panoramas':'Landscapes'}</a>}
