@@ -1,11 +1,11 @@
-# Zermatt GitHub QA — 2026-11-11T15:24:30Z
+# Zermatt GitHub QA — 2026-11-11T17:22:17Z
 
-Source commit: 36901ef941ebda856b446bce79013eda8f02536c
+Source commit: 74eca76b0bec70ab82f796e0f14d12e2b3b62f35
 
 | Check | Result |
 | --- | --- |
-| TypeScript | success |
-| Zermatt editorial / images | success |
-| Existing alpine guides | success |
+| TypeScript | failure |
+| Zermatt editorial / images | failure |
+| Existing alpine guides | failure |
 
 No Vercel build requested by this workflow. Photo approval remains individual.
