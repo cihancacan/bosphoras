@@ -1,7 +1,7 @@
 {
   "destination": "tangalle",
   "destinationNumber": 79,
-  "scope": "private_owner_noindex_preview",
+  "scope": "public_destination_and_hotel_gallery",
   "destinationScenes": [
     {
       "key": "scene-1",
@@ -360,8 +360,8 @@
       "subject": "Amanwella",
       "hotel": "Amanwella",
       "localPath": "/images/travel/tangalle-premium/hotels/aman-1.webp",
-      "commercialRightsCleared": false,
-      "rightsNotice": "Source authentifiée sur la galerie officielle de l'hôtel; droit de reproduction commerciale non confirmé. Preview uniquement.",
+      "commercialRightsCleared": true,
+      "rightsNotice": "Bosphoras owner explicitly confirmed rights to publish all hotel photos on 2026-11-11 in this conversation; retain original source and property attribution, without representing this as a Creative Commons licence.",
       "sourceResolvedUrl": "https://www.aman.com/sites/default/files/styles/full_size_browser%402x/public/2024-08/amanwella_pool.jpg?itok=WJpEyuPi",
       "sourceSHA256": "22b196c4355d9ff9f2c34d1d6c43c08bea99eec5c69d5e99a5cb3a185dbb3657",
       "webpSHA256": "2d9f5ac62661fc6608ab3c4d12dd89d8cc4b3d503942ab6a1fb8ac388bfacf9f",
@@ -380,9 +380,10 @@
       "visualReviewScope": "Assistant visually reviewed 21-photo authentic source contact sheet for Tangalle private owner Preview; exact geographic/hotel match; no grant of public-use rights inferred",
       "pixelFingerprint": "c932b0bde3cb5424c7403988e1ec52e30c54b7cc6d1c0915ba1f425aa063bc95",
       "dhash": "e968c28683c3693c",
-      "publicUseApproved": false,
+      "publicUseApproved": true,
       "visualReviewDate": "2026-11-11",
-      "visualReviewApprover": "assistant_for_private_preview"
+      "visualReviewApprover": "assistant_for_private_preview",
+      "publicationAuthority": "Site owner explicit rights confirmation, 2026-11-11"
     },
     {
       "key": "aman-2",
@@ -397,8 +398,8 @@
       "subject": "Amanwella",
       "hotel": "Amanwella",
       "localPath": "/images/travel/tangalle-premium/hotels/aman-2.webp",
-      "commercialRightsCleared": false,
-      "rightsNotice": "Source authentifiée sur la galerie officielle de l'hôtel; droit de reproduction commerciale non confirmé. Preview uniquement.",
+      "commercialRightsCleared": true,
+      "rightsNotice": "Bosphoras owner explicitly confirmed rights to publish all hotel photos on 2026-11-11 in this conversation; retain original source and property attribution, without representing this as a Creative Commons licence.",
       "sourceResolvedUrl": "https://www.aman.com/sites/default/files/styles/full_size_browser%402x/public/2022-04/Amanwella%2C%20Sri%20Lanka%20-%20suite%2C%20ocean%20view%202_1.jpg?itok=Z9bzcd5P",
       "sourceSHA256": "dd8e55b3f82415eff1d655092aa858bc198378527223b738ad3365f0c3cb87ca",
       "webpSHA256": "93393cd756a8f2b189e2a0c7281c8a18334ba496b8f01aabaf98dd4c91dcb20b",
@@ -417,9 +418,10 @@
       "visualReviewScope": "Assistant visually reviewed 21-photo authentic source contact sheet for Tangalle private owner Preview; exact geographic/hotel match; no grant of public-use rights inferred",
       "pixelFingerprint": "da6f5a25065d1481d348a1f4f2ce02685900afb8c27b9f90ab705cd962ad4a98",
       "dhash": "4b4b4343c7c7ce4e",
-      "publicUseApproved": false,
+      "publicUseApproved": true,
       "visualReviewDate": "2026-11-11",
-      "visualReviewApprover": "assistant_for_private_preview"
+      "visualReviewApprover": "assistant_for_private_preview",
+      "publicationAuthority": "Site owner explicit rights confirmation, 2026-11-11"
     },
     {
       "key": "aman-3",
@@ -434,8 +436,8 @@
       "subject": "Amanwella",
       "hotel": "Amanwella",
       "localPath": "/images/travel/tangalle-premium/hotels/aman-3.webp",
-      "commercialRightsCleared": false,
-      "rightsNotice": "Source authentifiée sur la galerie officielle de l'hôtel; droit de reproduction commerciale non confirmé. Preview uniquement.",
+      "commercialRightsCleared": true,
+      "rightsNotice": "Bosphoras owner explicitly confirmed rights to publish all hotel photos on 2026-11-11 in this conversation; retain original source and property attribution, without representing this as a Creative Commons licence.",
       "sourceResolvedUrl": "https://www.aman.com/sites/default/files/styles/full_size_browser%402x/public/2022-11/Amanwella%2C%20Sri%20Lanka%20-%20exterior%2C%20entrance%201.jpg?itok=Nc6alXqS",
       "sourceSHA256": "5e560a52f34b5209c7125f11df281f50af38c71374c72a01c73f09e49b9fc6ff",
       "webpSHA256": "2008214abe7817c4fac4675a43d02d3cb20d5618fffc92d2925ae115fb7b82c4",
@@ -454,9 +456,10 @@
       "visualReviewScope": "Assistant visually reviewed 21-photo authentic source contact sheet for Tangalle private owner Preview; exact geographic/hotel match; no grant of public-use rights inferred",
       "pixelFingerprint": "adfedcb4f02774c8c64140ff20903488a7122b4c55bed8a13beedd6a5a852f52",
       "dhash": "0107169d616fef3f",
-      "publicUseApproved": false,
+      "publicUseApproved": true,
       "visualReviewDate": "2026-11-11",
-      "visualReviewApprover": "assistant_for_private_preview"
+      "visualReviewApprover": "assistant_for_private_preview",
+      "publicationAuthority": "Site owner explicit rights confirmation, 2026-11-11"
     },
     {
       "key": "anantara-1",
@@ -471,8 +474,8 @@
       "subject": "Anantara Peace Haven Tangalle Resort",
       "hotel": "Anantara Peace Haven Tangalle Resort",
       "localPath": "/images/travel/tangalle-premium/hotels/anantara-1.webp",
-      "commercialRightsCleared": false,
-      "rightsNotice": "Source authentifiée sur la galerie officielle de l'hôtel; droit de reproduction commerciale non confirmé. Preview uniquement.",
+      "commercialRightsCleared": true,
+      "rightsNotice": "Bosphoras owner explicitly confirmed rights to publish all hotel photos on 2026-11-11 in this conversation; retain original source and property attribution, without representing this as a Creative Commons licence.",
       "sourceResolvedUrl": "https://assets.anantara.com/image/upload/q_auto,f_auto,c_limit,w_1920/media/minor/anantara/images/anantara-peace-haven-tangalle-resort/gallery/leisure/anantara_peace_haven_tangalle_resort_aerial_view_1920x1037.jpg",
       "sourceSHA256": "c5925b40c4b0a88befd21a98929263ad468239588596885377d93c0c2d9a0766",
       "webpSHA256": "d9e3debc0cfaf6715a728ce3888a6c109c3c600c88c51c868399d4d26ad1fe34",
@@ -491,9 +494,10 @@
       "visualReviewScope": "Assistant visually reviewed 21-photo authentic source contact sheet for Tangalle private owner Preview; exact geographic/hotel match; no grant of public-use rights inferred",
       "pixelFingerprint": "61de378312b4d74da8905d4b41ab4eb97aba1458f05af0cc031624404a3eaa28",
       "dhash": "583276cece64ce4e",
-      "publicUseApproved": false,
+      "publicUseApproved": true,
       "visualReviewDate": "2026-11-11",
-      "visualReviewApprover": "assistant_for_private_preview"
+      "visualReviewApprover": "assistant_for_private_preview",
+      "publicationAuthority": "Site owner explicit rights confirmation, 2026-11-11"
     },
     {
       "key": "anantara-2",
@@ -508,8 +512,8 @@
       "subject": "Anantara Peace Haven Tangalle Resort",
       "hotel": "Anantara Peace Haven Tangalle Resort",
       "localPath": "/images/travel/tangalle-premium/hotels/anantara-2.webp",
-      "commercialRightsCleared": false,
-      "rightsNotice": "Source authentifiée sur la galerie officielle de l'hôtel; droit de reproduction commerciale non confirmé. Preview uniquement.",
+      "commercialRightsCleared": true,
+      "rightsNotice": "Bosphoras owner explicitly confirmed rights to publish all hotel photos on 2026-11-11 in this conversation; retain original source and property attribution, without representing this as a Creative Commons licence.",
       "sourceResolvedUrl": "https://assets.anantara.com/image/upload/q_auto,f_auto,c_limit,w_1920/media/minor/anantara/images/anantara-peace-haven-tangalle-resort/gallery/accom/anantara_peace_haven_tangalle_resort_ocean_view_pool_villa_01_1920x1037.jpg",
       "sourceSHA256": "1e7bc5e1c58e42ab6b142a18d3a8780c0c17149a21c6e0c107b2bc9eabb94735",
       "webpSHA256": "3af581425b2129b0b14dddfade8d49abe95090b8de37b776cd9153bdd6fef06a",
@@ -528,9 +532,10 @@
       "visualReviewScope": "Assistant visually reviewed 21-photo authentic source contact sheet for Tangalle private owner Preview; exact geographic/hotel match; no grant of public-use rights inferred",
       "pixelFingerprint": "d924c530aae824e171d9415f351492c5b867a0d5cfb77ea45f43e32ebc6287c9",
       "dhash": "36163b27062f365e",
-      "publicUseApproved": false,
+      "publicUseApproved": true,
       "visualReviewDate": "2026-11-11",
-      "visualReviewApprover": "assistant_for_private_preview"
+      "visualReviewApprover": "assistant_for_private_preview",
+      "publicationAuthority": "Site owner explicit rights confirmation, 2026-11-11"
     },
     {
       "key": "anantara-3",
@@ -545,8 +550,8 @@
       "subject": "Anantara Peace Haven Tangalle Resort",
       "hotel": "Anantara Peace Haven Tangalle Resort",
       "localPath": "/images/travel/tangalle-premium/hotels/anantara-3.webp",
-      "commercialRightsCleared": false,
-      "rightsNotice": "Source authentifiée sur la galerie officielle de l'hôtel; droit de reproduction commerciale non confirmé. Preview uniquement.",
+      "commercialRightsCleared": true,
+      "rightsNotice": "Bosphoras owner explicitly confirmed rights to publish all hotel photos on 2026-11-11 in this conversation; retain original source and property attribution, without representing this as a Creative Commons licence.",
       "sourceResolvedUrl": "https://assets.anantara.com/image/upload/q_auto,f_auto,c_limit,w_1920/media/minor/anantara/images/anantara-peace-haven-tangalle-resort/gallery/accom/anantara_peace_haven_tangalle_resort_premier_ocean_view_room_01_1920x1037.jpg",
       "sourceSHA256": "901e4772ccdc54cc4ad2aded88b20e5826c471a637e735efdc63cec58fea4ed4",
       "webpSHA256": "f24c76605233022c252ef94d4b1de655c7f10fa42c2ac815a9fbbcff40ad9b20",
@@ -565,9 +570,10 @@
       "visualReviewScope": "Assistant visually reviewed 21-photo authentic source contact sheet for Tangalle private owner Preview; exact geographic/hotel match; no grant of public-use rights inferred",
       "pixelFingerprint": "d6cf472e4e600c82e81a40e6d8c79b0df9a5d88af7f0eefd62ba192c5c28ff8f",
       "dhash": "9eeceacaca8ececf",
-      "publicUseApproved": false,
+      "publicUseApproved": true,
       "visualReviewDate": "2026-11-11",
-      "visualReviewApprover": "assistant_for_private_preview"
+      "visualReviewApprover": "assistant_for_private_preview",
+      "publicationAuthority": "Site owner explicit rights confirmation, 2026-11-11"
     },
     {
       "key": "kayaam-1",
@@ -582,8 +588,8 @@
       "subject": "Kayaam Wellness",
       "hotel": "Kayaam Wellness",
       "localPath": "/images/travel/tangalle-premium/hotels/kayaam-1.webp",
-      "commercialRightsCleared": false,
-      "rightsNotice": "Source authentifiée sur la galerie officielle de l'hôtel; droit de reproduction commerciale non confirmé. Preview uniquement.",
+      "commercialRightsCleared": true,
+      "rightsNotice": "Bosphoras owner explicitly confirmed rights to publish all hotel photos on 2026-11-11 in this conversation; retain original source and property attribution, without representing this as a Creative Commons licence.",
       "sourceResolvedUrl": "https://cdn.fluxfullcircle.com/w800/wp.resplendentceylon.com/wp-content/uploads/2024/11/Ocean-Room-Poolside-Medium.jpg.webp",
       "sourceSHA256": "dbf966d62a5488fcb37b70dc6fe94f3417a41883aee014cf38feb00ff641b96b",
       "webpSHA256": "fbdf005579d82e3e9e3e2c76ee2749b6a2f648472ece7dc23e70609ea3b2583f",
@@ -602,9 +608,10 @@
       "visualReviewScope": "Assistant visually reviewed 21-photo authentic source contact sheet for Tangalle private owner Preview; exact geographic/hotel match; no grant of public-use rights inferred",
       "pixelFingerprint": "35035bc66f3032898eef5a00f139f324b2039a7c77b0e2181ed6e4f7d363f3ad",
       "dhash": "0f1823252129883e",
-      "publicUseApproved": false,
+      "publicUseApproved": true,
       "visualReviewDate": "2026-11-11",
-      "visualReviewApprover": "assistant_for_private_preview"
+      "visualReviewApprover": "assistant_for_private_preview",
+      "publicationAuthority": "Site owner explicit rights confirmation, 2026-11-11"
     },
     {
       "key": "kayaam-2",
@@ -619,8 +626,8 @@
       "subject": "Kayaam Wellness",
       "hotel": "Kayaam Wellness",
       "localPath": "/images/travel/tangalle-premium/hotels/kayaam-2.webp",
-      "commercialRightsCleared": false,
-      "rightsNotice": "Source authentifiée sur la galerie officielle de l'hôtel; droit de reproduction commerciale non confirmé. Preview uniquement.",
+      "commercialRightsCleared": true,
+      "rightsNotice": "Bosphoras owner explicitly confirmed rights to publish all hotel photos on 2026-11-11 in this conversation; retain original source and property attribution, without representing this as a Creative Commons licence.",
       "sourceResolvedUrl": "https://cdn.fluxfullcircle.com/w800/wp.resplendentceylon.com/wp-content/uploads/2024/11/SJP_6514-622-scaled-1.jpg.webp",
       "sourceSHA256": "1354ae044c7e4147f238e30567ebc46e3e3b9e5944ef4fedbd33d4791e4b7364",
       "webpSHA256": "1475c31004cc3f3a8f400ee24beba61cc509edb0f89ebd91c6e56eb93051418c",
@@ -639,9 +646,10 @@
       "visualReviewScope": "Assistant visually reviewed 21-photo authentic source contact sheet for Tangalle private owner Preview; exact geographic/hotel match; no grant of public-use rights inferred",
       "pixelFingerprint": "9263c7cddedc5eeb8c8ce403d172d0f9e63388d7b12d2426948956e3e402f133",
       "dhash": "9614141514344406",
-      "publicUseApproved": false,
+      "publicUseApproved": true,
       "visualReviewDate": "2026-11-11",
-      "visualReviewApprover": "assistant_for_private_preview"
+      "visualReviewApprover": "assistant_for_private_preview",
+      "publicationAuthority": "Site owner explicit rights confirmation, 2026-11-11"
     },
     {
       "key": "kayaam-3",
@@ -656,8 +664,8 @@
       "subject": "Kayaam Wellness",
       "hotel": "Kayaam Wellness",
       "localPath": "/images/travel/tangalle-premium/hotels/kayaam-3.webp",
-      "commercialRightsCleared": false,
-      "rightsNotice": "Source authentifiée sur la galerie officielle de l'hôtel; droit de reproduction commerciale non confirmé. Preview uniquement.",
+      "commercialRightsCleared": true,
+      "rightsNotice": "Bosphoras owner explicitly confirmed rights to publish all hotel photos on 2026-11-11 in this conversation; retain original source and property attribution, without representing this as a Creative Commons licence.",
       "sourceResolvedUrl": "https://cdn.fluxfullcircle.com/w800/wp.resplendentceylon.com/wp-content/uploads/2024/09/Kayaam-Ayurvedic-Massage-2200-x-3300-scaled.webp",
       "sourceSHA256": "507d46fa2861ce12b6693362d157982ae47b94ae08fc6ff44c8af726db3f1e2c",
       "webpSHA256": "5c831b18b34b751b7b69120b7aa4ecfe28c3c63e7b77dffb250a1b8f8290ffdd",
@@ -676,9 +684,10 @@
       "visualReviewScope": "Assistant visually reviewed 21-photo authentic source contact sheet for Tangalle private owner Preview; exact geographic/hotel match; no grant of public-use rights inferred",
       "pixelFingerprint": "03bd4885cb1f073558e19ac5ab5f9349efa55bead4b1ed22dc92f2a359b99bdb",
       "dhash": "7d9f8e37362b29d4",
-      "publicUseApproved": false,
+      "publicUseApproved": true,
       "visualReviewDate": "2026-11-11",
-      "visualReviewApprover": "assistant_for_private_preview"
+      "visualReviewApprover": "assistant_for_private_preview",
+      "publicationAuthority": "Site owner explicit rights confirmation, 2026-11-11"
     },
     {
       "key": "buckingham-1",
@@ -693,8 +702,8 @@
       "subject": "Buckingham Place",
       "hotel": "Buckingham Place",
       "localPath": "/images/travel/tangalle-premium/hotels/buckingham-1.webp",
-      "commercialRightsCleared": false,
-      "rightsNotice": "Source authentifiée sur la galerie officielle de l'hôtel; droit de reproduction commerciale non confirmé. Preview uniquement.",
+      "commercialRightsCleared": true,
+      "rightsNotice": "Bosphoras owner explicitly confirmed rights to publish all hotel photos on 2026-11-11 in this conversation; retain original source and property attribution, without representing this as a Creative Commons licence.",
       "sourceResolvedUrl": "https://buckinghamplace.lk/wp-content/uploads/2022/09/27.jpg",
       "sourceSHA256": "93d916b7a32f57b7260e52b3da925d1eb80648dd8b7af9d41e4ba884fb46df1f",
       "webpSHA256": "136183e7d97270d0531ed9f1b34694369a721972d4f9031382bc94a462b2b325",
@@ -713,9 +722,10 @@
       "visualReviewScope": "Assistant visually reviewed 21-photo authentic source contact sheet for Tangalle private owner Preview; exact geographic/hotel match; no grant of public-use rights inferred",
       "pixelFingerprint": "e6bf942a361df51eb0487c670ab330d33c7d096b4d3a9a579d8ef77e66b0f320",
       "dhash": "071d195d1d5db3b2",
-      "publicUseApproved": false,
+      "publicUseApproved": true,
       "visualReviewDate": "2026-11-11",
-      "visualReviewApprover": "assistant_for_private_preview"
+      "visualReviewApprover": "assistant_for_private_preview",
+      "publicationAuthority": "Site owner explicit rights confirmation, 2026-11-11"
     },
     {
       "key": "buckingham-2",
@@ -730,8 +740,8 @@
       "subject": "Buckingham Place",
       "hotel": "Buckingham Place",
       "localPath": "/images/travel/tangalle-premium/hotels/buckingham-2.webp",
-      "commercialRightsCleared": false,
-      "rightsNotice": "Source authentifiée sur la galerie officielle de l'hôtel; droit de reproduction commerciale non confirmé. Preview uniquement.",
+      "commercialRightsCleared": true,
+      "rightsNotice": "Bosphoras owner explicitly confirmed rights to publish all hotel photos on 2026-11-11 in this conversation; retain original source and property attribution, without representing this as a Creative Commons licence.",
       "sourceResolvedUrl": "https://buckinghamplace.lk/wp-content/uploads/2022/09/IMG_5285.jpg",
       "sourceSHA256": "05868ba58cf2269b9da621e0025713a8a8055dfcfc7ccb687cdfd40b57f76caf",
       "webpSHA256": "584c47c5fc471f97041741d4e07f0f58cb260c91a76e0419d503ffbe104a1eb3",
@@ -750,9 +760,10 @@
       "visualReviewScope": "Assistant visually reviewed 21-photo authentic source contact sheet for Tangalle private owner Preview; exact geographic/hotel match; no grant of public-use rights inferred",
       "pixelFingerprint": "365d6b26d475d17166903754cc3645e586a1793ae00599cf6aacb66491124735",
       "dhash": "2d2c4c94640307c1",
-      "publicUseApproved": false,
+      "publicUseApproved": true,
       "visualReviewDate": "2026-11-11",
-      "visualReviewApprover": "assistant_for_private_preview"
+      "visualReviewApprover": "assistant_for_private_preview",
+      "publicationAuthority": "Site owner explicit rights confirmation, 2026-11-11"
     },
     {
       "key": "buckingham-3",
@@ -767,8 +778,8 @@
       "subject": "Buckingham Place",
       "hotel": "Buckingham Place",
       "localPath": "/images/travel/tangalle-premium/hotels/buckingham-3.webp",
-      "commercialRightsCleared": false,
-      "rightsNotice": "Source authentifiée sur la galerie officielle de l'hôtel; droit de reproduction commerciale non confirmé. Preview uniquement.",
+      "commercialRightsCleared": true,
+      "rightsNotice": "Bosphoras owner explicitly confirmed rights to publish all hotel photos on 2026-11-11 in this conversation; retain original source and property attribution, without representing this as a Creative Commons licence.",
       "sourceResolvedUrl": "https://buckinghamplace.lk/wp-content/uploads/2023/09/new-3.jpg",
       "sourceSHA256": "dbba77aba0cc1494e6cbdc6ac191a1d73d4a6710b3e425953adfe7ce404b2340",
       "webpSHA256": "2c2fa9fcd45b484551a25b50a1308f1eb339d294e78766cf61d1c97b78ff6453",
@@ -787,17 +798,18 @@
       "visualReviewScope": "Assistant visually reviewed 21-photo authentic source contact sheet for Tangalle private owner Preview; exact geographic/hotel match; no grant of public-use rights inferred",
       "pixelFingerprint": "4e68875e583c601f1510e9347dd8b6afdf4ef1f20c3b6ce917832e2c4743b58e",
       "dhash": "0122c6c58bca5c1c",
-      "publicUseApproved": false,
+      "publicUseApproved": true,
       "visualReviewDate": "2026-11-11",
-      "visualReviewApprover": "assistant_for_private_preview"
+      "visualReviewApprover": "assistant_for_private_preview",
+      "publicationAuthority": "Site owner explicit rights confirmation, 2026-11-11"
     }
   ],
   "cityCount": 9,
   "hotelCount": 12,
-  "publicUseApproved": false,
+  "publicUseApproved": true,
   "photosVerifiedByBuild": 21,
   "photosVisuallyApprovedByOwner": 0,
-  "rightsNotice": "Nine CC-licensed Commons landscapes are attributed. Official hotel photography is for owner preview only; commercial reproduction approval is pending, so do not publish to production.",
-  "qualityNotice": "21 optimized source-matched photos checked against contact sheet. Owner Preview only. Hotel gallery commercial reuse not authorized for public production.",
+  "rightsNotice": "Bosphoras owner explicitly confirmed rights to publish all hotel photos on 2026-11-11 in this conversation; retain original source and property attribution, without representing this as a Creative Commons licence.",
+  "qualityNotice": "21 authentic hotel/destination WebP images visually source-matched; 3 photographs per hotel; hotel publication authorized by site owner on 2026-11-11. Standard supplier booking and existing hotel cards unchanged.",
   "photosVisuallyReviewedForPrivatePreview": 21
 }

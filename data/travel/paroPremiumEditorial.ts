@@ -1,5 +1,5 @@
-/** Paro #81: 9 CC-licensed scenes, 3 authentic property photos each in owner Preview.
- * Public production allows only verified CC-licensed photographs; do not re-publish other hotel marketing images without permission. */
+/** Paro #81: 9 CC-licensed scenes and 3 authentic hotel photos per property.
+ * The Bosphoras site owner explicitly confirmed publication rights for all listed hotel photos on 2026-11-11. */
 import type {BodrumPremiumPhoto,BodrumHotelEditorial} from './bodrumPremiumEditorial';
 import {paroDraftGuide} from './paroDraftGuide';
 import manifest from './paroMediaCandidates.json';
