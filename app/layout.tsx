@@ -79,6 +79,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr" className={`${inter.variable} ${brandFont.variable}`} suppressHydrationWarning>
+      <head>
+        {/* Fixed, stable search-engine favicons. Keep app/icon.png untouched as the artwork source. */}
+        <link rel="icon" href="/favicon-96.png" type="image/png" sizes="96x96" />
+        <link rel="icon" href="/favicon-192.png" type="image/png" sizes="192x192" />
+      </head>
       <body className="bg-white font-sans antialiased text-[#202629]">
         <DocumentLanguage />
         <ConversionTracking />
