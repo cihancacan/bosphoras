@@ -295,10 +295,10 @@
     },
     {
       "key": "meridien-1",
-      "type": "hotel-official",
-      "sourcePage": "https://www.marriott.com/en-us/hotels/pbhpr-le-meridien-paro-riverfront/photos/",
-      "sourceUrl": "https://cache.marriott.com/content/dam/marriott-renditions/PBHPR/pbhpr-exterior-3755-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
-      "credit": "Le Méridien Paro, Riverfront · official property gallery",
+      "type": "hotel-partner",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp866e0",
+      "sourceUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_00500a3f_z.jpg?width=1200&height=800&quality=85&sharpen=true",
+      "credit": "Le Méridien Paro, Riverfront · galerie du partenaire Nuitée",
       "license": null,
       "licenseUrl": null,
       "frCaption": "L'extérieur du Méridien Paro Riverfront",
@@ -307,14 +307,14 @@
       "hotel": "Le Méridien Paro, Riverfront",
       "localPath": "/images/travel/paro-premium/hotels/meridien-1.webp",
       "commercialRightsCleared": false,
-      "rightsNotice": "Authentic hotel official gallery image; commercial reproduction permission not verified. Private owner preview only."
+      "rightsNotice": "Image source référencée dans la fiche exacte Nuitée. Réutilisation indépendante sur Bosphoras non confirmée ; Preview privé uniquement."
     },
     {
       "key": "meridien-2",
-      "type": "hotel-official",
-      "sourcePage": "https://www.marriott.com/en-us/hotels/pbhpr-le-meridien-paro-riverfront/photos/",
-      "sourceUrl": "https://cache.marriott.com/content/dam/marriott-renditions/PBHPR/pbhpr-lobby-3762-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
-      "credit": "Le Méridien Paro, Riverfront · official property gallery",
+      "type": "hotel-partner",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp866e0",
+      "sourceUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_74434f41_z.jpg?width=1200&height=800&quality=85&sharpen=true",
+      "credit": "Le Méridien Paro, Riverfront · galerie du partenaire Nuitée",
       "license": null,
       "licenseUrl": null,
       "frCaption": "Hall du Méridien Paro Riverfront",
@@ -323,14 +323,14 @@
       "hotel": "Le Méridien Paro, Riverfront",
       "localPath": "/images/travel/paro-premium/hotels/meridien-2.webp",
       "commercialRightsCleared": false,
-      "rightsNotice": "Authentic hotel official gallery image; commercial reproduction permission not verified. Private owner preview only."
+      "rightsNotice": "Image source référencée dans la fiche exacte Nuitée. Réutilisation indépendante sur Bosphoras non confirmée ; Preview privé uniquement."
     },
     {
       "key": "meridien-3",
-      "type": "hotel-official",
-      "sourcePage": "https://www.marriott.com/en-us/hotels/pbhpr-le-meridien-paro-riverfront/photos/",
-      "sourceUrl": "https://cache.marriott.com/content/dam/marriott-renditions/PBHPR/pbhpr-king-guestroom-0944-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*",
-      "credit": "Le Méridien Paro, Riverfront · official property gallery",
+      "type": "hotel-partner",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp866e0",
+      "sourceUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_f9be506b_z.jpg?width=1200&height=800&quality=85&sharpen=true",
+      "credit": "Le Méridien Paro, Riverfront · galerie du partenaire Nuitée",
       "license": null,
       "licenseUrl": null,
       "frCaption": "Chambre au Méridien Paro Riverfront",
@@ -339,7 +339,7 @@
       "hotel": "Le Méridien Paro, Riverfront",
       "localPath": "/images/travel/paro-premium/hotels/meridien-3.webp",
       "commercialRightsCleared": false,
-      "rightsNotice": "Authentic hotel official gallery image; commercial reproduction permission not verified. Private owner preview only."
+      "rightsNotice": "Image source référencée dans la fiche exacte Nuitée. Réutilisation indépendante sur Bosphoras non confirmée ; Preview privé uniquement."
     }
   ],
   "cityCount": 9,
