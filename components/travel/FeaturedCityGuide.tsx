@@ -306,7 +306,7 @@ function HotelSelection({guide,locale}: {guide:FeaturedCityGuideData;locale:Lang
         <h3 className="mt-4 font-sans font-normal text-3xl">{hotel.name}</h3>
         {Boolean(hotelEditorialByCity[guide.slug]) && <PremiumHotelGallery city={guide.slug} hotelName={hotel.name} locale={locale} expanded />}
         <p className="mt-5 line-clamp-2 text-sm leading-7 text-[#475862]">{fr?hotel.fr:hotel.en}</p>
-        <HotelPartnerBooking hotelKey={hotelPartnerKey(guide.slug, hotel.name)} locale={locale} />}
+        <HotelPartnerBooking hotelKey={hotelPartnerKey(guide.slug, hotel.name)} locale={locale} />
         <details className="mt-7 border-t border-[#e1e5e5] pt-5">
           <summary className="cursor-pointer text-sm font-medium text-[#193344]">{fr?'Découvrir notre analyse de cet hôtel':'Read our hotel review'}</summary>
           <EditorialProse text={fr?hotel.fr:hotel.en} className="mt-5 text-base text-[#475862]" />
