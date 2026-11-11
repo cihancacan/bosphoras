@@ -1,0 +1,22 @@
+name: Tangalle 80 · Nuitée exact property ID verification (read-only)
+on:
+  push:
+    branches: [feature/luxury-travel-seo-destinations-20261012]
+    paths:
+      - scripts/check-tangalle-nuitee-ids.mjs
+      - .github/workflows/travel-tangalle-nuitee-ids.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-four-nuitee-properties:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - name: Match exact hotel identity, country and destination with supplier inventory
+        env:
+          NUITEE_API_KEY: ${{ secrets.NUITEE_API_KEY }}
+        run: node scripts/check-tangalle-nuitee-ids.mjs
