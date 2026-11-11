@@ -1,0 +1,53 @@
+name: Import Bosphoras Punakha 82 verified release
+on:
+  push:
+    branches:
+      - feature/travel-punakha-82-20261111
+    paths:
+      - .github/workflows/punakha-82-import.yml
+permissions:
+  contents: write
+jobs:
+  import-reviewed-photos-and-page:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 14
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Fetch immutable source bundle from Bosphoras-controlled Vercel sandbox
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --show-error --silent --location --retry 5 --retry-all-errors --retry-delay 2 --max-time 180 \
+            'https://sb-us9ha68t35i3.vercel.run/punakha82-release.tar.gz' -o /tmp/punakha82-release.tar.gz
+          echo '5d59e06636fdcd0fdd4383e11b161b321a0e0f9b9f97b25cafe4eed4eeaf8d3e  /tmp/punakha82-release.tar.gz' | sha256sum --check
+          test "$(tar -tzf /tmp/punakha82-release.tar.gz | wc -l)" -eq 35
+          tar -xzf /tmp/punakha82-release.tar.gz -C .
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Verify exact Nuitée identities, photo files and TypeScript
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --ignore-scripts --no-audit --no-fund --prefer-offline
+          node scripts/check-punakha-82.cjs
+          npm run typecheck
+      - name: Commit and push completed Punakha destination
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- components/travel/FeaturedCityGuide.tsx components/travel/TravelPages.tsx \
+            data/travel/destinations.ts data/travel/featuredCityGuides.ts data/travel/nuiteeResolvedMappings.json \
+            data/travel/punakhaDraftFaq.ts data/travel/punakhaDraftGuide.ts data/travel/punakhaGuide.ts \
+            data/travel/punakhaMediaCandidates.json data/travel/punakhaNuiteeVerified.json data/travel/punakhaPremiumEditorial.ts \
+            docs/travel-punakha-82-release.md scripts/check-punakha-82.cjs \
+            'app/en/travel/[[...slug]]/page.tsx' public/images/travel/punakha-premium
+          git diff --cached --check
+          git commit -m 'feat(travel): publish Punakha 82 FR EN guide, photos and verified Nuitée links'
+          git push origin HEAD:refs/heads/feature/travel-punakha-82-20261111
