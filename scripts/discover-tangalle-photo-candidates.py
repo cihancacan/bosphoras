@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Read-only Tangalle #80 hotel photo discovery. Prints original page + image URLs for visual review."""
+"""Read-only Tangalle #80 hotel photo discovery. Lists property-exact source candidates for review."""
 import requests, bs4, re, html, urllib.parse
 pages={
 "aman":"https://www.aman.com/resorts/amanwella/gallery",
