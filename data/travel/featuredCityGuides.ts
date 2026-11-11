@@ -4,6 +4,7 @@ import {tangalleGuide} from './tangalleGuide';
 import {paroGuide} from './paroGuide';
 import {punakhaGuide} from './punakhaGuide';
 import {gangteyGuide} from './gangteyGuide';
+import {siemReapGuide} from './siemReapGuide';
 import {rajasthanGuide} from './rajasthanGuide';
 import {udaipurGuide} from './udaipurGuide';
 import {sentosaGuide} from './sentosaGuide';
@@ -75,7 +76,7 @@ import { losCabosGuide } from './losCabosGuide';
 import { maldivesGuide } from './maldivesGuide';
 import { kohSamuiGuide } from './kohSamuiGuide';
 /** Curated Travel destination guides. Editorial selections only: no supplier inventory, booking, rates or claim of first-hand inspection. */
-export type FeaturedCitySlug = 'jaipur' | 'galle' | 'tangalle' | 'paro' | 'punakha' | 'gangtey' | 'rajasthan' | 'udaipur' | 'sentosa' | 'singapore' | 'phu-quoc' | 'hoi-an' | 'da-nang' | 'vinh-hy-bay' | 'hakone' | 'kyoto' | 'tokyo' | 'palawan' | 'sumba' | 'chiang-mai' | 'bangkok' | 'koh-yao-noi' | 'krabi' | 'san-miguel-de-allende' | 'mayakoba' | 'los-angeles' | 'miami' | 'new-york' | 'istanbul' | 'bodrum' | 'antalya' | 'dubai' | 'paris' | 'saint-tropez' | 'bali' | 'phuket' | 'koh-samui' | 'maldives' | 'los-cabos' | 'saint-barthelemy' | 'porto-cervo' | 'mustique' | 'courchevel-1850' | 'st-moritz' | 'aspen' | 'niseko' | 'megeve' | 'jackson-hole' | 'big-sky' | 'val-disere' | 'verbier' | 'gstaad' | 'zermatt' | 'monaco' | 'saint-jean-cap-ferrat' | 'cap-dantibes' | 'lake-como' | 'capri' | 'positano' | 'ravello' | 'mykonos' | 'antiparos' | 'ibiza' | 'formentera' | 'deia' | 'port-andratx' | 'comporta' | 'melides' | 'tivat' | 'the-hamptons' | 'palm-beach' | 'nantucket' | 'harbour-island' | 'turks-and-caicos' | 'canouan' | 'necker-island' | 'north-island-seychelles' | 'pamalican-island' | 'laucala-island' | 'jumby-bay' | 'okavango-delta' | 'punta-mita' | 'costa-careyes';
+export type FeaturedCitySlug = 'jaipur' | 'galle' | 'tangalle' | 'paro' | 'punakha' | 'gangtey' | 'siem-reap' | 'rajasthan' | 'udaipur' | 'sentosa' | 'singapore' | 'phu-quoc' | 'hoi-an' | 'da-nang' | 'vinh-hy-bay' | 'hakone' | 'kyoto' | 'tokyo' | 'palawan' | 'sumba' | 'chiang-mai' | 'bangkok' | 'koh-yao-noi' | 'krabi' | 'san-miguel-de-allende' | 'mayakoba' | 'los-angeles' | 'miami' | 'new-york' | 'istanbul' | 'bodrum' | 'antalya' | 'dubai' | 'paris' | 'saint-tropez' | 'bali' | 'phuket' | 'koh-samui' | 'maldives' | 'los-cabos' | 'saint-barthelemy' | 'porto-cervo' | 'mustique' | 'courchevel-1850' | 'st-moritz' | 'aspen' | 'niseko' | 'megeve' | 'jackson-hole' | 'big-sky' | 'val-disere' | 'verbier' | 'gstaad' | 'zermatt' | 'monaco' | 'saint-jean-cap-ferrat' | 'cap-dantibes' | 'lake-como' | 'capri' | 'positano' | 'ravello' | 'mykonos' | 'antiparos' | 'ibiza' | 'formentera' | 'deia' | 'port-andratx' | 'comporta' | 'melides' | 'tivat' | 'the-hamptons' | 'palm-beach' | 'nantucket' | 'harbour-island' | 'turks-and-caicos' | 'canouan' | 'necker-island' | 'north-island-seychelles' | 'pamalican-island' | 'laucala-island' | 'jumby-bay' | 'okavango-delta' | 'punta-mita' | 'costa-careyes';
 export type FeaturedCityPhoto = {src:string;fr:string;en:string;author:string;license:string;licenseUrl:string;sourcePage:string};
 export type FeaturedCityArea = {name:string;enName:string;fr:string;en:string;frWatch:string;enWatch:string};
 export type FeaturedCityExperience = {frTitle:string;enTitle:string;fr:string;en:string};
@@ -92,6 +93,7 @@ export const featuredCityGuides: Record<FeaturedCitySlug, FeaturedCityGuideData>
   'paro': paroGuide,
   'punakha': punakhaGuide,
   'gangtey': gangteyGuide,
+  'siem-reap': siemReapGuide,
   'rajasthan': rajasthanGuide,
   'udaipur': udaipurGuide,
   'sentosa': sentosaGuide,

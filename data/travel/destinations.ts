@@ -111,5 +111,5 @@ export const travelRegions: Record<string, string> = {
 /** Intentionally empty until editorial verification, live inventory and booking rights are checked.
  * Never set a route indexable just because a keyword/destination combination exists.
  */
-export const approvedDestinationSlugs: ReadonlySet<string> = new Set(['tangalle/fr','tangalle/en','paro/fr','paro/en','punakha/fr','punakha/en','gangtey/fr','gangtey/en']);
-export const approvedCategorySlugs: ReadonlySet<string> = new Set(['hotels/tangalle/fr','hotels/tangalle/en','hotels/paro/fr','hotels/paro/en','hotels/punakha/fr','hotels/punakha/en','hotels/gangtey/fr','hotels/gangtey/en']);
+export const approvedDestinationSlugs: ReadonlySet<string> = new Set(['tangalle/fr','tangalle/en','paro/fr','paro/en','punakha/fr','punakha/en','gangtey/fr','gangtey/en','siem-reap/fr','siem-reap/en']);
+export const approvedCategorySlugs: ReadonlySet<string> = new Set(['hotels/tangalle/fr','hotels/tangalle/en','hotels/paro/fr','hotels/paro/en','hotels/punakha/fr','hotels/punakha/en','hotels/gangtey/fr','hotels/gangtey/en','hotels/siem-reap/fr','hotels/siem-reap/en']);

@@ -1,0 +1,31 @@
+{
+  "destination": "siem-reap",
+  "destinationNumber": 84,
+  "verified": "2026-11-12",
+  "method": "Nuitée WhiteLabel exact-property details GET/POST matched name, id, KH, mapped true, deletedAt null",
+  "hotels": [
+    {
+      "name": "Zannier Phum Baitang",
+      "id": "lp8319c"
+    },
+    {
+      "name": "Raffles Grand Hotel d'Angkor",
+      "id": "lp27341"
+    },
+    {
+      "name": "Park Hyatt Siem Reap",
+      "id": "lp3988b"
+    },
+    {
+      "name": "Shinta Mani Angkor",
+      "id": "lp36205"
+    }
+  ],
+  "excluded": [
+    {
+      "name": "Amansara",
+      "id": "lpf0c2a",
+      "reason": "deletedAt non-null in supplier details, no verified active room deep link"
+    }
+  ]
+}
