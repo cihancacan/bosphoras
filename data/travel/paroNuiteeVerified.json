@@ -1,0 +1,28 @@
+{
+  "destination": "paro",
+  "destinationNumber": 81,
+  "checkedDate": "2026-11-11",
+  "source": "Bosphoras-owned Nuitée WhiteLabel search-by-name, exact property page checked by name, country BT and address; HTTP 200. No room availability guaranteed.",
+  "hotels": [
+    {
+      "name": "COMO Uma Paro",
+      "id": "lp6556a260",
+      "address": "Paro Valley, PO Box 222, Paro, 10021, Bhutan"
+    },
+    {
+      "name": "Zhiwaling Heritage",
+      "id": "lpe30f5",
+      "address": "Satsam Chorten, Paro, Bhutan"
+    },
+    {
+      "name": "Bhutan Spirit Sanctuary",
+      "id": "lp655d5c18",
+      "address": "Neyphu Valley, Shaba, Paro, Bhutan"
+    },
+    {
+      "name": "Le Méridien Paro, Riverfront",
+      "id": "lp866e0",
+      "address": "Shaba, Paro, Bhutan"
+    }
+  ]
+}

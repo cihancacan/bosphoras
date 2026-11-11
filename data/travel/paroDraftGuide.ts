@@ -3,7 +3,7 @@ import type {FeaturedCityGuideData} from './featuredCityGuides';
 export const paroDraftGuide = {
   "slug": "paro",
   "name": "Paro",
-  "country": "Bhoutan",
+  "country": "Bhutan",
   "hero": "scene-1",
   "secondary": "scene-2",
   "eyebrowFr": "Bhoutan · vallée himalayenne, sanctuaires et lodges",

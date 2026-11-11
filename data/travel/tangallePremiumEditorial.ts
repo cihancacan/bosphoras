@@ -2,6 +2,7 @@
 import type {BodrumPremiumPhoto,BodrumHotelEditorial} from './bodrumPremiumEditorial';
 import {tangalleDraftGuide} from './tangalleDraftGuide';
 import manifest from './tangalleMediaCandidates.json';
+const allowUnlicensedOwnerPreview=process.env.VERCEL_ENV==='preview'||(!process.env.VERCEL_ENV&&process.env.NODE_ENV==='development');
 const hotelCodes=['aman','anantara','kayaam','buckingham'] as const;
 const frBest=[
   "Pour l'architecture épurée, le calme et les suites à bassin privé dans la baie de Godellawela.",
@@ -20,7 +21,7 @@ const photo=(p:{localPath:string;frCaption:string;enCaption:string;credit:string
 });
 export const tangalleHotelEditorial:Record<string,BodrumHotelEditorial>=Object.fromEntries(tangalleDraftGuide.hotels.map((h,index)=>[
  h.name,{
-  photos:manifest.hotels.filter(p=>p.hotel===h.name&&p.key.startsWith(hotelCodes[index]+'-')&&p.previewVisualApproved&&p.visuallyVerified&&!!p.sourceResolvedUrl&&!!p.webpSHA256&&!!p.credit).slice(0,3).map(photo),
+  photos:manifest.hotels.filter(p=>p.hotel===h.name&&p.key.startsWith(hotelCodes[index]+'-')&&(p.commercialRightsCleared||allowUnlicensedOwnerPreview)&&p.previewVisualApproved&&p.visuallyVerified&&!!p.sourceResolvedUrl&&!!p.webpSHA256&&!!p.credit).slice(0,3).map(photo),
   credit:h.name,sourcePage:h.officialUrl,frBest:frBest[index],enBest:enBest[index],frStory:h.fr+' '+h.frWatch,enStory:h.en+' '+h.enWatch
  }
 ]));
@@ -30,7 +31,7 @@ export const tangalleAreaVisuals:(BodrumPremiumPhoto|null)[]=['scene-2','scene-1
 });
 export const confirmedTangallePreviewAssets=new Set([
  ...manifest.destinationScenes.filter(p=>p.visuallyVerified&&p.previewVisualApproved&&p.commercialRightsCleared&&!!p.webpSHA256).map(p=>p.localPath),
- ...manifest.hotels.filter(p=>p.visuallyVerified&&p.previewVisualApproved&&!!p.webpSHA256&&!!p.credit).map(p=>p.localPath)
+ ...manifest.hotels.filter(p=>p.visuallyVerified&&p.previewVisualApproved&&(p.commercialRightsCleared||allowUnlicensedOwnerPreview)&&!!p.webpSHA256&&!!p.credit).map(p=>p.localPath)
 ]);
 export const tangalleSchemaSafePhotos=new Set<string>();
 export const tangallePhotoLicenses:Record<string,{name:string;url:string}>=Object.fromEntries(
