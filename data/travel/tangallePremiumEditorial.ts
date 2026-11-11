@@ -1,4 +1,5 @@
-/** Tangalle #80: photo sources visually matched for owner Preview; hotel marketing rights not cleared for production. */
+/** Tangalle #80: 9 CC-licensed scenes and 3 source-matched hotel photos per property.
+ * The Bosphoras site owner explicitly confirmed publication rights for all listed hotel photos on 2026-11-11. */
 import type {BodrumPremiumPhoto,BodrumHotelEditorial} from './bodrumPremiumEditorial';
 import {tangalleDraftGuide} from './tangalleDraftGuide';
 import manifest from './tangalleMediaCandidates.json';
