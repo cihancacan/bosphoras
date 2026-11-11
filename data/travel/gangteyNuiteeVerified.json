@@ -1,0 +1,24 @@
+{
+  "destination": "gangtey",
+  "destinationNumber": 83,
+  "checkedDate": "2026-11-11",
+  "source": "Bosphoras-owned Nuitée WhiteLabel search-by-name plus exact hotel detail; country BT, property name, mapped=true and deletedAt=null; no stock or price promise",
+  "hotels": [
+    {
+      "name": "Taj Gangtey Resort And Spa",
+      "id": "lp6588144d"
+    },
+    {
+      "name": "Gangtey Tent Resort",
+      "id": "lp65876ec5"
+    },
+    {
+      "name": "Kichu Resort Phobjikha",
+      "id": "lp233a35"
+    },
+    {
+      "name": "Gangtey Pinewood Resort",
+      "id": "lp65867f3e"
+    }
+  ]
+}
