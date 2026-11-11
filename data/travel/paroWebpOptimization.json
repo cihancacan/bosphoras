@@ -1,0 +1,220 @@
+{
+  "total": 21,
+  "landscapes": 9,
+  "hotelPhotos": 12,
+  "originalBytes": 6985397,
+  "totalWebPBytes": 3385996,
+  "publicUseApproved": false,
+  "photos": [
+    {
+      "key": "scene-1",
+      "localPath": "/images/travel/paro-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rice_fields_in_Paro,_Bhutan.jpg",
+      "sourceSHA256": "616705ceeea2684206d4ed4bdce187d664fddb0df627accb00b2ef30a8369ef3",
+      "webpSHA256": "2b2e7aa72d29452bbf4327eddc177a4d12d3f2ddb2cdeb9556bd55242248aa9d",
+      "webpBytes": 349404,
+      "license": "CC BY-SA 4.0",
+      "credit": "Bernard Gagnon"
+    },
+    {
+      "key": "scene-2",
+      "localPath": "/images/travel/paro-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bhutan-Paro-136-Taktshang-Tigernest-gje.jpg",
+      "sourceSHA256": "d3114ecc74ccd93d392ba6089586cd848492f3419954c664a65557841d3d3285",
+      "webpSHA256": "def8d6d27a257330af150ec42704c0caa1d26a7db787583df4017ba3ef2e8c78",
+      "webpBytes": 242360,
+      "license": "CC BY-SA 4.0",
+      "credit": "Gerd Eichmann"
+    },
+    {
+      "key": "scene-3",
+      "localPath": "/images/travel/paro-premium/destination/scene-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Rinpung_Dzong,_Bhutan_01.jpg",
+      "sourceSHA256": "5197afe8be231e0850603340eee3d8a47b2f3a9985175d04d2f5b1b8e750bf87",
+      "webpSHA256": "db9d67559f4a10e6f551f4281592b7fe3509eacfcdeb9444a877561450969304",
+      "webpBytes": 278616,
+      "license": "CC BY-SA 4.0",
+      "credit": "Bernard Gagnon"
+    },
+    {
+      "key": "scene-4",
+      "localPath": "/images/travel/paro-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kyichu_Lhakhang-060701.JPG",
+      "sourceSHA256": "82bb29611a4215f855aeb8b154512e00758494e9d6e939ab24db4632f88f28a6",
+      "webpSHA256": "86b24fcb07ad0210fe2354eec80afde8db6a8ba0467deec7468a606f945f2647",
+      "webpBytes": 83418,
+      "license": "CC BY 2.5",
+      "credit": "Christopher J. Fynn"
+    },
+    {
+      "key": "scene-5",
+      "localPath": "/images/travel/paro-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Paro_Chhu_River_near_Chuzom.jpg",
+      "sourceSHA256": "35c17b844c0962a14a8484bcc7f8a0dd0098d416c3d2037a12804e1743ad2873",
+      "webpSHA256": "8a83f602446716b400efa89a6ffdcc3e0e48097610938f3423deb06de8c73295",
+      "webpBytes": 336772,
+      "license": "CC BY-SA 4.0",
+      "credit": "Bernard Gagnon"
+    },
+    {
+      "key": "scene-6",
+      "localPath": "/images/travel/paro-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Drukgyel_Dzong.jpg",
+      "sourceSHA256": "676976d2941265e8126d2209957942a9b2c8eb8e084535e69e67cb5ab4e9c885",
+      "webpSHA256": "e5ae1ab8de5bffbc5ca5eda4010b8b67b84d335502bc0599204f75fe54ca4da1",
+      "webpBytes": 308754,
+      "license": "CC BY 2.5",
+      "credit": "No machine-readable author provided. Greenmnm69 assumed (based on copyright claims)."
+    },
+    {
+      "key": "scene-7",
+      "localPath": "/images/travel/paro-premium/destination/scene-7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:National_Museum_of_Bhutan_01.jpg",
+      "sourceSHA256": "19da90e0c6706a4c2dd4209a56eb822852c17caa331d922e1c3672c481d55cd8",
+      "webpSHA256": "957c6059128811bd52e6ab46e39a15d0c8faf343048b0402cc129fb7d00399ca",
+      "webpBytes": 216110,
+      "license": "CC BY-SA 4.0",
+      "credit": "Bernard Gagnon"
+    },
+    {
+      "key": "scene-8",
+      "localPath": "/images/travel/paro-premium/destination/scene-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Chele_La_Pass_-_Paro_-_during_LGFC_-_Bhutan_2019_(01).jpg",
+      "sourceSHA256": "dad369a846a6618b0cc13f148abdacb2ae48a85115856710715584a8bda99997",
+      "webpSHA256": "4f8c87bf549896b456884a2197949d9fab434e800f0b1ffeb650c83fccd4d9b1",
+      "webpBytes": 74010,
+      "license": "CC BY-SA 4.0",
+      "credit": "Vinayaraj"
+    },
+    {
+      "key": "scene-9",
+      "localPath": "/images/travel/paro-premium/destination/scene-9.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Paro,_Paro,_Bhutan_(8026008882).jpg",
+      "sourceSHA256": "ebe8e271cf3467f7c53896cce69d22f345592fa417d596b3d6717d05407d4d6d",
+      "webpSHA256": "e15918b23cc8b1eae4ab077584bc127cea70023767d069f26d200642da08fa72",
+      "webpBytes": 120140,
+      "license": "CC BY 2.0",
+      "credit": "Christopher Michel"
+    },
+    {
+      "key": "zhiwaling-1",
+      "localPath": "/images/travel/paro-premium/hotels/zhiwaling-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Zhiwaling_Hotel,_Paro_Valley,_Bhutan_-_panoramio.jpg",
+      "sourceSHA256": "e16d5160f325335c8f760d7a9fe79a07d3cf2177580016ab38b75e81ac45f0ae",
+      "webpSHA256": "0b03684d8342c223a44870446b888684836984d4fb86124a6526419406aa1c8d",
+      "webpBytes": 248606,
+      "license": "CC BY 3.0",
+      "credit": "David Broad"
+    },
+    {
+      "key": "zhiwaling-2",
+      "localPath": "/images/travel/paro-premium/hotels/zhiwaling-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Zhiwaling_Hotel,_Paro_Valley,_Bhutan_-_panoramio_(1).jpg",
+      "sourceSHA256": "e9b9c39d6cb28c4cf0b742920c6cee800d4c1796a6dce67c160087aa471a09c7",
+      "webpSHA256": "50e68c4e06e179acc36c02622d1d8ad0e4fb2b95ebd25360b060c645826cffbb",
+      "webpBytes": 53466,
+      "license": "CC BY 3.0",
+      "credit": "David Broad"
+    },
+    {
+      "key": "zhiwaling-3",
+      "localPath": "/images/travel/paro-premium/hotels/zhiwaling-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Carvings_and_relief_on_the_Zhiwaling_Hotel,_Paro_Valley,_Bhutan_-_panoramio.jpg",
+      "sourceSHA256": "b2aa970d8335287c5efcfb71e8787cb40ea234fbd690eb2739e64c58e8a24a23",
+      "webpSHA256": "d78a1ee71432b3edd201c78429f3cda1fe71dbfd3c1194c9fe50c340f35ba3fa",
+      "webpBytes": 176186,
+      "license": "CC BY 3.0",
+      "credit": "David Broad"
+    },
+    {
+      "key": "como-1",
+      "localPath": "/images/travel/paro-premium/hotels/como-1.webp",
+      "sourcePage": "https://www.comohotels.com/bhutan/como-uma-paro/accommodation",
+      "sourceSHA256": "1552f6e8c73d2b5254252d00eba309d1b94f28771dd3d99347d80090f75703f8",
+      "webpSHA256": "a9f220b8f226fabdbd11dd2d5488b1b87601292a7b6e7807b60e5315da30f31c",
+      "webpBytes": 213120,
+      "license": null,
+      "credit": "COMO Uma Paro · official property gallery"
+    },
+    {
+      "key": "como-2",
+      "localPath": "/images/travel/paro-premium/hotels/como-2.webp",
+      "sourcePage": "https://www.comohotels.com/bhutan/como-uma-paro/accommodation",
+      "sourceSHA256": "e4241ba95dd692b5eeae17cc15026e5d9004acd6dc644889e85602376f3296a9",
+      "webpSHA256": "656495a9f247f63fc8f1efe7756a7a623373315f2c56e11c55b9f3ea6c2c98d8",
+      "webpBytes": 70382,
+      "license": null,
+      "credit": "COMO Uma Paro · official property gallery"
+    },
+    {
+      "key": "como-3",
+      "localPath": "/images/travel/paro-premium/hotels/como-3.webp",
+      "sourcePage": "https://www.comohotels.com/bhutan/como-uma-paro/accommodation",
+      "sourceSHA256": "0c6bc6b1aeee3aa909b9a5ed621131fa806fcf256bb9cfdbef45b2e01d77bc00",
+      "webpSHA256": "d532e4d82aeeda2c57d733e1389e71fa515a12c09c4e24e3fa86420bc73c044a",
+      "webpBytes": 74250,
+      "license": null,
+      "credit": "COMO Uma Paro · official property gallery"
+    },
+    {
+      "key": "spirit-1",
+      "localPath": "/images/travel/paro-premium/hotels/spirit-1.webp",
+      "sourcePage": "https://bhutanspiritsanctuary.com/gallery/",
+      "sourceSHA256": "d6d1015df806b553ea3b8358a39239e488ef440210752b725101df456e6dd9e0",
+      "webpSHA256": "7d59eb12545f1f1254a4916a260b9ebe89a9426627d3d68300da0efabe95ed3b",
+      "webpBytes": 166826,
+      "license": null,
+      "credit": "Bhutan Spirit Sanctuary · official property gallery"
+    },
+    {
+      "key": "spirit-2",
+      "localPath": "/images/travel/paro-premium/hotels/spirit-2.webp",
+      "sourcePage": "https://bhutanspiritsanctuary.com/gallery/",
+      "sourceSHA256": "6cd516a9563dedcca6a7ec590909a54cb316799a71ecc6f27c235049afe30efc",
+      "webpSHA256": "602f8bec7162cc6d3449f58e5129c537278800f0ef97e1cde22a22e01e67f2ca",
+      "webpBytes": 67896,
+      "license": null,
+      "credit": "Bhutan Spirit Sanctuary · official property gallery"
+    },
+    {
+      "key": "spirit-3",
+      "localPath": "/images/travel/paro-premium/hotels/spirit-3.webp",
+      "sourcePage": "https://bhutanspiritsanctuary.com/gallery/",
+      "sourceSHA256": "72c8080fb871dd7a944f385790cbd087b232f206aed511464cd433bbd0caaa6a",
+      "webpSHA256": "7fe84db27dbbb86fb785971200d44ca08e755ece1047563ee9b931ba220a3d8b",
+      "webpBytes": 44436,
+      "license": null,
+      "credit": "Bhutan Spirit Sanctuary · official property gallery"
+    },
+    {
+      "key": "meridien-1",
+      "localPath": "/images/travel/paro-premium/hotels/meridien-1.webp",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp866e0",
+      "sourceSHA256": "71cddb56b523c9eea26d16f9f796e55ee4b8d4a53f3c912302bc7f42d9d08b3c",
+      "webpSHA256": "c918cadb04e461797a307d1b06e964c781e7e2164cab22af28b2e9b28aaf65f3",
+      "webpBytes": 167532,
+      "license": null,
+      "credit": "Le Méridien Paro, Riverfront · galerie du partenaire Nuitée"
+    },
+    {
+      "key": "meridien-2",
+      "localPath": "/images/travel/paro-premium/hotels/meridien-2.webp",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp866e0",
+      "sourceSHA256": "04ae57e54e9c83560144ad7250513b14f86be282acf34e33d6d1bd6f622106f6",
+      "webpSHA256": "816772cdae9bd324d3f140c64246bd4262e3980655e57c4c95a0578e69861e72",
+      "webpBytes": 42944,
+      "license": null,
+      "credit": "Le Méridien Paro, Riverfront · galerie du partenaire Nuitée"
+    },
+    {
+      "key": "meridien-3",
+      "localPath": "/images/travel/paro-premium/hotels/meridien-3.webp",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp866e0",
+      "sourceSHA256": "3083b585a07724ae23669d42ae76e11a2281c4b16a55345cf0a1b8d2ac21fed8",
+      "webpSHA256": "c8210a6d3a375d1deecbfd36d5733a7d7baf338b87b638450bd34a40abd9e1dd",
+      "webpBytes": 50768,
+      "license": null,
+      "credit": "Le Méridien Paro, Riverfront · galerie du partenaire Nuitée"
+    }
+  ]
+}

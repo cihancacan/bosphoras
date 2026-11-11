@@ -1,0 +1,220 @@
+{
+  "total": 21,
+  "landscapes": 9,
+  "hotelPhotos": 12,
+  "originalBytes": 12901981,
+  "totalWebPBytes": 2923050,
+  "publicUseApproved": false,
+  "photos": [
+    {
+      "key": "scene-1",
+      "localPath": "/images/travel/tangalle-premium/destination/scene-1.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Goyambokka_Beach,_Tangalle,_Sri_Lanka.jpg",
+      "sourceSHA256": "a09d9c53f24c88ae9801cc7b00f1f7d9e71c71125a81397a0d39279267bfb948",
+      "webpSHA256": "e6e60fdae73b336b80cff61fc14759b19752281fc7f6e18652d421afe6a46e8b",
+      "webpBytes": 220058,
+      "license": "CC BY 4.0",
+      "credit": "Satdeep Gill"
+    },
+    {
+      "key": "scene-2",
+      "localPath": "/images/travel/tangalle-premium/destination/scene-2.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sri_lanka_tangalle.JPG",
+      "sourceSHA256": "443b50dd4a467a4271fa822b44a06b1e30566926ba56405d50bad486d380e5b4",
+      "webpSHA256": "d2641867bc230dea38e9a19821e1859dc3d0cb20735da947af008048e648ef73",
+      "webpBytes": 252256,
+      "license": "Public domain",
+      "credit": "Diana Montero Melis"
+    },
+    {
+      "key": "scene-3",
+      "localPath": "/images/travel/tangalle-premium/destination/scene-3.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tangalle_beach_scenery_-_panoramio.jpg",
+      "sourceSHA256": "5603f07534b2a6f0a61814629033b44da32ba37c94caafd7f94ca150fa028220",
+      "webpSHA256": "b904d7d7fdee57b0aa4bb34e37b5a3df9f668b93594a5740ae0225fea18a0751",
+      "webpBytes": 195724,
+      "license": "CC BY 3.0",
+      "credit": "Tuderna"
+    },
+    {
+      "key": "scene-4",
+      "localPath": "/images/travel/tangalle-premium/destination/scene-4.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Sunset_over_Lagoon_-_Near_Marakolliya_Beach_-_Tangalla_-_Sri_Lanka_-_01_(14081544205).jpg",
+      "sourceSHA256": "d43efda7b17911c7fa94bf96ae934505b02ef826c88fa1bab82ce9f1f88ba278",
+      "webpSHA256": "579b5e56b3ae31c9b205abc080f8a53731cae6050113433e4c216aebbdd3427b",
+      "webpBytes": 86220,
+      "license": "CC BY-SA 2.0",
+      "credit": "Adam Jones from Kelowna, BC, Canada"
+    },
+    {
+      "key": "scene-5",
+      "localPath": "/images/travel/tangalle-premium/destination/scene-5.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Bird_Sanctuary_Landscape.jpg",
+      "sourceSHA256": "ea1e6bb1f587f1d25481128a324f4c8dfddee56e1fdf32a3deeb58d200852233",
+      "webpSHA256": "6520449880e05eaed99ccf1fbaf82c1fc0476fc3953e0967816feb5a208e54bf",
+      "webpBytes": 273852,
+      "license": "CC BY-SA 4.0",
+      "credit": "Peter Addor"
+    },
+    {
+      "key": "scene-6",
+      "localPath": "/images/travel/tangalle-premium/destination/scene-6.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mulgirigala_Vihara.jpg",
+      "sourceSHA256": "38da11a9e025754c9a66752dcc423583ceb13095c4116985d4775d3ed0b60a74",
+      "webpSHA256": "8d70752aa4520c1494fa491dd04dc3a5a9b7969f72a3f2b9e5af524afb610cad",
+      "webpBytes": 107884,
+      "license": "CC BY-SA 4.0",
+      "credit": "L Manju"
+    },
+    {
+      "key": "scene-7",
+      "localPath": "/images/travel/tangalle-premium/destination/scene-7.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tangalle_harbour.jpg",
+      "sourceSHA256": "5e8bff22df83077fd1f285162c24a67568cc9b6f81082bb11f9cb5f0d7586e24",
+      "webpSHA256": "727a60aac24fbbe969da09e86f0813ce6b15f3530f4e240e8ca403482eb0d20c",
+      "webpBytes": 105488,
+      "license": "CC BY 3.0",
+      "credit": "Krankman"
+    },
+    {
+      "key": "scene-8",
+      "localPath": "/images/travel/tangalle-premium/destination/scene-8.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Marakolliya_Beach_Scene_-_Ganesh_Garden_Beach_Cabanas_-_Tangalla_-_Sri_Lanka_-_01_(13893245638).jpg",
+      "sourceSHA256": "d7e86b3a2bf82e86dd9da8cc2fc9a46ac58233c7e415166af35dd5bdd44b1fbf",
+      "webpSHA256": "a85160500454d9688e0a0812b17b3ca1fdfe64440b49d84acc9b670b10149d88",
+      "webpBytes": 191010,
+      "license": "CC BY-SA 2.0",
+      "credit": "Adam Jones from Kelowna, BC, Canada"
+    },
+    {
+      "key": "scene-9",
+      "localPath": "/images/travel/tangalle-premium/destination/scene-9.webp",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Hummanaya-1.jpg",
+      "sourceSHA256": "0f063e8aad16379dda0ae56845478516a7c04fdb69f45e38a089c26e69b3a082",
+      "webpSHA256": "9b1507a8f80abb499a770895d2a063c61785ff984878df29be7b1597dd5b3bf4",
+      "webpBytes": 102180,
+      "license": "CC BY-SA 4.0",
+      "credit": "Dan arndt"
+    },
+    {
+      "key": "aman-1",
+      "localPath": "/images/travel/tangalle-premium/hotels/aman-1.webp",
+      "sourcePage": "https://www.aman.com/resorts/amanwella/gallery",
+      "sourceSHA256": "22b196c4355d9ff9f2c34d1d6c43c08bea99eec5c69d5e99a5cb3a185dbb3657",
+      "webpSHA256": "2d9f5ac62661fc6608ab3c4d12dd89d8cc4b3d503942ab6a1fb8ac388bfacf9f",
+      "webpBytes": 196608,
+      "license": null,
+      "credit": "Amanwella · galerie officielle"
+    },
+    {
+      "key": "aman-2",
+      "localPath": "/images/travel/tangalle-premium/hotels/aman-2.webp",
+      "sourcePage": "https://www.aman.com/resorts/amanwella/gallery",
+      "sourceSHA256": "dd8e55b3f82415eff1d655092aa858bc198378527223b738ad3365f0c3cb87ca",
+      "webpSHA256": "93393cd756a8f2b189e2a0c7281c8a18334ba496b8f01aabaf98dd4c91dcb20b",
+      "webpBytes": 103408,
+      "license": null,
+      "credit": "Amanwella · galerie officielle"
+    },
+    {
+      "key": "aman-3",
+      "localPath": "/images/travel/tangalle-premium/hotels/aman-3.webp",
+      "sourcePage": "https://www.aman.com/resorts/amanwella/gallery",
+      "sourceSHA256": "5e560a52f34b5209c7125f11df281f50af38c71374c72a01c73f09e49b9fc6ff",
+      "webpSHA256": "2008214abe7817c4fac4675a43d02d3cb20d5618fffc92d2925ae115fb7b82c4",
+      "webpBytes": 192082,
+      "license": null,
+      "credit": "Amanwella · galerie officielle"
+    },
+    {
+      "key": "anantara-1",
+      "localPath": "/images/travel/tangalle-premium/hotels/anantara-1.webp",
+      "sourcePage": "https://www.anantara.com/en/peace-haven-tangalle/gallery",
+      "sourceSHA256": "c5925b40c4b0a88befd21a98929263ad468239588596885377d93c0c2d9a0766",
+      "webpSHA256": "d9e3debc0cfaf6715a728ce3888a6c109c3c600c88c51c868399d4d26ad1fe34",
+      "webpBytes": 224536,
+      "license": null,
+      "credit": "Anantara Peace Haven Tangalle Resort · galerie officielle"
+    },
+    {
+      "key": "anantara-2",
+      "localPath": "/images/travel/tangalle-premium/hotels/anantara-2.webp",
+      "sourcePage": "https://www.anantara.com/en/peace-haven-tangalle/gallery",
+      "sourceSHA256": "1e7bc5e1c58e42ab6b142a18d3a8780c0c17149a21c6e0c107b2bc9eabb94735",
+      "webpSHA256": "3af581425b2129b0b14dddfade8d49abe95090b8de37b776cd9153bdd6fef06a",
+      "webpBytes": 177804,
+      "license": null,
+      "credit": "Anantara Peace Haven Tangalle Resort · galerie officielle"
+    },
+    {
+      "key": "anantara-3",
+      "localPath": "/images/travel/tangalle-premium/hotels/anantara-3.webp",
+      "sourcePage": "https://www.anantara.com/en/peace-haven-tangalle/gallery",
+      "sourceSHA256": "901e4772ccdc54cc4ad2aded88b20e5826c471a637e735efdc63cec58fea4ed4",
+      "webpSHA256": "f24c76605233022c252ef94d4b1de655c7f10fa42c2ac815a9fbbcff40ad9b20",
+      "webpBytes": 91948,
+      "license": null,
+      "credit": "Anantara Peace Haven Tangalle Resort · galerie officielle"
+    },
+    {
+      "key": "kayaam-1",
+      "localPath": "/images/travel/tangalle-premium/hotels/kayaam-1.webp",
+      "sourcePage": "https://www.resplendentceylon.com/resort/kayaam-wellness/gallery/",
+      "sourceSHA256": "dbf966d62a5488fcb37b70dc6fe94f3417a41883aee014cf38feb00ff641b96b",
+      "webpSHA256": "fbdf005579d82e3e9e3e2c76ee2749b6a2f648472ece7dc23e70609ea3b2583f",
+      "webpBytes": 34604,
+      "license": null,
+      "credit": "Kayaam Wellness · galerie officielle"
+    },
+    {
+      "key": "kayaam-2",
+      "localPath": "/images/travel/tangalle-premium/hotels/kayaam-2.webp",
+      "sourcePage": "https://www.resplendentceylon.com/resort/kayaam-wellness/gallery/",
+      "sourceSHA256": "1354ae044c7e4147f238e30567ebc46e3e3b9e5944ef4fedbd33d4791e4b7364",
+      "webpSHA256": "1475c31004cc3f3a8f400ee24beba61cc509edb0f89ebd91c6e56eb93051418c",
+      "webpBytes": 35268,
+      "license": null,
+      "credit": "Kayaam Wellness · galerie officielle"
+    },
+    {
+      "key": "kayaam-3",
+      "localPath": "/images/travel/tangalle-premium/hotels/kayaam-3.webp",
+      "sourcePage": "https://www.resplendentceylon.com/resort/kayaam-wellness/gallery/",
+      "sourceSHA256": "507d46fa2861ce12b6693362d157982ae47b94ae08fc6ff44c8af726db3f1e2c",
+      "webpSHA256": "5c831b18b34b751b7b69120b7aa4ecfe28c3c63e7b77dffb250a1b8f8290ffdd",
+      "webpBytes": 21948,
+      "license": null,
+      "credit": "Kayaam Wellness · galerie officielle"
+    },
+    {
+      "key": "buckingham-1",
+      "localPath": "/images/travel/tangalle-premium/hotels/buckingham-1.webp",
+      "sourcePage": "https://buckinghamplace.lk/",
+      "sourceSHA256": "93d916b7a32f57b7260e52b3da925d1eb80648dd8b7af9d41e4ba884fb46df1f",
+      "webpSHA256": "136183e7d97270d0531ed9f1b34694369a721972d4f9031382bc94a462b2b325",
+      "webpBytes": 53358,
+      "license": null,
+      "credit": "Buckingham Place · galerie officielle"
+    },
+    {
+      "key": "buckingham-2",
+      "localPath": "/images/travel/tangalle-premium/hotels/buckingham-2.webp",
+      "sourcePage": "https://buckinghamplace.lk/",
+      "sourceSHA256": "05868ba58cf2269b9da621e0025713a8a8055dfcfc7ccb687cdfd40b57f76caf",
+      "webpSHA256": "584c47c5fc471f97041741d4e07f0f58cb260c91a76e0419d503ffbe104a1eb3",
+      "webpBytes": 197040,
+      "license": null,
+      "credit": "Buckingham Place · galerie officielle"
+    },
+    {
+      "key": "buckingham-3",
+      "localPath": "/images/travel/tangalle-premium/hotels/buckingham-3.webp",
+      "sourcePage": "https://buckinghamplace.lk/",
+      "sourceSHA256": "dbba77aba0cc1494e6cbdc6ac191a1d73d4a6710b3e425953adfe7ce404b2340",
+      "webpSHA256": "2c2fa9fcd45b484551a25b50a1308f1eb339d294e78766cf61d1c97b78ff6453",
+      "webpBytes": 59774,
+      "license": null,
+      "credit": "Buckingham Place · galerie officielle"
+    }
+  ]
+}

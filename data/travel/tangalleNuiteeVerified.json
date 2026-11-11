@@ -1,0 +1,50 @@
+{
+  "destination": "tangalle",
+  "destinationNumber": 80,
+  "verifiedAt": "2026-11-11",
+  "supplier": "Nuitée WhiteLabel via https://bosphoras.nuitee.link",
+  "method": "Read-only supplier search-by-name on account-owned Whitelabel; exact unique name, city Tangalle, country LK and physical address checked. Direct hotel page independently loaded and H1 checked, HTTP 200. No supplier booking API key was required.",
+  "hotelRecords": [
+    {
+      "name": "Amanwella",
+      "hotelId": "lpf0c36",
+      "city": "Tangalle",
+      "countryCode": "LK",
+      "address": "Bodhi Mawatha / Boddhi Mawatha Wella Wathuara, Godellawela, Tangalle",
+      "detailUrl": "https://bosphoras.nuitee.link/hotels/lpf0c36",
+      "detailHttpStatus": 200,
+      "detailTitle": "Amanwella - Hotel Booking"
+    },
+    {
+      "name": "Anantara Peace Haven Tangalle Resort",
+      "hotelId": "lp80d4c",
+      "city": "Tangalle",
+      "countryCode": "LK",
+      "address": "Goyambokka Estate, Tangalle, Sri Lanka",
+      "detailUrl": "https://bosphoras.nuitee.link/hotels/lp80d4c",
+      "detailHttpStatus": 200,
+      "detailTitle": "Anantara Peace Haven Tangalle Resort - Hotel Booking"
+    },
+    {
+      "name": "Kayaam Wellness",
+      "hotelId": "lp6558b35e",
+      "city": "Tangalle",
+      "countryCode": "LK",
+      "address": "Wellodeya Road Rekawa, Tangalle",
+      "detailUrl": "https://bosphoras.nuitee.link/hotels/lp6558b35e",
+      "detailHttpStatus": 200,
+      "detailTitle": "Kayaam Wellness - Hotel Booking"
+    },
+    {
+      "name": "Buckingham Place",
+      "hotelId": "lp65429",
+      "city": "Tangalle",
+      "countryCode": "LK",
+      "address": "Rekawa Beach, Wellawathugoda Road, Netolpitiya, Tangalle",
+      "detailUrl": "https://bosphoras.nuitee.link/hotels/lp65429",
+      "detailHttpStatus": 200,
+      "detailTitle": "Buckingham Place - Hotel Booking"
+    }
+  ],
+  "note": "Correct property identity was verified. Pricing, dates, inventory, room availability and checkout were not tested or promised. All traveler service and payment remain handled by Nuitée."
+}
