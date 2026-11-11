@@ -70,6 +70,8 @@ def metadata(item):
     ext=info.get('extmetadata',{})
     lic=ext.get('LicenseShortName',{}).get('value','')
     lic_url=ext.get('LicenseUrl',{}).get('value','').replace('http://','https://',1)
+    if lic=='Public domain' and not lic_url:
+        lic_url='https://commons.wikimedia.org/wiki/Commons:Licensing#Public_domain'
     credit_raw=ext.get('Artist',{}).get('value','') or ext.get('Credit',{}).get('value','')
     artist=html.unescape(re.sub('<[^>]+>',' ',credit_raw))
     artist=' '.join(artist.split())[:280] or 'Wikimedia Commons contributor (see file page)'
