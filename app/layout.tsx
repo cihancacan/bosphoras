@@ -42,6 +42,17 @@ export const metadata: Metadata = {
   },
   description: defaultDescription,
   metadataBase: new URL('https://www.bosphoras.com'),
+  // Stable and crawlable icons all derived from the exact existing app/icon.png B artwork.
+  icons: {
+    icon: [
+      { url: '/favicon.ico', type: 'image/x-icon', sizes: 'any' },
+      { url: '/favicon-96.png', type: 'image/png', sizes: '96x96' },
+      { url: '/favicon-192.png', type: 'image/png', sizes: '192x192' },
+    ],
+    shortcut: '/favicon.ico',
+    apple: '/apple-icon.png',
+  },
+
   openGraph: {
     title: 'Bosphoras — Bureau Privé en Turquie',
     description: defaultDescription,

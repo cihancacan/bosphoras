@@ -1,0 +1,23 @@
+{
+  "destination": "koh-rong",
+  "destinationNumber": 85,
+  "method": "Owned Nuit\u00e9e WhiteLabel property detail, active mapped=true deletedAt=null country KH, exact names",
+  "hotels": [
+    {
+      "name": "The Royal Sands Koh Rong",
+      "id": "lpacb6e"
+    },
+    {
+      "name": "Song Saa Private Island",
+      "id": "lp65176"
+    },
+    {
+      "name": "Long Set Resort",
+      "id": "lp9dadf"
+    },
+    {
+      "name": "Anaya Koh Rong",
+      "id": "lp323828"
+    }
+  ]
+}
