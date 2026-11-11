@@ -1138,6 +1138,17 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
           </nav>
         </details>
       )}
+      {(city.slug==='paro'||city.slug==='tangalle') && <details className="mt-8 border-t border-[#e1e5e5] pt-5">
+        <summary className="cursor-pointer text-xs text-[#53616b]">{fr?'Crédits des photographies':'Photographic credits'}</summary>
+        <ul className="mt-4 space-y-2 text-xs leading-6 text-[#53616b]">
+          {approvedPhotos.map(photo=><li key={photo.src}>
+            {photo.author} · <a href={photo.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{fr?photo.fr:photo.en}</a> · <a href={photo.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{photo.license}</a>
+          </li>)}
+          {Object.values(hotelEditorialByCity[city.slug]).flatMap(hotel=>hotel.photos).filter(photo=>Boolean(areaPhotoLicensesByCity[city.slug]?.[photo.src])).map(photo=><li key={photo.src}>
+            {photo.credit} · <a href={photo.sourcePage} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{fr?photo.fr:photo.en}</a> · <a href={areaPhotoLicensesByCity[city.slug][photo.src].url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{areaPhotoLicensesByCity[city.slug][photo.src].name}</a>
+          </li>)}
+        </ul>
+      </details>}
       <Link href={travelHref(locale,'hotels/istanbul')}
         className="mt-7 inline-block text-sm text-[#193344] underline underline-offset-4">
         {fr?'Découvrir les hôtels du Bosphore':'Explore Bosphorus hotels'}
