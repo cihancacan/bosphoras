@@ -54,9 +54,11 @@ function countryCode(value) {
 const hotels=Object.values(featuredCityGuides).flatMap(city=>
   city.hotels.map(hotel=>({destination:city.slug,city:city.name,country:city.country,
     name:hotel.name,editorialKey:city.slug+':'+hotel.officialUrl})));
-const existing=[...manual.hotels,...generated.hotels];
-const assigned=new Set(existing.flatMap(hotel=>hotel.editorialKeys||[]));
-const pending=hotels.filter(hotel=>!assigned.has(hotel.editorialKey));
+// Runtime mappings use tuples, keyed on exact editorial name (not official URL).
+const generatedRows=generated.hotels.map(([destination,name,hotelId])=>({destination,name,hotelId,editorialKeys:[destination+':'+name]}));
+const existing=[...manual.hotels,...generatedRows];
+const assigned=new Set(existing.flatMap(hotel=>[...(hotel.editorialKeys||[]),hotel.destination+':'+hotel.name]));
+const pending=hotels.filter(hotel=>!assigned.has(hotel.editorialKey)&&!assigned.has(hotel.destination+':'+hotel.name));
 const report={
   generatedAt:new Date().toISOString(),destinations:Object.keys(featuredCityGuides).length,
   editorialHotels:hotels.length,verifiedSupplierHotels:existing.length,
@@ -195,8 +197,8 @@ function verifyIdentity(hotel,supplier) {
   writeMissingCsv(report.unresolved);
   fs.writeFileSync(reportFile,JSON.stringify(report,null,2)+'\n');
   if(apply&&newMappings.length){
-    const merged=[...generated.hotels,...newMappings].sort((a,b)=>
-      (a.destination+':'+a.name).localeCompare(b.destination+':'+b.name));
+    const merged=[...generated.hotels,...newMappings.map(m=>[m.destination,m.name,m.hotelId])].sort((a,b)=>
+      (a[0]+':'+a[1]).localeCompare(b[0]+':'+b[1]));
     fs.writeFileSync(output,JSON.stringify({hotels:merged},null,2)+'\n');
   }
   console.log('Nuitée '+(apply?'mapping import':'candidate audit')+': '+

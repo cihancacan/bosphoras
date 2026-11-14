@@ -1,0 +1,23 @@
+{
+  "destination": "luang-prabang",
+  "destinationNumber": 86,
+  "method": "Public Bosphoras Nuitée WhiteLabel exact property details, country LA, active supplier properties; two ambiguous Phou Vao IDs excluded; deleted Amantaka excluded.",
+  "hotels": [
+    {
+      "name": "The Luang Say Residence",
+      "id": "lp5bfe8"
+    },
+    {
+      "name": "Rosewood Luang Prabang",
+      "id": "lpe4c8f"
+    },
+    {
+      "name": "3 Nagas Hotel Luang Prabang - MGallery Collection",
+      "id": "lp741e9"
+    },
+    {
+      "name": "Avani+ Luang Prabang Hotel",
+      "id": "lpa4272"
+    }
+  ]
+}
