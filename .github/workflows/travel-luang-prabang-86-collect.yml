@@ -1,0 +1,38 @@
+name: Luang Prabang 86 source collection (no release)
+on:
+  push:
+    branches: [feature/travel-luang-prabang-86]
+    paths:
+      - 'scripts/collect-luang-prabang-86.py'
+      - '.github/workflows/travel-luang-prabang-86-collect.yml'
+permissions:
+  contents: write
+concurrency:
+  group: luang-prabang-86-collection
+  cancel-in-progress: false
+jobs:
+  candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'Pillow>=10,<12'
+      - name: Collect geographic and exact hotel candidates
+        env:
+          NUITEE_API_KEY: ${{ secrets.NUITEE_API_KEY }}
+        run: python -u scripts/collect-luang-prabang-86.py
+      - name: Save candidates on review branch only
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = feature/travel-luang-prabang-86
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/travel/luangPrabangAssetCollection.json
+          if test -d public/images/travel/luang-prabang-premium; then git add public/images/travel/luang-prabang-premium; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): collect Luang Prabang 86 candidates for visual QA [skip ci]'
+            git push origin HEAD:feature/travel-luang-prabang-86
+          fi
