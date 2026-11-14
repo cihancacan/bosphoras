@@ -10,7 +10,7 @@ const copy = {
   fr: {
     name: 'Nom et prénom', email: 'Adresse e-mail', phone: 'Téléphone', country: 'Pays de résidence',
     company: 'Entreprise ou nom du projet', website: 'Site web (facultatif)', amount: 'Montant recherché',
-    sector: 'Secteur d’activité', summary: 'Présentez le projet et son besoin de financement',
+    sector: 'Secteur d’activité', stage: 'Stade du projet', turnover: 'Chiffre d’affaires annuel approximatif', financeType: 'Type de financement envisagé', summary: 'Présentez le projet et son besoin de financement',
     profile: 'Votre profil', capacity: 'Montant d’investissement envisagé',
     interests: 'Quels secteurs vous intéressent ?', message: 'Votre message',
     consent: 'J’accepte que Bosphoras utilise mes coordonnées pour traiter cette demande et me contacter. J’ai consulté la politique de confidentialité.',
@@ -23,7 +23,7 @@ const copy = {
   en: {
     name: 'Full name', email: 'Email address', phone: 'Phone number', country: 'Country of residence',
     company: 'Company or project name', website: 'Website (optional)', amount: 'Funding target',
-    sector: 'Industry', summary: 'Tell us about your business and financing needs',
+    sector: 'Industry', stage: 'Project stage', turnover: 'Approximate annual revenue', financeType: 'Preferred financing structure', summary: 'Tell us about your business and financing needs',
     profile: 'Investor profile', capacity: 'Indicative investment amount',
     interests: 'Which sectors interest you?', message: 'Your message',
     consent: 'I agree that Bosphoras may use my contact information to process this enquiry and contact me. I have read the privacy policy.',
@@ -79,6 +79,9 @@ export function InvestmentInquiryForm({ locale, kind }: { locale: FormLocale; ki
             <label className={labelStyle}>{c.website}<input className={fieldStyle} type="url" name="Website" placeholder="https://" maxLength={250} /></label>
             <label className={labelStyle}>{c.amount} *<select className={fieldStyle} name="Funding target" required defaultValue=""><option value="" disabled>—</option><option>Under €100,000</option><option>€100,000–€500,000</option><option>€500,000–€2,000,000</option><option>€2,000,000–€5,000,000</option><option>Above €5,000,000</option><option>To be determined</option></select></label>
             <label className={labelStyle}>{c.sector} *<select className={fieldStyle} name="Sector" required defaultValue=""><option value="" disabled>—</option><option>Industry & manufacturing</option><option>Energy & environment</option><option>Technology & AI</option><option>Healthcare</option><option>Travel & hospitality</option><option>Construction</option><option>Other</option></select></label>
+            <label className={labelStyle}>{c.stage}<select className={fieldStyle} name="Project stage" defaultValue=""><option value="">—</option><option>Idea / feasibility</option><option>In development</option><option>Operating company</option><option>Expansion / acquisition</option></select></label>
+            <label className={labelStyle}>{c.turnover}<select className={fieldStyle} name="Annual revenue band" defaultValue=""><option value="">—</option><option>Pre-revenue</option><option>Under €100k</option><option>€100k–€500k</option><option>€500k–€2m</option><option>Above €2m</option><option>Prefer to discuss</option></select></label>
+            <label className={labelStyle}>{c.financeType}<select className={fieldStyle} name="Financing preference" defaultValue=""><option value="">—</option><option>Debt / loan</option><option>Equity / shares</option><option>Project finance</option><option>Not sure</option></select></label>
           </div>
           <label className={labelStyle}>{c.summary} *<textarea className={fieldStyle} name="Message" required minLength={30} maxLength={3000} rows={6} placeholder={c.placeholder} /></label>
         </>
@@ -94,7 +97,7 @@ export function InvestmentInquiryForm({ locale, kind }: { locale: FormLocale; ki
       )}
       <label className="flex items-start gap-3 text-[13px] leading-6 text-[#4a5961]">
         <input type="checkbox" name="Consent" value="Yes" required className="mt-1.5 h-4 w-4 shrink-0 accent-[#193344]"/>
-        <span>{c.consent} <a className="underline underline-offset-2" href="/confidentialite">{c.privacy}</a>.</span>
+        <span>{c.consent} <a className="underline underline-offset-2" href={locale === 'fr' ? '/confidentialite' : '/en/confidentialite'}>{c.privacy}</a>.</span>
       </label>
       <button type="submit" disabled={status === 'sending'} className="inline-flex min-h-12 items-center justify-center bg-[#193344] px-7 py-3 text-sm font-medium text-white transition hover:bg-[#2b4e63] disabled:cursor-wait disabled:opacity-60">{status === 'sending' ? c.sending : project ? c.submitProject : c.submitInvestor} <span aria-hidden="true" className="ml-3">→</span></button>
       {status === 'success' && <p role="status" className="border-l-2 border-[#193344] bg-[#eef1f2] p-4 text-sm text-[#193344]">{c.success}</p>}

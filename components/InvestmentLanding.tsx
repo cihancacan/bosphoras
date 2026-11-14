@@ -136,6 +136,8 @@ const content = {
 export function InvestmentLanding({ locale }: { locale: InvestmentLocale }) {
   const c = content[locale];
   const path = locale === 'fr' ? '/investissement' : '/en/investment';
+  const investorHref = locale === 'fr' ? '/investissement/investisseurs' : '/en/investment/investors';
+  const entrepreneurHref = locale === 'fr' ? '/investissement/entrepreneurs' : '/en/investment/entrepreneurs';
   const isFr = locale === 'fr';
   return (
     <>
@@ -158,8 +160,8 @@ export function InvestmentLanding({ locale }: { locale: InvestmentLocale }) {
               <h1 className="max-w-[1000px] text-[clamp(3rem,6vw,6.8rem)] font-normal leading-[1.05] tracking-[-0.063em] text-[#193344]">{c.h1}</h1>
               <p className="mt-10 max-w-3xl text-lg leading-9 text-[#4a5961] md:text-xl">{c.intro}</p>
               <div className="mt-10 flex flex-wrap gap-3">
-                <a className="inline-flex items-center gap-3 bg-[#193344] px-6 py-4 text-sm text-white hover:bg-[#2c4d61]" href="#soumettre-projet">{c.ctaProject}<ArrowRight size={16}/></a>
-                <a className="inline-flex items-center gap-3 border border-[#a3adb2] px-6 py-4 text-sm text-[#193344] hover:border-[#193344]" href="#investisseurs">{c.ctaInvestor}<ArrowRight size={16}/></a>
+                <a className="inline-flex items-center gap-3 bg-[#193344] px-6 py-4 text-sm text-white hover:bg-[#2c4d61]" href={entrepreneurHref}>{c.ctaProject}<ArrowRight size={16}/></a>
+                <a className="inline-flex items-center gap-3 border border-[#a3adb2] px-6 py-4 text-sm text-[#193344] hover:border-[#193344]" href={investorHref}>{c.ctaInvestor}<ArrowRight size={16}/></a>
               </div>
             </div>
             <div className="flex flex-col justify-end border-t border-[#b5bfc3] pt-8 lg:border-l lg:border-t-0 lg:pl-10">
@@ -186,14 +188,14 @@ export function InvestmentLanding({ locale }: { locale: InvestmentLocale }) {
                 <p className="mt-8 text-xs uppercase tracking-[0.14em] text-[#53616b]">{c.founder}</p>
                 <h3 className="mt-5 max-w-xl text-3xl font-normal leading-tight tracking-[-0.045em] md:text-4xl">{c.founderTitle}</h3>
                 <p className="mt-6 max-w-xl text-base leading-8 text-[#53616b]">{c.founderText}</p>
-                <a href="#soumettre-projet" className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-[#193344] underline underline-offset-8">{c.ctaProject}<MoveUpRight size={16}/></a>
+                <Link href={entrepreneurHref} className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-[#193344] underline underline-offset-8">{c.ctaProject}<MoveUpRight size={16}/></Link>
               </article>
               <article className="border-b border-[#d9e0e2] py-10 lg:pl-12">
                 <Landmark size={27} strokeWidth={1.2} className="text-[#193344]"/>
                 <p className="mt-8 text-xs uppercase tracking-[0.14em] text-[#53616b]">{c.investor}</p>
                 <h3 className="mt-5 max-w-xl text-3xl font-normal leading-tight tracking-[-0.045em] md:text-4xl">{c.investorTitle}</h3>
                 <p className="mt-6 max-w-xl text-base leading-8 text-[#53616b]">{c.investorText}</p>
-                <a href="#contact-investisseur" className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-[#193344] underline underline-offset-8">{c.ctaInvestor}<MoveUpRight size={16}/></a>
+                <Link href={investorHref} className="mt-8 inline-flex items-center gap-2 text-sm font-medium text-[#193344] underline underline-offset-8">{c.ctaInvestor}<MoveUpRight size={16}/></Link>
               </article>
             </div>
           </div>

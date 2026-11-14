@@ -124,8 +124,10 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
     ]},
     { label: labels.investment, href: investmentHref, items: [
       { label: locale === 'fr' ? 'Découvrir Bosphoras Investment' : locale === 'en' ? 'Explore Investment Partners' : locale === 'ru' ? 'Инвестиционные решения' : 'استكشف الاستثمار', href: investmentHref, description: locale === 'fr' ? 'Financement de projets, actions, obligations et conseil aux entreprises.' : 'Private business investment, debt, equity and corporate advisory.' },
-      { label: locale === 'fr' ? 'Soumettre un projet' : locale === 'en' ? 'Submit a project' : locale === 'ru' ? 'Предложить проект' : 'تقديم مشروع', href: investmentHref + '#soumettre-projet' },
-      { label: locale === 'fr' ? 'Devenir investisseur' : locale === 'en' ? 'Investor enquiries' : locale === 'ru' ? 'Для инвесторов' : 'للمستثمرين', href: investmentHref + '#contact-investisseur' },
+      { label: locale === 'fr' ? 'Investisseurs & projets' : locale === 'en' ? 'Investors & ventures' : locale === 'ru' ? 'Инвесторам' : 'فرص المستثمرين', href: locale === 'fr' ? '/investissement/investisseurs' : '/en/investment/investors', description: locale === 'fr' ? 'Les projets en préparation, la dette, les actions et les risques.' : 'Early-stage dossiers, debt, equity and investment risks.' },
+      { label: locale === 'fr' ? 'Entreprises : soumettre un projet' : locale === 'en' ? 'Companies: submit a project' : locale === 'ru' ? 'Предложить проект' : 'تقديم مشروع', href: (locale === 'fr' ? '/investissement/entrepreneurs' : '/en/investment/entrepreneurs') + '#soumettre-projet' },
+      { label: locale === 'fr' ? 'Accès investisseur' : locale === 'en' ? 'Investor login' : locale === 'ru' ? 'Доступ инвестора' : 'دخول المستثمر', href: locale === 'fr' ? '/investissement/acces/investisseur' : '/en/investment/access/investor' },
+      { label: locale === 'fr' ? 'Accès entrepreneur' : locale === 'en' ? 'Entrepreneur login' : locale === 'ru' ? 'Доступ предпринимателя' : 'دخول رائد الأعمال', href: locale === 'fr' ? '/investissement/acces/entrepreneur' : '/en/investment/access/entrepreneur' },
     ]},
     { label: labels.privateAccess, href: linkTo('private-club'), items: [
       { label: locale === 'fr' ? 'Cercle prive' : locale === 'en' ? 'Private Access Club' : locale === 'ru' ? 'Частный клуб' : 'النادي الخاص', href: linkTo('private-club') },
