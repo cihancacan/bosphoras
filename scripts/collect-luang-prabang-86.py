@@ -21,8 +21,11 @@ def save(raw, relative):
     im.thumbnail((1280,850),Image.Resampling.LANCZOS)
     if im.width<650 or im.height<400: raise ValueError('image below resolution threshold')
     target=OUT/relative;target.parent.mkdir(parents=True,exist_ok=True)
-    for quality in [83,76,69,62,55]:
-        im.save(target,'WEBP',quality=quality,method=6)
+    for width in [1280,1100,950,800,700]:
+        im.thumbnail((width,850),Image.Resampling.LANCZOS)
+        for quality in [83,76,69,62,55]:
+            im.save(target,'WEBP',quality=quality,method=6)
+            if target.stat().st_size<=150000:break
         if target.stat().st_size<=150000:break
     data=target.read_bytes()
     if len(data)>150000 or len(data)<5000: target.unlink();raise ValueError('image fails size threshold')
@@ -31,7 +34,7 @@ scenes=[
  ('scene-1','Panoramic view of Mount Phou Si seen from Wat Chomphet in Luang Prabang Laos.jpg','Le Mékong et le mont Phousi','Mekong and Mount Phousi'),
  ('scene-2','Luang Prabang - Wat Xieng Thong.jpg','Le temple Wat Xieng Thong','Wat Xieng Thong temple'),
  ('scene-3','Kuang Si waterfalls in Luang Prabang, Laos.jpg','Les cascades de Kuang Si','Kuang Si waterfalls'),
- ('scene-4','Royal Palace in Luang Prabang.jpg','L’ancien palais royal','The former royal palace'),
+ ('scene-4','Luang Prabang Royal Palace.jpg','L’ancien palais royal','The former royal palace'),
  ('scene-5','Luang Prabang Rue.JPG','Une rue du centre historique','A street in the historic centre'),
  ('scene-6','Nam Khan river.JPG','La rivière Nam Khan','The Nam Khan River'),
  ('scene-7','Wat Mai Luang Prabang.jpg','Le monastère Wat Mai','Wat Mai monastery'),

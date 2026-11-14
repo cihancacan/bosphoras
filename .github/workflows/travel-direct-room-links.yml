@@ -1,0 +1,29 @@
+name: Travel direct room links — all integrated destinations
+on:
+  push:
+    branches: [feature/travel-luang-prabang-86]
+    paths:
+      - '.github/workflows/travel-direct-room-links.yml'
+      - 'scripts/check-travel-direct-room-links.cjs'
+      - 'components/travel/HotelPartnerBooking.tsx'
+      - 'data/travel/nuiteeResolvedMappings.json'
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: node -r ./scripts/register-ts.cjs scripts/check-travel-direct-room-links.cjs --report
+      - run: npm run typecheck
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: travel-direct-room-link-audit
+          path: docs/travel-nuitee-direct-link-audit.json

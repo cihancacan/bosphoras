@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { travelHref } from '@/lib/travel/i18n';
+import { getNuiteeWhiteLabelSearchHref } from '@/lib/travel/nuiteeWhiteLabel';
 import { getNuiteeHotelLinks, isNuiteeBookingLive, nuiteeLaunch } from '@/lib/travel/nuiteeLaunch';
 
 type HotelBookingProps = {
@@ -11,16 +11,13 @@ type HotelBookingProps = {
  * Links only to Nuitée: exact verified supplier hotel pages for mapped hotels;
  * otherwise to the supplier's general search, without inventing a property ID.
  */
-function bookingTarget(hotelKey: string, locale: 'fr' | 'en') {
+export function bookingTarget(hotelKey: string, locale: 'fr' | 'en') {
   const supplierLink = getNuiteeHotelLinks(hotelKey, locale).find(
     (link) => link.providerId === 'nuitee-connect'
   );
-  const hotelId = supplierLink ? new URL(supplierLink.url).pathname.split('/').pop() : undefined;
   return {
-    exact: Boolean(hotelId),
-    href: hotelId
-      ? `${travelHref(locale, 'search')}?hotel=${encodeURIComponent(hotelId)}`
-      : travelHref(locale, 'search'),
+    exact: Boolean(supplierLink),
+    href: supplierLink?.url ?? getNuiteeWhiteLabelSearchHref(locale),
   };
 }
 
@@ -36,7 +33,7 @@ export function HotelNuiteeLink({ hotelKey, locale }: HotelBookingProps) {
     >
       {target.exact
         ? fr ? 'Voir les chambres et réserver' : 'View rooms and book'
-        : fr ? 'Rechercher cet hôtel sur Nuitée' : 'Find this hotel on Nuitée'}
+        : fr ? 'Rechercher un hébergement sur Nuitée' : 'Search accommodation on Nuitée'}
       <span aria-hidden="true" className="ml-2">→</span>
     </Link>
   );
@@ -60,8 +57,8 @@ export function HotelPartnerBooking({ hotelKey, locale }: HotelBookingProps) {
                 ? 'Consultez les chambres et les disponibilités dans notre espace de réservation, opéré par Nuitée. Nuitée gère votre paiement, votre confirmation et le SAV du séjour.'
                 : 'View rooms and availability in our booking space, operated by Nuitée. Nuitée handles payment, confirmation and support for your stay.'
               : fr
-                ? 'Recherchez cet établissement dans notre espace de réservation, opéré par Nuitée. Nuitée gère votre paiement, votre confirmation et le SAV du séjour.'
-                : 'Search for this property in our Nuitée-operated booking space. Nuitée handles payment, confirmation and support for your stay.'}
+                ? 'Recherchez un hébergement dans notre espace de réservation, opéré par Nuitée. Nuitée gère votre paiement, votre confirmation et le SAV du séjour.'
+                : 'Search for accommodation in our Nuitée-operated booking space. Nuitée handles payment, confirmation and support for your stay.'}
           </p>
           <HotelNuiteeLink hotelKey={hotelKey} locale={locale} />
           <p className="mt-3 text-xs leading-6 text-[#53616b]">
