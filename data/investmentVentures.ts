@@ -20,8 +20,8 @@ export const investmentVentures: InvestmentVenture[] = [
     sector: 'Santé & services internationaux',
     englishSector: 'Healthcare & international services',
     financing: 'Capital / croissance à étudier',
-    summary: 'Activité d’accompagnement francophone en tourisme dentaire. Le dossier doit préciser le modèle commercial, les partenariats cliniques, la marge et les besoins de développement.',
-    englishSummary: 'French-speaking dental tourism coordination business. Its dossier will need documented commercial economics, clinic partnerships, margins and expansion requirements.'
+    summary: 'Cliniqeo accompagne les patients francophones dans leur parcours de soins dentaires en Turquie, de la préparation du séjour à la coordination avec les équipes cliniques, avec une approche centrée sur le suivi et la qualité de service.',
+    englishSummary: 'Cliniqeo helps French-speaking patients organise dental-care journeys in Turkey, coordinating clinic appointments, travel logistics and ongoing support through a patient-focused service model.'
   },
   {
     code: 'aqma',
@@ -40,8 +40,8 @@ export const investmentVentures: InvestmentVenture[] = [
     sector: 'Services médicaux',
     englishSector: 'Medical services',
     financing: 'Capital de développement à étudier',
-    summary: 'Projet de coordination de services médicaux et d’assistance au Kazakhstan. Le dossier devra distinguer les activités propres de l’entreprise de celles de ses partenaires opérationnels.',
-    englishSummary: 'Kazakhstan-based medical services and assistance coordination initiative. The dossier must separate its own business economics from those of its operational partners.'
+    summary: 'Medsestra.kz développe une activité de coordination de services médicaux et d’assistance au Kazakhstan, avec l’ambition de simplifier l’accès aux prestations pour les entreprises, les organisateurs d’événements et leurs équipes.',
+    englishSummary: 'Medsestra.kz develops medical support and assistance coordination services in Kazakhstan, connecting companies and event organisers with suitable healthcare service providers.'
   },
   {
     code: 'lovelockparis',
@@ -50,8 +50,8 @@ export const investmentVentures: InvestmentVenture[] = [
     sector: 'Tourisme & technologies numériques',
     englishSector: 'Travel & digital technology',
     financing: 'Capital innovation à étudier',
-    summary: 'Projet d’expérience digitale autour des souvenirs et des lieux emblématiques. Le dossier devra préciser le produit opérationnel, les revenus, la propriété intellectuelle et le plan commercial.',
-    englishSummary: 'Digital experience project focused on memories and meaningful places. Its investment dossier must substantiate the working product, revenue model, intellectual property and go-to-market plan.'
+    summary: 'LoveLockParis développe un concept numérique autour des souvenirs, des émotions et des lieux emblématiques, à la rencontre du tourisme et de nouvelles expériences digitales.',
+    englishSummary: 'LoveLockParis explores digital experiences centred on memories, meaningful places and travel, connecting tourism with personalised online interactions.'
   },
   {
     code: 'qenerzy',
@@ -60,8 +60,8 @@ export const investmentVentures: InvestmentVenture[] = [
     sector: 'Énergie solaire & infrastructures',
     englishSector: 'Solar energy & infrastructure',
     financing: 'Capital projet et dette structurée à étudier',
-    summary: 'Projet de parc photovoltaïque de 30 MW envisagé dans la région d’Almaty. Le foncier, les autorisations, le raccordement, le budget et le contrat d’achat d’électricité restent à documenter avant tout financement.',
-    englishSummary: 'Proposed 30 MW photovoltaic development in the Almaty region. Land rights, permits, grid connection, project costs and any power-purchase agreement must be evidenced before financing.'
+    summary: 'Qenerzy porte Kus Solar Park 1, un projet de parc photovoltaïque d’environ 30 MW dans la région d’Almaty, avec l’ambition de développer une infrastructure de production d’électricité renouvelable au Kazakhstan.',
+    englishSummary: 'Qenerzy is developing Kus Solar Park 1, a proposed 30 MW photovoltaic power project in the Almaty region, targeting new renewable electricity production capacity in Kazakhstan.'
   },
   {
     code: 'bosphoras-luxury-stays',
@@ -70,7 +70,7 @@ export const investmentVentures: InvestmentVenture[] = [
     sector: 'Hôtellerie & travel tech',
     englishSector: 'Hospitality & travel technology',
     financing: 'Capital de développement à étudier',
-    summary: 'Développement du département hôtels et séjours : distribution, partenariats et croissance commerciale. Les revenus, les commissions effectivement réalisées et les coûts d’acquisition devront être vérifiés.',
-    englishSummary: 'Expansion of the hotels and stays division through distribution, partnerships and marketing. Actual revenue, earned commissions and customer acquisition costs will need validation.'
+    summary: 'Bosphoras Luxury Stays développe une sélection internationale d’hôtels remarquables, de séjours et de guides de destinations, avec un modèle orienté vers la distribution digitale, la réservation et les partenariats hôteliers.',
+    englishSummary: 'Bosphoras Luxury Stays curates exceptional hotels, travel stays and destination guides, pursuing an international digital-distribution and hospitality-partnership strategy.'
   }
 ];
