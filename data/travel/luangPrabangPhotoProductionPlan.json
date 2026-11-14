@@ -1,0 +1,215 @@
+{
+  "destination": "luang-prabang",
+  "destinationNumber": 86,
+  "status": "draft_not_integrated",
+  "previewApproved": false,
+  "productionApproved": false,
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "subject": "Mékong et panorama du mont Phousi",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Mount_Phou_Si_seen_from_Wat_Chomphet_in_Luang_Prabang_Laos.jpg",
+      "licenseVerified": false,
+      "visuallyVerified": false,
+      "localPath": null
+    },
+    {
+      "key": "scene-2",
+      "subject": "Wat Xieng Thong",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Luang_Prabang_-_Wat_Xieng_Thong.jpg",
+      "licenseVerified": false,
+      "visuallyVerified": false,
+      "localPath": null
+    },
+    {
+      "key": "scene-3",
+      "subject": "Cascades de Kuang Si",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kuang_Si_waterfalls_in_Luang_Prabang,_Laos.jpg",
+      "licenseVerified": false,
+      "visuallyVerified": false,
+      "localPath": null
+    },
+    {
+      "key": "scene-4",
+      "subject": "Ancien palais royal",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Luang_Prabang_Royal_Palace.jpg",
+      "licenseVerified": false,
+      "visuallyVerified": false,
+      "localPath": null
+    },
+    {
+      "key": "scene-5",
+      "subject": "Rue du centre historique",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Luang_Prabang_Rue.JPG",
+      "licenseVerified": false,
+      "visuallyVerified": false,
+      "localPath": null
+    },
+    {
+      "key": "scene-6",
+      "subject": "Rivière Nam Khan",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nam_Khan_river.JPG",
+      "licenseVerified": false,
+      "visuallyVerified": false,
+      "localPath": null
+    },
+    {
+      "key": "scene-7",
+      "subject": "Wat Mai",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wat_Mai_Luang_Prabang.jpg",
+      "licenseVerified": false,
+      "visuallyVerified": false,
+      "localPath": null
+    },
+    {
+      "key": "scene-8",
+      "subject": "Mékong",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mekong_River_(Luang_Prabang).jpg",
+      "licenseVerified": false,
+      "visuallyVerified": false,
+      "localPath": null
+    },
+    {
+      "key": "scene-9",
+      "subject": "Rivière aux cascades de Kuang Si",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_river_of_Kuang_si_waterfalls.jpg",
+      "licenseVerified": false,
+      "visuallyVerified": false,
+      "localPath": null
+    }
+  ],
+  "hotels": [
+    {
+      "key": "amantaka-1",
+      "hotel": "Amantaka",
+      "subject": "exterior",
+      "officialReference": "https://www.aman.com/resorts/amantaka",
+      "sourcePage": null,
+      "supplierId": null,
+      "localPath": null,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "amantaka-2",
+      "hotel": "Amantaka",
+      "subject": "room",
+      "officialReference": "https://www.aman.com/resorts/amantaka",
+      "sourcePage": null,
+      "supplierId": null,
+      "localPath": null,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "amantaka-3",
+      "hotel": "Amantaka",
+      "subject": "pool-or-distinct-detail",
+      "officialReference": "https://www.aman.com/resorts/amantaka",
+      "sourcePage": null,
+      "supplierId": null,
+      "localPath": null,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "rosewood-1",
+      "hotel": "Rosewood Luang Prabang",
+      "subject": "exterior",
+      "officialReference": "https://www.rosewoodhotels.com/en/luang-prabang",
+      "sourcePage": null,
+      "supplierId": null,
+      "localPath": null,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "rosewood-2",
+      "hotel": "Rosewood Luang Prabang",
+      "subject": "room",
+      "officialReference": "https://www.rosewoodhotels.com/en/luang-prabang",
+      "sourcePage": null,
+      "supplierId": null,
+      "localPath": null,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "rosewood-3",
+      "hotel": "Rosewood Luang Prabang",
+      "subject": "pool-or-distinct-detail",
+      "officialReference": "https://www.rosewoodhotels.com/en/luang-prabang",
+      "sourcePage": null,
+      "supplierId": null,
+      "localPath": null,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "phouvao-1",
+      "hotel": "La Résidence Phou Vao, a Luxury Collection Resort & Spa",
+      "subject": "exterior",
+      "officialReference": "https://www.laresidencehotels.com/phou-vao/",
+      "sourcePage": null,
+      "supplierId": null,
+      "localPath": null,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "phouvao-2",
+      "hotel": "La Résidence Phou Vao, a Luxury Collection Resort & Spa",
+      "subject": "room",
+      "officialReference": "https://www.laresidencehotels.com/phou-vao/",
+      "sourcePage": null,
+      "supplierId": null,
+      "localPath": null,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "phouvao-3",
+      "hotel": "La Résidence Phou Vao, a Luxury Collection Resort & Spa",
+      "subject": "pool-or-distinct-detail",
+      "officialReference": "https://www.laresidencehotels.com/phou-vao/",
+      "sourcePage": null,
+      "supplierId": null,
+      "localPath": null,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "avani-1",
+      "hotel": "Avani+ Luang Prabang Hotel",
+      "subject": "exterior",
+      "officialReference": "https://www.avanihotels.com/en/luang-prabang",
+      "sourcePage": null,
+      "supplierId": null,
+      "localPath": null,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "avani-2",
+      "hotel": "Avani+ Luang Prabang Hotel",
+      "subject": "room",
+      "officialReference": "https://www.avanihotels.com/en/luang-prabang",
+      "sourcePage": null,
+      "supplierId": null,
+      "localPath": null,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false
+    },
+    {
+      "key": "avani-3",
+      "hotel": "Avani+ Luang Prabang Hotel",
+      "subject": "pool-or-distinct-detail",
+      "officialReference": "https://www.avanihotels.com/en/luang-prabang",
+      "sourcePage": null,
+      "supplierId": null,
+      "localPath": null,
+      "visuallyVerified": false,
+      "commercialRightsCleared": false
+    }
+  ]
+}
