@@ -14,7 +14,7 @@ export async function generateMetadata({params}:{params:{code:string}}):Promise<
   title:(p.title_en||v.name)+' — Investment Opportunity | Bosphoras',
   description:(p.short_en||v.englishSummary).slice(0,160),
   image:p.cover_path?publicCoverUrl(p.cover_path):undefined,
-  alternates:{fr:'https://www.bosphoras.com/investissement/projets/'+v.code,en:'https://www.bosphoras.com/en/investment/projects/'+v.code,'x-default':'https://www.bosphoras.com/en/investment/projects/'+v.code}
+  alternates:{fr:'https://www.bosphoras.com/investissement/projets/'+v.code,en:'https://www.bosphoras.com/en/investment/projects/'+v.code,ru:'https://www.bosphoras.com/ru/investment/projects/'+v.code,ar:'https://www.bosphoras.com/ar/investment/projects/'+v.code,'x-default':'https://www.bosphoras.com/en/investment/projects/'+v.code}
  });
 }
 export default function Page({params}:{params:{code:string}}){

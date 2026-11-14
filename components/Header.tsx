@@ -31,7 +31,7 @@ const specialLocalizedPaths: Array<Record<Locale, string>> = [
   { fr: '/peninsula-istanbul', en: '/en/peninsula-istanbul', ru: '/ru/peninsula-istanbul', ar: '/ar/peninsula-istanbul' },
   { fr: '/transfert-aeroport-istanbul', en: '/en/istanbul-airport-transfer', ru: '/ru/transfer-aeroport-stambul', ar: '/ar/istanbul-airport-transfer' },
   corporateRelocationPaths,
-  { fr: '/investissement', en: '/en/investment', ru: '/en/investment', ar: '/en/investment' },
+  { fr: '/investissement', en: '/en/investment', ru: '/ru/investment', ar: '/ar/investment' },
   { fr: '/exoneration-fiscale-turquie-revenus-etrangers', en: '/en/turkey-tax-exemption-foreign-income', ru: '/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody', ar: '/ar/turkey-tax-exemption-foreign-income' },
   { fr: '/strategie-fiscale-turquie-investisseurs-etrangers', en: '/en/turkey-tax-strategy-foreign-investors', ru: '/ru/nalogovaya-strategiya-turtsii-inostrannye-investory', ar: '/ar/turkey-tax-strategy-foreign-investors' },
   { fr: '/exoneration-fiscale-turquie-20-ans-nouveaux-residents', en: '/en/turkey-20-year-tax-exemption-new-residents', ru: '/ru/turtsiya-20-let-nalogovaya-lgota-novye-rezidenty', ar: '/ar/turkey-20-year-tax-exemption-new-residents' },
@@ -72,7 +72,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
   const mobilityLink = locale === 'fr' ? '/transfert-aeroport-istanbul' : locale === 'en' ? '/en/istanbul-airport-transfer' : locale === 'ru' ? '/ru/transfer-aeroport-stambul' : '/ar/istanbul-airport-transfer';
   const peninsulaLink = locale === 'fr' ? '/peninsula-istanbul' : `/${locale}/peninsula-istanbul`;
   const travelHomeHref = locale === 'fr' ? '/travel' : `/${locale}/travel`;
-  const investmentHref = locale === 'fr' ? '/investissement' : '/en/investment';
+  const investmentHref = locale === 'fr' ? '/investissement' : '/'+locale+'/investment';
   const hotelSearchHref = getNuiteeWhiteLabelSearchHref(locale);
   const travelDestinationsHref = locale === 'fr' ? '/travel/destinations' : `/${locale}/travel/destinations`;
   const corporateRelocationLink = corporateRelocationPaths[locale];
@@ -124,11 +124,11 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
     ]},
     { label: labels.investment, href: investmentHref, items: [
       { label: locale === 'fr' ? 'Découvrir Bosphoras Investment' : locale === 'en' ? 'Explore Investment Partners' : locale === 'ru' ? 'Инвестиционные решения' : 'استكشف الاستثمار', href: investmentHref, description: locale === 'fr' ? 'Financement de projets, actions, obligations et conseil aux entreprises.' : 'Private business investment, debt, equity and corporate advisory.' },
-      { label: locale === 'fr' ? 'Projets' : locale === 'en' ? 'Projects' : locale === 'ru' ? 'Проекты' : 'المشاريع', href: locale === 'fr' ? '/investissement/projets' : '/en/investment/projects' },
-      { label: locale === 'fr' ? 'Investisseurs' : locale === 'en' ? 'Investors' : locale === 'ru' ? 'Инвесторам' : 'للمستثمرين', href: locale === 'fr' ? '/investissement/investisseurs' : '/en/investment/investors' },
-      { label: locale === 'fr' ? 'Entreprises' : locale === 'en' ? 'Companies' : locale === 'ru' ? 'Предприятия' : 'الشركات', href: locale === 'fr' ? '/investissement/entrepreneurs' : '/en/investment/entrepreneurs' },
-      { label: locale === 'fr' ? 'Accès investisseur' : locale === 'en' ? 'Investor login' : locale === 'ru' ? 'Доступ инвестора' : 'دخول المستثمر', href: locale === 'fr' ? '/investissement/acces/investisseur' : '/en/investment/access/investor' },
-      { label: locale === 'fr' ? 'Accès entrepreneur' : locale === 'en' ? 'Entrepreneur login' : locale === 'ru' ? 'Доступ предпринимателя' : 'دخول رائد الأعمال', href: locale === 'fr' ? '/investissement/acces/entrepreneur' : '/en/investment/access/entrepreneur' },
+      { label: locale === 'fr' ? 'Projets' : locale === 'en' ? 'Projects' : locale === 'ru' ? 'Проекты' : 'المشاريع', href: locale === 'fr' ? '/investissement/projets' : '/'+locale+'/investment/projects' },
+      { label: locale === 'fr' ? 'Investisseurs' : locale === 'en' ? 'Investors' : locale === 'ru' ? 'Инвесторам' : 'للمستثمرين', href: locale === 'fr' ? '/investissement/investisseurs' : '/'+locale+'/investment/investors' },
+      { label: locale === 'fr' ? 'Entreprises' : locale === 'en' ? 'Companies' : locale === 'ru' ? 'Предприятия' : 'الشركات', href: locale === 'fr' ? '/investissement/entrepreneurs' : '/'+locale+'/investment/entrepreneurs' },
+      { label: locale === 'fr' ? 'Accès investisseur' : locale === 'en' ? 'Investor login' : locale === 'ru' ? 'Доступ инвестора (EN)' : 'دخول المستثمر (EN)', href: locale === 'fr' ? '/investissement/acces/investisseur' : '/en/investment/access/investor' },
+      { label: locale === 'fr' ? 'Accès entrepreneur' : locale === 'en' ? 'Entrepreneur login' : locale === 'ru' ? 'Доступ предпринимателя (EN)' : 'دخول رائد الأعمال (EN)', href: locale === 'fr' ? '/investissement/acces/entrepreneur' : '/en/investment/access/entrepreneur' },
     ]},
     { label: labels.privateAccess, href: linkTo('private-club'), items: [
       { label: locale === 'fr' ? 'Cercle prive' : locale === 'en' ? 'Private Access Club' : locale === 'ru' ? 'Частный клуб' : 'النادي الخاص', href: linkTo('private-club') },

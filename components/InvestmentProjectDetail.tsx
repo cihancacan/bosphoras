@@ -4,7 +4,7 @@ import {Header} from '@/components/Header';
 import {Footer} from '@/components/Footer';
 import {StructuredData} from '@/components/StructuredData';
 import {investmentVentures,type InvestmentVentureCode} from '@/data/investmentVentures';
-import {publicInvestmentListing,publicInvestmentImages,publicCoverUrl,moneyLabel} from '@/lib/investmentListings';
+import {publicInvestmentListing,publicInvestmentImages,publicCoverUrl,moneyLabel,safeInvestmentWebsite} from '@/lib/investmentListings';
 import {breadcrumbSchema} from '@/lib/seo';
 
 const terms:Record<string,[string,string]>={loan:['Prêt','Loan'],bond:['Obligations','Bonds'],equity:['Capital / actions','Equity'],project_finance:['Financement de projet','Project finance'],other:['Opération privée','Private transaction']};
@@ -28,8 +28,8 @@ export async function InvestmentProjectDetail({code,locale}:{code:InvestmentVent
  const risk=fr?p.risk_summary_fr:p.risk_summary_en;
  return <>
   <StructuredData data={breadcrumbSchema([{name:'Bosphoras',url:'https://www.bosphoras.com'},{name:'Investment',url:'https://www.bosphoras.com'+(fr?'/investissement':'/en/investment')},{name:fr?'Projets':'Projects',url:'https://www.bosphoras.com'+index},{name:title,url:'https://www.bosphoras.com'+path}])}/>
-  <StructuredData data={{'@context':'https://schema.org','@type':'WebPage',name:title,description:desc,url:'https://www.bosphoras.com'+path,about:{'@type':'Organization',name:p.issuer_name||v.name},...(cover?{primaryImageOfPage:{'@type':'ImageObject',url:cover}}:{})}}/>
-  <Header locale={locale} currentPath={path} localizedPaths={{fr:'/investissement/projets/'+code,en:'/en/investment/projects/'+code,ru:'/en/investment/projects/'+code,ar:'/en/investment/projects/'+code}}/>
+  <StructuredData data={{'@context':'https://schema.org','@type':'WebPage',name:title,description:desc,url:'https://www.bosphoras.com'+path,about:{'@type':'Organization',name:p.issuer_name||v.name,...(safeInvestmentWebsite(p.official_website)?{url:safeInvestmentWebsite(p.official_website)}:{})},...(cover?{primaryImageOfPage:{'@type':'ImageObject',url:cover}}:{})}}/>
+  <Header locale={locale} currentPath={path} localizedPaths={{fr:'/investissement/projets/'+code,en:'/en/investment/projects/'+code,ru:'/ru/investment/projects/'+code,ar:'/ar/investment/projects/'+code}}/>
   <main lang={locale} className="bg-[#f5f6f5] pb-24 pt-[4.85rem] text-[#243941]">
    <div className="mx-auto max-w-[1450px] px-6 pt-9 md:px-12">
     <Link href={index} className="inline-flex items-center gap-2 text-sm text-[#546d79] hover:text-[#193344]"><ArrowLeft size={16}/>{fr?'Tous les projets':'All projects'}</Link>
@@ -66,7 +66,8 @@ export async function InvestmentProjectDetail({code,locale}:{code:InvestmentVent
        {p.payment_frequency&&<div><p className="text-xs text-[#71858e]">{fr?'Paiements':'Payment frequency'}</p><p className="mt-2 text-sm font-semibold text-[#193344]">{freq[p.payment_frequency]?.[fr?0:1]||p.payment_frequency}</p></div>}
       </div>
       <Link href={request} className="mt-8 flex min-h-14 items-center justify-center gap-3 rounded-lg bg-[#193344] px-5 py-4 text-sm font-medium text-white">{fr?'Demander un placement':'Request investment'}<ArrowRight size={17}/></Link>
-      <Link href={request} className="mt-4 block text-center text-sm font-medium text-[#193344] underline underline-offset-4">{fr?'Demander l’accès au dossier':'Request dossier access'}</Link>
+      <Link href={request+'?kind=access'} className="mt-4 block text-center text-sm font-medium text-[#193344] underline underline-offset-4">{fr?'Demander l’accès au dossier':'Request dossier access'}</Link>
+      {safeInvestmentWebsite(p.official_website)&&<a href={safeInvestmentWebsite(p.official_website)} target="_blank" rel="noopener noreferrer" className="mt-5 block rounded-lg border border-[#cad6dc] px-5 py-3 text-center text-sm text-[#193344]">{fr?'Visiter le site officiel':'Visit official website'} ↗</a>}
       <p className="mt-5 text-xs leading-6 text-[#73828b]">{fr?'Demande sans engagement. Aucun prélèvement à cette étape.':'Non-binding enquiry. No debit at this stage.'}</p>
      </section>
      <p className="flex gap-3 px-2 text-xs leading-7 text-[#677b85]"><ShieldCheck size={19} className="mt-1 shrink-0 text-[#193344]"/>{fr?'Tout investissement comporte un risque de perte en capital. Les échéances et conditions dépendent des documents définitifs.':'Private investments involve capital risk. Final documents govern all terms and payments.'}</p>

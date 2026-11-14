@@ -151,7 +151,7 @@ export function InvestmentLanding({ locale }: { locale: InvestmentLocale }) {
         provider: { '@type': 'Organization', name: 'Bosphoras', url: 'https://www.bosphoras.com' },
         serviceType: ['Business plan preparation', 'Financial feasibility assessment', 'Investment documentation', 'Corporate advisory']
       }}/>
-      <Header locale={locale} currentPath={path} localizedPaths={{ fr: '/investissement', en: '/en/investment', ru: '/en/investment', ar: '/en/investment' }}/>
+      <Header locale={locale} currentPath={path} localizedPaths={{ fr: '/investissement', en: '/en/investment', ru:'/ru/investment', ar:'/ar/investment' }}/>
       <main lang={locale} className="pt-[4.85rem] bg-white text-[#202629]">
         <section className="border-b border-[#dbe0e1] bg-[#f5f5f3]">
           <div className="mx-auto grid max-w-[1440px] gap-14 px-6 pb-20 pt-20 md:px-12 md:pb-28 md:pt-28 lg:grid-cols-[1.45fr_.55fr] lg:gap-20">

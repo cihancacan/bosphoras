@@ -4,7 +4,7 @@ import Link from 'next/link';
 import {ArrowDownToLine,ArrowRight,Camera,Check,Eye,ImagePlus,Save,ShieldCheck,Star,Trash2} from 'lucide-react';
 import {getPortalSupabase} from '@/lib/portalSupabase';
 import {investmentVentures} from '@/data/investmentVentures';
-import {mergedInvestmentListing,moneyLabel,publicCoverUrl,type InvestmentListing} from '@/lib/investmentListings';
+import {mergedInvestmentListing,moneyLabel,publicCoverUrl,safeInvestmentWebsite,type InvestmentListing} from '@/lib/investmentListings';
 import {InvestmentProjectCard} from '@/components/InvestmentProjectCard';
 
 const db:any=getPortalSupabase();
@@ -13,7 +13,7 @@ const statuses:Record<string,string>={pending:'À valider',approved:'Approuvée'
 const allowed=new Set(['image/jpeg','image/png','image/webp']);
 const input='mt-2 block w-full rounded-lg border border-[#cbd6db] bg-white px-4 py-3 text-sm text-[#243b46] outline-none focus:border-[#193344]';
 const label='block text-sm font-medium leading-6 text-[#506570]';
-const fieldsIntro:[keyof InvestmentListing,string][]=[['title_fr','Titre français'],['title_en','English title'],['tagline_fr','Accroche FR'],['tagline_en','Tagline EN'],['short_fr','Présentation courte FR'],['short_en','Short summary EN'],['story_fr','Présentation détaillée FR'],['story_en','Detailed description EN'],['highlights_fr','Atouts du projet FR — un par ligne'],['highlights_en','Highlights EN — one per line'],['sector','Secteur'],['location','Localisation'],['issuer_name','Société juridique porteuse']];
+const fieldsIntro:[keyof InvestmentListing,string][]=[['title_fr','Titre français'],['title_en','English title'],['tagline_fr','Accroche FR'],['tagline_en','Tagline EN'],['short_fr','Présentation courte FR'],['short_en','Short summary EN'],['story_fr','Présentation détaillée FR'],['story_en','Detailed description EN'],['highlights_fr','Atouts du projet FR — un par ligne'],['highlights_en','Highlights EN — one per line'],['sector','Secteur'],['location','Localisation'],['issuer_name','Société juridique porteuse'],['official_website','Site web officiel (https://)']];
 const financeFields:[keyof InvestmentListing,string][]=[['exit_terms_fr','Conditions de sortie FR'],['exit_terms_en','Exit terms EN'],['use_of_funds_fr','Utilisation des fonds FR'],['use_of_funds_en','Use of funds EN'],['risk_summary_fr','Risques FR'],['risk_summary_en','Risks EN']];
 export function InvestmentListingManager(){
  const [items,setItems]=useState<InvestmentListing[]>([]),[media,setMedia]=useState<Media[]>([]),[selected,setSelected]=useState('aqma'),[draft,setDraft]=useState<InvestmentListing|null>(null),[busy,setBusy]=useState(false),[loading,setLoading]=useState(true),[error,setError]=useState(''),[notice,setNotice]=useState(''),[section,setSection]=useState<'content'|'finance'|'media'|'publish'>('content'),[imageCategory,setImageCategory]=useState('cover'),[targetForMedia,setTargetForMedia]=useState('aqma'),[previewUrls,setPreviewUrls]=useState<Record<string,string>>({});
@@ -51,6 +51,7 @@ export function InvestmentListingManager(){
  const row=items.find(x=>x.code===selected);
  async function save(overrides:Partial<InvestmentListing>={},success='Annonce sauvegardée en brouillon.'){
   if(!draft)return;
+  if(draft.official_website&&!safeInvestmentWebsite(draft.official_website))return setError('Saisissez une adresse HTTPS valide.');
   if(row?.publication_status==='published' && !confirm('Cette annonce est déjà publiée : enregistrer ces modifications les rendra immédiatement visibles au public. Continuer ?'))return;
   await run(async()=>{
    const current=items.find(x=>x.code===selected);
@@ -64,6 +65,7 @@ export function InvestmentListingManager(){
  }
  async function publish(){
   if(!draft)return;
+  if(draft.official_website&&!safeInvestmentWebsite(draft.official_website))return setError('Saisissez une adresse HTTPS valide.');
   if(!draft.title_fr.trim()||!draft.short_fr.trim()||!draft.story_fr.trim())return setError('Renseignez le titre, le résumé et la présentation détaillée.');
   if(!draft.cover_path)return setError('Choisissez une photo principale approuvée avant publication.');
   if(!draft.target_amount||!draft.minimum_ticket||!draft.investment_type)return setError('Montant recherché, ticket minimum et instrument financier sont nécessaires avant publication.');

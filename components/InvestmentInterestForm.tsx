@@ -1,16 +1,17 @@
 'use client';
-import { useState, type FormEvent } from 'react';
+import { useEffect, useState, type FormEvent } from 'react';
 import Link from 'next/link';
 import { ArrowRight, Check, Mail, ShieldCheck } from 'lucide-react';
 import { getPortalSupabase } from '@/lib/portalSupabase';
 import { investmentVentures, type InvestmentVentureCode } from '@/data/investmentVentures';
 
-type Lang='fr'|'en';
+type Lang='fr'|'en'|'ru'|'ar';
 type Kind='placement'|'project_access';
 const inp='mt-2 block w-full rounded-lg border border-[#cfd9df] bg-white px-4 py-3 text-[15px] outline-none focus:border-[#193344] focus:ring-1 focus:ring-[#193344]';
 export function InvestmentInterestForm({locale,projectCode,compact=false,initialKind='placement'}:{locale:Lang;projectCode:InvestmentVentureCode;compact?:boolean;initialKind?:Kind}){
  const fr=locale==='fr',v=investmentVentures.find(x=>x.code===projectCode)!;
  const [kind,setKind]=useState<Kind>(initialKind),[name,setName]=useState(''),[email,setEmail]=useState(''),[phone,setPhone]=useState(''),[country,setCountry]=useState(''),[amount,setAmount]=useState('1000'),[currency,setCurrency]=useState('EUR'),[notes,setNotes]=useState(''),[consent,setConsent]=useState(false),[bot,setBot]=useState(''),[busy,setBusy]=useState(false),[error,setError]=useState(''),[sent,setSent]=useState(false);
+ useEffect(()=>{if(new URLSearchParams(window.location.search).get('kind')==='access')setKind('project_access');},[]);
  async function submit(e:FormEvent<HTMLFormElement>){
   e.preventDefault();if(busy)return;setBusy(true);setError('');
   try{
@@ -26,7 +27,7 @@ export function InvestmentInterestForm({locale,projectCode,compact=false,initial
       if(dbErr)throw new Error(dbErr.message);ok=true;
     }else{
       const response=await fetch('/api/investment/intake',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
-      if(!response.ok)throw new Error(response.status===429?(fr?'Trop de demandes récentes pour cette adresse.':'Too many recent enquiries.'):(fr?'Envoi indisponible. Réessayez.':'Unable to submit. Please retry.'));
+      if(!response.ok)throw new Error(response.status===429?(fr?'Trop de demandes récentes pour cette adresse.':locale==='ru'?"Слишком много недавних заявок.":locale==='ar'?"تم إرسال عدد كبير من الطلبات مؤخراً.":'Too many recent enquiries.'):(fr?'Envoi indisponible. Réessayez.':locale==='ru'?"Не удалось отправить заявку. Попробуйте снова.":locale==='ar'?"تعذر إرسال الطلب. حاول مرة أخرى.":'Unable to submit. Please retry.'));
       ok=true;
     }
     if(ok){
@@ -40,27 +41,27 @@ export function InvestmentInterestForm({locale,projectCode,compact=false,initial
         }
       })}).catch(()=>{});
     }
-  }catch(e){setError(e instanceof Error?e.message:(fr?'Erreur de transmission':'Submission failed'));}
+  }catch(e){setError(e instanceof Error?e.message:(fr?'Erreur de transmission':locale==='ru'?"Ошибка отправки":locale==='ar'?"تعذر الإرسال":'Submission failed'));}
   finally{setBusy(false);}
  }
- if(sent)return <div role="status" className="rounded-xl border border-[#cbd9d6] bg-[#eef4f1] p-8 text-[#193344]"><Check size={28}/><h2 className="mt-5 text-2xl font-medium">{fr?'Demande enregistrée':'Enquiry recorded'}</h2><p className="mt-3 text-sm leading-7">{fr?'Votre demande concernant '+v.name+' a été enregistrée dans notre espace de suivi. Un membre de l’équipe pourra vous recontacter pour connaître les prochaines étapes.':'Your enquiry for '+v.name+' has been recorded in our tracking system. Our team can contact you about next steps.'}</p><p className="mt-4 text-xs leading-6 text-[#52636b]">{fr?'Aucune somme n’a été débitée et aucun investissement n’a été souscrit.':'No funds have been charged and no investment was executed.'}</p></div>;
+ if(sent)return <div role="status" className="rounded-xl border border-[#cbd9d6] bg-[#eef4f1] p-8 text-[#193344]"><Check size={28}/><h2 className="mt-5 text-2xl font-medium">{fr?'Demande enregistrée':locale==='ru'?"Заявка зарегистрирована":locale==='ar'?"تم تسجيل الطلب":'Enquiry recorded'}</h2><p className="mt-3 text-sm leading-7">{fr?'Votre demande concernant '+v.name+' a été enregistrée dans notre espace de suivi. Un membre de l’équipe pourra vous recontacter pour connaître les prochaines étapes.':locale==='ru'?'Заявка по проекту '+v.name+' зарегистрирована. Наша команда сможет связаться с вами.':locale==='ar'?'تم تسجيل طلبك بشأن '+v.name+' وقد يتواصل فريقنا معك.':'Your enquiry for '+v.name+' has been recorded in our tracking system. Our team can contact you about next steps.'}</p><p className="mt-4 text-xs leading-6 text-[#52636b]">{fr?'Aucune somme n’a été débitée et aucun investissement n’a été souscrit.':locale==='ru'?"Средства не списаны, инвестиция не совершена.":locale==='ar'?"لم يُخصم أي مبلغ ولم يُنفذ أي استثمار.":'No funds have been charged and no investment was executed.'}</p></div>;
  return <form onSubmit={submit} className="space-y-5">
   <div className="grid grid-cols-2 gap-2 rounded-lg bg-[#eaf0f2] p-1">
-    <button type="button" onClick={()=>setKind('placement')} className={'rounded-md p-3 text-sm '+(kind==='placement'?'bg-white text-[#193344] shadow-sm':'text-[#566873]')}>{fr?'Demander un placement':'Investment enquiry'}</button>
-    <button type="button" onClick={()=>setKind('project_access')} className={'rounded-md p-3 text-sm '+(kind==='project_access'?'bg-white text-[#193344] shadow-sm':'text-[#566873]')}>{fr?'Accéder au projet':'Project access request'}</button>
+    <button type="button" onClick={()=>setKind('placement')} className={'rounded-md p-3 text-sm '+(kind==='placement'?'bg-white text-[#193344] shadow-sm':'text-[#566873]')}>{fr?'Demander un placement':locale==='ru'?"Запрос об инвестициях":locale==='ar'?"طلب استثمار":'Investment enquiry'}</button>
+    <button type="button" onClick={()=>setKind('project_access')} className={'rounded-md p-3 text-sm '+(kind==='project_access'?'bg-white text-[#193344] shadow-sm':'text-[#566873]')}>{fr?'Accéder au projet':locale==='ru'?"Запрос доступа к проекту":locale==='ar'?"طلب الاطلاع على المشروع":'Project access request'}</button>
   </div>
   <div className="grid gap-5 sm:grid-cols-2">
-    <label className="text-sm font-medium">{fr?'Nom et prénom':'Full name'} *<input required minLength={2} maxLength={130} autoComplete="name" className={inp} value={name} onChange={e=>setName(e.target.value)}/></label>
+    <label className="text-sm font-medium">{fr?'Nom et prénom':locale==='ru'?"Имя и фамилия":locale==='ar'?"الاسم الكامل":'Full name'} *<input required minLength={2} maxLength={130} autoComplete="name" className={inp} value={name} onChange={e=>setName(e.target.value)}/></label>
     <label className="text-sm font-medium">Email *<input type="email" required maxLength={180} autoComplete="email" className={inp} value={email} onChange={e=>setEmail(e.target.value)}/></label>
-    <label className="text-sm font-medium">{fr?'Téléphone':'Phone'}<input type="tel" maxLength={50} autoComplete="tel" className={inp} value={phone} onChange={e=>setPhone(e.target.value)}/></label>
-    <label className="text-sm font-medium">{fr?'Pays de résidence':'Country of residence'}<input maxLength={90} autoComplete="country-name" className={inp} value={country} onChange={e=>setCountry(e.target.value)}/></label>
-    {kind==='placement'&&<><label className="text-sm font-medium">{fr?'Montant envisagé':'Indicative amount'} *<input required type="number" min={1000} max={100000000} step={100} className={inp} value={amount} onChange={e=>setAmount(e.target.value)}/></label><label className="text-sm font-medium">{fr?'Devise':'Currency'}<select className={inp} value={currency} onChange={e=>setCurrency(e.target.value)}><option>EUR</option><option>USD</option><option>AED</option></select></label></>}
+    <label className="text-sm font-medium">{fr?'Téléphone':locale==='ru'?"Телефон":locale==='ar'?"الهاتف":'Phone'}<input type="tel" maxLength={50} autoComplete="tel" className={inp} value={phone} onChange={e=>setPhone(e.target.value)}/></label>
+    <label className="text-sm font-medium">{fr?'Pays de résidence':locale==='ru'?"Страна проживания":locale==='ar'?"بلد الإقامة":'Country of residence'}<input maxLength={90} autoComplete="country-name" className={inp} value={country} onChange={e=>setCountry(e.target.value)}/></label>
+    {kind==='placement'&&<><label className="text-sm font-medium">{fr?'Montant envisagé':locale==='ru'?"Предполагаемая сумма":locale==='ar'?"المبلغ المتوقع":'Indicative amount'} *<input required type="number" min={1000} max={100000000} step={100} className={inp} value={amount} onChange={e=>setAmount(e.target.value)}/></label><label className="text-sm font-medium">{fr?'Devise':locale==='ru'?"Валюта":locale==='ar'?"العملة":'Currency'}<select className={inp} value={currency} onChange={e=>setCurrency(e.target.value)}><option>EUR</option><option>USD</option><option>AED</option></select></label></>}
   </div>
-  <label className="block text-sm font-medium">{fr?'Message ou questions complémentaires':'Message or questions'}<textarea rows={compact?3:4} maxLength={3000} className={inp} value={notes} onChange={e=>setNotes(e.target.value)} placeholder={fr?'Vos objectifs et les informations souhaitées':'Your objectives and requested information'}/></label>
+  <label className="block text-sm font-medium">{fr?'Message ou questions complémentaires':locale==='ru'?"Сообщение или вопросы":locale==='ar'?"الرسالة أو الأسئلة":'Message or questions'}<textarea rows={compact?3:4} maxLength={3000} className={inp} value={notes} onChange={e=>setNotes(e.target.value)} placeholder={fr?'Vos objectifs et les informations souhaitées':locale==='ru'?"Ваши цели и интересующая информация":locale==='ar'?"أهدافك والمعلومات المطلوبة":'Your objectives and requested information'}/></label>
   <label className="sr-only" aria-hidden="true">Website<input tabIndex={-1} autoComplete="off" value={bot} onChange={e=>setBot(e.target.value)}/></label>
-  <label className="flex items-start gap-3 text-xs leading-6 text-[#52616b]"><input type="checkbox" required checked={consent} onChange={e=>setConsent(e.target.checked)} className="mt-1 h-4 w-4 accent-[#193344]"/><span>{fr?'J’accepte le traitement de cette demande et d’être recontacté à ce sujet.':'I agree to the processing of this enquiry and to be contacted about it.'} <Link className="underline" href="/confidentialite">{fr?'Confidentialité':'Privacy'}</Link>.</span></label>
+  <label className="flex items-start gap-3 text-xs leading-6 text-[#52616b]"><input type="checkbox" required checked={consent} onChange={e=>setConsent(e.target.checked)} className="mt-1 h-4 w-4 accent-[#193344]"/><span>{fr?'J’accepte le traitement de cette demande et d’être recontacté à ce sujet.':locale==='ru'?"Я согласен на обработку заявки и получение ответа.":locale==='ar'?"أوافق على معالجة الطلب والتواصل معي بشأنه.":'I agree to the processing of this enquiry and to be contacted about it.'} <Link className="underline" href={locale==='fr'?'/confidentialite':'/'+locale+'/confidentialite'}>{fr?'Confidentialité':locale==='ru'?"Конфиденциальность":locale==='ar'?"الخصوصية":'Privacy'}</Link>.</span></label>
   {error&&<p role="alert" className="rounded-md bg-red-50 p-3 text-sm text-red-800">{error}</p>}
-  <button disabled={busy} type="submit" className="flex w-full items-center justify-center gap-3 rounded-lg bg-[#193344] px-6 py-4 text-sm font-medium text-white hover:bg-[#305568] disabled:opacity-60">{busy?(fr?'Transmission…':'Sending…'):(kind==='placement'?(fr?'Envoyer ma demande de placement':'Send investment enquiry'):(fr?'Demander l’accès au projet':'Request project access'))}<ArrowRight size={17}/></button>
-  <p className="text-xs leading-6 text-[#667781]">{fr?'La demande est sans engagement et ne constitue pas une souscription. Aucun paiement n’est requis.':'This is a non-binding enquiry, not a subscription. No payment is required.'}</p>
+  <button disabled={busy} type="submit" className="flex w-full items-center justify-center gap-3 rounded-lg bg-[#193344] px-6 py-4 text-sm font-medium text-white hover:bg-[#305568] disabled:opacity-60">{busy?(fr?'Transmission…':locale==='ru'?"Отправка…":locale==='ar'?"جارٍ الإرسال…":'Sending…'):(kind==='placement'?(fr?'Envoyer ma demande de placement':locale==='ru'?"Отправить заявку":locale==='ar'?"إرسال طلب الاستثمار":'Send investment enquiry'):(fr?'Demander l’accès au projet':locale==='ru'?"Запросить доступ к проекту":locale==='ar'?"طلب الاطلاع على المشروع":'Request project access'))}<ArrowRight size={17}/></button>
+  <p className="text-xs leading-6 text-[#667781]">{fr?'La demande est sans engagement et ne constitue pas une souscription. Aucun paiement n’est requis.':locale==='ru'?"Заявка не обязывает инвестировать и не является подпиской. Оплата не требуется.":locale==='ar'?"هذا طلب غير ملزم وليس اكتتاباً. لا يُطلب أي دفع.":'This is a non-binding enquiry, not a subscription. No payment is required.'}</p>
  </form>;
 }

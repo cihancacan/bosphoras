@@ -11,7 +11,7 @@ export function InvestmentRequestPage({locale,code}:{locale:Lang;code:string}){
  if(!project)notFound();
  const fr=locale==='fr';
  const base=fr?'/investissement/projets':'/en/investment/projects';
- return <><Header locale={locale} currentPath={base} localizedPaths={{fr:'/investissement/projets',en:'/en/investment/projects',ru:'/en/investment/projects',ar:'/en/investment/projects'}}/>
+ return <><Header locale={locale} currentPath={base} localizedPaths={{fr:'/investissement/projets',en:'/en/investment/projects',ru:'/ru/investment/projects',ar:'/ar/investment/projects'}}/>
   <main lang={locale} className="min-h-screen bg-[#f4f6f5] pt-[4.85rem] text-[#23363e]">
    <div className="mx-auto grid max-w-[1260px] gap-12 px-5 pb-24 pt-16 md:px-10 lg:grid-cols-[.9fr_1.1fr] lg:gap-20">
     <div><Link href={base} className="inline-flex items-center gap-2 text-sm text-[#193344] underline underline-offset-4"><ArrowLeft size={16}/>{fr?'Tous les projets':'All projects'}</Link>

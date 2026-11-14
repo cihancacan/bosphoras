@@ -111,7 +111,7 @@ export function InvestmentInvestorsPage({ locale }: { locale: Lang }) {
     <StructuredData data={breadcrumbSchema([{name:'Bosphoras',url:'https://www.bosphoras.com/'},{name:'Investment',url:'https://www.bosphoras.com'+base},{name:fr?'Investisseurs':'Investors',url:'https://www.bosphoras.com'+investorPath}])}/>
     <StructuredData data={faqSchema(c.faqs)}/>
     <StructuredData data={{'@context':'https://schema.org','@type':'CollectionPage',name:c.title,url:'https://www.bosphoras.com'+investorPath,about:{'@type':'Thing',name:'Private company investment education and project research'},mainEntity:{'@type':'ItemList',itemListElement:investmentVentures.map((p,i)=>({'@type':'ListItem',position:i+1,item:{'@type':'Thing',name:p.name,description:fr?p.summary:p.englishSummary}}))}}}/>
-    <Header locale={locale} currentPath={investorPath} localizedPaths={{fr:'/investissement/investisseurs',en:'/en/investment/investors',ru:'/en/investment/investors',ar:'/en/investment/investors'}}/>
+    <Header locale={locale} currentPath={investorPath} localizedPaths={{fr:'/investissement/investisseurs',en:'/en/investment/investors',ru:'/ru/investment/investors',ar:'/ar/investment/investors'}}/>
     <main lang={locale} className="bg-white pt-[4.85rem] text-[#202629]">
       <section className="bg-[#193344] px-6 py-20 text-white md:px-12 md:py-28">
         <div className="mx-auto grid max-w-[1370px] gap-14 lg:grid-cols-[1.5fr_.5fr]">
