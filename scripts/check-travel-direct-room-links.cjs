@@ -43,6 +43,7 @@ for(const city of Object.values(featuredCityGuides)){
  }
  destinations.push({slug:city.slug,hotels:city.hotels.length,exact});
 }
+assert.equal(destinations.find(d=>d.slug==='istanbul').exact,9,'All 9 existing verified Istanbul hotel mappings must work by editorial name');
 const fallback=bookingTarget('unknown:unknown','fr');
 assert.equal(fallback.exact,false);assert.equal(new URL(fallback.href).pathname,'/');
 const report={destinations:destinations.length,editorialEntries:destinations.reduce((s,d)=>s+d.hotels,0),exactLinks:linked.length,missingLinks:missing.length,ambiguousLinks:ambiguous.length,uniqueSupplierHotels:new Set(linked.map(x=>x.id)).size,scope:'Repository/runtime URL validation only; not live HTTP room inventory, title or availability inspection.',coverage:destinations,missing,ambiguous};

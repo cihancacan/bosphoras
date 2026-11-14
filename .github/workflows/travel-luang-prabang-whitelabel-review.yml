@@ -1,0 +1,32 @@
+name: Travel Luang Prabang — public Nuitée detail review
+on:
+  push:
+    branches: [feature/travel-luang-prabang-86]
+    paths:
+      - 'scripts/review-luang-prabang-whitelabel.py'
+      - '.github/workflows/travel-luang-prabang-whitelabel-review.yml'
+permissions:
+  contents: write
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'playwright==1.51.0' 'Pillow>=10,<12'
+      - run: python -m playwright install chromium
+      - run: python -u scripts/review-luang-prabang-whitelabel.py
+      - name: Save public source review candidates, not release
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/travel/luangPrabangWhiteLabelReview.json
+          if test -d public/images/travel/luang-prabang-premium/hotels; then git add public/images/travel/luang-prabang-premium/hotels; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'review(travel): record Luang Prabang public supplier candidate verification [skip ci]'
+            git push origin HEAD:feature/travel-luang-prabang-86
+          fi

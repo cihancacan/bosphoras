@@ -114,7 +114,7 @@ export function getNuiteeHotelLinks(hotelKey: string, locale: 'fr' | 'en', now =
     matchEvidence: string; deepLinkEvidence: string;
   }) => {
     if (!/^lp[a-zA-Z0-9]+$/.test(hotel.hotelId) || !hotel.matchEvidence.trim() || !hotel.deepLinkEvidence.trim()) return [];
-    return hotel.editorialKeys.map(key => {
+    return [...new Set([...hotel.editorialKeys, hotelPartnerKey(hotel.destination, hotel.name)])].map(key => {
       const url = new URL(`/hotels/${hotel.hotelId}`, nuiteeLaunch.origin);
       url.searchParams.set('language', locale);
       url.searchParams.set('currency', 'EUR');
