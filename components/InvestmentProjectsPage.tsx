@@ -36,7 +36,7 @@ export function InvestmentProjectsPage({locale}:{locale:Lang}){
      <h2 className="mt-8 text-3xl font-normal tracking-[-.045em] text-[#193344]">{p.name}</h2><p className="mt-2 text-sm text-[#6a7a83]">{p.region}</p>
      <p className="mt-7 flex-1 text-base leading-8 text-[#485a63]">{fr?p.summary:p.englishSummary}</p>
      <div className="mt-9 border-t border-[#d8e0e2] pt-6"><p className="text-xs text-[#657681]">{fr?'Orientation de financement':'Financing approach'}</p><p className="mt-2 text-sm font-medium leading-7 text-[#193344]">{fr?p.financing: 'Debt or equity depending on the transaction'}</p>
-     <Link href={access} className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-[#193344] underline underline-offset-8">{fr?'Suivre le projet':'Follow project'}<ArrowRight size={16}/></Link>
+     <div className="mt-6 flex flex-wrap gap-4"><Link href={(fr?'/investissement/demande/':'/en/investment/request/')+p.code} className="inline-flex items-center gap-2 rounded-lg bg-[#193344] px-4 py-3 text-sm font-medium text-white">{fr?'Demander un placement':'Request investment'}<ArrowRight size={16}/></Link><Link href={access} className="inline-flex items-center gap-2 text-sm font-medium text-[#193344] underline underline-offset-8">{fr?'Mon espace':'My account'}<ArrowRight size={16}/></Link></div>
      </div></article>)}</div>
    </div></section>
    <section className="border-t border-[#d8e0e2] bg-[#f5f5f3] px-6 py-20 md:px-12 md:py-24"><div className="mx-auto grid max-w-[1340px] gap-12 md:grid-cols-[.75fr_1.25fr]">

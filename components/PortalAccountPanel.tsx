@@ -114,6 +114,7 @@ export function PortalAccountPanel({ user, profile, partner }: { user:any; profi
         </div>
       </section>
 
+      {localProfile.role==='admin'&&localProfile.status==='active'&&<section className="rounded-lg border border-[#c9d8df] bg-[#eaf1f4] p-6"><div className="flex flex-wrap items-center justify-between gap-5"><div><strong className="text-lg text-[#193344]">Bosphoras Investment · Administration</strong><p className="mt-2 text-sm text-[#536a76]">CRM investissement indépendant, projets, investisseurs, documents et échéanciers.</p></div><a href="/investissement/admin" className="rounded-lg bg-[#193344] px-5 py-3 text-sm font-medium text-white">Ouvrir Investment CRM →</a></div></section>}
       <section className="border border-[#d9e1e8] bg-white p-6">
         <div className="flex flex-wrap items-start justify-between gap-4">
           <div>
