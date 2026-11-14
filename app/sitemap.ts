@@ -58,6 +58,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   addEntry({ url: absoluteUrl('/en/investment/entrepreneurs'), changeFrequency: 'monthly', priority: 0.94 });
   addEntry({ url: absoluteUrl('/investissement/projets'), changeFrequency: 'monthly', priority: 0.94 });
   addEntry({ url: absoluteUrl('/en/investment/projects'), changeFrequency: 'monthly', priority: 0.94 });
+  for (const code of ['aqma','qenerzy','bosphoras-luxury-stays','cliniqeo','medsestra','lovelockparis']) {
+    addEntry({ url: absoluteUrl('/investissement/projets/'+code), changeFrequency:'weekly', priority:0.85 });
+    addEntry({ url: absoluteUrl('/en/investment/projects/'+code), changeFrequency:'weekly', priority:0.85 });
+  }
 
   for (const locale of locales) {
     for (const page of allPages[locale]) {

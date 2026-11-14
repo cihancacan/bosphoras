@@ -4,10 +4,11 @@ import {useEffect,useMemo,useState,type FormEvent} from 'react';
 import {ArrowDownToLine,ArrowRight,BriefcaseBusiness,CalendarDays,CheckCircle2,ClipboardList,Clock3,FileSearch,FileText,Landmark,ListChecks,LogOut,Menu,Plus,Search,Send,ShieldCheck,Users,Wallet,X} from 'lucide-react';
 import {getPortalSupabase} from '@/lib/portalSupabase';
 import {InvestmentDocumentVault} from '@/components/InvestmentDocumentVault';
+import {InvestmentListingManager} from '@/components/InvestmentListingManager';
 import {investmentVentures} from '@/data/investmentVentures';
 
 const db:any=getPortalSupabase();
-type T='overview'|'crm'|'entrepreneurs'|'investors'|'positions'|'payments'|'tasks';
+type T='overview'|'listings'|'crm'|'entrepreneurs'|'investors'|'positions'|'payments'|'tasks';
 type Lead={id:string;user_id:string|null;kind:string;project_code:string|null;full_name:string;email:string;phone:string;country:string;requested_amount:number|null;currency:string;notes:string;status:string;admin_notes:string;forwarded_to:string;created_at:string;updated_at:string};
 type Account={user_id:string;email:string;account_type:string;full_name:string|null;country:string|null;company_name:string|null;investor_interests:string|null;investor_budget_band:string|null;created_at:string};
 type Draft={id:string;user_id:string;project_name:string;legal_entity:string;country:string;sector:string;funding_target:string;funding_type:string;annual_revenue:string;summary:string;use_of_funds:string;team_summary:string;project_timeline:string;review_status:string;review_note:string;created_at:string};
@@ -39,7 +40,7 @@ export function InvestmentAdminDashboard(){
  const userNames=useMemo(()=>Object.fromEntries(accounts.map(a=>[a.user_id,a.full_name||a.company_name||a.email])),[accounts]);
  const accountEmails=useMemo(()=>Object.fromEntries(accounts.map(a=>[a.user_id,a.email])),[accounts]);
  const posMap=useMemo(()=>Object.fromEntries(positions.map(p=>[p.id,p])),[positions]);
- const tabs:[T,string,any][]=[['overview','Vue d’ensemble',Landmark],['crm','CRM demandes',ClipboardList],['entrepreneurs','Dossiers entreprises',BriefcaseBusiness],['investors','Investisseurs',Users],['positions','Portefeuilles',Wallet],['payments','Échéanciers & paiements',CalendarDays],['tasks','Tâches & relances',ListChecks]];
+ const tabs:[T,string,any][]=[['overview','Vue d’ensemble',Landmark],['listings','Annonces & projets',FileSearch],['crm','CRM demandes',ClipboardList],['entrepreneurs','Dossiers entreprises',BriefcaseBusiness],['investors','Investisseurs',Users],['positions','Portefeuilles',Wallet],['payments','Échéanciers & paiements',CalendarDays],['tasks','Tâches & relances',ListChecks]];
  async function loadAll(){
   const queries=await Promise.all([
    db.from('investment_leads').select('*').order('created_at',{ascending:false}).limit(500),
@@ -126,6 +127,7 @@ export function InvestmentAdminDashboard(){
    <div className="mx-auto max-w-[1650px] space-y-7 px-5 py-9 md:px-9">
     <div className="flex flex-wrap items-end justify-between gap-4"><div><p className="text-xs uppercase tracking-[.16em] text-[#647982]">INVESTMENT OPERATIONS</p><h1 className="mt-2 text-3xl font-medium tracking-[-.05em] text-[#193344] md:text-4xl">{tabs.find(t=>t[0]===tab)?.[1]}</h1></div><button onClick={()=>void action(async()=>{await loadAll();},'Données actualisées.')} className="rounded-lg border border-[#cbd8dd] bg-white px-4 py-3 text-sm text-[#193344]">Actualiser</button></div>
     {notice&&<p role="status" className="rounded-lg border border-[#cbded0] bg-[#edf7f1] p-4 text-sm text-[#2b6145]">{notice}</p>}{error&&<p role="alert" className="rounded-lg bg-red-50 p-4 text-sm text-red-800">{error}</p>}
+    {tab==='listings'&&<InvestmentListingManager/>}
     {tab==='overview'&&<><div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">{[[newLeads,'Nouvelles demandes',ClipboardList], [investors.length,'Investisseurs inscrits',Users],[entrepreneurs.length,'Entreprises inscrites',BriefcaseBusiness],[due.length,'Échéances à suivre',CalendarDays]].map(([v,label,Icon]:any)=><div key={label} className="rounded-xl border border-[#dce4e8] bg-white p-6"><Icon size={23} className="text-[#193344]"/><p className="mt-6 text-sm text-[#637680]">{label}</p><p className="mt-2 text-4xl font-medium text-[#193344]">{v}</p></div>)}</div>
     <div className="grid gap-6 xl:grid-cols-[1.3fr_.7fr]"><section className="rounded-xl border border-[#dce4e8] bg-white p-7"><div className="flex justify-between"><h2 className="text-xl font-medium text-[#193344]">Dernières demandes</h2><button onClick={()=>choose('crm')} className="text-sm underline">Voir le CRM</button></div><div className="mt-6 divide-y divide-[#edf1f2]">{leads.slice(0,9).map(l=><button key={l.id} onClick={()=>{setSelectedLead(l.id);choose('crm');}} className="flex w-full items-center justify-between gap-5 py-4 text-left"><div><p className="text-sm font-medium text-[#193344]">{l.full_name}</p><p className="mt-1 text-xs text-[#687c85]">{name(l.project_code)} · {l.kind} · {date(l.created_at)}</p></div><span className="rounded-full bg-[#edf2f4] px-3 py-1 text-xs">{lStatus.find(x=>x[0]===l.status)?.[1]||l.status}</span></button>)}{leads.length===0&&<p className="text-sm text-[#60717b]">Les demandes apparaîtront ici dès réception.</p>}</div></section>
     <section className="rounded-xl border border-[#dce4e8] bg-white p-7"><h2 className="text-xl font-medium text-[#193344]">Capital enregistré</h2><p className="mt-3 text-sm leading-7 text-[#647680]">Montants des placements effectivement confirmés dans le registre. Devise par devise, sans conversion artificielle.</p><div className="mt-7 space-y-3">{totals.length?totals.map(([c,n])=><div key={c} className="border-t border-[#e3ebed] py-4"><p className="text-xs text-[#75858c]">{c}</p><p className="mt-2 text-2xl font-medium text-[#193344]">{money(n,c)}</p></div>):<p className="text-sm text-[#647680]">Aucune position enregistrée.</p>}</div></section></div></>}

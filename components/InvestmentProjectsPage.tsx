@@ -5,6 +5,7 @@ import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 import { breadcrumbSchema } from '@/lib/seo';
 import { investmentVentures } from '@/data/investmentVentures';
+import { InvestmentProjectGrid } from '@/components/InvestmentProjectGrid';
 
 type Lang='fr'|'en';
 export function InvestmentProjectsPage({locale}:{locale:Lang}){
@@ -31,13 +32,7 @@ export function InvestmentProjectsPage({locale}:{locale:Lang}){
      </div><aside className="self-end border-t border-[#afbdc3] pt-7 lg:border-l lg:border-t-0 lg:pl-9"><Globe2 size={32} strokeWidth={1.1} className="text-[#193344]"/><h2 className="mt-7 text-3xl font-normal leading-tight tracking-[-.045em] text-[#193344]">{fr?'Diversifier les secteurs. Comprendre les entreprises.':'Discover across sectors. Understand each business.'}</h2></aside></div>
    </section>
    <section className="px-6 py-20 md:px-12 md:py-28"><div className="mx-auto max-w-[1340px]">
-    <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">{investmentVentures.map((p,i)=><article key={p.code} id={p.code} className="scroll-mt-28 flex flex-col border-t-2 border-[#193344] bg-[#f6f6f4] p-7 md:p-9">
-     <div className="flex items-center justify-between gap-3"><p className="text-xs uppercase tracking-[.12em] text-[#63757e]">{fr?p.sector:p.englishSector}</p><span className="text-xs tabular-nums text-[#84939a]">{String(i+1).padStart(2,'0')}</span></div>
-     <h2 className="mt-8 text-3xl font-normal tracking-[-.045em] text-[#193344]">{p.name}</h2><p className="mt-2 text-sm text-[#6a7a83]">{p.region}</p>
-     <p className="mt-7 flex-1 text-base leading-8 text-[#485a63]">{fr?p.summary:p.englishSummary}</p>
-     <div className="mt-9 border-t border-[#d8e0e2] pt-6"><p className="text-xs text-[#657681]">{fr?'Orientation de financement':'Financing approach'}</p><p className="mt-2 text-sm font-medium leading-7 text-[#193344]">{fr?p.financing: 'Debt or equity depending on the transaction'}</p>
-     <div className="mt-6 flex flex-wrap gap-4"><Link href={(fr?'/investissement/demande/':'/en/investment/request/')+p.code} className="inline-flex items-center gap-2 rounded-lg bg-[#193344] px-4 py-3 text-sm font-medium text-white">{fr?'Demander un placement':'Request investment'}<ArrowRight size={16}/></Link><Link href={access} className="inline-flex items-center gap-2 text-sm font-medium text-[#193344] underline underline-offset-8">{fr?'Mon espace':'My account'}<ArrowRight size={16}/></Link></div>
-     </div></article>)}</div>
+    <InvestmentProjectGrid locale={locale}/>
    </div></section>
    <section className="border-t border-[#d8e0e2] bg-[#f5f5f3] px-6 py-20 md:px-12 md:py-24"><div className="mx-auto grid max-w-[1340px] gap-12 md:grid-cols-[.75fr_1.25fr]">
     <div><Landmark size={32} strokeWidth={1.1} className="text-[#193344]"/><h2 className="mt-6 text-4xl font-normal tracking-[-.05em] text-[#193344]">{fr?'Votre prochain investissement commence par la compréhension du projet.':'The next step is understanding the business.'}</h2></div>
