@@ -13,7 +13,7 @@ export const medsestraEditorial = {
   "sector": "Santé & services à domicile",
   "location": "Kazakhstan · Almaty et grandes villes",
   "issuer_name": "Medsestra.kz",
-  "official_website": "https://medsestra.kz",
+  "official_website": "https://medsestra-kz.vercel.app/",
   "cover_path": "illustrations/medsestra-home-care-pexels-6753271",
   "display_order": 3,
   "use_of_funds_fr": "Acquisition de clients, déploiement commercial dans les grandes villes du Kazakhstan, recrutement et formation d’intégration des infirmières indépendantes sélectionnées, création de bureaux de gestion opérationnelle, outils de coordination et suivi de qualité, développement des partenariats ambulanciers. La ventilation définitive dépendra du prévisionnel et des coûts locaux.",

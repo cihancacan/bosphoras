@@ -26,7 +26,7 @@ export const publicCoverUrl=(path:string)=>{
  if(!path || path.includes('..') || path.startsWith('/')) return '';
  return portalSupabaseUrl+'/storage/v1/object/public/investment-listing-public/'+path.split('/').map(encodeURIComponent).join('/');
 };
-const officialSites:Partial<Record<InvestmentVentureCode,string>>={aqma:'https://aqma.fr',cliniqeo:'https://cliniqeo.com',medsestra:'https://medsestra.kz','bosphoras-luxury-stays':'https://www.bosphoras.com/travel'};
+const officialSites:Partial<Record<InvestmentVentureCode,string>>={aqma:'https://aqma.fr',cliniqeo:'https://cliniqeo.com',medsestra:'https://medsestra-kz.vercel.app/','bosphoras-luxury-stays':'https://www.bosphoras.com/travel'};
 export function safeInvestmentWebsite(value:string):string {
  try{const url=new URL(value);return url.protocol==='https:'&&!url.username&&!url.password?url.href:'';}catch{return '';}
 }
