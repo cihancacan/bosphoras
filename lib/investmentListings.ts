@@ -2,6 +2,7 @@ import { createIsolatedPortalSupabase, portalSupabaseUrl } from '@/lib/portalSup
 import { investmentVentures, type InvestmentVentureCode } from '@/data/investmentVentures';
 
 import { aqmaEditorial } from '@/data/aqmaInvestmentEditorial';
+import { cliniqeoEditorial } from '@/data/cliniqeoInvestmentEditorial';
 
 export type InvestmentListing = {
  code:InvestmentVentureCode;title_fr:string;title_en:string;tagline_fr:string;tagline_en:string;
@@ -15,7 +16,9 @@ export type InvestmentListing = {
 };
 export type InvestmentMediaPublic={id:string;listing_code:string;category:string;public_path:string;sort_order:number};
 export const aqmaIllustrationPath='illustrations/aqma-renovation-pexels-8961555';
+export const cliniqeoIllustrationPath='illustrations/cliniqeo-dental-pexels-5355858';
 export const publicCoverUrl=(path:string)=>{
+ if(path===cliniqeoIllustrationPath)return 'https://images.pexels.com/photos/5355858/pexels-photo-5355858.jpeg?auto=compress&dpr=1&h=750&w=1260';
  if(path===aqmaIllustrationPath)return 'https://images.pexels.com/photos/8961555/pexels-photo-8961555.jpeg?auto=compress&dpr=1&h=750&w=1260';
  if(!path || path.includes('..') || path.startsWith('/')) return '';
  return portalSupabaseUrl+'/storage/v1/object/public/investment-listing-public/'+path.split('/').map(encodeURIComponent).join('/');
@@ -38,7 +41,7 @@ export function mergedInvestmentListing(code:InvestmentVentureCode,row?:Partial<
   investment_type:'',annual_rate:null,term_months:null,first_payment_month:null,payment_frequency:'',
   exit_terms_fr:'',exit_terms_en:'',use_of_funds_fr:'',use_of_funds_en:'',
   risk_summary_fr:'',risk_summary_en:'',cover_path:'',featured:false,display_order:50,publication_status:'draft',published_at:null,
-  ...(code==='aqma' ? aqmaEditorial : {}),
+  ...(code==='aqma' ? aqmaEditorial : code==='cliniqeo'?cliniqeoEditorial:{}),
   ...row
  };
 }
