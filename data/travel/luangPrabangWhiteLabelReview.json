@@ -20,6 +20,15 @@
       "address": "Setthathirath Road, Hua Xieng Village, PO.Box 1142",
       "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa4272",
       "detailIdentityVerified": true
+    },
+    {
+      "editorialName": "The Luang Say Residence",
+      "supplierName": "The Luang Say Residence",
+      "hotelId": "lp5bfe8",
+      "country": "LA",
+      "address": "4-5 Ban Phonepheng, P.O.Box 507",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "detailIdentityVerified": true
     }
   ],
   "photos": [
@@ -226,6 +235,278 @@
       ],
       "webpSHA256": "2a7848797eff948bb135d1a56760be7d17da2de04fe53fdbdde4f6df45a6da41",
       "sourceSHA256": "88845c2f5002056096d00c4dd6535f83813bd8a563731097f3137038121c58e6"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/413690488.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-1.webp",
+      "webpBytes": 130632,
+      "webpPixels": [
+        1200,
+        674
+      ],
+      "webpSHA256": "27d1bebf9c98b576bcbc7a60415450762b083fc92f728a1461930fd93fd0d6ef",
+      "sourceSHA256": "5f0cdda44ead351e5b308fbac1ba1584b005bf8f71f297de1ca0fcc5d19c804a"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/413697026.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-2.webp",
+      "webpBytes": 79920,
+      "webpPixels": [
+        1200,
+        801
+      ],
+      "webpSHA256": "b82724de135c4550fcf1ad3765e502f5767dd1180820a7c846e74465bd69b068",
+      "sourceSHA256": "7cb28a0258855b02f271705b7d18933d034c4a8470159bda8e3d281ee0fd54a4"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/413697050.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-4.webp",
+      "webpBytes": 103652,
+      "webpPixels": [
+        1200,
+        801
+      ],
+      "webpSHA256": "2114e977f6531d5608ec9eb4fc034e6a77d13d4736f9e03cf983402e038b4e0f",
+      "sourceSHA256": "47ced1556ae9e25c69e2b1868fcff69da9101766a03d27b3c2c82031eba4e274"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/413694044.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-5.webp",
+      "webpBytes": 82888,
+      "webpPixels": [
+        1200,
+        797
+      ],
+      "webpSHA256": "355e771cfa511bebbb4344c9394f3d88e6bb894e81b0ee685d7cc6016147a126",
+      "sourceSHA256": "f95917a7462104340e38a19259d08a1bf1061953ac77af719b1424f1ccb4044f"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/413693276.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-6.webp",
+      "webpBytes": 116360,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "c9bc07c177b4af3242a1ba0d868ac1fab7b9f11622b3d4c2ba8a2054201c7115",
+      "sourceSHA256": "15bbf98fb7338f87c8290e8107a0b764bc971e4e7f39d97e9bd6a7b88cd155b4"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/413695224.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-7.webp",
+      "webpBytes": 87316,
+      "webpPixels": [
+        1200,
+        801
+      ],
+      "webpSHA256": "fed76210a602b28c27e752ca0705b9e03b1854352a5aad9559fb57990c6b2ef8",
+      "sourceSHA256": "3268633476f962e1680b8168f5ccd66d7c819e929ea98312ec7cc5818cb122bc"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/413695694.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-8.webp",
+      "webpBytes": 139656,
+      "webpPixels": [
+        1200,
+        804
+      ],
+      "webpSHA256": "372e802fb92690cade63a103582d89fc48aa6c86c9dabddd50355eff689a4ed5",
+      "sourceSHA256": "e6d2156345ecf240ab9ba77e8d83f4fea76f0718ac7598ced9c876f7c410c0a8"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/413693821.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-9.webp",
+      "webpBytes": 90254,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "71dc3b2e5f22d82608922ac3704c863b7b932d1d0e07f462614e662b1d385cdf",
+      "sourceSHA256": "1dcab369cb13d51b4a5dee9739747a791fcc41af5947c24e341d0b255330af82"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/413694051.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-11.webp",
+      "webpBytes": 81250,
+      "webpPixels": [
+        1200,
+        797
+      ],
+      "webpSHA256": "e91d2bc7e993f72e7b96255a092c97ffb20b896f4983e4cdac44e87e879f02e7",
+      "sourceSHA256": "739310d0ed042675928b850d5010570002f904412e7cf35eea60c53fce80b1c5"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/413695303.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-12.webp",
+      "webpBytes": 29614,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "8c2dda094f921daaa08b30ec446c10f5b0f906547222e8395b1760df80c4a770",
+      "sourceSHA256": "1997bfb9fb83ac0ad8de6a92946151b401c7c91b7c0c8f5b579499711f0c1444"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/413697052.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-13.webp",
+      "webpBytes": 87234,
+      "webpPixels": [
+        1200,
+        801
+      ],
+      "webpSHA256": "12158bca494f8cd5ffec4b64e40c27a0566eb2dec47f589ca9044aec28de61ae",
+      "sourceSHA256": "a0381dfbfab8ee7e8a036ec529375f85212dfe99144adade552280ac964b0d07"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/413695357.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-14.webp",
+      "webpBytes": 111968,
+      "webpPixels": [
+        1200,
+        801
+      ],
+      "webpSHA256": "04fe5e9d79537d7371256c1897c60eddbecc72edb9a880b77fcdf4133e406139",
+      "sourceSHA256": "4eb0db19453fbc0dd32894ef45caf2fe45f591b44347bba791b7cf207d5ccf91"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/413693147.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-15.webp",
+      "webpBytes": 106394,
+      "webpPixels": [
+        1200,
+        801
+      ],
+      "webpSHA256": "dbd5853f38a9bd31ad794b9a8c7769ecfb154faccd8b4341fdff318dcf2570ee",
+      "sourceSHA256": "12e774848c6818d4f7185d4b3a6518cf632602a7b9fdb98ff9a1f0c202a90937"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/487524102.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-16.webp",
+      "webpBytes": 140680,
+      "webpPixels": [
+        1000,
+        667
+      ],
+      "webpSHA256": "40f26e227cf5b1ea35fa06a6873353da645287bdd770ba5e0a06b20ac596cae3",
+      "sourceSHA256": "7a2d74f218ffd6a90325953d8cebd4f10164fe946158b7487adf504eb5d8c65a"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/413694948.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-17.webp",
+      "webpBytes": 58358,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "908cbe8c04b9b14bf7786859ffb1acf9c5f51feaa484797421fd2002040e0bc9",
+      "sourceSHA256": "c26b31c922dd9c47882368d38603304959af53f048488ff8d01f825852f16381"
+    },
+    {
+      "hotel": "The Luang Say Residence",
+      "supplierId": "lp5bfe8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp5bfe8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/413693154.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/luangsay-review-18.webp",
+      "webpBytes": 97546,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "fbd05fcf3f586bcc02d72c3628251304d7ee48f111c359156b6096cd86342f24",
+      "sourceSHA256": "2e29f9b7b31e29f9df569dce8cd7aa856854625ced26853617531e07876c6a1d"
     }
   ],
   "errors": [
@@ -234,24 +515,556 @@
       "error": "exact detail identity and Laos country not independently confirmed"
     },
     {
-      "hotel": "Rosewood Luang Prabang",
+      "hotel": "La Résidence Phou Vao, a Luxury Collection Resort & Spa",
+      "error": "exact public supplier candidate count 2"
+    },
+    {
+      "hotel": "The Luang Say Residence",
       "error": "photo: photo threshold"
     },
     {
-      "hotel": "Rosewood Luang Prabang",
+      "hotel": "The Luang Say Residence",
       "error": "photo: photo threshold"
     },
     {
-      "hotel": "Rosewood Luang Prabang",
-      "error": "photo: photo threshold"
+      "hotel": "3 Nagas Luang Prabang - MGallery Collection",
+      "error": "exact public supplier candidate count 0"
+    }
+  ],
+  "diagnostics": [
+    {
+      "hotel": "Amantaka",
+      "stage": "detail",
+      "candidateId": "lpf0c56",
+      "returned": [
+        {
+          "id": "lpf0c56",
+          "name": "Amantaka",
+          "country": "LA",
+          "city": "Luang Prabang",
+          "address": "55/3 Kingkitsarath Road",
+          "mapped": true,
+          "deleted": true,
+          "imageCount": 0
+        },
+        {
+          "id": "lp6587992c",
+          "name": "Hug Wang Homestay",
+          "country": "",
+          "city": "Wang Saphung",
+          "address": "226 Moo 3, Wang Saphung, Loei, 42130",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 20
+        },
+        {
+          "id": "lp7e37f",
+          "name": "La Ong Dao Hotel 2",
+          "country": "",
+          "city": "Vientiane",
+          "address": "Thongphathong, Sisattanak District",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 9
+        },
+        {
+          "id": "lp1f7311",
+          "name": "Khun Naparn Resort",
+          "country": "",
+          "city": "Bung Khong Long",
+          "address": "210 M.10",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 34
+        },
+        {
+          "id": "lpcbbcf",
+          "name": "Nam Khong Tara Resort",
+          "country": "",
+          "city": "Chiang Khan",
+          "address": "45 Moo 4 Rimkhong Road",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 47
+        },
+        {
+          "id": "lp658784fa",
+          "name": "HaNa Vang Vieng hotel",
+          "country": "",
+          "city": "Vang Vieng",
+          "address": "b.vieng keo .vangvieng.lao, Vang Vieng, vang vieng, 10000",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 26
+        },
+        {
+          "id": "lp65865279",
+          "name": "Smile Guesthouse",
+          "country": "",
+          "city": "Vang Vieng",
+          "address": "Ban Muang Song, Vang Vieng, Vientiane Province, 10000",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 42
+        },
+        {
+          "id": "lp1033a0",
+          "name": "Vilayvong Hotel",
+          "country": "",
+          "city": "Vang Vieng",
+          "address": "Ban Viengkeo, Vang Vieng, 01000",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 44
+        },
+        {
+          "id": "lp655af971",
+          "name": "Vang Vieng Savanh Sunset View Resort",
+          "country": "",
+          "city": "Vang Vieng",
+          "address": "Ban Muang Song,Vang Vieng District Vientiane",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 78
+        },
+        {
+          "id": "lp65878ffb",
+          "name": "MG Guest House",
+          "country": "",
+          "city": "Sukhothai",
+          "address": "295/16, Siri Samarung Alley, Mueang, Thani, Sukhothai, 64000",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 10
+        },
+        {
+          "id": "lp6582009b",
+          "name": "Kong Resort Vangvieng",
+          "country": "",
+          "city": "Vang Vieng",
+          "address": "Tham Poukham Road, Huay Yae Village, Vang Vieng, Vientiane Province",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 100
+        },
+        {
+          "id": "lp65547d58",
+          "name": "Lisha Grand Hotel",
+          "country": "",
+          "city": "Vang Vieng",
+          "address": "Ban Muangsong, Vang Vieng, Vientiane",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 74
+        },
+        {
+          "id": "lp65880a54",
+          "name": "Simon Riverside Hotel",
+          "country": "",
+          "city": "Vang Vieng",
+          "address": "Vang Vieng, Vientiane Province",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 18
+        },
+        {
+          "id": "lp6588eefb",
+          "name": "Mistercheck paradise bungalows",
+          "country": "",
+          "city": "Si Chiang Mai",
+          "address": "542 Moo 1, Thambon Phan Phrao",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 20
+        },
+        {
+          "id": "lp656db149",
+          "name": "Oudomsin VangVieng Hotel",
+          "country": "",
+          "city": "Vang Vieng",
+          "address": "Vang Vieng",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 65
+        },
+        {
+          "id": "lp6588b0fb",
+          "name": "Paradise Mountain View Resort",
+          "country": "",
+          "city": "Vang Vieng",
+          "address": "Blus Lagoons road 03",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 96
+        },
+        {
+          "id": "lp65825b8c",
+          "name": "ViengTara VangVieng Resort",
+          "country": "",
+          "city": "Vang Vieng",
+          "address": "Huay Yae Village",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 78
+        },
+        {
+          "id": "lp7178f",
+          "name": "ViengTara VangVieng Resort",
+          "country": "",
+          "city": "Vang Vieng",
+          "address": "111 Vang Vieng, Vang Vieng, 82995",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 53
+        },
+        {
+          "id": "lp57689",
+          "name": "Inthira Vangvieng",
+          "country": "",
+          "city": "Vang Vieng",
+          "address": "Ban Viengkeo",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 80
+        },
+        {
+          "id": "lp65890dfa",
+          "name": "Nachan The Antique Courtyard",
+          "country": "",
+          "city": "Chiang Khan",
+          "address": "12/3 Village No 3",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 148
+        },
+        {
+          "id": "lp6587fbff",
+          "name": "ThamMaChatPhan FARM",
+          "country": "",
+          "city": "Wat Bot",
+          "address": "108 Moo 6, Ban Yang, Wat Bot, Phitsanulok Province, 65160",
+          "mapped": null,
+          "deleted": false,
+          "imageCount": 31
+        }
+      ]
     },
     {
       "hotel": "La Résidence Phou Vao, a Luxury Collection Resort & Spa",
-      "error": "Locator.click: Timeout 4000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=re.compile(r\"^(search|search hotels|find hotels|show hotels|find accommodation)$\", re.IGNORECASE)).first\n  "
+      "stage": "search",
+      "returned": [
+        {
+          "id": "lp10249d",
+          "name": "Mandarin Oriental Jumeira, Dubai",
+          "country": ""
+        },
+        {
+          "id": "lp1ab1f",
+          "name": "Excelsior Hotel Gallia, a Luxury Collection Hotel, Milan",
+          "country": ""
+        },
+        {
+          "id": "lp1af45",
+          "name": "Hôtel Napoleon Paris",
+          "country": ""
+        },
+        {
+          "id": "lp1b845",
+          "name": "St. James' Court, A Taj Hotel, London",
+          "country": ""
+        },
+        {
+          "id": "lp1b9e7",
+          "name": "Rome Cavalieri, A Waldorf Astoria Hotel",
+          "country": ""
+        },
+        {
+          "id": "lp1b9f6",
+          "name": "London Hilton on Park Lane",
+          "country": ""
+        },
+        {
+          "id": "lp1db0a1",
+          "name": "THE BLOSSOM HIBIYA",
+          "country": ""
+        },
+        {
+          "id": "lp1e3405",
+          "name": "Address Sky View, Downtown Dubai",
+          "country": ""
+        },
+        {
+          "id": "lp20554",
+          "name": "Hyatt Regency London - The Churchill",
+          "country": ""
+        },
+        {
+          "id": "lp2275e",
+          "name": "The St. Regis Rome",
+          "country": ""
+        },
+        {
+          "id": "lp27e2f",
+          "name": "Pullman Paris Tour Eiffel",
+          "country": ""
+        },
+        {
+          "id": "lp2a16c",
+          "name": "Jumeirah Burj Al Arab Dubai",
+          "country": ""
+        },
+        {
+          "id": "lp2a32f",
+          "name": "The Savoy",
+          "country": ""
+        },
+        {
+          "id": "lp2b241",
+          "name": "Novotel Paris Les Halles",
+          "country": ""
+        },
+        {
+          "id": "lp2ba5e",
+          "name": "UNA Hotels Galles Milano",
+          "country": ""
+        },
+        {
+          "id": "lp2f61f",
+          "name": "Hotel Splendide Royal - The Leading Hotels of the World",
+          "country": ""
+        },
+        {
+          "id": "lp2f87f",
+          "name": "Meliá Milano",
+          "country": ""
+        },
+        {
+          "id": "lp32483",
+          "name": "The Royal Park Hotel Iconic Tokyo Shiodome",
+          "country": ""
+        },
+        {
+          "id": "lp37b85",
+          "name": "The Prince Park Tower Tokyo - Preferred Hotels & Resorts, LVX Collection",
+          "country": ""
+        },
+        {
+          "id": "lp3e709",
+          "name": "The Peninsula Tokyo",
+          "country": ""
+        },
+        {
+          "id": "lp4f068",
+          "name": "Sofitel Dubai Jumeirah Beach",
+          "country": ""
+        },
+        {
+          "id": "lp59713",
+          "name": "Shangri-La Paris",
+          "country": ""
+        },
+        {
+          "id": "lp5d5c1",
+          "name": "Villa Agrippina, a Gran Meliá Hotel - The Leading Hotels of The World",
+          "country": ""
+        },
+        {
+          "id": "lp65560928",
+          "name": "Tokyo Bay Shiomi Prince Hotel",
+          "country": ""
+        },
+        {
+          "id": "lp680a4",
+          "name": "Magna Pars l'Hotel à Parfum, Small Luxury Hotels of the World",
+          "country": ""
+        },
+        {
+          "id": "lp6f715",
+          "name": "Shangri-La The Shard, London",
+          "country": ""
+        },
+        {
+          "id": "lp7246c",
+          "name": "The Peninsula Paris",
+          "country": ""
+        },
+        {
+          "id": "lp72e2c",
+          "name": "Four Seasons Resort Dubai at Jumeirah Beach",
+          "country": ""
+        },
+        {
+          "id": "lpaab61",
+          "name": "Hassler Roma",
+          "country": ""
+        },
+        {
+          "id": "lp39d0d",
+          "name": "La Résidence Phou Vao",
+          "country": "LA"
+        },
+        {
+          "id": "lp657829ff",
+          "name": "La Résidence Phou Vao",
+          "country": "LA"
+        }
+      ]
     },
     {
-      "hotel": "Avani+ Luang Prabang Hotel",
-      "error": "photo: photo threshold"
+      "hotel": "3 Nagas Luang Prabang - MGallery Collection",
+      "stage": "search",
+      "returned": [
+        {
+          "id": "lp10249d",
+          "name": "Mandarin Oriental Jumeira, Dubai",
+          "country": ""
+        },
+        {
+          "id": "lp1ab1f",
+          "name": "Excelsior Hotel Gallia, a Luxury Collection Hotel, Milan",
+          "country": ""
+        },
+        {
+          "id": "lp1af45",
+          "name": "Hôtel Napoleon Paris",
+          "country": ""
+        },
+        {
+          "id": "lp1b845",
+          "name": "St. James' Court, A Taj Hotel, London",
+          "country": ""
+        },
+        {
+          "id": "lp1b9e7",
+          "name": "Rome Cavalieri, A Waldorf Astoria Hotel",
+          "country": ""
+        },
+        {
+          "id": "lp1b9f6",
+          "name": "London Hilton on Park Lane",
+          "country": ""
+        },
+        {
+          "id": "lp1db0a1",
+          "name": "THE BLOSSOM HIBIYA",
+          "country": ""
+        },
+        {
+          "id": "lp1e3405",
+          "name": "Address Sky View, Downtown Dubai",
+          "country": ""
+        },
+        {
+          "id": "lp20554",
+          "name": "Hyatt Regency London - The Churchill",
+          "country": ""
+        },
+        {
+          "id": "lp2275e",
+          "name": "The St. Regis Rome",
+          "country": ""
+        },
+        {
+          "id": "lp27e2f",
+          "name": "Pullman Paris Tour Eiffel",
+          "country": ""
+        },
+        {
+          "id": "lp2a16c",
+          "name": "Jumeirah Burj Al Arab Dubai",
+          "country": ""
+        },
+        {
+          "id": "lp2a32f",
+          "name": "The Savoy",
+          "country": ""
+        },
+        {
+          "id": "lp2b241",
+          "name": "Novotel Paris Les Halles",
+          "country": ""
+        },
+        {
+          "id": "lp2ba5e",
+          "name": "UNA Hotels Galles Milano",
+          "country": ""
+        },
+        {
+          "id": "lp2f61f",
+          "name": "Hotel Splendide Royal - The Leading Hotels of the World",
+          "country": ""
+        },
+        {
+          "id": "lp2f87f",
+          "name": "Meliá Milano",
+          "country": ""
+        },
+        {
+          "id": "lp32483",
+          "name": "The Royal Park Hotel Iconic Tokyo Shiodome",
+          "country": ""
+        },
+        {
+          "id": "lp37b85",
+          "name": "The Prince Park Tower Tokyo - Preferred Hotels & Resorts, LVX Collection",
+          "country": ""
+        },
+        {
+          "id": "lp3e709",
+          "name": "The Peninsula Tokyo",
+          "country": ""
+        },
+        {
+          "id": "lp4f068",
+          "name": "Sofitel Dubai Jumeirah Beach",
+          "country": ""
+        },
+        {
+          "id": "lp59713",
+          "name": "Shangri-La Paris",
+          "country": ""
+        },
+        {
+          "id": "lp5d5c1",
+          "name": "Villa Agrippina, a Gran Meliá Hotel - The Leading Hotels of The World",
+          "country": ""
+        },
+        {
+          "id": "lp65560928",
+          "name": "Tokyo Bay Shiomi Prince Hotel",
+          "country": ""
+        },
+        {
+          "id": "lp680a4",
+          "name": "Magna Pars l'Hotel à Parfum, Small Luxury Hotels of the World",
+          "country": ""
+        },
+        {
+          "id": "lp6f715",
+          "name": "Shangri-La The Shard, London",
+          "country": ""
+        },
+        {
+          "id": "lp7246c",
+          "name": "The Peninsula Paris",
+          "country": ""
+        },
+        {
+          "id": "lp72e2c",
+          "name": "Four Seasons Resort Dubai at Jumeirah Beach",
+          "country": ""
+        },
+        {
+          "id": "lpaab61",
+          "name": "Hassler Roma",
+          "country": ""
+        },
+        {
+          "id": "lp741e9",
+          "name": "3 Nagas Hotel Luang Prabang - MGallery Collection",
+          "country": "LA"
+        }
+      ]
     }
   ]
 }
