@@ -1,0 +1,23 @@
+name: Luang Prabang 86 — premium guide release checks
+on:
+  push:
+    branches: [feature/travel-luang-prabang-86]
+    paths:
+      - 'data/travel/luangPrabangGuide.ts'
+      - 'scripts/check-luang-prabang-86.cjs'
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: node -r ./scripts/register-ts.cjs scripts/check-luang-prabang-86.cjs
+      - run: node scripts/check-travel-catalogue.mjs
+      - run: npm run typecheck

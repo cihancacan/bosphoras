@@ -1,4 +1,3 @@
-/** Luang Prabang #86: bilingual FAQ draft. */
 export const luangPrabangDraftFaq = {
   "fr": [
     {
@@ -7,11 +6,11 @@ export const luangPrabangDraftFaq = {
     },
     {
       "q": "Quel hôtel choisir pour découvrir le centre à pied ?",
-      "a": "Amantaka et Avani+ offrent une implantation centrale, avec des ambiances distinctes."
+      "a": "3 Nagas MGallery et Avani+ bénéficient d'une situation centrale, dans deux ambiances distinctes."
     },
     {
       "q": "Quel hôtel privilégier pour les jardins et les montagnes ?",
-      "a": "La Résidence Phou Vao se situe sur les hauteurs ; Rosewood propose une retraite boisée."
+      "a": "The Luang Say Residence privilégie les jardins et la piscine ; Rosewood propose une retraite boisée."
     },
     {
       "q": "Les tentes Rosewood conviennent-elles aux enfants ?",
@@ -49,11 +48,11 @@ export const luangPrabangDraftFaq = {
     },
     {
       "q": "Which hotel is best for exploring on foot?",
-      "a": "Amantaka and Avani+ offer central settings with different atmospheres."
+      "a": "3 Nagas MGallery and Avani+ offer central locations with different atmospheres."
     },
     {
       "q": "Which hotel is best for gardens and mountains?",
-      "a": "La Résidence Phou Vao is on a hill, while Rosewood offers a wooded retreat."
+      "a": "The Luang Say Residence offers gardens and a pool; Rosewood offers a woodland retreat."
     },
     {
       "q": "Are Rosewood's tents suitable for children?",
