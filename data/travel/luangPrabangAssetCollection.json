@@ -1,0 +1,121 @@
+{
+  "destination": "luang-prabang",
+  "destinationNumber": 86,
+  "status": "candidates_pending_review",
+  "previewApproved": false,
+  "productionApproved": false,
+  "destinationScenes": [
+    {
+      "key": "scene-2",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Luang_Prabang_-_Wat_Xieng_Thong.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Luang_Prabang_-_Wat_Xieng_Thong.jpg/1280px-Luang_Prabang_-_Wat_Xieng_Thong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "xiquinhosilva",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "frCaption": "Le temple Wat Xieng Thong",
+      "enCaption": "Wat Xieng Thong temple",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/luang-prabang-premium/destination/scene-2.webp",
+      "webpSHA256": "0090d2c564b4dfa01c833847399666ad237f101241d7f7784407aeb58e0e42b0",
+      "sourceSHA256": "5138e6ae94097f7ec28d86d25123954f1c557496e8bb613a288639b9a9af7929",
+      "webpBytes": 149700,
+      "webpPixels": [
+        1273,
+        850
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-3",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kuang_Si_waterfalls_in_Luang_Prabang,_Laos.jpg",
+      "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Kuang_Si_waterfalls_in_Luang_Prabang%2C_Laos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "NruasPaoYPP",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "frCaption": "Les cascades de Kuang Si",
+      "enCaption": "Kuang Si waterfalls",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/luang-prabang-premium/destination/scene-3.webp",
+      "webpSHA256": "b394060aa9a00042f02dc41a142e34eeb4e2b7be18050e4154df7671df632c91",
+      "sourceSHA256": "bf0a7a6cce2eddad2d6bf9fdcb77ac0fb7a7158ab9144dfa6def7f7b0bc66273",
+      "webpBytes": 147532,
+      "webpPixels": [
+        1247,
+        629
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-5",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Luang_Prabang_Rue.JPG",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Luang_Prabang_Rue.JPG/1280px-Luang_Prabang_Rue.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Alcyon",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "frCaption": "Une rue du centre historique",
+      "enCaption": "A street in the historic centre",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/luang-prabang-premium/destination/scene-5.webp",
+      "webpSHA256": "1bc2641800001ee740438214866245f20e7563ee9e257d74ebd5fbda8162800f",
+      "sourceSHA256": "c1d5d7ae8a661abf7aff237bfb95505df05b4af8d9bdfd6bcb40d4655abc31a9",
+      "webpBytes": 146450,
+      "webpPixels": [
+        1267,
+        850
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-8",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Mekong-River-Near-Luang-Prabang.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Mekong-River-Near-Luang-Prabang.jpg/1280px-Mekong-River-Near-Luang-Prabang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Bjørn Christian Tørrissen",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "frCaption": "Navigation sur le Mékong près de Luang Prabang",
+      "enCaption": "Boats on the Mekong near Luang Prabang",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/luang-prabang-premium/destination/scene-8.webp",
+      "webpSHA256": "3cdfc5f6bb706e4fcef67f5f48842aa53fc4c1dccd963671ad2924a14b14a4b7",
+      "sourceSHA256": "1750077d04e983ae93e1d322797510b91c6d43894fc6b0fea815fa9474f1b9c7",
+      "webpBytes": 128190,
+      "webpPixels": [
+        1234,
+        850
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    }
+  ],
+  "hotels": [],
+  "supplierMatches": [],
+  "errors": [
+    {
+      "key": "scene-1",
+      "reason": "image fails size threshold"
+    },
+    {
+      "key": "scene-4",
+      "reason": "image below resolution threshold"
+    },
+    {
+      "key": "scene-6",
+      "reason": "image fails size threshold"
+    },
+    {
+      "key": "scene-7",
+      "reason": "image fails size threshold"
+    },
+    {
+      "key": "scene-9",
+      "reason": "image fails size threshold"
+    },
+    {
+      "key": "supplier",
+      "reason": "No configured NUITEE_API_KEY available to this job; no IDs guessed."
+    }
+  ]
+}
