@@ -62,7 +62,8 @@ report=json.loads(REPORT.read_text(encoding='utf-8')) if REPORT.exists() else {'
 report['errors']=[]
 report['diagnostics']=[]
 # Search shorter names first and collect alternatives only if required for the four-hotel shortlist.
-HOTELS=[('amantaka','Amantaka',['Amantaka','Amantaka Resort']),('phouvao','La Résidence Phou Vao, a Luxury Collection Resort & Spa',['La Residence Phou Vao','La Résidence Phou Vao','La Residence Phou Vao a Luxury Collection Resort and Spa','La Residence Phou Vao a Luxury Collection Resort & Spa','La Residence Phou Vao a Belmond Hotel','La Residence Phou Vao a Belmond Hotel Luang Prabang']),('luangsay','The Luang Say Residence',['The Luang Say Residence','Luang Say Residence']),('threenagas','3 Nagas Luang Prabang - MGallery Collection',['3 Nagas Luang Prabang - MGallery Collection','3 Nagas Luang Prabang MGallery by Sofitel','3 Nagas Luang Prabang MGallery','3 Nagas Luang Prabang - MGallery','3 Nagas Luang Prabang'])]
+HOTELS=[('phouvao','La Résidence Phou Vao, a Luxury Collection Resort & Spa',['La Résidence Phou Vao','La Residence Phou Vao a Luxury Collection Resort & Spa']),('threenagas','3 Nagas Hotel Luang Prabang - MGallery Collection',['3 Nagas Hotel Luang Prabang - MGallery Collection'])]
+DIRECT={'phouvao':['lp39d0d','lp657829ff'],'threenagas':['lp741e9']}
 
 with sync_playwright() as p:
  browser=p.chromium.launch(headless=True)
@@ -83,58 +84,18 @@ with sync_playwright() as p:
   if code in ['luangsay','threenagas'] and len(report['matches'])>=4: continue
   if any(x['editorialName']==name for x in report['matches']):continue
   try:
-   page.goto(ORIGIN+'/?language=en&currency=EUR',wait_until='domcontentloaded',timeout=40000)
-   page.wait_for_timeout(2500)
-   # Use only the normal public search field, not an unverified private API.
-   ins=page.locator('input')
-   chosen=None
-   for i in range(min(ins.count(),30)):
-    inp=ins.nth(i)
-    if not inp.is_visible():continue
-    placeholder=(inp.get_attribute('placeholder') or '')+' '+(inp.get_attribute('aria-label') or '')
-    if re.search('destination|where|hotel|location|search|city',placeholder,re.I):
-     chosen=inp;break
-   if chosen is None:
-    for i in range(min(ins.count(),30)):
-     inp=ins.nth(i)
-     if inp.is_visible() and (inp.get_attribute('type') or 'text') in ['text','search']: chosen=inp;break
-   if chosen is None:raise ValueError('public search input not available')
-   chosen.fill(aliases0[0],timeout=7000)
-   page.wait_for_timeout(2200)
-   # Select matching autocomplete option; never click payment/booking buttons.
-   for alias in [*aliases0,name]:
-    opts=page.get_by_text(alias,exact=False)
-    picked=False
-    for i in range(min(opts.count(),30)):
-     opt=opts.nth(i)
-     try:
-      if opt.is_visible() and opt.inner_text(timeout=1000).strip() and len(opt.inner_text(timeout=1000))<220:
-       opt.click(timeout=2000);picked=True;break
-     except Exception:pass
-    if picked:break
-   page.wait_for_timeout(1000)
-   btn=page.get_by_role('button',name=re.compile(r'^(search|search hotels|find hotels|show hotels|find accommodation)$',re.I))
-   if btn.count() and btn.first.is_visible():
-    try:btn.first.click(timeout=4000);page.wait_for_timeout(4500)
-    except Exception: page.wait_for_timeout(1500)
-   # Collect only returned supplier IDs or actual property hrefs for exact-name links.
-   candidates={hotel_id(x) for x in records if exact(x,aliases)}
-   for a in page.locator('a[href*="/hotels/lp"]').all()[:150]:
-    try:
-     if norm(a.inner_text(timeout=1000)) in aliases:
-      match=re.search(r'/hotels/(lp[a-z0-9]+)',a.get_attribute('href') or '',re.I)
-      if match:candidates.add(match.group(1))
-    except Exception:pass
-   if len(candidates)!=1:
-    report['diagnostics'].append({'hotel':name,'stage':'search','returned':[{'id':hotel_id(x),'name':str(name_of(x))[:150],'country':str(field(x,'countryCode','country'))[:90]} for x in records[:35]]})
-    raise ValueError('exact public supplier candidate count '+str(len(candidates)))
-   sid=next(iter(candidates));records.clear()
-   page.goto(ORIGIN+'/hotels/'+sid+'?language=en&currency=EUR',wait_until='domcontentloaded',timeout=40000)
-   page.wait_for_timeout(4500)
-   matches=[x for x in records if hotel_id(x)==sid and exact(x,aliases) and laos(x) and x.get('mapped') is not False and not x.get('deletedAt')]
-   if not matches:
-    report['diagnostics'].append({'hotel':name,'stage':'detail','candidateId':sid,'returned':[{'id':hotel_id(x),'name':str(name_of(x))[:150],'country':str(field(x,'countryCode','country'))[:90],'city':str(field(x,'city'))[:100],'address':str(field(x,'address','formattedAddress'))[:180],'mapped':x.get('mapped'),'deleted':bool(x.get('deletedAt')),'imageCount':len(collect_images(x))} for x in records[:40]]})
-    raise ValueError('exact detail identity and Laos country not independently confirmed')
+   # IDs above were actually returned by the public storefront in the prior run.
+   # Check each distinct property detail, including active mapping, geography and photos.
+   valid=[]
+   for sid in DIRECT[code]:
+    records.clear()
+    page.goto(ORIGIN+'/hotels/'+sid+'?language=en&currency=EUR',wait_until='domcontentloaded',timeout=40000)
+    page.wait_for_timeout(4500)
+    matches=[x for x in records if hotel_id(x)==sid and exact(x,aliases) and laos(x) and x.get('mapped') is True and not x.get('deletedAt') and len(collect_images(x))>=3]
+    report['diagnostics'].append({'hotel':name,'candidateId':sid,'detail':[{'name':str(name_of(x))[:150],'country':str(field(x,'countryCode','country'))[:90],'mapped':x.get('mapped'),'deleted':bool(x.get('deletedAt')),'imageCount':len(collect_images(x))} for x in records if hotel_id(x)==sid]})
+    if matches:valid.append((sid,matches))
+   if len(valid)!=1:raise ValueError('active exact-property candidates '+str(len(valid)))
+   sid,matches=valid[0]
    item=max(matches,key=lambda x:len(collect_images(x)))
    report['matches'].append(dict(editorialName=name,supplierName=name_of(item),hotelId=sid,country='LA',address=str(field(item,'address','formattedAddress'))[:200],sourcePage=ORIGIN+'/hotels/'+sid,detailIdentityVerified=True))
    for idx,(url,cap) in enumerate(collect_images(item)[:18],1):
