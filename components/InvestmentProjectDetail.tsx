@@ -4,7 +4,7 @@ import {Header} from '@/components/Header';
 import {Footer} from '@/components/Footer';
 import {StructuredData} from '@/components/StructuredData';
 import {investmentVentures,type InvestmentVentureCode} from '@/data/investmentVentures';
-import {publicInvestmentListing,publicInvestmentImages,publicCoverUrl,moneyLabel,safeInvestmentWebsite} from '@/lib/investmentListings';
+import {publicInvestmentListing,publicInvestmentImages,publicCoverUrl,moneyLabel,safeInvestmentWebsite,aqmaIllustrationPath} from '@/lib/investmentListings';
 import {breadcrumbSchema} from '@/lib/seo';
 
 const terms:Record<string,[string,string]>={loan:['Prêt','Loan'],bond:['Obligations','Bonds'],equity:['Capital / actions','Equity'],project_finance:['Financement de projet','Project finance'],other:['Opération privée','Private transaction']};
@@ -36,9 +36,10 @@ export async function InvestmentProjectDetail({code,locale}:{code:InvestmentVent
     <div className="mt-10 flex flex-wrap items-end justify-between gap-5"><div><p className="text-xs font-medium uppercase tracking-[.17em] text-[#657982]">{p.sector||v.sector} · {p.location||v.region}</p><h1 className="mt-4 text-[clamp(2.8rem,5.7vw,5.5rem)] font-normal tracking-[-.06em] leading-[1.08] text-[#193344]">{title}</h1>{(fr?p.tagline_fr:p.tagline_en)&&<p className="mt-6 max-w-4xl text-xl leading-8 text-[#536b77]">{fr?p.tagline_fr:p.tagline_en}</p>}</div><Link href={request} className="inline-flex min-h-13 items-center gap-3 rounded-md bg-[#193344] px-7 py-4 text-sm font-medium text-white hover:bg-[#30576a]">{fr?'Demander un placement':'Request investment'}<ArrowRight size={16}/></Link></div>
     <div className="mt-10 grid gap-3 lg:grid-cols-[1.65fr_.75fr]">
      <div className="relative min-h-[300px] overflow-hidden rounded-xl bg-[linear-gradient(135deg,#12334a,#748b99)] md:min-h-[540px]">
-      {cover?<img src={cover} alt={title+' — '+p.location} className="absolute inset-0 h-full w-full object-cover"/>:<div className="absolute inset-0 flex items-end p-8 md:p-14"><span className="max-w-xl text-[clamp(2.5rem,4.5vw,4.5rem)] leading-tight tracking-[-.06em] text-white">{title}</span></div>}
+      {cover?<img src={cover} alt={p.cover_path===aqmaIllustrationPath?(fr?'Illustration de travaux de rénovation':'Illustrative renovation work'):title+' — '+p.location} className="absolute inset-0 h-full w-full object-cover"/>:<div className="absolute inset-0 flex items-end p-8 md:p-14"><span className="max-w-xl text-[clamp(2.5rem,4.5vw,4.5rem)] leading-tight tracking-[-.06em] text-white">{title}</span></div>}
      </div>
      <div className="grid grid-cols-2 gap-3 lg:grid-cols-1 lg:grid-rows-2">
+     {p.cover_path===aqmaIllustrationPath&&<p className="col-span-2 text-xs text-[#697e88] lg:col-span-1">{fr?'Photo d’illustration, ne représentant pas un chantier AQMA.':'Illustrative photograph, not an AQMA project.'} <a className="underline" href="https://www.pexels.com/photo/man-in-black-shirt-holding-gray-and-orange-wheelbarrow-8961555/" target="_blank" rel="noopener noreferrer">Mikael Blomkvist / Pexels</a></p>}
       {images.filter(x=>x.public_path!==p.cover_path).slice(0,2).map(x=><div key={x.id} className="min-h-[120px] overflow-hidden rounded-xl bg-[#dfe5e8]"><img src={publicCoverUrl(x.public_path)} alt={title+' — galerie du projet'} loading="lazy" className="h-full w-full object-cover"/></div>)}
       {images.filter(x=>x.public_path!==p.cover_path).length===0&&<div className="col-span-2 flex min-h-[130px] items-center justify-center rounded-xl border border-[#dce3e5] bg-white px-7 text-center lg:col-span-1"><div><Landmark size={27} className="mx-auto text-[#517084]"/><p className="mt-4 text-xs text-[#647781]">{fr?'Entreprise & investissement privé':'Company & private capital'}</p></div></div>}
      </div>

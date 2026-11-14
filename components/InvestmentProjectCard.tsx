@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import { ArrowRight, CalendarDays, MapPin, Wallet, Landmark, Percent } from 'lucide-react';
 import { investmentVentures } from '@/data/investmentVentures';
-import { publicCoverUrl, moneyLabel, safeInvestmentWebsite, type InvestmentListing } from '@/lib/investmentListings';
+import { publicCoverUrl, moneyLabel, safeInvestmentWebsite, aqmaIllustrationPath, type InvestmentListing } from '@/lib/investmentListings';
 
 const kindFr:Record<string,string>={loan:'Prêt',bond:'Obligations',equity:'Participation au capital',project_finance:'Financement de projet',other:'Opération privée'};
 const kindEn:Record<string,string>={loan:'Private loan',bond:'Bonds',equity:'Equity participation',project_finance:'Project finance',other:'Private investment'};
 
 export function InvestmentProjectCard({project:p,locale,priority=false}:{project:InvestmentListing;locale:'fr'|'en';priority?:boolean}){
  const fr=locale==='fr',code=p.code;
- const picture=p.publication_status==='published'&&p.cover_path?publicCoverUrl(p.cover_path):'';
+ const picture=p.cover_path?publicCoverUrl(p.cover_path):'';
  const short=(fr?p.short_fr:p.short_en)||investmentVentures.find(v=>v.code===code)?.summary||'';
  const title=(fr?p.title_fr:p.title_en)||investmentVentures.find(v=>v.code===code)?.name||code;
  const tagline=fr?p.tagline_fr:p.tagline_en;
@@ -18,8 +18,9 @@ export function InvestmentProjectCard({project:p,locale,priority=false}:{project
  const hasFinance=isPublic && p.target_amount!==null;
  return <article className="group flex h-full flex-col overflow-hidden rounded-xl border border-[#d8e1e5] bg-white shadow-[0_10px_45px_rgba(14,42,58,.045)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_50px_rgba(14,42,58,.12)]">
   <Link href={detail} className="relative block aspect-[16/10] overflow-hidden bg-[#dce5e9]" aria-label={(fr?'Découvrir ':'Explore ')+title}>
-   {picture?<img src={picture} alt={title+' — '+p.location} loading={priority?'eager':'lazy'} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.045]"/>:
+   {picture?<img src={picture} alt={p.cover_path===aqmaIllustrationPath?(fr?'Illustration de travaux de rénovation':'Illustrative renovation work'):title+' — '+p.location} loading={priority?'eager':'lazy'} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.045]"/>:
     <div className="relative flex h-full flex-col justify-between overflow-hidden bg-[linear-gradient(135deg,#17384a,#557080_60%,#e0e7e5)] p-7 text-white"><div className="absolute -right-16 -top-10 h-64 w-64 rounded-full border border-white/25"/><div className="absolute bottom-0 right-6 h-28 w-48 rotate-[-15deg] border border-white/15"/><span className="relative z-10 text-xs tracking-[.24em]">BOSPHORAS INVESTMENT</span><strong className="relative z-10 max-w-[95%] text-[clamp(2.0rem,3vw,3.4rem)] font-normal leading-tight tracking-[-.055em]">{title}</strong></div>}
+   {p.cover_path===aqmaIllustrationPath&&<span className="absolute bottom-3 right-3 rounded bg-black/65 px-2 py-1 text-[10px] text-white">{fr?'Photo d’illustration':'Illustrative photo'}</span>}
    {isPublic&&p.investment_type&&<span className="absolute left-5 top-5 rounded bg-white/95 px-3 py-2 text-[11px] font-medium uppercase tracking-[.08em] text-[#193344]">{(fr?kindFr:kindEn)[p.investment_type]||p.investment_type}</span>}
   </Link>
   <div className="flex flex-1 flex-col p-6 md:p-7">
