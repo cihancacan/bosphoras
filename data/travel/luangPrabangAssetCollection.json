@@ -6,6 +6,27 @@
   "productionApproved": false,
   "destinationScenes": [
     {
+      "key": "scene-1",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Panoramic_view_of_Mount_Phou_Si_seen_from_Wat_Chomphet_in_Luang_Prabang_Laos.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Panoramic_view_of_Mount_Phou_Si_seen_from_Wat_Chomphet_in_Luang_Prabang_Laos.jpg/1280px-Panoramic_view_of_Mount_Phou_Si_seen_from_Wat_Chomphet_in_Luang_Prabang_Laos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Basile Morin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "frCaption": "Le Mékong et le mont Phousi",
+      "enCaption": "Mekong and Mount Phousi",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/luang-prabang-premium/destination/scene-1.webp",
+      "webpSHA256": "ee78b85b548d28ef0b7049c915c5d5d990e27550019cd4c48a1a97f5791741c7",
+      "sourceSHA256": "3fb418b7f4aa54a0a4d3b395b6cca17cfa69055d851a50a7cc3caf688cce63cc",
+      "webpBytes": 135436,
+      "webpPixels": [
+        1100,
+        733
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
       "key": "scene-2",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Luang_Prabang_-_Wat_Xieng_Thong.jpg",
       "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Luang_Prabang_-_Wat_Xieng_Thong.jpg/1280px-Luang_Prabang_-_Wat_Xieng_Thong.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -48,6 +69,27 @@
       "previewVisualApproved": false
     },
     {
+      "key": "scene-4",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Luang_Prabang_Royal_Palace.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Luang_Prabang_Royal_Palace.jpg/1280px-Luang_Prabang_Royal_Palace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Christophe95",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "frCaption": "L’ancien palais royal",
+      "enCaption": "The former royal palace",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/luang-prabang-premium/destination/scene-4.webp",
+      "webpSHA256": "fbe8d997cb03e201b3fe8d7fd4c1ba3508314f14f8eda75cf3976c845ee0af6f",
+      "sourceSHA256": "4f0e9f930e5abce7811e11aa14d18a2ec9f32e2062e2381e7230bcb10edad45f",
+      "webpBytes": 138600,
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
       "key": "scene-5",
       "sourcePage": "https://commons.wikimedia.org/wiki/File:Luang_Prabang_Rue.JPG",
       "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Luang_Prabang_Rue.JPG/1280px-Luang_Prabang_Rue.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
@@ -64,6 +106,48 @@
       "webpPixels": [
         1267,
         850
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-6",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Nam_Khan_river.JPG",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Nam_Khan_river.JPG/1280px-Nam_Khan_river.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "DARIO SEVERI",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "frCaption": "La rivière Nam Khan",
+      "enCaption": "The Nam Khan River",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/luang-prabang-premium/destination/scene-6.webp",
+      "webpSHA256": "84c79290255a7e946631f54e3221130def1a926da76aaa541ac1646dfda6a6de",
+      "sourceSHA256": "76c686777986f881f5d8cb90bc58bb7d7e17cd2b10f5e1870ae84623466f5af0",
+      "webpBytes": 142448,
+      "webpPixels": [
+        950,
+        625
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-7",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Wat_Mai_Luang_Prabang.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Wat_Mai_Luang_Prabang.jpg/1280px-Wat_Mai_Luang_Prabang.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Phillip Maiwald ( Nikopol )",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "frCaption": "Le monastère Wat Mai",
+      "enCaption": "Wat Mai monastery",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/luang-prabang-premium/destination/scene-7.webp",
+      "webpSHA256": "d8c343bfd2d20d2d2946905fe9fb9ab6d307da95dc6b9b7a2acf981a551575cc",
+      "sourceSHA256": "d15c5eb695ac7fea0832b821d230dd8862b8161544a77507352cb1b88e5b42dd",
+      "webpBytes": 142814,
+      "webpPixels": [
+        1100,
+        718
       ],
       "visuallyVerified": false,
       "previewVisualApproved": false
@@ -88,31 +172,32 @@
       ],
       "visuallyVerified": false,
       "previewVisualApproved": false
+    },
+    {
+      "key": "scene-9",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Kuang_Si_Falls_with_submerged_tree_in_turquoise_water_near_Luang_Prabang_Laos.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Kuang_Si_Falls_with_submerged_tree_in_turquoise_water_near_Luang_Prabang_Laos.jpg/1280px-Kuang_Si_Falls_with_submerged_tree_in_turquoise_water_near_Luang_Prabang_Laos.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Basile Morin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "frCaption": "Bassins de Kuang Si",
+      "enCaption": "Kuang Si pools",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/luang-prabang-premium/destination/scene-9.webp",
+      "webpSHA256": "36fbe41bd7195459cbac5f522ae98e622404618cccdea48b13fb1fb0d8127506",
+      "sourceSHA256": "98e7d8ec192dd8ce37bef39955976199e6d6d52a1cc2c7a2fdce738c37a13ec5",
+      "webpBytes": 145996,
+      "webpPixels": [
+        1100,
+        733
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
     }
   ],
   "hotels": [],
   "supplierMatches": [],
   "errors": [
-    {
-      "key": "scene-1",
-      "reason": "image fails size threshold"
-    },
-    {
-      "key": "scene-4",
-      "reason": "image below resolution threshold"
-    },
-    {
-      "key": "scene-6",
-      "reason": "image fails size threshold"
-    },
-    {
-      "key": "scene-7",
-      "reason": "image fails size threshold"
-    },
-    {
-      "key": "scene-9",
-      "reason": "image fails size threshold"
-    },
     {
       "key": "supplier",
       "reason": "No configured NUITEE_API_KEY available to this job; no IDs guessed."
