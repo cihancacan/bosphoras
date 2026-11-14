@@ -18,7 +18,7 @@ type DraftForm = typeof emptyDraft;
 
 export function InvestmentMemberDashboard({role,locale}:{role:Role;locale:Lang}){
   const fr=locale==='fr';
-  const supabase=getPortalSupabase();
+  const supabase: any = getPortalSupabase();
   const [loading,setLoading]=useState(true);
   const [account,setAccount]=useState<Account|null>(null);
   const [userId,setUserId]=useState('');

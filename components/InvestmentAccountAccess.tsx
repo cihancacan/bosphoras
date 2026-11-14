@@ -26,8 +26,8 @@ export function InvestmentAccountAccess({ role, locale }: { role: Role; locale: 
 
   useEffect(()=>{
     let active=true;
-    const supabase=getPortalSupabase();
-    supabase.auth.getUser().then(async({data,error})=>{
+    const supabase: any = getPortalSupabase();
+    supabase.auth.getUser().then(async({data,error}:any)=>{
       if(!active)return;
       if(!error&&data.user){
         const {data:account}=await supabase.from('investment_accounts').select('account_type').eq('user_id',data.user.id).maybeSingle();
@@ -40,7 +40,7 @@ export function InvestmentAccountAccess({ role, locale }: { role: Role; locale: 
 
   async function submit(event:FormEvent<HTMLFormElement>){
     event.preventDefault();setBusy(true);setMessage('');
-    const supabase=getPortalSupabase();
+    const supabase: any = getPortalSupabase();
     try{
       if(mode==='signup'){
         if(!consent)throw new Error(fr?'Veuillez accepter la politique de confidentialité.':'Please accept the privacy policy.');
