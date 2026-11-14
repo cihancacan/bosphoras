@@ -22,6 +22,7 @@ export function InvestmentMemberDashboard({role,locale}:{role:Role;locale:Lang})
   const [loading,setLoading]=useState(true);
   const [account,setAccount]=useState<Account|null>(null);
   const [userId,setUserId]=useState('');
+  const [adminPreview,setAdminPreview]=useState(false);
   const [saved,setSaved]=useState<InvestmentVentureCode[]>([]);
   const [drafts,setDrafts]=useState<Draft[]>([]);
   const [draft,setDraft]=useState<DraftForm>(emptyDraft);
@@ -44,6 +45,18 @@ export function InvestmentMemberDashboard({role,locale}:{role:Role;locale:Lang})
         if(authError||!auth.user){if(mounted)window.location.replace(access);return;}
         const {data:profile,error:profileError}=await supabase.from('investment_accounts').select('*').eq('user_id',auth.user.id).maybeSingle();
         if(profileError||!profile||profile.account_type!==role){
+          const {data:adminProfile}=await supabase.from('profiles').select('role,status,full_name').eq('user_id',auth.user.id).maybeSingle();
+          if(adminProfile?.role==='admin' && adminProfile.status==='active'){
+            if(!mounted)return;
+            setUserId(auth.user.id);
+            setAdminPreview(true);
+            setAccount({
+              user_id:auth.user.id,email:auth.user.email||'',account_type:role,
+              full_name:adminProfile.full_name||null,country:null,company_name:null,
+              investor_interests:null,investor_budget_band:null
+            });
+            return;
+          }
           if(mounted){setError(fr?'Ce compte ne dispose pas de cet accès. Connectez-vous avec le bon profil.':'This account is not authorised for this workspace.');setLoading(false);}
           return;
         }
@@ -72,6 +85,7 @@ export function InvestmentMemberDashboard({role,locale}:{role:Role;locale:Lang})
 
   async function updateAccount(event:FormEvent<HTMLFormElement>){
     event.preventDefault();if(!account||!userId)return;
+    if(adminPreview){setMessage(fr?'Aperçu administrateur : aucune donnée client modifiée.':'Administrator preview: no client data was changed.');return;}
     setProfileBusy(true);setMessage('');setError('');
     const payload={
       full_name:(account.full_name||'').slice(0,130),country:(account.country||'').slice(0,90),
@@ -88,6 +102,11 @@ export function InvestmentMemberDashboard({role,locale}:{role:Role;locale:Lang})
     if(!userId||role!=='investor')return;
     setBusy(true);setMessage('');setError('');
     const exists=saved.includes(code);
+    if(adminPreview){
+      setSaved(current=>exists?current.filter(p=>p!==code):[...current,code]);
+      setBusy(false);
+      return;
+    }
     const result=exists
       ? await supabase.from('investment_watchlist').delete().eq('user_id',userId).eq('project_code',code)
       : await supabase.from('investment_watchlist').insert({user_id:userId,project_code:code});
@@ -97,7 +116,7 @@ export function InvestmentMemberDashboard({role,locale}:{role:Role;locale:Lang})
   }
 
   async function refreshDrafts(){
-    if(!userId)return;
+    if(adminPreview||!userId)return;
     const {data,error}=await supabase.from('investment_project_drafts').select('id,project_name,country,sector,funding_target,website,summary,updated_at').eq('user_id',userId).order('updated_at',{ascending:false});
     if(error)throw error;
     setDrafts((data||[]) as Draft[]);
@@ -117,6 +136,16 @@ export function InvestmentMemberDashboard({role,locale}:{role:Role;locale:Lang})
         updated_at:new Date().toISOString()
       };
       if(payload.project_name.length<2)throw new Error(fr?'Indiquez le nom du projet.':'Enter a project name.');
+      if(adminPreview){
+        if(editingId){
+          setDrafts(current=>current.map(d=>d.id===editingId?{...d,...payload}:d));
+        }else{
+          setDrafts(current=>[{...payload,id:'admin-preview-'+Date.now()},...current]);
+        }
+        setEditingId(null);setDraft(emptyDraft);setConsentId(null);
+        setMessage(fr?'Brouillon de démonstration conservé uniquement pendant cette session.':'Demo draft kept only for this session.');
+        return;
+      }
       const query=editingId
         ? await supabase.from('investment_project_drafts').update(payload).eq('id',editingId).eq('user_id',userId)
         : await supabase.from('investment_project_drafts').insert({...payload,user_id:userId});
@@ -139,6 +168,13 @@ export function InvestmentMemberDashboard({role,locale}:{role:Role;locale:Lang})
     if(!userId)return;
     if(!window.confirm(fr?'Supprimer ce brouillon privé ?':'Delete this private draft?'))return;
     setWorkBusy(true);setError('');setMessage('');
+    if(adminPreview){
+      setDrafts(current=>current.filter(d=>d.id!==item.id));
+      if(editingId===item.id){setEditingId(null);setDraft(emptyDraft);}
+      setMessage(fr?'Brouillon de démonstration supprimé.':'Demo draft removed.');
+      setWorkBusy(false);
+      return;
+    }
     const {error}=await supabase.from('investment_project_drafts').delete().eq('id',item.id).eq('user_id',userId);
     if(error)setError(error.message);else{await refreshDrafts();setMessage(fr?'Brouillon supprimé.':'Draft deleted.');if(editingId===item.id){setEditingId(null);setDraft(emptyDraft);}}
     setWorkBusy(false);
@@ -146,6 +182,7 @@ export function InvestmentMemberDashboard({role,locale}:{role:Role;locale:Lang})
 
   async function requestReview(item:Draft){
     if(!account||!userId)return;
+    if(adminPreview){setMessage(fr?'Aperçu administrateur : aucun e-mail envoyé.':'Administrator preview: no enquiry email was sent.');return;}
     if(consentId!==item.id){setError(fr?'Cochez la case de consentement avant l’envoi.':'Please confirm consent before sending.');return;}
     setWorkBusy(true);setError('');setMessage('');
     try{
@@ -176,11 +213,12 @@ export function InvestmentMemberDashboard({role,locale}:{role:Role;locale:Lang})
   return <main lang={locale} className="min-h-screen bg-[#f5f5f3] px-5 pb-20 pt-12 text-[#202629] md:px-12">
     <div className="mx-auto max-w-[1300px]">
       <header className="flex flex-wrap items-center justify-between gap-4 border-b border-[#ccd7db] pb-6">
-        <div><p className="text-xs uppercase tracking-[.18em] text-[#52646e]">BOSPHORAS INVESTMENT</p><h1 className="mt-4 text-3xl font-normal tracking-[-.04em] text-[#193344]">{role==='investor'?(fr?'Mon espace investisseur':'My investor space'):(fr?'Mon espace entrepreneur':'My entrepreneur space')}</h1><p className="mt-3 text-sm text-[#596b74]">{account?.email}</p></div>
-        <div className="flex gap-3"><Link href={publicPage} className="border border-[#bcc9cf] px-4 py-3 text-sm text-[#193344]">{fr?'Voir la présentation':'View overview'}</Link><button onClick={signOut} className="inline-flex items-center gap-2 border border-[#193344] px-4 py-3 text-sm text-[#193344]"><LogOut size={16}/>{fr?'Déconnexion':'Sign out'}</button></div>
+        <div><p className="text-xs uppercase tracking-[.18em] text-[#52646e]">BOSPHORAS INVESTMENT</p>{adminPreview&&<p className="mt-3 inline-block border border-[#193344] px-3 py-1 text-xs font-medium text-[#193344]">{fr?'APERÇU ADMINISTRATEUR':'ADMINISTRATOR PREVIEW'}</p>}<h1 className="mt-4 text-3xl font-normal tracking-[-.04em] text-[#193344]">{role==='investor'?(fr?'Mon espace investisseur':'My investor space'):(fr?'Mon espace entrepreneur':'My entrepreneur space')}</h1><p className="mt-3 text-sm text-[#596b74]">{account?.email}</p></div>
+        <div className="flex flex-wrap gap-3">{adminPreview&&<Link href={fr?('/investissement/espace/'+(role==='investor'?'entrepreneur':'investisseur')):('/en/investment/dashboard/'+(role==='investor'?'entrepreneur':'investor'))} className="border border-[#193344] px-4 py-3 text-sm text-[#193344]">{fr?(role==='investor'?'Voir l’espace entrepreneur':'Voir l’espace investisseur'):(role==='investor'?'Preview entrepreneur':'Preview investor')}</Link>}<Link href={publicPage} className="border border-[#bcc9cf] px-4 py-3 text-sm text-[#193344]">{fr?'Voir la présentation':'View overview'}</Link><button onClick={signOut} className="inline-flex items-center gap-2 border border-[#193344] px-4 py-3 text-sm text-[#193344]"><LogOut size={16}/>{fr?'Déconnexion':'Sign out'}</button></div>
       </header>
       {message&&<p role="status" aria-live="polite" className="mt-6 border-l-2 border-[#193344] bg-white p-4 text-sm text-[#193344]">{message}</p>}
       {error&&<p role="alert" className="mt-6 border-l-2 border-red-700 bg-red-50 p-4 text-sm text-red-800">{error}</p>}
+      {adminPreview&&<p className="mt-6 text-sm leading-7 text-[#52616b]">{fr?'Vous voyez l’interface réelle en mode démonstration. Les projets enregistrés et les dossiers saisis ici ne sont pas sauvegardés dans les comptes clients.':'You are viewing the real interface in demo mode. Saved projects and drafts in this preview are not written to client accounts.'}</p>}
       <div className="mt-8 grid gap-8 lg:grid-cols-[.7fr_1.3fr]">
         <aside className="self-start border border-[#d5dfe3] bg-white p-7">
           <UserRound size={28} strokeWidth={1.2} className="text-[#193344]"/>

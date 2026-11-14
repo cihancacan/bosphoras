@@ -31,7 +31,9 @@ export function InvestmentAccountAccess({ role, locale }: { role: Role; locale: 
       if(!active)return;
       if(!error&&data.user){
         const {data:account}=await supabase.from('investment_accounts').select('account_type').eq('user_id',data.user.id).maybeSingle();
-        if(active && account?.account_type===role)window.location.replace(dashboard);
+        if(active && account?.account_type===role){window.location.replace(dashboard);return;}
+        const {data:professionalProfile}=await supabase.from('profiles').select('role,status').eq('user_id',data.user.id).maybeSingle();
+        if(active && professionalProfile?.role==='admin' && professionalProfile.status==='active'){window.location.replace(dashboard);return;}
       }
       if(active)setCheckBusy(false);
     }).catch(()=>{if(active)setCheckBusy(false);});
@@ -66,13 +68,13 @@ export function InvestmentAccountAccess({ role, locale }: { role: Role; locale: 
         if(error)throw error;
         if(!data.user)throw new Error(fr?'Connexion non confirmée.':'Could not confirm sign-in.');
         const {data:account,error:accountError}=await supabase.from('investment_accounts').select('account_type').eq('user_id',data.user.id).maybeSingle();
-        if(accountError||!account||account.account_type!==role){
-          await supabase.auth.signOut();
-          throw new Error(fr
-            ? 'Ce compte n’a pas accès à cet espace. Utilisez le bon portail ou contactez Bosphoras.'
-            : 'This account is not authorised for this workspace. Select the appropriate portal or contact Bosphoras.');
-        }
-        window.location.assign(dashboard);
+        if(!accountError && account?.account_type===role){window.location.assign(dashboard);return;}
+        const {data:professionalProfile}=await supabase.from('profiles').select('role,status').eq('user_id',data.user.id).maybeSingle();
+        if(professionalProfile?.role==='admin' && professionalProfile.status==='active'){window.location.assign(dashboard);return;}
+        await supabase.auth.signOut();
+        throw new Error(fr
+          ? 'Ce compte n’a pas accès à cet espace. Utilisez le bon portail ou contactez Bosphoras.'
+          : 'This account is not authorised for this workspace. Select the appropriate portal or contact Bosphoras.');
       }
     }catch(error){setMessage(error instanceof Error?error.message:(fr?'Une erreur est survenue.':'Something went wrong.'));}
     finally{setBusy(false);}
@@ -86,6 +88,7 @@ export function InvestmentAccountAccess({ role, locale }: { role: Role; locale: 
           <div className="flex items-center gap-3 text-[#193344]"><LockKeyhole size={25} strokeWidth={1.3}/><span className="text-xs font-medium uppercase tracking-[.18em]">Bosphoras Investment</span></div>
           <p className="mt-7 text-sm text-[#60717a]">{role==='investor'?(fr?'Espace investisseur':'Investor workspace'):(fr?'Espace entrepreneur':'Entrepreneur workspace')}</p>
           <h1 className="mt-3 text-4xl font-normal tracking-[-.05em] text-[#193344]">{mode==='signup'?(fr?'Créer mon accès':'Create my account'):(fr?'Me connecter':'Sign in')}</h1>
+          <p className="mt-4 text-xs leading-6 text-[#63737b]">{fr?'Si vous possédez déjà un compte administrateur Bosphoras, sélectionnez « Connexion » avec vos identifiants habituels pour visualiser cet espace.':'If you already have a Bosphoras administrator account, choose Sign in with your usual credentials to preview this workspace.'}</p>
           <p className="mt-5 text-sm leading-7 text-[#52616b]">{role==='investor'
             ? fr?'Suivez les projets qui vous intéressent et gérez vos préférences. Aucune souscription ni portefeuille bancaire n’est accessible ici.':'Follow ventures and manage your preferences. No subscriptions or bank-style portfolio are offered here.'
             : fr?'Enregistrez vos projets en brouillon et préparez votre demande d’étude. Aucun financement n’est garanti.':'Save private project drafts and prepare an advisory enquiry. Funding is never guaranteed.'}</p>
