@@ -30,8 +30,8 @@ export const investmentVentures: InvestmentVenture[] = [
     sector: 'Construction & rénovation',
     englishSector: 'Construction & renovation',
     financing: 'Financement d’équipements ou de développement à étudier',
-    summary: 'Entreprise de travaux et rénovation tous corps d’état. L’analyse portera sur les contrats, les marges de chantier, la trésorerie et la capacité à rembourser une éventuelle dette.',
-    englishSummary: 'French multi-trade construction and renovation business. Any debt case requires analysis of contracts, project margins, cash flow and repayment capacity.'
+    summary: 'AQMA développe un modèle de réseau national dans le bâtiment : acquisition des demandes clients, qualification, rendez-vous et orientation vers des partenaires locaux qui établissent les devis, réalisent les travaux et encaissent les règlements. Les partenaires reversent à AQMA une commission contractuelle de 20 % sur leurs encaissements éligibles. L’ambition est de déployer 15 agences en France, avec une priorité initiale à l’acquisition de clients en Île-de-France.',
+    englishSummary: 'AQMA is expanding a construction-services network: it acquires customer enquiries, qualifies requests and arranges appointments with local partners who quote, perform and invoice the works. Under the intended commercial model, partners remit a 20% commission on eligible receipts. The national expansion plan targets 15 agencies, with customer acquisition in the Paris region as the initial priority.'
   },
   {
     code: 'medsestra',

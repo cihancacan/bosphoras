@@ -56,6 +56,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   addEntry({ url: absoluteUrl('/en/investment/investors'), changeFrequency: 'monthly', priority: 0.94 });
   addEntry({ url: absoluteUrl('/investissement/entrepreneurs'), changeFrequency: 'monthly', priority: 0.94 });
   addEntry({ url: absoluteUrl('/en/investment/entrepreneurs'), changeFrequency: 'monthly', priority: 0.94 });
+  addEntry({ url: absoluteUrl('/investissement/projets'), changeFrequency: 'monthly', priority: 0.94 });
+  addEntry({ url: absoluteUrl('/en/investment/projects'), changeFrequency: 'monthly', priority: 0.94 });
 
   for (const locale of locales) {
     for (const page of allPages[locale]) {

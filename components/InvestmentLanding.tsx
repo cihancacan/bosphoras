@@ -56,7 +56,7 @@ const content = {
     riskText: 'L’investissement en entreprise peut entraîner une perte partielle ou totale du capital. Un taux affiché correspond à une obligation contractuelle éventuelle, non à un rendement certain. Les titres non cotés et les prêts ne sont généralement pas remboursables à volonté. Les offres et souscriptions ne seront possibles qu’après validation juridique et intervention des opérateurs habilités appropriés.',
     faqTitle: 'Questions fréquentes',
     faqs: [
-      { question: 'Puis-je investir à partir de 1 000 € ?', answer: 'L’objectif de Bosphoras est d’étudier des tickets accessibles, potentiellement dès 1 000 € pour certaines opérations. Le minimum réel dépendra de chaque projet, de son montage et des règles d’éligibilité. Aucune souscription n’est disponible actuellement.' },
+      { question: 'Puis-je investir à partir de 1 000 € ?', answer: 'Les montants minimums peuvent varier selon l’entreprise, la forme de financement et les exigences réglementaires. Certains montages pourraient être accessibles dès 1 000 €.' },
       { question: 'Peut-on recevoir des intérêts dès le deuxième mois ?', answer: 'Certains prêts ou titres de dette peuvent prévoir des échéances mensuelles ou trimestrielles, éventuellement à partir du deuxième mois. Les versements dépendent des contrats et de la capacité de paiement de l’émetteur ; ils ne sont pas garantis.' },
       { question: 'Quand puis-je récupérer mon argent ?', answer: 'La durée et les conditions de sortie sont propres à chaque opération. Un prêt peut prévoir un remboursement à l’échéance ; une action non cotée peut ne pas trouver d’acheteur. Il ne faut pas assimiler ces placements à un compte épargne librement retirable.' },
       { question: 'Comment soumettre une entreprise à financer ?', answer: 'Remplissez le formulaire en indiquant le pays, l’activité, la somme recherchée et l’utilisation prévue des fonds. L’examen initial ne vaut ni acceptation ni promesse d’accès à un réseau d’investisseurs.' },
@@ -68,7 +68,7 @@ const content = {
     investorFormTitle: 'Échangeons sur votre profil d’investisseur.',
     investorFormText: 'Indiquez-nous les secteurs qui vous intéressent. Ce formulaire est une demande d’information : il ne constitue ni un ordre de souscription ni une recommandation financière.',
     footerTitle: 'Le développement d’une entreprise commence par une conversation sérieuse.',
-    footerText: 'Bosphoras Investment Partners est une activité en préparation. Les missions de conseil aux entreprises et les opérations d’investissement obéissent à des cadres distincts. Aucune offre de titres ou de prêt n’est ouverte au public sur cette page.'
+    footerText: 'Les prestations de conseil aux entreprises sont distinctes des activités de financement réglementées. Les investissements en entreprises impliquent un risque de perte en capital et sont soumis à des conditions propres à chaque opération.'
   },
   en: {
     eyebrow: 'Bosphoras Investment Partners',
@@ -117,7 +117,7 @@ const content = {
     riskText: 'Private investments may result in partial or total capital loss. A contractual interest rate is not a guaranteed return. Unlisted shares and private loans are generally illiquid. Investments will only be made available after legal validation and through appropriately authorised operators.',
     faqTitle: 'Frequently asked questions',
     faqs: [
-      { question: 'Can I invest from €1,000?', answer: 'Our ambition is to explore accessible tickets, potentially from €1,000 on suitable transactions. Actual minimums depend on the issuer, structure and eligibility rules. No subscription is currently offered.' },
+      { question: 'Can I invest from €1,000?', answer: 'Minimum amounts vary by company, financing instrument and applicable eligibility requirements. Some structures may be accessible from €1,000.' },
       { question: 'Can interest start arriving in month two?', answer: 'Some debt instruments may schedule monthly or quarterly payments, possibly as early as month two. Payments depend on the issuer meeting its obligations and are not guaranteed.' },
       { question: 'When can I withdraw my capital?', answer: 'Each investment has its own maturity and exit rules. Private debt may be repaid at maturity; private shares may have no ready buyer. These investments are not instant-access savings accounts.' },
       { question: 'How do I submit my company for funding?', answer: 'Use the project form and describe your location, business, amount sought and intended use of funds. Initial consideration does not guarantee acceptance or investor access.' },
@@ -129,7 +129,7 @@ const content = {
     investorFormTitle: 'Tell us how you invest.',
     investorFormText: 'Share the sectors that interest you. This is an information enquiry, not a subscription order or investment recommendation.',
     footerTitle: 'Every substantial business starts with a serious conversation.',
-    footerText: 'Bosphoras Investment Partners is a developing service. Corporate advisory and investment transactions are separate activities subject to their respective requirements. No securities or lending offer is open to the public here.'
+    footerText: 'Corporate advisory and regulated investment services are separate activities. Private investments involve the risk of losing capital, and each transaction is subject to its own eligibility and legal conditions.'
   }
 };
 
