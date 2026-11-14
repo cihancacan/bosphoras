@@ -2,7 +2,8 @@ import Link from 'next/link';
 import { ArrowRight, CalendarDays, MapPin, Wallet, Landmark, Percent } from 'lucide-react';
 import { investmentVentures } from '@/data/investmentVentures';
 import { ProposedLoanFigures } from '@/components/InvestmentSimulator';
-import { publicCoverUrl, moneyLabel, safeInvestmentWebsite, aqmaIllustrationPath,cliniqeoIllustrationPath, type InvestmentListing } from '@/lib/investmentListings';
+import {proposedLoan} from '@/data/investmentLoanScenarios';
+import { publicCoverUrl, moneyLabel, safeInvestmentWebsite, aqmaIllustrationPath,cliniqeoIllustrationPath,medsestraIllustrationPath, type InvestmentListing } from '@/lib/investmentListings';
 
 const kindFr:Record<string,string>={loan:'Prêt',bond:'Obligations',equity:'Participation au capital',project_finance:'Financement de projet',other:'Opération privée'};
 const kindEn:Record<string,string>={loan:'Private loan',bond:'Bonds',equity:'Equity participation',project_finance:'Project finance',other:'Private investment'};
@@ -21,7 +22,7 @@ export function InvestmentProjectCard({project:p,locale,priority=false}:{project
   <Link href={detail} className="relative block aspect-[16/10] overflow-hidden bg-[#dce5e9]" aria-label={(fr?'Découvrir ':'Explore ')+title}>
    {picture?<img src={picture} alt={p.cover_path===aqmaIllustrationPath?(fr?'Illustration de travaux de rénovation':'Illustrative renovation work'):title+' — '+p.location} loading={priority?'eager':'lazy'} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.045]"/>:
     <div className="relative flex h-full flex-col justify-between overflow-hidden bg-[linear-gradient(135deg,#17384a,#557080_60%,#e0e7e5)] p-7 text-white"><div className="absolute -right-16 -top-10 h-64 w-64 rounded-full border border-white/25"/><div className="absolute bottom-0 right-6 h-28 w-48 rotate-[-15deg] border border-white/15"/><span className="relative z-10 text-xs tracking-[.24em]">BOSPHORAS INVESTMENT</span><strong className="relative z-10 max-w-[95%] text-[clamp(2.0rem,3vw,3.4rem)] font-normal leading-tight tracking-[-.055em]">{title}</strong></div>}
-   {[aqmaIllustrationPath,cliniqeoIllustrationPath].includes(p.cover_path)&&<span className="absolute bottom-3 right-3 rounded bg-black/65 px-2 py-1 text-[10px] text-white">{fr?'Photo d’illustration':'Illustrative photo'}</span>}
+   {[aqmaIllustrationPath,cliniqeoIllustrationPath,medsestraIllustrationPath].includes(p.cover_path)&&<span className="absolute bottom-3 right-3 rounded bg-black/65 px-2 py-1 text-[10px] text-white">{fr?'Photo d’illustration':'Illustrative photo'}</span>}
    {isPublic&&p.investment_type&&<span className="absolute left-5 top-5 rounded bg-white/95 px-3 py-2 text-[11px] font-medium uppercase tracking-[.08em] text-[#193344]">{(fr?kindFr:kindEn)[p.investment_type]||p.investment_type}</span>}
   </Link>
   <div className="flex flex-1 flex-col p-6 md:p-7">
@@ -29,7 +30,7 @@ export function InvestmentProjectCard({project:p,locale,priority=false}:{project
    <Link href={detail} className="mt-4 block text-[clamp(1.45rem,2vw,2rem)] font-normal leading-tight tracking-[-.045em] text-[#193344] hover:underline hover:underline-offset-4">{title}</Link>
    {tagline&&<p className="mt-2 text-sm font-medium leading-6 text-[#3d5e6e]">{tagline}</p>}
    <p className="mt-4 line-clamp-3 flex-1 text-sm leading-7 text-[#5b6c75]">{short}</p>
-   {['aqma','cliniqeo'].includes(code)&&!isPublic?<div className="mt-6"><ProposedLoanFigures locale={locale}/></div>:<div className="mt-7 grid grid-cols-2 gap-x-5 gap-y-4 border-t border-[#e2e8eb] pt-6">
+   {proposedLoan(code)&&!isPublic?<div className="mt-6"><ProposedLoanFigures locale={locale} code={code}/></div>:<div className="mt-7 grid grid-cols-2 gap-x-5 gap-y-4 border-t border-[#e2e8eb] pt-6">
     <div><p className="text-[11px] uppercase tracking-[.08em] text-[#7b8a92]">{fr?'Financement recherché':'Funding target'}</p><p className="mt-2 text-lg font-semibold tracking-[-.02em] text-[#193344]">{hasFinance?moneyLabel(p.target_amount,p.currency,locale):(fr?'Sur demande':'On enquiry')}</p></div>
     <div><p className="text-[11px] uppercase tracking-[.08em] text-[#7b8a92]">{fr?'Investissement minimum':'Minimum investment'}</p><p className="mt-2 text-lg font-semibold tracking-[-.02em] text-[#193344]">{isPublic&&p.minimum_ticket!==null?moneyLabel(p.minimum_ticket,p.currency,locale):(fr?'À préciser':'To be confirmed')}</p></div>
     {isPublic&&p.annual_rate!==null&&<div><p className="text-[11px] uppercase tracking-[.08em] text-[#7b8a92]">{fr?'Taux contractuel indicatif':'Indicative contractual rate'}</p><p className="mt-2 text-base font-semibold text-[#193344]">{p.annual_rate}% / {fr?'an':'year'}</p></div>}

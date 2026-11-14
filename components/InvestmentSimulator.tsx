@@ -1,6 +1,7 @@
 'use client';
 import {useMemo,useState} from 'react';
 import type {InvestmentListing} from '@/lib/investmentListings';
+import {proposedLoan} from '@/data/investmentLoanScenarios';
 type Locale='fr'|'en'|'ru'|'ar';
 const words={
 fr:{title:'Simuler mon investissement',intro:'Projection illustrative, pas une offre ni une prévision de rendement.',amount:'Montant envisagé',mode:'Modèle de simulation',loan:'Prêt amortissable',bullet:'Prêt in fine',equity:'Participation au capital',rate:'Taux nominal annuel (%)',term:'Durée (mois)',first:'Mois du premier paiement',exit:'Valeur de revente hypothétique (% du capital initial)',dividend:'Dividende annuel hypothétique (% du capital initial)',fill:'Renseignez les hypothèses pour obtenir une projection.',monthly:'Versement mensuel régulier',average:'Gain moyen par mois sur la durée',profit:'Gain brut total',total:'Total des encaissements simulés',schedule:'Échéancier indicatif',month:'Mois',payment:'Versement',interest:'Intérêts / dividendes',capital:'Capital / revente',deferred:'Aucun versement avant le premier mois choisi. Pour le prêt amortissable, les intérêts du différé sont capitalisés et les mensualités sont constantes. Pour le prêt in fine, les intérêts différés sont versés au premier paiement et le capital à l’échéance.',equityNote:'Les dividendes sont supposés annuels, en fin d’année, et la revente à la fin de la durée. Le gain mensuel moyen n’est pas un versement mensuel.',risk:'Simulation brute avant fiscalité, frais et défaut, sans garantie de remboursement ni de rendement. Les hypothèses ne sont pas des conditions contractuelles. Le capital peut être perdu.',noMonthly:'Pas de versement mensuel supposé',aqma:'Hypothèse : taux nominal de 10 % par an sur le capital restant dû, 36 mois, premier paiement au mois 6 ; amortissement mensuel et intérêts capitalisés pendant le différé supposés uniquement pour ce calcul.',target:'Objectif de financement envisagé',ticket:'Ticket envisagé',proposed:'Hypothèses de financement à l’étude'},
@@ -10,10 +11,10 @@ ar:{title:'حاسبة الاستثمار',intro:'سيناريو توضيحي و�
 } as const;
 type Row={month:number;payment:number;interest:number;capital:number};
 export function InvestmentSimulator({project:p,locale}:{project:InvestmentListing;locale:Locale}){
- const t=words[locale],draftAqma=['aqma','cliniqeo'].includes(p.code)&&p.publication_status!=='published';
- const knownDebt=['loan','bond'].includes(p.investment_type)||draftAqma,knownEquity=p.investment_type==='equity';
+ const t=words[locale],scenario=p.publication_status!=='published'?proposedLoan(p.code):undefined;
+ const knownDebt=['loan','bond'].includes(p.investment_type)||!!scenario,knownEquity=p.investment_type==='equity';
  const [model,setModel]=useState<'loan'|'bullet'|'equity'>(knownEquity?'equity':'loan');
- const [amount,setAmount]=useState('10000'),[rate,setRate]=useState(draftAqma?'10':p.annual_rate===null?'':String(p.annual_rate)),[months,setMonths]=useState(draftAqma?'36':p.term_months?String(p.term_months):''),[first,setFirst]=useState(draftAqma?'6':p.first_payment_month?String(p.first_payment_month):'1');
+ const [amount,setAmount]=useState('10000'),[rate,setRate]=useState(scenario?String(scenario.rate):p.annual_rate===null?'':String(p.annual_rate)),[months,setMonths]=useState(scenario?String(scenario.months):p.term_months?String(p.term_months):''),[first,setFirst]=useState(scenario?String(scenario.first):p.first_payment_month?String(p.first_payment_month):'1');
  const [exit,setExit]=useState(''),[dividend,setDividend]=useState('0');
  const n=Number(months),a=Number(amount),r=Number(rate)/1200,f=Number(first),ev=Number(exit)/100,d=Number(dividend)/100;
  const rows=useMemo<Row[]>(()=>{
@@ -39,7 +40,7 @@ export function InvestmentSimulator({project:p,locale}:{project:InvestmentListin
  const regular=model==='loan'?rows.find(x=>x.payment>0)?.payment:model==='bullet'?a*r:undefined;
  return <section id="simulation" className="rounded-xl border border-[#dce4e8] bg-white p-6 md:p-8" dir={locale==='ar'?'rtl':'ltr'}>
  <h2 className="text-2xl font-medium tracking-[-.035em] text-[#193344]">{t.title}</h2><p className="mt-3 text-sm leading-6 text-[#637781]">{t.intro}</p>
- {draftAqma&&<p className="mt-4 rounded-lg bg-[#f0f4f5] p-4 text-sm leading-7 text-[#526672]">{t.aqma}</p>}
+ {scenario&&<p className="mt-4 rounded-lg bg-[#f0f4f5] p-4 text-sm leading-7 text-[#526672]">{t.proposed}. {t.deferred}</p>}
  <div className="mt-6 grid gap-4 sm:grid-cols-2">
  <label className="block text-sm text-[#4d636f]">{t.amount} ({p.currency||'EUR'})<input type="number" min="1" max="100000000" step="100" value={amount} onChange={e=>setAmount(e.target.value)} className={inp}/></label>
  <label className="block text-sm text-[#4d636f]">{t.mode}<select className={inp} value={model} onChange={e=>setModel(e.target.value as typeof model)}>{!knownEquity&&<><option value="loan">{t.loan}</option><option value="bullet">{t.bullet}</option></>}{!knownDebt&&<option value="equity">{t.equity}</option>}</select></label>
@@ -51,7 +52,7 @@ export function InvestmentSimulator({project:p,locale}:{project:InvestmentListin
  <p className="mt-5 text-xs leading-6 text-[#647781]">{model==='equity'?t.equityNote:t.deferred}</p><p className="mt-3 text-xs leading-6 text-[#647781]">{t.risk}</p>
  </section>;
 }
-export function ProposedLoanFigures({locale}:{locale:Locale}){
- const t=words[locale];const fmt=(n:number)=>new Intl.NumberFormat({fr:'fr-FR',en:'en-GB',ru:'ru-RU',ar:'ar'}[locale],{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(n);
- return <section className="rounded-lg border border-[#dce4e8] bg-white p-5"><p className="text-xs font-medium text-[#647781]">{t.proposed}</p><div className="mt-4 grid grid-cols-2 gap-3"><div><p className="text-xs text-[#647781]">{t.target}</p><p className="mt-1 text-lg font-medium text-[#193344]">{fmt(150000)}</p></div><div><p className="text-xs text-[#647781]">{t.ticket}</p><p className="mt-1 text-lg font-medium text-[#193344]">{fmt(1000)}</p></div><div><p className="text-xs text-[#647781]">{t.rate}</p><p className="mt-1 text-lg font-medium text-[#193344]">10 %</p></div><div><p className="text-xs text-[#647781]">{t.term}</p><p className="mt-1 text-lg font-medium text-[#193344]">36</p></div><div><p className="text-xs text-[#647781]">{t.first}</p><p className="mt-1 text-lg font-medium text-[#193344]">6</p></div></div><p className="mt-4 text-xs leading-6 text-[#637781]">{t.aqma}</p></section>;
+export function ProposedLoanFigures({locale,code}:{locale:Locale;code:string}){
+ const t=words[locale],scenario=proposedLoan(code);if(!scenario)return null;const fmt=(n:number)=>new Intl.NumberFormat({fr:'fr-FR',en:'en-GB',ru:'ru-RU',ar:'ar'}[locale],{style:'currency',currency:'EUR',maximumFractionDigits:0}).format(n);
+ return <section className="rounded-lg border border-[#dce4e8] bg-white p-5"><p className="text-xs font-medium text-[#647781]">{t.proposed}</p><div className="mt-4 grid grid-cols-2 gap-3"><div><p className="text-xs text-[#647781]">{t.target}</p><p className="mt-1 text-lg font-medium text-[#193344]">{fmt(scenario.target)}</p></div><div><p className="text-xs text-[#647781]">{t.ticket}</p><p className="mt-1 text-lg font-medium text-[#193344]">{fmt(scenario.ticket)}</p></div><div><p className="text-xs text-[#647781]">{t.rate}</p><p className="mt-1 text-lg font-medium text-[#193344]">{scenario.rate} %</p></div><div><p className="text-xs text-[#647781]">{t.term}</p><p className="mt-1 text-lg font-medium text-[#193344]">{scenario.months}</p></div><div><p className="text-xs text-[#647781]">{t.first}</p><p className="mt-1 text-lg font-medium text-[#193344]">{scenario.first}</p></div></div><p className="mt-4 text-xs leading-6 text-[#637781]">{t.intro}</p></section>;
 }
