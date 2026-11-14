@@ -1,0 +1,257 @@
+{
+  "destination": "luang-prabang",
+  "source": "https://bosphoras.nuitee.link",
+  "status": "review_only_not_released",
+  "matches": [
+    {
+      "editorialName": "Rosewood Luang Prabang",
+      "supplierName": "Rosewood Luang Prabang",
+      "hotelId": "lpe4c8f",
+      "country": "LA",
+      "address": "Rosewood Luang Prabang Nauea Village",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpe4c8f",
+      "detailIdentityVerified": true
+    },
+    {
+      "editorialName": "Avani+ Luang Prabang Hotel",
+      "supplierName": "Avani+ Luang Prabang Hotel",
+      "hotelId": "lpa4272",
+      "country": "LA",
+      "address": "Setthathirath Road, Hua Xieng Village, PO.Box 1142",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa4272",
+      "detailIdentityVerified": true
+    }
+  ],
+  "photos": [
+    {
+      "hotel": "Rosewood Luang Prabang",
+      "supplierId": "lpe4c8f",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpe4c8f",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/238691115.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/rosewood-review-1.webp",
+      "webpBytes": 148430,
+      "webpPixels": [
+        1200,
+        833
+      ],
+      "webpSHA256": "76f56ff1a22b5a5b18eb93a8f0e25d72dd4c91a0833c66b2faf13896ab4581b6",
+      "sourceSHA256": "35324fca360d318e72f3cad6bc6786596fc8ab84dc36063e1dfecd219831918b"
+    },
+    {
+      "hotel": "Rosewood Luang Prabang",
+      "supplierId": "lpe4c8f",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpe4c8f",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/542136644.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/rosewood-review-4.webp",
+      "webpBytes": 79360,
+      "webpPixels": [
+        1200,
+        674
+      ],
+      "webpSHA256": "c156f5987e1ea2d6cfea7a1fe304720609b86bb68009631a1bfc93fdbe57bb71",
+      "sourceSHA256": "7b1b0cc9a1dfee3bee5d84185c4876ae749d09e845b53022b2918492ff9a79ff"
+    },
+    {
+      "hotel": "Rosewood Luang Prabang",
+      "supplierId": "lpe4c8f",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpe4c8f",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/238697854.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/rosewood-review-5.webp",
+      "webpBytes": 99300,
+      "webpPixels": [
+        974,
+        850
+      ],
+      "webpSHA256": "839997fdc6bee540bd96f417a0cff1279199c043572470f6536382fb1831cf9e",
+      "sourceSHA256": "54a1f48e01fdf848a841d5b2707fc2feefac098173977fa3f86361835c175a2a"
+    },
+    {
+      "hotel": "Rosewood Luang Prabang",
+      "supplierId": "lpe4c8f",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpe4c8f",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/238697517.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/rosewood-review-7.webp",
+      "webpBytes": 105312,
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "webpSHA256": "eb646b82f31151a55dbca3625fbf8c718c4266a4569c52ee12de7ade21647cee",
+      "sourceSHA256": "cee960cb459d8ee90a12e6cdfd5d5c077687919897bfad3d4bcf4ce908e1ca40"
+    },
+    {
+      "hotel": "Rosewood Luang Prabang",
+      "supplierId": "lpe4c8f",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpe4c8f",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/238697429.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/rosewood-review-8.webp",
+      "webpBytes": 96426,
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "webpSHA256": "126a2f19b76c2015a334438f590987b4e7ea5bbad82a1570d7cb6bb763e4d269",
+      "sourceSHA256": "05575291c122c19b695adcfebdce3c22e786b8a80a5317a64dc8e12034ace9b0"
+    },
+    {
+      "hotel": "Avani+ Luang Prabang Hotel",
+      "supplierId": "lpa4272",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa4272",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/135675478.jpg",
+      "caption": "building",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/avani-review-1.webp",
+      "webpBytes": 140876,
+      "webpPixels": [
+        1200,
+        801
+      ],
+      "webpSHA256": "e8372a9edf23a58bbe05217332996aad1801590e2be7c389ac34a150aa2cc072",
+      "sourceSHA256": "cbff25156264610ed59b02f1d472839f9972f8256d024445945345b19da5454b"
+    },
+    {
+      "hotel": "Avani+ Luang Prabang Hotel",
+      "supplierId": "lpa4272",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa4272",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/236520729.jpg",
+      "caption": "other",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/avani-review-2.webp",
+      "webpBytes": 53654,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "ca267c79345420f032581351dd5277e07f176f8c54be761697bfe452157ecdf1",
+      "sourceSHA256": "d346397d4659c67f9879f38ce56e152a7aeee0253bb1b2a88dae9a3d92e5f6b7"
+    },
+    {
+      "hotel": "Avani+ Luang Prabang Hotel",
+      "supplierId": "lpa4272",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa4272",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/236520723.jpg",
+      "caption": "other",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/avani-review-3.webp",
+      "webpBytes": 86652,
+      "webpPixels": [
+        1200,
+        722
+      ],
+      "webpSHA256": "a21e8e7bf82a77f0ab628289fd519f1069fe78fdc9ac24eb821c5b307baa4fb7",
+      "sourceSHA256": "6376422ae4d355274e783d7b22b4550f24a5e96983cab375e210d8e70bb7c7db"
+    },
+    {
+      "hotel": "Avani+ Luang Prabang Hotel",
+      "supplierId": "lpa4272",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa4272",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/236520719.jpg",
+      "caption": "other",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/avani-review-4.webp",
+      "webpBytes": 80792,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "733eddd3576d9dd1681a0c6429cf3dcfe7d72c5c0ff73fc5043deefc80b985d7",
+      "sourceSHA256": "04f32a2675ae4331ce6af5702922b095f4c4d68e5f3be74794701abb3fe01b8f"
+    },
+    {
+      "hotel": "Avani+ Luang Prabang Hotel",
+      "supplierId": "lpa4272",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa4272",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/135675856.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/avani-review-5.webp",
+      "webpBytes": 96024,
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "webpSHA256": "56c0520ee1020ca33e298de8839f03c087cddaa98a1512d441a1b5673fc6eba1",
+      "sourceSHA256": "c1c775ca1e66e4a55a10f09aac307a3b201f9707a963fa2d40c50f4300aabb09"
+    },
+    {
+      "hotel": "Avani+ Luang Prabang Hotel",
+      "supplierId": "lpa4272",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa4272",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/205584266.jpg",
+      "caption": "recepcion & lobby",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/avani-review-6.webp",
+      "webpBytes": 138978,
+      "webpPixels": [
+        1050,
+        701
+      ],
+      "webpSHA256": "4d9c50e3175d44083eb43a70fab92b95f3c3bd50f3699a6353ba265c9e2db539",
+      "sourceSHA256": "d95b2c9710d0ffaade6536d7da4c869782aec2a087d9319c9b3263e8b84f83c7"
+    },
+    {
+      "hotel": "Avani+ Luang Prabang Hotel",
+      "supplierId": "lpa4272",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa4272",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/286133085.jpg",
+      "caption": "hotel room",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/luang-prabang-premium/hotels/avani-review-8.webp",
+      "webpBytes": 61146,
+      "webpPixels": [
+        1200,
+        799
+      ],
+      "webpSHA256": "2a7848797eff948bb135d1a56760be7d17da2de04fe53fdbdde4f6df45a6da41",
+      "sourceSHA256": "88845c2f5002056096d00c4dd6535f83813bd8a563731097f3137038121c58e6"
+    }
+  ],
+  "errors": [
+    {
+      "hotel": "Amantaka",
+      "error": "exact detail identity and Laos country not independently confirmed"
+    },
+    {
+      "hotel": "Rosewood Luang Prabang",
+      "error": "photo: photo threshold"
+    },
+    {
+      "hotel": "Rosewood Luang Prabang",
+      "error": "photo: photo threshold"
+    },
+    {
+      "hotel": "Rosewood Luang Prabang",
+      "error": "photo: photo threshold"
+    },
+    {
+      "hotel": "La Résidence Phou Vao, a Luxury Collection Resort & Spa",
+      "error": "Locator.click: Timeout 4000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"button\", name=re.compile(r\"^(search|search hotels|find hotels|show hotels|find accommodation)$\", re.IGNORECASE)).first\n  "
+    },
+    {
+      "hotel": "Avani+ Luang Prabang Hotel",
+      "error": "photo: photo threshold"
+    }
+  ]
+}
