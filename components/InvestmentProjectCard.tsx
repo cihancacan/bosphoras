@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, CalendarDays, MapPin, Wallet, Landmark, Percent } from 'lucide-react';
 import { investmentVentures } from '@/data/investmentVentures';
+import { AqmaProposedFigures } from '@/components/InvestmentSimulator';
 import { publicCoverUrl, moneyLabel, safeInvestmentWebsite, aqmaIllustrationPath, type InvestmentListing } from '@/lib/investmentListings';
 
 const kindFr:Record<string,string>={loan:'Prêt',bond:'Obligations',equity:'Participation au capital',project_finance:'Financement de projet',other:'Opération privée'};
@@ -28,12 +29,13 @@ export function InvestmentProjectCard({project:p,locale,priority=false}:{project
    <Link href={detail} className="mt-4 block text-[clamp(1.45rem,2vw,2rem)] font-normal leading-tight tracking-[-.045em] text-[#193344] hover:underline hover:underline-offset-4">{title}</Link>
    {tagline&&<p className="mt-2 text-sm font-medium leading-6 text-[#3d5e6e]">{tagline}</p>}
    <p className="mt-4 line-clamp-3 flex-1 text-sm leading-7 text-[#5b6c75]">{short}</p>
-   <div className="mt-7 grid grid-cols-2 gap-x-5 gap-y-4 border-t border-[#e2e8eb] pt-6">
+   {code==='aqma'&&!isPublic?<div className="mt-6"><AqmaProposedFigures locale={locale}/></div>:<div className="mt-7 grid grid-cols-2 gap-x-5 gap-y-4 border-t border-[#e2e8eb] pt-6">
     <div><p className="text-[11px] uppercase tracking-[.08em] text-[#7b8a92]">{fr?'Financement recherché':'Funding target'}</p><p className="mt-2 text-lg font-semibold tracking-[-.02em] text-[#193344]">{hasFinance?moneyLabel(p.target_amount,p.currency,locale):(fr?'Sur demande':'On enquiry')}</p></div>
     <div><p className="text-[11px] uppercase tracking-[.08em] text-[#7b8a92]">{fr?'Investissement minimum':'Minimum investment'}</p><p className="mt-2 text-lg font-semibold tracking-[-.02em] text-[#193344]">{isPublic&&p.minimum_ticket!==null?moneyLabel(p.minimum_ticket,p.currency,locale):(fr?'À préciser':'To be confirmed')}</p></div>
     {isPublic&&p.annual_rate!==null&&<div><p className="text-[11px] uppercase tracking-[.08em] text-[#7b8a92]">{fr?'Taux contractuel indicatif':'Indicative contractual rate'}</p><p className="mt-2 text-base font-semibold text-[#193344]">{p.annual_rate}% / {fr?'an':'year'}</p></div>}
     {isPublic&&p.term_months!==null&&<div><p className="text-[11px] uppercase tracking-[.08em] text-[#7b8a92]">{fr?'Durée':'Term'}</p><p className="mt-2 text-base font-semibold text-[#193344]">{p.term_months} {fr?'mois':'months'}</p></div>}
-   </div>
+   </div>}
+   <Link href={detail+'#simulation'} className="mt-5 text-sm font-medium text-[#193344] underline underline-offset-4">{fr?'Simuler mon investissement':'Simulate my investment'}</Link>
    {safeInvestmentWebsite(p.official_website)&&<a href={safeInvestmentWebsite(p.official_website)} target="_blank" rel="noopener noreferrer" className="mt-5 text-sm text-[#193344] underline underline-offset-4">{fr?'Site officiel':'Official website'} ↗</a>}
    <div className="mt-7 grid grid-cols-2 gap-3"><Link href={detail} className="flex min-h-12 items-center justify-center gap-2 rounded-md border border-[#cad6dc] px-4 py-3 text-center text-xs font-medium text-[#193344] transition hover:border-[#193344]">{fr?'Voir le projet':'View project'}<ArrowRight size={15}/></Link><Link href={request} className="flex min-h-12 items-center justify-center rounded-md bg-[#193344] px-4 py-3 text-center text-xs font-medium text-white hover:bg-[#305364]">{fr?'Demander un placement':'Request investment'}</Link></div>
   </div>

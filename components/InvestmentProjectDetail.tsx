@@ -6,6 +6,7 @@ import {StructuredData} from '@/components/StructuredData';
 import {investmentVentures,type InvestmentVentureCode} from '@/data/investmentVentures';
 import {publicInvestmentListing,publicInvestmentImages,publicCoverUrl,moneyLabel,safeInvestmentWebsite,aqmaIllustrationPath} from '@/lib/investmentListings';
 import {breadcrumbSchema} from '@/lib/seo';
+import {InvestmentSimulator,AqmaProposedFigures} from '@/components/InvestmentSimulator';
 
 const terms:Record<string,[string,string]>={loan:['Prêt','Loan'],bond:['Obligations','Bonds'],equity:['Capital / actions','Equity'],project_finance:['Financement de projet','Project finance'],other:['Opération privée','Private transaction']};
 const freq:Record<string,[string,string]>={monthly:['Mensuelle','Monthly'],quarterly:['Trimestrielle','Quarterly'],annual:['Annuelle','Annual'],at_maturity:['À échéance','At maturity'],variable:['Variable','Variable']};
@@ -47,6 +48,8 @@ export async function InvestmentProjectDetail({code,locale}:{code:InvestmentVent
    </div>
    <div className="mx-auto mt-11 grid max-w-[1450px] gap-8 px-6 md:px-12 lg:grid-cols-[1.3fr_.7fr] lg:gap-12">
     <div className="space-y-8">
+     {code==='aqma'&&p.publication_status!=='published'&&<AqmaProposedFigures locale={locale}/>}
+     <InvestmentSimulator project={p} locale={locale}/>
      <section className="rounded-xl border border-[#dce4e8] bg-white p-7 md:p-10"><p className="text-xs uppercase tracking-[.18em] text-[#71848c]">{fr?'L’entreprise':'The company'}</p><h2 className="mt-4 text-3xl font-normal tracking-[-.045em] text-[#193344]">{fr?'L’opportunité en détail':'Opportunity overview'}</h2><div className="mt-6 space-y-5">{story.split(/\n\n+/).map((part,i)=><p key={i} className="whitespace-pre-line text-base leading-9 text-[#506570]">{part}</p>)}</div></section>
      {highlights.length>0&&<section className="rounded-xl border border-[#dce4e8] bg-white p-7 md:p-10"><h2 className="text-2xl font-normal tracking-[-.04em] text-[#193344]">{fr?'Les points forts':'Key highlights'}</h2><div className="mt-7 grid gap-4 md:grid-cols-2">{highlights.map(x=><div key={x} className="flex gap-3 rounded-lg bg-[#f5f8f8] p-4"><span className="mt-1 text-[#193344]">✓</span><p className="text-sm leading-7 text-[#4c626c]">{x}</p></div>)}</div></section>}
      {use&&<section className="rounded-xl border border-[#dce4e8] bg-white p-7 md:p-10"><h2 className="text-2xl font-normal tracking-[-.04em] text-[#193344]">{fr?'Utilisation du financement':'Use of funding'}</h2><p className="mt-5 whitespace-pre-line text-base leading-9 text-[#526873]">{use}</p></section>}
