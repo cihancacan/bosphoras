@@ -31,6 +31,7 @@ const specialLocalizedPaths: Array<Record<Locale, string>> = [
   { fr: '/peninsula-istanbul', en: '/en/peninsula-istanbul', ru: '/ru/peninsula-istanbul', ar: '/ar/peninsula-istanbul' },
   { fr: '/transfert-aeroport-istanbul', en: '/en/istanbul-airport-transfer', ru: '/ru/transfer-aeroport-stambul', ar: '/ar/istanbul-airport-transfer' },
   corporateRelocationPaths,
+  { fr: '/investissement', en: '/en/investment', ru: '/en/investment', ar: '/en/investment' },
   { fr: '/exoneration-fiscale-turquie-revenus-etrangers', en: '/en/turkey-tax-exemption-foreign-income', ru: '/ru/nalogovaya-lgota-turtsiya-inostrannye-dokhody', ar: '/ar/turkey-tax-exemption-foreign-income' },
   { fr: '/strategie-fiscale-turquie-investisseurs-etrangers', en: '/en/turkey-tax-strategy-foreign-investors', ru: '/ru/nalogovaya-strategiya-turtsii-inostrannye-investory', ar: '/ar/turkey-tax-strategy-foreign-investors' },
   { fr: '/exoneration-fiscale-turquie-20-ans-nouveaux-residents', en: '/en/turkey-20-year-tax-exemption-new-residents', ru: '/ru/turtsiya-20-let-nalogovaya-lgota-novye-rezidenty', ar: '/ar/turkey-20-year-tax-exemption-new-residents' },
@@ -62,6 +63,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
     services: locale === 'fr' ? 'Services' : locale === 'en' ? 'Services' : locale === 'ru' ? 'Услуги' : 'الخدمات',
     destinations: locale === 'fr' ? 'Hôtels & Séjours' : locale === 'en' ? 'Hotels & Stays' : locale === 'ru' ? 'Отели и отдых' : 'الفنادق والإقامات',
     property: locale === 'fr' ? 'Immobilier' : locale === 'en' ? 'Property' : locale === 'ru' ? 'Недвижимость' : 'العقار',
+    investment: locale === 'fr' ? 'Investissement' : locale === 'en' ? 'Investment' : locale === 'ru' ? 'Инвестиции' : 'الاستثمار',
     privateAccess: 'Private Access',
     information: locale === 'fr' ? 'Informations' : locale === 'en' ? 'Information' : locale === 'ru' ? 'Информация' : 'معلومات',
   };
@@ -70,6 +72,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
   const mobilityLink = locale === 'fr' ? '/transfert-aeroport-istanbul' : locale === 'en' ? '/en/istanbul-airport-transfer' : locale === 'ru' ? '/ru/transfer-aeroport-stambul' : '/ar/istanbul-airport-transfer';
   const peninsulaLink = locale === 'fr' ? '/peninsula-istanbul' : `/${locale}/peninsula-istanbul`;
   const travelHomeHref = locale === 'fr' ? '/travel' : `/${locale}/travel`;
+  const investmentHref = locale === 'fr' ? '/investissement' : '/en/investment';
   const hotelSearchHref = getNuiteeWhiteLabelSearchHref(locale);
   const travelDestinationsHref = locale === 'fr' ? '/travel/destinations' : `/${locale}/travel/destinations`;
   const corporateRelocationLink = corporateRelocationPaths[locale];
@@ -119,18 +122,16 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
           : 'اكتشف وجهاتنا وفنادقنا المختارة وأدلتنا المحلية.',
       },
     ]},
+    { label: labels.investment, href: investmentHref, items: [
+      { label: locale === 'fr' ? 'Découvrir Bosphoras Investment' : locale === 'en' ? 'Explore Investment Partners' : locale === 'ru' ? 'Инвестиционные решения' : 'استكشف الاستثمار', href: investmentHref, description: locale === 'fr' ? 'Financement de projets, actions, obligations et conseil aux entreprises.' : 'Private business investment, debt, equity and corporate advisory.' },
+      { label: locale === 'fr' ? 'Soumettre un projet' : locale === 'en' ? 'Submit a project' : locale === 'ru' ? 'Предложить проект' : 'تقديم مشروع', href: investmentHref + '#soumettre-projet' },
+      { label: locale === 'fr' ? 'Devenir investisseur' : locale === 'en' ? 'Investor enquiries' : locale === 'ru' ? 'Для инвесторов' : 'للمستثمرين', href: investmentHref + '#contact-investisseur' },
+    ]},
     { label: labels.privateAccess, href: linkTo('private-club'), items: [
       { label: locale === 'fr' ? 'Cercle prive' : locale === 'en' ? 'Private Access Club' : locale === 'ru' ? 'Частный клуб' : 'النادي الخاص', href: linkTo('private-club') },
       { label: 'The Peninsula Istanbul', href: peninsulaLink, description: locale === 'fr' ? 'Adresse membre Bosphoras Premium a Istanbul.' : locale === 'en' ? 'Bosphoras Premium member address in Istanbul.' : locale === 'ru' ? 'Адрес участника Bosphoras Premium в Стамбуле.' : 'عنوان عضو Bosphoras Premium في إسطنبول.' },
       { label: locale === 'fr' ? 'Demande d adhesion' : locale === 'en' ? 'Membership application' : locale === 'ru' ? 'Заявка на членство' : 'طلب عضوية', href: linkTo('membership-application') },
       { label: locale === 'fr' ? 'Diagnostic prive' : locale === 'en' ? 'Private Assessment' : locale === 'ru' ? 'Частная консультация' : 'تقييم خاص', href: linkTo('private-assessment') },
-    ]},
-    { label: labels.information, href: linkTo('about'), items: [
-      { label: locale === 'fr' ? 'A propos' : locale === 'en' ? 'About' : locale === 'ru' ? 'О нас' : 'من نحن', href: linkTo('about') },
-      { label: locale === 'fr' ? 'Conformite & confiance' : locale === 'en' ? 'Compliance & Trust' : locale === 'ru' ? 'Комплаенс и доверие' : 'الامتثال والثقة', href: linkTo('compliance') },
-      { label: locale === 'fr' ? 'Partenaires & reseau' : locale === 'en' ? 'Partners & Network' : locale === 'ru' ? 'Партнеры и сеть' : 'الشركاء والشبكة', href: linkTo('partners') },
-      { label: locale === 'fr' ? 'Carrières & recrutement' : locale === 'en' ? 'Careers & recruitment' : locale === 'ru' ? 'Карьера и вакансии' : 'الوظائف والتوظيف', href: (locale === 'fr' ? '/carrieres' : '/' + locale + '/carrieres') },
-      { label: locale === 'fr' ? 'Questions frequentes' : locale === 'en' ? 'FAQ' : locale === 'ru' ? 'Вопросы и ответы' : 'أسئلة شائعة', href: linkTo('faq') },
     ]},
   ];
 

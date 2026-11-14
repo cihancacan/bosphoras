@@ -50,6 +50,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     entries.push({ ...entry, url: encodedUrl });
   }
 
+  addEntry({ url: absoluteUrl('/investissement'), changeFrequency: 'monthly', priority: 0.93 });
+  addEntry({ url: absoluteUrl('/en/investment'), changeFrequency: 'monthly', priority: 0.93 });
+
   for (const locale of locales) {
     for (const page of allPages[locale]) {
       const url = getCanonicalUrl(locale, page.slug);

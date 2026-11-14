@@ -21,6 +21,7 @@ export function Footer({ locale }: FooterProps) {
     { label: locale === 'fr' ? "Création d'Entreprise" : locale === 'en' ? 'Company Formation' : locale === 'ru' ? 'Создание компании' : 'تأسيس الشركات', href: linkTo('business-setup') },
     { label: locale === 'fr' ? 'Santé & Assurance' : locale === 'en' ? 'Health & Insurance' : locale === 'ru' ? 'Здоровье и страхование' : 'الصحة والتأمين', href: linkTo('health-insurance') },
     { label: locale === 'fr' ? 'Immobilier & Relocation' : locale === 'en' ? 'Property & Relocation' : locale === 'ru' ? 'Недвижимость и переезд' : 'العقارات والانتقال', href: linkTo('property') },
+    { label: locale === 'fr' ? 'Investissement' : locale === 'en' ? 'Investment Partners' : locale === 'ru' ? 'Инвестиции' : 'الاستثمار', href: locale === 'fr' ? '/investissement' : '/en/investment' },
     { label: locale === 'fr' ? 'Bureaux privés' : locale === 'en' ? 'Private Offices' : locale === 'ru' ? 'Частные офисы' : 'مكاتب خاصة', href: linkTo('offices') },
     { label: locale === 'fr' ? 'Conciergerie de Luxe' : locale === 'en' ? 'Luxury Concierge' : locale === 'ru' ? 'Luxury Concierge' : 'كونسيرج فاخر', href: linkTo('luxury-concierge') },
   ];

@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 export const runtime = 'nodejs';
 
 type Locale = 'fr' | 'en' | 'ru' | 'ar';
-type FormKind = 'private-assessment' | 'membership-application';
+type FormKind = 'private-assessment' | 'membership-application' | 'investment-project' | 'investment-investor';
 
 type FormPayload = {
   locale?: Locale;
@@ -30,6 +30,8 @@ const localeNames: Record<Locale, string> = {
 };
 
 const formNames: Record<FormKind, Record<Locale, string>> = {
+  'investment-project': { fr: 'Projet investissement', en: 'Investment project enquiry', ru: 'Инвестиционный проект', ar: 'طلب تمويل مشروع' },
+  'investment-investor': { fr: 'Demande investisseur', en: 'Investor enquiry', ru: 'Запрос инвестора', ar: 'طلب مستثمر' },
   'private-assessment': {
     fr: 'Diagnostic privé',
     en: 'Private Assessment',
@@ -45,11 +47,15 @@ const formNames: Record<FormKind, Record<Locale, string>> = {
 };
 
 const internalFormNames: Record<FormKind, string> = {
+  'investment-project': 'Investment — project submission',
+  'investment-investor': 'Investment — investor enquiry',
   'private-assessment': 'Private assessment request',
   'membership-application': 'Membership application',
 };
 
 const internalSubjectNames: Record<FormKind, string> = {
+  'investment-project': 'New funding project enquiry',
+  'investment-investor': 'New investor information enquiry',
   'private-assessment': 'New private request',
   'membership-application': 'New membership application',
 };
@@ -253,6 +259,20 @@ function clientHtml(locale: Locale): string {
   return premiumShell(`<p style="font-family:Arial,sans-serif;font-size:15px;line-height:1.9;margin:0 0 22px;">${copy.hello}</p><p style="font-family:Arial,sans-serif;font-size:15px;line-height:1.9;margin:0 0 18px;">${copy.intro}</p><p style="font-family:Arial,sans-serif;font-size:15px;line-height:1.9;margin:0 0 18px;">${copy.follow}</p><p style="font-family:Arial,sans-serif;font-size:15px;line-height:1.9;margin:0 0 28px;">${copy.closing}</p><a href="https://bosphoras.com" style="display:inline-block;background:#121826;color:#fffaf0;text-decoration:none;padding:14px 22px;font-family:Arial,sans-serif;font-size:12px;font-weight:bold;letter-spacing:.14em;text-transform:uppercase;">${copy.button}</a>`, locale);
 }
 
+function investmentClientHtml(locale: Locale, kind: FormKind): string {
+  const isFr = locale === 'fr';
+  const heading = kind === 'investment-project' ? (isFr ? 'Votre projet a bien été reçu' : 'Your project enquiry has been received') : (isFr ? 'Votre demande investisseur a bien été reçue' : 'Your investor enquiry has been received');
+  const message = isFr
+    ? 'Merci de votre intérêt pour Bosphoras Investment Partners. Votre demande va être examinée. Cette confirmation ne constitue ni une acceptation de financement, ni une proposition de placement.'
+    : 'Thank you for contacting Bosphoras Investment Partners. Your enquiry will be reviewed. This confirmation is neither an acceptance for funding nor an investment offer.';
+  return premiumShell('<h1 style="font-size:27px;line-height:1.3;">' + heading + '</h1><p style="font-family:Arial,sans-serif;font-size:15px;line-height:1.9;">' + message + '</p>', locale);
+}
+
+function investmentClientText(locale: Locale, kind: FormKind): string {
+  const isFr = locale === 'fr';
+  return (kind === 'investment-project' ? (isFr ? 'Votre projet a bien été reçu.' : 'Your project enquiry has been received.') : (isFr ? 'Votre demande investisseur a bien été reçue.' : 'Your investor enquiry has been received.')) + '\n\n' + (isFr ? 'Nous examinerons votre demande. Ceci ne constitue ni une promesse de financement ni une offre de placement.' : 'We will review your enquiry. This is neither a funding commitment nor an investment offer.') + '\n\nBosphoras Investment Partners';
+}
+
 function clientText(locale: Locale): string {
   const c = clientCopy[locale];
   return `${c.hello}\n\n${c.intro}\n\n${c.follow}\n\n${c.closing}\n\nÉquipe Bosphoras Istanbul\n+90 546 769 99 96\nbosphoras.com`;
@@ -294,8 +314,11 @@ export async function POST(request: Request) {
     const nodemailer = require('nodemailer');
     const body = (await request.json()) as FormPayload;
     const locale: Locale = body.locale && ['fr', 'en', 'ru', 'ar'].includes(body.locale) ? body.locale : 'fr';
-    const formKind: FormKind = body.formKind === 'membership-application' ? 'membership-application' : 'private-assessment';
+    const formKind: FormKind = body.formKind === 'investment-project' || body.formKind === 'investment-investor' ? body.formKind : body.formKind === 'membership-application' ? 'membership-application' : 'private-assessment';
+    if (JSON.stringify(body).length > 18000) return NextResponse.json({ ok: false, error: 'PAYLOAD_TOO_LARGE' }, { status: 413 });
     const fields = Object.fromEntries(Object.entries(body.fields ?? {}).map(([key, value]) => [safe(key), safe(value)]));
+    if (fields['Bosphoras bot trap']) return NextResponse.json({ ok: false, error: 'INVALID_REQUEST' }, { status: 400 });
+    if ((formKind === 'investment-project' || formKind === 'investment-investor') && fields.Consent !== 'Yes') return NextResponse.json({ ok: false, error: 'CONSENT_REQUIRED' }, { status: 400 });
     const sourcePath = safe(body.sourcePath ?? '');
 
     const clientEmail = getEmail(fields);
@@ -323,9 +346,9 @@ export async function POST(request: Request) {
         from: headerSafe(config.from),
         to: headerSafe(clientEmail),
         replyTo: headerSafe(config.to),
-        subject: headerSafe(clientCopy[locale].subject),
-        html: clientHtml(locale),
-        text: clientText(locale),
+        subject: headerSafe(formKind === 'investment-project' || formKind === 'investment-investor' ? (locale === 'fr' ? 'Demande reçue — Bosphoras Investment' : 'Enquiry received — Bosphoras Investment') : clientCopy[locale].subject),
+        html: formKind === 'investment-project' || formKind === 'investment-investor' ? investmentClientHtml(locale, formKind) : clientHtml(locale),
+        text: formKind === 'investment-project' || formKind === 'investment-investor' ? investmentClientText(locale, formKind) : clientText(locale),
       });
     } catch (confirmationError) {
       confirmationSent = false;
