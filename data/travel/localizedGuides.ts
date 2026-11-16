@@ -1,4 +1,5 @@
 import newYork from './localized/new-york.json';
+import newYork from './localized/new-york.json';
 import phuket from './localized/phuket.json';
 import bali from './localized/bali.json';
 import saintTropez from './localized/saint-tropez.json';
