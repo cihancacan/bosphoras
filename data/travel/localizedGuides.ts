@@ -1,3 +1,4 @@
+import aspen from './localized/aspen.json';
 import stMoritz from './localized/st-moritz.json';
 import tivat from './localized/tivat.json';
 import melides from './localized/melides.json';
@@ -49,7 +50,7 @@ export type LocalizedGuide={
 };
 export function isEditorialLocale(locale:string):locale is EditorialLocale{return locale==='ru'||locale==='ar';}
 const drafts:Record<EditorialLocale,Record<string,LocalizedGuide>>={ru:ruDrafts,ar:arDrafts};
-const localized:Record<string,Partial<Record<EditorialLocale,LocalizedGuide>>>={'desaru-coast':desaru,istanbul,paris,bodrum,antalya,dubai,'saint-tropez':saintTropez,bali,phuket,'new-york':newYork,miami,'los-angeles':losAngeles,'courchevel-1850':courchevel,megeve,'val-disere':valDisere,verbier,gstaad,zermatt,'saint-barthelemy':saintBarthelemy,'porto-cervo':portoCervo,mustique,monaco,'saint-jean-cap-ferrat':capFerrat,'cap-dantibes':capDAntibes,'lake-como':lakeComo,capri,positano,ravello,mykonos,antiparos,ibiza,formentera,deia,'port-andratx':portAndratx,comporta,melides,tivat,'st-moritz':stMoritz};
+const localized:Record<string,Partial<Record<EditorialLocale,LocalizedGuide>>>={'desaru-coast':desaru,istanbul,paris,bodrum,antalya,dubai,'saint-tropez':saintTropez,bali,phuket,'new-york':newYork,miami,'los-angeles':losAngeles,'courchevel-1850':courchevel,megeve,'val-disere':valDisere,verbier,gstaad,zermatt,'saint-barthelemy':saintBarthelemy,'porto-cervo':portoCervo,mustique,monaco,'saint-jean-cap-ferrat':capFerrat,'cap-dantibes':capDAntibes,'lake-como':lakeComo,capri,positano,ravello,mykonos,antiparos,ibiza,formentera,deia,'port-andratx':portAndratx,comporta,melides,tivat,'st-moritz':stMoritz,aspen};
 export function getLocalizedGuide(slug:string|undefined,locale:string):LocalizedGuide|undefined{
  if(!slug||!isEditorialLocale(locale))return undefined;
  const data=localized[slug]?.[locale]||drafts[locale][slug];if(!data)return undefined;
