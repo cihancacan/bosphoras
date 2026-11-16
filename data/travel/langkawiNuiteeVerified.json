@@ -1,0 +1,23 @@
+{
+  "destination": "langkawi",
+  "destinationNumber": 87,
+  "method": "Public Bosphoras Nuitée exact active property detail and verified Malaysian property identity",
+  "hotels": [
+    {
+      "name": "The Datai Langkawi",
+      "id": "lp20ce5"
+    },
+    {
+      "name": "Four Seasons Resort Langkawi",
+      "id": "lp35c14"
+    },
+    {
+      "name": "The Ritz-Carlton, Langkawi",
+      "id": "lpa8fa9"
+    },
+    {
+      "name": "The St. Regis Langkawi",
+      "id": "lp8afb8"
+    }
+  ]
+}
