@@ -62,6 +62,8 @@ import { getNuiteeWhiteLabelSearchHref } from '@/lib/travel/nuiteeWhiteLabel';
 import { travelEditorial } from '@/data/travel/editorial';
 import { IstanbulFlagship } from '@/components/travel/IstanbulFlagship';
 import { FeaturedCityGuide } from '@/components/travel/FeaturedCityGuide';
+import { LocalizedFeaturedCityGuide, LocalizedGuideSchema } from '@/components/travel/LocalizedFeaturedCityGuide';
+import { getLocalizedGuide,isEditorialLocale,isLocalizedGuideReviewed } from '@/data/travel/localizedGuides';
 import { EditorialProse } from '@/components/travel/EditorialProse';
 import { featuredCityGuide } from '@/data/travel/featuredCityGuides';
 import { kohSamuiFaq } from '@/data/travel/kohSamuiFaq';
@@ -240,6 +242,7 @@ function heading(locale: TravelLocale, category: TravelCategory, name: string) {
   return keyword + (locale === 'en' ? ' in ' : locale === 'fr' ? ' à ' : locale === 'es' ? ' en ' : locale === 'it' ? ' a ' : locale === 'pt' ? ' em ' : ' · ') + name;
 }
 function isApproved(route: TravelRoute, locale: TravelLocale): boolean {
+  if(isEditorialLocale(locale)&&route.destination&&(route.kind==='destination'||(route.kind==='keyword'&&route.category==='hotels')))return isLocalizedGuideReviewed(route.destination.slug,locale);
   // Only publish after written local-language editorial review and a permitted booking path.
   // Every language remains browseable in preview while unapproved pages are noindex.
   if (route.kind === 'keyword' && route.destination && route.category) {
@@ -254,6 +257,14 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
   const route = resolveTravelRoute(parts);
   if (!route) return { title: 'Not found', robots: { index: false } };
   const t = travelText(locale);
+  const localizedGuide=getLocalizedGuide(route.destination?.slug,locale);
+  if(localizedGuide&&(route.kind==='destination'||(route.kind==='keyword'&&route.category==='hotels'))){
+    const title=route.kind==='keyword'?localizedGuide.hotelSeoTitle:localizedGuide.seoTitle;
+    const canonical=ORIGIN+travelHref(locale,route.slug);
+    const ready=isApproved(route,locale);
+    const languages=Object.fromEntries(travelLocaleCodes.filter(code=>isApproved(route,code)).map(code=>[travelText(code).hreflang,ORIGIN+travelHref(code,route.slug)]));
+    return {title:title+' | Bosphoras Luxury Stays',description:localizedGuide.seoDescription,alternates:{canonical,...(ready?{languages}:{})},openGraph:{title,description:localizedGuide.seoDescription,url:canonical,siteName:'Bosphoras Luxury Stays',type:'website'},robots:{index:ready,follow:true}};
+  }
   const isFlagship = route.kind === 'keyword' && route.destination?.slug === 'istanbul' && route.category === 'hotels' && (locale === 'fr' || locale === 'en');
   const featureGuide = (locale === 'fr' || locale === 'en') ? featuredCityGuide(route.destination?.slug) : undefined;
   const isFeaturedHotelGuide = Boolean(featureGuide && route.kind === 'keyword' && route.category === 'hotels');
@@ -302,16 +313,17 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
 }
 export function Header({ locale, slug, limitedLocales = false }: { locale: TravelLocale; slug: string; limitedLocales?: boolean }) {
   const t = travelText(locale);
-  const hotelSearch = (locale === 'fr' || locale === 'en') && isHotelSearchAvailable();
+  const hotelSearch = (locale === 'fr' || locale === 'en' || isEditorialLocale(locale)) && isHotelSearchAvailable();
+  const hotelSearchLabel=locale==='ru'?'Найти отель':locale==='ar'?'البحث عن فندق':locale==='fr'?'Rechercher un hôtel':'Find a hotel';
   const hotelSearchUrl = getNuiteeWhiteLabelSearchHref(locale);
   const mobileLinks = [
-    ...(hotelSearch ? [{ label: locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel', href: hotelSearchUrl, featured: true }] : []),
+    ...(hotelSearch ? [{ label: hotelSearchLabel, href: hotelSearchUrl, featured: true }] : []),
     { label: t.destinations, href: travelHref(locale, 'destinations') },
     { label: t.lastMinute, href: travelHref(locale, 'last-minute') },
     { label: t.privateCollection, href: travelHref(locale, 'private-collection') },
   ];
   const mobileCategories = travelCategories.map(category => ({ label: travelKeywordTitles[category][locale], href: travelHref(locale, category) }));
-  const mobileLanguages = travelLocaleCodes.filter(code => !limitedLocales || code === 'fr' || code === 'en').map(code => ({
+  const mobileLanguages = travelLocaleCodes.filter(code => !limitedLocales || code === 'fr' || code === 'en' || Boolean(getLocalizedGuide(slug.split('/').pop(),code))).map(code => ({
     label: code === 'pt' ? 'PT-BR' : code.toUpperCase(),
     code,
     href: travelHref(code, slug),
@@ -322,7 +334,7 @@ export function Header({ locale, slug, limitedLocales = false }: { locale: Trave
         BOSPHORAS <span className="text-[#53616b]">LUXURY STAYS</span>
       </Link>
       <nav aria-label="Travel primary navigation" className="hidden items-center gap-4 text-xs lg:flex lg:gap-6 lg:text-sm">
-        {hotelSearch && <Link href={hotelSearchUrl} rel="sponsored" className="text-[#193344]">{locale === 'fr' ? 'Rechercher un hôtel' : 'Find a hotel'}</Link>}
+        {hotelSearch && <Link href={hotelSearchUrl} rel="sponsored" className="text-[#193344]">{hotelSearchLabel}</Link>}
         <Link href={travelHref(locale,'destinations')} className="hover:text-[#193344]">{t.destinations}</Link>
         <Link href={travelHref(locale,'last-minute')} className="hover:text-[#193344]">{t.lastMinute}</Link>
         <Link href={travelHref(locale,'private-collection')} className="hover:text-[#193344]">{t.privateCollection}</Link>
@@ -333,7 +345,7 @@ export function Header({ locale, slug, limitedLocales = false }: { locale: Trave
       {travelCategories.map(category => <Link key={category} className="shrink-0 hover:text-[#193344]" href={travelHref(locale,category)}>{travelKeywordTitles[category][locale]}</Link>)}
     </nav>
     <nav aria-label="Travel language versions" className="mx-auto hidden max-w-7xl flex-wrap gap-x-3 gap-y-2 px-5 pb-4 text-xs lg:flex">
-      {travelLocaleCodes.filter(code => !limitedLocales || code === 'fr' || code === 'en').map(code => <Link key={code} href={travelHref(code,slug)} className={code === locale ? 'text-[#193344] underline underline-offset-4' : 'text-[#53616b] hover:text-[#193344]'} lang={travelText(code).hreflang} hrefLang={travelText(code).hreflang}>{code === 'pt' ? 'PT-BR' : code.toUpperCase()}</Link>)}
+      {travelLocaleCodes.filter(code => !limitedLocales || code === 'fr' || code === 'en' || Boolean(getLocalizedGuide(slug.split('/').pop(),code))).map(code => <Link key={code} href={travelHref(code,slug)} className={code === locale ? 'text-[#193344] underline underline-offset-4' : 'text-[#53616b] hover:text-[#193344]'} lang={travelText(code).hreflang} hrefLang={travelText(code).hreflang}>{code === 'pt' ? 'PT-BR' : code.toUpperCase()}</Link>)}
     </nav>
   </header>;
 }
@@ -343,7 +355,7 @@ export function Footer({ locale }: { locale: TravelLocale }) {
     <div className="mx-auto max-w-7xl px-5 py-12 grid gap-8 md:grid-cols-3 text-sm">
       <section><p className="font-semibold tracking-[0.17em] uppercase">Bosphoras Luxury Stays</p><p className="text-[#193344] mt-3">{t.slogan}</p><p className="text-[#53616b] mt-3">{t.value}</p></section>
       <nav aria-label="Travel collections"><p className="font-semibold mb-3">{t.collections}</p><div className="grid gap-2">{travelCategories.map(category => <Link key={category} href={travelHref(locale,category)}>{travelKeywordTitles[category][locale]}</Link>)}</div></nav>
-      <section><p className="font-semibold mb-3">{t.booking}</p><p className="text-[#53616b]">{t.draft}</p><p className="mt-4"><Link className="underline" href="/mentions-legales">Mentions légales</Link> · <Link className="underline" href="/confidentialite">Confidentialité</Link> · <Link className="underline" href={locale === 'en' ? '/en/travel/credits' : '/travel/credits'}>{locale === 'en' ? 'Photo credits' : 'Crédits photo'}</Link></p></section>
+      <section><p className="font-semibold mb-3">{t.booking}</p><p className="text-[#53616b]">{t.draft}</p><p className="mt-4"><Link className="underline" href="/mentions-legales">{locale==='ru'?'Правовая информация':locale==='ar'?'المعلومات القانونية':'Mentions légales'}</Link> · <Link className="underline" href="/confidentialite">{locale==='ru'?'Конфиденциальность':locale==='ar'?'الخصوصية':'Confidentialité'}</Link> · <Link className="underline" href={locale === 'en' ? '/en/travel/credits' : '/travel/credits'}>{locale==='ru'?'Авторы фотографий':locale==='ar'?'حقوق الصور':locale === 'en' ? 'Photo credits' : 'Crédits photo'}</Link></p></section>
     </div>
     <p className="border-t border-[#e1e5e5] py-5 px-5 text-center text-xs text-[#53616b]">© Bosphoras · The World, Through Local Eyes</p>
   </footer>;
@@ -603,6 +615,13 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
     </div>;
   }
   const selectedCity = featuredCityGuide(destination?.slug);
+  const localGuide=getLocalizedGuide(destination?.slug,locale);
+  if(selectedCity&&localGuide&&isEditorialLocale(locale)&&(route.kind==='destination'||(route.kind==='keyword'&&category==='hotels'))){return <div lang={locale} dir={locale==='ar'?'rtl':'ltr'} className="min-h-screen bg-[#f8f5ee]">
+      <LocalizedGuideSchema city={selectedCity} data={localGuide} locale={locale} path={route.slug}/>
+      <Header locale={locale} slug={route.slug} limitedLocales/>
+      <LocalizedFeaturedCityGuide city={selectedCity} data={localGuide} locale={locale} variant={route.kind==='destination'?'destination':'hotels'}/>
+      <Footer locale={locale}/>
+    </div>;}
   if (selectedCity && (locale === 'fr' || locale === 'en') &&
       (route.kind === 'destination' || (route.kind === 'keyword' && category === 'hotels'))) {
     return <div lang={t.hreflang} dir="ltr" className="min-h-screen bg-[#f8f5ee]">
