@@ -619,7 +619,7 @@ export function FeaturedCityGuide({ city, locale, variant }: {city:FeaturedCityG
     {city.slug==='desaru-coast' && approvedPhotos.length>0 && <section id="panoramas-desaru-coast" className="scroll-mt-24 bg-[#e6eeeb] py-16 sm:py-24">
       <div className="mx-auto max-w-7xl px-5">
         <p className="text-xs font-semibold uppercase tracking-[.22em] text-[#806944]">{fr?'Desaru Coast · littoral de Johor':'Desaru Coast · Johor shoreline'}</p>
-        <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Le littoral de Johor, entre plages et nature.':'Johor's coastline, between beaches and nature.'}</h2>
+        <h2 className="mt-4 max-w-4xl font-sans font-normal text-3xl leading-tight sm:text-5xl">{fr?'Le littoral de Johor, entre plages et nature.':"Johor’s coastline, between beaches and nature."}</h2>
         <div className="mt-10 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">{approvedPhotos.slice(0,9).map((photo,index)=><CityPhoto key={photo.src} photo={photo} locale={locale} priority={index===0}/>)}</div>
       </div>
     </section>}
