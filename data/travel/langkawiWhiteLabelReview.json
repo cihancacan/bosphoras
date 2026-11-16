@@ -1,0 +1,1545 @@
+{
+  "destination": "langkawi",
+  "source": "https://bosphoras.nuitee.link",
+  "status": "review_only_not_released",
+  "matches": [
+    {
+      "editorialName": "The Datai Langkawi",
+      "supplierName": "The Datai Langkawi",
+      "hotelId": "lp20ce5",
+      "country": "MY",
+      "address": "Jalan Teluk Datai",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "detailIdentityVerified": true
+    },
+    {
+      "editorialName": "Four Seasons Resort Langkawi",
+      "supplierName": "Four Seasons Resort Langkawi",
+      "hotelId": "lp35c14",
+      "country": "MY",
+      "address": "Jalan Tanjung Rhu Mukim Ayer, Langkawi, Kedah, 07000",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "detailIdentityVerified": true
+    },
+    {
+      "editorialName": "The Ritz-Carlton, Langkawi",
+      "supplierName": "The Ritz-Carlton, Langkawi",
+      "hotelId": "lpa8fa9",
+      "country": "MY",
+      "address": "Jalan Pantai Kok",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "detailIdentityVerified": true
+    },
+    {
+      "editorialName": "The St. Regis Langkawi",
+      "supplierName": "The St. Regis Langkawi",
+      "hotelId": "lp8afb8",
+      "country": "MY",
+      "address": "The St Regis Langkawi, Jalan Beringin",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "detailIdentityVerified": true
+    }
+  ],
+  "photos": [
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/139838549.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-1.webp",
+      "webpBytes": 141814,
+      "webpPixels": [
+        1050,
+        700
+      ],
+      "webpSHA256": "48a3bd50f843ae449f805ea0f965c468dbef5c157e0fa732134e7d926b18d9a4",
+      "sourceSHA256": "992dc4a037c4262ce47bd0a11571dd23458e26da182390b8fbe757f64c28f0bb"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/139838224.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-3.webp",
+      "webpBytes": 136610,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "fe9c19d6cb923dc797e51267e90175e90cde160d043f765389d7b84de9f6e9c2",
+      "sourceSHA256": "e7bdbd9a09331b5afe82dff89c7c4a189283fb8cdcd23e257f3a840dd4e13c90"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/192164328.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-4.webp",
+      "webpBytes": 139080,
+      "webpPixels": [
+        1050,
+        701
+      ],
+      "webpSHA256": "f464f2bb858a32e66e11db5770f878954b9cd84381db391207b861f40b3cbfef",
+      "sourceSHA256": "7648e8e04d1eee70900779e2113b054bd7d4a805787a18b23f1cf372236bef85"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/139836701.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-6.webp",
+      "webpBytes": 147510,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "9f0be7b15a62387cfd09c87d5ef8c7c45937cb0f3d13ee542f79e30a6062dda0",
+      "sourceSHA256": "cfdb9682592cda70ddc7afdcaaa0055354ad178e8c76f2b2876ea74fba643822"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/139838230.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-7.webp",
+      "webpBytes": 75410,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "78acd2fcb327d8ef961129524c08f22a327027e8ea493b0754df77b180031781",
+      "sourceSHA256": "86ea09df6de082ce66ccfec3dfa7e85ded283ca1e0ad3f098187fe839e460789"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/192164770.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-8.webp",
+      "webpBytes": 137574,
+      "webpPixels": [
+        1200,
+        801
+      ],
+      "webpSHA256": "cac0f85722b6e88f95975c6a949ccbf3d5faef8cc3ca0729b11cdf3c9cfd64cb",
+      "sourceSHA256": "7afbf0b1b07fe03dd640e785002905e0ca25449f079afd3f40fdf1676d08a333"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/192164807.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-9.webp",
+      "webpBytes": 114858,
+      "webpPixels": [
+        1200,
+        801
+      ],
+      "webpSHA256": "ce1b69045e8365c434b3d080772284a701805af6bb23ceb16a054efd51d50d9a",
+      "sourceSHA256": "3deafe0ca531cc9c8a92682372a82e8e44df2b91ec2244cf5f87bd442016bb43"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/192164915.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-10.webp",
+      "webpBytes": 113848,
+      "webpPixels": [
+        1200,
+        801
+      ],
+      "webpSHA256": "46af6681e0f6dfe266dea1a41559020d7c6c0a3d11e8ddbf22a3fc268a87d2eb",
+      "sourceSHA256": "6e2f09551658fe52f92281a83b59724d54ed6997368c478c9ec4775c32da1e33"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/193409309.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-11.webp",
+      "webpBytes": 104578,
+      "webpPixels": [
+        1200,
+        801
+      ],
+      "webpSHA256": "5d8ad43569f7bf26c795bb4121a0b8e2e3519d442f117be548c2d194d5bc7a6c",
+      "sourceSHA256": "85f0041dc48179f9c7bd56311a0fde87803515c9773b77bb98b2a01b0bb133ca"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/139838528.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-13.webp",
+      "webpBytes": 141464,
+      "webpPixels": [
+        1200,
+        726
+      ],
+      "webpSHA256": "2c4cf50c04936e3c1292664f098a7c25c80b23577004eb49e559cc586e9ebf2c",
+      "sourceSHA256": "08702d070eb560f3bd420517839ae05d49698670bbd13c486b765993085fecc7"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/192164780.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-14.webp",
+      "webpBytes": 140282,
+      "webpPixels": [
+        1200,
+        801
+      ],
+      "webpSHA256": "90307d614dc40f38132cfb894ae5db774302a3d4608048089b36005b8bfb7d35",
+      "sourceSHA256": "7a3acfa2fb91ad5e5e25ccccd8ed4fc58ff85b7da71b00a6c94a14b4f2c5466a"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/273011506.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-15.webp",
+      "webpBytes": 88756,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "06c93394e864251682dd238735dbd5c6d0c94e989ec9485ee0e07df1955f8bc7",
+      "sourceSHA256": "492d8d9aa8841cd37f0623a36e108af0ad0c555c546ddebe38aa784c1f5a6ccd"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/273011242.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-16.webp",
+      "webpBytes": 148772,
+      "webpPixels": [
+        1050,
+        700
+      ],
+      "webpSHA256": "2c57a1a20c11e8e3228f9a92aecc0961225082257544e2193bf58f1738fd385a",
+      "sourceSHA256": "ab5ebea8bcb0d01615497be7267eb7707b71ebb9c99d1af70d75e6971e9ebf93"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/139838226.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-17.webp",
+      "webpBytes": 123118,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "458bf9fca57e30a24466647595112eac075dff1f06e18c37a887602e89e8e88c",
+      "sourceSHA256": "bec72c3202850a813ae9391ff15e9f267dd2bcfd9a1a9a97775cfd800666f9d9"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/139838238.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-18.webp",
+      "webpBytes": 147772,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "ecf2c918ca9e0f98b9c4bdb3c4257761b330b9bce7453dc345f4ecf0ab107573",
+      "sourceSHA256": "26a9c4ca8ef9a0d250c1ab707bdb2154af7305e6baa74ddc1a8fccef74f46bec"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/273011310.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-19.webp",
+      "webpBytes": 127284,
+      "webpPixels": [
+        1200,
+        799
+      ],
+      "webpSHA256": "5725ac28c3bb647be80b1d79d54c39c5f412e210f924334e863d6191ede5ba44",
+      "sourceSHA256": "d10c554cd522966772ad32e697ff1e81fd91a6ba61a2c0284ce852f3914a3fa6"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/273011267.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-20.webp",
+      "webpBytes": 113748,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "402394e461b723fc532d6bc2349dd99c1d4529cd6df190cd76b85e8d6928e36e",
+      "sourceSHA256": "4c84c2a3001762072522f1eeaa62cf13576a6cc34be53784f777cb39168b4fc3"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/192164928.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-21.webp",
+      "webpBytes": 143650,
+      "webpPixels": [
+        1200,
+        799
+      ],
+      "webpSHA256": "3b713868c7052f6fdfeb73eb0c8254ad72e63d9bed5f16430f1510546c71deff",
+      "sourceSHA256": "fc74175d3a6ffd3b1ebfb991f2219f9eb6d6bbe325dfca1d27dbdb3781d4c19a"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "supplierId": "lp20ce5",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp20ce5",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/192164729.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/datai-review-22.webp",
+      "webpBytes": 144586,
+      "webpPixels": [
+        900,
+        599
+      ],
+      "webpSHA256": "498d9590093f479a7c0e57fad7b69351b30d7bafcb884bf8c29588a0de18ba58",
+      "sourceSHA256": "d2d5b286068f5d152caed63c28604fa2dd705c08bf217b951254ffb572ca20aa"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_12216291_z.jpg",
+      "caption": "building",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-1.webp",
+      "webpBytes": 139724,
+      "webpPixels": [
+        1000,
+        723
+      ],
+      "webpSHA256": "21d02825c3506ed7e00311c1e34ab953b1978aecb19900fefa1c3271dbceae39",
+      "sourceSHA256": "19064b965c67c2e8991b088f29332cd545de529eed50508c477e229efe324655"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_41e771f8_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-2.webp",
+      "webpBytes": 148064,
+      "webpPixels": [
+        1000,
+        667
+      ],
+      "webpSHA256": "3b3c665800122a7b696890eba91c10f6c542ccbaa9ecddfec621ef2c159fea6a",
+      "sourceSHA256": "2dce3eddfb091b8b3f1098aa596a84ab4f688ca263695bb76e7d1d8dcacb0a3b"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_cb377680_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-3.webp",
+      "webpBytes": 147450,
+      "webpPixels": [
+        1000,
+        644
+      ],
+      "webpSHA256": "3d0056f165d0460ed43eb0b928837554072f2d5d898dc9d67702a6aa8a8ed30c",
+      "sourceSHA256": "5c0616910d0af7b3afe6cbf251ec498c4f4ec8bb5d536e4f4805a41a80768b80"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_4d559d22_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-4.webp",
+      "webpBytes": 144186,
+      "webpPixels": [
+        1000,
+        638
+      ],
+      "webpSHA256": "813cccc08d19ab6fd1b8ecaddfa18909d0e492bee3ae40a66214749e1227d146",
+      "sourceSHA256": "c8ceaae9d0147798de9edb57175e6941b980c85427eb39bd352ecdeb3e2f950a"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_71ba9289_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-5.webp",
+      "webpBytes": 60390,
+      "webpPixels": [
+        1000,
+        652
+      ],
+      "webpSHA256": "ab76b2a3781fa97bab4531d179b5bb51013d3797f9a831dc458116c32b5683a3",
+      "sourceSHA256": "9e5120bb3c7d8c1d088cbf6016271f3618f21a5cfba2edba09c54a5d4b2034b2"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_051f40cf_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-6.webp",
+      "webpBytes": 116596,
+      "webpPixels": [
+        1000,
+        667
+      ],
+      "webpSHA256": "b5d85d76a114369d2eb6d0f7fff9ce7e2423a8e3828f0e0190cc8dc770ef5169",
+      "sourceSHA256": "2391748deee768ee6b50637d72421ec5d47cb3d0466789873a563813045f993d"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_a623a46b_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-7.webp",
+      "webpBytes": 121918,
+      "webpPixels": [
+        1000,
+        667
+      ],
+      "webpSHA256": "9573fecdd0b33b765e4f2c7e27cf900f89c94886143c99dc95d092f5b8a3dee7",
+      "sourceSHA256": "f98f534f7762afa84e41a9b908514fd19c80b6cabf6875693854c84328ad55fb"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_d4b30b12_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-8.webp",
+      "webpBytes": 144780,
+      "webpPixels": [
+        1000,
+        655
+      ],
+      "webpSHA256": "ea34228ee2091c1568d5ef8611010036b2bbe76dd1d3bfbf0912fd23f95b3ea0",
+      "sourceSHA256": "60b82c22f20edb9e850f6b78d416cd54ce99ee4ba2a49e3fe85092101fed54e3"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_39a28b6f_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-9.webp",
+      "webpBytes": 119106,
+      "webpPixels": [
+        1000,
+        663
+      ],
+      "webpSHA256": "985ab63f31cce35a1310fcba370b881242d7dfd1425d9568d0cc0b7e7d91a500",
+      "sourceSHA256": "9a82d75483d187a64a36c7d58985ee9342df557cc7e976c78ec73948edc9a6ae"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_6bc12232_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-10.webp",
+      "webpBytes": 72178,
+      "webpPixels": [
+        1000,
+        667
+      ],
+      "webpSHA256": "0013494ee18f07d945ccc438cb830a88ea79947de0d261b1fef3b4a58fb91610",
+      "sourceSHA256": "aaf90af37e7a16f9fa099cff17e78f3b0bb0a345385680d5f3cce09979c2363d"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_bcc88533_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-11.webp",
+      "webpBytes": 82938,
+      "webpPixels": [
+        1000,
+        667
+      ],
+      "webpSHA256": "05e887d2f3ff879507ee60adf2a1a2b0cac079083db1ed8731d16da1d68e6380",
+      "sourceSHA256": "05189d999ed7bc57409e459d2b9de3989a1a4381e54b362b25c3607d26a120a6"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_45c2b548_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-12.webp",
+      "webpBytes": 141688,
+      "webpPixels": [
+        900,
+        594
+      ],
+      "webpSHA256": "3e8a8d04fc11e994dbb20f6bc26af30ca7e6aa164259eb92b5a453b9116f2301",
+      "sourceSHA256": "49c06db707c334c1d96da5988414a02e91440c6965e48d28bc902bb8fc108a7a"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_05c69669_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-13.webp",
+      "webpBytes": 116966,
+      "webpPixels": [
+        1000,
+        654
+      ],
+      "webpSHA256": "e9ac30477473370a26d636cc872dd5f6158c3931c04b2c4e20ed19cf1f47415c",
+      "sourceSHA256": "109df43a5ee1d9169ac0ec1ef62c15b8f13d8e9e3a8b28b7fd9c6d920c28bb37"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_f9135e32_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-14.webp",
+      "webpBytes": 110114,
+      "webpPixels": [
+        1000,
+        667
+      ],
+      "webpSHA256": "dcb62993f3f0b9927f4436ec18c5415fe053673bceef1e83af6848ae5bf3fe54",
+      "sourceSHA256": "edf48b81856f4df9a07d73e07500817479dd2a2068614f15ce12524ea0305803"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_b49d8cbc_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-15.webp",
+      "webpBytes": 122048,
+      "webpPixels": [
+        1000,
+        677
+      ],
+      "webpSHA256": "be7c47683d4442862f3417280450640af8877c02ee25ceaca6608ea3bf2abbed",
+      "sourceSHA256": "970c4104a786772ba561dcd1ea99c9448175d64a4ee34b9177cd0204c3706eba"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_a9d88a25_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-16.webp",
+      "webpBytes": 71182,
+      "webpPixels": [
+        1000,
+        667
+      ],
+      "webpSHA256": "05c9a83aa629cf7734756173663da79f3dd6782ed636e98685450480b37f519a",
+      "sourceSHA256": "43223736c6a972100a699332bcfbd6cc121c94041f0ba5fb1bae86b86a0faf8e"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_8aa55b7f_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-17.webp",
+      "webpBytes": 146128,
+      "webpPixels": [
+        1000,
+        667
+      ],
+      "webpSHA256": "18411e931f36cbe11b4777e30c4cff8d936d083fd34141479bac909f5c87875c",
+      "sourceSHA256": "f120a20d57d5c6c798ca9f0a6fc4b979e1646048c72e632b6d3bd3ed767b112f"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_135e2d0d_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-18.webp",
+      "webpBytes": 133802,
+      "webpPixels": [
+        1000,
+        654
+      ],
+      "webpSHA256": "f5ba28802c4c4693b988c975e30e898aa066182f1549106a5f06946b629643c7",
+      "sourceSHA256": "4451424d8ea0f8b65e4847f4e867576cec2234d0542d8f46e94e3825e1f9bee7"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_3a1ec93c_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-19.webp",
+      "webpBytes": 145318,
+      "webpPixels": [
+        1000,
+        749
+      ],
+      "webpSHA256": "9cb2b2011845c713d61bcc25a12a087d6b36d0ba24455c4d7f0e61390945fa0d",
+      "sourceSHA256": "762270ea1b4831570f15df192b7972f852e9adec54e06c08bc03a3a92578a475"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_45fa7bcd_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-20.webp",
+      "webpBytes": 114754,
+      "webpPixels": [
+        1000,
+        667
+      ],
+      "webpSHA256": "ebb5cfaae82f73f9cea04378d54ac99437fc546402cd89991661795d560b9f68",
+      "sourceSHA256": "ea73495e87cb5e9feb299865f32e29f7de4af5be24522a756cd67725da1778fb"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_04dc7b73_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-21.webp",
+      "webpBytes": 37612,
+      "webpPixels": [
+        1000,
+        665
+      ],
+      "webpSHA256": "57e54bee1435c1dda1ceffde031b4f4041a7f2457b65f1423957f26b5ec67043",
+      "sourceSHA256": "b45aaf2a5734496f92d0e40a7be2dbde4c2deccb0aabf8ea0880f00d53eac582"
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "supplierId": "lp35c14",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp35c14",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/ex_08cf3d86_z.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/fourseasons-review-22.webp",
+      "webpBytes": 146220,
+      "webpPixels": [
+        800,
+        533
+      ],
+      "webpSHA256": "0f2290e96f8a570e07d94e67007c6fe9a973f3446a0875bced4b20802fd9427b",
+      "sourceSHA256": "a44aaafec996d415ca049512c1110b5efbe25f2b8912054ca1695ae4a3ebef52"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/463620124.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-1.webp",
+      "webpBytes": 123396,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "70b739c7b05b77d7bb87d57049b338b2f73d1e832721988e2a6b3eebebc0ca55",
+      "sourceSHA256": "3b13d14f61064dd5e8e10924e41e1339192aecf0a62cddd59df85ff8390bcc5e"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/479655475.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-2.webp",
+      "webpBytes": 116854,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "12f1a8991cedf8dc76caf9330447cb56098c152ec098ac92dfd1111228739f30",
+      "sourceSHA256": "5a3142463a45576c7bd156ba99bc657b01e31ed464faa457b67107a9d3710f35"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/479136787.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-3.webp",
+      "webpBytes": 97710,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "910fd61446e3f65d88933a997546ebcd7d2d2ddbf684e3dec4daf0e5fb6bd40d",
+      "sourceSHA256": "85f7f7666140c9eebbe5eae5c65c82c2ee9d5f00565fc6835be2fecff6230056"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/547433981.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-4.webp",
+      "webpBytes": 121422,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "c84c2a5d0927b24928d7d0ce3595090669db7d2f2a681edd7e47f6286304b25f",
+      "sourceSHA256": "8176be54d3b699ce43a265f78274a3c11816a87461c8d72b83d17f047773650a"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/479136764.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-5.webp",
+      "webpBytes": 96460,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "1eb2721e6ab21527562710515343f69adc7de239fc68823f2996b1b95b85cf0e",
+      "sourceSHA256": "12fda74ba020618d0bcab142a369587ea552b3a53fd8319016ca5f8ab714b9ef"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/479136759.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-6.webp",
+      "webpBytes": 143198,
+      "webpPixels": [
+        1050,
+        700
+      ],
+      "webpSHA256": "9a0c606e405532172f2455ed8324896e9eff2e1c8849b984334a2762366d325e",
+      "sourceSHA256": "78e27d4d1e0e4054e0074d2abdc54a92ca1918a30a2cbb36e4eb80bd378319e0"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/476544090.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-7.webp",
+      "webpBytes": 76494,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "46c98e92fa858c688cc6a652f3c79917d02376b1a1842ab5f43405645250cb9e",
+      "sourceSHA256": "21b2d9afcd0f639ae05b2045c804f2e0f34653ec0264bf0c324ce30c64fc70e6"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/567293696.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-8.webp",
+      "webpBytes": 66882,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "c0999b7ba17f9e6135959be862696438992f703516ee44a0be5010841233bbbe",
+      "sourceSHA256": "f66abff690152888663a1b96a4ee8337717c83b7633a7b635967d304434bffdc"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/540914480.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-9.webp",
+      "webpBytes": 43018,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "719c987571513d51ceb2f658f0f663af41c581330aed042b25dda4fba3c2a298",
+      "sourceSHA256": "60366446103afb7c3a9309946d32a880751895bf97751b2499a5eb8cc0992da6"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/476544523.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-10.webp",
+      "webpBytes": 111236,
+      "webpPixels": [
+        1200,
+        747
+      ],
+      "webpSHA256": "a5834ddf46918c79990ec4ba773ec4123f7b10fd540c7dbf6cf1e8b8773534fc",
+      "sourceSHA256": "666b2cd7a6640539ba4e2b4aa0e7c213aac60b23d8e9bb4423fca4cf7922106b"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/591622357.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-11.webp",
+      "webpBytes": 55596,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "b075bb8e93aa4ed5e2e5798f6e1bd70e045ded9ed0e74941906ccb5a818b2e33",
+      "sourceSHA256": "fe93ffa12748ede064f1f5c5f9ad17d83da90fad8ccba0b0b25fe12bfca9162e"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/480706693.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-12.webp",
+      "webpBytes": 146006,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "5d576861cf6ddd852d0d6e07c64c2f3d3802695e2db489faf4db3fb4fbca4471",
+      "sourceSHA256": "3a3dde499a7d888017505d6c546e71bd27a5455c72327450b21ed216404b437e"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/477178251.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-13.webp",
+      "webpBytes": 147756,
+      "webpPixels": [
+        1050,
+        700
+      ],
+      "webpSHA256": "80b543ab342d73b9e57f517f66367fad08aea1d1f4a4044a67f7e1aafccb43d0",
+      "sourceSHA256": "e40fb45ed5bc66ae3ac22c854adbf5aef3190949246d29add31bce4eb7c94419"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/487530101.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-14.webp",
+      "webpBytes": 125338,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "e67e4f37d9871c00e40f202e0428c694bd476ee432459780c2a47d2032a38d8c",
+      "sourceSHA256": "e205e8272b95d6855d58f398c83d1b804e671ef59dfa42630d8b2d4143924bcd"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/540914492.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-15.webp",
+      "webpBytes": 121486,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "742b00ba6716e67d4c7c98e7e05968270db944c19255540aa5a83fdca8fbc26f",
+      "sourceSHA256": "864f85608fbfe53c12e87413307d5efc2bb1bf3b241851d95af01a6f24f75eb8"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/488276559.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-16.webp",
+      "webpBytes": 68508,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "a5d58efe1ed72b549b7784c41acf81f2865949920e55085e81051b9e85047237",
+      "sourceSHA256": "c46cf204ea7f850a6a124ed9487d0c9698223cc964e0a9cc99e5627ba3ef8517"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/540914485.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-17.webp",
+      "webpBytes": 92434,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "b747ab6181dde5181b868dc0fcd7b2cb0c3a14cc8502f3f5ba59fc0f3a464ef3",
+      "sourceSHA256": "60442551772dd1ce3035d613368dfad7828f9e84326a70a54194566bfb941cec"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/540914486.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-18.webp",
+      "webpBytes": 137792,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "d11a2cfca0962ad6bc973c3a318225ade0fd48a1ef171f383510d94a1d1a26cf",
+      "sourceSHA256": "9d1b193699ab0300c6f4937bd1acbe50dfb8340f4eefb7e137d027f152132875"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/480703885.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-19.webp",
+      "webpBytes": 138610,
+      "webpPixels": [
+        900,
+        609
+      ],
+      "webpSHA256": "14d7abfccf5ba666a86de446758cbe21ca2a7485dfae745a766e92f45a08b7b9",
+      "sourceSHA256": "00aba862c8091651c9d48fdc3100a3e27e483eef44e68f3bfc58190d1486a2bd"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/591622350.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-20.webp",
+      "webpBytes": 100878,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "17ce0aa2da4227ea4f7dbe6f55193c4ae77d0b4ba90df1a01648bbce7468595d",
+      "sourceSHA256": "a2732b4c70cb24ccf2ea8ef2a417570a5577e4910325acaa6bddaf973589ddc3"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/591622366.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-21.webp",
+      "webpBytes": 147204,
+      "webpPixels": [
+        900,
+        600
+      ],
+      "webpSHA256": "970ed3d5936a5177397967ed08f437edd1c0892b809dc82280fb394ddcf02194",
+      "sourceSHA256": "781233f2b4e6e7058c7c768bf2840696a4f805e5db2c1bd87080e76dab8569d4"
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "supplierId": "lpa8fa9",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lpa8fa9",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/476540994.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/ritz-review-22.webp",
+      "webpBytes": 124168,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "61d1cef1aa1367bf0b866f803de4a014bd4283d03acf354e0bee23afc561fed6",
+      "sourceSHA256": "610eb8bbc3a82ed9cd134c1a7c24be7b4cc0d64ed7c996348d49ace3f18de78b"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/513905566.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-1.webp",
+      "webpBytes": 66598,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "ae68953a0dcce3eec5b0ede0546aa43da666c5d2ce1606729d154638e35f612f",
+      "sourceSHA256": "b2afbcdf1876e766d47bff39ddd2be979bb5136480d43c79d3ad473a0979c9e1"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/469213136.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-2.webp",
+      "webpBytes": 113322,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "563bd00d7759ee35c0e3de7bcaacfb0af09d9743a2c794a100373d6d623ca0cd",
+      "sourceSHA256": "b87ffbb4f9b530c521ee8296ac42a25dc5d099ee23d36ea8114384d3671f1590"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/469213116.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-3.webp",
+      "webpBytes": 86512,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "e00b0dbcbed79d57e8367139b21bb67e385c48bcba6dfabdd64e959e69a12782",
+      "sourceSHA256": "2c1b82cc93c7e97d4704e41b1ae669120644d1d0709fcf38339b8b4ce91378bb"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/469213127.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-4.webp",
+      "webpBytes": 31078,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "cc93f4e5e3b230eaec0379ce40dcef2745b38440d59f4f34fdd0f99b2e7611f6",
+      "sourceSHA256": "a5f00fda3902478b3010ff2d75a4042fbcf7af49575a7458ee39d32c4eebcf1b"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/513905589.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-5.webp",
+      "webpBytes": 138962,
+      "webpPixels": [
+        1050,
+        700
+      ],
+      "webpSHA256": "06489a161aec5004bdd9e8c71b0c6d90e3aef9c8249a3e96cfa2c686f8f61007",
+      "sourceSHA256": "f454ba8621f2ef1d9e71d4edccacf74fe5a0eb9dfd74b867887232567b397a41"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/512244401.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-6.webp",
+      "webpBytes": 33928,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "29bb0b462da4a94a1358a727c378155837bef22340b651020755c88e17c7b644",
+      "sourceSHA256": "24a1c736971f61b6419bbcec71514a0a1c32c4688fb9ff7a012adadc53b3713b"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/513905607.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-7.webp",
+      "webpBytes": 149750,
+      "webpPixels": [
+        1050,
+        700
+      ],
+      "webpSHA256": "772d6ce0d84e8fff092483a88045bb567090706c4b7de252b8c0b8bc770448e5",
+      "sourceSHA256": "862e4916392c432473e960ff5326e8cb058d41f304b722cd89060841f967070f"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/469213140.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-8.webp",
+      "webpBytes": 109522,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "a58a6b31294453ba32149d43d0f8eea741f8a17cac1020a5957672c97a6b9ca7",
+      "sourceSHA256": "82d0e607064f808813384cb3da371d0660fba3fe446096f588e5582204db333f"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/469213161.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-9.webp",
+      "webpBytes": 100042,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "bdc4b58586e646a453916186cc3f45ea89c4c4f7dacc2ff49ba26f577321cab6",
+      "sourceSHA256": "ac1c8df2f50ac83366398dbb4536982a51d97f9d807de941c548f224b4d6bf5c"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/469213124.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-10.webp",
+      "webpBytes": 94654,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "6217c4204f73c5ff2b98a76e9eab4aa93f3cd3e6d675a581bf7efbeea4b527d1",
+      "sourceSHA256": "7683b98c54c94dd0927a33f3e24f2ad7b5fe7a1109a6ab085faebf074563307f"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/469213149.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-11.webp",
+      "webpBytes": 75464,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "8e0c384d641372577f63d5271119549f2e4b3620241375d15cd357b68be7650f",
+      "sourceSHA256": "4c045850a30efb2b82c8699043e658686e49486b801214266ac92880a2cb3bfb"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/469213112.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-13.webp",
+      "webpBytes": 66350,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "d6cdbc6ab4d320e380d754f639f9c01eb16dd097a065e17ab7d71b0e71787f8f",
+      "sourceSHA256": "b1f4e0ad36c7bdbb15ce133a5a8d79334b72b3190bbb9eea8b3b8f0a66d1e062"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/513905621.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-14.webp",
+      "webpBytes": 118262,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "1d66c470310cfb7642e01bb8cf1596c7c70a2b3de9dc3da42262785657df9cda",
+      "sourceSHA256": "87104473b8ac2393408fed82ae99f91a8570095adef10e7f6091523a146cb404"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/469213098.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-15.webp",
+      "webpBytes": 109614,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "72a560c9cb78299a0b9fa62ffda57a71fc06425b134d4ba7d15ac588fbb56bc6",
+      "sourceSHA256": "2f105305a3bcb6f59c9dee631a2928425b29926d82a41283eb6a11e54dfc23bf"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/469213144.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-16.webp",
+      "webpBytes": 97884,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "2c99dd0878a39c499d2cd1d295a96c6deb8a56e403a31d50eadc3db87f3b6b99",
+      "sourceSHA256": "ce54daa075511f4d880f810a1f5367412eafb1c7a8fba010a020f310a05b8564"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/469213178.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-17.webp",
+      "webpBytes": 62138,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "56a35fa5f87f40f9c646cc4c3fb16629a0009d7cbda3afa3e535ea65016cddb2",
+      "sourceSHA256": "0084c7bf5fd6d135f6d6dbf40bed511183cedbd76bf572a4b4ffcb3c4d8679be"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/469213146.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-18.webp",
+      "webpBytes": 88560,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "842f52d245fb320696dc5eb1c4ce424a60244f2ebc5d00626393428ebf6ae674",
+      "sourceSHA256": "0b7364b0de5a64c70f29d361b028de3c1e267ffd4743559c53a0b2bcbde97254"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/469213135.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-19.webp",
+      "webpBytes": 145336,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "1dfa898b47d584de5aec662f1c5893195a38c0a26adf5b60be279d89a7271c20",
+      "sourceSHA256": "14d4d4a498f955207e694d797e361738577221791a38219e68754a30a14f2d6e"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/469213139.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-20.webp",
+      "webpBytes": 92782,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "41cc68937f402da6d35c9def4adcd6b6324b3d6638da8ffd4861cb9b83d3b98c",
+      "sourceSHA256": "002f62d99b59711daae575465637052e0f708cccbdd6fee88193191cf031cfbb"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/469213132.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-21.webp",
+      "webpBytes": 81868,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "10126f88a953e537b1c4e817740444435f9df54c60d6fe87cf6a0719fb5d3eed",
+      "sourceSHA256": "7f3efb3d6709536734e0c927042ede884846340833de7d2eac8b2fac6758e318"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "supplierId": "lp8afb8",
+      "sourcePage": "https://bosphoras.nuitee.link/hotels/lp8afb8",
+      "sourceResolvedUrl": "https://nuitee-hotels.b-cdn.net/hotels/600094765.jpg",
+      "caption": "",
+      "visuallyVerified": false,
+      "commercialRightsCleared": false,
+      "localPath": "/images/travel/langkawi-premium/hotels/stregis-review-22.webp",
+      "webpBytes": 89630,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "webpSHA256": "f2fcb33d01cec94ae83bf8141b718d12be0436bae5f5731d92e827276d6f18a7",
+      "sourceSHA256": "0b01595cd58b60dc6ca29137d4cb9548ab3c7a8b89077afe91f55140fdc66c2b"
+    }
+  ],
+  "errors": [
+    {
+      "hotel": "The Datai Langkawi",
+      "error": "photo: photo threshold"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "error": "photo: photo threshold"
+    },
+    {
+      "hotel": "The Datai Langkawi",
+      "error": "photo: photo threshold"
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "error": "photo: photo threshold"
+    }
+  ],
+  "diagnostics": [
+    {
+      "hotel": "The Datai Langkawi",
+      "candidateId": "lp20ce5",
+      "details": [
+        {
+          "name": "The Datai Langkawi",
+          "country": "MY",
+          "mapped": true,
+          "deleted": false,
+          "imageCount": 87
+        }
+      ]
+    },
+    {
+      "hotel": "Four Seasons Resort Langkawi",
+      "candidateId": "lp35c14",
+      "details": [
+        {
+          "name": "Four Seasons Resort Langkawi",
+          "country": "MY",
+          "mapped": true,
+          "deleted": false,
+          "imageCount": 119
+        }
+      ]
+    },
+    {
+      "hotel": "The Ritz-Carlton, Langkawi",
+      "candidateId": "lpa8fa9",
+      "details": [
+        {
+          "name": "The Ritz-Carlton, Langkawi",
+          "country": "MY",
+          "mapped": true,
+          "deleted": false,
+          "imageCount": 148
+        }
+      ]
+    },
+    {
+      "hotel": "The St. Regis Langkawi",
+      "candidateId": "lp8afb8",
+      "details": [
+        {
+          "name": "The St. Regis Langkawi",
+          "country": "MY",
+          "mapped": true,
+          "deleted": false,
+          "imageCount": 98
+        }
+      ]
+    }
+  ]
+}

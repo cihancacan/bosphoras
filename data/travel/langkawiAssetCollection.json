@@ -1,0 +1,306 @@
+{
+  "destination": "langkawi",
+  "destinationNumber": 87,
+  "status": "candidates_pending_review",
+  "previewApproved": false,
+  "productionApproved": false,
+  "destinationScenes": [
+    {
+      "key": "scene-1",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Tanjung_Rhu_Beach.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Tanjung_Rhu_Beach.jpg/1280px-Tanjung_Rhu_Beach.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Tim Parkinson",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "frCaption": "Plage de Tanjung Rhu",
+      "enCaption": "Tanjung Rhu beach",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/langkawi-premium/destination/scene-1.webp",
+      "webpSHA256": "5e04745dc394170b0ea43b4edb84d3e49b284db7e6b5e32fe8af24d25c2d3c97",
+      "sourceSHA256": "1eaaec67e7af727ceb0e274b27ddf204d1d5a23eeeafe013ac5165add128a7ac",
+      "webpBytes": 88308,
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-2",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Skybrige.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Skybrige.jpg/1280px-Skybrige.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Kuamiruldin",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "frCaption": "Panorama depuis le SkyBridge",
+      "enCaption": "SkyBridge panorama",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/langkawi-premium/destination/scene-2.webp",
+      "webpSHA256": "63d574e1b9ea858b37bd48b1d52d6c869a5aad059eaadd7d72dbf0603a20a045",
+      "sourceSHA256": "c2da98d35644ceb915d4d8e9ad32b706937d49b926f0e0c41ee94f5c5e6b0c28",
+      "webpBytes": 147712,
+      "webpPixels": [
+        1100,
+        733
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-3",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Langkawi_Mangrove_Forest.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Langkawi_Mangrove_Forest.jpg/1280px-Langkawi_Mangrove_Forest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Leonardo0511",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "frCaption": "Mangrove de Kilim",
+      "enCaption": "Kilim mangrove forest",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/langkawi-premium/destination/scene-3.webp",
+      "webpSHA256": "ae78d4d15525db802a2de22431c99a2ed121cd3863f99fb1a1650d2f9a443785",
+      "sourceSHA256": "e8a5fa3d05917674660849afc5fb5aeb8f1dad94f9f846d121c32c234af01dad",
+      "webpBytes": 138640,
+      "webpPixels": [
+        800,
+        532
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-4",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pantai_Cenang,_Langkawi,_Malaysia.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Pantai_Cenang%2C_Langkawi%2C_Malaysia.jpg/1280px-Pantai_Cenang%2C_Langkawi%2C_Malaysia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Khairil Yusof  from Malaysia",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+      "frCaption": "Plage de Cenang",
+      "enCaption": "Cenang beach",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/langkawi-premium/destination/scene-4.webp",
+      "webpSHA256": "db7b84599b4e2359355fb4e93e3aec12252c33d04a09bcdae641c038b1d3cfc4",
+      "sourceSHA256": "6d81265e513664dad79f4c2ea0f825f2f33633a02eac8eec31b3b81cd1bbe07c",
+      "webpBytes": 124150,
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-5",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Langkawi_Malaysia_Pantai-Kok-Lighthouse-01.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Langkawi_Malaysia_Pantai-Kok-Lighthouse-01.jpg/1280px-Langkawi_Malaysia_Pantai-Kok-Lighthouse-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "CEphoto, Uwe Aranas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "frCaption": "Phare de Pantai Kok",
+      "enCaption": "Pantai Kok lighthouse",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/langkawi-premium/destination/scene-5.webp",
+      "webpSHA256": "125fcdd9b649c9a0f4ea506543d7adb08581311d36adcfbf8834fb20dad1ae35",
+      "sourceSHA256": "738729cd532e339aeabcc9f1f9bb9d582c1438b3bfad0776e8fa00db09f62952",
+      "webpBytes": 147124,
+      "webpPixels": [
+        1275,
+        850
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-6",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Langkawi_Malaysia_Seven-wells-03.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Langkawi_Malaysia_Seven-wells-03.jpg/1280px-Langkawi_Malaysia_Seven-wells-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "CEphoto, Uwe Aranas",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "frCaption": "Cascades de Telaga Tujuh",
+      "enCaption": "Telaga Tujuh waterfalls",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/langkawi-premium/destination/scene-6.webp",
+      "webpSHA256": "125e7499e3d70ef2898153d127b531ea337768d08f9d3d3d14287552dbb042c3",
+      "sourceSHA256": "c36ec28bfdbe3adbca8fc0b4c7e19c59bc0dede6d06eb2e5ba664b46a5c56cbf",
+      "webpBytes": 145094,
+      "webpPixels": [
+        950,
+        734
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-7",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Langkawi,_Kedah,_Malaysia_-_panoramio_(16).jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Langkawi%2C_Kedah%2C_Malaysia_-_panoramio_%2816%29.jpg/1280px-Langkawi%2C_Kedah%2C_Malaysia_-_panoramio_%2816%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Andrew Harvey",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "frCaption": "Rivière Kilim",
+      "enCaption": "Kilim River",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/langkawi-premium/destination/scene-7.webp",
+      "webpSHA256": "bd00d7d9fe95a599f71df453f367834ed4a6606b9958c951354fbb6bdaf221f5",
+      "sourceSHA256": "b3723b2b2934080b3eeb87a6a2bd8bb8bf970a587d83426820a0df2aec5d19e5",
+      "webpBytes": 146032,
+      "webpPixels": [
+        1149,
+        850
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-8",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Dayang_Bunting_Marble_(56351086).jpeg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Dayang_Bunting_Marble_%2856351086%29.jpeg/1280px-Dayang_Bunting_Marble_%2856351086%29.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Mohd Khairul Hakimi Abdul Wahab",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "frCaption": "Île de Dayang Bunting",
+      "enCaption": "Dayang Bunting island",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/langkawi-premium/destination/scene-8.webp",
+      "webpSHA256": "cfb800a71b2b0f9d87606dfe87e743b8904ecaed7394e043771e747bcaad8b1a",
+      "sourceSHA256": "f611a8ff8c66992887c8bfddfda6f9079ce766f2aea6613ebf3eec1647ad9095",
+      "webpBytes": 141320,
+      "webpPixels": [
+        950,
+        650
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-9",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:The_andaman_Beach_Langkawi_-_panoramio.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/The_andaman_Beach_Langkawi_-_panoramio.jpg/1280px-The_andaman_Beach_Langkawi_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "alhafis",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "frCaption": "Côte de Datai Bay",
+      "enCaption": "Datai Bay coastline",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/langkawi-premium/destination/scene-9.webp",
+      "webpSHA256": "c2f93918411f221f0e45029b52a7dbb81476e70163465a88a82aeb8ce51ca27f",
+      "sourceSHA256": "03157aa00a7938ceddf25a2cef249737bdb4dc200ee2c31d22ad146311894cde",
+      "webpBytes": 94684,
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-10",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Cable_car_in_Langkawi_Island.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Cable_car_in_Langkawi_Island.jpg/1280px-Cable_car_in_Langkawi_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Ss6sam6",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "frCaption": "Téléphérique de Langkawi",
+      "enCaption": "Langkawi cable car",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/langkawi-premium/destination/scene-10.webp",
+      "webpSHA256": "4a82e100ea6d9e7260af429439ac25dd5f52068eae37096ed9e15f2719e08387",
+      "sourceSHA256": "9e82b39ee87d76eb13e544a90ca953ff87dec73fcbfd3561544ff827f985778b",
+      "webpBytes": 139278,
+      "webpPixels": [
+        950,
+        713
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-11",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Langkawi,_Malaysia_-_panoramio_(5).jpg",
+      "sourceResolvedUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Langkawi%2C_Malaysia_-_panoramio_%285%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "credit": "Liu Dyson",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "frCaption": "Île de Dayang Bunting",
+      "enCaption": "Dayang Bunting island",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/langkawi-premium/destination/scene-11.webp",
+      "webpSHA256": "392482736593a192a628c56bbfe6778cbaa2d6a22aaf2a044b2c0cc9ed7fe33d",
+      "sourceSHA256": "6496eb35e66a2eb883050c174b74024580e48a05e93c7aa230a01b3893742f7f",
+      "webpBytes": 142004,
+      "webpPixels": [
+        1200,
+        800
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-12",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Pantai_Cenang,_Langkawi_01.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Pantai_Cenang%2C_Langkawi_01.jpg/1280px-Pantai_Cenang%2C_Langkawi_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Nahid Sultan \n \n \n\n  \n      \n \n   This work   was made by   Nahid Sultan   and released under the license(s) stated below. Please feel free to use it for any purpose as long as you credit  Nahid Sultan  as author and follow the terms of the chosen license. If you use this work  outside  of the Wikimedia projects, I would very much like to get   a note   from you. Thanks!",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "frCaption": "Littoral de Cenang",
+      "enCaption": "Cenang coastline",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/langkawi-premium/destination/scene-12.webp",
+      "webpSHA256": "553b67a4017c568f1fafdc12e86e2449accf7e06666912213cffd65535bf9f67",
+      "sourceSHA256": "c1323433f28752edd65900517bf29c585194244d5a7201048610fa16b061b68f",
+      "webpBytes": 75666,
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-13",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Telaga_tujoh_waterfalls!.jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Telaga_tujoh_waterfalls%21.jpg/1280px-Telaga_tujoh_waterfalls%21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Sabrinakhanpoly",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "frCaption": "Cascade de Telaga Tujuh",
+      "enCaption": "Telaga Tujuh waterfall",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/langkawi-premium/destination/scene-13.webp",
+      "webpSHA256": "d6ef94045fd78533eef08f61a8190f5a9275d377ddfb2420d2039b096dbb7d50",
+      "sourceSHA256": "71b9b6968085faa49627ae608b7d02c650b044a03bee185ee7b651313977597e",
+      "webpBytes": 141990,
+      "webpPixels": [
+        1133,
+        850
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    },
+    {
+      "key": "scene-14",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Langkawi,_Kedah,_Malaysia_-_panoramio_(20).jpg",
+      "sourceResolvedUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Langkawi%2C_Kedah%2C_Malaysia_-_panoramio_%2820%29.jpg/1280px-Langkawi%2C_Kedah%2C_Malaysia_-_panoramio_%2820%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "credit": "Andrew Harvey",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+      "frCaption": "Rivière Kilim",
+      "enCaption": "Kilim River",
+      "commercialRightsCleared": true,
+      "localPath": "/images/travel/langkawi-premium/destination/scene-14.webp",
+      "webpSHA256": "b2d5b4a6759a252d6f2a6b9b3922d026efd2f397c2f2f27284c2c9f2bd575792",
+      "sourceSHA256": "28bbac378c4a9adfce78418e9f350f69f1a10ca2daf9d4797e2f7ee3ca81c387",
+      "webpBytes": 119392,
+      "webpPixels": [
+        1149,
+        850
+      ],
+      "visuallyVerified": false,
+      "previewVisualApproved": false
+    }
+  ],
+  "hotels": [],
+  "supplierMatches": [],
+  "errors": []
+}
