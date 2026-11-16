@@ -1,0 +1,3 @@
+# Russian / Arabic editorial drafts
+
+The first destination, Desaru Coast, has a manually authored translation. The remaining 87 per language are prepared from the full approved English guide data using local Helsinki-NLP OPUS-MT models (Apache-2.0) on GitHub Actions, without a paid translation API or uploading text to an inference service. These are drafts, never SEO-approved automatically. Review native-language naturalness, place names, factual details, warnings, exact hotel mapping, alt texts, mobile and RTL per destination. Preserve the original FR/EN data and only approve each translated locale after QA. GitHub runner usage applies.

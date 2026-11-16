@@ -1,0 +1,75 @@
+name: Travel Russian and Arabic editorial drafts
+on:
+  push:
+    branches: [feature/travel-guides-ru-ar]
+    paths: ['.github/workflows/travel-ru-ar-drafts.yml','scripts/export-travel-localization.cjs','scripts/translate-travel-guides.py']
+permissions:
+  contents: write
+concurrency:
+  group: travel-ru-ar-drafts
+  cancel-in-progress: false
+jobs:
+  source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22', cache: npm}
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: node -r ./scripts/register-ts.cjs scripts/export-travel-localization.cjs /tmp/travel-source.json
+      - uses: actions/upload-artifact@v4
+        with: {name: travel-translation-source, path: /tmp/travel-source.json, retention-days: 2}
+  drafts:
+    needs: source
+    strategy:
+      fail-fast: false
+      matrix:
+        locale: [ru, ar]
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - uses: actions/download-artifact@v4
+        with: {name: travel-translation-source, path: /tmp/translation}
+      - name: Install local translation engine
+        run: |
+          python -m pip install --quiet torch --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install --quiet 'transformers>=4.48,<5' 'ctranslate2>=4.5,<5' sentencepiece sacremoses
+          ct2-transformers-converter --model Helsinki-NLP/opus-mt-en-${{ matrix.locale }} --output_dir /tmp/ct2-model --quantization int8
+      - name: Translate all remaining guides offline
+        run: python -u scripts/translate-travel-guides.py --locale ${{ matrix.locale }} --source /tmp/translation/travel-source.json --model-dir /tmp/ct2-model --output /tmp/out/${{ matrix.locale }}-drafts.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: travel-draft-${{ matrix.locale }}
+          path: /tmp/out/${{ matrix.locale }}-drafts.json
+          if-no-files-found: warn
+          retention-days: 2
+  persist:
+    needs: [source,drafts]
+    if: always() && needs.source.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: feature/travel-guides-ru-ar, persist-credentials: true}
+      - uses: actions/download-artifact@v4
+        with: {pattern: 'travel-draft-*', path: /tmp/translated, merge-multiple: true}
+      - name: Save complete translated drafts only
+        shell: bash
+        run: |
+          set -euo pipefail
+          for locale in ru ar; do
+            test ! -f /tmp/translated/$locale-drafts.json || cp /tmp/translated/$locale-drafts.json data/travel/localized/$locale-drafts.json
+          done
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- data/travel/localized/ru-drafts.json data/travel/localized/ar-drafts.json
+          if ! git diff --cached --quiet; then
+            git diff --cached --check
+            git commit -m 'content(travel): persist generated RU AR editorial drafts for review'
+            git push origin HEAD:refs/heads/feature/travel-guides-ru-ar
+          fi
