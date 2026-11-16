@@ -61,9 +61,11 @@ import { isHotelSearchAvailable } from '@/lib/travel/hotelSearchPreview';
 import { getNuiteeWhiteLabelSearchHref } from '@/lib/travel/nuiteeWhiteLabel';
 import { travelEditorial } from '@/data/travel/editorial';
 import { IstanbulFlagship } from '@/components/travel/IstanbulFlagship';
-import { FeaturedCityGuide } from '@/components/travel/FeaturedCityGuide';
+import { FeaturedCityGuide,getApprovedDestinationPhotos } from '@/components/travel/FeaturedCityGuide';
+import {isTravelGuideIndexable,indexedTravelAlternates} from '@/data/travel/guideIndexation';
+import {nativeTravelName,nativeTravelCountry,seoSnippet} from '@/data/travel/localizedNames';
 import { LocalizedFeaturedCityGuide, LocalizedGuideSchema } from '@/components/travel/LocalizedFeaturedCityGuide';
-import { getLocalizedGuide,isEditorialLocale,isLocalizedGuideReviewed } from '@/data/travel/localizedGuides';
+import { getLocalizedGuide,isEditorialLocale } from '@/data/travel/localizedGuides';
 import { EditorialProse } from '@/components/travel/EditorialProse';
 import { featuredCityGuide } from '@/data/travel/featuredCityGuides';
 import { kohSamuiFaq } from '@/data/travel/kohSamuiFaq';
@@ -242,7 +244,7 @@ function heading(locale: TravelLocale, category: TravelCategory, name: string) {
   return keyword + (locale === 'en' ? ' in ' : locale === 'fr' ? ' à ' : locale === 'es' ? ' en ' : locale === 'it' ? ' a ' : locale === 'pt' ? ' em ' : ' · ') + name;
 }
 function isApproved(route: TravelRoute, locale: TravelLocale): boolean {
-  if(isEditorialLocale(locale)&&route.destination&&(route.kind==='destination'||(route.kind==='keyword'&&route.category==='hotels')))return isLocalizedGuideReviewed(route.destination.slug,locale);
+  if(route.destination&&(route.kind==='destination'||(route.kind==='keyword'&&route.category==='hotels')))return isTravelGuideIndexable(route.destination.slug,route.kind==='destination'?'destinations':'hotels',locale);
   // Only publish after written local-language editorial review and a permitted booking path.
   // Every language remains browseable in preview while unapproved pages are noindex.
   if (route.kind === 'keyword' && route.destination && route.category) {
@@ -260,10 +262,14 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
   const localizedGuide=getLocalizedGuide(route.destination?.slug,locale);
   if(localizedGuide&&(route.kind==='destination'||(route.kind==='keyword'&&route.category==='hotels'))){
     const title=route.kind==='keyword'?localizedGuide.hotelSeoTitle:localizedGuide.seoTitle;
+    const description=seoSnippet(route.kind==='keyword'?localizedGuide.hotelIntro:localizedGuide.seoDescription);
     const canonical=ORIGIN+travelHref(locale,route.slug);
     const ready=isApproved(route,locale);
-    const languages=Object.fromEntries(travelLocaleCodes.filter(code=>isApproved(route,code)).map(code=>[travelText(code).hreflang,ORIGIN+travelHref(code,route.slug)]));
-    return {title:title+' | Bosphoras Luxury Stays',description:localizedGuide.seoDescription,alternates:{canonical,...(ready?{languages}:{})},openGraph:{title,description:localizedGuide.seoDescription,url:canonical,siteName:'Bosphoras Luxury Stays',type:'website'},robots:{index:ready,follow:true}};
+    const languages=indexedTravelAlternates(ORIGIN,route.destination!.slug,route.kind==='keyword'?'hotels':'destinations');
+    const city=featuredCityGuide(route.destination?.slug);
+    const image=city?(getApprovedDestinationPhotos(city).find(p=>p.src===city.photos[city.hero]?.src)||getApprovedDestinationPhotos(city)[0]):undefined;
+    const imageAlt=localizedGuide.name;
+    return {title:title+' | Bosphoras Luxury Stays',description,alternates:{canonical,...(ready?{languages}:{})},openGraph:{title,description,url:canonical,siteName:'Bosphoras Luxury Stays',type:'website',...(image?{images:[{url:ORIGIN+image.src,alt:imageAlt}]}:{})},twitter:{card:'summary_large_image',title,description,...(image?{images:[ORIGIN+image.src]}:{})},robots:{index:ready,follow:true,googleBot:{index:ready,follow:true,'max-image-preview':'large'}}};
   }
   const isFlagship = route.kind === 'keyword' && route.destination?.slug === 'istanbul' && route.category === 'hotels' && (locale === 'fr' || locale === 'en');
   const featureGuide = (locale === 'fr' || locale === 'en') ? featuredCityGuide(route.destination?.slug) : undefined;
@@ -366,13 +372,13 @@ function DestCard({ locale, destination, category }: { locale: TravelLocale; des
   const hero = city?.photos[city.hero];
   return <Link href={href} className="group overflow-hidden bg-white border border-[#e8e0d1] rounded-sm hover:border-[#b7955d] transition-colors min-h-[150px] flex flex-col justify-between">
     {hero && <div className="relative aspect-[16/9] overflow-hidden bg-[#c8d2d0]">
-      <Image src={hero.src} alt={locale === 'fr' ? hero.fr : hero.en} fill
+      <Image src={hero.src} alt={isEditorialLocale(locale)?nativeTravelName(destination.slug,locale,destination.name):locale === 'fr' ? hero.fr : hero.en} fill
         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 430px"
         className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" />
     </div>}
     <div className="flex flex-1 flex-col justify-between p-5">
-      <div><p className="text-xs uppercase tracking-wider text-[#a17d48]">{destination.country}</p>
-        <h3 className="font-serif text-2xl text-[#1d2c39] mt-3">{destination.name}</h3></div>
+      <div><p className="text-xs uppercase tracking-wider text-[#a17d48]">{nativeTravelCountry(destination.slug,locale,destination.country)}</p>
+        <h3 className="font-serif text-2xl text-[#1d2c39] mt-3">{nativeTravelName(destination.slug,locale,destination.name)}</h3></div>
       <span className="text-sm text-[#687887] group-hover:text-[#8b6837] mt-4">{travelText(locale).explore} →</span>
     </div>
   </Link>;
@@ -392,7 +398,7 @@ function travelCrumbs(locale: TravelLocale, route: TravelRoute): TravelCrumb[] {
     { label: route.hotel.name, slug: route.slug }
   ];
   if (route.kind === 'destination' && route.destination)
-    return [{ label: t.destinations, slug: 'destinations' }, { label: route.destination.name, slug: route.slug }];
+    return [{ label: t.destinations, slug: 'destinations' }, { label: nativeTravelName(route.destination.slug,locale,route.destination.name), slug: route.slug }];
   if (route.kind === 'keyword' && route.category && route.destination)
     return [
       { label: travelKeywordTitles[route.category][locale], slug: route.category },

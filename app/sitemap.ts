@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { indexedTravelUrls } from '@/data/travel/guideIndexation';
 import seoRedirects from '@/data/seo-redirects.json';
 import { locales } from '@/lib/i18n';
 import { siteUrl } from '@/lib/routes';
@@ -172,6 +173,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       }
     }
   }
+
+  // Same approval gate as page robots and reciprocal HTML hreflang. No drafts in sitemap.
+  for(const url of indexedTravelUrls(siteUrl)) addEntry({url,changeFrequency:'monthly',priority:0.8});
 
   const publishedProperties = await fetchPublishedProperties();
   for (const property of publishedProperties) {

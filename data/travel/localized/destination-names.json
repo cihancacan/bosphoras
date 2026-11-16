@@ -1,0 +1,882 @@
+{
+  "istanbul": {
+    "en": "Istanbul",
+    "ru": "Стамбул",
+    "ar": "إسطنبول",
+    "country": {
+      "en": "Turkey",
+      "ru": "Турция",
+      "ar": "تركيا"
+    }
+  },
+  "bodrum": {
+    "en": "Bodrum",
+    "ru": "Бодрум",
+    "ar": "بودروم",
+    "country": {
+      "en": "Turkey",
+      "ru": "Турция",
+      "ar": "تركيا"
+    }
+  },
+  "antalya": {
+    "en": "Antalya",
+    "ru": "Анталья",
+    "ar": "أنطاليا",
+    "country": {
+      "en": "Turkey",
+      "ru": "Турция",
+      "ar": "تركيا"
+    }
+  },
+  "paris": {
+    "en": "Paris",
+    "ru": "Париж",
+    "ar": "باريس",
+    "country": {
+      "en": "France",
+      "ru": "Франция",
+      "ar": "فرنسا"
+    }
+  },
+  "saint-tropez": {
+    "en": "Saint-Tropez",
+    "ru": "Сен-Тропе",
+    "ar": "سان تروبيه",
+    "country": {
+      "en": "France",
+      "ru": "Франция",
+      "ar": "فرنسا"
+    }
+  },
+  "dubai": {
+    "en": "Dubai",
+    "ru": "Дубай",
+    "ar": "دبي",
+    "country": {
+      "en": "United Arab Emirates",
+      "ru": "Объединённые Арабские Эмираты",
+      "ar": "الإمارات العربية المتحدة"
+    }
+  },
+  "bali": {
+    "en": "Bali",
+    "ru": "Бали",
+    "ar": "بالي",
+    "country": {
+      "en": "Indonesia",
+      "ru": "Индонезия",
+      "ar": "إندونيسيا"
+    }
+  },
+  "new-york": {
+    "en": "New York",
+    "ru": "Нью-Йорк",
+    "ar": "نيويورك",
+    "country": {
+      "en": "United States",
+      "ru": "США",
+      "ar": "الولايات المتحدة"
+    }
+  },
+  "miami": {
+    "en": "Miami",
+    "ru": "Майами",
+    "ar": "ميامي",
+    "country": {
+      "en": "United States",
+      "ru": "США",
+      "ar": "الولايات المتحدة"
+    }
+  },
+  "los-angeles": {
+    "en": "Los Angeles",
+    "ru": "Лос-Анджелес",
+    "ar": "لوس أنجلوس",
+    "country": {
+      "en": "United States",
+      "ru": "США",
+      "ar": "الولايات المتحدة"
+    }
+  },
+  "courchevel-1850": {
+    "en": "Courchevel 1850",
+    "ru": "Куршевель 1850",
+    "ar": "كورشوفيل 1850",
+    "country": {
+      "en": "France",
+      "ru": "Франция",
+      "ar": "فرنسا"
+    }
+  },
+  "megeve": {
+    "en": "Megève",
+    "ru": "Межев",
+    "ar": "ميجيف",
+    "country": {
+      "en": "France",
+      "ru": "Франция",
+      "ar": "فرنسا"
+    }
+  },
+  "val-disere": {
+    "en": "Val d'Isère",
+    "ru": "Валь-д’Изер",
+    "ar": "فال ديزير",
+    "country": {
+      "en": "France",
+      "ru": "Франция",
+      "ar": "فرنسا"
+    }
+  },
+  "verbier": {
+    "en": "Verbier",
+    "ru": "Вербье",
+    "ar": "فيربييه",
+    "country": {
+      "en": "Switzerland",
+      "ru": "Швейцария",
+      "ar": "سويسرا"
+    }
+  },
+  "gstaad": {
+    "en": "Gstaad",
+    "ru": "Гштад",
+    "ar": "غشتاد",
+    "country": {
+      "en": "Switzerland",
+      "ru": "Швейцария",
+      "ar": "سويسرا"
+    }
+  },
+  "zermatt": {
+    "en": "Zermatt",
+    "ru": "Церматт",
+    "ar": "زيرمات",
+    "country": {
+      "en": "Switzerland",
+      "ru": "Швейцария",
+      "ar": "سويسرا"
+    }
+  },
+  "saint-barthelemy": {
+    "en": "Saint-Barthélemy",
+    "ru": "Сен-Бартелеми",
+    "ar": "سان بارتيليمي",
+    "country": {
+      "en": "Saint Barthélemy",
+      "ru": "Сен-Бартелеми",
+      "ar": "سان بارتيليمي"
+    }
+  },
+  "porto-cervo": {
+    "en": "Porto Cervo",
+    "ru": "Порто-Черво",
+    "ar": "بورتو تشيرفو",
+    "country": {
+      "en": "Italy",
+      "ru": "Италия",
+      "ar": "إيطاليا"
+    }
+  },
+  "mustique": {
+    "en": "Mustique",
+    "ru": "Мюстик",
+    "ar": "موستيك",
+    "country": {
+      "en": "Saint Vincent and the Grenadines",
+      "ru": "Сент-Винсент и Гренадины",
+      "ar": "سانت فنسنت والغرينادين"
+    }
+  },
+  "monaco": {
+    "en": "Monaco",
+    "ru": "Монако",
+    "ar": "موناكو",
+    "country": {
+      "en": "Monaco",
+      "ru": "Монако",
+      "ar": "موناكو"
+    }
+  },
+  "saint-jean-cap-ferrat": {
+    "en": "Saint-Jean-Cap-Ferrat",
+    "ru": "Сен-Жан-Кап-Ферра",
+    "ar": "سان جان كاب فيرات",
+    "country": {
+      "en": "France",
+      "ru": "Франция",
+      "ar": "فرنسا"
+    }
+  },
+  "cap-dantibes": {
+    "en": "Cap d'Antibes",
+    "ru": "Кап-д’Антиб",
+    "ar": "كاب دانتيب",
+    "country": {
+      "en": "France",
+      "ru": "Франция",
+      "ar": "فرنسا"
+    }
+  },
+  "lake-como": {
+    "en": "Lake Como",
+    "ru": "Озеро Комо",
+    "ar": "بحيرة كومو",
+    "country": {
+      "en": "Italy",
+      "ru": "Италия",
+      "ar": "إيطاليا"
+    }
+  },
+  "capri": {
+    "en": "Capri",
+    "ru": "Капри",
+    "ar": "كابري",
+    "country": {
+      "en": "Italy",
+      "ru": "Италия",
+      "ar": "إيطاليا"
+    }
+  },
+  "positano": {
+    "en": "Positano",
+    "ru": "Позитано",
+    "ar": "بوزيتانو",
+    "country": {
+      "en": "Italy",
+      "ru": "Италия",
+      "ar": "إيطاليا"
+    }
+  },
+  "ravello": {
+    "en": "Ravello",
+    "ru": "Равелло",
+    "ar": "رافيلو",
+    "country": {
+      "en": "Italy",
+      "ru": "Италия",
+      "ar": "إيطاليا"
+    }
+  },
+  "mykonos": {
+    "en": "Mykonos",
+    "ru": "Миконос",
+    "ar": "ميكونوس",
+    "country": {
+      "en": "Greece",
+      "ru": "Греция",
+      "ar": "اليونان"
+    }
+  },
+  "antiparos": {
+    "en": "Antiparos",
+    "ru": "Антипарос",
+    "ar": "أنتيباروس",
+    "country": {
+      "en": "Greece",
+      "ru": "Греция",
+      "ar": "اليونان"
+    }
+  },
+  "ibiza": {
+    "en": "Ibiza",
+    "ru": "Ибица",
+    "ar": "إيبيزا",
+    "country": {
+      "en": "Spain",
+      "ru": "Испания",
+      "ar": "إسبانيا"
+    }
+  },
+  "formentera": {
+    "en": "Formentera",
+    "ru": "Форментера",
+    "ar": "فورمينتيرا",
+    "country": {
+      "en": "Spain",
+      "ru": "Испания",
+      "ar": "إسبانيا"
+    }
+  },
+  "deia": {
+    "en": "Deià",
+    "ru": "Дейя",
+    "ar": "ديا",
+    "country": {
+      "en": "Spain",
+      "ru": "Испания",
+      "ar": "إسبانيا"
+    }
+  },
+  "port-andratx": {
+    "en": "Port d'Andratx",
+    "ru": "Порт-Андрач",
+    "ar": "بورت داندراكس",
+    "country": {
+      "en": "Spain",
+      "ru": "Испания",
+      "ar": "إسبانيا"
+    }
+  },
+  "comporta": {
+    "en": "Comporta",
+    "ru": "Компорта",
+    "ar": "كومبورتا",
+    "country": {
+      "en": "Portugal",
+      "ru": "Португалия",
+      "ar": "البرتغال"
+    }
+  },
+  "melides": {
+    "en": "Melides",
+    "ru": "Мелидеш",
+    "ar": "ميليديس",
+    "country": {
+      "en": "Portugal",
+      "ru": "Португалия",
+      "ar": "البرتغال"
+    }
+  },
+  "tivat": {
+    "en": "Tivat / Porto Montenegro",
+    "ru": "Тиват и Порто-Монтенегро",
+    "ar": "تيفات وبورتو مونتينيغرو",
+    "country": {
+      "en": "Montenegro",
+      "ru": "Черногория",
+      "ar": "الجبل الأسود"
+    }
+  },
+  "st-moritz": {
+    "en": "St. Moritz",
+    "ru": "Санкт-Мориц",
+    "ar": "سانت موريتز",
+    "country": {
+      "en": "Switzerland",
+      "ru": "Швейцария",
+      "ar": "سويسرا"
+    }
+  },
+  "aspen": {
+    "en": "Aspen",
+    "ru": "Аспен",
+    "ar": "أسبن",
+    "country": {
+      "en": "United States",
+      "ru": "США",
+      "ar": "الولايات المتحدة"
+    }
+  },
+  "jackson-hole": {
+    "en": "Jackson Hole",
+    "ru": "Джексон-Хоул",
+    "ar": "جاكسون هول",
+    "country": {
+      "en": "United States",
+      "ru": "США",
+      "ar": "الولايات المتحدة"
+    }
+  },
+  "big-sky": {
+    "en": "Big Sky",
+    "ru": "Биг-Скай",
+    "ar": "بيغ سكاي",
+    "country": {
+      "en": "United States",
+      "ru": "США",
+      "ar": "الولايات المتحدة"
+    }
+  },
+  "the-hamptons": {
+    "en": "The Hamptons",
+    "ru": "Хэмптонс",
+    "ar": "هامبتونز",
+    "country": {
+      "en": "United States",
+      "ru": "США",
+      "ar": "الولايات المتحدة"
+    }
+  },
+  "palm-beach": {
+    "en": "Palm Beach",
+    "ru": "Палм-Бич",
+    "ar": "بالم بيتش",
+    "country": {
+      "en": "United States",
+      "ru": "США",
+      "ar": "الولايات المتحدة"
+    }
+  },
+  "nantucket": {
+    "en": "Nantucket",
+    "ru": "Нантакет",
+    "ar": "نانتوكيت",
+    "country": {
+      "en": "United States",
+      "ru": "США",
+      "ar": "الولايات المتحدة"
+    }
+  },
+  "harbour-island": {
+    "en": "Harbour Island",
+    "ru": "Харбор-Айленд",
+    "ar": "هاربور آيلاند",
+    "country": {
+      "en": "Bahamas",
+      "ru": "Багамы",
+      "ar": "جزر البهاما"
+    }
+  },
+  "turks-and-caicos": {
+    "en": "Turks and Caicos",
+    "ru": "Теркс и Кайкос",
+    "ar": "تركس وكايكوس",
+    "country": {
+      "en": "Turks and Caicos Islands",
+      "ru": "Теркс и Кайкос",
+      "ar": "جزر تركس وكايكوس"
+    }
+  },
+  "canouan": {
+    "en": "Canouan",
+    "ru": "Кануан",
+    "ar": "كانوان",
+    "country": {
+      "en": "Saint Vincent and the Grenadines",
+      "ru": "Сент-Винсент и Гренадины",
+      "ar": "سانت فنسنت والغرينادين"
+    }
+  },
+  "necker-island": {
+    "en": "Necker Island",
+    "ru": "Остров Некер",
+    "ar": "جزيرة نيكر",
+    "country": {
+      "en": "British Virgin Islands",
+      "ru": "Британские Виргинские острова",
+      "ar": "جزر العذراء البريطانية"
+    }
+  },
+  "north-island-seychelles": {
+    "en": "North Island Seychelles",
+    "ru": "Остров Норт-Айленд на Сейшелах",
+    "ar": "جزيرة نورث آيلاند في سيشل",
+    "country": {
+      "en": "Seychelles",
+      "ru": "Сейшелы",
+      "ar": "سيشل"
+    }
+  },
+  "pamalican-island": {
+    "en": "Pamalican Island / Amanpulo",
+    "ru": "Остров Памаликан и Аманпуло",
+    "ar": "جزيرة باماليكان وأمانبولو",
+    "country": {
+      "en": "Philippines",
+      "ru": "Филиппины",
+      "ar": "الفلبين"
+    }
+  },
+  "laucala-island": {
+    "en": "Laucala Island",
+    "ru": "Остров Лаукала",
+    "ar": "جزيرة لاوكالا",
+    "country": {
+      "en": "Fiji",
+      "ru": "Фиджи",
+      "ar": "فيجي"
+    }
+  },
+  "jumby-bay": {
+    "en": "Jumby Bay Island",
+    "ru": "Остров Джамби-Бей",
+    "ar": "جزيرة جامبي باي",
+    "country": {
+      "en": "Antigua and Barbuda",
+      "ru": "Антигуа и Барбуда",
+      "ar": "أنتيغوا وبربودا"
+    }
+  },
+  "maldives": {
+    "en": "Maldives",
+    "ru": "Мальдивы",
+    "ar": "جزر المالديف",
+    "country": {
+      "en": "Maldives",
+      "ru": "Мальдивы",
+      "ar": "المالديف"
+    }
+  },
+  "okavango-delta": {
+    "en": "Okavango Delta",
+    "ru": "Дельта Окаванго",
+    "ar": "دلتا أوكافانغو",
+    "country": {
+      "en": "Botswana",
+      "ru": "Ботсвана",
+      "ar": "بوتسوانا"
+    }
+  },
+  "los-cabos": {
+    "en": "Los Cabos",
+    "ru": "Лос-Кабос",
+    "ar": "لوس كابوس",
+    "country": {
+      "en": "Mexico",
+      "ru": "Мексика",
+      "ar": "المكسيك"
+    }
+  },
+  "punta-mita": {
+    "en": "Punta Mita",
+    "ru": "Пунта-Мита",
+    "ar": "بونتا ميتا",
+    "country": {
+      "en": "Mexico",
+      "ru": "Мексика",
+      "ar": "المكسيك"
+    }
+  },
+  "costa-careyes": {
+    "en": "Costa Careyes",
+    "ru": "Коста-Карейес",
+    "ar": "كوستا كارييس",
+    "country": {
+      "en": "Mexico",
+      "ru": "Мексика",
+      "ar": "المكسيك"
+    }
+  },
+  "mayakoba": {
+    "en": "Mayakoba",
+    "ru": "Маякоба",
+    "ar": "ماياكوبا",
+    "country": {
+      "en": "Mexico",
+      "ru": "Мексика",
+      "ar": "المكسيك"
+    }
+  },
+  "san-miguel-de-allende": {
+    "en": "San Miguel de Allende",
+    "ru": "Сан-Мигель-де-Альенде",
+    "ar": "سان ميغيل دي أليندي",
+    "country": {
+      "en": "Mexico",
+      "ru": "Мексика",
+      "ar": "المكسيك"
+    }
+  },
+  "phuket": {
+    "en": "Phuket",
+    "ru": "Пхукет",
+    "ar": "بوكيت",
+    "country": {
+      "en": "Thailand",
+      "ru": "Таиланд",
+      "ar": "تايلاند"
+    }
+  },
+  "koh-samui": {
+    "en": "Koh Samui",
+    "ru": "Самуи",
+    "ar": "كوه ساموي",
+    "country": {
+      "en": "Thailand",
+      "ru": "Таиланд",
+      "ar": "تايلاند"
+    }
+  },
+  "krabi": {
+    "en": "Krabi",
+    "ru": "Краби",
+    "ar": "كرابي",
+    "country": {
+      "en": "Thailand",
+      "ru": "Таиланд",
+      "ar": "تايلاند"
+    }
+  },
+  "koh-yao-noi": {
+    "en": "Koh Yao Noi",
+    "ru": "Ко-Яо-Ной",
+    "ar": "كوه ياو نوي",
+    "country": {
+      "en": "Thailand",
+      "ru": "Таиланд",
+      "ar": "تايلاند"
+    }
+  },
+  "bangkok": {
+    "en": "Bangkok",
+    "ru": "Бангкок",
+    "ar": "بانكوك",
+    "country": {
+      "en": "Thailand",
+      "ru": "Таиланд",
+      "ar": "تايلاند"
+    }
+  },
+  "chiang-mai": {
+    "en": "Chiang Mai",
+    "ru": "Чиангмай",
+    "ar": "شيانغ ماي",
+    "country": {
+      "en": "Thailand",
+      "ru": "Таиланд",
+      "ar": "تايلاند"
+    }
+  },
+  "sumba": {
+    "en": "Sumba",
+    "ru": "Сумба",
+    "ar": "سومبا",
+    "country": {
+      "en": "Indonesia",
+      "ru": "Индонезия",
+      "ar": "إندونيسيا"
+    }
+  },
+  "palawan": {
+    "en": "Palawan",
+    "ru": "Палаван",
+    "ar": "بالاوان",
+    "country": {
+      "en": "Philippines",
+      "ru": "Филиппины",
+      "ar": "الفلبين"
+    }
+  },
+  "niseko": {
+    "en": "Niseko",
+    "ru": "Нисеко",
+    "ar": "نيسيكو",
+    "country": {
+      "en": "Japan",
+      "ru": "Япония",
+      "ar": "اليابان"
+    }
+  },
+  "tokyo": {
+    "en": "Tokyo",
+    "ru": "Токио",
+    "ar": "طوكيو",
+    "country": {
+      "en": "Japan",
+      "ru": "Япония",
+      "ar": "اليابان"
+    }
+  },
+  "kyoto": {
+    "en": "Kyoto",
+    "ru": "Киото",
+    "ar": "كيوتو",
+    "country": {
+      "en": "Japan",
+      "ru": "Япония",
+      "ar": "اليابان"
+    }
+  },
+  "hakone": {
+    "en": "Hakone",
+    "ru": "Хаконе",
+    "ar": "هاكوني",
+    "country": {
+      "en": "Japan",
+      "ru": "Япония",
+      "ar": "اليابان"
+    }
+  },
+  "vinh-hy-bay": {
+    "en": "Vinh Hy Bay",
+    "ru": "Бухта Виньхи",
+    "ar": "خليج فينه هاي",
+    "country": {
+      "en": "Vietnam",
+      "ru": "Вьетнам",
+      "ar": "فيتنام"
+    }
+  },
+  "da-nang": {
+    "en": "Da Nang",
+    "ru": "Дананг",
+    "ar": "دا نانغ",
+    "country": {
+      "en": "Vietnam",
+      "ru": "Вьетнам",
+      "ar": "فيتنام"
+    }
+  },
+  "hoi-an": {
+    "en": "Hoi An",
+    "ru": "Хойан",
+    "ar": "هوي آن",
+    "country": {
+      "en": "Vietnam",
+      "ru": "Вьетнам",
+      "ar": "فيتنام"
+    }
+  },
+  "phu-quoc": {
+    "en": "Phu Quoc",
+    "ru": "Фукуок",
+    "ar": "فو كوك",
+    "country": {
+      "en": "Vietnam",
+      "ru": "Вьетнам",
+      "ar": "فيتنام"
+    }
+  },
+  "singapore": {
+    "en": "Singapore",
+    "ru": "Сингапур",
+    "ar": "سنغافورة",
+    "country": {
+      "en": "Singapore",
+      "ru": "Сингапур",
+      "ar": "سنغافورة"
+    }
+  },
+  "sentosa": {
+    "en": "Sentosa",
+    "ru": "Сентоса",
+    "ar": "سنتوسا",
+    "country": {
+      "en": "Singapore",
+      "ru": "Сингапур",
+      "ar": "سنغافورة"
+    }
+  },
+  "udaipur": {
+    "en": "Udaipur",
+    "ru": "Удайпур",
+    "ar": "أودايبور",
+    "country": {
+      "en": "India",
+      "ru": "Индия",
+      "ar": "الهند"
+    }
+  },
+  "jaipur": {
+    "en": "Jaipur",
+    "ru": "Джайпур",
+    "ar": "جايبور",
+    "country": {
+      "en": "India",
+      "ru": "Индия",
+      "ar": "الهند"
+    }
+  },
+  "rajasthan": {
+    "en": "Rajasthan",
+    "ru": "Раджастхан",
+    "ar": "راجستان",
+    "country": {
+      "en": "India",
+      "ru": "Индия",
+      "ar": "الهند"
+    }
+  },
+  "galle": {
+    "en": "Galle",
+    "ru": "Галле",
+    "ar": "غالي",
+    "country": {
+      "en": "Sri Lanka",
+      "ru": "Шри-Ланка",
+      "ar": "سريلانكا"
+    }
+  },
+  "tangalle": {
+    "en": "Tangalle",
+    "ru": "Тангалле",
+    "ar": "تانغالي",
+    "country": {
+      "en": "Sri Lanka",
+      "ru": "Шри-Ланка",
+      "ar": "سريلانكا"
+    }
+  },
+  "paro": {
+    "en": "Paro",
+    "ru": "Паро",
+    "ar": "بارو",
+    "country": {
+      "en": "Bhutan",
+      "ru": "Бутан",
+      "ar": "بوتان"
+    }
+  },
+  "punakha": {
+    "en": "Punakha",
+    "ru": "Пунакха",
+    "ar": "بوناخا",
+    "country": {
+      "en": "Bhutan",
+      "ru": "Бутан",
+      "ar": "بوتان"
+    }
+  },
+  "gangtey": {
+    "en": "Gangtey",
+    "ru": "Гангтей",
+    "ar": "غانغتي",
+    "country": {
+      "en": "Bhutan",
+      "ru": "Бутан",
+      "ar": "بوتان"
+    }
+  },
+  "siem-reap": {
+    "en": "Siem Reap",
+    "ru": "Сиемреап",
+    "ar": "سييم ريب",
+    "country": {
+      "en": "Cambodia",
+      "ru": "Камбоджа",
+      "ar": "كمبوديا"
+    }
+  },
+  "koh-rong": {
+    "en": "Koh Rong",
+    "ru": "Ко-Ронг",
+    "ar": "كوه رونغ",
+    "country": {
+      "en": "Cambodia",
+      "ru": "Камбоджа",
+      "ar": "كمبوديا"
+    }
+  },
+  "luang-prabang": {
+    "en": "Luang Prabang",
+    "ru": "Луангпхабанг",
+    "ar": "لوانغ برابانغ",
+    "country": {
+      "en": "Laos",
+      "ru": "Лаос",
+      "ar": "لاوس"
+    }
+  },
+  "langkawi": {
+    "en": "Langkawi",
+    "ru": "Лангкави",
+    "ar": "لانكاوي",
+    "country": {
+      "en": "Malaysia",
+      "ru": "Малайзия",
+      "ar": "ماليزيا"
+    }
+  },
+  "desaru-coast": {
+    "en": "Desaru Coast",
+    "ru": "Десару-Кост",
+    "ar": "ساحل ديسارو",
+    "country": {
+      "en": "Malaysia",
+      "ru": "Малайзия",
+      "ar": "ماليزيا"
+    }
+  }
+}
