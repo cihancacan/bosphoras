@@ -2,6 +2,6 @@ const assert=require('node:assert/strict');
 const {featuredCityGuides}=require('../data/travel/featuredCityGuides');
 const {getLocalizedGuide,validateLocalizedGuide}=require('../data/travel/localizedGuides');
 const {getApprovedDestinationPhotos,getApprovedHotelPhotos,getGuideSourceFaq}=require('../components/travel/FeaturedCityGuide');
-for(const slug of ['istanbul','paris','desaru-coast'])for(const loc of ['ru','ar']){
+for(const slug of ['istanbul','paris','desaru-coast','bodrum','antalya','dubai'])for(const loc of ['ru','ar']){
 const city=featuredCityGuides[slug];const data=getLocalizedGuide(slug,loc);assert.ok(data&&validateLocalizedGuide(city,data),slug+'/'+loc);assert.equal(data.faq.length,getGuideSourceFaq(city,'en').length,slug+' FAQ');assert.equal(data.photoCaptions.length,getApprovedDestinationPhotos(city).length,slug+' photo captions');assert.equal(data.hotelCaptionGroups.length,city.hotels.length);for(let i=0;i<city.hotels.length;i++)assert.equal(data.hotelCaptionGroups[i].length,getApprovedHotelPhotos(slug,city.hotels[i].name).slice(0,3).length,city.hotels[i].name);assert.ok(!/синусоид|Четыре моря|\/ \/ \/|أربعة فصول/.test(JSON.stringify(data)),slug+' machine artifacts');}
-console.log('6 rewritten locale guides: source coverage, photo captions and obvious translation artifacts checked.');
+console.log('12 rewritten locale guides: source coverage, photo captions and obvious translation artifacts checked.');
