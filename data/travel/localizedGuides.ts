@@ -1,3 +1,4 @@
+import miami from './localized/miami.json';
 import newYork from './localized/new-york.json';
 import newYork from './localized/new-york.json';
 import phuket from './localized/phuket.json';
@@ -22,7 +23,7 @@ export type LocalizedGuide={
 };
 export function isEditorialLocale(locale:string):locale is EditorialLocale{return locale==='ru'||locale==='ar';}
 const drafts:Record<EditorialLocale,Record<string,LocalizedGuide>>={ru:ruDrafts,ar:arDrafts};
-const localized:Record<string,Partial<Record<EditorialLocale,LocalizedGuide>>>={'desaru-coast':desaru,istanbul,paris,bodrum,antalya,dubai,'saint-tropez':saintTropez,bali,phuket,'new-york':newYork};
+const localized:Record<string,Partial<Record<EditorialLocale,LocalizedGuide>>>={'desaru-coast':desaru,istanbul,paris,bodrum,antalya,dubai,'saint-tropez':saintTropez,bali,phuket,'new-york':newYork,miami};
 export function getLocalizedGuide(slug:string|undefined,locale:string):LocalizedGuide|undefined{
  if(!slug||!isEditorialLocale(locale))return undefined;
  const data=localized[slug]?.[locale]||drafts[locale][slug];if(!data)return undefined;
