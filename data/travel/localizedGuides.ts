@@ -1,3 +1,8 @@
+import tokyo from './localized/tokyo.json';
+import kyoto from './localized/kyoto.json';
+import hakone from './localized/hakone.json';
+import vinhHyBay from './localized/vinh-hy-bay.json';
+import daNang from './localized/da-nang.json';
 import kohYaoNoi from './localized/koh-yao-noi.json';
 import bangkok from './localized/bangkok.json';
 import chiangMai from './localized/chiang-mai.json';
@@ -75,7 +80,7 @@ export type LocalizedGuide={
 };
 export function isEditorialLocale(locale:string):locale is EditorialLocale{return locale==='ru'||locale==='ar';}
 const drafts:Record<EditorialLocale,Record<string,LocalizedGuide>>={ru:ruDrafts,ar:arDrafts};
-const localized:Record<string,Partial<Record<EditorialLocale,LocalizedGuide>>>={'desaru-coast':desaru,istanbul,paris,bodrum,antalya,dubai,'saint-tropez':saintTropez,bali,phuket,'new-york':newYork,miami,'los-angeles':losAngeles,'courchevel-1850':courchevel,megeve,'val-disere':valDisere,verbier,gstaad,zermatt,'saint-barthelemy':saintBarthelemy,'porto-cervo':portoCervo,mustique,monaco,'saint-jean-cap-ferrat':capFerrat,'cap-dantibes':capDAntibes,'lake-como':lakeComo,capri,positano,ravello,mykonos,antiparos,ibiza,formentera,deia,'port-andratx':portAndratx,comporta,melides,tivat,'st-moritz':stMoritz,aspen,'jackson-hole':jacksonHole,'big-sky':bigSky,'the-hamptons':theHamptons,'palm-beach':palmBeach,nantucket,'harbour-island':harbourIsland,'turks-and-caicos':turksAndCaicos,'canouan':canouan,'necker-island':neckerIsland,'north-island-seychelles':northIslandSeychelles,'pamalican-island':pamalicanIsland,'laucala-island':laucalaIsland,'jumby-bay':jumbyBay,'okavango-delta':okavangoDelta,'punta-mita':puntaMita,'costa-careyes':costaCareyes,'mayakoba':mayakoba,'san-miguel-de-allende':sanMiguelDeAllende,'koh-samui':kohSamui,'krabi':krabi,'koh-yao-noi':kohYaoNoi,'bangkok':bangkok,'chiang-mai':chiangMai,'sumba':sumba,'palawan':palawan};
+const localized:Record<string,Partial<Record<EditorialLocale,LocalizedGuide>>>={'desaru-coast':desaru,istanbul,paris,bodrum,antalya,dubai,'saint-tropez':saintTropez,bali,phuket,'new-york':newYork,miami,'los-angeles':losAngeles,'courchevel-1850':courchevel,megeve,'val-disere':valDisere,verbier,gstaad,zermatt,'saint-barthelemy':saintBarthelemy,'porto-cervo':portoCervo,mustique,monaco,'saint-jean-cap-ferrat':capFerrat,'cap-dantibes':capDAntibes,'lake-como':lakeComo,capri,positano,ravello,mykonos,antiparos,ibiza,formentera,deia,'port-andratx':portAndratx,comporta,melides,tivat,'st-moritz':stMoritz,aspen,'jackson-hole':jacksonHole,'big-sky':bigSky,'the-hamptons':theHamptons,'palm-beach':palmBeach,nantucket,'harbour-island':harbourIsland,'turks-and-caicos':turksAndCaicos,'canouan':canouan,'necker-island':neckerIsland,'north-island-seychelles':northIslandSeychelles,'pamalican-island':pamalicanIsland,'laucala-island':laucalaIsland,'jumby-bay':jumbyBay,'okavango-delta':okavangoDelta,'punta-mita':puntaMita,'costa-careyes':costaCareyes,'mayakoba':mayakoba,'san-miguel-de-allende':sanMiguelDeAllende,'koh-samui':kohSamui,'krabi':krabi,'koh-yao-noi':kohYaoNoi,'bangkok':bangkok,'chiang-mai':chiangMai,'sumba':sumba,'palawan':palawan,'tokyo':tokyo,'kyoto':kyoto,'hakone':hakone,'vinh-hy-bay':vinhHyBay,'da-nang':daNang};
 export function getLocalizedGuide(slug:string|undefined,locale:string):LocalizedGuide|undefined{
  if(!slug||!isEditorialLocale(locale))return undefined;
  const data=localized[slug]?.[locale]||drafts[locale][slug];if(!data)return undefined;
