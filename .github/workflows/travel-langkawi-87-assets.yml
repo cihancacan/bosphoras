@@ -1,0 +1,38 @@
+name: Langkawi 87 — collect and inspect actual supplier assets
+on:
+  push:
+    branches: [feature/travel-langkawi-87]
+    paths:
+      - 'scripts/collect-langkawi-87.py'
+      - 'scripts/review-langkawi-whitelabel.py'
+      - '.github/workflows/travel-langkawi-87-assets.yml'
+permissions:
+  contents: write
+concurrency:
+  group: langkawi87
+  cancel-in-progress: false
+jobs:
+  review:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install 'playwright==1.51.0' 'Pillow>=10,<12'
+      - run: python -m playwright install chromium
+      - name: Collect licensed geography and exact-property photos
+        run: |
+          python -u scripts/collect-langkawi-87.py
+          python -u scripts/review-langkawi-whitelabel.py
+      - name: Commit candidate evidence to review branch
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/travel/langkawiAssetCollection.json data/travel/langkawiWhiteLabelReview.json public/images/travel/langkawi-premium
+          if ! git diff --cached --quiet; then
+            git commit -m 'assets(travel): collect Langkawi 87 candidates for review [skip ci]'
+            git push origin HEAD:feature/travel-langkawi-87
+          fi

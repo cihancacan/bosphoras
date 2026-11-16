@@ -1,0 +1,170 @@
+#!/usr/bin/env python3
+"""Read the account's public booking storefront. No private API key, no checkout, no bookings."""
+import json,re,unicodedata,os,io,hashlib,base64
+from pathlib import Path
+from urllib.parse import urlparse
+from playwright.sync_api import sync_playwright
+from PIL import Image,ImageOps,ImageDraw
+ROOT=Path.cwd(); OUT=ROOT/'public/images/travel/langkawi-premium'
+REPORT=ROOT/'data/travel/langkawiWhiteLabelReview.json'
+HOST='bosphoras.nuitee.link'; ORIGIN='https://'+HOST
+HOTELS=[["datai","The Datai Langkawi",["The Datai Langkawi","Datai Langkawi"]],["fourseasons","Four Seasons Resort Langkawi",["Four Seasons Resort Langkawi","Four Seasons Resort Langkawi Malaysia","Four Seasons Resort Langkawi, Malaysia"]],["ritz","The Ritz-Carlton, Langkawi",["The Ritz-Carlton, Langkawi","Ritz-Carlton Langkawi","The Ritz Carlton Langkawi"]],["stregis","The St. Regis Langkawi",["The St. Regis Langkawi","St. Regis Langkawi"]],["danna","The Danna Langkawi",["The Danna Langkawi","The Danna Langkawi - A Member of Small Luxury Hotels of the World","The Danna Langkawi Luxury Resort & Beach Villas","The Danna Langkawi Resort & Beach Villas","The Danna Langkawi - Luxury Resort & Beach Villas"]],["westin","The Westin Langkawi Resort & Spa",["The Westin Langkawi Resort & Spa","The Westin Langkawi Resort and Spa"]],["tanjungrhu","Tanjung Rhu Resort",["Tanjung Rhu Resort","Tanjung Rhu Resort Langkawi"]]]
+def norm(s):return re.sub('[^a-z0-9]','',unicodedata.normalize('NFKD',str(s)).encode('ascii','ignore').decode().lower())
+def nodes(j,depth=0):
+ if depth>12:return
+ if isinstance(j,dict):
+  yield j
+  for v in j.values():yield from nodes(v,depth+1)
+ elif isinstance(j,list):
+  for v in j:yield from nodes(v,depth+1)
+def field(d,*keys):
+ for key in keys:
+  if d.get(key) is not None:return d[key]
+ return ''
+def hotel_id(d):
+ for k in ['hotelId','hotel_id','id','liteApiHotelId','liteapiHotelId']:
+  v=d.get(k)
+  if isinstance(v,str) and re.fullmatch(r'lp[a-z0-9]+',v,re.I):return v
+ return None
+def name_of(d):return field(d,'name','hotelName','hotel_name','title','propertyName')
+def exact(d,aliases):return norm(name_of(d)) in aliases
+def malaysia(d):
+ c=field(d,'countryCode','country','country_code')
+ if isinstance(c,dict):c=field(c,'code','name','iso2')
+ return norm(c) in ['my','malaysia'] and 'langkawi' in norm(str(field(d,'city'))+' '+str(field(d,'address','formattedAddress'))+' '+str(name_of(d)))
+def collect_images(d):
+ result=[]
+ for k in ['hotelImages','images','photos','gallery','hotel_images']:
+  ar=d.get(k)
+  if not isinstance(ar,list):continue
+  for item in ar:
+   url=item if isinstance(item,str) else field(item,'url','urlHd','imageUrl','image_url','src') if isinstance(item,dict) else ''
+   if not isinstance(url,str):continue
+   p=urlparse(url)
+   if p.scheme!='https' or p.hostname not in ['nuitee-hotels.b-cdn.net','static.cupid.travel']:continue
+   cap=field(item,'caption','description','category','roomName') if isinstance(item,dict) else ''
+   if url not in [a[0] for a in result]:result.append((url,str(cap)[:140]))
+ return result
+def save_photo(context,code,index,url):
+ res=context.request.get(url,timeout=25000)
+ if not res.ok:raise ValueError('photo HTTP '+str(res.status))
+ b=res.body(); im=ImageOps.exif_transpose(Image.open(io.BytesIO(b))).convert('RGB')
+ target=OUT/'hotels'/f'{code}-review-{index}.webp';target.parent.mkdir(parents=True,exist_ok=True)
+ for width in [1200,1050,900,800,700]:
+  im.thumbnail((width,850),Image.Resampling.LANCZOS)
+  for q in [82,74,66,58]:
+   im.save(target,format='WEBP',quality=q,method=5)
+   if target.stat().st_size<=150000:break
+  if target.stat().st_size<=150000:break
+ if im.width<650 or im.height<400 or target.stat().st_size>150000:target.unlink();raise ValueError('photo threshold')
+ return dict(localPath='/'+str(target.relative_to(ROOT/'public')),webpBytes=target.stat().st_size,webpPixels=list(im.size),webpSHA256=hashlib.sha256(target.read_bytes()).hexdigest(),sourceSHA256=hashlib.sha256(b).hexdigest())
+report=json.loads(REPORT.read_text(encoding='utf-8')) if REPORT.exists() else {'destination':'langkawi','source':ORIGIN,'status':'review_only_not_released','matches':[],'photos':[],'errors':[]}
+report['errors']=[]
+report['diagnostics']=[]
+# Search shorter names first and collect alternatives only if required for the four-hotel shortlist.
+HOTELS=[["datai","The Datai Langkawi",["The Datai Langkawi","Datai Langkawi"]],["fourseasons","Four Seasons Resort Langkawi",["Four Seasons Resort Langkawi","Four Seasons Resort Langkawi Malaysia","Four Seasons Resort Langkawi, Malaysia"]],["ritz","The Ritz-Carlton, Langkawi",["The Ritz-Carlton, Langkawi","Ritz-Carlton Langkawi","The Ritz Carlton Langkawi"]],["stregis","The St. Regis Langkawi",["The St. Regis Langkawi","St. Regis Langkawi"]],["danna","The Danna Langkawi",["The Danna Langkawi","The Danna Langkawi - A Member of Small Luxury Hotels of the World","The Danna Langkawi Luxury Resort & Beach Villas","The Danna Langkawi Resort & Beach Villas","The Danna Langkawi - Luxury Resort & Beach Villas"]],["westin","The Westin Langkawi Resort & Spa",["The Westin Langkawi Resort & Spa","The Westin Langkawi Resort and Spa"]],["tanjungrhu","Tanjung Rhu Resort",["Tanjung Rhu Resort","Tanjung Rhu Resort Langkawi"]]]
+
+with sync_playwright() as p:
+ browser=p.chromium.launch(headless=True)
+ ctx=browser.new_context(locale='en-US')
+ page=ctx.new_page(); records=[]
+ def response(r):
+  try:
+   u=urlparse(r.url)
+   if not (u.hostname==HOST or (u.hostname or '').endswith('.nuitee.com') or (u.hostname or '').endswith('.liteapi.travel')):return
+   if 'json' not in r.headers.get('content-type',''):return
+   j=r.json()
+   for d in nodes(j):
+    if hotel_id(d) and name_of(d): records.append(d)
+  except Exception: pass
+ page.on('response',response)
+ for code,name,aliases0 in HOTELS:
+  aliases={norm(x) for x in [name,*aliases0]};records.clear()
+  if len(report['matches'])>=4: break
+  if any(x['editorialName']==name for x in report['matches']):continue
+  try:
+   page.goto(ORIGIN+'/?language=en&currency=EUR',wait_until='domcontentloaded',timeout=40000)
+   page.wait_for_timeout(2500)
+   # Use only the normal public search field, not an unverified private API.
+   ins=page.locator('input')
+   chosen=None
+   for i in range(min(ins.count(),30)):
+    inp=ins.nth(i)
+    if not inp.is_visible():continue
+    placeholder=(inp.get_attribute('placeholder') or '')+' '+(inp.get_attribute('aria-label') or '')
+    if re.search('destination|where|hotel|location|search|city',placeholder,re.I):
+     chosen=inp;break
+   if chosen is None:
+    for i in range(min(ins.count(),30)):
+     inp=ins.nth(i)
+     if inp.is_visible() and (inp.get_attribute('type') or 'text') in ['text','search']: chosen=inp;break
+   if chosen is None:raise ValueError('public search input not available')
+   chosen.fill(aliases0[0],timeout=7000)
+   page.wait_for_timeout(2200)
+   # Select matching autocomplete option; never click payment/booking buttons.
+   for alias in [*aliases0,name]:
+    opts=page.get_by_text(alias,exact=False)
+    picked=False
+    for i in range(min(opts.count(),30)):
+     opt=opts.nth(i)
+     try:
+      if opt.is_visible() and opt.inner_text(timeout=1000).strip() and len(opt.inner_text(timeout=1000))<220:
+       opt.click(timeout=2000);picked=True;break
+     except Exception:pass
+    if picked:break
+   page.wait_for_timeout(1000)
+   btn=page.get_by_role('button',name=re.compile(r'^(search|search hotels|find hotels|show hotels|find accommodation)$',re.I))
+   if btn.count() and btn.first.is_visible():
+    try:btn.first.click(timeout=4000);page.wait_for_timeout(4500)
+    except Exception: page.wait_for_timeout(1500)
+   # Collect only returned supplier IDs or actual property hrefs for exact-name links.
+   candidates={hotel_id(x) for x in records if exact(x,aliases)}
+   for a in page.locator('a[href*="/hotels/lp"]').all()[:150]:
+    try:
+     if norm(a.inner_text(timeout=1000)) in aliases:
+      match=re.search(r'/hotels/(lp[a-z0-9]+)',a.get_attribute('href') or '',re.I)
+      if match:candidates.add(match.group(1))
+    except Exception:pass
+   if not candidates:
+    report['diagnostics'].append({'hotel':name,'stage':'search','returned':[{'id':hotel_id(x),'name':str(name_of(x))[:150],'country':str(field(x,'countryCode','country'))[:90]} for x in records[:35]]})
+    raise ValueError('exact public supplier candidate count '+str(len(candidates)))
+   valid=[]
+   for sid in sorted(candidates):
+    records.clear()
+    page.goto(ORIGIN+'/hotels/'+sid+'?language=en&currency=EUR',wait_until='domcontentloaded',timeout=40000)
+    page.wait_for_timeout(4000)
+    matches=[x for x in records if hotel_id(x)==sid and exact(x,aliases) and malaysia(x) and x.get('mapped') is True and not x.get('deletedAt') and len(collect_images(x))>=3]
+    report['diagnostics'].append({'hotel':name,'candidateId':sid,'details':[{'name':str(name_of(x))[:150],'country':str(field(x,'countryCode','country')),'mapped':x.get('mapped'),'deleted':bool(x.get('deletedAt')),'imageCount':len(collect_images(x))} for x in records if hotel_id(x)==sid]})
+    if matches:valid.append((sid,matches))
+   if len(valid)!=1:raise ValueError('active exact-property candidates '+str(len(valid)))
+   sid,matches=valid[0]
+   item=max(matches,key=lambda x:len(collect_images(x)))
+   report['matches'].append(dict(editorialName=name,supplierName=name_of(item),hotelId=sid,country='MY',address=str(field(item,'address','formattedAddress'))[:200],sourcePage=ORIGIN+'/hotels/'+sid,detailIdentityVerified=True))
+   for idx,(url,cap) in enumerate(collect_images(item)[:22],1):
+    try:
+     report['photos'].append(dict(hotel=name,supplierId=sid,sourcePage=ORIGIN+'/hotels/'+sid,sourceResolvedUrl=url,caption=cap,visuallyVerified=False,commercialRightsCleared=False,**save_photo(ctx,code,idx,url)))
+    except Exception as e:report['errors'].append(dict(hotel=name,error='photo: '+str(e)[:180]))
+   if sum(x['hotel']==name for x in report['photos'])<3:report['matches']=[x for x in report['matches'] if x['editorialName']!=name]
+  except Exception as e:report['errors'].append(dict(hotel=name,error=str(e)[:200]))
+  print(name+': '+str(len([x for x in report['matches'] if x['editorialName']==name]))+' exact identity, '+str(len([x for x in report['photos'] if x['hotel']==name]))+' candidate photos',flush=True)
+ browser.close()
+REPORT.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+print(json.dumps(dict(matches=report['matches'],photoCount=len(report['photos']),errors=report['errors']),ensure_ascii=False),flush=True)
+# A reduced contact sheet is review evidence, not an assertion of approval.
+sheet=OUT/'candidate-contact-sheet.webp'
+if sheet.exists():
+ img=Image.open(sheet);img.thumbnail((1050,1050));buf=io.BytesIO();img.save(buf,format='JPEG',quality=65)
+ print('SCENE_SHEET_B64='+base64.b64encode(buf.getvalue()).decode('ascii'))
+
+# Print small JPEG contact sheets in logs, separately from any private response data.
+for idx,name in enumerate(dict.fromkeys(p['hotel'] for p in report['photos'])):
+ photos=[p for p in report['photos'] if p['hotel']==name]
+ canvas=Image.new('RGB',(960,200*((len(photos)+2)//3)), 'white');draw=ImageDraw.Draw(canvas)
+ for i,item in enumerate(photos):
+  p=ROOT/'public'/item['localPath'].lstrip('/')
+  im=Image.open(p).convert('RGB');im.thumbnail((308,168))
+  x=(i%3)*320;y=(i//3)*200
+  canvas.paste(im,(x+(320-im.width)//2,y));draw.text((x+3,y+170),p.stem+' '+item.get('caption','')[:20],fill='black')
+ buf=io.BytesIO();canvas.save(buf,format='JPEG',quality=62)
+ print('HOTEL_SHEET_'+str(idx)+'_NAME='+name,flush=True)
+ print('HOTEL_SHEET_'+str(idx)+'_B64='+base64.b64encode(buf.getvalue()).decode('ascii'),flush=True)
