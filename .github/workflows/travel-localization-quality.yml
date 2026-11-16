@@ -1,0 +1,19 @@
+name: Localized travel editorial quality
+on:
+  push:
+    branches: [feature/travel-guides-ru-ar]
+    paths: ['.github/workflows/travel-localization-quality.yml','scripts/check-edited-travel-localizations.cjs','data/travel/localized/istanbul.json','data/travel/localized/paris.json','data/travel/localizedGuides.ts']
+permissions:
+  contents: read
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22', cache: npm}
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: node -r ./scripts/register-ts.cjs scripts/check-edited-travel-localizations.cjs
+      - run: node -r ./scripts/register-ts.cjs scripts/check-travel-localized-seo.cjs
+      - run: npm run typecheck
