@@ -62,7 +62,7 @@ import { getNuiteeWhiteLabelSearchHref } from '@/lib/travel/nuiteeWhiteLabel';
 import { travelEditorial } from '@/data/travel/editorial';
 import { IstanbulFlagship } from '@/components/travel/IstanbulFlagship';
 import { FeaturedCityGuide,getApprovedDestinationPhotos } from '@/components/travel/FeaturedCityGuide';
-import {isTravelGuideIndexable,indexedTravelAlternates} from '@/data/travel/guideIndexation';
+import {isTravelGuideIndexable,indexedTravelAlternates,isTravelCollectionIndexable,isIstanbulHotelIndexable} from '@/data/travel/guideIndexation';
 import {nativeTravelName,nativeTravelCountry,seoSnippet} from '@/data/travel/localizedNames';
 import { LocalizedFeaturedCityGuide, LocalizedGuideSchema } from '@/components/travel/LocalizedFeaturedCityGuide';
 import { getLocalizedGuide,isEditorialLocale } from '@/data/travel/localizedGuides';
@@ -244,6 +244,7 @@ function heading(locale: TravelLocale, category: TravelCategory, name: string) {
   return keyword + (locale === 'en' ? ' in ' : locale === 'fr' ? ' à ' : locale === 'es' ? ' en ' : locale === 'it' ? ' a ' : locale === 'pt' ? ' em ' : ' · ') + name;
 }
 function isApproved(route: TravelRoute, locale: TravelLocale): boolean {
+  if(isTravelCollectionIndexable(route.slug,locale)||isIstanbulHotelIndexable(route.slug,locale))return true;
   if(route.destination&&(route.kind==='destination'||(route.kind==='keyword'&&route.category==='hotels')))return isTravelGuideIndexable(route.destination.slug,route.kind==='destination'?'destinations':'hotels',locale);
   // Only publish after written local-language editorial review and a permitted booking path.
   // Every language remains browseable in preview while unapproved pages are noindex.

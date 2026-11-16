@@ -14,6 +14,8 @@ const { transferLocales, transferKeywordClusters, getTransferKeywordHref, transf
 const redirects = require('../data/seo-redirects.json');
 const normalize = (url) => decodeURI(new URL(url, siteUrl).pathname);
 const known = new Set();
+const {indexedTravelUrls}=require('../data/travel/guideIndexation');
+for(const url of indexedTravelUrls(siteUrl))known.add(normalize(url));
 for (const [locale, pages] of Object.entries(allPages)) for (const page of pages) known.add(normalize(getCanonicalUrl(locale, page.slug)));
 for (const page of [...highPotentialGuides, ...programmaticPages]) known.add(normalize(getCanonicalUrl(page.locale, page.slug)));
 for (const page of allBosphorasSeoPages) for (const slug of Object.values(page.slugs)) known.add(slug);

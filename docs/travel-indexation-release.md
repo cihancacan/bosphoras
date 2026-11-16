@@ -1,0 +1,3 @@
+# Indexation of completed public travel content
+
+The release inventory includes all 88 completed FR/EN editorial guides and 88 hotel selections in each language, not merely the final nine destinations. Travel home, destination directory and hotels directory are indexable in FR/EN/RU/AR; the existing individual Istanbul hotel profiles are indexable in FR/EN. These paths share the HTML robots and sitemap gate. RU/AR destination guides still require actual translated content and review before being added. Nonexistent routes, incomplete category-keyword combinations, technical account/admin/API paths, and duplicate pages are intentionally not approved. This release does not remove noindex indiscriminately across unrelated technical routes or unsupported locales.
