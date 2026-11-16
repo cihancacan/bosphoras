@@ -1,4 +1,5 @@
 import losAngeles from './localized/los-angeles.json';
+import losAngeles from './localized/los-angeles.json';
 import miami from './localized/miami.json';
 import newYork from './localized/new-york.json';
 import newYork from './localized/new-york.json';
