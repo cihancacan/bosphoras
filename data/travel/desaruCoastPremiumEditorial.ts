@@ -10,7 +10,7 @@ export const desaruCoastHotelEditorial:Record<string,BodrumHotelEditorial>=Objec
  h.name,{photos:manifest.hotels.filter(p=>p.hotel===h.name&&p.key.startsWith(codes[index]+'-')&&p.commercialRightsCleared&&p.visuallyVerified&&p.previewVisualApproved&&!!p.sourceResolvedUrl&&!!p.webpSHA256).slice(0,3).map(photo),
  credit:h.name,sourcePage:h.officialUrl,frBest:frBest[index],enBest:enBest[index],frStory:h.fr+' '+h.frWatch,enStory:h.en+' '+h.enWatch}
 ]));
-export const desaruCoastAreaVisuals:(BodrumPremiumPhoto|null)[]=['scene-1','scene-2','scene-1','scene-4','scene-5','scene-6'].map(key=>{
+export const desaruCoastAreaVisuals:(BodrumPremiumPhoto|null)[]=['scene-2','scene-3','scene-9','scene-7','scene-1','scene-8'].map(key=>{
  const p=manifest.destinationScenes.find(p=>p.key===key&&p.visuallyVerified&&p.previewVisualApproved&&p.commercialRightsCleared&&!!p.licenseUrl&&!!p.credit&&!!p.webpSHA256);
  return p?photo(p):null;
 });

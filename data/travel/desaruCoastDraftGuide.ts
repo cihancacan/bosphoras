@@ -1,4 +1,4 @@
-/** Desaru Coast #88 — editorial draft. Not registered or indexable until exact photos and booking IDs are verified. */
+/** Desaru Coast #88 — bilingual editorial and FAQ. Reviewed media and exact booking IDs supplied separately. */
 import type {FeaturedCityGuideData} from './featuredCityGuides';
 export const desaruCoastDraftGuide: Omit<FeaturedCityGuideData,'photos'|'slug'> & {slug:'desaru-coast'} = {
   "slug": "desaru-coast",

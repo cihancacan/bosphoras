@@ -1,13 +1,28 @@
 const assert=require('node:assert/strict'),fs=require('node:fs'),crypto=require('node:crypto');
 const {featuredCityGuides}=require('../data/travel/featuredCityGuides');
+const {desaruCoastHotelEditorial,confirmedDesaruCoastPreviewAssets}=require('../data/travel/desaruCoastPremiumEditorial');
 const {desaruCoastDraftFaq}=require('../data/travel/desaruCoastDraftGuide');
-const {desaruCoastHotelEditorial}=require('../data/travel/desaruCoastPremiumEditorial');
 const {approvedDestinationSlugs,approvedCategorySlugs}=require('../data/travel/destinations');
 const {bookingTarget}=require('../components/travel/HotelPartnerBooking');
-const manifest=require('../data/travel/desaruCoastMediaCandidates.json');
-const g=featuredCityGuides['desaru-coast'];assert.ok(g);assert.equal(g.hotels.length,4);assert.equal(desaruCoastDraftFaq.fr.length,10);assert.equal(desaruCoastDraftFaq.en.length,10);
-if(process.argv.includes('--release')){
- assert.ok(Object.keys(g.photos).length>=9,'Nine validated destination photos required');
- for(const h of g.hotels){assert.equal(desaruCoastHotelEditorial[h.name].photos.length,3);for(const locale of ['fr','en'])assert.ok(bookingTarget(g.slug+':'+h.name,locale).exact,'Exact Nuitée ID required');}
- const hashes=new Set();for(const p of [...manifest.destinationScenes,...manifest.hotels].filter(p=>p.previewVisualApproved)){assert.ok(p.visuallyVerified&&p.commercialRightsCleared);const b=fs.readFileSync('public'+p.localPath);assert.equal(b.toString('ascii',0,4),'RIFF');assert.equal(b.toString('ascii',8,12),'WEBP');assert.ok(b.length<=150000);assert.equal(crypto.createHash('sha256').update(b).digest('hex'),p.webpSHA256);assert.ok(!hashes.has(p.webpSHA256));hashes.add(p.webpSHA256);}
-}else{for(const locale of ['fr','en']){assert.ok(!approvedDestinationSlugs.has(g.slug+'/'+locale));assert.ok(!approvedCategorySlugs.has('hotels/'+g.slug+'/'+locale));}console.log('Desaru Coast preview structure validated; release requires imagery and exact mappings.');}
+const m=require('../data/travel/desaruCoastMediaCandidates.json'),v=require('../data/travel/desaruCoastNuiteeVerified.json');
+const g=featuredCityGuides['desaru-coast'];
+assert.equal(Object.keys(featuredCityGuides).length,88);
+assert.equal(Object.keys(g.photos).length,9);assert.equal(g.hotels.length,4);
+assert.equal(m.destinationScenes.length,9);assert.equal(m.hotels.length,12);assert.equal(confirmedDesaruCoastPreviewAssets.size,21);
+assert.equal(desaruCoastDraftFaq.fr.length,10);assert.equal(desaruCoastDraftFaq.en.length,10);
+const hashes=new Set();
+for(const p of [...m.destinationScenes,...m.hotels]){
+ assert.ok(p.commercialRightsCleared&&p.visuallyVerified&&p.previewVisualApproved);
+ const b=fs.readFileSync('public'+p.localPath);assert.equal(b.toString('ascii',0,4),'RIFF');assert.equal(b.toString('ascii',8,12),'WEBP');
+ assert.equal(crypto.createHash('sha256').update(b).digest('hex'),p.webpSHA256);assert.ok(b.length<=150000);assert.ok(!hashes.has(p.webpSHA256));hashes.add(p.webpSHA256);
+ if(p.type==='wikimedia'){assert.ok(p.credit&&p.licenseUrl);assert.match(p.sourcePage,/^https:\/\/commons.wikimedia.org\/wiki\/File:/);}
+ else{assert.match(p.sourceResolvedUrl,/^https:\/\/nuitee-hotels\.b-cdn\.net\/hotels\//);assert.equal(p.sourcePage,'https://bosphoras.nuitee.link/hotels/'+v.hotels.find(h=>h.name===p.hotel).id);}
+}
+for(const h of g.hotels){
+ const id=v.hotels.find(x=>x.name===h.name).id;assert.equal(desaruCoastHotelEditorial[h.name].photos.length,3);
+ for(const locale of ['fr','en']){
+  assert.ok(approvedDestinationSlugs.has('desaru-coast/'+locale));assert.ok(approvedCategorySlugs.has('hotels/desaru-coast/'+locale));
+  const t=bookingTarget('desaru-coast:'+h.name,locale);assert.ok(t.exact);const u=new URL(t.href);assert.equal(u.pathname,'/hotels/'+id);assert.equal(u.searchParams.get('language'),locale);assert.equal(u.searchParams.get('clientReference'),'bosphoras_desaru-coast_'+id);
+ }
+}
+console.log('Desaru Coast #88 PASS: 9 geographic images, 12 exact hotel images, 4 direct suppliers FR/EN, 20 FAQs, 88 registered guides');
