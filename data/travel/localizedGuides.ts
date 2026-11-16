@@ -1,3 +1,4 @@
+import paris from './localized/paris.json';
 import istanbul from './localized/istanbul.json';
 import desaru from './localized/desaru-coast.json';
 import ruDrafts from './localized/ru-drafts.json';
@@ -13,12 +14,12 @@ export type LocalizedGuide={
 };
 export function isEditorialLocale(locale:string):locale is EditorialLocale{return locale==='ru'||locale==='ar';}
 const drafts:Record<EditorialLocale,Record<string,LocalizedGuide>>={ru:ruDrafts,ar:arDrafts};
-const localized:Record<string,Partial<Record<EditorialLocale,LocalizedGuide>>>={'desaru-coast':desaru,istanbul};
+const localized:Record<string,Partial<Record<EditorialLocale,LocalizedGuide>>>={'desaru-coast':desaru,istanbul,paris};
 export function getLocalizedGuide(slug:string|undefined,locale:string):LocalizedGuide|undefined{
  if(!slug||!isEditorialLocale(locale))return undefined;
  const data=localized[slug]?.[locale]||drafts[locale][slug];if(!data)return undefined;
  const native=nativeTravelNames[slug];if(!native)return data;
- return {...data,name:native[locale],country:native.country[locale],seoTitle:localizedDestinationTitle(slug,locale,data.name),hotelSeoTitle:localizedHotelTitle(slug,locale,data.name),seoDescription:seoSnippet(data.seoDescription)};
+ return {...data,name:native[locale],country:native.country[locale],seoTitle:localized[slug]?.[locale]?data.seoTitle:localizedDestinationTitle(slug,locale,data.name),hotelSeoTitle:localized[slug]?.[locale]?data.hotelSeoTitle:localizedHotelTitle(slug,locale,data.name),seoDescription:seoSnippet(data.seoDescription)};
 }
 // Keep translated drafts out of the sitemap until content and rendering are reviewed.
 export const reviewedLocalizedGuides:ReadonlySet<string>=new Set<string>(['desaru-coast/ru','desaru-coast/ar']);
