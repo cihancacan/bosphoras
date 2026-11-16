@@ -1,0 +1,24 @@
+name: Langkawi 87 — premium release checks
+on:
+  push:
+    branches: [feature/travel-langkawi-87]
+    paths:
+      - 'data/travel/langkawiGuide.ts'
+      - 'scripts/check-langkawi-87.cjs'
+permissions:
+  contents: read
+jobs:
+  checks:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: node -r ./scripts/register-ts.cjs scripts/check-langkawi-87.cjs
+      - run: node -r ./scripts/register-ts.cjs scripts/check-travel-direct-room-links.cjs
+      - run: node scripts/check-travel-catalogue.mjs
+      - run: npm run typecheck
