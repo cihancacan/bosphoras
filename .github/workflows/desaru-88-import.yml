@@ -1,0 +1,46 @@
+name: Import Bosphoras Desaru Coast 88 reviewed WebP assets
+on:
+  push:
+    branches: [feature/travel-desaru-coast-88]
+    paths: ['.github/workflows/desaru-88-import.yml']
+permissions:
+  contents: write
+jobs:
+  import-reviewed-media:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - name: Import immutable reviewed media bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --show-error --silent --location --retry 3 --retry-all-errors --max-time 120 'https://sb-646mikujdj5e.vercel.run/desaru88-release.tar.gz' -o /tmp/desaru88-release.tar.gz
+          echo '24a9b55f9e0fa287eef41050745d222ce2651c29eba9544642735aa6586e9014  /tmp/desaru88-release.tar.gz' | sha256sum --check
+          test "$(tar -tzf /tmp/desaru88-release.tar.gz | wc -l)" -eq 25
+          tar -xzf /tmp/desaru88-release.tar.gz -C .
+          python3 - <<'PY'
+          import json, hashlib, pathlib
+          m=json.load(open('data/travel/desaruCoastMediaCandidates.json'))
+          assert len(m['destinationScenes'])==9 and len(m['hotels'])==12
+          hashes=set()
+          for p in m['destinationScenes']+m['hotels']:
+            assert p['visuallyVerified'] and p['commercialRightsCleared'] and p['previewVisualApproved']
+            b=pathlib.Path('public'+p['localPath']).read_bytes()
+            h=hashlib.sha256(b).hexdigest()
+            assert b[:4]==b'RIFF' and b[8:12]==b'WEBP' and len(b)<=150000 and h==p['webpSHA256'] and h not in hashes
+            hashes.add(h)
+          print('21 reviewed WebP assets passed')
+          PY
+      - name: Commit reviewed media to destination branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- data/travel/desaruCoastMediaCandidates.json public/images/travel/desaru-coast-premium
+          git diff --cached --check
+          git commit -m 'assets(travel): Desaru Coast 88 reviewed destination and hotel WebPs [skip ci]'
+          git push origin HEAD:refs/heads/feature/travel-desaru-coast-88
