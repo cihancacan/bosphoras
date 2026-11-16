@@ -1,3 +1,4 @@
+import zermatt from './localized/zermatt.json';
 import gstaad from './localized/gstaad.json';
 import verbier from './localized/verbier.json';
 import valDisere from './localized/val-disere.json';
@@ -28,7 +29,7 @@ export type LocalizedGuide={
 };
 export function isEditorialLocale(locale:string):locale is EditorialLocale{return locale==='ru'||locale==='ar';}
 const drafts:Record<EditorialLocale,Record<string,LocalizedGuide>>={ru:ruDrafts,ar:arDrafts};
-const localized:Record<string,Partial<Record<EditorialLocale,LocalizedGuide>>>={'desaru-coast':desaru,istanbul,paris,bodrum,antalya,dubai,'saint-tropez':saintTropez,bali,phuket,'new-york':newYork,miami,'los-angeles':losAngeles,'courchevel-1850':courchevel,megeve,'val-disere':valDisere,verbier,gstaad};
+const localized:Record<string,Partial<Record<EditorialLocale,LocalizedGuide>>>={'desaru-coast':desaru,istanbul,paris,bodrum,antalya,dubai,'saint-tropez':saintTropez,bali,phuket,'new-york':newYork,miami,'los-angeles':losAngeles,'courchevel-1850':courchevel,megeve,'val-disere':valDisere,verbier,gstaad,zermatt};
 export function getLocalizedGuide(slug:string|undefined,locale:string):LocalizedGuide|undefined{
  if(!slug||!isEditorialLocale(locale))return undefined;
  const data=localized[slug]?.[locale]||drafts[locale][slug];if(!data)return undefined;
