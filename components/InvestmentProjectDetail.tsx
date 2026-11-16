@@ -73,6 +73,7 @@ export async function InvestmentProjectDetail({code,locale}:{code:InvestmentVent
       </div>}
       <Link href={request} className="mt-8 flex min-h-14 items-center justify-center gap-3 rounded-lg bg-[#193344] px-5 py-4 text-sm font-medium text-white">{fr?'Demander un placement':'Request investment'}<ArrowRight size={17}/></Link>
       <Link href={request+'?kind=access'} className="mt-4 block text-center text-sm font-medium text-[#193344] underline underline-offset-4">{fr?'Demander l’accès au dossier':'Request dossier access'}</Link>
+      {proposedLoan(code)&&<a href="/documents/panorama-grup-projet-contrat-pret.pdf" download className="mt-4 flex items-center justify-center gap-2 rounded-lg border border-[#cad6dc] px-5 py-3 text-center text-sm text-[#193344]"><FileText size={16}/>{fr?'Consulter le projet de contrat (PDF)':'View draft loan agreement (French PDF)'}</a>}
       {safeInvestmentWebsite(p.official_website)&&<a href={safeInvestmentWebsite(p.official_website)} target="_blank" rel="noopener noreferrer" className="mt-5 block rounded-lg border border-[#cad6dc] px-5 py-3 text-center text-sm text-[#193344]">{fr?'Visiter le site officiel':'Visit official website'} ↗</a>}
       <p className="mt-5 text-xs leading-6 text-[#73828b]">{fr?'Demande sans engagement. Aucun prélèvement à cette étape.':'Non-binding enquiry. No debit at this stage.'}</p>
      </section>
