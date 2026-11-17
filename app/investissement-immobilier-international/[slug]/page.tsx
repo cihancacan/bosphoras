@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { buildMetadata } from '@/lib/seo';
 import { fetchPropertyBySlug } from '@/lib/propertyStore';
-import { getPropertyPath } from '@/data/propertyDesk';
+import { getPropertyPath, isInternationalProperty } from '@/data/propertyDesk';
 import { getLocalePath, siteUrl } from '@/lib/routes';
 import { PropertyDetailPage } from '@/components/PropertyDetailPage';
 
@@ -16,14 +16,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!property) return {};
   return buildMetadata({
     locale,
-    path: getPropertyPath(locale, property, true),
+    path: getPropertyPath(locale, property),
     title: property.seoTitle[locale] || property.title[locale],
     description: property.seoDescription[locale] || property.summary[locale],
     image: property.heroImage || property.images[0],
     alternates: Object.fromEntries(
       (['fr','en','ru','ar'] as const).map((targetLocale) => [
         targetLocale,
-        siteUrl + getLocalePath(targetLocale, getPropertyPath(targetLocale, property, true)),
+        siteUrl + getLocalePath(targetLocale, getPropertyPath(targetLocale, property)),
       ])
     ),
   });
@@ -32,5 +32,5 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function Page({ params }: PageProps) {
   const property = await fetchPropertyBySlug(locale, decodeURIComponent(params.slug));
   if (!property) notFound();
-  return <PropertyDetailPage locale={locale} property={property} globalMode />;
+  return <PropertyDetailPage locale={locale} property={property} globalMode={isInternationalProperty(property)} />;
 }

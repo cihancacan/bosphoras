@@ -10,7 +10,7 @@ import { programmaticPages } from '@/data/programmatic/pages';
 import { ENABLE_ALL_PROGRAMMATIC_PAGES, ENABLE_PRIORITY_3_IN_SITEMAP } from '@/lib/launchConfig';
 import { longTailTaxSitemapUrls } from '@/data/longTailTaxRoutes';
 import { allBosphorasSeoPages } from '@/data/bosphorasSeoRegistry';
-import { getPropertyPath } from '@/data/propertyDesk';
+import { getPropertyPath, globalPropertyHubPaths } from '@/data/propertyDesk';
 import { fetchPublishedProperties } from '@/lib/propertyStore';
 import {
   getTransferKeywordHref,
@@ -177,6 +177,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Same approval gate as page robots and reciprocal HTML hreflang. No drafts in sitemap.
   for(const url of indexedTravelUrls(siteUrl)) addEntry({url,changeFrequency:'monthly',priority:0.8});
 
+  for(const locale of locales) addEntry({url:getCanonicalUrl(locale,globalPropertyHubPaths[locale]),changeFrequency:'weekly',priority:0.9});
   const publishedProperties = await fetchPublishedProperties();
   for (const property of publishedProperties) {
     for (const locale of locales) {

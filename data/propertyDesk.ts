@@ -111,7 +111,11 @@ export function getPropertyBySlug(locale: Locale, slug: string): PropertyListing
   return getPublishedProperties().find((property) => property.slugs[locale].replace(/^\//, '').replace(/\/$/, '') === normalized);
 }
 
-export function getPropertyPath(locale: Locale, property: PropertyListing, global = false): string {
+export function isInternationalProperty(property: Pick<PropertyListing,'countryCode'|'countryName'>): boolean {
+  return property.countryCode ? property.countryCode.toUpperCase() !== 'TR' : Boolean(property.countryName && !/^(turkey|türkiye|turquie|турция|تركيا)$/i.test(property.countryName.trim()));
+}
+
+export function getPropertyPath(locale: Locale, property: PropertyListing, global = isInternationalProperty(property)): string {
   const hub = global ? globalPropertyHubPaths[locale] : propertyHubPaths[locale];
   const slug = property.slugs[locale].replace(/^\//, '');
   return `${hub}/${slug}`;

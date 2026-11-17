@@ -23,7 +23,7 @@ import type { Locale } from '@/lib/i18n';
 import { localeDir } from '@/lib/i18n';
 import {
   formatPropertyPrice,
-  propertyLocationLabel, propertyCityLabel, propertyUnitLabel, propertyDeliveryLabel,
+  propertyLocationLabel, propertyCityLabel, propertyUnitLabel, propertyDeliveryLabel, isInternationalProperty,
   getPropertyPath,
   globalPropertyHubPaths,
   propertyHubPaths,
@@ -324,7 +324,7 @@ function statusLabel(status: PropertyListing['status'], c: any) {
   return c[status] || status;
 }
 
-export function PropertyDetailPage({ locale, property, globalMode = false }: PropertyDetailPageProps) {
+export function PropertyDetailPage({ locale, property, globalMode = isInternationalProperty(property) }: PropertyDetailPageProps) {
   const c = labels(locale, globalMode);
   const hubBase = globalMode ? globalPropertyHubPaths[locale] : propertyHubPaths[locale];
   const fullPath = getLocalePath(locale, getPropertyPath(locale, property, globalMode));

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { buildMetadata } from '@/lib/seo';
 import { fetchPropertyBySlug } from '@/lib/propertyStore';
-import { getPropertyPath } from '@/data/propertyDesk';
+import { getPropertyPath, isInternationalProperty } from '@/data/propertyDesk';
 import { getLocalePath, siteUrl } from '@/lib/routes';
 import { PropertyDetailPage } from '@/components/PropertyDetailPage';
 
@@ -32,5 +32,5 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 export default async function Page({ params }: PageProps) {
   const property = await fetchPropertyBySlug(locale, decodeURIComponent(params.slug));
   if (!property) notFound();
-  return <PropertyDetailPage locale={locale} property={property} />;
+  return <PropertyDetailPage locale={locale} property={property} globalMode={isInternationalProperty(property)} />;
 }
