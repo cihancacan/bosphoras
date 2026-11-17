@@ -16,4 +16,5 @@ jobs:
       - run: npm ci --ignore-scripts --no-audit --no-fund
       - run: node -r ./scripts/register-ts.cjs scripts/check-edited-travel-localizations.cjs
       - run: node -r ./scripts/register-ts.cjs scripts/check-travel-localized-seo.cjs
+      - run: node -r ./scripts/register-ts.cjs scripts/check-travel-localized-render.cjs
       - run: npm run typecheck

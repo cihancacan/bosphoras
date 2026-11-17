@@ -1,18 +1,38 @@
 const assert=require('node:assert/strict');
 const {travelDestinations}=require('../data/travel/destinations');
 const {nativeTravelNames}=require('../data/travel/localizedNames');
-const {indexedTravelUrls,indexedTravelAlternates,isTravelGuideIndexable}=require('../data/travel/guideIndexation');
+const {indexedTravelUrls,isTravelGuideIndexable}=require('../data/travel/guideIndexation');
 const {travelPageMetadata}=require('../components/travel/TravelPages');
-const {getLocalizedGuide}=require('../data/travel/localizedGuides');
+const {getLocalizedGuide,reviewedLocalizedGuides}=require('../data/travel/localizedGuides');
 const root='https://www.bosphoras.com';
 assert.equal(Object.keys(nativeTravelNames).length,88);
-for(const d of travelDestinations){const n=nativeTravelNames[d.slug];assert.ok(n&&/[\u0600-\u06ff]/.test(n.ar)&&/[\u0400-\u052f]/.test(n.ru),d.slug);}
-let urls=indexedTravelUrls(root);assert.equal(urls.length,new Set(urls).size);
-for(const d of travelDestinations)for(const locale of ['fr','en'])for(const variant of ['destinations','hotels']){assert.ok(isTravelGuideIndexable(d.slug,variant,locale),d.slug+'/'+locale);const meta=travelPageMetadata(locale,[variant,d.slug]);assert.equal(meta.robots.index,true);assert.ok(urls.includes(meta.alternates.canonical));}
-for(const locale of ['fr','en','ar','ru'])for(const parts of [[],['destinations'],['hotels']])assert.equal(travelPageMetadata(locale,parts).robots.index,true);
-for(const v of ['destinations','hotels'])for(const locale of ['fr','en','ru','ar']){
- const m=travelPageMetadata(locale,[v,'desaru-coast']);assert.equal(m.robots.index,true);assert.deepEqual(Object.keys(m.alternates.languages).sort(),['ar','en','fr','ru']);assert.equal(m.alternates.canonical,root+(locale==='fr'?'':'/'+locale)+'/travel/'+v+'/desaru-coast');assert.ok(urls.includes(m.alternates.canonical));
- if(locale==='ar'||locale==='ru'){assert.ok((locale==='ar'?/[\u0600-\u06ff]/:/[\u0400-\u052f]/).test(m.title));assert.ok(m.description.length<=160&&m.openGraph.images&&m.twitter);}
+assert.equal(travelDestinations.length,88);
+assert.equal(reviewedLocalizedGuides.size,176);
+const urls=indexedTravelUrls(root), known=new Set(urls);
+assert.equal(urls.length,known.size);
+const titles=new Set();
+for(const d of travelDestinations){
+ const n=nativeTravelNames[d.slug];assert.ok(n&&/[\u0600-\u06ff]/.test(n.ar)&&/[\u0400-\u052f]/.test(n.ru),d.slug);
+ for(const locale of ['fr','en','ru','ar'])for(const variant of ['destinations','hotels']){
+  const id=d.slug+'/'+locale+'/'+variant;
+  assert.ok(isTravelGuideIndexable(d.slug,variant,locale),id);
+  const m=travelPageMetadata(locale,[variant,d.slug]);
+  assert.equal(m.robots.index,true,id);assert.ok(known.has(m.alternates.canonical),id);
+  assert.equal(m.alternates.canonical,root+(locale==='fr'?'':'/'+locale)+'/travel/'+variant+'/'+d.slug,id);
+  assert.deepEqual(Object.keys(m.alternates.languages).sort(),['ar','en','fr','ru'],id);
+  for(const [lang,url] of Object.entries(m.alternates.languages))assert.equal(url,root+(lang==='fr'?'':'/'+lang)+'/travel/'+variant+'/'+d.slug,id);
+  if(locale==='ar'||locale==='ru'){
+   const script=locale==='ar'?/[\u0600-\u06ff]/:/[\u0400-\u052f]/;
+   assert.ok(script.test(m.title)&&script.test(m.description),id+' metadata language');
+   assert.ok(m.description.length<=160&&m.description.length>0&&m.openGraph.images&&m.twitter,id);
+   assert.ok(!titles.has(m.title),id+' duplicate title');titles.add(m.title);
+   for(const image of m.openGraph.images){const u=new URL(typeof image==='string'?image:image.url);assert.equal(u.protocol,'https:',id);assert.ok(!u.pathname.includes('https://'),id+' malformed image URL');}
+   assert.ok(getLocalizedGuide(d.slug,locale),id);
+  }
+ }
 }
-for(const d of travelDestinations)for(const locale of ['ar','ru'])for(const variant of ['destinations','hotels'])if(!isTravelGuideIndexable(d.slug,variant,locale))assert.ok(!urls.includes(root+'/'+locale+'/travel/'+variant+'/'+d.slug));
-console.log('88 native names, reviewed-only sitemap, localized titles, canonical URLs and reciprocal hreflang verified.',urls.length,'URLs');
+for(const locale of ['fr','en','ar','ru'])for(const parts of [[],['destinations'],['hotels']])assert.equal(travelPageMetadata(locale,parts).robots.index,true);
+assert.equal(titles.size,352);
+assert.equal(urls.filter(u=>/\/travel\/(destinations|hotels)\/[^/]+$/.test(u)).length,704);
+assert.equal(travelPageMetadata('ru',['destinations','nonexistent']).robots.index,false);
+console.log('704 public FR/EN/RU/AR guide and hotel routes: robots, sitemap, reciprocal hreflang, localized metadata and image URLs verified.',urls.length,'travel URLs');

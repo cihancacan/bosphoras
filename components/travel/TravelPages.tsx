@@ -270,7 +270,7 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     const city=featuredCityGuide(route.destination?.slug);
     const image=city?(getApprovedDestinationPhotos(city).find(p=>p.src===city.photos[city.hero]?.src)||getApprovedDestinationPhotos(city)[0]):undefined;
     const imageAlt=localizedGuide.name;
-    return {title:title+' | Bosphoras Luxury Stays',description,alternates:{canonical,...(ready?{languages}:{})},openGraph:{title,description,url:canonical,siteName:'Bosphoras Luxury Stays',type:'website',...(image?{images:[{url:ORIGIN+image.src,alt:imageAlt}]}:{})},twitter:{card:'summary_large_image',title,description,...(image?{images:[ORIGIN+image.src]}:{})},robots:{index:ready,follow:true,googleBot:{index:ready,follow:true,'max-image-preview':'large'}}};
+    return {title:title+' | Bosphoras Luxury Stays',description,alternates:{canonical,...(ready?{languages}:{})},openGraph:{title,description,url:canonical,siteName:'Bosphoras Luxury Stays',type:'website',...(image?{images:[{url:new URL(image.src,ORIGIN).href,alt:imageAlt}]}:{})},twitter:{card:'summary_large_image',title,description,...(image?{images:[new URL(image.src,ORIGIN).href]}:{})},robots:{index:ready,follow:true,googleBot:{index:ready,follow:true,'max-image-preview':'large'}}};
   }
   const isFlagship = route.kind === 'keyword' && route.destination?.slug === 'istanbul' && route.category === 'hotels' && (locale === 'fr' || locale === 'en');
   const featureGuide = (locale === 'fr' || locale === 'en') ? featuredCityGuide(route.destination?.slug) : undefined;
