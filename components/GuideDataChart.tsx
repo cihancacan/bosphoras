@@ -368,6 +368,71 @@ const charts: Record<string, ChartSpec | undefined> = {
         ]
       }
     ]
+  },
+  "family-holding-turkey": {
+    "section": "company-1",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          50000,
+          250000,
+          500000
+        ]
+      }
+    ]
+  },
+  "wealth-holding-turkey": {
+    "section": "company-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          250000,
+          50000,
+          0
+        ]
+      }
+    ]
+  },
+  "international-company-turkey": {
+    "section": "company-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          250000,
+          200000,
+          125000
+        ]
+      }
+    ]
+  },
+  "create-company-turkey-from-dubai": {
+    "section": "company-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          15000,
+          12000,
+          10000
+        ]
+      }
+    ]
+  },
+  "management-company-turkey": {
+    "section": "company-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          250000,
+          12500,
+          0
+        ]
+      }
+    ]
   }
 };
 const captions: Record<Locale,string> = { fr: 'Visualisation des montants du tableau', en: 'Visual comparison of the amounts above', ru: 'Наглядное сравнение сумм из таблицы', ar: 'مقارنة مرئية للمبالغ في الجدول' };

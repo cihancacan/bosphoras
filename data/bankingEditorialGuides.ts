@@ -1764,6 +1764,50 @@ export const bankingEditorialGuides: Record<string, Record<Locale, EditorialGuid
           "id": "bank-5",
           "title": "Change, sécurité et patrimoine",
           "body": "Comparez le coût global : commission, taux de conversion effectif, frais de réception et correspondants ; un écart de change hypothétique de 1 % sur 100 000 € représente 1 000 €. Ne convertissez pas le capital intégral sans stratégie de devises et vérifiez l'éligibilité à la garantie TMSF. Contrôlez les coordonnées bancaires par un canal indépendant avant paiement. Conservez ordre SWIFT, avis de crédit, taux appliqué et dossier d'origine."
+        },
+        {
+          "id": "asset-repatriation-7582",
+          "title": "Rapatriement d'actifs : dispositif temporaire de la loi 7582",
+          "body": "L'article provisoire 19 de la loi IS permet de notifier certains actifs admissibles (argent, or, devises et instruments financiers) jusqu'au 31 juillet 2027, puis de les transférer en Turquie dans les deux mois. Le taux de base en 2026 est 5 %, réduit à 4, 3, 2, 1 ou 0 % pour un engagement de placement admissible d'au moins un, deux, trois, quatre ou cinq ans. Du 1er janvier au 31 juillet 2027 les taux augmentent de 0,5 point. Des obligations de conservation, comptabilisation et paiement s'appliquent ; l'avantage est perdu si les conditions ne sont pas respectées. Ce dispositif facultatif est distinct d'un simple virement de capital justifié. Il ne dispense pas des contrôles MASAK ni des obligations étrangères.",
+          "table": {
+            "headers": [
+              "Engagement admissible",
+              "Taux 2026",
+              "Taux jan.–juil. 2027"
+            ],
+            "rows": [
+              [
+                "Sans engagement",
+                "5%",
+                "5.5%"
+              ],
+              [
+                "1 an",
+                "4%",
+                "4.5%"
+              ],
+              [
+                "2 ans",
+                "3%",
+                "3.5%"
+              ],
+              [
+                "3 ans",
+                "2%",
+                "2.5%"
+              ],
+              [
+                "4 ans",
+                "1%",
+                "1.5%"
+              ],
+              [
+                "5 ans",
+                "0%",
+                "0.5%"
+              ]
+            ]
+          }
         }
       ],
       "faqs": [
@@ -1804,6 +1848,10 @@ export const bankingEditorialGuides: Record<string, Record<Locale, EditorialGuid
         {
           "href": "https://ivdb.gib.gov.tr/mevzuat/tur/5/anlasma/1",
           "label": "GİB : accords de transparence fiscale"
+        },
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf",
+          "label": "Loi 7582 du 4 juin 2026"
         }
       ]
     },
@@ -1861,6 +1909,50 @@ export const bankingEditorialGuides: Record<string, Record<Locale, EditorialGuid
           "id": "bank-5",
           "title": "Currency, security and assets",
           "body": "Compare total cost: fee, effective FX rate, receiving and correspondent costs. A hypothetical 1% exchange spread on €100,000 costs €1,000. Avoid converting all assets without a currency plan and check TMSF eligibility. Verify payment details independently. Retain SWIFT instruction, credit confirmation, rate and source documents."
+        },
+        {
+          "id": "asset-repatriation-7582",
+          "title": "Temporary asset repatriation under Law 7582",
+          "body": "Provisional Article 19 of the corporate tax law allows notification of certain qualifying assets (cash, gold, foreign currency and financial instruments) until 31 July 2027, followed by transfer to Turkey within two months. The 2026 base rate is 5%, reduced to 4, 3, 2, 1 or 0% for eligible investment commitments of at least one, two, three, four or five years. From January to July 2027 rates rise by 0.5 percentage point. Holding, accounting and payment requirements apply; benefits are lost if conditions are breached. This optional programme is distinct from ordinary documented capital transfers. MASAK checks and foreign obligations remain.",
+          "table": {
+            "headers": [
+              "Eligible commitment",
+              "2026 rate",
+              "Jan–Jul 2027 rate"
+            ],
+            "rows": [
+              [
+                "No commitment",
+                "5%",
+                "5.5%"
+              ],
+              [
+                "1 year",
+                "4%",
+                "4.5%"
+              ],
+              [
+                "2 years",
+                "3%",
+                "3.5%"
+              ],
+              [
+                "3 years",
+                "2%",
+                "2.5%"
+              ],
+              [
+                "4 years",
+                "1%",
+                "1.5%"
+              ],
+              [
+                "5 years",
+                "0%",
+                "0.5%"
+              ]
+            ]
+          }
         }
       ],
       "faqs": [
@@ -1901,6 +1993,10 @@ export const bankingEditorialGuides: Record<string, Record<Locale, EditorialGuid
         {
           "href": "https://ivdb.gib.gov.tr/mevzuat/tur/5/anlasma/1",
           "label": "GİB information exchange agreements"
+        },
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf",
+          "label": "Law 7582 of 4 June 2026"
         }
       ]
     },
@@ -1958,6 +2054,50 @@ export const bankingEditorialGuides: Record<string, Record<Locale, EditorialGuid
           "id": "bank-5",
           "title": "Валюта, безопасность и активы",
           "body": "Сравните комиссии, фактический курс и расходы получателя и корреспондентов. Условная разница курса 1% на 100 000 евро стоит 1 000 евро. Не конвертируйте всё без валютного плана, проверьте TMSF. Проверяйте реквизиты независимо, храните поручение SWIFT, зачисление, курс и документы происхождения."
+        },
+        {
+          "id": "asset-repatriation-7582",
+          "title": "Временный режим возвращения активов по закону № 7582",
+          "body": "Временная статья 19 корпоративного закона позволяет уведомить о подходящих средствах, золоте, валюте и финансовых инструментах до 31 июля 2027 года и перевести их в Турцию за два месяца. Базовая ставка 2026 года — 5%, при обязательстве подходящего размещения на один, два, три, четыре или пять лет — 4, 3, 2, 1 или 0%. С января по июль 2027 ставки повышаются на 0,5 процентного пункта. Действуют условия хранения, учёта и уплаты; при нарушении льгота утрачивается. Это добровольная программа, отличная от обычного перевода подтверждённого капитала. Проверки MASAK и иностранные обязанности сохраняются.",
+          "table": {
+            "headers": [
+              "Срок размещения",
+              "Ставка 2026",
+              "Янв.–июль 2027"
+            ],
+            "rows": [
+              [
+                "Без обязательства",
+                "5%",
+                "5.5%"
+              ],
+              [
+                "1 год",
+                "4%",
+                "4.5%"
+              ],
+              [
+                "2 года",
+                "3%",
+                "3.5%"
+              ],
+              [
+                "3 года",
+                "2%",
+                "2.5%"
+              ],
+              [
+                "4 года",
+                "1%",
+                "1.5%"
+              ],
+              [
+                "5 лет",
+                "0%",
+                "0.5%"
+              ]
+            ]
+          }
         }
       ],
       "faqs": [
@@ -1998,6 +2138,10 @@ export const bankingEditorialGuides: Record<string, Record<Locale, EditorialGuid
         {
           "href": "https://ivdb.gib.gov.tr/mevzuat/tur/5/anlasma/1",
           "label": "GİB: соглашения об обмене"
+        },
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf",
+          "label": "Закон № 7582 от 4 июня 2026"
         }
       ]
     },
@@ -2055,6 +2199,50 @@ export const bankingEditorialGuides: Record<string, Record<Locale, EditorialGuid
           "id": "bank-5",
           "title": "الصرف والأمن والأصول",
           "body": "قارن الرسوم وسعر الصرف الفعلي وتكاليف الاستلام والمراسلين. فرق صرف افتراضي 1% على 100 ألف يورو يساوي ألفاً. لا تحول كل الأصول لعملة واحدة دون خطة وتحقق من TMSF. تحقق من بيانات الدفع بقناة مستقلة واحتفظ بأمر SWIFT وإثبات الإيداع والسعر ووثائق المصدر."
+        },
+        {
+          "id": "asset-repatriation-7582",
+          "title": "برنامج إعادة الأصول المؤقت وفق القانون 7582",
+          "body": "تتيح المادة المؤقتة 19 إخطار بعض الأصول المؤهلة مثل النقد والذهب والعملات والأدوات المالية حتى 31 يوليو 2027 ونقلها إلى تركيا خلال شهرين. المعدل الأساسي 5% في 2026 ويخفض إلى 4 أو 3 أو 2 أو 1 أو صفر عند التزام استثمار مؤهل لمدة سنة أو سنتين أو ثلاث أو أربع أو خمس سنوات على الأقل. ترتفع المعدلات نصف نقطة من يناير إلى يوليو 2027. تطبق شروط الاحتفاظ والمحاسبة والدفع وتفقد المزايا عند الإخلال. البرنامج اختياري ومختلف عن تحويل رأس مال موثق عادي ولا يلغي تحقق MASAK أو الالتزامات الأجنبية.",
+          "table": {
+            "headers": [
+              "مدة الالتزام المؤهل",
+              "معدل 2026",
+              "يناير–يوليو 2027"
+            ],
+            "rows": [
+              [
+                "دون التزام",
+                "5%",
+                "5.5%"
+              ],
+              [
+                "سنة",
+                "4%",
+                "4.5%"
+              ],
+              [
+                "سنتان",
+                "3%",
+                "3.5%"
+              ],
+              [
+                "ثلاث سنوات",
+                "2%",
+                "2.5%"
+              ],
+              [
+                "أربع سنوات",
+                "1%",
+                "1.5%"
+              ],
+              [
+                "خمس سنوات",
+                "0%",
+                "0.5%"
+              ]
+            ]
+          }
         }
       ],
       "faqs": [
@@ -2095,6 +2283,10 @@ export const bankingEditorialGuides: Record<string, Record<Locale, EditorialGuid
         {
           "href": "https://ivdb.gib.gov.tr/mevzuat/tur/5/anlasma/1",
           "label": "إدارة الضرائب: اتفاقيات التبادل"
+        },
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf",
+          "label": "القانون 7582 بتاريخ 4 يونيو 2026"
         }
       ]
     }
