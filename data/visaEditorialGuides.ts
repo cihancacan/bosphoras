@@ -12025,5 +12025,1951 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
         }
       ]
     }
+  },
+  "turkey-residence-renewal": {
+    "fr": {
+      "title": "Renouveler son ikamet en Turquie en 2026 : délai, documents et procédure",
+      "metaDescription": "Renouvelez votre titre de séjour turc : calendrier des 60 jours, documents, frais de carte, adresse et voyages pendant l'instruction.",
+      "shortAnswer": "Une demande de renouvellement s'effectue au plus tôt 60 jours avant l'expiration de l'ikamet et impérativement avant la date de fin. Le renouvellement n'est pas automatique : le motif doit toujours être valable et les justificatifs à jour.",
+      "bosphorasHelp": "Bosphoras coordonne la préparation pratique de votre projet, les visites et les rendez-vous avec les professionnels indépendants appropriés. Les autorités instruisent les demandes de séjour ; aucun résultat administratif ou financier n'est garanti.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Fixer la date limite",
+          "body": "Pour une carte expirant le 30 avril 2027, la fenêtre de dépôt commence le 1er mars 2027. Déposez avant l'expiration, sans attendre le dernier jour. Commencez à réunir les justificatifs plusieurs semaines auparavant, notamment si le passeport doit être renouvelé, l'assurance prolongée ou le bail actualisé.",
+          "table": {
+            "headers": [
+              "Étape",
+              "Quand"
+            ],
+            "rows": [
+              [
+                "Préparation des pièces",
+                "Avant la fenêtre de dépôt"
+              ],
+              [
+                "Dépôt e-ikamet",
+                "60 derniers jours et avant expiration"
+              ],
+              [
+                "Remise des pièces",
+                "Selon les instructions du dossier"
+              ],
+              [
+                "Décision",
+                "90 jours à compter du dossier complet"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Utiliser la bonne démarche",
+          "body": "Ouvrez e-ikamet, choisissez la prolongation et renseignez votre numéro d'étranger ainsi que votre titre actuel. En cas de changement de motif, sélectionnez la procédure de transfert appropriée. Respectez les modalités de remise des pièces indiquées dans votre formulaire généré, qui peuvent évoluer selon la province et le type de demande."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Actualiser le dossier",
+          "body": "Préparez l'ancien titre, le passeport, les photos biométriques récentes, l'assurance couvrant la nouvelle durée, les ressources et la preuve du motif de séjour. L'adresse doit être enregistrée lors d'une prolongation ou d'un transfert. Un propriétaire actualise les justificatifs fonciers ; un étudiant produit une inscription en cours ; un dossier familial doit toujours remplir les conditions du sponsor."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Coût et preuve de dépôt",
+          "body": "La carte individuelle coûte 964 TL en 2026. À cela peuvent s'ajouter les droits de séjour liés à la nationalité et à la durée, ainsi que l'assurance. Conservez les reçus et le document officiel de demande. Le formulaire et la prise de rendez-vous officiels ne sont pas des services payants d'intermédiaire."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Voyage pendant le traitement",
+          "body": "Avec le document de demande approuvé et les reçus appropriés, les règles permettent des sorties suivies d'un retour dans les 15 jours, sous réserve des autres conditions. Une simple confirmation de rendez-vous ne suffit pas. Si le dossier est refusé, lisez les droits et obligations de la notification et examinez immédiatement le délai de départ ou de contestation."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Puis-je renouveler trois mois avant ?",
+          "answer": "Non : la fenêtre normale commence 60 jours avant expiration."
+        },
+        {
+          "question": "Mon adresse est-elle importante ?",
+          "answer": "Oui, son enregistrement est requis pour les demandes de prolongation et de transfert."
+        },
+        {
+          "question": "Le renouvellement est-il garanti ?",
+          "answer": "Non, le maintien des conditions est contrôlé."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Direction de la migration : types et conditions"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "Formulaire et liste de pièces actualisés de la résidence courte durée (mai 2026)"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/ikamet-izni-hakkinda-sikca-sorulan-34-soru-34-cevap",
+          "label": "Direction de la migration d'Istanbul : refus et procédure"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "Agence publique d'investissement : résidence et seuils"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "Loi turque 6458, articles 21 à 25 et 31 à 33"
+        }
+      ]
+    },
+    "en": {
+      "title": "Renewing a Turkey ikamet in 2026: deadlines and documents",
+      "metaDescription": "Understand the 60-day renewal window, updated documents, address registration, fees and travel while your application is pending.",
+      "shortAnswer": "Apply for an extension no earlier than 60 days before expiry and always before your permit expires. Renewal is not automatic: your residence purpose and evidence must remain valid.",
+      "bosphorasHelp": "Bosphoras coordinates practical arrangements, visits and introductions to appropriate independent professionals. Turkish authorities decide residence applications; administrative or financial outcomes are not guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Set the deadline",
+          "body": "For a permit expiring on 30 April 2027, the filing window opens on 1 March 2027. Apply before expiry rather than waiting until the final day. Prepare documents beforehand, particularly if your passport, insurance or accommodation arrangements need updating.",
+          "table": {
+            "headers": [
+              "Step",
+              "When"
+            ],
+            "rows": [
+              [
+                "Prepare evidence",
+                "Before the filing window"
+              ],
+              [
+                "e-ikamet filing",
+                "Final 60 days and before expiry"
+              ],
+              [
+                "Document submission",
+                "As instructed"
+              ],
+              [
+                "Decision",
+                "90 days from complete file"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Choose the appropriate application",
+          "body": "Open e-ikamet, select extension and enter your foreigner identification number and current permit. If your purpose has changed, use the relevant transfer process. Follow the generated form's document-submission instructions, which may vary by province and application type."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Update the evidence",
+          "body": "Prepare the previous card, passport, recent biometric photographs, insurance for the new period, resources and evidence of purpose. Address registration is mandatory for extensions and transfers. Homeowners update title records, students prove enrolment and family applicants establish continuing sponsor eligibility."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Fees and filing evidence",
+          "body": "The individual residence card fee is TRY 964 in 2026, with any nationality- and duration-specific duty and insurance in addition. Retain receipts and the approved application document. Official online filing and appointments do not require paying an intermediary."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Travel during processing",
+          "body": "The approved application document and relevant receipts may permit travel and return within 15 days under the official conditions. An appointment confirmation alone is insufficient. If refused, read the notification's obligations and promptly assess departure or challenge deadlines."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I renew three months early?",
+          "answer": "No; the normal window opens 60 days before expiry."
+        },
+        {
+          "question": "Does my registered address matter?",
+          "answer": "Yes, registration is required for extension and transfer applications."
+        },
+        {
+          "question": "Is renewal guaranteed?",
+          "answer": "No, continuing eligibility is assessed."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Migration Presidency: categories and conditions"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "Updated short-term application form and document list (May 2026)"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/ikamet-izni-hakkinda-sikca-sorulan-34-soru-34-cevap",
+          "label": "Istanbul Migration Directorate: refusals and procedures"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "Government investment office: residence and thresholds"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "Turkish Law 6458, Articles 21–25 and 31–33"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Продление икамета в Турции в 2026 году: сроки и документы",
+      "metaDescription": "Срок подачи за 60 дней, продление ВНЖ, документы, адресная регистрация, сборы и выезд во время рассмотрения.",
+      "shortAnswer": "Подавать на продление можно не ранее чем за 60 дней до окончания ВНЖ и обязательно до истечения срока. Продление не автоматическое: основание и подтверждающие документы должны оставаться актуальными.",
+      "bosphorasHelp": "Bosphoras координирует практические вопросы, просмотры и встречи с подходящими независимыми специалистами. Решения по ВНЖ принимают турецкие органы; административные и финансовые результаты не гарантируются.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Определите крайний срок",
+          "body": "Если карта действует до 30 апреля 2027 года, окно подачи открывается 1 марта 2027 года. Не откладывайте заявление до последнего дня. Заранее займитесь обновлением паспорта, страхового полиса и документов на жильё.",
+          "table": {
+            "headers": [
+              "Этап",
+              "Когда"
+            ],
+            "rows": [
+              [
+                "Подготовка",
+                "До открытия окна"
+              ],
+              [
+                "Подача e-ikamet",
+                "Последние 60 дней до истечения"
+              ],
+              [
+                "Сдача документов",
+                "По инструкции"
+              ],
+              [
+                "Решение",
+                "90 дней с полного комплекта"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Выберите нужную процедуру",
+          "body": "Откройте e-ikamet, выберите продление, укажите номер иностранца и действующий ВНЖ. Если цель проживания изменилась, используйте процедуру перехода на другую категорию. Следуйте указаниям сформированной анкеты по сдаче документов: порядок может различаться по провинциям и типам заявлений."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Обновите комплект документов",
+          "body": "Подготовьте прежний ВНЖ, паспорт, актуальные биометрические фотографии, страховку на новый срок, подтверждение средств и основания проживания. Для продления и перехода требуется зарегистрированный адрес. Собственник обновляет документы на недвижимость, студент подтверждает обучение, семья — соответствие спонсора условиям."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Сборы и подтверждение подачи",
+          "body": "Карта ВНЖ в 2026 году стоит 964 лиры. Дополнительно возможны сборы по гражданству и сроку, а также расходы на страховку. Сохраняйте квитанции и утверждённый документ заявления. Официальная онлайн-подача и запись бесплатны."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Поездки во время рассмотрения",
+          "body": "Утверждённый документ заявления и соответствующие квитанции могут позволить выезд с возвращением в течение 15 дней при соблюдении правил. Простого подтверждения записи недостаточно. При отказе прочтите уведомление и незамедлительно выясните сроки выезда и обжалования."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно продлить за три месяца?",
+          "answer": "Нет, обычное окно открывается за 60 дней."
+        },
+        {
+          "question": "Важна ли регистрация адреса?",
+          "answer": "Да, она требуется при продлении и смене категории."
+        },
+        {
+          "question": "Гарантируется ли продление?",
+          "answer": "Нет, соответствие условиям проверяется заново."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Миграционная служба: виды и условия"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "Актуальная форма и перечень документов (май 2026)"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/ikamet-izni-hakkinda-sikca-sorulan-34-soru-34-cevap",
+          "label": "Управление миграции Стамбула: отказы и процедуры"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "Государственное инвестиционное агентство: ВНЖ и пороги"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "Закон Турции № 6458, статьи 21–25 и 31–33"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تجديد الإيكامت في تركيا 2026: المواعيد والوثائق والإجراءات",
+      "metaDescription": "تعرف على فترة التجديد قبل 60 يوماً والوثائق المحدثة وتسجيل العنوان والرسوم والسفر أثناء دراسة الطلب.",
+      "shortAnswer": "يقدم طلب التجديد ابتداءً من 60 يوماً قبل انتهاء التصريح ويجب تقديمه قبل انتهاء الصلاحية. التجديد ليس تلقائياً؛ يجب استمرار الأساس القانوني وتحديث المستندات.",
+      "bosphorasHelp": "تنسق Bosphoras الترتيبات العملية والزيارات والمواعيد مع المختصين المستقلين المناسبين. تبت السلطات التركية في طلبات الإقامة ولا يمكن ضمان النتائج الإدارية أو المالية.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "تحديد الموعد النهائي",
+          "body": "إذا انتهت البطاقة في 30 أبريل 2027 تبدأ فترة التقديم في 1 مارس 2027. قدّم قبل الانتهاء ولا تنتظر اليوم الأخير. جهز الوثائق مسبقاً خصوصاً إذا كان الجواز أو التأمين أو إثبات السكن بحاجة إلى تحديث.",
+          "table": {
+            "headers": [
+              "الخطوة",
+              "الموعد"
+            ],
+            "rows": [
+              [
+                "تجهيز الوثائق",
+                "قبل فترة التقديم"
+              ],
+              [
+                "تقديم إلكتروني",
+                "آخر 60 يوماً وقبل الانتهاء"
+              ],
+              [
+                "تسليم الوثائق",
+                "وفق التعليمات"
+              ],
+              [
+                "القرار",
+                "90 يوماً من اكتمال الملف"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "اختيار الإجراء المناسب",
+          "body": "افتح e-ikamet واختر التجديد وأدخل رقم هوية الأجنبي وبيانات التصريح الحالي. إذا تغير غرض الإقامة فاختر إجراء تغيير النوع. اتبع تعليمات تسليم الوثائق في الاستمارة الصادرة حيث قد تختلف بين الولايات وأنواع الطلبات."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "تحديث المستندات",
+          "body": "جهز البطاقة السابقة والجواز والصور البيومترية الحديثة والتأمين للمدة الجديدة وإثبات الموارد والغرض. تسجيل العنوان إلزامي للتجديد وتغيير النوع. يحدث المالك وثائق الملكية ويثبت الطالب تسجيله وتثبت الأسرة استمرار أهلية الكفيل."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "الرسوم وإثبات الطلب",
+          "body": "رسم البطاقة الفردية لعام 2026 هو 964 ليرة. وقد تضاف رسوم بحسب الجنسية والمدة والتأمين. احتفظ بالإيصالات ومستند الطلب المعتمد. التقديم الإلكتروني والموعد الرسمي مجانيان ولا يستلزمان دفع أتعاب لوسيط."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "السفر أثناء دراسة الطلب",
+          "body": "قد يسمح المستند المعتمد والإيصالات بالخروج والعودة خلال 15 يوماً وفق الشروط الرسمية. لا يكفي تأكيد الموعد وحده. إذا رفض الطلب اقرأ الالتزامات والحقوق الواردة في الإخطار وحدد بسرعة مهلة المغادرة أو الاعتراض."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل أجدد قبل ثلاثة أشهر؟",
+          "answer": "لا، تبدأ الفترة العادية قبل 60 يوماً."
+        },
+        {
+          "question": "هل يجب تسجيل العنوان؟",
+          "answer": "نعم للتجديد وتغيير نوع الإقامة."
+        },
+        {
+          "question": "هل التجديد مضمون؟",
+          "answer": "لا، يعاد تقييم الشروط."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "إدارة الهجرة: الأنواع والشروط"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "نموذج الإقامة القصيرة وقائمة المستندات المحدثة (مايو 2026)"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/ikamet-izni-hakkinda-sikca-sorulan-34-soru-34-cevap",
+          "label": "إدارة هجرة إسطنبول: الرفض والإجراءات"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "مكتب الاستثمار الحكومي: الإقامة والحدود الاستثمارية"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "القانون التركي 6458، المواد 21–25 و31–33"
+        }
+      ]
+    }
+  },
+  "turkey-residence-rejection": {
+    "fr": {
+      "title": "Refus d'ikamet en Turquie : recours, nouvelle demande et délais",
+      "metaDescription": "Que faire après un refus ou non-renouvellement de résidence en Turquie ? Notification, règle des six mois, départ et contestation.",
+      "shortAnswer": "Un refus de titre de séjour doit être notifié avec les droits et obligations qui en découlent. La priorité est de relever la date de notification, la raison exacte et la situation de séjour actuelle. Un recours ne doit pas être considéré comme une prolongation automatique du droit de rester.",
+      "bosphorasHelp": "Bosphoras coordonne la préparation pratique de votre projet, les visites et les rendez-vous avec les professionnels indépendants appropriés. Les autorités instruisent les demandes de séjour ; aucun résultat administratif ou financier n'est garanti.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Lire la décision officielle",
+          "body": "Demandez la décision écrite et conservez une copie datée. Identifiez s'il s'agit d'un rejet, d'un refus de renouvellement, d'une annulation ou d'un dossier classé faute de pièces. L'article 25 de la loi 6458 prévoit la notification au demandeur ou à son représentant et l'indication des voies de recours. Les attaches familiales et l'intérêt de l'enfant peuvent être pertinents.",
+          "table": {
+            "headers": [
+              "Situation",
+              "Action"
+            ],
+            "rows": [
+              [
+                "Demande de pièce complémentaire",
+                "Respecter le délai de la notification"
+              ],
+              [
+                "Refus du même motif",
+                "Nouvelle demande : règle des 6 mois"
+              ],
+              [
+                "Autre motif réel",
+                "Possible si séjour encore légal et conditions réunies"
+              ],
+              [
+                "Décision contestée",
+                "Faire examiner délai et suspension éventuelle"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Comprendre les motifs de refus",
+          "body": "Pour un titre court, l'absence de preuve du motif, un logement non conforme, des justificatifs insuffisants ou l'utilisation du titre à une autre fin peuvent justifier un refus. Une interdiction d'entrée ou une décision d'éloignement peut également faire obstacle. Comparez les pièces réellement soumises aux exigences de la catégorie et ne tentez pas de corriger un dossier avec de fausses preuves."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Nouvelle demande : la règle des six mois",
+          "body": "La Direction de la migration d'Istanbul indique qu'une demande pour le même motif ne peut pas être renouvelée dans les six mois suivant un rejet. Si le séjour légal est toujours en cours et qu'un autre motif authentique existe, une demande distincte peut être possible. Un changement artificiel de catégorie ne remplace pas une condition légale."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Contestation et droit de rester",
+          "body": "Un avocat turc compétent peut examiner le recours administratif ou juridictionnel, son délai et une éventuelle demande de suspension. La notification et la nature de la décision déterminent les démarches. Le dépôt d'une contestation ne suspend pas de lui-même l'ensemble des obligations de séjour ou de départ ; une mesure d'éloignement distincte peut avoir ses propres délais."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Préparer les prochaines 48 heures",
+          "body": "Conservez notification, passeport, carte précédente, formulaire, reçus, pièces transmises et preuves de la situation familiale. Notez les dates d'expiration et de notification. Si le droit de séjour est incertain, consultez rapidement un avocat avant tout nouveau voyage ou demande. Organisez le départ si les autorités l'imposent ; ne vous fiez pas à une tolérance supposée."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Puis-je redéposer le même motif immédiatement ?",
+          "answer": "Non, le délai indiqué pour le même motif est de six mois."
+        },
+        {
+          "question": "Un recours permet-il automatiquement de rester ?",
+          "answer": "Non. Faites déterminer le statut applicable et l'éventuelle suspension."
+        },
+        {
+          "question": "Une autre catégorie est-elle possible ?",
+          "answer": "Si le séjour reste légal et le nouveau motif est réel et admissible."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Direction de la migration : types et conditions"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/ikamet-izni-hakkinda-sikca-sorulan-34-soru-34-cevap",
+          "label": "Direction de la migration d'Istanbul : refus et procédure"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "Loi turque 6458, articles 21 à 25 et 31 à 33"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey residence permit refusal: appeals, reapplication and deadlines",
+      "metaDescription": "What to do after a rejected or non-renewed Turkish residence permit: notification, the six-month rule, departure obligations and legal review.",
+      "shortAnswer": "A refusal should be formally notified with the applicant's rights and obligations. Establish the notification date, exact reasons and current lawful status first. Filing a challenge is not an automatic extension of residence rights.",
+      "bosphorasHelp": "Bosphoras coordinates practical arrangements, visits and introductions to appropriate independent professionals. Turkish authorities decide residence applications; administrative or financial outcomes are not guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Read and preserve the decision",
+          "body": "Obtain the written decision and preserve a dated copy. Establish whether it concerns refusal, non-renewal, cancellation or closure for missing documents. Article 25 of Law 6458 provides for notification to the applicant or representative and explanation of appeal rights. Family ties and the child's best interests may be relevant.",
+          "table": {
+            "headers": [
+              "Situation",
+              "Action"
+            ],
+            "rows": [
+              [
+                "Further evidence requested",
+                "Meet notice deadline"
+              ],
+              [
+                "Same-purpose refusal",
+                "Six-month reapplication restriction"
+              ],
+              [
+                "Genuine different purpose",
+                "Possible if stay lawful and eligible"
+              ],
+              [
+                "Challenged decision",
+                "Review deadline and potential suspension"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Identify the grounds",
+          "body": "Short-term refusal may result from inadequate evidence of purpose, unsuitable housing, missing evidence or use outside the granted purpose. An entry ban or removal decision may also prevent approval. Compare the submitted evidence with the category's requirements; never use fabricated records."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "The six-month reapplication rule",
+          "body": "The Istanbul Migration Directorate states that the same residence purpose cannot be used again within six months of rejection. Where lawful stay continues and a genuine different basis exists, a separate application may be possible. An artificial change of category is not a substitute for eligibility."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Legal review and lawful stay",
+          "body": "A qualified Turkish lawyer can assess the appropriate administrative or judicial challenge, applicable deadline and possible interim suspension. The notification and decision type govern the procedure. Filing a challenge alone does not suspend all residence or departure obligations; separate removal decisions may have their own deadlines."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "What to prepare in the next 48 hours",
+          "body": "Keep the notification, passport, previous card, application, receipts, submitted evidence and family records. Note expiry and notification dates. If lawful status is uncertain, seek prompt legal advice before another application or trip. Arrange departure when required rather than relying on assumed enforcement discretion."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I reapply immediately on the same basis?",
+          "answer": "No, the official guidance specifies six months for the same purpose."
+        },
+        {
+          "question": "Does an appeal automatically allow me to stay?",
+          "answer": "No; determine your status and any applicable suspension."
+        },
+        {
+          "question": "Can I apply under a different category?",
+          "answer": "Potentially, if your stay remains lawful and the alternative basis is genuine."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Migration Presidency: categories and conditions"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/ikamet-izni-hakkinda-sikca-sorulan-34-soru-34-cevap",
+          "label": "Istanbul Migration Directorate: refusals and procedures"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "Turkish Law 6458, Articles 21–25 and 31–33"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Отказ в ВНЖ Турции: обжалование, повторная подача и сроки",
+      "metaDescription": "Что делать после отказа или непродления икамета: уведомление, шестимесячное ограничение, выезд и правовая защита.",
+      "shortAnswer": "Об отказе в ВНЖ должны официально уведомить с разъяснением прав и обязанностей. Сначала установите дату уведомления, точную причину отказа и текущий статус пребывания. Жалоба сама по себе не продлевает право находиться в стране.",
+      "bosphorasHelp": "Bosphoras координирует практические вопросы, просмотры и встречи с подходящими независимыми специалистами. Решения по ВНЖ принимают турецкие органы; административные и финансовые результаты не гарантируются.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Изучите официальное решение",
+          "body": "Получите письменное решение и сохраните датированную копию. Определите, отказано ли в выдаче, продлении, аннулирован ли ВНЖ или закрыто неполное дело. Статья 25 закона № 6458 предусматривает уведомление заявителя или представителя и разъяснение обжалования. Могут учитываться семейные связи и интересы ребёнка.",
+          "table": {
+            "headers": [
+              "Ситуация",
+              "Действие"
+            ],
+            "rows": [
+              [
+                "Запрос документов",
+                "Соблюсти срок уведомления"
+              ],
+              [
+                "Отказ по той же цели",
+                "Ограничение 6 месяцев"
+              ],
+              [
+                "Другое основание",
+                "При законном пребывании и соответствии"
+              ],
+              [
+                "Обжалование",
+                "Проверить срок и приостановку"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Причины отказа",
+          "body": "Краткосрочный ВНЖ могут не выдать при недостаточном подтверждении цели, неподходящем жилье, отсутствии документов или использовании разрешения не по назначению. Запрет на въезд или решение о выдворении также могут препятствовать выдаче. Сопоставьте поданные документы с требованиями; не используйте фиктивные сведения."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Повторная подача в течение шести месяцев",
+          "body": "Миграционное управление Стамбула указывает, что в течение шести месяцев после отказа нельзя подавать по той же цели. Если законный срок пребывания продолжается и имеется другое подлинное основание, можно рассмотреть новую категорию. Формальная смена основания не заменяет соответствие требованиям."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Обжалование и законное пребывание",
+          "body": "Турецкий адвокат может оценить административное или судебное обжалование, сроки и возможную приостановку решения. Процедура зависит от вида решения и уведомления. Жалоба не приостанавливает автоматически все обязанности по пребыванию или выезду; отдельное решение о выдворении может иметь собственные сроки."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Документы на ближайшие 48 часов",
+          "body": "Соберите уведомление, паспорт, старый ВНЖ, заявление, квитанции, поданные документы и подтверждения семейной ситуации. Запишите даты окончания срока и вручения решения. При неясном статусе обратитесь к адвокату до новой подачи или поездки. Если требуется выезд, организуйте его, не рассчитывая на предполагаемую терпимость."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно сразу подать по той же цели?",
+          "answer": "Нет, для прежней цели указан срок шесть месяцев."
+        },
+        {
+          "question": "Жалоба автоматически разрешает оставаться?",
+          "answer": "Нет, необходима оценка статуса и возможной приостановки."
+        },
+        {
+          "question": "Возможно другое основание?",
+          "answer": "Если пребывание законно и новая цель действительна и допустима."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Миграционная служба: виды и условия"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/ikamet-izni-hakkinda-sikca-sorulan-34-soru-34-cevap",
+          "label": "Управление миграции Стамбула: отказы и процедуры"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "Закон Турции № 6458, статьи 21–25 и 31–33"
+        }
+      ]
+    },
+    "ar": {
+      "title": "رفض الإقامة في تركيا: الاعتراض وإعادة الطلب والمواعيد",
+      "metaDescription": "ما العمل بعد رفض الإيكامت أو عدم تجديده؟ الإخطار وقاعدة الأشهر الستة والمغادرة والمراجعة القانونية.",
+      "shortAnswer": "يجب إخطار مقدم طلب الإقامة بالرفض مع بيان حقوقه والتزاماته. الأولوية لتحديد تاريخ الإخطار والسبب الفعلي والوضع القانوني الحالي. لا يعتبر تقديم اعتراض تمديداً تلقائياً لحق البقاء.",
+      "bosphorasHelp": "تنسق Bosphoras الترتيبات العملية والزيارات والمواعيد مع المختصين المستقلين المناسبين. تبت السلطات التركية في طلبات الإقامة ولا يمكن ضمان النتائج الإدارية أو المالية.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "قراءة القرار الرسمي",
+          "body": "اطلب نسخة مكتوبة مؤرخة وحدد هل يتعلق القرار بالرفض أو عدم التجديد أو الإلغاء أو إغلاق الملف الناقص. تنص المادة 25 من القانون 6458 على إخطار مقدم الطلب أو ممثله وبيان طرق الاعتراض. وقد تؤخذ الروابط العائلية ومصلحة الطفل بعين الاعتبار.",
+          "table": {
+            "headers": [
+              "الحالة",
+              "الإجراء"
+            ],
+            "rows": [
+              [
+                "طلب استكمال",
+                "التزم بمهلة الإخطار"
+              ],
+              [
+                "رفض الغرض نفسه",
+                "قيد الستة أشهر"
+              ],
+              [
+                "غرض مختلف حقيقي",
+                "إذا كان البقاء قانونياً والشروط مكتملة"
+              ],
+              [
+                "اعتراض",
+                "راجع المهلة وإمكان وقف التنفيذ"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "فهم أسباب الرفض",
+          "body": "قد يرفض التصريح القصير بسبب عدم إثبات الغرض أو السكن غير الملائم أو نقص الوثائق أو استعمال التصريح لغير غرضه. وقد يمنع قرار إبعاد أو حظر دخول الموافقة. قارن المستندات المقدمة فعلاً بالشروط ولا تستخدم وثائق وهمية."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "إعادة الطلب وقاعدة الأشهر الستة",
+          "body": "توضح إدارة هجرة إسطنبول أنه لا يمكن إعادة الطلب للغرض نفسه خلال ستة أشهر من الرفض. إذا استمر البقاء القانوني ووجد أساس مختلف حقيقي فقد يكون الطلب الجديد ممكناً. لا يغني تغيير النوع شكلياً عن استيفاء الشروط."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "الاعتراض وحق البقاء",
+          "body": "يمكن لمحام تركي مختص تقييم الاعتراض الإداري أو القضائي ومهلته وطلب وقف التنفيذ المحتمل. تحدد طبيعة القرار والإخطار الإجراء المناسب. لا يعلق الاعتراض وحده جميع التزامات البقاء أو المغادرة تلقائياً؛ وقد تكون لقرار الإبعاد المنفصل مهل خاصة."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "ما ينبغي تجهيزه خلال 48 ساعة",
+          "body": "احتفظ بالإخطار والجواز والبطاقة السابقة والطلب والإيصالات والوثائق المقدمة وإثباتات الأسرة. سجل تاريخ الانتهاء والإخطار. إذا لم يتضح وضعك القانوني فاستشر محامياً قبل تقديم طلب آخر أو السفر. رتب المغادرة إذا كانت مطلوبة ولا تعتمد على تساهل مفترض."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل أعيد الطلب فوراً للغرض نفسه؟",
+          "answer": "لا، تشير القاعدة الرسمية إلى ستة أشهر."
+        },
+        {
+          "question": "هل يسمح الاعتراض بالبقاء تلقائياً؟",
+          "answer": "لا، يلزم تحديد الوضع وأي وقف تنفيذ."
+        },
+        {
+          "question": "هل يمكن طلب نوع آخر؟",
+          "answer": "إذا كان البقاء قانونياً والأساس الجديد حقيقياً ومؤهلاً."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "إدارة الهجرة: الأنواع والشروط"
+        },
+        {
+          "href": "https://istanbul.goc.gov.tr/ikamet-izni-hakkinda-sikca-sorulan-34-soru-34-cevap",
+          "label": "إدارة هجرة إسطنبول: الرفض والإجراءات"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "القانون التركي 6458، المواد 21–25 و31–33"
+        }
+      ]
+    }
+  },
+  "turkey-residence-documents": {
+    "fr": {
+      "title": "Documents ikamet Turquie 2026 : liste officielle et pièces par motif",
+      "metaDescription": "Préparez votre dossier de résidence : formulaire, passeport, photos, assurance, ressources, adresse, UETS et justificatifs selon le motif.",
+      "shortAnswer": "Le formulaire officiel de courte durée actualisé en mai 2026 fournit les pièces communes et les justificatifs propres à chaque motif. Le dossier généré pour votre demande reste déterminant ; certaines catégories et situations exigent des documents supplémentaires.",
+      "bosphorasHelp": "Bosphoras coordonne la préparation pratique de votre projet, les visites et les rendez-vous avec les professionnels indépendants appropriés. Les autorités instruisent les demandes de séjour ; aucun résultat administratif ou financier n'est garanti.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Documents communs à préparer",
+          "body": "Imprimez et signez la demande. Présentez les copies des pages d'identité et de visa avec le passeport original. Le formulaire de courte durée actualisé demande deux photos biométriques de moins de six mois, sur fond blanc et conformes ICAO. Vérifiez le nombre affiché sur votre propre formulaire : des listes plus anciennes mentionnent quatre photos.",
+          "table": {
+            "headers": [
+              "Pièce",
+              "Préparation"
+            ],
+            "rows": [
+              [
+                "Formulaire",
+                "Signé"
+              ],
+              [
+                "Passeport",
+                "Original et copies utiles"
+              ],
+              [
+                "Photos",
+                "2 dans le formulaire court de mai 2026"
+              ],
+              [
+                "Logement",
+                "Tapu, bail ou autre justificatif admis"
+              ],
+              [
+                "Assurance",
+                "Couverture admise ou exemption"
+              ],
+              [
+                "Ressources et motif",
+                "Selon catégorie"
+              ],
+              [
+                "Paiements",
+                "Reçus officiels"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Logement et enregistrement",
+          "body": "Pour une location, utilisez le contrat conforme à la formalité requise, généralement notarié. Pour une propriété, présentez le tapu et, à la première demande, le document municipal identifiant l'adresse. L'hébergement chez un tiers peut nécessiter un engagement authentifié. La résidence doit correspondre à l'adresse effective ; le renouvellement exige l'inscription de l'adresse."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Assurance, revenus et frais",
+          "body": "Préparez une couverture admissible pour la durée demandée, sauf exemption. Des preuves de revenus réguliers peuvent être demandées selon le motif : relevés, pension ou autres justificatifs authentiques. Présentez les reçus du droit de séjour s'il est dû et des frais de carte. En 2026 la carte coûte 964 TL."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Justificatifs selon le motif",
+          "body": "Pour un propriétaire, le formulaire indique un logement d'une valeur d'au moins 200 000 USD en équivalent TL à la date d'acquisition, utilisé par le demandeur pour habiter. Un projet commercial peut exiger une invitation ou des documents de société. Les étudiants présentent l'inscription ; les familles fournissent les actes prouvant le lien et les documents du sponsor. Les actes étrangers peuvent nécessiter apostille ou légalisation et traduction certifiée."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Contrôle avant le rendez-vous",
+          "body": "Vérifiez les dates, noms et numéros sur chaque document. Si le formulaire demande une adresse de notification électronique UETS, suivez les instructions de création ou justificatif. Gardez les originaux, classés par personne, et les copies. En première demande, procédez à l'enregistrement d'adresse après acceptation dans le délai indiqué, normalement 20 jours ouvrables. En cas de demande de complément, respectez la notification."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Combien de photos pour une courte durée ?",
+          "answer": "Le formulaire actualisé demande deux photos ; suivez celui de votre dossier."
+        },
+        {
+          "question": "Est-il nécessaire de présenter l'original du passeport ?",
+          "answer": "Oui, apportez-le au rendez-vous."
+        },
+        {
+          "question": "Faut-il toujours apostiller ?",
+          "answer": "Cela dépend du pays, de la nature du document et des conventions."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Direction de la migration : types et conditions"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "Formulaire et liste de pièces actualisés de la résidence courte durée (mai 2026)"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "Agence publique d'investissement : résidence et seuils"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey ikamet documents 2026: official checklist by purpose",
+      "metaDescription": "Prepare the residence form, passport, biometric photos, insurance, finances, address, UETS and purpose-specific evidence.",
+      "shortAnswer": "The short-term application form updated in May 2026 identifies common and purpose-specific documents. Follow the form generated for your case; particular categories and circumstances can require additional records.",
+      "bosphorasHelp": "Bosphoras coordinates practical arrangements, visits and introductions to appropriate independent professionals. Turkish authorities decide residence applications; administrative or financial outcomes are not guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Common documents",
+          "body": "Print and sign the application. Copy identity and visa pages and take the original passport. The updated short-term form asks for two biometric photos taken within six months, on a white background and complying with ICAO standards. Older lists mention four; use the number on your own generated form.",
+          "table": {
+            "headers": [
+              "Document",
+              "Preparation"
+            ],
+            "rows": [
+              [
+                "Application",
+                "Signed"
+              ],
+              [
+                "Passport",
+                "Original and relevant copies"
+              ],
+              [
+                "Photos",
+                "2 on May 2026 short-term form"
+              ],
+              [
+                "Housing",
+                "Deed, lease or accepted evidence"
+              ],
+              [
+                "Insurance",
+                "Eligible cover or exemption"
+              ],
+              [
+                "Means and purpose",
+                "By category"
+              ],
+              [
+                "Payments",
+                "Official receipts"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Accommodation and registration",
+          "body": "Provide a compliant lease, generally notarised, or a title deed. First property-based applications require municipal address identification evidence. Staying with a host may require an authenticated undertaking. Your address must be your actual residence; an extension requires registered address details."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Insurance, means and fees",
+          "body": "Provide eligible coverage for the requested period unless exempt. Depending on purpose, regular income may need proof through statements, pension or other genuine records. Include receipts for applicable residence duty and card fee. The card fee is TRY 964 in 2026."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Purpose-specific evidence",
+          "body": "The homeowner form specifies residential property worth at least USD 200,000 in TRY equivalent at acquisition and used as the applicant's own home. Commercial applicants may need invitations or company documents. Students provide enrolment, families prove relationships and sponsor eligibility. Foreign civil records may require apostille or legalisation and certified translation."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Before the appointment",
+          "body": "Check dates, names and numbers throughout. If the form requires a UETS electronic notification address, follow its registration and evidence instructions. Organise originals and copies separately for each person. After first approval, register the address within the official deadline, normally 20 working days. Respond to any request for further documents within the stated deadline."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How many photographs are required?",
+          "answer": "The updated short-term form specifies two; follow your generated form."
+        },
+        {
+          "question": "Should I bring the original passport?",
+          "answer": "Yes, bring it to the appointment."
+        },
+        {
+          "question": "Is apostille always necessary?",
+          "answer": "It depends on document type, issuing country and treaties."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Migration Presidency: categories and conditions"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "Updated short-term application form and document list (May 2026)"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "Government investment office: residence and thresholds"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Документы на икамет в Турции 2026: официальный список",
+      "metaDescription": "Анкета, паспорт, фотографии, страховка, доход, адрес, UETS и дополнительные документы по каждому основанию.",
+      "shortAnswer": "Обновлённая в мае 2026 года форма краткосрочного ВНЖ определяет общие документы и подтверждения по целям. Следуйте списку своего заявления; в отдельных категориях могут потребоваться дополнительные документы.",
+      "bosphorasHelp": "Bosphoras координирует практические вопросы, просмотры и встречи с подходящими независимыми специалистами. Решения по ВНЖ принимают турецкие органы; административные и финансовые результаты не гарантируются.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Общий комплект",
+          "body": "Распечатайте и подпишите заявление. Подготовьте копии страниц паспорта с данными и визой; возьмите оригинал. Актуальная краткосрочная форма требует две биометрические фотографии за последние шесть месяцев на белом фоне по стандартам ICAO. В старых списках указаны четыре; ориентируйтесь на свою анкету.",
+          "table": {
+            "headers": [
+              "Документ",
+              "Подготовка"
+            ],
+            "rows": [
+              [
+                "Анкета",
+                "Подписанная"
+              ],
+              [
+                "Паспорт",
+                "Оригинал и копии"
+              ],
+              [
+                "Фото",
+                "2 в форме мая 2026"
+              ],
+              [
+                "Жильё",
+                "Tapu, аренда или иное подтверждение"
+              ],
+              [
+                "Страховка",
+                "Подходящее покрытие или освобождение"
+              ],
+              [
+                "Средства и цель",
+                "По категории"
+              ],
+              [
+                "Оплата",
+                "Официальные квитанции"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Жильё и адрес",
+          "body": "Для аренды потребуется соответствующий договор, обычно нотариальный, для собственности — tapu. При первой подаче собственнику нужен муниципальный документ с адресом объекта. Проживание у другого лица может требовать заверенного обязательства. Адрес должен быть фактическим; при продлении нужна его регистрация."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Страховка, средства и сборы",
+          "body": "Представьте подходящее страховое покрытие на запрашиваемый срок, если нет освобождения. В зависимости от основания могут требоваться выписки, пенсия или другие доказательства регулярного дохода. Приложите квитанции по применимым сборам. Карта в 2026 году стоит 964 лиры."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Дополнительные документы по цели",
+          "body": "Для собственника форма предусматривает жильё стоимостью от 200 000 долларов в эквиваленте лир на дату приобретения для собственного проживания. Деловая цель может потребовать приглашения или документы компании. Студенты подтверждают учёбу, семьи — родство и статус спонсора. Иностранные акты могут требовать апостиля или легализации и заверенного перевода."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Проверка перед приёмом",
+          "body": "Сверьте имена, номера и даты. Если форма требует электронный адрес уведомлений UETS, следуйте указаниям регистрации. Разложите оригиналы и копии по заявителям. После первого одобрения зарегистрируйте адрес в установленный срок, обычно 20 рабочих дней. Дополнительные документы сдавайте в срок уведомления."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Сколько фотографий нужно?",
+          "answer": "В актуальной краткосрочной форме — две; следуйте своему списку."
+        },
+        {
+          "question": "Нужен оригинал паспорта?",
+          "answer": "Да, принесите на приём."
+        },
+        {
+          "question": "Всегда нужен апостиль?",
+          "answer": "Зависит от документа, страны выдачи и договоров."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Миграционная служба: виды и условия"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "Актуальная форма и перечень документов (май 2026)"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "Государственное инвестиционное агентство: ВНЖ и пороги"
+        }
+      ]
+    },
+    "ar": {
+      "title": "وثائق الإقامة في تركيا 2026: القائمة الرسمية حسب الغرض",
+      "metaDescription": "جهز الاستمارة والجواز والصور والتأمين والموارد والعنوان وUETS والمستندات الإضافية لكل نوع.",
+      "shortAnswer": "يحدد نموذج الإقامة القصيرة المحدث في مايو 2026 الوثائق المشتركة والإثباتات الخاصة بالغرض. اتبع القائمة الصادرة لطلبك؛ فقد تتطلب أنواع وظروف معينة مستندات إضافية.",
+      "bosphorasHelp": "تنسق Bosphoras الترتيبات العملية والزيارات والمواعيد مع المختصين المستقلين المناسبين. تبت السلطات التركية في طلبات الإقامة ولا يمكن ضمان النتائج الإدارية أو المالية.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "المستندات المشتركة",
+          "body": "اطبع الطلب ووقعه وقدم نسخ صفحات الهوية والتأشيرة مع أصل الجواز. يطلب النموذج المحدث صورتين بيومتريتين خلال آخر ستة أشهر على خلفية بيضاء وفق معايير ICAO. تذكر قوائم قديمة أربع صور، فاتبع العدد الوارد في نموذجك.",
+          "table": {
+            "headers": [
+              "الوثيقة",
+              "التجهيز"
+            ],
+            "rows": [
+              [
+                "الطلب",
+                "موقع"
+              ],
+              [
+                "الجواز",
+                "الأصل والنسخ"
+              ],
+              [
+                "الصور",
+                "صورتان في نموذج مايو 2026"
+              ],
+              [
+                "السكن",
+                "طابو أو عقد أو إثبات مقبول"
+              ],
+              [
+                "التأمين",
+                "تغطية مؤهلة أو إعفاء"
+              ],
+              [
+                "الموارد والغرض",
+                "بحسب النوع"
+              ],
+              [
+                "الدفع",
+                "إيصالات رسمية"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "السكن وتسجيل العنوان",
+          "body": "قدم عقد إيجار مطابقاً وعادة موثقاً أو سند الملكية. وفي الطلب الأول للمالك يلزم مستند بلدي يحدد عنوان العقار. وقد يتطلب السكن عند مضيف تعهداً مصدقاً. يجب أن يكون العنوان مسكنك الفعلي وأن يكون مسجلاً للتجديد."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "التأمين والموارد والرسوم",
+          "body": "قدم تغطية مؤهلة للمدة المطلوبة ما لم ينطبق إعفاء. قد يلزم إثبات دخل منتظم بكشوف الحساب أو المعاش وفق الغرض. أرفق إيصالات الرسوم المطبقة ورسوم البطاقة. تبلغ رسوم البطاقة في 2026 نحو 964 ليرة."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "الوثائق بحسب الغرض",
+          "body": "يشترط نموذج المالك مسكناً بقيمة 200 ألف دولار على الأقل بما يعادلها بالليرة عند الشراء يستخدمه مقدم الطلب للسكن الشخصي. وقد يلزم للأعمال دعوة أو وثائق الشركة. يقدم الطالب إثبات التسجيل والأسرة إثبات القرابة وأهلية الكفيل. وقد تتطلب الوثائق الأجنبية أبوستيل أو تصديقاً وترجمة معتمدة."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "المراجعة قبل الموعد",
+          "body": "راجع الأسماء والأرقام والتواريخ. إذا طلب النموذج عنوان الإخطار الإلكتروني UETS فاتبع تعليمات التسجيل. رتب الأصول والنسخ لكل شخص. بعد الموافقة الأولى سجل العنوان ضمن المدة الرسمية وهي عادة 20 يوم عمل. استكمل أي نقص ضمن المهلة الواردة في الإخطار."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "كم صورة مطلوبة؟",
+          "answer": "صورتان حسب النموذج المحدث للإقامة القصيرة؛ اتبع نموذجك."
+        },
+        {
+          "question": "هل أحضر أصل الجواز؟",
+          "answer": "نعم للموعد."
+        },
+        {
+          "question": "هل أبوستيل إلزامي دائماً؟",
+          "answer": "يتوقف على الوثيقة وبلد الإصدار والاتفاقيات."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "إدارة الهجرة: الأنواع والشروط"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "نموذج الإقامة القصيرة وقائمة المستندات المحدثة (مايو 2026)"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "مكتب الاستثمار الحكومي: الإقامة والحدود الاستثمارية"
+        }
+      ]
+    }
+  },
+  "turkey-residence-investor": {
+    "fr": {
+      "title": "Résidence Turquie pour investisseurs 2026 : seuils de 400 000 et 500 000 USD",
+      "metaDescription": "Comparez les investissements qualifiés : immobilier, capital, dépôt, obligations, fonds, retraite et création d'emplois. Résidence jusqu'à cinq ans.",
+      "shortAnswer": "Le titre de courte durée pour investisseur qualifié est distinct de la simple résidence de propriétaire ou d'affaires. L'article 31(1)(j) de la loi 6458 permet un titre pouvant atteindre cinq ans aux investisseurs répondant aux seuils officiels et à certains membres de leur famille, sous conditions.",
+      "bosphorasHelp": "Bosphoras coordonne la préparation pratique de votre projet, les visites et les rendez-vous avec les professionnels indépendants appropriés. Les autorités instruisent les demandes de séjour ; aucun résultat administratif ou financier n'est garanti.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Les sept voies d'investissement",
+          "body": "Le tableau présente les seuils publiés par l'agence gouvernementale Invest in Türkiye. Une opération doit être attestée par l'autorité compétente ; le versement d'un montant seul ne garantit ni la résidence ni la citoyenneté. Les restrictions de conservation doivent être respectées lorsque prévues.",
+          "table": {
+            "headers": [
+              "Investissement",
+              "Seuil officiel",
+              "Condition spécifique"
+            ],
+            "rows": [
+              [
+                "Immobilier éligible",
+                "400 000 USD",
+                "Non-revente 3 ans"
+              ],
+              [
+                "Capital fixe",
+                "500 000 USD",
+                "Attestation du ministère compétent"
+              ],
+              [
+                "Emplois",
+                "50 emplois",
+                "Attestation du ministère du Travail"
+              ],
+              [
+                "Dépôt bancaire",
+                "500 000 USD",
+                "Conservation 3 ans"
+              ],
+              [
+                "Obligations d'État",
+                "500 000 USD",
+                "Conservation 3 ans"
+              ],
+              [
+                "Fonds immobiliers ou capital-risque admissibles",
+                "500 000 USD",
+                "Conservation 3 ans"
+              ],
+              [
+                "Retraite privée admissible",
+                "500 000 USD",
+                "Conservation 3 ans"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Immobilier et stratégie à 400 000 USD",
+          "body": "Le parcours qualifié exige un actif immobilier admissible d'une valeur minimale de 400 000 USD et une restriction de revente de trois ans inscrite au titre. Il ne se confond pas avec le seuil de 200 000 USD d'un logement destiné à la résidence personnelle. Vérifiez la conformité de l'actif avant engagement et l'attestation d'éligibilité avant la demande."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Capital, emplois et placements",
+          "body": "Un apport en capital fixe d'au moins 500 000 USD ou une création d'au moins 50 emplois nécessite la validation de l'administration correspondante. Des dépôts, titres publics, parts de fonds ou contributions de retraite peuvent également être éligibles à partir de 500 000 USD selon les règles de conservation. Confirmez risques, coûts et possibilité de sortie avec des conseillers indépendants."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Famille et durée du titre",
+          "body": "Le conjoint étranger et les enfants mineurs ou à charge peuvent relever du dispositif, avec leurs propres dossiers. Le maximum de cinq ans n'est pas automatique. La résidence qualifiée peut ouvrir un parcours distinct de demande de citoyenneté ou de longue durée ; elle n'est pas la citoyenneté. Le régime vise notamment l'investisseur qui ne travaille pas en Turquie."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Organiser une décision d'investissement",
+          "body": "Comparez d'abord le projet, le rendement net, la liquidité, les frais et le risque de change. Identifiez ensuite l'autorité chargée de certifier la voie choisie et la procédure de résidence applicable. Une société créée avec un faible capital ou un simple investissement de portefeuille ne bénéficie pas automatiquement du titre de cinq ans. Le travail effectif nécessite une autorisation appropriée."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Toute création de société donne-t-elle cinq ans ?",
+          "answer": "Non. Il faut une voie qualifiée conforme aux seuils et critères."
+        },
+        {
+          "question": "Un dépôt de 500 000 USD peut-il être retiré librement ?",
+          "answer": "Non pour le régime qualifié : conservation minimale de trois ans."
+        },
+        {
+          "question": "La citoyenneté est-elle automatique ?",
+          "answer": "Non, elle fait l'objet d'une décision distincte."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Direction de la migration : types et conditions"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "Agence publique d'investissement : résidence et seuils"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/investmentguide/pages/acquiring-property-and-citizenship.aspx",
+          "label": "Agence publique d'investissement : propriété et citoyenneté"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "Loi turque 6458, articles 21 à 25 et 31 à 33"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey investor residence 2026: USD 400,000 and 500,000 thresholds",
+      "metaDescription": "Compare qualifying property, fixed capital, bank deposits, government bonds, funds, pensions and employment routes for up to five years.",
+      "shortAnswer": "Qualified investor short-term residence is separate from ordinary homeowner or commercial residence. Article 31(1)(j) of Law 6458 provides for permits of up to five years for qualifying investors and eligible family members, subject to official conditions.",
+      "bosphorasHelp": "Bosphoras coordinates practical arrangements, visits and introductions to appropriate independent professionals. Turkish authorities decide residence applications; administrative or financial outcomes are not guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Seven investment routes",
+          "body": "The table sets out thresholds published by the government investment office. The competent authority must certify the qualifying investment. Paying the amount alone does not guarantee residence or citizenship; holding restrictions apply where specified.",
+          "table": {
+            "headers": [
+              "Investment",
+              "Official threshold",
+              "Specific condition"
+            ],
+            "rows": [
+              [
+                "Eligible real estate",
+                "USD 400,000",
+                "No resale for 3 years"
+              ],
+              [
+                "Fixed capital",
+                "USD 500,000",
+                "Ministry certification"
+              ],
+              [
+                "Job creation",
+                "50 jobs",
+                "Labour Ministry certification"
+              ],
+              [
+                "Bank deposit",
+                "USD 500,000",
+                "Hold 3 years"
+              ],
+              [
+                "Government bonds",
+                "USD 500,000",
+                "Hold 3 years"
+              ],
+              [
+                "Eligible property/venture funds",
+                "USD 500,000",
+                "Hold 3 years"
+              ],
+              [
+                "Eligible private pension",
+                "USD 500,000",
+                "Hold 3 years"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Property at USD 400,000",
+          "body": "The qualified route requires eligible property worth at least USD 400,000 with a three-year resale restriction registered on the title. This differs from the USD 200,000 personal-home residence route. Confirm property eligibility before commitment and obtain the required certification."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Capital, jobs and financial investments",
+          "body": "Fixed capital of at least USD 500,000 or creation of at least 50 jobs requires certification by the appropriate authority. Bank deposits, government bonds, fund units and pension contributions can also qualify from USD 500,000, with applicable holding conditions. Assess risk, fees and exit restrictions with independent advisers."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Family and permit duration",
+          "body": "Foreign spouses and minor or dependent children may qualify with individual files. Five years is a maximum, not a guarantee. Qualified residence may enable a separate citizenship or long-term application; it is not itself citizenship. The category concerns investors who do not work in Turkey."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Structure the decision before investing",
+          "body": "Compare the underlying project, net return, liquidity, fees and foreign exchange risk. Identify the certifying authority and appropriate application route. Ordinary low-capital incorporation or a basic portfolio investment does not automatically create a five-year permit. Actual work requires appropriate authorisation."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does any new company give five years?",
+          "answer": "No, the qualifying thresholds and conditions must be met."
+        },
+        {
+          "question": "May a qualifying USD 500,000 deposit be withdrawn freely?",
+          "answer": "No; the qualifying route requires three years of retention."
+        },
+        {
+          "question": "Is citizenship automatic?",
+          "answer": "No, it requires a separate decision."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Migration Presidency: categories and conditions"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "Government investment office: residence and thresholds"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/investmentguide/pages/acquiring-property-and-citizenship.aspx",
+          "label": "Government investment office: property and citizenship"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "Turkish Law 6458, Articles 21–25 and 31–33"
+        }
+      ]
+    },
+    "ru": {
+      "title": "ВНЖ Турции для инвесторов 2026: пороги 400 000 и 500 000 долларов",
+      "metaDescription": "Сравните недвижимость, основной капитал, депозит, облигации, фонды, пенсионные взносы и рабочие места для ВНЖ до пяти лет.",
+      "shortAnswer": "Инвестиционный краткосрочный ВНЖ отличается от обычного ВНЖ собственника или делового ВНЖ. Статья 31(1)(j) закона № 6458 предусматривает срок до пяти лет для инвесторов, отвечающих официальным критериям, и подходящих членов семьи.",
+      "bosphorasHelp": "Bosphoras координирует практические вопросы, просмотры и встречи с подходящими независимыми специалистами. Решения по ВНЖ принимают турецкие органы; административные и финансовые результаты не гарантируются.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Семь инвестиционных оснований",
+          "body": "Таблица показывает пороги государственного агентства Invest in Türkiye. Компетентный орган должен подтвердить соответствие вложения критериям. Само перечисление денег не гарантирует ВНЖ или гражданство. Необходимо соблюдать установленные ограничения на отчуждение.",
+          "table": {
+            "headers": [
+              "Инвестиция",
+              "Официальный порог",
+              "Условие"
+            ],
+            "rows": [
+              [
+                "Допустимая недвижимость",
+                "400 000 USD",
+                "Не продавать 3 года"
+              ],
+              [
+                "Основной капитал",
+                "500 000 USD",
+                "Подтверждение министерства"
+              ],
+              [
+                "Рабочие места",
+                "50",
+                "Подтверждение Минтруда"
+              ],
+              [
+                "Банковский депозит",
+                "500 000 USD",
+                "Хранить 3 года"
+              ],
+              [
+                "Гособлигации",
+                "500 000 USD",
+                "Хранить 3 года"
+              ],
+              [
+                "Допустимые фонды недвижимости/венчурные",
+                "500 000 USD",
+                "Хранить 3 года"
+              ],
+              [
+                "Допустимая частная пенсия",
+                "500 000 USD",
+                "Хранить 3 года"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Недвижимость от 400 000 долларов",
+          "body": "Квалифицированное основание предусматривает подходящую недвижимость минимум на 400 000 долларов и ограничение перепродажи на три года в реестре. Это не то же самое, что ВНЖ для собственного жилья от 200 000 долларов. Проверьте пригодность объекта до сделки и получите подтверждение соответствия."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Капитал, рабочие места и финансовые вложения",
+          "body": "Вложение в основной капитал от 500 000 долларов либо создание не менее 50 рабочих мест подтверждается профильным органом. Депозиты, гособлигации, паи фондов и пенсионные взносы также могут соответствовать порогу 500 000 долларов при соблюдении условий удержания. Оцените риски, комиссии и ограничения выхода с независимыми специалистами."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Семья и срок действия",
+          "body": "Иностранный супруг, несовершеннолетние или зависимые дети могут иметь право при индивидуальном оформлении. Пять лет — максимум, а не гарантия. Квалифицированный ВНЖ может открыть отдельный путь к гражданству или долгосрочному проживанию, но не является гражданством. Категория предусмотрена для инвесторов, не работающих в Турции."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Решение до вложения средств",
+          "body": "Сначала сравните проект, чистую доходность, ликвидность, расходы и валютный риск. Затем определите орган подтверждения и процедуру ВНЖ. Регистрация компании с небольшим капиталом или обычная покупка ценных бумаг не дают автоматически пятилетний ВНЖ. Фактическая работа требует соответствующего разрешения."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Любая компания даёт пять лет?",
+          "answer": "Нет, необходимы квалифицированные инвестиции и соответствие условиям."
+        },
+        {
+          "question": "Можно свободно снять депозит 500 000 долларов?",
+          "answer": "Нет, для этого основания требуется хранение три года."
+        },
+        {
+          "question": "Гражданство автоматическое?",
+          "answer": "Нет, необходимо отдельное решение."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Миграционная служба: виды и условия"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "Государственное инвестиционное агентство: ВНЖ и пороги"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/investmentguide/pages/acquiring-property-and-citizenship.aspx",
+          "label": "Инвестиционное агентство: недвижимость и гражданство"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "Закон Турции № 6458, статьи 21–25 и 31–33"
+        }
+      ]
+    },
+    "ar": {
+      "title": "إقامة تركيا للمستثمرين 2026: شروط 400 ألف و500 ألف دولار",
+      "metaDescription": "قارن العقار ورأس المال والودائع والسندات والصناديق والتقاعد وإيجاد الوظائف للحصول على إقامة تصل إلى خمس سنوات.",
+      "shortAnswer": "تختلف الإقامة القصيرة للمستثمر المؤهل عن إقامة مالك العقار العادية أو إقامة الأعمال. تتيح المادة 31(1)(j) من القانون 6458 إقامة تصل إلى خمس سنوات للمستثمر المستوفي للشروط الرسمية وأفراد أسرته المؤهلين.",
+      "bosphorasHelp": "تنسق Bosphoras الترتيبات العملية والزيارات والمواعيد مع المختصين المستقلين المناسبين. تبت السلطات التركية في طلبات الإقامة ولا يمكن ضمان النتائج الإدارية أو المالية.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "مسارات الاستثمار السبعة",
+          "body": "يعرض الجدول الحدود المنشورة لدى مكتب الاستثمار الحكومي. ويجب أن تعتمد الجهة المختصة الاستثمار. لا يضمن دفع المبلغ وحده الإقامة أو الجنسية، ويلزم احترام قيود الاحتفاظ بالاستثمار عند تطبيقها.",
+          "table": {
+            "headers": [
+              "الاستثمار",
+              "الحد الرسمي",
+              "الشرط"
+            ],
+            "rows": [
+              [
+                "عقار مؤهل",
+                "400,000 USD",
+                "عدم البيع 3 سنوات"
+              ],
+              [
+                "رأس مال ثابت",
+                "500,000 USD",
+                "اعتماد الوزارة"
+              ],
+              [
+                "وظائف",
+                "50 وظيفة",
+                "اعتماد وزارة العمل"
+              ],
+              [
+                "وديعة مصرفية",
+                "500,000 USD",
+                "احتفاظ 3 سنوات"
+              ],
+              [
+                "سندات حكومية",
+                "500,000 USD",
+                "احتفاظ 3 سنوات"
+              ],
+              [
+                "صناديق عقار أو رأس مال مخاطر مؤهلة",
+                "500,000 USD",
+                "احتفاظ 3 سنوات"
+              ],
+              [
+                "تقاعد خاص مؤهل",
+                "500,000 USD",
+                "احتفاظ 3 سنوات"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "العقار بقيمة 400 ألف دولار",
+          "body": "يتطلب المسار المؤهل عقاراً مقبولاً بقيمة 400 ألف دولار على الأقل وقيد منع البيع لثلاث سنوات في السجل. وهو مختلف عن حد 200 ألف دولار للسكن الشخصي. تحقق من أهلية العقار قبل الالتزام واحصل على شهادة المطابقة المطلوبة."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "رأس المال والوظائف والاستثمارات المالية",
+          "body": "يتطلب رأس المال الثابت بقيمة 500 ألف دولار على الأقل أو توفير 50 وظيفة اعتماد الجهة المختصة. وقد تتأهل الودائع والسندات الحكومية وحصص الصناديق ومساهمات التقاعد من 500 ألف دولار وفق شروط الاحتفاظ. قيم المخاطر والرسوم وقيود التخارج مع مستشارين مستقلين."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "الأسرة ومدة الإقامة",
+          "body": "قد يتأهل الزوج الأجنبي والأطفال القصر أو المعالون بملفات مستقلة. خمس سنوات حد أقصى لا ضمان. قد تتيح الإقامة المؤهلة طلباً منفصلاً للجنسية أو الإقامة الطويلة لكنها ليست جنسية. ويتعلق هذا النوع بالمستثمرين الذين لا يعملون داخل تركيا."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "اتخاذ القرار قبل الاستثمار",
+          "body": "قارن المشروع والعائد الصافي والسيولة والرسوم ومخاطر العملة أولاً. ثم حدد جهة اعتماد الاستثمار وإجراء الإقامة المناسب. لا يمنح تأسيس شركة برأس مال صغير أو شراء أوراق مالية عادية إقامة خمس سنوات تلقائياً. ويتطلب العمل الفعلي تصريحاً مناسباً."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يمنح أي تأسيس شركة إقامة خمس سنوات؟",
+          "answer": "لا، يجب استيفاء حدود وشروط الاستثمار المؤهل."
+        },
+        {
+          "question": "هل يمكن سحب الوديعة المؤهلة بحرية؟",
+          "answer": "لا، يتطلب المسار الاحتفاظ بها ثلاث سنوات."
+        },
+        {
+          "question": "هل الجنسية تلقائية؟",
+          "answer": "لا، لها قرار وإجراء منفصلان."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "إدارة الهجرة: الأنواع والشروط"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "مكتب الاستثمار الحكومي: الإقامة والحدود الاستثمارية"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/investmentguide/pages/acquiring-property-and-citizenship.aspx",
+          "label": "مكتب الاستثمار: العقار والجنسية"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "القانون التركي 6458، المواد 21–25 و31–33"
+        }
+      ]
+    }
+  },
+  "turkey-residence-property-purchase": {
+    "fr": {
+      "title": "Acheter un bien en Turquie pour obtenir la résidence : seuil de 200 000 USD",
+      "metaDescription": "L'ikamet par achat immobilier en 2026 : valeur de 200 000 USD, logement personnel, tapu, documents, famille et différence avec la citoyenneté.",
+      "shortAnswer": "L'achat d'un logement en Turquie peut fonder une demande de résidence courte durée selon l'article 31(1)(b) de la loi 6458. Pour un nouvel achat en 2026, le formulaire officiel exige une valeur d'au moins 200 000 USD en équivalent TL à la date d'acquisition, et un usage d'habitation par le demandeur.",
+      "bosphorasHelp": "Bosphoras coordonne la préparation pratique de votre projet, les visites et les rendez-vous avec les professionnels indépendants appropriés. Les autorités instruisent les demandes de séjour ; aucun résultat administratif ou financier n'est garanti.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Quels biens sont admissibles ?",
+          "body": "Le bien doit être un logement détenu par le demandeur et utilisé pour y habiter. Le formulaire ne permet pas de fonder ce titre sur un logement exploité pour un revenu locatif. Un local commercial ou un terrain nu ne remplace pas un logement. Pour les acquisitions anciennes, donations ou successions, faites examiner les règles propres à la date et au mode de transfert ; le formulaire exige notamment une estimation actuelle en cas de don ou héritage."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "200 000 ou 400 000 USD : quelle différence ?",
+          "body": "Le premier seuil concerne le titre de propriétaire occupant. Le seuil de 400 000 USD vise une autre procédure d'investissement qualifié, avec interdiction de revente pendant trois ans et possibilité de demander la citoyenneté sous conditions. Un appartement admissible à 250 000 USD n'ouvre pas à lui seul le parcours de citoyenneté par achat immobilier.",
+          "table": {
+            "headers": [
+              "Projet",
+              "Seuil",
+              "Droit potentiel"
+            ],
+            "rows": [
+              [
+                "Logement personnel, nouvel achat",
+                "200 000 USD",
+                "Courte durée propriétaire"
+              ],
+              [
+                "Investissement immobilier qualifié",
+                "400 000 USD",
+                "Titre investisseur et parcours citoyenneté ; 3 ans de conservation"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Contrôles à effectuer avant de payer",
+          "body": "Vérifiez l'identité du vendeur, le titre foncier, les hypothèques et restrictions, la nature résidentielle du bien, sa valeur et les conditions d'inscription à l'adresse. Le prix et les paiements doivent être documentés correctement. Ne fondez pas votre décision sur la seule brochure commerciale ou une promesse de permis. Faites valider indépendamment l'éligibilité foncière et administrative."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Dossier de résidence après acquisition",
+          "body": "Préparez le tapu, le document municipal de numérotation pour la première demande, le passeport, la preuve d'assurance, les ressources et les photos prévues par le formulaire. Déposez pendant le séjour légal. La résidence courte durée est en principe limitée à deux ans par délivrance ; le maximum dépend de l'examen du dossier. Le coût de la carte est de 964 TL en 2026, hors droits de séjour et coûts d'achat."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Conjoint, enfants et revente",
+          "body": "Lorsque les membres de la famille ont des droits de propriété communs ou indivis sur le logement, la demande doit documenter leur lien et leur présence au titre. Sinon, examinez leur propre catégorie de résidence, notamment familiale lorsque le sponsor remplit les conditions. La revente du logement peut faire disparaître le motif de résidence. Préparez un autre fondement légal avant de modifier votre situation."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Un bien à 150 000 USD obtenu en 2026 suffit-il ?",
+          "answer": "Non pour le motif de propriétaire occupant soumis au seuil officiel de 200 000 USD."
+        },
+        {
+          "question": "Puis-je louer le logement pour obtenir ce titre ?",
+          "answer": "Le formulaire exige un usage personnel d'habitation, non locatif."
+        },
+        {
+          "question": "L'achat garantit-il l'ikamet ?",
+          "answer": "Non, les autres conditions du dossier restent applicables."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Direction de la migration : types et conditions"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "Formulaire et liste de pièces actualisés de la résidence courte durée (mai 2026)"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "Agence publique d'investissement : résidence et seuils"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/investmentguide/pages/acquiring-property-and-citizenship.aspx",
+          "label": "Agence publique d'investissement : propriété et citoyenneté"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "Loi turque 6458, articles 21 à 25 et 31 à 33"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey residence by property purchase 2026: USD 200,000 threshold",
+      "metaDescription": "Understand the personal-home residence route: USD 200,000 value, title deed, documents, family eligibility and citizenship differences.",
+      "shortAnswer": "Buying a home in Turkey may support short-term residence under Article 31(1)(b) of Law 6458. For a new acquisition in 2026, the official form requires a property worth at least USD 200,000 in TRY equivalent on the acquisition date, used by the applicant as their home.",
+      "bosphorasHelp": "Bosphoras coordinates practical arrangements, visits and introductions to appropriate independent professionals. Turkish authorities decide residence applications; administrative or financial outcomes are not guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "What property qualifies?",
+          "body": "The applicant must own residential property and use it as a home. The form excludes letting the dwelling for rental income under this basis. Commercial premises or vacant land cannot substitute. For earlier purchases, gifts or inheritance, examine the date- and transfer-specific requirements; the form calls for a current valuation in gift or inheritance cases."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "USD 200,000 versus USD 400,000",
+          "body": "The first threshold concerns owner-occupier residence. USD 400,000 concerns a separate qualifying investment route with a three-year resale restriction and potential citizenship application. An eligible USD 250,000 apartment alone does not meet the citizenship-by-property threshold.",
+          "table": {
+            "headers": [
+              "Project",
+              "Threshold",
+              "Potential status"
+            ],
+            "rows": [
+              [
+                "Personal home, new purchase",
+                "USD 200,000",
+                "Owner short-term residence"
+              ],
+              [
+                "Qualifying property investment",
+                "USD 400,000",
+                "Investor residence and citizenship route; 3-year hold"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Checks before committing funds",
+          "body": "Verify the seller, registered title, mortgages and restrictions, residential classification, value and address eligibility. Ensure the price and transfer are properly documented. Do not rely solely on marketing material or a promised permit. Obtain independent property and administrative checks."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Residence application after purchase",
+          "body": "Prepare the title deed, municipal address-numbering certificate for a first application, passport, insurance evidence, financial means and required photos. Apply during lawful stay. Ordinary short-term residence generally has a maximum two-year duration per grant; approval depends on assessment. The 2026 card fee is TRY 964, apart from residence duties and acquisition costs."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Spouse, children and resale",
+          "body": "Family members with shared or joint ownership should provide evidence of their relationship and ownership. Otherwise, assess individual categories including eligible family residence. Selling the dwelling may remove the basis of residence. Establish an alternative lawful basis before changing circumstances."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is a USD 150,000 new purchase in 2026 enough?",
+          "answer": "Not for the owner-occupier category subject to the USD 200,000 threshold."
+        },
+        {
+          "question": "Can I rent out the home for this status?",
+          "answer": "The form requires personal residential use, not letting for income."
+        },
+        {
+          "question": "Does buying guarantee approval?",
+          "answer": "No, all other residence criteria remain applicable."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Migration Presidency: categories and conditions"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "Updated short-term application form and document list (May 2026)"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "Government investment office: residence and thresholds"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/investmentguide/pages/acquiring-property-and-citizenship.aspx",
+          "label": "Government investment office: property and citizenship"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "Turkish Law 6458, Articles 21–25 and 31–33"
+        }
+      ]
+    },
+    "ru": {
+      "title": "ВНЖ Турции при покупке недвижимости 2026: порог 200 000 долларов",
+      "metaDescription": "ВНЖ собственника жилья: стоимость от 200 000 долларов, личное проживание, tapu, документы, семья и отличие от гражданства.",
+      "shortAnswer": "Покупка жилья в Турции может служить основанием краткосрочного ВНЖ по статье 31(1)(b) закона № 6458. Для новой покупки в 2026 году официальная форма требует стоимость не менее 200 000 долларов в эквиваленте лир на дату приобретения и использование заявителем для собственного проживания.",
+      "bosphorasHelp": "Bosphoras координирует практические вопросы, просмотры и встречи с подходящими независимыми специалистами. Решения по ВНЖ принимают турецкие органы; административные и финансовые результаты не гарантируются.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Какие объекты подходят?",
+          "body": "Заявитель должен владеть жилым объектом и использовать его для проживания. Форма исключает использование такого жилья для получения арендного дохода. Коммерческое помещение или незастроенный участок не заменяют жильё. Для прежних покупок, дарения и наследования уточняются требования по дате и виду перехода права; при дарении и наследовании форма требует актуальную оценку."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Разница между 200 000 и 400 000 долларов",
+          "body": "Первый порог касается ВНЖ собственника, проживающего в объекте. Порог 400 000 долларов относится к отдельной квалифицированной инвестиции с запретом продажи три года и возможностью подать на гражданство. Подходящая квартира за 250 000 долларов сама по себе не соответствует имущественному порогу гражданства.",
+          "table": {
+            "headers": [
+              "Проект",
+              "Порог",
+              "Возможный статус"
+            ],
+            "rows": [
+              [
+                "Собственное жильё, новая покупка",
+                "200 000 USD",
+                "Краткосрочный ВНЖ собственника"
+              ],
+              [
+                "Квалифицированная недвижимость",
+                "400 000 USD",
+                "Инвестиционный ВНЖ и путь к гражданству; 3 года"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Проверки до оплаты",
+          "body": "Проверьте продавца, право собственности, обременения, жилое назначение, стоимость и возможность адресной регистрации. Цена и расчёты должны быть подтверждены надлежащими документами. Не полагайтесь только на рекламу или обещание ВНЖ; получите независимую проверку недвижимости и условий проживания."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Заявление после приобретения",
+          "body": "Подготовьте tapu, муниципальную справку об адресе для первой подачи, паспорт, страховку, подтверждение средств и фотографии по форме. Подайте в период законного пребывания. Обычный краткосрочный ВНЖ выдаётся максимум на два года за раз и зависит от рассмотрения. Карта в 2026 году стоит 964 лиры без иных сборов и расходов покупки."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Супруг, дети и продажа",
+          "body": "При долевой или совместной собственности родственников подтвердите их права и родство. В остальных случаях подберите индивидуальное основание, например семейный ВНЖ при соответствии спонсора требованиям. Продажа жилья может прекратить основание ВНЖ. Заранее определите другой законный статус."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Достаточно покупки за 150 000 долларов в 2026 году?",
+          "answer": "Нет для ВНЖ собственника с порогом 200 000 долларов."
+        },
+        {
+          "question": "Можно сдавать жильё для этого ВНЖ?",
+          "answer": "Форма требует собственного проживания, а не арендного дохода."
+        },
+        {
+          "question": "Гарантирует ли покупка ВНЖ?",
+          "answer": "Нет, необходимо соблюдать остальные требования."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Миграционная служба: виды и условия"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "Актуальная форма и перечень документов (май 2026)"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "Государственное инвестиционное агентство: ВНЖ и пороги"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/investmentguide/pages/acquiring-property-and-citizenship.aspx",
+          "label": "Инвестиционное агентство: недвижимость и гражданство"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "Закон Турции № 6458, статьи 21–25 и 31–33"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الإقامة في تركيا عن طريق شراء عقار 2026: حد 200 ألف دولار",
+      "metaDescription": "شروط إقامة مالك السكن بقيمة 200 ألف دولار والاستعمال الشخصي والطابو والوثائق والأسرة والفرق عن الجنسية.",
+      "shortAnswer": "قد يشكل شراء مسكن في تركيا أساساً للإقامة القصيرة وفق المادة 31(1)(b) من القانون 6458. وللشراء الجديد في 2026 يشترط النموذج الرسمي قيمة لا تقل عن 200 ألف دولار بما يعادلها بالليرة عند الشراء وأن يستخدمه مقدم الطلب مسكناً له.",
+      "bosphorasHelp": "تنسق Bosphoras الترتيبات العملية والزيارات والمواعيد مع المختصين المستقلين المناسبين. تبت السلطات التركية في طلبات الإقامة ولا يمكن ضمان النتائج الإدارية أو المالية.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "ما العقار المؤهل؟",
+          "body": "يجب أن يكون المسكن مملوكاً لمقدم الطلب ومستخدماً لسكنه الشخصي. ويستبعد النموذج استخدامه لتحقيق دخل من الإيجار في هذا المسار. لا يحل محل تجاري أو أرض خالية محل مسكن. وللشراء السابق أو الهبة أو الميراث افحص الشروط بحسب التاريخ وطريقة نقل الملكية؛ ويطلب النموذج تقييماً حديثاً للهبة والميراث."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "الفرق بين 200 ألف و400 ألف دولار",
+          "body": "الحد الأول يخص إقامة المالك الذي يسكن العقار. أما 400 ألف دولار فتخص مساراً استثمارياً منفصلاً مع قيد عدم البيع ثلاث سنوات وإمكانية طلب الجنسية بشروط. لا تكفي شقة مؤهلة بقيمة 250 ألف دولار وحدها لمسار الجنسية العقارية.",
+          "table": {
+            "headers": [
+              "المشروع",
+              "الحد",
+              "الوضع المحتمل"
+            ],
+            "rows": [
+              [
+                "مسكن شخصي جديد",
+                "200,000 USD",
+                "إقامة قصيرة للمالك"
+              ],
+              [
+                "استثمار عقاري مؤهل",
+                "400,000 USD",
+                "إقامة استثمار ومسار جنسية؛ احتفاظ 3 سنوات"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "الفحوص قبل دفع المبلغ",
+          "body": "تحقق من البائع وسند الملكية والرهون والقيود والتصنيف السكني والقيمة وأهلية تسجيل العنوان. وثق السعر والمدفوعات بصورة صحيحة. لا تعتمد على الإعلان أو وعد الحصول على الإقامة وحده؛ اطلب تحققاً عقارياً وإدارياً مستقلاً."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "طلب الإقامة بعد الشراء",
+          "body": "جهز الطابو ومستند الترقيم البلدي للطلب الأول والجواز والتأمين وإثبات الموارد والصور المطلوبة. قدم أثناء البقاء القانوني. الحد العام للإقامة القصيرة سنتان لكل إصدار والقبول خاضع لدراسة الملف. تبلغ رسوم البطاقة 964 ليرة في 2026 باستثناء رسوم التصريح وتكاليف الشراء."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "الزوج والأطفال وإعادة البيع",
+          "body": "عند وجود ملكية مشتركة لأفراد الأسرة أثبت العلاقة وحقوق الملكية. وإلا فحدد نوعاً فردياً مناسباً مثل الإقامة العائلية إذا استوفى الكفيل الشروط. قد يؤدي بيع المسكن إلى زوال أساس الإقامة. حدد أساساً قانونياً آخر قبل تغيير وضعك."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يكفي شراء جديد بـ150 ألف دولار؟",
+          "answer": "لا لمسار المالك الخاضع لحد 200 ألف دولار."
+        },
+        {
+          "question": "هل يمكن تأجير العقار لهذا النوع؟",
+          "answer": "يشترط النموذج السكن الشخصي لا دخل الإيجار."
+        },
+        {
+          "question": "هل يضمن الشراء الإقامة؟",
+          "answer": "لا، تظل بقية الشروط واجبة."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "إدارة الهجرة: الأنواع والشروط"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/ikamet/basvuruformuornegi/basvuruformubos?tur=0",
+          "label": "نموذج الإقامة القصيرة وقائمة المستندات المحدثة (مايو 2026)"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/pages/obtaining-a-residence-permit.aspx",
+          "label": "مكتب الاستثمار الحكومي: الإقامة والحدود الاستثمارية"
+        },
+        {
+          "href": "https://www.invest.gov.tr/en/investmentguide/pages/acquiring-property-and-citizenship.aspx",
+          "label": "مكتب الاستثمار: العقار والجنسية"
+        },
+        {
+          "href": "https://www.goc.gov.tr/kurumlar/goc.gov.tr/Kanunlar/YUKK/YUKK-TURKCE.pdf",
+          "label": "القانون التركي 6458، المواد 21–25 و31–33"
+        }
+      ]
+    }
   }
 };
