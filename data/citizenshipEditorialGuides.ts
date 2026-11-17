@@ -82,7 +82,7 @@ export const citizenshipEditorialGuides: Record<string, Record<Locale, Editorial
           "label": "Portail officiel"
         },
         {
-          "href": "https://en.goc.gov.tr/residence-",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
           "label": "Questions officielles"
         },
         {
@@ -183,7 +183,7 @@ export const citizenshipEditorialGuides: Record<string, Record<Locale, Editorial
           "label": "Official portal"
         },
         {
-          "href": "https://en.goc.gov.tr/residence-",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
           "label": "Official residence FAQ"
         },
         {
@@ -284,7 +284,7 @@ export const citizenshipEditorialGuides: Record<string, Record<Locale, Editorial
           "label": "Официальный портал"
         },
         {
-          "href": "https://en.goc.gov.tr/residence-",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
           "label": "Официальные вопросы о ВНЖ"
         },
         {
@@ -385,7 +385,7 @@ export const citizenshipEditorialGuides: Record<string, Record<Locale, Editorial
           "label": "المنصة الرسمية"
         },
         {
-          "href": "https://en.goc.gov.tr/residence-",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
           "label": "الأسئلة الرسمية للإقامة"
         },
         {
@@ -488,7 +488,7 @@ export const citizenshipEditorialGuides: Record<string, Record<Locale, Editorial
           "label": "Portail officiel"
         },
         {
-          "href": "https://en.goc.gov.tr/residence-",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
           "label": "Questions officielles"
         },
         {
@@ -589,7 +589,7 @@ export const citizenshipEditorialGuides: Record<string, Record<Locale, Editorial
           "label": "Official portal"
         },
         {
-          "href": "https://en.goc.gov.tr/residence-",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
           "label": "Official residence FAQ"
         },
         {
@@ -690,7 +690,7 @@ export const citizenshipEditorialGuides: Record<string, Record<Locale, Editorial
           "label": "Официальный портал"
         },
         {
-          "href": "https://en.goc.gov.tr/residence-",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
           "label": "Официальные вопросы о ВНЖ"
         },
         {
@@ -791,7 +791,7 @@ export const citizenshipEditorialGuides: Record<string, Record<Locale, Editorial
           "label": "المنصة الرسمية"
         },
         {
-          "href": "https://en.goc.gov.tr/residence-",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
           "label": "الأسئلة الرسمية للإقامة"
         },
         {
@@ -2027,6 +2027,1462 @@ export const citizenshipEditorialGuides: Record<string, Record<Locale, Editorial
         {
           "href": "https://www.invest.gov.tr/en/investmentguide/pages/acquiring-property-and-citizenship.aspx",
           "label": "الاستثمار والجنسية"
+        }
+      ]
+    }
+  },
+  "turkish-citizenship-investment-or-residence": {
+    "fr": {
+      "title": "Nationalité turque en 2026 : investir ou résider 5 ans ?",
+      "metaDescription": "Immobilier à 400 000 $, dépôt à 500 000 $ ou naturalisation après 5 ans : comparez les conditions, les démarches et les risques avant d’investir.",
+      "shortAnswer": "La voie exceptionnelle par investissement et la naturalisation ordinaire après cinq ans de résidence admissible sont distinctes. Aucune des deux ne confère automatiquement la nationalité.",
+      "bosphorasHelp": "Bosphoras organise la sélection de biens, les visites et la mise en relation avec un avocat indépendant pour examiner votre situation avant engagement.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Les voies d’accès à la nationalité",
+          "body": "Le programme d’investissement exige une opération conforme, attestée par l’autorité compétente. La naturalisation ordinaire repose sur une résidence continue admissible et l’intention de s’établir. Un titre de séjour de longue durée n’est pas un passeport et n’est pas une étape obligatoire avant la naturalisation.",
+          "table": {
+            "headers": [
+              "Voie",
+              "Seuil ou condition",
+              "Maintien"
+            ],
+            "rows": [
+              [
+                "Immobilier",
+                "400 000 USD",
+                "3 ans sans revente"
+              ],
+              [
+                "Dépôt bancaire",
+                "500 000 USD",
+                "3 ans"
+              ],
+              [
+                "Capital fixe",
+                "500 000 USD",
+                "Attestation ministérielle"
+              ],
+              [
+                "Emplois",
+                "50 postes",
+                "Attestation ministérielle"
+              ],
+              [
+                "Naturalisation ordinaire",
+                "5 ans de résidence admissible",
+                "Conditions légales"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Acheter un bien éligible",
+          "body": "Le prix affiché ne suffit pas : contrôler le tapu, la nature du bien, les restrictions d’acquisition, les preuves de paiement, l’évaluation et l’inscription de l’interdiction de revente. Faire confirmer la conformité de la transaction avant tout acompte. Le certificat d’éligibilité précède les démarches de séjour et de nationalité."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Naturalisation après résidence",
+          "body": "Les cinq années sont appréciées selon la loi 5901 ; un séjour touristique ne se transforme pas mécaniquement en résidence admissible. L’administration examine notamment l’intégration, le turc, les ressources, la santé publique et la sécurité. Préparez l’historique des entrées, sorties et titres."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Budget et calendrier",
+          "body": "Ajoutez au capital les frais fonciers, juridiques, de traduction et de formalités. Un couple ou une famille doit étudier la situation de chaque membre. La date de délivrance dépend des contrôles administratifs : ne planifiez pas un voyage sur la base d’une promesse de passeport rapide."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Avant de choisir",
+          "body": "Si votre objectif est simplement de vivre en Turquie, un séjour légal renouvelable peut être plus adapté. Si vous souhaitez la citoyenneté, comparez immobilisation du capital, risque de change et revente avec les obligations d’une installation durable. La fiscalité reste une analyse séparée."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "400 000 $ garantissent-ils le passeport ?",
+          "answer": "Non, la transaction doit être éligible et la décision appartient aux autorités."
+        },
+        {
+          "question": "Faut-il déjà avoir huit ans de résidence ?",
+          "answer": "Non. Le permis de longue durée et la naturalisation ordinaire sont distincts."
+        },
+        {
+          "question": "Puis-je revendre rapidement ?",
+          "answer": "La voie immobilière impose au moins trois ans sans revente."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Agence officielle d’investissement",
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/Pages/acquiring-property-and-citizenship.aspx"
+        },
+        {
+          "label": "Direction de la nationalité",
+          "href": "https://www.nvi.gov.tr/turk-vatandasliginin-kazanilmasi"
+        },
+        {
+          "label": "Administration des migrations",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkish citizenship 2026: investment or 5-year residence?",
+      "metaDescription": "Compare the $400,000 property route, $500,000 bank deposit and five-year naturalisation: eligibility, paperwork and capital risks.",
+      "shortAnswer": "Exceptional citizenship through qualifying investment differs from ordinary naturalisation after five years of eligible residence. Neither guarantees approval.",
+      "bosphorasHelp": "Bosphoras coordinates property searches, viewings and introductions to independent lawyers before you commit.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Compare the routes",
+          "body": "Investment requires a compliant transaction certified by the relevant authority. Ordinary naturalisation requires eligible continuous residence and an intention to settle. Long-term residence is not citizenship and is not a prerequisite for ordinary naturalisation.",
+          "table": {
+            "headers": [
+              "Route",
+              "Threshold or condition",
+              "Holding / evidence"
+            ],
+            "rows": [
+              [
+                "Property",
+                "USD 400,000",
+                "No sale for 3 years"
+              ],
+              [
+                "Bank deposit",
+                "USD 500,000",
+                "3 years"
+              ],
+              [
+                "Fixed capital",
+                "USD 500,000",
+                "Ministry certification"
+              ],
+              [
+                "Employment",
+                "50 jobs",
+                "Ministry certification"
+              ],
+              [
+                "Ordinary naturalisation",
+                "5 eligible residence years",
+                "Statutory conditions"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Qualifying property purchase",
+          "body": "An asking price is not enough. Review the title deed, property category, purchase restrictions, payment trail, valuation and the required no-sale annotation. Obtain independent legal clearance before paying a reservation deposit. The eligibility certificate supports subsequent residence and citizenship procedures."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Naturalisation by residence",
+          "body": "Law 5901 governs the five-year period. Tourist stays do not automatically count as qualifying residence. Authorities consider settlement intention, Turkish language, means of support, public health and security. Keep records of residence permits and border movements."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Budget and timing",
+          "body": "Set aside funds for title registration, legal work, translation and documentation. Review each family member's eligibility separately. Processing depends on administrative checks; do not make travel plans based on a promised passport date."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Choosing the right route",
+          "body": "A renewable lawful residence permit may suit someone who only wants to live in Türkiye. Citizenship seekers should compare capital lock-up, currency exposure and resale risk with the commitments of long-term settlement. Tax residence is assessed separately."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does $400,000 guarantee citizenship?",
+          "answer": "No. The purchase must qualify and authorities make the decision."
+        },
+        {
+          "question": "Must I hold an eight-year residence permit first?",
+          "answer": "No. Long-term residence and ordinary naturalisation are separate."
+        },
+        {
+          "question": "Can I sell the property immediately?",
+          "answer": "No; the investment route requires at least three years without resale."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Official investment agency",
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/Pages/acquiring-property-and-citizenship.aspx"
+        },
+        {
+          "label": "Citizenship directorate",
+          "href": "https://www.nvi.gov.tr/turk-vatandasliginin-kazanilmasi"
+        },
+        {
+          "label": "Migration authority",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Гражданство Турции в 2026 году: инвестиции или 5 лет проживания?",
+      "metaDescription": "Сравните покупку жилья от $400 000, вклад от $500 000 и натурализацию: требования, документы и риски инвестора.",
+      "shortAnswer": "Получение гражданства за инвестиции и натурализация после пяти лет проживания на подходящем основании — разные процедуры. Положительное решение не гарантировано.",
+      "bosphorasHelp": "Bosphoras помогает подобрать недвижимость, организовать просмотры и обратиться к независимому юристу до заключения сделки.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Сравнение способов",
+          "body": "Инвестиционная процедура требует подтверждения соответствия вложения установленным критериям. Для обычной натурализации необходимо проживание на подходящем основании и намерение поселиться в стране. Бессрочный ВНЖ не является гражданством.",
+          "table": {
+            "headers": [
+              "Способ",
+              "Минимум или условие",
+              "Срок или подтверждение"
+            ],
+            "rows": [
+              [
+                "Недвижимость",
+                "400 000 долларов США",
+                "Без продажи 3 года"
+              ],
+              [
+                "Банковский вклад",
+                "500 000 долларов США",
+                "3 года"
+              ],
+              [
+                "Основной капитал",
+                "500 000 долларов США",
+                "Справка министерства"
+              ],
+              [
+                "Рабочие места",
+                "50",
+                "Справка министерства"
+              ],
+              [
+                "Натурализация",
+                "5 лет подходящего проживания",
+                "Условия закона"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Покупка подходящего объекта",
+          "body": "Проверяются не только цена, но и тапу, назначение объекта, ограничения для иностранцев, оценка, банковские документы и отметка о запрете продажи. До задатка поручите юристу проверить сделку. После получения свидетельства о соответствии можно переходить к оформлению статуса."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Натурализация по проживанию",
+          "body": "Пятилетний срок регулируется законом № 5901. Туристические поездки сами по себе не образуют необходимый стаж. Учитываются намерение обосноваться, знание турецкого языка, доход, требования общественного здоровья и безопасности. Сохраняйте данные о пересечении границы и разрешениях."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Расходы и сроки",
+          "body": "Помимо стоимости актива предусмотрите оформление права собственности, услуги юриста, переводы и документы. Условия для членов семьи рассматриваются индивидуально. Не покупайте билеты, исходя из обещанной посредником даты получения паспорта."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Как выбрать",
+          "body": "Для жизни в Турции может быть достаточно продлеваемого ВНЖ. Если цель — гражданство, сопоставьте срок заморозки капитала, валютные риски и ликвидность недвижимости с долгосрочным переездом. Налоговое резидентство определяется отдельно."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Гарантирует ли покупка за $400 000 паспорт?",
+          "answer": "Нет, требуется соответствие сделки и решение уполномоченных органов."
+        },
+        {
+          "question": "Нужно ли сначала получить бессрочный ВНЖ?",
+          "answer": "Нет, это отдельная процедура."
+        },
+        {
+          "question": "Можно ли сразу продать объект?",
+          "answer": "При инвестиционной процедуре продажа ограничена минимум на три года."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Государственное агентство инвестиций",
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/Pages/acquiring-property-and-citizenship.aspx"
+        },
+        {
+          "label": "Управление по вопросам гражданства",
+          "href": "https://www.nvi.gov.tr/turk-vatandasliginin-kazanilmasi"
+        },
+        {
+          "label": "Миграционная служба",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الجنسية التركية 2026: الاستثمار أم الإقامة لمدة 5 سنوات؟",
+      "metaDescription": "قارن شراء عقار بـ400 ألف دولار والإيداع بـ500 ألف دولار والتجنس بعد خمس سنوات: الشروط والوثائق والمخاطر.",
+      "shortAnswer": "التجنس الاستثنائي بالاستثمار والتجنس العادي بعد خمس سنوات من الإقامة المؤهلة مساران منفصلان، ولا يضمن أي منهما الموافقة.",
+      "bosphorasHelp": "تنسق Bosphoras البحث عن العقارات والمعاينات والتواصل مع محام مستقل قبل الالتزام المالي.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "مقارنة المسارات",
+          "body": "يتطلب مسار الاستثمار عملية مستوفية للشروط ومصدقة من الجهة المختصة. أما التجنس العادي فيتطلب إقامة مستمرة مؤهلة ونية الاستقرار. الإقامة طويلة الأجل ليست جنسية ولا تعد شرطاً مسبقاً للتجنس العادي.",
+          "table": {
+            "headers": [
+              "المسار",
+              "الحد الأدنى أو الشرط",
+              "مدة الاحتفاظ أو الإثبات"
+            ],
+            "rows": [
+              [
+                "العقار",
+                "400,000 دولار",
+                "عدم البيع 3 سنوات"
+              ],
+              [
+                "وديعة مصرفية",
+                "500,000 دولار",
+                "3 سنوات"
+              ],
+              [
+                "رأس مال ثابت",
+                "500,000 دولار",
+                "تصديق الوزارة"
+              ],
+              [
+                "توظيف",
+                "50 شخصاً",
+                "تصديق الوزارة"
+              ],
+              [
+                "التجنس العادي",
+                "5 سنوات إقامة مؤهلة",
+                "الشروط القانونية"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "شراء عقار مؤهل",
+          "body": "لا يكفي سعر الإعلان. افحص سند الملكية ونوع العقار والقيود على التملك والتقييم ووثائق التحويل وقيد عدم البيع. احصل على مراجعة قانونية مستقلة قبل دفع العربون. تسبق شهادة المطابقة إجراءات الإقامة والجنسية."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "التجنس بالإقامة",
+          "body": "ينظم القانون 5901 احتساب السنوات الخمس. لا تتحول الزيارات السياحية تلقائياً إلى مدة إقامة مؤهلة. تنظر السلطات في نية الاستقرار واللغة التركية والموارد ومتطلبات الصحة العامة والأمن. احتفظ بتصاريح الإقامة وسجلات الدخول والخروج."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "التكاليف والمدة",
+          "body": "خصص ميزانية لتسجيل الملكية والمحاماة والترجمة والوثائق إضافة إلى رأس المال. تدرس أهلية كل فرد من الأسرة على حدة. يختلف توقيت القرار بحسب الفحوص الإدارية، فلا ترتب سفراً بناءً على موعد جواز سفر موعود."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "اختيار المسار",
+          "body": "إذا كان هدفك العيش في تركيا فقد يكفي تصريح إقامة قابل للتجديد. أما طلب الجنسية فيتطلب مقارنة تجميد رأس المال ومخاطر العملة وإعادة البيع بمتطلبات الاستقرار الطويل. وتخضع الإقامة الضريبية لتقييم مستقل."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يضمن شراء عقار بـ400 ألف دولار الجنسية؟",
+          "answer": "لا، يجب أن تستوفي العملية الشروط وأن توافق السلطات."
+        },
+        {
+          "question": "هل الإقامة الدائمة شرط مسبق؟",
+          "answer": "لا، فهي مسار مستقل."
+        },
+        {
+          "question": "هل يمكن بيع العقار فوراً؟",
+          "answer": "لا، يشترط مسار الاستثمار العقاري عدم البيع لمدة ثلاث سنوات على الأقل."
+        }
+      ],
+      "sources": [
+        {
+          "label": "هيئة الاستثمار الرسمية",
+          "href": "https://www.invest.gov.tr/en/InvestmentGuide/Pages/acquiring-property-and-citizenship.aspx"
+        },
+        {
+          "label": "مديرية شؤون الجنسية",
+          "href": "https://www.nvi.gov.tr/turk-vatandasliginin-kazanilmasi"
+        },
+        {
+          "label": "رئاسة إدارة الهجرة",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        }
+      ]
+    }
+  },
+  "british-citizens-turkey-visa": {
+    "fr": {
+      "title": "Visa Turquie pour Britanniques 2026 : 90 jours, passeport et entrée",
+      "metaDescription": "Passeport britannique : séjour sans visa de 90 jours sur 180, validité de 150 jours, exemples de calcul et règles pour travailler ou s’installer.",
+      "shortAnswer": "Un titulaire d’un passeport British citizen ordinaire peut séjourner en Turquie à titre touristique 90 jours sur toute période de 180 jours sans visa. Un passeport doit rester valable au moins 150 jours à l’arrivée.",
+      "bosphorasHelp": "Bosphoras peut organiser votre arrivée, un séjour de découverte ou les rendez-vous utiles à un projet d’installation.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Quel passeport britannique ?",
+          "body": "L’exemption vise les passeports ordinaires des citoyens britanniques en tourisme. Les statuts British National (Overseas), British Subject et British Protected Person nécessitent un visa obtenu auprès des représentations turques. Ne confondez pas le pays émetteur et le statut indiqué sur le passeport."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Calcul des 90 jours",
+          "body": "Chaque jour passé en Turquie compte, y compris l’arrivée et le départ. Sortir quelques jours ne remet pas le compteur à zéro : les 180 jours sont glissants.",
+          "table": {
+            "headers": [
+              "Situation",
+              "Conséquence"
+            ],
+            "rows": [
+              [
+                "30 jours puis 45 jours",
+                "75 jours utilisés, 15 disponibles si tous restent dans la fenêtre"
+              ],
+              [
+                "90 jours consécutifs",
+                "Attendre que des jours sortent de la fenêtre"
+              ],
+              [
+                "Séjour au-delà du quota",
+                "Titre ou visa adapté nécessaire"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Documents à l’arrivée",
+          "body": "Prévoyez un passeport valable 150 jours à l’arrivée avec au moins une page vierge. Gardez votre billet retour, adresse d’hébergement et justificatifs de ressources accessibles en cas de contrôle. Un enfant doit avoir son propre document de voyage."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Visite, emploi et résidence",
+          "body": "Une visite touristique ne donne pas le droit d’occuper un emploi. Pour une installation ou une activité professionnelle, prévoyez le titre approprié avant l’expiration de votre séjour légal ; un permis de travail relève d’une procédure distincte."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Préparer les dates",
+          "body": "Établissez un calendrier de tous les séjours des six derniers mois. Si vous arrivez à Istanbul, Bodrum ou Antalya pour visiter des logements, prévoyez du temps pour les déplacements et démarches, sans dépasser le quota."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Un Britannique a-t-il besoin d’un e-Visa touristique ?",
+          "answer": "Non pour un passeport British citizen ordinaire et un séjour dans le quota."
+        },
+        {
+          "question": "Puis-je remettre le compteur à zéro en sortant ?",
+          "answer": "Non, le calcul est glissant."
+        },
+        {
+          "question": "Puis-je travailler sans visa ?",
+          "answer": "L’exemption touristique ne vaut pas autorisation de travail."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Ministère turc des Affaires étrangères",
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+        },
+        {
+          "label": "Conditions d’entrée britanniques",
+          "href": "https://www.gov.uk/foreign-travel-advice/turkey/entry-requirements"
+        },
+        {
+          "label": "Guide consulaire britannique",
+          "href": "https://www.gov.uk/guidance/living-in-turkey"
+        },
+        {
+          "label": "Administration des migrations",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey visa for British citizens 2026: 90-day rule & passport",
+      "metaDescription": "UK passport holders: 90 days in 180 visa-free, 150-day passport validity, stay examples and rules for moving or working in Turkey.",
+      "shortAnswer": "Ordinary British citizen passport holders visiting for tourism can stay visa-free for 90 days in any rolling 180-day period. Passports must be valid for at least 150 days on arrival.",
+      "bosphorasHelp": "Bosphoras can coordinate your arrival, exploratory stay and appointments for a planned move.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Which British passport?",
+          "body": "The exemption applies to ordinary British citizen passports for tourism. British National (Overseas), British Subject and British Protected Person passport holders require a visa from a Turkish diplomatic or consular mission. Check the nationality status printed in your passport."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "How the 90-day clock works",
+          "body": "Count each day in Türkiye, including arrival and departure. A short trip abroad does not reset the allowance; the 180-day window rolls forward.",
+          "table": {
+            "headers": [
+              "Example",
+              "Result"
+            ],
+            "rows": [
+              [
+                "30 days then 45 days",
+                "75 used; 15 left if all remain in the window"
+              ],
+              [
+                "90 consecutive days",
+                "Wait until days fall outside the window"
+              ],
+              [
+                "Stay beyond allowance",
+                "Appropriate visa or residence status needed"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Arrival paperwork",
+          "body": "Bring a passport valid for 150 days from arrival with at least one blank page. Keep return travel, accommodation details and evidence of funds accessible if requested. Children need their own travel documents."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Tourism, employment and settlement",
+          "body": "Visa-free tourism does not authorise employment. If moving or undertaking professional activity, plan the correct status before lawful stay expires; the work permit is a separate process."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Plan your visit",
+          "body": "List every Turkish stay in the previous 180 days. Allow time for property visits and travel around Istanbul, Bodrum or Antalya without exceeding your allowance."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do British citizens need a tourist e-Visa?",
+          "answer": "Not for an ordinary British citizen passport within the visa-free allowance."
+        },
+        {
+          "question": "Can a border run reset my allowance?",
+          "answer": "No; the window is rolling."
+        },
+        {
+          "question": "Can I work visa-free?",
+          "answer": "Tourist visa exemption is not work authorisation."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Turkish foreign ministry",
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+        },
+        {
+          "label": "UK entry guidance",
+          "href": "https://www.gov.uk/foreign-travel-advice/turkey/entry-requirements"
+        },
+        {
+          "label": "UK living in Turkey guide",
+          "href": "https://www.gov.uk/guidance/living-in-turkey"
+        },
+        {
+          "label": "Migration authority",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Виза в Турцию для британцев в 2026 году: 90 дней и паспорт",
+      "metaDescription": "Правило 90/180 для граждан Великобритании, срок паспорта 150 дней, примеры расчёта и требования для переезда и работы.",
+      "shortAnswer": "Владельцы обычного паспорта гражданина Великобритании могут приезжать с туристической целью без визы на 90 дней в течение любого периода в 180 дней. Паспорт должен действовать ещё как минимум 150 дней на дату въезда.",
+      "bosphorasHelp": "Bosphoras организует встречу, ознакомительную поездку и необходимые консультации при подготовке переезда.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Какой у вас паспорт",
+          "body": "Безвизовый режим распространяется на обычные паспорта British citizen при туристических поездках. Владельцам паспортов со статусом British National (Overseas), British Subject или British Protected Person необходимо получать визу в турецком дипломатическом представительстве."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Как считать дни",
+          "body": "Учитывайте каждый день пребывания, в том числе дни въезда и выезда. Краткая поездка за границу не обнуляет использованные дни.",
+          "table": {
+            "headers": [
+              "Пример",
+              "Результат"
+            ],
+            "rows": [
+              [
+                "30 дней, затем 45",
+                "Использовано 75, осталось 15, если все дни входят в период"
+              ],
+              [
+                "90 дней подряд",
+                "Дождаться выхода дней из 180-дневного периода"
+              ],
+              [
+                "Превышение лимита",
+                "Нужно подходящее разрешение"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Документы на границе",
+          "body": "Паспорт должен действовать не менее 150 дней со дня въезда и содержать хотя бы одну чистую страницу. Держите под рукой билет обратно, адрес проживания и подтверждение средств. Детям нужны собственные проездные документы."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Туризм и работа",
+          "body": "Безвизовый туристический въезд не разрешает трудоустройство. При переезде или работе заранее оформите подходящий статус. Разрешение на работу оформляется отдельно."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Планирование поездки",
+          "body": "Запишите все даты визитов за предыдущие 180 дней. При осмотре жилья в Стамбуле, Бодруме или Анталье учитывайте время на транспорт и оформление документов."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Нужна ли электронная виза?",
+          "answer": "Нет, если вы путешествуете с обычным паспортом British citizen в пределах лимита."
+        },
+        {
+          "question": "Обнуляются ли дни после выезда?",
+          "answer": "Нет, период рассчитывается непрерывно."
+        },
+        {
+          "question": "Можно ли работать без визы?",
+          "answer": "Туристическое освобождение не даёт права на работу."
+        }
+      ],
+      "sources": [
+        {
+          "label": "МИД Турции",
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+        },
+        {
+          "label": "Британские правила въезда",
+          "href": "https://www.gov.uk/foreign-travel-advice/turkey/entry-requirements"
+        },
+        {
+          "label": "Консульский справочник Великобритании",
+          "href": "https://www.gov.uk/guidance/living-in-turkey"
+        },
+        {
+          "label": "Миграционная служба",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تأشيرة تركيا للبريطانيين 2026: قاعدة 90 يوماً وصلاحية الجواز",
+      "metaDescription": "تعرف على الإعفاء من التأشيرة لحاملي الجواز البريطاني وقاعدة 90 من 180 يوماً وصلاحية الجواز وشروط العمل والإقامة.",
+      "shortAnswer": "يمكن لحامل جواز المواطن البريطاني العادي زيارة تركيا سياحياً دون تأشيرة لمدة 90 يوماً خلال أي فترة متحركة من 180 يوماً، مع صلاحية جواز لا تقل عن 150 يوماً عند الوصول.",
+      "bosphorasHelp": "تنسق Bosphoras الاستقبال والإقامة الاستكشافية والمواعيد المتعلقة بخطة الانتقال.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "نوع جواز السفر",
+          "body": "يسري الإعفاء على جواز المواطن البريطاني العادي لأغراض السياحة. أما حاملو جوازات British National (Overseas) وBritish Subject وBritish Protected Person فيحتاجون إلى تأشيرة من البعثات التركية. العبرة بالصفة المكتوبة في الجواز."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "حساب مدة الإقامة",
+          "body": "يحتسب كل يوم داخل تركيا بما فيه يوم الوصول والمغادرة. الخروج لفترة قصيرة لا يعيد الرصيد إلى 90 يوماً، لأن نافذة 180 يوماً متحركة.",
+          "table": {
+            "headers": [
+              "مثال",
+              "النتيجة"
+            ],
+            "rows": [
+              [
+                "30 يوماً ثم 45",
+                "75 يوماً مستخدمة و15 متبقية إذا بقيت جميعها ضمن النافذة"
+              ],
+              [
+                "90 يوماً متصلة",
+                "انتظار خروج الأيام السابقة من النافذة"
+              ],
+              [
+                "تجاوز المدة",
+                "يلزم وضع إقامة أو تأشيرة مناسبة"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "وثائق الوصول",
+          "body": "جهز جوازاً صالحاً لمدة 150 يوماً من الوصول وفيه صفحة فارغة واحدة على الأقل. احتفظ بتفاصيل السكن وتذكرة العودة وإثبات القدرة المالية عند الطلب. يحتاج الأطفال إلى وثائق سفر خاصة بهم."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "السياحة والعمل والاستقرار",
+          "body": "لا يمنح الإعفاء السياحي حق العمل. إذا كنت تخطط للانتقال أو ممارسة نشاط مهني فرتب الوضع القانوني المناسب قبل انتهاء المدة المسموح بها. تصريح العمل إجراء منفصل."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "تخطيط الرحلة",
+          "body": "سجل جميع زياراتك لتركيا خلال 180 يوماً سابقة. إذا كانت الرحلة لمعاينة عقارات في إسطنبول أو بودروم أو أنطاليا، خصص وقتاً للتنقل دون تجاوز الرصيد."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يحتاج البريطاني إلى تأشيرة إلكترونية سياحية؟",
+          "answer": "لا لحامل جواز المواطن البريطاني العادي ضمن فترة الإعفاء."
+        },
+        {
+          "question": "هل يعاد احتساب المدة من الصفر بعد الخروج؟",
+          "answer": "لا، النافذة متحركة."
+        },
+        {
+          "question": "هل يسمح الإعفاء بالعمل؟",
+          "answer": "لا، الإعفاء السياحي ليس تصريح عمل."
+        }
+      ],
+      "sources": [
+        {
+          "label": "وزارة الخارجية التركية",
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+        },
+        {
+          "label": "إرشادات الدخول البريطانية",
+          "href": "https://www.gov.uk/foreign-travel-advice/turkey/entry-requirements"
+        },
+        {
+          "label": "دليل الإقامة البريطاني",
+          "href": "https://www.gov.uk/guidance/living-in-turkey"
+        },
+        {
+          "label": "رئاسة إدارة الهجرة",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        }
+      ]
+    }
+  },
+  "british-citizens-turkey-residence": {
+    "fr": {
+      "title": "S’installer en Turquie depuis le Royaume-Uni : ikamet 2026",
+      "metaDescription": "Déménager, prendre sa retraite ou vivre en famille en Turquie : titres de séjour, durée, documents, santé et étapes pour les Britanniques.",
+      "shortAnswer": "Au-delà du séjour touristique autorisé, les Britanniques doivent obtenir un statut adapté à leur projet. Le permis de séjour n’est ni automatique ni une autorisation d’emploi.",
+      "bosphorasHelp": "Bosphoras coordonne logement, visites et rendez-vous avec les professionnels indépendants compétents pour préparer une installation.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Choisir le titre adapté",
+          "body": "Le fondement doit correspondre au projet réel. La résidence de propriétaire exige un logement effectivement utilisé à cette fin ; l’achat d’un bien ne garantit pas le titre. Un conjoint éligible peut demander une résidence familiale.",
+          "table": {
+            "headers": [
+              "Titre",
+              "Durée maximale habituelle"
+            ],
+            "rows": [
+              [
+                "Courte durée",
+                "2 ans par délivrance, sauf catégories particulières"
+              ],
+              [
+                "Familial",
+                "3 ans, limité au titre du répondant"
+              ],
+              [
+                "Longue durée",
+                "Indéterminée après 8 ans admissibles et autres conditions"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Préparer le dossier depuis le Royaume-Uni",
+          "body": "Réunissez passeport, justificatifs de logement et de ressources, assurance adaptée, photos et documents familiaux requis. Anticipez apostilles et traductions assermentées des actes britanniques si demandées. Déposez sur e-ikamet pendant votre séjour légal et suivez la convocation."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "S’installer avec une adresse",
+          "body": "Vérifiez l’admissibilité de l’adresse avant le bail ou l’achat. Faites enregistrer votre adresse dans le délai applicable de 20 jours ouvrables. La commune ou le quartier peut avoir des restrictions spécifiques ; un ancien occupant étranger ne garantit pas l’acceptation."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Santé, famille et travail",
+          "body": "Vérifiez l’assurance couvrant toute la famille. Le guide britannique indique qu’une affiliation au régime public turc est possible sous conditions après un an de résidence. Pour travailler, prévoyez un permis de travail distinct ; pour les enfants, rassemblez dossiers scolaires et actes de naissance."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Organiser le premier mois",
+          "body": "Conservez une marge pour les démarches de logement, les rendez-vous et l’assurance. Avant l’expiration du titre, préparez le renouvellement dans les 60 derniers jours. Ne confondez pas la résidence administrative avec la résidence fiscale."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Puis-je m’installer sans ikamet après 90 jours ?",
+          "answer": "Non, sauf autre statut légal approprié."
+        },
+        {
+          "question": "Un logement acheté garantit-il l’ikamet ?",
+          "answer": "Non, le logement et le dossier doivent satisfaire aux conditions."
+        },
+        {
+          "question": "Puis-je conserver ma nationalité britannique ?",
+          "answer": "La Turquie reconnaît la double nationalité ; le guide britannique le confirme."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Guide consulaire britannique",
+          "href": "https://www.gov.uk/guidance/living-in-turkey"
+        },
+        {
+          "label": "Administration des migrations",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "Portail e-ikamet",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        },
+        {
+          "label": "Conditions d’entrée britanniques",
+          "href": "https://www.gov.uk/foreign-travel-advice/turkey/entry-requirements"
+        }
+      ]
+    },
+    "en": {
+      "title": "Moving from the UK to Turkey: ikamet & residence permits 2026",
+      "metaDescription": "British expat guide to moving, retiring or relocating with family: residence categories, documents, address registration and healthcare.",
+      "shortAnswer": "British nationals staying beyond their tourist allowance need appropriate legal status. Residence permits are not automatic and do not by themselves authorise employment.",
+      "bosphorasHelp": "Bosphoras coordinates housing, viewings and introductions to independent professionals for your move.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Choose the correct permit",
+          "body": "The basis must fit the genuine purpose. Owner-occupier residence requires a home used for that purpose; buying property does not guarantee approval. Eligible spouses may apply under the family category.",
+          "table": {
+            "headers": [
+              "Permit",
+              "Usual statutory maximum"
+            ],
+            "rows": [
+              [
+                "Short-term",
+                "2 years per issue, except special categories"
+              ],
+              [
+                "Family",
+                "3 years, not beyond sponsor's permit"
+              ],
+              [
+                "Long-term",
+                "Indefinite after 8 eligible years and other conditions"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Prepare documents in the UK",
+          "body": "Gather passport, address and financial evidence, suitable insurance, photographs and required family records. Allow for apostilles and sworn Turkish translations where requested. File via e-ikamet while lawfully present and follow the appointment notice."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Register your address",
+          "body": "Confirm the address is eligible before signing a lease or buying. Register the address within the applicable 20-working-day deadline. Local restrictions may affect applications; a previous foreign resident does not establish eligibility."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Healthcare, family and work",
+          "body": "Check coverage for every family member. UK guidance explains that access to the Turkish public insurance scheme may be possible after one year of residence, subject to conditions. Employment requires separate work authorisation. Prepare school and birth records for children."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Plan the first month",
+          "body": "Allow time for housing, insurance and official appointments. Prepare renewal in the final 60 days before the card expires. Immigration status and tax residence are separate questions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I stay beyond 90 days without ikamet?",
+          "answer": "Only if another lawful immigration status permits it."
+        },
+        {
+          "question": "Does buying property guarantee residency?",
+          "answer": "No; property and application conditions must be met."
+        },
+        {
+          "question": "Can I keep British citizenship?",
+          "answer": "Turkey recognises dual citizenship, as confirmed by UK guidance."
+        }
+      ],
+      "sources": [
+        {
+          "label": "UK living in Turkey guide",
+          "href": "https://www.gov.uk/guidance/living-in-turkey"
+        },
+        {
+          "label": "Migration authority",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "Official e-ikamet portal",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        },
+        {
+          "label": "UK entry guidance",
+          "href": "https://www.gov.uk/foreign-travel-advice/turkey/entry-requirements"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Переезд из Великобритании в Турцию: ВНЖ и икамет в 2026 году",
+      "metaDescription": "ВНЖ для британцев: виды разрешений, документы, сроки, регистрация адреса, медицинское страхование и переезд семьи.",
+      "shortAnswer": "Для проживания дольше разрешённого туристического периода британцам нужен соответствующий правовой статус. ВНЖ не выдаётся автоматически и сам по себе не разрешает работать.",
+      "bosphorasHelp": "Bosphoras помогает организовать поиск жилья, просмотры и консультации независимых специалистов.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Виды ВНЖ",
+          "body": "Основание должно соответствовать цели переезда. Для ВНЖ собственника нужно жилое помещение, используемое для проживания; покупка не гарантирует разрешение. При наличии подходящего основания супруг может претендовать на семейный ВНЖ.",
+          "table": {
+            "headers": [
+              "Вид",
+              "Обычный предельный срок"
+            ],
+            "rows": [
+              [
+                "Краткосрочный",
+                "До 2 лет, кроме особых категорий"
+              ],
+              [
+                "Семейный",
+                "До 3 лет, не дольше статуса спонсора"
+              ],
+              [
+                "Долгосрочный",
+                "Бессрочный после 8 подходящих лет и выполнения условий"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Документы из Великобритании",
+          "body": "Подготовьте паспорт, подтверждения адреса и дохода, страховку, фотографии и семейные документы. Заранее предусмотрите апостиль и заверенный перевод, если их потребуют. Подайте заявление через e-ikamet в период законного пребывания."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Регистрация адреса",
+          "body": "До аренды или покупки выясните, доступен ли конкретный адрес для оформления. Зарегистрируйте адрес в установленный срок — 20 рабочих дней. Регистрация прежнего иностранного жильца не гарантирует возможность подачи нового заявления."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Здоровье, семья и работа",
+          "body": "Убедитесь, что страховка покрывает всю семью. Согласно британскому консульскому справочнику, доступ к государственной страховке возможен при соблюдении условий после года проживания. Для работы нужно отдельное разрешение; для детей подготовьте школьные документы и свидетельства о рождении."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Первый месяц",
+          "body": "Заложите время на жильё, страховку и официальные приёмы. Продление готовьте в последние 60 дней действия карты. Миграционный статус и налоговое резидентство определяются отдельно."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли оставаться после 90 дней без ВНЖ?",
+          "answer": "Только при наличии другого законного основания."
+        },
+        {
+          "question": "Гарантирует ли покупка ВНЖ?",
+          "answer": "Нет, объект и комплект документов должны соответствовать требованиям."
+        },
+        {
+          "question": "Можно ли сохранить британское гражданство?",
+          "answer": "Турция признаёт двойное гражданство."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Консульский справочник Великобритании",
+          "href": "https://www.gov.uk/guidance/living-in-turkey"
+        },
+        {
+          "label": "Миграционная служба",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "Портал e-ikamet",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        },
+        {
+          "label": "Британские правила въезда",
+          "href": "https://www.gov.uk/foreign-travel-advice/turkey/entry-requirements"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الانتقال من بريطانيا إلى تركيا: الإقامة والإيكامت 2026",
+      "metaDescription": "دليل البريطانيين للانتقال والتقاعد مع الأسرة في تركيا: أنواع الإقامة ومدتها والوثائق وتسجيل العنوان والرعاية الصحية.",
+      "shortAnswer": "يحتاج البريطاني الذي يرغب بالبقاء بعد المدة السياحية إلى وضع قانوني ملائم. تصريح الإقامة ليس تلقائياً ولا يمنح وحده حق العمل.",
+      "bosphorasHelp": "تنسق Bosphoras البحث عن سكن والمعاينات والتواصل مع المختصين المستقلين لإعداد الانتقال.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "اختيار الإقامة المناسبة",
+          "body": "يجب أن يتوافق الأساس مع الغرض الحقيقي للإقامة. تتطلب إقامة المالك مسكناً يستخدمه للإقامة، ولا يضمن الشراء قبول الطلب. يمكن للزوج المؤهل التقدم للإقامة العائلية.",
+          "table": {
+            "headers": [
+              "نوع التصريح",
+              "الحد الأقصى المعتاد"
+            ],
+            "rows": [
+              [
+                "قصيرة الأجل",
+                "سنتان لكل إصدار باستثناء فئات خاصة"
+              ],
+              [
+                "عائلية",
+                "3 سنوات ولا تتجاوز مدة تصريح الكفيل"
+              ],
+              [
+                "طويلة الأجل",
+                "غير محددة بعد 8 سنوات مؤهلة واستيفاء الشروط"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "إعداد الوثائق في بريطانيا",
+          "body": "جهز الجواز وإثبات السكن والموارد والتأمين والصور والوثائق العائلية. وفر الوقت اللازم للتصديق والترجمة المحلفة عند الطلب. قدم عبر بوابة الإقامة خلال وجودك القانوني واتبع بيانات الموعد."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "تسجيل العنوان",
+          "body": "تحقق من أهلية العنوان قبل توقيع الإيجار أو الشراء. سجل عنوانك خلال المهلة المقررة وهي 20 يوم عمل. قد توجد قيود محلية، ولا يعني تسجيل أجنبي سابق قبول طلبك."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "الصحة والأسرة والعمل",
+          "body": "تحقق من تغطية جميع أفراد الأسرة. وفق الدليل البريطاني يمكن الانضمام إلى التأمين الصحي الحكومي التركي بشروط بعد سنة من الإقامة. يلزم تصريح منفصل للعمل، وجهز سجلات الدراسة وشهادات ميلاد الأطفال."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "الشهر الأول",
+          "body": "خصص وقتاً للسكن والتأمين والمواعيد الرسمية. حضر التجديد في آخر 60 يوماً قبل انتهاء البطاقة. الإقامة الإدارية والإقامة الضريبية أمران مختلفان."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يمكن البقاء بعد 90 يوماً بدون إيكامت؟",
+          "answer": "فقط إذا كان لديك وضع قانوني آخر يسمح بذلك."
+        },
+        {
+          "question": "هل يضمن شراء منزل الإقامة؟",
+          "answer": "لا، يجب استيفاء شروط العقار والطلب."
+        },
+        {
+          "question": "هل يمكن الاحتفاظ بالجنسية البريطانية؟",
+          "answer": "نعم، تعترف تركيا بازدواج الجنسية."
+        }
+      ],
+      "sources": [
+        {
+          "label": "دليل الإقامة البريطاني",
+          "href": "https://www.gov.uk/guidance/living-in-turkey"
+        },
+        {
+          "label": "رئاسة إدارة الهجرة",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "بوابة الإقامة الرسمية",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        },
+        {
+          "label": "إرشادات الدخول البريطانية",
+          "href": "https://www.gov.uk/foreign-travel-advice/turkey/entry-requirements"
+        }
+      ]
+    }
+  },
+  "uk-investors-turkey-residence-tax": {
+    "fr": {
+      "title": "Investir en Turquie depuis le Royaume-Uni : fiscalité 2026",
+      "metaDescription": "Convention fiscale UK–Turquie, résidence fiscale, loyers et nouvelle exonération de 20 ans : préparez votre investissement avec les bonnes règles.",
+      "shortAnswer": "Un investissement turc ne rend pas automatiquement résident fiscal turc. Analysez vos jours de présence, votre domicile et la convention fiscale ; la réforme de 2026 exonère certains revenus étrangers sous conditions.",
+      "bosphorasHelp": "Bosphoras peut coordonner une étude immobilière et des rendez-vous avec un fiscaliste et un avocat indépendants avant votre décision.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Résidence fiscale : deux pays",
+          "body": "En Turquie, le domicile ou une présence continue de plus de six mois dans l’année civile peut entraîner l’assujettissement complet, sous réserve des exceptions légales. Le Royaume-Uni applique son Statutory Residence Test selon son propre exercice fiscal. En cas de double résidence, la convention examine notamment le foyer permanent et le centre des intérêts vitaux."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Comment sont traités les revenus",
+          "body": "La convention organise les droits d’imposition et les mécanismes de dégrèvement, sans supprimer automatiquement tout impôt. Identifiez chaque source.",
+          "table": {
+            "headers": [
+              "Revenu",
+              "Point à examiner"
+            ],
+            "rows": [
+              [
+                "Loyer d’un bien turc",
+                "Imposition possible en Turquie ; obligations britanniques selon résidence"
+              ],
+              [
+                "Dividendes britanniques",
+                "Règles de retenue et de résidence"
+              ],
+              [
+                "Retraite",
+                "Nature privée ou publique et article applicable"
+              ],
+              [
+                "Vente immobilière",
+                "Plus-value et règles du pays du bien"
+              ],
+              [
+                "Activité commerciale",
+                "Établissement stable et lieu d’exercice"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Exonération turque de 20 ans",
+          "body": "La loi 7582, publiée le 4 juin 2026, a introduit l’article additionnel 20/D : certains revenus réalisés hors de Turquie bénéficient d’une exonération pendant vingt ans pour les personnes qui deviennent résidentes et satisfont aux conditions des trois années civiles antérieures. Certains antécédents d’imposition limitée n’excluent pas le dispositif. L’exonération ne couvre pas automatiquement les revenus turcs ni les impôts dus au Royaume-Uni."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Acheter ou créer une société",
+          "body": "Séparez budget d’acquisition, charges de détention, fiscalité locative, frais de sortie et risque GBP/TRY. Une société turque a ses propres obligations et ne permet pas automatiquement de travailler en Turquie. Faites examiner le mode de détention avant de signer."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Avant de déplacer votre résidence",
+          "body": "Préparez un calendrier UK/Turquie, les lieux de logement familial, justificatifs d’impôts des trois années antérieures, sources de revenus et actifs. Demandez une analyse du traitement des revenus avant toute réorganisation. Ne présumez pas qu’un ikamet ou un passeport suffit à bénéficier de l’exonération."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "L’achat d’un appartement change-t-il ma résidence fiscale ?",
+          "answer": "Pas à lui seul ; les critères de fait et de droit s’appliquent."
+        },
+        {
+          "question": "La convention supprime-t-elle tous les impôts ?",
+          "answer": "Non, elle répartit les droits d’imposition et prévoit des mécanismes de dégrèvement."
+        },
+        {
+          "question": "L’exonération de 20 ans couvre-t-elle mes loyers turcs ?",
+          "answer": "Non : elle vise les revenus de source étrangère répondant aux conditions."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Convention fiscale Royaume-Uni–Turquie",
+          "href": "https://www.gov.uk/government/publications/turkey-tax-treaties"
+        },
+        {
+          "label": "Loi 7582 du 4 juin 2026",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "Résidence fiscale britannique",
+          "href": "https://www.gov.uk/tax-foreign-income/residence"
+        },
+        {
+          "label": "Guide consulaire britannique",
+          "href": "https://www.gov.uk/guidance/living-in-turkey"
+        },
+        {
+          "label": "Administration des migrations",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        }
+      ]
+    },
+    "en": {
+      "title": "UK investors in Turkey 2026: tax, residence & 20-year relief",
+      "metaDescription": "Understand UK–Turkey tax treaty rules, rental income, tax residence and Turkey's new 20-year foreign-income exemption before investing.",
+      "shortAnswer": "Buying an asset in Turkey does not automatically make you Turkish tax resident. Consider presence, domicile and the treaty; the 2026 reform provides conditional relief for qualifying overseas earnings.",
+      "bosphorasHelp": "Bosphoras can coordinate property assessment and meetings with independent legal and cross-border tax professionals.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Tax residence in two countries",
+          "body": "In Turkey, a domicile or continuous presence exceeding six months in a calendar year can trigger full tax liability, subject to statutory exceptions. The UK applies its Statutory Residence Test over its own tax year. For dual residents, the treaty considers factors such as permanent home and centre of vital interests."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Analyse each income stream",
+          "body": "The treaty allocates taxing rights and provides relief mechanisms rather than removing all tax automatically.",
+          "table": {
+            "headers": [
+              "Income",
+              "Issue to resolve"
+            ],
+            "rows": [
+              [
+                "Rent from Turkish property",
+                "Potential Turkish tax and UK reporting depending on residence"
+              ],
+              [
+                "UK dividends",
+                "Withholding and residence rules"
+              ],
+              [
+                "Pension",
+                "Private or government pension and relevant article"
+              ],
+              [
+                "Property sale",
+                "Capital gains and property location"
+              ],
+              [
+                "Business income",
+                "Permanent establishment and place of activity"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Turkey's 20-year exemption",
+          "body": "Law 7582, published on 4 June 2026, introduced Article 20/D. Qualifying individuals who become Turkish residents and meet the prior-three-calendar-year conditions can obtain a twenty-year exemption for certain income earned abroad. Some previous limited Turkish tax liabilities do not prevent eligibility. It does not automatically cover Turkish-source income or eliminate UK liabilities."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Property or a company",
+          "body": "Budget acquisition costs, ongoing expenses, rental taxation, exit costs and GBP/TRY currency risk separately. A Turkish company has its own tax obligations and does not automatically provide work authorisation. Assess ownership structure before signing."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Before changing residence",
+          "body": "Collect UK/Turkey travel dates, family housing evidence, tax records for the previous three calendar years, income sources and assets. Review the treatment of each stream before restructuring. Holding an ikamet or passport is not enough to claim the exemption."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does buying a flat change my tax residence?",
+          "answer": "Not on its own; factual and statutory tests apply."
+        },
+        {
+          "question": "Does the treaty remove all taxes?",
+          "answer": "No; it allocates taxing rights and provides relief mechanisms."
+        },
+        {
+          "question": "Does the 20-year relief cover Turkish rental income?",
+          "answer": "No; it concerns qualifying foreign-source income."
+        }
+      ],
+      "sources": [
+        {
+          "label": "UK–Turkey tax treaty",
+          "href": "https://www.gov.uk/government/publications/turkey-tax-treaties"
+        },
+        {
+          "label": "Law 7582, 4 June 2026",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "UK tax residence",
+          "href": "https://www.gov.uk/tax-foreign-income/residence"
+        },
+        {
+          "label": "UK living in Turkey guide",
+          "href": "https://www.gov.uk/guidance/living-in-turkey"
+        },
+        {
+          "label": "Migration authority",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Инвесторы из Великобритании в Турции: налоги и резидентство 2026",
+      "metaDescription": "Налоговое соглашение, доход от аренды, налоговое резидентство и новое освобождение зарубежных доходов на 20 лет: что учесть инвестору.",
+      "shortAnswer": "Покупка турецкого актива сама по себе не делает инвестора налоговым резидентом Турции. Нужно учитывать сроки пребывания, место жительства и международное соглашение. Льгота 2026 года имеет условия.",
+      "bosphorasHelp": "Bosphoras помогает организовать оценку объекта и консультации независимых юристов и специалистов по международным налогам.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Резидентство двух стран",
+          "body": "В Турции постоянное место жительства или непрерывное пребывание более шести месяцев в календарном году может привести к полной налоговой обязанности с учётом законных исключений. Великобритания применяет собственный тест налогового резидентства. При двойном резидентстве соглашение учитывает постоянное жильё и центр жизненных интересов."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Виды дохода",
+          "body": "Соглашение распределяет права налогообложения и предусматривает устранение двойного налогообложения, но не освобождает от всех налогов.",
+          "table": {
+            "headers": [
+              "Доход",
+              "Что проверить"
+            ],
+            "rows": [
+              [
+                "Аренда турецкой недвижимости",
+                "Налог в Турции и обязанности в Великобритании"
+              ],
+              [
+                "Британские дивиденды",
+                "Удержания и резидентство"
+              ],
+              [
+                "Пенсия",
+                "Частная или государственная, применимая статья"
+              ],
+              [
+                "Продажа недвижимости",
+                "Прирост капитала и место объекта"
+              ],
+              [
+                "Предпринимательство",
+                "Постоянное представительство и место деятельности"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Освобождение на 20 лет",
+          "body": "Закон № 7582, опубликованный 4 июня 2026 года, ввёл дополнительную статью 20/D. Льгота распространяется на определённые зарубежные доходы новых налоговых резидентов, удовлетворяющих условиям за три предыдущих календарных года. Некоторые случаи прежнего ограниченного налогообложения в Турции не препятствуют применению льготы. Она не отменяет автоматически налоги в Великобритании и не распространяется на турецкие доходы."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Недвижимость или компания",
+          "body": "Отдельно оцените расходы приобретения, содержания, аренды, продажи и валютный риск фунта к лире. Турецкая компания имеет собственные обязательства и сама по себе не разрешает работать. Проверьте структуру владения до подписания договора."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Подготовка к смене резидентства",
+          "body": "Соберите даты поездок, сведения о семейном жилье, налоговые документы за три предыдущих года, источники доходов и активы. Изучите налоговый режим каждого дохода до реструктуризации. ВНЖ или паспорт сами по себе не дают права на льготу."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Меняется ли резидентство при покупке квартиры?",
+          "answer": "Нет, не автоматически: применяются установленные критерии."
+        },
+        {
+          "question": "Отменяет ли соглашение все налоги?",
+          "answer": "Нет, оно распределяет права налогообложения и предусматривает механизмы зачёта."
+        },
+        {
+          "question": "Освобождается ли доход от турецкой аренды на 20 лет?",
+          "answer": "Нет, льгота касается соответствующих требованиям зарубежных доходов."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Налоговое соглашение Великобритании и Турции",
+          "href": "https://www.gov.uk/government/publications/turkey-tax-treaties"
+        },
+        {
+          "label": "Закон № 7582 от 4 июня 2026 года",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "Налоговое резидентство Великобритании",
+          "href": "https://www.gov.uk/tax-foreign-income/residence"
+        },
+        {
+          "label": "Консульский справочник Великобритании",
+          "href": "https://www.gov.uk/guidance/living-in-turkey"
+        },
+        {
+          "label": "Миграционная служба",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الاستثمار في تركيا من بريطانيا 2026: الضرائب وإعفاء 20 عاماً",
+      "metaDescription": "دليل المستثمر البريطاني لاتفاقية منع الازدواج الضريبي والإقامة الضريبية والإيجارات والإعفاء الجديد للدخل الأجنبي لمدة 20 عاماً.",
+      "shortAnswer": "لا يؤدي شراء أصل في تركيا تلقائياً إلى الإقامة الضريبية التركية. يجب تقييم مدة الوجود والموطن والاتفاقية، ويخضع إعفاء 2026 لشروط محددة.",
+      "bosphorasHelp": "تنسق Bosphoras دراسة العقار والمواعيد مع محامين ومستشارين ضريبيين مستقلين متخصصين في التعاملات الدولية.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "الإقامة الضريبية في البلدين",
+          "body": "قد يؤدي وجود الموطن في تركيا أو الإقامة المتواصلة لأكثر من ستة أشهر خلال السنة الميلادية إلى الخضوع الضريبي الكامل مع مراعاة الاستثناءات القانونية. وتطبق بريطانيا اختبار الإقامة الخاص بها. عند ازدواج الإقامة تراعي الاتفاقية المسكن الدائم ومركز المصالح الحيوية."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "تحليل أنواع الدخل",
+          "body": "توزع الاتفاقية حقوق فرض الضرائب وتوفر آليات لتجنب الازدواج، لكنها لا تلغي كل الضرائب تلقائياً.",
+          "table": {
+            "headers": [
+              "الدخل",
+              "ما يجب تقييمه"
+            ],
+            "rows": [
+              [
+                "إيجار عقار تركي",
+                "الضريبة التركية والالتزامات البريطانية بحسب الإقامة"
+              ],
+              [
+                "أرباح أسهم بريطانية",
+                "الاقتطاع والإقامة"
+              ],
+              [
+                "المعاش",
+                "طبيعته الخاصة أو الحكومية والمادة المعنية"
+              ],
+              [
+                "بيع عقار",
+                "الأرباح الرأسمالية وموقع العقار"
+              ],
+              [
+                "دخل تجاري",
+                "المنشأة الدائمة ومكان النشاط"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "إعفاء الدخل الأجنبي لمدة 20 عاماً",
+          "body": "أضاف القانون 7582 المنشور في 4 يونيو 2026 المادة الإضافية 20/D. يستفيد المقيمون الجدد المستوفون لشروط السنوات الميلادية الثلاث السابقة من إعفاء عشرين عاماً لبعض الإيرادات المحققة خارج تركيا. لا تمنع بعض حالات الخضوع الضريبي المحدود سابقاً الاستفادة. ولا يشمل الإعفاء تلقائياً الدخل التركي أو الضرائب البريطانية المستحقة."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "العقار أم الشركة",
+          "body": "احسب تكاليف الشراء والصيانة والضرائب على الإيجار والبيع ومخاطر سعر صرف الجنيه مقابل الليرة بشكل مستقل. للشركة التركية التزامات ضريبية خاصة ولا تمنح تلقائياً تصريح العمل. افحص هيكل الملكية قبل التوقيع."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "قبل تغيير الإقامة",
+          "body": "اجمع تواريخ السفر وبيانات سكن الأسرة والسجلات الضريبية للسنوات الثلاث السابقة ومصادر الدخل والأصول. قيم كل مصدر قبل إعادة الهيكلة. لا تكفي بطاقة الإقامة أو الجنسية وحدها لاستحقاق الإعفاء."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يغير شراء شقة إقامتي الضريبية؟",
+          "answer": "ليس تلقائياً، بل تطبق المعايير القانونية والواقعية."
+        },
+        {
+          "question": "هل تلغي الاتفاقية جميع الضرائب؟",
+          "answer": "لا، فهي توزع حقوق فرض الضرائب وتوفر آليات لتخفيف الازدواج."
+        },
+        {
+          "question": "هل يشمل الإعفاء إيجار عقاري داخل تركيا؟",
+          "answer": "لا، يخص الإيرادات الأجنبية المؤهلة."
+        }
+      ],
+      "sources": [
+        {
+          "label": "اتفاقية الضرائب البريطانية التركية",
+          "href": "https://www.gov.uk/government/publications/turkey-tax-treaties"
+        },
+        {
+          "label": "القانون 7582 بتاريخ 4 يونيو 2026",
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F7582SayiliKanun.pdf"
+        },
+        {
+          "label": "الإقامة الضريبية البريطانية",
+          "href": "https://www.gov.uk/tax-foreign-income/residence"
+        },
+        {
+          "label": "دليل الإقامة البريطاني",
+          "href": "https://www.gov.uk/guidance/living-in-turkey"
+        },
+        {
+          "label": "رئاسة إدارة الهجرة",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
         }
       ]
     }
