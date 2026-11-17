@@ -1,6 +1,6 @@
 import type { Locale } from '@/lib/i18n';
 
-export type EditorialSection = { id: string; title: string; body: string; bullets?: string[] };
+export type EditorialSection = { id: string; title: string; body: string; bullets?: string[]; table?: { headers: string[]; rows: string[][] } };
 export type EditorialGuide = { title: string; metaDescription: string; shortAnswer: string; bosphorasHelp: string; sections: EditorialSection[]; faqs: { question: string; answer: string }[]; sources: { label: string; href: string }[] };
 
 export const editorialGuideUpdatedAt = '2026-11-17';

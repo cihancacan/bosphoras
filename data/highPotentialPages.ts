@@ -1,4 +1,6 @@
 import type { Locale } from '@/lib/i18n';
+import { visaEditorialGuides } from './visaEditorialGuides';
+import { bosphorasVisaResidenceSeoPages } from './bosphorasVisaResidenceSeoPages';
 import { editorialGuides, editorialGuideUpdatedAt, type EditorialSection } from './highPotentialEditorialGuides';
 
 export type GuideTheme = 'tax' | 'relocation' | 'city' | 'health' | 'business' | 'investor' | 'concierge' | 'property';
@@ -177,6 +179,25 @@ export const highPotentialGuides: HighPotentialGuide[] = highPotentialTopics.fla
   }))
 );
 
+const editorialVisaPages = bosphorasVisaResidenceSeoPages.filter((page) => visaEditorialGuides[page.key]);
+const visaLocales: Locale[] = ['fr', 'en', 'ru', 'ar'];
+const visaSlug = (slug: string) => slug.replace(/^\/(en|ru|ar)(?=\/)/, '');
+for (const page of editorialVisaPages) {
+  for (const locale of visaLocales) {
+    const copy = visaEditorialGuides[page.key]![locale];
+    highPotentialGuides.push({
+      id: page.key, locale, slug: visaSlug(page.slugs[locale]),
+      ...copy, h1: copy.title, subtitle: copy.metaDescription,
+      theme: 'relocation', cityFocus: '', serviceFocus: copy.title,
+      updatedAt: editorialGuideUpdatedAt, publishedAt: '2026-06-05', legalCaution: cautions[locale].relocation,
+      internalLinks: [
+        ...editorialVisaPages.filter((other) => other.key !== page.key).map((other) => ({ label: visaEditorialGuides[other.key]![locale].title, href: other.slugs[locale] })),
+        ...highPotentialGuides.filter((guide) => guide.locale === locale && ['relocate-turkey-cities', 'health-insurance-expats'].includes(guide.id)).map((guide) => ({ label: guide.title, href: prefix(locale) + guide.slug })),
+      ],
+    });
+  }
+}
+
 export function getHighPotentialGuideBySlug(locale: Locale, slug: string): HighPotentialGuide | undefined {
   const normalized = slug.startsWith('/') ? slug : `/${slug}`;
   return highPotentialGuides.find((guide) => guide.locale === locale && guide.slug === normalized);
@@ -202,6 +223,6 @@ const editorialSeoKeyMap: Record<string, string> = {
 };
 
 export function getEditorialGuideForSeoKey(key: string, locale: Locale): HighPotentialGuide | undefined {
-  const id = editorialSeoKeyMap[key];
+  const id = editorialSeoKeyMap[key] ?? (visaEditorialGuides[key] ? key : undefined);
   return id ? highPotentialGuides.find((guide) => guide.id === id && guide.locale === locale && Boolean(guide.sections)) : undefined;
 }

@@ -4,6 +4,8 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { StructuredData } from '@/components/StructuredData';
 import type { Locale } from '@/lib/i18n';
+import { getEditorialGuideForSeoKey } from '@/data/highPotentialPages';
+import { HighPotentialGuideRenderer } from '@/components/HighPotentialGuideRenderer';
 import { siteUrl } from '@/lib/routes';
 import type { BosphorasProgrammaticSeoPage } from '@/data/bosphorasProgrammaticSeoPages';
 
@@ -213,6 +215,8 @@ function faq(page: BosphorasProgrammaticSeoPage, locale: Locale): Array<[string,
 }
 
 export function BosphorasVisaResidenceSeoPage({ page, locale }: { page: BosphorasProgrammaticSeoPage; locale: Locale }) {
+  const guide = getEditorialGuideForSeoKey(page.key, locale);
+  if (guide) return <><Header locale={locale} currentPath={page.slugs[locale]} /><HighPotentialGuideRenderer guide={guide} /><Footer locale={locale} /></>;
   const l = labels[locale];
   const pageFaq = faq(page, locale);
   const canonical = baseUrl(page, locale);

@@ -61,7 +61,7 @@ function generatedSections(guide: HighPotentialGuide) {
 
 export function HighPotentialGuideRenderer({ guide }: { guide: HighPotentialGuide }) {
   const labels = guideLabels(guide.locale);
-  const sections = guide.sections ?? generatedSections(guide);
+  const sections: import('@/data/highPotentialEditorialGuides').EditorialSection[] = guide.sections ?? generatedSections(guide);
   const editorial = Boolean(guide.sections);
   const assessmentBase = guide.locale === 'fr' ? '/diagnostic-prive' : guide.locale === 'en' ? '/en/private-assessment' : guide.locale === 'ru' ? '/ru/chastnaya-konsultatsiya' : '/ar/تقييم-خاص';
   const sourcePath = guide.locale === 'fr' ? guide.slug : `/${guide.locale}${guide.slug}`;
@@ -108,6 +108,7 @@ export function HighPotentialGuideRenderer({ guide }: { guide: HighPotentialGuid
               <section key={section.id} id={section.id} className={editorial ? "scroll-mt-32 border-b border-[#d8c7a1] pb-8" : "border border-[#d8c7a1] bg-[#fffaf0] p-7 md:p-9"}>
                 <h2 className="font-serif text-3xl tracking-[-0.03em] text-[#121826] md:text-4xl">{section.title}</h2>
                 {section.body.split("\n\n").map((paragraph, index) => <p key={index} className="mt-5 text-base leading-8 text-[#3e4857]">{paragraph}</p>)}
+                {section.table && <div className="mt-6 overflow-x-auto"><table className="w-full border-collapse text-sm leading-6 text-[#3e4857]"><thead><tr>{section.table.headers.map((heading) => <th key={heading} scope="col" className="border-b border-[#8a6728] px-3 py-3 text-start font-semibold text-[#121826]">{heading}</th>)}</tr></thead><tbody>{section.table.rows.map((cells, index) => <tr key={index} className="border-b border-[#d8c7a1]">{cells.map((cell, cellIndex) => cellIndex === 0 ? <th key={cellIndex} scope="row" className="px-3 py-3 text-start font-medium text-[#121826]">{cell}</th> : <td key={cellIndex} className="px-3 py-3">{cell}</td>)}</tr>)}</tbody></table></div>}
                 {section.bullets && <ul className="mt-6 grid gap-3 md:grid-cols-2">{section.bullets.map((bullet) => <li key={bullet} className="flex gap-3 text-sm leading-6 text-[#3e4857]"><CheckCircle2 className="mt-1 h-4 w-4 flex-none text-[#8a6728]" />{bullet}</li>)}</ul>}
               </section>
             ))}
