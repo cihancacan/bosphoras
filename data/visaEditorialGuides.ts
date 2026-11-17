@@ -5953,5 +5953,3711 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
         }
       ]
     }
+  },
+  "turkey-evisa-foreigners": {
+    "fr": {
+      "title": "e-Visa Turquie 2026 : durée, prix et conditions pour les étrangers",
+      "metaDescription": "Découvrez les durées de l’e-Visa turc, les entrées uniques ou multiples, les frais officiels, les justificatifs et les démarches selon votre nationalité.",
+      "shortAnswer": "L’e-Visa est un visa turc dématérialisé pour les visites touristiques et commerciales. Il n’est nécessaire que si votre document de voyage est soumis à visa et permet cette voie. Il ne constitue ni un titre de séjour ni un permis de travail.",
+      "bosphorasHelp": "Parlons de votre voyage en Turquie. Bosphoras coordonne les transferts, séjours et rendez-vous selon les besoins de votre projet.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Qui peut obtenir un e-Visa ?",
+          "body": "Les passeports français, chinois et kazakhs ordinaires relèvent généralement d’une dispense pour un séjour de 90 jours au maximum selon leur régime. En revanche, les passeports indiens et pakistanais nécessitent un visa ; la procédure électronique est accessible sous conditions. Des pays comme le Mexique ou le Vietnam disposent d’un parcours électronique à entrée unique. Les règles détaillées par nationalité figurent dans le tableau.",
+          "table": {
+            "headers": [
+              "Nationalité / document",
+              "Régime",
+              "Durée / entrées",
+              "Conditions"
+            ],
+            "rows": [
+              [
+                "Inde",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Pakistan",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Bangladesh",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Népal",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Algérie",
+                "Dispense selon l’âge ou visa",
+                "90/180 si moins de 15 ou plus de 50 ans ; e-Visa 30 jours, 1 entrée",
+                "e-Visa : 15–18 ou 35–50 ans et justificatif admissible ; autres cas : consulat"
+              ],
+              [
+                "Irak",
+                "Dispense selon l’âge ou visa",
+                "90/180 si moins de 15 ou plus de 50 ans ; e-Visa 30 jours, 1 entrée",
+                "15–50 ans : justificatif admissible et conditions du portail"
+              ],
+              [
+                "Libye",
+                "Dispense selon l’âge ou visa",
+                "90/180 si moins de 16 ou plus de 45 ans ; e-Visa 30 jours, 1 entrée",
+                "16–45 ans : justificatif admissible et conditions du portail"
+              ],
+              [
+                "Égypte",
+                "Visa obligatoire",
+                "30 jours, 1 entrée pour l’e-Visa des 15–45 ans",
+                "Moins de 15 ou plus de 45 ans : e-Visa sans condition supplémentaire ; 15–45 : justificatif admissible et compagnie agréée"
+              ],
+              [
+                "Mexique",
+                "e-Visa possible",
+                "30 jours, 1 entrée",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Vietnam",
+                "e-Visa possible",
+                "30 jours, 1 entrée",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Afrique du Sud",
+                "e-Visa possible",
+                "30 jours, entrées multiples",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Maldives",
+                "e-Visa possible",
+                "Visa de 3 mois, entrées multiples",
+                "Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "France",
+                "Dispense de visa",
+                "90 jours sur 180",
+                "Pas de frais de visa"
+              ],
+              [
+                "Kazakhstan",
+                "Dispense de visa",
+                "90 jours sur 180",
+                "Pas de frais de visa"
+              ],
+              [
+                "Russie",
+                "Dispense de visa",
+                "60 jours par séjour",
+                "Plafond général de 90/180"
+              ],
+              [
+                "Indonésie",
+                "Dispense de visa",
+                "30 jours par entrée",
+                "90/180 au total"
+              ],
+              [
+                "Chine",
+                "Dispense de visa",
+                "90 jours sur 180",
+                "Pas de frais de visa"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Combien de jours peut-on rester ?",
+          "body": "Un e-Visa de 30 jours à entrée unique permet une seule entrée et une présence maximale de 30 jours, dans sa période de validité. Les Maldives et la Jamaïque disposent d’un régime électronique à entrées multiples de trois mois selon le ministère ; la durée de présence exacte doit être lue sur l’autorisation. Les ressortissants sud-africains peuvent obtenir un e-Visa à entrées multiples pour 30 jours de séjour. La durée cumulée n’est jamais automatiquement renouvelée à chaque franchissement."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Prix de l’e-Visa et délais",
+          "body": "Le montant officiel varie en fonction du pays et du document. Il apparaît lors de la demande, avant le règlement en dollars américains. Un voyageur dispensé n’a aucun frais de visa à payer. Les éventuels honoraires d’un prestataire privé ne sont pas des droits gouvernementaux. La démarche peut être effectuée rapidement en ligne, mais il est prudent de la commencer au moins deux jours avant le voyage."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Quels justificatifs sont nécessaires ?",
+          "body": "Préparez votre passeport, vos dates et une adresse électronique accessible. Pour les pays soumis à conditions, un visa ou titre de séjour admis en cours de validité à la date d’entrée peut être indispensable. Les e-Visas étrangers ne sont pas acceptés comme justificatifs. Selon la nationalité, des exigences supplémentaires peuvent concerner la compagnie aérienne, l’hébergement ou les ressources."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Exemple de voyage : deux semaines à Istanbul",
+          "body": "Un titulaire d’un passeport indien et d’un titre de séjour français valide peut demander un e-Visa conditionnel de 30 jours, si les autres critères sont réunis. Il prévoit quatorze jours à Istanbul, garde son visa et son justificatif accessibles et quitte le pays avant la limite. Si le même voyageur souhaite revenir après son départ avec un visa à entrée unique déjà utilisé, il doit disposer d’un nouveau droit d’entrée."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Au-delà d’une visite touristique",
+          "body": "L’e-Visa ne permet pas de prendre un poste rémunéré en Turquie. Un projet d’études, d’emploi ou de résidence de longue durée requiert un autre statut. Avant de réserver un séjour de plusieurs mois, mettez en cohérence vos dates, votre motif et votre situation de résidence. Bosphoras peut organiser les étapes pratiques de ce projet."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "L’e-Visa est-il obligatoire pour un Français ?",
+          "answer": "Non, pour un court séjour couvert par la dispense."
+        },
+        {
+          "question": "Puis-je entrer plusieurs fois avec un e-Visa ?",
+          "answer": "Seulement si le visa délivré autorise plusieurs entrées, dans sa durée et sa validité."
+        },
+        {
+          "question": "Le prix est-il identique pour tous ?",
+          "answer": "Non, il dépend du document sélectionné sur le portail officiel."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "Portail officiel : nationalités éligibles"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Ministère turc : règles par passeport"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "Procédure officielle de demande et paiement"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "Documents et validité"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Justificatifs de visa et de résidence"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "Nationalités sans visa à l’arrivée"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Demande de visa consulaire"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel de résidence"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey e-Visa 2026: duration, fees and eligibility",
+      "metaDescription": "Learn which passports qualify for a Turkish e-Visa, permitted stays, single or multiple entries, fees and supporting documents.",
+      "shortAnswer": "The Turkish e-Visa is an electronic authorisation for tourism and commercial visits. It is relevant only when your travel document requires a visa and is eligible for this route. It is neither a work permit nor a residence permit.",
+      "bosphorasHelp": "Discuss your Turkey visit with Bosphoras to coordinate transfers, accommodation and meetings around your plans.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Who qualifies?",
+          "body": "Ordinary French, Chinese and Kazakh passports generally qualify for visa-free visits of up to 90 days under applicable rules. Indian and Pakistani passports require visas but can qualify electronically with supporting documents. Mexican and Vietnamese ordinary passports have a single-entry electronic route. The table explains nationality-specific distinctions.",
+          "table": {
+            "headers": [
+              "Nationality / document",
+              "Route",
+              "Stay / entries",
+              "Conditions"
+            ],
+            "rows": [
+              [
+                "India",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Pakistan",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Bangladesh",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Nepal",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Algeria",
+                "Age-based exemption or visa",
+                "90/180 if under 15 or over 50; e-Visa 30 days, single entry",
+                "Conditional e-Visa ages 15–18 or 35–50 with eligible supporting document; otherwise consulate"
+              ],
+              [
+                "Iraq",
+                "Age-based exemption or visa",
+                "90/180 if under 15 or over 50; e-Visa 30 days, single entry",
+                "Ages 15–50: eligible supporting document plus portal conditions"
+              ],
+              [
+                "Libya",
+                "Age-based exemption or visa",
+                "90/180 if under 16 or over 45; e-Visa 30 days, single entry",
+                "Ages 16–45: eligible supporting document and portal conditions"
+              ],
+              [
+                "Egypt",
+                "Visa required",
+                "30 days, single entry for ages 15–45 via e-Visa",
+                "Under 15 or over 45: no extra e-Visa condition; ages 15–45: eligible supporting document and approved carrier"
+              ],
+              [
+                "Mexico",
+                "e-Visa available",
+                "30 days, single entry",
+                "Official portal conditions"
+              ],
+              [
+                "Vietnam",
+                "e-Visa available",
+                "30 days, single entry",
+                "Official portal conditions"
+              ],
+              [
+                "South Africa",
+                "e-Visa available",
+                "30 days, multiple entry",
+                "Official portal conditions"
+              ],
+              [
+                "Maldives",
+                "e-Visa available",
+                "Three-month, multiple-entry visa",
+                "Read the permitted stay on the issued visa"
+              ],
+              [
+                "France",
+                "Visa-free",
+                "90 days in 180",
+                "No visa fee"
+              ],
+              [
+                "Kazakhstan",
+                "Visa-free",
+                "90 days in 180",
+                "No visa fee"
+              ],
+              [
+                "Russia",
+                "Visa-free",
+                "60 days per visit",
+                "General 90/180 ceiling"
+              ],
+              [
+                "Indonesia",
+                "Visa-free",
+                "30 days per entry",
+                "90/180 total"
+              ],
+              [
+                "China",
+                "Visa-free",
+                "90 days in 180",
+                "No visa fee"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "How long can you stay?",
+          "body": "A 30-day single-entry e-Visa permits one entry and at most 30 days of presence within its validity. The ministry describes three-month multiple-entry visas for Maldives and Jamaica passport holders; read the actual stay allowance on the visa. South African nationals have a multiple-entry e-Visa allowing 30 days of stay. Border crossings do not automatically renew the total allowance."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Government fees and application timing",
+          "body": "The official fee depends on nationality and travel document and appears before payment in US dollars. Visa-exempt visitors owe no visa application fee. Private assistance charges are separate from government fees. Online applications can be quick, but starting at least two days before travel is prudent."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Supporting documents",
+          "body": "Prepare your passport, travel dates and an accessible email address. Conditional applicants may need an eligible visa or residence permit valid on arrival. Foreign electronic visas are not accepted as supporting documents. Nationality-specific requirements may also involve the airline, accommodation or financial means."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Example: two weeks in Istanbul",
+          "body": "An Indian passport holder with a valid French residence permit may obtain a conditional 30-day e-Visa if all remaining criteria are met. For a fourteen-day visit, carry both the visa and supporting permit and depart before expiry. Returning after using a single-entry visa requires new entry permission."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Beyond a short visit",
+          "body": "An e-Visa does not authorise employment in Turkey. Study, employment and long-term relocation require appropriate separate status. Align your purpose, dates and residence plan before booking several months of accommodation. Bosphoras can coordinate practical arrangements."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do French citizens need an e-Visa?",
+          "answer": "No, for a qualifying visa-exempt visit."
+        },
+        {
+          "question": "Can I enter several times?",
+          "answer": "Only if the issued visa permits multiple entries and its other limits are respected."
+        },
+        {
+          "question": "Are fees universal?",
+          "answer": "No; the official application calculates them from your document."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "Official eligible-country list"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Foreign Ministry: passport-specific rules"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "Official application and payment procedure"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "Required documents and validity"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Supporting visas and residence permits"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "Nationalities not eligible for visa on arrival"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Consular visa application"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official residence portal"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Электронная виза в Турцию 2026: сроки, стоимость и условия",
+      "metaDescription": "Узнайте, кому доступна турецкая e-Visa, сколько дней можно находиться в стране, какие документы и сборы предусмотрены.",
+      "shortAnswer": "Турецкая электронная виза предназначена для туризма и коммерческих поездок. Она нужна, если для вашего документа требуется виза и доступна электронная процедура. Она не заменяет ВНЖ или разрешение на работу.",
+      "bosphorasHelp": "Bosphoras может организовать трансферы, проживание и встречи с учётом вашего проекта.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Кому доступна электронная виза?",
+          "body": "Обычные паспорта Франции, Китая и Казахстана, как правило, позволяют безвизовые поездки до 90 дней по применимому режиму. Гражданам Индии и Пакистана нужна виза, электронный вариант доступен при выполнении условий. Для Мексики и Вьетнама предусмотрена однократная электронная виза. В таблице приведены различия по гражданствам.",
+          "table": {
+            "headers": [
+              "Гражданство / документ",
+              "Режим",
+              "Срок / въезды",
+              "Условия"
+            ],
+            "rows": [
+              [
+                "Индия",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Пакистан",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Бангладеш",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Непал",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Алжир",
+                "Освобождение по возрасту или виза",
+                "90/180 до 15 или старше 50; электронная виза 30 дней, один въезд",
+                "Электронная виза для 15–18 или 35–50 лет с подходящим документом; иначе консульство"
+              ],
+              [
+                "Ирак",
+                "Освобождение по возрасту или виза",
+                "90/180 до 15 или старше 50; электронная виза 30 дней, один въезд",
+                "15–50 лет: подходящий документ и условия портала"
+              ],
+              [
+                "Ливия",
+                "Освобождение по возрасту или виза",
+                "90/180 до 16 или старше 45; электронная виза 30 дней, один въезд",
+                "16–45 лет: подходящий документ и условия портала"
+              ],
+              [
+                "Египет",
+                "Виза обязательна",
+                "30 дней, один въезд для электронной визы в 15–45 лет",
+                "До 15 или старше 45: без дополнительных условий; 15–45: подходящий документ и разрешённая авиакомпания"
+              ],
+              [
+                "Мексика",
+                "Электронная виза доступна",
+                "30 дней, один въезд",
+                "Условия официального портала"
+              ],
+              [
+                "Вьетнам",
+                "Электронная виза доступна",
+                "30 дней, один въезд",
+                "Условия официального портала"
+              ],
+              [
+                "ЮАР",
+                "Электронная виза доступна",
+                "30 дней, многократная",
+                "Условия официального портала"
+              ],
+              [
+                "Мальдивы",
+                "Электронная виза доступна",
+                "Трёхмесячная, многократная",
+                "Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Франция",
+                "Без визы",
+                "90 дней из 180",
+                "Без визового сбора"
+              ],
+              [
+                "Казахстан",
+                "Без визы",
+                "90 дней из 180",
+                "Без визового сбора"
+              ],
+              [
+                "Россия",
+                "Без визы",
+                "60 дней за визит",
+                "Общий предел 90/180"
+              ],
+              [
+                "Индонезия",
+                "Без визы",
+                "30 дней за въезд",
+                "Всего 90/180"
+              ],
+              [
+                "Китай",
+                "Без визы",
+                "90 дней из 180",
+                "Без визового сбора"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Разрешённый срок пребывания",
+          "body": "Однократная электронная виза на 30 дней разрешает один въезд и пребывание до 30 дней в пределах срока действия. Для Мальдив и Ямайки МИД указывает многократный трёхмесячный режим; допустимый срок пребывания указан в самой визе. Для граждан ЮАР предусмотрена многократная электронная виза с пребыванием до 30 дней. Пересечение границы не обновляет общий лимит автоматически."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Стоимость и сроки подачи",
+          "body": "Государственный сбор зависит от гражданства и документа; сумма показывается перед оплатой в долларах США. При безвизовом режиме сбор за визу не требуется. Оплата частного сопровождения не является государственным сбором. Онлайн-заявка может оформляться быстро, но лучше подать её минимум за два дня до поездки."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Какие документы подготовить",
+          "body": "Понадобятся паспорт, даты и доступная электронная почта. При условном режиме требуется подходящая виза или ВНЖ, действительные на дату въезда. Электронные визы других государств не принимаются как подтверждение. В зависимости от гражданства могут учитываться перевозчик, проживание и средства."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Пример: две недели в Стамбуле",
+          "body": "Гражданин Индии с действующим французским ВНЖ может оформить условную электронную визу на 30 дней при соблюдении остальных требований. На двухнедельную поездку он берёт визу и подтверждающий документ и выезжает до окончания срока. Для повторного въезда после использования однократной визы необходимо новое основание."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Если поездка становится переездом",
+          "body": "Электронная виза не разрешает трудоустройство. Для учёбы, работы или длительного проживания предусмотрены другие процедуры. Согласуйте цель, даты и основание проживания до бронирования на несколько месяцев. Bosphoras может организовать практические этапы."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Нужна ли электронная виза французам?",
+          "answer": "Нет при соответствующей безвизовой поездке."
+        },
+        {
+          "question": "Можно ли въезжать неоднократно?",
+          "answer": "Только по многократной визе в пределах её условий."
+        },
+        {
+          "question": "Одинаков ли сбор для всех?",
+          "answer": "Нет, сумма зависит от документа."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "Официальный список гражданств"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "МИД Турции: правила по паспорту"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "Официальный порядок подачи и оплаты"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "Документы и сроки действия"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Подтверждающие визы и ВНЖ"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "Гражданства без визы по прибытии"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Консульская подача"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал ВНЖ"
+        }
+      ]
+    },
+    "ar": {
+      "title": "التأشيرة الإلكترونية لتركيا 2026: المدة والرسوم والشروط",
+      "metaDescription": "تعرف على الجنسيات المؤهلة للتأشيرة الإلكترونية ومدة البقاء والدخول الواحد والمتعدد والرسوم والوثائق الداعمة.",
+      "shortAnswer": "التأشيرة الإلكترونية التركية مخصصة للسياحة والزيارات التجارية. وتهم من يحتاج إلى تأشيرة ويؤهله جوازه للمسار الإلكتروني. وهي ليست تصريح إقامة أو عمل.",
+      "bosphorasHelp": "تنسق Bosphoras النقل والسكن والاجتماعات وفق احتياجات مشروعك.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "من المؤهل للتأشيرة الإلكترونية؟",
+          "body": "تتيح الجوازات العادية الفرنسية والصينية والكازاخستانية عموماً زيارات معفاة حتى 90 يوماً وفق النظام المطبق. ويحتاج الهندي والباكستاني إلى تأشيرة مع إمكانية الطلب الإلكتروني بشروط. وللمكسيك وفيتنام مسار إلكتروني لدخول واحد. يبين الجدول الاختلافات حسب الجنسية.",
+          "table": {
+            "headers": [
+              "الجنسية / الوثيقة",
+              "النظام",
+              "المدة / الدخول",
+              "الشروط"
+            ],
+            "rows": [
+              [
+                "الهند",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "باكستان",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "بنغلاديش",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "نيبال",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "الجزائر",
+                "إعفاء حسب العمر أو تأشيرة",
+                "90/180 دون 15 أو فوق 50؛ الإلكترونية 30 يوماً لدخول واحد",
+                "الإلكترونية للأعمار 15–18 أو 35–50 مع وثيقة مؤهلة؛ وإلا القنصلية"
+              ],
+              [
+                "العراق",
+                "إعفاء حسب العمر أو تأشيرة",
+                "90/180 دون 15 أو فوق 50؛ الإلكترونية 30 يوماً لدخول واحد",
+                "15–50 عاماً: وثيقة مؤهلة وشروط المنصة"
+              ],
+              [
+                "ليبيا",
+                "إعفاء حسب العمر أو تأشيرة",
+                "90/180 دون 16 أو فوق 45؛ الإلكترونية 30 يوماً لدخول واحد",
+                "16–45 عاماً: وثيقة مؤهلة وشروط المنصة"
+              ],
+              [
+                "مصر",
+                "تأشيرة إلزامية",
+                "30 يوماً، دخول واحد للإلكترونية بين 15 و45",
+                "دون 15 أو فوق 45: دون شرط إضافي؛ 15–45: وثيقة مؤهلة وناقل معتمد"
+              ],
+              [
+                "المكسيك",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول واحد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "فيتنام",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول واحد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "جنوب إفريقيا",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول متعدد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "المالديف",
+                "تأشيرة إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر، دخول متعدد",
+                "مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "فرنسا",
+                "إعفاء",
+                "90 يوماً خلال 180",
+                "دون رسوم تأشيرة"
+              ],
+              [
+                "كازاخستان",
+                "إعفاء",
+                "90 يوماً خلال 180",
+                "دون رسوم تأشيرة"
+              ],
+              [
+                "روسيا",
+                "إعفاء",
+                "60 يوماً لكل زيارة",
+                "السقف العام 90/180"
+              ],
+              [
+                "إندونيسيا",
+                "إعفاء",
+                "30 يوماً لكل دخول",
+                "إجمالي 90/180"
+              ],
+              [
+                "الصين",
+                "إعفاء",
+                "90 يوماً خلال 180",
+                "دون رسوم تأشيرة"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "كم يوماً يمكن البقاء؟",
+          "body": "تتيح التأشيرة الإلكترونية لمدة 30 يوماً لدخول واحد زيارة واحدة ضمن مدة صلاحيتها. وتذكر الوزارة تأشيرات متعددة الدخول لثلاثة أشهر للمالديف وجامايكا؛ وتحدد الوثيقة الصادرة مدة البقاء الفعلية. ولجنوب إفريقيا تأشيرة متعددة الدخول تسمح بالبقاء 30 يوماً. لا يجدد عبور الحدود الرصيد تلقائياً."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "الرسوم وموعد الطلب",
+          "body": "تختلف الرسوم الحكومية بحسب الجنسية والوثيقة وتظهر قبل الدفع بالدولار الأمريكي. ولا يدفع المعفى رسوم تأشيرة. وتختلف أتعاب المساعدة الخاصة عن الرسوم الحكومية. قد تكون الإجراءات الإلكترونية سريعة، لكن يفضل البدء قبل السفر بيومين على الأقل."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "الوثائق المطلوبة",
+          "body": "جهز الجواز والتواريخ وبريداً إلكترونياً متاحاً. وقد يحتاج المتقدم المشروط إلى تأشيرة أو إقامة مؤهلة سارية عند الوصول. لا تقبل التأشيرات الإلكترونية الأجنبية وثائق داعمة. وتختلف الشروط المتعلقة بالناقل والسكن والموارد حسب الجنسية."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "مثال: أسبوعان في إسطنبول",
+          "body": "قد يحصل مواطن هندي يحمل إقامة فرنسية سارية على إلكترونية مشروطة لمدة 30 يوماً عند استيفاء بقية الشروط. يحمل التأشيرة والإقامة طوال زيارة الأسبوعين ويغادر قبل انتهاء المدة. وعند استخدام تأشيرة دخول واحد يحتاج إلى حق دخول جديد إذا أراد العودة."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "من الزيارة إلى الانتقال",
+          "body": "لا تسمح الإلكترونية بالتوظيف داخل تركيا. وللدراسة والعمل والإقامة الطويلة أوضاع قانونية منفصلة. نسق الغرض والتواريخ والإقامة قبل حجز عدة أشهر. تستطيع Bosphoras تنظيم الخطوات العملية."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يحتاج الفرنسي إلى تأشيرة إلكترونية؟",
+          "answer": "لا في زيارة مشمولة بالإعفاء."
+        },
+        {
+          "question": "هل يمكن الدخول عدة مرات؟",
+          "answer": "فقط إذا كانت التأشيرة متعددة الدخول مع احترام حدودها."
+        },
+        {
+          "question": "هل الرسوم موحدة؟",
+          "answer": "لا، تحدد بناء على وثيقة السفر."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "القائمة الرسمية للجنسيات المؤهلة"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "وزارة الخارجية: الشروط حسب الجواز"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "الإجراءات الرسمية للطلب والدفع"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "الوثائق والصلاحية"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "التأشيرات والإقامات الداعمة"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "الجنسيات غير المؤهلة للتأشيرة عند الوصول"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "طلب التأشيرة القنصلية"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        }
+      ]
+    }
+  },
+  "apply-turkey-evisa": {
+    "fr": {
+      "title": "Demande e-Visa Turquie 2026 : formulaire, paiement et réception",
+      "metaDescription": "Découvrez comment demander l’e-Visa turc en ligne, payer en dollars, télécharger votre visa et éviter les erreurs de dossier.",
+      "shortAnswer": "Pour demander un e-Visa turc, commencez par le portail gouvernemental evisa.gov.tr. La demande comporte la sélection du document de voyage, la saisie des informations, la vérification du courriel puis le paiement. Aucun déplacement au consulat n’est normalement nécessaire pour un demandeur éligible.",
+      "bosphorasHelp": "Parlons de votre voyage en Turquie. Bosphoras coordonne les transferts, séjours et rendez-vous selon les besoins de votre projet.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Avant le formulaire : préparer le dossier",
+          "body": "Rassemblez le passeport de chaque voyageur, les dates prévues, les justificatifs exigés par la nationalité et une carte bancaire compatible. Si votre nationalité est dispensée de visa, n’engagez pas une demande payante inutile. Pour les enfants, une autorisation individuelle est requise lorsque le visa est obligatoire."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Les étapes de demande en ligne",
+          "body": "Ouvrez la rubrique de nouvelle demande sur le site officiel. Sélectionnez le pays ou territoire émetteur et le type de document. Choisissez la date prévue d’arrivée, puis lisez les conditions et les caractéristiques proposées. Saisissez les informations exactement comme elles apparaissent sur le passeport, y compris les prénoms et le numéro. Vérifiez la date de naissance et les dates de délivrance et d’expiration avant validation."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Confirmer le courriel et effectuer le paiement",
+          "body": "Après réception du message de vérification, validez l’adresse électronique et effectuez le paiement dans les 48 heures. Le portail accepte les cartes Visa, Mastercard ou UnionPay compatibles avec les transactions internationales et 3D Secure. La carte peut appartenir à une autre personne. Le règlement est effectué en dollars américains ; votre banque peut convertir le montant et appliquer ses propres frais."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Réception du visa et contrôle avant départ",
+          "body": "Le lien de téléchargement est envoyé après paiement. Enregistrez le PDF sur votre téléphone et, si possible, imprimez-le. Contrôlez le nom, le numéro du document, les dates de validité, le nombre d’entrées et la durée de présence. Si vous souhaitez arriver avant la date de début, une nouvelle demande est nécessaire. Une modification du visa délivré n’est pas possible."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Demandes familiales et de groupe",
+          "body": "Une demande familiale peut regrouper de deux à dix personnes ; le dispositif de groupe permet de traiter dix à trois cents voyageurs. Cela ne transforme pas les visas individuels en autorisation collective. Vérifiez l’éligibilité de chacun, surtout si les passeports diffèrent. Avant paiement, comparez les données de tous les membres et conservez leurs documents distinctement."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Erreur de paiement ou de passeport : que faire ?",
+          "body": "Si la transaction paraît bloquée ou échouée, contactez l’assistance officielle avant de payer à nouveau. Une faute sur le passeport après émission peut imposer la création d’une nouvelle demande, sans remboursement. Ne communiquez pas vos informations à un intermédiaire non identifié. Pour un séjour de prospection ou une installation, Bosphoras peut également coordonner les rendez-vous et le calendrier du voyage."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Combien de temps avant le départ ?",
+          "answer": "Le portail recommande de commencer au moins 48 heures avant le voyage."
+        },
+        {
+          "question": "Puis-je payer avec la carte de mon conjoint ?",
+          "answer": "Oui, si elle est compatible avec les conditions du paiement."
+        },
+        {
+          "question": "Peut-on corriger un visa émis ?",
+          "answer": "Non. Une nouvelle demande peut être nécessaire."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "Portail officiel : nationalités éligibles"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Ministère turc : règles par passeport"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "Procédure officielle de demande et paiement"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "Documents et validité"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Justificatifs de visa et de résidence"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "Nationalités sans visa à l’arrivée"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Demande de visa consulaire"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel de résidence"
+        }
+      ]
+    },
+    "en": {
+      "title": "Apply for a Turkey e-Visa 2026: form, payment and download",
+      "metaDescription": "Follow the official Turkish e-Visa process, prepare documents, pay online and download your authorisation without avoidable errors.",
+      "shortAnswer": "Start at the Turkish government portal evisa.gov.tr. Eligible applicants select their document, enter their details, confirm email and pay online; a consular visit is not ordinarily necessary.",
+      "bosphorasHelp": "Discuss your Turkey visit with Bosphoras to coordinate transfers, accommodation and meetings around your plans.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Prepare the information first",
+          "body": "Gather each traveller's passport, dates, nationality-specific supporting documents and a compatible bank card. If exempt from visa requirements, do not pay for an unnecessary visa. Each child requiring a visa needs an individual authorisation."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Complete the online application",
+          "body": "Choose a new application and specify issuing country or territory and travel-document type. Enter your intended arrival date and read eligibility and visa characteristics. Copy your passport names and number precisely. Double-check date of birth and issue and expiry dates before submission."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Verify email and pay",
+          "body": "After receiving the verification message, confirm the email and pay within 48 hours. Visa, Mastercard and UnionPay cards must support international transactions and 3D Secure. The cardholder need not be the traveller. Payment is in USD; your bank may convert the sum and add its own charges."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Download and check the visa",
+          "body": "The download link follows payment. Save the PDF offline and preferably print it. Check name, passport number, validity dates, entry count and stay allowance. Arrival before the validity start date requires a fresh application. An issued visa cannot be amended."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Family and group applications",
+          "body": "Family applications can include two to ten travellers; group applications can include ten to three hundred. Individuals still receive separate authorisations. Review each traveller's eligibility, especially with mixed passports, and retain the individual documents."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Payment and document errors",
+          "body": "If a payment seems unsuccessful or suspended, contact official support before attempting another payment. Passport errors discovered after issuance may require a fresh, non-refundable application. Avoid handing sensitive documents to unverified intermediaries. Bosphoras can coordinate the travel itinerary and meetings for a scouting visit or relocation."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "When should I apply?",
+          "answer": "The portal advises at least 48 hours before travel."
+        },
+        {
+          "question": "Can I pay with another person's card?",
+          "answer": "Yes, if it meets payment requirements."
+        },
+        {
+          "question": "Can an issued visa be corrected?",
+          "answer": "No; a new application may be required."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "Official eligible-country list"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Foreign Ministry: passport-specific rules"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "Official application and payment procedure"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "Required documents and validity"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Supporting visas and residence permits"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "Nationalities not eligible for visa on arrival"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Consular visa application"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official residence portal"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Как оформить e-Visa в Турцию в 2026 году: анкета и оплата",
+      "metaDescription": "Пошаговое оформление турецкой электронной визы: документы, оплата, скачивание и исправление ошибок.",
+      "shortAnswer": "Для подачи используйте государственный портал evisa.gov.tr. Подходящие заявители выбирают документ, вносят данные, подтверждают почту и оплачивают сбор онлайн. Обычно посещать консульство не требуется.",
+      "bosphorasHelp": "Bosphoras может организовать трансферы, проживание и встречи с учётом вашего проекта.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Подготовка документов",
+          "body": "Соберите паспорта всех путешественников, даты, дополнительные документы по гражданству и подходящую банковскую карту. При безвизовом режиме не оплачивайте ненужную визу. Каждому ребёнку, которому требуется виза, оформляется отдельное разрешение."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Заполнение электронной анкеты",
+          "body": "Откройте новую заявку, выберите страну или территорию выдачи и тип документа. Укажите дату предполагаемого въезда и прочитайте условия и характеристики визы. Внесите имена и номер точно по паспорту. Перед отправкой проверьте дату рождения, выдачи и окончания действия."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Подтверждение почты и оплата",
+          "body": "После получения сообщения подтвердите адрес и внесите платёж в течение 48 часов. Карты Visa, Mastercard и UnionPay должны поддерживать международные платежи и 3D Secure. Карта может принадлежать другому лицу. Сумма списывается в долларах США с возможной конвертацией и банковской комиссией."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Получение и проверка визы",
+          "body": "После оплаты приходит ссылка на скачивание. Сохраните PDF для просмотра без интернета и желательно распечатайте. Проверьте имя, паспорт, даты действия, количество въездов и срок пребывания. Для въезда раньше начальной даты нужна новая заявка. Выданная виза не изменяется."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Семейные и групповые заявки",
+          "body": "Семейная заявка объединяет от двух до десяти человек, групповая — от десяти до трёхсот. Каждый получает собственную визу. Проверьте право каждого участника, особенно при разных гражданствах, и сохраните отдельные документы."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Ошибки оплаты или данных",
+          "body": "Если платёж завис или не прошёл, обратитесь в официальную поддержку до повторной оплаты. Ошибка в паспортных данных после выдачи может потребовать новой заявки без возврата средств. Не отправляйте документы непроверенным посредникам. Bosphoras может организовать поездку и встречи для ознакомительного визита или переезда."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Когда подавать заявку?",
+          "answer": "Рекомендуется не менее чем за 48 часов до поездки."
+        },
+        {
+          "question": "Можно ли оплатить чужой картой?",
+          "answer": "Да, если соблюдены требования оплаты."
+        },
+        {
+          "question": "Можно ли изменить готовую визу?",
+          "answer": "Нет, может потребоваться новая заявка."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "Официальный список гражданств"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "МИД Турции: правила по паспорту"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "Официальный порядок подачи и оплаты"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "Документы и сроки действия"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Подтверждающие визы и ВНЖ"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "Гражданства без визы по прибытии"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Консульская подача"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал ВНЖ"
+        }
+      ]
+    },
+    "ar": {
+      "title": "طلب التأشيرة الإلكترونية لتركيا 2026: الخطوات والدفع والتنزيل",
+      "metaDescription": "خطوات الطلب الرسمي للتأشيرة الإلكترونية التركية وإدخال البيانات والدفع وتنزيل الوثيقة وتجنب الأخطاء.",
+      "shortAnswer": "ابدأ من المنصة الحكومية evisa.gov.tr. يختار المؤهل وثيقة السفر ويدخل البيانات ويؤكد البريد الإلكتروني ويدفع عبر الإنترنت دون الحاجة عادة إلى زيارة القنصلية.",
+      "bosphorasHelp": "تنسق Bosphoras النقل والسكن والاجتماعات وفق احتياجات مشروعك.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "تجهيز البيانات والوثائق",
+          "body": "جهز جواز كل مسافر والتواريخ والوثائق المطلوبة بحسب الجنسية وبطاقة مصرفية مناسبة. إذا كنت معفى فلا تدفع مقابل تأشيرة غير لازمة. ويحتاج كل طفل خاضع للتأشيرة إلى تصريح منفصل."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "ملء الطلب الإلكتروني",
+          "body": "اختر طلباً جديداً ودولة أو إقليم إصدار وثيقة السفر ونوعها. حدد تاريخ الوصول واقرأ شروط الأهلية وخصائص التأشيرة. أدخل الأسماء ورقم الجواز كما وردت تماماً. راجع تاريخ الميلاد والإصدار والانتهاء قبل الإرسال."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "تأكيد البريد والدفع",
+          "body": "بعد تلقي رسالة التحقق أكد البريد وأكمل الدفع خلال 48 ساعة. يجب أن تدعم بطاقات Visa وMastercard وUnionPay المعاملات الدولية و3D Secure. يمكن أن تكون البطاقة لشخص آخر. يتم الدفع بالدولار الأمريكي وقد يطبق البنك التحويل ورسومه."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "تنزيل التأشيرة ومراجعتها",
+          "body": "يصل رابط التنزيل بعد الدفع. احفظ PDF دون اتصال واطبعه إن أمكن. تحقق من الاسم ورقم الجواز وتواريخ الصلاحية وعدد الدخول ومدة البقاء. يتطلب الوصول قبل بداية صلاحيتها طلباً جديداً. لا يمكن تعديل التأشيرة بعد إصدارها."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "الطلبات العائلية والجماعية",
+          "body": "يشمل الطلب العائلي شخصين إلى عشرة، والجماعي عشرة إلى ثلاثمائة. ومع ذلك يحصل كل فرد على تأشيرة مستقلة. راجع أهلية كل فرد خصوصاً عند اختلاف الجوازات واحتفظ بالوثائق منفصلة."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "أخطاء الدفع والجواز",
+          "body": "إذا تعطل الدفع فتواصل مع الدعم الرسمي قبل تكراره. قد يتطلب خطأ بيانات الجواز بعد الإصدار طلباً جديداً دون استرداد. لا تسلم الوثائق لوسيط غير موثوق. تستطيع Bosphoras تنسيق برنامج السفر والاجتماعات للزيارة الاستطلاعية أو الانتقال."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "متى أقدم الطلب؟",
+          "answer": "يفضل قبل السفر بـ48 ساعة على الأقل."
+        },
+        {
+          "question": "هل يمكن الدفع ببطاقة شخص آخر؟",
+          "answer": "نعم إذا استوفت متطلبات الدفع."
+        },
+        {
+          "question": "هل يمكن تعديل التأشيرة الصادرة؟",
+          "answer": "لا، قد يلزم طلب جديد."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "القائمة الرسمية للجنسيات المؤهلة"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "وزارة الخارجية: الشروط حسب الجواز"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "الإجراءات الرسمية للطلب والدفع"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "الوثائق والصلاحية"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "التأشيرات والإقامات الداعمة"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "الجنسيات غير المؤهلة للتأشيرة عند الوصول"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "طلب التأشيرة القنصلية"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        }
+      ]
+    }
+  },
+  "turkey-evisa-eligible-countries": {
+    "fr": {
+      "title": "Pays éligibles à l’e-Visa Turquie en 2026 : liste et durée",
+      "metaDescription": "Comparez les pays et documents figurant sur le portail e-Visa, les durées, les conditions Schengen et les exceptions d’âge.",
+      "shortAnswer": "Le tableau recense les entrées de la liste d’éligibilité du portail turc et précise le régime des passeports ordinaires décrit par le ministère. L’inscription dans la liste ne suffit pas à garantir un visa : certaines catégories sont dispensées ou soumises à des conditions particulières.",
+      "bosphorasHelp": "Parlons de votre voyage en Turquie. Bosphoras coordonne les transferts, séjours et rendez-vous selon les besoins de votre projet.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Tableau complet des pays et documents proposés",
+          "body": "Les lignes distinguent les passeports ordinaires, les visas conditionnels, les exemptions et les cas où les deux sources officielles ne donnent pas de durée électronique confirmée. Pour ces derniers, la procédure consulaire publiée reste une option et il faut vérifier l’offre réelle avant tout paiement. Le tableau ne confond pas une période de validité de trois mois avec 90 jours de présence.",
+          "table": {
+            "headers": [
+              "Nationalité / document",
+              "Régime",
+              "Durée / entrées",
+              "Conditions"
+            ],
+            "rows": [
+              [
+                "Afghanistan",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Afrique du Sud",
+                "e-Visa possible",
+                "30 jours, entrées multiples",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Algérie",
+                "Dispense selon l’âge ou visa",
+                "90/180 si moins de 15 ou plus de 50 ans ; e-Visa 30 jours, 1 entrée",
+                "e-Visa : 15–18 ou 35–50 ans et justificatif admissible ; autres cas : consulat"
+              ],
+              [
+                "Antigua-et-Barbuda",
+                "e-Visa possible",
+                "Visa de 3 mois, entrées multiples",
+                "Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Arménie",
+                "e-Visa possible",
+                "Durée affichée lors de la demande",
+                "Selon le document de voyage"
+              ],
+              [
+                "Bahamas",
+                "e-Visa possible",
+                "Visa de 3 mois, entrées multiples",
+                "Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Bangladesh",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Barbade",
+                "e-Visa possible",
+                "Visa de 3 mois, entrées multiples",
+                "Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Bermudes",
+                "Dans la liste du portail ; visa requis selon le ministère",
+                "Non confirmée",
+                "Offre électronique non précisée ; voie consulaire à vérifier"
+              ],
+              [
+                "Bhoutan",
+                "Liste e-Visa ; consulat selon le ministère",
+                "15 jours par visa consulaire",
+                "Durée électronique non confirmée"
+              ],
+              [
+                "Cambodge",
+                "Dans la liste du portail ; visa requis selon le ministère",
+                "Non confirmée",
+                "Offre électronique non précisée ; voie consulaire à vérifier"
+              ],
+              [
+                "Cap-Vert",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour admissible + autres conditions"
+              ],
+              [
+                "Chypre (passeport grec chypriote)",
+                "e-Visa ou consulat",
+                "Durée non précisée",
+                "Visa à la frontière supprimé depuis le 2 janvier 2026"
+              ],
+              [
+                "Croatie",
+                "Dispense pour passeport ordinaire",
+                "Jusqu’à 90 jours",
+                "Pas d’e-Visa nécessaire si dispense applicable"
+              ],
+              [
+                "Dominique",
+                "Dans la liste du portail ; visa requis selon le ministère",
+                "Non confirmée",
+                "Offre électronique non précisée ; voie consulaire à vérifier"
+              ],
+              [
+                "Égypte",
+                "Visa obligatoire",
+                "30 jours, 1 entrée pour l’e-Visa des 15–45 ans",
+                "Moins de 15 ou plus de 45 ans : e-Visa sans condition supplémentaire ; 15–45 : justificatif admissible et compagnie agréée"
+              ],
+              [
+                "Estonie",
+                "Dispense pour passeport ordinaire",
+                "Jusqu’à 90 jours",
+                "Pas d’e-Visa nécessaire si dispense applicable"
+              ],
+              [
+                "Fidji",
+                "e-Visa possible",
+                "30 jours, 1 entrée",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Grenade",
+                "Dans la liste du portail ; visa requis selon le ministère",
+                "Non confirmée",
+                "Offre électronique non précisée ; voie consulaire à vérifier"
+              ],
+              [
+                "Guinée équatoriale",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Haïti",
+                "Dans la liste du portail ; visa requis selon le ministère",
+                "Non confirmée",
+                "Offre électronique non précisée ; voie consulaire à vérifier"
+              ],
+              [
+                "Hong Kong (BN(O))",
+                "e-Visa possible",
+                "Visa de trois mois, entrées multiples",
+                "Durée de présence indiquée sur le visa"
+              ],
+              [
+                "Îles Salomon",
+                "Liste e-Visa ; consulat selon le ministère",
+                "15 jours par visa consulaire",
+                "Durée électronique non confirmée"
+              ],
+              [
+                "Inde",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Irak",
+                "Dispense selon l’âge ou visa",
+                "90/180 si moins de 15 ou plus de 50 ans ; e-Visa 30 jours, 1 entrée",
+                "15–50 ans : justificatif admissible et conditions du portail"
+              ],
+              [
+                "Jamaïque",
+                "e-Visa possible",
+                "Visa de trois mois, entrées multiples",
+                "Durée de présence indiquée sur le visa"
+              ],
+              [
+                "Lettonie",
+                "Dispense pour passeport ordinaire",
+                "Jusqu’à 90 jours",
+                "Pas d’e-Visa nécessaire si dispense applicable"
+              ],
+              [
+                "Libye",
+                "Dispense selon l’âge ou visa",
+                "90/180 si moins de 16 ou plus de 45 ans ; e-Visa 30 jours, 1 entrée",
+                "16–45 ans : justificatif admissible et conditions du portail"
+              ],
+              [
+                "Lituanie",
+                "Dispense pour passeport ordinaire",
+                "Jusqu’à 90 jours",
+                "Pas d’e-Visa nécessaire si dispense applicable"
+              ],
+              [
+                "Maldives",
+                "e-Visa possible",
+                "Visa de 3 mois, entrées multiples",
+                "Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Maurice",
+                "e-Visa possible",
+                "30 jours, entrées multiples",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Mexique",
+                "e-Visa possible",
+                "30 jours, 1 entrée",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Namibie",
+                "e-Visa possible",
+                "Durée affichée lors de la demande",
+                "Selon le document de voyage"
+              ],
+              [
+                "Népal",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Pakistan",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Palestine",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Philippines",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "République dominicaine",
+                "e-Visa possible",
+                "Visa de 3 mois, entrées multiples",
+                "Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Saint-Vincent-et-les-Grenadines",
+                "e-Visa possible",
+                "Visa de trois mois, entrées multiples",
+                "Durée de présence indiquée sur le visa"
+              ],
+              [
+                "Sainte-Lucie",
+                "e-Visa possible",
+                "Visa de 3 mois, entrées multiples",
+                "Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Sénégal",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour admissible + autres conditions"
+              ],
+              [
+                "Sri Lanka",
+                "e-Visa sous conditions",
+                "Durée à confirmer",
+                "Justificatif Schengen, USA, Royaume-Uni ou Irlande"
+              ],
+              [
+                "Suriname",
+                "e-Visa possible",
+                "30 jours, 1 entrée",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Taïwan",
+                "e-Visa possible",
+                "Un mois, 1 entrée",
+                "Conditions du portail"
+              ],
+              [
+                "Timor oriental",
+                "e-Visa possible",
+                "30 jours, 1 entrée",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Vanuatu",
+                "Liste e-Visa ; consulat selon le ministère",
+                "15 jours par visa consulaire",
+                "Durée électronique non confirmée"
+              ],
+              [
+                "Vietnam",
+                "e-Visa possible",
+                "30 jours, 1 entrée",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Yémen",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Passeports nécessitant un document Schengen ou équivalent",
+          "body": "Pour l’Inde, le Pakistan, le Bangladesh, le Népal, les Philippines ou le Sénégal, l’admissibilité électronique dépend notamment de justificatifs acceptés. Un visa ou titre de séjour délivré par un pays Schengen, les États-Unis, le Royaume-Uni ou l’Irlande peut satisfaire cette condition. La date d’entrée turque doit être couverte par sa validité ; les visas électroniques étrangers ne sont pas recevables comme preuve."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Régimes particuliers selon l’âge et le document",
+          "body": "L’Algérie, l’Irak et la Libye combinent certaines dispenses touristiques basées sur l’âge et des accès électroniques sous conditions. L’Égypte impose un visa aux passeports ordinaires, avec des formalités supplémentaires pour certaines tranches d’âge. Pour les documents hongkongais, le passeport SAR ordinaire est distinct du BN(O) et du document d’identité pour visa."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Pourquoi certaines lignes ne donnent-elles pas un nombre de jours ?",
+          "body": "Le portail d’éligibilité peut inclure des pays dont la fiche ministérielle décrit seulement un visa consulaire ou une dispense. Ce n’est pas une autorisation électronique automatique pour tous les documents du pays. Nous distinguons donc les durées confirmées des cas non précisés, plutôt que d’annoncer une durée fictive. Une simulation sur le portail officiel avec le document exact permet de connaître l’offre applicable."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Exemple : préparer une famille multinationale",
+          "body": "Un parent français, un conjoint indien et un enfant titulaire d’un passeport indien n’ont pas les mêmes règles. Le parent français peut être dispensé ; les deux autres doivent disposer chacun d’une autorisation adéquate et remplir les critères de leur document. Le fait que l’un des adultes ait un titre de séjour européen ne rend pas automatiquement l’autre ou l’enfant admissible."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Anticiper le consulat si nécessaire",
+          "body": "Lorsque le justificatif demandé manque, qu’un régime électronique ne couvre pas votre document ou que vous voyagez pour travailler ou étudier, organisez la démarche consulaire. Ne comptez pas sur un visa à l’arrivée : pour de nombreuses nationalités éligibles à l’e-Visa, cette possibilité est exclue. Bosphoras peut coordonner les étapes pratiques de votre déplacement."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "La liste officielle suffit-elle pour voyager ?",
+          "answer": "Non. Il faut une autorisation délivrée si votre passeport est soumis à visa."
+        },
+        {
+          "question": "Le Sénégal est-il éligible ?",
+          "answer": "Oui sous conditions, pour un e-Visa d’un mois à entrée unique."
+        },
+        {
+          "question": "Un visa étranger expiré est-il suffisant ?",
+          "answer": "Non, le justificatif doit être valide lors de l’entrée."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "Portail officiel : nationalités éligibles"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Ministère turc : règles par passeport"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "Procédure officielle de demande et paiement"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "Documents et validité"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Justificatifs de visa et de résidence"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "Nationalités sans visa à l’arrivée"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Demande de visa consulaire"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel de résidence"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey e-Visa eligible countries 2026: list and permitted stays",
+      "metaDescription": "Compare countries and documents on Turkey's e-Visa list, durations, supporting visas and age-based exceptions.",
+      "shortAnswer": "The table covers the official portal's eligible entries and the Foreign Ministry's ordinary-passport rules. Being listed is not a guarantee of an electronic visa: exemptions and document-specific restrictions matter.",
+      "bosphorasHelp": "Discuss your Turkey visit with Bosphoras to coordinate transfers, accommodation and meetings around your plans.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Complete table of portal entries",
+          "body": "The rows distinguish ordinary passports, conditional visas, exemptions and cases where official sources do not confirm an electronic stay duration. In the latter cases the published consular procedure remains an option; establish what the portal actually offers before paying. A three-month validity period is not automatically 90 days of permitted presence.",
+          "table": {
+            "headers": [
+              "Nationality / document",
+              "Route",
+              "Stay / entries",
+              "Conditions"
+            ],
+            "rows": [
+              [
+                "Afghanistan",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Algeria",
+                "Age-based exemption or visa",
+                "90/180 if under 15 or over 50; e-Visa 30 days, single entry",
+                "Conditional e-Visa ages 15–18 or 35–50 with eligible supporting document; otherwise consulate"
+              ],
+              [
+                "Antigua and Barbuda",
+                "e-Visa available",
+                "Three-month, multiple-entry visa",
+                "Read the permitted stay on the issued visa"
+              ],
+              [
+                "Armenia",
+                "e-Visa available",
+                "Duration displayed during application",
+                "Depends on travel document"
+              ],
+              [
+                "Bahamas",
+                "e-Visa available",
+                "Three-month, multiple-entry visa",
+                "Read the permitted stay on the issued visa"
+              ],
+              [
+                "Bangladesh",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Barbados",
+                "e-Visa available",
+                "Three-month, multiple-entry visa",
+                "Read the permitted stay on the issued visa"
+              ],
+              [
+                "Bermuda",
+                "Portal list; visa required per ministry",
+                "Not confirmed",
+                "Electronic offer unspecified; check consular route"
+              ],
+              [
+                "Bhutan",
+                "e-Visa list; ministry specifies consular route",
+                "15-day consular visa",
+                "Electronic duration unconfirmed"
+              ],
+              [
+                "Cambodia",
+                "Portal list; visa required per ministry",
+                "Not confirmed",
+                "Electronic offer unspecified; check consular route"
+              ],
+              [
+                "Cape Verde",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Eligible visa/residence permit and other conditions"
+              ],
+              [
+                "Croatia",
+                "Ordinary passport visa exemption",
+                "Up to 90 days",
+                "No e-Visa needed for qualifying travel"
+              ],
+              [
+                "Cyprus (Greek Cypriot passport)",
+                "e-Visa or consulate",
+                "Duration unspecified",
+                "Border visa issuance ended on 2 January 2026"
+              ],
+              [
+                "Dominica",
+                "Portal list; visa required per ministry",
+                "Not confirmed",
+                "Electronic offer unspecified; check consular route"
+              ],
+              [
+                "Dominican Republic",
+                "e-Visa available",
+                "Three-month, multiple-entry visa",
+                "Read the permitted stay on the issued visa"
+              ],
+              [
+                "Egypt",
+                "Visa required",
+                "30 days, single entry for ages 15–45 via e-Visa",
+                "Under 15 or over 45: no extra e-Visa condition; ages 15–45: eligible supporting document and approved carrier"
+              ],
+              [
+                "Equatorial Guinea",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Estonia",
+                "Ordinary passport visa exemption",
+                "Up to 90 days",
+                "No e-Visa needed for qualifying travel"
+              ],
+              [
+                "Fiji",
+                "e-Visa available",
+                "30 days, single entry",
+                "Official portal conditions"
+              ],
+              [
+                "Grenada",
+                "Portal list; visa required per ministry",
+                "Not confirmed",
+                "Electronic offer unspecified; check consular route"
+              ],
+              [
+                "Haiti",
+                "Portal list; visa required per ministry",
+                "Not confirmed",
+                "Electronic offer unspecified; check consular route"
+              ],
+              [
+                "Hong Kong (BN(O))",
+                "e-Visa available",
+                "Three-month visa, multiple entry",
+                "Stay allowance on issued visa"
+              ],
+              [
+                "India",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Iraq",
+                "Age-based exemption or visa",
+                "90/180 if under 15 or over 50; e-Visa 30 days, single entry",
+                "Ages 15–50: eligible supporting document plus portal conditions"
+              ],
+              [
+                "Jamaica",
+                "e-Visa available",
+                "Three-month visa, multiple entry",
+                "Stay allowance on issued visa"
+              ],
+              [
+                "Latvia",
+                "Ordinary passport visa exemption",
+                "Up to 90 days",
+                "No e-Visa needed for qualifying travel"
+              ],
+              [
+                "Libya",
+                "Age-based exemption or visa",
+                "90/180 if under 16 or over 45; e-Visa 30 days, single entry",
+                "Ages 16–45: eligible supporting document and portal conditions"
+              ],
+              [
+                "Lithuania",
+                "Ordinary passport visa exemption",
+                "Up to 90 days",
+                "No e-Visa needed for qualifying travel"
+              ],
+              [
+                "Maldives",
+                "e-Visa available",
+                "Three-month, multiple-entry visa",
+                "Read the permitted stay on the issued visa"
+              ],
+              [
+                "Mauritius",
+                "e-Visa available",
+                "30 days, multiple entry",
+                "Official portal conditions"
+              ],
+              [
+                "Mexico",
+                "e-Visa available",
+                "30 days, single entry",
+                "Official portal conditions"
+              ],
+              [
+                "Namibia",
+                "e-Visa available",
+                "Duration displayed during application",
+                "Depends on travel document"
+              ],
+              [
+                "Nepal",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Pakistan",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Palestine",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Philippines",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Saint Lucia",
+                "e-Visa available",
+                "Three-month, multiple-entry visa",
+                "Read the permitted stay on the issued visa"
+              ],
+              [
+                "Saint Vincent and the Grenadines",
+                "e-Visa available",
+                "Three-month visa, multiple entry",
+                "Stay allowance on issued visa"
+              ],
+              [
+                "Senegal",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Eligible visa/residence permit and other conditions"
+              ],
+              [
+                "Solomon Islands",
+                "e-Visa list; ministry specifies consular route",
+                "15-day consular visa",
+                "Electronic duration unconfirmed"
+              ],
+              [
+                "South Africa",
+                "e-Visa available",
+                "30 days, multiple entry",
+                "Official portal conditions"
+              ],
+              [
+                "Sri Lanka",
+                "Conditional e-Visa",
+                "Duration not specified",
+                "Schengen, US, UK or Irish supporting document"
+              ],
+              [
+                "Suriname",
+                "e-Visa available",
+                "30 days, single entry",
+                "Official portal conditions"
+              ],
+              [
+                "Taiwan",
+                "e-Visa available",
+                "One month, single entry",
+                "Portal conditions"
+              ],
+              [
+                "Timor-Leste",
+                "e-Visa available",
+                "30 days, single entry",
+                "Official portal conditions"
+              ],
+              [
+                "Vanuatu",
+                "e-Visa list; ministry specifies consular route",
+                "15-day consular visa",
+                "Electronic duration unconfirmed"
+              ],
+              [
+                "Vietnam",
+                "e-Visa available",
+                "30 days, single entry",
+                "Official portal conditions"
+              ],
+              [
+                "Yemen",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Passports requiring supporting documentation",
+          "body": "For India, Pakistan, Bangladesh, Nepal, the Philippines and Senegal, electronic eligibility depends in part on accepted documentation. An eligible visa or residence permit issued by a Schengen state, the US, UK or Ireland can satisfy this criterion. It must cover the entry date; foreign electronic visas do not count as supporting evidence."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Age and document-specific rules",
+          "body": "Algeria, Iraq and Libya combine age-based tourist exemptions with conditional electronic routes. Egypt requires visas for ordinary passports, with additional conditions for some age groups. Hong Kong SAR ordinary passports, BN(O) passports and documents of identity for visa purposes follow distinct rules."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Why some rows have no numerical stay duration",
+          "body": "The eligibility FAQ can list countries whose ministry entry describes only consular visas or exemptions. Listing alone does not establish that every document qualifies. Confirmed durations are therefore separated from unspecified cases rather than inventing a stay period. The official application form identifies the offering for the exact document."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Example: a mixed-nationality family",
+          "body": "A French parent, an Indian spouse and a child holding an Indian passport do not share a single entry status. The French parent may be exempt; both other travellers must obtain their own appropriate authorisations and satisfy the criteria. One adult's European residence card does not automatically qualify the other adult or the child."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Plan consular applications where necessary",
+          "body": "When required supporting documents are absent, your passport is ineligible or the purpose is employment or study, organise a consular application. Do not rely on visa on arrival: many e-Visa nationalities cannot use it. Bosphoras can coordinate practical travel arrangements."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does being listed alone allow travel?",
+          "answer": "No. Visa-required travellers need an issued authorisation."
+        },
+        {
+          "question": "Can Senegalese nationals qualify?",
+          "answer": "Yes, subject to conditions, for a one-month single-entry e-Visa."
+        },
+        {
+          "question": "Can I use an expired supporting visa?",
+          "answer": "No, it must be valid on arrival."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "Official eligible-country list"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Foreign Ministry: passport-specific rules"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "Official application and payment procedure"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "Required documents and validity"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Supporting visas and residence permits"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "Nationalities not eligible for visa on arrival"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Consular visa application"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official residence portal"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Страны для электронной визы в Турцию 2026: список и сроки",
+      "metaDescription": "Сравните гражданства и документы из перечня e-Visa, разрешённые сроки, условия и возрастные исключения.",
+      "shortAnswer": "Таблица охватывает позиции официального портала и правила МИД для обычных паспортов. Присутствие страны в перечне не гарантирует визу: необходимо учитывать освобождения и условия для конкретного документа.",
+      "bosphorasHelp": "Bosphoras может организовать трансферы, проживание и встречи с учётом вашего проекта.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Полная таблица позиций портала",
+          "body": "В таблице различаются обычные паспорта, условные визы, освобождения и случаи, когда источники не подтверждают срок электронной визы. В последнем случае остаётся опубликованная консульская процедура; до оплаты выясните реальную доступность онлайн. Три месяца действия визы не всегда равны 90 дням пребывания.",
+          "table": {
+            "headers": [
+              "Гражданство / документ",
+              "Режим",
+              "Срок / въезды",
+              "Условия"
+            ],
+            "rows": [
+              [
+                "Алжир",
+                "Освобождение по возрасту или виза",
+                "90/180 до 15 или старше 50; электронная виза 30 дней, один въезд",
+                "Электронная виза для 15–18 или 35–50 лет с подходящим документом; иначе консульство"
+              ],
+              [
+                "Антигуа и Барбуда",
+                "Электронная виза доступна",
+                "Трёхмесячная, многократная",
+                "Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Армения",
+                "Электронная виза доступна",
+                "Срок показывается при подаче",
+                "Зависит от проездного документа"
+              ],
+              [
+                "Афганистан",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Багамы",
+                "Электронная виза доступна",
+                "Трёхмесячная, многократная",
+                "Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Бангладеш",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Барбадос",
+                "Электронная виза доступна",
+                "Трёхмесячная, многократная",
+                "Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Бермуды",
+                "В списке портала; МИД требует визу",
+                "Не подтверждён",
+                "Электронный режим не уточнён; консульская процедура"
+              ],
+              [
+                "Бутан",
+                "В списке e-Visa; МИД указывает консульство",
+                "Консульская виза на 15 дней",
+                "Электронный срок не подтверждён"
+              ],
+              [
+                "Вануату",
+                "В списке e-Visa; МИД указывает консульство",
+                "Консульская виза на 15 дней",
+                "Электронный срок не подтверждён"
+              ],
+              [
+                "Восточный Тимор",
+                "Электронная виза доступна",
+                "30 дней, один въезд",
+                "Условия официального портала"
+              ],
+              [
+                "Вьетнам",
+                "Электронная виза доступна",
+                "30 дней, один въезд",
+                "Условия официального портала"
+              ],
+              [
+                "Гаити",
+                "В списке портала; МИД требует визу",
+                "Не подтверждён",
+                "Электронный режим не уточнён; консульская процедура"
+              ],
+              [
+                "Гонконг (BN(O))",
+                "e-Visa доступна",
+                "Три месяца, многократная",
+                "Срок пребывания указан в визе"
+              ],
+              [
+                "Гренада",
+                "В списке портала; МИД требует визу",
+                "Не подтверждён",
+                "Электронный режим не уточнён; консульская процедура"
+              ],
+              [
+                "Доминика",
+                "В списке портала; МИД требует визу",
+                "Не подтверждён",
+                "Электронный режим не уточнён; консульская процедура"
+              ],
+              [
+                "Доминиканская Республика",
+                "Электронная виза доступна",
+                "Трёхмесячная, многократная",
+                "Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Египет",
+                "Виза обязательна",
+                "30 дней, один въезд для электронной визы в 15–45 лет",
+                "До 15 или старше 45: без дополнительных условий; 15–45: подходящий документ и разрешённая авиакомпания"
+              ],
+              [
+                "Индия",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Ирак",
+                "Освобождение по возрасту или виза",
+                "90/180 до 15 или старше 50; электронная виза 30 дней, один въезд",
+                "15–50 лет: подходящий документ и условия портала"
+              ],
+              [
+                "Йемен",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Кабо-Верде",
+                "Условная e-Visa",
+                "30 дней, один въезд",
+                "Подходящая виза или ВНЖ и другие условия"
+              ],
+              [
+                "Камбоджа",
+                "В списке портала; МИД требует визу",
+                "Не подтверждён",
+                "Электронный режим не уточнён; консульская процедура"
+              ],
+              [
+                "Кипр (греко-кипрский паспорт)",
+                "e-Visa или консульство",
+                "Срок не указан",
+                "Визы на границе отменены с 2 января 2026"
+              ],
+              [
+                "Латвия",
+                "Обычный паспорт без визы",
+                "До 90 дней",
+                "Электронная виза не нужна при освобождении"
+              ],
+              [
+                "Ливия",
+                "Освобождение по возрасту или виза",
+                "90/180 до 16 или старше 45; электронная виза 30 дней, один въезд",
+                "16–45 лет: подходящий документ и условия портала"
+              ],
+              [
+                "Литва",
+                "Обычный паспорт без визы",
+                "До 90 дней",
+                "Электронная виза не нужна при освобождении"
+              ],
+              [
+                "Маврикий",
+                "Электронная виза доступна",
+                "30 дней, многократная",
+                "Условия официального портала"
+              ],
+              [
+                "Мальдивы",
+                "Электронная виза доступна",
+                "Трёхмесячная, многократная",
+                "Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Мексика",
+                "Электронная виза доступна",
+                "30 дней, один въезд",
+                "Условия официального портала"
+              ],
+              [
+                "Намибия",
+                "Электронная виза доступна",
+                "Срок показывается при подаче",
+                "Зависит от проездного документа"
+              ],
+              [
+                "Непал",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Пакистан",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Палестина",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Сенегал",
+                "Условная e-Visa",
+                "30 дней, один въезд",
+                "Подходящая виза или ВНЖ и другие условия"
+              ],
+              [
+                "Сент-Винсент и Гренадины",
+                "e-Visa доступна",
+                "Три месяца, многократная",
+                "Срок пребывания указан в визе"
+              ],
+              [
+                "Сент-Люсия",
+                "Электронная виза доступна",
+                "Трёхмесячная, многократная",
+                "Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Соломоновы Острова",
+                "В списке e-Visa; МИД указывает консульство",
+                "Консульская виза на 15 дней",
+                "Электронный срок не подтверждён"
+              ],
+              [
+                "Суринам",
+                "Электронная виза доступна",
+                "30 дней, один въезд",
+                "Условия официального портала"
+              ],
+              [
+                "Тайвань",
+                "e-Visa доступна",
+                "Один месяц, один въезд",
+                "Условия портала"
+              ],
+              [
+                "Фиджи",
+                "Электронная виза доступна",
+                "30 дней, один въезд",
+                "Условия официального портала"
+              ],
+              [
+                "Филиппины",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Хорватия",
+                "Обычный паспорт без визы",
+                "До 90 дней",
+                "Электронная виза не нужна при освобождении"
+              ],
+              [
+                "Шри-Ланка",
+                "Условная e-Visa",
+                "Срок не указан",
+                "Документ Шенгена, США, Великобритании или Ирландии"
+              ],
+              [
+                "Экваториальная Гвинея",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Эстония",
+                "Обычный паспорт без визы",
+                "До 90 дней",
+                "Электронная виза не нужна при освобождении"
+              ],
+              [
+                "ЮАР",
+                "Электронная виза доступна",
+                "30 дней, многократная",
+                "Условия официального портала"
+              ],
+              [
+                "Ямайка",
+                "e-Visa доступна",
+                "Три месяца, многократная",
+                "Срок пребывания указан в визе"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Подтверждающая виза или ВНЖ",
+          "body": "Для Индии, Пакистана, Бангладеш, Непала, Филиппин и Сенегала электронная процедура зависит от подходящих документов. Виза или ВНЖ страны Шенгена, США, Великобритании или Ирландии могут соответствовать требованиям. Документы должны действовать на дату въезда; электронные визы других стран не подходят."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Особенности возраста и типа документа",
+          "body": "В Алжире, Ираке и Ливии существуют возрастные туристические освобождения и условные электронные визы. Египет требует визы для обычных паспортов, с дополнительными требованиями для отдельных возрастов. Обычные паспорта Гонконга, BN(O) и документы личности для визовых целей имеют разные режимы."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Почему для некоторых стран не указан срок",
+          "body": "Официальный FAQ может перечислять страны, для которых МИД описывает лишь консульскую процедуру или освобождение. Это не означает право на электронную визу с любым паспортом. Подтверждённые сроки отделены от неустановленных. Анкета официального портала показывает условия для конкретного документа."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Пример семьи с разным гражданством",
+          "body": "У французского родителя, индийского супруга и ребёнка с индийским паспортом разные условия. Француз может быть освобождён от визы, а остальным нужны отдельные разрешения и подходящие документы. Европейский ВНЖ одного взрослого не делает автоматически подходящими документы остальных."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Когда обращаться в консульство",
+          "body": "Если отсутствует необходимый документ, электронная процедура недоступна либо цель — работа или учёба, оформляйте подходящую консульскую визу. Не рассчитывайте на визу по прибытии: многие гражданства с электронной процедурой её не имеют. Bosphoras может организовать практические вопросы поездки."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Достаточно ли присутствия страны в списке?",
+          "answer": "Нет, при визовом режиме требуется выданное разрешение."
+        },
+        {
+          "question": "Доступна ли электронная виза гражданам Сенегала?",
+          "answer": "Да, при соблюдении условий, на один месяц и один въезд."
+        },
+        {
+          "question": "Подойдёт ли просроченная подтверждающая виза?",
+          "answer": "Нет, она должна действовать на дату въезда."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "Официальный список гражданств"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "МИД Турции: правила по паспорту"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "Официальный порядок подачи и оплаты"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "Документы и сроки действия"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Подтверждающие визы и ВНЖ"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "Гражданства без визы по прибытии"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Консульская подача"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал ВНЖ"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الدول المؤهلة لتأشيرة تركيا الإلكترونية 2026: القائمة والمدد",
+      "metaDescription": "قارن الجنسيات والوثائق المدرجة في منصة التأشيرة الإلكترونية والمدد وشروط الوثائق الداعمة والاستثناءات العمرية.",
+      "shortAnswer": "يشمل الجدول مدخلات المنصة الرسمية وقواعد الخارجية للجوازات العادية. لا يضمن إدراج الجنسية إصدار التأشيرة؛ إذ تظل الإعفاءات والشروط الخاصة بالوثيقة سارية.",
+      "bosphorasHelp": "تنسق Bosphoras النقل والسكن والاجتماعات وفق احتياجات مشروعك.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "جدول مدخلات المنصة الرسمية",
+          "body": "يميز الجدول الجوازات العادية والتأشيرات المشروطة والإعفاءات والحالات التي لا تؤكد فيها المصادر مدة إلكترونية محددة. وفي الحالة الأخيرة تبقى الإجراءات القنصلية المنشورة خياراً ويجب التأكد من العرض الإلكتروني قبل الدفع. لا تعني صلاحية ثلاثة أشهر بالضرورة بقاء 90 يوماً.",
+          "table": {
+            "headers": [
+              "الجنسية / الوثيقة",
+              "النظام",
+              "المدة / الدخول",
+              "الشروط"
+            ],
+            "rows": [
+              [
+                "أرمينيا",
+                "تأشيرة إلكترونية متاحة",
+                "المدة تظهر عند الطلب",
+                "بحسب وثيقة السفر"
+              ],
+              [
+                "إستونيا",
+                "إعفاء للجواز العادي",
+                "حتى 90 يوماً",
+                "لا حاجة للإلكترونية عند الإعفاء"
+              ],
+              [
+                "أفغانستان",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "الباهاما",
+                "تأشيرة إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر، دخول متعدد",
+                "مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "الجزائر",
+                "إعفاء حسب العمر أو تأشيرة",
+                "90/180 دون 15 أو فوق 50؛ الإلكترونية 30 يوماً لدخول واحد",
+                "الإلكترونية للأعمار 15–18 أو 35–50 مع وثيقة مؤهلة؛ وإلا القنصلية"
+              ],
+              [
+                "الرأس الأخضر",
+                "إلكترونية مشروطة",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة مؤهلة وشروط أخرى"
+              ],
+              [
+                "السنغال",
+                "إلكترونية مشروطة",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة مؤهلة وشروط أخرى"
+              ],
+              [
+                "العراق",
+                "إعفاء حسب العمر أو تأشيرة",
+                "90/180 دون 15 أو فوق 50؛ الإلكترونية 30 يوماً لدخول واحد",
+                "15–50 عاماً: وثيقة مؤهلة وشروط المنصة"
+              ],
+              [
+                "الفلبين",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "المالديف",
+                "تأشيرة إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر، دخول متعدد",
+                "مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "المكسيك",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول واحد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "الهند",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "اليمن",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "أنتيغوا وباربودا",
+                "تأشيرة إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر، دخول متعدد",
+                "مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "باربادوس",
+                "تأشيرة إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر، دخول متعدد",
+                "مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "باكستان",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "برمودا",
+                "مدرجة في المنصة؛ التأشيرة مطلوبة وفق الوزارة",
+                "غير مؤكدة",
+                "المسار الإلكتروني غير محدد؛ تحقق من القنصلية"
+              ],
+              [
+                "بنغلاديش",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "بوتان",
+                "مدرجة إلكترونياً؛ الوزارة تذكر القنصلية",
+                "تأشيرة قنصلية 15 يوماً",
+                "المدة الإلكترونية غير مؤكدة"
+              ],
+              [
+                "تايوان",
+                "إلكترونية متاحة",
+                "شهر، دخول واحد",
+                "شروط المنصة"
+              ],
+              [
+                "تيمور الشرقية",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول واحد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "جامايكا",
+                "إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر متعددة الدخول",
+                "مدة البقاء على التأشيرة"
+              ],
+              [
+                "جزر سليمان",
+                "مدرجة إلكترونياً؛ الوزارة تذكر القنصلية",
+                "تأشيرة قنصلية 15 يوماً",
+                "المدة الإلكترونية غير مؤكدة"
+              ],
+              [
+                "جمهورية الدومينيكان",
+                "تأشيرة إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر، دخول متعدد",
+                "مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "جنوب إفريقيا",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول متعدد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "دومينيكا",
+                "مدرجة في المنصة؛ التأشيرة مطلوبة وفق الوزارة",
+                "غير مؤكدة",
+                "المسار الإلكتروني غير محدد؛ تحقق من القنصلية"
+              ],
+              [
+                "سانت فنسنت والغرينادين",
+                "إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر متعددة الدخول",
+                "مدة البقاء على التأشيرة"
+              ],
+              [
+                "سانت لوسيا",
+                "تأشيرة إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر، دخول متعدد",
+                "مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "سريلانكا",
+                "إلكترونية مشروطة",
+                "المدة غير محددة",
+                "وثيقة شنغن أو أمريكا أو بريطانيا أو إيرلندا"
+              ],
+              [
+                "سورينام",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول واحد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "غرينادا",
+                "مدرجة في المنصة؛ التأشيرة مطلوبة وفق الوزارة",
+                "غير مؤكدة",
+                "المسار الإلكتروني غير محدد؛ تحقق من القنصلية"
+              ],
+              [
+                "غينيا الاستوائية",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "فانواتو",
+                "مدرجة إلكترونياً؛ الوزارة تذكر القنصلية",
+                "تأشيرة قنصلية 15 يوماً",
+                "المدة الإلكترونية غير مؤكدة"
+              ],
+              [
+                "فلسطين",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "فيتنام",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول واحد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "فيجي",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول واحد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "قبرص (جواز قبرصي يوناني)",
+                "إلكترونية أو قنصلية",
+                "المدة غير محددة",
+                "أوقف إصدار التأشيرة عند الحدود منذ 2 يناير 2026"
+              ],
+              [
+                "كرواتيا",
+                "إعفاء للجواز العادي",
+                "حتى 90 يوماً",
+                "لا حاجة للإلكترونية عند الإعفاء"
+              ],
+              [
+                "كمبوديا",
+                "مدرجة في المنصة؛ التأشيرة مطلوبة وفق الوزارة",
+                "غير مؤكدة",
+                "المسار الإلكتروني غير محدد؛ تحقق من القنصلية"
+              ],
+              [
+                "لاتفيا",
+                "إعفاء للجواز العادي",
+                "حتى 90 يوماً",
+                "لا حاجة للإلكترونية عند الإعفاء"
+              ],
+              [
+                "ليبيا",
+                "إعفاء حسب العمر أو تأشيرة",
+                "90/180 دون 16 أو فوق 45؛ الإلكترونية 30 يوماً لدخول واحد",
+                "16–45 عاماً: وثيقة مؤهلة وشروط المنصة"
+              ],
+              [
+                "ليتوانيا",
+                "إعفاء للجواز العادي",
+                "حتى 90 يوماً",
+                "لا حاجة للإلكترونية عند الإعفاء"
+              ],
+              [
+                "مصر",
+                "تأشيرة إلزامية",
+                "30 يوماً، دخول واحد للإلكترونية بين 15 و45",
+                "دون 15 أو فوق 45: دون شرط إضافي؛ 15–45: وثيقة مؤهلة وناقل معتمد"
+              ],
+              [
+                "موريشيوس",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول متعدد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "ناميبيا",
+                "تأشيرة إلكترونية متاحة",
+                "المدة تظهر عند الطلب",
+                "بحسب وثيقة السفر"
+              ],
+              [
+                "نيبال",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "هايتي",
+                "مدرجة في المنصة؛ التأشيرة مطلوبة وفق الوزارة",
+                "غير مؤكدة",
+                "المسار الإلكتروني غير محدد؛ تحقق من القنصلية"
+              ],
+              [
+                "هونغ كونغ (BN(O))",
+                "إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر متعددة الدخول",
+                "مدة البقاء على التأشيرة"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "الجوازات التي تحتاج إلى وثائق داعمة",
+          "body": "تتوقف الأهلية الإلكترونية للهند وباكستان وبنغلاديش ونيبال والفلبين والسنغال جزئياً على الوثائق المقبولة. وقد تحقق تأشيرة أو إقامة مؤهلة من شنغن أو أمريكا أو بريطانيا أو إيرلندا هذا الشرط. يجب أن تكون سارية عند الدخول؛ ولا تقبل التأشيرات الإلكترونية الأجنبية كإثبات."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "شروط خاصة بالعمر ونوع الوثيقة",
+          "body": "تجمع الجزائر والعراق وليبيا بين إعفاءات سياحية عمرية ومسارات إلكترونية مشروطة. وتفرض مصر تأشيرة على الجوازات العادية مع شروط إضافية لبعض الأعمار. وتختلف قواعد جواز هونغ كونغ العادي عن وثائق BN(O) ووثائق الهوية لأغراض التأشيرة."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "لماذا لا تظهر مدة محددة لبعض الدول؟",
+          "body": "قد يدرج دليل الأهلية دولاً تصف الخارجية إجراءاتها القنصلية أو إعفاءاتها فقط. فلا يعني ذلك حقاً إلكترونياً لكل وثيقة. لذلك نفصل المدد المؤكدة عن غير المحددة. ويبين نموذج المنصة الرسمية الخيارات للوثيقة الفعلية."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "مثال أسرة متعددة الجنسيات",
+          "body": "تختلف شروط والد فرنسي وزوج هندي وطفل بجواز هندي. قد يعفى الفرنسي بينما يحتاج الآخران إلى تصاريح مستقلة واستيفاء الشروط. لا تمنح إقامة أوروبية لدى أحد البالغين بقية الأسرة الأهلية تلقائياً."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "التخطيط للمسار القنصلي عند الحاجة",
+          "body": "إذا غابت الوثيقة الداعمة أو تعذر المسار الإلكتروني أو كان الغرض العمل أو الدراسة، فرتب التأشيرة القنصلية المناسبة. لا تعتمد على إصدار التأشيرة عند الوصول لأن كثيراً من الجنسيات الإلكترونية لا يحق لها ذلك. يمكن لـBosphoras تنسيق الجوانب العملية للرحلة."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يكفي وجود الجنسية في القائمة؟",
+          "answer": "لا، يجب الحصول على تصريح صادر إذا كانت التأشيرة مطلوبة."
+        },
+        {
+          "question": "هل السنغال مؤهلة؟",
+          "answer": "نعم بشروط، لتأشيرة شهر واحد ودخول واحد."
+        },
+        {
+          "question": "هل تقبل تأشيرة داعمة منتهية؟",
+          "answer": "لا، يجب أن تكون سارية عند الدخول."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "القائمة الرسمية للجنسيات المؤهلة"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "وزارة الخارجية: الشروط حسب الجواز"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "الإجراءات الرسمية للطلب والدفع"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "الوثائق والصلاحية"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "التأشيرات والإقامات الداعمة"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "الجنسيات غير المؤهلة للتأشيرة عند الوصول"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "طلب التأشيرة القنصلية"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        }
+      ]
+    }
+  },
+  "turkey-evisa-investors": {
+    "fr": {
+      "title": "e-Visa Turquie pour investisseurs : visites, prospection et création d’entreprise",
+      "metaDescription": "Découvrez les activités commerciales autorisées pendant une visite, les formalités selon le passeport et le passage vers un permis de travail ou de séjour.",
+      "shortAnswer": "Un investisseur étranger peut utiliser une dispense ou un e-Visa adapté pour une mission commerciale de courte durée. Cela permet notamment d’organiser des réunions et visites, mais ne confère pas automatiquement le droit de travailler au sein d’une société turque.",
+      "bosphorasHelp": "Parlons de votre voyage en Turquie. Bosphoras coordonne les transferts, séjours et rendez-vous selon les besoins de votre projet.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Choisir le statut selon l’activité réelle",
+          "body": "Une visite de prospection peut comporter des rendez-vous avec des fournisseurs, des professionnels de l’immobilier ou des conseillers. La gestion quotidienne sur place, l’exercice d’une profession et l’emploi rémunéré peuvent nécessiter un permis de travail. Le projet économique et la situation individuelle déterminent la démarche ; le mot investisseur ne constitue pas à lui seul une catégorie universelle de visa électronique."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Préparer une mission de cinq jours",
+          "body": "Avant l’arrivée, planifiez les rendez-vous et rassemblez les pièces nécessaires. Jour 1 : cadrage du projet et rendez-vous introductifs. Jours 2 et 3 : visites ciblées de biens, bureaux ou fournisseurs, regroupées géographiquement. Jour 4 : étude financière et échange avec les professionnels indépendants. Jour 5 : synthèse, vérification des documents à obtenir et départ. Ce programme peut rester compatible avec une visite commerciale de courte durée."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Durée disponible selon votre passeport",
+          "body": "Un Français en visite touristique ou commerciale admissible relève généralement de la dispense. Un Russe peut bénéficier de 60 jours par visite touristique ou commerciale ; un Indien doit obtenir un visa, avec une option électronique conditionnelle pour un mois. Un Mexicain peut demander un e-Visa de 30 jours à entrée unique. Le tableau résume les parcours, sans créer un régime spécial pour les investisseurs.",
+          "table": {
+            "headers": [
+              "Nationalité / document",
+              "Régime",
+              "Durée / entrées",
+              "Conditions"
+            ],
+            "rows": [
+              [
+                "Inde",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Pakistan",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Algérie",
+                "Dispense selon l’âge ou visa",
+                "90/180 si moins de 15 ou plus de 50 ans ; e-Visa 30 jours, 1 entrée",
+                "e-Visa : 15–18 ou 35–50 ans et justificatif admissible ; autres cas : consulat"
+              ],
+              [
+                "Irak",
+                "Dispense selon l’âge ou visa",
+                "90/180 si moins de 15 ou plus de 50 ans ; e-Visa 30 jours, 1 entrée",
+                "15–50 ans : justificatif admissible et conditions du portail"
+              ],
+              [
+                "Mexique",
+                "e-Visa possible",
+                "30 jours, 1 entrée",
+                "Conditions du portail officiel"
+              ],
+              [
+                "France",
+                "Dispense de visa",
+                "90 jours sur 180",
+                "Pas de frais de visa"
+              ],
+              [
+                "Kazakhstan",
+                "Dispense de visa",
+                "90 jours sur 180",
+                "Pas de frais de visa"
+              ],
+              [
+                "Russie",
+                "Dispense de visa",
+                "60 jours par séjour",
+                "Plafond général de 90/180"
+              ],
+              [
+                "Chine",
+                "Dispense de visa",
+                "90 jours sur 180",
+                "Pas de frais de visa"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Créer une société ou acquérir un bien",
+          "body": "Une acquisition immobilière et une constitution de société ont chacune leurs formalités propres. Pour un achat, préparez les vérifications foncières et le mode de paiement ; pour une société, définissez capital, associés, activité et pouvoirs du représentant. Le droit d’entrée n’est pas une autorisation administrative pour chaque opération et ne garantit pas le droit de résidence."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Faire plusieurs missions sans dépasser vos droits",
+          "body": "Si vous revenez régulièrement, distinguez la période de validité, le nombre d’entrées et le cumul des jours de séjour. Réservez des rendez-vous en tenant compte des dates légales de départ. Un visa à entrée unique utilisé ne peut pas servir à un second voyage. Un visa à entrées multiples reste soumis au nombre de jours figurant sur l’autorisation."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Quand prévoir une installation durable ?",
+          "body": "Si la mission aboutit à une présence prolongée ou à une activité de dirigeant actif, préparez un statut de résidence ou de travail approprié. Bosphoras peut coordonner l’itinéraire, les transferts, les visites et les rendez-vous avec des professionnels indépendants, pour que chaque démarche soit préparée avant votre déplacement."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Existe-t-il un e-Visa automatiquement réservé aux investisseurs ?",
+          "answer": "Non, l’admissibilité dépend du passeport et du motif commercial autorisé."
+        },
+        {
+          "question": "Puis-je travailler avec cet e-Visa ?",
+          "answer": "Non, il ne remplace pas le permis de travail applicable."
+        },
+        {
+          "question": "L’achat d’un bien prolonge-t-il le visa ?",
+          "answer": "Non, un droit de séjour supplémentaire exige une procédure distincte."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "Portail officiel : nationalités éligibles"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Ministère turc : règles par passeport"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "Procédure officielle de demande et paiement"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "Documents et validité"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Justificatifs de visa et de résidence"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "Nationalités sans visa à l’arrivée"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Demande de visa consulaire"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel de résidence"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey e-Visa for investors: business visits and company plans",
+      "metaDescription": "Plan a short commercial visit to Turkey, passport-specific visa routes, property inspections and subsequent residence or work permission.",
+      "shortAnswer": "An international investor may use an appropriate exemption or e-Visa for short commercial visits. Meetings and site inspections differ from permission to work in a Turkish company.",
+      "bosphorasHelp": "Discuss your Turkey visit with Bosphoras to coordinate transfers, accommodation and meetings around your plans.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Choose status around actual activity",
+          "body": "A scouting visit may include meetings with suppliers, property professionals and advisers. Day-to-day management, professional activity and employment may require work permission. The actual activity and personal status determine the procedure; being an investor does not itself create a universal electronic visa category."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "A practical five-day visit",
+          "body": "Prepare meetings and relevant documents before arrival. Day one: project briefing and introductory meetings. Days two and three: geographically grouped property, office or supplier visits. Day four: financial discussion with independent professionals. Day five: review, outstanding documents and departure. This timetable can fit an authorised short commercial visit."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Available days depend on your passport",
+          "body": "A French traveller on a qualifying visit generally has visa exemption. Russians may have a 60-day tourist or commercial visit; Indians require visas, with a conditional one-month electronic option. Mexican citizens can obtain a 30-day single-entry e-Visa. The table summarises routes without inventing an investor-specific entitlement.",
+          "table": {
+            "headers": [
+              "Nationality / document",
+              "Route",
+              "Stay / entries",
+              "Conditions"
+            ],
+            "rows": [
+              [
+                "India",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Pakistan",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Algeria",
+                "Age-based exemption or visa",
+                "90/180 if under 15 or over 50; e-Visa 30 days, single entry",
+                "Conditional e-Visa ages 15–18 or 35–50 with eligible supporting document; otherwise consulate"
+              ],
+              [
+                "Iraq",
+                "Age-based exemption or visa",
+                "90/180 if under 15 or over 50; e-Visa 30 days, single entry",
+                "Ages 15–50: eligible supporting document plus portal conditions"
+              ],
+              [
+                "Mexico",
+                "e-Visa available",
+                "30 days, single entry",
+                "Official portal conditions"
+              ],
+              [
+                "France",
+                "Visa-free",
+                "90 days in 180",
+                "No visa fee"
+              ],
+              [
+                "Kazakhstan",
+                "Visa-free",
+                "90 days in 180",
+                "No visa fee"
+              ],
+              [
+                "Russia",
+                "Visa-free",
+                "60 days per visit",
+                "General 90/180 ceiling"
+              ],
+              [
+                "China",
+                "Visa-free",
+                "90 days in 180",
+                "No visa fee"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Company setup and property purchase",
+          "body": "Property acquisition and incorporation have separate formalities. For property, prepare title checks and payment arrangements; for a company, determine capital, shareholders, activity and representative powers. Entry permission is not authorisation for every activity and does not guarantee residence."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Planning recurring commercial trips",
+          "body": "Distinguish visa validity, entries and cumulative permitted days. Schedule meetings around lawful departure dates. An already-used single-entry visa cannot be reused for a second trip. Multiple-entry visas remain subject to their printed stay allowance."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "When to prepare relocation",
+          "body": "If the project develops into extended presence or active management, establish appropriate residence or work status. Bosphoras can coordinate itineraries, transfers, visits and appointments with independent professionals before travel."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is there an automatic investor e-Visa?",
+          "answer": "No; passport and qualifying commercial purpose determine eligibility."
+        },
+        {
+          "question": "Can I work on it?",
+          "answer": "No, it does not replace applicable work authorisation."
+        },
+        {
+          "question": "Does buying property extend my visa?",
+          "answer": "No, a separate residence procedure is needed."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "Official eligible-country list"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Foreign Ministry: passport-specific rules"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "Official application and payment procedure"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "Required documents and validity"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Supporting visas and residence permits"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "Nationalities not eligible for visa on arrival"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Consular visa application"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official residence portal"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Электронная виза в Турцию для инвесторов: деловые визиты и бизнес",
+      "metaDescription": "Как организовать деловую поездку, просмотры недвижимости, переговоры, регистрацию компании и последующий легальный статус.",
+      "shortAnswer": "Иностранный инвестор может воспользоваться подходящим безвизовым режимом или электронной визой для краткого коммерческого визита. Переговоры и ознакомительные поездки отличаются от права работать в турецкой компании.",
+      "bosphorasHelp": "Bosphoras может организовать трансферы, проживание и встречи с учётом вашего проекта.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Статус зависит от фактической деятельности",
+          "body": "Ознакомительная поездка может включать переговоры с поставщиками, специалистами по недвижимости и консультантами. Повседневное управление, профессиональная деятельность и трудоустройство могут требовать разрешения на работу. Сам статус инвестора не даёт универсального права на электронную визу."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Пример пятидневной поездки",
+          "body": "Заранее подготовьте встречи и документы. Первый день — обсуждение проекта и знакомство с участниками. Второй и третий — просмотры недвижимости, офисов или производств по районам. Четвёртый — финансовое обсуждение с независимыми специалистами. Пятый — итоги, список необходимых документов и отъезд. Такой график может соответствовать краткому коммерческому визиту."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Сроки зависят от паспорта",
+          "body": "Гражданин Франции при подходящей поездке обычно освобождён от визы. Российские паспорта позволяют туристический или коммерческий визит до 60 дней. Гражданам Индии нужна виза, электронная на месяц доступна при условиях. Мексиканцам доступна однократная электронная виза на 30 дней. В таблице указаны обычные правила, а не отдельная льгота инвесторам.",
+          "table": {
+            "headers": [
+              "Гражданство / документ",
+              "Режим",
+              "Срок / въезды",
+              "Условия"
+            ],
+            "rows": [
+              [
+                "Индия",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Пакистан",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Алжир",
+                "Освобождение по возрасту или виза",
+                "90/180 до 15 или старше 50; электронная виза 30 дней, один въезд",
+                "Электронная виза для 15–18 или 35–50 лет с подходящим документом; иначе консульство"
+              ],
+              [
+                "Ирак",
+                "Освобождение по возрасту или виза",
+                "90/180 до 15 или старше 50; электронная виза 30 дней, один въезд",
+                "15–50 лет: подходящий документ и условия портала"
+              ],
+              [
+                "Мексика",
+                "Электронная виза доступна",
+                "30 дней, один въезд",
+                "Условия официального портала"
+              ],
+              [
+                "Франция",
+                "Без визы",
+                "90 дней из 180",
+                "Без визового сбора"
+              ],
+              [
+                "Казахстан",
+                "Без визы",
+                "90 дней из 180",
+                "Без визового сбора"
+              ],
+              [
+                "Россия",
+                "Без визы",
+                "60 дней за визит",
+                "Общий предел 90/180"
+              ],
+              [
+                "Китай",
+                "Без визы",
+                "90 дней из 180",
+                "Без визового сбора"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Регистрация компании и покупка недвижимости",
+          "body": "У каждой процедуры свои документы. При покупке подготовьте проверку права собственности и расчёты; при регистрации — капитал, участников, деятельность и полномочия представителя. Разрешение на въезд не заменяет другие разрешения и не гарантирует ВНЖ."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Повторные деловые поездки",
+          "body": "Различайте срок действия визы, число въездов и общее разрешённое пребывание. Планируйте встречи с учётом срока выезда. Использованная однократная виза не действует для повторного въезда. Многократная также ограничена указанным сроком пребывания."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Когда готовить переезд",
+          "body": "Если проект требует длительного пребывания или активного управления, определите подходящий ВНЖ или разрешение на работу. Bosphoras может организовать маршрут, трансферы, просмотры и встречи с независимыми специалистами до вашего прибытия."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Есть ли автоматическая электронная виза инвестора?",
+          "answer": "Нет, учитываются паспорт и допустимая коммерческая цель."
+        },
+        {
+          "question": "Можно ли работать по ней?",
+          "answer": "Нет, она не заменяет разрешение на работу."
+        },
+        {
+          "question": "Продлевает ли покупка жилья визу?",
+          "answer": "Нет, для проживания предусмотрена отдельная процедура."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "Официальный список гражданств"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "МИД Турции: правила по паспорту"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "Официальный порядок подачи и оплаты"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "Документы и сроки действия"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Подтверждающие визы и ВНЖ"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "Гражданства без визы по прибытии"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Консульская подача"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал ВНЖ"
+        }
+      ]
+    },
+    "ar": {
+      "title": "التأشيرة الإلكترونية لتركيا للمستثمرين: زيارات الأعمال وتأسيس الشركات",
+      "metaDescription": "خطط لزيارة استثمارية قصيرة ومعرفة قواعد الجواز وزيارات العقارات والاجتماعات والانتقال لاحقاً إلى إقامة أو تصريح عمل.",
+      "shortAnswer": "يمكن للمستثمر الأجنبي استخدام الإعفاء أو تأشيرة إلكترونية مناسبة لزيارة تجارية قصيرة. وتختلف الاجتماعات والزيارات الاستطلاعية عن حق العمل داخل شركة تركية.",
+      "bosphorasHelp": "تنسق Bosphoras النقل والسكن والاجتماعات وفق احتياجات مشروعك.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "اختيار الوضع بحسب النشاط الفعلي",
+          "body": "قد تتضمن الزيارة اجتماعات مع الموردين ومختصي العقار والمستشارين. وقد تتطلب الإدارة اليومية والعمل المهني والتوظيف تصريح عمل. تتحدد الإجراءات بالنشاط والوضع الفردي، ولا تمنح صفة المستثمر حقاً إلكترونياً عاماً."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "برنامج عملي لخمسـة أيام",
+          "body": "جهز الاجتماعات والوثائق مسبقاً. اليوم الأول: تحديد المشروع واجتماعات تمهيدية. الثاني والثالث: زيارات العقارات والمكاتب والموردين ضمن مناطق محددة. الرابع: دراسة مالية مع مختصين مستقلين. الخامس: مراجعة النتائج والوثائق المطلوبة والمغادرة. وقد يناسب البرنامج زيارة تجارية قصيرة مصرحاً بها."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "المدة المتاحة حسب الجواز",
+          "body": "يستفيد الفرنسي عادة من الإعفاء للزيارة المؤهلة، والروسي من 60 يوماً للزيارة السياحية أو التجارية. ويحتاج الهندي إلى تأشيرة مع خيار إلكتروني مشروط لشهر، والمكسيكي إلى إلكترونية لـ30 يوماً لدخول واحد. يلخص الجدول هذه المسارات دون افتراض امتياز خاص للمستثمرين.",
+          "table": {
+            "headers": [
+              "الجنسية / الوثيقة",
+              "النظام",
+              "المدة / الدخول",
+              "الشروط"
+            ],
+            "rows": [
+              [
+                "الهند",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "باكستان",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "الجزائر",
+                "إعفاء حسب العمر أو تأشيرة",
+                "90/180 دون 15 أو فوق 50؛ الإلكترونية 30 يوماً لدخول واحد",
+                "الإلكترونية للأعمار 15–18 أو 35–50 مع وثيقة مؤهلة؛ وإلا القنصلية"
+              ],
+              [
+                "العراق",
+                "إعفاء حسب العمر أو تأشيرة",
+                "90/180 دون 15 أو فوق 50؛ الإلكترونية 30 يوماً لدخول واحد",
+                "15–50 عاماً: وثيقة مؤهلة وشروط المنصة"
+              ],
+              [
+                "المكسيك",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول واحد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "فرنسا",
+                "إعفاء",
+                "90 يوماً خلال 180",
+                "دون رسوم تأشيرة"
+              ],
+              [
+                "كازاخستان",
+                "إعفاء",
+                "90 يوماً خلال 180",
+                "دون رسوم تأشيرة"
+              ],
+              [
+                "روسيا",
+                "إعفاء",
+                "60 يوماً لكل زيارة",
+                "السقف العام 90/180"
+              ],
+              [
+                "الصين",
+                "إعفاء",
+                "90 يوماً خلال 180",
+                "دون رسوم تأشيرة"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "تأسيس شركة وشراء عقار",
+          "body": "لكل إجراء متطلبات مستقلة. افحص سند الملكية وطريقة الدفع عند الشراء، وحدد رأس المال والشركاء والنشاط وصلاحيات الممثل عند التأسيس. لا يحل تصريح الدخول محل التراخيص الأخرى ولا يضمن الإقامة."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "التخطيط للزيارات التجارية المتكررة",
+          "body": "ميز صلاحية التأشيرة وعدد مرات الدخول وإجمالي أيام البقاء. رتب المواعيد وفق آخر يوم قانوني للمغادرة. لا يعاد استخدام تأشيرة دخول واحد بعد استهلاكها، وتظل المتعددة خاضعة لمدة البقاء المذكورة."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "متى يلزم التحضير للانتقال الطويل؟",
+          "body": "إذا تطلب المشروع وجوداً ممتداً أو إدارة نشطة، فحدد وضع الإقامة أو العمل المناسب. تستطيع Bosphoras تنسيق المسار والنقل والزيارات والاجتماعات مع مختصين مستقلين قبل السفر."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل توجد إلكترونية تلقائية للمستثمر؟",
+          "answer": "لا، يعتمد التأهل على الجواز والغرض التجاري المقبول."
+        },
+        {
+          "question": "هل تسمح بالعمل؟",
+          "answer": "لا، لا تحل محل تصريح العمل."
+        },
+        {
+          "question": "هل يمدد شراء العقار التأشيرة؟",
+          "answer": "لا، الإقامة إجراء مستقل."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "القائمة الرسمية للجنسيات المؤهلة"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "وزارة الخارجية: الشروط حسب الجواز"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "الإجراءات الرسمية للطلب والدفع"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "الوثائق والصلاحية"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "التأشيرات والإقامات الداعمة"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "الجنسيات غير المؤهلة للتأشيرة عند الوصول"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "طلب التأشيرة القنصلية"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        }
+      ]
+    }
+  },
+  "turkey-electronic-visa-requirements": {
+    "fr": {
+      "title": "Visa électronique Turquie 2026 : conditions, passeport et justificatifs",
+      "metaDescription": "Validité minimale du passeport, visas Schengen ou équivalents, conditions d’âge, compagnie aérienne, ressources et erreurs à éviter.",
+      "shortAnswer": "Les conditions de l’e-Visa turc ne sont pas identiques pour tous les voyageurs. La nationalité, le document, l’âge, la date d’entrée et les justificatifs peuvent modifier l’admissibilité. Voici comment préparer un dossier qui correspond aux règles de votre passeport.",
+      "bosphorasHelp": "Parlons de votre voyage en Turquie. Bosphoras coordonne les transferts, séjours et rendez-vous selon les besoins de votre projet.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Validité du passeport : calculer le minimum",
+          "body": "L’article 7 de la loi 6458 prévoit en règle générale une validité du document supérieure de 60 jours à la durée autorisée. Ainsi, une permission de séjour de 30 jours nécessite normalement 90 jours de validité à l’arrivée ; pour 90 jours de séjour, le minimum est de 150 jours. Des conditions propres à certaines nationalités et des exceptions légales existent. Le ministère recommande une marge de six mois.",
+          "table": {
+            "headers": [
+              "Séjour autorisé",
+              "Validité minimale à l’entrée"
+            ],
+            "rows": [
+              [
+                "30 jours",
+                "90 jours"
+              ],
+              [
+                "60 jours",
+                "120 jours"
+              ],
+              [
+                "90 jours",
+                "150 jours"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Justificatif Schengen, américain, britannique ou irlandais",
+          "body": "Lorsque le régime l’exige, présentez une véritable autorisation admissible et valide à l’entrée. Une ancienne autorisation à entrée unique utilisée peut être acceptée si sa validité couvre cette date. Un visa électronique délivré par un autre pays n’est pas admis comme justificatif. Il ne suffit pas de posséder une réservation de rendez-vous pour obtenir un titre de séjour."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Critères d’âge : des situations précises",
+          "body": "Les passeports ordinaires algériens des moins de 15 ans et des plus de 50 ans bénéficient d’une exemption touristique ; les 15–18 et 35–50 ans peuvent relever du parcours électronique avec justificatif admis. Pour l’Irak, le groupe 15–50 ans est soumis à visa, avec possibilité électronique conditionnelle. La Libye utilise des seuils de 16 et 45 ans. En Égypte, les 15–45 ans doivent notamment remplir les conditions documentaires et voyager avec l’une des compagnies mentionnées par le ministère."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Compagnie aérienne, hôtel et ressources",
+          "body": "Selon la demande, des conditions supplémentaires peuvent concerner le transporteur, le billet de retour, la réservation d’hébergement et les ressources disponibles. Pour certains voyageurs égyptiens, le ministère cite Turkish Airlines, AJet, Pegasus, EgyptAir et Air Cairo. Il ne faut pas appliquer cette liste à toutes les nationalités sans distinction ; les conditions figurent sur votre parcours de demande."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Informations exactes et validité de l’autorisation",
+          "body": "Le nom et les autres éléments d’identité doivent coïncider avec le passeport présenté. Le visa délivré ne peut pas être corrigé. Vérifiez également le nombre d’entrées, les dates et la durée. Une arrivée avant la date de validité du visa requiert une nouvelle demande. Une demande payée ne garantit pas l’admission par les autorités de frontière."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Exemple de vérification avant embarquement",
+          "body": "Un voyageur pakistanais sollicitant l’e-Visa conditionnel prépare son passeport, un titre de séjour britannique admissible valide à l’arrivée et les autres documents demandés. Il choisit une date compatible avec la validité des deux documents et conserve les preuves en version hors connexion. S’il ne remplit pas les conditions, il doit organiser un visa consulaire avant son voyage. Bosphoras peut coordonner le calendrier de son projet."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Un visa Schengen déjà utilisé peut-il servir ?",
+          "answer": "Oui s’il est admissible et reste valide à la date d’entrée, même s’il était à entrée unique."
+        },
+        {
+          "question": "Un e-Visa étranger est-il accepté comme preuve ?",
+          "answer": "Non, le portail officiel l’exclut."
+        },
+        {
+          "question": "Un passeport valide 90 jours suffit-il toujours ?",
+          "answer": "Non, cela dépend de la durée autorisée et des autres critères."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "Portail officiel : nationalités éligibles"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Ministère turc : règles par passeport"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "Procédure officielle de demande et paiement"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "Documents et validité"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Justificatifs de visa et de résidence"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "Nationalités sans visa à l’arrivée"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Demande de visa consulaire"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel de résidence"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey electronic visa requirements 2026: passport and supporting documents",
+      "metaDescription": "Understand passport validity, qualifying supporting visas, age rules, airlines and document checks before applying for a Turkish e-Visa.",
+      "shortAnswer": "Turkish e-Visa requirements depend on nationality, travel document, age, intended arrival and supporting evidence. Prepare a file matching the rules for your own document.",
+      "bosphorasHelp": "Discuss your Turkey visit with Bosphoras to coordinate transfers, accommodation and meetings around your plans.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Calculate minimum passport validity",
+          "body": "Article 7 of Law 6458 generally requires another 60 days beyond the authorised stay. Thirty permitted days normally require 90 days of remaining document validity on entry; 90 permitted days require 150. Specific nationality requirements and statutory exceptions apply. The ministry recommends six months of validity.",
+          "table": {
+            "headers": [
+              "Permitted stay",
+              "Minimum validity at entry"
+            ],
+            "rows": [
+              [
+                "30 days",
+                "90 days"
+              ],
+              [
+                "60 days",
+                "120 days"
+              ],
+              [
+                "90 days",
+                "150 days"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Schengen, US, UK or Irish supporting documents",
+          "body": "Where required, present an eligible visa or residence permit valid at arrival. A previously used single-entry visa can be accepted when still valid on that date. Electronic visas from other countries are not accepted as supporting evidence. A residence application appointment alone does not replace an issued permit."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Specific age criteria",
+          "body": "Ordinary Algerian passport holders under 15 and over 50 have a tourist exemption; ages 15–18 and 35–50 may access conditional electronic visas with eligible documents. Iraqi nationals aged 15–50 need visas with a conditional electronic route. Libya's thresholds are 16 and 45. Egyptian applicants aged 15–45 must meet specified documentation and airline requirements."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Airline, accommodation and means",
+          "body": "Additional conditions may relate to the carrier, return ticket, accommodation and sufficient means. For certain Egyptian travellers the ministry names Turkish Airlines, AJet, Pegasus, EgyptAir and Air Cairo. Do not assume that list applies to every nationality; follow the conditions shown for your application."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Exact identity information and validity",
+          "body": "The visa's details must match the passport presented. An issued visa cannot be amended. Check entry count, validity and stay allowance. Arrival before the start date requires a new application. Payment does not guarantee border admission."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Example of a pre-departure document check",
+          "body": "A Pakistani applicant preparing a conditional e-Visa gathers a passport, eligible UK residence permit valid on arrival and all other required evidence. The planned date must fit both documents' validity. Save them offline and use the consular route if the conditions cannot be met. Bosphoras can coordinate the project timetable."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I use a previously used Schengen visa?",
+          "answer": "Yes if eligible and still valid at entry, including a used single-entry visa."
+        },
+        {
+          "question": "Is a foreign e-Visa accepted as proof?",
+          "answer": "No, the official portal excludes it."
+        },
+        {
+          "question": "Is 90 days of passport validity always sufficient?",
+          "answer": "No; it depends on permitted stay and other conditions."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "Official eligible-country list"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Foreign Ministry: passport-specific rules"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "Official application and payment procedure"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "Required documents and validity"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Supporting visas and residence permits"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "Nationalities not eligible for visa on arrival"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Consular visa application"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official residence portal"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Условия электронной визы в Турцию 2026: паспорт и документы",
+      "metaDescription": "Срок действия паспорта, подтверждающие визы и ВНЖ, возрастные условия, авиакомпании и проверка документов.",
+      "shortAnswer": "Условия электронной визы зависят от гражданства, проездного документа, возраста, даты въезда и подтверждений. Подготовьте документы по правилам именно вашего паспорта.",
+      "bosphorasHelp": "Bosphoras может организовать трансферы, проживание и встречи с учётом вашего проекта.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Минимальный срок действия паспорта",
+          "body": "Статья 7 закона № 6458 обычно требует 60 дополнительных дней сверх разрешённого пребывания. Для 30 дней это означает минимум 90 дней действия документа на дату въезда, для 90 дней — 150. Возможны специальные требования и законные исключения. МИД рекомендует шесть месяцев.",
+          "table": {
+            "headers": [
+              "Разрешённый срок",
+              "Минимальная действительность при въезде"
+            ],
+            "rows": [
+              [
+                "30 дней",
+                "90 дней"
+              ],
+              [
+                "60 дней",
+                "120 дней"
+              ],
+              [
+                "90 дней",
+                "150 дней"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Виза или ВНЖ Шенгена, США, Великобритании или Ирландии",
+          "body": "Если требуется подтверждение, предъявите подходящий документ, действующий на дату въезда. Ранее использованная однократная виза может приниматься, пока её срок не истёк. Электронные визы других государств не являются допустимым подтверждением. Запись на подачу ВНЖ не заменяет выданное разрешение."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Возрастные условия",
+          "body": "Граждане Алжира с обычными паспортами младше 15 и старше 50 освобождены для туризма; в возрасте 15–18 и 35–50 возможна условная электронная виза с подходящим документом. Для Ирака в возрасте 15–50 требуется виза с условной электронной процедурой. Ливия использует пороги 16 и 45. Для египтян 15–45 действуют требования к документу и перевозчику."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Авиакомпания, жильё и средства",
+          "body": "Дополнительные условия могут касаться авиакомпании, обратного билета, жилья и финансов. Для некоторых граждан Египта МИД указывает Turkish Airlines, AJet, Pegasus, EgyptAir и Air Cairo. Этот список не следует распространять на все гражданства; учитывайте требования своей заявки."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Совпадение данных и срок действия",
+          "body": "Сведения в визе должны совпадать с предъявляемым паспортом. Выданную визу изменить нельзя. Проверьте число въездов, даты и разрешённое пребывание. Для прибытия до начала действия нужна новая заявка. Оплата не гарантирует допуск через границу."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Пример проверки перед вылетом",
+          "body": "Гражданин Пакистана для условной электронной визы готовит паспорт, подходящий британский ВНЖ, действующий при въезде, и остальные документы. Дата поездки должна соответствовать срокам обоих документов. Сохраните их без доступа к интернету. Если условия не выполнены, оформляется консульская виза. Bosphoras может согласовать календарь проекта."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Подходит ли использованная шенгенская виза?",
+          "answer": "Да, если она подходит и действует на дату въезда, даже однократная."
+        },
+        {
+          "question": "Принимается ли иностранная электронная виза?",
+          "answer": "Нет, портал исключает её."
+        },
+        {
+          "question": "Всегда ли достаточно 90 дней действия паспорта?",
+          "answer": "Нет, это зависит от срока пребывания и других условий."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "Официальный список гражданств"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "МИД Турции: правила по паспорту"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "Официальный порядок подачи и оплаты"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "Документы и сроки действия"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Подтверждающие визы и ВНЖ"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "Гражданства без визы по прибытии"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Консульская подача"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал ВНЖ"
+        }
+      ]
+    },
+    "ar": {
+      "title": "شروط التأشيرة الإلكترونية لتركيا 2026: الجواز والوثائق الداعمة",
+      "metaDescription": "صلاحية الجواز والتأشيرات الداعمة وشروط العمر وشركات الطيران والتحقق من الوثائق قبل الطلب.",
+      "shortAnswer": "تتحدد شروط الإلكترونية التركية بحسب الجنسية والوثيقة والعمر وتاريخ الدخول والإثباتات. جهز ملفاً مطابقاً للقواعد الخاصة بجوازك.",
+      "bosphorasHelp": "تنسق Bosphoras النقل والسكن والاجتماعات وفق احتياجات مشروعك.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "حساب الحد الأدنى لصلاحية الجواز",
+          "body": "تطلب المادة 7 من القانون 6458 عموماً 60 يوماً إضافية بعد المدة المصرح بها. تتطلب 30 يوماً عادة صلاحية 90 يوماً عند الوصول، وتتطلب 90 يوماً صلاحية 150 يوماً. توجد شروط خاصة واستثناءات قانونية. وتوصي الوزارة بستة أشهر.",
+          "table": {
+            "headers": [
+              "مدة البقاء",
+              "الصلاحية الدنيا عند الدخول"
+            ],
+            "rows": [
+              [
+                "30 يوماً",
+                "90 يوماً"
+              ],
+              [
+                "60 يوماً",
+                "120 يوماً"
+              ],
+              [
+                "90 يوماً",
+                "150 يوماً"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "وثائق شنغن وأمريكا وبريطانيا وإيرلندا",
+          "body": "عندما يشترط النظام وثيقة داعمة، قدم تأشيرة أو إقامة مؤهلة سارية عند الوصول. قد تقبل تأشيرة دخول واحد سبق استخدامها إذا بقيت سارية في ذلك التاريخ. لا تقبل التأشيرات الإلكترونية الأجنبية كإثبات. ولا يحل موعد تقديم طلب الإقامة محل التصريح الصادر."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "شروط العمر المحددة",
+          "body": "يعفى حاملو الجوازات الجزائرية العادية دون 15 وفوق 50 للسياحة، وقد تتاح الإلكترونية المشروطة للأعمار 15–18 و35–50 مع وثيقة مؤهلة. وللعراقيين 15–50 تأشيرة مع إمكانية إلكترونية مشروطة. وفي ليبيا الحدّان 16 و45. وللمصريين 15–45 شروط تتعلق بالوثائق والناقل."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "شركة الطيران والسكن والموارد",
+          "body": "قد تشمل الشروط الناقل وتذكرة العودة والسكن والموارد المالية. وتذكر الوزارة لبعض المصريين شركات Turkish Airlines وAJet وPegasus وEgyptAir وAir Cairo. لا تعمم هذه القائمة على جميع الجنسيات، واتبع شروط طلبك."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "تطابق البيانات وصلاحية الوثيقة",
+          "body": "يجب تطابق بيانات التأشيرة مع الجواز المقدم. ولا يمكن تعديل التأشيرة الصادرة. راجع عدد الدخول وتواريخ الصلاحية والمدة. يلزم طلب جديد للوصول قبل بداية الصلاحية. لا يضمن الدفع قبول الدخول عند الحدود."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "مثال للتحقق قبل المغادرة",
+          "body": "يجهز الباكستاني المتقدم للإلكترونية المشروطة جوازه وإقامة بريطانية مؤهلة سارية عند الوصول وبقية المستندات. يختار تاريخاً يتوافق مع صلاحية الوثيقتين ويحفظ نسخاً دون اتصال. وإذا لم يستوف الشروط، يتقدم للقنصلية. تستطيع Bosphoras تنسيق جدول المشروع."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل تقبل تأشيرة شنغن سبق استخدامها؟",
+          "answer": "نعم إذا كانت مؤهلة وسارية عند الدخول حتى لو كانت لدخول واحد."
+        },
+        {
+          "question": "هل تقبل إلكترونية أجنبية كإثبات؟",
+          "answer": "لا، تستبعدها المنصة الرسمية."
+        },
+        {
+          "question": "هل تكفي صلاحية جواز 90 يوماً دائماً؟",
+          "answer": "لا، يعتمد ذلك على مدة البقاء والشروط الأخرى."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.evisa.gov.tr/en/info/who-is-eligible-for-e-visa/",
+          "label": "القائمة الرسمية للجنسيات المؤهلة"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "وزارة الخارجية: الشروط حسب الجواز"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "label": "الإجراءات الرسمية للطلب والدفع"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-do-i-need-for-my-e-visa-application/",
+          "label": "الوثائق والصلاحية"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "التأشيرات والإقامات الداعمة"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/can-the-citizens-of-all-the-countries-eligible-for-e-visa-obtain-sticker-type-of-visa-on-arrival/",
+          "label": "الجنسيات غير المؤهلة للتأشيرة عند الوصول"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "طلب التأشيرة القنصلية"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        }
+      ]
+    }
   }
 };
