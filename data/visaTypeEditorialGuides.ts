@@ -5107,11 +5107,11 @@ export const visaTypeEditorialGuides: Record<string, Record<Locale, EditorialGui
               ],
               [
                 "Maldives",
-                "30 jours"
+                "Visa requis pour passeport ordinaire ; e-Visa possible"
               ],
               [
                 "Indonésie",
-                "30 jours"
+                "30 jours par entrée, maximum 90 sur 180"
               ],
               [
                 "Thaïlande",
@@ -5204,11 +5204,11 @@ export const visaTypeEditorialGuides: Record<string, Record<Locale, EditorialGui
               ],
               [
                 "Maldives",
-                "30 days"
+                "Ordinary passport requires visa; e-Visa available"
               ],
               [
                 "Indonesia",
-                "30 days"
+                "30 days per entry, maximum 90 in 180"
               ],
               [
                 "Thailand",
@@ -5301,11 +5301,11 @@ export const visaTypeEditorialGuides: Record<string, Record<Locale, EditorialGui
               ],
               [
                 "Мальдивы",
-                "30 дней"
+                "Обычному паспорту нужна виза; доступна e-Visa"
               ],
               [
                 "Индонезия",
-                "30 дней"
+                "30 дней за въезд, максимум 90 из 180"
               ],
               [
                 "Таиланд",
@@ -5398,11 +5398,11 @@ export const visaTypeEditorialGuides: Record<string, Record<Locale, EditorialGui
               ],
               [
                 "المالديف",
-                "30 يوماً"
+                "الجواز العادي يحتاج تأشيرة؛ تتاح التأشيرة الإلكترونية"
               ],
               [
                 "إندونيسيا",
-                "30 يوماً"
+                "30 يوماً لكل دخول وبحد 90 من 180"
               ],
               [
                 "تايلاند",
@@ -5825,6 +5825,1649 @@ export const visaTypeEditorialGuides: Record<string, Record<Locale, EditorialGui
           "href": "https://e-ikamet.goc.gov.tr/",
           "label": "بوابة الإقامة الرسمية"
         }
+      ]
+    }
+  },
+  "turkey-90-days-in-180": {
+    "fr": {
+      "title": "Turquie : calcul des 90 jours sur 180 en 2026 | Exemples pratiques",
+      "metaDescription": "Calculez vos 90 jours sur 180 en Turquie sans erreur : dates d’entrée et de sortie, séjours multiples, passeports russes et solutions pour rester.",
+      "shortAnswer": "Pour chaque journée envisagée en Turquie, comptez les jours de présence dans les 180 jours qui se terminent ce jour-là. Le total ne doit pas dépasser 90, sous réserve de limites nationales plus strictes.",
+      "bosphorasHelp": "Bosphoras peut organiser votre séjour, votre recherche de logement et vos rendez-vous avec des spécialistes indépendants. Les décisions de séjour relèvent des autorités.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "La fenêtre glissante expliquée",
+          "body": "La règle ne correspond ni à l’année civile ni à six mois fixes à partir de janvier. Regardez 179 jours en arrière plus le jour concerné. Comptez les jours d’arrivée et de départ. Faites ce contrôle pour toutes les dates d’un nouveau séjour, car d’anciens jours peuvent sortir progressivement de la fenêtre."
+        },
+        {
+          "id": "stay-2",
+          "title": "Exemples du calendrier 2026",
+          "body": "Ces exemples supposent aucun autre séjour, une exemption de 90 jours applicable et aucune restriction individuelle. Un jour passé à la fois en Turquie et à l’étranger reste un jour de présence.",
+          "table": {
+            "headers": [
+              "Séjour",
+              "Jours utilisés",
+              "Première date d’une nouvelle période complète"
+            ],
+            "rows": [
+              [
+                "1 janvier–31 mars",
+                "90",
+                "30 juin"
+              ],
+              [
+                "1 avril–29 juin",
+                "90",
+                "28 septembre"
+              ],
+              [
+                "1 juillet–28 septembre",
+                "90",
+                "28 décembre"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-3",
+          "title": "Séjours multiples et doubles passeports",
+          "body": "Si vos visites de 25, 30 et 20 jours se trouvent dans la fenêtre, elles totalisent 75 jours ; il reste 15 jours au maximum tant qu’aucune ancienne journée ne sort. Deux passeports ne donnent pas deux quotas. Pour les Russes, le maximum de 60 jours par visite s’ajoute au plafond de 90 jours."
+        },
+        {
+          "id": "stay-4",
+          "title": "Passer du séjour à la résidence",
+          "body": "Si vous souhaitez rester au-delà du droit de séjour applicable, vérifiez un fondement de résidence admissible et déposez avant expiration. Un titre de séjour valide est un régime différent du court séjour. Conservez votre historique d’entrées et sorties et le document officiel de toute demande."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Un week-end à l’étranger remet-il le compteur à zéro ?",
+          "answer": "Non, les anciennes journées restent comptées jusqu’à leur sortie de la fenêtre."
+        },
+        {
+          "question": "Le jour de départ compte-t-il ?",
+          "answer": "Oui."
+        },
+        {
+          "question": "Puis-je compter 90 jours par passeport ?",
+          "answer": "Non, le plafond concerne la personne."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Règles générales des visas",
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa"
+        },
+        {
+          "label": "Régime par nationalité",
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+        },
+        {
+          "label": "Catégories de résidence",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "Portail e-ikamet",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey 90 days in 180 rule 2026: calculate your stay",
+      "metaDescription": "Calculate Turkey’s rolling 90/180-day limit with worked dates, multiple trips, Russian passport restrictions and residence options.",
+      "shortAnswer": "For each planned day in Turkey, count physical presence within the 180-day period ending on that date. The total must not exceed 90, subject to stricter nationality-specific limits.",
+      "bosphorasHelp": "Bosphoras helps coordinate your stay, housing search and appointments with independent specialists. Immigration decisions remain with the authorities.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "The rolling window",
+          "body": "It is not the calendar year or a fixed January-to-June period. Count the current day and the preceding 179 days, including arrival and departure dates. Repeat the test for each day of a proposed trip because older dates can roll out of the window."
+        },
+        {
+          "id": "stay-2",
+          "title": "Worked 2026 calendars",
+          "body": "These examples assume no other visits, a qualifying 90-day exemption and no individual restriction. A day spent partly in Turkey counts as a day of presence.",
+          "table": {
+            "headers": [
+              "Visit",
+              "Days used",
+              "First date for another full allowance"
+            ],
+            "rows": [
+              [
+                "1 Jan–31 Mar",
+                "90",
+                "30 Jun"
+              ],
+              [
+                "1 Apr–29 Jun",
+                "90",
+                "28 Sep"
+              ],
+              [
+                "1 Jul–28 Sep",
+                "90",
+                "28 Dec"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-3",
+          "title": "Multiple visits and dual passports",
+          "body": "Visits of 25, 30 and 20 days within the same window use 75 days, leaving at most 15 while none drop out. Two passports do not double the allowance. Russian ordinary passport holders also face a 60-day per-visit limit."
+        },
+        {
+          "id": "stay-4",
+          "title": "Moving from visitor to resident",
+          "body": "If you plan to exceed your permitted stay, identify a qualifying residence route and apply before expiry. A valid residence permit is a separate status. Keep accurate entry and exit records and official proof of any application."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does a weekend abroad reset the limit?",
+          "answer": "No, earlier days count until they roll out."
+        },
+        {
+          "question": "Does departure day count?",
+          "answer": "Yes."
+        },
+        {
+          "question": "Can I use 90 days on each passport?",
+          "answer": "No, the ceiling applies to the traveller."
+        }
+      ],
+      "sources": [
+        {
+          "label": "General visa rules",
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa"
+        },
+        {
+          "label": "Rules by nationality",
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+        },
+        {
+          "label": "Residence categories",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "e-ikamet portal",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Правило 90 дней из 180 в Турции 2026: расчёт с примерами",
+      "metaDescription": "Как рассчитать 90/180 в Турции, учесть въезд, выезд, несколько поездок и ограничение 60 дней по российскому паспорту.",
+      "shortAnswer": "Для каждого планируемого дня посчитайте фактическое пребывание в Турции в 180-дневном периоде, заканчивающемся этим днём. Общий срок не должен превышать 90 дней с учётом более строгих национальных ограничений.",
+      "bosphorasHelp": "Bosphoras помогает организовать поездку, поиск жилья и встречи с независимыми специалистами. Решения о пребывании принимают компетентные органы.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "Скользящий период",
+          "body": "Это не календарный год и не фиксированное полугодие. Учитывайте текущий день и предыдущие 179 дней, включая даты въезда и выезда. Проверяйте каждый день будущей поездки: прежние дни постепенно выходят из окна."
+        },
+        {
+          "id": "stay-2",
+          "title": "Примеры для 2026 года",
+          "body": "Расчёты предполагают отсутствие других поездок, право на 90-дневное пребывание и отсутствие индивидуальных запретов. Даже неполный день в Турции учитывается.",
+          "table": {
+            "headers": [
+              "Поездка",
+              "Дней",
+              "Начало нового полного срока"
+            ],
+            "rows": [
+              [
+                "1 января–31 марта",
+                "90",
+                "30 июня"
+              ],
+              [
+                "1 апреля–29 июня",
+                "90",
+                "28 сентября"
+              ],
+              [
+                "1 июля–28 сентября",
+                "90",
+                "28 декабря"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-3",
+          "title": "Несколько поездок и два паспорта",
+          "body": "Три поездки на 25, 30 и 20 дней в одном окне дают 75 дней, оставляя до 15, пока прежние дни не вышли из расчёта. Два паспорта не удваивают срок. Для обычного российского паспорта дополнительно действует предел 60 дней за визит."
+        },
+        {
+          "id": "stay-4",
+          "title": "Переход к проживанию",
+          "body": "Если планируется остаться дольше разрешённого срока, определите допустимое основание для ВНЖ и подайте до окончания законного пребывания. Действующий ВНЖ является отдельным статусом. Сохраняйте историю пересечений границы и официальные подтверждения заявлений."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Обнуляет ли выезд на выходные срок?",
+          "answer": "Нет, предыдущие дни учитываются, пока не выйдут из окна."
+        },
+        {
+          "question": "Считается ли день выезда?",
+          "answer": "Да."
+        },
+        {
+          "question": "Можно ли использовать 90 дней по каждому паспорту?",
+          "answer": "Нет, лимит применяется к человеку."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Общие визовые правила",
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa"
+        },
+        {
+          "label": "Правила по гражданству",
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+        },
+        {
+          "label": "Категории ВНЖ",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "Портал e-ikamet",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        }
+      ]
+    },
+    "ar": {
+      "title": "قاعدة 90 يوماً من 180 في تركيا 2026: حساب المدة بالأمثلة",
+      "metaDescription": "احسب مدة البقاء في تركيا وفق قاعدة 90/180 وتواريخ الدخول والخروج والزيارات المتعددة وحد الجواز الروسي وخيارات الإقامة.",
+      "shortAnswer": "لكل يوم تخطط لقضائه في تركيا احسب أيام وجودك الفعلي خلال فترة 180 يوماً تنتهي بذلك اليوم. لا يجوز تجاوز 90 يوماً مع مراعاة القيود الأقصر بحسب الجنسية.",
+      "bosphorasHelp": "تساعد Bosphoras في تنظيم الإقامة والبحث عن السكن والمواعيد مع مختصين مستقلين، وتبقى قرارات الهجرة من اختصاص السلطات.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "النافذة المتحركة",
+          "body": "ليست سنة تقويمية أو نصف سنة ثابتاً. احسب اليوم المعني والأيام الـ179 السابقة مع يومي الدخول والخروج. كرر الحساب لكل يوم من رحلتك المقبلة لأن الأيام القديمة تخرج تدريجياً من النافذة."
+        },
+        {
+          "id": "stay-2",
+          "title": "أمثلة من تقويم 2026",
+          "body": "تفترض الأمثلة عدم وجود زيارات أخرى واستحقاق مدة 90 يوماً وعدم وجود قيود فردية. يحتسب اليوم الذي تقضي جزءاً منه في تركيا.",
+          "table": {
+            "headers": [
+              "الزيارة",
+              "الأيام",
+              "بداية رصيد كامل جديد"
+            ],
+            "rows": [
+              [
+                "1 يناير–31 مارس",
+                "90",
+                "30 يونيو"
+              ],
+              [
+                "1 أبريل–29 يونيو",
+                "90",
+                "28 سبتمبر"
+              ],
+              [
+                "1 يوليو–28 سبتمبر",
+                "90",
+                "28 ديسمبر"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-3",
+          "title": "الزيارات المتكررة والجوازان",
+          "body": "تستهلك زيارات من 25 و30 و20 يوماً داخل النافذة 75 يوماً وتترك 15 على الأكثر ما دامت الأيام السابقة محسوبة. لا يضاعف الجوازان الرصيد. يضاف للجواز الروسي العادي حد 60 يوماً لكل زيارة."
+        },
+        {
+          "id": "stay-4",
+          "title": "الانتقال من زيارة إلى إقامة",
+          "body": "إذا رغبت في تجاوز المدة المسموحة حدد أساس إقامة مؤهلاً وقدم قبل انتهائها. تصريح الإقامة الساري وضع مستقل عن الزيارة القصيرة. احتفظ بسجل الدخول والخروج وإثباتات الطلب الرسمية."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل تعيد عطلة خارج تركيا احتساب الرصيد؟",
+          "answer": "لا، تظل الأيام السابقة محسوبة حتى تخرج من النافذة."
+        },
+        {
+          "question": "هل يحتسب يوم المغادرة؟",
+          "answer": "نعم."
+        },
+        {
+          "question": "هل يمكن استخدام 90 يوماً لكل جواز؟",
+          "answer": "لا، يطبق الحد على الشخص."
+        }
+      ],
+      "sources": [
+        {
+          "label": "قواعد التأشيرات العامة",
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa"
+        },
+        {
+          "label": "القواعد حسب الجنسية",
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa"
+        },
+        {
+          "label": "فئات الإقامة",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "بوابة الإقامة",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        }
+      ]
+    }
+  },
+  "turkey-visa-overstay": {
+    "fr": {
+      "title": "Dépassement de visa en Turquie 2026 : amendes et interdictions",
+      "metaDescription": "Visa expiré en Turquie ? Découvrez les barèmes officiels d’interdiction de 1 mois à 5 ans, les amendes et les démarches en cas de dépassement.",
+      "shortAnswer": "Un dépassement peut entraîner une amende, une mesure d’éloignement ou une interdiction d’entrée. La durée dépend du dépassement, du départ volontaire ou contraint et du règlement des sommes dues.",
+      "bosphorasHelp": "Bosphoras peut organiser votre séjour, votre recherche de logement et vos rendez-vous avec des spécialistes indépendants. Les décisions de séjour relèvent des autorités.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "Avant de partir : identifier votre situation",
+          "body": "Distinguez l’expiration du visa, du quota sans visa et du titre de séjour. Si le séjour est déjà irrégulier, ne supposez pas qu’une demande tardive rétablit automatiquement la légalité. Contactez la direction provinciale de la migration ou un avocat local, notamment en présence d’une décision administrative."
+        },
+        {
+          "id": "stay-2",
+          "title": "Barème publié : départ volontaire et paiement",
+          "body": "Lorsque la personne se présente spontanément à la frontière avant détection par les autorités et règle les droits dus, le barème prévoit les durées suivantes. Les cas exactement aux seuils doivent être confirmés par l’administration.",
+          "table": {
+            "headers": [
+              "Dépassement",
+              "Interdiction"
+            ],
+            "rows": [
+              [
+                "Moins de 3 mois",
+                "Aucune dans ce scénario"
+              ],
+              [
+                "3 à moins de 6 mois",
+                "1 mois"
+              ],
+              [
+                "6 mois à moins de 1 an",
+                "3 mois"
+              ],
+              [
+                "1 à moins de 2 ans",
+                "1 an"
+              ],
+              [
+                "2 à 3 ans",
+                "2 ans"
+              ],
+              [
+                "Plus de 3 ans",
+                "5 ans"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-3",
+          "title": "Barème lorsque le départ ne remplit pas ces conditions",
+          "body": "Le non-paiement des amendes, certaines décisions d’éloignement ou le non-respect d’un délai de départ peuvent déclencher le barème plus sévère.",
+          "table": {
+            "headers": [
+              "Dépassement",
+              "Interdiction"
+            ],
+            "rows": [
+              [
+                "Moins de 3 mois",
+                "3 mois"
+              ],
+              [
+                "3 à moins de 6 mois",
+                "6 mois"
+              ],
+              [
+                "6 mois à moins de 1 an",
+                "1 an"
+              ],
+              [
+                "1 à 2 ans",
+                "2 ans"
+              ],
+              [
+                "Plus de 2 ans",
+                "5 ans"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-4",
+          "title": "Montants, preuves et recours",
+          "body": "Il n’existe pas un montant universel d’amende par jour. Demandez le décompte officiel, payez par les canaux indiqués et conservez les reçus et la notification. Des dettes impayées peuvent empêcher un retour même après l’expiration de l’interdiction. Si une décision est contestable, son avis indique les recours ; sollicitez rapidement un avocat."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Un dépassement de dix jours signifie-t-il automatiquement une interdiction ?",
+          "answer": "Non, mais seules les conditions du cas concret déterminent la décision."
+        },
+        {
+          "question": "Puis-je revenir sans payer l’amende ?",
+          "answer": "Les créances impayées peuvent empêcher l’entrée."
+        },
+        {
+          "question": "Un e-Visa efface-t-il un dépassement ?",
+          "answer": "Non, une nouvelle autorisation ne supprime pas une sanction."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Barème officiel des interdictions d’entrée",
+          "href": "https://en.goc.gov.tr/statement-regarding-the-prohibition-of-entry-that-shall-be-applied-to-the-foreigners-who-violate-the-right-to-legal-stay"
+        },
+        {
+          "label": "Questions officielles sur le séjour",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners"
+        },
+        {
+          "label": "Règles générales des visas",
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa"
+        },
+        {
+          "label": "Portail e-ikamet",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey visa overstay 2026: fines, entry bans and legal options",
+      "metaDescription": "Overstayed your Turkish visa or residence permit? Understand official entry-ban schedules, payment, voluntary departure and what to do next.",
+      "shortAnswer": "Overstaying can lead to fines, removal or an entry ban. Consequences depend on the duration, circumstances of departure and settlement of outstanding charges.",
+      "bosphorasHelp": "Bosphoras helps coordinate your stay, housing search and appointments with independent specialists. Immigration decisions remain with the authorities.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "Identify your immigration situation",
+          "body": "Distinguish visa validity, visa-free allowance and residence permit expiry. If already overstaying, do not assume a late application automatically legalises your stay. Contact provincial migration management or a local lawyer, especially if a formal decision has been issued."
+        },
+        {
+          "id": "stay-2",
+          "title": "Official schedule: voluntary departure with payment",
+          "body": "The following schedule applies when a person comes to the border voluntarily before detection by authorities and pays the relevant charges. Confirm exact boundary cases with the authorities.",
+          "table": {
+            "headers": [
+              "Overstay",
+              "Entry ban"
+            ],
+            "rows": [
+              [
+                "Under 3 months",
+                "None in this scenario"
+              ],
+              [
+                "3 to under 6 months",
+                "1 month"
+              ],
+              [
+                "6 months to under 1 year",
+                "3 months"
+              ],
+              [
+                "1 to under 2 years",
+                "1 year"
+              ],
+              [
+                "2 to 3 years",
+                "2 years"
+              ],
+              [
+                "Over 3 years",
+                "5 years"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-3",
+          "title": "Stricter schedule for other departure circumstances",
+          "body": "Unpaid fines, certain removal decisions or failure to comply with a departure deadline can trigger the stricter schedule.",
+          "table": {
+            "headers": [
+              "Overstay",
+              "Entry ban"
+            ],
+            "rows": [
+              [
+                "Under 3 months",
+                "3 months"
+              ],
+              [
+                "3 to under 6 months",
+                "6 months"
+              ],
+              [
+                "6 months to under 1 year",
+                "1 year"
+              ],
+              [
+                "1 to 2 years",
+                "2 years"
+              ],
+              [
+                "Over 2 years",
+                "5 years"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-4",
+          "title": "Charges, receipts and appeals",
+          "body": "There is no universal daily fine. Obtain the official assessment, pay through authorised channels and keep receipts and notices. Unpaid public debts may prevent re-entry even after a ban expires. Formal decisions specify available appeal rights; seek timely independent legal advice if needed."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does a ten-day overstay automatically lead to a ban?",
+          "answer": "No; the actual outcome depends on the applicable circumstances."
+        },
+        {
+          "question": "Can I return without paying the fine?",
+          "answer": "Outstanding charges may prevent entry."
+        },
+        {
+          "question": "Does a new e-Visa erase an overstay?",
+          "answer": "No, it does not cancel immigration sanctions."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Official entry-ban rules",
+          "href": "https://en.goc.gov.tr/statement-regarding-the-prohibition-of-entry-that-shall-be-applied-to-the-foreigners-who-violate-the-right-to-legal-stay"
+        },
+        {
+          "label": "Official immigration FAQ",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners"
+        },
+        {
+          "label": "General visa rules",
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa"
+        },
+        {
+          "label": "e-ikamet portal",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Просрочка визы в Турции 2026: штрафы и запрет на въезд",
+      "metaDescription": "Что делать при просрочке визы или ВНЖ в Турции: официальные сроки запрета, добровольный выезд, оплата штрафов и обжалование.",
+      "shortAnswer": "Нарушение срока пребывания может повлечь штраф, выдворение или запрет на въезд. Последствия зависят от срока нарушения, обстоятельств выезда и оплаты начислений.",
+      "bosphorasHelp": "Bosphoras помогает организовать поездку, поиск жилья и встречи с независимыми специалистами. Решения о пребывании принимают компетентные органы.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "Определите свой статус",
+          "body": "Различайте срок визы, безвизовый лимит и срок ВНЖ. Если пребывание уже незаконно, поздняя подача не восстанавливает статус автоматически. Обратитесь в миграционное управление провинции или к местному адвокату, особенно при наличии официального решения."
+        },
+        {
+          "id": "stay-2",
+          "title": "Добровольный выезд с оплатой",
+          "body": "При добровольном обращении на границе до выявления нарушения органами и оплате начислений применяется следующая шкала. Точные пограничные случаи уточняются органами.",
+          "table": {
+            "headers": [
+              "Просрочка",
+              "Запрет"
+            ],
+            "rows": [
+              [
+                "Менее 3 месяцев",
+                "Нет при этих условиях"
+              ],
+              [
+                "От 3 до 6 месяцев",
+                "1 месяц"
+              ],
+              [
+                "От 6 месяцев до года",
+                "3 месяца"
+              ],
+              [
+                "От года до 2 лет",
+                "1 год"
+              ],
+              [
+                "От 2 до 3 лет",
+                "2 года"
+              ],
+              [
+                "Более 3 лет",
+                "5 лет"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-3",
+          "title": "Более строгая шкала",
+          "body": "Неуплата штрафа, отдельные решения о выдворении или несоблюдение срока добровольного выезда могут повлечь следующие ограничения.",
+          "table": {
+            "headers": [
+              "Просрочка",
+              "Запрет"
+            ],
+            "rows": [
+              [
+                "Менее 3 месяцев",
+                "3 месяца"
+              ],
+              [
+                "От 3 до 6 месяцев",
+                "6 месяцев"
+              ],
+              [
+                "От 6 месяцев до года",
+                "1 год"
+              ],
+              [
+                "От года до 2 лет",
+                "2 года"
+              ],
+              [
+                "Более 2 лет",
+                "5 лет"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-4",
+          "title": "Штрафы и обжалование",
+          "body": "Единого ежедневного тарифа нет. Запросите официальный расчёт, оплатите через разрешённые каналы и сохраните квитанции и уведомление. Неоплаченная задолженность может препятствовать въезду даже после окончания запрета. При получении решения изучите порядок обжалования и своевременно обратитесь к адвокату."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Всегда ли просрочка на 10 дней означает запрет?",
+          "answer": "Нет, решение зависит от применимых обстоятельств."
+        },
+        {
+          "question": "Можно ли вернуться без оплаты штрафа?",
+          "answer": "Неоплаченные начисления могут препятствовать въезду."
+        },
+        {
+          "question": "Аннулирует ли новая e-Visa нарушение?",
+          "answer": "Нет, она не отменяет санкции."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Официальные сроки запрета на въезд",
+          "href": "https://en.goc.gov.tr/statement-regarding-the-prohibition-of-entry-that-shall-be-applied-to-the-foreigners-who-violate-the-right-to-legal-stay"
+        },
+        {
+          "label": "Официальные вопросы и ответы",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners"
+        },
+        {
+          "label": "Общие визовые правила",
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa"
+        },
+        {
+          "label": "Портал e-ikamet",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تجاوز مدة التأشيرة في تركيا 2026: الغرامات والمنع من الدخول",
+      "metaDescription": "اعرف قواعد الغرامات والمنع من دخول تركيا بعد انتهاء التأشيرة أو الإقامة ومدد المنع والمغادرة الطوعية وطرق الاعتراض.",
+      "shortAnswer": "قد يؤدي تجاوز المدة إلى غرامة أو ترحيل أو منع من الدخول، بحسب مدة المخالفة وظروف المغادرة وتسديد المستحقات.",
+      "bosphorasHelp": "تساعد Bosphoras في تنظيم الإقامة والبحث عن السكن والمواعيد مع مختصين مستقلين، وتبقى قرارات الهجرة من اختصاص السلطات.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "تحديد وضعك القانوني",
+          "body": "ميز بين صلاحية التأشيرة ورصيد الإعفاء وانتهاء تصريح الإقامة. لا تفترض أن الطلب المتأخر يصحح الوضع تلقائياً. تواصل مع إدارة الهجرة في الولاية أو محام محلي، خصوصاً عند صدور قرار رسمي."
+        },
+        {
+          "id": "stay-2",
+          "title": "المغادرة الطوعية مع الدفع",
+          "body": "إذا توجه الشخص طوعاً إلى الحدود قبل اكتشاف المخالفة وسدد المستحقات، تطبق المدد التالية. تؤكد السلطات معاملة الحالات الواقعة عند الحدود الزمنية الدقيقة.",
+          "table": {
+            "headers": [
+              "مدة المخالفة",
+              "المنع"
+            ],
+            "rows": [
+              [
+                "أقل من 3 أشهر",
+                "لا منع في هذه الحالة"
+              ],
+              [
+                "3 إلى أقل من 6 أشهر",
+                "شهر"
+              ],
+              [
+                "6 أشهر إلى أقل من سنة",
+                "3 أشهر"
+              ],
+              [
+                "سنة إلى أقل من سنتين",
+                "سنة"
+              ],
+              [
+                "سنتان إلى 3 سنوات",
+                "سنتان"
+              ],
+              [
+                "أكثر من 3 سنوات",
+                "5 سنوات"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-3",
+          "title": "الجدول الأشد",
+          "body": "قد يؤدي عدم دفع الغرامات أو بعض قرارات الترحيل أو عدم احترام مهلة المغادرة إلى تطبيق الجدول الأشد.",
+          "table": {
+            "headers": [
+              "مدة المخالفة",
+              "المنع"
+            ],
+            "rows": [
+              [
+                "أقل من 3 أشهر",
+                "3 أشهر"
+              ],
+              [
+                "3 إلى أقل من 6 أشهر",
+                "6 أشهر"
+              ],
+              [
+                "6 أشهر إلى أقل من سنة",
+                "سنة"
+              ],
+              [
+                "سنة إلى سنتين",
+                "سنتان"
+              ],
+              [
+                "أكثر من سنتين",
+                "5 سنوات"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-4",
+          "title": "المستحقات والإيصالات والاعتراض",
+          "body": "لا توجد غرامة يومية موحدة للجميع. اطلب الحساب الرسمي وادفع عبر القنوات المعتمدة واحتفظ بالإيصالات والإخطار. قد تمنع الديون غير المسددة العودة حتى بعد انتهاء المنع. عند صدور قرار راجع طرق الاعتراض واستعن بمحام مستقل في الوقت المناسب."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يؤدي تجاوز عشرة أيام تلقائياً إلى المنع؟",
+          "answer": "لا، يعتمد القرار على الظروف والقواعد المنطبقة."
+        },
+        {
+          "question": "هل يمكن العودة دون دفع الغرامة؟",
+          "answer": "قد تمنع المستحقات غير المدفوعة الدخول."
+        },
+        {
+          "question": "هل تلغي تأشيرة إلكترونية جديدة المخالفة؟",
+          "answer": "لا، لا تلغي العقوبات."
+        }
+      ],
+      "sources": [
+        {
+          "label": "القواعد الرسمية لمنع الدخول",
+          "href": "https://en.goc.gov.tr/statement-regarding-the-prohibition-of-entry-that-shall-be-applied-to-the-foreigners-who-violate-the-right-to-legal-stay"
+        },
+        {
+          "label": "الأسئلة الرسمية عن الإقامة",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners"
+        },
+        {
+          "label": "قواعد التأشيرات العامة",
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa"
+        },
+        {
+          "label": "بوابة الإقامة",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        }
+      ]
+    }
+  },
+  "extend-stay-in-turkey": {
+    "fr": {
+      "title": "Prolonger son séjour en Turquie en 2026 : visa, ikamet et délais",
+      "metaDescription": "Rester plus de 90 jours en Turquie : options légales, première demande, renouvellement 60 jours avant expiration, documents et frais.",
+      "shortAnswer": "Pour prolonger légalement une présence au-delà d’un court séjour, il faut une autorisation adaptée à son motif. Un e-Visa ne constitue pas un prolongement automatique depuis la Turquie.",
+      "bosphorasHelp": "Bosphoras peut organiser votre séjour, votre recherche de logement et vos rendez-vous avec des spécialistes indépendants. Les décisions de séjour relèvent des autorités.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "Selon votre statut actuel",
+          "body": "Si vous êtes en visite, calculez d’abord le dernier jour autorisé. Si vous avez déjà un titre, vérifiez sa date et son motif. Une prolongation du séjour ne se confond pas avec une nouvelle demande de visa.",
+          "table": {
+            "headers": [
+              "Situation",
+              "Action"
+            ],
+            "rows": [
+              [
+                "Visa ou exemption encore valide",
+                "Demande de résidence admissible avant échéance"
+              ],
+              [
+                "Ikamet valide",
+                "Renouvellement pendant les 60 derniers jours"
+              ],
+              [
+                "Motif changé",
+                "Demande de changement de catégorie"
+              ],
+              [
+                "Séjour déjà expiré",
+                "Avis administratif ou juridique urgent"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-2",
+          "title": "Première demande et changement de catégorie",
+          "body": "Le portail e-ikamet permet de choisir le type de demande. Préparez passeport valide au moins 60 jours au-delà du titre demandé, quatre photos, preuves de logement et de motif, ressources et assurance selon votre catégorie. L’administration peut demander des pièces supplémentaires ; le délai indiqué pour les fournir est de 15 jours."
+        },
+        {
+          "id": "stay-3",
+          "title": "Renouveler avant l’échéance",
+          "body": "Pour une carte qui expire le 30 juin, la période de renouvellement de 60 jours s’ouvre le 1er mai ; déposez avant expiration. La preuve officielle de demande de renouvellement permet de demeurer pendant l’examen dans les conditions prévues. Un simple brouillon ne constitue pas une preuve de dépôt."
+        },
+        {
+          "id": "stay-4",
+          "title": "Coût et suivi",
+          "body": "La carte 2026 coûte 964 TL par demandeur, auxquels peuvent s’ajouter les droits de séjour. Le portail calcule les sommes applicables. Conservez les pièces, paiements et convocations. Si vous devez voyager pendant l’examen, confirmez les conditions de sortie et de retour et obtenez les justificatifs nécessaires avant le départ."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Puis-je prolonger mon e-Visa sur place ?",
+          "answer": "Pas automatiquement ; un titre admissible peut être nécessaire."
+        },
+        {
+          "question": "Puis-je attendre après expiration ?",
+          "answer": "Non, les demandes ordinaires doivent être déposées à temps."
+        },
+        {
+          "question": "Le rendez-vous suffit-il pour voyager ?",
+          "answer": "Non, vérifiez les documents officiels exigés pour le retour."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Règles générales des visas",
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa"
+        },
+        {
+          "label": "Catégories de résidence",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "Questions officielles sur le séjour",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners"
+        },
+        {
+          "label": "Portail e-ikamet",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        },
+        {
+          "label": "Tarifs 2026",
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount"
+        }
+      ]
+    },
+    "en": {
+      "title": "Extend your stay in Turkey 2026: residence, renewal and deadlines",
+      "metaDescription": "Stay longer than 90 days legally: first residence application, permit renewal in the final 60 days, evidence, fees and travel while pending.",
+      "shortAnswer": "A longer stay requires appropriate authorisation for the intended purpose. An e-Visa is not an automatic in-country extension.",
+      "bosphorasHelp": "Bosphoras helps coordinate your stay, housing search and appointments with independent specialists. Immigration decisions remain with the authorities.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "Start with your current status",
+          "body": "Visitors should calculate their final authorised day. Existing residents should check the card expiry and purpose. Extending residence is not the same as purchasing another visa.",
+          "table": {
+            "headers": [
+              "Current status",
+              "Action"
+            ],
+            "rows": [
+              [
+                "Valid visa or exemption",
+                "Eligible residence application before expiry"
+              ],
+              [
+                "Valid residence permit",
+                "Renew in final 60 days"
+              ],
+              [
+                "Change of purpose",
+                "Apply to change residence category"
+              ],
+              [
+                "Expired lawful stay",
+                "Urgent immigration or legal advice"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-2",
+          "title": "First application or change of category",
+          "body": "Choose the appropriate application on e-ikamet. Prepare a passport valid 60 days beyond the requested permit, four photographs, address and purpose evidence, funds and insurance as required. Missing or supplementary documents must be supplied within the notified 15-day period."
+        },
+        {
+          "id": "stay-3",
+          "title": "Renew before expiry",
+          "body": "If a card expires on 30 June, the 60-day renewal window opens on 1 May; file before expiry. Official proof of a filed renewal supports lawful stay pending a decision under applicable rules. A saved draft is not proof of filing."
+        },
+        {
+          "id": "stay-4",
+          "title": "Costs and follow-up",
+          "body": "The 2026 card fee is TRY 964 per applicant, plus any applicable residence duties calculated through the portal. Keep notices, payment receipts and evidence. If travel is necessary during processing, confirm exit and re-entry requirements and obtain the required documents before departing."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I extend my e-Visa from inside Turkey?",
+          "answer": "Not automatically; eligible residence status may be required."
+        },
+        {
+          "question": "Can I wait until after expiry?",
+          "answer": "Ordinary applications must be made on time."
+        },
+        {
+          "question": "Is an appointment sufficient for travel?",
+          "answer": "No, confirm the official documents necessary for re-entry."
+        }
+      ],
+      "sources": [
+        {
+          "label": "General visa rules",
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa"
+        },
+        {
+          "label": "Residence categories",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "Official immigration FAQ",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners"
+        },
+        {
+          "label": "e-ikamet portal",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        },
+        {
+          "label": "2026 fees",
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Как продлить пребывание в Турции в 2026 году: виза и икамет",
+      "metaDescription": "Как остаться законно дольше 90 дней: первый ВНЖ, продление за 60 дней, документы, сборы и выезд во время рассмотрения.",
+      "shortAnswer": "Для более длительного пребывания нужно разрешение, соответствующее цели. Электронная виза не продлевается автоматически внутри Турции.",
+      "bosphorasHelp": "Bosphoras помогает организовать поездку, поиск жилья и встречи с независимыми специалистами. Решения о пребывании принимают компетентные органы.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "Учитывайте текущий статус",
+          "body": "Посетителю нужно определить последний законный день. Владельцу ВНЖ — срок карточки и основание. Продление проживания отличается от покупки новой визы.",
+          "table": {
+            "headers": [
+              "Статус",
+              "Действие"
+            ],
+            "rows": [
+              [
+                "Действующая виза или безвизовый срок",
+                "Заявление на подходящий ВНЖ до окончания"
+              ],
+              [
+                "Действующий ВНЖ",
+                "Продление в последние 60 дней"
+              ],
+              [
+                "Изменение цели",
+                "Смена категории ВНЖ"
+              ],
+              [
+                "Просрочка",
+                "Срочная консультация миграционной службы или юриста"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-2",
+          "title": "Первичная подача или смена основания",
+          "body": "Выберите вид заявления на e-ikamet. Подготовьте паспорт, действующий на 60 дней дольше запрашиваемого ВНЖ, четыре фотографии, подтверждение адреса, основания, средств и страховки согласно требованиям. Недостающие документы предоставляются в течение указанных в уведомлении 15 дней."
+        },
+        {
+          "id": "stay-3",
+          "title": "Продление до окончания срока",
+          "body": "Если карточка заканчивается 30 июня, 60-дневное окно открывается 1 мая. Подайте до истечения срока. Официальный документ о поданном продлении подтверждает право пребывания во время рассмотрения согласно применимым правилам. Черновик заявления таким документом не является."
+        },
+        {
+          "id": "stay-4",
+          "title": "Расходы и контроль",
+          "body": "В 2026 году карточка стоит 964 лиры на человека плюс применимые сборы, рассчитанные порталом. Сохраняйте уведомления, оплату и документы. Если предстоит поездка во время рассмотрения, уточните требования выезда и возвращения и получите необходимые подтверждения до отъезда."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли продлить e-Visa в Турции?",
+          "answer": "Не автоматически; может потребоваться подходящий ВНЖ."
+        },
+        {
+          "question": "Можно ли подавать после окончания?",
+          "answer": "Обычная подача должна быть своевременной."
+        },
+        {
+          "question": "Достаточно ли записи на приём для выезда?",
+          "answer": "Нет, уточните официальные документы для возвращения."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Общие визовые правила",
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa"
+        },
+        {
+          "label": "Категории ВНЖ",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "Официальные вопросы и ответы",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners"
+        },
+        {
+          "label": "Портал e-ikamet",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        },
+        {
+          "label": "Сборы 2026 года",
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تمديد البقاء في تركيا 2026: التأشيرة والإقامة ومواعيد التجديد",
+      "metaDescription": "كيف تبقى في تركيا أكثر من 90 يوماً قانونياً: الطلب الأول وتجديد الإيكامت في آخر 60 يوماً والوثائق والرسوم والسفر أثناء الدراسة.",
+      "shortAnswer": "يتطلب البقاء الأطول إذناً يناسب الغرض، ولا تمدد التأشيرة الإلكترونية تلقائياً من داخل تركيا.",
+      "bosphorasHelp": "تساعد Bosphoras في تنظيم الإقامة والبحث عن السكن والمواعيد مع مختصين مستقلين، وتبقى قرارات الهجرة من اختصاص السلطات.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "تحديد الوضع الحالي",
+          "body": "احسب آخر يوم مسموح إذا كنت زائراً. إذا كنت مقيماً فراجع صلاحية البطاقة وأساسها. يختلف تمديد الإقامة عن شراء تأشيرة جديدة.",
+          "table": {
+            "headers": [
+              "الوضع",
+              "الإجراء"
+            ],
+            "rows": [
+              [
+                "تأشيرة أو إعفاء ساري",
+                "طلب إقامة مؤهلة قبل انتهاء المدة"
+              ],
+              [
+                "تصريح إقامة سار",
+                "التجديد في آخر 60 يوماً"
+              ],
+              [
+                "تغير الغرض",
+                "طلب تغيير فئة الإقامة"
+              ],
+              [
+                "انتهاء البقاء القانوني",
+                "استشارة عاجلة للهجرة أو محام"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-2",
+          "title": "الطلب الأول أو تغيير الفئة",
+          "body": "اختر الطلب المناسب عبر بوابة الإقامة. جهز جوازاً صالحاً لمدة 60 يوماً إضافية بعد مدة الإقامة المطلوبة وأربع صور وإثبات العنوان والغرض والموارد والتأمين حسب الشروط. تقدم الوثائق الناقصة خلال المهلة المحددة البالغة 15 يوماً."
+        },
+        {
+          "id": "stay-3",
+          "title": "التجديد قبل الانتهاء",
+          "body": "إذا انتهت البطاقة في 30 يونيو تبدأ نافذة الستين يوماً في 1 مايو. قدم قبل الانتهاء. تثبت وثيقة طلب التجديد الرسمية الحق في البقاء أثناء الدراسة وفق القواعد. لا تشكل مسودة الطلب إثباتاً للتقديم."
+        },
+        {
+          "id": "stay-4",
+          "title": "الرسوم والمتابعة",
+          "body": "رسم البطاقة في 2026 هو 964 ليرة لكل مقدم طلب إضافة إلى الحقوق التي تحسبها البوابة. احتفظ بالإخطارات والإيصالات والوثائق. عند الحاجة للسفر أثناء الدراسة تحقق من شروط الخروج والعودة واحصل على الإثباتات المطلوبة قبل المغادرة."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل تمدد التأشيرة الإلكترونية داخل تركيا؟",
+          "answer": "ليس تلقائياً؛ قد يلزم تصريح إقامة مؤهل."
+        },
+        {
+          "question": "هل أنتظر إلى ما بعد انتهاء المدة؟",
+          "answer": "يجب تقديم الطلب العادي في الموعد."
+        },
+        {
+          "question": "هل يكفي حجز الموعد للسفر؟",
+          "answer": "لا، تحقق من الوثائق الرسمية اللازمة للعودة."
+        }
+      ],
+      "sources": [
+        {
+          "label": "قواعد التأشيرات العامة",
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa"
+        },
+        {
+          "label": "فئات الإقامة",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "الأسئلة الرسمية عن الإقامة",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners"
+        },
+        {
+          "label": "بوابة الإقامة",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        },
+        {
+          "label": "رسوم 2026",
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount"
+        }
+      ]
+    }
+  },
+  "turkey-ikamet-main": {
+    "fr": {
+      "title": "Ikamet Turquie 2026 : types de résidence, dossier et prix",
+      "metaDescription": "Guide de l’ikamet en Turquie : six catégories de résidence, carte à 964 TL, pièces, délais, rendez-vous et renouvellement.",
+      "shortAnswer": "L’ikamet est le titre de séjour délivré aux étrangers répondant aux conditions d’une catégorie légale. Il ne constitue pas systématiquement une autorisation de travail.",
+      "bosphorasHelp": "Bosphoras peut organiser votre séjour, votre recherche de logement et vos rendez-vous avec des spécialistes indépendants. Les décisions de séjour relèvent des autorités.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "Les six catégories de titre de séjour",
+          "body": "Le motif détermine les pièces et la durée, et non le simple souhait de rester.",
+          "table": {
+            "headers": [
+              "Type",
+              "Durée indicative ou règle"
+            ],
+            "rows": [
+              [
+                "Courte durée",
+                "Jusqu’à 2 ans, exceptions"
+              ],
+              [
+                "Familiale",
+                "Jusqu’à 3 ans, limitée par le répondant"
+              ],
+              [
+                "Étudiante",
+                "Selon cursus"
+              ],
+              [
+                "Longue durée",
+                "Indéterminée, conditions strictes"
+              ],
+              [
+                "Humanitaire",
+                "Selon décision"
+              ],
+              [
+                "Victimes de traite",
+                "30 jours initialement, renouvelable selon conditions"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-2",
+          "title": "Dossier et rendez-vous",
+          "body": "Sur e-ikamet, choisissez première demande, renouvellement ou changement de catégorie. Renseignez votre adresse réelle et préparez passeport, quatre photos biométriques, justificatifs d’hébergement, ressources et assurance selon le cas. Vérifiez que votre adresse peut être enregistrée ; le rendez-vous officiel est gratuit. Chaque membre de famille a son propre dossier."
+        },
+        {
+          "id": "stay-3",
+          "title": "Tarifs et pièces manquantes",
+          "body": "La carte coûte 964 TL en 2026, indépendamment des droits de séjour. Certaines nationalités bénéficient d’exemptions de droits mais pas du coût de la carte. Le montant total figure sur la demande officielle. Si des documents complémentaires sont demandés, respectez le délai de 15 jours notifié. Le délai de décision ordinaire court à compter du dossier complet."
+        },
+        {
+          "id": "stay-4",
+          "title": "Après la décision et le renouvellement",
+          "body": "La carte est envoyée par la poste PTT à l’adresse indiquée. Vérifiez votre nom, catégorie et validité. Préparez le renouvellement au cours des 60 derniers jours, avant expiration. Un refus ou une annulation fait l’objet d’une notification précisant les droits et obligations ; faites examiner votre situation sans attendre."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Un ikamet permet-il de travailler ?",
+          "answer": "Pas automatiquement, un permis de travail ou une exemption applicable est nécessaire."
+        },
+        {
+          "question": "Le rendez-vous est-il payant ?",
+          "answer": "Non."
+        },
+        {
+          "question": "La carte coûte-t-elle toujours 964 TL en 2026 ?",
+          "answer": "Oui pour le document, indépendamment des autres droits."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Catégories de résidence",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "Questions officielles sur le séjour",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners"
+        },
+        {
+          "label": "Portail e-ikamet",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        },
+        {
+          "label": "Tarifs 2026",
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey ikamet 2026: residence permit types, documents and fees",
+      "metaDescription": "The complete Turkey ikamet guide: six residence categories, TRY 964 card fee, documents, application appointments and renewals.",
+      "shortAnswer": "An ikamet is a residence permit issued to foreigners meeting the requirements of a legal category. It does not automatically authorise employment.",
+      "bosphorasHelp": "Bosphoras helps coordinate your stay, housing search and appointments with independent specialists. Immigration decisions remain with the authorities.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "Six residence permit categories",
+          "body": "The purpose determines the required evidence and duration; a desire to remain is not enough.",
+          "table": {
+            "headers": [
+              "Type",
+              "Typical duration or rule"
+            ],
+            "rows": [
+              [
+                "Short-term",
+                "Up to 2 years, exceptions apply"
+              ],
+              [
+                "Family",
+                "Up to 3 years, limited by sponsor"
+              ],
+              [
+                "Student",
+                "According to programme"
+              ],
+              [
+                "Long-term",
+                "Indefinite, strict conditions"
+              ],
+              [
+                "Humanitarian",
+                "According to decision"
+              ],
+              [
+                "Trafficking victims",
+                "Initially 30 days, renewable subject to conditions"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-2",
+          "title": "Documents and appointment",
+          "body": "Select first application, renewal or category transfer on e-ikamet. Provide your actual address, passport, four biometric photos, housing, means and insurance evidence as applicable. Confirm address registration eligibility; official appointments are free. Each family member needs an individual application."
+        },
+        {
+          "id": "stay-3",
+          "title": "Charges and supplementary documents",
+          "body": "The 2026 card charge is TRY 964, separate from residence duties. Some nationalities are exempt from residence duties, not card fees. The official form displays the applicable total. Submit additional evidence within the notified 15-day period. Ordinary decision timelines run from complete submission."
+        },
+        {
+          "id": "stay-4",
+          "title": "After the decision and renewal",
+          "body": "The card is delivered through PTT to the stated address. Check spelling, category and expiry. Renew within the final 60 days before expiry. A refusal or cancellation is communicated through a notice explaining rights and obligations; obtain prompt independent advice if required."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does an ikamet permit work?",
+          "answer": "Not automatically; a work permit or applicable exemption is required."
+        },
+        {
+          "question": "Is the official appointment paid?",
+          "answer": "No."
+        },
+        {
+          "question": "Is the 2026 card fee always TRY 964?",
+          "answer": "Yes for the document itself, excluding other charges."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Residence categories",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "Official immigration FAQ",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners"
+        },
+        {
+          "label": "e-ikamet portal",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        },
+        {
+          "label": "2026 fees",
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Икамет в Турции 2026: виды ВНЖ, документы и стоимость",
+      "metaDescription": "Шесть категорий ВНЖ в Турции, карточка за 964 лиры, документы, запись на приём, подача и продление.",
+      "shortAnswer": "Икамет — вид на жительство, выдаваемый иностранцам при соблюдении требований законной категории. Он не всегда даёт право на работу.",
+      "bosphorasHelp": "Bosphoras помогает организовать поездку, поиск жилья и встречи с независимыми специалистами. Решения о пребывании принимают компетентные органы.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "Шесть категорий ВНЖ",
+          "body": "Цель определяет документы и срок разрешения, а одного желания остаться недостаточно.",
+          "table": {
+            "headers": [
+              "Категория",
+              "Срок или правило"
+            ],
+            "rows": [
+              [
+                "Краткосрочный",
+                "До 2 лет, есть исключения"
+              ],
+              [
+                "Семейный",
+                "До 3 лет, ограничен статусом спонсора"
+              ],
+              [
+                "Студенческий",
+                "По программе обучения"
+              ],
+              [
+                "Долгосрочный",
+                "Бессрочный при выполнении условий"
+              ],
+              [
+                "Гуманитарный",
+                "По решению"
+              ],
+              [
+                "Для жертв торговли людьми",
+                "Первоначально 30 дней, продление по условиям"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-2",
+          "title": "Документы и приём",
+          "body": "На e-ikamet выберите первичную подачу, продление или смену категории. Укажите фактический адрес, приготовьте загранпаспорт, четыре биометрические фотографии, документы о жилье, средствах и страховке по ситуации. Проверьте возможность регистрации адреса. Официальная запись бесплатна. У каждого члена семьи своё заявление."
+        },
+        {
+          "id": "stay-3",
+          "title": "Сборы и дополнительные документы",
+          "body": "Карточка в 2026 году стоит 964 лиры отдельно от сбора за проживание. Некоторые гражданства освобождаются от сбора за проживание, но не за карточку. Сумма отображается в официальной анкете. Дополнительные документы представьте в указанный 15-дневный срок; рассмотрение начинается после получения полного комплекта."
+        },
+        {
+          "id": "stay-4",
+          "title": "Получение и продление",
+          "body": "Карточка доставляется почтой PTT на указанный адрес. Проверьте имя, категорию и срок. Подайте на продление в последние 60 дней до окончания. Об отказе или отмене уведомляют с разъяснением прав и обязанностей; при необходимости своевременно обратитесь к независимому специалисту."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли работать с икаметом?",
+          "answer": "Не автоматически; нужно разрешение или применимое освобождение."
+        },
+        {
+          "question": "Платная ли официальная запись?",
+          "answer": "Нет."
+        },
+        {
+          "question": "Карточка всегда стоит 964 лиры в 2026 году?",
+          "answer": "Да, без других сборов."
+        }
+      ],
+      "sources": [
+        {
+          "label": "Категории ВНЖ",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "Официальные вопросы и ответы",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners"
+        },
+        {
+          "label": "Портал e-ikamet",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        },
+        {
+          "label": "Сборы 2026 года",
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount"
+        }
+      ]
+    },
+    "ar": {
+      "title": "إيكامت تركيا 2026: أنواع الإقامة والوثائق والرسوم",
+      "metaDescription": "دليل الإقامة التركية: الفئات الست وبطاقة الإقامة بـ964 ليرة والوثائق والمواعيد والتجديد.",
+      "shortAnswer": "الإيكامت تصريح إقامة يمنح للأجنبي عند استيفاء شروط فئة قانونية، ولا يمنح تلقائياً حق العمل.",
+      "bosphorasHelp": "تساعد Bosphoras في تنظيم الإقامة والبحث عن السكن والمواعيد مع مختصين مستقلين، وتبقى قرارات الهجرة من اختصاص السلطات.",
+      "sections": [
+        {
+          "id": "stay-1",
+          "title": "فئات الإقامة الست",
+          "body": "يحدد الغرض الوثائق والمدة؛ لا يكفي مجرد الرغبة في البقاء.",
+          "table": {
+            "headers": [
+              "الفئة",
+              "المدة أو القاعدة"
+            ],
+            "rows": [
+              [
+                "قصيرة الأجل",
+                "حتى سنتين مع استثناءات"
+              ],
+              [
+                "العائلية",
+                "حتى ثلاث سنوات ضمن صلاحية الكفيل"
+              ],
+              [
+                "الطلابية",
+                "حسب الدراسة"
+              ],
+              [
+                "طويلة الأجل",
+                "غير محددة المدة بشروط"
+              ],
+              [
+                "الإنسانية",
+                "وفق القرار"
+              ],
+              [
+                "ضحايا الاتجار بالبشر",
+                "30 يوماً أولاً قابلة للتجديد بشروط"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "stay-2",
+          "title": "الوثائق والموعد",
+          "body": "اختر الطلب الأول أو التجديد أو تغيير الفئة عبر البوابة الرسمية. قدم عنوانك الفعلي وجواز السفر وأربع صور بيومترية وإثبات السكن والموارد والتأمين حسب الحال. تحقق من إمكانية تسجيل العنوان. الموعد الرسمي مجاني ولكل فرد من الأسرة طلب مستقل."
+        },
+        {
+          "id": "stay-3",
+          "title": "الرسوم والوثائق الناقصة",
+          "body": "تبلغ رسوم البطاقة في 2026 مبلغ 964 ليرة منفصلة عن رسوم الإقامة. تعفى بعض الجنسيات من رسوم الإقامة لا من البطاقة. تظهر المبالغ في الطلب الرسمي. قدم الوثائق الإضافية خلال مهلة 15 يوماً المبلغة. يبدأ احتساب مهلة القرار بعد اكتمال الملف."
+        },
+        {
+          "id": "stay-4",
+          "title": "استلام البطاقة والتجديد",
+          "body": "ترسل البطاقة عبر بريد PTT إلى العنوان المحدد. تحقق من الاسم والفئة والصلاحية. قدم التجديد في آخر 60 يوماً قبل الانتهاء. يبلغ الرفض أو الإلغاء بإخطار يوضح الحقوق والواجبات؛ استعن بمختص مستقل عند الحاجة."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يتيح الإيكامت العمل؟",
+          "answer": "ليس تلقائياً؛ يلزم تصريح عمل أو إعفاء."
+        },
+        {
+          "question": "هل الموعد الرسمي مدفوع؟",
+          "answer": "لا."
+        },
+        {
+          "question": "هل رسم البطاقة 964 ليرة في 2026؟",
+          "answer": "نعم للبطاقة وحدها دون الرسوم الأخرى."
+        }
+      ],
+      "sources": [
+        {
+          "label": "فئات الإقامة",
+          "href": "https://en.goc.gov.tr/residence-permit-types"
+        },
+        {
+          "label": "الأسئلة الرسمية عن الإقامة",
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners"
+        },
+        {
+          "label": "بوابة الإقامة",
+          "href": "https://e-ikamet.goc.gov.tr/"
+        },
+        {
+          "label": "رسوم 2026",
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount"
+        }
+      ]
+    }
+  }
+};
+
+export const longTermResidenceSupplement = {
+  "fr": {
+    "title": "Calculer vos huit années et maintenir le titre",
+    "body": "Les périodes étudiantes comptent pour moitié, les autres périodes de résidence admissibles intégralement. Exemple : quatre ans d’études et six ans de résidence admissible donnent huit années comptabilisées, sous réserve de continuité et des autres conditions. Le titre est délivré sans échéance, mais une absence continue supérieure à un an peut entraîner l’annulation, sauf exceptions prévues pour la santé, les études ou le service public obligatoire dans le pays d’origine. En cas de réadmission au dispositif après une telle annulation, les huit années ne sont pas exigées à nouveau.",
+    "table": {
+      "headers": [
+        "Historique admissible",
+        "Années comptabilisées"
+      ],
+      "rows": [
+        [
+          "4 ans études + 6 ans autre titre",
+          "8"
+        ],
+        [
+          "2 ans études + 5 ans autre titre",
+          "6"
+        ],
+        [
+          "8 ans de titres non étudiants admissibles",
+          "8"
+        ]
+      ]
+    }
+  },
+  "en": {
+    "title": "Calculate eight eligible years and retain your status",
+    "body": "Student residence counts at half its duration; other qualifying permits count in full. Four student years plus six other eligible years count as eight, subject to continuity and all remaining conditions. Long-term residence is indefinite, but a continuous absence of more than one year can lead to cancellation except for specified health, education or compulsory public-service reasons in the home country. A reapplication after such cancellation does not require eight qualifying years again.",
+    "table": {
+      "headers": [
+        "Eligible history",
+        "Years counted"
+      ],
+      "rows": [
+        [
+          "4 years student + 6 other",
+          "8"
+        ],
+        [
+          "2 years student + 5 other",
+          "6"
+        ],
+        [
+          "8 eligible non-student years",
+          "8"
+        ]
+      ]
+    }
+  },
+  "ru": {
+    "title": "Расчёт восьми лет и сохранение статуса",
+    "body": "Студенческий ВНЖ засчитывается наполовину, другие подходящие периоды — полностью. Четыре года учёбы и шесть лет другого допустимого проживания дают восемь зачётных лет при соблюдении непрерывности и прочих требований. Долгосрочный ВНЖ бессрочен, но непрерывное отсутствие свыше года может привести к отмене, кроме предусмотренных исключений по здоровью, обучению или обязательной государственной службе в стране гражданства. При повторной подаче после такой отмены восемь лет заново не требуются.",
+    "table": {
+      "headers": [
+        "Подходящие периоды",
+        "Зачётные годы"
+      ],
+      "rows": [
+        [
+          "4 года учёбы + 6 иных",
+          "8"
+        ],
+        [
+          "2 года учёбы + 5 иных",
+          "6"
+        ],
+        [
+          "8 лет подходящего неучебного ВНЖ",
+          "8"
+        ]
+      ]
+    }
+  },
+  "ar": {
+    "title": "حساب السنوات الثماني والحفاظ على الإقامة",
+    "body": "تحتسب مدة إقامة الطالب بنصفها وتحتسب الإقامات الأخرى المؤهلة كاملة. أربع سنوات دراسة وست سنوات إقامة أخرى مؤهلة تعطي ثماني سنوات محتسبة مع استيفاء الاستمرارية وبقية الشروط. الإقامة طويلة الأجل غير محددة المدة، لكن الغياب المتواصل لأكثر من سنة قد يؤدي إلى الإلغاء باستثناء الأسباب المقررة للصحة أو الدراسة أو الخدمة العامة الإلزامية في بلد الأصل. عند إعادة الطلب بعد ذلك الإلغاء لا يشترط تكرار السنوات الثماني.",
+    "table": {
+      "headers": [
+        "السجل المؤهل",
+        "السنوات المحتسبة"
+      ],
+      "rows": [
+        [
+          "4 سنوات دراسة + 6 أخرى",
+          "8"
+        ],
+        [
+          "سنتا دراسة + 5 أخرى",
+          "6"
+        ],
+        [
+          "8 سنوات إقامة مؤهلة غير طلابية",
+          "8"
+        ]
       ]
     }
   }

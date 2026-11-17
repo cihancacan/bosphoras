@@ -2,7 +2,7 @@ import type { Locale } from '@/lib/i18n';
 import { visaEditorialGuides as earlierVisaEditorialGuides } from './visaEditorialGuides';
 import { citizenshipEditorialGuides } from './citizenshipEditorialGuides';
 import { countryVisaEditorialGuides } from './countryVisaEditorialGuides';
-import { visaTypeEditorialGuides } from './visaTypeEditorialGuides';
+import { visaTypeEditorialGuides, longTermResidenceSupplement } from './visaTypeEditorialGuides';
 import { bosphorasVisaTypeSeoPages } from './bosphorasVisaTypeSeoPages';
 import { bosphorasCountryVisaSeoPages } from './bosphorasCountryVisaSeoPages';
 import { bosphorasVisaResidenceSeoPages } from './bosphorasVisaResidenceSeoPages';
@@ -194,6 +194,7 @@ for (const page of editorialVisaPages) {
     highPotentialGuides.push({
       id: page.key, locale, slug: visaSlug(page.slugs[locale]),
       ...copy, h1: copy.title, subtitle: copy.metaDescription,
+      ...(page.key === 'turkey-long-term-residence' ? { sections: [...(copy.sections ?? []), { id: 'long-term-calculation-and-absence-2026', ...longTermResidenceSupplement[locale] }] } : {}),
       theme: 'relocation', cityFocus: '', serviceFocus: copy.title,
       updatedAt: editorialGuideUpdatedAt, publishedAt: '2026-06-05', legalCaution: cautions[locale].relocation,
       internalLinks: [
