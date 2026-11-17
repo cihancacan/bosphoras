@@ -1405,6 +1405,1924 @@ export const taxReformEditorialGuides: Record<string, Record<Locale, EditorialGu
         }
       ]
     }
+  },
+  "leave-france-turkey-tax": {
+    "fr": {
+      "title": "Quitter la France pour la Turquie en 2026 : démarches fiscales et exit tax",
+      "metaDescription": "Déménager en Turquie : domicile fiscal, déclaration 2042-NR, exit tax dès 800 000 €, revenus français et calendrier des démarches.",
+      "shortAnswer": "Le déménagement ne suffit pas à transférer le domicile fiscal. Il faut examiner le foyer, l’activité et les intérêts économiques, puis appliquer la convention France–Turquie si les deux pays vous considèrent résident.",
+      "bosphorasHelp": "Bosphoras coordonne votre installation en Turquie, la recherche de logement et les rendez-vous avec des fiscalistes franco-turcs indépendants. Demandez une étude de votre projet avant le transfert de résidence.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "Avant le déménagement : établir les faits",
+          "body": "L’article 4 B du CGI retient des critères alternatifs : foyer ou séjour principal, activité professionnelle principale et centre des intérêts économiques. Garder son conjoint et ses enfants en France peut maintenir le domicile français malgré de longues périodes en Turquie. Préparez un dossier de logement, scolarité, déplacements, activité et décisions patrimoniales. Une carte de résidence turque n’est pas une décision fiscale."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "Année du départ et déclaration suivante",
+          "body": "Signalez votre nouvelle adresse et la date de départ à votre service fiscal. Si le transfert est effectif en 2026, déclarez en 2027 les revenus mondiaux de la période française, puis les seuls revenus français restant imposables après départ. Les formulaires varient selon les revenus.",
+          "table": {
+            "headers": [
+              "Moment",
+              "Démarche"
+            ],
+            "rows": [
+              [
+                "Avant départ",
+                "Inventaire des revenus, titres et plus-values en report"
+              ],
+              [
+                "Départ en 2026",
+                "Nouvelle adresse et date"
+              ],
+              [
+                "Campagne 2027",
+                "2042 et 2047 si nécessaire, puis 2042-NR si revenus français imposables"
+              ],
+              [
+                "Années suivantes",
+                "Déclarations françaises requises et obligations turques"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "Exit tax : préparer les participations",
+          "body": "Une résidence française d’au moins six ans sur les dix précédents et des titres valant au moins 800 000 € ou représentant au moins 50 % des bénéfices d’une société peuvent déclencher l’exit tax. Les créances de complément de prix et plus-values en report exigent aussi un examen. Si un sursis sur demande est requis, la démarche doit être anticipée de 90 jours. Ne vendez ni ne réorganisez les titres sans analyser les conséquences."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "Après départ : revenus et certificat turc",
+          "body": "Les loyers français, certaines plus-values et dividendes peuvent rester taxables en France. La résidence turque ouvre potentiellement l’article 20/D si les trois années civiles précédentes et le certificat répondent aux conditions. Un transfert en novembre ou décembre 2026 impose en principe une demande avant fin février 2027. Informez aussi vos banques et organismes sociaux de la situation réelle."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "183 jours hors de France suffisent-ils ?",
+          "answer": "Non, les autres critères et la convention restent déterminants."
+        },
+        {
+          "question": "Dois-je fermer mon compte français ?",
+          "answer": "Pas automatiquement ; informez la banque de votre statut et vérifiez les produits accessibles."
+        },
+        {
+          "question": "Puis-je conserver un logement loué en France ?",
+          "answer": "Oui, mais ses revenus restent soumis aux règles françaises."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "Domicile fiscal français"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/questions/je-pars-vivre-letranger-quelles-demarches-dois-je-accomplir-dois-je-cloturer",
+          "label": "Démarches lors du départ"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/questions/je-quitte-la-france-suis-je-concerne-par-lexit-tax",
+          "label": "Exit tax française"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "Convention fiscale France–Turquie"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Communiqué turc 333"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/je-suis-non-resident-je-percois-des-revenus-immobiliers-sagit-i",
+          "label": "Revenus immobiliers français"
+        }
+      ]
+    },
+    "en": {
+      "title": "Leaving France for Turkey in 2026: tax steps and exit tax",
+      "metaDescription": "Moving from France to Turkey? Tax residence, forms 2042-NR and 2047, €800,000 exit-tax threshold, French-source income and deadlines.",
+      "shortAnswer": "Moving abroad alone does not change tax domicile. Assess home, employment and economic ties, then use the France–Turkey treaty in cases of dual residence.",
+      "bosphorasHelp": "Bosphoras coordinates your relocation, housing search and appointments with independent France–Turkey tax specialists. Request an assessment before transferring tax residence.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "Before departure: establish the facts",
+          "body": "French domestic law uses alternative criteria: home or principal stay, main professional activity and economic interests. A spouse and children remaining in France can maintain French domicile notwithstanding lengthy Turkish stays. Document housing, schooling, travel, work and asset arrangements. An immigration card is not a tax ruling."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "Departure year and next year's return",
+          "body": "Notify the French tax office of your new address and departure date. For a genuine 2026 transfer, file in 2027 for worldwide income during French residence and taxable French-source income thereafter.",
+          "table": {
+            "headers": [
+              "When",
+              "Action"
+            ],
+            "rows": [
+              [
+                "Before moving",
+                "Inventory income, securities and deferred gains"
+              ],
+              [
+                "2026 departure",
+                "Report address and date"
+              ],
+              [
+                "2027 filing",
+                "2042 and 2047 as required; 2042-NR for taxable post-departure French income"
+              ],
+              [
+                "Later years",
+                "Required French returns and Turkish obligations"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "Exit tax and shareholdings",
+          "body": "French residence in at least six of the prior ten years combined with securities worth at least €800,000 or rights to at least 50% of a company's profits can trigger exit tax. Earn-out receivables and deferred gains also require review. If deferral by application is necessary, the filing must precede transfer by 90 days. Review consequences before disposing of or reorganising holdings."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "Remaining income and Turkish certificate",
+          "body": "French rentals, certain capital gains and dividends may remain taxable in France. Article 20/D may apply after Turkish settlement if prior-year conditions and certification requirements are met. For November or December 2026 settlement, the standard certificate deadline is the end of February 2027. Update banks and social-security bodies with your actual status."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Are 183 days abroad enough?",
+          "answer": "No; other criteria and the treaty still matter."
+        },
+        {
+          "question": "Must I close French bank accounts?",
+          "answer": "Not automatically; inform your bank and verify product restrictions."
+        },
+        {
+          "question": "Can I keep French rental property?",
+          "answer": "Yes, but its income remains subject to French rules."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "French tax residence"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/questions/je-pars-vivre-letranger-quelles-demarches-dois-je-accomplir-dois-je-cloturer",
+          "label": "Leaving France: formalities"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/questions/je-quitte-la-france-suis-je-concerne-par-lexit-tax",
+          "label": "French exit tax"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "France–Turkey tax treaty"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Turkish Communiqué 333"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/je-suis-non-resident-je-percois-des-revenus-immobiliers-sagit-i",
+          "label": "French property income"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Переезд из Франции в Турцию 2026: налоги, декларации и exit tax",
+      "metaDescription": "Как сменить налоговое резидентство: декларации 2042-NR, порог exit tax 800 000 евро, доходы во Франции и сроки.",
+      "shortAnswer": "Сам переезд не меняет налоговое резидентство. Нужно оценить семейное жильё, деятельность и экономические связи, а при двойном резидентстве применить соглашение Франции и Турции.",
+      "bosphorasHelp": "Bosphoras организует переезд, подбор жилья и встречи с независимыми специалистами по налогам Франции и Турции. Запросите оценку проекта до смены резидентства.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "До переезда",
+          "body": "Французское право учитывает альтернативные критерии: семейное жильё или основное пребывание, главную профессиональную деятельность и центр экономических интересов. Оставшиеся во Франции супруг и дети могут сохранять французский налоговый статус даже при долгом проживании в Турции. Соберите документы о жилье, школе, поездках, работе и активах. Икамет не является налоговым решением."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "Декларация за год переезда",
+          "body": "Сообщите налоговой службе новый адрес и дату выезда. При действительном переносе резидентства в 2026 году в 2027 году декларируются мировые доходы французского периода и облагаемые французские доходы после выезда.",
+          "table": {
+            "headers": [
+              "Период",
+              "Действие"
+            ],
+            "rows": [
+              [
+                "До выезда",
+                "Перечень доходов, долей и отложенных прибылей"
+              ],
+              [
+                "Выезд в 2026",
+                "Адрес и дата"
+              ],
+              [
+                "Декларация 2027",
+                "2042 и при необходимости 2047; 2042-NR для облагаемых французских доходов после выезда"
+              ],
+              [
+                "Далее",
+                "Обязательные декларации обеих стран"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "Налог при выезде",
+          "body": "При французском резидентстве не менее шести из последних десяти лет и стоимости ценных бумаг от 800 000 евро либо правах на 50% прибыли компании возможен exit tax. Отложенные приросты капитала и требования по доплате цены также проверяются. Если отсрочка требует заявления, его подают за 90 дней до переноса. Оцените последствия до продажи или реструктуризации долей."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "Доходы после переезда и сертификат",
+          "body": "Французская аренда, некоторые приросты капитала и дивиденды могут облагаться во Франции. Турецкая статья 20/D возможна при соблюдении условий предыдущих лет и получении сертификата. При переезде в ноябре или декабре 2026 года обычный срок подачи — конец февраля 2027 года. Уведомите банки и органы страхования о фактическом статусе."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Достаточно ли 183 дней за границей?",
+          "answer": "Нет, учитываются другие критерии и соглашение."
+        },
+        {
+          "question": "Нужно ли закрывать французские счета?",
+          "answer": "Не автоматически; сообщите банку статус и уточните ограничения."
+        },
+        {
+          "question": "Можно ли сохранить французскую аренду?",
+          "answer": "Да, но доход регулируется французскими правилами."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "Налоговое резидентство Франции"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/questions/je-pars-vivre-letranger-quelles-demarches-dois-je-accomplir-dois-je-cloturer",
+          "label": "Процедуры при выезде"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/questions/je-quitte-la-france-suis-je-concerne-par-lexit-tax",
+          "label": "Французский налог при выезде"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "Налоговое соглашение Франции и Турции"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Турецкое разъяснение № 333"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/je-suis-non-resident-je-percois-des-revenus-immobiliers-sagit-i",
+          "label": "Доходы от французской недвижимости"
+        }
+      ]
+    },
+    "ar": {
+      "title": "مغادرة فرنسا إلى تركيا 2026: الإجراءات الضريبية وضريبة الخروج",
+      "metaDescription": "دليل نقل الإقامة الضريبية من فرنسا إلى تركيا والنموذج 2042-NR وضريبة الخروج عند 800 ألف يورو والدخل الفرنسي.",
+      "shortAnswer": "لا يكفي الانتقال لتغيير الموطن الضريبي. يجب دراسة الأسرة والعمل والمصالح الاقتصادية ثم تطبيق الاتفاقية الفرنسية التركية عند ازدواج الإقامة.",
+      "bosphorasHelp": "تنسق Bosphoras الانتقال والبحث عن السكن والمواعيد مع مختصين مستقلين في الضرائب الفرنسية والتركية. اطلب دراسة مشروعك قبل نقل الإقامة الضريبية.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "قبل الانتقال",
+          "body": "يعتمد القانون الفرنسي معايير بديلة تشمل مقر الأسرة أو الإقامة الرئيسية والنشاط المهني الرئيسي ومركز المصالح الاقتصادية. قد يبقي بقاء الزوج والأطفال في فرنسا الموطن الضريبي الفرنسي رغم الإقامة الطويلة في تركيا. جهز أدلة السكن والدراسة والسفر والعمل والأصول. لا تعد بطاقة الإقامة حكماً ضريبياً."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "إقرار سنة المغادرة",
+          "body": "أبلغ مكتب الضرائب الفرنسي بالعنوان الجديد وتاريخ المغادرة. عند النقل الفعلي في 2026 يصرح في 2027 بالدخل العالمي لفترة الإقامة الفرنسية ثم بالدخل الفرنسي الخاضع للضريبة بعد المغادرة.",
+          "table": {
+            "headers": [
+              "التوقيت",
+              "الإجراء"
+            ],
+            "rows": [
+              [
+                "قبل الانتقال",
+                "حصر الدخل والأسهم والمكاسب المؤجلة"
+              ],
+              [
+                "المغادرة في 2026",
+                "العنوان والتاريخ"
+              ],
+              [
+                "إقرار 2027",
+                "2042 و2047 عند الحاجة و2042-NR للدخل الفرنسي الخاضع بعد المغادرة"
+              ],
+              [
+                "السنوات التالية",
+                "الإقرارات الفرنسية المطلوبة والالتزامات التركية"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "ضريبة الخروج والأسهم",
+          "body": "قد تنطبق ضريبة الخروج عند الإقامة الفرنسية ست سنوات على الأقل من العشر السابقة وامتلاك أوراق مالية بقيمة 800 ألف يورو أو حقوق في 50% على الأقل من أرباح شركة. تراجع أيضاً المكاسب المؤجلة ومستحقات تكملة سعر البيع. إذا تطلب تأجيل الدفع طلباً فيجب تقديمه قبل النقل بتسعين يوماً. حلل آثار بيع الحصص أو إعادة هيكلتها مسبقاً."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "الدخل والشهادة التركية بعد المغادرة",
+          "body": "قد تبقى الإيجارات الفرنسية وبعض المكاسب والتوزيعات خاضعة للضريبة الفرنسية. يمكن الاستفادة من المادة 20/D التركية إذا تحققت شروط السنوات السابقة والشهادة. للاستقرار في نوفمبر أو ديسمبر 2026 تنتهي المهلة العادية في نهاية فبراير 2027. أبلغ المصارف وهيئات التأمين بوضعك الفعلي."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل تكفي 183 يوماً خارج فرنسا؟",
+          "answer": "لا، تبقى المعايير الأخرى والاتفاقية واجبة."
+        },
+        {
+          "question": "هل يجب إغلاق الحسابات الفرنسية؟",
+          "answer": "ليس تلقائياً؛ أبلغ المصرف وتحقق من قيود المنتجات."
+        },
+        {
+          "question": "هل يمكن الاحتفاظ بعقار مؤجر في فرنسا؟",
+          "answer": "نعم، لكن دخله يخضع للقواعد الفرنسية."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "الإقامة الضريبية الفرنسية"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/questions/je-pars-vivre-letranger-quelles-demarches-dois-je-accomplir-dois-je-cloturer",
+          "label": "إجراءات مغادرة فرنسا"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/questions/je-quitte-la-france-suis-je-concerne-par-lexit-tax",
+          "label": "ضريبة الخروج الفرنسية"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "الاتفاقية الضريبية الفرنسية التركية"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "التعميم التركي 333"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/je-suis-non-resident-je-percois-des-revenus-immobiliers-sagit-i",
+          "label": "دخل العقارات الفرنسية"
+        }
+      ]
+    }
+  },
+  "fiscal-expatriation-france-turkey": {
+    "fr": {
+      "title": "Expatriation fiscale France–Turquie 2026 : conditions et exonération 20 ans",
+      "metaDescription": "Comment devenir résident fiscal turc et demander l’exonération de 20 ans : critères, preuves, revenus conservés en France et calendrier.",
+      "shortAnswer": "Une expatriation fiscale réussie combine une résidence réelle, la résolution d’une éventuelle double résidence et l’éligibilité distincte au régime turc de l’article 20/D.",
+      "bosphorasHelp": "Bosphoras coordonne votre installation en Turquie, la recherche de logement et les rendez-vous avec des fiscalistes franco-turcs indépendants. Demandez une étude de votre projet avant le transfert de résidence.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "Déterminer la résidence effective",
+          "body": "Le droit turc examine notamment le domicile et un séjour continu supérieur à six mois dans l’année civile, sous réserve des exceptions. Le droit français retient aussi le foyer, l’activité et les intérêts économiques. Si les deux lois désignent un résident, l’article 4 de la convention départage les États. Le changement doit refléter la réalité, pas une simple domiciliation."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "Tester les trois années précédentes",
+          "body": "En cas d’établissement fiscal en 2026, examinez 2023–2025 : absence de domicile et en principe d’assujettissement en Turquie. Certaines impositions limitées aux revenus immobiliers, de capitaux ou plus-values turques constituent une exception. Un certificat d’exonération est nécessaire.",
+          "table": {
+            "headers": [
+              "Établissement fiscal",
+              "Années examinées",
+              "Date limite ordinaire"
+            ],
+            "rows": [
+              [
+                "Janvier–octobre 2026",
+                "2023–2025",
+                "31 décembre 2026"
+              ],
+              [
+                "Novembre–décembre 2026",
+                "2023–2025",
+                "28 février 2027"
+              ],
+              [
+                "Janvier–octobre 2027",
+                "2024–2026",
+                "31 décembre 2027"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "Revenus et patrimoine conservés en France",
+          "body": "Un logement loué en France reste imposable en France ; en location nue les prélèvements sociaux sont normalement de 17,2 % sur le revenu net imposable, sauf exonération applicable. La Turquie peut exonérer ce flux étranger admissible sans rembourser l’impôt français. Les taux minimums des non-résidents et le taux moyen éventuel doivent être examinés séparément."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "Construire un dossier cohérent",
+          "body": "Rassemblez avis fiscaux des trois années, preuve du foyer antérieur et nouveau, contrats, relevés de voyages, justificatifs de revenus et attestations bancaires. Inventoriez chaque flux selon son pays, sa nature et les retenues. Demandez le certificat turc et mettez à jour votre statut auprès des payeurs. Comparez le budget familial après impôts des deux pays, et non seulement l’exonération turque."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "L’exonération impose-t-elle d’acheter un bien ?",
+          "answer": "Non, le régime fiscal n’impose pas d’investissement immobilier minimum."
+        },
+        {
+          "question": "Puis-je garder mes revenus français ?",
+          "answer": "Oui, mais leurs obligations françaises restent applicables."
+        },
+        {
+          "question": "Une carte ikamet vaut-elle certificat fiscal ?",
+          "answer": "Non, les deux procédures sont distinctes."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "Domicile fiscal français"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "Convention fiscale France–Turquie"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Communiqué turc 333"
+        },
+        {
+          "href": "https://www.gib.gov.tr/duyuru-arsivi/guncel/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Guide officiel turc de septembre 2026"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/dois-je-declarer-mes-revenus-en-france",
+          "label": "Impôt des non-résidents"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/je-suis-non-resident-je-percois-des-revenus-immobiliers-sagit-i",
+          "label": "Revenus immobiliers français"
+        }
+      ]
+    },
+    "en": {
+      "title": "France to Turkey tax expatriation 2026: residence and 20-year relief",
+      "metaDescription": "Establish Turkish tax residence, test eligibility for 20-year foreign-income relief, retain French assets and prepare the certificate timeline.",
+      "shortAnswer": "A genuine tax relocation requires establishing residence, resolving any dual residence and independently meeting Turkey's Article 20/D exemption conditions.",
+      "bosphorasHelp": "Bosphoras coordinates your relocation, housing search and appointments with independent France–Turkey tax specialists. Request an assessment before transferring tax residence.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "Determine actual tax residence",
+          "body": "Turkish rules consider domicile and continuous presence exceeding six months in the calendar year, subject to exceptions. France also assesses household, work and economic ties. If both claim residence, Article 4 resolves treaty residence. A nominal address is not sufficient."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "Review the preceding three years",
+          "body": "A 2026 settlement requires reviewing 2023–2025: absence of Turkish domicile and generally Turkish tax liability. Certain prior Turkish property, investment or capital-gain income is excepted. An exemption certificate is required.",
+          "table": {
+            "headers": [
+              "Settlement",
+              "Years reviewed",
+              "Ordinary deadline"
+            ],
+            "rows": [
+              [
+                "Jan–Oct 2026",
+                "2023–2025",
+                "31 Dec 2026"
+              ],
+              [
+                "Nov–Dec 2026",
+                "2023–2025",
+                "28 Feb 2027"
+              ],
+              [
+                "Jan–Oct 2027",
+                "2024–2026",
+                "31 Dec 2027"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "French income and assets",
+          "body": "French rental property remains taxable there; unfurnished rent normally attracts 17.2% social levies on taxable net income unless an exemption applies. Turkey can exempt qualifying foreign rent without refunding French tax. Review French non-resident minimum rates and the optional average-rate calculation separately."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "Assemble consistent evidence",
+          "body": "Collect prior three-year tax records, former and new home evidence, contracts, travel records, income and bank documents. Classify each stream by legal nature, source and withholding. Apply for the Turkish certificate and update payers. Compare actual household income after taxes in both jurisdictions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is a property purchase mandatory?",
+          "answer": "No minimum property investment is imposed by the tax regime."
+        },
+        {
+          "question": "Can I retain French income?",
+          "answer": "Yes, but French obligations may remain."
+        },
+        {
+          "question": "Is an ikamet the exemption certificate?",
+          "answer": "No; they are separate procedures."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "French tax residence"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "France–Turkey tax treaty"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Turkish Communiqué 333"
+        },
+        {
+          "href": "https://www.gib.gov.tr/duyuru-arsivi/guncel/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Official Turkish September 2026 guide"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/dois-je-declarer-mes-revenus-en-france",
+          "label": "Non-resident tax"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/je-suis-non-resident-je-percois-des-revenus-immobiliers-sagit-i",
+          "label": "French property income"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Налоговая эмиграция из Франции в Турцию 2026: резидентство и льгота 20 лет",
+      "metaDescription": "Как стать налоговым резидентом Турции, подтвердить три предыдущих года, оформить сертификат и сохранить французские активы.",
+      "shortAnswer": "Налоговый переезд требует фактического проживания, разрешения двойного резидентства и отдельной проверки условий турецкой статьи 20/D.",
+      "bosphorasHelp": "Bosphoras организует переезд, подбор жилья и встречи с независимыми специалистами по налогам Франции и Турции. Запросите оценку проекта до смены резидентства.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "Определение резидентства",
+          "body": "Турецкое право учитывает место жительства и непрерывное пребывание более шести месяцев календарного года с исключениями. Франция также оценивает семью, работу и экономические связи. При двойном резидентстве применяется статья 4 соглашения. Формального адреса недостаточно."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "Три предыдущих года",
+          "body": "Для поселения в 2026 году проверяются 2023–2025 годы: отсутствие места жительства и, как правило, налогового учёта в Турции. Для отдельных турецких доходов от аренды, капитала и прироста действуют исключения. Требуется сертификат.",
+          "table": {
+            "headers": [
+              "Поселение",
+              "Проверяемые годы",
+              "Обычный срок"
+            ],
+            "rows": [
+              [
+                "Январь–октябрь 2026",
+                "2023–2025",
+                "31.12.2026"
+              ],
+              [
+                "Ноябрь–декабрь 2026",
+                "2023–2025",
+                "28.02.2027"
+              ],
+              [
+                "Январь–октябрь 2027",
+                "2024–2026",
+                "31.12.2027"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "Французские активы и доходы",
+          "body": "Аренда французской недвижимости остаётся облагаемой во Франции. Для немеблированного жилья социальные сборы обычно составляют 17,2% чистого облагаемого дохода, если нет льготы. Турецкое освобождение подходящего зарубежного дохода не возвращает французский налог. Отдельно сравните минимальные ставки нерезидента и среднюю ставку."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "Подготовка доказательств",
+          "body": "Соберите налоговые документы трёх лет, подтверждения прежнего и нового жилья, договоры, поездки, сведения о доходах и банках. Классифицируйте каждый поток по виду, источнику и удержанию. Подайте на турецкий сертификат и обновите сведения у плательщиков. Сравните семейный бюджет после налогов обеих стран."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Обязательна ли покупка недвижимости?",
+          "answer": "Нет, налоговая льгота не требует минимальной покупки."
+        },
+        {
+          "question": "Можно ли сохранить доходы во Франции?",
+          "answer": "Да, французские обязательства могут сохраняться."
+        },
+        {
+          "question": "Является ли икамет налоговым сертификатом?",
+          "answer": "Нет, это разные процедуры."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "Налоговое резидентство Франции"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "Налоговое соглашение Франции и Турции"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Турецкое разъяснение № 333"
+        },
+        {
+          "href": "https://www.gib.gov.tr/duyuru-arsivi/guncel/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Официальное руководство Турции за сентябрь 2026"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/dois-je-declarer-mes-revenus-en-france",
+          "label": "Налоги нерезидентов"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/je-suis-non-resident-je-percois-des-revenus-immobiliers-sagit-i",
+          "label": "Доходы от французской недвижимости"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الانتقال الضريبي من فرنسا إلى تركيا 2026: الإقامة وإعفاء 20 عاماً",
+      "metaDescription": "شروط الإقامة الضريبية التركية وإعفاء الدخل الأجنبي لعشرين عاماً وإثبات السنوات الثلاث ومواعيد الشهادة.",
+      "shortAnswer": "يتطلب الانتقال الضريبي إقامة فعلية وحسم ازدواج الإقامة والتحقق بصورة مستقلة من شروط المادة التركية 20/D.",
+      "bosphorasHelp": "تنسق Bosphoras الانتقال والبحث عن السكن والمواعيد مع مختصين مستقلين في الضرائب الفرنسية والتركية. اطلب دراسة مشروعك قبل نقل الإقامة الضريبية.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "تحديد الإقامة الفعلية",
+          "body": "تدرس تركيا الموطن والبقاء المتواصل لأكثر من ستة أشهر في السنة التقويمية مع الاستثناءات. وتدرس فرنسا الأسرة والعمل والمصالح الاقتصادية. إذا اعتبر البلدان الشخص مقيماً تطبق المادة الرابعة من الاتفاقية. لا يكفي عنوان شكلي."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "اختبار السنوات الثلاث السابقة",
+          "body": "للاستقرار في 2026 تراجع سنوات 2023–2025 للتحقق من عدم وجود موطن وعادة عدم خضوع سابق في تركيا. تستثنى بعض الدخول التركية العقارية والرأسمالية ومكاسب رأس المال. يلزم الحصول على شهادة الإعفاء.",
+          "table": {
+            "headers": [
+              "الاستقرار",
+              "السنوات المدروسة",
+              "المهلة العادية"
+            ],
+            "rows": [
+              [
+                "يناير–أكتوبر 2026",
+                "2023–2025",
+                "31 ديسمبر 2026"
+              ],
+              [
+                "نوفمبر–ديسمبر 2026",
+                "2023–2025",
+                "28 فبراير 2027"
+              ],
+              [
+                "يناير–أكتوبر 2027",
+                "2024–2026",
+                "31 ديسمبر 2027"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "الدخل والأصول في فرنسا",
+          "body": "تبقى إيجارات العقار الفرنسي خاضعة للضريبة الفرنسية. في الإيجار غير المفروش تبلغ الرسوم الاجتماعية عادة 17.2% من الدخل الصافي الخاضع ما لم ينطبق إعفاء. لا يعيد الإعفاء التركي الضريبة الفرنسية. ادرس المعدلات الدنيا لغير المقيمين والمعدل المتوسط الاختياري بصورة مستقلة."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "إعداد ملف متسق",
+          "body": "اجمع وثائق الضرائب للسنوات الثلاث وإثباتات السكن السابق والجديد والعقود وسجلات السفر والدخل والمصارف. صنف كل تدفق بحسب نوعه ومصدره والاقتطاع. اطلب الشهادة التركية وحدث بيانات الجهات الدافعة. قارن ميزانية الأسرة بعد ضرائب الدولتين."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يلزم شراء عقار؟",
+          "answer": "لا يفرض النظام الضريبي حداً أدنى لشراء عقار."
+        },
+        {
+          "question": "هل يمكن الاحتفاظ بالدخل الفرنسي؟",
+          "answer": "نعم، قد تبقى الالتزامات الفرنسية."
+        },
+        {
+          "question": "هل الإيكامت هو شهادة الإعفاء؟",
+          "answer": "لا، هما إجراءان منفصلان."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "الإقامة الضريبية الفرنسية"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "الاتفاقية الضريبية الفرنسية التركية"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "التعميم التركي 333"
+        },
+        {
+          "href": "https://www.gib.gov.tr/duyuru-arsivi/guncel/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "الدليل التركي الرسمي لسبتمبر 2026"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/dois-je-declarer-mes-revenus-en-france",
+          "label": "ضرائب غير المقيمين"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/je-suis-non-resident-je-percois-des-revenus-immobiliers-sagit-i",
+          "label": "دخل العقارات الفرنسية"
+        }
+      ]
+    }
+  },
+  "france-turkey-tax-treaty-residence": {
+    "fr": {
+      "title": "Convention fiscale France–Turquie : résidence et double imposition 2026",
+      "metaDescription": "Convention du 18 février 1987 : résidence, établissement stable, dividendes, salaires, pensions et crédit d’impôt en Turquie.",
+      "shortAnswer": "La convention franco-turque signée le 18 février 1987 et entrée en vigueur le 1er juillet 1989 répartit les droits d’imposition des deux pays. Elle n’instaure pas une exonération générale.",
+      "bosphorasHelp": "Bosphoras coordonne votre installation en Turquie, la recherche de logement et les rendez-vous avec des fiscalistes franco-turcs indépendants. Demandez une étude de votre projet avant le transfert de résidence.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "Article 4 : résoudre une résidence double",
+          "body": "Pour une personne physique reconnue résidente des deux pays, la convention examine successivement le logement permanent, le centre des liens personnels et économiques, le séjour habituel, puis la nationalité. Si les critères ne tranchent pas, les administrations doivent parvenir à un accord. Pour une personne morale double résidente, le texte retient le siège de direction officiel."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "Quel article pour chaque revenu ?",
+          "body": "La convention attribue les droits d’imposition par catégorie. Les exceptions et conditions de chaque article doivent être appliquées aux faits, notamment aux pensions publiques et aux fonctions de dirigeant.",
+          "table": {
+            "headers": [
+              "Article",
+              "Objet"
+            ],
+            "rows": [
+              [
+                "6",
+                "Revenus immobiliers : État du bien"
+              ],
+              [
+                "5 et 7",
+                "Établissement stable et bénéfices des entreprises"
+              ],
+              [
+                "10",
+                "Dividendes : taxation possible dans les deux États"
+              ],
+              [
+                "14 et 15",
+                "Activités indépendantes et salaires"
+              ],
+              [
+                "18 et 19",
+                "Pensions et fonctions publiques"
+              ],
+              [
+                "23 et 25",
+                "Crédit d’impôt et procédure amiable"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "Dividendes et élimination de la double imposition",
+          "body": "L’article 10 plafonne la retenue à 20 % pour une personne physique bénéficiaire effectif ; le taux interne français de 12,8 % est actuellement inférieur. L’article 23 prévoit, pour les revenus imposables dans les deux États, un crédit plafonné à l’impôt correspondant. Un revenu exonéré au titre de 20/D ne donne pas droit à imputer l’impôt étranger sur d’autres revenus turcs."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "Documents et différends",
+          "body": "Conservez la preuve de résidence, les certificats et les retenues. Lorsque nécessaire, le formulaire français 5000 certifie la résidence et le 5001 accompagne une réclamation concernant des dividendes. Si une taxation paraît contraire à la convention, examinez rapidement les recours nationaux et la procédure amiable de l’article 25 ; les délais ordinaires ne sont pas automatiquement suspendus."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "La règle des 183 jours décide-t-elle toujours ?",
+          "answer": "Non, les critères de résidence et les règles propres aux salaires sont distincts."
+        },
+        {
+          "question": "La convention garantit-elle zéro impôt ?",
+          "answer": "Non, elle organise les droits d’imposition et le traitement des doubles impositions."
+        },
+        {
+          "question": "Le plafond de 20 % signifie-t-il une retenue de 20 % ?",
+          "answer": "Non, le taux interne français inférieur peut s’appliquer."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "Convention fiscale France–Turquie"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "Domicile fiscal français"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/mes-dividendes",
+          "label": "Dividendes des non-résidents"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/comment-obtenir-un-justificatif-de-residence-pour-beneficier-dun",
+          "label": "Attestations 5000 et 5001"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Communiqué turc 333"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/dois-je-declarer-mes-revenus-en-france",
+          "label": "Impôt des non-résidents"
+        }
+      ]
+    },
+    "en": {
+      "title": "France–Turkey tax treaty 2026: residence and double taxation",
+      "metaDescription": "Understand the 1987 treaty: residence tie-breakers, permanent establishments, dividends, salaries, pensions and tax credits.",
+      "shortAnswer": "The France–Turkey income tax treaty, signed 18 February 1987 and effective 1 July 1989, allocates taxing rights. It does not create blanket tax-free status.",
+      "bosphorasHelp": "Bosphoras coordinates your relocation, housing search and appointments with independent France–Turkey tax specialists. Request an assessment before transferring tax residence.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "Article 4: dual residence",
+          "body": "For a dual-resident individual, the treaty examines permanent home, closer personal and economic ties, habitual abode and nationality in sequence. Unresolved cases require mutual agreement. For a dual-resident entity, the treaty text points to its official head office."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "Identify the relevant article",
+          "body": "Taxing rights depend on the income category. Apply each article's exceptions to the facts, particularly public pensions and directors' remuneration.",
+          "table": {
+            "headers": [
+              "Article",
+              "Subject"
+            ],
+            "rows": [
+              [
+                "6",
+                "Income from immovable property: situs state"
+              ],
+              [
+                "5 and 7",
+                "Permanent establishment and business profits"
+              ],
+              [
+                "10",
+                "Dividends: possible tax in both states"
+              ],
+              [
+                "14 and 15",
+                "Independent services and employment"
+              ],
+              [
+                "18 and 19",
+                "Pensions and government service"
+              ],
+              [
+                "23 and 25",
+                "Tax credits and mutual agreement"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "Dividends and double-tax relief",
+          "body": "Article 10 caps source tax at 20% for an individual beneficial owner; France's current domestic 12.8% rate is lower. Article 23 provides a credit for income taxed in both states, limited to the tax attributable to that income. Foreign tax on Article 20/D-exempt income cannot offset other Turkish taxable income."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "Evidence and disputes",
+          "body": "Keep residence certificates and withholding evidence. Where appropriate, French form 5000 certifies residency and form 5001 supports dividend refund claims. If taxation appears treaty-inconsistent, review domestic remedies and Article 25 mutual agreement promptly; ordinary filing and appeal deadlines are not necessarily suspended."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does the 183-day rule always decide residence?",
+          "answer": "No; residence and employment-income rules are distinct."
+        },
+        {
+          "question": "Does the treaty guarantee zero tax?",
+          "answer": "No, it allocates taxing rights and double-tax relief."
+        },
+        {
+          "question": "Does the 20% ceiling require 20% withholding?",
+          "answer": "No, a lower domestic French rate can apply."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "France–Turkey tax treaty"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "French tax residence"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/mes-dividendes",
+          "label": "Non-resident dividends"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/comment-obtenir-un-justificatif-de-residence-pour-beneficier-dun",
+          "label": "Forms 5000 and 5001"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Turkish Communiqué 333"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/dois-je-declarer-mes-revenus-en-france",
+          "label": "Non-resident tax"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Налоговое соглашение Франции и Турции 2026: резидентство и двойное налогообложение",
+      "metaDescription": "Соглашение 1987 года: критерии резидентства, постоянное представительство, дивиденды, зарплаты, пенсии и налоговый зачёт.",
+      "shortAnswer": "Соглашение Франции и Турции о налогах на доходы подписано 18 февраля 1987 года и действует с 1 июля 1989 года. Оно распределяет налоговые права, а не отменяет все налоги.",
+      "bosphorasHelp": "Bosphoras организует переезд, подбор жилья и встречи с независимыми специалистами по налогам Франции и Турции. Запросите оценку проекта до смены резидентства.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "Статья 4: двойное резидентство",
+          "body": "Для физического лица последовательно учитываются постоянное жильё, более тесные личные и экономические связи, обычное проживание и гражданство. Если вопрос не решён, требуется согласование ведомств. Для юридического лица с двойным резидентством текст соглашения указывает официальный головной офис."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "Статьи по типам доходов",
+          "body": "Налоговые права зависят от категории дохода. Нужно учитывать исключения каждой статьи, особенно для государственных пенсий и вознаграждений руководителей.",
+          "table": {
+            "headers": [
+              "Статья",
+              "Предмет"
+            ],
+            "rows": [
+              [
+                "6",
+                "Недвижимость: государство её нахождения"
+              ],
+              [
+                "5 и 7",
+                "Постоянное представительство и прибыль"
+              ],
+              [
+                "10",
+                "Дивиденды: возможно обложение в обеих странах"
+              ],
+              [
+                "14 и 15",
+                "Самостоятельная деятельность и зарплата"
+              ],
+              [
+                "18 и 19",
+                "Пенсии и государственная служба"
+              ],
+              [
+                "23 и 25",
+                "Налоговый зачёт и взаимное согласование"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "Дивиденды и двойной налог",
+          "body": "Статья 10 ограничивает налог у источника физического лица — фактического получателя 20%; французская внутренняя ставка 12,8% сейчас ниже. Статья 23 предусматривает зачёт в пределах соответствующего налога при обложении в обеих странах. Иностранный налог на освобождённый статьёй 20/D доход нельзя зачесть против иных турецких доходов."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "Документы и споры",
+          "body": "Храните сертификаты резидентства и доказательства удержаний. При необходимости французская форма 5000 подтверждает резидентство, а форма 5001 используется при возврате налога с дивидендов. При несоответствии соглашению своевременно изучите национальные способы обжалования и процедуру статьи 25; обычные сроки не обязательно приостанавливаются."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Всегда ли 183 дня определяют резидентство?",
+          "answer": "Нет, критерии резидентства отличаются от правил зарплаты."
+        },
+        {
+          "question": "Гарантирует ли соглашение нулевой налог?",
+          "answer": "Нет, оно распределяет налоговые права."
+        },
+        {
+          "question": "Означает ли лимит 20% удержание именно 20%?",
+          "answer": "Нет, может применяться более низкая французская ставка."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "Налоговое соглашение Франции и Турции"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "Налоговое резидентство Франции"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/mes-dividendes",
+          "label": "Дивиденды нерезидентов"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/comment-obtenir-un-justificatif-de-residence-pour-beneficier-dun",
+          "label": "Формы 5000 и 5001"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Турецкое разъяснение № 333"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/dois-je-declarer-mes-revenus-en-france",
+          "label": "Налоги нерезидентов"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الاتفاقية الضريبية بين فرنسا وتركيا 2026: الإقامة والازدواج الضريبي",
+      "metaDescription": "اتفاقية 1987 وتحديد الإقامة والمنشأة الدائمة وتوزيعات الأرباح والرواتب والمعاشات والائتمان الضريبي.",
+      "shortAnswer": "وقعت اتفاقية ضريبة الدخل الفرنسية التركية في 18 فبراير 1987 ودخلت حيز التنفيذ في 1 يوليو 1989. توزع حقوق فرض الضرائب ولا تمنح إعفاء عاماً.",
+      "bosphorasHelp": "تنسق Bosphoras الانتقال والبحث عن السكن والمواعيد مع مختصين مستقلين في الضرائب الفرنسية والتركية. اطلب دراسة مشروعك قبل نقل الإقامة الضريبية.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "المادة 4: ازدواج الإقامة",
+          "body": "للشخص المقيم في البلدين تدرس الاتفاقية بالتتابع المسكن الدائم والروابط الشخصية والاقتصادية الأوثق والإقامة المعتادة والجنسية. عند عدم الحسم يلزم اتفاق السلطات. بالنسبة للشخص الاعتباري مزدوج الإقامة يشير النص إلى مقر الإدارة الرسمي."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "المواد بحسب نوع الدخل",
+          "body": "تختلف حقوق فرض الضريبة بحسب الفئة. تطبق شروط كل مادة واستثناءاتها على الوقائع خصوصاً معاشات القطاع العام ومكافآت المديرين.",
+          "table": {
+            "headers": [
+              "المادة",
+              "الموضوع"
+            ],
+            "rows": [
+              [
+                "6",
+                "دخل العقار: دولة موقع العقار"
+              ],
+              [
+                "5 و7",
+                "المنشأة الدائمة وأرباح الشركات"
+              ],
+              [
+                "10",
+                "التوزيعات: احتمال الضريبة في البلدين"
+              ],
+              [
+                "14 و15",
+                "الأعمال المستقلة والرواتب"
+              ],
+              [
+                "18 و19",
+                "المعاشات والخدمة العامة"
+              ],
+              [
+                "23 و25",
+                "الائتمان الضريبي والتسوية الودية"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "التوزيعات وإزالة الازدواج",
+          "body": "تضع المادة 10 سقفاً قدره 20% لاقتطاع المصدر على الشخص الطبيعي المستفيد الفعلي، بينما المعدل الداخلي الفرنسي الحالي 12.8% أقل. تتيح المادة 23 ائتماناً محدوداً بالضريبة المتعلقة بالدخل عند خضوعه في الدولتين. لا يستخدم الضريبة الأجنبية على دخل معفى بموجب 20/D لخفض ضريبة دخل تركي آخر."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "الوثائق والنزاعات",
+          "body": "احتفظ بشهادات الإقامة وإثباتات الاقتطاع. عند الحاجة يثبت النموذج الفرنسي 5000 الإقامة ويستخدم 5001 في مطالبة رد ضريبة التوزيعات. إذا بدا فرض الضريبة مخالفاً للاتفاقية فادرس سريعاً الطعون المحلية والتسوية الودية وفق المادة 25؛ لا تتوقف المهل العادية تلقائياً."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل تحدد قاعدة 183 يوماً الإقامة دائماً؟",
+          "answer": "لا، تختلف قواعد الإقامة عن قواعد الرواتب."
+        },
+        {
+          "question": "هل تضمن الاتفاقية ضريبة صفرية؟",
+          "answer": "لا، توزع الحقوق وتعالج الازدواج."
+        },
+        {
+          "question": "هل يعني سقف 20% اقتطاعاً بنفس النسبة؟",
+          "answer": "لا، قد يطبق المعدل الفرنسي الأقل."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "الاتفاقية الضريبية الفرنسية التركية"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "الإقامة الضريبية الفرنسية"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/mes-dividendes",
+          "label": "توزيعات أرباح غير المقيمين"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/comment-obtenir-un-justificatif-de-residence-pour-beneficier-dun",
+          "label": "النموذجان 5000 و5001"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "التعميم التركي 333"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/dois-je-declarer-mes-revenus-en-france",
+          "label": "ضرائب غير المقيمين"
+        }
+      ]
+    }
+  },
+  "french-entrepreneur-turkey-tax": {
+    "fr": {
+      "title": "Entrepreneur français en Turquie : SAS, SARL, fiscalité et résidence 2026",
+      "metaDescription": "Conserver une société française depuis la Turquie : dividendes, rémunération, établissement stable, exit tax et protection sociale.",
+      "shortAnswer": "Un entrepreneur peut conserver une société française en vivant en Turquie. La fiscalité de la société, celle de son dirigeant et le lieu réel de l’activité doivent être examinés séparément.",
+      "bosphorasHelp": "Bosphoras coordonne votre installation en Turquie, la recherche de logement et les rendez-vous avec des fiscalistes franco-turcs indépendants. Demandez une étude de votre projet avant le transfert de résidence.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "Séparer les trois niveaux d’imposition",
+          "body": "Une SAS ou SARL française ne devient pas exonérée de ses obligations parce que son associé réside en Turquie. L’article 20/D concerne des revenus personnels étrangers éligibles. Le bénéfice de la société, les dividendes et la rémunération du travail ont des bases juridiques distinctes.",
+          "table": {
+            "headers": [
+              "Flux",
+              "Analyse à mener"
+            ],
+            "rows": [
+              [
+                "Bénéfice de société",
+                "Impôt de la société"
+              ],
+              [
+                "Dividende personnel",
+                "Retenue française et éligibilité turque"
+              ],
+              [
+                "Rémunération du président ou gérant",
+                "Qualification et lieu d’activité"
+              ],
+              [
+                "Facturation entre sociétés",
+                "Prix de transfert et TVA"
+              ],
+              [
+                "Cession de titres",
+                "Plus-value et exit tax"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "Gérer depuis Istanbul : risque d’établissement stable",
+          "body": "Les articles 5 et 7 de la convention traitent les installations fixes, bureaux et agents disposant de pouvoirs habituels de conclusion de contrats. Un bureau réellement utilisé pour l’entreprise peut créer des obligations turques. Un chantier dépassant six mois entre dans la définition conventionnelle. Documentez qui signe, où les décisions sont prises, où travaillent les salariés et où sont exécutés les contrats."
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "Exemple : distribution d’un bénéfice déjà disponible",
+          "body": "Si la société dispose de 50 000 € de bénéfices légalement distribuables après impôt de société et distribue ce montant à un associé personne physique non-résident de France, la retenue française de 12,8 % représente 6 400 €. Le solde est 43 600 € avant autres charges éventuelles. Si le flux répond à l’article 20/D, il peut être exonéré en Turquie ; ce n’est pas une exonération du bénéfice de l’entreprise. Le taux peut dépendre de la qualification et du statut."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "Organiser le déménagement de l’entrepreneur",
+          "body": "Avant le départ, valorisez les participations pour l’exit tax, clarifiez mandat social, contrat, prestations, TVA et paie. La convention sociale bilatérale vise les salariés français ou turcs et prévoit des détachements sous conditions ; les indépendants ne relèvent pas automatiquement de cette coordination. Examinez permis de travail et assurance sociale en Turquie. Une structure turque peut être pertinente si elle correspond à une activité réelle."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Puis-je conserver ma SAS française ?",
+          "answer": "Oui en principe, avec ses obligations et une analyse de l’activité exercée en Turquie."
+        },
+        {
+          "question": "Les factures à mes clients français sont-elles exonérées ?",
+          "answer": "Pas automatiquement, la source de l’activité et la qualification comptent."
+        },
+        {
+          "question": "Dois-je me verser uniquement des dividendes ?",
+          "answer": "Aucune formule universelle : les fonctions réelles, les règles sociales et fiscales doivent être étudiées."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "Domicile fiscal français"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/questions/je-quitte-la-france-suis-je-concerne-par-lexit-tax",
+          "label": "Exit tax française"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "Convention fiscale France–Turquie"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Communiqué turc 333"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/mes-dividendes",
+          "label": "Dividendes des non-résidents"
+        },
+        {
+          "href": "https://www.cleiss.fr/particuliers/partir/travailler/expatriation/turquie.html",
+          "label": "Protection sociale France–Turquie"
+        }
+      ]
+    },
+    "en": {
+      "title": "French entrepreneur in Turkey 2026: company, dividends and business taxes",
+      "metaDescription": "Keep a French SAS or SARL while living in Turkey: corporate profit, dividends, management remuneration, permanent establishment and exit tax.",
+      "shortAnswer": "A business owner can retain a French company while living in Turkey. Corporate taxes, personal income and where the business is actually conducted require separate assessment.",
+      "bosphorasHelp": "Bosphoras coordinates your relocation, housing search and appointments with independent France–Turkey tax specialists. Request an assessment before transferring tax residence.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "Separate the three tax layers",
+          "body": "A French SAS or SARL retains corporate obligations even if its shareholder moves abroad. Article 20/D applies to eligible personal foreign income. Corporate earnings, dividends and compensation for work are different legal categories.",
+          "table": {
+            "headers": [
+              "Stream",
+              "Assessment"
+            ],
+            "rows": [
+              [
+                "Corporate profits",
+                "Corporate income tax"
+              ],
+              [
+                "Personal dividends",
+                "French withholding and Turkish relief eligibility"
+              ],
+              [
+                "Director remuneration",
+                "Classification and actual workplace"
+              ],
+              [
+                "Intercompany invoices",
+                "Transfer pricing and VAT"
+              ],
+              [
+                "Share disposal",
+                "Capital gains and exit tax"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "Managing from Istanbul",
+          "body": "Treaty Articles 5 and 7 address fixed places of business, offices and agents habitually concluding contracts. A genuinely used Turkish office can create local obligations. Construction or installation projects exceeding six months fall within the treaty definition. Document who signs, decision locations, staff workplaces and contract performance."
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "Worked distribution example",
+          "body": "Assume €50,000 of legally distributable post-corporate-tax profit paid to a French non-resident individual shareholder. At 12.8% French withholding, €6,400 is withheld and €43,600 remains before other charges. If the personal income qualifies for Article 20/D it may be exempt in Turkey; corporate profit itself is not exempt under this provision. Classification and status matter."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "Prepare business continuity",
+          "body": "Value shares for exit-tax analysis and clarify corporate office, employment, services, VAT and payroll. The bilateral social-security treaty covers French or Turkish employees and conditional postings; self-employed people are not automatically covered by that coordination. Assess Turkish work authorisation and social insurance. A Turkish entity can make sense for genuine local operations."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I keep my French SAS?",
+          "answer": "Generally yes, subject to its obligations and assessment of Turkish activities."
+        },
+        {
+          "question": "Are invoices to French clients exempt?",
+          "answer": "Not automatically; actual activity and source classification matter."
+        },
+        {
+          "question": "Should I pay myself only dividends?",
+          "answer": "There is no universal formula; assess actual functions, tax and social rules."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "French tax residence"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/questions/je-quitte-la-france-suis-je-concerne-par-lexit-tax",
+          "label": "French exit tax"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "France–Turkey tax treaty"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Turkish Communiqué 333"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/mes-dividendes",
+          "label": "Non-resident dividends"
+        },
+        {
+          "href": "https://www.cleiss.fr/particuliers/partir/travailler/expatriation/turquie.html",
+          "label": "France–Turkey social security"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Французский предприниматель в Турции 2026: компания, дивиденды и налоги",
+      "metaDescription": "Как сохранить французскую SAS или SARL при переезде: прибыль, дивиденды, управление, постоянное представительство и exit tax.",
+      "shortAnswer": "Предприниматель может сохранить компанию во Франции, проживая в Турции. Налоги компании, личный доход и фактическое место деятельности оцениваются отдельно.",
+      "bosphorasHelp": "Bosphoras организует переезд, подбор жилья и встречи с независимыми специалистами по налогам Франции и Турции. Запросите оценку проекта до смены резидентства.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "Разделите уровни налогообложения",
+          "body": "Французская SAS или SARL сохраняет корпоративные обязательства при переезде участника. Статья 20/D относится к подходящим личным иностранным доходам. Прибыль компании, дивиденды и оплата труда имеют разные правовые основания.",
+          "table": {
+            "headers": [
+              "Поток",
+              "Что оценить"
+            ],
+            "rows": [
+              [
+                "Прибыль компании",
+                "Корпоративный налог"
+              ],
+              [
+                "Личные дивиденды",
+                "Французское удержание и турецкая льгота"
+              ],
+              [
+                "Вознаграждение директора",
+                "Квалификация и место работы"
+              ],
+              [
+                "Межфирменные счета",
+                "Трансфертные цены и НДС"
+              ],
+              [
+                "Продажа долей",
+                "Прирост капитала и exit tax"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "Управление из Стамбула",
+          "body": "Статьи 5 и 7 соглашения охватывают постоянные коммерческие установки, офисы и агентов, регулярно заключающих договоры. Реально используемый офис в Турции может создать местные налоговые обязанности. Строительный или монтажный проект свыше шести месяцев подпадает под договорное определение. Документируйте полномочия, место решений, работы персонала и исполнения договоров."
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "Пример распределения прибыли",
+          "body": "Пусть 50 000 евро законно распределяемой прибыли после корпоративного налога выплачиваются физическому лицу — нерезиденту Франции. При удержании 12,8% налог составляет 6 400 евро, остаток — 43 600 евро до иных расходов. Подходящий личный доход может быть освобождён по статье 20/D, но прибыль компании сама по себе не освобождается. Учитывайте квалификацию и статус."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "Подготовка переезда",
+          "body": "Оцените доли для exit tax, уточните полномочия, трудовые договоры, услуги, НДС и расчёт зарплат. Соглашение о социальном страховании охватывает французских или турецких работников по найму и командирование по условиям; самозанятые не включаются автоматически. Проверьте разрешение на работу и страхование в Турции. Турецкая компания имеет смысл при реальной местной деятельности."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли сохранить SAS?",
+          "answer": "Да, при соблюдении её обязательств и анализе турецкой деятельности."
+        },
+        {
+          "question": "Освобождены ли счета французским клиентам?",
+          "answer": "Не автоматически; важны фактическая деятельность и источник."
+        },
+        {
+          "question": "Нужно ли получать только дивиденды?",
+          "answer": "Универсального решения нет, учитываются функции и налоговые и социальные правила."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "Налоговое резидентство Франции"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/questions/je-quitte-la-france-suis-je-concerne-par-lexit-tax",
+          "label": "Французский налог при выезде"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "Налоговое соглашение Франции и Турции"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Турецкое разъяснение № 333"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/mes-dividendes",
+          "label": "Дивиденды нерезидентов"
+        },
+        {
+          "href": "https://www.cleiss.fr/particuliers/partir/travailler/expatriation/turquie.html",
+          "label": "Социальное страхование Франции и Турции"
+        }
+      ]
+    },
+    "ar": {
+      "title": "رائد الأعمال الفرنسي في تركيا 2026: الشركة والتوزيعات والضرائب",
+      "metaDescription": "الاحتفاظ بشركة SAS أو SARL فرنسية من تركيا: أرباح الشركة والتوزيعات وأجر الإدارة والمنشأة الدائمة وضريبة الخروج.",
+      "shortAnswer": "يمكن لرائد الأعمال الاحتفاظ بشركة فرنسية أثناء العيش في تركيا. يجب دراسة ضرائب الشركة والدخل الشخصي والمكان الفعلي للنشاط بصورة منفصلة.",
+      "bosphorasHelp": "تنسق Bosphoras الانتقال والبحث عن السكن والمواعيد مع مختصين مستقلين في الضرائب الفرنسية والتركية. اطلب دراسة مشروعك قبل نقل الإقامة الضريبية.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "فصل مستويات الضرائب",
+          "body": "تحتفظ الشركة الفرنسية SAS أو SARL بالتزاماتها عند انتقال المساهم. تتعلق المادة 20/D بالدخل الشخصي الأجنبي المؤهل. تختلف أرباح الشركة وتوزيعاتها وأجر العمل قانونياً.",
+          "table": {
+            "headers": [
+              "التدفق",
+              "ما يجب دراسته"
+            ],
+            "rows": [
+              [
+                "أرباح الشركة",
+                "ضريبة الشركات"
+              ],
+              [
+                "التوزيعات الشخصية",
+                "الاقتطاع الفرنسي والأهلية التركية"
+              ],
+              [
+                "أجر المدير",
+                "التصنيف ومكان العمل"
+              ],
+              [
+                "الفواتير بين الشركات",
+                "تسعير التحويل والقيمة المضافة"
+              ],
+              [
+                "بيع الحصص",
+                "المكاسب وضريبة الخروج"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "الإدارة من إسطنبول",
+          "body": "تتناول المادتان 5 و7 المنشآت التجارية الثابتة والمكاتب والوكلاء الذين يبرمون العقود بصورة معتادة. قد يسبب المكتب المستخدم فعلياً في تركيا التزامات محلية. يدخل مشروع بناء أو تركيب يتجاوز ستة أشهر ضمن تعريف الاتفاقية. وثق صلاحيات التوقيع ومكان القرارات والموظفين وتنفيذ العقود."
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "مثال على توزيع الأرباح",
+          "body": "إذا وزعت الشركة 50 ألف يورو من أرباح قابلة للتوزيع قانوناً بعد ضريبة الشركات على مساهم فرد غير مقيم في فرنسا، بلغ الاقتطاع بنسبة 12.8% مبلغ 6,400 يورو والمتبقي 43,600 يورو قبل أي تكاليف أخرى. قد يعفى الدخل الشخصي في تركيا وفق المادة 20/D إن تأهل، لا أرباح الشركة نفسها. يراعى التصنيف والوضع."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "التهيئة قبل الانتقال",
+          "body": "قيم الحصص لضريبة الخروج وحدد صلاحيات المدير والعقود والخدمات والقيمة المضافة والرواتب. تشمل اتفاقية الضمان الاجتماعي الموظفين الفرنسيين أو الأتراك والإعارة بشروط ولا تشمل المستقلين تلقائياً. ادرس تصريح العمل والتأمين التركي. قد تكون الشركة التركية مناسبة لأعمال محلية فعلية."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يمكن الاحتفاظ بشركة SAS الفرنسية؟",
+          "answer": "نعم من حيث المبدأ مع الالتزامات ودراسة النشاط في تركيا."
+        },
+        {
+          "question": "هل تعفى فواتير العملاء الفرنسيين؟",
+          "answer": "ليس تلقائياً، يهم النشاط الفعلي ومصدر الدخل."
+        },
+        {
+          "question": "هل الأفضل تقاضي التوزيعات فقط؟",
+          "answer": "لا توجد قاعدة واحدة؛ تدرس الوظائف الفعلية والضرائب والضمان الاجتماعي."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "الإقامة الضريبية الفرنسية"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/questions/je-quitte-la-france-suis-je-concerne-par-lexit-tax",
+          "label": "ضريبة الخروج الفرنسية"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "الاتفاقية الضريبية الفرنسية التركية"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "التعميم التركي 333"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/mes-dividendes",
+          "label": "توزيعات أرباح غير المقيمين"
+        },
+        {
+          "href": "https://www.cleiss.fr/particuliers/partir/travailler/expatriation/turquie.html",
+          "label": "الضمان الاجتماعي الفرنسي التركي"
+        }
+      ]
+    }
+  },
+  "french-company-dividends-turkey-resident": {
+    "fr": {
+      "title": "Dividendes français en Turquie 2026 : retenue de 12,8 % et exonération",
+      "metaDescription": "Résident en Turquie avec une SAS ou SARL française ? Retenue à la source de 12,8 %, article 10, formulaires et exemples de dividendes nets.",
+      "shortAnswer": "En 2026, une personne physique non-résidente fiscale de France percevant des dividendes français relève en principe d’une retenue de 12,8 %. L’exonération turque de 20 ans peut couvrir les dividendes étrangers éligibles, sans effacer la retenue française.",
+      "bosphorasHelp": "Bosphoras coordonne votre installation en Turquie, la recherche de logement et les rendez-vous avec des fiscalistes franco-turcs indépendants. Demandez une étude de votre projet avant le transfert de résidence.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "Le taux français et la convention",
+          "body": "L’article 10 de la convention autorise la France à taxer les distributions, avec un plafond de 20 % pour un bénéficiaire effectif individuel. Le plafond de 15 % vise une société qualifiée détenant directement au moins 10 % du capital, et non le particulier. Le droit interne français prévoit 12,8 % au 1er janvier 2026 pour les personnes physiques non-résidentes, sous réserve des règles particulières."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "Simulations du montant net",
+          "body": "Hypothèses : bénéficiaire effectif personne physique non-résidente de France, dividende brut déjà distribuable et intégralement exonéré en Turquie selon l’article 20/D. Pas de frais, autre impôt ou prélèvement social professionnel dans le calcul.",
+          "table": {
+            "headers": [
+              "Dividende brut",
+              "Retenue 12,8 %",
+              "Net après retenue"
+            ],
+            "rows": [
+              [
+                "10 000 €",
+                "1 280 €",
+                "8 720 €"
+              ],
+              [
+                "50 000 €",
+                "6 400 €",
+                "43 600 €"
+              ],
+              [
+                "100 000 €",
+                "12 800 €",
+                "87 200 €"
+              ],
+              [
+                "200 000 €",
+                "25 600 €",
+                "174 400 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "Déclarer et justifier le statut",
+          "body": "Informez la société ou l’établissement payeur de votre résidence réelle. Le formulaire 5000 est utilisé pour justifier la résidence conventionnelle ; le 5001 accompagne certaines demandes de remboursement. Lorsque vous devez déclarer d’autres revenus français, les dividendes soumis à une retenue libératoire figurent en principe en 2EE. S’ils sont seuls, les seuils de déclaration signalés par la DGFiP sont 250 000 € pour une personne seule ou 500 000 € en imposition commune."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "Ne pas confondre dividende et salaire",
+          "body": "Les revenus de capitaux mobiliers des non-résidents ne supportent normalement pas les prélèvements sociaux français sur le patrimoine ; les cotisations professionnelles éventuelles de certains dirigeants sont une question différente. Conservez décisions de distribution et preuves de retenue. Le régime turc exige l’éligibilité et le certificat dans les délais ; aucune imputation ni restitution de l’impôt français n’est prévue en Turquie sur un revenu exonéré par 20/D."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Puis-je percevoir 100 000 € sans aucun impôt ?",
+          "answer": "Non : dans l’exemple, la France retient 12 800 €, même si la Turquie exonère le flux."
+        },
+        {
+          "question": "Le plafond de 15 % s'applique-t-il à mon dividende personnel ?",
+          "answer": "Non, il vise certaines sociétés bénéficiaires."
+        },
+        {
+          "question": "Le régime turc exonère-t-il les bénéfices de ma SAS ?",
+          "answer": "Non, il concerne les revenus personnels étrangers éligibles."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/mes-dividendes",
+          "label": "Dividendes des non-résidents"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "Convention fiscale France–Turquie"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/comment-obtenir-un-justificatif-de-residence-pour-beneficier-dun",
+          "label": "Attestations 5000 et 5001"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Communiqué turc 333"
+        },
+        {
+          "href": "https://www.gib.gov.tr/duyuru-arsivi/guncel/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Guide officiel turc de septembre 2026"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "Domicile fiscal français"
+        }
+      ]
+    },
+    "en": {
+      "title": "French dividends for Turkey residents 2026: 12.8% withholding and relief",
+      "metaDescription": "French company dividends from Turkey: 12.8% withholding, Article 10 treaty ceilings, forms 5000/5001 and worked net-income examples.",
+      "shortAnswer": "In 2026, French dividends paid to an individual who is non-resident for French tax purposes generally attract 12.8% withholding. Turkey's 20-year exemption may cover qualifying foreign dividends, but does not remove French withholding.",
+      "bosphorasHelp": "Bosphoras coordinates your relocation, housing search and appointments with independent France–Turkey tax specialists. Request an assessment before transferring tax residence.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "French domestic rate and treaty ceiling",
+          "body": "Article 10 allows France to tax distributions, capped at 20% for an individual beneficial owner. The 15% cap applies to a qualifying company holding at least 10% of the payer directly, not a private individual. French domestic law provides a 12.8% rate from 1 January 2026 for non-resident individuals, subject to special rules."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "Worked net dividend amounts",
+          "body": "Assumptions: individual beneficial owner not resident in France, legally distributable gross dividend fully qualifying under Article 20/D in Turkey. No fees, additional taxes or occupational social-security contributions included.",
+          "table": {
+            "headers": [
+              "Gross dividend",
+              "12.8% withholding",
+              "After withholding"
+            ],
+            "rows": [
+              [
+                "€10,000",
+                "€1,280",
+                "€8,720"
+              ],
+              [
+                "€50,000",
+                "€6,400",
+                "€43,600"
+              ],
+              [
+                "€100,000",
+                "€12,800",
+                "€87,200"
+              ],
+              [
+                "€200,000",
+                "€25,600",
+                "€174,400"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "Residence evidence and reporting",
+          "body": "Update the company or paying institution with your actual residence. Form 5000 certifies treaty residence when needed; form 5001 supports certain refund claims. If a French return is required for other income, dividends subject to final withholding generally go on line 2EE. If dividends are the only French income, the tax authority identifies reporting thresholds of €250,000 for a single taxpayer or €500,000 for joint filing."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "Distinguish capital income from labour",
+          "body": "Non-resident investment income is generally exempt from French asset-income social levies; occupational contributions for certain directors are a separate issue. Keep distribution decisions and withholding evidence. Turkish relief requires eligibility and a timely certificate. Foreign tax on Article 20/D-exempt income cannot be credited or refunded against other Turkish income tax."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I receive €100,000 entirely tax-free?",
+          "answer": "No; this example includes €12,800 French withholding even when Turkey grants relief."
+        },
+        {
+          "question": "Does the 15% treaty cap apply to my personal dividend?",
+          "answer": "No, it covers certain corporate beneficiaries."
+        },
+        {
+          "question": "Is my SAS corporate profit exempt?",
+          "answer": "No, the exemption concerns qualifying personal foreign income."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/mes-dividendes",
+          "label": "Non-resident dividends"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "France–Turkey tax treaty"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/comment-obtenir-un-justificatif-de-residence-pour-beneficier-dun",
+          "label": "Forms 5000 and 5001"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Turkish Communiqué 333"
+        },
+        {
+          "href": "https://www.gib.gov.tr/duyuru-arsivi/guncel/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Official Turkish September 2026 guide"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "French tax residence"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Дивиденды французской компании в Турции 2026: удержание 12,8%",
+      "metaDescription": "Дивиденды SAS или SARL для резидента Турции: французское удержание 12,8%, статья 10, формы 5000/5001 и расчёты.",
+      "shortAnswer": "В 2026 году дивиденды из Франции физическому лицу — французскому налоговому нерезиденту обычно облагаются удержанием 12,8%. Турецкая двадцатилетняя льгота может охватывать подходящие дивиденды, но не отменяет французское удержание.",
+      "bosphorasHelp": "Bosphoras организует переезд, подбор жилья и встречи с независимыми специалистами по налогам Франции и Турции. Запросите оценку проекта до смены резидентства.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "Французская ставка и договорный предел",
+          "body": "Статья 10 разрешает Франции облагать дивиденды, ограничивая налог 20% для физического лица — фактического получателя. Предел 15% предусмотрен для подходящей компании с прямой долей от 10%, не для частного лица. Внутренняя ставка Франции для физлиц-нерезидентов с 1 января 2026 года составляет 12,8% с учётом специальных правил."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "Примеры чистых дивидендов",
+          "body": "Допущения: физическое лицо — фактический получатель и французский нерезидент, дивиденды законно распределяются и полностью освобождаются в Турции по статье 20/D. Иные налоги, расходы и профессиональные взносы не включены.",
+          "table": {
+            "headers": [
+              "Дивиденды до налога",
+              "Удержание 12,8%",
+              "Остаток"
+            ],
+            "rows": [
+              [
+                "10 000 €",
+                "1 280 €",
+                "8 720 €"
+              ],
+              [
+                "50 000 €",
+                "6 400 €",
+                "43 600 €"
+              ],
+              [
+                "100 000 €",
+                "12 800 €",
+                "87 200 €"
+              ],
+              [
+                "200 000 €",
+                "25 600 €",
+                "174 400 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "Документы и декларация",
+          "body": "Сообщите компании или плательщику фактическое резидентство. При необходимости форма 5000 подтверждает статус по соглашению, форма 5001 используется в отдельных требованиях возврата. Если французская декларация необходима из-за иных доходов, дивиденды с окончательным удержанием обычно отражаются по строке 2EE. Если они единственный французский доход, налоговая служба указывает пороги 250 000 евро для одного лица и 500 000 евро при совместной декларации."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "Не смешивайте дивиденды и оплату труда",
+          "body": "Инвестиционные доходы нерезидентов обычно освобождены от французских социальных сборов на капитал; профессиональные взносы отдельных руководителей оцениваются отдельно. Храните решения о распределении и справки об удержаниях. Турецкая льгота требует права на неё и своевременного сертификата. Иностранный налог по освобождённым доходам не уменьшает иные турецкие налоги на доход."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли получить 100 000 евро без налогов?",
+          "answer": "Нет: в примере Франция удерживает 12 800 евро даже при турецкой льготе."
+        },
+        {
+          "question": "Применим ли предел 15% к личным дивидендам?",
+          "answer": "Нет, он относится к определённым компаниям."
+        },
+        {
+          "question": "Освобождается ли прибыль SAS?",
+          "answer": "Нет, льгота касается подходящих личных зарубежных доходов."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/mes-dividendes",
+          "label": "Дивиденды нерезидентов"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "Налоговое соглашение Франции и Турции"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/comment-obtenir-un-justificatif-de-residence-pour-beneficier-dun",
+          "label": "Формы 5000 и 5001"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Турецкое разъяснение № 333"
+        },
+        {
+          "href": "https://www.gib.gov.tr/duyuru-arsivi/guncel/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Официальное руководство Турции за сентябрь 2026"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "Налоговое резидентство Франции"
+        }
+      ]
+    },
+    "ar": {
+      "title": "توزيعات الشركة الفرنسية للمقيم في تركيا 2026: اقتطاع 12.8% والإعفاء",
+      "metaDescription": "توزيعات SAS أو SARL الفرنسية في تركيا: اقتطاع 12.8% والمادة 10 والنموذجان 5000 و5001 وأمثلة الصافي.",
+      "shortAnswer": "تخضع توزيعات الأرباح الفرنسية لشخص طبيعي غير مقيم ضريبياً في فرنسا عادة لاقتطاع 12.8% في 2026. قد يشمل الإعفاء التركي لعشرين عاماً التوزيعات الأجنبية المؤهلة لكنه لا يلغي الاقتطاع الفرنسي.",
+      "bosphorasHelp": "تنسق Bosphoras الانتقال والبحث عن السكن والمواعيد مع مختصين مستقلين في الضرائب الفرنسية والتركية. اطلب دراسة مشروعك قبل نقل الإقامة الضريبية.",
+      "sections": [
+        {
+          "id": "fr-tr-1",
+          "title": "المعدل الفرنسي وسقف الاتفاقية",
+          "body": "تجيز المادة 10 لفرنسا فرض الضريبة على التوزيعات بسقف 20% للمستفيد الفعلي الفرد. يخص سقف 15% شركة مؤهلة تملك مباشرة 10% على الأقل من رأس المال، لا الفرد. يبلغ المعدل الفرنسي الداخلي للأفراد غير المقيمين 12.8% اعتباراً من 1 يناير 2026 مع مراعاة القواعد الخاصة."
+        },
+        {
+          "id": "fr-tr-2",
+          "title": "أمثلة لصافي التوزيعات",
+          "body": "الافتراضات: مستفيد فعلي فرد غير مقيم في فرنسا، توزيع إجمالي جائز قانوناً ومؤهل بالكامل للمادة 20/D في تركيا. لا تشمل الحسابات رسوماً أو ضرائب أخرى أو اشتراكات مهنية.",
+          "table": {
+            "headers": [
+              "التوزيع الإجمالي",
+              "اقتطاع 12.8%",
+              "الصافي بعد الاقتطاع"
+            ],
+            "rows": [
+              [
+                "10,000 يورو",
+                "1,280 يورو",
+                "8,720 يورو"
+              ],
+              [
+                "50,000 يورو",
+                "6,400 يورو",
+                "43,600 يورو"
+              ],
+              [
+                "100,000 يورو",
+                "12,800 يورو",
+                "87,200 يورو"
+              ],
+              [
+                "200,000 يورو",
+                "25,600 يورو",
+                "174,400 يورو"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "fr-tr-3",
+          "title": "إثبات الإقامة والإقرار",
+          "body": "أبلغ الشركة أو الجهة الدافعة بإقامتك الفعلية. يستخدم النموذج 5000 لإثبات الإقامة وفق الاتفاقية عند الحاجة، والنموذج 5001 لبعض مطالبات الرد. إذا لزم إقرار فرنسي بسبب دخل آخر تسجل التوزيعات ذات الاقتطاع النهائي عادة في الخانة 2EE. وإذا كانت وحدها الدخل الفرنسي فتشير الإدارة إلى حدود إقرار تبلغ 250 ألف يورو للفرد و500 ألف للإقرار المشترك."
+        },
+        {
+          "id": "fr-tr-4",
+          "title": "الفرق بين التوزيعات وأجر العمل",
+          "body": "يعفى دخل رأس المال لغير المقيم عادة من الرسوم الاجتماعية الفرنسية على الأصول، لكن الاشتراكات المهنية لبعض المديرين مسألة أخرى. احتفظ بقرارات التوزيع وإثبات الاقتطاع. يشترط الإعفاء التركي الأهلية والشهادة في الموعد. لا تخصم الضريبة الأجنبية على الدخل المعفى من ضرائب الدخل التركي الأخرى ولا تسترد بموجب المادة 20/D."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يمكن استلام 100 ألف يورو دون أي ضريبة؟",
+          "answer": "لا، في المثال تقتطع فرنسا 12,800 يورو حتى مع الإعفاء التركي."
+        },
+        {
+          "question": "هل يطبق سقف 15% على التوزيعات الشخصية؟",
+          "answer": "لا، يخص بعض الشركات المستفيدة."
+        },
+        {
+          "question": "هل تعفى أرباح شركتي SAS؟",
+          "answer": "لا، يتعلق الإعفاء بالدخل الشخصي الأجنبي المؤهل."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/mes-dividendes",
+          "label": "توزيعات أرباح غير المقيمين"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/sites/default/files/media/10_conventions/turquie/turquie_convention-avec-la-turquie_fd_1780.pdf",
+          "label": "الاتفاقية الضريبية الفرنسية التركية"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/comment-obtenir-un-justificatif-de-residence-pour-beneficier-dun",
+          "label": "النموذجان 5000 و5001"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "التعميم التركي 333"
+        },
+        {
+          "href": "https://www.gib.gov.tr/duyuru-arsivi/guncel/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "الدليل التركي الرسمي لسبتمبر 2026"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/particulier/suis-je-bien-non-resident",
+          "label": "الإقامة الضريبية الفرنسية"
+        }
+      ]
+    }
   }
 };
 
