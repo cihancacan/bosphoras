@@ -62,6 +62,7 @@ function generatedSections(guide: HighPotentialGuide) {
 export function HighPotentialGuideRenderer({ guide }: { guide: HighPotentialGuide }) {
   const labels = guideLabels(guide.locale);
   const sections = guide.sections ?? generatedSections(guide);
+  const editorial = Boolean(guide.sections);
   const assessmentBase = guide.locale === 'fr' ? '/diagnostic-prive' : guide.locale === 'en' ? '/en/private-assessment' : guide.locale === 'ru' ? '/ru/chastnaya-konsultatsiya' : '/ar/تقييم-خاص';
   const sourcePath = guide.locale === 'fr' ? guide.slug : `/${guide.locale}${guide.slug}`;
   const assessmentHref = withAssessmentContext(assessmentBase, sourcePath, guide.h1);
@@ -81,12 +82,12 @@ export function HighPotentialGuideRenderer({ guide }: { guide: HighPotentialGuid
           <div className="max-w-5xl">
             <p className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.28em] text-[#8a6728]"><Clock size={15} /> {labels.updated} {guide.updatedAt}</p>
             <h1 className="mt-6 font-serif text-4xl leading-tight tracking-[-0.04em] text-[#121826] md:text-6xl">{guide.h1}</h1>
-            <p className="mt-6 max-w-3xl text-xl leading-9 text-[#3e4857]">{guide.subtitle}</p>
-            <div className="mt-8 border border-[#d8c7a1] bg-[#fffaf0] p-6 shadow-[0_18px_60px_rgba(16,24,39,0.06)]">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#8a6728]">{labels.answer}</p>
+            {!editorial && <p className="mt-6 max-w-3xl text-xl leading-9 text-[#3e4857]">{guide.subtitle}</p>}
+            <div className={editorial ? "mt-7 max-w-4xl" : "mt-8 border border-[#d8c7a1] bg-[#fffaf0] p-6 shadow-[0_18px_60px_rgba(16,24,39,0.06)]"}>
+              {!editorial && <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#8a6728]">{labels.answer}</p>}
               <p className="mt-3 text-lg leading-8 text-[#172032]">{guide.shortAnswer}</p>
             </div>
-            <Link href={assessmentHref} className="mt-8 inline-flex items-center justify-center gap-3 bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246]">{labels.cta}<ArrowRight size={16} /></Link>
+            {!editorial && <Link href={assessmentHref} className="mt-8 inline-flex items-center justify-center gap-3 bg-[#121826] px-8 py-4 text-xs font-bold uppercase tracking-[0.16em] text-[#fffaf0] transition hover:bg-[#263246]">{labels.cta}<ArrowRight size={16} /></Link>}
           </div>
         </div>
       </section>
@@ -97,31 +98,32 @@ export function HighPotentialGuideRenderer({ guide }: { guide: HighPotentialGuid
             <p className="mb-5 text-xs font-bold uppercase tracking-[0.22em] text-[#8a6728]">{labels.toc}</p>
             <nav className="space-y-3">
               {sections.map((section) => <a key={section.id} href={`#${section.id}`} className="block text-sm leading-6 text-[#3e4857] hover:text-[#8a6728]">{section.title}</a>)}
-              <a href="#bosphoras" className="block text-sm leading-6 text-[#3e4857] hover:text-[#8a6728]">{labels.help}</a>
+              <a href="#bosphoras" className="block text-sm leading-6 text-[#3e4857] hover:text-[#8a6728]">{editorial ? ({fr:"Votre projet en Turquie",en:"Your plans in Turkey",ru:"Ваш проект в Турции",ar:"مشروعك في تركيا"}[guide.locale]) : labels.help}</a>
               <a href="#faq" className="block text-sm leading-6 text-[#3e4857] hover:text-[#8a6728]">{labels.faq}</a>
             </nav>
           </aside>
 
-          <article className="space-y-8">
+          <article className={editorial ? "space-y-12 min-w-0" : "space-y-8"}>
             {sections.map((section) => (
-              <section key={section.id} id={section.id} className="border border-[#d8c7a1] bg-[#fffaf0] p-7 md:p-9">
+              <section key={section.id} id={section.id} className={editorial ? "scroll-mt-32 border-b border-[#d8c7a1] pb-8" : "border border-[#d8c7a1] bg-[#fffaf0] p-7 md:p-9"}>
                 <h2 className="font-serif text-3xl tracking-[-0.03em] text-[#121826] md:text-4xl">{section.title}</h2>
-                <p className="mt-5 text-base leading-8 text-[#3e4857]">{section.body}</p>
+                {section.body.split("\n\n").map((paragraph, index) => <p key={index} className="mt-5 text-base leading-8 text-[#3e4857]">{paragraph}</p>)}
                 {section.bullets && <ul className="mt-6 grid gap-3 md:grid-cols-2">{section.bullets.map((bullet) => <li key={bullet} className="flex gap-3 text-sm leading-6 text-[#3e4857]"><CheckCircle2 className="mt-1 h-4 w-4 flex-none text-[#8a6728]" />{bullet}</li>)}</ul>}
               </section>
             ))}
 
-            <section id="caution" className="border border-[#d8c7a1] bg-[#121826] p-7 text-[#fffaf0] md:p-9">
+            {!editorial && <section id="caution" className="border border-[#d8c7a1] bg-[#121826] p-7 text-[#fffaf0] md:p-9">
               <h2 className="flex items-center gap-3 font-serif text-3xl tracking-[-0.03em]"><AlertTriangle className="text-[#d2a863]" />{labels.caution}</h2>
               <p className="mt-5 text-base leading-8 text-[#d8cfbf]">{guide.legalCaution}</p>
-            </section>
+            </section>}
 
-            {guide.sources && <section id="sources" className="border border-[#d8c7a1] bg-[#fffaf0] p-7 md:p-9"><h2 className="font-serif text-3xl text-[#121826]">{{ fr: 'Sources officielles', en: 'Official sources', ru: 'Официальные источники', ar: 'المصادر الرسمية' }[guide.locale]}</h2><ul className="mt-5 space-y-3">{guide.sources.map((source) => <li key={source.href}><a href={source.href} className="text-[#8a6728] underline underline-offset-4" target="_blank" rel="noopener noreferrer">{source.label}</a></li>)}</ul></section>}
 
+
+            {editorial && guide.theme === "tax" && <p className="text-sm leading-7 text-[#3e4857]">{{fr:"Les exemples illustrent les règles générales ; la qualification de vos revenus et l’application d’une convention dépendent de votre situation personnelle.",en:"The examples illustrate general rules; income classification and treaty application depend on individual circumstances.",ru:"Примеры иллюстрируют общие правила; классификация доходов и применение соглашений зависят от индивидуальных обстоятельств.",ar:"توضح الأمثلة القواعد العامة، بينما يعتمد تصنيف الدخل وتطبيق الاتفاقيات على الظروف الفردية."}[guide.locale]}</p>}
             <section id="bosphoras" className="border border-[#d8c7a1] bg-white p-7 md:p-9">
-              <h2 className="flex items-center gap-3 font-serif text-3xl tracking-[-0.03em] text-[#121826]"><ShieldCheck className="text-[#8a6728]" />{labels.help}</h2>
-              <p className="mt-5 text-base leading-8 text-[#3e4857]">{guide.bosphorasHelp}</p>
-              <Link href={assessmentHref} className="mt-7 inline-flex items-center justify-center gap-3 border border-[#8a6728] px-7 py-4 text-xs font-bold uppercase tracking-[0.15em] text-[#8a6728] transition hover:bg-[#fffaf0]">{labels.cta}<ArrowRight size={15} /></Link>
+              <h2 className="flex items-center gap-3 font-serif text-3xl tracking-[-0.03em] text-[#121826]">{!editorial && <ShieldCheck className="text-[#8a6728]" />}{editorial ? ({fr:"Votre projet en Turquie",en:"Your plans in Turkey",ru:"Ваш проект в Турции",ar:"مشروعك في تركيا"}[guide.locale]) : labels.help}</h2>
+              <p className="mt-5 text-base leading-8 text-[#3e4857]">{guide.bosphorasHelp}</p>{editorial && <p className="mt-3 text-base leading-8 text-[#3e4857]">{{fr:"Présentez votre situation, vos objectifs et votre calendrier. Nous organisons les prochaines étapes et, lorsque nécessaire, la mise en relation avec des professionnels indépendants.",en:"Tell us about your circumstances, goals and timetable. We coordinate the next steps and, where appropriate, introductions to independent professionals.",ru:"Расскажите о своей ситуации, целях и сроках. Мы поможем организовать следующие шаги и при необходимости связаться с независимыми специалистами.",ar:"أطلعنا على وضعك وأهدافك وجدولك الزمني. ننسق الخطوات التالية والتواصل مع المختصين المستقلين عند الحاجة."}[guide.locale]}</p>}
+              <Link href={assessmentHref} className="mt-7 inline-flex items-center justify-center gap-3 border border-[#8a6728] px-7 py-4 text-xs font-bold uppercase tracking-[0.15em] text-[#8a6728] transition hover:bg-[#fffaf0]">{editorial ? ({fr:"Parlons de votre projet",en:"Discuss your plans",ru:"Обсудить ваш проект",ar:"ناقش مشروعك معنا"}[guide.locale]) : labels.cta}<ArrowRight size={15} /></Link>
             </section>
 
             <section id="faq" className="border border-[#d8c7a1] bg-[#fffaf0] p-7 md:p-9">
@@ -130,6 +132,8 @@ export function HighPotentialGuideRenderer({ guide }: { guide: HighPotentialGuid
                 {guide.faqs.map((faq) => <div key={faq.question} className="border-t border-[#d8c7a1] pt-5"><h3 className="font-serif text-2xl text-[#121826]">{faq.question}</h3><p className="mt-3 text-base leading-8 text-[#3e4857]">{faq.answer}</p></div>)}
               </div>
             </section>
+
+            {guide.sources && <section id="sources" className="border-t border-[#d8c7a1] pt-7"><h2 className="font-serif text-3xl text-[#121826]">{{ fr: 'Sources officielles', en: 'Official sources', ru: 'Официальные источники', ar: 'المصادر الرسمية' }[guide.locale]}</h2><ul className="mt-5 space-y-3">{guide.sources.map((source) => <li key={source.href}><a href={source.href} className="text-[#8a6728] underline underline-offset-4" target="_blank" rel="noopener noreferrer">{source.label}</a></li>)}</ul></section>}
 
             <section className="border border-[#d8c7a1] bg-white p-7 md:p-9">
               <h2 className="font-serif text-3xl tracking-[-0.03em] text-[#121826]">{labels.links}</h2>
