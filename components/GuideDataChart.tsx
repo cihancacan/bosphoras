@@ -433,6 +433,69 @@ const charts: Record<string, ChartSpec | undefined> = {
         ]
       }
     ]
+  },
+  "foreign-dividends": {
+    "section": "personal-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          100000,
+          85000,
+          75000
+        ]
+      }
+    ]
+  },
+  "foreign-capital-gains": {
+    "section": "personal-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          200000,
+          350000,
+          10000,
+          140000
+        ]
+      }
+    ]
+  },
+  "inheritance-one-percent": {
+    "section": "personal-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          240000,
+          990000,
+          3090000
+        ]
+      },
+      {
+        "column": 2,
+        "values": [
+          100000,
+          250000,
+          550000
+        ]
+      }
+    ]
+  },
+  "foreign-pension-tax": {
+    "section": "personal-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          36000,
+          12000,
+          9600,
+          4800,
+          9600
+        ]
+      }
+    ]
   }
 };
 const captions: Record<Locale,string> = { fr: 'Visualisation des montants du tableau', en: 'Visual comparison of the amounts above', ru: 'Наглядное сравнение сумм из таблицы', ar: 'مقارنة مرئية للمبالغ في الجدول' };
