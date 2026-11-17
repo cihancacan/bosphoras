@@ -73,7 +73,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Ministère des Affaires étrangères : conditions générales d'entrée"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "e-Visa : informations officielles et frais"
         },
         {
@@ -85,7 +85,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Direction de la migration : catégories de titres de séjour"
         },
         {
-          "href": "https://www.visa.gov.tr/",
+          "href": "https://www.konsolosluk.gov.tr/Visa",
           "label": "Portail de pré-demande du visa consulaire"
         }
       ]
@@ -160,7 +160,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Foreign Ministry: general visa rules"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "e-Visa: official application information and fees"
         },
         {
@@ -172,7 +172,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Migration authority: residence permit categories"
         },
         {
-          "href": "https://www.visa.gov.tr/",
+          "href": "https://www.konsolosluk.gov.tr/Visa",
           "label": "Official consular visa pre-application portal"
         }
       ]
@@ -247,7 +247,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "МИД Турции: общие правила въезда"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "e-Visa: официальная информация и сборы"
         },
         {
@@ -259,7 +259,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Миграционная служба: виды ВНЖ"
         },
         {
-          "href": "https://www.visa.gov.tr/",
+          "href": "https://www.konsolosluk.gov.tr/Visa",
           "label": "Портал предварительного заявления на консульскую визу"
         }
       ]
@@ -334,7 +334,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "وزارة الخارجية: القواعد العامة للدخول"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "التأشيرة الإلكترونية: معلومات الطلب والرسوم"
         },
         {
@@ -346,7 +346,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "إدارة الهجرة: أنواع تصاريح الإقامة"
         },
         {
-          "href": "https://www.visa.gov.tr/",
+          "href": "https://www.konsolosluk.gov.tr/Visa",
           "label": "منصة الطلب الأولي للتأشيرة القنصلية"
         }
       ]
@@ -423,11 +423,11 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Direction de la migration : conditions d'entrée et interdictions"
         },
         {
-          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-turkey-with-their-national-id_s.en.mfa",
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
           "label": "Pays admis avec carte d'identité"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "e-Visa : informations officielles et frais"
         }
       ]
@@ -502,11 +502,11 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Migration authority: entry requirements and entry bans"
         },
         {
-          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-turkey-with-their-national-id_s.en.mfa",
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
           "label": "Countries eligible for national ID entry"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "e-Visa: official application information and fees"
         }
       ]
@@ -581,11 +581,11 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Миграционная служба: условия и запреты на въезд"
         },
         {
-          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-turkey-with-their-national-id_s.en.mfa",
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
           "label": "Страны с правом въезда по удостоверению личности"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "e-Visa: официальная информация и сборы"
         }
       ]
@@ -660,11 +660,11 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "إدارة الهجرة: شروط الدخول والمنع"
         },
         {
-          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-turkey-with-their-national-id_s.en.mfa",
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
           "label": "الدول المؤهلة للدخول ببطاقة الهوية"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "التأشيرة الإلكترونية: معلومات الطلب والرسوم"
         }
       ]
@@ -680,7 +680,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
         {
           "id": "visa-detail-1",
           "title": "Pays bénéficiant d’une dispense de visa",
-          "body": "Les durées présentées concernent les passeports ordinaires pour un court séjour admissible. Le plafond général de 90 jours sur 180 s’applique, avec des modalités particulières prévues par certains accords. Une limite par entrée peut se cumuler avec ce plafond : c’est notamment le cas de l’Indonésie et de la Russie. Ce tableau ne concerne pas les visas de travail ou d’études.",
+          "body": "Les durées présentées concernent les passeports ordinaires pour un court séjour admissible. Le plafond général de 90 jours sur 180 s’applique, avec des modalités particulières prévues par certains accords. Une limite par entrée peut se cumuler avec ce plafond : c’est notamment le cas de l’Indonésie et de la Russie. Ce tableau ne concerne pas les visas de travail ou d’études. Les lignes visa obligatoire précisent également la durée et les conditions de l’e-Visa lorsque le ministère les publie.",
           "table": {
             "headers": [
               "Nationalité",
@@ -840,28 +840,128 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
                 "Jusqu’à 90 jours"
               ],
               [
-                "Algérie",
-                "Moins de 15 ou plus de 50 ans : jusqu’à 90 jours ; sinon visa"
-              ],
-              [
-                "Irak",
-                "Moins de 15 ou plus de 50 ans : jusqu’à 90 jours ; sinon visa"
-              ],
-              [
                 "Inde",
-                "Visa requis ; e-Visa selon admissibilité"
+                "e-Visa sous conditions — 30 jours, 1 entrée — Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
               ],
               [
                 "Pakistan",
-                "Visa requis ; e-Visa selon admissibilité"
+                "e-Visa sous conditions — 30 jours, 1 entrée — Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Bangladesh",
+                "e-Visa sous conditions — 30 jours, 1 entrée — Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Afghanistan",
+                "e-Visa sous conditions — 30 jours, 1 entrée — Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Népal",
+                "e-Visa sous conditions — 30 jours, 1 entrée — Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Philippines",
+                "e-Visa sous conditions — 30 jours, 1 entrée — Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Palestine",
+                "e-Visa sous conditions — 30 jours, 1 entrée — Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Guinée équatoriale",
+                "e-Visa sous conditions — 30 jours, 1 entrée — Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Yémen",
+                "e-Visa sous conditions — 30 jours, 1 entrée — Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Algérie",
+                "Dispense selon l’âge ou visa — 90/180 si moins de 15 ou plus de 50 ans ; e-Visa 30 jours, 1 entrée — e-Visa : 15–18 ou 35–50 ans et justificatif admissible ; autres cas : consulat"
+              ],
+              [
+                "Irak",
+                "Dispense selon l’âge ou visa — 90/180 si moins de 15 ou plus de 50 ans ; e-Visa 30 jours, 1 entrée — 15–50 ans : justificatif admissible et conditions du portail"
+              ],
+              [
+                "Libye",
+                "Dispense selon l’âge ou visa — 90/180 si moins de 16 ou plus de 45 ans ; e-Visa 30 jours, 1 entrée — 16–45 ans : justificatif admissible et conditions du portail"
               ],
               [
                 "Égypte",
-                "Visa requis ; e-Visa selon admissibilité"
+                "Visa obligatoire — 30 jours, 1 entrée pour l’e-Visa des 15–45 ans — Moins de 15 ou plus de 45 ans : e-Visa sans condition supplémentaire ; 15–45 : justificatif admissible et compagnie agréée"
+              ],
+              [
+                "Mexique",
+                "e-Visa possible — 30 jours, 1 entrée — Conditions du portail officiel"
+              ],
+              [
+                "Vietnam",
+                "e-Visa possible — 30 jours, 1 entrée — Conditions du portail officiel"
+              ],
+              [
+                "Suriname",
+                "e-Visa possible — 30 jours, 1 entrée — Conditions du portail officiel"
+              ],
+              [
+                "Fidji",
+                "e-Visa possible — 30 jours, 1 entrée — Conditions du portail officiel"
+              ],
+              [
+                "Timor oriental",
+                "e-Visa possible — 30 jours, 1 entrée — Conditions du portail officiel"
               ],
               [
                 "Afrique du Sud",
-                "Visa requis ; e-Visa selon admissibilité"
+                "e-Visa possible — 30 jours, entrées multiples — Conditions du portail officiel"
+              ],
+              [
+                "Maurice",
+                "e-Visa possible — 30 jours, entrées multiples — Conditions du portail officiel"
+              ],
+              [
+                "Maldives",
+                "e-Visa possible — Visa de 3 mois, entrées multiples — Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Bahamas",
+                "e-Visa possible — Visa de 3 mois, entrées multiples — Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Barbade",
+                "e-Visa possible — Visa de 3 mois, entrées multiples — Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "République dominicaine",
+                "e-Visa possible — Visa de 3 mois, entrées multiples — Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Antigua-et-Barbuda",
+                "e-Visa possible — Visa de 3 mois, entrées multiples — Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Sainte-Lucie",
+                "e-Visa possible — Visa de 3 mois, entrées multiples — Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Arménie",
+                "e-Visa possible — Durée affichée lors de la demande — Selon le document de voyage"
+              ],
+              [
+                "Namibie",
+                "e-Visa possible — Durée affichée lors de la demande — Selon le document de voyage"
+              ],
+              [
+                "Syrie",
+                "Visa consulaire — Selon visa délivré — Demande auprès d’une représentation turque"
+              ],
+              [
+                "Tadjikistan",
+                "Visa consulaire — Selon visa délivré — Demande auprès d’une représentation turque"
+              ],
+              [
+                "Turkménistan",
+                "Visa consulaire — Selon visa délivré — Demande auprès d’une représentation turque"
               ]
             ]
           }
@@ -921,8 +1021,8 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Ministère des Affaires étrangères : conditions générales d'entrée"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
-          "label": "e-Visa : informations officielles et frais"
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "label": "Portail officiel e-Visa : modalités et paiement"
         }
       ]
     },
@@ -935,7 +1035,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
         {
           "id": "visa-detail-1",
           "title": "Visiting without a visa: country table",
-          "body": "The durations cover ordinary passports for qualifying short stays. The general ceiling is 90 in 180 days, with specific agreement-based counting rules. A per-entry limit can exist alongside that ceiling, notably for Indonesian and Russian passports. The table does not cover work or study visas.",
+          "body": "The durations cover ordinary passports for qualifying short stays. The general ceiling is 90 in 180 days, with specific agreement-based counting rules. A per-entry limit can exist alongside that ceiling, notably for Indonesian and Russian passports. The table does not cover work or study visas. Visa-required rows also include e-Visa duration and eligibility conditions where published by the ministry.",
           "table": {
             "headers": [
               "Nationality",
@@ -1095,28 +1195,128 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
                 "Up to 90 days"
               ],
               [
-                "Algeria",
-                "Under 15 or over 50: up to 90 days; otherwise visa"
-              ],
-              [
-                "Iraq",
-                "Under 15 or over 50: up to 90 days; otherwise visa"
-              ],
-              [
                 "India",
-                "Visa required; e-Visa if eligible"
+                "Conditional e-Visa — 30 days, single entry — Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
               ],
               [
                 "Pakistan",
-                "Visa required; e-Visa if eligible"
+                "Conditional e-Visa — 30 days, single entry — Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Bangladesh",
+                "Conditional e-Visa — 30 days, single entry — Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Afghanistan",
+                "Conditional e-Visa — 30 days, single entry — Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Nepal",
+                "Conditional e-Visa — 30 days, single entry — Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Philippines",
+                "Conditional e-Visa — 30 days, single entry — Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Palestine",
+                "Conditional e-Visa — 30 days, single entry — Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Equatorial Guinea",
+                "Conditional e-Visa — 30 days, single entry — Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Yemen",
+                "Conditional e-Visa — 30 days, single entry — Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Algeria",
+                "Age-based exemption or visa — 90/180 if under 15 or over 50; e-Visa 30 days, single entry — Conditional e-Visa ages 15–18 or 35–50 with eligible supporting document; otherwise consulate"
+              ],
+              [
+                "Iraq",
+                "Age-based exemption or visa — 90/180 if under 15 or over 50; e-Visa 30 days, single entry — Ages 15–50: eligible supporting document plus portal conditions"
+              ],
+              [
+                "Libya",
+                "Age-based exemption or visa — 90/180 if under 16 or over 45; e-Visa 30 days, single entry — Ages 16–45: eligible supporting document and portal conditions"
               ],
               [
                 "Egypt",
-                "Visa required; e-Visa if eligible"
+                "Visa required — 30 days, single entry for ages 15–45 via e-Visa — Under 15 or over 45: no extra e-Visa condition; ages 15–45: eligible supporting document and approved carrier"
+              ],
+              [
+                "Mexico",
+                "e-Visa available — 30 days, single entry — Official portal conditions"
+              ],
+              [
+                "Vietnam",
+                "e-Visa available — 30 days, single entry — Official portal conditions"
+              ],
+              [
+                "Suriname",
+                "e-Visa available — 30 days, single entry — Official portal conditions"
+              ],
+              [
+                "Fiji",
+                "e-Visa available — 30 days, single entry — Official portal conditions"
+              ],
+              [
+                "Timor-Leste",
+                "e-Visa available — 30 days, single entry — Official portal conditions"
               ],
               [
                 "South Africa",
-                "Visa required; e-Visa if eligible"
+                "e-Visa available — 30 days, multiple entry — Official portal conditions"
+              ],
+              [
+                "Mauritius",
+                "e-Visa available — 30 days, multiple entry — Official portal conditions"
+              ],
+              [
+                "Maldives",
+                "e-Visa available — Three-month, multiple-entry visa — Read the permitted stay on the issued visa"
+              ],
+              [
+                "Bahamas",
+                "e-Visa available — Three-month, multiple-entry visa — Read the permitted stay on the issued visa"
+              ],
+              [
+                "Barbados",
+                "e-Visa available — Three-month, multiple-entry visa — Read the permitted stay on the issued visa"
+              ],
+              [
+                "Dominican Republic",
+                "e-Visa available — Three-month, multiple-entry visa — Read the permitted stay on the issued visa"
+              ],
+              [
+                "Antigua and Barbuda",
+                "e-Visa available — Three-month, multiple-entry visa — Read the permitted stay on the issued visa"
+              ],
+              [
+                "Saint Lucia",
+                "e-Visa available — Three-month, multiple-entry visa — Read the permitted stay on the issued visa"
+              ],
+              [
+                "Armenia",
+                "e-Visa available — Duration displayed during application — Depends on travel document"
+              ],
+              [
+                "Namibia",
+                "e-Visa available — Duration displayed during application — Depends on travel document"
+              ],
+              [
+                "Syria",
+                "Consular visa — As issued — Apply through a Turkish mission"
+              ],
+              [
+                "Tajikistan",
+                "Consular visa — As issued — Apply through a Turkish mission"
+              ],
+              [
+                "Turkmenistan",
+                "Consular visa — As issued — Apply through a Turkish mission"
               ]
             ]
           }
@@ -1176,8 +1376,8 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Foreign Ministry: general visa rules"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
-          "label": "e-Visa: official application information and fees"
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "label": "Official e-Visa portal: applications and payment"
         }
       ]
     },
@@ -1190,7 +1390,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
         {
           "id": "visa-detail-1",
           "title": "Таблица стран с безвизовым режимом",
-          "body": "Указаны обычные паспорта и разрешённые краткосрочные цели. Общий предел — 90 дней из 180, при этом отдельные соглашения имеют собственные правила подсчёта. Ограничение за один въезд может действовать вместе с общим пределом, например для Индонезии и России. Работа и учёба регулируются отдельно.",
+          "body": "Указаны обычные паспорта и разрешённые краткосрочные цели. Общий предел — 90 дней из 180, при этом отдельные соглашения имеют собственные правила подсчёта. Ограничение за один въезд может действовать вместе с общим пределом, например для Индонезии и России. Работа и учёба регулируются отдельно. Для визовых стран также указаны сроки и условия электронной визы, опубликованные МИД.",
           "table": {
             "headers": [
               "Гражданство",
@@ -1350,28 +1550,128 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
                 "До 90 дней"
               ],
               [
-                "Алжир",
-                "Младше 15 или старше 50: до 90 дней; иначе виза"
-              ],
-              [
-                "Ирак",
-                "Младше 15 или старше 50: до 90 дней; иначе виза"
-              ],
-              [
                 "Индия",
-                "Нужна виза; e-Visa при наличии права"
+                "Электронная виза при условиях — 30 дней, однократная — Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
               ],
               [
                 "Пакистан",
-                "Нужна виза; e-Visa при наличии права"
+                "Электронная виза при условиях — 30 дней, однократная — Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Бангладеш",
+                "Электронная виза при условиях — 30 дней, однократная — Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Афганистан",
+                "Электронная виза при условиях — 30 дней, однократная — Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Непал",
+                "Электронная виза при условиях — 30 дней, однократная — Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Филиппины",
+                "Электронная виза при условиях — 30 дней, однократная — Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Палестина",
+                "Электронная виза при условиях — 30 дней, однократная — Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Экваториальная Гвинея",
+                "Электронная виза при условиях — 30 дней, однократная — Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Йемен",
+                "Электронная виза при условиях — 30 дней, однократная — Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Алжир",
+                "Освобождение по возрасту или виза — 90/180 до 15 или старше 50; электронная виза 30 дней, один въезд — Электронная виза для 15–18 или 35–50 лет с подходящим документом; иначе консульство"
+              ],
+              [
+                "Ирак",
+                "Освобождение по возрасту или виза — 90/180 до 15 или старше 50; электронная виза 30 дней, один въезд — 15–50 лет: подходящий документ и условия портала"
+              ],
+              [
+                "Ливия",
+                "Освобождение по возрасту или виза — 90/180 до 16 или старше 45; электронная виза 30 дней, один въезд — 16–45 лет: подходящий документ и условия портала"
               ],
               [
                 "Египет",
-                "Нужна виза; e-Visa при наличии права"
+                "Виза обязательна — 30 дней, один въезд для электронной визы в 15–45 лет — До 15 или старше 45: без дополнительных условий; 15–45: подходящий документ и разрешённая авиакомпания"
+              ],
+              [
+                "Мексика",
+                "Электронная виза доступна — 30 дней, один въезд — Условия официального портала"
+              ],
+              [
+                "Вьетнам",
+                "Электронная виза доступна — 30 дней, один въезд — Условия официального портала"
+              ],
+              [
+                "Суринам",
+                "Электронная виза доступна — 30 дней, один въезд — Условия официального портала"
+              ],
+              [
+                "Фиджи",
+                "Электронная виза доступна — 30 дней, один въезд — Условия официального портала"
+              ],
+              [
+                "Восточный Тимор",
+                "Электронная виза доступна — 30 дней, один въезд — Условия официального портала"
               ],
               [
                 "ЮАР",
-                "Нужна виза; e-Visa при наличии права"
+                "Электронная виза доступна — 30 дней, многократная — Условия официального портала"
+              ],
+              [
+                "Маврикий",
+                "Электронная виза доступна — 30 дней, многократная — Условия официального портала"
+              ],
+              [
+                "Мальдивы",
+                "Электронная виза доступна — Трёхмесячная, многократная — Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Багамы",
+                "Электронная виза доступна — Трёхмесячная, многократная — Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Барбадос",
+                "Электронная виза доступна — Трёхмесячная, многократная — Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Доминиканская Республика",
+                "Электронная виза доступна — Трёхмесячная, многократная — Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Антигуа и Барбуда",
+                "Электронная виза доступна — Трёхмесячная, многократная — Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Сент-Люсия",
+                "Электронная виза доступна — Трёхмесячная, многократная — Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Армения",
+                "Электронная виза доступна — Срок показывается при подаче — Зависит от проездного документа"
+              ],
+              [
+                "Намибия",
+                "Электронная виза доступна — Срок показывается при подаче — Зависит от проездного документа"
+              ],
+              [
+                "Сирия",
+                "Консульская виза — Согласно выданной визе — Подача в турецкое представительство"
+              ],
+              [
+                "Таджикистан",
+                "Консульская виза — Согласно выданной визе — Подача в турецкое представительство"
+              ],
+              [
+                "Туркменистан",
+                "Консульская виза — Согласно выданной визе — Подача в турецкое представительство"
               ]
             ]
           }
@@ -1431,8 +1731,8 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "МИД Турции: общие правила въезда"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
-          "label": "e-Visa: официальная информация и сборы"
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "label": "Официальный портал электронной визы: оформление и оплата"
         }
       ]
     },
@@ -1445,7 +1745,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
         {
           "id": "visa-detail-1",
           "title": "جدول البلدان المعفاة من التأشيرة",
-          "body": "تخص المدد الجوازات العادية والزيارات القصيرة المسموح بها. السقف العام 90 يوماً خلال 180 يوماً مع قواعد خاصة لبعض الاتفاقيات. وقد يجتمع حد الزيارة الواحدة مع الحد الإجمالي، كما في إندونيسيا وروسيا. ولا يشمل الجدول تأشيرات العمل أو الدراسة.",
+          "body": "تخص المدد الجوازات العادية والزيارات القصيرة المسموح بها. السقف العام 90 يوماً خلال 180 يوماً مع قواعد خاصة لبعض الاتفاقيات. وقد يجتمع حد الزيارة الواحدة مع الحد الإجمالي، كما في إندونيسيا وروسيا. ولا يشمل الجدول تأشيرات العمل أو الدراسة. وتوضح صفوف التأشيرة الإلزامية مدة الإلكترونية وشروطها عندما تنشرها الوزارة.",
           "table": {
             "headers": [
               "الجنسية",
@@ -1605,28 +1905,128 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
                 "حتى 90 يوماً"
               ],
               [
-                "الجزائر",
-                "دون 15 أو فوق 50 عاماً: حتى 90 يوماً؛ وإلا تأشيرة"
-              ],
-              [
-                "العراق",
-                "دون 15 أو فوق 50 عاماً: حتى 90 يوماً؛ وإلا تأشيرة"
-              ],
-              [
                 "الهند",
-                "تأشيرة مطلوبة؛ إلكترونية عند التأهل"
+                "تأشيرة إلكترونية بشروط — 30 يوماً، دخول واحد — تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
               ],
               [
                 "باكستان",
-                "تأشيرة مطلوبة؛ إلكترونية عند التأهل"
+                "تأشيرة إلكترونية بشروط — 30 يوماً، دخول واحد — تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "بنغلاديش",
+                "تأشيرة إلكترونية بشروط — 30 يوماً، دخول واحد — تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "أفغانستان",
+                "تأشيرة إلكترونية بشروط — 30 يوماً، دخول واحد — تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "نيبال",
+                "تأشيرة إلكترونية بشروط — 30 يوماً، دخول واحد — تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "الفلبين",
+                "تأشيرة إلكترونية بشروط — 30 يوماً، دخول واحد — تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "فلسطين",
+                "تأشيرة إلكترونية بشروط — 30 يوماً، دخول واحد — تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "غينيا الاستوائية",
+                "تأشيرة إلكترونية بشروط — 30 يوماً، دخول واحد — تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "اليمن",
+                "تأشيرة إلكترونية بشروط — 30 يوماً، دخول واحد — تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "الجزائر",
+                "إعفاء حسب العمر أو تأشيرة — 90/180 دون 15 أو فوق 50؛ الإلكترونية 30 يوماً لدخول واحد — الإلكترونية للأعمار 15–18 أو 35–50 مع وثيقة مؤهلة؛ وإلا القنصلية"
+              ],
+              [
+                "العراق",
+                "إعفاء حسب العمر أو تأشيرة — 90/180 دون 15 أو فوق 50؛ الإلكترونية 30 يوماً لدخول واحد — 15–50 عاماً: وثيقة مؤهلة وشروط المنصة"
+              ],
+              [
+                "ليبيا",
+                "إعفاء حسب العمر أو تأشيرة — 90/180 دون 16 أو فوق 45؛ الإلكترونية 30 يوماً لدخول واحد — 16–45 عاماً: وثيقة مؤهلة وشروط المنصة"
               ],
               [
                 "مصر",
-                "تأشيرة مطلوبة؛ إلكترونية عند التأهل"
+                "تأشيرة إلزامية — 30 يوماً، دخول واحد للإلكترونية بين 15 و45 — دون 15 أو فوق 45: دون شرط إضافي؛ 15–45: وثيقة مؤهلة وناقل معتمد"
+              ],
+              [
+                "المكسيك",
+                "تأشيرة إلكترونية متاحة — 30 يوماً، دخول واحد — شروط المنصة الرسمية"
+              ],
+              [
+                "فيتنام",
+                "تأشيرة إلكترونية متاحة — 30 يوماً، دخول واحد — شروط المنصة الرسمية"
+              ],
+              [
+                "سورينام",
+                "تأشيرة إلكترونية متاحة — 30 يوماً، دخول واحد — شروط المنصة الرسمية"
+              ],
+              [
+                "فيجي",
+                "تأشيرة إلكترونية متاحة — 30 يوماً، دخول واحد — شروط المنصة الرسمية"
+              ],
+              [
+                "تيمور الشرقية",
+                "تأشيرة إلكترونية متاحة — 30 يوماً، دخول واحد — شروط المنصة الرسمية"
               ],
               [
                 "جنوب إفريقيا",
-                "تأشيرة مطلوبة؛ إلكترونية عند التأهل"
+                "تأشيرة إلكترونية متاحة — 30 يوماً، دخول متعدد — شروط المنصة الرسمية"
+              ],
+              [
+                "موريشيوس",
+                "تأشيرة إلكترونية متاحة — 30 يوماً، دخول متعدد — شروط المنصة الرسمية"
+              ],
+              [
+                "المالديف",
+                "تأشيرة إلكترونية متاحة — تأشيرة ثلاثة أشهر، دخول متعدد — مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "الباهاما",
+                "تأشيرة إلكترونية متاحة — تأشيرة ثلاثة أشهر، دخول متعدد — مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "باربادوس",
+                "تأشيرة إلكترونية متاحة — تأشيرة ثلاثة أشهر، دخول متعدد — مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "جمهورية الدومينيكان",
+                "تأشيرة إلكترونية متاحة — تأشيرة ثلاثة أشهر، دخول متعدد — مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "أنتيغوا وباربودا",
+                "تأشيرة إلكترونية متاحة — تأشيرة ثلاثة أشهر، دخول متعدد — مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "سانت لوسيا",
+                "تأشيرة إلكترونية متاحة — تأشيرة ثلاثة أشهر، دخول متعدد — مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "أرمينيا",
+                "تأشيرة إلكترونية متاحة — المدة تظهر عند الطلب — بحسب وثيقة السفر"
+              ],
+              [
+                "ناميبيا",
+                "تأشيرة إلكترونية متاحة — المدة تظهر عند الطلب — بحسب وثيقة السفر"
+              ],
+              [
+                "سوريا",
+                "تأشيرة قنصلية — وفق التأشيرة الصادرة — الطلب لدى ممثلية تركية"
+              ],
+              [
+                "طاجيكستان",
+                "تأشيرة قنصلية — وفق التأشيرة الصادرة — الطلب لدى ممثلية تركية"
+              ],
+              [
+                "تركمانستان",
+                "تأشيرة قنصلية — وفق التأشيرة الصادرة — الطلب لدى ممثلية تركية"
               ]
             ]
           }
@@ -1686,8 +2086,8 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "وزارة الخارجية: القواعد العامة للدخول"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
-          "label": "التأشيرة الإلكترونية: معلومات الطلب والرسوم"
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "label": "منصة التأشيرة الإلكترونية الرسمية: الطلب والدفع"
         }
       ]
     }
@@ -1759,7 +2159,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Ministère des Affaires étrangères : conditions générales d'entrée"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "e-Visa : informations officielles et frais"
         },
         {
@@ -1842,7 +2242,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Foreign Ministry: general visa rules"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "e-Visa: official application information and fees"
         },
         {
@@ -1925,7 +2325,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "МИД Турции: общие правила въезда"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "e-Visa: официальная информация и сборы"
         },
         {
@@ -2008,7 +2408,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "وزارة الخارجية: القواعد العامة للدخول"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "التأشيرة الإلكترونية: معلومات الطلب والرسوم"
         },
         {
@@ -2093,7 +2493,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Ministère des Affaires étrangères : conditions générales d'entrée"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "e-Visa : informations officielles et frais"
         },
         {
@@ -2176,7 +2576,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "Foreign Ministry: general visa rules"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "e-Visa: official application information and fees"
         },
         {
@@ -2259,7 +2659,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "МИД Турции: общие правила въезда"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "e-Visa: официальная информация и сборы"
         },
         {
@@ -2342,7 +2742,7 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
           "label": "وزارة الخارجية: القواعد العامة للدخول"
         },
         {
-          "href": "https://www.evisa.gov.tr/en/tour/thats/",
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
           "label": "التأشيرة الإلكترونية: معلومات الطلب والرسوم"
         },
         {
@@ -2356,6 +2756,3200 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
         {
           "href": "https://e-ikamet.goc.gov.tr/",
           "label": "منصة الإقامة الرسمية e-ikamet"
+        }
+      ]
+    }
+  },
+  "turkey-visa-or-evisa": {
+    "fr": {
+      "title": "Visa ou e-Visa Turquie 2026 : tableau des pays et durées",
+      "metaDescription": "Comparez 36 nationalités : visa électronique, consulat, séjour sans visa, 30 ou 90 jours, entrées multiples et conditions particulières.",
+      "shortAnswer": "Le visa électronique turc est une autorisation pour le tourisme ou le commerce, et non un permis de travail. Selon votre passeport, vous pouvez être dispensé de visa, devoir demander un e-Visa ou passer par un consulat. Voici le régime applicable à des nationalités fréquemment rencontrées, vérifié le 17 novembre 2026.",
+      "bosphorasHelp": "Bosphoras organise vos déplacements et votre installation selon la durée de séjour réellement disponible.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Visa, e-Visa ou dispense : le tableau par passeport",
+          "body": "Les lignes concernent les passeports ordinaires. Une durée de validité de trois mois n’est pas nécessairement une autorisation de présence de trois mois. Les conditions complémentaires du portail font partie de l’admissibilité.",
+          "table": {
+            "headers": [
+              "Nationalité",
+              "Régime",
+              "Durée / entrées",
+              "Conditions"
+            ],
+            "rows": [
+              [
+                "Inde",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Pakistan",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Bangladesh",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Afghanistan",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Népal",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Philippines",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Palestine",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Guinée équatoriale",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Yémen",
+                "e-Visa sous conditions",
+                "30 jours, 1 entrée",
+                "Visa ou titre de séjour valide Schengen, USA, Royaume-Uni ou Irlande ; autres critères"
+              ],
+              [
+                "Algérie",
+                "Dispense selon l’âge ou visa",
+                "90/180 si moins de 15 ou plus de 50 ans ; e-Visa 30 jours, 1 entrée",
+                "e-Visa : 15–18 ou 35–50 ans et justificatif admissible ; autres cas : consulat"
+              ],
+              [
+                "Irak",
+                "Dispense selon l’âge ou visa",
+                "90/180 si moins de 15 ou plus de 50 ans ; e-Visa 30 jours, 1 entrée",
+                "15–50 ans : justificatif admissible et conditions du portail"
+              ],
+              [
+                "Libye",
+                "Dispense selon l’âge ou visa",
+                "90/180 si moins de 16 ou plus de 45 ans ; e-Visa 30 jours, 1 entrée",
+                "16–45 ans : justificatif admissible et conditions du portail"
+              ],
+              [
+                "Égypte",
+                "Visa obligatoire",
+                "30 jours, 1 entrée pour l’e-Visa des 15–45 ans",
+                "Moins de 15 ou plus de 45 ans : e-Visa sans condition supplémentaire ; 15–45 : justificatif admissible et compagnie agréée"
+              ],
+              [
+                "Mexique",
+                "e-Visa possible",
+                "30 jours, 1 entrée",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Vietnam",
+                "e-Visa possible",
+                "30 jours, 1 entrée",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Suriname",
+                "e-Visa possible",
+                "30 jours, 1 entrée",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Fidji",
+                "e-Visa possible",
+                "30 jours, 1 entrée",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Timor oriental",
+                "e-Visa possible",
+                "30 jours, 1 entrée",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Afrique du Sud",
+                "e-Visa possible",
+                "30 jours, entrées multiples",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Maurice",
+                "e-Visa possible",
+                "30 jours, entrées multiples",
+                "Conditions du portail officiel"
+              ],
+              [
+                "Maldives",
+                "e-Visa possible",
+                "Visa de 3 mois, entrées multiples",
+                "Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Bahamas",
+                "e-Visa possible",
+                "Visa de 3 mois, entrées multiples",
+                "Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Barbade",
+                "e-Visa possible",
+                "Visa de 3 mois, entrées multiples",
+                "Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "République dominicaine",
+                "e-Visa possible",
+                "Visa de 3 mois, entrées multiples",
+                "Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Antigua-et-Barbuda",
+                "e-Visa possible",
+                "Visa de 3 mois, entrées multiples",
+                "Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Sainte-Lucie",
+                "e-Visa possible",
+                "Visa de 3 mois, entrées multiples",
+                "Vérifier la durée de présence inscrite sur le visa"
+              ],
+              [
+                "Arménie",
+                "e-Visa possible",
+                "Durée affichée lors de la demande",
+                "Selon le document de voyage"
+              ],
+              [
+                "Namibie",
+                "e-Visa possible",
+                "Durée affichée lors de la demande",
+                "Selon le document de voyage"
+              ],
+              [
+                "Syrie",
+                "Visa consulaire",
+                "Selon visa délivré",
+                "Demande auprès d’une représentation turque"
+              ],
+              [
+                "Tadjikistan",
+                "Visa consulaire",
+                "Selon visa délivré",
+                "Demande auprès d’une représentation turque"
+              ],
+              [
+                "Turkménistan",
+                "Visa consulaire",
+                "Selon visa délivré",
+                "Demande auprès d’une représentation turque"
+              ],
+              [
+                "France",
+                "Dispense de visa",
+                "90 jours sur 180",
+                "Pas de frais de visa"
+              ],
+              [
+                "Kazakhstan",
+                "Dispense de visa",
+                "90 jours sur 180",
+                "Pas de frais de visa"
+              ],
+              [
+                "Russie",
+                "Dispense de visa",
+                "60 jours par séjour",
+                "Plafond général de 90/180"
+              ],
+              [
+                "Indonésie",
+                "Dispense de visa",
+                "30 jours par entrée",
+                "90/180 au total"
+              ],
+              [
+                "Chine",
+                "Dispense de visa",
+                "90 jours sur 180",
+                "Pas de frais de visa"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "À qui s’adresse l’e-Visa ?",
+          "body": "Pour un Indien, un Pakistanais ou un Philippin, le régime ordinaire exige un visa. L’accès électronique peut être accordé avec un visa ou un titre de séjour admissible en cours de validité émis par un pays Schengen, les États-Unis, le Royaume-Uni ou l’Irlande. Le justificatif doit encore être valide lors de l’entrée en Turquie ; un e-Visa d’un autre pays n’est pas accepté comme justificatif. Un ancien visa à entrée unique déjà utilisé peut convenir si sa date de validité couvre l’entrée."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Algérie, Égypte, Irak et Libye : l’âge change les droits",
+          "body": "En Algérie, seuls certains âges entre 15 et 50 ans ouvrent le parcours électronique conditionnel, tandis que les moins de 15 ans et les plus de 50 ans sont dispensés pour le tourisme. L’Irak prévoit une règle proche mais l’e-Visa conditionnel concerne les 15–50 ans. En Libye, les seuils sont 16 et 45 ans. Pour l’Égypte, les 15–45 ans doivent notamment voyager avec Turkish Airlines, AJet, Pegasus, EgyptAir ou Air Cairo et présenter un document admissible."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Combien coûte l’e-Visa et quand le recevoir ?",
+          "body": "Le prix gouvernemental est affiché dans l’application officielle après la sélection du passeport et de la date. Il dépend de la nationalité et n’est pas un forfait universel. La demande en ligne peut être rapide ; prévoyez au moins 48 heures avant le départ. Après validation du courriel, réglez dans les 48 heures avec une carte compatible 3D Secure. Le lien de téléchargement est envoyé après paiement. Une erreur de nom ou de numéro peut rendre le visa inutilisable."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Quand choisir le visa consulaire ?",
+          "body": "Si vous ne réunissez pas les conditions électroniques, demandez le visa auprès de la représentation turque compétente. Pour travailler ou étudier, choisissez le motif approprié plutôt qu’une autorisation touristique. Le consulat peut exiger rendez-vous, documents de ressources, logement, assurance et pièces relatives au projet. Certains consulats recommandent une anticipation de trois mois."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Exemple : trois voyageurs vers Istanbul",
+          "body": "Un Français venant dix jours n’a normalement pas de frais de visa. Un Mexicain peut demander un e-Visa de 30 jours à entrée unique. Un Indien avec un titre de séjour français valide peut être éligible à un e-Visa conditionnel de 30 jours ; sans justificatif admissible, il doit suivre la voie consulaire. Chacun doit préparer ses propres documents."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "L’e-Visa permet-il de travailler ?",
+          "answer": "Non. Il est destiné au tourisme et au commerce."
+        },
+        {
+          "question": "Un titre de séjour Schengen donne-t-il automatiquement un e-Visa ?",
+          "answer": "Non. Il peut servir de justificatif lorsque le passeport est éligible et les autres conditions réunies."
+        },
+        {
+          "question": "Quel est le prix exact ?",
+          "answer": "Il apparaît sur le portail officiel avant paiement ; aucun prix unique ne s’applique à tous."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Régime des visas par nationalité — ministère turc des Affaires étrangères"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "label": "Portail officiel e-Visa : modalités et paiement"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Validité des justificatifs pour l’e-Visa"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Conditions générales des visas turcs"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Demande consulaire officielle"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey visa or e-Visa 2026: nationality and stay table",
+      "metaDescription": "Compare 36 nationalities: visa-free travel, electronic or consular visas, 30-day stays, multiple entries and conditions.",
+      "shortAnswer": "Turkey's electronic visa covers tourism and commerce, not employment. Depending on your passport, you may be visa-exempt, qualify for an e-Visa or need a consular visa. The following rules for common travel markets were checked on 17 November 2026.",
+      "bosphorasHelp": "Bosphoras coordinates travel and relocation arrangements around your actual permitted stay.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Visa, e-Visa or exemption by passport",
+          "body": "The table covers ordinary passports. A three-month visa validity is not necessarily three months of permitted presence. Additional official portal conditions form part of eligibility.",
+          "table": {
+            "headers": [
+              "Nationality",
+              "Route",
+              "Stay / entries",
+              "Conditions"
+            ],
+            "rows": [
+              [
+                "India",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Pakistan",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Bangladesh",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Afghanistan",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Nepal",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Philippines",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Palestine",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Equatorial Guinea",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Yemen",
+                "Conditional e-Visa",
+                "30 days, single entry",
+                "Valid Schengen, US, UK or Irish visa/residence permit; other conditions"
+              ],
+              [
+                "Algeria",
+                "Age-based exemption or visa",
+                "90/180 if under 15 or over 50; e-Visa 30 days, single entry",
+                "Conditional e-Visa ages 15–18 or 35–50 with eligible supporting document; otherwise consulate"
+              ],
+              [
+                "Iraq",
+                "Age-based exemption or visa",
+                "90/180 if under 15 or over 50; e-Visa 30 days, single entry",
+                "Ages 15–50: eligible supporting document plus portal conditions"
+              ],
+              [
+                "Libya",
+                "Age-based exemption or visa",
+                "90/180 if under 16 or over 45; e-Visa 30 days, single entry",
+                "Ages 16–45: eligible supporting document and portal conditions"
+              ],
+              [
+                "Egypt",
+                "Visa required",
+                "30 days, single entry for ages 15–45 via e-Visa",
+                "Under 15 or over 45: no extra e-Visa condition; ages 15–45: eligible supporting document and approved carrier"
+              ],
+              [
+                "Mexico",
+                "e-Visa available",
+                "30 days, single entry",
+                "Official portal conditions"
+              ],
+              [
+                "Vietnam",
+                "e-Visa available",
+                "30 days, single entry",
+                "Official portal conditions"
+              ],
+              [
+                "Suriname",
+                "e-Visa available",
+                "30 days, single entry",
+                "Official portal conditions"
+              ],
+              [
+                "Fiji",
+                "e-Visa available",
+                "30 days, single entry",
+                "Official portal conditions"
+              ],
+              [
+                "Timor-Leste",
+                "e-Visa available",
+                "30 days, single entry",
+                "Official portal conditions"
+              ],
+              [
+                "South Africa",
+                "e-Visa available",
+                "30 days, multiple entry",
+                "Official portal conditions"
+              ],
+              [
+                "Mauritius",
+                "e-Visa available",
+                "30 days, multiple entry",
+                "Official portal conditions"
+              ],
+              [
+                "Maldives",
+                "e-Visa available",
+                "Three-month, multiple-entry visa",
+                "Read the permitted stay on the issued visa"
+              ],
+              [
+                "Bahamas",
+                "e-Visa available",
+                "Three-month, multiple-entry visa",
+                "Read the permitted stay on the issued visa"
+              ],
+              [
+                "Barbados",
+                "e-Visa available",
+                "Three-month, multiple-entry visa",
+                "Read the permitted stay on the issued visa"
+              ],
+              [
+                "Dominican Republic",
+                "e-Visa available",
+                "Three-month, multiple-entry visa",
+                "Read the permitted stay on the issued visa"
+              ],
+              [
+                "Antigua and Barbuda",
+                "e-Visa available",
+                "Three-month, multiple-entry visa",
+                "Read the permitted stay on the issued visa"
+              ],
+              [
+                "Saint Lucia",
+                "e-Visa available",
+                "Three-month, multiple-entry visa",
+                "Read the permitted stay on the issued visa"
+              ],
+              [
+                "Armenia",
+                "e-Visa available",
+                "Duration displayed during application",
+                "Depends on travel document"
+              ],
+              [
+                "Namibia",
+                "e-Visa available",
+                "Duration displayed during application",
+                "Depends on travel document"
+              ],
+              [
+                "Syria",
+                "Consular visa",
+                "As issued",
+                "Apply through a Turkish mission"
+              ],
+              [
+                "Tajikistan",
+                "Consular visa",
+                "As issued",
+                "Apply through a Turkish mission"
+              ],
+              [
+                "Turkmenistan",
+                "Consular visa",
+                "As issued",
+                "Apply through a Turkish mission"
+              ],
+              [
+                "France",
+                "Visa-free",
+                "90 days in 180",
+                "No visa fee"
+              ],
+              [
+                "Kazakhstan",
+                "Visa-free",
+                "90 days in 180",
+                "No visa fee"
+              ],
+              [
+                "Russia",
+                "Visa-free",
+                "60 days per visit",
+                "General 90/180 ceiling"
+              ],
+              [
+                "Indonesia",
+                "Visa-free",
+                "30 days per entry",
+                "90/180 total"
+              ],
+              [
+                "China",
+                "Visa-free",
+                "90 days in 180",
+                "No visa fee"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Who qualifies for a conditional e-Visa?",
+          "body": "Ordinary Indian, Pakistani and Philippine passports require a visa. Electronic eligibility may depend on a valid visa or residence permit from a Schengen country, the US, UK or Ireland. It must remain valid at Turkish entry; electronic visas issued by other countries cannot serve as supporting documents. A previously used single-entry visa can qualify if its validity still covers arrival."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Age-dependent rules for Algeria, Egypt, Iraq and Libya",
+          "body": "Algerian electronic eligibility is restricted to certain age bands between 15 and 50; younger than 15 and older than 50 may be exempt for tourism. Iraq's conditional e-Visa covers ages 15–50. Libya uses thresholds of 16 and 45. Egyptian applicants aged 15–45 also require eligible supporting documentation and travel with Turkish Airlines, AJet, Pegasus, EgyptAir or Air Cairo."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Cost and timing",
+          "body": "The official fee appears after passport and date selection; amounts vary by nationality. Apply at least 48 hours before departure as a practical precaution. After email confirmation, pay within 48 hours using a compatible 3D Secure card. The download link arrives after payment. A mismatch in name or passport number can invalidate the document."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "When to apply through a consulate",
+          "body": "If the electronic route is unavailable, apply with the appropriate Turkish mission. Employment and study require purpose-specific procedures. A consulate may request an appointment, financial evidence, accommodation, insurance and purpose-specific documentation. Some missions advise applying three months ahead."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Three travellers visiting Istanbul",
+          "body": "A French tourist visiting ten days normally owes no visa fee. A Mexican ordinary-passport holder may obtain a 30-day single-entry e-Visa. An Indian citizen with a valid French residence permit may qualify for a conditional 30-day e-Visa; without eligible supporting documents, the consular route applies. Each traveller must prepare individual documentation."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does an e-Visa allow work?",
+          "answer": "No; it covers tourism and commerce."
+        },
+        {
+          "question": "Does a Schengen permit guarantee e-Visa eligibility?",
+          "answer": "No. Passport eligibility and other conditions still apply."
+        },
+        {
+          "question": "What is the exact fee?",
+          "answer": "The official portal displays it before payment; fees are not universal."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Visa regime by nationality — Turkish Foreign Ministry"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "label": "Official e-Visa portal: applications and payment"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Supporting document validity for e-Visa"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "General Turkish visa rules"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Official consular visa application"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Виза или e-Visa в Турцию 2026: таблица стран и сроков",
+      "metaDescription": "Сравните 36 гражданств: безвизовый въезд, электронная и консульская виза, 30 дней, многократный въезд и условия.",
+      "shortAnswer": "Электронная виза Турции предназначена для туризма и коммерческих визитов, а не работы. В зависимости от паспорта могут действовать освобождение, электронная или консульская виза. Правила в таблице проверены 17 ноября 2026 года.",
+      "bosphorasHelp": "Bosphoras организует поездки и переезд с учётом разрешённого срока пребывания.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Визовый режим по паспорту",
+          "body": "Таблица относится к обычным паспортам. Виза, действующая три месяца, не обязательно разрешает находиться в стране три месяца. Условия официального портала также обязательны.",
+          "table": {
+            "headers": [
+              "Гражданство",
+              "Режим",
+              "Срок / въезды",
+              "Условия"
+            ],
+            "rows": [
+              [
+                "Индия",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Пакистан",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Бангладеш",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Афганистан",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Непал",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Филиппины",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Палестина",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Экваториальная Гвинея",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Йемен",
+                "Электронная виза при условиях",
+                "30 дней, однократная",
+                "Действующая виза или ВНЖ Шенгена, США, Великобритании или Ирландии; дополнительные условия"
+              ],
+              [
+                "Алжир",
+                "Освобождение по возрасту или виза",
+                "90/180 до 15 или старше 50; электронная виза 30 дней, один въезд",
+                "Электронная виза для 15–18 или 35–50 лет с подходящим документом; иначе консульство"
+              ],
+              [
+                "Ирак",
+                "Освобождение по возрасту или виза",
+                "90/180 до 15 или старше 50; электронная виза 30 дней, один въезд",
+                "15–50 лет: подходящий документ и условия портала"
+              ],
+              [
+                "Ливия",
+                "Освобождение по возрасту или виза",
+                "90/180 до 16 или старше 45; электронная виза 30 дней, один въезд",
+                "16–45 лет: подходящий документ и условия портала"
+              ],
+              [
+                "Египет",
+                "Виза обязательна",
+                "30 дней, один въезд для электронной визы в 15–45 лет",
+                "До 15 или старше 45: без дополнительных условий; 15–45: подходящий документ и разрешённая авиакомпания"
+              ],
+              [
+                "Мексика",
+                "Электронная виза доступна",
+                "30 дней, один въезд",
+                "Условия официального портала"
+              ],
+              [
+                "Вьетнам",
+                "Электронная виза доступна",
+                "30 дней, один въезд",
+                "Условия официального портала"
+              ],
+              [
+                "Суринам",
+                "Электронная виза доступна",
+                "30 дней, один въезд",
+                "Условия официального портала"
+              ],
+              [
+                "Фиджи",
+                "Электронная виза доступна",
+                "30 дней, один въезд",
+                "Условия официального портала"
+              ],
+              [
+                "Восточный Тимор",
+                "Электронная виза доступна",
+                "30 дней, один въезд",
+                "Условия официального портала"
+              ],
+              [
+                "ЮАР",
+                "Электронная виза доступна",
+                "30 дней, многократная",
+                "Условия официального портала"
+              ],
+              [
+                "Маврикий",
+                "Электронная виза доступна",
+                "30 дней, многократная",
+                "Условия официального портала"
+              ],
+              [
+                "Мальдивы",
+                "Электронная виза доступна",
+                "Трёхмесячная, многократная",
+                "Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Багамы",
+                "Электронная виза доступна",
+                "Трёхмесячная, многократная",
+                "Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Барбадос",
+                "Электронная виза доступна",
+                "Трёхмесячная, многократная",
+                "Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Доминиканская Республика",
+                "Электронная виза доступна",
+                "Трёхмесячная, многократная",
+                "Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Антигуа и Барбуда",
+                "Электронная виза доступна",
+                "Трёхмесячная, многократная",
+                "Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Сент-Люсия",
+                "Электронная виза доступна",
+                "Трёхмесячная, многократная",
+                "Срок пребывания указан в выданной визе"
+              ],
+              [
+                "Армения",
+                "Электронная виза доступна",
+                "Срок показывается при подаче",
+                "Зависит от проездного документа"
+              ],
+              [
+                "Намибия",
+                "Электронная виза доступна",
+                "Срок показывается при подаче",
+                "Зависит от проездного документа"
+              ],
+              [
+                "Сирия",
+                "Консульская виза",
+                "Согласно выданной визе",
+                "Подача в турецкое представительство"
+              ],
+              [
+                "Таджикистан",
+                "Консульская виза",
+                "Согласно выданной визе",
+                "Подача в турецкое представительство"
+              ],
+              [
+                "Туркменистан",
+                "Консульская виза",
+                "Согласно выданной визе",
+                "Подача в турецкое представительство"
+              ],
+              [
+                "Франция",
+                "Без визы",
+                "90 дней из 180",
+                "Без визового сбора"
+              ],
+              [
+                "Казахстан",
+                "Без визы",
+                "90 дней из 180",
+                "Без визового сбора"
+              ],
+              [
+                "Россия",
+                "Без визы",
+                "60 дней за визит",
+                "Общий предел 90/180"
+              ],
+              [
+                "Индонезия",
+                "Без визы",
+                "30 дней за въезд",
+                "Всего 90/180"
+              ],
+              [
+                "Китай",
+                "Без визы",
+                "90 дней из 180",
+                "Без визового сбора"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Кому доступна условная электронная виза?",
+          "body": "Гражданам Индии, Пакистана и Филиппин с обычными паспортами нужна виза. Для электронной подачи может потребоваться действующая виза или ВНЖ страны Шенгена, США, Великобритании или Ирландии. Документ должен оставаться действительным при въезде; электронные визы других стран не принимаются как подтверждение. Ранее использованная однократная виза может подойти, если срок её действия не истёк."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Возрастные условия для Алжира, Египта, Ирака и Ливии",
+          "body": "В Алжире условная электронная виза доступна отдельным возрастным группам между 15 и 50 годами; лица младше 15 и старше 50 освобождаются для туризма. В Ираке условная виза охватывает возраст 15–50 лет. В Ливии пороги составляют 16 и 45 лет. Египтянам 15–45 лет нужны подходящий документ и перелёт Turkish Airlines, AJet, Pegasus, EgyptAir или Air Cairo."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Стоимость и сроки оформления",
+          "body": "Государственный сбор показывается после выбора паспорта и даты и зависит от гражданства. Желательно подать за 48 часов до вылета. После подтверждения электронной почты оплатите в течение 48 часов картой с 3D Secure. Ссылка на документ поступит после оплаты. Несовпадение имени или номера паспорта может сделать визу недействительной."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Когда обращаться в консульство",
+          "body": "Если электронная подача недоступна, обращайтесь в компетентное представительство Турции. Для работы и учёбы существуют отдельные процедуры. Могут потребоваться запись, финансовые документы, жильё, страховка и подтверждение цели. Некоторые консульства рекомендуют подавать за три месяца."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Пример: трое едут в Стамбул",
+          "body": "Французу на десять дней обычно не нужна виза. Гражданин Мексики может оформить однократную электронную визу на 30 дней. Гражданин Индии с действующим французским ВНЖ может иметь право на условную электронную визу на 30 дней; без подходящего документа потребуется консульская процедура. Документы оформляются индивидуально."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли работать по электронной визе?",
+          "answer": "Нет, она предназначена для туризма и коммерческих визитов."
+        },
+        {
+          "question": "Гарантирует ли ВНЖ Шенгена электронную визу?",
+          "answer": "Нет, важны гражданство и остальные условия."
+        },
+        {
+          "question": "Как узнать сбор?",
+          "answer": "Официальный портал показывает сумму до оплаты."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Визовые правила по гражданству — МИД Турции"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "label": "Официальный портал электронной визы: оформление и оплата"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "Срок действия подтверждающих документов"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Общие визовые правила Турции"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Официальная консульская подача"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تأشيرة تركيا أم التأشيرة الإلكترونية 2026: جدول الجنسيات والمدد",
+      "metaDescription": "قارن 36 جنسية: الإعفاء والتأشيرة الإلكترونية والقنصلية ومدد 30 يوماً والدخول المتعدد والشروط الخاصة.",
+      "shortAnswer": "تخصص التأشيرة الإلكترونية التركية للسياحة والأعمال التجارية لا للتوظيف. وقد تكون معفى أو مؤهلاً للإلكترونية أو بحاجة إلى القنصلية بحسب جوازك. تمت مراجعة قواعد الجدول في 17 نوفمبر 2026.",
+      "bosphorasHelp": "تنسق Bosphoras رحلتك وترتيبات الانتقال وفق مدة البقاء المصرح بها.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "جدول التأشيرات بحسب الجواز",
+          "body": "تخص البيانات الجوازات العادية. ولا تعني صلاحية تأشيرة لثلاثة أشهر بالضرورة حق البقاء ثلاثة أشهر. وتعد الشروط الإضافية في المنصة جزءاً من الأهلية.",
+          "table": {
+            "headers": [
+              "الجنسية",
+              "النظام",
+              "المدة / الدخول",
+              "الشروط"
+            ],
+            "rows": [
+              [
+                "الهند",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "باكستان",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "بنغلاديش",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "أفغانستان",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "نيبال",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "الفلبين",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "فلسطين",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "غينيا الاستوائية",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "اليمن",
+                "تأشيرة إلكترونية بشروط",
+                "30 يوماً، دخول واحد",
+                "تأشيرة أو إقامة سارية لشنغن أو أمريكا أو بريطانيا أو إيرلندا؛ شروط أخرى"
+              ],
+              [
+                "الجزائر",
+                "إعفاء حسب العمر أو تأشيرة",
+                "90/180 دون 15 أو فوق 50؛ الإلكترونية 30 يوماً لدخول واحد",
+                "الإلكترونية للأعمار 15–18 أو 35–50 مع وثيقة مؤهلة؛ وإلا القنصلية"
+              ],
+              [
+                "العراق",
+                "إعفاء حسب العمر أو تأشيرة",
+                "90/180 دون 15 أو فوق 50؛ الإلكترونية 30 يوماً لدخول واحد",
+                "15–50 عاماً: وثيقة مؤهلة وشروط المنصة"
+              ],
+              [
+                "ليبيا",
+                "إعفاء حسب العمر أو تأشيرة",
+                "90/180 دون 16 أو فوق 45؛ الإلكترونية 30 يوماً لدخول واحد",
+                "16–45 عاماً: وثيقة مؤهلة وشروط المنصة"
+              ],
+              [
+                "مصر",
+                "تأشيرة إلزامية",
+                "30 يوماً، دخول واحد للإلكترونية بين 15 و45",
+                "دون 15 أو فوق 45: دون شرط إضافي؛ 15–45: وثيقة مؤهلة وناقل معتمد"
+              ],
+              [
+                "المكسيك",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول واحد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "فيتنام",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول واحد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "سورينام",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول واحد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "فيجي",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول واحد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "تيمور الشرقية",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول واحد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "جنوب إفريقيا",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول متعدد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "موريشيوس",
+                "تأشيرة إلكترونية متاحة",
+                "30 يوماً، دخول متعدد",
+                "شروط المنصة الرسمية"
+              ],
+              [
+                "المالديف",
+                "تأشيرة إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر، دخول متعدد",
+                "مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "الباهاما",
+                "تأشيرة إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر، دخول متعدد",
+                "مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "باربادوس",
+                "تأشيرة إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر، دخول متعدد",
+                "مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "جمهورية الدومينيكان",
+                "تأشيرة إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر، دخول متعدد",
+                "مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "أنتيغوا وباربودا",
+                "تأشيرة إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر، دخول متعدد",
+                "مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "سانت لوسيا",
+                "تأشيرة إلكترونية متاحة",
+                "تأشيرة ثلاثة أشهر، دخول متعدد",
+                "مدة البقاء مذكورة في التأشيرة الصادرة"
+              ],
+              [
+                "أرمينيا",
+                "تأشيرة إلكترونية متاحة",
+                "المدة تظهر عند الطلب",
+                "بحسب وثيقة السفر"
+              ],
+              [
+                "ناميبيا",
+                "تأشيرة إلكترونية متاحة",
+                "المدة تظهر عند الطلب",
+                "بحسب وثيقة السفر"
+              ],
+              [
+                "سوريا",
+                "تأشيرة قنصلية",
+                "وفق التأشيرة الصادرة",
+                "الطلب لدى ممثلية تركية"
+              ],
+              [
+                "طاجيكستان",
+                "تأشيرة قنصلية",
+                "وفق التأشيرة الصادرة",
+                "الطلب لدى ممثلية تركية"
+              ],
+              [
+                "تركمانستان",
+                "تأشيرة قنصلية",
+                "وفق التأشيرة الصادرة",
+                "الطلب لدى ممثلية تركية"
+              ],
+              [
+                "فرنسا",
+                "إعفاء",
+                "90 يوماً خلال 180",
+                "دون رسوم تأشيرة"
+              ],
+              [
+                "كازاخستان",
+                "إعفاء",
+                "90 يوماً خلال 180",
+                "دون رسوم تأشيرة"
+              ],
+              [
+                "روسيا",
+                "إعفاء",
+                "60 يوماً لكل زيارة",
+                "السقف العام 90/180"
+              ],
+              [
+                "إندونيسيا",
+                "إعفاء",
+                "30 يوماً لكل دخول",
+                "إجمالي 90/180"
+              ],
+              [
+                "الصين",
+                "إعفاء",
+                "90 يوماً خلال 180",
+                "دون رسوم تأشيرة"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "من المؤهل للتأشيرة الإلكترونية المشروطة؟",
+          "body": "يحتاج حاملو الجوازات العادية الهندية والباكستانية والفلبينية إلى تأشيرة. وقد يلزم للإلكترونية وجود تأشيرة أو إقامة سارية من دولة شنغن أو الولايات المتحدة أو بريطانيا أو إيرلندا. يجب أن تبقى الوثيقة سارية عند الوصول، ولا تقبل التأشيرات الإلكترونية الصادرة من بلدان أخرى كوثائق داعمة. وقد تقبل تأشيرة دخول واحد سبق استخدامها إذا بقيت سارية."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "شروط العمر للجزائر ومصر والعراق وليبيا",
+          "body": "تقتصر الإلكترونية المشروطة للجزائريين على فئات عمرية محددة بين 15 و50 عاماً، بينما يعفى سياحياً من هم دون 15 وفوق 50. وفي العراق تشمل المشروطة الأعمار 15–50. وفي ليبيا الحدّان 16 و45. ويحتاج المصريون بين 15 و45 إلى وثيقة داعمة مؤهلة والسفر مع الخطوط التركية أو AJet أو Pegasus أو EgyptAir أو Air Cairo."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "الرسوم وموعد الطلب",
+          "body": "تظهر الرسوم الحكومية بعد تحديد الجواز والتاريخ وتختلف حسب الجنسية. يفضل الطلب قبل المغادرة بـ48 ساعة على الأقل. وبعد تأكيد البريد الإلكتروني أكمل الدفع خلال 48 ساعة ببطاقة تدعم 3D Secure. يرسل رابط التنزيل بعد الدفع. وقد يؤدي اختلاف الاسم أو رقم الجواز إلى بطلان التأشيرة."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "متى تلزم القنصلية؟",
+          "body": "إذا لم تتوفر أهلية المسار الإلكتروني، قدّم لدى الممثلية التركية المختصة. وللعمل والدراسة إجراءات منفصلة. وقد يطلب موعد وموارد مالية وسكن وتأمين ومستندات الغرض. وتنصح بعض القنصليات بالتقديم قبل ثلاثة أشهر."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "مثال: ثلاثة مسافرين إلى إسطنبول",
+          "body": "لا يحتاج الفرنسي الذي يزور عشرة أيام عادةً إلى دفع رسوم تأشيرة. ويمكن للمكسيكي الحصول على إلكترونية لمدة 30 يوماً لدخول واحد. وقد يتأهل الهندي صاحب الإقامة الفرنسية السارية لتأشيرة إلكترونية مشروطة لمدة 30 يوماً؛ وبدون الوثيقة الداعمة يلجأ للقنصلية. ويعد كل مسافر وثائقه الخاصة."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل تسمح الإلكترونية بالعمل؟",
+          "answer": "لا، تخص السياحة والأعمال التجارية."
+        },
+        {
+          "question": "هل تضمن إقامة شنغن الحصول على الإلكترونية؟",
+          "answer": "لا، يجب أن تتوافق الجنسية وبقية الشروط."
+        },
+        {
+          "question": "كيف أعرف السعر؟",
+          "answer": "تعرض المنصة الرسمية الرسوم قبل الدفع؛ لا يوجد سعر موحد."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "نظام التأشيرات حسب الجنسية — وزارة الخارجية التركية"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "label": "منصة التأشيرة الإلكترونية الرسمية: الطلب والدفع"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/info/what-are-the-criteria-for-the-validity-of-my-supporting-document-visa-or-residence-permit-from-schengen-or-oecd-member-countries/",
+          "label": "صلاحية الوثائق الداعمة للتأشيرة الإلكترونية"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "القواعد العامة للتأشيرات التركية"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "الطلب القنصلي الرسمي"
+        }
+      ]
+    }
+  },
+  "turkey-entry-requirements-foreigners": {
+    "fr": {
+      "title": "Conditions d’entrée en Turquie en 2026 : passeport, visa et contrôles",
+      "metaDescription": "Préparez l’entrée en Turquie : validité du passeport, règles de visa, justificatifs, enfants, transit et calcul du séjour.",
+      "shortAnswer": "Le passage à la frontière turque suppose un document reconnu, un droit d’entrée correspondant au motif et une durée encore disponible. Les formalités diffèrent selon le passeport et le trajet, mais les vérifications suivantes permettent de préparer un dossier complet.",
+      "bosphorasHelp": "Bosphoras peut coordonner les étapes pratiques de votre arrivée, les transferts et l’organisation de votre séjour.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Validité du passeport : la règle des 60 jours",
+          "body": "L’article 7 de la loi 6458 exige en principe une validité supérieure de 60 jours à la durée de séjour autorisée, même si le voyage personnel est plus court. Le tableau présente les trois durées usuelles. Le ministère recommande six mois. Des exceptions existent pour certains documents nationaux, accords et passeports officiels.",
+          "table": {
+            "headers": [
+              "Durée autorisée",
+              "Validité minimale à l’arrivée"
+            ],
+            "rows": [
+              [
+                "30 jours",
+                "90 jours"
+              ],
+              [
+                "60 jours",
+                "120 jours"
+              ],
+              [
+                "90 jours",
+                "150 jours"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Déterminer le régime avant l’embarquement",
+          "body": "Un Français ou un Kazakh bénéficie normalement de 90 jours sans visa sur 180 ; un Russe est limité à 60 jours par visite ; un Indonésien à 30 jours par entrée. Pour un visa électronique, comparez nom, numéro, date de naissance et date de validité avec le document utilisé. Un titre de séjour d’un autre pays ne remplace pas automatiquement le visa turc."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Pièces utiles aux frontières",
+          "body": "Préparez l’adresse précise de l’hébergement, les billets de retour ou de continuation lorsqu’ils existent, les coordonnées de l’hôte et des ressources adaptées au séjour. Selon le motif, une invitation commerciale ou un justificatif de déplacement peut être pertinent. Ne présentez pas une fausse réservation ou un document qui n’est plus valable."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Transit aérien : sortir de la zone internationale change la situation",
+          "body": "Une correspondance sans quitter la zone internationale ne nécessite généralement pas de visa turc de transit. En revanche, récupérer des bagages, changer d’aéroport entre IST et SAW ou passer au contrôle d’entrée peut nécessiter une autorisation d’entrée complète. Confirmez si votre itinéraire comporte des billets séparés et une récupération de bagages."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Enfants, double nationalité et pièces distinctes",
+          "body": "Chaque enfant doit disposer du document reconnu et du visa individuel si nécessaire. En cas de voyage sans l’un des parents, préparez les justificatifs exigés par le pays de départ ou la compagnie, notamment les autorisations de sortie. Une double nationalité ne permet pas de doubler la durée touristique. Utilisez des informations cohérentes pour éviter des difficultés de rapprochement des passages."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "À l’arrivée : documenter les jours autorisés",
+          "body": "Notez la date réelle d’entrée et la dernière date de sortie légale. Une dispense ou un visa n’est pas une promesse d’admission ; les autorités peuvent refuser l’entrée pour les motifs légaux. Une installation longue ou un emploi exige un statut distinct. Préparer ce statut en amont évite de transformer un court séjour en dépassement."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Mon passeport expire dans quatre mois ; puis-je entrer ?",
+          "answer": "Pour une autorisation de 90 jours, la règle générale demande 150 jours de validité. Vérifiez les exceptions liées au document."
+        },
+        {
+          "question": "Faut-il un visa pour changer d’aéroport ?",
+          "answer": "Oui si votre régime l’exige, car le changement implique une entrée sur le territoire."
+        },
+        {
+          "question": "Un visa garantit-il le passage de frontière ?",
+          "answer": "Non, les autorités conservent le pouvoir de contrôler l’admission."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Régime des visas par nationalité — ministère turc des Affaires étrangères"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "label": "Portail officiel e-Visa : modalités et paiement"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/passport-validity-requirements-while-entering-turkey-in-accordance-with-law-on-foreigners-and-international-protection.en.mfa",
+          "label": "Validité du passeport — article 7 de la loi 6458"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Conditions générales des visas turcs"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Demande consulaire officielle"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Demande officielle de titre de séjour"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey entry requirements 2026: passports, visa and border checks",
+      "metaDescription": "Passport validity, visa eligibility, border documents, children, airport transit and permitted stay explained for travel to Turkey.",
+      "shortAnswer": "Entry requires a recognised travel document, appropriate permission for your purpose and sufficient remaining authorised days. Rules depend on the passport and itinerary; prepare the following evidence before departure.",
+      "bosphorasHelp": "Bosphoras can coordinate arrivals, transfers and arrangements for your stay.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Passport validity: the additional 60 days rule",
+          "body": "Article 7 of Law 6458 generally requires document validity extending at least 60 days beyond the permitted stay, even when the planned visit is shorter. The table shows typical periods. The ministry recommends six months. Exceptions exist for certain national IDs, agreements and official passports.",
+          "table": {
+            "headers": [
+              "Permitted stay",
+              "Minimum validity at arrival"
+            ],
+            "rows": [
+              [
+                "30 days",
+                "90 days"
+              ],
+              [
+                "60 days",
+                "120 days"
+              ],
+              [
+                "90 days",
+                "150 days"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Establish eligibility before boarding",
+          "body": "French and Kazakh ordinary passports generally qualify for 90 days in 180; Russians have a 60-day per-visit exemption and Indonesians 30 days per entry. For an e-Visa, match name, passport number, date of birth and validity with the travel document. Residence permission elsewhere does not automatically substitute for Turkish visa permission."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Useful documents for border checks",
+          "body": "Keep the accommodation address, return or onward tickets where applicable, host contact and evidence of appropriate means. Depending on purpose, carry a business invitation or travel documentation. Do not present fictitious reservations or invalid supporting records."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Airport transit: leaving the international zone changes the rules",
+          "body": "A connection without leaving the international transit area generally does not require a Turkish transit visa. Collecting baggage, changing airports between IST and SAW or passing entry control can require full entry permission. Review separate tickets and whether checked bags must be reclaimed."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Children, dual nationality and individual documents",
+          "body": "Children require their own recognised travel documents and individual visas where required. If travelling without a parent, prepare consent or custody documentation required by the departure country or carrier. Dual nationality does not double the tourist allowance. Use consistent travel records."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Record the authorised period at arrival",
+          "body": "Note your actual entry and final lawful day. A valid visa does not guarantee admission; authorities may refuse entry on statutory grounds. Long-term residence or employment requires appropriate separate status. Plan before using up the current permission."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "My passport expires in four months. Can I enter?",
+          "answer": "A 90-day permission generally requires 150 days of document validity, unless an exception applies."
+        },
+        {
+          "question": "Do I need a visa to change airports?",
+          "answer": "If your nationality requires one, yes: transferring between airports entails entering Turkey."
+        },
+        {
+          "question": "Does a visa guarantee admission?",
+          "answer": "No; border authorities retain their powers."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Visa regime by nationality — Turkish Foreign Ministry"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "label": "Official e-Visa portal: applications and payment"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/passport-validity-requirements-while-entering-turkey-in-accordance-with-law-on-foreigners-and-international-protection.en.mfa",
+          "label": "Passport validity — Article 7 of Law 6458"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "General Turkish visa rules"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Official consular visa application"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official residence permit application"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Условия въезда в Турцию в 2026 году: паспорт, виза и контроль",
+      "metaDescription": "Срок действия паспорта, визовый режим, документы на границе, дети, транзит и сроки пребывания.",
+      "shortAnswer": "Для въезда необходим признанный документ, подходящее основание и достаточный остаток разрешённых дней. Требования зависят от паспорта и маршрута; заранее подготовьте документы.",
+      "bosphorasHelp": "Bosphoras может организовать встречу, трансферы и практические вопросы поездки.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Срок действия паспорта: дополнительные 60 дней",
+          "body": "Статья 7 закона № 6458 обычно требует, чтобы паспорт действовал минимум ещё 60 дней после разрешённого срока пребывания, даже если сама поездка короче. В таблице приведены стандартные сроки. МИД рекомендует шесть месяцев. Для некоторых удостоверений, соглашений и официальных паспортов предусмотрены исключения.",
+          "table": {
+            "headers": [
+              "Разрешённый срок",
+              "Минимальная действительность при въезде"
+            ],
+            "rows": [
+              [
+                "30 дней",
+                "90 дней"
+              ],
+              [
+                "60 дней",
+                "120 дней"
+              ],
+              [
+                "90 дней",
+                "150 дней"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Проверка режима до посадки",
+          "body": "Обычные французские и казахстанские паспорта обычно дают до 90 дней из 180 без визы; российские — до 60 дней за визит, индонезийские — 30 за въезд. Сверьте электронную визу с паспортом: имя, номер, дату рождения и сроки. ВНЖ другого государства сам по себе не заменяет турецкую визу."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Документы на границе",
+          "body": "Сохраните адрес жилья, обратный или дальнейший билет при наличии, контакты принимающей стороны и подтверждение достаточных средств. Для делового визита может быть полезно приглашение. Не предъявляйте фиктивные бронирования или просроченные документы."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Транзит и выход из международной зоны",
+          "body": "При пересадке без выхода из международной зоны турецкая транзитная виза обычно не требуется. Получение багажа, смена аэропорта IST на SAW или прохождение паспортного контроля может потребовать полноценного въездного разрешения. Уточните, нужно ли получать багаж при раздельных билетах."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Дети и двойное гражданство",
+          "body": "Каждому ребёнку нужен собственный признанный документ и отдельная виза при необходимости. При поездке без родителя подготовьте согласие и документы об опеке, предусмотренные правилами страны отправления или перевозчика. Двойное гражданство не удваивает туристический срок. Используйте согласованные сведения о поездках."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Фиксация разрешённого срока после въезда",
+          "body": "Запишите дату фактического въезда и последний разрешённый день. Виза не гарантирует допуска: пограничные органы вправе отказать по законным основаниям. Для работы или длительного проживания необходимо отдельное основание. Планируйте его до окончания текущего срока."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Паспорт действует ещё четыре месяца. Можно ли въехать?",
+          "answer": "Для 90 дней обычно нужно 150 дней действия документа, кроме исключений."
+        },
+        {
+          "question": "Нужна ли виза для смены аэропорта?",
+          "answer": "Да, если гражданство требует визы, поскольку необходимо пересечь границу."
+        },
+        {
+          "question": "Гарантирует ли виза въезд?",
+          "answer": "Нет, пограничный контроль сохраняет полномочия."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Визовые правила по гражданству — МИД Турции"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "label": "Официальный портал электронной визы: оформление и оплата"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/passport-validity-requirements-while-entering-turkey-in-accordance-with-law-on-foreigners-and-international-protection.en.mfa",
+          "label": "Срок действия паспорта — статья 7 закона № 6458"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Общие визовые правила Турции"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "Официальная консульская подача"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальная подача на ВНЖ"
+        }
+      ]
+    },
+    "ar": {
+      "title": "شروط دخول تركيا 2026: الجواز والتأشيرة والحدود",
+      "metaDescription": "صلاحية الجواز ونظام التأشيرات ومستندات الحدود وسفر الأطفال والعبور ومدد البقاء في تركيا.",
+      "shortAnswer": "يتطلب الدخول وثيقة معترفاً بها وحق دخول مناسباً للغرض ورصيداً كافياً من الأيام. تختلف الشروط حسب الجواز والمسار، فجهز المستندات قبل السفر.",
+      "bosphorasHelp": "تستطيع Bosphoras تنسيق الوصول والتنقل وترتيبات إقامتك.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "صلاحية الجواز وقاعدة الستين يوماً",
+          "body": "تتطلب المادة 7 من القانون 6458 عموماً صلاحية تزيد 60 يوماً على مدة البقاء المصرح بها حتى لو كانت الرحلة أقصر. تعرض الأمثلة المدد المعتادة. وتوصي الوزارة بستة أشهر. توجد استثناءات لبعض بطاقات الهوية والاتفاقيات والجوازات الرسمية.",
+          "table": {
+            "headers": [
+              "مدة البقاء المصرح بها",
+              "الحد الأدنى للصلاحية عند الوصول"
+            ],
+            "rows": [
+              [
+                "30 يوماً",
+                "90 يوماً"
+              ],
+              [
+                "60 يوماً",
+                "120 يوماً"
+              ],
+              [
+                "90 يوماً",
+                "150 يوماً"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "تحديد نظام الدخول قبل الصعود",
+          "body": "تتمتع الجوازات الفرنسية والكازاخستانية العادية عادةً بـ90 يوماً خلال 180؛ والروسية بـ60 يوماً للزيارة، والإندونيسية بـ30 يوماً لكل دخول. طابق الاسم ورقم الجواز وتاريخ الميلاد والصلاحية مع الإلكترونية. لا تحل إقامة دولة أخرى تلقائياً محل تأشيرة تركيا."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "مستندات مفيدة عند الحدود",
+          "body": "احتفظ بعنوان السكن وتذاكر العودة أو المتابعة عند وجودها وبيانات المضيف وإثبات الموارد المناسبة. وقد تفيد دعوة عمل بحسب الغرض. لا تقدم حجوزات وهمية أو مستندات منتهية."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "العبور وتغيير المطار",
+          "body": "لا تتطلب عادةً رحلة الربط دون مغادرة المنطقة الدولية تأشيرة عبور تركية. لكن استلام الأمتعة أو تغيير المطار بين IST وSAW أو اجتياز مراقبة الدخول قد يتطلب حق دخول كاملاً. تحقق من التذاكر المنفصلة وضرورة استلام الأمتعة."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "الأطفال والجنسية المزدوجة",
+          "body": "يحتاج كل طفل إلى وثيقته المعترف بها وتأشيرته عند اللزوم. وعند السفر دون أحد الوالدين جهز الموافقات ووثائق الحضانة التي تطلبها دولة المغادرة أو شركة النقل. لا تضاعف الجنسية المزدوجة مدة السياحة. استخدم بيانات متسقة في الرحلات."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "تسجيل المدة القانونية بعد الوصول",
+          "body": "دوّن تاريخ الدخول الفعلي وآخر يوم قانوني. لا تضمن التأشيرة القبول؛ فللسلطات حق الرفض لأسباب قانونية. ويتطلب العمل أو الإقامة الطويلة وضعاً مستقلاً. خطط قبل انتهاء مدة البقاء الحالية."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "تنتهي صلاحية جوازي بعد أربعة أشهر، هل يمكن الدخول؟",
+          "answer": "تتطلب مدة 90 يوماً عادةً صلاحية 150 يوماً ما لم ينطبق استثناء."
+        },
+        {
+          "question": "هل أحتاج تأشيرة عند تغيير المطار؟",
+          "answer": "نعم إذا كانت جنسيتك تتطلبها لأنك ستدخل الأراضي التركية."
+        },
+        {
+          "question": "هل تضمن التأشيرة الدخول؟",
+          "answer": "لا، تبقى صلاحيات الرقابة على الحدود قائمة."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "نظام التأشيرات حسب الجنسية — وزارة الخارجية التركية"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/tour/-2/",
+          "label": "منصة التأشيرة الإلكترونية الرسمية: الطلب والدفع"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/passport-validity-requirements-while-entering-turkey-in-accordance-with-law-on-foreigners-and-international-protection.en.mfa",
+          "label": "صلاحية الجواز — المادة 7 من القانون 6458"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "القواعد العامة للتأشيرات التركية"
+        },
+        {
+          "href": "https://www.konsolosluk.gov.tr/Visa",
+          "label": "الطلب القنصلي الرسمي"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة طلب تصريح الإقامة الرسمية"
+        }
+      ]
+    }
+  },
+  "travel-turkey-without-passport": {
+    "fr": {
+      "title": "Aller en Turquie sans passeport en 2026 : qui peut voyager ?",
+      "metaDescription": "Voyage sans passeport en Turquie : nationalités admises avec une carte d’identité, durée du séjour, enfants et escales.",
+      "shortAnswer": "Il est possible de voyager en Turquie sans passeport pour les citoyens de certaines nationalités qui présentent leur carte nationale d’identité reconnue. Cette facilité n’est pas ouverte à tous les résidents européens. La carte doit être un véritable document de voyage admis selon l’accord applicable.",
+      "bosphorasHelp": "Bosphoras peut organiser un trajet et un séjour adaptés aux documents de toute votre famille.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Qui peut voyager sans passeport ?",
+          "body": "Le ministère turc recense 21 nationalités et territoires concernés. Une carte française, allemande, belge, suisse, italienne ou roumaine peut notamment être utilisée suivant les règles applicables. À l’inverse, un passeport russe, britannique, kazakh ou marocain peut être dispensé de visa, mais leur carte nationale ne figure pas parmi les documents admis dans cette liste."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Une carte de séjour française n’est pas une carte d’identité française",
+          "body": "Un citoyen marocain résidant en France reste soumis au régime de son passeport marocain. Le titre de séjour français n’est pas une carte nationale d’identité de citoyen français. Le même principe vaut pour le permis de conduire et les cartes professionnelles. Un document spécial de voyage de réfugié a son propre régime."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Vérifier la date de validité",
+          "body": "Utilisez de préférence une carte valide. Des accords particuliers concernant certains documents expirés existent pour quelques nationalités, mais ils ne signifient pas que toute carte expirée est acceptée. Une extension administrative de validité dans le pays émetteur n’est pas automatiquement reconnue pour chaque étape du voyage."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Escales et trajet international",
+          "body": "Un vol direct Paris–Istanbul permet d’utiliser les documents admis par les deux pays. En revanche, une escale avec sortie de zone internationale peut imposer un passeport. Les règles d’un pays tiers restent indépendantes de l’accord turc ; vérifiez également que le transporteur accepte le document sur ce trajet."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Enfants et documents de passage",
+          "body": "Un enfant doit disposer de sa propre carte admise ou de son passeport. Un livret de famille n’est pas un document d’entrée. Lorsque les autorités remettent un justificatif de passage à une personne voyageant sans passeport, conservez-le jusqu’à la sortie. Notez les dates pour calculer la durée de séjour."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Quand emporter malgré tout le passeport ?",
+          "body": "Pour un projet de résidence, d’emploi, d’ouverture de compte ou d’achat immobilier, un passeport et des documents supplémentaires peuvent être exigés. Si votre visite dépasse le tourisme, emporter le passeport est prudent même lorsque la carte suffit à franchir la frontière. Le droit d’entrée ne remplace pas les pièces d’une démarche administrative."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Un Britannique peut-il voyager avec son permis de conduire ?",
+          "answer": "Non. Le Royaume-Uni ne figure pas dans la liste des cartes nationales admises."
+        },
+        {
+          "question": "Puis-je entrer avec ma carte de séjour française ?",
+          "answer": "Non, elle ne remplace pas le passeport."
+        },
+        {
+          "question": "Un enfant doit-il avoir sa propre carte ?",
+          "answer": "Oui, ou un autre document reconnu."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Régime des visas par nationalité — ministère turc des Affaires étrangères"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
+          "label": "Liste officielle des 21 nationalités admises avec une carte d’identité"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/passport-validity-requirements-while-entering-turkey-in-accordance-with-law-on-foreigners-and-international-protection.en.mfa",
+          "label": "Validité du passeport — article 7 de la loi 6458"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Conditions générales des visas turcs"
+        }
+      ]
+    },
+    "en": {
+      "title": "Travel to Turkey without a passport in 2026: who qualifies?",
+      "metaDescription": "National ID travel to Turkey, eligible countries, children, document validity and connecting flights explained.",
+      "shortAnswer": "Certain nationalities can visit Turkey without a passport by presenting a recognised national identity card. This is not a benefit available to all European residents. The document must be accepted under the relevant arrangements.",
+      "bosphorasHelp": "Bosphoras can organise routes and stays around your household's travel documents.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Who can travel without a passport?",
+          "body": "The Turkish ministry lists 21 eligible nationalities and territories. French, German, Belgian, Swiss, Italian and Romanian national IDs are among recognised documents under the relevant rules. Russian, British, Kazakh and Moroccan ordinary passports may be visa-exempt, but their national ID cards are not on that list."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "A residence permit is not a citizenship ID",
+          "body": "A Moroccan citizen residing in France remains subject to Moroccan passport rules. A French residence card is not a French national citizen ID. Driving licences and professional cards do not substitute. Special refugee travel documents follow distinct rules."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Document expiry and exceptions",
+          "body": "Prefer a valid national ID. Specific agreements accept certain expired documents for some nationalities, but that does not mean all expired cards qualify. Domestic extensions of validity may not be recognised at every travel stage."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Connections and transit countries",
+          "body": "Direct Paris–Istanbul travel can use documents accepted by both countries. A connection requiring entry into a third country may require a passport. Transit rules are independent of Turkey's agreement; the carrier must also accept the document for the itinerary."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Children and border records",
+          "body": "Children need their own accepted ID or passport. A family record book is not a travel document. Retain any border entry document issued to a national-ID traveller until departure and record the dates for the stay calculation."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "When carrying a passport remains advisable",
+          "body": "Residence applications, employment, banking or property procedures may require a passport and supporting documentation. If travelling beyond tourism, carry your passport where possible even if the national ID is sufficient for border entry. Entry permission does not replace procedural documentation."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can a British traveller use a driving licence?",
+          "answer": "No. The UK is not on the list of eligible national IDs."
+        },
+        {
+          "question": "Is a French residence card sufficient?",
+          "answer": "No; it does not replace a passport."
+        },
+        {
+          "question": "Do children need their own ID?",
+          "answer": "Yes, or another recognised travel document."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Visa regime by nationality — Turkish Foreign Ministry"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
+          "label": "Official list of 21 nationalities eligible for national ID entry"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/passport-validity-requirements-while-entering-turkey-in-accordance-with-law-on-foreigners-and-international-protection.en.mfa",
+          "label": "Passport validity — Article 7 of Law 6458"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "General Turkish visa rules"
+        }
+      ]
+    },
+    "ru": {
+      "title": "В Турцию без паспорта в 2026 году: кто может поехать",
+      "metaDescription": "Въезд по национальному удостоверению, список гражданств, сроки действия, дети и пересадки.",
+      "shortAnswer": "Граждане некоторых стран могут посещать Турцию без паспорта по признанному национальному удостоверению личности. Это право не распространяется на всех жителей Европы. Документ должен соответствовать действующим соглашениям.",
+      "bosphorasHelp": "Bosphoras может организовать поездку с учётом документов всех членов семьи.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Кто может путешествовать без паспорта?",
+          "body": "МИД Турции перечисляет 21 гражданство и территорию. Среди признанных документов — национальные удостоверения Франции, Германии, Бельгии, Швейцарии, Италии и Румынии. Российские, британские, казахстанские и марокканские обычные паспорта могут быть безвизовыми, но национальные карты этих стран не включены в перечень."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Карта ВНЖ не является удостоверением гражданина",
+          "body": "Гражданин Марокко, живущий во Франции, подчиняется правилам марокканского паспорта. Французский ВНЖ не является удостоверением гражданина Франции. Водительские права и служебные карты также не заменяют проездной документ. Для документов беженцев действует особый режим."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Срок действия документа",
+          "body": "Предпочтительно использовать действующую карту. Для отдельных гражданств существуют соглашения о некоторых просроченных документах, но они не распространяются на все карты. Внутреннее продление срока действия может не признаваться на всех этапах поездки."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Пересадки в других странах",
+          "body": "При прямом рейсе Париж–Стамбул используются документы, признанные обеими странами. Пересадка с выходом в третью страну может потребовать паспорт. Правила транзита независимы от турецкого соглашения; перевозчик также должен принимать документ на маршруте."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Дети и подтверждение пересечения границы",
+          "body": "Ребёнку необходимо собственное признанное удостоверение или паспорт. Семейная книжка не является проездным документом. Храните до выезда выданные на границе подтверждения для путешествующих по карте и фиксируйте даты для подсчёта пребывания."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Когда всё же взять паспорт",
+          "body": "Для ВНЖ, работы, открытия банковского счёта или покупки недвижимости могут требоваться паспорт и дополнительные документы. Если цель поездки выходит за пределы туризма, лучше взять паспорт даже при возможности въезда по карте. Право пересечения границы не заменяет документы для других процедур."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли британцу въехать по водительским правам?",
+          "answer": "Нет, Великобритания отсутствует в перечне национальных удостоверений."
+        },
+        {
+          "question": "Достаточно ли французского ВНЖ?",
+          "answer": "Нет, он не заменяет паспорт."
+        },
+        {
+          "question": "Нужна ли ребёнку собственная карта?",
+          "answer": "Да, либо иной признанный документ."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Визовые правила по гражданству — МИД Турции"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
+          "label": "Официальный список 21 гражданства для въезда по удостоверению"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/passport-validity-requirements-while-entering-turkey-in-accordance-with-law-on-foreigners-and-international-protection.en.mfa",
+          "label": "Срок действия паспорта — статья 7 закона № 6458"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Общие визовые правила Турции"
+        }
+      ]
+    },
+    "ar": {
+      "title": "السفر إلى تركيا بدون جواز سفر 2026: من يحق له ذلك؟",
+      "metaDescription": "تعرف على السفر ببطاقة الهوية الوطنية والجنسيات المؤهلة وصلاحية الوثائق والأطفال والرحلات المتصلة.",
+      "shortAnswer": "يمكن لمواطني بعض الدول زيارة تركيا دون جواز عند تقديم بطاقة هوية وطنية معترف بها. لا يشمل ذلك كل المقيمين في أوروبا، بل يجب أن تكون الوثيقة مشمولة بالاتفاق المعمول به.",
+      "bosphorasHelp": "تنسق Bosphoras المسار والسكن وفق وثائق جميع أفراد الأسرة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "من يحق له السفر دون جواز؟",
+          "body": "تسرد الخارجية التركية 21 جنسية وإقليماً. ومن الوثائق المقبولة بطاقات الهوية الفرنسية والألمانية والبلجيكية والسويسرية والإيطالية والرومانية وفق القواعد. وقد تكون الجوازات الروسية والبريطانية والكازاخستانية والمغربية معفاة من التأشيرة، لكن بطاقاتها الوطنية غير مدرجة في القائمة."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "بطاقة الإقامة ليست بطاقة مواطنة",
+          "body": "يخضع المغربي المقيم في فرنسا لقواعد جوازه المغربي. ولا تعد إقامة فرنسا بطاقة هوية وطنية لمواطن فرنسي. ولا تحل رخصة القيادة أو البطاقة المهنية محل وثيقة السفر. وتخضع وثائق اللاجئين لنظام خاص."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "صلاحية الوثيقة والاستثناءات",
+          "body": "استخدم بطاقة سارية قدر الإمكان. توجد اتفاقيات خاصة تقبل بعض الوثائق المنتهية لجنسيات محددة، ولا تشمل جميع البطاقات. وقد لا يُعترف بالتمديد المحلي للصلاحية في كل مرحلة من الرحلة."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "العبور في الدول الأخرى",
+          "body": "في رحلة مباشرة من باريس إلى إسطنبول يمكن استخدام الوثائق التي يقبلها البلدان. وقد تتطلب رحلة الربط التي تدخل دولة ثالثة جوازاً. فقواعد العبور مستقلة عن الاتفاق التركي، ويجب أن يقبل الناقل الوثيقة على المسار."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "الأطفال وإثبات الدخول",
+          "body": "يحتاج الطفل إلى بطاقة معترف بها خاصة به أو جواز. الدفتر العائلي ليس وثيقة سفر. احتفظ بأي مستند دخول يصدر عند السفر بالهوية حتى المغادرة وسجل التواريخ لحساب المدة."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "متى يستحسن حمل الجواز رغم الإعفاء؟",
+          "body": "قد تتطلب إجراءات الإقامة والعمل والحسابات البنكية وشراء العقار جوازاً ووثائق إضافية. وإذا تجاوز غرض الرحلة السياحة، يستحسن حمل الجواز حتى لو كانت البطاقة كافية عند الحدود. لا يحل حق الدخول محل وثائق الإجراءات الأخرى."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يدخل البريطاني برخصة القيادة؟",
+          "answer": "لا، المملكة المتحدة غير مدرجة في قائمة بطاقات الهوية."
+        },
+        {
+          "question": "هل تكفي بطاقة إقامة فرنسية؟",
+          "answer": "لا، لا تحل محل الجواز."
+        },
+        {
+          "question": "هل يحتاج الطفل إلى بطاقة خاصة؟",
+          "answer": "نعم، أو وثيقة سفر معترف بها أخرى."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "نظام التأشيرات حسب الجنسية — وزارة الخارجية التركية"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
+          "label": "القائمة الرسمية لـ21 جنسية يسمح لها بالدخول ببطاقة الهوية"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/passport-validity-requirements-while-entering-turkey-in-accordance-with-law-on-foreigners-and-international-protection.en.mfa",
+          "label": "صلاحية الجواز — المادة 7 من القانون 6458"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "القواعد العامة للتأشيرات التركية"
+        }
+      ]
+    }
+  },
+  "turkey-id-card-entry": {
+    "fr": {
+      "title": "Turquie avec carte d’identité en 2026 : règles et durée de séjour",
+      "metaDescription": "Carte d’identité française, européenne ou autre : documents admis, 90 jours sur 180, cas particuliers et formalités à l’arrivée.",
+      "shortAnswer": "La carte d’identité peut remplacer le passeport pour une visite touristique lorsque la nationalité et le document sont reconnus par la Turquie. Pour les Français et de nombreuses nationalités européennes admises, le séjour peut atteindre 90 jours dans les limites applicables.",
+      "bosphorasHelp": "Bosphoras prépare votre arrivée et organise les déplacements en fonction de votre document de voyage.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Le cas des voyageurs français",
+          "body": "Pour un court séjour, une carte nationale d’identité française reconnue peut être présentée à la place du passeport. Le voyageur doit respecter la durée d’exemption de visa et disposer d’un document en bon état. La règle générale permet jusqu’à 90 jours sur 180. Une simple carte Vitale, un permis de conduire ou un titre de séjour n’est pas une alternative."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Les documents nationaux admis",
+          "body": "La liste du ministère comprend 21 nationalités ou territoires. La Belgique, l’Allemagne, les Pays-Bas, la Suisse, la Pologne et la Roumanie en font notamment partie. Les voyageurs doivent produire le document national reconnu, pas une photocopie ni une carte émise par une institution privée.",
+          "table": {
+            "headers": [
+              "Nationalité ou territoire",
+              "Document et durée"
+            ],
+            "rows": [
+              [
+                "Allemagne",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Belgique",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "France",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Géorgie",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Pays-Bas",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Espagne",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Suisse",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Italie",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Chypre du Nord (selon la liste turque)",
+                "Régime spécifique ; pas de durée de 90 jours indiquée dans la fiche officielle"
+              ],
+              [
+                "Liechtenstein",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Luxembourg",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Malte",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Portugal",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Ukraine",
+                "Carte biométrique valide, trajet direct depuis l’Ukraine selon le ministère"
+              ],
+              [
+                "Grèce",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Pologne",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Bulgarie",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Hongrie",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Moldavie",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Azerbaïdjan",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Roumanie",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Ukraine : une condition de trajet spécifique",
+          "body": "La fiche officielle concernant l’Ukraine prévoit l’utilisation d’une carte biométrique valide pour le voyage direct d’Ukraine vers la Turquie. Un départ depuis un autre pays ne doit pas être présumé couvert par cette règle. Dans cette situation, le passeport constitue l’option la plus simple lorsqu’il est disponible."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Durée autorisée malgré l’absence de visa",
+          "body": "La carte d’identité ne donne pas une durée supplémentaire. Si vous avez séjourné 45 jours puis 35 jours dans la fenêtre de référence de 180 jours, il ne reste que dix jours au total à la date considérée, si aucun ancien jour n’est sorti de la fenêtre. Le compteur doit être recalculé chaque jour de présence."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "À l’aéroport et dans les hôtels",
+          "body": "Présentez votre document original au contrôle. Conservez l’éventuel justificatif d’entrée délivré si vous n’avez pas de passeport tamponné. Les hôtels peuvent demander un document d’identité pour l’enregistrement. Utilisez les mêmes données d’identité pour les réservations."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Carte d’identité et installation durable",
+          "body": "L’entrée avec une carte ne dispense pas des pièces de demande d’ikamet. Les formalités de résidence, d’emploi ou d’achat peuvent nécessiter un passeport alors que le séjour touristique admettait la carte. Si vous envisagez un changement de statut, préparez ces pièces avant le départ."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "La carte d’identité française suffit-elle pour un séjour touristique ?",
+          "answer": "Oui, lorsqu’elle est reconnue et les conditions d’entrée sont remplies."
+        },
+        {
+          "question": "La carte permet-elle de rester plus longtemps ?",
+          "answer": "Non. La durée dépend du régime de séjour, pas du choix carte ou passeport."
+        },
+        {
+          "question": "Une photocopie suffit-elle ?",
+          "answer": "Non, présentez l’original reconnu."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Régime des visas par nationalité — ministère turc des Affaires étrangères"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
+          "label": "Liste officielle des 21 nationalités admises avec une carte d’identité"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/passport-validity-requirements-while-entering-turkey-in-accordance-with-law-on-foreigners-and-international-protection.en.mfa",
+          "label": "Validité du passeport — article 7 de la loi 6458"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Conditions générales des visas turcs"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Demande officielle de titre de séjour"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey with a national ID card in 2026: entry and stay rules",
+      "metaDescription": "French and other eligible national ID cards, permitted stay, the 90-in-180 rule and special conditions for entering Turkey.",
+      "shortAnswer": "A recognised national identity card can replace a passport for a short tourist visit where Turkey accepts the nationality and document. French and many other eligible European citizens may stay up to 90 days within the relevant limits.",
+      "bosphorasHelp": "Bosphoras can coordinate your arrival and onward arrangements around the documents you use.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "French national ID holders",
+          "body": "For a short visit, an accepted French national ID can be used instead of a passport. The traveller must comply with visa-exemption limits and carry a document in good condition. The general ceiling is 90 in 180 days. A health insurance card, driving licence or residence card is not a substitute."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Recognised national documents",
+          "body": "The ministry's list comprises 21 nationalities and territories, including Belgium, Germany, the Netherlands, Switzerland, Poland and Romania. Present the original recognised document rather than a photocopy or private institution card.",
+          "table": {
+            "headers": [
+              "Nationality or territory",
+              "Document and duration"
+            ],
+            "rows": [
+              [
+                "Germany",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Belgium",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "France",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Georgia",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Netherlands",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Spain",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Switzerland",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Italy",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Northern Cyprus (as listed by Türkiye)",
+                "Special regime; official entry does not specify a 90-day limit"
+              ],
+              [
+                "Liechtenstein",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Luxembourg",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Malta",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Portugal",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Ukraine",
+                "Valid biometric ID for direct travel from Ukraine, per ministry"
+              ],
+              [
+                "Greece",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Poland",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Bulgaria",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Hungary",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Moldova",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Azerbaijan",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Romania",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Ukraine and the direct-journey condition",
+          "body": "The official Ukraine entry specifies a valid biometric ID for direct travel from Ukraine to Turkey. Departure from a different country should not be assumed to qualify. A passport is the simplest alternative when available."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Permitted stay despite visa exemption",
+          "body": "The ID card confers no extra time. If you have used 45 days and then 35 days in the reference window, only ten remain at that point, assuming no older days have moved outside the rolling period. Recalculate on each day of presence."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Airport and hotel registration",
+          "body": "Present the recognised original document at the border. Keep any entry record issued if you do not have a stamped passport. Hotels may request identity documentation for registration. Use matching personal details when booking."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "National ID and longer-term relocation",
+          "body": "Entry by national ID does not remove residence-permit documentation. Residence, work or property procedures may require a passport even where tourist entry permits an ID. Prepare these documents before changing status."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does a French national ID suffice for tourism?",
+          "answer": "Yes, if recognised and entry requirements are met."
+        },
+        {
+          "question": "Does national ID allow a longer stay?",
+          "answer": "No. The entry regime determines the duration."
+        },
+        {
+          "question": "Is a photocopy enough?",
+          "answer": "No; present the recognised original."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Visa regime by nationality — Turkish Foreign Ministry"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
+          "label": "Official list of 21 nationalities eligible for national ID entry"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/passport-validity-requirements-while-entering-turkey-in-accordance-with-law-on-foreigners-and-international-protection.en.mfa",
+          "label": "Passport validity — Article 7 of Law 6458"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "General Turkish visa rules"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official residence permit application"
+        }
+      ]
+    },
+    "ru": {
+      "title": "В Турцию по национальному удостоверению в 2026 году: правила",
+      "metaDescription": "Национальные удостоверения Франции и других стран, срок пребывания, 90 дней из 180 и особые условия.",
+      "shortAnswer": "Признанное удостоверение личности может заменить паспорт для короткой туристической поездки, если Турция допускает соответствующее гражданство и документ. Для граждан Франции и многих европейских стран возможен срок до 90 дней в рамках применимых ограничений.",
+      "bosphorasHelp": "Bosphoras может организовать встречу и дальнейшие поездки с учётом ваших документов.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Французское национальное удостоверение",
+          "body": "Для короткой поездки признанное французское удостоверение может заменить паспорт. Необходимо соблюдать безвизовый срок и иметь документ в хорошем состоянии. Общий предел составляет 90 дней из 180. Медицинская карта, водительские права и ВНЖ не заменяют документ."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Признанные национальные документы",
+          "body": "В перечне МИД — 21 гражданство и территория, включая Бельгию, Германию, Нидерланды, Швейцарию, Польшу и Румынию. Предъявляйте оригинал признанного документа, а не копию или частную карту.",
+          "table": {
+            "headers": [
+              "Гражданство или территория",
+              "Документ и срок"
+            ],
+            "rows": [
+              [
+                "Германия",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Бельгия",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Франция",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Грузия",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Нидерланды",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Испания",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Швейцария",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Италия",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Северный Кипр (по перечню Турции)",
+                "Особый режим; в официальной записи нет ограничения 90 дней"
+              ],
+              [
+                "Лихтенштейн",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Люксембург",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Мальта",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Португалия",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Украина",
+                "Действующая биометрическая карта при прямой поездке из Украины согласно МИД"
+              ],
+              [
+                "Греция",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Польша",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Болгария",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Венгрия",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Молдова",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Азербайджан",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Румыния",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Украина и условие прямого маршрута",
+          "body": "В официальной записи для Украины указана действующая биометрическая карта для прямой поездки из Украины в Турцию. Не следует считать, что выезд из другой страны подпадает под это правило. При наличии паспорта он является простым альтернативным вариантом."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Срок пребывания по удостоверению",
+          "body": "Карта не добавляет разрешённых дней. Если уже использованы 45 и 35 дней за расчётные 180 дней, в этот момент остаётся 10 дней, при условии что старые даты ещё не выпали из периода. Срок пересчитывается на каждый день пребывания."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Контроль в аэропорту и регистрация в отеле",
+          "body": "Предъявляйте оригинал на границе. Сохраняйте выданное подтверждение въезда при отсутствии штампа в паспорте. Отель может попросить документ для регистрации. Используйте одинаковые персональные данные при бронировании."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Удостоверение и длительное проживание",
+          "body": "Въезд по карте не освобождает от документов на ВНЖ. Для проживания, работы или недвижимости может потребоваться паспорт, несмотря на допуск по карте для туризма. Подготовьте документы до смены статуса."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Достаточно ли французского удостоверения для туризма?",
+          "answer": "Да, если документ признан и выполнены условия въезда."
+        },
+        {
+          "question": "Даёт ли карта больший срок?",
+          "answer": "Нет, срок определяется режимом въезда."
+        },
+        {
+          "question": "Подойдёт ли копия?",
+          "answer": "Нет, предъявляется признанный оригинал."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Визовые правила по гражданству — МИД Турции"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
+          "label": "Официальный список 21 гражданства для въезда по удостоверению"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/passport-validity-requirements-while-entering-turkey-in-accordance-with-law-on-foreigners-and-international-protection.en.mfa",
+          "label": "Срок действия паспорта — статья 7 закона № 6458"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Общие визовые правила Турции"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальная подача на ВНЖ"
+        }
+      ]
+    },
+    "ar": {
+      "title": "دخول تركيا ببطاقة الهوية 2026: الشروط ومدة البقاء",
+      "metaDescription": "بطاقات الهوية الفرنسية وغيرها من الوثائق المؤهلة وقاعدة 90 يوماً خلال 180 والشروط الخاصة للدخول.",
+      "shortAnswer": "يمكن أن تحل بطاقة الهوية المعترف بها محل الجواز للزيارة السياحية القصيرة إذا قبلت تركيا الجنسية والوثيقة. وقد تصل مدة البقاء للفرنسيين وكثير من الأوروبيين المؤهلين إلى 90 يوماً ضمن القيود المطبقة.",
+      "bosphorasHelp": "تستطيع Bosphoras تنسيق وصولك وتنقلاتك وفق وثائق السفر المستخدمة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "بطاقة الهوية الوطنية الفرنسية",
+          "body": "يمكن استخدام بطاقة فرنسية معترف بها بدلاً من الجواز للزيارة القصيرة. يجب احترام مدة الإعفاء وتقديم وثيقة سليمة. السقف العام 90 يوماً خلال 180. لا تحل بطاقة التأمين الصحي أو رخصة القيادة أو الإقامة محل الوثيقة."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "الوثائق الوطنية المعترف بها",
+          "body": "تضم قائمة الوزارة 21 جنسية وإقليماً، منها بلجيكا وألمانيا وهولندا وسويسرا وبولندا ورومانيا. قدم أصل الوثيقة المعترف بها لا صورة منها ولا بطاقة خاصة.",
+          "table": {
+            "headers": [
+              "الجنسية أو الإقليم",
+              "الوثيقة والمدة"
+            ],
+            "rows": [
+              [
+                "ألمانيا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "بلجيكا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "فرنسا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "جورجيا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "هولندا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "إسبانيا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "سويسرا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "إيطاليا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "شمال قبرص (وفق القائمة التركية)",
+                "نظام خاص؛ لا يذكر المدخل الرسمي حد 90 يوماً"
+              ],
+              [
+                "ليختنشتاين",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "لوكسمبورغ",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "مالطا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "البرتغال",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "أوكرانيا",
+                "بطاقة بيومترية سارية للرحلات المباشرة من أوكرانيا وفق الوزارة"
+              ],
+              [
+                "اليونان",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "بولندا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "بلغاريا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "المجر",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "مولدوفا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "أذربيجان",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "رومانيا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "أوكرانيا وشرط الرحلة المباشرة",
+          "body": "تذكر القاعدة الرسمية لأوكرانيا بطاقة بيومترية سارية للرحلات المباشرة من أوكرانيا إلى تركيا. لا تفترض شمول المغادرة من دولة أخرى. وعند توفر الجواز فهو بديل بسيط."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "المدة رغم الإعفاء من التأشيرة",
+          "body": "لا تمنح بطاقة الهوية أياماً إضافية. فإذا استخدمت 45 يوماً ثم 35 ضمن نافذة 180، يتبقى عشرة أيام في ذلك الوقت إذا لم تخرج أيام قديمة من النافذة. أعد الحساب لكل يوم من البقاء."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "المطار وتسجيل الفندق",
+          "body": "قدم أصل الوثيقة عند الحدود. احتفظ بأي إثبات دخول يصدر عند عدم وجود ختم في جواز. وقد يطلب الفندق وثيقة الهوية للتسجيل. استخدم بيانات شخصية متطابقة في الحجوزات."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "بطاقة الهوية والانتقال الطويل",
+          "body": "لا يلغي الدخول بالبطاقة مستندات الإقامة. فقد يلزم الجواز للعمل والإقامة والعقار رغم قبول الهوية للسياحة. جهز هذه الوثائق قبل تغيير الوضع القانوني."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل تكفي بطاقة فرنسية للسياحة؟",
+          "answer": "نعم إذا كانت معترفاً بها واستوفيت شروط الدخول."
+        },
+        {
+          "question": "هل تسمح البطاقة بمدة أطول؟",
+          "answer": "لا، المدة يحددها نظام الدخول."
+        },
+        {
+          "question": "هل تكفي صورة البطاقة؟",
+          "answer": "لا، قدم الأصل المعترف به."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "نظام التأشيرات حسب الجنسية — وزارة الخارجية التركية"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
+          "label": "القائمة الرسمية لـ21 جنسية يسمح لها بالدخول ببطاقة الهوية"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/passport-validity-requirements-while-entering-turkey-in-accordance-with-law-on-foreigners-and-international-protection.en.mfa",
+          "label": "صلاحية الجواز — المادة 7 من القانون 6458"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "القواعد العامة للتأشيرات التركية"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة طلب تصريح الإقامة الرسمية"
+        }
+      ]
+    }
+  },
+  "countries-enter-turkey-id-card": {
+    "fr": {
+      "title": "Quels pays peuvent entrer en Turquie avec une carte d’identité ? Liste 2026",
+      "metaDescription": "Liste officielle des 21 nationalités et territoires admis avec une carte nationale d’identité en Turquie, conditions, durée et exceptions.",
+      "shortAnswer": "Le ministère turc des Affaires étrangères publie une liste de 21 nationalités et territoires autorisés à utiliser une carte nationale d’identité reconnue. Le tableau reprend cette liste consultée le 17 novembre 2026. Les accords de séjour et conditions documentaires continuent de s’appliquer.",
+      "bosphorasHelp": "Bosphoras peut organiser votre voyage privé ou professionnel en tenant compte des documents et nationalités de tous les participants.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Liste officielle des cartes d’identité admises",
+          "body": "Le tableau indique les nationalités ou territoires figurant dans la liste turque. La durée de séjour reste distincte de l’admission du document. Les conditions particulières de trajet, notamment pour l’Ukraine, sont signalées.",
+          "table": {
+            "headers": [
+              "Nationalité ou territoire",
+              "Document et durée"
+            ],
+            "rows": [
+              [
+                "Allemagne",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Belgique",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "France",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Géorgie",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Pays-Bas",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Espagne",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Suisse",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Italie",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Chypre du Nord (selon la liste turque)",
+                "Régime spécifique ; pas de durée de 90 jours indiquée dans la fiche officielle"
+              ],
+              [
+                "Liechtenstein",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Luxembourg",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Malte",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Portugal",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Ukraine",
+                "Carte biométrique valide, trajet direct depuis l’Ukraine selon le ministère"
+              ],
+              [
+                "Grèce",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Pologne",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Bulgarie",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Hongrie",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Moldavie",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Azerbaïdjan",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ],
+              [
+                "Roumanie",
+                "Carte nationale admise ; séjour court jusqu’à 90 jours selon accord"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Citoyens européens : attention aux différences",
+          "body": "L’Union européenne n’est pas un passeport uniforme pour les déplacements hors de l’UE. Les Français, Allemands, Belges et Roumains figurent dans la liste, alors que d’autres citoyens européens peuvent bénéficier d’une dispense de visa avec leur passeport sans que leur carte nationale soit admise. La nationalité précise est donc décisive."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Durée de séjour des nationalités admises",
+          "body": "Pour les nationalités de la liste bénéficiant du régime touristique de 90 jours, la présence totale reste soumise aux limites de leur accord et au plafond général. Une carte nationale n’ouvre pas un droit au séjour permanent. L’entrée d’un citoyen de Chypre du Nord relève d’un régime spécifique ; la fiche officielle ne fixe pas la même durée touristique."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Documents non admis et voyageurs étrangers résidents",
+          "body": "Une carte de résidence européenne, un permis de conduire ou une carte professionnelle ne donne pas les droits réservés aux cartes nationales admises. Une famille composée de plusieurs nationalités doit vérifier ses documents individuellement ; un enfant possédant une autre nationalité ne bénéficie pas automatiquement du régime des parents."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Privilégier une carte valide et un trajet compatible",
+          "body": "La reconnaissance de documents expirés dans certains cas est une exception, pas un principe général. Préférez une carte valide et un vol direct lorsque le régime du pays de transit est incertain. Pour l’Ukraine, la règle ministérielle mentionne spécifiquement la carte biométrique valide lors d’un départ direct d’Ukraine."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Préparer un séjour prolongé",
+          "body": "Pour une visite de longue durée, le titre de séjour doit être envisagé avant la fin de la durée autorisée. Emportez votre passeport si des démarches d’installation, de travail, de banque ou de propriété sont prévues. La possibilité d’entrer avec une carte ne remplace pas les justificatifs exigés par ces procédures."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Combien de nationalités figurent sur la liste ?",
+          "answer": "21, selon la liste officielle du ministère turc consultée le 17 novembre 2026."
+        },
+        {
+          "question": "Les Russes peuvent-ils entrer avec leur carte interne ?",
+          "answer": "Non, la Russie ne figure pas dans la liste des cartes admises ; le passeport international est la voie habituelle."
+        },
+        {
+          "question": "Une carte d’identité garantit-elle 90 jours ?",
+          "answer": "Non, la durée dépend du régime applicable à la nationalité et des jours déjà utilisés."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Régime des visas par nationalité — ministère turc des Affaires étrangères"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
+          "label": "Liste officielle des 21 nationalités admises avec une carte d’identité"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Conditions générales des visas turcs"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Demande officielle de titre de séjour"
+        }
+      ]
+    },
+    "en": {
+      "title": "Countries entering Turkey with national ID: official 2026 list",
+      "metaDescription": "The official 21-country and territory list for national ID entry to Turkey, stay duration, document conditions and exceptions.",
+      "shortAnswer": "The Turkish Foreign Ministry lists 21 nationalities and territories eligible to present recognised national identity cards. The table reflects the list consulted on 17 November 2026. Applicable stay limits and document conditions still apply.",
+      "bosphorasHelp": "Bosphoras can coordinate a private or business trip around each traveller's nationality and documents.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Official national ID entry list",
+          "body": "The table identifies the nationalities and territories listed by Turkey. Permitted duration is separate from document admission. Special itinerary conditions, notably Ukraine's, are highlighted.",
+          "table": {
+            "headers": [
+              "Nationality or territory",
+              "Document and duration"
+            ],
+            "rows": [
+              [
+                "Germany",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Belgium",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "France",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Georgia",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Netherlands",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Spain",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Switzerland",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Italy",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Northern Cyprus (as listed by Türkiye)",
+                "Special regime; official entry does not specify a 90-day limit"
+              ],
+              [
+                "Liechtenstein",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Luxembourg",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Malta",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Portugal",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Ukraine",
+                "Valid biometric ID for direct travel from Ukraine, per ministry"
+              ],
+              [
+                "Greece",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Poland",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Bulgaria",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Hungary",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Moldova",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Azerbaijan",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ],
+              [
+                "Romania",
+                "National ID accepted; short stay up to 90 days under agreement"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "European citizenship is not a single external travel rule",
+          "body": "French, German, Belgian and Romanian citizens appear in the list. Other European citizens may be visa-exempt with passports without having national ID entry rights. Your precise nationality matters outside the EU."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Permitted duration for eligible nationalities",
+          "body": "For listed nationalities with 90-day tourist permission, the total stay remains subject to the relevant agreement and general ceiling. An ID is not a permanent residence permit. Northern Cyprus follows a special regime; the official entry does not set the same tourist duration."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Non-qualifying documents and foreign residents",
+          "body": "An EU residence card, driving licence or professional badge does not confer the rights associated with national citizen identity cards. Mixed-nationality households should assess each document independently; a child's different nationality may have different rules."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Use valid documents and compatible itineraries",
+          "body": "Acceptance of some expired documents is an exception, not a general right. Prefer a valid ID and a direct flight when transit rules are uncertain. Ukraine's official entry specifically mentions a valid biometric ID for direct travel from Ukraine."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Longer-term residence planning",
+          "body": "For a stay exceeding short-visit limits, assess residence permission before expiry. Carry a passport if planning relocation, work, banking or property procedures. The right to enter on national ID does not replace supporting documents for those applications."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How many nationalities are listed?",
+          "answer": "21 under the Turkish ministry list consulted on 17 November 2026."
+        },
+        {
+          "question": "Can Russians enter with an internal ID?",
+          "answer": "Russia is not on the list; the international passport is the usual document."
+        },
+        {
+          "question": "Does an ID guarantee 90 days?",
+          "answer": "No. The nationality's regime and previously used days determine the available period."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Visa regime by nationality — Turkish Foreign Ministry"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
+          "label": "Official list of 21 nationalities eligible for national ID entry"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "General Turkish visa rules"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official residence permit application"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Страны для въезда в Турцию по удостоверению личности: список 2026",
+      "metaDescription": "21 гражданство и территория из официального перечня, условия документов, сроки пребывания и исключения.",
+      "shortAnswer": "МИД Турции публикует перечень из 21 гражданства и территории с правом въезда по признанному национальному удостоверению личности. Таблица составлена по списку, просмотренному 17 ноября 2026 года. Ограничения пребывания и требования к документам сохраняются.",
+      "bosphorasHelp": "Bosphoras может организовать частную или деловую поездку с учётом гражданства и документов всех участников.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Официальный перечень удостоверений",
+          "body": "В таблице приведены гражданства и территории из турецкого списка. Разрешённый срок пребывания отличается от признания самого документа. Особые условия маршрута, в частности для Украины, выделены.",
+          "table": {
+            "headers": [
+              "Гражданство или территория",
+              "Документ и срок"
+            ],
+            "rows": [
+              [
+                "Германия",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Бельгия",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Франция",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Грузия",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Нидерланды",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Испания",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Швейцария",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Италия",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Северный Кипр (по перечню Турции)",
+                "Особый режим; в официальной записи нет ограничения 90 дней"
+              ],
+              [
+                "Лихтенштейн",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Люксембург",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Мальта",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Португалия",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Украина",
+                "Действующая биометрическая карта при прямой поездке из Украины согласно МИД"
+              ],
+              [
+                "Греция",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Польша",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Болгария",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Венгрия",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Молдова",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Азербайджан",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ],
+              [
+                "Румыния",
+                "Национальное удостоверение; до 90 дней по соглашению"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Европейское гражданство и различия правил",
+          "body": "В перечень входят Франция, Германия, Бельгия и Румыния. Граждане других европейских стран могут пользоваться безвизовым въездом по паспорту, но это не обязательно даёт право въезда по карте. При поездке за пределы ЕС решающее значение имеет конкретное гражданство."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Допустимое пребывание",
+          "body": "Для граждан стран с туристическим сроком 90 дней действуют ограничения соответствующего соглашения и общий предел. Карта не даёт постоянного проживания. Для Северного Кипра действует специальный режим; официальная запись не устанавливает такой же туристический срок."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Другие карты и иностранные резиденты",
+          "body": "Европейский ВНЖ, водительские права и служебные карты не дают прав национального удостоверения гражданина. В семье с разными гражданствами документы оцениваются отдельно. Ребёнку может требоваться иной порядок, чем родителям."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Действительные документы и подходящий маршрут",
+          "body": "Признание некоторых просроченных документов является исключением. Предпочтительна действующая карта и прямой рейс, если правила транзита неизвестны. В записи по Украине прямо указана действующая биометрическая карта для прямой поездки из Украины."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Подготовка длительного проживания",
+          "body": "Если планируется более долгий срок, определите основание ВНЖ до окончания разрешённого пребывания. Для переезда, работы, банковских операций и покупки недвижимости возьмите паспорт. Въезд по карте не заменяет документы для этих процедур."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Сколько гражданств в списке?",
+          "answer": "21 по перечню МИД Турции, просмотренному 17 ноября 2026 года."
+        },
+        {
+          "question": "Можно ли россиянам въехать по внутреннему удостоверению?",
+          "answer": "Россия не входит в список; обычно используется заграничный паспорт."
+        },
+        {
+          "question": "Гарантирует ли карта 90 дней?",
+          "answer": "Нет, срок зависит от гражданства и использованных дней."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Визовые правила по гражданству — МИД Турции"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
+          "label": "Официальный список 21 гражданства для въезда по удостоверению"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Общие визовые правила Турции"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальная подача на ВНЖ"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الدول التي تدخل تركيا ببطاقة الهوية: القائمة الرسمية 2026",
+      "metaDescription": "قائمة 21 جنسية وإقليماً يسمح لها باستخدام بطاقة الهوية الوطنية في تركيا مع مدد البقاء والشروط والاستثناءات.",
+      "shortAnswer": "تنشر الخارجية التركية قائمة تضم 21 جنسية وإقليماً يحق لها تقديم بطاقة هوية وطنية معترف بها. يستند الجدول إلى القائمة التي تمت مراجعتها في 17 نوفمبر 2026. وتظل شروط الوثائق ومدد البقاء سارية.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلات الخاصة والمهنية بحسب جنسية ووثائق كل مشارك.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "القائمة الرسمية لبطاقات الهوية",
+          "body": "يتضمن الجدول الجنسيات والأقاليم المدرجة في القائمة التركية. وتختلف مدة البقاء المسموحة عن قبول الوثيقة. ونوضح الشروط الخاصة بالمسار، ولا سيما أوكرانيا.",
+          "table": {
+            "headers": [
+              "الجنسية أو الإقليم",
+              "الوثيقة والمدة"
+            ],
+            "rows": [
+              [
+                "ألمانيا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "بلجيكا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "فرنسا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "جورجيا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "هولندا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "إسبانيا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "سويسرا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "إيطاليا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "شمال قبرص (وفق القائمة التركية)",
+                "نظام خاص؛ لا يذكر المدخل الرسمي حد 90 يوماً"
+              ],
+              [
+                "ليختنشتاين",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "لوكسمبورغ",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "مالطا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "البرتغال",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "أوكرانيا",
+                "بطاقة بيومترية سارية للرحلات المباشرة من أوكرانيا وفق الوزارة"
+              ],
+              [
+                "اليونان",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "بولندا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "بلغاريا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "المجر",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "مولدوفا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "أذربيجان",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ],
+              [
+                "رومانيا",
+                "بطاقة الهوية مقبولة؛ حتى 90 يوماً وفق الاتفاق"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "اختلاف القواعد للمواطنين الأوروبيين",
+          "body": "تظهر فرنسا وألمانيا وبلجيكا ورومانيا في القائمة. وقد يعفى مواطنون أوروبيون آخرون من التأشيرة بجوازاتهم دون أن تقبل بطاقاتهم الوطنية للدخول. الجنسية المحددة هي العامل الحاسم خارج الاتحاد الأوروبي."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "مدد البقاء للجنسيات المؤهلة",
+          "body": "للجنسيات ذات مدة السياحة 90 يوماً تظل القيود الخاصة بالاتفاق والسقف العام مطبقة. ولا تمنح البطاقة إقامة دائمة. ويخضع شمال قبرص لنظام خاص لا تذكر القاعدة الرسمية فيه مدة السياحة نفسها."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "البطاقات غير المؤهلة والمقيمون الأجانب",
+          "body": "لا تمنح بطاقة إقامة أوروبية أو رخصة قيادة أو بطاقة مهنية حقوق بطاقة المواطنة الوطنية. وعلى الأسرة متعددة الجنسيات دراسة كل وثيقة على حدة، فقد يحتاج الطفل إلى إجراءات تختلف عن الوالدين."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "وثيقة سارية ومسار ملائم",
+          "body": "قبول بعض الوثائق المنتهية استثناء وليس قاعدة عامة. اختر بطاقة سارية ورحلة مباشرة حين تكون قواعد العبور غير واضحة. وتذكر القاعدة الخاصة بأوكرانيا بطاقة بيومترية سارية للرحلة المباشرة من أوكرانيا."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "التخطيط للإقامة الأطول",
+          "body": "لدخول يتجاوز سقف الزيارات القصيرة، حدد أساس الإقامة قبل انتهاء المدة. احمل الجواز إذا كنت تنوي الانتقال أو العمل أو فتح حساب أو شراء عقار. لا يغني دخول الهوية عن وثائق تلك الإجراءات."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "كم جنسية في القائمة؟",
+          "answer": "21 وفق قائمة الخارجية التركية التي تمت مراجعتها في 17 نوفمبر 2026."
+        },
+        {
+          "question": "هل يدخل الروسي ببطاقته الداخلية؟",
+          "answer": "روسيا ليست ضمن القائمة؛ يستخدم عادةً الجواز الدولي."
+        },
+        {
+          "question": "هل تضمن البطاقة 90 يوماً؟",
+          "answer": "لا، المدة تعتمد على نظام الجنسية والأيام المستخدمة سابقاً."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "نظام التأشيرات حسب الجنسية — وزارة الخارجية التركية"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/countries-whose-citizens-are-allowed-to-enter-T%C3%BCrkiye-with-their-national-id_s.en.mfa",
+          "label": "القائمة الرسمية لـ21 جنسية يسمح لها بالدخول ببطاقة الهوية"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "القواعد العامة للتأشيرات التركية"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة طلب تصريح الإقامة الرسمية"
         }
       ]
     }
