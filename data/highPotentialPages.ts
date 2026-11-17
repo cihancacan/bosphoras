@@ -194,6 +194,10 @@ const editorialSeoKeyMap: Record<string, string> = {
   'settle-in-turkey': 'relocate-turkey-cities',
   'settle-bodrum-families-investors': 'moving-bodrum',
   'tax-residence-foreigners': 'tax-residency',
+  'health-insurance-expats': 'health-insurance-expats',
+  'create-company-foreigner': 'company-setup-foreigner',
+  'dubai-investors-look-turkey': 'dubai-investors-turkey',
+  'private-concierge-istanbul-investors': 'private-concierge-istanbul',
 };
 
 export function getEditorialGuideForSeoKey(key: string, locale: Locale): HighPotentialGuide | undefined {
