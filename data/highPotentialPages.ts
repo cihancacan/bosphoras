@@ -198,6 +198,7 @@ const editorialSeoKeyMap: Record<string, string> = {
   'create-company-foreigner': 'company-setup-foreigner',
   'dubai-investors-look-turkey': 'dubai-investors-turkey',
   'private-concierge-istanbul-investors': 'private-concierge-istanbul',
+  'rent-or-buy-before-moving': 'rent-or-buy-before-relocating',
 };
 
 export function getEditorialGuideForSeoKey(key: string, locale: Locale): HighPotentialGuide | undefined {

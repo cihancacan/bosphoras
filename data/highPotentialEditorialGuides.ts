@@ -1911,6 +1911,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "Parcours pratique : de la souscription aux soins",
           "body": "Préparez passeports, dates de séjour, numéro fiscal ou identifiant étranger si disponible, informations de résidence et déclarations médicales demandées par l'assureur. Demandez les conditions écrites et l'attestation avant de payer. Conservez ensuite les numéros d'assistance et les règles de prise en charge.\n\nEn cas d'urgence médicale, le 112 est le numéro d'appel en Turquie. Pour les soins programmés, prenez connaissance du réseau de votre contrat avant le rendez-vous. Bosphoras peut coordonner la recherche de prestataires et les rendez-vous, sans se substituer aux médecins ou à l'assureur."
+        },
+        {
+          "id": "practical-1",
+          "title": "Que se passe-t-il lors d'une hospitalisation privée ?",
+          "body": "En cas d'intervention programmée, demandez à l'établissement un devis indiquant le médecin, le bloc opératoire, l'anesthésie, les examens, la chambre, les médicaments et les consultations de suivi. Les établissements et assureurs n'utilisent pas tous les mêmes forfaits. Un devis ne constitue pas une confirmation de remboursement : une autorisation préalable écrite peut être nécessaire, notamment pour une hospitalisation. En cas d'urgence, la priorité reste l'accès aux soins."
+        },
+        {
+          "id": "practical-2",
+          "title": "Assurance internationale ou contrat local ?",
+          "body": "Un contrat international peut être pertinent si vous voyagez fréquemment ou souhaitez être soigné dans plusieurs pays. Comparez le territoire couvert, le rapatriement, les soins dans le pays d'origine, la durée maximale des voyages et les franchises. Un contrat local peut mieux correspondre à un réseau hospitalier turc, mais sa couverture hors de Turquie dépend de ses conditions. Deux polices peuvent être complémentaires ; examinez l'ordre de prise en charge pour éviter les doublons."
+        },
+        {
+          "id": "practical-3",
+          "title": "Bien organiser sa première année de couverture",
+          "body": "À l'arrivée, choisissez d'abord les garanties correspondant au titre de séjour et à votre état de santé. Notez la date de fin de votre couverture, celle du titre de séjour et le délai de renouvellement. Après une année de résidence continue, si vous envisagez la GSS, demandez le détail des droits et cotisations avant de mettre fin à votre assurance existante. Une interruption de couverture peut entraîner des frais imprévus. Conservez les attestations, ordonnances et factures en un seul dossier."
         }
       ],
       "faqs": [
@@ -1977,6 +1992,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "Getting insured and using the policy",
           "body": "Prepare passports, dates, residence information, tax or foreign identity numbers where available, and requested medical declarations. Obtain the full terms and application certificate before payment. Save assistance contacts and the claims process.\n\nFor a medical emergency in Turkey, call 112. For scheduled care, confirm the network and pre-authorisation rules. Bosphoras can coordinate appointments and introductions without replacing healthcare or insurance professionals."
+        },
+        {
+          "id": "practical-1",
+          "title": "What happens during private hospital admission?",
+          "body": "For planned procedures, request an itemised quotation for the doctor, theatre, anaesthesia, investigations, room, medicines and follow-up. Hospital packages and insurance benefits do not always match. A quotation is not confirmation of reimbursement; written insurer pre-authorisation may be required, particularly for admission. In a medical emergency, obtaining care comes first."
+        },
+        {
+          "id": "practical-2",
+          "title": "International medical cover versus a local policy",
+          "body": "International cover can suit frequent travellers or people needing access to care in several countries. Compare territorial scope, evacuation, home-country treatment, maximum trip length and deductibles. A local policy may fit a Turkish hospital network more closely, but cover abroad depends on its terms. If maintaining two policies, establish coordination of benefits to avoid redundant costs."
+        },
+        {
+          "id": "practical-3",
+          "title": "Organise your first year of coverage",
+          "body": "Initially choose protection appropriate for your residence application and medical circumstances. Record policy expiry, permit expiry and renewal periods. After more than a year of continuous residence, if considering GSS, establish eligibility and contributions before cancelling existing coverage. A gap may leave you with unexpected medical bills. Keep certificates, prescriptions and invoices together."
         }
       ],
       "faqs": [
@@ -2043,6 +2073,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "От оформления до визита в клинику",
           "body": "Подготовьте паспорта, сроки пребывания, сведения об адресе, налоговый или иностранный идентификатор при наличии и медицинские сведения, запрашиваемые страховщиком. Получите полный текст условий до оплаты и сохраните контакты поддержки.\n\nПри экстренной медицинской ситуации звоните 112. Для плановых визитов уточните сеть и правила предварительного согласования. Bosphoras может организовать контакты и записи, не заменяя медицинских специалистов и страховщика."
+        },
+        {
+          "id": "practical-1",
+          "title": "Как проходит госпитализация в частной клинике?",
+          "body": "Для планового вмешательства запросите смету с оплатой врача, операционной, анестезии, обследований, палаты, лекарств и последующих визитов. Пакеты клиники и условия страховщика могут различаться. Смета не подтверждает возмещение: особенно при госпитализации может потребоваться письменное предварительное согласование. В экстренной ситуации приоритетом остаётся получение медицинской помощи."
+        },
+        {
+          "id": "practical-2",
+          "title": "Международная или местная страховка?",
+          "body": "Международный полис может подойти при частых поездках или лечении в нескольких странах. Сравните территорию действия, эвакуацию, лечение в стране происхождения, допустимую длительность поездок и франшизу. Местный полис может лучше соответствовать сети турецких больниц, но покрытие за рубежом определяется договором. При наличии двух полисов уточните порядок возмещения."
+        },
+        {
+          "id": "practical-3",
+          "title": "Как организовать первый год страхования",
+          "body": "Выберите полис с учётом основания ВНЖ и здоровья. Запишите сроки действия страховки и ВНЖ и даты продления. После непрерывного проживания более года, если планируете GSS, выясните права и взносы до отмены действующего полиса. Перерыв в покрытии может привести к непредвиденным расходам. Храните справки, рецепты и счета вместе."
         }
       ],
       "faqs": [
@@ -2109,6 +2154,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "من الاشتراك إلى الاستفادة من العلاج",
           "body": "جهز جوازات السفر ومدة الإقامة والعنوان والرقم الضريبي أو رقم هوية الأجنبي عند توفره والإقرارات الطبية المطلوبة. احصل على الشروط الكاملة قبل الدفع واحتفظ بأرقام المساعدة وطريقة طلب التعويض.\n\nفي الطوارئ الطبية اتصل بالرقم 112 في تركيا. وللعلاج المجدول راجع الشبكة ومتطلبات الموافقة المسبقة. تستطيع Bosphoras تنسيق المواعيد والتواصل دون الحلول محل الأطباء أو شركات التأمين."
+        },
+        {
+          "id": "practical-1",
+          "title": "كيف تتم الإقامة في مستشفى خاص؟",
+          "body": "للإجراءات المجدولة اطلب عرضاً مفصلاً يشمل الطبيب وغرفة العمليات والتخدير والفحوصات والغرفة والأدوية والمتابعة. قد تختلف باقات المستشفى عن مزايا التأمين. لا يعد عرض السعر تأكيداً للتعويض، وقد تلزم موافقة مسبقة مكتوبة خصوصاً للتنويم. وفي الطوارئ تبقى الأولوية للحصول على الرعاية."
+        },
+        {
+          "id": "practical-2",
+          "title": "التأمين الدولي أم المحلي؟",
+          "body": "قد يناسب التأمين الدولي من يسافر كثيراً أو يحتاج العلاج في بلدان متعددة. قارن النطاق الجغرافي والإجلاء الطبي والعلاج في بلد الأصل والمدة القصوى للرحلات والتحمل المالي. وقد تناسب الوثيقة المحلية شبكة المستشفيات التركية بصورة أفضل، وفق شروط التغطية خارج تركيا. عند وجود وثيقتين تحقق من تنسيق التعويض لتجنب الازدواج."
+        },
+        {
+          "id": "practical-3",
+          "title": "تنظيم السنة الأولى من التغطية",
+          "body": "اختر تأميناً يناسب طلب الإقامة وحالتك الصحية، ودوّن انتهاء الوثيقة والإقامة ومواعيد التجديد. وبعد أكثر من سنة من الإقامة المتواصلة، إذا كنت تفكر في GSS، فحدد الأهلية والاشتراكات قبل إلغاء وثيقتك الحالية. قد يؤدي انقطاع التغطية إلى فواتير غير متوقعة. احتفظ بالشهادات والوصفات والفواتير في ملف واحد."
         }
       ],
       "faqs": [
@@ -2177,6 +2237,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "Banque, facturation et activité internationale",
           "body": "La banque peut demander les statuts, les pouvoirs des signataires, l'identité des bénéficiaires effectifs, l'origine des fonds et le modèle économique. Préparez également contrats, factures, devis, pays des clients et fournisseurs. Le compte professionnel doit rester distinct des dépenses personnelles.\n\nUne société turque facturant à l'étranger ne bénéficie pas automatiquement d'une exonération. La TVA à l'exportation de services et les dispositifs fiscaux incitatifs répondent à des conditions spécifiques. Un bon projet commence par les flux commerciaux réels, puis adopte la structure qui convient, plutôt que l'inverse."
+        },
+        {
+          "id": "practical-1",
+          "title": "Peut-on constituer la société à distance ?",
+          "body": "Une procuration peut permettre certaines formalités de constitution, à condition de définir les pouvoirs et de respecter les exigences de traduction et d'authentification. L'actionnaire personne morale étrangère doit documenter son existence, ses décisions et ses signataires. La présence physique peut néanmoins être demandée par une banque ou un interlocuteur administratif. Anticipez ces étapes avant de réserver un déplacement."
+        },
+        {
+          "id": "practical-2",
+          "title": "Le coût du personnel et des obligations courantes",
+          "body": "Le recrutement entraîne des obligations de paie, de sécurité sociale et de déclarations périodiques. Le coût employeur ne se résume donc pas au salaire net. Faites calculer le coût brut complet de chaque poste, puis ajoutez comptabilité, logiciel de facturation, local et charges de fonctionnement. Un modèle commercial à faible marge peut être viable avec peu de salariés mais ne pas correspondre aux critères du permis de travail d'un dirigeant étranger."
+        },
+        {
+          "id": "practical-3",
+          "title": "Un calendrier de démarrage en trois phases",
+          "body": "Phase de préparation : secteur, licence éventuelle, actionnaires, statuts, financement et rôle du dirigeant. Phase d'immatriculation : MERSİS, registre, obligations fiscales et sociales. Phase opérationnelle : compte bancaire, contrats clients, facturation, recrutement et permis de travail si nécessaire. Pour une implantation étrangère, nous recommandons de distinguer ces trois jalons afin de ne pas promettre une date de lancement simplement parce que les statuts sont signés."
         }
       ],
       "faqs": [
@@ -2251,6 +2326,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "Banking, invoicing and international clients",
           "body": "A bank may require the articles, signing mandates, beneficial ownership information, source of funds and an explanation of the business. Prepare contracts, invoices, customer and supplier countries and maintain separate company and personal finances.\n\nForeign customers do not automatically make all company income exempt. Export-of-service VAT treatment and investment incentives have their own conditions. Design the structure around real business activity and flows."
+        },
+        {
+          "id": "practical-1",
+          "title": "Can the company be formed remotely?",
+          "body": "A properly scoped power of attorney may support incorporation steps, subject to authentication and translation requirements. A foreign corporate shareholder must establish its legal existence, corporate decision and signatory authority. A bank or administrative counterparty may nevertheless request physical attendance. Identify these steps before making travel plans."
+        },
+        {
+          "id": "practical-2",
+          "title": "Staffing and ongoing operating costs",
+          "body": "Hiring creates payroll, social insurance and reporting obligations; the employer's cost exceeds take-home salary. Calculate the full gross employment cost, then add accounting, invoicing software, premises and running expenses. A low-overhead business may be viable with few employees yet not meet a foreign director's general work permit criteria."
+        },
+        {
+          "id": "practical-3",
+          "title": "A three-phase launch plan",
+          "body": "Preparation: sector, licences, shareholders, articles, funding and management responsibilities. Registration: MERSIS, trade registry, tax and social security formalities. Operations: banking, customer contracts, invoicing, recruitment and any required work permits. Treat these as separate milestones rather than assuming signed articles mean the business is operational."
         }
       ],
       "faqs": [
@@ -2325,6 +2415,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "Банк, счета и зарубежные клиенты",
           "body": "Банк может запросить устав, полномочия подписантов, сведения о конечных владельцах, происхождении средств и бизнес-модели. Подготовьте договоры и счета, список стран клиентов и поставщиков. Отделяйте расходы компании от личных.\n\nИностранный клиент сам по себе не освобождает прибыль от налогов. Правила НДС при экспорте услуг и льготы имеют самостоятельные условия. Структура должна соответствовать реальной деятельности."
+        },
+        {
+          "id": "practical-1",
+          "title": "Можно ли зарегистрировать компанию удалённо?",
+          "body": "Доверенность с точно определёнными полномочиями может позволить выполнить часть процедур при соблюдении требований заверения и перевода. Иностранному юридическому лицу необходимо подтвердить регистрацию, корпоративное решение и полномочия подписантов. Банк или государственный орган всё же может потребовать личного присутствия. Определите эти этапы заранее."
+        },
+        {
+          "id": "practical-2",
+          "title": "Сотрудники и текущие обязательства",
+          "body": "Наём персонала влечёт начисление зарплаты, социальные взносы и отчётность. Расход работодателя больше чистой зарплаты сотрудника. Рассчитайте полную стоимость каждого рабочего места, бухгалтерии, выставления счетов, помещения и эксплуатации. Бизнес с небольшим штатом может быть прибыльным, но не соответствовать общим критериям разрешения на работу иностранного директора."
+        },
+        {
+          "id": "practical-3",
+          "title": "Три этапа начала работы",
+          "body": "Подготовка: отрасль, лицензии, участники, устав, финансирование и обязанности руководства. Регистрация: MERSİS, реестр, налоговые и социальные формальности. Запуск: банк, договоры, счета, персонал и необходимые разрешения на работу. Это разные контрольные точки; подписание устава не означает готовность к коммерческой деятельности."
         }
       ],
       "faqs": [
@@ -2399,6 +2504,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "الحساب المصرفي والفواتير والعمل الدولي",
           "body": "قد يطلب البنك النظام الأساسي وصلاحيات التوقيع وبيانات المستفيد الحقيقي ومصدر الأموال ونموذج النشاط. جهز العقود والفواتير وبلدان العملاء والموردين وافصل حساب الشركة عن المصاريف الشخصية.\n\nوجود عميل أجنبي لا يعفي أرباح الشركة تلقائياً. وتخضع معاملة تصدير الخدمات والحوافز لشروط مستقلة. اختر الهيكل وفق النشاط والتدفقات التجارية الفعلية."
+        },
+        {
+          "id": "practical-1",
+          "title": "هل يمكن تأسيس الشركة عن بُعد؟",
+          "body": "قد تتيح وكالة محددة الصلاحيات تنفيذ بعض إجراءات التأسيس وفق متطلبات التصديق والترجمة. ويجب على الشركة الأجنبية المساهمة إثبات وجودها القانوني وقرارها وصلاحيات ممثليها. ومع ذلك قد يطلب البنك أو الجهة الإدارية حضوراً شخصياً. حدد هذه المراحل قبل ترتيب السفر."
+        },
+        {
+          "id": "practical-2",
+          "title": "تكلفة الموظفين والالتزامات المستمرة",
+          "body": "يترتب على التوظيف التزامات الرواتب والتأمينات والإقرارات، لذا تتجاوز تكلفة صاحب العمل صافي راتب الموظف. احسب التكلفة الإجمالية لكل وظيفة ثم أضف المحاسبة وبرامج الفواتير والمقر والتشغيل. قد يكون نشاط قليل الموظفين مجدياً لكنه لا يستوفي المعايير العامة لتصريح عمل المدير الأجنبي."
+        },
+        {
+          "id": "practical-3",
+          "title": "خطة إطلاق من ثلاث مراحل",
+          "body": "التحضير: القطاع والتراخيص والشركاء والنظام الأساسي والتمويل ودور المدير. التسجيل: MERSİS والسجل والضرائب والتأمينات. التشغيل: البنك والعقود والفواتير والتوظيف وتصاريح العمل اللازمة. افصل بين هذه المراحل ولا تعتبر توقيع وثائق التأسيس دليلاً على جاهزية النشاط."
         }
       ],
       "faqs": [
@@ -2475,6 +2595,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "Organiser une première mission d'investissement",
           "body": "Avant le déplacement, définissez le montant total disponible, la devise de référence, le rendement net recherché et la durée. Préparez les justificatifs de l'origine des fonds et identifiez les documents à examiner. Pendant un séjour, privilégiez les réunions préparées avec vendeurs, professionnels indépendants et partenaires opérationnels.\n\nAprès les visites, comparez les offres selon des critères identiques : prix total, droits acquis, charges, revenus réellement documentés et possibilités de sortie. Bosphoras peut centraliser cette organisation et la circulation des documents, sans promettre de rendement ni de décision administrative."
+        },
+        {
+          "id": "practical-1",
+          "title": "Le change peut modifier le résultat sans changer le bien",
+          "body": "Dans un scénario purement illustratif, un revenu locatif net turc de 600 000 TL représente 15 000 USD à un taux de 40 TL par dollar. Si le taux passe à 50 TL par dollar et que le revenu reste identique, il ne représente plus que 12 000 USD, soit une baisse de 20 %. Ce ne sont pas des cours actuels. Le même raisonnement s'applique aux dépenses, au prix de revente et au rapatriement des revenus."
+        },
+        {
+          "id": "practical-2",
+          "title": "Étudier un fournisseur ou un projet industriel",
+          "body": "Avant d'engager du capital, identifiez le produit, les certifications, la capacité de production, les délais et les références commerciales. Demandez des prix selon les Incoterms, des échantillons et des conditions de paiement. Séparez les coûts à l'usine de la livraison, de l'assurance, du dédouanement et du service après-vente. Une visite d'usine et un contrôle indépendant des documents sont plus instructifs qu'une présentation commerciale seule."
+        },
+        {
+          "id": "practical-3",
+          "title": "Financer et suivre un actif à distance",
+          "body": "Conservez une documentation complète du prix, du transfert bancaire et des droits acquis. Pour une propriété locative, exigez des relevés de loyers et de charges ; pour une société, suivez les comptes, la trésorerie, les contrats et les pouvoirs de signature. Déterminez qui peut engager des dépenses, dans quelles limites, et comment vous recevez les justificatifs. Un suivi structuré protège la qualité de la décision autant que la sélection initiale."
         }
       ],
       "faqs": [
@@ -2545,6 +2680,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "Prepare your first investment visit",
           "body": "Define capital, reference currency, net-return objectives and time horizon before travel. Prepare source-of-funds evidence and a list of documents to obtain. Arrange targeted meetings with sellers, independent advisers and operational partners.\n\nAfter visits, compare total costs, rights obtained, recurring expenses, documented income and exit options. Bosphoras can coordinate the practical process and documents without promising returns or official approvals."
+        },
+        {
+          "id": "practical-1",
+          "title": "Currency changes can alter the result without changing the asset",
+          "body": "In a purely illustrative calculation, TRY 600,000 annual net rent is USD 15,000 at an exchange rate of TRY 40 per dollar. At TRY 50 per dollar with unchanged rent, it becomes USD 12,000, a 20% reduction. These are not current exchange quotes. Apply the same analysis to expenses, resale value and remittance."
+        },
+        {
+          "id": "practical-2",
+          "title": "Evaluating a supplier or industrial project",
+          "body": "Identify the product, certifications, capacity, lead times and commercial references before deploying capital. Request prices under defined Incoterms, samples and payment conditions. Separate factory cost from freight, insurance, customs and after-sales service. Site visits and independent documentary checks are more useful than a presentation alone."
+        },
+        {
+          "id": "practical-3",
+          "title": "Funding and monitoring an asset remotely",
+          "body": "Retain acquisition, bank transfer and ownership documentation. For rental property, require rent and expense statements; for a company, monitor accounts, cash flow, contracts and signing powers. Define spending authority, limits and supporting documentation. Ongoing oversight matters as much as the initial asset selection."
         }
       ],
       "faqs": [
@@ -2615,6 +2765,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "Как организовать первую инвестиционную поездку",
           "body": "До поездки определите объём капитала, валюту расчёта, желаемый чистый доход и горизонт. Подготовьте подтверждение происхождения средств и список документов. Организуйте целевые встречи с продавцами, независимыми консультантами и деловыми партнёрами.\n\nПосле посещений сравните полную стоимость, права, регулярные расходы, подтверждённые доходы и ликвидность. Bosphoras может координировать процесс и документы без обещаний доходности или решений государственных органов."
+        },
+        {
+          "id": "practical-1",
+          "title": "Валютный курс влияет на результат без изменения актива",
+          "body": "В условном примере чистая аренда 600 000 лир в год равна 15 000 долларов при курсе 40 лир за доллар. При курсе 50 и неизменной сумме аренды это 12 000 долларов, то есть снижение на 20%. Это не текущие котировки. Аналогично оценивайте расходы, цену продажи и перевод доходов."
+        },
+        {
+          "id": "practical-2",
+          "title": "Проверка поставщика или промышленного проекта",
+          "body": "До вложений определите продукт, сертификаты, мощности, сроки и деловые рекомендации. Запросите цены с указанием Incoterms, образцы и условия оплаты. Отделите заводскую цену от перевозки, страхования, таможни и обслуживания. Посещение производства и независимая проверка документов полезнее одной презентации."
+        },
+        {
+          "id": "practical-3",
+          "title": "Финансирование и контроль актива на расстоянии",
+          "body": "Сохраняйте документы о цене, банковских переводах и правах собственности. Для аренды требуйте отчёты о поступлениях и расходах; для компании контролируйте счета, деньги, договоры и полномочия. Определите, кто вправе расходовать средства, в каких пределах и как предоставляются подтверждения. Последующий контроль столь же важен, как и выбор актива."
         }
       ],
       "faqs": [
@@ -2685,6 +2850,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "تنظيم أول زيارة استثمارية",
           "body": "حدد رأس المال والعملة المرجعية والعائد الصافي المطلوب والأفق الزمني قبل السفر. جهز إثبات مصدر الأموال وقائمة المستندات. رتّب اجتماعات هادفة مع البائعين والمستشارين المستقلين والشركاء التجاريين.\n\nبعد الزيارات قارن التكلفة الكاملة والحقوق والمصاريف المتكررة والإيرادات الموثقة وإمكانات الخروج. تستطيع Bosphoras تنسيق العملية والمستندات دون ضمان عائد أو موافقة حكومية."
+        },
+        {
+          "id": "practical-1",
+          "title": "كيف يؤثر الصرف في العائد دون تغير العقار؟",
+          "body": "في مثال افتراضي، يعادل صافي إيجار سنوي 600 ألف ليرة مبلغ 15 ألف دولار بسعر 40 ليرة للدولار. وإذا أصبح السعر 50 ليرة مع ثبات الإيجار، يعادل 12 ألف دولار، أي انخفاضاً بنسبة 20%. هذه ليست أسعار صرف حالية. طبق التحليل نفسه على المصروفات وإعادة البيع وتحويل الإيرادات."
+        },
+        {
+          "id": "practical-2",
+          "title": "دراسة مورد أو مشروع صناعي",
+          "body": "قبل توظيف رأس المال حدد المنتج والشهادات والطاقة الإنتاجية والمواعيد والمراجع التجارية. اطلب أسعاراً وفق شروط Incoterms وعينات وشروط دفع. افصل سعر المصنع عن الشحن والتأمين والجمارك وخدمة ما بعد البيع. زيارة المصنع والفحص المستقل للوثائق أكثر فائدة من العرض التسويقي وحده."
+        },
+        {
+          "id": "practical-3",
+          "title": "تمويل الأصل ومتابعته عن بُعد",
+          "body": "احتفظ بمستندات الشراء والتحويل البنكي والحقوق المكتسبة. اطلب تقارير الإيجار والمصاريف للعقار، وتابع الحسابات والسيولة والعقود وصلاحيات التوقيع للشركة. حدد من يحق له الإنفاق وحدوده وكيف يقدم المستندات المؤيدة. المتابعة المنظمة لا تقل أهمية عن اختيار الأصل."
         }
       ],
       "faqs": [
@@ -2757,6 +2937,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "Comment obtenir une proposition claire",
           "body": "Indiquez les dates, aéroports, nombre de personnes, langues, zones de rendez-vous et services nécessaires. Distinguez les réservations déjà confirmées des demandes à organiser. Une proposition utile doit distinguer prestations, conditions d'annulation, prix des prestataires et honoraires de coordination lorsqu'ils s'appliquent.\n\nPour les séjours récurrents et les projets longs, une organisation suivie peut être plus pertinente que des demandes isolées. Bosphoras peut centraliser les informations du séjour et la coordination des intervenants suivant le périmètre convenu."
+        },
+        {
+          "id": "practical-1",
+          "title": "Choisir un véhicule adapté au programme",
+          "body": "Un transfert simple entre aéroport et hôtel ne nécessite pas la même organisation qu'un véhicule avec chauffeur pour plusieurs rendez-vous. Pour la journée, précisez les points d'arrêt, la durée prévue, les heures d'attente et les éventuels déplacements hors d'Istanbul. Demandez si les péages, parkings et heures supplémentaires sont inclus. Pour un groupe, le volume des bagages doit être compatible avec le véhicule même si le nombre de sièges est suffisant."
+        },
+        {
+          "id": "practical-2",
+          "title": "Gérer un imprévu sans désorganiser le séjour",
+          "body": "Un retard de vol peut décaler le transfert et une réunion ; une activité sur le Bosphore peut être modifiée par la météo. Prévoyez dès la réservation les règles de report, d'annulation et les interlocuteurs à prévenir. Lorsque plusieurs réservations dépendent l'une de l'autre, un calendrier partagé et des coordonnées de contact fiables réduisent les risques de rendez-vous manqués."
+        },
+        {
+          "id": "practical-3",
+          "title": "Transformer un séjour de repérage en projet concret",
+          "body": "Pour un investissement ou une installation, le résultat d'un séjour peut être un dossier pratique : quartier retenu, critères de logement, professionnels rencontrés, documents obtenus, montants à confirmer et prochaines décisions. Gardez cette synthèse séparée des réservations touristiques. Vous pourrez ainsi reprendre le projet à distance après le départ, avec un interlocuteur qui connaît déjà vos besoins."
         }
       ],
       "faqs": [
@@ -2819,6 +3014,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "What to include in a concierge request",
           "body": "Provide dates, airports, guest numbers, languages, meeting areas and services requested. Separate existing bookings from new requirements. A clear proposal distinguishes services, cancellations, provider costs and coordination fees where applicable.\n\nFor recurring stays, coordinated support may be more useful than disconnected requests. Bosphoras can centralise itinerary information and provider coordination within the agreed scope."
+        },
+        {
+          "id": "practical-1",
+          "title": "Choose a vehicle for the actual itinerary",
+          "body": "An airport-to-hotel transfer differs from a chauffeur booking for several meetings. For a day booking, specify stops, expected duration, waiting periods and travel outside Istanbul. Establish whether tolls, parking and overtime are included. For groups, luggage volume must fit the vehicle even if the seat count is adequate."
+        },
+        {
+          "id": "practical-2",
+          "title": "Handle disruption without losing the itinerary",
+          "body": "Flight delays may shift transfers and meetings; weather can affect Bosphorus activities. Establish rebooking and cancellation rules and contacts when arranging services. When bookings depend on one another, a shared schedule and reliable contact information help reduce missed appointments."
+        },
+        {
+          "id": "practical-3",
+          "title": "Turn a scouting trip into an actionable project",
+          "body": "The outcome of an investment or relocation visit can be a practical file: shortlisted district, property criteria, advisers met, documents received, amounts to confirm and next decisions. Keep this separate from leisure bookings. It enables the project to continue remotely after departure with a coordinator familiar with your priorities."
         }
       ],
       "faqs": [
@@ -2881,6 +3091,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "Как получить конкретное предложение",
           "body": "Укажите даты, аэропорты, количество гостей, языки, районы встреч и требуемые услуги. Отделите подтверждённые бронирования от новых запросов. В предложении должны быть понятны услуги, условия отмены, стоимость исполнителей и координационные платежи при их наличии.\n\nДля регулярных поездок единая организация может быть удобнее разрозненных запросов. Bosphoras может координировать маршрут и исполнителей в согласованном объёме."
+        },
+        {
+          "id": "practical-1",
+          "title": "Автомобиль под конкретный маршрут",
+          "body": "Трансфер аэропорт–отель отличается от аренды машины с водителем для нескольких встреч. Для поездки на день укажите остановки, время, ожидание и выезды за пределы Стамбула. Уточните включение парковки, платных дорог и дополнительного времени. Для группы объём багажа должен соответствовать автомобилю, даже если сидений достаточно."
+        },
+        {
+          "id": "practical-2",
+          "title": "Как справляться с изменениями программы",
+          "body": "Задержка рейса может сдвинуть трансфер и встречу, погода — прогулку по Босфору. При бронировании уточните правила переноса и отмены и контакты ответственных. Если услуги зависят друг от друга, общий календарь и надёжная связь снижают риск пропущенных встреч."
+        },
+        {
+          "id": "practical-3",
+          "title": "Как превратить ознакомительную поездку в проект",
+          "body": "Результатом визита для инвестиций или переезда может стать практический файл: выбранные районы, требования к жилью, контакты консультантов, полученные документы, суммы к уточнению и следующие решения. Отделите его от туристических бронирований. После отъезда вы сможете продолжить проект дистанционно с координатором, знакомым с вашими потребностями."
         }
       ],
       "faqs": [
@@ -2943,6 +3168,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "كيف تحصل على مقترح واضح؟",
           "body": "حدد التواريخ والمطارات وعدد الضيوف واللغات ومناطق الاجتماعات والخدمات المطلوبة. افصل الحجوزات المؤكدة عن الطلبات الجديدة. ويُفترض أن يبين المقترح الخدمات وشروط الإلغاء وأسعار مقدميها ورسوم التنسيق إن وجدت.\n\nفي الرحلات المتكررة قد يكون التنظيم الموحد أفضل من الطلبات المنفصلة. تستطيع Bosphoras تنسيق معلومات الرحلة ومقدمي الخدمات ضمن النطاق المتفق عليه."
+        },
+        {
+          "id": "practical-1",
+          "title": "اختيار المركبة المناسبة للبرنامج",
+          "body": "يختلف النقل من المطار إلى الفندق عن حجز سيارة بسائق لعدة اجتماعات. حدد المحطات والمدة والانتظار وأي تنقل خارج إسطنبول. اسأل عن شمول رسوم الطرق والمواقف والوقت الإضافي. وفي السفر الجماعي تأكد من مساحة الأمتعة حتى لو كان عدد المقاعد كافياً."
+        },
+        {
+          "id": "practical-2",
+          "title": "التعامل مع التغييرات دون تعطيل الرحلة",
+          "body": "قد يؤخر تأخر الطائرة النقل والاجتماع، وقد يؤثر الطقس في أنشطة البوسفور. حدد قواعد التعديل والإلغاء وجهات الاتصال عند الحجز. وإذا كانت الخدمات مترابطة، فإن الجدول المشترك ووسائل التواصل الموثوقة تقلل احتمال تفويت المواعيد."
+        },
+        {
+          "id": "practical-3",
+          "title": "تحويل زيارة الاستطلاع إلى مشروع عملي",
+          "body": "قد تنتج عن زيارة استثمارية أو انتقال قائمة بالأحياء المرشحة ومعايير السكن والمختصين الذين التقيتهم والوثائق المستلمة والمبالغ والقرارات المقبلة. افصل هذا الملف عن الحجوزات السياحية. وهكذا يمكن متابعة المشروع عن بُعد بعد المغادرة مع منسق يعرف أولوياتك."
         }
       ],
       "faqs": [
@@ -3007,6 +3247,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "Une méthode pour décider sans pression commerciale",
           "body": "Établissez votre horizon probable : moins de deux ans, trois à cinq ans, ou long terme. Comparez des biens équivalents selon quartier, qualité du bâtiment, surface utile, transports et charges. Demandez deux budgets : celui de l'installation locative et celui de l'acquisition complète. Analysez ensuite un scénario de départ anticipé et un scénario de revente difficile.\n\nPour un premier repérage, louer temporairement puis visiter plusieurs quartiers aide à définir les bons critères. Pour un projet d'achat déjà mûr, Bosphoras peut organiser la sélection et les visites, puis coordonner les professionnels indépendants avant la signature."
+        },
+        {
+          "id": "practical-1",
+          "title": "Surface, plan et usages : comparer le logement réel",
+          "body": "Une annonce peut présenter une surface brute qui inclut des éléments communs ou des murs. Demandez la surface utile, le plan, la distribution des pièces, les espaces extérieurs et les droits d'usage. Vérifiez si le stationnement, la cave et les équipements collectifs sont rattachés juridiquement au bien ou simplement proposés à l'usage. Pour une acquisition, la surface annoncée et les droits enregistrés ne doivent pas être confondus."
+        },
+        {
+          "id": "practical-2",
+          "title": "Résidence principale ou location d'investissement ?",
+          "body": "Si vous achetez pour y vivre, l'école, les transports, le confort thermique et la qualité du bâtiment constituent des critères de valeur au quotidien. Si vous achetez pour louer, examinez la demande locative réelle, les périodes de vacance, les frais de gestion et le régime applicable aux locations envisagées. Ne calculez pas un rendement annuel à partir de quelques semaines de haute saison sans tenir compte du taux d'occupation et des coûts."
+        },
+        {
+          "id": "practical-3",
+          "title": "Préparer l'offre, le paiement et la remise des clés",
+          "body": "Avant une offre, dressez une liste des points à résoudre : documents fonciers, état technique, prix et devise, modalités de paiement, délais et conditions de remboursement d'une avance. Pour une location comme pour un achat, établissez un inventaire daté des équipements, compteurs et clés. Conservez les justificatifs des paiements et assurez-vous que vous disposez des coordonnées du gestionnaire et des contacts nécessaires au fonctionnement du logement."
         }
       ],
       "faqs": [
@@ -3085,6 +3340,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "Choose without sales pressure",
           "body": "Define your probable horizon: under two years, three to five years or long term. Compare equivalent properties by district, building, usable area, transport and fees. Obtain both a rental-start budget and a complete acquisition budget. Assess early departure and a difficult resale scenario.\n\nTemporary renting and neighbourhood visits can help when criteria are still forming. For an established buying project, Bosphoras can coordinate selection, viewings and introductions to independent specialists before signing."
+        },
+        {
+          "id": "practical-1",
+          "title": "Compare the actual home, not just advertised floor area",
+          "body": "An advertised gross area may include walls or common-area elements. Request the usable area, floor plan, room distribution, outdoor spaces and usage rights. Establish whether parking, storage and communal facilities are legally attached or merely offered for use. For buyers, advertised size and registered rights are distinct."
+        },
+        {
+          "id": "practical-2",
+          "title": "A primary residence or a rental investment?",
+          "body": "For owner occupation, school, transport, thermal comfort and building condition provide everyday value. For rental investment, assess tenant demand, vacancy, management and the applicable rental regime. Do not annualise peak-season weekly income without occupancy and operating costs."
+        },
+        {
+          "id": "practical-3",
+          "title": "Offer, payment and handover",
+          "body": "Before an offer, list issues to resolve: title documents, technical condition, price and currency, payment stages, deadlines and refund terms for any advance. For both renting and buying, make a dated inventory of equipment, meters and keys at handover. Retain payment evidence and obtain building management and maintenance contacts."
         }
       ],
       "faqs": [
@@ -3163,6 +3433,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "Как принять решение без давления",
           "body": "Определите срок: менее двух лет, три–пять лет или долгосрочно. Сравните равнозначные объекты по району, зданию, полезной площади, транспорту и платежам. Рассчитайте отдельно начало аренды и полную стоимость приобретения, затем сценарии досрочного отъезда и сложной перепродажи.\n\nЕсли критерии ещё не сформированы, полезны временная аренда и поездки по районам. При готовом проекте покупки Bosphoras может организовать подбор, просмотры и взаимодействие с независимыми специалистами до подписания."
+        },
+        {
+          "id": "practical-1",
+          "title": "Как сравнивать реальную площадь и права пользования",
+          "body": "В объявлении общая площадь может включать стены и общие зоны. Запросите полезную площадь, планировку, открытые пространства и права пользования. Уточните, закреплены ли парковка, кладовая и общие удобства за объектом юридически или доступны лишь для пользования. Площадь объявления и зарегистрированные права — разные вещи."
+        },
+        {
+          "id": "practical-2",
+          "title": "Собственное жильё или арендная инвестиция?",
+          "body": "Для собственного проживания важны школа, транспорт, теплоизоляция и состояние здания. Для сдачи — спрос, простой, управление и правовой режим аренды. Не рассчитывайте годовую доходность по нескольким неделям высокого сезона без учёта загрузки и затрат."
+        },
+        {
+          "id": "practical-3",
+          "title": "Предложение, расчёты и передача ключей",
+          "body": "До предложения составьте перечень вопросов: документы на право собственности, техническое состояние, цена и валюта, этапы оплаты, сроки и возврат аванса. При аренде и покупке оформите датированный перечень оборудования, показаний счётчиков и ключей. Храните подтверждения оплаты и контакты управляющей компании и обслуживающих организаций."
         }
       ],
       "faqs": [
@@ -3241,6 +3526,21 @@ export const editorialGuides: Record<string, Record<Locale, EditorialGuide> | un
           "id": "detail-6",
           "title": "اتخاذ القرار دون ضغط البيع",
           "body": "حدد الأفق المحتمل: أقل من سنتين، أو ثلاث إلى خمس سنوات، أو مدة طويلة. قارن عقارات متشابهة في الحي وجودة المبنى والمساحة والمواصلات والرسوم. احسب ميزانية بدء الإيجار وميزانية الشراء الكاملة، ثم ادرس سيناريو المغادرة المبكرة وصعوبة إعادة البيع.\n\nيفيد السكن المؤقت وزيارة الأحياء إذا لم تتشكل المعايير بعد. وعند نضج مشروع الشراء تستطيع Bosphoras تنسيق الاختيار والزيارات والتواصل مع مختصين مستقلين قبل التوقيع."
+        },
+        {
+          "id": "practical-1",
+          "title": "مقارنة المساحة الفعلية وحقوق الاستخدام",
+          "body": "قد تشمل المساحة الإجمالية المعلنة الجدران أو أجزاء مشتركة. اطلب المساحة الصافية والمخطط وتوزيع الغرف والمساحات الخارجية وحقوق الاستخدام. تحقق هل مواقف السيارات والمخازن والمرافق المشتركة مرتبطة قانونياً بالعقار أم متاحة للاستخدام فقط. المساحة المعلنة والحقوق المسجلة أمران مختلفان."
+        },
+        {
+          "id": "practical-2",
+          "title": "سكن أساسي أم استثمار إيجاري؟",
+          "body": "للسكن الشخصي تبرز المدرسة والنقل والراحة الحرارية وحالة المبنى. وللاستثمار الإيجاري ادرس الطلب والشغور والإدارة والنظام القانوني للإيجار. لا تعمم إيرادات أسابيع الذروة على السنة دون احتساب الإشغال والتكاليف."
+        },
+        {
+          "id": "practical-3",
+          "title": "العرض والدفع وتسليم المفاتيح",
+          "body": "قبل العرض حدد المسائل المطلوبة: وثائق الملكية والحالة الفنية والسعر والعملة ومراحل الدفع والمواعيد وشروط إعادة العربون. في الإيجار والشراء أعد محضراً مؤرخاً للمعدات والعدادات والمفاتيح. احتفظ بإثباتات الدفع وأرقام إدارة المبنى وخدمات الصيانة."
         }
       ],
       "faqs": [
