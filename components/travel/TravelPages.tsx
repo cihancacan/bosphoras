@@ -176,6 +176,22 @@ const categoryLead: Record<TravelCategory, { keyword: string; checks: string[] }
   helicopters: { keyword: 'helicopter tours · private helicopter transfer', checks: ['Tour versus point-to-point transfer', 'Weather and baggage limits', 'Operator, flight approval and refund terms'] },
   'private-jets': { keyword: 'private jet charter · empty leg flights', checks: ['Quoted flight versus confirmed availability', 'Aircraft, operator and airport details', 'Cancellation and repositioning conditions'] }
 };
+const localizedKeywords: Partial<Record<TravelLocale,Record<TravelCategory,string>>> = {
+ fr:{hotels:'meilleurs hôtels · hôtels 5 étoiles · resorts de luxe · hôtels de charme',villas:'villas de luxe · piscine privée · villas en bord de mer',chalets:'chalets de luxe · ski aux pieds · chalets avec piscine',yachts:'location de yachts · bateaux privés',helicopters:'survol en hélicoptère · transfert privé','private-jets':'location de jets privés · vols à vide'},
+ ru:{hotels:'лучшие отели · пятизвёздочные отели · роскошные курорты · бутик-отели',villas:'роскошные виллы · частные бассейны · виллы у моря',chalets:'роскошные шале · выход на лыжную трассу · шале с бассейном',yachts:'аренда яхт · частные яхты · аренда катеров',helicopters:'вертолётные экскурсии · частные трансферы','private-jets':'аренда частных самолётов · перегоночные рейсы'},
+ ar:{hotels:'أفضل الفنادق · فنادق خمس نجوم · منتجعات فاخرة · فنادق بوتيك',villas:'فيلات فاخرة · مسابح خاصة · فيلات على الشاطئ',chalets:'شاليهات فاخرة · وصول مباشر لمسارات التزلج · شاليهات بمسابح',yachts:'استئجار اليخوت · يخوت خاصة · استئجار القوارب',helicopters:'جولات بالمروحية · نقل خاص بالمروحية','private-jets':'استئجار طائرات خاصة · رحلات إعادة تموضع'}
+};
+const regionCopy: Partial<Record<TravelLocale,Record<string,string>>> = {
+ fr:{turkey:'Turquie',europe:'Europe et Méditerranée',alps:'Alpes',caribbean:'Caraïbes','private-islands':'Îles privées','north-america':'États-Unis',mexico:'Mexique',thailand:'Thaïlande','southeast-asia':'Asie du Sud-Est','east-asia':'Asie de l’Est','asia-mountains':'Montagnes d’Asie','south-asia':'Asie du Sud',himalayas:'Himalaya',africa:'Afrique','indian-ocean':'Océan Indien','middle-east':'Moyen-Orient'},
+ ru:{turkey:'Турция',europe:'Европа и Средиземноморье',alps:'Альпы',caribbean:'Карибы','private-islands':'Частные острова','north-america':'США',mexico:'Мексика',thailand:'Таиланд','southeast-asia':'Юго-Восточная Азия','east-asia':'Восточная Азия','asia-mountains':'Горы Азии','south-asia':'Южная Азия',himalayas:'Гималаи',africa:'Африка','indian-ocean':'Индийский океан','middle-east':'Ближний Восток'},
+ ar:{turkey:'تركيا',europe:'أوروبا والبحر المتوسط',alps:'جبال الألب',caribbean:'الكاريبي','private-islands':'الجزر الخاصة','north-america':'الولايات المتحدة',mexico:'المكسيك',thailand:'تايلاند','southeast-asia':'جنوب شرق آسيا','east-asia':'شرق آسيا','asia-mountains':'جبال آسيا','south-asia':'جنوب آسيا',himalayas:'الهيمالايا',africa:'أفريقيا','indian-ocean':'المحيط الهندي','middle-east':'الشرق الأوسط'}
+};
+function categoryKeywords(locale:TravelLocale,category:TravelCategory){return localizedKeywords[locale]?.[category]||categoryLead[category].keyword;}
+function regionName(locale:TravelLocale,region:string){return regionCopy[locale]?.[region]||travelRegions[region]||region;}
+function destinationCount(locale:TravelLocale,n:number){if(locale==='ru'){const m=n%100,k=n%10;return n+' '+(m>=11&&m<=14?'направлений':k===1?'направление':k>=2&&k<=4?'направления':'направлений');}if(locale==='ar')return new Intl.NumberFormat('ar').format(n)+' '+(n===1?'وجهة':n>=3&&n<=10?'وجهات':'وجهة');return n+' destination'+(n===1?'':'s');}
+const travelUiCopy={fr:{travel:'Voyages',legal:'Mentions légales',privacy:'Confidentialité',credits:'Crédits photo',primary:'Navigation principale',categories:'Catégories',languages:'Langues',breadcrumb:'Fil d’Ariane'},en:{travel:'Travel',legal:'Legal notice',privacy:'Privacy policy',credits:'Photo credits',primary:'Travel navigation',categories:'Travel categories',languages:'Languages',breadcrumb:'Breadcrumb'},ru:{travel:'Путешествия',legal:'Правовая информация',privacy:'Конфиденциальность',credits:'Авторы фотографий',primary:'Главная навигация',categories:'Категории путешествий',languages:'Языки',breadcrumb:'Навигационная цепочка'},ar:{travel:'السفر',legal:'الإشعارات القانونية',privacy:'الخصوصية',credits:'حقوق الصور',primary:'التنقل الرئيسي',categories:'فئات السفر',languages:'اللغات',breadcrumb:'مسار التنقل'}} as const;
+function travelUi(locale:TravelLocale){return travelUiCopy[locale as keyof typeof travelUiCopy]||travelUiCopy.en;}
+function sitePrefix(locale:TravelLocale){return ['en','ru','ar'].includes(locale)?'/'+locale:'';}
 const frenchCategoryChecks: Record<TravelCategory, string[]> = {
   hotels: ['La catégorie exacte de la chambre, sa vue et son emplacement', 'Les prestations comprises dans le tarif final', 'Les conditions d’annulation et le partenaire chargé de la réservation'],
   villas: ['L’intimité de la piscine, le nombre de chambres et les accès', 'Le personnel et l’entretien réellement inclus', 'La caution, les frais de service et les conditions d’annulation'],
@@ -285,13 +301,13 @@ export function travelPageMetadata(locale: TravelLocale, parts: string[] = []): 
     : isFeaturedDestinationGuide && featureGuide
     ? (featureGuide.slug==='jaipur' ? (locale==='fr'?'Jaipur : palais historiques, hôtels d’exception et forts des Aravalli':'Jaipur Luxury Travel: Palace Hotels, Pink City & Amber Fort') : featureGuide.slug==='galle' ? (locale==='fr'?'Galle, Sri Lanka : hôtels de charme dans le fort et resorts sur la côte':'Galle Sri Lanka: Luxury Fort Hotels & Coastal Resorts') : featureGuide.slug==='tangalle' ? (locale==='fr'?'Tangalle, Sri Lanka : hôtels de luxe, criques et lagunes':'Tangalle Sri Lanka: Luxury Hotels, Beaches & Lagoons') : featureGuide.slug==='paro' ? (locale==='fr'?'Paro au Bhoutan : hôtels de luxe, Taktsang et vallée himalayenne':'Paro Bhutan: Luxury Hotels, Tiger’s Nest & Himalayan Valley') : featureGuide.slug==='punakha' ? (locale==='fr'?'Punakha, Bhoutan : hôtels, forteresse, rivières et vallées':'Punakha Bhutan: Dzong, Valleys, Hotels & Rivers') : featureGuide.slug==='rajasthan' ? (locale==='fr'?'Rajasthan : palais, désert du Thar et safari à Ranthambore':'Rajasthan Luxury Travel: Palaces, Thar Desert & Ranthambore') : featureGuide.slug==='udaipur' ? (locale==='fr'?'Udaipur : palais de luxe, lac Pichola et hôtels d’exception':'Udaipur: Lake Palaces, Luxury Hotels & Rajasthan Heritage') : featureGuide.slug==='sentosa' ? (locale==='fr'?'Sentosa : villas avec piscine, plages et hôtels de luxe':'Sentosa: Private Pool Villas, Beaches & Luxury Resorts') : featureGuide.slug==='singapore' ? (locale==='fr'?'Singapour : hôtels de luxe, Marina Bay, Raffles et quartiers d’exception':'Singapore: Luxury Hotels, Marina Bay, Raffles & Distinctive Districts') : featureGuide.slug==='phu-quoc' ? (locale==='fr'?'Phu Quoc : hôtels de luxe, plages, îlots et villas privées':'Phu Quoc: Luxury Hotels, Beaches, Islands & Private Villas') : featureGuide.slug==='hoi-an' ? (locale==='fr'?'Hội An : hôtels de luxe, ville UNESCO et villas au bord du fleuve':'Hoi An Luxury Hotels: UNESCO Old Town, Rivers and Beach Villas') : featureGuide.slug==='da-nang' ? (locale==='fr'?'Da Nang : hôtels de luxe, plages, Sơn Trà et Montagnes de Marbre':'Da Nang Luxury Hotels: Son Tra, Beaches and Marble Mountains') : featureGuide.slug==='vinh-hy-bay' ? (locale==='fr'?'Vĩnh Hy Bay : Amanoi, villas, plages et parc Núi Chúa':'Vinh Hy Bay: Amanoi, Villas, Beaches & Nui Chua') : featureGuide.slug==='hakone' ? (locale==='fr'?'Hakone : ryokans de luxe, onsen, lac Ashi et mont Fuji':'Hakone Luxury Ryokans: Private Onsen, Lake Ashi & Mount Fuji') : featureGuide.slug==='kyoto' ? (locale==='fr'?'Kyoto : hôtels de luxe, jardins, Gion et Higashiyama':'Kyoto Luxury Hotels: Gardens, Gion & Higashiyama') : featureGuide.slug==='tokyo' ? (locale==='fr'?'Tokyo : quatre hôtels de luxe, Otemachi, Ginza et Shinjuku':'Tokyo: Four Luxury Hotels from Otemachi to Shinjuku') : featureGuide.slug==='palawan' ? (locale==='fr'?'Palawan : hôtels de luxe, El Nido, lagons et Coron':'Palawan: Luxury Hotels, El Nido Lagoons & Coron') : featureGuide.slug==='sumba' ? (locale==='fr'?'Sumba : hôtels de luxe, lagon Weekuri et villages':'Sumba: Luxury Villas, Weekuri Lagoon and Villages') : featureGuide.slug==='chiang-mai' ? (locale==='fr'?'Chiang Mai : hôtels de luxe, temples et rizières':'Chiang Mai: Luxury Hotels, Temples and Rice Paddies') : featureGuide.slug==='bangkok' ? (locale==='fr'?'Bangkok : hôtels de luxe, Chao Phraya et quartiers':'Bangkok: Luxury Hotels, Chao Phraya & Neighbourhoods') : featureGuide.slug==='koh-yao-noi' ? (locale==='fr'?'Koh Yao Noi : hôtels de luxe et baie de Phang Nga':'Koh Yao Noi: Luxury Hotels and Phang Nga Bay') : featureGuide.slug==='krabi' ? (locale==='fr'?'Krabi : hôtels de luxe, plages de Railay et îles Hong':'Krabi: Luxury Hotels, Railay Beaches and the Hong Islands') : featureGuide.slug==='san-miguel-de-allende' ? (locale==='fr'?'San Miguel de Allende : hôtels de luxe, patios et art':'San Miguel de Allende: Luxury Hotels, Courtyards & Art') : featureGuide.slug==='mayakoba' ? (locale==='fr'?'Mayakoba : 4 hôtels de luxe, lagunes et plages du Mexique':'Mayakoba: 4 Luxury Resorts, Lagoons and the Riviera Maya') : featureGuide.slug==='los-angeles' ? (locale==='fr'?'Los Angeles : 4 hôtels de luxe et 5 quartiers à découvrir':'Los Angeles: 4 Luxury Hotels, 5 Distinct Neighbourhoods') : featureGuide.slug==='miami' ? (locale==='fr'?'Miami : 4 hôtels de luxe, 5 quartiers et les plus beaux horizons':'Miami: 4 Luxury Hotels, 5 Neighbourhoods & Coastal Guide') : featureGuide.slug==='new-york' ? (locale==='fr'?'New York : 4 hôtels de luxe et 5 quartiers à découvrir':'New York: 4 Luxury Hotels & 5 Manhattan Neighbourhoods') : featureGuide.slug==='costa-careyes' ? (locale==='fr'?'Costa Careyes : villas architecturales, Playa Rosa et Costalegre':'Costa Careyes: Architectural Villas, Playa Rosa & Costalegre') : featureGuide.slug==='courchevel-1850' ? (locale==='fr'?'Courchevel 1850 : hôtels de luxe, ski et Jardin Alpin':'Courchevel 1850: Luxury Hotels, Skiing & Jardin Alpin') : featureGuide.slug==='mustique' ? (locale==='fr'?'Mustique : hôtel, villas privées et plages':'Mustique: Hotel, Villas and Private Beaches') : featureGuide.slug==='porto-cervo' ? (locale==='fr'?'Porto Cervo : hôtels de luxe, plages et marina':'Porto Cervo: Luxury Hotels, Sardinian Beaches & Marina') : featureGuide.slug==='saint-barthelemy' ? (locale==='fr'?'Saint-Barth : plages, hôtels de luxe et criques':'St Barth: Luxury Hotels, Beaches and Island Guide') : featureGuide.slug==='los-cabos' ? (locale==='fr'?'Los Cabos : plages, hôtels de luxe et désert de Baja':'Los Cabos: Baja Beaches, Desert Luxury & Private Resorts') : featureGuide.slug==='maldives' ? (locale==='fr'?'Maldives : atolls, hôtels de luxe et îles privées':'Maldives: Luxury Atolls, Private Islands & Resorts') : (locale === 'fr' ? featureGuide.name + ' : où séjourner, hôtels et expériences de luxe' : featureGuide.name + ': luxury stays, neighbourhoods and experiences'))
     : route.kind === 'keyword' && route.category && route.destination
-    ? heading(locale, route.category, route.destination.name)
+    ? heading(locale, route.category, nativeTravelName(route.destination.slug,locale,route.destination.name))
     : route.kind === 'destination' && route.destination ? route.destination.name + ' — Luxury stays'
     : route.kind === 'category' && route.category ? travelKeywordTitles[route.category][locale]
     : route.kind === 'directory' ? t.destinations
     : route.kind === 'last-minute' ? t.lastMinute
     : route.kind === 'private-collection' ? t.privateCollection
-    : 'Bosphoras Luxury Stays';
+    : t.slogan;
   const canonical = ORIGIN + travelHref(locale, route.slug);
   const specificEditorial = route.destination ? travelEditorial[route.destination.slug] : undefined;
   const localizedIntro = locale === 'fr' ? specificEditorial?.frIntro : locale === 'en' ? specificEditorial?.enIntro : undefined;
@@ -330,7 +346,7 @@ export function Header({ locale, slug, limitedLocales = false }: { locale: Trave
     { label: t.privateCollection, href: travelHref(locale, 'private-collection') },
   ];
   const mobileCategories = travelCategories.map(category => ({ label: travelKeywordTitles[category][locale], href: travelHref(locale, category) }));
-  const mobileLanguages = travelLocaleCodes.filter(code => !limitedLocales || code === 'fr' || code === 'en' || Boolean(getLocalizedGuide(slug.split('/').pop(),code))).map(code => ({
+  const mobileLanguages = travelLocaleCodes.filter(code => !limitedLocales || code === 'fr' || code === 'en' || (slug==='credits'&&isEditorialLocale(code)) || Boolean(getLocalizedGuide(slug.split('/').pop(),code))).map(code => ({
     label: code === 'pt' ? 'PT-BR' : code.toUpperCase(),
     code,
     href: travelHref(code, slug),
@@ -340,7 +356,7 @@ export function Header({ locale, slug, limitedLocales = false }: { locale: Trave
       <Link href={travelHref(locale)} style={{ fontFamily: "var(--font-bosphoras-logo), sans-serif" }} className="shrink-0 text-sm font-normal uppercase tracking-[0.18em] text-[#193344] sm:text-base">
         BOSPHORAS <span className="text-[#53616b]">LUXURY STAYS</span>
       </Link>
-      <nav aria-label="Travel primary navigation" className="hidden items-center gap-4 text-xs lg:flex lg:gap-6 lg:text-sm">
+      <nav aria-label={travelUi(locale).primary} className="hidden items-center gap-4 text-xs lg:flex lg:gap-6 lg:text-sm">
         {hotelSearch && <Link href={hotelSearchUrl} rel="sponsored" className="text-[#193344]">{hotelSearchLabel}</Link>}
         <Link href={travelHref(locale,'destinations')} className="hover:text-[#193344]">{t.destinations}</Link>
         <Link href={travelHref(locale,'last-minute')} className="hover:text-[#193344]">{t.lastMinute}</Link>
@@ -348,11 +364,11 @@ export function Header({ locale, slug, limitedLocales = false }: { locale: Trave
       </nav>
       <TravelMobileMenu locale={locale} links={mobileLinks} categories={mobileCategories} languages={mobileLanguages} />
     </div>
-    <nav aria-label="Travel categories" className="mx-auto hidden max-w-7xl gap-6 overflow-x-auto whitespace-nowrap px-5 pb-4 text-xs lg:flex lg:text-sm">
+    <nav aria-label={travelUi(locale).categories} className="mx-auto hidden max-w-7xl gap-6 overflow-x-auto whitespace-nowrap px-5 pb-4 text-xs lg:flex lg:text-sm">
       {travelCategories.map(category => <Link key={category} className="shrink-0 hover:text-[#193344]" href={travelHref(locale,category)}>{travelKeywordTitles[category][locale]}</Link>)}
     </nav>
-    <nav aria-label="Travel language versions" className="mx-auto hidden max-w-7xl flex-wrap gap-x-3 gap-y-2 px-5 pb-4 text-xs lg:flex">
-      {travelLocaleCodes.filter(code => !limitedLocales || code === 'fr' || code === 'en' || Boolean(getLocalizedGuide(slug.split('/').pop(),code))).map(code => <Link key={code} href={travelHref(code,slug)} className={code === locale ? 'text-[#193344] underline underline-offset-4' : 'text-[#53616b] hover:text-[#193344]'} lang={travelText(code).hreflang} hrefLang={travelText(code).hreflang}>{code === 'pt' ? 'PT-BR' : code.toUpperCase()}</Link>)}
+    <nav aria-label={travelUi(locale).languages} className="mx-auto hidden max-w-7xl flex-wrap gap-x-3 gap-y-2 px-5 pb-4 text-xs lg:flex">
+      {travelLocaleCodes.filter(code => !limitedLocales || code === 'fr' || code === 'en' || (slug==='credits'&&isEditorialLocale(code)) || Boolean(getLocalizedGuide(slug.split('/').pop(),code))).map(code => <Link key={code} href={travelHref(code,slug)} className={code === locale ? 'text-[#193344] underline underline-offset-4' : 'text-[#53616b] hover:text-[#193344]'} lang={travelText(code).hreflang} hrefLang={travelText(code).hreflang}>{code === 'pt' ? 'PT-BR' : code.toUpperCase()}</Link>)}
     </nav>
   </header>;
 }
@@ -361,10 +377,10 @@ export function Footer({ locale }: { locale: TravelLocale }) {
   return <footer className="mt-20 border-t border-[#e1e5e5] bg-[#f5f5f3] text-[#202629]">
     <div className="mx-auto max-w-7xl px-5 py-12 grid gap-8 md:grid-cols-3 text-sm">
       <section><p className="font-semibold tracking-[0.17em] uppercase">Bosphoras Luxury Stays</p><p className="text-[#193344] mt-3">{t.slogan}</p><p className="text-[#53616b] mt-3">{t.value}</p></section>
-      <nav aria-label="Travel collections"><p className="font-semibold mb-3">{t.collections}</p><div className="grid gap-2">{travelCategories.map(category => <Link key={category} href={travelHref(locale,category)}>{travelKeywordTitles[category][locale]}</Link>)}</div></nav>
-      <section><p className="font-semibold mb-3">{t.booking}</p><p className="text-[#53616b]">{t.draft}</p><p className="mt-4"><Link className="underline" href="/mentions-legales">{locale==='ru'?'Правовая информация':locale==='ar'?'المعلومات القانونية':'Mentions légales'}</Link> · <Link className="underline" href="/confidentialite">{locale==='ru'?'Конфиденциальность':locale==='ar'?'الخصوصية':'Confidentialité'}</Link> · <Link className="underline" href={locale === 'en' ? '/en/travel/credits' : '/travel/credits'}>{locale==='ru'?'Авторы фотографий':locale==='ar'?'حقوق الصور':locale === 'en' ? 'Photo credits' : 'Crédits photo'}</Link></p></section>
+      <nav aria-label={t.collections}><p className="font-semibold mb-3">{t.collections}</p><div className="grid gap-2">{travelCategories.map(category => <Link key={category} href={travelHref(locale,category)}>{travelKeywordTitles[category][locale]}</Link>)}</div></nav>
+      <section><p className="font-semibold mb-3">{t.booking}</p><p className="text-[#53616b]">{t.draft}</p><p className="mt-4"><Link className="underline" href={sitePrefix(locale)+"/mentions-legales"}>{travelUi(locale).legal}</Link> · <Link className="underline" href={sitePrefix(locale)+"/confidentialite"}>{travelUi(locale).privacy}</Link> · <Link className="underline" href={sitePrefix(locale)+"/travel/credits"}>{travelUi(locale).credits}</Link></p></section>
     </div>
-    <p className="border-t border-[#e1e5e5] py-5 px-5 text-center text-xs text-[#53616b]">© Bosphoras · The World, Through Local Eyes</p>
+    <p className="border-t border-[#e1e5e5] py-5 px-5 text-center text-xs text-[#53616b]">© Bosphoras · {t.slogan}</p>
   </footer>;
 }
 function DestCard({ locale, destination, category }: { locale: TravelLocale; destination: TravelDestination; category?: TravelCategory }) {
@@ -403,15 +419,15 @@ function travelCrumbs(locale: TravelLocale, route: TravelRoute): TravelCrumb[] {
   if (route.kind === 'keyword' && route.category && route.destination)
     return [
       { label: travelKeywordTitles[route.category][locale], slug: route.category },
-      { label: heading(locale, route.category, route.destination.name), slug: route.slug }
+      { label: heading(locale, route.category, nativeTravelName(route.destination.slug,locale,route.destination.name)), slug: route.slug }
     ];
   if (route.kind === 'category' && route.category)
     return [{ label: travelKeywordTitles[route.category][locale], slug: route.slug }];
   return [{ label: route.kind === 'directory' ? t.destinations : route.kind === 'last-minute' ? t.lastMinute : t.privateCollection, slug: route.slug }];
 }
 function BreadCrumb({ locale, items }: { locale: TravelLocale; items: TravelCrumb[] }) {
-  return <nav aria-label="Breadcrumb" className="text-xs text-[#63717c] mb-8 flex flex-wrap gap-2">
-    <Link href={travelHref(locale)}>Travel</Link>{items.map(item => <span key={item.slug}> / <Link className="hover:underline" href={travelHref(locale,item.slug)}>{item.label}</Link></span>)}
+  return <nav aria-label={travelUi(locale).breadcrumb} className="text-xs text-[#63717c] mb-8 flex flex-wrap gap-2">
+    <Link href={travelHref(locale)}>{travelUi(locale).travel}</Link>{items.map(item => <span key={item.slug}> / <Link className="hover:underline" href={travelHref(locale,item.slug)}>{item.label}</Link></span>)}
   </nav>;
 }
 function Schema({ locale, route }: { locale: TravelLocale; route: TravelRoute }) {
@@ -590,20 +606,20 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
   if (!route) notFound();
   const t = travelText(locale);
   const regionPairs = Object.keys(travelRegions).map(region => ({
-    region, label: travelRegions[region], destinations: travelDestinations.filter(x=>x.region===region)
+    region, label: regionName(locale,region), destinations: travelDestinations.filter(x=>x.region===region)
   })).filter(x=>x.destinations.length);
   const featured = activeDestinations.map(slug=>destinationBySlug.get(slug)).filter((x):x is TravelDestination=>Boolean(x));
   const category = route.category;
   const destination = route.destination;
   const filtered = category ? travelDestinations.filter(d=>d.categories.includes(category)) : [];
   const focus = route.kind === 'keyword' && destination && category
-    ? heading(locale,category,destination.name)
+    ? heading(locale,category,nativeTravelName(destination.slug,locale,destination.name))
     : route.kind === 'destination' && destination ? destination.name
     : route.kind === 'category' && category ? travelKeywordTitles[category][locale]
     : route.kind === 'directory' ? t.destinations
     : route.kind === 'last-minute' ? t.lastMinute
     : route.kind === 'private-collection' ? t.privateCollection
-    : 'The World, Through Local Eyes.';
+    : t.slogan;
   if (route.kind === 'hotel' && route.hotel) {
     if (locale !== 'fr' && locale !== 'en') notFound();
     return <div lang={t.hreflang} dir="ltr" className="min-h-screen bg-[#f8f5ee]">
@@ -641,14 +657,14 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
   return <div lang={t.hreflang} dir={locale === 'ar' ? 'rtl' : 'ltr'} className="min-h-screen bg-white text-[#202629]">
     <Schema locale={locale} route={route}/>
     <Header locale={locale} slug={route.slug}/>
-    <main>
+    <main lang={t.hreflang} dir={locale==='ar'?'rtl':'ltr'}>
       <section className="border-b border-[#e1e5e5] bg-[#f5f5f3] px-5 py-16 text-[#202629] sm:py-24">
         <div className="mx-auto max-w-7xl">
           <p className="mb-6 text-xs font-medium uppercase tracking-[0.16em] text-[#193344]">BOSPHORAS · LUXURY STAYS</p>
           <h1 className="font-serif text-4xl sm:text-6xl lg:text-7xl leading-tight max-w-5xl">{focus}</h1>
           <p className="mt-8 max-w-2xl text-lg leading-8 text-[#465159]">{t.tagline}</p>
           <p className="mt-5 max-w-3xl text-sm text-[#53616b]">{t.value}</p>
-          {destination && <p className="mt-6 text-sm text-[#193344]">{destination.country} · {travelRegions[destination.region] || destination.region}</p>}
+          {destination && <p className="mt-6 text-sm text-[#193344]">{nativeTravelCountry(destination.slug,locale,destination.country)} · {regionName(locale,destination.region)}</p>}
         </div>
       </section>
       <div className="mx-auto max-w-7xl px-5 py-12">
@@ -657,32 +673,32 @@ export function TravelExperiencePage({ locale, parts = [] }: { locale: TravelLoc
           <section className="mb-16">
             <h2 className="font-serif text-3xl sm:text-4xl">{t.collections}</h2>
             <div className="grid md:grid-cols-3 gap-4 mt-8">{travelCategories.map(c=><Link key={c} href={travelHref(locale,c)} className="bg-white border border-[#e3dacb] p-7 hover:border-[#b7955d]">
-              <h3 className="font-serif text-2xl">{travelKeywordTitles[c][locale]}</h3><p className="text-sm text-[#647583] mt-4">{categoryLead[c].keyword}</p>
+              <h3 className="font-serif text-2xl">{travelKeywordTitles[c][locale]}</h3><p className="text-sm text-[#647583] mt-4">{categoryKeywords(locale,c)}</p>
             </Link>)}</div>
           </section>
           <section className="mb-16"><div className="flex items-center justify-between flex-wrap gap-4"><h2 className="font-serif text-3xl sm:text-4xl">{t.destinations}</h2><Link className="underline text-[#83633f]" href={travelHref(locale,'destinations')}>{t.all} →</Link></div><DestinationGrid locale={locale} destinations={featured}/></section>
         </>}
-        {route.kind === 'directory' && <div className="space-y-16">{regionPairs.map(group=><section key={group.region}><h2 className="font-serif text-3xl">{group.label}</h2><p className="text-sm text-[#5e6e7b] mt-2">{group.destinations.length} destinations</p><DestinationGrid locale={locale} destinations={group.destinations}/></section>)}</div>}
+        {route.kind === 'directory' && <div className="space-y-16">{regionPairs.map(group=><section key={group.region}><h2 className="font-serif text-3xl">{group.label}</h2><p className="text-sm text-[#5e6e7b] mt-2">{destinationCount(locale,group.destinations.length)}</p><DestinationGrid locale={locale} destinations={group.destinations}/></section>)}</div>}
         {route.kind === 'category' && category && <section>
-          <p className="text-sm text-[#677888]">{categoryLead[category].keyword}</p>
+          <p className="text-sm text-[#677888]">{categoryKeywords(locale,category)}</p>
           <h2 className="font-serif text-3xl mt-4">{t.destinations}</h2>
           <DestinationGrid locale={locale} destinations={filtered} category={category}/>
         </section>}
         {route.kind === 'destination' && destination && <>
-          <section><h2 className="font-serif text-3xl">{t.perspective} · {destination.name}</h2>
+          <section><h2 className="font-serif text-3xl">{t.perspective} · {nativeTravelName(destination.slug,locale,destination.name)}</h2>
           <Approach locale={locale} destination={destination}/>
           <div className="mt-14"><h2 className="font-serif text-3xl">{t.collections}</h2><div className="grid md:grid-cols-3 gap-4 mt-7">
-            {destination.categories.map(c=><Link className="border bg-white border-[#e3dacb] hover:border-[#a88c62] p-6" key={c} href={travelHref(locale,c+'/'+destination.slug)}><h3 className="font-serif text-xl">{heading(locale,c,destination.name)}</h3><p className="text-[#637481] text-xs mt-3">{categoryLead[c].keyword}</p></Link>)}
+            {destination.categories.map(c=><Link className="border bg-white border-[#e3dacb] hover:border-[#a88c62] p-6" key={c} href={travelHref(locale,c+'/'+destination.slug)}><h3 className="font-serif text-xl">{heading(locale,c,nativeTravelName(destination.slug,locale,destination.name))}</h3><p className="text-[#637481] text-xs mt-3">{categoryKeywords(locale,c)}</p></Link>)}
           </div></div></section>
         </>}
         {route.kind === 'keyword' && destination && category && <>
-          <section className="max-w-4xl"><h2 className="font-serif text-3xl">{t.how} · {destination.name}</h2>
+          <section className="max-w-4xl"><h2 className="font-serif text-3xl">{t.how} · {nativeTravelName(destination.slug,locale,destination.name)}</h2>
           <p className="leading-8 mt-5 text-[#435666]">{t.approach}</p>
           {locale === 'en' && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug]?.enIntro || destination.angle}</p>}
           {locale === 'fr' && travelEditorial[destination.slug] && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug].frIntro}</p>}
           {locale === 'en' && travelEditorial[destination.slug] && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug].enDetail}</p>}
           {locale === 'fr' && travelEditorial[destination.slug] && <p className="leading-8 mt-5 text-[#435666]">{travelEditorial[destination.slug].frDetail}</p>}
-          <p className="mt-5 text-sm text-[#7b6342]">{categoryLead[category].keyword}</p></section>
+          <p className="mt-5 text-sm text-[#7b6342]">{categoryKeywords(locale,category)}</p></section>
           <Approach locale={locale} destination={destination} category={category}/>
           {/* Genuine destination FAQs are held back until locally researched and editorially reviewed.
               Repeating boilerplate Q&A across hundreds of keyword URLs would reduce page quality. */}

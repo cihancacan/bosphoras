@@ -16,5 +16,5 @@ export function generateStaticParams() {
 export default function LocaleLayout({ children, params }: LocaleLayoutProps) {
   const locale = params.locale as Locale;
   if (!locales.includes(locale)) notFound();
-  return <>{children}</>;
+  return <div lang={locale} dir={locale==='ar'?'rtl':'ltr'} className="contents">{children}</div>;
 }

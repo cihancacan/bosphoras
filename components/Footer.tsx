@@ -26,7 +26,7 @@ export function Footer({ locale }: FooterProps) {
     { label: locale === 'fr' ? 'Investisseurs' : locale === 'en' ? 'Investors' : locale === 'ru' ? 'Инвесторам' : 'المستثمرين', href: locale === 'fr' ? '/investissement/investisseurs' : '/'+locale+'/investment/investors' },
     { label: locale === 'fr' ? 'Entreprises : financement' : locale === 'en' ? 'Business funding' : locale === 'ru' ? 'Финансирование бизнеса' : 'تمويل الشركات', href: locale === 'fr' ? '/investissement/entrepreneurs' : '/'+locale+'/investment/entrepreneurs' },
     { label: locale === 'fr' ? 'Bureaux privés' : locale === 'en' ? 'Private Offices' : locale === 'ru' ? 'Частные офисы' : 'مكاتب خاصة', href: linkTo('offices') },
-    { label: locale === 'fr' ? 'Conciergerie de Luxe' : locale === 'en' ? 'Luxury Concierge' : locale === 'ru' ? 'Luxury Concierge' : 'كونسيرج فاخر', href: linkTo('luxury-concierge') },
+    { label: locale === 'fr' ? 'Conciergerie de Luxe' : locale === 'en' ? 'Luxury Concierge' : locale === 'ru' ? 'Консьерж-сервис премиум-класса' : 'كونسيرج فاخر', href: linkTo('luxury-concierge') },
   ];
 
   const cityLinks = [
@@ -66,7 +66,7 @@ export function Footer({ locale }: FooterProps) {
       <div className="container-editorial py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           <div>
-            <Link href={getLocalePath(locale, '/')} className="group mb-6 inline-flex flex-col leading-none" aria-label="Bosphoras — Accueil">
+            <Link href={getLocalePath(locale, '/')} className="group mb-6 inline-flex flex-col leading-none" aria-label={locale==='fr'?'Bosphoras — Accueil':locale==='en'?'Bosphoras — Home':locale==='ru'?'Bosphoras — Главная':'بوسفوراس — الرئيسية'}>
               <span style={{ fontFamily: "var(--font-bosphoras-logo), sans-serif" }} className="text-sm font-normal uppercase tracking-[0.18em] text-[#202629] transition-colors duration-300 group-hover:text-[#193344] sm:text-base">Bosphoras</span>
               <span className="mt-1 text-[0.6rem] uppercase tracking-[0.25em] text-[#193344]">{t(locale, 'footer.tagline')}</span>
             </Link>

@@ -30,7 +30,7 @@ export function LegalContentPage({
   return (
     <>
       <Header locale={locale} currentPath={currentPath} />
-      <main className="bg-[#f8f1e7] pt-28 text-[#101827] md:pt-32">
+      <main lang={locale} dir={locale==='ar'?'rtl':'ltr'} className="bg-[#f8f1e7] pt-28 text-[#101827] md:pt-32">
         <section className="relative overflow-hidden border-b border-[#d8c7a1] bg-[radial-gradient(circle_at_82%_10%,rgba(196,151,84,0.20),transparent_28%),linear-gradient(135deg,#f8f1e7_0%,#fffaf0_55%,#efe4d2_100%)]">
           <div className="absolute inset-0 opacity-[0.22]" style={{ backgroundImage: 'linear-gradient(#d8c7a1 1px, transparent 1px), linear-gradient(90deg, #d8c7a1 1px, transparent 1px)', backgroundSize: '72px 72px' }} />
           <div className="container-editorial relative z-10 py-16 md:py-24">
@@ -39,7 +39,7 @@ export function LegalContentPage({
               {title}
             </h1>
             <p className="mt-8 max-w-4xl text-lg leading-9 text-[#3e4857]">{intro}</p>
-            <p className="mt-6 text-sm uppercase tracking-[0.16em] text-[#7c6b56]">Dernière mise à jour : {updatedAt}</p>
+            <p className="mt-6 text-sm uppercase tracking-[0.16em] text-[#7c6b56]">{{fr:'Dernière mise à jour',en:'Last updated',ru:'Последнее обновление',ar:'آخر تحديث'}[locale]} : {updatedAt}</p>
           </div>
         </section>
 

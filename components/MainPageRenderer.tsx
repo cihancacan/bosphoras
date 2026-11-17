@@ -76,7 +76,7 @@ export function MainPageRenderer({ page }: MainPageRendererProps) {
   }));
 
   return (
-    <main dir={localeDir[locale]} className="min-h-screen bg-[hsl(45,30%,98%)]">
+    <main lang={locale} dir={localeDir[locale]} className="min-h-screen bg-[hsl(45,30%,98%)]">
       <Header locale={locale} currentPath={getLocalePath(locale, page.slug)} />
 
       <StructuredData data={organizationSchema()} />
