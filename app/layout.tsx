@@ -103,7 +103,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
               function isEditorialText(node) {
                 var parent = node.parentElement;
-                return !!(parent && parent.closest('[data-preserve-editorial], [data-travel-content], article')) || /(^|\\/)travel(\\/|$)/.test(location.pathname);
+                return !!(parent && parent.closest('[data-preserve-editorial], [data-travel-content], article')) || location.pathname.split('/').indexOf('travel') !== -1;
               }
 
               function replaceTextNode(node) {
