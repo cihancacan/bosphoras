@@ -38,7 +38,7 @@ for (const g of editorial) {
 }
 const missing = allBosphorasSeoPages.filter(p => !locales.every(l => !!getEditorialGuideForSeoKey(p.key,l))).map(p=>p.key);
 const chartSource = fs.readFileSync('components/GuideDataChart.tsx','utf8');
-const charts = JSON.parse(chartSource.match(/const charts: Record<string, ChartSpec \\| undefined> = ({[\\s\\S]*?});\\nconst captions/)[1]);
+const charts = JSON.parse(chartSource.match(/const charts: Record<string, ChartSpec \| undefined> = ({[\s\S]*?});\nconst captions/)[1]);
 let chartEditions=0;
 for(const [id,spec] of Object.entries(charts)) {
  for(const l of locales) {
