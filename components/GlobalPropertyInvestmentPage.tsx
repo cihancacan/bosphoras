@@ -3,6 +3,7 @@ import { ArrowRight, BarChart3, Building2, Globe2, ShieldCheck } from 'lucide-re
 import type { Locale } from '@/lib/i18n';
 import { localeDir } from '@/lib/i18n';
 import { globalPropertyHubPaths } from '@/data/propertyDesk';
+import {propertyCountryLabel} from '@/data/propertyDesk';
 import { fetchPublishedProperties } from '@/lib/propertyStore';
 import { getLocalePath, siteUrl } from '@/lib/routes';
 import { Header } from '@/components/Header';
@@ -33,7 +34,7 @@ function copy(locale: Locale) {
     text:'Bosphoras формирует развивающуюся подборку возможностей за пределами Турции и анализирует их по единой системе: продукт, цена, условия застройщика, необходимый капитал и ключевые риски.',
     browse:'Смотреть предложения',search:'Описать поиск',
     markets:'Международные рынки',marketsText:'Страны и города появляются по мере добавления проверенных возможностей.',
-    payment:'Доступ и планы оплаты',paymentText:'Цена cash, скидка, рассрочка 0% или удорожание — только если это реально предложено.',
+    payment:'Доступ и планы оплаты',paymentText:'Цена при полной оплате, скидка, рассрочка 0% или удорожание — только если это реально предложено.',
     review:'Инвестиционный анализ',reviewText:'Капитал, сценарии доходности, техническая оценка, риски и координация сделки.',
     disclaimer:'Bosphoras не называет один рынок лучшим автоматически. Каждый объект оценивается по локации, продукту, цене, условиям и профилю инвестора.',
   };
@@ -66,10 +67,10 @@ export async function GlobalPropertyInvestmentPage({ locale }:{ locale:Locale })
   const assessmentBase=locale==='fr'?'/diagnostic-prive?subject=global-property':locale==='en'?'/en/private-assessment?subject=global-property':locale==='ru'?'/ru/chastnaya-konsultatsiya?subject=global-property':'/ar/تقييم-خاص?subject=global-property';
   const assessment=withAssessmentContext(assessmentBase,hub,c.title,'global-property');
   const localizedPaths=Object.fromEntries((['fr','en','ru','ar'] as const).map((l)=>[l,getLocalePath(l,globalPropertyHubPaths[l])])) as Record<Locale,string>;
-  const countries=Array.from(new Set(properties.map((p)=>p.countryName).filter(Boolean)));
+  const countries=Array.from(new Set(properties.map((p)=>propertyCountryLabel(p,locale)).filter(Boolean)));
 
   return (
-    <main dir={localeDir[locale]} className="min-h-screen bg-[#f2f5f4] text-[#12221f] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',sans-serif]">
+    <main lang={locale} dir={localeDir[locale]} className="min-h-screen bg-[#f2f5f4] text-[#12221f] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',sans-serif]">
       <Header locale={locale} currentPath={hub} localizedPaths={localizedPaths}/>
       <StructuredData data={organizationSchema()}/>
       <StructuredData data={breadcrumbSchema([{name:'Bosphoras',url:siteUrl},{name:c.label,url:siteUrl+hub}])}/>

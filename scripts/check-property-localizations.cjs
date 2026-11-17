@@ -1,0 +1,5 @@
+const assert=require('node:assert/strict');
+const {propertyUnitLabel,propertyLocationLabel,propertyDeliveryLabel,formatPropertyPrice}=require('../data/propertyDesk');
+const p={countryCode:'AE',countryName:'United Arab Emirates',city:'dubai',cityName:'Dubai',district:'Al Jaddaf',currency:'AED',totalPrice:1000000};
+assert.equal(propertyUnitLabel('Studio','ru'),'Студия');assert.equal(propertyUnitLabel('3 BR','fr'),'3 chambres');assert.equal(propertyUnitLabel('1 BR','ar'),'غرفة نوم واحدة');assert.equal(propertyUnitLabel('Typologie sur demande','en'),'Unit type on request');
+assert.match(propertyLocationLabel(p,'ru'),/Дубай/);assert.match(propertyLocationLabel(p,'ar'),/دبي/);assert.match(propertyLocationLabel(p,'fr'),/Dubaï/);assert.match(propertyDeliveryLabel({ru:'2027-09-29'},'ru'),/сентября/);assert.equal(propertyDeliveryLabel({ar:''},'ar'),'');assert.ok(formatPropertyPrice(p,'en').includes('1,000,000'));console.log('Property locality, unit types, delivery and preservation of listing currency verified.');

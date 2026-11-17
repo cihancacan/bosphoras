@@ -161,7 +161,7 @@ export async function PropertyDeskPage({ page }: PropertyDeskPageProps) {
   const formatter=new Intl.NumberFormat(locale==='fr'?'fr-FR':locale==='ru'?'ru-RU':locale==='ar'?'ar':'en-GB',{style:'currency',currency:featured?.currency||'EUR',maximumFractionDigits:0});
 
   return (
-    <main dir={localeDir[locale]} className="min-h-screen bg-[#f4f5f2] text-[#10211d] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',sans-serif]">
+    <main lang={locale} dir={localeDir[locale]} className="min-h-screen bg-[#f4f5f2] text-[#10211d] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',sans-serif]">
       <Header locale={locale} currentPath={hubHref}/>
       <StructuredData data={organizationSchema()}/>
       <StructuredData data={itemList}/>
@@ -183,7 +183,7 @@ export async function PropertyDeskPage({ page }: PropertyDeskPageProps) {
           <div className="mt-6 flex flex-wrap gap-x-7 gap-y-2 border-t border-[#e0dbd1] pt-4 text-xs text-[#717973]">
             <span><strong className="text-[#28312e]">{properties.length}</strong> {c.live.toLowerCase()}</span>
             <span><strong className="text-[#28312e]">{markets.size||1}</strong> {c.markets.toLowerCase()}</span>
-            {entry?<span>{c.entry}: <strong className="text-[#315f52]">{new Intl.NumberFormat(locale==='fr'?'fr-FR':'en-GB',{style:'currency',currency:featured?.currency||'EUR',maximumFractionDigits:0,notation:'compact'}).format(entry)}</strong></span>:null}
+            {entry?<span>{c.entry}: <strong className="text-[#315f52]">{new Intl.NumberFormat(locale==='fr'?'fr-FR':locale==='ru'?'ru-RU':locale==='ar'?'ar':'en-GB',{style:'currency',currency:featured?.currency||'EUR',maximumFractionDigits:0,notation:'compact'}).format(entry)}</strong></span>:null}
           </div>
         </div>
       </section>

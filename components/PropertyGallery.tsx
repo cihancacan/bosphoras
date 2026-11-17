@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import type {Locale} from '@/lib/i18n';
 import { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight, Images, X } from 'lucide-react';
 
@@ -10,9 +11,11 @@ interface Props {
   summary: string;
   location: string;
   compact?: boolean;
+  locale?: Locale;
 }
 
-export function PropertyGallery({ images, title, summary, location, compact = false }: Props) {
+export function PropertyGallery({ images, title, summary, location, compact = false, locale='fr' }: Props) {
+  const c={fr:{open:'Ouvrir la galerie',previous:'Photo précédente',next:'Photo suivante',main:'Ouvrir la photo principale',second:'Ouvrir la deuxième photo',third:'Ouvrir la troisième photo',photo:'Ouvrir la photo',close:'Fermer'},en:{open:'Open gallery',previous:'Previous photo',next:'Next photo',main:'Open main photo',second:'Open second photo',third:'Open third photo',photo:'Open photo',close:'Close'},ru:{open:'Открыть галерею',previous:'Предыдущее фото',next:'Следующее фото',main:'Открыть главное фото',second:'Открыть второе фото',third:'Открыть третье фото',photo:'Открыть фото',close:'Закрыть'},ar:{open:'فتح معرض الصور',previous:'الصورة السابقة',next:'الصورة التالية',main:'فتح الصورة الرئيسية',second:'فتح الصورة الثانية',third:'فتح الصورة الثالثة',photo:'فتح الصورة',close:'إغلاق'}}[locale];
   const safeImages = images.filter(Boolean);
   const [index, setIndex] = useState(0);
   const [open, setOpen] = useState(false);
@@ -64,13 +67,13 @@ export function PropertyGallery({ images, title, summary, location, compact = fa
         onTouchEnd={onTouchEnd}
       >
         <div className={compact?'relative aspect-[16/10] sm:aspect-[2/1]':'relative aspect-[4/3] sm:aspect-[16/10]'}>
-          <button type="button" onClick={() => openAt(index)} className="absolute inset-0 block h-full w-full" aria-label="Open gallery">
+          <button type="button" onClick={() => openAt(index)} className="absolute inset-0 block h-full w-full" aria-label={c.open}>
             <Image src={current} alt={title} fill unoptimized priority className="object-cover" sizes="100vw" />
           </button>
           {safeImages.length > 1 ? (
             <>
-              <button type="button" onClick={() => move(-1)} className="absolute left-3 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/50 bg-black/25 p-2.5 text-white backdrop-blur-md" aria-label="Previous photo"><ChevronLeft size={20}/></button>
-              <button type="button" onClick={() => move(1)} className="absolute right-3 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/50 bg-black/25 p-2.5 text-white backdrop-blur-md" aria-label="Next photo"><ChevronRight size={20}/></button>
+              <button type="button" onClick={() => move(-1)} className="absolute left-3 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/50 bg-black/25 p-2.5 text-white backdrop-blur-md" aria-label={c.previous}><ChevronLeft size={20}/></button>
+              <button type="button" onClick={() => move(1)} className="absolute right-3 top-1/2 z-20 -translate-y-1/2 rounded-full border border-white/50 bg-black/25 p-2.5 text-white backdrop-blur-md" aria-label={c.next}><ChevronRight size={20}/></button>
             </>
           ) : null}
           <div className="absolute right-3 top-3 z-20 inline-flex items-center gap-2 rounded-full bg-[#111816]/72 px-3 py-2 text-[0.68rem] font-semibold text-white backdrop-blur-md">
@@ -84,7 +87,7 @@ export function PropertyGallery({ images, title, summary, location, compact = fa
       </div>
 
       <div className={`hidden ${compact?'h-[380px]':'h-[480px]'} ${safeImages.length>1?'grid-cols-[minmax(0,1.72fr)_minmax(300px,.72fr)]':'grid-cols-1'} grid-rows-2 gap-2 overflow-hidden rounded-[1.5rem] lg:grid`}>
-        <button type="button" onClick={() => openAt(0)} className="group relative row-span-2 overflow-hidden bg-[#d8d4cb] text-left" aria-label="Open main photo">
+        <button type="button" onClick={() => openAt(0)} className="group relative row-span-2 overflow-hidden bg-[#d8d4cb] text-left" aria-label={c.main}>
           <Image src={safeImages[0]} alt={title} fill unoptimized priority className="object-cover transition duration-700 group-hover:scale-[1.015]" sizes="72vw" />
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/72 via-black/25 to-transparent px-8 pb-7 pt-28 text-white">
             <p className="text-[0.66rem] font-semibold uppercase tracking-[0.16em] text-white/75">{location}</p>
@@ -93,13 +96,13 @@ export function PropertyGallery({ images, title, summary, location, compact = fa
         </button>
 
         {safeImages[1] ? (
-          <button type="button" onClick={() => openAt(1)} className={`group relative overflow-hidden bg-[#d8d4cb] ${!safeImages[2] ? 'row-span-2' : ''}`} aria-label="Open second photo">
+          <button type="button" onClick={() => openAt(1)} className={`group relative overflow-hidden bg-[#d8d4cb] ${!safeImages[2] ? 'row-span-2' : ''}`} aria-label={c.second}>
             <Image src={safeImages[1]} alt={`${title} — 2`} fill unoptimized className="object-cover transition duration-700 group-hover:scale-[1.025]" sizes="28vw" />
           </button>
         ) : null}
 
         {safeImages[2] ? (
-          <button type="button" onClick={() => openAt(2)} className="group relative overflow-hidden bg-[#d8d4cb]" aria-label="Open third photo">
+          <button type="button" onClick={() => openAt(2)} className="group relative overflow-hidden bg-[#d8d4cb]" aria-label={c.third}>
             <Image src={safeImages[2]} alt={`${title} — 3`} fill unoptimized className="object-cover transition duration-700 group-hover:scale-[1.025]" sizes="28vw" />
             <span className="absolute bottom-4 right-4 inline-flex items-center gap-2 rounded-full bg-[#111816]/76 px-4 py-2.5 text-xs font-semibold text-white backdrop-blur-md">
               <Images size={15}/>{safeImages.length}
@@ -113,7 +116,7 @@ export function PropertyGallery({ images, title, summary, location, compact = fa
           {safeImages.slice(3, 9).map((image, offset) => {
             const imageIndex = offset + 3;
             return (
-              <button key={image + imageIndex} type="button" onClick={() => openAt(imageIndex)} className="group relative aspect-[16/10] w-[150px] shrink-0 overflow-hidden rounded-xl bg-[#dedbd3]" aria-label={`Open photo ${imageIndex + 1}`}>
+              <button key={image + imageIndex} type="button" onClick={() => openAt(imageIndex)} className="group relative aspect-[16/10] w-[150px] shrink-0 overflow-hidden rounded-xl bg-[#dedbd3]" aria-label={`${c.photo} ${imageIndex + 1}`}>
                 <Image src={image} alt={`${title} — ${imageIndex + 1}`} fill unoptimized className="object-cover transition duration-500 group-hover:scale-[1.04]" sizes="150px"/>
               </button>
             );
@@ -128,9 +131,9 @@ export function PropertyGallery({ images, title, summary, location, compact = fa
 
       {open && current ? (
         <div className="fixed inset-0 z-[100] bg-[#090d0c]/98" role="dialog" aria-modal="true" aria-label={title}>
-          <button type="button" onClick={() => setOpen(false)} className="absolute right-3 top-3 z-30 rounded-full border border-white/25 bg-black/30 p-3 text-white sm:right-5 sm:top-5" aria-label="Close"><X size={22}/></button>
-          {safeImages.length > 1 ? <button type="button" onClick={() => move(-1)} className="absolute left-3 top-1/2 z-30 -translate-y-1/2 rounded-full border border-white/25 bg-black/30 p-3 text-white sm:left-5" aria-label="Previous photo"><ChevronLeft size={26}/></button> : null}
-          {safeImages.length > 1 ? <button type="button" onClick={() => move(1)} className="absolute right-3 top-1/2 z-30 -translate-y-1/2 rounded-full border border-white/25 bg-black/30 p-3 text-white sm:right-5" aria-label="Next photo"><ChevronRight size={26}/></button> : null}
+          <button type="button" onClick={() => setOpen(false)} className="absolute right-3 top-3 z-30 rounded-full border border-white/25 bg-black/30 p-3 text-white sm:right-5 sm:top-5" aria-label={c.close}><X size={22}/></button>
+          {safeImages.length > 1 ? <button type="button" onClick={() => move(-1)} className="absolute left-3 top-1/2 z-30 -translate-y-1/2 rounded-full border border-white/25 bg-black/30 p-3 text-white sm:left-5" aria-label={c.previous}><ChevronLeft size={26}/></button> : null}
+          {safeImages.length > 1 ? <button type="button" onClick={() => move(1)} className="absolute right-3 top-1/2 z-30 -translate-y-1/2 rounded-full border border-white/25 bg-black/30 p-3 text-white sm:right-5" aria-label={c.next}><ChevronRight size={26}/></button> : null}
           <div
             className="relative h-full w-full"
             onTouchStart={(event) => setTouchStart(event.touches[0]?.clientX ?? null)}

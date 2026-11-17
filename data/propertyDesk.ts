@@ -162,9 +162,34 @@ export function formatEntryCapital(property: PropertyListing, locale: Locale): s
     : `رأس المال اليوم: ${amount}`;
 }
 
-export function propertyLocationLabel(property: PropertyListing): string {
-  return [property.district, property.cityName, property.countryName].filter(Boolean).join(' · ');
+const propertyCityNames: Record<string,Record<Locale,string>> = {
+ istanbul:{fr:'Istanbul',en:'Istanbul',ru:'Стамбул',ar:'إسطنبول'},
+ bodrum:{fr:'Bodrum',en:'Bodrum',ru:'Бодрум',ar:'بودروم'},
+ antalya:{fr:'Antalya',en:'Antalya',ru:'Анталья',ar:'أنطاليا'},
+ dubai:{fr:'Dubaï',en:'Dubai',ru:'Дубай',ar:'دبي'},
+};
+const propertyDistrictNames:Record<string,Record<Locale,string>>={
+ buyukcekmece:{fr:'Büyükçekmece',en:'Büyükçekmece',ru:'Бююкчекмедже',ar:'بيوك تشكمجه'},
+ yalikavak:{fr:'Yalıkavak',en:'Yalıkavak',ru:'Ялыкавак',ar:'ياليكافاك'},
+ 'al jaddaf':{fr:'Al Jaddaf',en:'Al Jaddaf',ru:'Аль-Джадаф',ar:'الجداف'},
+ 'business bay':{fr:'Business Bay',en:'Business Bay',ru:'Бизнес-Бей',ar:'الخليج التجاري'},
+ 'binghatti hills':{fr:'Binghatti Hills',en:'Binghatti Hills',ru:'Binghatti Hills',ar:'بن غاطي هيلز'},
+ 'damac hills 2 (akoya by damac)':{fr:'DAMAC Hills 2 (Akoya by DAMAC)',en:'DAMAC Hills 2 (Akoya by DAMAC)',ru:'DAMAC Hills 2 (Akoya by DAMAC)',ar:'داماك هيلز 2 (أكويا من داماك)'},
+ 'dubai land residence complex (dlrc)':{fr:'Dubai Land Residence Complex (DLRC)',en:'Dubai Land Residence Complex (DLRC)',ru:'Dubai Land Residence Complex (DLRC)',ar:'مجمع دبي لاند السكني (DLRC)'},
+ 'nad al sheba gardens':{fr:'Nad Al Sheba Gardens',en:'Nad Al Sheba Gardens',ru:'Nad Al Sheba Gardens',ar:'ند الشبا غاردنز'},
+ 'the valley by emaar':{fr:'The Valley by Emaar',en:'The Valley by Emaar',ru:'The Valley by Emaar',ar:'ذا فالي من إعمار'},
+ 'dubai silicon oasis (dso)':{fr:'Dubai Silicon Oasis (DSO)',en:'Dubai Silicon Oasis (DSO)',ru:'Dubai Silicon Oasis (DSO)',ar:'واحة دبي للسيليكون (DSO)'},
+};
+function propertyPlaceKey(value:string){return value.toLowerCase().replace(/ı/g,'i').normalize('NFD').replace(/[\u0300-\u036f]/g,'').trim();}
+export function propertyCountryLabel(property:PropertyListing,locale:Locale){const name=property.countryName||property.countryCode;try{return /^[A-Z]{2}$/.test(property.countryCode)?new Intl.DisplayNames([locale],{type:'region'}).of(property.countryCode)||name:name;}catch{return name;}}
+export function propertyCityLabel(property:PropertyListing,locale:Locale){const name=property.cityName||property.city||'';return propertyCityNames[propertyPlaceKey(name)]?.[locale]||propertyCityNames[propertyPlaceKey(property.city||'')]?.[locale]||name;}
+export function propertyDistrictLabel(property:PropertyListing,locale:Locale){const name=property.district||'';return propertyDistrictNames[propertyPlaceKey(name)]?.[locale]||name;}
+export function propertyLocationLabel(property: PropertyListing, locale?:Locale): string {
+  return (locale?[propertyDistrictLabel(property,locale),propertyCityLabel(property,locale),propertyCountryLabel(property,locale)]:[property.district,property.cityName,property.countryName]).filter(Boolean).join(' · ');
 }
+export function propertyUnitLabel(label:string,locale:Locale){const key=label.trim();if(/^studio$/i.test(key))return {fr:'Studio',en:'Studio',ru:'Студия',ar:'استوديو'}[locale];if(/^(typologie sur demande|unit types? on request|on request)$/i.test(key))return {fr:'Typologie sur demande',en:'Unit type on request',ru:'Тип квартиры по запросу',ar:'نوع الوحدة عند الطلب'}[locale];const m=key.match(/^(\d+)\s*(?:BR|bedrooms?)$/i);if(!m)return label;const n=Number(m[1]);if(locale==='ru'){const k=n%10,t=n%100;return n+' '+(t>=11&&t<=14?'спален':k===1?'спальня':k>=2&&k<=4?'спальни':'спален');}if(locale==='ar')return n===1?'غرفة نوم واحدة':n===2?'غرفتا نوم':new Intl.NumberFormat('ar').format(n)+' غرف نوم';return n+(locale==='fr'?(n===1?' chambre':' chambres'):(n===1?' bedroom':' bedrooms'));}
+export function propertyDeliveryLabel(value:LocalizedText|undefined,locale:Locale){const text=value?.[locale]||'';if(!/^\d{4}-\d{2}-\d{2}$/.test(text))return text;const date=new Date(text+'T00:00:00Z');if(Number.isNaN(date.getTime()))return text;return new Intl.DateTimeFormat(locale==='fr'?'fr-FR':locale==='en'?'en-GB':locale==='ru'?'ru-RU':'ar',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC',calendar:'gregory'}).format(date);}
+
 
 export function paymentBadge(property: PropertyListing, locale: Locale): string | null {
   if (!property.paymentPlanEnabled) return null;

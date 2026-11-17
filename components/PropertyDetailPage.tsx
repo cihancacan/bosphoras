@@ -23,6 +23,7 @@ import type { Locale } from '@/lib/i18n';
 import { localeDir } from '@/lib/i18n';
 import {
   formatPropertyPrice,
+  propertyLocationLabel, propertyCityLabel, propertyUnitLabel, propertyDeliveryLabel,
   getPropertyPath,
   globalPropertyHubPaths,
   propertyHubPaths,
@@ -312,9 +313,9 @@ function cityLabel(property: PropertyListing) {
 
 function collectionLabel(collection: PropertyListing['collection'], locale: Locale) {
   const map = {
-    'selected-investment': { fr: 'Selected Investment', en: 'Selected Investment', ru: 'Selected Investment', ar: 'Selected Investment' },
-    signature: { fr: 'Signature Collection', en: 'Signature Collection', ru: 'Signature Collection', ar: 'Signature Collection' },
-    private: { fr: 'Private Opportunity', en: 'Private Opportunity', ru: 'Private Opportunity', ar: 'Private Opportunity' },
+    'selected-investment': { fr: 'Investissement sélectionné', en: 'Selected Investment', ru: 'Отобранный инвестиционный объект', ar: 'استثمار مختار' },
+    signature: { fr: 'Collection Signature', en: 'Signature Collection', ru: 'Коллекция Signature', ar: 'مجموعة Signature' },
+    private: { fr: 'Opportunité privée', en: 'Private Opportunity', ru: 'Частное предложение', ar: 'فرصة خاصة' },
   } as const;
   return map[collection][locale];
 }
@@ -345,7 +346,8 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
   ) as Record<Locale, string>;
 
   const propertyTitle = localized(property.title, locale);
-  const propertyLocation = [property.district, cityLabel(property), property.countryName].filter(Boolean).join(', ');
+  const propertyLocation = propertyLocationLabel(property,locale);
+  const deliveryLabel=propertyDeliveryLabel(property.delivery,locale);
   const requestHref = property.projectId ? '#project-inquiry' : `${assessmentPath}?subject=property&property=${encodeURIComponent(property.id)}&property_title=${encodeURIComponent(propertyTitle)}&property_location=${encodeURIComponent(propertyLocation)}`;
   const visitHref = property.projectId ? '#project-inquiry' : `${assessmentPath}?subject=private-viewing&property=${encodeURIComponent(property.id)}&property_title=${encodeURIComponent(propertyTitle)}&property_location=${encodeURIComponent(propertyLocation)}`;
 
@@ -407,7 +409,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
       description: property.summary[locale],
       address: {
         '@type': 'PostalAddress',
-        addressLocality: `${property.district}, ${cityLabel(property)}`,
+        addressLocality: propertyCityLabel(property,locale),
         addressCountry: property.countryCode || property.countryName,
       },
       ...(property.surfaceM2 ? { floorSize: { '@type': 'QuantitativeValue', value: property.surfaceM2, unitCode: 'MTK' } } : {}),
@@ -421,7 +423,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
     property.surfaceM2 ? { icon: Ruler, label: c.surface, value: `${property.surfaceM2} m²` } : null,
     property.bedrooms !== undefined ? { icon: BedDouble, label: c.bedrooms, value: String(property.bedrooms) } : null,
     property.bathrooms !== undefined ? { icon: Bath, label: c.bathrooms, value: String(property.bathrooms) } : null,
-    property.delivery ? { icon: Clock3, label: c.delivery, value: localized(property.delivery, locale) } : null,
+    deliveryLabel ? { icon: Clock3, label: c.delivery, value: deliveryLabel } : null,
     property.developer ? { icon: Building2, label: c.developer, value: property.developer } : null,
     { icon: MapPin, label: c.location, value: propertyLocation },
   ].filter(Boolean);
@@ -455,7 +457,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
         : 'The available payment schedule is shown in the payment-plan section on this page. The terms should be reconfirmed before reservation.',
     });
   }
-  if (property.delivery) {
+  if (deliveryLabel) {
     faqItems.push({
       question:
         locale === 'fr' ? `Quand est prévue la livraison de ${propertyTitle} ?`
@@ -463,10 +465,10 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
         : locale === 'ar' ? `متى موعد تسليم ${propertyTitle}؟`
         : `When is ${propertyTitle} expected to hand over?`,
       answer:
-        locale === 'fr' ? `La livraison indiquée est ${localized(property.delivery, locale)}. Il s’agit d’une information projet à reconfirmer contractuellement.`
-        : locale === 'ru' ? `Указанный срок сдачи: ${localized(property.delivery, locale)}. Его необходимо подтвердить в договоре.`
-        : locale === 'ar' ? `موعد التسليم المشار إليه هو ${localized(property.delivery, locale)} ويجب تأكيده تعاقدياً.`
-        : `The stated handover is ${localized(property.delivery, locale)}. This should be reconfirmed contractually.`,
+        locale === 'fr' ? `La livraison indiquée est ${deliveryLabel}. Il s’agit d’une information projet à reconfirmer contractuellement.`
+        : locale === 'ru' ? `Указанный срок сдачи: ${deliveryLabel}. Его необходимо подтвердить в договоре.`
+        : locale === 'ar' ? `موعد التسليم المشار إليه هو ${deliveryLabel} ويجب تأكيده تعاقدياً.`
+        : `The stated handover is ${deliveryLabel}. This should be reconfirmed contractually.`,
     });
   }
   if (propertyLocation) {
@@ -485,7 +487,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
   }
 
   return (
-    <main dir={localeDir[locale]} className="min-h-screen bg-[#f5f3ee] text-[#17201d] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',sans-serif]">
+    <main lang={locale} dir={localeDir[locale]} className="min-h-screen bg-[#f5f3ee] text-[#17201d] [font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe_UI',sans-serif]">
       <Header locale={locale} currentPath={fullPath} localizedPaths={localizedPaths} />
       <StructuredData data={organizationSchema()} />
       <StructuredData data={propertySchema} />
@@ -504,6 +506,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
       <section className={property.projectId?'bg-[#fbfaf6] px-0 sm:px-6 lg:px-8':'bg-[#fbfaf6] px-0 py-0 sm:px-6 sm:py-7 lg:px-8 lg:py-9'}>
         <div className="mx-auto max-w-[1500px]">
           <PropertyGallery
+            locale={locale}
             images={images}
             title={propertyTitle}
             summary={property.projectId?'':localized(property.summary, locale)}
@@ -539,7 +542,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
               </div>
               <div>
                 <span className="block text-[0.6rem] font-semibold uppercase tracking-[0.11em] text-[#999389]">{c.delivery}</span>
-                <strong className="mt-1 block text-base text-[#303834]">{property.delivery ? localized(property.delivery, locale) : '—'}</strong>
+                <strong className="mt-1 block text-base text-[#303834]">{property.delivery ? deliveryLabel : '—'}</strong>
               </div>
             </div>
             <div className="mt-6 grid gap-2.5">
@@ -654,7 +657,7 @@ export function PropertyDetailPage({ locale, property, globalMode = false }: Pro
                 {property.projectUnitOptions.map((unit,index)=>(
                   <article key={index} className="rounded-xl border border-[#dad5ca] bg-white p-4">
                     <span className="text-[0.65rem] font-semibold uppercase tracking-[0.14em] text-[#638270]">{unit.availability==='confirmed' ? (locale==='fr'?'Confirmée manuellement':locale==='en'?'Manually confirmed':locale==='ru'?'Подтверждено':'تم التأكيد') : (locale==='fr'?'Sur demande':locale==='en'?'On request':locale==='ru'?'По запросу':'حسب الطلب')}</span>
-                    <h3 className="mt-3 text-xl font-semibold text-[#15231c]">{unit.label}</h3>
+                    <h3 className="mt-3 text-xl font-semibold text-[#15231c]">{propertyUnitLabel(unit.label,locale)}</h3>
                     <div className="mt-4 flex flex-wrap gap-3 text-sm text-[#6a746d]">
                       {unit.bedrooms!==undefined?<span>{unit.bedrooms} {locale==='fr'?'ch.':locale==='ru'?'сп.':locale==='ar'?'غرف':'bed'}</span>:null}
                       {unit.bathrooms!==undefined?<span>{unit.bathrooms} {locale==='fr'?'SDB':locale==='ru'?'ванн.':locale==='ar'?'حمام':'bath'}</span>:null}

@@ -11,7 +11,7 @@ import {
   formatPropertyPrice,
   getPropertyPath,
   paymentBadge,
-  propertyLocationLabel,
+  propertyLocationLabel, propertyCountryLabel, propertyCityLabel,
   type PropertyListing,
 } from '@/data/propertyDesk';
 
@@ -80,16 +80,16 @@ export function PropertyDeskBrowser({locale,properties,globalMode=false}:Propert
 
   const countries=useMemo(()=>{
     const map=new Map<string,string>();
-    properties.forEach((p)=>map.set(p.countryCode||p.countryName,p.countryName||p.countryCode));
+    properties.forEach((p)=>map.set(p.countryCode||p.countryName,propertyCountryLabel(p,locale)));
     return Array.from(map.entries()).sort((a,b)=>a[1].localeCompare(b[1]));
-  },[properties]);
+  },[properties,locale]);
 
   const cities=useMemo(()=>{
     const pairs=properties
       .filter((p)=>!country||(p.countryCode||p.countryName)===country)
-      .map((p)=>[p.city,p.cityName||p.city] as [string,string]);
+      .map((p)=>[p.city,propertyCityLabel(p,locale)] as [string,string]);
     return Array.from(new Map(pairs).entries()).sort((a,b)=>a[1].localeCompare(b[1]));
-  },[properties,country]);
+  },[properties,country,locale]);
 
   const types=useMemo(()=>Array.from(new Set(properties.map((p)=>p.propertyType).filter(Boolean))).sort(),[properties]);
 
@@ -145,7 +145,7 @@ export function PropertyDeskBrowser({locale,properties,globalMode=false}:Propert
               <div className="relative aspect-[4/3] overflow-hidden bg-[#dfddd7]">
                 {property.heroImage||property.images?.[0]?<img src={property.heroImage||property.images[0]} alt={property.title[locale]} className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]"/>:<div className="flex h-full items-center justify-center text-xs uppercase tracking-[0.16em] text-[#787b77]">Bosphoras</div>}
                 <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-3 bg-gradient-to-t from-black/65 to-transparent px-4 pb-4 pt-12 text-white">
-                  <span className="inline-flex items-center gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.08em]"><MapPin size={12}/>{propertyLocationLabel(property)}</span>
+                  <span className="inline-flex items-center gap-1.5 text-[0.68rem] font-semibold uppercase tracking-[0.08em]"><MapPin size={12}/>{propertyLocationLabel(property,locale)}</span>
                   {payBadge?<span className="bg-white/90 px-2 py-1 text-[0.62rem] font-semibold text-[#315f52] backdrop-blur-sm">{payBadge}</span>:null}
                 </div>
               </div>

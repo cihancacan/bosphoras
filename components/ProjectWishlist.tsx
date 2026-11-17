@@ -5,12 +5,14 @@ import {FormEvent,useEffect,useState} from 'react';
 import {GitCompareArrows,Heart,ArrowRight,X,Trash2} from 'lucide-react';
 import type {Locale} from '@/lib/i18n';
 import type {PropertyListing} from '@/data/propertyDesk';
-import {formatPropertyPrice} from '@/data/propertyDesk';
+import {formatPropertyPrice,propertyCountryLabel,propertyCityLabel,propertyDistrictLabel,propertyUnitLabel,propertyDeliveryLabel,getPropertyPath,globalPropertyHubPaths} from '@/data/propertyDesk';
+import {getLocalePath} from '@/lib/routes';
 
 type WishProject={
  listingId:string; projectId:string; title:string; country:string; city:string; district:string;
  currency:string; priceMin:number|null; priceMax:number|null; delivery:string;
  developer:string; bedrooms:string; payment:string; image:string; href:string;
+ localized?:Record<Locale,Pick<WishProject,'title'|'country'|'city'|'district'|'delivery'|'bedrooms'|'payment'|'href'>>;
 };
 const KEY='bosphoras_project_wishlist_v1';
 const EVENT='bosphoras-project-wishlist-changed';
@@ -26,15 +28,18 @@ const money=(v:number|undefined|null,currency:string,locale:Locale)=>{
  try{return new Intl.NumberFormat(locale==='fr'?'fr-FR':locale==='ru'?'ru-RU':locale==='ar'?'ar':'en-GB',{style:'currency',currency,maximumFractionDigits:0}).format(v);}
  catch{return String(v)+' '+currency;}
 };
-function fromProperty(p:PropertyListing,href:string):WishProject|null {
+function fromProperty(p:PropertyListing,href:string,locale:Locale):WishProject|null {
  if(!p.projectId||!p.publicListingId)return null;
- const get=(v:any):string=>typeof v==='string'?v:String(v?.fr||v?.en||v?.ru||'');
- const kinds=(p.projectUnitOptions||[]).map(x=>x.label).filter(Boolean);
- const payment=(p.paymentPlan||[]).map(step=>get(step.label)+' '+(step.percentage??'?')+' %').join(' · ');
- return {listingId:p.publicListingId,projectId:p.projectId,title:get(p.title),country:p.countryName,city:p.cityName,district:p.district,
+ const global=href.startsWith(getLocalePath(locale,globalPropertyHubPaths[locale])+'/');
+ const localized=Object.fromEntries((['fr','en','ru','ar'] as const).map(l=>{
+   const get=(v:any):string=>typeof v==='string'?v:String(v?.[l]||v?.fr||v?.en||'');
+   const kinds=(p.projectUnitOptions||[]).map(x=>propertyUnitLabel(x.label,l)).filter(Boolean);
+   const payment=(p.paymentPlan||[]).map(step=>get(step.label)+(step.percentage==null?'':' '+step.percentage+' %')).join(' · ');
+   return [l,{title:get(p.title),country:propertyCountryLabel(p,l),city:propertyCityLabel(p,l),district:propertyDistrictLabel(p,l),delivery:propertyDeliveryLabel(p.delivery,l),bedrooms:[...new Set(kinds)].slice(0,6).join(' · '),payment,href:getLocalePath(l,getPropertyPath(l,p,global))}];
+ })) as NonNullable<WishProject['localized']>;
+ return {listingId:p.publicListingId,projectId:p.projectId,...localized[locale],localized,
    currency:p.currency,priceMin:p.totalPrice||null,priceMax:p.projectPriceMax||null,
-   delivery:get(p.delivery),developer:p.developer||'',bedrooms:[...new Set(kinds)].slice(0,6).join(' · '),
-   payment,image:p.heroImage||p.images?.[0]||'',href};
+   developer:p.developer||'',image:p.heroImage||p.images?.[0]||'',href};
 }
 function read():WishProject[]{
  try{const items=JSON.parse(localStorage.getItem(KEY)||'[]');
@@ -55,7 +60,7 @@ function useWishlist(){
 }
 export function ProjectSelectButton({property,href,locale}:{property:PropertyListing;href:string;locale:Locale}){
  const items=useWishlist(),c=labels[locale]||labels.fr;
- const project=fromProperty(property,href);
+ const project=fromProperty(property,href,locale);
  if(!project)return null;
  const selected=items.some(x=>x.listingId===project.listingId);
  return <button type="button" aria-pressed={selected} onClick={()=>{
@@ -68,7 +73,8 @@ export function ProjectSelectButton({property,href,locale}:{property:PropertyLis
  </button>;
 }
 export function ProjectWishlistTray({locale}:{locale:Locale}){
- const c=labels[locale]||labels.fr,items=useWishlist();
+ const c=labels[locale]||labels.fr,storedItems=useWishlist();
+ const items=storedItems.map(p=>p.localized?.[locale]?{...p,...p.localized[locale]}:p);
  const [open,setOpen]=useState(false),[sending,setSending]=useState(false),[result,setResult]=useState<'success'|'error'|null>(null);
  if(!items.length)return null;
  async function submit(e:FormEvent<HTMLFormElement>){
@@ -98,7 +104,7 @@ export function ProjectWishlistTray({locale}:{locale:Locale}){
   </button>
   {open?<div className="fixed inset-0 z-[110] overflow-y-auto bg-[#071913]/80 p-3 backdrop-blur-sm md:p-8" role="dialog" aria-modal="true" aria-label={c.compare}>
    <div className="mx-auto max-w-[1160px] rounded-2xl bg-[#faf9f6] p-4 text-[#12231c] shadow-2xl sm:p-8" dir={locale==='ar'?'rtl':'ltr'}>
-     <div className="flex items-center justify-between gap-3"><div><p className="text-xs uppercase tracking-widest text-[#6d836f]">BOSPHORAS PROPERTY DESK</p><h2 className="mt-2 font-serif text-3xl sm:text-4xl">{c.compare} ({items.length}/{max})</h2></div><button onClick={()=>{if(result==='success')update([]);setOpen(false);}} className="rounded-full border border-[#d8d1c5] p-3" aria-label="Close"><X size={20}/></button></div>
+     <div className="flex items-center justify-between gap-3"><div><p className="text-xs uppercase tracking-widest text-[#6d836f]">BOSPHORAS PROPERTY DESK</p><h2 className="mt-2 font-serif text-3xl sm:text-4xl">{c.compare} ({items.length}/{max})</h2></div><button onClick={()=>{if(result==='success')update([]);setOpen(false);}} className="rounded-full border border-[#d8d1c5] p-3" aria-label={{fr:'Fermer',en:'Close',ru:'Закрыть',ar:'إغلاق'}[locale]}><X size={20}/></button></div>
      <p className="mt-4 text-sm text-[#69746d]">{c.empty}</p>
      <div className="mt-6 overflow-x-auto rounded-xl border border-[#d8d3c9]">
        <table className="min-w-full table-fixed text-left text-xs sm:text-sm">
