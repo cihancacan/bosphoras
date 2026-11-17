@@ -9659,5 +9659,2371 @@ export const visaEditorialGuides: Record<string, Record<Locale, EditorialGuide> 
         }
       ]
     }
+  },
+  "turkey-residence-permit-main": {
+    "fr": {
+      "title": "Titre de séjour Turquie 2026 : types, durée, conditions et prix",
+      "metaDescription": "Quel ikamet choisir en Turquie ? Comparez les six titres de séjour, leurs durées, les documents, le tarif de la carte et la procédure officielle.",
+      "shortAnswer": "Pour rester en Turquie au-delà d'une autorisation de court séjour, il faut en principe un titre de séjour correspondant à son motif réel. La loi 6458 prévoit six catégories. Le titre de courte durée peut atteindre deux ans dans le régime général ; la résidence de longue durée est délivrée sans limite de temps sous conditions.",
+      "bosphorasHelp": "Bosphoras organise les aspects pratiques de votre installation : recherche de logement, rendez-vous et mise en relation avec des professionnels indépendants. La demande de titre de séjour s'effectue auprès des autorités turques par vous-même ou un représentant habilité ; aucune délivrance n'est garantie.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Les six catégories de résidence",
+          "body": "Le tableau distingue les titres de séjour de droit commun et les dispositifs exceptionnels. La durée maximale n'est jamais une promesse de délivrance : elle dépend du motif, des pièces, de la validité du passeport et de la décision administrative. Un permis de travail valide tient généralement lieu de titre de séjour pendant sa validité.",
+          "table": {
+            "headers": [
+              "Type",
+              "Durée maximale ou règle",
+              "Fondement"
+            ],
+            "rows": [
+              [
+                "Courte durée",
+                "Jusqu'à 2 ans en général",
+                "Motif légal documenté"
+              ],
+              [
+                "Familial",
+                "Jusqu'à 3 ans",
+                "Sponsor admissible ; durée limitée par son titre"
+              ],
+              [
+                "Étudiant",
+                "Selon période d'études",
+                "Inscription admissible"
+              ],
+              [
+                "Longue durée",
+                "Indéterminée",
+                "8 ans continus admissibles et autres critères"
+              ],
+              [
+                "Humanitaire",
+                "Durée fixée par l'autorité",
+                "Circonstances exceptionnelles"
+              ],
+              [
+                "Victimes de traite",
+                "30 jours initialement",
+                "Protection spécifique"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Quel titre pour votre projet ?",
+          "body": "Pour habiter un logement dont vous êtes propriétaire, développer des relations commerciales ou effectuer des soins, le titre de courte durée peut être pertinent. Le regroupement auprès d'un conjoint turc ou d'un sponsor éligible relève souvent du titre familial. L'inscription dans un établissement d'enseignement peut ouvrir le titre étudiant. Après une durée suffisante de résidence régulière, la résidence de longue durée peut devenir accessible. Acheter un bien ou immatriculer une société ne garantit pas un titre."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Comment déposer une première demande",
+          "body": "Saisissez votre demande sur e-ikamet pendant votre période de séjour légal. Imprimez le formulaire et préparez les originaux et copies exigés pour le rendez-vous dans la province choisie. Le dossier est individuel, y compris pour les enfants. La liste générée par le portail indique les pièces applicables au motif sélectionné. L'administration peut demander des justificatifs supplémentaires."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Combien coûte un ikamet en 2026 ?",
+          "body": "La carte de séjour coûte 964 TL depuis le 1er janvier 2026. Le droit de séjour varie selon la nationalité, la durée et les exemptions de réciprocité. Certains ressortissants sont exonérés de ce droit, jamais du coût de fabrication de la carte. Ajoutez, selon le dossier, assurance, photos et éventuelles traductions ou authentifications. L'inscription en ligne est gratuite, les frais administratifs restant dus selon leur barème."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Délais, rendez-vous et circulation",
+          "body": "Le délai légal de décision est de 90 jours à partir de la remise complète des pièces. Une première demande faite à temps permet en principe d'attendre le rendez-vous avec son formulaire. Après dépôt complet, le document de demande approuvé et les reçus permettent, dans les conditions prévues, un retour en Turquie sous 15 jours. Le formulaire non approuvé n'est pas un visa de retour."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Après réception de la carte",
+          "body": "Contrôlez identité, type de titre, dates et adresse. Enregistrez ou actualisez votre adresse selon les délais administratifs ; un changement d'adresse doit notamment être signalé dans les 20 jours ouvrables. Préparez votre renouvellement dans les 60 jours précédant l'expiration et avant celle-ci. Si le motif change, une demande de transfert peut être nécessaire. Le titre de séjour n'autorise pas automatiquement le travail ni ne fixe seul la résidence fiscale."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Un ikamet remplace-t-il un permis de travail ?",
+          "answer": "Non. Un permis de travail valide peut tenir lieu de titre de séjour, mais l'inverse n'est pas automatique."
+        },
+        {
+          "question": "La carte coûte-t-elle 964 TL en 2026 ?",
+          "answer": "Oui, hors droits de séjour variables et autres frais."
+        },
+        {
+          "question": "Combien de temps faut-il attendre ?",
+          "answer": "Le délai officiel est de 90 jours à partir du dossier complet."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de titres — Direction de la migration"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "Procédure et délais officiels"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Barème officiel 2026 des droits et de la carte"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Questions administratives et pièces justificatives"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "Conditions légales et droits du résident"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "Permis de travail et droit de séjour"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey residence permit 2026: types, eligibility, duration and fees",
+      "metaDescription": "Compare Turkey's six residence permits, eligibility, duration, the 2026 card fee, required documents and official application procedure.",
+      "shortAnswer": "Foreigners staying in Turkey beyond their short-stay permission generally need a residence permit reflecting their actual purpose. Law 6458 defines six categories. Ordinary short-term permits can last up to two years; long-term permits are indefinite if the requirements are met.",
+      "bosphorasHelp": "Bosphoras coordinates practical relocation arrangements, accommodation and introductions to independent professionals. Residence applications are handled by the Turkish authorities, personally or through an authorised representative; approval is never guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "The six residence permit categories",
+          "body": "The table distinguishes ordinary categories and exceptional protection routes. Maximum duration does not guarantee approval for that period: the purpose, documents, passport validity and administrative decision matter. A valid work permit normally serves as a residence permit during its validity.",
+          "table": {
+            "headers": [
+              "Type",
+              "Maximum or duration rule",
+              "Basis"
+            ],
+            "rows": [
+              [
+                "Short-term",
+                "Generally up to 2 years",
+                "Documented statutory purpose"
+              ],
+              [
+                "Family",
+                "Up to 3 years",
+                "Eligible sponsor; limited by sponsor's permit"
+              ],
+              [
+                "Student",
+                "Study period",
+                "Eligible enrolment"
+              ],
+              [
+                "Long-term",
+                "Indefinite",
+                "8 qualifying continuous years and other criteria"
+              ],
+              [
+                "Humanitarian",
+                "Duration set by authority",
+                "Exceptional circumstances"
+              ],
+              [
+                "Trafficking victim",
+                "Initially 30 days",
+                "Specific protection"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Choose the category around your plans",
+          "body": "Living in your own home, developing commercial connections or receiving medical care may support a short-term application. Joining a Turkish spouse or eligible sponsor may qualify for family residence. Enrolment in an educational programme may support student residence. After sufficient lawful residence, long-term status may become available. Property ownership or company registration alone does not guarantee permission."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "First applications",
+          "body": "Apply through e-ikamet while your stay is lawful. Print the form and prepare the originals and copies for the appointment in your province. Every foreigner needs an individual application, including children. The portal generates the document list for the selected purpose; the authority may request additional evidence."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "How much does residence cost in 2026?",
+          "body": "The residence card fee is TRY 964 from 1 January 2026. Separate residence duties depend on nationality, duration and reciprocity exemptions. Some nationalities are exempt from the duty but none from the card fee. Budget for insurance, photographs and any required translations or authentication. Applying online is free, although statutory fees remain payable."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Processing and travel while waiting",
+          "body": "The statutory decision period is 90 days from submission of complete documents. A timely first application generally permits waiting until the appointment with the application form. After full submission, the approved application document and receipts may enable return within 15 days under the applicable rules. An unapproved online form is not a re-entry visa."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "After your card arrives",
+          "body": "Verify identity, category, dates and address. Register or update your address within the administrative deadlines; an address change must generally be notified within 20 working days. Apply to renew in the final 60 days before expiry and before the actual expiry date. A change of purpose may require transfer. Residence alone neither authorises employment nor establishes tax residence automatically."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does a residence permit replace a work permit?",
+          "answer": "No. A valid work permit can serve as residence permission, not automatically vice versa."
+        },
+        {
+          "question": "Is the 2026 card fee TRY 964?",
+          "answer": "Yes, excluding separate residence duties and incidental expenses."
+        },
+        {
+          "question": "How long does processing take?",
+          "answer": "The official period is 90 days from submission of the complete file."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories — Migration Presidency"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "Official applications and processing times"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Official 2026 permit and card fees"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Residence application questions and documents"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "Legal conditions and residents' rights"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "Work permits and residence status"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Вид на жительство в Турции 2026: виды, сроки, условия и стоимость",
+      "metaDescription": "Шесть видов ВНЖ в Турции: сроки, требования, документы, стоимость карты и официальный порядок оформления.",
+      "shortAnswer": "Для проживания в Турции сверх разрешённого краткого срока обычно нужен ВНЖ, соответствующий фактической цели. Закон № 6458 предусматривает шесть категорий. Обычный краткосрочный ВНЖ может выдаваться до двух лет, долгосрочный — бессрочно при выполнении условий.",
+      "bosphorasHelp": "Bosphoras координирует практические вопросы переезда, поиск жилья и встречи с независимыми специалистами. Заявление подаётся в турецкие органы лично или через уполномоченного представителя; выдача не гарантируется.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Шесть категорий ВНЖ",
+          "body": "Таблица разделяет обычные основания и исключительные защитные процедуры. Максимальный срок не гарантирует выдачу на этот период: учитываются цель, документы, срок паспорта и решение органа. Действующее разрешение на работу обычно заменяет ВНЖ на период своего действия.",
+          "table": {
+            "headers": [
+              "Вид",
+              "Максимум или правило срока",
+              "Основание"
+            ],
+            "rows": [
+              [
+                "Краткосрочный",
+                "Обычно до 2 лет",
+                "Подтверждённая законная цель"
+              ],
+              [
+                "Семейный",
+                "До 3 лет",
+                "Подходящий спонсор; не дольше его ВНЖ"
+              ],
+              [
+                "Студенческий",
+                "По периоду обучения",
+                "Подходящее зачисление"
+              ],
+              [
+                "Долгосрочный",
+                "Бессрочно",
+                "8 учитываемых непрерывных лет и другие условия"
+              ],
+              [
+                "Гуманитарный",
+                "Срок устанавливает орган",
+                "Исключительные обстоятельства"
+              ],
+              [
+                "Для жертв торговли людьми",
+                "Первоначально 30 дней",
+                "Специальная защита"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Как выбрать основание",
+          "body": "Собственное жильё для проживания, развитие деловых связей и лечение могут быть основаниями краткосрочного ВНЖ. Воссоединение с супругом — гражданином Турции или подходящим спонсором — может относиться к семейному ВНЖ. Обучение даёт основание для студенческого ВНЖ. После необходимого срока законного проживания возможен долгосрочный статус. Покупка квартиры или регистрация фирмы не гарантируют ВНЖ."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Первая подача заявления",
+          "body": "Заполните заявление на e-ikamet в пределах законного срока. Распечатайте форму и подготовьте оригиналы и копии для приёма в выбранной провинции. Каждый иностранец, включая ребёнка, подаёт отдельное заявление. Портал формирует список документов по цели; администрация может запросить дополнительные сведения."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Сколько стоит ВНЖ в 2026 году?",
+          "body": "Стоимость карты с 1 января 2026 года составляет 964 лиры. Отдельный сбор зависит от гражданства, срока и освобождений на основе взаимности. Некоторые гражданства освобождены от сбора, но не от оплаты карты. Учитывайте страховку, фотографии, перевод и заверение при необходимости. Онлайн-подача бесплатна, установленные сборы оплачиваются отдельно."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Рассмотрение и поездки в ожидании",
+          "body": "Официальный срок решения — 90 дней с момента предоставления полного комплекта. Своевременная первая заявка обычно позволяет ожидать приёма с формой заявления. После полного оформления утверждённый документ и квитанции могут позволить вернуться в Турцию в течение 15 дней при соблюдении условий. Неутверждённая онлайн-форма не является визой для возвращения."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "После получения карты",
+          "body": "Проверьте данные, категорию, даты и адрес. Зарегистрируйте или обновите адрес в установленные сроки; об изменении обычно сообщают в течение 20 рабочих дней. Продление оформляется в последние 60 дней до истечения срока и до самой даты окончания. При изменении цели может потребоваться смена категории. ВНЖ сам по себе не разрешает работу и не определяет налоговое резидентство."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Заменяет ли ВНЖ разрешение на работу?",
+          "answer": "Нет. Действующее разрешение на работу может заменять ВНЖ, но не наоборот."
+        },
+        {
+          "question": "Карта стоит 964 лиры?",
+          "answer": "Да, без отдельного сбора и сопутствующих расходов."
+        },
+        {
+          "question": "Сколько рассматривают заявление?",
+          "answer": "Официальный срок — 90 дней с момента комплектной подачи."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ — миграционное управление"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "Официальный порядок и сроки"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Официальные сборы и стоимость карты на 2026 год"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Вопросы оформления и документы"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "Правовые требования и права резидентов"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "Разрешение на работу и проживание"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تصريح الإقامة في تركيا 2026: الأنواع والمدد والشروط والرسوم",
+      "metaDescription": "قارن أنواع الإقامة الستة في تركيا وشروطها ومددها ورسوم البطاقة لعام 2026 والوثائق وخطوات التقديم الرسمية.",
+      "shortAnswer": "يحتاج الأجنبي الذي يريد البقاء بعد مدة الزيارة القصيرة عادة إلى تصريح إقامة يتناسب مع غرضه الفعلي. يحدد القانون 6458 ستة أنواع. وقد تصل الإقامة القصيرة العادية إلى سنتين، بينما تمنح الإقامة الطويلة دون مدة محددة عند استيفاء الشروط.",
+      "bosphorasHelp": "تنسق Bosphoras ترتيبات الانتقال والسكن والمواعيد مع المختصين المستقلين. يقدم طلب الإقامة إلى السلطات التركية شخصياً أو عبر ممثل مخول، ولا يمكن ضمان الموافقة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "أنواع تصاريح الإقامة الستة",
+          "body": "يميز الجدول بين الأنواع العادية والإجراءات الاستثنائية للحماية. الحد الأقصى لا يضمن الإصدار للمدة نفسها؛ إذ يتوقف على الغرض والوثائق وصلاحية الجواز والقرار الإداري. ويعتبر تصريح العمل الساري عادة تصريح إقامة طوال صلاحيته.",
+          "table": {
+            "headers": [
+              "النوع",
+              "الحد أو قاعدة المدة",
+              "الأساس"
+            ],
+            "rows": [
+              [
+                "قصيرة الأجل",
+                "حتى سنتين عموماً",
+                "غرض قانوني موثق"
+              ],
+              [
+                "عائلية",
+                "حتى 3 سنوات",
+                "كفيل مؤهل؛ لا تتجاوز تصريحه"
+              ],
+              [
+                "طالب",
+                "وفق مدة الدراسة",
+                "تسجيل دراسي مؤهل"
+              ],
+              [
+                "طويلة الأجل",
+                "غير محددة",
+                "8 سنوات متواصلة مؤهلة وشروط أخرى"
+              ],
+              [
+                "إنسانية",
+                "مدة تحددها السلطات",
+                "ظروف استثنائية"
+              ],
+              [
+                "ضحايا الاتجار بالبشر",
+                "30 يوماً أولاً",
+                "حماية خاصة"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "اختيار النوع حسب المشروع",
+          "body": "قد يناسب التصريح القصير مالك منزل يسكن فيه أو من يقيم علاقات تجارية أو يتلقى العلاج. وقد تستند الإقامة العائلية إلى زوج تركي أو كفيل مؤهل. ويتيح التسجيل الدراسي أساساً لإقامة الطالب. وبعد المدة الكافية من الإقامة القانونية يمكن بحث الإقامة الطويلة. لا يضمن شراء العقار أو تأسيس الشركة الموافقة."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "طريقة تقديم الطلب الأول",
+          "body": "قدّم عبر e-ikamet أثناء مدة بقائك القانوني. اطبع الاستمارة وجهز الأصول والنسخ المطلوبة لموعد الولاية المختارة. لكل أجنبي طلب مستقل بما في ذلك الأطفال. تحدد المنصة المستندات حسب الغرض وقد تطلب الإدارة وثائق إضافية."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "كم تبلغ تكلفة الإقامة في 2026؟",
+          "body": "تبلغ رسوم بطاقة الإقامة 964 ليرة منذ 1 يناير 2026. وتختلف رسوم التصريح المنفصلة حسب الجنسية والمدة والإعفاءات المتبادلة. وقد تعفى جنسيات من رسوم التصريح لكن الجميع يدفع رسم البطاقة. أضف التأمين والصور والترجمة والتصديق عند الحاجة. تقديم الطلب الإلكتروني مجاني مع بقاء الرسوم القانونية المستحقة."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "المدة والسفر أثناء الانتظار",
+          "body": "المدة القانونية للبت 90 يوماً من تاريخ تقديم المستندات كاملة. يسمح الطلب الأول المقدم في الوقت عادة بالبقاء حتى الموعد مع الاستمارة. وبعد استكمال الملف، قد يتيح مستند الطلب المعتمد مع الإيصالات العودة خلال 15 يوماً وفق الشروط. لا تعد الاستمارة الإلكترونية غير المعتمدة تأشيرة عودة."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "بعد استلام البطاقة",
+          "body": "راجع الهوية والنوع والتواريخ والعنوان. سجّل أو حدّث عنوانك ضمن المواعيد؛ ويجب عادة الإبلاغ عن تغييره خلال 20 يوم عمل. قدّم التجديد خلال آخر 60 يوماً وقبل انتهاء التصريح. وقد يلزم تغيير النوع إذا تغير الغرض. لا تمنح الإقامة وحدها حق العمل ولا تحدد تلقائياً الإقامة الضريبية."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل تحل الإقامة محل تصريح العمل؟",
+          "answer": "لا؛ قد يحل تصريح العمل الساري محل الإقامة وليس العكس تلقائياً."
+        },
+        {
+          "question": "هل رسم البطاقة 964 ليرة؟",
+          "answer": "نعم، دون رسوم التصريح والمصاريف الأخرى."
+        },
+        {
+          "question": "كم يستغرق البت؟",
+          "answer": "المدة الرسمية 90 يوماً من اكتمال المستندات."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامة — رئاسة إدارة الهجرة"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "الإجراءات والمدد الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "الرسوم الرسمية للإقامة والبطاقة لعام 2026"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "أسئلة الإقامة والوثائق"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "الشروط القانونية وحقوق المقيمين"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "تصريح العمل وحق الإقامة"
+        }
+      ]
+    }
+  },
+  "turkey-residence-permit-foreigners": {
+    "fr": {
+      "title": "Permis de résidence en Turquie 2026 : dossier, assurance et démarches",
+      "metaDescription": "Préparez votre permis de résidence en Turquie : passeport, justificatif de logement, assurance santé, ressources, rendez-vous et frais de 2026.",
+      "shortAnswer": "Une demande de résidence réussie commence par un motif légal et des documents cohérents. Le portail e-ikamet permet une première demande, un renouvellement ou un transfert de catégorie ; les pièces exigées diffèrent selon la procédure.",
+      "bosphorasHelp": "Bosphoras organise les aspects pratiques de votre installation : recherche de logement, rendez-vous et mise en relation avec des professionnels indépendants. La demande de titre de séjour s'effectue auprès des autorités turques par vous-même ou un représentant habilité ; aucune délivrance n'est garantie.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Passeport et calendrier",
+          "body": "Le passeport doit généralement être valable 60 jours au-delà du titre sollicité. Pour demander un an de résidence, il faut donc prévoir une validité couvrant cette année et 60 jours supplémentaires. Faites la première demande avant la fin du séjour autorisé. Un titre demandé ne prolonge pas en lui-même un visa expiré sans procédure régulière."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Adresse et logement",
+          "body": "Préparez le titre de propriété, le bail notarié ou les autres preuves d'hébergement admises selon votre cas. L'adresse renseignée doit correspondre au lieu de vie réel. Si une personne vous héberge, des engagements et documents complémentaires peuvent être demandés. Certaines zones sont fermées à de nouvelles inscriptions d'étrangers ; vérifiez l'admissibilité de l'adresse avant de signer un bail."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Assurance et ressources",
+          "body": "Pour la période sollicitée, présentez une assurance reconnue, sauf exemption applicable. Une attestation SGK, un droit découlant d'un accord bilatéral ou un contrat privé conforme peuvent convenir selon la situation. Préparez des justificatifs de ressources authentiques : revenus, pension, relevés bancaires ou activité professionnelle. Les critères financiers dépendent du titre, et le sponsor familial a des exigences spécifiques."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Documents familiaux et étrangers",
+          "body": "Un acte de mariage ou de naissance étranger peut nécessiter apostille ou légalisation et traduction turque certifiée. Les enfants disposent de leur dossier individuel ; les justificatifs d'autorité parentale peuvent être nécessaires. Les exigences d'apostille dépendent du pays émetteur et des conventions. Les documents d'identité et d'état civil doivent utiliser des données concordantes."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Rendez-vous, paiements et pièces manquantes",
+          "body": "Le portail fixe la liste de pièces et les modalités de rendez-vous. L'inscription est gratuite. La carte coûte 964 TL en 2026 ; le droit de séjour est calculé selon le dossier. Présentez les reçus et conservez les originaux disponibles. Si des pièces complémentaires sont demandées, respectez la date indiquée dans la notification ; un dossier incomplet non régularisé peut être annulé.",
+          "table": {
+            "headers": [
+              "Poste",
+              "Coût 2026"
+            ],
+            "rows": [
+              [
+                "Demande et rendez-vous e-ikamet",
+                "0 TL"
+              ],
+              [
+                "Carte individuelle",
+                "964 TL"
+              ],
+              [
+                "3 cartes",
+                "2 892 TL"
+              ],
+              [
+                "Droit de séjour",
+                "Selon nationalité et durée"
+              ],
+              [
+                "Assurance, traduction et autres pièces",
+                "Selon devis et situation"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Exemple concret de préparation",
+          "body": "Un couple et un enfant souhaitent vivre un an à Istanbul. Avant de louer, ils déterminent le motif légal de chaque demande. Ils préparent trois passeports, documents d'état civil, preuves de logement, couverture santé et justificatifs financiers. Le coût des trois cartes s'élève à 2 892 TL, hors droits, assurance et autres frais. Ils déposent les demandes à temps et gardent les confirmations de rendez-vous."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Une seule demande est-elle possible pour toute la famille ?",
+          "answer": "Non, chaque étranger reçoit un titre et une demande individuels."
+        },
+        {
+          "question": "Faut-il un bail pour tous les dossiers ?",
+          "answer": "Non. Les justificatifs dépendent du logement et du motif."
+        },
+        {
+          "question": "Le rendez-vous officiel est-il payant ?",
+          "answer": "La demande et la prise de rendez-vous via e-ikamet sont gratuites."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de titres — Direction de la migration"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "Procédure et délais officiels"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Barème officiel 2026 des droits et de la carte"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Questions administratives et pièces justificatives"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "Conditions légales et droits du résident"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "Permis de travail et droit de séjour"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey residence permit for foreigners 2026: documents and application",
+      "metaDescription": "Prepare passports, accommodation evidence, health insurance, funds, family records, the appointment and 2026 residence fees.",
+      "shortAnswer": "A residence application starts with a lawful purpose and consistent evidence. The e-ikamet portal handles first, extension and transfer applications, with a document list specific to the procedure.",
+      "bosphorasHelp": "Bosphoras coordinates practical relocation arrangements, accommodation and introductions to independent professionals. Residence applications are handled by the Turkish authorities, personally or through an authorised representative; approval is never guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Passport and legal timeline",
+          "body": "The passport generally must remain valid for 60 days beyond the requested permit. For one year of residence, allow that year plus 60 days. File a first application before lawful short-stay permission ends. Merely wanting a residence permit does not extend an expired visa."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Accommodation and address",
+          "body": "Prepare the title deed, notarised lease or other accepted accommodation documents appropriate to the case. The address must reflect your actual home. Staying with a host can require signed undertakings and additional evidence. Some areas are closed to new foreign registrations; establish address eligibility before committing to a lease."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Insurance and financial means",
+          "body": "Provide recognised coverage for the requested period unless exempt. Eligible SGK rights, bilateral arrangements or compliant private policies may qualify. Prepare genuine income, pension, bank or business records. Financial criteria depend on the category; family sponsors face specific requirements."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Family and foreign civil documents",
+          "body": "Foreign marriage or birth certificates may require apostille or legalisation and certified Turkish translation. Each child has an individual application, with custody or parental-consent evidence where required. Authentication depends on the issuing country and treaties. Ensure identity and civil records are consistent."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Appointment, payment and missing documents",
+          "body": "The portal sets the applicable document list and appointment arrangements. Registration is free. The 2026 card fee is TRY 964, with a separate residence duty based on the case. Keep receipts and originals. If additional evidence is requested, meet the deadline specified in the notice; an unresolved incomplete file may be cancelled.",
+          "table": {
+            "headers": [
+              "Item",
+              "2026 cost"
+            ],
+            "rows": [
+              [
+                "Online application and appointment",
+                "TRY 0"
+              ],
+              [
+                "Individual card",
+                "TRY 964"
+              ],
+              [
+                "Three cards",
+                "TRY 2,892"
+              ],
+              [
+                "Residence duty",
+                "Nationality and duration dependent"
+              ],
+              [
+                "Insurance, translations and documents",
+                "By quotation and circumstances"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Example: preparing for a family of three",
+          "body": "A couple and one child plan a year in Istanbul. Before renting, identify each applicant's lawful purpose. Prepare three passports, civil documents, accommodation evidence, health cover and financial evidence. Three cards cost TRY 2,892 before duties, insurance and incidentals. Submit in time and retain appointment confirmations."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can the entire family submit a single application?",
+          "answer": "No, each foreigner receives an individual permit and application."
+        },
+        {
+          "question": "Is a lease always mandatory?",
+          "answer": "No, evidence depends on the accommodation and residence basis."
+        },
+        {
+          "question": "Is the government appointment paid?",
+          "answer": "No, the e-ikamet appointment and online submission are free."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories — Migration Presidency"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "Official applications and processing times"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Official 2026 permit and card fees"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Residence application questions and documents"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "Legal conditions and residents' rights"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "Work permits and residence status"
+        }
+      ]
+    },
+    "ru": {
+      "title": "ВНЖ в Турции для иностранцев 2026: документы и оформление",
+      "metaDescription": "Подготовьте паспорт, подтверждение жилья, страховку, финансовые и семейные документы, запись и сборы на ВНЖ.",
+      "shortAnswer": "Заявление на ВНЖ начинается с законной цели и согласованных документов. Через e-ikamet подают первое заявление, продление или переход на другую категорию; список документов зависит от процедуры.",
+      "bosphorasHelp": "Bosphoras координирует практические вопросы переезда, поиск жилья и встречи с независимыми специалистами. Заявление подаётся в турецкие органы лично или через уполномоченного представителя; выдача не гарантируется.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Паспорт и сроки",
+          "body": "Паспорт обычно должен действовать ещё 60 дней после запрашиваемого срока ВНЖ. Для проживания на год нужна действительность на год и дополнительные 60 дней. Первое заявление подавайте до окончания законного краткого пребывания. Само намерение получить ВНЖ не продлевает просроченную визу."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Жильё и адрес",
+          "body": "Подготовьте tapu, нотариальный договор аренды или другие подходящие подтверждения жилья. Адрес должен соответствовать фактическому проживанию. При проживании у принимающего лица могут потребоваться обязательства и дополнительные документы. Некоторые районы закрыты для новой регистрации иностранцев; проверьте адрес до подписания аренды."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Страховка и средства",
+          "body": "На запрашиваемый период представьте признанную страховку, если нет законного освобождения. Могут подходить права SGK, международный договор или соответствующий частный полис. Подготовьте подлинные документы о доходах, пенсии, счетах или бизнесе. Финансовые требования зависят от категории, для семейного спонсора действуют особые критерии."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Семейные и иностранные документы",
+          "body": "Иностранные свидетельства о браке и рождении могут требовать апостиля или легализации и заверенного перевода на турецкий. Каждому ребёнку оформляют отдельное заявление, при необходимости с документами об опеке и согласии родителей. Заверение зависит от страны выдачи и договоров. Сведения во всех документах должны совпадать."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Приём, сборы и недостающие документы",
+          "body": "Портал определяет перечень и запись. Онлайн-подача бесплатна. Карта в 2026 году стоит 964 лиры, отдельный сбор рассчитывается по делу. Сохраняйте квитанции и оригиналы. При запросе дополнительных документов соблюдайте срок уведомления; некомплектное заявление может быть отменено.",
+          "table": {
+            "headers": [
+              "Позиция",
+              "Стоимость 2026"
+            ],
+            "rows": [
+              [
+                "Онлайн-заявка и запись",
+                "0 лир"
+              ],
+              [
+                "Индивидуальная карта",
+                "964 лиры"
+              ],
+              [
+                "Три карты",
+                "2 892 лиры"
+              ],
+              [
+                "Сбор за проживание",
+                "Зависит от гражданства и срока"
+              ],
+              [
+                "Страховка, переводы и документы",
+                "По тарифу и обстоятельствам"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Пример семьи из трёх человек",
+          "body": "Супруги с ребёнком хотят жить в Стамбуле год. До аренды они определяют законное основание каждого заявления. Готовят три паспорта, семейные документы, подтверждение жилья, страховку и финансовые сведения. Три карты стоят 2 892 лиры без иных сборов и расходов. Подать заявления следует своевременно и сохранить подтверждения записи."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно подать одно заявление на семью?",
+          "answer": "Нет, каждому иностранцу оформляется отдельный документ."
+        },
+        {
+          "question": "Обязателен ли договор аренды?",
+          "answer": "Нет, подтверждение зависит от жилья и основания."
+        },
+        {
+          "question": "Платная ли запись?",
+          "answer": "Нет, подача и запись в e-ikamet бесплатны."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ — миграционное управление"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "Официальный порядок и сроки"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Официальные сборы и стоимость карты на 2026 год"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Вопросы оформления и документы"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "Правовые требования и права резидентов"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "Разрешение на работу и проживание"
+        }
+      ]
+    },
+    "ar": {
+      "title": "إقامة تركيا للأجانب 2026: المستندات والتأمين وخطوات الطلب",
+      "metaDescription": "جهز جواز السفر وإثبات السكن والتأمين والموارد ووثائق الأسرة والموعد ورسوم الإقامة لعام 2026.",
+      "shortAnswer": "يبدأ طلب الإقامة بتحديد غرض قانوني ووثائق متسقة. تتيح منصة e-ikamet الطلب الأول والتجديد وتغيير النوع، وتختلف المستندات بحسب الإجراء.",
+      "bosphorasHelp": "تنسق Bosphoras ترتيبات الانتقال والسكن والمواعيد مع المختصين المستقلين. يقدم طلب الإقامة إلى السلطات التركية شخصياً أو عبر ممثل مخول، ولا يمكن ضمان الموافقة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "الجواز والمواعيد القانونية",
+          "body": "يجب عادة أن تزيد صلاحية الجواز 60 يوماً على مدة الإقامة المطلوبة. ولطلب سنة يلزم تغطية السنة وستين يوماً إضافية. قدّم طلبك الأول قبل انتهاء البقاء القانوني. لا يمدد مجرد الرغبة في الإقامة تأشيرة منتهية."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "السكن والعنوان",
+          "body": "جهز سند الملكية أو عقد الإيجار الموثق أو إثبات السكن المقبول حسب الحالة. يجب أن يكون العنوان مكان إقامتك الفعلي. وقد يتطلب السكن لدى مضيف تعهدات ووثائق إضافية. بعض المناطق مغلقة أمام تسجيل أجانب جدد، فتحقق من العنوان قبل توقيع العقد."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "التأمين والموارد المالية",
+          "body": "قدم تغطية معترفاً بها طوال المدة المطلوبة ما لم ينطبق إعفاء. قد تقبل حقوق SGK أو اتفاقية دولية أو وثيقة خاصة مطابقة. جهز مستندات حقيقية للدخل أو المعاش أو الحساب البنكي أو النشاط. تختلف الشروط المالية حسب النوع، وتوجد شروط خاصة لكفيل الأسرة."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "وثائق الأسرة والمستندات الأجنبية",
+          "body": "قد يلزم تصديق أبوستيل أو تصديق قنصلي وترجمة تركية معتمدة لشهادات الزواج والميلاد الأجنبية. لكل طفل طلب مستقل وقد تطلب وثائق الحضانة وموافقة الوالدين. يعتمد التصديق على بلد الإصدار والاتفاقيات. يجب تطابق البيانات في جميع الوثائق."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "الموعد والدفع واستكمال المستندات",
+          "body": "تحدد المنصة المستندات والموعد. التقديم الإلكتروني مجاني. وتكلفة البطاقة في 2026 هي 964 ليرة مع رسم إقامة منفصل حسب الملف. احتفظ بالإيصالات والأصول. عند طلب وثائق إضافية التزم بالمهلة الواردة في الإخطار؛ وقد يلغى الملف غير المكتمل.",
+          "table": {
+            "headers": [
+              "البند",
+              "تكلفة 2026"
+            ],
+            "rows": [
+              [
+                "الطلب والموعد الإلكتروني",
+                "0 ليرة"
+              ],
+              [
+                "بطاقة فردية",
+                "964 ليرة"
+              ],
+              [
+                "ثلاث بطاقات",
+                "2,892 ليرة"
+              ],
+              [
+                "رسم التصريح",
+                "بحسب الجنسية والمدة"
+              ],
+              [
+                "التأمين والترجمة والوثائق",
+                "بحسب العرض والحالة"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "مثال لأسرة من ثلاثة أفراد",
+          "body": "يريد زوجان وطفل الإقامة سنة في إسطنبول. قبل الإيجار يحددان الأساس القانوني لكل طلب. يجهزان ثلاثة جوازات ووثائق الأسرة والسكن والتغطية الصحية والموارد. تبلغ تكلفة البطاقات الثلاث 2,892 ليرة دون الرسوم الأخرى والتأمين. يقدمان الطلبات في المدة ويحفظان إثبات الموعد."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يكفي طلب واحد للأسرة؟",
+          "answer": "لا، لكل أجنبي طلب وتصريح مستقل."
+        },
+        {
+          "question": "هل عقد الإيجار إلزامي دائماً؟",
+          "answer": "لا، يعتمد الإثبات على السكن والغرض."
+        },
+        {
+          "question": "هل الموعد الرسمي مدفوع؟",
+          "answer": "لا، الطلب والموعد عبر e-ikamet مجانيان."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامة — رئاسة إدارة الهجرة"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "الإجراءات والمدد الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "الرسوم الرسمية للإقامة والبطاقة لعام 2026"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "أسئلة الإقامة والوثائق"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "الشروط القانونية وحقوق المقيمين"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "تصريح العمل وحق الإقامة"
+        }
+      ]
+    }
+  },
+  "turkey-ikamet-foreigners": {
+    "fr": {
+      "title": "Ikamet Turquie 2026 : carte de séjour, démarches et droits",
+      "metaDescription": "Comprenez l'ikamet turc : demande officielle, coût de la carte, attente, voyage à l'étranger, renouvellement et droits.",
+      "shortAnswer": "L'ikamet désigne couramment la carte de titre de séjour turque. Elle matérialise un droit de séjour pour un motif déterminé. Elle n'est ni un visa touristique, ni un passeport, ni une carte de citoyenneté.",
+      "bosphorasHelp": "Bosphoras organise les aspects pratiques de votre installation : recherche de logement, rendez-vous et mise en relation avec des professionnels indépendants. La demande de titre de séjour s'effectue auprès des autorités turques par vous-même ou un représentant habilité ; aucune délivrance n'est garantie.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "De l'entrée à la carte",
+          "body": "Vérifiez vos jours de séjour disponibles, choisissez le titre correspondant au motif réel et présentez votre demande sur e-ikamet. La première demande doit être effectuée pendant le séjour régulier. Le portail remet un formulaire, puis l'administration examine les documents et délivre, si le dossier est accepté, une carte individuelle."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Attendre sans perdre ses droits",
+          "body": "Pour les demandes déposées dans les délais, le formulaire permet de rester jusqu'au rendez-vous dans les conditions officielles. Après dépôt complet, le délai de décision est normalement de 90 jours. Conservez la preuve de présentation, les reçus, les éventuelles demandes de compléments et l'adresse de livraison. Le statut peut être suivi via le portail officiel."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Le prix et les modes de paiement",
+          "body": "Depuis janvier 2026, la fabrication de la carte coûte 964 TL. En plus, un droit de séjour peut être calculé en fonction de la nationalité et de la durée. Le portail et l'administration indiquent le montant exact. La demande en ligne est gratuite. N'achetez pas de rendez-vous à un intermédiaire ni de fausses preuves de logement.",
+          "table": {
+            "headers": [
+              "Poste",
+              "Coût 2026"
+            ],
+            "rows": [
+              [
+                "Demande et rendez-vous e-ikamet",
+                "0 TL"
+              ],
+              [
+                "Carte individuelle",
+                "964 TL"
+              ],
+              [
+                "3 cartes",
+                "2 892 TL"
+              ],
+              [
+                "Droit de séjour",
+                "Selon nationalité et durée"
+              ],
+              [
+                "Assurance, traduction et autres pièces",
+                "Selon devis et situation"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Sortir de Turquie pendant l'instruction",
+          "body": "Après remise complète, un document de demande approuvé par la Direction de la migration, accompagné des reçus, permet des sorties et retours sous réserve d'un retour dans les 15 jours. Pour un déplacement plus long, les règles de visa s'appliquent. Ne confondez pas la simple confirmation de rendez-vous avec le document officiel approuvé."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Ce que l'ikamet permet et ne permet pas",
+          "body": "La carte permet de résider légalement pendant sa validité, selon son motif. Elle facilite certaines démarches quotidiennes mais ne garantit pas qu'une banque ouvrira un compte. Elle ne donne pas automatiquement droit à un emploi. Le numéro d'identification étranger n'est pas un numéro de citoyenneté. Les droits à la sécurité sociale et la fiscalité suivent leurs propres règles."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Renouvellement et déplacements de domicile",
+          "body": "Déposez un renouvellement dans les 60 jours avant expiration et avant celle-ci. Lors d'un déménagement, signalez le changement dans les 20 jours ouvrables ; un changement de province implique une procédure adaptée. Si votre motif n'est plus celui de la carte, examinez une demande de transfert. Conservez vos anciennes cartes et l'historique des séjours pour les démarches futures."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "La carte permet-elle de travailler ?",
+          "answer": "Non, sauf autorisation ou exemption distincte."
+        },
+        {
+          "question": "Peut-on quitter la Turquie pendant l'attente ?",
+          "answer": "Oui sous les conditions du document de demande approuvé, des reçus et du retour dans les 15 jours."
+        },
+        {
+          "question": "Quand renouveler ?",
+          "answer": "Dans les 60 jours avant l'expiration et avant la date limite."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de titres — Direction de la migration"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "Procédure et délais officiels"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Barème officiel 2026 des droits et de la carte"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Questions administratives et pièces justificatives"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "Conditions légales et droits du résident"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "Permis de travail et droit de séjour"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey ikamet 2026: residence card, application and rights",
+      "metaDescription": "Find out how the Turkish ikamet card works, official applications, card fees, waiting periods, overseas travel and renewals.",
+      "shortAnswer": "Ikamet commonly refers to the Turkish residence permit card evidencing permission to live in Turkey for a specific purpose. It is not a tourist visa, passport or citizenship document.",
+      "bosphorasHelp": "Bosphoras coordinates practical relocation arrangements, accommodation and introductions to independent professionals. Residence applications are handled by the Turkish authorities, personally or through an authorised representative; approval is never guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "From entry to the card",
+          "body": "Determine your remaining lawful days and select the residence type matching your real purpose. Apply via e-ikamet during lawful stay. The portal issues a form; after examination, eligible applicants receive an individual card."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Waiting for a decision",
+          "body": "A timely application form generally permits staying until the appointment under official conditions. After complete submission, the normal statutory decision period is 90 days. Retain proof of submission, receipts, any requests for further evidence and the delivery address. Follow status through the official portal."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Card cost and payment",
+          "body": "Since January 2026 the card fee is TRY 964. A separate residence duty may apply according to nationality and duration. Obtain the exact amount from the portal and authority. Online filing is free. Do not purchase appointments or use fabricated accommodation evidence.",
+          "table": {
+            "headers": [
+              "Item",
+              "2026 cost"
+            ],
+            "rows": [
+              [
+                "Online application and appointment",
+                "TRY 0"
+              ],
+              [
+                "Individual card",
+                "TRY 964"
+              ],
+              [
+                "Three cards",
+                "TRY 2,892"
+              ],
+              [
+                "Residence duty",
+                "Nationality and duration dependent"
+              ],
+              [
+                "Insurance, translations and documents",
+                "By quotation and circumstances"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Travelling while the file is pending",
+          "body": "After full submission, a Migration Presidency-approved application document and fee receipts permit departures and returns within 15 days under the official rules. Longer absences are subject to visa rules. Do not confuse a simple appointment confirmation with the approved application document."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Rights and limitations",
+          "body": "The card confirms lawful residence for its validity and purpose. It may facilitate everyday administrative processes but does not guarantee a bank account. It does not automatically authorise work. A foreign identification number is not citizenship; social security and tax follow separate criteria."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Renewal and moving home",
+          "body": "Renew within the last 60 days before expiry and before the expiry date itself. Notify address changes within 20 working days; moving provinces requires the relevant procedure. If the original purpose changes, consider a transfer application. Keep old cards and your travel history for future applications."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I work with an ikamet?",
+          "answer": "Not automatically; separate work permission or exemption is required."
+        },
+        {
+          "question": "Can I leave Turkey while waiting?",
+          "answer": "Under the official approved-document and receipt procedure, return within 15 days."
+        },
+        {
+          "question": "When should I renew?",
+          "answer": "Within the last 60 days before expiry and before the permit expires."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories — Migration Presidency"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "Official applications and processing times"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Official 2026 permit and card fees"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Residence application questions and documents"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "Legal conditions and residents' rights"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "Work permits and residence status"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Икамет в Турции 2026: карта ВНЖ, оформление и права",
+      "metaDescription": "Как получить карту ikamet, сколько она стоит, как ждать решения, выезжать за границу и продлевать ВНЖ.",
+      "shortAnswer": "Икаметом обычно называют турецкую карту ВНЖ, подтверждающую право проживания по определённой цели. Она не является туристической визой, паспортом или документом о гражданстве.",
+      "bosphorasHelp": "Bosphoras координирует практические вопросы переезда, поиск жилья и встречи с независимыми специалистами. Заявление подаётся в турецкие органы лично или через уполномоченного представителя; выдача не гарантируется.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "От въезда до карты",
+          "body": "Определите оставшийся законный срок и категорию по фактической цели. Подайте через e-ikamet в период законного пребывания. Портал выдаёт форму, после проверки документов при положительном решении оформляется индивидуальная карта."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Ожидание решения",
+          "body": "Своевременная заявка обычно позволяет находиться в стране до приёма с формой в предусмотренных условиях. После полной подачи обычный законный срок решения — 90 дней. Сохраняйте подтверждения, квитанции, запросы дополнительных документов и адрес доставки. Проверяйте статус на официальном портале."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Стоимость и оплата",
+          "body": "С января 2026 года карта стоит 964 лиры. Дополнительный сбор определяется гражданством и сроком. Точная сумма указывается порталом и администрацией. Онлайн-подача бесплатна. Не покупайте запись у посредников и не используйте фиктивные подтверждения жилья.",
+          "table": {
+            "headers": [
+              "Позиция",
+              "Стоимость 2026"
+            ],
+            "rows": [
+              [
+                "Онлайн-заявка и запись",
+                "0 лир"
+              ],
+              [
+                "Индивидуальная карта",
+                "964 лиры"
+              ],
+              [
+                "Три карты",
+                "2 892 лиры"
+              ],
+              [
+                "Сбор за проживание",
+                "Зависит от гражданства и срока"
+              ],
+              [
+                "Страховка, переводы и документы",
+                "По тарифу и обстоятельствам"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Выезд во время рассмотрения",
+          "body": "После полной подачи утверждённый миграционной службой документ заявления и квитанции позволяют выехать и вернуться в течение 15 дней при соблюдении условий. При более долгом отсутствии применяются визовые правила. Простое подтверждение записи не является утверждённым документом."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Права и ограничения карты",
+          "body": "Карта подтверждает законное проживание в пределах срока и цели. Она облегчает некоторые бытовые процедуры, но не гарантирует открытие счёта. Автоматического права на работу нет. Идентификационный номер иностранца не означает гражданство; социальное страхование и налоги регулируются отдельно."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Продление и смена адреса",
+          "body": "Подавайте продление в последние 60 дней до окончания, обязательно до истечения срока. Об изменении адреса сообщайте в течение 20 рабочих дней; смена провинции требует соответствующей процедуры. При изменении цели рассмотрите переход на другую категорию. Храните прежние карты и историю поездок."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли работать по икамету?",
+          "answer": "Не автоматически: требуется отдельное разрешение или исключение."
+        },
+        {
+          "question": "Можно ли выехать в ожидании?",
+          "answer": "При утверждённом документе и квитанциях допускается возвращение в течение 15 дней по официальным правилам."
+        },
+        {
+          "question": "Когда продлевать?",
+          "answer": "В последние 60 дней до окончания и до истечения срока."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ — миграционное управление"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "Официальный порядок и сроки"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Официальные сборы и стоимость карты на 2026 год"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Вопросы оформления и документы"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "Правовые требования и права резидентов"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "Разрешение на работу и проживание"
+        }
+      ]
+    },
+    "ar": {
+      "title": "إيكامت تركيا 2026: بطاقة الإقامة وإجراءاتها وحقوق حاملها",
+      "metaDescription": "تعرف على بطاقة الإيكامت التركية وطريقة الطلب ورسومها والانتظار والسفر للخارج والتجديد.",
+      "shortAnswer": "الإيكامت هو الاسم الشائع لبطاقة تصريح الإقامة التركية التي تثبت الحق في السكن لغرض محدد. وهي ليست تأشيرة سياحية أو جوازاً أو وثيقة جنسية.",
+      "bosphorasHelp": "تنسق Bosphoras ترتيبات الانتقال والسكن والمواعيد مع المختصين المستقلين. يقدم طلب الإقامة إلى السلطات التركية شخصياً أو عبر ممثل مخول، ولا يمكن ضمان الموافقة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "من الدخول إلى البطاقة",
+          "body": "حدد الأيام القانونية المتبقية واختر النوع الذي يناسب الغرض الفعلي. قدّم عبر e-ikamet أثناء البقاء القانوني. تصدر المنصة استمارة ثم تدرس الإدارة الوثائق وتصدر بطاقة فردية عند الموافقة."
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "انتظار القرار",
+          "body": "يتيح الطلب المقدم في الموعد عادة البقاء حتى المقابلة مع الاستمارة وفق الشروط. وبعد اكتمال الملف تكون المدة القانونية المعتادة للبت 90 يوماً. احتفظ بالإثبات والإيصالات وطلبات الاستكمال وعنوان التسليم. تابع الحالة عبر المنصة الرسمية."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "الرسوم والدفع",
+          "body": "من يناير 2026 تبلغ رسوم البطاقة 964 ليرة. وقد تضاف رسوم تصريح حسب الجنسية والمدة. تحدد المنصة والإدارة المبلغ الدقيق. التقديم الإلكتروني مجاني. لا تشتر مواعيد من الوسطاء ولا تستخدم إثباتات سكن مزيفة.",
+          "table": {
+            "headers": [
+              "البند",
+              "تكلفة 2026"
+            ],
+            "rows": [
+              [
+                "الطلب والموعد الإلكتروني",
+                "0 ليرة"
+              ],
+              [
+                "بطاقة فردية",
+                "964 ليرة"
+              ],
+              [
+                "ثلاث بطاقات",
+                "2,892 ليرة"
+              ],
+              [
+                "رسم التصريح",
+                "بحسب الجنسية والمدة"
+              ],
+              [
+                "التأمين والترجمة والوثائق",
+                "بحسب العرض والحالة"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "السفر أثناء دراسة الطلب",
+          "body": "بعد استكمال الملف يتيح مستند الطلب المعتمد من إدارة الهجرة والإيصالات الخروج والعودة خلال 15 يوماً وفق القواعد. وتخضع المدة الأطول لقواعد التأشيرة. لا تخلط بين تأكيد الموعد البسيط ومستند الطلب المعتمد."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "حقوق البطاقة وحدودها",
+          "body": "تثبت البطاقة الإقامة القانونية في حدود المدة والغرض. وقد تسهل إجراءات يومية لكنها لا تضمن فتح حساب بنكي. ولا تمنح تلقائياً حق العمل. رقم هوية الأجنبي لا يعني الجنسية، وللتأمينات والضرائب قواعد مستقلة."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "التجديد وتغيير السكن",
+          "body": "قدّم التجديد في آخر 60 يوماً وقبل انتهاء التصريح. أبلغ عن تغيير العنوان خلال 20 يوم عمل، ويتطلب الانتقال إلى ولاية أخرى إجراء مناسباً. وإذا تغير الغرض فادرس طلب تغيير النوع. احتفظ بالبطاقات السابقة وسجل السفر للطلبات المقبلة."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يسمح الإيكامت بالعمل؟",
+          "answer": "ليس تلقائياً؛ يلزم تصريح منفصل أو إعفاء."
+        },
+        {
+          "question": "هل يمكن الخروج أثناء الانتظار؟",
+          "answer": "وفق إجراء المستند المعتمد والإيصالات، مع العودة خلال 15 يوماً."
+        },
+        {
+          "question": "متى أجدد؟",
+          "answer": "في آخر 60 يوماً وقبل انتهاء التصريح."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامة — رئاسة إدارة الهجرة"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "الإجراءات والمدد الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "الرسوم الرسمية للإقامة والبطاقة لعام 2026"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "أسئلة الإقامة والوثائق"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "الشروط القانونية وحقوق المقيمين"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "تصريح العمل وحق الإقامة"
+        }
+      ]
+    }
+  },
+  "turkey-short-term-residence": {
+    "fr": {
+      "title": "Résidence courte durée en Turquie 2026 : motifs, délais et conditions",
+      "metaDescription": "Tourisme, propriété, affaires, soins, langue et investissement : découvrez les motifs de l'ikamet courte durée et les durées maximales.",
+      "shortAnswer": "La résidence courte durée relève des articles 31 à 33 de la loi 6458. Elle est normalement délivrable pour deux ans au maximum par décision, mais certains motifs sont soumis à une durée plus courte ; des investissements qualifiés et certains ressortissants bénéficient d'un plafond de cinq ans.",
+      "bosphorasHelp": "Bosphoras organise les aspects pratiques de votre installation : recherche de logement, rendez-vous et mise en relation avec des professionnels indépendants. La demande de titre de séjour s'effectue auprès des autorités turques par vous-même ou un représentant habilité ; aucune délivrance n'est garantie.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Les motifs légaux de courte durée",
+          "body": "La loi prévoit quatorze fondements, et non un droit général à vivre en Turquie après une visite. Le tableau regroupe les motifs courants et les cas particuliers. Les documents doivent prouver l'objectif effectif. Le titre est susceptible d'être annulé s'il est utilisé à une autre fin.",
+          "table": {
+            "headers": [
+              "Motif",
+              "Pièces caractéristiques"
+            ],
+            "rows": [
+              [
+                "Recherche scientifique",
+                "Autorisation ou description de recherche"
+              ],
+              [
+                "Propriété résidentielle",
+                "Titre de propriété et usage d'habitation"
+              ],
+              [
+                "Relations commerciales",
+                "Invitation ou preuves d'activité"
+              ],
+              [
+                "Formation en entreprise",
+                "Programme et durée"
+              ],
+              [
+                "Échange éducatif",
+                "Attestation de programme"
+              ],
+              [
+                "Tourisme",
+                "Programme réel, logement, ressources"
+              ],
+              [
+                "Traitement médical",
+                "Documents de soins et financement"
+              ],
+              [
+                "Décision administrative ou judiciaire",
+                "Décision ou demande officielle"
+              ],
+              [
+                "Transition depuis titre familial",
+                "Preuve de situation admissible"
+              ],
+              [
+                "Cours de turc",
+                "Inscription dans un organisme autorisé ; deux fois maximum"
+              ],
+              [
+                "Programme d'organisme public",
+                "Documents de programme ; jusqu'à 1 an"
+              ],
+              [
+                "Diplôme supérieur turc",
+                "Demande dans les 6 mois ; une fois, jusqu'à 1 an"
+              ],
+              [
+                "Investissement qualifié",
+                "Critères spécifiques ; jusqu'à 5 ans"
+              ],
+              [
+                "Chypre du Nord",
+                "Citoyenneté concernée ; jusqu'à 5 ans"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Tourisme et installation exploratoire",
+          "body": "Un projet touristique prolongé peut être examiné à partir d'un itinéraire réel, du logement, de la durée et des ressources. Les autorités peuvent demander des preuves complémentaires. Une réservation ou un bail ne garantit pas l'acceptation. Préparez un projet cohérent ; évitez les motifs de convenance et les documents fictifs."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Propriétaire immobilier",
+          "body": "Le logement détenu doit être résidentiel et utilisé comme habitation pour le motif de propriété. L'administration applique également les critères d'éligibilité liés au bien, à sa date d'acquisition et à son adresse. Avant toute avance, faites vérifier le titre, les restrictions et les conditions de la catégorie par un professionnel compétent. La valeur exigée pour la résidence n'est pas le seuil de 400 000 USD de la citoyenneté par investissement."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Affaires, traitement médical et études de langue",
+          "body": "Pour établir des relations commerciales pendant plus de trois mois, une invitation des entreprises concernées ou un justificatif équivalent peut être demandé. Les soins nécessitent des preuves médicales et de prise en charge selon le dossier. Un cours de turc dans un organisme autorisé ne peut généralement fonder le titre que deux fois ; la durée suit celle du cours lorsqu'elle est inférieure à un an."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Durées et coût",
+          "body": "La durée ordinaire maximale est de deux ans ; le passeport, l'assurance et les pièces peuvent la limiter. Les diplômés d'un établissement supérieur turc peuvent demander dans les six mois suivant leur diplôme un titre unique d'un an au plus. Pour des investissements répondant aux critères spécifiques ou les citoyens de Chypre du Nord, le plafond peut atteindre cinq ans. La carte coûte 964 TL en 2026, hors droit de séjour."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Préparer l'avenir avant l'expiration",
+          "body": "Si vous souhaitez poursuivre votre séjour, examinez le maintien du motif et vos justificatifs avant les 60 derniers jours de validité. En cas de changement de projet, choisissez la catégorie correspondante via une demande de transfert dans les délais. L'existence d'un titre antérieur ne garantit pas son renouvellement. Une activité professionnelle effective nécessite une autorisation de travail distincte."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "La résidence touristique est-elle garantie ?",
+          "answer": "Non, le motif et le dossier sont examinés individuellement."
+        },
+        {
+          "question": "Combien de temps dure le titre courte durée ?",
+          "answer": "Jusqu'à deux ans en règle générale, avec exceptions selon le motif."
+        },
+        {
+          "question": "Peut-on travailler avec ce titre ?",
+          "answer": "Non sans autorisation de travail ou exemption applicable."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de titres — Direction de la migration"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "Procédure et délais officiels"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Barème officiel 2026 des droits et de la carte"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Questions administratives et pièces justificatives"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "Conditions légales et droits du résident"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "Permis de travail et droit de séjour"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey short-term residence permit 2026: purposes and duration",
+      "metaDescription": "Compare short-term residence eligibility for tourism, home ownership, commercial contacts, medical treatment, language courses and qualifying investors.",
+      "shortAnswer": "Short-term residence falls under Articles 31–33 of Law 6458. The general maximum per grant is two years. Some purposes have shorter limits, while qualifying investors and certain nationals may have a five-year maximum.",
+      "bosphorasHelp": "Bosphoras coordinates practical relocation arrangements, accommodation and introductions to independent professionals. Residence applications are handled by the Turkish authorities, personally or through an authorised representative; approval is never guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Lawful short-term purposes",
+          "body": "The law specifies fourteen grounds rather than a general entitlement to live in Turkey after a visit. The table groups common and exceptional grounds. Evidence must substantiate the actual purpose; using the permit for a different purpose may lead to cancellation.",
+          "table": {
+            "headers": [
+              "Purpose",
+              "Typical evidence"
+            ],
+            "rows": [
+              [
+                "Scientific research",
+                "Permission or research statement"
+              ],
+              [
+                "Residential property",
+                "Title and residential use"
+              ],
+              [
+                "Commercial connections",
+                "Invitation or activity evidence"
+              ],
+              [
+                "In-service training",
+                "Programme and duration"
+              ],
+              [
+                "Educational exchange",
+                "Programme evidence"
+              ],
+              [
+                "Tourism",
+                "Actual itinerary, accommodation, means"
+              ],
+              [
+                "Medical treatment",
+                "Treatment and funding records"
+              ],
+              [
+                "Administrative/judicial decision",
+                "Official decision or request"
+              ],
+              [
+                "Transfer from family permit",
+                "Evidence of qualifying circumstances"
+              ],
+              [
+                "Turkish course",
+                "Authorised institution; maximum twice"
+              ],
+              [
+                "Public-agency programme",
+                "Programme evidence; up to one year"
+              ],
+              [
+                "Turkish higher education graduate",
+                "Within 6 months; once, up to 1 year"
+              ],
+              [
+                "Qualifying investment",
+                "Specific criteria; up to 5 years"
+              ],
+              [
+                "Northern Cyprus",
+                "Relevant citizenship; up to 5 years"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Tourism and exploratory stays",
+          "body": "Extended tourism can be assessed through actual travel plans, accommodation, duration and means. Additional evidence may be required. A booking or lease does not guarantee approval. Use genuine records and a purpose matching your plans."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Home ownership",
+          "body": "Property used as the residence basis must be residential and used as housing. The authority also applies property, acquisition-date and address criteria. Before providing an advance, arrange qualified review of title, restrictions and eligibility. Property residence requirements are distinct from the USD 400,000 citizenship investment threshold."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Business contacts, treatment and language courses",
+          "body": "Commercial contact permits longer than three months can require an invitation or similar evidence from the businesses concerned. Treatment applications need relevant clinical and funding documentation. A Turkish-language course at an authorised institution can generally support a permit at most twice, with duration limited to the course when shorter than a year."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Duration and fees",
+          "body": "The general maximum is two years; passport, insurance and evidence may reduce it. Turkish higher-education graduates applying within six months of graduation can receive a one-time permit of at most one year. Qualifying investments and Northern Cyprus nationals may have a five-year maximum. The 2026 card fee is TRY 964, excluding any residence duty."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Prepare for the end of the permit",
+          "body": "Review continuing eligibility before the final 60 days of validity. If your purpose changes, apply to transfer to an appropriate category within lawful time. A previous permit does not guarantee renewal. Actual employment or professional activity may require separate work authorisation."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is tourist residence guaranteed?",
+          "answer": "No; eligibility and evidence are assessed individually."
+        },
+        {
+          "question": "How long can short-term residence last?",
+          "answer": "Generally up to two years, subject to purpose-specific exceptions."
+        },
+        {
+          "question": "Can it be used to work?",
+          "answer": "Not without applicable work authorisation or exemption."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories — Migration Presidency"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "Official applications and processing times"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Official 2026 permit and card fees"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Residence application questions and documents"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "Legal conditions and residents' rights"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "Work permits and residence status"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Краткосрочный ВНЖ в Турции 2026: основания и сроки",
+      "metaDescription": "Туризм, собственное жильё, деловые связи, лечение, языковые курсы и инвестиции: условия краткосрочного икамета.",
+      "shortAnswer": "Краткосрочный ВНЖ регулируется статьями 31–33 закона № 6458. Общий максимальный срок одной выдачи — два года. Для отдельных целей предусмотрены меньшие сроки, а для квалифицированных инвестиций и некоторых гражданств — до пяти лет.",
+      "bosphorasHelp": "Bosphoras координирует практические вопросы переезда, поиск жилья и встречи с независимыми специалистами. Заявление подаётся в турецкие органы лично или через уполномоченного представителя; выдача не гарантируется.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Законные основания",
+          "body": "Закон предусматривает четырнадцать оснований, а не общее право поселиться после туристического визита. Таблица группирует основные и особые случаи. Документы должны подтверждать фактическую цель. Использование ВНЖ не по назначению может стать основанием для отмены.",
+          "table": {
+            "headers": [
+              "Основание",
+              "Характерные документы"
+            ],
+            "rows": [
+              [
+                "Научное исследование",
+                "Разрешение или описание"
+              ],
+              [
+                "Жилое имущество",
+                "Tapu и использование для проживания"
+              ],
+              [
+                "Деловые связи",
+                "Приглашение или подтверждения"
+              ],
+              [
+                "Стажировка на предприятии",
+                "Программа и срок"
+              ],
+              [
+                "Образовательный обмен",
+                "Подтверждение программы"
+              ],
+              [
+                "Туризм",
+                "Маршрут, жильё, средства"
+              ],
+              [
+                "Лечение",
+                "Медицинские и финансовые документы"
+              ],
+              [
+                "Решение органа или суда",
+                "Официальное решение"
+              ],
+              [
+                "Переход с семейного ВНЖ",
+                "Подтверждение обстоятельств"
+              ],
+              [
+                "Курсы турецкого",
+                "Уполномоченное учреждение; максимум дважды"
+              ],
+              [
+                "Программа госоргана",
+                "Документы программы; до года"
+              ],
+              [
+                "Выпускник турецкого вуза",
+                "В течение 6 месяцев; один раз, до года"
+              ],
+              [
+                "Квалифицированные инвестиции",
+                "Особые критерии; до 5 лет"
+              ],
+              [
+                "Северный Кипр",
+                "Соответствующее гражданство; до 5 лет"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Туризм и ознакомительное проживание",
+          "body": "Длительная туристическая поездка оценивается по реальному маршруту, жилью, сроку и средствам. Могут потребоваться дополнительные документы. Бронирование или аренда не гарантируют одобрение. Используйте подлинные документы и основание, соответствующее планам."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "ВНЖ собственника жилья",
+          "body": "Объект должен быть жилым и использоваться для проживания. Администрация также применяет критерии, относящиеся к объекту, дате приобретения и адресу. До аванса организуйте проверку права собственности, ограничений и пригодности основания. Требования к ВНЖ собственника отличаются от порога 400 000 долларов для гражданства за инвестиции."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Деловые связи, лечение и языковые курсы",
+          "body": "При деловом основании на срок более трёх месяцев может требоваться приглашение компании или аналогичный документ. Для лечения нужны медицинские документы и подтверждение оплаты по обстоятельствам. Курс турецкого языка в уполномоченном учреждении может обычно служить основанием не более двух раз, а курс короче года ограничивает срок ВНЖ."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Сроки и сборы",
+          "body": "Обычный предел — два года, но паспорт, страховка и документы могут сократить его. Выпускники турецкого вуза при подаче в течение шести месяцев после выпуска могут однократно получить ВНЖ до года. Для отвечающих критериям инвестиций и граждан Северного Кипра предел может составлять пять лет. Карта в 2026 году стоит 964 лиры без отдельного сбора."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Что делать перед окончанием срока",
+          "body": "Проверьте сохранение основания до последних 60 дней действия. Если цель изменилась, подайте заявление о переходе на подходящую категорию в законные сроки. Предыдущий ВНЖ не гарантирует продление. Фактическая работа требует отдельного разрешения или предусмотренного исключения."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Гарантирован ли туристический ВНЖ?",
+          "answer": "Нет, цель и документы оцениваются индивидуально."
+        },
+        {
+          "question": "На сколько дают краткосрочный ВНЖ?",
+          "answer": "Обычно до двух лет с исключениями по целям."
+        },
+        {
+          "question": "Можно ли работать?",
+          "answer": "Не без соответствующего разрешения или исключения."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ — миграционное управление"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "Официальный порядок и сроки"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Официальные сборы и стоимость карты на 2026 год"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Вопросы оформления и документы"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "Правовые требования и права резидентов"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "Разрешение на работу и проживание"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الإقامة قصيرة الأجل في تركيا 2026: الأسباب والمدد والشروط",
+      "metaDescription": "السياحة وملكية السكن والعلاقات التجارية والعلاج ودورات اللغة والاستثمار: شروط الإقامة القصيرة ومددها.",
+      "shortAnswer": "تنظم المواد 31–33 من القانون 6458 الإقامة القصيرة. الحد العام لكل إصدار سنتان، مع مدد أقصر لأغراض محددة وحد أقصى خمس سنوات لبعض الاستثمارات المؤهلة والجنسيات.",
+      "bosphorasHelp": "تنسق Bosphoras ترتيبات الانتقال والسكن والمواعيد مع المختصين المستقلين. يقدم طلب الإقامة إلى السلطات التركية شخصياً أو عبر ممثل مخول، ولا يمكن ضمان الموافقة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "الأسباب القانونية للإقامة القصيرة",
+          "body": "يحدد القانون أربعة عشر أساساً ولا يمنح حقاً عاماً في السكن بعد زيارة سياحية. يجمع الجدول الأسباب الشائعة والاستثنائية. يجب إثبات الغرض الفعلي وقد يلغى التصريح عند استخدامه لغرض آخر.",
+          "table": {
+            "headers": [
+              "الغرض",
+              "الإثباتات المعتادة"
+            ],
+            "rows": [
+              [
+                "بحث علمي",
+                "ترخيص أو بيان البحث"
+              ],
+              [
+                "ملكية سكنية",
+                "سند واستعمال للسكن"
+              ],
+              [
+                "علاقات تجارية",
+                "دعوة أو إثباتات"
+              ],
+              [
+                "تدريب مهني",
+                "البرنامج والمدة"
+              ],
+              [
+                "تبادل تعليمي",
+                "إثبات البرنامج"
+              ],
+              [
+                "سياحة",
+                "برنامج وسكن وموارد"
+              ],
+              [
+                "علاج",
+                "وثائق العلاج والتمويل"
+              ],
+              [
+                "قرار إداري أو قضائي",
+                "قرار أو طلب رسمي"
+              ],
+              [
+                "انتقال من إقامة عائلية",
+                "إثبات الظروف المؤهلة"
+              ],
+              [
+                "دورات التركية",
+                "مؤسسة مرخصة؛ مرتان كحد أقصى"
+              ],
+              [
+                "برنامج جهة عامة",
+                "إثبات البرنامج؛ حتى سنة"
+              ],
+              [
+                "خريج التعليم العالي التركي",
+                "خلال 6 أشهر؛ مرة واحدة حتى سنة"
+              ],
+              [
+                "استثمار مؤهل",
+                "شروط خاصة؛ حتى 5 سنوات"
+              ],
+              [
+                "شمال قبرص",
+                "الجنسية المعنية؛ حتى 5 سنوات"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "السياحة والزيارة الاستطلاعية الممتدة",
+          "body": "يمكن تقييم السياحة الممتدة وفق برنامج السفر الفعلي والسكن والمدة والموارد. قد تطلب الإدارة إثباتات إضافية. لا يضمن الحجز أو عقد الإيجار الموافقة. استخدم الوثائق الحقيقية والأساس المتوافق مع خطتك."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "الإقامة بسبب ملكية منزل",
+          "body": "يجب أن يكون العقار سكنياً ويستخدم للسكن. وتطبق الإدارة أيضاً معايير تخص العقار وتاريخ الشراء والعنوان. قبل دفع مقدم افحص الملكية والقيود والأهلية مع مختص. تختلف شروط إقامة المالك عن حد 400 ألف دولار الخاص بالجنسية عبر الاستثمار."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "العلاقات التجارية والعلاج ودراسة اللغة",
+          "body": "قد تتطلب الإقامة للعلاقات التجارية أكثر من ثلاثة أشهر دعوة من الشركات أو إثباتاً مماثلاً. وللعلاج مستندات طبية ومالية حسب الحالة. وتتيح دورة تركية في مؤسسة مرخصة هذا الأساس عادة مرتين بحد أقصى، وتحدد مدة الدورة مدة الإقامة إذا كانت أقل من سنة."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "المدد والرسوم",
+          "body": "الحد العادي سنتان وقد يقيده الجواز والتأمين والمستندات. ويمكن لخريج التعليم العالي التركي المتقدم خلال ستة أشهر من التخرج الحصول على إقامة لمرة واحدة حتى سنة. وقد يصل الحد إلى خمس سنوات للاستثمارات المؤهلة ومواطني شمال قبرص. رسوم البطاقة لعام 2026 هي 964 ليرة دون رسوم الإقامة الإضافية."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "الاستعداد قبل انتهاء التصريح",
+          "body": "راجع استمرار الأساس قبل آخر 60 يوماً. وإذا تغير الغرض فقدم طلب تغيير النوع ضمن المدة القانونية. لا يضمن التصريح السابق التجديد. وقد يتطلب العمل الفعلي تصريح عمل مستقلاً أو إعفاء قانونياً."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل الإقامة السياحية مضمونة؟",
+          "answer": "لا، تدرس الأهلية والوثائق لكل طلب."
+        },
+        {
+          "question": "ما مدة الإقامة القصيرة؟",
+          "answer": "حتى سنتين عموماً مع استثناءات بحسب الغرض."
+        },
+        {
+          "question": "هل يمكن العمل بها؟",
+          "answer": "لا دون تصريح عمل أو إعفاء مناسب."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامة — رئاسة إدارة الهجرة"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "الإجراءات والمدد الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "الرسوم الرسمية للإقامة والبطاقة لعام 2026"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "أسئلة الإقامة والوثائق"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "الشروط القانونية وحقوق المقيمين"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "تصريح العمل وحق الإقامة"
+        }
+      ]
+    }
+  },
+  "turkey-long-term-residence": {
+    "fr": {
+      "title": "Résidence longue durée en Turquie : 8 ans, conditions et ikamet permanent",
+      "metaDescription": "Découvrez le titre de séjour permanent en Turquie : calcul des huit ans, études, absences, revenus, droits et motifs d'annulation.",
+      "shortAnswer": "L'ikamet longue durée est un permis délivré sans durée d'expiration sous réserve de conditions légales. La voie ordinaire exige au moins huit années de résidence continue admissible, sans aide sociale pendant les trois dernières années, avec revenus suffisants, assurance valide et absence de menace à l'ordre ou à la sécurité publics.",
+      "bosphorasHelp": "Bosphoras organise les aspects pratiques de votre installation : recherche de logement, rendez-vous et mise en relation avec des professionnels indépendants. La demande de titre de séjour s'effectue auprès des autorités turques par vous-même ou un représentant habilité ; aucune délivrance n'est garantie.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Calculer les huit années",
+          "body": "Les périodes de résidence étudiant sont comptées pour moitié ; les autres titres admissibles sont normalement comptés intégralement. Ainsi quatre ans de résidence étudiant et six ans de résidence courte durée représentent huit ans comptabilisés, à condition que la continuité et toutes les autres exigences soient satisfaites. Les années touristiques sans titre ne sont pas assimilées à des années de résidence admissible.",
+          "table": {
+            "headers": [
+              "Historique de titres",
+              "Années retenues (si admissibles)"
+            ],
+            "rows": [
+              [
+                "8 ans courte durée",
+                "8 ans"
+              ],
+              [
+                "4 ans étudiant + 6 ans courte durée",
+                "2 + 6 = 8 ans"
+              ],
+              [
+                "4 ans étudiant + 4 ans courte durée",
+                "2 + 4 = 6 ans"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Absences et continuité",
+          "body": "Selon les règles administratives, une absence cumulée de plus de six mois sur un an ou de plus d'un an sur les cinq dernières années peut interrompre la continuité, hors motifs reconnus comme la santé, les études et le service public obligatoire. Le calcul doit reposer sur les passages de frontière et les permis, pas seulement sur la date d'obtention de la première carte. Certaines catégories de protection et de séjour humanitaire ne permettent pas le passage vers la longue durée."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Ressources, assurance et situation personnelle",
+          "body": "Présentez des revenus suffisants et stables pour subvenir à vos besoins et, le cas échéant, à ceux de votre famille. La Direction de la migration cite le salaire minimum mensuel comme référence et des besoins supplémentaires pour les personnes à charge. Les pensions, revenus de biens et justificatifs bancaires peuvent être étudiés. L'absence d'aide sociale pendant les trois dernières années et une assurance valide font partie des conditions ordinaires."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Démarches et coût administratif",
+          "body": "Sélectionnez la demande de transfert vers la résidence longue durée si vous remplissez les conditions. Préparez l'historique des titres, des entrées et sorties et les justificatifs de ressources, d'assurance et de situation. L'autorité provinciale traite la demande avec l'approbation du ministère. Selon la Direction de la migration, le droit de séjour de longue durée est gratuit ; le coût de carte de 964 TL en 2026 reste dû."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Quels droits donne ce titre ?",
+          "body": "Le titulaire dispose de droits étendus, sous réserve des lois spéciales, mais il ne devient pas citoyen turc. Il ne bénéficie pas du droit de vote ou d'éligibilité, de l'accès aux emplois publics réservés, ni de tous les avantages douaniers. Pour une activité professionnelle, vérifiez le régime d'autorisation applicable. Le titre ne remplace pas le passeport et ne donne pas automatiquement la citoyenneté."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Conserver la résidence permanente",
+          "body": "Une absence continue de plus d'un an hors de Turquie peut entraîner l'annulation, sauf motifs reconnus tels que santé, études ou service public obligatoire dans le pays d'origine. Une menace grave pour l'ordre ou la sécurité publics constitue également un motif d'annulation. En cas d'annulation liée à une absence, une nouvelle demande peut être possible sans recommencer le calcul des huit années, sous réserve des autres conditions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Une résidence de huit ans suffit-elle ?",
+          "answer": "Non, la continuité, les ressources, l'assurance et les autres critères doivent être remplis."
+        },
+        {
+          "question": "Les années étudiant comptent-elles intégralement ?",
+          "answer": "Non, elles sont prises en compte pour moitié."
+        },
+        {
+          "question": "La résidence longue durée est-elle permanente ?",
+          "answer": "Elle est délivrée sans limitation de durée, mais peut être annulée dans les cas légaux."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de titres — Direction de la migration"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "Procédure et délais officiels"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Barème officiel 2026 des droits et de la carte"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Questions administratives et pièces justificatives"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "Conditions légales et droits du résident"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "Permis de travail et droit de séjour"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey long-term residence permit: eight-year rule and permanent status",
+      "metaDescription": "Learn how Turkey's indefinite residence permit works: qualifying eight years, student residence, absences, income, rights and cancellation.",
+      "shortAnswer": "The long-term residence permit is indefinite, subject to statutory conditions. The ordinary route requires at least eight years of qualifying continuous residence, no social assistance in the previous three years, stable sufficient income, valid health cover and no threat to public order or security.",
+      "bosphorasHelp": "Bosphoras coordinates practical relocation arrangements, accommodation and introductions to independent professionals. Residence applications are handled by the Turkish authorities, personally or through an authorised representative; approval is never guaranteed.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Calculating eight qualifying years",
+          "body": "Student residence periods count at half their duration; other qualifying permit periods ordinarily count in full. Four years of student residence plus six years of short-term residence can therefore represent eight qualifying years if continuity and all other criteria are satisfied. Tourist visits without a residence permit do not count as equivalent qualifying residence.",
+          "table": {
+            "headers": [
+              "Permit history",
+              "Qualifying years (if eligible)"
+            ],
+            "rows": [
+              [
+                "8 years short-term",
+                "8 years"
+              ],
+              [
+                "4 student + 6 short-term",
+                "2 + 6 = 8 years"
+              ],
+              [
+                "4 student + 4 short-term",
+                "2 + 4 = 6 years"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Absences and continuity",
+          "body": "Under published administrative rules, absences exceeding six months in one year or one year in the preceding five years can interrupt continuity, except recognised reasons such as health, education or compulsory public service. Establish the calculation using border records and permits, not simply the first card's date. Certain protection and humanitarian statuses cannot transfer to long-term residence."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Income, insurance and personal circumstances",
+          "body": "Provide sufficient stable means to support yourself and any dependants. The migration authority refers to the monthly minimum wage and additional amounts for dependants. Pension, property income and bank evidence may be assessed. No social assistance in the previous three years and valid health insurance are ordinary requirements."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Application and fees",
+          "body": "Choose the transfer application for long-term residence if eligible. Prepare the complete permit and travel history, financial and insurance evidence and personal documents. The governorate grants the permit with ministry approval. The migration authority states that the long-term residence duty is waived; the TRY 964 card fee for 2026 remains payable."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Rights and citizenship limitations",
+          "body": "Holders gain extensive rights subject to special laws but do not become Turkish citizens. Voting, election to office, certain public-service positions and vehicle-import privileges are excluded. Establish applicable work-authorisation rules separately. The permit does not replace a passport or automatically confer citizenship."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Maintaining indefinite residence",
+          "body": "Continuous absence exceeding one year may result in cancellation, except for recognised health, education or compulsory public-service reasons in the home country. A serious threat to public order or security is another cancellation ground. Following absence-based cancellation, reapplication may be possible without repeating the eight-year requirement, subject to other conditions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Are eight years alone enough?",
+          "answer": "No, continuity, income, insurance and all other requirements must be met."
+        },
+        {
+          "question": "Do student years count in full?",
+          "answer": "No, they count at half duration."
+        },
+        {
+          "question": "Is the permit permanent?",
+          "answer": "It is indefinite but can be cancelled on statutory grounds."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories — Migration Presidency"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "Official applications and processing times"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Official 2026 permit and card fees"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Residence application questions and documents"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "Legal conditions and residents' rights"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "Work permits and residence status"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Долгосрочный ВНЖ в Турции: восемь лет, условия и бессрочный статус",
+      "metaDescription": "Условия бессрочного ВНЖ: расчёт восьми лет, учёба, выезды, доходы, права и основания отмены.",
+      "shortAnswer": "Долгосрочный икамет выдаётся бессрочно при соблюдении закона. Обычная процедура требует минимум восьми лет непрерывного учитываемого проживания, отсутствия социальной помощи последние три года, стабильного достаточного дохода, действующей страховки и отсутствия угрозы общественному порядку и безопасности.",
+      "bosphorasHelp": "Bosphoras координирует практические вопросы переезда, поиск жилья и встречи с независимыми специалистами. Заявление подаётся в турецкие органы лично или через уполномоченного представителя; выдача не гарантируется.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "Как рассчитать восемь лет",
+          "body": "Периоды студенческого ВНЖ учитываются наполовину, остальные подходящие периоды — обычно полностью. Четыре года студенческого ВНЖ и шесть лет краткосрочного могут составить восемь зачтённых лет при соблюдении непрерывности и остальных условий. Туристические визиты без ВНЖ не приравниваются к учитываемому проживанию.",
+          "table": {
+            "headers": [
+              "История ВНЖ",
+              "Зачтённые годы (при соответствии)"
+            ],
+            "rows": [
+              [
+                "8 лет краткосрочного",
+                "8 лет"
+              ],
+              [
+                "4 года учебы + 6 краткосрочных",
+                "2 + 6 = 8 лет"
+              ],
+              [
+                "4 года учебы + 4 краткосрочных",
+                "2 + 4 = 6 лет"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "Выезды и непрерывность",
+          "body": "Согласно опубликованным правилам, отсутствие в общей сложности более шести месяцев за год или более года за последние пять лет может прервать непрерывность, кроме признанных причин, таких как лечение, обучение и обязательная государственная служба. Используйте данные пересечения границы и разрешений, а не только дату первой карты. Некоторые защитные и гуманитарные статусы не позволяют перейти на долгосрочный ВНЖ."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "Доходы, страховка и личные условия",
+          "body": "Подтвердите достаточные стабильные средства для себя и иждивенцев. Миграционная служба указывает месячную минимальную зарплату как ориентир и дополнительные суммы для членов семьи. Могут учитываться пенсия, доход от имущества и банковские документы. Требуются отсутствие социальной помощи за три года и действующая медицинская страховка."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "Заявление и стоимость",
+          "body": "При выполнении условий выберите переход на долгосрочный ВНЖ. Подготовьте историю разрешений и поездок, документы о доходах, страховке и личности. Решение принимает администрация провинции с одобрением министерства. По данным миграционной службы, сбор за долгосрочный ВНЖ не взимается, но карта стоимостью 964 лиры в 2026 году оплачивается."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "Права и отличие от гражданства",
+          "body": "Владельцы имеют расширенные права с учётом специальных законов, но не становятся гражданами Турции. Исключены участие в выборах, избрание, отдельные государственные должности и льготы при ввозе автомобилей. Право на работу определяется отдельно. ВНЖ не заменяет паспорт и не даёт гражданство автоматически."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "Как сохранить бессрочный ВНЖ",
+          "body": "Непрерывное отсутствие более года может привести к отмене, кроме признанных причин лечения, учёбы или обязательной государственной службы на родине. Серьёзная угроза общественному порядку или безопасности также служит основанием. После отмены из-за отсутствия возможна повторная подача без нового восьмилетнего периода при соблюдении остальных условий."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Достаточно ли восьми лет?",
+          "answer": "Нет, необходимы непрерывность, средства, страховка и остальные условия."
+        },
+        {
+          "question": "Студенческие годы учитываются полностью?",
+          "answer": "Нет, наполовину."
+        },
+        {
+          "question": "ВНЖ бессрочен?",
+          "answer": "Да, но может быть отменён по предусмотренным законом основаниям."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ — миграционное управление"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "Официальный порядок и сроки"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Официальные сборы и стоимость карты на 2026 год"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "Вопросы оформления и документы"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "Правовые требования и права резидентов"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "Разрешение на работу и проживание"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الإقامة طويلة الأجل في تركيا: شرط الثماني سنوات والإقامة الدائمة",
+      "metaDescription": "تعرف على شروط الإقامة غير المحددة المدة: حساب ثماني سنوات والدراسة والغياب والدخل والحقوق وحالات الإلغاء.",
+      "shortAnswer": "تمنح إقامة طويلة الأجل دون مدة انتهاء عند استيفاء الشروط القانونية. ويتطلب المسار العادي ثماني سنوات على الأقل من الإقامة المتواصلة المحتسبة، وعدم تلقي المساعدة الاجتماعية في السنوات الثلاث الأخيرة، ودخلاً كافياً مستقراً وتأميناً سارياً وعدم تهديد النظام أو الأمن العام.",
+      "bosphorasHelp": "تنسق Bosphoras ترتيبات الانتقال والسكن والمواعيد مع المختصين المستقلين. يقدم طلب الإقامة إلى السلطات التركية شخصياً أو عبر ممثل مخول، ولا يمكن ضمان الموافقة.",
+      "sections": [
+        {
+          "id": "visa-detail-1",
+          "title": "حساب السنوات الثماني",
+          "body": "تحسب مدة إقامة الطالب بنسبة النصف، بينما تحسب مدد التصاريح الأخرى المؤهلة عادة بالكامل. فأربع سنوات من إقامة الطالب وست سنوات من الإقامة القصيرة قد تعادل ثماني سنوات محتسبة إذا استوفيت الاستمرارية وبقية الشروط. لا تعامل الزيارات السياحية دون تصريح كإقامة محتسبة.",
+          "table": {
+            "headers": [
+              "سجل الإقامة",
+              "السنوات المحتسبة عند التأهل"
+            ],
+            "rows": [
+              [
+                "8 سنوات قصيرة",
+                "8 سنوات"
+              ],
+              [
+                "4 سنوات طالب + 6 قصيرة",
+                "2 + 6 = 8 سنوات"
+              ],
+              [
+                "4 سنوات طالب + 4 قصيرة",
+                "2 + 4 = 6 سنوات"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-detail-2",
+          "title": "الغياب واستمرارية الإقامة",
+          "body": "وفق القواعد المنشورة، قد يقطع الغياب لأكثر من ستة أشهر إجمالاً في سنة أو أكثر من سنة في آخر خمس سنوات استمرارية الإقامة، باستثناء أسباب معترف بها مثل العلاج والدراسة والخدمة العامة الإلزامية. اعتمد سجل الحدود والتصاريح لا تاريخ أول بطاقة وحده. ولا تتيح بعض أوضاع الحماية والإقامة الإنسانية الانتقال إلى الطويلة."
+        },
+        {
+          "id": "visa-detail-3",
+          "title": "الموارد والتأمين والوضع الشخصي",
+          "body": "قدم دليلاً على دخل ثابت يكفيك ومن تعولهم. تشير إدارة الهجرة إلى الحد الأدنى الشهري للأجور ومبالغ إضافية للمعالين. وقد تدرس المعاشات ودخل العقار والمستندات المصرفية. ومن الشروط العادية عدم تلقي المساعدة الاجتماعية في آخر ثلاث سنوات والتغطية الصحية السارية."
+        },
+        {
+          "id": "visa-detail-4",
+          "title": "الطلب والرسوم",
+          "body": "اختر طلب الانتقال إلى الإقامة الطويلة إذا كنت مؤهلاً. جهز سجل التصاريح والدخول والخروج ومستندات الدخل والتأمين والهوية. تصدرها الولاية بموافقة الوزارة. وتوضح إدارة الهجرة أن رسم تصريح الإقامة الطويلة معفى، لكن رسم البطاقة البالغ 964 ليرة في 2026 يبقى مستحقاً."
+        },
+        {
+          "id": "visa-detail-5",
+          "title": "الحقوق والفرق عن الجنسية",
+          "body": "يتمتع الحامل بحقوق واسعة مع مراعاة القوانين الخاصة، لكنه لا يصبح مواطناً تركياً. تستثنى حقوق الانتخاب والترشح وبعض الوظائف العامة والإعفاءات الجمركية للمركبات. حدد نظام تصريح العمل المناسب بصورة مستقلة. لا تحل الإقامة محل الجواز ولا تمنح الجنسية تلقائياً."
+        },
+        {
+          "id": "visa-detail-6",
+          "title": "الحفاظ على الإقامة الدائمة",
+          "body": "قد يؤدي الغياب المتواصل أكثر من سنة إلى الإلغاء، باستثناء أسباب معترف بها مثل العلاج أو الدراسة أو الخدمة العامة الإلزامية في البلد الأصلي. كما يشكل التهديد الخطير للنظام أو الأمن العام سبباً للإلغاء. وقد يمكن إعادة الطلب بعد الإلغاء بسبب الغياب دون إعادة احتساب ثماني سنوات، مع استيفاء بقية الشروط."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل تكفي ثماني سنوات وحدها؟",
+          "answer": "لا، يجب استيفاء الاستمرارية والدخل والتأمين وبقية الشروط."
+        },
+        {
+          "question": "هل تحسب سنوات الطالب كاملة؟",
+          "answer": "لا، تحسب بالنصف."
+        },
+        {
+          "question": "هل الإقامة الطويلة دائمة؟",
+          "answer": "تمنح دون مدة محددة مع إمكانية الإلغاء في الحالات القانونية."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامة — رئاسة إدارة الهجرة"
+        },
+        {
+          "href": "https://en.goc.gov.tr/general-information41",
+          "label": "الإجراءات والمدد الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "الرسوم الرسمية للإقامة والبطاقة لعام 2026"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "منصة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-",
+          "label": "أسئلة الإقامة والوثائق"
+        },
+        {
+          "href": "https://en.goc.gov.tr/frequently-asked-questions-about-foreigners",
+          "label": "الشروط القانونية وحقوق المقيمين"
+        },
+        {
+          "href": "https://en.goc.gov.tr/work-permit",
+          "label": "تصريح العمل وحق الإقامة"
+        }
+      ]
+    }
   }
 };
