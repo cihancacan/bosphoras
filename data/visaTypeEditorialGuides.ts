@@ -3957,5 +3957,1875 @@ export const visaTypeEditorialGuides: Record<string, Record<Locale, EditorialGui
         }
       ]
     }
+  },
+  "turkey-retirement-visa": {
+    "fr": {
+      "title": "Prendre sa retraite en Turquie en 2026 : visa, ikamet et santé",
+      "metaDescription": "Retraite en Turquie : séjour 90/180, résidence, pension étrangère, assurance santé, budget logement et carte d’ikamet à 964 TL.",
+      "shortAnswer": "La Turquie ne dispose pas d’une catégorie autonome de visa de retraite dans sa nomenclature générale. Un retraité peut effectuer un court séjour selon son passeport, puis demander un titre correspondant à un motif légal admissible.",
+      "bosphorasHelp": "Bosphoras coordonne les séjours de découverte, la sélection de logements et les rendez-vous avec des professionnels indépendants. L’obtention du statut relève des autorités compétentes.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Choisir la durée de votre installation",
+          "body": "Pour découvrir le pays, utilisez la dispense ou le visa correspondant à votre nationalité. De nombreux passeports ordinaires autorisent 90 jours sur 180, mais certains ont des limites plus courtes. Pour passer six mois ou toute l’année en Turquie, un titre de séjour approprié est nécessaire. Une pension étrangère constitue une preuve de ressources, pas un motif garantissant à lui seul un permis."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Retraite, location ou achat",
+          "body": "La résidence courte durée ordinaire peut être octroyée jusqu’à deux ans par demande selon le motif. Une demande touristique est évaluée individuellement ; un bail et une pension ne garantissent pas l’accord. Un logement détenu et effectivement utilisé par son propriétaire peut fournir un autre motif, soumis aux conditions foncières et de valeur applicables. Le titre de longue durée exige notamment huit années de résidence admissible.",
+          "table": {
+            "headers": [
+              "Projet",
+              "Statut à examiner"
+            ],
+            "rows": [
+              [
+                "Découverte de quelques semaines",
+                "Visa ou exemption"
+              ],
+              [
+                "Résidence locative",
+                "Motif de séjour admissible"
+              ],
+              [
+                "Logement personnel acheté",
+                "Titre propriétaire si éligible"
+              ],
+              [
+                "Installation durable",
+                "Longue durée après 8 ans admissibles et conditions"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Préparer les ressources et les soins",
+          "body": "Rassemblez attestations de pension, relevés bancaires, passeport, justificatifs de domicile, photographies et documents demandés. Avant le déménagement, vérifiez les conditions d’assurance selon l’âge, les maladies préexistantes et les soins réguliers. Les dispenses de justificatif d’assurance pour certains âges ne signifient pas que les soins sont gratuits. N’interrompez pas une couverture existante sans solution de remplacement."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Comparer un budget annuel réel",
+          "body": "En plus du loyer, prévoyez charges de résidence, chauffage ou climatisation, santé, transport et retours dans votre pays. La carte de séjour 2026 coûte 964 TL par personne, hors droits de séjour variables. Antalya offre un environnement maritime à l’année ; Bodrum impose d’anticiper la saisonnalité des loyers et Istanbul facilite l’accès à des établissements médicaux spécialisés. Examinez les quartiers proches des transports et des soins."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Pension, fiscalité et renouvellement",
+          "body": "Le versement de la pension et sa taxation dépendent du régime d’origine, de la résidence fiscale et de la convention applicable. La résidence administrative n’est pas une détermination fiscale. Préparez le renouvellement dans les 60 derniers jours du titre et conservez les preuves de revenus et d’adresse. Faites examiner les conséquences fiscales avant un transfert durable du foyer."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Existe-t-il un visa retraite automatique ?",
+          "answer": "Non, il faut identifier un motif de résidence prévu par la réglementation."
+        },
+        {
+          "question": "Une pension suffit-elle à obtenir un ikamet ?",
+          "answer": "Non, elle aide à démontrer les ressources mais les autres conditions s’appliquent."
+        },
+        {
+          "question": "Dois-je acheter un logement ?",
+          "answer": "Non systématiquement ; le motif de résidence doit toutefois être admissible."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Exemptions par nationalité"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de résidence"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Frais de résidence 2026"
+        }
+      ]
+    },
+    "en": {
+      "title": "Retire in Turkey 2026: visa, residence, healthcare and costs",
+      "metaDescription": "Planning retirement in Turkey? Compare lawful stay, residence options, foreign pension evidence, healthcare, housing and 2026 card fees.",
+      "shortAnswer": "Turkey's general visa classification does not include a standalone retirement visa. Retirees can visit under their passport-specific rules and apply for a residence permit based on an eligible legal purpose.",
+      "bosphorasHelp": "Bosphoras coordinates exploratory stays, housing selection and appointments with independent specialists. Immigration decisions remain with the competent authorities.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Decide how long you want to live in Turkey",
+          "body": "For an exploratory trip, use the exemption or visa applicable to your passport. Many ordinary passports allow 90 days in 180, but others have shorter allowances. Spending six months or the whole year in Turkey requires appropriate residence status. A foreign pension provides evidence of means; it is not by itself a guaranteed residence basis."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Renting, buying and residence categories",
+          "body": "Ordinary short-term residence can be granted for up to two years per issue according to purpose. Tourist residence is assessed individually; a lease and pension do not guarantee approval. Owner-occupied residential property may provide another basis, subject to applicable property and value rules. Long-term residence requires at least eight eligible years and other conditions.",
+          "table": {
+            "headers": [
+              "Plan",
+              "Status to assess"
+            ],
+            "rows": [
+              [
+                "Exploratory holiday",
+                "Visa or exemption"
+              ],
+              [
+                "Rented home",
+                "Eligible residence purpose"
+              ],
+              [
+                "Owner-occupied home",
+                "Property residence if eligible"
+              ],
+              [
+                "Permanent settlement",
+                "Long-term residence after 8 eligible years and conditions"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Prepare finances and healthcare",
+          "body": "Gather pension statements, bank records, passport, address evidence, photographs and required documents. Review insurance conditions relating to age, existing illnesses and regular treatment before moving. Age-based exemptions from insurance-document requirements do not make treatment free. Do not cancel existing coverage before arranging a replacement."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Build a realistic annual budget",
+          "body": "Budget rent, building fees, heating or air conditioning, healthcare, transport and return journeys. Turkey's 2026 residence card costs TRY 964 per person, excluding variable residence duties. Antalya offers year-round coastal living, Bodrum requires attention to seasonal rents, and Istanbul offers access to specialist medical facilities. Consider neighbourhoods near transport and healthcare."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Pensions, tax and renewals",
+          "body": "Pension payment and taxation depend on the originating scheme, tax residence and relevant treaty. Immigration residence does not determine tax residence. Apply for renewal in the final 60 days and retain income and address evidence. Obtain an independent tax assessment before transferring your permanent home."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is there an automatic retirement visa?",
+          "answer": "No. You need a residence purpose recognised by the rules."
+        },
+        {
+          "question": "Does a pension guarantee an ikamet?",
+          "answer": "No; it supports proof of means but other requirements still apply."
+        },
+        {
+          "question": "Must I buy a property?",
+          "answer": "Not necessarily, but you must qualify under a residence category."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Visa rules by nationality"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "2026 residence fees"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Пенсия в Турции в 2026 году: виза, ВНЖ, медицина и расходы",
+      "metaDescription": "Как пенсионеру переехать в Турцию: сроки безвизового пребывания, ВНЖ, подтверждение пенсии, страховка, жильё и сборы 2026 года.",
+      "shortAnswer": "В общей классификации турецких виз нет отдельной пенсионной визы. Пенсионер может приехать по правилам своего паспорта и оформить ВНЖ на соответствующем законном основании.",
+      "bosphorasHelp": "Bosphoras помогает организовать ознакомительные поездки, подбор жилья и консультации независимых специалистов. Решения о статусе принимают компетентные органы.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "На какой срок переезжать",
+          "body": "Для ознакомительной поездки используйте визу или безвизовый режим по вашему гражданству. Многие обычные паспорта дают право на 90 дней из 180, но существуют более короткие лимиты. Для проживания полгода или весь год необходим подходящий статус. Зарубежная пенсия подтверждает средства, но сама по себе не гарантирует ВНЖ."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Аренда, покупка и виды ВНЖ",
+          "body": "Обычный краткосрочный ВНЖ может выдаваться до двух лет на соответствующем основании. Туристические заявления рассматриваются индивидуально; договор аренды и пенсия не гарантируют одобрения. Собственное жильё, используемое для проживания, может стать другим основанием при соблюдении требований к недвижимости и стоимости. Долгосрочный ВНЖ требует не менее восьми подходящих лет и выполнения других условий.",
+          "table": {
+            "headers": [
+              "План",
+              "Какой статус проверить"
+            ],
+            "rows": [
+              [
+                "Ознакомительная поездка",
+                "Виза или безвизовый въезд"
+              ],
+              [
+                "Аренда жилья",
+                "Допустимое основание ВНЖ"
+              ],
+              [
+                "Собственное жильё",
+                "ВНЖ собственника при соответствии"
+              ],
+              [
+                "Постоянный переезд",
+                "Долгосрочный ВНЖ после 8 подходящих лет"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Доходы и медицинское обслуживание",
+          "body": "Подготовьте справки о пенсии, банковские выписки, паспорт, подтверждение адреса, фотографии и необходимые документы. Оцените условия страхования с учётом возраста, хронических заболеваний и регулярного лечения. Освобождение от предъявления страховки по возрасту не означает бесплатную медицину. Не прекращайте действующее страхование без замены."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Годовой бюджет",
+          "body": "Кроме аренды учтите коммунальные платежи, обслуживание дома, отопление и кондиционирование, медицину, транспорт и поездки домой. Карточка ВНЖ стоит 964 лиры в 2026 году без переменных сборов. Анталья подходит для круглогодичной жизни у моря, в Бодруме важна сезонность цен, а в Стамбуле доступны специализированные клиники. Оцените расстояние до транспорта и врачей."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Пенсия, налоги и продление",
+          "body": "Порядок выплаты и налогообложения пенсии зависит от страны её происхождения, налогового резидентства и соглашения. Миграционный ВНЖ не определяет налоговый статус. Подавайте на продление в последние 60 дней и храните документы о доходах и жилье. До постоянного переезда получите независимую налоговую консультацию."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Существует ли автоматическая пенсионная виза?",
+          "answer": "Нет, необходимо предусмотренное законом основание ВНЖ."
+        },
+        {
+          "question": "Гарантирует ли пенсия икамет?",
+          "answer": "Нет, она подтверждает доход, но действуют остальные требования."
+        },
+        {
+          "question": "Обязательно ли покупать жильё?",
+          "answer": "Нет, если имеется другое подходящее основание."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Визовые правила по гражданству"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "Сборы за ВНЖ в 2026 году"
+        }
+      ]
+    },
+    "ar": {
+      "title": "التقاعد في تركيا 2026: التأشيرة والإقامة والصحة والتكاليف",
+      "metaDescription": "دليل المتقاعدين في تركيا: مدة الزيارة وخيارات الإقامة والمعاش الأجنبي والتأمين والسكن ورسوم بطاقة الإقامة.",
+      "shortAnswer": "لا توجد فئة مستقلة لتأشيرة التقاعد في التصنيف التركي العام. يمكن للمتقاعد زيارة تركيا وفق قواعد جوازه ثم طلب تصريح إقامة على أساس قانوني مؤهل.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلات الاستكشافية واختيار السكن والمواعيد مع مختصين مستقلين، وتبقى قرارات الإقامة من اختصاص السلطات.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "تحديد مدة الاستقرار",
+          "body": "للرحلة الاستكشافية استخدم الإعفاء أو التأشيرة المناسبة لجوازك. تسمح جوازات كثيرة بتسعين يوماً من 180 بينما تخضع أخرى لمدد أقصر. للبقاء ستة أشهر أو طوال العام يلزم وضع إقامة مناسب. يشكل المعاش الأجنبي إثباتاً للموارد لكنه لا يضمن الإقامة بمفرده."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "الإيجار والشراء وخيارات الإقامة",
+          "body": "قد تصدر الإقامة قصيرة الأجل العادية حتى سنتين حسب الغرض. تدرس طلبات الإقامة السياحية بصورة فردية ولا يضمن عقد الإيجار والمعاش الموافقة. قد يوفر المسكن المملوك والمستخدم للسكن أساساً آخر وفق متطلبات العقار والقيمة. تتطلب الإقامة طويلة الأجل ثماني سنوات مؤهلة على الأقل وشروطاً إضافية.",
+          "table": {
+            "headers": [
+              "الخطة",
+              "الوضع المطلوب تقييمه"
+            ],
+            "rows": [
+              [
+                "زيارة استكشافية",
+                "تأشيرة أو إعفاء"
+              ],
+              [
+                "مسكن مستأجر",
+                "غرض إقامة مؤهل"
+              ],
+              [
+                "مسكن مملوك",
+                "إقامة المالك عند استيفاء الشروط"
+              ],
+              [
+                "استقرار دائم",
+                "إقامة طويلة الأجل بعد 8 سنوات مؤهلة والشروط"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "الموارد والرعاية الصحية",
+          "body": "جهز شهادات المعاش والكشوف المصرفية والجواز وإثبات العنوان والصور والوثائق المطلوبة. افحص شروط التأمين بحسب العمر والأمراض السابقة والعلاج المنتظم. لا يعني الإعفاء من إثبات التأمين لبعض الأعمار أن العلاج مجاني. لا توقف تغطية قائمة قبل ترتيب بديل."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "ميزانية سنوية واقعية",
+          "body": "احسب الإيجار ورسوم المبنى والتدفئة والتكييف والعلاج والنقل وزيارات بلدك الأصلي. تبلغ رسوم بطاقة الإقامة لعام 2026 مبلغ 964 ليرة للشخص دون الرسوم المتغيرة. تناسب أنطاليا الحياة الساحلية طوال العام، بينما تتطلب بودروم الانتباه للموسمية، وتوفر إسطنبول مؤسسات طبية متخصصة. اختر حياً قريباً من المواصلات والرعاية."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "المعاش والضرائب والتجديد",
+          "body": "تتوقف طريقة صرف المعاش والضريبة على نظامه الأصلي والإقامة الضريبية والاتفاقية المعنية. لا يحدد تصريح الإقامة وضعك الضريبي. قدم التجديد في آخر 60 يوماً واحتفظ بإثباتات الدخل والعنوان. اطلب تقييماً ضريبياً مستقلاً قبل نقل مقر معيشتك بصورة دائمة."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل توجد تأشيرة تقاعد تلقائية؟",
+          "answer": "لا، يلزم أساس إقامة معترف به قانوناً."
+        },
+        {
+          "question": "هل يضمن المعاش الإيكامت؟",
+          "answer": "لا، يثبت الموارد وتبقى بقية الشروط واجبة."
+        },
+        {
+          "question": "هل يجب شراء عقار؟",
+          "answer": "ليس بالضرورة إذا توفر أساس إقامة آخر مؤهل."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "الإعفاءات حسب الجنسية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامات"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "بوابة الإقامة الرسمية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/documents-for-residence-permit-fee-amount",
+          "label": "رسوم الإقامة 2026"
+        }
+      ]
+    }
+  },
+  "turkey-digital-nomad-visa": {
+    "fr": {
+      "title": "Visa digital nomad Turquie 2026 : âge, salaire et demande",
+      "metaDescription": "Télétravail en Turquie : programme officiel pour les 21–55 ans, revenus de 3 000 $ par mois, diplôme, certificat et démarches consulaires.",
+      "shortAnswer": "Le programme Digital Nomads Türkiye prévoit un certificat d’identification avant la demande de visa. Les candidats doivent notamment être âgés de 21 à 55 ans, titulaires d’un diplôme universitaire, citoyens d’un pays éligible et justifier d’au moins 3 000 USD mensuels ou 36 000 USD annuels.",
+      "bosphorasHelp": "Bosphoras coordonne les séjours de découverte, la sélection de logements et les rendez-vous avec des professionnels indépendants. L’obtention du statut relève des autorités compétentes.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Vérifier la nationalité et le profil",
+          "body": "Le programme accepte une liste déterminée de nationalités, comprenant notamment la France, l’Allemagne, le Royaume-Uni, les États-Unis, le Canada, la Russie et plusieurs autres pays européens. Le Kazakhstan ne figure pas dans la liste publiée par le programme. La nationalité, et non le pays de résidence, est déterminante. Le candidat doit exercer à distance pour une entreprise ou des clients établis hors de Turquie.",
+          "table": {
+            "headers": [
+              "Condition",
+              "Exigence publiée"
+            ],
+            "rows": [
+              [
+                "Âge",
+                "21–55 ans"
+              ],
+              [
+                "Études",
+                "Diplôme universitaire"
+              ],
+              [
+                "Revenu",
+                "3 000 USD/mois ou 36 000 USD/an"
+              ],
+              [
+                "Passeport",
+                "Au moins 6 mois de validité à l’arrivée"
+              ],
+              [
+                "Activité",
+                "Entreprise ou clients hors de Turquie"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Dossier du certificat numérique",
+          "body": "Préparez passeport, photographie biométrique, diplôme, preuve de revenus et contrat de travail ou contrat de prestation avec une entreprise hors de Turquie. Pour un indépendant, fournissez les contrats et justificatifs démontrant l’activité étrangère. Déposez sur digitalnomads.goturkiye.com ; le certificat n’est pas lui-même le visa."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Du certificat au visa et au séjour",
+          "body": "Après obtention du certificat, effectuez la demande auprès de la représentation turque compétente ou suivez la procédure indiquée pour les candidats déjà présents légalement en Turquie. Les frais, dates et durée du visa dépendent de la décision applicable : ne présumez pas d'une durée uniforme ni d'un droit de résidence de plusieurs années. Vérifiez le statut requis pour tout séjour prolongé."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Travail à distance et fiscalité",
+          "body": "Le programme vise une activité liée à l’étranger. Un contrat turc, une prestation locale ou la gestion opérationnelle d’une société turque peut nécessiter un permis de travail. Le certificat ne dispense pas automatiquement des obligations fiscales turques ou du pays d’origine. Examinez résidence fiscale, convention et protection sociale avant de déplacer votre activité."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Organiser son cadre de travail",
+          "body": "Avant de signer un bail, vérifiez la connexion fixe réelle dans le logement, l’espace de travail, les nuisances, les transports et les charges. Istanbul offre un réseau d’espaces de travail et de rendez-vous ; Antalya convient au séjour côtier prolongé ; Bodrum demande de contrôler la disponibilité des services hors saison. Gardez un budget pour assurance, formalités et retour d’urgence."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Le seuil est-il de 3 000 USD par mois ?",
+          "answer": "Oui, ou 36 000 USD annuels selon les conditions officielles du programme."
+        },
+        {
+          "question": "Puis-je travailler pour une société turque ?",
+          "answer": "Le programme vise des employeurs ou clients étrangers ; une activité locale nécessite une analyse distincte."
+        },
+        {
+          "question": "Le certificat est-il déjà un visa ?",
+          "answer": "Non, il précède les formalités de visa applicables."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://digitalnomads.goturkiye.com/",
+          "label": "Programme officiel Digital Nomads Türkiye"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Exemptions par nationalité"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de résidence"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/en/frequently-asked-questions/directorate-general-of-international-labour-force/work-permit/",
+          "label": "Ministère du Travail"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey digital nomad visa 2026: eligibility, $3,000 income & application",
+      "metaDescription": "Work remotely in Turkey: official programme, age 21–55, $3,000 monthly income, university degree, identification certificate and visa steps.",
+      "shortAnswer": "Digital Nomads Türkiye requires an identification certificate before visa processing. Applicants must generally be aged 21–55, hold a university degree, have eligible citizenship and demonstrate at least USD 3,000 monthly or USD 36,000 annual income.",
+      "bosphorasHelp": "Bosphoras coordinates exploratory stays, housing selection and appointments with independent specialists. Immigration decisions remain with the competent authorities.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Check nationality and employment",
+          "body": "The programme accepts a defined list of nationalities including France, Germany, the UK, the US, Canada, Russia and several other European countries. Kazakhstan is not on the published list. Citizenship rather than country of residence determines eligibility. Applicants must work remotely for a business or clients outside Turkey.",
+          "table": {
+            "headers": [
+              "Condition",
+              "Published requirement"
+            ],
+            "rows": [
+              [
+                "Age",
+                "21–55"
+              ],
+              [
+                "Education",
+                "University degree"
+              ],
+              [
+                "Income",
+                "USD 3,000/month or USD 36,000/year"
+              ],
+              [
+                "Passport",
+                "At least 6 months' validity on arrival"
+              ],
+              [
+                "Work",
+                "Non-Turkish employer or clients"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Prepare the identification certificate",
+          "body": "Gather passport, biometric photograph, university degree, evidence of income and an employment or service contract with a company outside Turkey. Freelancers should provide contracts and evidence of overseas activity. Apply through digitalnomads.goturkiye.com; the identification certificate itself is not a visa."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "From certificate to visa and residence",
+          "body": "Once certified, apply at the competent Turkish mission or follow the designated procedure for applicants already lawfully in Turkey. Fees, validity and permitted stay depend on the applicable decision: do not assume a universal visa duration or a multi-year residence entitlement. Check the required status for longer stays."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Remote work and tax",
+          "body": "The programme targets foreign-based activity. Turkish employment, local services or active management of a Turkish company may require a work permit. Certification does not automatically remove Turkish or home-country tax obligations. Assess tax residence, treaty provisions and social insurance before transferring your work."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Choose your working environment",
+          "body": "Before signing a lease, verify the actual home internet connection, workspace, noise levels, transport and building charges. Istanbul offers meeting and coworking options, Antalya is a year-round coastal base, and Bodrum requires checks on off-season services. Reserve funds for insurance, documents and emergency travel."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is the income requirement USD 3,000 per month?",
+          "answer": "Yes, or USD 36,000 annually under the published criteria."
+        },
+        {
+          "question": "Can I work for a Turkish company?",
+          "answer": "The programme targets foreign employers or clients; local work requires separate assessment."
+        },
+        {
+          "question": "Is the identification certificate a visa?",
+          "answer": "No, visa formalities are still required."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://digitalnomads.goturkiye.com/",
+          "label": "Official Digital Nomads Türkiye programme"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Visa rules by nationality"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/en/frequently-asked-questions/directorate-general-of-international-labour-force/work-permit/",
+          "label": "Ministry of Labour"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Виза цифрового кочевника в Турцию 2026: доход, возраст и оформление",
+      "metaDescription": "Программа для удалённой работы: возраст 21–55 лет, доход от $3 000 в месяц, диплом, сертификат и подача на визу.",
+      "shortAnswer": "Для программы Digital Nomads Türkiye сначала оформляется идентификационный сертификат. Кандидату обычно требуется возраст 21–55 лет, диплом вуза, подходящее гражданство и подтверждённый доход от 3 000 долларов в месяц или 36 000 в год.",
+      "bosphorasHelp": "Bosphoras помогает организовать ознакомительные поездки, подбор жилья и консультации независимых специалистов. Решения о статусе принимают компетентные органы.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Гражданство и характер работы",
+          "body": "В опубликованный перечень входят Франция, Германия, Великобритания, США, Канада, Россия и ряд других европейских стран. Казахстан не входит в опубликованный список. Значение имеет гражданство, а не страна проживания. Работа должна выполняться дистанционно для работодателя или клиентов за пределами Турции.",
+          "table": {
+            "headers": [
+              "Условие",
+              "Опубликованное требование"
+            ],
+            "rows": [
+              [
+                "Возраст",
+                "21–55 лет"
+              ],
+              [
+                "Образование",
+                "Диплом вуза"
+              ],
+              [
+                "Доход",
+                "$3 000 в месяц или $36 000 в год"
+              ],
+              [
+                "Паспорт",
+                "От 6 месяцев действия при въезде"
+              ],
+              [
+                "Работа",
+                "Работодатель или клиенты за пределами Турции"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Документы для сертификата",
+          "body": "Подготовьте загранпаспорт, биометрическую фотографию, диплом, подтверждение дохода и трудовой либо гражданско-правовой договор с иностранной компанией. Самозанятым пригодятся договоры и подтверждения зарубежной деятельности. Подайте заявку на digitalnomads.goturkiye.com; сертификат не является самой визой."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "От сертификата к визе",
+          "body": "После получения сертификата обратитесь в компетентное турецкое представительство или следуйте процедуре для уже законно находящихся в Турции заявителей. Сборы, даты действия и разрешённый срок зависят от конкретного решения. Не рассчитывайте на единый для всех срок визы или многолетний ВНЖ без дополнительного оформления."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Удалённая работа и налоги",
+          "body": "Программа касается деятельности, связанной с зарубежным рынком. Турецкий трудовой договор, услуги местным клиентам или оперативное управление турецкой компанией могут требовать разрешения на работу. Сертификат не освобождает автоматически от налогов. До переезда оцените налоговое резидентство, соглашения и социальное страхование."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Условия для работы",
+          "body": "До аренды проверьте фактический интернет в квартире, рабочее место, шум, транспорт и обслуживание дома. Стамбул удобен для встреч и коворкингов, Анталья — для круглогодичной жизни у моря, а в Бодруме важно проверить услуги вне сезона. Предусмотрите расходы на страховку, документы и экстренные поездки."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Нужен ли доход от $3 000 в месяц?",
+          "answer": "Да, либо $36 000 в год согласно опубликованным критериям."
+        },
+        {
+          "question": "Можно ли работать на турецкую компанию?",
+          "answer": "Программа ориентирована на зарубежных работодателей и клиентов; местная работа оценивается отдельно."
+        },
+        {
+          "question": "Сертификат уже является визой?",
+          "answer": "Нет, необходимо пройти соответствующее визовое оформление."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://digitalnomads.goturkiye.com/",
+          "label": "Официальная программа цифровых кочевников Турции"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Визовые правила по гражданству"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/en/frequently-asked-questions/directorate-general-of-international-labour-force/work-permit/",
+          "label": "Министерство труда"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تأشيرة الرحالة الرقميين في تركيا 2026: الدخل والعمر وطريقة الطلب",
+      "metaDescription": "برنامج العمل عن بعد في تركيا: عمر 21–55 عاماً ودخل 3,000 دولار شهرياً وشهادة جامعية وشهادة تعريف وإجراءات التأشيرة.",
+      "shortAnswer": "يتطلب برنامج الرحالة الرقميين في تركيا شهادة تعريف قبل إجراءات التأشيرة. تشمل الشروط عمر 21 إلى 55 عاماً وشهادة جامعية وجنسية مؤهلة ودخلاً لا يقل عن 3,000 دولار شهرياً أو 36,000 سنوياً.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلات الاستكشافية واختيار السكن والمواعيد مع مختصين مستقلين، وتبقى قرارات الإقامة من اختصاص السلطات.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "الجنسية وطبيعة العمل",
+          "body": "تشمل قائمة الجنسيات المنشورة فرنسا وألمانيا وبريطانيا والولايات المتحدة وكندا وروسيا وعدداً من الدول الأوروبية الأخرى. لا تظهر كازاخستان في القائمة المنشورة. العبرة بالجنسية لا بلد الإقامة، ويجب أن يكون العمل عن بعد لصاحب عمل أو عملاء خارج تركيا.",
+          "table": {
+            "headers": [
+              "الشرط",
+              "المتطلب المنشور"
+            ],
+            "rows": [
+              [
+                "العمر",
+                "21–55 عاماً"
+              ],
+              [
+                "التعليم",
+                "شهادة جامعية"
+              ],
+              [
+                "الدخل",
+                "3,000 دولار شهرياً أو 36,000 سنوياً"
+              ],
+              [
+                "الجواز",
+                "صلاحية لا تقل عن 6 أشهر عند الوصول"
+              ],
+              [
+                "العمل",
+                "صاحب عمل أو عملاء خارج تركيا"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-2",
+          "title": "وثائق شهادة التعريف",
+          "body": "جهز الجواز والصورة البيومترية والشهادة الجامعية وإثبات الدخل وعقد العمل أو الخدمات مع شركة خارج تركيا. للمستقلين جهز العقود وإثبات النشاط الخارجي. قدم عبر digitalnomads.goturkiye.com؛ شهادة التعريف ليست التأشيرة نفسها."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "من الشهادة إلى التأشيرة والإقامة",
+          "body": "بعد الشهادة قدم لدى البعثة التركية المختصة أو اتبع الإجراء المخصص للمقيمين قانونياً داخل تركيا. تتوقف الرسوم والصلاحية والمدة المسموحة على القرار المعني؛ لا تفترض مدة موحدة أو إقامة لسنوات. تحقق من الوضع اللازم إذا رغبت في البقاء مدة أطول."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "العمل عن بعد والضرائب",
+          "body": "يستهدف البرنامج النشاط المرتبط بالخارج. قد يتطلب العمل لشركة تركية أو تقديم خدمات محلية أو إدارة شركة تركية فعلياً تصريح عمل. لا تعفي الشهادة تلقائياً من الالتزامات الضريبية. ادرس الإقامة الضريبية والاتفاقيات والتأمين الاجتماعي قبل الانتقال."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "اختيار بيئة العمل",
+          "body": "قبل الإيجار افحص الاتصال الفعلي بالإنترنت ومكان العمل والضوضاء والمواصلات ورسوم المبنى. توفر إسطنبول أماكن للاجتماعات والعمل المشترك، وتناسب أنطاليا المعيشة الساحلية، وتحتاج بودروم إلى التحقق من الخدمات خارج الموسم. خصص ميزانية للتأمين والوثائق والسفر الطارئ."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يشترط دخل 3,000 دولار شهرياً؟",
+          "answer": "نعم أو 36,000 دولار سنوياً وفق الشروط المنشورة."
+        },
+        {
+          "question": "هل يمكن العمل لشركة تركية؟",
+          "answer": "يستهدف البرنامج أصحاب العمل والعملاء خارج تركيا؛ يدرس العمل المحلي بصورة مستقلة."
+        },
+        {
+          "question": "هل شهادة التعريف تأشيرة؟",
+          "answer": "لا، تسبق إجراءات التأشيرة المطلوبة."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://digitalnomads.goturkiye.com/",
+          "label": "برنامج الرحالة الرقميين الرسمي في تركيا"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "الإعفاءات حسب الجنسية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامات"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "بوابة الإقامة الرسمية"
+        },
+        {
+          "href": "https://www.csgb.gov.tr/en/frequently-asked-questions/directorate-general-of-international-labour-force/work-permit/",
+          "label": "وزارة العمل"
+        }
+      ]
+    }
+  },
+  "turkey-transit-visa": {
+    "fr": {
+      "title": "Visa transit Turquie 2026 : escale à Istanbul et sortie d’aéroport",
+      "metaDescription": "Escale à IST ou SAW : découvrez quand un visa de transit est nécessaire, le e-ATV, les bagages, billets séparés et sorties vers Istanbul.",
+      "shortAnswer": "Une correspondance internationale sans franchir le contrôle des passeports ne nécessite généralement pas de visa d’entrée turc. Certaines nationalités et certains itinéraires exigent toutefois une autorisation de transit aéroportuaire électronique. Sortir de la zone internationale nécessite le droit d’entrer en Turquie.",
+      "bosphorasHelp": "Bosphoras coordonne les séjours de découverte, la sélection de logements et les rendez-vous avec des professionnels indépendants. L’obtention du statut relève des autorités compétentes.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Rester en zone internationale",
+          "body": "Si votre billet permet un transfert international sans retrait de bagages ni sortie du terminal, vous restez en transit. Vérifiez que vos bagages sont enregistrés vers la destination finale et que vous disposez de la carte d’embarquement suivante. Un visa pour le pays de destination peut être requis par la compagnie."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Cas particulier de l’e-ATV",
+          "body": "Le ministère turc prévoit une autorisation électronique de transit aéroportuaire pour certaines nationalités et correspondances, notamment des itinéraires vers le Mexique, le Panama, la Colombie et le Venezuela. La règle peut dépendre du passeport et de la destination : renseignez les données exactes sur le portail e-Visa et vérifiez les exigences de la compagnie avant le départ. Ne confondez pas e-ATV et autorisation d’entrer en Turquie."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Quand faut-il entrer en Turquie ?",
+          "body": "Pour retirer un bagage, changer d’aéroport entre Istanbul Airport (IST) et Sabiha Gökçen (SAW), effectuer une correspondance domestique ou dormir dans un hôtel côté ville, il faut franchir le contrôle frontalier. Le régime d’entrée ordinaire s’applique même pour quelques heures.",
+          "table": {
+            "headers": [
+              "Correspondance",
+              "Règle à examiner"
+            ],
+            "rows": [
+              [
+                "International → international, sans sortie",
+                "Transit ; vérifier éventuel e-ATV"
+              ],
+              [
+                "Billets séparés et bagage à récupérer",
+                "Entrée en Turquie"
+              ],
+              [
+                "IST → SAW",
+                "Entrée en Turquie"
+              ],
+              [
+                "International → vol intérieur",
+                "Contrôle d’entrée"
+              ],
+              [
+                "Visite d’Istanbul pendant l’escale",
+                "Visa ou exemption d’entrée"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Préparer une escale en ville",
+          "body": "N’organisez une visite que si vous avez droit d’entrer et suffisamment de temps pour le contrôle, les bagages, les trajets et la sécurité. Les deux aéroports sont éloignés et les temps routiers varient fortement. Pour une escale de nuit, distinguez hôtel en zone internationale et hôtel accessible après immigration ; réservez le type adapté."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Retards et correspondances manquées",
+          "body": "Avec des billets séparés, la protection en cas de correspondance manquée peut être limitée. En cas d’annulation, contactez immédiatement le transporteur pour une solution côté transit si vous ne pouvez pas entrer. N’achetez pas un e-Visa touristique si vous êtes inéligible : une décision à la frontière ne remplace pas les conditions de visa."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Puis-je visiter Istanbul sans visa pendant quatre heures ?",
+          "answer": "Seulement si vous bénéficiez d’une exemption ou possédez une autorisation d’entrée applicable."
+        },
+        {
+          "question": "Changer d’aéroport exige-t-il de passer l’immigration ?",
+          "answer": "Oui, IST et SAW sont deux aéroports distincts."
+        },
+        {
+          "question": "Le e-ATV permet-il de visiter la ville ?",
+          "answer": "Non, une autorisation de transit ne donne pas par elle-même un droit d’entrée."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Exemptions par nationalité"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Règles générales des visas turcs"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/",
+          "label": "Portail officiel e-Visa"
+        },
+        {
+          "href": "https://www.visa.gov.tr/",
+          "label": "Demande consulaire"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey transit visa 2026: Istanbul layovers, e-ATV & airport transfers",
+      "metaDescription": "Connecting at IST or SAW? Check airport transit authorisation, baggage transfers, separate tickets and visa rules for leaving the international zone.",
+      "shortAnswer": "International airside connections generally do not require a Turkish entry visa. Certain nationalities and itineraries require electronic airport transit authorisation. Leaving the international transit area requires permission to enter Turkey.",
+      "bosphorasHelp": "Bosphoras coordinates exploratory stays, housing selection and appointments with independent specialists. Immigration decisions remain with the competent authorities.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Remain airside",
+          "body": "If your booking allows an international transfer without collecting baggage or leaving the terminal, you remain in transit. Check that bags are tagged to the final destination and that you have the onward boarding pass. The airline may require proof of admission to your final destination."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Electronic airport transit authorisation",
+          "body": "Turkey has electronic airport transit authorisation requirements for certain citizenships and routes, notably some journeys to Mexico, Panama, Colombia and Venezuela. Requirements depend on passport and destination: enter your exact details on the official e-Visa portal and check the airline's requirements before departure. An e-ATV is not Turkish entry authorisation."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "When entry clearance is necessary",
+          "body": "Collecting baggage, transferring between Istanbul Airport (IST) and Sabiha Gökçen (SAW), taking a domestic connection or sleeping in a landside hotel requires passing immigration. Ordinary entry rules apply even for a few hours.",
+          "table": {
+            "headers": [
+              "Connection",
+              "Rule to assess"
+            ],
+            "rows": [
+              [
+                "International to international, airside",
+                "Transit; check e-ATV"
+              ],
+              [
+                "Separate tickets and baggage collection",
+                "Entry into Turkey"
+              ],
+              [
+                "IST to SAW",
+                "Entry into Turkey"
+              ],
+              [
+                "International to domestic flight",
+                "Immigration clearance"
+              ],
+              [
+                "Istanbul sightseeing",
+                "Entry visa or exemption"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Plan a city layover",
+          "body": "Leave the airport only if eligible for entry and if your schedule allows time for immigration, baggage, road travel and security. The two airports are far apart and journey times vary. For an overnight transfer, distinguish an airside transit hotel from a landside hotel requiring entry clearance."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Delays and missed flights",
+          "body": "Separate-ticket journeys may offer limited missed-connection protection. If a flight is cancelled, contact the airline for an airside alternative if you cannot enter Turkey. Do not purchase a tourist e-Visa unless eligible: border officials still apply entry requirements."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I visit Istanbul for four hours without a visa?",
+          "answer": "Only if you have a qualifying visa exemption or entry authorisation."
+        },
+        {
+          "question": "Does changing airports require immigration clearance?",
+          "answer": "Yes. IST and SAW are different airports."
+        },
+        {
+          "question": "Does an e-ATV let me visit Istanbul?",
+          "answer": "No, transit authorisation does not itself grant entry."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Visa rules by nationality"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "General Turkish visa rules"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/",
+          "label": "Official e-Visa portal"
+        },
+        {
+          "href": "https://www.visa.gov.tr/",
+          "label": "Consular visa applications"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Транзитная виза в Турцию 2026: пересадка в Стамбуле и e-ATV",
+      "metaDescription": "Пересадки IST и SAW: когда нужна транзитная виза, электронное разрешение e-ATV, получение багажа и выход в город.",
+      "shortAnswer": "При международной пересадке без прохождения паспортного контроля въездная виза Турции обычно не требуется. Для отдельных гражданств и маршрутов необходимо электронное разрешение на аэропортовый транзит. Для выхода из международной зоны нужно право въезда.",
+      "bosphorasHelp": "Bosphoras помогает организовать ознакомительные поездки, подбор жилья и консультации независимых специалистов. Решения о статусе принимают компетентные органы.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Пересадка в международной зоне",
+          "body": "Если билет предусматривает международный трансфер без получения багажа и выхода из терминала, вы остаётесь в транзитной зоне. Проверьте регистрацию багажа до конечного пункта и наличие посадочного талона на следующий рейс. Авиакомпания может проверять право въезда в страну назначения."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Электронное транзитное разрешение",
+          "body": "Турция предусматривает электронное разрешение на аэропортовый транзит для отдельных гражданств и маршрутов, в том числе некоторых поездок в Мексику, Панаму, Колумбию и Венесуэлу. Условия зависят от паспорта и направления. Укажите точные данные на официальном портале e-Visa и уточните требования перевозчика. e-ATV не является разрешением на въезд в Турцию."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Когда требуется въезд",
+          "body": "Получение багажа, переезд между Istanbul Airport (IST) и Sabiha Gökçen (SAW), пересадка на внутренний рейс или ночёвка в гостинице за паспортным контролем требуют пересечения границы. Обычные правила въезда действуют даже при выходе на несколько часов.",
+          "table": {
+            "headers": [
+              "Пересадка",
+              "Что проверить"
+            ],
+            "rows": [
+              [
+                "Международная без выхода",
+                "Транзит и возможное e-ATV"
+              ],
+              [
+                "Раздельные билеты и получение багажа",
+                "Право въезда"
+              ],
+              [
+                "IST → SAW",
+                "Право въезда"
+              ],
+              [
+                "Международный → внутренний рейс",
+                "Паспортный контроль"
+              ],
+              [
+                "Прогулка по Стамбулу",
+                "Виза или безвизовый въезд"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Выход в город во время пересадки",
+          "body": "Покидайте аэропорт только при наличии права въезда и запаса времени на паспортный контроль, багаж, дорогу и досмотр. Аэропорты находятся далеко друг от друга, а дорожные условия меняются. Для ночёвки выбирайте гостиницу в международной зоне либо за её пределами в зависимости от права въезда."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Задержка или пропущенный рейс",
+          "body": "При раздельных билетах защита пассажира при пропущенной пересадке может быть ограничена. При отмене рейса обратитесь к перевозчику за вариантом в транзитной зоне, если въезд недоступен. Не покупайте электронную туристическую визу при отсутствии права на неё."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли выйти в Стамбул на четыре часа без визы?",
+          "answer": "Только при наличии безвизового режима или подходящего разрешения на въезд."
+        },
+        {
+          "question": "При смене аэропорта нужен паспортный контроль?",
+          "answer": "Да, IST и SAW — разные аэропорты."
+        },
+        {
+          "question": "Разрешает ли e-ATV выйти в город?",
+          "answer": "Нет, транзитное разрешение само по себе не даёт права въезда."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Визовые правила по гражданству"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Общие визовые правила Турции"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/",
+          "label": "Официальный портал e-Visa"
+        },
+        {
+          "href": "https://www.visa.gov.tr/",
+          "label": "Консульское оформление виз"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تأشيرة الترانزيت في تركيا 2026: مطارات إسطنبول وتصريح e-ATV",
+      "metaDescription": "دليل التوقف في IST وSAW: تصريح العبور الإلكتروني واستلام الأمتعة والتذاكر المنفصلة وشروط الخروج إلى إسطنبول.",
+      "shortAnswer": "لا تتطلب الرحلات الدولية المتصلة داخل منطقة العبور عادة تأشيرة دخول تركية. لكن بعض الجنسيات والمسارات تحتاج تصريح عبور إلكترونياً. يتطلب الخروج من المنطقة الدولية حق الدخول إلى تركيا.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلات الاستكشافية واختيار السكن والمواعيد مع مختصين مستقلين، وتبقى قرارات الإقامة من اختصاص السلطات.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "البقاء داخل منطقة العبور",
+          "body": "إذا سمحت التذكرة بالانتقال بين رحلتين دوليتين دون استلام الحقائب أو مغادرة المنطقة الدولية فتبقى في العبور. تحقق من تسجيل الحقائب حتى الوجهة النهائية ومن بطاقة الصعود التالية. قد تتحقق شركة الطيران من حق دخول الدولة النهائية."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "تصريح العبور الإلكتروني",
+          "body": "تفرض تركيا تصريح عبور إلكترونياً لبعض الجنسيات والمسارات، ومنها بعض الرحلات إلى المكسيك وبنما وكولومبيا وفنزويلا. تعتمد الشروط على الجواز والوجهة؛ أدخل بياناتك الدقيقة في البوابة الرسمية وتحقق من شركة الطيران قبل السفر. لا يشكل e-ATV إذناً لدخول تركيا."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "متى يلزم دخول تركيا؟",
+          "body": "يتطلب استلام الأمتعة أو الانتقال بين مطار إسطنبول IST وصبيحة كوكجن SAW أو متابعة رحلة داخلية أو المبيت في فندق خارج المنطقة الدولية عبور مراقبة الجوازات. تطبق شروط الدخول العادية حتى لبضع ساعات.",
+          "table": {
+            "headers": [
+              "الرحلة المتصلة",
+              "القاعدة"
+            ],
+            "rows": [
+              [
+                "دولية إلى دولية دون خروج",
+                "عبور والتحقق من e-ATV المحتمل"
+              ],
+              [
+                "تذاكر منفصلة واستلام أمتعة",
+                "حق دخول تركيا"
+              ],
+              [
+                "IST إلى SAW",
+                "حق دخول تركيا"
+              ],
+              [
+                "دولية إلى داخلية",
+                "مراقبة الدخول"
+              ],
+              [
+                "زيارة إسطنبول",
+                "تأشيرة دخول أو إعفاء"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-4",
+          "title": "التخطيط للخروج إلى المدينة",
+          "body": "لا تغادر المطار إلا إذا كان الدخول مسموحاً ولديك وقت كافٍ للجوازات والأمتعة والتنقل والتفتيش. المطاران متباعدان وتتغير مدة الطريق. في التوقف الليلي ميز بين فندق منطقة العبور وفندق يتطلب الدخول عبر الحدود."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "التأخر وفقدان الرحلة التالية",
+          "body": "قد تكون حماية المسافر محدودة عند حجز تذاكر منفصلة. عند الإلغاء تواصل مع الناقل لبديل داخل منطقة العبور إذا لم تستطع دخول تركيا. لا تشتر تأشيرة سياحية إلكترونية ما لم تكن مؤهلاً؛ تظل شروط الحدود سارية."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يمكن زيارة إسطنبول لأربع ساعات بلا تأشيرة؟",
+          "answer": "فقط إذا كنت مشمولاً بإعفاء أو إذن دخول مناسب."
+        },
+        {
+          "question": "هل تغيير المطار يتطلب مراقبة الجوازات؟",
+          "answer": "نعم، IST وSAW مطاران منفصلان."
+        },
+        {
+          "question": "هل يسمح e-ATV بالخروج إلى المدينة؟",
+          "answer": "لا يمنح تصريح العبور وحده حق الدخول."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "الإعفاءات حسب الجنسية"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "القواعد العامة للتأشيرات التركية"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/",
+          "label": "بوابة التأشيرة الإلكترونية الرسمية"
+        },
+        {
+          "href": "https://www.visa.gov.tr/",
+          "label": "طلبات التأشيرة القنصلية"
+        }
+      ]
+    }
+  },
+  "turkey-30-days-visa-free": {
+    "fr": {
+      "title": "Turquie sans visa 30 jours en 2026 : pays, calcul et passeport",
+      "metaDescription": "Quels passeports permettent 30 jours sans visa en Turquie ? Exemples par nationalité, cumul 90/180, validité et options pour rester plus longtemps.",
+      "shortAnswer": "Certaines nationalités disposent d’une dispense de visa limitée à 30 jours, parfois par séjour et parfois dans une période définie. Le plafond général de 90 jours sur 180 n’allonge pas une dispense nationale de 30 jours.",
+      "bosphorasHelp": "Bosphoras coordonne les séjours de découverte, la sélection de logements et les rendez-vous avec des professionnels indépendants. L’obtention du statut relève des autorités compétentes.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Exemples de nationalités concernées",
+          "body": "Le ministère turc publie les conditions par passeport ordinaire. Des distinctions existent pour les passeports officiels et les motifs non touristiques. Les règles publiées à la date du voyage priment.",
+          "table": {
+            "headers": [
+              "Passeport ordinaire",
+              "Dispense publiée pour les visites"
+            ],
+            "rows": [
+              [
+                "Azerbaïdjan",
+                "Jusqu’à 90 jours ; pas la catégorie 30 jours"
+              ],
+              [
+                "Mongolie",
+                "30 jours"
+              ],
+              [
+                "Maldives",
+                "30 jours"
+              ],
+              [
+                "Indonésie",
+                "30 jours"
+              ],
+              [
+                "Thaïlande",
+                "30 jours"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-2",
+          "title": "30 jours ne signifie pas 90 jours",
+          "body": "Relevez la durée maximale autorisée de votre nationalité et la période de cumul éventuelle. Une dispense de 30 jours ne permet pas de séjourner 90 jours en continu. Une sortie suivie d’une nouvelle admission n’est pas un droit garanti, et le plafond de 90 jours sur 180 reste applicable aux courts séjours."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Exemple de calendrier",
+          "body": "Une entrée le 5 janvier correspond au premier jour ; le 3 février est le trentième jour, si la durée accordée est de 30 jours. Prévoyez une marge avant cette date. Pour des séjours répétés, gardez les dates exactes et vérifiez le cumul applicable à votre passeport ; n’utilisez pas le simple solde 90/180 comme prolongation automatique."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Passeport et documents",
+          "body": "Selon la règle générale des 60 jours supplémentaires, une autorisation de 30 jours exige un passeport restant valable au moins 90 jours à l’arrivée, sauf exceptions prévues. Six mois sont recommandés. Gardez les justificatifs de logement, ressources et retour et vérifiez les conditions propres à votre document."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Rester au-delà de 30 jours",
+          "body": "Ne comptez pas sur un renouvellement à la frontière. Pour une visite continue plus longue, examinez avant le départ le visa consulaire approprié ou, si vous êtes déjà légalement en Turquie, un fondement de résidence admissible à demander avant expiration. L’achat d’un e-Visa n’est possible que pour les nationalités et motifs éligibles."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Puis-je rester 90 jours avec une dispense de 30 jours ?",
+          "answer": "Non, les 30 jours restent la limite nationale applicable."
+        },
+        {
+          "question": "Le trentième jour inclut-il le jour d’arrivée ?",
+          "answer": "Oui, comptez le jour d’entrée comme premier jour."
+        },
+        {
+          "question": "Une sortie d’un jour suffit-elle ?",
+          "answer": "Non, une nouvelle admission et un nouveau quota ne sont pas garantis."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Exemptions par nationalité"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Règles générales des visas turcs"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de résidence"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/",
+          "label": "Portail officiel e-Visa"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey 30 days visa-free 2026: countries, passport and stay limits",
+      "metaDescription": "Which passports allow 30 visa-free days in Turkey? Nationality examples, calendar calculation, the 90/180 cap and options for longer visits.",
+      "shortAnswer": "Some nationalities have a 30-day visa exemption, either per visit or within a specified reference period. The general 90-in-180-day ceiling does not turn a national 30-day allowance into 90 days.",
+      "bosphorasHelp": "Bosphoras coordinates exploratory stays, housing selection and appointments with independent specialists. Immigration decisions remain with the competent authorities.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Examples by nationality",
+          "body": "The Turkish foreign ministry publishes conditions for ordinary passports. Official passports and non-tourist travel can follow different rules. Use the rules applying on the travel date.",
+          "table": {
+            "headers": [
+              "Ordinary passport",
+              "Published allowance for visits"
+            ],
+            "rows": [
+              [
+                "Azerbaijan",
+                "Up to 90 days; not a 30-day category"
+              ],
+              [
+                "Mongolia",
+                "30 days"
+              ],
+              [
+                "Maldives",
+                "30 days"
+              ],
+              [
+                "Indonesia",
+                "30 days"
+              ],
+              [
+                "Thailand",
+                "30 days"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-2",
+          "title": "A 30-day allowance is not 90 days",
+          "body": "Identify your nationality's authorised maximum and any cumulative period. A 30-day waiver cannot support a continuous 90-day stay. Leaving and returning does not guarantee a new admission, and the general 90-day ceiling within 180 days still applies to short visits."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Worked calendar example",
+          "body": "An arrival on 5 January counts as day one; 3 February is day 30 if your authorised allowance is 30 days. Leave a margin before that date. For repeat trips, retain precise travel dates and follow the cumulative rule for your passport rather than treating the general 90/180 balance as an automatic extension."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Passport and supporting documents",
+          "body": "Under the general additional-60-day validity rule, a full 30-day allowance requires at least 90 days of passport validity on arrival, subject to official exceptions. Six months is recommended. Carry accommodation, financial and return-travel evidence and check passport-specific conditions."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Staying beyond your allowance",
+          "body": "Do not rely on a border run. For a longer continuous visit, assess the appropriate consular visa before departure or an eligible residence basis before lawful stay expires if already in Turkey. An e-Visa is available only to eligible nationalities and purposes."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can a 30-day exemption be used for 90 days?",
+          "answer": "No, the national 30-day limit still applies."
+        },
+        {
+          "question": "Does the arrival day count?",
+          "answer": "Yes, it counts as day one."
+        },
+        {
+          "question": "Does a one-day exit reset the allowance?",
+          "answer": "No, readmission and a fresh allowance are not guaranteed."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Visa rules by nationality"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "General Turkish visa rules"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/",
+          "label": "Official e-Visa portal"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Турция без визы на 30 дней в 2026 году: страны и расчёт срока",
+      "metaDescription": "Каким гражданам доступны 30 дней без визы: примеры стран, срок паспорта, расчёт дней и ограничение 90/180.",
+      "shortAnswer": "У некоторых гражданств безвизовый срок ограничен 30 днями за визит или за установленный период. Общий предел 90 дней из 180 не превращает национальный 30-дневный лимит в 90 дней.",
+      "bosphorasHelp": "Bosphoras помогает организовать ознакомительные поездки, подбор жилья и консультации независимых специалистов. Решения о статусе принимают компетентные органы.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Примеры гражданств",
+          "body": "МИД Турции публикует условия для обычных паспортов. Для служебных паспортов и нетуристических целей возможны другие правила. Применяются условия на дату поездки.",
+          "table": {
+            "headers": [
+              "Обычный паспорт",
+              "Опубликованный срок визита"
+            ],
+            "rows": [
+              [
+                "Азербайджан",
+                "До 90 дней; не категория 30 дней"
+              ],
+              [
+                "Монголия",
+                "30 дней"
+              ],
+              [
+                "Мальдивы",
+                "30 дней"
+              ],
+              [
+                "Индонезия",
+                "30 дней"
+              ],
+              [
+                "Таиланд",
+                "30 дней"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Почему 30 дней не равны 90",
+          "body": "Уточните максимальный срок по своему гражданству и период суммирования. Тридцатидневное освобождение не позволяет непрерывно жить 90 дней. Выезд и повторный въезд не гарантируют новый срок, а общий предел 90 дней из 180 продолжает действовать."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Пример по календарю",
+          "body": "Въезд 5 января считается первым днём, а 3 февраля — тридцатым при разрешённом сроке 30 дней. Планируйте выезд с запасом. Для повторных визитов храните точные даты и учитывайте правила конкретного паспорта, не рассматривая остаток общего лимита 90/180 как автоматическое продление."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Паспорт и документы",
+          "body": "По общему правилу дополнительных 60 дней для 30-дневного пребывания паспорт должен действовать не менее 90 дней с даты въезда, с учётом установленных исключений. Рекомендуется шесть месяцев. Подготовьте данные о жилье, средствах и обратной поездке."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Если нужно остаться дольше",
+          "body": "Не рассчитывайте на продление после короткого выезда. Для длительного непрерывного визита оформляйте подходящую консульскую визу заранее либо подавайте на законное основание ВНЖ до окончания разрешённого срока. e-Visa доступна только при подходящем гражданстве и цели."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли оставаться 90 дней при лимите 30?",
+          "answer": "Нет, действует национальный 30-дневный срок."
+        },
+        {
+          "question": "Считается ли день въезда?",
+          "answer": "Да, это первый день."
+        },
+        {
+          "question": "Обнуляет ли срок выезд на сутки?",
+          "answer": "Нет, повторный допуск и новый срок не гарантируются."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Визовые правила по гражданству"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Общие визовые правила Турции"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/",
+          "label": "Официальный портал e-Visa"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تركيا 30 يوماً دون تأشيرة في 2026: الدول وحساب المدة",
+      "metaDescription": "تعرف على الجوازات التي تسمح بثلاثين يوماً دون تأشيرة وحساب الأيام وصلاحية الجواز وحد 90 من 180 وخيارات البقاء.",
+      "shortAnswer": "تتيح بعض الجنسيات إعفاءً لمدة 30 يوماً لكل زيارة أو خلال فترة محددة. لا يحول الحد العام البالغ 90 يوماً من 180 الإعفاء الوطني لمدة 30 يوماً إلى 90 يوماً.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلات الاستكشافية واختيار السكن والمواعيد مع مختصين مستقلين، وتبقى قرارات الإقامة من اختصاص السلطات.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "أمثلة بحسب الجنسية",
+          "body": "تنشر الخارجية التركية قواعد الجوازات العادية. قد تختلف شروط الجوازات الرسمية والأغراض غير السياحية. تطبق القواعد السارية يوم السفر.",
+          "table": {
+            "headers": [
+              "الجواز العادي",
+              "المدة المنشورة"
+            ],
+            "rows": [
+              [
+                "أذربيجان",
+                "حتى 90 يوماً وليست ضمن فئة 30 يوماً"
+              ],
+              [
+                "منغوليا",
+                "30 يوماً"
+              ],
+              [
+                "المالديف",
+                "30 يوماً"
+              ],
+              [
+                "إندونيسيا",
+                "30 يوماً"
+              ],
+              [
+                "تايلاند",
+                "30 يوماً"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-2",
+          "title": "ثلاثون يوماً ليست تسعين",
+          "body": "تحقق من الحد الوطني المسموح وفترة الجمع. لا يسمح إعفاء 30 يوماً بالبقاء 90 يوماً متتالية. لا يضمن الخروج والعودة الحصول على مدة جديدة ويظل الحد العام 90 من 180 سارياً للزيارات القصيرة."
+        },
+        {
+          "id": "visa-type-3",
+          "title": "مثال على التقويم",
+          "body": "يعد الوصول في 5 يناير اليوم الأول ويوافق 3 فبراير اليوم الثلاثين إذا كانت المدة المسموحة 30 يوماً. اترك هامشاً قبل الموعد. للزيارات المتكررة احتفظ بالتواريخ الدقيقة واتبع قاعدة جوازك بدلاً من اعتبار رصيد 90/180 تمديداً تلقائياً."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "الجواز والوثائق",
+          "body": "وفق قاعدة الستين يوماً الإضافية يلزم عادة جواز صالح لمدة 90 يوماً على الأقل عند الوصول لزيارة من 30 يوماً، مع مراعاة الاستثناءات. يفضل توفر ستة أشهر. جهز إثبات السكن والموارد والعودة وتحقق من شروط وثيقتك."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "البقاء أكثر من ثلاثين يوماً",
+          "body": "لا تعتمد على الخروج إلى الحدود والعودة. للزيارة المتواصلة الأطول افحص التأشيرة القنصلية المناسبة قبل السفر أو أساس الإقامة المؤهل قبل انتهاء البقاء القانوني إذا كنت داخل تركيا. لا تتاح التأشيرة الإلكترونية إلا للجنسيات والأغراض المؤهلة."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يمكن البقاء 90 يوماً بإعفاء 30 يوماً؟",
+          "answer": "لا، يبقى الحد الخاص بالجنسية سارياً."
+        },
+        {
+          "question": "هل يحتسب يوم الدخول؟",
+          "answer": "نعم، هو اليوم الأول."
+        },
+        {
+          "question": "هل يعيد الخروج ليوم واحد احتساب الفترة؟",
+          "answer": "لا، لا يضمن قبول الدخول مجدداً أو مدة جديدة."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "الإعفاءات حسب الجنسية"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "القواعد العامة للتأشيرات التركية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامات"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "بوابة الإقامة الرسمية"
+        },
+        {
+          "href": "https://www.evisa.gov.tr/en/",
+          "label": "بوابة التأشيرة الإلكترونية الرسمية"
+        }
+      ]
+    }
+  },
+  "turkey-60-days-visa-free": {
+    "fr": {
+      "title": "Turquie sans visa 60 jours en 2026 : Russes et règle 90/180",
+      "metaDescription": "Séjour de 60 jours sans visa : règles pour le passeport russe, calcul 90 jours sur 180, exemples et solutions pour rester plus longtemps.",
+      "shortAnswer": "Les titulaires de passeports russes ordinaires peuvent généralement séjourner sans visa jusqu’à 60 jours par visite touristique ou commerciale, dans la limite cumulée de 90 jours sur 180. Il faut respecter les deux limites.",
+      "bosphorasHelp": "Bosphoras coordonne les séjours de découverte, la sélection de logements et les rendez-vous avec des professionnels indépendants. L’obtention du statut relève des autorités compétentes.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "Les 60 jours et le plafond de 90 jours",
+          "body": "La liste du ministère turc indique une exemption de 60 jours pour le passeport russe ordinaire. Elle ne s’applique pas à toutes les nationalités. Pour un passeport autorisant 90 jours, comme celui de nombreux pays européens ou du Kazakhstan, la limite par visite peut être différente. Les conditions spécifiques au document et au motif prévalent."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Trois situations concrètes",
+          "body": "Le temps passé hors de Turquie ne compte pas comme séjour, mais les jours précédents restent dans la fenêtre glissante de 180 jours tant qu’ils n’en sont pas sortis.",
+          "table": {
+            "headers": [
+              "Visites antérieures encore dans la fenêtre",
+              "Solde maximal avant autre restriction"
+            ],
+            "rows": [
+              [
+                "60 jours",
+                "30 jours"
+              ],
+              [
+                "45 + 45 jours",
+                "0 jour"
+              ],
+              [
+                "20 + 20 jours",
+                "50 jours"
+              ],
+              [
+                "Aucun jour",
+                "60 jours pour une seule visite russe"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Calculer une date de départ",
+          "body": "Pour une entrée le 1er mars, le 29 avril est le soixantième jour, en comptant l’arrivée. Ne réservez pas un départ le 30 avril si seuls 60 jours sont autorisés. Après une sortie, un nouveau passage dépend également du cumul et de l’admission par les autorités ; il n’existe pas de droit automatique à 60 jours supplémentaires."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Validité du document",
+          "body": "La règle générale impose 60 jours de validité supplémentaires au-delà de la durée autorisée. Pour une dispense de 60 jours, prévoyez au moins 120 jours de validité à l’arrivée, sauf exception officielle ; six mois sont recommandés. Le passeport intérieur russe ne remplace pas le document de voyage international."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Séjour continu et installation",
+          "body": "Pour rester 75 jours d’affilée, il faut examiner une autorisation adaptée plutôt que dépasser la dispense russe de 60 jours. Si vous êtes déjà légalement sur place et disposez d’un motif admissible, commencez une demande de résidence avant expiration. Un voyage commercial n’autorise pas l’emploi local."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Après 60 jours puis-je rester encore 30 sans sortir ?",
+          "answer": "Non, la limite de 60 jours par visite reste applicable."
+        },
+        {
+          "question": "Puis-je revenir une semaine après ?",
+          "answer": "Une admission est possible si toutes les conditions sont réunies et si le solde le permet, sans garantie."
+        },
+        {
+          "question": "Deux séjours de 60 jours sont-ils possibles dans la même fenêtre ?",
+          "answer": "Non, cela dépasserait le plafond de 90 jours sur 180."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Exemptions par nationalité"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Règles générales des visas turcs"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de résidence"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail officiel e-ikamet"
+        }
+      ]
+    },
+    "en": {
+      "title": "Turkey 60 days visa-free 2026: Russian passport & 90/180 rule",
+      "metaDescription": "Understand Turkey’s 60-day visa-free visit limit for Russian passports, cumulative 90/180 calculations, passport rules and longer residence options.",
+      "shortAnswer": "Ordinary Russian passport holders can generally visit Turkey visa-free for up to 60 days per tourist or business visit, within a cumulative 90 days in 180. Both limits must be respected.",
+      "bosphorasHelp": "Bosphoras coordinates exploratory stays, housing selection and appointments with independent specialists. Immigration decisions remain with the competent authorities.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "60 days per visit and 90 days overall",
+          "body": "Turkey's foreign ministry lists a 60-day visa exemption for ordinary Russian passports. It does not apply to every nationality. Passports with a 90-day allowance, such as those of many European countries and Kazakhstan, may follow a different per-visit rule. Passport-specific requirements and permitted travel purposes govern."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Three worked calculations",
+          "body": "Time abroad is excluded from physical presence, but earlier Turkish visits remain in the rolling 180-day window until their dates fall outside it.",
+          "table": {
+            "headers": [
+              "Previous days still in the window",
+              "Maximum remaining before other restrictions"
+            ],
+            "rows": [
+              [
+                "60 days",
+                "30 days"
+              ],
+              [
+                "45 + 45 days",
+                "0 days"
+              ],
+              [
+                "20 + 20 days",
+                "50 days"
+              ],
+              [
+                "None",
+                "60 days for a single Russian visit"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Calculate a departure date",
+          "body": "With entry on 1 March, 29 April is day 60, counting the arrival date. Do not book departure for 30 April if you have only 60 days. After leaving, readmission depends on your cumulative balance and border approval; another 60 days are not automatically granted."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Passport validity",
+          "body": "The general rule requires 60 additional days of validity beyond the authorised stay. For a full 60-day waiver, allow at least 120 days from arrival, subject to official exceptions; six months is recommended. A Russian domestic passport is not the usual international travel document."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Longer visits and relocation",
+          "body": "To remain for 75 consecutive days, assess an appropriate authorisation instead of exceeding the Russian 60-day exemption. If already lawfully present with an eligible residence purpose, apply before your stay expires. Business travel does not authorise local employment."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Can I stay another 30 days continuously after 60?",
+          "answer": "No, the per-visit 60-day maximum still applies."
+        },
+        {
+          "question": "Can I return a week later?",
+          "answer": "Only if all entry requirements and the remaining allowance permit it; admission is not guaranteed."
+        },
+        {
+          "question": "Can I make two 60-day trips in one window?",
+          "answer": "No, that would exceed 90 days within 180."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Visa rules by nationality"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "General Turkish visa rules"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Official e-ikamet portal"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Турция без визы на 60 дней в 2026 году: россияне и правило 90/180",
+      "metaDescription": "Как считать 60 дней за визит и 90 за 180 по российскому паспорту: примеры, срок паспорта и варианты длительного проживания.",
+      "shortAnswer": "По обычному российскому загранпаспорту туристические и коммерческие поездки обычно возможны без визы до 60 дней за визит при суммарном ограничении 90 дней за 180. Соблюдать нужно оба срока.",
+      "bosphorasHelp": "Bosphoras помогает организовать ознакомительные поездки, подбор жилья и консультации независимых специалистов. Решения о статусе принимают компетентные органы.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "60 дней за въезд и 90 суммарно",
+          "body": "МИД Турции указывает 60-дневный безвизовый срок для обычных российских загранпаспортов. Это не универсальное правило для всех стран. Для граждан многих европейских стран и Казахстана действует иной лимит — до 90 дней. Применяются условия конкретного паспорта и цели поездки."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "Примеры расчёта остатка",
+          "body": "Дни за пределами Турции не входят в фактическое пребывание, но прежние поездки учитываются, пока остаются внутри скользящего 180-дневного периода.",
+          "table": {
+            "headers": [
+              "Прежние дни внутри окна",
+              "Максимальный остаток до иных ограничений"
+            ],
+            "rows": [
+              [
+                "60 дней",
+                "30 дней"
+              ],
+              [
+                "45 + 45 дней",
+                "0 дней"
+              ],
+              [
+                "20 + 20 дней",
+                "50 дней"
+              ],
+              [
+                "Нет предыдущих дней",
+                "60 дней за один российский визит"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "Дата окончания визита",
+          "body": "При въезде 1 марта шестидесятый день наступает 29 апреля, включая день въезда. Не планируйте вылет на 30 апреля, если разрешены только 60 дней. При повторном въезде проверяются остаток общего лимита и условия допуска. Новые 60 дней не предоставляются автоматически."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "Действие загранпаспорта",
+          "body": "По общему правилу паспорт должен действовать на 60 дней дольше разрешённого пребывания. Для полного 60-дневного срока нужно предусмотреть не менее 120 дней с даты въезда, если нет установленного исключения. Рекомендуется запас в шесть месяцев. Внутренний паспорт РФ не заменяет загранпаспорт."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "Длительное пребывание",
+          "body": "Для непрерывного пребывания 75 дней нужно заранее рассмотреть подходящее разрешение, а не превышать 60-дневный срок. При законном пребывании и наличии основания подайте на ВНЖ до истечения разрешённого срока. Деловая поездка не даёт права на трудоустройство в Турции."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Можно ли после 60 дней остаться ещё на 30 без выезда?",
+          "answer": "Нет, действует ограничение 60 дней за визит."
+        },
+        {
+          "question": "Можно ли вернуться через неделю?",
+          "answer": "При наличии остатка и соблюдении условий возможен въезд, но он не гарантирован."
+        },
+        {
+          "question": "Можно ли дважды приехать на 60 дней за 180?",
+          "answer": "Нет, это превышает суммарный лимит 90 дней."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "Визовые правила по гражданству"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "Общие визовые правила Турции"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Виды ВНЖ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Официальный портал e-ikamet"
+        }
+      ]
+    },
+    "ar": {
+      "title": "تركيا 60 يوماً دون تأشيرة 2026: الجواز الروسي وقاعدة 90/180",
+      "metaDescription": "دليل الإعفاء لمدة 60 يوماً للجواز الروسي وحساب 90 من 180 وصلاحية الجواز وخيارات الإقامة الأطول.",
+      "shortAnswer": "يمكن لحامل الجواز الروسي العادي عادة زيارة تركيا للسياحة والأعمال دون تأشيرة حتى 60 يوماً لكل زيارة، وبمجموع لا يتجاوز 90 يوماً خلال 180 يوماً. يجب احترام الحدين معاً.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلات الاستكشافية واختيار السكن والمواعيد مع مختصين مستقلين، وتبقى قرارات الإقامة من اختصاص السلطات.",
+      "sections": [
+        {
+          "id": "visa-type-1",
+          "title": "ستون يوماً لكل زيارة وتسعون بالمجموع",
+          "body": "تذكر الخارجية التركية إعفاء الجواز الروسي العادي لمدة 60 يوماً. لا تشمل هذه القاعدة جميع الجنسيات؛ قد تسري مدة مختلفة على جوازات أوروبية كثيرة وجواز كازاخستان ذات حد 90 يوماً. تطبق الشروط الخاصة بالوثيقة والغرض."
+        },
+        {
+          "id": "visa-type-2",
+          "title": "أمثلة لحساب الرصيد",
+          "body": "لا تحتسب أيام الوجود خارج تركيا ضمن البقاء الفعلي، لكن تظل الزيارات السابقة محسوبة ما دامت داخل نافذة 180 يوماً المتحركة.",
+          "table": {
+            "headers": [
+              "الأيام السابقة داخل النافذة",
+              "الحد المتبقي قبل القيود الأخرى"
+            ],
+            "rows": [
+              [
+                "60 يوماً",
+                "30 يوماً"
+              ],
+              [
+                "45 + 45 يوماً",
+                "صفر"
+              ],
+              [
+                "20 + 20 يوماً",
+                "50 يوماً"
+              ],
+              [
+                "لا أيام سابقة",
+                "60 يوماً للزيارة الروسية الواحدة"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "visa-type-3",
+          "title": "حساب يوم المغادرة",
+          "body": "إذا وصلت في 1 مارس، يوافق اليوم الستون 29 أبريل مع احتساب يوم الدخول. لا تحجز المغادرة في 30 أبريل إذا كانت المدة المسموحة 60 يوماً فقط. بعد الخروج تتوقف العودة على الرصيد المتبقي وقرار الدخول؛ لا تمنح 60 يوماً جديدة تلقائياً."
+        },
+        {
+          "id": "visa-type-4",
+          "title": "صلاحية الجواز",
+          "body": "تشترط القاعدة العامة أن تتجاوز صلاحية الجواز مدة البقاء المسموحة بستين يوماً. لزيارة كاملة من 60 يوماً وفر صلاحية 120 يوماً على الأقل من الوصول مع مراعاة الاستثناءات؛ يفضل ستة أشهر. لا يحل الجواز الداخلي الروسي محل وثيقة السفر الدولية."
+        },
+        {
+          "id": "visa-type-5",
+          "title": "الإقامة المتصلة لمدة أطول",
+          "body": "للبقاء 75 يوماً متتالية ابحث عن إذن مناسب بدلاً من تجاوز الإعفاء البالغ 60 يوماً. إذا كنت داخل تركيا قانونياً ولديك غرض مؤهل، قدم طلب الإقامة قبل انتهاء المدة. لا تمنح زيارة الأعمال حق التوظيف المحلي."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يمكن البقاء 30 يوماً إضافية دون خروج بعد 60 يوماً؟",
+          "answer": "لا، يبقى حد 60 يوماً لكل زيارة سارياً."
+        },
+        {
+          "question": "هل يمكن العودة بعد أسبوع؟",
+          "answer": "إذا سمح الرصيد واستوفيت شروط الدخول، دون ضمان قبول العودة."
+        },
+        {
+          "question": "هل يمكن زيارتان من 60 يوماً خلال 180 يوماً؟",
+          "answer": "لا، يتجاوز ذلك الحد الإجمالي البالغ 90 يوماً."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa",
+          "label": "الإعفاءات حسب الجنسية"
+        },
+        {
+          "href": "https://www.mfa.gov.tr/general-information-about-turkish-visas.en.mfa",
+          "label": "القواعد العامة للتأشيرات التركية"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "أنواع الإقامات"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "بوابة الإقامة الرسمية"
+        }
+      ]
+    }
   }
 };
