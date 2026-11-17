@@ -127,8 +127,8 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
       { label: locale === 'fr' ? 'Projets' : locale === 'en' ? 'Projects' : locale === 'ru' ? 'Проекты' : 'المشاريع', href: locale === 'fr' ? '/investissement/projets' : '/'+locale+'/investment/projects' },
       { label: locale === 'fr' ? 'Investisseurs' : locale === 'en' ? 'Investors' : locale === 'ru' ? 'Инвесторам' : 'للمستثمرين', href: locale === 'fr' ? '/investissement/investisseurs' : '/'+locale+'/investment/investors' },
       { label: locale === 'fr' ? 'Entreprises' : locale === 'en' ? 'Companies' : locale === 'ru' ? 'Предприятия' : 'الشركات', href: locale === 'fr' ? '/investissement/entrepreneurs' : '/'+locale+'/investment/entrepreneurs' },
-      { label: locale === 'fr' ? 'Accès investisseur' : locale === 'en' ? 'Investor login' : locale === 'ru' ? 'Доступ инвестора (EN)' : 'دخول المستثمر (EN)', href: locale === 'fr' ? '/investissement/acces/investisseur' : '/en/investment/access/investor' },
-      { label: locale === 'fr' ? 'Accès entrepreneur' : locale === 'en' ? 'Entrepreneur login' : locale === 'ru' ? 'Доступ предпринимателя (EN)' : 'دخول رائد الأعمال (EN)', href: locale === 'fr' ? '/investissement/acces/entrepreneur' : '/en/investment/access/entrepreneur' },
+      { label: locale === 'fr' ? 'Accès investisseur' : locale === 'en' ? 'Investor login' : locale === 'ru' ? 'Вход для инвестора' : 'دخول المستثمر', href: locale === 'fr' ? '/investissement/acces/investisseur' : '/'+locale+'/investment/access/investor' },
+      { label: locale === 'fr' ? 'Accès entrepreneur' : locale === 'en' ? 'Entrepreneur login' : locale === 'ru' ? 'Вход для предпринимателя' : 'دخول رائد الأعمال', href: locale === 'fr' ? '/investissement/acces/entrepreneur' : '/'+locale+'/investment/access/entrepreneur' },
     ]},
     { label: labels.privateAccess, href: linkTo('private-club'), items: [
       { label: locale === 'fr' ? 'Cercle prive' : locale === 'en' ? 'Private Access Club' : locale === 'ru' ? 'Частный клуб' : 'النادي الخاص', href: linkTo('private-club') },
