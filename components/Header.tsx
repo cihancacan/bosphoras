@@ -154,7 +154,7 @@ export function Header({ locale, currentPath = '/', localizedPaths }: HeaderProp
 
   return (
     <>
-      <header className="fixed left-0 right-0 top-0 z-50 border-b border-[#e7e8e7] bg-white shadow-[0_2px_12px_rgba(25,51,68,0.04)]">
+      <header lang={locale} className="fixed left-0 right-0 top-0 z-50 border-b border-[#e7e8e7] bg-white shadow-[0_2px_12px_rgba(25,51,68,0.04)]">
         <div className="hidden" aria-hidden="true" />
         <div className="container-editorial flex h-[4.65rem] items-center justify-between gap-4 md:h-[4.85rem]">
           <Link href={getLocalePath(locale, '/')} className="group flex shrink-0 flex-col leading-none" aria-label={locale==='fr'?'Bosphoras — Accueil':locale==='en'?'Bosphoras — Home':locale==='ru'?'Bosphoras — Главная':'بوسفوراس — الرئيسية'}><span style={{ fontFamily: "var(--font-bosphoras-logo), sans-serif" }} className="text-[1.125rem] font-normal uppercase tracking-[0.18em] text-[#193344] transition-colors duration-200 group-hover:text-[#202629] sm:text-[1.3rem]">Bosphoras</span><span className="hidden">{locale === 'fr' && 'Bureau Prive · Turquie'}{locale === 'en' && 'Private Office · Turkey'}{locale === 'ru' && 'Частный Офис · Турция'}{locale === 'ar' && 'مكتب خاص · تركيا'}</span></Link>

@@ -48,5 +48,5 @@ for(const [id,spec] of Object.entries(charts)) {
   else chartEditions++;
  }
 }
-console.log('[guide-audit]',JSON.stringify({registrySubjects:allBosphorasSeoPages.length,editorialSubjects:new Set(editorial.map(g=>g.id)).size,editorialEditions:editorial.length,chartEditions,missingEditorialKeys:missing,errors,observations},null,2));
+console.log('[guide-audit]',JSON.stringify({registrySubjects:allBosphorasSeoPages.length,editorialSubjects:new Set(editorial.map(g=>g.id)).size,editorialEditions:editorial.length,chartEditions,missingEditorialKeys:missing,errors,observations}));
 if(process.argv.includes('--strict')&&errors.length) process.exitCode=1;

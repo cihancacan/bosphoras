@@ -204,6 +204,7 @@ for (const page of editorialVisaPages) {
     highPotentialGuides.push({
       id: page.key, locale, slug: visaSlug(page.slugs[locale]),
       ...copy, h1: copy.title, subtitle: copy.metaDescription,
+      ...(page.key === 'turkey-residence-foreign-owner' && locale === 'fr' ? { metaDescription: 'Propriétaire étranger en Turquie : conditions du titre de séjour, seuil de 200 000 USD, adresse, justificatifs et renouvellement.' } : {}),
       ...(page.key === 'turkey-long-term-residence' ? { sections: [...(copy.sections ?? []), { id: 'long-term-calculation-and-absence-2026', ...longTermResidenceSupplement[locale] }] } : {}),
       theme: 'relocation', cityFocus: '', serviceFocus: copy.title,
       updatedAt: editorialGuideUpdatedAt, publishedAt: '2026-06-05', legalCaution: cautions[locale].relocation,
@@ -244,6 +245,13 @@ export function getEquivalentHighPotentialSlug(currentPath: string, targetLocale
 
 // Static SEO routes generated at build time must use the same editorial content and canonical URL.
 const editorialSeoKeyMap: Record<string, string> = {
+  'tax-residence-foreign-income': 'tax-residency',
+  'non-dom-turkey': 'tax-exemption-20-years',
+  'french-expat-tax': 'fiscal-expatriation-france-turkey',
+  'settle-istanbul-foreigner': 'moving-istanbul',
+  'turkey-worldwide-income-foreigners': 'tax-residency',
+  'travel-turkey-national-id': 'turkey-id-card-entry',
+  'turkey-passport-or-id-card': 'travel-turkey-without-passport',
   'twenty-year-exemption-foreigners': 'tax-exemption-20-years',
   'settle-in-turkey': 'relocate-turkey-cities',
   'settle-bodrum-families-investors': 'moving-bodrum',

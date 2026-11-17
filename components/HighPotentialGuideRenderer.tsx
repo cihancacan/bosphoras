@@ -73,7 +73,7 @@ export function HighPotentialGuideRenderer({ guide }: { guide: HighPotentialGuid
   const breadcrumbJsonLd = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Bosphoras', item: getCanonicalUrl(guide.locale, '/') }, { '@type': 'ListItem', position: 2, name: guide.h1, item: canonical }] };
 
   return (
-    <main className="bg-[#f8f1e7] text-[#101827]" dir={localeDir[guide.locale]}>
+    <main className="bg-[#f8f1e7] text-[#101827]" lang={guide.locale} dir={localeDir[guide.locale]} data-preserve-editorial>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />

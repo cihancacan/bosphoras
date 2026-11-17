@@ -101,7 +101,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 [/6,000 USD/g, pricing.privateDesk]
               ];
 
+              function isEditorialText(node) {
+                var parent = node.parentElement;
+                return !!(parent && parent.closest('[data-preserve-editorial], [data-travel-content], article')) || /(^|\\/)travel(\\/|$)/.test(location.pathname);
+              }
+
               function replaceTextNode(node) {
+                if (isEditorialText(node)) return;
                 var value = node.nodeValue;
                 if (!value || !/(10\s*000|10,000|1\s*000|1,000|6\s*000|6,000) USD/.test(value)) return;
                 replacements.forEach(function(pair) {
@@ -113,6 +119,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               function walk(root) {
                 var walker = document.createTreeWalker(root || document.body, NodeFilter.SHOW_TEXT, {
                   acceptNode: function(node) {
+                    if (isEditorialText(node)) return NodeFilter.FILTER_REJECT;
                     if (!node.nodeValue || !/(10\s*000|10,000|1\s*000|1,000|6\s*000|6,000) USD/.test(node.nodeValue)) {
                       return NodeFilter.FILTER_REJECT;
                     }

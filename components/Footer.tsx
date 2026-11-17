@@ -61,7 +61,7 @@ export function Footer({ locale }: FooterProps) {
   const membershipLabel = locale === 'fr' ? 'Demande d’adhésion' : locale === 'en' ? 'Membership application' : locale === 'ru' ? 'Заявка на членство' : 'طلب عضوية';
 
   return (
-    <footer className="border-t border-[#e1e5e5] bg-[#f5f5f3] text-[#202629]" dir={localeDir[locale]} aria-label="Pied de page">
+    <footer className="border-t border-[#e1e5e5] bg-[#f5f5f3] text-[#202629]" lang={locale} dir={localeDir[locale]} aria-label={{fr:"Pied de page",en:"Footer",ru:"Нижняя часть страницы",ar:"تذييل الصفحة"}[locale]}>
       <div className="hidden" aria-hidden="true" />
       <div className="container-editorial py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
