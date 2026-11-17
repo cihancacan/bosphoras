@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { GuideDataChart } from '@/components/GuideDataChart';
 import { ArrowRight, AlertTriangle, CheckCircle2, Clock, ShieldCheck } from 'lucide-react';
 import type { HighPotentialGuide } from '@/data/highPotentialPages';
 import { localeDir } from '@/lib/i18n';
@@ -109,6 +110,7 @@ export function HighPotentialGuideRenderer({ guide }: { guide: HighPotentialGuid
                 <h2 className="font-serif text-3xl tracking-[-0.03em] text-[#121826] md:text-4xl">{section.title}</h2>
                 {section.body.split("\n\n").map((paragraph, index) => <p key={index} className="mt-5 text-base leading-8 text-[#3e4857]">{paragraph}</p>)}
                 {section.table && <div className="mt-6 overflow-x-auto"><table className="w-full border-collapse text-sm leading-6 text-[#3e4857]"><thead><tr>{section.table.headers.map((heading) => <th key={heading} scope="col" className="border-b border-[#8a6728] px-3 py-3 text-start font-semibold text-[#121826]">{heading}</th>)}</tr></thead><tbody>{section.table.rows.map((cells, index) => <tr key={index} className="border-b border-[#d8c7a1]">{cells.map((cell, cellIndex) => cellIndex === 0 ? <th key={cellIndex} scope="row" className="px-3 py-3 text-start font-medium text-[#121826]">{cell}</th> : <td key={cellIndex} className="px-3 py-3">{cell}</td>)}</tr>)}</tbody></table></div>}
+                <GuideDataChart guideId={guide.id} section={section} locale={guide.locale} />
                 {section.bullets && <ul className="mt-6 grid gap-3 md:grid-cols-2">{section.bullets.map((bullet) => <li key={bullet} className="flex gap-3 text-sm leading-6 text-[#3e4857]"><CheckCircle2 className="mt-1 h-4 w-4 flex-none text-[#8a6728]" />{bullet}</li>)}</ul>}
               </section>
             ))}

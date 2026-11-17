@@ -3323,6 +3323,1664 @@ export const taxReformEditorialGuides: Record<string, Record<Locale, EditorialGu
         }
       ]
     }
+  },
+  "rental-income-abroad-turkey": {
+    "fr": {
+      "title": "Revenus locatifs étrangers en Turquie 2026 : impôts et exonération",
+      "metaDescription": "Loyers de France ou d’autres pays : exonération turque sur 20 ans, impôts du pays du bien, location nue ou meublée et exemple net.",
+      "shortAnswer": "Les loyers d’un immeuble situé à l’étranger peuvent être exonérés d’impôt turc si le propriétaire personne physique remplit l’article 20/D et obtient son certificat à temps. Le pays du bien conserve ses propres droits d’imposition.",
+      "bosphorasHelp": "Bosphoras coordonne votre installation et une mise en relation avec des spécialistes indépendants de la fiscalité internationale. Préparez votre inventaire de revenus et demandez une étude avant le transfert de résidence.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "Immeuble étranger ou immeuble turc",
+          "body": "Le guide GİB de septembre 2026 distingue explicitement les loyers étrangers des loyers turcs. La localisation du bien compte davantage que le compte bancaire. Les revenus immobiliers français d’un non-résident restent imposables en France : location nue en revenus fonciers, meublée en BIC selon les règles applicables. Les prélèvements sociaux sur la location nue sont généralement de 17,2 % sauf exception."
+        },
+        {
+          "id": "income-2",
+          "title": "Exemple de trésorerie locative annuelle",
+          "body": "Hypothèse : logement étranger, 24 000 € de loyers encaissés, 4 000 € de dépenses réelles et 3 000 € d’impôts étrangers supposés. L’exonération turque est intégrale pour ce flux admissible ; le net économique est de 17 000 €. Les 3 000 € sont une hypothèse, pas un calcul d’impôt français.",
+          "table": {
+            "headers": [
+              "Flux",
+              "Montant"
+            ],
+            "rows": [
+              [
+                "Loyers bruts",
+                "24 000 €"
+              ],
+              [
+                "Charges réelles",
+                "4 000 €"
+              ],
+              [
+                "Impôt étranger supposé",
+                "3 000 €"
+              ],
+              [
+                "Net économique",
+                "17 000 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "Location nue, meublée et sociétés",
+          "body": "En France, comparez le régime micro applicable et le régime réel en fonction des conditions de l'année. Pour un bien détenu par une SCI ou une société étrangère, identifiez d’abord la nature du revenu personnel : loyer, quote-part de bénéfice ou dividende. Les coûts du crédit et les flux de trésorerie ne se confondent pas avec les charges fiscales déductibles."
+        },
+        {
+          "id": "income-4",
+          "title": "Préparer les justificatifs",
+          "body": "Conservez acte de propriété, contrats, relevés, factures, déclarations du pays du bien, avis d’imposition et taux de conversion documentés. Séparez revenus étrangers exonérés et revenus turcs déclarables : les charges et crédits étrangers liés aux revenus exonérés ne peuvent réduire l’impôt turc sur les autres revenus."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Le loyer français est-il imposé en France ?",
+          "answer": "Oui, selon les règles françaises et la convention."
+        },
+        {
+          "question": "La Turquie rembourse-t-elle cet impôt ?",
+          "answer": "Non sous l’article 20/D."
+        },
+        {
+          "question": "Louer mon bien turc à un étranger suffit-il ?",
+          "answer": "Non, le bien se trouve en Turquie."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "Guide fiscal turc 20/D, septembre 2026"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/je-suis-non-resident-je-percois-des-revenus-immobiliers-sagit-i",
+          "label": "DGFiP : location immobilière"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "Barème officiel 2026, article 103"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC : détermination du revenu"
+        }
+      ]
+    },
+    "en": {
+      "title": "Foreign rental income in Turkey 2026: tax exemption and net rent",
+      "metaDescription": "Overseas property rent: 20-year Turkish relief, property-country tax, furnished versus unfurnished letting and a worked net-income example.",
+      "shortAnswer": "Rent from property outside Turkey may qualify for Article 20/D relief for individuals with a timely exemption certificate. The country where the property is located retains its own taxing rights.",
+      "bosphorasHelp": "Bosphoras coordinates relocation and introductions to independent international tax specialists. Prepare your income inventory and request an assessment before transferring residence.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "Foreign versus Turkish property",
+          "body": "The September 2026 GİB guide explicitly separates overseas and Turkish rent. The property's location matters more than the receiving account. French rental income of non-residents remains taxable in France: unfurnished rent as property income and furnished rent under business-income rules. French social levies on unfurnished rentals are generally 17.2%, subject to exceptions."
+        },
+        {
+          "id": "income-2",
+          "title": "Annual cash-flow example",
+          "body": "Assume an overseas property earns €24,000 gross rent, incurs €4,000 actual expenses and pays hypothetical foreign tax of €3,000. If the entire stream qualifies for Turkish relief, economic net income is €17,000. The €3,000 is an assumption, not a French tax calculation.",
+          "table": {
+            "headers": [
+              "Cash flow",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Gross rent",
+                "€24,000"
+              ],
+              [
+                "Actual expenses",
+                "€4,000"
+              ],
+              [
+                "Assumed foreign tax",
+                "€3,000"
+              ],
+              [
+                "Economic net",
+                "€17,000"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "Furnished rentals and companies",
+          "body": "For French property, compare the applicable simplified and actual-expense regimes. Where an SCI or other company holds the property, first classify the individual's receipt as rent, profit share or dividend. Loan repayments and cash flow do not necessarily equal deductible tax expenses."
+        },
+        {
+          "id": "income-4",
+          "title": "Keep evidence",
+          "body": "Retain title deeds, leases, bank statements, invoices, foreign tax returns and assessments and documented exchange rates. Separate exempt foreign income from reportable Turkish income. Costs and foreign tax credits relating to exempt streams cannot offset other Turkish taxable income."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is French rent still taxed in France?",
+          "answer": "Yes, subject to French rules and the treaty."
+        },
+        {
+          "question": "Does Turkey refund that tax?",
+          "answer": "No under Article 20/D."
+        },
+        {
+          "question": "Does renting Turkish property to a foreign tenant qualify?",
+          "answer": "No; the property is in Turkey."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "September 2026 Turkish Article 20/D guide"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/je-suis-non-resident-je-percois-des-revenus-immobiliers-sagit-i",
+          "label": "French tax authority: property rent"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "Official 2026 Article 103 tariff"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC: income determination"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Зарубежная аренда в Турции 2026: налоги, освобождение и чистый доход",
+      "metaDescription": "Доход от недвижимости за рубежом: льгота на 20 лет, налог страны объекта, меблированная аренда и пример чистого дохода.",
+      "shortAnswer": "Аренда недвижимости за пределами Турции может подпадать под статью 20/D для физического лица с своевременно полученным сертификатом. Страна объекта сохраняет налоговые права.",
+      "bosphorasHelp": "Bosphoras организует переезд и встречи с независимыми специалистами по международным налогам. Подготовьте перечень доходов и запросите оценку до смены резидентства.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "Зарубежная и турецкая недвижимость",
+          "body": "Руководство GİB за сентябрь 2026 года разделяет зарубежную и турецкую аренду. Важен адрес объекта, а не счёта. Аренда французского жилья нерезидента облагается во Франции: немеблированная как доход от недвижимости, меблированная по правилам коммерческого дохода. Социальные сборы на немеблированную аренду обычно 17,2%, если нет исключения."
+        },
+        {
+          "id": "income-2",
+          "title": "Пример годового денежного потока",
+          "body": "Предположим, зарубежное жильё приносит 24 000 евро, фактические расходы составляют 4 000 евро, условный иностранный налог — 3 000 евро. При полном освобождении в Турции экономический остаток равен 17 000 евро. Налог 3 000 евро является допущением, а не расчётом французского налога.",
+          "table": {
+            "headers": [
+              "Поток",
+              "Сумма"
+            ],
+            "rows": [
+              [
+                "Валовая аренда",
+                "24 000 €"
+              ],
+              [
+                "Расходы",
+                "4 000 €"
+              ],
+              [
+                "Условный иностранный налог",
+                "3 000 €"
+              ],
+              [
+                "Чистый денежный поток",
+                "17 000 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "Меблированная аренда и компании",
+          "body": "Для объекта во Франции сравните применимые упрощённый режим и учёт фактических расходов. При владении через SCI или иную компанию определите вид личного дохода: аренда, доля прибыли или дивиденды. Погашение кредита и денежные расходы не всегда равны налоговым вычетам."
+        },
+        {
+          "id": "income-4",
+          "title": "Документы",
+          "body": "Храните документы на объект, договоры, выписки, счета, иностранные декларации, начисления и подтверждения курсов валют. Отделяйте освобождённый зарубежный доход от облагаемого турецкого; связанные с ним расходы и иностранный налог не уменьшают другие турецкие доходы."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Облагается ли французская аренда во Франции?",
+          "answer": "Да, по местным правилам и соглашению."
+        },
+        {
+          "question": "Возвращает ли Турция этот налог?",
+          "answer": "Нет по статье 20/D."
+        },
+        {
+          "question": "Достаточно ли иностранного арендатора турецкого жилья?",
+          "answer": "Нет, объект находится в Турции."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "Руководство GİB по статье 20/D за сентябрь 2026 года"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/je-suis-non-resident-je-percois-des-revenus-immobiliers-sagit-i",
+          "label": "Налоговая служба Франции: аренда"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "Официальная шкала 2026, статья 103"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC: определение дохода"
+        }
+      ]
+    },
+    "ar": {
+      "title": "دخل الإيجار الأجنبي في تركيا 2026: الضرائب والإعفاء وصافي العائد",
+      "metaDescription": "إيجار العقارات خارج تركيا وإعفاء 20 عاماً وضريبة بلد العقار والإيجار المفروش وغير المفروش ومثال رقمي.",
+      "shortAnswer": "قد يستفيد إيجار عقار خارج تركيا من المادة 20/D للأفراد الحاصلين على شهادة الإعفاء في الموعد. تحتفظ دولة موقع العقار بحقوقها الضريبية.",
+      "bosphorasHelp": "تنسق Bosphoras الانتقال والتواصل مع متخصصين مستقلين في الضرائب الدولية. جهز قائمة دخلك واطلب دراسة قبل نقل الإقامة.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "العقار الأجنبي والتركي",
+          "body": "يميز دليل الإدارة الضريبية لسبتمبر 2026 بين الإيجار الأجنبي والتركي. يهم موقع العقار أكثر من الحساب المصرفي. يبقى إيجار العقار الفرنسي لغير المقيم خاضعاً في فرنسا؛ غير المفروش دخل عقاري والمفروش يخضع لقواعد الدخل التجاري. تبلغ الرسوم الاجتماعية على غير المفروش عادة 17.2% مع الاستثناءات."
+        },
+        {
+          "id": "income-2",
+          "title": "مثال للتدفق النقدي السنوي",
+          "body": "نفترض إيجارات أجنبية إجمالية 24 ألف يورو ومصاريف فعلية 4 آلاف وضريبة أجنبية افتراضية 3 آلاف. مع الإعفاء التركي الكامل للدخل المؤهل يبقى 17 ألف يورو. مبلغ الضريبة افتراض وليس حساباً للضريبة الفرنسية.",
+          "table": {
+            "headers": [
+              "التدفق",
+              "المبلغ"
+            ],
+            "rows": [
+              [
+                "الإيجار الإجمالي",
+                "24,000 يورو"
+              ],
+              [
+                "المصاريف",
+                "4,000 يورو"
+              ],
+              [
+                "الضريبة الأجنبية المفترضة",
+                "3,000 يورو"
+              ],
+              [
+                "الصافي الاقتصادي",
+                "17,000 يورو"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "الإيجار المفروش والشركات",
+          "body": "قارن النظام المبسط ونظام المصاريف الفعلية المناسب للعقار الفرنسي. إذا تملكته شركة SCI أو شركة أخرى فحدد نوع الدخل الشخصي: إيجار أو حصة أرباح أو توزيعات. لا تساوي أقساط القرض وتدفقات النقد دائماً الخصومات الضريبية."
+        },
+        {
+          "id": "income-4",
+          "title": "وثائق الإثبات",
+          "body": "احتفظ بسندات الملكية والعقود والكشوف والفواتير والإقرارات والضرائب الأجنبية وأسعار الصرف الموثقة. افصل الدخل الأجنبي المعفى عن التركي الخاضع. لا تخفض مصاريف الدخل المعفى وائتماناته الضريبية ضريبة الدخل التركي الآخر."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يبقى الإيجار الفرنسي خاضعاً في فرنسا؟",
+          "answer": "نعم وفق القواعد الفرنسية والاتفاقية."
+        },
+        {
+          "question": "هل تعيد تركيا هذه الضريبة؟",
+          "answer": "لا بموجب المادة 20/D."
+        },
+        {
+          "question": "هل يكفي تأجير العقار التركي لأجنبي؟",
+          "answer": "لا، العقار موجود في تركيا."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "الدليل التركي للمادة 20/D سبتمبر 2026"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/je-suis-non-resident-je-percois-des-revenus-immobiliers-sagit-i",
+          "label": "إدارة الضرائب الفرنسية: إيجار العقار"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "الشرائح الرسمية لعام 2026 المادة 103"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC: تحديد الدخل"
+        }
+      ]
+    }
+  },
+  "foreign-bank-interest-turkey": {
+    "fr": {
+      "title": "Intérêts bancaires étrangers en Turquie 2026 : fiscalité et épargne",
+      "metaDescription": "Comptes étrangers, dépôts à terme, intérêts et résidence turque : exonération 20 ans, retenues étrangères et simulations de rendement.",
+      "shortAnswer": "Les intérêts d’un placement étranger peuvent relever de l’article 20/D si leur source et le statut du bénéficiaire sont admissibles. Le capital du compte et son rendement sont distincts.",
+      "bosphorasHelp": "Bosphoras coordonne votre installation et une mise en relation avec des spécialistes indépendants de la fiscalité internationale. Préparez votre inventaire de revenus et demandez une étude avant le transfert de résidence.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "Identifier le produit et le pays de source",
+          "body": "Un dépôt à terme, un coupon obligataire, un fonds monétaire et un compte courant ne relèvent pas nécessairement de la même catégorie juridique. En France, la DGFiP indique qu’en principe les intérêts ordinaires des comptes de non-résidents ne subissent pas de prélèvement obligatoire sauf ETNC ; les rachats d’assurance-vie suivent d’autres règles."
+        },
+        {
+          "id": "income-2",
+          "title": "Intérêts bruts selon le rendement",
+          "body": "Exemple d’un capital constant de 100 000 € placé un an. Les taux sont purement hypothétiques, sans capitalisation, frais, change ou impôt de source. Une exonération turque ne garantit ni ces rendements ni la sécurité du principal.",
+          "table": {
+            "headers": [
+              "Taux annuel hypothétique",
+              "Intérêt brut"
+            ],
+            "rows": [
+              [
+                "2 %",
+                "2 000 €"
+              ],
+              [
+                "4 %",
+                "4 000 €"
+              ],
+              [
+                "6 %",
+                "6 000 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "Résidence fiscale et échanges bancaires",
+          "body": "Communiquez votre résidence et identifiant fiscal réel à la banque. L’échange automatique d’informations CRS peut transmettre solde et revenus selon les juridictions participantes et le produit. L’exonération n’est pas un droit au secret fiscal. Un dépôt en livres turques auprès d’une banque en Turquie relève en principe des règles locales, même s’il est libellé en devises."
+        },
+        {
+          "id": "income-4",
+          "title": "Suivre le rendement net et les justificatifs",
+          "body": "Conservez contrat du dépôt, relevés d’intérêts, dates de crédit, retenues et conversion. Pour chaque placement, calculez rendement après frais, impôt du pays de source et inflation dans la devise de dépense. N’imputez pas une retenue étrangère liée au revenu exonéré sur un revenu turc imposable."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Le capital du compte est-il un revenu ?",
+          "answer": "Non ; distinguez principal, intérêts et gains."
+        },
+        {
+          "question": "Le CRS annule-t-il l’exonération ?",
+          "answer": "Non, il concerne la transparence des comptes."
+        },
+        {
+          "question": "Un compte en euros à Istanbul est-il étranger ?",
+          "answer": "Non, la devise ne suffit pas."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "Guide fiscal turc 20/D, septembre 2026"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/mes-revenus-de-capitaux-mobiliers-sont-ils-passibles-des",
+          "label": "DGFiP : capitaux mobiliers non-résidents"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "Barème officiel 2026, article 103"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC : détermination du revenu"
+        }
+      ]
+    },
+    "en": {
+      "title": "Foreign bank interest in Turkey 2026: tax relief and savings returns",
+      "metaDescription": "Overseas bank deposits and interest: 20-year relief, source withholding, reporting and worked annual yield scenarios.",
+      "shortAnswer": "Foreign deposit interest may qualify under Article 20/D if its source and the recipient's status are eligible. Account principal and investment return are distinct.",
+      "bosphorasHelp": "Bosphoras coordinates relocation and introductions to independent international tax specialists. Prepare your income inventory and request an assessment before transferring residence.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "Identify product and source country",
+          "body": "Term deposits, bond coupons, money market funds and current accounts may have different legal classifications. France's tax authority generally imposes no compulsory withholding on ordinary bank interest of non-residents unless paid to a non-cooperative jurisdiction; insurance withdrawals follow separate rules."
+        },
+        {
+          "id": "income-2",
+          "title": "Annual gross interest scenarios",
+          "body": "Assume a constant €100,000 principal for one year. Rates are hypothetical, before compounding, fees, FX and source tax. Turkish relief guarantees neither these returns nor principal safety.",
+          "table": {
+            "headers": [
+              "Hypothetical annual rate",
+              "Gross interest"
+            ],
+            "rows": [
+              [
+                "2%",
+                "€2,000"
+              ],
+              [
+                "4%",
+                "€4,000"
+              ],
+              [
+                "6%",
+                "€6,000"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "Residence and bank reporting",
+          "body": "Provide your bank with actual tax residence and identification number. CRS automatic information exchange may transmit balances and income depending on jurisdictions and products. Relief is not bank secrecy. Deposits at a bank in Turkey generally follow domestic rules even when denominated in foreign currency."
+        },
+        {
+          "id": "income-4",
+          "title": "Track net returns and evidence",
+          "body": "Keep deposit contracts, interest statements, credit dates, withholding and exchange rates. Assess returns after fees, source tax and inflation in your spending currency. Foreign tax on exempt income cannot offset unrelated Turkish taxable income."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is account principal income?",
+          "answer": "No; distinguish principal, interest and gains."
+        },
+        {
+          "question": "Does CRS cancel relief?",
+          "answer": "No; it concerns financial transparency."
+        },
+        {
+          "question": "Is a euro account in Istanbul foreign-source?",
+          "answer": "Currency alone does not determine the source."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "September 2026 Turkish Article 20/D guide"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/mes-revenus-de-capitaux-mobiliers-sont-ils-passibles-des",
+          "label": "French tax authority: non-resident investment income"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "Official 2026 Article 103 tariff"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC: income determination"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Иностранные банковские проценты в Турции 2026: налог и доходность",
+      "metaDescription": "Зарубежные вклады и проценты: льгота на 20 лет, удержание у источника, обмен данными и примеры доходности.",
+      "shortAnswer": "Проценты зарубежных вкладов могут подпадать под статью 20/D при соответствующих источнике и статусе получателя. Основная сумма и доход различаются.",
+      "bosphorasHelp": "Bosphoras организует переезд и встречи с независимыми специалистами по международным налогам. Подготовьте перечень доходов и запросите оценку до смены резидентства.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "Вид продукта и источник",
+          "body": "Срочные вклады, купоны облигаций, денежные фонды и текущие счета могут иметь разную квалификацию. Французская налоговая служба обычно не удерживает налог с обычных банковских процентов нерезидентов, кроме выплат в несотрудничающие юрисдикции; страхование жизни регулируется отдельно."
+        },
+        {
+          "id": "income-2",
+          "title": "Примеры валовой доходности",
+          "body": "Предположим неизменный капитал 100 000 евро на год. Ставки условные, без капитализации, комиссий, валютного эффекта и налога у источника. Турецкая льгота не гарантирует доходность или сохранность капитала.",
+          "table": {
+            "headers": [
+              "Условная годовая ставка",
+              "Валовые проценты"
+            ],
+            "rows": [
+              [
+                "2%",
+                "2 000 €"
+              ],
+              [
+                "4%",
+                "4 000 €"
+              ],
+              [
+                "6%",
+                "6 000 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "Резидентство и обмен данными",
+          "body": "Сообщите банку действительное налоговое резидентство и идентификатор. CRS может передавать сведения об остатках и доходах в зависимости от юрисдикций и продуктов. Льгота не означает банковскую тайну от налоговой. Вклад в турецком банке обычно подчиняется местным правилам даже в иностранной валюте."
+        },
+        {
+          "id": "income-4",
+          "title": "Чистая доходность и документы",
+          "body": "Храните договоры, выписки по процентам, даты, удержания и курсы. Считайте результат после комиссий, налога источника и инфляции в валюте расходов. Иностранный налог по освобождённым доходам не уменьшает другие турецкие налоги."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Является ли основная сумма доходом?",
+          "answer": "Нет, различайте капитал, проценты и прирост."
+        },
+        {
+          "question": "Отменяет ли CRS льготу?",
+          "answer": "Нет, это обмен финансовыми сведениями."
+        },
+        {
+          "question": "Счёт в евро в Стамбуле считается иностранным?",
+          "answer": "Валюта сама по себе не определяет источник."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "Руководство GİB по статье 20/D за сентябрь 2026 года"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/mes-revenus-de-capitaux-mobiliers-sont-ils-passibles-des",
+          "label": "Налоговая служба Франции: доходы капитала"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "Официальная шкала 2026, статья 103"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC: определение дохода"
+        }
+      ]
+    },
+    "ar": {
+      "title": "فوائد البنوك الأجنبية في تركيا 2026: الضرائب وعائد الادخار",
+      "metaDescription": "فوائد الودائع الخارجية وإعفاء 20 عاماً والاقتطاع من المصدر وتبادل المعلومات وأمثلة العائد السنوي.",
+      "shortAnswer": "قد تشمل المادة 20/D فوائد الودائع الأجنبية عند استيفاء المصدر ووضع المستفيد للشروط. يختلف أصل المال عن العائد.",
+      "bosphorasHelp": "تنسق Bosphoras الانتقال والتواصل مع متخصصين مستقلين في الضرائب الدولية. جهز قائمة دخلك واطلب دراسة قبل نقل الإقامة.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "نوع المنتج ومصدر الدخل",
+          "body": "قد تختلف معاملة الوديعة لأجل وكوبون السند وصندوق النقد والحساب الجاري. تشير الإدارة الفرنسية إلى عدم اقتطاع إلزامي عادة من الفوائد المصرفية العادية لغير المقيمين إلا في الدول غير المتعاونة؛ وتسري قواعد مختلفة على التأمين على الحياة."
+        },
+        {
+          "id": "income-2",
+          "title": "أمثلة للفائدة السنوية الإجمالية",
+          "body": "نفترض رأس مال ثابتاً قدره 100 ألف يورو لمدة سنة. المعدلات افتراضية دون تراكم أو رسوم أو صرف أو ضريبة مصدر. لا يضمن الإعفاء التركي هذه العوائد أو سلامة رأس المال.",
+          "table": {
+            "headers": [
+              "المعدل السنوي المفترض",
+              "الفائدة الإجمالية"
+            ],
+            "rows": [
+              [
+                "2%",
+                "2,000 يورو"
+              ],
+              [
+                "4%",
+                "4,000 يورو"
+              ],
+              [
+                "6%",
+                "6,000 يورو"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "الإقامة وتبادل البيانات المصرفية",
+          "body": "أبلغ مصرفك بإقامتك الضريبية الفعلية ورقمك الضريبي. يمكن أن يشمل تبادل CRS الأرصدة والدخل بحسب الدول والمنتجات. لا يعني الإعفاء السرية عن الضرائب. تخضع الوديعة في مصرف تركي عادة للقواعد المحلية حتى بعملة أجنبية."
+        },
+        {
+          "id": "income-4",
+          "title": "العائد الصافي والوثائق",
+          "body": "احتفظ بعقود الودائع وكشوف الفوائد والتواريخ والاقتطاعات وأسعار الصرف. احسب العائد بعد الرسوم وضريبة المصدر والتضخم بعملة إنفاقك. لا تخصم الضريبة الأجنبية على الدخل المعفى من ضريبة دخل تركي آخر."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل أصل المال دخل؟",
+          "answer": "لا، ميز الأصل والفائدة والمكاسب."
+        },
+        {
+          "question": "هل يلغي CRS الإعفاء؟",
+          "answer": "لا، فهو يتعلق بالشفافية المالية."
+        },
+        {
+          "question": "هل الحساب باليورو في إسطنبول أجنبي؟",
+          "answer": "لا تحدد العملة وحدها المصدر."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "الدليل التركي للمادة 20/D سبتمبر 2026"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/mes-revenus-de-capitaux-mobiliers-sont-ils-passibles-des",
+          "label": "إدارة الضرائب الفرنسية: دخل رأس مال غير المقيم"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "الشرائح الرسمية لعام 2026 المادة 103"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC: تحديد الدخل"
+        }
+      ]
+    }
+  },
+  "foreign-life-insurance-turkey-resident": {
+    "fr": {
+      "title": "Assurance-vie étrangère et résidence en Turquie 2026 : rachats et fiscalité",
+      "metaDescription": "Conserver une assurance-vie française en Turquie : rachat, part de gains, taux français 12,8 % ou 7,5 % et exonération éventuelle.",
+      "shortAnswer": "Un changement de résidence ne transforme pas automatiquement une assurance-vie en placement exonéré. Identifiez le contrat, la part de gains rachetée et la source juridique avant d’examiner l’article 20/D.",
+      "bosphorasHelp": "Bosphoras coordonne votre installation et une mise en relation avec des spécialistes indépendants de la fiscalité internationale. Préparez votre inventaire de revenus et demandez une étude avant le transfert de résidence.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "Conserver le contrat après expatriation",
+          "body": "Informez l’assureur de votre adresse et résidence fiscale. Les possibilités de versement, arbitrage et rachat dépendent du contrat et des restrictions transfrontalières. Un rachat ne correspond pas entièrement à du revenu : le capital restitué doit être distingué du gain déterminé par l’assureur."
+        },
+        {
+          "id": "income-2",
+          "title": "Exemple de rachat français",
+          "body": "La DGFiP indique au 1er janvier 2026 un PFL de 12,8 % pour les contrats de moins de huit ans et 7,5 % pour les contrats de plus de huit ans, éventuellement réduit par convention. Hypothèse : rachat de 30 000 € dont 10 000 € de produits imposables. Les montants ci-dessous ignorent toute réduction conventionnelle et autres particularités.",
+          "table": {
+            "headers": [
+              "Durée du contrat",
+              "Prélèvement sur 10 000 € de gains"
+            ],
+            "rows": [
+              [
+                "Moins de 8 ans (12,8 %)",
+                "1 280 €"
+              ],
+              [
+                "Plus de 8 ans (7,5 %)",
+                "750 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "Qualification fiscale en Turquie",
+          "body": "Le régime 20/D vise les revenus étrangers éligibles des personnes physiques. L’origine du gain, le type de contrat et le fait générateur importent. Ne présumez pas qu’un rachat, une rente, une prestation décès et un transfert de contrat ont le même traitement. Le certificat d’exonération est distinct du document attestant la résidence au sens d’une convention."
+        },
+        {
+          "id": "income-4",
+          "title": "Succession et bénéficiaires",
+          "body": "Identifiez primes, dates de versement, bénéficiaires, résidence des parties et pays de l’assureur. Le taux turc de 1 % sur certaines transmissions par décès du régime 20/D ne remplace pas les règles propres à l’assurance-vie étrangère, ni les droits éventuels du pays d’origine. Demandez un relevé détaillé avant un rachat important."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Le rachat entier est-il taxé ?",
+          "answer": "Non, la part des produits imposables est déterminante."
+        },
+        {
+          "question": "La Turquie annule-t-elle le prélèvement français ?",
+          "answer": "Non, une convention peut éventuellement le réduire."
+        },
+        {
+          "question": "Le taux successoral de 1 % couvre-t-il tous les contrats ?",
+          "answer": "Non, il faut analyser chaque transmission."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "Guide fiscal turc 20/D, septembre 2026"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/comment-sont-imposees-les-assurances-vie-en-cas-de-rachat-total",
+          "label": "DGFiP : rachats d’assurance-vie"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/mes-revenus-de-capitaux-mobiliers-sont-ils-passibles-des",
+          "label": "DGFiP : capitaux mobiliers non-résidents"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC : détermination du revenu"
+        }
+      ]
+    },
+    "en": {
+      "title": "Foreign life insurance in Turkey 2026: withdrawals and tax residence",
+      "metaDescription": "Keeping French life insurance in Turkey: taxable gains, 12.8% or 7.5% withholding, policy withdrawals and possible foreign-income relief.",
+      "shortAnswer": "Changing residence does not automatically make a life insurance policy tax-free. Identify the policy, taxable gain on withdrawal and income source before assessing Article 20/D.",
+      "bosphorasHelp": "Bosphoras coordinates relocation and introductions to independent international tax specialists. Prepare your income inventory and request an assessment before transferring residence.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "Keeping your policy abroad",
+          "body": "Notify the insurer of your actual address and tax residence. Contributions, switches and withdrawals are subject to contract terms and cross-border restrictions. A surrender is not all income: distinguish returned principal from gains calculated by the insurer."
+        },
+        {
+          "id": "income-2",
+          "title": "French surrender example",
+          "body": "For 2026 the French tax authority lists final withholding of 12.8% for policies held under eight years and 7.5% for those over eight years, potentially reduced under a treaty. Assume a €30,000 withdrawal contains €10,000 of taxable gains. The illustration excludes treaty reductions and special rules.",
+          "table": {
+            "headers": [
+              "Policy age",
+              "Withholding on €10,000 gains"
+            ],
+            "rows": [
+              [
+                "Under 8 years (12.8%)",
+                "€1,280"
+              ],
+              [
+                "Over 8 years (7.5%)",
+                "€750"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "Turkish income classification",
+          "body": "Article 20/D concerns eligible overseas income of individuals. The source, policy type and recognition event matter. Do not assume withdrawals, annuities, death benefits and policy transfers share one tax treatment. An exemption certificate is distinct from treaty residence evidence."
+        },
+        {
+          "id": "income-4",
+          "title": "Beneficiaries and estate planning",
+          "body": "Identify premiums, contribution dates, beneficiaries, parties' residence and insurer's jurisdiction. Turkey's 1% rate for eligible inheritances under the regime does not replace the foreign life insurance rules or possible source-country inheritance taxes. Obtain a detailed statement before a major surrender."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is the entire surrender taxable?",
+          "answer": "No, the taxable gain component matters."
+        },
+        {
+          "question": "Does Turkey cancel French withholding?",
+          "answer": "No; a treaty may reduce it."
+        },
+        {
+          "question": "Does 1% inheritance tax cover every policy?",
+          "answer": "No, assess each transfer separately."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "September 2026 Turkish Article 20/D guide"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/comment-sont-imposees-les-assurances-vie-en-cas-de-rachat-total",
+          "label": "French tax authority: life insurance withdrawals"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/mes-revenus-de-capitaux-mobiliers-sont-ils-passibles-des",
+          "label": "French tax authority: non-resident investment income"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC: income determination"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Иностранное страхование жизни в Турции 2026: выкуп и налоги",
+      "metaDescription": "Французское assurance-vie при переезде: выкуп, облагаемый доход, удержание 12,8% или 7,5% и возможная льгота.",
+      "shortAnswer": "Смена резидентства не делает страхование жизни автоматически необлагаемым. Определите договор, доход при выкупе и его источник до оценки статьи 20/D.",
+      "bosphorasHelp": "Bosphoras организует переезд и встречи с независимыми специалистами по международным налогам. Подготовьте перечень доходов и запросите оценку до смены резидентства.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "Сохранение договора",
+          "body": "Сообщите страховщику действительный адрес и налоговое резидентство. Взносы, изменение инвестиций и выкуп зависят от договора и трансграничных ограничений. Выкуп не полностью является доходом: отделите возвращённый капитал от рассчитанного страховщиком дохода."
+        },
+        {
+          "id": "income-2",
+          "title": "Пример французского выкупа",
+          "body": "На 2026 год французская налоговая служба указывает удержание 12,8% для договоров моложе восьми лет и 7,5% для договоров старше восьми лет, с возможным снижением по соглашению. Допустим, выплата 30 000 евро включает 10 000 евро облагаемого дохода. Пример не учитывает договорные снижения и особые правила.",
+          "table": {
+            "headers": [
+              "Возраст договора",
+              "Удержание с дохода 10 000 €"
+            ],
+            "rows": [
+              [
+                "Меньше 8 лет (12,8%)",
+                "1 280 €"
+              ],
+              [
+                "Больше 8 лет (7,5%)",
+                "750 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "Квалификация в Турции",
+          "body": "Статья 20/D относится к подходящим зарубежным доходам физических лиц. Важны источник, вид договора и момент возникновения дохода. Выкуп, рента, выплата при смерти и передача договора не обязательно имеют одинаковый режим. Сертификат льготы отличается от подтверждения резидентства для соглашения."
+        },
+        {
+          "id": "income-4",
+          "title": "Наследование и выгодоприобретатели",
+          "body": "Уточните взносы, даты, получателей, резидентство сторон и юрисдикцию страховщика. Турецкая ставка 1% для соответствующих наследственных переходов не заменяет иностранные правила страхования жизни и возможные налоги страны источника. Получите подробную выписку перед значительным выкупом."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Облагается ли вся выплата?",
+          "answer": "Нет, важна облагаемая часть дохода."
+        },
+        {
+          "question": "Отменяет ли Турция французское удержание?",
+          "answer": "Нет, соглашение может снизить его."
+        },
+        {
+          "question": "Распространяется ли ставка 1% на все договоры?",
+          "answer": "Нет, каждый переход нужно оценивать отдельно."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "Руководство GİB по статье 20/D за сентябрь 2026 года"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/comment-sont-imposees-les-assurances-vie-en-cas-de-rachat-total",
+          "label": "Налоговая служба Франции: выкуп страхования"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/mes-revenus-de-capitaux-mobiliers-sont-ils-passibles-des",
+          "label": "Налоговая служба Франции: доходы капитала"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC: определение дохода"
+        }
+      ]
+    },
+    "ar": {
+      "title": "التأمين على الحياة الأجنبي للمقيم في تركيا 2026: السحب والضرائب",
+      "metaDescription": "التأمين الفرنسي بعد الانتقال: جزء العائد الخاضع والاقتطاع 12.8% أو 7.5% والإعفاء المحتمل.",
+      "shortAnswer": "لا يصبح عقد التأمين على الحياة معفى تلقائياً بتغير الإقامة. حدد العقد والعائد عند السحب ومصدره قبل دراسة المادة 20/D.",
+      "bosphorasHelp": "تنسق Bosphoras الانتقال والتواصل مع متخصصين مستقلين في الضرائب الدولية. جهز قائمة دخلك واطلب دراسة قبل نقل الإقامة.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "الاحتفاظ بالعقد",
+          "body": "أبلغ شركة التأمين بعنوانك وإقامتك الضريبية الحقيقيين. تتوقف المساهمات وتغيير الاستثمارات والسحب على العقد والقيود العابرة للحدود. ليس السحب كله دخلاً؛ افصل رأس المال المسترد عن العائد المحسوب."
+        },
+        {
+          "id": "income-2",
+          "title": "مثال سحب من عقد فرنسي",
+          "body": "تذكر الإدارة الفرنسية لعام 2026 اقتطاعاً نهائياً 12.8% للعقود الأقل من ثماني سنوات و7.5% للأكثر من ثماني سنوات مع احتمال التخفيض بالاتفاقية. نفترض سحب 30 ألف يورو منها 10 آلاف عوائد خاضعة. لا يشمل المثال التخفيضات الاتفاقية أو القواعد الخاصة.",
+          "table": {
+            "headers": [
+              "عمر العقد",
+              "الاقتطاع من عائد 10,000 يورو"
+            ],
+            "rows": [
+              [
+                "أقل من 8 سنوات (12.8%)",
+                "1,280 يورو"
+              ],
+              [
+                "أكثر من 8 سنوات (7.5%)",
+                "750 يورو"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "التصنيف في تركيا",
+          "body": "تخص المادة 20/D الدخل الأجنبي المؤهل للأفراد. يهم المصدر ونوع العقد ووقت تحقق الدخل. لا تفترض معاملة موحدة للسحب والمعاش وتعويض الوفاة ونقل العقد. تختلف شهادة الإعفاء عن إثبات الإقامة لأغراض الاتفاقية."
+        },
+        {
+          "id": "income-4",
+          "title": "المستفيدون والميراث",
+          "body": "حدد الأقساط والتواريخ والمستفيدين وإقامة الأطراف ودولة شركة التأمين. لا يحل معدل الميراث التركي 1% لبعض الانتقالات المؤهلة محل قواعد التأمين الأجنبي أو الضرائب المحتملة في بلد المصدر. اطلب كشفاً مفصلاً قبل السحب الكبير."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يخضع السحب كله للضريبة؟",
+          "answer": "لا، المهم جزء العائد الخاضع."
+        },
+        {
+          "question": "هل تلغي تركيا الاقتطاع الفرنسي؟",
+          "answer": "لا، قد تخفضه الاتفاقية."
+        },
+        {
+          "question": "هل يشمل معدل 1% كل العقود؟",
+          "answer": "لا، تدرس كل عملية انتقال منفردة."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "الدليل التركي للمادة 20/D سبتمبر 2026"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/comment-sont-imposees-les-assurances-vie-en-cas-de-rachat-total",
+          "label": "إدارة الضرائب الفرنسية: سحب التأمين على الحياة"
+        },
+        {
+          "href": "https://www.impots.gouv.fr/international-particulier/questions/mes-revenus-de-capitaux-mobiliers-sont-ils-passibles-des",
+          "label": "إدارة الضرائب الفرنسية: دخل رأس مال غير المقيم"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC: تحديد الدخل"
+        }
+      ]
+    }
+  },
+  "crypto-income-turkey-tax": {
+    "fr": {
+      "title": "Fiscalité crypto en Turquie 2026 : gains, trading et exonération",
+      "metaDescription": "Bitcoin, staking, DeFi et trading en Turquie : état de la législation en novembre 2026, calcul des gains et justificatifs fiscaux.",
+      "shortAnswer": "Au 3 novembre 2026, aucune taxe spécifique aux cryptoactifs n’a été identifiée dans les textes fiscaux consolidés examinés. Cela ne signifie pas que tous les gains sont légalement exonérés : leur qualification au regard du droit commun reste incertaine.",
+      "bosphorasHelp": "Bosphoras coordonne votre installation et une mise en relation avec des spécialistes indépendants de la fiscalité internationale. Préparez votre inventaire de revenus et demandez une étude avant le transfert de résidence.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "Ce qui a changé en 2026",
+          "body": "La loi 7518 encadre les prestataires crypto depuis 2024. Les mesures fiscales spécifiques proposées en mars 2026 ont été retirées avant l’adoption de la loi 7577. Les analyses juridiques distinguent gains occasionnels, activité commerciale et autres revenus ; ne retenez pas un taux universel de 0 %."
+        },
+        {
+          "id": "income-2",
+          "title": "Exemple de calcul économique, pas fiscal",
+          "body": "Achat d’un actif pour 20 000 €, revente pour 30 000 €, frais de transaction totaux 500 €. Gain économique de 9 500 € avant fiscalité. La base fiscale éventuelle peut différer selon les règles de valorisation, de change et de qualification.",
+          "table": {
+            "headers": [
+              "Flux",
+              "Montant"
+            ],
+            "rows": [
+              [
+                "Coût d’acquisition",
+                "20 000 €"
+              ],
+              [
+                "Prix de vente",
+                "30 000 €"
+              ],
+              [
+                "Frais",
+                "500 €"
+              ],
+              [
+                "Gain économique",
+                "9 500 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "Staking, minage et origine étrangère",
+          "body": "Une plateforme étrangère ou un portefeuille autonome ne rend pas mécaniquement un gain étranger. Distinguez ventes, échanges entre jetons, staking, airdrops, minage et rémunérations professionnelles. L’article 20/D ne tranche pas à lui seul la qualification crypto ; faites examiner l’activité et la source."
+        },
+        {
+          "id": "income-4",
+          "title": "Conserver les traces et contrôler les prestataires",
+          "body": "Archivez transactions horodatées, coût historique, frais, transferts entre portefeuilles, cours et identifiants de transactions. Consultez le statut des plateformes auprès de la SPK ; l’inscription sur sa liste n’est pas à elle seule un agrément définitif. Préparez les justificatifs de provenance des fonds pour la banque."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Les cryptos sont-elles exonérées à 0 % ?",
+          "answer": "Aucune exonération générale n’est établie."
+        },
+        {
+          "question": "Une plateforme étrangère suffit-elle pour 20/D ?",
+          "answer": "Non."
+        },
+        {
+          "question": "Le gain économique est-il la base fiscale ?",
+          "answer": "Pas nécessairement."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "Guide fiscal turc 20/D, septembre 2026"
+        },
+        {
+          "href": "https://practiceguides.chambers.com/practice-guides/blockchain-crypto-assets-2026/turkey/trends-and-developments",
+          "label": "Chambers : droit des actifs numériques 2026"
+        },
+        {
+          "href": "https://fincodelabs.com/en/blog/turkey-crypto-tax",
+          "label": "Analyse juridique de novembre 2026"
+        },
+        {
+          "href": "https://spk.gov.tr/kurumlar/kripto-varlik-hizmet-saglayicilar/faaliyette-bulunanlar-listesi",
+          "label": "SPK : liste des prestataires crypto"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "Barème officiel 2026, article 103"
+        }
+      ]
+    },
+    "en": {
+      "title": "Crypto tax in Turkey 2026: gains, trading and foreign-income relief",
+      "metaDescription": "Crypto, staking and DeFi in Turkey: November 2026 legal status, economic gains, documentation and the limits of the 20-year exemption.",
+      "shortAnswer": "As of 3 November 2026, a review of consolidated Turkish tax laws identified no crypto-specific tax. That is not a blanket legal exemption: classification under ordinary tax rules remains uncertain.",
+      "bosphorasHelp": "Bosphoras coordinates relocation and introductions to independent international tax specialists. Prepare your income inventory and request an assessment before transferring residence.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "What changed in 2026",
+          "body": "Law 7518 has regulated crypto providers since 2024. Crypto-specific fiscal provisions proposed in March 2026 were removed before Law 7577 was enacted. Legal analyses distinguish occasional gains, commercial activity and other income. Do not assume a universal zero rate."
+        },
+        {
+          "id": "income-2",
+          "title": "Economic gain example, not a tax calculation",
+          "body": "Buy an asset for €20,000, sell for €30,000 and incur €500 total transaction fees. Economic profit before tax is €9,500. Any tax base may differ according to valuation, exchange-rate and classification rules.",
+          "table": {
+            "headers": [
+              "Cash flow",
+              "Amount"
+            ],
+            "rows": [
+              [
+                "Purchase cost",
+                "€20,000"
+              ],
+              [
+                "Sale proceeds",
+                "€30,000"
+              ],
+              [
+                "Fees",
+                "€500"
+              ],
+              [
+                "Economic gain",
+                "€9,500"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "Staking, mining and foreign source",
+          "body": "An overseas platform or self-custody wallet does not automatically make a gain foreign-source. Distinguish disposals, token swaps, staking, airdrops, mining and remuneration. Article 20/D does not settle crypto classification; assess each activity and source."
+        },
+        {
+          "id": "income-4",
+          "title": "Record evidence and check providers",
+          "body": "Archive timestamped trades, historical cost, fees, wallet transfers, conversion rates and transaction IDs. Check provider status with SPK; appearing on its list does not itself constitute final licensing. Prepare source-of-funds records for banks."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Are all crypto gains taxed at zero?",
+          "answer": "No general legal exemption has been established."
+        },
+        {
+          "question": "Does an offshore platform qualify under 20/D?",
+          "answer": "Not automatically."
+        },
+        {
+          "question": "Is economic gain the tax base?",
+          "answer": "Not necessarily."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "September 2026 Turkish Article 20/D guide"
+        },
+        {
+          "href": "https://practiceguides.chambers.com/practice-guides/blockchain-crypto-assets-2026/turkey/trends-and-developments",
+          "label": "Chambers: digital asset law 2026"
+        },
+        {
+          "href": "https://fincodelabs.com/en/blog/turkey-crypto-tax",
+          "label": "November 2026 legislative analysis"
+        },
+        {
+          "href": "https://spk.gov.tr/kurumlar/kripto-varlik-hizmet-saglayicilar/faaliyette-bulunanlar-listesi",
+          "label": "SPK: crypto service provider list"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "Official 2026 Article 103 tariff"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Налоги на криптовалюту в Турции 2026: прибыль, трейдинг и льготы",
+      "metaDescription": "Криптовалюта, стейкинг и DeFi: законодательство на ноябрь 2026 года, расчёт экономической прибыли и документы.",
+      "shortAnswer": "По состоянию на 3 ноября 2026 года в проверенных сводных налоговых законах не обнаружен специальный налог на криптоактивы. Это не означает всеобщего освобождения: квалификация по общим нормам остаётся неопределённой.",
+      "bosphorasHelp": "Bosphoras организует переезд и встречи с независимыми специалистами по международным налогам. Подготовьте перечень доходов и запросите оценку до смены резидентства.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "Изменения 2026 года",
+          "body": "Закон № 7518 регулирует криптопровайдеров с 2024 года. Специальные налоговые положения, предложенные в марте 2026 года, исключены до принятия закона № 7577. Юристы различают разовые доходы, коммерческую деятельность и иные категории. Универсальная нулевая ставка не установлена."
+        },
+        {
+          "id": "income-2",
+          "title": "Пример экономической прибыли",
+          "body": "Покупка актива за 20 000 евро, продажа за 30 000 евро и комиссии 500 евро дают 9 500 евро экономической прибыли до налога. Возможная налоговая база может отличаться по правилам оценки, валюты и классификации.",
+          "table": {
+            "headers": [
+              "Поток",
+              "Сумма"
+            ],
+            "rows": [
+              [
+                "Стоимость покупки",
+                "20 000 €"
+              ],
+              [
+                "Выручка",
+                "30 000 €"
+              ],
+              [
+                "Комиссии",
+                "500 €"
+              ],
+              [
+                "Экономическая прибыль",
+                "9 500 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "Стейкинг, майнинг и источник",
+          "body": "Зарубежная платформа или самостоятельный кошелёк не делают доход автоматически иностранным. Различайте продажи, обмен токенов, стейкинг, аирдропы, майнинг и оплату услуг. Статья 20/D не решает сама вопрос квалификации криптодохода."
+        },
+        {
+          "id": "income-4",
+          "title": "Документы и проверка провайдера",
+          "body": "Храните даты и время операций, историческую стоимость, комиссии, переводы между кошельками, курсы и идентификаторы. Проверяйте статус в SPK; включение в список само по себе не означает окончательную лицензию. Подготовьте документы происхождения средств для банка."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Все криптодоходы облагаются по нулевой ставке?",
+          "answer": "Всеобщая льгота не установлена."
+        },
+        {
+          "question": "Достаточно ли зарубежной платформы для 20/D?",
+          "answer": "Нет."
+        },
+        {
+          "question": "Равна ли экономическая прибыль налоговой базе?",
+          "answer": "Не обязательно."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "Руководство GİB по статье 20/D за сентябрь 2026 года"
+        },
+        {
+          "href": "https://practiceguides.chambers.com/practice-guides/blockchain-crypto-assets-2026/turkey/trends-and-developments",
+          "label": "Chambers: право цифровых активов 2026"
+        },
+        {
+          "href": "https://fincodelabs.com/en/blog/turkey-crypto-tax",
+          "label": "Правовой анализ за ноябрь 2026"
+        },
+        {
+          "href": "https://spk.gov.tr/kurumlar/kripto-varlik-hizmet-saglayicilar/faaliyette-bulunanlar-listesi",
+          "label": "SPK: список криптопровайдеров"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "Официальная шкала 2026, статья 103"
+        }
+      ]
+    },
+    "ar": {
+      "title": "ضرائب العملات الرقمية في تركيا 2026: المكاسب والتداول والإعفاء",
+      "metaDescription": "وضع تشريعات العملات الرقمية في نوفمبر 2026 والستيكينغ وDeFi وحساب المكاسب والوثائق وحدود الإعفاء.",
+      "shortAnswer": "حتى 3 نوفمبر 2026 لم تحدد مراجعة القوانين الضريبية التركية المجمعة ضريبة خاصة بالأصول الرقمية. لا يشكل ذلك إعفاءً عاماً؛ يبقى تصنيف الدخل وفق القواعد العامة غير محسوم.",
+      "bosphorasHelp": "تنسق Bosphoras الانتقال والتواصل مع متخصصين مستقلين في الضرائب الدولية. جهز قائمة دخلك واطلب دراسة قبل نقل الإقامة.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "ما تغير في 2026",
+          "body": "ينظم القانون 7518 مقدمي خدمات الأصول الرقمية منذ 2024. حذفت الأحكام الضريبية الخاصة المقترحة في مارس 2026 قبل إقرار القانون 7577. تميز التحليلات القانونية المكاسب العرضية والنشاط التجاري والدخول الأخرى. لا تفترض معدل ضريبة صفرياً عاماً."
+        },
+        {
+          "id": "income-2",
+          "title": "مثال الربح الاقتصادي لا الضريبي",
+          "body": "شراء أصل بـ20 ألف يورو وبيعه بـ30 ألفاً مع رسوم 500 يورو ينتج ربحاً اقتصادياً قبل الضريبة قدره 9,500 يورو. قد يختلف الوعاء الضريبي بحسب التقييم وسعر الصرف والتصنيف.",
+          "table": {
+            "headers": [
+              "التدفق",
+              "المبلغ"
+            ],
+            "rows": [
+              [
+                "تكلفة الشراء",
+                "20,000 يورو"
+              ],
+              [
+                "متحصل البيع",
+                "30,000 يورو"
+              ],
+              [
+                "الرسوم",
+                "500 يورو"
+              ],
+              [
+                "الربح الاقتصادي",
+                "9,500 يورو"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "الستيكينغ والتعدين والمصدر",
+          "body": "لا تجعل المنصة الأجنبية أو المحفظة الذاتية المكسب أجنبياً تلقائياً. ميز البيع ومبادلة الرموز والستيكينغ والتوزيعات المجانية والتعدين وأجور الخدمات. لا تحسم المادة 20/D تصنيف دخل العملات الرقمية؛ حلل كل نشاط ومصدر."
+        },
+        {
+          "id": "income-4",
+          "title": "الوثائق والتحقق من مقدم الخدمة",
+          "body": "احتفظ بتوقيت المعاملات والتكلفة الأصلية والرسوم وتحويلات المحافظ والأسعار ومعرفات المعاملات. تحقق من وضع المنصة لدى SPK؛ لا يعني ورود الاسم في القائمة ترخيصاً نهائياً بمفرده. جهز إثبات مصدر الأموال للمصرف."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل كل مكاسب العملات الرقمية معفاة؟",
+          "answer": "لا يوجد إعفاء عام ثابت."
+        },
+        {
+          "question": "هل تكفي منصة أجنبية للمادة 20/D؟",
+          "answer": "لا."
+        },
+        {
+          "question": "هل الربح الاقتصادي هو الوعاء الضريبي؟",
+          "answer": "ليس بالضرورة."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "الدليل التركي للمادة 20/D سبتمبر 2026"
+        },
+        {
+          "href": "https://practiceguides.chambers.com/practice-guides/blockchain-crypto-assets-2026/turkey/trends-and-developments",
+          "label": "Chambers: قانون الأصول الرقمية 2026"
+        },
+        {
+          "href": "https://fincodelabs.com/en/blog/turkey-crypto-tax",
+          "label": "تحليل التشريعات في نوفمبر 2026"
+        },
+        {
+          "href": "https://spk.gov.tr/kurumlar/kripto-varlik-hizmet-saglayicilar/faaliyette-bulunanlar-listesi",
+          "label": "هيئة SPK: قائمة مقدمي خدمات العملات الرقمية"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "الشرائح الرسمية لعام 2026 المادة 103"
+        }
+      ]
+    }
+  },
+  "trader-tax-resident-turkey": {
+    "fr": {
+      "title": "Trader résident fiscal en Turquie 2026 : gains boursiers, barème et exonération",
+      "metaDescription": "Trading, actions étrangères, dividendes et activité professionnelle : qualification, article 20/D et simulation du barème turc 2026.",
+      "shortAnswer": "Un trader résident turc doit distinguer placements personnels, revenus de capitaux, plus-values et activité commerciale. L’article 20/D ne dispense que les revenus étrangers admissibles, après certificat.",
+      "bosphorasHelp": "Bosphoras coordonne votre installation et une mise en relation avec des spécialistes indépendants de la fiscalité internationale. Préparez votre inventaire de revenus et demandez une étude avant le transfert de résidence.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "Distinguer les instruments et l’activité",
+          "body": "Une action étrangère, une obligation, un dérivé, une crypto et une activité de gestion pour des tiers ne suivent pas forcément les mêmes règles. La fréquence, les moyens organisés et le lieu de l’activité peuvent modifier la qualification. Les retenues sur certains instruments financiers turcs suivent des régimes propres, notamment l’article provisoire 67."
+        },
+        {
+          "id": "income-2",
+          "title": "Barème ordinaire turc 2026 : exemple de base nette imposable",
+          "body": "Calcul pédagogique pour un revenu net entièrement soumis au barème ordinaire hors salaires, sans autre revenu, crédit, déduction ou retenue définitive. Il ne s’agit pas d’un taux de taxation universel du trading.",
+          "table": {
+            "headers": [
+              "Base nette imposable",
+              "Impôt brut du barème"
+            ],
+            "rows": [
+              [
+                "190 000 TL",
+                "28 500 TL"
+              ],
+              [
+                "400 000 TL",
+                "70 500 TL"
+              ],
+              [
+                "1 000 000 TL",
+                "232 500 TL"
+              ],
+              [
+                "1 400 000 TL",
+                "372 500 TL"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "Exonération et portefeuille international",
+          "body": "Les dividendes étrangers éligibles peuvent être exonérés. Les gains de cession et l’activité de trading nécessitent une analyse distincte de la source, de la catégorie et des règles applicables. Un courtier étranger ne suffit pas à rendre étrangère une activité professionnelle exercée en Turquie. Les pertes sur des flux exonérés ne compensent pas automatiquement les revenus turcs."
+        },
+        {
+          "id": "income-4",
+          "title": "Organiser les relevés de trading",
+          "body": "Exportez les historiques complets : instruments, ISIN si disponible, dates, coût et produit de cession, frais, dividendes et impôts retenus. Réconciliez chaque compte et portez les monnaies dans un registre de conversion. Séparez portefeuille personnel, société et prestations pour des clients. Faites valider la méthode avant la déclaration."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Tous les gains étrangers sont-ils exonérés ?",
+          "answer": "Seulement ceux qui répondent aux conditions et à la qualification du régime."
+        },
+        {
+          "question": "Le barème du tableau s’applique-t-il à toutes les opérations ?",
+          "answer": "Non, il illustre une base nette ordinaire."
+        },
+        {
+          "question": "Un courtier étranger suffit-il ?",
+          "answer": "Non, la source juridique et l’activité sont déterminantes."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "Guide fiscal turc 20/D, septembre 2026"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "Barème officiel 2026, article 103"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC : détermination du revenu"
+        },
+        {
+          "href": "https://practiceguides.chambers.com/practice-guides/blockchain-crypto-assets-2026/turkey/trends-and-developments",
+          "label": "Chambers : droit des actifs numériques 2026"
+        }
+      ]
+    },
+    "en": {
+      "title": "Trader in Turkey 2026: stock gains, tax brackets and foreign-income relief",
+      "metaDescription": "Trading from Turkey: personal investments versus business activity, foreign-source relief, records and worked 2026 income tax brackets.",
+      "shortAnswer": "A Turkish resident trader must distinguish personal investments, investment income, capital gains and business activity. Article 20/D exempts only qualifying foreign income with certification.",
+      "bosphorasHelp": "Bosphoras coordinates relocation and introductions to independent international tax specialists. Prepare your income inventory and request an assessment before transferring residence.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "Instruments and activity classification",
+          "body": "Foreign shares, bonds, derivatives, crypto and managing assets for others may follow different rules. Frequency, organised resources and actual activity location can affect classification. Certain Turkish financial instruments have separate withholding rules, including provisional Article 67."
+        },
+        {
+          "id": "income-2",
+          "title": "2026 ordinary Turkish income tax illustration",
+          "body": "Calculations assume a net base entirely subject to the ordinary non-employment progressive tariff, no other income, credits, deductions or final withholding. This is not a universal trading tax schedule.",
+          "table": {
+            "headers": [
+              "Taxable net base",
+              "Gross tariff tax"
+            ],
+            "rows": [
+              [
+                "TRY 190,000",
+                "TRY 28,500"
+              ],
+              [
+                "TRY 400,000",
+                "TRY 70,500"
+              ],
+              [
+                "TRY 1,000,000",
+                "TRY 232,500"
+              ],
+              [
+                "TRY 1,400,000",
+                "TRY 372,500"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "Foreign-income relief and portfolios",
+          "body": "Qualifying overseas dividends may be exempt. Capital gains and active trading need separate source and category analysis. A foreign broker does not make business conducted in Turkey foreign-source. Losses associated with exempt streams cannot automatically offset Turkish taxable income."
+        },
+        {
+          "id": "income-4",
+          "title": "Trading records",
+          "body": "Export complete trade histories: instruments, ISIN where applicable, dates, costs, proceeds, fees, dividends and tax withheld. Reconcile accounts and record exchange-rate conversions. Separate personal portfolios, companies and client services. Confirm the method before filing."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Are all foreign trading gains exempt?",
+          "answer": "Only income meeting the applicable source and eligibility conditions."
+        },
+        {
+          "question": "Does the example tariff apply to all trades?",
+          "answer": "No, it illustrates an ordinary taxable net base."
+        },
+        {
+          "question": "Is an overseas broker enough?",
+          "answer": "No, legal source and activity matter."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "September 2026 Turkish Article 20/D guide"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "Official 2026 Article 103 tariff"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC: income determination"
+        },
+        {
+          "href": "https://practiceguides.chambers.com/practice-guides/blockchain-crypto-assets-2026/turkey/trends-and-developments",
+          "label": "Chambers: digital asset law 2026"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Трейдер в Турции 2026: биржевые доходы, шкала налога и льгота",
+      "metaDescription": "Налогообложение инвестиций и трейдинга в Турции: иностранные доходы, статья 20/D, прогрессивная шкала 2026 и документы.",
+      "shortAnswer": "Трейдеру-резиденту нужно различать личные инвестиции, инвестиционные доходы, прирост капитала и коммерческую деятельность. Статья 20/D освобождает только подходящие иностранные доходы при наличии сертификата.",
+      "bosphorasHelp": "Bosphoras организует переезд и встречи с независимыми специалистами по международным налогам. Подготовьте перечень доходов и запросите оценку до смены резидентства.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "Инструменты и квалификация",
+          "body": "Иностранные акции, облигации, деривативы, криптоактивы и управление средствами клиентов могут подчиняться разным правилам. Частота, организационные ресурсы и место деятельности влияют на квалификацию. Для отдельных турецких инструментов действуют особые удержания, включая временную статью 67."
+        },
+        {
+          "id": "income-2",
+          "title": "Пример обычной шкалы Турции 2026",
+          "body": "Расчёт предполагает чистую базу, полностью облагаемую по обычной прогрессивной шкале для доходов не от зарплаты, без иных доходов, вычетов, зачётов и окончательных удержаний. Это не универсальная шкала для трейдинга.",
+          "table": {
+            "headers": [
+              "Чистая облагаемая база",
+              "Налог по шкале"
+            ],
+            "rows": [
+              [
+                "190 000 лир",
+                "28 500 лир"
+              ],
+              [
+                "400 000 лир",
+                "70 500 лир"
+              ],
+              [
+                "1 000 000 лир",
+                "232 500 лир"
+              ],
+              [
+                "1 400 000 лир",
+                "372 500 лир"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "Льгота и международный портфель",
+          "body": "Подходящие зарубежные дивиденды могут освобождаться. Для прироста капитала и активного трейдинга требуется отдельная оценка источника и категории. Иностранный брокер не превращает деятельность в Турции в зарубежную. Убытки по освобождённым потокам не уменьшают автоматически турецкие облагаемые доходы."
+        },
+        {
+          "id": "income-4",
+          "title": "Учёт операций",
+          "body": "Выгружайте историю сделок с инструментами, ISIN при наличии, датами, стоимостью, выручкой, комиссиями, дивидендами и удержаниями. Сверяйте счета и валютные пересчёты. Разделяйте личный портфель, компанию и услуги клиентам. Уточните метод до декларации."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Все иностранные биржевые доходы освобождены?",
+          "answer": "Только доходы, отвечающие условиям источника и льготы."
+        },
+        {
+          "question": "Применяется ли шкала ко всем сделкам?",
+          "answer": "Нет, это пример обычной облагаемой базы."
+        },
+        {
+          "question": "Достаточно ли иностранного брокера?",
+          "answer": "Нет, важны юридический источник и деятельность."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "Руководство GİB по статье 20/D за сентябрь 2026 года"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "Официальная шкала 2026, статья 103"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC: определение дохода"
+        },
+        {
+          "href": "https://practiceguides.chambers.com/practice-guides/blockchain-crypto-assets-2026/turkey/trends-and-developments",
+          "label": "Chambers: право цифровых активов 2026"
+        }
+      ]
+    },
+    "ar": {
+      "title": "ضرائب المتداول المقيم في تركيا 2026: مكاسب الأسهم والشرائح والإعفاء",
+      "metaDescription": "تداول الأسهم من تركيا والاستثمار الشخصي والنشاط التجاري والمادة 20/D ومثال الشرائح الضريبية 2026.",
+      "shortAnswer": "يميز المتداول المقيم بين الاستثمار الشخصي ودخل رأس المال والمكاسب والنشاط التجاري. لا تعفي المادة 20/D إلا الدخل الأجنبي المؤهل مع الشهادة.",
+      "bosphorasHelp": "تنسق Bosphoras الانتقال والتواصل مع متخصصين مستقلين في الضرائب الدولية. جهز قائمة دخلك واطلب دراسة قبل نقل الإقامة.",
+      "sections": [
+        {
+          "id": "income-1",
+          "title": "الأدوات وتصنيف النشاط",
+          "body": "قد تختلف قواعد الأسهم والسندات الأجنبية والمشتقات والعملات الرقمية وإدارة أموال الآخرين. يؤثر التكرار والتنظيم ومكان النشاط الفعلي في التصنيف. لبعض الأدوات التركية قواعد اقتطاع خاصة ومنها المادة المؤقتة 67."
+        },
+        {
+          "id": "income-2",
+          "title": "مثال الشرائح التركية العادية لعام 2026",
+          "body": "يفترض الحساب وعاءً صافياً يخضع بالكامل للشرائح التصاعدية العادية لغير الرواتب دون دخل آخر أو خصم أو ائتمان أو اقتطاع نهائي. ليس هذا جدولاً ضريبياً عاماً لجميع عمليات التداول.",
+          "table": {
+            "headers": [
+              "الوعاء الصافي الخاضع",
+              "الضريبة الإجمالية وفق الشرائح"
+            ],
+            "rows": [
+              [
+                "190,000 ليرة",
+                "28,500 ليرة"
+              ],
+              [
+                "400,000 ليرة",
+                "70,500 ليرة"
+              ],
+              [
+                "1,000,000 ليرة",
+                "232,500 ليرة"
+              ],
+              [
+                "1,400,000 ليرة",
+                "372,500 ليرة"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "income-3",
+          "title": "الإعفاء والمحفظة الدولية",
+          "body": "قد تعفى التوزيعات الأجنبية المؤهلة. تتطلب المكاسب والتداول النشط دراسة مستقلة للمصدر والفئة. لا يجعل الوسيط الأجنبي النشاط التجاري في تركيا دخلاً أجنبياً. لا تخصم خسائر التدفقات المعفاة تلقائياً من الدخل التركي الخاضع."
+        },
+        {
+          "id": "income-4",
+          "title": "سجل العمليات",
+          "body": "صدر التاريخ الكامل للأدوات ورموز ISIN حيث تتوفر والتواريخ والتكلفة ومتحصل البيع والرسوم والتوزيعات والاقتطاعات. طابق الحسابات وسجل تحويل العملات. افصل المحفظة الشخصية والشركة وخدمات العملاء وتحقق من المنهج قبل الإقرار."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل تعفى كل مكاسب التداول الأجنبية؟",
+          "answer": "فقط الدخل المستوفي لشروط المصدر والأهلية."
+        },
+        {
+          "question": "هل تنطبق الشرائح على كل الصفقات؟",
+          "answer": "لا، توضح وعاءً صافياً عادياً."
+        },
+        {
+          "question": "هل يكفي وسيط أجنبي؟",
+          "answer": "لا، يهم المصدر القانوني والنشاط."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=PAGE%2FUNIVERSAL%2F2026%2F2026_Yurt_Disindan_Elde_Edilen_Kazanclarda_Vergi_Istisnasi_Rehberi.pdf",
+          "label": "الدليل التركي للمادة 20/D سبتمبر 2026"
+        },
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/6937",
+          "label": "الشرائح الرسمية لعام 2026 المادة 103"
+        },
+        {
+          "href": "https://taxsummaries.pwc.com/turkey/individual/income-determination",
+          "label": "PwC: تحديد الدخل"
+        },
+        {
+          "href": "https://practiceguides.chambers.com/practice-guides/blockchain-crypto-assets-2026/turkey/trends-and-developments",
+          "label": "Chambers: قانون الأصول الرقمية 2026"
+        }
+      ]
+    }
   }
 };
 
