@@ -2,7 +2,7 @@ name: Localized travel editorial quality
 on:
   push:
     branches: [feature/travel-guides-ru-ar]
-    paths: ['.github/workflows/travel-localization-quality.yml','scripts/check-edited-travel-localizations.cjs','data/travel/localized/istanbul.json','data/travel/localized/paris.json','data/travel/localizedGuides.ts']
+    paths: ['.github/workflows/travel-localization-quality.yml','scripts/check-edited-travel-localizations.cjs','scripts/check-travel-localized-*.cjs','data/travel/localized/**','data/travel/localizedGuides.ts','components/travel/LocalizedFeaturedCityGuide.tsx','components/travel/TravelPages.tsx','data/travel/guideIndexation.ts']
 permissions:
   contents: read
 jobs:
