@@ -2,7 +2,33 @@ name: Localized travel editorial quality
 on:
   push:
     branches: [feature/travel-guides-ru-ar]
-    paths: ['.github/workflows/travel-localization-quality.yml','scripts/check-edited-travel-localizations.cjs','scripts/check-travel-localized-*.cjs','data/travel/localized/**','data/travel/localizedGuides.ts','components/travel/LocalizedFeaturedCityGuide.tsx','components/travel/TravelPages.tsx','data/travel/guideIndexation.ts','components/Investment*.tsx','components/InternationalInvestmentPage.tsx','lib/investmentPortalI18n.ts','data/investmentVentureTranslations.ts','app/ru/investment/**','app/ar/investment/**','scripts/check-investment-localizations.cjs','data/propertyDesk.ts','components/Property*.tsx','components/GlobalPropertyInvestmentPage.tsx','components/ProjectWishlist.tsx','scripts/check-property-localizations.cjs','data/pages/**','app/sitemap.ts','app/[locale]/[...slug]/page.tsx','scripts/check-service-localizations.cjs']
+    paths:
+      - '.github/workflows/travel-localization-quality.yml'
+      - 'scripts/check-edited-travel-localizations.cjs'
+      - 'scripts/check-travel-localized-*.cjs'
+      - 'data/travel/localized/**'
+      - 'data/travel/localizedGuides.ts'
+      - 'components/travel/LocalizedFeaturedCityGuide.tsx'
+      - 'components/travel/TravelPages.tsx'
+      - 'data/travel/guideIndexation.ts'
+      - 'components/Investment*.tsx'
+      - 'components/InternationalInvestmentPage.tsx'
+      - 'lib/investmentPortalI18n.ts'
+      - 'data/investmentVentureTranslations.ts'
+      - 'app/ru/investment/**'
+      - 'app/ar/investment/**'
+      - 'scripts/check-investment-localizations.cjs'
+      - 'data/propertyDesk.ts'
+      - 'components/Property*.tsx'
+      - 'components/GlobalPropertyInvestmentPage.tsx'
+      - 'components/ProjectWishlist.tsx'
+      - 'scripts/check-property-localizations.cjs'
+      - 'data/pages/**'
+      - 'app/sitemap.ts'
+      - 'scripts/check-service-localizations.cjs'
+      - 'app/**/page.tsx'
+      - 'components/Header.tsx'
+      - 'components/PrivateAssessmentLocalizedPage.tsx'
 permissions:
   contents: read
 jobs:
