@@ -221,6 +221,7 @@ const editorialSeoKeyMap: Record<string, string> = {
   'private-concierge-istanbul-investors': 'private-concierge-istanbul',
   'rent-or-buy-before-moving': 'rent-or-buy-before-relocating',
   'countries-id-card-turkey': 'countries-enter-turkey-id-card',
+  'turkey-long-term-residence-main': 'turkey-long-term-residence',
   'turkey-e-visa-main': 'turkey-evisa-foreigners',
 };
 
