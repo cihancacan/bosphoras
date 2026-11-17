@@ -547,6 +547,72 @@ const charts: Record<string, ChartSpec | undefined> = {
         ]
       }
     ]
+  },
+  "turkey-vs-qatar-expat-tax": {
+    "section": "global-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          10000,
+          30000,
+          50000
+        ]
+      }
+    ]
+  },
+  "turkey-vs-luxembourg-holding": {
+    "section": "global-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          250000,
+          50000,
+          238700,
+          0
+        ]
+      }
+    ]
+  },
+  "turkey-singapore-hong-kong-trade": {
+    "section": "global-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          250000,
+          12500,
+          0
+        ]
+      }
+    ]
+  },
+  "turkey-vs-dubai-tax": {
+    "section": "global-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          11250,
+          0
+        ]
+      }
+    ]
+  },
+  "residence-property-investors": {
+    "section": "global-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          260000,
+          18000,
+          5000,
+          13000
+        ]
+      }
+    ]
   }
 };
 const captions: Record<Locale,string> = { fr: 'Visualisation des montants du tableau', en: 'Visual comparison of the amounts above', ru: 'Наглядное сравнение сумм из таблицы', ar: 'مقارنة مرئية للمبالغ في الجدول' };

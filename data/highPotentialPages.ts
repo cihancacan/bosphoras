@@ -1,5 +1,6 @@
 import type { Locale } from '@/lib/i18n';
 import { taxReformEditorialGuides, taxCertificateSupplement } from './taxReformEditorialGuides';
+import { globalInvestorEditorialGuides } from './globalInvestorEditorialGuides';
 import { remoteWorkEditorialGuides } from './remoteWorkEditorialGuides';
 import { personalWealthEditorialGuides } from './personalWealthEditorialGuides';
 import { corporateEditorialGuides } from './corporateEditorialGuides';
@@ -214,7 +215,7 @@ for (const page of editorialVisaPages) {
   }
 }
 
-const allTaxEditorialGuides = { ...taxReformEditorialGuides, ...internationalComparisonGuides, ...bankingEditorialGuides, ...corporateEditorialGuides, ...personalWealthEditorialGuides, ...remoteWorkEditorialGuides };
+const allTaxEditorialGuides = { ...taxReformEditorialGuides, ...internationalComparisonGuides, ...bankingEditorialGuides, ...corporateEditorialGuides, ...personalWealthEditorialGuides, ...remoteWorkEditorialGuides, ...globalInvestorEditorialGuides };
 const editorialTaxPages = [...bosphorasAdditionalSeoPages, ...bosphorasProgrammaticSeoPages].filter(page => allTaxEditorialGuides[page.key]);
 for (const page of editorialTaxPages) {
   for (const locale of visaLocales) {
