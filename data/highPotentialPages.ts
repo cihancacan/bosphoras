@@ -1,5 +1,7 @@
 import type { Locale } from '@/lib/i18n';
 import { taxReformEditorialGuides, taxCertificateSupplement } from './taxReformEditorialGuides';
+import { internationalComparisonGuides } from './internationalComparisonGuides';
+import { bosphorasProgrammaticSeoPages } from './bosphorasProgrammaticSeoPages';
 import { bosphorasAdditionalSeoPages } from './bosphorasAdditionalSeoPages';
 import { visaEditorialGuides as earlierVisaEditorialGuides } from './visaEditorialGuides';
 import { citizenshipEditorialGuides } from './citizenshipEditorialGuides';
@@ -208,16 +210,17 @@ for (const page of editorialVisaPages) {
   }
 }
 
-const editorialTaxPages = bosphorasAdditionalSeoPages.filter(page => taxReformEditorialGuides[page.key]);
+const allTaxEditorialGuides = { ...taxReformEditorialGuides, ...internationalComparisonGuides };
+const editorialTaxPages = [...bosphorasAdditionalSeoPages, ...bosphorasProgrammaticSeoPages].filter(page => allTaxEditorialGuides[page.key]);
 for (const page of editorialTaxPages) {
   for (const locale of visaLocales) {
-    const copy = taxReformEditorialGuides[page.key]![locale];
+    const copy = allTaxEditorialGuides[page.key]![locale];
     highPotentialGuides.push({
       id: page.key, locale, slug: visaSlug(page.slugs[locale]), ...copy,
       h1: copy.title, subtitle: copy.metaDescription, theme: 'tax', cityFocus: '', serviceFocus: copy.title,
       updatedAt: '2026-11-17', publishedAt: '2026-06-05', legalCaution: cautions[locale].tax,
       internalLinks: [
-        ...editorialTaxPages.filter(other => other.key !== page.key).map(other => ({ label: taxReformEditorialGuides[other.key]![locale].title, href: other.slugs[locale] })),
+        ...editorialTaxPages.filter(other => other.key !== page.key).map(other => ({ label: allTaxEditorialGuides[other.key]![locale].title, href: other.slugs[locale] })),
         ...highPotentialGuides.filter(guide => guide.locale === locale && ['tax-exemption-20-years', 'tax-residency', 'relocate-turkey-cities', 'company-setup-foreigner'].includes(guide.id)).map(guide => ({ label: guide.title, href: prefix(locale) + guide.slug })),
       ],
     });
@@ -250,6 +253,6 @@ const editorialSeoKeyMap: Record<string, string> = {
 };
 
 export function getEditorialGuideForSeoKey(key: string, locale: Locale): HighPotentialGuide | undefined {
-  const id = editorialSeoKeyMap[key] ?? (visaEditorialGuides[key] || taxReformEditorialGuides[key] ? key : undefined);
+  const id = editorialSeoKeyMap[key] ?? (visaEditorialGuides[key] || allTaxEditorialGuides[key] ? key : undefined);
   return id ? highPotentialGuides.find((guide) => guide.id === id && guide.locale === locale && Boolean(guide.sections)) : undefined;
 }
