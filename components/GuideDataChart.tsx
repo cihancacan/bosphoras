@@ -92,6 +92,71 @@ const charts: Record<string, ChartSpec | undefined> = {
         ]
       }
     ]
+  },
+  "residence-tax-istanbul": {
+    "section": "city-tax-4",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          1800,
+          400,
+          900,
+          400
+        ]
+      }
+    ]
+  },
+  "live-istanbul-foreign-investor": {
+    "section": "city-tax-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          30000,
+          6000,
+          15000,
+          9000
+        ]
+      }
+    ]
+  },
+  "bodrum-tax-residence-investors": {
+    "section": "city-tax-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          24000,
+          22800
+        ]
+      }
+    ]
+  },
+  "antalya-tax-residence-expats": {
+    "section": "city-tax-3",
+    "series": [
+      {
+        "column": 2,
+        "values": [
+          26400,
+          38400
+        ]
+      }
+    ]
+  },
+  "istanbul-or-dubai-investors": {
+    "section": "city-tax-3",
+    "series": [
+      {
+        "column": 1,
+        "values": [
+          0,
+          11250,
+          56250
+        ]
+      }
+    ]
   }
 };
 const captions: Record<Locale,string> = { fr: 'Visualisation des montants du tableau', en: 'Visual comparison of the amounts above', ru: 'Наглядное сравнение сумм из таблицы', ar: 'مقارنة مرئية للمبالغ في الجدول' };

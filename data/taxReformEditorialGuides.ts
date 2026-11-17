@@ -4981,6 +4981,2216 @@ export const taxReformEditorialGuides: Record<string, Record<Locale, EditorialGu
         }
       ]
     }
+  },
+  "residence-tax-istanbul": {
+    "fr": {
+      "title": "Résidence fiscale à Istanbul en 2026 : conditions, certificat et quartiers",
+      "metaDescription": "Devenir résident fiscal à Istanbul : article 20/D, exonération sur 20 ans, preuve du domicile, calendrier de demande et choix du quartier.",
+      "shortAnswer": "Istanbul applique les mêmes règles fiscales que le reste de la Turquie. L’exonération des revenus étrangers sur vingt ans est accessible aux nouveaux résidents remplissant l’article 20/D et obtenant le certificat dans les délais.",
+      "bosphorasHelp": "Bosphoras organise votre séjour de découverte, la sélection de logements et les rendez-vous avec des professionnels indépendants. Présentez votre patrimoine, votre activité et votre calendrier pour une étude personnalisée.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "Résidence fiscale et résidence administrative",
+          "body": "La loi fiscale examine le domicile et notamment le séjour continu de plus de six mois pendant une année civile, sous réserve des exceptions et conventions. Les absences temporaires ne rompent pas nécessairement ce séjour. Un ikamet, un achat ou une adresse à Istanbul ne prouvent pas à eux seuls le transfert fiscal. Le régime 20/D impose aussi l’examen des trois années civiles précédentes."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "Quel calendrier pour votre certificat ?",
+          "body": "L'année déterminante est celle de l'établissement fiscal réel. L'administration contrôle l'absence de domicile turc durant les trois années précédentes et l'historique d'imposition, avec exceptions prévues pour certains revenus du capital.",
+          "table": {
+            "headers": [
+              "Installation",
+              "Années examinées",
+              "Échéance"
+            ],
+            "rows": [
+              [
+                "Jan.–oct. 2026",
+                "2023–2025",
+                "31/12/2026"
+              ],
+              [
+                "Nov.–déc. 2026",
+                "2023–2025",
+                "28/02/2027"
+              ],
+              [
+                "Jan.–oct. 2027",
+                "2024–2026",
+                "31/12/2027"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-3",
+          "title": "Choisir une adresse adaptée au quotidien",
+          "body": "Şişli et Levent offrent l'accès à la ligne M2 et aux quartiers d'affaires. Gayrettepe permet la correspondance M11 vers l'aéroport IST. Kağıthane dispose aussi d'un accès à la M11. Kadıköy et Üsküdar sont des options sur la rive asiatique si votre travail et vos écoles s'y trouvent. Avant signature, confirmez l'enregistrement de l'adresse et testez les trajets aux heures réelles."
+        },
+        {
+          "id": "city-tax-4",
+          "title": "Budget annuel : exemple d'installation",
+          "body": "Pour un foyer qui fixe ses plafonds mensuels à 1 800 € de logement, 400 € de charges et transport, 900 € d'alimentation et dépenses courantes, 400 € de santé et imprévus, le total est de 3 500 €/mois soit 42 000 €/an. Ce budget choisi est un exemple de planification, pas un relevé de loyers ni un devis ; école, fiscalité et déménagement peuvent s'ajouter.",
+          "table": {
+            "headers": [
+              "Poste mensuel",
+              "Budget hypothétique"
+            ],
+            "rows": [
+              [
+                "Logement",
+                "1 800 €"
+              ],
+              [
+                "Charges et transport",
+                "400 €"
+              ],
+              [
+                "Vie courante",
+                "900 €"
+              ],
+              [
+                "Santé et réserve",
+                "400 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-5",
+          "title": "Préparer la preuve et le suivi fiscal",
+          "body": "Réunissez bail ou titre de propriété, enregistrement de l'adresse, déplacements, preuves de domicile antérieur et fiscalité des trois ans. Classez séparément revenus turcs, dividendes étrangers, loyers étrangers et rémunérations produites en Turquie. Le guichet fiscal compétent apprécie votre demande ; l'exonération n'efface pas les impôts étrangers."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Istanbul offre-t-elle une exonération propre à la ville ?",
+          "answer": "Non, l'article 20/D est national."
+        },
+        {
+          "question": "Une adresse suffit-elle ?",
+          "answer": "Non, les faits de résidence et le passé fiscal importent."
+        },
+        {
+          "question": "Dois-je acheter un logement ?",
+          "answer": "Non pour le régime fiscal ; le permis de séjour a ses propres conditions."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "Article 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Communiqué 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Guide fiscal GİB de septembre 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de titres de séjour"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail e-ikamet"
+        },
+        {
+          "href": "https://www.metro.istanbul/en/Hatlarimiz/HatDetay?hat=M2",
+          "label": "Métro M2"
+        },
+        {
+          "href": "https://dhmi.gov.tr/Sayfalar/Havalimani/Istanbul/Ulasim.aspx",
+          "label": "Accès officiel à Istanbul Airport"
+        }
+      ]
+    },
+    "en": {
+      "title": "Istanbul tax residence 2026: eligibility, certificate and neighbourhoods",
+      "metaDescription": "Establish tax residence in Istanbul: Article 20/D, 20-year foreign-income relief, certificate deadlines and practical housing choices.",
+      "shortAnswer": "Istanbul follows national Turkish tax rules. The 20-year foreign-income exemption is available to new residents satisfying Article 20/D and obtaining a timely certificate.",
+      "bosphorasHelp": "Bosphoras coordinates exploratory stays, housing selection and independent specialist appointments. Share your assets, activities and relocation timetable for a private assessment.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "Tax residence versus immigration residence",
+          "body": "Turkish tax law considers domicile and continuous residence exceeding six months in a calendar year, subject to exceptions and treaties. Temporary departures do not necessarily interrupt residence. An ikamet, property purchase or address alone does not establish a tax transfer. Article 20/D also tests the previous three calendar years."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "Certificate timetable",
+          "body": "The relevant year is the year of actual tax settlement. Authorities examine prior domicile and tax status, subject to exceptions for certain capital income.",
+          "table": {
+            "headers": [
+              "Settlement",
+              "Years tested",
+              "Deadline"
+            ],
+            "rows": [
+              [
+                "Jan–Oct 2026",
+                "2023–2025",
+                "31 Dec 2026"
+              ],
+              [
+                "Nov–Dec 2026",
+                "2023–2025",
+                "28 Feb 2027"
+              ],
+              [
+                "Jan–Oct 2027",
+                "2024–2026",
+                "31 Dec 2027"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-3",
+          "title": "Choose a practical address",
+          "body": "Şişli and Levent offer M2 access and business districts. Gayrettepe connects to the M11 airport line; Kağıthane also has M11 access. Consider Kadıköy or Üsküdar on the Asian side if employment and schools are nearby. Confirm address registration eligibility and test real commute times before signing."
+        },
+        {
+          "id": "city-tax-4",
+          "title": "Annual household budget illustration",
+          "body": "Suppose a household sets monthly limits of €1,800 housing, €400 utilities and transport, €900 living expenses and €400 healthcare and contingency. That is €3,500 per month or €42,000 per year. These are chosen planning inputs, not market rents; schooling, tax and relocation expenses may be extra.",
+          "table": {
+            "headers": [
+              "Monthly category",
+              "Assumed budget"
+            ],
+            "rows": [
+              [
+                "Housing",
+                "€1,800"
+              ],
+              [
+                "Utilities and transport",
+                "€400"
+              ],
+              [
+                "Living expenses",
+                "€900"
+              ],
+              [
+                "Health and reserve",
+                "€400"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-5",
+          "title": "Evidence and ongoing tax obligations",
+          "body": "Collect lease or title deed, address registration, travel records, prior domicile and tax evidence. Separate Turkish income, foreign dividends, foreign rent and work performed in Turkey. The competent tax office assesses the certificate; foreign taxes remain unaffected."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does Istanbul have its own exemption?",
+          "answer": "No, Article 20/D is national."
+        },
+        {
+          "question": "Is an address sufficient?",
+          "answer": "No, actual residence and tax history matter."
+        },
+        {
+          "question": "Must I buy a home?",
+          "answer": "Not for the tax regime; immigration rules are separate."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "Article 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Communiqué 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "September 2026 GİB tax guide"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "e-ikamet portal"
+        },
+        {
+          "href": "https://www.metro.istanbul/en/Hatlarimiz/HatDetay?hat=M2",
+          "label": "M2 metro line"
+        },
+        {
+          "href": "https://dhmi.gov.tr/Sayfalar/Havalimani/Istanbul/Ulasim.aspx",
+          "label": "Istanbul Airport official transport"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Налоговое резидентство в Стамбуле 2026: условия, сертификат и районы",
+      "metaDescription": "Как стать налоговым резидентом Стамбула: статья 20/D, льгота на 20 лет, сроки сертификата и выбор района.",
+      "shortAnswer": "В Стамбуле действуют общенациональные турецкие налоговые правила. Льгота на двадцать лет доступна новым резидентам при выполнении статьи 20/D и своевременном получении сертификата.",
+      "bosphorasHelp": "Bosphoras организует ознакомительные поездки, подбор жилья и встречи с независимыми специалистами. Расскажите об активах, деятельности и сроках переезда для индивидуальной оценки.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "Налоговое и миграционное резидентство",
+          "body": "Учитываются место жительства и непрерывное пребывание более шести месяцев календарного года с исключениями и соглашениями. Временные выезды не обязательно прерывают срок. Икамет, покупка жилья или адрес сами по себе не устанавливают налоговый переезд. Проверяются также три предыдущих календарных года."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "Сроки сертификата",
+          "body": "Определяющим является год фактического налогового поселения. Проверяются прежнее место жительства и налоговый статус с исключениями для некоторых доходов от капитала.",
+          "table": {
+            "headers": [
+              "Поселение",
+              "Проверяемые годы",
+              "Срок"
+            ],
+            "rows": [
+              [
+                "Янв.–окт. 2026",
+                "2023–2025",
+                "31.12.2026"
+              ],
+              [
+                "Нояб.–дек. 2026",
+                "2023–2025",
+                "28.02.2027"
+              ],
+              [
+                "Янв.–окт. 2027",
+                "2024–2026",
+                "31.12.2027"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-3",
+          "title": "Выбор района",
+          "body": "Шишли и Левент расположены у линии M2 и деловых центров. В Гайреттепе есть пересадка на аэропортовую M11; в Кягытхане также есть M11. Кадыкёй и Ускюдар подходят при работе и школе на азиатской стороне. До подписания договора проверьте возможность регистрации адреса и фактические маршруты."
+        },
+        {
+          "id": "city-tax-4",
+          "title": "Пример годового бюджета",
+          "body": "Если семья установит месячные лимиты 1 800 евро на жильё, 400 на коммунальные услуги и транспорт, 900 на быт и 400 на здоровье и резерв, получится 3 500 евро в месяц или 42 000 в год. Это выбранные параметры планирования, не рыночные цены; школа, налоги и переезд могут оплачиваться отдельно.",
+          "table": {
+            "headers": [
+              "Статья в месяц",
+              "Условная сумма"
+            ],
+            "rows": [
+              [
+                "Жильё",
+                "1 800 €"
+              ],
+              [
+                "Коммунальные и транспорт",
+                "400 €"
+              ],
+              [
+                "Быт",
+                "900 €"
+              ],
+              [
+                "Здоровье и резерв",
+                "400 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-5",
+          "title": "Документы и дальнейшие обязанности",
+          "body": "Соберите договор или тапу, регистрацию адреса, историю поездок и подтверждение прежнего резидентства и налогов. Разделяйте турецкие доходы, зарубежные дивиденды и аренду, работу из Турции. Сертификат оценивает компетентная инспекция; иностранные налоги сохраняются."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Есть ли отдельная льгота Стамбула?",
+          "answer": "Нет, статья 20/D действует по стране."
+        },
+        {
+          "question": "Достаточно ли адреса?",
+          "answer": "Нет, важны фактическое проживание и налоговая история."
+        },
+        {
+          "question": "Нужно ли покупать жильё?",
+          "answer": "Не для налоговой льготы; миграционные условия отдельные."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "Статья 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Разъяснение № 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Руководство GİB за сентябрь 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Категории ВНЖ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Портал e-ikamet"
+        },
+        {
+          "href": "https://www.metro.istanbul/en/Hatlarimiz/HatDetay?hat=M2",
+          "label": "Метро M2"
+        },
+        {
+          "href": "https://dhmi.gov.tr/Sayfalar/Havalimani/Istanbul/Ulasim.aspx",
+          "label": "Официальный транспорт аэропорта Стамбула"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الإقامة الضريبية في إسطنبول 2026: الشروط والشهادة والأحياء",
+      "metaDescription": "دليل الإقامة الضريبية في إسطنبول والمادة 20/D وإعفاء عشرين عاماً ومواعيد الشهادة واختيار الحي.",
+      "shortAnswer": "تطبق إسطنبول القواعد الضريبية التركية الوطنية. يستفيد المقيم الجديد المؤهل من إعفاء الدخل الأجنبي لعشرين عاماً عند استيفاء المادة 20/D والحصول على الشهادة في الموعد.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلات الاستكشافية واختيار السكن والمواعيد مع مختصين مستقلين. قدم معلومات أصولك ونشاطك وجدول انتقالك للحصول على تقييم خاص.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "الإقامة الضريبية والإدارية",
+          "body": "يدرس القانون الموطن والبقاء المتواصل أكثر من ستة أشهر في السنة التقويمية مع الاستثناءات والاتفاقيات. لا تقطع المغادرة المؤقتة المدة بالضرورة. لا تكفي بطاقة الإقامة أو شراء العقار أو تسجيل العنوان وحدها لإثبات الانتقال الضريبي. تراجع السنوات الثلاث السابقة أيضاً."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "مواعيد الشهادة",
+          "body": "العبرة بسنة الاستقرار الضريبي الفعلي. تراجع السلطات الموطن السابق والوضع الضريبي مع استثناءات لبعض دخل رأس المال.",
+          "table": {
+            "headers": [
+              "الاستقرار",
+              "السنوات المدروسة",
+              "آخر موعد"
+            ],
+            "rows": [
+              [
+                "يناير–أكتوبر 2026",
+                "2023–2025",
+                "31 ديسمبر 2026"
+              ],
+              [
+                "نوفمبر–ديسمبر 2026",
+                "2023–2025",
+                "28 فبراير 2027"
+              ],
+              [
+                "يناير–أكتوبر 2027",
+                "2024–2026",
+                "31 ديسمبر 2027"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-3",
+          "title": "اختيار الحي",
+          "body": "تقع شيشلي وليفنت قرب خط M2 ومراكز الأعمال. تتيح غيرت تبه الربط بخط المطار M11 الذي يخدم كاغيتهانه أيضاً. تناسب كاديكوي وأوسكودار من يعمل ويدرس في الجانب الآسيوي. تحقق من إمكانية تسجيل العنوان وجرب التنقل الفعلي قبل التوقيع."
+        },
+        {
+          "id": "city-tax-4",
+          "title": "مثال للميزانية السنوية",
+          "body": "إذا خصصت أسرة شهرياً 1,800 يورو للسكن و400 للخدمات والنقل و900 للمعيشة و400 للصحة والاحتياط، يصبح الإجمالي 3,500 شهرياً أو 42 ألفاً سنوياً. هذه حدود افتراضية للتخطيط وليست أسعاراً سوقية، وقد تضاف المدرسة والضرائب والانتقال.",
+          "table": {
+            "headers": [
+              "البند الشهري",
+              "ميزانية افتراضية"
+            ],
+            "rows": [
+              [
+                "السكن",
+                "1,800 يورو"
+              ],
+              [
+                "الخدمات والنقل",
+                "400 يورو"
+              ],
+              [
+                "المعيشة",
+                "900 يورو"
+              ],
+              [
+                "الصحة والاحتياط",
+                "400 يورو"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-5",
+          "title": "الوثائق والالتزامات",
+          "body": "اجمع عقد الإيجار أو الطابو وتسجيل العنوان وسجل السفر وإثباتات الموطن والضرائب السابقة. افصل الدخل التركي والتوزيعات والإيجارات الأجنبية والعمل المنفذ في تركيا. تقيم الإدارة المختصة الشهادة ولا تلغى الضرائب الأجنبية."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل لإسطنبول إعفاء مستقل؟",
+          "answer": "لا، المادة 20/D وطنية."
+        },
+        {
+          "question": "هل يكفي العنوان؟",
+          "answer": "لا، يهم الاستقرار الفعلي والتاريخ الضريبي."
+        },
+        {
+          "question": "هل يجب شراء منزل؟",
+          "answer": "ليس للإعفاء الضريبي؛ شروط الإقامة مستقلة."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "المادة 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "التعميم 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "الدليل الضريبي سبتمبر 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "فئات الإقامة"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "بوابة الإقامة"
+        },
+        {
+          "href": "https://www.metro.istanbul/en/Hatlarimiz/HatDetay?hat=M2",
+          "label": "خط المترو M2"
+        },
+        {
+          "href": "https://dhmi.gov.tr/Sayfalar/Havalimani/Istanbul/Ulasim.aspx",
+          "label": "النقل الرسمي لمطار إسطنبول"
+        }
+      ]
+    }
+  },
+  "live-istanbul-foreign-investor": {
+    "fr": {
+      "title": "Vivre à Istanbul comme investisseur étranger en 2026 : patrimoine et installation",
+      "metaDescription": "Investisseur international à Istanbul : résidence, immobilier, banque, entreprise et budget d’installation avec l’exonération fiscale 20 ans.",
+      "shortAnswer": "Istanbul est une base pour rencontrer banques, conseils et partenaires commerciaux. Le choix d'y vivre doit distinguer détention d'actifs, activité économique locale et résidence fiscale personnelle.",
+      "bosphorasHelp": "Bosphoras organise votre séjour de découverte, la sélection de logements et les rendez-vous avec des professionnels indépendants. Présentez votre patrimoine, votre activité et votre calendrier pour une étude personnalisée.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "Trois profils, trois stratégies",
+          "body": "Le rentier qui perçoit des revenus étrangers éligibles peut étudier l'article 20/D. Le dirigeant qui travaille depuis Istanbul doit qualifier rémunération, présence de la société et permis de travail. L'investisseur immobilier turc doit évaluer les impôts locaux et la rentabilité nette. Aucun profil n'obtient un droit automatique à l'exonération.",
+          "table": {
+            "headers": [
+              "Profil",
+              "Priorité"
+            ],
+            "rows": [
+              [
+                "Rentier international",
+                "Source des revenus et certificat"
+              ],
+              [
+                "Dirigeant actif",
+                "Société, travail, fiscalité"
+              ],
+              [
+                "Acheteur immobilier",
+                "Titre, usage, coûts et rendement"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-2",
+          "title": "Où organiser ses rendez-vous et son logement ?",
+          "body": "Levent et Maslak concentrent des bureaux et services d'affaires ; Gayrettepe et Şişli permettent des correspondances de métro. Pour une vie familiale choisissez selon la distance école–logement–travail, la qualité du bâtiment et l'accès médical. Analysez le risque sismique et l'état documentaire du bâtiment avec un professionnel indépendant avant achat."
+        },
+        {
+          "id": "city-tax-3",
+          "title": "Exemple : allocation d'une réserve de 60 000 €",
+          "body": "Répartir une réserve de première année entre logement et charges 30 000 €, déplacements et démarches 6 000 €, dépenses courantes 15 000 € et réserve de sécurité 9 000 €. Ces enveloppes sont choisies pour illustrer la méthode, sans prévision de rendement ni prix de marché. Les impôts dus et investissements en capital doivent être financés séparément.",
+          "table": {
+            "headers": [
+              "Enveloppe",
+              "Montant hypothétique"
+            ],
+            "rows": [
+              [
+                "Logement et charges",
+                "30 000 €"
+              ],
+              [
+                "Déplacements et démarches",
+                "6 000 €"
+              ],
+              [
+                "Vie courante",
+                "15 000 €"
+              ],
+              [
+                "Réserve",
+                "9 000 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "Banque, société et biens immobiliers",
+          "body": "Préparez documents d'identité, preuves de résidence fiscale, origine des fonds et structure des bénéficiaires effectifs. L'ouverture bancaire reste soumise à la politique de l'établissement. Avant d'acheter, contrôlez le tapu, les restrictions, sûretés et conditions d'usage. Une société turque ou un investissement immobilier ne remplace ni l'autorisation de travail ni le certificat fiscal."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "Calendrier d'une installation",
+          "body": "Avant le déménagement qualifiez les revenus et les obligations du pays de départ ; pendant la visite testez logement, transports et services ; après transfert effectif organisez adresse administrative, statut migratoire et demande fiscale avant l'échéance. Conservez un registre des dépenses et des prélèvements en devises."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Faut-il transférer tout son capital ?",
+          "answer": "Non, étudiez indépendamment les banques et la fiscalité."
+        },
+        {
+          "question": "Le régime 20/D couvre-t-il ma société ?",
+          "answer": "Non, il concerne les personnes physiques."
+        },
+        {
+          "question": "Un achat garantit-il l'ikamet ?",
+          "answer": "Non, l'admissibilité et les pièces sont contrôlées."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "Article 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Communiqué 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Guide fiscal GİB de septembre 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de titres de séjour"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail e-ikamet"
+        },
+        {
+          "href": "https://www.metro.istanbul/en/Hatlarimiz/HatDetay?hat=M2",
+          "label": "Métro M2"
+        },
+        {
+          "href": "https://dhmi.gov.tr/Sayfalar/Havalimani/Istanbul/Ulasim.aspx",
+          "label": "Accès officiel à Istanbul Airport"
+        }
+      ]
+    },
+    "en": {
+      "title": "Living in Istanbul as a foreign investor 2026: assets and relocation",
+      "metaDescription": "Plan an investor move to Istanbul: housing, banking, business, property checks and qualifying 20-year personal tax relief.",
+      "shortAnswer": "Istanbul can be a base for banking, professional and commercial meetings. Separate personal tax residence, ownership of assets and active local business.",
+      "bosphorasHelp": "Bosphoras coordinates exploratory stays, housing selection and independent specialist appointments. Share your assets, activities and relocation timetable for a private assessment.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "Three investor profiles",
+          "body": "A passive investor with qualifying foreign income may assess Article 20/D. A director working from Istanbul must assess pay, corporate presence and work permission. Domestic property investors need local tax and net-yield analysis. No profile automatically qualifies for relief.",
+          "table": {
+            "headers": [
+              "Profile",
+              "Priority"
+            ],
+            "rows": [
+              [
+                "International investor",
+                "Income source and certificate"
+              ],
+              [
+                "Active director",
+                "Company, work and tax"
+              ],
+              [
+                "Property buyer",
+                "Title, use, costs and yield"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-2",
+          "title": "Locate meetings and family housing",
+          "body": "Levent and Maslak have business offices; Gayrettepe and Şişli provide metro connections. For family housing, consider school-to-home-to-work travel, building quality and healthcare access. Obtain independent seismic and title due diligence before buying."
+        },
+        {
+          "id": "city-tax-3",
+          "title": "Illustrative €60,000 first-year reserve",
+          "body": "Allocate €30,000 to housing and building costs, €6,000 to travel and paperwork, €15,000 to everyday expenses and €9,000 to contingency. These are planning envelopes, not market quotes or investment returns. Taxes due and investment capital require separate funding.",
+          "table": {
+            "headers": [
+              "Envelope",
+              "Assumed amount"
+            ],
+            "rows": [
+              [
+                "Housing and charges",
+                "€30,000"
+              ],
+              [
+                "Travel and paperwork",
+                "€6,000"
+              ],
+              [
+                "Living costs",
+                "€15,000"
+              ],
+              [
+                "Reserve",
+                "€9,000"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "Banking, companies and property",
+          "body": "Prepare identity, tax-residence and source-of-funds evidence and beneficial ownership details. Account approval depends on bank policy. Check title deed, restrictions, encumbrances and actual use before purchase. A company or real estate investment does not replace work permission or the tax certificate."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "Relocation sequence",
+          "body": "Before moving, classify income and former-country obligations. During an exploratory stay test housing, transport and services. After genuine relocation arrange address registration, immigration status and tax filing before the deadline. Keep records of costs and withholding in each currency."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Must I transfer all my capital?",
+          "answer": "No; independently assess banking and tax."
+        },
+        {
+          "question": "Does Article 20/D cover my company?",
+          "answer": "No, it is personal relief."
+        },
+        {
+          "question": "Does buying guarantee residence?",
+          "answer": "No, eligibility and documents are assessed."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "Article 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Communiqué 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "September 2026 GİB tax guide"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "e-ikamet portal"
+        },
+        {
+          "href": "https://www.metro.istanbul/en/Hatlarimiz/HatDetay?hat=M2",
+          "label": "M2 metro line"
+        },
+        {
+          "href": "https://dhmi.gov.tr/Sayfalar/Havalimani/Istanbul/Ulasim.aspx",
+          "label": "Istanbul Airport official transport"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Жизнь инвестора в Стамбуле 2026: активы, жильё и переезд",
+      "metaDescription": "Переезд иностранного инвестора: жильё, банк, бизнес, недвижимость и личная налоговая льгота на 20 лет.",
+      "shortAnswer": "Стамбул удобен для встреч с банками, консультантами и деловыми партнёрами. Личное резидентство, владение активами и местная работа требуют отдельной оценки.",
+      "bosphorasHelp": "Bosphoras организует ознакомительные поездки, подбор жилья и встречи с независимыми специалистами. Расскажите об активах, деятельности и сроках переезда для индивидуальной оценки.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "Три профиля инвестора",
+          "body": "Инвестор с подходящими иностранными доходами может изучить статью 20/D. Руководитель, работающий из Стамбула, анализирует вознаграждение, присутствие компании и право на работу. Покупатель местной недвижимости оценивает налоги и чистую доходность. Автоматической льготы нет.",
+          "table": {
+            "headers": [
+              "Профиль",
+              "Приоритет"
+            ],
+            "rows": [
+              [
+                "Международный инвестор",
+                "Источник и сертификат"
+              ],
+              [
+                "Активный руководитель",
+                "Компания, работа, налоги"
+              ],
+              [
+                "Покупатель жилья",
+                "Титул, использование, расходы и доходность"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-2",
+          "title": "Где жить и проводить встречи",
+          "body": "В Левенте и Маслаке много деловых офисов; Гайреттепе и Шишли связаны с метро. Для семьи учитывайте маршруты школа–дом–работа, качество здания и медицину. До покупки закажите независимую проверку сейсмостойкости и документов."
+        },
+        {
+          "id": "city-tax-3",
+          "title": "Пример резерва 60 000 евро на первый год",
+          "body": "Условное распределение: жильё и обслуживание 30 000 евро, поездки и документы 6 000, быт 15 000 и резерв 9 000. Это параметры планирования, а не рыночные котировки; налоги и инвестиционный капитал финансируются отдельно.",
+          "table": {
+            "headers": [
+              "Статья",
+              "Условная сумма"
+            ],
+            "rows": [
+              [
+                "Жильё и обслуживание",
+                "30 000 €"
+              ],
+              [
+                "Поездки и документы",
+                "6 000 €"
+              ],
+              [
+                "Быт",
+                "15 000 €"
+              ],
+              [
+                "Резерв",
+                "9 000 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "Банки, компании и недвижимость",
+          "body": "Подготовьте удостоверение личности, резидентство, источник средств и структуру бенефициаров. Банк принимает решение по своей политике. Проверьте тапу, ограничения, обременения и назначение объекта. Компания или недвижимость не заменяют разрешение на работу и налоговый сертификат."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "Последовательность переезда",
+          "body": "До выезда определите источники доходов и обязательства прежней страны. Во время пробной поездки проверьте жильё, транспорт и услуги. После фактического переезда организуйте регистрацию, миграционный статус и подачу на сертификат в срок. Ведите учёт расходов и удержаний в каждой валюте."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Нужно ли переводить весь капитал?",
+          "answer": "Нет, отдельно оцените банки и налоги."
+        },
+        {
+          "question": "Льгота распространяется на компанию?",
+          "answer": "Нет, на физическое лицо."
+        },
+        {
+          "question": "Гарантирует ли покупка ВНЖ?",
+          "answer": "Нет, проверяются основания и документы."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "Статья 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Разъяснение № 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Руководство GİB за сентябрь 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Категории ВНЖ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Портал e-ikamet"
+        },
+        {
+          "href": "https://www.metro.istanbul/en/Hatlarimiz/HatDetay?hat=M2",
+          "label": "Метро M2"
+        },
+        {
+          "href": "https://dhmi.gov.tr/Sayfalar/Havalimani/Istanbul/Ulasim.aspx",
+          "label": "Официальный транспорт аэропорта Стамбула"
+        }
+      ]
+    },
+    "ar": {
+      "title": "العيش في إسطنبول كمستثمر أجنبي 2026: الأصول والسكن والانتقال",
+      "metaDescription": "انتقال المستثمر إلى إسطنبول: السكن والمصارف والشركات وفحص العقار والإعفاء الشخصي لعشرين عاماً.",
+      "shortAnswer": "تصلح إسطنبول قاعدة للاجتماعات المصرفية والمهنية والتجارية. يجب فصل الإقامة الضريبية الشخصية وملكية الأصول والنشاط المحلي.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلات الاستكشافية واختيار السكن والمواعيد مع مختصين مستقلين. قدم معلومات أصولك ونشاطك وجدول انتقالك للحصول على تقييم خاص.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "ثلاث فئات من المستثمرين",
+          "body": "يدرس المستثمر صاحب الدخل الأجنبي المؤهل المادة 20/D. يحتاج المدير العامل من إسطنبول إلى تقييم الأجر وحضور الشركة وحق العمل. يحلل مستثمر العقار التركي الضريبة المحلية وصافي العائد. لا توجد أهلية تلقائية.",
+          "table": {
+            "headers": [
+              "الفئة",
+              "الأولوية"
+            ],
+            "rows": [
+              [
+                "مستثمر دولي",
+                "المصدر والشهادة"
+              ],
+              [
+                "مدير نشط",
+                "الشركة والعمل والضريبة"
+              ],
+              [
+                "مشتري عقار",
+                "الملكية والاستخدام والتكاليف والعائد"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-2",
+          "title": "موقع السكن والاجتماعات",
+          "body": "تضم ليفنت ومسلك مكاتب أعمال عديدة وتوفر غيرت تبه وشيشلي اتصالاً بالمترو. للأسرة تهم مسافة المدرسة والسكن والعمل وجودة المبنى والرعاية الصحية. اطلب فحصاً مستقلاً للسلامة الزلزالية ووثائق الملكية قبل الشراء."
+        },
+        {
+          "id": "city-tax-3",
+          "title": "مثال احتياط 60 ألف يورو للسنة الأولى",
+          "body": "توزيع افتراضي: 30 ألفاً للسكن والخدمات و6 آلاف للتنقل والوثائق و15 ألفاً للمعيشة و9 آلاف للاحتياط. هذه مخصصات تخطيط لا أسعار سوق أو عوائد استثمار. تمول الضرائب ورأس المال الاستثماري بصورة منفصلة.",
+          "table": {
+            "headers": [
+              "البند",
+              "المبلغ المفترض"
+            ],
+            "rows": [
+              [
+                "السكن والخدمات",
+                "30,000 يورو"
+              ],
+              [
+                "التنقل والوثائق",
+                "6,000 يورو"
+              ],
+              [
+                "المعيشة",
+                "15,000 يورو"
+              ],
+              [
+                "الاحتياط",
+                "9,000 يورو"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "المصارف والشركات والعقارات",
+          "body": "جهز الهوية وإثبات الإقامة الضريبية ومصدر الأموال والمستفيدين الفعليين. يخضع فتح الحساب لسياسة المصرف. افحص الطابو والقيود والرهون والاستخدام. لا تغني الشركة أو العقار عن تصريح العمل أو الشهادة الضريبية."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "تسلسل الانتقال",
+          "body": "قبل المغادرة صنف الدخل والتزامات الدولة السابقة. اختبر السكن والنقل والخدمات في زيارة استكشافية. بعد الانتقال الفعلي نظم تسجيل العنوان والوضع الإداري وطلب الشهادة في الموعد. احتفظ بسجل التكاليف والاقتطاعات بكل عملة."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يجب تحويل كل رأس المال؟",
+          "answer": "لا، ادرس المصارف والضرائب بشكل مستقل."
+        },
+        {
+          "question": "هل تعفى الشركة بموجب المادة 20/D؟",
+          "answer": "لا، الإعفاء شخصي."
+        },
+        {
+          "question": "هل يضمن شراء العقار الإقامة؟",
+          "answer": "لا، تراجع الأهلية والوثائق."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "المادة 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "التعميم 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "الدليل الضريبي سبتمبر 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "فئات الإقامة"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "بوابة الإقامة"
+        },
+        {
+          "href": "https://www.metro.istanbul/en/Hatlarimiz/HatDetay?hat=M2",
+          "label": "خط المترو M2"
+        },
+        {
+          "href": "https://dhmi.gov.tr/Sayfalar/Havalimani/Istanbul/Ulasim.aspx",
+          "label": "النقل الرسمي لمطار إسطنبول"
+        }
+      ]
+    }
+  },
+  "bodrum-tax-residence-investors": {
+    "fr": {
+      "title": "Résidence fiscale à Bodrum 2026 : villas, investissement et vie à l’année",
+      "metaDescription": "S’installer à Bodrum : exonération 20 ans, villa principale ou secondaire, budget saisonnier, accès aéroport et démarches fiscales.",
+      "shortAnswer": "Bodrum ne possède pas de régime fiscal local distinct. Le propriétaire d'une villa peut bénéficier de l'article 20/D seulement si son établissement fiscal réel et son historique répondent aux conditions nationales.",
+      "bosphorasHelp": "Bosphoras organise votre séjour de découverte, la sélection de logements et les rendez-vous avec des professionnels indépendants. Présentez votre patrimoine, votre activité et votre calendrier pour une étude personnalisée.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "Villa de vacances ou foyer permanent ?",
+          "body": "Un bien utilisé quelques semaines n'établit pas automatiquement un domicile fiscal. Pour vivre à l'année, documentez présence, foyer familial, adresse, activité et intérêts. La période précédente de trois années civiles est contrôlée ; la détention antérieure d'un bien ne disqualifie pas systématiquement mais son utilisation comme domicile peut être déterminante."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "Choisir une partie de la péninsule",
+          "body": "Bodrum centre facilite l'accès aux services urbains ; Yalıkavak intéresse les propriétaires appréciant la marina ; Turgutreis constitue une option à l'ouest. Bitez et Ortakent permettent de rechercher un compromis entre vie résidentielle et accès aux services. Testez le quartier en hiver et en été, la qualité de l'eau, l'entretien, la connexion et le trajet vers les soins. DHMİ indique environ 37 km entre l'aéroport BJV et Bodrum centre sur sa page transport."
+        },
+        {
+          "id": "city-tax-3",
+          "title": "Coût annuel : simuler la saisonnalité",
+          "body": "Hypothèse de budget logement, non de prix de marché : 8 mois à 1 500 €/mois et 4 mois à 3 000 €/mois, soit 24 000 €/an. Un contrat annuel à 1 900 €/mois représenterait 22 800 €/an. Comparez les conditions d'occupation, charges, caution et disponibilité avant de choisir.",
+          "table": {
+            "headers": [
+              "Scénario de logement",
+              "Coût annuel"
+            ],
+            "rows": [
+              [
+                "Location saisonnalisée",
+                "24 000 €"
+              ],
+              [
+                "Bail annuel hypothétique",
+                "22 800 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "Acheter ou louer et déclarer les loyers",
+          "body": "Pour une villa, vérifiez le titre, les autorisations, le statut résidentiel, la copropriété, les servitudes, l'adresse enregistrable et l'entretien annuel. Un immeuble turc loué génère un revenu turc hors exonération 20/D. La location résidentielle de courte durée peut nécessiter une autorisation spécifique ; vérifiez avant de publier une annonce."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "Démarches et suivi",
+          "body": "Demandez la résidence administrative appropriée et déposez la demande fiscale dans l'année de l'établissement, avec l'exception de fin février suivante pour novembre/décembre. Conservez preuves de logement et d'occupation, fiscalité antérieure, flux et impôts étrangers. Préparez une solution de soins et de transport hors saison."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Une résidence secondaire suffit-elle pour 20/D ?",
+          "answer": "Non, il faut une résidence fiscale réelle."
+        },
+        {
+          "question": "Louer la villa donne-t-il un revenu étranger ?",
+          "answer": "Non, le bien se situe en Turquie."
+        },
+        {
+          "question": "Le régime est-il différent d'Istanbul ?",
+          "answer": "Non, la loi fiscale est nationale."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "Article 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Communiqué 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Guide fiscal GİB de septembre 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de titres de séjour"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail e-ikamet"
+        },
+        {
+          "href": "https://dhmi.gov.tr/Sayfalar/Havalimani/Milasbodrum/Ulasim.aspx",
+          "label": "Accès officiel à Milas-Bodrum"
+        }
+      ]
+    },
+    "en": {
+      "title": "Bodrum tax residence 2026: villas, investment and year-round living",
+      "metaDescription": "Settle in Bodrum: 20-year relief, primary versus holiday homes, seasonal housing budgets, airport access and tax paperwork.",
+      "shortAnswer": "Bodrum has no separate local personal tax regime. A villa owner can qualify for Article 20/D only if actual tax settlement and prior history satisfy the national rules.",
+      "bosphorasHelp": "Bosphoras coordinates exploratory stays, housing selection and independent specialist appointments. Share your assets, activities and relocation timetable for a private assessment.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "Holiday villa or permanent home?",
+          "body": "A few weeks in an owned property do not automatically establish tax domicile. Document year-round presence, family home, registered address, activity and interests. The preceding three calendar years are tested; previous ownership alone need not disqualify, but actual use as a domicile can matter."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "Choose a peninsula location",
+          "body": "Bodrum centre offers urban services; Yalıkavak appeals to marina-oriented owners; Turgutreis is a western option. Bitez and Ortakent offer residential alternatives. Visit in winter and summer and assess water supply, maintenance, connectivity and access to healthcare. DHMİ's transport page puts BJV airport about 37 km from Bodrum centre."
+        },
+        {
+          "id": "city-tax-3",
+          "title": "Seasonal housing budget example",
+          "body": "Planning assumption, not market price: eight months at €1,500 per month and four at €3,000 total €24,000 per year. A hypothetical annual lease at €1,900 per month costs €22,800. Compare occupancy stability, building charges, deposits and availability.",
+          "table": {
+            "headers": [
+              "Housing scenario",
+              "Annual cost"
+            ],
+            "rows": [
+              [
+                "Seasonal rental",
+                "€24,000"
+              ],
+              [
+                "Hypothetical annual lease",
+                "€22,800"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "Buying, renting and rental income",
+          "body": "Check title, building permits, residential status, shared ownership, rights of way, registrable address and annual maintenance. Rent from Turkish property is domestic-source and outside Article 20/D. Short-term residential letting may require special permission; establish this before advertising."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "Applications and ongoing records",
+          "body": "Arrange suitable immigration residence and file for tax relief in the settlement year, with the following February deadline for November or December arrivals. Keep evidence of actual occupancy, prior tax history, income and foreign withholding. Plan winter healthcare and transport."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is a second home enough?",
+          "answer": "No, genuine tax residence is required."
+        },
+        {
+          "question": "Is rent from a Bodrum villa foreign income?",
+          "answer": "No, the property is located in Turkey."
+        },
+        {
+          "question": "Does Bodrum have different rules from Istanbul?",
+          "answer": "No, the tax law is national."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "Article 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Communiqué 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "September 2026 GİB tax guide"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "e-ikamet portal"
+        },
+        {
+          "href": "https://dhmi.gov.tr/Sayfalar/Havalimani/Milasbodrum/Ulasim.aspx",
+          "label": "Milas-Bodrum official transport"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Налоговое резидентство в Бодруме 2026: виллы и круглогодичная жизнь",
+      "metaDescription": "Переезд в Бодрум: льгота на 20 лет, основное или сезонное жильё, бюджет, аэропорт и документы.",
+      "shortAnswer": "В Бодруме нет отдельного местного режима личного налогообложения. Владелец виллы получает право на статью 20/D только при фактическом налоговом поселении и соблюдении общих требований.",
+      "bosphorasHelp": "Bosphoras организует ознакомительные поездки, подбор жилья и встречи с независимыми специалистами. Расскажите об активах, деятельности и сроках переезда для индивидуальной оценки.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "Вилла для отдыха или постоянное жильё",
+          "body": "Несколько недель в собственном доме не устанавливают автоматически налоговое резидентство. Документируйте проживание, семейный очаг, адрес, деятельность и интересы. Проверяются три предыдущих календарных года. Прежнее владение само по себе не исключает льготу, но использование как постоянного жилья имеет значение."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "Районы полуострова",
+          "body": "Центр Бодрума удобен городскими услугами, Ялыкавак — близостью к марине, Тургутрейс расположен на западе. Битез и Ортакент также подходят для изучения. Посетите район зимой и летом, проверьте воду, обслуживание, интернет и доступ к врачам. По данным транспортной страницы DHMİ, аэропорт BJV примерно в 37 км от центра Бодрума."
+        },
+        {
+          "id": "city-tax-3",
+          "title": "Пример сезонного бюджета",
+          "body": "Условные параметры, не рыночные цены: восемь месяцев по 1 500 евро и четыре по 3 000 дают 24 000 евро в год. Годовой договор по 1 900 евро в месяц стоил бы 22 800. Сравните стабильность проживания, сборы, депозит и доступность.",
+          "table": {
+            "headers": [
+              "Сценарий",
+              "Годовые затраты"
+            ],
+            "rows": [
+              [
+                "Сезонная аренда",
+                "24 000 €"
+              ],
+              [
+                "Условный годовой договор",
+                "22 800 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "Покупка, аренда и доход",
+          "body": "Проверьте титул, строительные разрешения, назначение, общую собственность, обременения, регистрацию и обслуживание. Аренда турецкого объекта даёт турецкий доход вне статьи 20/D. Для краткосрочной сдачи жилья может требоваться специальное разрешение; проверьте до размещения объявления."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "Оформление и учёт",
+          "body": "Оформите подходящий ВНЖ и подайте на налоговую льготу в год поселения; для ноября и декабря срок — конец следующего февраля. Храните доказательства проживания, прежних налогов, доходов и удержаний. Продумайте медицину и транспорт зимой."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Достаточно ли второго дома?",
+          "answer": "Нет, нужно фактическое налоговое резидентство."
+        },
+        {
+          "question": "Является ли аренда виллы в Бодруме иностранным доходом?",
+          "answer": "Нет, объект в Турции."
+        },
+        {
+          "question": "Отличаются ли правила от Стамбула?",
+          "answer": "Нет, закон общенациональный."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "Статья 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Разъяснение № 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Руководство GİB за сентябрь 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Категории ВНЖ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Портал e-ikamet"
+        },
+        {
+          "href": "https://dhmi.gov.tr/Sayfalar/Havalimani/Milasbodrum/Ulasim.aspx",
+          "label": "Транспорт аэропорта Милас-Бодрум"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الإقامة الضريبية في بودروم 2026: الفلل والاستثمار والعيش طوال العام",
+      "metaDescription": "الانتقال إلى بودروم وإعفاء عشرين عاماً والسكن الرئيسي أو الموسمي والميزانية والمطار والوثائق.",
+      "shortAnswer": "لا يوجد في بودروم نظام ضريبي شخصي محلي مستقل. يستفيد مالك الفيلا من المادة 20/D عند استيفاء الاستقرار الضريبي الفعلي والشروط الوطنية السابقة.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلات الاستكشافية واختيار السكن والمواعيد مع مختصين مستقلين. قدم معلومات أصولك ونشاطك وجدول انتقالك للحصول على تقييم خاص.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "فيلا للعطلات أم مسكن دائم؟",
+          "body": "لا تثبت بضعة أسابيع في منزل مملوك الموطن الضريبي تلقائياً. وثق الوجود ومقر الأسرة والعنوان والنشاط والمصالح. تراجع السنوات الثلاث السابقة؛ لا تمنع الملكية السابقة الإعفاء تلقائياً لكن استخدام العقار موطناً دائماً مهم."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "اختيار منطقة شبه الجزيرة",
+          "body": "يوفر مركز بودروم الخدمات الحضرية وتناسب ياليكافاك محبي المارينا وتقع تورغوت رئيس غرباً. تستحق بيتز وأورتاكينت الدراسة للسكن. زر المنطقة صيفاً وشتاءً وافحص المياه والصيانة والإنترنت والوصول للرعاية. تشير صفحة النقل الرسمية DHMİ إلى نحو 37 كم بين مطار BJV ومركز بودروم."
+        },
+        {
+          "id": "city-tax-3",
+          "title": "مثال لميزانية السكن الموسمية",
+          "body": "افتراض تخطيطي لا سعر سوق: ثمانية أشهر بـ1,500 يورو وأربعة بـ3,000 شهرياً تساوي 24 ألفاً سنوياً. عقد سنوي افتراضي بـ1,900 شهرياً يكلف 22,800. قارن الاستقرار والرسوم والتأمين المالي والتوافر.",
+          "table": {
+            "headers": [
+              "السيناريو",
+              "التكلفة السنوية"
+            ],
+            "rows": [
+              [
+                "إيجار موسمي",
+                "24,000 يورو"
+              ],
+              [
+                "عقد سنوي افتراضي",
+                "22,800 يورو"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "الشراء والإيجار والدخل",
+          "body": "افحص الملكية والتراخيص والصفة السكنية والملكية المشتركة والحقوق والعنوان والصيانة. يعد إيجار العقار التركي دخلاً تركياً خارج المادة 20/D. قد يتطلب التأجير القصير ترخيصاً خاصاً فتحقق قبل الإعلان."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "الإجراءات والسجلات",
+          "body": "رتب الإقامة الإدارية المناسبة وقدم طلب الإعفاء في سنة الاستقرار أو قبل نهاية فبراير التالي لمن يستقر في نوفمبر أو ديسمبر. احتفظ بإثبات السكن والضرائب السابقة والدخل والاقتطاعات. خطط للرعاية والنقل شتاءً."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل يكفي المنزل الثانوي؟",
+          "answer": "لا، يلزم استقرار ضريبي فعلي."
+        },
+        {
+          "question": "هل دخل فيلا بودروم أجنبي؟",
+          "answer": "لا، العقار في تركيا."
+        },
+        {
+          "question": "هل تختلف القواعد عن إسطنبول؟",
+          "answer": "لا، القانون وطني."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "المادة 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "التعميم 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "الدليل الضريبي سبتمبر 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "فئات الإقامة"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "بوابة الإقامة"
+        },
+        {
+          "href": "https://dhmi.gov.tr/Sayfalar/Havalimani/Milasbodrum/Ulasim.aspx",
+          "label": "النقل الرسمي لمطار ميلاس بودروم"
+        }
+      ]
+    }
+  },
+  "antalya-tax-residence-expats": {
+    "fr": {
+      "title": "Résidence fiscale à Antalya 2026 : expatriés, retraités et familles",
+      "metaDescription": "Vivre à Antalya toute l’année : résidence fiscale, exonération 20 ans, pensions, assurance, quartiers et simulation du budget familial.",
+      "shortAnswer": "Antalya applique la fiscalité nationale turque. Le statut de retraité ou d'expatrié ne garantit pas l'article 20/D ; la résidence effective, les trois années précédentes et la nature de chaque revenu sont déterminantes.",
+      "bosphorasHelp": "Bosphoras organise votre séjour de découverte, la sélection de logements et les rendez-vous avec des professionnels indépendants. Présentez votre patrimoine, votre activité et votre calendrier pour une étude personnalisée.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "Pension, revenus du capital et activité",
+          "body": "Une pension étrangère doit être analysée selon son régime et la convention du pays payeur, notamment pour distinguer pensions privées et publiques. Les revenus étrangers admissibles peuvent bénéficier de l'article 20/D. Une rémunération pour un travail exercé physiquement en Turquie n'est pas exonérée du seul fait du payeur étranger."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "Choisir où vivre",
+          "body": "Konyaaltı convient aux personnes recherchant un environnement littoral urbain ; Muratpaşa et Lara offrent d'autres configurations résidentielles, tandis que certains secteurs de Kepez éloignent du bord de mer. Testez accès aux soins, écoles, commerces, transports et qualité du bâtiment. Vérifiez l'enregistrement de l'adresse avant engagement."
+        },
+        {
+          "id": "city-tax-3",
+          "title": "Budget mensuel et annuel : deux foyers fictifs",
+          "body": "Exemple de limites de dépenses, sans prétention de représenter les loyers du marché : un couple prévoit 2 200 €/mois et une famille 3 200 €/mois. Cela donne 26 400 € et 38 400 € par an. École privée, dépenses médicales exceptionnelles, impôts et déménagement doivent être budgétés séparément.",
+          "table": {
+            "headers": [
+              "Foyer fictif",
+              "Budget mensuel",
+              "Budget annuel"
+            ],
+            "rows": [
+              [
+                "Couple",
+                "2 200 €",
+                "26 400 €"
+              ],
+              [
+                "Famille",
+                "3 200 €",
+                "38 400 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "Santé, assurance et séjour",
+          "body": "Comparez couverture des maladies préexistantes, plafonds, médicaments et exclusions, particulièrement pour une retraite. Les dispenses de fourniture d'un justificatif d'assurance ne signifient pas gratuité des soins. Un retraité doit avoir un motif légal admissible de séjour, sans visa retraite autonome dans la classification générale."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "Préparer le transfert fiscal",
+          "body": "Conservez preuves de domicile antérieur, avis fiscaux, pension, revenus et logement. Déclarez les revenus turcs selon leur nature ; les revenus étrangers couverts sont exclus de la déclaration turque. Vérifiez l'imposition persistante dans le pays d'origine et déposez le certificat avant le délai du communiqué 333."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Antalya est-elle fiscalement différente ?",
+          "answer": "Non, le régime 20/D est national."
+        },
+        {
+          "question": "Ma pension est-elle forcément exonérée ?",
+          "answer": "Non, elle dépend de la qualification et de la convention."
+        },
+        {
+          "question": "Dois-je acheter pour m'installer ?",
+          "answer": "Pas pour l'exonération fiscale ; le titre de séjour a des critères propres."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "Article 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Communiqué 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Guide fiscal GİB de septembre 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Types de titres de séjour"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Portail e-ikamet"
+        }
+      ]
+    },
+    "en": {
+      "title": "Antalya tax residence 2026: expats, retirees and families",
+      "metaDescription": "Live in Antalya year-round: tax residence, 20-year relief, overseas pensions, insurance, neighbourhoods and household budget examples.",
+      "shortAnswer": "Antalya follows national Turkish tax law. Retiree or expatriate status does not guarantee Article 20/D: actual residence, prior three-year history and income classification determine eligibility.",
+      "bosphorasHelp": "Bosphoras coordinates exploratory stays, housing selection and independent specialist appointments. Share your assets, activities and relocation timetable for a private assessment.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "Pensions, investment income and work",
+          "body": "Assess overseas pensions under their scheme and source-country treaty, particularly private versus public pensions. Qualifying foreign income can receive Article 20/D relief. Work physically performed in Turkey is not exempt merely because the payer is abroad."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "Select a neighbourhood",
+          "body": "Konyaaltı offers an urban coastal setting; Muratpaşa and Lara provide other residential settings, while parts of Kepez are further from the waterfront. Test healthcare, schools, shops, transport and building quality. Confirm whether the address is registrable before committing."
+        },
+        {
+          "id": "city-tax-3",
+          "title": "Illustrative monthly and annual spending",
+          "body": "Chosen planning limits, not market rents: a couple allocates €2,200 per month and a family €3,200. Annual totals are €26,400 and €38,400. Private schooling, extraordinary medical costs, taxes and relocation costs may be additional.",
+          "table": {
+            "headers": [
+              "Hypothetical household",
+              "Monthly budget",
+              "Annual budget"
+            ],
+            "rows": [
+              [
+                "Couple",
+                "€2,200",
+                "€26,400"
+              ],
+              [
+                "Family",
+                "€3,200",
+                "€38,400"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "Healthcare and immigration",
+          "body": "Compare pre-existing condition coverage, caps, medication and exclusions, especially for retirement. Exemption from an insurance-document requirement does not mean free healthcare. Retirees need a qualifying legal residence basis; the general visa classification has no standalone retirement visa."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "Prepare the tax move",
+          "body": "Retain prior domicile and tax evidence, pensions, income and housing records. Report Turkish income according to its category; qualifying overseas income is excluded from Turkish returns. Check continuing source-country taxation and file for the certificate within Communiqué 333 deadlines."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Does Antalya have different tax rules?",
+          "answer": "No, Article 20/D is national."
+        },
+        {
+          "question": "Is my pension automatically exempt?",
+          "answer": "No, classification and treaty rules matter."
+        },
+        {
+          "question": "Must I buy property?",
+          "answer": "Not for tax relief; immigration requirements are separate."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "Article 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Communiqué 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "September 2026 GİB tax guide"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Residence permit categories"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "e-ikamet portal"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Налоговое резидентство в Анталье 2026: экспаты, пенсионеры и семьи",
+      "metaDescription": "Круглогодичная жизнь в Анталье: резидентство, льгота на 20 лет, пенсии, страховка, районы и пример бюджета.",
+      "shortAnswer": "В Анталье действуют национальные налоговые правила. Статус пенсионера или экспата не гарантирует статью 20/D: важны фактическое поселение, три прежних года и вид дохода.",
+      "bosphorasHelp": "Bosphoras организует ознакомительные поездки, подбор жилья и встречи с независимыми специалистами. Расскажите об активах, деятельности и сроках переезда для индивидуальной оценки.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "Пенсии, капитал и работа",
+          "body": "Зарубежная пенсия оценивается по её виду и соглашению со страной источника, в частности частная или государственная. Подходящие зарубежные доходы могут освобождаться по статье 20/D. Работа, выполняемая в Турции, не освобождается только из-за иностранного плательщика."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "Выбор района",
+          "body": "Коньяалты подходит для городской жизни у моря; Муратпаша и Лара предлагают другие варианты, а часть Кепеза находится дальше от побережья. Проверьте медицину, школы, магазины, транспорт и качество здания. До сделки уточните регистрацию адреса."
+        },
+        {
+          "id": "city-tax-3",
+          "title": "Пример месячного и годового бюджета",
+          "body": "Условные лимиты, не рыночные цены: пара планирует 2 200 евро в месяц, семья — 3 200. В год это 26 400 и 38 400 евро. Частная школа, необычные медицинские расходы, налоги и переезд учитываются отдельно.",
+          "table": {
+            "headers": [
+              "Условная семья",
+              "В месяц",
+              "В год"
+            ],
+            "rows": [
+              [
+                "Пара",
+                "2 200 €",
+                "26 400 €"
+              ],
+              [
+                "Семья",
+                "3 200 €",
+                "38 400 €"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "Медицина и миграция",
+          "body": "Сравните покрытие хронических заболеваний, лимиты, лекарства и исключения, особенно на пенсии. Освобождение от предъявления страховки не означает бесплатное лечение. Пенсионеру нужен допустимый миграционный статус: отдельной пенсионной визы в общей классификации нет."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "Подготовка налогового переезда",
+          "body": "Храните подтверждения прежнего места жительства, налогов, пенсий, доходов и жилья. Турецкие доходы декларируются по своей категории, подходящие зарубежные исключаются из декларации. Проверьте налоги страны источника и подайте на сертификат в срок разъяснения № 333."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Отличаются ли налоги Антальи?",
+          "answer": "Нет, статья 20/D общенациональная."
+        },
+        {
+          "question": "Всегда ли пенсия освобождена?",
+          "answer": "Нет, важны вид пенсии и соглашение."
+        },
+        {
+          "question": "Нужно ли покупать жильё?",
+          "answer": "Не для льготы; условия ВНЖ отдельные."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "Статья 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Разъяснение № 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Руководство GİB за сентябрь 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "Категории ВНЖ"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "Портал e-ikamet"
+        }
+      ]
+    },
+    "ar": {
+      "title": "الإقامة الضريبية في أنطاليا 2026: المغتربون والمتقاعدون والأسر",
+      "metaDescription": "العيش في أنطاليا طوال العام والإعفاء لعشرين عاماً والمعاش والتأمين والأحياء وأمثلة ميزانية الأسرة.",
+      "shortAnswer": "تطبق أنطاليا القانون الضريبي الوطني. لا يضمن وضع المتقاعد أو المغترب المادة 20/D؛ يهم الاستقرار الفعلي والسنوات الثلاث السابقة وتصنيف الدخل.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلات الاستكشافية واختيار السكن والمواعيد مع مختصين مستقلين. قدم معلومات أصولك ونشاطك وجدول انتقالك للحصول على تقييم خاص.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "المعاش ورأس المال والعمل",
+          "body": "يدرس المعاش الأجنبي بحسب نظامه والاتفاقية مع بلد المصدر وخاصة الفرق بين المعاش الخاص والحكومي. قد يستفيد الدخل الأجنبي المؤهل من المادة 20/D. لا يعفى العمل المنفذ في تركيا لمجرد أن الجهة الدافعة أجنبية."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "اختيار الحي",
+          "body": "توفر كونيالتي بيئة حضرية ساحلية وتقدم مراد باشا ولارا خيارات سكنية أخرى، بينما تبعد بعض أجزاء كيبيز عن الساحل. اختبر الرعاية والمدارس والمتاجر والنقل وجودة المبنى. تحقق من تسجيل العنوان قبل الالتزام."
+        },
+        {
+          "id": "city-tax-3",
+          "title": "مثال للميزانية الشهرية والسنوية",
+          "body": "حدود تخطيط افتراضية وليست أسعار سوق: يخصص زوجان 2,200 يورو شهرياً وأسرة 3,200. تبلغ التكاليف السنوية 26,400 و38,400 يورو. تحسب المدرسة الخاصة والعلاج الاستثنائي والضرائب والانتقال بشكل منفصل.",
+          "table": {
+            "headers": [
+              "أسرة افتراضية",
+              "شهرياً",
+              "سنوياً"
+            ],
+            "rows": [
+              [
+                "زوجان",
+                "2,200 يورو",
+                "26,400 يورو"
+              ],
+              [
+                "أسرة",
+                "3,200 يورو",
+                "38,400 يورو"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "الصحة والإقامة",
+          "body": "قارن تغطية الأمراض السابقة والسقوف والأدوية والاستثناءات خصوصاً عند التقاعد. لا يعني الإعفاء من تقديم التأمين أن العلاج مجاني. يحتاج المتقاعد إلى أساس إقامة مؤهل ولا توجد تأشيرة تقاعد مستقلة في التصنيف العام."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "تهيئة الانتقال الضريبي",
+          "body": "احتفظ بإثباتات الموطن والضرائب السابقة والمعاش والدخل والسكن. يصرح بالدخل التركي حسب نوعه ويستبعد الدخل الأجنبي المؤهل من الإقرار التركي. راجع ضرائب بلد المصدر وقدم طلب الشهادة في مواعيد التعميم 333."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل تختلف ضرائب أنطاليا؟",
+          "answer": "لا، المادة 20/D وطنية."
+        },
+        {
+          "question": "هل المعاش معفى تلقائياً؟",
+          "answer": "لا، يتوقف على التصنيف والاتفاقية."
+        },
+        {
+          "question": "هل يلزم شراء عقار؟",
+          "answer": "ليس للإعفاء الضريبي؛ شروط الإقامة منفصلة."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "المادة 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "التعميم 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "الدليل الضريبي سبتمبر 2026"
+        },
+        {
+          "href": "https://en.goc.gov.tr/residence-permit-types",
+          "label": "فئات الإقامة"
+        },
+        {
+          "href": "https://e-ikamet.goc.gov.tr/",
+          "label": "بوابة الإقامة"
+        }
+      ]
+    }
+  },
+  "istanbul-or-dubai-investors": {
+    "fr": {
+      "title": "Istanbul ou Dubaï en 2026 : fiscalité, résidence et choix des investisseurs",
+      "metaDescription": "Comparez Istanbul et Dubaï : exonération turque 20 ans, résidence fiscale aux Émirats, seuil de 1 million AED et impôt de 9 %.",
+      "shortAnswer": "Pour un investisseur, Istanbul et Dubaï ne présentent pas les mêmes règles. La Turquie exonère certains revenus étrangers personnels pendant vingt ans sous conditions. Aux Émirats, le salaire et les investissements personnels admissibles sont hors champ de l'impôt sur les sociétés, tandis que l'activité commerciale peut être imposée.",
+      "bosphorasHelp": "Bosphoras organise votre séjour de découverte, la sélection de logements et les rendez-vous avec des professionnels indépendants. Présentez votre patrimoine, votre activité et votre calendrier pour une étude personnalisée.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "Comparer la résidence, pas seulement les visas",
+          "body": "En Turquie, domicile ou présence continue supérieure à six mois dans une année civile peuvent établir la résidence, sous réserve des exceptions. Pour l'exonération 20/D il faut notamment respecter le test des trois années antérieures et le certificat. Aux Émirats, les voies domestiques comprennent 183 jours sur douze mois, ou 90 jours avec statut admissible et logement permanent ou emploi/activité, ou résidence principale et centre des intérêts. Les conventions peuvent ajouter leurs propres tests."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "Tableau fiscal par nature de revenu",
+          "body": "Il ne s'agit pas d'un classement universel ; les impôts étrangers et les conventions continuent à s'appliquer.",
+          "table": {
+            "headers": [
+              "Revenu",
+              "Istanbul",
+              "Dubaï"
+            ],
+            "rows": [
+              [
+                "Dividendes étrangers personnels",
+                "20/D si éligible",
+                "Investissement personnel admissible hors CT"
+              ],
+              [
+                "Salaire local",
+                "Droit commun turc",
+                "Hors CT des personnes physiques"
+              ],
+              [
+                "Location locale privée",
+                "Droit commun turc",
+                "Investissement immobilier admissible hors CT"
+              ],
+              [
+                "Activité commerciale individuelle",
+                "Règles ordinaires",
+                "CT si CA UAE > 1 million AED"
+              ],
+              [
+                "Certificat",
+                "Certificat 20/D distinct",
+                "TRC via FTA"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-3",
+          "title": "Exemple du barème émirati pour activité imposable",
+          "body": "Si l'activité individuelle dépasse le seuil de chiffre d'affaires d'un million AED et que ses bénéfices nets imposables sont soumis au barème ordinaire sans autre incitation, la première tranche de 375 000 AED est à 0 %, le surplus à 9 %. Le tableau ne concerne ni les salaires ni les investissements personnels admissibles. Il exclut les allègements spécifiques.",
+          "table": {
+            "headers": [
+              "Bénéfice imposable",
+              "Impôt indicatif"
+            ],
+            "rows": [
+              [
+                "375 000 AED",
+                "0 AED"
+              ],
+              [
+                "500 000 AED",
+                "11 250 AED"
+              ],
+              [
+                "1 000 000 AED",
+                "56 250 AED"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "Certificat, coût et organisation",
+          "body": "La FTA affiche 50 AED de dépôt et 1 000 AED pour le traitement du certificat électronique d'une personne physique non enregistrée à l'impôt sur les sociétés, ou 500 AED pour un contribuable enregistré. Ce ne sont pas des frais de visa. Comparez aussi bail, santé, scolarité, nombre de vols nécessaires, devise de dépenses et contraintes d'activité réelle."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "Choisir en fonction du profil",
+          "body": "Pour une famille vivant de revenus passifs étrangers, vérifiez l'historique turc, le pays de source et les conditions du nouveau foyer. Pour un entrepreneur de services, identifiez le lieu réel du travail, la société et les obligations locales. Une implantation à Dubaï sur papier ne résout pas un domicile ailleurs. Comparez un budget annuel complet et le revenu disponible après impôts dans les deux pays."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Dubaï est-il toujours à 0 % ?",
+          "answer": "Non, l'activité commerciale peut être imposable."
+        },
+        {
+          "question": "Istanbul offre-t-elle 20 ans sans impôt sur tous les revenus ?",
+          "answer": "Non, seulement les revenus étrangers admissibles."
+        },
+        {
+          "question": "Les 90 jours aux Émirats suffisent-ils toujours ?",
+          "answer": "Non, la voie de 90 jours exige des critères supplémentaires."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "Article 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Communiqué 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Guide fiscal GİB de septembre 2026"
+        },
+        {
+          "href": "https://www.tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/basis.of.taxation.natural.person.aspx",
+          "label": "Émirats : fiscalité des personnes physiques"
+        },
+        {
+          "href": "https://www.tax.gov.ae/en/services/issuance.of.tax.certificates.aspx",
+          "label": "Émirats : certificat fiscal et tarifs"
+        },
+        {
+          "href": "https://tax.gov.ae/en/faq.aspx?keyword=What+are+the+UAE+CT+rates",
+          "label": "Émirats : barème de l’impôt sur les sociétés"
+        }
+      ]
+    },
+    "en": {
+      "title": "Istanbul vs Dubai for investors 2026: tax, residence and relocation",
+      "metaDescription": "Compare Turkey’s 20-year foreign-income exemption with UAE residence rules, AED 1 million business threshold and 9% corporate tax.",
+      "shortAnswer": "Istanbul and Dubai follow different tax rules. Turkey offers conditional twenty-year relief for qualifying personal foreign income. UAE wages and qualifying personal investments are outside corporate tax, while business activity can be taxable.",
+      "bosphorasHelp": "Bosphoras coordinates exploratory stays, housing selection and independent specialist appointments. Share your assets, activities and relocation timetable for a private assessment.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "Compare tax residence, not just visas",
+          "body": "Turkey considers domicile or continuous presence above six months within a calendar year, subject to exceptions. Article 20/D also requires prior three-year eligibility and certification. UAE domestic routes include 183 days in twelve months; 90 days with eligible nationality or residence status and permanent home or employment/business; or primary residence and centre of interests. Treaties may set additional requirements."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "Tax comparison by income type",
+          "body": "Source-country tax and treaties remain relevant, so this is not a universal ranking.",
+          "table": {
+            "headers": [
+              "Income",
+              "Istanbul",
+              "Dubai"
+            ],
+            "rows": [
+              [
+                "Personal foreign dividends",
+                "20/D if eligible",
+                "Qualifying personal investment outside CT"
+              ],
+              [
+                "Local wages",
+                "Ordinary Turkish law",
+                "Outside individual CT"
+              ],
+              [
+                "Private local rent",
+                "Ordinary Turkish law",
+                "Qualifying real estate investment outside CT"
+              ],
+              [
+                "Individual business",
+                "Ordinary rules",
+                "CT if UAE turnover > AED 1 million"
+              ],
+              [
+                "Certificate",
+                "Separate 20/D certificate",
+                "FTA tax residence certificate"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-3",
+          "title": "UAE taxable-business tariff example",
+          "body": "For a natural person exceeding the AED 1 million turnover threshold, with net taxable profit subject to ordinary rates and no other relief, the first AED 375,000 is taxed at 0% and the excess at 9%. This example excludes wages, qualifying private investments and specific reliefs.",
+          "table": {
+            "headers": [
+              "Taxable profit",
+              "Indicative tax"
+            ],
+            "rows": [
+              [
+                "AED 375,000",
+                "AED 0"
+              ],
+              [
+                "AED 500,000",
+                "AED 11,250"
+              ],
+              [
+                "AED 1,000,000",
+                "AED 56,250"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "Certificate fees and living arrangements",
+          "body": "FTA lists an AED 50 application fee plus AED 1,000 for an electronic certificate for an unregistered natural person, or AED 500 for a corporate-tax registrant. These are not visa fees. Compare lease, healthcare, schooling, travel needs, spending currencies and real operating requirements."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "Choose according to your circumstances",
+          "body": "Passive-income families should check Turkish tax history, source taxation and the new household. Service entrepreneurs should assess actual work location, company structure and local duties. A nominal Dubai entity does not resolve domicile elsewhere. Compare complete annual costs and income after taxes in both jurisdictions."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Is Dubai always tax-free?",
+          "answer": "No, business activities can be taxable."
+        },
+        {
+          "question": "Does Istanbul exempt every income stream?",
+          "answer": "No, only qualifying foreign income."
+        },
+        {
+          "question": "Are 90 UAE days always enough?",
+          "answer": "No, that route has additional requirements."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "Article 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Communiqué 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "September 2026 GİB tax guide"
+        },
+        {
+          "href": "https://www.tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/basis.of.taxation.natural.person.aspx",
+          "label": "UAE taxation of natural persons"
+        },
+        {
+          "href": "https://www.tax.gov.ae/en/services/issuance.of.tax.certificates.aspx",
+          "label": "UAE tax residence certificate"
+        },
+        {
+          "href": "https://tax.gov.ae/en/faq.aspx?keyword=What+are+the+UAE+CT+rates",
+          "label": "UAE corporate tax rates"
+        }
+      ]
+    },
+    "ru": {
+      "title": "Стамбул или Дубай для инвестора 2026: налоги, резидентство и переезд",
+      "metaDescription": "Сравните льготу Турции на 20 лет, правила ОАЭ, порог оборота 1 млн дирхамов и корпоративный налог 9%.",
+      "shortAnswer": "Стамбул и Дубай применяют разные правила. Турция освобождает подходящие иностранные личные доходы на двадцать лет при соблюдении условий. В ОАЭ зарплата и подходящие личные инвестиции вне корпоративного налога, но бизнес может облагаться.",
+      "bosphorasHelp": "Bosphoras организует ознакомительные поездки, подбор жилья и встречи с независимыми специалистами. Расскажите об активах, деятельности и сроках переезда для индивидуальной оценки.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "Резидентство, а не только виза",
+          "body": "В Турции оцениваются место жительства или непрерывное пребывание свыше шести месяцев календарного года с исключениями. Статья 20/D требует проверки трёх прошлых лет и сертификат. В ОАЭ внутренние критерии включают 183 дня за 12 месяцев, либо 90 дней при подходящем статусе и постоянном жилье или работе/бизнесе, либо основной дом и центр интересов. Соглашения могут устанавливать свои условия."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "Сравнение по видам дохода",
+          "body": "Налоги у источника и соглашения сохраняют значение; универсального рейтинга нет.",
+          "table": {
+            "headers": [
+              "Доход",
+              "Стамбул",
+              "Дубай"
+            ],
+            "rows": [
+              [
+                "Личные зарубежные дивиденды",
+                "20/D при соответствии",
+                "Подходящие личные инвестиции вне CT"
+              ],
+              [
+                "Местная зарплата",
+                "Общие правила",
+                "Вне CT физлиц"
+              ],
+              [
+                "Частная местная аренда",
+                "Общие правила",
+                "Подходящие инвестиции в недвижимость вне CT"
+              ],
+              [
+                "Индивидуальный бизнес",
+                "Общие правила",
+                "CT при обороте ОАЭ > 1 млн AED"
+              ],
+              [
+                "Сертификат",
+                "Отдельный 20/D",
+                "Сертификат FTA"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-3",
+          "title": "Пример шкалы ОАЭ для облагаемого бизнеса",
+          "body": "Если оборот деятельности физлица превышает 1 млн дирхамов, а чистая облагаемая прибыль подпадает под обычные ставки без других льгот, первые 375 000 дирхамов облагаются по 0%, превышение — по 9%. Пример не охватывает зарплату и подходящие личные инвестиции.",
+          "table": {
+            "headers": [
+              "Облагаемая прибыль",
+              "Расчётный налог"
+            ],
+            "rows": [
+              [
+                "375 000 AED",
+                "0 AED"
+              ],
+              [
+                "500 000 AED",
+                "11 250 AED"
+              ],
+              [
+                "1 000 000 AED",
+                "56 250 AED"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "Сертификат и бытовые расходы",
+          "body": "FTA указывает сбор 50 дирхамов за подачу и 1 000 за электронный сертификат физлица без регистрации по CT либо 500 для зарегистрированного плательщика. Это не визовые сборы. Сравните жильё, медицину, школу, перелёты, валюты расходов и требования реального бизнеса."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "Выбор по обстоятельствам",
+          "body": "Семье с пассивными доходами важно проверить турецкую историю, налоги источника и новый дом. Предпринимателю услуг — место работы, компанию и обязанности. Формальная компания в Дубае не устраняет резидентство в другой стране. Сравните полный годовой бюджет после налогов."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Дубай всегда без налогов?",
+          "answer": "Нет, бизнес может облагаться."
+        },
+        {
+          "question": "В Стамбуле освобождаются все доходы?",
+          "answer": "Нет, только подходящие иностранные доходы."
+        },
+        {
+          "question": "Всегда ли достаточно 90 дней в ОАЭ?",
+          "answer": "Нет, необходимы дополнительные условия."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "Статья 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "Разъяснение № 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "Руководство GİB за сентябрь 2026"
+        },
+        {
+          "href": "https://www.tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/basis.of.taxation.natural.person.aspx",
+          "label": "ОАЭ: налоги физических лиц"
+        },
+        {
+          "href": "https://www.tax.gov.ae/en/services/issuance.of.tax.certificates.aspx",
+          "label": "ОАЭ: налоговый сертификат"
+        },
+        {
+          "href": "https://tax.gov.ae/en/faq.aspx?keyword=What+are+the+UAE+CT+rates",
+          "label": "ОАЭ: ставки корпоративного налога"
+        }
+      ]
+    },
+    "ar": {
+      "title": "إسطنبول أم دبي للمستثمرين 2026: الضرائب والإقامة والانتقال",
+      "metaDescription": "قارن الإعفاء التركي لعشرين عاماً وشروط الإقامة الإماراتية وحد مليون درهم للنشاط وضريبة الشركات 9%.",
+      "shortAnswer": "تختلف القواعد بين إسطنبول ودبي. تعفي تركيا الدخل الشخصي الأجنبي المؤهل لعشرين عاماً بشروط. في الإمارات تخرج الرواتب والاستثمارات الشخصية المؤهلة من ضريبة الشركات بينما قد يخضع النشاط التجاري.",
+      "bosphorasHelp": "تنسق Bosphoras الرحلات الاستكشافية واختيار السكن والمواعيد مع مختصين مستقلين. قدم معلومات أصولك ونشاطك وجدول انتقالك للحصول على تقييم خاص.",
+      "sections": [
+        {
+          "id": "city-tax-1",
+          "title": "مقارنة الإقامة لا التأشيرة فقط",
+          "body": "تدرس تركيا الموطن أو البقاء المتواصل أكثر من ستة أشهر في سنة تقويمية مع الاستثناءات. تشترط المادة 20/D تاريخ السنوات الثلاث والشهادة. تشمل المسارات الإماراتية الداخلية 183 يوماً خلال 12 شهراً، أو 90 يوماً مع وضع مؤهل ومسكن دائم أو عمل أو نشاط، أو مسكن رئيسي ومركز مصالح. قد تضيف الاتفاقيات شروطاً خاصة."
+        },
+        {
+          "id": "city-tax-2",
+          "title": "مقارنة حسب نوع الدخل",
+          "body": "تظل ضرائب المصدر والاتفاقيات ذات أثر، ولا توجد أفضلية مطلقة للجميع.",
+          "table": {
+            "headers": [
+              "الدخل",
+              "إسطنبول",
+              "دبي"
+            ],
+            "rows": [
+              [
+                "توزيعات شخصية أجنبية",
+                "20/D عند الأهلية",
+                "استثمار شخصي مؤهل خارج CT"
+              ],
+              [
+                "راتب محلي",
+                "القواعد التركية العامة",
+                "خارج CT للأفراد"
+              ],
+              [
+                "إيجار محلي خاص",
+                "القواعد التركية العامة",
+                "استثمار عقاري مؤهل خارج CT"
+              ],
+              [
+                "نشاط فردي تجاري",
+                "القواعد العامة",
+                "CT عند تجاوز الإيراد مليون درهم"
+              ],
+              [
+                "الشهادة",
+                "شهادة 20/D مستقلة",
+                "شهادة FTA"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-3",
+          "title": "مثال ضريبة النشاط الإماراتي",
+          "body": "عند تجاوز إيراد نشاط الفرد مليون درهم وخضوع صافي الربح للشرائح العادية دون إعفاء آخر، تطبق نسبة صفر على أول 375 ألف درهم و9% على الزائد. لا يمثل المثال الرواتب أو الاستثمارات الخاصة المؤهلة.",
+          "table": {
+            "headers": [
+              "الربح الخاضع",
+              "الضريبة التوضيحية"
+            ],
+            "rows": [
+              [
+                "375,000 درهم",
+                "0 درهم"
+              ],
+              [
+                "500,000 درهم",
+                "11,250 درهم"
+              ],
+              [
+                "1,000,000 درهم",
+                "56,250 درهم"
+              ]
+            ]
+          }
+        },
+        {
+          "id": "city-tax-4",
+          "title": "الشهادة وتكاليف المعيشة",
+          "body": "تحدد الهيئة FTA رسم طلب 50 درهماً و1,000 للشهادة الإلكترونية للفرد غير المسجل في ضريبة الشركات أو 500 للمسجل. ليست هذه رسوم تأشيرة. قارن السكن والصحة والمدرسة والسفر وعملة الإنفاق ومتطلبات النشاط الفعلي."
+        },
+        {
+          "id": "city-tax-5",
+          "title": "الاختيار بحسب الوضع",
+          "body": "على الأسرة ذات الدخل الأجنبي دراسة تاريخها التركي وضريبة المصدر والمسكن الجديد. وعلى رائد الأعمال دراسة مكان تنفيذ العمل والشركة والتزاماتها. لا تعالج شركة شكلية في دبي الإقامة الفعلية بدولة أخرى. قارن الميزانية السنوية الكاملة والدخل بعد الضريبة."
+        }
+      ],
+      "faqs": [
+        {
+          "question": "هل دبي بلا ضرائب دائماً؟",
+          "answer": "لا، قد يخضع النشاط التجاري."
+        },
+        {
+          "question": "هل تعفي إسطنبول كل الدخل؟",
+          "answer": "لا، فقط الدخل الأجنبي المؤهل."
+        },
+        {
+          "question": "هل تكفي 90 يوماً في الإمارات دائماً؟",
+          "answer": "لا، لهذا المسار شروط إضافية."
+        }
+      ],
+      "sources": [
+        {
+          "href": "https://gib.gov.tr/mevzuat/kanun/433/madde/13924",
+          "label": "المادة 20/D"
+        },
+        {
+          "href": "https://www.gib.gov.tr/mevzuat/kanun/433/teblig/11874",
+          "label": "التعميم 333"
+        },
+        {
+          "href": "https://gib.gov.tr/duyuru-arsivi/mevzuat/18801_yurt_disindan_elde_edilen_kazanc_ve_iratlarda_vergi_istisnasi_rehberi_ile_infografik_yayimlandi_",
+          "label": "الدليل الضريبي سبتمبر 2026"
+        },
+        {
+          "href": "https://www.tax.gov.ae/en/taxes/corporate.tax/corporate.tax.topics/basis.of.taxation.natural.person.aspx",
+          "label": "ضرائب الأفراد في الإمارات"
+        },
+        {
+          "href": "https://www.tax.gov.ae/en/services/issuance.of.tax.certificates.aspx",
+          "label": "شهادة الإقامة الضريبية الإماراتية"
+        },
+        {
+          "href": "https://tax.gov.ae/en/faq.aspx?keyword=What+are+the+UAE+CT+rates",
+          "label": "معدلات ضريبة الشركات الإماراتية"
+        }
+      ]
+    }
   }
 };
 
