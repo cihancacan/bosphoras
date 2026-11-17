@@ -90,16 +90,16 @@ const copies: Record<Locale, Copy> = {
     languages: 'Français · English · Русский · العربية',
     needsEyebrow: 'Запросы, которые мы координируем',
     needsTitle: 'Темы, которые мы можем координировать.',
-    needs: ['Переезд в Турцию', 'Создание компании', 'Налоги и резиденция', 'Юрист и compliance', 'Здоровье и страхование', 'Недвижимость и relocation', 'Частные или shared офисы', 'VIP transport и hospitality', 'Отели, яхты, мероприятия', 'Private access и membership'],
+    needs: ['Переезд в Турцию', 'Создание компании', 'Налоги и резиденция', 'Юрист и соблюдение требований', 'Здоровье и страхование', 'Недвижимость и переезд', 'Частные или совместные офисы', 'VIP-транспорт и гостиничные услуги', 'Отели, яхты, мероприятия', 'Закрытый доступ и членство'],
     methodEyebrow: 'Метод',
     methodTitle: 'Что происходит после вашего запроса.',
     process: [
       { title: 'Конфиденциальный анализ', text: 'Мы изучаем ваш профиль, страну проживания, сроки, бюджет и приоритеты.' },
-      { title: 'Подбор правильных interlocutors', text: 'Юрист, налоговый консультант, бухгалтер, страховщик, врач, офис, транспортный провайдер, отель или частный партнёр.' },
+      { title: 'Подбор правильных специалистов', text: 'Юрист, налоговый консультант, бухгалтер, страховщик, врач, офис, транспортный провайдер, отель или частный партнёр.' },
       { title: 'Организация следующих шагов', text: 'Мы предлагаем понятную дорожную карту, чтобы двигаться дальше без потери времени.' },
     ],
     finalTitle: 'Ваш запрос остаётся конфиденциальным.',
-    finalText: 'Bosphoras не заменяет регулируемых специалистов. Наша роль — фильтровать, координировать и организовывать правильных interlocutors вокруг вашего проекта.',
+    finalText: 'Bosphoras не заменяет регулируемых специалистов. Наша роль — фильтровать, координировать и организовывать правильных специалистов вокруг вашего проекта.',
     finalButton: 'Написать в Bosphoras',
     finalClock: 'Ответ после анализа запроса',
   },
@@ -112,7 +112,7 @@ const copies: Record<Locale, Copy> = {
     languages: 'Français · English · Русский · العربية',
     needsEyebrow: 'الطلبات التي يمكننا التعامل معها',
     needsTitle: 'المواضيع التي يمكننا تنسيقها.',
-    needs: ['الانتقال إلى تركيا', 'تأسيس شركة', 'الضرائب والإقامة', 'محامٍ وامتثال', 'الصحة والتأمين', 'العقار وrelocation', 'مكاتب خاصة أو مشتركة', 'النقل VIP وhospitality', 'فنادق، يخوت، فعاليات', 'الوصول الخاص والعضوية'],
+    needs: ['الانتقال إلى تركيا', 'تأسيس شركة', 'الضرائب والإقامة', 'محامٍ وامتثال', 'الصحة والتأمين', 'العقار والانتقال والإقامة', 'مكاتب خاصة أو مشتركة', 'النقل VIP والضيافة', 'فنادق، يخوت، فعاليات', 'الوصول الخاص والعضوية'],
     methodEyebrow: 'الطريقة',
     methodTitle: 'ما يحدث بعد طلبكم.',
     process: [
@@ -171,7 +171,7 @@ export function PrivateAssessmentLocalizedPage({ locale }: Props) {
 
 export function buildPrivateAssessmentMetadata(locale: Locale): Metadata {
   const title = locale === 'fr' ? 'Contact privé | Diagnostic Bosphoras' : locale === 'en' ? 'Private Contact | Bosphoras Assessment' : locale === 'ru' ? 'Частный контакт | Консультация Bosphoras' : 'تواصل خاص | تقييم Bosphoras';
-  const description = locale === 'fr' ? 'Contactez Bosphoras pour un diagnostic privé en Turquie : installation, fiscalité, société, santé, assurance, immobilier, bureaux, transport VIP, hôtels, événements et accès privé.' : locale === 'en' ? 'Contact Bosphoras for a private assessment in Turkey: relocation, tax, company, healthcare, insurance, property, offices, VIP transport, hotels, events and private access.' : locale === 'ru' ? 'Свяжитесь с Bosphoras для частной консультации по Турции: переезд, налоги, компания, здоровье, страхование, недвижимость, офисы, VIP transport, отели, мероприятия и private access.' : 'تواصلوا مع Bosphoras للحصول على تقييم خاص في تركيا: الانتقال، الضرائب، الشركة، الصحة، التأمين، العقار، المكاتب، النقل VIP، الفنادق، الفعاليات والوصول الخاص.';
+  const description = locale === 'fr' ? 'Contactez Bosphoras pour un diagnostic privé en Turquie : installation, fiscalité, société, santé, assurance, immobilier, bureaux, transport VIP, hôtels, événements et accès privé.' : locale === 'en' ? 'Contact Bosphoras for a private assessment in Turkey: relocation, tax, company, healthcare, insurance, property, offices, VIP transport, hotels, events and private access.' : locale === 'ru' ? 'Свяжитесь с Bosphoras для частной консультации по Турции: переезд, налоги, компания, здоровье, страхование, недвижимость, офисы, VIP-транспорт, отели, мероприятия и закрытый доступ.' : 'تواصلوا مع Bosphoras للحصول على تقييم خاص في تركيا: الانتقال، الضرائب، الشركة، الصحة، التأمين، العقار، المكاتب، النقل VIP، الفنادق، الفعاليات والوصول الخاص.';
   const path = locale === 'fr' ? copies[locale].currentPath : copies[locale].currentPath.slice(locale.length + 1);
   return buildMetadata({ locale, path, title, description });
 }

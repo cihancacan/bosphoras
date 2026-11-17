@@ -12,6 +12,7 @@ function fixHref(locale: Locale, href?: string): string | undefined {
   if (!href) return href;
 
   const targets = formTargets[locale];
+  const clean = href.replace(/^\/(fr|en|ru|ar)(?=\/)/,'');
 
   const assessmentAliases = new Set([
     '/diagnostic-prive',
@@ -28,8 +29,8 @@ function fixHref(locale: Locale, href?: string): string | undefined {
     '/عضوية/طلب',
   ]);
 
-  if (assessmentAliases.has(href)) return targets.assessment;
-  if (membershipAliases.has(href)) return targets.membership;
+  if (assessmentAliases.has(clean)) return targets.assessment;
+  if (membershipAliases.has(clean)) return targets.membership;
 
   return href;
 }
