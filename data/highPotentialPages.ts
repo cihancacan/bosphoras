@@ -1,4 +1,6 @@
 import type { Locale } from '@/lib/i18n';
+import { taxReformEditorialGuides, taxCertificateSupplement } from './taxReformEditorialGuides';
+import { bosphorasAdditionalSeoPages } from './bosphorasAdditionalSeoPages';
 import { visaEditorialGuides as earlierVisaEditorialGuides } from './visaEditorialGuides';
 import { citizenshipEditorialGuides } from './citizenshipEditorialGuides';
 import { countryVisaEditorialGuides } from './countryVisaEditorialGuides';
@@ -173,6 +175,7 @@ export const highPotentialGuides: HighPotentialGuide[] = highPotentialTopics.fla
     internalLinks: internalLinks(locale),
     ...(editorialGuides[topic.id]?.[locale] ? {
       ...editorialGuides[topic.id]![locale],
+      ...(topic.id === 'tax-exemption-20-years' ? { sections: [...editorialGuides[topic.id]![locale].sections, { id: 'certificate-deadline-2026-2027', ...taxCertificateSupplement[locale] }], sources: [...editorialGuides[topic.id]![locale].sources, ...taxReformEditorialGuides['reform-tax-2026-foreigners']![locale].sources.filter(s => !editorialGuides[topic.id]![locale].sources.some(other => other.href === s.href))] } : {}),
       h1: editorialGuides[topic.id]![locale].title,
       subtitle: editorialGuides[topic.id]![locale].metaDescription,
       updatedAt: editorialGuideUpdatedAt,
@@ -205,6 +208,21 @@ for (const page of editorialVisaPages) {
   }
 }
 
+const editorialTaxPages = bosphorasAdditionalSeoPages.filter(page => taxReformEditorialGuides[page.key]);
+for (const page of editorialTaxPages) {
+  for (const locale of visaLocales) {
+    const copy = taxReformEditorialGuides[page.key]![locale];
+    highPotentialGuides.push({
+      id: page.key, locale, slug: visaSlug(page.slugs[locale]), ...copy,
+      h1: copy.title, subtitle: copy.metaDescription, theme: 'tax', cityFocus: '', serviceFocus: copy.title,
+      updatedAt: '2026-11-17', publishedAt: '2026-06-05', legalCaution: cautions[locale].tax,
+      internalLinks: [
+        ...editorialTaxPages.filter(other => other.key !== page.key).map(other => ({ label: taxReformEditorialGuides[other.key]![locale].title, href: other.slugs[locale] })),
+        ...highPotentialGuides.filter(guide => guide.locale === locale && ['tax-exemption-20-years', 'tax-residency', 'relocate-turkey-cities', 'company-setup-foreigner'].includes(guide.id)).map(guide => ({ label: guide.title, href: prefix(locale) + guide.slug })),
+      ],
+    });
+  }
+}
 export function getHighPotentialGuideBySlug(locale: Locale, slug: string): HighPotentialGuide | undefined {
   const normalized = slug.startsWith('/') ? slug : `/${slug}`;
   return highPotentialGuides.find((guide) => guide.locale === locale && guide.slug === normalized);
@@ -232,6 +250,6 @@ const editorialSeoKeyMap: Record<string, string> = {
 };
 
 export function getEditorialGuideForSeoKey(key: string, locale: Locale): HighPotentialGuide | undefined {
-  const id = editorialSeoKeyMap[key] ?? (visaEditorialGuides[key] ? key : undefined);
+  const id = editorialSeoKeyMap[key] ?? (visaEditorialGuides[key] || taxReformEditorialGuides[key] ? key : undefined);
   return id ? highPotentialGuides.find((guide) => guide.id === id && guide.locale === locale && Boolean(guide.sections)) : undefined;
 }
