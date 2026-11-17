@@ -2,6 +2,8 @@ import type { Locale } from '@/lib/i18n';
 import { visaEditorialGuides as earlierVisaEditorialGuides } from './visaEditorialGuides';
 import { citizenshipEditorialGuides } from './citizenshipEditorialGuides';
 import { countryVisaEditorialGuides } from './countryVisaEditorialGuides';
+import { visaTypeEditorialGuides } from './visaTypeEditorialGuides';
+import { bosphorasVisaTypeSeoPages } from './bosphorasVisaTypeSeoPages';
 import { bosphorasCountryVisaSeoPages } from './bosphorasCountryVisaSeoPages';
 import { bosphorasVisaResidenceSeoPages } from './bosphorasVisaResidenceSeoPages';
 import { editorialGuides, editorialGuideUpdatedAt, type EditorialSection } from './highPotentialEditorialGuides';
@@ -182,8 +184,8 @@ export const highPotentialGuides: HighPotentialGuide[] = highPotentialTopics.fla
   }))
 );
 
-const visaEditorialGuides = { ...earlierVisaEditorialGuides, ...citizenshipEditorialGuides, ...countryVisaEditorialGuides };
-const editorialVisaPages = [...bosphorasVisaResidenceSeoPages, ...bosphorasCountryVisaSeoPages].filter((page) => visaEditorialGuides[page.key]);
+const visaEditorialGuides = { ...earlierVisaEditorialGuides, ...citizenshipEditorialGuides, ...countryVisaEditorialGuides, ...visaTypeEditorialGuides };
+const editorialVisaPages = [...bosphorasVisaResidenceSeoPages, ...bosphorasCountryVisaSeoPages, ...bosphorasVisaTypeSeoPages].filter((page) => visaEditorialGuides[page.key]);
 const visaLocales: Locale[] = ['fr', 'en', 'ru', 'ar'];
 const visaSlug = (slug: string) => slug.replace(/^\/(en|ru|ar)(?=\/)/, '');
 for (const page of editorialVisaPages) {
@@ -226,7 +228,6 @@ const editorialSeoKeyMap: Record<string, string> = {
   'rent-or-buy-before-moving': 'rent-or-buy-before-relocating',
   'countries-id-card-turkey': 'countries-enter-turkey-id-card',
   'turkey-long-term-residence-main': 'turkey-long-term-residence',
-  'turkey-e-visa-main': 'turkey-evisa-foreigners',
 };
 
 export function getEditorialGuideForSeoKey(key: string, locale: Locale): HighPotentialGuide | undefined {
