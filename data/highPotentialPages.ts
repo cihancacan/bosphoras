@@ -1,4 +1,5 @@
 import type { Locale } from '@/lib/i18n';
+import { editorialGuides, editorialGuideUpdatedAt, type EditorialSection } from './highPotentialEditorialGuides';
 
 export type GuideTheme = 'tax' | 'relocation' | 'city' | 'health' | 'business' | 'investor' | 'concierge' | 'property';
 export type GuideFaq = { question: string; answer: string };
@@ -21,6 +22,9 @@ export type HighPotentialGuide = {
   bosphorasHelp: string;
   faqs: GuideFaq[];
   internalLinks: GuideInternalLink[];
+  sections?: EditorialSection[];
+  sources?: GuideInternalLink[];
+  publishedAt?: string;
 };
 
 type TopicCopy = { title: string; meta: string; h1: string; subtitle: string; answer: string; city: string; service: string };
@@ -160,6 +164,14 @@ export const highPotentialGuides: HighPotentialGuide[] = highPotentialTopics.fla
     bosphorasHelp: help[locale],
     faqs: guideFaqs(locale, topic.copy[locale].service),
     internalLinks: internalLinks(locale),
+    ...(editorialGuides[topic.id]?.[locale] ? {
+      ...editorialGuides[topic.id]![locale],
+      updatedAt: editorialGuideUpdatedAt,
+      publishedAt: updatedAt,
+      internalLinks: [
+        ...highPotentialTopics.filter((other) => other.id !== topic.id && editorialGuides[other.id]).map((other) => ({ label: editorialGuides[other.id]![locale].title, href: `${prefix(locale)}${other.slugs[locale]}` })),
+      ],
+    } : {}),
   }))
 );
 

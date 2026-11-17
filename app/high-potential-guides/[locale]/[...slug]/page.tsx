@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import type { Locale } from '@/lib/i18n';
 import { buildMetadata } from '@/lib/seo';
+import { getCanonicalUrl } from '@/lib/routes';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { HighPotentialGuideRenderer } from '@/components/HighPotentialGuideRenderer';
@@ -29,7 +30,8 @@ export function generateMetadata({ params }: PageProps): Metadata {
   if (!isLocale(params.locale)) return {};
   const guide = getHighPotentialGuideBySlug(params.locale, resolveSlug(params.slug));
   if (!guide) return {};
-  return buildMetadata({ locale: params.locale, path: guide.slug, title: guide.title, description: guide.metaDescription });
+  const alternates = Object.fromEntries(highPotentialGuides.filter((item) => item.id === guide.id).map((item) => [item.locale, getCanonicalUrl(item.locale, item.slug)]));
+  return buildMetadata({ locale: params.locale, path: guide.slug, title: guide.title, description: guide.metaDescription, alternates: { ...alternates, 'x-default': alternates.fr } });
 }
 
 export default function HighPotentialGuidePage({ params }: PageProps) {

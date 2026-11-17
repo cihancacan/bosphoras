@@ -61,12 +61,12 @@ function generatedSections(guide: HighPotentialGuide) {
 
 export function HighPotentialGuideRenderer({ guide }: { guide: HighPotentialGuide }) {
   const labels = guideLabels(guide.locale);
-  const sections = generatedSections(guide);
+  const sections = guide.sections ?? generatedSections(guide);
   const assessmentBase = guide.locale === 'fr' ? '/diagnostic-prive' : guide.locale === 'en' ? '/en/private-assessment' : guide.locale === 'ru' ? '/ru/chastnaya-konsultatsiya' : '/ar/تقييم-خاص';
   const sourcePath = guide.locale === 'fr' ? guide.slug : `/${guide.locale}${guide.slug}`;
   const assessmentHref = withAssessmentContext(assessmentBase, sourcePath, guide.h1);
   const canonical = getCanonicalUrl(guide.locale, guide.slug);
-  const articleJsonLd = { '@context': 'https://schema.org', '@type': 'Article', headline: guide.h1, description: guide.metaDescription, dateModified: guide.updatedAt, datePublished: guide.updatedAt, mainEntityOfPage: canonical, publisher: { '@type': 'Organization', name: 'Bosphoras' } };
+  const articleJsonLd = { '@context': 'https://schema.org', '@type': 'Article', headline: guide.h1, description: guide.metaDescription, dateModified: guide.updatedAt, datePublished: guide.publishedAt ?? guide.updatedAt, inLanguage: guide.locale, ...(guide.sources ? { citation: guide.sources.map((source) => source.href) } : {}), mainEntityOfPage: canonical, publisher: { '@type': 'Organization', name: 'Bosphoras' } };
   const faqJsonLd = { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: guide.faqs.map((faq) => ({ '@type': 'Question', name: faq.question, acceptedAnswer: { '@type': 'Answer', text: faq.answer } })) };
   const breadcrumbJsonLd = { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Bosphoras', item: getCanonicalUrl(guide.locale, '/') }, { '@type': 'ListItem', position: 2, name: guide.h1, item: canonical }] };
 
@@ -115,6 +115,8 @@ export function HighPotentialGuideRenderer({ guide }: { guide: HighPotentialGuid
               <h2 className="flex items-center gap-3 font-serif text-3xl tracking-[-0.03em]"><AlertTriangle className="text-[#d2a863]" />{labels.caution}</h2>
               <p className="mt-5 text-base leading-8 text-[#d8cfbf]">{guide.legalCaution}</p>
             </section>
+
+            {guide.sources && <section id="sources" className="border border-[#d8c7a1] bg-[#fffaf0] p-7 md:p-9"><h2 className="font-serif text-3xl text-[#121826]">{{ fr: 'Sources officielles', en: 'Official sources', ru: 'Официальные источники', ar: 'المصادر الرسمية' }[guide.locale]}</h2><ul className="mt-5 space-y-3">{guide.sources.map((source) => <li key={source.href}><a href={source.href} className="text-[#8a6728] underline underline-offset-4" target="_blank" rel="noopener noreferrer">{source.label}</a></li>)}</ul></section>}
 
             <section id="bosphoras" className="border border-[#d8c7a1] bg-white p-7 md:p-9">
               <h2 className="flex items-center gap-3 font-serif text-3xl tracking-[-0.03em] text-[#121826]"><ShieldCheck className="text-[#8a6728]" />{labels.help}</h2>
